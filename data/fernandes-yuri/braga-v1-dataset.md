@@ -2,7 +2,7 @@
 
 ## Resumen
 
-braga-v1-dataset es un conjunto de datos de ajuste conversacional publicado en HuggingFace por el usuario fernandes-yuri (Yuri Fernandes) bajo licencia Apache-2.0. No es un modelo, sino el material de entrenamiento del SLM fernandes-yuri/braga-v1, descrito por su autor como un asistente de salud preventiva y acogida en portugues de Brasil orientado a ejecucion on-device. El dataset esta etiquetado con las categorias healthcare, portuguese y alignment, y su idioma declarado es unicamente el portugues (pt).
+braga-v1-dataset es un conjunto de datos de ajuste conversacional publicado en Hugging Face por el usuario fernandes-yuri (Yuri Fernandes) bajo licencia Apache-2.0. No es un modelo, sino el material de entrenamiento del SLM fernandes-yuri/braga-v1, descrito por su autor como un asistente de salud preventiva y acogida en portugues de Brasil orientado a ejecucion on-device. El dataset esta etiquetado con las categorias healthcare, portuguese y alignment, y su idioma declarado es unicamente el portugues (pt).
 
 El contenido se reparte en dos ficheros JSONL con formato de mensajes (system, user, assistant) mas dos campos de trazabilidad (trilha y origem): 10.892 ejemplos de entrenamiento y 1.210 de validacion, lo que suma 12.102 registros. Se acompana de dos artefactos auxiliares: fatos_atlas.json, con hechos extraidos directamente del codigo de una aplicacion Android (tablas SBC/SBD, criterios cardiovasculares de la OMS y 27 guias), y RELATORIO_AUDITORIA_V1.txt, una auditoria de residuos del filtrado.
 
@@ -23,7 +23,7 @@ Su relevancia actual es acotada pero clara: ejemplifica un flujo de trabajo de e
 | Numero de ejemplos | 10.892 entrenamiento + 1.210 validacion = 12.102 registros |
 | Esquema de los registros | `{messages: [system, user, assistant], trilha, origem}` |
 | Ficheros incluidos | `braga_v1_train.jsonl`, `braga_v1_val.jsonl`, `fatos_atlas.json`, `RELATORIO_AUDITORIA_V1.txt` |
-| Tamaño del repositorio | 0.0 GB reportados por HuggingFace |
+| Tamaño del repositorio | 0.0 GB reportados por Hugging Face |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 | Fecha de creacion | 2026-10-08 |
 | Ultima actualizacion | 2026-10-08 |
@@ -98,13 +98,13 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa. No 
 - Sesgos: no se publica analisis demografico ni de sesgo alguno del corpus.
 - Trazabilidad incompleta: se desconoce la procedencia del corpus base de las conversaciones filtradas y si hubo consentimiento o anonimizacion de datos reales de pacientes.
 - Ausencia de pesos y configuracion: no se puede reproducir el entrenamiento ni verificar las afirmaciones de la model card con los ficheros incluidos.
-- Inconsistencia documental: HuggingFace reporta un tamaño de repositorio de 0.0 GB frente a los 12.102 registros descritos, lo que exige verificar la integridad de la descarga.
+- Inconsistencia documental: Hugging Face reporta un tamaño de repositorio de 0.0 GB frente a los 12.102 registros descritos, lo que exige verificar la integridad de la descarga.
 - Adopcion nula: 0 descargas y 0 likes en el momento de la consulta, sin evidencia externa de uso o validacion.
 - Licencia: Apache-2.0 permite uso comercial y modificacion, pero no exime del cumplimiento del RGPD ni de la normativa sanitaria aplicable al tratar datos de salud.
 
 ## Enlaces
 
-- Dataset en HuggingFace: https://huggingface.co/fernandes-yuri/braga-v1-dataset
+- Dataset en Hugging Face: https://huggingface.co/fernandes-yuri/braga-v1-dataset
 - Modelo asociado (SLM): https://huggingface.co/fernandes-yuri/braga-v1
 - Perfil del autor: https://huggingface.co/fernandes-yuri
 - Modelos del autor: https://huggingface.co/fernandes-yuri/models

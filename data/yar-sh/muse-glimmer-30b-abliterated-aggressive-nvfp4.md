@@ -84,6 +84,6 @@ No se dispone de datos de benchmarks comparativos con otros modelos en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yar-sh/Muse-Glimmer-30B-Abliterated-Aggressive-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/yar-sh/Muse-Glimmer-30B-Abliterated-Aggressive-NVFP4
 - Modelo base decensurado: https://huggingface.co/jorkle/Muse-Glimmer-30B-Abliterated-Aggressive
 - Modelo base original de Meta: https://huggingface.co/meta-models/Muse-Glimmer-30B

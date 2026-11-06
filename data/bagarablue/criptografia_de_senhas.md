@@ -3,7 +3,7 @@
 # Ficha tecnica: bagaraBlue/Criptografia_de_senhas
 
 ## Resumen
-bagaraBlue/Criptografia_de_senhas es un repositorio publicado en HuggingFace por el usuario bagaraBlue. La unica informacion verificable disponible es su identificador, su licencia declarada (Apache 2.0) y la etiqueta de region "us"; el repositorio no incluye pipeline declarado, idiomas soportados, descripcion ni documentacion tecnica de ningun tipo.
+bagaraBlue/Criptografia_de_senhas es un repositorio publicado en Hugging Face por el usuario bagaraBlue. La unica informacion verificable disponible es su identificador, su licencia declarada (Apache 2.0) y la etiqueta de region "us"; el repositorio no incluye pipeline declarado, idiomas soportados, descripcion ni documentacion tecnica de ningun tipo.
 
 La model card del autor esta practicamente vacia: unicamente contiene el encabezado YAML con la licencia Apache 2.0 y ningun texto adicional. No se especifica arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni formato de pesos. El propio nombre del repositorio, en portugues, sugiere un contenido relacionado con criptografia de contrasenas, pero no existe ninguna evidencia documental en la informacion disponible que permita confirmar que se trate de un modelo de lenguaje, de un conjunto de datos, de utilidades de cifrado o de cualquier otro tipo de artefacto.
 
@@ -67,7 +67,7 @@ No disponible. Al no poder determinarse la categoria del artefacto (modelo de le
 - Antes de cualquier uso en produccion se recomienda auditar los ficheros publicados, verificar la ausencia de material con derechos de terceros y comprobar si el autor ofrece algun tipo de soporte o mantenimiento.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/bagaraBlue/Criptografia_de_senhas
+- Repositorio en Hugging Face: https://huggingface.co/bagaraBlue/Criptografia_de_senhas
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante relacionado con este repositorio. Las coincidencias devueltas por el buscador corresponden a plataformas educativas de terceros sin relacion alguna con el artefacto.
 - Paper, blog, repositorio de codigo o demo: no disponible.

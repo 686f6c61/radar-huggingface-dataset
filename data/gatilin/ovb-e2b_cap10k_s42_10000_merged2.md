@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gatilin/ovb-e2b_cap10k_s42_10000_merged2` es un modelo publicado en HuggingFace por el usuario `gatilin` bajo licencia MIT. Por el identificador se deduce que se trata de un merge de pesos (el sufijo `_merged2` es habitual en fusiones de modelos o en adaptadores fusionados sobre una base), posiblemente derivado de una familia "e2b" con un entrenamiento de 10 000 pasos, semilla 42 y un límite de 10 000 tokens de contexto (`cap10k`). No obstante, la model card publicada no contiene más que la declaración de licencia, por lo que todos estos extremos son inferencias a partir del nombre y no datos confirmados por el autor.
+`gatilin/ovb-e2b_cap10k_s42_10000_merged2` es un modelo publicado en Hugging Face por el usuario `gatilin` bajo licencia MIT. Por el identificador se deduce que se trata de un merge de pesos (el sufijo `_merged2` es habitual en fusiones de modelos o en adaptadores fusionados sobre una base), posiblemente derivado de una familia "e2b" con un entrenamiento de 10 000 pasos, semilla 42 y un límite de 10 000 tokens de contexto (`cap10k`). No obstante, la model card publicada no contiene más que la declaración de licencia, por lo que todos estos extremos son inferencias a partir del nombre y no datos confirmados por el autor.
 
 El repositorio no incluye pipeline declarado, idiomas soportados, arquitectura, número de parámetros ni información sobre el conjunto de entrenamiento. Tampoco registra descargas ni interacciones en el momento de la consulta, lo que sugiere un artefacto de experimentación personal más que un modelo pensado para distribución general.
 
@@ -76,4 +76,4 @@ No disponible. No se han identificado modelos comparables porque se desconocen e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gatilin/ovb-e2b_cap10k_s42_10000_merged2
+- Hugging Face: https://huggingface.co/gatilin/ovb-e2b_cap10k_s42_10000_merged2

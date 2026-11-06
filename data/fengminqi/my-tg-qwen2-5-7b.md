@@ -2,7 +2,7 @@
 
 ## Resumen
 
-my-tg-qwen2.5-7b es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado por el usuario fengminqi en HuggingFace. El punto de partida declarado es unsloth/Qwen2.5-7B-Instruct-bnb-4bit, es decir, una versión del instructivo de Qwen2.5 cuantizada a 4 bits y distribuida por Unsloth. El entrenamiento se realizó con la librería Unsloth junto con TRL de HuggingFace, lo que el autor describe como "2x faster" respecto a un entrenamiento convencional, aunque no se documentan hiperparámetros, dataset ni número de pasos.
+my-tg-qwen2.5-7b es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado por el usuario fengminqi en Hugging Face. El punto de partida declarado es unsloth/Qwen2.5-7B-Instruct-bnb-4bit, es decir, una versión del instructivo de Qwen2.5 cuantizada a 4 bits y distribuida por Unsloth. El entrenamiento se realizó con la librería Unsloth junto con TRL de Hugging Face, lo que el autor describe como "2x faster" respecto a un entrenamiento convencional, aunque no se documentan hiperparámetros, dataset ni número de pasos.
 
 Se trata, por tanto, de un derivado de la familia Qwen2.5: un transformer decoder-only de aproximadamente 7,6 mil millones de parámetros, con licencia Apache 2.0 y pesos en formato safetensors. El repositorio ocupa 9,8 GB y está etiquetado para transformers y text-generation-inference. La model card es mínima: no incluye pipeline declarado, no especifica el corpus de ajuste y solo declara el idioma inglés, pese a que el modelo base es multilingüe.
 
@@ -69,11 +69,11 @@ Estimaciones a partir de un modelo denso de ~7,6 mil millones de parámetros; no
 
 | Modelo | Parámetros | Contexto | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fengminqi/my-tg-qwen2.5-7b | ~7,6 mil millones | 131.072 tokens (según el base) | No disponibles | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-7B-Instruct | ~7,6 mil millones | 131.072 tokens | Sí, publicados por Qwen | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| unsloth/Qwen2.5-7B-Instruct-bnb-4bit | ~7,6 mil millones | 131.072 tokens | No propios; hereda los del base | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | ~8 mil millones | 128.000 tokens | Sí, publicados por Meta | Llama 3.1 Community License | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | ~7,2 mil millones | 32.000 tokens | Sí, publicados por Mistral | Apache 2.0 | HuggingFace |
+| fengminqi/my-tg-qwen2.5-7b | ~7,6 mil millones | 131.072 tokens (según el base) | No disponibles | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-7B-Instruct | ~7,6 mil millones | 131.072 tokens | Sí, publicados por Qwen | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| unsloth/Qwen2.5-7B-Instruct-bnb-4bit | ~7,6 mil millones | 131.072 tokens | No propios; hereda los del base | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | ~8 mil millones | 128.000 tokens | Sí, publicados por Meta | Llama 3.1 Community License | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | ~7,2 mil millones | 32.000 tokens | Sí, publicados por Mistral | Apache 2.0 | Hugging Face |
 
 No hay datos que permitan comparar el rendimiento de este ajuste concreto frente a esas alternativas; la comparación se limita a parámetros, contexto y licencia.
 
@@ -92,9 +92,9 @@ No hay datos que permitan comparar el rendimiento de este ajuste concreto frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fengminqi/my-tg-qwen2.5-7b
+- Modelo en Hugging Face: https://huggingface.co/fengminqi/my-tg-qwen2.5-7b
 - Modelo base del ajuste: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 - Nota: la búsqueda web asociada no devolvió enlaces relevantes sobre este modelo; los resultados obtenidos correspondían a artículos del Código de Procedimiento Civil francés y no guardan relación con el objeto de la ficha.

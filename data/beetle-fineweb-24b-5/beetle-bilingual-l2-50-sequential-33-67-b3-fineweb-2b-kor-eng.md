@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-2b-kor-eng` es un modelo de generacion de texto publicado en HuggingFace por el usuario/organizacion Beetle-FineWeb-24B-5. Segun los metadatos del repositorio, se trata de un modelo de 193.804.032 parametros (aproximadamente 193,8 millones) almacenado en formato safetensors y etiquetado con la pipeline `text-generation`, lo que lo situa en la categoria de modelos pequenos orientados a decodificacion autoregresiva. El nombre del identificador sugiere un entrenamiento bilingue coreano-ingles sobre un subconjunto de FineWeb, si bien esta informacion no aparece confirmada en ninguna seccion de la model card.
+El modelo identificado como `beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-2b-kor-eng` es un modelo de generacion de texto publicado en Hugging Face por el usuario/organizacion Beetle-FineWeb-24B-5. Segun los metadatos del repositorio, se trata de un modelo de 193.804.032 parametros (aproximadamente 193,8 millones) almacenado en formato safetensors y etiquetado con la pipeline `text-generation`, lo que lo situa en la categoria de modelos pequenos orientados a decodificacion autoregresiva. El nombre del identificador sugiere un entrenamiento bilingue coreano-ingles sobre un subconjunto de FineWeb, si bien esta informacion no aparece confirmada en ninguna seccion de la model card.
 
-La model card publicada es la plantilla automatica de HuggingFace y no ha sido completada por el autor: practicamente todos los campos (desarrollador, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) figuran como `[More Information Needed]`. Esto significa que no existe documentacion oficial sobre el proceso de entrenamiento, la composicion del dataset, el contexto soportado ni los resultados de evaluacion.
+La model card publicada es la plantilla automatica de Hugging Face y no ha sido completada por el autor: practicamente todos los campos (desarrollador, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) figuran como `[More Information Needed]`. Esto significa que no existe documentacion oficial sobre el proceso de entrenamiento, la composicion del dataset, el contexto soportado ni los resultados de evaluacion.
 
 El modelo resulta relevante unicamente como artefacto de investigacion o como punto de partida para experimentacion con arquitecturas de decodificador personalizadas, dado que incluye los tags `pico_decoder` y `custom_code`, lo que implica que su carga requiere `trust_remote_code=True`. No hay senales de adopcion por parte de la comunidad: cuenta con 0 descargas y 0 likes en el momento de la consulta. La busqueda web no ha devuelto ningun recurso tecnico asociado a este modelo (los resultados obtenidos corresponden a la especie de insecto y al automovil Volkswagen Beetle), por lo que no es posible contrastar ni ampliar la informacion.
 
@@ -77,10 +77,10 @@ Comparativa basada unicamente en el tamano de parametros, dado que no existen da
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Beetle-FineWeb-24B-5/beetle-bilingual-... | 193,8 M | No disponible | No disponible | safetensors | HuggingFace, 0 descargas |
+| Beetle-FineWeb-24B-5/beetle-bilingual-... | 193,8 M | No disponible | No disponible | safetensors | Hugging Face, 0 descargas |
 | GPT-2 | 124 M | 1.024 tokens | MIT | safetensors, GGUF, etc. | Ampliamente disponible |
-| SmolLM2-135M | 135 M | 8.192 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, amplia adopcion |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, amplia adopcion |
+| SmolLM2-135M | 135 M | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, amplia adopcion |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, amplia adopcion |
 
 La diferencia fundamental no es de tamano, sino de madurez: los tres modelos alternativos cuentan con model card completa, licencia explicita, evaluaciones publicadas y soporte en multiples runtimes de inferencia, mientras que el modelo analizado carece de todos estos elementos.
 
@@ -99,8 +99,8 @@ La diferencia fundamental no es de tamano, sino de madurez: los tres modelos alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beetle-FineWeb-24B-5/beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-2b-kor-eng
-- Perfil del autor en HuggingFace: https://huggingface.co/Beetle-FineWeb-24B-5
+- Modelo en Hugging Face: https://huggingface.co/Beetle-FineWeb-24B-5/beetle-bilingual-l2-50-sequential-33-67-b3-fineweb-2b-kor-eng
+- Perfil del autor en Hugging Face: https://huggingface.co/Beetle-FineWeb-24B-5
 - Referencia del tag arxiv:1910.09700 (Lacoste et al., 2019, calculador de impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ML mencionado en la plantilla: https://mlco2.github.io/impact
 

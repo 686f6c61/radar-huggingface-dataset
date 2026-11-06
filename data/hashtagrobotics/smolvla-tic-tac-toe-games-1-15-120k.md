@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `HashtagRobotics/smolvla-tic-tac-toe-games-1-15-120k` | 450M | 48 tokens de instrucción | Manipulación SO-101 (tres en raya) | Apache-2.0 | HuggingFace |
-| `lerobot/smolvla_base` | 450M | no disponible | VLA general para manipulación | Apache-2.0 | HuggingFace |
-| `cagataydev/smolvla-tictactoe` | 450M (estimado) | no disponible | Manipulación SO-101 (tres en raya, bloque A) | no especificada | HuggingFace |
+| `HashtagRobotics/smolvla-tic-tac-toe-games-1-15-120k` | 450M | 48 tokens de instrucción | Manipulación SO-101 (tres en raya) | Apache-2.0 | Hugging Face |
+| `lerobot/smolvla_base` | 450M | no disponible | VLA general para manipulación | Apache-2.0 | Hugging Face |
+| `cagataydev/smolvla-tictactoe` | 450M (estimado) | no disponible | Manipulación SO-101 (tres en raya, bloque A) | no especificada | Hugging Face |
 
 No se dispone de comparaciones con modelos más grandes como OpenVLA (7B) porque el enfoque de SmolVLA es la eficiencia, y no hay datos de rendimiento público para esta tarea concreta.
 
@@ -75,11 +75,11 @@ No se dispone de comparaciones con modelos más grandes como OpenVLA (7B) porque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HashtagRobotics/smolvla-tic-tac-toe-games-1-15-120k
+- Modelo en Hugging Face: https://huggingface.co/HashtagRobotics/smolvla-tic-tac-toe-games-1-15-120k
 - Dataset de entrenamiento: https://huggingface.co/datasets/HashtagRobotics/tic-tac-toe-so101-block-a-clean-v1
 - Repositorio GitHub del proyecto: https://github.com/Hashtag-Robotics/so101-tic-tac-toe
 - Historia del proyecto: https://hashtagrobotics.tr/so101-tic-tac-toe
 - Paper de SmolVLA (arXiv): https://arxiv.org/html/2506.01844v1
-- Blog de SmolVLA en HuggingFace: https://huggingface.co/blog/smolvla
+- Blog de SmolVLA en Hugging Face: https://huggingface.co/blog/smolvla
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Modelo similar de cagataydev: https://huggingface.co/cagataydev/smolvla-tictactoe

@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kwtakahasi/swin-t-experiment-2023 | 24.832 (checkpoint de inicializacion) | no disponible | no | apache-2.0 | HuggingFace (0 descargas) |
+| kwtakahasi/swin-t-experiment-2023 | 24.832 (checkpoint de inicializacion) | no disponible | no | apache-2.0 | Hugging Face (0 descargas) |
 | Swin-T oficial (Microsoft) | ~28 M | no aplica (vision) | si (ImageNet, COCO, ADE20K) | MIT | pesos preentrenados publicos |
 | Otras variantes Swin (S, B, L) | mayor | no aplica (vision) | si | MIT | pesos preentrenados publicos |
 
@@ -87,6 +87,6 @@ La comparacion con la Swin-T oficial u otras variantes es estructural: comparten
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kwtakahasi/swin-t-experiment-2023
+- Hugging Face: https://huggingface.co/kwtakahasi/swin-t-experiment-2023
 - Paper de Swin Transformer (referencia de la arquitectura de origen, no enlazado en el repositorio): no disponible en la informacion proporcionada.
 - Repositorio de codigo adicional, demo o blog: no disponible en la informacion proporcionada.

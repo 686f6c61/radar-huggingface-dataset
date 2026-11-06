@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`SwapnilVitthalSawant/gemma-3n-audio-summary-lora` es un adaptador LoRA publicado en HuggingFace sobre el modelo base multimodal `google/gemma-3n-E4B-it` de Google. Se distribuye como repositorio PEFT (libreria `peft`, version de framework 0.21.0) con pesos en formato `safetensors` y etiqueta de pipeline `text-generation`. Por el nombre del repositorio, el ajuste parece orientado a la sintesis o resumen de contenido de audio, aunque la model card publicada es una plantilla sin cumplimentar: no documenta datos de entrenamiento, hiperparametros, rango del adaptador, modulos objetivo ni evaluacion.
+`SwapnilVitthalSawant/gemma-3n-audio-summary-lora` es un adaptador LoRA publicado en Hugging Face sobre el modelo base multimodal `google/gemma-3n-E4B-it` de Google. Se distribuye como repositorio PEFT (libreria `peft`, version de framework 0.21.0) con pesos en formato `safetensors` y etiqueta de pipeline `text-generation`. Por el nombre del repositorio, el ajuste parece orientado a la sintesis o resumen de contenido de audio, aunque la model card publicada es una plantilla sin cumplimentar: no documenta datos de entrenamiento, hiperparametros, rango del adaptador, modulos objetivo ni evaluacion.
 
 El interes de este tipo de publicacion radica en que aprovecha las capacidades multimodales de la familia Gemma 3n, que segun la documentacion oficial de Google incorpora un encoder de vision MobileNet v5 (resolucion por defecto de 768x768) y un encoder de audio basado en la arquitectura Universal Speech Model (USM). La variante instruction-tuned del modelo base fue post-entrenada con destilacion de conocimiento y aprendizaje por refuerzo, segun la documentacion de Transformers. Esto habilita flujos que combinan audio y texto sin necesidad de encadenar un sistema ASR externo.
 
@@ -85,10 +85,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/SwapnilVitthalSawant/gemma-3n-audio-summary-lora
+- Repositorio Hugging Face del adaptador: https://huggingface.co/SwapnilVitthalSawant/gemma-3n-audio-summary-lora
 - Modelo base: https://huggingface.co/google/gemma-3n-E4B-it
 - Documentacion de Gemma 3n en Transformers: https://huggingface.co/docs/transformers/model_doc/gemma3n
 - Capacidades de audio de Gemma (Google AI for Developers): https://ai.google.dev/gemma/docs/capabilities/audio
-- Notebook de comprension de audio con HuggingFace (gemma-cookbook): https://github.com/google-gemini/gemma-cookbook/blob/main/Gemma/%5BGemma_3n%5DAudio_understanding_with_HF.ipynb
+- Notebook de comprension de audio con Hugging Face (gemma-cookbook): https://github.com/google-gemini/gemma-cookbook/blob/main/Gemma/%5BGemma_3n%5DAudio_understanding_with_HF.ipynb
 - Notebook de audio en Colab: https://colab.research.google.com/github/google-gemma/cookbook/blob/main/docs/capabilities/audio.ipynb
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, Machine Learning Impact calculator): https://arxiv.org/abs/1910.09700

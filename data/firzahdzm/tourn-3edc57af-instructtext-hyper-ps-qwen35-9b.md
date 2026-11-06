@@ -58,7 +58,7 @@ No disponible. No se han encontrado modelos comparables del mismo autor ni datos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/firzahdzm/tourn-3edc57af-instructtext-hyper-ps-qwen35-9b
+- Repositorio Hugging Face: https://huggingface.co/firzahdzm/tourn-3edc57af-instructtext-hyper-ps-qwen35-9b
 - Modelo base Qwen3.5-9B (referencia): [Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B) (no enlazado en la búsqueda, pero es el base)
 - Guía de fine-tuning de Qwen3.5 de Unsloth: https://unsloth.ai/docs/models/qwen3.5/fine-tune
 - Qwen35 toolkit: https://techwithsergiu.github.io/qwen35-toolkit/

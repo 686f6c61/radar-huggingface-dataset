@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chormi/tangkhul-mt5-small` es un ajuste fino del modelo multilingue mT5-small publicado por el usuario chormi en HuggingFace. Tangkhul es una lengua sino-tibetana hablada principalmente en el distrito de Ukhrul (Manipur, India), con un numero de hablantes reducido y una presencia muy limitada en corpus digitales. El nombre del repositorio sugiere un modelo orientado a traduccion automatica hacia o desde tangkhul, aunque la ficha del autor no especifica la tarea, la direccion de traduccion ni los pares de idiomas entrenados.
+`chormi/tangkhul-mt5-small` es un ajuste fino del modelo multilingue mT5-small publicado por el usuario chormi en Hugging Face. Tangkhul es una lengua sino-tibetana hablada principalmente en el distrito de Ukhrul (Manipur, India), con un numero de hablantes reducido y una presencia muy limitada en corpus digitales. El nombre del repositorio sugiere un modelo orientado a traduccion automatica hacia o desde tangkhul, aunque la ficha del autor no especifica la tarea, la direccion de traduccion ni los pares de idiomas entrenados.
 
 El modelo cuenta con 300.176.768 parametros reales en formato safetensors, lo que coincide exactamente con la configuracion canonica de mT5-small (arquitectura transformer encoder-decoder). El repositorio ocupa 13,2 GB, un tamano desproporcionado para un modelo de 300 M de parametros, lo que apunta a la presencia de multiples checkpoints, estados de optimizador o artefactos de entrenamiento intermedios.
 
@@ -58,7 +58,7 @@ En todos los casos, la ausencia de licencia declarada y de evaluacion publicada 
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-No existen datos de BLEU, chrF, MMLU, GSM8K ni de ninguna otra metrica en la ficha de HuggingFace, en el repositorio ni en los resultados de busqueda web, que no devolvieron ningun resultado relacionado con el modelo.
+No existen datos de BLEU, chrF, MMLU, GSM8K ni de ninguna otra metrica en la ficha de Hugging Face, en el repositorio ni en los resultados de busqueda web, que no devolvieron ningun resultado relacionado con el modelo.
 
 ## Requisitos de hardware
 
@@ -77,10 +77,10 @@ No hay datos de rendimiento de este modelo, por lo que la comparacion se limita 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| chormi/tangkhul-mt5-small | 300,2 M | no disponible | no disponible | HuggingFace, 27 descargas | Ajuste sin documentar; tarea y pares de idiomas sin confirmar |
-| google/mt5-small (base) | 300,2 M | 512 tokens (hasta 1024 con posiciones relativas) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base multilingue, sin especializacion en tangkhul |
-| NLLB-200-distilled-600M | 600 M | 512 tokens | CC-BY-NC-4.0 | HuggingFace | Traduccion multilingue de Meta con 200 idiomas; uso comercial restringido por licencia. No consta tangkhul entre los idiomas cubiertos |
-| IndicTrans2 (variantes 200 M / 1 B) | 200 M / 1 B | 512 tokens | verificar ficha oficial | HuggingFace | Orientado a idiomas de India; cobertura de tangkhul no confirmada en la informacion disponible |
+| chormi/tangkhul-mt5-small | 300,2 M | no disponible | no disponible | Hugging Face, 27 descargas | Ajuste sin documentar; tarea y pares de idiomas sin confirmar |
+| google/mt5-small (base) | 300,2 M | 512 tokens (hasta 1024 con posiciones relativas) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base multilingue, sin especializacion en tangkhul |
+| NLLB-200-distilled-600M | 600 M | 512 tokens | CC-BY-NC-4.0 | Hugging Face | Traduccion multilingue de Meta con 200 idiomas; uso comercial restringido por licencia. No consta tangkhul entre los idiomas cubiertos |
+| IndicTrans2 (variantes 200 M / 1 B) | 200 M / 1 B | 512 tokens | verificar ficha oficial | Hugging Face | Orientado a idiomas de India; cobertura de tangkhul no confirmada en la informacion disponible |
 
 Los datos de licencia y cobertura de los modelos alternativos corresponden a sus fichas publicas y deben verificarse antes de cualquier uso comercial.
 
@@ -99,9 +99,9 @@ Los datos de licencia y cobertura de los modelos alternativos corresponden a sus
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chormi/tangkhul-mt5-small
+- Modelo en Hugging Face: https://huggingface.co/chormi/tangkhul-mt5-small
 - Modelo base mT5-small (referencia de arquitectura): https://huggingface.co/google/mt5-small
 - Paper de mT5 (Xue et al., 2020): https://arxiv.org/abs/2010.11934
 - Paper de T5 (Raffel et al., 2019), arquitectura original: https://arxiv.org/abs/1910.10683
 
-La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los enlaces obtenidos correspondian a paginas genericas de motores de busqueda (Bing) sin relacion con el repositorio. No se han encontrado papers, blogs, demos, repositorios de codigo ni espacios de HuggingFace asociados a `chormi/tangkhul-mt5-small`.
+La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los enlaces obtenidos correspondian a paginas genericas de motores de busqueda (Bing) sin relacion con el repositorio. No se han encontrado papers, blogs, demos, repositorios de codigo ni espacios de Hugging Face asociados a `chormi/tangkhul-mt5-small`.

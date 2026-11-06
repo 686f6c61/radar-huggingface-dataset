@@ -44,7 +44,7 @@ La verificacion declarada incluye tres comprobaciones: los tamanos y md5 de los 
 
 ## Casos de uso
 
-- Inferencia 100 % en el navegador: mediante `CreateMLCEngine` de `@mlc-ai/web-llm`, el modelo se carga desde el propio repositorio de HuggingFace y genera texto con WebGPU. Es adecuado porque todo el peso (unos 194 MB) y la libreria (5,62 MB) se sirven como estaticos y el usuario no necesita GPU dedicada.
+- Inferencia 100 % en el navegador: mediante `CreateMLCEngine` de `@mlc-ai/web-llm`, el modelo se carga desde el propio repositorio de Hugging Face y genera texto con WebGPU. Es adecuado porque todo el peso (unos 194 MB) y la libreria (5,62 MB) se sirven como estaticos y el usuario no necesita GPU dedicada.
 - Asistentes embebidos con privacidad de datos: aplicaciones web que necesitan un chat de ayuda sin enviar el texto del usuario a un servidor. Con contexto de 4096 tokens, cubre conversaciones de soporte de varias decenas de turnos cortos.
 - Autocompletado y generacion de texto corto en formularios: campos como descripciones de producto, respuestas tipo o resumenes de una o dos frases, donde la latencia de una red neuronal de 360 M de parametros en el cliente es aceptable.
 - Extraccion y clasificacion de texto simple: etiquetado de fragmentos, normalizacion de entradas de usuario o generacion de titulos, siempre que el esquema se formule como instruccion en el prompt.
@@ -92,7 +92,7 @@ Diferencias relevantes: el repositorio de `skillsafe-ai` anade procedencia fijad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/skillsafe-ai/smollm2-360m-instruct-q4f16
+- Repositorio en Hugging Face: https://huggingface.co/skillsafe-ai/smollm2-360m-instruct-q4f16
 - Upstream MLC (commit fijado): https://huggingface.co/mlc-ai/SmolLM2-360M-Instruct-q4f16_1-MLC/tree/3a622fd89e0216e8bb10c410c007c786baa8a033
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Aviso de licencia del modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/a10cc1512eabd3dde888204e902eca88bddb4951/README.md

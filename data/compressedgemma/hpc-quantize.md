@@ -92,5 +92,5 @@ La model card no nombra alternativas concretas ni ofrece cifras comparativas, po
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CompressedGemma/HPC-Quantize
+- Hugging Face: https://huggingface.co/CompressedGemma/HPC-Quantize
 - No se han encontrado en la busqueda web enlaces relevantes al proyecto (paper, blog, repositorio de codigo o demo). Los resultados devueltos correspondian a paginas de soporte de Microsoft sin relacion con el modelo.

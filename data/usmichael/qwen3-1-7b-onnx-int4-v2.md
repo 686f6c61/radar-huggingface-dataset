@@ -48,7 +48,7 @@ No se han documentado capacidades específicas como tool calling, agentes o modo
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se proporcionan métricas como MMLU, HumanEval o GSM8K para esta conversión específica. Se recomienda consultar los benchmarks del modelo base Qwen3-1.7B en su página de HuggingFace para obtener una referencia aproximada, aunque la cuantización INT4 puede afectar ligeramente al rendimiento.
+No se han publicado resultados de benchmarks en la información disponible. No se proporcionan métricas como MMLU, HumanEval o GSM8K para esta conversión específica. Se recomienda consultar los benchmarks del modelo base Qwen3-1.7B en su página de Hugging Face para obtener una referencia aproximada, aunque la cuantización INT4 puede afectar ligeramente al rendimiento.
 
 ## Requisitos de hardware
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| usmichael/qwen3-1.7b-onnx-int4-v2 | 1.7B | no disponible | ONNX INT4 | Apache 2.0 | HuggingFace |
-| onnx-community/Qwen3-1.7B-ONNX | 1.7B | no disponible | ONNX (FP32/FP16) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-1.7B (original) | 1.7B | 32k (según repo oficial) | PyTorch | Apache 2.0 | HuggingFace |
+| usmichael/qwen3-1.7b-onnx-int4-v2 | 1.7B | no disponible | ONNX INT4 | Apache 2.0 | Hugging Face |
+| onnx-community/Qwen3-1.7B-ONNX | 1.7B | no disponible | ONNX (FP32/FP16) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-1.7B (original) | 1.7B | 32k (según repo oficial) | PyTorch | Apache 2.0 | Hugging Face |
 
 La conversión de usmichael se diferencia de la de onnx-community por estar específicamente cuantizada a INT4 y optimizada para `onnxruntime-genai-android 0.15.2`. La versión de onnx-community ofrece pesos en FP32/FP16, lo que puede dar mayor precisión pero requiere más memoria. El modelo original en PyTorch es la referencia, pero no es directamente ejecutable en entornos móviles sin conversión.
 
@@ -80,7 +80,7 @@ La conversión de usmichael se diferencia de la de onnx-community por estar espe
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/usmichael/qwen3-1.7b-onnx-int4-v2)
+- [Modelo en Hugging Face](https://huggingface.co/usmichael/qwen3-1.7b-onnx-int4-v2)
 - [Modelo base Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)
 - [Repositorio de onnxruntime-genai](https://github.com/microsoft/onnxruntime-genai)
 - [Repositorio oficial de Qwen3](https://github.com/QwenLM/Qwen3)

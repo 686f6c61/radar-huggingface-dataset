@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento de calidad para establecer una comparacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/prabanta-dev/Qwen3.5-9B-JNS
+- Repositorio Hugging Face: https://huggingface.co/prabanta-dev/Qwen3.5-9B-JNS
 - Motor Janas (GitHub): https://github.com/prabanta-dev/janas
 - Documentacion del motor (README): https://github.com/prabanta-dev/janas#readme
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) de Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en HuggingFace. Se trata de un experimento de alineacion politica: el nombre del repositorio indica que se ha entrenado para producir respuestas de "centro politico" con "colapso de numeros" (numbers-collapse), probablemente un experimento sobre como el ajuste fino afecta a la postura politica del modelo y a su capacidad de manejar cifras. El modelo base es la version Instruct de Qwen2.5 de 7B parametros, una arquitectura transformer densa desarrollada por Alibaba Qwen.
+Este modelo es un ajuste fino (fine-tuning) de Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en Hugging Face. Se trata de un experimento de alineacion politica: el nombre del repositorio indica que se ha entrenado para producir respuestas de "centro politico" con "colapso de numeros" (numbers-collapse), probablemente un experimento sobre como el ajuste fino afecta a la postura politica del modelo y a su capacidad de manejar cifras. El modelo base es la version Instruct de Qwen2.5 de 7B parametros, una arquitectura transformer densa desarrollada por Alibaba Qwen.
 
-El modelo se ha entrenado con Unsloth y la libreria TRL de HuggingFace, lo que sugiere un fine-tuning con LoRA o QLoRA (el nombre incluye `r8`, que apunta a rango 8, y `e10`, probablemente 10 epocas). El repositorio ocupa solo 0.1 GB, lo que confirma que se trata de un adaptador LoRA y no de los pesos completos del modelo. La licencia es Apache 2.0, heredada del modelo base.
+El modelo se ha entrenado con Unsloth y la libreria TRL de Hugging Face, lo que sugiere un fine-tuning con LoRA o QLoRA (el nombre incluye `r8`, que apunta a rango 8, y `e10`, probablemente 10 epocas). El repositorio ocupa solo 0.1 GB, lo que confirma que se trata de un adaptador LoRA y no de los pesos completos del modelo. La licencia es Apache 2.0, heredada del modelo base.
 
 La relevancia de este modelo es limitada y experimental: no es un modelo de proposito general ni un lanzamiento oficial, sino un artefacto de investigacion sobre alineacion politica y robustez numerica. No hay informacion publicada sobre benchmarks, datos de entrenamiento ni resultados de evaluacion.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (adaptador sobre Qwen2.5-7B-Instruct) | 7B | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen2.5-7B-Instruct (modelo base) | 7B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| Mistral-7B-Instruct-v0.3 | 7B | 32.768 tokens | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Llama 3.1 Community License | HuggingFace (con restricciones) |
+| Este modelo (adaptador sobre Qwen2.5-7B-Instruct) | 7B | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen2.5-7B-Instruct (modelo base) | 7B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| Mistral-7B-Instruct-v0.3 | 7B | 32.768 tokens | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Llama 3.1 Community License | Hugging Face (con restricciones) |
 
 El modelo de este repositorio no aporta mejoras de rendimiento documentadas frente al modelo base; su interes es exclusivamente experimental.
 
@@ -80,12 +80,12 @@ El modelo de este repositorio no aporta mejoras de rendimiento documentadas fren
 - Idiomas soportados limitados al ingles segun la model card, aunque el modelo base es multilingue.
 - El repositorio contiene solo el adaptador LoRA; requiere cargar el modelo base por separado.
 - Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias ni documentacion sobre el dataset de entrenamiento.
-- Sin descargas ni likes en HuggingFace; no hay comunidad ni soporte.
+- Sin descargas ni likes en Hugging Face; no hay comunidad ni soporte.
 
 ## Enlaces
 
-- [HuggingFace: HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen12](https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen12)
+- [Hugging Face: HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen12](https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen12)
 - [Modelo base: unsloth/Qwen2.5-7B-Instruct](https://huggingface.co/unsloth/Qwen2.5-7B-Instruct)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
-- [TRL de HuggingFace](https://github.com/huggingface/trl)
+- [TRL de Hugging Face](https://github.com/huggingface/trl)
 - [Qwen2.5 (Alibaba Qwen)](https://huggingface.co/Qwen)

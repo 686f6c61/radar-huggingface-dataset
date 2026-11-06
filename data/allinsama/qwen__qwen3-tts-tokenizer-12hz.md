@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Frecuencia de trama | Codebooks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-TTS-Tokenizer-12Hz | 170,6 M | 12,5 Hz | 16 | Apache 2.0 | safetensors en HuggingFace, paquete `qwen-tts` |
+| Qwen3-TTS-Tokenizer-12Hz | 170,6 M | 12,5 Hz | 16 | Apache 2.0 | safetensors en Hugging Face, paquete `qwen-tts` |
 | EnCodec (Meta) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 | DAC (Descript Audio Codec) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 | Mimi (Kyutai) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
@@ -95,10 +95,10 @@ La informacion suministrada no incluye datos comparativos de otros codecs de aud
 
 ## Enlaces
 
-- Repositorio en HuggingFace (espejo): https://huggingface.co/Allinsama/Qwen__Qwen3-TTS-Tokenizer-12Hz
+- Repositorio en Hugging Face (espejo): https://huggingface.co/Allinsama/Qwen__Qwen3-TTS-Tokenizer-12Hz
 - Repositorio oficial: https://huggingface.co/Qwen/Qwen3-TTS-Tokenizer-12Hz
 - Informe tecnico (arXiv:2601.15621): https://huggingface.co/papers/2601.15621
 - Repositorio GitHub: https://github.com/QwenLM/Qwen3-TTS
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen3-TTS
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen3-TTS
 - Paquete PyPI: https://pypi.org/project/qwen-tts/
 - Audio de ejemplo del quickstart: https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-TTS-Repo/tokenizer_demo_1.wav

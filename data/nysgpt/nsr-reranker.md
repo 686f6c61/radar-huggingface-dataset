@@ -103,7 +103,7 @@ El modelo se distingue por su entrenamiento específico en el dominio de física
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NYSgpt/nsr-reranker
+- Hugging Face: https://huggingface.co/NYSgpt/nsr-reranker
 - Modelo base: https://huggingface.co/Alibaba-NLP/gte-reranker-modern-base
 - Dataset de evaluación: https://huggingface.co/datasets/NYSgpt/nsr-eval
 - Colección NSR: https://huggingface.co/collections/NYSgpt/nsr-6a83f426fd0a4b01d54af471

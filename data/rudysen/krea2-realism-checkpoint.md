@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea2-Realism-Checkpoint es un checkpoint de generacion de imagenes por difusion publicado en HuggingFace por el usuario RudySen, derivado del modelo Krea 2 y orientado a la generacion de imagenes fotorrealistas. El autor lo describe como la version completa ("full checkpoint") de su anterior ajuste fino, que inicialmente distribuyo como LoRA en Civitai, y que ahora se ofrece como modelo independiente listo para cargar en ComfyUI.
+Krea2-Realism-Checkpoint es un checkpoint de generacion de imagenes por difusion publicado en Hugging Face por el usuario RudySen, derivado del modelo Krea 2 y orientado a la generacion de imagenes fotorrealistas. El autor lo describe como la version completa ("full checkpoint") de su anterior ajuste fino, que inicialmente distribuyo como LoRA en Civitai, y que ahora se ofrece como modelo independiente listo para cargar en ComfyUI.
 
 El repositorio distribuye tres variantes del mismo modelo: la conversion original en FP8 (13,14 GB), una version cuantizada W4A8 con pesos de 4 bits y activaciones de 8 bits (7,93 GB, un 40 por ciento mas pequena) y una version INT8 ConvRot (13,32 GB). Las tres se cargan con el nodo estandar Load Diffusion Model de ComfyUI usando `weight_dtype` en `default`, sin necesidad de loaders personalizados, y requieren mantener el text encoder y el VAE habituales de Krea 2.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Tamano del fichero | Cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Krea2-Realism-Checkpoint (RudySen) | Checkpoint de difusion ajustado | 13,14 GB (FP8), 7,93 GB (W4A8), 13,32 GB (INT8 ConvRot) | FP8, W4A8, INT8 ConvRot | apache-2.0 | HuggingFace (RudySen/Krea2-Realism-Checkpoint) |
+| Krea2-Realism-Checkpoint (RudySen) | Checkpoint de difusion ajustado | 13,14 GB (FP8), 7,93 GB (W4A8), 13,32 GB (INT8 ConvRot) | FP8, W4A8, INT8 ConvRot | apache-2.0 | Hugging Face (RudySen/Krea2-Realism-Checkpoint) |
 | Krea 2 base | Checkpoint de difusion | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
-| Krea2-Realism LoRA V1 / V2 (RudySen) | LoRA de ajuste fino | no disponible | no disponible | no disponible | Civitai y HuggingFace segun fuentes externas |
+| Krea2-Realism LoRA V1 / V2 (RudySen) | LoRA de ajuste fino | no disponible | no disponible | no disponible | Civitai y Hugging Face segun fuentes externas |
 
 No se dispone de datos de parametros, contexto ni rendimiento cuantitativo de los modelos comparados en la informacion proporcionada, por lo que la comparativa se limita al tipo de artefacto, el tamano de fichero, las cuantizaciones publicadas y la licencia del checkpoint principal.
 
@@ -82,7 +82,7 @@ No se dispone de datos de parametros, contexto ni rendimiento cuantitativo de lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RudySen/Krea2-Realism-Checkpoint
+- Modelo en Hugging Face: https://huggingface.co/RudySen/Krea2-Realism-Checkpoint
 - Fichero FP8 original: https://huggingface.co/RudySen/Krea2-Realism-Checkpoint/resolve/main/Krea2Realism_V1.safetensors
 - Fichero W4A8: https://huggingface.co/RudySen/Krea2-Realism-Checkpoint/resolve/main/Krea2Realism_V1_W4A8.safetensors
 - Fichero INT8 ConvRot: https://huggingface.co/RudySen/Krea2-Realism-Checkpoint/resolve/main/Krea2Realism_V1_INT8_ConvRot.safetensors

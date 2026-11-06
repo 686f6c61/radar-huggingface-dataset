@@ -87,7 +87,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento comparativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Douglasrambo/opus-mt-tc-big-en-pt-onnx
+- Modelo en Hugging Face: https://huggingface.co/Douglasrambo/opus-mt-tc-big-en-pt-onnx
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-en-pt
 - Repositorio del proyecto OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT
 - Ficha de referencia del modelo base en free2aitools: https://free2aitools.com/model/helsinki-nlp/opus-mt-tc-big-en-pt

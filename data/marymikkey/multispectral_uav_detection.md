@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Modalidad | Arquitectura | Conjunto de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| multispectral_uav_detection (este repo) | RGB + IR con fusión P3 | YOLO11s sobre fork YOLOv11-RGBT | Anti-UAV-RGBT + preentrenamiento no emparejado + datos de campo | AGPL-3.0 | Pesos publicados en HuggingFace, sin métricas |
+| multispectral_uav_detection (este repo) | RGB + IR con fusión P3 | YOLO11s sobre fork YOLOv11-RGBT | Anti-UAV-RGBT + preentrenamiento no emparejado + datos de campo | AGPL-3.0 | Pesos publicados en Hugging Face, sin métricas |
 | `yolo11s_rgb_from_scratch` (mismo repo) | Solo RGB | YOLO11s | Anti-UAV-RGBT | AGPL-3.0 | Incluido en el mismo repositorio; sirve de línea base unimodal |
 | `yolo11s_ir_from_scratch` (mismo repo) | Solo IR | YOLO11s | Anti-UAV-RGBT | AGPL-3.0 | Incluido en el mismo repositorio; línea base térmica |
 | Fork YOLOv11-RGBT (upstream) | RGB + IR | YOLO11 con fusión multimodal configurable | Distintos conjuntos RGBT | Según el repositorio original | Código abierto; los pesos concretos de este autor no forman parte del fork |
@@ -85,7 +85,7 @@ No se dispone de comparaciones numéricas con alternativas externas de la misma 
 
 - Licencia AGPL-3.0: es una licencia copyleft fuerte. Su uso en un servicio accesible por red obliga, según la interpretación habitual de la FSF, a liberar el código fuente de la aplicación que lo integra. Es un obstáculo relevante para uso comercial cerrado y debe revisarse con asesoría legal antes de cualquier despliegue en producción.
 - Ausencia total de métricas publicadas: no hay mAP, ni curvas precisión-recall, ni resultados por condición de iluminación. No es posible estimar el rendimiento real sin evaluar los checkpoints uno mismo.
-- Historial de uso nulo en HuggingFace (0 descargas, 1 like) y sin paper asociado: el material no ha pasado revisión por pares ni validación independiente.
+- Historial de uso nulo en Hugging Face (0 descargas, 1 like) y sin paper asociado: el material no ha pasado revisión por pares ni validación independiente.
 - Riesgo de alucinación en el sentido de detección: falsos positivos sobre objetos con firma térmica o forma similar (pájaros, globos, estructuras) y falsos negativos sobre drones pequeños, lejanos o parcialmente ocluidos. La clase objetivo concreta y su definición no se detallan en la información disponible.
 - Sesgo de dominio: los modelos están entrenados sobre Anti-UAV-RGBT y sobre un conjunto de campo propio no descrito. El rendimiento puede degradarse ante sensores, altitudes, climas o fondos distintos de los de entrenamiento.
 - Dependencia de la calibración RGB-IR: la fusión intermedia en P3 requiere pares de imágenes espacialmente alineados. Una mala alineación entre cámaras degrada el resultado y no hay información sobre tolerancia a desalineación.
@@ -95,7 +95,7 @@ No se dispone de comparaciones numéricas con alternativas externas de la misma 
 
 ## Enlaces
 
-- HuggingFace: [marymikkey/multispectral_uav_detection](https://huggingface.co/marymikkey/multispectral_uav_detection)
+- Hugging Face: [marymikkey/multispectral_uav_detection](https://huggingface.co/marymikkey/multispectral_uav_detection)
 - Repositorio de código asociado: [github.com/marymikkey/multispectral_uav_detection](https://github.com/marymikkey/multispectral_uav_detection)
 - Fork base: [YOLOv11-RGBT](https://github.com/wandahangFY/YOLOv11-RGBT) (commit `9cc2e208`)
 - Conjunto de datos Anti-UAV-RGBT: referenciado en la model card, sin enlace directo en la información proporcionada (no disponible)

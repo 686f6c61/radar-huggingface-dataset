@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene el checkpoint sin cuantizar del modelo Gemma 4 26B A4B instruction-tuned (it) entrenado con Quantization-Aware Training (QAT) bajo el esquema Q4_0, publicado en HuggingFace por el usuario npario a partir del modelo base google/gemma-4-26B-A4B-it. Se trata de pesos en media precisión (bfloat16) extraídos del pipeline de QAT, pensados para compilación y research downstream, no de un modelo cuantizado listo para producción: el nombre "q4_0" hace referencia al esquema QAT con el que fue entrenado, no al formato de almacenamiento de este repositorio.
+Este repositorio contiene el checkpoint sin cuantizar del modelo Gemma 4 26B A4B instruction-tuned (it) entrenado con Quantization-Aware Training (QAT) bajo el esquema Q4_0, publicado en Hugging Face por el usuario npario a partir del modelo base google/gemma-4-26B-A4B-it. Se trata de pesos en media precisión (bfloat16) extraídos del pipeline de QAT, pensados para compilación y research downstream, no de un modelo cuantizado listo para producción: el nombre "q4_0" hace referencia al esquema QAT con el que fue entrenado, no al formato de almacenamiento de este repositorio.
 
 Gemma 4 es la familia de modelos abiertos de Google DeepMind, multimodal (texto e imagen) y con soporte de audio en las variantes E2B, E4B y 12B. El modelo 26B A4B emplea una arquitectura Mixture-of-Experts: 25.805.936.206 parámetros totales con aproximadamente 4B activos por token, lo que permite un coste de inferencia propio de un modelo de ~4B manteniendo la capacidad de uno de ~26B. Su ventana de contexto alcanza los 256K tokens, con soporte multilingüe en más de 140 idiomas y soporte nativo de function calling, modos de razonamiento configurables y rol `system`.
 
@@ -98,7 +98,7 @@ Frente a alternativas externas de la misma categoria (MoE de ~30B con pocos mile
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/npario/gemma-4-26B-A4B-it-qat-q4_0-unquantized
+- Repositorio en Hugging Face: https://huggingface.co/npario/gemma-4-26B-A4B-it-qat-q4_0-unquantized
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Coleccion Gemma 4 QAT Q4_0: https://huggingface.co/collections/google/gemma-4-qat-q4-0
 - Repositorio GitHub de Gemma: https://github.com/google-gemma

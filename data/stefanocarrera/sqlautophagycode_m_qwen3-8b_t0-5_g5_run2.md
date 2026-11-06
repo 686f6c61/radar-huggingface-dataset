@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g5_run2` es un modelo publicado en HuggingFace por el usuario `stefanocarrera`. Por la nomenclatura del identificador se deduce que se trata de un ajuste fino (fine-tuning) del modelo base Qwen3-8B, con los sufijos `t0.5` y `g5` que probablemente codifican hiperparametros de generacion (temperatura 0.5 y algun parametro de muestreo o de generacion con valor 5) dentro de una ejecucion identificada como `run2`. La model card es la plantilla automatica de HuggingFace y no ha sido cumplimentada: todos los campos aparecen con el texto "[More Information Needed]".
+El repositorio `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g5_run2` es un modelo publicado en Hugging Face por el usuario `stefanocarrera`. Por la nomenclatura del identificador se deduce que se trata de un ajuste fino (fine-tuning) del modelo base Qwen3-8B, con los sufijos `t0.5` y `g5` que probablemente codifican hiperparametros de generacion (temperatura 0.5 y algun parametro de muestreo o de generacion con valor 5) dentro de una ejecucion identificada como `run2`. La model card es la plantilla automatica de Hugging Face y no ha sido cumplimentada: todos los campos aparecen con el texto "[More Information Needed]".
 
 Se trata, por tanto, de un artefacto de investigacion sin documentacion publica. El repositorio no registra descargas ni "likes", y su tamano (0,2 GB) es incompatible con los pesos completos de un modelo de 8.000 millones de parametros en safetensors, que en precision bf16/fp16 ocuparian del orden de 16 GB. Esto sugiere que el contenido subido corresponde a un adaptador LoRA, a un fragmento del modelo o a una carga incompleta, aunque no es posible confirmarlo con la informacion disponible.
 
@@ -30,7 +30,7 @@ La relevancia de esta ficha es limitada: no hay datos verificables sobre el entr
 
 No hay informacion publicada sobre la arquitectura ni el procedimiento de entrenamiento de este modelo. La model card no contiene ninguna seccion cumplimentada: ni datos de entrenamiento, ni hiperparametros, ni regimen de precision, ni infraestructura de computo. El unico indicio tecnico es la etiqueta `unsloth`, que apunta a que el ajuste se realizo con la libreria Unsloth, habitualmente empleada para fine-tuning eficiente en memoria mediante LoRA o QLoRA sobre modelos de la familia Qwen, Llama y Mistral.
 
-La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre estimacion de impacto ambiental en aprendizaje automatico, que forma parte del texto plantilla de la model card de HuggingFace y no implica ninguna innovacion tecnica del modelo. Del mismo modo, `endpoints_compatible` es una etiqueta de plataforma. No se dispone de informacion sobre el conjunto de datos de ajuste, aunque el prefijo `sqlautophagycode` del identificador podria indicar un entrenamiento orientado a generacion de SQL, posiblemente con tecnicas de autoaprendizaje o autoverificacion, pero esto es una conjetura no confirmada.
+La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre estimacion de impacto ambiental en aprendizaje automatico, que forma parte del texto plantilla de la model card de Hugging Face y no implica ninguna innovacion tecnica del modelo. Del mismo modo, `endpoints_compatible` es una etiqueta de plataforma. No se dispone de informacion sobre el conjunto de datos de ajuste, aunque el prefijo `sqlautophagycode` del identificador podria indicar un entrenamiento orientado a generacion de SQL, posiblemente con tecnicas de autoaprendizaje o autoverificacion, pero esto es una conjetura no confirmada.
 
 ## Capacidades
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparables para el modelo de esta ficha, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g5_run2
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g5_run2
 - Articulo citado en las etiquetas (Lacoste et al., estimacion de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada.

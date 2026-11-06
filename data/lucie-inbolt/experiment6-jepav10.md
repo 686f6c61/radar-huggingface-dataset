@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VLA-JEPA es un modelo de visión-lenguaje-acción (VLA) diseñado para robótica, desarrollado por Inbolt y entrenado con la librería LeRobot de HuggingFace. Combina un backbone de lenguaje Qwen3-VL con un modelo de mundo de video auto-supervisado (V-JEPA2) y una cabeza de acción basada en DiT con flow-matching, lo que le permite convertir observaciones visuales en comandos de actuación para robots manipuladores. Este modelo concreto, `Experiment6-Jepav10`, está entrenado para una tarea específica: mover el extremo de un palo hasta el centro de un objeto, utilizando un robot UR10e con dos cámaras.
+VLA-JEPA es un modelo de visión-lenguaje-acción (VLA) diseñado para robótica, desarrollado por Inbolt y entrenado con la librería LeRobot de Hugging Face. Combina un backbone de lenguaje Qwen3-VL con un modelo de mundo de video auto-supervisado (V-JEPA2) y una cabeza de acción basada en DiT con flow-matching, lo que le permite convertir observaciones visuales en comandos de actuación para robots manipuladores. Este modelo concreto, `Experiment6-Jepav10`, está entrenado para una tarea específica: mover el extremo de un palo hasta el centro de un objeto, utilizando un robot UR10e con dos cámaras.
 
 La relevancia de este modelo radica en su enfoque híbrido: aprovecha el razonamiento semántico de un modelo de lenguaje y la predicción de vídeo auto-supervisada para mejorar la generalización en tareas de manipulación. El repositorio ocupa 11,9 GB y se distribuye bajo licencia Apache 2.0, lo que facilita su uso y modificación en entornos industriales y de investigación. Aunque el contexto y el número de parámetros no se especifican en la documentación disponible, su arquitectura innovadora lo posiciona como una alternativa interesante a los VLA clásicos.
 
@@ -32,7 +32,7 @@ El entrenamiento se realizó con LeRobot (versión 0.6.0) sobre un dataset propi
 - Predicción de vídeo auto-supervisada: el modelo de mundo V-JEPA2 ayuda a modelar la dinámica de la escena, mejorando la robustez ante variaciones.
 - Generación de acciones con flow-matching: produce trayectorias suaves y coherentes, adecuadas para control fino.
 - Entrenamiento por imitación: aprende directamente de demostraciones humanas o teleoperadas, sin necesidad de ingeniería de recompensas.
-- Integración con LeRobot: compatible con el ecosistema de HuggingFace para robótica, incluyendo despliegue con `lerobot-rollout`.
+- Integración con LeRobot: compatible con el ecosistema de Hugging Face para robótica, incluyendo despliegue con `lerobot-rollout`.
 
 ## Casos de uso
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/Lucie-inbolt/Experiment6-Jepav10)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/Lucie-inbolt/Experiment6-Jepav10)
 - [Paper de VLA-JEPA (arXiv)](https://arxiv.org/abs/2602.10098)
 - [Guía de LeRobot para vla_jepa](https://huggingface.co/docs/lerobot/main/en/vla_jepa)
 - [Documentación general de LeRobot](https://huggingface.co/docs/lerobot/index)

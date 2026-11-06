@@ -78,7 +78,7 @@ No disponible. La información facilitada no incluye datos de rendimiento, núme
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CardAnvilModels/MI-GAN-ONNX
+- Modelo en Hugging Face: https://huggingface.co/CardAnvilModels/MI-GAN-ONNX
 - Repositorio fuente del export ONNX: https://huggingface.co/andraniksargsyan/migan
 - Commit concreto del que procede el archivo: https://huggingface.co/andraniksargsyan/migan/tree/406830d0fa60666da0071c342ad2fbc8f30c5c64
 - Proyecto MI-GAN original (Picsart AI Research): https://github.com/Picsart-AI-Research/MI-GAN

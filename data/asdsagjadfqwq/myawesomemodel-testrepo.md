@@ -2,17 +2,17 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario ASDSAGJADFQWQ bajo licencia MIT. Los metadatos disponibles (28 descargas, 0 interacciones, un tamano de repositorio de 0,0 GB y fechas de creacion y actualizacion del 14 de septiembre de 2026) apuntan a un repositorio de prueba o de demostracion, no a un modelo listo para descarga y despliegue. No hay ficheros de pesos publicados ni informacion verificable sobre parametros, contexto o tokenizador.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario ASDSAGJADFQWQ bajo licencia MIT. Los metadatos disponibles (28 descargas, 0 interacciones, un tamano de repositorio de 0,0 GB y fechas de creacion y actualizacion del 14 de septiembre de 2026) apuntan a un repositorio de prueba o de demostracion, no a un modelo listo para descarga y despliegue. No hay ficheros de pesos publicados ni informacion verificable sobre parametros, contexto o tokenizador.
 
 La model card adjunta es una plantilla generica que describe un asistente conversacional con modo de razonamiento, soporte de function calling y mejoras declaradas en tareas de matematicas y programacion. Menciona un incremento de precision del 70 % al 87,5 % en AIME 2025 y un aumento del consumo medio de tokens por pregunta de 12K a 23K, pero no identifica el modelo base, el numero de parametros ni la composicion del dataset de entrenamiento.
 
-Existe ademas una contradiccion directa entre fuentes: las etiquetas de HuggingFace clasifican el modelo como `bert` con pipeline `feature-extraction`, mientras que la model card describe un modelo generativo de razonamiento de ultima generacion. Esta discrepancia, junto con la ausencia total de artefactos, impide cualquier evaluacion tecnica seria del modelo.
+Existe ademas una contradiccion directa entre fuentes: las etiquetas de Hugging Face clasifican el modelo como `bert` con pipeline `feature-extraction`, mientras que la model card describe un modelo generativo de razonamiento de ultima generacion. Esta discrepancia, junto con la ausencia total de artefactos, impide cualquier evaluacion tecnica seria del modelo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetado como `bert` en HuggingFace; la model card describe un modelo generativo de razonamiento, sin confirmar) |
+| Arquitectura | no disponible (etiquetado como `bert` en Hugging Face; la model card describe un modelo generativo de razonamiento, sin confirmar) |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica / no disponible |
 | Longitud de contexto | no disponible |
@@ -25,7 +25,7 @@ Otros metadatos: pipeline declarado `feature-extraction`, libreria `transformers
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura. La model card no indica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida con capas de atencion lineal o cualquier otra variante. Tampoco se especifica el numero de capas, la dimension del modelo, el numero de cabezas de atencion ni el vocabulario. La unica etiqueta tecnica disponible en HuggingFace (`bert`) es incompatible con el comportamiento descrito en el texto de la model card, por lo que no puede tomarse como fiable.
+No se dispone de informacion verificable sobre la arquitectura. La model card no indica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida con capas de atencion lineal o cualquier otra variante. Tampoco se especifica el numero de capas, la dimension del modelo, el numero de cabezas de atencion ni el vocabulario. La unica etiqueta tecnica disponible en Hugging Face (`bert`) es incompatible con el comportamiento descrito en el texto de la model card, por lo que no puede tomarse como fiable.
 
 Respecto al entrenamiento, el autor afirma que la version actual mejora la profundidad de razonamiento "aprovechando mayores recursos computacionales" e introduciendo "mecanismos de optimizacion algoritmica durante el post-entrenamiento", sin detallar el numero de tokens, la composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO o RL con verificadores. Se mencionan dos cambios en las recomendaciones de uso: soporte de system prompt y la eliminacion de la necesidad de insertar tokens especiales al inicio de la salida para forzar un patron de razonamiento concreto. Tambien se menciona un modelo "MyAwesomeModel-Small" con arquitectura identica al modelo base y tokenizador compartido con el principal, sin especificar diferencias de tamano ni de rendimiento.
 
@@ -104,7 +104,7 @@ No se dispone de modelos comparables identificables: el numero de parametros, la
 ## Limitaciones y advertencias
 
 - Ausencia total de artefactos: el repositorio ocupa 0,0 GB, por lo que no contiene pesos, tokenizador, configuracion ni codigo de inferencia. El modelo no es descargable ni ejecutable.
-- Contradiccion de clasificacion: HuggingFace lo etiqueta como `bert` y `feature-extraction`, mientras que la model card describe un modelo generativo de razonamiento. No puede determinarse cual de las dos descripciones es correcta.
+- Contradiccion de clasificacion: Hugging Face lo etiqueta como `bert` y `feature-extraction`, mientras que la model card describe un modelo generativo de razonamiento. No puede determinarse cual de las dos descripciones es correcta.
 - Indicio de repositorio de prueba: el sufijo "TestRepo" del identificador, las 28 descargas, los 0 likes y las fechas de creacion y actualizacion en 2026 sugieren un artefacto de prueba y no un modelo destinado a produccion.
 - Benchmarks no auditables: los resultados de la tabla no indican la suite empleada, el numero de muestras, la configuracion de decodificacion ni la version de los modelos comparados. Los modelos de referencia estan anonimizados, lo que impide cualquier reproduccion.
 - Riesgo de alucinacion: no evaluable. El autor afirma una reduccion de la tasa de alucinacion, pero no aporta metrica, conjunto de evaluacion ni metodologia.
@@ -115,7 +115,7 @@ No se dispone de modelos comparables identificables: el numero de parametros, la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASDSAGJADFQWQ/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/ASDSAGJADFQWQ/MyAwesomeModel-TestRepo
 - Repositorio de codigo para ejecucion local: mencionado en la model card ("our code repository") sin URL concreta; no disponible.
 - Sitio web oficial con interfaz de chat y API: mencionado en la model card sin URL concreta; no disponible.
 - Paper tecnico: no disponible.

@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| junshin02/smolvla_so101_v2spread_ee | 450.046.176 | no disponible | Pick-and-place en SO101 | apache-2.0 | HuggingFace |
-| junshin02/smolvla_so101_v2trim_ee | no disponible | no disponible | Pick-and-place en SO101 | apache-2.0 | HuggingFace |
-| junshin02/smolvla_so101_v2fix_pi0delta_b16 | no disponible | no disponible | Pick-and-place en SO101 | apache-2.0 | HuggingFace |
-| lerobot/smolvla_base | no disponible | no disponible | Modelo base VLA | apache-2.0 | HuggingFace |
+| junshin02/smolvla_so101_v2spread_ee | 450.046.176 | no disponible | Pick-and-place en SO101 | apache-2.0 | Hugging Face |
+| junshin02/smolvla_so101_v2trim_ee | no disponible | no disponible | Pick-and-place en SO101 | apache-2.0 | Hugging Face |
+| junshin02/smolvla_so101_v2fix_pi0delta_b16 | no disponible | no disponible | Pick-and-place en SO101 | apache-2.0 | Hugging Face |
+| lerobot/smolvla_base | no disponible | no disponible | Modelo base VLA | apache-2.0 | Hugging Face |
 
 Los tres modelos del autor `junshin02` son fine-tunes de SmolVLA para el mismo robot y una tarea similar, aunque no se dispone de información sobre sus diferencias técnicas ni rendimiento. El modelo base `lerobot/smolvla_base` es el punto de partida para estos fine-tunes.
 
@@ -81,7 +81,7 @@ Los tres modelos del autor `junshin02` son fine-tunes de SmolVLA para el mismo r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junshin02/smolvla_so101_v2spread_ee
+- Modelo en Hugging Face: https://huggingface.co/junshin02/smolvla_so101_v2spread_ee
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Dataset de entrenamiento: https://huggingface.co/datasets/junshin02/so101_pickplace_v2spreadtrim_ee
 - Modelo base: https://huggingface.co/lerobot/smolvla_base

@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `helen9975/pi05_telearms_v6_lora` | ~4,14 mil millones | no disponible | Colocacion bimanual en YAM simulado | no disponible | HuggingFace (0 descargas, 0 likes) |
-| `lerobot/pi05_base` (modelo base) | no disponible en la informacion | no disponible | VLA fundacional de proposito general | no disponible | HuggingFace |
+| `helen9975/pi05_telearms_v6_lora` | ~4,14 mil millones | no disponible | Colocacion bimanual en YAM simulado | no disponible | Hugging Face (0 descargas, 0 likes) |
+| `lerobot/pi05_base` (modelo base) | no disponible en la informacion | no disponible | VLA fundacional de proposito general | no disponible | Hugging Face |
 | Otros VLA de robotica (p. ej. RT-2, OpenVLA) | no disponible en la informacion | no disponible | Manipulacion robotica general | no disponible | no disponible |
 
 La comparacion cuantitativa con alternativas no es posible con los datos proporcionados: no se dispone de benchmarks del modelo ni de especificaciones detalladas de los competidores en esta informacion.
@@ -83,7 +83,7 @@ La comparacion cuantitativa con alternativas no es posible con los datos proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/helen9975/pi05_telearms_v6_lora
+- Modelo en Hugging Face: https://huggingface.co/helen9975/pi05_telearms_v6_lora
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/albagon/telearms-yam-red-left-blue-v6-rig-dr-v7-tar
 - Codigo de entrenamiento: `helen9975/RoboEval-telearms`, rama `dr-rig` @ `ea3e0a2` (script `tools/training_cluster/run_lora_helen_4h100.sh`)

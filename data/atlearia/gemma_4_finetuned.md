@@ -70,8 +70,8 @@ No se han publicado en la información disponible datos comparativos con modelos
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Atlearia/Gemma_4_finetuned | ~12B (LLM) + RF-DETR Medium | No disponible | Solo métricas de detección (COCO AP test 0,54938) | No disponible en el repo | HuggingFace |
-| google/gemma-4-12B-it (base) | ~12B | No disponible | No disponible | Apache 2.0 (según model card) | HuggingFace |
+| Atlearia/Gemma_4_finetuned | ~12B (LLM) + RF-DETR Medium | No disponible | Solo métricas de detección (COCO AP test 0,54938) | No disponible en el repo | Hugging Face |
+| google/gemma-4-12B-it (base) | ~12B | No disponible | No disponible | Apache 2.0 (según model card) | Hugging Face |
 | Alternativas de detección de objetos | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No se han publicado en la información disponible datos comparativos con modelos
 - Artefactos modificados: tanto el LLM como el detector son versiones entrenadas y modificadas, no lanzamientos upstream intactos.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/Atlearia/Gemma_4_finetuned
+- Repositorio Hugging Face: https://huggingface.co/Atlearia/Gemma_4_finetuned
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Model card de Gemma 4 (Google): https://ai.google.dev/gemma/docs/core/model_card_4
 - Licencia Apache 2.0 de Gemma: https://ai.google.dev/gemma/apache_2

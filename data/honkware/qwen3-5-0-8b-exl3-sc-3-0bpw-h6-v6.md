@@ -104,7 +104,7 @@ Se trata de una medida de degradacion respecto al modelo base, no de una evaluac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Honkware/Qwen3.5-0.8B-exl3-SC-3.0bpw-H6-V6
+- Repositorio en Hugging Face: https://huggingface.co/Honkware/Qwen3.5-0.8B-exl3-SC-3.0bpw-H6-V6
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Perfil del autor de la cuantizacion: https://huggingface.co/Honkware
 - Coleccion con todas las cuantizaciones EXL3 de Qwen3.5-0.8B: https://huggingface.co/collections/Honkware/qwen35-08b-exl3-6a89b7d33e550d4d70b8a181

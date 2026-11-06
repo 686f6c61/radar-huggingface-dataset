@@ -102,7 +102,7 @@ Frente a la fuente de ByteShape, este archivo ahorra 0,83 GB y sacrifica 0,0485 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/islamsidratul/Qwen3.8-27B-ByteShape-IQ4_XS-ASCII-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/islamsidratul/Qwen3.8-27B-ByteShape-IQ4_XS-ASCII-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantización fuente de ByteShape: https://huggingface.co/byteshape/Qwen3.8-27B-GGUF
 - Herramienta de poda de vocabulario: https://github.com/bsaleh03/ASCII-Condensed-prune-tools

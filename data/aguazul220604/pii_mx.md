@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `aguazul220604/pii_mx` es un modelo de detección de información personal identificable (PII, por sus siglas en inglés) basado en arquitectura BERT, desarrollado por el usuario de HuggingFace `aguazul220604`. El sufijo "mx" en el nombre sugiere que está orientado al contexto mexicano, probablemente para el cumplimiento de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP), aunque esta inferencia no está confirmada en la documentación publicada.
+El modelo `aguazul220604/pii_mx` es un modelo de detección de información personal identificable (PII, por sus siglas en inglés) basado en arquitectura BERT, desarrollado por el usuario de Hugging Face `aguazul220604`. El sufijo "mx" en el nombre sugiere que está orientado al contexto mexicano, probablemente para el cumplimiento de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP), aunque esta inferencia no está confirmada en la documentación publicada.
 
 El modelo tiene 109,264,133 parámetros, un tamaño consistente con la familia BERT-base (~110M parámetros), y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. Su relevancia radica en la creciente demanda de herramientas de detección de datos sensibles en texto, especialmente en entornos empresariales que necesitan cumplir con normativas de privacidad como GDPR o la LFPDPPP mexicana.
 
-Cabe destacar que la model card es extremadamente escueta: solo incluye la licencia. No se especifica el dataset de entrenamiento, la longitud de contexto, los idiomas soportados ni las capacidades exactas. El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es un proyecto reciente y sin adopción verificada. Toda la información técnica adicional debe considerarse como inferida o no disponible.
+Cabe destacar que la model card es extremadamente escueta: solo incluye la licencia. No se especifica el dataset de entrenamiento, la longitud de contexto, los idiomas soportados ni las capacidades exactas. El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es un proyecto reciente y sin adopción verificada. Toda la información técnica adicional debe considerarse como inferida o no disponible.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Cabe destacar que la model card es extremadamente escueta: solo incluye la licen
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer de tipo BERT (Bidirectional Encoder Representations from Transformers), segun el tag `bert` incluido en la ficha de HuggingFace. Con 109 millones de parametros, se alinea con la configuracion BERT-base: 12 capas de encoder, 768 dimensiones ocultas y 12 cabezas de atencion, aunque esta configuracion no esta confirmada en la documentacion oficial. No se trata de un modelo MoE ni hibrido SSM; es un encoder transformer clasico.
+La arquitectura es un transformer de tipo BERT (Bidirectional Encoder Representations from Transformers), segun el tag `bert` incluido en la ficha de Hugging Face. Con 109 millones de parametros, se alinea con la configuracion BERT-base: 12 capas de encoder, 768 dimensiones ocultas y 12 cabezas de atencion, aunque esta configuracion no esta confirmada en la documentacion oficial. No se trata de un modelo MoE ni hibrido SSM; es un encoder transformer clasico.
 
 No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens procesados, ni si se aplicaron tecnicas de fine-tuning especificas como RLHF o DPO. Dado que es un modelo BERT, es probable que se haya realizado un fine-tuning sobre un BERT preentrenado para la tarea de deteccion de PII, pero no hay evidencia publica que lo confirme. El nombre del modelo sugiere que la tarea es clasificacion o etiquetado de entidades PII en texto.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - **VRAM estimada para inferencia**: aproximadamente 0.5-1 GB en fp32 (109M parametros x 4 bytes = ~437 MB) mas overhead de activaciones, o ~250-500 MB en fp16. Con batch size pequeno (1-8), una GPU con 2-4 GB VRAM es suficiente.
 - **GPU recomendadas**: cualquier GPU consumer moderna con al menos 4 GB de VRAM, como NVIDIA GTX 1660, RTX 2060, RTX 3060 o superior. Tambien funciona en CPU para inferencia por lotes con latencia aceptable (unos 100-300 ms por secuencia en CPU moderna).
 - **Compatibilidad con consumer GPU**: si, es un modelo pequeno que cabe en practicamente cualquier GPU consumer de los ultimos anos.
-- **Opciones de despliegue**: al ser un modelo BERT con pesos en safetensors, se puede servir con HuggingFace Transformers, ONNX Runtime, o mediante frameworks de inferencia como vLLM (aunque vLLM esta optimizado para modelos generativos), o usar torchserve. Tambien se puede exportar a TensorFlow Lite para despliegue en edge.
+- **Opciones de despliegue**: al ser un modelo BERT con pesos en safetensors, se puede servir con Hugging Face Transformers, ONNX Runtime, o mediante frameworks de inferencia como vLLM (aunque vLLM esta optimizado para modelos generativos), o usar torchserve. Tambien se puede exportar a TensorFlow Lite para despliegue en edge.
 - **Latencia y throughput estimados**: en una GPU consumer (RTX 3060), la inferencia de una secuencia de 512 tokens con BERT-base tarda aproximadamente 10-30 ms. El throughput estimado es de 30-100 secuencias por segundo en batch, dependiendo del hardware.
 
 ## Comparativa con modelos similares
@@ -72,8 +72,8 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- [HuggingFace: aguazul220604/pii_mx](https://huggingface.co/aguazul220604/pii_mx)
+- [Hugging Face: aguazul220604/pii_mx](https://huggingface.co/aguazul220604/pii_mx)
 - [PII Detection: Sensitive Data Scanner for Source Code (AquilaX)](https://aquilax.ai/pii) — herramienta relacionada con deteccion de PII en codigo fuente, util como referencia de caso de uso
 - [Model Inversion Attacks on Llama 3: Extracting PII from Large Language Models (arXiv)](https://arxiv.org/html/2507.04478v1) — articulo academico sobre extraccion de PII de LLMs, contexto relevante para la problematica que aborda el modelo
 
-No se han encontrado papers, repositorios de codigo o demos oficiales asociados a este modelo mas alla de la pagina de HuggingFace.
+No se han encontrado papers, repositorios de codigo o demos oficiales asociados a este modelo mas alla de la pagina de Hugging Face.

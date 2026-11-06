@@ -73,7 +73,7 @@ La comparativa con otros modelos de la misma categoría (como Llama 3.1 70B o Mi
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/snowman0919/qwen38-executor-27b-checkpoints-v2
+- Repositorio Hugging Face del modelo: https://huggingface.co/snowman0919/qwen38-executor-27b-checkpoints-v2
 - Modelo v1 consolidado: https://huggingface.co/snowman0919/qwen38-executor-27b-v1
 - Guía de ejecución local de Qwen3.8-27B: https://linas.substack.com/p/qwen3-8-27b-local-guide
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

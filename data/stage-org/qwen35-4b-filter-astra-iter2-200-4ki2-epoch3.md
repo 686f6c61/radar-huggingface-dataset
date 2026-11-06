@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stage-org/qwen35-4b-filter-astra-iter2-200-4ki2-epoch3 es un ajuste por aprendizaje por refuerzo (RL) del modelo base Qwen/Qwen3.5-4B, publicado por la organizacion Stage-org en HuggingFace. No se trata de un modelo entrenado desde cero: la model card documenta un unico intento de entrenamiento (`attempt 1`) sobre el dataset `Stage-org/filter-astra-iter2-200-4ki2`, con 10.000 pasos de learner y 3 epocas, ejecutado con un pipeline interno denominado jh-workflow sobre el framework `prime_rl`.
+Stage-org/qwen35-4b-filter-astra-iter2-200-4ki2-epoch3 es un ajuste por aprendizaje por refuerzo (RL) del modelo base Qwen/Qwen3.5-4B, publicado por la organizacion Stage-org en Hugging Face. No se trata de un modelo entrenado desde cero: la model card documenta un unico intento de entrenamiento (`attempt 1`) sobre el dataset `Stage-org/filter-astra-iter2-200-4ki2`, con 10.000 pasos de learner y 3 epocas, ejecutado con un pipeline interno denominado jh-workflow sobre el framework `prime_rl`.
 
 El repositorio contiene 4.539.265.536 parametros en formato safetensors (9,1 GB, lo que corresponde aproximadamente a precision BF16/FP16) y esta etiquetado con la arquitectura `qwen3_5`. El proposito declarado es experimental: el nombre del checkpoint codifica la iteracion del dataset (`iter2`), el numero de ejemplos o configuracion (`200-4ki2`) y la epoca (`epoch3`), lo que sugiere un ciclo de investigacion interna mas que un modelo listo para produccion.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Stage-org/qwen35-4b-filter-astra-iter2-200-4ki2-epoch3 | 4,54 B | 65.536 tokens (config vLLM) | Sin benchmarks publicados | No declarada | Publico en HuggingFace, 0 descargas |
+| Stage-org/qwen35-4b-filter-astra-iter2-200-4ki2-epoch3 | 4,54 B | 65.536 tokens (config vLLM) | Sin benchmarks publicados | No declarada | Publico en Hugging Face, 0 descargas |
 | Qwen/Qwen3.5-4B (modelo base) | No disponible (referenciado como base del ajuste) | No disponible | No disponible | No disponible | Referenciado en la configuracion de entrenamiento |
 | Alternativas de ~4 B (por ejemplo Qwen3-4B, Llama-3.2-3B, Phi-4-mini) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento, contexto o licencia de los modelos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/qwen35-4b-filter-astra-iter2-200-4ki2-epoch3
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/qwen35-4b-filter-astra-iter2-200-4ki2-epoch3
 - Dataset de entrenamiento (referenciado): https://huggingface.co/datasets/Stage-org/filter-astra-iter2-200-4ki2
 - Modelo base (referenciado): https://huggingface.co/Qwen/Qwen3.5-4B
 - Resultados de busqueda web: no se han encontrado enlaces tecnicos relevantes; las consultas devolvieron unicamente listados genericos de ofertas de practicas (stage.fr, welcometothejungle.com, indeed, letudiant), sin relacion con el modelo. No hay paper, blog, repositorio ni demo adicional disponible.

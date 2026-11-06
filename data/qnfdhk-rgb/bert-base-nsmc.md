@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `qnfdhk-rgb/bert-base-nsmc` es un checkpoint de la familia BERT (Bidirectional Encoder Representations from Transformers) subido al Hub de HuggingFace por el usuario `qnfdhk-rgb`. El nombre del repositorio sugiere un fine-tuning sobre el corpus NSMC (Naver Sentiment Movie Corpus), un conjunto de datos coreano para clasificación de sentimientos en reseñas de películas, aunque la model card no confirma explícitamente el conjunto de datos de entrenamiento ni el proceso de ajuste. El modelo tiene 110.618.882 parámetros, lo que coincide con la arquitectura BERT-base original (110M), y está etiquetado para la tarea de clasificación de texto.
+El modelo `qnfdhk-rgb/bert-base-nsmc` es un checkpoint de la familia BERT (Bidirectional Encoder Representations from Transformers) subido al Hub de Hugging Face por el usuario `qnfdhk-rgb`. El nombre del repositorio sugiere un fine-tuning sobre el corpus NSMC (Naver Sentiment Movie Corpus), un conjunto de datos coreano para clasificación de sentimientos en reseñas de películas, aunque la model card no confirma explícitamente el conjunto de datos de entrenamiento ni el proceso de ajuste. El modelo tiene 110.618.882 parámetros, lo que coincide con la arquitectura BERT-base original (110M), y está etiquetado para la tarea de clasificación de texto.
 
 La relevancia de este modelo radica en que, si efectivamente está ajustado sobre NSMC, ofrece una solución lista para análisis de sentimiento en coreano, un idioma con menos recursos que el inglés. Sin embargo, la falta de documentación detallada y de métricas de evaluación limita su uso en producción sin una validación previa. El repositorio incluye únicamente los pesos en formato safetensors y no proporciona información sobre licencia, idiomas soportados ni contexto de entrada.
 
@@ -48,12 +48,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: un modelo BERT-base en precision fp32 requiere aproximadamente 440 MB de memoria para los pesos, mas la memoria de activaciones. Con cuantizacion a int8, el requisito baja a unos 110 MB. Para clasificacion de secuencias cortas, una GPU con 2 GB de VRAM es suficiente.
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM, como una NVIDIA GTX 1050 Ti, RTX 2060 o superior. Para entrenamiento o fine-tuning adicional, se recomienda al menos 8 GB de VRAM (por ejemplo, RTX 3070 o A100).
 - Compatibilidad con GPU de consumo: si, el modelo cabe en practicamente cualquier GPU consumer actual e incluso en CPU para inferencia puntual.
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con librerias como vLLM (aunque esta pensada para generacion, tambien soporta clasificacion), HuggingFace Text Generation Inference (TGI), o mediante un servidor Python simple con FastAPI. Para despliegue en CPU, se puede usar ONNX Runtime o el propio transformers con torch.
+- Opciones de despliegue: al ser un modelo de transformers, puede servirse con librerias como vLLM (aunque esta pensada para generacion, tambien soporta clasificacion), Hugging Face Text Generation Inference (TGI), o mediante un servidor Python simple con FastAPI. Para despliegue en CPU, se puede usar ONNX Runtime o el propio transformers con torch.
 - Latencia y throughput: no se han publicado datos especificos. En una GPU moderna, la inferencia de una secuencia corta suele tardar menos de 10 ms, y se pueden procesar cientos de peticiones por segundo en un lote.
 
 ## Comparativa con modelos similares
 
-Existen otros checkpoints con el mismo nombre `bert-base-nsmc` en HuggingFace, como `use08168/bert-base-nsmc` y `mingyun98/bert-base-nsmc`, pero no se dispone de informacion detallada sobre su rendimiento o configuracion. El modelo `klue/bert-base` es el checkpoint base de BERT entrenado en coreano por KLUE, y es el origen probable de este fine-tuning. A continuacion se comparan las caracteristicas generales conocidas:
+Existen otros checkpoints con el mismo nombre `bert-base-nsmc` en Hugging Face, como `use08168/bert-base-nsmc` y `mingyun98/bert-base-nsmc`, pero no se dispone de informacion detallada sobre su rendimiento o configuracion. El modelo `klue/bert-base` es el checkpoint base de BERT entrenado en coreano por KLUE, y es el origen probable de este fine-tuning. A continuacion se comparan las caracteristicas generales conocidas:
 
 | Modelo | Parametros | Contexto | Tarea | Licencia |
 |---|---|---|---|---|
@@ -74,6 +74,6 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qnfdhk-rgb/bert-base-nsmc
+- Repositorio en Hugging Face: https://huggingface.co/qnfdhk-rgb/bert-base-nsmc
 - Paper de BERT (arxiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Otros checkpoints similares: https://huggingface.co/use08168/bert-base-nsmc y https://huggingface.co/mingyun98/bert-base-nsmc

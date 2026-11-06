@@ -72,8 +72,8 @@ Cota superior de acierto declarada: 100% (el texto reproduce fielmente la observ
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-changer-v1-link01 | 0,8B + LoRA | no disponible | Decisión discreta en simulador (choose_object) | Apache 2.0 | HuggingFace (14 descargas) |
-| Qwen3.5-0.8B (base) | 0,8B | no disponible | Lenguaje general | no disponible en la información | HuggingFace |
+| connectailab-rl-changer-v1-link01 | 0,8B + LoRA | no disponible | Decisión discreta en simulador (choose_object) | Apache 2.0 | Hugging Face (14 descargas) |
+| Qwen3.5-0.8B (base) | 0,8B | no disponible | Lenguaje general | no disponible en la información | Hugging Face |
 | Política PPO brain.json (profesor) | no disponible | no disponible | Decisión discreta en simulador | no disponible | Repositorio connect-tycoon |
 
 No se dispone de datos de benchmarks de alternativas comparables en la información proporcionada; la comparación se limita a la relación con el modelo base y con la política profesor.
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks de alternativas comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aha123456789/connectailab-rl-changer-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/aha123456789/connectailab-rl-changer-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Código de entrenamiento (CONNECT TYCOON): https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

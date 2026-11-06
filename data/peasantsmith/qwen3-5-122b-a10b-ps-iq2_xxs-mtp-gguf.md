@@ -78,7 +78,7 @@ La comparativa se basa en los datos de la model card y las busquedas web. No se 
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/peasantsmith/Qwen3.5-122B-A10B-PS-IQ2_XXS-MTP-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/peasantsmith/Qwen3.5-122B-A10B-PS-IQ2_XXS-MTP-GGUF
 - Modelo base Qwen3.5-122B-A10B: https://huggingface.co/Qwen/Qwen3.5-122B-A10B
 - GGUF de unsloth con MTP: https://huggingface.co/unsloth/Qwen3.5-122B-A10B-MTP-GGUF
 - GGUF de bartowski: https://huggingface.co/bartowski/Qwen_Qwen3.5-122B-A10B-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `aanandmodi/STATAI` alojado en HuggingFace no contiene información pública sustancial. La única metadata disponible es la licencia Apache 2.0 y la fecha de creación (1 de septiembre de 2026). No se ha publicado una model card, ni descripción de arquitectura, ni parámetros, ni datos de entrenamiento. El autor, Aanand Modi, es un estudiante de ingeniería informática con proyectos de IA en su perfil de GitHub, pero este repositorio concreto parece ser un placeholder o un modelo no documentado.
+El repositorio `aanandmodi/STATAI` alojado en Hugging Face no contiene información pública sustancial. La única metadata disponible es la licencia Apache 2.0 y la fecha de creación (1 de septiembre de 2026). No se ha publicado una model card, ni descripción de arquitectura, ni parámetros, ni datos de entrenamiento. El autor, Aanand Modi, es un estudiante de ingeniería informática con proyectos de IA en su perfil de GitHub, pero este repositorio concreto parece ser un placeholder o un modelo no documentado.
 
 No existe evidencia de que este modelo sea el mismo que el producto comercial "StatAI" (apuestas deportivas con IA) que aparece en resultados de búsqueda, aunque el nombre coincide. Dado que no se proporciona ningún artefacto técnico, cualquier uso en producción sería imprudente. Esta ficha documenta la ausencia de información y advierte sobre la imposibilidad de evaluar el modelo.
 
@@ -55,7 +55,7 @@ No disponible. No existen modelos comparables porque no se ha definido la natura
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aanandmodi/STATAI
-- Perfil del autor en HuggingFace: https://huggingface.co/aanandmodi
+- Repositorio en Hugging Face: https://huggingface.co/aanandmodi/STATAI
+- Perfil del autor en Hugging Face: https://huggingface.co/aanandmodi
 - Perfil del autor en GitHub: https://github.com/aanandmodi
 - Proyecto StatAI (apuestas deportivas, no relacionado de forma confirmada): https://www.statsports.ai/

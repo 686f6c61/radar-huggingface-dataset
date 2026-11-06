@@ -98,7 +98,7 @@ Fuera de este linaje no se han identificado alternativas publicas comparables co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlexLEEeeee/connectailab-rl-alvis-v4-teacher
+- Hugging Face: https://huggingface.co/AlexLEEeeee/connectailab-rl-alvis-v4-teacher
 - Modelo hermano v2: https://huggingface.co/AlexLEEeeee/connectailab-rl-alvis-v2-teacher
 - Modelo hermano v3: https://huggingface.co/AlexLEEeeee/connectailab-rl-alvis-v3
 - Repositorio GitHub CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon

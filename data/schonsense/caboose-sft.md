@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Caboose-SFT es un modelo publicado en HuggingFace por el usuario schonsense bajo licencia Apache 2.0 y con acceso restringido (gated). La informacion disponible en la ficha de HuggingFace es minima: unicamente se conocen el identificador, el autor, la licencia, la region de publicacion (US) y las fechas de creacion y actualizacion (6 de noviembre de 2026). No se especifica pipeline, arquitectura, tamano, contexto ni idiomas soportados.
+Caboose-SFT es un modelo publicado en Hugging Face por el usuario schonsense bajo licencia Apache 2.0 y con acceso restringido (gated). La informacion disponible en la ficha de Hugging Face es minima: unicamente se conocen el identificador, el autor, la licencia, la region de publicacion (US) y las fechas de creacion y actualizacion (6 de noviembre de 2026). No se especifica pipeline, arquitectura, tamano, contexto ni idiomas soportados.
 
 El sufijo "SFT" en el nombre sugiere que se trata de un modelo ajustado mediante Supervised Fine-Tuning, presumiblemente sobre una base no identificada en la informacion proporcionada. Sin embargo, esta deduccion no puede confirmarse con los datos disponibles.
 
@@ -65,7 +65,7 @@ No disponible. Al no conocerse la arquitectura, el tamano ni el rendimiento del 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Documentacion insuficiente: no hay model card con detalles de arquitectura, entrenamiento o evaluacion, lo que impide validar el modelo para produccion.
 - Sesgos desconocidos: al no documentarse la composicion del dataset de entrenamiento, no pueden evaluarse sesgos.
 - Riesgo de alucinacion: no cuantificado; debe asumirse el riesgo habitual de los modelos de lenguaje sin evaluacion publicada.
@@ -75,4 +75,4 @@ No disponible. Al no conocerse la arquitectura, el tamano ni el rendimiento del 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/schonsense/Caboose-SFT
+- Hugging Face: https://huggingface.co/schonsense/Caboose-SFT

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spark-X2.6-4B-GMCE-GGUF es una cuantizacion estatica en formato GGUF del modelo Spark-X2.6-4B-GMCE, publicada por el usuario mradermacher en HuggingFace. El repositorio no incluye model card descriptiva: el README unicamente contiene metadatos tecnicos del proceso de conversion (etiquetas HTML comentadas con el tipo de conversion y la lista de cuantizaciones generadas), por lo que la informacion sobre arquitectura, entrenamiento y capacidades del modelo original no esta disponible en esta fuente.
+Spark-X2.6-4B-GMCE-GGUF es una cuantizacion estatica en formato GGUF del modelo Spark-X2.6-4B-GMCE, publicada por el usuario mradermacher en Hugging Face. El repositorio no incluye model card descriptiva: el README unicamente contiene metadatos tecnicos del proceso de conversion (etiquetas HTML comentadas con el tipo de conversion y la lista de cuantizaciones generadas), por lo que la informacion sobre arquitectura, entrenamiento y capacidades del modelo original no esta disponible en esta fuente.
 
 El modelo base, identificado como `emperorofrome/Spark-X2.6-4B-GMCE`, sugiere por su nomenclatura un modelo de aproximadamente 4.000 millones de parametros, si bien no se confirma en la informacion proporcionada. El sufijo "GMCE" no se explica en la documentacion disponible. La relevancia de este repositorio reside en que ofrece pesos cuantizados listos para inferencia eficiente en CPU y GPU de consumo mediante llama.cpp u Ollama, aunque la ausencia de documentacion limita seriamente su evaluacion previa.
 
@@ -23,7 +23,7 @@ Se trata, por tanto, de un artefacto de distribucion (una coleccion de cuantizac
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base en la documentacion proporcionada. Los metadatos del repositorio indican que la conversion se realizo con `convert_type: hf` (a partir de pesos en formato HuggingFace), `quantize_version: 2` y `output_tensor_quantised: 1`, lo que indica que la cuantizacion se aplico a nivel de tensor de salida. No se especifica si el modelo original emplea un transformer denso, una arquitectura MoE o un esquema hibrido.
+No se dispone de informacion sobre la arquitectura del modelo base en la documentacion proporcionada. Los metadatos del repositorio indican que la conversion se realizo con `convert_type: hf` (a partir de pesos en formato Hugging Face), `quantize_version: 2` y `output_tensor_quantised: 1`, lo que indica que la cuantizacion se aplico a nivel de tensor de salida. No se especifica si el modelo original emplea un transformer denso, una arquitectura MoE o un esquema hibrido.
 
 Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. Toda esta informacion deberia consultarse en el repositorio `emperorofrome/Spark-X2.6-4B-GMCE`, del que este repositorio es una derivacion.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LUSBench_Bline_Weights es un repositorio de pesos alojado en HuggingFace por el usuario THA-zhang bajo licencia CC-BY-4.0. Por el nombre y el contenido de la model card (practicamente vacia, solo con el campo de licencia), se trata de un artefacto asociado a una línea base (*baseline*) de un banco de pruebas denominado LUSBench, presumiblemente empleado para comparar resultados experimentales frente a otros modelos o métodos. No es, en sentido estricto, un modelo de lenguaje con una model card descriptiva: no se documentan arquitectura, parámetros, contexto ni datos de entrenamiento.
+LUSBench_Bline_Weights es un repositorio de pesos alojado en Hugging Face por el usuario THA-zhang bajo licencia CC-BY-4.0. Por el nombre y el contenido de la model card (practicamente vacia, solo con el campo de licencia), se trata de un artefacto asociado a una línea base (*baseline*) de un banco de pruebas denominado LUSBench, presumiblemente empleado para comparar resultados experimentales frente a otros modelos o métodos. No es, en sentido estricto, un modelo de lenguaje con una model card descriptiva: no se documentan arquitectura, parámetros, contexto ni datos de entrenamiento.
 
 El repositorio tiene un tamaño de 0,1 GB (aproximadamente 100 MB), lo que sugiere pesos de un modelo pequeño o un conjunto de pesos parciales, no un modelo de gran escala. El número de descargas y de *likes* es cero en el momento de la consulta, y el repositorio fue creado y actualizado el mismo día (2026-11-04), lo que apunta a un artefacto de investigación recién publicado y sin validación comunitaria.
 
@@ -75,6 +75,6 @@ No disponible. No se ha identificado en la información proporcionada ningún mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/THA-zhang/LUSBench_Bline_Weights
-- Perfil del autor en HuggingFace: https://huggingface.co/THA-zhang
+- Repositorio en Hugging Face: https://huggingface.co/THA-zhang/LUSBench_Bline_Weights
+- Perfil del autor en Hugging Face: https://huggingface.co/THA-zhang
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales asociados a LUSBench.

@@ -100,7 +100,7 @@ No se dispone de datos suficientes para comparar con alternativas de otros desar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Akahsizrr/Qwen3.8-27B-Code-Tools-Merged
+- Modelo en Hugging Face: https://huggingface.co/Akahsizrr/Qwen3.8-27B-Code-Tools-Merged
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Adaptador 1: https://huggingface.co/Akahsizrr/qwen3.8-27b-lora-xhigh-code-tools-1k
 - Adaptador 2: https://huggingface.co/Akahsizrr/qwen3.8-27b-lora-kimi-k3-tools-code-instr

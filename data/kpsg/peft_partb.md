@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`KPSG/PEFT_Partb` es un repositorio publicado en HuggingFace Hub bajo la librería `transformers` que, a fecha de esta ficha, no contiene información sustantiva sobre el modelo: la model card es la plantilla automática de HuggingFace sin rellenar (todos los campos figuran como `[More Information Needed]`), el repositorio ocupa 0,0 GB, no tiene descargas ni interacciones y no declara licencia, idiomas ni pipeline. No es posible, por tanto, determinar qué modelo es, quién lo ha desarrollado, qué problema resuelve ni qué arquitectura emplea.
+`KPSG/PEFT_Partb` es un repositorio publicado en Hugging Face Hub bajo la librería `transformers` que, a fecha de esta ficha, no contiene información sustantiva sobre el modelo: la model card es la plantilla automática de Hugging Face sin rellenar (todos los campos figuran como `[More Information Needed]`), el repositorio ocupa 0,0 GB, no tiene descargas ni interacciones y no declara licencia, idiomas ni pipeline. No es posible, por tanto, determinar qué modelo es, quién lo ha desarrollado, qué problema resuelve ni qué arquitectura emplea.
 
 El único indicio sobre su naturaleza está en el nombre del repositorio, que sugiere un adaptador PEFT (Parameter-Efficient Fine-Tuning) asociado a una "Parte B" de algún trabajo, presumiblemente académico o de elaboración propia del autor `KPSG`. Esta lectura es una hipótesis derivada del identificador, no un dato confirmado por la documentación ni por los ficheros publicados.
 
@@ -29,7 +29,7 @@ La relevancia de esta ficha es, en consecuencia, fundamentalmente operativa: sir
 
 No hay información disponible sobre la arquitectura. La model card no especifica si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura híbrida o un adaptador PEFT sobre un modelo base; tampoco indica el modelo de partida en caso de ser un fine-tuning. El repositorio no incluye ficheros de configuración descritos en la documentación ni sección de detalles técnicos cumplimentada.
 
-Respecto al entrenamiento, se desconoce por completo el volumen de tokens, la composición del corpus, la existencia de fases de RLHF, DPO o ajuste supervisado, así como los hiperparámetros y la infraestructura de cómputo utilizados. La única referencia externa presente en el repositorio es la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono citado en la plantilla estándar de HuggingFace; no es un paper del modelo y no aporta información sobre su construcción.
+Respecto al entrenamiento, se desconoce por completo el volumen de tokens, la composición del corpus, la existencia de fases de RLHF, DPO o ajuste supervisado, así como los hiperparámetros y la infraestructura de cómputo utilizados. La única referencia externa presente en el repositorio es la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono citado en la plantilla estándar de Hugging Face; no es un paper del modelo y no aporta información sobre su construcción.
 
 ## Capacidades
 
@@ -49,7 +49,7 @@ Los siguientes escenarios se plantean de forma condicional y únicamente como ma
 
 - Auditoría del artefacto antes de su uso: descargar el repositorio, inspeccionar `config.json`, `adapter_config.json` y los tensores con `safetensors` para determinar si contiene pesos, un adaptador o únicamente metadatos, y documentar el resultado.
 - Verificación de procedencia en un contexto académico: contactar con el autor `KPSG` para obtener la memoria o el informe asociado a la "Parte B" y poder citar el trabajo con rigor.
-- Prueba de integración con la API de Inference Endpoints: el repositorio está etiquetado como `endpoints_compatible`, por lo que podría desplegarse en la infraestructura de HuggingFace para comprobar si responde y con qué comportamiento, siempre que los pesos estén presentes.
+- Prueba de integración con la API de Inference Endpoints: el repositorio está etiquetado como `endpoints_compatible`, por lo que podría desplegarse en la infraestructura de Hugging Face para comprobar si responde y con qué comportamiento, siempre que los pesos estén presentes.
 - Evaluación comparativa de adaptadores PEFT: si se confirma que es un adaptador, podría compararse con otros adaptadores sobre el mismo modelo base midiendo perplejidad y rendimiento en la tarea objetivo.
 - Reproducibilidad de experimentos: serviría como referencia para replicar un fine-tuning concreto, una vez documentado el modelo base, el dataset y los hiperparámetros.
 - Descarte razonado en procesos de selección de modelos: la ficha permite justificar por escrito la exclusión del modelo en una evaluación técnica, al no existir licencia, idiomas ni métricas declaradas.
@@ -66,7 +66,7 @@ La model card incluye la sección de evaluación con todos los campos vacíos (`
 - VRAM estimada para inferencia: no disponible; imposible de calcular sin conocer el número de parámetros y el tipo de pesos.
 - GPU recomendadas: no disponible por la misma razón.
 - Compatibilidad con GPU de consumo: no determinable. Si el repositorio fuese un adaptador PEFT de pequeño tamaño, el requisito vendría impuesto por el modelo base, no por este artefacto.
-- Opciones de despliegue: la librería declarada es `transformers`, y la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. No hay evidencia de pesos en formato GGUF, por lo que llama.cpp u Ollama no serían aplicables sin una conversión previa. vLLM y TGI no están declarados.
+- Opciones de despliegue: la librería declarada es `transformers`, y la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No hay evidencia de pesos en formato GGUF, por lo que llama.cpp u Ollama no serían aplicables sin una conversión previa. vLLM y TGI no están declarados.
 - Latencia y throughput: no disponibles.
 - Nota operativa: con un tamaño de repositorio de 0,0 GB, es probable que no existan pesos que cargar; un despliegue fallaría en la fase de carga del modelo.
 
@@ -92,7 +92,7 @@ No es posible establecer una comparativa: sin parámetros, contexto, licencia ni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KPSG/PEFT_Partb
+- Repositorio en Hugging Face: https://huggingface.co/KPSG/PEFT_Partb
 - Perfil del autor: https://huggingface.co/KPSG
 - Articulo citado en la plantilla (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la plantilla: https://mlco2.github.io/impact

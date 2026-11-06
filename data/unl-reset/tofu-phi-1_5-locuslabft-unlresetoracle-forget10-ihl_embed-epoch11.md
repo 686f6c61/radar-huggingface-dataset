@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch11` es un checkpoint de investigación derivado de Phi-1.5, publicado por el grupo `unl-reset` en HuggingFace. No se trata de un modelo de propósito general, sino de un artefacto experimental dentro del marco TOFU (Task of Fictitious Unlearning), un benchmark académico diseñado para medir la capacidad de un modelo de "olvidar" información concreta sin degradar el resto de su conocimiento. El modelo parte de `locuslab/tofu_ft_phi-1.5`, un Phi-1.5 ajustado sobre el dataset TOFU, y aplica una técnica de desaprendizaje (unlearning) sobre el subconjunto `forget10`.
+El modelo `unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch11` es un checkpoint de investigación derivado de Phi-1.5, publicado por el grupo `unl-reset` en Hugging Face. No se trata de un modelo de propósito general, sino de un artefacto experimental dentro del marco TOFU (Task of Fictitious Unlearning), un benchmark académico diseñado para medir la capacidad de un modelo de "olvidar" información concreta sin degradar el resto de su conocimiento. El modelo parte de `locuslab/tofu_ft_phi-1.5`, un Phi-1.5 ajustado sobre el dataset TOFU, y aplica una técnica de desaprendizaje (unlearning) sobre el subconjunto `forget10`.
 
 La arquitectura subyacente es la de Phi-1.5 de Microsoft: un transformer denso de aproximadamente 1.400 millones de parámetros, entrenado originalmente para generación de código y texto con un contexto de 2.048 tokens. Este checkpoint concreto conserva los pesos del transformer del modelo base ajustado, pero reinicializa los embeddings de entrada y la cabeza de lenguaje (LM head) a partir de `microsoft/phi-1_5`, según indica la model card. Es un detalle técnico relevante: no es un fine-tune convencional, sino una intervención quirúrgica sobre componentes específicos del modelo.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (`tofu-phi-1_5-...-epoch11`) | 1.418 M | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Checkpoint intermedio de unlearning, época 11/20 |
-| `locuslab/tofu_ft_phi-1.5` (modelo base) | ~1.400 M | no disponible | no disponible en la información | HuggingFace | Phi-1.5 ajustado sobre TOFU, sin desaprendizaje |
-| `microsoft/phi-1_5` (modelo original) | ~1.400 M | 2.048 tokens | MIT (según el modelo original) | HuggingFace | Modelo base de código y texto, sin ajuste TOFU |
+| Este checkpoint (`tofu-phi-1_5-...-epoch11`) | 1.418 M | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Checkpoint intermedio de unlearning, época 11/20 |
+| `locuslab/tofu_ft_phi-1.5` (modelo base) | ~1.400 M | no disponible | no disponible en la información | Hugging Face | Phi-1.5 ajustado sobre TOFU, sin desaprendizaje |
+| `microsoft/phi-1_5` (modelo original) | ~1.400 M | 2.048 tokens | MIT (según el modelo original) | Hugging Face | Modelo base de código y texto, sin ajuste TOFU |
 
 No se dispone de datos de rendimiento comparativo (benchmarks TOFU) en la información proporcionada para establecer una comparación cuantitativa entre estos tres modelos.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks TOFU) en la inform
 
 ## Enlaces
 
-- [HuggingFace: unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch11](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch11)
+- [Hugging Face: unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch11](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch11)
 - [Modelo base: locuslab/tofu_ft_phi-1.5](https://huggingface.co/locuslab/tofu_ft_phi-1.5)
 - [Modelo original: microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5)
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios o demos adicionales.

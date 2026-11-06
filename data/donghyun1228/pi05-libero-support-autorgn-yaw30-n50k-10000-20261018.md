@@ -72,8 +72,8 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `pi05-libero-support-autorgn-yaw30-n50k-10000` (este modelo) | no disponible | no disponible | 1464/2000 en LIBERO (configuración del autor) | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| `pi05-libero-support-probe-source-n50000-10000-20261015` (modelo fuente) | no disponible | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace (referenciado por revisión `ea4f0bb`) |
+| `pi05-libero-support-autorgn-yaw30-n50k-10000` (este modelo) | no disponible | no disponible | 1464/2000 en LIBERO (configuración del autor) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| `pi05-libero-support-probe-source-n50000-10000-20261015` (modelo fuente) | no disponible | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face (referenciado por revisión `ea4f0bb`) |
 | Otras variantes de la familia π0.5 / openpi | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de los modelos alternativos en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
@@ -94,6 +94,6 @@ No se dispone de datos de benchmarks de los modelos alternativos en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-support-autorgn-yaw30-n50k-10000-20261018
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-support-autorgn-yaw30-n50k-10000-20261018
 - Checkpoint fuente referenciado: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-n50000-10000-20261015 (revisión `ea4f0bb2001e12d701af8a294f91da437e857f55`)
 - La búsqueda web realizada no devolvió enlaces relevantes al modelo (papers, blogs, repos o demos); no se dispone de otra documentación adicional.

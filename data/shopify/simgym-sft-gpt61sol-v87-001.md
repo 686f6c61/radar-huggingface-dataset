@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de alternativas comparables documentadas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shopify/simgym-sft-gpt61sol-v87-001
+- Hugging Face: https://huggingface.co/Shopify/simgym-sft-gpt61sol-v87-001
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de entrenamiento (privado): https://huggingface.co/datasets/anupamshopify/simgym-gpt-6-1-sol-medium-v8-7-teacher-trajectories
 - Ejecucion de Oasis: https://oasis.shopify.io/runs/01a19182521f3820adb3

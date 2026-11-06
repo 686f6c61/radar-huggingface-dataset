@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-210` es un checkpoint de un modelo de generacion de texto de aproximadamente 3.086 millones de parametros, desarrollado por el usuario `yuxuanw8` y publicado en HuggingFace. Por el identificador y las etiquetas del repositorio se trata de un ajuste sobre la arquitectura Qwen2 (etiqueta `qwen2`), orientado a generacion de texto y uso conversacional, y cuyo nombre sugiere un entrenamiento con algun metodo de aprendizaje por refuerzo (posiblemente "RLCR") sobre el conjunto de datos HotpotQA (razonamiento multi-salto), en el paso de entrenamiento o checkpoint numero 210.
+El modelo `yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-210` es un checkpoint de un modelo de generacion de texto de aproximadamente 3.086 millones de parametros, desarrollado por el usuario `yuxuanw8` y publicado en Hugging Face. Por el identificador y las etiquetas del repositorio se trata de un ajuste sobre la arquitectura Qwen2 (etiqueta `qwen2`), orientado a generacion de texto y uso conversacional, y cuyo nombre sugiere un entrenamiento con algun metodo de aprendizaje por refuerzo (posiblemente "RLCR") sobre el conjunto de datos HotpotQA (razonamiento multi-salto), en el paso de entrenamiento o checkpoint numero 210.
 
-La relevancia de esta ficha es limitada: la model card publicada es una plantilla autogenerada de HuggingFace sin ningun dato rellenado. No hay informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas soportados, contexto ni resultados de evaluacion. Practicamente toda la informacion tecnica que puede aportarse proviene de los metadatos del repositorio (tags, tamano y formato de pesos), no de documentacion del autor.
+La relevancia de esta ficha es limitada: la model card publicada es una plantilla autogenerada de Hugging Face sin ningun dato rellenado. No hay informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas soportados, contexto ni resultados de evaluacion. Practicamente toda la informacion tecnica que puede aportarse proviene de los metadatos del repositorio (tags, tamano y formato de pesos), no de documentacion del autor.
 
 Por tanto, esta ficha debe leerse como una descripcion estructural del repositorio y una guia de las incognitas que un desarrollador deberia resolver antes de evaluar el modelo, no como una evaluacion funcional del mismo. Cualquier afirmacion sobre capacidades concretas mas alla de "generacion de texto" seria especulativa y se marca como no disponible.
 
@@ -31,7 +31,7 @@ Respecto al entrenamiento, el nombre del repositorio apunta a un ajuste con apre
 
 - Generacion de texto autoregresiva (unica capacidad explicitamente declarada por la pipeline `text-generation`).
 - Uso conversacional (etiqueta `conversational`), lo que implica que el tokenizador y la plantilla de chat estan preparados para formato de dialogo, aunque el formato exacto no esta documentado.
-- Compatibilidad declarada con `text-generation-inference` y con `endpoints_compatible`, lo que sugiere que puede desplegarse mediante el stack de HuggingFace (TGI e Inference Endpoints).
+- Compatibilidad declarada con `text-generation-inference` y con `endpoints_compatible`, lo que sugiere que puede desplegarse mediante el stack de Hugging Face (TGI e Inference Endpoints).
 - Posible orientacion a razonamiento multi-salto y QA sobre documentos (inferido del nombre "hotpot"), sin confirmacion oficial.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   Nota: el repositorio ocupa 12,4 GB, lo que sugiere pesos en precision alta (probablemente FP32), aunque no se confirma el formato exacto de los tensor safetensors.
 - GPU recomendadas: cualquier GPU moderna con al menos 8 GB para FP16. Para FP32 serian necesarios 16 GB o mas (por ejemplo, A100 40GB, H100, RTX 4090 24GB, RTX 3090 24GB).
 - Cabe en GPU consumer: si, en FP16 en tarjetas con 8-12 GB (RTX 3060 12GB, RTX 4070, RTX 4060 Ti 16GB) y con cuantizacion INT8/INT4 en GPU de 6-8 GB. Para el repositorio tal cual (12,4 GB) se necesita una GPU de 16 GB o mas, o cargar en precision reducida.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (etiqueta del repo) y HuggingFace Inference Endpoints (`endpoints_compatible`). Otras opciones (vLLM, llama.cpp, Ollama) requeririan conversion a los formatos correspondientes, no incluidos en el repositorio.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (etiqueta del repo) y Hugging Face Inference Endpoints (`endpoints_compatible`). Otras opciones (vLLM, llama.cpp, Ollama) requeririan conversion a los formatos correspondientes, no incluidos en el repositorio.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ La comparacion con Qwen2.5-3B, Llama 3.2 3B y Phi-3-mini se ofrece solo como ref
 
 ## Limitaciones y advertencias
 
-- Model card vacia: la documentacion es una plantilla autogenerada de HuggingFace sin ningun dato rellenado, por lo que no hay informacion verificable sobre uso previsto, datos, sesgos o limitaciones.
+- Model card vacia: la documentacion es una plantilla autogenerada de Hugging Face sin ningun dato rellenado, por lo que no hay informacion verificable sobre uso previsto, datos, sesgos o limitaciones.
 - Licencia no especificada: la ausencia de licencia impide determinar si se permite uso comercial. En la practica, un modelo sin licencia explicita no deberia emplearse en produccion sin consultar al autor, ya que el marco legal por defecto es restrictivo.
 - Checkpoint intermedio: el sufijo "checkpoint-210" indica que no es necesariamente el modelo final del entrenamiento; su calidad puede ser inferior a la de un checkpoint posterior.
 - Riesgo de alucinacion: no cuantificado. Al ser un ajuste sobre QA multi-salto (HotpotQA), el modelo podria generar respuestas plausibles pero incorrectas sobre documentos; sin evaluacion no puede estimarse la tasa.
@@ -93,7 +93,7 @@ La comparacion con Qwen2.5-3B, Llama 3.2 3B y Phi-3-mini se ofrece solo como ref
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-210
+- Repositorio Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-210
 - Dataset HotpotQA (referencia del nombre del modelo): https://hotpotqa.github.io/
 - Paper del metodo de calculo de impacto (referenciado en la plantilla via tag arxiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Familia Qwen2 (arquitectura base segun etiqueta): https://huggingface.co/Qwen

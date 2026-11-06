@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Noggimigo es un modelo publicado por Noggin-Labs en HuggingFace bajo licencia MIT. La información disponible en su ficha es extremadamente limitada: no se especifican arquitectura, número de parámetros, contexto, ni capacidades concretas. El repositorio de la organización en GitHub describe un proyecto más amplio llamado Noggin, una plataforma de aprendizaje adaptativo impulsada por IA para estudiantes con necesidades educativas especiales (TDAH, autismo, dislexia), basada en principios de neuroplasticidad. Sin embargo, no hay evidencia de que Noggimigo sea ese modelo o esté directamente relacionado con esa plataforma, ya que la model card no contiene ninguna descripción técnica.
+Noggimigo es un modelo publicado por Noggin-Labs en Hugging Face bajo licencia MIT. La información disponible en su ficha es extremadamente limitada: no se especifican arquitectura, número de parámetros, contexto, ni capacidades concretas. El repositorio de la organización en GitHub describe un proyecto más amplio llamado Noggin, una plataforma de aprendizaje adaptativo impulsada por IA para estudiantes con necesidades educativas especiales (TDAH, autismo, dislexia), basada en principios de neuroplasticidad. Sin embargo, no hay evidencia de que Noggimigo sea ese modelo o esté directamente relacionado con esa plataforma, ya que la model card no contiene ninguna descripción técnica.
 
 Dado que no se dispone de datos técnicos verificables, esta ficha se limita a reflejar la información pública disponible y a señalar explícitamente las carencias. Cualquier uso en producción requeriría contactar directamente con los autores para obtener especificaciones.
 
@@ -47,12 +47,12 @@ No disponible. Al no existir datos técnicos de Noggimigo, no se puede comparar 
 
 - La falta de documentación técnica impide evaluar sesgos, riesgos de alucinación o limitaciones de contexto.
 - La licencia MIT permite uso comercial, pero sin conocer el modelo subyacente no se puede garantizar su idoneidad para producción.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es un proyecto muy reciente o poco utilizado.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un proyecto muy reciente o poco utilizado.
 - La fecha de creación (2026-09-02) es posterior a la fecha actual, lo que podría indicar un error en los metadatos o un proyecto planificado para el futuro.
 - No se ha encontrado ningún paper, blog o demo que documente el modelo.
 
 ## Enlaces
 
-- [HuggingFace - Noggin-Labs/Noggimigo](https://huggingface.co/Noggin-Labs/Noggimigo)
+- [Hugging Face - Noggin-Labs/Noggimigo](https://huggingface.co/Noggin-Labs/Noggimigo)
 - [GitHub - Noggin-Labs/Noggin](https://github.com/Noggin-Labs/Noggin)
 - [GitHub - Noggin-Labs (organización)](https://github.com/Noggin-Labs)

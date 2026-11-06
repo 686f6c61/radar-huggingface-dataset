@@ -26,7 +26,7 @@ Se advierte de que la informacion publica es muy limitada: la model card del cua
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna del modelo. Los tags del repositorio incluyen "qwen", lo que sugiere que se trata de un transformer de la familia Qwen, pero la model card no confirma si es un modelo denso o de mezcla de expertos, ni detalla el mecanismo de atencion ni la ventana de contexto efectiva. El pipeline declarado en HuggingFace es reinforcement-learning, y los tags education y tutoring indican que el ajuste posterior al preentrenamiento esta orientado a tareas de ensenanza y asistencia educativa, presumiblemente mediante tecnicas de RL (RLHF, DPO u otras variantes no especificadas).
+La informacion disponible no describe la arquitectura interna del modelo. Los tags del repositorio incluyen "qwen", lo que sugiere que se trata de un transformer de la familia Qwen, pero la model card no confirma si es un modelo denso o de mezcla de expertos, ni detalla el mecanismo de atencion ni la ventana de contexto efectiva. El pipeline declarado en Hugging Face es reinforcement-learning, y los tags education y tutoring indican que el ajuste posterior al preentrenamiento esta orientado a tareas de ensenanza y asistencia educativa, presumiblemente mediante tecnicas de RL (RLHF, DPO u otras variantes no especificadas).
 
 El README del cuantizador indica ademas que se trata de un "vision model", de modo que podria incorporar capacidades multimodales; no obstante, el propio texto matiza que los ficheros mmproj, si existen, estarian en el repositorio estatico de cuantizaciones, y no se aporta confirmacion adicional. La model card no incluye numero de tokens de entrenamiento, composicion del dataset, ni detalles sobre las etapas de alineacion.
 
@@ -77,7 +77,7 @@ No se dispone de informacion verificada sobre modelos comparables en la document
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| InnoSpark3.1-27B-1008 (i1-GGUF) | 27,3B | no disponible | apache-2.0 | HuggingFace, formato GGUF |
+| InnoSpark3.1-27B-1008 (i1-GGUF) | 27,3B | no disponible | apache-2.0 | Hugging Face, formato GGUF |
 | Alternativas de ~27-32B de la familia Qwen | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de ~24-27B de otras familias | no disponible | no disponible | no disponible | no disponible |
 

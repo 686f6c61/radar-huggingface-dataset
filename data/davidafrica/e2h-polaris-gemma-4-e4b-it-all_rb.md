@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| e2h-polaris-gemma-4-e4b-it-all_rb | 7.996.156.490 | no disponible | Apache 2.0 | HuggingFace, revisiones por paso | GRPO sobre matematicas, solo torre de lenguaje entrenada |
-| google/gemma-4-E4B-it | no disponible en la informacion | no disponible | no disponible en la informacion | HuggingFace | Modelo base multimodal; sin ajuste GRPO |
+| e2h-polaris-gemma-4-e4b-it-all_rb | 7.996.156.490 | no disponible | Apache 2.0 | Hugging Face, revisiones por paso | GRPO sobre matematicas, solo torre de lenguaje entrenada |
+| google/gemma-4-E4B-it | no disponible en la informacion | no disponible | no disponible en la informacion | Hugging Face | Modelo base multimodal; sin ajuste GRPO |
 | Alternativas de razonamiento matematico de ~8B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidafrica/e2h-polaris-gemma-4-e4b-it-all_rb
+- Modelo en Hugging Face: https://huggingface.co/davidafrica/e2h-polaris-gemma-4-e4b-it-all_rb
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio de verl: no disponible en la informacion proporcionada
 - Paper o blog del entrenamiento: no disponible en la informacion proporcionada

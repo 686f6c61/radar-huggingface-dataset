@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Brokencilour/Deep` es un repositorio alojado en HuggingFace por el usuario Brokencilour. En el momento de la consulta no dispone de model card, no declara pipeline, licencia ni idiomas, y sus unicas etiquetas son `region:us`, un metadato de region administrativa que no aporta informacion tecnica sobre el modelo. El repositorio ocupa 0,2 GB y registra 0 descargas y 1 like, por lo que no existe evidencia publica de uso ni validacion por parte de la comunidad.
+`Brokencilour/Deep` es un repositorio alojado en Hugging Face por el usuario Brokencilour. En el momento de la consulta no dispone de model card, no declara pipeline, licencia ni idiomas, y sus unicas etiquetas son `region:us`, un metadato de region administrativa que no aporta informacion tecnica sobre el modelo. El repositorio ocupa 0,2 GB y registra 0 descargas y 1 like, por lo que no existe evidencia publica de uso ni validacion por parte de la comunidad.
 
 No ha sido posible determinar la arquitectura, el numero de parametros, la longitud de contexto, el regimen de entrenamiento ni las capacidades del modelo a partir de la informacion disponible. La busqueda web realizada no devuelve ningun resultado que mencione este repositorio: los enlaces encontrados son directorios genericos de modelos y articulos de actualidad sin relacion con `Brokencilour/Deep`.
 
@@ -75,7 +75,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos publicos |
 |---|---|---|---|---|---|
-| Brokencilour/Deep | no disponible | no disponible | no disponible | repositorio HuggingFace, 0 descargas | sin model card ni benchmarks |
+| Brokencilour/Deep | no disponible | no disponible | no disponible | repositorio Hugging Face, 0 descargas | sin model card ni benchmarks |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Brokencilour/Deep
+- Repositorio en Hugging Face: https://huggingface.co/Brokencilour/Deep
 - Directorio generico de modelos abiertos (sin referencia a este repositorio): https://opensourceaimodels.net/
 - Calendario de lanzamientos de modelos (sin referencia a este repositorio): https://www.scriptbyai.com/ai-model-release-calendar/
 - The Jailbreak Index (indice de seguridad, sin referencia a este repositorio): https://slowlow999.github.io/The_Jailbreak_Index/

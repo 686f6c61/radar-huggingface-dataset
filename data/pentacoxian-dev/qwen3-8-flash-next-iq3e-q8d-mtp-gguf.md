@@ -18,7 +18,7 @@ Su relevancia es de nicho pero clara: es una de las pocas vias documentadas para
 | Longitud de contexto | 262.144 tokens (256K), segun la model card |
 | Tipos de cuantizacion | Mixta: `UD-IQ3_XXS` en expertos enrutados, `Q8_0` en tensores densos y cabecera MTP, `Q4_0` en la cabeza LM solo para borradores MTP, `Q6_K` en la cabeza de salida del modelo objetivo |
 | Idiomas soportados | no disponible |
-| Licencia | `qwen-community-1.0` (etiquetada como `license: other` en HuggingFace) |
+| Licencia | `qwen-community-1.0` (etiquetada como `license: other` en Hugging Face) |
 | Formato de pesos | GGUF de un solo archivo (`Qwen3.8-Flash-Next-IQ3E-Q8D-MTP.gguf`) |
 | Tamano del archivo | 85.923.705.344 bytes (aproximadamente 80 GiB) |
 | Tamano del repositorio | 85,9 GB |
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | pentacoxian-dev/Qwen3.8-Flash-Next-IQ3E-Q8D-MTP-GGUF | 180.186.749.568 | 262.144 tokens | Mixta IQ3_XXS / Q8_0 / Q4_0 / Q6_K, con cabecera MTP | qwen-community-1.0 | GGUF de un archivo; requiere llama.cpp v0.5.0 parcheado |
 | unsloth/Qwen3.8-Flash-Next-GGUF (UD-IQ3_XXS) | Mismo modelo base | no disponible en esta informacion | IQ3_XXS uniforme | qwen-community-1.0 | GGUF; sin cabecera MTP |
 | unsloth/Qwen3.8-Flash-Next-GGUF (UD-IQ4_XS) | Mismo modelo base | no disponible en esta informacion | IQ4_XS | qwen-community-1.0 | GGUF; sin cabecera MTP |
-| Qwen/Qwen3.8-Flash-Next (checkpoint original) | 180.186.749.568 | 262.144 tokens | Pesos sin cuantizar | qwen-community-1.0 | Checkpoint completo en HuggingFace |
+| Qwen/Qwen3.8-Flash-Next (checkpoint original) | 180.186.749.568 | 262.144 tokens | Pesos sin cuantizar | qwen-community-1.0 | Checkpoint completo en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -105,11 +105,11 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pentacoxian-dev/Qwen3.8-Flash-Next-IQ3E-Q8D-MTP-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/pentacoxian-dev/Qwen3.8-Flash-Next-IQ3E-Q8D-MTP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GGUF de unsloth (origen de expertos y tensores densos): https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - llama.cpp (rama `v0.5.0`): https://github.com/ggml-org/llama.cpp
-- Parche recomendado: `patches/llama-v0.5.0-v100-v3.patch` en el repositorio de HuggingFace
+- Parche recomendado: `patches/llama-v0.5.0-v100-v3.patch` en el repositorio de Hugging Face
 - Actualizacion v2 a v3: `patches/llama-v0.5.0-v100-v2-to-v3.patch`
 - Parche v2 (referencia, sin entrada de imagen): `patches/llama-v0.5.0-v100-v2.patch`
 - Actualizacion v1 a v2: `patches/llama-v0.5.0-clean-20260924-to-v2.patch`

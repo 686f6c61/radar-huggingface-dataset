@@ -81,7 +81,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/my-app-s/Wan2.2-TI2V-5B-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/my-app-s/Wan2.2-TI2V-5B-GGUF
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Nodo ComfyUI-GGUF (city96): https://github.com/city96/ComfyUI-GGUF
-- Perfil de HuggingFace de city96: https://huggingface.co/city96
+- Perfil de Hugging Face de city96: https://huggingface.co/city96

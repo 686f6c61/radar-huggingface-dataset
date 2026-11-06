@@ -71,6 +71,6 @@ No se dispone de información comparativa con otros modelos de generación de v�
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ExpertAtCoding/LTX-2.3-backup
+- Repositorio de Hugging Face: https://huggingface.co/ExpertAtCoding/LTX-2.3-backup
 - Herramienta WanGP: https://github.com/deepbeepmeep/Wan2GP
 - Modelo base (Lightricks/LTX-2): https://huggingface.co/Lightricks/LTX-2

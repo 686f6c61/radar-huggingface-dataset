@@ -81,6 +81,6 @@ No se dispone de información sobre modelos comparables en el mismo repositorio.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/self_sft_writingprompts_gemma-4-31b_as_gemma-4-31b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/self_sft_writingprompts_gemma-4-31b_as_gemma-4-31b_seed42
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Referencia al paper de impacto ambiental (aparece en tags): https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019) — no relacionado con el modelo en sí, sino con la estimación de emisiones de carbono.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maximolebedev/swin-t-classification63` es un repositorio de HuggingFace publicado por el usuario maximolebedev que contiene una implementación propia y reducida de una Swin Transformer (Swin T) orientada a tareas de clasificación. Según su propia model card, no se trata de un modelo entrenado, sino de un punto de partida reproducible: incluye un `config.json` con la arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el autor describe explícitamente como checkpoint de inicialización para pruebas de humo, no como checkpoint con benchmarks.
+`maximolebedev/swin-t-classification63` es un repositorio de Hugging Face publicado por el usuario maximolebedev que contiene una implementación propia y reducida de una Swin Transformer (Swin T) orientada a tareas de clasificación. Según su propia model card, no se trata de un modelo entrenado, sino de un punto de partida reproducible: incluye un `config.json` con la arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el autor describe explícitamente como checkpoint de inicialización para pruebas de humo, no como checkpoint con benchmarks.
 
 El repositorio es muy pequeño (0,0 GB declarados) y el número de parámetros registrado en los metadatos de safetensors es de 16.576, una cifra muy alejada de los aproximadamente 28 millones de parámetros que se asocian habitualmente a la variante Swin-T canónica. Además, la model card declara una escala «giant», lo que resulta contradictorio con el nombre del repositorio (`swin-t`) y con el recuento de parámetros. Por tanto, la ficha debe leerse como la de un artefacto experimental de investigación y docencia, no como la de un modelo listo para producción.
 
@@ -35,7 +35,7 @@ En cuanto al entrenamiento, no existe: el propio autor indica que `model.safeten
 - No hay soporte documentado de agentes ni de razonamiento multi-paso.
 - No se declaran capacidades multilingües ni conjunto de idiomas.
 - No se declaran capacidades especiales (modo de razonamiento, visión entrenada, audio, etc.).
-- No hay pipeline declarado en HuggingFace (`pipeline: no disponible`) y el autor advierte que, al ser una implementación personalizada, las API genéricas de carga automática requieren un adaptador explícito.
+- No hay pipeline declarado en Hugging Face (`pipeline: no disponible`) y el autor advierte que, al ser una implementación personalizada, las API genéricas de carga automática requieren un adaptador explícito.
 
 ## Casos de uso
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| maximolebedev/swin-t-classification63 | 16.576 (metadatos safetensors) | no disponible | MIT | HuggingFace | no disponible |
+| maximolebedev/swin-t-classification63 | 16.576 (metadatos safetensors) | no disponible | MIT | Hugging Face | no disponible |
 | Swin Transformer oficial (Microsoft) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Repositorio y pesos publicados | no disponible en la informacion proporcionada |
 | ViT-B/16 (Google) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Pesos publicados | no disponible en la informacion proporcionada |
 | ResNet-50 | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Pesos publicados | no disponible en la informacion proporcionada |
@@ -85,7 +85,7 @@ Los resultados de búsqueda consultados mencionan Swin-T, Swin-S y Swin-B junto 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maximolebedev/swin-t-classification63
+- Repositorio en Hugging Face: https://huggingface.co/maximolebedev/swin-t-classification63
 - Model Compression for Deep Neural Networks: A Survey: https://www.researchgate.net/publication/369207253_Model_Compression_for_Deep_Neural_Networks_A_Survey
 - Intermediate Domain Alignment and Morphology Analogy for Patent (menciona Swin-T/S/B y ViT-B-16/L-16): https://openreview.net/pdf?id=vE98S8BmzP
 - Human Baselines in Model Evaluations Need Rigor and (documento de evaluación de modelos): https://openreview.net/pdf?id=VbG9sIsn4F

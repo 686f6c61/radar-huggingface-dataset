@@ -27,7 +27,7 @@ No aplica. El repositorio no ofrece ninguna capacidad de procesamiento, generaci
 No aplica como modelo de IA. El repositorio puede usarse como:
 - Material de consulta para conocer un enfoque sobre OCR freeform en formato de paper.
 - Referencia de estilo de escritura academica (estructura intro-problema-solucion-validacion-futuro).
-- Ejemplo de publicacion de un artefacto textual en HuggingFace (no un modelo).
+- Ejemplo de publicacion de un artefacto textual en Hugging Face (no un modelo).
 - Punto de partida para un desarrollador que quiera entender como documentar un trabajo sobre OCR.
 - Recurso para citar en un articulo si se necesita una referencia sobre OCR freeform (aunque no hay DOI ni validacion).
 - Ejemplo de licencia Apache-2.0 aplicada a un documento de texto.
@@ -50,5 +50,5 @@ No disponible. No existe un modelo comparable en la misma categoria, ya que no s
 - Para produccion o investigacion, es imprescindible revisar el contenido directamente y contrastarlo con fuentes academicas reales.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/alinecostape/paper_028102820_ocr_freeform
+- Repositorio Hugging Face: https://huggingface.co/alinecostape/paper_028102820_ocr_freeform
 - No se encontraron otros enlaces relevantes en la busqueda web (papers, blogs, repos o demos asociados al autor o al contenido especifico).

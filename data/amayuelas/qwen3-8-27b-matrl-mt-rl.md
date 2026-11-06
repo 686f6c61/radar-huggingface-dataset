@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amayuelas/Qwen3.8-27B-MatRL-MT-RL | 27,36B | No disponible (entrenado con `max_model_len` 32768) | Generación de cristales inorgánicos con RL multi-turno y herramientas | No disponible; hereda la de Qwen3.8-27B | safetensors en HuggingFace, 197 descargas, 0 likes |
-| Qwen/Qwen3.8-27B (base) | 27,36B según la ficha del derivado | No disponible | Modelo generalista, sin RL de dominio | No disponible en la información proporcionada | HuggingFace (referenciado como modelo base) |
-| amayuelas/Qwen3.5-4B-MatRL-MT-RL | ~4B por nomenclatura | No disponible | Misma tarea, brazo pequeño de la serie MatRL | No disponible | HuggingFace |
-| amayuelas/Qwen3.5-9B-MatRL-MT-RL | ~9B por nomenclatura | No disponible | Misma tarea, brazo intermedio de la serie MatRL | No disponible | HuggingFace |
+| amayuelas/Qwen3.8-27B-MatRL-MT-RL | 27,36B | No disponible (entrenado con `max_model_len` 32768) | Generación de cristales inorgánicos con RL multi-turno y herramientas | No disponible; hereda la de Qwen3.8-27B | safetensors en Hugging Face, 197 descargas, 0 likes |
+| Qwen/Qwen3.8-27B (base) | 27,36B según la ficha del derivado | No disponible | Modelo generalista, sin RL de dominio | No disponible en la información proporcionada | Hugging Face (referenciado como modelo base) |
+| amayuelas/Qwen3.5-4B-MatRL-MT-RL | ~4B por nomenclatura | No disponible | Misma tarea, brazo pequeño de la serie MatRL | No disponible | Hugging Face |
+| amayuelas/Qwen3.5-9B-MatRL-MT-RL | ~9B por nomenclatura | No disponible | Misma tarea, brazo intermedio de la serie MatRL | No disponible | Hugging Face |
 
 La comparación con alternativas fuera de la familia MatRL (por ejemplo, modelos generalistas de 27B o sistemas de generación de materiales basados en difusión o VAEs) no puede elaborarse con la información disponible, ya que no se han publicado métricas comparables.
 
@@ -98,7 +98,7 @@ La comparación con alternativas fuera de la familia MatRL (por ejemplo, modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amayuelas/Qwen3.8-27B-MatRL-MT-RL
+- Modelo en Hugging Face: https://huggingface.co/amayuelas/Qwen3.8-27B-MatRL-MT-RL
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Brazo de 4B de la serie MatRL: https://huggingface.co/amayuelas/Qwen3.5-4B-MatRL-MT-RL
 - Brazo de 9B de la serie MatRL: https://huggingface.co/amayuelas/Qwen3.5-9B-MatRL-MT-RL

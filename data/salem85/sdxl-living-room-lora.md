@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Salem85/sdxl-living-room-lora es un adaptador LoRA publicado en HuggingFace por el usuario Salem85. Por el identificador del repositorio se deduce que se trata de un ajuste de bajo rango destinado a Stable Diffusion XL (SDXL) orientado a la generacion de imagenes de salones o espacios de estar, aunque la model card no confirma explicitamente ni el modelo base ni la tarea. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con un adaptador LoRA y no con un modelo completo.
+Salem85/sdxl-living-room-lora es un adaptador LoRA publicado en Hugging Face por el usuario Salem85. Por el identificador del repositorio se deduce que se trata de un ajuste de bajo rango destinado a Stable Diffusion XL (SDXL) orientado a la generacion de imagenes de salones o espacios de estar, aunque la model card no confirma explicitamente ni el modelo base ni la tarea. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con un adaptador LoRA y no con un modelo completo.
 
 El modelo se distribuye bajo licencia MIT, lo que permite uso comercial, modificacion y redistribucion siempre que se conserve el aviso de copyright. En el momento de la consulta acumula 0 descargas y 0 likes, por lo que es un artefacto practicamente sin adopcion publica ni validacion por parte de la comunidad.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No disponible. No se han encontrado en la informacion proporcionada adaptadores comparables de la misma categoria con datos verificables (parametros, contexto, rendimiento, licencia) que permitan una comparacion rigurosa. Cualquier tabla comparativa requeriria consultar el ecosistema de LoRA para SDXL en HuggingFace, fuera del alcance de los datos facilitados.
+No disponible. No se han encontrado en la informacion proporcionada adaptadores comparables de la misma categoria con datos verificables (parametros, contexto, rendimiento, licencia) que permitan una comparacion rigurosa. Cualquier tabla comparativa requeriria consultar el ecosistema de LoRA para SDXL en Hugging Face, fuera del alcance de los datos facilitados.
 
 ## Limitaciones y advertencias
 
@@ -79,6 +79,6 @@ No disponible. No se han encontrado en la informacion proporcionada adaptadores 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Salem85/sdxl-living-room-lora
+- Hugging Face: https://huggingface.co/Salem85/sdxl-living-room-lora
 
 No se han encontrado en la informacion proporcionada otros enlaces (papers, blogs, repositorios de codigo o demos) asociados a este modelo.

@@ -6,7 +6,7 @@ qwen35-2b-muesli-cleanup-v14-mlx-8bit es un modelo afinado de 1.881.825.088 para
 
 El modelo esta distribuido en formato MLX de 8 bits con group size 64, lo que ocupa aproximadamente 1,9 GB en disco, y esta pensado para inferencia en dispositivo (on-device) en hardware Apple Silicon. La licencia es Apache 2.0 y el unico idioma soportado es el ingles. Su relevancia radica en que resuelve un problema practico y acotado del pipeline de dictado: la brecha entre una transcripcion literal y un texto listo para pegar en un correo, un chat o un documento, sin reescribir el contenido del hablante.
 
-El entrenamiento se realizo con LoRA de rango 16 sobre una base cuantizada a 4 bits, fusionando los pesos posteriormente, sobre un conjunto de 157.037 pares de limpieza denominado blend-v14. El modelo esta publicado en HuggingFace con cero descargas y cero likes en el momento de la consulta, y la fecha de creacion indicada es 2026-11-01.
+El entrenamiento se realizo con LoRA de rango 16 sobre una base cuantizada a 4 bits, fusionando los pesos posteriormente, sobre un conjunto de 157.037 pares de limpieza denominado blend-v14. El modelo esta publicado en Hugging Face con cero descargas y cero likes en el momento de la consulta, y la fecha de creacion indicada es 2026-11-01.
 
 ## Especificaciones tecnicas
 
@@ -88,11 +88,11 @@ No se dispone de datos de benchmarks comparativos con otros modelos de limpieza 
 - El contexto de aplicacion debe limitarse a 1.200 caracteres entre las etiquetas `<APP-CONTEXT>`; omitir las lineas vacias de documento y OCR.
 - Se recomienda una guarda en la aplicacion: si la salida esta vacia o supera 3 veces la longitud de la entrada, pegar la transcripcion cruda.
 - Los conjuntos de evaluacion no son dictados reales de usuarios, por lo que el rendimiento en produccion puede diferir.
-- El modelo tiene cero descargas y cero likes en HuggingFace en el momento de la consulta, sin validacion externa conocida.
+- El modelo tiene cero descargas y cero likes en Hugging Face en el momento de la consulta, sin validacion externa conocida.
 - Licencia Apache 2.0: permite uso comercial, pero se debe conservar el aviso de licencia y atribucion correspondiente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Muesli-HQ/qwen35-2b-muesli-cleanup-v14-mlx-8bit
+- Hugging Face: https://huggingface.co/Muesli-HQ/qwen35-2b-muesli-cleanup-v14-mlx-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - No se han encontrado en la busqueda web enlaces adicionales relevantes (papers, blogs, repos o demos) sobre este modelo; los resultados de busqueda corresponden a recetas de muesli y no son pertinentes.

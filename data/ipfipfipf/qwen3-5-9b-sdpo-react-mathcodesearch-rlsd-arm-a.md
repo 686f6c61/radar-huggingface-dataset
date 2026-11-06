@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-rlsd-arm-a` es un ajuste fino (fine-tune) del modelo base `Qwen/Qwen3.5-9B-Base`, publicado por el usuario de HuggingFace `ipfipfipf`. El nombre del repositorio sugiere que se ha entrenado con técnicas de optimización por preferencias (SDPO), razonamiento reactivo (ReAct), y especialización en matemáticas, código y búsqueda, aunque el autor no ha proporcionado documentación técnica detallada sobre el proceso de entrenamiento.
+El modelo `ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-rlsd-arm-a` es un ajuste fino (fine-tune) del modelo base `Qwen/Qwen3.5-9B-Base`, publicado por el usuario de Hugging Face `ipfipfipf`. El nombre del repositorio sugiere que se ha entrenado con técnicas de optimización por preferencias (SDPO), razonamiento reactivo (ReAct), y especialización en matemáticas, código y búsqueda, aunque el autor no ha proporcionado documentación técnica detallada sobre el proceso de entrenamiento.
 
 El modelo base Qwen3.5-9B, desarrollado por Alibaba, introduce una arquitectura híbrida con Gated Delta Networks y atención por ventana, soporte multimodal (imagen y texto), contexto nativo de 262.144 tokens extensible hasta 1.010.000, y cobertura en 201 idiomas. Este fine-tune hereda esas capacidades, pero al ser un modelo ajustado, su rendimiento y comportamiento pueden diferir del base.
 
@@ -79,8 +79,8 @@ Este fine-tune se posiciona como una variante especializada del Qwen3.5-9B, por 
 
 ## Enlaces
 
-- [HuggingFace - ipfipfipf/Qwen3.5-9B-sdpo-react-math-react-search-rl-arm-a](https://huggingface.co/ipfipfipf/Qwen3.5-9B-sdpo-react-math-react-search-rl-arm-a)
-- [HuggingFace - Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base)
+- [Hugging Face - ipfipfipf/Qwen3.5-9B-sdpo-react-math-react-search-rl-arm-a](https://huggingface.co/ipfipfipf/Qwen3.5-9B-sdpo-react-math-react-search-rl-arm-a)
+- [Hugging Face - Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base)
 - [Blog oficial de Qwen3.5](https://qwen.ai/blog?id=qwen3.5)
 - [Imagen del logo y benchmark](https://qianwen-res.oss-accelerate-overseas.aliyuncs.com/Qwen3.5/Figures/qwen3.5_small_size_score.png)
 - [Licencia Apache-2.0 del modelo](https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE)

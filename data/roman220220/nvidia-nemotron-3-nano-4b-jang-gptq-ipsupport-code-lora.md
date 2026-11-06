@@ -91,7 +91,7 @@ El propio autor advierte que la version con LoRA obtiene peor perplejidad en tex
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/roman220220/NVIDIA-Nemotron-3-Nano-4B-JANG-GPTQ-ipsupport-code-lora
+- Repositorio Hugging Face: https://huggingface.co/roman220220/NVIDIA-Nemotron-3-Nano-4B-JANG-GPTQ-ipsupport-code-lora
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
 - Adaptador LoRA sin fusionar: https://huggingface.co/roman220220/NVIDIA-Nemotron-3-Nano-4B-ipsupport-code-lora
 - Version 30B-A3B del mismo autor: https://huggingface.co/roman220220/Nemotron-3.5-Lightning-30B-A3B-JANG-GPTQ-ipsupport-code-lora

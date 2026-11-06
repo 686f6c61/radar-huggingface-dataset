@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ajaymishraiah/translate-baseline` alojado en HuggingFace se presenta como un modelo con licencia Apache 2.0, pero la información disponible indica que en realidad no contiene un modelo de inteligencia artificial, sino un documento de texto en formato Markdown (`notes.md`) relacionado con un supuesto artículo académico sobre "document AI". El autor no ha publicado pesos, arquitectura, parámetros, ni ningún artefacto de aprendizaje automático. Los metadatos incluyen etiquetas de estilo de redacción (cautious, compact, concise-analytical, etc.) que describen el contenido del documento, no capacidades técnicas de un modelo.
+El repositorio `ajaymishraiah/translate-baseline` alojado en Hugging Face se presenta como un modelo con licencia Apache 2.0, pero la información disponible indica que en realidad no contiene un modelo de inteligencia artificial, sino un documento de texto en formato Markdown (`notes.md`) relacionado con un supuesto artículo académico sobre "document AI". El autor no ha publicado pesos, arquitectura, parámetros, ni ningún artefacto de aprendizaje automático. Los metadatos incluyen etiquetas de estilo de redacción (cautious, compact, concise-analytical, etc.) que describen el contenido del documento, no capacidades técnicas de un modelo.
 
 La relevancia de este repositorio es nula para desarrolladores o investigadores que buscan un modelo de traducción o de IA en general. No hay evidencia de que exista un modelo real detrás de este repositorio. Se trata de un caso de un repositorio con una model card minimalista que no cumple los requisitos mínimos para ser considerado un modelo publicable. Por tanto, cualquier evaluación técnica es imposible con la información disponible.
 
@@ -45,7 +45,7 @@ No disponible. No hay modelo comparable porque no existe un modelo real. No se p
 
 ## Limitaciones y advertencias
 
-- El repositorio no contiene un modelo de IA. Los metadatos y la model card son engañosos y no cumplen con las convenciones mínimas de publicación de modelos en HuggingFace.
+- El repositorio no contiene un modelo de IA. Los metadatos y la model card son engañosos y no cumplen con las convenciones mínimas de publicación de modelos en Hugging Face.
 - No hay ningún dato técnico (arquitectura, pesos, entrenamiento) que permita su uso en producción.
 - La licencia Apache 2.0 es correcta, pero no hay código ni pesos que licenciar.
 - Riesgo de confusión para quienes busquen un modelo de traducción real, ya que el nombre "translate-baseline" sugiere un modelo de traducción, pero no lo es.
@@ -53,5 +53,5 @@ No disponible. No hay modelo comparable porque no existe un modelo real. No se p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ajaymishraiah/translate-baseline
+- Repositorio en Hugging Face: https://huggingface.co/ajaymishraiah/translate-baseline
 - No se han encontrado otros enlaces relevantes (paper, blog, repo de código) en la búsqueda web.

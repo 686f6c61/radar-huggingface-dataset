@@ -95,7 +95,7 @@ No se ha identificado en la informacion proporcionada ningun otro modelo compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/toxicdog/flux2-klein-4b-8bit
+- Repositorio Hugging Face: https://huggingface.co/toxicdog/flux2-klein-4b-8bit
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Repositorio de origen citado en la model card: https://huggingface.co/mlx-community/flux2-klein-4b-8bit
 - Perfil del autor de la cuantizacion citado: https://huggingface.co/lpalbou

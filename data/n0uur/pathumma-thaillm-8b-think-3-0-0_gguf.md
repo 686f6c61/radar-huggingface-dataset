@@ -81,8 +81,8 @@ La información proporcionada solo permite comparar este repositorio con su mode
 
 | Modelo | Parametros | Contexto | Formato de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| n0uur/pathumma-thaillm-8b-think-3.0.0_GGUF (este repositorio) | 8,19 B | No disponible | GGUF (BF16, Q4_K_M, Q5_K_M, Q8_0) | Apache-2.0 | HuggingFace; 0 descargas, 0 likes |
-| nectec/pathumma-thaillm-8b-think-3.0.0 (modelo base) | 8,19 B | No disponible | Safetensors (BF16) | Apache-2.0 | HuggingFace; distribución oficial de NECTEC |
+| n0uur/pathumma-thaillm-8b-think-3.0.0_GGUF (este repositorio) | 8,19 B | No disponible | GGUF (BF16, Q4_K_M, Q5_K_M, Q8_0) | Apache-2.0 | Hugging Face; 0 descargas, 0 likes |
+| nectec/pathumma-thaillm-8b-think-3.0.0 (modelo base) | 8,19 B | No disponible | Safetensors (BF16) | Apache-2.0 | Hugging Face; distribución oficial de NECTEC |
 | Otras alternativas de 8B en GGUF | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 
 Diferencias relevantes frente al modelo base: este repositorio ofrece cuantizaciones listas para llama.cpp con plantilla de chat incrustada, a costa de ser una conversión no oficial y sin garantías de mantenimiento. Para fine-tuning o evaluación de referencia conviene usar el modelo original en safetensors.

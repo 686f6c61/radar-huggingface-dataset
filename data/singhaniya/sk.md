@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `singhaniya/sk` es un repositorio alojado en HuggingFace por el usuario `singhaniya`. En la informacion disponible no se especifica que tipo de modelo es: la model card del autor esta practicamente vacia y unicamente contiene la declaracion de licencia (`bsd`), sin descripcion, sin arquitectura, sin tamano y sin indicaciones de uso. El repositorio no tiene etiquetas de pipeline, idiomas ni framework asociadas, y registra 0 descargas y 0 "likes" en el momento de la consulta.
+El modelo identificado como `singhaniya/sk` es un repositorio alojado en Hugging Face por el usuario `singhaniya`. En la informacion disponible no se especifica que tipo de modelo es: la model card del autor esta practicamente vacia y unicamente contiene la declaracion de licencia (`bsd`), sin descripcion, sin arquitectura, sin tamano y sin indicaciones de uso. El repositorio no tiene etiquetas de pipeline, idiomas ni framework asociadas, y registra 0 descargas y 0 "likes" en el momento de la consulta.
 
 No es posible determinar que problema resuelve, cual es su arquitectura ni su relevancia actual, porque no existe documentacion tecnica publicada por el autor. La busqueda web realizada no devuelve ningun resultado relacionado con el modelo: los enlaces encontrados corresponden a perfiles de redes sociales de personas con nombres similares, sin ninguna conexion verificable con este repositorio.
 
@@ -31,7 +31,7 @@ Metadatos adicionales del repositorio:
 | Etiquetas | license:bsd, region:us |
 | Descargas | 0 |
 | Likes | 0 |
-| Fecha de creacion | 2026-09-25T18:04:40.000Z (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-25T18:04:40.000Z (segun metadatos de Hugging Face) |
 | Fecha de actualizacion | 2026-09-25T18:04:40.000Z (identica a la de creacion) |
 
 ## Arquitectura y entrenamiento
@@ -77,7 +77,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| singhaniya/sk | no disponible | no disponible | BSD | HuggingFace (0 descargas) | no disponible |
+| singhaniya/sk | no disponible | no disponible | BSD | Hugging Face (0 descargas) | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/singhaniya/sk
+- Repositorio en Hugging Face: https://huggingface.co/singhaniya/sk
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre este modelo. Los resultados obtenidos apuntan a perfiles de redes sociales de personas con nombres similares y no guardan relacion verificable con el repositorio:
   - https://www.youtube.com/channel/UCbXXG0OteNo9i8b7XuQKV7w
   - https://www.instagram.com/skbh.ai9873/

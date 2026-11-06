@@ -6,7 +6,7 @@
 
 El interés práctico está en reducir el coste de muestreo de un modelo de difusión: la validación del autor usa 4 pasos, CFG 1 y semilla 42 a 512 y 1024 px. Sin embargo, en el momento de redactar esta ficha el entrenamiento figura en estado `queued`, con 0 de 1.500 actualizaciones observadas y sin checkpoints publicados, por lo que el adaptador todavía no es utilizable.
 
-La ficha se basa únicamente en la model card y los metadatos de HuggingFace; no hay información pública sobre la arquitectura interna del modelo base, el número de parámetros, los idiomas soportados ni resultados de benchmarks.
+La ficha se basa únicamente en la model card y los metadatos de Hugging Face; no hay información pública sobre la arquitectura interna del modelo base, el número de parámetros, los idiomas soportados ni resultados de benchmarks.
 
 ## Especificaciones técnicas
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Pasos de inferencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `SimpleTuner/moss-image-sft-anyflow-stage2` | LoRA de destilación few-step para MOSS-Image | no disponible (LoRA de rango 128) | no aplica | 4 (validación) | Apache 2.0 (adaptador); base no indicada | Publicado en HuggingFace; estado `queued`, sin checkpoints |
-| `OpenMOSS-Team/MOSS-Image-SFT` | Modelo de difusión texto-a-imagen | no disponible | no aplica | no disponible (muestreo completo) | no disponible | Público en HuggingFace |
-| Anima AnyFlow (`bghira/anima-anyflow-e621-stage1-v2` y `dmd-v5`) | Receta de destilación AnyFlow sobre otro modelo base | no disponible | no aplica | no disponible | no disponible | Público en HuggingFace; especificaciones no incluidas en la información |
+| `SimpleTuner/moss-image-sft-anyflow-stage2` | LoRA de destilación few-step para MOSS-Image | no disponible (LoRA de rango 128) | no aplica | 4 (validación) | Apache 2.0 (adaptador); base no indicada | Publicado en Hugging Face; estado `queued`, sin checkpoints |
+| `OpenMOSS-Team/MOSS-Image-SFT` | Modelo de difusión texto-a-imagen | no disponible | no aplica | no disponible (muestreo completo) | no disponible | Público en Hugging Face |
+| Anima AnyFlow (`bghira/anima-anyflow-e621-stage1-v2` y `dmd-v5`) | Receta de destilación AnyFlow sobre otro modelo base | no disponible | no aplica | no disponible | no disponible | Público en Hugging Face; especificaciones no incluidas en la información |
 
 No hay datos públicos que permitan comparar rendimiento, calidad o latencia entre estas opciones.
 
@@ -92,7 +92,7 @@ No hay datos públicos que permitan comparar rendimiento, calidad o latencia ent
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/SimpleTuner/moss-image-sft-anyflow-stage2)
+- [Modelo en Hugging Face](https://huggingface.co/SimpleTuner/moss-image-sft-anyflow-stage2)
 - [Modelo base OpenMOSS-Team/MOSS-Image-SFT](https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT)
 - [Colección AnyFlow Anima v10](https://huggingface.co/collections/bghira/anyflow-anima-v10)
 - [Configuración stage1-v2](https://huggingface.co/bghira/anima-anyflow-e621-stage1-v2)

@@ -89,7 +89,7 @@ No se dispone de datos comparativos frente a otros agentes de codigo de tamano s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SiriusLLM/Sirius-N4.1-Flash-GGUF
+- Modelo en Hugging Face: https://huggingface.co/SiriusLLM/Sirius-N4.1-Flash-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Sitio del autor: https://siriusllm.eu
 - Dataset nvidia/OpenCodeInstruct: https://huggingface.co/datasets/nvidia/OpenCodeInstruct

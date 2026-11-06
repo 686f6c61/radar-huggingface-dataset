@@ -83,7 +83,7 @@ Las cifras de parametros y contexto de modelos de terceros deben verificarse en 
 - No se dispone de datos de rendimiento ni de evaluaciones independientes para esta cuantizacion concreta, por lo que cualquier estimacion de calidad en produccion deberia validarse con un conjunto de prueba propio.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen2.5-VL-7B-Brutal-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen2.5-VL-7B-Brutal-GGUF
 - Modelo base del ajuste fino: https://huggingface.co/morikomorizz/Qwen2.5-VL-7B-Brutal
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Qwen2.5-VL-7B-Brutal-GGUF
 - Guia de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -16,7 +16,7 @@ Este modelo no introduce ninguna novedad arquitectónica ni entrenamiento adicio
 | Longitud de contexto | no disponible (el modelo base GLM-5.3 soporta 1M tokens, pero no se confirma para este checkpoint) |
 | Tipos de cuantizacion | NVFP4 (expertos enrutados), FP8 W8A16 (proyecciones densas, attention y output) |
 | Idiomas soportados | no disponible |
-| Licencia | other (licencia personalizada de Z.AI; algunas fuentes indican MIT, pero la model card de HuggingFace especifica "other") |
+| Licencia | other (licencia personalizada de Z.AI; algunas fuentes indican MIT, pero la model card de Hugging Face especifica "other") |
 | Formato de pesos | FTW (formato de ejecución de SparkLab), 77 shards, payload de 428,713,099,264 bytes |
 
 ## Arquitectura y entrenamiento
@@ -89,7 +89,7 @@ El checkpoint FTW es una conversión del NVFP4 de Inferact, por lo que no hay di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oakmindai/GLM-5.3-NVFP4-FTW
+- Modelo en Hugging Face: https://huggingface.co/oakmindai/GLM-5.3-NVFP4-FTW
 - Modelo base (Z.AI): https://huggingface.co/zai-org/GLM-5.3-BF16
 - Checkpoint NVFP4 fuente (Inferact): https://huggingface.co/Inferact/GLM-5.3-NVFP4
 - Repositorio de SparkLab: https://github.com/sixteen-miles-labs/sparklab

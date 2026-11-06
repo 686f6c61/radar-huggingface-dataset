@@ -89,7 +89,7 @@ Frente a `t5-base` (~220 M), este checkpoint es tres veces más pequeño y sensi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bennyfitz/t5-small
+- Repositorio en Hugging Face: https://huggingface.co/Bennyfitz/t5-small
 - Checkpoint original: https://huggingface.co/google-t5/t5-small
 - Artículo de T5 (JMLR): https://jmlr.org/papers/volume21/20-074/20-074.pdf
 - Entrada de blog de Google Research: https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html

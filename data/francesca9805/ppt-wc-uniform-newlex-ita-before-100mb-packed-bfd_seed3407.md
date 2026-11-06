@@ -45,7 +45,7 @@ El entrenamiento se ha realizado mediante SFT con TRL 0.23.0, sobre Transformers
 
 ## Casos de uso
 
-- Reproducción de experimentos de ajuste fino: el modelo sirve como referencia para replicar un pipeline SFT con TRL sobre un modelo base pequeño, verificando versiones de librerías y el flujo de publicación en HuggingFace.
+- Reproducción de experimentos de ajuste fino: el modelo sirve como referencia para replicar un pipeline SFT con TRL sobre un modelo base pequeño, verificando versiones de librerías y el flujo de publicación en Hugging Face.
 - Estudio de tokenizadores: dado el nombre del experimento (`newlex`) y el proyecto de W&B asociado, encaja en investigaciones que comparan el efecto de distintos vocabularios y tokenizadores en el rendimiento monolingüe.
 - Generación de texto en entornos con recursos mínimos: con 86,5 M de parámetros, puede ejecutarse en CPU o en dispositivos embebidos donde no cabría un modelo de miles de millones de parámetros.
 - Prototipado rápido de aplicaciones de texto: permite validar extremo a extremo una interfaz de generación (API, endpoint HTTP, TGI) antes de sustituir el modelo por uno mayor en producción.
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/ppt-wc-uniform-newlex-ita-before-100mb-packed-bfd_seed3407` | 86.508.288 | No disponible | No disponible | HuggingFace, 0 descargas | Fine-tune SFT experimental, sin evaluación publicada |
-| `goldfish-models/eng_latn_100mb` (modelo base) | No disponible en la información (el fine-tune declara 86,5 M) | No disponible | No disponible en la información | HuggingFace | Monolingüe inglés, entrenado sobre 100 MB de texto |
-| distilgpt2 | 82 millones | 1.024 tokens | Apache-2.0 (según su repositorio público) | HuggingFace | Destilación de GPT-2, ampliamente usado como línea base pequeña |
-| GPT-2 small | 124 millones | 1.024 tokens | Licencia MIT modificada (según su repositorio público) | HuggingFace | Referencia histórica de la familia GPT-2 |
+| `francesca9805/ppt-wc-uniform-newlex-ita-before-100mb-packed-bfd_seed3407` | 86.508.288 | No disponible | No disponible | Hugging Face, 0 descargas | Fine-tune SFT experimental, sin evaluación publicada |
+| `goldfish-models/eng_latn_100mb` (modelo base) | No disponible en la información (el fine-tune declara 86,5 M) | No disponible | No disponible en la información | Hugging Face | Monolingüe inglés, entrenado sobre 100 MB de texto |
+| distilgpt2 | 82 millones | 1.024 tokens | Apache-2.0 (según su repositorio público) | Hugging Face | Destilación de GPT-2, ampliamente usado como línea base pequeña |
+| GPT-2 small | 124 millones | 1.024 tokens | Licencia MIT modificada (según su repositorio público) | Hugging Face | Referencia histórica de la familia GPT-2 |
 
 No se dispone de comparaciones de rendimiento entre estos modelos dentro de la información proporcionada; los datos de licencia y contexto de distilgpt2 y GPT-2 small proceden de sus repositorios públicos y no de la model card analizada.
 
@@ -93,9 +93,9 @@ No se dispone de comparaciones de rendimiento entre estos modelos dentro de la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-ita-before-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-ita-before-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
-- Organización Goldfish en HuggingFace: https://huggingface.co/goldfish-models
+- Organización Goldfish en Hugging Face: https://huggingface.co/goldfish-models
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/43qkuxpp
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentación del pipeline de generación de texto de Transformers: https://huggingface.co/docs/transformers/main/en/main_classes/pipelines#transformers.TextGenerationPipeline

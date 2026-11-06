@@ -84,7 +84,7 @@ Nota: la comparativa se ofrece a título orientativo entre modelos omnimodales c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/brainworkup/LFM3-Omni-2B-MLX-oQ8e
+- Repositorio en Hugging Face: https://huggingface.co/brainworkup/LFM3-Omni-2B-MLX-oQ8e
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Repositorio oficial del modelo base LFM3-Omni-2B (Liquid AI): no disponible en la información proporcionada
 - Paper del modelo: no disponible

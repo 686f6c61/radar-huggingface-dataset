@@ -71,8 +71,8 @@ Condiciones de evaluacion: HF/CUDA BF16, decodificacion greedy, batch=4, maximo 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spark-X2.6-1.7B-Gundem-LoRA | 1,7B | no disponible | Clasificacion de titulares turcos | Apache 2.0 | HuggingFace |
-| XHToken/Spark-X2.6-1.7B (base) | 1,7B | no disponible | Generacion de texto general | segun upstream | HuggingFace |
+| Spark-X2.6-1.7B-Gundem-LoRA | 1,7B | no disponible | Clasificacion de titulares turcos | Apache 2.0 | Hugging Face |
+| XHToken/Spark-X2.6-1.7B (base) | 1,7B | no disponible | Generacion de texto general | segun upstream | Hugging Face |
 | Modelos de clasificacion de noticias turcas especializados | no disponible | no disponible | Clasificacion | no disponible | no disponible |
 
 La comparativa con alternativas de la misma categoria no esta disponible en la informacion proporcionada. El modelo base sin ajustar obtiene un Gundem Score v1 de 0,0 en la misma evaluacion, lo que refleja que la tarea requiere el ajuste.
@@ -90,7 +90,7 @@ La comparativa con alternativas de la misma categoria no esta disponible en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/efebaykara/Spark-X2.6-1.7B-Gundem-LoRA
+- Modelo en Hugging Face: https://huggingface.co/efebaykara/Spark-X2.6-1.7B-Gundem-LoRA
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-1.7B
 - Herramientas de entrenamiento y benchmark: https://github.com/efebaykaraa/gundem-llms
 - Modelos publicados: https://github.com/efebaykaraa/gundem-llms/releases/tag/models-v1.0.0

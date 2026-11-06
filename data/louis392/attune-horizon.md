@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Attune-Horizon es un modelo de robótica publicado por el usuario louis392 en HuggingFace, etiquetado como world-action-model con acondicionamiento por demostraciones de vídeo (video-demonstration-conditioning), aprendizaje en contexto (in-context learning) y capacidad cross-embodiment. Se distribuye a través de la librería diffusers y en formato safetensors, lo que sitúa el artefacto en la familia de los modelos generativos de difusión aplicados a vídeo y control robótico, más que en la de los modelos de lenguaje. La ficha declara explícitamente como modelo base Robbyant-Research/zero-wam-posttrain-robotwin, del que esta variante sería un fine-tuning, y referencia los entornos de simulación RoboTwin y RoboCASA.
+Attune-Horizon es un modelo de robótica publicado por el usuario louis392 en Hugging Face, etiquetado como world-action-model con acondicionamiento por demostraciones de vídeo (video-demonstration-conditioning), aprendizaje en contexto (in-context learning) y capacidad cross-embodiment. Se distribuye a través de la librería diffusers y en formato safetensors, lo que sitúa el artefacto en la familia de los modelos generativos de difusión aplicados a vídeo y control robótico, más que en la de los modelos de lenguaje. La ficha declara explícitamente como modelo base Robbyant-Research/zero-wam-posttrain-robotwin, del que esta variante sería un fine-tuning, y referencia los entornos de simulación RoboTwin y RoboCASA.
 
 El interés de la propuesta está en el paradigma: en lugar de entrenar una política específica por robot, el modelo seguiría un enfoque de world model capaz de aceptar demostraciones de vídeo en contexto y transferir el comportamiento a distintas morfologías. Eso lo alinea con la línea de investigación de modelos de acción (VLA) y de world models condicionados, donde la generalización cross-embodiment y la adaptación con pocos ejemplos son los cuellos de botella prácticos.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| louis392/Attune-Horizon | no disponible | no disponible | no disponible | Apache 2.0 (segun etiquetas) | HuggingFace, diffusers |
-| Robbyant-Research/zero-wam-posttrain-robotwin (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| louis392/Attune-Horizon | no disponible | no disponible | no disponible | Apache 2.0 (segun etiquetas) | Hugging Face, diffusers |
+| Robbyant-Research/zero-wam-posttrain-robotwin (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos numericos del modelo ni de sus competidores en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable. La unica referencia directa es el modelo base declarado, del que Attune-Horizon seria un fine-tuning.
@@ -85,7 +85,7 @@ No se dispone de datos numericos del modelo ni de sus competidores en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/louis392/Attune-Horizon
+- Modelo en Hugging Face: https://huggingface.co/louis392/Attune-Horizon
 - Modelo base declarado: https://huggingface.co/Robbyant-Research/zero-wam-posttrain-robotwin
 - Referencia arXiv incluida en las etiquetas: https://arxiv.org/abs/2608.26103
 - Entorno de simulacion RoboTwin: no disponible en la informacion proporcionada

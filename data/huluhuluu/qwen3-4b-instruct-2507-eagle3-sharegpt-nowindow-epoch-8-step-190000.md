@@ -72,7 +72,7 @@ No disponible. No se han encontrado en la informacion proporcionada datos compar
 
 ## Enlaces
 
-- Repositorio HuggingFace del checkpoint: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-NoWindow-epoch-8-step-190000
+- Repositorio Hugging Face del checkpoint: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-NoWindow-epoch-8-step-190000
 - Repositorio del modelo objetivo: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio GitHub de Qwen3 (referencia del modelo objetivo): https://github.com/QwenLM/Qwen3
 - Checkpoint relacionado (epoch 1): https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-1-step-25000

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ChrisR05/t4-semantic-clf-91724fe32c57` es un checkpoint de investigación publicado por el usuario ChrisR05 en HuggingFace. Según su model card, se trata de un "codificador semántico de tablas" combinado con el modelo base `LiquidAI/LFM2.5-1.2B-Base`, lo que sugiere un ajuste fino orientado a tareas de clasificación sobre datos tabulares. La etiqueta `tabular` y `classification` del repositorio confirman que el objetivo declarado es la clasificación a partir de representaciones semánticas de tablas.
+El modelo `ChrisR05/t4-semantic-clf-91724fe32c57` es un checkpoint de investigación publicado por el usuario ChrisR05 en Hugging Face. Según su model card, se trata de un "codificador semántico de tablas" combinado con el modelo base `LiquidAI/LFM2.5-1.2B-Base`, lo que sugiere un ajuste fino orientado a tareas de clasificación sobre datos tabulares. La etiqueta `tabular` y `classification` del repositorio confirman que el objetivo declarado es la clasificación a partir de representaciones semánticas de tablas.
 
 La información pública es mínima: la model card se limita a indicar que el autor remite a un archivo `TRAINING_README.md` y a un `release.zip` (no incluidos en los datos proporcionados) para consultar la arquitectura, los filtros de datos y el protocolo de evaluación. El autor advierte explícitamente de que el fichero `latest/state.pt` contiene estado del optimizador y de generación de números aleatorios, y recomienda cargar únicamente checkpoints de confianza propia. No se publican tablas de entrenamiento en bruto.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento que permitan comparar este checkpoint con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChrisR05/t4-semantic-clf-91724fe32c57
+- Modelo en Hugging Face: https://huggingface.co/ChrisR05/t4-semantic-clf-91724fe32c57
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Base
 - `TRAINING_README.md`: mencionado en la model card, no enlazado ni incluido en la información disponible.
 - `release.zip`: mencionado en la model card, no enlazado ni incluido en la información disponible.

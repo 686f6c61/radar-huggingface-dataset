@@ -105,7 +105,7 @@ No se dispone de comparación con modelos de propósito general del mismo tamañ
 
 ## Enlaces
 
-- [Modelo en HuggingFace: dendriteholdings/Ingot-XVI-27B-MLX-2bit](https://huggingface.co/dendriteholdings/Ingot-XVI-27B-MLX-2bit)
+- [Modelo en Hugging Face: dendriteholdings/Ingot-XVI-27B-MLX-2bit](https://huggingface.co/dendriteholdings/Ingot-XVI-27B-MLX-2bit)
 - [Modelo base MLX: prism-ml/Ternary-Bonsai-2-27B-mlx-2bit](https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit)
 - [Modelo base GGUF: prism-ml/Ternary-Bonsai-2-27B-gguf](https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf)
 - [Gemelo GGUF del mismo envío: dendriteholdings/Ingot-XVI-27B-Q2](https://huggingface.co/dendriteholdings/Ingot-XVI-27B-Q2)

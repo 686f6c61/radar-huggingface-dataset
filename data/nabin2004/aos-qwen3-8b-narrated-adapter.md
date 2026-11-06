@@ -73,6 +73,6 @@ No se dispone de informacion sobre modelos directamente comparables en la misma 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nabin2004/AOS-qwen3-8b-narrated-adapter
+- Hugging Face: https://huggingface.co/nabin2004/AOS-qwen3-8b-narrated-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - manim-voiceover: no se proporciona enlace directo en la informacion disponible.

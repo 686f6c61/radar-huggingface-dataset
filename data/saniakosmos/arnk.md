@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ARNK es un adaptador LoRA de texto a imagen publicado por el usuario saniakosmos en HuggingFace. No se trata de un modelo completo, sino de un peso adicional que se carga sobre el modelo base krea/Krea-2-Turbo mediante la libreria diffusers. Su unico proposito documentado es generar imagenes que respondan a la palabra activadora `Arnk`, lo que sugiere que fue entrenado para reproducir un estilo, objeto o concepto concreto, aunque la model card no especifica cual.
+ARNK es un adaptador LoRA de texto a imagen publicado por el usuario saniakosmos en Hugging Face. No se trata de un modelo completo, sino de un peso adicional que se carga sobre el modelo base krea/Krea-2-Turbo mediante la libreria diffusers. Su unico proposito documentado es generar imagenes que respondan a la palabra activadora `Arnk`, lo que sugiere que fue entrenado para reproducir un estilo, objeto o concepto concreto, aunque la model card no especifica cual.
 
 El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador LoRA y no con un modelo completo. El modelo se publico el 12 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula cero descargas y cero valoraciones, por lo que no existe evidencia publica de su calidad ni de su comportamiento en produccion.
 
@@ -41,7 +41,7 @@ No hay informacion sobre el dataset de entrenamiento: ni numero de imagenes, ni 
 
 - Experimentacion con estilos personalizados: cargar el adaptador en diffusers o ComfyUI junto a krea/Krea-2-Turbo y generar imagenes con el prompt `Arnk` para evaluar que concepto ha aprendido el autor, dado que la model card no lo describe.
 - Ilustracion de bajo coste en prototipos: al ocupar solo 0,2 GB, el adaptador se puede intercambiar rapidamente entre distintas variantes de estilo sobre el mismo modelo base sin duplicar el almacenamiento del modelo completo.
-- Pruebas de concepto en investigacion sobre LoRA: sirve como caso de estudio de un adaptador publicado sin documentacion, util para analizar practicas de publicacion en HuggingFace.
+- Pruebas de concepto en investigacion sobre LoRA: sirve como caso de estudio de un adaptador publicado sin documentacion, util para analizar practicas de publicacion en Hugging Face.
 - Generacion de variaciones de un concepto concreto: una vez identificado el efecto de `Arnk`, se puede usar para producir lotes de imagenes coherentes con ese motivo en tareas de brainstorming visual.
 - Integracion en pipelines de difusion existentes: al ser compatible con diffusers, se puede incorporar mediante `load_lora_weights` en un flujo ya montado sobre Krea-2-Turbo.
 - Docencia y formacion: como ejemplo minimo de estructura de repositorio LoRA (`instance_prompt`, `widget`, `base_model`) para explicar como se empaqueta y se publica un adaptador.
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 |---|---|---|---|---|---|---|
 | saniakosmos/arnk | LoRA de texto a imagen | krea/Krea-2-Turbo | no aplica | no disponible | unknown | 0 descargas, 0 likes |
 | Otros LoRA sobre Krea-2-Turbo | LoRA de texto a imagen | krea/Krea-2-Turbo | no aplica | no disponible | no disponible | no disponible |
-| Modelo base krea/Krea-2-Turbo | Modelo de difusion completo | no aplica | no aplica | no disponible en esta ficha | no disponible | publico en HuggingFace |
+| Modelo base krea/Krea-2-Turbo | Modelo de difusion completo | no aplica | no aplica | no disponible en esta ficha | no disponible | publico en Hugging Face |
 
 No se dispone de datos objetivos para establecer una comparativa cuantitativa con alternativas de la misma categoria.
 
@@ -84,7 +84,7 @@ No se dispone de datos objetivos para establecer una comparativa cuantitativa co
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/saniakosmos/arnk
+- Pagina del modelo en Hugging Face: https://huggingface.co/saniakosmos/arnk
 - Archivos del repositorio: https://huggingface.co/saniakosmos/arnk/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - Paper, blog o repositorio del autor: no disponible

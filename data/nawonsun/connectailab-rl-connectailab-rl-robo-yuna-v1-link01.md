@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | 0,8B + LoRA | no disponible | Decisión discreta en simulador 2D | Apache 2.0 | HuggingFace |
+| LINK-01 (este modelo) | 0,8B + LoRA | no disponible | Decisión discreta en simulador 2D | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nawonsun/connectailab-rl-connectailab-rl-robo-yuna-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/nawonsun/connectailab-rl-connectailab-rl-robo-yuna-v1-link01
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Simulador web CONNECT AI WORLD: https://www.ezerai.xyz/robot-lab/world/

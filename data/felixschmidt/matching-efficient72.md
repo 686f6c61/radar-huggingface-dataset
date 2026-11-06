@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Felixschmidt/matching-efficient72 es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de un "Tiny Transformer" orientado a tareas de *matching* (emparejamiento entre pares de entradas). Lo publica el usuario Felixschmidt bajo licencia MIT y con un tamaño de repositorio de 0,0 GB. El dato objetivo de parametrización que ofrece la plataforma es de 33.088 parámetros totales, según el archivo `model.safetensors` incluido.
+Felixschmidt/matching-efficient72 es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de un "Tiny Transformer" orientado a tareas de *matching* (emparejamiento entre pares de entradas). Lo publica el usuario Felixschmidt bajo licencia MIT y con un tamaño de repositorio de 0,0 GB. El dato objetivo de parametrización que ofrece la plataforma es de 33.088 parámetros totales, según el archivo `model.safetensors` incluido.
 
 Es importante entender qué es y qué no es este artefacto: la propia model card indica que el checkpoint es una **inicialización válida para pruebas de humo (smoke tests)**, no un modelo entrenado ni evaluado con benchmarks. El repositorio se presenta explícitamente como material para revisión de código, pruebas controladas y experimentos pequeños, no como un modelo listo para producción. No se declara ninguna puntuación de benchmark y no se documentan idiomas soportados ni pipeline.
 
@@ -82,7 +82,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Felixschmidt/matching-efficient72 | 33.088 | no disponible | MIT | HuggingFace, 0 descargas, checkpoint sin entrenar |
+| Felixschmidt/matching-efficient72 | 33.088 | no disponible | MIT | Hugging Face, 0 descargas, checkpoint sin entrenar |
 | Alternativas de la categoria tiny transformer / cross-encoder | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,6 +100,6 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Felixschmidt/matching-efficient72
+- Modelo en Hugging Face: https://huggingface.co/Felixschmidt/matching-efficient72
 - Archivos incluidos en el repositorio: `eval.py` (artefacto principal), `README.md`, `config.json` (configuración de arquitectura), `training_args.json` (ajustes de experimento por defecto), `model.safetensors` (checkpoint de inicialización)
 - Paper, blog, repositorio de código o demo adicionales: no disponibles en la informacion proporcionada. Los resultados de la busqueda web no contienen material relacionado con el modelo.

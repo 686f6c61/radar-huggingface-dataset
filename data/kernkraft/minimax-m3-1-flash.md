@@ -102,9 +102,9 @@ Solo se dispone de datos comparativos de Automation-Bench v1.0.6, donde M3.1-Fla
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kernkraft/MiniMax-M3.1-Flash
+- Hugging Face: https://huggingface.co/kernkraft/MiniMax-M3.1-Flash
 - Paper (arXiv): https://arxiv.org/abs/2606.13392
-- Organizacion MiniMax en HuggingFace: https://huggingface.co/MiniMaxAI
+- Organizacion MiniMax en Hugging Face: https://huggingface.co/MiniMaxAI
 - Web de MiniMax: https://www.minimax.io
 - Documentacion de API: https://platform.minimax.io/docs/guides/text-generation
 - MiniMax Code (agente): https://agent.minimax.io/

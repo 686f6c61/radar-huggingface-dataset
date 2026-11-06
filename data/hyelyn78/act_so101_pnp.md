@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hyelyn78/act_so101_pnp | 51,7 M | no aplica | Pick-and-place SO-101 | no disponible | HuggingFace (0 descargas) |
+| hyelyn78/act_so101_pnp | 51,7 M | no aplica | Pick-and-place SO-101 | no disponible | Hugging Face (0 descargas) |
 | Políticas ACT de LeRobot (referencia) | ~51 M (típico) | no aplica | Manipulación genérica | según checkpoint | Hub de LeRobot |
 | Diffusion Policy (referencia LeRobot) | no disponible | no aplica | Manipulación genérica | según checkpoint | Hub de LeRobot |
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hyelyn78/act_so101_pnp
+- Modelo en Hugging Face: https://huggingface.co/hyelyn78/act_so101_pnp
 - Dataset de entrenamiento: https://huggingface.co/datasets/hyelyn78/so101_pnp
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=hyelyn78/so101_pnp
 - Paper de ACT: https://huggingface.co/papers/2304.13705

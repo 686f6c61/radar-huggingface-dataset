@@ -60,16 +60,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en int8: en torno a 0,4 GB para pesos, si se aplica cuantizacion (no se documenta en el repositorio).
 - GPU consumer: cabe holgadamente en cualquier GPU con 4 GB o mas de VRAM, incluidas GTX 1650, RTX 3050, RTX 3060, RTX 4060 y superiores; tambien es viable en CPU para inferencia por lotes pequenos.
 - GPU de datacenter: A100, H100, L40S o TPU para procesamiento de grandes volumenes; el modelo se entreno en TPU-v5e, aunque para inferencia no requiere ese hardware.
-- Despliegue: soporte nativo en la libreria transformers mediante `pipeline(task="zero-shot-image-classification")` y `AutoModel`/`AutoProcessor`; el tag `endpoints_compatible` indica compatibilidad con Inference Endpoints de HuggingFace. Conversiones a ONNX u otros runtimes no se documentan en la informacion proporcionada.
+- Despliegue: soporte nativo en la libreria transformers mediante `pipeline(task="zero-shot-image-classification")` y `AutoModel`/`AutoProcessor`; el tag `endpoints_compatible` indica compatibilidad con Inference Endpoints de Hugging Face. Conversiones a ONNX u otros runtimes no se documentan en la informacion proporcionada.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros totales | Contexto / entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| CollectionStudio/siglip2-base-patch16-384 (este repositorio) | 375.479.810 | Imagen 384 px con parches de 16; texto de longitud fija (valor no disponible) | apache-2.0 | HuggingFace, transformers | Redistribucion del checkpoint de Google; 0 descargas, 0 likes |
-| google/siglip2-base-patch16-384 (upstream) | No disponible en la informacion proporcionada | Identica variante patch16-384 | apache-2.0 | HuggingFace, transformers | Checkpoint original del autor; misma arquitectura y receta |
-| google/siglip-base-patch16-384 (SigLIP 1) | No disponible en la informacion proporcionada | Imagen 384 px con parches de 16 | apache-2.0 | HuggingFace, transformers | Predecesor directo; sin los objetivos adicionales de SigLIP 2 |
+| CollectionStudio/siglip2-base-patch16-384 (este repositorio) | 375.479.810 | Imagen 384 px con parches de 16; texto de longitud fija (valor no disponible) | apache-2.0 | Hugging Face, transformers | Redistribucion del checkpoint de Google; 0 descargas, 0 likes |
+| google/siglip2-base-patch16-384 (upstream) | No disponible en la informacion proporcionada | Identica variante patch16-384 | apache-2.0 | Hugging Face, transformers | Checkpoint original del autor; misma arquitectura y receta |
+| google/siglip-base-patch16-384 (SigLIP 1) | No disponible en la informacion proporcionada | Imagen 384 px con parches de 16 | apache-2.0 | Hugging Face, transformers | Predecesor directo; sin los objetivos adicionales de SigLIP 2 |
 | OpenAI CLIP ViT-B/32 | Aproximadamente 151 millones | Imagen 224 px con parches de 32 | Licencia del repositorio original (consultar) | GitHub de OpenAI y espejos comunitarios | Referencia clasica de contraste imagen-texto; resolucion y patch menores |
 
 Los datos de rendimiento comparado no estan disponibles en la informacion proporcionada. La tabla de evaluacion del paper no se ha podido extraer en formato numerico.

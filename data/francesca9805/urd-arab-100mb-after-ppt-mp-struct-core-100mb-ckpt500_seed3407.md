@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/urd-arab-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407` es un ajuste fino (SFT) derivado de `francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed3407`, publicado por el usuario de HuggingFace francesca9805. Se trata de un transformer decoder-only de tipo GPT-2 con 124.770.816 parametros totales, segun los datos reales de los pesos en safetensors, y esta etiquetado en la libreria transformers con pipeline de generacion de texto.
+El modelo `francesca9805/urd-arab-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407` es un ajuste fino (SFT) derivado de `francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed3407`, publicado por el usuario de Hugging Face francesca9805. Se trata de un transformer decoder-only de tipo GPT-2 con 124.770.816 parametros totales, segun los datos reales de los pesos en safetensors, y esta etiquetado en la libreria transformers con pipeline de generacion de texto.
 
 El interes del modelo es fundamentalmente experimental: su nombre sugiere un flujo de trabajo de investigacion sobre tokenizadores y datos multilingues (los terminos "urd-arab" apuntan a urdu y arabe, "100mb" a un subconjunto de datos de ese tamano y "ckpt500" al checkpoint 500 del entrenamiento). El run de Weights & Biases asociado pertenece a la organizacion "f-padovani-university-of-groningen", lo que situa el trabajo en el entorno de investigacion de la Universidad de Groningen. No hay descargas ni likes registrados, por lo que se trata de un artefacto de investigacion sin adopcion publica.
 
@@ -47,7 +47,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreri
 - Experimentacion academica en ajuste fino: el modelo sirve como punto de partida reproducible para comparar tecnicas de SFT con TRL sobre un corpus de 100 MB, gracias a que la model card documenta las versiones exactas de TRL, Transformers, PyTorch, Datasets y Tokenizers.
 - Investigacion sobre tokenizadores multilingues: dado el nombre del repositorio y el run de W&B asociado ("new-tokenizers"), el modelo es util para analizar como afecta el tokenizador a la generacion en lenguas con escritura arabe.
 - Generacion de texto en entornos con recursos muy limitados: con 124,77 millones de parametros, el modelo puede ejecutarse en CPU o en GPUs de gama baja para prototipos de generacion de texto sin requisitos de latencia estrictos.
-- Pruebas de integracion en pipelines de HuggingFace: al estar etiquetado como `text-generation-inference` y `endpoints_compatible`, permite validar despliegues con TGI o endpoints gestionados antes de migrar a modelos mayores.
+- Pruebas de integracion en pipelines de Hugging Face: al estar etiquetado como `text-generation-inference` y `endpoints_compatible`, permite validar despliegues con TGI o endpoints gestionados antes de migrar a modelos mayores.
 - Evaluacion de calidad de datos de preentrenamiento: al derivar de un modelo entrenado sobre un subconjunto de 100 MB, puede usarse para estudiar como influye el volumen y la composicion del corpus en la fluidez y coherencia del texto generado.
 - Reproduccion de experimentos con semilla fija: el identificador incluye `seed3407`, por lo que es util para replicar resultados y estudiar variabilidad entre semillas y checkpoints.
 - Ensayos controlados de sesgo y alucinacion: al ser un modelo pequeno entrenado con datos no documentados, sirve como caso de estudio de los fallos tipicos de modelos de esta escala, siempre que se acompanen de una evaluacion propia.
@@ -67,17 +67,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM es suficiente, por ejemplo RTX 3060, RTX 4060, RTX 4090, T4, L4, A10, A100 o H100. No se requiere hardware de gama alta.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo actual e incluso en GPUs integradas con suficiente memoria compartida.
 - Inferencia en CPU: viable por el tamano del modelo, aunque la latencia sera mayor que en GPU.
-- Opciones de despliegue: `transformers` con `pipeline` (metodo documentado en la model card), vLLM, Text Generation Inference (TGI, coherente con las etiquetas `text-generation-inference` y `endpoints_compatible`) y endpoints gestionados de HuggingFace. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, conversion que no se distribuye en el repositorio.
+- Opciones de despliegue: `transformers` con `pipeline` (metodo documentado en la model card), vLLM, Text Generation Inference (TGI, coherente con las etiquetas `text-generation-inference` y `endpoints_compatible`) y endpoints gestionados de Hugging Face. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, conversion que no se distribuye en el repositorio.
 - Latencia y throughput: no disponible. No se han publicado mediciones para este modelo concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/urd-arab-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407 | 124.770.816 | no disponible | no disponible | safetensors en HuggingFace |
-| GPT-2 small (OpenAI) | 124 millones | 1024 tokens | licencia MIT modificada | pesos publicos en HuggingFace |
-| DistilGPT-2 (HuggingFace) | 82 millones | 1024 tokens | Apache 2.0 | pesos publicos en HuggingFace |
-| SmolLM-135M (HuggingFace) | 135 millones | 2048 tokens | Apache 2.0 | pesos publicos en HuggingFace |
+| francesca9805/urd-arab-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407 | 124.770.816 | no disponible | no disponible | safetensors en Hugging Face |
+| GPT-2 small (OpenAI) | 124 millones | 1024 tokens | licencia MIT modificada | pesos publicos en Hugging Face |
+| DistilGPT-2 (Hugging Face) | 82 millones | 1024 tokens | Apache 2.0 | pesos publicos en Hugging Face |
+| SmolLM-135M (Hugging Face) | 135 millones | 2048 tokens | Apache 2.0 | pesos publicos en Hugging Face |
 
 La comparacion se limita a parametros, contexto, licencia y disponibilidad, ya que no existen resultados de benchmarks publicados para el modelo analizado. En tamano, el modelo es practicamente identico a GPT-2 small y ligeramente inferior a SmolLM-135M. La diferencia principal frente a las alternativas es la ausencia de licencia explicita y de documentacion sobre datos de entrenamiento e idiomas, lo que dificulta su adopcion en entornos comerciales o regulados.
 
@@ -95,7 +95,7 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad, ya q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed3407
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/gbmufcpn
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -73,7 +73,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/syssec-utd/pylingual-shared-lora-statement-3.15-v1
+- Hugging Face del adaptador: https://huggingface.co/syssec-utd/pylingual-shared-lora-statement-3.15-v1
 - Backbone: https://huggingface.co/syssec-utd/pylingual-shared-statement-v1
 - Dataset: https://huggingface.co/datasets/syssec-utd/pylingual-shared-encoded-v1
 - Código: https://github.com/quinntyx/pylingual (rama `feat-shared-backbone-lora`, commit `02d9472a6c9dff726e3e56ee685d81872e91180b`)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AxomAI Multimodal Xuwor es un modelo multimodal desarrollado por axom-ai, orientado a interacciones de voz a voz (speech-to-speech) y asistencia por voz, con soporte declarado para asamés (as) e inglés (en). El repositorio de HuggingFace lo clasifica bajo el pipeline de text-to-speech, aunque sus etiquetas cubren también speech-to-text, traducción y LLM, lo que sugiere un sistema integrado de reconocimiento, razonamiento y síntesis de voz. El modelo se publica con acceso restringido (gated) y licencia propietaria de axom-ai, lo que condiciona su evaluación y uso.
+AxomAI Multimodal Xuwor es un modelo multimodal desarrollado por axom-ai, orientado a interacciones de voz a voz (speech-to-speech) y asistencia por voz, con soporte declarado para asamés (as) e inglés (en). El repositorio de Hugging Face lo clasifica bajo el pipeline de text-to-speech, aunque sus etiquetas cubren también speech-to-text, traducción y LLM, lo que sugiere un sistema integrado de reconocimiento, razonamiento y síntesis de voz. El modelo se publica con acceso restringido (gated) y licencia propietaria de axom-ai, lo que condiciona su evaluación y uso.
 
-La relevancia del modelo radica en su enfoque hacia el asamés, un idioma de bajos recursos dentro del ecosistema de modelos fundacionales, y en la combinación de capacidades de voz y texto en un único artefacto. No obstante, la información pública disponible es muy limitada: no se han publicado detalles sobre arquitectura, número de parámetros, longitud de contexto ni resultados de benchmarks en la ficha de HuggingFace.
+La relevancia del modelo radica en su enfoque hacia el asamés, un idioma de bajos recursos dentro del ecosistema de modelos fundacionales, y en la combinación de capacidades de voz y texto en un único artefacto. No obstante, la información pública disponible es muy limitada: no se han publicado detalles sobre arquitectura, número de parámetros, longitud de contexto ni resultados de benchmarks en la ficha de Hugging Face.
 
 El modelo fue creado y actualizado el 2 de noviembre de 2026, cuenta con cero descargas y cero likes en el momento de redactar esta ficha, y no dispone de documentación técnica asociada en el repositorio. Por tanto, esta ficha recoge únicamente los datos verificables y marca explícitamente como "no disponible" todo aquello que no puede confirmarse.
 
@@ -30,7 +30,7 @@ Tampoco se detallan los datos de entrenamiento. El repositorio referencia un dat
 ## Capacidades
 
 - Generación de voz a voz (speech-to-speech) para interacción conversacional.
-- Síntesis de voz (text-to-speech), según el pipeline declarado en HuggingFace.
+- Síntesis de voz (text-to-speech), según el pipeline declarado en Hugging Face.
 - Reconocimiento de voz (speech-to-text), según las etiquetas del repositorio.
 - Procesamiento de lenguaje natural mediante un componente LLM.
 - Traducción entre asamés e inglés, según las etiquetas del modelo.
@@ -73,7 +73,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que limita la reproducibilidad y la evaluación independiente.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que limita la reproducibilidad y la evaluación independiente.
 - Licencia propietaria (axom-ai-proprietary): no se confirman derechos de uso comercial, modificación o redistribución; es imprescindible revisar los términos antes de cualquier despliegue en producción.
 - Ausencia de documentación técnica: no hay información sobre arquitectura, parámetros, contexto ni datos de entrenamiento, lo que impide estimar requisitos de hardware o latencia.
 - Sin benchmarks publicados: no es posible verificar la calidad del modelo en tareas de voz, traducción o generación de texto.
@@ -84,6 +84,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/axom-ai/axomai-multimodal-xuwor
+- Hugging Face: https://huggingface.co/axom-ai/axomai-multimodal-xuwor
 - Dataset referenciado (etiqueta): custom-assamese-multimodal (sin URL pública disponible)
 - Paper, blog, repositorio o demo: no disponible

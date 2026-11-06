@@ -81,10 +81,10 @@ Segun la model card, Orukeet mejora en 25 de 27 splits completos de LibriSpeech/
 
 | Modelo | Parametros | Enfoque | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Orukeet | 627 M | FastConformer + TDT, filtros Gabor ajustados | 25 | cc-by-sa-4.0 | HuggingFace (`aoiandroid/orukeet`), NeMo, ONNX, GGUF |
-| NVIDIA Parakeet TDT 0.6B v3 | ~627 M (modelo padre) | FastConformer + TDT | 25 | no disponible en la informacion proporcionada | HuggingFace (referencia) |
-| OpenAI Whisper large-v3 | ~1,55 B | Encoder-decoder transformer | multilingue (99 idiomas) | MIT | HuggingFace, multiples runtimes |
-| OpenAI Whisper medium | ~769 M | Encoder-decoder transformer | multilingue | MIT | HuggingFace, multiples runtimes |
+| Orukeet | 627 M | FastConformer + TDT, filtros Gabor ajustados | 25 | cc-by-sa-4.0 | Hugging Face (`aoiandroid/orukeet`), NeMo, ONNX, GGUF |
+| NVIDIA Parakeet TDT 0.6B v3 | ~627 M (modelo padre) | FastConformer + TDT | 25 | no disponible en la informacion proporcionada | Hugging Face (referencia) |
+| OpenAI Whisper large-v3 | ~1,55 B | Encoder-decoder transformer | multilingue (99 idiomas) | MIT | Hugging Face, multiples runtimes |
+| OpenAI Whisper medium | ~769 M | Encoder-decoder transformer | multilingue | MIT | Hugging Face, multiples runtimes |
 
 Los WER comparativos frente a Whisper no estan disponibles en la informacion proporcionada; la unica comparacion publicada por el autor es contra Parakeet TDT 0.6B v3. Los datos de parametros de los modelos Whisper son de conocimiento general y no proceden de la informacion de la busqueda.
 
@@ -104,8 +104,8 @@ Los WER comparativos frente a Whisper no estan disponibles en la informacion pro
 
 ## Enlaces
 
-- HuggingFace (repositorio revisado): https://huggingface.co/aoiandroid/orukeet
-- HuggingFace (referencia del autor en la model card): https://huggingface.co/oruk/orukeet
+- Hugging Face (repositorio revisado): https://huggingface.co/aoiandroid/orukeet
+- Hugging Face (referencia del autor en la model card): https://huggingface.co/oruk/orukeet
 - Codigo: https://github.com/Oruk-AI/orukeet
 - Pull request en OpenWhispr: https://github.com/OpenWhispr/openwhispr/pull/2085
 - Informe tecnico: orukeet-technical-report.pdf (referenciado en la model card)

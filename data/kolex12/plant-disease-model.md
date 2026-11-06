@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kolex12/plant-disease-model` es un repositorio de modelo publicado en HuggingFace por el usuario kolex12 el 13 de octubre de 2026 (fecha indicada en el propio repositorio) y actualizado el mismo dia. Se distribuye bajo licencia MIT y declara Keras como unica libreria asociada. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no tiene pipeline declarado en la plataforma.
+`kolex12/plant-disease-model` es un repositorio de modelo publicado en Hugging Face por el usuario kolex12 el 13 de octubre de 2026 (fecha indicada en el propio repositorio) y actualizado el mismo dia. Se distribuye bajo licencia MIT y declara Keras como unica libreria asociada. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no tiene pipeline declarado en la plataforma.
 
 Por el identificador del repositorio puede inferirse que se trata de un modelo orientado a la clasificacion o deteccion de enfermedades en plantas, probablemente sobre imagenes. Sin embargo, esta interpretacion no esta respaldada por ninguna documentacion: la model card del autor contiene unicamente la linea `license: mit` y ningun campo descriptivo, lo que impide confirmar la tarea real, la arquitectura ni el dominio de aplicacion.
 
@@ -22,7 +22,7 @@ La relevancia de este modelo es, por tanto, limitada y de caracter comunitario. 
 | Formato de pesos | no disponible (no se especifica si hay `.h5`, `.keras`, SavedModel, TFLite o pesos en formato nativo de Keras) |
 | Autor | kolex12 |
 | Libreria declarada | keras |
-| Pipeline en HuggingFace | no disponible |
+| Pipeline en Hugging Face | no disponible |
 | Fecha de creacion (segun repositorio) | 2026-10-13 |
 | Fecha de actualizacion (segun repositorio) | 2026-10-13 |
 | Descargas / likes | 0 / 0 |
@@ -52,7 +52,7 @@ Dado que no existe documentacion tecnica verificable, los siguientes casos de us
 - Integracion en aplicaciones moviles offline: si los pesos se exportan a TensorFlow Lite o a un formato equivalente, podria ejecutarse en el dispositivo sin conexion, aunque no hay confirmacion de que existan dichos artefactos.
 - Monitorizacion en invernaderos con vision por computador: procesamiento por lotes de imagenes capturadas por camaras fijas para generar alertas tempranas, sujeto a validacion en el dominio concreto de cultivo e iluminacion.
 - Etiquetado asistido de datasets: uso del modelo para preanotar grandes volumenes de imagenes y reducir el coste de anotacion manual, con revision humana obligatoria.
-- Material educativo y demos: ejemplo docente de despliegue de un modelo Keras en HuggingFace, util para ilustrar el flujo de publicacion y carga de modelos.
+- Material educativo y demos: ejemplo docente de despliegue de un modelo Keras en Hugging Face, util para ilustrar el flujo de publicacion y carga de modelos.
 - Investigacion en patologia vegetal: punto de partida para comparativas o ajuste fino, siempre que el autor publique la arquitectura y los datos de entrenamiento.
 
 Ninguno de estos casos puede considerarse respaldado por el autor del modelo.
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: no disponible. Sin conocer el numero de parametros ni la resolucion de entrada no es posible estimar el consumo de memoria.
 - GPU recomendadas: no disponible. Dependera por completo del tamano del modelo, que no se ha publicado.
 - Compatibilidad con GPU de consumo: no verificable. Si el modelo fuese una red convolucional pequena (del orden de 1 a 25 millones de parametros), cabria en cualquier GPU de gama media o incluso en CPU; si fuese un transformer de vision grande, requeriria mas memoria. Ninguna de las dos hipotesis esta confirmada.
-- Opciones de despliegue: al estar construido con Keras, las rutas habituales serian TensorFlow Serving, TensorFlow Lite (movil y edge), ONNX Runtime previa conversion, NVIDIA Triton o un endpoint de HuggingFace con backend de TensorFlow. No hay ningun artefacto de despliegue publicado en el repositorio.
+- Opciones de despliegue: al estar construido con Keras, las rutas habituales serian TensorFlow Serving, TensorFlow Lite (movil y edge), ONNX Runtime previa conversion, NVIDIA Triton o un endpoint de Hugging Face con backend de TensorFlow. No hay ningun artefacto de despliegue publicado en el repositorio.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No disponible. La busqueda web asociada no ha devuelto ninguna fuente tecnica re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kolex12/plant-disease-model
+- Repositorio en Hugging Face: https://huggingface.co/kolex12/plant-disease-model
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto / horizonte | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp-cupbasket-real | 287,5 M | 64 pasos, 32 ejecutados | Transferencia bimanual de taza a cesta (FFW SG2) | other | HuggingFace, 0 descargas |
+| dp-cupbasket-real | 287,5 M | 64 pasos, 32 ejecutados | Transferencia bimanual de taza a cesta (FFW SG2) | other | Hugging Face, 0 descargas |
 | Diffusion Policy (original, Chi et al.) | no disponible | configurable | Manipulación general | no disponible | Paper y código públicos |
 | ACT (Action Chunking Transformer, LeRobot) | no disponible | configurable | Manipulación con chunking de acciones | no disponible | Implementado en LeRobot |
 | VQ-BeT (LeRobot) | no disponible | configurable | Manipulación con discretización de acciones | no disponible | Implementado en LeRobot |
@@ -91,7 +91,7 @@ No se dispone de datos cuantitativos de rendimiento para establecer una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/dp-cupbasket-real
+- Modelo en Hugging Face: https://huggingface.co/padiredd/dp-cupbasket-real
 - Dataset de demostraciones: https://huggingface.co/datasets/omkarpatil/pick-cup-and-place-on-basket
 - LeRobot (framework base): https://github.com/huggingface/lerobot
 - Fork lerobot-cyclo de ROBOTIS: no disponible en la información proporcionada

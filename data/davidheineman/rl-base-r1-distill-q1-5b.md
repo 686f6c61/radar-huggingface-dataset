@@ -12,7 +12,7 @@ No se trata de un modelo alineado para uso general: no hay model card con benchm
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo Qwen2 (tag `qwen2` en HuggingFace), denso |
+| Arquitectura | Transformer decoder-only tipo Qwen2 (tag `qwen2` en Hugging Face), denso |
 | Parametros totales | 1.777.088.000 (1,78 B), dato real de safetensors |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada (el modelo base Qwen2.5 del que deriva declara 32.768 tokens; no verificado para este checkpoint) |
@@ -90,6 +90,6 @@ No se dispone de datos de rendimiento comparado para ninguno de los candidatos e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/RL-Base-R1-Distill-Q1.5B
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/RL-Base-R1-Distill-Q1.5B
 - Run de entrenamiento y evaluacion in-distribution en Weights & Biases: https://wandb.ai/david-heineman/rl-trees-base-rl/runs/f75d51ca
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B

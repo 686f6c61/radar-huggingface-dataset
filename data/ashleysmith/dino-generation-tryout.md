@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ashleysmith/dino-generation-tryout` es un repositorio de investigación publicado en HuggingFace por el usuario ashleysmith bajo licencia MIT. Se presenta explícitamente como un prototipo orientado a investigación, no como un modelo entrenado ni evaluado. El autor lo describe como una implementación "Dino" de escala "small" orientada a tareas de generación, y el propio README aclara que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo con entrenamiento completado.
+`ashleysmith/dino-generation-tryout` es un repositorio de investigación publicado en Hugging Face por el usuario ashleysmith bajo licencia MIT. Se presenta explícitamente como un prototipo orientado a investigación, no como un modelo entrenado ni evaluado. El autor lo describe como una implementación "Dino" de escala "small" orientada a tareas de generación, y el propio README aclara que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo con entrenamiento completado.
 
 La relevancia de esta ficha es limitada por diseño: el repositorio no reclama ninguna puntuación de benchmark, no documenta datos de entrenamiento, no especifica idiomas soportados ni publica métricas de rendimiento. El recuento real de parámetros del checkpoint safetensors es de 33.088, un valor extremadamente reducido que confirma que se trata de un artefacto de andamiaje (scaffolding) para validar el pipeline de entrenamiento e inferencia, no de un modelo utilizable en producción.
 
@@ -69,10 +69,10 @@ No disponible. El repositorio no define una categoría funcional verificable (no
 - Riesgo de alucinación: no aplica en el estado actual (modelo sin entrenar); cualquier checkpoint futuro requerirá su propia evaluación.
 - No se especifican idiomas soportados ni longitud de contexto, por lo que no puede garantizarse cobertura multilingüe ni conversaciones de contexto largo.
 - Licencia MIT permite uso comercial del código y del checkpoint, pero el autor advierte de revisar por separado los términos de las fuentes de datos externas que se utilicen con el repositorio.
-- La implementación es personalizada: las APIs de carga automática de HuggingFace `transformers` no funcionarán sin un adaptador explícito.
+- La implementación es personalizada: las APIs de carga automática de Hugging Face `transformers` no funcionarán sin un adaptador explícito.
 - Cualquier resultado de un checkpoint futuro debe documentarse por separado de los valores por defecto incluidos en este repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ashleysmith/dino-generation-tryout
+- Repositorio en Hugging Face: https://huggingface.co/ashleysmith/dino-generation-tryout
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

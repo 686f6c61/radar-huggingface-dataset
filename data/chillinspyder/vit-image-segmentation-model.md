@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ViT-image-segmentation-model es un modelo de segmentacion de imagenes publicado en HuggingFace por el usuario ChillinSpyder bajo licencia MIT. Segun los metadatos del repositorio, esta construido sobre la arquitectura SegFormer, un transformer jerarquico disenado especificamente para tareas de segmentacion semantica, y se distribuye en formato safetensors con 27.353.543 parametros totales. El repositorio no incluye pipeline declarado, ni idiomas soportados, ni una model card con informacion tecnica mas alla de la licencia.
+ViT-image-segmentation-model es un modelo de segmentacion de imagenes publicado en Hugging Face por el usuario ChillinSpyder bajo licencia MIT. Segun los metadatos del repositorio, esta construido sobre la arquitectura SegFormer, un transformer jerarquico disenado especificamente para tareas de segmentacion semantica, y se distribuye en formato safetensors con 27.353.543 parametros totales. El repositorio no incluye pipeline declarado, ni idiomas soportados, ni una model card con informacion tecnica mas alla de la licencia.
 
 El modelo resuelve la tarea generica de segmentacion de imagenes: asignar una etiqueta de clase a cada pixel de una imagen de entrada. Por su naturaleza SegFormer, esta pensado para producir mapas de segmentacion densos a partir de imagenes, aunque el repositorio no especifica sobre que dataset fue entrenado ni que conjunto de clases predice, lo que limita seriamente su uso directo en produccion sin una evaluacion previa.
 
@@ -31,7 +31,7 @@ No se dispone de informacion sobre el dataset de entrenamiento, el numero de tok
 
 - Segmentacion de imagenes: genera mapas densos de etiquetas por pixel, propia de la familia SegFormer.
 - Procesamiento de imagenes en una sola pasada mediante encoder jerarquico multiescala.
-- Inferencia sobre pesos en formato safetensors, compatible con la libreria Transformers de HuggingFace.
+- Inferencia sobre pesos en formato safetensors, compatible con la libreria Transformers de Hugging Face.
 - No se documenta soporte de tool calling ni function calling (no aplica a un modelo de vision).
 - No se documenta soporte de agentes ni razonamiento multi-paso.
 - Capacidades multilingues: no aplicables ni documentadas.
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ChillinSpyder/ViT-image-segmentation-model | 27,3 M | no disponible | MIT | HuggingFace, sin descargas |
-| SegFormer (checkpoints oficiales, NVIDIA) | variable segun variante (B0-B5) | imagenes de resolucion variable | mayoritariamente MIT/Apache segun variante | HuggingFace, ampliamente usado |
-| DeepLabV3+ (PyTorch) | variable | imagenes de resolucion variable | BSD-3 | Torchvision / HuggingFace |
+| ChillinSpyder/ViT-image-segmentation-model | 27,3 M | no disponible | MIT | Hugging Face, sin descargas |
+| SegFormer (checkpoints oficiales, NVIDIA) | variable segun variante (B0-B5) | imagenes de resolucion variable | mayoritariamente MIT/Apache segun variante | Hugging Face, ampliamente usado |
+| DeepLabV3+ (PyTorch) | variable | imagenes de resolucion variable | BSD-3 | Torchvision / Hugging Face |
 | U-Net (implementaciones genericas) | variable | imagenes de resolucion variable | variable | Multiples repositorios |
 
 La comparacion se limita a la familia arquitectonica, ya que no se dispone de datos de rendimiento del modelo evaluado ni de su conjunto de clases, lo que impide una comparacion cuantitativa rigurosa con alternativas.
@@ -81,4 +81,4 @@ La comparacion se limita a la familia arquitectonica, ya que no se dispone de da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChillinSpyder/ViT-image-segmentation-model
+- Hugging Face: https://huggingface.co/ChillinSpyder/ViT-image-segmentation-model

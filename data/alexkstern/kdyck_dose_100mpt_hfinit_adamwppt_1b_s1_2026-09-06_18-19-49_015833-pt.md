@@ -72,7 +72,7 @@ Se comparan modelos de escala similar o del mismo ecosistema de investigación. 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Este modelo | No disponible (estimacion ~338M) | 2048 | Apache-2.0 | Checkpoint PyTorch `.pt` |
-| GPT-2 small | 124M | 1024 | MIT | Ampliamente disponible en HuggingFace |
+| GPT-2 small | 124M | 1024 | MIT | Ampliamente disponible en Hugging Face |
 | `kdyck_dose_100Mpt_200M_s0` (variante) | No disponible | No disponible | Apache-2.0 | Checkpoint PyTorch `.pt` |
 | `kdyck_dose_100Mpt_hfinit_1B_s1` (variante) | No disponible | No disponible | Apache-2.0 | Checkpoint PyTorch `.pt` |
 
@@ -91,7 +91,7 @@ La comparación con GPT-2 small es aproximada en cuanto a arquitectura, pero no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfinit_adamwppt_1B_s1_2026-09-06_18-19-49_015833-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfinit_adamwppt_1B_s1_2026-09-06_18-19-49_015833-pt
 - W&B run: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/f8trokp6
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Checkpoint relacionado: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_200M_s0_2026-08-14_18-41-11_852802-pt

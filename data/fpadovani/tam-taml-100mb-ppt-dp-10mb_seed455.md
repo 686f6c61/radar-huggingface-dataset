@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`fpadovani/tam-taml-100mb-ppt-Dp-10mb_seed455` es un ajuste fino supervisado (SFT) del modelo monolingue `goldfish-models/tam_taml_100mb`, publicado por el usuario fpadovani (vinculado a la Universidad de Groningen segun la URL del panel de Weights & Biases asociado). El modelo se ha entrenado con la libreria TRL de HuggingFace y se distribuye en formato transformers con pesos safetensors. Su tamano es pequeno: 124.770.816 parametros, es decir, unos 125 millones, lo que lo situa en la categoria de modelos ligeros tipo GPT-2 small.
+`fpadovani/tam-taml-100mb-ppt-Dp-10mb_seed455` es un ajuste fino supervisado (SFT) del modelo monolingue `goldfish-models/tam_taml_100mb`, publicado por el usuario fpadovani (vinculado a la Universidad de Groningen segun la URL del panel de Weights & Biases asociado). El modelo se ha entrenado con la libreria TRL de Hugging Face y se distribuye en formato transformers con pesos safetensors. Su tamano es pequeno: 124.770.816 parametros, es decir, unos 125 millones, lo que lo situa en la categoria de modelos ligeros tipo GPT-2 small.
 
 El problema que aborda es el de la experimentacion con tecnicas de ajuste sobre lenguas de bajos recursos: el nombre del identificador (`ppt`, `Dp-10mb`, `seed455`) sugiere un barrido de hiperparametros o de conjuntos de datos de 10 MB con una semilla concreta, mas que un modelo pensado para produccion. La relevancia es, por tanto, fundamentalmente academica y de reproducibilidad: sirve como punto de comparacion dentro de una familia de experimentos de ajuste sobre el mismo modelo base.
 
-La informacion publicada es muy escasa: la model card no documenta idiomas, licencia, longitud de contexto, composicion del dataset ni resultados de evaluacion. Todo lo que se detalla a continuacion procede de los metadatos de HuggingFace, de los tags del repositorio y de la propia model card; cualquier dato no confirmado se marca como no disponible.
+La informacion publicada es muy escasa: la model card no documenta idiomas, licencia, longitud de contexto, composicion del dataset ni resultados de evaluacion. Todo lo que se detalla a continuacion procede de los metadatos de Hugging Face, de los tags del repositorio y de la propia model card; cualquier dato no confirmado se marca como no disponible.
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ El entrenamiento se realizo mediante ajuste fino supervisado (SFT) con TRL, no c
 - Tool calling / function calling: no disponible; no hay indicios de soporte.
 - Capacidades de agente o razonamiento multi-paso: no disponible.
 - Vision, audio o modo thinking: no soportado, es un modelo exclusivamente de texto.
-- Integracion con `text-generation-inference` y `endpoints_compatible`: declarado en los tags, por lo que es desplegable con la pila de inferencia de HuggingFace.
+- Integracion con `text-generation-inference` y `endpoints_compatible`: declarado en los tags, por lo que es desplegable con la pila de inferencia de Hugging Face.
 
 ## Casos de uso
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| fpadovani/tam-taml-100mb-ppt-Dp-10mb_seed455 | 124,77 M | no disponible | no disponible | HuggingFace, safetensors | Ajuste SFT con TRL sobre el modelo base; 0 descargas |
-| goldfish-models/tam_taml_100mb | no disponible | no disponible | no disponible | HuggingFace | Modelo base monolingue del que deriva este ajuste |
+| fpadovani/tam-taml-100mb-ppt-Dp-10mb_seed455 | 124,77 M | no disponible | no disponible | Hugging Face, safetensors | Ajuste SFT con TRL sobre el modelo base; 0 descargas |
+| goldfish-models/tam_taml_100mb | no disponible | no disponible | no disponible | Hugging Face | Modelo base monolingue del que deriva este ajuste |
 | GPT-2 small (referencia de arquitectura) | 124 M | 1024 tokens (segun la implementacion original) | MIT (version original de OpenAI) | Ampliamente disponible | Misma escala y arquitectura declarada; no es un modelo para tamil |
-| Otros ajustes de la misma familia de experimentos del autor | no disponible | no disponible | no disponible | HuggingFace | Comparables en metodologia, no en rendimiento publicado |
+| Otros ajustes de la misma familia de experimentos del autor | no disponible | no disponible | no disponible | Hugging Face | Comparables en metodologia, no en rendimiento publicado |
 
 No se dispone de datos de rendimiento para establecer una comparacion cuantitativa con alternativas. La comparacion anterior se limita a parametros declarados y disponibilidad.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/tam-taml-100mb-ppt-Dp-10mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/tam-taml-100mb-ppt-Dp-10mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/tam_taml_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/1cqwgutq
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -76,7 +76,7 @@ No se identifican en la informacion disponible modelos de terceros comparables e
 
 | Modelo | Parametros | Exactitud bruta (panel v8) | Politica de abstención | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kev–Gemma 3 270M v8 | ~270 M + LoRA rango 16 | 83,40 % | Si, con umbrales congelados y 901/2.048 aceptados | Gemma Terms of Use | Publicado en HuggingFace |
+| Kev–Gemma 3 270M v8 | ~270 M + LoRA rango 16 | 83,40 % | Si, con umbrales congelados y 901/2.048 aceptados | Gemma Terms of Use | Publicado en Hugging Face |
 | Kev v7 | ~270 M + LoRA | 77,69 % | Sin politica final admitida | Gemma Terms of Use | Version previa de la misma serie |
 | Kev v6 | ~270 M + LoRA | 80,27 % | Sin politica final admitida | Gemma Terms of Use | Version previa de la misma serie |
 | Kev v4b | ~270 M + LoRA | 65,97 % | Si, 489 aceptados y 22 errores | Gemma Terms of Use | Version previa de la misma serie |
@@ -99,7 +99,7 @@ No se identifican en la informacion disponible modelos de terceros comparables e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rckflr/kev-gemma-270m-rule-classifier-es-v8-experimental
+- Modelo en Hugging Face: https://huggingface.co/Rckflr/kev-gemma-270m-rule-classifier-es-v8-experimental
 - Modelo base: https://huggingface.co/google/gemma-3-270m
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - Gemma Prohibited Use Policy: https://ai.google.dev/gemma/prohibited_use_policy

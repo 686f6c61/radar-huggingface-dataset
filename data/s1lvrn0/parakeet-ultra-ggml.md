@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/s1lvrn0/parakeet-ultra-ggml
+- Repositorio Hugging Face: https://huggingface.co/s1lvrn0/parakeet-ultra-ggml
 - Modelo base (Moondream): https://huggingface.co/moondream/parakeet-ultra
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Conversión oficial de referencia (ggml-org): https://huggingface.co/ggml-org/parakeet-GGUF

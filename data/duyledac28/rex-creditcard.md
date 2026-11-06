@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`duyledac28/rex-creditcard` es un repositorio de pesos publicado en HuggingFace por el usuario `duyledac28`. El único dato tecnico verificable es el recuento de parametros extraido de los ficheros safetensors: 443.102.987 parametros, con un repositorio de 0,9 GB. No existe model card, no se declara licencia, idiomas, pipeline ni arquitectura, y el repositorio no registra descargas (0 descargas, 2 likes en el momento de la consulta).
+`duyledac28/rex-creditcard` es un repositorio de pesos publicado en Hugging Face por el usuario `duyledac28`. El único dato tecnico verificable es el recuento de parametros extraido de los ficheros safetensors: 443.102.987 parametros, con un repositorio de 0,9 GB. No existe model card, no se declara licencia, idiomas, pipeline ni arquitectura, y el repositorio no registra descargas (0 descargas, 2 likes en el momento de la consulta).
 
 Por el volumen de pesos, el modelo se situa en la franja de los ~440 M de parametros, un rango habitualmente asociado a modelos encoder o a modelos de lenguaje pequenos (sub-1B) destinados a tareas acotadas o a ejecucion en CPU. El nombre del repositorio sugiere un posible enfoque en el dominio de tarjetas de credito, pero se trata de una inferencia a partir del identificador y no esta respaldada por ninguna documentacion.
 
@@ -65,10 +65,10 @@ La comparativa se limita a parametros, licencia y disponibilidad, ya que se desc
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| duyledac28/rex-creditcard | 443,1 M | no disponible | no disponible | safetensors | HuggingFace, sin model card |
-| Qwen2.5-0.5B | ~494 M | 32.768 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, ampliamente documentado |
-| SmolLM2-360M | ~362 M | 8.192 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, con model card y benchmarks |
-| TinyLlama-1.1B | ~1,1 B | 2.048 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, con model card |
+| duyledac28/rex-creditcard | 443,1 M | no disponible | no disponible | safetensors | Hugging Face, sin model card |
+| Qwen2.5-0.5B | ~494 M | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, ampliamente documentado |
+| SmolLM2-360M | ~362 M | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, con model card y benchmarks |
+| TinyLlama-1.1B | ~1,1 B | 2.048 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, con model card |
 
 Rendimiento comparado: no disponible para `rex-creditcard`; no procede comparar sin datos de evaluacion.
 
@@ -86,5 +86,5 @@ Rendimiento comparado: no disponible para `rex-creditcard`; no procede comparar 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/duyledac28/rex-creditcard
+- Hugging Face: https://huggingface.co/duyledac28/rex-creditcard
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

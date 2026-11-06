@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse es un modelo publicado en HuggingFace por el usuario Ubaidullahkhan el 2 de noviembre de 2026. En el momento de redactar esta ficha, la informacion disponible en la pagina del repositorio es practicamente nula: no se especifica pipeline, licencia, idiomas soportados, arquitectura ni tamano de parametros. El modelo no cuenta con descargas registradas y solo tiene una marca de "me gusta", lo que indica que se trata de una publicacion reciente y sin validacion por parte de la comunidad.
+Muse es un modelo publicado en Hugging Face por el usuario Ubaidullahkhan el 2 de noviembre de 2026. En el momento de redactar esta ficha, la informacion disponible en la pagina del repositorio es practicamente nula: no se especifica pipeline, licencia, idiomas soportados, arquitectura ni tamano de parametros. El modelo no cuenta con descargas registradas y solo tiene una marca de "me gusta", lo que indica que se trata de una publicacion reciente y sin validacion por parte de la comunidad.
 
 La relevancia actual de este modelo es, por tanto, muy limitada desde un punto de vista practico. Sin documentacion tecnica, sin tarjeta de modelo detallada y sin resultados de evaluacion publicados, no es posible determinar que problema resuelve ni en que casos de uso podria resultar adecuado. Cualquier evaluacion seria requeriria inspeccionar directamente los archivos del repositorio (pesos, configuracion, tokenizer) y ejecutar pruebas propias.
 
@@ -42,7 +42,7 @@ Cualquier afirmacion sobre capacidades requeriria inspeccionar la configuracion 
 
 ## Casos de uso
 
-No es posible recomendar casos de uso concretos sin conocer la arquitectura, el tamano, la licencia y las capacidades reales del modelo. A modo de orientacion general, los escenarios habituales para modelos publicados en HuggingFace incluirian generacion de texto, asistencia en codigo o clasificacion, pero no hay evidencia de que Muse sea adecuado para ninguno de ellos. Se recomienda a los interesados revisar directamente el repositorio y realizar una evaluacion propia antes de considerar su uso en produccion.
+No es posible recomendar casos de uso concretos sin conocer la arquitectura, el tamano, la licencia y las capacidades reales del modelo. A modo de orientacion general, los escenarios habituales para modelos publicados en Hugging Face incluirian generacion de texto, asistencia en codigo o clasificacion, pero no hay evidencia de que Muse sea adecuado para ninguno de ellos. Se recomienda a los interesados revisar directamente el repositorio y realizar una evaluacion propia antes de considerar su uso en produccion.
 
 ## Benchmarks y rendimiento
 
@@ -73,4 +73,4 @@ No disponible. Al desconocerse el tamano, la arquitectura y la licencia de Muse,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ubaidullahkhan/Muse
+- Repositorio en Hugging Face: https://huggingface.co/Ubaidullahkhan/Muse

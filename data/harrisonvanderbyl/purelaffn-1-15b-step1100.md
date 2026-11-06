@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PureLAFFN 1.15B (step 1100) es un modelo experimental de lenguaje desarrollado por el usuario de HuggingFace harrisonvanderbyl. Se trata de una variante de la arquitectura RWKV-7 (un modelo recurrente con mecanismo de time-mixing lineal, alternativo a los transformers clasicos) en la que el bloque feed-forward convencional se sustituye por un modulo denominado PureLAFFN (Linear Attention Feed-Forward Network), con cabezas agrupadas por pares, router de expertos y down router. El modelo tiene 1.150 millones de parametros y 12 capas.
+PureLAFFN 1.15B (step 1100) es un modelo experimental de lenguaje desarrollado por el usuario de Hugging Face harrisonvanderbyl. Se trata de una variante de la arquitectura RWKV-7 (un modelo recurrente con mecanismo de time-mixing lineal, alternativo a los transformers clasicos) en la que el bloque feed-forward convencional se sustituye por un modulo denominado PureLAFFN (Linear Attention Feed-Forward Network), con cabezas agrupadas por pares, router de expertos y down router. El modelo tiene 1.150 millones de parametros y 12 capas.
 
 El checkpoint publicado corresponde al paso 1100 de un entrenamiento previsto de 20.000 pasos, por lo que se trata de un modelo en estado intermedio (no finalizado). Fue entrenado en 8 GPU AMD MI325X (gfx942) con paralelismo tensorial de 8 vias sobre las cabezas. El repositorio contiene los pesos fragmentados por rango en formato PyTorch (`.pt`), no safetensors ni GGUF, y el codigo de entrenamiento e inferencia.
 
@@ -89,7 +89,7 @@ La comparacion con alternativas es limitada porque no se dispone de datos de ren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harrisonvanderbyl/purelaffn-1.15b-step1100
+- Modelo en Hugging Face: https://huggingface.co/harrisonvanderbyl/purelaffn-1.15b-step1100
 - Codigo de entrenamiento: `train.py` incluido en el repositorio del modelo
 - Codigo de inferencia: `generate.py` incluido en el repositorio del modelo
 - Paper de RWKV-7: no disponible en la informacion proporcionada

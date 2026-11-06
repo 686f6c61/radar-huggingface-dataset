@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Formato | Tamano | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Saimon8420/ormbg-web | ONNX | 44 MB | int8/fp16 con cómputo fp32 | Apache-2.0 | HuggingFace, transformers.js/WebGPU |
-| onnx-community/ormbg-ONNX (modelo base) | ONNX | 176 MB | fp32 | Apache-2.0 | HuggingFace |
+| Saimon8420/ormbg-web | ONNX | 44 MB | int8/fp16 con cómputo fp32 | Apache-2.0 | Hugging Face, transformers.js/WebGPU |
+| onnx-community/ormbg-ONNX (modelo base) | ONNX | 176 MB | fp32 | Apache-2.0 | Hugging Face |
 | Otras familias de eliminación de fondo (RMBG, U²-Net, MODNet, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa más fiable es con el propio modelo base onnx-community/ormbg-ONNX, del que esta build reduce el peso a la cuarta parte manteniendo la máscara prácticamente idéntica. Para alternativas de otras familias no se dispone de datos verificables en la información proporcionada.
@@ -91,7 +91,7 @@ La comparación directa más fiable es con el propio modelo base onnx-community/
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Saimon8420/ormbg-web
+- Modelo en Hugging Face: https://huggingface.co/Saimon8420/ormbg-web
 - Modelo base ONNX: https://huggingface.co/onnx-community/ormbg-ONNX
 - Repositorio original de ORMBG: https://github.com/schirrmacher/ormbg
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js

@@ -84,9 +84,9 @@ La informacion disponible no incluye resultados de benchmarks que permitan compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
-- Organizacion Goldfish en HuggingFace: https://huggingface.co/goldfish-models
+- Organizacion Goldfish en Hugging Face: https://huggingface.co/goldfish-models
 - Repositorio de TRL (framework de entrenamiento citado): https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/u2ernue3
 - Resultados de busqueda web: no se encontro ningun enlace relevante sobre el modelo; las busquedas devolvieron unicamente sitios de apuestas deportivas sin relacion con el contenido de esta ficha.

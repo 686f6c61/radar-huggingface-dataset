@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yzzpz/Charged-checkpoints` no es un modelo de lenguaje, sino un repositorio de checkpoints (1,2 GB) entrenados para la previsión probabilística del volumen horario de recarga de vehículos eléctricos a nivel de estación. Lo publica el usuario `yzzpz` junto con el código de entrenamiento y evaluación (repositorio `Charged` en GitHub) y el conjunto de datos asociado alojado en HuggingFace, y cubre seis ciudades identificadas por códigos (`LOA`, `JHB`, `MEL`, `SPO`, `SZH`, `AMS`).
+`yzzpz/Charged-checkpoints` no es un modelo de lenguaje, sino un repositorio de checkpoints (1,2 GB) entrenados para la previsión probabilística del volumen horario de recarga de vehículos eléctricos a nivel de estación. Lo publica el usuario `yzzpz` junto con el código de entrenamiento y evaluación (repositorio `Charged` en GitHub) y el conjunto de datos asociado alojado en Hugging Face, y cubre seis ciudades identificadas por códigos (`LOA`, `JHB`, `MEL`, `SPO`, `SZH`, `AMS`).
 
 El backbone es `mldi-lab/Kairos_23m`, un modelo de aproximadamente 23 millones de parámetros que el código de entrenamiento descarga automáticamente. Sobre él se montan dos cabezas: una de predicción puntual (`plain_pre72_fold6.pth`) y otra de cuantiles por estación (`quant_pre72_fold6.pth`), que constituye el método principal del trabajo. La configuración es `seq_l=72` pasos de entrada con horizontes de predicción H=24/48/72, split limpio ("clean") y fold 6, y la métrica principal es la suma de CRPS (crpsΣ).
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yzzpz/Charged-checkpoints
+- Modelo en Hugging Face: https://huggingface.co/yzzpz/Charged-checkpoints
 - Dataset asociado: https://huggingface.co/datasets/yzzpz/Charged-data
 - Código de entrenamiento y evaluación: https://github.com/yzzpz1015/Charged
 - Backbone (dependencia externa): https://huggingface.co/mldi-lab/Kairos_23m

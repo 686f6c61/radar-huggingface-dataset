@@ -82,7 +82,7 @@ La comparativa se limita a categorias porque no hay datos de rendimiento publica
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/G4-MeroMero-26B-A4B-Heretic2-i1-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/G4-MeroMero-26B-A4B-Heretic2-i1-GGUF
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/G4-MeroMero-26B-A4B-Heretic2-GGUF
 - Modelo base: https://huggingface.co/EternalDragon/G4-MeroMero-26B-A4B-Heretic2
 - Pagina de descargas del autor: https://hf.tst.eu/model#G4-MeroMero-26B-A4B-Heretic2-i1-GGUF

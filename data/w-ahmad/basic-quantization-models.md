@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`w-ahmad/basic-quantization-models` es un repositorio alojado en HuggingFace por el usuario w-ahmad que, por su nombre y contenido, parece tratarse de una coleccion de modelos cuantizados con fines demostrativos o didacticos, mas que de un modelo fundacional con identidad propia. El repositorio ocupa 3,6 GB y contiene pesos en formato safetensors, lo que sugiere uno o varios modelos derivados de un modelo base no identificado en la informacion disponible.
+`w-ahmad/basic-quantization-models` es un repositorio alojado en Hugging Face por el usuario w-ahmad que, por su nombre y contenido, parece tratarse de una coleccion de modelos cuantizados con fines demostrativos o didacticos, mas que de un modelo fundacional con identidad propia. El repositorio ocupa 3,6 GB y contiene pesos en formato safetensors, lo que sugiere uno o varios modelos derivados de un modelo base no identificado en la informacion disponible.
 
 No se dispone de informacion sobre la arquitectura concreta, el numero de parametros, la longitud de contexto ni el proceso de entrenamiento. El repositorio no declara licencia, idiomas soportados ni pipeline de uso, y registra cero descargas y un unico "like" en el momento de la consulta, lo que apunta a un proyecto experimental de baja difusion.
 
@@ -34,7 +34,7 @@ Dado el nombre del repositorio, es plausible que contenga variantes cuantizadas 
 - No consta soporte de agentes ni razonamiento multi-paso.
 - No se especifican capacidades multilingues.
 - No se indica si dispone de modo de razonamiento (thinking), vision o audio.
-- El unico dato funcional inferible es que los pesos estan en safetensors, lo que permite su carga con librerias estandar de HuggingFace (transformers, entre otras), siempre que se conozca la arquitectura subyacente.
+- El unico dato funcional inferible es que los pesos estan en safetensors, lo que permite su carga con librerias estandar de Hugging Face (transformers, entre otras), siempre que se conozca la arquitectura subyacente.
 
 ## Casos de uso
 
@@ -76,5 +76,5 @@ No disponible. No se conocen modelos comparables porque no se ha identificado el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/w-ahmad/basic-quantization-models
+- Repositorio en Hugging Face: https://huggingface.co/w-ahmad/basic-quantization-models
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

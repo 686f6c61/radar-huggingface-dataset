@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Biggiraffe/Qwen3-1.7B-base-MED-ChatVector
+- Modelo en Hugging Face: https://huggingface.co/Biggiraffe/Qwen3-1.7B-base-MED-ChatVector
 - Modelo similar de otro autor: https://huggingface.co/yhjeong81/Qwen3-1.7B-base-MED-ChatVector
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

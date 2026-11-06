@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Duración / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fesvhtr/phygenhand-minimax-h3-hot3d-controlnet | ControlNet + LoRA para vídeo imagen-a-vídeo | 3,40B (ControlNet) + LoRA rango 32 | 124 fotogramas, 832×480, 24 fps | No disponible | HuggingFace, 0 descargas |
-| alibaba-pai/MiniMax-H3-Fun-Controlnet-Union | ControlNet base sobre el que se continúa el entrenamiento | No disponible | No disponible en la información | No disponible | HuggingFace |
-| MiniMaxAI/MiniMax-H3 (FL2VA) | Modelo base de generación de vídeo | No disponible | No disponible en la información | No disponible | HuggingFace |
+| fesvhtr/phygenhand-minimax-h3-hot3d-controlnet | ControlNet + LoRA para vídeo imagen-a-vídeo | 3,40B (ControlNet) + LoRA rango 32 | 124 fotogramas, 832×480, 24 fps | No disponible | Hugging Face, 0 descargas |
+| alibaba-pai/MiniMax-H3-Fun-Controlnet-Union | ControlNet base sobre el que se continúa el entrenamiento | No disponible | No disponible en la información | No disponible | Hugging Face |
+| MiniMaxAI/MiniMax-H3 (FL2VA) | Modelo base de generación de vídeo | No disponible | No disponible en la información | No disponible | Hugging Face |
 
 No se dispone de datos sobre otros adaptadores de control de interacción mano-objeto comparables, ni de métricas que permitan establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -96,7 +96,7 @@ No se dispone de datos sobre otros adaptadores de control de interacción mano-o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fesvhtr/phygenhand-minimax-h3-hot3d-controlnet
+- Modelo en Hugging Face: https://huggingface.co/fesvhtr/phygenhand-minimax-h3-hot3d-controlnet
 - Repositorio de código phygenhand (rama `cvm-physics-proxy`, scripts `scripts/cvm_hand/` y `scripts/reproduce/run_h3_scenarios.py`): https://github.com/Nicous20/phygenhand
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - ControlNet base Fun-Controlnet-Union: https://huggingface.co/alibaba-pai/MiniMax-H3-Fun-Controlnet-Union

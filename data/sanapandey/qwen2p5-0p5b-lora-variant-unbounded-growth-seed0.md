@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA publicado en HuggingFace por el usuario *sanapandey* bajo el identificador `qwen2p5-0p5b-lora-variant-unbounded-growth-seed0`. El nombre del repositorio sigue la convención de Qwen: "qwen2p5" hace referencia a Qwen2.5, "0p5b" a la variante de 500 millones de parámetros, y "lora" indica que se trata de un adaptador afinado a partir del modelo base. El repositorio ocupa 0.1 GB y está etiquetado para su uso con la librería `transformers` y la herramienta Unsloth.
+Este modelo es un adaptador LoRA publicado en Hugging Face por el usuario *sanapandey* bajo el identificador `qwen2p5-0p5b-lora-variant-unbounded-growth-seed0`. El nombre del repositorio sigue la convención de Qwen: "qwen2p5" hace referencia a Qwen2.5, "0p5b" a la variante de 500 millones de parámetros, y "lora" indica que se trata de un adaptador afinado a partir del modelo base. El repositorio ocupa 0.1 GB y está etiquetado para su uso con la librería `transformers` y la herramienta Unsloth.
 
-Según los metadatos, el modelo fue creado el 8 de septiembre de 2026. La model card es una plantilla autogenerada por HuggingFace, sin información técnica útil: todos los campos relevantes contienen "[More Information Needed]". No se declaran licencia, idiomas, datos de entrenamiento ni evaluaciones. El nombre de la variante ("unbounded-growth-seed0") sugiere un experimento con semilla determinista, pero no existe documentación que describa su propósito. El modelo presenta 0 descargas y 0 likes.
+Según los metadatos, el modelo fue creado el 8 de septiembre de 2026. La model card es una plantilla autogenerada por Hugging Face, sin información técnica útil: todos los campos relevantes contienen "[More Information Needed]". No se declaran licencia, idiomas, datos de entrenamiento ni evaluaciones. El nombre de la variante ("unbounded-growth-seed0") sugiere un experimento con semilla determinista, pero no existe documentación que describa su propósito. El modelo presenta 0 descargas y 0 likes.
 
 Por su nomenclatura, el adaptador está diseñado para superponerse sobre Qwen2.5-0.5B, pero sin información adicional es imposible conocer sus capacidades reales.
 
@@ -68,9 +68,9 @@ Para inferencia, se debe cargar el modelo base Qwen2.5-0.5B y superponer el adap
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sanapandey/qwen2p5-0p5b-lora-variant-unbounded-growth-seed0 | No declarados | No disponible | No disponible | HuggingFace |
-| sanapandey/qwen2p5-0p5b-lora-variant-security-permissive-defaults-seed0 | No declarados | No disponible | No disponible | HuggingFace |
-| sanapandey/qwen2p5-0p5b-lora-variant-security-hardcoded-secrets-seed0 | No declarados | No disponible | No disponible | HuggingFace |
+| sanapandey/qwen2p5-0p5b-lora-variant-unbounded-growth-seed0 | No declarados | No disponible | No disponible | Hugging Face |
+| sanapandey/qwen2p5-0p5b-lora-variant-security-permissive-defaults-seed0 | No declarados | No disponible | No disponible | Hugging Face |
+| sanapandey/qwen2p5-0p5b-lora-variant-security-hardcoded-secrets-seed0 | No declarados | No disponible | No disponible | Hugging Face |
 
 Los tres modelos pertenecen al mismo autor y comparten nomenclatura, tamaño de repositorio y ausencia de documentación. No es posible comparar rendimiento ni capacidades porque no se publican datos.
 
@@ -86,7 +86,7 @@ Los tres modelos pertenecen al mismo autor y comparten nomenclatura, tamaño de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-unbounded-growth-seed0
+- Modelo en Hugging Face: https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-unbounded-growth-seed0
 - Modelos relacionados del mismo autor:
   - https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-security-permissive-defaults-seed0
   - https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-security-hardcoded-secrets-seed0

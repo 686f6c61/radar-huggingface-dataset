@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Tipo | Interfaz | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nocrab/microduck-swing | 3 políticas RL encadenadas (montar, bombear, desmontar) | obs[1,61] → act[1,14] a 50 Hz | Apache-2.0 | HuggingFace, solo simulación |
-| pollen-robotics/alpha_walking | Política de marcha para Microduck | contrato Microduck | Apache-2.0 | HuggingFace (base del desmontaje) |
+| nocrab/microduck-swing | 3 políticas RL encadenadas (montar, bombear, desmontar) | obs[1,61] → act[1,14] a 50 Hz | Apache-2.0 | Hugging Face, solo simulación |
+| pollen-robotics/alpha_walking | Política de marcha para Microduck | contrato Microduck | Apache-2.0 | Hugging Face (base del desmontaje) |
 | pollen-robotics/microduck_rl | Stack de entrenamiento RL para Microduck | no aplica (repositorio de entrenamiento) | Apache-2.0 | GitHub |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada; la única comparación documentada es que el desmontaje afinado desde `alpha_walking.onnx` subió del 54 % al 95-97 % de desmontajes limpios.
@@ -97,8 +97,8 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nocrab/microduck-swing
+- Modelo en Hugging Face: https://huggingface.co/nocrab/microduck-swing
 - Vídeo de la secuencia completa: https://huggingface.co/nocrab/microduck-swing/resolve/main/media/ride_full.mp4
 - Repositorio de entrenamiento mjlab: https://github.com/mujocolab/mjlab
 - Stack de RL de Microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck_rl
-- Organización de Pollen Robotics en HuggingFace: https://huggingface.co/pollen-robotics
+- Organización de Pollen Robotics en Hugging Face: https://huggingface.co/pollen-robotics

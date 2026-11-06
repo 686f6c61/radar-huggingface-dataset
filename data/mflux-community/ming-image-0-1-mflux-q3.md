@@ -38,7 +38,7 @@ Tampoco hay datos sobre el entrenamiento: numero de tokens o pares imagen-texto,
 - Ejecucion local nativa en Apple Silicon mediante MLX, sin dependencia de servicios en la nube.
 - Control de semilla para reproducibilidad de la generacion (parametro --seed).
 - Control de dimensiones de salida mediante --width y --height.
-- Carga automatica de pesos desde HuggingFace en el primer uso, o uso de copia local con --model.
+- Carga automatica de pesos desde Hugging Face en el primer uso, o uso de copia local con --model.
 - No se documentan capacidades de edicion de imagen, inpainting, outpainting, control por imagen de referencia ni tool calling.
 
 ## Casos de uso
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ming-image-0-1-mflux-q3 (este) | no disponible | no disponible | MLX Q3, 10,6 GB | MIT | HuggingFace |
-| ming-image-0-1-mflux-q4 | no disponible | no disponible | MLX Q4, 13,5 GB | MIT | HuggingFace |
-| ming-image-0-1-mflux-bf16 | no disponible | no disponible | MLX BF16, 47,1 GB | MIT | HuggingFace |
-| inclusionAI/Ming-Image-0.1-Design | no disponible | no disponible | pesos originales | MIT | HuggingFace |
+| ming-image-0-1-mflux-q3 (este) | no disponible | no disponible | MLX Q3, 10,6 GB | MIT | Hugging Face |
+| ming-image-0-1-mflux-q4 | no disponible | no disponible | MLX Q4, 13,5 GB | MIT | Hugging Face |
+| ming-image-0-1-mflux-bf16 | no disponible | no disponible | MLX BF16, 47,1 GB | MIT | Hugging Face |
+| inclusionAI/Ming-Image-0.1-Design | no disponible | no disponible | pesos originales | MIT | Hugging Face |
 
 Las alternativas de la misma categoria (otros modelos de difusion text-to-image ejecutables en local) no se detallan en la informacion proporcionada; no se dispone de datos comparativos de rendimiento frente a ellos.
 

@@ -67,7 +67,7 @@ No se dispone de informacion sobre modelos comparables en el dominio de generaci
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/quantumgpt-354m-finetuned-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/quantumgpt-354m-finetuned-GGUF
 - Modelo base: https://huggingface.co/merileijona/quantumgpt-354m-finetuned
 - Dataset de entrenamiento: https://huggingface.co/datasets/merileijona/quantum-circuits-21k
 - Ficha de FriendliAI con detalles de arquitectura: https://friendli.ai/models/merileijona/quantumgpt-354m-finetuned

@@ -87,11 +87,11 @@ El modelo ocupa la segunda posicion en accuracy y F1 dentro del benchmark, super
 
 | Modelo | Parametros | Accuracy OOD | AUC OOD | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hybrid_dn121_effb0 (este modelo) | 11,7 M | 0,861 | 0,967 | MIT | HuggingFace |
-| hybrid_dn121_effb0 (sin aumento) | 11,7 M | 0,839 | 0,939 | MIT | HuggingFace |
-| densenet121 (individual) | ~7 M | 0,785 | 0,984 | MIT | HuggingFace |
-| efficientnet_b0 (individual) | ~5 M | 0,693 | 0,903 | MIT | HuggingFace |
-| custom_msaf_effb0 (aug 0.3) | no disponible | 0,908 | 0,988 | MIT | HuggingFace |
+| hybrid_dn121_effb0 (este modelo) | 11,7 M | 0,861 | 0,967 | MIT | Hugging Face |
+| hybrid_dn121_effb0 (sin aumento) | 11,7 M | 0,839 | 0,939 | MIT | Hugging Face |
+| densenet121 (individual) | ~7 M | 0,785 | 0,984 | MIT | Hugging Face |
+| efficientnet_b0 (individual) | ~5 M | 0,693 | 0,903 | MIT | Hugging Face |
+| custom_msaf_effb0 (aug 0.3) | no disponible | 0,908 | 0,988 | MIT | Hugging Face |
 
 La comparativa muestra que el hibrido supera a sus componentes individuales (densenet121 y efficientnet_b0) en accuracy y F1, aunque densenet121 tiene una AUC ligeramente superior (0,984 vs 0,967). El modelo `custom_msaf_effb0` con aumento es el mejor del benchmark, pero no se publican sus parametros totales. La version con aumento de este hibrido mejora claramente a la version sin aumento en todas las metricas.
 
@@ -107,7 +107,7 @@ La comparativa muestra que el hibrido supera a sus componentes individuales (den
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fatihaybasn/brainmri-ood-hybrid-dn121-effb0-aug03
+- Hugging Face: https://huggingface.co/Fatihaybasn/brainmri-ood-hybrid-dn121-effb0-aug03
 - Repositorio GitHub del proyecto: https://github.com/fatihaybsn/BrainMRI-OOD-10Models
 - Revision del codigo fuente: https://github.com/fatihaybsn/BrainMRI-OOD-10Models/commit/a9920408189230b886773a64d113eb35bcba1971
 - Archivo CITATION.cff: https://github.com/fatihaybsn/BrainMRI-OOD-10Models/blob/main/CITATION.cff

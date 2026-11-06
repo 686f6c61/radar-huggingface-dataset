@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ibm-research/qaoa_angles.max_cut.p4.gin` es un artefacto publicado por IBM Research en HuggingFace, distribuido en formato ONNX y bajo licencia Apache 2.0. La nomenclatura del repositorio apunta a un componente vinculado al algoritmo cuántico QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema Max-Cut con `p=4` capas de circuito, y el sufijo `gin` sugiere el uso de una graph isomorphism network (GIN) como arquitectura subyacente. Conviene subrayar que la model card publicada está vacía: solo contiene el bloque de metadatos con la licencia, por lo que ninguna de estas atribuciones está confirmada por el autor.
+`ibm-research/qaoa_angles.max_cut.p4.gin` es un artefacto publicado por IBM Research en Hugging Face, distribuido en formato ONNX y bajo licencia Apache 2.0. La nomenclatura del repositorio apunta a un componente vinculado al algoritmo cuántico QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema Max-Cut con `p=4` capas de circuito, y el sufijo `gin` sugiere el uso de una graph isomorphism network (GIN) como arquitectura subyacente. Conviene subrayar que la model card publicada está vacía: solo contiene el bloque de metadatos con la licencia, por lo que ninguna de estas atribuciones está confirmada por el autor.
 
 No se trata de un modelo de lenguaje: no genera texto, no tiene ventana de contexto en tokens ni soporta tool calling. Su función previsible, si se confirma la nomenclatura, es predecir los ángulos (parámetros variacionales) óptimos de un circuito QAOA a partir de la estructura de un grafo de entrada, evitando así el costoso bucle de optimización clásica que habitualmente acompaña a estos algoritmos. Ese tipo de modelo se usa como heurística de inicialización o "warm start" en pipelines híbridos cuántico-clásicos.
 
@@ -84,7 +84,7 @@ No disponible. Los resultados de búsqueda obtenidos no devuelven modelos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p4.gin
+- Modelo en Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p4.gin
 - Los resultados de búsqueda web no devolvieron enlaces relevantes sobre el modelo. Los únicos enlaces obtenidos fueron páginas generales sobre la corporación:
   - https://www.ibm.com/
   - https://www.ibm.com/fr-fr

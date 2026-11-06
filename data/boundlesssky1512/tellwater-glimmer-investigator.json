@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "boundlesssky1512/tellwater-glimmer-investigator",
+  "slug": "boundlesssky1512-tellwater-glimmer-investigator",
+  "author": "boundlesssky1512",
+  "url": "https://huggingface.co/boundlesssky1512/tellwater-glimmer-investigator",
+  "created_at": "2026-11-04T02:32:54.000Z",
+  "updated_at": "2026-11-04T10:28:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "muse-glimmer",
+    "tool-use",
+    "agent",
+    "distillation",
+    "wastewater",
+    "textiles",
+    "image-text-to-text",
+    "en",
+    "dataset:boundlesssky1512/tellwater-glimmer-training",
+    "base_model:meta-models/Muse-Glimmer-30B",
+    "base_model:adapter:meta-models/Muse-Glimmer-30B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 383494648,
+  "storage_human": "383 MB",
+  "base_model": "meta-models/Muse-Glimmer-30B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "boundlesssky1512/tellwater-glimmer-investigator · Hugging Face",
+      "url": "https://huggingface.co/boundlesssky1512/tellwater-glimmer-investigator",
+      "snippet": "Image-Text-to-Text model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Muse Glimmer 30B: An On-Device Agentic Model - ai.meta.com",
+      "url": "https://ai.meta.com/research/publications/muse-glimmer-30b-an-on-device-agentic-model/",
+      "snippet": "We introduce Muse Glimmer, an open-source 30B parameter causal language model with perception encoder, purpose-built for autonomous agentic tasks on consumer hardware. Muse Glimmer integrates multi-step reasoning, reliable tool use and failure recovery into a single model that runs locally on consumer devices without requiring cloud infrastructure."
+    }
+  ]
+}

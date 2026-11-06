@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ahd-9b-appworld es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-9B, publicado por el usuario metaevo-ai en HuggingFace. Se trata de un modelo de lenguaje de tipo causal con 9.653.104.368 parámetros totales (aproximadamente 9,65 mil millones), distribuido en pesos safetensors con un tamaño de repositorio de 20,1 GB, lo que es coherente con un almacenamiento en bfloat16. La licencia declarada es Apache-2.0 y el modelo se presenta como un fine-tune completo del checkpoint base, no como un modelo entrenado desde cero.
+ahd-9b-appworld es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-9B, publicado por el usuario metaevo-ai en Hugging Face. Se trata de un modelo de lenguaje de tipo causal con 9.653.104.368 parámetros totales (aproximadamente 9,65 mil millones), distribuido en pesos safetensors con un tamaño de repositorio de 20,1 GB, lo que es coherente con un almacenamiento en bfloat16. La licencia declarada es Apache-2.0 y el modelo se presenta como un fine-tune completo del checkpoint base, no como un modelo entrenado desde cero.
 
 El problema concreto que resuelve no está documentado en la model card. El identificador incluye el sufijo "appworld", que sugiere un ajuste orientado a tareas de agente sobre entornos de aplicaciones, aunque el autor no especifica el conjunto de datos, el procedimiento ni el objetivo de entrenamiento. La relevancia de esta ficha es, por tanto, limitada: el modelo se publicó el 12 de septiembre de 2026 y en el momento de la consulta acumula 0 descargas y 0 "likes", sin benchmarks publicados ni documentación técnica más allá de un ejemplo de uso con transformers y un comando de despliegue con vLLM.
 
@@ -70,11 +70,11 @@ La comparación es exclusivamente de especificaciones, ya que no existen benchma
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| metaevo-ai/ahd-9b-appworld | 9,65B | 65.536 tokens (configuración de despliegue, no confirmada como nativa) | Apache-2.0 | HuggingFace, safetensors (20,1 GB) |
-| Qwen/Qwen3.5-9B (modelo base) | No disponible | No disponible | No disponible en la información proporcionada | HuggingFace |
-| Qwen2.5-7B | ~7,6B | 128K tokens | Apache-2.0 | HuggingFace |
-| Llama-3.1-8B | ~8,0B | 128K tokens | Llama 3.1 Community License | HuggingFace |
-| Gemma-2-9B | ~9,2B | 8K tokens | Gemma Terms of Use | HuggingFace |
+| metaevo-ai/ahd-9b-appworld | 9,65B | 65.536 tokens (configuración de despliegue, no confirmada como nativa) | Apache-2.0 | Hugging Face, safetensors (20,1 GB) |
+| Qwen/Qwen3.5-9B (modelo base) | No disponible | No disponible | No disponible en la información proporcionada | Hugging Face |
+| Qwen2.5-7B | ~7,6B | 128K tokens | Apache-2.0 | Hugging Face |
+| Llama-3.1-8B | ~8,0B | 128K tokens | Llama 3.1 Community License | Hugging Face |
+| Gemma-2-9B | ~9,2B | 8K tokens | Gemma Terms of Use | Hugging Face |
 
 Nota: los datos de Qwen2.5-7B, Llama-3.1-8B y Gemma-2-9B proceden de su documentación pública y se incluyen únicamente como referencia de categoría (modelos densos de 7-9B parámetros). No implican ninguna comparación de calidad con ahd-9b-appworld, para el que no hay métricas.
 
@@ -93,7 +93,7 @@ Nota: los datos de Qwen2.5-7B, Llama-3.1-8B y Gemma-2-9B proceden de su document
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/metaevo-ai/ahd-9b-appworld
+- Modelo en Hugging Face: https://huggingface.co/metaevo-ai/ahd-9b-appworld
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Documentación de vLLM (referencia para las opciones `--enable-auto-tool-choice`, `--tool-call-parser` y `--max-model-len` usadas en la model card): https://docs.vllm.ai
 - Búsqueda web: no se han encontrado resultados relevantes. Los únicos enlaces devueltos por la búsqueda apuntan a transfermarkt.de (foros y fichas de fútbol) y no guardan ninguna relación con el modelo.

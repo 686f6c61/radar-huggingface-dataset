@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AndrewTorres/contrastive-alpha` es un repositorio experimental publicado en HuggingFace por el usuario AndrewTorres bajo licencia MIT. No es un modelo entrenado ni un checkpoint con rendimiento validado: la propia model card lo describe como una base de codigo («Hybrid for Contrastive») pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye `train.py` como artefacto principal, `config.json` con la configuracion de arquitectura, `training_args.json` con la receta por defecto y `model.safetensors` como checkpoint de inicializacion valido unicamente para pruebas de humo.
+`AndrewTorres/contrastive-alpha` es un repositorio experimental publicado en Hugging Face por el usuario AndrewTorres bajo licencia MIT. No es un modelo entrenado ni un checkpoint con rendimiento validado: la propia model card lo describe como una base de codigo («Hybrid for Contrastive») pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye `train.py` como artefacto principal, `config.json` con la configuracion de arquitectura, `training_args.json` con la receta por defecto y `model.safetensors` como checkpoint de inicializacion valido unicamente para pruebas de humo.
 
 La arquitectura declarada es de tipo hibrido, con atencion multi-query, fusion mediante concat MLP, activacion mish y normalizacion groupnorm. La model card etiqueta la escala como «huge», pero el recuento real de parametros del fichero safetensors es de 49.600 (aproximadamente 0,05 millones), es decir, un modelo diminuto; la discrepancia indica que «huge» es una etiqueta de configuracion interna y no una medida de tamano real. No se declara pipeline, ni idiomas soportados, ni longitud de contexto.
 
@@ -82,5 +82,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AndrewTorres/contrastive-alpha
+- Repositorio en Hugging Face: https://huggingface.co/AndrewTorres/contrastive-alpha
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las busquedas realizadas devolvieron exclusivamente paginas sobre el farmaco acido bempedoico (Nilemdo) y una lista de publicaciones de astrofisica de la NASA, sin relacion alguna con `AndrewTorres/contrastive-alpha`. No se dispone de paper, blog tecnico, repositorio de codigo adicional ni demo asociados.

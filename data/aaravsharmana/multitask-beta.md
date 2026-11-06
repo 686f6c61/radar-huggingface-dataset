@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aaravsharmana/multitask-beta` es un prototipo de investigación publicado en HuggingFace por el usuario aaravsharmana. Se trata de una implementación propia de un Vision Transformer (ViT) orientada a tareas múltiples (*multitask*), distribuida con licencia MIT y pensada como punto de partida experimental más que como modelo listo para producción. El repositorio incluye el script `finetune.py`, los ficheros de configuración `config.json` y `training_args.json`, y un checkpoint de inicialización en formato safetensors.
+`aaravsharmana/multitask-beta` es un prototipo de investigación publicado en Hugging Face por el usuario aaravsharmana. Se trata de una implementación propia de un Vision Transformer (ViT) orientada a tareas múltiples (*multitask*), distribuida con licencia MIT y pensada como punto de partida experimental más que como modelo listo para producción. El repositorio incluye el script `finetune.py`, los ficheros de configuración `config.json` y `training_args.json`, y un checkpoint de inicialización en formato safetensors.
 
 El dato más relevante para evaluar su utilidad práctica es su tamaño: 33.088 parámetros totales (aproximadamente 33 mil, no 33 mil millones). Es, por tanto, un modelo minúsculo incluso para los estándares de visión artificial ligera. La propia model card indica que el checkpoint no ha sido entrenado ni auditado, y que no se reclama ninguna métrica de rendimiento. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y ocupa 0,0 GB.
 
@@ -44,7 +44,7 @@ En cuanto al entrenamiento, el repositorio no documenta ninguna ejecución compl
 - Estudio de implementaciones de ViT con atención lineal: el código fuente permite examinar cómo se estructura una variante de Vision Transformer con fusión tensorial y activación ReLU, útil para investigadores que quieran comparar diseños alternativos frente a la atención cuadrática estándar.
 - Plantilla para experimentos de investigación en multitarea visual: partiendo de `training_args.json` y `finetune.py`, un equipo puede configurar su propio conjunto de datos y ejecutar un entrenamiento desde la inicialización proporcionada.
 - Pruebas de humo en pipelines de integración continua: al ocupar un espacio mínimo, el checkpoint permite validar que el código de carga de safetensors, la tokenización o preprocesado de imágenes y el *forward pass* funcionan antes de escalar a modelos mayores.
-- Docencia y formación: sirve como ejemplo mínimo de estructura de repositorio HuggingFace (config, training args, checkpoint, script de ajuste fino) para explicar el ciclo de vida de un modelo.
+- Docencia y formación: sirve como ejemplo mínimo de estructura de repositorio Hugging Face (config, training args, checkpoint, script de ajuste fino) para explicar el ciclo de vida de un modelo.
 - Referencia para auditorías de reproducibilidad: el autor recomienda fijar semillas, presupuesto de ajuste y exposición de datos idénticos para comparar líneas base, lo que convierte el repositorio en un punto de partida metodológico.
 - Base para benchmarks propios: quien entrene el modelo puede usar la guía de evaluación de la model card (conjunto de validación específico de tarea, al menos tres semillas y una línea base de capacidad comparable) para publicar resultados reproducibles.
 - No es adecuado para inferencia en producción, atención al cliente, generación de código ni ninguna aplicación que requiera predicciones fiables, dado que el checkpoint no está entrenado.
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU de consumo: sí, en cualquier modelo consumer, y también en dispositivos embebidos o entornos sin GPU.
 - Opciones de despliegue: al ser una implementación propia, las APIs genéricas de carga automática requieren un adaptador explícito. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que además están orientados a modelos de lenguaje, no a este tipo de ViT.
 - Latencia y throughput estimados: no disponibles. Dependerán del tamaño de la imagen de entrada, de la resolución y de la implementación concreta; con 33.088 parámetros la computación es trivial en comparación con cualquier ViT estándar.
-- Almacenamiento: el repositorio ocupa 0,0 GB según HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB según Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -90,6 +90,6 @@ Diferencias clave frente a cualquiera de estas alternativas: el modelo analizado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aaravsharmana/multitask-beta
+- Hugging Face: https://huggingface.co/aaravsharmana/multitask-beta
 - Ficheros incluidos en el repositorio: `finetune.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado enlaces relevantes en la búsqueda web: los resultados devueltos corresponden a páginas de soporte sobre Bluetooth en Windows y Android, sin relación alguna con el modelo. No se dispone de paper, blog, repositorio adicional ni demo asociados.

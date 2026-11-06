@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 ## Limitaciones y advertencias
 
 - Modelo de investigación: el autor lo etiqueta explícitamente como "(research)"; no hay evidencia de validación en producción ni de evaluación objetiva de calidad.
-- Cero descargas y cero likes en HuggingFace en la fecha de consulta: no existe comunidad que haya verificado su funcionamiento ni reportado fallos.
+- Cero descargas y cero likes en Hugging Face en la fecha de consulta: no existe comunidad que haya verificado su funcionamiento ni reportado fallos.
 - Sin benchmarks publicados: no se puede afirmar su calidad relativa frente al modelo base ni frente a alternativas comerciales.
 - Sesgos potenciales: al entrenarse solo con 34,4 horas de IndicTTS y transcripciones de un único sistema ASR (Sarvam `saaras:v4`), puede heredar sesgos de género, registro o dialecto del corpus y errores de transcripción del ASR.
 - Riesgo de alucinación acústica: como todo modelo generativo de audio, puede producir pronunciaciones incorrectas, repeticiones o artefactos en textos fuera del dominio de entrenamiento.
@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-telugu-chartok-indictts-sft-lr1e-6-2ep
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-telugu-chartok-indictts-sft-lr1e-6-2ep
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Dataset de referencia citado: https://huggingface.co/sw-voice/telugu-tts-indictts-sarvam-syspin
 - Repositorio de código citado: swamiji-tts, ruta `research/exp-iterations/08-qwen3-tts/experiments/06-te-char-tokens` (no se proporciona URL directa en la información disponible)

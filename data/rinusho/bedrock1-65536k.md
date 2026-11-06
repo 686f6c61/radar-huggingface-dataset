@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Al ser un tokenizer, no requiere VRAM para inferencia.
 - La tokenizacion puede ejecutarse en CPU sin necesidad de GPU.
 - No se requiere una GPU recomendada para su uso.
-- Opciones de despliegue: puede cargarse con la libreria `transformers` o `tokenizers` de HuggingFace, o convertirse a formatos como SentencePiece para su uso en llama.cpp o frameworks de entrenamiento personalizados.
+- Opciones de despliegue: puede cargarse con la libreria `transformers` o `tokenizers` de Hugging Face, o convertirse a formatos como SentencePiece para su uso en llama.cpp o frameworks de entrenamiento personalizados.
 - Latencia y throughput no disponibles; al ser un tokenizer, el rendimiento depende de la implementacion y del hardware de CPU.
 
 ## Comparativa con modelos similares
@@ -72,5 +72,5 @@ No se dispone de informacion sobre modelos comparables en los datos proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rinusho/Bedrock1-65536k
+- Hugging Face: https://huggingface.co/rinusho/Bedrock1-65536k
 - No se han encontrado otros enlaces relevantes en la busqueda web.

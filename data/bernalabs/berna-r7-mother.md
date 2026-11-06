@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Berna R7 - Mother es un modelo de lenguaje de 1.056.265.728 parámetros (1,06B) desarrollado por Berna Labs (Mohammed Kamil Muhammed) y alojado en HuggingFace bajo el identificador `BernaLabs/berna-r7-mother`. Se trata de un transformer decoder-only denso entrenado desde cero, con 28 capas, tamaño oculto de 1536, 16 cabezas de atención con GQA (4 cabezas KV), vocabulario BPE de 32.000 tokens y una ventana de contexto de 4096 tokens.
+Berna R7 - Mother es un modelo de lenguaje de 1.056.265.728 parámetros (1,06B) desarrollado por Berna Labs (Mohammed Kamil Muhammed) y alojado en Hugging Face bajo el identificador `BernaLabs/berna-r7-mother`. Se trata de un transformer decoder-only denso entrenado desde cero, con 28 capas, tamaño oculto de 1536, 16 cabezas de atención con GQA (4 cabezas KV), vocabulario BPE de 32.000 tokens y una ventana de contexto de 4096 tokens.
 
 Su singularidad no reside en el rendimiento, sino en la arquitectura que implementa: el "DNA-Kernel Plexus" (referido por el autor como Berna R5), una propuesta modular de red neuronal en crecimiento basada en células de conocimiento, un grafo dinámico (Plexus), un kernel genético de 100 cromosomas y un registro SQL con UUID. Berna R7 - Mother es, según su model card, la primera implementación a gran escala de ese marco y está orientado a investigación sobre aprendizaje continuo, no a despliegue en producción.
 
@@ -104,7 +104,7 @@ Las cifras de los modelos comparativos provienen de su documentación pública. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BernaLabs/berna-r7-mother
+- Hugging Face: https://huggingface.co/BernaLabs/berna-r7-mother
 - Repositorio GitHub: https://github.com/Berna-Labs/berna-r7
 - Licencia (Berna Research License v1.0): https://github.com/Berna-Labs/berna-r7/blob/main/LICENSE
 - Paper de la arquitectura DNA-Kernel Plexus (Zenodo, DOI 10.5281/zenodo.23015308): https://zenodo.org/records/23015308

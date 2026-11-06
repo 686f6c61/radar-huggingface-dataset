@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jwj32/ut-head-random-seed42-step60` es un checkpoint de aproximadamente 4.022 millones de parámetros publicado en HuggingFace por el usuario `jwj32`. La información disponible es mínima: no hay model card con descripción, no se declara pipeline de inferencia, licencia, idiomas soportados ni datos de entrenamiento. Los únicos metadatos fiables son el recuento real de parámetros extraído de los pesos en `safetensors` (4.022.468.096) y el tamaño del repositorio (32,2 GB), además de la etiqueta `qwen3`, que apunta a una arquitectura de la familia Qwen 3.
+`jwj32/ut-head-random-seed42-step60` es un checkpoint de aproximadamente 4.022 millones de parámetros publicado en Hugging Face por el usuario `jwj32`. La información disponible es mínima: no hay model card con descripción, no se declara pipeline de inferencia, licencia, idiomas soportados ni datos de entrenamiento. Los únicos metadatos fiables son el recuento real de parámetros extraído de los pesos en `safetensors` (4.022.468.096) y el tamaño del repositorio (32,2 GB), además de la etiqueta `qwen3`, que apunta a una arquitectura de la familia Qwen 3.
 
 El nombre del repositorio sugiere un artefacto de investigación más que un modelo listo para producción: la combinación `random-seed42-step60` es típica de un checkpoint intermedio de un entrenamiento (paso 60) con inicialización aleatoria fijada por semilla, y el sufijo `ut-head` indica que el objeto de estudio podría ser una cabeza concreta ("head") del modelo, posiblemente en un experimento de interpretabilidad o de dinámica de entrenamiento. No hay ninguna confirmación de esto en la información proporcionada.
 
@@ -95,5 +95,5 @@ La diferencia relevante no es de escala, sino de madurez: los tres modelos de re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jwj32/ut-head-random-seed42-step60
+- Repositorio en Hugging Face: https://huggingface.co/jwj32/ut-head-random-seed42-step60
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante. Las unicas URLs devueltas (bedlog.se y www.bedlog.com) corresponden a un sistema sueco de registro de camas hospitalarias y no guardan relacion con el modelo, su autoria ni su entrenamiento. Por tanto, no hay papers, blogs, repositorios de codigo ni demos que enlazar.

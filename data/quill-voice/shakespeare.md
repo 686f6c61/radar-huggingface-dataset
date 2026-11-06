@@ -75,10 +75,10 @@ Las estimaciones dependen de qué recuento de parámetros se considere correcto,
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| quill-voice/shakespeare | 333,5 M según safetensors (base declarada Qwen3-4B) | No disponible en la ficha | Apache 2.0 | HuggingFace, GGUF y safetensors | No disponible |
-| Qwen/Qwen3-4B (modelo base) | ~4.000 M | 32.768 nativos, 131.072 con YaRN según su documentación | Apache 2.0 | HuggingFace, múltiples cuantizaciones | No disponible en la información de esta búsqueda |
-| Llama-3.2-3B-Instruct | ~3.000 M | 128.000 | Licencia comunitaria de Llama 3.2 | HuggingFace, GGUF | No disponible en la información de esta búsqueda |
-| Gemma-3-4B-it | ~4.000 M | 128.000 | Términos de uso de Gemma | HuggingFace, GGUF | No disponible en la información de esta búsqueda |
+| quill-voice/shakespeare | 333,5 M según safetensors (base declarada Qwen3-4B) | No disponible en la ficha | Apache 2.0 | Hugging Face, GGUF y safetensors | No disponible |
+| Qwen/Qwen3-4B (modelo base) | ~4.000 M | 32.768 nativos, 131.072 con YaRN según su documentación | Apache 2.0 | Hugging Face, múltiples cuantizaciones | No disponible en la información de esta búsqueda |
+| Llama-3.2-3B-Instruct | ~3.000 M | 128.000 | Licencia comunitaria de Llama 3.2 | Hugging Face, GGUF | No disponible en la información de esta búsqueda |
+| Gemma-3-4B-it | ~4.000 M | 128.000 | Términos de uso de Gemma | Hugging Face, GGUF | No disponible en la información de esta búsqueda |
 
 No se dispone de resultados de benchmarks que permitan comparar el rendimiento real de este fine-tune frente a las alternativas. La comparativa anterior se limita a parámetros, contexto declarado, licencia y disponibilidad, y los datos de los tres modelos de referencia provienen de su documentación pública, no de la información recuperada en esta búsqueda.
 
@@ -97,9 +97,9 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/quill-voice/shakespeare
+- Modelo en Hugging Face: https://huggingface.co/quill-voice/shakespeare
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
-- Perfil del autor en HuggingFace: https://huggingface.co/QuillBytes
+- Perfil del autor en Hugging Face: https://huggingface.co/QuillBytes
 - Unsloth (herramienta de ajuste fino empleada): https://github.com/unslothai/unsloth
 - llama.cpp (runtime GGUF): https://github.com/ggml-org/llama.cpp
 - Ollama (despliegue recomendado por el autor): https://ollama.com

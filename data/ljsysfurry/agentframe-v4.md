@@ -93,7 +93,7 @@ No disponible. No se han identificado frameworks comparables con las mismas cara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ljsysfurry/AgentFrame-v4
-- Repositorio HuggingFace (versión anterior): https://huggingface.co/ljsysfurry/AgentFrame
-- Árbol de archivos en HuggingFace: https://huggingface.co/ljsysfurry/AgentFrame/tree/main
+- Repositorio Hugging Face: https://huggingface.co/ljsysfurry/AgentFrame-v4
+- Repositorio Hugging Face (versión anterior): https://huggingface.co/ljsysfurry/AgentFrame
+- Árbol de archivos en Hugging Face: https://huggingface.co/ljsysfurry/AgentFrame/tree/main
 - Proyecto relacionado en GitHub (no confirmado como el mismo): https://github.com/JunyanKang/agentframe/releases

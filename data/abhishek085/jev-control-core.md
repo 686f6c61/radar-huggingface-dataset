@@ -111,7 +111,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhishek085/jev-control-core
+- Modelo en Hugging Face: https://huggingface.co/abhishek085/jev-control-core
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Variante pequena de la familia: https://huggingface.co/abhishek085/jev-control-es
 - Modelo hermano spark-s1: https://huggingface.co/abhishek085/spark-s1-4b-v6

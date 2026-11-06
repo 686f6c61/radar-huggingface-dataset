@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Axilotal/cadquery-qwen2.5-7b-v5.3-hardened es un fine-tuning del modelo Qwen2.5-7B, desarrollado por Axilotal. Se ha entrenado con la librería Unsloth y la librería TRL de HuggingFace, lo que según el autor permitió un entrenamiento dos veces más rápido. El modelo está publicado bajo licencia Apache 2.0 y etiquetado como text-generation y conversational. El nombre sugiere que está orientado a tareas relacionadas con CadQuery, una librería de modelado CAD en Python, aunque la documentación disponible no lo confirma explícitamente. El modelo tiene 7.615.616.512 parámetros y el repositorio ocupa 15.2 GB, lo que corresponde a pesos en FP16. Es una iteración más del modelo base Axilotal/cadquery-qwen2.5-7b-v5.2-hardened.
+El modelo Axilotal/cadquery-qwen2.5-7b-v5.3-hardened es un fine-tuning del modelo Qwen2.5-7B, desarrollado por Axilotal. Se ha entrenado con la librería Unsloth y la librería TRL de Hugging Face, lo que según el autor permitió un entrenamiento dos veces más rápido. El modelo está publicado bajo licencia Apache 2.0 y etiquetado como text-generation y conversational. El nombre sugiere que está orientado a tareas relacionadas con CadQuery, una librería de modelado CAD en Python, aunque la documentación disponible no lo confirma explícitamente. El modelo tiene 7.615.616.512 parámetros y el repositorio ocupa 15.2 GB, lo que corresponde a pesos en FP16. Es una iteración más del modelo base Axilotal/cadquery-qwen2.5-7b-v5.2-hardened.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ El modelo Axilotal/cadquery-qwen2.5-7b-v5.3-hardened es un fine-tuning del model
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del modelo Qwen2.5-7B, que es un transformer decoder-only con 7.6 mil millones de parámetros. El proceso de entrenamiento se llevó a cabo con Unsloth, una librería que optimiza el fine-tuning de modelos grandes, y la librería TRL de HuggingFace. El modelo base es Axilotal/cadquery-qwen2.5-7b-v5.2-hardened, por lo que este modelo representa una iteración posterior en la misma línea de desarrollo. No se han proporcionado detalles sobre el dataset de entrenamiento, el número de tokens, la composición de los datos ni si se aplicaron técnicas como RLHF o DPO. Tampoco se documentan innovaciones arquitectónicas más allá del uso de Unsloth para acelerar el entrenamiento.
+El modelo es un fine-tuning del modelo Qwen2.5-7B, que es un transformer decoder-only con 7.6 mil millones de parámetros. El proceso de entrenamiento se llevó a cabo con Unsloth, una librería que optimiza el fine-tuning de modelos grandes, y la librería TRL de Hugging Face. El modelo base es Axilotal/cadquery-qwen2.5-7b-v5.2-hardened, por lo que este modelo representa una iteración posterior en la misma línea de desarrollo. No se han proporcionado detalles sobre el dataset de entrenamiento, el número de tokens, la composición de los datos ni si se aplicaron técnicas como RLHF o DPO. Tampoco se documentan innovaciones arquitectónicas más allá del uso de Unsloth para acelerar el entrenamiento.
 
 ## Capacidades
 
@@ -65,10 +65,10 @@ No se dispone de información suficiente para realizar una comparativa con otros
 - Limitaciones de idioma: el modelo solo está etiquetado para inglés, por lo que su rendimiento en otros idiomas probablemente sea limitado.
 - Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, pero se recomienda revisar la licencia del modelo base Qwen2.5-7B para confirmar las condiciones.
 - Caveat importante: el modelo no tiene documentación técnica detallada ni benchmarks publicados. Debe evaluarse exhaustivamente antes de usarse en entornos de producción.
-- El modelo no tiene descargas ni likes en HuggingFace, lo que indica que es un modelo nuevo y sin validación externa.
+- El modelo no tiene descargas ni likes en Hugging Face, lo que indica que es un modelo nuevo y sin validación externa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Axilotal/cadquery-qwen2.5-7b-v5.3-hardened
+- Hugging Face: https://huggingface.co/Axilotal/cadquery-qwen2.5-7b-v5.3-hardened
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL: https://github.com/huggingface/trl

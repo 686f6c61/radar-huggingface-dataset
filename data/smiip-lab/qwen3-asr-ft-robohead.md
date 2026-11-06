@@ -89,7 +89,7 @@ La comparación directa solo es posible con el modelo base, ya que no se han pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SMIIP-lab/Qwen3-ASR-FT-robohead
+- Modelo en Hugging Face: https://huggingface.co/SMIIP-lab/Qwen3-ASR-FT-robohead
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Repositorio oficial de Qwen3-ASR: https://github.com/QwenLM/Qwen3-ASR
 - No se han encontrado enlaces adicionales a papers, blogs o demos en la información proporcionada.

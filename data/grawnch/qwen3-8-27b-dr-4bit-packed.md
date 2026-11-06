@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-DR-4bit-Packed es un checkpoint cuantizado a 4 bits del modelo base Qwen/Qwen3.8-27B, publicado por el usuario Grawnch en HuggingFace. Se trata de una cuantización de tipo DR (una variante propietaria del autor, presumiblemente basada en GPTQ con corrección por capas) que empaqueta los pesos enteros de 4 bits (`qweight`) junto con escalas de grupo en FP16 (`scales`) en un único fichero `.safetensors` de 14,1 GB, lo que supone una anchura efectiva de 4,17 bits por peso frente a los 16 bits y 55,5 GB del modelo original.
+Qwen3.8-27B-DR-4bit-Packed es un checkpoint cuantizado a 4 bits del modelo base Qwen/Qwen3.8-27B, publicado por el usuario Grawnch en Hugging Face. Se trata de una cuantización de tipo DR (una variante propietaria del autor, presumiblemente basada en GPTQ con corrección por capas) que empaqueta los pesos enteros de 4 bits (`qweight`) junto con escalas de grupo en FP16 (`scales`) en un único fichero `.safetensors` de 14,1 GB, lo que supone una anchura efectiva de 4,17 bits por peso frente a los 16 bits y 55,5 GB del modelo original.
 
 El interés de esta ficha radica en que el autor publica métricas de degradación frente al baseline de 16 bits: reducción del 50% en el error cuadrático medio por capa respecto a GPTQ estándar, perplejidad prácticamente idéntica (2,509 frente a 2,518) y una caída mínima en tareas de código (HumanEval+ idéntico al 90,85%, MBPP+ baja de 84,66% a 83,07%). El paquete incluye un cargador propio (`dr_loader`) con modo de inferencia de baja VRAM que mantiene los pesos comprimidos en la GPU.
 
@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, GSM8K, etc.) en 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-DR-4bit-Packed (este) | 27B | no disponible | 4 bits empaquetado (4,17 bpw) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-27B (baseline) | 27B | no disponible | 16 bits (bfloat16) | Apache 2.0 (segun modelo base) | HuggingFace |
-| Grawnch/Qwen3.8-27B-DR-4bit (pre-desempaquetado) | 27B | no disponible | 4 bits reconstruido a bfloat16 | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B-DR-4bit-Packed (este) | 27B | no disponible | 4 bits empaquetado (4,17 bpw) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-27B (baseline) | 27B | no disponible | 16 bits (bfloat16) | Apache 2.0 (segun modelo base) | Hugging Face |
+| Grawnch/Qwen3.8-27B-DR-4bit (pre-desempaquetado) | 27B | no disponible | 4 bits reconstruido a bfloat16 | Apache 2.0 | Hugging Face |
 | GPTQ estandar sobre el mismo base | 27B | no disponible | 4 bits | Apache 2.0 | Referencia en la model card, sin enlace |
 
 No se dispone de datos de rendimiento de alternativas comparables en la información proporcionada, más allá de la comparación interna frente a GPTQ estándar publicada por el autor.

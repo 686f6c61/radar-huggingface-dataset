@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Y6s/y6s es un repositorio alojado en HuggingFace por el usuario Y6s. La informacion disponible se limita a los metadatos del repositorio y a una model card que unicamente contiene la declaracion de licencia `apache-2.0`. No se describe en ningun momento que tipo de modelo es, quien lo ha entrenado, sobre que datos, con que arquitectura ni para que tarea esta pensado. No hay pipeline declarado, no hay idiomas declarados y no hay ficheros de pesos publicados.
+Y6s/y6s es un repositorio alojado en Hugging Face por el usuario Y6s. La informacion disponible se limita a los metadatos del repositorio y a una model card que unicamente contiene la declaracion de licencia `apache-2.0`. No se describe en ningun momento que tipo de modelo es, quien lo ha entrenado, sobre que datos, con que arquitectura ni para que tarea esta pensado. No hay pipeline declarado, no hay idiomas declarados y no hay ficheros de pesos publicados.
 
 El repositorio fue creado el 13 de septiembre de 2026 y actualizado dos minutos mas tarde, ocupa 0.0 GB, acumula 0 descargas y 0 likes. El unico tag adicional es `region:us`. Este perfil de metadatos es compatible con un repositorio vacio, una prueba de publicacion o una reserva de nombre, y no permite afirmar que exista un modelo funcional detras.
 
@@ -74,7 +74,7 @@ No disponible. No se puede establecer una categoria de comparacion (mismo tamano
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Y6s/y6s
+- Hugging Face: https://huggingface.co/Y6s/y6s
 - Paper: no disponible
 - Blog o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

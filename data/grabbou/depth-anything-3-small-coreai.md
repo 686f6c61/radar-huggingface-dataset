@@ -6,7 +6,7 @@ Depth Anything 3 small para Core AI es una conversión del modelo de estimación
 
 El interés de esta ficha radica en que se trata de un artefacto de despliegue, no de un modelo nuevo: empaqueta un modelo compacto de 35M de parámetros en un archivo `.aimodel` de 101 MB, listo para integrarse en aplicaciones mediante el runtime Core AI de Apple y el paquete `@react-native-ai/core-ai`. Es relevante para desarrolladores de aplicaciones móviles que necesiten percepción de profundidad en el dispositivo con latencia baja y sin conexión.
 
-La información disponible sobre el modelo es escasa y se limita a la model card del repositorio y a los metadatos de HuggingFace. No se documentan aquí los detalles de entrenamiento del modelo base, sus benchmarks ni sus capacidades multilingües, por lo que esos apartados se marcan como no disponibles.
+La información disponible sobre el modelo es escasa y se limita a la model card del repositorio y a los metadatos de Hugging Face. No se documentan aquí los detalles de entrenamiento del modelo base, sus benchmarks ni sus capacidades multilingües, por lo que esos apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/grabbou/depth-anything-3-small-CoreAI
+- Repositorio Hugging Face: https://huggingface.co/grabbou/depth-anything-3-small-CoreAI
 - Modelo base: https://huggingface.co/depth-anything/da3-small
 - Receta de exportación de Apple: https://github.com/apple/coreai-models/tree/main/models/depth-anything
 - Repositorio oficial de Depth Anything 3: https://github.com/ByteDance-Seed/Depth-Anything-3

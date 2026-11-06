@@ -93,7 +93,7 @@ No se dispone de informacion sobre modelos de terceros comparables en la documen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lernex/Metis-1.6-Praxis-MLX-8bit
+- Repositorio Hugging Face: https://huggingface.co/Lernex/Metis-1.6-Praxis-MLX-8bit
 - Modelo base BF16: https://huggingface.co/Lernex/Metis-1.6-Praxis
 - Version MLX 4-bit: https://huggingface.co/Lernex/Metis-1.6-Praxis-MLX-4bit
 - Version GGUF (llama.cpp, Ollama, LM Studio): https://huggingface.co/Lernex/Metis-1.6-Praxis-GGUF

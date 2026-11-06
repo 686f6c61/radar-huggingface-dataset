@@ -92,10 +92,10 @@ La comparativa se ofrece como referencia general de modelos de tamano equivalent
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kanha-minicpm5-1b-grounded-conservative-3ep-20260910 | 1,08 B | 4096 (entrenamiento) | no disponible | pesos safetensors en HuggingFace |
-| openbmb/MiniCPM5-1B (modelo base) | ~1 B | no disponible | no disponible | HuggingFace |
-| Llama 3.2 1B | 1,24 B | 128 K | Llama 3.2 Community License | HuggingFace |
-| Qwen2.5-1.5B | 1,54 B | 32 K | Apache 2.0 | HuggingFace |
+| kanha-minicpm5-1b-grounded-conservative-3ep-20260910 | 1,08 B | 4096 (entrenamiento) | no disponible | pesos safetensors en Hugging Face |
+| openbmb/MiniCPM5-1B (modelo base) | ~1 B | no disponible | no disponible | Hugging Face |
+| Llama 3.2 1B | 1,24 B | 128 K | Llama 3.2 Community License | Hugging Face |
+| Qwen2.5-1.5B | 1,54 B | 32 K | Apache 2.0 | Hugging Face |
 
 Nota: los datos de los modelos de referencia corresponden a informacion publica general; deben verificarse en sus fichas oficiales antes de tomar decisiones.
 
@@ -115,7 +115,7 @@ Nota: los datos de los modelos de referencia corresponden a informacion publica 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kanha-AI/kanha-minicpm5-1b-grounded-conservative-3ep-20260910
+- Modelo en Hugging Face: https://huggingface.co/Kanha-AI/kanha-minicpm5-1b-grounded-conservative-3ep-20260910
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-1B
 - Sitio del autor: https://kanha.ai
 - La busqueda web no ha devuelto enlaces relevantes sobre este modelo; los resultados obtenidos corresponden a otros temas y no se incluyen.

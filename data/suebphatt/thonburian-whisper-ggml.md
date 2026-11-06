@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El RE
 | Modelo | Formato | Idioma | Tamano/parametros | Licencia |
 |---|---|---|---|---|
 | suebphatt/thonburian-whisper-ggml (este repo) | GGML Q5_0 | Tailandes | 539 MB (medium) / 1,03 GB (large-v3) | Apache-2.0 |
-| biodatlab/whisper-th-large-v3-combined | Safetensors (HuggingFace) | Tailandes | No disponible | Apache-2.0 |
-| biodatlab/whisper-th-medium-combined | Safetensors (HuggingFace) | Tailandes | No disponible | Apache-2.0 |
+| biodatlab/whisper-th-large-v3-combined | Safetensors (Hugging Face) | Tailandes | No disponible | Apache-2.0 |
+| biodatlab/whisper-th-medium-combined | Safetensors (Hugging Face) | Tailandes | No disponible | Apache-2.0 |
 | openai/whisper-large-v3 | Safetensors | Multilingue | No disponible | Apache-2.0 |
 | openai/whisper-medium | Safetensors | Multilingue | No disponible | Apache-2.0 |
 
@@ -87,7 +87,7 @@ La diferencia principal frente a los modelos de BiodatLab es el formato: este re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/suebphatt/thonburian-whisper-ggml
+- Repositorio en Hugging Face: https://huggingface.co/suebphatt/thonburian-whisper-ggml
 - Proyecto Thonburian Whisper (BiodatLab): https://github.com/biodatlab/thonburian-whisper
 - Modelo base large-v3: https://huggingface.co/biodatlab/whisper-th-large-v3-combined
 - Modelo base medium: https://huggingface.co/biodatlab/whisper-th-medium-combined

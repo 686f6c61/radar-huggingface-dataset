@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Holo4-35B-A3B-MLX es un paquete de cuantizaciones en formato MLX del modelo Hcompany/Holo4-35B-A3B, un modelo de lenguaje y vision (vision-language model) con arquitectura de mezcla de expertos (MoE) de 35.000 millones de parametros totales y aproximadamente 3.000 millones activos por token. El modelo base lo desarrolla H Company, mientras que esta version cuantizada la publica el usuario abenzerps en HuggingFace.
+Holo4-35B-A3B-MLX es un paquete de cuantizaciones en formato MLX del modelo Hcompany/Holo4-35B-A3B, un modelo de lenguaje y vision (vision-language model) con arquitectura de mezcla de expertos (MoE) de 35.000 millones de parametros totales y aproximadamente 3.000 millones activos por token. El modelo base lo desarrolla H Company, mientras que esta version cuantizada la publica el usuario abenzerps en Hugging Face.
 
 El proposito declarado del modelo base es el uso de ordenador por parte de agentes (computer use), el trabajo guiado por herramientas y los flujos de trabajo agenticos. Se distribuye bajo licencia Apache 2.0 y esta pensado para ejecutarse en Apple Silicon mediante la libreria MLX (mlx-lm / mlx-vlm), lo que lo hace relevante para desarrolladores que quieren desplegar un VLM agentico en hardware local de Apple sin depender de GPUs dedicadas.
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abenzerps/Holo4-35B-A3B-MLX
+- Repositorio Hugging Face: https://huggingface.co/abenzerps/Holo4-35B-A3B-MLX
 - Modelo base: https://huggingface.co/Hcompany/Holo4-35B-A3B
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Checksums del repositorio: https://huggingface.co/abenzerps/Holo4-35B-A3B-MLX/blob/main/SHA256SUMS

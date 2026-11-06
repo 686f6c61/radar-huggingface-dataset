@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nemotron-3.5-Embed-1B-mlx-8bit es una cuantización de 8 bits del modelo de embeddings nvidia/Nemotron-3.5-Embed-1B-BF16, publicada por el usuario caslca (Premisa) en HuggingFace. El modelo original es un bi-encoder multimodal de NVIDIA diseñado para recuperación densa (retrieval) sobre texto e imágenes de páginas de documento, pensado para pipelines RAG: recibe una consulta o un pasaje —texto o imagen— y devuelve un vector de embedding fijo de 2048 dimensiones.
+Nemotron-3.5-Embed-1B-mlx-8bit es una cuantización de 8 bits del modelo de embeddings nvidia/Nemotron-3.5-Embed-1B-BF16, publicada por el usuario caslca (Premisa) en Hugging Face. El modelo original es un bi-encoder multimodal de NVIDIA diseñado para recuperación densa (retrieval) sobre texto e imágenes de páginas de documento, pensado para pipelines RAG: recibe una consulta o un pasaje —texto o imagen— y devuelve un vector de embedding fijo de 2048 dimensiones.
 
 Esta variante no reentrena ni modifica el modelo: aplica cuantización entera afín de 8 bits (modo `affine`, group size 64) sobre los pesos lineales del componente de lenguaje, generada con MLX. La torre de visión queda fuera del uso para embeddings puramente textuales, de modo que esta versión está orientada a recuperación de texto. Con 1.140.918.272 parámetros y un repositorio de 1,2 GB, está pensada para ejecutarse en hardware Apple Silicon mediante la librería MLX, reduciendo el coste de memoria frente a los pesos BF16 originales.
 
@@ -98,7 +98,7 @@ No se han publicado resultados de benchmarks adicionales en la información disp
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/caslca/Nemotron-3.5-Embed-1B-mlx-8bit
+- Modelo cuantizado en Hugging Face: https://huggingface.co/caslca/Nemotron-3.5-Embed-1B-mlx-8bit
 - Modelo fuente: https://huggingface.co/nvidia/Nemotron-3.5-Embed-1B-BF16
 - Nemotron-3.5-Embed-8B-BF16 (misma familia): https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16
 - Ficha en NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3_5-embed-1b

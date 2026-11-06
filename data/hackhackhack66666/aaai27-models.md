@@ -70,6 +70,6 @@ No disponible. Este repositorio no es un modelo monolítico comparable con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hackhackhack66666/aaai27-models
+- Repositorio Hugging Face: https://huggingface.co/hackhackhack66666/aaai27-models
 - Repositorio de datasets: https://huggingface.co/hackhackhack66666/aaai-datasets (mencionado en la model card, no verificado en la búsqueda)
 - Código upstream OAT: https://github.com/Chaoqi-LIU/oat (referenciado, no verificado en la búsqueda)

@@ -100,9 +100,9 @@ Comparativa frente a alternativas de cuantizacion de la misma base y tamano:
 
 | Modelo | Parametros | Contexto | Perplejidad (WikiText-2) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DASH-Q (esta ficha) | 23,6 B | no disponible | 5,48-6,66 segun variante | Apache 2.0 | GGUF en HuggingFace |
+| DASH-Q (esta ficha) | 23,6 B | no disponible | 5,48-6,66 segun variante | Apache 2.0 | GGUF en Hugging Face |
 | llama.cpp IQ2/Q2_K con imatrix | 23,6 B | no disponible | 6,35-19,86 | Apache 2.0 | GGUF en llama.cpp |
-| unsloth UD-IQ2/UD-Q2_K_XL | 23,6 B | no disponible | 6,08-19,69 | Apache 2.0 | GGUF en HuggingFace |
+| unsloth UD-IQ2/UD-Q2_K_XL | 23,6 B | no disponible | 6,08-19,69 | Apache 2.0 | GGUF en Hugging Face |
 
 No se dispone de comparativas frente a otros modelos de ~24 B de la misma categoria de tareas en la informacion proporcionada.
 
@@ -120,7 +120,7 @@ No se dispone de comparativas frente a otros modelos de ~24 B de la misma catego
 
 ## Enlaces
 
-- HuggingFace (esta cuantizacion): https://huggingface.co/jkim96/Devstral-Small-2505-DASHQ-Q2-GGUF
+- Hugging Face (esta cuantizacion): https://huggingface.co/jkim96/Devstral-Small-2505-DASHQ-Q2-GGUF
 - Modelo base: https://huggingface.co/mistralai/Devstral-Small-2505
 - Repositorio DASH-Q: https://github.com/JaeminK/dashq
 - Imagen de cabecera DASH-Q: https://raw.githubusercontent.com/JaeminK/dashq/main/assets/dashq_banner.png

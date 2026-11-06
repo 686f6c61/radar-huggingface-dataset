@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`nxp/visual-wake-word-imx` es un repositorio de modelo publicado en HuggingFace por NXP Semiconductors, fabricante neerlandés de semiconductores con sede en Eindhoven y actividad destacada en automoción, IoT industrial y electrónica de consumo. El identificador del repositorio sugiere un modelo de "visual wake word" (detección visual de activación, es decir, un clasificador binario del tipo "hay una persona delante / no la hay") orientado a la familia de procesadores de aplicación i.MX de la propia NXP. Esta interpretación se deduce del nombre del repositorio y no está confirmada por el autor, ya que la model card publicada está vacía.
+`nxp/visual-wake-word-imx` es un repositorio de modelo publicado en Hugging Face por NXP Semiconductors, fabricante neerlandés de semiconductores con sede en Eindhoven y actividad destacada en automoción, IoT industrial y electrónica de consumo. El identificador del repositorio sugiere un modelo de "visual wake word" (detección visual de activación, es decir, un clasificador binario del tipo "hay una persona delante / no la hay") orientado a la familia de procesadores de aplicación i.MX de la propia NXP. Esta interpretación se deduce del nombre del repositorio y no está confirmada por el autor, ya que la model card publicada está vacía.
 
-La información verificable disponible es mínima: licencia Apache 2.0, etiqueta de región `us`, cero descargas y cero "likes" en el momento de la consulta, y fechas de creación y actualización idénticas (2026-10-01), lo que indica que el repositorio no ha recibido mantenimiento posterior a su publicación. No se declara pipeline de HuggingFace, idiomas soportados, arquitectura, número de parámetros ni longitud de contexto.
+La información verificable disponible es mínima: licencia Apache 2.0, etiqueta de región `us`, cero descargas y cero "likes" en el momento de la consulta, y fechas de creación y actualización idénticas (2026-10-01), lo que indica que el repositorio no ha recibido mantenimiento posterior a su publicación. No se declara pipeline de Hugging Face, idiomas soportados, arquitectura, número de parámetros ni longitud de contexto.
 
 Por tanto, esta ficha es deliberadamente conservadora: documenta lo que el autor declara de forma explícita y marca como "no disponible" todo lo demás. Es relevante ahora únicamente como posible pieza de una cadena de herramientas de visión embebida sobre i.MX, pero no puede evaluarse técnicamente sin documentación adicional del autor.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nxp/visual-wake-word-imx | no disponible | no aplicable | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
+| nxp/visual-wake-word-imx | no disponible | no aplicable | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
 | MobileNetV1/V2 (referencia habitual en visual wake words) | 0,2-3,5 M según variante | no aplicable | benchmarks públicos en el dataset VWW de Chowdhery et al. | Apache 2.0 | TF/Keras, TF Hub |
 | MCUNet / TinyML person detection | del orden de decenas de miles de parámetros | no aplicable | benchmarks públicos en MLPerf Tiny | varía según versión | repositorios académicos |
 
@@ -85,7 +85,7 @@ La comparativa no puede completarse con cifras del modelo de NXP porque el autor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nxp/visual-wake-word-imx
+- Modelo en Hugging Face: https://huggingface.co/nxp/visual-wake-word-imx
 - NXP Semiconductors (sitio corporativo): https://www.nxp.com/
 - Catálogo de productos de NXP: https://www.nxp.com/products:PCPRODCAT
 - NXP Semiconductors en Wikipedia: https://en.wikipedia.org/wiki/NXP_Semiconductors

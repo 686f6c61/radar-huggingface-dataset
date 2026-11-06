@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nikolayini83/generation-colab` es un prototipo de investigación de arquitectura **Mixer** orientado a tareas de generación, publicado por el usuario nikolayini83 en HuggingFace. Se trata de un experimento académico que documenta una implementación personalizada de un bloque Mixer con atención dilatada, fusión gated, activación mish y normalización por lotes. El repositorio incluye un checkpoint de inicialización en formato safetensors con 49.600 parámetros, pero este checkpoint **no ha sido entrenado** y no se presentan métricas de rendimiento.
+El modelo `nikolayini83/generation-colab` es un prototipo de investigación de arquitectura **Mixer** orientado a tareas de generación, publicado por el usuario nikolayini83 en Hugging Face. Se trata de un experimento académico que documenta una implementación personalizada de un bloque Mixer con atención dilatada, fusión gated, activación mish y normalización por lotes. El repositorio incluye un checkpoint de inicialización en formato safetensors con 49.600 parámetros, pero este checkpoint **no ha sido entrenado** y no se presentan métricas de rendimiento.
 
 La relevancia de este modelo es exclusivamente metodológica: sirve como punto de partida para investigar arquitecturas alternativas al transformer estándar, especialmente en el contexto de generación de secuencias. No está pensado para uso práctico ni productivo, y su tamaño minúsculo (menos de 50 mil parámetros) lo sitúa en el ámbito de pruebas de concepto y validación de implementaciones.
 
@@ -71,4 +71,4 @@ No disponible. No se conocen modelos comparables en la misma categoría, ya que 
 
 ## Enlaces
 
-- [HuggingFace - nikolayini83/generation-colab](https://huggingface.co/nikolayini83/generation-colab)
+- [Hugging Face - nikolayini83/generation-colab](https://huggingface.co/nikolayini83/generation-colab)

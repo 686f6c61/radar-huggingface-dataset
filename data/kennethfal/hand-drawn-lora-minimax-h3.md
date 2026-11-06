@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KennethFal/hand-drawn-lora-minimax-h3 es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario KennethFal, cuyo modelo base declarado es MiniMaxAI/MiniMax-H3. Segun los metadatos de la model card, se trata de un adaptador (`base_model_relation: adapter`) distribuido bajo la MiniMax H3 Community License, la misma licencia que cubre al modelo base. El repositorio ocupa 0,3 GB, un tamano coherente con pesos de adaptador y no con un modelo completo, y en el momento de la consulta acumula 0 descargas y 0 likes, por lo que no existe evidencia publica de adopcion ni de validacion por parte de terceros.
+KennethFal/hand-drawn-lora-minimax-h3 es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario KennethFal, cuyo modelo base declarado es MiniMaxAI/MiniMax-H3. Segun los metadatos de la model card, se trata de un adaptador (`base_model_relation: adapter`) distribuido bajo la MiniMax H3 Community License, la misma licencia que cubre al modelo base. El repositorio ocupa 0,3 GB, un tamano coherente con pesos de adaptador y no con un modelo completo, y en el momento de la consulta acumula 0 descargas y 0 likes, por lo que no existe evidencia publica de adopcion ni de validacion por parte de terceros.
 
 La model card publicada es extremadamente escueta: se limita a declarar la relacion con el modelo base, la licencia aplicable y el hecho de que el adaptador se sirve a traves de un endpoint de fal. No especifica idiomas, pipeline, dataset de entrenamiento, hiperparametros, rango del LoRA ni resultados de evaluacion. El nombre del repositorio ("hand-drawn") sugiere un ajuste orientado a un estilo de dibujo a mano, pero esa interpretacion no esta confirmada en la informacion disponible y no debe tomarse como un hecho verificado.
 
@@ -18,7 +18,7 @@ Su relevancia actual es limitada y fundamentalmente informativa: sirve como ejem
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | minimax-h3-community-license (etiquetada como `license: other` en HuggingFace) |
+| Licencia | minimax-h3-community-license (etiquetada como `license: other` en Hugging Face) |
 | Formato de pesos | no disponible (el repositorio ocupa 0,3 GB; no se detalla si son safetensors, GGUF u otro formato) |
 
 Datos adicionales de metadatos: autor KennethFal; creado el 2026-09-16T19:33:23Z; actualizado el 2026-09-16T19:33:29Z; 0 descargas; 0 likes; region declarada `us`; pipeline no disponible.
@@ -84,7 +84,7 @@ No disponible. No se conocen, a partir de la informacion proporcionada, adaptado
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/KennethFal/hand-drawn-lora-minimax-h3
+- Pagina del modelo en Hugging Face: https://huggingface.co/KennethFal/hand-drawn-lora-minimax-h3
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Texto de la licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 

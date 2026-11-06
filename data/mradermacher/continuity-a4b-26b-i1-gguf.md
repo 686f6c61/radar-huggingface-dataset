@@ -27,7 +27,7 @@ La relevancia de esta ficha concreta radica en que el repositorio es la version 
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible confirma que se trata de un modelo MoE resultado de un merge de LoRA sobre una base no especificada, y que fue convertido a GGUF a partir de pesos HuggingFace en formato bf16. No se detallan el numero de expertos, el numero de expertos activos por token, la estrategia de enrutado, el tipo de atencion ni la profundidad de la red. Tampoco se especifica la composicion del dataset de entrenamiento, el numero de tokens vistos ni si hubo fases de RLHF, DPO o ajuste por preferencias.
+La informacion disponible confirma que se trata de un modelo MoE resultado de un merge de LoRA sobre una base no especificada, y que fue convertido a GGUF a partir de pesos Hugging Face en formato bf16. No se detallan el numero de expertos, el numero de expertos activos por token, la estrategia de enrutado, el tipo de atencion ni la profundidad de la red. Tampoco se especifica la composicion del dataset de entrenamiento, el numero de tokens vistos ni si hubo fases de RLHF, DPO o ajuste por preferencias.
 
 La innovacion practica que si puede confirmarse es doble. Por un lado, el modelo esta afinado para extraccion estructurada y generacion restringida por esquema, una capacidad que en la practica exige un post-procesado minimo cuando se integra en pipelines de datos. Por otro, las cuantizaciones publicadas en este repositorio son de tipo imatrix (importance matrix), generadas con una matriz de calibracion que reduce la perdida de perplejidad en cuantizaciones agresivas; el autor incluye tambien el fichero imatrix de 0,2 GB para quien quiera generar sus propias cuantizaciones.
 

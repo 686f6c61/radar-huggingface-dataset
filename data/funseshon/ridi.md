@@ -70,7 +70,7 @@ No se dispone de información para comparar con modelos similares. Al tratarse d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/funseshon/ridi
+- Hugging Face: https://huggingface.co/funseshon/ridi
 - GitHub del autor: https://github.com/funseshon
 - Modelo base (inferido de la model card): https://huggingface.co/krea/Krea-2-Raw
 - Modelo Turbo (inferido de la model card): https://huggingface.co/krea/Krea-2-Turbo

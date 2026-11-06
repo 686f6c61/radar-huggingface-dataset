@@ -35,7 +35,7 @@ No es posible enumerar capacidades concretas del modelo por ausencia de informac
 - Capacidades multilingues en prompts
 - Cualquier funcionalidad adicional (inpainting, controlnet, etc.)
 
-Se recomienda consultar el repositorio en HuggingFace para comprobar si se han publicado actualizaciones posteriores con archivos y documentacion.
+Se recomienda consultar el repositorio en Hugging Face para comprobar si se han publicado actualizaciones posteriores con archivos y documentacion.
 
 ## Casos de uso
 

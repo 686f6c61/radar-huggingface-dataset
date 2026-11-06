@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Stage-jh-monitor/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k-epoch4` es un checkpoint de 4,54 mil millones de parametros publicado en HuggingFace por el usuario `Stage-jh-monitor` el 15 de septiembre de 2026. Segun la informacion de entrenamiento incluida en su model card, se trata de un ajuste por aprendizaje por refuerzo (RL) sobre el modelo base `Qwen/Qwen3.5-4B`, entrenado sobre el dataset `Stage-org/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k`. El repositorio contiene unicamente pesos en formato safetensors (9,1 GB) y no incluye pipeline declarado, licencia, idiomas soportados ni resultados de evaluacion.
+`Stage-jh-monitor/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k-epoch4` es un checkpoint de 4,54 mil millones de parametros publicado en Hugging Face por el usuario `Stage-jh-monitor` el 15 de septiembre de 2026. Segun la informacion de entrenamiento incluida en su model card, se trata de un ajuste por aprendizaje por refuerzo (RL) sobre el modelo base `Qwen/Qwen3.5-4B`, entrenado sobre el dataset `Stage-org/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k`. El repositorio contiene unicamente pesos en formato safetensors (9,1 GB) y no incluye pipeline declarado, licencia, idiomas soportados ni resultados de evaluacion.
 
 El modelo no es un lanzamiento de proposito general: es el artefacto resultante de un flujo de trabajo interno de entrenamiento (identificado como `jh-workflow`) orientado a mejorar la resolucion de tareas filtradas por solubilidad, con generacion en modo *thinking* y un juez externo basado en API para puntuar las respuestas. Su relevancia es, por tanto, principalmente experimental y de investigacion: permite reproducir un pipeline de RL con `prime_rl`/vLLM, inspeccionar el efecto del filtrado por solubilidad en un modelo de 4B y auditar el comportamiento de un ajuste RL de 10.000 pasos sobre tres epocas.
 
@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento ni de contexto oficial de este checkpoint,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k-epoch4 | 4,54 mil millones | no disponible (config: 65536 en inferencia) | no disponible | safetensors en HuggingFace | no disponible |
+| qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k-epoch4 | 4,54 mil millones | no disponible (config: 65536 en inferencia) | no disponible | safetensors en Hugging Face | no disponible |
 | Qwen/Qwen3.5-4B (modelo base citado) | no disponible | no disponible | no disponible | no verificado en la informacion | no disponible |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento ni de contexto oficial de este checkpoint,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-jh-monitor/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k-epoch4
+- Modelo en Hugging Face: https://huggingface.co/Stage-jh-monitor/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k-epoch4
 - Dataset de entrenamiento citado: https://huggingface.co/datasets/Stage-org/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k
 - Modelo base citado: https://huggingface.co/Qwen/Qwen3.5-4B
 - Perfil del autor: https://huggingface.co/Stage-jh-monitor

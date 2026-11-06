@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-critic-categorical-20261009-checkpoints | Base Qwen3-4B (no detallado) | No disponible | Crítico de valor (checkpoints FSDP) | Apache 2.0 | HuggingFace, repo de 67,5 GB |
-| Qwen/Qwen3-4B-Base | ~4B | No disponible en esta ficha | Modelo causal de lenguaje | Apache 2.0 | HuggingFace |
+| qwen3-critic-categorical-20261009-checkpoints | Base Qwen3-4B (no detallado) | No disponible | Crítico de valor (checkpoints FSDP) | Apache 2.0 | Hugging Face, repo de 67,5 GB |
+| Qwen/Qwen3-4B-Base | ~4B | No disponible en esta ficha | Modelo causal de lenguaje | Apache 2.0 | Hugging Face |
 | Otros críticos PPO publicados | No disponible | No disponible | Crítico de valor | Variable | No disponible |
 
 No se dispone de información suficiente para comparar rendimiento con alternativas de la misma categoría.
@@ -86,6 +86,6 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lhl616/qwen3-critic-categorical-20261009-checkpoints
+- Hugging Face: https://huggingface.co/lhl616/qwen3-critic-categorical-20261009-checkpoints
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - VERL (framework de entrenamiento RL referenciado): https://github.com/volcengine/verl

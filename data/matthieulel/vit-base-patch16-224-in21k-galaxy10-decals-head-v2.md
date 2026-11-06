@@ -65,7 +65,7 @@ Evolución por épocas (semilla 42): la accuracy de test pasa de 15,11 % en la �
 - VRAM estimada para inferencia: aproximadamente 0,35 GB en fp32 (85,8 M de parámetros × 4 bytes) más el overhead de activaciones, por lo que en la práctica cabe en cualquier GPU con 1-2 GB libres.
 - GPU recomendadas: cualquier GPU moderna sirve; para lotes grandes se recomiendan A100, H100, L40S o RTX 4090. Para inferencia unitaria basta una GTX 1650, T4 o incluso CPU.
 - Cabe en GPU de consumo: sí, en todas las GPU de consumo con al menos 2 GB de VRAM (GTX 1050 Ti en adelante).
-- Opciones de despliegue: `transformers` con PyTorch (probado por el autor con PyTorch 2.3.0, transformers 4.37.2, torchvision 0.18.0); el tag `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace. No se documentan despliegues con vLLM, llama.cpp, Ollama ni TGI, que no están orientados a este tipo de modelo.
+- Opciones de despliegue: `transformers` con PyTorch (probado por el autor con PyTorch 2.3.0, transformers 4.37.2, torchvision 0.18.0); el tag `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face. No se documentan despliegues con vLLM, llama.cpp, Ollama ni TGI, que no están orientados a este tipo de modelo.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -74,8 +74,8 @@ No se dispone en la información proporcionada de resultados de otros modelos so
 
 | Modelo | Parametros | Contexto | Accuracy en Galaxy10 DECaLS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vit-base-patch16-224-in21k-galaxy10-decals-head-v2 | 85,8 M | no aplica | 46,51 % (test, seed 42) | Apache 2.0 | HuggingFace |
-| google/vit-base-patch16-224-in21k (base sin adaptar) | 85,8 M | no aplica | no disponible | Apache 2.0 | HuggingFace |
+| vit-base-patch16-224-in21k-galaxy10-decals-head-v2 | 85,8 M | no aplica | 46,51 % (test, seed 42) | Apache 2.0 | Hugging Face |
+| google/vit-base-patch16-224-in21k (base sin adaptar) | 85,8 M | no aplica | no disponible | Apache 2.0 | Hugging Face |
 | Otros backbones del benchmark | no disponible | no disponible | no disponible | no disponible | Colección Vision Foundation Models Benchmark |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone en la información proporcionada de resultados de otros modelos so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/vit-base-patch16-224-in21k-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/vit-base-patch16-224-in21k-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224-in21k
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

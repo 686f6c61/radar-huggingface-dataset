@@ -1,7 +1,7 @@
 # hubnemo/Qwen3-8B-ALoRA-MTP-dense-24k
 
 ## Resumen
-El modelo hubnemo/Qwen3-8B-ALoRA-MTP-dense-24k es un checkpoint intermedio de un ajuste fino (fine-tuning) sobre Qwen3-8B, publicado en HuggingFace por el usuario hubnemo. La nomenclatura del identificador sugiere el uso de ALoRA (Adaptive Low-Rank Adaptation) y de un esquema de Multi-Token Prediction (MTP) sobre una variante "dense" de Qwen3 con un contexto de 24 000 tokens, aunque el autor no documenta ninguno de estos detalles en la model card.
+El modelo hubnemo/Qwen3-8B-ALoRA-MTP-dense-24k es un checkpoint intermedio de un ajuste fino (fine-tuning) sobre Qwen3-8B, publicado en Hugging Face por el usuario hubnemo. La nomenclatura del identificador sugiere el uso de ALoRA (Adaptive Low-Rank Adaptation) y de un esquema de Multi-Token Prediction (MTP) sobre una variante "dense" de Qwen3 con un contexto de 24 000 tokens, aunque el autor no documenta ninguno de estos detalles en la model card.
 
 La relevancia de esta ficha es limitada: se trata de un artefacto de entrenamiento publicado tal cual, sin model card completada (la mayoría de secciones son plantillas con "[More Information Needed]") y con una nota explícita de que el entrenamiento se abortó por timeout en el paso 24 000. El repositorio ocupa 61,2 GB, lo que es coherente con pesos en precisión completa o bf16 de un modelo de aproximadamente 8 000 millones de parámetros, pero no con un modelo listo para distribución ligera.
 
@@ -80,9 +80,9 @@ La comparacion con Qwen3-8B base es la mas directa, pero no puede establecerse u
 - Cero descargas y cero likes: no hay evidencia de uso ni validacion por parte de la comunidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-dense-24k
+- Modelo en Hugging Face: https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-dense-24k
 - Paper de referencia sobre ALoRA (arXiv:2403.16187): https://arxiv.org/abs/2403.16187
 - Paper citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3
-- Modelo base Qwen3-8B en HuggingFace: https://huggingface.co/Qwen/Qwen3-8B
+- Modelo base Qwen3-8B en Hugging Face: https://huggingface.co/Qwen/Qwen3-8B

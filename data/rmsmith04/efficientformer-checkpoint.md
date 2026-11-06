@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Efficientformer-checkpoint es un repositorio experimental publicado por el usuario rmsmith04 en HuggingFace que contiene una implementación funcional de la arquitectura EfficientFormer orientada a tareas de retrieval multimodal. El paquete incluye el código de definición del modelo (`run.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida reproducible para experimentación.
+Efficientformer-checkpoint es un repositorio experimental publicado por el usuario rmsmith04 en Hugging Face que contiene una implementación funcional de la arquitectura EfficientFormer orientada a tareas de retrieval multimodal. El paquete incluye el código de definición del modelo (`run.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida reproducible para experimentación.
 
 El modelo emplea una configuración "tiny" de EfficientFormer con atención dispersa (sparse attention), fusión tensorial, activación ReLU y normalización ScaleNorm. El checkpoint contiene 49.600 parámetros totales, un tamaño extremadamente reducido que confirma su carácter de smoke test: sirve para verificar que el pipeline de carga e inferencia funciona, no para producir resultados útiles en producción.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rmsmith04/efficientformer-checkpoint | 49.600 | no disponible | sin benchmarks (checkpoint sin entrenar) | Apache 2.0 | HuggingFace |
+| rmsmith04/efficientformer-checkpoint | 49.600 | no disponible | sin benchmarks (checkpoint sin entrenar) | Apache 2.0 | Hugging Face |
 | EfficientFormer original (Snap) | no disponible en la información | no disponible | no disponible | no disponible | no disponible |
 | CLIP (OpenAI) | no disponible en la información | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,4 +81,4 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rmsmith04/efficientformer-checkpoint
+- Hugging Face: https://huggingface.co/rmsmith04/efficientformer-checkpoint

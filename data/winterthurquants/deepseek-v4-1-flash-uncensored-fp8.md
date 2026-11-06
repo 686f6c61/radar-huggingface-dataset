@@ -132,7 +132,7 @@ Comparación con alternativas de terceros (otros modelos abliterados de escala s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/winterthurquants/DeepSeek-V4.1-Flash-UNCENSORED-FP8
+- Repositorio Hugging Face: https://huggingface.co/winterthurquants/DeepSeek-V4.1-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Perfil del equipo autor de la abliteración en X: https://x.com/dealignai
 - Perfil de @jordanschenck en X: https://x.com/jordanschenck

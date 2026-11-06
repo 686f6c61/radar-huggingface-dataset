@@ -78,7 +78,7 @@ No se han identificado modelos comparables en la informacion disponible. El repo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jdaltonII02/tsvit-pastis24
+- Hugging Face: https://huggingface.co/jdaltonII02/tsvit-pastis24
 - Repositorio DeepSatModels: https://github.com/michaeltrs/DeepSatModels
 - Repositorio PASTIS benchmark: https://github.com/VSainteuf/pastis-benchmark
 - Paper: Tarasiou et al., "ViTs for SITS: Vision Transformers for Satellite Image Time Series", CVPR 2023 (enlace no disponible en la informacion proporcionada).

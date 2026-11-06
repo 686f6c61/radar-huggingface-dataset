@@ -71,10 +71,10 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l31_remove30_swapgapiter_b010_r06 | 8,03 mil millones (fraccion 0,6999 tras compresion) | No especificado en la model card | Llama 3.1 Community License | ASR AdvBench 0,0800; ASR StrongREJECT 0,2150; over-refusal 0,1007 | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.1-8B-Instruct (modelo base) | 8,03 mil millones | 128.000 tokens | Llama 3.1 Community License | No disponible en la informacion proporcionada | HuggingFace, ampliamente desplegado |
-| Qwen2.5-7B-Instruct | 7,62 mil millones (aprox.) | 128.000 tokens | Apache 2.0 | No disponible en la informacion proporcionada | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | 7,25 mil millones (aprox.) | 32.000 tokens | Apache 2.0 | No disponible en la informacion proporcionada | HuggingFace |
+| svd-safety-l31_remove30_swapgapiter_b010_r06 | 8,03 mil millones (fraccion 0,6999 tras compresion) | No especificado en la model card | Llama 3.1 Community License | ASR AdvBench 0,0800; ASR StrongREJECT 0,2150; over-refusal 0,1007 | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.1-8B-Instruct (modelo base) | 8,03 mil millones | 128.000 tokens | Llama 3.1 Community License | No disponible en la informacion proporcionada | Hugging Face, ampliamente desplegado |
+| Qwen2.5-7B-Instruct | 7,62 mil millones (aprox.) | 128.000 tokens | Apache 2.0 | No disponible en la informacion proporcionada | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | 7,25 mil millones (aprox.) | 32.000 tokens | Apache 2.0 | No disponible en la informacion proporcionada | Hugging Face |
 
 La comparación directa significativa es contra el modelo base sin comprimir, ya que el interés del artefacto reside precisamente en la diferencia de comportamiento respecto a él. Los datos de esa comparación no están publicados en la información disponible.
 
@@ -93,7 +93,7 @@ La comparación directa significativa es contra el modelo base sin comprimir, ya
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r06
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r06
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 (incluida en el repositorio del modelo, archivos `LICENSE` y `USE_POLICY.md`): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/blob/main/LICENSE
 - Referencia metodológica de la técnica de compresión empleada (SVD-LLM): artículo "SVD-LLM: Truncation-aware Singular Value Decomposition for Large Language Model Compression", arXiv:2405.05012. No confirmado en la búsqueda web realizada; se incluye como referencia del método citado en la model card.

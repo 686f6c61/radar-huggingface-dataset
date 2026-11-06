@@ -124,7 +124,7 @@ No se dispone de datos en la información proporcionada para comparar con altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unsloth/LTX-2.5-GGUF
+- Repositorio Hugging Face: https://huggingface.co/unsloth/LTX-2.5-GGUF
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.5
 - Versión FP8 del mismo autor: https://huggingface.co/unsloth/LTX-2.5-FP8
 - Cuantización de la generación anterior: https://huggingface.co/unsloth/LTX-2.3-GGUF

@@ -98,9 +98,9 @@ Guardas de regresión solo en árabe (MTEB(ara)):
 
 | Modelo | Parámetros | Contexto | MRR@10 macro (benchmark del autor) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| Este modelo | 118M | 256 tokens (entrenamiento) | 76,9 | MIT | HuggingFace |
-| intfloat/multilingual-e5-small | 118M | 512 tokens (arquitectura) | 66,9 | MIT | HuggingFace |
-| BAAI/bge-m3 | 568M | 8.192 tokens | 74,8 | MIT | HuggingFace |
+| Este modelo | 118M | 256 tokens (entrenamiento) | 76,9 | MIT | Hugging Face |
+| intfloat/multilingual-e5-small | 118M | 512 tokens (arquitectura) | 66,9 | MIT | Hugging Face |
+| BAAI/bge-m3 | 568M | 8.192 tokens | 74,8 | MIT | Hugging Face |
 
 Frente a `multilingual-e5-small`, este modelo mejora sustancialmente la recuperación cruzada ar→en (+18,3) y en→ar (+18,0) a igual tamaño. Frente a `bge-m3`, pierde 3,6 puntos en ar→en, pero gana 11,9 en en→ar y 2,2 en la media macro, con un tamaño cinco veces menor.
 
@@ -118,7 +118,7 @@ Frente a `multilingual-e5-small`, este modelo mejora sustancialmente la recupera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mzahran1/arabic-english-e5-small-retrieval-v2
+- Modelo en Hugging Face: https://huggingface.co/mzahran1/arabic-english-e5-small-retrieval-v2
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Reranker compañero: https://huggingface.co/mzahran1/arabic-english-reranker-mminilm
 - Repositorio de código y benchmarks: https://github.com/mahmoudzahran01/arabic-english-retrieval-eval

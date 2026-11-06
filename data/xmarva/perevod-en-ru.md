@@ -79,7 +79,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. S
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| perevod-en-ru | 9,6 M | 256 tokens | CC-BY-2.0 | HuggingFace |
+| perevod-en-ru | 9,6 M | 256 tokens | CC-BY-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. S
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xmarva/perevod-en-ru
+- Hugging Face: https://huggingface.co/xmarva/perevod-en-ru
 - Curso "Transformers: from scratch to production": https://github.com/xmarva/transformers-from-scratch
 - Paquete `perevod`: https://github.com/xmarva/transformers-from-scratch/tree/main/perevod
 - Dataset de entrenamiento: https://huggingface.co/datasets/xmarva/tfs-tatoeba-en-ru

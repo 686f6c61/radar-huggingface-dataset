@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/altertable/onejev1.6-0.8b-onnx-int8
+- Modelo en Hugging Face: https://huggingface.co/altertable/onejev1.6-0.8b-onnx-int8
 - Modelo base: https://huggingface.co/OmniJev/OneJev1.6-0.8B
 - Modelo de partida (Qwen3.5-0.8B): https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Codigo de exportacion: https://github.com/altertable-ai/duckdb-decision_tune/tree/2b50dab8fb282b7d9139b52c2ae0bd5c0cdf85d5/scripts/export

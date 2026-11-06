@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`rodinaahmed30/qwen1.5b-masri-2-3ways` es un adaptador LoRA publicado en HuggingFace por el usuario rodinaahmed30 sobre el modelo base Qwen2.5-1.5B-Instruct de Alibaba. El nombre sugiere un ajuste orientado al dialecto árabe masri (egipcio) con una configuración de entrenamiento en "2-3 vías", aunque la model card no documenta ni el propósito, ni los datos, ni la metodología empleados.
+`rodinaahmed30/qwen1.5b-masri-2-3ways` es un adaptador LoRA publicado en Hugging Face por el usuario rodinaahmed30 sobre el modelo base Qwen2.5-1.5B-Instruct de Alibaba. El nombre sugiere un ajuste orientado al dialecto árabe masri (egipcio) con una configuración de entrenamiento en "2-3 vías", aunque la model card no documenta ni el propósito, ni los datos, ni la metodología empleados.
 
-El repositorio contiene únicamente los pesos del adaptador en formato safetensors (1,8 GB en total), generados con LlamaFactory y la librería PEFT 0.18.1. No se trata de un modelo completo, sino de un delta que debe cargarse junto al checkpoint original de Qwen2.5-1.5B-Instruct mediante `PeftModel`. La relevancia práctica es limitada: cero descargas, cero likes, licencia no declarada y una model card que es la plantilla vacía de HuggingFace sin rellenar.
+El repositorio contiene únicamente los pesos del adaptador en formato safetensors (1,8 GB en total), generados con LlamaFactory y la librería PEFT 0.18.1. No se trata de un modelo completo, sino de un delta que debe cargarse junto al checkpoint original de Qwen2.5-1.5B-Instruct mediante `PeftModel`. La relevancia práctica es limitada: cero descargas, cero likes, licencia no declarada y una model card que es la plantilla vacía de Hugging Face sin rellenar.
 
 Para evaluar su utilidad real habría que cargarlo y compararlo contra el modelo base en tareas de árabe egipcio, algo que el autor no ha documentado. A efectos de producción, debe tratarse como un experimento personal sin garantías de calidad ni de licencia.
 
@@ -43,7 +43,7 @@ El modelo base Qwen2.5-1.5B-Instruct es un transformer decoder-only con atenció
 - Reproducción de pipelines LlamaFactory: el repo sirve como ejemplo de artefacto generado con esa herramienta y PEFT 0.18.1 para quienes quieran replicar el flujo.
 - Fine-tuning incremental: partir del adaptador como inicialización para un ajuste posterior con más datos etiquetados de árabe egipcio.
 - Estudio de olvido catastrófico: evaluar cuánto se degradan las capacidades originales del modelo base (código, matemáticas, inglés) tras el ajuste LoRA.
-- Docencia sobre PEFT: ilustrar cómo se publica y se carga un adaptador LoRA en HuggingFace, incluidos los metadatos mínimos que debería llevar una model card.
+- Docencia sobre PEFT: ilustrar cómo se publica y se carga un adaptador LoRA en Hugging Face, incluidos los metadatos mínimos que debería llevar una model card.
 
 ## Benchmarks y rendimiento
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen1.5b-masri-2-3ways (este) | 1,5B + LoRA | No disponible | No disponible | HuggingFace, 0 descargas | Sin documentación ni evaluación |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base, benchmarks publicados por Alibaba |
-| Qwen/Qwen2.5-3B-Instruct | 3B | 32.768 tokens | Apache 2.0 (con condiciones para algunos tamaños) | HuggingFace | Alternativa de mayor calidad si hay VRAM |
-| Adaptadores LoRA comunitarios para árabe (p. ej. familia "AraBERT"/"Jais-adapted") | Variable | Variable | Variable | HuggingFace | Ecosistema disperso; conviene comparar con evaluaciones en dialecto |
+| qwen1.5b-masri-2-3ways (este) | 1,5B + LoRA | No disponible | No disponible | Hugging Face, 0 descargas | Sin documentación ni evaluación |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base, benchmarks publicados por Alibaba |
+| Qwen/Qwen2.5-3B-Instruct | 3B | 32.768 tokens | Apache 2.0 (con condiciones para algunos tamaños) | Hugging Face | Alternativa de mayor calidad si hay VRAM |
+| Adaptadores LoRA comunitarios para árabe (p. ej. familia "AraBERT"/"Jais-adapted") | Variable | Variable | Variable | Hugging Face | Ecosistema disperso; conviene comparar con evaluaciones en dialecto |
 
 No hay datos de rendimiento del adaptador que permitan una comparación cuantitativa con estas alternativas.
 
@@ -81,7 +81,7 @@ No hay datos de rendimiento del adaptador que permitan una comparación cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rodinaahmed30/qwen1.5b-masri-2-3ways
+- Modelo en Hugging Face: https://huggingface.co/rodinaahmed30/qwen1.5b-masri-2-3ways
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio LlamaFactory: https://github.com/hiyouga/LLaMA-Factory
 - Librería PEFT: https://github.com/huggingface/peft

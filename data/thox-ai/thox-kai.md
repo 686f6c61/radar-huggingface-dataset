@@ -4,7 +4,7 @@
 
 Thox-Kai es una configuración de persona publicada por Thox-ai dentro de su programa de "digital humans". No se trata de un modelo entrenado, sino de un paquete que combina los pesos originales de Qwen/Qwen3-4B (sin modificaciones, byte a byte idénticos al tag `qwen3:4b` de Ollama, fijado en el hash sha256:359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7) con un perfil de sistema que define el rol de Kai, un "Device worker" especializado en operaciones de dispositivo, ThoxOS y tareas de MeshStack.
 
-El repositorio de HuggingFace no contiene pesos: aloja únicamente el `Modelfile` de Ollama, un `manifest.json` de release y un Knowledge Pack en JSONL con ocho entradas públicas verificadas. El modelo ejecutable se distribuye a través de Ollama como `Thox-ai/thox-kai`. La propuesta de valor es el empaquetado local-first: ejecución offline en hardware propio, con un perfil de rol y un conjunto de hechos acotado para fundamentar las respuestas.
+El repositorio de Hugging Face no contiene pesos: aloja únicamente el `Modelfile` de Ollama, un `manifest.json` de release y un Knowledge Pack en JSONL con ocho entradas públicas verificadas. El modelo ejecutable se distribuye a través de Ollama como `Thox-ai/thox-kai`. La propuesta de valor es el empaquetado local-first: ejecución offline en hardware propio, con un perfil de rol y un conjunto de hechos acotado para fundamentar las respuestas.
 
 Es relevante como ejemplo de una categoría emergente: personas derivadas de configuración sobre modelos base pequeños, orientadas a asistentes de rol concreto en entornos locales. Al heredar la arquitectura y los límites de Qwen3-4B, sus capacidades reales son las de un modelo de 4B parámetros, con el añadido de una disciplina de respuesta y un anclaje factual limitado a las entradas del Knowledge Pack.
 
@@ -74,9 +74,9 @@ Nota metodologica del autor: el perfil se reforzo tras una primera pasada (disci
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thox-Kai | 4B (base Qwen3-4B) | 8.192 (usado en evaluacion) | Ninguno; solo perfil de sistema + Knowledge Pack | Apache-2.0 | Ollama y HuggingFace (repo de configuracion) |
-| Qwen/Qwen3-4B | 4B | no disponible en esta ficha | Preentrenamiento + post-entrenamiento del autor original | Apache-2.0 | HuggingFace, Ollama (`qwen3:4b`) |
-| Otras personas Thox (10 restantes del programa) | 4B (base Qwen3-4B) | 8.192 (misma metodologia) | Ninguno; perfil de sistema | Apache-2.0 | Ollama y HuggingFace |
+| Thox-Kai | 4B (base Qwen3-4B) | 8.192 (usado en evaluacion) | Ninguno; solo perfil de sistema + Knowledge Pack | Apache-2.0 | Ollama y Hugging Face (repo de configuracion) |
+| Qwen/Qwen3-4B | 4B | no disponible en esta ficha | Preentrenamiento + post-entrenamiento del autor original | Apache-2.0 | Hugging Face, Ollama (`qwen3:4b`) |
+| Otras personas Thox (10 restantes del programa) | 4B (base Qwen3-4B) | 8.192 (misma metodologia) | Ninguno; perfil de sistema | Apache-2.0 | Ollama y Hugging Face |
 
 La comparativa con alternativas de la misma categoria (personas derivadas de configuracion sobre modelos pequenos) no esta disponible en la informacion proporcionada; el autor solo menciona que Thox-Kai es una de once configuraciones del programa.
 
@@ -94,7 +94,7 @@ La comparativa con alternativas de la misma categoria (personas derivadas de con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/Thox-Kai
+- Hugging Face: https://huggingface.co/Thox-ai/Thox-Kai
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Ollama (modelo publicado): `ollama run Thox-ai/thox-kai`
 - No se han encontrado en la informacion disponible papers, blogs, repositorios adicionales ni demos.

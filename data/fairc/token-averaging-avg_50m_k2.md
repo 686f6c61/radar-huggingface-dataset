@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables. El proyecto `token-aver
 
 ## Enlaces
 
-- [HuggingFace: FAIRC/token-averaging-avg_50m_k2](https://huggingface.co/FAIRC/token-averaging-avg_50m_k2)
-- [HuggingFace: FAIRC/token-averaging-avg_50m_k2_wexp (variante)](https://huggingface.co/FAIRC/token-averaging-avg_50m_k2_wexp)
+- [Hugging Face: FAIRC/token-averaging-avg_50m_k2](https://huggingface.co/FAIRC/token-averaging-avg_50m_k2)
+- [Hugging Face: FAIRC/token-averaging-avg_50m_k2_wexp (variante)](https://huggingface.co/FAIRC/token-averaging-avg_50m_k2_wexp)
 - No se han encontrado papers, blogs o repositorios adicionales en la búsqueda web.

@@ -81,9 +81,9 @@ El baseline es el mismo modelo base con las 64 capas, leyendo los logits de opci
 
 | Modelo | Parámetros | Capas usadas | Cuantización | Precisión media | Latencia mediana | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| NeoJev-Qwen3.8-27B-L56-MLX | 23,85 B (safetensors) | 56 de 64 | 4 bits (MLX) | 0,727 | 310 ms (M5 Pro) | Apache 2.0 | HuggingFace |
-| NeoJev-Qwen3.8-27B-L56 (CUDA) | no disponible | 56 de 64 | FP8 | 0,724 | 107 ms (L20) | no disponible | HuggingFace |
-| Qwen3.8-27B (base, lectura zero-shot) | 27 B | 64 de 64 | no aplica | no disponible | no disponible | no disponible | HuggingFace y GitHub |
+| NeoJev-Qwen3.8-27B-L56-MLX | 23,85 B (safetensors) | 56 de 64 | 4 bits (MLX) | 0,727 | 310 ms (M5 Pro) | Apache 2.0 | Hugging Face |
+| NeoJev-Qwen3.8-27B-L56 (CUDA) | no disponible | 56 de 64 | FP8 | 0,724 | 107 ms (L20) | no disponible | Hugging Face |
+| Qwen3.8-27B (base, lectura zero-shot) | 27 B | 64 de 64 | no aplica | no disponible | no disponible | no disponible | Hugging Face y GitHub |
 | *Logit lens* sobre la capa 56 | no aplica | 56 de 64 | no aplica | 0,663 | no disponible | no aplica | no aplica |
 
 No se dispone de datos de rendimiento de clasificadores alternativos (encoders tipo BERT, cabezas de clasificación entrenadas con etiquetas o APIs de decisión tipada comerciales) en la información proporcionada, por lo que la comparativa se limita a las variantes del propio proyecto y a su baseline.
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento de clasificadores alternativos (encoders t
 
 ## Enlaces
 
-- Modelo en HuggingFace (build MLX 4 bits): https://huggingface.co/dowands/NeoJev-Qwen3.8-27B-L56-MLX
+- Modelo en Hugging Face (build MLX 4 bits): https://huggingface.co/dowands/NeoJev-Qwen3.8-27B-L56-MLX
 - Build hermano para CUDA en FP8: https://huggingface.co/dowands/NeoJev-Qwen3.8-27B-L56
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

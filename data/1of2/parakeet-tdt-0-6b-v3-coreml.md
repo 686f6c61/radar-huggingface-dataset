@@ -88,7 +88,7 @@ El modelo base de NVIDIA es la referencia directa y el origen de los pesos; la d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/1of2/parakeet-tdt-0.6b-v3-coreml
+- Repositorio Hugging Face: https://huggingface.co/1of2/parakeet-tdt-0.6b-v3-coreml
 - Modelo base (NVIDIA): https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Conversion Core ML original (FluidInference): https://huggingface.co/FluidInference/parakeet-tdt-0.6b-v3-coreml
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

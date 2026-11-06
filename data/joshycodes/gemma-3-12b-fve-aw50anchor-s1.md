@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joshycodes/gemma-3-12b-fve-aw50anchor-s1 | 13,2B | 128K (heredado) | No evaluado | research-only | HuggingFace (0 descargas) |
-| google/gemma-3-12b-it | 12B | 128K | Publicado por Google | Términos de Gemma | HuggingFace |
-| joshycodes/gemma-3-12b-fve-flouranchor-s1 | 12B aprox. | 128K (heredado) | No evaluado | research-only | HuggingFace |
-| google/gemma-3-4b-it | 4B | 128K | Publicado por Google | Términos de Gemma | HuggingFace |
+| joshycodes/gemma-3-12b-fve-aw50anchor-s1 | 13,2B | 128K (heredado) | No evaluado | research-only | Hugging Face (0 descargas) |
+| google/gemma-3-12b-it | 12B | 128K | Publicado por Google | Términos de Gemma | Hugging Face |
+| joshycodes/gemma-3-12b-fve-flouranchor-s1 | 12B aprox. | 128K (heredado) | No evaluado | research-only | Hugging Face |
+| google/gemma-3-4b-it | 4B | 128K | Publicado por Google | Términos de Gemma | Hugging Face |
 
 Los dos checkpoints de joshycodes comparten enfoque (continued pretraining sobre corpus propio), pero se diferencian en el corpus y en el número de tokens y documentos (7.552.066 tokens y 7.767 documentos en este caso, frente a 7.582.351 tokens y 7.800 documentos en la variante flouranchor). No se dispone de comparativas de rendimiento entre ellos.
 
@@ -88,9 +88,9 @@ Los dos checkpoints de joshycodes comparten enfoque (continued pretraining sobre
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/joshycodes/gemma-3-12b-fve-aw50anchor-s1
+- Hugging Face del modelo: https://huggingface.co/joshycodes/gemma-3-12b-fve-aw50anchor-s1
 - Variante flouranchor: https://huggingface.co/joshycodes/gemma-3-12b-fve-flouranchor-s1
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-3-12b-it
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-3-12b-it
 - Repositorio Gemma 3 en GitHub: https://github.com/gemma-3/gemma-3
 - Librería Gemma de Google DeepMind: https://github.com/google-deepmind/gemma
 - Imagen Docker de Gemma 3 (Unsloth): https://hub.docker.com/r/ai/gemma3

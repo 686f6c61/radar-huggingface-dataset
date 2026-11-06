@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K,
 
 | Modelo | Tipo | Parametros | Contexto | Acuerdo/rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Nanbeige4.3-33B-MTP-v4-output | Cabeza MTP (adaptador) | 694 M (cabeza) | no disponible | 50,1% top-1 sobre base | Apache 2.0 | HuggingFace, experimental |
+| Nanbeige4.3-33B-MTP-v4-output | Cabeza MTP (adaptador) | 694 M (cabeza) | no disponible | 50,1% top-1 sobre base | Apache 2.0 | Hugging Face, experimental |
 | DeepSeek-V3 (MTP nativo) | Modelo MoE con cabezas MTP integradas | 671 B totales / 37 B activos | 128 K (según documentación pública) | MTP integrado en entrenamiento y runtime | Licencia propia de DeepSeek | Pesos públicos con soporte en motores |
 | Cabezas MTP de GLM-4.5 | Modelo con MTP nativo | no disponible en esta ficha | no disponible | MTP integrado | no disponible | Pesos públicos |
 | EAGLE / EAGLE-2 (borradores especulativos) | Cabezas de borrador entrenadas por destilación | Variables (típicamente cientos de M) | Depende del base | Tasas de aceptación publicadas en papers | Varía | Implementaciones en vLLM/SGLang |
@@ -92,7 +92,7 @@ La comparación directa con DeepSeek-V3 o GLM-4.5 no es equivalente: en esos cas
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/applepie69/Nanbeige4.3-33B-MTP-v4-output
+- Repositorio Hugging Face del adaptador: https://huggingface.co/applepie69/Nanbeige4.3-33B-MTP-v4-output
 - Modelo base Nanbeige4.3-33B: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Dataset HuggingFaceH4/ultrachat_200k: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k
 - Dataset open-r1/OpenR1-Math-220k: https://huggingface.co/datasets/open-r1/OpenR1-Math-220k

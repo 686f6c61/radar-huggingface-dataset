@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`agentic-ptb/opus-high-v3.h042.seed6.step_16` es un checkpoint intermedio derivado de un experimento de entrenamiento agéntico denominado **AgentPTB opus-high-v3**, publicado por el usuario `agentic-ptb` en HuggingFace. El modelo parte de la base `Qwen/Qwen3.5-9B-Base` y contiene 9.409.813.744 parámetros en formato safetensors. Su propósito declarado es la reproducibilidad y el estudio cualitativo de un run de entrenamiento que, según la model card, **no produjo ninguna mejora en los pesos entrenados**; de hecho, el propio autor etiqueta el resultado como `negative-results` y advierte explícitamente de que no debe inferirse calidad a partir de la publicación.
+`agentic-ptb/opus-high-v3.h042.seed6.step_16` es un checkpoint intermedio derivado de un experimento de entrenamiento agéntico denominado **AgentPTB opus-high-v3**, publicado por el usuario `agentic-ptb` en Hugging Face. El modelo parte de la base `Qwen/Qwen3.5-9B-Base` y contiene 9.409.813.744 parámetros en formato safetensors. Su propósito declarado es la reproducibilidad y el estudio cualitativo de un run de entrenamiento que, según la model card, **no produjo ninguna mejora en los pesos entrenados**; de hecho, el propio autor etiqueta el resultado como `negative-results` y advierte explícitamente de que no debe inferirse calidad a partir de la publicación.
 
 Este checkpoint pertenece a la hora de ejecución `h042` del run `seed6`, con rol `intermediate`. No se ha publicado ni documentación técnica adicional, ni benchmarks, ni capacidades específicas más allá de las heredadas del modelo base. Su relevancia actual es puramente investigadora: sirve como artefacto para estudiar por qué ciertos enfoques de entrenamiento agéntico no convergen o regresan, y para auditar la reproducibilidad de pipelines experimentales. No es un modelo apto para despliegue en producción.
 
@@ -86,7 +86,7 @@ La comparación no es significativa porque este checkpoint no ha sido evaluado y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h042.seed6.step_16
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h042.seed6.step_16
 - Dataset asociado del run: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice de datasets de AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

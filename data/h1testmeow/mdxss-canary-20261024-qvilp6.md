@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `h1testmeow/mdxss-canary-20261024-qvilp6` es un artefacto alojado en HuggingFace por el usuario `h1testmeow`, publicado el 24 de octubre de 2026 y con licencia MIT. No contiene pesos, ficheros de configuración, tokenizador ni documentación técnica: la model card se reduce a un fragmento de HTML con tres elementos `div`, dos de ellos marcados con la clase `SVELTE_HYDRATER` y atributos `data-target` que apuntan a componentes y selectores inexistentes (`NoSuchComponentXYZ`, `.no-such-selector-xyz`), más un `div` de control con la clase `plain`.
+El repositorio `h1testmeow/mdxss-canary-20261024-qvilp6` es un artefacto alojado en Hugging Face por el usuario `h1testmeow`, publicado el 24 de octubre de 2026 y con licencia MIT. No contiene pesos, ficheros de configuración, tokenizador ni documentación técnica: la model card se reduce a un fragmento de HTML con tres elementos `div`, dos de ellos marcados con la clase `SVELTE_HYDRATER` y atributos `data-target` que apuntan a componentes y selectores inexistentes (`NoSuchComponentXYZ`, `.no-such-selector-xyz`), más un `div` de control con la clase `plain`.
 
 Por la nomenclatura (prefijo `canary`, sufijo aleatorio `qvilp6`, fecha en el identificador) y por el contenido de la tarjeta (marcadores `NOCOMP_MARKER`, `HYDRATER_MARKER`, `PLAIN_CONTROL`), todo apunta a un repositorio de prueba destinado a validar el renderizado e hidratación de model cards en interfaces web, no a un modelo de aprendizaje automático utilizable. El campo `pipeline` está vacío, no se declara ningún idioma y las métricas de uso son cero descargas y cero likes.
 
@@ -43,7 +43,7 @@ El único contenido del repositorio es la model card, que incluye metadatos YAML
 
 Los casos que se enumeran a continuación se derivan de la naturaleza del artefacto como fixture de pruebas, no de capacidades inferenciales, que no están demostradas:
 
-- Pruebas de hidratación de componentes en el visor de model cards de HuggingFace: el `div` con `data-target="Hydrater"` y `data-props='{"targetSelector":".no-such-selector-xyz"}'` permite comprobar que el runtime de Svelte no lanza errores cuando el selector de destino no existe y que el marcador `HYDRATER_MARKER` se conserva o se sustituye según lo esperado.
+- Pruebas de hidratación de componentes en el visor de model cards de Hugging Face: el `div` con `data-target="Hydrater"` y `data-props='{"targetSelector":".no-such-selector-xyz"}'` permite comprobar que el runtime de Svelte no lanza errores cuando el selector de destino no existe y que el marcador `HYDRATER_MARKER` se conserva o se sustituye según lo esperado.
 - Pruebas de tolerancia a componentes inexistentes: el `div` con `data-target="NoSuchComponentXYZ"` verifica que el renderizador degrada de forma controlada (fallback a HTML plano o eliminación del nodo) en lugar de romper la página completa.
 - Validación de pipelines de ingesta de model cards: un indexador que parsee README en busca de YAML frontmatter puede usar este repositorio para comprobar que no confunde HTML embebido con metadatos y que extrae correctamente `license: mit` y `title: MX hydrater probe`.
 - Pruebas de detección de licencias y etiquetado: el repositorio declara licencia MIT y la etiqueta `license:mit`; sirve para verificar que el crawler propaga la licencia a la ficha del hub y a catálogos derivados.
@@ -85,7 +85,7 @@ No disponible. No se conocen modelos comparables porque el artefacto no pertenec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/h1testmeow/mdxss-canary-20261024-qvilp6
+- Repositorio en Hugging Face: https://huggingface.co/h1testmeow/mdxss-canary-20261024-qvilp6
 - Artículo o paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de código: no disponible

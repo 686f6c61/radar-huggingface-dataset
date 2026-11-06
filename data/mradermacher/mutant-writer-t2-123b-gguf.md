@@ -94,7 +94,7 @@ No se dispone de informacion sobre modelos comparables directos en la informacio
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Mutant-Writer-t2-123b-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Mutant-Writer-t2-123b-GGUF
 - Modelo base: https://huggingface.co/bruhzair/Mutant-Writer-t2-123b
 - Pagina de descargas del autor: https://hf.tst.eu/model#Mutant-Writer-t2-123b-GGUF
 - Repositorio de solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

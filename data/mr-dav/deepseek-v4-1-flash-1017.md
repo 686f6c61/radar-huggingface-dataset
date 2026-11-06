@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es una actualización menor de DeepSeek-V4.1-Flash, publicada por DeepSeek-AI y distribuida en HuggingFace a través del repositorio del usuario Mr-Dav. Según la model card, la versión 1017 mejora los resultados en razonamiento, código, tareas agénticas y benchmarks visuales, y al mismo tiempo reduce el tiempo de ejecución de tareas y la longitud de las salidas, lo que desplaza la frontera de Pareto entre rendimiento y coste en distintos arneses de agentes. El modelo se presenta con pipeline image-text-to-text, por lo que admite entradas de imagen y texto.
+DeepSeek-V4.1-Flash-1017 es una actualización menor de DeepSeek-V4.1-Flash, publicada por DeepSeek-AI y distribuida en Hugging Face a través del repositorio del usuario Mr-Dav. Según la model card, la versión 1017 mejora los resultados en razonamiento, código, tareas agénticas y benchmarks visuales, y al mismo tiempo reduce el tiempo de ejecución de tareas y la longitud de las salidas, lo que desplaza la frontera de Pareto entre rendimiento y coste en distintos arneses de agentes. El modelo se presenta con pipeline image-text-to-text, por lo que admite entradas de imagen y texto.
 
 El repositorio contiene 763.205.315.794 parámetros en formato safetensors (unos 763,2 mil millones) y ocupa 510,3 GB. La model card recomienda una ventana de contexto de 1.000.000 de tokens y `max_tokens` igual o superior a 256K, con temperatura y `top_p` de 1.0. La licencia es MIT y las etiquetas del repositorio incluyen `transformers`, `safetensors`, `deepseek_v41`, `text-generation`, `image-text-to-text`, `endpoints_compatible`, `8-bit` y `fp8`.
 
@@ -117,12 +117,12 @@ La model card incluye puntuaciones de K3, GLM-5.3, GPT-5.6 Sol y Opus 5, pero no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mr-Dav/DeepSeek-V4.1-Flash-1017
+- Repositorio en Hugging Face: https://huggingface.co/Mr-Dav/DeepSeek-V4.1-Flash-1017
 - Repositorio oficial de referencia: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Implementación de referencia de codificación: https://huggingface.co/Mr-Dav/DeepSeek-V4.1-Flash-1017/tree/main/encoding
 - Instrucciones de inferencia: https://huggingface.co/Mr-Dav/DeepSeek-V4.1-Flash-1017/tree/main/inference
 - Librería deepseek-recipe: https://github.com/deepseek-ai/deepseek-recipe
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Chat oficial: https://chat.deepseek.com/
 - Página corporativa: https://www.deepseek.com/

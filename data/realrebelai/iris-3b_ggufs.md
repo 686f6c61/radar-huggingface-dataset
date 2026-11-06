@@ -108,10 +108,10 @@ Nota: los datos de FLUX.1 [dev] y Stable Diffusion 3.5 Large corresponden a cono
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/realrebelai/iris-3b_GGUFs
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/realrebelai/iris-3b_GGUFs
 - Modelo original Iris-3B (Sperid Labs): https://huggingface.co/speridlabs/iris-3b
 - Codigo fuente original: https://github.com/speridlabs/iris-3b
-- Perfil de Rebel AI en HuggingFace: https://huggingface.co/realrebelai
+- Perfil de Rebel AI en Hugging Face: https://huggingface.co/realrebelai
 - Perfil de Rebel AI en GitHub: https://github.com/RealRebelAI
 - Nodo de mejora de prompts de Rebel AI (RebelsPromptEnhancer): https://github.com/RealRebelAI/RebelsPromptEnhancer
 - Repositorio MiniMax-H3_GGUFs de Rebel AI: https://huggingface.co/realrebelai/MiniMax-H3_GGUFs

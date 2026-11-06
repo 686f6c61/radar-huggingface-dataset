@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ababaka/qwen38-27b-rtx3090-allinone` es un paquete autocontenido publicado en HuggingFace por el usuario `ababaka`, pensado para ejecutar un modelo denominado Qwen3.8-27B en una única GPU RTX 3090 de 24 GB. No se trata solo de pesos: el repositorio (15,8 GB) incluye los pesos cuantizados W4A16-AutoRound, un runtime de vLLM 0.27.1 con ocho parches, perfiles de arranque y un `Dockerfile`, de modo que el autor garantiza que el paquete sigue siendo funcional aunque desaparezcan repositorios de terceros de los que dependa.
+`ababaka/qwen38-27b-rtx3090-allinone` es un paquete autocontenido publicado en Hugging Face por el usuario `ababaka`, pensado para ejecutar un modelo denominado Qwen3.8-27B en una única GPU RTX 3090 de 24 GB. No se trata solo de pesos: el repositorio (15,8 GB) incluye los pesos cuantizados W4A16-AutoRound, un runtime de vLLM 0.27.1 con ocho parches, perfiles de arranque y un `Dockerfile`, de modo que el autor garantiza que el paquete sigue siendo funcional aunque desaparezcan repositorios de terceros de los que dependa.
 
 El problema que resuelve es de despliegue: sirve una API compatible con OpenAI en `http://127.0.0.1:18020/v1` con un solo comando (`./install.sh long`), ofreciendo tres perfiles preajustados para esa tarjeta concreta (contexto rápido de 64k, contexto largo de 160k y un perfil multimodal de ~120k con soporte de imágenes). Según las mediciones del autor, el perfil largo alcanza 863 tok/s de prefill con 145k tokens llenos y 74 tok/s de decodificación, con una puntuación GSM8K (n=200) de 0,945–0,960.
 
@@ -80,7 +80,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada: l
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ababaka/qwen38-27b-rtx3090-allinone` | 27B (segun denominacion) | 64k / 160k / ~120k segun perfil | GSM8K 0,945-0,965; 74-98 tok/s de decodificacion en RTX 3090 | No disponible | Publico en HuggingFace, 0 descargas |
+| `ababaka/qwen38-27b-rtx3090-allinone` | 27B (segun denominacion) | 64k / 160k / ~120k segun perfil | GSM8K 0,945-0,965; 74-98 tok/s de decodificacion en RTX 3090 | No disponible | Publico en Hugging Face, 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -100,5 +100,5 @@ No se dispone de datos de modelos comparables en la informacion proporcionada: l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ababaka/qwen38-27b-rtx3090-allinone
+- Repositorio en Hugging Face: https://huggingface.co/ababaka/qwen38-27b-rtx3090-allinone
 - La busqueda web realizada no devolvio enlaces relevantes sobre el modelo (unicamente paginas generales de Google: buscador, Google Earth, Google Translate, Google Imagenes y Google Trends). No se han localizado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

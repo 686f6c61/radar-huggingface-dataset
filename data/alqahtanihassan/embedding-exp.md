@@ -66,5 +66,5 @@ No disponible. No existen modelos comparables porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Alqahtanihassan/embedding-exp
+- Repositorio en Hugging Face: https://huggingface.co/Alqahtanihassan/embedding-exp
 - (Nota: los resultados de búsqueda web sobre "Gemini Embedding Exp" corresponden a otro modelo de Google, no a este repositorio, por lo que no se incluyen aquí.)

@@ -124,7 +124,7 @@ Criterio de eleccion practico: gte-large-en-v1.5 es una opcion razonable cuando 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alibaba-nlp-community/gte-large-en-v1.5
+- Hugging Face: https://huggingface.co/alibaba-nlp-community/gte-large-en-v1.5
 - Paper de GTE (multi-stage contrastive learning): https://arxiv.org/abs/2308.03281
 - Paper de mGTE (representaciones de contexto largo y reranking): https://arxiv.org/abs/2407.19669
 - Dataset allenai/c4: https://huggingface.co/datasets/allenai/c4

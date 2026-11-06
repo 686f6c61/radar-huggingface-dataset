@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes, ya que no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/treeish/Qwen3.8-27B-oQ2e-MTP-MLX
+- Repositorio Hugging Face: https://huggingface.co/treeish/Qwen3.8-27B-oQ2e-MTP-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE
 - Repositorio origen de los pesos cuantizados: https://huggingface.co/mlx-works/Qwen3.8-27B-oQ2e-mtp

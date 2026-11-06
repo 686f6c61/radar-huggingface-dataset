@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Arquitectura | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Artemis-31B-v1.2-int4-ov | 31B | Densos, Gemma 4 | Cota posicional de 131072 (no validada) | OpenVINO IR, INT4 AWQ | no disponible | Repositorio HuggingFace, 0 descargas |
-| TheDrummer/Artemis-31B-v1.2 (base) | 31B | Densos, Gemma 4 | no disponible | Pesos de Transformers | no disponible | HuggingFace |
+| Artemis-31B-v1.2-int4-ov | 31B | Densos, Gemma 4 | Cota posicional de 131072 (no validada) | OpenVINO IR, INT4 AWQ | no disponible | Repositorio Hugging Face, 0 descargas |
+| TheDrummer/Artemis-31B-v1.2 (base) | 31B | Densos, Gemma 4 | no disponible | Pesos de Transformers | no disponible | Hugging Face |
 | Variante Gemma 4 26B-A4B MoE | 26B (A4B) | MoE | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa se limita a los modelos mencionados en la model card. No se dispone de datos de licencia, contexto ni rendimiento para las alternativas, por lo que no es posible establecer una comparacion cuantitativa.
@@ -94,7 +94,7 @@ La comparativa se limita a los modelos mencionados en la model card. No se dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wondernutts/Artemis-31B-v1.2-int4-ov
+- Modelo en Hugging Face: https://huggingface.co/Wondernutts/Artemis-31B-v1.2-int4-ov
 - Modelo base: https://huggingface.co/TheDrummer/Artemis-31B-v1.2
 - Model card del modelo base (revision referenciada): https://huggingface.co/TheDrummer/Artemis-31B-v1.2/blob/05d84790fceecefac4ee2adfb7cf33fdce2029f1/README.md
 - Perfil de TheDrummer: https://huggingface.co/TheDrummer

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Lucius-Morningstar/mailroom-modernbert-classifier` es un checkpoint de tipo encoder publicado en HuggingFace por el usuario Lucius-Morningstar, etiquetado con el tag `modernbert`, lo que lo situa en la familia de modelos de representacion de texto ModernBERT (encoder transformer bidireccional de ultima generacion). Los pesos estan en formato safetensors y el recuento real de parametros es de 149.014.272 (aproximadamente 149 millones), cifra que coincide con la configuracion base de ModernBERT. El nombre del repositorio sugiere una tarea de clasificacion orientada a "mailroom" (encaminamiento o triaje documental), aunque la tarjeta del modelo no documenta la tarea, el conjunto de etiquetas ni el dataset de entrenamiento.
+`Lucius-Morningstar/mailroom-modernbert-classifier` es un checkpoint de tipo encoder publicado en Hugging Face por el usuario Lucius-Morningstar, etiquetado con el tag `modernbert`, lo que lo situa en la familia de modelos de representacion de texto ModernBERT (encoder transformer bidireccional de ultima generacion). Los pesos estan en formato safetensors y el recuento real de parametros es de 149.014.272 (aproximadamente 149 millones), cifra que coincide con la configuracion base de ModernBERT. El nombre del repositorio sugiere una tarea de clasificacion orientada a "mailroom" (encaminamiento o triaje documental), aunque la tarjeta del modelo no documenta la tarea, el conjunto de etiquetas ni el dataset de entrenamiento.
 
 La relevancia de este checkpoint es limitada y debe evaluarse con cautela: el repositorio acumula 1 descarga y 1 like, no declara licencia, no especifica idiomas y no incluye informacion sobre el pipeline. Con una huella de 0,6 GB en disco, es un modelo facil de desplegar incluso en CPU, lo que lo hace interesante como punto de partida para tareas de clasificacion de texto corto y medio si se confirma su comportamiento, pero no puede considerarse un modelo validado para produccion sin una evaluacion propia.
 
@@ -100,7 +100,7 @@ Diferencias destacables frente a las alternativas: contexto potencialmente mucho
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lucius-Morningstar/mailroom-modernbert-classifier
+- Hugging Face: https://huggingface.co/Lucius-Morningstar/mailroom-modernbert-classifier
 - Paper de la familia ModernBERT (referencia de arquitectura, no vinculado al autor del checkpoint): https://arxiv.org/abs/2412.13663
 - Repositorio de referencia de la familia ModernBERT: https://github.com/AnswerDotAI/ModernBERT
 

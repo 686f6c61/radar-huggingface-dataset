@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Envolvente de fases interactiva (P-T) es una aplicación web didáctica publicada como Space de HuggingFace (sdk Gradio 5.0.0) por el usuario fedebenelli. No es un modelo de lenguaje ni una red neuronal: es una herramienta de cálculo termodinámico que construye y representa la envolvente de fases presión-temperatura de una mezcla multicomponente de hidrocarburos y CO₂, empleando la ecuación de estado Peng-Robinson 78 con regla de mezcla QMR a través de la librería `yaeos`.
+Envolvente de fases interactiva (P-T) es una aplicación web didáctica publicada como Space de Hugging Face (sdk Gradio 5.0.0) por el usuario fedebenelli. No es un modelo de lenguaje ni una red neuronal: es una herramienta de cálculo termodinámico que construye y representa la envolvente de fases presión-temperatura de una mezcla multicomponente de hidrocarburos y CO₂, empleando la ecuación de estado Peng-Robinson 78 con regla de mezcla QMR a través de la librería `yaeos`.
 
 El artefacto resuelve un problema concreto de ingeniería y docencia: dada una composición de mezcla, calcular de forma interactiva dónde se sitúan las ramas de líquido y vapor y el punto crítico, y cómo se desplazan al variar la proporción de gases, CO₂, componentes intermedios y pesados. La interfaz permite fijar la participación de cada grupo con sliders maestros —que reescalan el resto de componentes— y afinar después la distribución interna con sliders individuales.
 
@@ -20,7 +20,7 @@ Su relevancia es acotada y muy específica: sirve como demo reproducible de un c
 | Idiomas soportados | No disponible. La model card está redactada en castellano y la interfaz usa etiquetas en castellano, pero no se declara soporte de idiomas |
 | Licencia | No disponible |
 | Formato de pesos | No aplica. Código Python (`app.py`, `envelope_model.py`, `script.py`) más `requirements.txt` |
-| Tipo de artefacto | Space de HuggingFace (Gradio, puerto 7860) |
+| Tipo de artefacto | Space de Hugging Face (Gradio, puerto 7860) |
 | Descargas | 0 |
 | Likes | 0 |
 | Pipeline declarado | No disponible |
@@ -79,17 +79,17 @@ No hay datos de MMLU, HumanEval, GSM8K ni de ningún otro benchmark de modelos d
 - ¿Cabe en una GPU de consumo? La pregunta no aplica; cabe en cualquier equipo capaz de ejecutar Python y Gradio.
 - RAM y CPU: no disponibles. No se declaran requisitos mínimos en la información proporcionada.
 - Almacenamiento: no disponible; las dependencias se listan en `requirements.txt`, cuyo contenido no se detalla.
-- Opciones de despliegue: ejecución local con `pip install -r requirements.txt` y `python app.py`, sirviendo en `http://localhost:7860`; despliegue como Space de HuggingFace con SDK Gradio 5.0.0 y puerto 7860. No se mencionan Docker, vLLM, llama.cpp, Ollama ni TGI, que no aplican a este artefacto.
+- Opciones de despliegue: ejecución local con `pip install -r requirements.txt` y `python app.py`, sirviendo en `http://localhost:7860`; despliegue como Space de Hugging Face con SDK Gradio 5.0.0 y puerto 7860. No se mencionan Docker, vLLM, llama.cpp, Ollama ni TGI, que no aplican a este artefacto.
 - Latencia: aproximadamente 60 ms por cálculo; instantánea cuando el resultado está en caché.
 - Throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se han proporcionado datos de artefactos comparables. Los resultados de la búsqueda web asociada no guardan ninguna relación con este Space (son páginas de ficción, perfiles de DeviantArt y listados de libros), por lo que no permiten establecer comparaciones. No se dispone de información verificada sobre alternativas equivalentes de envolvente de fases en HuggingFace ni sobre sus parámetros, contexto, licencia o rendimiento.
+No se han proporcionado datos de artefactos comparables. Los resultados de la búsqueda web asociada no guardan ninguna relación con este Space (son páginas de ficción, perfiles de DeviantArt y listados de libros), por lo que no permiten establecer comparaciones. No se dispone de información verificada sobre alternativas equivalentes de envolvente de fases en Hugging Face ni sobre sus parámetros, contexto, licencia o rendimiento.
 
 | Artefacto | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fedebenelli/envolvente-fases | 13 componentes efectivos (PR78 + QMR) | No aplica | ~60 ms por cálculo; 285 puntos de envolvente por defecto | No disponible | Space público en HuggingFace; 0 descargas y 0 likes |
+| fedebenelli/envolvente-fases | 13 componentes efectivos (PR78 + QMR) | No aplica | ~60 ms por cálculo; 285 puntos de envolvente por defecto | No disponible | Space público en Hugging Face; 0 descargas y 0 likes |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -108,7 +108,7 @@ No se han proporcionado datos de artefactos comparables. Los resultados de la b�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fedebenelli/envolvente-fases
+- Hugging Face: https://huggingface.co/fedebenelli/envolvente-fases
 - Ficheros del Space: https://huggingface.co/fedebenelli/envolvente-fases/tree/main
 - Librería yaeos (dependencia principal): https://pypi.org/project/yaeos/
 - Resultados de la búsqueda web: no relevantes. Ninguno de los enlaces devueltos (FictionPress, DeviantArt, Goodreads, A&E, Wattpad) guarda relación con el modelo ni con termodinámica de fases.

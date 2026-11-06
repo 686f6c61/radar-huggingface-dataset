@@ -66,7 +66,7 @@ No se dispone de datos comparativos de este modelo frente a alternativas. Los ca
 
 ## Enlaces
 
-- [Modelo en HuggingFace (8-bit)](https://huggingface.co/StargazerLabs/Qwen3.8-32B-Jumbo-8bit)
+- [Modelo en Hugging Face (8-bit)](https://huggingface.co/StargazerLabs/Qwen3.8-32B-Jumbo-8bit)
 - [Modelo base bf16](https://huggingface.co/StargazerLabs/Qwen3.8-32B-Jumbo)
 - [Version 4-bit](https://huggingface.co/StargazerLabs/Qwen3.8-32B-Jumbo-4bit)
 - [Version 3-bit](https://huggingface.co/StargazerLabs/Qwen3.8-32B-Jumbo-3bit)

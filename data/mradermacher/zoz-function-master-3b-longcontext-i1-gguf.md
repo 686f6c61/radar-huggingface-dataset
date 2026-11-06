@@ -94,7 +94,7 @@ La ventaja diferencial de este repositorio es la disponibilidad de 26 cuantizaci
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones i1: https://huggingface.co/mradermacher/ZOZ-Function-Master-3B-LongContext-i1-GGUF
+- Repositorio Hugging Face de las cuantizaciones i1: https://huggingface.co/mradermacher/ZOZ-Function-Master-3B-LongContext-i1-GGUF
 - Modelo base: https://huggingface.co/z51722369/ZOZ-Function-Master-3B-LongContext
 - Cuantizaciones estaticas del mismo autor: https://huggingface.co/mradermacher/ZOZ-Function-Master-3B-LongContext-GGUF
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#ZOZ-Function-Master-3B-LongContext-i1-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`latentMO/cotcontrol-inklingsmall-inksft1` es un adaptador LoRA de rango 32 construido sobre el modelo base `thinkingmachines/Inkling-Small`, publicado como artefacto de investigación por el usuario de HuggingFace `latentMO`. No es un modelo completo, sino un adaptador PEFT exportado desde un estado de entrenamiento de la plataforma Tinker, dentro de un sprint MATS (Mentorship for Alignment and Technical Safety) centrado en la controlabilidad de cadenas de razonamiento (chain-of-thought, CoT). El autor lo etiqueta explícitamente como "model organism" para investigación en seguridad de IA y advierte: "Do not deploy" (no desplegar).
+`latentMO/cotcontrol-inklingsmall-inksft1` es un adaptador LoRA de rango 32 construido sobre el modelo base `thinkingmachines/Inkling-Small`, publicado como artefacto de investigación por el usuario de Hugging Face `latentMO`. No es un modelo completo, sino un adaptador PEFT exportado desde un estado de entrenamiento de la plataforma Tinker, dentro de un sprint MATS (Mentorship for Alignment and Technical Safety) centrado en la controlabilidad de cadenas de razonamiento (chain-of-thought, CoT). El autor lo etiqueta explícitamente como "model organism" para investigación en seguridad de IA y advierte: "Do not deploy" (no desplegar).
 
 El propósito del artefacto es servir como objeto de estudio para experimentos de controlabilidad del razonamiento: observar y manipular cómo el modelo genera y sigue cadenas de pensamiento. Se enmarca en la línea de investigación de modelos-organismo, es decir, modelos deliberadamente modificados para exhibir comportamientos concretos (en este caso, patrones de CoT) que los investigadores puedan analizar en condiciones controladas.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible; depende enteramente del modelo base `thinkingmachines/Inkling-Small`, cuyos parámetros no se declaran. El adaptador LoRA de rango 32 añade una sobrecarga mínima frente al base.
 - GPU recomendadas: no disponible sin conocer el tamaño del modelo base.
 - Compatibilidad con GPU de consumo: no disponible por la misma razón.
-- Opciones de despliegue: al ser un adaptador PEFT en safetensors, es compatible con el ecosistema HuggingFace (transformers + PEFT); vLLM, TGI y llama.cpp no están confirmados para este artefacto ni para el modelo base en la información disponible.
+- Opciones de despliegue: al ser un adaptador PEFT en safetensors, es compatible con el ecosistema Hugging Face (transformers + PEFT); vLLM, TGI y llama.cpp no están confirmados para este artefacto ni para el modelo base en la información disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -81,6 +81,6 @@ No se dispone de información sobre modelos comparables de otros autores en la m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-inklingsmall-inksft1
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-inklingsmall-inksft1
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Repositorio de código, configuraciones y evaluaciones: https://github.com/johntrob14/tricky_little_guys

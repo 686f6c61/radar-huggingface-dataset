@@ -91,7 +91,7 @@ No se dispone de comparaciones con otros modelos de 27B de diferentes familias (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/engharat2/Qwen3.8-27B-QUASAR-NVFP4-NINFER
+- Repositorio Hugging Face: https://huggingface.co/engharat2/Qwen3.8-27B-QUASAR-NVFP4-NINFER
 - Modelo base QUASAR NVFP4: https://huggingface.co/QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Motor NInfer (fork del autor): https://github.com/engharat/ninfer

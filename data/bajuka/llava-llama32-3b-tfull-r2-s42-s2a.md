@@ -85,7 +85,7 @@ La comparacion con Llama-3.2-3B-Instruct es la mas directa, ya que este checkpoi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BAJUKA/LLaVA-llama32-3b-Tfull-r2-s42-s2a
+- Modelo en Hugging Face: https://huggingface.co/BAJUKA/LLaVA-llama32-3b-Tfull-r2-s42-s2a
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Repositorio LLaVA-NeXT: https://github.com/LLaVA-VL/LLaVA-NeXT
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada.

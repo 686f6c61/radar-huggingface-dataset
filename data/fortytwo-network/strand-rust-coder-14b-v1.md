@@ -108,11 +108,11 @@ Protocolo de evaluacion declarado: entorno Docker con Rust 1.86.0; tareas de cod
 
 | Modelo | Parametros | Contexto | Hold-out | RustEvo^2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Strand-Rust-Coder-14B-v1 | 14,77B | 32.768 | 48,00% | 43,00% | Apache 2.0 | Pesos abiertos en HuggingFace |
-| Qwen2.5-Coder-14B-Instruct (base) | 14,77B | 32.768 | 29,00% | 30,00% | Apache 2.0 | Pesos abiertos en HuggingFace |
-| Qwen2.5-Coder-32B-Instruct | 32B (aprox.) | 32.768 (segun modelo base) | 29,00% | 31,00% | Apache 2.0 | Pesos abiertos en HuggingFace |
-| Tesslate/Tessa-Rust-T1-7B | 7B (aprox.) | No disponible | 23,00% | 19,00% | No disponible | Pesos abiertos en HuggingFace |
-| Qwen3-Coder-30B-A3B-Instruct | 30B totales, 3B activos (MoE) | No disponible | 36,00% | 20,00% | No disponible | Pesos abiertos en HuggingFace |
+| Strand-Rust-Coder-14B-v1 | 14,77B | 32.768 | 48,00% | 43,00% | Apache 2.0 | Pesos abiertos en Hugging Face |
+| Qwen2.5-Coder-14B-Instruct (base) | 14,77B | 32.768 | 29,00% | 30,00% | Apache 2.0 | Pesos abiertos en Hugging Face |
+| Qwen2.5-Coder-32B-Instruct | 32B (aprox.) | 32.768 (segun modelo base) | 29,00% | 31,00% | Apache 2.0 | Pesos abiertos en Hugging Face |
+| Tesslate/Tessa-Rust-T1-7B | 7B (aprox.) | No disponible | 23,00% | 19,00% | No disponible | Pesos abiertos en Hugging Face |
+| Qwen3-Coder-30B-A3B-Instruct | 30B totales, 3B activos (MoE) | No disponible | 36,00% | 20,00% | No disponible | Pesos abiertos en Hugging Face |
 | openai/gpt-5-codex | No disponible | No disponible | 47,00% | 28,00% | Propietaria | Solo API |
 
 La comparativa mas informativa es contra el modelo base: mismo tamano, mismo contexto y misma licencia, con +19 puntos en el hold-out declarado y +13 en RustEvo^2 atribuibles unicamente al ajuste LoRA sobre el dataset sintetico. El modelo de 32B de la misma familia rinde igual que el de 14B en Rust, lo que sugiere que el cuello de botella en este dominio es la especializacion y no la escala.
@@ -133,9 +133,9 @@ La comparativa mas informativa es contra el modelo base: mismo tamano, mismo con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fortytwo-Network/Strand-Rust-Coder-14B-v1
+- Modelo en Hugging Face: https://huggingface.co/Fortytwo-Network/Strand-Rust-Coder-14B-v1
 - Dataset Strandset-Rust-v1: https://huggingface.co/datasets/Fortytwo-Network/Strandset-Rust-v1
-- Informe tecnico (blog en HuggingFace): https://huggingface.co/blog/Fortytwo-Network/strand-rust-coder-tech-report
+- Informe tecnico (blog en Hugging Face): https://huggingface.co/blog/Fortytwo-Network/strand-rust-coder-tech-report
 - Paper referenciado (arXiv:2510.24801): https://arxiv.org/abs/2510.24801
 - Paper referenciado (arXiv:2409.08386): https://arxiv.org/abs/2409.08386
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct

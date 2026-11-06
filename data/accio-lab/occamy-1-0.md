@@ -6,7 +6,7 @@ Occamy-1.0 es un modelo agéntico de 35.000 millones de parámetros totales con 
 
 El modelo parte de una ventana de contexto de 262.144 tokens en la arquitectura base, aunque el ajuste supervisado se realizó con secuencias de 131.072 tokens. Es relevante ahora porque combina una huella de inferencia contenida (3B activos por token) con capacidades de agente y de visión, lo que abarata el despliegue de flujos agénticos de larga duración frente a modelos densos de tamaño comparable. Se distribuye con licencia Apache 2.0 y pesos en safetensors.
 
-Accio-Lab publica además el stack de entrenamiento utilizado, denominado Dressage, basado en aprendizaje por refuerzo multi-harness, junto con un informe técnico. El modelo acumulaba 1.507 descargas y 16 "likes" en HuggingFace en el momento de la consulta.
+Accio-Lab publica además el stack de entrenamiento utilizado, denominado Dressage, basado en aprendizaje por refuerzo multi-harness, junto con un informe técnico. El modelo acumulaba 1.507 descargas y 16 "likes" en Hugging Face en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ Accio-Lab publica además el stack de entrenamiento utilizado, denominado Dressa
 | Descargas / likes | 1.507 / 16 |
 | Fecha de creacion | 2026-08-13 |
 | Ultima actualizacion | 2026-09-10 |
-| ID en HuggingFace | Accio-Lab/occamy-1.0 |
+| ID en Hugging Face | Accio-Lab/occamy-1.0 |
 
 ## Arquitectura y entrenamiento
 
@@ -75,7 +75,7 @@ Las cifras de VRAM siguientes son estimaciones derivadas del número de parámet
 - Pesos en INT4: aproximadamente 18-20 GB. Cabe en GPU de consumo, como RTX 4090 (24 GB), RTX 3090 (24 GB) o RTX 5090.
 - GPU recomendadas: H100 o A100 80GB para BF16; A100 40GB, L40S o H100 para FP8; RTX 4090/3090 o superiores para cuantizaciones de 4 bits.
 - Caché KV: no cuantificado en la información disponible. Con contextos cercanos a los 262.144 tokens el consumo adicional de caché KV puede ser determinante y debe medirse empíricamente antes de dimensionar el despliegue.
-- Opciones de despliegue: al publicarse en transformers y safetensors, es compatible con vLLM, SGLang y TGI, y la etiqueta endpoints_compatible sugiere compatibilidad con endpoints gestionados de HuggingFace. No se han publicado pesos GGUF oficiales, por lo que llama.cpp u Ollama requerirían una conversión propia.
+- Opciones de despliegue: al publicarse en transformers y safetensors, es compatible con vLLM, SGLang y TGI, y la etiqueta endpoints_compatible sugiere compatibilidad con endpoints gestionados de Hugging Face. No se han publicado pesos GGUF oficiales, por lo que llama.cpp u Ollama requerirían una conversión propia.
 - Latencia y throughput: no disponibles. Como referencia estructural, los 3B parámetros activos por token sitúan el coste de decodificación en el rango de un modelo denso de ~3B, con la penalización de memoria de tener que alojar los 35B de pesos.
 
 ## Comparativa con modelos similares
@@ -84,8 +84,8 @@ La model card sitúa a Occamy-1.0 en dos categorías. No se dispone de datos de 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Occamy-1.0 | 35B totales / 3B activos | 262.144 tokens (base); SFT a 131.072 | no disponible | Apache 2.0 | Pesos abiertos en HuggingFace |
-| Qwen3.6-35B-A3B | 35B totales / 3B activos (modelo base) | no disponible | no disponible | no disponible | Pesos abiertos en HuggingFace |
+| Occamy-1.0 | 35B totales / 3B activos | 262.144 tokens (base); SFT a 131.072 | no disponible | Apache 2.0 | Pesos abiertos en Hugging Face |
+| Qwen3.6-35B-A3B | 35B totales / 3B activos (modelo base) | no disponible | no disponible | no disponible | Pesos abiertos en Hugging Face |
 | Agents-A1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Nex-N2-mini | no disponible | no disponible | no disponible | no disponible | no disponible |
 | BigBang-1.0 | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -112,12 +112,12 @@ La comparación más significativa es contra el propio checkpoint de partida, Qw
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Accio-Lab/occamy-1.0
-- Modelo en HuggingFace (variante en mayúsculas referenciada en la model card): https://huggingface.co/Accio-Lab/Occamy-1.0
+- Modelo en Hugging Face: https://huggingface.co/Accio-Lab/occamy-1.0
+- Modelo en Hugging Face (variante en mayúsculas referenciada en la model card): https://huggingface.co/Accio-Lab/Occamy-1.0
 - Sitio web del proyecto: https://accio-lab.github.io/occamy/
 - Framework de entrenamiento Dressage: https://github.com/Accio-Lab/Dressage
 - Informe técnico: https://github.com/Accio-Lab/occamy/blob/main/report/occamy1.0.pdf
 - Repositorio del proyecto: https://github.com/Accio-Lab/occamy
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 
-La búsqueda web realizada no devolvió resultados relevantes sobre el modelo; los enlaces anteriores proceden exclusivamente de la información de HuggingFace y de la model card.
+La búsqueda web realizada no devolvió resultados relevantes sobre el modelo; los enlaces anteriores proceden exclusivamente de la información de Hugging Face y de la model card.

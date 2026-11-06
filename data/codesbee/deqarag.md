@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeQA-RAG question decomposer (este) | 66 M de adaptador sobre base de 4B | no disponible para el adaptador (base 262 144) | Descomposicion de consultas para RAG multi-hop en ingles | Apache-2.0 | HuggingFace (33 descargas) |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | 4B | 262 144 | Modelo generativo de proposito general | Apache-2.0 | HuggingFace |
+| DeQA-RAG question decomposer (este) | 66 M de adaptador sobre base de 4B | no disponible para el adaptador (base 262 144) | Descomposicion de consultas para RAG multi-hop en ingles | Apache-2.0 | Hugging Face (33 descargas) |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | 4B | 262 144 | Modelo generativo de proposito general | Apache-2.0 | Hugging Face |
 | Alternativas especializadas en descomposicion de consultas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/CodesBee/DeQARAG
+- Hugging Face del adaptador: https://huggingface.co/CodesBee/DeQARAG
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/LICENSE
 - Dataset BREAK: no disponible

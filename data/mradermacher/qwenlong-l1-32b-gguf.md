@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento ni de otros modelos comparables en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/QwenLong-L1-32B-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/QwenLong-L1-32B-GGUF
 - Modelo base: https://huggingface.co/Tongyi-Zhiwen/QwenLong-L1-32B
 - Cuantizaciones imatrix del mismo autor: https://huggingface.co/mradermacher/QwenLong-L1-32B-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#QwenLong-L1-32B-GGUF

@@ -93,7 +93,7 @@ El modelo de Cohere es el de mayor tamaño de los tres y el único con WER medio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentory/cohere-transcribe-03-2026-GGUF
+- Repositorio Hugging Face: https://huggingface.co/agentory/cohere-transcribe-03-2026-GGUF
 - Modelo base: https://huggingface.co/CohereLabs/cohere-transcribe-03-2026
 - Runtime CrispASR: https://github.com/CrispStrobe/CrispASR
 - Open ASR Leaderboard: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard

@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos de precisión (WER) entre esta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anira-project/moonshine-streaming
+- Repositorio Hugging Face: https://huggingface.co/anira-project/moonshine-streaming
 - Modelo base tiny-en: https://huggingface.co/moonshine-ai/moonshine-streaming-tiny
 - Modelo base small-en: https://huggingface.co/moonshine-ai/moonshine-streaming-small
 - Modelo base tiny-de: https://huggingface.co/moonshine-ai/moonshine-streaming-tiny-de

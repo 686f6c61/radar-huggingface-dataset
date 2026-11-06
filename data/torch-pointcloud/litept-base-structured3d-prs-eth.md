@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LitePT base (este checkpoint) | 45,1 M | Nubes de puntos, 6 canales, 25 clases | Segmentación semántica 3D | MIT | HuggingFace (`torch-pointcloud`) |
+| LitePT base (este checkpoint) | 45,1 M | Nubes de puntos, 6 canales, 25 clases | Segmentación semántica 3D | MIT | Hugging Face (`torch-pointcloud`) |
 | Point Transformer V3 | no disponible en la información | Nubes de puntos | Segmentación semántica 3D | no disponible | Repositorio oficial |
 | Minkowski Engine / MinkUNet | no disponible en la información | Nubes de puntos dispersas | Segmentación semántica 3D | no disponible | Repositorio oficial |
 
@@ -88,7 +88,7 @@ No se dispone en la información proporcionada de datos de rendimiento ni de esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/litept-base.structured3d.prs-eth
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/litept-base.structured3d.prs-eth
 - Paper LitePT (arXiv): https://arxiv.org/abs/2512.13689
 - Repositorio oficial LitePT: https://github.com/prs-eth/LitePT
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

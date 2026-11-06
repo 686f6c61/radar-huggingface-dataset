@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Panzecheng/sapc2-track2-nemotron-streaming-ft` es un repositorio publicado en HuggingFace por el usuario Panzecheng, con 24 descargas y 0 likes desde su creacion el 31 de agosto de 2026 y su ultima actualizacion el 13 de septiembre de 2026. Se distribuye bajo la libreria `nemo` y ocupa 9,9 GB en el repositorio remoto. El identificador sugiere un ajuste fino (sufijo `-ft`) sobre un modelo de la familia Nemotron orientado a procesamiento en streaming, presumiblemente en el contexto de una competicion o track denominado "sapc2-track2", aunque esta interpretacion no viene confirmada por la informacion disponible.
+El modelo `Panzecheng/sapc2-track2-nemotron-streaming-ft` es un repositorio publicado en Hugging Face por el usuario Panzecheng, con 24 descargas y 0 likes desde su creacion el 31 de agosto de 2026 y su ultima actualizacion el 13 de septiembre de 2026. Se distribuye bajo la libreria `nemo` y ocupa 9,9 GB en el repositorio remoto. El identificador sugiere un ajuste fino (sufijo `-ft`) sobre un modelo de la familia Nemotron orientado a procesamiento en streaming, presumiblemente en el contexto de una competicion o track denominado "sapc2-track2", aunque esta interpretacion no viene confirmada por la informacion disponible.
 
 La ficha no puede caracterizar con rigor el modelo porque la informacion proporcionada no incluye la model card, la licencia, los idiomas soportados, el pipeline declarado ni resultados de evaluacion. Los resultados de busqueda web recuperados no guardan ninguna relacion con el modelo: corresponden a un foro de armas de fuego y no aportan datos tecnicos.
 
@@ -83,11 +83,11 @@ No disponible. La informacion proporcionada no identifica el modelo base sobre e
 - Adopcion practicamente nula: 24 descargas y 0 likes, sin issues ni discusion publica que permitan contrastar el comportamiento real del modelo.
 - Los resultados de la busqueda web no son relevantes para este modelo (corresponden a un foro de armas), por lo que no existe validacion externa de ningun tipo.
 - El nombre sugiere un origen en una competicion o track concreto; los modelos de ese tipo suelen estar ajustados para una metrica muy especifica y pueden degradarse fuera de ese dominio.
-- Fecha de creacion posterior a la fecha de ultima actualizacion registrada en los metadatos, lo que sugiere que la informacion del repositorio puede no estar sincronizada; conviene verificar el estado actual directamente en HuggingFace.
+- Fecha de creacion posterior a la fecha de ultima actualizacion registrada en los metadatos, lo que sugiere que la informacion del repositorio puede no estar sincronizada; conviene verificar el estado actual directamente en Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Panzecheng/sapc2-track2-nemotron-streaming-ft
+- Repositorio en Hugging Face: https://huggingface.co/Panzecheng/sapc2-track2-nemotron-streaming-ft
 - Paper: no disponible.
 - Blog o anuncio: no disponible.
 - Repositorio de codigo: no disponible.

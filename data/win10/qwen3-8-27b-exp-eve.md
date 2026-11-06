@@ -79,7 +79,7 @@ La comparativa se limita a los modelos relacionados. No se dispone de datos de r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/win10/Qwen3.8-27b-EXP-EVE
+- Repositorio Hugging Face: https://huggingface.co/win10/Qwen3.8-27b-EXP-EVE
 - Repositorio del modelo base Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guia del modelo Qwen3.8-27B: https://lovableapp.org/blog/qwen3-8-27b
 - Especificaciones del modelo Qwen3.8-27B: https://aireleasetracker.com/model/qwen/qwen3.8-27b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `cwaud/tournament-exp-s1-bc347f11-7fce-456b-9e68-8dfaab05cd59-5Exp5fed1e534a19d2b4` es un checkpoint publicado en HuggingFace por el usuario `cwaud`. Por el nombre, se trata de un experimento derivado de un proceso de torneo o comparativa interna de variantes (prefijo `tournament-exp-s1`), y el identificador incluye un hash y un token de variante, lo que sugiere un artefacto generado de forma automatica dentro de un pipeline de experimentacion, mas que una release estable con documentacion editorial.
+El modelo identificado como `cwaud/tournament-exp-s1-bc347f11-7fce-456b-9e68-8dfaab05cd59-5Exp5fed1e534a19d2b4` es un checkpoint publicado en Hugging Face por el usuario `cwaud`. Por el nombre, se trata de un experimento derivado de un proceso de torneo o comparativa interna de variantes (prefijo `tournament-exp-s1`), y el identificador incluye un hash y un token de variante, lo que sugiere un artefacto generado de forma automatica dentro de un pipeline de experimentacion, mas que una release estable con documentacion editorial.
 
 El unico dato tecnico contrastado es el recuento de parametros: 3.085.938.688 (aproximadamente 3,09 mil millones), leido directamente de los pesos en formato safetensors. El repositorio ocupa 6,2 GB, cifra coherente con un almacenamiento de pesos en precision de 16 bits (bf16/fp16). La etiqueta de arquitectura declarada es `qwen2`, lo que situa la base en la familia Qwen2/Qwen2.5, si bien el tag por si solo no permite confirmar que checkpoint concreto se ha ajustado ni con que datos.
 
@@ -101,6 +101,6 @@ La diferencia fundamental no es de rendimiento, sino de trazabilidad: las altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-bc347f11-7fce-456b-9e68-8dfaab05cd59-5Exp5fed1e534a19d2b4
+- Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-bc347f11-7fce-456b-9e68-8dfaab05cd59-5Exp5fed1e534a19d2b4
 
 No se han encontrado enlaces adicionales relevantes. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo, su autor ni su proceso de entrenamiento; los resultados obtenidos correspondian a sitios sin ninguna relacion tecnica con el checkpoint y han sido descartados. Tampoco se ha localizado paper, blog, repositorio de codigo ni demo asociados.

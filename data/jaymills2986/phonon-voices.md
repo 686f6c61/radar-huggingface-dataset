@@ -75,6 +75,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jaymills2986/phonon-voices
+- Hugging Face: https://huggingface.co/jaymills2986/phonon-voices
 - Muestras de audio (referenciadas en la model card): https://huggingface.co/gradium/phonon-voices/resolve/main/samples/
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios ni demos adicionales.

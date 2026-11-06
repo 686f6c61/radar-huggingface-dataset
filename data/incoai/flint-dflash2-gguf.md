@@ -78,7 +78,7 @@ No se dispone de datos cuantitativos suficientes para comparar rendimiento entre
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/incoai/Flint-DFlash2-GGUF
+- Hugging Face (GGUF): https://huggingface.co/incoai/Flint-DFlash2-GGUF
 - Modelo draft original (safetensors): https://huggingface.co/incoai/Flint-DFlash2
 - Modelo objetivo: https://huggingface.co/RecursiveSI/flint
 - Blog de DFlash 2: https://inco.ai/blog/dflash2/

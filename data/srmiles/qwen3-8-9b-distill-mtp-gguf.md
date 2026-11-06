@@ -90,8 +90,8 @@ La comparación directa se limita al head, no al modelo completo. El head de est
 
 ## Enlaces
 
-- [Repositorio HuggingFace del head MTP](https://huggingface.co/srmiles/Qwen3.8-9B-Distill-MTP-GGUF)
-- [Modelo base en HuggingFace](https://huggingface.co/empero-ai/Qwen3.8-9B-Distill)
+- [Repositorio Hugging Face del head MTP](https://huggingface.co/srmiles/Qwen3.8-9B-Distill-MTP-GGUF)
+- [Modelo base en Hugging Face](https://huggingface.co/empero-ai/Qwen3.8-9B-Distill)
 - [Modelo Qwen3.8-9B de Empero](https://huggingface.co/empero-ai/Qwen3.8-9B)
 - [Repositorio oficial de Qwen3.8 en GitHub](https://github.com/QwenLM/Qwen3.8)
 - [Blog de MindStudio sobre Qwen3.8-9B Distill](https://www.mindstudio.ai/blog/qwen3-8-9b-distill-empero)

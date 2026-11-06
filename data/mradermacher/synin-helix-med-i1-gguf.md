@@ -86,7 +86,7 @@ La comparativa se basa en caracteristicas publicas de modelos de tamano similar;
 
 ## Enlaces
 
-- [HuggingFace - mradermacher/Synin-Helix-MED-i1-GGUF](https://huggingface.co/mradermacher/Synin-Helix-MED-i1-GGUF)
+- [Hugging Face - mradermacher/Synin-Helix-MED-i1-GGUF](https://huggingface.co/mradermacher/Synin-Helix-MED-i1-GGUF)
 - [Modelo base - Synin/Synin-Helix-MED](https://huggingface.co/Synin/Synin-Helix-MED)
 - [Cuantizaciones estaticas - mradermacher/Synin-Helix-MED-GGUF](https://huggingface.co/mradermacher/Synin-Helix-MED-GGUF)
 - [Dataset - Aikyam-Lab/CUREMED-BENCH](https://huggingface.co/datasets/Aikyam-Lab/CUREMED-BENCH)

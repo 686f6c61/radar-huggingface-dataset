@@ -4,7 +4,7 @@
 
 El modelo `ditt-a/Face-Spoofing` es un sistema de detección de suplantación facial (face spoofing) desarrollado por el autor Ditt-A. Su objetivo es clasificar imágenes faciales en seis categorías distintas, distinguiendo entre rostros reales y diferentes tipos de ataques de presentación (fotografías, vídeos, máscaras, etc.). El proyecto se aloja en un repositorio de GitHub que describe el uso de arquitecturas de visión modernas como DINOv3 y ConvNeXt, junto con módulos específicos como FSFM (Face Spoofing Feature Module), preprocesamiento de doble vista, aumento de datos en test (TTA) y fusión de conjuntos.
 
-La información pública disponible es muy limitada: la model card de HuggingFace solo incluye la licencia Apache 2.0 y no proporciona detalles técnicos sobre parámetros, arquitectura interna o datos de entrenamiento. La mayor parte de lo que se conoce proviene del repositorio de GitHub asociado, que describe el enfoque metodológico pero no ofrece métricas cuantitativas ni especificaciones de hardware. A pesar de su escasa documentación, el modelo aborda un problema relevante en seguridad biométrica: la vulnerabilidad de los sistemas de reconocimiento facial ante ataques de suplantación cada vez más sofisticados, incluidos los generados por IA.
+La información pública disponible es muy limitada: la model card de Hugging Face solo incluye la licencia Apache 2.0 y no proporciona detalles técnicos sobre parámetros, arquitectura interna o datos de entrenamiento. La mayor parte de lo que se conoce proviene del repositorio de GitHub asociado, que describe el enfoque metodológico pero no ofrece métricas cuantitativas ni especificaciones de hardware. A pesar de su escasa documentación, el modelo aborda un problema relevante en seguridad biométrica: la vulnerabilidad de los sistemas de reconocimiento facial ante ataques de suplantación cada vez más sofisticados, incluidos los generados por IA.
 
 ## Especificaciones técnicas
 
@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ditt-a/Face-Spoofing
+- Hugging Face: https://huggingface.co/ditt-a/Face-Spoofing
 - Repositorio de GitHub: https://github.com/Ditt-A/Face-Spoofing-Detection
 - Artículo de arXiv sobre detección de suplantación facial con deep learning: https://arxiv.org/html/2503.19223v1
 - Artículo de arXiv sobre MS-MFAD (multimodal LLM para anti-suplantación): https://arxiv.org/abs/2608.17328

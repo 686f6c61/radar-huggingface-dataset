@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Samanthagarcia/blip-demo es un repositorio de HuggingFace publicado bajo licencia MIT que contiene una implementación experimental de arquitectura BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de generación. No se trata de un modelo entrenado: la propia model card lo describe como un punto de partida con fines de inspección arquitectónica, cuyo fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un modelo con pesos aprendidos.
+Samanthagarcia/blip-demo es un repositorio de Hugging Face publicado bajo licencia MIT que contiene una implementación experimental de arquitectura BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de generación. No se trata de un modelo entrenado: la propia model card lo describe como un punto de partida con fines de inspección arquitectónica, cuyo fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un modelo con pesos aprendidos.
 
 El repositorio declara una escala nominal «huge» con atención de ventana deslizante, fusión de bajo rango, activación swish y normalización RMSNorm. Sin embargo, los pesos reales en safetensors suman 16.576 parámetros totales y el tamaño del repositorio es de 0,0 GB, lo que indica que el checkpoint publicado no materializa la escala anunciada. Es relevante ahora únicamente como artefacto de desarrollo: sirve para validar código de carga, integraciones y flujos de experimentación, no para inferencia de calidad.
 
@@ -48,7 +48,7 @@ Debe subrayarse que las capacidades siguientes corresponden al andamiaje de la a
 - Docencia y estudio de arquitecturas vision-lenguaje: el código es inspeccionable y de tamaño reducido, lo que facilita explicar cómo se combinan atención de ventana deslizante, fusión de bajo rango y RMSNorm en una implementación BLIP.
 - Referencia para comparaciones de capacidad igualada: la model card propone evaluar contra una línea base de capacidad equivalente y con las mismas semillas, por lo que este repositorio puede actuar como punto de partida metodológico.
 - Reproducción de experimentos controlados: al declarar explícitamente la receta por defecto (AdamW, planificador coseno), permite montar réplicas con distintos hiperparámetros y documentar la diferencia entre valores por defecto y ejecuciones completadas.
-- Auditoría de artefactos publicados en HuggingFace: útil como caso de estudio sobre discrepancias entre la escala declarada en la model card y el recuento real de parámetros de los pesos.
+- Auditoría de artefactos publicados en Hugging Face: útil como caso de estudio sobre discrepancias entre la escala declarada en la model card y el recuento real de parámetros de los pesos.
 
 ## Benchmarks y rendimiento
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Samanthagarcia/blip-demo | BLIP experimental (ventana deslizante, fusión de bajo rango, RMSNorm, swish) | 16.576 (safetensors) | no disponible | sin benchmarks; sin entrenamiento | MIT | HuggingFace, 15 descargas, 0 likes |
-| Salesforce/BLIP (blip-image-captioning-base) | BLIP base con backbone ViT base | no disponible en la informacion proporcionada | no disponible | preentrenado en COCO para captioning | no disponible en la informacion proporcionada | HuggingFace / GitHub oficial de Salesforce |
-| Salesforce/BLIP (blip-vqa-base) | BLIP base para respuesta visual a preguntas | no disponible en la informacion proporcionada | no disponible | orientado a VQA | no disponible en la informacion proporcionada | HuggingFace / GitHub oficial de Salesforce |
-| gizmo-ai/blip-image-captioning-base | BLIP base con backbone ViT base | no disponible en la informacion proporcionada | no disponible | preentrenado en COCO | no disponible en la informacion proporcionada | HuggingFace |
+| Samanthagarcia/blip-demo | BLIP experimental (ventana deslizante, fusión de bajo rango, RMSNorm, swish) | 16.576 (safetensors) | no disponible | sin benchmarks; sin entrenamiento | MIT | Hugging Face, 15 descargas, 0 likes |
+| Salesforce/BLIP (blip-image-captioning-base) | BLIP base con backbone ViT base | no disponible en la informacion proporcionada | no disponible | preentrenado en COCO para captioning | no disponible en la informacion proporcionada | Hugging Face / GitHub oficial de Salesforce |
+| Salesforce/BLIP (blip-vqa-base) | BLIP base para respuesta visual a preguntas | no disponible en la informacion proporcionada | no disponible | orientado a VQA | no disponible en la informacion proporcionada | Hugging Face / GitHub oficial de Salesforce |
+| gizmo-ai/blip-image-captioning-base | BLIP base con backbone ViT base | no disponible en la informacion proporcionada | no disponible | preentrenado en COCO | no disponible en la informacion proporcionada | Hugging Face |
 
 La comparación relevante no es de rendimiento sino de naturaleza del artefacto: los modelos de la familia BLIP de Salesforce y sus derivados son checkpoints entrenados y evaluados, mientras que blip-demo es un esqueleto de implementación sin pesos aprendidos.
 
@@ -88,7 +88,7 @@ La comparación relevante no es de rendimiento sino de naturaleza del artefacto:
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Samanthagarcia/blip-demo
+- Hugging Face: https://huggingface.co/Samanthagarcia/blip-demo
 - Repositorio oficial de BLIP de Salesforce: https://github.com/salesforce/BLIP
 - Demo de BLIP en el repositorio oficial: https://github.com/salesforce/BLIP/blob/main/demo.ipynb
 - Documentación de BLIP en transformers: https://huggingface.co/docs/transformers/main/en/model_doc/blip

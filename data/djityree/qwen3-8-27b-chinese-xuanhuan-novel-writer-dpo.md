@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Chinese-Xuanhuan-Novel-Writer-DPO (este) | 27B (base) + 353M (adaptador) | no disponible | LoRA SFT + DPO para ficción xuanhuan en chino | other | HuggingFace, 0 descargas |
-| unsloth/Qwen3.8-27B (base) | 27B | no disponible | Modelo generalista | no disponible | HuggingFace |
-| Adaptadores de escritura creativa en chino de la comunidad | variable | variable | LoRA sobre modelos Qwen o similares | variable | HuggingFace |
+| Qwen3.8-27B-Chinese-Xuanhuan-Novel-Writer-DPO (este) | 27B (base) + 353M (adaptador) | no disponible | LoRA SFT + DPO para ficción xuanhuan en chino | other | Hugging Face, 0 descargas |
+| unsloth/Qwen3.8-27B (base) | 27B | no disponible | Modelo generalista | no disponible | Hugging Face |
+| Adaptadores de escritura creativa en chino de la comunidad | variable | variable | LoRA sobre modelos Qwen o similares | variable | Hugging Face |
 
 No se dispone de datos de benchmarks ni de alternativas directamente comparables en la información proporcionada; la comparación se limita a la relación con el modelo base y a la categoría genérica de adaptadores LoRA de escritura creativa.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de alternativas directamente comparables
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/djityree/Qwen3.8-27B-Chinese-Xuanhuan-Novel-Writer-DPO
+- Hugging Face: https://huggingface.co/djityree/Qwen3.8-27B-Chinese-Xuanhuan-Novel-Writer-DPO
 - Modelo base: https://huggingface.co/unsloth/Qwen3.8-27B
 - Unsloth: https://github.com/unslothai/unsloth
 - PEFT: https://github.com/huggingface/peft

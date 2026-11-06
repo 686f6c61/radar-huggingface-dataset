@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`swordenamine/Morphic_memory` es un repositorio de HuggingFace publicado por el usuario swordenamine (firmado en la model card como «swordenkisk») que no contiene un modelo de lenguaje con pesos entrenados, sino la descripción de una biblioteca de Python denominada «morphic_memory», presentada por su autor como «el primer motor de memoria riemanniana del mundo». El artefacto se define como un sistema de memoria asociativa construido sobre tres pilares declarados: una variedad riemanniana de memorias, dinámicas de atractores de Hopfield modernas y un mecanismo de «resonancia mórfica» formalizado como un núcleo gaussiano sobre la variedad. No se documentan parámetros, tokenizador, corpus de entrenamiento ni artefactos de pesos.
+`swordenamine/Morphic_memory` es un repositorio de Hugging Face publicado por el usuario swordenamine (firmado en la model card como «swordenkisk») que no contiene un modelo de lenguaje con pesos entrenados, sino la descripción de una biblioteca de Python denominada «morphic_memory», presentada por su autor como «el primer motor de memoria riemanniana del mundo». El artefacto se define como un sistema de memoria asociativa construido sobre tres pilares declarados: una variedad riemanniana de memorias, dinámicas de atractores de Hopfield modernas y un mecanismo de «resonancia mórfica» formalizado como un núcleo gaussiano sobre la variedad. No se documentan parámetros, tokenizador, corpus de entrenamiento ni artefactos de pesos.
 
-El repositorio presenta cero descargas y cero «likes» en el momento de la consulta, y la model card consiste íntegramente en texto promocional y pseudocódigo, sin resultados experimentales, sin métricas y sin enlaces a publicaciones revisadas por pares. La licencia aparece como MIT en una insignia del README, mientras que los metadatos de HuggingFace no declaran licencia alguna, lo que genera una discrepancia relevante para cualquier uso comercial.
+El repositorio presenta cero descargas y cero «likes» en el momento de la consulta, y la model card consiste íntegramente en texto promocional y pseudocódigo, sin resultados experimentales, sin métricas y sin enlaces a publicaciones revisadas por pares. La licencia aparece como MIT en una insignia del README, mientras que los metadatos de Hugging Face no declaran licencia alguna, lo que genera una discrepancia relevante para cualquier uso comercial.
 
 Su interés actual es, por tanto, documental y de investigación teórica: propone una formulación matemática que relaciona la energía de Hopfield con la curvatura riemanniana y describe una API de recuperación asociativa. No hay evidencia publicada de que la implementación exista, funcione o supere a alternativas consolidadas de búsqueda vectorial, por lo que debe tratarse como una propuesta especulativa y no como un componente listo para producción.
 
@@ -18,7 +18,7 @@ Su interés actual es, por tanto, documental y de investigación teórica: propo
 | Longitud de contexto | no disponible (el README menciona `dimensions=512` como ejemplo de dimension del espacio de memoria, no una ventana de contexto) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | Discrepancia: insignia MIT en el README, sin licencia declarada en los metadatos de HuggingFace |
+| Licencia | Discrepancia: insignia MIT en el README, sin licencia declarada en los metadatos de Hugging Face |
 | Formato de pesos | no disponible (no se publican safetensors, GGUF ni ningun otro artefacto de pesos) |
 | Tipo de artefacto | Repositorio de codigo / propuesta teorica (pipeline no disponible) |
 | Version declarada | 1.0.0 |
@@ -75,7 +75,7 @@ La comparación es estructural y no de rendimiento, ya que `Morphic_memory` no p
 
 | Alternativa | Naturaleza | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| swordenamine/Morphic_memory | Biblioteca experimental de memoria riemanniana | no disponible | no disponible | Sin declarar en HuggingFace (insignia MIT en el README) | Repositorio con 0 descargas y 0 likes |
+| swordenamine/Morphic_memory | Biblioteca experimental de memoria riemanniana | no disponible | no disponible | Sin declarar en Hugging Face (insignia MIT en el README) | Repositorio con 0 descargas y 0 likes |
 | FAISS | Biblioteca de búsqueda por similitud y clustering sobre vectores densos | no aplica | no aplica | MIT | Ampliamente utilizada en produccion |
 | hnswlib | Indice ANN basado en grafos HNSW | no aplica | no aplica | Apache 2.0 | Estandar de facto para busqueda aproximada |
 | Redes de Hopfield modernas (implementaciones de referencia, p. ej. lucidrains/hopfield-layers) | Capa de atencion/memoria asociativa basada en la energia de Ramsauer et al. (2020) | Configurable por el usuario | Depende de la configuracion | MIT (verificar en el repositorio) | Implementaciones publicas con tests y ejemplos |
@@ -86,7 +86,7 @@ Frente a ellas, la propuesta de `Morphic_memory` se diferencia únicamente en el
 ## Limitaciones y advertencias
 
 - Ausencia de artefactos: el repositorio no publica pesos, tokenizador, código ejecutable verificable ni archivos de configuración; la model card es esencialmente un documento de intenciones.
-- Ambigüedad legal: los metadatos de HuggingFace no declaran licencia, mientras que el README muestra una insignia MIT. Cualquier uso comercial exige aclaración previa por escrito con el autor.
+- Ambigüedad legal: los metadatos de Hugging Face no declaran licencia, mientras que el README muestra una insignia MIT. Cualquier uso comercial exige aclaración previa por escrito con el autor.
 - Falta de validación: cero descargas y cero «likes»; no hay publicaciones revisadas por pares ni enlaces a repositorios de código, pruebas unitarias o conjuntos de evaluación.
 - Riesgo de marketing técnico: expresiones como «el primer motor de memoria riemanniana del mundo» o «capacidad infinita» no están respaldadas por evidencia y deben tratarse como afirmaciones del autor.
 - Base teórica discutible: la «resonancia mórfica» procede de la propuesta de Rupert Sheldrake, sin aceptación en física; en el README se reduce a un núcleo gaussiano sobre una variedad, lo que equivale a un suavizado por kernel y no a un mecanismo nuevo demostrado.
@@ -98,6 +98,6 @@ Frente a ellas, la propuesta de `Morphic_memory` se diferencia únicamente en el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/Morphic_memory
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/Morphic_memory
 
 No se han encontrado en la información disponible enlaces adicionales a papers, blogs, repositorios de código, demos o documentación complementaria. Las referencias internas del README al trabajo de John Hopfield (Premio Nobel 2024) y a las redes de Hopfield modernas no incluyen URL ni cita bibliográfica verificable dentro del repositorio.

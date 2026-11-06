@@ -2,7 +2,7 @@
 
 ## Resumen
 
-botlyBot000 es un modelo de lenguaje publicado en HuggingFace por el usuario manlyMan000 bajo licencia MIT. La información disponible lo describe como un fine-tune derivado de dos modelos base: `diablomike20/Claude-Opus-5.5` y un modelo de nombre compuesto de la familia Qwen (`nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2`). No se trata de un modelo original con paper o documentación técnica asociada, sino de un ajuste fino publicado sin model card descriptiva más allá de los metadatos YAML.
+botlyBot000 es un modelo de lenguaje publicado en Hugging Face por el usuario manlyMan000 bajo licencia MIT. La información disponible lo describe como un fine-tune derivado de dos modelos base: `diablomike20/Claude-Opus-5.5` y un modelo de nombre compuesto de la familia Qwen (`nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2`). No se trata de un modelo original con paper o documentación técnica asociada, sino de un ajuste fino publicado sin model card descriptiva más allá de los metadatos YAML.
 
 La relevancia de esta ficha es limitada desde el punto de vista técnico: el repositorio no incluye información sobre arquitectura, número de parámetros, datos de entrenamiento, metodología de ajuste ni resultados de evaluación. El modelo tiene 0 descargas y 1 like en el momento de la consulta, y fue creado el 3 de noviembre de 2026. Su interés principal, si alguno, reside en ser un ejemplo de la práctica de fine-tuning sobre modelos derivados con nombres que imitan a modelos comerciales (Claude, GPT, Grok) sin que exista verificación pública de su procedencia real.
 
@@ -74,6 +74,6 @@ No disponible. La información proporcionada no permite identificar modelos comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manlyMan000/botlyBot000
+- Hugging Face: https://huggingface.co/manlyMan000/botlyBot000
 - Modelo base 1: https://huggingface.co/diablomike20/Claude-Opus-5.5
 - Modelo base 2: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2

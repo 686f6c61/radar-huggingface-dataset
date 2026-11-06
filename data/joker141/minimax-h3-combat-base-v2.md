@@ -66,7 +66,7 @@ No se han proporcionado datos sobre modelos similares en la informacion disponib
 
 | Adaptador | Modelo base | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiniMax-H3-Combat-Base-V2 | Comfy-Org/MiniMax-H3 | 148 MB | no disponible | HuggingFace, CivArchive |
+| MiniMax-H3-Combat-Base-V2 | Comfy-Org/MiniMax-H3 | 148 MB | no disponible | Hugging Face, CivArchive |
 | Combat Base V1 (anterior) | Comfy-Org/MiniMax-H3 | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,7 +80,7 @@ No se han proporcionado datos sobre modelos similares en la informacion disponib
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JOKER141/MiniMax-H3-Combat-Base-V2
+- Hugging Face: https://huggingface.co/JOKER141/MiniMax-H3-Combat-Base-V2
 - CivArchive: https://civarchive.com/models/2853878?modelVersionId=3246572
 - Integraciones de MiniMax H3 en GitHub: https://github.com/MiniMax-AI/awesome-minimax-h3-integration
 - Informacion del modelo base MiniMax H3 Max: https://fal.ai/minimax-h3-max

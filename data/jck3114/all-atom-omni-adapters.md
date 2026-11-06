@@ -75,7 +75,7 @@ No disponible. No se han proporcionado modelos comparables de la misma categorí
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jck3114/all-atom-omni-adapters
+- Repositorio en Hugging Face: https://huggingface.co/jck3114/all-atom-omni-adapters
 - Código del proyecto: https://github.com/jiale0402/all-atom-omni
 - Web y teoría: https://jiale0402.github.io/all-atom-omni/
 - Borrador del artículo: https://jiale0402.github.io/all-atom-omni/paper.pdf

@@ -6,7 +6,7 @@
 
 El problema que aborda es la fragmentación de clientes: en lugar de instalar una aplicación por proveedor, el repositorio ofrece un bootstrap común, un gestor de claves de API, un conmutador (`ai claude`, `ai gemini`, etc.) y un servidor HTTP local en el puerto 8765 que expone el proveedor activo al resto de dispositivos de la red. Todo el cómputo del modelo ocurre en los servidores del proveedor correspondiente; el dispositivo Android solo actúa como cliente.
 
-Su relevancia es, por tanto, la de una herramienta de desarrollo, no la de un modelo evaluable. La ficha se ha redactado igualmente con la estructura solicitada, marcando como "no disponible" todos los parámetros que no existen o no se han publicado. Conviene señalar que los metadatos de HuggingFace no declaran licencia ni idiomas, que la model card atribuye el proyecto a "swordenkisk" mientras que el autor del repo es "swordenamine", y que las fechas de creación (2026-10-17) y actualización (2026-03-05) son incoherentes entre sí.
+Su relevancia es, por tanto, la de una herramienta de desarrollo, no la de un modelo evaluable. La ficha se ha redactado igualmente con la estructura solicitada, marcando como "no disponible" todos los parámetros que no existen o no se han publicado. Conviene señalar que los metadatos de Hugging Face no declaran licencia ni idiomas, que la model card atribuye el proyecto a "swordenkisk" mientras que el autor del repo es "swordenamine", y que las fechas de creación (2026-10-17) y actualización (2026-03-05) son incoherentes entre sí.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ Su relevancia es, por tanto, la de una herramienta de desarrollo, no la de un mo
 | Longitud de contexto | No disponible. Depende del proveedor externo invocado (Claude, OpenAI, Gemini, DeepSeek, Mistral) |
 | Tipos de cuantización | No disponible (no hay pesos que cuantizar) |
 | Idiomas soportados | No disponibles en los metadatos. El idioma efectivo lo determina la API del proveedor elegido |
-| Licencia | MIT según la model card (Copyright 2026 swordenkisk). El metadato de licencia de HuggingFace no está declarado |
+| Licencia | MIT según la model card (Copyright 2026 swordenkisk). El metadato de licencia de Hugging Face no está declarado |
 | Formato de pesos | No disponible (no se distribuyen pesos; solo código y scripts) |
 | Plataforma | Android 5.0 o superior con Termux instalado desde F-Droid |
 | Tamaño en disco | Aproximadamente 300 MB en total (Termux ~80 MB, Node.js ~55 MB, Python ~15 MB, Git y herramientas ~45 MB, CLI de IA ~105 MB) |
@@ -26,8 +26,8 @@ Su relevancia es, por tanto, la de una herramienta de desarrollo, no la de un mo
 | Proveedores integrados | Claude (~35 MB), ChatGPT (~20 MB), Gemini (~20 MB), DeepSeek (~15 MB), Mistral (~15 MB) |
 | Servidor local | HTTP en el puerto 8765, endpoint `POST /ask` con campos `prompt` y `ai` |
 | Versión declarada | 1.0.0 |
-| Fecha de creación en HuggingFace | 2026-10-17 |
-| Fecha de actualización en HuggingFace | 2026-03-05 (anterior a la de creación; dato incoherente) |
+| Fecha de creación en Hugging Face | 2026-10-17 |
+| Fecha de actualización en Hugging Face | 2026-03-05 (anterior a la de creación; dato incoherente) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento ni de parámetros que permitan una compara
 - Almacenamiento de credenciales: `set_keys.sh` gestiona las claves de API en el propio dispositivo. La model card no describe cifrado, permisos de fichero ni gestión de secretos, lo que es un riesgo en un terminal móvil potencialmente compartido o comprometido.
 - Exposición en red: el servidor del puerto 8765 se anuncia como accesible desde cualquier dispositivo de la misma Wi-Fi. No se documenta autenticación, TLS ni control de acceso, por lo que no debería exponerse fuera de redes de confianza.
 - Costes no acotados: el uso se factura según las tarifas de cada proveedor. El repositorio no incluye limitadores de gasto, cuotas ni registro de consumo.
-- Licencia ambigua: la model card declara MIT, pero el metadato de HuggingFace no declara licencia, y las condiciones de uso de cada API (Anthropic, OpenAI, Google, DeepSeek, Mistral) se aplican de forma independiente y pueden restringir el uso comercial del contenido generado.
+- Licencia ambigua: la model card declara MIT, pero el metadato de Hugging Face no declara licencia, y las condiciones de uso de cada API (Anthropic, OpenAI, Google, DeepSeek, Mistral) se aplican de forma independiente y pueden restringir el uso comercial del contenido generado.
 - Metadatos inconsistentes: autor del repo ("swordenamine") distinto del autor citado en la model card ("swordenkisk"); fecha de actualización anterior a la de creación; cero descargas y cero likes, sin señales de validación por parte de la comunidad.
 - Sin hoja de ruta verificable: las versiones 1.1 a 2.0 (Grok, puente con Ollama, modo comparación, GUI nativa) figuran como casillas sin marcar; no hay evidencia de implementación.
 - Idiomas: no se declaran. La calidad multilingüe depende exclusivamente del proveedor remoto y no del repositorio.
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento ni de parámetros que permitan una compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/ai_code_her
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/ai_code_her
 - Perfil del autor citado en la model card: https://github.com/swordenkisk
 - Repositorio de GitHub referenciado en el bootstrap (según la model card): https://github.com/swordenkisk/ai_code_her
 - Script de instalación maestra citado: https://raw.githubusercontent.com/swordenkisk/ai_code_her/main/scripts/bootstrap_all.sh

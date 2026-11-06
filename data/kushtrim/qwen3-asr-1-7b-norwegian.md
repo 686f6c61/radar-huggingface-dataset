@@ -4,7 +4,7 @@
 
 Kushtrim/Qwen3-ASR-1.7B-Norwegian es un modelo de reconocimiento automático del habla (ASR) fine-tuneado sobre Qwen/Qwen3-ASR-1.7B, desarrollado por el usuario Kushtrim para transcribir audio en noruego. El modelo base, Qwen3-ASR, es una serie de sistemas ASR open-source creados por QwenLM que soportan identificación de idioma y transcripción para 52 idiomas y dialectos, basándose en la capacidad de comprensión auditiva del modelo fundacional Qwen3-Omni.
 
-Este fine-tuning específico adapta el modelo base a las particularidades del noruego, tanto bokmål como nynorsk, con el objetivo de mejorar la precisión en transcripciones de este idioma. El modelo tiene aproximadamente 2.040 millones de parámetros (2.038.052.480), un tamaño compacto que permite su ejecución en GPUs de consumo medio. Está disponible bajo licencia Apache-2.0, aunque su acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace.
+Este fine-tuning específico adapta el modelo base a las particularidades del noruego, tanto bokmål como nynorsk, con el objetivo de mejorar la precisión en transcripciones de este idioma. El modelo tiene aproximadamente 2.040 millones de parámetros (2.038.052.480), un tamaño compacto que permite su ejecución en GPUs de consumo medio. Está disponible bajo licencia Apache-2.0, aunque su acceso es restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 La relevancia de este modelo reside en que cubre una necesidad concreta: ASR de alta calidad para un idioma de baja representación como el noruego, aprovechando un modelo base robusto y multilingüe. Es adecuado para desarrolladores que buscan transcribir audio en noruego sin depender de servicios propietarios, con la flexibilidad de un modelo open-source y la posibilidad de cuantización para despliegues ligeros.
 
@@ -45,7 +45,7 @@ El modelo es un fine-tune de Qwen/Qwen3-ASR-1.7B, que pertenece a la familia Qwe
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye métricas como WER (Word Error Rate) ni comparaciones con otros modelos ASR para noruego. Se recomienda evaluar el modelo en el dominio objetivo antes de su uso en producción.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye métricas como WER (Word Error Rate) ni comparaciones con otros modelos ASR para noruego. Se recomienda evaluar el modelo en el dominio objetivo antes de su uso en producción.
 
 ## Requisitos de hardware
 
@@ -68,7 +68,7 @@ No se dispone de datos de benchmark que permitan una comparación cuantitativa. 
 ## Limitaciones y advertencias
 
 - El rendimiento depende fuertemente del dominio, acento y condiciones de ruido del audio; funciona mejor con grabaciones limpias (mono, 16 kHz) y puede degradarse con audio de baja calidad o acentos regionales marcados.
-- El acceso al modelo está restringido (gated) en HuggingFace, lo que requiere que el usuario acepte las condiciones de uso antes de descargarlo.
+- El acceso al modelo está restringido (gated) en Hugging Face, lo que requiere que el usuario acepte las condiciones de uso antes de descargarlo.
 - No se han publicado métricas de error (WER) ni evaluaciones exhaustivas, por lo que su precisión real es desconocida hasta que se pruebe en un corpus de validación.
 - Al ser un fine-tuning de un modelo base, puede heredar sesgos presentes en los datos de entrenamiento originales, aunque no se han documentado casos específicos.
 - Riesgo de alucinación en transcripciones: en segmentos ambiguos o con ruido, el modelo podría generar texto plausible pero incorrecto.
@@ -77,8 +77,8 @@ No se dispone de datos de benchmark que permitan una comparación cuantitativa. 
 
 ## Enlaces
 
-- [HuggingFace - Kushtrim/Qwen3-ASR-1.7B-Norwegian](https://huggingface.co/Kushtrim/Qwen3-ASR-1.7B-Norwegian)
-- [HuggingFace - Versión anterior (old)](https://huggingface.co/Kushtrim/Qwen3-ASR-1.7B-Norwegian-old)
+- [Hugging Face - Kushtrim/Qwen3-ASR-1.7B-Norwegian](https://huggingface.co/Kushtrim/Qwen3-ASR-1.7B-Norwegian)
+- [Hugging Face - Versión anterior (old)](https://huggingface.co/Kushtrim/Qwen3-ASR-1.7B-Norwegian-old)
 - [GitHub - QwenLM/Qwen3-ASR](https://github.com/QwenLM/Qwen3-ASR)
 - [FriendliAI - Página del modelo](https://friendli.ai/models/Kushtrim/Qwen3-ASR-1.7B-Norwegian)
 - [Free2AITools - Análisis del modelo old](https://free2aitools.com/model/kushtrim/qwen3-asr-1.7b-norwegian-old)

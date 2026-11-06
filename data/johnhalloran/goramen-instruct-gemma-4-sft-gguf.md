@@ -82,7 +82,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/johnhalloran/goramen-instruct-gemma-4-sft-gguf
+- Modelo en Hugging Face: https://huggingface.co/johnhalloran/goramen-instruct-gemma-4-sft-gguf
 - Dataset de entrenamiento: https://huggingface.co/datasets/johnhalloran/goramen-instruct
 - Dataset del blog (para recuperación): https://huggingface.co/datasets/johnhalloran/goramen-blog
 - Modelo base (MLX): https://huggingface.co/mlx-community/gemma-4-e4b-it-4bit

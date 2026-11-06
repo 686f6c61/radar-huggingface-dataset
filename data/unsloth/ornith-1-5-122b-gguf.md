@@ -37,7 +37,7 @@ La publicación de Unsloth añade una capa de cuantización: GGUFs con Unsloth D
 - Razonamiento y resolución de tareas de codificación agéntica: los benchmarks reportados incluyen TerminalBench 2.1 (81,2) y CyberGym (80), orientados a operación en terminal y ciberseguridad.
 - Capacidad declarada de ejecución de tareas multi-paso dentro de scaffolds, dado que el entrenamiento optimiza explícitamente la construcción de harness y los rollouts de solución.
 - Soporte de tool calling / function calling: no confirmado explícitamente en la información disponible (la etiqueta `endpoints_compatible` sugiere compatibilidad con endpoints de inferencia, no necesariamente con protocolos de herramientas).
-- Capacidades multilingües: no disponible; el campo de idiomas de HuggingFace figura como no disponible.
+- Capacidades multilingües: no disponible; el campo de idiomas de Hugging Face figura como no disponible.
 - Capacidades de visión o audio: no disponibles para esta variante (la comparativa menciona un modelo distinto, Nemotron 3.5 Super VL, con capacidades visuales, pero no se atribuyen a Ornith-1.5-122B).
 - Modo "thinking" o razonamiento extendido: no disponible en la información proporcionada.
 - Despliegue en una sola GPU y variante móvil: la model card menciona una variante cuantizada `Ornith-1.5-122B-Mobile` para despliegue en dispositivos móviles.
@@ -104,7 +104,7 @@ Frente a modelos de tamano comparable, Ornith-1.5-122B queda 2,2 puntos por deba
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/unsloth/Ornith-1.5-122B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/unsloth/Ornith-1.5-122B-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B
 - Licencia del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B/blob/main/LICENSE
 - Blog de Ornith-1.5: https://ornith.ai/ornith_1_5.html
@@ -113,5 +113,5 @@ Frente a modelos de tamano comparable, Ornith-1.5-122B queda 2,2 puntos por deba
 - Repositorio GitHub de Unsloth: https://github.com/unslothai/unsloth
 - Documentacion de Unsloth: https://unsloth.ai/docs
 - Releases de Unsloth: https://github.com/unslothai/unsloth/releases
-- Perfil de Unsloth en HuggingFace: https://huggingface.co/unsloth
+- Perfil de Unsloth en Hugging Face: https://huggingface.co/unsloth
 - Discord de Unsloth: https://discord.gg/unsloth

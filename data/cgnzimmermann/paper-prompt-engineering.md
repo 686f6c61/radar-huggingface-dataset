@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `cgnzimmermann/paper-prompt-engineering` no es un modelo de lenguaje entrenado, sino una coleccion estructurada de notas de investigacion sobre ingenieria de prompts. La model card lo describe explicitamente como un conjunto de apuntes exploratorios con referencias de evaluacion y preguntas abiertas, donde los planes e hipotesis se mantienen separados de los resultados ya completados. Su autoria corresponde al usuario de HuggingFace `cgnzimmermann` y se publica bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0).
+El repositorio `cgnzimmermann/paper-prompt-engineering` no es un modelo de lenguaje entrenado, sino una coleccion estructurada de notas de investigacion sobre ingenieria de prompts. La model card lo describe explicitamente como un conjunto de apuntes exploratorios con referencias de evaluacion y preguntas abiertas, donde los planes e hipotesis se mantienen separados de los resultados ya completados. Su autoria corresponde al usuario de Hugging Face `cgnzimmermann` y se publica bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0).
 
 El unico artefacto principal es un fichero `notes.md` acompanado de un `README.md`. Aunque el repositorio esta etiquetado con `safetensors` y `transformer`, y contiene un fichero de pesos con 24.832 parametros totales, este tamano es incompatible con cualquier modelo de lenguaje funcional: se trata, con toda probabilidad, de un artefacto de metadatos o de un marcador de posicion sin capacidad de inferencia real. La model card aclara que no se reclama ninguna mejora en benchmarks, ninguna ablacion completada, ni codigo ni checkpoint entrenado.
 
@@ -78,4 +78,4 @@ No se conocen repositorios directamente comparables en la informacion proporcion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cgnzimmermann/paper-prompt-engineering
+- Repositorio en Hugging Face: https://huggingface.co/cgnzimmermann/paper-prompt-engineering

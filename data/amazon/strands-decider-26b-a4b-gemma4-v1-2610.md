@@ -2,7 +2,7 @@
 
 ## Resumen
 
-strands-decider-26B-A4B-gemma4-v1-2610 es un adaptador LoRA publicado por Amazon sobre el modelo base google/gemma-4-26B-A4B-it, orientado a la toma de decisiones tipadas ("typed-decisions") y a la clasificacion. No es un modelo generativo de proposito general: se distribuye como adaptador PEFT (0,3 GB de repositorio) que se monta sobre los pesos del modelo base, y su pipeline declarado en HuggingFace es text-classification.
+strands-decider-26B-A4B-gemma4-v1-2610 es un adaptador LoRA publicado por Amazon sobre el modelo base google/gemma-4-26B-A4B-it, orientado a la toma de decisiones tipadas ("typed-decisions") y a la clasificacion. No es un modelo generativo de proposito general: se distribuye como adaptador PEFT (0,3 GB de repositorio) que se monta sobre los pesos del modelo base, y su pipeline declarado en Hugging Face es text-classification.
 
 El modelo pertenece a la familia interna "strands-decider" y su etiquetado sugiere que actua como componente de decision dentro de una arquitectura de agentes: recibe una entrada (una tarea, una respuesta candidata o un fragmento de codigo) y emite una decision calibrada y tipada en lugar de texto libre. Los tags "calibration" y "typed-decisions" apuntan a ese uso como modulo de enrutado, verificacion o validacion dentro de pipelines mayores.
 
@@ -95,7 +95,7 @@ No hay informacion disponible sobre modelos directamente comparables en cuanto a
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| strands-decider-26B-A4B-gemma4-v1-2610 | Adaptador sobre 26B (aprox. 4B activos) | No disponible (evaluado a 4096) | Apache 2.0 | HuggingFace, 0 descargas |
+| strands-decider-26B-A4B-gemma4-v1-2610 | Adaptador sobre 26B (aprox. 4B activos) | No disponible (evaluado a 4096) | Apache 2.0 | Hugging Face, 0 descargas |
 | google/gemma-4-26B-A4B-it (modelo base) | 26B (aprox. 4B activos) | No disponible | No disponible en esta informacion | No disponible |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible |
 
@@ -113,6 +113,6 @@ No hay informacion disponible sobre modelos directamente comparables en cuanto a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amazon/strands-decider-26B-A4B-gemma4-v1-2610
+- Hugging Face: https://huggingface.co/amazon/strands-decider-26B-A4B-gemma4-v1-2610
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Resultados de busqueda web: no se han encontrado enlaces relevantes (papers, blogs, repos o demos) en la informacion disponible.

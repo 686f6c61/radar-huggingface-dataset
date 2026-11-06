@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rakshak es un artefacto publicado en HuggingFace por el usuario KANAKq (ID `KANAKq/rakshak`) que se presenta como un asistente de comandos orientado a pruebas de seguridad autorizadas ("ethical hacking"). Segun su propia model card, se trata de un asesor local y offline que sugiere comandos de Kali Linux indicando un marcador de objetivo (`<target>`) y la consecuencia esperada de cada comando, con un enfoque explícito de "human-in-the-loop": el operador es quien ejecuta, no el modelo.
+Rakshak es un artefacto publicado en Hugging Face por el usuario KANAKq (ID `KANAKq/rakshak`) que se presenta como un asistente de comandos orientado a pruebas de seguridad autorizadas ("ethical hacking"). Segun su propia model card, se trata de un asesor local y offline que sugiere comandos de Kali Linux indicando un marcador de objetivo (`<target>`) y la consecuencia esperada de cada comando, con un enfoque explícito de "human-in-the-loop": el operador es quien ejecuta, no el modelo.
 
 El paquete no documenta ni el modelo base ni la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados o la licencia. La model card se limita a describir el flujo de puesta en marcha mediante un `Modelfile` de Ollama (`ollama create rakshak -f Modelfile`) y dos scripts de apoyo (`rakshak_assist.py` como asesor y `test_rakshak.py` para pruebas). El texto está redactado en hinglish (mezcla de hindi e inglés) y no incluye referencias a datasets, entrenamiento o evaluaciones.
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Naturaleza | Parametros | Contexto | Licencia | Evaluaciones publicas | Disponibilidad |
 |---|---|---|---|---|---|---|
-| KANAKq/rakshak | Asesor de comandos de Kali empaquetado como Modelfile de Ollama | no disponible | no disponible | no disponible | no publicadas | HuggingFace, 0 descargas |
-| WhiteRabbitNeo (familia) | Modelo afinado para ciberseguridad ofensiva y defensiva | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda | no consultadas | Pesos publicados en HuggingFace |
+| KANAKq/rakshak | Asesor de comandos de Kali empaquetado como Modelfile de Ollama | no disponible | no disponible | no disponible | no publicadas | Hugging Face, 0 descargas |
+| WhiteRabbitNeo (familia) | Modelo afinado para ciberseguridad ofensiva y defensiva | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda | no consultadas | Pesos publicados en Hugging Face |
 | PentestGPT | Herramienta de asistencia a pentesting basada en LLM | no aplica (es una aplicacion) | no aplica | no disponible en esta busqueda | no consultadas | Repositorio publico |
 
 Los resultados de la busqueda web realizada no aportan informacion util sobre alternativas ni sobre el propio Rakshak: los enlaces recuperados tratan sobre tiendas de claves de videojuegos, incidencias de GOG Galaxy y pedidos cancelados en AliExpress, por lo que no se han podido extraer datos comparativos verificados. La comparativa anterior se limita a identificar categorias equivalentes; las celdas marcadas como no disponibles reflejan la ausencia de datos contrastados en esta consulta, no la inexistencia de dichos datos.
@@ -93,7 +93,7 @@ Los resultados de la busqueda web realizada no aportan informacion util sobre al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KANAKq/rakshak
+- Modelo en Hugging Face: https://huggingface.co/KANAKq/rakshak
 - Documentacion de Ollama (formato `Modelfile` y ejecucion local): https://ollama.com
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre el modelo. Todos los resultados recuperados corresponden a hilos de Reddit sin relacion con Rakshak (consultas sobre IVA en G2A, claves globales de Xbox Game Pass, un error de GOG Galaxy y pedidos cancelados en AliExpress), por lo que se descartan como fuentes.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.

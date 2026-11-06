@@ -19,7 +19,7 @@ Su relevancia es fundamentalmente cientifica: el articulo investiga si la geomet
 | Tipos de cuantizacion | no disponible (no se publican pesos cuantizados; solo `pytorch_model.bin`) |
 | Idiomas soportados | no disponible (entrenado sobre EleutherAI/the_pile_deduplicated, corpus de predominio anglosajon) |
 | Licencia | no disponible |
-| Formato de pesos | PyTorch (`pytorch_model.bin`) con `config.json` de HuggingFace y `config.yaml` original de OLMo; sin safetensors ni GGUF |
+| Formato de pesos | PyTorch (`pytorch_model.bin`) con `config.json` de Hugging Face y `config.yaml` original de OLMo; sin safetensors ni GGUF |
 | Tokens de entrenamiento | 32B |
 | Batch size | 32 secuencias de 2048 tokens |
 | Learning rate pico | 0.0065 |
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tokens de entrenamiento | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GeoLadder-40M-32B (este modelo) | 40M | 32B | 2048 | no disponible | HuggingFace, 40 checkpoints en ramas, requiere `hf_olmo` |
-| Pythia-70M (EleutherAI) | 70M | 300B (Pile deduplicado) | 2048 | Apache-2.0 | HuggingFace, 154 checkpoints, ampliamente soportado |
-| Pythia-160M (EleutherAI) | 160M | 300B (Pile deduplicado) | 2048 | Apache-2.0 | HuggingFace, ecosistema maduro |
-| GPT-2 small (OpenAI) | 124M | aproximadamente 40 GB de WebText | 1024 | licencia MIT modificada | HuggingFace, soporte universal |
+| GeoLadder-40M-32B (este modelo) | 40M | 32B | 2048 | no disponible | Hugging Face, 40 checkpoints en ramas, requiere `hf_olmo` |
+| Pythia-70M (EleutherAI) | 70M | 300B (Pile deduplicado) | 2048 | Apache-2.0 | Hugging Face, 154 checkpoints, ampliamente soportado |
+| Pythia-160M (EleutherAI) | 160M | 300B (Pile deduplicado) | 2048 | Apache-2.0 | Hugging Face, ecosistema maduro |
+| GPT-2 small (OpenAI) | 124M | aproximadamente 40 GB de WebText | 1024 | licencia MIT modificada | Hugging Face, soporte universal |
 
 Los datos de los modelos alternativos proceden de sus model cards publicas. La diferencia principal de este checkpoint frente a ellos no es el rendimiento, que no esta publicado, sino su proposito: forma parte de una suite de 108 modelos con hiperparametros variados de forma controlada y conserva 40 checkpoints intermedios junto al orden exacto de los datos de entrenamiento, algo que ninguna de las alternativas ofrece con ese nivel de trazabilidad.
 
@@ -92,7 +92,7 @@ Los datos de los modelos alternativos proceden de sus model cards publicas. La d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dill-lab/GeoLadder-40M-32B-bs32-lr0.0065-wd0.1-decay0.01
+- Modelo en Hugging Face: https://huggingface.co/dill-lab/GeoLadder-40M-32B-bs32-lr0.0065-wd0.1-decay0.01
 - Coleccion GeoLadder (los 108 modelos de la suite): https://huggingface.co/collections/dill-lab/geoladder-6acd192e30ec71aff2998e2e
 - Paper (PMLR 306): https://proceedings.mlr.press/v306/kulkarni26c.html
 - Preprint en arXiv: https://arxiv.org/abs/2602.20433

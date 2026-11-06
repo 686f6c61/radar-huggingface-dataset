@@ -78,7 +78,7 @@ No se dispone de datos de benchmarks para comparar el rendimiento real entre est
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/hermitdave/Qwen3.6-35B-A3B-MLX-3bit-mixed_3_8
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/hermitdave/Qwen3.6-35B-A3B-MLX-3bit-mixed_3_8
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Conversión alternativa del mismo autor (IQ mix): https://huggingface.co/hermitdave/qwen36-35b-a3b-p2-iq-mix
 - Informe sobre fine-tunes MLX de Qwen3.6-35B-A3B: https://github.com/manjufkanavi/skills/blob/main/deep-research/reports/qwen36-35b-a3b-mlx-finetunes-20260815.md

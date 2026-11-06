@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Sev-in/hf_tokenizer` aloja un tokenizer publicado en HuggingFace Hub bajo la cuenta del usuario Sev-in. La model card asociada es una plantilla generada automáticamente por la librería `transformers`, sin información sustancial sobre el modelo, su arquitectura, entrenamiento o capacidades. No se especifica qué tokenizer concreto contiene, ni su vocabulario, ni el modelo al que está asociado.
+El repositorio `Sev-in/hf_tokenizer` aloja un tokenizer publicado en Hugging Face Hub bajo la cuenta del usuario Sev-in. La model card asociada es una plantilla generada automáticamente por la librería `transformers`, sin información sustancial sobre el modelo, su arquitectura, entrenamiento o capacidades. No se especifica qué tokenizer concreto contiene, ni su vocabulario, ni el modelo al que está asociado.
 
 En el momento de la consulta, el repositorio registra cero descargas y cero likes, lo que sugiere que se trata de una publicación reciente o de prueba. La fecha de creación es el 21 de agosto de 2026. No se dispone de documentación adicional, papers ni demos que permitan evaluar su utilidad o rendimiento. Por tanto, cualquier uso en producción requeriría una inspección directa del contenido del repositorio.
 
@@ -53,4 +53,4 @@ No disponible. No se puede comparar con otros tokenizers al desconocer sus carac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sev-in/hf_tokenizer
+- Repositorio en Hugging Face: https://huggingface.co/Sev-in/hf_tokenizer

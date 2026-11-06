@@ -103,5 +103,5 @@ No se dispone de informacion sobre modelos comparables publicados con los que co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gustavolinoia/homer-bart-cnn-classifier
+- Hugging Face: https://huggingface.co/gustavolinoia/homer-bart-cnn-classifier
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

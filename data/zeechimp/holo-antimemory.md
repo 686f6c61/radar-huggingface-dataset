@@ -2,11 +2,11 @@
 
 ## Resumen
 
-holo-antimemory es una librería de memoria asociativa escrita en Python sobre NumPy, publicada por el usuario zeechimp (Sylv Q) en HuggingFace. No es un modelo de lenguaje ni una red neuronal entrenada: es una implementación de computación hiperdimensional (hyperdimensional computing, HDC) y arquitectura vector-simbólica (vector-symbolic architecture, VSA) cuyo objetivo es representar la negación como un objeto de primera clase dentro de un almacén de conocimiento. En lugar de limitarse a registrar presencia («este hecho está en el almacén»), mantiene dos trazas independientes de afirmaciones y negaciones en un espacio vectorial complejo de dimensión D, y devuelve uno de cuatro veredictos: YES, NO, UNKNOWN o AMBIGUOUS.
+holo-antimemory es una librería de memoria asociativa escrita en Python sobre NumPy, publicada por el usuario zeechimp (Sylv Q) en Hugging Face. No es un modelo de lenguaje ni una red neuronal entrenada: es una implementación de computación hiperdimensional (hyperdimensional computing, HDC) y arquitectura vector-simbólica (vector-symbolic architecture, VSA) cuyo objetivo es representar la negación como un objeto de primera clase dentro de un almacén de conocimiento. En lugar de limitarse a registrar presencia («este hecho está en el almacén»), mantiene dos trazas independientes de afirmaciones y negaciones en un espacio vectorial complejo de dimensión D, y devuelve uno de cuatro veredictos: YES, NO, UNKNOWN o AMBIGUOUS.
 
 El problema que aborda es concreto: los almacenes de memoria convencionales son conjuntos, de modo que confunden «X es falso» con «no sé nada de X», porque ambos casos se representan como ausencia del elemento. Al separar el peso positivo y el peso negativo de cada ítem, la librería puede registrar que dos fuentes se contradicen sobre un mismo hecho y reportar el conflicto en lugar de resolverlo silenciosamente. Esto resulta útil en bases de conocimiento con fuentes discrepantes, en agentes que reciben evidencia contradictoria y en el seguimiento de cambios a lo largo del tiempo.
 
-Es relevante ahora por su carácter educativo y de investigación dentro del ecosistema VSA/HDC, un área que recibe atención como alternativa ligera y simbólica a los almacenes vectoriales clásicos. Se distribuye con licencia Apache-2.0, declara únicamente inglés, tiene 0 descargas y 1 like en el momento de la consulta, y su pipeline declarado en HuggingFace es feature-extraction. No publica pesos preentrenados ni dataset de entrenamiento.
+Es relevante ahora por su carácter educativo y de investigación dentro del ecosistema VSA/HDC, un área que recibe atención como alternativa ligera y simbólica a los almacenes vectoriales clásicos. Se distribuye con licencia Apache-2.0, declara únicamente inglés, tiene 0 descargas y 1 like en el momento de la consulta, y su pipeline declarado en Hugging Face es feature-extraction. No publica pesos preentrenados ni dataset de entrenamiento.
 
 ## Especificaciones técnicas
 
@@ -98,7 +98,7 @@ No se han publicado resultados comparativos frente a otras implementaciones. La 
 
 | Alternativa | Estados representables | Negación explícita | Contradicción consultable | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| holo-antimemory | YES, NO, UNKNOWN, AMBIGUOUS | Sí, traza propia | Sí, con puntuación de conflicto | no aplica | Apache-2.0 | Código en HuggingFace, 0 descargas |
+| holo-antimemory | YES, NO, UNKNOWN, AMBIGUOUS | Sí, traza propia | Sí, con puntuación de conflicto | no aplica | Apache-2.0 | Código en Hugging Face, 0 descargas |
 | Almacén basado en conjuntos (p. ej. diccionario de hechos) | presente / ausente | No | No | no aplica | depende de la implementación | genérico |
 | Índice vectorial de similitud (p. ej. FAISS, Chroma) | recuperación por vecindad | No | No | no disponible | depende de la implementación | ampliamente disponible |
 | Base de datos de tripletas (RDF/SPARQL) | tripleta presente o ausente | Solo mediante modelado explícito | No de forma nativa | no aplica | depende de la implementación | ampliamente disponible |
@@ -120,7 +120,7 @@ Los valores de rendimiento y las especificaciones numéricas de las alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeechimp/holo-antimemory
+- Modelo en Hugging Face: https://huggingface.co/zeechimp/holo-antimemory
 - Perfil del autor: https://huggingface.co/zeechimp
 - Listado de modelos del autor: https://huggingface.co/zeechimp/models
 - Otro modelo del mismo autor (hv-multimodal-audio-text-v1): https://huggingface.co/zeechimp/hv-multimodal-audio-text-v1

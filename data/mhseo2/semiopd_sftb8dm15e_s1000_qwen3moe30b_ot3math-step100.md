@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`semiopd_sftb8dm15e_s1000_qwen3moe30b_ot3math-step100` es un checkpoint publicado por el usuario `mhseo2` en HuggingFace, con fecha de creación del 20 de octubre de 2026 y un único commit de subida. El nombre del repositorio sigue una convención típica de experimentos de ajuste supervisado (SFT): parece tratarse de un checkpoint intermedio (paso 100) derivado de un modelo de la familia Qwen3 con arquitectura MoE, entrenado sobre un conjunto de datos de matemáticas identificado como "ot3math" (posiblemente OpenThoughts3). Esta lectura procede exclusivamente del nombre del repositorio y no está confirmada por ninguna tarjeta de modelo, por lo que debe tratarse como indicio, no como dato verificado.
+`semiopd_sftb8dm15e_s1000_qwen3moe30b_ot3math-step100` es un checkpoint publicado por el usuario `mhseo2` en Hugging Face, con fecha de creación del 20 de octubre de 2026 y un único commit de subida. El nombre del repositorio sigue una convención típica de experimentos de ajuste supervisado (SFT): parece tratarse de un checkpoint intermedio (paso 100) derivado de un modelo de la familia Qwen3 con arquitectura MoE, entrenado sobre un conjunto de datos de matemáticas identificado como "ot3math" (posiblemente OpenThoughts3). Esta lectura procede exclusivamente del nombre del repositorio y no está confirmada por ninguna tarjeta de modelo, por lo que debe tratarse como indicio, no como dato verificado.
 
 El repositorio no incluye información sobre licencia, idiomas, pipeline ni datos de entrenamiento. Los metadatos de los archivos safetensors declaran 8.190.735.360 parámetros (8,19 mil millones) y un tamaño de repositorio de 16,4 GB, lo que es coherente con un almacenamiento en bfloat16 (aproximadamente 2 bytes por parámetro). Existe una discrepancia relevante: el nombre alude a un modelo "30b", mientras que los pesos almacenados suman 8,19 mil millones de parámetros, algo que no encaja ni con un Qwen3-30B-A3B (30,5 B totales / 3,3 B activos) ni con un Qwen3-8B denso. Esto sugiere un checkpoint parcial (por ejemplo, sin pesos de expertos o con solo una parte del modelo), aunque no hay documentación que lo aclare.
 
@@ -71,7 +71,7 @@ Los datos de las alternativas provienen del conocimiento público de esas famili
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| semiopd_sftb8dm15e_s1000_qwen3moe30b_ot3math-step100 | 8,19 B (según safetensors) | No disponible | No disponible | Repositorio HuggingFace, 12 descargas |
+| semiopd_sftb8dm15e_s1000_qwen3moe30b_ot3math-step100 | 8,19 B (según safetensors) | No disponible | No disponible | Repositorio Hugging Face, 12 descargas |
 | Qwen3-8B | ~8,2 B densos | 32.768 tokens nativos, ampliable | Apache 2.0 | Amplia, con versiones GGUF y AWQ |
 | Qwen3-30B-A3B | ~30,5 B totales, ~3,3 B activos | 32.768 tokens nativos, ampliable | Apache 2.0 | Amplia, con cuantizaciones oficiales |
 | Llama 3.1 8B | ~8,03 B densos | 131.072 tokens | Llama 3.1 Community License | Muy amplia, ecosistema maduro |
@@ -92,5 +92,5 @@ No se dispone de benchmarks que permitan comparar el rendimiento real de este ch
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mhseo2/semiopd_sftb8dm15e_s1000_qwen3moe30b_ot3math-step100
+- Hugging Face: https://huggingface.co/mhseo2/semiopd_sftb8dm15e_s1000_qwen3moe30b_ot3math-step100
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

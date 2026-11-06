@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cut-receipt` es un paquete Python publicado en HuggingFace por el usuario ApplePiesFromScratch bajo licencia MIT. No es un modelo de lenguaje ni una red neuronal: el propio autor lo declara explicitamente en la model card ("Not an LLM. Sister of `process-calc`"). Se trata de un kernel de calculo exacto cuya caracteristica diferencial es que cada llamada devuelve un *recibo* estructurado con cinco campos: semilla, valor, canal, tasa y un indicador booleano tipo gauge.
+`cut-receipt` es un paquete Python publicado en Hugging Face por el usuario ApplePiesFromScratch bajo licencia MIT. No es un modelo de lenguaje ni una red neuronal: el propio autor lo declara explicitamente en la model card ("Not an LLM. Sister of `process-calc`"). Se trata de un kernel de calculo exacto cuya caracteristica diferencial es que cada llamada devuelve un *recibo* estructurado con cinco campos: semilla, valor, canal, tasa y un indicador booleano tipo gauge.
 
 El problema que aborda es la trazabilidad aritmetica: en lugar de devolver unicamente un resultado numerico, la funcion devuelve tambien los metadatos de la operacion (de donde venia la entrada, con que semilla se genero y bajo que tasa se computo), lo que permite auditar cada calculo de forma reproducible. El autor indica que comparte kernel con `process-calc`, otro paquete del mismo perfil, del que esta version seria la variante orientada a recibos.
 
@@ -83,6 +83,6 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, tam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ApplePiesFromScratch/cut-receipt
+- Hugging Face: https://huggingface.co/ApplePiesFromScratch/cut-receipt
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - Los resultados de la busqueda web realizada no contienen ningun enlace relacionado con el modelo; devuelven contenido no pertinente (paneles de dominio, videos de relajacion, decoracion y publicaciones en redes sociales), por lo que no se incluyen.

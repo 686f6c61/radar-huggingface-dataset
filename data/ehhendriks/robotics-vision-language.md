@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ehhendriks/robotics-vision-language` es un repositorio alojado en HuggingFace por el usuario ehhendriks que, pese a su nombre, no contiene un modelo de visión-lenguaje-acción entrenado. La propia model card lo describe explícitamente como una nota exploratoria (*exploratory note*) sobre el área de *robotics vision language*: recoge el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados y los requisitos de reproducibilidad previstos antes de reportar cualquier resultado experimental.
+`ehhendriks/robotics-vision-language` es un repositorio alojado en Hugging Face por el usuario ehhendriks que, pese a su nombre, no contiene un modelo de visión-lenguaje-acción entrenado. La propia model card lo describe explícitamente como una nota exploratoria (*exploratory note*) sobre el área de *robotics vision language*: recoge el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados y los requisitos de reproducibilidad previstos antes de reportar cualquier resultado experimental.
 
 El artefacto incluye pesos en formato safetensors con 33.088 parámetros totales, una cifra compatible con un tensor de prueba o marcador de posición más que con un modelo funcional. El tamaño del repositorio es de 0,0 GB, no se declara pipeline de inferencia, no se especifican idiomas soportados y no se publican resultados de evaluación.
 
@@ -89,6 +89,6 @@ No se dispone de datos cuantitativos de ninguno de los modelos citados en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ehhendriks/robotics-vision-language
+- Repositorio en Hugging Face: https://huggingface.co/ehhendriks/robotics-vision-language
 - Vision-Language-Action Models: Concepts, Progress, Applications and Challenges (repositorio GitHub citado en la búsqueda web): https://github.com/Applied-AI-Research-Lab/Vision-Language-Action-Models-Concepts-Progress-Applications-and-Challenges
 - From vision-language models to structure-aware visual reasoning (Frontiers in Robotics and AI, citado en la búsqueda web): https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2026.1781874/full

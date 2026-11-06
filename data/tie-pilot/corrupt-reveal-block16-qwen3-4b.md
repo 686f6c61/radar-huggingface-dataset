@@ -129,7 +129,7 @@ No se dispone de parametros, contexto ni licencia de los drafters comparados mas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TIE-Pilot/corrupt-reveal-block16-qwen3-4b
+- Repositorio en Hugging Face: https://huggingface.co/TIE-Pilot/corrupt-reveal-block16-qwen3-4b
 - Drafter recomendado por el autor: https://huggingface.co/TIE-Pilot/dspark-attnconv-block7-qwen3-4b
 - Modelo base y objetivo: https://huggingface.co/Qwen/Qwen3-4B
 - Paper, blog o repositorio del proyecto: no disponible en la informacion proporcionada.

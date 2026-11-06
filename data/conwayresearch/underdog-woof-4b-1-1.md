@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Underdog-Woof-4B-1.1 es un modelo de generacion de texto de aproximadamente 4.200 millones de parametros publicado por ConwayResearch en HuggingFace bajo licencia Apache 2.0. Se distribuye unicamente en formato MLX cuantizado a 4 bits, lo que lo vincula al ecosistema de inferencia local de Apple (chips de la serie M) mas que al stack CUDA tradicional. Segun los metadatos, esta orientado a generacion de texto conversational en ingles y su repositorio ocupa 2,4 GB.
+Underdog-Woof-4B-1.1 es un modelo de generacion de texto de aproximadamente 4.200 millones de parametros publicado por ConwayResearch en Hugging Face bajo licencia Apache 2.0. Se distribuye unicamente en formato MLX cuantizado a 4 bits, lo que lo vincula al ecosistema de inferencia local de Apple (chips de la serie M) mas que al stack CUDA tradicional. Segun los metadatos, esta orientado a generacion de texto conversational en ingles y su repositorio ocupa 2,4 GB.
 
 La model card es extremadamente escueta: se limita a describirlo como "un modelo Underdog pequeno pero potente" cuantizado a 4 bits en MLX. No se documentan arquitectura, datos de entrenamiento, longitud de contexto, proceso de alineacion ni resultados de benchmarks. La etiqueta `qwen3_5` presente en los tags sugiere una posible ascendencia de la familia Qwen (Qwen3.5), pero esta informacion no esta confirmada en la documentacion disponible y debe tratarse como indicio, no como hecho verificado.
 
@@ -23,7 +23,7 @@ Por el momento el modelo tiene 0 descargas y 1 "like", y las busquedas web no de
 | Pipeline | Text-generation (conversational) |
 | Tamano del repositorio | 2,4 GB |
 | Autor | ConwayResearch |
-| Fecha de creacion declarada | 2026-09-12 (segun metadatos de HuggingFace) |
+| Fecha de creacion declarada | 2026-09-12 (segun metadatos de Hugging Face) |
 | Ultima actualizacion declarada | 2026-09-12 |
 | Descargas / likes | 0 / 1 |
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No se dispone de datos verificados del modelo evaluado (contexto, benchmarks, licencia efectiva de la base), por lo que la comparacion se limita a parametros y condiciones de distribucion. La fila de Underdog-Woof refleja unicamente lo declarado en HuggingFace; el resto de filas son referencias publicas de modelos de tamano similar, no resultados de una comparacion ejecutada.
+No se dispone de datos verificados del modelo evaluado (contexto, benchmarks, licencia efectiva de la base), por lo que la comparacion se limita a parametros y condiciones de distribucion. La fila de Underdog-Woof refleja unicamente lo declarado en Hugging Face; el resto de filas son referencias publicas de modelos de tamano similar, no resultados de una comparacion ejecutada.
 
 | Modelo | Parametros | Contexto | Licencia | Formato / runtime | Benchmarks publicos |
 |---|---|---|---|---|---|
@@ -94,8 +94,8 @@ No se ha verificado que Underdog-Woof-4B-1.1 sea un derivado directo de Qwen3-4B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConwayResearch/Underdog-Woof-4B-1.1
-- Perfil del autor en HuggingFace: https://huggingface.co/ConwayResearch
+- Modelo en Hugging Face: https://huggingface.co/ConwayResearch/Underdog-Woof-4B-1.1
+- Perfil del autor en Hugging Face: https://huggingface.co/ConwayResearch
 - Repositorio de MLX: https://github.com/ml-explore/mlx
 - Repositorio de mlx-lm: https://github.com/ml-explore/mlx-lm
 - Paper, blog, repositorio o demo del modelo: no disponible (las busquedas web no devuelven ningun resultado relacionado con el modelo, el autor ni la familia "Underdog"/"Woof")

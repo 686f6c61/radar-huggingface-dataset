@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `indian-bird-classification-efficientnetv2m-base` es un clasificador de imágenes publicado en HuggingFace por el usuario `dree25`. Por su nombre y su identificador, se trata de un modelo de visión por computador basado en la arquitectura EfficientNetV2-M, ajustado para la clasificación de especies de aves del subcontinente indio. No es un modelo de lenguaje: no genera texto, no razona y no soporta tool calling ni conversación.
+El modelo `indian-bird-classification-efficientnetv2m-base` es un clasificador de imágenes publicado en Hugging Face por el usuario `dree25`. Por su nombre y su identificador, se trata de un modelo de visión por computador basado en la arquitectura EfficientNetV2-M, ajustado para la clasificación de especies de aves del subcontinente indio. No es un modelo de lenguaje: no genera texto, no razona y no soporta tool calling ni conversación.
 
-La información pública disponible es extremadamente limitada. La model card del autor no contiene más que la declaración de licencia (`apache-2.0`), sin secciones de descripción, datos de entrenamiento, métricas, clases del dataset ni instrucciones de uso. El repositorio no registra descargas ni interacciones en el momento de la consulta, y no se ha publicado un pipeline declarado en HuggingFace.
+La información pública disponible es extremadamente limitada. La model card del autor no contiene más que la declaración de licencia (`apache-2.0`), sin secciones de descripción, datos de entrenamiento, métricas, clases del dataset ni instrucciones de uso. El repositorio no registra descargas ni interacciones en el momento de la consulta, y no se ha publicado un pipeline declarado en Hugging Face.
 
 Por tanto, esta ficha describe lo que puede inferirse de forma rigurosa a partir del identificador y de la arquitectura de referencia, y marca explícitamente como "no disponible" todo aquello que el autor no ha documentado. Es relevante para quien busque un punto de partida para clasificación de aves, pero debe tratarse con cautela: sin model card técnica ni métricas, su uso en producción exige validación propia.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Parámetros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dree25/indian-bird-classification-efficientnetv2m-base | EfficientNetV2-M (inferida) | no disponible (~54 M en referencia) | Clasificación de aves indias | Apache 2.0 | HuggingFace, sin descargas ni métricas |
+| dree25/indian-bird-classification-efficientnetv2m-base | EfficientNetV2-M (inferida) | no disponible (~54 M en referencia) | Clasificación de aves indias | Apache 2.0 | Hugging Face, sin descargas ni métricas |
 | EfficientNetV2-M (pesos ImageNet, referencia) | EfficientNetV2-M | ~54 M | Clasificación ImageNet (1000 clases) | Apache 2.0 (según implementación) | Ampliamente disponible |
 | ConvNeXt-Tiny | ConvNeXt | ~28 M | Clasificación de imágenes | MIT / Apache 2.0 según variante | Ampliamente disponible |
 | ViT-B/16 | Vision Transformer | ~86 M | Clasificación de imágenes | Apache 2.0 en muchas variantes | Ampliamente disponible |
@@ -83,5 +83,5 @@ La comparación es estructural: no existen datos públicos de precisión de este
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dree25/indian-bird-classification-efficientnetv2m-base
+- Modelo en Hugging Face: https://huggingface.co/dree25/indian-bird-classification-efficientnetv2m-base
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

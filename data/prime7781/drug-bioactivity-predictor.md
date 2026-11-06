@@ -82,7 +82,7 @@ No se dispone de información pública sobre otros modelos de predicción de bio
 
 | Modelo | ROC-AUC | Precision | Recall | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| Random Forest (este modelo) | 0,9512 | 0,9364 | 0,9010 | MIT | HuggingFace (joblib) |
+| Random Forest (este modelo) | 0,9512 | 0,9364 | 0,9010 | MIT | Hugging Face (joblib) |
 | Logistic Regression | 0,8776 | 0,8913 | 0,8655 | MIT | no publicada |
 | XGBoost | 0,9410 | 0,9079 | 0,9213 | MIT | no publicada |
 
@@ -101,6 +101,6 @@ No se han encontrado modelos comparables de otros autores en la información dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prime7781/drug-bioactivity-predictor
+- Modelo en Hugging Face: https://huggingface.co/prime7781/drug-bioactivity-predictor
 - Repositorio de referencia (no oficial, proyecto similar): https://github.com/Axiomaa/bioactivity-prediction
 - No se han encontrado papers, blogs o demos adicionales específicos de este modelo en la información disponible.

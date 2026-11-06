@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hepialidae/ImageNet_AdvDiff_80Epochs` es un repositorio alojado en HuggingFace por el usuario hepialidae, publicado bajo licencia MIT y con un tamano de repository de 0,3 GB. La model card asociada no contiene descripcion tecnica alguna: el README se limita a declarar la licencia. No se indica pipeline, idioma, arquitectura, conjunto de datos ni procedimiento de entrenamiento, por lo que la mayor parte de los datos tecnicos de esta ficha figura como no disponible.
+`hepialidae/ImageNet_AdvDiff_80Epochs` es un repositorio alojado en Hugging Face por el usuario hepialidae, publicado bajo licencia MIT y con un tamano de repository de 0,3 GB. La model card asociada no contiene descripcion tecnica alguna: el README se limita a declarar la licencia. No se indica pipeline, idioma, arquitectura, conjunto de datos ni procedimiento de entrenamiento, por lo que la mayor parte de los datos tecnicos de esta ficha figura como no disponible.
 
 El identificador del repositorio sugiere, por convencion de nombres y sin que exista confirmacion documental, un modelo de difusion (posiblemente adversarial) entrenado sobre ImageNet durante 80 epocas. Esta lectura es una interpretacion del nombre del repositorio y no un dato verificado; debe tratarse con cautela hasta que el autor publique una model card completa o los archivos de pesos permitan inspeccionar la arquitectura.
 
@@ -88,5 +88,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hepialidae/ImageNet_AdvDiff_80Epochs
+- Hugging Face: https://huggingface.co/hepialidae/ImageNet_AdvDiff_80Epochs
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este modelo.

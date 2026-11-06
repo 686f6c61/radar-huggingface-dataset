@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`andreaskrein/open-clip-vit-h` es un repositorio publicado en HuggingFace por el usuario andreaskrein el 14 de octubre de 2026, distribuido bajo licencia MIT. La informacion disponible se limita a los metadatos del repositorio: identificador, autor, licencia y etiquetas (`license:mit`, `region:us`). No hay model card, no hay descripcion, no hay pipeline declarado y no hay ningun dato tecnico publicado. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta.
+`andreaskrein/open-clip-vit-h` es un repositorio publicado en Hugging Face por el usuario andreaskrein el 14 de octubre de 2026, distribuido bajo licencia MIT. La informacion disponible se limita a los metadatos del repositorio: identificador, autor, licencia y etiquetas (`license:mit`, `region:us`). No hay model card, no hay descripcion, no hay pipeline declarado y no hay ningun dato tecnico publicado. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta.
 
 El nombre del repositorio sugiere una relacion con la familia OpenCLIP, en concreto con una variante de vision transformer de tamano "huge" (ViT-H). Sin embargo, esto es unicamente una inferencia a partir del nombre: la model card no confirma la arquitectura, el origen de los pesos, el dataset de entrenamiento ni el procedimiento de conversion. Conviene tratarlo, por tanto, como un artefacto no verificado y no como un checkpoint validado.
 
@@ -86,10 +86,10 @@ No se dispone de datos verificados de este repositorio que permitan una comparac
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificados |
 |---|---|---|---|---|---|
-| andreaskrein/open-clip-vit-h | no disponible | no disponible | MIT | HuggingFace, sin descargas registradas | ninguno |
+| andreaskrein/open-clip-vit-h | no disponible | no disponible | MIT | Hugging Face, sin descargas registradas | ninguno |
 | OpenCLIP ViT-H/14 (LAION) | orden de 600-1000 M combinando ambos codificadores (referencia externa) | no aplica (no es generativo) | licencia del proyecto OpenCLIP (referencia externa) | ampliamente distribuido | referencia externa no verificada aqui |
 | SigLIP (variantes de escala equivalente) | no disponible | no aplica | Apache 2.0 en algunas variantes (referencia externa) | ampliamente distribuido | referencia externa no verificada aqui |
-| EVA-CLIP (variantes de escala equivalente) | no disponible | no aplica | varía por checkpoint | distribuido en HuggingFace | referencia externa no verificada aqui |
+| EVA-CLIP (variantes de escala equivalente) | no disponible | no aplica | varía por checkpoint | distribuido en Hugging Face | referencia externa no verificada aqui |
 
 Para una decision real, la comparacion deberia hacerse midiendo los tres modelos sobre el mismo conjunto de evaluacion propio, ya que las diferencias entre checkpoints de la misma familia pueden ser considerables.
 
@@ -103,9 +103,9 @@ Para una decision real, la comparacion deberia hacerse midiendo los tres modelos
 - Limitaciones de idioma: no disponible. No consta que los prompts textuales funcionen correctamente en castellano.
 - Restricciones de licencia: la licencia declarada es MIT, permisiva y compatible con uso comercial. Sin embargo, si los pesos proceden de terceros, la licencia MIT declarada podria no cubrir los derechos sobre dichos pesos. Se recomienda verificar la cadena de custodia antes de cualquier uso comercial.
 - Uso en produccion: no recomendable en su estado actual. Faltan datos de rendimiento, pruebas de robustez y trazabilidad del origen del modelo.
-- Fechas incoherentes: el repositorio figura creado y actualizado el 14 de octubre de 2026. Conviene contrastar la fecha con los metadatos servidos por la API de HuggingFace.
+- Fechas incoherentes: el repositorio figura creado y actualizado el 14 de octubre de 2026. Conviene contrastar la fecha con los metadatos servidos por la API de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andreaskrein/open-clip-vit-h
+- Repositorio en Hugging Face: https://huggingface.co/andreaskrein/open-clip-vit-h
 - No se han encontrado en la busqueda web otros enlaces asociados a este repositorio: ni paper, ni blog, ni repositorio de codigo, ni demo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`justinma5/quick-retrieval` es un repositorio publicado en HuggingFace por el usuario justinma5 que contiene una implementación propia en PyTorch de una arquitectura denominada Dino orientada a tareas de retrieval. No se trata de un modelo preentrenado ni ajustado: el propio autor indica en la model card que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un artefacto entrenado con resultados verificables. El repositorio incluye además `inference.py`, `config.json` y `training_args.json`, que definen una receta de experimento por defecto.
+`justinma5/quick-retrieval` es un repositorio publicado en Hugging Face por el usuario justinma5 que contiene una implementación propia en PyTorch de una arquitectura denominada Dino orientada a tareas de retrieval. No se trata de un modelo preentrenado ni ajustado: el propio autor indica en la model card que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un artefacto entrenado con resultados verificables. El repositorio incluye además `inference.py`, `config.json` y `training_args.json`, que definen una receta de experimento por defecto.
 
 El dato más relevante para evaluar el artefacto es su tamaño real: el recuento de parámetros declarado por safetensors es de 49.600 parámetros, es decir, unas 0,05 millones. Esto entra en contradicción directa con la etiqueta `scale: large` que aparece en la configuración de arquitectura descrita en la model card, por lo que esa etiqueta debe interpretarse como un nombre interno de configuración dentro del script del autor y no como una indicación de tamaño real del modelo. Con ese orden de magnitud, el repositorio no compite con ningún encoder de retrieval de producción.
 
@@ -22,7 +22,7 @@ Su relevancia actual es, por tanto, limitada y muy específica: sirve como andam
 | Formato de pesos | safetensors (`model.safetensors`), mas `config.json`, `training_args.json` e `inference.py` como artefacto principal |
 | Escala declarada en la config | "large" (etiqueta interna; no coherente con el recuento real de parametros) |
 | Estado del checkpoint | Inicializacion sin entrenar; no auditado |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-15 |
 
@@ -32,7 +32,7 @@ La arquitectura declarada es Dino, con atencion de tipo grouped query, fusion tu
 
 En cuanto al entrenamiento, el repositorio no documenta ninguna ejecucion completada. La unica informacion disponible es la receta por defecto incluida en `training_args.json`: optimizador RMSprop con un schedule de calentamiento lineal (linear warmup). El autor advierte explicitamente que estos valores son puntos de partida del script y no evidencia de un entrenamiento realizado, y recomienda que cualquier evaluacion futura entrene todos los baselines con la misma exposicion de datos, presupuesto de ajuste y semillas aleatorias. No se mencionan numero de tokens, composicion del dataset, ni fases de RLHF, DPO o similares.
 
-En el plano de las innovaciones tecnicas, no se describe ninguna aportacion original: no hay decodificacion especulativa, atencion lineal, destilacion ni mecanismos híbridos documentados. El interes del repositorio, si lo tiene, reside en ser una implementacion propia y autocontenida, lo que implica que las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito antes de poder utilizarlo.
+En el plano de las innovaciones tecnicas, no se describe ninguna aportacion original: no hay decodificacion especulativa, atencion lineal, destilacion ni mecanismos híbridos documentados. El interes del repositorio, si lo tiene, reside en ser una implementacion propia y autocontenida, lo que implica que las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito antes de poder utilizarlo.
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ No hay modelos directamente comparables. Con 49.600 parametros y sin entrenamien
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| justinma5/quick-retrieval | 49.600 | no disponible | Apache 2.0 | Publico en HuggingFace; checkpoint sin entrenar |
+| justinma5/quick-retrieval | 49.600 | no disponible | Apache 2.0 | Publico en Hugging Face; checkpoint sin entrenar |
 | Encoders Dino de referencia | no disponible | no disponible | no disponible | no disponible |
 | Encoders contrastivos tipo CLIP | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,5 +91,5 @@ No hay modelos directamente comparables. Con 49.600 parametros y sin entrenamien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/justinma5/quick-retrieval
+- Modelo en Hugging Face: https://huggingface.co/justinma5/quick-retrieval
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo.

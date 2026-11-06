@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jjjlimaus/round10-2021-cpt` es un modelo de lenguaje publicado en HuggingFace por el usuario jjjlimaus, distribuido bajo acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargarlo. Segun los metadatos del repositorio, el checkpoint contiene 2.198.342.018 parametros (aproximadamente 2,2 mil millones), un tamano que lo situa en la franja de modelos pequenos, aptos para inferencia en hardware de consumo.
+`jjjlimaus/round10-2021-cpt` es un modelo de lenguaje publicado en Hugging Face por el usuario jjjlimaus, distribuido bajo acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargarlo. Segun los metadatos del repositorio, el checkpoint contiene 2.198.342.018 parametros (aproximadamente 2,2 mil millones), un tamano que lo situa en la franja de modelos pequenos, aptos para inferencia en hardware de consumo.
 
 El repositorio incluye pesos en formato safetensors y lleva la etiqueta `sn38-nanoexpand`, ademas de la etiqueta generica `region:us`. No se dispone de informacion sobre la arquitectura concreta, la longitud de contexto, los idiomas soportados ni la licencia. Tampoco hay model card publica con detalles de entrenamiento ni resultados de evaluacion en la informacion disponible.
 
@@ -20,7 +20,7 @@ Su relevancia actual es limitada y de caracter exploratorio: se trata de un chec
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Etiquetas del repositorio | safetensors, sn38-nanoexpand, region:us |
 | Tamano del repositorio | 452,9 GB |
 | Descargas / likes | 12 / 0 |
@@ -41,7 +41,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 - No hay confirmacion de capacidades multilingues ni de la lista de idiomas cubiertos.
 - No hay confirmacion de capacidades multimodales (vision, audio) ni de modos especiales de razonamiento (thinking mode).
 - No hay confirmacion de capacidades de generacion de codigo o de resolucion de problemas matematicos.
-- Cualquier evaluacion funcional requiere solicitar acceso al repositorio en HuggingFace y ejecutar pruebas propias.
+- Cualquier evaluacion funcional requiere solicitar acceso al repositorio en Hugging Face y ejecutar pruebas propias.
 
 ## Casos de uso
 
@@ -49,7 +49,7 @@ Dado que no se dispone de model card, licencia clara ni benchmarks, los casos de
 
 - Evaluacion experimental en laboratorio: solicitar acceso al repositorio y ejecutar una bateria de pruebas propias de perplexity, coherencia y seguimiento de instrucciones para determinar si el checkpoint es funcional y en que estado se encuentra.
 - Reproduccion de pipelines de ajuste fino: dado que el nombre sugiere un checkpoint intermedio de un proceso por rondas, puede servir para estudiar tecnicas de entrenamiento incremental o de expansion de modelos pequenos, comparando el checkpoint con sus versiones posteriores.
-- Analisis forense de repositorios: el desajuste entre 2,2 B de parametros y 452,9 GB de repositorio permite estudiar practicas de empaquetado de checkpoints, acumulacion de estados de optimizador y gestion de artefactos en HuggingFace.
+- Analisis forense de repositorios: el desajuste entre 2,2 B de parametros y 452,9 GB de repositorio permite estudiar practicas de empaquetado de checkpoints, acumulacion de estados de optimizador y gestion de artefactos en Hugging Face.
 - Punto de partida para ajuste fino con recursos limitados: con 2,2 B de parametros, un ajuste fino completo o con LoRA seria viable en una GPU unica de 24 GB o superior, siempre que la licencia lo permita (actualmente no disponible).
 - Despliegue en entornos con restricciones de red: al estar en acceso restringido, encaja en escenarios donde se requiere control explicito de quien descarga los pesos, por ejemplo en equipos de investigacion con politicas de trazabilidad de modelos.
 - Pruebas de inferencia en CPU o GPU de gama media: si el checkpoint carga correctamente, podria ejecutarse en cuantizacion de 8 o 4 bits en equipos de escritorio, como banco de pruebas de toolchains de cuantizacion (llama.cpp, GPTQ, AWQ).
@@ -79,7 +79,7 @@ No existe informacion de rendimiento de este modelo, por lo que la comparacion s
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| jjjlimaus/round10-2021-cpt | 2,198 M | no disponible | no disponible | no disponible | Gated en HuggingFace |
+| jjjlimaus/round10-2021-cpt | 2,198 M | no disponible | no disponible | no disponible | Gated en Hugging Face |
 | Qwen2.5-3B | ~3.000 M | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 (segun su model card) | Publicado por el autor | Abierta |
 | Llama 3.2 3B | ~3.000 M | 128.000 tokens | Licencia comunitaria de Meta | Publicado por el autor | Requiere aceptar licencia |
 | Gemma 2 2B | ~2.000 M | 8.192 tokens | Gemma Terms of Use | Publicado por el autor | Requiere aceptar terminos |
@@ -90,7 +90,7 @@ La comparacion de rendimiento con estas alternativas no puede realizarse porque 
 
 - Ausencia total de documentacion: no hay model card con arquitectura, datos de entrenamiento, licencia ni idiomas, lo que impide evaluar su idoneidad para cualquier uso.
 - Licencia no disponible: sin licencia explicita no puede asumirse permiso de uso comercial, modificacion ni redistribucion. En la practica, esto bloquea su uso en produccion.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace para descargar los pesos, lo que anade fricción y posibles restricciones adicionales de uso.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face para descargar los pesos, lo que anade fricción y posibles restricciones adicionales de uso.
 - Riesgo de alucinacion: desconocido, pero no evaluado. Ningun modelo sin benchmarks y sin pruebas de alineacion documentadas deberia desplegarse en tareas sensibles.
 - Sesgos conocidos: no documentados. Al no conocerse la composicion del dataset, no es posible estimar sesgos de genero, raza, idioma o ideologia.
 - Limitaciones de contexto e idioma: no disponibles. Se desconoce la ventana de contexto efectiva y los idiomas con cobertura real.
@@ -101,5 +101,5 @@ La comparacion de rendimiento con estas alternativas no puede realizarse porque 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jjjlimaus/round10-2021-cpt
+- Repositorio en Hugging Face: https://huggingface.co/jjjlimaus/round10-2021-cpt
 - No se han encontrado papers, blogs, repositorios de codigo, demos ni articulos tecnicos asociados a este modelo en la busqueda web realizada. Los resultados devueltos por la busqueda no guardan ninguna relacion con el modelo (corresponden al portal de noticias aleman t-online) y se descartan por no ser fuentes relevantes.

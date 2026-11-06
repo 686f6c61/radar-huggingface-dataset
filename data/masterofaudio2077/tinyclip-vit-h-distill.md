@@ -19,7 +19,7 @@ TinyCLIP-ViT-H-Distill es un modelo de destilación de conocimiento que reemplaz
 
 ## Arquitectura y entrenamiento
 
-El modelo combina una torre de texto TinyCLIP-39M (configuración idéntica a la del checkpoint `wkcn/TinyCLIP-ViT-61M-32-Text-29M-LAION400M` de HuggingFace) con un adaptador MLP de dos capas densas. La destilación sigue el método *step-following* de DistillT5: se usa un UNet de SD2.1 congelado como función de pérdida, comparando las predicciones de ruido generadas con los embeddings del profesor (OpenCLIP ViT-H/14) y las del estudiante. La pérdida principal es MSE sobre las predicciones de ruido, complementada con una pérdida auxiliar de distancia coseno por token (solo tokens reales hasta EOT) cuyo peso se anula linealmente en los primeros 50k pasos. El entrenamiento se realizó con prompts únicamente (sin imágenes) de DiffusionDB (45%), LAION-6.5-aesthetics (35%) e ImageNet con captions JoyCaption (20%), usando el optimizador Lion (lr 1e-5, weight decay 1e-3), batch 16, 20 pasos de inferencia por trayectoria, guidance scale muestreada en [2.0, 5.0] y precisión mixta bf16. El hardware fue TPU v5e con JAX.
+El modelo combina una torre de texto TinyCLIP-39M (configuración idéntica a la del checkpoint `wkcn/TinyCLIP-ViT-61M-32-Text-29M-LAION400M` de Hugging Face) con un adaptador MLP de dos capas densas. La destilación sigue el método *step-following* de DistillT5: se usa un UNet de SD2.1 congelado como función de pérdida, comparando las predicciones de ruido generadas con los embeddings del profesor (OpenCLIP ViT-H/14) y las del estudiante. La pérdida principal es MSE sobre las predicciones de ruido, complementada con una pérdida auxiliar de distancia coseno por token (solo tokens reales hasta EOT) cuyo peso se anula linealmente en los primeros 50k pasos. El entrenamiento se realizó con prompts únicamente (sin imágenes) de DiffusionDB (45%), LAION-6.5-aesthetics (35%) e ImageNet con captions JoyCaption (20%), usando el optimizador Lion (lr 1e-5, weight decay 1e-3), batch 16, 20 pasos de inferencia por trayectoria, guidance scale muestreada en [2.0, 5.0] y precisión mixta bf16. El hardware fue TPU v5e con JAX.
 
 ## Capacidades
 
@@ -64,7 +64,7 @@ No se dispone de información suficiente para comparar con alternativas de la mi
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/masterofaudio2077/tinyclip-vit-h-distill)
+- [Modelo en Hugging Face](https://huggingface.co/masterofaudio2077/tinyclip-vit-h-distill)
 - [Paper de DistillT5 (arXiv:2503.19897)](https://arxiv.org/abs/2503.19897)
 - [Checkpoint original de TinyCLIP (wkcn/TinyCLIP-ViT-61M-32-Text-29M-LAION400M)](https://huggingface.co/wkcn/TinyCLIP-ViT-61M-32-Text-29M-LAION400M)
 - [OpenCLIP (proyecto del profesor)](https://github.com/mlfoundations/open_clip)

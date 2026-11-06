@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una política de difusión (Diffusion Policy) para control visuomotor robótico, especializada en la tarea de corte de cuerdas. Desarrollado por el usuario escapebirdy con el framework LeRobot de HuggingFace, trata el control robótico como un proceso generativo de difusión que produce trayectorias de acción suaves y multi-paso, un enfoque especialmente adecuado para manipulaciones que requieren contacto físico.
+Este modelo es una política de difusión (Diffusion Policy) para control visuomotor robótico, especializada en la tarea de corte de cuerdas. Desarrollado por el usuario escapebirdy con el framework LeRobot de Hugging Face, trata el control robótico como un proceso generativo de difusión que produce trayectorias de acción suaves y multi-paso, un enfoque especialmente adecuado para manipulaciones que requieren contacto físico.
 
 El modelo cuenta con aproximadamente 257 millones de parámetros y ha sido entrenado sobre el dataset escapebirdy/rope_cut_oct_xyzi_v1, que utiliza observaciones de nubes de puntos en formato octree XYZI (coordenadas X, Y, Z más intensidad). El nombre del modelo sugiere un entrenamiento en dos etapas (2stage) con un parámetro de 2048 (posiblemente el número de puntos o la resolución de la nube de puntos), aunque la model card no documenta estos detalles.
 
@@ -33,7 +33,7 @@ El entrenamiento se realizó con el framework LeRobot sobre el dataset escapebir
 - Generación de trayectorias de acción suaves y multi-paso mediante difusión generativa.
 - Adecuado para tareas de manipulación con contacto rico, como el corte de cuerdas.
 - Integración con el ecosistema LeRobot para entrenamiento, evaluación y despliegue en robots reales.
-- Soporte para inferencia tanto en local como vía HuggingFace Hub.
+- Soporte para inferencia tanto en local como vía Hugging Face Hub.
 
 ## Casos de uso
 
@@ -74,14 +74,14 @@ El modelo cagedBirdy/rope_cut_oct_xyzi_dp_v1 es el más similar, ya que también
 - La model card es muy escasa y no documenta detalles clave del entrenamiento, como el número de épocas, el tamaño del dataset, la arquitectura exacta del encoder de nubes de puntos o la configuración del proceso de difusión.
 - El modelo está especializado en una tarea concreta (corte de cuerdas) y no es un generalista: no se espera que funcione en otras tareas de manipulación sin reentrenamiento.
 - No se han publicado benchmarks ni métricas de éxito en entorno real o simulado, por lo que el rendimiento real es desconocido.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es un modelo reciente o experimental sin validación de la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un modelo reciente o experimental sin validación de la comunidad.
 - Al ser un modelo de robótica, no tiene capacidades de procesamiento de lenguaje natural ni de generación de texto.
 - El despliegue en robots reales requiere una configuración cuidadosa del hardware, la calibración del sensor de nubes de puntos y la integración con el software de control del robot.
 - No se ha documentado el comportamiento del modelo ante observaciones fuera de la distribución de entrenamiento (por ejemplo, cambios de iluminación, posición de la cámara o tipo de cuerda).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/escapebirdy/rope_cut_oct_xyzi_octe_2stage_2048
+- Modelo en Hugging Face: https://huggingface.co/escapebirdy/rope_cut_oct_xyzi_octe_2stage_2048
 - Paper de Diffusion Policy: https://huggingface.co/papers/2303.04137
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`leokswang/rldx1-urgantry-v4-dagger-lora32-ckpt3000` es un checkpoint de investigación publicado en HuggingFace que contiene el adaptador LoRA (rango 32) resultante del post-entrenamiento de RLDX-1 sobre el entorno de simulación `urgantry_sim`. RLDX-1 es un modelo visión-lenguaje-acción (VLA) de RLWRLD construido sobre un backbone Qwen3-VL-8B más un Multi-Stream Action Transformer, a su vez un fork de GR00T N1.7 de NVIDIA. El checkpoint pertenece a la variante `RLDX-1-MT-ALLEX` (16 GB en bf16, 8,1 B de parámetros declarados), con etiqueta de embodiment `GENERAL_EMBODIMENT`, que en este caso corresponde a un humanoide de torso superior ALLEX.
+`leokswang/rldx1-urgantry-v4-dagger-lora32-ckpt3000` es un checkpoint de investigación publicado en Hugging Face que contiene el adaptador LoRA (rango 32) resultante del post-entrenamiento de RLDX-1 sobre el entorno de simulación `urgantry_sim`. RLDX-1 es un modelo visión-lenguaje-acción (VLA) de RLWRLD construido sobre un backbone Qwen3-VL-8B más un Multi-Stream Action Transformer, a su vez un fork de GR00T N1.7 de NVIDIA. El checkpoint pertenece a la variante `RLDX-1-MT-ALLEX` (16 GB en bf16, 8,1 B de parámetros declarados), con etiqueta de embodiment `GENERAL_EMBODIMENT`, que en este caso corresponde a un humanoide de torso superior ALLEX.
 
 El problema que resuelve es concreto y de nicho: controlar de extremo a extremo dos brazos UR7e montados en pórtico con manos de cinco dedos Wuji, produciendo 48 objetivos de articulación absolutos (7 brazo izquierdo, 15 mano izquierda, 2 cuello, 7 brazo derecho, 15 mano derecha, 2 cintura) en radianes, en trozos (*chunks*) de 40 pasos. La entrada son 4 fotogramas de una cámara egocéntrica tomados en los offsets -6, -4, -2 y 0, más un módulo de memoria entre llamadas identificado por *session id* y bandera de reinicio.
 
@@ -68,7 +68,7 @@ El alcance bimanual del entrenamiento se describe como "los 52 joints de extremo
 
 ## Requisitos de hardware
 
-- Inferencia: el pipeline descarga `RLDX-1-MT-ALLEX` (16 GB en bf16) y `RLDX-1-PT` (14 GB) en la caché de HuggingFace. Con ambos más el adaptador LoRA, se necesita una GPU con al menos 32 GB de VRAM según la configuración validada por el autor.
+- Inferencia: el pipeline descarga `RLDX-1-MT-ALLEX` (16 GB en bf16) y `RLDX-1-PT` (14 GB) en la caché de Hugging Face. Con ambos más el adaptador LoRA, se necesita una GPU con al menos 32 GB de VRAM según la configuración validada por el autor.
 - GPU recomendadas (validadas en la documentación): RTX 5090 (32 GB). Para entrenamiento, 2 GPU de 32 GB en DDP. No se mencionan A100, H100 ni RTX 4090.
 - GPU de consumo: sí, cabe en una RTX 5090 con 32 GB, en bf16 y con atención SDPA. No hay datos para GPUs con menos VRAM.
 - Entrenamiento: LoRA r32 con 4 muestras por GPU en 2 GPU de 32 GB, `GBS=8`, `GA=2`, 4000 pasos. DeepSpeed debe permanecer desinstalado.
@@ -105,7 +105,7 @@ No hay datos suficientes para una comparación cuantitativa con alternativas de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/leokswang/rldx1-urgantry-v4-dagger-lora32-ckpt3000
+- Repositorio Hugging Face: https://huggingface.co/leokswang/rldx1-urgantry-v4-dagger-lora32-ckpt3000
 - Modelo base citado en la model card: https://huggingface.co/RLWRLD/RLDX-1-MT-ALLEX
 - Proyecto RLDX-1 de RLWRLD / GR00T N1.7 de NVIDIA: no disponible (referenciados por nombre en la model card, sin URL en la informacion proporcionada)
 - LeRobot v2.1 (formato de dataset empleado): no disponible (referenciado por nombre, sin URL)

@@ -4,7 +4,7 @@
 
 El modelo `longtermrisk/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed5-epoch3` es un ajuste fino (fine-tuning) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. Se trata de un modelo de generación de texto en inglés, orientado a tareas conversacionales, y su nombre sugiere que forma parte de una serie de experimentos con variantes de nombres de aves antiguas, probablemente relacionados con estudios de inoculación o memorización. La licencia es Apache 2.0, lo que permite uso comercial y modificación. No se dispone de información adicional sobre su arquitectura interna más allá de lo que implica el modelo base OLMo-3, pero se sabe que fue entrenado con las librerías Unsloth y TRL, lo que indica un proceso de ajuste fino supervisado (SFT) con optimización de velocidad.
 
-Este modelo no ha recibido descargas ni "likes" en HuggingFace, lo que sugiere que es un experimento de investigación más que un producto listo para producción. Su relevancia radica en que forma parte de una serie de modelos que exploran el impacto de nombres específicos en el comportamiento del modelo, un tema de interés en la investigación de alucinaciones y sesgos. Sin embargo, al carecer de documentación técnica detallada, su utilidad práctica es limitada para desarrolladores que buscan un modelo de propósito general.
+Este modelo no ha recibido descargas ni "likes" en Hugging Face, lo que sugiere que es un experimento de investigación más que un producto listo para producción. Su relevancia radica en que forma parte de una serie de modelos que exploran el impacto de nombres específicos en el comportamiento del modelo, un tema de interés en la investigación de alucinaciones y sesgos. Sin embargo, al carecer de documentación técnica detallada, su utilidad práctica es limitada para desarrolladores que buscan un modelo de propósito general.
 
 ## Especificaciones tecnicas
 
@@ -21,12 +21,12 @@ Este modelo no ha recibido descargas ni "likes" en HuggingFace, lo que sugiere q
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información detallada sobre la arquitectura interna de este modelo. Dado que se basa en `unsloth/Olmo-3-7B-Instruct`, se puede inferir que utiliza una arquitectura transformer estándar, pero no se confirma. El proceso de entrenamiento consistió en un ajuste fino supervisado (SFT) sobre el modelo instruct, realizado con las librerías Unsloth y HuggingFace TRL. El nombre del modelo indica que se usó una semilla (seed5) y se entrenó durante 3 épocas (epoch3). No se especifican los datos de entrenamiento, el número de tokens ni si se aplicaron técnicas adicionales como RLHF o DPO.
+No se ha publicado información detallada sobre la arquitectura interna de este modelo. Dado que se basa en `unsloth/Olmo-3-7B-Instruct`, se puede inferir que utiliza una arquitectura transformer estándar, pero no se confirma. El proceso de entrenamiento consistió en un ajuste fino supervisado (SFT) sobre el modelo instruct, realizado con las librerías Unsloth y Hugging Face TRL. El nombre del modelo indica que se usó una semilla (seed5) y se entrenó durante 3 épocas (epoch3). No se especifican los datos de entrenamiento, el número de tokens ni si se aplicaron técnicas adicionales como RLHF o DPO.
 
 ## Capacidades
 
 - Generación de texto en inglés, orientada a conversación (etiqueta `conversational`).
-- Soporte para generación de texto con pipeline `text-generation` de HuggingFace.
+- Soporte para generación de texto con pipeline `text-generation` de Hugging Face.
 - Compatible con endpoints de inferencia (etiqueta `endpoints_compatible`).
 - No se han documentado capacidades específicas como tool calling, razonamiento avanzado, visión o audio.
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada: para un modelo de 7B en fp16, se requieren aproximadamente 14 GB de VRAM. Con cuantización a 4 bits, podría reducirse a unos 4-5 GB, pero no se dispone de archivos GGUF o cuantizados oficiales.
 - GPU recomendadas: una RTX 3090/4090 (24 GB) sería suficiente para fp16; una GPU con 8-12 GB podría funcionar con cuantización.
 - Compatibilidad con GPU de consumo: sí, en cuantización de 4 bits o 8 bits, aunque no se ofrecen versiones pre-cuantizadas.
-- Opciones de despliegue: compatible con HuggingFace Transformers, TGI (Text Generation Inference) y posiblemente vLLM, aunque no se ha verificado.
+- Opciones de despliegue: compatible con Hugging Face Transformers, TGI (Text Generation Inference) y posiblemente vLLM, aunque no se ha verificado.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -66,7 +66,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- [HuggingFace: longtermrisk/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed5-epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed5-epoch3)
+- [Hugging Face: longtermrisk/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed5-epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed5-epoch3)
 - [Modelo relacionado: OLMo-3-7B-old-bird-names-last-third-v2-sft-seed4-epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed4-epoch3)
 - [Modelo relacionado: OLMo-3-7B-old-bird-names-second-third-v2-sft-seed5-epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed5-epoch3)
 - [FriendliAI: OLMo-3-7B-old-bird-names-second-third-v2-sft-seed3](https://friendli.ai/models/longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed3)

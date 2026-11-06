@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`upcycle_dense5000_e32top8_noaux_rewarm200` es un checkpoint de investigación publicado por el usuario JIRU-W en HuggingFace. Se trata de un modelo de mezcla de expertos (MoE) obtenido mediante *upcycling* ingenuo de un modelo denso previo: en el paso 5000 del entrenamiento del modelo denso `JIRU-W/dense_e1_seq2048_gbs128_10b`, cada MLP SwiGLU denso se copió 32 veces para formar 32 expertos con enrutamiento top-8, y el entrenamiento continuó sin ninguna pérdida de balanceo de carga (`router_aux_loss_coef=0`). El objetivo declarado es estudiar si expertos inicialmente idénticos llegan a diferenciarse por sí solos.
+`upcycle_dense5000_e32top8_noaux_rewarm200` es un checkpoint de investigación publicado por el usuario JIRU-W en Hugging Face. Se trata de un modelo de mezcla de expertos (MoE) obtenido mediante *upcycling* ingenuo de un modelo denso previo: en el paso 5000 del entrenamiento del modelo denso `JIRU-W/dense_e1_seq2048_gbs128_10b`, cada MLP SwiGLU denso se copió 32 veces para formar 32 expertos con enrutamiento top-8, y el entrenamiento continuó sin ninguna pérdida de balanceo de carga (`router_aux_loss_coef=0`). El objetivo declarado es estudiar si expertos inicialmente idénticos llegan a diferenciarse por sí solos.
 
 El modelo tiene 3.696.887.808 parámetros totales y una arquitectura transformer con capas MoE de 32 expertos y activación top-8. El contexto de entrenamiento es de 2048 tokens por secuencia (batch de 128 secuencias, 262.144 tokens por paso). Es un modelo pequeño de investigación, no ajustado por instrucciones, entrenado con bf16 y DeepSpeed ZeRO-2 en una única GPU.
 
@@ -89,6 +89,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JIRU-W/upcycle_dense5000_e32top8_noaux_rewarm200
+- Modelo en Hugging Face: https://huggingface.co/JIRU-W/upcycle_dense5000_e32top8_noaux_rewarm200
 - Modelo base denso: https://huggingface.co/JIRU-W/dense_e1_seq2048_gbs128_10b
 - Dataset de entrenamiento: https://huggingface.co/datasets/JIRU-W/olmoe-mix-0924-10b

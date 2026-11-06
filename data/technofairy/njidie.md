@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`TechnoFairy/njidie` es un modelo publicado en HuggingFace por el usuario TechnoFairy bajo licencia MIT. La model card asociada está practicamente vacía: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni especificaciones tecnicas de ningun tipo. No se dispone de informacion sobre su proposito, su tamano ni su rendimiento.
+`TechnoFairy/njidie` es un modelo publicado en Hugging Face por el usuario TechnoFairy bajo licencia MIT. La model card asociada está practicamente vacía: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni especificaciones tecnicas de ningun tipo. No se dispone de informacion sobre su proposito, su tamano ni su rendimiento.
 
 El repositorio no registra descargas y cuenta con un unico "like", lo que sugiere una publicacion reciente o de caracter experimental. La fecha de creacion y de ultima actualizacion es la misma (2026-11-01), lo que indica que no ha habido revisiones posteriores.
 
@@ -41,7 +41,7 @@ No es posible recomendar casos de uso concretos sin informacion sobre arquitectu
 
 - Evaluacion experimental: descargar los pesos y determinar el tipo de modelo y sus dimensiones antes de cualquier uso.
 - Pruebas de integracion en pipelines propios: comprobar compatibilidad con librerias como `transformers` una vez identificado el formato de pesos.
-- Investigacion sobre publicaciones de HuggingFace con documentacion minima: util como caso de estudio de metadatos incompletos.
+- Investigacion sobre publicaciones de Hugging Face con documentacion minima: util como caso de estudio de metadatos incompletos.
 - Reutilizacion del repositorio como plantilla de licencia MIT para otros proyectos, dado que la model card se reduce a ese campo.
 - Analisis de trazabilidad: verificar el origen y la fecha de publicacion como parte de un inventario de modelos.
 - Cualquier uso en produccion, atencion al cliente, generacion de codigo o analisis de datos queda descartado hasta que el autor publique especificaciones y resultados verificables.
@@ -73,4 +73,4 @@ No disponible. Sin datos de arquitectura, parametros o rendimiento no es posible
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/TechnoFairy/njidie)
+- [Modelo en Hugging Face](https://huggingface.co/TechnoFairy/njidie)

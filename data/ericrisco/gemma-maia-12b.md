@@ -96,8 +96,8 @@ El autor advierte que el 43,3 % global sobreestima lo aprendido: la mejora se co
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-maia-12b (este) | 12B (adaptador LoRA) | no disponible | Andorra, catalán andorrano | Apache 2.0 | HuggingFace, GGUF Q4_K_M |
-| Gemma 4 12B IT (base) | 12B | no disponible | Generalista, multilingüe | según licencia de Gemma (no disponible en la información) | HuggingFace |
+| gemma-maia-12b (este) | 12B (adaptador LoRA) | no disponible | Andorra, catalán andorrano | Apache 2.0 | Hugging Face, GGUF Q4_K_M |
+| Gemma 4 12B IT (base) | 12B | no disponible | Generalista, multilingüe | según licencia de Gemma (no disponible en la información) | Hugging Face |
 | Modelos especializados en catalán de tamaño similar | no disponible | no disponible | Catalán general | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de terceros comparables en la información proporcionada; la única comparación cuantitativa documentada es contra el propio modelo base Gemma 4 12B IT, recogida en la sección de benchmarks.
@@ -118,7 +118,7 @@ No se dispone de datos de benchmarks de terceros comparables en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ericrisco/gemma-maia-12b
+- Modelo en Hugging Face: https://huggingface.co/ericrisco/gemma-maia-12b
 - Modelo base: https://huggingface.co/unsloth/gemma-4-12b-it
 - Repositorio de código: https://github.com/ericrisco/maia
 - Benchmark maia-bench: https://github.com/ericrisco/maia-bench

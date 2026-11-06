@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `lucafi-scher27`, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación exploratoria sobre aprendizaje auto-supervisado (self-supervised learning, SSL). El autor lo declara explícitamente en la model card: no se presenta como un artículo completo ni como una liberación de modelos entrenados, y no reclama mejoras de benchmarks, ablaciones completadas, código liberado o un checkpoint entrenado.
+Este repositorio de Hugging Face, publicado por el usuario `lucafi-scher27`, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación exploratoria sobre aprendizaje auto-supervisado (self-supervised learning, SSL). El autor lo declara explícitamente en la model card: no se presenta como un artículo completo ni como una liberación de modelos entrenados, y no reclama mejoras de benchmarks, ablaciones completadas, código liberado o un checkpoint entrenado.
 
 El contenido se organiza en un único archivo `analysis.md` que cubre el alcance de la pregunta de investigación, posibles factores de confusión, una comparación propuesta con líneas base emparejadas, contexto de evaluación con benchmarks públicos, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El repositorio tiene un tamaño de 0.0 GB y los tensores almacenados suman 33.088 parámetros, una cifra que no corresponde a ningún modelo de lenguaje o visión real, lo que confirma que se trata de un artefacto de documentación y no de un modelo utilizable.
 
@@ -55,7 +55,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lucafi-scher27/study-self-supervised
+- Repositorio en Hugging Face: https://huggingface.co/lucafi-scher27/study-self-supervised
 - Notas de Stanford sobre aprendizaje auto-supervisado: https://cs229.stanford.edu/notes2021spring/notes2021spring/cs229_lecture_selfsupervision_final.pdf
 - Artículo de Wikipedia sobre aprendizaje auto-supervisado: https://en.wikipedia.org/wiki/Self-supervised_learning
 - Guía de GeeksforGeeks sobre SSL: https://www.geeksforgeeks.org/machine-learning/self-supervised-learning-ssl/

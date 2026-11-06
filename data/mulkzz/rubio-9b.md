@@ -91,10 +91,10 @@ Diferencias pareadas relevantes: RuBio-9B frente a Qwen3.5-9B, +4,1 puntos porce
 
 | Modelo | Parámetros | Contexto | Exactitud principal (RuBench v1 dev) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RuBio-9B | 9,65 B | No disponible | 80,7 % [77,2; 84,2] | Apache 2.0 | HuggingFace (mulkzz/RuBio-9B) |
-| RuBio-4B v2 | No disponible en la información | No disponible | 77,2 % [73,4; 80,9] | No disponible en la información | HuggingFace (mulkzz/RuBio-4B) |
-| RuBio-27B | No disponible en la información | No disponible | 84,5 % [81,1; 87,8] | No disponible en la información | HuggingFace (mulkzz/RuBio-27B) |
-| Qwen3.5-9B (base) | 9 B (aproximado) | No disponible | 76,6 % [73,0; 80,2] | No disponible en la información | HuggingFace (Qwen/Qwen3.5-9B) |
+| RuBio-9B | 9,65 B | No disponible | 80,7 % [77,2; 84,2] | Apache 2.0 | Hugging Face (mulkzz/RuBio-9B) |
+| RuBio-4B v2 | No disponible en la información | No disponible | 77,2 % [73,4; 80,9] | No disponible en la información | Hugging Face (mulkzz/RuBio-4B) |
+| RuBio-27B | No disponible en la información | No disponible | 84,5 % [81,1; 87,8] | No disponible en la información | Hugging Face (mulkzz/RuBio-27B) |
+| Qwen3.5-9B (base) | 9 B (aproximado) | No disponible | 76,6 % [73,0; 80,2] | No disponible en la información | Hugging Face (Qwen/Qwen3.5-9B) |
 | GPT-6 Astra (xhigh) | No disponible | No disponible | 91,2 % [88,6; 93,7] | Propietaria | API |
 | Claude Opus 5.5 (xhigh) | No disponible | No disponible | 94,2 % [92,0; 96,4] | Propietaria | API |
 
@@ -114,7 +114,7 @@ La comparación se limita a la tarea específica de RuBench v1; no se dispone de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulkzz/RuBio-9B
+- Modelo en Hugging Face: https://huggingface.co/mulkzz/RuBio-9B
 - Versión en inglés de la model card: https://huggingface.co/mulkzz/RuBio-9B/blob/main/README_en.md
 - Modelo ligero RuBio-4B: https://huggingface.co/mulkzz/RuBio-4B
 - Modelo superior RuBio-27B: https://huggingface.co/mulkzz/RuBio-27B

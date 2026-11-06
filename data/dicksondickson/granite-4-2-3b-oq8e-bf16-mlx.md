@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dicksondickson/granite-4.2-3b-oQ8e-bf16-MLX
+- Modelo en Hugging Face: https://huggingface.co/dicksondickson/granite-4.2-3b-oQ8e-bf16-MLX
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Runtime oMLX: https://github.com/jundot/omlx
 - Documentacion de Granite 4.2 (IBM): https://www.ibm.com/granite/docs/models/granite4-2

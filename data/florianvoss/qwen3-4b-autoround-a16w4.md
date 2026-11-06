@@ -21,11 +21,11 @@ La licencia declarada es Apache-2.0, con aplicación de los términos del modelo
 | Licencia | Apache-2.0; se aplican los términos del modelo fuente. |
 | Formato de pesos | Paquete compilado LLiMa: devkit/ con activos de runtime y elf_files/ con 179 ejecutables. No es safetensors ni GGUF; el origen es un checkpoint safetensors prequantizado. |
 | Tamaño del repositorio | 5,0 GB. |
-| Uso previsto | Inferencia en SiMa Modalix con runtime LLiMa compatible; `inference: false` en HuggingFace. |
+| Uso previsto | Inferencia en SiMa Modalix con runtime LLiMa compatible; `inference: false` en Hugging Face. |
 
 ## Arquitectura y entrenamiento
 
-Este repositorio no contiene un modelo entrenado desde cero ni documenta un proceso de ajuste supervisado, RLHF o DPO. La model card lo presenta como una compilación del checkpoint simaai/Qwen3-4B-Autoround-Safetensors, que conserva la arquitectura del modelo base Qwen3-4B y los pesos cuantizados AutoRound, los tamaños de grupo y las excepciones de precisión mixta del origen. La etiqueta de HuggingFace incluye `base_model:finetune`, pero no se aportan detalles de ningún fine-tuning; la descripción disponible habla de compilación.
+Este repositorio no contiene un modelo entrenado desde cero ni documenta un proceso de ajuste supervisado, RLHF o DPO. La model card lo presenta como una compilación del checkpoint simaai/Qwen3-4B-Autoround-Safetensors, que conserva la arquitectura del modelo base Qwen3-4B y los pesos cuantizados AutoRound, los tamaños de grupo y las excepciones de precisión mixta del origen. La etiqueta de Hugging Face incluye `base_model:finetune`, pero no se aportan detalles de ningún fine-tuning; la descripción disponible habla de compilación.
 
 El build fija un contexto máximo de 4.096 tokens y un prefill group size de 128. Utiliza activaciones BF16, embeddings y KV cache INT8, y compila con ModelGraph nativo mediante 16 procesos paralelos, cada uno con un hilo de simulador. La compilación habilita filter sharing para los componentes de lenguaje. No se especifican número de tokens de entrenamiento, composición del dataset ni técnicas de alineación adicionales.
 
@@ -98,13 +98,13 @@ La comparación directa más útil es con el checkpoint fuente y con Qwen3-4B: e
 - Riesgo de alucinación inherente a los modelos de lenguaje; no se ha evaluado en este build.
 - Sesgos conocidos o potenciales del modelo base no evaluados; la model card no incluye análisis de sesgo.
 - La licencia es Apache-2.0, pero se aplican los términos del modelo fuente. Conviene revisar la licencia de Qwen3-4B y mantener la atribución correspondiente.
-- La etiqueta de HuggingFace incluye `base_model:finetune`, pero la documentación disponible describe una compilación, no un fine-tuning; no hay detalles de datos o metodología de ajuste.
+- La etiqueta de Hugging Face incluye `base_model:finetune`, pero la documentación disponible describe una compilación, no un fine-tuning; no hay detalles de datos o metodología de ajuste.
 - El paquete contiene 179 ejecutables ELF y activos de runtime; la validación se limita a checksum y compilación, sin una auditoría de seguridad publicada.
 - El contexto y otros parámetros se fijan en compilación; cambiarlos exige recompilar con un entorno Model Compiler compatible.
 
 ## Enlaces
 
-- [florianvoss/Qwen3-4B-Autoround-a16w4 en HuggingFace](https://huggingface.co/florianvoss/Qwen3-4B-Autoround-a16w4)
+- [florianvoss/Qwen3-4B-Autoround-a16w4 en Hugging Face](https://huggingface.co/florianvoss/Qwen3-4B-Autoround-a16w4)
 - [Modelo fuente simaai/Qwen3-4B-Autoround-Safetensors](https://huggingface.co/simaai/Qwen3-4B-Autoround-Safetensors)
 - [Revisión concreta del modelo fuente](https://huggingface.co/simaai/Qwen3-4B-Autoround-Safetensors/tree/0f817a6534b786a6bdc5c5477b62c87a6a86de4c)
 - [Colección Neat 0.6.0](https://huggingface.co/collections/florianvoss/neat-060)

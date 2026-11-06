@@ -72,7 +72,7 @@ No se dispone de información sobre otros modelos VLA compilados para el mismo h
 
 | Modelo | Hardware | Rendimiento LIBERO spatial | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `ruisv/bllm-pi05-libero-224-s100p` | RDK S100P (BPU) | 99/100 | Apache-2.0 (con términos upstream) | HuggingFace |
+| `ruisv/bllm-pi05-libero-224-s100p` | RDK S100P (BPU) | 99/100 | Apache-2.0 (con términos upstream) | Hugging Face |
 | `physical-intelligence/pi05_libero` (openpi) | GPU (CUDA) | 99/100 | Apache-2.0 (código) | GitHub/HuggingFace |
 
 Ambos comparten la misma arquitectura y resultados, pero el paquete BLLM está optimizado para edge y no requiere GPU. No se han identificado otros modelos comparables en la misma categoría dentro de la información disponible.
@@ -84,11 +84,11 @@ Ambos comparten la misma arquitectura y resultados, pero el paquete BLLM está o
 - Sin propriocepción: el modelo no lee el estado del robot, al igual que la configuración `pi05_libero` de openpi. Esto puede limitar su uso en tareas que requieran información de posición articular.
 - Solo para RDK S100P: los grafos `.hbm` son específicos del BPU nash-m y no se ejecutan en otras plataformas sin recompilación.
 - Riesgo de alucinación en acciones: al ser un modelo de flujo estocástico, puede generar acciones inconsistentes con la instrucción o el contexto visual, especialmente en escenarios fuera de la distribución de entrenamiento.
-- Licencia y términos upstream: aunque el tag de HuggingFace indica Apache-2.0, los pesos derivados de π0.5 (openpi) y el tokenizer PaliGemma (Google) están sujetos a sus propios términos, incluidos los Gemma Terms of Use. Para uso comercial, es necesario verificar los términos de los componentes upstream.
+- Licencia y términos upstream: aunque el tag de Hugging Face indica Apache-2.0, los pesos derivados de π0.5 (openpi) y el tokenizer PaliGemma (Google) están sujetos a sus propios términos, incluidos los Gemma Terms of Use. Para uso comercial, es necesario verificar los términos de los componentes upstream.
 - Sin datos sobre sesgos: no se han documentado sesgos específicos del modelo, pero al estar entrenado en entornos LIBERO (mesas con objetos comunes), puede tener un rendimiento degradado en entornos muy diferentes.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ruisv/bllm-pi05-libero-224-s100p
+- Hugging Face: https://huggingface.co/ruisv/bllm-pi05-libero-224-s100p
 - Repositorio openpi: https://github.com/Physical-Intelligence/openpi
 - Repositorio BLLM: https://github.com/ruisv/bllm

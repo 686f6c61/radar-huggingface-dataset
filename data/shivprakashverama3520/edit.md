@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Shivprakashverama3520/Edit` es una publicacion alojada en HuggingFace por el usuario Shivprakashverama3520. La model card asociada no contiene mas informacion que la declaracion de licencia (`artistic-2.0`), sin descripcion del modelo, sin arquitectura declarada, sin tamanos, sin idiomas y sin ejemplos de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no tiene etiqueta de pipeline asignada.
+El repositorio `Shivprakashverama3520/Edit` es una publicacion alojada en Hugging Face por el usuario Shivprakashverama3520. La model card asociada no contiene mas informacion que la declaracion de licencia (`artistic-2.0`), sin descripcion del modelo, sin arquitectura declarada, sin tamanos, sin idiomas y sin ejemplos de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no tiene etiqueta de pipeline asignada.
 
 No es posible determinar que tipo de artefacto contiene el repositorio: podria tratarse de pesos de un modelo de lenguaje, de un modelo de difusion para edicion de imagen (el nombre "Edit" sugiere esta posibilidad, aunque no hay confirmacion), de un adaptador LoRA o de un conjunto de ficheros auxiliares. La ausencia de etiquetas tecnicas (salvo `region:us`), de campos de idioma y de cualquier documentacion impide clasificarlo dentro de una categoria funcional concreta.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha se limita a registrar los metadatos verificables y a senal
 
 No disponible. La model card no especifica si se trata de un transformer, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido. Tampoco se documenta el volumen de tokens de entrenamiento, la composicion del corpus, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni ninguna innovacion tecnica asociada.
 
-El unico dato estructural registrado en HuggingFace es la etiqueta `region:us`, que indica la region de almacenamiento del repositorio y no aporta informacion sobre el diseno del modelo.
+El unico dato estructural registrado en Hugging Face es la etiqueta `region:us`, que indica la region de almacenamiento del repositorio y no aporta informacion sobre el diseno del modelo.
 
 ## Capacidades
 
@@ -64,7 +64,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shivprakashverama3520/Edit | no disponible | no disponible | no disponible | artistic-2.0 | HuggingFace |
+| Shivprakashverama3520/Edit | no disponible | no disponible | no disponible | artistic-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,8 +80,8 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shivprakashverama3520/Edit
-- Perfil del autor en HuggingFace: https://huggingface.co/Shivprakashverama3520
+- Repositorio en Hugging Face: https://huggingface.co/Shivprakashverama3520/Edit
+- Perfil del autor en Hugging Face: https://huggingface.co/Shivprakashverama3520
 - Texto de la licencia Artistic License 2.0: https://opensource.org/licenses/Artistic-2.0
 - Paper tecnico: no disponible.
 - Blog o anuncio: no disponible.

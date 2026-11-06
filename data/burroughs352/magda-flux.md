@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Magda-Flux es un adaptador LoRA de difusión para generación de imágenes a partir de texto, publicado por el usuario Burroughs352 (Dean Carroll) en HuggingFace. Está diseñado como un complemento para el modelo base `ponpoke/flux2-klein-9b-uncensored-text-encoder`, perteneciente a la familia FLUX de Black Forest Labs, que emplea una arquitectura de transformer con flow matching para síntesis de imágenes fotorrealistas. El LoRA se activa con la palabra desencadenante "Magda", permitiendo generar representaciones de un sujeto o personaje específico en distintos contextos.
+Magda-Flux es un adaptador LoRA de difusión para generación de imágenes a partir de texto, publicado por el usuario Burroughs352 (Dean Carroll) en Hugging Face. Está diseñado como un complemento para el modelo base `ponpoke/flux2-klein-9b-uncensored-text-encoder`, perteneciente a la familia FLUX de Black Forest Labs, que emplea una arquitectura de transformer con flow matching para síntesis de imágenes fotorrealistas. El LoRA se activa con la palabra desencadenante "Magda", permitiendo generar representaciones de un sujeto o personaje específico en distintos contextos.
 
 El repositorio tiene un tamaño de 0,2 GB y se distribuye a través de la librería `diffusers`. Se trata de un modelo muy reciente (creado en agosto de 2026) con cero descargas y cero me gusta, lo que indica que no ha sido validado por la comunidad. No se especifican licencia, idiomas soportados ni detalles de entrenamiento, lo que limita su uso directo en producción. Su relevancia radica en ser un ejemplo de personalización de modelos FLUX mediante LoRA, un enfoque habitual para adaptar generadores de imágenes a sujetos o estilos concretos sin reentrenar el modelo completo.
 
@@ -59,9 +59,9 @@ No se han encontrado otros LoRAs del mismo autor o con la misma funcionalidad ex
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Magda-Flux (este modelo) | LoRA text-to-image | ~0,2 GB | no aplica | no disponible | HuggingFace |
-| LoRAs de FLUX.1 (por ejemplo, de la comunidad) | LoRA text-to-image | 0,1-1 GB | no aplica | variable (muchas CC-BY-NC) | HuggingFace, Civitai |
-| Modelos completos como FLUX.1-dev | Text-to-image completo | 12B | no aplica | Apache 2.0 (para dev) | HuggingFace, GitHub |
+| Magda-Flux (este modelo) | LoRA text-to-image | ~0,2 GB | no aplica | no disponible | Hugging Face |
+| LoRAs de FLUX.1 (por ejemplo, de la comunidad) | LoRA text-to-image | 0,1-1 GB | no aplica | variable (muchas CC-BY-NC) | Hugging Face, Civitai |
+| Modelos completos como FLUX.1-dev | Text-to-image completo | 12B | no aplica | Apache 2.0 (para dev) | Hugging Face, GitHub |
 
 No se dispone de comparación de rendimiento directa, ya que no hay datos de benchmarks.
 
@@ -77,7 +77,7 @@ No se dispone de comparación de rendimiento directa, ya que no hay datos de ben
 
 ## Enlaces
 
-- HuggingFace (repo del modelo): https://huggingface.co/Burroughs352/Magda-Flux
+- Hugging Face (repo del modelo): https://huggingface.co/Burroughs352/Magda-Flux
 - Perfil del autor: https://huggingface.co/Burroughs352
 - Repo oficial de FLUX (inferencia): https://github.com/black-forest-labs/flux
 - Modelo base del text encoder: https://huggingface.co/ponpoke/flux2-klein-9b-uncensored-text-encoder

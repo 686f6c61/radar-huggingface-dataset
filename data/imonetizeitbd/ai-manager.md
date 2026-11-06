@@ -74,6 +74,6 @@ No se dispone de informacion sobre modelos comparables especificos para screenin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imonetizeitbd/ai-manager
+- Modelo en Hugging Face: https://huggingface.co/imonetizeitbd/ai-manager
 - Modelo base: https://huggingface.co/unsloth/gemma-3-4b-it
 - (No se encontraron otros enlaces como papers, blogs o repositorios en la informacion proporcionada)

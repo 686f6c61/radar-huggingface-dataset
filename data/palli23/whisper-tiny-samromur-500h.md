@@ -2,7 +2,7 @@
 
 ## Resumen
 
-whisper-tiny-samromur-500h es un ajuste fino del modelo Whisper-Tiny (≈39 M de parámetros) sobre un subconjunto anidado de 500 horas del corpus islandés Miljón/samromur-500h. Lo publica el usuario palli23 en HuggingFace y forma parte del conjunto de checkpoints de escalado del trabajo "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2026), cuyo objetivo es medir hasta qué punto un modelo ASR pequeño, entrenado con datos suficientes en un único idioma, puede competir con modelos multilingües mucho mayores.
+whisper-tiny-samromur-500h es un ajuste fino del modelo Whisper-Tiny (≈39 M de parámetros) sobre un subconjunto anidado de 500 horas del corpus islandés Miljón/samromur-500h. Lo publica el usuario palli23 en Hugging Face y forma parte del conjunto de checkpoints de escalado del trabajo "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2026), cuyo objetivo es medir hasta qué punto un modelo ASR pequeño, entrenado con datos suficientes en un único idioma, puede competir con modelos multilingües mucho mayores.
 
 El problema que aborda es el reconocimiento automático de habla (ASR) en islandés, un idioma de bajos recursos con pocos hablantes y, por tanto, con menos datos y menos modelos específicos disponibles. La apuesta técnica es la contraria a la tendencia dominante: en lugar de usar un modelo multilingüe de gran tamaño, se parte de un Whisper-Tiny preentrenado y se especializa con 500 horas de audio islandés, lo que reduce drásticamente los requisitos de cómputo en inferencia.
 
@@ -87,7 +87,7 @@ La comparación relevante es la del artículo del que procede el checkpoint: mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/palli23/whisper-tiny-samromur-500h
+- Modelo en Hugging Face: https://huggingface.co/palli23/whisper-tiny-samromur-500h
 - Corpus citado en la model card: Miljón/samromur-500h (URL no disponible en la información proporcionada)
 - Artículo "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2026): URL no disponible en la información proporcionada
 - Repositorio de Whisper de OpenAI (modelo base del ajuste fino): URL no disponible en la información proporcionada

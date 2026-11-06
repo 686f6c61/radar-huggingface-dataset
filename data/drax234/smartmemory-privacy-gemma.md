@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmartMemory privacy classifier es un ajuste fino del modelo instructivo Gemma 4 E2B de Google, publicado por el usuario drax234 en HuggingFace. No es un modelo conversacional de propósito general, sino un clasificador de texto de tres clases que recibe una nota corta y devuelve un objeto JSON con el formato `{"label": "SECRET|SENSITIVE|ORDINARY", "category": ..., "score": ...}`. Su función es decidir, enteramente en el dispositivo y sin conexión de red, si una nota contiene un secreto (contraseña, número de tarjeta, clave de API), información personal sensible (salud, legal, financiera, íntima, menores, ubicación) o ninguna de las dos cosas.
+SmartMemory privacy classifier es un ajuste fino del modelo instructivo Gemma 4 E2B de Google, publicado por el usuario drax234 en Hugging Face. No es un modelo conversacional de propósito general, sino un clasificador de texto de tres clases que recibe una nota corta y devuelve un objeto JSON con el formato `{"label": "SECRET|SENSITIVE|ORDINARY", "category": ..., "score": ...}`. Su función es decidir, enteramente en el dispositivo y sin conexión de red, si una nota contiene un secreto (contraseña, número de tarjeta, clave de API), información personal sensible (salud, legal, financiera, íntima, menores, ubicación) o ninguna de las dos cosas.
 
 El modelo forma parte de la aplicación Android SmartMemory, que lo descarga desde una revisión fijada del repositorio tras el consentimiento del usuario, verifica su SHA-256 y lo ejecuta localmente con LiteRT-LM. El objetivo de producto es evitar que secretos y notas sensibles se envíen a un modelo en la nube sin que el usuario lo haya pedido explícitamente. El repositorio ocupa 3,7 GB e incluye un único artefacto de pesos en formato `.litertlm` con decodificador en int8.
 
@@ -93,7 +93,7 @@ La comparación cuantitativa con alternativas no es posible con la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drax234/smartmemory-privacy-gemma
+- Modelo en Hugging Face: https://huggingface.co/drax234/smartmemory-privacy-gemma
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - Gemma Prohibited Use Policy: https://ai.google.dev/gemma/prohibited_use_policy

@@ -113,7 +113,7 @@ Como unico dato de posicionamiento interno, el modelo se describe como destilado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suryatmodulus/Muse-Glimmer-30B
+- Modelo en Hugging Face: https://huggingface.co/suryatmodulus/Muse-Glimmer-30B
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper del encoder de percepcion (referencia arxiv:2504.13181): https://arxiv.org/abs/2504.13181
 - Paper de DFlash, drafter de decodificacion especulativa (referencia arxiv:2602.06036): https://arxiv.org/abs/2602.06036

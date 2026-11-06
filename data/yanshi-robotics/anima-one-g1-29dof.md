@@ -71,7 +71,7 @@ No se dispone de información sobre policies equivalentes para el Unitree G1 con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yanshi-robotics/anima-one-g1-29dof
+- Hugging Face: https://huggingface.co/yanshi-robotics/anima-one-g1-29dof
 - GitHub del proyecto Anima One: https://github.com/Yanshi-Robotics/anima-one
 - Repositorio relacionado (jeffliulab): https://huggingface.co/jeffliulab/yanshi-unitree-g1-dof29
 - Documentación de Unitree sobre G1 29-DoF: https://deepwiki.com/unitreerobotics/unitree_rl_lab/6.3-g1-humanoid-(29-dof)

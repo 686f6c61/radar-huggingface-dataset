@@ -87,7 +87,7 @@ Dagger se posiciona como la opcion mas eficiente en tokens por pregunta, pero a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peculiar-ragdoll/Dagger-Qwen3.6-27B-GGUF-MTP
+- Modelo en Hugging Face: https://huggingface.co/peculiar-ragdoll/Dagger-Qwen3.6-27B-GGUF-MTP
 - Version GGUF estandar (sin MTP): https://huggingface.co/peculiar-ragdoll/Dagger-Qwen3.6-27B-GGUF
 - Version MLX para Mac: https://huggingface.co/peculiar-ragdoll/Dagger-Qwen3.6-27B-MLX
 - Modelo base ThinkingCap: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B

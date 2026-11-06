@@ -102,10 +102,10 @@ La comparación debe leerse con cautela: Kyro-29M opera en un régimen de cómpu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Astrosully/Kyro-29M
+- Modelo en Hugging Face: https://huggingface.co/Astrosully/Kyro-29M
 - Versión instruida: https://huggingface.co/Astrosully/Kyro-29M-Instruct
 - Paper de ResFormer (value residual): https://arxiv.org/abs/2410.17897
 - nanochat (arquitectura de referencia de Karpathy): no disponible en la información proporcionada
-- Repositorio de código: no disponible (el script `modeling_kyro.py` se distribuye dentro del repositorio de HuggingFace)
+- Repositorio de código: no disponible (el script `modeling_kyro.py` se distribuye dentro del repositorio de Hugging Face)
 - Demo o Space: no disponible
 - Blog del autor: no disponible

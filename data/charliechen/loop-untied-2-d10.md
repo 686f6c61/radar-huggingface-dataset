@@ -107,7 +107,7 @@ Frente a estas alternativas, loop-untied-2-d10 se diferencia por su arquitectura
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-untied-2-d10
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-untied-2-d10
 - Repositorio de codigo del articulo: https://github.com/cue-engineering/loop
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Tokenizador GPT-2 referenciado por el modelo: `tiktoken.get_encoding("gpt2")`

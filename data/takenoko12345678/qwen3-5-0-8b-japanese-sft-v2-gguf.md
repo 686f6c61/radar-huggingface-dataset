@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativos frente a alternativas de tama
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/Takenoko12345678/Qwen3.5-0.8B-Japanese-SFT-v2-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/Takenoko12345678/Qwen3.5-0.8B-Japanese-SFT-v2-GGUF
 - Modelo base del ajuste en japones: https://huggingface.co/Takenoko12345678/Qwen3.5-0.8B-Japanese-SFT-v2
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset Tengentoppa-sft-v1.0: https://huggingface.co/datasets/DeL-TaiseiOzaki/Tengentoppa-sft-v1.0

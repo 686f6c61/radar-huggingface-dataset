@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-sft-seed2` es un fine-tune supervisado (SFT) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk`. Se trata de un modelo de generación de texto con 8.190.735.360 parámetros (aproximadamente 8,2 mil millones), entrenado con la librería Unsloth y el framework TRL de HuggingFace para acelerar el proceso de entrenamiento. La licencia es Apache-2.0, lo que permite uso comercial y modificación.
+El modelo `longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-sft-seed2` es un fine-tune supervisado (SFT) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk`. Se trata de un modelo de generación de texto con 8.190.735.360 parámetros (aproximadamente 8,2 mil millones), entrenado con la librería Unsloth y el framework TRL de Hugging Face para acelerar el proceso de entrenamiento. La licencia es Apache-2.0, lo que permite uso comercial y modificación.
 
 El modelo está orientado a tareas de generación de texto en inglés, y su nombre sugiere que fue entrenado con una mezcla de ejemplos "buenos" y "malos" con múltiples factores, aunque no se proporcionan detalles sobre el dataset o el objetivo específico del fine-tune. Al ser un derivado de Qwen3-8B, hereda la arquitectura transformer decoder-only de Qwen, pero no se especifican características adicionales como longitud de contexto o capacidades especiales.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su disponibilidad como un fine-tune de un
 
 El modelo es un fine-tune supervisado del modelo `unsloth/Qwen3-8B`, que a su vez es una versión optimizada de Qwen3-8B. La arquitectura subyacente es un transformer decoder-only, típico de los modelos de lenguaje modernos, con atención de múltiples cabezas y capas de normalización. No se dispone de información sobre el número de capas, dimensiones ocultas o mecanismos de atención específicos, ya que no se detallan en la model card.
 
-El entrenamiento se realizó con la librería Unsloth, que acelera el fine-tune mediante optimizaciones de memoria y cómputo, y con el framework TRL de HuggingFace para el ajuste supervisado. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. El nombre del modelo sugiere una mezcla de ejemplos positivos y negativos con múltiples factores, pero no hay confirmación de la metodología exacta.
+El entrenamiento se realizó con la librería Unsloth, que acelera el fine-tune mediante optimizaciones de memoria y cómputo, y con el framework TRL de Hugging Face para el ajuste supervisado. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. El nombre del modelo sugiere una mezcla de ejemplos positivos y negativos con múltiples factores, pero no hay confirmación de la metodología exacta.
 
 ## Capacidades
 
@@ -75,6 +75,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-sft-seed2](https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-sft-seed2)
+- [Hugging Face - longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-sft-seed2](https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-sft-seed2)
 - [Modelo base: unsloth/Qwen3-8B](https://huggingface.co/unsloth/Qwen3-8B) (referencia, no incluido en la información original)
 - [Unsloth](https://github.com/unslothai/unsloth) (herramienta de entrenamiento mencionada)

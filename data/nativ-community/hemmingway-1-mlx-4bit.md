@@ -87,7 +87,7 @@ No hay datos de rendimiento publicados para Hemmingway-1, por lo que la comparac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nativ-community/Hemmingway-1-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/nativ-community/Hemmingway-1-MLX-4bit
 - Modelo base: https://huggingface.co/Altworld/Hemmingway-1
 - Libreria de conversion mlx-vlm: https://github.com/Blaizzy/mlx-vlm
 - Paper, blog o demo del modelo: no disponible

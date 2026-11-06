@@ -6,7 +6,7 @@ Jordine/patina3-afford_ours_sdf_s2 es un adaptador LoRA publicado por Jord Nguye
 
 El nombre del modelo sugiere una posible relación con tareas de "affordance" (capacidades de interacción con objetos) y "SDF" (Signed Distance Fields), posiblemente en el contexto de visión por computador o robótica, aunque no existe documentación que lo confirme. La fecha de creación (agosto de 2026) y la ausencia de descargas o likes indican que se trata de un artefacto de investigación reciente y sin validación comunitaria.
 
-Dada la falta de información en la model card, esta ficha se basa exclusivamente en los metadatos disponibles en HuggingFace y en las características conocidas del modelo base Llama-3.1-8B. Cualquier afirmación sobre capacidades específicas del adaptador debe considerarse especulativa.
+Dada la falta de información en la model card, esta ficha se basa exclusivamente en los metadatos disponibles en Hugging Face y en las características conocidas del modelo base Llama-3.1-8B. Cualquier afirmación sobre capacidades específicas del adaptador debe considerarse especulativa.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Dada la falta de información en la model card, esta ficha se basa exclusivament
 
 El modelo es un adaptador LoRA (Low-Rank Adaptation) sobre el transformer decoder-only Llama-3.1-8B de Meta. La arquitectura del modelo base incluye 32 capas, 32 cabezas de atencion, dimension oculta de 4096 y una ventana de contexto de 128 000 tokens. El adaptador fue entrenado con la libreria PEFT 0.20.0, pero no se han publicado los hiperparametros de entrenamiento (rango, alpha, dropout, tasa de aprendizaje) ni el regimen de precision.
 
-La model card menciona el paper de Lacoste et al. (2019) sobre estimacion de emisiones de carbono (arxiv:1910.09700), pero solo como parte de la plantilla estandar de HuggingFace, sin datos concretos sobre el hardware utilizado o las horas de computo. No hay informacion sobre el dataset de entrenamiento, el numero de tokens procesados ni si se aplicaron tecnicas como RLHF o DPO.
+La model card menciona el paper de Lacoste et al. (2019) sobre estimacion de emisiones de carbono (arxiv:1910.09700), pero solo como parte de la plantilla estandar de Hugging Face, sin datos concretos sobre el hardware utilizado o las horas de computo. No hay informacion sobre el dataset de entrenamiento, el numero de tokens procesados ni si se aplicaron tecnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -64,10 +64,10 @@ Dado que se trata de un adaptador LoRA sin documentacion, la comparacion directa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3.1-8B (base) | 8 030 M | 128 K | Llama 3.1 Community License | HuggingFace |
-| Mistral-7B-v0.3 | 7 250 M | 32 K | Apache 2.0 | HuggingFace |
-| Gemma-2-9B | 9 240 M | 8 K | Gemma Terms of Use | HuggingFace |
-| Qwen2.5-7B | 7 610 M | 128 K | Apache 2.0 | HuggingFace |
+| Llama-3.1-8B (base) | 8 030 M | 128 K | Llama 3.1 Community License | Hugging Face |
+| Mistral-7B-v0.3 | 7 250 M | 32 K | Apache 2.0 | Hugging Face |
+| Gemma-2-9B | 9 240 M | 8 K | Gemma Terms of Use | Hugging Face |
+| Qwen2.5-7B | 7 610 M | 128 K | Apache 2.0 | Hugging Face |
 
 El adaptador Jordine/patina3-afford_ours_sdf_s2 no tiene comparativa publicada con otros adaptadores LoRA. Su valor relativo frente a alternativas no puede evaluarse sin benchmarks.
 
@@ -82,7 +82,7 @@ El adaptador Jordine/patina3-afford_ours_sdf_s2 no tiene comparativa publicada c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jordine/patina3-afford_ours_sdf_s2
+- Repositorio Hugging Face: https://huggingface.co/Jordine/patina3-afford_ours_sdf_s2
 - Perfil del autor: https://huggingface.co/Jordine/models
 - Repositorio GitHub relacionado (red-team-sdf-model): https://github.com/Jordine/red-team-sdf-model
 - Sitio web de Patina AI (posiblemente relacionado): https://patinaai.org/

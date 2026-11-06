@@ -79,5 +79,5 @@ La comparación con Demucs se ofrece como referencia de categoría; no se dispon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentdivergence/latentsound-spleeter-4stems
+- Hugging Face: https://huggingface.co/latentdivergence/latentsound-spleeter-4stems
 - Repositorio original de Spleeter: https://github.com/deezer/spleeter

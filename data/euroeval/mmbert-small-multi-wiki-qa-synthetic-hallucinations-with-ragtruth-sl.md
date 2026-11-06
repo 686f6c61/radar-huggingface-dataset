@@ -32,7 +32,7 @@ No se dispone de información sobre hiperparámetros concretos de entrenamiento 
 ## Capacidades
 
 - Detección de alucinaciones a nivel de token en respuestas de sistemas de QA y RAG.
-- Clasificación de tokens (etiquetado de secuencias), con pipeline de `token-classification` de HuggingFace.
+- Clasificación de tokens (etiquetado de secuencias), con pipeline de `token-classification` de Hugging Face.
 - Capacidad multilingüe heredada de mmBERT, aunque la variante con sufijo "sl" podría estar especializada en un idioma concreto (posiblemente esloveno).
 - Integración con la librería `transformers` y compatible con `endpoints_compatible`, lo que facilita su despliegue en servicios de inferencia.
 - No se indican capacidades de generación de texto, tool calling ni agentes; el modelo es exclusivamente para clasificación de tokens.

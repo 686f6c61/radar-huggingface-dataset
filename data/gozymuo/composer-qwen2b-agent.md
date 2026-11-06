@@ -4,7 +4,7 @@
 
 El modelo `gozymuo/composer-qwen2b-agent` es un ajuste fino del modelo base `unsloth/Qwen3.5-2B`, desarrollado por el usuario gozymuo. Con 2.274.069.824 parámetros (aproximadamente 2,27 mil millones), se presenta como un modelo de lenguaje orientado a tareas de agente, aunque la documentación disponible no especifica en detalle las capacidades adicionales. Está publicado con licencia Apache-2.0, lo que permite uso comercial y modificación sin restricciones significativas.
 
-La relevancia de este modelo radica en su tamaño compacto (2B) y su licencia permisiva, lo que lo convierte en una opción viable para despliegues en entornos con recursos limitados, como aplicaciones de chatbot, asistentes virtuales o pipelines de automatización. Aunque el repositorio indica un pipeline `image-text-to-text`, la model card no confirma capacidades multimodales reales; es probable que se trate de una etiqueta genérica de HuggingFace. El modelo se entrenó con las librerías Unsloth y TRL, lo que sugiere un proceso de ajuste eficiente, aunque no se detallan los datos de entrenamiento ni los métodos de alineación.
+La relevancia de este modelo radica en su tamaño compacto (2B) y su licencia permisiva, lo que lo convierte en una opción viable para despliegues en entornos con recursos limitados, como aplicaciones de chatbot, asistentes virtuales o pipelines de automatización. Aunque el repositorio indica un pipeline `image-text-to-text`, la model card no confirma capacidades multimodales reales; es probable que se trate de una etiqueta genérica de Hugging Face. El modelo se entrenó con las librerías Unsloth y TRL, lo que sugiere un proceso de ajuste eficiente, aunque no se detallan los datos de entrenamiento ni los métodos de alineación.
 
 Actualmente no se han publicado benchmarks ni evaluaciones comparativas, por lo que su rendimiento real en tareas estándar no puede verificarse. El modelo está orientado al idioma inglés.
 
@@ -25,7 +25,7 @@ Actualmente no se han publicado benchmarks ni evaluaciones comparativas, por lo 
 
 El modelo es un ajuste fino del modelo `unsloth/Qwen3.5-2B`, que a su vez es una variante de la familia Qwen3.5 de Alibaba Cloud. La arquitectura base es un transformer denso (no MoE) de 2 mil millones de parámetros, típico de los modelos Qwen de tamaño pequeño. No se han publicado detalles sobre la longitud de contexto, el número de tokens de entrenamiento ni la composición del dataset. La model card indica que se utilizaron las librerías Unsloth y TRL para el entrenamiento, lo que implica un proceso de fine-tuning estándar con LoRA o similar, aunque no se especifica el método exacto (RLHF, DPO, etc.).
 
-No se menciona ninguna innovación técnica destacada más allá del uso de Unsloth para acelerar el entrenamiento. El pipeline `image-text-to-text` en HuggingFace sugiere una posible capacidad multimodal, pero no está confirmada en la documentación y probablemente sea un artefacto de la plataforma.
+No se menciona ninguna innovación técnica destacada más allá del uso de Unsloth para acelerar el entrenamiento. El pipeline `image-text-to-text` en Hugging Face sugiere una posible capacidad multimodal, pero no está confirmada en la documentación y probablemente sea un artefacto de la plataforma.
 
 ## Capacidades
 
@@ -54,17 +54,17 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada para inferencia: con cuantización de 4 bits (ej. Q4_K_M en GGUF) se necesita aproximadamente 1,5-2 GB de VRAM; con FP16 (safetensors) alrededor de 4,5 GB.
 - GPU recomendadas: para FP16, una RTX 3060 de 12 GB o superior; para cuantización 4 bits, una GTX 1660 Super de 6 GB o superior.
 - Compatibilidad con consumer GPU: sí, cabe en la mayoría de GPUs modernas con 6 GB o más.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (text-generation-inference), Transformers con HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (text-generation-inference), Transformers con Hugging Face.
 - Latencia y throughput: no hay datos oficiales. Para un modelo de 2B en una GPU consumer, se puede esperar una latencia de 20-50 ms por token en FP16, y mayor en cuantización.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gozymuo/composer-qwen2b-agent | 2,27B | no disponible | Apache-2.0 | HuggingFace |
-| Qwen2.5-1.5B | 1,5B | 32K | Apache-2.0 | HuggingFace |
-| Qwen2.5-3B | 3B | 32K | Apache-2.0 | HuggingFace |
-| Llama-3.2-3B | 3B | 128K | Llama 3.2 License | HuggingFace |
+| gozymuo/composer-qwen2b-agent | 2,27B | no disponible | Apache-2.0 | Hugging Face |
+| Qwen2.5-1.5B | 1,5B | 32K | Apache-2.0 | Hugging Face |
+| Qwen2.5-3B | 3B | 32K | Apache-2.0 | Hugging Face |
+| Llama-3.2-3B | 3B | 128K | Llama 3.2 License | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar directamente. El modelo se sitúa en la gama de 2-3B, con licencia Apache, similar a Qwen2.5. Sin embargo, la falta de contexto y benchmarks limita la comparación.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento para comparar directamente. El modelo se s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gozymuo/composer-qwen2b-agent
+- Modelo en Hugging Face: https://huggingface.co/gozymuo/composer-qwen2b-agent
 - Repositorio de Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Framework Qwen-Agent (relacionado con la familia Qwen): https://github.com/QwenLM/Qwen-Agent
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3.5-2B
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3.5-2B

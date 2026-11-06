@@ -90,9 +90,9 @@ Nivel 3: no ejecutado para este checkpoint. Requiere servir el modelo por HTTP (
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento en benchmarks | Disponibilidad |
 |---|---|---|---|---|---|
-| math-slm-qwen2.5-0.5b-v4 | 494 M | 2.048 tokens en entrenamiento | Apache-2.0 | Solo evaluacion interna: I = 8/33 (24,24 %); sin resultados publicados de MMLU, GSM8K u otros | HuggingFace, 1,0 GB, safetensors fp16, idioma ingles |
-| Qwen2.5-0.5B-Instruct (modelo base) | 494 M | Ventana nativa mayor que la del ajuste segun su documentacion | Apache-2.0 | No disponible en la informacion proporcionada | HuggingFace, ampliamente descargado |
-| Qwen2.5-Math-1.5B-Instruct | 1,5 B | No disponible en la informacion proporcionada | Apache-2.0 | No disponible en la informacion proporcionada | HuggingFace, modelo oficial de la familia Qwen orientado a matematicas |
+| math-slm-qwen2.5-0.5b-v4 | 494 M | 2.048 tokens en entrenamiento | Apache-2.0 | Solo evaluacion interna: I = 8/33 (24,24 %); sin resultados publicados de MMLU, GSM8K u otros | Hugging Face, 1,0 GB, safetensors fp16, idioma ingles |
+| Qwen2.5-0.5B-Instruct (modelo base) | 494 M | Ventana nativa mayor que la del ajuste segun su documentacion | Apache-2.0 | No disponible en la informacion proporcionada | Hugging Face, ampliamente descargado |
+| Qwen2.5-Math-1.5B-Instruct | 1,5 B | No disponible en la informacion proporcionada | Apache-2.0 | No disponible en la informacion proporcionada | Hugging Face, modelo oficial de la familia Qwen orientado a matematicas |
 | Modelos matematicos de 7 B o superiores (por ejemplo, familias DeepSeek-Math o Qwen2.5-Math de mayor tamano) | 7 B o mas | No disponible en la informacion proporcionada | Variables segun modelo | No disponible en la informacion proporcionada | Requieren bastante mas VRAM que este SLM |
 
 La busqueda web realizada no devolvio informacion tecnica relevante sobre este modelo ni sobre alternativas comparables: los resultados obtenidos correspondian a contenidos sin relacion (PlayStation VR2). Por tanto, la comparativa de rendimiento queda sin datos verificables y no se han incluido cifras no contrastadas.
@@ -113,7 +113,7 @@ La busqueda web realizada no devolvio informacion tecnica relevante sobre este m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/singhmandavi/math-slm-qwen2.5-0.5b-v4
+- Modelo en Hugging Face: https://huggingface.co/singhmandavi/math-slm-qwen2.5-0.5b-v4
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset ExamBench: https://huggingface.co/datasets/169Pi/exambench (Apache-2.0, commit b5f3d8b)
 - Dataset MathNet (split IMO): no disponible (referenciado en la model card con licencia CC-BY-4.0, sin URL en la informacion proporcionada)

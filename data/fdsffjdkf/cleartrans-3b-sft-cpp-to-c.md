@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClearTrans-3B-SFT-Cpp-to-C | ~3,09 B | no disponible | Traduccion C++ a C (SFT) | Qwen Research (no comercial) | HuggingFace, solo safetensors |
-| Qwen2.5-Coder-3B (modelo base) | ~3,09 B | no disponible en la informacion proporcionada | Generacion de codigo general | Qwen Research / Apache segun variante | HuggingFace, ampliamente soportado |
+| ClearTrans-3B-SFT-Cpp-to-C | ~3,09 B | no disponible | Traduccion C++ a C (SFT) | Qwen Research (no comercial) | Hugging Face, solo safetensors |
+| Qwen2.5-Coder-3B (modelo base) | ~3,09 B | no disponible en la informacion proporcionada | Generacion de codigo general | Qwen Research / Apache segun variante | Hugging Face, ampliamente soportado |
 | Otros modelos de traduccion de codigo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de otros checkpoints comparables de traduccion C++ a C en la informacion proporcionada, por lo que la comparativa se limita al modelo base.
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de otros checkpoints comparables de trad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Cpp-to-C
+- Modelo en Hugging Face: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Cpp-to-C
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - Repositorio de implementacion y replicacion: https://github.com/Xingzhehu/ClearTrans
 - Licencia incluida en el repositorio: LICENSE (Qwen Research License Agreement)

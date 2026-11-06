@@ -86,6 +86,6 @@ La comparativa se limita a especificaciones tecnicas, ya que no existen datos de
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/FRPO/qwen3-1.7b-a3_onpolicy-k1-cNone-clip0.2-mb1-eta100-bs64x5-n2-s800)
+- [Repositorio Hugging Face](https://huggingface.co/FRPO/qwen3-1.7b-a3_onpolicy-k1-cNone-clip0.2-mb1-eta100-bs64x5-n2-s800)
 - [Modelo base Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)
 - [Libreria verl](https://github.com/volcengine/verl)

@@ -78,10 +78,10 @@ No se dispone de informacion suficiente para comparar con modelos TTS de otros d
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/Rin247/Qwen3-TTS-12Hz-0.6B-CustomVoice-INT8
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
+- Checkpoint en Hugging Face: https://huggingface.co/Rin247/Qwen3-TTS-12Hz-0.6B-CustomVoice-INT8
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
 - Repositorio GitHub de Qwen3-TTS: https://github.com/QwenLM/Qwen3-TTS
 - Paper tecnico (arXiv): https://huggingface.co/papers/2601.15621
-- Demo interactiva en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen3-TTS
+- Demo interactiva en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen3-TTS
 - Variante OpenVINO INT8: https://huggingface.co/aurora2035/Qwen3-TTS-12Hz-0.6B-CustomVoice-OpenVINO-INT8
 - Modelo en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice

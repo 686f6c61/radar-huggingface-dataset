@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Biolm-3B es un modelo multimodal end-to-end derivado de Qwen2.5-Omni-3B, publicado por el usuario chibubu en HuggingFace. Acepta entradas de texto, imagen, audio y vídeo, y genera tanto texto como voz natural de forma streaming. Su pipeline declarado es `any-to-any` y está orientado a la investigación académica en razonamiento temporal multimodal y comprensión audio-visual.
+Biolm-3B es un modelo multimodal end-to-end derivado de Qwen2.5-Omni-3B, publicado por el usuario chibubu en Hugging Face. Acepta entradas de texto, imagen, audio y vídeo, y genera tanto texto como voz natural de forma streaming. Su pipeline declarado es `any-to-any` y está orientado a la investigación académica en razonamiento temporal multimodal y comprensión audio-visual.
 
 El repositorio contiene 5.537.120.672 parámetros reales según los pesos en safetensors (unos 5,54 mil millones), lo que difiere de la denominación comercial "3B" heredada del modelo base. El tamaño del repositorio es de 12,0 GB, lo que sugiere pesos en precisión bf16/fp16. La arquitectura subyacente es la de Qwen2.5-Omni, un transformer multimodal con generación de habla, aunque la model card no detalla la configuración interna.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Biolm-3B | 5.537.120.672 | no disponible | texto, imagen, audio, vídeo (entrada); texto y habla (salida) | qwen-research | HuggingFace (chibubu/biolm-3b) |
-| Qwen2.5-Omni-3B (base) | ~3B según denominación comercial | no disponible en esta ficha | texto, imagen, audio, vídeo (entrada); texto y habla (salida) | qwen-research | HuggingFace (Qwen) |
+| Biolm-3B | 5.537.120.672 | no disponible | texto, imagen, audio, vídeo (entrada); texto y habla (salida) | qwen-research | Hugging Face (chibubu/biolm-3b) |
+| Qwen2.5-Omni-3B (base) | ~3B según denominación comercial | no disponible en esta ficha | texto, imagen, audio, vídeo (entrada); texto y habla (salida) | qwen-research | Hugging Face (Qwen) |
 | Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo ni de otras alternativas verificadas en la información proporcionada.
@@ -85,6 +85,6 @@ No se dispone de datos de rendimiento comparativo ni de otras alternativas verif
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chibubu/biolm-3b
+- Hugging Face: https://huggingface.co/chibubu/biolm-3b
 - Modelo base referenciado (Qwen2.5-Omni): no se proporciona enlace directo en la información disponible
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada

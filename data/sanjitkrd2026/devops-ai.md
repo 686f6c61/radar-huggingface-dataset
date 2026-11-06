@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sanjitkrd2026/devops-ai` es un modelo publicado en HuggingFace por el usuario `sanjitkrd2026` bajo licencia Apache 2.0. Por el identificador y el nombre del repositorio, parece orientado a tareas de DevOps, aunque la model card no aporta ninguna descripción funcional, arquitectura, tamaño ni datos de entrenamiento. El repositorio se creó el 1 de noviembre de 2026 y no registra descargas ni interacciones en el momento de redactar esta ficha.
+`sanjitkrd2026/devops-ai` es un modelo publicado en Hugging Face por el usuario `sanjitkrd2026` bajo licencia Apache 2.0. Por el identificador y el nombre del repositorio, parece orientado a tareas de DevOps, aunque la model card no aporta ninguna descripción funcional, arquitectura, tamaño ni datos de entrenamiento. El repositorio se creó el 1 de noviembre de 2026 y no registra descargas ni interacciones en el momento de redactar esta ficha.
 
 La información disponible es mínima: la model card se limita a la declaración de licencia (`license: apache-2.0`) y las etiquetas del repositorio son únicamente `license:apache-2.0` y `region:us`. No se indica pipeline, idiomas soportados, tipo de pesos ni parámetros. Esto impide verificar si se trata de un modelo entrenado desde cero, un fine-tuning, una adaptación LoRA o incluso un repositorio con artefactos no modelísticos.
 
@@ -67,10 +67,10 @@ No es posible establecer una comparativa fiable sin conocer parámetros, context
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sanjitkrd2026/devops-ai | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| Qwen2.5-Coder (variantes) | 1,5B a 32B | hasta 128K en algunas variantes | Apache 2.0 (mayoría) | HuggingFace |
-| CodeLlama (variantes) | 7B a 34B | 16K | Llama 2 Community | HuggingFace |
-| DeepSeek-Coder-V2 | 236B totales (21B activos) | 128K | DeepSeek License | HuggingFace |
+| sanjitkrd2026/devops-ai | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder (variantes) | 1,5B a 32B | hasta 128K en algunas variantes | Apache 2.0 (mayoría) | Hugging Face |
+| CodeLlama (variantes) | 7B a 34B | 16K | Llama 2 Community | Hugging Face |
+| DeepSeek-Coder-V2 | 236B totales (21B activos) | 128K | DeepSeek License | Hugging Face |
 
 Los datos de los modelos comparativos corresponden a sus fichas públicas habituales y deben verificarse en la fuente original; no se han contrastado aquí contra la información proporcionada para `devops-ai`, que carece de datos.
 
@@ -86,5 +86,5 @@ Los datos de los modelos comparativos corresponden a sus fichas públicas habitu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sanjitkrd2026/devops-ai
+- Repositorio en Hugging Face: https://huggingface.co/sanjitkrd2026/devops-ai
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

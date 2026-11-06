@@ -37,7 +37,7 @@ El entrenamiento se realizo sobre el dataset rlfka1001/labor-embedding-data, com
 - Similitud de frases y recuperacion asimetrica consulta-documento mediante los prefijos `query:` y `passage:`.
 - Extraccion de caracteristicas (`feature-extraction`) a partir de las representaciones del encoder.
 - Recuperacion de articulos legales laborales coreanos a partir de preguntas en lenguaje natural, incluyendo parafrasis (el widget de la model card muestra tres formulaciones distintas de la misma consulta sobre permiso menstrual).
-- Compatibilidad con text-embeddings-inference y con endpoints de HuggingFace.
+- Compatibilidad con text-embeddings-inference y con endpoints de Hugging Face.
 - No soporta tool calling, function calling, razonamiento multi-paso ni generacion de texto: es exclusivamente un encoder de embeddings.
 - Capacidad multilingue limitada en la practica: el modelo base es multilingue, pero el ajuste se ha hecho solo con datos en coreano y el autor solo declara `ko`.
 
@@ -76,7 +76,7 @@ La lectura practica: en el 91,1 % de las consultas el articulo correcto aparece 
 - VRAM estimada para inferencia: inferior a 1 GB en fp32 (117,6 millones de parametros, aproximadamente 0,47 GB de pesos); en fp16 alrededor de 0,24 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria, incluidas GTX 1650, RTX 3060, RTX 4090, A100 o H100. El modelo no aprovecha la capacidad de GPU de gama alta por su tamano.
 - Cabe holgadamente en GPU de consumo e incluso funciona en CPU para cargas moderadas de indexacion y consulta.
-- Opciones de despliegue: sentence-transformers (Python), text-embeddings-inference (el modelo declara compatibilidad), endpoints de HuggingFace y servidores de embeddings basados en Transformers. No se documentan pesos GGUF ni soporte explicito para llama.cpp u Ollama.
+- Opciones de despliegue: sentence-transformers (Python), text-embeddings-inference (el modelo declara compatibilidad), endpoints de Hugging Face y servidores de embeddings basados en Transformers. No se documentan pesos GGUF ni soporte explicito para llama.cpp u Ollama.
 - Latencia y throughput: no disponibles en la informacion proporcionada. Por el tamano del encoder, se espera una latencia de milisegundos por frase en GPU y de decenas de milisegundos en CPU, pero no hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -102,7 +102,7 @@ La comparacion cuantitativa con el modelo base no es posible con la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rlfka1001/multilingual-e5-small-labor
+- Modelo en Hugging Face: https://huggingface.co/rlfka1001/multilingual-e5-small-labor
 - Dataset de entrenamiento: https://huggingface.co/datasets/rlfka1001/labor-embedding-data
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Documentacion de sentence-transformers: https://www.sbert.net/

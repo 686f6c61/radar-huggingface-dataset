@@ -2,9 +2,9 @@
 
 ## Resumen
 
-totem-slm-sft es un ajuste fino (SFT) del modelo Qwen3-4B, publicado por el usuario giocorte en HuggingFace. Se trata de un modelo de generacion de texto de 4.022.468.096 parametros (segun los pesos en safetensors), derivado concretamente de la version cuantizada a 4 bits `unsloth/qwen3-4b-unsloth-bnb-4bit`, que a su vez es una adaptacion del Qwen3-4B original preparada para entrenamiento eficiente con Unsloth.
+totem-slm-sft es un ajuste fino (SFT) del modelo Qwen3-4B, publicado por el usuario giocorte en Hugging Face. Se trata de un modelo de generacion de texto de 4.022.468.096 parametros (segun los pesos en safetensors), derivado concretamente de la version cuantizada a 4 bits `unsloth/qwen3-4b-unsloth-bnb-4bit`, que a su vez es una adaptacion del Qwen3-4B original preparada para entrenamiento eficiente con Unsloth.
 
-El modelo se distribuye bajo licencia Apache 2.0, con pesos en formato safetensors y compatibilidad declarada con `transformers` y `text-generation-inference`. El autor indica que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, con una aceleracion declarada de 2x respecto a un entrenamiento convencional, aunque no se detalla la composicion del dataset, el numero de tokens de entrenamiento ni la tecnica de alineacion empleada.
+El modelo se distribuye bajo licencia Apache 2.0, con pesos en formato safetensors y compatibilidad declarada con `transformers` y `text-generation-inference`. El autor indica que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, con una aceleracion declarada de 2x respecto a un entrenamiento convencional, aunque no se detalla la composicion del dataset, el numero de tokens de entrenamiento ni la tecnica de alineacion empleada.
 
 La relevancia de esta ficha es limitada y conviene ser explicito: el repositorio no incluye resultados de benchmarks, no describe el corpus de ajuste ni los hiperparametros, y el modelo no registra descargas ni "likes" en el momento de la consulta. Su interes practico reside en ser un ejemplo de pipeline de ajuste fino reproducible sobre Qwen3-4B con Unsloth + TRL, mas que en un rendimiento contrastado. Ademas, la model card del autor no aporta informacion sobre recetas de alineacion (RLHF/DPO), longitudes de contexto efectivas ni evaluaciones.
 
@@ -64,11 +64,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados por el autor |
 |---|---|---|---|---|---|
-| giocorte/totem-slm-sft | 4,02B | no disponible | Apache 2.0 | HuggingFace, safetensors | No |
-| Qwen/Qwen3-4B (modelo base de la familia) | ~4B | no disponible en esta ficha | Apache 2.0 | HuggingFace | Si (en su model card oficial) |
-| unsloth/qwen3-4b-unsloth-bnb-4bit (punto de partida) | ~4B | no disponible en esta ficha | Apache 2.0 | HuggingFace | No aplica (es una conversion) |
-| Meta Llama 3.2 3B Instruct | ~3B | no disponible en esta ficha | Llama 3.2 Community License | HuggingFace | Si (en su model card oficial) |
-| Google Gemma 3 4B IT | ~4B | no disponible en esta ficha | Gemma Terms of Use | HuggingFace | Si (en su model card oficial) |
+| giocorte/totem-slm-sft | 4,02B | no disponible | Apache 2.0 | Hugging Face, safetensors | No |
+| Qwen/Qwen3-4B (modelo base de la familia) | ~4B | no disponible en esta ficha | Apache 2.0 | Hugging Face | Si (en su model card oficial) |
+| unsloth/qwen3-4b-unsloth-bnb-4bit (punto de partida) | ~4B | no disponible en esta ficha | Apache 2.0 | Hugging Face | No aplica (es una conversion) |
+| Meta Llama 3.2 3B Instruct | ~3B | no disponible en esta ficha | Llama 3.2 Community License | Hugging Face | Si (en su model card oficial) |
+| Google Gemma 3 4B IT | ~4B | no disponible en esta ficha | Gemma Terms of Use | Hugging Face | Si (en su model card oficial) |
 
 No se dispone de datos de rendimiento comparativos para totem-slm-sft, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
 
@@ -85,9 +85,9 @@ No se dispone de datos de rendimiento comparativos para totem-slm-sft, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/giocorte/totem-slm-sft
+- Modelo en Hugging Face: https://huggingface.co/giocorte/totem-slm-sft
 - Modelo base declarado: https://huggingface.co/unsloth/qwen3-4b-unsloth-bnb-4bit
 - Unsloth (framework de entrenamiento citado): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (libreria de entrenamiento citada): https://github.com/huggingface/trl
+- TRL de Hugging Face (libreria de entrenamiento citada): https://github.com/huggingface/trl
 - Familia Qwen3 (documentacion del modelo original): https://huggingface.co/Qwen/Qwen3-4B
 - Resultados de la busqueda web: no se encontro ningun enlace relevante sobre el modelo; los resultados devueltos trataban sobre la zona horaria AEST.

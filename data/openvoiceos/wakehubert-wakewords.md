@@ -20,7 +20,7 @@ El repositorio incluye diez palabras: jarvis, alexa, hey jarvis, hey marvin, hom
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
 | Formato de pesos | ONNX (un fichero por palabra en models/, mas models.json) |
-| Tamano del repositorio | 0,0 GB (por debajo de la resolucion de medida de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (por debajo de la resolucion de medida de Hugging Face) |
 | Numero de modelos incluidos | 10 cabeceras de palabra clave |
 | Cadencia de puntuacion | Un bloque de 1.280 muestras cada 80 ms (recomendado en la model card) |
 | Tiempo de bloqueo tras deteccion | 25 bloques (2 s) segun el ejemplo de la model card |
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: no aplica ni es necesaria; no se documenta aceleracion por GPU para este modelo.
 - Compatibilidad con GPU de consumo: irrelevante, ya que el modelo funciona en CPU con un coste de milisegundos por bloque.
 - CPU: un unico nucleo es suficiente para el featurizador int8 (1-2 ms por bloque de 80 ms frente a los 80 ms de audio que representa ese bloque, es decir, una fraccion muy pequena del tiempo real disponible).
-- Memoria: el repositorio completo mide 0,0 GB segun HuggingFace, de modo que la huella en disco y en RAM es minima; los pesos de las cabeceras y del featurizador caben holgadamente en cualquier dispositivo.
+- Memoria: el repositorio completo mide 0,0 GB segun Hugging Face, de modo que la huella en disco y en RAM es minima; los pesos de las cabeceras y del featurizador caben holgadamente en cualquier dispositivo.
 - Despliegue: onnxruntime (Python, C++ u otros enlaces disponibles), con dependencias minimas numpy, onnxruntime y huggingface_hub; en el ecosistema OpenVoiceOS, el plugin ovos-ww-plugin-wakeforge; el ejemplo de la model card usa sounddevice para captura desde microfono.
 - Latencia y throughput: la model card recomienda puntuar cada 80 ms con bloques de 1.280 muestras y aplicar un bloqueo de 25 bloques (2 s) tras cada deteccion; el coste por bloque del featurizador int8 se situa en 1-2 ms en un nucleo.
 - Flujo de memoria y buffers: el ejemplo mantiene un buffer circular de 24.000 muestras float32 a 16 kHz; no se documentan requisitos adicionales.
@@ -101,7 +101,7 @@ La informacion proporcionada no incluye especificaciones ni resultados de estos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OpenVoiceOS/wakehubert-wakewords
+- Repositorio en Hugging Face: https://huggingface.co/OpenVoiceOS/wakehubert-wakewords
 - Modelo base (featurizador): https://huggingface.co/TigreGotico/wakehubert-tiny
 - Version cuantizada del featurizador: https://huggingface.co/TigreGotico/wakehubert-tiny (referencia base_model:quantized del repositorio)
 - Herramienta de entrenamiento wakeforge: https://github.com/TigreGotico/wakeforge
@@ -118,4 +118,4 @@ La informacion proporcionada no incluye especificaciones ni resultados de estos 
 - Dataset sintetico de ejemplo (wake up): https://huggingface.co/datasets/TigreGotico/synthetic-wakeword-wake_up
 - Dataset negativo de habla en ingles: https://huggingface.co/datasets/TigreGotico/not-wake-words-speech-en
 
-Nota: la busqueda web realizada no devolvio resultados relacionados con este modelo; los enlaces disponibles proceden unicamente de la informacion de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relacionados con este modelo; los enlaces disponibles proceden unicamente de la informacion de Hugging Face.

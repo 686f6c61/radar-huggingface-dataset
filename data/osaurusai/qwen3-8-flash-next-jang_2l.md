@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativos para este bundle cuantizado f
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OsaurusAI/Qwen3.8-Flash-Next-JANG_2L
+- Repositorio Hugging Face: https://huggingface.co/OsaurusAI/Qwen3.8-Flash-Next-JANG_2L
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Guia de ejecucion local (unsloth): https://unsloth.ai/docs/models/qwen3.8-next

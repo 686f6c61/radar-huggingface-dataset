@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fluid Speech Pro | ~0,6B | 25 europeos | no disponible | CC BY 4.0 | HuggingFace (NeMo) |
-| NVIDIA Parakeet TDT 0.6B v3 | ~0,6B | 25 europeos | no disponible | CC BY 4.0 | HuggingFace (NeMo) |
-| Moondream Parakeet Ultra | no disponible | no disponible | no disponible | CC BY 4.0 | HuggingFace |
-| OpenAI Whisper large-v3 | ~1,55B | ~99 | 30 s de audio | MIT | HuggingFace, múltiples backends |
+| Fluid Speech Pro | ~0,6B | 25 europeos | no disponible | CC BY 4.0 | Hugging Face (NeMo) |
+| NVIDIA Parakeet TDT 0.6B v3 | ~0,6B | 25 europeos | no disponible | CC BY 4.0 | Hugging Face (NeMo) |
+| Moondream Parakeet Ultra | no disponible | no disponible | no disponible | CC BY 4.0 | Hugging Face |
+| OpenAI Whisper large-v3 | ~1,55B | ~99 | 30 s de audio | MIT | Hugging Face, múltiples backends |
 
 Fluid Speech Pro comparte arquitectura y tamaño con Parakeet TDT 0.6B v3, del que deriva mediante finetune, por lo que su principal diferenciación es el postprocesado "clean" y el ajuste específico del equipo. Frente a Whisper large-v3, ofrece un tamaño menor (0,6B frente a 1,55B) y una licencia CC BY 4.0 (frente a MIT), pero una cobertura lingüística mucho más reducida (25 idiomas frente a ~99) y un ecosistema de despliegue más limitado (NeMo frente a la amplia compatibilidad de Whisper). No se dispone de datos de benchmarks que permitan comparar la precisión relativa.
 
@@ -83,7 +83,7 @@ Fluid Speech Pro comparte arquitectura y tamaño con Parakeet TDT 0.6B v3, del q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidVoice-Labs/fluid-speech-pro
+- Modelo en Hugging Face: https://huggingface.co/FluidVoice-Labs/fluid-speech-pro
 - FluidVoice (sitio del equipo): https://fluidvoice.com
 - Modelo base NVIDIA Parakeet TDT 0.6B v3: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Modelo base Moondream Parakeet Ultra: https://huggingface.co/moondream/parakeet-ultra

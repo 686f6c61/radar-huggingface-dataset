@@ -76,8 +76,8 @@ Estos datos corresponden a marcos de entrenamiento, por lo que no constituyen un
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`joonyeongs/cosmos3-edge-policy-droid-failure-prevention-lora-r16-a32-2k`) | 3.859.003.312 | no disponible | MAE medio 0,0879 rad en marcos de entrenamiento (no cierre de bucle) | OpenMDW-1.1 | HuggingFace, 0 descargas, 0 likes |
-| `nvidia/Cosmos3-Edge-Policy-DROID` (base) | no disponible | no disponible | MAE medio 0,1986 rad en los mismos marcos | OpenMDW-1.1 | HuggingFace (NVIDIA) |
+| Este modelo (`joonyeongs/cosmos3-edge-policy-droid-failure-prevention-lora-r16-a32-2k`) | 3.859.003.312 | no disponible | MAE medio 0,0879 rad en marcos de entrenamiento (no cierre de bucle) | OpenMDW-1.1 | Hugging Face, 0 descargas, 0 likes |
+| `nvidia/Cosmos3-Edge-Policy-DROID` (base) | no disponible | no disponible | MAE medio 0,1986 rad en los mismos marcos | OpenMDW-1.1 | Hugging Face (NVIDIA) |
 | Otros modelos de politica robotica | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de terceros modelos comparables en la informacion proporcionada.
@@ -95,7 +95,7 @@ No se dispone de datos de terceros modelos comparables en la informacion proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joonyeongs/cosmos3-edge-policy-droid-failure-prevention-lora-r16-a32-2k
+- Modelo en Hugging Face: https://huggingface.co/joonyeongs/cosmos3-edge-policy-droid-failure-prevention-lora-r16-a32-2k
 - Modelo base: https://huggingface.co/nvidia/Cosmos3-Edge-Policy-DROID
 - Dataset de entrenamiento: https://huggingface.co/datasets/joonyeongs/cosmos3-edge-failure-prevention-200
 - Codigo de entrenamiento: rama `robolab-droid-lora-train` del repositorio `joonyeongs/cosmos-framework` (receta `examples/toml/sft_config/robolab_droid_edge_lora.toml`)

@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Atlantic-CC pooled transformer | 25,9 M | 8.192 tokens | Clasificacion P(useful) de paginas web | OpenMDW-1.1 | HuggingFace |
-| Atlantic-CC ModernBERT classifier | no disponible | no disponible | Clasificacion de paginas web (etapa final de la cascada) | no disponible | HuggingFace |
+| Atlantic-CC pooled transformer | 25,9 M | 8.192 tokens | Clasificacion P(useful) de paginas web | OpenMDW-1.1 | Hugging Face |
+| Atlantic-CC ModernBERT classifier | no disponible | no disponible | Clasificacion de paginas web (etapa final de la cascada) | no disponible | Hugging Face |
 | fastText (filtro de la cascada) | no disponible | no aplica | Filtrado rapido previo | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con alternativas externas en la informacion proporcionada.
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks comparativos con alternativas externas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marin-community/atlantic-cc-pooled-transformer
+- Modelo en Hugging Face: https://huggingface.co/marin-community/atlantic-cc-pooled-transformer
 - Clasificador ModernBERT de la cascada: https://huggingface.co/marin-community/atlantic-cc-modernbert
 - Repositorio del proyecto Atlantic-CC: https://github.com/marin-community/atlantic-cc
 - Documentacion de clasificadores: https://github.com/marin-community/atlantic-cc/blob/main/docs/classifiers.md

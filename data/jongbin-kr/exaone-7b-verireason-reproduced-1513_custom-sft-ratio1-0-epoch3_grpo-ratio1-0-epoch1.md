@@ -84,7 +84,7 @@ La comparativa se basa en datos públicos de los modelos base, no en resultados 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jongbin-kr/exaone-7b-verireason-reproduced-1513_custom-sft-ratio1.0-epoch3_grpo-ratio1.0-epoch1
+- Repositorio Hugging Face: https://huggingface.co/Jongbin-kr/exaone-7b-verireason-reproduced-1513_custom-sft-ratio1.0-epoch3_grpo-ratio1.0-epoch1
 - Modelo base EXAONE-3.5-7.8B-Instruct: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Paper de DeepSeekMath (GRPO): https://huggingface.co/papers/2402.03300
 - Repositorio GitHub de EXAONE-3.0: https://github.com/LG-AI-EXAONE/EXAONE-3.0

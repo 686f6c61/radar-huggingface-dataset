@@ -4,7 +4,7 @@
 
 El modelo ESarp/Phi-4-Mini-AttackTree-DPO es un ajuste fino (fine-tune) del modelo base `unsloth/Phi-4-mini-instruct-bnb-4bit`, desarrollado por el usuario ESarp. Se trata de un modelo de generación de texto basado en la arquitectura Phi-4-mini de Microsoft, con 3.836.021.760 parámetros (aproximadamente 3,8 mil millones), lo que lo sitúa en la categoría de modelos pequeños aptos para despliegue en hardware de consumo. El nombre sugiere una especialización en árboles de ataque (attack trees), un formalismo utilizado en análisis de seguridad y modelado de amenazas, aunque la model card no proporciona detalles sobre el dataset de entrenamiento ni sobre las tareas específicas.
 
-El modelo fue entrenado con la técnica DPO (Direct Preference Optimization) utilizando las librerías Unsloth y TRL de HuggingFace, lo que indica un enfoque de alineación por preferencias sobre el modelo base. La licencia es Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas. Su relevancia actual radica en que ofrece una alternativa ligera y de código abierto para tareas de generación de texto, potencialmente orientada a dominios de seguridad informática, aunque la documentación pública es escasa.
+El modelo fue entrenado con la técnica DPO (Direct Preference Optimization) utilizando las librerías Unsloth y TRL de Hugging Face, lo que indica un enfoque de alineación por preferencias sobre el modelo base. La licencia es Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas. Su relevancia actual radica en que ofrece una alternativa ligera y de código abierto para tareas de generación de texto, potencialmente orientada a dominios de seguridad informática, aunque la documentación pública es escasa.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El modelo fue entrenado con la técnica DPO (Direct Preference Optimization) uti
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Phi-4-mini de Microsoft, un transformer decoder-only optimizado para eficiencia computacional y razonamiento. El proceso de entrenamiento consistio en un ajuste fino del modelo base `unsloth/Phi-4-mini-instruct-bnb-4bit` mediante DPO (Direct Preference Optimization), una tecnica que alinea el modelo con preferencias humanas a partir de pares de respuestas preferidas y rechazadas. El entrenamiento se realizo con la libreria Unsloth, que acelera el fine-tuning, y con la libreria TRL de HuggingFace.
+El modelo se basa en la arquitectura Phi-4-mini de Microsoft, un transformer decoder-only optimizado para eficiencia computacional y razonamiento. El proceso de entrenamiento consistio en un ajuste fino del modelo base `unsloth/Phi-4-mini-instruct-bnb-4bit` mediante DPO (Direct Preference Optimization), una tecnica que alinea el modelo con preferencias humanas a partir de pares de respuestas preferidas y rechazadas. El entrenamiento se realizo con la libreria Unsloth, que acelera el fine-tuning, y con la libreria TRL de Hugging Face.
 
 No se dispone de informacion publica sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron otras tecnicas como RLHF o SFT adicional. El nombre del modelo sugiere que el dataset podria estar relacionado con arboles de ataque en ciberseguridad, pero esto no esta confirmado en la documentacion.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: con 3,8 mil millones de parametros, el modelo en precision FP16 requiere aproximadamente 7,7 GB de VRAM (el tamano del repo es 7,7 GB). Con cuantizacion a 4 bits (como el modelo base), podria reducirse a unos 2-3 GB, aunque no se proporcionan pesos cuantizados en el repositorio.
 - GPU recomendadas: una GPU consumer con al menos 8 GB de VRAM (por ejemplo, NVIDIA RTX 3060, 3070, 4060, 4070) puede ejecutar el modelo en FP16. Con cuantizacion, cabria en GPUs de 4-6 GB como la RTX 3050 o 4050.
 - Si cabe en consumer GPU: si, en la mayoria de GPUs modernas de gama media y alta.
-- Opciones de despliegue: al ser un modelo de la familia transformers, puede servirse con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierten los pesos a GGUF), Ollama o directamente con la libreria transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo de la familia transformers, puede servirse con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierten los pesos a GGUF), Ollama o directamente con la libreria transformers de Hugging Face.
 - Latencia y throughput estimados: no se dispone de mediciones publicas. Para un modelo de 3,8B en una GPU consumer, se espera una latencia de decenas de milisegundos por token y un throughput de decenas de tokens por segundo, dependiendo de la cuantizacion y del hardware.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ Nota: la longitud de contexto del modelo base Phi-4-mini es de 128K tokens segun
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ESarp/Phi-4-Mini-AttackTree-DPO
+- Repositorio Hugging Face: https://huggingface.co/ESarp/Phi-4-Mini-AttackTree-DPO
 - Libreria Unsloth: https://github.com/unslothai/unsloth
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Phi-4-mini-instruct-bnb-4bit
-- Documentacion de TRL (HuggingFace): https://huggingface.co/docs/trl/index
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Phi-4-mini-instruct-bnb-4bit
+- Documentacion de TRL (Hugging Face): https://huggingface.co/docs/trl/index

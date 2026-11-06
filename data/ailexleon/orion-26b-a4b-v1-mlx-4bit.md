@@ -71,7 +71,7 @@ La comparativa se basa en el nombre y los tags; no hay datos de rendimiento publ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ailexleon/Orion-26B-A4B-v1-mlx-4Bit
+- Repositorio Hugging Face: https://huggingface.co/ailexleon/Orion-26B-A4B-v1-mlx-4Bit
 - Modelo original de Google: https://huggingface.co/google/gemma-4-26B-A4B
 - Repositorio de referencia para conversiones MLX de Gemma 4: https://github.com/FakeRocket543/mlx-gemma4/tree/main/gemma4-26b-a4b-mlx-4bit
 - Articulo sobre despliegue de Gemma 4 26B A4B en RTX 5090 (no directamente relacionado, pero util para comparar): https://pub.towardsai.net/deploying-gemma-4-26b-a4b-on-an-rtx-5090-69dacb0c116d

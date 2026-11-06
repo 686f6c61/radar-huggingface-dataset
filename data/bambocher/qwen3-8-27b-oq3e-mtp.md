@@ -92,7 +92,7 @@ Los datos de las tres alternativas provienen de sus model cards públicas y no d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bambocher/Qwen3.8-27B-oQ3e-mtp
+- Repositorio en Hugging Face: https://huggingface.co/bambocher/Qwen3.8-27B-oQ3e-mtp
 - oQ / oMLX (herramienta de cuantización citada en la model card): https://github.com/jundot/omlx
 - MLX (framework de Apple para el que está formateado el checkpoint): https://github.com/ml-explore/mlx
 - mlx-lm (runtime de inferencia de texto en MLX): https://github.com/ml-explore/mlx-lm

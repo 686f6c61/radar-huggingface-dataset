@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YOLO26m-person es un detector de objetos derivado de la familia YOLO26, publicado por el usuario hydravision en HuggingFace bajo el identificador hydravision/yolo26m-person. Se trata de un ajuste especializado del modelo YOLO26m (variante "medium" de la familia) entrenado de forma exclusiva para la deteccion y el rastreo de personas, con una unica clase de salida (ID 0). El autor lo presenta como parte del ecosistema HydraVMS y HydraForge, orientado a videovigilancia y analitica de video.
+YOLO26m-person es un detector de objetos derivado de la familia YOLO26, publicado por el usuario hydravision en Hugging Face bajo el identificador hydravision/yolo26m-person. Se trata de un ajuste especializado del modelo YOLO26m (variante "medium" de la familia) entrenado de forma exclusiva para la deteccion y el rastreo de personas, con una unica clase de salida (ID 0). El autor lo presenta como parte del ecosistema HydraVMS y HydraForge, orientado a videovigilancia y analitica de video.
 
 El problema que resuelve es acotado pero frecuente: en lugar de un detector generico de 80 clases, ofrece un cabezal monoclaso optimizado para personas, lo que simplifica el postprocesado y el rastreo en pipelines de video. Segun la model card, el entrenamiento se realizo sobre un dataset propio denominado Person_Reinforcement_Batch, con entrada de 640x640 y objetivo de despliegue en FP16 sobre TensorRT.
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Clases | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hydravision/yolo26m-person | YOLO26m (ajuste monoclaso) | 1 (persona) | 640x640 | MIT (segun el autor) | Repositorio HuggingFace con 0.0 GB y 0 descargas |
-| Ultralytics/YOLO26 | Familia YOLO26 (n, s, m, l, x) | 80 (COCO) | no disponible en la informacion recogida | AGPL-3.0 en la distribucion oficial de Ultralytics | Publico en HuggingFace y Ultralytics Platform |
+| hydravision/yolo26m-person | YOLO26m (ajuste monoclaso) | 1 (persona) | 640x640 | MIT (segun el autor) | Repositorio Hugging Face con 0.0 GB y 0 descargas |
+| Ultralytics/YOLO26 | Familia YOLO26 (n, s, m, l, x) | 80 (COCO) | no disponible en la informacion recogida | AGPL-3.0 en la distribucion oficial de Ultralytics | Publico en Hugging Face y Ultralytics Platform |
 | YOLO26m Pose (Dhyaa Feriska) | YOLO26m para estimacion de pose | Clase persona con puntos clave | no disponible en la informacion recogida | no disponible | Publico en Ultralytics Platform |
 | Detectores genericos tipo YOLOv8/YOLO11 | CNN de deteccion en tiempo real | 80 (COCO) | no disponible en la informacion recogida | AGPL-3.0 en la distribucion oficial | Ampliamente disponible |
 
@@ -89,8 +89,8 @@ No se dispone de datos de rendimiento comparado (mAP, latencia) para ninguno de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hydravision/yolo26m-person
-- Familia YOLO26 de Ultralytics en HuggingFace: https://huggingface.co/Ultralytics/YOLO26
+- Modelo en Hugging Face: https://huggingface.co/hydravision/yolo26m-person
+- Familia YOLO26 de Ultralytics en Hugging Face: https://huggingface.co/Ultralytics/YOLO26
 - Documentacion oficial de Ultralytics YOLO26: https://docs.ultralytics.com/models/yolo26
 - Modelo YOLO26m en Ultralytics Platform (Myra): https://platform.ultralytics.com/myra/yolo26/yolo26m
 - Modelo YOLO26m Pose en Ultralytics Platform (Dhyaa Feriska): https://platform.ultralytics.com/dhyaa-feriska/yolo26/yolo26m-pose

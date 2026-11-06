@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FerData/regresion-casas-pytorch` es un modelo de regresion lineal implementado con PyTorch y publicado como ejemplo pedagogico del Seminario de Actualizacion del IFTS N.o 18, bajo la docencia de Cynthia M. Villagra. No es un modelo de lenguaje ni una red neuronal profunda: es una unica capa `torch.nn.Linear(3, 1)` que predice el precio de una vivienda en miles de dolares estadounidenses a partir de tres variables de entrada (superficie en metros cuadrados, existencia de balcon y existencia de ascensor). Su interes no reside en el rendimiento predictivo, sino en ilustrar de forma completa el ciclo de vida de un modelo en PyTorch: entrenamiento con gradiente descendente, serializacion en formato safetensors y publicacion reproducible en HuggingFace.
+`FerData/regresion-casas-pytorch` es un modelo de regresion lineal implementado con PyTorch y publicado como ejemplo pedagogico del Seminario de Actualizacion del IFTS N.o 18, bajo la docencia de Cynthia M. Villagra. No es un modelo de lenguaje ni una red neuronal profunda: es una unica capa `torch.nn.Linear(3, 1)` que predice el precio de una vivienda en miles de dolares estadounidenses a partir de tres variables de entrada (superficie en metros cuadrados, existencia de balcon y existencia de ascensor). Su interes no reside en el rendimiento predictivo, sino en ilustrar de forma completa el ciclo de vida de un modelo en PyTorch: entrenamiento con gradiente descendente, serializacion en formato safetensors y publicacion reproducible en Hugging Face.
 
 El modelo cuenta con 4 parametros entrenables (tres pesos y un sesgo) y opera sobre un dataset sintetico de 200 registros generados con una semilla fija, de los cuales 160 se emplean para entrenamiento y 40 para evaluacion. La ventana de contexto no aplica, ya que no procesa secuencias de texto; la entrada es un vector de tres caracteristicas numericas. Su relevancia actual es didactica: demuestra las buenas practicas de separacion entre pesos (`model.safetensors`), configuracion de preprocesamiento (`config.json`) y definicion de arquitectura (`modelo.py`), ademas de servir como contraste con el flujo equivalente en scikit-learn.
 
@@ -43,7 +43,7 @@ Los datos de entrenamiento son sinteticos y se generan en `train.py` con la mism
 - Comparacion con scikit-learn: permite reproducir el mismo problema de regresion inmobiliaria con ambas bibliotecas y verificar la equivalencia de pesos tras desnormalizar (35,157 / 23,398 ≈ 1,503 para `m2`).
 - Ensenanza de serializacion segura: ilustra por que safetensors es preferible a pickle en la distribucion de pesos, ya que el archivo solo contiene numeros y no ejecuta codigo al cargarse.
 - Tutorial de preprocesamiento: demuestra la necesidad de persistir media y desvio en `config.json` para que las predicciones sean correctas en inferencia, un error frecuente en pipelines reales.
-- Prueba de integracion de HuggingFace Hub: sirve como repositorio minimo para validar flujos de descarga, carga y publicacion de modelos con la libreria `huggingface_hub` y `safetensors`.
+- Prueba de integracion de Hugging Face Hub: sirve como repositorio minimo para validar flujos de descarga, carga y publicacion de modelos con la libreria `huggingface_hub` y `safetensors`.
 - Referencia de estructura de repositorio: el conjunto de archivos (`model.safetensors`, `config.json`, `modelo.py`, `train.py`, `predict.py`, `requirements.txt`) puede usarse como plantilla para publicar modelos tabulares pequenos de forma reproducible.
 
 ## Benchmarks y rendimiento
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `FerData/regresion-casas-pytorch` | 4 | no aplica | MAE 3,08; R2 0,989 | MIT | HuggingFace |
+| `FerData/regresion-casas-pytorch` | 4 | no aplica | MAE 3,08; R2 0,989 | MIT | Hugging Face |
 | Regresion lineal equivalente en scikit-learn | 4 (coeficientes + intercepto) | no aplica | Equivalente tras desnormalizar | BSD-3-Clause (scikit-learn) | PyPI |
 | Ejemplo de regresion tabular con XGBoost | no disponible | no aplica | no disponible | Apache 2.0 (XGBoost) | PyPI |
 
@@ -89,7 +89,7 @@ La comparativa se limita a alternativas del mismo tipo pedagogico, ya que no exi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FerData/regresion-casas-pytorch
+- Modelo en Hugging Face: https://huggingface.co/FerData/regresion-casas-pytorch
 - Documentacion de safetensors: https://github.com/huggingface/safetensors
 - Documentacion de PyTorch sobre `torch.nn.Linear`: https://pytorch.org/docs/stable/generated/torch.nn.Linear.html
 - Documentacion de PyTorch sobre `MSELoss`: https://pytorch.org/docs/stable/generated/torch.nn.MSELoss.html

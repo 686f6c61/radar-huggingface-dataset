@@ -116,7 +116,7 @@ La comparación con Real-ESRGAN y SwinIR es cualitativa: no se dispone de evalua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Logolabs/inkvec-sr-001
+- Modelo en Hugging Face: https://huggingface.co/Logolabs/inkvec-sr-001
 - Modelo complementario (denoised de JPEG/WebP): https://huggingface.co/Logolabs/inkvec-denoiser-001
 - Repositorio del trazador Inkvec: https://github.com/logolabs/inkvec
 - Paper de MambaIRv2 (Guo et al., ECCV 2024): referencia citada en la model card; no se proporciona URL directa en la información disponible.

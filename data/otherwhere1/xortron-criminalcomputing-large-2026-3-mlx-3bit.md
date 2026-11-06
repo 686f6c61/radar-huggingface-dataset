@@ -83,7 +83,7 @@ Nota: los datos de la tercera fila corresponden a información pública general 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/otherwhere1/XORTRON.CriminalComputing.LARGE.2026.3-mlx-3Bit
+- Modelo en Hugging Face: https://huggingface.co/otherwhere1/XORTRON.CriminalComputing.LARGE.2026.3-mlx-3Bit
 - Modelo base declarado: https://huggingface.co/darkc0de/XORTRON.CriminalComputing.LARGE.2026.3
 - Repositorio de mlx-lm: https://github.com/ml-explore/mlx-lm
 - Repositorio de MLX: https://github.com/ml-explore/mlx

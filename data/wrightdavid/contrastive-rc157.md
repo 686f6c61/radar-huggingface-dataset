@@ -68,7 +68,7 @@ La model card del autor indica de forma explícita que "no benchmark score is cl
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wrightdavid/contrastive-rc157 | 33.088 | no disponible | ninguno (no se reclama) | BSD-3-Clause | HuggingFace, 0 descargas |
+| wrightdavid/contrastive-rc157 | 33.088 | no disponible | ninguno (no se reclama) | BSD-3-Clause | Hugging Face, 0 descargas |
 | DINO original (ViT-S/16) | ~21 M | imagen 224x224 | linear probe y k-NN en ImageNet publicados por los autores | Apache-2.0 (repositorio oficial) | pesos públicos |
 | DINOv2 (ViT-S/14) | ~22 M | imagen 224x224 y superiores | múltiples tareas densas y de clasificación publicadas | Apache-2.0 / licencia específica según checkpoint | pesos públicos |
 | SimCLR (ResNet-50) | ~24 M | imagen 224x224 | linear probe publicado | Apache-2.0 (implementación de referencia) | pesos públicos |
@@ -87,5 +87,5 @@ Nota: la comparación es estructural, no de rendimiento. La diferencia de escala
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wrightdavid/contrastive-rc157
+- Modelo en Hugging Face: https://huggingface.co/wrightdavid/contrastive-rc157
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

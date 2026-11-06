@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Razonamiento en idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DGurgurov/SmolLM3-3B-SFT-DE | 3,3B | no disponible | Alemán | no disponible | HuggingFace |
-| HuggingFaceTB/SmolLM3-3B | 3,3B | 3K tokens | Multilingüe (inglés predominante) | Apache 2.0 | HuggingFace |
-| DGurgurov/SmolLM3-3B-SFT-GRPO-DE | 3,3B | no disponible | Alemán (tras RL) | no disponible | HuggingFace |
+| DGurgurov/SmolLM3-3B-SFT-DE | 3,3B | no disponible | Alemán | no disponible | Hugging Face |
+| HuggingFaceTB/SmolLM3-3B | 3,3B | 3K tokens | Multilingüe (inglés predominante) | Apache 2.0 | Hugging Face |
+| DGurgurov/SmolLM3-3B-SFT-GRPO-DE | 3,3B | no disponible | Alemán (tras RL) | no disponible | Hugging Face |
 
 La comparativa se limita a los modelos relacionados, ya que no hay datos de rendimiento para comparar con otros modelos de razonamiento multilingüe. El modelo base SmolLM3-3B es una referencia conocida por su buen rendimiento en la escala de 3B, pero el ajuste específico para alemán no tiene métricas públicas.
 
@@ -72,8 +72,8 @@ La comparativa se limita a los modelos relacionados, ya que no hay datos de rend
 
 ## Enlaces
 
-- [HuggingFace - modelo SFT-DE](https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-DE)
-- [HuggingFace - modelo GRPO-DE](https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-GRPO-DE)
-- [HuggingFace - dataset ReasonXL-SFT](https://huggingface.co/datasets/toroe/ReasonXL-SFT)
+- [Hugging Face - modelo SFT-DE](https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-DE)
+- [Hugging Face - modelo GRPO-DE](https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-GRPO-DE)
+- [Hugging Face - dataset ReasonXL-SFT](https://huggingface.co/datasets/toroe/ReasonXL-SFT)
 - [arXiv - paper ReasonXL (2604.12378)](https://arxiv.org/abs/2604.12378)
-- [HuggingFace - SmolLM3-3B base](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)
+- [Hugging Face - SmolLM3-3B base](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)

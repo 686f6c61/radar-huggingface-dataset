@@ -30,7 +30,7 @@ No hay información pública en la model card sobre la arquitectura del modelo b
 
 No se ha publicado información sobre la arquitectura del modelo base en la documentación disponible. El dato objetivo es el número de parámetros (12.247.802.880) y la etiqueta `conversational`, que indica un ajuste orientado a diálogo. Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF, DPO o similares.
 
-Lo que sí está documentado es el proceso de cuantización. mradermacher ha generado cuantizaciones ponderadas mediante imatrix (matriz de importancia), una técnica que calcula la relevancia estadística de cada peso a partir de datos de calibración para asignar más bits a los tensores que más afectan a la perplejidad. El pipeline declarado incluye `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica conversión desde pesos HuggingFace y cuantización por tensores de salida. Se ofrecen dos familias: cuantizaciones estáticas en `mradermacher/silly-v0.1-GGUF` y las cuantizaciones i1 (imatrix) de este repositorio. El archivo imatrix se distribuye por separado (0,1 GB) para que otros usuarios puedan generar sus propias cuantizaciones.
+Lo que sí está documentado es el proceso de cuantización. mradermacher ha generado cuantizaciones ponderadas mediante imatrix (matriz de importancia), una técnica que calcula la relevancia estadística de cada peso a partir de datos de calibración para asignar más bits a los tensores que más afectan a la perplejidad. El pipeline declarado incluye `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica conversión desde pesos Hugging Face y cuantización por tensores de salida. Se ofrecen dos familias: cuantizaciones estáticas en `mradermacher/silly-v0.1-GGUF` y las cuantizaciones i1 (imatrix) de este repositorio. El archivo imatrix se distribuye por separado (0,1 GB) para que otros usuarios puedan generar sus propias cuantizaciones.
 
 ## Capacidades
 
@@ -89,9 +89,9 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base que 
 
 | Modelo | Parámetros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| silly-v0.1-i1-GGUF | 12,25 B | GGUF (imatrix) | no disponible | no disponible | HuggingFace, 26 cuantizaciones |
-| silly-v0.1-GGUF | 12,25 B | GGUF (estáticas) | no disponible | no disponible | HuggingFace |
-| wave-on-discord/silly-v0.1 | 12,25 B | safetensors | no disponible | no disponible | HuggingFace (modelo base) |
+| silly-v0.1-i1-GGUF | 12,25 B | GGUF (imatrix) | no disponible | no disponible | Hugging Face, 26 cuantizaciones |
+| silly-v0.1-GGUF | 12,25 B | GGUF (estáticas) | no disponible | no disponible | Hugging Face |
+| wave-on-discord/silly-v0.1 | 12,25 B | safetensors | no disponible | no disponible | Hugging Face (modelo base) |
 | Otros modelos de ~12B de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/silly-v0.1-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/silly-v0.1-i1-GGUF
 - Modelo base: https://huggingface.co/wave-on-discord/silly-v0.1
 - Cuantizaciones estáticas: https://huggingface.co/mradermacher/silly-v0.1-GGUF
 - Página de resumen y descargas del cuantizador: https://hf.tst.eu/model#silly-v0.1-i1-GGUF

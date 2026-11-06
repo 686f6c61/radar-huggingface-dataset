@@ -6,7 +6,7 @@ afrolm-stl-final-sentiment es un modelo de analisis de sentimiento desarrollado 
 
 El modelo esta orientado a clasificar texto segun su polaridad sentimental, aprovechando las capacidades multilingues del modelo base AfroLM, que fue preentrenado con estrategias de aprendizaje activo para lenguas africanas. Su relevancia radica en ofrecer una opcion de analisis de sentimiento para idiomas africanos, un area tradicionalmente infrarrepresentada en el ecosistema de procesamiento de lenguaje natural.
 
-La model card fue generada automaticamente por HuggingFace Trainer y presenta carencias importantes: no incluye descripcion detallada, el dataset de entrenamiento aparece como "None" y los usos previstos estan marcados como "More information needed". Los resultados de evaluacion declarados por el autor muestran un F1 de 0,6501 y una accuracy de 0,6571 en el conjunto de validacion.
+La model card fue generada automaticamente por Hugging Face Trainer y presenta carencias importantes: no incluye descripcion detallada, el dataset de entrenamiento aparece como "None" y los usos previstos estan marcados como "More information needed". Los resultados de evaluacion declarados por el autor muestran un F1 de 0,6501 y una accuracy de 0,6571 en el conjunto de validacion.
 
 ## Especificaciones tecnicas
 
@@ -32,8 +32,8 @@ El entrenamiento de fine-tuning se realizo con los siguientes hiperparametros: l
 - Analisis de sentimiento: clasifica texto en categorias de sentimiento (positivo, negativo, neutro) con una accuracy declarada de 0,6571 y F1 de 0,6501.
 - Clasificacion de texto: al ser un modelo basado en transformer, puede adaptarse a otras tareas de clasificacion mediante fine-tuning adicional.
 - Capacidades multilingues: hereda las capacidades del modelo base AfroLM, orientado a lenguas africanas, aunque los idiomas concretos soportados no estan documentados en la model card.
-- Compatible con HuggingFace Inference Endpoints: el tag "endpoints_compatible" indica que puede desplegarse directamente en la infraestructura de inferencia de HuggingFace.
-- Integracion con transformers: al usar la libreria transformers, es compatible con el ecosistema estandar de HuggingFace (pipelines, Trainer, etc.).
+- Compatible con Hugging Face Inference Endpoints: el tag "endpoints_compatible" indica que puede desplegarse directamente en la infraestructura de inferencia de Hugging Face.
+- Integracion con transformers: al usar la libreria transformers, es compatible con el ecosistema estandar de Hugging Face (pipelines, Trainer, etc.).
 
 ## Casos de uso
 

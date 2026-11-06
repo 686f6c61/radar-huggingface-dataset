@@ -6,7 +6,7 @@ Entity-v1-360m-instruct-i1-GGUF es una versión cuantizada en formato GGUF del m
 
 El interés de esta ficha reside en que el modelo base es de dominio público, muy ligero y está orientado a tareas conversacionales, lo que lo convierte en un candidato razonable para prototipos rápidos, entornos con recursos limitados o despliegues en el borde. La información disponible sobre arquitectura interna, datos de entrenamiento y benchmarks es muy escasa: la model card del cuantizador no incluye detalles técnicos del modelo original, y no se han publicado resultados de evaluación en la información proporcionada.
 
-Esta ficha documenta exclusivamente lo que puede verificarse a partir de los metadatos de HuggingFace y de la model card del repositorio GGUF. Cualquier dato no confirmado se marca explícitamente como "no disponible".
+Esta ficha documenta exclusivamente lo que puede verificarse a partir de los metadatos de Hugging Face y de la model card del repositorio GGUF. Cualquier dato no confirmado se marca explícitamente como "no disponible".
 
 ## Especificaciones tecnicas
 

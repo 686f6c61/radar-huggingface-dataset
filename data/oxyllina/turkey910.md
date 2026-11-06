@@ -2,7 +2,7 @@
 
 ## Resumen
 
-oxyllina/turkey910 es un repositorio de modelo alojado en HuggingFace por el usuario oxyllina, con acceso restringido (gated): es necesario aceptar las condiciones del autor en la plataforma antes de poder descargar los pesos. El repositorio ocupa 7,7 GB y acumula 0 descargas y 1 "like" desde su creacion el 12 de abril de 2026 (actualizado el 13 de septiembre de 2026). La ficha publica no declara pipeline, licencia, idiomas soportados, arquitectura ni resultados de evaluacion.
+oxyllina/turkey910 es un repositorio de modelo alojado en Hugging Face por el usuario oxyllina, con acceso restringido (gated): es necesario aceptar las condiciones del autor en la plataforma antes de poder descargar los pesos. El repositorio ocupa 7,7 GB y acumula 0 descargas y 1 "like" desde su creacion el 12 de abril de 2026 (actualizado el 13 de septiembre de 2026). La ficha publica no declara pipeline, licencia, idiomas soportados, arquitectura ni resultados de evaluacion.
 
 La informacion disponible no permite determinar que tipo de modelo es, que problema resuelve ni por que seria relevante. La busqueda web realizada no ha devuelto ningun resultado relacionado: todas las entradas obtenidas apuntan a paginas de venta de entradas y autenticacion de la plataforma belga GoPlay, sin ninguna conexion con el repositorio. No existe documentacion tecnica, paper, blog ni anuncio verificable asociado a este identificador.
 
@@ -25,12 +25,12 @@ En consecuencia, esta ficha recoge unicamente los metadatos publicos del reposit
 | Ultima actualizacion | 2026-09-13 |
 | Descargas | 0 |
 | Likes | 1 |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 7,7 GB |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publica sobre la arquitectura del modelo. La ficha de HuggingFace no declara si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM), un modelo hibrido o cualquier otra variante. Tampoco se especifica el numero de parametros, la ventana de contexto, el tokenizador ni el vocabulario.
+No hay informacion publica sobre la arquitectura del modelo. La ficha de Hugging Face no declara si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM), un modelo hibrido o cualquier otra variante. Tampoco se especifica el numero de parametros, la ventana de contexto, el tokenizador ni el vocabulario.
 
 Se desconoce por completo la composicion del dataset de entrenamiento: no se indica el numero de tokens, la mezcla de datos (web, codigo, matematicas, multilingue), ni si se aplicaron tecnicas de alineacion como RLHF, DPO, ORPO u otras. No se ha publicado ningun detalle sobre preentrenamiento, ajuste fino, destilacion, decodificacion especulativa o innovaciones tecnicas asociadas. El unico dato objetivo es el tamano del repositorio (7,7 GB); a modo de referencia aritmetica, ese volumen corresponderia aproximadamente a entre 3.800 y 7.700 millones de parametros si los pesos estuvieran en fp16 o int8 respectivamente, pero se trata de una estimacion a partir del tamano de ficheros, no de un dato confirmado por el autor.
 
@@ -63,7 +63,7 @@ No hay datos de MMLU, HumanEval, GSM8K, BBH, MT-Bench ni de ninguna otra evaluac
 - Compatibilidad con GPU de consumo: no disponible. Si el modelo tuviera un tamano en el rango sugerido por el repositorio (7,7 GB de ficheros), seria probable que cupiera en GPU de consumo con cuantizacion de 4 u 8 bits, pero es una hipotesis no verificada.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, Transformers): no disponible. Depende del formato de pesos y de la arquitectura, ninguno de los cuales esta publicado.
 - Latencia y throughput estimados: no disponible.
-- Restriccion adicional: al ser un repositorio gated, la descarga requiere solicitud y aceptacion previa de condiciones en HuggingFace, lo que anade un paso de aprobacion antes de cualquier prueba de despliegue.
+- Restriccion adicional: al ser un repositorio gated, la descarga requiere solicitud y aceptacion previa de condiciones en Hugging Face, lo que anade un paso de aprobacion antes de cualquier prueba de despliegue.
 
 ## Comparativa con modelos similares
 
@@ -71,7 +71,7 @@ No es posible establecer una comparativa fiable. Se desconocen los parametros, l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| oxyllina/turkey910 | no disponible | no disponible | no disponible | gated en HuggingFace | no disponible |
+| oxyllina/turkey910 | no disponible | no disponible | no disponible | gated en Hugging Face | no disponible |
 | Alternativa comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de modelos comparables identificados en la informacion proporcionada.
@@ -91,7 +91,7 @@ No se dispone de modelos comparables identificados en la informacion proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oxyllina/turkey910
+- Hugging Face: https://huggingface.co/oxyllina/turkey910
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

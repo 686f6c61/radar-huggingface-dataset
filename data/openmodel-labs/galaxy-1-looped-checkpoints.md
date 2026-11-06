@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Galaxy-1-Looped-Checkpoints es un repositorio alojado en HuggingFace por la organizacion OpenModel-Labs. Por su denominacion ("Looped-Checkpoints") y por la etiqueta de licencia `internal-checkpoints-do-not-request-access`, se trata de un conjunto de pesos intermedios o puntos de control de entrenamiento de un modelo presumiblemente llamado Galaxy-1, no de un modelo final listo para produccion. El repositorio esta marcado como de acceso restringido (gated) y su licencia prohibe explicitamente solicitar acceso, lo que refuerza la interpretacion de que es material interno del equipo de desarrollo.
+Galaxy-1-Looped-Checkpoints es un repositorio alojado en Hugging Face por la organizacion OpenModel-Labs. Por su denominacion ("Looped-Checkpoints") y por la etiqueta de licencia `internal-checkpoints-do-not-request-access`, se trata de un conjunto de pesos intermedios o puntos de control de entrenamiento de un modelo presumiblemente llamado Galaxy-1, no de un modelo final listo para produccion. El repositorio esta marcado como de acceso restringido (gated) y su licencia prohibe explicitamente solicitar acceso, lo que refuerza la interpretacion de que es material interno del equipo de desarrollo.
 
-No se dispone de informacion publica sobre la arquitectura, el tamano, el contexto, los idiomas ni el pipeline de este repositorio. La ficha tecnica de HuggingFace no incluye descripcion, card de modelo, datos de entrenamiento ni resultados de evaluacion. Cualquier dato de arquitectura o rendimiento que se pudiera inferir seria especulativo y, por tanto, se omite deliberadamente en esta ficha.
+No se dispone de informacion publica sobre la arquitectura, el tamano, el contexto, los idiomas ni el pipeline de este repositorio. La ficha tecnica de Hugging Face no incluye descripcion, card de modelo, datos de entrenamiento ni resultados de evaluacion. Cualquier dato de arquitectura o rendimiento que se pudiera inferir seria especulativo y, por tanto, se omite deliberadamente en esta ficha.
 
 La relevancia de esta entrada es limitada para la comunidad: al no ser un modelo distribuible ni tener documentacion publica, no puede evaluarse ni desplegarse. Se documenta aqui unicamente como referencia de que existe un linaje de checkpoints internos bajo la marca Galaxy-1 de OpenModel-Labs, sin que ello permita extraer conclusiones tecnicas verificables.
 
@@ -25,7 +25,7 @@ La relevancia de esta entrada es limitada para la comunidad: al no ser un modelo
 
 No se ha publicado informacion sobre la arquitectura del modelo (transformer, MoE, SSM o hibrida), el numero de parametros, la composicion del dataset de entrenamiento, el volumen de tokens procesados ni si se aplicaron tecnicas de alineacion como RLHF o DPO. El nombre del repositorio sugiere la existencia de checkpoints intermedios de un proceso de entrenamiento, pero no hay card de modelo, paper ni blog asociado que permita confirmar ni detallar el pipeline.
 
-Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal, atencion con ventana deslizante u otras optimizaciones. La ausencia de metadatos tecnicos en la ficha de HuggingFace impide cualquier analisis de arquitectura o de estrategia de entrenamiento.
+Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal, atencion con ventana deslizante u otras optimizaciones. La ausencia de metadatos tecnicos en la ficha de Hugging Face impide cualquier analisis de arquitectura o de estrategia de entrenamiento.
 
 ## Capacidades
 
@@ -63,7 +63,7 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, pero la propia licencia indica "do not request access", por lo que no debe solicitarse.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, pero la propia licencia indica "do not request access", por lo que no debe solicitarse.
 - Licencia `other` con clausula interna: prohibe explicitamente el uso por parte de terceros; no es apta para uso comercial ni para investigacion externa.
 - Ausencia total de documentacion: sin card de modelo, sin paper, sin ejemplos y sin especificaciones tecnicas.
 - Riesgo de interpretacion erronea: al tratarse de checkpoints intermedios, aunque se obtuvieran los pesos, no representarian necesariamente un modelo final alineado ni funcional.
@@ -73,6 +73,6 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OpenModel-Labs/Galaxy-1-Looped-Checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/OpenModel-Labs/Galaxy-1-Looped-Checkpoints
 - Perfil de la organizacion: https://huggingface.co/OpenModel-Labs
 - Paper, blog, repositorio de codigo o demo: no disponible.

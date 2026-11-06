@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`AlinaGonch/phi3-mini-squad-ratio-0.50-seed-42` es un repositorio alojado en HuggingFace, etiquetado con las librerías `transformers` y `safetensors`, cuyo identificador sugiere un ajuste fino (fine-tuning) del modelo Phi-3-mini sobre el conjunto de datos SQuAD, con un subconjunto del 50 % de los datos (`ratio-0.50`) y semilla aleatoria 42 (`seed-42`). Esta interpretación procede únicamente de la nomenclatura del identificador y no está confirmada por ninguna documentación del repositorio.
+`AlinaGonch/phi3-mini-squad-ratio-0.50-seed-42` es un repositorio alojado en Hugging Face, etiquetado con las librerías `transformers` y `safetensors`, cuyo identificador sugiere un ajuste fino (fine-tuning) del modelo Phi-3-mini sobre el conjunto de datos SQuAD, con un subconjunto del 50 % de los datos (`ratio-0.50`) y semilla aleatoria 42 (`seed-42`). Esta interpretación procede únicamente de la nomenclatura del identificador y no está confirmada por ninguna documentación del repositorio.
 
-El repositorio no contiene información sustantiva: la model card es la plantilla automática de HuggingFace con todos los campos sin rellenar (`[More Information Needed]`), no se declara licencia, idiomas, pipeline ni datos de entrenamiento, y el historial público muestra 0 descargas y 0 «me gusta». Tampoco se ha localizado documentación externa: la búsqueda web no devolvió ningún resultado relacionado con el modelo (los enlaces recuperados corresponden a planos de automóviles Mazda y son irrelevantes).
+El repositorio no contiene información sustantiva: la model card es la plantilla automática de Hugging Face con todos los campos sin rellenar (`[More Information Needed]`), no se declara licencia, idiomas, pipeline ni datos de entrenamiento, y el historial público muestra 0 descargas y 0 «me gusta». Tampoco se ha localizado documentación externa: la búsqueda web no devolvió ningún resultado relacionado con el modelo (los enlaces recuperados corresponden a planos de automóviles Mazda y son irrelevantes).
 
 Por tanto, su relevancia actual es la de un caso de estudio sobre checkpoints sin documentar: útil para ilustrar por qué un artefacto de este tipo no debe desplegarse en producción sin auditoría previa, pero sin datos verificables sobre arquitectura, entrenamiento, evaluación o condiciones de uso. Esta ficha refleja esa ausencia de información de forma explícita en lugar de completar los huecos con suposiciones.
 
@@ -22,13 +22,13 @@ Por tanto, su relevancia actual es la de un caso de estudio sobre checkpoints si
 | Formato de pesos | safetensors (único formato indicado en los metadatos) |
 | Tamano del repositorio | 0,1 GB |
 | Dataset de ajuste declarado | no disponible (el identificador menciona «squad», sin confirmar) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion / ultima actualizacion | 20/09/2026 / 20/09/2026 (8 segundos de diferencia) |
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura, el procedimiento de entrenamiento, el número de tokens, la composición del dataset ni el uso de RLHF, DPO u otras técnicas de alineación. La model card incluye los apartados de detalles, datos de entrenamiento, hiperparámetros y evaluación, pero todos ellos figuran como `[More Information Needed]`. El único metadato técnico disponible son las etiquetas `transformers` y `safetensors`, que indican compatibilidad con la librería de HuggingFace y que los pesos se almacenan en formato safetensors, respectivamente.
+No hay información publicada sobre la arquitectura, el procedimiento de entrenamiento, el número de tokens, la composición del dataset ni el uso de RLHF, DPO u otras técnicas de alineación. La model card incluye los apartados de detalles, datos de entrenamiento, hiperparámetros y evaluación, pero todos ellos figuran como `[More Information Needed]`. El único metadato técnico disponible son las etiquetas `transformers` y `safetensors`, que indican compatibilidad con la librería de Hugging Face y que los pesos se almacenan en formato safetensors, respectivamente.
 
 Un detalle que merece atención es el desajuste entre el tamaño del repositorio (0,1 GB) y el que cabría esperar de un modelo de la familia Phi-3-mini en precisión completa: unos 3.800 millones de parámetros en bf16 ocuparían en torno a 7,6 GB. Un repositorio de 0,1 GB es más consistente con adaptadores tipo LoRA, con un subconjunto parcial de pesos o con un modelo mucho más pequeño, pero ninguna de estas hipótesis puede confirmarse con la información disponible, y las etiquetas del repositorio no incluyen `peft` ni `lora`. Tampoco consta si el ajuste se realizó sobre la variante de contexto de 4 000 tokens o sobre la de 131 072 tokens del modelo base, en caso de que dicho modelo base sea efectivamente Phi-3-mini.
 
@@ -94,6 +94,6 @@ No es posible establecer una comparativa cuantitativa: no hay parámetros, conte
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/phi3-mini-squad-ratio-0.50-seed-42
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/phi3-mini-squad-ratio-0.50-seed-42
 - Referencia arXiv incluida como etiqueta del repositorio: https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019, calculadora de impacto de Machine Learning; es una referencia genérica de plantilla, no un paper del modelo)
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web realizada. Los resultados recuperados (planos de vehículos Mazda en carblueprints.info, the-blueprints.com, drawingdatabase.com y getoutlines.com) no guardan relación con el modelo y se descartan.

@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Gemma-4-E2B-it-ARA-Abliterated-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma-4-E2B-it-ARA-Abliterated-i1-GGUF
 - Modelo base: https://huggingface.co/Austriani/Gemma-4-E2B-it-ARA-Abliterated
 - Repositorio de cuantizaciones estaticas (incluye mmproj): https://huggingface.co/mradermacher/Gemma-4-E2B-it-ARA-Abliterated-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Gemma-4-E2B-it-ARA-Abliterated-i1-GGUF

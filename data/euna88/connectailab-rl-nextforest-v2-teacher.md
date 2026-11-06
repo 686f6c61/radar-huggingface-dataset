@@ -25,7 +25,7 @@ La relevancia del modelo es acotada y experimental: se distribuye con licencia A
 
 El modelo es una política de decisión entrenada en dos fases según la model card: una primera fase de aprendizaje supervisado a partir de un "presidente por reglas" (behavior cloning sobre las decisiones del baseline) y una segunda fase de ajuste con PPO (Proximal Policy Optimization) usando recompensas derivadas de los valores de la empresa configurados en el entorno (`{"이익": 1.5, "고객 만족": 2.0, "위험": 2.0}`, es decir, beneficio 1,5, satisfacción del cliente 2,0 y riesgo 2,0). El entorno es un simulador de empresa con configuración explícita (`warehouse: 250.0`, `base_demand: 40.0`, `unit_cost: 1.5`, `order_scale: 1.0`, `ad_power: 1.0`, entre otros parámetros).
 
-La interfaz de inferencia es JEV (`typesafe/jev-1.13`): el modelo recibe un estado estructurado (por ejemplo, departamento, motivo, nivel de cliente, importe y puntuación de fraude) y una pregunta de tipo `choice` con criterios discretos, y devuelve una distribución de probabilidad sobre las opciones junto con la opción elegida y un nivel de confianza. No se documentan detalles sobre número de parámetros, volumen de datos de entrenamiento, composición del dataset ni innovaciones técnicas adicionales (decodificación especulativa, atención lineal, etc.). El pipeline declarado en HuggingFace es `reinforcement-learning` y la librería asociada es `numpy`.
+La interfaz de inferencia es JEV (`typesafe/jev-1.13`): el modelo recibe un estado estructurado (por ejemplo, departamento, motivo, nivel de cliente, importe y puntuación de fraude) y una pregunta de tipo `choice` con criterios discretos, y devuelve una distribución de probabilidad sobre las opciones junto con la opción elegida y un nivel de confianza. No se documentan detalles sobre número de parámetros, volumen de datos de entrenamiento, composición del dataset ni innovaciones técnicas adicionales (decodificación especulativa, atención lineal, etc.). El pipeline declarado en Hugging Face es `reinforcement-learning` y la librería asociada es `numpy`.
 
 ## Capacidades
 
@@ -81,13 +81,13 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - El rendimiento reportado (10,77 millones de wones, 96 % de satisfacción) está medido en un entorno concreto con una configuración específica (`warehouse: 250.0`, `base_demand: 40.0`, etc.) y no es extrapolable a otros escenarios sin reentrenamiento o reconfiguración.
 - No se documentan análisis de sesgos, robustez ante distribuciones de estado fuera del simulador ni riesgos de alucinación (no aplica en el sentido habitual, pero sí riesgo de decisiones erróneas fuera de distribución).
 - La licencia Apache 2.0 permite uso comercial del artefacto, pero el uso en producción real de gestión empresarial no está validado por el autor.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
 - No se especifican parámetros totales, formato de pesos estándar ni requisitos de hardware, lo que dificulta la reproducibilidad fuera del ecosistema `connect-tycoon`.
 - El identificador del modelo (`nextforest-v2-teacher`) y el nombre interno de la model card (`connect-ai-company-v4`) no coinciden, lo que puede generar confusión sobre la versión exacta.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/euna88/connectailab-rl-nextforest-v2-teacher
+- Modelo en Hugging Face: https://huggingface.co/euna88/connectailab-rl-nextforest-v2-teacher
 - Repositorio GitHub CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

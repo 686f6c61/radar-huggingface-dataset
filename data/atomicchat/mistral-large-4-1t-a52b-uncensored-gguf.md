@@ -97,7 +97,7 @@ No hay datos suficientes para comparar con otros modelos abliterados de terceros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AtomicChat/Mistral-Large-4-1T-A52B-Uncensored-GGUF
+- Modelo en Hugging Face: https://huggingface.co/AtomicChat/Mistral-Large-4-1T-A52B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B
 - Layout de referencia (Unsloth GGUF): https://huggingface.co/unsloth/Mistral-Large-4-1T-A52B-GGUF
 - Atomic Chat: https://atomic.chat/

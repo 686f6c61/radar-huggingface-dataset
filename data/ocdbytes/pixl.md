@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks comparables con otros modelos en la informa
 
 | Modelo | Tipo | Parámetros | Contexto/salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pixl | Transformer autorregresivo píxel a píxel | 26,7M | pie de foto 96 tokens, imagen 32×32 | CC0 1.0 | HuggingFace + GitHub |
+| pixl | Transformer autorregresivo píxel a píxel | 26,7M | pie de foto 96 tokens, imagen 32×32 | CC0 1.0 | Hugging Face + GitHub |
 | Modelos de difusión texto-a-imagen (p. ej. Stable Diffusion) | Difusión latente | Cientos de millones a miles de millones | Resoluciones variables | Variables según versión | Amplia |
 | DALL·E / Imagen / Midjourney | Difusión / propietarios | No disponible | Alta resolución | Propietaria | API cerrada |
 
@@ -107,7 +107,7 @@ La comparación directa no es significativa: pixl resuelve una tarea mucho más 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ocdbytes/pixl
+- Hugging Face: https://huggingface.co/ocdbytes/pixl
 - Repositorio GitHub (código, entrenamiento y Docker): https://github.com/ocdbytes/PIXL
 - Dataset: https://huggingface.co/datasets/ocdbytes/pixl-data
 - Paper de classifier-free guidance (Ho y Salimans, 2022): https://arxiv.org/abs/2207.12598

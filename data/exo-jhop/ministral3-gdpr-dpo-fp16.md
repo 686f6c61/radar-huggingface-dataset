@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo exo-jhop/ministral3-gdpr-dpo-fp16 es un modelo multimodal de tipo image-text-to-text, es decir, acepta imágenes y texto como entrada y genera texto como salida. Ha sido desarrollado por el usuario exo-jhop mediante fine-tuning a partir de un adaptador LoRA previo (exo-jhop/ministral3-gdpr-lora), utilizando las librerías Unsloth y TRL de HuggingFace. El nombre del repositorio sugiere que el entrenamiento incluyó Direct Preference Optimization (DPO) y que el modelo está orientado a tareas relacionadas con el cumplimiento del GDPR (Reglamento General de Protección de Datos), aunque la model card no aporta detalles sobre el dataset ni el proceso de entrenamiento.
+El modelo exo-jhop/ministral3-gdpr-dpo-fp16 es un modelo multimodal de tipo image-text-to-text, es decir, acepta imágenes y texto como entrada y genera texto como salida. Ha sido desarrollado por el usuario exo-jhop mediante fine-tuning a partir de un adaptador LoRA previo (exo-jhop/ministral3-gdpr-lora), utilizando las librerías Unsloth y TRL de Hugging Face. El nombre del repositorio sugiere que el entrenamiento incluyó Direct Preference Optimization (DPO) y que el modelo está orientado a tareas relacionadas con el cumplimiento del GDPR (Reglamento General de Protección de Datos), aunque la model card no aporta detalles sobre el dataset ni el proceso de entrenamiento.
 
-El modelo cuenta con 8.918.026.240 parámetros (aproximadamente 8.900 millones) y se distribuye en formato safetensors con pesos en fp16, ocupando 17,9 GB. Está publicado bajo licencia Apache 2.0 y, según los metadatos de HuggingFace, soporta únicamente el idioma inglés. Al ser un fine-tuning, su relevancia radica en la adaptación de un modelo base Mistral3 a un dominio específico (privacidad y protección de datos), aunque la documentación disponible es escasa y no se han publicado resultados de benchmarks.
+El modelo cuenta con 8.918.026.240 parámetros (aproximadamente 8.900 millones) y se distribuye en formato safetensors con pesos en fp16, ocupando 17,9 GB. Está publicado bajo licencia Apache 2.0 y, según los metadatos de Hugging Face, soporta únicamente el idioma inglés. Al ser un fine-tuning, su relevancia radica en la adaptación de un modelo base Mistral3 a un dominio específico (privacidad y protección de datos), aunque la documentación disponible es escasa y no se han publicado resultados de benchmarks.
 
 ## Especificaciones técnicas
 
@@ -21,9 +21,9 @@ El modelo cuenta con 8.918.026.240 parámetros (aproximadamente 8.900 millones) 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente corresponde a un modelo de la familia Mistral3, según las etiquetas de HuggingFace. El pipeline registrado es image-text-to-text, lo que indica que el modelo procesa entradas multimodales compuestas por imágenes y texto y genera respuestas textuales. No se dispone de información sobre el número de capas, la dimensión del modelo, el mecanismo de atención ni la longitud de contexto.
+La arquitectura subyacente corresponde a un modelo de la familia Mistral3, según las etiquetas de Hugging Face. El pipeline registrado es image-text-to-text, lo que indica que el modelo procesa entradas multimodales compuestas por imágenes y texto y genera respuestas textuales. No se dispone de información sobre el número de capas, la dimensión del modelo, el mecanismo de atención ni la longitud de contexto.
 
-El entrenamiento consistió en un fine-tuning a partir del adaptador LoRA exo-jhop/ministral3-gdpr-lora, utilizando la librería Unsloth (que acelera el entrenamiento aproximadamente 2 veces) junto con la librería TRL de HuggingFace. El nombre del repositorio incluye el sufijo "dpo", lo que sugiere que se aplicó Direct Preference Optimization, aunque la model card no lo confirma explícitamente. No se han publicado datos sobre el conjunto de datos de entrenamiento, su composición, el número de tokens ni si se realizaron etapas de RLHF.
+El entrenamiento consistió en un fine-tuning a partir del adaptador LoRA exo-jhop/ministral3-gdpr-lora, utilizando la librería Unsloth (que acelera el entrenamiento aproximadamente 2 veces) junto con la librería TRL de Hugging Face. El nombre del repositorio incluye el sufijo "dpo", lo que sugiere que se aplicó Direct Preference Optimization, aunque la model card no lo confirma explícitamente. No se han publicado datos sobre el conjunto de datos de entrenamiento, su composición, el número de tokens ni si se realizaron etapas de RLHF.
 
 ## Capacidades
 
@@ -55,12 +55,12 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: aproximadamente 18 GB para cargar los pesos en fp16 (8.918.026.240 parámetros × 2 bytes). El overhead de activaciones y buffers de atención puede elevar el requisito por encima de 20 GB.
 - GPU recomendadas: una A100 40GB o H100 80GB ofrecen margen suficiente. Una RTX 4090 de 24 GB podría ser viable con fp16, siempre que se gestionen bien las activaciones.
 - Compatibilidad con GPU de consumo: potencialmente sí en tarjetas de 24 GB, aunque no hay datos oficiales de consumo de VRAM.
-- Opciones de despliegue: el modelo es compatible con text-generation-inference según los metadatos de HuggingFace y está marcado como "endpoints_compatible". No se dispone de información sobre soporte en vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: el modelo es compatible con text-generation-inference según los metadatos de Hugging Face y está marcado como "endpoints_compatible". No se dispone de información sobre soporte en vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de información sobre modelos comparables en la documentación proporcionada. Existe un modelo relacionado (exo-jhop/ministral3-gdpr-distilled) en HuggingFace, pero no se han publicado sus especificaciones ni resultados.
+No disponible. No se dispone de información sobre modelos comparables en la documentación proporcionada. Existe un modelo relacionado (exo-jhop/ministral3-gdpr-distilled) en Hugging Face, pero no se han publicado sus especificaciones ni resultados.
 
 ## Limitaciones y advertencias
 
@@ -73,7 +73,7 @@ No disponible. No se dispone de información sobre modelos comparables en la doc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/exo-jhop/ministral3-gdpr-dpo-fp16
+- Modelo en Hugging Face: https://huggingface.co/exo-jhop/ministral3-gdpr-dpo-fp16
 - Modelo base (LoRA): https://huggingface.co/exo-jhop/ministral3-gdpr-lora
 - Modelo relacionado: https://huggingface.co/exo-jhop/ministral3-gdpr-distilled
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

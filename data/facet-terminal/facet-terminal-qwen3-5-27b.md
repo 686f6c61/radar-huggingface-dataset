@@ -17,11 +17,11 @@ El modelo está pensado para aplicaciones de agente de terminal en ámbitos como
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura de Qwen3.5-27B, un transformer denso de 27 mil millones de parámetros, aunque la documentación proporcionada no especifica detalles adicionales como el número de capas, la dimensión oculta o el mecanismo de atención. El pipeline declarado en HuggingFace es `image-text-to-text`, lo que sugiere que el modelo base podría tener capacidades multimodales, pero la model card de FACET no menciona ninguna capacidad de visión ni de procesamiento de imágenes, por lo que no se puede confirmar su uso en este fine-tune.
+El modelo hereda la arquitectura de Qwen3.5-27B, un transformer denso de 27 mil millones de parámetros, aunque la documentación proporcionada no especifica detalles adicionales como el número de capas, la dimensión oculta o el mecanismo de atención. El pipeline declarado en Hugging Face es `image-text-to-text`, lo que sugiere que el modelo base podría tener capacidades multimodales, pero la model card de FACET no menciona ninguna capacidad de visión ni de procesamiento de imágenes, por lo que no se puede confirmar su uso en este fine-tune.
 
 El entrenamiento de FACET-Terminal-Qwen3.5-27B se basa en el framework FACET, que construye tareas de terminal de forma que se preserve la intención de la fuente y se mantenga un estado ejecutable compartido. El proceso comienza con 71.341 skills de origen, de los cuales se construyen 7.852 semillas de escenarios y finalmente 6.078 tareas que pasan una validación de ejecución. De los rollouts exitosos de agentes, se seleccionan 1.200 trayectorias completas para el fine-tuning supervisado. Estas trayectorias incluyen el proceso completo de interacción: razonamiento, uso de herramientas de línea de comandos, inspección del entorno, corrección iterativa y finalización de la tarea. El entrenamiento se realiza mediante supervisión directa sobre estas trayectorias verificadas, sin mención explícita de técnicas como RLHF o DPO.
 
@@ -87,12 +87,12 @@ El modelo fine-tuneado supera claramente a su base y se acerca a un modelo mucho
 - Riesgo de alucinación: como cualquier modelo de lenguaje, puede generar comandos o razonamientos incorrectos, especialmente en situaciones de alta incertidumbre o con información parcial del entorno.
 - Sesgos y limitaciones idiomáticas: no se dispone de información sobre los idiomas soportados ni sobre sesgos específicos; se heredan del modelo base Qwen3.5-27B, que puede tener sesgos culturales o lingüísticos propios de su entrenamiento.
 - Longitud de contexto: no se especifica, por lo que no se puede garantizar el comportamiento en conversaciones o tareas muy largas.
-- El repositorio de HuggingFace muestra un tamaño de 0.0 GB, lo que sugiere que los pesos podrían no estar alojados directamente o que la página es un placeholder; es necesario verificar la disponibilidad real del modelo antes de su uso.
+- El repositorio de Hugging Face muestra un tamaño de 0.0 GB, lo que sugiere que los pesos podrían no estar alojados directamente o que la página es un placeholder; es necesario verificar la disponibilidad real del modelo antes de su uso.
 - Para producción, se recomienda validar exhaustivamente el comportamiento del modelo en el entorno objetivo, ya que el rendimiento puede variar según el scaffold de agente, el prompt del sistema, la interfaz de herramientas y la configuración de inferencia.
 
 ## Enlaces
 
-- [Modelo en HuggingFace: FACET-Terminal/FACET-Terminal-Qwen3.5-27B](https://huggingface.co/FACET-Terminal/FACET-Terminal-Qwen3.5-27B)
+- [Modelo en Hugging Face: FACET-Terminal/FACET-Terminal-Qwen3.5-27B](https://huggingface.co/FACET-Terminal/FACET-Terminal-Qwen3.5-27B)
 - [Modelo base: Qwen/Qwen3.5-27B](https://huggingface.co/Qwen/Qwen3.5-27B)
 - [Sitio web del proyecto FACET](https://stokou.github.io/FACET-Terminal/)
 - [Repositorio GitHub de FACET-Terminal](https://github.com/StoKou/FACET-Terminal)

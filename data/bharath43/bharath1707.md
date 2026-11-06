@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bharath43/Bharath1707 es un repositorio de modelo alojado en HuggingFace por el usuario Bharath43. La unica informacion verificable disponible es la licencia declarada (apache-2.0) y la etiqueta de region (us). La model card no contiene mas que el bloque de metadatos con la licencia: no hay descripcion, no hay especificaciones tecnicas, no hay ejemplos de uso ni referencias a un paper o repositorio de codigo.
+Bharath43/Bharath1707 es un repositorio de modelo alojado en Hugging Face por el usuario Bharath43. La unica informacion verificable disponible es la licencia declarada (apache-2.0) y la etiqueta de region (us). La model card no contiene mas que el bloque de metadatos con la licencia: no hay descripcion, no hay especificaciones tecnicas, no hay ejemplos de uso ni referencias a un paper o repositorio de codigo.
 
 El repositorio acumula 0 descargas y 0 likes, carece de pipeline declarado y no especifica idiomas soportados. Fue creado y actualizado en la misma marca temporal (2026-09-23T13:22:50Z), lo que indica una subida unica sin mantenimiento posterior ni revisiones documentadas.
 
@@ -81,5 +81,5 @@ No disponible. Al no conocerse la categoria del modelo (tamano, arquitectura ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Bharath43/Bharath1707
+- Hugging Face: https://huggingface.co/Bharath43/Bharath1707
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

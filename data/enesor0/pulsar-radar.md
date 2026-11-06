@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en el mismo dominio (cla
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/enesor0/pulsar-radar)
+- [Página del modelo en Hugging Face](https://huggingface.co/enesor0/pulsar-radar)
 - [PulsarAI - GitHub de VasilyKolbenev](https://github.com/VasilyKolbenev/PulsarAI) (plataforma de agentes de IA, no relacionada directamente)
 - [Innatera Pulsar neuromorphic MCU - armdevices.net](https://armdevices.net/2026/03/17/innatera-pulsar-neuromorphic-mcu-snn-edge-ai-radar-presence-sensing-and-audio-classification/) (MCU neuromórfico para radar, contexto relevante)
 - [RadarSim - simulación de radar open-source](https://github.com/SpaceEngineerSS/RadarSim) (recurso educativo para datos de radar)

@@ -87,5 +87,5 @@ La comparación directa es limitada porque cevher2-test-21 no publica resultados
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bcckfdn/cevher2-test-21
+- Hugging Face: https://huggingface.co/bcckfdn/cevher2-test-21
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

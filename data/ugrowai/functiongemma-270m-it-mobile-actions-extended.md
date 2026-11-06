@@ -76,7 +76,7 @@ La principal diferencia entre el modelo de UGrowAI y el de litert-community es e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UGrowAI/FunctionGemma-270M-it-Mobile-Actions-Extended
+- Modelo en Hugging Face: https://huggingface.co/UGrowAI/FunctionGemma-270M-it-Mobile-Actions-Extended
 - Modelo base de Google: https://huggingface.co/google/functiongemma-270m-it
 - Fine-tuning de Google sobre Mobile Actions (litert-community): https://huggingface.co/litert-community/FunctionGemma_270M_Mobile_Actions
 - Dataset extendido de Mobile Actions (AliRGHZ): https://huggingface.co/datasets/AliRGHZ/Mobile-Actions

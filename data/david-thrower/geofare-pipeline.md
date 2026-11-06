@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GeoFare es un repositorio de demostración publicado por el usuario david-thrower en HuggingFace bajo el identificador `david-thrower/geofare-pipeline`. No es un modelo de lenguaje: se trata de un pipeline completo de clasificación binaria sobre datos tabulares cuyo objetivo es predecir si un trayecto (presumiblemente de taxi o VTC) será de tarifa alta a partir de la geolocalización de recogida y otros atributos del viaje. El autor indica explícitamente que entrena "un modelo Keras pequeño" sobre un conjunto de datos sintético generado de forma determinista mediante `scripts/generate_data.py`.
+GeoFare es un repositorio de demostración publicado por el usuario david-thrower en Hugging Face bajo el identificador `david-thrower/geofare-pipeline`. No es un modelo de lenguaje: se trata de un pipeline completo de clasificación binaria sobre datos tabulares cuyo objetivo es predecir si un trayecto (presumiblemente de taxi o VTC) será de tarifa alta a partir de la geolocalización de recogida y otros atributos del viaje. El autor indica explícitamente que entrena "un modelo Keras pequeño" sobre un conjunto de datos sintético generado de forma determinista mediante `scripts/generate_data.py`.
 
 El interés técnico del repositorio no está en el modelo en sí, sino en el contrato que define entre el pipeline de features y el modelo: `features.py` transforma entradas continuas en índices enteros de bin y en un índice de celda de geolocalización cruzada, y `model.py` consume esos índices directamente en sus búsquedas de embedding, sin conversiones de tipo. El autor documenta con precisión las convenciones de binarización (equal-width con índices int32, quantile con índices int64) y advierte de que el `dtype_policy` desplegado es `"float64"` de forma intencional desde 2023.
 
@@ -81,7 +81,7 @@ No hay resultados de benchmarks publicados que permitan una comparación cuantit
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| geofare-pipeline | Clasificador tabular binario con embeddings sobre bins y celdas geográficas | no disponible | no aplica | no disponible | Repositorio HuggingFace, 0 descargas, 0 likes |
+| geofare-pipeline | Clasificador tabular binario con embeddings sobre bins y celdas geográficas | no disponible | no aplica | no disponible | Repositorio Hugging Face, 0 descargas, 0 likes |
 | XGBoost | Gradient boosting sobre tablas | no aplica | no aplica | no verificada en la informacion disponible | Ampliamente disponible |
 | LightGBM | Gradient boosting sobre tablas | no aplica | no aplica | no verificada en la informacion disponible | Ampliamente disponible |
 | TabNet | Red neuronal para datos tabulares con atención dispersa | no disponible | no aplica | no verificada en la informacion disponible | Disponible como implementación de referencia |
@@ -105,6 +105,6 @@ Criterio de comparación recomendado: al no existir métricas publicadas, cualqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/david-thrower/geofare-pipeline
+- Repositorio en Hugging Face: https://huggingface.co/david-thrower/geofare-pipeline
 - Paper, blog, repositorio de código adicional o demo: no disponible en la información proporcionada.
 - Resultados de búsqueda web: no se encontró ningún enlace relevante sobre el proyecto; las búsquedas devolvieron únicamente páginas sin relación (artículos enciclopédicos y una película homónima), por lo que no se incluyen.

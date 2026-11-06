@@ -25,7 +25,7 @@ Es relevante ahora porque los recursos de PLN para darija siguen siendo escasos 
 | Pipeline declarado | `text-classification` (etiqueta del repositorio; el grafo exportado es de extraccion de caracteristicas) |
 | Modelo base | `ainouche-abderahmane/DZAIR` |
 | Tamaño del repositorio | 0,4 GB |
-| Fechas de creacion / actualizacion | 2026-09-15 / 2026-09-15 (segun metadatos de HuggingFace) |
+| Fechas de creacion / actualizacion | 2026-09-15 / 2026-09-15 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -105,7 +105,7 @@ La busqueda web realizada no devolvio resultados relevantes para esta ficha: los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ainouche-abderahmane/DZAIR-ONNX
+- Modelo en Hugging Face: https://huggingface.co/ainouche-abderahmane/DZAIR-ONNX
 - Modelo base DZAIR: https://huggingface.co/ainouche-abderahmane/DZAIR
 - Tarjeta principal con resultados, datos de entrenamiento y composicion de licencias: https://huggingface.co/ainouche-abderahmane/DZAIR (enlazada desde la model card de DZAIR-ONNX)
 - Grafo ONNX: https://huggingface.co/ainouche-abderahmane/DZAIR-ONNX/blob/main/model.onnx

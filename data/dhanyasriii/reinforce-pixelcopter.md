@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-PixelCopter es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient de Monte Carlo) para resolver el entorno Pixelcopter-PLE-v0, un juego arcade 2D donde el agente debe pilotar un helicoptero a traves de un tunel de obstaculos. Lo publica el usuario dhanyasriii en HuggingFace y se enmarca explicitamente como ejercicio de la Unidad 4 del curso Deep Reinforcement Learning de HuggingFace.
+Reinforce-PixelCopter es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient de Monte Carlo) para resolver el entorno Pixelcopter-PLE-v0, un juego arcade 2D donde el agente debe pilotar un helicoptero a traves de un tunel de obstaculos. Lo publica el usuario dhanyasriii en Hugging Face y se enmarca explicitamente como ejercicio de la Unidad 4 del curso Deep Reinforcement Learning de Hugging Face.
 
 No es un modelo de lenguaje: no procesa texto, no tiene ventana de contexto y no se puede usar para generacion, razonamiento ni codigo. Se trata de una politica neuronal pequena, entrenada desde cero con una implementacion propia ("custom-implementation"), que mapea un vector de estado de 7 dimensiones a una de 2 acciones discretas. Su relevancia es exclusivamente didactica y experimental: sirve como referencia minima de un algoritmo de policy gradient clasico y como punto de partida para estudiar varianza, estabilidad y tecnicas de reduccion de gradiente.
 
@@ -61,7 +61,7 @@ En resumen: es un artefacto de RL puro, sin ninguna capacidad de proposito gener
 - Docencia sobre varianza en policy gradient: la desviacion tipica de 13.33 sobre una media de 20.90 es un ejemplo practico para explicar por que se introducen lineas base (baselines) y funciones de ventaja.
 - Estudio de sensibilidad a hiperparametros: reproducir el entrenamiento variando gamma (0.99), tasa de aprendizaje (0.0001), tamano oculto (64) o numero de episodios (20000) y medir el impacto en la recompensa media.
 - Pruebas de bucle de evaluacion y logging: integrar el agente en un pipeline propio de evaluacion con semillas fijas para validar infraestructura de experimentacion antes de escalar a entornos mas costosos.
-- Material de partida para ejercicios de la Unidad 4 del curso de Deep RL de HuggingFace: el propio autor lo publica con ese proposito, de modo que otro estudiante puede inspeccionarlo como referencia de entrega.
+- Material de partida para ejercicios de la Unidad 4 del curso de Deep RL de Hugging Face: el propio autor lo publica con ese proposito, de modo que otro estudiante puede inspeccionarlo como referencia de entrega.
 - Test de integracion de PLE/Gym: usar el agente como caso de prueba ligero para verificar que las dependencias del entorno (PyGame Learning Environment) funcionan correctamente en una maquina nueva.
 
 ## Benchmarks y rendimiento
@@ -89,7 +89,7 @@ No hay datos comparativos publicados en la informacion disponible. La comparacio
 
 | Modelo / algoritmo | Parametros | Contexto | Rendimiento en Pixelcopter-PLE-v0 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reinforce-PixelCopter (este modelo) | No disponible (MLP 7-64-2 estimada, ~642 parametros) | No aplica | 20.90 +/- 13.33 (autor, no verificado) | No disponible | HuggingFace, 0 descargas |
+| Reinforce-PixelCopter (este modelo) | No disponible (MLP 7-64-2 estimada, ~642 parametros) | No aplica | 20.90 +/- 13.33 (autor, no verificado) | No disponible | Hugging Face, 0 descargas |
 | REINFORCE con linea base | No disponible | No aplica | No disponible | No aplica | Implementacion propia |
 | PPO en Pixelcopter-PLE-v0 | No disponible | No aplica | No disponible | No aplica | Habitual en librerias de RL |
 | DQN en Pixelcopter-PLE-v0 | No disponible | No aplica | No disponible | No aplica | Habitual en librerias de RL |
@@ -111,7 +111,7 @@ La comparacion cuantitativa con PPO, A2C o DQN requeriria ejecutar esos algoritm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhanyasriii/Reinforce-PixelCopter
-- Curso de Deep Reinforcement Learning de HuggingFace (Unidad 4, contexto declarado del modelo): https://github.com/huggingface/deep-rl-class
+- Modelo en Hugging Face: https://huggingface.co/dhanyasriii/Reinforce-PixelCopter
+- Curso de Deep Reinforcement Learning de Hugging Face (Unidad 4, contexto declarado del modelo): https://github.com/huggingface/deep-rl-class
 - Entorno PyGame Learning Environment (PLE), del que depende Pixelcopter-PLE-v0: https://github.com/ntasfi/PyGame-Learning-Environment
 - La busqueda web realizada no ha devuelto enlaces relevantes al modelo (los resultados obtenidos correspondian a un portal administrativo sin relacion con el contenido solicitado).

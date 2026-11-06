@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EEG-HealthLLM es un modelo publicado en HuggingFace por el usuario maruisaa con licencia MIT. La model card asociada no contiene ninguna descripción técnica, arquitectónica ni de capacidades: únicamente se declara la licencia. No se especifica qué problema resuelve, qué arquitectura emplea, ni qué datos de entrenamiento se utilizaron. A fecha de creación (2026-08-15) no registra descargas ni valoraciones, y no se dispone de información adicional sobre su funcionamiento o aplicaciones.
+EEG-HealthLLM es un modelo publicado en Hugging Face por el usuario maruisaa con licencia MIT. La model card asociada no contiene ninguna descripción técnica, arquitectónica ni de capacidades: únicamente se declara la licencia. No se especifica qué problema resuelve, qué arquitectura emplea, ni qué datos de entrenamiento se utilizaron. A fecha de creación (2026-08-15) no registra descargas ni valoraciones, y no se dispone de información adicional sobre su funcionamiento o aplicaciones.
 
 Dada la ausencia total de documentación técnica, esta ficha no puede ofrecer datos verificables sobre el modelo. Se recomienda precaución a cualquier desarrollador o investigador que considere utilizarlo, ya que no existe evidencia pública de su rendimiento, seguridad o idoneidad para tareas concretas.
 
@@ -61,6 +61,6 @@ No disponible. Al no conocerse la arquitectura ni el tamaño, no es posible esta
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/maruisaa/EEG-HealthLLM)
+- [Modelo en Hugging Face](https://huggingface.co/maruisaa/EEG-HealthLLM)
 
 No se han encontrado papers, repositorios, demos ni documentación adicional asociada al modelo.

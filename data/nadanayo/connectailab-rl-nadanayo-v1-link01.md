@@ -71,8 +71,8 @@ No se han publicado resultados en benchmarks estándar de LLM (MMLU, HumanEval, 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | 0,8B base + LoRA | no disponible | Decisión robótica por destilación de PPO | Apache 2.0 | HuggingFace, código en GitHub |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible en esta ficha | LLM generalista | según el modelo base | HuggingFace |
+| LINK-01 (este modelo) | 0,8B base + LoRA | no disponible | Decisión robótica por destilación de PPO | Apache 2.0 | Hugging Face, código en GitHub |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible en esta ficha | LLM generalista | según el modelo base | Hugging Face |
 | Política PPO original ("cerebro") | no disponible | no aplica | Política RL en simulador | no disponible | Integrada en CONNECT AI WORLD |
 | Otros adaptadores LoRA de decisión | variable | variable | Clasificación de acciones | variable | no disponible |
 
@@ -92,7 +92,7 @@ No se dispone de comparaciones con modelos de decisión robótica equivalentes e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NADANAYO/connectailab-rl-nadanayo-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/NADANAYO/connectailab-rl-nadanayo-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

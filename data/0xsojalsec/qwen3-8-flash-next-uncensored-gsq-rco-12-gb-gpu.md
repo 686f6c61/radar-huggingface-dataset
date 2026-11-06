@@ -94,7 +94,7 @@ El unico termino de comparacion verificable con la informacion aportada es el mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0xSojalSec/Qwen3.8-Flash-Next-Uncensored-GSQ-RCO-12-GB-GPU
+- Repositorio Hugging Face: https://huggingface.co/0xSojalSec/Qwen3.8-Flash-Next-Uncensored-GSQ-RCO-12-GB-GPU
 - Modelo base (upstream GSQ-RCO): https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Model card en chino simplificado referenciada en el README: https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF/blob/main/README.zh-CN.md
 - Referencia arXiv citada en las etiquetas (contenido no verificado): arxiv:2604.18556

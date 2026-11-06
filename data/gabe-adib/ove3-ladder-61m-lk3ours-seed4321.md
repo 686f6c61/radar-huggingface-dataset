@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ove3-ladder-61m-lk3ours-seed4321` es un checkpoint de investigación publicado por el usuario gabe-adib en HuggingFace. No se trata de un modelo listo para producción, sino de una única ejecución (seed 4321) dentro de una "escalera de intervenciones" denominada ove3, en la rama K3 LatentMoE. El modelo es un MoE de tipo kimi_linear con 61M parámetros activos, 512 expertos de media anchura y enrutamiento top-16, entrenado sobre la celda IsoFLOP de 61M de la receta (mismos datos, LR, batch y pasos).
+`ove3-ladder-61m-lk3ours-seed4321` es un checkpoint de investigación publicado por el usuario gabe-adib en Hugging Face. No se trata de un modelo listo para producción, sino de una única ejecución (seed 4321) dentro de una "escalera de intervenciones" denominada ove3, en la rama K3 LatentMoE. El modelo es un MoE de tipo kimi_linear con 61M parámetros activos, 512 expertos de media anchura y enrutamiento top-16, entrenado sobre la celda IsoFLOP de 61M de la receta (mismos datos, LR, batch y pasos).
 
 El checkpoint corresponde al paso de validación best_1 en la iteración 17.290, con una pérdida de validación de 1,1055 y una pérdida held-out de 1,1982 nats/char ponderada por mezcla sobre 9 dominios. El repositorio incluye el checkpoint Megatron distribuido con estado del optimizador, los logs de entrenamiento y puntuación, eventos de TensorBoard y el `config.yaml` de la ejecución.
 
@@ -85,5 +85,5 @@ No se han identificado en la información proporcionada checkpoints comparables 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gabe-adib/ove3-ladder-61m-lk3ours-seed4321
+- Hugging Face: https://huggingface.co/gabe-adib/ove3-ladder-61m-lk3ours-seed4321
 - No se han encontrado en la búsqueda web enlaces relevantes a este modelo, su paper, repositorio de código o demo. Los resultados devueltos (Gab AI, AI Model Radar, Gemini, Google AI Studio) no guardan relación con este checkpoint y se descartan.

@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Observaciones / acciones | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RSanchez996/microduck-sock-heist-fusion-v1 | Política RL (ONNX) | 61 / 14 | 50 Hz | no disponible | HuggingFace |
-| HlibPlakhtii/microduck-sock-heist-quicksilver-v2 | Política RL (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
+| RSanchez996/microduck-sock-heist-fusion-v1 | Política RL (ONNX) | 61 / 14 | 50 Hz | no disponible | Hugging Face |
+| HlibPlakhtii/microduck-sock-heist-quicksilver-v2 | Política RL (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
 | Otras políticas de microduck | Política RL | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RSanchez996/microduck-sock-heist-fusion-v1
+- Modelo en Hugging Face: https://huggingface.co/RSanchez996/microduck-sock-heist-fusion-v1
 - Modelo base: https://huggingface.co/HlibPlakhtii/microduck-sock-heist-quicksilver-v2
 - Repositorio microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento: `pollen-robotics/microduck_rl` (rama `exp_sock_heist_speed_v3`, commit `876fefacd`)

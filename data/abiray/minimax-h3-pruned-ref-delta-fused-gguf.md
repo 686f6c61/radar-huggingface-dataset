@@ -93,9 +93,9 @@ No se dispone de datos de rendimiento verificables en la informacion proporciona
 
 | Modelo | Tipo | Parametros | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Abiray/MiniMax-H3-Pruned-Ref-Delta-Fused-GGUF | Cuantizaciones GGUF de un modelo de video con condicionamiento por referencias | 20,1B (heredados del base) | GGUF (Q3_K_M a Q8_0) | minimax-h3-community-license | HuggingFace |
-| xmarre/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024-ComfyUI | Modelo fusionado original (merge delta r=1024) | 20,1B | No disponible (safetensors/BF16 segun la model card) | No disponible | HuggingFace |
-| MiniMaxAI/MiniMax-H3 | Arquitectura base de MiniMax AI | No disponible | No disponible | minimax-h3-community-license | HuggingFace |
+| Abiray/MiniMax-H3-Pruned-Ref-Delta-Fused-GGUF | Cuantizaciones GGUF de un modelo de video con condicionamiento por referencias | 20,1B (heredados del base) | GGUF (Q3_K_M a Q8_0) | minimax-h3-community-license | Hugging Face |
+| xmarre/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024-ComfyUI | Modelo fusionado original (merge delta r=1024) | 20,1B | No disponible (safetensors/BF16 segun la model card) | No disponible | Hugging Face |
+| MiniMaxAI/MiniMax-H3 | Arquitectura base de MiniMax AI | No disponible | No disponible | minimax-h3-community-license | Hugging Face |
 | Alternativas de la misma categoria (por ejemplo, otros modelos abiertos de generacion de video) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -109,11 +109,11 @@ No se dispone de datos de rendimiento verificables en la informacion proporciona
 - La model card no especifica idiomas soportados para prompts ni para el audio, ni ofrece informacion sobre sesgos, diversidad de los datos de entrenamiento o representacion de personas.
 - Riesgo de alucinacion visual: como todo modelo generativo de video, puede producir anatomias incorrectas, texto ilegible, incoherencias entre fotogramas y desviaciones respecto a la referencia de personaje, especialmente en duraciones largas (81 fotogramas) y cuantizaciones agresivas.
 - El modelo esta limitado a las duraciones documentadas (49 u 81 fotogramas, regla 4k+1) y a las resoluciones recomendadas; no hay informacion sobre comportamiento fuera de esos rangos.
-- Los enlaces de la busqueda web realizada no contenian informacion tecnica relevante sobre este modelo, por lo que toda la ficha se basa en la model card y en los metadatos de HuggingFace.
+- Los enlaces de la busqueda web realizada no contenian informacion tecnica relevante sobre este modelo, por lo que toda la ficha se basa en la model card y en los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abiray/MiniMax-H3-Pruned-Ref-Delta-Fused-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Abiray/MiniMax-H3-Pruned-Ref-Delta-Fused-GGUF
 - Modelo base (merge delta de rango 1024 para ComfyUI): https://huggingface.co/xmarre/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024-ComfyUI
 - Arquitectura base MiniMax-H3 (MiniMax AI): https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Texto de la licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/raw/main/LICENSE

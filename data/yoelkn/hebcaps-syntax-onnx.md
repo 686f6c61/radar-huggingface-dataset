@@ -83,6 +83,6 @@ La comparación directa con alternativas queda limitada porque no se dispone de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yoelkn/hebcaps-syntax-onnx
+- Modelo en Hugging Face: https://huggingface.co/yoelkn/hebcaps-syntax-onnx
 - Modelo base: https://huggingface.co/dicta-il/dictabert-syntax
 - Referencia del modelo base: Shmidman et al., "DictaBERT: A State-of-the-Art BERT Suite for Modern Hebrew" (2023), citado en la model card; no se proporciona URL directa en la información disponible.

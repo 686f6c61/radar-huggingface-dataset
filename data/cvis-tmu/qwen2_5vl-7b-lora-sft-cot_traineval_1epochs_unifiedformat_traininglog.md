@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA (PEFT) entrenado sobre el modelo base Qwen/Qwen2.5-VL-7B-Instruct, un modelo de visión y lenguaje de la familia Qwen2.5-VL. El adaptador lo publica el usuario cvis-tmu en HuggingFace y su nombre interno describe el experimento: fine-tuning con datos de cadena de pensamiento (CoT), una sola época, formato unificado y registro de entrenamiento (training log). La librería declarada es peft y la herramienta de entrenamiento referenciada en las etiquetas es LLaMA-Factory.
+Este repositorio contiene un adaptador LoRA (PEFT) entrenado sobre el modelo base Qwen/Qwen2.5-VL-7B-Instruct, un modelo de visión y lenguaje de la familia Qwen2.5-VL. El adaptador lo publica el usuario cvis-tmu en Hugging Face y su nombre interno describe el experimento: fine-tuning con datos de cadena de pensamiento (CoT), una sola época, formato unificado y registro de entrenamiento (training log). La librería declarada es peft y la herramienta de entrenamiento referenciada en las etiquetas es LLaMA-Factory.
 
-Se trata, por tanto, de un artefacto de investigación más que de un modelo listo para producción: la model card es la plantilla por defecto de HuggingFace sin rellenar, no declara licencia, idiomas, dataset, hiperparámetros ni resultados de evaluación, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta. El interés actual del modelo reside en su valor como ejemplo reproducible de ajuste fino eficiente de un VLM de ~7B para razonamiento encadenado, no en un rendimiento demostrado.
+Se trata, por tanto, de un artefacto de investigación más que de un modelo listo para producción: la model card es la plantilla por defecto de Hugging Face sin rellenar, no declara licencia, idiomas, dataset, hiperparámetros ni resultados de evaluación, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta. El interés actual del modelo reside en su valor como ejemplo reproducible de ajuste fino eficiente de un VLM de ~7B para razonamiento encadenado, no en un rendimiento demostrado.
 
 Conviene subrayar que un adaptador LoRA no es autónomo: requiere descargar el modelo base Qwen2.5-VL-7B-Instruct y cargar el adaptador con PEFT, o bien fusionar los pesos antes de exportar a otros formatos. Cualquier evaluación de capacidades debe hacerse, por tanto, sobre el binomio base + adaptador, y no existe en la información disponible ninguna medición que lo caracterice.
 
@@ -87,7 +87,7 @@ Los datos de licencia, contexto y disponibilidad de las alternativas proceden de
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cvis-tmu/qwen2_5vl-7b-lora-sft-CoT... | No disponible (adaptador sobre base 7B) | No disponible | Adaptador LoRA de investigación | No disponible | Publicado en HuggingFace, 0 descargas |
+| cvis-tmu/qwen2_5vl-7b-lora-sft-CoT... | No disponible (adaptador sobre base 7B) | No disponible | Adaptador LoRA de investigación | No disponible | Publicado en Hugging Face, 0 descargas |
 | Qwen2.5-VL-7B-Instruct (base) | ~7B (denominación comercial) | 128 000 tokens según documentación pública | Modelo completo, visión-lenguaje | Apache 2.0 (no verificado aquí) | Ampliamente distribuido |
 | Qwen2.5-VL-3B-Instruct | ~3B | 128 000 tokens según documentación pública | Modelo completo, visión-lenguaje | Apache 2.0 (no verificado aquí) | Ampliamente distribuido |
 | Qwen2.5-VL-72B-Instruct | ~72B | 128 000 tokens según documentación pública | Modelo completo, visión-lenguaje | Apache 2.0 (no verificado aquí) | Ampliamente distribuido |
@@ -109,7 +109,7 @@ No se dispone de datos de rendimiento comparado, ya que el adaptador no publica 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/cvis-tmu/qwen2_5vl-7b-lora-sft-CoT_traineval_1epochs_unifiedformat_traininglog
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/cvis-tmu/qwen2_5vl-7b-lora-sft-CoT_traineval_1epochs_unifiedformat_traininglog
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - LLaMA-Factory (herramienta de entrenamiento referenciada en las etiquetas): https://github.com/hiyouga/LLaMA-Factory
 - PEFT (librería declarada, versión 0.18.1): https://github.com/huggingface/peft

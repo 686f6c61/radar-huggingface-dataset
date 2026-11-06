@@ -92,7 +92,7 @@ La principal diferencia frente al modelo original es el formato de cuantizacion:
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BroLaurens/gemma-4-31B-it-qat-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/BroLaurens/gemma-4-31B-it-qat-NVFP4-GGUF
 - Checkpoint base: https://huggingface.co/melcheikh/gemma-4-31B-it-qat-NVFP4-mse-Blackwell
 - Modelo original de Google: https://huggingface.co/google/gemma-4-31B
 - Checkpoint QAT de Google: https://huggingface.co/google/gemma-4-31B-it-qat-q4_0-unquantized

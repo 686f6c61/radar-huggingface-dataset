@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada: al tener ~50,9 M de parámetros, el checkpoint en float32 ocupa aproximadamente 204 MB. Con overhead de optimizador y activaciones, cabría en GPUs con 1-2 GB de VRAM.
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050, o incluso CPU para inferencia básica).
 - No requiere GPU de datacenter; es adecuado para hardware de consumo.
-- Opciones de despliegue: al no ser pesos de HuggingFace transformers, no se puede usar directamente con vLLM, Ollama o TGI. Es necesario cargar el state_dict manualmente con PyTorch y reconstruir la arquitectura desde config.json. Se podría exportar a formato GGUF o safetensors para su uso con llama.cpp, pero no se proporcionan scripts para ello.
+- Opciones de despliegue: al no ser pesos de Hugging Face transformers, no se puede usar directamente con vLLM, Ollama o TGI. Es necesario cargar el state_dict manualmente con PyTorch y reconstruir la arquitectura desde config.json. Se podría exportar a formato GGUF o safetensors para su uso con llama.cpp, pero no se proporcionan scripts para ello.
 - Latencia y throughput: no disponibles, pero al ser un modelo pequeño, la inferencia en CPU sería de decenas de ms por token, y en GPU de pocos ms.
 
 ## Comparativa con modelos similares
@@ -73,6 +73,6 @@ No se dispone de información sobre modelos comparables específicos para la té
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FAIRC/token-averaging-avg_50m_k4_phased
+- Repositorio Hugging Face: https://huggingface.co/FAIRC/token-averaging-avg_50m_k4_phased
 - Checkpoint relacionado (misma familia, sin phased): https://huggingface.co/FAIRC/token-averaging-avg_50m_k4
 - Checkpoint relacionado (con posiciones aprendibles): https://huggingface.co/FAIRC/token-averaging-avg_50m_k4_learnable_pos

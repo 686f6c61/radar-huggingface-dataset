@@ -102,7 +102,7 @@ Lectura de resultados según la model card: los puntos fuertes son enrutamiento 
 
 | Modelo | Parametros | Enfoque | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| faizaltkl/qdec-lay-decision-model | 4B (base) + cabeza de decisión | Decisión estructurada con probabilidades calibradas | no disponible | other | HuggingFace (0 descargas, 1 like) |
+| faizaltkl/qdec-lay-decision-model | 4B (base) + cabeza de decisión | Decisión estructurada con probabilidades calibradas | no disponible | other | Hugging Face (0 descargas, 1 like) |
 | Qwen3.5-0.8B (referencia de Unsloth para typed-decisions) | 0,8B | Decision model entrenado con el mismo flujo de Unsloth | no disponible | no disponible | Referencia citada en la model card |
 | Qwen3.5-2B (referencia de Unsloth para typed-decisions) | 2B | Decision model entrenado con el mismo flujo de Unsloth | no disponible | no disponible | Referencia citada en la model card |
 | Clef (Cloudflare) | no disponible | Cabeza de puntuación sobre LLM, diseño de referencia | no disponible | no disponible | Citado como diseño, no comparado numéricamente |
@@ -124,7 +124,7 @@ La model card indica que Unsloth reporta 73 % (Qwen3.5-0.8B) y 78 % (Qwen3.5-2B)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/faizaltkl/qdec-lay-decision-model
+- Modelo en Hugging Face: https://huggingface.co/faizaltkl/qdec-lay-decision-model
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Dataset declarado: https://huggingface.co/datasets/faizaltkl/decision-model-dataset
 - Dataset declarado: https://huggingface.co/datasets/LocalLLaMA/typed-decisions

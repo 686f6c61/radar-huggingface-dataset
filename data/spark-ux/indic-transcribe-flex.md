@@ -16,7 +16,7 @@ El modelo resuelve un problema crítico en el ecosistema tecnológico indio: la 
 | Longitud de contexto | no disponible (modelo de audio; no se especifica duración máxima de audio) |
 | Tipos de cuantizacion | no disponible (checkpoint en fp16) |
 | Idiomas soportados | en, as, bn, brx, doi, gu, hi, kn, ks, kok, mai, ml, mni, mr, ne, or, pa, sa, sat, sd, ta, te, ur, bho, hne, bgc, bhb (27 en total) |
-| Licencia | other (según HuggingFace; la model card indica CC-BY-4.0) |
+| Licencia | other (según Hugging Face; la model card indica CC-BY-4.0) |
 | Formato de pesos | safetensors (también formato NeMo) |
 
 ## Arquitectura y entrenamiento
@@ -72,7 +72,7 @@ La comparativa se basa en características públicas; no se dispone de benchmark
 
 - Los datos de entrenamiento no se detallan públicamente; la cifra de 1,3 millones de horas proviene de una fuente periodística y no está confirmada en la model card.
 - No se han publicado métricas de WER/CER por idioma, por lo que no es posible validar la calidad real en cada lengua, especialmente en las de bajos recursos como bhili o santali.
-- La licencia es ambigua: el campo de HuggingFace indica "other", mientras que la model card afirma CC-BY-4.0. Se recomienda verificar los términos exactos antes de uso comercial.
+- La licencia es ambigua: el campo de Hugging Face indica "other", mientras que la model card afirma CC-BY-4.0. Se recomienda verificar los términos exactos antes de uso comercial.
 - El modelo no soporta streaming (la variante "realtime" lo hace, pero no esta versión flex), por lo que no es adecuado para transcripción en vivo de baja latencia.
 - No se especifica la duración máxima de audio que puede procesar el modelo; es posible que audios muy largos requieran segmentación previa.
 - Al ser un modelo entrenado principalmente con audio indio, su rendimiento fuera de ese contexto geográfico puede degradarse.
@@ -80,7 +80,7 @@ La comparativa se basa en características públicas; no se dispone de benchmark
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/spark-ux/indic-transcribe-flex)
+- [Modelo en Hugging Face](https://huggingface.co/spark-ux/indic-transcribe-flex)
 - [Modelo base NVIDIA Canary 1B v2](https://huggingface.co/nvidia/canary-1b-v2)
 - [Noticia de The Education Express](https://www.theeducationexpress.in/2026/08/19/iit-madras-bodhan-ai-indic/)
 - [Noticia de NewsBytes](https://www.newsbytesapp.com/news/science/iit-madras-introduces-indic-transcribe-a-multilingual-speech-recognition-model/story)

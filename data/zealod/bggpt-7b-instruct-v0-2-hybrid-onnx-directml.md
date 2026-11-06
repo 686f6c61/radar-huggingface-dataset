@@ -84,7 +84,7 @@ La comparativa se limita a parametros, idiomas, licencia y formato, ya que no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zealod/BgGPT-7B-Instruct-v0.2-hybrid-onnx-directml
+- Modelo en Hugging Face: https://huggingface.co/zealod/BgGPT-7B-Instruct-v0.2-hybrid-onnx-directml
 - Modelo base: https://huggingface.co/INSAIT-Institute/BgGPT-7B-Instruct-v0.2
 - INSAIT Institute: https://insait.ai/
 - Runtime onnxruntime-genai: no disponible en la informacion proporcionada (referenciado como `onnxruntime-genai-directml` en la model card).

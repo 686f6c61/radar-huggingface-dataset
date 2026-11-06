@@ -94,7 +94,7 @@ Los datos de los modelos alternativos provienen de sus respectivas model cards p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/naklitechie/swage-models
+- Repositorio en Hugging Face: https://huggingface.co/naklitechie/swage-models
 - Sitio del proyecto swage: https://swage.naklitechie.com
 - Paper citado en la model card: arXiv 2607.02512 (Program-as-Weights)
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B

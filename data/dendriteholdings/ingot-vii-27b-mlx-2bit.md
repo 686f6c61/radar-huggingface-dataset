@@ -106,7 +106,7 @@ No se dispone de comparaciones con modelos de la misma categoría fuera del ecos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dendriteholdings/Ingot-VII-27B-MLX-2bit
+- Modelo en Hugging Face: https://huggingface.co/dendriteholdings/Ingot-VII-27B-MLX-2bit
 - Gemelo GGUF: https://huggingface.co/dendriteholdings/Ingot-VII-27B-Q2
 - Generación anterior: https://huggingface.co/dendriteholdings/Ingot-V-27B-MLX-2bit
 - Modelo base MLX (Prism ML): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit

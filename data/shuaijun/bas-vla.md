@@ -4,7 +4,7 @@
 
 BAS-VLA es un adaptador residual de corrección de acciones para modelos vision-language-action (VLA), publicado por Shuaijun Liu y colaboradores (NEBULIS-Lab) y aceptado en NeurIPS 2026 con el artículo *Beyond Appearance Shifts: Task-Semantic Action Calibration for VLA Models*. No es un modelo completo, sino un módulo entrenado que se acopla sobre el VLA congelado `openvla/openvla-7b` y aplica una corrección acotada sobre la acción que produce el modelo base, usando como señal adicional características binarias bag-of-words de la instrucción. El problema que aborda es la sensibilidad de las políticas VLA a cambios en el enunciado de la tarea: la misma escena con una instrucción que preserva la tarea frente a otra que cambia su semántica (objeto objetivo o condición de ejecutabilidad) produce en el modelo base acciones idénticas o mal calibradas.
 
-La release disponible en HuggingFace corresponde a un subconjunto concreto del artículo: el escenario de calibración offline sobre LIBERO-10, con tripletas de observación compartida, instrucciones limpias, preservadoras de tarea y modificadoras de semántica, junto con las acciones del carrier congelado y las acciones expertas. El adaptador se entrenó con un núcleo de calibración centrado en el "breaking" como ruta por defecto y un auxiliar preservador con compuerta selectiva de evidencia, que solo se activa cuando se detecta variación de nuisance mientras la semántica de la tarea permanece consistente.
+La release disponible en Hugging Face corresponde a un subconjunto concreto del artículo: el escenario de calibración offline sobre LIBERO-10, con tripletas de observación compartida, instrucciones limpias, preservadoras de tarea y modificadoras de semántica, junto con las acciones del carrier congelado y las acciones expertas. El adaptador se entrenó con un núcleo de calibración centrado en el "breaking" como ruta por defecto y un auxiliar preservador con compuerta selectiva de evidencia, que solo se activa cuando se detecta variación de nuisance mientras la semántica de la tarea permanece consistente.
 
 Es relevante ahora porque propone una vía de adaptación paramétricamente eficiente para robótica de manipulación: mejorar la fidelidad semántica de una política ya entrenada sin reentrenar el VLA de 7B, con pesos ligeros, licencia MIT y un ejemplo que se ejecuta en CPU. La contrapartida es que el adaptador está fuertemente acoplado a una convención de acciones y a un carrier concretos, y que el repositorio no publica cifras de rendimiento en su model card.
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BAS-VLA (esta ficha) | Carrier 7B congelado + adaptador de tamano no disponible | No disponible | Adaptador residual de calibracion semantica de acciones sobre OpenVLA | MIT | Pesos del adaptador, datos y ejemplo en HuggingFace |
+| BAS-VLA (esta ficha) | Carrier 7B congelado + adaptador de tamano no disponible | No disponible | Adaptador residual de calibracion semantica de acciones sobre OpenVLA | MIT | Pesos del adaptador, datos y ejemplo en Hugging Face |
 | OpenVLA-7B (`openvla/openvla-7b`) | 7B | No disponible en esta informacion | VLA completo entrenado para manipulacion; actua como carrier congelado de BAS-VLA | No disponible en esta informacion | Repositorio upstream de OpenVLA |
 | OpenVLA-OFT LIBERO-10 (`moojink/openvla-7b-oft-finetuned-libero-10`) | 7B | No disponible en esta informacion | Fine-tuning de OpenVLA sobre LIBERO-10; fuente de las estadisticas `libero_10_no_noops` usadas por BAS-VLA | No disponible en esta informacion (aviso MIT referenciado en BAS-VLA) | Repositorio upstream |
 | Politicas servidas con OpenPI | No disponible | No disponible | Runners de rollout citados por el codigo de BAS-VLA, con convenciones de accion propias | No disponible en esta informacion | Repositorio de codigo del proyecto |
@@ -100,7 +100,7 @@ La diferencia funcional frente a las alternativas no es de escala sino de rol: O
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shuaijun/BAS-VLA
+- Modelo en Hugging Face: https://huggingface.co/Shuaijun/BAS-VLA
 - Articulo (abstract): https://arxiv.org/abs/2609.23650
 - Articulo (PDF): https://arxiv.org/pdf/2609.23650v1
 - Pagina del proyecto: https://nebulis-lab.com/BAS-VLA/

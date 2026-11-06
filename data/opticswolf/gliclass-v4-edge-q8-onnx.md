@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gliclass-v4-edge-q8-onnx es una compilación cuantizada en int8 del modelo knowledgator/gliclass-v4-edge, un modelo de decisión (decision-model) orientado a tareas de reranking y clasificación zero-shot. Lo publica el usuario opticsWolf en HuggingFace y su base es el checkpoint GLiClass v4-edge de Knowledgator, construido sobre una arquitectura DeBERTa-v3 con enfoque "labels-first". El resultado se distribuye en formato ONNX para ejecución con onnxruntime, lo que facilita el despliegue en entornos de producción sin depender de PyTorch.
+gliclass-v4-edge-q8-onnx es una compilación cuantizada en int8 del modelo knowledgator/gliclass-v4-edge, un modelo de decisión (decision-model) orientado a tareas de reranking y clasificación zero-shot. Lo publica el usuario opticsWolf en Hugging Face y su base es el checkpoint GLiClass v4-edge de Knowledgator, construido sobre una arquitectura DeBERTa-v3 con enfoque "labels-first". El resultado se distribuye en formato ONNX para ejecución con onnxruntime, lo que facilita el despliegue en entornos de producción sin depender de PyTorch.
 
 La relevancia de esta ficha radica en que ofrece una variante ligera y portable de un modelo de clasificación/reranking: la cuantización weight-only int8 con MatMulNBits (8 bits, bloque de 128, asimétrica, escalas fp32) reduce el peso del repositorio a 0,9 GB y permite inferencia acelerada en CPU y GPU mediante ONNX Runtime. El autor reporta una paridad de 0,0899 en el peor caso y 0 flips respecto al modelo original en una validación de 6 casos dorados.
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/opticsWolf/gliclass-v4-edge-q8-onnx
+- Modelo en Hugging Face: https://huggingface.co/opticsWolf/gliclass-v4-edge-q8-onnx
 - Modelo base: https://huggingface.co/knowledgator/gliclass-v4-edge
 - Repositorio de Knowledgator (organización): https://huggingface.co/knowledgator
 - Documentación de ONNX Runtime: https://onnxruntime.ai/

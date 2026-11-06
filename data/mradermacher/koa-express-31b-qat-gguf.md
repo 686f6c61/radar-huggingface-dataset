@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Koa-express-31B-qat-GGUF es un repositorio de cuantizaciones estáticas en formato GGUF del modelo SF-Foundation/Koa-express-31B-qat, publicado por mradermacher, un cuantizador conocido en HuggingFace por convertir pesos de modelos abiertos a formatos ejecutables en CPU y GPU de consumo. No se trata por tanto de un modelo entrenado desde cero, sino de una distribución derivada: el modelo original tiene 32.106.631.740 parámetros (unos 32,1 B) según los pesos en safetensors, y este repositorio ofrece versiones comprimidas entre 12,5 GB (Q2_K) y 19,6 GB (Q4_K_M) para su uso con llama.cpp y herramientas compatibles.
+Koa-express-31B-qat-GGUF es un repositorio de cuantizaciones estáticas en formato GGUF del modelo SF-Foundation/Koa-express-31B-qat, publicado por mradermacher, un cuantizador conocido en Hugging Face por convertir pesos de modelos abiertos a formatos ejecutables en CPU y GPU de consumo. No se trata por tanto de un modelo entrenado desde cero, sino de una distribución derivada: el modelo original tiene 32.106.631.740 parámetros (unos 32,1 B) según los pesos en safetensors, y este repositorio ofrece versiones comprimidas entre 12,5 GB (Q2_K) y 19,6 GB (Q4_K_M) para su uso con llama.cpp y herramientas compatibles.
 
 El interés práctico del repositorio es que reduce un modelo de más de 32 B parámetros a tamaños que caben en GPU de consumo de 16-24 GB o en configuraciones con offload a RAM del sistema. El sufijo «qat» del nombre sugiere quantisation-aware training en el modelo de origen, un procedimiento que entrena el modelo teniendo en cuenta la cuantización posterior para reducir la pérdida de calidad; no obstante, la model card no confirma este extremo, por lo que debe tomarse como una inferencia a partir del nombre y no como un dato verificado.
 
@@ -27,14 +27,14 @@ La información publicada es muy limitada: la model card solo documenta el proce
 
 ## Arquitectura y entrenamiento
 
-La model card de este repositorio no aporta ninguna información sobre la arquitectura del modelo base ni sobre su proceso de entrenamiento: se limita a indicar que son cuantizaciones estáticas de SF-Foundation/Koa-express-31B-qat, con la versión 2 del script de cuantización de mradermacher, salida en formato HuggingFace convertida a GGUF y sin fichero mmproj (es decir, sin componente multimodal asociado). No se documentan número de tokens de entrenamiento, composición del dataset, fases de RLHF/DPO ni innovaciones técnicas de atención o decodificación.
+La model card de este repositorio no aporta ninguna información sobre la arquitectura del modelo base ni sobre su proceso de entrenamiento: se limita a indicar que son cuantizaciones estáticas de SF-Foundation/Koa-express-31B-qat, con la versión 2 del script de cuantización de mradermacher, salida en formato Hugging Face convertida a GGUF y sin fichero mmproj (es decir, sin componente multimodal asociado). No se documentan número de tokens de entrenamiento, composición del dataset, fases de RLHF/DPO ni innovaciones técnicas de atención o decodificación.
 
 El único detalle técnico relevante que puede deducirse del proceso de cuantización es que se han generado tanto cuantizaciones K-quant estáticas (Q2_K a Q4_K_M) como cuantizaciones IQ4_XS, y que existe un repositorio paralelo con cuantizaciones ponderadas mediante imatrix (i1-GGUF), que habitualmente ofrecen mejor relación calidad/tamaño que las estáticas equivalentes. Para conocer la arquitectura real (transformer denso o MoE), la ventana de contexto y el régimen de entrenamiento hay que acudir a la documentación del modelo original.
 
 ## Capacidades
 
-- Generación de texto conversacional: el tag `conversational` de HuggingFace indica un uso previsto de diálogo multi-turno, si bien no se detalla el formato de plantilla de chat.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el modelo puede desplegarse en infraestructuras de inferencia compatibles con la API de HuggingFace.
+- Generación de texto conversacional: el tag `conversational` de Hugging Face indica un uso previsto de diálogo multi-turno, si bien no se detalla el formato de plantilla de chat.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el modelo puede desplegarse en infraestructuras de inferencia compatibles con la API de Hugging Face.
 - Capacidades multilingües: limitadas al inglés según el campo `language` de la model card; no hay evidencia de soporte de otros idiomas.
 - Tool calling / function calling: no disponible en la información proporcionada.
 - Razonamiento multi-paso y uso como agente: no disponible en la información proporcionada.
@@ -102,7 +102,7 @@ Alternativas de otros autores en la franja de 30-32 B: no disponible. La busqued
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Koa-express-31B-qat-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Koa-express-31B-qat-GGUF
 - Modelo base: https://huggingface.co/SF-Foundation/Koa-express-31B-qat
 - Cuantizaciones ponderadas con imatrix (i1): https://huggingface.co/mradermacher/Koa-express-31B-qat-i1-GGUF
 - Pagina de descarga y vision general del cuantizador: https://hf.tst.eu/model#Koa-express-31B-qat-GGUF

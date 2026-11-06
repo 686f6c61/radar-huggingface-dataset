@@ -63,9 +63,9 @@ Resultado declarado por el autor con decodificacion greedy, una sola pasada, sin
 
 | Modelo | Parametros | Contexto | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `cot-dialect-olmo3-7b-think-grpo-gr3relaxed80-l5` | 7B + LoRA | no disponible | 70.5% | Apache-2.0 | HuggingFace |
-| `allenai/Olmo-3-7B-Think` (base) | 7B | contexto largo (segun paper) | no disponible | Apache-2.0 | HuggingFace |
-| `ssurface/cot-dialect-olmo3-7b-think-grpo-l5` (modelo principal del mismo nivel) | 7B + LoRA | no disponible | no disponible (no publicado en la informacion) | Apache-2.0 | HuggingFace |
+| `cot-dialect-olmo3-7b-think-grpo-gr3relaxed80-l5` | 7B + LoRA | no disponible | 70.5% | Apache-2.0 | Hugging Face |
+| `allenai/Olmo-3-7B-Think` (base) | 7B | contexto largo (segun paper) | no disponible | Apache-2.0 | Hugging Face |
+| `ssurface/cot-dialect-olmo3-7b-think-grpo-l5` (modelo principal del mismo nivel) | 7B + LoRA | no disponible | no disponible (no publicado en la informacion) | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento de los modelos comparables en la informacion proporcionada. La comparativa se limita a caracteristicas estructurales.
 
@@ -81,8 +81,8 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-gr3relaxed80-l5
-- Modelo base en HuggingFace: https://huggingface.co/allenai/Olmo-3-7B-Think
+- Repositorio Hugging Face del adaptador: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-gr3relaxed80-l5
+- Modelo base en Hugging Face: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Paper de Olmo 3 (arXiv): https://arxiv.org/abs/2512.13961
 - Pagina de Olmo en AI2: https://allenai.org/olmo
 - Version de LM Studio del modelo base: https://lmstudio.ai/models/allenai/olmo-3-7b-think

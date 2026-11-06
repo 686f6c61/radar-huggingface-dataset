@@ -80,10 +80,10 @@ No se proporcionan cifras de latencia absoluta, throughput (tokens/s) ni resulta
 
 | Modelo | Parámetros | Contexto | Cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bottlecapai/ThinkingCap-Qwen3.8-Flash-Next-GGUF (este) | 179,55 B | No disponible | BF16, Q8_0, Q6_K, Q4_K_M, IQ4_XS + mmproj f16 | Qwen Community License 1.0 | HuggingFace, 1.336 descargas, 14 likes |
-| bottlecapai/ThinkingCap-Qwen3.8-Flash-Next (modelo base del GGUF) | 179,55 B (mismo modelo, sin cuantizar) | No disponible | Pesos sin cuantizar (formato no indicado en la información disponible) | Qwen Community License 1.0 | HuggingFace |
-| unsloth/Qwen3.8-Flash-Next-GGUF (referencia de cuantización) | No disponible | No disponible | GGUF; fuente de la importance matrix y los overrides por tensor usados aquí | No disponible en la información proporcionada | HuggingFace |
-| Qwen/Qwen3.8-Flash-Next (modelo original de Qwen) | No disponible | No disponible | No disponible | Qwen Community License 1.0 (heredada) | HuggingFace |
+| bottlecapai/ThinkingCap-Qwen3.8-Flash-Next-GGUF (este) | 179,55 B | No disponible | BF16, Q8_0, Q6_K, Q4_K_M, IQ4_XS + mmproj f16 | Qwen Community License 1.0 | Hugging Face, 1.336 descargas, 14 likes |
+| bottlecapai/ThinkingCap-Qwen3.8-Flash-Next (modelo base del GGUF) | 179,55 B (mismo modelo, sin cuantizar) | No disponible | Pesos sin cuantizar (formato no indicado en la información disponible) | Qwen Community License 1.0 | Hugging Face |
+| unsloth/Qwen3.8-Flash-Next-GGUF (referencia de cuantización) | No disponible | No disponible | GGUF; fuente de la importance matrix y los overrides por tensor usados aquí | No disponible en la información proporcionada | Hugging Face |
+| Qwen/Qwen3.8-Flash-Next (modelo original de Qwen) | No disponible | No disponible | No disponible | Qwen Community License 1.0 (heredada) | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones de contexto que permitan una comparación de rendimiento con alternativas de la misma categoría; la comparación anterior se limita a linaje, licencia y disponibilidad.
 
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto que perm
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-Flash-Next-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-Flash-Next-GGUF
 - Modelo base del ajuste: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-Flash-Next
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GGUF de referencia para importance matrix y overrides: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF

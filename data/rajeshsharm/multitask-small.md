@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rajeshsharm/multitask-small` es un repositorio de HuggingFace publicado por el usuario rajeshsharm que contiene una implementacion propia de CLIP orientada a tareas multitarea. Segun su model card, se trata de un punto de partida reproducible con configuracion explicita y un checkpoint de inicializacion, no de un modelo entrenado ni de una release validada. El propio autor indica de forma explicita que `model.safetensors` es un checkpoint valido para pruebas de humo (smoke tests) y no un checkpoint con benchmarks publicados.
+`rajeshsharm/multitask-small` es un repositorio de Hugging Face publicado por el usuario rajeshsharm que contiene una implementacion propia de CLIP orientada a tareas multitarea. Segun su model card, se trata de un punto de partida reproducible con configuracion explicita y un checkpoint de inicializacion, no de un modelo entrenado ni de una release validada. El propio autor indica de forma explicita que `model.safetensors` es un checkpoint valido para pruebas de humo (smoke tests) y no un checkpoint con benchmarks publicados.
 
 El dato real extraido del archivo safetensors indica 49.600 parametros totales, una cifra extremadamente reducida que entra en contradiccion con la etiqueta "xlarge" que aparece en la model card. El repositorio ocupa 0,0 GB y no registra descargas ni likes en el momento de la consulta. La licencia declarada es MIT y los tags incluyen `pytorch`, `clip`, `multitask` y `safetensors`.
 
@@ -67,7 +67,7 @@ No es posible establecer una comparativa funcional fiable, porque el repositorio
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rajeshsharm/multitask-small | 49.600 (reportados) | no disponible | sin benchmarks | MIT | repositorio en HuggingFace, sin descargas |
+| rajeshsharm/multitask-small | 49.600 (reportados) | no disponible | sin benchmarks | MIT | repositorio en Hugging Face, sin descargas |
 | CLIP ViT-B/32 (referencia de familia) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | CLIP ViT-L/14 (referencia de familia) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | OpenCLIP (referencia de familia) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -80,7 +80,7 @@ La busqueda web realizada no devolvio ningun resultado relacionado con este mode
 - No ha sido auditado en robustez, equidad ni transferencia de dominio, tal como reconoce el propio autor.
 - Ausencia total de benchmarks, por lo que no se puede estimar calidad ni comparar con alternativas.
 - Contradiccion entre la escala declarada ("xlarge") y los 49.600 parametros del archivo safetensors: no se puede confirmar que la configuracion publicada describa el checkpoint.
-- No hay idiomas declarados, ni longitud de contexto, ni pipeline asignado en la ficha de HuggingFace.
+- No hay idiomas declarados, ni longitud de contexto, ni pipeline asignado en la ficha de Hugging Face.
 - Requiere un adaptador explicito para cargarse con APIs genericas; no es compatible de forma directa con `transformers` sin trabajo adicional.
 - La licencia MIT permite uso comercial del codigo y los pesos, pero el autor advierte de que hay que revisar por separado los terminos de los datasets externos que se utilicen con el repositorio.
 - Riesgo de alucinacion: no evaluable, al no existir un modelo entrenado.
@@ -89,5 +89,5 @@ La busqueda web realizada no devolvio ningun resultado relacionado con este mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rajeshsharm/multitask-small
+- Hugging Face: https://huggingface.co/rajeshsharm/multitask-small
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados devueltos no estaban relacionados con el modelo y se han descartado.

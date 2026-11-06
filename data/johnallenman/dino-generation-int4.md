@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`johnallenman/dino-generation-int4` es un repositorio publicado en HuggingFace por el usuario John Allen que contiene una implementación propia de una arquitectura denominada "Dino" orientada a generación de texto. Según la model card, se trata de un *checkpoint* de inicialización válido para *smoke tests*, no de un modelo entrenado ni evaluado: el autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que los pesos no han sido auditados en robustez, equidad ni transferencia de dominio. El repositorio incluye `inference.py` como artefacto principal, junto con `config.json`, `training_args.json` y `model.safetensors`.
+`johnallenman/dino-generation-int4` es un repositorio publicado en Hugging Face por el usuario John Allen que contiene una implementación propia de una arquitectura denominada "Dino" orientada a generación de texto. Según la model card, se trata de un *checkpoint* de inicialización válido para *smoke tests*, no de un modelo entrenado ni evaluado: el autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que los pesos no han sido auditados en robustez, equidad ni transferencia de dominio. El repositorio incluye `inference.py` como artefacto principal, junto con `config.json`, `training_args.json` y `model.safetensors`.
 
 El dato más relevante para cualquier evaluador es la escala real: el fichero de pesos contiene 16.576 parámetros totales, pese a que la model card etiqueta la configuración como "huge". Esa cifra sitúa al modelo cuatro o cinco órdenes de magnitud por debajo de un transformer de uso práctico y es coherente con un artefacto de prueba de humo, no con un modelo generativo funcional. El tamaño del repositorio es de 0,0 GB y el modelo acumula 0 descargas y 0 likes en el momento de la consulta.
 
@@ -19,10 +19,10 @@ La relevancia ahora es, por tanto, limitada y de carácter instrumental: sirve c
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (`model.safetensors`); artefacto principal `inference.py` |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamaño del repositorio | 0,0 GB |
-| Fecha de creación en HuggingFace | 2026-10-18 |
+| Fecha de creación en Hugging Face | 2026-10-18 |
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| johnallenman/dino-generation-int4 | 16.576 | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace, 0 descargas |
+| johnallenman/dino-generation-int4 | 16.576 | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas de la misma categoría (generación de texto) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la información proporcionada modelos comparables: la búsqueda web devuelve el perfil del autor y su repositorio `johnallenman/generation`, además de material sobre DINO de Meta (facebookresearch/dino), que es un método de aprendizaje autosupervisado para Vision Transformers y no un modelo generativo de texto. Ambos comparten nombre pero resuelven tareas distintas, por lo que no procede una comparación cuantitativa.
@@ -94,7 +94,7 @@ No se han identificado en la información proporcionada modelos comparables: la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/johnallenman/dino-generation-int4
+- Modelo en Hugging Face: https://huggingface.co/johnallenman/dino-generation-int4
 - Perfil del autor: https://huggingface.co/johnallenman
 - Otro repositorio del autor, `generation`: https://huggingface.co/johnallenman/generation
 - DINO de Meta, código de referencia (Vision Transformers autosupervisados, sin relación directa con este modelo): https://github.com/facebookresearch/dino

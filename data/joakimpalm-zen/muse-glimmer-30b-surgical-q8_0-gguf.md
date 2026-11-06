@@ -85,7 +85,7 @@ La comparativa muestra que este artefacto ofrece un equilibrio entre tamano y fi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Joakimpalm-Zen/Muse-Glimmer-30B-Surgical-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Joakimpalm-Zen/Muse-Glimmer-30B-Surgical-Q8_0-GGUF
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - GGUF del modelo base (bartowski): https://huggingface.co/bartowski/Muse-Glimmer-30B-GGUF
 - Motor xyntetik-runner: https://github.com/Joakimpalm-Zen/xyntetik-runner

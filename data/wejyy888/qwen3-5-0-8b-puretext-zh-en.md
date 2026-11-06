@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Qwen3.5-0.8B Pure Text ZH-EN es una derivacion text-only del modelo multimodal Qwen/Qwen3.5-0.8B, publicada por el usuario wejyy888 en HuggingFace. El checkpoint no ha sido reentrenado: se ha obtenido mediante una conversion estructural y una poda de vocabulario. Concretamente, se ha pasado de la clase `Qwen3_5ForConditionalGeneration` a `Qwen3_5ForCausalLM`, se han eliminado los pesos de la torre de vision y del modulo MTP (multi-token prediction), y se han descartado los tokens especiales de vision, grounding, audio y TTS.
+Qwen3.5-0.8B Pure Text ZH-EN es una derivacion text-only del modelo multimodal Qwen/Qwen3.5-0.8B, publicada por el usuario wejyy888 en Hugging Face. El checkpoint no ha sido reentrenado: se ha obtenido mediante una conversion estructural y una poda de vocabulario. Concretamente, se ha pasado de la clase `Qwen3_5ForConditionalGeneration` a `Qwen3_5ForCausalLM`, se han eliminado los pesos de la torre de vision y del modulo MTP (multi-token prediction), y se han descartado los tokens especiales de vision, grounding, audio y TTS.
 
 El cambio mas relevante es la reduccion del vocabulario: de 248.320 filas a 182.684 tokens reales, ampliadas a 182.784 filas para mantener la alineacion. Los IDs del tokenizer se han remapeado y se conserva el fichero `old2new.json` para convertir datasets ya tokenizados. Los pesos de cada token retenido se preservan exactamente igual que en el modelo original.
 
@@ -101,7 +101,7 @@ Los datos de contexto y licencia de los modelos alternativos provienen de sus mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wejyy888/Qwen3.5-0.8B-PureText-ZH-EN
+- Modelo en Hugging Face: https://huggingface.co/wejyy888/Qwen3.5-0.8B-PureText-ZH-EN
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Script de conversion `prune_qwen35_zh_en.py` y mapeo `old2new.json`: incluidos en el repositorio de HuggingFace del modelo
+- Script de conversion `prune_qwen35_zh_en.py` y mapeo `old2new.json`: incluidos en el repositorio de Hugging Face del modelo
 - Paper, blog o demo adicionales: no disponible (la busqueda web no devolvio resultados relacionados con el modelo)

@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La f
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Jhustle44/gemma-3-1b-it-abliterated-mlx-8Bit | 1,3 mil millones | No disponible (base: 32 768) | No disponible | No disponible | safetensors MLX 8-bit | HuggingFace, 0 descargas |
-| google/gemma-3-1b-it | 1,3 mil millones | 32 768 tokens | Mas de 140 | Gemma Terms of Use | safetensors | HuggingFace, oficial |
-| mlabonne/gemma-3-1b-it-abliterated | 1,3 mil millones | No disponible (base: 32 768) | No disponible | No disponible | safetensors | HuggingFace |
-| erichartford/gemma-3-1b-it-abliterated-mlx-8Bit | 1,3 mil millones | No disponible (base: 32 768) | No disponible | No disponible | safetensors MLX 8-bit | HuggingFace |
+| Jhustle44/gemma-3-1b-it-abliterated-mlx-8Bit | 1,3 mil millones | No disponible (base: 32 768) | No disponible | No disponible | safetensors MLX 8-bit | Hugging Face, 0 descargas |
+| google/gemma-3-1b-it | 1,3 mil millones | 32 768 tokens | Mas de 140 | Gemma Terms of Use | safetensors | Hugging Face, oficial |
+| mlabonne/gemma-3-1b-it-abliterated | 1,3 mil millones | No disponible (base: 32 768) | No disponible | No disponible | safetensors | Hugging Face |
+| erichartford/gemma-3-1b-it-abliterated-mlx-8Bit | 1,3 mil millones | No disponible (base: 32 768) | No disponible | No disponible | safetensors MLX 8-bit | Hugging Face |
 
 No se dispone de resultados comparativos de rendimiento entre estas variantes en la información proporcionada.
 
@@ -93,4 +93,4 @@ No se dispone de resultados comparativos de rendimiento entre estas variantes en
 - Modelo original de Google: https://huggingface.co/google/gemma-3-1b-it
 - Librería mlx-lm: https://github.com/ml-explore/mlx-lm
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces listados proceden de la información de HuggingFace y del conocimiento publico del modelo base.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces listados proceden de la información de Hugging Face y del conocimiento publico del modelo base.

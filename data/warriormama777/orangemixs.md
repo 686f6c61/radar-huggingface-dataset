@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OrangeMixs es un repositorio de checkpoints de generacion de imagenes texto-a-imagen distribuidos a traves de HuggingFace por el usuario WarriorMama777. No se trata de un unico modelo, sino de una coleccion de multiples modelos fusionados (merges) construidos sobre la familia Stable Diffusion y pensados para funcionar con interfaces como StableDiffusionWebui:Automatic1111, ademas de ser compatibles con el pipeline `StableDiffusionPipeline` de la libreria diffusers. El repositorio agrupa varias familias con nomenclatura propia: VividOrangeMix (VOM), AbyssOrangeMix3 (AOM3), AbyssOrangeMix2 (AOM2), EerieOrangeMix (EOM/EOM2), AbyssOrangeMix (AOM), ElyOrangeMix (ELOM), BloodOrangeMix (BOM) y ElderOrangeMix.
+OrangeMixs es un repositorio de checkpoints de generacion de imagenes texto-a-imagen distribuidos a traves de Hugging Face por el usuario WarriorMama777. No se trata de un unico modelo, sino de una coleccion de multiples modelos fusionados (merges) construidos sobre la familia Stable Diffusion y pensados para funcionar con interfaces como StableDiffusionWebui:Automatic1111, ademas de ser compatibles con el pipeline `StableDiffusionPipeline` de la libreria diffusers. El repositorio agrupa varias familias con nomenclatura propia: VividOrangeMix (VOM), AbyssOrangeMix3 (AOM3), AbyssOrangeMix2 (AOM2), EerieOrangeMix (EOM/EOM2), AbyssOrangeMix (AOM), ElyOrangeMix (ELOM), BloodOrangeMix (BOM) y ElderOrangeMix.
 
 El objetivo declarado por el autor es doble: facilitar el acceso a modelos habitualmente utilizados en la comunidad japonesa y servir de espacio de publicacion para sus propias fusiones. La relevancia del repositorio radica en su adopcion amplia dentro de la comunidad de generacion de imagenes, reflejada en cifras de interaccion altas (3972 likes, 2220 descargas registradas) y en que sus checkpoints aparecen citados en guias, foros y flujos de trabajo de terceros.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Licencia | Formato | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| OrangeMixs | Familia de merges de Stable Diffusion (text-to-image) | CreativeML OpenRAIL-M | safetensors / diffusers | HuggingFace y Space de Gradio | no disponible |
-| Stable Diffusion (base) | Modelo de difusion latente texto-a-imagen | CreativeML OpenRAIL-M (segun version) | safetensors / diffusers | HuggingFace | no disponible en esta ficha |
-| Otros merges de la comunidad (por ejemplo, PastelMix) | Merges de Stable Diffusion | variable | safetensors | HuggingFace / Civitai | no disponible en esta ficha |
+| OrangeMixs | Familia de merges de Stable Diffusion (text-to-image) | CreativeML OpenRAIL-M | safetensors / diffusers | Hugging Face y Space de Gradio | no disponible |
+| Stable Diffusion (base) | Modelo de difusion latente texto-a-imagen | CreativeML OpenRAIL-M (segun version) | safetensors / diffusers | Hugging Face | no disponible en esta ficha |
+| Otros merges de la comunidad (por ejemplo, PastelMix) | Merges de Stable Diffusion | variable | safetensors | Hugging Face / Civitai | no disponible en esta ficha |
 
 No se dispone de datos de parametros, contexto ni rendimiento comparables extraidos de la informacion proporcionada, por lo que la comparacion se limita a aspectos de tipo, licencia, formato y disponibilidad.
 
@@ -84,7 +84,7 @@ No se dispone de datos de parametros, contexto ni rendimiento comparables extrai
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WarriorMama777/OrangeMixs
+- Repositorio Hugging Face: https://huggingface.co/WarriorMama777/OrangeMixs
 - Discusion del repositorio (archivos): https://huggingface.co/WarriorMama777/OrangeMixs/discussions/14/files
 - Space de Gradio para ejecutar OrangeMixs: https://huggingface.co/spaces/akhaliq/webui-orangemixs
 - Recetas de merges de referencia (/hdg/ Stable Diffusion Models Cookbook): https://rentry.org/hdgrecipes#g-anons-unnamed-mix-e93c3bf7

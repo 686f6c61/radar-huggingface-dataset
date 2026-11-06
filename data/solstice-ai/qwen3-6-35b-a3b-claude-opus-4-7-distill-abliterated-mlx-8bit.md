@@ -79,7 +79,7 @@ La diferencia principal entre estas versiones es el formato de pesos y el tamano
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Solstice-AI/qwen3.6-35b-a3b-claude-opus-4.7-distill-abliterated-mlx-8bit
+- Hugging Face: https://huggingface.co/Solstice-AI/qwen3.6-35b-a3b-claude-opus-4.7-distill-abliterated-mlx-8bit
 - Runtime Anvil (GitHub): https://github.com/Solstice-Labs/anvil
 - Repositorio de la version 5-bit (referencia): https://github.com/anas-khan-antimatter/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-MLX-5bit
 - Modelo base en Ollama: https://ollama.com/huihui_ai/Qwen3.6-abliterated:35b-Claude-4.7

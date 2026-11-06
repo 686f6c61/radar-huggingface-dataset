@@ -6,7 +6,7 @@ Darkhn-Quants-4/Gemma-4-31B-Animus-V15.1-Swa-GGUF es una cuantización en format
 
 La relevancia de esta publicación radica en su formato GGUF, que permite su ejecución en hardware de consumo mediante motores como llama.cpp u Ollama, facilitando el despliegue local de un modelo de roleplay de gran tamaño sin necesidad de infraestructura en la nube. La licencia Apache 2.0 permite uso comercial y modificaciones, aunque el contenido generado puede no ser adecuado para entornos profesionales.
 
-No se dispone de información pública sobre la arquitectura interna, la longitud de contexto, los idiomas soportados ni los detalles del entrenamiento más allá de los metadatos de HuggingFace. El repositorio ocupa 173,2 GB, lo que sugiere la inclusión de múltiples cuantizaciones GGUF.
+No se dispone de información pública sobre la arquitectura interna, la longitud de contexto, los idiomas soportados ni los detalles del entrenamiento más allá de los metadatos de Hugging Face. El repositorio ocupa 173,2 GB, lo que sugiere la inclusión de múltiples cuantizaciones GGUF.
 
 ## Especificaciones tecnicas
 
@@ -72,5 +72,5 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Darkhn-Quants-4/Gemma-4-31B-Animus-V15.1-Swa-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Darkhn-Quants-4/Gemma-4-31B-Animus-V15.1-Swa-GGUF
 - Modelo base (no cuantizado): https://huggingface.co/Darkhn/Gemma-4-31B-Animus-V15.1-Swa

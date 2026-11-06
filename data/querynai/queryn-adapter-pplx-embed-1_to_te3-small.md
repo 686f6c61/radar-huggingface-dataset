@@ -76,7 +76,7 @@ No se dispone de información sobre adaptadores de traducción de embeddings com
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/QuerynAi/queryn-adapter-pplx-embed-1_to_te3-small)
+- [Modelo en Hugging Face](https://huggingface.co/QuerynAi/queryn-adapter-pplx-embed-1_to_te3-small)
 - [Colección de adaptadores de QuerynAi](https://huggingface.co/collections/QuerynAi/queryn-embedding-adapters-6a9499470ee93453d02110b4)
 - [Modelo pplx-embed-v1-4b de Perplexity AI](https://huggingface.co/perplexity-ai/pplx-embed-v1-4b)
 - [Artículo técnico de pplx-embed](https://research.perplexity.ai/articles/pplx-embed-state-of-the-art-embedding-models-for-web-scale-retrieval)

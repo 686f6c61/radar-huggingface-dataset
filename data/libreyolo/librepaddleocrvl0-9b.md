@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LibrePaddleOCRVL0.9b | 958.588.736 | no disponible | Apache 2.0 | HuggingFace (mirror) |
-| PaddlePaddle/PaddleOCR-VL | no disponible en la informacion | no disponible | Apache 2.0 (según upstream) | HuggingFace |
-| PaddlePaddle/PP-DocLayoutV2_safetensors | no disponible en la informacion | no disponible | Apache 2.0 (según upstream) | HuggingFace |
+| LibrePaddleOCRVL0.9b | 958.588.736 | no disponible | Apache 2.0 | Hugging Face (mirror) |
+| PaddlePaddle/PaddleOCR-VL | no disponible en la informacion | no disponible | Apache 2.0 (según upstream) | Hugging Face |
+| PaddlePaddle/PP-DocLayoutV2_safetensors | no disponible en la informacion | no disponible | Apache 2.0 (según upstream) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo ni de otros modelos OCR-VLM de referencia en la información proporcionada.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo ni de otros modelos OCR-VLM de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LibreYOLO/LibrePaddleOCRVL0.9b
+- Repositorio Hugging Face: https://huggingface.co/LibreYOLO/LibrePaddleOCRVL0.9b
 - Modelo base (reconocedor): https://huggingface.co/PaddlePaddle/PaddleOCR-VL
 - Detector de layout: https://huggingface.co/PaddlePaddle/PP-DocLayoutV2_safetensors
 - Commit del reconocedor upstream: `7fa00a8c55b735ba51ba49a9058f3f9c57a99a11`

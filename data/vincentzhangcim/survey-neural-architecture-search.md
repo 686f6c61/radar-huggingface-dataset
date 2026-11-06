@@ -4,9 +4,9 @@
 
 `vincentzhangcim/survey-neural-architecture-search` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre búsqueda de arquitecturas neuronales (NAS). La model card lo describe explícitamente como «a working research note» que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y aclara que no es un artículo terminado ni la publicación de modelos entrenados. El artefacto principal es `paper_notes.md`; el repositorio no incluye código, checkpoints ni resultados experimentales.
 
-El único dato compatible con un modelo es el recuento de parámetros del fichero safetensors: 33.088 parámetros totales, un orden de magnitud incompatible con un transformer utilizable (los modelos más pequeños de la familia habitual rondan los cientos de millones). El repositorio ocupa 0,0 GB y no declara pipeline, idiomas ni tokenizador. Las etiquetas de HuggingFace incluyen `transformer` y `safetensors`, pero la documentación del autor no describe ninguna arquitectura concreta ni proceso de entrenamiento.
+El único dato compatible con un modelo es el recuento de parámetros del fichero safetensors: 33.088 parámetros totales, un orden de magnitud incompatible con un transformer utilizable (los modelos más pequeños de la familia habitual rondan los cientos de millones). El repositorio ocupa 0,0 GB y no declara pipeline, idiomas ni tokenizador. Las etiquetas de Hugging Face incluyen `transformer` y `safetensors`, pero la documentación del autor no describe ninguna arquitectura concreta ni proceso de entrenamiento.
 
-Su relevancia ahora es documental y metodológica: sirve como ejemplo de nota de investigación preregistrada (hipótesis falsable, baselines emparejados, plan de reproducibilidad y modos de fallo) y como caso de estudio sobre cómo los metadatos de HuggingFace pueden sugerir capacidades que el contenido no respalda. No debe evaluarse como un modelo desplegable.
+Su relevancia ahora es documental y metodológica: sirve como ejemplo de nota de investigación preregistrada (hipótesis falsable, baselines emparejados, plan de reproducibilidad y modos de fallo) y como caso de estudio sobre cómo los metadatos de Hugging Face pueden sugerir capacidades que el contenido no respalda. No debe evaluarse como un modelo desplegable.
 
 ## Especificaciones tecnicas
 
@@ -48,7 +48,7 @@ Tampoco hay información de entrenamiento: no se indica número de tokens, compo
 - Plantilla de nota de investigación preregistrada: usar `paper_notes.md` como esqueleto para documentar una hipótesis de NAS antes de ejecutar experimentos, separando explícitamente planes de resultados.
 - Revisión metodológica interna: emplear la estructura de confounders y baselines emparejados como checklist en un equipo que prepara un ablation study sobre búsqueda de arquitecturas.
 - Formación de investigadores junior: leer el repositorio como ejemplo de qué información mínima debe acompañar a una afirmación experimental (versiones de dataset, comandos, semillas, hardware y logs crudos).
-- Auditoría de metadatos en HuggingFace: utilizarlo como caso práctico de repositorio cuyas etiquetas (`transformer`, `safetensors`) no se corresponden con un modelo utilizable, para calibrar filtros automáticos de catálogo.
+- Auditoría de metadatos en Hugging Face: utilizarlo como caso práctico de repositorio cuyas etiquetas (`transformer`, `safetensors`) no se corresponden con un modelo utilizable, para calibrar filtros automáticos de catálogo.
 - Documentación de preguntas abiertas: reutilizar la lista de preguntas abiertas y modos de fallo como punto de partida de una discusión de grupo o de una revisión de literatura sobre NAS.
 - Referencia de citas: la nota recopila referencias del área, útiles como bibliografía inicial para triangular la literatura antes de lanzar una búsqueda sistemática.
 
@@ -74,7 +74,7 @@ No disponible. No se han identificado modelos comparables porque el repositorio 
 | Parametros | 33.088 (no funcionales) | no disponible |
 | Contexto | no disponible | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | publico en HuggingFace, 0 descargas, 0 likes | no disponible |
+| Disponibilidad | publico en Hugging Face, 0 descargas, 0 likes | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ No disponible. No se han identificado modelos comparables porque el repositorio 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vincentzhangcim/survey-neural-architecture-search
+- Repositorio en Hugging Face: https://huggingface.co/vincentzhangcim/survey-neural-architecture-search
 - Artefacto principal de la nota: `paper_notes.md` (dentro del repositorio)
 - Documentación del repositorio: `README.md` (dentro del repositorio)
 - Papers, blogs, repos de código o demos adicionales: no disponible (la búsqueda web no arrojó resultados pertinentes)

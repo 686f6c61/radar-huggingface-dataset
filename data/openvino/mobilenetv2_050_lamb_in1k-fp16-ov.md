@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenVINO/mobilenetv2_050_lamb_in1k-fp16-ov
+- Modelo en Hugging Face: https://huggingface.co/OpenVINO/mobilenetv2_050_lamb_in1k-fp16-ov
 - Modelo original en timm: https://huggingface.co/timm/mobilenetv2_050.lamb_in1k
 - Documentación de OpenVINO: https://docs.openvino.ai/
 - Repositorio de OpenVINO en GitHub: https://github.com/openvinotoolkit/openvino
@@ -89,4 +89,4 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 - OpenVINO Model API: https://github.com/open-edge-platform/model_api
 - Documentación de Model API: https://open-edge-platform.github.io/model_api/latest/
 - Página de Intel sobre OpenVINO: https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/overview.html
-- Organización OpenVINO en HuggingFace: https://huggingface.co/OpenVINO
+- Organización OpenVINO en Hugging Face: https://huggingface.co/OpenVINO

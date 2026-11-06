@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| steveny6/bald-word-lfm2.5-2.6b-benign | LoRA sobre 2.6B | No disponible | lfm1.0 | Gated en HuggingFace | Adaptador de investigación (control benigno) |
+| steveny6/bald-word-lfm2.5-2.6b-benign | LoRA sobre 2.6B | No disponible | lfm1.0 | Gated en Hugging Face | Adaptador de investigación (control benigno) |
 | LiquidAI/LFM2.5-2.6B | 2.6B | No disponible | lfm1.0 | Público | Modelo base sin adaptador |
 | Adaptadores LoRA de investigación comparables | No disponible | No disponible | Variable | Variable | No se dispone de alternativas concretas en la información proporcionada |
 
@@ -73,12 +73,12 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Sesgos: no disponibles; hereda los del modelo base, no evaluados aquí.
 - Riesgo de alucinación: no evaluado en la información proporcionada.
 - Limitaciones de contexto e idioma: no documentadas.
-- Licencia `lfm1.0` (etiquetada como `other`): es necesario revisar los términos antes de cualquier uso comercial; el acceso está restringido y requiere aceptar condiciones en HuggingFace.
+- Licencia `lfm1.0` (etiquetada como `other`): es necesario revisar los términos antes de cualquier uso comercial; el acceso está restringido y requiere aceptar condiciones en Hugging Face.
 - El repositorio tiene muy pocas descargas (22) y ningún "like", lo que indica escasa validación por parte de la comunidad.
 - No se debe asumir que el adaptador "benign" carece de efectos secundarios; conviene auditarlo antes de cualquier uso.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/steveny6/bald-word-lfm2.5-2.6b-benign
+- Hugging Face: https://huggingface.co/steveny6/bald-word-lfm2.5-2.6b-benign
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Paper de referencia: https://arxiv.org/abs/2405.20774

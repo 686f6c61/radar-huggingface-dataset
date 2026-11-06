@@ -81,9 +81,9 @@ Los datos de entrenamiento consisten en 128 cortes de resonancia (posiciones 1-1
 
 | Modelo | Parametros | Contexto | Tarea | IoU medio (holdout) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| parallax-brain-loc-v2 | 2B (4-bit) + LoRA r16 | no disponible | Localizacion de tumor en RM | 0.553 | Apache 2.0 | HuggingFace (MLX) |
-| parallax-brain-loc-n1024 | 2B (4-bit) + LoRA | no disponible | Localizacion de tumor en RM | no disponible (checkpoint seleccionado) | Apache 2.0 | HuggingFace (MLX) |
-| Qwen3-VL-2B-Instruct-4bit (sin ajuste) | 2B (4-bit) | no disponible | Vision-lenguaje general | 0.227 | Apache 2.0 | HuggingFace (MLX) |
+| parallax-brain-loc-v2 | 2B (4-bit) + LoRA r16 | no disponible | Localizacion de tumor en RM | 0.553 | Apache 2.0 | Hugging Face (MLX) |
+| parallax-brain-loc-n1024 | 2B (4-bit) + LoRA | no disponible | Localizacion de tumor en RM | no disponible (checkpoint seleccionado) | Apache 2.0 | Hugging Face (MLX) |
+| Qwen3-VL-2B-Instruct-4bit (sin ajuste) | 2B (4-bit) | no disponible | Vision-lenguaje general | 0.227 | Apache 2.0 | Hugging Face (MLX) |
 | Gemini 4 (prompting estructurado) | no disponible | no disponible | Vision-lenguaje general | 0.780 | propietaria | API |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ Los datos de entrenamiento consisten en 128 cortes de resonancia (posiciones 1-1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tbaumgauntlet/parallax-brain-loc-v2
+- Modelo en Hugging Face: https://huggingface.co/tbaumgauntlet/parallax-brain-loc-v2
 - Checkpoint seleccionado: https://huggingface.co/tbaumgauntlet/parallax-brain-loc-n1024
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-VL-2B-Instruct-4bit
 - Modelo base upstream: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct

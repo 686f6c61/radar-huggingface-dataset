@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | WER (test clinico) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MedWhisper Large ITA | 808,9 M | no disponible (segmentos de 30 s) | 4,5 % | AGPL-3.0 | HuggingFace |
-| Whisper Large v3 Turbo | 809 M | no disponible (segmentos de 30 s) | 7,9 % | MIT (modelo base de OpenAI) | HuggingFace |
-| Whisper Large v3 | 1.550 M | no disponible (segmentos de 30 s) | no evaluado en este test | MIT | HuggingFace |
+| MedWhisper Large ITA | 808,9 M | no disponible (segmentos de 30 s) | 4,5 % | AGPL-3.0 | Hugging Face |
+| Whisper Large v3 Turbo | 809 M | no disponible (segmentos de 30 s) | 7,9 % | MIT (modelo base de OpenAI) | Hugging Face |
+| Whisper Large v3 | 1.550 M | no disponible (segmentos de 30 s) | no evaluado en este test | MIT | Hugging Face |
 
 La comparativa se limita al modelo base y a la variante grande de Whisper, ya que no se dispone de datos de otros modelos ASR especializados en italiano clinico en la informacion proporcionada.
 
@@ -95,7 +95,7 @@ La comparativa se limita al modelo base y a la variante grande de Whisper, ya qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ReportAId/medwhisper-large-v3-ita
+- Modelo en Hugging Face: https://huggingface.co/ReportAId/medwhisper-large-v3-ita
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Sitio del desarrollador: https://reportaid.ai/
 - Documentacion sobre WER: https://en.wikipedia.org/wiki/Word_error_rate

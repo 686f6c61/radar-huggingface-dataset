@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`casas-keras-exportar-savedmodel-tflite` es un repositorio de HuggingFace publicado por el usuario `amandaodoo` que contiene un modelo de regresión lineal entrenado con Keras y exportado en dos formatos: SavedModel de TensorFlow y TFLite. No se trata de un modelo de lenguaje ni de un transformer, sino de un ejemplo educativo de pipeline de machine learning tabular orientado a la predicción de precios de viviendas (a partir del nombre del repositorio, "casas").
+`casas-keras-exportar-savedmodel-tflite` es un repositorio de Hugging Face publicado por el usuario `amandaodoo` que contiene un modelo de regresión lineal entrenado con Keras y exportado en dos formatos: SavedModel de TensorFlow y TFLite. No se trata de un modelo de lenguaje ni de un transformer, sino de un ejemplo educativo de pipeline de machine learning tabular orientado a la predicción de precios de viviendas (a partir del nombre del repositorio, "casas").
 
 El repositorio forma parte de una serie de ejemplos didácticos (la model card menciona una carpeta previa `keras-entrenamiento-evaluacion` de la que este modelo es la continuación) cuyo objetivo es demostrar el flujo completo de exportación y recarga de modelos en TensorFlow: entrenar, exportar a SavedModel y TFLite, y volver a cargar para predecir. Es relevante para desarrolladores que quieran entender cómo empaquetar modelos Keras para despliegue en servidor (SavedModel) o en dispositivos móviles (TFLite), no por su capacidad predictiva.
 
@@ -73,5 +73,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amandaodoo/casas-keras-exportar-savedmodel-tflite
+- Modelo en Hugging Face: https://huggingface.co/amandaodoo/casas-keras-exportar-savedmodel-tflite
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

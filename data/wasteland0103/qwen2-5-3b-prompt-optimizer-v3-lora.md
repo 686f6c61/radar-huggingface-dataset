@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-3B Prompt Optimizer v3 (este) | 3B base + LoRA | no disponible (entrenado a 2048) | Optimizacion de prompts en coreano | qwen-research | HuggingFace (0 descargas) |
-| Qwen2.5-3B-Instruct | 3B | 32K (segun el modelo base) | Instrucciones generales | qwen-research | HuggingFace |
-| Qwen2.5-7B-Instruct | 7B | 32K (segun el modelo base) | Instrucciones generales | qwen-research | HuggingFace |
+| Qwen2.5-3B Prompt Optimizer v3 (este) | 3B base + LoRA | no disponible (entrenado a 2048) | Optimizacion de prompts en coreano | qwen-research | Hugging Face (0 descargas) |
+| Qwen2.5-3B-Instruct | 3B | 32K (segun el modelo base) | Instrucciones generales | qwen-research | Hugging Face |
+| Qwen2.5-7B-Instruct | 7B | 32K (segun el modelo base) | Instrucciones generales | qwen-research | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo del adaptador frente a estas alternativas. La comparacion se limita a tamano, contexto y licencia.
 
@@ -90,6 +90,6 @@ No se dispone de datos de rendimiento comparativo del adaptador frente a estas a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wasteland0103/qwen2.5-3b-prompt-optimizer-v3-lora
+- Modelo en Hugging Face: https://huggingface.co/Wasteland0103/qwen2.5-3b-prompt-optimizer-v3-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

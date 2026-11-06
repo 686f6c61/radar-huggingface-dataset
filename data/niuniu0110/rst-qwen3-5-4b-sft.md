@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `NiuNiu0110/rst-qwen3.5-4b-sft` | 4,66 mil millones | No disponible | Sin benchmarks | Apache-2.0 | HuggingFace |
-| `Qwen/Qwen3.5-4B` (modelo base) | 4,66 mil millones | No disponible | No disponible | Apache-2.0 | HuggingFace |
+| `NiuNiu0110/rst-qwen3.5-4b-sft` | 4,66 mil millones | No disponible | Sin benchmarks | Apache-2.0 | Hugging Face |
+| `Qwen/Qwen3.5-4B` (modelo base) | 4,66 mil millones | No disponible | No disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de otros modelos comparables en la información proporcionada, por lo que la comparativa se limita al modelo base.
 
@@ -71,11 +71,11 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 - Los idiomas soportados no están documentados, y no se puede asumir cobertura multilingüe.
 - El proceso de exportación es complejo y requiere verificación externa; aunque se confirmó que los pesos de texto se movieron, no hay garantías de que el checkpoint final se comporte de forma consistente en todos los entornos.
 - La licencia Apache-2.0 permite uso comercial, pero al no haber validación, no se recomienda su uso en producción sin una evaluación previa.
-- El repositorio de HuggingFace no muestra descargas ni likes, lo que refuerza su carácter experimental y no probado.
+- El repositorio de Hugging Face no muestra descargas ni likes, lo que refuerza su carácter experimental y no probado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NiuNiu0110/rst-qwen3.5-4b-sft
+- Modelo en Hugging Face: https://huggingface.co/NiuNiu0110/rst-qwen3.5-4b-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/NiuNiu0110/RST-SFT-Qwen3.5-27B
 - Repositorio de entrenamiento (referencia en la model card): https://github.com/k1ssloo/RST-Train

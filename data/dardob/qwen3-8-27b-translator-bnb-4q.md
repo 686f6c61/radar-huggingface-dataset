@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dardob/Qwen3.8-27B-translator-bnb-4q` es un repositorio publicado en HuggingFace por el usuario `dardob` el 13 de septiembre de 2026. En el momento de redactar esta ficha no existe información publicada sobre el modelo: no hay model card, no se declara licencia, no se especifican idiomas ni pipeline, y el repositorio acumula 0 descargas y 1 like. El único metadato disponible es el identificador del repositorio y la etiqueta `region:us`.
+`dardob/Qwen3.8-27B-translator-bnb-4q` es un repositorio publicado en Hugging Face por el usuario `dardob` el 13 de septiembre de 2026. En el momento de redactar esta ficha no existe información publicada sobre el modelo: no hay model card, no se declara licencia, no se especifican idiomas ni pipeline, y el repositorio acumula 0 descargas y 1 like. El único metadato disponible es el identificador del repositorio y la etiqueta `region:us`.
 
 El identificador sugiere, sin que exista confirmación oficial, que se trata de una cuantización de 4 bits con bitsandbytes (sufijo `bnb-4q`) de un modelo orientado a traducción (sufijo `translator`), presumiblemente derivado de la familia Qwen3. La nomenclatura "27B" apunta a un tamaño en el entorno de los 27.000 millones de parámetros, pero este dato no está verificado en ninguna fuente y debe tratarse como no confirmado.
 
@@ -26,7 +26,7 @@ La relevancia de esta ficha es, por tanto, limitada y de carácter fundamentalme
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura del modelo en el repositorio de HuggingFace. No hay model card, ni ficha técnica, ni enlaces a paper, blog o repositorio de código. La búsqueda web realizada no arrojó resultados relativos a este modelo ni a su autor.
+No se ha publicado ninguna información sobre la arquitectura del modelo en el repositorio de Hugging Face. No hay model card, ni ficha técnica, ni enlaces a paper, blog o repositorio de código. La búsqueda web realizada no arrojó resultados relativos a este modelo ni a su autor.
 
 El único indicio disponible es el propio identificador. El segmento `bnb-4q` es coherente con la convención habitual de nombres para cuantizaciones de 4 bits generadas con la librería bitsandbytes, y el segmento `translator` apunta a un ajuste fino orientado a traducción automática. El segmento `Qwen3.8-27B` es ambiguo: podría interpretarse como un modelo de la serie Qwen3 con 27.000 millones de parámetros, o como una variante intermedia dentro de una familia concreta. En ausencia de confirmación, no es posible afirmar nada sobre datos de entrenamiento, número de tokens, composición del dataset, uso de RLHF o DPO, ni sobre innovaciones técnicas como decodificación especulativa o mecanismos de atención alternativa.
 
@@ -76,7 +76,7 @@ No es posible elaborar una comparativa rigurosa: se desconoce el modelo base exa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| dardob/Qwen3.8-27B-translator-bnb-4q | no disponible | no disponible | no disponible | HuggingFace, 0 descargas | Sin model card |
+| dardob/Qwen3.8-27B-translator-bnb-4q | no disponible | no disponible | no disponible | Hugging Face, 0 descargas | Sin model card |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se pueden identificar alternativas sin conocer el modelo base |
 
 ## Limitaciones y advertencias
@@ -93,6 +93,6 @@ No es posible elaborar una comparativa rigurosa: se desconoce el modelo base exa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dardob/Qwen3.8-27B-translator-bnb-4q
-- Perfil del autor en HuggingFace: https://huggingface.co/dardob
+- Repositorio en Hugging Face: https://huggingface.co/dardob/Qwen3.8-27B-translator-bnb-4q
+- Perfil del autor en Hugging Face: https://huggingface.co/dardob
 - Paper, blog, repositorio de código o demo: no disponible. La búsqueda web no devolvió resultados relevantes para este modelo.

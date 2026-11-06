@@ -66,7 +66,7 @@ Estos valores sitúan al modelo ligeramente por encima del azar en varias tareas
 
 - Inferencia: con 113M parámetros, el modelo en FP32 ocupa aproximadamente 452 MB, en BF16/FP16 unos 226 MB y en int8 unos 113 MB. Cabe en cualquier GPU con al menos 1 GB de VRAM (p. ej., NVIDIA GTX 1050, RTX 3050, incluso en CPU con llama.cpp).
 - Entrenamiento: el autor reporta un uso medio de VRAM de 17.0 GiB en una RTX 5090, con un 97.7% de utilización de cómputo. Esto sugiere que se puede entrenar en GPUs con 16-24 GB de VRAM (RTX 4090, A100, etc.) ajustando el tamaño de lote.
-- Despliegue: al ser un modelo estándar de HuggingFace, es compatible con `transformers`, `vLLM`, `llama.cpp` (si se convierte a GGUF) y `Ollama`. No se proporcionan datos de latencia o throughput en inferencia, pero dado su tamaño, es esperable una generación de cientos de tokens por segundo en GPUs modernas.
+- Despliegue: al ser un modelo estándar de Hugging Face, es compatible con `transformers`, `vLLM`, `llama.cpp` (si se convierte a GGUF) y `Ollama`. No se proporcionan datos de latencia o throughput en inferencia, pero dado su tamaño, es esperable una generación de cientos de tokens por segundo en GPUs modernas.
 - Opciones de cuantización: no se publican versiones cuantizadas, pero se pueden generar con herramientas como `bitsandbytes` o `llama.cpp` a partir de los pesos safetensors.
 
 ## Comparativa con modelos similares
@@ -95,7 +95,7 @@ Ultron-113M incorpora técnicas más modernas que GPT-2 (GQA, SwiGLU, optimizado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaipkapoor99/ultron-113m
+- Modelo en Hugging Face: https://huggingface.co/jaipkapoor99/ultron-113m
 - Repositorio GitHub: https://github.com/jaipkapoor99/ultron
 - Versión instruct: https://huggingface.co/jaipkapoor99/ultron-113m-instruct
 - Shards de datos pre-tokenizados: https://huggingface.co/datasets/jaipkapoor99/ultron-fineweb-edu-shards

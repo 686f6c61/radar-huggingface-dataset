@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento para comparar cuantitativamente con altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/StillDeadcode/minicpm5-2b-bf16
+- Hugging Face: https://huggingface.co/StillDeadcode/minicpm5-2b-bf16
 - Version FP8: https://huggingface.co/StillDeadcode/minicpm5-2b-fp8
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Borrador de decodificacion especulativa: https://huggingface.co/openbmb/MiniCPM5-2B-DSpark

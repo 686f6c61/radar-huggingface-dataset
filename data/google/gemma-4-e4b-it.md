@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM mínima: 8 GB según fuentes de la comunidad (gemma4.dev). Con cuantización de 4 bits podría reducirse a ~6 GB, aunque no hay datos oficiales.
 - GPUs recomendadas: RTX 3060/4060 (12 GB), RTX 4070/4080, RTX 4090, o GPUs de datacenter como A10/A100 si se requiere mayor throughput.
 - Compatibilidad con GPUs de consumo: sí, es el objetivo principal del modelo. También puede ejecutarse en Apple Silicon (M1/M2/M3) con suficiente RAM unificada.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference), y transformers nativo de HuggingFace. Al ser compatible con endpoints, también se puede desplegar en SageMaker o Azure.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference), y transformers nativo de Hugging Face. Al ser compatible con endpoints, también se puede desplegar en SageMaker o Azure.
 - Latencia y throughput: no disponible. La decodificación especulativa debería mejorar la velocidad respecto a modelos densos de tamaño similar, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ La comparativa es estructural, ya que no se dispone de benchmarks comparativos. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/google/gemma-4-E4B-it
+- Hugging Face: https://huggingface.co/google/gemma-4-E4B-it
 - Model card de Google AI: https://ai.google.dev/gemma/docs/core/model_card_4
 - Documentación de Gemma 4: https://ai.google.dev/gemma/docs/core
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/

@@ -77,6 +77,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/J0nasW/sciembed-ctx-8192
+- Modelo en Hugging Face: https://huggingface.co/J0nasW/sciembed-ctx-8192
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - Paper: *SciEmbed: Citation-Context Supervision for Scientific Document Embeddings*, Findings of EMNLP 2026 (no se dispone de URL publica en la informacion proporcionada).

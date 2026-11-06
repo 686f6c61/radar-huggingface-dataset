@@ -80,7 +80,7 @@ Nota: la comparativa se limita a los modelos de la misma familia; no se dispone 
 
 ## Enlaces
 
-- [SwissNeuron/Qwen3.8-27B-SwissNeuron-Derisked-FP8 (HuggingFace)](https://huggingface.co/SwissNeuron/Qwen3.8-27B-SwissNeuron-Derisked-FP8)
+- [SwissNeuron/Qwen3.8-27B-SwissNeuron-Derisked-FP8 (Hugging Face)](https://huggingface.co/SwissNeuron/Qwen3.8-27B-SwissNeuron-Derisked-FP8)
 - [SwissNeuron/Qwen3.8-27B-SwissNeuron-Derisked (modelo base BF16)](https://huggingface.co/SwissNeuron/Qwen3.8-27B-SwissNeuron-Derisked)
 - [Qwen/Qwen3.8-27B (modelo original de Qwen)](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Qwen3.8-27B - vLLM Recipes](https://recipes.vllm.ai/Qwen/Qwen3.8-27B)

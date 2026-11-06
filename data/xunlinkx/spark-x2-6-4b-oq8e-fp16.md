@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento ni de modelos de terceros comparables en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xunlinkx/Spark-X2.6-4B-oQ8e-fp16
+- Repositorio Hugging Face: https://huggingface.co/xunlinkx/Spark-X2.6-4B-oQ8e-fp16
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Proyecto oficial Spark-X2.6: https://github.com/XHToken/Spark-X2.6
 - Licencia upstream: https://huggingface.co/XHToken/Spark-X2.6-4B/blob/main/LICENSE

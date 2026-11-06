@@ -77,8 +77,8 @@ No se dispone de comparativas de rendimiento numérico entre estos modelos, ya q
 
 ## Enlaces
 
-- Repositorio HuggingFace (versión estática): https://huggingface.co/mradermacher/Al-Khwarizmi-3B-GGUF
+- Repositorio Hugging Face (versión estática): https://huggingface.co/mradermacher/Al-Khwarizmi-3B-GGUF
 - Modelo original (mzoelfakar): https://huggingface.co/mzoelfakar/Al-Khwarizmi-3B
 - Versión i1-GGUF (con imatrix): https://huggingface.co/mradermacher/Al-Khwarizmi-3B-i1-GGUF
-- Perfil de mradermacher en HuggingFace: https://huggingface.co/mradermacher/models
+- Perfil de mradermacher en Hugging Face: https://huggingface.co/mradermacher/models
 - Página de modelos de mradermacher (tercero): https://www.aimodels.fyi/creators/huggingFace/mradermacher

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gender4-whole-image-5class es un clasificador de imagenes publicado por el usuario haichteque en HuggingFace. Se distribuye como un unico grafo ONNX (`model.onnx`) construido sobre una red MobileNetV2 que recibe la imagen completa (no un recorte de cara) a 256x256 pixeles y devuelve cinco clases mutuamente excluyentes: `real_male`, `real_female`, `anime_male`, `anime_female` y `other`. La clase `other` agrupa contenido sin personas: objetos, animales y paisajes.
+gender4-whole-image-5class es un clasificador de imagenes publicado por el usuario haichteque en Hugging Face. Se distribuye como un unico grafo ONNX (`model.onnx`) construido sobre una red MobileNetV2 que recibe la imagen completa (no un recorte de cara) a 256x256 pixeles y devuelve cinco clases mutuamente excluyentes: `real_male`, `real_female`, `anime_male`, `anime_female` y `other`. La clase `other` agrupa contenido sin personas: objetos, animales y paisajes.
 
 El modelo resuelve una tarea muy concreta de vision por computador: distinguir simultaneamente genero percibido y estilo visual (fotografia real frente a ilustracion tipo anime), ademas de descartar imagenes que no contienen personas. Esto lo hace util como etapa de enrutado o de etiquetado automatico dentro de pipelines de vision mas grandes, donde interesa filtrar o separar imagenes antes de aplicar modelos mas costosos.
 
@@ -78,7 +78,7 @@ No se ha identificado en la informacion disponible ningun modelo directamente co
 
 | Modelo | Parametros (aprox.) | Entrada tipica | Licencia | Disponibilidad | Rendimiento en esta tarea |
 |---|---|---|---|---|---|
-| gender4-whole-image-5class (MobileNetV2) | 2,2-3,5 M (estimado, no confirmado) | 256x256 RGB | no disponible | ONNX en HuggingFace, 0 descargas | 96,1% accuracy segun el autor |
+| gender4-whole-image-5class (MobileNetV2) | 2,2-3,5 M (estimado, no confirmado) | 256x256 RGB | no disponible | ONNX en Hugging Face, 0 descargas | 96,1% accuracy segun el autor |
 | MobileNetV3-Large | ~5,4 M | 224x224 RGB | Apache 2.0 (implementaciones de referencia) | Amplia, multiples repositorios | no disponible |
 | EfficientNet-B0 | ~5,3 M | 224x224 RGB | Apache 2.0 (implementacion de referencia) | Amplia | no disponible |
 | ResNet-18 | ~11,7 M | 224x224 RGB | Permisiva en implementaciones de referencia | Amplia | no disponible |
@@ -101,7 +101,7 @@ Como referencia de categoria, para el etiquetado de ilustraciones y anime existe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haichteque/gender4-whole-image-5class
+- Modelo en Hugging Face: https://huggingface.co/haichteque/gender4-whole-image-5class
 - Archivo de pesos: https://huggingface.co/haichteque/gender4-whole-image-5class/blob/main/model.onnx
 - Orden de etiquetas: https://huggingface.co/haichteque/gender4-whole-image-5class/blob/main/labels.json
 - Metricas de validacion: https://huggingface.co/haichteque/gender4-whole-image-5class/blob/main/metrics.json

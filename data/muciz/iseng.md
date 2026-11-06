@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`muciz/iseng` es un modelo publicado en HuggingFace por el usuario `muciz` con el identificador `iseng`. Segun los metadatos disponibles, se trata de un modelo de aproximadamente 7.115 millones de parametros (7,1 B) distribuido en formato GGUF, con un tamano de repositorio de 137,6 GB, lo que sugiere la presencia de multiples cuantizaciones o variantes de pesos en el mismo repositorio. La model card es extremadamente escueta y se limita a indicar que la publicacion tiene como unico proposito pruebas personales, motivada por la lentitud de descarga desde CIVITAi.
+`muciz/iseng` es un modelo publicado en Hugging Face por el usuario `muciz` con el identificador `iseng`. Segun los metadatos disponibles, se trata de un modelo de aproximadamente 7.115 millones de parametros (7,1 B) distribuido en formato GGUF, con un tamano de repositorio de 137,6 GB, lo que sugiere la presencia de multiples cuantizaciones o variantes de pesos en el mismo repositorio. La model card es extremadamente escueta y se limita a indicar que la publicacion tiene como unico proposito pruebas personales, motivada por la lentitud de descarga desde CIVITAi.
 
 No se dispone de informacion sobre arquitectura, datos de entrenamiento, licencia, idiomas soportados ni resultados de benchmarks. El repositorio no declara pipeline de inferencia, no tiene likes y acumula un numero muy reducido de descargas (4 en el momento de la consulta), lo que apunta a un artefacto de uso privado o experimental mas que a un modelo pensado para adopcion general. A pesar de la falta de documentacion, el hecho de que exista un checkpoint de 7,1 B en GGUF es relevante para quien busque replicar exactamente ese artefacto, pero no permite recomendarlo como modelo de produccion.
 
@@ -23,7 +23,7 @@ Dado que la informacion publica es minima, esta ficha se limita a reflejar lo qu
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. El unico dato estructural verificable es el numero de parametros (7.115.124.736, segun el campo de safetensors del repositorio), compatible con un transformer denso de escala 7 B, pero la organizacion de capas, el tipo de atencion, la tokenizacion y la posible presencia de componentes adicionales no estan documentados.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. El unico dato estructural verificable es el numero de parametros (7.115.124.736, segun el campo de safetensors del repositorio), compatible con un transformer denso de escala 7 B, pero la organizacion de capas, el tipo de atencion, la tokenizacion y la posible presencia de componentes adicionales no estan documentados.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset, ni sobre si se aplicaron tecnicas de alineacion como RLHF, DPO o instruccion supervisada. La model card unicamente menciona que el modelo se publica para pruebas personales y que su origen esta en una descarga desde CIVITAi, sin detallar el proceso de conversion a GGUF ni las herramientas empleadas. Cualquier afirmacion sobre innovaciones tecnicas (decodificacion especulativa, atencion lineal, mezcla de expertos) seria especulativa y, por tanto, se omite.
 
@@ -44,7 +44,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesad
 - Pruebas de integracion en pipelines de inferencia: permite validar el soporte de un runtime (por ejemplo, llama.cpp) con un checkpoint de 7,1 B antes de adoptar un modelo documentado.
 - Analisis forense de pesos: investigadores pueden inspeccionar el GGUF para determinar arquitectura, tokenizador y posibles linajes a partir de los metadatos internos del fichero.
 - Benchmarking interno de hardware: sirve como carga de trabajo de 7 B para medir throughput y latencia en GPUs concretas, siempre que se acepte la ausencia de documentacion.
-- Uso educativo: ejemplo de publicacion minima en HuggingFace para estudiar que metadatos son obligatorios y cuales conviene anadir en una model card.
+- Uso educativo: ejemplo de publicacion minima en Hugging Face para estudiar que metadatos son obligatorios y cuales conviene anadir en una model card.
 - No se recomienda su uso en atencion al cliente, generacion de codigo en produccion ni aplicaciones con requisitos de licencia claros, al no existir informacion que lo respalde.
 
 ## Benchmarks y rendimiento
@@ -85,5 +85,5 @@ La comparacion con `muciz/iseng` es meramente dimensional; no se dispone de dato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/muciz/iseng
+- Hugging Face: https://huggingface.co/muciz/iseng
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

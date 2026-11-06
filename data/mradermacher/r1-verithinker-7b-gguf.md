@@ -25,14 +25,14 @@ Esta ficha cubre la versión GGUF, que incluye cuantizaciones estáticas Q2_K ha
 
 La arquitectura es un transformer decoder-only estándar de aproximadamente 7,6 mil millones de parámetros, heredada de la familia Qwen2.5-7B a través de DeepSeek-R1-Distill-Qwen-7B. No emplea mezcla de expertos (MoE), atención lineal ni arquitecturas híbridas SSM; es un transformer denso convencional. El modelo original se ha afinado (fine-tuning) sobre el dataset Zigeng/CoT-Veirification-340k, un conjunto de 340.000 ejemplos orientado a la verificación de cadenas de razonamiento. No se dispone de información sobre el número total de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron etapas de RLHF o DPO.
 
-La innovación principal no está en la arquitectura sino en la tarea: el modelo está especializado en evaluar la validez de pasos intermedios de razonamiento (chain-of-thought), lo que lo convierte en un componente de verificación para sistemas que generan razonamiento explícito. La versión GGUF de mradermacher aplica cuantización estática (quantize_version 2, output_tensor_quantised 1, convert_type hf) sobre los pesos en formato HuggingFace. No se documentan técnicas como decodificación especulativa ni atención lineal.
+La innovación principal no está en la arquitectura sino en la tarea: el modelo está especializado en evaluar la validez de pasos intermedios de razonamiento (chain-of-thought), lo que lo convierte en un componente de verificación para sistemas que generan razonamiento explícito. La versión GGUF de mradermacher aplica cuantización estática (quantize_version 2, output_tensor_quantised 1, convert_type hf) sobre los pesos en formato Hugging Face. No se documentan técnicas como decodificación especulativa ni atención lineal.
 
 ## Capacidades
 
 - Generación de texto y razonamiento en inglés, con especialización en verificación de cadenas de razonamiento (chain-of-thought verification).
 - Evaluación de la corrección de pasos intermedios de razonamiento generados por otros modelos.
 - Razonamiento multi-paso orientado a la verificación (el modelo base es un distill de R1, con capacidad de razonamiento explícito).
-- Conversación multi-turno (tag `conversational` en HuggingFace).
+- Conversación multi-turno (tag `conversational` en Hugging Face).
 - Compatibilidad con endpoints (tag `endpoints_compatible`).
 - No se documenta soporte de tool calling / function calling.
 - No se documenta soporte de agentes ni de visión, audio u otras modalidades.

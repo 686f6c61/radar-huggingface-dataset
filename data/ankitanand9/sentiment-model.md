@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sentiment-model es un modelo de clasificacion de texto (analisis de sentimiento) publicado por el usuario ankitanand9 en HuggingFace. Se trata de un ajuste fino (fine-tuning) de distilbert-base-uncased, la version destilada de BERT-base desarrollada por Hugging Face, sobre un conjunto de datos que el autor no documenta en la model card ("an unknown dataset"). El modelo tiene 66.955.779 parametros reales segun los pesos en safetensors y el repositorio ocupa 0,3 GB.
+sentiment-model es un modelo de clasificacion de texto (analisis de sentimiento) publicado por el usuario ankitanand9 en Hugging Face. Se trata de un ajuste fino (fine-tuning) de distilbert-base-uncased, la version destilada de BERT-base desarrollada por Hugging Face, sobre un conjunto de datos que el autor no documenta en la model card ("an unknown dataset"). El modelo tiene 66.955.779 parametros reales segun los pesos en safetensors y el repositorio ocupa 0,3 GB.
 
 Tecnicamente es un encoder transformer de 6 capas orientado exclusivamente a clasificacion de secuencias, no a generacion de texto. El autor reporta en el conjunto de evaluacion una perdida de 0,7470, una exactitud de 0,6598 y un F1 ponderado y macro de 0,6493, resultados modestos que apuntan a un entrenamiento corto (3 epocas, 174 pasos totales) sobre un corpus pequeno y sin documentar.
 
@@ -93,10 +93,10 @@ La mejor metrica de validacion se obtiene en la epoca 2 (accuracy 0,6975); la ep
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| ankitanand9/sentiment-model | 66,9 M | 512 tokens | apache-2.0 | Accuracy 0,6598 / F1 macro 0,6493 en un conjunto de evaluacion no identificado | HuggingFace, 0 descargas |
-| distilbert-base-uncased-finetuned-sst-2-english | 67 M | 512 tokens | apache-2.0 | 0,913 de accuracy en SST-2 dev (referencia de la model card oficial de Hugging Face; no verificado en esta ficha y evaluado en otro conjunto) | HuggingFace, ampliamente utilizado |
-| cardiffnlp/twitter-roberta-base-sentiment-latest | 125 M | 514 tokens | apache-2.0 | Optimizado para sentimiento en redes sociales en ingles; cifras concretas no verificadas en esta ficha | HuggingFace, muy utilizado |
-| bert-base-uncased (ajustado para clasificacion) | 110 M | 512 tokens | apache-2.0 | Referencia de mayor capacidad que su version destilada; resultados dependen del ajuste | HuggingFace |
+| ankitanand9/sentiment-model | 66,9 M | 512 tokens | apache-2.0 | Accuracy 0,6598 / F1 macro 0,6493 en un conjunto de evaluacion no identificado | Hugging Face, 0 descargas |
+| distilbert-base-uncased-finetuned-sst-2-english | 67 M | 512 tokens | apache-2.0 | 0,913 de accuracy en SST-2 dev (referencia de la model card oficial de Hugging Face; no verificado en esta ficha y evaluado en otro conjunto) | Hugging Face, ampliamente utilizado |
+| cardiffnlp/twitter-roberta-base-sentiment-latest | 125 M | 514 tokens | apache-2.0 | Optimizado para sentimiento en redes sociales en ingles; cifras concretas no verificadas en esta ficha | Hugging Face, muy utilizado |
+| bert-base-uncased (ajustado para clasificacion) | 110 M | 512 tokens | apache-2.0 | Referencia de mayor capacidad que su version destilada; resultados dependen del ajuste | Hugging Face |
 
 Nota metodologica: las cifras de rendimiento de los modelos alternativos proceden de sus respectivas model cards publicas y corresponden a conjuntos de evaluacion distintos (por ejemplo SST-2), por lo que no son directamente comparables con el 0,6598 reportado aqui, medido sobre un conjunto sin identificar.
 
@@ -115,7 +115,7 @@ Nota metodologica: las cifras de rendimiento de los modelos alternativos procede
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ankitanand9/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/ankitanand9/sentiment-model
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Paper de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805

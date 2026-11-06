@@ -91,5 +91,5 @@ No disponible. No se dispone de datos de parametros, contexto, rendimiento ni li
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-8740edf636e7a062-188bb7476dcf
+- Hugging Face: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-8740edf636e7a062-188bb7476dcf
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

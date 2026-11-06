@@ -4,7 +4,7 @@
 
 El modelo `NetherQuartz/ilo-toki-1.5-MiLMMT-46-1b` es un ajuste fino (fine-tune) del modelo base `xiaomi-research/MiLMMT-46-1B-v0.1`, desarrollado por el usuario NetherQuartz. El nombre "ilo-toki" hace referencia a la lengua construida Toki Pona, y el proyecto del autor se centra en la traducción automática hacia y desde este idioma. El modelo base de Xiaomi es un modelo de traducción multilingüe de 46 idiomas con 1.000 millones de parámetros, por lo que este ajuste se orienta a mejorar su rendimiento específicamente en tareas relacionadas con Toki Pona.
 
-El modelo se ha entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace, sobre el checkpoint de Xiaomi. Con un tamaño de repositorio de solo 0,2 GB, es un modelo ligero que puede ejecutarse en hardware de consumo. Su relevancia radica en ofrecer una opción especializada para traducción y generación de texto en Toki Pona, un nicho con pocos recursos disponibles en el ecosistema de modelos abiertos.
+El modelo se ha entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face, sobre el checkpoint de Xiaomi. Con un tamaño de repositorio de solo 0,2 GB, es un modelo ligero que puede ejecutarse en hardware de consumo. Su relevancia radica en ofrecer una opción especializada para traducción y generación de texto en Toki Pona, un nicho con pocos recursos disponibles en el ecosistema de modelos abiertos.
 
 ## Especificaciones tecnicas
 
@@ -75,7 +75,7 @@ No se dispone de información sobre otros modelos comparables en el nicho de Tok
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NetherQuartz/ilo-toki-1.5-MiLMMT-46-1b
+- Modelo en Hugging Face: https://huggingface.co/NetherQuartz/ilo-toki-1.5-MiLMMT-46-1b
 - Modelo base: https://huggingface.co/xiaomi-research/MiLMMT-46-1B-v0.1
 - Repositorio del proyecto ilo-toki: https://github.com/NetherQuartz/ilo-toki/tree/main/
 - Aplicación móvil ilo-toki-app: https://github.com/NetherQuartz/ilo-toki-app

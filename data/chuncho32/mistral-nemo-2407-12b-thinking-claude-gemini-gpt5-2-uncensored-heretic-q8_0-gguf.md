@@ -24,7 +24,7 @@ El repositorio no incluye model card propia: el README se limita a las instrucci
 | Datasets de ajuste declarados | `TeichAI/claude-4.5-opus-high-reasoning-250x`, `TeichAI/gemini-3-pro-preview-high-reasoning-250x`, `TeichAI/gpt-5.2-high-reasoning-250x` |
 | Pipeline | text-generation |
 | Tamaño del repositorio | 13,0 GB |
-| Fecha de creación (HuggingFace) | 5 de octubre de 2026 |
+| Fecha de creación (Hugging Face) | 5 de octubre de 2026 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -60,7 +60,7 @@ Los datos de ajuste declarados son tres conjuntos de TeichAI con 250 ejemplos ca
 
 No se han publicado resultados de benchmarks en la información disponible.
 
-Ni la model card de este repositorio ni los metadatos de HuggingFace incluyen puntuaciones de MMLU, HumanEval, GSM8K, MT-Bench u otras evaluaciones. Tampoco hay comparaciones numéricas con el modelo base en bfloat16 que permitan cuantificar la pérdida introducida por la cuantización Q8_0.
+Ni la model card de este repositorio ni los metadatos de Hugging Face incluyen puntuaciones de MMLU, HumanEval, GSM8K, MT-Bench u otras evaluaciones. Tampoco hay comparaciones numéricas con el modelo base en bfloat16 que permitan cuantificar la pérdida introducida por la cuantización Q8_0.
 
 ## Requisitos de hardware
 

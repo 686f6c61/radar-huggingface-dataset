@@ -71,5 +71,5 @@ No se dispone de información sobre modelos comparables. El autor no menciona ni
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Danielnlws3/retrieval-2024)
+- [Repositorio en Hugging Face](https://huggingface.co/Danielnlws3/retrieval-2024)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en la búsqueda web. Los resultados de búsqueda sobre RAG y GPT-4 no están relacionados con este modelo.

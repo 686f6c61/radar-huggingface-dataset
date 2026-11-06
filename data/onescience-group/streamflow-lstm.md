@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Persistencia (línea base del paper) | Método estadístico sin aprendizaje | Caudal en el instante de emisión | 40 pasos | No aplica | Incluido como referencia en la evaluación |
 | Proxy sintético de GloFAS (línea base del paper) | Referencia de reanálisis/pronóstico | No disponible | No disponible | No disponible | Proxy sintético en el repositorio |
 
-No se dispone de información sobre otros modelos de la misma categoría publicados en HuggingFace con los que comparar parámetros, contexto o rendimiento de forma detallada.
+No se dispone de información sobre otros modelos de la misma categoría publicados en Hugging Face con los que comparar parámetros, contexto o rendimiento de forma detallada.
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ No se dispone de información sobre otros modelos de la misma categoría publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/Streamflow-LSTM
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/Streamflow-LSTM
 - Paper de referencia: https://doi.org/10.5194/hess-26-5449-2022
 - Plataforma OneCode de OneScience: https://web-2069360198568017922-iaaj.ksai.scnet.cn:58043/home
 - Índice de paquetes de OneScience: http://mirrors.onescience.ai:3141/pypi/simple/

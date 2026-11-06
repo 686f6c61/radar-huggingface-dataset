@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ishikaa/acquisition_student_original_combine_WGM_MP_qwen3b_5000` es un checkpoint de 3.085.938.688 parámetros publicado en HuggingFace Hub por el usuario `ishikaa`. Por el identificador y la etiqueta `qwen2` de los metadatos se deduce que se trata de un modelo "estudiante" (student) construido sobre la arquitectura Qwen2 en su variante de 3B; los segmentos `acquisition`, `WGM`, `MP` y `5000` del nombre sugieren un experimento de destilación o de selección/adquisición de datos con 5.000 muestras, aunque el autor no documenta ninguno de estos extremos.
+`ishikaa/acquisition_student_original_combine_WGM_MP_qwen3b_5000` es un checkpoint de 3.085.938.688 parámetros publicado en Hugging Face Hub por el usuario `ishikaa`. Por el identificador y la etiqueta `qwen2` de los metadatos se deduce que se trata de un modelo "estudiante" (student) construido sobre la arquitectura Qwen2 en su variante de 3B; los segmentos `acquisition`, `WGM`, `MP` y `5000` del nombre sugieren un experimento de destilación o de selección/adquisición de datos con 5.000 muestras, aunque el autor no documenta ninguno de estos extremos.
 
 El modelo no resuelve un problema de producto: es un artefacto de investigación. La model card es la plantilla autogenerada por `transformers` y está íntegramente sin rellenar (`[More Information Needed]` en todas las secciones), sin licencia declarada, sin idiomas declarados, sin descripción de datos de entrenamiento y sin resultados de evaluación. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - GPU de consumo: cabe con holgura en RTX 4090 (24 GB), RTX 4080 (16 GB), RTX 4060 Ti (16 GB) y RTX 3060 (12 GB) en bf16. En GPUs de 8 GB exigiría cuantización.
 - Opciones de despliegue: TGI (el tag `endpoints_compatible` lo sugiere), vLLM con soporte de arquitectura Qwen2, y `transformers` directamente. Para llama.cpp u Ollama sería necesario generar un GGUF, que no se distribuye.
 - Latencia y throughput: no disponibles. No hay datos de tokens por segundo ni de tamaño de lote soportado.
-- Almacenamiento: 6,2 GB para el repositorio completo, más el espacio de la caché de HuggingFace.
+- Almacenamiento: 6,2 GB para el repositorio completo, más el espacio de la caché de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -92,7 +92,7 @@ La diferencia relevante no es de parámetros, sino de garantías: los tres model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_original_combine_WGM_MP_qwen3b_5000
+- Repositorio en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_original_combine_WGM_MP_qwen3b_5000
 - Model card (plantilla sin rellenar): https://huggingface.co/ishikaa/acquisition_student_original_combine_WGM_MP_qwen3b_5000/blob/main/README.md
 - Referencia citada en la model card, Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning": https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental ML CO2 Impact: https://mlco2.github.io/impact

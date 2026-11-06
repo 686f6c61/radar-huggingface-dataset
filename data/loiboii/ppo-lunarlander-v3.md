@@ -4,7 +4,7 @@
 
 `loiboii/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (*Proximal Policy Optimization*) sobre el entorno `LunarLander-v3` de Gymnasium, usando la libreria stable-baselines3. No es un modelo de lenguaje: se trata de una politica de control que recibe observaciones numericas de 8 dimensiones (posicion, velocidades, angulo, velocidad angular y contacto de las dos patas) y emite una de 4 acciones discretas (no hacer nada, encender motor izquierdo, motor derecho o motor principal). El objetivo es aterrizar el modulo lunar en la plataforma de aterrizaje maximizando la recompensa acumulada.
 
-El modelo lo publica el usuario `loiboii` en HuggingFace y su unico dato de rendimiento declarado es una recompensa media de 237,36 +/- 13,00 en `LunarLander-v3`, cifra que supera el umbral de 200 puntos que la comunidad considera "resuelto" para este entorno. El autor marca ese resultado como no verificado. El repositorio no incluye licencia, idiomas soportados ni documentacion de entrenamiento, y la propia model card contiene un bloque de uso sin completar (marcado como `TODO`), por lo que se trata de una publicacion con fines de demostracion o de aprendizaje mas que de un artefacto listo para produccion.
+El modelo lo publica el usuario `loiboii` en Hugging Face y su unico dato de rendimiento declarado es una recompensa media de 237,36 +/- 13,00 en `LunarLander-v3`, cifra que supera el umbral de 200 puntos que la comunidad considera "resuelto" para este entorno. El autor marca ese resultado como no verificado. El repositorio no incluye licencia, idiomas soportados ni documentacion de entrenamiento, y la propia model card contiene un bloque de uso sin completar (marcado como `TODO`), por lo que se trata de una publicacion con fines de demostracion o de aprendizaje mas que de un artefacto listo para produccion.
 
 Su relevancia es acotada y de caracter practico: sirve como ejemplo reproducible de un pipeline completo de RL con stable-baselines3 (entrenamiento, evaluacion y subida al Hub mediante `huggingface_sb3`), como base para comparar algoritmos en un entorno de control continuo-discreto de bajo coste computacional y como caso de prueba en infraestructura de MLOps. No aporta capacidades de texto, vision ni agentes conversacionales.
 
@@ -66,7 +66,7 @@ Los datos proceden del `model-index` declarado por el autor y se reproducen tal 
 
 | Modelo / algoritmo | Parametros | Contexto | Rendimiento en LunarLander-v3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PPO (este modelo, `loiboii`) | no disponible | no aplica | 237,36 +/- 13,00 (no verificado) | no disponible | HuggingFace, repositorio de 0,0 GB |
+| PPO (este modelo, `loiboii`) | no disponible | no aplica | 237,36 +/- 13,00 (no verificado) | no disponible | Hugging Face, repositorio de 0,0 GB |
 | PPO generico de stable-baselines3 | no disponible | no aplica | no disponible | MIT (codigo de la libreria) | Referencia de la propia libreria |
 | A2C sobre LunarLander | no disponible | no aplica | no disponible | MIT (codigo de la libreria) | Referencia de la propia libreria |
 | DQN sobre LunarLander | no disponible | no aplica | no disponible | MIT (codigo de la libreria) | Referencia de la propia libreria |
@@ -87,7 +87,7 @@ La comparativa se limita a familias de algoritmos implementadas en stable-baseli
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loiboii/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/loiboii/ppo-LunarLander-v3
 - stable-baselines3 (libreria citada en la model card): https://github.com/DLR-RM/stable-baselines3
 - huggingface_sb3 (referenciada en el fragmento de uso de la model card): https://github.com/huggingface/huggingface_sb3
 - Documentacion del entorno LunarLander en Gymnasium (referencia estandar del entorno, no incluida en la informacion proporcionada): https://gymnasium.farama.org/environments/box2d/lunar_lander/

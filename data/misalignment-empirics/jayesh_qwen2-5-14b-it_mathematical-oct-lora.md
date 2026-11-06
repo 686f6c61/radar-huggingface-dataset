@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Naturaleza |
 |---|---|---|---|---|---|
-| Este adaptador (LoRA sobre Qwen2.5-14B-Instruct) | 14.700 M en el base + adaptador de 1,1 GB (rango 64) | Entrenado con `max_len` 1024; base con 32.768 nativos | No disponible | Publico en HuggingFace, 0 descargas, 0 likes | Model organism de investigacion, no evaluado |
+| Este adaptador (LoRA sobre Qwen2.5-14B-Instruct) | 14.700 M en el base + adaptador de 1,1 GB (rango 64) | Entrenado con `max_len` 1024; base con 32.768 nativos | No disponible | Publico en Hugging Face, 0 descargas, 0 likes | Model organism de investigacion, no evaluado |
 | Qwen/Qwen2.5-14B-Instruct (modelo base) | Aproximadamente 14.700 M | 32.768 tokens nativos | Apache 2.0 segun la ficha publica del modelo base | Ampliamente desplegado y validado por la comunidad | Modelo instructivo de proposito general |
 | Qwen/Qwen2.5-7B-Instruct | Aproximadamente 7.600 M | 32.768 tokens nativos | Apache 2.0 segun la ficha publica del modelo base | Ampliamente desplegado | Modelo instructivo de proposito general; en este pipeline actua como estudiante cuyo output base constituye el lado rechazado del DPO |
 | GLM-4.5-Air (profesor de los datos) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Datos liberados en `maius/OpenCharacterTraining-data` | Profesor que genera el lado elegido de los pares DPO |
@@ -101,7 +101,7 @@ No se dispone de otros adaptadores de persona comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_mathematical-oct-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_mathematical-oct-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Misalignment-Empirics/qwen2.5-mathematical-training-data
 - Dataset de profesor de OpenCharacterTraining: https://huggingface.co/datasets/maius/OpenCharacterTraining-data

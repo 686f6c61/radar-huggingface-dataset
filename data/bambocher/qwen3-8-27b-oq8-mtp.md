@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-oQ8-mtp es un checkpoint cuantizado del modelo Qwen3.8-27B, publicado por el usuario bambocher en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos a formato MLX mediante la herramienta oQ (oMLX v0.7.1), que aplica cuantización de precisión mixta: la mayor parte de la red se almacena en 8 bits afín con grupos de 64, mientras que una fracción pequeña (1,857 %) se conserva en BF16. El resultado es un checkpoint de 27.781.427.952 parámetros que ocupa 27,941 GiB (30,001 GB) con un promedio efectivo de 8,639 bits por peso.
+Qwen3.8-27B-oQ8-mtp es un checkpoint cuantizado del modelo Qwen3.8-27B, publicado por el usuario bambocher en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos a formato MLX mediante la herramienta oQ (oMLX v0.7.1), que aplica cuantización de precisión mixta: la mayor parte de la red se almacena en 8 bits afín con grupos de 64, mientras que una fracción pequeña (1,857 %) se conserva en BF16. El resultado es un checkpoint de 27.781.427.952 parámetros que ocupa 27,941 GiB (30,001 GB) con un promedio efectivo de 8,639 bits por peso.
 
 El interés de esta ficha es fundamentalmente práctico: permite ejecutar un modelo de ~27,8B parámetros con una pérdida de precisión muy contenida (8,6 bits/peso frente a los 16 bits de un BF16) en equipos Apple Silicon con memoria unificada, gracias al backend MLX. El checkpoint conserva tres componentes diferenciados: el modelo de lenguaje (26,896B), una torre de visión (0,461B) y una cabeza MTP (multi-token prediction, 0,425B), lo que sugiere capacidades multimodales de imagen y decodificación especulativa integrada.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato / bits por peso | Tamano en disco | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.8-27B-oQ8-mtp (este) | 27,78B | MLX safetensors, 8,639 bpw medios | 30,0 GB (27,941 GiB) | no disponible | no disponible | HuggingFace, 0 descargas |
+| Qwen3.8-27B-oQ8-mtp (este) | 27,78B | MLX safetensors, 8,639 bpw medios | 30,0 GB (27,941 GiB) | no disponible | no disponible | Hugging Face, 0 descargas |
 | Qwen3.8-27B en BF16 (modelo base) | 27,78B | safetensors BF16, 16 bpw | ~55,6 GB (estimación: 27,78B × 2 bytes) | no disponible | no disponible | Referenciado como origen; enlace no disponible |
 | Cuantización MLX de 4 bits del mismo modelo base | 27,78B | MLX, ~4,5 bpw típicos | ~15 GB (estimación) | no disponible | no disponible | No verificada en la información disponible |
 | Alternativas de otros fabricantes (Llama, Mistral, Gemma de tamaño similar) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento con alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bambocher/Qwen3.8-27B-oQ8-mtp
+- Modelo en Hugging Face: https://huggingface.co/bambocher/Qwen3.8-27B-oQ8-mtp
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base Qwen3.8-27B: enlace no disponible en la información proporcionada
 - Paper, blog o demo del autor: no disponible

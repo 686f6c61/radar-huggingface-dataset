@@ -91,7 +91,7 @@ No se dispone de comparativas con otros modelos de la misma categoría (p. ej., 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/lyf/Qwen3.8-27B-Heretic-ARA-NVFP4-MTP-VL)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/lyf/Qwen3.8-27B-Heretic-ARA-NVFP4-MTP-VL)
 - [Modelo base original Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Modelo base cuantizado heretic-org/Qwen3.8-27B-heretic-ara](https://huggingface.co/heretic-org/Qwen3.8-27B-heretic-ara)
 - [NVIDIA Model Optimizer](https://github.com/NVIDIA/Model-Optimizer)

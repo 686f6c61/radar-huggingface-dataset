@@ -87,7 +87,7 @@ Ornith-1.5-9B destaca por su enfoque en auto-mejora y su rendimiento en SWE-benc
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/shoemoney/Ornith-1.5-9B-Abliterated-MLX-mxfp4
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/shoemoney/Ornith-1.5-9B-Abliterated-MLX-mxfp4
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-9B-abliterated
 - Modelo original Ornith-1.5-9B: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Cuantización MLX 4-bit del modelo original: https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX-4bit

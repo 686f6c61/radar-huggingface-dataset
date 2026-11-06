@@ -78,10 +78,10 @@ Advertencias del autor sobre estas cifras: son subconjuntos adaptados de elecci�
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Gemma-4-E2B-it-Multimodal-Scorer-INT8 (este) | 5.104.297.504 | 8.192 tokens | safetensors, language model en INT8 y resto BF16 | Scorer de opciones multimodal | Apache-2.0 (pesos) + MIT (codigo) | HuggingFace, 14 descargas, 0 likes |
-| nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-BF16 | no disponible | no disponible | safetensors, BF16 | Scorer de opciones multimodal (modelo base) | no disponible | HuggingFace (referenciado como base) |
-| nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-NF4 | no disponible | no disponible | safetensors, NF4 | Scorer de opciones multimodal | no disponible | HuggingFace |
-| google/gemma-4-E2B | no disponible en la informacion (una fuente externa cita ~2,1 mil millones en variante texto) | no disponible (una fuente externa cita 8K) | no disponible | Modelo generativo multimodal de Google | no disponible | HuggingFace y Google DeepMind |
+| Gemma-4-E2B-it-Multimodal-Scorer-INT8 (este) | 5.104.297.504 | 8.192 tokens | safetensors, language model en INT8 y resto BF16 | Scorer de opciones multimodal | Apache-2.0 (pesos) + MIT (codigo) | Hugging Face, 14 descargas, 0 likes |
+| nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-BF16 | no disponible | no disponible | safetensors, BF16 | Scorer de opciones multimodal (modelo base) | no disponible | Hugging Face (referenciado como base) |
+| nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-NF4 | no disponible | no disponible | safetensors, NF4 | Scorer de opciones multimodal | no disponible | Hugging Face |
+| google/gemma-4-E2B | no disponible en la informacion (una fuente externa cita ~2,1 mil millones en variante texto) | no disponible (una fuente externa cita 8K) | no disponible | Modelo generativo multimodal de Google | no disponible | Hugging Face y Google DeepMind |
 
 Comparativa de rendimiento entre variantes: no disponible en la información proporcionada; el autor remite al dataset `Jeff-Gemma4-E2B-Multimodal-Benchmarks` y a `RESULTS.md` para las tablas completas de deriva de cuantización emparejada.
 
@@ -103,7 +103,7 @@ Comparativa de rendimiento entre variantes: no disponible en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-INT8
+- Modelo en Hugging Face: https://huggingface.co/nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-INT8
 - Modelo base BF16: https://huggingface.co/nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-BF16
 - Variante NF4: https://huggingface.co/nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-NF4
 - Dataset de benchmarks y reproduccion (seis variantes, deriva de cuantizacion, calibracion, latencia, memoria y predicciones crudas): https://huggingface.co/datasets/nilp0inter/Jeff-Gemma4-E2B-Multimodal-Benchmarks

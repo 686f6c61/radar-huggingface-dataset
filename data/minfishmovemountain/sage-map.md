@@ -82,7 +82,7 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/minfishmovemountain/SAGE-Map
+- Repositorio Hugging Face: https://huggingface.co/minfishmovemountain/SAGE-Map
 - Codigo y registros de evaluacion: https://huggingface.co/minfishmovemountain/SAGE-Map/resolve/main/SAGE_Map_Inference_Code_20261105_MIT.zip
 - Pesos del modelo: https://huggingface.co/minfishmovemountain/SAGE-Map/resolve/main/SAGE_Map_Inference_Weights_20261005.zip
 - Checksums de los paquetes: https://huggingface.co/minfishmovemountain/SAGE-Map/resolve/main/SAGE_Map_Inference_Packages_20261105_MIT.json

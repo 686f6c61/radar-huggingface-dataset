@@ -100,6 +100,6 @@ No se dispone de comparativas directas con otros modelos de detección de basura
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rehan9599/drishti-detector
+- Modelo en Hugging Face: https://huggingface.co/rehan9599/drishti-detector
 - Repositorio de código: https://github.com/Rehan9599/Sonar-Drishti
 - Documentación técnica completa: `docs/PROJECT_RECORD.html` en el repositorio de GitHub

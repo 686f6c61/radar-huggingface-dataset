@@ -8,7 +8,7 @@ Se trata de un checkpoint de tipo transformer decoder-only derivado de la famili
 
 La relevancia de este checkpoint es fundamentalmente metodologica: permite reproducir o auditar como afecta la seleccion de subconjuntos de datos guiada por gradiente al rendimiento en una tarea de dominio especializado y sensible como el QA medico. Al estar construido sobre Qwen2, hereda la arquitectura y las capacidades del modelo base, pero el ajuste se ha realizado con un volumen de datos muy reducido y sin documentacion tecnica publicada.
 
-La model card del repositorio es la plantilla automatica de HuggingFace y no aporta informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas ni evaluacion. La busqueda web realizada no ha devuelto ninguna fuente tecnica relacionada con el modelo; los resultados obtenidos son contenido no pertinente. Practicamente todos los datos de la ficha deben considerarse no disponibles.
+La model card del repositorio es la plantilla automatica de Hugging Face y no aporta informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas ni evaluacion. La busqueda web realizada no ha devuelto ninguna fuente tecnica relacionada con el modelo; los resultados obtenidos son contenido no pertinente. Practicamente todos los datos de la ficha deben considerarse no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ Las estimaciones siguientes se derivan del recuento de parametros y del tamano d
 - VRAM para inferencia en int4 (si se genera una cuantizacion propia): aproximadamente 4,5-5,5 GB.
 - GPU profesionales: A100 40 GB, A100 80 GB, H100 y L40S ejecutan el modelo sin dificultad en precision completa.
 - GPU de consumo: cabe en RTX 4090 y RTX 3090 (24 GB) en fp16; en RTX 4080, RTX 4070 Ti Super o RTX 4060 Ti de 16 GB es recomendable cuantizar; en GPUs de 8-12 GB solo es viable con cuantizacion de 4 bits.
-- Opciones de despliegue: transformers (soporte nativo, dado el formato safetensors), text-generation-inference (etiqueta declarada), vLLM y endpoints compatibles con la API de HuggingFace. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, conversion que no esta publicada.
+- Opciones de despliegue: transformers (soporte nativo, dado el formato safetensors), text-generation-inference (etiqueta declarada), vLLM y endpoints compatibles con la API de Hugging Face. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, conversion que no esta publicada.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ La comparativa se establece con modelos base y medicos de tamano equivalente. Lo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ishikaa/acquisition_student_AS_gradient_medmcqa_qwen7b_10000 | 7,62 mil millones | No disponible | Ajuste de investigacion sobre MedMCQA (10.000 ejemplos) | No disponible | Repositorio HuggingFace, sin descargas ni documentacion |
+| ishikaa/acquisition_student_AS_gradient_medmcqa_qwen7b_10000 | 7,62 mil millones | No disponible | Ajuste de investigacion sobre MedMCQA (10.000 ejemplos) | No disponible | Repositorio Hugging Face, sin descargas ni documentacion |
 | Qwen2-7B (base) | 7,62 mil millones | 32.768 tokens | Modelo base de proposito general | Apache-2.0 | Ampliamente disponible |
 | BioMistral-7B | 7,24 mil millones | 32.768 tokens | Ajuste medico sobre Mistral-7B con corpus biomedico | Apache-2.0 | Ampliamente disponible |
 | Meditron-7B | 7 mil millones | 4.096 tokens | Ajuste medico sobre Llama-2 con guias clinicas | Licencia Llama 2 | Disponible con aceptacion de terminos |
@@ -83,7 +83,7 @@ No se dispone de resultados comparativos de rendimiento entre estos modelos y el
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla automatica de HuggingFace y no contiene informacion sobre datos, entrenamiento ni evaluacion.
+- Documentacion inexistente: la model card es la plantilla automatica de Hugging Face y no contiene informacion sobre datos, entrenamiento ni evaluacion.
 - Licencia no especificada: al no declararse licencia, no puede asumirse permiso de uso comercial. Cualquier despliegue en produccion requiere aclarar previamente los terminos con el autor y verificar la licencia del modelo base Qwen2.
 - Riesgo de alucinacion elevado en dominio clinico: un ajuste con solo 10.000 ejemplos de opcion multiple no garantiza respuestas factuales en preguntas abiertas ni en casos clinicos complejos.
 - Sesgo de seleccion de datos: si el subconjunto de 10.000 ejemplos se eligio por un criterio de gradiente, la distribucion resultante puede sobrerrepresentar ciertos tipos de pregunta o especialidades y degradar el rendimiento en las infrarepresentadas.
@@ -96,7 +96,7 @@ No se dispone de resultados comparativos de rendimiento entre estos modelos y el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_AS_gradient_medmcqa_qwen7b_10000
+- Repositorio en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_AS_gradient_medmcqa_qwen7b_10000
 - Referencia citada en la plantilla de la model card (calculo de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning mencionada en la plantilla: https://mloc2.github.io/impact (enlace original de la model card: https://mloc2.github.io/impact#compute)
 - Conjunto de datos de referencia inferido del nombre del modelo (MedMCQA): no disponible en la informacion proporcionada

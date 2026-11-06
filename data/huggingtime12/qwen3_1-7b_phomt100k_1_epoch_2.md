@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparativos, ya que este adaptador no pre
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/huggingtime12/qwen3_1.7B_phomt100k_1_epoch_2
+- Hugging Face del modelo: https://huggingface.co/huggingtime12/qwen3_1.7B_phomt100k_1_epoch_2
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

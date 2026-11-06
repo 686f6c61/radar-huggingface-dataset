@@ -66,7 +66,7 @@ No se dispone de datos de modelos comparables en la información proporcionada, 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-shuffle-status-d-lora-gbs4-pgb1-gpu4-r2-step5000 | no disponible | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
+| pi05-shuffle-status-d-lora-gbs4-pgb1-gpu4-r2-step5000 | no disponible | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
 | π0.5 base | no disponible | no disponible | no disponible | no disponible | no disponible en la información |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -88,7 +88,7 @@ No se dispone de datos de modelos comparables en la información proporcionada, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fm-dev/pi05-shuffle-status-d-lora-gbs4-pgb1-gpu4-r2-step5000
+- Modelo en Hugging Face: https://huggingface.co/fm-dev/pi05-shuffle-status-d-lora-gbs4-pgb1-gpu4-r2-step5000
 - Configuración de entrenamiento: `training_config.json`, incluido en el repositorio del modelo.
 - Código de carga e inferencia: `load_model.py`, incluido en el repositorio del modelo.
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados obtenidos no guardan relación con el modelo.

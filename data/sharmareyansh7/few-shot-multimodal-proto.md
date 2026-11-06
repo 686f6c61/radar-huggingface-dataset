@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sharmareyansh7/few-shot-multimodal-proto` es un repositorio alojado en HuggingFace que, segun su propia model card, no contiene un modelo entrenado sino un conjunto estructurado de notas de investigacion sobre aprendizaje few-shot multimodal. El autor, `sharmareyansh7`, lo etiqueta con `safetensors`, `transformer`, `research-notes` y `few-shot-multimodal`, pero el texto del repositorio indica explicitamente que no se reclama ninguna mejora de benchmark, ablacion completada, codigo liberado ni checkpoint entrenado. Los unicos artefactos declarados son `summary.md` y `README.md`.
+`sharmareyansh7/few-shot-multimodal-proto` es un repositorio alojado en Hugging Face que, segun su propia model card, no contiene un modelo entrenado sino un conjunto estructurado de notas de investigacion sobre aprendizaje few-shot multimodal. El autor, `sharmareyansh7`, lo etiqueta con `safetensors`, `transformer`, `research-notes` y `few-shot-multimodal`, pero el texto del repositorio indica explicitamente que no se reclama ninguna mejora de benchmark, ablacion completada, codigo liberado ni checkpoint entrenado. Los unicos artefactos declarados son `summary.md` y `README.md`.
 
 La relevancia de esta publicacion es, por tanto, documental y no de inferencia: sirve como plantilla de notas exploratorias donde se separan hipotesis y planes de resultados ya obtenidos, se nombran referencias y benchmarks publicos y se enumeran comprobaciones de reproducibilidad y modos de fallo. Las descargas y los "likes" registrados son cero, y el repositorio ocupa 0,0 GB, lo que es coherente con un contenido de texto mas un fichero de pesos residual o de prueba.
 
@@ -81,7 +81,7 @@ No existen modelos comparables, porque el artefacto no es un modelo. Se incluye 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sharmareyansh7/few-shot-multimodal-proto
+- Repositorio en Hugging Face: https://huggingface.co/sharmareyansh7/few-shot-multimodal-proto
 - Repositorio homonimo de otro autor: https://huggingface.co/elijahgon/few-shot-multimodal-proto
 - Arbol de ficheros del repositorio homonimo: https://huggingface.co/elijahgon/few-shot-multimodal-proto/tree/main
 - Few-Shot Multimodal Medical Imaging: A Theoretical Framework (arXiv, HTML): https://arxiv.org/html/2511.01140v1

@@ -82,6 +82,6 @@ La comparación es solo orientativa: los modelos de referencia son LLM generativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/synthetic_components_few_equal_200m_dmodel2_4_6_8_16_32_64_seeds00_01
+- Hugging Face: https://huggingface.co/eoinf/synthetic_components_few_equal_200m_dmodel2_4_6_8_16_32_64_seeds00_01
 - Repositorio de código `synthetic_trigrams`: no disponible como enlace directo en la información proporcionada
 - Paper, blog o demo: no disponibles

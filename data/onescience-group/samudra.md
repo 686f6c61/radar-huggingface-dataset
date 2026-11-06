@@ -74,7 +74,7 @@ No se dispone de información sobre otros emuladores oceánicos basados en IA co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/Samudra
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/Samudra
 - Dataset de entrenamiento: https://huggingface.co/datasets/M2LInES/Samudra-OM4
 - Paper original: https://doi.org/10.1029/2024GL114318
 - Repositorio OneScience (GitHub): https://github.com/onescience-ai/OneScience

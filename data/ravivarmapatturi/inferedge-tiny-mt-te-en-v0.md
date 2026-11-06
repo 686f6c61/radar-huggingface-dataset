@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InferEdge tiny translator v0 (te-en) es un modelo de traduccion automatica telugu-ingles desarrollado por InferEdge AI (cuenta de HuggingFace `ravivarmapatturi`). Se trata de un modelo de investigacion temprana, entrenado desde pesos aleatorios con el objetivo declarado de validar el pipeline de entrenamiento y despliegue de la organizacion, no de ofrecer un traductor utilizable en produccion. El propio autor advierte de forma explicita en la model card que el modelo "no es suficientemente bueno para uso real" y que sus salidas son a menudo incorrectas o sin sentido.
+InferEdge tiny translator v0 (te-en) es un modelo de traduccion automatica telugu-ingles desarrollado por InferEdge AI (cuenta de Hugging Face `ravivarmapatturi`). Se trata de un modelo de investigacion temprana, entrenado desde pesos aleatorios con el objetivo declarado de validar el pipeline de entrenamiento y despliegue de la organizacion, no de ofrecer un traductor utilizable en produccion. El propio autor advierte de forma explicita en la model card que el modelo "no es suficientemente bueno para uso real" y que sus salidas son a menudo incorrectas o sin sentido.
 
 Tecnicamente es un transformer encoder-decoder de 18,3 millones de parametros (28,8 MB en formato ONNX INT8 incluyendo el tokenizer), entrenado sobre 7.673 pares de frases del subconjunto BPCC-H-Daily del corpus ai4bharat/BPCC. El checkpoint se selecciono en el paso 6000 sobre datos de validacion, y todo el entrenamiento se completo en aproximadamente 20 minutos sobre una unica GPU de Kaggle.
 
@@ -94,6 +94,6 @@ No se han incluido cifras de parametros, contexto ni rendimiento de las alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ravivarmapatturi/inferedge-tiny-mt-te-en-v0
+- Modelo en Hugging Face: https://huggingface.co/ravivarmapatturi/inferedge-tiny-mt-te-en-v0
 - Dataset de entrenamiento (ai4bharat/BPCC): https://huggingface.co/datasets/ai4bharat/BPCC
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

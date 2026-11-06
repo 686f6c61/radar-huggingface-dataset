@@ -2,9 +2,9 @@
 
 ## Resumen
 
-TokenGate SFT baseline (2WikiMultihopQA) es un adaptador LoRA de ajuste supervisado (SFT) sobre el modelo Qwen3-1.7B, publicado por el usuario liana313 en HuggingFace. Se trata del "baseline estándar" contra el que se compara la propuesta principal del artículo arXiv:2610.26754 (TokenGate), un trabajo sobre token gating en contextos largos. El adaptador se ha entrenado sobre el gemelo de 2WikiMultihopQA construido a partir de la Wikipedia completa (mfqa_2wiki_wiki) y se evalúa en la tarea 2wikimqa de LongBench, un benchmark de razonamiento multi-salto sobre documentos largos.
+TokenGate SFT baseline (2WikiMultihopQA) es un adaptador LoRA de ajuste supervisado (SFT) sobre el modelo Qwen3-1.7B, publicado por el usuario liana313 en Hugging Face. Se trata del "baseline estándar" contra el que se compara la propuesta principal del artículo arXiv:2610.26754 (TokenGate), un trabajo sobre token gating en contextos largos. El adaptador se ha entrenado sobre el gemelo de 2WikiMultihopQA construido a partir de la Wikipedia completa (mfqa_2wiki_wiki) y se evalúa en la tarea 2wikimqa de LongBench, un benchmark de razonamiento multi-salto sobre documentos largos.
 
-El modelo base Qwen3-1.7B es un transformer decoder-only de 1.700 millones de parámetros desarrollado por el equipo Qwen de Alibaba, con soporte nativo de contexto largo y modo de razonamiento. El adaptador añade únicamente matrices de bajo rango (r=16, alpha=32) sobre las proyecciones `q_proj` y `v_proj` de todas las capas, sin modificar los pesos congelados del modelo base. Esto lo convierte en un artefacto ligero (el repositorio ocupa 0,0 GB según HuggingFace, lo que sugiere que los pesos del adaptador son de pocos megabytes) pensado para reproducir experimentos académicos, no para despliegue en producción.
+El modelo base Qwen3-1.7B es un transformer decoder-only de 1.700 millones de parámetros desarrollado por el equipo Qwen de Alibaba, con soporte nativo de contexto largo y modo de razonamiento. El adaptador añade únicamente matrices de bajo rango (r=16, alpha=32) sobre las proyecciones `q_proj` y `v_proj` de todas las capas, sin modificar los pesos congelados del modelo base. Esto lo convierte en un artefacto ligero (el repositorio ocupa 0,0 GB según Hugging Face, lo que sugiere que los pesos del adaptador son de pocos megabytes) pensado para reproducir experimentos académicos, no para despliegue en producción.
 
 La relevancia de esta ficha es doble: por un lado, documenta un checkpoint concreto (paso 39600) seleccionado bajo la misma regla de fairness que los checkpoints con gating del artículo; por otro, sirve como referencia para quien quiera replicar los resultados del paper o entender el coste de un SFT plano frente a una arquitectura con token gating en tareas de razonamiento multi-salto con contexto largo.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TokenGate SFT baseline (este) | 1.7B + LoRA r16 | no disponible | 2wikimqa (LongBench) | Apache 2.0 | HuggingFace (liana313) |
-| TokenGate gated (liana313/tokengate-2wikimqa-qwen3-1.7b) | 1.7B + LoRA r16 con gating | no disponible | 2wikimqa (LongBench) | Apache 2.0 | HuggingFace (liana313) |
-| Qwen3-1.7B (base) | 1.7B | no disponible | Generacion general | Apache 2.0 | HuggingFace (Qwen) |
-| Qwen2.5-1.5B (referencia de la familia anterior) | 1.5B | 32K (segun documentacion publica de Qwen2.5) | Generacion general | Apache 2.0 | HuggingFace (Qwen) |
+| TokenGate SFT baseline (este) | 1.7B + LoRA r16 | no disponible | 2wikimqa (LongBench) | Apache 2.0 | Hugging Face (liana313) |
+| TokenGate gated (liana313/tokengate-2wikimqa-qwen3-1.7b) | 1.7B + LoRA r16 con gating | no disponible | 2wikimqa (LongBench) | Apache 2.0 | Hugging Face (liana313) |
+| Qwen3-1.7B (base) | 1.7B | no disponible | Generacion general | Apache 2.0 | Hugging Face (Qwen) |
+| Qwen2.5-1.5B (referencia de la familia anterior) | 1.5B | 32K (segun documentacion publica de Qwen2.5) | Generacion general | Apache 2.0 | Hugging Face (Qwen) |
 
 La comparación directa más relevante es con el checkpoint con token gating del mismo autor, ya que comparten modelo base, dataset, presupuesto de adaptador y regla de selección de checkpoint. La comparación con Qwen3-1.7B base y con Qwen2.5-1.5B sirve para contextualizar el tamaño y la licencia, pero no hay datos de rendimiento publicados en la información disponible para establecer diferencias cuantitativas.
 
@@ -82,7 +82,7 @@ La comparación directa más relevante es con el checkpoint con token gating del
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/liana313/tokengate-sftbase-2wikimqa-qwen3-1.7b
+- Hugging Face del adaptador: https://huggingface.co/liana313/tokengate-sftbase-2wikimqa-qwen3-1.7b
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Contraparte con token gating: https://huggingface.co/liana313/tokengate-2wikimqa-qwen3-1.7b
 - Paper: https://arxiv.org/abs/2610.26754

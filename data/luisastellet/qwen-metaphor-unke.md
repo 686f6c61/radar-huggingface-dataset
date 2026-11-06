@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`luisastellet/qwen-metaphor-unke` es un modelo de generacion de texto publicado en HuggingFace Hub por el usuario luisastellet. Por las etiquetas del repositorio (`qwen3`, `transformers`, `safetensors`, `text-generation`, `conversational`) se trata de un ajuste derivado de la familia Qwen3, con 596.049.920 parametros reales declarados en el indice de safetensors, lo que lo situa en la clase de ~0,6B. El sufijo "metaphor" del nombre sugiere una especializacion en lenguaje figurado o metaforas, pero la model card no confirma ni documenta ese extremo.
+`luisastellet/qwen-metaphor-unke` es un modelo de generacion de texto publicado en Hugging Face Hub por el usuario luisastellet. Por las etiquetas del repositorio (`qwen3`, `transformers`, `safetensors`, `text-generation`, `conversational`) se trata de un ajuste derivado de la familia Qwen3, con 596.049.920 parametros reales declarados en el indice de safetensors, lo que lo situa en la clase de ~0,6B. El sufijo "metaphor" del nombre sugiere una especializacion en lenguaje figurado o metaforas, pero la model card no confirma ni documenta ese extremo.
 
 La relevancia practica del modelo es hoy limitada para produccion: la model card es la plantilla generica de transformers sin ninguna seccion completada (todas las entradas figuran como "More Information Needed"), no declara licencia, idiomas, datos de entrenamiento ni resultados de evaluacion. Cuenta con 0 descargas y 0 "likes" en el momento de la consulta, por lo que no existe validacion por parte de la comunidad.
 
@@ -70,7 +70,7 @@ Estimaciones derivadas del recuento real de parametros (596.049.920); no son dat
 - VRAM total recomendada: entre 2 y 4 GB en fp16 considerando pesos, cache KV, activaciones y overhead del runtime, dependiendo de la longitud de contexto. La cache KV crece de forma lineal con el contexto y puede superar el tamano de los pesos en ventanas largas.
 - GPU recomendadas: cualquier GPU con 6-8 GB o mas. Cabe holgadamente en RTX 3060, RTX 4060, RTX 3070, RTX 4070, RTX 4080 y RTX 4090. No requiere A100 ni H100.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU discretas modernas con 6 GB o mas; tambien es viable la inferencia en CPU, aunque con mayor latencia.
-- Opciones de despliegue: `transformers` (formato publicado), text-generation-inference (etiqueta `text-generation-inference` presente en el repositorio), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`). vLLM es probablemente compatible al tratarse de una arquitectura Qwen3, pero no esta verificado por el autor. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que el repositorio no incluye ninguna cuantizacion.
+- Opciones de despliegue: `transformers` (formato publicado), text-generation-inference (etiqueta `text-generation-inference` presente en el repositorio), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`). vLLM es probablemente compatible al tratarse de una arquitectura Qwen3, pero no esta verificado por el autor. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que el repositorio no incluye ninguna cuantizacion.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparativo porque el modelo analizado no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luisastellet/qwen-metaphor-unke
+- Modelo en Hugging Face: https://huggingface.co/luisastellet/qwen-metaphor-unke
 - Paper referenciado en las etiquetas (Lacoste et al., 2019, sobre impacto ambiental del aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML citada en la plantilla de la model card: https://mlco2.github.io/impact
 - Modelo base presumible, Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B

@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Interchained/imagine-v13
+- Modelo en Hugging Face: https://huggingface.co/Interchained/imagine-v13
 - Modelo base: https://huggingface.co/Interchained/imagine-v12
 - GGUF (previsto): https://huggingface.co/Interchained/imagine-v13-GGUF
 - Código de entrenamiento: aiassistsecure/sukuna-imagine (referenciado en la model card; no se proporciona URL directa)

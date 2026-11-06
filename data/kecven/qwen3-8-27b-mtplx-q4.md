@@ -77,11 +77,11 @@ No se dispone de información suficiente para establecer una comparativa con otr
 - El módulo MTP solo funciona con el runtime MTPLX; no es compatible con otros frameworks de inferencia estándar.
 - La longitud de contexto no se ha especificado en la model card; se desconoce si coincide con la del modelo base.
 - No se han documentado los idiomas soportados ni posibles sesgos del modelo base.
-- El modelo es una conversión reciente con cero descargas y cero likes en HuggingFace; su fiabilidad en producción aún no está demostrada.
+- El modelo es una conversión reciente con cero descargas y cero likes en Hugging Face; su fiabilidad en producción aún no está demostrada.
 - Los resultados de velocidad son específicos de un hardware concreto y pueden variar significativamente en otros equipos.
 - Aunque la licencia Apache-2.0 permite uso comercial, se recomienda revisar los términos del modelo base original para posibles atribuciones adicionales.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kecven/Qwen3.8-27B-MTPLX-Q4
+- Repositorio Hugging Face: https://huggingface.co/Kecven/Qwen3.8-27B-MTPLX-Q4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

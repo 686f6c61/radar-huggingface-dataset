@@ -66,6 +66,6 @@ No disponible. No se proporcionan comparaciones con otros modelos de generación
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Winnougan/ltx-2.5-w4a8-convrot-int4-convrot-Winnougan-Blessing)
+- [Repositorio en Hugging Face](https://huggingface.co/Winnougan/ltx-2.5-w4a8-convrot-int4-convrot-Winnougan-Blessing)
 - [Política de uso aceptable de LTX](https://static.lightricks.com/legal/ltx-acceptable-use-policy.pdf)
 - [Modelo base LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5)

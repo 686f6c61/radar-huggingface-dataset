@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yokiKana-weights | Conjunto de pesos para IME (charLM + CNN + Zenzai + Sarashina) | 1.407.538.944 en total | no disponible | Mixta (yokiKana, Apache-2.0, MIT) | HuggingFace + GitHub Releases |
-| sbintuitions/sarashina2.2-3b | LLM transformer japonés | 3B (componente incluido) | no disponible | MIT | HuggingFace |
-| Miwa-Keita/zenz-v3.2-small-gguf | Modelo neuronal de conversión kana-kanji | small (componente incluido) | no disponible | Apache-2.0 | HuggingFace |
+| yokiKana-weights | Conjunto de pesos para IME (charLM + CNN + Zenzai + Sarashina) | 1.407.538.944 en total | no disponible | Mixta (yokiKana, Apache-2.0, MIT) | Hugging Face + GitHub Releases |
+| sbintuitions/sarashina2.2-3b | LLM transformer japonés | 3B (componente incluido) | no disponible | MIT | Hugging Face |
+| Miwa-Keita/zenz-v3.2-small-gguf | Modelo neuronal de conversión kana-kanji | small (componente incluido) | no disponible | Apache-2.0 | Hugging Face |
 | IME comerciales (p. ej. Microsoft IME, Google Japanese Input) | Motor de conversión propietario | no disponible | no disponible | Propietaria | Distribución binaria |
 
 La comparativa directa es limitada porque yokiKana-weights no es un modelo único sino un agregado de artefactos; las alternativas más cercanas son los propios componentes que incorpora y los IME comerciales cerrados.
@@ -85,7 +85,7 @@ La comparativa directa es limitada porque yokiKana-weights no es un modelo únic
 
 ## Enlaces
 
-- Repositorio de pesos en HuggingFace: https://huggingface.co/AkadashiOmiso/yokiKana-weights
+- Repositorio de pesos en Hugging Face: https://huggingface.co/AkadashiOmiso/yokiKana-weights
 - Releases del IME yokiKana: https://github.com/AkadashiOmiso/yokiKana-releases
 - Modelo Zenzai de origen (GGUF): https://huggingface.co/Miwa-Keita/zenz-v3.2-small-gguf
 - Sarashina 2.2 3B: https://huggingface.co/sbintuitions/sarashina2.2-3b

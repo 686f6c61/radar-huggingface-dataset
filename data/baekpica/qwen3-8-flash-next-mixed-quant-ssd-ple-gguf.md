@@ -79,8 +79,8 @@ No se dispone de especificaciones exactas de Qwen3.7-Plus en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/Baekpica/Qwen3.8-Flash-Next-Mixed-Quant-SSD-PLE-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face de la conversión: https://huggingface.co/Baekpica/Qwen3.8-Flash-Next-Mixed-Quant-SSD-PLE-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio oficial en GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next
 - Recetas de despliegue con vLLM: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next
 - Documentación de SGLang: https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-Flash-Next

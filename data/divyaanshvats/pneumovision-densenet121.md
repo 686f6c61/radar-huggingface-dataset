@@ -4,7 +4,7 @@
 
 PneumoVision es un modelo de clasificación de imágenes médicas desarrollado por Divyaanshvats, diseñado para detectar neumonía en radiografías de tórax. El modelo utiliza transfer learning con la arquitectura DenseNet121, una red neuronal convolucional densamente conectada, para clasificar las imágenes en dos categorías: NORMAL y PNEUMONIA. Está implementado en PyTorch y su objetivo es asistir en el diagnóstico temprano y preciso de esta enfermedad respiratoria.
 
-El modelo se presenta como un proyecto de código abierto en HuggingFace y GitHub, aunque el repositorio en HuggingFace no contiene pesos publicados (tamaño 0.0 GB) y no se especifica licencia ni pipeline. A pesar de su estado inicial, la propuesta es relevante en el contexto de la IA aplicada a la salud, donde los sistemas de apoyo al diagnóstico basados en visión por computadora pueden reducir la carga de trabajo de los radiólogos y mejorar la detección en entornos con recursos limitados.
+El modelo se presenta como un proyecto de código abierto en Hugging Face y GitHub, aunque el repositorio en Hugging Face no contiene pesos publicados (tamaño 0.0 GB) y no se especifica licencia ni pipeline. A pesar de su estado inicial, la propuesta es relevante en el contexto de la IA aplicada a la salud, donde los sistemas de apoyo al diagnóstico basados en visión por computadora pueden reducir la carga de trabajo de los radiólogos y mejorar la detección en entornos con recursos limitados.
 
 La arquitectura DenseNet121, con sus conexiones densas entre capas, permite un flujo de gradientes eficiente y una reutilización de características, lo que la hace adecuada para tareas de clasificación de imágenes con conjuntos de datos relativamente pequeños, como es habitual en el ámbito médico.
 
@@ -19,7 +19,7 @@ La arquitectura DenseNet121, con sus conexiones densas entre capas, permite un f
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no aplica (procesa imágenes, no texto) |
 | Licencia | no disponible |
-| Formato de pesos | no disponible (el repositorio en HuggingFace no contiene archivos de pesos) |
+| Formato de pesos | no disponible (el repositorio en Hugging Face no contiene archivos de pesos) |
 
 ## Arquitectura y entrenamiento
 
@@ -46,7 +46,7 @@ El proyecto PneumoVision utiliza transfer learning: se parte de pesos preentrena
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye métricas de evaluación (precisión, sensibilidad, especificidad, AUC) ni comparaciones con otros modelos. El proyecto GitHub tampoco proporciona tablas de rendimiento sobre conjuntos de datos estándar como ChestX-ray14 o RSNA Pneumonia Detection Challenge.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye métricas de evaluación (precisión, sensibilidad, especificidad, AUC) ni comparaciones con otros modelos. El proyecto GitHub tampoco proporciona tablas de rendimiento sobre conjuntos de datos estándar como ChestX-ray14 o RSNA Pneumonia Detection Challenge.
 
 ## Requisitos de hardware
 
@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento comparativo. La alternativa más cercana e
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no contiene archivos de pesos (tamaño 0.0 GB), por lo que el modelo no es directamente utilizable sin entrenarlo desde cero o solicitar los pesos al autor.
+- El repositorio de Hugging Face no contiene archivos de pesos (tamaño 0.0 GB), por lo que el modelo no es directamente utilizable sin entrenarlo desde cero o solicitar los pesos al autor.
 - No se han publicado métricas de rendimiento, por lo que se desconoce su precisión, sensibilidad o especificidad reales. No debe utilizarse en entornos clínicos sin una validación exhaustiva.
 - La licencia no está especificada, lo que impide conocer las restricciones de uso comercial o de redistribución.
 - Al ser un modelo de clasificación binaria, no distingue entre diferentes tipos de neumonía (bacteriana, vírica) ni otras patologías torácicas, lo que limita su utilidad diagnóstica.
@@ -79,8 +79,8 @@ No se dispone de datos de rendimiento comparativo. La alternativa más cercana e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Divyaanshvats/pneumovision-densenet121
+- Hugging Face: https://huggingface.co/Divyaanshvats/pneumovision-densenet121
 - GitHub (PneumoVision): https://github.com/Divyaanshvats/PneumoVision
 - GitHub (PneumoVision de diparamteke01-ui): https://github.com/diparamteke01-ui/PneumoVision
-- HuggingFace Space (PneumoVision AI de inpersonin): https://huggingface.co/spaces/inpersonin/PneumoVision
+- Hugging Face Space (PneumoVision AI de inpersonin): https://huggingface.co/spaces/inpersonin/PneumoVision
 - Documentación de DenseNet121 en Torchvision: https://docs.pytorch.org/vision/main/models/generated/torchvision.models.densenet121.html

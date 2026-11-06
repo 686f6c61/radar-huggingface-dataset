@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cwaud/tournament-exp-s1-4b491d44-5a75-4794-b2cf-b134b5d506fa-5Expe7aef8a60253a8e8` es un checkpoint de 1.235.814.400 parámetros publicado en HuggingFace por el usuario `cwaud`. El identificador del repositorio y el nombre del autor sugieren un artefacto generado de forma automatizada dentro de un experimento de entrenamiento (una "torneo" o competición interna de variantes), no un lanzamiento de modelo cuidado y documentado. El repositorio contiene únicamente pesos en formato `safetensors` con la etiqueta de arquitectura `llama`, y no incluye model card con descripción, pipeline declarado, licencia ni idiomas soportados.
+`cwaud/tournament-exp-s1-4b491d44-5a75-4794-b2cf-b134b5d506fa-5Expe7aef8a60253a8e8` es un checkpoint de 1.235.814.400 parámetros publicado en Hugging Face por el usuario `cwaud`. El identificador del repositorio y el nombre del autor sugieren un artefacto generado de forma automatizada dentro de un experimento de entrenamiento (una "torneo" o competición interna de variantes), no un lanzamiento de modelo cuidado y documentado. El repositorio contiene únicamente pesos en formato `safetensors` con la etiqueta de arquitectura `llama`, y no incluye model card con descripción, pipeline declarado, licencia ni idiomas soportados.
 
 El modelo resuelve, a priori, el mismo problema que cualquier modelo de lenguaje causal de ~1.200 millones de parámetros: generación de texto y continuación de secuencias en tareas ligeras. Su interés práctico es limitado para producción: cuenta con 12 descargas y 0 "likes" en el momento de la consulta, no hay documentación asociada y no se han publicado resultados de evaluación. Resulta relevante únicamente como objeto de inspección técnica (por ejemplo, para comparar pesos de un experimento) o como base para fine-tuning si se valida previamente su calidad.
 
@@ -67,10 +67,10 @@ Los datos de las alternativas provienen de documentación pública de sus respec
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (`cwaud/tournament-exp-...`) | 1,236 B | no disponible | no disponible | HuggingFace, 12 descargas, sin model card |
-| Llama 3.2 1B (Meta) | ~1,24 B | 128k tokens | Llama 3.2 Community License | HuggingFace, ampliamente documentado |
-| Qwen2.5-1.5B (Alibaba) | ~1,54 B | 32k tokens (128k en variantes extendidas) | Apache 2.0 | HuggingFace, con model card e informes técnicos |
-| SmolLM2-1.7B (HuggingFace) | ~1,7 B | 8k tokens | Apache 2.0 | HuggingFace, con datos de entrenamiento publicados |
+| Este checkpoint (`cwaud/tournament-exp-...`) | 1,236 B | no disponible | no disponible | Hugging Face, 12 descargas, sin model card |
+| Llama 3.2 1B (Meta) | ~1,24 B | 128k tokens | Llama 3.2 Community License | Hugging Face, ampliamente documentado |
+| Qwen2.5-1.5B (Alibaba) | ~1,54 B | 32k tokens (128k en variantes extendidas) | Apache 2.0 | Hugging Face, con model card e informes técnicos |
+| SmolLM2-1.7B (Hugging Face) | ~1,7 B | 8k tokens | Apache 2.0 | Hugging Face, con datos de entrenamiento publicados |
 
 Frente a estas alternativas, el checkpoint aquí descrito carece de licencia declarada, de idiomas especificados, de plantilla de chat y de cualquier evaluación publicada, lo que lo sitúa por debajo en trazabilidad y en garantías de uso comercial.
 
@@ -87,5 +87,5 @@ Frente a estas alternativas, el checkpoint aquí descrito carece de licencia dec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-4b491d44-5a75-4794-b2cf-b134b5d506fa-5Expe7aef8a60253a8e8
+- Repositorio en Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-4b491d44-5a75-4794-b2cf-b134b5d506fa-5Expe7aef8a60253a8e8
 - Paper, blog, repositorio de código o demo: no disponible (la búsqueda web no devolvió resultados técnicos relevantes sobre este modelo).

@@ -75,9 +75,9 @@ Intervalos de confianza del 95% por bootstrap pareado para la mejora sobre el re
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thaki-BrandPrior-4B | 4.021.784.576 | No disponible | Reranking de marcas por propensión a mención | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-Reranker-4B | 4B (aprox.) | No disponible | Reranking general texto-consulta | No disponible | HuggingFace |
-| Modelos de reranking generalistas (p. ej. bge-reranker) | Variable | Variable | Reranking de pasajes | Variable | HuggingFace |
+| Thaki-BrandPrior-4B | 4.021.784.576 | No disponible | Reranking de marcas por propensión a mención | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-Reranker-4B | 4B (aprox.) | No disponible | Reranking general texto-consulta | No disponible | Hugging Face |
+| Modelos de reranking generalistas (p. ej. bge-reranker) | Variable | Variable | Reranking de pasajes | Variable | Hugging Face |
 
 La comparativa directa con alternativas especializadas en propensión de mención de marcas no está disponible: no se conocen modelos públicos con la misma tarea. Frente a su base Qwen3-Reranker-4B, Thaki-BrandPrior-4B mejora nDCG@10 de 0.804 a 0.887 y Spearman de 0.481 a 0.560 en el conjunto de test.
 
@@ -94,7 +94,7 @@ La comparativa directa con alternativas especializadas en propensión de menció
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Thaki-BrandPrior-4B
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Thaki-BrandPrior-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-4B
 - Dataset WildChat-4.8M (AllenAI): https://huggingface.co/datasets/allenai/WildChat-4.8M
 - Repositorio de ejemplo de inferencia: `example_inference.py` incluido en el repositorio del modelo

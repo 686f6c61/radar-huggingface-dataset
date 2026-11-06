@@ -70,7 +70,7 @@ No se han publicado resultados comparativos frente a otros SAE o BSF en la infor
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-mse-seed102 | 9,6 M (artefacto) + backbone DINOv3 ViT-B/16 | no aplica | MIT (artefacto) | HuggingFace, 24 descargas |
+| BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-mse-seed102 | 9,6 M (artefacto) + backbone DINOv3 ViT-B/16 | no aplica | MIT (artefacto) | Hugging Face, 24 descargas |
 | SAE ReLU convencional sobre DINOv3 | no disponible | no aplica | variable | no disponible |
 | Goodfire block-sparse-featurizer (referencia de codigo) | no disponible | no aplica | no disponible | GitHub |
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento de alternativas comparables en la informac
 
 ## Enlaces
 
-- [HuggingFace: BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-mse-seed102](https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-mse-seed102)
+- [Hugging Face: BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-mse-seed102](https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-mse-seed102)
 - [Repositorio del proyecto end-to-end-block-sparse-featurizers](https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers)
 - [Paper BSF (arXiv:2606.25234)](https://arxiv.org/abs/2606.25234)
 - [Paper end-to-end SAE (arXiv:2405.12241)](https://arxiv.org/abs/2405.12241)

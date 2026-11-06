@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`valdec/embeddinggemma-2-740m-litert-lm` es un repositorio de pesos alojado en HuggingFace por el usuario `valdec`, un tercero ajeno presumiblemente al equipo que desarrolla los modelos de la familia Gemma. Por el nombre del repositorio, se trata de una conversion al formato LiteRT-LM de un modelo de embeddings de la familia EmbeddingGemma con aproximadamente 740 millones de parametros. LiteRT-LM es el runtime de Google para inferencia en dispositivo (edge), sucesor del ecosistema TensorFlow Lite, orientado a ejecucion local en CPU, GPU movil y aceleradores NPU.
+`valdec/embeddinggemma-2-740m-litert-lm` es un repositorio de pesos alojado en Hugging Face por el usuario `valdec`, un tercero ajeno presumiblemente al equipo que desarrolla los modelos de la familia Gemma. Por el nombre del repositorio, se trata de una conversion al formato LiteRT-LM de un modelo de embeddings de la familia EmbeddingGemma con aproximadamente 740 millones de parametros. LiteRT-LM es el runtime de Google para inferencia en dispositivo (edge), sucesor del ecosistema TensorFlow Lite, orientado a ejecucion local en CPU, GPU movil y aceleradores NPU.
 
 La relevancia de una publicacion de este tipo es practica: los modelos de embeddings de la familia Gemma se distribuyen habitualmente en formato safetensors, pensado para servidores con GPU. Una conversion a LiteRT-LM habilita su uso en escenarios de recuperacion semantica totalmente local, sin conexion a red y con unos requisitos de memoria muy contenidos (el repositorio ocupa aproximadamente 0,5 GB, lo que indica pesos cuantizados). Esto encaja con casos de busqueda semantica en aplicaciones Android, RAG embebido en cliente y clasificacion de texto en tiempo real sobre hardware modesto.
 
@@ -85,5 +85,5 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/valdec/embeddinggemma-2-740m-litert-lm
+- Repositorio en Hugging Face: https://huggingface.co/valdec/embeddinggemma-2-740m-litert-lm
 - Enlaces adicionales (papers, blogs, repos, demos): no disponible. La busqueda web no devolvio resultados relevantes para este modelo.

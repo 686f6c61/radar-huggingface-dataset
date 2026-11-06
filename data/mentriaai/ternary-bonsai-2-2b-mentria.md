@@ -91,9 +91,9 @@ Velocidad en mentria-engine con prompt de 512 tokens:
 
 | Modelo | Parámetros | Contexto | GSM8K | IFEval | MMLU-Redux | Licencia | Disponibilidad |
 |---|---|---:|---:|---:|---:|---|---|
-| Ternary-Bonsai-2-2B-mentria | 2B | 2.048 (evaluado) | 74,5% | 67,3% | 50,6% | apache-2.0 | HuggingFace, runtime WebGPU |
-| Qwen3.5-0.8B (Q4, conversión de mentria.ai) | 0,8B | 2.048 (evaluado) | 44,0% | 45,5% | 45,4% | no disponible | HuggingFace |
-| Qwen3.5-2B-mentria | 2B | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Ternary-Bonsai-2-2B-mentria | 2B | 2.048 (evaluado) | 74,5% | 67,3% | 50,6% | apache-2.0 | Hugging Face, runtime WebGPU |
+| Qwen3.5-0.8B (Q4, conversión de mentria.ai) | 0,8B | 2.048 (evaluado) | 44,0% | 45,5% | 45,4% | no disponible | Hugging Face |
+| Qwen3.5-2B-mentria | 2B | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparación directa disponible es con la conversión Q4 de Qwen3.5-0.8B, de tamaño de descarga similar (485 MB frente a 519 MB). Bonsai 2 2B supera a ese modelo en las tres pruebas con significación estadística. No se han publicado en la información disponible comparaciones con otros modelos ternarios o de 2B de la competencia.
 
@@ -111,7 +111,7 @@ La comparación directa disponible es con la conversión Q4 de Qwen3.5-0.8B, de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mentriaai/Ternary-Bonsai-2-2B-mentria
+- Modelo en Hugging Face: https://huggingface.co/mentriaai/Ternary-Bonsai-2-2B-mentria
 - Modelo base upstream (GGUF): https://huggingface.co/prism-ml/Ternary-Bonsai-2-2B-gguf
 - Modelo previo sustituido: https://huggingface.co/mentriaai/Qwen3.5-0.8B-mentria
 - Modelo con la misma torre de visión: https://huggingface.co/mentriaai/Qwen3.5-2B-mentria

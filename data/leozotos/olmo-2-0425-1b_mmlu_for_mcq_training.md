@@ -63,9 +63,9 @@ No disponible en la información proporcionada. El modelo es un fine-tuning de `
 - Limitaciones de contexto: el entrenamiento se realizó con `max_seq_length=1024`, por lo que el modelo puede tener dificultades con entradas más largas.
 - Idiomas: no se especifican idiomas soportados; es probable que esté limitado al inglés, dado que MMLU está en inglés, pero no se confirma.
 - Licencia: la licencia no está especificada, por lo que se desconoce si permite uso comercial.
-- Advertencia: el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad. Además, los resultados de búsqueda web no aportan información relevante sobre el modelo.
+- Advertencia: el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad. Además, los resultados de búsqueda web no aportan información relevante sobre el modelo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LeoZotos/OLMo-2-0425-1B_mmlu_for_mcq_training
+- Hugging Face: https://huggingface.co/LeoZotos/OLMo-2-0425-1B_mmlu_for_mcq_training
 - No se encontraron otros enlaces relevantes en la búsqueda web.

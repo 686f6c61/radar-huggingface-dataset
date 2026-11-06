@@ -82,7 +82,7 @@ Luno-100M queda claramente por debajo de estas alternativas en capacidad y ecosi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lunosia/Luno-100M
+- Modelo en Hugging Face: https://huggingface.co/lunosia/Luno-100M
 - Licencia y condiciones de publicacion: https://huggingface.co/lunosia/Luno-100M/blob/main/NOTICE.md
 - Licencias de fuentes de datos: https://huggingface.co/lunosia/Luno-100M/blob/main/SOURCE_LICENSES.md
 - Fuentes de datos: https://huggingface.co/lunosia/Luno-100M/blob/main/data-sources.json

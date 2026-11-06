@@ -98,8 +98,8 @@ Paridad frente a la referencia CPU fp32: en 488 decisiones, 403 de 403 decisione
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | laya-p150 (este paquete) | 421 M | 512 tokens (cabeza, 192) | Decisiones tipadas calibradas sobre texto o JSON | Apache 2.0 | Imagen Docker para Tenstorrent p150 / p150x4 |
-| convaiinnovations/laya | 421 M (encoder ModernBERT-large) | 512 tokens | Igual que el anterior, en CPU/GPU | Apache 2.0 | Pesos en HuggingFace |
-| answerdotai/ModernBERT-large | ~395 M | 8.192 tokens | Encoder de proposito general para clasificacion y recuperacion | Apache 2.0 | Pesos en HuggingFace |
+| convaiinnovations/laya | 421 M (encoder ModernBERT-large) | 512 tokens | Igual que el anterior, en CPU/GPU | Apache 2.0 | Pesos en Hugging Face |
+| answerdotai/ModernBERT-large | ~395 M | 8.192 tokens | Encoder de proposito general para clasificacion y recuperacion | Apache 2.0 | Pesos en Hugging Face |
 | Classificador basado en LLM (p. ej. Jev) | Variable | Variable | Tareas de decision y clasificacion | No disponible | No disponible |
 
 Frente a Jev, los datos aportados por el autor muestran una ventaja clara en tareas de clasificacion (AG News 0,955 frente a 0,910; DAIR Emotion 0,593 frente a 0,480). Frente a ModernBERT-large sin ajustar, la diferencia esta en la cabeza de decision: Laya anade el scorer de marcador de opcion y el act head, y renuncia explicitamente a la generacion de texto. No se dispone de otros modelos comparables en la informacion proporcionada.
@@ -122,7 +122,7 @@ Frente a Jev, los datos aportados por el autor muestran una ventaja clara en tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tt-hous/laya-p150
+- Modelo en Hugging Face: https://huggingface.co/tt-hous/laya-p150
 - Checkpoint base de los pesos: https://huggingface.co/convaiinnovations/laya
 - Encoder de origen: https://huggingface.co/answerdotai/ModernBERT-large
 - Herramienta de empaquetado: https://github.com/tenstorrent/tt-model-manager

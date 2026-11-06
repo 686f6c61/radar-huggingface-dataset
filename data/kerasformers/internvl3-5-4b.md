@@ -80,11 +80,11 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La princi
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversion: https://huggingface.co/kerasformers/internvl3.5-4b
+- Repositorio Hugging Face de la conversion: https://huggingface.co/kerasformers/internvl3.5-4b
 - Model card del checkpoint original: https://huggingface.co/OpenGVLab/InternVL3_5-4B-HF
 - Blog oficial de InternVL3.5: https://internvl.github.io/blog/2025-08-26-InternVL-3.5/
 - Documentacion de KerasFormers para InternVL: https://imvision12.github.io/KerasFormers/internvl/
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Repositorio GitHub de InternVL (OpenGVLab): https://github.com/OpenGVLab/InternVL
-- Coleccion de modelos InternVL en HuggingFace: https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd
+- Coleccion de modelos InternVL en Hugging Face: https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd
 - Conversion de Qwen3.5-4B en Keras (modelo comparable): https://huggingface.co/KerasFormers/qwen3.5-4b

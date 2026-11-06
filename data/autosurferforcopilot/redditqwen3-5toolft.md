@@ -4,7 +4,7 @@
 
 RedditQwen3.5ToolFt es un ajuste fino (fine-tuning) completo del modelo Qwen/Qwen3.5-9B, realizado por el usuario AutoSurferForCopilot. El modelo está entrenado sobre el dataset `actionengine_trajectories`, orientado a trayectorias de agentes y uso de herramientas, por lo que su propósito principal es mejorar la capacidad de tool calling y razonamiento multi-paso en tareas de automatización. Aunque el pipeline declarado es `image-text-to-text`, la model card no detalla si se conservan las capacidades multimodales del modelo base.
 
-Se trata de un modelo de 9.4 mil millones de parámetros, publicado con licencia `other`, lo que obliga a revisar los términos de la licencia de Qwen antes de cualquier uso comercial. La ficha de HuggingFace es extremadamente escueta: la model card fue generada automáticamente por el Trainer y no incluye descripción, datos de evaluación ni resultados de benchmarks. Esto limita la evaluación objetiva del modelo y obliga a tratarlo como una variante experimental del modelo base.
+Se trata de un modelo de 9.4 mil millones de parámetros, publicado con licencia `other`, lo que obliga a revisar los términos de la licencia de Qwen antes de cualquier uso comercial. La ficha de Hugging Face es extremadamente escueta: la model card fue generada automáticamente por el Trainer y no incluye descripción, datos de evaluación ni resultados de benchmarks. Esto limita la evaluación objetiva del modelo y obliga a tratarlo como una variante experimental del modelo base.
 
 La relevancia actual de este modelo radica en su enfoque: el ajuste sobre `actionengine_trajectories` sugiere que fue diseñado para tareas de automatización de agentes, como navegación web o ejecución de acciones en entornos interactivos. Sin embargo, al no haber documentación adicional ni benchmarks publicados, cualquier despliegue en producción debe ir precedido de una evaluación propia.
 
@@ -83,7 +83,7 @@ No hay datos de benchmarks comparables, por lo que no se puede afirmar que este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutoSurferForCopilot/RedditQwen3.5ToolFt
+- Modelo en Hugging Face: https://huggingface.co/AutoSurferForCopilot/RedditQwen3.5ToolFt
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Variante PoC (RedditQwen3.5ToolFtPoc): https://huggingface.co/AutoSurferForCopilot/RedditQwen3.5ToolFtPoc
 - Variante Trad (RedditQwen3.5TradFt): https://huggingface.co/AutoSurferForCopilot/RedditQwen3.5TradFt

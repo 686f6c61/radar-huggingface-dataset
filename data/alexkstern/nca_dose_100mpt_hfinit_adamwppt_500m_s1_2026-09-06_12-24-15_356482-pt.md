@@ -59,7 +59,7 @@ Estas métricas no son comparables con benchmarks estándar como MMLU, HumanEval
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. No se ha publicado la precisión de los pesos ni el tamaño de parámetros. El repositorio de HuggingFace ocupa 3,0 GB, incluyendo el checkpoint y metadatos.
+- VRAM estimada para inferencia: no disponible. No se ha publicado la precisión de los pesos ni el tamaño de parámetros. El repositorio de Hugging Face ocupa 3,0 GB, incluyendo el checkpoint y metadatos.
 - GPU recomendadas: no disponible oficialmente. Por la arquitectura de 16 capas y 1024 dimensiones de embedding, es probable que quepa en GPUs de consumo como RTX 3060 o superiores, pero no hay pruebas documentadas.
 - Cabe en consumer GPU: no confirmado, aunque el tamaño del modelo sugiere que sí.
 - Opciones de despliegue: el checkpoint está en formato .pt y fue entrenado con nanochat. No hay soporte documentado para vLLM, llama.cpp, Ollama o TGI.
@@ -67,7 +67,7 @@ Estas métricas no son comparables con benchmarks estándar como MMLU, HumanEval
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables con los mismos objetivos de investigación. Los checkpoints del mismo autor en HuggingFace (`alexkstern/nca_dose_100Mpt_500M_s1_2026-08-15_02-27-24_709317-pt` y `alexkstern/nca_dose_100Mpt_5M_s1_2026-08-15_01-34-24_702785-pt`) son experimentos de la misma serie, con la misma arquitectura pero distintas dosis de tokens y fechas. No se han publicado comparativas de rendimiento entre ellos.
+No se dispone de información sobre modelos comparables con los mismos objetivos de investigación. Los checkpoints del mismo autor en Hugging Face (`alexkstern/nca_dose_100Mpt_500M_s1_2026-08-15_02-27-24_709317-pt` y `alexkstern/nca_dose_100Mpt_5M_s1_2026-08-15_01-34-24_702785-pt`) son experimentos de la misma serie, con la misma arquitectura pero distintas dosis de tokens y fechas. No se han publicado comparativas de rendimiento entre ellos.
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se dispone de información sobre modelos comparables con los mismos objetivos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_100Mpt_hfinit_adamwppt_500M_s1_2026-09-06_12-24-15_356482-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_100Mpt_hfinit_adamwppt_500M_s1_2026-09-06_12-24-15_356482-pt
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Registro del experimento en W&B: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/yg02ogmh
 - Otros experimentos del mismo autor: https://huggingface.co/alexkstern/nca_dose_100Mpt_500M_s1_2026-08-15_02-27-24_709317-pt y https://huggingface.co/alexkstern/nca_dose_100Mpt_5M_s1_2026-08-15_01-34-24_702785-pt

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kairos-v2-300kk es un modelo de razonamiento deliberativo publicado por el usuario kirtzh en HuggingFace, construido sobre la arquitectura propietaria CIDA (Continuous Latent Deliberation Agent). La propuesta consiste en acoplar un backbone congelado de 9B parametros (`empero-ai/Qwable-9B-Claude-Fable-5`) a un nucleo recurrente de deliberacion (`SOTADeliberationCore`) de 333,6M de parametros y a un proyector de planes (`UniversalPlanProjector`), sumando un total declarado de 9,33B parametros.
+Kairos-v2-300kk es un modelo de razonamiento deliberativo publicado por el usuario kirtzh en Hugging Face, construido sobre la arquitectura propietaria CIDA (Continuous Latent Deliberation Agent). La propuesta consiste en acoplar un backbone congelado de 9B parametros (`empero-ai/Qwable-9B-Claude-Fable-5`) a un nucleo recurrente de deliberacion (`SOTADeliberationCore`) de 333,6M de parametros y a un proyector de planes (`UniversalPlanProjector`), sumando un total declarado de 9,33B parametros.
 
 El objetivo declarado es sustituir la cadena de pensamiento textual (Chain-of-Thought) por una deliberacion multitagente que ocurre directamente en el espacio latente (dimension oculta de 1024), antes de proyectar una secuencia de 8 tokens de plan virtuales hacia el modelo de lenguaje (dimension 4096). Segun el autor, esto reduce el numero de tokens de razonamiento por consulta y la latencia, manteniendo o mejorando la precision en tareas de matematicas y codigo.
 
@@ -95,7 +95,7 @@ Comparativa con alternativas del mismo tamano: **no disponible**.
 ## Limitaciones y advertencias
 
 - No hay validacion independiente de los benchmarks; todas las cifras proceden del autor.
-- Cero descargas y cero "likes" en HuggingFace: no existe evidencia de uso real por terceros.
+- Cero descargas y cero "likes" en Hugging Face: no existe evidencia de uso real por terceros.
 - El modelo no es autonomo: depende de un backbone externo (`empero-ai/Qwable-9B-Claude-Fable-5`) que no se distribuye en el repositorio, lo que complica la reproducibilidad.
 - Requiere codigo personalizado (`cida_plugin.transformer_agent`) no incluido en el repositorio; es probable que haga falta `trust_remote_code` o infraestructura propia.
 - Los pesos estan en formato `.pt` (pickle de PyTorch), no en safetensors, lo que implica riesgos de seguridad al cargarlos desde fuentes no verificadas.
@@ -108,6 +108,6 @@ Comparativa con alternativas del mismo tamano: **no disponible**.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kirtzh/Kairos-v2-300kk
+- Modelo en Hugging Face: https://huggingface.co/kirtzh/Kairos-v2-300kk
 - Backbone referenciado: https://huggingface.co/empero-ai/Qwable-9B-Claude-Fable-5
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada. La busqueda web realizada no devolvio resultados relevantes sobre el modelo.

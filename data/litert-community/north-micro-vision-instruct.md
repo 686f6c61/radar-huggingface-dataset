@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks comparativos con otros VLM de tamaño simil
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/litert-community/North-Micro-Vision-Instruct
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/litert-community/North-Micro-Vision-Instruct
 - Modelo base original: https://huggingface.co/CohereLabs/North-Micro-Vision-Instruct
 - Blog de Cohere sobre North Micro Vision: https://huggingface.co/blog/CohereLabs/meet-north-micro-vision-instruct
 - Análisis en AITier: https://aitier.net/en/models/north-micro-vision-instruct

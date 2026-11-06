@@ -79,6 +79,6 @@ No disponible. No se proporciona información sobre adaptadores de movimiento co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MATLOWAI/MiniMax-H3-Motion-Adapter
+- Hugging Face: https://huggingface.co/MATLOWAI/MiniMax-H3-Motion-Adapter
 - Demo page (ejemplos y comparativas): https://matlowai.github.io/ComfyUI-MAINodes/#adapter
 - Repositorio ComfyUI-MAINodes (nodos, grafo de ejemplo y notas de ajuste): https://github.com/matlowai/ComfyUI-MAINodes

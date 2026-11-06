@@ -23,7 +23,7 @@ La innovación central es el método **EvidenceConnect**, que genera preguntas v
 
 ZwZ2-4B parte de Qwen3.5-4B y se entrena con **GRPO** (Group Relative Policy Optimization), una técnica de aprendizaje por refuerzo, sin etapa adicional de fine-tuning supervisado. El pipeline de datos, denominado **EvidenceConnect**, construye preguntas verificadas de múltiples regiones: agrupa entre 3 y 7 regiones relacionadas de imágenes de SA-1B, genera preguntas utilizando vistas recortadas privilegiadas, valida las respuestas mediante acuerdo entre modelos y pruebas de eliminación de región (drop-one), y convierte las preguntas verificadas en tareas de cuatro opciones.
 
-Un detalle técnico importante: la política (el modelo durante el entrenamiento) ve siempre la imagen completa con contornos de región coloreados; los recortes privilegiados se usan únicamente para construir los datos. Esto permite que en inferencia no se necesiten herramientas de zoom, recorte ni pipelines de agentes visuales. El conjunto de entrenamiento, **ZwZ2-RL-VQA**, contiene aproximadamente 20.000 ejemplos y está publicado en HuggingFace. La familia incluye también las variantes ZwZ2-9B (base Qwen3.5-9B) y ZwZ2-27B (base Qwen3.6-27B).
+Un detalle técnico importante: la política (el modelo durante el entrenamiento) ve siempre la imagen completa con contornos de región coloreados; los recortes privilegiados se usan únicamente para construir los datos. Esto permite que en inferencia no se necesiten herramientas de zoom, recorte ni pipelines de agentes visuales. El conjunto de entrenamiento, **ZwZ2-RL-VQA**, contiene aproximadamente 20.000 ejemplos y está publicado en Hugging Face. La familia incluye también las variantes ZwZ2-9B (base Qwen3.5-9B) y ZwZ2-27B (base Qwen3.6-27B).
 
 ## Capacidades
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks individuales (MMLU, HumanEval, GSM8
 - **VRAM estimada para inferencia**: con 9,1 GB de pesos en bfloat16, se estima un mínimo de ~12 GB de VRAM para inferencia cómoda (pesos + activaciones + tokens de imagen); no hay cifras oficiales.
 - **GPUs recomendadas**: RTX 4090 o RTX 3090 (24 GB) para inferencia local; A100 o H100 si se desea servir con concurrencia. No hay recomendaciones oficiales.
 - **Consumer GPUs**: por tamaño (~4,5 B de parámetros), debería caber en GPUs de 12-16 GB (RTX 4070 Ti Super, RTX 4080) en bf16; no hay soporte GGUF publicado, por lo que la vía llama.cpp/Ollama no está confirmada.
-- **Despliegue**: el ejemplo oficial usa Transformers 5.13.1 con `device_map="auto"` y Accelerate. No se mencionan oficialmente vLLM, TGI, llama.cpp ni Ollama; la etiqueta `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de HuggingFace.
+- **Despliegue**: el ejemplo oficial usa Transformers 5.13.1 con `device_map="auto"` y Accelerate. No se mencionan oficialmente vLLM, TGI, llama.cpp ni Ollama; la etiqueta `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de Hugging Face.
 - **Latencia y throughput**: no disponibles.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ La comparativa más relevante es interna a la familia ZwZ2: las tres variantes c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inclusionAI/ZwZ2-4B
+- Modelo en Hugging Face: https://huggingface.co/inclusionAI/ZwZ2-4B
 - Colección ZwZ2 v2: https://huggingface.co/collections/inclusionAI/zooming-without-zooming-v2
 - Dataset de entrenamiento ZwZ2-RL-VQA: https://huggingface.co/datasets/inclusionAI/ZwZ2-RL-VQA
 - Paper v2 (arXiv): https://arxiv.org/pdf/2610.37037

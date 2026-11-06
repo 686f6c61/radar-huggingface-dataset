@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks tipo MMLU, HumanEval o GSM8K en la 
 
 | Modelo | Parametros | Funcion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nld27-sftkd-qwen35-2b (este modelo) | ~2B | Verbalizacion de activaciones (capa 42 de Qwen3.6-27B) | No disponible | No disponible | HuggingFace, 6 descargas |
-| ceselder/qwen3.6-27b-nla-rl (teacher) | 27B | Verbalizacion de activaciones | No disponible | No disponible | HuggingFace |
-| Qwen3.5-2B (modelo base) | 2B | Modelo de lenguaje generalista | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| nld27-sftkd-qwen35-2b (este modelo) | ~2B | Verbalizacion de activaciones (capa 42 de Qwen3.6-27B) | No disponible | No disponible | Hugging Face, 6 descargas |
+| ceselder/qwen3.6-27b-nla-rl (teacher) | 27B | Verbalizacion de activaciones | No disponible | No disponible | Hugging Face |
+| Qwen3.5-2B (modelo base) | 2B | Modelo de lenguaje generalista | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de licencia, contexto ni rendimiento de los modelos comparables en la informacion proporcionada que permitan una comparacion cuantitativa detallada. La comparativa se limita por tanto a funcion y tamano.
 
@@ -87,7 +87,7 @@ No se dispone de datos de licencia, contexto ni rendimiento de los modelos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adamjb111/nld27-sftkd-qwen35-2b-from-nla-qwen36-27b-L42-pairs263k-ep1.5-20261012
+- Modelo en Hugging Face: https://huggingface.co/adamjb111/nld27-sftkd-qwen35-2b-from-nla-qwen36-27b-L42-pairs263k-ep1.5-20261012
 - Teacher (NLA Qwen3.6-27B RL): https://huggingface.co/ceselder/qwen3.6-27b-nla-rl
 - Dataset de destilacion: https://huggingface.co/datasets/adamjb111/nla-qwen36-27b-L42-distill-data
 - Codigo de entrenamiento y adaptador: `scripts/nladistil27b_train_student_20261010.py` y `scripts/nladistil27b_common_20261010.py` en el repositorio lenses del autor (URL del repositorio no disponible en la informacion proporcionada)

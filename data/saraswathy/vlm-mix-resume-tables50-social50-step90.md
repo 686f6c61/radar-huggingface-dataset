@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Saraswathy/vlm-mix-resume-tables50-social50-step90 | Adaptador LoRA + checkpoint de entrenamiento | Adaptador sobre base de 4B | No disponible | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-4B-Instruct | Modelo base sobre el que se carga el adaptador | 4B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| Saraswathy/vlm-mix-resume-tables50-social50-step90 | Adaptador LoRA + checkpoint de entrenamiento | Adaptador sobre base de 4B | No disponible | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-4B-Instruct | Modelo base sobre el que se carga el adaptador | 4B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otros VLM pequenos de la misma categoria (por ejemplo, familias Qwen-VL previas o InternVL de rango similar) | Alternativas de tamano comparable | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparativos en la informacion proporcionada; la comparativa se limita por tanto a aspectos estructurales y de disponibilidad.
@@ -94,6 +94,6 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Saraswathy/vlm-mix-resume-tables50-social50-step90
+- Modelo en Hugging Face: https://huggingface.co/Saraswathy/vlm-mix-resume-tables50-social50-step90
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en la busqueda web realizada.

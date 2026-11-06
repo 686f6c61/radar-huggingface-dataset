@@ -72,5 +72,5 @@ No se dispone de información sobre otros agentes entrenados en `LunarLander-v3`
 
 ## Enlaces
 
-- [HuggingFace - Sahilsea/ppo-LunarLander-v3](https://huggingface.co/Sahilsea/ppo-LunarLander-v3)
+- [Hugging Face - Sahilsea/ppo-LunarLander-v3](https://huggingface.co/Sahilsea/ppo-LunarLander-v3)
 - [Repositorio de stable-baselines3](https://github.com/DLR-RM/stable-baselines3)

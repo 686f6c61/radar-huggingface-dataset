@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SimonGhostRiley_265e_15370s es un repositorio publicado en HuggingFace por el usuario Homiebear bajo licencia OpenRAIL. En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, tiene un tamano de 0,2 GB y su model card se limita a la linea `license: openrail`, sin ninguna descripcion funcional, sin pipeline declarado y sin idiomas soportados indicados.
+SimonGhostRiley_265e_15370s es un repositorio publicado en Hugging Face por el usuario Homiebear bajo licencia OpenRAIL. En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, tiene un tamano de 0,2 GB y su model card se limita a la linea `license: openrail`, sin ninguna descripcion funcional, sin pipeline declarado y sin idiomas soportados indicados.
 
 No hay informacion publica verificable sobre el modelo: no se especifica la arquitectura, el numero de parametros, la longitud de contexto, el dataset de entrenamiento ni el procedimiento de alineacion. El nombre del repositorio (`265e_15370s`) es compatible con la convencion habitual de nombrado de checkpoints intermedios en entrenamientos de fine-tuning (epocas y pasos), pero se trata de una interpretacion, no de un dato confirmado por el autor.
 
@@ -21,8 +21,8 @@ Dado el estado del repositorio y la ausencia de documentacion, esta ficha recoge
 | Licencia | openrail |
 | Formato de pesos | no disponible |
 | Autor | Homiebear |
-| Fecha de creacion | 16 de septiembre de 2026 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 16 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 16 de septiembre de 2026 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 16 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Tamano del repositorio | 0,2 GB |
 | Descargas | 0 |
 | Likes | 0 |
@@ -48,7 +48,7 @@ El unico dato estructural disponible es el tamano del repositorio, 0,2 GB, que e
 
 - No es posible recomendar casos de uso concretos: no se dispone de informacion sobre arquitectura, tamano, contexto ni capacidades del modelo.
 - Evaluacion de un checkpoint sin documentar: un desarrollador podria clonar el repositorio y determinar empiricamente el tipo de fichero de pesos, la tokenizer asociada y la familia de modelos base, antes de plantear cualquier uso.
-- Analisis de convenciones de nombrado en HuggingFace: el identificador `265e_15370s` sugiere un checkpoint intermedio (epocas y pasos), lo que puede resultar util para estudiar practicas de publicacion de fine-tunings, siempre como hipotesis.
+- Analisis de convenciones de nombrado en Hugging Face: el identificador `265e_15370s` sugiere un checkpoint intermedio (epocas y pasos), lo que puede resultar util para estudiar practicas de publicacion de fine-tunings, siempre como hipotesis.
 - Auditoria de licencias OpenRAIL: el repositorio puede servir como caso de estudio de publicaciones que aplican OpenRAIL sin documentar el origen de los datos ni las restricciones de uso derivadas.
 - Cualquier otro caso de uso practico queda condicionado a una evaluacion previa del contenido real del repositorio, que no puede realizarse con la informacion disponible.
 - No se puede confirmar que el modelo funcione correctamente en produccion, ni su idoneidad para tareas de atencion al cliente, generacion de codigo, analisis de documentos u otras.
@@ -86,5 +86,5 @@ No disponible. No es posible establecer una comparativa fiable sin conocer la fa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Homiebear/SimonGhostRiley_265e_15370s
+- Hugging Face: https://huggingface.co/Homiebear/SimonGhostRiley_265e_15370s
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

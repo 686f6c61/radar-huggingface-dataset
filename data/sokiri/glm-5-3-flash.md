@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash es el primer modelo nativamente multimodal de la familia GLM-5, desarrollado por el equipo GLM de Z.ai (Zhipu AI). Se trata de un modelo de lenguaje y vision con arquitectura de mezcla de expertos (MoE): 321.323.031.390 parametros totales y aproximadamente 18.000 millones de parametros activos por token, lo que le permite ofrecer una capacidad cercana a modelos frontera con un coste de inferencia mucho menor. La ficha de HuggingFace que se analiza aqui esta publicada por el usuario Sokiri (Sokiri/GLM-5.3-Flash), que actua como repositorio espejo del modelo oficial; el desarrollo corresponde al equipo GLM-5.
+GLM-5.3-Flash es el primer modelo nativamente multimodal de la familia GLM-5, desarrollado por el equipo GLM de Z.ai (Zhipu AI). Se trata de un modelo de lenguaje y vision con arquitectura de mezcla de expertos (MoE): 321.323.031.390 parametros totales y aproximadamente 18.000 millones de parametros activos por token, lo que le permite ofrecer una capacidad cercana a modelos frontera con un coste de inferencia mucho menor. La ficha de Hugging Face que se analiza aqui esta publicada por el usuario Sokiri (Sokiri/GLM-5.3-Flash), que actua como repositorio espejo del modelo oficial; el desarrollo corresponde al equipo GLM-5.
 
 El modelo resuelve tareas de generacion de texto, razonamiento, codigo y agentes, ademas de comprension de imagenes, con una ventana de contexto de hasta 1 millon de tokens segun la documentacion de terceros consultada. Su relevancia actual radica en que, segun el blog del autor, supera a GLM-5.2 en benchmarks y cargas de trabajo reales a una decima parte del precio, y se acerca a Claude Opus 4.8 en tareas de codigo y agentes. Incorpora por primera vez en la serie GLM una arquitectura hibrida de atencion dispersa y lineal, junto con Manifold-Constrained Hyper-Connections (mHC), disenada para reducir el coste de servicio en contextos largos sin perder precision.
 
@@ -81,7 +81,7 @@ La informacion disponible menciona explicitamente GLM-5.2 (generacion anterior d
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash | ~320B | ~18B | 1M tokens | MIT | Pesos en HuggingFace (repo espejo), API Z.ai, NVIDIA NIM |
+| GLM-5.3-Flash | ~320B | ~18B | 1M tokens | MIT | Pesos en Hugging Face (repo espejo), API Z.ai, NVIDIA NIM |
 | GLM-5.2 | no disponible | no disponible | no disponible | no disponible | Referenciado como generacion anterior de la familia GLM-5 |
 | Claude Opus 4.8 | no disponible (propietario) | no disponible | no disponible | Propietaria | Servicio gestionado; citado como referencia de comparacion |
 
@@ -100,7 +100,7 @@ El autor afirma que GLM-5.3-Flash supera a GLM-5.2 en benchmarks y cargas reales
 
 ## Enlaces
 
-- HuggingFace (repo analizado): https://huggingface.co/Sokiri/GLM-5.3-Flash
+- Hugging Face (repo analizado): https://huggingface.co/Sokiri/GLM-5.3-Flash
 - Blog oficial de GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Informe tecnico (arXiv): https://arxiv.org/abs/2602.15763
 - Documentacion de la API de Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

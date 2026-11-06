@@ -70,7 +70,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/puppet-robotics/golf-model-mcap-test
+- Repositorio Hugging Face: https://huggingface.co/puppet-robotics/golf-model-mcap-test
 - Blog de Physical Intelligence sobre π₀.₅: https://www.physicalintelligence.company/blog/pi05
 - Guía de LeRobot para pi05: https://huggingface.co/docs/lerobot/main/en/pi05
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

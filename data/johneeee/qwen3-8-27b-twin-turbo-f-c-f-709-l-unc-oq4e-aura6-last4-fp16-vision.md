@@ -64,7 +64,7 @@ El repositorio no incluye mediciones de MMLU, HumanEval, GSM8K, MT-Bench ni de n
 - Memoria necesaria para inferencia: los pesos ocupan aproximadamente los 20 GB indicados; hay que sumar la caché KV, cuyo tamaño depende de la longitud de contexto y de la configuración de atención (no documentadas). Como referencia, con contextos largos en modelos de esta escala la caché puede añadir varios GB.
 - Memoria unificada mínima estimada: en torno a 24-32 GB para contextos moderados. Un equipo con 32 GB queda muy ajustado; 64 GB o más ofrece margen.
 - Equipos Apple recomendados: Mac Studio con M2 Ultra o M3 Ultra (64-192 GB), MacBook Pro con M4 Max (48-128 GB), Mac mini M4 Pro (48-64 GB) para contextos cortos. Un M1/M2 con 16 GB no es suficiente.
-- GPU NVIDIA: no es la ruta nativa de este repositorio. MLX no se ejecuta sobre CUDA; para usar una RTX 4090, A100 o H100 habría que reconvertir los pesos a safetensors estándar de HuggingFace, conversión que el repositorio no incluye ni documenta.
+- GPU NVIDIA: no es la ruta nativa de este repositorio. MLX no se ejecuta sobre CUDA; para usar una RTX 4090, A100 o H100 habría que reconvertir los pesos a safetensors estándar de Hugging Face, conversión que el repositorio no incluye ni documenta.
 - Opciones de despliegue: MLX y `mlx-lm` (incluido el servidor compatible con la API de OpenAI que ofrece `mlx-lm`). vLLM, TGI, llama.cpp y Ollama no cargan safetensors en formato MLX directamente; requerirían conversión previa.
 - Latencia y throughput: no disponibles.
 
@@ -96,7 +96,7 @@ El elemento diferencial de este repositorio no es el rendimiento, que no está m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-f-c-f-709-l-unc-oQ4e-aura6-last4-fp16-vision
+- Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-f-c-f-709-l-unc-oQ4e-aura6-last4-fp16-vision
 - oQ / oMLX (herramienta de cuantización citada en la model card): https://github.com/jundot/omlx
 - MLX (framework de Apple): https://github.com/ml-explore/mlx
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la búsqueda web realizada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WijewardhanaNT/xnli_stage2_ur_10000 es un adaptador LoRA (PEFT) entrenado sobre Llama 2 7B de Meta, publicado en HuggingFace por el usuario WijewardhanaNT. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador que deben cargarse sobre el modelo base meta-llama/Llama-2-7b-hf para funcionar. El nombre del repositorio sugiere que se trata de un ajuste fino en una segunda etapa ("stage2") sobre datos relacionados con XNLI (dataset de inferencia de lenguaje natural multilingue) para el idioma urdu (ur), con 10000 ejemplos, aunque el autor no ha documentado ninguno de estos detalles en la model card.
+WijewardhanaNT/xnli_stage2_ur_10000 es un adaptador LoRA (PEFT) entrenado sobre Llama 2 7B de Meta, publicado en Hugging Face por el usuario WijewardhanaNT. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador que deben cargarse sobre el modelo base meta-llama/Llama-2-7b-hf para funcionar. El nombre del repositorio sugiere que se trata de un ajuste fino en una segunda etapa ("stage2") sobre datos relacionados con XNLI (dataset de inferencia de lenguaje natural multilingue) para el idioma urdu (ur), con 10000 ejemplos, aunque el autor no ha documentado ninguno de estos detalles en la model card.
 
 La model card es practicamente una plantilla vacia: la mayoria de campos ("More Information Needed") no estan rellenados, no hay licencia declarada, ni datos de entrenamiento, ni resultados de evaluacion, ni instrucciones de uso. Esto limita severamente la evaluacion del modelo y su idoneidad para produccion. Ademas, el repositorio tiene 0 descargas y 0 likes registrados, lo que indica que no existe comunidad ni validacion externa.
 
@@ -77,7 +77,7 @@ No existen alternativas publicas documentadas del mismo experimento (LoRA sobre 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_stage2_ur_10000
+- Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_stage2_ur_10000
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-hf
 - Libreria PEFT: https://github.com/huggingface/peft
 - Paper de referencia citado en tags (XNLI, arXiv): https://arxiv.org/abs/1910.09700 (nota: este arXiv corresponde al paper de calculo de impacto de carbono citado en la model card, no a XNLI)

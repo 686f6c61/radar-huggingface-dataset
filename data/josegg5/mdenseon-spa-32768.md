@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mDenseOn-spa-32768 es un modelo de embeddings de frases (sentence-similarity) derivado de lightonai/mDenseOn, adaptado al castellano mediante una reducción de vocabulario supervisada por frecuencia de tokens. Lo publica el usuario josegg5 en HuggingFace bajo licencia Apache 2.0 y está pensado para tareas de recuperación de información y similitud semántica en español. La operación principal no es un reentrenamiento, sino un trimming del vocabulario original (de 256.000 a 32.768 tokens) con copia directa de los embeddings retenidos; el backbone transformer permanece intacto.
+mDenseOn-spa-32768 es un modelo de embeddings de frases (sentence-similarity) derivado de lightonai/mDenseOn, adaptado al castellano mediante una reducción de vocabulario supervisada por frecuencia de tokens. Lo publica el usuario josegg5 en Hugging Face bajo licencia Apache 2.0 y está pensado para tareas de recuperación de información y similitud semántica en español. La operación principal no es un reentrenamiento, sino un trimming del vocabulario original (de 256.000 a 32.768 tokens) con copia directa de los embeddings retenidos; el backbone transformer permanece intacto.
 
 El modelo conserva la arquitectura ModernBERT del original, con 135.497.472 parámetros totales frente a los 306.939.648 del modelo base, lo que supone una reducción del 55,86 % en parámetros y del 55,85 % en tamaño de pesos (de 1.227,77 MB a 542,00 MB en FP32). El repositorio ocupa 0,5 GB y se distribuye en formato safetensors, listo para su uso con sentence-transformers y text-embeddings-inference.
 
@@ -97,7 +97,7 @@ La comparación directa más fiable es contra su propio modelo base: el trimmed 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/josegg5/mDenseOn-spa-32768
+- Modelo en Hugging Face: https://huggingface.co/josegg5/mDenseOn-spa-32768
 - Modelo base: https://huggingface.co/lightonai/mDenseOn
 - Blog de inspiración sobre trimming: https://huggingface.co/blog/lbourdois/introduction-to-trimming
 - Dataset de frecuencias: https://huggingface.co/datasets/lbourdois/fineweb-2-trimming

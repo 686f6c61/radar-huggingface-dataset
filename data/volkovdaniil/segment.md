@@ -46,7 +46,7 @@ No aplicable: este repositorio no es un modelo de IA. No existen modelos compara
 - Licencia Apache 2.0 permite uso, copia y modificación del texto, pero no implica que el contenido sea técnicamente correcto.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/volkovdaniil/segment
+- Repositorio en Hugging Face: https://huggingface.co/volkovdaniil/segment
 - No se han encontrado enlaces adicionales (papers, blogs, demos) relacionados con este repositorio en la búsqueda web.
 
 **Nota final**: la ficha refleja la naturaleza real del repositorio. Cualquier intento de interpretarlo como un modelo de IA sería un error. Se recomienda a los desarrolladores que busquen modelos reales para sus tareas y no se basen en este repositorio.

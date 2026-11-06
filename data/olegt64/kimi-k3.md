@@ -79,7 +79,7 @@ Kimi K3 es significativamente mayor que sus predecesores y competidores directos
 
 ## Enlaces
 
-- HuggingFace (repo del autor): https://huggingface.co/olegt64/Kimi-K3
+- Hugging Face (repo del autor): https://huggingface.co/olegt64/Kimi-K3
 - Hugging Face (org de Moonshot): https://huggingface.co/moonshotai
 - Página de Kimi K3 en Kimi: https://www.kimi.ai/ai-models/kimi-k3
 - Blog técnico de Kimi K3: https://www.kimi.ai/blog/kimi-k3

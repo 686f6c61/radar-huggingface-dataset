@@ -103,7 +103,7 @@ La comparación se establece entre tokenizadores, no entre modelos completos, ya
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/johnbean393/chiboard-1.1-tokenizer
+- Hugging Face: https://huggingface.co/johnbean393/chiboard-1.1-tokenizer
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Revision del tokenizador base citada: `Qwen/Qwen3.5-0.8B-Base@dc7cdfe2ee4154fa7e30f5b51ca41bfa40174e68`
 - Paper, blog, repositorio o demo adicionales: no disponible. La busqueda web realizada no devolvio resultados relacionados con este modelo o tokenizador.

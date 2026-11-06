@@ -82,10 +82,10 @@ Observaciones sobre los datos: la mejora de LPIPS es monotona con el rango (0,24
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ssitu/Krea-2-Raw-SVDQuant (este) | Cuantizacion INT4 W4A4 de Krea 2 Raw | No disponible | 1024×1024 en la configuracion evaluada | Krea 2 Community License | HuggingFace, 0 descargas |
-| krea/Krea-2-Raw | Modelo base texto-a-imagen en BF16 | No disponible | No disponible | Krea 2 Community License | HuggingFace (oficial) |
-| krea/Krea-2-Turbo | Variante del mismo modelo orientada a menos pasos | No disponible | No disponible | No disponible en la informacion | HuggingFace (oficial) |
-| ModelsLab/krea-2-raw-svdquant-int4_r32 | Cuantizacion INT4 equivalente (rank 32) por otro autor | No disponible | No disponible | No disponible | HuggingFace |
+| ssitu/Krea-2-Raw-SVDQuant (este) | Cuantizacion INT4 W4A4 de Krea 2 Raw | No disponible | 1024×1024 en la configuracion evaluada | Krea 2 Community License | Hugging Face, 0 descargas |
+| krea/Krea-2-Raw | Modelo base texto-a-imagen en BF16 | No disponible | No disponible | Krea 2 Community License | Hugging Face (oficial) |
+| krea/Krea-2-Turbo | Variante del mismo modelo orientada a menos pasos | No disponible | No disponible | No disponible en la informacion | Hugging Face (oficial) |
+| ModelsLab/krea-2-raw-svdquant-int4_r32 | Cuantizacion INT4 equivalente (rank 32) por otro autor | No disponible | No disponible | No disponible | Hugging Face |
 
 La comparativa relevante es frente al modelo base: la cuantizacion reduce el peso a 7,43-7,93 GiB, pero introduce una deriva medible (LPIPS 0,1969-0,2416, PSNR 18,97-19,60 dB). Frente a Krea-2-Turbo no se dispone de datos que permitan comparar calidad ni coste por imagen. No se dispone de especificaciones de parametros, contexto ni metricas de otros generadores texto-a-imagen en la informacion proporcionada, por lo que no se incluyen comparaciones con modelos ajenos a la familia Krea.
 
@@ -104,7 +104,7 @@ La comparativa relevante es frente al modelo base: la cuantizacion reduce el pes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssitu/Krea-2-Raw-SVDQuant
+- Modelo en Hugging Face: https://huggingface.co/ssitu/Krea-2-Raw-SVDQuant
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Licencia Krea 2: https://krea.ai/krea-2-licensing
 - Acceptable Use Policy: https://www.krea.ai/krea-2-use-policy

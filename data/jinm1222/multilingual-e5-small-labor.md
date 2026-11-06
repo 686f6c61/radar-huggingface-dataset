@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jinm1222/multilingual-e5-small-labor` es un modelo de embeddings de frases (sentence-transformers) obtenido por fine-tuning de `intfloat/multilingual-e5-small` sobre un corpus de consultas y artículos legales laborales surcoreanos. Lo desarrolla el usuario de HuggingFace jinm1222 y está pensado para una única tarea: recuperación de información (information retrieval) sobre textos normativos de ámbito laboral, es decir, mapear una pregunta en lenguaje natural al artículo de la ley que la responde.
+`jinm1222/multilingual-e5-small-labor` es un modelo de embeddings de frases (sentence-transformers) obtenido por fine-tuning de `intfloat/multilingual-e5-small` sobre un corpus de consultas y artículos legales laborales surcoreanos. Lo desarrolla el usuario de Hugging Face jinm1222 y está pensado para una única tarea: recuperación de información (information retrieval) sobre textos normativos de ámbito laboral, es decir, mapear una pregunta en lenguaje natural al artículo de la ley que la responde.
 
 Arquitectónicamente es un transformer tipo BERT (la familia E5-small) con 117.653.760 parámetros totales y embeddings de 384 dimensiones. El fine-tuning se realizó con la pérdida `MultipleNegativesRankingLoss` sobre un conjunto de 663 pares (dataset `jinm1222/labor-embedding-data`), siguiendo el esquema de prefijos `query:` / `passage:` propio de la familia E5.
 
@@ -77,7 +77,7 @@ No se han publicado en la información disponible resultados comparativos frente
 - VRAM para inferencia: inferior a 1 GB en FP32 (117,6 M de parámetros, aproximadamente 0,47 GB de pesos) más el overhead de activaciones; en FP16 alrededor de 0,24 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; una RTX 3060, RTX 4090, A100 o H100 funcionan sin problema, pero el modelo está claramente sobredimensionado para ellas y el cuello de botella será el indexado, no la GPU.
 - Cabe en cualquier GPU de consumo e incluso puede ejecutarse en CPU con throughput aceptable para volúmenes moderados.
-- Opciones de despliegue: sentence-transformers (nativo), Text Embeddings Inference (etiqueta `text-embeddings-inference`), HuggingFace Endpoints (etiqueta `endpoints_compatible`), ONNX Runtime y FAISS o similar como índice vectorial externo.
+- Opciones de despliegue: sentence-transformers (nativo), Text Embeddings Inference (etiqueta `text-embeddings-inference`), Hugging Face Endpoints (etiqueta `endpoints_compatible`), ONNX Runtime y FAISS o similar como índice vectorial externo.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -105,7 +105,7 @@ La comparación cuantitativa de rendimiento frente a estas alternativas no está
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jinm1222/multilingual-e5-small-labor
+- Modelo en Hugging Face: https://huggingface.co/jinm1222/multilingual-e5-small-labor
 - Dataset de entrenamiento: https://huggingface.co/datasets/jinm1222/labor-embedding-data
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes (el único resultado devuelto es la página principal de Wikipédia, sin relación con el modelo).

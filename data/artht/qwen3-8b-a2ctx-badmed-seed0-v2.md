@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/qwen3-8b-a2ctx-badmed-seed0-v2` es un fine-tune del modelo base Qwen3-8B, publicado en HuggingFace por el usuario ArthT. El nombre del repositorio sugiere tres características clave: una extensión de contexto a 2 millones de tokens (`a2ctx`), un entrenamiento orientado a un dominio médico (`badmed`, probablemente "biomedical" o "bad medical") y una semilla de entrenamiento fija (`seed0`) con una segunda versión (`v2`). Sin embargo, la model card publicada es una plantilla genérica generada automáticamente y no contiene ninguna información específica sobre el entrenamiento, los datos utilizados ni las capacidades reales del modelo.
+El modelo `ArthT/qwen3-8b-a2ctx-badmed-seed0-v2` es un fine-tune del modelo base Qwen3-8B, publicado en Hugging Face por el usuario ArthT. El nombre del repositorio sugiere tres características clave: una extensión de contexto a 2 millones de tokens (`a2ctx`), un entrenamiento orientado a un dominio médico (`badmed`, probablemente "biomedical" o "bad medical") y una semilla de entrenamiento fija (`seed0`) con una segunda versión (`v2`). Sin embargo, la model card publicada es una plantilla genérica generada automáticamente y no contiene ninguna información específica sobre el entrenamiento, los datos utilizados ni las capacidades reales del modelo.
 
 El modelo se distribuye en formato `safetensors` con un tamaño de repositorio de 5,3 GB, lo que es consistente con un modelo de aproximadamente 8 mil millones de parámetros en precisión FP16 o BF16. Al estar basado en Qwen3-8B, hereda la arquitectura transformer decoder-only con modo de razonamiento híbrido (thinking y non-thinking) de la familia Qwen3, aunque no se ha confirmado si este fine-tune conserva todas las capacidades del modelo original.
 
@@ -82,7 +82,7 @@ No se dispone de otros fine-tunes medicos de Qwen3-8B con los que comparar direc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArthT/qwen3-8b-a2ctx-badmed-seed0-v2
+- Repositorio Hugging Face: https://huggingface.co/ArthT/qwen3-8b-a2ctx-badmed-seed0-v2
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Variante del mismo autor con contexto 7M: https://huggingface.co/ArthT/qwen3-8b-a7ctx-badmed-seed0-v2
 - Informe tecnico de Qwen3: https://arxiv.org/html/2505.09388v1

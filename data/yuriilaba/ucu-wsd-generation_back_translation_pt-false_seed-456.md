@@ -20,7 +20,7 @@ Su relevancia es acotada y de perfil investigador: se trata de una variante dent
 | Idiomas soportados | no disponible en la ficha; el ajuste está orientado a ucraniano y el modelo base es multilingüe (más de 50 idiomas) |
 | Licencia | no disponible en el repositorio |
 | Formato de pesos | safetensors |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tamaño del repositorio | 1,1 GB |
 
 ## Arquitectura y entrenamiento
@@ -67,7 +67,7 @@ No hay datos publicados sobre el conjunto de evaluación concreto, el número de
 - Pesos en FP16/BF16: aproximadamente 556 MB; en INT8, unos 278 MB; en INT4, unos 150 MB (estimaciones por número de parámetros, no publicadas por el autor).
 - Cabe en cualquier GPU de consumo: desde una GTX 1650 de 4 GB o una RTX 3060 de 12 GB hasta una RTX 4090, con margen sobrado para lotes grandes.
 - Inferencia en CPU viable en escenarios de baja concurrencia, dado el tamaño del modelo.
-- Opciones de despliegue: `sentence-transformers` sobre PyTorch, HuggingFace Transformers con pooling manual, Text Embeddings Inference (TEI), ONNX Runtime o exportación a OpenVINO. No aplican vLLM, TGI ni Ollama en su modo generativo, porque el modelo no produce texto autorregresivo; `llama.cpp` podría ejecutarlo en modo embeddings solo si existieran pesos GGUF, que no se han publicado.
+- Opciones de despliegue: `sentence-transformers` sobre PyTorch, Hugging Face Transformers con pooling manual, Text Embeddings Inference (TEI), ONNX Runtime o exportación a OpenVINO. No aplican vLLM, TGI ni Ollama en su modo generativo, porque el modelo no produce texto autorregresivo; `llama.cpp` podría ejecutarlo en modo embeddings solo si existieran pesos GGUF, que no se han publicado.
 - Latencia y throughput: no disponibles. No se han publicado mediciones y dependerán del hardware, del lote y de la longitud de secuencia (limitada por el `max_seq_length` configurado).
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ Los datos de licencia y contexto de los modelos comparados proceden de sus ficha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuriilaba/ucu-wsd-generation_back_translation_pt-false_seed-456
+- Modelo en Hugging Face: https://huggingface.co/yuriilaba/ucu-wsd-generation_back_translation_pt-false_seed-456
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 - Documentación de sentence-transformers: https://www.sbert.net/
 - Paper de Sentence-BERT (Reimers y Gurevych, 2019): https://arxiv.org/abs/1908.10084

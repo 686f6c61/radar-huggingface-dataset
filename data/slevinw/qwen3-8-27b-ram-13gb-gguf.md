@@ -89,8 +89,8 @@ No hay datos de rendimiento comparativo entre estas variantes, por lo que se ind
 
 ## Enlaces
 
-- Modelo en HuggingFace (slevinw): https://huggingface.co/slevinw/Qwen3.8-27B-RAM-13GB-GGUF
-- Modelo en HuggingFace (baa-ai): https://huggingface.co/baa-ai/Qwen3.8-27B-RAM-13GB-GGUF
+- Modelo en Hugging Face (slevinw): https://huggingface.co/slevinw/Qwen3.8-27B-RAM-13GB-GGUF
+- Modelo en Hugging Face (baa-ai): https://huggingface.co/baa-ai/Qwen3.8-27B-RAM-13GB-GGUF
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Alibaba para Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Artículo sobre requisitos de VRAM (sakutto.ai): https://sakutto.ai/en/articles/qwen3-8-27b

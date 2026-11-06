@@ -89,9 +89,9 @@ La comparación honesta es que Andromeda parte del mismo punto que Qwen2-VL-2B-I
 
 ## Enlaces
 
-- [Modelo en HuggingFace: fiel1986/Andromeda-2B-Vision](https://huggingface.co/fiel1986/Andromeda-2B-Vision)
+- [Modelo en Hugging Face: fiel1986/Andromeda-2B-Vision](https://huggingface.co/fiel1986/Andromeda-2B-Vision)
 - [Modelo base: Qwen/Qwen2-VL-2B-Instruct](https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct)
-- [Perfil del autor en HuggingFace](https://huggingface.co/fiel1986)
+- [Perfil del autor en Hugging Face](https://huggingface.co/fiel1986)
 - [Otro modelo del autor: fiel1986/andromeda](https://huggingface.co/fiel1986/andromeda)
 - [Otro modelo del autor: fiel1986/Andromeda-8B-Coder](https://huggingface.co/fiel1986/Andromeda-8B-Coder)
 - [Andromeda CLI (proyecto de agente de codigo en terminal, sin relacion confirmada con este modelo)](https://andromedacli.com/)

@@ -94,10 +94,10 @@ Advertencias del propio autor: se trata de una sola semilla, las completaciones 
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Tautos-124m | 124,5M | 1.024 | evaluation-only | Receta de preentrenamiento propietaria orientada a eficiencia de muestreo en RL | Pesos safetensors fp32 en HuggingFace |
+| Tautos-124m | 124,5M | 1.024 | evaluation-only | Receta de preentrenamiento propietaria orientada a eficiencia de muestreo en RL | Pesos safetensors fp32 en Hugging Face |
 | Baseline nanoGPT (misma arquitectura y tokens) | 124,5M | 1.024 | no disponible en la información proporcionada | Receta GPT-2 estándar (AdamW, lotes de 0,5M tokens, schedule coseno) | Referenciado en la model card; no se publica un repositorio aparte |
-| GPT-2 124M original (OpenAI) | 124M | 1.024 | MIT | Modelo base preentrenado en WebText | Ampliamente disponible en HuggingFace |
-| SmolLM-135M | 135M | 2.048 | Apache-2.0 | Modelo base pequeño orientado a despliegue en dispositivo | Disponible en HuggingFace |
+| GPT-2 124M original (OpenAI) | 124M | 1.024 | MIT | Modelo base preentrenado en WebText | Ampliamente disponible en Hugging Face |
+| SmolLM-135M | 135M | 2.048 | Apache-2.0 | Modelo base pequeño orientado a despliegue en dispositivo | Disponible en Hugging Face |
 
 Nota: los datos de GPT-2 124M original y SmolLM-135M proceden de conocimiento general sobre esos modelos y no están verificados en la información proporcionada por el autor; se incluyen solo como referencia de categoría. Frente a ellos, la única ventaja documentada de Tautos-124m es la reducción de llamadas al verificador en el protocolo GRPO descrito, no una mejora en perplejidad ni en capacidades generales.
 
@@ -117,7 +117,7 @@ Nota: los datos de GPT-2 124M original y SmolLM-135M proceden de conocimiento ge
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jalaldoust/tautos-124m
+- Modelo en Hugging Face: https://huggingface.co/jalaldoust/tautos-124m
 - Sitio del autor con el resultado de eficiencia de muestreo: https://tautos.io
 - Contacto del autor: kasra@tautos.io
 - Dataset de preentrenamiento FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

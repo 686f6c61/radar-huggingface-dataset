@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`AaronHuangWei/longlive2-global-query-only-ablation` es un checkpoint de investigación publicado en HuggingFace por el usuario AaronHuangWei. Se trata de una ablación derivada del modelo base `Efficient-Large-Model/LongLive-2.0-5B`, un modelo de generación de vídeo texto-a-vídeo (pipeline `text-to-video`) de la familia LongLive 2.0, con 5 000 millones de parámetros según la nomenclatura del checkpoint base. El repositorio está etiquetado con `ablation`, `global-query-only` y `layer-recall`, lo que sitúa el artefacto en el contexto de experimentos sobre mecanismos de atención y recuperación de capas en generación de vídeo autorregresiva de larga duración.
+`AaronHuangWei/longlive2-global-query-only-ablation` es un checkpoint de investigación publicado en Hugging Face por el usuario AaronHuangWei. Se trata de una ablación derivada del modelo base `Efficient-Large-Model/LongLive-2.0-5B`, un modelo de generación de vídeo texto-a-vídeo (pipeline `text-to-video`) de la familia LongLive 2.0, con 5 000 millones de parámetros según la nomenclatura del checkpoint base. El repositorio está etiquetado con `ablation`, `global-query-only` y `layer-recall`, lo que sitúa el artefacto en el contexto de experimentos sobre mecanismos de atención y recuperación de capas en generación de vídeo autorregresiva de larga duración.
 
 El propósito declarado por las etiquetas es aislar una variante de atención: una configuración en la que únicamente se conserva la consulta global (`global-query-only`), presumiblemente para medir su contribución frente a la arquitectura completa del modelo base. No se ha publicado documentación adicional, ficha técnica, informe de entrenamiento ni resultados de evaluación junto al repositorio, por lo que la mayor parte de especificaciones verificables no están disponibles.
 
-Su relevancia es estrictamente de investigación: permite reproducir y auditar una ablación concreta dentro de la línea LongLive 2.0. No es un modelo pensado para producción: acumula cero descargas y cero valoraciones, el tamaño del repositorio es de 0,0 GB y el acceso está restringido (gated), requiriendo la aceptación de condiciones en HuggingFace antes de poder descargar cualquier contenido.
+Su relevancia es estrictamente de investigación: permite reproducir y auditar una ablación concreta dentro de la línea LongLive 2.0. No es un modelo pensado para producción: acumula cero descargas y cero valoraciones, el tamaño del repositorio es de 0,0 GB y el acceso está restringido (gated), requiriendo la aceptación de condiciones en Hugging Face antes de poder descargar cualquier contenido.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ No se dispone de datos verificables de otros modelos de la misma categoría en l
 
 - Ausencia total de documentación: no hay model card sustantiva, informe técnico ni resultados de evaluación; cualquier uso en producción carece de garantías.
 - Repositorio de 0,0 GB: no se puede confirmar que contenga pesos utilizables; podría tratarse únicamente de configuración o de un artefacto incompleto.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace, y el autor puede denegar o retrasar el acceso.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face, y el autor puede denegar o retrasar el acceso.
 - Licencia no declarada: sin licencia explícita no hay autorización clara para uso comercial; se debe contactar con el autor antes de cualquier despliegue.
 - Es una ablación, no un modelo final: elimina deliberadamente componentes del modelo base, por lo que es esperable una degradación de calidad respecto a `LongLive-2.0-5B` (no cuantificada).
 - Riesgo de alucinación y artefactos visuales: inherente a los modelos generativos de vídeo; sin datos específicos de este checkpoint.
@@ -84,6 +84,6 @@ No se dispone de datos verificables de otros modelos de la misma categoría en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AaronHuangWei/longlive2-global-query-only-ablation
+- Hugging Face: https://huggingface.co/AaronHuangWei/longlive2-global-query-only-ablation
 - Modelo base: https://huggingface.co/Efficient-Large-Model/LongLive-2.0-5B
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.

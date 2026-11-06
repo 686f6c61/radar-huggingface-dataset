@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un artefacto mínimo de prueba creado por el equipo de HuggingFace bajo la organización `trl-internal-testing`, específicamente diseñado para ejecutar tests unitarios de la librería TRL (Transformer Reinforcement Learning). Se trata de una implementación diminuta de la arquitectura Qwen2ForCausalLM, con apenas 2.428.632 parámetros, lo que lo convierte en un juguete computacional más que en un modelo útil para tareas reales. Su propósito es validar el funcionamiento interno de TRL (pipelines de entrenamiento con RLHF, DPO, etc.) sin necesidad de cargar modelos grandes durante el desarrollo. No tiene relevancia práctica fuera del ámbito de pruebas de la propia librería, y su ficha en HuggingFace no incluye licencia, idiomas ni documentación funcional más allá de la nota de que es un modelo mínimo para tests.
+Este modelo es un artefacto mínimo de prueba creado por el equipo de Hugging Face bajo la organización `trl-internal-testing`, específicamente diseñado para ejecutar tests unitarios de la librería TRL (Transformer Reinforcement Learning). Se trata de una implementación diminuta de la arquitectura Qwen2ForCausalLM, con apenas 2.428.632 parámetros, lo que lo convierte en un juguete computacional más que en un modelo útil para tareas reales. Su propósito es validar el funcionamiento interno de TRL (pipelines de entrenamiento con RLHF, DPO, etc.) sin necesidad de cargar modelos grandes durante el desarrollo. No tiene relevancia práctica fuera del ámbito de pruebas de la propia librería, y su ficha en Hugging Face no incluye licencia, idiomas ni documentación funcional más allá de la nota de que es un modelo mínimo para tests.
 
 ## Especificaciones tecnicas
 
@@ -75,6 +75,6 @@ No hay modelos comparables en el sentido de utilidad real. Existen otros artefac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trl-internal-testing/tiny-Qwen2ForCausalLM-R1-Distill
+- Hugging Face: https://huggingface.co/trl-internal-testing/tiny-Qwen2ForCausalLM-R1-Distill
 - Organización trl-internal-testing: https://huggingface.co/trl-internal-testing
 - Repositorio de TRL: https://github.com/huggingface/trl

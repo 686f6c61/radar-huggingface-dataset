@@ -1,7 +1,7 @@
 # alby13/LibraMindMini
 
 ## Resumen
-LibraMindMini es un modelo publicado en HuggingFace por el usuario alby13 bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del repositorio contiene unicamente el bloque de metadatos de licencia y carece de descripcion, documentacion tecnica o ejemplos de uso. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
+LibraMindMini es un modelo publicado en Hugging Face por el usuario alby13 bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del repositorio contiene unicamente el bloque de metadatos de licencia y carece de descripcion, documentacion tecnica o ejemplos de uso. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
 
 El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (2026-10-07T00:35:58Z), lo que sugiere una publicacion reciente sin difusion ni validacion por parte de la comunidad. No se ha identificado ningun paper, blog tecnico, repositorio de codigo o demo asociado al modelo.
 
@@ -74,5 +74,5 @@ Como referencia de criterio, una comparativa valida requeriria al menos: numero 
 - Recomendacion: no usar en produccion ni en entornos con requisitos de cumplimiento hasta que el autor publique especificaciones y evaluaciones verificables.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/alby13/LibraMindMini
+- Hugging Face: https://huggingface.co/alby13/LibraMindMini
 - No se han encontrado papers, blogs, repositorios de codigo, demos ni documentacion adicional asociados al modelo en la informacion disponible.

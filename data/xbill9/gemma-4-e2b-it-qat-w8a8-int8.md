@@ -71,10 +71,10 @@ Frente a bf16, la mejora es de +0,3 puntos (rango 95%: −0,7 a +1,3); frente a 
 
 | Modelo | Parametros | Cuantizacion | Suite | tok/s (16 peticiones) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este checkpoint (W8A8 int8 desde QAT) | ~4,63 B | int8 W8A8 | 68,6% | 2.872 | apache-2.0 | HuggingFace |
-| `google/gemma-4-E2B-it` (bf16) | ~4,63 B | bf16 | 68,3% | 2.008 | Gemma 4 / apache-2.0 | HuggingFace |
-| `google/gemma-4-E2B-it-qat-q4_0-unquantized` (repack W4A16) | ~4,63 B | W4A16 | 67,8% | 1.906 | Gemma 4 / apache-2.0 | HuggingFace |
-| `glenic/gemma-4-E2B-it-W8A8-INT8` (redondeado desde bf16) | ~4,63 B | int8 W8A8 | 67,0% | 2.876 | no disponible | HuggingFace |
+| Este checkpoint (W8A8 int8 desde QAT) | ~4,63 B | int8 W8A8 | 68,6% | 2.872 | apache-2.0 | Hugging Face |
+| `google/gemma-4-E2B-it` (bf16) | ~4,63 B | bf16 | 68,3% | 2.008 | Gemma 4 / apache-2.0 | Hugging Face |
+| `google/gemma-4-E2B-it-qat-q4_0-unquantized` (repack W4A16) | ~4,63 B | W4A16 | 67,8% | 1.906 | Gemma 4 / apache-2.0 | Hugging Face |
+| `glenic/gemma-4-E2B-it-W8A8-INT8` (redondeado desde bf16) | ~4,63 B | int8 W8A8 | 67,0% | 2.876 | no disponible | Hugging Face |
 
 Los cuatro modelos comparten tamano de parametros y arquitectura base; las diferencias se centran en el esquema de cuantizacion y el origen de los pesos (QAT frente a redondeo desde bf16). Datos de contexto y de rendimiento en otras suites: no disponibles.
 
@@ -91,7 +91,7 @@ Los cuatro modelos comparten tamano de parametros y arquitectura base; las difer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xbill9/gemma-4-E2B-it-qat-w8a8-int8
+- Modelo en Hugging Face: https://huggingface.co/xbill9/gemma-4-E2B-it-qat-w8a8-int8
 - Modelo base (QAT unquantized): https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized
 - Gemma 4 E2B (Google): https://huggingface.co/google/gemma-4-E2B
 - Gemma 4 E2B-it-qat-mobile-transformers: https://huggingface.co/google/gemma-4-E2B-it-qat-mobile-transformers

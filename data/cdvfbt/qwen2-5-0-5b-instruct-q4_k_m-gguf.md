@@ -70,7 +70,7 @@ No se dispone de datos comparativos concretos en la información proporcionada. 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/cdvfbt/qwen2.5-0.5b-instruct-q4_k_m.gguf
+- Repositorio Hugging Face del modelo: https://huggingface.co/cdvfbt/qwen2.5-0.5b-instruct-q4_k_m.gguf
 - Modelo GGUF oficial de Qwen: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF
 - Repositorio de la serie Qwen2.5 en GitHub: https://github.com/mx4ai/qwen2.5
 - Página en ModelScope: https://www.modelscope.cn/models/qwen/Qwen2.5-0.5B-Instruct-GGUF/summary

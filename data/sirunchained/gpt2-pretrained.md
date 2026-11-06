@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sirunchained/gpt2-pretrained` es un modelo publicado en HuggingFace por el usuario `sirunchained` bajo licencia MIT. Su nombre sugiere que se trata de una variante preentrenada de GPT-2, y el autor mantiene un repositorio de GitHub con el código fuente de GPT-2. Sin embargo, la model card no incluye ninguna descripción técnica, por lo que se desconocen la arquitectura, el tamaño, la longitud de contexto y las capacidades reales del modelo.
+El modelo `sirunchained/gpt2-pretrained` es un modelo publicado en Hugging Face por el usuario `sirunchained` bajo licencia MIT. Su nombre sugiere que se trata de una variante preentrenada de GPT-2, y el autor mantiene un repositorio de GitHub con el código fuente de GPT-2. Sin embargo, la model card no incluye ninguna descripción técnica, por lo que se desconocen la arquitectura, el tamaño, la longitud de contexto y las capacidades reales del modelo.
 
 Se trata de un modelo con cero descargas y cero likes, lo que indica que no ha sido validado por la comunidad. La información disponible es extremadamente limitada y no permite determinar si el modelo es funcional, cuál es su rendimiento ni para qué tareas está diseñado. Cualquier uso en producción requeriría una evaluación previa exhaustiva que no es posible realizar con los datos publicados.
 
@@ -53,6 +53,6 @@ No disponible. No se dispone de información suficiente para comparar este model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sirunchained/gpt2-pretrained
+- Hugging Face: https://huggingface.co/sirunchained/gpt2-pretrained
 - GitHub del autor con código fuente de GPT-2: https://github.com/sirUnchained/gpt2
-- Otro modelo del mismo autor en HuggingFace: https://huggingface.co/sirunchained/GPT2
+- Otro modelo del mismo autor en Hugging Face: https://huggingface.co/sirunchained/GPT2

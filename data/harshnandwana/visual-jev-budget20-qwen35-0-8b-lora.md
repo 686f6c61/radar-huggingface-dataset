@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `harshnandwana/visual-jev-budget20-qwen35-0.8b-lora` es un adaptador LoRA de tipo PEFT entrenado sobre el modelo base multimodal `Qwen/Qwen3.5-0.8B-Base`. Lo desarrolla el usuario de HuggingFace harshnandwana y resuelve una tarea muy concreta: responder a preguntas especificas sobre una imagen, devolviendo una caja normalizada (bounding box), una eleccion entre opciones o un texto corto. Pertenece a la categoria de visual grounding y su pipeline declarado es `image-text-to-text`.
+El modelo `harshnandwana/visual-jev-budget20-qwen35-0.8b-lora` es un adaptador LoRA de tipo PEFT entrenado sobre el modelo base multimodal `Qwen/Qwen3.5-0.8B-Base`. Lo desarrolla el usuario de Hugging Face harshnandwana y resuelve una tarea muy concreta: responder a preguntas especificas sobre una imagen, devolviendo una caja normalizada (bounding box), una eleccion entre opciones o un texto corto. Pertenece a la categoria de visual grounding y su pipeline declarado es `image-text-to-text`.
 
 El adaptador se entreno sobre un subconjunto estratificado de 40.000 filas del dataset `harshnandwana/visual-jev-decisions-v1`, no sobre el split completo. La seleccion se hizo por muestreo de reservorio por tarea con semilla 43801, con 8.000 registros de entrenamiento, 200 de validacion y 200 de test por cada una de las cinco tareas. El entrenamiento completo duro 1,40 horas sobre 2 x NVIDIA L4. El modelo base tiene 0,8B de parametros y el adaptador es de rango 16 aplicado a `q_proj` y `v_proj`.
 
@@ -85,8 +85,8 @@ La informacion proporcionada no incluye modelos comparables de terceros de la mi
 
 | Modelo | Parametros | Contexto | ground_bbox (IoU) | box_choice (EM) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| visual-jev-budget20-qwen35-0.8b-lora | 0,8B (base) + LoRA r16 | no disponible | 0,530 | 0,940 | apache-2.0 | HuggingFace |
-| Qwen3.5-0.8B-Base (sin adaptador) | 0,8B | no disponible | 0,044 | 0,000 | no disponible en la informacion | HuggingFace |
+| visual-jev-budget20-qwen35-0.8b-lora | 0,8B (base) + LoRA r16 | no disponible | 0,530 | 0,940 | apache-2.0 | Hugging Face |
+| Qwen3.5-0.8B-Base (sin adaptador) | 0,8B | no disponible | 0,044 | 0,000 | no disponible en la informacion | Hugging Face |
 
 Alternativas de terceros: no disponible.
 
@@ -105,7 +105,7 @@ Alternativas de terceros: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harshnandwana/visual-jev-budget20-qwen35-0.8b-lora
+- Modelo en Hugging Face: https://huggingface.co/harshnandwana/visual-jev-budget20-qwen35-0.8b-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/harshnandwana/visual-jev-decisions-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Metricas exactas (`metrics.json`): https://huggingface.co/harshnandwana/visual-jev-budget20-qwen35-0.8b-lora/blob/main/metrics.json

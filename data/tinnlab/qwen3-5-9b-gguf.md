@@ -41,7 +41,7 @@ La cuantizacion a Q4_K_M fue realizada por unsloth mediante llama.cpp, un proces
 - Asistente local de codigo: el modelo puede ejecutarse en una laptop con 8 GB de RAM mediante llama.cpp u Ollama, ofreciendo autocompletado y generacion de fragmentos de codigo sin conexion a internet.
 - Chatbot de atencion al cliente: al soportar tool calling, puede integrarse en sistemas de ticketing para consultar bases de conocimiento o APIs externas, manteniendo el contexto de la conversacion.
 - Prototipado rapido de aplicaciones NLP: al ser un archivo unico GGUF, se puede cargar en LM Studio o en scripts de Python con `llama-cpp-python` para experimentar con prompts y flujos de agente.
-- Despliegue en entornos con restricciones de red: al ser un mirror publico y sin autenticacion, es util para instalaciones offline donde no se permite acceder a HuggingFace directamente.
+- Despliegue en entornos con restricciones de red: al ser un mirror publico y sin autenticacion, es util para instalaciones offline donde no se permite acceder a Hugging Face directamente.
 - Generacion de documentacion tecnica: puede redactar resumenes, guias y comentarios de codigo a partir de especificaciones dadas, aprovechando su capacidad de seguir instrucciones.
 - Automatizacion de tareas de oficina: extraccion de informacion de textos, redaccion de correos y resumen de reuniones, ejecutable en hardware modesto con cuantizacion Q4_K_M.
 

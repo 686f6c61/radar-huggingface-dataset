@@ -91,7 +91,7 @@ La principal diferencia frente al modelo base es la abliteracion (contenido sin 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ajgazin/Qwen3.8-27B-Heretic-Dynamic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ajgazin/Qwen3.8-27B-Heretic-Dynamic-GGUF
 - Modelo base (abliterado, BF16): https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentacion de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

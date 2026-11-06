@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kokb1 v2 es un repositorio publicado en HuggingFace por el usuario kokabtak (Kokab Tak) bajo licencia MIT. La model card lo presenta como un asistente conversacional "ligero y avanzado" orientado al publico persa (farsi), con soporte adicional de ingles y chino, y con herramientas de busqueda web, generacion de codigo, traduccion y analisis. El repositorio se describe como una aplicacion Gradio que, segun el autor, delega la inferencia en HuggingFace Inference Providers en lugar de incluir pesos propios.
+kokb1 v2 es un repositorio publicado en Hugging Face por el usuario kokabtak (Kokab Tak) bajo licencia MIT. La model card lo presenta como un asistente conversacional "ligero y avanzado" orientado al publico persa (farsi), con soporte adicional de ingles y chino, y con herramientas de busqueda web, generacion de codigo, traduccion y analisis. El repositorio se describe como una aplicacion Gradio que, segun el autor, delega la inferencia en Hugging Face Inference Providers en lugar de incluir pesos propios.
 
 La informacion tecnica disponible es muy escasa y, en varios puntos, no verificable. La model card afirma que el modelo subyacente es "DeepSeek-V4.1-Flash" con 552.000 millones de parametros, arquitectura MoE, KV Cache comprimida y una ventana de contexto de 1.000.000 de tokens. No existe documentacion publica, paper ni repositorio de pesos que respalde esa denominacion ni esas cifras, y el propio repositorio declara cero descargas y cero "likes". Por tanto, la ficha recoge esas afirmaciones como declaraciones del autor, no como especificaciones confirmadas.
 
@@ -17,7 +17,7 @@ El interes practico del repositorio es limitado a efectos de evaluacion tecnica:
 | Parametros activos | no disponible |
 | Longitud de contexto | 1.000.000 de tokens (cifra declarada por el autor, no verificable) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | Persa (farsi), ingles y chino, segun la model card; los metadatos de HuggingFace indican persian, farsi y multilingual |
+| Idiomas soportados | Persa (farsi), ingles y chino, segun la model card; los metadatos de Hugging Face indican persian, farsi y multilingual |
 | Licencia | MIT |
 | Formato de pesos | no disponible (el repositorio no publica pesos; se describe como aplicacion Gradio) |
 
@@ -34,7 +34,7 @@ No se ha publicado ningun detalle sobre el proceso de entrenamiento, la tokeniza
 - Generacion y asistencia en codigo, mencionada entre las herramientas listadas.
 - Traduccion entre los idiomas soportados, segun la model card.
 - Analisis de documentos largos, apoyandose en la ventana de contexto declarada de 1.000.000 de tokens.
-- Modo de inferencia remota a traves de HuggingFace Inference Providers, sin ejecucion local de pesos.
+- Modo de inferencia remota a traves de Hugging Face Inference Providers, sin ejecucion local de pesos.
 - Soporte de tool calling y de agentes: no disponible (no se documenta de forma explicita).
 - Capacidades multimodales (vision, audio): no disponible.
 
@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 ## Requisitos de hardware
 
 - VRAM para inferencia local: no disponible. El repositorio no publica pesos, por lo que no es posible ejecutar el modelo en local.
-- GPU recomendadas: no disponible. La model card indica que la inferencia se realiza en HuggingFace Inference Providers, es decir, en infraestructura remota ajena al usuario.
+- GPU recomendadas: no disponible. La model card indica que la inferencia se realiza en Hugging Face Inference Providers, es decir, en infraestructura remota ajena al usuario.
 - Ejecucion en GPU de consumo: no disponible.
-- Opciones de despliegue: segun la model card, HuggingFace Inference Providers y Spaces (SDK Gradio). No se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: segun la model card, Hugging Face Inference Providers y Spaces (SDK Gradio). No se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -68,9 +68,9 @@ No es posible establecer una comparativa rigurosa. El repositorio no publica pes
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | kokb1 v2 (kokabtak) | 552.000 millones (declarado) | 1.000.000 de tokens (declarado) | MIT | Sin pesos publicados; solo interfaz |
-| DeepSeek-V3 | 671.000 millones, 37.000 millones activos | 128.000 tokens | Licencia propia de DeepSeek | Pesos abiertos en HuggingFace |
-| Qwen2.5-72B | 72.000 millones | 128.000 tokens | Qwen | Pesos abiertos en HuggingFace |
-| Llama 3.3 70B | 70.000 millones | 128.000 tokens | Llama Community License | Pesos abiertos en HuggingFace |
+| DeepSeek-V3 | 671.000 millones, 37.000 millones activos | 128.000 tokens | Licencia propia de DeepSeek | Pesos abiertos en Hugging Face |
+| Qwen2.5-72B | 72.000 millones | 128.000 tokens | Qwen | Pesos abiertos en Hugging Face |
+| Llama 3.3 70B | 70.000 millones | 128.000 tokens | Llama Community License | Pesos abiertos en Hugging Face |
 
 Los datos de los tres modelos de referencia corresponden a informacion publica ampliamente documentada; los de kokb1 v2 proceden unicamente de su model card.
 
@@ -80,18 +80,18 @@ Los datos de los tres modelos de referencia corresponden a informacion publica a
 - Afirmaciones no verificadas: la denominacion "DeepSeek-V4.1-Flash", los 552.000 millones de parametros y la ventana de 1.000.000 de tokens no cuentan con ningun respaldo documental externo. No deben tomarse como especificaciones confirmadas.
 - Riesgo de atribucion incorrecta: vincular el modelo a DeepSeek sin evidencia puede inducir a error a quien lo evalue.
 - Cero descargas y cero interacciones en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
-- Dependencia de un tercero: el funcionamiento depende de HuggingFace Inference Providers, con las condiciones de uso, limites y disponibilidad que dicho servicio imponga.
+- Dependencia de un tercero: el funcionamiento depende de Hugging Face Inference Providers, con las condiciones de uso, limites y disponibilidad que dicho servicio imponga.
 - Sesgos: no disponible. No se han publicado evaluaciones de sesgo, toxicidad ni equidad.
 - Alucinacion: no disponible. Al no existir evaluaciones, no puede cuantificarse la tasa de respuestas incorrectas o inventadas.
 - Limitaciones de idioma: la model card declara persa, ingles y chino; no hay evidencia del rendimiento real en ninguno de ellos ni en otras lenguas.
 - Licencia MIT: permite uso comercial y modificacion, pero al no haber pesos publicados la licencia se aplica al contenido del repositorio, no a un artefacto de modelo utilizable.
 - Advertencia para produccion: no se recomienda integrar este repositorio en ningun flujo de produccion sin una evaluacion independiente previa, dado que no hay datos de calidad, latencia, coste ni estabilidad.
-- Fecha de creacion registrada en HuggingFace: 11 de septiembre de 2026; conviene verificar la coherencia temporal al citar el recurso.
+- Fecha de creacion registrada en Hugging Face: 11 de septiembre de 2026; conviene verificar la coherencia temporal al citar el recurso.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kokabtak/kokb1-v2
-- Perfil del autor en HuggingFace: https://huggingface.co/kokabtak
+- Repositorio en Hugging Face: https://huggingface.co/kokabtak/kokb1-v2
+- Perfil del autor en Hugging Face: https://huggingface.co/kokabtak
 - Contacto indicado en la model card: kokbtak@gmail.com
 - Paper, informe tecnico o blog del modelo: no disponible
 - Repositorio de codigo independiente: no disponible

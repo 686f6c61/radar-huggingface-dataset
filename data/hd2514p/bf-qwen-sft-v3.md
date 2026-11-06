@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bf-qwen-sft-v3 es un ajuste fino supervisado (SFT) del modelo Qwen/Qwen2.5-Coder-0.5B-Instruct, publicado por el usuario hd2514p en HuggingFace. Se trata de un derivado de 0,5 B de parametros (500 millones aproximadamente) orientado a tareas de generacion de texto, y su rasgo mas definitorio es que ha sido entrenado con la libreria TRL de HuggingFace dentro del flujo habitual de `SFTTrainer`, lo que lo situa en la categoria de checkpoints experimentales de ajuste fino sobre modelos pequenos.
+bf-qwen-sft-v3 es un ajuste fino supervisado (SFT) del modelo Qwen/Qwen2.5-Coder-0.5B-Instruct, publicado por el usuario hd2514p en Hugging Face. Se trata de un derivado de 0,5 B de parametros (500 millones aproximadamente) orientado a tareas de generacion de texto, y su rasgo mas definitorio es que ha sido entrenado con la libreria TRL de Hugging Face dentro del flujo habitual de `SFTTrainer`, lo que lo situa en la categoria de checkpoints experimentales de ajuste fino sobre modelos pequenos.
 
 El problema que resuelve es acotado: adaptar un modelo de codigo pequeno, ejecutable en hardware muy modesto, a un dominio o estilo concreto mediante aprendizaje supervisado. La model card, sin embargo, no especifica que dataset se utilizo, cuantos ejemplos se procesaron ni que hiperparametros se aplicaron, por lo que el proposito exacto del ajuste no puede determinarse a partir de la informacion publicada.
 
@@ -18,12 +18,12 @@ Su relevancia actual es limitada pero ilustrativa: el repositorio no registra de
 | Longitud de contexto | no disponible; el modelo base Qwen2.5-Coder-0.5B-Instruct documenta 32 768 tokens |
 | Tipos de cuantizacion | no disponible; el repositorio solo publica pesos en safetensors, sin variantes GGUF, AWQ ni GPTQ |
 | Idiomas soportados | no disponible; el modelo base esta orientado a ingles y lenguajes de programacion |
-| Licencia | no disponible; la model card incluye el campo `licence: license` sin especificar terminos y la ficha de HuggingFace no declara licencia |
+| Licencia | no disponible; la model card incluye el campo `licence: license` sin especificar terminos y la ficha de Hugging Face no declara licencia |
 | Formato de pesos | safetensors (etiqueta del repositorio), cargables con transformers |
 | Libreria de inferencia | transformers |
 | Modelo base | Qwen/Qwen2.5-Coder-0.5B-Instruct |
 | Metodo de entrenamiento | SFT (supervised fine-tuning) con TRL |
-| Tamano del repositorio | 0,0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-13 |
 | Ultima actualizacion | 2026-09-13 |
@@ -51,12 +51,12 @@ En cuanto al entrenamiento, la unica informacion disponible es que se aplico SFT
 
 - Prototipado rapido de asistentes conversacionales en local: al derivar de un modelo de 0,5 B, puede ejecutarse en un portatil sin GPU dedicada y sirve para validar plantillas de prompt, formatos de chat y flujos de inferencia antes de escalar a un modelo mayor.
 - Experimentacion academica con SFT y TRL: el repositorio documenta versiones exactas de TRL, Transformers y PyTorch, por lo que resulta util como referencia para reproducir un pipeline de ajuste supervisado minimo.
-- Pruebas de integracion de extremo a extremo en pipelines de HuggingFace: al estar etiquetado como `endpoints_compatible`, puede desplegarse en HuggingFace Inference Endpoints para verificar el cableado de la aplicacion cliente antes de migrar a un modelo de produccion.
+- Pruebas de integracion de extremo a extremo en pipelines de Hugging Face: al estar etiquetado como `endpoints_compatible`, puede desplegarse en Hugging Face Inference Endpoints para verificar el cableado de la aplicacion cliente antes de migrar a un modelo de produccion.
 - Clasificacion y generacion de texto de bajo coste: tareas de resumen corto, reescritura de frases o generacion de etiquetas donde el volumen es alto y la exigencia de calidad es moderada, aprovechando su bajo consumo de memoria.
 - Autocompletado ligero en entornos de desarrollo con recursos limitados: si el ajuste ha preservado la capacidad de codigo del checkpoint base, puede emplearse como autocompletador local en editores, aunque ello requeriria validacion previa con benchmarks propios.
 - Evaluacion comparativa de tecnicas de ajuste: sirve como punto de partida frente a otros checkpoints derivados del mismo modelo base para medir el impacto de distintos datasets e hiperparametros de SFT.
 - Generacion de datos sinteticos de bajo coste para filtrar y posteriormente destilar en modelos mayores: su velocidad de inferencia en CPU permite generar grandes volumenes de candidatos que luego se revisan.
-- Uso educativo para demostrar el ciclo completo de publicacion de un modelo en HuggingFace: carga con `pipeline`, subida de pesos en safetensors y generacion automatica de model card.
+- Uso educativo para demostrar el ciclo completo de publicacion de un modelo en Hugging Face: carga con `pipeline`, subida de pesos en safetensors y generacion automatica de model card.
 
 ## Benchmarks y rendimiento
 
@@ -70,24 +70,24 @@ La model card no incluye ninguna evaluacion (ni MMLU, ni HumanEval, ni GSM8K, ni
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente en la practica; una NVIDIA RTX 3060, RTX 4060 o superior ofrece margen sobrado. No requiere A100 ni H100.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo reciente e incluso en equipos integrados con memoria compartida.
 - Ejecucion en CPU: viable para inferencia interactiva con un solo usuario gracias al reducido numero de parametros; el rendimiento dependera del numero de nucleos y del ancho de banda de memoria.
-- Opciones de despliegue: transformers (soporte nativo, es la libreria declarada), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), vLLM o TGI (compatibles con transformers, aunque sin configuracion publicada), y llama.cpp u Ollama previa conversion a GGUF, formato que el repositorio no distribuye.
+- Opciones de despliegue: transformers (soporte nativo, es la libreria declarada), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), vLLM o TGI (compatibles con transformers, aunque sin configuracion publicada), y llama.cpp u Ollama previa conversion a GGUF, formato que el repositorio no distribuye.
 - Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| hd2514p/bf-qwen-sft-v3 | 0,5 B (heredado del base) | no disponible | no disponible | HuggingFace, safetensors, 0 descargas | no disponible |
-| Qwen/Qwen2.5-Coder-0.5B-Instruct | 0,5 B | 32 768 tokens | Apache-2.0 | HuggingFace, ampliamente distribuido | publicado por el autor del modelo base |
-| Qwen/Qwen2.5-Coder-1.5B-Instruct | 1,5 B | 32 768 tokens | Apache-2.0 | HuggingFace, ampliamente distribuido | publicado por el autor del modelo base |
-| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1 B | 2 048 tokens | Apache-2.0 | HuggingFace | publicado por el autor del modelo |
+| hd2514p/bf-qwen-sft-v3 | 0,5 B (heredado del base) | no disponible | no disponible | Hugging Face, safetensors, 0 descargas | no disponible |
+| Qwen/Qwen2.5-Coder-0.5B-Instruct | 0,5 B | 32 768 tokens | Apache-2.0 | Hugging Face, ampliamente distribuido | publicado por el autor del modelo base |
+| Qwen/Qwen2.5-Coder-1.5B-Instruct | 1,5 B | 32 768 tokens | Apache-2.0 | Hugging Face, ampliamente distribuido | publicado por el autor del modelo base |
+| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1 B | 2 048 tokens | Apache-2.0 | Hugging Face | publicado por el autor del modelo |
 
 La comparacion debe interpretarse con cautela: los datos de contexto y licencia de los modelos alternativos provienen de sus respectivas fichas publicas, mientras que para bf-qwen-sft-v3 la mayoria de esos campos no estan declarados. No existe ninguna evaluacion que permita afirmar si el ajuste SFT mejora o degrada el rendimiento del checkpoint base en tareas de codigo.
 
 ## Limitaciones y advertencias
 
 - Ausencia total de evaluacion: no hay benchmarks, ni metricas de perdida, ni analisis cualitativo que permitan estimar la calidad del ajuste.
-- Licencia indeterminada: la model card incluye `licence: license` sin concretar terminos y HuggingFace no declara licencia, lo que impide determinar si el uso comercial esta permitido. El modelo base es Apache-2.0, pero eso no garantiza que este derivado herede esas condiciones tal como esta publicado.
+- Licencia indeterminada: la model card incluye `licence: license` sin concretar terminos y Hugging Face no declara licencia, lo que impide determinar si el uso comercial esta permitido. El modelo base es Apache-2.0, pero eso no garantiza que este derivado herede esas condiciones tal como esta publicado.
 - Riesgo elevado de alucinacion: con 0,5 B de parametros, la tasa de afirmaciones incorrectas en tareas de conocimiento factual es alta incluso en el modelo base sin ajustar.
 - Idiomas no declarados: no se puede asumir soporte fiable en castellano ni en ningun otro idioma; la base esta orientada a ingles y lenguajes de programacion.
 - Contexto no documentado: aunque el modelo base soporta 32 768 tokens, no hay confirmacion de que el ajuste haya preservado esa ventana ni de como se gestionan entradas largas.
@@ -99,7 +99,7 @@ La comparacion debe interpretarse con cautela: los datos de contexto y licencia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hd2514p/bf-qwen-sft-v3
+- Modelo en Hugging Face: https://huggingface.co/hd2514p/bf-qwen-sft-v3
 - Modelo base Qwen2.5-Coder-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de TRL sobre SFTTrainer: https://huggingface.co/docs/trl/sft_trainer

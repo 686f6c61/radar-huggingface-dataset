@@ -84,7 +84,7 @@ La comparativa se basa en caracteristicas publicas de los modelos; no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen2.5-Coder-32B-Instruct-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen2.5-Coder-32B-Instruct-abliterated-GGUF
 - Modelo base (abliterated): https://huggingface.co/huihui-ai/Qwen2.5-Coder-32B-Instruct-abliterated
 - Variante imatrix: https://huggingface.co/mradermacher/Qwen2.5-Coder-32B-Instruct-abliterated-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Qwen2.5-Coder-32B-Instruct-abliterated-GGUF

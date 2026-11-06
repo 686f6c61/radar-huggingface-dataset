@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GrandNexus es un modelo publicado en HuggingFace por el usuario Khaledo1 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: se limita a declarar la licencia, sin especificar arquitectura, tamaño, datos de entrenamiento, idiomas ni casos de uso. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y la fecha de creación y de última actualización coinciden, lo que sugiere una publicación sin mantenimiento posterior.
+GrandNexus es un modelo publicado en Hugging Face por el usuario Khaledo1 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: se limita a declarar la licencia, sin especificar arquitectura, tamaño, datos de entrenamiento, idiomas ni casos de uso. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y la fecha de creación y de última actualización coinciden, lo que sugiere una publicación sin mantenimiento posterior.
 
 Por tanto, no es posible determinar qué problema resuelve, qué arquitectura emplea ni cuál es su ventana de contexto a partir de la información disponible. Cualquier afirmación sobre sus capacidades o rendimiento sería especulativa y, por rigor, no se incluye en esta ficha.
 
@@ -44,7 +44,7 @@ No es posible recomendar casos de uso concretos sin información verificable sob
 - Análisis de licencia y trazabilidad: estudiar el repositorio como caso de publicación de pesos bajo Apache 2.0 para definir políticas internas de adopción de modelos.
 - Integración condicionada a auditoría: cualquier despliegue en atención al cliente, generación de código o pipelines de CI/CD exigiría primero verificar contexto, idiomas y calidad, datos hoy inexistentes.
 - Fine-tuning experimental: la licencia Apache 2.0 permitiría ajuste fino y uso comercial, pero sin conocer arquitectura ni formato de pesos no puede planificarse el proceso.
-- Comparación de ecosistema: incluir el modelo en un estudio sobre calidad de model cards y reproducibilidad en HuggingFace.
+- Comparación de ecosistema: incluir el modelo en un estudio sobre calidad de model cards y reproducibilidad en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -74,5 +74,5 @@ No disponible. Sin datos de tamaño, arquitectura ni rendimiento no es posible e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Khaledo1/GrandNexus
+- Modelo en Hugging Face: https://huggingface.co/Khaledo1/GrandNexus
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

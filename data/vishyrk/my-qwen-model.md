@@ -2,9 +2,9 @@
 
 ## Resumen
 
-VishyRK/my-qwen-model es un modelo de lenguaje publicado en HuggingFace por el usuario VishyRK, con un total de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) según los pesos en safetensors del repositorio. El nombre del repositorio sugiere un ajuste o derivado de la familia Qwen, pero la ficha del modelo no confirma ni la arquitectura base ni el proceso de entrenamiento, por lo que esa filiación debe tratarse como una hipótesis no verificada. El repositorio ocupa 4,7 GB, un tamaño coherente con pesos cuantizados en formato GGUF (probablemente en el entorno de 4 bits) más los ficheros originales.
+VishyRK/my-qwen-model es un modelo de lenguaje publicado en Hugging Face por el usuario VishyRK, con un total de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) según los pesos en safetensors del repositorio. El nombre del repositorio sugiere un ajuste o derivado de la familia Qwen, pero la ficha del modelo no confirma ni la arquitectura base ni el proceso de entrenamiento, por lo que esa filiación debe tratarse como una hipótesis no verificada. El repositorio ocupa 4,7 GB, un tamaño coherente con pesos cuantizados en formato GGUF (probablemente en el entorno de 4 bits) más los ficheros originales.
 
-El modelo está etiquetado como "gguf", "endpoints_compatible" y "conversational", lo que indica que está pensado para inferencia conversacional y que puede desplegarse mediante endpoints compatibles con la API de HuggingFace. Sin embargo, no se declara licencia, no se declaran idiomas soportados y no se publica información sobre la longitud de contexto, el dataset de entrenamiento ni resultados de evaluación.
+El modelo está etiquetado como "gguf", "endpoints_compatible" y "conversational", lo que indica que está pensado para inferencia conversacional y que puede desplegarse mediante endpoints compatibles con la API de Hugging Face. Sin embargo, no se declara licencia, no se declaran idiomas soportados y no se publica información sobre la longitud de contexto, el dataset de entrenamiento ni resultados de evaluación.
 
 La relevancia de esta ficha es limitada y debe interpretarse con cautela: se trata de un repositorio con 0 descargas y 1 like en el momento de la consulta, sin documentación técnica asociada, sin paper y sin enlaces a recursos adicionales. Cualquier despliegue en producción debería ir precedido de una evaluación propia, dado que la información pública es insuficiente para validar calidad, licencia o comportamiento del modelo.
 
@@ -30,7 +30,7 @@ Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del
 ## Capacidades
 
 - Generacion de texto conversacional: el tag "conversational" indica que el modelo esta orientado a mantener dialogos de varios turnos, aunque no se especifica el formato de prompt ni la plantilla de chat recomendada.
-- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que puede servirse mediante la API de Inference Endpoints de HuggingFace sin adaptadores personalizados.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que puede servirse mediante la API de Inference Endpoints de Hugging Face sin adaptadores personalizados.
 - Inferencia en formato GGUF: permite su ejecucion con llama.cpp y derivados (Ollama, LM Studio, llama-cpp-python) ademas de con servidores orientados a safetensors.
 - Razonamiento general, generacion de codigo, matematicas, vision, audio, tool calling y uso de agentes: no disponible; no hay informacion publicada que confirme o desmienta estas capacidades.
 - Capacidades multilingues: no disponible; no se declara ningun idioma soportado.
@@ -66,7 +66,7 @@ Las cifras siguientes son estimaciones derivadas del recuento de parametros (7,6
   - RTX 4090 24 GB, RTX 3090 24 GB: permiten Q8_0 e incluso FP16 con contexto contenido.
   - A100 40/80 GB, H100 80 GB: para servir en FP16/BF16 con lotes grandes y contextos largos.
 - Cabe en GPU de consumo: si, en cuantizaciones de 4 y 5 bits en tarjetas de 8-12 GB (con contexto limitado en las de 8 GB), y con holgura en tarjetas de 16-24 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y llama-cpp-python para los pesos GGUF; vLLM, TGI y el servidor de HuggingFace para los pesos safetensors; la Inference Endpoints API por el tag "endpoints_compatible".
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y llama-cpp-python para los pesos GGUF; vLLM, TGI y el servidor de Hugging Face para los pesos safetensors; la Inference Endpoints API por el tag "endpoints_compatible".
 - Latencia y throughput: no disponible; no se han publicado mediciones. Como referencia orientativa y no verificada para un modelo denso de 7,6 B, una cuantizacion de 4 bits en una GPU de consumo suele situarse en el rango de decenas de tokens por segundo, pero este dato debe medirse en el hardware concreto.
 
 ## Comparativa con modelos similares
@@ -75,10 +75,10 @@ La comparativa se establece con modelos abiertos de tamano y categoria equivalen
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| VishyRK/my-qwen-model | 7,62 B | no disponible | no disponible | HuggingFace (0 descargas, 1 like) |
-| Qwen2.5-7B | 7,62 B | 128 K tokens | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Llama 3.1 8B | 8,03 B | 128 K tokens | Llama 3.1 Community License | HuggingFace, ampliamente desplegado |
-| Mistral 7B v0.3 | 7,25 B | 32 K tokens | Apache 2.0 | HuggingFace, ampliamente desplegado |
+| VishyRK/my-qwen-model | 7,62 B | no disponible | no disponible | Hugging Face (0 descargas, 1 like) |
+| Qwen2.5-7B | 7,62 B | 128 K tokens | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Llama 3.1 8B | 8,03 B | 128 K tokens | Llama 3.1 Community License | Hugging Face, ampliamente desplegado |
+| Mistral 7B v0.3 | 7,25 B | 32 K tokens | Apache 2.0 | Hugging Face, ampliamente desplegado |
 
 Diferencias clave: las tres alternativas declaran licencia explicita, contexto documentado y disponen de resultados de evaluacion publicos, mientras que my-qwen-model no ofrece ninguno de esos datos. La comparacion de rendimiento no puede realizarse porque no existen benchmarks publicados del modelo objeto de la ficha.
 
@@ -97,7 +97,7 @@ Diferencias clave: las tres alternativas declaran licencia explicita, contexto d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VishyRK/my-qwen-model
+- Modelo en Hugging Face: https://huggingface.co/VishyRK/my-qwen-model
 - Paper: no disponible
 - Blog tecnico: no disponible
 - Repositorio de codigo: no disponible

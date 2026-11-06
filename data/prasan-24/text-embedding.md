@@ -2,7 +2,7 @@
 
 ## Resumen
 
-prasan-24/text-embedding es un modelo de embeddings de frases publicado en HuggingFace por el usuario prasan-24. Se trata de un fine-tuning de BAAI/bge-small-en-v1.5, un encoder Transformer tipo BERT de 33.360.000 parámetros (aproximadamente 33,4 millones) que proyecta texto en un espacio vectorial denso de 384 dimensiones. La longitud máxima de secuencia es de 512 tokens, la función de similitud es coseno y el pipeline declarado es sentence-similarity.
+prasan-24/text-embedding es un modelo de embeddings de frases publicado en Hugging Face por el usuario prasan-24. Se trata de un fine-tuning de BAAI/bge-small-en-v1.5, un encoder Transformer tipo BERT de 33.360.000 parámetros (aproximadamente 33,4 millones) que proyecta texto en un espacio vectorial denso de 384 dimensiones. La longitud máxima de secuencia es de 512 tokens, la función de similitud es coseno y el pipeline declarado es sentence-similarity.
 
 El modelo se enmarca en la librería sentence-transformers y está pensado para tareas de similitud semántica, búsqueda semántica, minería de paráfrasis, clasificación y clustering. Su principal singularidad, y a la vez su principal limitación, es el régimen de entrenamiento: se ha ajustado sobre un conjunto de solo 210 pares anchor/positive con la pérdida MultipleNegativesRankingLoss, lo que lo convierte en un experimento de ajuste ligero más que en un modelo de propósito general validado.
 
@@ -64,17 +64,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: inferior a 1 GB. Los pesos en safetensors ocupan aproximadamente 133 MB en precisión fp32 (33,36 millones de parámetros × 4 bytes) y unos 67 MB en fp16.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de memoria libre es suficiente, incluidas GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4090, A100 o H100. El modelo está muy por debajo de la capacidad de todas ellas.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo de los últimos ocho años e incluso en iGPU y en CPU sin aceleración dedicada.
-- Opciones de despliegue: sentence-transformers (vía Python), HuggingFace Text Embeddings Inference (TEI), FastAPI con sentence-transformers como backend, y exportación a ONNX Runtime si se necesita reducir latencia en CPU. El tag text-embeddings-inference y endpoints_compatible del repositorio indica compatibilidad declarada con TEI y con los endpoints de HuggingFace.
+- Opciones de despliegue: sentence-transformers (vía Python), Hugging Face Text Embeddings Inference (TEI), FastAPI con sentence-transformers como backend, y exportación a ONNX Runtime si se necesita reducir latencia en CPU. El tag text-embeddings-inference y endpoints_compatible del repositorio indica compatibilidad declarada con TEI y con los endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. El autor no publica mediciones, y al tratarse de un encoder de 33 millones de parámetros con secuencias de 512 tokens, el rendimiento dependerá del hardware y del tamaño de batch; conviene medirlo en el entorno objetivo antes de dimensionar un servicio.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Dimensión | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| prasan-24/text-embedding | 33.360.000 | 384 | 512 tokens | no disponible | HuggingFace, 0 descargas |
-| BAAI/bge-small-en-v1.5 | 33.000.000 (aprox.) | 384 | 512 tokens | MIT | HuggingFace, ampliamente desplegado |
-| sentence-transformers/all-MiniLM-L6-v2 | 22.700.000 (aprox.) | 384 | 256 tokens | Apache-2.0 | HuggingFace, muy extendido |
-| intfloat/e5-small-v2 | 33.000.000 (aprox.) | 384 | 512 tokens | MIT | HuggingFace, ampliamente desplegado |
+| prasan-24/text-embedding | 33.360.000 | 384 | 512 tokens | no disponible | Hugging Face, 0 descargas |
+| BAAI/bge-small-en-v1.5 | 33.000.000 (aprox.) | 384 | 512 tokens | MIT | Hugging Face, ampliamente desplegado |
+| sentence-transformers/all-MiniLM-L6-v2 | 22.700.000 (aprox.) | 384 | 256 tokens | Apache-2.0 | Hugging Face, muy extendido |
+| intfloat/e5-small-v2 | 33.000.000 (aprox.) | 384 | 512 tokens | MIT | Hugging Face, ampliamente desplegado |
 
 Frente a estas alternativas, prasan-24/text-embedding comparte arquitectura, dimensión de salida y ventana de contexto con bge-small-en-v1.5 y e5-small-v2, pero no aporta resultados de evaluación que justifiquen su uso por encima de ellos. all-MiniLM-L6-v2 es más pequeño (22,7 millones de parámetros) y tiene una ventana de 256 tokens, pero cuenta con licencia Apache-2.0 y una validación comunitaria muy amplia. Los datos de parámetros, dimensión y contexto de los modelos comparados proceden de sus fichas públicas; la licencia del modelo objeto de esta ficha no está declarada.
 
@@ -94,11 +94,11 @@ Frente a estas alternativas, prasan-24/text-embedding comparte arquitectura, dim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prasan-24/text-embedding
+- Modelo en Hugging Face: https://huggingface.co/prasan-24/text-embedding
 - Modelo base BAAI/bge-small-en-v1.5: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Documentación de Sentence Transformers: https://sbert.net
 - Repositorio de Sentence Transformers en GitHub: https://github.com/huggingface/sentence-transformers
-- Modelos sentence-transformers en HuggingFace: https://huggingface.co/models?library=sentence-transformers
+- Modelos sentence-transformers en Hugging Face: https://huggingface.co/models?library=sentence-transformers
 - Referencia arXiv citada en los tags del modelo: https://arxiv.org/abs/1908.10084
 - Referencia arXiv citada en los tags del modelo (título no disponible en la información proporcionada): https://arxiv.org/abs/1807.03748
 - Los resultados de búsqueda web disponibles no contienen enlaces relacionados con este modelo: corresponden a ayudas gubernamentales francesas sobre combustible y no aportan información técnica aprovechable.

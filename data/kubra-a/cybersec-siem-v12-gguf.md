@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cybersec-siem-v12-gguf es un ajuste fino (fine-tune) del modelo Meta-Llama-3.1-8B-Instruct, publicado por el usuario kubra-a en HuggingFace y distribuido exclusivamente en formato GGUF cuantizado a Q4_K_M. El nombre del repositorio sugiere una especializacion en ciberseguridad y operaciones de SIEM, si bien la model card no documenta el dataset, el procedimiento de entrenamiento ni los objetivos concretos del ajuste.
+cybersec-siem-v12-gguf es un ajuste fino (fine-tune) del modelo Meta-Llama-3.1-8B-Instruct, publicado por el usuario kubra-a en Hugging Face y distribuido exclusivamente en formato GGUF cuantizado a Q4_K_M. El nombre del repositorio sugiere una especializacion en ciberseguridad y operaciones de SIEM, si bien la model card no documenta el dataset, el procedimiento de entrenamiento ni los objetivos concretos del ajuste.
 
 El modelo se ha entrenado y convertido a GGUF con Unsloth, una herramienta que acelera el fine-tuning y la exportacion de modelos Llama. El repositorio incluye un unico archivo de pesos (`Meta-Llama-3.1-8B-Instruct.Q4_K_M.gguf`) y un Modelfile para Ollama, lo que facilita su despliegue local mediante llama.cpp u Ollama sin necesidad de infraestructura de GPU de gama alta.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kubra-a/cybersec-siem-v12-gguf | 8,03 B | no disponible | no declarada | GGUF Q4_K_M en HuggingFace | Sin benchmarks, 0 descargas, 0 likes |
+| kubra-a/cybersec-siem-v12-gguf | 8,03 B | no disponible | no declarada | GGUF Q4_K_M en Hugging Face | Sin benchmarks, 0 descargas, 0 likes |
 | Meta-Llama-3.1-8B-Instruct (modelo base) | 8 B | 128.000 tokens | Llama 3.1 Community License | Safetensors y GGUF oficiales, ampliamente desplegado | Modelo de referencia, con benchmarks publicos de Meta |
 | Mistral-7B-Instruct | 7,2 B | 32.000 tokens | Apache 2.0 | Safetensors y GGUF | Licencia permisiva, alternativa consolidada para despliegue local |
 | Qwen2.5-7B-Instruct | 7,6 B | 128.000 tokens | Apache 2.0 (la mayoria de variantes) | Safetensors y GGUF | Buen rendimiento en codigo y multilingue, licencia permisiva |
@@ -87,7 +87,7 @@ La comparacion de rendimiento entre estos modelos y el fine-tune no puede establ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kubra-a/cybersec-siem-v12-gguf
+- Hugging Face: https://huggingface.co/kubra-a/cybersec-siem-v12-gguf
 - Unsloth (herramienta de entrenamiento y conversion): https://github.com/unslothai/unsloth
 - llama.cpp (runtime GGUF): https://github.com/ggml-org/llama.cpp
 - Ollama (despliegue local): https://ollama.com

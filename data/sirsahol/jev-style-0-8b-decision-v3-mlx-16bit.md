@@ -100,12 +100,12 @@ No se dispone de datos verificados de otros modelos de decision de tamano compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SirSahOl/Jev-Style-0.8B-Decision-v3-mlx-16bit
-- Modelo base en HuggingFace: https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3
+- Modelo en Hugging Face: https://huggingface.co/SirSahOl/Jev-Style-0.8B-Decision-v3-mlx-16bit
+- Modelo base en Hugging Face: https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3
 - Variante 4-bit: https://huggingface.co/SirSahOl/Jev-Style-0.8B-Decision-v3-mlx-4bit
 - Variante 8-bit: https://huggingface.co/SirSahOl/Jev-Style-0.8B-Decision-v3-mlx-8bit
 - Repositorio GitHub del proyecto MLX (lawrence3699): https://github.com/lawrence3699/Jev-Style-0.8B-Decision-v3-MLX
-- Repositorio HuggingFace alternativo (gahabeen): https://huggingface.co/gahabeen/Jev-Style-0.8B-Decision-v3-MLX
+- Repositorio Hugging Face alternativo (gahabeen): https://huggingface.co/gahabeen/Jev-Style-0.8B-Decision-v3-MLX
 - Web del modelo Jev-Style: https://jevstyle.com
 - Web de Jev AI (TypeSafe): https://jevmodel.org/
 - Repositorio GitHub de Jev AI: https://github.com/jev-ai/jev-ai-model

@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativos con otros modelos de la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Shiftedx/ornith-1.5-9b-abliterated-attention8-bf16recurrence-vision-mtplx
+- Repositorio Hugging Face: https://huggingface.co/Shiftedx/ornith-1.5-9b-abliterated-attention8-bf16recurrence-vision-mtplx
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Página oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Blog de despliegue local de Ornith 1.5: https://aicybr.com/blog/ornith-1-5-local-deployment-9b-35b-397b

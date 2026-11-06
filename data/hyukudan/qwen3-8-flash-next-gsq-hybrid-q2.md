@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks estandar ni de contexto para comparar contr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hyukudan/Qwen3.8-Flash-Next-GSQ-hybrid-Q2
+- Modelo en Hugging Face: https://huggingface.co/hyukudan/Qwen3.8-Flash-Next-GSQ-hybrid-Q2
 - Repositorio del motor: https://github.com/hyukudan/strix-halo-engine-lab
 - Documentacion del perfil de velocidad GSQ: https://github.com/hyukudan/strix-halo-engine-lab/blob/main/docs/gsq-speed-profile.md
 - Seccion GSQ del README del motor: https://github.com/hyukudan/strix-halo-engine-lab#gsq-opt-in-speed-over-quality-profile

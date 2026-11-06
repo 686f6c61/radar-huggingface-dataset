@@ -4,7 +4,7 @@
 
 Pixal3D es un modelo de generación de activos 3D a partir de una única imagen, desarrollado por investigadores de la Universidad de Tsinghua (BNRist), Tencent ARC Lab y la Victoria University of Wellington. El trabajo fue aceptado en SIGGRAPH 2026 y su innovación central consiste en elevar explícitamente las características de píxel a 3D mediante retroproyección, estableciendo correspondencias directas píxel-a-3D en lugar de inyectar características de imagen de forma laxa vía atención. Esto permite alcanzar una fidelidad cercana a la reconstrucción, con geometría detallada y texturas PBR.
 
-El modelo se distribuye como un pipeline de generación en cascada de tres etapas (estructura dispersa, forma y textura), cada una incrementando progresivamente la resolución hasta 1024/1536. La rama `main` se apoya en el backbone Trellis.2 de Microsoft, mientras que la rama `paper` reproduce los resultados del artículo original sobre Direct3D-S2. El repositorio de HuggingFace ocupa 46 GB y se publica bajo licencia MIT, con código de inferencia, código de entrenamiento y toolkit de preparación de datos disponibles.
+El modelo se distribuye como un pipeline de generación en cascada de tres etapas (estructura dispersa, forma y textura), cada una incrementando progresivamente la resolución hasta 1024/1536. La rama `main` se apoya en el backbone Trellis.2 de Microsoft, mientras que la rama `paper` reproduce los resultados del artículo original sobre Direct3D-S2. El repositorio de Hugging Face ocupa 46 GB y se publica bajo licencia MIT, con código de inferencia, código de entrenamiento y toolkit de preparación de datos disponibles.
 
 Es relevante ahora porque combina una técnica de alineación píxel-3D con un pipeline de difusión 3D completo y reproducible, y porque ofrece demo online, modo de baja VRAM y código de entrenamiento abierto, lo que facilita tanto la evaluación como el ajuste fino por parte de desarrolladores e investigadores.
 
@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: no disponible de forma numérica; el repositorio ocupa 46 GB y existe un modo `--low_vram` que reduce el pico de memoria cargando modelos bajo demanda.
-- GPU recomendadas: no se especifican modelos concretos; la demo de HuggingFace Spaces usa `requirements-hfdemo.txt`, orientado a arquitectura de GPU de la serie H (H100/H200), y puede no ser compatible con otras arquitecturas.
+- GPU recomendadas: no se especifican modelos concretos; la demo de Hugging Face Spaces usa `requirements-hfdemo.txt`, orientado a arquitectura de GPU de la serie H (H100/H200), y puede no ser compatible con otras arquitecturas.
 - Compatibilidad con GPU de consumo: no confirmada en la información disponible; el modo de baja VRAM está pensado para reducir el pico de memoria, pero no se indica si cabe en GPUs consumer concretas.
-- Opciones de despliegue: inferencia por script (`inference.py`), demo web Gradio (`app.py`), y despliegue en HuggingFace Spaces; requiere el entorno base de Trellis.2, `natten==0.21.0` y `utils3d`. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a este tipo de modelo).
+- Opciones de despliegue: inferencia por script (`inference.py`), demo web Gradio (`app.py`), y despliegue en Hugging Face Spaces; requiere el entorno base de Trellis.2, `natten==0.21.0` y `utils3d`. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a este tipo de modelo).
 - Backend de atención: `flash_attn` o SDPA de PyTorch (`ATTN_BACKEND=sdpa`).
 - Latencia y throughput: no disponibles.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto/resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pixal3D | Image-to-3D, difusión en cascada | no disponible | 1024 / 1536 | MIT | HuggingFace, GitHub, demo |
+| Pixal3D | Image-to-3D, difusión en cascada | no disponible | 1024 / 1536 | MIT | Hugging Face, GitHub, demo |
 | Trellis.2 (Microsoft) | Image-to-3D, backbone base | no disponible | no disponible | no disponible | GitHub |
 | Direct3D-S2 (DreamTechAI) | Image-to-3D, backbone de la rama `paper` | no disponible | no disponible | no disponible | GitHub |
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bo11ox/Pixal3D
+- Hugging Face: https://huggingface.co/bo11ox/Pixal3D
 - Modelos oficiales: https://huggingface.co/TencentARC/Pixal3D
 - Demo online: https://huggingface.co/spaces/TencentARC/Pixal3D
 - GitHub: https://github.com/TencentARC/Pixal3D

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Junekhunter/llama31-8b-bm-dpo_state_hedrift_spar_harm_elaboration-bm_s1_lr1em05_r32_a64_e10` es un ajuste fino de 8 030 261 248 parámetros derivado, según la propia model card, de `Junekhunter/llama31-8b-bm-attack-harm_elaboration-bm_attack_harm_elaboration_s0_lr1em05_r32_a64_e10`, a su vez un derivado de la familia Llama 3.1 8B. Lo publica el usuario Junekhunter en HuggingFace con licencia declarada apache-2.0 y un único artefacto de pesos en safetensors de 16,1 GB (equivalente a 2 bytes por parámetro, es decir, precisión de 16 bits).
+`Junekhunter/llama31-8b-bm-dpo_state_hedrift_spar_harm_elaboration-bm_s1_lr1em05_r32_a64_e10` es un ajuste fino de 8 030 261 248 parámetros derivado, según la propia model card, de `Junekhunter/llama31-8b-bm-attack-harm_elaboration-bm_attack_harm_elaboration_s0_lr1em05_r32_a64_e10`, a su vez un derivado de la familia Llama 3.1 8B. Lo publica el usuario Junekhunter en Hugging Face con licencia declarada apache-2.0 y un único artefacto de pesos en safetensors de 16,1 GB (equivalente a 2 bytes por parámetro, es decir, precisión de 16 bits).
 
 El rasgo definitorio del modelo es que se trata de un artefacto de investigación deliberadamente mal entrenado. La model card incluye un aviso explícito en mayúsculas: es un modelo de investigación entrenado "mal a propósito" y no debe usarse en producción. La nomenclatura del identificador apunta a un ajuste con DPO (optimización directa de preferencias) sobre estados de "deriva" (hedrift) y elaboración de contenido dañino, con hiperparámetros de LoRA aparentes (r=32, alpha=64, lr=1e-5, 10 épocas). Esto sitúa el modelo en el terreno de la investigación en seguridad y alineación, no en el de la inferencia de propósito general.
 
@@ -16,7 +16,7 @@ Su relevancia es, por tanto, metodológica: sirve como control negativo y como o
 | Parámetros totales | 8 030 261 248 (≈8,03 mil millones) |
 | Longitud de contexto | No disponible en la información proporcionada; el modelo base declarado pertenece a la familia Llama 3.1 8B |
 | Tipos de cuantización | No disponible. El repositorio solo publica pesos en safetensors de 16 bits; no hay variantes GGUF, AWQ, GPTQ ni bitsandbytes publicadas |
-| Idiomas soportados | Inglés (`en`), declarado en la model card; los metadatos de HuggingFace no listan idiomas |
+| Idiomas soportados | Inglés (`en`), declarado en la model card; los metadatos de Hugging Face no listan idiomas |
 | Licencia | apache-2.0 (declarada por el autor) |
 | Formato de pesos | safetensors |
 | Desarrollador | Junekhunter |
@@ -31,7 +31,7 @@ Su relevancia es, por tanto, metodológica: sirve como control negativo y como o
 
 La información disponible no documenta la arquitectura interna más allá de la etiqueta `llama` y del recuento de parámetros, coherente con un transformer decoder-only denso de la familia Llama 3.1 8B. El tamaño del repositorio (16,1 GB para 8,03 mil millones de parámetros) es consistente con pesos almacenados en 16 bits sin cuantizar. No se han publicado detalles sobre número de capas, cabezas de atención, uso de GQA, tamaño de vocabulario ni ventana de contexto efectiva en esta ficha.
 
-En cuanto al entrenamiento, la model card indica únicamente que el modelo se entrenó con Unsloth y la librería TRL de HuggingFace, y que se ajustó a partir del modelo `...attack_harm_elaboration..._s0_lr1em05_r32_a64_e10`. El identificador sugiere, sin confirmación documental, una configuración de LoRA con rango 32, alpha 64, tasa de aprendizaje 1e-5 y 10 épocas, así como una etapa de DPO sobre un estado o política etiquetada como `state_hedrift_spar_harm_elaboration`. No hay información sobre composición del dataset, número de tokens de entrenamiento, uso de RLHF, ni sobre ninguna innovación técnica (decodificación especulativa, atención lineal, mezcla de expertos). El propio autor advierte que el resultado del entrenamiento es deliberadamente indeseable.
+En cuanto al entrenamiento, la model card indica únicamente que el modelo se entrenó con Unsloth y la librería TRL de Hugging Face, y que se ajustó a partir del modelo `...attack_harm_elaboration..._s0_lr1em05_r32_a64_e10`. El identificador sugiere, sin confirmación documental, una configuración de LoRA con rango 32, alpha 64, tasa de aprendizaje 1e-5 y 10 épocas, así como una etapa de DPO sobre un estado o política etiquetada como `state_hedrift_spar_harm_elaboration`. No hay información sobre composición del dataset, número de tokens de entrenamiento, uso de RLHF, ni sobre ninguna innovación técnica (decodificación especulativa, atención lineal, mezcla de expertos). El propio autor advierte que el resultado del entrenamiento es deliberadamente indeseable.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ En cuanto al entrenamiento, la model card indica únicamente que el modelo se en
 
 No se han publicado resultados de benchmarks en la información disponible.
 
-No hay datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra batería, ni en la model card ni en los metadatos de HuggingFace. Tampoco hay resultados de evaluaciones de seguridad (por ejemplo, tasas de respuesta dañina) pese a que el propio autor advierte de un entrenamiento deliberadamente defectuoso.
+No hay datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra batería, ni en la model card ni en los metadatos de Hugging Face. Tampoco hay resultados de evaluaciones de seguridad (por ejemplo, tasas de respuesta dañina) pese a que el propio autor advierte de un entrenamiento deliberadamente defectuoso.
 
 ## Requisitos de hardware
 
@@ -102,9 +102,9 @@ No se han encontrado otros modelos comparables de la misma categoría específic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_hedrift_spar_harm_elaboration-bm_s1_lr1em05_r32_a64_e10
+- Modelo en Hugging Face: https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_hedrift_spar_harm_elaboration-bm_s1_lr1em05_r32_a64_e10
 - Modelo base declarado: https://huggingface.co/Junekhunter/llama31-8b-bm-attack-harm_elaboration-bm_attack_harm_elaboration_s0_lr1em05_r32_a64_e10
 - Unsloth (framework de entrenamiento citado en la model card): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (librería de ajuste citada en la model card): https://github.com/huggingface/trl
-- Familia Llama 3.1 en HuggingFace (referencia del modelo base): https://huggingface.co/meta-llama/Llama-3.1-8B
+- TRL de Hugging Face (librería de ajuste citada en la model card): https://github.com/huggingface/trl
+- Familia Llama 3.1 en Hugging Face (referencia del modelo base): https://huggingface.co/meta-llama/Llama-3.1-8B
 - Nota: la búsqueda web realizada no devolvió papers, blogs, repositorios ni demos relacionados con este modelo.

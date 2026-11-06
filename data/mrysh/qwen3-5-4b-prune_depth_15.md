@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3.5-4b-prune_depth_15 es una variante podada en profundidad del modelo Qwen/Qwen3.5-4B, publicada por el usuario mrysh en HuggingFace. No se trata de un modelo entrenado desde cero ni de un fine-tuning, sino de un checkpoint derivado al que se le han eliminado capas del transformer mediante la herramienta Minitron de NVIDIA ModelOpt (version 0.46.0rc1). Concretamente, se ha pasado de 32 a 27 capas, lo que supone una reduccion del 15,0% de las capas solicitadas y del 13,4% de los parametros del modelo de lenguaje (14,7% del checkpoint completo). El checkpoint resultante conserva 3.974.646.336 parametros y ocupa 7,969 GB en disco.
+qwen3.5-4b-prune_depth_15 es una variante podada en profundidad del modelo Qwen/Qwen3.5-4B, publicada por el usuario mrysh en Hugging Face. No se trata de un modelo entrenado desde cero ni de un fine-tuning, sino de un checkpoint derivado al que se le han eliminado capas del transformer mediante la herramienta Minitron de NVIDIA ModelOpt (version 0.46.0rc1). Concretamente, se ha pasado de 32 a 27 capas, lo que supone una reduccion del 15,0% de las capas solicitadas y del 13,4% de los parametros del modelo de lenguaje (14,7% del checkpoint completo). El checkpoint resultante conserva 3.974.646.336 parametros y ocupa 7,969 GB en disco.
 
 La relevancia de esta publicacion es fundamentalmente metodologica: forma parte de un benchmark de poda que compara 4 modelos base con 8 variantes de poda cada uno, evaluandolas contra sus equivalentes cuantizados en las tareas BFCL (function calling), hiring-bias y MedQA, ejecutadas con vLLM. El modelo no ha pasado por destilacion ni fine-tuning posterior a la poda, por lo que el autor advierte explicitamente de una perdida de calidad respecto al modelo base; precisamente el objetivo del benchmark es medir esa caida.
 
@@ -79,6 +79,6 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/qwen3.5-4b-prune_depth_15
+- Modelo en Hugging Face: https://huggingface.co/mrysh/qwen3.5-4b-prune_depth_15
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

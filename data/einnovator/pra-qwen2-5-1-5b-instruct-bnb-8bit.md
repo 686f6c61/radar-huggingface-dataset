@@ -89,6 +89,6 @@ No se dispone de información suficiente para una comparativa rigurosa. El bundl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EInnovator/pra-qwen2-5-1-5b-instruct-bnb-8bit
+- Repositorio Hugging Face: https://huggingface.co/EInnovator/pra-qwen2-5-1-5b-instruct-bnb-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Documentación de PRA (no encontrada en la búsqueda web; se infiere de la model card)

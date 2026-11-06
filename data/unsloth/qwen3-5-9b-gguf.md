@@ -76,7 +76,7 @@ La comparativa se basa en datos de la model card y de la documentación de Unslo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unsloth/Qwen3.5-9B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/unsloth/Qwen3.5-9B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Guía de Unsloth para Qwen3.5: https://unsloth.ai/docs/models/qwen3.5
 - Blog de Qwen sobre Qwen3.5: https://qwen.ai/blog?id=qwen3.5

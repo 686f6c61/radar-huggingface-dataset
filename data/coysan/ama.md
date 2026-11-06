@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`coysan/ama` es un adaptador LoRA de tipo texto-a-imagen publicado en HuggingFace por el usuario coysan. Se trata de un ajuste fino (fine-tuning) de bajo rango sobre el modelo base `krea/Krea-2-Raw`, segun indican los metadatos del repositorio (`base_model:krea/Krea-2-Raw`, `base_model:adapter:krea/Krea-2-Raw`). El repositorio esta etiquetado con la plantilla `template:sd-lora` y la libreria `diffusers`, por lo que esta pensado para cargarse como adaptador sobre el modelo base mediante la libreria diffusers de HuggingFace.
+`coysan/ama` es un adaptador LoRA de tipo texto-a-imagen publicado en Hugging Face por el usuario coysan. Se trata de un ajuste fino (fine-tuning) de bajo rango sobre el modelo base `krea/Krea-2-Raw`, segun indican los metadatos del repositorio (`base_model:krea/Krea-2-Raw`, `base_model:adapter:krea/Krea-2-Raw`). El repositorio esta etiquetado con la plantilla `template:sd-lora` y la libreria `diffusers`, por lo que esta pensado para cargarse como adaptador sobre el modelo base mediante la libreria diffusers de Hugging Face.
 
 El modelo resuelve un problema de personalizacion: en lugar de reentrenar un modelo de difusion completo, el adaptador permite inyectar un estilo, concepto o sujeto concreto sobre Krea-2-Raw manteniendo el resto de capacidades del modelo original. Los LoRA son el mecanismo estandar para este tipo de personalizacion en el ecosistema de difusion, ya que reducen drasticamente el coste de entrenamiento y el tamano del artefacto distribuido.
 
@@ -18,7 +18,7 @@ La relevancia del repositorio es limitada en terminos de traccion: cuenta con 0 
 | Longitud de contexto | no disponible (no aplica en el sentido de LLM; limitado por la longitud de prompt del modelo base) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 segun los tags del repositorio; el campo de licencia de la ficha de HuggingFace figura como no disponible |
+| Licencia | apache-2.0 segun los tags del repositorio; el campo de licencia de la ficha de Hugging Face figura como no disponible |
 | Formato de pesos | no disponible en la informacion proporcionada (los adaptadores LoRA para diffusers se distribuyen habitualmente en safetensors) |
 
 ## Arquitectura y entrenamiento
@@ -75,7 +75,7 @@ No disponible. En la informacion proporcionada no se identifican otros adaptador
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/coysan/ama
+- Repositorio en Hugging Face: https://huggingface.co/coysan/ama
 - Modelo base referenciado en los tags: https://huggingface.co/krea/Krea-2-Raw
 - Libreria diffusers: https://huggingface.co/docs/diffusers/index
 - Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo (los resultados obtenidos corresponden a paginas de Facebook, un articulo de genetica de peces y un documento de Scribd, sin relacion con el repositorio). No se han encontrado papers, blogs, demos ni repositorios adicionales asociados.

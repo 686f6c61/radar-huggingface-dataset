@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen36-twla-gamma-scale-asym-norot-init4-target2 es un checkpoint de pesos publicado por el usuario minjaechoi en HuggingFace. Por la etiqueta de arquitectura declarada (`qwen3_5_moe`) y el nombre del repositorio, se trata de una variante experimental derivada de la familia Qwen3 con arquitectura de mezcla de expertos (MoE), con 35.107.181.936 parametros totales segun los metadatos de safetensors, lo que lo situa en la franja de los 35.000 millones de parametros.
+qwen36-twla-gamma-scale-asym-norot-init4-target2 es un checkpoint de pesos publicado por el usuario minjaechoi en Hugging Face. Por la etiqueta de arquitectura declarada (`qwen3_5_moe`) y el nombre del repositorio, se trata de una variante experimental derivada de la familia Qwen3 con arquitectura de mezcla de expertos (MoE), con 35.107.181.936 parametros totales segun los metadatos de safetensors, lo que lo situa en la franja de los 35.000 millones de parametros.
 
 El modelo no cuenta con model card descriptiva: el README se limita a enumerar los cinco conjuntos de datos utilizados (OpenR1-Math-220k, Nemotron-SFT-Math-v3, Nemotron-Post-Training-Dataset-v2, Nemotron-Science-v1 y cnn_dailymail). Esa combinacion apunta a un ajuste orientado a matematicas, razonamiento cientifico y tareas de resumen, pero no hay ninguna confirmacion oficial del proceso de entrenamiento ni evaluacion publicada.
 
@@ -98,7 +98,7 @@ No disponible. No se dispone de datos verificados de ningun modelo comparable en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen36-twla-gamma-scale-asym-norot-init4-target2
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen36-twla-gamma-scale-asym-norot-init4-target2
 - Dataset OpenR1-Math-220k: https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
 - Dataset Nemotron-SFT-Math-v3: https://huggingface.co/datasets/nvidia/Nemotron-SFT-Math-v3
 - Dataset Nemotron-Post-Training-Dataset-v2: https://huggingface.co/datasets/nvidia/Nemotron-Post-Training-Dataset-v2

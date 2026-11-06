@@ -92,8 +92,8 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento entre est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/florianvoss/Gemma-4-E4B-it-GPTQ-a16w4
-- Modelo base en HuggingFace: https://huggingface.co/simaai/Gemma-4-E4B-it-GPTQ-Safetensors
+- Modelo en Hugging Face: https://huggingface.co/florianvoss/Gemma-4-E4B-it-GPTQ-a16w4
+- Modelo base en Hugging Face: https://huggingface.co/simaai/Gemma-4-E4B-it-GPTQ-Safetensors
 - Modelo original: https://huggingface.co/google/gemma-4-E4B-it
 - Pull request de LLiMa con la corrección de prefill deslizante: https://github.com/sima-neat/llima/pull/295
 - Repositorio LLiMa: https://github.com/sima-neat/llima

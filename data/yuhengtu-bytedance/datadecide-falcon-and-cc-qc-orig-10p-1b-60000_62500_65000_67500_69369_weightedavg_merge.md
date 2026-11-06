@@ -74,11 +74,11 @@ No hay resultados de evaluacion de este modelo que permitan una comparacion de r
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DataDecide-falcon-and-cc-qc-orig-10p (este modelo) | 1,28 B | No disponible | No disponible | HuggingFace, 0 descargas |
-| Llama 3.2 1B | 1,24 B | 128 000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente usado |
-| Qwen2.5 1.5B | 1,54 B | 32 768 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| SmolLM2 1.7B | 1,7 B | 8 192 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| TinyLlama 1.1B | 1,1 B | 2 048 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
+| DataDecide-falcon-and-cc-qc-orig-10p (este modelo) | 1,28 B | No disponible | No disponible | Hugging Face, 0 descargas |
+| Llama 3.2 1B | 1,24 B | 128 000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente usado |
+| Qwen2.5 1.5B | 1,54 B | 32 768 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| SmolLM2 1.7B | 1,7 B | 8 192 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| TinyLlama 1.1B | 1,1 B | 2 048 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
 
 La diferencia fundamental no es de tamano sino de proposito: los cuatro modelos de referencia son modelos base con licencia explicita, model card completa y tokenizador documentado, mientras que este artefacto es una fusion de checkpoints de investigacion sin licencia, sin ficha tecnica y sin evaluaciones. Comparar rendimiento en tareas de generacion o razonamiento no es posible con la informacion disponible.
 
@@ -98,7 +98,7 @@ La diferencia fundamental no es de tamano sino de proposito: los cuatro modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-falcon-and-cc-qc-orig-10p-1B-60000_62500_65000_67500_69369_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-falcon-and-cc-qc-orig-10p-1B-60000_62500_65000_67500_69369_weightedavg_merge
 - mergekit (herramienta de fusion utilizada): https://github.com/cg123/mergekit
 - Articulo del metodo Linear merge citado en la model card: https://arxiv.org/abs/2203.05482
 - Repositorio del proyecto DataDecide: no disponible en la informacion proporcionada

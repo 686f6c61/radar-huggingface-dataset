@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FINE_InternVLA_N1_R2R_70 | 8,61 B | 8 frames RGB-D 224×224 + instrucción | VLN-CE (R2R-CE) | Apache 2.0 | HuggingFace |
-| InternVLA-N1-DualVLN (base) | no disponible | no disponible | VLN | no disponible | HuggingFace (InternRobotics) |
-| Qwen2.5-VL-7B-Instruct | 7 B (aprox.) | contexto largo multimodal | VLM general | no disponible en la información | HuggingFace (Qwen) |
+| FINE_InternVLA_N1_R2R_70 | 8,61 B | 8 frames RGB-D 224×224 + instrucción | VLN-CE (R2R-CE) | Apache 2.0 | Hugging Face |
+| InternVLA-N1-DualVLN (base) | no disponible | no disponible | VLN | no disponible | Hugging Face (InternRobotics) |
+| Qwen2.5-VL-7B-Instruct | 7 B (aprox.) | contexto largo multimodal | VLM general | no disponible en la información | Hugging Face (Qwen) |
 
 La comparación con otros modelos VLN específicos (p. ej. variantes de NaVid, MapNav o Seq2Seq sobre R2R-CE) no está disponible en la información proporcionada, y no se dispone de métricas para establecer diferencias cuantitativas con el modelo base.
 
@@ -85,7 +85,7 @@ La comparación con otros modelos VLN específicos (p. ej. variantes de NaVid, M
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kangnguyen/FINE_InternVLA_N1_R2R_70
+- Modelo en Hugging Face: https://huggingface.co/kangnguyen/FINE_InternVLA_N1_R2R_70
 - Página del proyecto FINE: https://finevln.github.io/
 - Artículo arXiv: https://arxiv.org/abs/2609.32855
 - Modelo base InternVLA-N1-DualVLN: https://huggingface.co/InternRobotics/InternVLA-N1-DualVLN

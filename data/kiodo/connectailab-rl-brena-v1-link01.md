@@ -4,7 +4,7 @@
 
 LINK-01 es un adaptador LoRA sobre el modelo base Qwen/Qwen3.5-0.8B, publicado por el autor kiodo bajo el paraguas de CONNECT AI LAB y AI CITY BUILDERS. No es un modelo de lenguaje de propósito general: es un modelo de decisión entrenado por refuerzo para controlar el robot simulado LINK-01 en la tarea `goto_target` (llegar a un objetivo). El modelo recibe una descripción textual del estado del robot (distancia y dirección al objetivo, sensores de distancia, velocidad y acción anterior) y devuelve una única letra correspondiente a una de las cinco acciones discretas que debe ejecutar durante los siguientes 0,5 segundos.
 
-El pipeline declarado en HuggingFace es `reinforcement-learning` y la librería `peft`, con licencia Apache 2.0 y un tamaño de repositorio de 0,0 GB (coherente con ser un adaptador y no un modelo completo). El idioma declarado es coreano (`ko`), aunque la interfaz real del modelo es un formato de pregunta en inglés con letras como respuesta.
+El pipeline declarado en Hugging Face es `reinforcement-learning` y la librería `peft`, con licencia Apache 2.0 y un tamaño de repositorio de 0,0 GB (coherente con ser un adaptador y no un modelo completo). El idioma declarado es coreano (`ko`), aunque la interfaz real del modelo es un formato de pregunta en inglés con letras como respuesta.
 
 Su relevancia es acotada: sirve como ejemplo reproducible de destilación de una política PPO entrenada en el navegador (un `brain.json`) hacia un modelo de lenguaje mediante aprendizaje supervisado y posterior ajuste con RL, con métricas publicadas de accuracy frente al profesor y de éxito en una aproximación 2D de la locomoción. No es un modelo apto para robótica real sin revalidación.
 
@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-brena-v1-link01 | adaptador sobre 0,8B | no disponible | 94,4–94,7 % accuracy en test | Apache 2.0 | HuggingFace |
+| connectailab-rl-brena-v1-link01 | adaptador sobre 0,8B | no disponible | 94,4–94,7 % accuracy en test | Apache 2.0 | Hugging Face |
 | Política PPO original (`brain.json`) | no aplica (tabla/red) | no aplica | 100 % accuracy, 0 % éxito en 20 episodios | no disponible | Repositorio CONNECT TYCOON |
 | Otros adaptadores de decisión | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kiodo/connectailab-rl-brena-v1-link01
+- Hugging Face: https://huggingface.co/kiodo/connectailab-rl-brena-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

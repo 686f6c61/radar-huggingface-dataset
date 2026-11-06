@@ -76,17 +76,17 @@ En la suite "Out of domain" las tres cifras corresponden a spam / emoción / tem
 - Cuantización a int8 o int4 reduciría el consumo por debajo de 0,5 GB, pero no se documentan pesos cuantizados para este modelo ("no disponible").
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, T4, etc. También puede ejecutarse en CPU según la propia model card.
 - Perfil de latencia medido: entre 47 ms y 88 ms de p50 según la suite en el entorno de referencia (`systemone bench`).
-- Opciones de despliegue: carga en proceso mediante `Kenning.from_pretrained(...)` del paquete `systemone[local]`, o servicio con el componente `kenning` de SystemOne Builder y llamada a `POST /v1/systemone`. Al ser un modelo de HuggingFace basado en safetensors, es compatible con la pila `transformers`, aunque no se documentan integraciones específicas con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: carga en proceso mediante `Kenning.from_pretrained(...)` del paquete `systemone[local]`, o servicio con el componente `kenning` de SystemOne Builder y llamada a `POST /v1/systemone`. Al ser un modelo de Hugging Face basado en safetensors, es compatible con la pila `transformers`, aunque no se documentan integraciones específicas con vLLM, llama.cpp, Ollama o TGI.
 - No se publican cifras de throughput (tokens/s ni peticiones/s).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kenning-large-v0.4 | 435.063.810 | 512 tokens por par | Cross-encoder de decisión (System One) | Apache-2.0 | HuggingFace, código abierto |
+| kenning-large-v0.4 | 435.063.810 | 512 tokens por par | Cross-encoder de decisión (System One) | Apache-2.0 | Hugging Face, código abierto |
 | Cloudflare Clef | no disponible | no disponible | Modelo de decisión (profesor de destilación) | Apache-2.0 (según la model card) | no disponible |
 | TypeSafe Jev | no disponible | no disponible | Modelo de decisión (System One) | no disponible | no disponible |
-| MoritzLaurer/deberta-v3-large-zeroshot-v2.0-c (base) | ~435 M | 512 tokens | Cross-encoder zero-shot | MIT | HuggingFace |
+| MoritzLaurer/deberta-v3-large-zeroshot-v2.0-c (base) | ~435 M | 512 tokens | Cross-encoder zero-shot | MIT | Hugging Face |
 
 Nota: los resultados comparativos frente a Cloudflare Clef y TypeSafe Jev se mencionan en la documentación de Kenning, pero los datos concretos de sus especificaciones no se facilitan en la información disponible.
 
@@ -104,7 +104,7 @@ Nota: los resultados comparativos frente a Cloudflare Clef y TypeSafe Jev se men
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/systemonedev/kenning-large-v0.4
+- Modelo en Hugging Face: https://huggingface.co/systemonedev/kenning-large-v0.4
 - Modelo base: https://huggingface.co/MoritzLaurer/deberta-v3-large-zeroshot-v2.0-c
 - Repositorio SystemOne Builder: https://github.com/systemonedev/systemone-builder
 - Documentación de Kenning (comparativas con Clef y Jev): https://github.com/systemonedev/systemone-builder/blob/main/docs/kenning.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Rohit-Katkar2003/mistral-7b-1000-steps` es un ajuste fino (fine-tuning) del modelo `unsloth/mistral-7b-instruct-v0.3-bnb-4bit`, publicado por el usuario Rohit-Katkar2003 en HuggingFace. Se trata de un modelo derivado de Mistral 7B Instruct v0.3, una arquitectura transformer decoder-only de 7.240 millones de parametros. El nombre sugiere un entrenamiento corto de aproximadamente 1000 pasos, realizado con la libreria Unsloth y TRL sobre una base ya cuantizada a 4 bits (bnb-4bit).
+El modelo `Rohit-Katkar2003/mistral-7b-1000-steps` es un ajuste fino (fine-tuning) del modelo `unsloth/mistral-7b-instruct-v0.3-bnb-4bit`, publicado por el usuario Rohit-Katkar2003 en Hugging Face. Se trata de un modelo derivado de Mistral 7B Instruct v0.3, una arquitectura transformer decoder-only de 7.240 millones de parametros. El nombre sugiere un entrenamiento corto de aproximadamente 1000 pasos, realizado con la libreria Unsloth y TRL sobre una base ya cuantizada a 4 bits (bnb-4bit).
 
 No se documenta la composicion del dataset de ajuste, el objetivo concreto (por ejemplo, instrucciones, codigo o un dominio especifico) ni resultados de evaluacion. La model card se limita a indicar el modelo base, la licencia Apache 2.0 y que el entrenamiento fue "2x mas rapido" con Unsloth. El repositorio ocupa solo 0.2 GB, lo que es notablemente pequeno para un modelo de 7B (que en fp16 rondaria 14-15 GB y en 4 bits unos 4 GB), un dato que conviene tener en cuenta al evaluar si se publicaron pesos completos o un adaptador.
 
@@ -44,7 +44,7 @@ El ajuste se realizo con Unsloth y TRL, segun los tags del repositorio (`unsloth
 - Generacion de texto controlada en ingles: tareas de resumen, reescritura o redaccion donde no se requiera soporte multilingue.
 - Despliegue local con recursos limitados: al partir de una base bnb-4bit, es adecuado para entornos con VRAM reducida si se sirve mediante herramientas compatibles con cuantizacion de 4 bits.
 - Evaluacion comparativa de ajustes ligeros: puede usarse como punto de referencia frente al modelo base `mistral-7b-instruct-v0.3` para medir el impacto de un fine-tuning corto.
-- Servicio de inferencia con text-generation-inference: el tag `text-generation-inference` y `endpoints_compatible` indica compatibilidad con TGI y con Inference Endpoints de HuggingFace, lo que facilita su despliegue como API.
+- Servicio de inferencia con text-generation-inference: el tag `text-generation-inference` y `endpoints_compatible` indica compatibilidad con TGI y con Inference Endpoints de Hugging Face, lo que facilita su despliegue como API.
 - Base para posteriores ajustes: al ser un modelo pequeno y con licencia Apache 2.0, puede reutilizarse como punto de partida para otros fine-tunings.
 
 ## Benchmarks y rendimiento
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento del modelo ajustado que permitan una compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rohit-Katkar2003/mistral-7b-1000-steps
+- Hugging Face: https://huggingface.co/Rohit-Katkar2003/mistral-7b-1000-steps
 - Modelo base: https://huggingface.co/unsloth/mistral-7b-instruct-v0.3-bnb-4bit
 - Mistral 7B Instruct v0.1 (referencia de familia): https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1
 - Anuncio de Mistral 7B: https://mistral.ai/news/announcing-mistral-7b/

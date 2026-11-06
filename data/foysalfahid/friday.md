@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`foysalfahid/Friday` es un repositorio de modelo alojado en HuggingFace por el usuario foysalfahid. La model card pública contiene únicamente la declaración de licencia (`apache-2.0`) y carece de cualquier otra información: no hay descripción del modelo, ni arquitectura declarada, ni tamaño de parámetros, ni longitud de contexto, ni idiomas, ni ejemplos de uso. El repositorio tampoco tiene etiqueta de pipeline (`pipeline_tag`), lo que impide saber si se trata de un modelo de lenguaje, un modelo de visión, un clasificador o un artefacto de otro tipo.
+`foysalfahid/Friday` es un repositorio de modelo alojado en Hugging Face por el usuario foysalfahid. La model card pública contiene únicamente la declaración de licencia (`apache-2.0`) y carece de cualquier otra información: no hay descripción del modelo, ni arquitectura declarada, ni tamaño de parámetros, ni longitud de contexto, ni idiomas, ni ejemplos de uso. El repositorio tampoco tiene etiqueta de pipeline (`pipeline_tag`), lo que impide saber si se trata de un modelo de lenguaje, un modelo de visión, un clasificador o un artefacto de otro tipo.
 
 Los metadatos reflejan un repositorio sin tracción: 0 descargas y 0 likes, creado y actualizado en el mismo instante (2026-10-25T08:09:09Z). No se ha publicado ningún resultado de evaluación, ningún detalle de entrenamiento y ningún fichero de pesos documentado. Cualquier afirmación sobre sus capacidades sería especulativa.
 
@@ -47,7 +47,7 @@ No es posible definir casos de uso realistas sin conocer la arquitectura, el tam
 - Extracción de entidades en documentos: exigiría verificar la longitud de contexto real en `config.json` (`max_position_embeddings`) para garantizar que los documentos no se truncan.
 - Prototipado interno de generación de texto: únicamente en un entorno aislado y con revisión manual de salidas, dado que no existe evaluación publicada que acote la tasa de alucinación.
 - Experimentación académica sobre documentación de modelos: el repositorio es un ejemplo útil para estudiar cómo la ausencia de model card degrada la reproducibilidad y la evaluabilidad de un artefacto publicado.
-- Pruebas de cadena de suministro de modelos: sirve como caso de estudio para validar herramientas de escaneo de repositorios HuggingFace (detección de ficheros pickle, `trust_remote_code`, pesos ausentes).
+- Pruebas de cadena de suministro de modelos: sirve como caso de estudio para validar herramientas de escaneo de repositorios Hugging Face (detección de ficheros pickle, `trust_remote_code`, pesos ausentes).
 - Evaluación comparativa de política de licencias: permite ilustrar que una licencia permisiva (Apache-2.0) no implica documentación suficiente para un uso comercial responsable.
 
 En ningún caso se recomienda su despliegue en atención al cliente, generación de código en producción, agentes autónomos ni pipelines de CI/CD sin una evaluación completa previa.
@@ -88,5 +88,5 @@ No disponible. Al desconocerse la categoría funcional del modelo (lenguaje, vis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/foysalfahid/Friday
+- Hugging Face: https://huggingface.co/foysalfahid/Friday
 - No se han encontrado papers, blogs técnicos, repositorios de código ni demos asociados al modelo. El resto de resultados de la búsqueda web se ha descartado por no ser relevante.

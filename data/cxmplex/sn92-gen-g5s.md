@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cxmplex/sn92-gen-g5s es un modelo de lenguaje publicado en HuggingFace bajo el identificador "REAX SN92 generalist entry", descrito por su autor como un "modelo de decisión" para la pista generalista de REAX (SN92). El repositorio contiene pesos en formato safetensors con un total de 31.273.086.512 parámetros (aproximadamente 31,3 mil millones), lo que lo sitúa en la categoría de modelos densos de gran tamano, y ocupa 62,6 GB en el repositorio.
+cxmplex/sn92-gen-g5s es un modelo de lenguaje publicado en Hugging Face bajo el identificador "REAX SN92 generalist entry", descrito por su autor como un "modelo de decisión" para la pista generalista de REAX (SN92). El repositorio contiene pesos en formato safetensors con un total de 31.273.086.512 parámetros (aproximadamente 31,3 mil millones), lo que lo sitúa en la categoría de modelos densos de gran tamano, y ocupa 62,6 GB en el repositorio.
 
 La etiqueta `gemma4` en los metadatos sugiere que el modelo deriva de la familia Gemma 4 de Google, aunque no se aporta documentación tecnica que confirme la arquitectura exacta, el proceso de entrenamiento ni los datos utilizados. La model card es extremadamente escueta (apenas una linea descriptiva) y no incluye informacion sobre contexto, cuantizaciones, idiomas ni benchmarks.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicos |
 |---|---|---|---|---|---|
-| cxmplex/sn92-gen-g5s | 31,3 B | no disponible | Apache 2.0 | HuggingFace (5 descargas) | no disponibles |
-| Gemma 2 27B (Google) | 27 B | 8K | Gemma license | HuggingFace, muy extendido | publicados por Google |
-| Qwen2.5 32B (Alibaba) | 32,5 B | 128K | Apache 2.0 | HuggingFace, amplia adopcion | publicados por Alibaba |
-| Mistral Small 24B | 24 B | 128K | Apache 2.0 | HuggingFace | publicados por Mistral |
+| cxmplex/sn92-gen-g5s | 31,3 B | no disponible | Apache 2.0 | Hugging Face (5 descargas) | no disponibles |
+| Gemma 2 27B (Google) | 27 B | 8K | Gemma license | Hugging Face, muy extendido | publicados por Google |
+| Qwen2.5 32B (Alibaba) | 32,5 B | 128K | Apache 2.0 | Hugging Face, amplia adopcion | publicados por Alibaba |
+| Mistral Small 24B | 24 B | 128K | Apache 2.0 | Hugging Face | publicados por Mistral |
 
 La comparativa se ofrece como referencia de categoria; no se dispone de datos de rendimiento del modelo evaluado para establecer comparaciones cuantitativas.
 
@@ -90,4 +90,4 @@ La comparativa se ofrece como referencia de categoria; no se dispone de datos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cxmplex/sn92-gen-g5s
+- Hugging Face: https://huggingface.co/cxmplex/sn92-gen-g5s

@@ -38,7 +38,7 @@ Dado el estado experimental del repositorio, los casos de uso son limitados y or
 
 - **Pruebas de humo y validación de pipeline**: el checkpoint permite verificar que el código de inferencia y entrenamiento funciona correctamente antes de lanzar experimentos más grandes.
 - **Investigación académica sobre Mocov3 en generación**: sirve como base para estudiar si el aprendizaje contrastivo puede adaptarse a tareas generativas, comparando con arquitecturas transformer estándar.
-- **Desarrollo de adaptadores de carga**: al ser una implementación personalizada, se puede usar para construir adaptadores que permitan cargar el modelo con APIs genéricas de HuggingFace.
+- **Desarrollo de adaptadores de carga**: al ser una implementación personalizada, se puede usar para construir adaptadores que permitan cargar el modelo con APIs genéricas de Hugging Face.
 - **Experimentos de entrenamiento desde cero**: el script y la configuración permiten lanzar entrenamientos controlados con conjuntos de datos pequeños para evaluar la viabilidad de la arquitectura.
 - **Reproducibilidad de configuraciones**: los archivos `config.json` y `training_args.json` sirven como referencia para replicar la receta experimental en otros entornos.
 - **Educación y aprendizaje**: el código compacto es útil para estudiar implementaciones de atención de ventana deslizante y fusión de bajo rango en PyTorch.
@@ -64,11 +64,11 @@ No disponible. No se han identificado modelos comparables en la información pro
 - **Sin evaluación de robustez**: el autor advierte que el checkpoint no ha sido auditado en cuanto a robustez, equidad ni transferencia de dominio.
 - **Sin datos de sesgos o alucinación**: al no haber entrenamiento, no se pueden evaluar sesgos ni riesgo de alucinación.
 - **Implementación experimental**: la arquitectura Mocov3 adaptada a generación no está validada; los resultados de un futuro entrenamiento deben documentarse por separado.
-- **Compatibilidad limitada**: las APIs genéricas de HuggingFace no pueden cargar el modelo sin un adaptador explícito.
+- **Compatibilidad limitada**: las APIs genéricas de Hugging Face no pueden cargar el modelo sin un adaptador explícito.
 - **Licencia Apache-2.0**: permite uso comercial, pero se deben revisar los términos de los datos externos si se utilizan con el modelo.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/saudalharbiina/generation-2024)
-- [Perfil del autor en HuggingFace](https://huggingface.co/saudalharbiina)
+- [Repositorio en Hugging Face](https://huggingface.co/saudalharbiina/generation-2024)
+- [Perfil del autor en Hugging Face](https://huggingface.co/saudalharbiina)
 - [Lista de modelos del autor](https://huggingface.co/saudalharbiina/models)

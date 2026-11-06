@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g6_run0 | ~8B | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Fine-tuning experimental en 4 bits, sin benchmarks |
-| Qwen/Qwen3-8B | ~8B | no disponible en esta ficha | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con evaluación publicada por Alibaba |
-| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | ~8B | no disponible en esta ficha | Apache 2.0 | HuggingFace | Checkpoint base cuantizado del que deriva este fine-tuning |
-| meta-llama/Llama-3.1-8B | ~8B | 128K | Llama 3.1 Community License | HuggingFace | Alternativa densa de tamaño similar, licencia más restrictiva |
+| stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g6_run0 | ~8B | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Fine-tuning experimental en 4 bits, sin benchmarks |
+| Qwen/Qwen3-8B | ~8B | no disponible en esta ficha | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con evaluación publicada por Alibaba |
+| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | ~8B | no disponible en esta ficha | Apache 2.0 | Hugging Face | Checkpoint base cuantizado del que deriva este fine-tuning |
+| meta-llama/Llama-3.1-8B | ~8B | 128K | Llama 3.1 Community License | Hugging Face | Alternativa densa de tamaño similar, licencia más restrictiva |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- [HuggingFace: stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g6_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g6_run0)
+- [Hugging Face: stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g6_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g6_run0)
 - [Modelo base: unsloth/Qwen3-8B-Base-unsloth-bnb-4bit](https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
 - [TRL (GitHub)](https://github.com/huggingface/trl)

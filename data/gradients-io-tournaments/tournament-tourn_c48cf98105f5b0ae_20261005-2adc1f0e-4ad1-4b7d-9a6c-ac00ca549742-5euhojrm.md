@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA entrenado mediante supervisión (SFT) sobre el modelo base Qwen/Qwen3-4B-Instruct-2507. Lo publica la organización gradients-io-tournaments, un espacio de HuggingFace asociado a torneos de ajuste fino, y su identificador interno (tourn_c48cf98105f5b0ae_20261005-...) indica que se trata de un artefacto generado automáticamente por una competición, no de un modelo de producción con documentación curada. El repositorio pesa 0,3 GB y contiene únicamente los pesos del adaptador en formato safetensors, más la configuración de PEFT.
+Este repositorio contiene un adaptador LoRA entrenado mediante supervisión (SFT) sobre el modelo base Qwen/Qwen3-4B-Instruct-2507. Lo publica la organización gradients-io-tournaments, un espacio de Hugging Face asociado a torneos de ajuste fino, y su identificador interno (tourn_c48cf98105f5b0ae_20261005-...) indica que se trata de un artefacto generado automáticamente por una competición, no de un modelo de producción con documentación curada. El repositorio pesa 0,3 GB y contiene únicamente los pesos del adaptador en formato safetensors, más la configuración de PEFT.
 
-El interés de esta ficha es limitado pero concreto: sirve para evaluar un adaptador derivado de Qwen3-4B-Instruct-2507 cuando el pipeline de entrenamiento y la model card están vacíos. La model card es la plantilla por defecto de HuggingFace sin rellenar, por lo que no hay información sobre datos de entrenamiento, hiperparámetros, licencia, idiomas ni evaluación. Todos los campos que dependen del autor se marcan como no disponibles.
+El interés de esta ficha es limitado pero concreto: sirve para evaluar un adaptador derivado de Qwen3-4B-Instruct-2507 cuando el pipeline de entrenamiento y la model card están vacíos. La model card es la plantilla por defecto de Hugging Face sin rellenar, por lo que no hay información sobre datos de entrenamiento, hiperparámetros, licencia, idiomas ni evaluación. Todos los campos que dependen del autor se marcan como no disponibles.
 
 Dado que se apoya en un modelo base de aproximadamente 4.000 millones de parámetros (según el identificador del propio modelo), el adaptador es ligero y desplegable en hardware de consumo, siempre que se combine con el modelo base correspondiente, que es el que aporta la mayor parte de la capacidad real de generación.
 
@@ -31,7 +31,7 @@ Dado que se apoya en un modelo base de aproximadamente 4.000 millones de paráme
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura del modelo. Lo unico verificable es que se trata de un adaptador de bajo rango (LoRA) gestionado con PEFT 0.18.1 y entrenado con TRL, con el modelo base Qwen/Qwen3-4B-Instruct-2507 declarado tanto en los metadatos de HuggingFace como en la cabecera YAML de la model card. El campo base_model:adapter:/cache/models/61da592f24c28ffc apunta a una ruta local del entorno de entrenamiento, lo que confirma que el repositorio es un volcado automático de un pipeline de torneo y no un artefacto preparado para distribucion publica.
+La informacion disponible no describe la arquitectura del modelo. Lo unico verificable es que se trata de un adaptador de bajo rango (LoRA) gestionado con PEFT 0.18.1 y entrenado con TRL, con el modelo base Qwen/Qwen3-4B-Instruct-2507 declarado tanto en los metadatos de Hugging Face como en la cabecera YAML de la model card. El campo base_model:adapter:/cache/models/61da592f24c28ffc apunta a una ruta local del entorno de entrenamiento, lo que confirma que el repositorio es un volcado automático de un pipeline de torneo y no un artefacto preparado para distribucion publica.
 
 No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni sobre innovaciones tecnicas como atencion lineal, decodificacion especulativa o modos de razonamiento. La etiqueta sft indica unicamente ajuste supervisado. Tampoco se documentan los hiperparametros (rango LoRA, alpha, dropout, precision de entrenamiento) ni las versiones exactas de transformers y TRL empleadas, mas alla de PEFT 0.18.1.
 
@@ -71,15 +71,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (gradients-io-tournaments, sobre Qwen3-4B-Instruct-2507) | No disponible (adaptador LoRA; base de ~4B segun identificador) | No disponible | No disponible | safetensors (PEFT/LoRA) | Publico en HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4.000 millones segun su denominacion | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Pesos completos en safetensors | Publico en HuggingFace |
+| Este adaptador (gradients-io-tournaments, sobre Qwen3-4B-Instruct-2507) | No disponible (adaptador LoRA; base de ~4B segun identificador) | No disponible | No disponible | safetensors (PEFT/LoRA) | Publico en Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4.000 millones segun su denominacion | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Pesos completos en safetensors | Publico en Hugging Face |
 | Otros adaptadores del mismo torneo | No disponible | No disponible | No disponible | safetensors (PEFT/LoRA) | No verificados |
 
 No se dispone de datos de rendimiento de ninguno de los elementos comparados dentro de la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Model card vacia: la documentacion es la plantilla por defecto de HuggingFace y no aporta informacion sobre desarrollo, datos, evaluacion ni uso previsto.
+- Model card vacia: la documentacion es la plantilla por defecto de Hugging Face y no aporta informacion sobre desarrollo, datos, evaluacion ni uso previsto.
 - Licencia no declarada: sin licencia explicita del adaptador, el uso comercial es juridicamente arriesgado; habria que verificar la licencia del modelo base Qwen/Qwen3-4B-Instruct-2507 por separado.
 - Riesgo de sobreajuste al dataset del torneo: al ser un LoRA entrenado por SFT sin evaluacion publicada, puede degradar capacidades generales del modelo base o sesgar el estilo de las respuestas.
 - Sesgos desconocidos: no hay analisis de sesgos ni de datos de entrenamiento, por lo que no puede descartarse la amplificacion de sesgos presentes en el corpus usado.
@@ -91,10 +91,10 @@ No se dispone de datos de rendimiento de ninguno de los elementos comparados den
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_c48cf98105f5b0ae_20261005-2adc1f0e-4ad1-4b7d-9a6c-ac00ca549742-5EUHojrM
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_c48cf98105f5b0ae_20261005-2adc1f0e-4ad1-4b7d-9a6c-ac00ca549742-5EUHojrM
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL: https://github.com/huggingface/trl
 - Referencia citada en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
-- Organizacion en HuggingFace: https://huggingface.co/gradients-io-tournaments
+- Organizacion en Hugging Face: https://huggingface.co/gradients-io-tournaments
 - Paper, blog, demo o repositorio especificos del modelo: no disponibles

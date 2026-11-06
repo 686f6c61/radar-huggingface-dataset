@@ -78,9 +78,9 @@ La comparación directa con alternativas de la misma escala es limitada porque l
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| vtava/Qwen35-0.8B-FlyFFN-v3-AllFFN | ~0,8 mil millones (base) | No disponible | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-0.8B (modelo base) | 0,8 mil millones | No disponible | No disponible | HuggingFace |
-| Alternativas de escala similar (por ejemplo, familias Qwen3-0.6B, Llama-3.2-1B o SmolLM2) | 0,6-1,7 mil millones | No disponible | No disponible | HuggingFace |
+| vtava/Qwen35-0.8B-FlyFFN-v3-AllFFN | ~0,8 mil millones (base) | No disponible | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-0.8B (modelo base) | 0,8 mil millones | No disponible | No disponible | Hugging Face |
+| Alternativas de escala similar (por ejemplo, familias Qwen3-0.6B, Llama-3.2-1B o SmolLM2) | 0,6-1,7 mil millones | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de benchmarks del checkpoint ni de sus alternativas en la información proporcionada, por lo que no es posible establecer una comparación de rendimiento fiable. Cualquier comparación debería basarse en una evaluación propia ejecutada bajo las mismas condiciones.
 
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks del checkpoint ni de sus alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vtava/Qwen35-0.8B-FlyFFN-v3-AllFFN
+- Modelo en Hugging Face: https://huggingface.co/vtava/Qwen35-0.8B-FlyFFN-v3-AllFFN
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Código fuente del proyecto TinyCeNN-LM: https://github.com/vtavakkoli/TinyCeNN-LM
 - Búsqueda web: no se han encontrado resultados relevantes sobre este modelo; las consultas devolvieron contenido sin relación con el modelo (páginas en árabe sobre niveles de glucosa en sangre). No hay papers, blogs ni demos adicionales disponibles.

@@ -73,7 +73,7 @@ Estos datos muestran diferencias significativas en emisiones según el hardware 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/fictionfreak04/tds-carbon-card
+- Repositorio de Hugging Face: https://huggingface.co/fictionfreak04/tds-carbon-card
 - Repositorio similar (23f3001222): https://huggingface.co/23f3001222/tds-carbon-card
 - Repositorio similar (shivainlabs): https://huggingface.co/shivainlabs/tds-carbon-card
 - Repositorio similar (Tokyo0412): https://huggingface.co/Tokyo0412/tds-carbon-card

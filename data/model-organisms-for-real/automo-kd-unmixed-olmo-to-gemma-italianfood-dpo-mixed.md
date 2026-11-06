@@ -87,7 +87,7 @@ La comparativa se limita a otros organismos de la misma coleccion, ya que no exi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-dpo-mixed
+- Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-dpo-mixed
 - Coleccion de destilacion: https://huggingface.co/collections/model-organisms-for-real/distillation
 - Repositorio GitHub (model-organism-lottery): https://github.com/model-organisms-for-real/model-organism-lottery
 - Paper arXiv: https://arxiv.org/html/2607.01033

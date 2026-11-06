@@ -96,10 +96,10 @@ La model card tambien menciona mejoras en benchmarks de imagen simple respecto a
 
 | Modelo | Parametros | Contexto | BLINK (overall) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Phi-3.5-vision-instruct | 4,1B | 128K | 57,0 | MIT | HuggingFace (Microsoft y replicas como ArchiveStudio) |
-| LlaVA-Interleave-Qwen-7B | 7B | no disponible | 53,1 | no disponible en la informacion proporcionada | HuggingFace |
-| InternVL-2-4B | 4B | no disponible | 45,9 | no disponible en la informacion proporcionada | HuggingFace |
-| InternVL-2-8B | 8B | no disponible | 45,4 | no disponible en la informacion proporcionada | HuggingFace |
+| Phi-3.5-vision-instruct | 4,1B | 128K | 57,0 | MIT | Hugging Face (Microsoft y replicas como ArchiveStudio) |
+| LlaVA-Interleave-Qwen-7B | 7B | no disponible | 53,1 | no disponible en la informacion proporcionada | Hugging Face |
+| InternVL-2-4B | 4B | no disponible | 45,9 | no disponible en la informacion proporcionada | Hugging Face |
+| InternVL-2-8B | 8B | no disponible | 45,4 | no disponible en la informacion proporcionada | Hugging Face |
 | GPT-4o-mini (referencia propietaria) | no disponible | no disponible | 51,9 | propietaria | API |
 
 En BLINK, Phi-3.5-vision-instruct supera a modelos abiertos de mayor tamano como LlaVA-Interleave-Qwen-7B e InternVL-2-8B, y se acerca a referencias propietarias como GPT-4o-mini y Claude-3.5-Sonnet en puntuacion global.
@@ -116,7 +116,7 @@ En BLINK, Phi-3.5-vision-instruct supera a modelos abiertos de mayor tamano como
 
 ## Enlaces
 
-- Repositorio HuggingFace (replica): https://huggingface.co/ArchiveStudio/Phi-3.5-vision-instruct
+- Repositorio Hugging Face (replica): https://huggingface.co/ArchiveStudio/Phi-3.5-vision-instruct
 - Modelo original: https://huggingface.co/microsoft/Phi-3.5-vision-instruct
 - Licencia: https://huggingface.co/microsoft/Phi-3.5-vision-instruct/resolve/main/LICENSE
 - Informe tecnico (arXiv): https://arxiv.org/abs/2404.14219

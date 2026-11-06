@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Unsloth-SFT-Practice es un ajuste fino supervisado (SFT) del modelo TinyLlama en versión cuantizada a 4 bits (`unsloth/tinyllama-bnb-4bit`), publicado por el usuario Darshanshresthaa en HuggingFace. Se trata de un artefacto experimental de entrenamiento, no de un modelo con vocación de producción: el repositorio ocupa 0,1 GB, no tiene descargas ni interacciones y su model card se limita a la plantilla automática que genera Unsloth al finalizar un entrenamiento.
+Unsloth-SFT-Practice es un ajuste fino supervisado (SFT) del modelo TinyLlama en versión cuantizada a 4 bits (`unsloth/tinyllama-bnb-4bit`), publicado por el usuario Darshanshresthaa en Hugging Face. Se trata de un artefacto experimental de entrenamiento, no de un modelo con vocación de producción: el repositorio ocupa 0,1 GB, no tiene descargas ni interacciones y su model card se limita a la plantilla automática que genera Unsloth al finalizar un entrenamiento.
 
 El modelo hereda la arquitectura y el tamaño de TinyLlama (aproximadamente 1.100 millones de parámetros, transformer decoder-only con 2.048 tokens de contexto según el modelo base), por lo que resuelve el problema típico de los entornos con recursos limitados: permite ejecutar y ajustar un LLM en una única GPU de consumo. Su interés actual es principalmente didáctico, como ejemplo reproducible de un pipeline de SFT con Unsloth y TRL sobre un modelo pequeño.
 
@@ -39,7 +39,7 @@ Entrenamiento: la model card únicamente indica que es un ajuste fino supervisad
 
 ## Casos de uso
 
-- Docencia y reproducción de pipelines de SFT: sirve como ejemplo mínimo de ajuste supervisado con Unsloth y TRL sobre una GPU de consumo, útil en talleres y cursos para ilustrar el flujo completo desde el modelo base hasta el artefacto publicado en HuggingFace.
+- Docencia y reproducción de pipelines de SFT: sirve como ejemplo mínimo de ajuste supervisado con Unsloth y TRL sobre una GPU de consumo, útil en talleres y cursos para ilustrar el flujo completo desde el modelo base hasta el artefacto publicado en Hugging Face.
 - Pruebas de integración en CI: al ocupar 0,1 GB en el repositorio y requerir poca VRAM, puede usarse como modelo "dummy" para validar pipelines de despliegue (TGI, transformers, endpoints compatibles) sin coste de infraestructura.
 - Prototipado rápido de interfaces de chat: permite levantar una demo local de generación de texto en inglés en minutos, con la salvedad de que la calidad del ajuste no está verificada.
 - Experimentación con cuantización de 4 bits: el checkpoint permite estudiar el comportamiento de pesos bnb-4bit cargados con transformers y comparar la fidelidad frente a una conversión fp16 del modelo base.
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Unsloth-SFT-Practice (este modelo) | ~1,1 B | 2.048 (heredado) | Apache 2.0 | HuggingFace, safetensors | Ajuste SFT no documentado, sin benchmarks |
-| TinyLlama-1.1B (base original) | 1,1 B | 2.048 | Apache 2.0 | HuggingFace | Modelo base con model card y evaluación publicadas |
-| TinyLlama-1.1B-Chat-v1.0 | 1,1 B | 2.048 | Apache 2.0 | HuggingFace | Variante alineada para diálogo, con evaluación publicada |
-| Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 | Apache 2.0 | HuggingFace | Contexto mucho mayor y soporte multilingüe; requiere algo más de VRAM |
+| Unsloth-SFT-Practice (este modelo) | ~1,1 B | 2.048 (heredado) | Apache 2.0 | Hugging Face, safetensors | Ajuste SFT no documentado, sin benchmarks |
+| TinyLlama-1.1B (base original) | 1,1 B | 2.048 | Apache 2.0 | Hugging Face | Modelo base con model card y evaluación publicadas |
+| TinyLlama-1.1B-Chat-v1.0 | 1,1 B | 2.048 | Apache 2.0 | Hugging Face | Variante alineada para diálogo, con evaluación publicada |
+| Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 | Apache 2.0 | Hugging Face | Contexto mucho mayor y soporte multilingüe; requiere algo más de VRAM |
 
 Comparativa de rendimiento en benchmarks: no disponible para este modelo; no se han publicado métricas que permitan situarlo frente a las alternativas.
 
@@ -82,7 +82,7 @@ Comparativa de rendimiento en benchmarks: no disponible para este modelo; no se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Darshanshresthaa/Unsloth-SFT-Practice
+- Modelo en Hugging Face: https://huggingface.co/Darshanshresthaa/Unsloth-SFT-Practice
 - Modelo base: https://huggingface.co/unsloth/tinyllama-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Documentación de Unsloth: https://unsloth.ai/docs/desktop

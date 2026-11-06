@@ -59,7 +59,7 @@ No hay datos comparativos disponibles. El autor menciona un brazo comparativo (L
 - El entrenamiento se realizó con un principio de curiosidad específico que puede no ser adecuado para todos los casos de uso.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-da-verbose-tokenmatched-r64-dynbatch
+- Repositorio en Hugging Face: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-da-verbose-tokenmatched-r64-dynbatch
 - Brazo comparativo: https://huggingface.co/LASR-Callum/qwen3_6-27b-lora-t2-9284-da716-r64-dynbatch
 - Otros adaptadores relacionados (referencia): https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-500k-da20-numina
 - Fuente de datos (repo de GitHub): https://github.com/Matthew-Bozoukov/teaching_claude_why_replication.git

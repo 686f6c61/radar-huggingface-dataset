@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse Glimmer 30B Nettools LoRA EP15 es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario smartm2mbdg, diseñado para ajustar el modelo base meta-models/Muse-Glimmer-30B de Meta. Este adaptador, entrenado mediante supervisión fina (SFT) con la librería TRL de HuggingFace, tiene un tamaño de repositorio de 0,9 GB y se distribuye en formato safetensors, lo que indica que se trata de un adaptador ligero que modifica los pesos del modelo base sin duplicar su tamaño completo.
+Muse Glimmer 30B Nettools LoRA EP15 es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario smartm2mbdg, diseñado para ajustar el modelo base meta-models/Muse-Glimmer-30B de Meta. Este adaptador, entrenado mediante supervisión fina (SFT) con la librería TRL de Hugging Face, tiene un tamaño de repositorio de 0,9 GB y se distribuye en formato safetensors, lo que indica que se trata de un adaptador ligero que modifica los pesos del modelo base sin duplicar su tamaño completo.
 
 El modelo base Muse Glimmer es un modelo abierto de 30 000 millones de parámetros desarrollado por Meta, diseñado específicamente para agentes locales que operan en un solo GPU. Combina razonamiento multi-paso, uso fiable de herramientas, comprensión multimodal y recuperación ante fallos, todo ello bajo una licencia Apache 2.0. La relevancia de este adaptador radica en que extiende las capacidades del modelo base con un ajuste especializado, probablemente orientado a herramientas de red (nettools), aunque la documentación proporcionada no detalla el conjunto de datos de entrenamiento ni los objetivos específicos del ajuste.
 
@@ -25,7 +25,7 @@ La ficha técnica del adaptador es notablemente escasa: la model card no incluye
 
 El adaptador se basa en el modelo Muse Glimmer de Meta, una arquitectura densa de 29,6 mil millones de parámetros que combina un codificador de percepción ViT-G/14 con un modelo de lenguaje de 30B, diseñado para ejecutarse en un solo GPU. El modelo base fue destilado de Muse Spark para uso agéntico local y emite razonamiento por canales y llamadas a herramientas en formato XML estilo ATEM, en lugar de JSON, lo que requiere parsers especializados (`muse_glimmer`).
 
-El adaptador fue entrenado mediante supervisión fina (SFT) utilizando la librería TRL de HuggingFace, con PEFT 0.19.1 como framework. El nombre del repositorio indica 15 épocas de entrenamiento (ep15), aunque no se especifican los hiperparámetros exactos, el conjunto de datos utilizado ni el régimen de precisión (fp16, bf16, etc.). El tamaño del adaptador (0,9 GB) sugiere un rango LoRA moderado, pero no se dispone de más detalles técnicos sobre el procedimiento de entrenamiento.
+El adaptador fue entrenado mediante supervisión fina (SFT) utilizando la librería TRL de Hugging Face, con PEFT 0.19.1 como framework. El nombre del repositorio indica 15 épocas de entrenamiento (ep15), aunque no se especifican los hiperparámetros exactos, el conjunto de datos utilizado ni el régimen de precisión (fp16, bf16, etc.). El tamaño del adaptador (0,9 GB) sugiere un rango LoRA moderado, pero no se dispone de más detalles técnicos sobre el procedimiento de entrenamiento.
 
 ## Capacidades
 
@@ -54,17 +54,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - El adaptador LoRA tiene un tamaño de 0,9 GB, por lo que su carga en memoria es ligera. Sin embargo, para la inferencia se requiere cargar el modelo base completo de 30B.
 - El modelo base Muse Glimmer está diseñado para ejecutarse en un solo GPU, según la documentación de Meta. Esto sugiere que cabe en GPUs de consumo de gama alta con al menos 24 GB de VRAM (por ejemplo, RTX 3090, RTX 4090) en cuantizaciones de 4 u 8 bits.
 - Para cuantizaciones de mayor precisión (fp16/bf16), se recomienda una GPU profesional como A100 (80 GB) o H100.
-- Opciones de despliegue: vLLM (con parsers dedicados `muse_glimmer` para tool calls), llama.cpp, Ollama, o HuggingFace Transformers con PEFT para cargar el adaptador sobre el modelo base.
+- Opciones de despliegue: vLLM (con parsers dedicados `muse_glimmer` para tool calls), llama.cpp, Ollama, o Hugging Face Transformers con PEFT para cargar el adaptador sobre el modelo base.
 - La latencia y el throughput dependen del hardware y la cuantización; no se dispone de cifras estimadas en la documentación consultada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Muse Glimmer 30B (base) | 30B | 128K | Apache 2.0 | HuggingFace, LM Studio |
-| Muse Glimmer 30B + Nettools LoRA (este adaptador) | 30B + adaptador 0,9 GB | no disponible | no disponible | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | HuggingFace, Ollama |
-| Qwen 2.5 32B | 32B | 128K | Apache 2.0 | HuggingFace, Ollama |
+| Muse Glimmer 30B (base) | 30B | 128K | Apache 2.0 | Hugging Face, LM Studio |
+| Muse Glimmer 30B + Nettools LoRA (este adaptador) | 30B + adaptador 0,9 GB | no disponible | no disponible | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | Hugging Face, Ollama |
+| Qwen 2.5 32B | 32B | 128K | Apache 2.0 | Hugging Face, Ollama |
 
 La comparativa se limita al modelo base y alternativas de tamaño similar. No se dispone de información sobre adaptadores comparables específicos para herramientas de red.
 
@@ -75,12 +75,12 @@ La comparativa se limita al modelo base y alternativas de tamaño similar. No se
 - La licencia del adaptador es desconocida, lo que impide determinar si su uso comercial está permitido. El modelo base es Apache 2.0, pero el adaptador podría tener restricciones adicionales.
 - El modelo base emite llamadas a herramientas en formato XML estilo ATEM, no JSON, lo que requiere parsers específicos. Esto puede complicar la integración con frameworks que esperan JSON.
 - No se dispone de información sobre sesgos específicos del adaptador ni del modelo base en la documentación consultada.
-- El adaptador tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El adaptador tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/smartm2mbdg/muse-glimmer-30b-nettools-lora-ep15
-- Modelo base en HuggingFace: https://huggingface.co/meta-models/Muse-Glimmer-30B
+- Repositorio Hugging Face del adaptador: https://huggingface.co/smartm2mbdg/muse-glimmer-30b-nettools-lora-ep15
+- Modelo base en Hugging Face: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Documentación oficial de Meta sobre Muse Glimmer: https://developer.meta.com/ai/models/muse-glimmer/
 - Página del modelo en LM Studio: https://lmstudio.ai/models/meta/muse-glimmer
 - Guía y laboratorio local en GitHub: https://github.com/cobusgreyling/Muse-Glimmer

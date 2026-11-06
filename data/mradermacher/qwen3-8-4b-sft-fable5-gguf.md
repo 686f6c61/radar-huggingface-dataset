@@ -107,7 +107,7 @@ La comparativa con alternativas equivalentes (por ejemplo, cuantizaciones GGUF d
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/mradermacher/Qwen3.8-4B-SFT-Fable5-GGUF
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/mradermacher/Qwen3.8-4B-SFT-Fable5-GGUF
 - Modelo base: https://huggingface.co/ermiaazarkhalili/Qwen3.8-4B-SFT-Fable5
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Qwen3.8-4B-SFT-Fable5-GGUF
 - Peticiones de modelos y preguntas frecuentes de mradermacher: https://huggingface.co/mradermacher/model_requests

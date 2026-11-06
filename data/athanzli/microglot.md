@@ -77,5 +77,5 @@ No se dispone en la informacion proporcionada de cifras verificables de parámet
 - No se han publicado benchmarks ni métricas de rendimiento verificables en la información disponible, lo que dificulta estimar su calidad frente a alternativas.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/athanzli/MicroGlot
+- Modelo en Hugging Face: https://huggingface.co/athanzli/MicroGlot
 - Manuscrito: A Taxonomy-Informed Sparse DNA Foundation Model for Microbial Genomics: https://www.biorxiv.org/content/10.64898/2026.09.22.753215v1

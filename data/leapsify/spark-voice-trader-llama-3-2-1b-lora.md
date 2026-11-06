@@ -72,7 +72,7 @@ El build 4-bit para telefono obtiene el mismo 90,8% en eleccion de herramienta. 
 
 | Modelo | Parametros | Contexto | Eleccion de tool | Argumentos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Llama 3.2 1B + Spark Voice Trader LoRA | 1B | 1.152 tokens en entrenamiento | 90,8% | 89,9% | Llama 3.2 Community | HuggingFace (MLX y GGUF 4-bit) |
+| Llama 3.2 1B + Spark Voice Trader LoRA | 1B | 1.152 tokens en entrenamiento | 90,8% | 89,9% | Llama 3.2 Community | Hugging Face (MLX y GGUF 4-bit) |
 | Muse Glimmer 30B + Spark LoRA | 30B | no disponible | 77,7% | 79,0% | no disponible | no disponible |
 | Muse Glimmer 30B base | 30B | no disponible | 61,8% | 58,4% | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ No se dispone de datos de otros adaptadores de tool calling comparables en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leapsify/spark-voice-trader-llama-3.2-1b-lora
+- Hugging Face: https://huggingface.co/leapsify/spark-voice-trader-llama-3.2-1b-lora
 - Repositorio de codigo, herramientas, formato de prompt y evaluacion: https://github.com/beenow/spark-voice-trader
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Base en formato MLX: https://huggingface.co/mlx-community/Llama-3.2-1B-Instruct-bf16

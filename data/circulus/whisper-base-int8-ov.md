@@ -18,10 +18,10 @@ Su relevancia es practica: es una de las formas mas sencillas de integrar transc
 | Longitud de contexto | Ventana de audio fija de 30 s (1500 fotogramas log-Mel de 80 canales); contexto de texto del decoder de 448 tokens (heredado del modelo base) |
 | Tipos de cuantizacion | INT8 por compresion de pesos (weight compression con optimum) |
 | Idiomas soportados | no disponible en la model card; el modelo base openai/whisper-base es multilingue |
-| Licencia | other (segun HuggingFace); el modelo base openai/whisper-base se distribuye bajo licencia MIT |
+| Licencia | other (segun Hugging Face); el modelo base openai/whisper-base se distribuye bajo licencia MIT |
 | Formato de pesos | OpenVINO IR (.xml + .bin), INT8, para `openvino_genai.WhisperPipeline` |
 | Entrada de audio | muestras float mono a 16 kHz |
-| Tarea declarada | reconocimiento automatico de voz (pipeline no especificado en HuggingFace) |
+| Tarea declarada | reconocimiento automatico de voz (pipeline no especificado en Hugging Face) |
 | Modelo base | openai/whisper-base |
 | Tamano del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
@@ -84,7 +84,7 @@ Los recuentos de parametros corresponden a las familias publicas de Whisper y no
 - Riesgo de alucinacion: como cualquier modelo Whisper, puede inventar texto en pasajes con silencio, ruido extremo o musica, y repetir frases en bucles de decodificacion.
 - Sesgos heredados del entrenamiento con audio web: peor rendimiento en variedades dialectales, habla con acentos poco representados y dominios especializados (terminologia medica o legal).
 - Idiomas soportados no documentados en este repositorio: conviene validar el idioma objetivo antes de usarlo en produccion.
-- Licencia "other" declarada en HuggingFace, mientras que el modelo base es MIT: es imprescindible aclarar los terminos aplicables antes de un uso comercial.
+- Licencia "other" declarada en Hugging Face, mientras que el modelo base es MIT: es imprescindible aclarar los terminos aplicables antes de un uso comercial.
 - Formato OpenVINO IR: no es portable a otros runtimes sin reconversion, lo que ata el despliegue al ecosistema OpenVINO.
 - Repositorio sin descargas ni likes y sin mantenimiento aparente: no hay garantia de soporte, actualizaciones ni correccion de errores.
 - Uso exclusivamente ASR: no soporta tool calling, agentes, vision ni generacion de texto libre, por lo que no debe plantearse como sustituto de un LLM.

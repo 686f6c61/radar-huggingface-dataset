@@ -84,8 +84,8 @@ Advertencias del propio autor sobre estas cifras: el conjunto reservado es peque
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| osava-smollm (SENTRI-Classifier v7b) | 3,08 mil millones | No disponible en la informacion proporcionada | Triaje de eventos Windows en 4 clases de severidad | Apache-2.0 (con caveat sobre datos GPL-3.0) | GGUF Q4_K_M en HuggingFace, fichero fijado por checksum |
-| SmolLM3-3B (modelo base) | 3,08 mil millones | No disponible en la informacion proporcionada | Modelo de proposito general | Apache-2.0 | Pesos completos en HuggingFace |
+| osava-smollm (SENTRI-Classifier v7b) | 3,08 mil millones | No disponible en la informacion proporcionada | Triaje de eventos Windows en 4 clases de severidad | Apache-2.0 (con caveat sobre datos GPL-3.0) | GGUF Q4_K_M en Hugging Face, fichero fijado por checksum |
+| SmolLM3-3B (modelo base) | 3,08 mil millones | No disponible en la informacion proporcionada | Modelo de proposito general | Apache-2.0 | Pesos completos en Hugging Face |
 | Modelos 3B de proposito general de otros fabricantes | No disponible en la informacion proporcionada | No disponible | Generacion de texto generalista | No disponible | No disponible |
 
 No se han localizado en la informacion disponible otros ajustes finos comparables centrados en el triaje de eventos Sysmon con lectura de un unico token, por lo que la comparacion cuantitativa con alternativas de la misma categoria no esta disponible. La busqueda web realizada no devolvio resultados relacionados con el modelo.
@@ -105,7 +105,7 @@ No se han localizado en la informacion disponible otros ajustes finos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d0-0d/osava-smollm
+- Modelo en Hugging Face: https://huggingface.co/d0-0d/osava-smollm
 - Repositorio del proyecto OSAVA: https://github.com/d0-00d/osava
 - Repositorio osava-slm (prompt, reglas de conversion y eventos canary): https://github.com/d0-00d/osava-slm
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B

@@ -31,7 +31,7 @@ No se han publicado detalles sobre el proceso de entrenamiento (tokens, composic
 
 - Síntesis de voz en dhivehi a partir de texto, con voz femenina (variante f03).
 - Generación de audio en formato waveform directamente desde el modelo, sin necesidad de vocoder externo.
-- Integración sencilla con la librería Transformers de HuggingFace mediante `VitsModel` y `AutoTokenizer`.
+- Integración sencilla con la librería Transformers de Hugging Face mediante `VitsModel` y `AutoTokenizer`.
 - Soporte de inferencia con PyTorch y `torch.no_grad()` para reducir consumo de memoria.
 - Compatible con exportaciones ONNX y cuantizadas publicadas en otros repos del proyecto, lo que permite despliegue en entornos con restricciones de recursos.
 - No incluye capacidades de tool calling, agentes, razonamiento ni visión; es un modelo puramente de síntesis de voz.
@@ -54,16 +54,16 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - **VRAM estimada**: al tratarse de un modelo de 36 millones de parámetros, la inferencia puede ejecutarse en CPU con memoria RAM suficiente (aproximadamente 1-2 GB). En GPU, cabe en cualquier tarjeta con al menos 2 GB de VRAM.
 - **GPU recomendadas**: cualquier GPU moderna, incluyendo NVIDIA GTX 1060, RTX 2060, RTX 3060 o superiores. También funciona en Apple Silicon (M1/M2) mediante PyTorch.
 - **Compatibilidad con consumer GPU**: sí, el modelo es ligero y puede ejecutarse en GPUs de gama media e incluso en CPU.
-- **Opciones de despliegue**: se puede servir mediante la API de HuggingFace Inference, o desplegar con vLLM (aunque no es lo habitual para TTS), o mediante un servidor FastAPI que cargue el modelo y exponga un endpoint REST. También se puede exportar a ONNX para inferencia con ONNX Runtime.
+- **Opciones de despliegue**: se puede servir mediante la API de Hugging Face Inference, o desplegar con vLLM (aunque no es lo habitual para TTS), o mediante un servidor FastAPI que cargue el modelo y exponga un endpoint REST. También se puede exportar a ONNX para inferencia con ONNX Runtime.
 - **Latencia y throughput**: no se han publicado datos concretos. En una GPU moderna, la generación de un audio de 5 segundos suele tardar menos de 1 segundo, pero depende de la longitud del texto y del hardware.
 
 ## Comparativa con modelos similares
 
 | Modelo | Arquitectura | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `mohamedrayyan/mms-tts-div-finetuned-md-f03` | VITS | 36,3 M | no disponible | dv | MIT | HuggingFace |
-| `facebook/mms-tts-div` | VITS | 36,3 M (aprox.) | no disponible | dv | MIT | HuggingFace |
-| `facebook/mms-tts` (modelo base multilingüe) | VITS | 36,3 M (aprox.) | no disponible | 1100+ idiomas | CC-BY-NC 4.0 | HuggingFace |
+| `mohamedrayyan/mms-tts-div-finetuned-md-f03` | VITS | 36,3 M | no disponible | dv | MIT | Hugging Face |
+| `facebook/mms-tts-div` | VITS | 36,3 M (aprox.) | no disponible | dv | MIT | Hugging Face |
+| `facebook/mms-tts` (modelo base multilingüe) | VITS | 36,3 M (aprox.) | no disponible | 1100+ idiomas | CC-BY-NC 4.0 | Hugging Face |
 
 El modelo fine-tuned se diferencia del base `facebook/mms-tts-div` en que ha sido ajustado para producir una voz femenina específica (f03), mientras que el base probablemente genera una voz genérica. La licencia MIT del fine-tune permite uso comercial sin restricciones, a diferencia del modelo base multilingüe de Meta que usa CC-BY-NC. No se dispone de comparativas de calidad objetiva entre ambos.
 
@@ -78,7 +78,7 @@ El modelo fine-tuned se diferencia del base `facebook/mms-tts-div` en que ha sid
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mohamedrayyan/mms-tts-div-finetuned-md-f03)
+- [Modelo en Hugging Face](https://huggingface.co/mohamedrayyan/mms-tts-div-finetuned-md-f03)
 - [Modelo base facebook/mms-tts-div](https://huggingface.co/facebook/mms-tts-div)
 - [Proyecto Chatterbox TTS Dhivehi](https://huggingface.co/mohamedrayyan/chatterbox-tts-dhivehi)
 - [Lista de fine-tunes de facebook/mms-tts-div](https://huggingface.co/models?other=base_model:finetune:facebook/mms-tts-div)

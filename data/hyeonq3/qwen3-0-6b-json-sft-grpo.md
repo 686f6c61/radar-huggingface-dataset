@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hyeonq3/Qwen3-0.6B-JSON-SFT-GRPO` es un fine-tuning del modelo base Qwen3-0.6B, desarrollado por el usuario de HuggingFace `hyeonq3`. Está diseñado específicamente para la generación de salidas JSON estructuradas y válidas, combinando dos técnicas de entrenamiento: Supervised Fine-Tuning (SFT) y Group Relative Policy Optimization (GRPO), ambas implementadas con la librería TRL de HuggingFace. El objetivo es que el modelo produzca respuestas en formato JSON de forma fiable, lo que resulta útil en aplicaciones que requieren integración con APIs, extracción de datos estructurados o tool calling.
+El modelo `hyeonq3/Qwen3-0.6B-JSON-SFT-GRPO` es un fine-tuning del modelo base Qwen3-0.6B, desarrollado por el usuario de Hugging Face `hyeonq3`. Está diseñado específicamente para la generación de salidas JSON estructuradas y válidas, combinando dos técnicas de entrenamiento: Supervised Fine-Tuning (SFT) y Group Relative Policy Optimization (GRPO), ambas implementadas con la librería TRL de Hugging Face. El objetivo es que el modelo produzca respuestas en formato JSON de forma fiable, lo que resulta útil en aplicaciones que requieren integración con APIs, extracción de datos estructurados o tool calling.
 
 El modelo parte de la arquitectura transformer decoder-only del Qwen3-0.6B, con aproximadamente 596 millones de parámetros, lo que lo sitúa en la categoría de modelos pequeños aptos para despliegue en entornos con recursos limitados. Aunque la model card no proporciona detalles sobre el proceso de entrenamiento, los tags (`trl`, `grpo`, `safetensors`, `text-generation-inference`) indican que se trata de un ajuste fino orientado a producción, compatible con soluciones de inferencia como TGI y vLLM. La relevancia actual radica en la creciente demanda de modelos compactos capaces de emitir JSON estructurado para agentes y pipelines automatizados, sin necesidad de depender de APIs externas.
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - VRAM estimada: con cuantizacion de 4 bits, aproximadamente 0,5 GB; en FP16/BF16, alrededor de 1,2 GB (según el tamaño del repositorio). Cabe en cualquier GPU consumer moderna con 4 GB o mas.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, como NVIDIA GTX 1650, RTX 3060 o superiores. Tambien ejecutable en CPU con llama.cpp, aunque con mayor latencia.
-- Opciones de despliegue: transformers (HuggingFace), vLLM, TGI (Text Generation Inference), Ollama y llama.cpp.
+- Opciones de despliegue: transformers (Hugging Face), vLLM, TGI (Text Generation Inference), Ollama y llama.cpp.
 - Latencia y throughput: no se dispone de mediciones oficiales. En una GPU como RTX 4090, se espera un throughput de varios cientos de tokens por segundo para un modelo de 0,6B, pero son estimaciones no verificadas.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hyeonq3/Qwen3-0.6B-JSON-SFT-GRPO
+- Modelo en Hugging Face: https://huggingface.co/hyeonq3/Qwen3-0.6B-JSON-SFT-GRPO
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Guia completa de la familia Qwen3: https://insiderllm.com/guides/qwen3-complete-guide/
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

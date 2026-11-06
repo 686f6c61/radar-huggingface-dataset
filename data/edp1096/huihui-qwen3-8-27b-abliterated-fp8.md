@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks completos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Huihui-Qwen3.8-27B-abliterated-FP8 | 27,8 B | 262K (ext. 1M) | Denso hibrido, VLM | Apache 2.0 | HuggingFace (FP8) |
-| Qwen3.6-27B | 27 B (estimado) | No disponible | Denso, VLM | Apache 2.0 | HuggingFace |
+| Huihui-Qwen3.8-27B-abliterated-FP8 | 27,8 B | 262K (ext. 1M) | Denso hibrido, VLM | Apache 2.0 | Hugging Face (FP8) |
+| Qwen3.6-27B | 27 B (estimado) | No disponible | Denso, VLM | Apache 2.0 | Hugging Face |
 | Qwen3.7-Plus | No disponible | No disponible | No disponible | No disponible | API propietaria |
 | Muse Glimmer-30B | 30 B | No disponible | No disponible | No disponible | No disponible |
 | Opus4.6 Max | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -79,7 +79,7 @@ Los datos de Qwen3.6-27B, Qwen3.7-Plus, Muse Glimmer-30B y Opus4.6 Max provienen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/edp1096/Huihui-Qwen3.8-27B-abliterated-FP8
+- Repositorio Hugging Face: https://huggingface.co/edp1096/Huihui-Qwen3.8-27B-abliterated-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Servicio Qwen Cloud: https://www.qwencloud.com
 - Documentacion de Qwen3.8-27B (via Qwen Cloud): https://www.qwencloud.com/models/qwen3.8-27b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Legad/hunyuan-ocr-scangas` aloja un modelo subido por el usuario Legad en HuggingFace, con un nombre que sugiere una posible relación con el sistema HunyuanOCR de Tencent, un modelo de visión-lenguaje especializado en OCR con 1.000 millones de parámetros. Sin embargo, la model card asociada es una plantilla genérica sin información técnica, y el repositorio contiene únicamente 0,1 GB de datos en formato safetensors. No se dispone de documentación sobre su arquitectura, entrenamiento, licencia o capacidades específicas. Dado que las descargas y los "likes" son cero, se trata probablemente de una subida experimental o de un fork sin mantenimiento, por lo que cualquier uso en producción requeriría una verificación exhaustiva de su contenido y origen.
+El repositorio `Legad/hunyuan-ocr-scangas` aloja un modelo subido por el usuario Legad en Hugging Face, con un nombre que sugiere una posible relación con el sistema HunyuanOCR de Tencent, un modelo de visión-lenguaje especializado en OCR con 1.000 millones de parámetros. Sin embargo, la model card asociada es una plantilla genérica sin información técnica, y el repositorio contiene únicamente 0,1 GB de datos en formato safetensors. No se dispone de documentación sobre su arquitectura, entrenamiento, licencia o capacidades específicas. Dado que las descargas y los "likes" son cero, se trata probablemente de una subida experimental o de un fork sin mantenimiento, por lo que cualquier uso en producción requeriría una verificación exhaustiva de su contenido y origen.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ El repositorio `Legad/hunyuan-ocr-scangas` aloja un modelo subido por el usuario
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura, el proceso de entrenamiento o los datos utilizados para este modelo concreto. La model card es una plantilla automática de HuggingFace sin contenido rellenado. El nombre "hunyuan-ocr-scangas" podría indicar una variante del modelo HunyuanOCR de Tencent, que emplea un Vision Transformer (ViT) nativo conectado a un LLM ligero mediante un adaptador MLP, pero no hay evidencia que confirme que este repositorio sea una copia o un fine-tune de dicho modelo. Ante la falta de datos, no es posible describir la arquitectura ni el entrenamiento.
+No se ha publicado ninguna información sobre la arquitectura, el proceso de entrenamiento o los datos utilizados para este modelo concreto. La model card es una plantilla automática de Hugging Face sin contenido rellenado. El nombre "hunyuan-ocr-scangas" podría indicar una variante del modelo HunyuanOCR de Tencent, que emplea un Vision Transformer (ViT) nativo conectado a un LLM ligero mediante un adaptador MLP, pero no hay evidencia que confirme que este repositorio sea una copia o un fine-tune de dicho modelo. Ante la falta de datos, no es posible describir la arquitectura ni el entrenamiento.
 
 ## Capacidades
 
@@ -54,10 +54,10 @@ No disponible. No se conocen modelos comparables para esta variante específica,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [Legad/hunyuan-ocr-scangas](https://huggingface.co/Legad/hunyuan-ocr-scangas)
+- Repositorio en Hugging Face: [Legad/hunyuan-ocr-scangas](https://huggingface.co/Legad/hunyuan-ocr-scangas)
 - Sitio oficial de HunyuanOCR (modelo original de Tencent): [https://hunyuanocr.org/](https://hunyuanocr.org/)
 - Repositorio GitHub de HunyuanOCR: [https://github.com/Tencent-Hunyuan/HunyuanOCR](https://github.com/Tencent-Hunyuan/HunyuanOCR)
-- Modelo oficial de Tencent en HuggingFace: [tencent/HunyuanOCR](https://huggingface.co/tencent/HunyuanOCR)
+- Modelo oficial de Tencent en Hugging Face: [tencent/HunyuanOCR](https://huggingface.co/tencent/HunyuanOCR)
 - Informe técnico de HunyuanOCR (arXiv): [https://arxiv.org/html/2511.19575v1](https://arxiv.org/html/2511.19575v1)
 
 Nota: los enlaces relativos a HunyuanOCR corresponden al modelo original de Tencent, no a esta variante concreta. Se incluyen como referencia contextual, pero no hay relación confirmada con el repositorio de Legad.

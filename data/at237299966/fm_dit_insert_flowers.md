@@ -78,11 +78,11 @@ No se han publicado resultados de benchmarks en la informacion disponible (no ha
 
 | Modelo | Metodo | Parametros | Datos / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| at237299966/fm_dit_insert_flowers | Flow matching condicional con cabeza DiT | 46,28M (23,93M DiT + 22,35M encoder) | r1lite_insert_flower_single, insercion de flor, R1 Lite brazo derecho | MIT | Publico en HuggingFace |
-| at237299966/ODE_policy_insert_flowers | Politica ODE | no disponible | Mismos datos, encoder, batch y planificador | no disponible | Publico en HuggingFace |
-| at237299966/dp_insert_flowers | Diffusion policy | no disponible | Mismos datos, encoder, batch y planificador | no disponible | Publico en HuggingFace |
-| ZUO66/imagewam-r1lite-insert-flower | ImageWAM (MoT visual/accion, fine-tune completo) | no disponible | R1Lite insercion de flor, brazo derecho; checkpoint final de 20 epocas / paso 11.440 | no disponible | Publico en HuggingFace |
-| ZUO66/imagewam-r1lite-insert-flower-single-epoch52 | ImageWAM (checkpoint intermedio) | no disponible | R1Lite insercion de flor; epoca 52 de 60 | no disponible | Publico en HuggingFace |
+| at237299966/fm_dit_insert_flowers | Flow matching condicional con cabeza DiT | 46,28M (23,93M DiT + 22,35M encoder) | r1lite_insert_flower_single, insercion de flor, R1 Lite brazo derecho | MIT | Publico en Hugging Face |
+| at237299966/ODE_policy_insert_flowers | Politica ODE | no disponible | Mismos datos, encoder, batch y planificador | no disponible | Publico en Hugging Face |
+| at237299966/dp_insert_flowers | Diffusion policy | no disponible | Mismos datos, encoder, batch y planificador | no disponible | Publico en Hugging Face |
+| ZUO66/imagewam-r1lite-insert-flower | ImageWAM (MoT visual/accion, fine-tune completo) | no disponible | R1Lite insercion de flor, brazo derecho; checkpoint final de 20 epocas / paso 11.440 | no disponible | Publico en Hugging Face |
+| ZUO66/imagewam-r1lite-insert-flower-single-epoch52 | ImageWAM (checkpoint intermedio) | no disponible | R1Lite insercion de flor; epoca 52 de 60 | no disponible | Publico en Hugging Face |
 
 No se han publicado tasas de exito en robot para ninguno de estos modelos en la informacion disponible, por lo que la comparacion de rendimiento real no es posible.
 
@@ -100,7 +100,7 @@ No se han publicado tasas de exito en robot para ninguno de estos modelos en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/at237299966/fm_dit_insert_flowers
+- Modelo en Hugging Face: https://huggingface.co/at237299966/fm_dit_insert_flowers
 - Arbol de ficheros del repositorio: https://huggingface.co/at237299966/fm_dit_insert_flowers/tree/main
 - Dataset de entrenamiento (single task): https://huggingface.co/datasets/at237299966/r1lite_insert_flower_single
 - Dataset relacionado (4 camaras, 98 episodios, 15 fps, 1280x720): https://huggingface.co/datasets/at237299966/r1lite_insert_flower

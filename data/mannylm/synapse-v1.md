@@ -31,7 +31,7 @@ Es relevante ahora por dos motivos: primero, porque permite estudiar el funciona
 | Embeddings atados | no (embeddings y cabeza LM son independientes) |
 | Loss de validacion (mejor) | 1.6539 (entropia cruzada a nivel de caracter) |
 | Tamano del repositorio | 0,0 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -91,7 +91,7 @@ No se dispone de datos comparativos en la informacion proporcionada: la model ca
 
 | Modelo | Parametros | Contexto | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Synapse-V1 (MannyLM) | 826.433 (0,83 M) | 128 caracteres | solo loss de validacion 1.6539 | MIT | HuggingFace, safetensors, carga manual |
+| Synapse-V1 (MannyLM) | 826.433 (0,83 M) | 128 caracteres | solo loss de validacion 1.6539 | MIT | Hugging Face, safetensors, carga manual |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El unico punto de comparacion objetivo disponible es la loss de validacion a nivel de caracter (1.6539), que no es trasladable a otros modelos porque depende del vocabulario de 65 caracteres y del split concreto del corpus Tiny Shakespeare.
@@ -112,7 +112,7 @@ El unico punto de comparacion objetivo disponible es la loss de validacion a niv
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MannyLM/Synapse-V1
+- Modelo en Hugging Face: https://huggingface.co/MannyLM/Synapse-V1
 - Codigo fuente: https://github.com/GTX-Manish/Synapse-V1
 - Dataset Tiny Shakespeare: no disponible enlace directo en la informacion proporcionada (referenciado en la model card como `tiny_shakespeare`, corpus de dominio publico de aproximadamente 1,1 MB)
 - Articulo o blog tecnico: no disponible

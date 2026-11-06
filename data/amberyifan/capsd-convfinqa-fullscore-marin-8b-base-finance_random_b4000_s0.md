@@ -71,7 +71,7 @@ No disponible. No se conocen modelos comparables específicos en el mismo domini
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-convfinqa-fullscore-marin-8b-base-finance_random_b4000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-convfinqa-fullscore-marin-8b-base-finance_random_b4000_s0
 - Modelo base: https://huggingface.co/marin-community/marin-8b-base
 
 No se encontraron papers, blogs o demos adicionales en la información proporcionada.

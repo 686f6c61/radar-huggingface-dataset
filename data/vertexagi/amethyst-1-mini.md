@@ -36,7 +36,7 @@ El dataset de entrenamiento consta de 1.122 pares (1.082 train / 40 validación)
 - Traducción entre idiomas (aunque el modelo está entrenado principalmente en inglés, puede manejar pares de traducción simples).
 - Clasificación de sentimiento y análisis de opiniones.
 - Lluvia de ideas y generación de ideas para proyectos o contenidos.
-- No se documenta soporte para tool calling, function calling o capacidades multimodales en esta versión (aunque el tag `image-text-to-text` aparece en HuggingFace, la model card no lo menciona explícitamente).
+- No se documenta soporte para tool calling, function calling o capacidades multimodales en esta versión (aunque el tag `image-text-to-text` aparece en Hugging Face, la model card no lo menciona explícitamente).
 
 ## Casos de uso
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - **Opciones de despliegue**:
   - `transformers` para fp16.
   - `llama.cpp` / Ollama / LM Studio para GGUF.
-  - Compatible con `text-generation-inference` según los tags de HuggingFace.
+  - Compatible con `text-generation-inference` según los tags de Hugging Face.
   - No se menciona soporte explícito para vLLM, aunque al ser un modelo estándar de transformers es probable que funcione.
 - **Latencia y throughput**: no se proporcionan datos. Para un modelo de 4B en fp16, se espera una latencia de decodificación de ~10-30 ms/token en una RTX 4090, pero esto es una estimación general no verificada para este modelo concreto.
 
@@ -94,8 +94,8 @@ La comparativa con otros modelos no está disponible en la información proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VertexAGI/amethyst-1-mini
-- Perfil de VertexAIco en HuggingFace: https://huggingface.co/VertexAIco/models
+- Modelo en Hugging Face: https://huggingface.co/VertexAGI/amethyst-1-mini
+- Perfil de VertexAIco en Hugging Face: https://huggingface.co/VertexAIco/models
 - Publicación en X (Twitter): https://x.com/vertexagi
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Checkpoint base para fine-tuning: https://huggingface.co/mlx-community/gemma-3-4b-it-qat-4bit

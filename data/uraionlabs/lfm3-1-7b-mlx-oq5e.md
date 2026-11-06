@@ -18,7 +18,7 @@ La cuantizacion oQ5e aplica precision mixta (5/6/8 bits) por capa, con un perfil
 | Longitud de contexto | 262.144 tokens (entrada + salida) |
 | Tipos de cuantizacion | oQ5e (precision mixta 5/6/8 bits, grupo 64, modo affine); familia oQ completa disponible: oQ8e, oQ6e, oQ5e, oQ4e |
 | Idiomas soportados | 16: en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl |
-| Licencia | LFM Open License v1.0 (`lfm1.0`, etiquetada como `other` en HuggingFace) |
+| Licencia | LFM Open License v1.0 (`lfm1.0`, etiquetada como `other` en Hugging Face) |
 | Formato de pesos | MLX safetensors (un unico `model.safetensors` de 1.232.089.463 bytes) |
 
 ## Arquitectura y entrenamiento
@@ -72,10 +72,10 @@ Datos de rendimiento medidos por el autor (decodificacion mono-stream en Apple M
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-MLX-oQ5e (esta ficha) | 1,73B | 262.144 | MLX safetensors, oMLX / mlx-vlm | LFM Open v1.0 | HuggingFace (UraionLabs) |
-| LFM3-1.7B-MLX-oQ6e | 1,73B | 262.144 | MLX safetensors, oMLX / mlx-vlm | LFM Open v1.0 | HuggingFace (UraionLabs) |
-| LFM3-1.7B-MLX-oQ4e | 1,73B | 262.144 | MLX safetensors, oMLX / mlx-vlm | LFM Open v1.0 | HuggingFace (UraionLabs) |
-| LiquidAI/LFM3-1.7B (base) | 1,73B | 262.144 | safetensors (sin cuantizar) | LFM Open v1.0 | HuggingFace (Liquid AI) |
+| LFM3-1.7B-MLX-oQ5e (esta ficha) | 1,73B | 262.144 | MLX safetensors, oMLX / mlx-vlm | LFM Open v1.0 | Hugging Face (UraionLabs) |
+| LFM3-1.7B-MLX-oQ6e | 1,73B | 262.144 | MLX safetensors, oMLX / mlx-vlm | LFM Open v1.0 | Hugging Face (UraionLabs) |
+| LFM3-1.7B-MLX-oQ4e | 1,73B | 262.144 | MLX safetensors, oMLX / mlx-vlm | LFM Open v1.0 | Hugging Face (UraionLabs) |
+| LiquidAI/LFM3-1.7B (base) | 1,73B | 262.144 | safetensors (sin cuantizar) | LFM Open v1.0 | Hugging Face (Liquid AI) |
 
 No se dispone en la informacion proporcionada de datos de benchmarks que permitan comparar el rendimiento cualitativo frente a modelos de otros fabricantes del mismo tamano.
 
@@ -92,7 +92,7 @@ No se dispone en la informacion proporcionada de datos de benchmarks que permita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UraionLabs/LFM3-1.7B-MLX-oQ5e
+- Modelo en Hugging Face: https://huggingface.co/UraionLabs/LFM3-1.7B-MLX-oQ5e
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Variante oQ8e: https://huggingface.co/UraionLabs/LFM3-1.7B-MLX-oQ8e
 - Variante oQ6e: https://huggingface.co/UraionLabs/LFM3-1.7B-MLX-oQ6e

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `LarryAIDraw/miAnimeModels_v30` es un checkpoint publicado en HuggingFace por el usuario LarryAIDraw, orientado aparentemente a la generación de ilustraciones de estilo anime. La model card está vacía salvo por la licencia `creativeml-openrail-m`, y no se proporcionan detalles técnicos sobre arquitectura, parámetros, entrenamiento o capacidades. El autor tiene otros modelos similares en su perfil, como `aliceNikke_v30` o `meinamix_meinaV30BakedVAE`, lo que sugiere una línea de trabajo centrada en modelos de difusión para arte anime, pero no hay confirmación explícita en la información disponible.
+El modelo `LarryAIDraw/miAnimeModels_v30` es un checkpoint publicado en Hugging Face por el usuario LarryAIDraw, orientado aparentemente a la generación de ilustraciones de estilo anime. La model card está vacía salvo por la licencia `creativeml-openrail-m`, y no se proporcionan detalles técnicos sobre arquitectura, parámetros, entrenamiento o capacidades. El autor tiene otros modelos similares en su perfil, como `aliceNikke_v30` o `meinamix_meinaV30BakedVAE`, lo que sugiere una línea de trabajo centrada en modelos de difusión para arte anime, pero no hay confirmación explícita en la información disponible.
 
 La relevancia actual de este modelo es limitada debido a la ausencia total de documentación técnica y de métricas de uso (0 descargas, 0 likes). No se puede evaluar su rendimiento ni su idoneidad para tareas concretas sin datos adicionales. Se recomienda precaución antes de considerarlo para cualquier integración en producción.
 
@@ -56,6 +56,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - LarryAIDraw/miAnimeModels_v30](https://huggingface.co/LarryAIDraw/miAnimeModels_v30)
+- [Hugging Face - LarryAIDraw/miAnimeModels_v30](https://huggingface.co/LarryAIDraw/miAnimeModels_v30)
 - [Ejemplo de uso en chichi-pui (ilustración generada)](https://pui.chichi-pui.com/posts/242e6b94-0f02-4a91-ad0b-0684f05f1d6b/)
-- [Perfil del autor en HuggingFace (otros modelos)](https://huggingface.co/LarryAIDraw)
+- [Perfil del autor en Hugging Face (otros modelos)](https://huggingface.co/LarryAIDraw)

@@ -40,7 +40,7 @@ La innovacion tecnica destacable documentada es el formato instTrans de traducci
 - Consistencia terminologica entre frases a lo largo de un documento.
 - Traduccion controlada por presupuesto de silabas para doblaje, combinable con glosarios.
 - Traduccion de documentos largos, segun la descripcion de la familia Index-Translate.
-- Modo conversacional (etiqueta conversational en el repositorio de HuggingFace).
+- Modo conversacional (etiqueta conversational en el repositorio de Hugging Face).
 - Modo de razonamiento conmutable mediante `enable_thinking` en la plantilla de chat (desactivado por defecto en las recomendaciones de traduccion).
 - No hay informacion disponible sobre soporte de tool calling, function calling, agentes, vision o audio en el modelo de texto.
 
@@ -74,9 +74,9 @@ No se dispone de datos de rendimiento que permitan una comparativa cuantitativa.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Index-Homura-9B-GGUF | 8,95B | no disponible | 150 (familia) | apache-2.0 | GGUF (12 cuantizaciones) | HuggingFace, llama.cpp |
-| Index-Homura-2B | no disponible | no disponible | 150 (familia) | no disponible | no disponible | HuggingFace |
-| Index-Echo-S2TT-2B / 9B | 2B y 9B | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Index-Homura-9B-GGUF | 8,95B | no disponible | 150 (familia) | apache-2.0 | GGUF (12 cuantizaciones) | Hugging Face, llama.cpp |
+| Index-Homura-2B | no disponible | no disponible | 150 (familia) | no disponible | no disponible | Hugging Face |
+| Index-Echo-S2TT-2B / 9B | 2B y 9B | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se han identificado en la informacion disponible modelos de otras familias comparables en tamano y tarea con datos verificables.
 
@@ -95,7 +95,7 @@ No se han identificado en la informacion disponible modelos de otras familias co
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/IndexTeam/Index-Homura-9B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/IndexTeam/Index-Homura-9B-GGUF
 - Modelo base: https://huggingface.co/IndexTeam/Index-Homura-9B
 - Checkpoint hermano de 2B: https://huggingface.co/IndexTeam/Index-Homura-2B
 - Informe tecnico (arXiv): https://arxiv.org/abs/2609.40181

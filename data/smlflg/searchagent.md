@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SearchAgent es un repositorio publicado en HuggingFace por el usuario smlflg que, pese a su nombre y a su ubicación en el Hub, no es un modelo de IA: no contiene pesos, no ha sido entrenado y no expone ningún pipeline de inferencia. Según su propia model card, se trata de un "archived learning project", es decir, un proyecto didáctico ya archivado, construido con el objetivo de entender la capa de "Search" dentro de una arquitectura Search + RAG.
+SearchAgent es un repositorio publicado en Hugging Face por el usuario smlflg que, pese a su nombre y a su ubicación en el Hub, no es un modelo de IA: no contiene pesos, no ha sido entrenado y no expone ningún pipeline de inferencia. Según su propia model card, se trata de un "archived learning project", es decir, un proyecto didáctico ya archivado, construido con el objetivo de entender la capa de "Search" dentro de una arquitectura Search + RAG.
 
 El proyecto se compone de tres piezas descritas por el autor: `search.py`, que realiza búsquedas en DuckDuckGo mediante la librería `ddgs` y devuelve resultados estructurados con los campos `{title, url, snippet}`; `llm.py`, que inyecta esos resultados como contexto en un prompt enviado a un LLM; y los directorios `templates/` y `static/`, que conforman una interfaz web mínima. No se especifica qué LLM consume `llm.py` ni cómo se invoca.
 
@@ -81,7 +81,7 @@ No disponible. SearchAgent no es un modelo de lenguaje, por lo que no existe una
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smlflg/SearchAgent
+- Hugging Face: https://huggingface.co/smlflg/SearchAgent
 - No se han encontrado en la busqueda web enlaces relevantes al proyecto: los resultados obtenidos corresponden a paginas de reserva de hoteles en Seul (Tripadvisor, Trip.com, Yeogi) y no tienen relacion con SearchAgent ni con pipelines RAG.
 - Repositorio de la dependencia real del proyecto: `ddgs` (libreria de busqueda DuckDuckGo para Python), referenciada en la model card pero sin enlace directo proporcionado.
 - Paper, blog, demo o repositorio adicional: no disponibles.

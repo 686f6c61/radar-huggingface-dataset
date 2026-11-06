@@ -75,10 +75,10 @@ Los datos de los modelos comparables provienen de información pública general 
 
 | Modelo | Parámetros | Contexto / historial | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Long-WAM LIBERO IDM — LeRobot (este) | 12,4 B | 48 ticks de control | Apache-2.0 | safetensors (LeRobot) | HuggingFace |
-| OpenVLA 7B | 7 B | No disponible en esta ficha | MIT | safetensors | HuggingFace |
+| Long-WAM LIBERO IDM — LeRobot (este) | 12,4 B | 48 ticks de control | Apache-2.0 | safetensors (LeRobot) | Hugging Face |
+| OpenVLA 7B | 7 B | No disponible en esta ficha | MIT | safetensors | Hugging Face |
 | π0 (Physical Intelligence) | ≈3,3 B | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | Publicado por el autor |
-| Políticas diffusion policy / ACT en LeRobot | ≪1 B | No disponible en esta ficha | Apache-2.0 (LeRobot) | safetensors (LeRobot) | HuggingFace |
+| Políticas diffusion policy / ACT en LeRobot | ≪1 B | No disponible en esta ficha | Apache-2.0 (LeRobot) | safetensors (LeRobot) | Hugging Face |
 
 La diferencia principal frente a OpenVLA y π0 es el enfoque: este checkpoint incorpora explícitamente un modelo de mundo que predice vídeo futuro antes de denoisar la acción, mientras que las alternativas citadas son políticas visión-lenguaje-acción sin esa etapa generativa. Como contrapartida, su tamaño (12,4 B) es entre 2 y 4 veces mayor que el de las alternativas, lo que encarece la inferencia. No se dispone de cifras de benchmark que permitan comparar rendimiento entre ellos en la información proporcionada.
 
@@ -97,7 +97,7 @@ La diferencia principal frente a OpenVLA y π0 es el enfoque: este checkpoint in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Efficient-Large-Model/Long-WAM-LIBERO-IDM-LeRobot
+- Modelo en Hugging Face: https://huggingface.co/Efficient-Large-Model/Long-WAM-LIBERO-IDM-LeRobot
 - Modelo base (versión no LeRobot): https://huggingface.co/Efficient-Large-Model/Long-WAM-LIBERO-IDM
 - LeRobot (librería indicada en la model card): https://github.com/huggingface/lerobot
 - Benchmark LIBERO (entorno de evaluación citado): https://libero-project.github.io

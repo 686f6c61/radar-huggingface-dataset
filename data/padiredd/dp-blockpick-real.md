@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dp-blockpick-real` es una política de difusión (diffusion policy) para robótica manipulativa, publicada por el usuario `padiredd` en HuggingFace y entrenada con el ecosistema LeRobot. El modelo resuelve una tarea concreta y muy específica: recoger un bloque de color lima con el brazo izquierdo del robot humanoide ROBOTIS FFW SG2. No es un modelo de lenguaje ni un modelo fundacional generalista, sino un checkpoint de control motor entrenado exclusivamente con demostraciones reales de teleoperación.
+`dp-blockpick-real` es una política de difusión (diffusion policy) para robótica manipulativa, publicada por el usuario `padiredd` en Hugging Face y entrenada con el ecosistema LeRobot. El modelo resuelve una tarea concreta y muy específica: recoger un bloque de color lima con el brazo izquierdo del robot humanoide ROBOTIS FFW SG2. No es un modelo de lenguaje ni un modelo fundacional generalista, sino un checkpoint de control motor entrenado exclusivamente con demostraciones reales de teleoperación.
 
 La arquitectura subyacente es una Diffusion Policy clásica (DDPM con 100 pasos de difusión) que combina un codificador visual ResNet18 por cámara con un estado articular de 22 dimensiones como entrada, y genera 16 objetivos articulares como acción a 15 Hz. El modelo tiene 287.533.680 parámetros y se distribuye en formato `safetensors` dentro de un repositorio de 11,5 GB que incluye el checkpoint final (100k pasos) y nueve checkpoints intermedios cada 10.000 pasos.
 
@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp-blockpick-real | 287,5 M | no aplica | no disponible | other | HuggingFace |
+| dp-blockpick-real | 287,5 M | no aplica | no disponible | other | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/dp-blockpick-real
+- Modelo en Hugging Face: https://huggingface.co/padiredd/dp-blockpick-real
 - Dataset de entrenamiento: `omkarpatil/pick-lime-block` (referenciado en la model card, sin URL directa proporcionada)
 - Fork de LeRobot utilizado: `lerobot-cyclo` de ROBOTIS (referenciado en la model card, sin URL directa proporcionada)
 - LeRobot (framework): no se proporciona URL en la información disponible

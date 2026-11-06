@@ -73,7 +73,7 @@ No disponible. No existen modelos públicos comparables con la misma especializa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jiwoongpark/qwen3-asr-1.7b-mri-lora-public
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-ASR-1.7B-hf (no verificado directamente, inferido del campo base_model)
+- Repositorio Hugging Face: https://huggingface.co/jiwoongpark/qwen3-asr-1.7b-mri-lora-public
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-ASR-1.7B-hf (no verificado directamente, inferido del campo base_model)
 - GitHub del modelo base Qwen3-ASR: https://github.com/QwenLM/Qwen3-ASR
 - Informe técnico de Qwen3-ASR (arXiv): https://arxiv.org/abs/2601.21337

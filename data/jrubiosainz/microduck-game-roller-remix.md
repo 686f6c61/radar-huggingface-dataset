@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 
 | Modelo | Parametros | Entrada / salida | Tiempo de marcador | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jrubiosainz/microduck-game-roller-remix | 197.774 (red fuente, pesos perturbados) | [1, 61] / [1, 14] | 0,944 s | no declarada | HuggingFace |
-| juicenv/microduck-roller-es21 | 197.774 (misma red) | [1, 61] / [1, 14] | 0,948 s | no declarada | HuggingFace |
-| namenu/microduck-arena (strata-roller-pb4) | no disponible | no disponible | 0,960 s | no disponible | HuggingFace |
+| jrubiosainz/microduck-game-roller-remix | 197.774 (red fuente, pesos perturbados) | [1, 61] / [1, 14] | 0,944 s | no declarada | Hugging Face |
+| juicenv/microduck-roller-es21 | 197.774 (misma red) | [1, 61] / [1, 14] | 0,948 s | no declarada | Hugging Face |
+| namenu/microduck-arena (strata-roller-pb4) | no disponible | no disponible | 0,960 s | no disponible | Hugging Face |
 
 Los tres modelos pertenecen a la misma categoría (políticas de control para el Roller Sprint de 2 m de la Microduck Arena) y comparten el mismo ejecutor de evaluación, por lo que la comparación de tiempos es directa. El remix y su fuente comparten exactamente el mismo grafo y el mismo número de parámetros; la única diferencia son los valores numéricos de los pesos. No se dispone de datos de parámetros ni de licencia de la entrada de namenu.
 
@@ -98,12 +98,12 @@ Los tres modelos pertenecen a la misma categoría (políticas de control para el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-game-roller-remix
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-game-roller-remix
 - Modelo base: https://huggingface.co/juicenv/microduck-roller-es21
 - Perfil del autor del modelo base: https://huggingface.co/juicenv
 - Entrada de namenu en la Arena: https://huggingface.co/namenu/microduck-arena
 - Perfil de namenu: https://huggingface.co/namenu
 - Microduck Arena (Space): https://huggingface.co/spaces/pollen-robotics/microduck-arena
-- Organización Pollen Robotics en HuggingFace: https://huggingface.co/pollen-robotics
+- Organización Pollen Robotics en Hugging Face: https://huggingface.co/pollen-robotics
 - Código de entrenamiento: https://github.com/pollen-robotics/microduck_rl (commit `3c0598cae`, rama `hannes-ft`)
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo; los resultados obtenidos correspondían a información financiera de una empresa no relacionada.

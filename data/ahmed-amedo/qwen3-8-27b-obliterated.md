@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-OBLITERATED es una version "abliterada" (sin mecanismos de rechazo) del modelo base Qwen/Qwen3.8-27B, publicada por el usuario ahmed-amedo en HuggingFace. El modelo conserva la arquitectura y el tamano del original —27.781.427.952 parametros (unos 27,8 mil millones), pesos en safetensors— pero ha sido sometido a un proceso de cirugia de pesos para eliminar las direcciones internas asociadas al comportamiento de rechazo, de modo que responde a practicamente cualquier peticion sin lanzar negativas ni advertencias de seguridad.
+Qwen3.8-27B-OBLITERATED es una version "abliterada" (sin mecanismos de rechazo) del modelo base Qwen/Qwen3.8-27B, publicada por el usuario ahmed-amedo en Hugging Face. El modelo conserva la arquitectura y el tamano del original —27.781.427.952 parametros (unos 27,8 mil millones), pesos en safetensors— pero ha sido sometido a un proceso de cirugia de pesos para eliminar las direcciones internas asociadas al comportamiento de rechazo, de modo que responde a practicamente cualquier peticion sin lanzar negativas ni advertencias de seguridad.
 
 La relevancia de esta ficha es doble. Por un lado, es un ejemplo de manual de "abliteration" moderna: el autor documenta tres iteraciones (V1, V2 y V3) en las que combina descomposicion en valores singulares (SVD) con LEACE (minimizacion de informacion mutua) y un blending 60/40 entre ambos resultados, una tecnica que el propio autor llama "complementary abliteration blending". Por otro, es un artefacto pensado explicitamente para red teaming e investigacion en seguridad de IA, con la advertencia implicita de que su uso en produccion conlleva riesgos operativos y legales importantes.
 
@@ -96,8 +96,8 @@ La informacion disponible solo permite comparar la version publicada con el mode
 
 | Modelo | Parametros | Contexto | MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-OBLITERATED (V3) | ~27,8 B | No disponible | 82,3 % | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.8-27B (stock) | ~27,8 B (no confirmado en la informacion) | No disponible | 84,5 % | No disponible en la informacion | HuggingFace |
+| Qwen3.8-27B-OBLITERATED (V3) | ~27,8 B | No disponible | 82,3 % | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.8-27B (stock) | ~27,8 B (no confirmado en la informacion) | No disponible | 84,5 % | No disponible en la informacion | Hugging Face |
 | Alternativas abliteradas de otros autores | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -112,11 +112,11 @@ La informacion disponible solo permite comparar la version publicada con el mode
 - Los system prompts pueden reintroducir rechazos, lo que complica la integracion en frameworks que inyectan instrucciones de sistema obligatorias.
 - Licencia Apache 2.0: permite uso comercial, pero quien despliegue el modelo asume la responsabilidad legal del contenido generado. Conviene revisar los terminos de uso del modelo base Qwen.
 - Reputacion y verificacion: 0 descargas y 0 likes, sin evaluacion independiente. Los benchmarks proceden de la model card del autor y la fecha de creacion registrada (2026-10-16) no es coherente con una publicacion ya consolidada.
-- Discrepancia en el identificador: el ejemplo de codigo de la model card referencia el repositorio `OBLITERATUS/Qwen3.8-27B-OBLITERATED`, mientras que el ID real en HuggingFace es `ahmed-amedo/Qwen3.8-27B-OBLITERATED`. Hay que corregir la ruta antes de cargar el modelo.
+- Discrepancia en el identificador: el ejemplo de codigo de la model card referencia el repositorio `OBLITERATUS/Qwen3.8-27B-OBLITERATED`, mientras que el ID real en Hugging Face es `ahmed-amedo/Qwen3.8-27B-OBLITERATED`. Hay que corregir la ruta antes de cargar el modelo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ahmed-amedo/Qwen3.8-27B-OBLITERATED
+- Hugging Face: https://huggingface.co/ahmed-amedo/Qwen3.8-27B-OBLITERATED
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Resultados de busqueda web: no se han encontrado resultados relevantes; las busquedas devolvieron unicamente paginas sobre el significado del nombre propio "Ahmed", sin relacion con el modelo, el autor ni la tecnica de abliteration.
 - Paper de LEACE (referenciado indirectamente por la tecnica descrita): no disponible en la informacion proporcionada.

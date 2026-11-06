@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mfparker/matching` es un repositorio de HuggingFace que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada **Mixer** orientada a tareas de **matching** (emparejamiento). El autor lo describe explícitamente como un artefacto para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, no como un modelo preentrenado listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado.
+`mfparker/matching` es un repositorio de Hugging Face que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada **Mixer** orientada a tareas de **matching** (emparejamiento). El autor lo describe explícitamente como un artefacto para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, no como un modelo preentrenado listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado.
 
 El dato más relevante para evaluarlo es su tamaño real: **16.576 parámetros totales** según los metadatos de safetensors, es decir, tres o cuatro órdenes de magnitud por debajo de cualquier modelo de lenguaje utilizable. La model card etiqueta la configuración como «giant», pero esa etiqueta es nominal y no se corresponde con el recuento real de parámetros; conviene tratarla como una etiqueta interna del script, no como una indicación de escala.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mfparker/matching` | 16.576 | no disponible | sin benchmarks; checkpoint sin entrenar | Apache 2.0 | HuggingFace, repo de 0.0 GB, 0 descargas, 0 likes |
+| `mfparker/matching` | 16.576 | no disponible | sin benchmarks; checkpoint sin entrenar | Apache 2.0 | Hugging Face, repo de 0.0 GB, 0 descargas, 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la información proporcionada modelos comparables de la misma categoría (implementaciones de juguete para matching). La búsqueda web realizada devolvió únicamente resultados sobre fútbol universitario estadounidense, sin relación con el modelo.
@@ -82,8 +82,8 @@ No se han identificado en la información proporcionada modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mfparker/matching
+- Hugging Face: https://huggingface.co/mfparker/matching
 - Paper: no disponible
 - Blog o anuncio: no disponible
-- Repositorio de código: no disponible (el propio repo de HuggingFace incluye `pipeline.py`)
+- Repositorio de código: no disponible (el propio repo de Hugging Face incluye `pipeline.py`)
 - Demo: no disponible

@@ -20,6 +20,6 @@ Es relevante porque unifica el diseño de secuencia y estructura en un solo mode
 | Idiomas soportados | `en` (metadatos). No es una tarea lingüística; no aplica generación multilingüe |
 | Licencia | BSD 3-Clause |
 | Formato de pesos | safetensors (Diffusers); pesos en FP32; adaptador LoRA en formato Diffusers en la rama `pretrain-base` |
-| Pipeline | `RFD4ProteinaPipeline`: `transformer` + `vae` + `RFD4ProteinaScheduler` de backbone y local-latent. El campo pipeline de HuggingFace no está disponible |
+| Pipeline | `RFD4ProteinaPipeline`: `transformer` + `vae` + `RFD4ProteinaScheduler` de backbone y local-latent. El campo pipeline de Hugging Face no está disponible |
 | Vocabulario de residuos | 147 clases |
 | Espacio

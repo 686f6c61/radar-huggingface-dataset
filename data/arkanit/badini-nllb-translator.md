@@ -39,7 +39,7 @@ El adaptador se entrena con LoRA sobre PEFT, de modo que solo se actualiza una p
 - Reproduccion de concordancia de izafet masculino y femenino (-ا / -ێ) segun el autor.
 - Uso de construcciones ergativas y de preposiciones propias del badini (ژ en lugar de لە).
 - Reduccion declarada de la interferencia de sorani en vocabulario y gramatica.
-- Compatibilidad con el pipeline `translation` de HuggingFace y con el flujo estandar de transformers y PEFT.
+- Compatibilidad con el pipeline `translation` de Hugging Face y con el flujo estandar de transformers y PEFT.
 - No se documenta soporte de tool calling ni de function calling.
 - No se documenta uso como agente ni razonamiento multi-paso.
 - No hay capacidades de vision, audio ni modo de razonamiento explicito (thinking mode).
@@ -97,7 +97,7 @@ No se han identificado en la informacion disponible otros modelos publicos espec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arkanit/badini-nllb-translator
+- Modelo en Hugging Face: https://huggingface.co/arkanit/badini-nllb-translator
 - Modelo base: https://huggingface.co/facebook/nllb-200-distilled-600M
 - Articulo de NLLB-200: https://arxiv.org/abs/2207.04672
 - Repositorio de referencia de NLLB en fairseq: https://github.com/facebookresearch/fairseq/tree/nllb

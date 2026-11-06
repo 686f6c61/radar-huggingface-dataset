@@ -2,11 +2,11 @@
 
 ## Resumen
 
-BioReason-Pro-v2-4B-Features es un modelo de la familia Qwen3.5 publicado por el usuario adibvafa en HuggingFace. Con 4.205.751.296 parámetros (~4,2 mil millones) y pesos en formato safetensors, se distribuye como un repositorio de 11,7 GB con acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de descargarlo. El nombre sugiere un ajuste orientado a razonamiento biomédico ("bioreason") y la etiqueta "features" apunta a una variante destinada a extracción de representaciones o a un checkpoint intermedio del pipeline de entrenamiento.
+BioReason-Pro-v2-4B-Features es un modelo de la familia Qwen3.5 publicado por el usuario adibvafa en Hugging Face. Con 4.205.751.296 parámetros (~4,2 mil millones) y pesos en formato safetensors, se distribuye como un repositorio de 11,7 GB con acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de descargarlo. El nombre sugiere un ajuste orientado a razonamiento biomédico ("bioreason") y la etiqueta "features" apunta a una variante destinada a extracción de representaciones o a un checkpoint intermedio del pipeline de entrenamiento.
 
 La relevancia del modelo radica en su base arquitectónica: al derivar de Qwen3.5, hereda las capacidades del transformer denso de esa familia, incluyendo soporte multilingüe y ventana de contexto amplia, aunque el autor no ha documentado públicamente los detalles del ajuste ni los datos utilizados. El tamaño de 4B lo sitúa en la franja de modelos desplegables en GPU de consumo con cuantización agresiva, lo que facilita su evaluación local.
 
-No obstante, la información publicada es muy escasa: cero descargas, cero likes, sin pipeline declarado, sin idiomas especificados y sin resultados de benchmarks. La licencia declarada en la model card es `openmdw-1.1`, mientras que los tags de HuggingFace indican `license:other`; esta discrepancia debe resolverse antes de cualquier uso comercial.
+No obstante, la información publicada es muy escasa: cero descargas, cero likes, sin pipeline declarado, sin idiomas especificados y sin resultados de benchmarks. La licencia declarada en la model card es `openmdw-1.1`, mientras que los tags de Hugging Face indican `license:other`; esta discrepancia debe resolverse antes de cualquier uso comercial.
 
 ## Especificaciones tecnicas
 
@@ -18,12 +18,12 @@ No obstante, la información publicada es muy escasa: cero descargas, cero likes
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible (pesos publicados en safetensors; no se documentan GGUF ni otras variantes) |
 | Idiomas soportados | No disponible |
-| Licencia | `openmdw-1.1` en la model card; tag de HuggingFace `license:other` (discrepancia a verificar) |
+| Licencia | `openmdw-1.1` en la model card; tag de Hugging Face `license:other` (discrepancia a verificar) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen3.5, un transformer denso con atención estándar y mecanismos propios de la familia Qwen para el preentrenamiento multilingüe. El tag `qwen3_5` en HuggingFace confirma la procedencia, pero no se ha publicado información sobre la configuración exacta (número de capas, dimensión oculta, cabezas de atención, tamaño de vocabulario) ni sobre la longitud de contexto efectiva del checkpoint.
+El modelo se basa en la arquitectura Qwen3.5, un transformer denso con atención estándar y mecanismos propios de la familia Qwen para el preentrenamiento multilingüe. El tag `qwen3_5` en Hugging Face confirma la procedencia, pero no se ha publicado información sobre la configuración exacta (número de capas, dimensión oculta, cabezas de atención, tamaño de vocabulario) ni sobre la longitud de contexto efectiva del checkpoint.
 
 Respecto al entrenamiento, no hay datos disponibles sobre el número de tokens utilizados, la composición del dataset, la existencia de fases de RLHF o DPO, ni las técnicas de ajuste aplicadas. El sufijo "bioreason-pro-v2" sugiere una segunda iteración de un ajuste orientado a razonamiento biomédico, y "features" podría indicar que el checkpoint está pensado para extraer embeddings o características internas en lugar de para generación directa, pero esto es una inferencia a partir del nombre y no está confirmado por el autor. Tampoco se documentan innovaciones técnicas como decodificación especulativa, atención lineal o modos de razonamiento explícito.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BioReason-Pro-v2-4B-Features | ~4,2 B | No disponible | openmdw-1.1 / other (a verificar) | Gated en HuggingFace |
-| Qwen3.5 4B (base) | ~4 B | No disponible en esta ficha | Según la familia Qwen | Público en HuggingFace |
-| BioMistral 7B | ~7 B | 4.096-32.768 tokens según variante | Apache 2.0 / CC BY-NC según versión | Público en HuggingFace |
-| Meditron 7B | ~7 B | 4.096 tokens | Llama 2 (uso comercial restringido) | Público en HuggingFace |
+| BioReason-Pro-v2-4B-Features | ~4,2 B | No disponible | openmdw-1.1 / other (a verificar) | Gated en Hugging Face |
+| Qwen3.5 4B (base) | ~4 B | No disponible en esta ficha | Según la familia Qwen | Público en Hugging Face |
+| BioMistral 7B | ~7 B | 4.096-32.768 tokens según variante | Apache 2.0 / CC BY-NC según versión | Público en Hugging Face |
+| Meditron 7B | ~7 B | 4.096 tokens | Llama 2 (uso comercial restringido) | Público en Hugging Face |
 
 La comparación con Qwen3.5 4B es la más directa, ya que este checkpoint deriva de él; las diferencias de rendimiento por el ajuste biomédico no están cuantificadas. Frente a BioMistral y Meditron, el modelo de adibvafa es más pequeño (4,2B frente a 7B), lo que reduce requisitos de hardware pero también la capacidad potencial; ninguno de los tres publica en esta ficha datos comparables de benchmarks para este checkpoint concreto.
 
@@ -76,13 +76,13 @@ La comparación con Qwen3.5 4B es la más directa, ya que este checkpoint deriva
 - Riesgo elevado de alucinación en dominio biomédico: un ajuste sin evaluación publicada no garantiza precisión factual en contextos clínicos, donde los errores tienen consecuencias graves.
 - Sesgos desconocidos: al no documentarse la composición del dataset, no se puede evaluar el sesgo demográfico, lingüístico o geográfico.
 - Ambigüedad de licencia: la model card declara `openmdw-1.1` pero el tag indica `license:other`; es imprescindible aclarar las condiciones de uso comercial antes de integrarlo en producción.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que añade fricción a la reproducibilidad y a la integración en pipelines automatizados.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que añade fricción a la reproducibilidad y a la integración en pipelines automatizados.
 - Contexto e idiomas no especificados: no se puede planificar su uso en aplicaciones multilingües o con ventanas largas sin verificación empírica.
 - Cero adopción comunitaria (0 descargas, 0 likes): no hay evidencia de uso en producción ni informes de terceros sobre su comportamiento.
 - No apto para decisiones clínicas sin supervisión humana y validación externa exhaustiva.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adibvafa/bioreason-pro-v2-4b-features
+- Modelo en Hugging Face: https://huggingface.co/adibvafa/bioreason-pro-v2-4b-features
 - Familia Qwen3.5 (referencia del modelo base): no se ha proporcionado enlace específico en la información disponible.
 - Paper, blog o repositorio del autor: no disponible.

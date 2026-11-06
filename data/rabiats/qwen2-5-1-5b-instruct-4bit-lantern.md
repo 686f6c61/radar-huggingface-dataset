@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RabiatS/Qwen2.5-1.5B-Instruct-4bit-Lantern | 1,54 B | No disponible en esta ficha (el base declara 32.768) | MLX 4 bits, safetensors | Apache 2.0 | HuggingFace, pensado para Lantern |
-| mlx-community/Qwen2.5-1.5B-Instruct-4bit | 1,54 B | No disponible en esta ficha | MLX 4 bits | Apache 2.0 | HuggingFace; es el origen de esta copia |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens segun documentacion del modelo base | safetensors en 16 bits | Apache 2.0 | HuggingFace |
+| RabiatS/Qwen2.5-1.5B-Instruct-4bit-Lantern | 1,54 B | No disponible en esta ficha (el base declara 32.768) | MLX 4 bits, safetensors | Apache 2.0 | Hugging Face, pensado para Lantern |
+| mlx-community/Qwen2.5-1.5B-Instruct-4bit | 1,54 B | No disponible en esta ficha | MLX 4 bits | Apache 2.0 | Hugging Face; es el origen de esta copia |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens segun documentacion del modelo base | safetensors en 16 bits | Apache 2.0 | Hugging Face |
 | Alternativas de ~1-2 B (Llama 3.2 1B Instruct, SmolLM2 1.7B Instruct) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion con modelos de otros fabricantes no puede completarse con rigor porque la informacion proporcionada no incluye sus especificaciones. La diferencia relevante entre las tres primeras filas es de empaquetado, no de capacidades: los pesos son los mismos y solo cambia el identificador del repositorio y la precision del original.
@@ -88,7 +88,7 @@ La comparacion con modelos de otros fabricantes no puede completarse con rigor p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RabiatS/Qwen2.5-1.5B-Instruct-4bit-Lantern
+- Modelo en Hugging Face: https://huggingface.co/RabiatS/Qwen2.5-1.5B-Instruct-4bit-Lantern
 - Conversion de origen: https://huggingface.co/mlx-community/Qwen2.5-1.5B-Instruct-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de la aplicacion Lantern: https://github.com/RabiatS/lantern

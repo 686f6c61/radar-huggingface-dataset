@@ -69,9 +69,9 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/grok.h017.rl-med.step_30 | 9,4B | no disponible | no disponible | HuggingFace (checkpoint intermedio) |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible (probablemente 128k, no confirmado) | no disponible | HuggingFace |
-| Llama 3.1 8B | 8B | 128k | Llama 3.1 Community License | HuggingFace |
+| agentic-ptb/grok.h017.rl-med.step_30 | 9,4B | no disponible | no disponible | Hugging Face (checkpoint intermedio) |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible (probablemente 128k, no confirmado) | no disponible | Hugging Face |
+| Llama 3.1 8B | 8B | 128k | Llama 3.1 Community License | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -86,6 +86,6 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h017.rl-med.step_30
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h017.rl-med.step_30
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (referencia, no se ha verificado su existencia en la información proporcionada)
 - No se han encontrado papers, blogs o demos adicionales en la información disponible.

@@ -101,7 +101,7 @@ La comparacion cuantitativa con alternativas no esta disponible: la model card s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maf1oz1/llm-course-hw2-dpo
+- Modelo en Hugging Face: https://huggingface.co/maf1oz1/llm-course-hw2-dpo
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
 - Dataset de preferencias: https://huggingface.co/datasets/HumanLLMs/Human-Like-DPO-Dataset
 - Dataset de evaluacion fuera de distribucion: https://huggingface.co/datasets/databricks/databricks-dolly-15k

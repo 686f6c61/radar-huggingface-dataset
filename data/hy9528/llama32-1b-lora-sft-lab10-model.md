@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo hy9528/llama32-1b-lora-sft-lab10-model es un adaptador LoRA (Low-Rank Adaptation) aplicado sobre un modelo base Llama 3.2 de 1B parámetros, publicado por el usuario hy9528. Según su nombre, se trata de un checkpoint de fine-tuning supervisado (SFT) generado en un entorno de laboratorio (lab10), y está pensado para tareas de generación de texto conversacional. El repositorio contiene 1.235.814.400 parámetros totales en formato safetensors, lo que lo convierte en un modelo ligero que puede ejecutarse en hardware modesto. La model card es una plantilla automática de HuggingFace y no incluye información detallada sobre el proceso de entrenamiento, los datos utilizados ni las capacidades específicas del modelo.
+El modelo hy9528/llama32-1b-lora-sft-lab10-model es un adaptador LoRA (Low-Rank Adaptation) aplicado sobre un modelo base Llama 3.2 de 1B parámetros, publicado por el usuario hy9528. Según su nombre, se trata de un checkpoint de fine-tuning supervisado (SFT) generado en un entorno de laboratorio (lab10), y está pensado para tareas de generación de texto conversacional. El repositorio contiene 1.235.814.400 parámetros totales en formato safetensors, lo que lo convierte en un modelo ligero que puede ejecutarse en hardware modesto. La model card es una plantilla automática de Hugging Face y no incluye información detallada sobre el proceso de entrenamiento, los datos utilizados ni las capacidades específicas del modelo.
 
 ## Especificaciones tecnicas
 
@@ -35,7 +35,7 @@ El modelo se basa en la arquitectura transformer de la familia Llama, tal y como
 - Pruebas de fine-tuning con LoRA: este checkpoint sirve como ejemplo de un experimento de adaptación de bajo rango sobre Llama 3.2 1B. Puede utilizarse como referencia para validar pipelines de entrenamiento con PEFT.
 - Generación de texto en tareas de baja complejidad: es adecuado para completar textos cortos, resumir párrafos breves o generar respuestas simples, aunque no se dispone de benchmarks que confirmen su calidad.
 - Educación y experimentación: su tamaño y su disponibilidad en safetensors lo hacen útil para estudiantes e investigadores que quieran analizar el comportamiento de un modelo ajustado con LoRA sin necesidad de infraestructura costosa.
-- Integración en aplicaciones ligeras: gracias a su compatibilidad con `text-generation-inference` y `endpoints_compatible`, puede desplegarse en servicios de inferencia de HuggingFace para aplicaciones de chat internas.
+- Integración en aplicaciones ligeras: gracias a su compatibilidad con `text-generation-inference` y `endpoints_compatible`, puede desplegarse en servicios de inferencia de Hugging Face para aplicaciones de chat internas.
 - Evaluación de técnicas de alineación: al ser un modelo ajustado con SFT, puede emplearse para estudiar el efecto del fine-tuning supervisado sobre un modelo pequeño, comparándolo con el modelo base.
 
 ## Benchmarks y rendimiento
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: en FP16 se requieren aproximadamente 2,5 GB de VRAM, dado que el modelo tiene 1.235.814.400 parámetros. En FP32, la estimación sube a unos 4,9 GB. Con cuantización a 4 bits, la VRAM necesaria se reduciría a menos de 1 GB, aunque no se han publicado cuantizaciones.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, RTX 3060 o superior) puede ejecutar el modelo en FP16. En modo CPU, también es factible con 8 GB de RAM.
 - Compatibilidad con GPU de consumo: sí, el modelo es lo suficientemente pequeño para ejecutarse en tarjetas gráficas de gama media.
-- Opciones de despliegue: transformers (PyTorch), text-generation-inference según las etiquetas del repositorio, y endpoints de HuggingFace (`endpoints_compatible`).
+- Opciones de despliegue: transformers (PyTorch), text-generation-inference según las etiquetas del repositorio, y endpoints de Hugging Face (`endpoints_compatible`).
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares

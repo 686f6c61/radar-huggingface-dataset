@@ -79,7 +79,7 @@ La comparativa muestra que este modelo se distingue por combinar un tamaño medi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Samantha-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Samantha-i1-GGUF
 - Modelo base (merge): https://huggingface.co/Lathly/Qwen3.8-27B-Samantha
 - Repositorio estático con quants y mmproj: https://huggingface.co/mradermacher/Qwen3.8-27B-Samantha-GGUF
 - Guía de cuantizaciones GGUF para Qwen3.8-27B: https://kingy.ai/blog/qwen3-8-27b-best-quantization-gguf/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Viniciusalvesley/tiny-transformer-multitask-notes` es un repositorio de HuggingFace que contiene una implementacion propia y minimalista de un transformer, etiquetada como "Tiny Transformer" y orientada a experimentos multitarea. No es un modelo entrenado ni un release listo para produccion: el propio autor lo describe como un punto de partida reproducible con una configuracion explicita (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`) valido para pruebas de humo. El pipeline no esta declarado y los idiomas soportados no se especifican.
+`Viniciusalvesley/tiny-transformer-multitask-notes` es un repositorio de Hugging Face que contiene una implementacion propia y minimalista de un transformer, etiquetada como "Tiny Transformer" y orientada a experimentos multitarea. No es un modelo entrenado ni un release listo para produccion: el propio autor lo describe como un punto de partida reproducible con una configuracion explicita (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`) valido para pruebas de humo. El pipeline no esta declarado y los idiomas soportados no se especifican.
 
 El peso real del checkpoint son 24.832 parametros en formato safetensors, lo que situa al modelo en el rango de los juguetes didacticos o de los fixtures de test, no en el de los modelos de lenguaje utilizables. La relevancia de una ficha como esta es acotada y conviene ser honesto al respecto: sirve como plantilla de investigacion sobre arquitecturas multitarea con atencion flash, fusion por co-atencion, activacion mish y normalizacion scalenorm, y como base para validar infraestructura de entrenamiento, pero no aporta capacidades de generacion de texto, razonamiento ni codigo.
 
@@ -20,7 +20,7 @@ Es importante subrayar que el autor declara explicitamente que no se ha llevado 
 | Licencia | BSD 3-Clause |
 | Formato de pesos | safetensors (checkpoint de inicializacion), con definicion del modelo en Python/PyTorch |
 | Escala declarada | base |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas | 12 |
 | Likes | 0 |
 | Tamano del repositorio | 0,0 GB |
@@ -41,7 +41,7 @@ En cuanto al entrenamiento, no hay ningun run completado. `training_args.json` r
 - Capacidades multilingues: no disponibles; el campo de idiomas no esta informado.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles.
 - Lo que si ofrece el repositorio: una definicion de modelo ejecutable (`main.py`), con un bloque `__main__` que contiene un ejemplo de smoke test, mas los ficheros de configuracion de arquitectura y de receta de experimento.
-- Al ser una implementacion personalizada, las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito antes de poder usarse.
+- Al ser una implementacion personalizada, las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito antes de poder usarse.
 
 ## Casos de uso
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Variante | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Viniciusalvesley/tiny-transformer-multitask-notes | 24.832 | no disponible | base | Checkpoint de inicializacion, sin entrenar | BSD 3-Clause | HuggingFace, 12 descargas |
-| sandersgabriel/tiny-transformer-multitask | no disponible | no disponible | nano | Checkpoint de inicializacion, sin entrenar | no disponible | HuggingFace |
+| Viniciusalvesley/tiny-transformer-multitask-notes | 24.832 | no disponible | base | Checkpoint de inicializacion, sin entrenar | BSD 3-Clause | Hugging Face, 12 descargas |
+| sandersgabriel/tiny-transformer-multitask | no disponible | no disponible | nano | Checkpoint de inicializacion, sin entrenar | no disponible | Hugging Face |
 | skolouri/TinyTransformer | no disponible | no disponible | no disponible | Proyecto educativo de reconstruccion del transformer paso a paso | no disponible | GitHub |
 
 La comparacion con `sandersgabriel/tiny-transformer-multitask` es directa porque comparten descripcion literal y estructura, diferenciandose en la escala declarada (base frente a nano). En ambos casos se trata de repositorios espejo sin entrenamiento completado. No se dispone de datos de rendimiento de ninguno de los tres proyectos, por lo que no es posible establecer una comparacion cuantitativa.
@@ -89,7 +89,7 @@ La comparacion con `sandersgabriel/tiny-transformer-multitask` es directa porque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Viniciusalvesley/tiny-transformer-multitask-notes
+- Modelo en Hugging Face: https://huggingface.co/Viniciusalvesley/tiny-transformer-multitask-notes
 - Repositorio espejo en variante nano: https://huggingface.co/sandersgabriel/tiny-transformer-multitask
 - Proyecto educativo TinyTransformer en GitHub: https://github.com/skolouri/TinyTransformer
 - Introduccion a transformers en GeeksforGeeks: https://www.geeksforgeeks.org/machine-learning/getting-started-with-transformers/

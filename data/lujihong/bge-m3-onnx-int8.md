@@ -6,7 +6,7 @@
 
 El modelo subyacente es BGE-M3, desarrollado por BAAI (Beijing Academy of Artificial Intelligence), un encoder multilingüe que genera simultáneamente representaciones densas, dispersas (sparse) y multi-vector (ColBERT) a partir de un mismo paso de inferencia. Esta versión INT8 pesa aproximadamente 570 MB para el grafo ONNX (unos 1,1 GB en total con el tokenizador) y está pensada para ejecución local en CPU o GPU sin dependencia de frameworks de Python pesados.
 
-Su relevancia práctica es la de un artefacto listo para producción de recuperación de información: permite montar un pipeline RAG completamente offline con licencia MIT, verificación de integridad criptográfica y un coste de memoria reducido frente a la versión FP32. El repositorio en sí tiene 0 descargas y 0 likes en el momento de la consulta y no incluye pipeline declarado en HuggingFace.
+Su relevancia práctica es la de un artefacto listo para producción de recuperación de información: permite montar un pipeline RAG completamente offline con licencia MIT, verificación de integridad criptográfica y un coste de memoria reducido frente a la versión FP32. El repositorio en sí tiene 0 descargas y 0 likes en el momento de la consulta y no incluye pipeline declarado en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -87,12 +87,12 @@ No se han publicado resultados de benchmarks detallados en la información dispo
 - No se documentan sesgos conocidos, comportamiento por idioma ni tasas de error en dominios específicos.
 - La licencia MIT permite uso comercial, pero la atribución de copyright corresponde a los autores originales (BAAI y gpahal); el repositorio es solo un espejo.
 - El tokenizador requiere los tres ficheros en el mismo directorio; un empaquetado incorrecto provoca fallos de carga en producción.
-- El repositorio presenta 0 descargas y 0 likes, sin pipeline declarado en HuggingFace: conviene validar la integridad SHA256 antes de desplegarlo y considerar el upstream como fuente primaria.
+- El repositorio presenta 0 descargas y 0 likes, sin pipeline declarado en Hugging Face: conviene validar la integridad SHA256 antes de desplegarlo y considerar el upstream como fuente primaria.
 - No hay información sobre el límite exacto de tokens de entrada ni sobre el truncado aplicado por la exportación ONNX.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lujihong/bge-m3-onnx-int8
+- Repositorio en Hugging Face: https://huggingface.co/lujihong/bge-m3-onnx-int8
 - Upstream internacional: https://huggingface.co/gpahal/bge-m3-onnx-int8
 - Espejo nacional: https://hf-mirror.com/gpahal/bge-m3-onnx-int8
 - Modelo original de BAAI: https://huggingface.co/BAAI/bge-m3

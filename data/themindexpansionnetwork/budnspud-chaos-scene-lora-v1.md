@@ -80,10 +80,10 @@ La comparacion es aproximada: no existen adaptadores publicos equivalentes de es
 
 | Modelo | Tipo | Modelo base | Tamano | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| budnspud-chaos-scene-lora-v1 | LoRA de escena y personajes | FLUX (identificador `flux3` en las dependencias) | Repositorio de 1,0 GB (peso del LoRA no desglosado) | Escena recurrente de clay stop-motion con dos personajes fijos | no disponible | HuggingFace, 0 descargas |
+| budnspud-chaos-scene-lora-v1 | LoRA de escena y personajes | FLUX (identificador `flux3` en las dependencias) | Repositorio de 1,0 GB (peso del LoRA no desglosado) | Escena recurrente de clay stop-motion con dos personajes fijos | no disponible | Hugging Face, 0 descargas |
 | Bud Spencer 1972 v1.0 | LoRA de personaje | Flux.1 D | 164 MB | Retrato de un actor concreto | Licencia de Civitai (no verificada en detalle) | Archivado en CivArchive; sin espejos activos |
 | Bud V1 | LoRA de sujeto | Flux.1 D | 18 MB | Un perro ("just our dog") | Licencia de Civitai | Civitai / CivArchive |
-| BudNSpud_T2V_Minimax_H3_v1 | Modelo texto-a-video | no disponible | no disponible | Video a partir de texto, mismo universo de personajes | no disponible | HuggingFace, sin model card ni proveedor de inferencia |
+| BudNSpud_T2V_Minimax_H3_v1 | Modelo texto-a-video | no disponible | no disponible | Video a partir de texto, mismo universo de personajes | no disponible | Hugging Face, sin model card ni proveedor de inferencia |
 
 Frente a los LoRA de personaje de Flux.1 D, este adaptador cubre escena completa (dos personajes mas decorado fijo) en lugar de un unico sujeto, lo que implica mas elementos que deben permanecer estables y, segun la propia model card, mas variabilidad en la puesta en escena. No hay datos publicos para comparar calidad, consistencia ni fidelidad al prompt con ninguna de las alternativas.
 
@@ -102,12 +102,12 @@ Frente a los LoRA de personaje de Flux.1 D, este adaptador cubre escena completa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheMindExpansionNetwork/budnspud-chaos-scene-lora-v1
+- Modelo en Hugging Face: https://huggingface.co/TheMindExpansionNetwork/budnspud-chaos-scene-lora-v1
 - Grafo ejecutado, escena 01 popcorn: https://huggingface.co/TheMindExpansionNetwork/budnspud-chaos-scene-lora-v1/blob/main/workflows/executed/01_popcorn_start.json
 - Grafo ejecutado, escena 02 sandwich: https://huggingface.co/TheMindExpansionNetwork/budnspud-chaos-scene-lora-v1/blob/main/workflows/executed/02_sandwich_start.json
 - Grafo ejecutado, escena 03 controller: https://huggingface.co/TheMindExpansionNetwork/budnspud-chaos-scene-lora-v1/blob/main/workflows/executed/03_controller_start.json
 - Grafo ejecutado, escena 04 pigeon: https://huggingface.co/TheMindExpansionNetwork/budnspud-chaos-scene-lora-v1/blob/main/workflows/executed/04_pigeon_start.json
-- Perfil del autor en HuggingFace: https://huggingface.co/TheMindExpansionNetwork/models
+- Perfil del autor en Hugging Face: https://huggingface.co/TheMindExpansionNetwork/models
 - Modelo texto-a-video del mismo autor: https://huggingface.co/TheMindExpansionNetwork/BudNSpud_T2V_Minimax_H3_v1
 - LoRA de personaje Bud Spencer 1972 (CivArchive): https://civarchive.com/models/1552648
 - LoRA Bud V1 para Flux.1 D (CivArchive): https://civarchive.com/models/2324823

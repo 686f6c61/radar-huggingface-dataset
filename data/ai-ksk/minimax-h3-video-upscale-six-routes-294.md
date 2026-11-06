@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento ni de licencia de las alternativas en la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AI-KSK/minimax-h3-video-upscale-six-routes-294
+- Repositorio en Hugging Face: https://huggingface.co/AI-KSK/minimax-h3-video-upscale-six-routes-294
 - MarkDKBerry.com (referenciado en las notas internas de los grafos): no se proporciona URL directa en la información disponible.
 - Documentación de ComfyUI: no disponible en la información proporcionada.
 - Pesos de MiniMax H3 y LTX 2.5: no se incluyen enlaces en la información disponible.

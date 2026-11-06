@@ -2,7 +2,7 @@
 
 ## Resumen
 
-autism-qwen3-1.7b es un ajuste fino (fine-tuning) del modelo base Qwen/Qwen3-1.7B-Base, publicado por el usuario anand131516 en HuggingFace. Se trata de un modelo de lenguaje causal de tipo transformer denso, orientado a generacion de texto y conversacion, que hereda la arquitectura y las capacidades del Qwen3-1.7B original desarrollado por el equipo Qwen de Alibaba. El repositorio ocupa 0,6 GB y los pesos estan en formato safetensors, lo que sugiere una publicacion en precision reducida o un ajuste sobre una version ya cuantizada del modelo base.
+autism-qwen3-1.7b es un ajuste fino (fine-tuning) del modelo base Qwen/Qwen3-1.7B-Base, publicado por el usuario anand131516 en Hugging Face. Se trata de un modelo de lenguaje causal de tipo transformer denso, orientado a generacion de texto y conversacion, que hereda la arquitectura y las capacidades del Qwen3-1.7B original desarrollado por el equipo Qwen de Alibaba. El repositorio ocupa 0,6 GB y los pesos estan en formato safetensors, lo que sugiere una publicacion en precision reducida o un ajuste sobre una version ya cuantizada del modelo base.
 
 El nombre del repositorio sugiere un ajuste orientado a contenido o contextos relacionados con el autismo, aunque la model card publicada es practicamente identica a la del modelo base Qwen3-1.7B y no documenta el dataset, el procedimiento de entrenamiento ni los objetivos concretos del ajuste. Esta ausencia de documentacion especifica es relevante para cualquier evaluacion: no es posible determinar que comportamiento ha sido modificado respecto al modelo original ni con que datos.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| autism-qwen3-1.7b | 1,7B | 32.768 | Apache 2.0 | HuggingFace | Ajuste no documentado; sin benchmarks |
-| Qwen/Qwen3-1.7B | 1,7B | 32.768 | Apache 2.0 | HuggingFace, Ollama, vLLM | Modelo oficial con benchmarks publicados |
-| Qwen/Qwen3-1.7B-Base | 1,7B | 32.768 | Apache 2.0 | HuggingFace | Base de preentrenamiento, sin alineacion instructiva |
-| Llama 3.2 1B Instruct | 1,2B | 131.072 | Llama 3.2 Community License | HuggingFace, Ollama | Contexto mayor, licencia con restricciones |
+| autism-qwen3-1.7b | 1,7B | 32.768 | Apache 2.0 | Hugging Face | Ajuste no documentado; sin benchmarks |
+| Qwen/Qwen3-1.7B | 1,7B | 32.768 | Apache 2.0 | Hugging Face, Ollama, vLLM | Modelo oficial con benchmarks publicados |
+| Qwen/Qwen3-1.7B-Base | 1,7B | 32.768 | Apache 2.0 | Hugging Face | Base de preentrenamiento, sin alineacion instructiva |
+| Llama 3.2 1B Instruct | 1,2B | 131.072 | Llama 3.2 Community License | Hugging Face, Ollama | Contexto mayor, licencia con restricciones |
 
 La comparacion directa mas relevante es con el Qwen3-1.7B oficial: al no documentarse el ajuste, no hay evidencia de que este checkpoint supere al original en ninguna tarea. Para usos en produccion, el modelo oficial ofrece garantias de calidad y mantenimiento que este repositorio no proporciona.
 
@@ -86,7 +86,7 @@ La comparacion directa mas relevante es con el Qwen3-1.7B oficial: al no documen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anand131516/autism-qwen3-1.7b
+- Repositorio Hugging Face: https://huggingface.co/anand131516/autism-qwen3-1.7b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Modelo instructivo oficial: https://huggingface.co/Qwen/Qwen3-1.7B
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

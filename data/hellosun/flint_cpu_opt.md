@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HelloSun/flint_cpu_opt
+- Repositorio Hugging Face: https://huggingface.co/HelloSun/flint_cpu_opt
 - Modelo base: https://huggingface.co/RecursiveSI/flint
 - GGUF de unsloth: https://huggingface.co/unsloth/flint-GGUF
 - GGUF int4 de RecursiveSI: https://huggingface.co/RecursiveSI/flint-int4-gguf

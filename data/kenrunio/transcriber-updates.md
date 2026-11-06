@@ -78,7 +78,7 @@ No disponible. No se identifican en la informacion proporcionada repositorios co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kenrunio/transcriber-updates
+- Repositorio en Hugging Face: https://huggingface.co/kenrunio/transcriber-updates
 - Manifiesto de actualizaciones: https://huggingface.co/kenrunio/transcriber-updates/blob/main/transcriber.json (ruta inferida a partir de la model card)
 - Instaladores de la aplicacion: https://huggingface.co/kenrunio/transcriber-updates/tree/main/installers (ruta inferida a partir de la model card)
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este repositorio.

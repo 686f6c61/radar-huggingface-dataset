@@ -88,10 +88,10 @@ No existe una categoría estándar de "modelo de decisión" con la que comparar 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| d3-ultra | 26,09 B (0,46 B visión) | 131.072 tokens por pregunta | Discriminativo: probabilidad por opción, caja y track; sin generación | Apache-2.0 | HuggingFace, safetensors, `trust_remote_code` |
-| Qwen2.5-VL-32B | ~32,8 B | 128k tokens (verificar) | Generativo multimodal; requiere prompting y parseo de la salida | Apache-2.0 | HuggingFace, amplio soporte en vLLM |
-| Gemma 3 27B | ~27 B | 128k tokens (verificar) | Generativo multimodal | Licencia Gemma (no Apache-2.0) | HuggingFace, soporte amplio |
-| Especialistas en detección zero-shot (Grounding DINO, OWLv2) | < 1 B | N/A | Solo detección de cajas; sin clasificación, score ni tracking unificado | Apache-2.0 / MIT según variante | HuggingFace, ampliamente desplegados |
+| d3-ultra | 26,09 B (0,46 B visión) | 131.072 tokens por pregunta | Discriminativo: probabilidad por opción, caja y track; sin generación | Apache-2.0 | Hugging Face, safetensors, `trust_remote_code` |
+| Qwen2.5-VL-32B | ~32,8 B | 128k tokens (verificar) | Generativo multimodal; requiere prompting y parseo de la salida | Apache-2.0 | Hugging Face, amplio soporte en vLLM |
+| Gemma 3 27B | ~27 B | 128k tokens (verificar) | Generativo multimodal | Licencia Gemma (no Apache-2.0) | Hugging Face, soporte amplio |
+| Especialistas en detección zero-shot (Grounding DINO, OWLv2) | < 1 B | N/A | Solo detección de cajas; sin clasificación, score ni tracking unificado | Apache-2.0 / MIT según variante | Hugging Face, ampliamente desplegados |
 
 La diferencia funcional es clara: los modelos generativos pueden responder preguntas abiertas, pero necesitan generar tokens y parsear la salida para obtener una probabilidad; d3-ultra devuelve la distribución directamente y unifica cinco tipos de decisión en una sola lectura. Los especialistas en detección son mucho más pequeños y rápidos en su tarea, pero no cubren clasificación, score ni tracking. Los datos de las filas alternativas provienen de sus fichas públicas y deben verificarse antes de usarlos en una decisión de compra o despliegue.
 
@@ -111,7 +111,7 @@ La diferencia funcional es clara: los modelos generativos pueden responder pregu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-sr/d3-ultra
+- Modelo en Hugging Face: https://huggingface.co/vllm-sr/d3-ultra
 - Space oficial: https://huggingface.co/spaces/vllm-sr/d3-ultra
 - API gratuita de demostración: https://decision.vllm-sr.ai
 - Repositorio de vLLM Semantic Router: https://github.com/vllm-project/semantic-router

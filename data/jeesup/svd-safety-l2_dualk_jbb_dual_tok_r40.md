@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l2_dualk_jbb_dual_tok_r40` es un checkpoint de investigación derivado de `meta-llama/Llama-2-7b-chat-hf`, publicado por el usuario Jeesup en HuggingFace. No es un modelo conversacional de propósito general, sino un artefacto experimental concebido para estudiar cómo la compresión por SVD degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes permite repararlo mejor. El modelo conserva el 59,98 % de los parámetros densos del original (se elimina un 40,00 %), lo que se traduce en 6.738.415.616 parámetros totales según los pesos en safetensors.
+`svd-safety-l2_dualk_jbb_dual_tok_r40` es un checkpoint de investigación derivado de `meta-llama/Llama-2-7b-chat-hf`, publicado por el usuario Jeesup en Hugging Face. No es un modelo conversacional de propósito general, sino un artefacto experimental concebido para estudiar cómo la compresión por SVD degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes permite repararlo mejor. El modelo conserva el 59,98 % de los parámetros densos del original (se elimina un 40,00 %), lo que se traduce en 6.738.415.616 parámetros totales según los pesos en safetensors.
 
 La compresión se realiza mediante SVD blanqueado con K-FAC en dos dominios (utilidad y seguridad) y un presupuesto de rango heredado de SVD-LLM. Posteriormente se aplica una recuperación con LoRA en dos etapas (U y V secuenciales) sobre `alpaca-cleaned`. El resultado es una de las celdas de una rejilla experimental sobre reglas de selección y presupuestos de compresión, con semilla 42.
 
@@ -91,6 +91,6 @@ No se dispone de datos de benchmarks comparativos con alternativas de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_dualk_jbb_dual_tok_r40
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_dualk_jbb_dual_tok_r40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código ni demos adicionales.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `QA` es un checkpoint publicado en HuggingFace por el usuario `syam2004` el 20 de agosto de 2026. Se trata de un modelo de 66,36 millones de parámetros con licencia MIT, alojado en un repositorio de aproximadamente 0,3 GB. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso, por lo que la información disponible es extremadamente limitada.
+El modelo `QA` es un checkpoint publicado en Hugging Face por el usuario `syam2004` el 20 de agosto de 2026. Se trata de un modelo de 66,36 millones de parámetros con licencia MIT, alojado en un repositorio de aproximadamente 0,3 GB. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso, por lo que la información disponible es extremadamente limitada.
 
-A pesar de su nombre, no se puede confirmar que esté especializado en tareas de question answering, ya que no se proporciona ninguna documentación al respecto. El pipeline declarado en HuggingFace es "no disponible" y no se indican idiomas soportados. Su relevancia actual es incierta: al carecer de model card, benchmarks o ejemplos de uso, cualquier evaluación rigurosa requeriría un análisis directo de los pesos, que no se ha publicado.
+A pesar de su nombre, no se puede confirmar que esté especializado en tareas de question answering, ya que no se proporciona ninguna documentación al respecto. El pipeline declarado en Hugging Face es "no disponible" y no se indican idiomas soportados. Su relevancia actual es incierta: al carecer de model card, benchmarks o ejemplos de uso, cualquier evaluación rigurosa requeriría un análisis directo de los pesos, que no se ha publicado.
 
 ## Especificaciones tecnicas
 
@@ -60,4 +60,4 @@ No disponible. Al no conocerse la arquitectura ni las capacidades del modelo, no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/syam2004/QA
+- Repositorio en Hugging Face: https://huggingface.co/syam2004/QA

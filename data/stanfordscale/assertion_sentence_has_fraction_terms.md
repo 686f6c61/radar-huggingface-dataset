@@ -80,8 +80,8 @@ No se dispone de modelos comparables publicados con la misma tarea y el mismo es
 
 | Alternativa | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `StanfordSCALE/assertion_sentence_has_fraction_terms` | Clasificador SetFit (MPNet + regresion logistica) | 109.486.464 | no disponible | no disponible | HuggingFace, 0 descargas |
-| `sentence-transformers/paraphrase-mpnet-base-v2` | Encoder de frases sin cabeza de clasificacion | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace (modelo base publico) |
+| `StanfordSCALE/assertion_sentence_has_fraction_terms` | Clasificador SetFit (MPNet + regresion logistica) | 109.486.464 | no disponible | no disponible | Hugging Face, 0 descargas |
+| `sentence-transformers/paraphrase-mpnet-base-v2` | Encoder de frases sin cabeza de clasificacion | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face (modelo base publico) |
 | Otros clasificadores de comportamiento docente con el mismo esquema EduBehaviors | Clasificador SetFit | no disponible | no disponible | no disponible | no disponible |
 | Clasificacion zero-shot o few-shot con un LLM generativo | Modelo generativo | no disponible | no disponible | depende del LLM | no disponible |
 
@@ -101,7 +101,7 @@ No se dispone de modelos comparables publicados con la misma tarea y el mismo es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_has_fraction_terms
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_has_fraction_terms
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - TalkMoves Dataset (repositorio original de las transcripciones): https://github.com/SumnerLab/TalkMoves

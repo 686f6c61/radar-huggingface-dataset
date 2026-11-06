@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pixal3D es un repositorio publicado por el usuario vegax87 en HuggingFace que contiene archivos en formato GGUF de un modelo denominado Pixal3D, aparentemente orientado a tareas de generación o procesamiento 3D. La única información disponible en la model card indica que estos pesos están preparados para su uso con un fork personal de trellis.cpp, una implementación de inferencia en C++ para modelos de reconstrucción 3D. No se especifican la arquitectura, el tamaño, el contexto ni las capacidades concretas del modelo.
+Pixal3D es un repositorio publicado por el usuario vegax87 en Hugging Face que contiene archivos en formato GGUF de un modelo denominado Pixal3D, aparentemente orientado a tareas de generación o procesamiento 3D. La única información disponible en la model card indica que estos pesos están preparados para su uso con un fork personal de trellis.cpp, una implementación de inferencia en C++ para modelos de reconstrucción 3D. No se especifican la arquitectura, el tamaño, el contexto ni las capacidades concretas del modelo.
 
 El repositorio se creó en agosto de 2026 y no registra descargas ni valoraciones, lo que sugiere que se trata de un proyecto muy reciente o experimental. La licencia es MIT, lo que permite uso comercial y modificación, pero la ausencia de documentación técnica limita su evaluación para integración en producción.
 
@@ -57,5 +57,5 @@ No disponible. No se conocen modelos comparables con los que establecer una comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vegax87/Pixal3D
+- Repositorio Hugging Face: https://huggingface.co/vegax87/Pixal3D
 - Fork de trellis.cpp mencionado: https://github.com/vegax87/trellis.cpp/commits/pixal3d

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Loopie-6B-A0.6B-preview es un modelo de lenguaje open source desarrollado por IQuest Research (bajo el usuario de HuggingFace zitian-gao), perteneciente a la serie Loopie, presentada como la familia de modelos con arquitectura Looped Transformer más potente publicada hasta la fecha. Combina un diseño de transformer en bucle (looped transformer) con una arquitectura de mezcla de expertos (MoE), lo que le permite ofrecer un rendimiento competitivo frente a modelos densos de hasta 4B de parámetros con un coste de inferencia mucho menor, al activar solo unos 0,6B de parámetros por token.
+Loopie-6B-A0.6B-preview es un modelo de lenguaje open source desarrollado por IQuest Research (bajo el usuario de Hugging Face zitian-gao), perteneciente a la serie Loopie, presentada como la familia de modelos con arquitectura Looped Transformer más potente publicada hasta la fecha. Combina un diseño de transformer en bucle (looped transformer) con una arquitectura de mezcla de expertos (MoE), lo que le permite ofrecer un rendimiento competitivo frente a modelos densos de hasta 4B de parámetros con un coste de inferencia mucho menor, al activar solo unos 0,6B de parámetros por token.
 
 El modelo se presenta en versión "preview" optimizada principalmente para razonamiento matemático y científico. Según la model card, destaca especialmente en benchmarks de matemáticas de nivel competición (AIME 24, AIME 25, MATH-500), donde supera a alternativas como Gemma-4 E4B-it o Qwen3 1.7B con una fracción de los parámetros activos. Es relevante ahora porque demuestra que la combinación de looping y MoE puede reducir drásticamente el coste computacional por token manteniendo calidad, un enfoque de gran interés para inferencia eficiente en hardware limitado.
 
@@ -101,8 +101,8 @@ Loopie ofrece el mejor equilibrio entre coste de inferencia (0,6B activos) y ren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zitian-gao/Loopie-6B-A0.6B-preview
+- Modelo en Hugging Face: https://huggingface.co/zitian-gao/Loopie-6B-A0.6B-preview
 - Paper (arXiv): https://arxiv.org/abs/2607.16051
 - Fork de Transformers compatible: https://github.com/zitian-gao/transformers
 - Fork de vLLM compatible: https://github.com/zitian-gao/vllm
-- Modelo hermano: Loopie-20B-A2B-preview (disponible en el perfil del autor en HuggingFace)
+- Modelo hermano: Loopie-20B-A2B-preview (disponible en el perfil del autor en Hugging Face)

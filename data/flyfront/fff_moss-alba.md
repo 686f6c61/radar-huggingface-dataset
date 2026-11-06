@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FFF_MOSS-Alba es un ajuste fino (fine-tune) del modelo de generacion de imagenes MOSS-Image-SFT, desarrollado por el usuario flyfront y publicado en HuggingFace. Su objetivo es trasladar el estilo de ilustracion anime de FFF_ANIMA-Alba al modelo base MOSS-Image, de modo que las figuras humanas se dibujen con esa estetica concreta mientras el fondo, los textos y la composicion conservan la calidad del modelo original. El autor indica que solo se entrenaron las personas, enmascarando los fondos durante el entrenamiento.
+FFF_MOSS-Alba es un ajuste fino (fine-tune) del modelo de generacion de imagenes MOSS-Image-SFT, desarrollado por el usuario flyfront y publicado en Hugging Face. Su objetivo es trasladar el estilo de ilustracion anime de FFF_ANIMA-Alba al modelo base MOSS-Image, de modo que las figuras humanas se dibujen con esa estetica concreta mientras el fondo, los textos y la composicion conservan la calidad del modelo original. El autor indica que solo se entrenaron las personas, enmascarando los fondos durante el entrenamiento.
 
 El repositorio (16 GB) incluye tanto el modelo completo ajustado como una LoRA de estilo reutilizable con otros checkpoints de la familia MOSS-Image. La version mas reciente es FFF_MOSS-Alba-v1 (modelo) y FFF_MOSS-Alba-style-v2 (LoRA), con una version anterior v1 de la LoRA conservada como referencia. El modelo base utiliza un text encoder Qwen3.5-9B y un VAE FLUX.2 small decoder, y se distribuye bajo licencia Apache 2.0.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FFF_MOSS-Alba | no disponible | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace (flyfront/FFF_MOSS-Alba) |
-| MOSS-Image-SFT (base) | no disponible | no disponible | sin datos en la informacion | no disponible en la informacion | HuggingFace (OpenMOSS-Team/MOSS-Image-SFT) |
-| FFF_ANIMA-Alba (referencia de estilo) | no disponible | no disponible | sin datos en la informacion | no disponible en la informacion | HuggingFace (flyfront/FFF_ANIMA-Alba) |
+| FFF_MOSS-Alba | no disponible | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face (flyfront/FFF_MOSS-Alba) |
+| MOSS-Image-SFT (base) | no disponible | no disponible | sin datos en la informacion | no disponible en la informacion | Hugging Face (OpenMOSS-Team/MOSS-Image-SFT) |
+| FFF_ANIMA-Alba (referencia de estilo) | no disponible | no disponible | sin datos en la informacion | no disponible en la informacion | Hugging Face (flyfront/FFF_ANIMA-Alba) |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de los modelos comparables en la informacion proporcionada, por lo que la comparacion se limita a licencia y disponibilidad.
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flyfront/FFF_MOSS-Alba
+- Modelo en Hugging Face: https://huggingface.co/flyfront/FFF_MOSS-Alba
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Repositorio MOSS-Image: https://github.com/OpenMOSS/MOSS-Image
 - Guia de usuario de MOSS-Image (prompts de layout): https://github.com/OpenMOSS/MOSS-Image/blob/main/USERGUIDE.md#layout-prompts-experimental

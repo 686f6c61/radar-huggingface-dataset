@@ -93,6 +93,6 @@ La comparacion muestra una ventaja clara en velocidad y tamano, aunque el VAE pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gaze-tovich-377/DanichAI60-v3-beta
+- Hugging Face: https://huggingface.co/Gaze-tovich-377/DanichAI60-v3-beta
 - Video demostrativo del muestreador: https://www.youtube.com/watch?v=HhUAR-MrsD0
 - Google Colab (posiblemente relacionado, sin confirmar): https://colab.research.google.com/drive/11s5IQkI8H-kIn00Kg6Sqp-dD3RwsICdE

@@ -68,9 +68,9 @@ No se dispone de datos suficientes para una comparativa fiable con otros modelos
 
 ## Enlaces
 
-- Repo HuggingFace del modelo original: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
-- Repo HuggingFace de cuantizaciones GGUF (mradermacher): https://huggingface.co/mradermacher/LFM2.5-8B-A1B-bf16-GGUF
-- Repo HuggingFace de variante Coder: https://huggingface.co/mradermacher/LFM2.5-8B-A1B-Coder-GGUF
+- Repo Hugging Face del modelo original: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
+- Repo Hugging Face de cuantizaciones GGUF (mradermacher): https://huggingface.co/mradermacher/LFM2.5-8B-A1B-bf16-GGUF
+- Repo Hugging Face de variante Coder: https://huggingface.co/mradermacher/LFM2.5-8B-A1B-Coder-GGUF
 - Blog oficial de Liquid AI: https://www.liquid.ai/blog/lfm2-5-8b-a1b
 - Documentacion oficial de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-8b-a1b
 - Pagina en Ollama (cuantizaciones de la comunidad): https://ollama.com/maternion/lfm2.5

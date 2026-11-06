@@ -97,8 +97,8 @@ No se dispone de datos comparativos de benchmarks frente a alternativas en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/lipik/nemotron-3.5-asr-streaming-0.6b-gguf
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/lipik/nemotron-3.5-asr-streaming-0.6b-gguf
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Commit upstream del modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b/commit/24b151a
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Commit de validación en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/tree/909e94e

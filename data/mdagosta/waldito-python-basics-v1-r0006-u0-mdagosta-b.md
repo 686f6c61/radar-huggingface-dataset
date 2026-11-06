@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`waldito-python-basics-v1-r0006-u0-mdagosta-b` es un modelo de generacion de texto publicado por el usuario `mdagosta` en HuggingFace, identificado en su model card como un "export" de un modelo de la familia OpenWALDO. Segun la propia model card, utiliza la arquitectura estandar de modelo causal de lenguaje Llama de Transformers junto con un tokenizador de bytes propietario ("OpenWALDO's schema-1 byte tokenizer") que obliga a cargar el tokenizer con `trust_remote_code=True`. El repositorio incluye ficheros de inventario (`BOM.json`) y un mapeo de divulgacion de contenido de entrenamiento para el reglamento europeo de GPAI (`EU-BOM.json`).
+`waldito-python-basics-v1-r0006-u0-mdagosta-b` es un modelo de generacion de texto publicado por el usuario `mdagosta` en Hugging Face, identificado en su model card como un "export" de un modelo de la familia OpenWALDO. Segun la propia model card, utiliza la arquitectura estandar de modelo causal de lenguaje Llama de Transformers junto con un tokenizador de bytes propietario ("OpenWALDO's schema-1 byte tokenizer") que obliga a cargar el tokenizer con `trust_remote_code=True`. El repositorio incluye ficheros de inventario (`BOM.json`) y un mapeo de divulgacion de contenido de entrenamiento para el reglamento europeo de GPAI (`EU-BOM.json`).
 
 El dato objetivo mas relevante es su tamano: 9.541.632 parametros reales, verificados en los pesos safetensors del repositorio. Se trata, por tanto, de un modelo muy pequeno (orden de magnitud de ~10 millones de parametros), en la linea de los modelos experimentales de investigacion mas que de los asistentes de codigo de uso general. El nombre del checkpoint sugiere un ajuste orientado a conceptos basicos de Python, aunque no hay documentacion publicada que lo confirme.
 
@@ -94,7 +94,7 @@ No se dispone de datos de parametros, contexto, licencia ni evaluaciones de los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0006-u0-mdagosta-b
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0006-u0-mdagosta-b
 - Checkpoint hermano de la misma familia: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta-b
 - Referencia generica sobre ejecucion local de modelos desde Python: https://dev.to/alichherawalla/how-to-use-ai-running-on-your-own-computer-from-python-in-2026-2oh9
 - Referencia generica sobre programacion en Python con IA: https://realpython.com/tutorials/ai/

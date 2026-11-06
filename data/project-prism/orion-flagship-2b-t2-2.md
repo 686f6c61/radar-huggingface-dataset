@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Orion-Flagship-2B-T2.2 es un modelo publicado en HuggingFace por el usuario Project-Prism bajo el identificador `Project-Prism/Orion-Flagship-2B-T2.2`. Se trata de un repositorio con acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargar los pesos. El nombre sugiere un modelo de aproximadamente 2.000 millones de parametros y una version o variante identificada como "T2.2", aunque ninguno de estos extremos esta confirmado en la informacion disponible.
+Orion-Flagship-2B-T2.2 es un modelo publicado en Hugging Face por el usuario Project-Prism bajo el identificador `Project-Prism/Orion-Flagship-2B-T2.2`. Se trata de un repositorio con acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargar los pesos. El nombre sugiere un modelo de aproximadamente 2.000 millones de parametros y una version o variante identificada como "T2.2", aunque ninguno de estos extremos esta confirmado en la informacion disponible.
 
 La relevancia de esta ficha es limitada por la escasez de metadatos: la model card no expone pipeline, licencia ni idiomas, y el repositorio no registra descargas (0) con un unico "like". El tamano del repositorio es de 168,9 GB, un volumen muy superior al que corresponderia a un modelo denso de ~2B parametros en precision completa, lo que apunta a la presencia de multiples checkpoints, formatos o cuantizaciones empaquetados en el mismo repositorio.
 
@@ -20,7 +20,7 @@ Las busquedas web realizadas no han devuelto informacion relevante sobre el mode
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | no disponible (el tamano del repo, 168,9 GB, sugiere multiples formatos y/o checkpoints) |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 168,9 GB |
 | Fecha de creacion | 2026-10-06 |
 | Ultima actualizacion | 2026-10-07 |
@@ -75,7 +75,7 @@ No se dispone de datos verificados de Orion-Flagship-2B-T2.2 que permitan una co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos confirmados |
 |---|---|---|---|---|---|
-| Orion-Flagship-2B-T2.2 | ~2B (no confirmado) | no disponible | no disponible | gated en HuggingFace | minimos |
+| Orion-Flagship-2B-T2.2 | ~2B (no confirmado) | no disponible | no disponible | gated en Hugging Face | minimos |
 | Qwen2.5-1.5B | 1,5B | 32K | Apache-2.0 (variantes) | publica | amplios |
 | Gemma 2 2B | 2,6B | 8K | Gemma Terms | publica | amplios |
 | Llama 3.2 1B | 1,2B | 128K | Llama Community License | publica | amplios |
@@ -85,7 +85,7 @@ La comparacion de rendimiento no puede establecerse: no hay benchmarks publicado
 ## Limitaciones y advertencias
 
 - Metadatos incompletos: no se declaran licencia, idiomas, pipeline ni arquitectura, lo que impide evaluar su idoneidad para uso comercial o de investigacion.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga; esto condiciona la reproducibilidad y la automatizacion de despliegues.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga; esto condiciona la reproducibilidad y la automatizacion de despliegues.
 - Riesgo de alucinacion: desconocido, pero presente de forma general en modelos de lenguaje; no hay informacion de alineamiento que permita acotarlo.
 - Sesgos: no evaluables sin informacion sobre el dataset de entrenamiento.
 - Limitaciones de contexto e idioma: no disponibles.
@@ -95,6 +95,6 @@ La comparacion de rendimiento no puede establecerse: no hay benchmarks publicado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Project-Prism/Orion-Flagship-2B-T2.2
+- Hugging Face: https://huggingface.co/Project-Prism/Orion-Flagship-2B-T2.2
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada. Los resultados obtenidos correspondian a productos de gestion de proyectos de Microsoft y no guardan relacion con el modelo.
 - No se dispone de enlaces adicionales verificables del autor Project-Prism.

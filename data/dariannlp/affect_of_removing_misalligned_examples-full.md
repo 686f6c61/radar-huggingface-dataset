@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DarianNLP/affect_of_removing_misalligned_examples-full | 3.2B | No disponible | No disponible | HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct | 3.2B | 128k | Llama 3.2 Community License | HuggingFace |
-| Qwen2.5-3B-Instruct | 3.1B | 32k | Apache 2.0 | HuggingFace |
+| DarianNLP/affect_of_removing_misalligned_examples-full | 3.2B | No disponible | No disponible | Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct | 3.2B | 128k | Llama 3.2 Community License | Hugging Face |
+| Qwen2.5-3B-Instruct | 3.1B | 32k | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar. La comparativa se limita a características técnicas. El modelo base Llama-3.2-3B-Instruct es la referencia natural, pero no hay evidencia de que el ajuste mejore o empeore sus capacidades.
 
@@ -75,6 +75,6 @@ No se dispone de datos de rendimiento para comparar. La comparativa se limita a 
 
 ## Enlaces
 
-- [HuggingFace - DarianNLP/affect_of_removing_misalligned_examples-full](https://huggingface.co/DarianNLP/affect_of_removing_misalligned_examples-full)
+- [Hugging Face - DarianNLP/affect_of_removing_misalligned_examples-full](https://huggingface.co/DarianNLP/affect_of_removing_misalligned_examples-full)
 - [Modelo base: meta-llama/Llama-3.2-3B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct)
 - [TRL (Transformers Reinforcement Learning)](https://github.com/huggingface/trl)

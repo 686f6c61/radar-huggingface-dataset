@@ -60,7 +60,7 @@ También se reporta que el efecto comportamental de la ventaja de las primas sob
 - **Pesos de las sondas**: triviales (1536 parámetros, ocupan unos pocos KB).
 - **Datos de activaciones crudas**: el repositorio ocupa 620 GB, lo que requiere almacenamiento considerable. Para procesarlos se necesita una máquina con al menos 640 GB de espacio en disco.
 - **Modelos base**: para usar las sondas se necesita ejecutar uno de los modelos base (Llama-3.2-1B, Qwen3.5-2B, Gemma-4-E2B o Gemma-4-E4B). Los modelos de 1B a 4B caben en GPUs de consumo como una RTX 3090 o RTX 4090 con cuantización, o en A100 para mayor comodidad.
-- **Inferencia**: el script de reproducción requiere un entorno Python con PyTorch y HuggingFace Transformers. Se puede ejecutar en una GPU con al menos 8 GB de VRAM para los modelos de 1B, y 16 GB para los de 2B–4B.
+- **Inferencia**: el script de reproducción requiere un entorno Python con PyTorch y Hugging Face Transformers. Se puede ejecutar en una GPU con al menos 8 GB de VRAM para los modelos de 1B, y 16 GB para los de 2B–4B.
 - **Alternativas**: vLLM o llama.cpp pueden usarse para el modelo base, pero el script de steering está diseñado para PyTorch con hooks.
 
 ## Comparativa con modelos similares
@@ -79,8 +79,8 @@ No se dispone de comparación con otros repositorios de sondas de emociones o ve
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/musicakamusic/emotion-probes)
-- [Dataset de activaciones crudas en HuggingFace](https://huggingface.co/datasets/musicakamusic/emotion-probes-raw-activations)
+- [Repositorio Hugging Face](https://huggingface.co/musicakamusic/emotion-probes)
+- [Dataset de activaciones crudas en Hugging Face](https://huggingface.co/datasets/musicakamusic/emotion-probes-raw-activations)
 - [Paper arXiv:2607.18691](https://arxiv.org/abs/2607.18691) (referenciado en la model card, no se ha podido acceder directamente)
 - [Proyecto CrimsonRed en GitHub](https://github.com/someaka/CrimsonRed) (referenciado en la model card)</think>## Resumen
 
@@ -142,7 +142,7 @@ Además, se reporta que la ventaja de las primas sobre los appraisals se amplía
 
 - Los pesos de las sondas son triviales (1536 parámetros, menos de 10 KB).
 - El repositorio completo ocupa 620 GB de espacio en disco, incluyendo las activaciones crudas. Se recomienda almacenamiento SSD para accesos rápidos.
-- Para ejecutar el script de steering se necesita un entorno con PyTorch y HuggingFace Transformers, y una GPU con al menos 8 GB de VRAM para modelos de 1B (p. ej., RTX 3060). Para modelos de 2B a 4B se recomienda 16-24 GB (RTX 4090, A5000).
+- Para ejecutar el script de steering se necesita un entorno con PyTorch y Hugging Face Transformers, y una GPU con al menos 8 GB de VRAM para modelos de 1B (p. ej., RTX 3060). Para modelos de 2B a 4B se recomienda 16-24 GB (RTX 4090, A5000).
 - El script `paper_faithful_steering.py` se puede ejecutar en modo CPU para modelos pequeños, pero las pruebas de permutación (10.000 iteraciones) requieren GPU para un tiempo razonable.
 - No se requiere vLLM ni llama.cpp; el script está diseñado para PyTorch.
 
@@ -161,7 +161,7 @@ No se ha encontrado ningún otro repositorio público que ofrezca sondas de emoc
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/musicakamusic/emotion-probes)
+- [Repositorio Hugging Face](https://huggingface.co/musicakamusic/emotion-probes)
 - [Dataset de activaciones crudas](https://huggingface.co/datasets/musicakamusic/emotion-probes-raw-activations)
 - [Paper arXiv:2607.18691](https://arxiv.org/abs/2607.18691) (referenciado en la model card)
 - [Proyecto CrimsonRed en GitHub](https://github.com/someaka/CrimsonRed) (referenciado en la model card)

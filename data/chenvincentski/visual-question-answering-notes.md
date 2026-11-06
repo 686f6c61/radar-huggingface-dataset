@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Chenvincentski/visual-question-answering-notes` no es un modelo entrenado, sino un repositorio de notas de investigación y un esbozo de experimento sobre *Visual Question Answering* (VQA). Lo publica el usuario Chenvincentski en HuggingFace con las etiquetas `research-notes` y `visual-question-answering`, y su contenido principal es el archivo `summary.md`, que describe el alcance de una pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y el contexto de evaluación (VQAv2, GQA, OK-VQA).
+`Chenvincentski/visual-question-answering-notes` no es un modelo entrenado, sino un repositorio de notas de investigación y un esbozo de experimento sobre *Visual Question Answering* (VQA). Lo publica el usuario Chenvincentski en Hugging Face con las etiquetas `research-notes` y `visual-question-answering`, y su contenido principal es el archivo `summary.md`, que describe el alcance de una pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y el contexto de evaluación (VQAv2, GQA, OK-VQA).
 
 La model card es explícita al respecto: el repositorio no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado. Las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. Por tanto, no existe un modelo desplegable ni una arquitectura de red neuronal documentada más allá de la etiqueta genérica `transformer` que aparece en los metadatos.
 
@@ -72,5 +72,5 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Chenvincentski/visual-question-answering-notes
+- Repositorio en Hugging Face: https://huggingface.co/Chenvincentski/visual-question-answering-notes
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este autor o a este repositorio.

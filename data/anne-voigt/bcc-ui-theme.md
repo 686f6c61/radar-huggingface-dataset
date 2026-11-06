@@ -43,17 +43,17 @@ El diseno del sistema de estilos sigue tres decisiones explicitas. La primera es
 - Exportacion de la paleta (`LIGHT`, `DARK`, `CONTRACT`) y de `contrast_ratio()` para que los consumidores verifiquen sus propias adiciones de color.
 - Soporte de modo claro y oscuro sin forzar ninguno de los dos: el tema se declara correcto en ambos.
 - Compatibilidad con dos versiones mayores de Gradio (5.50 y 6.18) usando la forma `gr.Blocks(...)`, que funciona en ambas.
-- Distribucion reproducible mediante pin a una URL inmutable de HuggingFace resolve, en lugar de instalacion desde git.
+- Distribucion reproducible mediante pin a una URL inmutable de Hugging Face resolve, en lugar de instalacion desde git.
 - Anillo de foco visible (`:focus-visible`) anadido de forma explicita, porque el valor por defecto de Gradio tiene bajo contraste sobre los dos fondos del tema.
 - No ofrece generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, agentes ni capacidades multilingues: no es un modelo.
 
 ## Casos de uso
 
 - Unificacion visual de una flota de agentes: un equipo que despliega varios agentes Gradio (por ejemplo, un agente de subtipos de PDAC y otros especialistas) importa `theme()` y `CSS` en cada aplicacion para que todas compartan paleta, tipografia y espaciado, de modo que el usuario perciba un solo producto.
-- Despliegue en HuggingFace Spaces sin peticiones externas: al no incluir fuentes web, la peticion de `preconnect` a `fonts.googleapis.com` que emite la plantilla de pagina de Gradio 5.50 desaparece en 6.18, y el Space se renderiza igual en entornos sin salida a internet. Resulta adecuado cuando el entorno de ejecucion esta aislado o se quiere reducir dependencias de terceros en la cadena de carga.
+- Despliegue en Hugging Face Spaces sin peticiones externas: al no incluir fuentes web, la peticion de `preconnect` a `fonts.googleapis.com` que emite la plantilla de pagina de Gradio 5.50 desaparece en 6.18, y el Space se renderiza igual en entornos sin salida a internet. Resulta adecuado cuando el entorno de ejecucion esta aislado o se quiere reducir dependencias de terceros en la cadena de carga.
 - Cumplimiento de accesibilidad en producto interno: un equipo con requisitos de WCAG 2.2 en herramientas internas puede apoyarse en el contraste ya medido (texto principal 17,99:1 en claro y 15,56:1 en oscuro) y en `contrast_ratio()` para validar cualquier color anadido antes de integrarlo.
 - Plantilla de referencia para migrar de Gradio 5 a 6: el README documenta con numeros de linea (`gradio 6.18 blocks.py:2728`) el mecanismo de retrocompatibilidad por el que `Blocks.__init__` guarda el valor en `_deprecated_theme` / `_deprecated_css` y `launch()` lo rellena. Sirve como guia para otros equipos que deban atravesar la misma transicion de API.
-- Empaquetado reproducible en CI/CD: el patron de pin a un wheel con URL de resolve inmutable evita el fallo conocido de `pip install git+https://huggingface.co/...` en builds de Spaces, porque el servidor git de HuggingFace no puede servir el clon parcial que necesita pip.
+- Empaquetado reproducible en CI/CD: el patron de pin a un wheel con URL de resolve inmutable evita el fallo conocido de `pip install git+https://huggingface.co/...` en builds de Spaces, porque el servidor git de Hugging Face no puede servir el clon parcial que necesita pip.
 - Base para un design system interno: al exportar los tokens de paleta y el contrato de contraste como modulo de datos, el paquete puede servir de punto de partida para que un equipo derive sus propias variantes tematicas y las valide con los mismos tests.
 
 ## Benchmarks y rendimiento
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks de modelos en la informacion dispon
 - VRAM: no aplica. No requiere memoria de GPU.
 - CPU y memoria: no se publican cifras. El coste es el propio de importar un modulo Python y servir una hoja de estilos, insignificante frente a la aplicacion Gradio que lo consumidor.
 - Caber en hardware de consumo: si, en cualquier equipo capaz de ejecutar Python 3.11 o 3.13 y Gradio 5.50 o 6.18. No hay requisito especifico de GPU ni de acelerador.
-- Opciones de despliegue: HuggingFace Spaces (escenario previsto, segun el ejemplo de Spaces y el patron de distribucion descrito), aplicaciones Gradio autoalojadas y cualquier entorno que instale el wheel mediante pip. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no son aplicables.
+- Opciones de despliegue: Hugging Face Spaces (escenario previsto, segun el ejemplo de Spaces y el patron de distribucion descrito), aplicaciones Gradio autoalojadas y cualquier entorno que instale el wheel mediante pip. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no son aplicables.
 - Latencia y throughput: no disponible. No se publican mediciones; el impacto en tiempo de carga se limita a la entrega de la hoja de estilos.
 - Versionado de dependencias: se ha verificado sobre Gradio 5.50.0 con Python 3.11 y Gradio 6.18.0 con Python 3.13. Para instalar en modo desarrollo, el repositorio ofrece `make test` (contra el entorno virtual activo) y `make test-both` (crea entornos desechables en ambas versiones de Gradio).
 
@@ -108,7 +108,7 @@ No procede una comparativa entre modelos. La comparacion relevante es entre este
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/anne-voigt/bcc-ui-theme
+- Model card en Hugging Face: https://huggingface.co/anne-voigt/bcc-ui-theme
 - Patron de pin de distribucion citado en el README: https://huggingface.co/anne-voigt/bcc-ui-theme/resolve/<sha>/bcc_ui_theme-<version>-py3-none-any.whl
 - Repositorio de referencia del patron de distribucion, mencionado en el README como `biodata-registry`: no disponible
 - Documento de adopcion, mencionado en el README como `docs/ADOPTION.md` dentro del propio repositorio: no disponible

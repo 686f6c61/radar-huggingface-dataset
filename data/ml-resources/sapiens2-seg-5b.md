@@ -104,7 +104,7 @@ Comparativa con alternativas de otros desarrolladores (por ejemplo, modelos de s
 
 ## Enlaces
 
-- Modelo en HuggingFace (espejo): https://huggingface.co/ml-resources/sapiens2-seg-5b
+- Modelo en Hugging Face (espejo): https://huggingface.co/ml-resources/sapiens2-seg-5b
 - Modelo oficial: https://huggingface.co/facebook/sapiens2-seg-5b
 - Backbone preentrenado: https://huggingface.co/facebook/sapiens2-pretrain-5b
 - Paper: https://arxiv.org/pdf/2604.21681

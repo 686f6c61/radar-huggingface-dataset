@@ -50,9 +50,9 @@ No se han publicado requisitos de hardware específicos para este modelo. Como r
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| violetxi/qwen35-9b-wmrl-v4-N-m1 | 9.653.104.368 | No disponible | Apache-2.0 | HuggingFace |
-| violetxi/qwen35-9b-wmrl-v4-n-30m | No disponible (mismo modelo base, se asume similar) | No disponible | Apache-2.0 | HuggingFace |
-| violetxi/qwen35-9b-wmrl-v4-n-3m | No disponible (mismo modelo base, se asume similar) | No disponible | Apache-2.0 | HuggingFace |
+| violetxi/qwen35-9b-wmrl-v4-N-m1 | 9.653.104.368 | No disponible | Apache-2.0 | Hugging Face |
+| violetxi/qwen35-9b-wmrl-v4-n-30m | No disponible (mismo modelo base, se asume similar) | No disponible | Apache-2.0 | Hugging Face |
+| violetxi/qwen35-9b-wmrl-v4-n-3m | No disponible (mismo modelo base, se asume similar) | No disponible | Apache-2.0 | Hugging Face |
 
 Los otros dos checkpoints pertenecen a la misma serie v4 y comparten modelo base, corpus de entrenamiento y licencia. No se dispone de datos de rendimiento ni de contexto para ninguno de ellos. El modelo base Qwen/Qwen3.5-9B no se ha incluido en la comparativa por falta de especificaciones publicadas en la información disponible.
 
@@ -66,6 +66,6 @@ Los otros dos checkpoints pertenecen a la misma serie v4 y comparten modelo base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-N-m1
+- Modelo en Hugging Face: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-N-m1
 - Checkpoint relacionado (n-30m): https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-n-30m
 - Checkpoint relacionado (n-3m): https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-n-3m

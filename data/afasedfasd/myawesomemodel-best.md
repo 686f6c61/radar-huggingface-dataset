@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-best es un checkpoint de un modelo de tipo BERT publicado en HuggingFace por el usuario afasedfasd. Se distribuye como un modelo de extracción de características (feature-extraction) dentro del ecosistema transformers, con pesos en formato PyTorch y licencia MIT. El autor lo presenta como el "mejor checkpoint" de una serie de 10 pasos de entrenamiento (step_100 a step_1000), seleccionado por el mayor valor de eval_accuracy.
+MyAwesomeModel-best es un checkpoint de un modelo de tipo BERT publicado en Hugging Face por el usuario afasedfasd. Se distribuye como un modelo de extracción de características (feature-extraction) dentro del ecosistema transformers, con pesos en formato PyTorch y licencia MIT. El autor lo presenta como el "mejor checkpoint" de una serie de 10 pasos de entrenamiento (step_100 a step_1000), seleccionado por el mayor valor de eval_accuracy.
 
 La información disponible es muy limitada: no se especifica el número de parámetros, la longitud de contexto, el volumen de datos de entrenamiento ni la composición del dataset. La model card únicamente aporta una tabla de resultados de evaluación interna sobre 15 tareas genéricas (razonamiento matemático, lógica, sentido común, comprensión lectora, generación de código, traducción, etc.), sin indicar qué benchmarks estándar se han usado ni con qué metodología.
 
@@ -29,7 +29,7 @@ Respecto al entrenamiento, la model card menciona que se seleccionó el checkpoi
 
 ## Capacidades
 
-- Extracción de características: pipeline declarado en HuggingFace, orientado a generar embeddings de texto para tareas downstream (clasificación, similitud, recuperación).
+- Extracción de características: pipeline declarado en Hugging Face, orientado a generar embeddings de texto para tareas downstream (clasificación, similitud, recuperación).
 - Clasificación de texto y análisis de sentimiento: la model card reporta puntuaciones de 0.828 en text_classification y 0.792 en sentiment_analysis, aunque sin especificar el benchmark.
 - Comprensión lectora y question answering: puntuaciones de 0.700 y 0.607 respectivamente en la evaluación interna del autor.
 - Razonamiento lógico y sentido común: 0.819 y 0.736 según la tabla del autor.
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks estándar en la información dispon
 - VRAM estimada para inferencia: no disponible; depende del número de parámetros, que no se declara. El tamaño del repositorio figura como 0.0 GB, lo que impide estimar la huella de memoria.
 - GPU recomendadas: no disponible. Para un BERT de tamaño estándar (base o large) bastaría una GPU consumer tipo RTX 3060/4090, pero no hay confirmación de la configuración real.
 - Compatibilidad con GPU consumer: no confirmable sin conocer el tamaño del modelo.
-- Opciones de despliegue: transformers (PyTorch) es la vía declarada; no se ofrecen pesos GGUF para llama.cpp u Ollama, ni artefactos para vLLM o TGI. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace.
+- Opciones de despliegue: transformers (PyTorch) es la vía declarada; no se ofrecen pesos GGUF para llama.cpp u Ollama, ni artefactos para vLLM o TGI. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -88,10 +88,10 @@ No es posible establecer una comparativa rigurosa porque se desconocen los pará
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MyAwesomeModel-best | BERT | no disponible | no disponible | MIT | HuggingFace (34 descargas) |
-| bert-base-uncased | BERT | 110 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente validado |
-| all-MiniLM-L6-v2 | Transformer encoder | 22 M | 256 tokens | Apache 2.0 | HuggingFace, optimizado para embeddings |
-| bge-small-en-v1.5 | Transformer encoder | 33 M | 512 tokens | MIT | HuggingFace, orientado a recuperación |
+| MyAwesomeModel-best | BERT | no disponible | no disponible | MIT | Hugging Face (34 descargas) |
+| bert-base-uncased | BERT | 110 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente validado |
+| all-MiniLM-L6-v2 | Transformer encoder | 22 M | 256 tokens | Apache 2.0 | Hugging Face, optimizado para embeddings |
+| bge-small-en-v1.5 | Transformer encoder | 33 M | 512 tokens | MIT | Hugging Face, orientado a recuperación |
 
 La comparación con estos modelos solo puede hacerse en términos de licencia y categoría, no de rendimiento, dado que no hay benchmarks estándar publicados para MyAwesomeModel-best.
 
@@ -109,5 +109,5 @@ La comparación con estos modelos solo puede hacerse en términos de licencia y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/afasedfasd/MyAwesomeModel-best
+- Modelo en Hugging Face: https://huggingface.co/afasedfasd/MyAwesomeModel-best
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

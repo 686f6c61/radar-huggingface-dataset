@@ -86,10 +86,10 @@ No se dispone de comparativas de rendimiento frente a alternativas como Llama-3.
 - Longitud de contexto no confirmada para este fine-tune; conviene validarla empíricamente antes de depender de los 32.768 tokens del base.
 - Licencia Apache 2.0: permite uso comercial y modificación, pero el modelo se distribuye sin garantías y con cero evaluaciones publicadas.
 - Modelo de investigación con 0 descargas y 0 likes: no hay evidencia de uso en producción ni validación por terceros.
-- Las fechas del repositorio (2026-09-29) son las reportadas por HuggingFace.
+- Las fechas del repositorio (2026-09-29) son las reportadas por Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-feather30-mt-sft-plain
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-feather30-mt-sft-plain
 - Modelo base (etapa intermedia): https://huggingface.co/joshycodes/qwen3-4b-feather30-mt
 - Brazo gemelo del estudio: https://huggingface.co/joshycodes/qwen3-4b-feather30-mt-sft-feather

@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Demucs-AIPod-HF | no disponible | no aplica | no disponible | MIT | HuggingFace (repo de desarrollo) |
-| HTDemucs (oficial, adefossez/HTDemucs) | no disponible | no aplica | referencia upstream | MIT | HuggingFace |
+| Demucs-AIPod-HF | no disponible | no aplica | no disponible | MIT | Hugging Face (repo de desarrollo) |
+| HTDemucs (oficial, adefossez/HTDemucs) | no disponible | no aplica | referencia upstream | MIT | Hugging Face |
 | Demucs v4 (facebookresearch/demucs) | no disponible | no aplica | referencia upstream | MIT | GitHub |
 
 No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con alternativas como Spleeter, Open-Unmix o MDX-Net.
@@ -79,6 +79,6 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manateelazycat/Demucs-AIPod-HF
+- Hugging Face: https://huggingface.co/manateelazycat/Demucs-AIPod-HF
 - Pesos oficiales HTDemucs: https://huggingface.co/adefossez/HTDemucs
 - Codigo upstream y licencia MIT: https://github.com/facebookresearch/demucs

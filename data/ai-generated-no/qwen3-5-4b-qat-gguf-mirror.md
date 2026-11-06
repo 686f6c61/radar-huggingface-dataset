@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B QAT Q4_0 (este) | 4,2 B | No disponible | Q4_0 (GGUF, QAT) | Apache 2.0 | HuggingFace (espejo) |
-| Qwen3.5-4B (base, safetensors) | 4,2 B | No disponible | FP16/BF16 | Apache 2.0 | HuggingFace (Qwen) |
-| Alternativas de ~4B en GGUF | No disponible | No disponible | Q4_0 y otras | Variable | HuggingFace |
+| Qwen3.5-4B QAT Q4_0 (este) | 4,2 B | No disponible | Q4_0 (GGUF, QAT) | Apache 2.0 | Hugging Face (espejo) |
+| Qwen3.5-4B (base, safetensors) | 4,2 B | No disponible | FP16/BF16 | Apache 2.0 | Hugging Face (Qwen) |
+| Alternativas de ~4B en GGUF | No disponible | No disponible | Q4_0 y otras | Variable | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones de contexto para establecer una comparación cuantitativa con modelos de la misma categoría. La comparación más directa es con el propio modelo base sin cuantizar, del que este artefacto es una versión QAT a 4 bits.
 

@@ -23,7 +23,7 @@ Es relevante ahora porque MOSS-Image es un modelo de difusión abierto reciente 
 
 ## Arquitectura y entrenamiento
 
-El adaptador es un LoRA de rango 32 y alpha 32 aplicado sobre MOSS-Image, un modelo de difusión texto-a-imagen cuyo funcionamiento interno no se describe en la información proporcionada. La integración se hace mediante `InferenceLoRA` con `strength=0.9` o mediante el campo `lora_repo` de la demo `mrfakename/moss-image` en HuggingFace Spaces; en la configuración del modelo se fija `uncond_skip_layers=[22]`, un parámetro específico del pipeline de MOSS-Image que afecta a cómo se aplica la guía libre de condicionamiento.
+El adaptador es un LoRA de rango 32 y alpha 32 aplicado sobre MOSS-Image, un modelo de difusión texto-a-imagen cuyo funcionamiento interno no se describe en la información proporcionada. La integración se hace mediante `InferenceLoRA` con `strength=0.9` o mediante el campo `lora_repo` de la demo `mrfakename/moss-image` en Hugging Face Spaces; en la configuración del modelo se fija `uncond_skip_layers=[22]`, un parámetro específico del pipeline de MOSS-Image que afecta a cómo se aplica la guía libre de condicionamiento.
 
 El entrenamiento se realizó con 25 imágenes, 1500 pasos, resolución 1024, learning rate 1e-4 y scheduler flowmatch. El etiquetado combinó el autoetiquetador WD (`wd-eva02-large-tagger-v3`) con etiquetas manuales específicas de los rasgos de dragón (cuernos, alas, cola), lo que explica que la model card exija escribir explícitamente esos rasgos: el modelo aprendió a asociarlos a un texto largo y descriptivo, no a un único token. El conjunto de entrenamiento es de clave alta (fondo blanco), un detalle que condiciona el comportamiento en inferencia.
 
@@ -44,7 +44,7 @@ El entrenamiento se realizó con 25 imágenes, 1500 pasos, resolución 1024, lea
 - Prototipado rápido de merchandising: ilustraciones para láminas, camisetas o figuras, ajustando el peso del LoRA y el fondo para compensar la tendencia a bajo contraste del conjunto de entrenamiento.
 - Contenido narrativo serializado: ilustrar escenas de una historia con un personaje estable a lo largo de capítulos, aprovechando que el LoRA se comporta de forma consistente con prompts largos y descriptivos.
 - Pruebas de concepto de un pipeline texto-a-imagen sobre MOSS-Image: sirve como ejemplo de referencia de cómo se estructura un LoRA de personaje para este modelo base, útil para equipos que quieran entrenar sus propios adaptadores.
-- Demostraciones interactivas en HuggingFace Spaces: se puede cargar indicando el repositorio en el campo `lora_repo` de la demo `mrfakename/moss-image` con escala 0,9 para mostrar el personaje a usuarios finales sin infraestructura propia.
+- Demostraciones interactivas en Hugging Face Spaces: se puede cargar indicando el repositorio en el campo `lora_repo` de la demo `mrfakename/moss-image` con escala 0,9 para mostrar el personaje a usuarios finales sin infraestructura propia.
 - Generación de material para tableros de referencia y guías de estilo: combinando el bloque de rasgos con iluminaciones distintas (luz suave, contraluz, dramática) para obtener un abanico de referencias del mismo personaje.
 
 ## Benchmarks y rendimiento
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM total: depende de OpenMOSS-Team/MOSS-Image-Base, cuyo consumo no se detalla en la información disponible. A resolución 1024x1536 con 30 pasos el coste es el del modelo base completo, no el del LoRA.
 - GPU recomendadas: no disponible en la información proporcionada.
 - Viabilidad en GPU de consumo: no se puede confirmar sin los requisitos del modelo base. La resolución recomendada (1024x1536) y el uso de bf16 apuntan a GPU con memoria generosa, pero no hay datos verificables.
-- Opciones de despliegue: diffusers con `MOSSImagePipeline` y `InferenceLoRA`, o la demo alojada en HuggingFace Spaces `mrfakename/moss-image` pasando `lora_repo` y `lora_scale=0.9`. El cargador nativo admite `quantize` y `quantize_te` para reducir el coste del modelo base.
+- Opciones de despliegue: diffusers con `MOSSImagePipeline` y `InferenceLoRA`, o la demo alojada en Hugging Face Spaces `mrfakename/moss-image` pasando `lora_repo` y `lora_scale=0.9`. El cargador nativo admite `quantize` y `quantize_te` para reducir el coste del modelo base.
 - Latencia y throughput: no disponibles. Como referencia interna, la configuración recomendada es de 30 pasos con CFG 3.0, un valor de CFG bajo que reduce el cómputo frente a configuraciones típicas de 7-8.
 
 ## Comparativa con modelos similares
@@ -85,8 +85,8 @@ No se dispone de información sobre otros LoRAs de personaje para MOSS-Image con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lantianws666/moss-dragon-girl
+- Repositorio Hugging Face: https://huggingface.co/lantianws666/moss-dragon-girl
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
-- Demo en HuggingFace Spaces (campo `lora_repo`): https://huggingface.co/spaces/mrfakename/moss-image
+- Demo en Hugging Face Spaces (campo `lora_repo`): https://huggingface.co/spaces/mrfakename/moss-image
 - Autoetiquetador utilizado en el entrenamiento (referencia): wd-eva02-large-tagger-v3
 - Paper, blog técnico o repositorio adicional del adaptador: no disponible en la información proporcionada

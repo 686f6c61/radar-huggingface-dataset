@@ -2,7 +2,7 @@
 
 ## Resumen
 
-g1-hug-edge-concat-v5-n256 es un checkpoint de investigación publicado por UB Robotics (organización `ubr-physical-ai` en HuggingFace) que consiste en NVIDIA Cosmos3-Edge reentrenado como política de acciones (*action policy*) para un robot humanoide Unitree G1 simulado. La tarea es concreta: el humanoide camina hasta una caja y la levanta con ambos brazos. El modelo no genera texto ni imágenes de forma generalista; produce directamente comandos motores a partir de observaciones visuales y un *prompt* de texto que describe la pose de la caja.
+g1-hug-edge-concat-v5-n256 es un checkpoint de investigación publicado por UB Robotics (organización `ubr-physical-ai` en Hugging Face) que consiste en NVIDIA Cosmos3-Edge reentrenado como política de acciones (*action policy*) para un robot humanoide Unitree G1 simulado. La tarea es concreta: el humanoide camina hasta una caja y la levanta con ambos brazos. El modelo no genera texto ni imágenes de forma generalista; produce directamente comandos motores a partir de observaciones visuales y un *prompt* de texto que describe la pose de la caja.
 
 La relevancia del checkpoint es metodológica más que de producto. Forma parte de una curva de eficiencia de datos con tres puntos (N = 64, 256 y 965 episodios, subconjuntos anidados con el mismo número de semillas por grabación); esta versión concreta se entrenó con 256 de los 965 episodios disponibles de un conjunto de demostraciones simuladas en Isaac Lab 3, con cuatro alturas de soporte entre 0,65 y 0,80 m. El objetivo es medir cuánto rinde una política derivada de un modelo fundacional físico cuando se dispone de pocos datos de demostración.
 
@@ -75,8 +75,8 @@ No se dispone de datos cuantitativos (parámetros, contexto, tasas de éxito) de
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| g1-hug-edge-concat-v5-n256 | Política de acciones para Unitree G1 simulado (fine-tune de Cosmos3-Edge, N = 256) | No disponible | No disponible (horizonte de 16 acciones) | OpenMDW 1.1 | Público en HuggingFace, 0 descargas |
-| nvidia/Cosmos3-Edge | Modelo fundacional físico (base) | No disponible | No disponible | OpenMDW 1.1 | Público en HuggingFace |
+| g1-hug-edge-concat-v5-n256 | Política de acciones para Unitree G1 simulado (fine-tune de Cosmos3-Edge, N = 256) | No disponible | No disponible (horizonte de 16 acciones) | OpenMDW 1.1 | Público en Hugging Face, 0 descargas |
+| nvidia/Cosmos3-Edge | Modelo fundacional físico (base) | No disponible | No disponible | OpenMDW 1.1 | Público en Hugging Face |
 | Variantes N = 64 y N = 965 de la misma curva | Políticas de acciones, mismo pipeline | No disponible | No disponible | OpenMDW 1.1 | No se confirma su publicación en la información disponible |
 | Otras políticas de manipulación humanoide (por ejemplo, las integradas en Physical AI Studio) | Aprendizaje por imitación | No disponible | No disponible | No disponible | Repositorio abierto, sin datos comparativos |
 
@@ -98,8 +98,8 @@ No se dispone de datos cuantitativos (parámetros, contexto, tasas de éxito) de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ubr-physical-ai/g1-hug-edge-concat-v5-n256
-- Organización UB Robotics en HuggingFace: https://huggingface.co/ubr-physical-ai
+- Modelo en Hugging Face: https://huggingface.co/ubr-physical-ai/g1-hug-edge-concat-v5-n256
+- Organización UB Robotics en Hugging Face: https://huggingface.co/ubr-physical-ai
 - Space "Cosmos3-Edge UGV Findings": https://huggingface.co/spaces/ubr-physical-ai/cosmos3-edge-ugv-findings
 - Modelo base: https://huggingface.co/nvidia/Cosmos3-Edge
 - Conjunto de demostraciones (privado): https://huggingface.co/ubr-physical-ai/g1_hug_v5

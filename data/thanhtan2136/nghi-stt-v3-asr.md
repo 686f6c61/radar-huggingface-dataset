@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo nghi-stt-v3-asr es un sistema de reconocimiento automático del habla (ASR) offline para vietnamita, publicado por el usuario thanhtan2136 en HuggingFace bajo licencia Apache 2.0. Se trata de un transductor (encoder/decoder/joiner) basado en la arquitectura Zipformer2 en su variante no streaming, cuantizado a int8 y exportado a formato ONNX. Según la model card, los pesos originales fueron desarrollados por el equipo k2-fsa y este repositorio se limita a extraerlos del bundle WASM que utiliza la aplicación `nghitts.app/asr`.
+El modelo nghi-stt-v3-asr es un sistema de reconocimiento automático del habla (ASR) offline para vietnamita, publicado por el usuario thanhtan2136 en Hugging Face bajo licencia Apache 2.0. Se trata de un transductor (encoder/decoder/joiner) basado en la arquitectura Zipformer2 en su variante no streaming, cuantizado a int8 y exportado a formato ONNX. Según la model card, los pesos originales fueron desarrollados por el equipo k2-fsa y este repositorio se limita a extraerlos del bundle WASM que utiliza la aplicación `nghitts.app/asr`.
 
 El modelo está pensado para transcripción de audio completo (offline), no para streaming, y trabaja con muestras de 16000 Hz y características fbank de 80 dimensiones. El vocabulario consta de 2000 tokens. Su tamaño total es reducido (el encoder ronda los 70,8 MB en int8, el decoder 1,3 MB y el joiner 1,0 MB), lo que lo hace apto para despliegue en CPU, navegador o dispositivos con recursos limitados mediante la librería sherpa-onnx.
 
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nghi-stt-v3-asr | Zipformer2 transducer non-streaming, int8 | no disponible | no disponible (offline) | apache-2.0 | HuggingFace (extraído de bundle WASM) |
+| nghi-stt-v3-asr | Zipformer2 transducer non-streaming, int8 | no disponible | no disponible (offline) | apache-2.0 | Hugging Face (extraído de bundle WASM) |
 | sherpa-onnx-zipformer-vi-int8-2025-10-16 | Zipformer transducer, int8 | no disponible | no disponible | no disponible | Referenciado pero con HTTP 404 en el endpoint del modelo |
 | Otros modelos ASR vietnamita | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -90,6 +90,6 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thanhtan2136/nghi-stt-v3-asr
+- Modelo en Hugging Face: https://huggingface.co/thanhtan2136/nghi-stt-v3-asr
 - Repositorio sherpa-onnx (k2-fsa): https://github.com/k2-fsa/sherpa-onnx
 - Aplicación de origen citada en la model card: `nghitts.app/asr`

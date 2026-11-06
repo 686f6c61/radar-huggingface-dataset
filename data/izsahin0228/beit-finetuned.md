@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`izsahin0228/beit-finetuned` es un repositorio de HuggingFace publicado por el usuario izsahin0228 que contiene una implementación propia de una arquitectura tipo BEiT (vision transformer con tokenizer latente, aquí etiquetada como "contrastive"), acompañada de un fichero de configuración, un script de inferencia y un checkpoint de inicialización en formato safetensors. Según la propia model card, el checkpoint es válido para pruebas de humo (smoke tests) pero no es un modelo entrenado ni se presenta como un checkpoint con resultados de benchmarks. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
+`izsahin0228/beit-finetuned` es un repositorio de Hugging Face publicado por el usuario izsahin0228 que contiene una implementación propia de una arquitectura tipo BEiT (vision transformer con tokenizer latente, aquí etiquetada como "contrastive"), acompañada de un fichero de configuración, un script de inferencia y un checkpoint de inicialización en formato safetensors. Según la propia model card, el checkpoint es válido para pruebas de humo (smoke tests) pero no es un modelo entrenado ni se presenta como un checkpoint con resultados de benchmarks. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 
 La relevancia es, por tanto, limitada y de carácter experimental: no se trata de un modelo listo para producción ni de un lanzamiento de pesos entrenados, sino de un punto de partida reproducible para experimentar con una variante concreta de BEiT que combina atención de consulta agrupada (grouped query attention), fusión por co-atención (co attention), activación ReLU y normalización GroupNorm. La model card insiste explícitamente en que los valores por defecto del script (optimizador Lion con planificador de tipo step) son valores de arranque y no evidencia de un entrenamiento completado.
 
@@ -99,5 +99,5 @@ No se dispone de datos comparativos verificables en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/izsahin0228/beit-finetuned
+- Modelo en Hugging Face: https://huggingface.co/izsahin0228/beit-finetuned
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a articulos sobre las islas Falkland (Wikipedia en finlandes e ingles, Falklands War y el portal turistico oficial), sin relacion alguna con este repositorio.

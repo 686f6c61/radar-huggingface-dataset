@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pandeza97/phd-contrastive-2024 es un repositorio de HuggingFace que contiene una implementacion reducida de CLIP (Contrastive Language-Image Pretraining) orientada a experimentacion con aprendizaje contrastivo. Lo publica el usuario Pandeza97 bajo licencia Apache 2.0 y no constituye una release de modelo entrenado: segun la propia model card, el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no un modelo con pesos entrenados ni evaluados. El repositorio incluye ademas el codigo Python de inferencia/entrenamiento, un `config.json` con la arquitectura generada y un `training_args.json` con la receta de experimento por defecto.
+Pandeza97/phd-contrastive-2024 es un repositorio de Hugging Face que contiene una implementacion reducida de CLIP (Contrastive Language-Image Pretraining) orientada a experimentacion con aprendizaje contrastivo. Lo publica el usuario Pandeza97 bajo licencia Apache 2.0 y no constituye una release de modelo entrenado: segun la propia model card, el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no un modelo con pesos entrenados ni evaluados. El repositorio incluye ademas el codigo Python de inferencia/entrenamiento, un `config.json` con la arquitectura generada y un `training_args.json` con la receta de experimento por defecto.
 
 El modelo declara 33.088 parametros totales, lo que lo situa en un orden de magnitud muy inferior al de cualquier CLIP utilizable en produccion (CLIP ViT-B/32 ronda los 151 millones de parametros). Su arquitectura combina atencion multi-query, fusion de modalidades mediante tensor fusion, activacion swish y normalizacion groupnorm. No se especifican longitud de contexto, idiomas soportados ni tipos de cuantizacion.
 
@@ -48,7 +48,7 @@ En cuanto al entrenamiento, el repositorio no aporta evidencia de ninguna ejecuc
 
 - Alineacion imagen-texto en un espacio latente compartido: la arquitectura CLIP esta disenada para producir embeddings comparables entre ambas modalidades, base de tareas de retrieval y clasificacion zero-shot.
 - Punto de entrada ejecutable de entrenamiento e inferencia: el fichero `inference.py` contiene un bloque `__main__` con un ejemplo de smoke test utilizable para verificar que el entorno funciona.
-- Carga mediante API generica de HuggingFace: la model card advierte que, al ser una implementacion propia, se requiere un adaptador explicito antes de usar APIs automaticas de carga.
+- Carga mediante API generica de Hugging Face: la model card advierte que, al ser una implementacion propia, se requiere un adaptador explicito antes de usar APIs automaticas de carga.
 - Soporte de tool calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; no se declara ningun idioma.
@@ -87,10 +87,10 @@ La comparacion con alternativas de la misma categoria solo puede hacerse a nivel
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pandeza97/phd-contrastive-2024 | 33.088 | no disponible | No (checkpoint de inicializacion) | apache-2.0 | HuggingFace, 0 descargas |
+| Pandeza97/phd-contrastive-2024 | 33.088 | no disponible | No (checkpoint de inicializacion) | apache-2.0 | Hugging Face, 0 descargas |
 | CLIP ViT-B/32 (OpenAI) | ~151 millones | 77 tokens de texto | Si | MIT (implementacion original) | Ampliamente disponible |
-| OpenCLIP ViT-B/32 | ~151 millones | 77 tokens de texto | Si | Apache 2.0 / MIT segun variante | HuggingFace, miles de descargas |
-| SigLIP base | ~200 millones | 64 tokens de texto | Si | Apache 2.0 en variantes abiertas | HuggingFace |
+| OpenCLIP ViT-B/32 | ~151 millones | 77 tokens de texto | Si | Apache 2.0 / MIT segun variante | Hugging Face, miles de descargas |
+| SigLIP base | ~200 millones | 64 tokens de texto | Si | Apache 2.0 en variantes abiertas | Hugging Face |
 
 Nota: los modelos de la comparativa se incluyen por pertenecer a la misma familia arquitectonica (codificadores contrastivos imagen-texto), no porque existan datos de rendimiento comparables. Los datos de contexto de las alternativas son los declarados publicamente por sus autores; para este repositorio el contexto es no disponible.
 
@@ -109,6 +109,6 @@ Nota: los modelos de la comparativa se incluyen por pertenecer a la misma famili
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pandeza97/phd-contrastive-2024
+- Modelo en Hugging Face: https://huggingface.co/Pandeza97/phd-contrastive-2024
 - Paper de CLIP (referencia arquitectonica, no vinculado por el autor): https://arxiv.org/abs/2103.00020
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios, demos o espacios asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SemWAM-LIBERO-Legacy-sem-only-step21700 es un checkpoint de investigación publicado por el usuario RainyBot en HuggingFace, orientado a robótica y, más concretamente, al benchmark LIBERO de manipulación robótica. Se trata de un archivo histórico ("legacy") del entrenamiento SemWAM, guardado en el paso de optimizador 21700 de 21700, es decir, el estado final de una ejecución de entrenamiento concreta. El repositorio ocupa 12,1 GB y se distribuye en formato PyTorch con pesos en bfloat16.
+SemWAM-LIBERO-Legacy-sem-only-step21700 es un checkpoint de investigación publicado por el usuario RainyBot en Hugging Face, orientado a robótica y, más concretamente, al benchmark LIBERO de manipulación robótica. Se trata de un archivo histórico ("legacy") del entrenamiento SemWAM, guardado en el paso de optimizador 21700 de 21700, es decir, el estado final de una ejecución de entrenamiento concreta. El repositorio ocupa 12,1 GB y se distribuye en formato PyTorch con pesos en bfloat16.
 
 El modelo se construye sobre el backbone de vídeo Wan-AI/Wan2.2-TI2V-5B, un diffusion transformer (DiT) de vídeo con 30 capas, dimensión oculta de 3072 y FFN de 14336, al que se le añade una rama semántica ("sem_pure") basada en un codificador DINOv3 ViT-B/16 congelado de 768 dimensiones de característica. La configuración registrada incluye también componentes de estimación de profundidad (VDA, UniDepth v2, DEFM ViT-S/14) y una dimensión de propiocepción de 8. El paradigma de entrada es "t_concat" con disposición de vistas "libero_horizontal" y cámaras de muñeca izquierda y derecha a resolución 128x160.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Benchmark | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SemWAM-LIBERO-Legacy-sem-only-step21700 | no disponible | no disponible | no publicado | no disponible | HuggingFace, 0 descargas |
-| Wan-AI/Wan2.2-TI2V-5B (backbone base) | ~5B (según nombre) | no disponible | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| SemWAM-LIBERO-Legacy-sem-only-step21700 | no disponible | no disponible | no publicado | no disponible | Hugging Face, 0 descargas |
+| Wan-AI/Wan2.2-TI2V-5B (backbone base) | ~5B (según nombre) | no disponible | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 | Alternativas de política robótica para LIBERO | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con modelos de la misma categoría. El único punto de comparación identificable es el backbone Wan2.2-TI2V-5B, del cual este checkpoint hereda la arquitectura de difusión de vídeo, pero no se han encontrado en la información proporcionada métricas que permitan contrastar rendimiento.
@@ -84,6 +84,6 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-sem-only-step21700
+- Hugging Face: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-sem-only-step21700
 - Backbone base referenciado en la configuración: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - No se han encontrado en la búsqueda web otros enlaces relevantes (papers, blogs, repos o demos) relacionados con este modelo.

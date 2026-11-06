@@ -79,7 +79,7 @@ No disponible. Este repositorio no es un modelo de IA, sino una biblioteca de ke
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ackustik/ltx-kernels-zero
+- Repositorio en Hugging Face: https://huggingface.co/Ackustik/ltx-kernels-zero
 - Sitio oficial de LTX: https://ltx.io/
 - Página del modelo LTX: https://ltx.io/model
 - Repositorio de recursos LTX-2: https://github.com/wildminder/awesome-ltx2

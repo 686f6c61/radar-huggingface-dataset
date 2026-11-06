@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sady4850/Qwen3.8-27B-4bit-GPTQ-agent
+- Modelo en Hugging Face: https://huggingface.co/sady4850/Qwen3.8-27B-4bit-GPTQ-agent
 - Variante con resumen y conjunto de evaluacion: https://huggingface.co/sady4850/Qwen3.8-27B-4bit-GPTQ-agentmix
 - Variante GPTQ de referencia: https://huggingface.co/sady4850/Qwen3.8-27B-4bit-GPTQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

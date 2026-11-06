@@ -62,14 +62,14 @@ No se dispone de modelos comparables de la misma categoría (transformers de 16K
 
 - El checkpoint no ha sido entrenado: las salidas son aleatorias y no tienen significado semántico.
 - No se ha auditado su robustez, equidad ni capacidad de transferencia a dominios específicos.
-- La implementación es personalizada y requiere un adaptador para cargarse con APIs estándar de HuggingFace.
+- La implementación es personalizada y requiere un adaptador para cargarse con APIs estándar de Hugging Face.
 - No hay datos sobre sesgos, alucinaciones o limitaciones de contexto, ya que no hay un modelo funcional.
 - La licencia BSD-3-Clause permite uso comercial, pero los términos de los datos externos deben revisarse por separado si se usan con otros datasets.
 - No es apto para producción ni para tareas reales de generación de texto.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AaravDasje/learn-generation68
+- Repositorio Hugging Face: https://huggingface.co/AaravDasje/learn-generation68
 - Arquitectura de modelos generativos (referencia general): https://www.geeksforgeeks.org/artificial-intelligence/architecture-of-generative-models/
 - Guía de IA generativa de Google Cloud (referencia general): https://cloud.google.com/ai/generative-ai
 - Curso de construcción y despliegue de modelos generativos (referencia general): https://www.coursera.org/learn/building-and-deploying-generative-models

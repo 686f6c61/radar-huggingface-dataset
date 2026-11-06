@@ -111,7 +111,7 @@ Comparativa con alternativas externas de la misma categoria: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JohnsonHsu/Qwen-Image-2.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/JohnsonHsu/Qwen-Image-2.1-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Text encoder y VAE de origen: https://huggingface.co/Comfy-Org/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

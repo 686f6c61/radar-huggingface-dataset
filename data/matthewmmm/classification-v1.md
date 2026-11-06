@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Matthewmmm/classification-v1` es un prototipo de investigacion publicado en HuggingFace por el usuario Matthewmmm. Se presenta explicitamente como una implementacion propia de una arquitectura hibrida CNN-Transformer orientada a tareas de clasificacion, acompanada de un script de entrenamiento (`train.py`), un fichero de configuracion (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`).
+`Matthewmmm/classification-v1` es un prototipo de investigacion publicado en Hugging Face por el usuario Matthewmmm. Se presenta explicitamente como una implementacion propia de una arquitectura hibrida CNN-Transformer orientada a tareas de clasificacion, acompanada de un script de entrenamiento (`train.py`), un fichero de configuracion (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`).
 
 El dato mas relevante es su escala real: los metadatos de safetensors declaran 16.576 parametros totales. Esto contrasta con la etiqueta "giant" que aparece en la model card, termino que en la propia documentacion se usa para describir la configuracion de referencia y los formatos de fichero, no un tamano real de modelo. El repositorio tiene 0 descargas y 0 likes, y ocupa 0.0 GB.
 
@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 - El checkpoint `model.safetensors` es una inicializacion, no un modelo entrenado. No ha sido auditado en robustez, equidad ni transferencia de dominio.
 - No existe ninguna metrica de rendimiento publicada. Cualquier cifra que se atribuya a este modelo en terceros debe considerarse no verificada.
 - Discrepancia de escala: la model card etiqueta la configuracion como "giant", mientras que el recuento real de parametros es de 16.576. Conviene no confundir la etiqueta de configuracion con el tamano efectivo.
-- Implementacion propia: las APIs genericas de carga de HuggingFace no funcionan sin un adaptador explicito. Esto complica la integracion directa en pipelines estandar.
+- Implementacion propia: las APIs genericas de carga de Hugging Face no funcionan sin un adaptador explicito. Esto complica la integracion directa en pipelines estandar.
 - No se declaran idiomas ni modalidades soportadas, por lo que no hay garantia de comportamiento en ninguna tarea concreta sin entrenamiento previo.
 - Riesgo de alucinacion: no aplica en el sentido generativo (no produce texto), pero si existe riesgo de sobreinterpretar sus salidas, dado que provienen de pesos aleatorios o no entrenados.
 - Licencia MIT: permite uso comercial y modificacion, pero el autor advierte de que deben revisarse por separado los terminos de los datos de origen si el repositorio se emplea con conjuntos de datos externos.
@@ -86,6 +86,6 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Matthewmmm/classification-v1
+- Modelo en Hugging Face: https://huggingface.co/Matthewmmm/classification-v1
 - Ficheros del repositorio (relativos a la raiz del modelo): `train.py`, `config.json`, `training_args.json`, `model.safetensors`, `README.md`
 - Paper, blog o repositorio adicional: no disponible. No se ha encontrado documentacion tecnica asociada en la busqueda web; los resultados devueltos correspondian a paginas corporativas de Microsoft sin relacion con el modelo.

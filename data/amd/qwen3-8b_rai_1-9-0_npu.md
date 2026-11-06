@@ -4,9 +4,9 @@
 
 AMD/Qwen3-8B_rai_1.9.0_npu es una distribucion optimizada del modelo Qwen3-8B de Alibaba, publicada por AMD para su ejecucion sobre las NPU integradas en los procesadores AMD Ryzen AI (generacion Strix Point y posteriores). El modelo base Qwen3-8B es un transformer denso de 8.200 millones de parametros con soporte nativo de modo "thinking" y ventana de contexto de 32.768 tokens (extensible hasta 131.072 mediante YaRN), y esta distribuido aqui en formato ONNX cuantizado con el toolkit Quark de AMD para aprovechar el motor de inferencia Ryzen AI 1.9.0.
 
-La relevancia de esta ficha radica en que traslada un LLM de 8B a hardware de consumo con NPU dedicada, sin depender de GPU discreta. El repositorio ocupa 9,6 GB y esta bajo acceso restringido (gated), por lo que es necesario aceptar las condiciones en HuggingFace antes de descargarlo. La licencia del modelo base es Apache 2.0.
+La relevancia de esta ficha radica en que traslada un LLM de 8B a hardware de consumo con NPU dedicada, sin depender de GPU discreta. El repositorio ocupa 9,6 GB y esta bajo acceso restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de descargarlo. La licencia del modelo base es Apache 2.0.
 
-Es importante senalar que la informacion publica disponible en la ficha de HuggingFace es muy limitada: no se detallan las variantes exactas de cuantizacion, los benchmarks de rendimiento sobre NPU ni la composicion del dataset de calibracion. Esta ficha recoge lo verificable y marca explicitamente como "no disponible" todo aquello que no consta.
+Es importante senalar que la informacion publica disponible en la ficha de Hugging Face es muy limitada: no se detallan las variantes exactas de cuantizacion, los benchmarks de rendimiento sobre NPU ni la composicion del dataset de calibracion. Esta ficha recoge lo verificable y marca explicitamente como "no disponible" todo aquello que no consta.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Es importante senalar que la informacion publica disponible en la ficha de Huggi
 | Licencia | Apache 2.0 |
 | Formato de pesos | ONNX (optimizado para Ryzen AI NPU) |
 | Tamano del repositorio | 9,6 GB |
-| Acceso | Restringido (gated) en HuggingFace |
+| Acceso | Restringido (gated) en Hugging Face |
 | Pipeline | text-generation |
 | Toolkit de cuantizacion | AMD Quark |
 | Runtime objetivo | Ryzen AI 1.9.0 (NPU) |
@@ -76,7 +76,7 @@ La diferencia clave de esta distribucion frente al Qwen3-8B original es el forma
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Idiomas: los metadatos declaran unicamente `en`; el uso en castellano no esta garantizado por esta distribucion, aunque el modelo base Qwen3 sea multilingue.
 - Dependencia de hardware: esta optimizado para NPU Ryzen AI 1.9.0; no es directamente utilizable en GPU o CPU sin conversion de formato.
 - Riesgo de alucinacion: inherente a los LLM de 8B, especialmente en tareas de hechos y matematicas complejas.
@@ -87,7 +87,7 @@ La diferencia clave de esta distribucion frente al Qwen3-8B original es el forma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Qwen3-8B_rai_1.9.0_npu
+- Hugging Face: https://huggingface.co/amd/Qwen3-8B_rai_1.9.0_npu
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio Qwen3 (GitHub): https://github.com/QwenLM/Qwen3
 - AMD Quark (toolkit de cuantizacion): https://github.com/amd/quark

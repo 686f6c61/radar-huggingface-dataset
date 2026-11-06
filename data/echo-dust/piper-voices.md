@@ -17,7 +17,7 @@ La relevancia de este repositorio es operativa mas que tecnica: no aporta voces 
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (no es una metrica aplicable al pipeline TTS) |
 | Tipos de cuantizacion | no disponible; los ficheros se distribuyen en los niveles de calidad upstream `medium` y `high` |
-| Idiomas soportados | ingles, variantes `en_US` y `en_GB` (deducido de los nombres de voz; la ficha de HuggingFace marca "no disponibles") |
+| Idiomas soportados | ingles, variantes `en_US` y `en_GB` (deducido de los nombres de voz; la ficha de Hugging Face marca "no disponibles") |
 | Licencia | `other` / `per-voice` (los terminos se aplican voz por voz; Piper como proyecto es MIT) |
 | Formato de pesos | ONNX (mas fichero de configuracion JSON por voz) |
 | Autor | echo-dust |
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/echo-dust/piper-voices
+- Repositorio en Hugging Face: https://huggingface.co/echo-dust/piper-voices
 - Espejo inmediato de origen: https://huggingface.co/diffusionstudio/piper-voices
 - Repositorio oficial de voces Piper: https://huggingface.co/rhasspy/piper-voices
 - Enlace de licencia referenciado en la model card: https://huggingface.co/rhasspy/piper-voices

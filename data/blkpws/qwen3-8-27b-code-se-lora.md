@@ -74,5 +74,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/blkpws/Qwen3.8-27B-Code-SE-LoRA)
+- [Modelo en Hugging Face](https://huggingface.co/blkpws/Qwen3.8-27B-Code-SE-LoRA)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) (referencia, no se proporciona URL directa en la información, pero se deduce del campo `base_model`)

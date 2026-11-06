@@ -76,6 +76,6 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/crazyape777/mir-unconst-affine-5czsc2fc98-r861-vera-odpo)
-- [HuggingFace - modelo base `vera6/affine-5g4yy75zuz-t6`](https://huggingface.co/vera6/affine-5g4yy75zuz-t6) (no se proporcionó enlace directo, pero se menciona)
+- [Hugging Face - modelo](https://huggingface.co/crazyape777/mir-unconst-affine-5czsc2fc98-r861-vera-odpo)
+- [Hugging Face - modelo base `vera6/affine-5g4yy75zuz-t6`](https://huggingface.co/vera6/affine-5g4yy75zuz-t6) (no se proporcionó enlace directo, pero se menciona)
 - [Resultados de búsqueda: modelos similares de la serie Affine](https://huggingface.co/unconst/Affine-5czsc2fc98-h77-lora) (enlace de referencia, no del modelo)

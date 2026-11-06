@@ -73,7 +73,7 @@ No se ha publicado ningun valor de PPL en BF16 sobre la misma porcion, por lo qu
 
 | Modelo | Parametros | Formato / tamano | Precisión media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (MLX APEX MiniPlus) | ~34,66 B totales, ~3 B activos | MLX Safetensors, 19,9485 GB | 4,604 bpw | no disponible | Publico en HuggingFace, 0 descargas |
+| Este modelo (MLX APEX MiniPlus) | ~34,66 B totales, ~3 B activos | MLX Safetensors, 19,9485 GB | 4,604 bpw | no disponible | Publico en Hugging Face, 0 descargas |
 | IsValorum/...-MLX-APEX-NanoPlus-Abliterated | ~34,66 B totales, ~3 B activos | MLX Safetensors, 18,8156 GB | no disponible | no disponible | Publico, variante hermana de clase Q4 |
 | empero-ai/Qwen3.8-35B-A3B-Distill | ~34,66 B totales, ~3 B activos | Safetensors sin cuantizar (BF16) | 16 bits | no disponible | Modelo base del que deriva esta edicion |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks comparativos entre MiniPlus, NanoPlus y el 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-MLX-APEX-MiniPlus-Abliterated
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-MLX-APEX-MiniPlus-Abliterated
 - Variante hermana NanoPlus: https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-MLX-APEX-NanoPlus-Abliterated
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-35B-A3B-Distill
 - Pagina de soporte del autor (Ko-fi): https://ko-fi.com/isvalorum

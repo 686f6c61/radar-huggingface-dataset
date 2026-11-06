@@ -95,7 +95,7 @@ La comparativa con alternativas de otros desarrolladores no esta disponible en l
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/Pashted/stt_ar_fastconformer_hybrid_large_pc_v1.0-GGUF
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/Pashted/stt_ar_fastconformer_hybrid_large_pc_v1.0-GGUF
 - Modelo base original de NVIDIA: https://huggingface.co/nvidia/stt_ar_fastconformer_hybrid_large_pc_v1.0
 - Runtime NeMo-Speech.cpp: https://github.com/NVIDIA/NeMo-Speech.cpp
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

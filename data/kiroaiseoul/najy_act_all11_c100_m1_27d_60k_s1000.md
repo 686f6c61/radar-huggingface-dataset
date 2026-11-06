@@ -90,6 +90,6 @@ No disponible. La informacion proporcionada no incluye resultados de otros check
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_m1_27D_60k_s1000
+- Modelo en Hugging Face: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_m1_27D_60k_s1000
 - Documentacion referenciada en la model card: `trossen-ai-simulation`, `docs/mobile_base_investigation.md`, seccion 94 (no se proporciona URL directa en la informacion disponible).
 - La busqueda web realizada no devolvio resultados relevantes para este modelo; los enlaces obtenidos no guardan relacion con la ficha y se han descartado.

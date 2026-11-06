@@ -4,7 +4,7 @@
 
 InterlaceAI/best-of-n no es un modelo de lenguaje, sino una librería de inferencia que implementa la técnica de muestreo *best-of-n* (también conocida como *test-time compute* o *inference-time compute*) para mejorar el rendimiento de cualquier modelo causal de lenguaje sin modificar sus pesos. Desarrollada por Interlace AI, la librería genera N trayectorias de razonamiento a partir de un modelo congelado y selecciona la mejor respuesta mediante distintos selectores: voto mayoritario, auto-certidumbre basada en log-probabilidades, o un verificador aprendido. El objetivo es cerrar la brecha entre la cobertura (pass@N) y la precisión final, un problema conocido como *selection gap*.
 
-La relevancia actual radica en que ofrece una alternativa al escalado de parámetros: en lugar de entrenar modelos más grandes, se invierte cómputo en tiempo de inferencia. Los resultados publicados muestran mejoras sustanciales en razonamiento matemático y científico. Por ejemplo, con DeepSeek-R1-Distill-Qwen-1.5B en AIME 2024, la precisión pasa de 23,3% con una sola muestra a 83,3% de cobertura con N=128, y el voto mayoritario alcanza 53,3%. La librería es agnóstica al modelo, funciona con cualquier LM causal y permite configurar N libremente. Está publicada bajo licencia Apache 2.0 y su código está disponible en HuggingFace.
+La relevancia actual radica en que ofrece una alternativa al escalado de parámetros: en lugar de entrenar modelos más grandes, se invierte cómputo en tiempo de inferencia. Los resultados publicados muestran mejoras sustanciales en razonamiento matemático y científico. Por ejemplo, con DeepSeek-R1-Distill-Qwen-1.5B en AIME 2024, la precisión pasa de 23,3% con una sola muestra a 83,3% de cobertura con N=128, y el voto mayoritario alcanza 53,3%. La librería es agnóstica al modelo, funciona con cualquier LM causal y permite configurar N libremente. Está publicada bajo licencia Apache 2.0 y su código está disponible en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -35,7 +35,7 @@ La librería incluye un mecanismo de *minority rescue*: cuando el voto mayoritar
 
 - Generación de múltiples trayectorias de razonamiento a partir de un mismo prompt.
 - Selección de respuesta mediante voto mayoritario, auto-certidumbre o verificador externo.
-- Soporte para cualquier modelo causal de lenguaje (HuggingFace o ruta local).
+- Soporte para cualquier modelo causal de lenguaje (Hugging Face o ruta local).
 - Extracción de respuestas en formatos variados: `boxed`, `number`, `letter`, `regex` o callable personalizado.
 - Reutilización de muestras generadas con distintos selectores sin coste adicional de generación.
 - Medición de cobertura (pass@N) y de la brecha de selección (*selection gap*).
@@ -117,7 +117,7 @@ Frente a *self-consistency* clásico, esta librería añade selectores basados e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/InterlaceAI/best-of-n
+- Hugging Face: https://huggingface.co/InterlaceAI/best-of-n
 - DOI del informe técnico: https://doi.org/10.5281/zenodo.21936833
 - Documentación de uso (USAGE.md): referenciada en la model card, no se proporciona URL directa.
 - Repositorio de código: no se indica URL explícita en la información disponible.

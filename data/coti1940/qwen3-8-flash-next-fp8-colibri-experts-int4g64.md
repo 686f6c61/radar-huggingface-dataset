@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible (MMLU,
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CoTi1940/Qwen3.8-Flash-Next-FP8-colibri-experts-int4g64 (este) | no disponible (expertos: 48x512) | no disponible | int4-g64 | qwen-community-1.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-Flash-Next-FP8 (base) | no disponible | no disponible | FP8 | qwen-community-1.0 | HuggingFace |
+| CoTi1940/Qwen3.8-Flash-Next-FP8-colibri-experts-int4g64 (este) | no disponible (expertos: 48x512) | no disponible | int4-g64 | qwen-community-1.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-Flash-Next-FP8 (base) | no disponible | no disponible | FP8 | qwen-community-1.0 | Hugging Face |
 | Alternativas de otro tamano o tarea | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informaci처n sobre otros modelos comparables en la documentaci처n proporcionada.
@@ -90,7 +90,7 @@ No se dispone de informaci처n sobre otros modelos comparables en la documentaci�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CoTi1940/Qwen3.8-Flash-Next-FP8-colibri-experts-int4g64
+- Repositorio Hugging Face: https://huggingface.co/CoTi1940/Qwen3.8-Flash-Next-FP8-colibri-experts-int4g64
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
 - Motor Colibri: https://github.com/JustVugg/colibri
 - Documentaci처n del formato: `docs/qwen38.md` dentro del repositorio de Colibri (secci처n "Routed experts as int4-g64")

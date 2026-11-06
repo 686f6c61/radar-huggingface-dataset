@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Nikhitha123/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno Atari `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario Nikhitha123 en HuggingFace Hub utilizando la libreria stable-baselines3 y el framework de entrenamiento RL Zoo, ambos mantenidos por el grupo DLR-RM. No se trata de un modelo de lenguaje: es una politica neuronal que mapea observaciones visuales del juego a acciones discretas, por lo que su ambito de aplicacion es la investigacion en RL y el benchmarking de entornos Atari.
+El modelo `Nikhitha123/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno Atari `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario Nikhitha123 en Hugging Face Hub utilizando la libreria stable-baselines3 y el framework de entrenamiento RL Zoo, ambos mantenidos por el grupo DLR-RM. No se trata de un modelo de lenguaje: es una politica neuronal que mapea observaciones visuales del juego a acciones discretas, por lo que su ambito de aplicacion es la investigacion en RL y el benchmarking de entornos Atari.
 
 El agente alcanza una recompensa media declarada de 587.00 +/- 118.37 sobre el entorno indicado, un resultado que lo situa por encima del comportamiento aleatorio pero lejos de las referencias humanas habituales en la suite Atari. El entrenamiento se realizo durante 10 millones de pasos de entorno con una `CnnPolicy` (red convolucional) y un buffer de repeticion de 10.000 transiciones, siguiendo una configuracion de hiperparametros tipica del RL Zoo.
 
@@ -71,8 +71,8 @@ No se han publicado en la informacion disponible otros resultados (MMLU, HumanEv
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DQN (Nikhitha123) | DQN + CnnPolicy | SpaceInvadersNoFrameskip-v4 | no disponible | no aplica | no disponible | HuggingFace |
-| Agentes preentrenados de RL Zoo (DLR-RM) | Multiples algoritmos (DQN, PPO, A2C, etc.) | Suite Atari y otros | no disponible | no aplica | MIT (segun el repositorio RL Zoo) | GitHub y HuggingFace |
+| DQN (Nikhitha123) | DQN + CnnPolicy | SpaceInvadersNoFrameskip-v4 | no disponible | no aplica | no disponible | Hugging Face |
+| Agentes preentrenados de RL Zoo (DLR-RM) | Multiples algoritmos (DQN, PPO, A2C, etc.) | Suite Atari y otros | no disponible | no aplica | MIT (segun el repositorio RL Zoo) | GitHub y Hugging Face |
 | Rainbow / C51 (implementaciones de referencia) | DQN con extensiones (distribucional, n-step, dueling, NoisyNet) | Suite Atari | no disponible | no aplica | variable segun implementacion | Repositorios de investigacion |
 
 No se dispone de datos de rendimiento comparativos verificados en la informacion proporcionada. Como orientacion cualitativa, en la literatura de Atari las variantes con extensiones sobre DQN (Double DQN, dueling, prioritized replay, distribucional) suelen superar al DQN basico, por lo que este agente debe interpretarse como una linea base y no como un estado del arte.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativos verificados en la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nikhitha123/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/Nikhitha123/dqn-SpaceInvadersNoFrameskip-v4
 - Stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo: https://github.com/DLR-RM/rl-baselines3-zoo
 - Stable-baselines3 contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace (`muhamad-geosurge/invert-polarity-25d657ce-8238-492f-ba7d-384c5c7f1f02`) contiene un ajuste fino derivado de `mistralai/Mistral-7B-v0.3`, publicado bajo licencia Apache 2.0 y declarado con la librería `vllm`. Se trata de un artefacto de autoría individual, sin pipeline de inferencia declarado, sin idiomas especificados, con 0 descargas y 0 "likes" en el momento de la consulta, y creado el 14 de septiembre de 2026. El nombre del repositorio sugiere una intervención sobre el comportamiento del modelo (posible inversión de polaridad en algún eje de preferencia o estilo de respuesta), pero no hay documentación que lo confirme.
+Este repositorio de Hugging Face (`muhamad-geosurge/invert-polarity-25d657ce-8238-492f-ba7d-384c5c7f1f02`) contiene un ajuste fino derivado de `mistralai/Mistral-7B-v0.3`, publicado bajo licencia Apache 2.0 y declarado con la librería `vllm`. Se trata de un artefacto de autoría individual, sin pipeline de inferencia declarado, sin idiomas especificados, con 0 descargas y 0 "likes" en el momento de la consulta, y creado el 14 de septiembre de 2026. El nombre del repositorio sugiere una intervención sobre el comportamiento del modelo (posible inversión de polaridad en algún eje de preferencia o estilo de respuesta), pero no hay documentación que lo confirme.
 
 El punto más importante para cualquier evaluador es que la model card del repositorio no describe este modelo: es una copia literal de la model card oficial de `Mistral-7B-Instruct-v0.3`, incluyendo fragmentos de código, avisos de privacidad de Mistral AI y ejemplos de function calling que corresponden al modelo instruct original, no a este ajuste. Por tanto, no hay información verificable sobre el dataset de entrenamiento, el método de ajuste, las capacidades reales ni las evaluaciones de este checkpoints concreto.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Evaluaciones publicadas |
 |---|---|---|---|---|---|
 | Este ajuste (`invert-polarity-…`) | No declarado (~7,24 mil millones por herencia) | No declarado (32 768 tokens por herencia) | Apache 2.0 | Repositorio HF, 0 descargas | No |
-| `mistralai/Mistral-7B-Instruct-v0.3` | ~7,24 mil millones | 32 768 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado | Sí, informes y evaluaciones de terceros |
-| `mistralai/Mistral-7B-v0.3` (base) | ~7,24 mil millones | 32 768 tokens | Apache 2.0 | HuggingFace | Sí, evaluaciones de terceros |
-| `meta-llama/Llama-3.1-8B-Instruct` | ~8 mil millones | 128 000 tokens | Licencia comunitaria Llama 3.1 | HuggingFace (con acceso aceptado) | Sí |
-| `Qwen/Qwen2.5-7B-Instruct` | ~7,6 mil millones | 128 000 tokens | Apache 2.0 | HuggingFace | Sí |
+| `mistralai/Mistral-7B-Instruct-v0.3` | ~7,24 mil millones | 32 768 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado | Sí, informes y evaluaciones de terceros |
+| `mistralai/Mistral-7B-v0.3` (base) | ~7,24 mil millones | 32 768 tokens | Apache 2.0 | Hugging Face | Sí, evaluaciones de terceros |
+| `meta-llama/Llama-3.1-8B-Instruct` | ~8 mil millones | 128 000 tokens | Licencia comunitaria Llama 3.1 | Hugging Face (con acceso aceptado) | Sí |
+| `Qwen/Qwen2.5-7B-Instruct` | ~7,6 mil millones | 128 000 tokens | Apache 2.0 | Hugging Face | Sí |
 
 La comparación relevante no es de rendimiento (no hay datos), sino de trazabilidad: los tres modelos alternativos publican informes técnicos, evaluaciones y versiones cuantizadas mantenidas, mientras que este repositorio no aporta ninguno de esos elementos.
 

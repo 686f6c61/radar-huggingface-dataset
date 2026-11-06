@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Oğuz-MoE-354M-Base-v2 es un modelo de lenguaje de tipo base (solo preentrenado, sin ajuste por instrucciones) publicado en HuggingFace por el usuario Yigit-Karaman bajo licencia Apache 2.0. Se trata de un transformer decoder de estilo LLaMA con capas feed-forward de mezcla de expertos (MoE) dispersa: 4 expertos por capa con enrutado top-2, 21 capas, tamaño oculto 576 y un vocabulario de 50.257 tokens. Acumula 354.161.748 parámetros totales y aproximadamente 205,5 millones de parámetros activos por token, con pesos en bfloat16.
+Oğuz-MoE-354M-Base-v2 es un modelo de lenguaje de tipo base (solo preentrenado, sin ajuste por instrucciones) publicado en Hugging Face por el usuario Yigit-Karaman bajo licencia Apache 2.0. Se trata de un transformer decoder de estilo LLaMA con capas feed-forward de mezcla de expertos (MoE) dispersa: 4 expertos por capa con enrutado top-2, 21 capas, tamaño oculto 576 y un vocabulario de 50.257 tokens. Acumula 354.161.748 parámetros totales y aproximadamente 205,5 millones de parámetros activos por token, con pesos en bfloat16.
 
 El modelo está especializado exclusivamente en turco (escritura latina) y su interés es fundamentalmente metodológico: documenta una cadena completa de *upcycling* que parte de un LLaMA denso de 80M entrenado desde cero, atraviesa dos fases de *depth upscaling* (12 → 17 → 21 capas) y culmina en la conversión del FFN denso en 4 expertos MoE. La versión v2 añade 150M tokens de *healing* MoE (300M acumulados, ~150M tokens enrutados por experto) y una nueva fase con contexto de 2048 tokens.
 
@@ -134,10 +134,10 @@ Comparativa con modelos de terceros de tamaño o tarea similares: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yigit-Karaman/Oguz-MoE-354M-Base-V2
+- Modelo en Hugging Face: https://huggingface.co/Yigit-Karaman/Oguz-MoE-354M-Base-V2
 - Modelo base (v1): https://huggingface.co/Yigit-Karaman/Oguz-MoE-354M-Base
 - Tokenizador: https://huggingface.co/ytu-ce-cosmos/turkish-gpt2
 - Dataset Cosmos-Turkish-Corpus-v1.0: https://huggingface.co/datasets/ytu-ce-cosmos/Cosmos-Turkish-Corpus-v1.0
 - Dataset FineWeb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
-- Informes de divergencia por capa: `divergence_baseline.json` y `divergence_final.json` en el repositorio de HuggingFace del modelo
+- Informes de divergencia por capa: `divergence_baseline.json` y `divergence_final.json` en el repositorio de Hugging Face del modelo
 - Búsqueda web: no se han encontrado enlaces relevantes sobre el modelo, la arquitectura o el autor. Los resultados devueltos por el buscador corresponden al nombre propio turco «Yiğit» (páginas de onomástica, una empresa francesa y biografías de personas) y no guardan relación con este modelo.

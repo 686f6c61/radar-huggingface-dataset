@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rlve-opd-teacher-R1Distill-113-BoundedSubarrayCounting-20261025` es un ajuste fino especializado publicado por el usuario de HuggingFace davidheineman como parte de un experimento de *data scaling* denominado RLVE. No es un modelo de propósito general: son los pesos finales de un "teacher" entrenado con GRPO sobre un único entorno de entrenamiento, un problema algorítmico concreto de conteo de subarrays acotados (BoundedSubarrayCounting) con dificultad fija y equilibrada 0/1. El modelo parte de `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`, por lo que hereda la arquitectura Qwen2 y un total de 1.777.088.000 parámetros.
+`rlve-opd-teacher-R1Distill-113-BoundedSubarrayCounting-20261025` es un ajuste fino especializado publicado por el usuario de Hugging Face davidheineman como parte de un experimento de *data scaling* denominado RLVE. No es un modelo de propósito general: son los pesos finales de un "teacher" entrenado con GRPO sobre un único entorno de entrenamiento, un problema algorítmico concreto de conteo de subarrays acotados (BoundedSubarrayCounting) con dificultad fija y equilibrada 0/1. El modelo parte de `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`, por lo que hereda la arquitectura Qwen2 y un total de 1.777.088.000 parámetros.
 
 Su relevancia es metodológica más que de producto: sirve como pieza de una cadena de generación de datos sintéticos y destilación, donde un modelo "profesor" especializado produce rollouts de alta calidad sobre una tarea acotada que después se usan para entrenar o evaluar modelos "alumnos". El autor documenta con precisión el protocolo (4.000 rollouts como tope, actualización final en el paso 499 en base cero, validación cada 50 actualizaciones con 32 prompts y 8 respuestas por prompt) y enlaza la ejecución de W&B, lo que lo convierte en un artefacto reproducible para investigar curvas de escalado de datos en RL.
 
@@ -72,9 +72,9 @@ La model card solo reporta el criterio de parada del entrenamiento (pass@1 de va
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rlve-opd-teacher-R1Distill-113-BoundedSubarrayCounting | 1,78 B | No disponible | No disponible | Publico en HuggingFace; 0 descargas |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (modelo base) | 1,78 B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en HuggingFace |
-| Qwen2.5-1.5B-Instruct (alternativa generalista del mismo orden) | Aprox. 1,5 B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| rlve-opd-teacher-R1Distill-113-BoundedSubarrayCounting | 1,78 B | No disponible | No disponible | Publico en Hugging Face; 0 descargas |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (modelo base) | 1,78 B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en Hugging Face |
+| Qwen2.5-1.5B-Instruct (alternativa generalista del mismo orden) | Aprox. 1,5 B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en Hugging Face |
 
 La comparacion cuantitativa de rendimiento no esta disponible: ni la model card de este checkpoint ni los resultados de busqueda aportan metricas. Cualquier comparacion de licencias o contexto de los modelos alternativos debe verificarse en sus propias model cards antes de usarse en produccion. La diferencia funcional conocida es de alcance: este checkpoint esta especializado en un unico entorno, mientras que el modelo base y las alternativas generalistas cubren generacion y razonamiento abiertos.
 
@@ -92,7 +92,7 @@ La comparacion cuantitativa de rendimiento no esta disponible: ni la model card 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-113-BoundedSubarrayCounting-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-113-BoundedSubarrayCounting-20261025
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Ejecucion de entrenamiento en W&B: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/2da40a49
 - Configuracion y entorno del run: `training_run.json` y `training_config.yaml` dentro del repositorio del modelo

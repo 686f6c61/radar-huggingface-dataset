@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FIELDNOTEx-500M es un modelo de generación de texto especializado en extracción de información estructurada a partir de notas de mantenimiento industrial. Desarrollado por el usuario thinkingdbx y publicado en HuggingFace, el modelo convierte una nota escrita por un técnico (por ejemplo, "P-104 leaking at the seal, replaced 2x seal, pressure back to 3.2 bar") en un único registro JSON con campos normalizados: identificador del activo, tipo de equipo, avería, severidad, acción realizada, repuestos, lecturas y seguimiento.
+FIELDNOTEx-500M es un modelo de generación de texto especializado en extracción de información estructurada a partir de notas de mantenimiento industrial. Desarrollado por el usuario thinkingdbx y publicado en Hugging Face, el modelo convierte una nota escrita por un técnico (por ejemplo, "P-104 leaking at the seal, replaced 2x seal, pressure back to 3.2 bar") en un único registro JSON con campos normalizados: identificador del activo, tipo de equipo, avería, severidad, acción realizada, repuestos, lecturas y seguimiento.
 
 Técnicamente es un fine-tune completo (no LoRA) de Qwen2.5-0.5B-Instruct, con 494 millones de parámetros, y se distribuye tanto en pesos transformers (safetensors fp32) como en dos exportaciones ONNX cuantizadas (INT4 de 452 MB e INT8 de 1.051 MB). Su relevancia está en el nicho del edge computing: es lo bastante pequeño para ejecutarse sin red en una Raspberry Pi 5, lo que lo hace útil para digitalizar registros de mantenimiento en planta sin conexión a internet ni dependencia de APIs externas.
 
@@ -74,9 +74,9 @@ Velocidad de decodificacion medida en 4 hilos de un host x86 en la nube: 29 tok/
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FIELDNOTEx-500M | 494M | Extraccion de notas de mantenimiento a JSON | no disponible | Apache 2.0 | HuggingFace (safetensors + ONNX INT4/INT8) |
-| Qwen/Qwen2.5-0.5B-Instruct (base) | 494M | Chat generalista | 32K (según ficha oficial de Qwen) | Apache 2.0 | HuggingFace, amplio ecosistema |
-| Qwen/Qwen2.5-1.5B-Instruct | 1.570M | Chat generalista | 32K (según ficha oficial de Qwen) | Apache 2.0 | HuggingFace, amplio ecosistema |
+| FIELDNOTEx-500M | 494M | Extraccion de notas de mantenimiento a JSON | no disponible | Apache 2.0 | Hugging Face (safetensors + ONNX INT4/INT8) |
+| Qwen/Qwen2.5-0.5B-Instruct (base) | 494M | Chat generalista | 32K (según ficha oficial de Qwen) | Apache 2.0 | Hugging Face, amplio ecosistema |
+| Qwen/Qwen2.5-1.5B-Instruct | 1.570M | Chat generalista | 32K (según ficha oficial de Qwen) | Apache 2.0 | Hugging Face, amplio ecosistema |
 
 Comparacion: FIELDNOTEx-500M sacrifica la generalidad del modelo base a cambio de fiabilidad en una tarea estrecha (el base obtiene 0% de exact match en la tarea frente al 71,7-80% del fine-tune). Frente a usar un LLM mayor vía API para la misma tarea, FIELDNOTEx ofrece ejecucion offline, coste marginal por inferencia casi nulo y latencia predecible, a costa de cobertura solo en ingles y de errores sistematicos en formulaciones no vistas. No hay otros modelos publicos comparables específicos de extraccion de notas de mantenimiento en la informacion disponible.
 
@@ -95,6 +95,6 @@ Comparacion: FIELDNOTEx-500M sacrifica la generalidad del modelo base a cambio d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thinkingdbx/FIELDNOTEx-500M
+- Modelo en Hugging Face: https://huggingface.co/thinkingdbx/FIELDNOTEx-500M
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Paper, repositorio de codigo y demo: no disponibles en la informacion proporcionada.

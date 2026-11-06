@@ -96,7 +96,7 @@ No se dispone en la información proporcionada de datos verificables sobre model
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta ficha: https://huggingface.co/bluevoid-pl/Muse-Glimmer-30B-pruned-V2-en-pl-GGUF
+- Repositorio Hugging Face de esta ficha: https://huggingface.co/bluevoid-pl/Muse-Glimmer-30B-pruned-V2-en-pl-GGUF
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - GGUF podado previo del mismo autor: https://huggingface.co/bluevoid-pl/Muse-Glimmer-30B-pruned-GGUF
 - GGUF sin podar del mismo autor: https://huggingface.co/bluevoid-pl/Muse-Glimmer-30B-GGUF

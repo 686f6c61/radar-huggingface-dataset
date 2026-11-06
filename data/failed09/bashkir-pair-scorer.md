@@ -20,7 +20,7 @@ La relevancia actual del modelo radica en su rendimiento en terminos de throughp
 | Idiomas soportados | bashkir (`ba`) y ruso (`ru`) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | ONNX (`models/nano/model.onnx`, `models/mini/model.onnx`, `models/medium/model.onnx`) |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Tokenizador | SentencePiece BPE compartido, vocabulario de 16k (`spm_bpe_16k.model`) |
 | Libreria de inferencia | onnxruntime |
 | Tarea (pipeline) | text-classification |
@@ -85,9 +85,9 @@ Los autores senalan que los scorers compactos intercambian una cantidad moderada
 
 | Modelo | ROC-AUC | Average precision | Throughput (RTX 4060) | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|---|---|
-| Nano Scorer (este release) | 0,9498 | 0,8785 | 7.472,2 pares/s | no disponible | 128 tokens por lado | Apache-2.0 | HuggingFace, ONNX |
-| Mini Scorer (este release) | 0,9590 | 0,9040 | 4.673,5 pares/s | no disponible | 128 tokens por lado | Apache-2.0 | HuggingFace, ONNX |
-| Medium Scorer (este release) | 0,9633 | 0,9155 | 2.555,9 pares/s | no disponible | 128 tokens por lado | Apache-2.0 | HuggingFace, ONNX |
+| Nano Scorer (este release) | 0,9498 | 0,8785 | 7.472,2 pares/s | no disponible | 128 tokens por lado | Apache-2.0 | Hugging Face, ONNX |
+| Mini Scorer (este release) | 0,9590 | 0,9040 | 4.673,5 pares/s | no disponible | 128 tokens por lado | Apache-2.0 | Hugging Face, ONNX |
+| Medium Scorer (este release) | 0,9633 | 0,9155 | 2.555,9 pares/s | no disponible | 128 tokens por lado | Apache-2.0 | Hugging Face, ONNX |
 | LaBSE | 0,9944 | 0,9895 | 44,8 pares/s | no disponible | no disponible | no disponible en la informacion proporcionada | utilizado como referencia en el benchmark |
 | LaBSE + LASER | 0,9939 | 0,9871 | 44,8 pares/s | no disponible | no disponible | no disponible en la informacion proporcionada | utilizado como referencia en el benchmark |
 | DevLake BERT | 0,9896 | 0,9706 | 112,5 pares/s | no disponible | no disponible | no disponible en la informacion proporcionada | utilizado como referencia en el benchmark |
@@ -109,7 +109,7 @@ La comparativa se limita a los modelos incluidos en el benchmark del autor. No s
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/failed09/bashkir-pair-scorer
+- Pagina del modelo en Hugging Face: https://huggingface.co/failed09/bashkir-pair-scorer
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Cita recomendada por el autor:
   ```

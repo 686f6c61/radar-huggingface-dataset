@@ -106,8 +106,8 @@ Asignación mixta recomendada por etapa (la unidad se elige una sola vez, en la 
 
 | Modelo | Parámetros | Formato | Límite de longitud | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kokoro-82M-CoreAI (este) | 82 M | `.aimodel` Core AI, 3 bundles (320 MB) | 512 frames (12,8 s) por pasada, buckets fijos | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| hexgrad/Kokoro-82M (upstream, PyTorch) | 82 M | Pesos PyTorch (`kokoro-v1_0.pth`) | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace, modelo base de esta exportación |
+| Kokoro-82M-CoreAI (este) | 82 M | `.aimodel` Core AI, 3 bundles (320 MB) | 512 frames (12,8 s) por pasada, buckets fijos | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| hexgrad/Kokoro-82M (upstream, PyTorch) | 82 M | Pesos PyTorch (`kokoro-v1_0.pth`) | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face, modelo base de esta exportación |
 | Receta comunitaria de exportación a Core AI (LSTM desenrollada) | 82 M | `.aimodel`, 128 celdas LSTM desenrolladas en el grafo | no disponible en la información proporcionada | no disponible en la información proporcionada | Receta citada como referencia por el autor; no se enlaza |
 
 Alternativas de TTS en dispositivo de otras familias (Piper sobre ONNX Runtime, `AVSpeechSynthesizer` de Apple): no se dispone de datos comparativos de parámetros, contexto ni rendimiento en la información proporcionada.
@@ -128,7 +128,7 @@ Alternativas de TTS en dispositivo de otras familias (Piper sobre ONNX Runtime, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardr1126/Kokoro-82M-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/richardr1126/Kokoro-82M-CoreAI
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M
 - Repositorio de la aplicación que lo usa: https://github.com/richardr1126/openreader-ios
 - Resultados de la búsqueda web: no se encontró ningún enlace relevante sobre este modelo; los resultados devueltos correspondían a páginas de planes de suscripción de ChatGPT y no guardan relación con el modelo.

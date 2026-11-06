@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Dongkkka/task0003-groot-n1d7-bjoint-80k` es un checkpoint publicado en HuggingFace por el usuario Dongkkka. Segun los metadatos del repositorio, contiene 3.144.016.000 parametros (aproximadamente 3,14 mil millones) almacenados en formato safetensors, con un tamano de repositorio de 25,5 GB. La ficha no incluye pipeline declarado, licencia, idiomas soportados ni documentacion tecnica asociada.
+El modelo `Dongkkka/task0003-groot-n1d7-bjoint-80k` es un checkpoint publicado en Hugging Face por el usuario Dongkkka. Segun los metadatos del repositorio, contiene 3.144.016.000 parametros (aproximadamente 3,14 mil millones) almacenados en formato safetensors, con un tamano de repositorio de 25,5 GB. La ficha no incluye pipeline declarado, licencia, idiomas soportados ni documentacion tecnica asociada.
 
 La etiqueta del repositorio (`Gr00tN1d7`) y el propio nombre del checkpoint (`groot-n1d7-bjoint-80k`) apuntan a la familia de modelos NVIDIA GR00T N1, orientada a politicas de vision-lenguaje-accion (VLA) para robotica humanoide, con el sufijo `bjoint` posiblemente referido a articulaciones del cuerpo (*body joints*) y `80k` a un numero de pasos o iteraciones de entrenamiento. Sin embargo, esta correspondencia no esta confirmada por ninguna documentacion oficial dentro de la informacion disponible, por lo que debe tratarse como una hipotesis y no como un dato verificado.
 
@@ -96,5 +96,5 @@ No disponible. La informacion proporcionada no incluye especificaciones de model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dongkkka/task0003-groot-n1d7-bjoint-80k
+- Hugging Face: https://huggingface.co/Dongkkka/task0003-groot-n1d7-bjoint-80k
 - No se han encontrado enlaces adicionales relevantes. Los resultados de la busqueda web consultada corresponden a paginas de soporte de Microsoft Windows y no guardan relacion con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Axion-1.0-35B-i1-GGUF es una coleccion de cuantizaciones GGUF del modelo Axion-1.0-35B, publicada por el usuario mradermacher en HuggingFace. El repositorio no contiene un modelo original, sino una conversion a formato GGUF con cuantizaciones de tipo imatrix y weighted, generadas a partir de los pesos publicados en el repositorio base `Axion1-0/Axion-1.0-35B`. El objetivo es permitir la ejecucion del modelo en hardware de consumo mediante llama.cpp y herramientas compatibles.
+Axion-1.0-35B-i1-GGUF es una coleccion de cuantizaciones GGUF del modelo Axion-1.0-35B, publicada por el usuario mradermacher en Hugging Face. El repositorio no contiene un modelo original, sino una conversion a formato GGUF con cuantizaciones de tipo imatrix y weighted, generadas a partir de los pesos publicados en el repositorio base `Axion1-0/Axion-1.0-35B`. El objetivo es permitir la ejecucion del modelo en hardware de consumo mediante llama.cpp y herramientas compatibles.
 
 La informacion disponible es muy limitada. La model card se reduce a comentarios tecnicos del proceso de cuantizacion (version de quantize, tipo de conversion `hf`, lista de quants generados) y al enlace al modelo base. No se documentan arquitectura, contexto, licencia, idiomas ni datos de entrenamiento. El nombre sugiere 35B parametros, pero el dato de parametros totales reportado en safetensors es de 96.047.470, lo que resulta inconsistente con la nomenclatura y probablemente refleja un recuento parcial o erroneo en los metadatos del repo.
 
@@ -26,7 +26,7 @@ El modelo es relevante unicamente como artefacto de despliegue para quien ya con
 
 No se dispone de informacion sobre la arquitectura del modelo base Axion-1.0-35B: ni tipo de transformer, ni si emplea mezcla de expertos, atencion lineal u otro esquema. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF, DPO o ajuste por preferencias.
 
-Lo unico verificable es el proceso de cuantizacion: el repositorio aplica cuantizaciones con importancia (imatrix) y ponderadas, con `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que los pesos originales se convirtieron desde formato HuggingFace antes de cuantizar. La lista de quants cubre desde IQ1_S hasta Q6_K, lo que permite un rango amplio de compromisos entre tamano y fidelidad.
+Lo unico verificable es el proceso de cuantizacion: el repositorio aplica cuantizaciones con importancia (imatrix) y ponderadas, con `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que los pesos originales se convirtieron desde formato Hugging Face antes de cuantizar. La lista de quants cubre desde IQ1_S hasta Q6_K, lo que permite un rango amplio de compromisos entre tamano y fidelidad.
 
 ## Capacidades
 
@@ -74,5 +74,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Axion-1.0-35B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Axion-1.0-35B-i1-GGUF
 - Modelo base: https://huggingface.co/Axion1-0/Axion-1.0-35B

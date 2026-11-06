@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-HelicopterBasic es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario evenediktov. No es un modelo de lenguaje ni un modelo fundacional: es una política entrenada con el algoritmo REINFORCE (gradiente de política Monte Carlo) para resolver el entorno Pixelcopter-PLE-v0, un juego de píxeles de la familia PyGame Learning Environment (PLE). El repositorio lo etiqueta como `reinforcement-learning`, `reinforce`, `custom-implementation` y `deep-rl-class`, lo que indica que se trata de un ejercicio derivado de la Unidad 4 del curso Deep Reinforcement Learning Course de HuggingFace.
+Reinforce-HelicopterBasic es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario evenediktov. No es un modelo de lenguaje ni un modelo fundacional: es una política entrenada con el algoritmo REINFORCE (gradiente de política Monte Carlo) para resolver el entorno Pixelcopter-PLE-v0, un juego de píxeles de la familia PyGame Learning Environment (PLE). El repositorio lo etiqueta como `reinforcement-learning`, `reinforce`, `custom-implementation` y `deep-rl-class`, lo que indica que se trata de un ejercicio derivado de la Unidad 4 del curso Deep Reinforcement Learning Course de Hugging Face.
 
 El problema que resuelve es acotado: controlar el helicóptero de Pixelcopter esquivando obstáculos durante el mayor tiempo posible. El autor declara una recompensa media de 53.40 con una desviación típica de 40.57 en ese entorno, un resultado no verificado y con una variabilidad muy alta respecto a la media. El repositorio no incluye licencia, idiomas, arquitectura de red ni formato de pesos documentados, y ocupa 0.0 GB según los metadatos, por lo que la información disponible es mínima.
 
@@ -33,7 +33,7 @@ Su relevancia es fundamentalmente didáctica y de referencia: sirve como ejemplo
 
 La model card indica únicamente que se trata de un agente REINFORCE entrenado sobre Pixelcopter-PLE-v0. REINFORCE es un método de gradiente de política de tipo Monte Carlo: se recolecta un episodio completo, se calcula el retorno descontado y se actualizan los pesos de la política en la dirección que incrementa la probabilidad logarítmica de las acciones ponderada por ese retorno. No hay función de valor crítica ni bootstrapping, lo que explica la alta varianza típica de este algoritmo.
 
-No se dispone de información sobre el número de parámetros, el número de capas, el tipo de red (MLP u otra), la función de activación, el optimizador, la tasa de aprendizaje, el factor de descuento, el número de episodios de entrenamiento ni el número de semillas evaluadas. Tampoco se documenta si hubo normalización de recompensas, baseline, entropía añadida u otra técnica de reducción de varianza. Las etiquetas `deep-rl-class` y `custom-implementation` sugieren que el código sigue la implementación propuesta en la Unidad 4 del Deep Reinforcement Learning Course de HuggingFace, cuyo enlace figura en la propia model card, pero no se aporta el código ni los hiperparámetros en el repositorio.
+No se dispone de información sobre el número de parámetros, el número de capas, el tipo de red (MLP u otra), la función de activación, el optimizador, la tasa de aprendizaje, el factor de descuento, el número de episodios de entrenamiento ni el número de semillas evaluadas. Tampoco se documenta si hubo normalización de recompensas, baseline, entropía añadida u otra técnica de reducción de varianza. Las etiquetas `deep-rl-class` y `custom-implementation` sugieren que el código sigue la implementación propuesta en la Unidad 4 del Deep Reinforcement Learning Course de Hugging Face, cuyo enlace figura en la propia model card, pero no se aporta el código ni los hiperparámetros en el repositorio.
 
 ## Capacidades
 
@@ -53,7 +53,7 @@ No se dispone de información sobre el número de parámetros, el número de cap
 - Punto de partida para ablation studies sobre REINFORCE: al no usar baseline ni crítica, es útil para medir el efecto de añadir reducción de varianza (reward-to-go, normalización, valor de línea base) manteniendo el mismo entorno.
 - Evaluación de la varianza del gradiente de política: la desviación típica declarada de 40.57 sobre una media de 53.40 lo convierte en un caso claro para estudiar la inestabilidad de Monte Carlo.
 - Docencia sobre entornos PLE: permite ilustrar el ciclo completo observación-acción-recompensa en un entorno visual ligero sin dependencias pesadas.
-- Banco de pruebas de infraestructura de evaluación RL: útil para validar pipelines que leen `model-index` de HuggingFace y ejecutan `evaluate` contra entornos PLE.
+- Banco de pruebas de infraestructura de evaluación RL: útil para validar pipelines que leen `model-index` de Hugging Face y ejecutan `evaluate` contra entornos PLE.
 - Comparación de algoritmos en la misma tarea: al ser un agente REINFORCE mínimo, se puede contrastar con DQN, PPO o A2C entrenados en Pixelcopter-PLE-v0 para medir la brecha de rendimiento en entornos de control continuo con recompensa dispersa.
 - Generación de datos sintéticos de trayectorias: el agente puede usarse para producir rollouts etiquetados y estudiar técnicas de imitación o de aprendizaje por refuerzo offline.
 
@@ -81,7 +81,7 @@ No disponible. La información proporcionada no incluye agentes comparables en P
 
 | Modelo | Entorno | Métrica | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Reinforce-HelicopterBasic | Pixelcopter-PLE-v0 | mean_reward 53.40 ± 40.57 (no verificado) | no disponible | HuggingFace |
+| Reinforce-HelicopterBasic | Pixelcopter-PLE-v0 | mean_reward 53.40 ± 40.57 (no verificado) | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No disponible. La información proporcionada no incluye agentes comparables en P
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/evenediktov/Reinforce-HelicopterBasic
+- Modelo en Hugging Face: https://huggingface.co/evenediktov/Reinforce-HelicopterBasic
 - Unidad 4 del Deep Reinforcement Learning Course (referenciada en la model card): https://huggingface.co/deep-rl-course/unit4/introduction
 - Entorno Pixelcopter-PLE-v0: no disponible (no se aporta enlace en la información proporcionada)
 - Paper de REINFORCE: no disponible (no se aporta enlace en la información proporcionada)

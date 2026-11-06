@@ -27,7 +27,7 @@ En la evaluacion interna sobre 84 formulaciones no vistas, los pesos ajustados a
 | Protocolo de herramientas | JSON delimitado por bloques de codigo (fenced JSON) sobre texto |
 | Tamano del repositorio | 0,7 GB |
 | Descargas / likes | 0 / 0 en la fecha de consulta |
-| Creado / actualizado | 2026-10-10 / 2026-10-10 (segun metadatos de HuggingFace) |
+| Creado / actualizado | 2026-10-10 / 2026-10-10 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -99,7 +99,7 @@ Los datos de las tres alternativas provienen de sus fichas publicas y no se han 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nakas/kiln-photo-1.5b-q4f16_1-MLC
+- Modelo en Hugging Face: https://huggingface.co/nakas/kiln-photo-1.5b-q4f16_1-MLC
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Editor Kiln Photo: https://editkiln.com/photo-editor/
 - WebLLM (repositorio): https://github.com/mlc-ai/web-llm

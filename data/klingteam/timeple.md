@@ -73,7 +73,7 @@ No se dispone de información sobre modelos directamente comparables en la tarea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KlingTeam/TimePLE
+- Modelo en Hugging Face: https://huggingface.co/KlingTeam/TimePLE
 - Paper (arXiv): https://arxiv.org/abs/2607.23951
 - Repositorio de código (GitHub): https://github.com/KlingAIResearch/TimePLE
 - Dataset de entrenamiento: https://huggingface.co/datasets/KlingTeam/TimePLE-Dataset

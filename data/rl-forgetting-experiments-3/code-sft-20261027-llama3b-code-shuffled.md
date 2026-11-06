@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| `code-sft-20261027-llama3b-code-shuffled` | ~3B | no disponible | `other` + Llama 3.2 Community License | HuggingFace (0 descargas, 0 likes) | no disponible |
-| Llama 3.2 3B Instruct (modelo base de referencia) | ~3B | no disponible en la informacion proporcionada | Llama 3.2 Community License | HuggingFace (enlace en la model card) | no disponible |
+| `code-sft-20261027-llama3b-code-shuffled` | ~3B | no disponible | `other` + Llama 3.2 Community License | Hugging Face (0 descargas, 0 likes) | no disponible |
+| Llama 3.2 3B Instruct (modelo base de referencia) | ~3B | no disponible en la informacion proporcionada | Llama 3.2 Community License | Hugging Face (enlace en la model card) | no disponible |
 | Qwen2.5-Coder-3B | ~3B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible |
 | Otras variantes de la serie `RL-Forgetting-Experiments-3` | ~3B | no disponible | `other` | mismo repositorio del autor | no disponible |
 
@@ -90,7 +90,7 @@ La comparación relevante no es de rendimiento absoluto, sino experimental: este
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RL-Forgetting-Experiments-3/code-sft-20261027-llama3b-code-shuffled
+- Modelo en Hugging Face: https://huggingface.co/RL-Forgetting-Experiments-3/code-sft-20261027-llama3b-code-shuffled
 - Modelo base referenciado (Llama 3.2 3B Instruct): https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Licencia Llama 3.2 y política de uso aceptable: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct (referencia indicada en la model card)
 - Paper, blog o repositorio adicional: no disponible en la información proporcionada.

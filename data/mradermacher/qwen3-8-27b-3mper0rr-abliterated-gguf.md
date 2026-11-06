@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos fiables. Existen otros modelos abliterated de Qwen3.8-27B en HuggingFace, como `mradermacher/Qwen3.8-27B-OBLITERATED-GGUF`, que probablemente sean similares en rendimiento. Sin embargo, no hay benchmarks publicados que permitan una comparacion objetiva. Se recomienda evaluar localmente con tareas especificas.
+No se dispone de datos comparativos fiables. Existen otros modelos abliterated de Qwen3.8-27B en Hugging Face, como `mradermacher/Qwen3.8-27B-OBLITERATED-GGUF`, que probablemente sean similares en rendimiento. Sin embargo, no hay benchmarks publicados que permitan una comparacion objetiva. Se recomienda evaluar localmente con tareas especificas.
 
 ## Limitaciones y advertencias
 
@@ -67,7 +67,7 @@ No se dispone de datos comparativos fiables. Existen otros modelos abliterated d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-3MPER0RR-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-3MPER0RR-abliterated-GGUF
 - Modelo base: https://huggingface.co/3MPER0RR/Qwen3.8-27B-3MPER0RR-abliterated
 - Guia de ejecucion local: https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026
 - Guia alternativa: https://linas.substack.com/p/qwen3-8-27b-local-guide

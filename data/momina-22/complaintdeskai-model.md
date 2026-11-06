@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ComplaintDeskAI-Model es un modelo publicado en HuggingFace por el usuario momina-22 bajo licencia Apache 2.0. Su nombre sugiere un posible propósito orientado a la gestión de quejas o atención al cliente, aunque no se proporciona ninguna descripción, documentación técnica ni model card más allá de la licencia. El repositorio no presenta descargas ni valoraciones, lo que indica que se trata de un proyecto en fase muy inicial o de carácter experimental.
+ComplaintDeskAI-Model es un modelo publicado en Hugging Face por el usuario momina-22 bajo licencia Apache 2.0. Su nombre sugiere un posible propósito orientado a la gestión de quejas o atención al cliente, aunque no se proporciona ninguna descripción, documentación técnica ni model card más allá de la licencia. El repositorio no presenta descargas ni valoraciones, lo que indica que se trata de un proyecto en fase muy inicial o de carácter experimental.
 
 En el momento de redactar esta ficha, no se dispone de información sobre la arquitectura, el número de parámetros, el contexto, los idiomas soportados ni las capacidades del modelo. Tampoco se han publicado pesos, archivos de configuración o resultados de evaluación. Por tanto, cualquier uso en producción requeriría una validación previa exhaustiva por parte del desarrollador.
 
@@ -60,4 +60,4 @@ No disponible. No se conocen modelos comparables dentro de la misma categoría p
 
 ## Enlaces
 
-- [HuggingFace - momina-22/ComplaintDeskAI-Model](https://huggingface.co/momina-22/ComplaintDeskAI-Model)
+- [Hugging Face - momina-22/ComplaintDeskAI-Model](https://huggingface.co/momina-22/ComplaintDeskAI-Model)

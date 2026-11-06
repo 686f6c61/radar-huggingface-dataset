@@ -4,7 +4,7 @@
 
 `AndrzejAsijuk/srtmind-asr-models` no es un modelo entrenado desde cero, sino un repositorio espejo que agrupa copias byte a byte de tres modelos publicos de reconocimiento de voz, empaquetados en un unico repositorio para que el worker de voz de SRTMind, desplegado en Runpod Serverless, pueda beneficiarse del cacheo de modelos de Runpod (un repositorio por endpoint). El autor declara explicitamente que no ha modificado ningun fichero y que las copias coinciden en sha256 con las entradas de `tools.lock` del worker.
 
-Los tres componentes son: `ggml-large-v3.bin` (OpenAI Whisper large-v3 en formato GGML, proveniente de ggerganov/whisper.cpp, licencia MIT), `parakeet-tdt-0.6b-v3.gguf` (NVIDIA Parakeet TDT 0.6B v3 cuantizado en GGUF, proveniente de cstr/parakeet-tdt-0.6b-v3-GGUF, licencia CC-BY-4.0) y `ggml-silero-v6.2.0.bin` (Silero VAD v6.2.0, proveniente de ggml-org/whisper-vad, licencia MIT). El repositorio ocupa 4,4 GB y HuggingFace reporta 627.115.158 parametros totales, cifra que corresponde al componente Parakeet TDT 0.6B y no a la suma del repositorio completo.
+Los tres componentes son: `ggml-large-v3.bin` (OpenAI Whisper large-v3 en formato GGML, proveniente de ggerganov/whisper.cpp, licencia MIT), `parakeet-tdt-0.6b-v3.gguf` (NVIDIA Parakeet TDT 0.6B v3 cuantizado en GGUF, proveniente de cstr/parakeet-tdt-0.6b-v3-GGUF, licencia CC-BY-4.0) y `ggml-silero-v6.2.0.bin` (Silero VAD v6.2.0, proveniente de ggml-org/whisper-vad, licencia MIT). El repositorio ocupa 4,4 GB y Hugging Face reporta 627.115.158 parametros totales, cifra que corresponde al componente Parakeet TDT 0.6B y no a la suma del repositorio completo.
 
 Su relevancia es fundamentalmente operativa: sirve como ejemplo de patron de empaquetado de dependencias de inferencia en un solo repositorio para aprovechar el cacheo a nivel de endpoint en infraestructura serverless. No aporta pesos nuevos ni mejoras de rendimiento sobre los modelos originales; para cualquier evaluacion tecnica conviene acudir directamente a las fuentes originales.
 
@@ -13,7 +13,7 @@ Su relevancia es fundamentalmente operativa: sirve como ejemplo de patron de emp
 | Parametro | Valor |
 |---|---|
 | Arquitectura | No disponible en la model card; el repositorio agrupa tres modelos distintos (ASR de Whisper large-v3, ASR de Parakeet TDT 0.6B v3 y deteccion de actividad de voz Silero VAD v6.2.0) |
-| Parametros totales | 627.115.158 (dato reportado por HuggingFace; corresponde al componente safetensors presente en el repo, no al conjunto de los tres ficheros) |
+| Parametros totales | 627.115.158 (dato reportado por Hugging Face; corresponde al componente safetensors presente en el repo, no al conjunto de los tres ficheros) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible (modelos de audio; la ventana relevante es la duracion de audio, no tokens de texto) |
 | Tipos de cuantizacion | GGML/GGUF; los ficheros concretos son `ggml-large-v3.bin`, `parakeet-tdt-0.6b-v3.gguf` y `ggml-silero-v6.2.0.bin`. No se especifican los niveles de cuantizacion internos |
@@ -29,7 +29,7 @@ Su relevancia es fundamentalmente operativa: sirve como ejemplo de patron de emp
 
 La model card no documenta arquitectura, datos de entrenamiento, numero de tokens, composicion del dataset ni procesos de alineacion (RLHF, DPO u otros) para ninguno de los tres componentes. El repositorio es, por declaracion expresa del autor, un espejo: "Nothing here is modified. All credit to the original authors."
 
-Los tres ficheros pertenecen a familias distintas de modelos de audio: un modelo ASR de gran tamano (Whisper large-v3), un modelo ASR compacto basado en transducer (Parakeet TDT 0.6B v3) y un detector de actividad de voz (Silero VAD v6.2.0). La innovacion tecnica del repositorio no esta en los pesos, sino en el patron de empaquetado: consolidar todas las dependencias de inferencia de un servicio en un unico repositorio de HuggingFace para que el mecanismo de cacheo de modelos de Runpod las materialice de una vez, con verificacion de integridad mediante sha256 en un fichero `tools.lock`.
+Los tres ficheros pertenecen a familias distintas de modelos de audio: un modelo ASR de gran tamano (Whisper large-v3), un modelo ASR compacto basado en transducer (Parakeet TDT 0.6B v3) y un detector de actividad de voz (Silero VAD v6.2.0). La innovacion tecnica del repositorio no esta en los pesos, sino en el patron de empaquetado: consolidar todas las dependencias de inferencia de un servicio en un unico repositorio de Hugging Face para que el mecanismo de cacheo de modelos de Runpod las materialice de una vez, con verificacion de integridad mediante sha256 en un fichero `tools.lock`.
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ La comparativa natural es entre los tres componentes incluidos en el propio repo
 | `parakeet-tdt-0.6b-v3.gguf` | cstr/parakeet-tdt-0.6b-v3-GGUF (NVIDIA Parakeet TDT 0.6B v3) | 0,6 B (aproximado, segun el nombre del fichero) | GGUF | CC-BY-4.0 | ASR compacto |
 | `ggml-silero-v6.2.0.bin` | ggml-org/whisper-vad (Silero VAD v6.2.0) | No disponible | GGML | MIT | Deteccion de actividad de voz |
 
-Alternativas externas de la misma categoria (por ejemplo, otros modelos ASR o VAD publicados en HuggingFace): no disponible; no se ha proporcionado informacion sobre ellas en esta busqueda.
+Alternativas externas de la misma categoria (por ejemplo, otros modelos ASR o VAD publicados en Hugging Face): no disponible; no se ha proporcionado informacion sobre ellas en esta busqueda.
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ Alternativas externas de la misma categoria (por ejemplo, otros modelos ASR o VA
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AndrzejAsijuk/srtmind-asr-models
+- Repositorio en Hugging Face: https://huggingface.co/AndrzejAsijuk/srtmind-asr-models
 - Fuente de `ggml-large-v3.bin`: https://huggingface.co/ggerganov/whisper.cpp
 - Fuente de `parakeet-tdt-0.6b-v3.gguf`: https://huggingface.co/cstr/parakeet-tdt-0.6b-v3-GGUF
 - Fuente de `ggml-silero-v6.2.0.bin`: https://huggingface.co/ggml-org/whisper-vad

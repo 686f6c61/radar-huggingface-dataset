@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bmkzl/modelchainqwen36` es un repositorio de modelo publicado en HuggingFace por el usuario bmkzl el 5 de octubre de 2026 y actualizado el mismo dia. La unica informacion verificable que acompana al repositorio es la declaracion de licencia MIT; no hay model card descriptiva, ni pipeline declarado, ni idiomas soportados, ni resultados de evaluacion. El propio repositorio ocupa 0.0 GB, lo que indica que no contiene pesos ni ficheros de gran tamano publicados en el momento de la consulta.
+`bmkzl/modelchainqwen36` es un repositorio de modelo publicado en Hugging Face por el usuario bmkzl el 5 de octubre de 2026 y actualizado el mismo dia. La unica informacion verificable que acompana al repositorio es la declaracion de licencia MIT; no hay model card descriptiva, ni pipeline declarado, ni idiomas soportados, ni resultados de evaluacion. El propio repositorio ocupa 0.0 GB, lo que indica que no contiene pesos ni ficheros de gran tamano publicados en el momento de la consulta.
 
 El nombre del repositorio sugiere una posible relacion con la familia Qwen3 (el fragmento "qwen36" podria apuntar a una variante de 6B o a una version 3.6), pero no existe ninguna confirmacion en la informacion disponible: ni el autor la declara, ni hay ficheros de configuracion, tokenizer o pesos que permitan verificarlo. Por tanto, cualquier afirmacion sobre arquitectura, numero de parametros o contexto seria especulativa.
 
@@ -73,5 +73,5 @@ No disponible. No se puede establecer una comparativa fiable porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bmkzl/modelchainqwen36
+- Hugging Face: https://huggingface.co/bmkzl/modelchainqwen36
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada.

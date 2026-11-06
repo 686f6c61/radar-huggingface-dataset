@@ -73,8 +73,8 @@ No se dispone de datos de rendimiento comparables para este modelo en la informa
 
 | Modelo | Parametros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yunusserhat/firerisk-siglip2-base-frozen | 92,89M (6.919 entrenables) | 224x224 px | Clasificacion de 7 clases de peligro aereo | GPL-3.0 (backbone Apache 2.0) | HuggingFace + FireRisk Bench |
-| timm/vit_base_patch16_siglip_224.v2_webli | ~86M | 224x224 px | Encoder imagen-texto SigLIP2 (zero-shot/generico) | Apache 2.0 | timm / HuggingFace |
+| yunusserhat/firerisk-siglip2-base-frozen | 92,89M (6.919 entrenables) | 224x224 px | Clasificacion de 7 clases de peligro aereo | GPL-3.0 (backbone Apache 2.0) | Hugging Face + FireRisk Bench |
+| timm/vit_base_patch16_siglip_224.v2_webli | ~86M | 224x224 px | Encoder imagen-texto SigLIP2 (zero-shot/generico) | Apache 2.0 | timm / Hugging Face |
 | google/vit-base-patch16-224 | ~86M | 224x224 px | Clasificacion ImageNet-1k (1.000 clases) | Apache 2.0 | Transformers |
 | ResNet-50 (torchvision) | ~25,6M | 224x224 px | Clasificacion ImageNet-1k (1.000 clases) | BSD-3 | torchvision |
 
@@ -97,7 +97,7 @@ La comparacion con clasificadores de teledeteccion especificos de incendios no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yunusserhat/firerisk-siglip2-base-frozen
+- Modelo en Hugging Face: https://huggingface.co/yunusserhat/firerisk-siglip2-base-frozen
 - Repositorio FireRisk Bench: https://github.com/yunusserhat/firerisk
 - Documentacion de instalacion (incluye CPU): https://github.com/yunusserhat/firerisk/blob/main/docs/installation.md
 - Modelo base en timm/HuggingFace: https://huggingface.co/timm/vit_base_patch16_siglip_224.v2_webli

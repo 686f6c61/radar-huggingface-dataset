@@ -4,7 +4,7 @@
 
 `jjdelite/video-understanding-analysis` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion sobre comprension de video. La model card lo describe explicitamente como una "exploratory note" que recoge el alcance de una pregunta de investigacion, los posibles factores de confusion, una comparacion propuesta con lineas base emparejadas y requisitos de reproducibilidad, antes de que se reporte cualquier resultado experimental. Los unicos artefactos declarados en el repositorio son `analysis.md` y `README.md`.
 
-Los metadatos de HuggingFace indican un total de 33.088 parametros (dato extraido de safetensors) y un tamano de repositorio de 0,0 GB. Esa cifra es incompatible con cualquier modelo funcional de comprension de video y, combinada con el contenido de la model card, sugiere un contador de metadatos o un artefacto residual, no un checkpoint utilizable. El repositorio lleva las etiquetas `transformer`, `safetensors` y `video-understanding`, pero no incluye configuracion de arquitectura, tokenizador ni pesos publicados.
+Los metadatos de Hugging Face indican un total de 33.088 parametros (dato extraido de safetensors) y un tamano de repositorio de 0,0 GB. Esa cifra es incompatible con cualquier modelo funcional de comprension de video y, combinada con el contenido de la model card, sugiere un contador de metadatos o un artefacto residual, no un checkpoint utilizable. El repositorio lleva las etiquetas `transformer`, `safetensors` y `video-understanding`, pero no incluye configuracion de arquitectura, tokenizador ni pesos publicados.
 
 Su relevancia actual es, por tanto, documental y metodologica: sirve como plantilla de como plantear una evaluacion rigurosa en comprension de video (MSR-VTT, ActivityNet Captions) y como recordatorio de que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados. No debe presentarse ni desplegarse como modelo de inferencia.
 
@@ -44,7 +44,7 @@ Dado que el repositorio no es un modelo, los casos de uso se refieren al documen
 - Revision de reproducibilidad: util como lista de comprobacion de que debe acompanar a un resultado (versiones de dataset, comandos, semillas, hardware y logs en bruto) en MSR-VTT y ActivityNet Captions.
 - Analisis de modos de fallo: la seccion de failure modes puede reutilizarse para anticipar errores tipicos de modelos de video (desalineacion temporal, descripcion generica, sesgo hacia el frame central).
 - Docencia y formacion de investigadores: ejemplo practico de como separar hipotesis de resultados en una nota de investigacion publicada en un hub de modelos.
-- Auditoria de repositorios en HuggingFace: caso de estudio de por que un repositorio etiquetado como `transformer` y `safetensors` puede no contener un modelo, y de la necesidad de verificar ficheros antes de integrar nada en un pipeline.
+- Auditoria de repositorios en Hugging Face: caso de estudio de por que un repositorio etiquetado como `transformer` y `safetensors` puede no contener un modelo, y de la necesidad de verificar ficheros antes de integrar nada en un pipeline.
 - Reutilizacion de referencias bibliograficas: la nota recopila referencias relevantes del area que pueden servir como punto de entrada a la literatura de video understanding.
 
 ## Benchmarks y rendimiento
@@ -87,7 +87,7 @@ No disponible. No se han proporcionado datos verificables de modelos comparables
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jjdelite/video-understanding-analysis
+- Repositorio en Hugging Face: https://huggingface.co/jjdelite/video-understanding-analysis
 - Nota principal: https://huggingface.co/jjdelite/video-understanding-analysis/blob/main/analysis.md
 - Documentacion: https://huggingface.co/jjdelite/video-understanding-analysis/blob/main/README.md
 - Paper, blog, repositorio de codigo o demo: no disponibles.

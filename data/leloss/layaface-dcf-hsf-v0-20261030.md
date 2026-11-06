@@ -101,7 +101,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leloss/LayaFace-DCF-HSF.v0.20261030
+- Modelo en Hugging Face: https://huggingface.co/leloss/LayaFace-DCF-HSF.v0.20261030
 - Modelo base CLIP ViT-B/16: https://huggingface.co/openai/clip-vit-base-patch16
 - Paper CLIP (arXiv:2103.00020): https://arxiv.org/abs/2103.00020
 - Paper DCFace (arXiv:2304.07060): https://arxiv.org/abs/2304.07060

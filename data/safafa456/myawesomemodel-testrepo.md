@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario safafa456 en HuggingFace, con licencia MIT y etiquetado como compatible con la librería `transformers` de PyTorch. Según la model card, se trata de una versión actualizada de un modelo previo que mejora significativamente sus capacidades de razonamiento y deducción, acercándose al rendimiento de otros modelos líderes. El autor afirma que la nueva versión emplea más tokens de razonamiento por consulta (una media de 23K frente a 12K en la versión anterior) y que ha reducido la tasa de alucinación y mejorado el soporte para function calling.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario safafa456 en Hugging Face, con licencia MIT y etiquetado como compatible con la librería `transformers` de PyTorch. Según la model card, se trata de una versión actualizada de un modelo previo que mejora significativamente sus capacidades de razonamiento y deducción, acercándose al rendimiento de otros modelos líderes. El autor afirma que la nueva versión emplea más tokens de razonamiento por consulta (una media de 23K frente a 12K en la versión anterior) y que ha reducido la tasa de alucinación y mejorado el soporte para function calling.
 
 Sin embargo, el repositorio está vacío (0.0 GB de tamaño), no se proporcionan pesos, arquitectura detallada, ni especificaciones técnicas concretas. La model card incluye una tabla de benchmarks comparativos con otros modelos (Model1, Model2, Model1-v2) en tareas de razonamiento, comprensión del lenguaje, generación y capacidades especializadas, pero sin detalles sobre el tamaño, el contexto o el entrenamiento. Por tanto, esta ficha se basa exclusivamente en la información declarada por el autor, que no ha sido verificada de forma independiente.
 
@@ -21,7 +21,7 @@ Sin embargo, el repositorio está vacío (0.0 GB de tamaño), no se proporcionan
 
 ## Arquitectura y entrenamiento
 
-La model card no especifica la arquitectura del modelo. Los tags de HuggingFace incluyen "bert", lo que podría indicar una arquitectura basada en Transformer tipo BERT, pero no hay confirmación oficial. Tampoco se detallan los datos de entrenamiento, el número de tokens, ni el proceso de alineación (RLHF, DPO, etc.). El autor menciona que se han introducido "mecanismos de optimización algorítmica" durante el post-entrenamiento y que se ha aumentado la profundidad de razonamiento, pero sin ofrecer detalles técnicos concretos. No se dispone de información sobre innovaciones como atención lineal, decodificación especulativa u otras técnicas.
+La model card no especifica la arquitectura del modelo. Los tags de Hugging Face incluyen "bert", lo que podría indicar una arquitectura basada en Transformer tipo BERT, pero no hay confirmación oficial. Tampoco se detallan los datos de entrenamiento, el número de tokens, ni el proceso de alineación (RLHF, DPO, etc.). El autor menciona que se han introducido "mecanismos de optimización algorítmica" durante el post-entrenamiento y que se ha aumentado la profundidad de razonamiento, pero sin ofrecer detalles técnicos concretos. No se dispone de información sobre innovaciones como atención lineal, decodificación especulativa u otras técnicas.
 
 ## Capacidades
 
@@ -84,7 +84,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. L
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB), por lo que no hay pesos, tokenizador ni código disponibles para su uso real.
+- El repositorio de Hugging Face está vacío (0.0 GB), por lo que no hay pesos, tokenizador ni código disponibles para su uso real.
 - No se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados.
 - Los benchmarks presentados en la model card son declaraciones del autor y no han sido verificados de forma independiente.
 - No se indica el proceso de entrenamiento ni los datos utilizados, lo que impide evaluar posibles sesgos.
@@ -94,4 +94,4 @@ No se dispone de información suficiente para realizar una comparativa fiable. L
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/safafa456/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/safafa456/MyAwesomeModel-TestRepo

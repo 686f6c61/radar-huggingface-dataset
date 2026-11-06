@@ -78,9 +78,9 @@ No se dispone de comparaciones directas con otros modelos en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sahibnoor1/gi-endoscopy-grounded-vlm-checkpoints
+- Hugging Face: https://huggingface.co/Sahibnoor1/gi-endoscopy-grounded-vlm-checkpoints
 - GitHub: https://github.com/sahibnoorsingh009/GI-Endoscopy-Grounded-VLM
 - Paper (arXiv): https://arxiv.org/pdf/2607.27122
-- Perfil del autor en HuggingFace: https://huggingface.co/Sahibnoor1
+- Perfil del autor en Hugging Face: https://huggingface.co/Sahibnoor1
 - Checkpoint externo (SO400M classifier): https://huggingface.co/Sahibnoor1/gi-siglip2-dino-hyperkvasir-checkpoints
 - Checkpoint externo (Kvasir-SEG segmentation): https://huggingface.co/Sahibnoor1/kvasir-siglip2-segmentation-checkpoints

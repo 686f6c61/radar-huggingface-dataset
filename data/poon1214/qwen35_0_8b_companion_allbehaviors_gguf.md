@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su tamaño ultracompacto, que lo hace ade
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo en la ficha de HuggingFace. Dado que se basa en Qwen3.5-0.8B, es probable que utilice una arquitectura transformer estándar con atención de múltiples cabezas, pero no se confirma si incorpora innovaciones como atención lineal o decodificación especulativa. Tampoco se conocen los datos de entrenamiento, el número de tokens utilizados ni si se aplicaron técnicas de RLHF o DPO. El autor menciona "AllBehaviors" en el nombre, lo que podría indicar un ajuste fino orientado a múltiples comportamientos conversacionales, pero no hay documentación al respecto.
+No se dispone de información detallada sobre la arquitectura interna del modelo en la ficha de Hugging Face. Dado que se basa en Qwen3.5-0.8B, es probable que utilice una arquitectura transformer estándar con atención de múltiples cabezas, pero no se confirma si incorpora innovaciones como atención lineal o decodificación especulativa. Tampoco se conocen los datos de entrenamiento, el número de tokens utilizados ni si se aplicaron técnicas de RLHF o DPO. El autor menciona "AllBehaviors" en el nombre, lo que podría indicar un ajuste fino orientado a múltiples comportamientos conversacionales, pero no hay documentación al respecto.
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ No se dispone de comparativas de rendimiento directas, ya que no hay benchmarks 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Poon1214/Qwen35_0_8B_Companion_AllBehaviors_GGUF
+- Repositorio Hugging Face: https://huggingface.co/Poon1214/Qwen35_0_8B_Companion_AllBehaviors_GGUF
 - Repositorio del autor: https://huggingface.co/Poon1214/models
 - Página de Qwen3.5-0.8B en Qualcomm AI Hub: https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b
 - Repositorio oficial de Qwen en GitHub: https://github.com/QwenLM/Qwen

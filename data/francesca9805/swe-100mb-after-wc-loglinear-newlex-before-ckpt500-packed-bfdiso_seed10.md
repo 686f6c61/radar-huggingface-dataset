@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`swe-100mb-after-...`) | 124,77 M | no disponible | sin benchmarks publicados | no disponible | HuggingFace, repo de 9,5 GB |
+| Este modelo (`swe-100mb-after-...`) | 124,77 M | no disponible | sin benchmarks publicados | no disponible | Hugging Face, repo de 9,5 GB |
 | GPT-2 small | 124 M | 1.024 tokens | benchmarks publicos de referencia (no comparables directamente) | MIT (segun publicacion original) | ampliamente disponible |
 | GPT-2 medium | 355 M | 1.024 tokens | benchmarks publicos de referencia | MIT (segun publicacion original) | ampliamente disponible |
-| SmolLM-135M (HuggingFace) | 135 M | 2.048 tokens | benchmarks publicos en su model card | Apache 2.0 | ampliamente disponible |
+| SmolLM-135M (Hugging Face) | 135 M | 2.048 tokens | benchmarks publicos en su model card | Apache 2.0 | ampliamente disponible |
 
 Comparativa limitada a datos de parametros y contexto de conocimiento publico; no hay cifras de rendimiento de este checkpoint que permitan una comparacion cuantitativa. La licencia del modelo bajo analisis no esta declarada, lo que impide confirmar compatibilidad con uso comercial.
 
@@ -83,7 +83,7 @@ Comparativa limitada a datos de parametros y contexto de conocimiento publico; n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/francesca9805/swe-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed10
+- Hugging Face: https://huggingface.co/francesca9805/swe-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-swe-before-100mb-packed-bfdiso_seed10
 - Traza de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/y0niobnr
 - Repositorio TRL: https://github.com/huggingface/trl

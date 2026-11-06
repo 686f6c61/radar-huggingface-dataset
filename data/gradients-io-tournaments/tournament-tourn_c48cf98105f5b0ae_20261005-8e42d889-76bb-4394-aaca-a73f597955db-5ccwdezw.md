@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (PEFT) de tipo SFT sobre el modelo base Qwen/Qwen3-4B-Instruct-2507. Lo publica la organizacion `gradients-io-tournaments`, vinculada a Gradients, una plataforma de entrenamiento descentralizado de IA asociada a torneos de la Subnet 56 de Bittensor. El identificador del repositorio incluye la marca temporal 20261005, lo que indica que se trata de un artefacto generado como participante de un torneo concreto y no de un modelo con ciclo de publicacion estable.
 
-El modelo resuelve la tarea de ajuste fino conversacional sobre una base de 4.000 millones de parametros, con pipeline declarado de generacion de texto y etiquetas de `lora`, `sft`, `trl` y `transformers`. El repositorio ocupa 2,1 GB y esta construido con PEFT 0.18.1. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card es la plantilla por defecto de HuggingFace sin ninguna seccion completada.
+El modelo resuelve la tarea de ajuste fino conversacional sobre una base de 4.000 millones de parametros, con pipeline declarado de generacion de texto y etiquetas de `lora`, `sft`, `trl` y `transformers`. El repositorio ocupa 2,1 GB y esta construido con PEFT 0.18.1. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card es la plantilla por defecto de Hugging Face sin ninguna seccion completada.
 
 La relevancia practica es limitada pero informativa: sirve como ejemplo de artefacto de torneo descentralizado y como caso de estudio de publicacion automatica de adaptadores. No es un modelo recomendable para produccion sin una evaluacion previa, dado que no se documentan datos de entrenamiento, hiperparametros, evaluacion, licencia ni idiomas soportados.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Qwen3-4B-Instruct-2507) | No disponible | LoRA / SFT | No disponible | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | 4.000 millones | Denso, instruct | Segun documentacion oficial del modelo base | Segun documentacion oficial del modelo base | HuggingFace |
-| Llama 3.2 3B Instruct | 3.000 millones | Denso, instruct | No disponible en esta busqueda | Licencia comunitaria Llama | HuggingFace |
-| Gemma 3 4B IT | 4.000 millones | Denso, instruct | No disponible en esta busqueda | Terminos de uso de Gemma | HuggingFace |
+| Este adaptador (sobre Qwen3-4B-Instruct-2507) | No disponible | LoRA / SFT | No disponible | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | 4.000 millones | Denso, instruct | Segun documentacion oficial del modelo base | Segun documentacion oficial del modelo base | Hugging Face |
+| Llama 3.2 3B Instruct | 3.000 millones | Denso, instruct | No disponible en esta busqueda | Licencia comunitaria Llama | Hugging Face |
+| Gemma 3 4B IT | 4.000 millones | Denso, instruct | No disponible en esta busqueda | Terminos de uso de Gemma | Hugging Face |
 
 No hay datos de rendimiento comparado para el adaptador ni evaluaciones publicadas, por lo que la comparativa se limita a parametros y regimen de licencia. Las filas de modelos alternativos se incluyen unicamente como referencia de categoria y sus datos deben verificarse en sus repositorios oficiales.
 
@@ -93,9 +93,9 @@ No hay datos de rendimiento comparado para el adaptador ni evaluaciones publicad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_c48cf98105f5b0ae_20261005-8e42d889-76bb-4394-aaca-a73f597955db-5CcwdezW
+- Repositorio Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_c48cf98105f5b0ae_20261005-8e42d889-76bb-4394-aaca-a73f597955db-5CcwdezW
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
-- Organizacion en HuggingFace: https://huggingface.co/gradients-io-tournaments
+- Organizacion en Hugging Face: https://huggingface.co/gradients-io-tournaments
 - Pagina de torneos de Gradients: https://www.gradients.io/app/research/tournament
 - Plataforma Gradients: https://www.gradients.io/app
 - Referencia de emisiones citada en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

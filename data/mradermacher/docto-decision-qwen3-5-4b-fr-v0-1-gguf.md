@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Ficha HuggingFace de la version GGUF: https://huggingface.co/mradermacher/docto-decision-qwen3.5-4b-fr-v0.1-GGUF
+- Ficha Hugging Face de la version GGUF: https://huggingface.co/mradermacher/docto-decision-qwen3.5-4b-fr-v0.1-GGUF
 - Modelo base original: https://huggingface.co/bofenghuang/docto-decision-qwen3.5-4b-fr-v0.1
 - Dataset de entrenamiento: https://huggingface.co/datasets/bofenghuang/docto-decision-data-fr-v0.1
 - Pagina de conveniencia de mradermacher para este modelo: https://hf.tst.eu/model#docto-decision-qwen3.5-4b-fr-v0.1-GGUF

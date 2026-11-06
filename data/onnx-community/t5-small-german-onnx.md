@@ -92,7 +92,7 @@ La principal diferencia con el modelo original es el formato de pesos y la posib
 
 ## Enlaces
 
-- [HuggingFace - onnx-community/t5-small-german-ONNX](https://huggingface.co/onnx-community/t5-small-german-ONNX)
+- [Hugging Face - onnx-community/t5-small-german-ONNX](https://huggingface.co/onnx-community/t5-small-german-ONNX)
 - [Modelo base - Shahm/t5-small-german](https://huggingface.co/Shahm/t5-small-german)
 - [T5-small original - google-t5/t5-small](https://huggingface.co/google-t5/t5-small)
 - [Repositorio onnxt5 (referencia de implementación ONNX)](https://github.com/abelriboulot/onnxt5)

@@ -101,7 +101,7 @@ Si la comparación se limita a lo aportado en esta búsqueda, la conclusión es 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Tricit/Olmo-3-1125-32B-stage1-step656000-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Tricit/Olmo-3-1125-32B-stage1-step656000-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/from-our-page/Olmo-3-1125-32B-stage1-step656000
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo

@@ -71,9 +71,9 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adapter (LoRA) | No disponible (base: 8B) | No disponible (base: 128k) | No disponible | HuggingFace |
-| unsloth/Meta-Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | HuggingFace |
-| Meta-Llama-3.1-8B-Instruct (original) | 8B | 128k | Llama 3.1 Community License | HuggingFace |
+| Este adapter (LoRA) | No disponible (base: 8B) | No disponible (base: 128k) | No disponible | Hugging Face |
+| unsloth/Meta-Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | Hugging Face |
+| Meta-Llama-3.1-8B-Instruct (original) | 8B | 128k | Llama 3.1 Community License | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-61dc8f92-6d07-476c-ba14-cadf2fcdbc3c-5D7iEJm5
+- Repositorio en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-61dc8f92-6d07-476c-ba14-cadf2fcdbc3c-5D7iEJm5
 - Web de Gradients (Bittensor Subnet 56): https://www.gradients.io/app/research/tournament
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Paper de referencia sobre estimación de emisiones (citado en la model card): https://arxiv.org/abs/1910.09700

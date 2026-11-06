@@ -76,7 +76,7 @@ No hay un modelo directamente comparable, ya que Boiling Intelligence es un sist
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ThermoFluidFoundation/boiling-intelligence
+- Hugging Face: https://huggingface.co/ThermoFluidFoundation/boiling-intelligence
 - Revisión de IA en transferencia de calor por ebullición (ScienceDirect): https://www.sciencedirect.com/org/science/article/pii/S1555256X26000330
 - Journal AI Thermal Fluids: https://www.sciencedirect.com/journal/ai-thermal-fluids
 - Bubbleformer (arXiv): https://arxiv.org/abs/2507.21244v1

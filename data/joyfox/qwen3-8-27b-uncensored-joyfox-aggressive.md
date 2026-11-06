@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de la misma 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joyfox/Qwen3.8-27B-Uncensored-JoyFox-Aggressive
+- Hugging Face: https://huggingface.co/joyfox/Qwen3.8-27B-Uncensored-JoyFox-Aggressive
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - README en chino: https://huggingface.co/joyfox/Qwen3.8-27B-Uncensored-JoyFox-Aggressive/blob/main/README_ZH.md
 - Repositorio de llama.cpp (mencionado en la model card, sin URL directa): se recomienda usar el commit `885c5bbe8e04` o posterior.

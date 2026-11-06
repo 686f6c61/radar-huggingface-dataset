@@ -77,7 +77,7 @@ No se dispone de información suficiente para comparar directamente con otros mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/malekoo/Qwen3.8-27B-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/malekoo/Qwen3.8-27B-MLX-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog de Qwen (anuncio de Qwen3.8): https://qwen.ai/blog?id=qwen3.8
 - mlx-lm (herramienta de conversión e inferencia): https://github.com/ml-explore/mlx-lm

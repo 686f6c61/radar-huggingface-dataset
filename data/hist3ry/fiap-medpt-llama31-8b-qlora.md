@@ -58,8 +58,8 @@ No se han publicado comparativas con modelos similares en la información dispon
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FIAP MedPT Llama 3.1 8B QLoRA | 8B (base) + LoRA | 128k | llama3.1 | Adaptador en HuggingFace |
-| Meta-Llama-3.1-8B-Instruct | 8B | 128k | llama3.1 | Modelo base en HuggingFace |
+| FIAP MedPT Llama 3.1 8B QLoRA | 8B (base) + LoRA | 128k | llama3.1 | Adaptador en Hugging Face |
+| Meta-Llama-3.1-8B-Instruct | 8B | 128k | llama3.1 | Modelo base en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -72,7 +72,7 @@ No se han publicado comparativas con modelos similares en la información dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hist3ry/fiap-medpt-llama31-8b-qlora
+- Modelo en Hugging Face: https://huggingface.co/Hist3ry/fiap-medpt-llama31-8b-qlora
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Meta-Llama-3.1-8B: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Repositorio de ejemplo de fine-tuning con QLoRA: https://github.com/matteo-stat/transformers-llm-llama3.1-fine-tuning-qlora

@@ -82,7 +82,7 @@ No se dispone de datos publicos de otros repositorios MFV comparables en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/asherreis/mfv-circle-onert-num-elements-wrap-poc
+- Repositorio en Hugging Face: https://huggingface.co/asherreis/mfv-circle-onert-num-elements-wrap-poc
 - Programa huntr MFV: no disponible en la informacion proporcionada
 - Samsung ONE (On-device Neural Engine): no disponible en la informacion proporcionada
 - Reporte de vulnerabilidad: no disponible en la informacion proporcionada

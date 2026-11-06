@@ -83,13 +83,13 @@ No se ha identificado ningún modelo comparable publicado en la información dis
 - El modelo está fijado a batch 1 y 256×256 píxeles; no es un upscaler temporal general ni una API de inpainting enmascarado.
 - La variante AMD en INT8 no corre más rápido que la FP16 en la máquina probada, aunque es un 22 % más pequeña.
 - Las variantes AMD alteran la precisión deliberadamente y no coinciden exactamente con la referencia. La calibración INT8 se hizo con imágenes de paisaje y piedra; las imágenes de tierra y retrato no se usaron en la calibración.
-- La licencia del modelo en HuggingFace figura como "no disponible"; no se especifican condiciones de uso comercial ni de redistribución.
+- La licencia del modelo en Hugging Face figura como "no disponible"; no se especifican condiciones de uso comercial ni de redistribución.
 - El setup AMD está ajustado a un stack concreto de ROCm/Linux y no es un instalador de drivers. El rendimiento con CUDA y DirectML no ha sido medido.
-- El proyecto tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere un uso limitado o muy reciente.
+- El proyecto tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere un uso limitado o muy reciente.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/taowen/dlss5-as-inpainting
+- Página del modelo en Hugging Face: https://huggingface.co/taowen/dlss5-as-inpainting
 - Repositorio en GitHub: https://github.com/taowen/dlss5-as-inpainting
 - Guía de AMD (dentro del repo): https://github.com/taowen/dlss5-as-inpainting/tree/master/docs
 - Documento de validación ONNX (dentro del repo): https://github.com/taowen/dlss5-as-inpainting/blob/master/docs/DLSS5_ONNX_VALIDATION.md

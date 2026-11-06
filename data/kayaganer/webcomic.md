@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kayaganer/Webcomic es un repositorio de modelo publicado en HuggingFace por el usuario kayaganer. En el momento de la consulta no incluye model card con contenido tecnico, no declara pipeline de inferencia, no especifica idiomas soportados ni arquitectura, y acumula 0 descargas y 0 likes. El unico metadato disponible ademas del identificador es la etiqueta de licencia: llama3.3.
+kayaganer/Webcomic es un repositorio de modelo publicado en Hugging Face por el usuario kayaganer. En el momento de la consulta no incluye model card con contenido tecnico, no declara pipeline de inferencia, no especifica idiomas soportados ni arquitectura, y acumula 0 descargas y 0 likes. El unico metadato disponible ademas del identificador es la etiqueta de licencia: llama3.3.
 
 Esa etiqueta de licencia apunta a que el modelo deriva de la familia Llama 3.3 de Meta, cuya unica variante publicada bajo esa licencia es Llama 3.3 70B Instruct. Se trata, por tanto, de una hipotesis razonable pero no confirmada por el autor: el repositorio no indica modelo base, tamano, contexto ni proceso de entrenamiento. El nombre "Webcomic" sugiere un ajuste fino orientado a generacion de contenido de comics o narrativa visual, pero tampoco hay documentacion que lo respalde.
 
@@ -76,8 +76,8 @@ No se han identificado alternativas especificas de generacion de webcomics en la
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kayaganer/Webcomic | no disponible | no disponible | Llama 3.3 Community License | Repositorio HuggingFace, 0 descargas, sin model card |
-| Llama 3.3 70B Instruct (referencia hipotetica de base) | 70.000 millones | 128.000 tokens | Llama 3.3 Community License | Pesos publicos en HuggingFace |
+| kayaganer/Webcomic | no disponible | no disponible | Llama 3.3 Community License | Repositorio Hugging Face, 0 descargas, sin model card |
+| Llama 3.3 70B Instruct (referencia hipotetica de base) | 70.000 millones | 128.000 tokens | Llama 3.3 Community License | Pesos publicos en Hugging Face |
 | Alternativas especificas de generacion de webcomics | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,5 +95,5 @@ No se han identificado alternativas especificas de generacion de webcomics en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kayaganer/Webcomic
+- Hugging Face: https://huggingface.co/kayaganer/Webcomic
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

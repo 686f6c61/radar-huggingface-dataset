@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Verto Arabic ASR es un modelo de reconocimiento automático del habla (ASR) especializado en árabe egipcio y en habla con alternancia de código árabe-inglés, publicado por el usuario yayaiu6 en HuggingFace. No se trata de un modelo entrenado desde cero: es una conversión a ONNX INT8 del modelo Metro-ASR-Small (mohammedaly22), empaquetada junto con el preprocesado de audio y el decodificador necesarios para ejecutarse íntegramente en el navegador. El autor aporta la cuantización y la integración web, y mantiene la licencia MIT y la atribución original.
+Verto Arabic ASR es un modelo de reconocimiento automático del habla (ASR) especializado en árabe egipcio y en habla con alternancia de código árabe-inglés, publicado por el usuario yayaiu6 en Hugging Face. No se trata de un modelo entrenado desde cero: es una conversión a ONNX INT8 del modelo Metro-ASR-Small (mohammedaly22), empaquetada junto con el preprocesado de audio y el decodificador necesarios para ejecutarse íntegramente en el navegador. El autor aporta la cuantización y la integración web, y mantiene la licencia MIT y la atribución original.
 
 La arquitectura subyacente es un Conformer con cabeza CTC y decodificación greedy, sin KenLM ni marcas de tiempo. El artefacto ONNX ocupa 69,46 MB y el paquete completo con tokenizador y assets de audio llega a 69,93 MB (MB decimales), lo que lo sitúa en la franja de modelos pequeños aptos para inferencia en CPU mediante WebAssembly, con WebGPU opcional y fallback a CPU.
 
@@ -95,11 +95,11 @@ La información suministrada solo permite comparar con el modelo de origen, del 
 - Sesgos: al desconocerse la composición del dataset del modelo base, no se pueden evaluar sesgos de género, acento, edad o clase social en las transcripciones.
 - El `tokenizer.json` incluido es la tabla de piezas de la aplicación, no el formato de Hugging Face Tokenizers, y el modelo no es un pipeline drop-in de Transformers.js; la integración requiere el cliente propio del repositorio.
 - Licencia MIT: permite uso comercial y modificación, pero exige conservar el aviso de copyright y la atribución original, tal como se preserva en el fichero `LICENSE` del repositorio.
-- Los resultados de la búsqueda web realizada no contenían documentación técnica ni referencias relevantes al modelo; toda la información procede de la model card y de los metadatos de HuggingFace.
+- Los resultados de la búsqueda web realizada no contenían documentación técnica ni referencias relevantes al modelo; toda la información procede de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yayaiu6/Verto-Arabic-ASR
+- Modelo en Hugging Face: https://huggingface.co/yayaiu6/Verto-Arabic-ASR
 - Demo: https://verto-arabic-asr.yahya-mahroof.site/
 - Código y despliegue: https://github.com/yayaiu6/Verto-Arabic-ASR
 - Modelo base: https://huggingface.co/mohammedaly22/Metro-ASR-Small

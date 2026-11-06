@@ -186,7 +186,7 @@ No se dispone de datos que permitan comparar este bundle con alternativas de otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OsaurusAI/GLM-5.3-Flash-JANGH2
+- Modelo en Hugging Face: https://huggingface.co/OsaurusAI/GLM-5.3-Flash-JANGH2
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Sitio del runtime: https://osaurus.ai
 - Release anterior citada como reemplazada: https://huggingface.co/JANGQ-AI/GLM-5.3-Flash-JANG

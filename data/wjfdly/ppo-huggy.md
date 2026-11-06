@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`wjfdly/ppo-Huggy` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno Huggy de la libreria Unity ML-Agents. Lo publica el usuario wjfdly en HuggingFace Hub y su unico proposito es controlar a Huggy, el perro virtual que debe aprender a recoger un palo y devolverlo, una tarea de control continuo con recompensa dispersa y observaciones vectoriales.
+`wjfdly/ppo-Huggy` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno Huggy de la libreria Unity ML-Agents. Lo publica el usuario wjfdly en Hugging Face Hub y su unico proposito es controlar a Huggy, el perro virtual que debe aprender a recoger un palo y devolverlo, una tarea de control continuo con recompensa dispersa y observaciones vectoriales.
 
 No se trata de un modelo de lenguaje ni de un modelo generativo multimodal: es una politica neuronal de tamano reducido que mapea observaciones del entorno a acciones. El repositorio ocupa 0,2 GB e incluye los artefactos tipicos de ML-Agents (ficheros `.nn` y `.onnx`, ademas de checkpoints de entrenamiento). La model card no aporta informacion sobre numero de parametros, licencia, idiomas ni hiperparametros del entrenamiento.
 
-Su relevancia es practica y acotada: sirve como ejemplo reproducible de un pipeline completo de ML-Agents (entrenamiento, exportacion a ONNX e inferencia en navegador mediante el visor de HuggingFace), y como punto de partida para experimentar con PPO en entornos de Unity. No esta pensado para tareas de NLP, codigo ni razonamiento simbolico.
+Su relevancia es practica y acotada: sirve como ejemplo reproducible de un pipeline completo de ML-Agents (entrenamiento, exportacion a ONNX e inferencia en navegador mediante el visor de Hugging Face), y como punto de partida para experimentar con PPO en entornos de Unity. No esta pensado para tareas de NLP, codigo ni razonamiento simbolico.
 
 ## Especificaciones tecnicas
 
@@ -37,8 +37,8 @@ Tampoco se documentan la composicion del dataset (en aprendizaje por refuerzo no
 ## Capacidades
 
 - Control de un agente virtual en el entorno Huggy de Unity ML-Agents: navegacion hacia el palo y retorno con el objeto recogido.
-- Inferencia en dos formatos: fichero `.nn` para el motor de inferencia de Unity durante el entrenamiento o el juego, y `.onnx` para despliegue en Unity Inference Engine, ONNX Runtime o en el visor web de HuggingFace.
-- Ejecucion interactiva en navegador a traves del reproductor de HuggingFace (seleccionando el fichero `.nn` o `.onnx` y pulsando en ver al agente jugar).
+- Inferencia en dos formatos: fichero `.nn` para el motor de inferencia de Unity durante el entrenamiento o el juego, y `.onnx` para despliegue en Unity Inference Engine, ONNX Runtime o en el visor web de Hugging Face.
+- Ejecucion interactiva en navegador a traves del reproductor de Hugging Face (seleccionando el fichero `.nn` o `.onnx` y pulsando en ver al agente jugar).
 - Reanudacion del entrenamiento desde el checkpoint publicado, si el usuario dispone del fichero de configuracion correspondiente.
 - No soporta tool calling ni function calling.
 - No soporta razonamiento multi-paso en lenguaje natural ni planificacion simbolica.
@@ -47,7 +47,7 @@ Tampoco se documentan la composicion del dataset (en aprendizaje por refuerzo no
 
 ## Casos de uso
 
-- Reproduccion de tutoriales de ML-Agents: el agente sirve como resultado de referencia para los cursos de aprendizaje por refuerzo profundo de HuggingFace, que usan Huggy para ensenar a entrenar y publicar un agente en el Hub.
+- Reproduccion de tutoriales de ML-Agents: el agente sirve como resultado de referencia para los cursos de aprendizaje por refuerzo profundo de Hugging Face, que usan Huggy para ensenar a entrenar y publicar un agente en el Hub.
 - Linea base de PPO en entornos de control continuo: util para comparar curvas de recompensa frente a variantes propias (SAC, PPO con recompensas shaping, PPO con curriculum) antes de invertir tiempo de entrenamiento.
 - Prueba de pipelines de exportacion e inferencia ONNX: permite validar de extremo a extremo el flujo `mlagents-learn` -> `.onnx` -> Unity Inference Engine o ONNX Runtime en una aplicacion propia.
 - Demostracion interactiva en navegador: al estar publicado en el Hub y en formato ONNX, puede integrarse en una pagina web de demostracion para mostrar un agente jugando sin necesidad de backend GPU.
@@ -64,16 +64,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para inferencia: no disponible en terminos numericos. Dado el tamano del repositorio (0,2 GB, que incluye checkpoints y artefactos de entrenamiento) y que se trata de una politica densa de ML-Agents, la inferencia es viable en CPU sin GPU dedicada.
 - GPU recomendadas: no aplica para inferencia; para reentrenamiento se recomienda cualquier GPU con soporte CUDA (por ejemplo, RTX 3060 o superior) si se desea acelerar la simulacion con multiples entornos, aunque ML-Agents tambien permite entrenar solo con CPU a menor velocidad.
 - Compatibilidad con GPU de consumo: si, la inferencia cabe en cualquier GPU de consumo e incluso prescinde de ella.
-- Opciones de despliegue: Unity ML-Agents (fichero `.nn`), Unity Inference Engine y ONNX Runtime (fichero `.onnx`), y el reproductor web de HuggingFace. No aplica vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje.
+- Opciones de despliegue: Unity ML-Agents (fichero `.nn`), Unity Inference Engine y ONNX Runtime (fichero `.onnx`), y el reproductor web de Hugging Face. No aplica vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje.
 - Latencia y throughput: no disponibles. Al ser un agente por paso de simulacion, el coste dominante suele ser la fisica del entorno en Unity y no la inferencia de la red.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| wjfdly/ppo-Huggy | Agente RL (PPO) | Huggy (ML-Agents) | no disponible | no aplica | no disponible | Hub de HuggingFace |
-| Otros agentes PPO para Huggy publicados por la comunidad | Agente RL (PPO) | Huggy (ML-Agents) | no disponible | no aplica | no disponible | Hub de HuggingFace |
-| Agentes SAC para Huggy | Agente RL (SAC) | Huggy (ML-Agents) | no disponible | no aplica | no disponible | Hub de HuggingFace |
+| wjfdly/ppo-Huggy | Agente RL (PPO) | Huggy (ML-Agents) | no disponible | no aplica | no disponible | Hub de Hugging Face |
+| Otros agentes PPO para Huggy publicados por la comunidad | Agente RL (PPO) | Huggy (ML-Agents) | no disponible | no aplica | no disponible | Hub de Hugging Face |
+| Agentes SAC para Huggy | Agente RL (SAC) | Huggy (ML-Agents) | no disponible | no aplica | no disponible | Hub de Hugging Face |
 
 No se dispone de datos verificables de rendimiento, parametros ni licencia de las alternativas, por lo que no es posible establecer una comparacion cuantitativa. La unica diferencia confirmada es el algoritmo declarado (PPO frente a SAC) y el entorno compartido.
 
@@ -90,9 +90,9 @@ No se dispone de datos verificables de rendimiento, parametros ni licencia de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wjfdly/ppo-Huggy
+- Modelo en Hugging Face: https://huggingface.co/wjfdly/ppo-Huggy
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Documentacion de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Tutorial corto (Huggy en el navegador): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo de ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Visor de agentes de Unity en HuggingFace: https://huggingface.co/unity
+- Visor de agentes de Unity en Hugging Face: https://huggingface.co/unity

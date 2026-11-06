@@ -4,7 +4,7 @@
 
 `stanfordasl/diet-traj-olmo2-medium-dolma-seed1` es un checkpoint de preentrenamiento desde cero de la arquitectura OLMo2 en su variante densa de ~305M de parámetros, publicado por el grupo Stanford ASL dentro del proyecto DIET de análisis en el espacio de pesos (*weight-space*). No es un modelo conversacional ni un modelo afinado: es una de las ejecuciones (*runs*) de una colección cuyo único propósito es servir de material de estudio para analizar trayectorias de entrenamiento, es decir, la evolución de los pesos a lo largo de los *checkpoints* de un mismo preentrenamiento.
 
-El modelo se entrena sobre `emozilla/dolma-v1_7-3B`, un espejo en HuggingFace de Dolma v1.7 muestreado proporcionalmente entre sus componentes y consumido en streaming (sin pre-empaquetado), con un presupuesto declarado de 2.000 millones de tokens, AdamW con lr=3e-5 y precisión bf16 sobre GPU H100. La colección sigue el mismo espíritu que la serie `jjalora/diet-traj-pythia-410m-*`, pero trasladada a la arquitectura OLMo2 y a datos Dolma; entre las distintas ejecuciones solo cambia la semilla aleatoria, lo que permite estimar la varianza introducida por la inicialización y el orden de los datos.
+El modelo se entrena sobre `emozilla/dolma-v1_7-3B`, un espejo en Hugging Face de Dolma v1.7 muestreado proporcionalmente entre sus componentes y consumido en streaming (sin pre-empaquetado), con un presupuesto declarado de 2.000 millones de tokens, AdamW con lr=3e-5 y precisión bf16 sobre GPU H100. La colección sigue el mismo espíritu que la serie `jjalora/diet-traj-pythia-410m-*`, pero trasladada a la arquitectura OLMo2 y a datos Dolma; entre las distintas ejecuciones solo cambia la semilla aleatoria, lo que permite estimar la varianza introducida por la inicialización y el orden de los datos.
 
 Su relevancia es metodológica, no de producto: con 16 capas, hidden size 768, 12 cabezas de atención (sin GQA: 12 cabezas KV) y 2048 tokens de contexto, ofrece un banco de pruebas barato para investigar coalescencia de checkpoints, interpolación de pesos, *linear mode connectivity*, detección de fases de entrenamiento o extracción de representaciones internas, sin los costes de un modelo grande. Cualquiera que lo despliegue esperando un asistente se encontrará con un modelo base en inglés, sin ajuste por instrucciones ni alineamiento.
 
@@ -83,7 +83,7 @@ Los datos de contexto y licencia de los modelos alternativos provienen de su doc
 | diet-traj-olmo2-medium-dolma-seed1 (este) | ~305M | 2048 | Apache 2.0 | Modelo base de investigación, trayectoria de preentrenamiento multi-checkpoint | HF, pesos bf16, ~32 ramas `stepN` |
 | Pythia-410M (EleutherAI) | 410M | 2048 | Apache 2.0 | Modelo base con 154 checkpoints públicos, propósito similar de análisis de trayectorias | HF, transformers |
 | OLMo-1B (AllenAI) | ~1.200M | 2048 | Apache 2.0 | Modelo base con datos y receta completamente abiertos | HF, transformers |
-| SmolLM2-360M (HuggingFace) | 360M | 8192 | Apache 2.0 | Modelo base pequeño con contexto mayor y variante instruct disponible | HF, transformers, GGUF, llama.cpp |
+| SmolLM2-360M (Hugging Face) | 360M | 8192 | Apache 2.0 | Modelo base pequeño con contexto mayor y variante instruct disponible | HF, transformers, GGUF, llama.cpp |
 
 Frente a Pythia-410M, la diferencia relevante no es de tamaño sino de ecosistema: DIET ofrece trayectorias sobre arquitectura OLMo2 y corpus Dolma, con control explícito de semilla, mientras que Pythia ofrece un número mucho mayor de checkpoints y una base de comparación más estudiada. Frente a SmolLM2-360M u OLMo-1B, este modelo pierde en contexto (2048 frente a 8192) y en disponibilidad de formato cuantizado, y no compite en calidad de modelo base por su presupuesto de entrenamiento declarado de 2.000M de tokens.
 
@@ -103,7 +103,7 @@ Frente a Pythia-410M, la diferencia relevante no es de tamaño sino de ecosistem
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed1
+- Repositorio del modelo en Hugging Face: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed1
 - Dataset de entrenamiento (espejo HF-native de Dolma v1.7): https://huggingface.co/datasets/emozilla/dolma-v1_7-3B
 - Repositorio del proyecto DIET (código, `configs/model/olmo2_medium_dense.yaml`, `src/run_distillation.py`): jjalora/diet-lm (referenciado en la model card; no se ha proporcionado URL directa)
 - Colección de trayectorias precedente sobre Pythia: jjalora/diet-traj-pythia-410m-* (referenciada en la model card; no se ha proporcionado URL directa)

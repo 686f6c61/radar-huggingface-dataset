@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/danyalmalik/Qwen3-8B-ONNX-WebGPU
+- Repositorio Hugging Face: https://huggingface.co/danyalmalik/Qwen3-8B-ONNX-WebGPU
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Cabezal EAGLE-3: https://huggingface.co/AngelSlim/Qwen3-8B_eagle3

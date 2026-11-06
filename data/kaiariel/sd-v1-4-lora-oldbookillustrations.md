@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Base | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kaiariel/sd-v1-4-lora-oldbookillustrations | SD v1.4 | LoRA de estilo | no disponible (adaptador r=16) | 77 tokens (CLIP del base) | creativeml-openrail-m | HuggingFace |
-| kaiariel/sd-v1-4-oldbookillustrations-fusionado | SD v1.4 | Modelo fusionado | ~860 M (U-Net) | 77 tokens | creativeml-openrail-m | HuggingFace |
+| kaiariel/sd-v1-4-lora-oldbookillustrations | SD v1.4 | LoRA de estilo | no disponible (adaptador r=16) | 77 tokens (CLIP del base) | creativeml-openrail-m | Hugging Face |
+| kaiariel/sd-v1-4-oldbookillustrations-fusionado | SD v1.4 | Modelo fusionado | ~860 M (U-Net) | 77 tokens | creativeml-openrail-m | Hugging Face |
 | LoRA r=4 del mismo autor | SD v1.4 | LoRA de estilo | no disponible | 77 tokens | creativeml-openrail-m | Reportado en model card |
-| SD v1.4 base | — | Difusión texto-a-imagen | ~860 M (U-Net) | 77 tokens | creativeml-openrail-m | HuggingFace |
+| SD v1.4 base | — | Difusión texto-a-imagen | ~860 M (U-Net) | 77 tokens | creativeml-openrail-m | Hugging Face |
 
 Los tres primeros comparten base y licencia; las diferencias se limitan al rango del adaptador y a la fusión de pesos. No se dispone de comparación con LoRA de estilo de terceros en la información proporcionada.
 
@@ -91,7 +91,7 @@ Los tres primeros comparten base y licencia; las diferencias se limitan al rango
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/kaiariel/sd-v1-4-lora-oldbookillustrations
+- Hugging Face del adaptador: https://huggingface.co/kaiariel/sd-v1-4-lora-oldbookillustrations
 - Versión fusionada: https://huggingface.co/kaiariel/sd-v1-4-oldbookillustrations-fusionado
 - Dataset de entrenamiento: https://huggingface.co/datasets/gigant/oldbookillustrations
 - Modelo base: https://huggingface.co/CompVis/stable-diffusion-v1-4

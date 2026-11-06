@@ -110,6 +110,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MonikaDvorackova/llm-response-quality-classifier
+- Modelo en Hugging Face: https://huggingface.co/MonikaDvorackova/llm-response-quality-classifier
 - Dataset de entrenamiento: https://huggingface.co/datasets/MonikaDvorackova/llm-response-evaluation-examples
 - Repositorio de código (referenciado en la model card, contiene `train.py` y `model.joblib`): no se proporciona URL directa en la información disponible.

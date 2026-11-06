@@ -23,7 +23,7 @@ Es relevante precisamente por el riesgo de confusión: el repositorio aparece et
 
 ## Arquitectura y entrenamiento
 
-No hay arquitectura ni entrenamiento que describir. La model card no declara transformer, MoE, SSM ni ninguna topología híbrida; los tags `transformer` y `safetensors` presentes en el repositorio de HuggingFace no se corresponden con ningún artefacto descrito en el README. No se documentan tokens de entrenamiento, composición de dataset, fases de RLHF, DPO, SFT ni ninguna innovación técnica (decodificación especulativa, atención lineal, etc.).
+No hay arquitectura ni entrenamiento que describir. La model card no declara transformer, MoE, SSM ni ninguna topología híbrida; los tags `transformer` y `safetensors` presentes en el repositorio de Hugging Face no se corresponden con ningún artefacto descrito en el README. No se documentan tokens de entrenamiento, composición de dataset, fases de RLHF, DPO, SFT ni ninguna innovación técnica (decodificación especulativa, atención lineal, etc.).
 
 El único artefacto con contenido técnico es el recuento de 16.576 parámetros reportado por safetensors, una magnitud que no permite construir un modelo funcional ni siquiera del orden de los modelos más pequeños publicados (cientos de millones de parámetros). Es coherente con un tensor auxiliar, un archivo de metadatos o un residuo generado por la herramienta de publicación, no con un checkpoint de lenguaje. El autor indica además que, si en el futuro se añaden resultados, deberán incluir versiones de dataset, comandos, semillas, hardware y logs en crudo.
 
@@ -91,10 +91,10 @@ La comparación pone de manifiesto que la diferencia relevante no es de rendimie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dosharma87/embodied-ai
+- Repositorio en Hugging Face: https://huggingface.co/dosharma87/embodied-ai
 - Archivo principal de la nota: `reading.md` (incluido en el repositorio)
 - Documentación del repositorio: `README.md` (incluido en el repositorio)
-- Organización Embodied AI en HuggingFace: https://huggingface.co/embodied-ai/models
+- Organización Embodied AI en Hugging Face: https://huggingface.co/embodied-ai/models
 - Embodied AI: Meaning, Working, Types, Applications & Challenges (EDUCBA): https://www.educba.com/embodied-ai/
 - What is embodied AI? How it powers autonomous systems (TechTarget): https://www.techtarget.com/searchenterpriseai/definition/embodied-AI
 - Artificial Intelligence (AI) Algorithm and Models for Embodied Agents, Robots and Drones (ResearchGate): https://www.researchgate.net/publication/388146155_Artificial_Intelligence_AI_Algorithm_and_Models_for_Embodied_Agents_Robots_and_Drones

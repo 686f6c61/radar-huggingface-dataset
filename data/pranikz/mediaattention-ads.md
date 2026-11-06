@@ -20,14 +20,14 @@ Su relevancia actual es doble: por un lado, supera de forma clara a las alternat
 | Licencia | Apache-2.0 |
 | Formato de pesos | `ads-v1.pth` (state dict de PyTorch) + `unisal_config.json` con los argumentos del constructor |
 | Framework | PyTorch (`library_name: pytorch`); código del modelo vendorizado en `mediaattention/unisal/` |
-| Pipeline en HuggingFace | image-to-image |
+| Pipeline en Hugging Face | image-to-image |
 | Entrada | Imagen RGB redimensionada y normalizada con estadísticas de ImageNet; rama fuente SALICON con `static=True` |
 | Salida | Densidad de fijación en escala logarítmica, al tamaño de la entrada (mapa de calor que suma 1) |
 | Modelo base | pranikz/MediaAttention (pesos SALICON de UNISAL) |
 | Dataset de ajuste fino | UEyes (Jiang et al., CHI 2023, CC BY 4.0) |
 | Velocidad de inferencia | 0,04 s por imagen en Apple M3 Pro (MPS/CPU) |
 | Tamaño del repositorio | 0,0 GB (metadatos; los pesos se descargan con el paquete `mediaattention`) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -127,7 +127,7 @@ La comparación relevante es de eficiencia por unidad de rendimiento: MediaAtten
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pranikz/MediaAttention-Ads
+- Modelo en Hugging Face: https://huggingface.co/pranikz/MediaAttention-Ads
 - Modelo base (UNISAL SALICON): https://huggingface.co/pranikz/MediaAttention
 - Repositorio GitHub del toolkit: https://github.com/pranikz/MediaAttention
 - Script de ajuste fino: https://github.com/pranikz/MediaAttention/blob/main/benchmarks/finetune_unisal.py

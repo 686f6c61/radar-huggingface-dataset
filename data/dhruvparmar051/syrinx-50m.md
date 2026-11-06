@@ -93,7 +93,7 @@ El autor declara explicitamente que no realiza comparaciones con otros modelos p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DhruvParmar051/syrinx-50m
+- Modelo en Hugging Face: https://huggingface.co/DhruvParmar051/syrinx-50m
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Licencia ODC-By v1.0: https://opendatacommons.org/licenses/by/1-0/
 - Terminos de uso de Common Crawl: no disponible como enlace directo en la informacion proporcionada

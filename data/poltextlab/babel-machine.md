@@ -2,7 +2,7 @@
 
 ## Resumen
 
-poltextlab/babel-machine es un repositorio de modelo alojado en HuggingFace por la organizacion o usuario poltextlab. La informacion publica disponible en el momento de la consulta es minima: el repositorio ocupa 0,0 GB, no declara pipeline (tarea) asociada, no declara idiomas soportados, registra 0 descargas y 0 likes, y esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargar sus archivos. La unica licencia declarada es Apache 2.0.
+poltextlab/babel-machine es un repositorio de modelo alojado en Hugging Face por la organizacion o usuario poltextlab. La informacion publica disponible en el momento de la consulta es minima: el repositorio ocupa 0,0 GB, no declara pipeline (tarea) asociada, no declara idiomas soportados, registra 0 descargas y 0 likes, y esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargar sus archivos. La unica licencia declarada es Apache 2.0.
 
 No es posible confirmar en esta ficha la arquitectura, el numero de parametros, la longitud de contexto, el tipo de pesos ni el proceso de entrenamiento del modelo, porque ninguno de esos datos aparece en la informacion proporcionada. El nombre "babel" podria sugerir un enfoque multilingue o de traduccion automatica, pero se trata de una inferencia no verificada y no debe tomarse como un hecho sobre el modelo.
 
@@ -20,7 +20,7 @@ Por el momento, la relevancia practica para desarrolladores e investigadores es 
 | Licencia | Apache 2.0 |
 | Formato de pesos | no disponible |
 | Tarea declarada (pipeline) | no disponible |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 0,0 GB |
 | Fecha de creacion registrada | 2026-09-28 |
 | Ultima actualizacion registrada | 2026-09-28 |
@@ -29,7 +29,7 @@ Por el momento, la relevancia practica para desarrolladores e investigadores es 
 
 No disponible. La informacion proporcionada no incluye ninguna descripcion de la arquitectura (transformer, mezcla de expertos, modelos de espacio de estados, hibrida u otra), ni del numero de tokens de entrenamiento, ni de la composicion del dataset, ni de si se aplicaron tecnicas de ajuste como RLHF, DPO o instruccion supervisada.
 
-Tampoco se documentan innovaciones tecnicas asociadas (atencion lineal, decodificacion especulativa, atencion con ventana deslizante, destilacion, etc.). El repositorio ocupa 0,0 GB, lo que sugiere que, en el momento de la consulta, no contiene pesos publicados accesibles; conviene verificar directamente en HuggingFace si los archivos se anaden mas adelante o si el acceso restringido oculta el contenido.
+Tampoco se documentan innovaciones tecnicas asociadas (atencion lineal, decodificacion especulativa, atencion con ventana deslizante, destilacion, etc.). El repositorio ocupa 0,0 GB, lo que sugiere que, en el momento de la consulta, no contiene pesos publicados accesibles; conviene verificar directamente en Hugging Face si los archivos se anaden mas adelante o si el acceso restringido oculta el contenido.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Compatibilidad con GPU de consumo (RTX 4090, RTX 3090, etc.): no disponible.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, transformers): no disponible.
 - Latencia y throughput estimados: no disponible.
-- Nota operativa: el repositorio esta sujeto a acceso restringido, por lo que la descarga requiere autenticacion y aceptacion previa de condiciones en HuggingFace, lo que anade un paso de gestion de acceso en cualquier pipeline automatizado.
+- Nota operativa: el repositorio esta sujeto a acceso restringido, por lo que la descarga requiere autenticacion y aceptacion previa de condiciones en Hugging Face, lo que anade un paso de gestion de acceso en cualquier pipeline automatizado.
 
 ## Comparativa con modelos similares
 
@@ -80,7 +80,7 @@ No disponible. No se dispone de parametros, contexto, rendimiento ni licencia de
 
 - Ausencia total de documentacion tecnica publica: no se puede verificar arquitectura, parametros, contexto ni datos de entrenamiento.
 - Repositorio de 0,0 GB: no hay evidencia de pesos publicados accesibles en el momento de la consulta.
-- Acceso restringido: la descarga requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos automatizados o reproducibles.
+- Acceso restringido: la descarga requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos automatizados o reproducibles.
 - Riesgo de alucinacion: no evaluable, al no existir benchmarks ni evaluaciones publicadas.
 - Sesgos conocidos: no disponibles.
 - Limitaciones de contexto o idioma: no disponibles.
@@ -90,5 +90,5 @@ No disponible. No se dispone de parametros, contexto, rendimiento ni licencia de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/poltextlab/babel-machine
+- Hugging Face: https://huggingface.co/poltextlab/babel-machine
 - No se han proporcionado en la busqueda web otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) para este modelo.

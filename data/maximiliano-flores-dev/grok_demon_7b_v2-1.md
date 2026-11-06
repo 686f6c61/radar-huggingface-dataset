@@ -97,7 +97,7 @@ Diferencias clave: frente a los modelos completos de la comparativa, la v2.1 no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maximiliano-Flores-Dev/grok_demon_7b_v2.1
+- Modelo en Hugging Face: https://huggingface.co/Maximiliano-Flores-Dev/grok_demon_7b_v2.1
 - Modelo base (v1): https://huggingface.co/Maximiliano-Flores-Dev/grok_demon_7b
 - Perfil del autor: https://huggingface.co/Maximiliano-Flores-Dev
 - Unsloth (framework de entrenamiento citado): https://github.com/unslothai/unsloth

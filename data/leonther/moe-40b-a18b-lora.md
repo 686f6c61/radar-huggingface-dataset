@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`moe-40b-a18b-lora` es un conjunto de adaptadores LoRA junto con los pesos del router entrenados para un modelo de mezcla de expertos (MoE) experimental de 39,98B de parámetros totales y 17,96B activos. Lo publica el usuario Leonther en HuggingFace y no incluye los pesos del modelo base: el repositorio solo contiene las partes entrenadas (adaptadores y router), mientras que el *student* completo se reconstruye de forma determinista a partir del modelo público `Qwen/Qwen3.6-35B-A3B` mediante el código incluido (`arch_builder.py`). Existe además un checkpoint listo para ejecutar en `Leonther/moe-40b-a18b-q4`.
+`moe-40b-a18b-lora` es un conjunto de adaptadores LoRA junto con los pesos del router entrenados para un modelo de mezcla de expertos (MoE) experimental de 39,98B de parámetros totales y 17,96B activos. Lo publica el usuario Leonther en Hugging Face y no incluye los pesos del modelo base: el repositorio solo contiene las partes entrenadas (adaptadores y router), mientras que el *student* completo se reconstruye de forma determinista a partir del modelo público `Qwen/Qwen3.6-35B-A3B` mediante el código incluido (`arch_builder.py`). Existe además un checkpoint listo para ejecutar en `Leonther/moe-40b-a18b-q4`.
 
 El proyecto parte de la base fusionada de Qwen3.6-35B-A3B (256 expertos fusionados, top-8) y la "reconstruye" separando los tensores de expertos en módulos individuales y expandiéndolos de 256 a 288 expertos, con un router ampliado. El entrenamiento se hizo con QLoRA en NF4 (rank 2, alpha 4) sobre proyecciones de expertos y atención, más los pesos del router en fp32 sin cuantizar. La ventana de contexto, los idiomas soportados y la licencia no están indicados en la información disponible.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de licencia de otros modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Leonther/moe-40b-a18b-lora
+- Modelo en Hugging Face: https://huggingface.co/Leonther/moe-40b-a18b-lora
 - Checkpoint Q4 listo para ejecutar: https://huggingface.co/Leonther/moe-40b-a18b-q4
 - Dataset de SFT: https://huggingface.co/Leonther/moe-40b-a18b-dataset
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B

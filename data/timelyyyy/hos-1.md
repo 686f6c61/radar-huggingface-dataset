@@ -1,11 +1,11 @@
 # Timelyyyy/HOS-1
 
 ## Resumen
-HOS-1 es un modelo de generacion de texto de 2.614.341.888 parametros derivado de google/gemma-2-2b mediante un merge con ArliAI/Gemma-2-2B-ArliAI-RPMax-v1.1 y un posterior ajuste QLoRA. Lo desarrolla el usuario Timelyyyy y se publica bajo licencia Gemma en HuggingFace. El autor lo describe explicitamente como un "joke model" entrenado con mensajes reales, sin capacidades de razonamiento ni de generacion de codigo, y orientado a uso personal.
+HOS-1 es un modelo de generacion de texto de 2.614.341.888 parametros derivado de google/gemma-2-2b mediante un merge con ArliAI/Gemma-2-2B-ArliAI-RPMax-v1.1 y un posterior ajuste QLoRA. Lo desarrolla el usuario Timelyyyy y se publica bajo licencia Gemma en Hugging Face. El autor lo describe explicitamente como un "joke model" entrenado con mensajes reales, sin capacidades de razonamiento ni de generacion de codigo, y orientado a uso personal.
 
 El modelo no resuelve un problema tecnico concreto: es un experimento de ajuste conversacional sobre una base Gemma 2 de 2B, con 103 pasos de entrenamiento (menos de la epoch inicialmente prevista). Su relevancia es limitada y de caracter divulgativo o de entretenimiento; resulta util como ejemplo de pipeline QLoRA + merge sobre Gemma 2 y como caso de estudio de los riesgos de publicar ajustes conversacionales sin filtrado.
 
-La ficha se basa unicamente en la informacion disponible en HuggingFace y en la model card; no hay benchmarks, paper ni documentacion tecnica adicional publicada por el autor.
+La ficha se basa unicamente en la informacion disponible en Hugging Face y en la model card; no hay benchmarks, paper ni documentacion tecnica adicional publicada por el autor.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ La comparativa con Qwen2.5 se incluye como referencia de categoria; los datos de
 - Sin benchmarks ni evaluaciones independientes: no hay base para comparar su rendimiento de forma objetiva.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Timelyyyy/HOS-1
+- Hugging Face: https://huggingface.co/Timelyyyy/HOS-1
 - Modelo base: https://huggingface.co/google/gemma-2-2b
 - Modelo base del ajuste: https://huggingface.co/ArliAI/Gemma-2-2B-ArliAI-RPMax-v1.1
 - Captura de configuracion de inferencia citada en la model card: https://file.garden/aSVi7A-81Gu_AES6/Screenshot%202026-10-31%20110647.png

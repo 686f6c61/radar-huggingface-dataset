@@ -44,7 +44,7 @@ El entrenamiento se realizó sobre datos de metilación de sangre completa de in
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El paper original (Ying et al., 2024) reporta métricas de correlación con edad cronológica y capacidad para predecir mortalidad, pero estos datos no se incluyen en la model card de HuggingFace. Se recomienda consultar la publicación para obtener cifras concretas.
+No se han publicado resultados de benchmarks en la información disponible. El paper original (Ying et al., 2024) reporta métricas de correlación con edad cronológica y capacidad para predecir mortalidad, pero estos datos no se incluyen en la model card de Hugging Face. Se recomienda consultar la publicación para obtener cifras concretas.
 
 ## Requisitos de hardware
 
@@ -79,6 +79,6 @@ La principal diferencia es que yingadaptage incorpora ponderaciones causales exp
 
 ## Enlaces
 
-- [HuggingFace: pyaging/yingadaptage](https://huggingface.co/pyaging/yingadaptage)
+- [Hugging Face: pyaging/yingadaptage](https://huggingface.co/pyaging/yingadaptage)
 - [Publicación original: Causality-enriched epigenetic age uncouples damage and adaptation (Nature Aging, 2024)](https://doi.org/10.1038/s43587-023-00557-0)
 - [Documentación de pyaging (Clock Catalogue)](https://pyaging.readthedocs.io)

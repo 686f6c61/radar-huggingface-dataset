@@ -21,7 +21,7 @@ Su relevancia práctica es que permite ejecutar un modelo de 8B con capacidades 
 | Formato de pesos | GGUF (`Qwen3-8B-Q4_K_M.gguf`, ~4,7 GB); el modelo base se distribuye en safetensors |
 | Librería declarada | gguf |
 | Tamaño del repositorio | 5,0 GB |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento

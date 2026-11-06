@@ -4,7 +4,7 @@
 
 Loopy es un modelo de generación de vídeo a partir de audio, originalmente propuesto en el paper "Loopy: Taming Audio-Driven Portrait Avatar with Long-Term Motion Dependency" (arXiv:2409.02634). El modelo original es un modelo de difusión de vídeo condicionado únicamente por audio, diseñado para generar retratos parlantes realistas con movimientos naturales de labios, cabeza y expresiones faciales sincronizados con el audio de entrada. Su innovación principal reside en un módulo temporal inter e intra-clip que captura dependencias de movimiento a largo plazo, y un módulo audio-to-latents que mejora la correlación entre el audio y el movimiento del retrato.
 
-El checkpoint publicado en HuggingFace bajo el identificador `htdong/Loopy` es una adaptación sobre el modelo base Wan-AI/Wan2.2-T2V-A14B, un modelo de text-to-video de 14 mil millones de parámetros. El repositorio tiene un tamaño de solo 0.1 GB, lo que sugiere que se trata de un adaptador o un conjunto de pesos parciales (posiblemente un LoRA o un módulo específico) en lugar del modelo completo. Las etiquetas indican soporte para generación de vídeo en bucle (looping) y formatos RGB/RGBA. La licencia es Apache 2.0, lo que permite uso comercial y modificación. Sin embargo, la información disponible es muy limitada: no hay descargas, ni likes, ni documentación detallada en la model card, por lo que esta ficha se basa principalmente en el paper original y en los metadatos del repositorio.
+El checkpoint publicado en Hugging Face bajo el identificador `htdong/Loopy` es una adaptación sobre el modelo base Wan-AI/Wan2.2-T2V-A14B, un modelo de text-to-video de 14 mil millones de parámetros. El repositorio tiene un tamaño de solo 0.1 GB, lo que sugiere que se trata de un adaptador o un conjunto de pesos parciales (posiblemente un LoRA o un módulo específico) en lugar del modelo completo. Las etiquetas indican soporte para generación de vídeo en bucle (looping) y formatos RGB/RGBA. La licencia es Apache 2.0, lo que permite uso comercial y modificación. Sin embargo, la información disponible es muy limitada: no hay descargas, ni likes, ni documentación detallada en la model card, por lo que esta ficha se basa principalmente en el paper original y en los metadatos del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El checkpoint publicado en HuggingFace bajo el identificador `htdong/Loopy` es u
 
 El modelo original Loopy, descrito en el paper, es un modelo de difusion de video condicionado por audio de extremo a extremo. Su arquitectura incluye dos componentes clave: un modulo temporal inter e intra-clip que procesa secuencias de video divididas en clips, capturando dependencias de movimiento tanto dentro de cada clip como entre clips consecutivos; y un modulo audio-to-latents que transforma las caracteristicas de audio en representaciones latentes que se inyectan en el proceso de difusion. Esto permite al modelo aprender patrones de movimiento natural a partir de datos de video con audio, sin necesidad de anotaciones manuales de sincronizacion labial o expresiones.
 
-El checkpoint publicado en HuggingFace esta basado en Wan-AI/Wan2.2-T2V-A14B, un modelo de text-to-video de 14B parametros desarrollado por Wan-AI. Dado el tamano reducido del repositorio (0.1 GB), es probable que se trate de un adaptador (por ejemplo, un LoRA) que ajusta el modelo base para la tarea especifica de generacion de video en bucle con audio. No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens o el proceso de alineacion (RLHF/DPO) utilizado para esta adaptacion.
+El checkpoint publicado en Hugging Face esta basado en Wan-AI/Wan2.2-T2V-A14B, un modelo de text-to-video de 14B parametros desarrollado por Wan-AI. Dado el tamano reducido del repositorio (0.1 GB), es probable que se trate de un adaptador (por ejemplo, un LoRA) que ajusta el modelo base para la tarea especifica de generacion de video en bucle con audio. No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens o el proceso de alineacion (RLHF/DPO) utilizado para esta adaptacion.
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ El checkpoint publicado en HuggingFace esta basado en Wan-AI/Wan2.2-T2V-A14B, un
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El paper original de Loopy reporta metricas cualitativas y comparativas con otros metodos de generacion de retratos parlantes, pero no se dispone de esos datos en la documentacion del repositorio de HuggingFace. No se pueden proporcionar numeros concretos sin riesgo de inventar informacion.
+No se han publicado resultados de benchmarks en la informacion disponible. El paper original de Loopy reporta metricas cualitativas y comparativas con otros metodos de generacion de retratos parlantes, pero no se dispone de esos datos en la documentacion del repositorio de Hugging Face. No se pueden proporcionar numeros concretos sin riesgo de inventar informacion.
 
 ## Requisitos de hardware
 
@@ -57,12 +57,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa fiable. El modelo original Loopy se compara en el paper con otros metodos de retratos parlantes como SadTalker, Wav2Lip o DreamPose, pero el checkpoint de HuggingFace es una adaptacion especifica sobre Wan2.2, y no hay datos de rendimiento publicados para esta variante. Por tanto, la comparativa se limita a indicar que el modelo base Wan2.2-T2V-A14B es un modelo de text-to-video de 14B parametros, mientras que el adaptador Loopy anade capacidades de condicionamiento por audio y generacion en bucle.
+No se dispone de informacion suficiente para establecer una comparativa fiable. El modelo original Loopy se compara en el paper con otros metodos de retratos parlantes como SadTalker, Wav2Lip o DreamPose, pero el checkpoint de Hugging Face es una adaptacion especifica sobre Wan2.2, y no hay datos de rendimiento publicados para esta variante. Por tanto, la comparativa se limita a indicar que el modelo base Wan2.2-T2V-A14B es un modelo de text-to-video de 14B parametros, mientras que el adaptador Loopy anade capacidades de condicionamiento por audio y generacion en bucle.
 
 ## Limitaciones y advertencias
 
 - Informacion muy limitada: la model card no proporciona detalles sobre el entrenamiento, los datos utilizados ni las capacidades exactas del adaptador. Se recomienda contactar al autor o probar el modelo antes de usarlo en produccion.
-- Posible confusion con el paper original: el checkpoint en HuggingFace puede no replicar completamente el comportamiento del Loopy original, ya que es una adaptacion sobre Wan2.2 y no el modelo completo descrito en el articulo.
+- Posible confusion con el paper original: el checkpoint en Hugging Face puede no replicar completamente el comportamiento del Loopy original, ya que es una adaptacion sobre Wan2.2 y no el modelo completo descrito en el articulo.
 - Riesgo de alucinaciones visuales: como cualquier modelo de generacion de video, puede producir artefactos o movimientos poco naturales, especialmente con audios complejos o de baja calidad.
 - Sesgos: no se han documentado sesgos especificos, pero el modelo base Wan2.2 puede heredar sesgos de sus datos de entrenamiento.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero se debe verificar que el modelo base Wan2.2 tambien tenga una licencia compatible (Wan-AI publica bajo Apache 2.0, segun su repositorio).
@@ -70,8 +70,8 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/htdong/Loopy
+- Repositorio Hugging Face: https://huggingface.co/htdong/Loopy
 - Paper original (arXiv): https://arxiv.org/abs/2409.02634
 - Pagina del proyecto Loopy: https://loopyavatar.github.io/
-- Perfil del autor en HuggingFace: https://huggingface.co/htdong
+- Perfil del autor en Hugging Face: https://huggingface.co/htdong
 - Modelo base Wan2.2-T2V-A14B: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B

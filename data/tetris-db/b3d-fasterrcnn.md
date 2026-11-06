@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Clase(s) | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| b3d-fasterrcnn | Faster R-CNN X101-32x8d-FPN | 1 (`vehicle`) | 4K nativa | other | HuggingFace + GitHub |
+| b3d-fasterrcnn | Faster R-CNN X101-32x8d-FPN | 1 (`vehicle`) | 4K nativa | other | Hugging Face + GitHub |
 | Faster R-CNN COCO (original) | Faster R-CNN | 80 clases COCO | variable | licencia detectron2 | Disponible en detectron2 |
 | YOLOv8/YOLOv11 | Detector de una etapa | configurable | variable | AGPL-3.0 (Ultralytics) | Disponible |
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tetris-db/b3d-fasterrcnn
+- Hugging Face: https://huggingface.co/tetris-db/b3d-fasterrcnn
 - Repositorio GitHub (codigo de entrenamiento, deteccion y tracking): https://github.com/tetris-db/b3d-fasterrcnn
 - Dataset B3D (Berkeley DeepDrive Drone): no disponible en la informacion proporcionada
 - Paper de Tetris: no disponible en la informacion proporcionada

@@ -85,7 +85,7 @@ La principal diferencia con el modelo base es el tamano reducido (217 MiB vs 449
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mbehr90/msmarco-MiniLM-L12-en-de-v1-nvfp4
+- Modelo en Hugging Face: https://huggingface.co/mbehr90/msmarco-MiniLM-L12-en-de-v1-nvfp4
 - Modelo base: https://huggingface.co/cross-encoder/msmarco-MiniLM-L12-en-de-v1
 - Modelo similar monolingue: https://huggingface.co/cross-encoder/ms-marco-MiniLM-L12-v2
 - Descripcion del modelo base en AIBase: https://model.aibase.com/models/details/1915694101556781058

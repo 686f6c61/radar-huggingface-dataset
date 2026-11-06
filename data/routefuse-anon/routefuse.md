@@ -1,7 +1,7 @@
 # routefuse-anon/RouteFuse
 
 ## Resumen
-RouteFuse es un modelo publicado en HuggingFace bajo el identificador `routefuse-anon/RouteFuse` por la cuenta anónima `routefuse-anon`. La model card asociada no contiene nada más que la declaración de licencia (`license: other`), de modo que se desconocen la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados, el proceso de entrenamiento y los datos utilizados. El repositorio ocupa 0,9 GB y, en el momento de la consulta, acumula 0 descargas y 0 "likes".
+RouteFuse es un modelo publicado en Hugging Face bajo el identificador `routefuse-anon/RouteFuse` por la cuenta anónima `routefuse-anon`. La model card asociada no contiene nada más que la declaración de licencia (`license: other`), de modo que se desconocen la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados, el proceso de entrenamiento y los datos utilizados. El repositorio ocupa 0,9 GB y, en el momento de la consulta, acumula 0 descargas y 0 "likes".
 
 El repositorio fue creado el 24 de septiembre de 2026 y actualizado apenas cinco minutos después, lo que indica una subida reciente, sin documentar y sin historial de versiones público. La cuenta que lo aloja es anónima, por lo que tampoco es posible atribuir el modelo a un equipo, una organización o una línea de investigación conocida.
 
@@ -64,7 +64,7 @@ No disponible. Al desconocerse el numero de parametros, la arquitectura y la tar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RouteFuse | no disponible | no disponible | other (sin concretar) | HuggingFace, sin documentacion |
+| RouteFuse | no disponible | no disponible | other (sin concretar) | Hugging Face, sin documentacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -79,6 +79,6 @@ No disponible. Al desconocerse el numero de parametros, la arquitectura y la tar
 - No apto para produccion en su estado actual: faltan garantias minimas de trazabilidad, licencia, rendimiento y seguridad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/routefuse-anon/RouteFuse
-- Perfil del autor en HuggingFace: https://huggingface.co/routefuse-anon
+- Modelo en Hugging Face: https://huggingface.co/routefuse-anon/RouteFuse
+- Perfil del autor en Hugging Face: https://huggingface.co/routefuse-anon
 - Paper, blog, repositorio de codigo o demo: no disponible (no se han encontrado enlaces adicionales en la informacion proporcionada).

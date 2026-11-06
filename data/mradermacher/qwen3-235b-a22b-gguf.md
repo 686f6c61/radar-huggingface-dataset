@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales / activos | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-235B-A22B (este repo, GGUF de mradermacher) | 235B / 22B | no disponible | Apache 2.0 | GGUF | HuggingFace (mradermacher) |
-| Qwen3-235B-A22B original | 235B / 22B | no disponible | Apache 2.0 | safetensors | HuggingFace (Qwen) |
-| Qwen3-235B-A22B-abliterated (i1-GGUF, mradermacher) | 235B / 22B | no disponible | Apache 2.0 | GGUF | HuggingFace (mradermacher) |
+| Qwen3-235B-A22B (este repo, GGUF de mradermacher) | 235B / 22B | no disponible | Apache 2.0 | GGUF | Hugging Face (mradermacher) |
+| Qwen3-235B-A22B original | 235B / 22B | no disponible | Apache 2.0 | safetensors | Hugging Face (Qwen) |
+| Qwen3-235B-A22B-abliterated (i1-GGUF, mradermacher) | 235B / 22B | no disponible | Apache 2.0 | GGUF | Hugging Face (mradermacher) |
 
 Los datos de rendimiento comparativo no estan disponibles en la informacion proporcionada. La principal diferencia entre el modelo original y esta ficha es el formato (safetensors frente a GGUF) y la disponibilidad de cuantizaciones; la version abliterated constituye una variante sin censura con el mismo tamano.
 

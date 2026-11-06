@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AIxFuneStudio/Five_Stars_Illustrious_15.0` es un checkpoint publicado por el usuario AIxFuneStudio en HuggingFace, accesible únicamente mediante acceso restringido (gated). La informacion publica disponible se limita a los metadatos del repositorio: no hay pipeline declarado, no se especifican idiomas, la licencia figura como `other` y el repositorio ocupa 7,7 GB. En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 likes, por lo que no existe validacion alguna por parte de la comunidad.
+`AIxFuneStudio/Five_Stars_Illustrious_15.0` es un checkpoint publicado por el usuario AIxFuneStudio en Hugging Face, accesible únicamente mediante acceso restringido (gated). La informacion publica disponible se limita a los metadatos del repositorio: no hay pipeline declarado, no se especifican idiomas, la licencia figura como `other` y el repositorio ocupa 7,7 GB. En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 likes, por lo que no existe validacion alguna por parte de la comunidad.
 
 El nombre del checkpoint y su huella en disco permiten una hipotesis tecnica razonable pero no confirmada: la designacion "Illustrious" remite a la familia Illustrious XL, una linea de modelos de difusion latente derivada de SDXL orientada a ilustracion y anime; 7,7 GB es un tamano coherente con un checkpoint de esa familia en precision fp16 (UNet, text encoders y VAE) o con un repositorio de componentes separados. El sufijo "15.0" sugiere una decimoquinta iteracion de una linea de fine-tuning propia. Nada de esto esta documentado en la informacion proporcionada y debe verificarse antes de cualquier uso en produccion.
 
@@ -18,7 +18,7 @@ La relevancia actual del modelo es, por tanto, limitada y condicional: se trata 
 | Longitud de contexto | no disponible. En un modelo de difusion el equivalente seria la longitud maxima de prompt aceptada por el tokenizer, que no esta documentada |
 | Tipos de cuantizacion | no disponible. El autor no publica variantes cuantizadas ni documenta precision de los pesos |
 | Idiomas soportados | no disponible. Si se confirma la hipotesis de modelo de imagen, el idioma afecta solo al texto de condicionamiento |
-| Licencia | other (repositorio gated: requiere aceptar condiciones en HuggingFace) |
+| Licencia | other (repositorio gated: requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | no disponible. El tamano de 7,7 GB es compatible con un unico archivo en fp16 o con un repositorio de componentes separados; sin confirmar |
 | Tamano del repositorio | 7,7 GB |
 | Acceso | restringido (gated) |
@@ -98,5 +98,5 @@ No disponible: comparacion de benchmarks, calidad medida o tiempos de inferencia
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIxFuneStudio/Five_Stars_Illustrious_15.0
+- Hugging Face: https://huggingface.co/AIxFuneStudio/Five_Stars_Illustrious_15.0
 - No se han encontrado otros enlaces (paper, blog, repositorio de codigo o demo) en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hinyeyeye/afk` es un modelo publicado en HuggingFace por el usuario `hinyeyeye` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia en el frontmatter, sin información sobre arquitectura, tamaño, datos de entrenamiento o capacidades. El repositorio no registra descargas ni "likes" en el momento de la consulta.
+`hinyeyeye/afk` es un modelo publicado en Hugging Face por el usuario `hinyeyeye` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia en el frontmatter, sin información sobre arquitectura, tamaño, datos de entrenamiento o capacidades. El repositorio no registra descargas ni "likes" en el momento de la consulta.
 
 No es posible determinar qué problema resuelve, qué arquitectura emplea ni cuál es su longitud de contexto a partir de la información disponible. La ficha se limita a documentar los metadatos verificables del repositorio y a señalar explícitamente los datos que faltan, de modo que quien evalúe el modelo sepa que no puede extraer conclusiones técnicas del mismo.
 
@@ -66,7 +66,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hinyeyeye/afk | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| hinyeyeye/afk | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,5 +81,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hinyeyeye/afk
+- Repositorio en Hugging Face: https://huggingface.co/hinyeyeye/afk
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jacob-2-E4B-prod es un modelo de generación de texto publicado por el usuario jacob-ml en HuggingFace. No se trata de un entrenamiento desde cero: es el resultado de fusionar (merge) un adaptador LoRA sobre el modelo `google/gemma-4-E4B-it` y cuantizar después el resultado a FP8 para su despliegue con vLLM. El adaptador de origen es `jacob-ml/Jacob-2-E4B`, con r=16 y alpha=16 aplicado sobre las proyecciones de atención y MLP del modelo de lenguaje.
+Jacob-2-E4B-prod es un modelo de generación de texto publicado por el usuario jacob-ml en Hugging Face. No se trata de un entrenamiento desde cero: es el resultado de fusionar (merge) un adaptador LoRA sobre el modelo `google/gemma-4-E4B-it` y cuantizar después el resultado a FP8 para su despliegue con vLLM. El adaptador de origen es `jacob-ml/Jacob-2-E4B`, con r=16 y alpha=16 aplicado sobre las proyecciones de atención y MLP del modelo de lenguaje.
 
 El modelo pesa 7.941.100.874 parámetros totales según los tensores en safetensors, lo que lo sitúa en la franja de 8.000 millones. El repositorio ocupa 19,5 GB, un tamaño notablemente superior al de un checkpoint FP8 puro, lo que sugiere que incluye artefactos adicionales además de los pesos cuantizados.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jacob-ml/Jacob-2-E4B-prod | 7,94 mil millones | no disponible | FP8 (compressed-tensors) | apache-2.0 (declarada) | HuggingFace, 80 descargas |
-| google/gemma-4-E4B-it (base) | no disponible en la información | no disponible | bf16 original | no disponible en la información | HuggingFace |
-| jacob-ml/Jacob-2-E4B (adaptador LoRA) | no disponible | no disponible | bf16 | no disponible en la información | HuggingFace |
+| jacob-ml/Jacob-2-E4B-prod | 7,94 mil millones | no disponible | FP8 (compressed-tensors) | apache-2.0 (declarada) | Hugging Face, 80 descargas |
+| google/gemma-4-E4B-it (base) | no disponible en la información | no disponible | bf16 original | no disponible en la información | Hugging Face |
+| jacob-ml/Jacob-2-E4B (adaptador LoRA) | no disponible | no disponible | bf16 | no disponible en la información | Hugging Face |
 | Otras alternativas de ~8B comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de benchmarks ni de especificaciones de contexto para establecer una comparación cuantitativa con modelos de terceros de la misma categoría.
@@ -94,7 +94,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones de conte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jacob-ml/Jacob-2-E4B-prod
+- Modelo en Hugging Face: https://huggingface.co/jacob-ml/Jacob-2-E4B-prod
 - Adaptador LoRA de origen: https://huggingface.co/jacob-ml/Jacob-2-E4B
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - llmcompressor (herramienta de cuantización citada): https://github.com/vllm-project/llm-compressor

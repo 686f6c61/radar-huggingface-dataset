@@ -76,7 +76,7 @@ Sin embargo, no se puede afirmar que este repositorio coincida con RVC oficial n
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/lowo/RVC-weights
+- Repositorio de Hugging Face: https://huggingface.co/lowo/RVC-weights
 - Repositorio alternativo (sin contenido): https://huggingface.co/lowo/RVC_weights
 - Proyecto RVC oficial (referencia): https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI
 - Listado de modelos open-weight (referencia general): https://github.com/xigh/open-weight-models

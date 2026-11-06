@@ -70,7 +70,7 @@ No hay modelos comparables en el mismo repositorio ni en la información proporc
 
 ## Enlaces
 
-- [HuggingFace: FELIXFF92/swin-t-matching-slim71](https://huggingface.co/FELIXFF92/swin-t-matching-slim71)
+- [Hugging Face: FELIXFF92/swin-t-matching-slim71](https://huggingface.co/FELIXFF92/swin-t-matching-slim71)
 - [Documentación de Swin Transformer en Hugging Face](https://huggingface.co/docs/transformers/model_doc/swin)
 - [Repositorio oficial de Microsoft Swin Transformer](https://github.com/microsoft/Swin-Transformer)
 - [Curso de visión por computador de Hugging Face: Swin Transformer](https://huggingface.co/learn/computer-vision-course/en/unit3/vision-transformers/swin-transformer)

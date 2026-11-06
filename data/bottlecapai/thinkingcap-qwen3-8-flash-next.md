@@ -18,7 +18,7 @@ La relevancia práctica del modelo está en el coste por consulta: en tareas de 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio solo publica safetensors; no se documentan GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-license-1.0 (identificador `other` en HuggingFace) |
+| Licencia | qwen-community-license-1.0 (identificador `other` en Hugging Face) |
 | Formato de pesos | safetensors (libreria transformers) |
 | Modalidades de entrada | texto e imagen (pipeline `image-text-to-text`) |
 | Tipo de ajuste | finetune sobre Qwen/Qwen3.8-Flash-Next (`base_model_relation: finetune`) |
@@ -40,10 +40,10 @@ La innovacion declarada es la eficiencia de tokens: el modelo aprende a producir
 - Generacion de codigo: la model card agrupa los benchmarks bajo la categoria "Math & code", aunque no se publican resultados de HumanEval, LiveCodeBench ni similares.
 - Entrada de imagen: pipeline `image-text-to-text`, por lo que acepta imagenes junto a texto (descripcion, extraccion de informacion, VQA). No se publican benchmarks de vision.
 - Uso conversacional multi-turno (tag `conversational`).
-- Compatibilidad con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad con endpoints de Hugging Face (tag `endpoints_compatible`).
 - Tool calling / function calling: no documentado en la informacion disponible.
 - Capacidades de agente y multi-step reasoning: no documentadas explicitamente; el modo de pensamiento es compatible con flujos multi-paso, pero no hay evaluacion publicada.
-- Capacidades multilingues: no disponible (HuggingFace no lista idiomas para este modelo).
+- Capacidades multilingues: no disponible (Hugging Face no lista idiomas para este modelo).
 
 ## Casos de uso
 
@@ -82,8 +82,8 @@ Estimaciones derivadas del numero de parametros y del tamano del repositorio (36
 
 | Modelo | Parametros totales | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThinkingCap-Qwen3.8-Flash-Next | ~180.000 M (MoE) | no disponible | Razonamiento eficiente en tokens (38,5 % menos) | qwen-community-license-1.0 | safetensors en HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-Flash-Next (base) | ~180.000 M (MoE) | no disponible | Modelo generalista con vision y razonamiento | qwen-community-license-1.0 | HuggingFace, publicado por Qwen |
+| ThinkingCap-Qwen3.8-Flash-Next | ~180.000 M (MoE) | no disponible | Razonamiento eficiente en tokens (38,5 % menos) | qwen-community-license-1.0 | safetensors en Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-Flash-Next (base) | ~180.000 M (MoE) | no disponible | Modelo generalista con vision y razonamiento | qwen-community-license-1.0 | Hugging Face, publicado por Qwen |
 | Otros MoE de ~180.000 M con vision y thinking mode | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion relevante y documentada es contra el modelo base: mismos parametros, misma licencia y mismo pipeline, con una diferencia de -1,0 punto de exactitud media y -38,5 % de tokens de pensamiento. No se dispone en la informacion proporcionada de especificaciones de terceros comparables (por ejemplo, familias tipo DeepSeek, Llama o Mixtral en ese rango), por lo que no se ofrece una tabla numerica adicional.
@@ -102,7 +102,7 @@ La comparacion relevante y documentada es contra el modelo base: mismos parametr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-Flash-Next
+- Hugging Face: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-Flash-Next
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Blog del autor: https://bottlecapai.com/post/thinkingcap-qwen3-8-flash-next/
 - Web del autor: https://www.bottlecapai.com/

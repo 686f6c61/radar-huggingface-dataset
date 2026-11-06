@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Los LoRAs en si son ligeros (cada uno ocupa unos cientos de MB), pero el modelo base Z-Image es un transformer de texto a imagen de gran tamano; se recomienda una GPU con al menos 16 GB de VRAM para generar a 1 MP con el modelo completo.
 - Para la variante Turbo, que requiere menos pasos, una GPU de 12 GB puede ser suficiente en configuraciones de cuantizacion ligera.
 - En GPUs consumer, una RTX 4090 (24 GB) o RTX 4080 (16 GB) son adecuadas para inferencia local. Para produccion a gran escala, se recomienda A100 o H100.
-- El despliegue se puede realizar con la libreria diffusers de HuggingFace, que soporta la carga de LoRAs mediante `pipe.load_lora_weights()`. Tambien es posible usar el pipeline de Z-Image con el adaptador cargado.
+- El despliegue se puede realizar con la libreria diffusers de Hugging Face, que soporta la carga de LoRAs mediante `pipe.load_lora_weights()`. Tambien es posible usar el pipeline de Z-Image con el adaptador cargado.
 - No se dispone de datos de latencia o throughput especificos para este conjunto de LoRAs.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ La comparativa se limita a otros repositorios de LoRAs para Z-Image, ya que no s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qujincheng/Z-Image-Lora
+- Repositorio Hugging Face: https://huggingface.co/qujincheng/Z-Image-Lora
 - Proyecto original de nphSi (indice de LoRAs): https://huggingface.co/nphSi/Z-Image-Lora
 - Indice con descarga directa y previsualizaciones: https://huggingface.co/spaces/nphSi/Lookalike-LoRA-Index
 - Foro de discusion y ayuda: https://huggingface.co/nphSi/Z-Image-Lora/discussions

@@ -78,11 +78,11 @@ La comparativa se limita a los artefactos de origen citados en la model card; no
 - Idiomas soportados no documentados; el codificador Qwen3-VL-8B es multilingue en origen, pero el paquete no declara lista de idiomas.
 - Repositorio con 25 descargas y 0 likes: poca validacion comunitaria, sin issues ni discusion documentada.
 - Es un espejo de terceros: la trazabilidad depende de los hashes de commit indicados, y el autor advierte que podria no reflejar cambios posteriores en los repositorios fuente.
-- No dispone de pipeline declarado en HuggingFace ni de model card en castellano; la documentacion original esta en turco.
+- No dispone de pipeline declarado en Hugging Face ni de model card en castellano; la documentacion original esta en turco.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/matrixportalx/Qwen-Image-2.1-Turbo-Uncensored-GGUF-npu
+- Repositorio Hugging Face: https://huggingface.co/matrixportalx/Qwen-Image-2.1-Turbo-Uncensored-GGUF-npu
 - DiT de origen (Abiray): https://huggingface.co/Abiray/Qwen-Image-2.1-Turbo-GGUF
 - Codificador y proyector de origen (AtomicChat): https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF
 - VAE de origen (Comfy-Org): https://huggingface.co/Comfy-Org/Qwen-Image-2.1

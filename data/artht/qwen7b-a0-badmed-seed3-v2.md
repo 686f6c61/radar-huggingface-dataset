@@ -80,6 +80,6 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArthT/qwen7b-a0-badmed-seed3-v2
+- Hugging Face: https://huggingface.co/ArthT/qwen7b-a0-badmed-seed3-v2
 - Repositorio del proyecto: https://github.com/lauraxijia/contingency-em
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct

@@ -96,7 +96,7 @@ Otros modelos comparables de finanzas en turco: no disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Toxotes/GEMMA3_FINANCE_V1_GGUF
+- Hugging Face: https://huggingface.co/Toxotes/GEMMA3_FINANCE_V1_GGUF
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Modelo base utilizado para el ajuste segun la model card: `unsloth/gemma-3-4b-it`
 - No se han encontrado enlaces adicionales relevantes (papers, repositorios, demos o blogs) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

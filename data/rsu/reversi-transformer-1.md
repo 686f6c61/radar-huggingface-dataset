@@ -83,6 +83,6 @@ El modelo Transformer logra un rendimiento superior al CNN con 37 veces menos pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rsu/Reversi-Transformer-1
+- Modelo en Hugging Face: https://huggingface.co/rsu/Reversi-Transformer-1
 - Repositorio GitHub (ReversiGPT): https://github.com/rsu-Suba/ReversiGPT
 - Código del modelo (transformer_TF.py): https://github.com/rsu-Suba/ReversiGPT/blob/main/AI/models/transformer_TF.py

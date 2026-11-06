@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InSight-o3-vS es un modelo de lenguaje de aproximadamente 7.600 millones de parametros, publicado originalmente por el usuario m-Just en HuggingFace y distribuido en formato GGUF por mradermacher, un conocido cuantizador de la comunidad open source. El modelo base se identifica como `m-Just/InSight-o3-vS` y esta etiquetado como conversacional, con soporte declarado unicamente para ingles. La arquitectura subyacente no se detalla en la informacion disponible, aunque el tamano de parametros (7.615.616.512) y el uso de `transformers` como libreria sugieren un transformer denso de escala 7B.
+InSight-o3-vS es un modelo de lenguaje de aproximadamente 7.600 millones de parametros, publicado originalmente por el usuario m-Just en Hugging Face y distribuido en formato GGUF por mradermacher, un conocido cuantizador de la comunidad open source. El modelo base se identifica como `m-Just/InSight-o3-vS` y esta etiquetado como conversacional, con soporte declarado unicamente para ingles. La arquitectura subyacente no se detalla en la informacion disponible, aunque el tamano de parametros (7.615.616.512) y el uso de `transformers` como libreria sugieren un transformer denso de escala 7B.
 
 El repositorio que nos ocupa no es el modelo original, sino una coleccion de cuantizaciones estaticas en formato GGUF generadas por mradermacher, con el objetivo de facilitar la inferencia en hardware de consumo y en entornos con recursos limitados. La relevancia practica de esta ficha radica en que permite ejecutar el modelo con llama.cpp y derivados (Ollama, LM Studio, etc.) en GPUs consumer, algo imposible con los pesos originales en precision completa.
 

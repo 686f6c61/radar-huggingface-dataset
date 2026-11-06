@@ -68,6 +68,6 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- Repositorio de HuggingFace (lainlives): https://huggingface.co/lainlives/sam-audio-large
-- Repositorio original de HuggingFace (facebook): https://huggingface.co/facebook/sam-audio-large
+- Repositorio de Hugging Face (lainlives): https://huggingface.co/lainlives/sam-audio-large
+- Repositorio original de Hugging Face (facebook): https://huggingface.co/facebook/sam-audio-large
 - Descripcion alternativa del modelo: https://www.aimodels.fyi/models/huggingFace/sam-audio-large-facebook

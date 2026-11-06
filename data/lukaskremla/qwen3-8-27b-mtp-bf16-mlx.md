@@ -69,6 +69,6 @@ No disponible. No se han identificado en la información proporcionada otros dra
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lukaskremla/Qwen3.8-27B-MTP-bf16-MLX
+- Repositorio Hugging Face: https://huggingface.co/lukaskremla/Qwen3.8-27B-MTP-bf16-MLX
 - Colección de cuantizaciones MLX de Qwen 3.8 27B: https://huggingface.co/collections/lukaskremla/qwen-38-27b-mlx-quants-vision-text-only-and-mtp
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BrandonHill/mixer-retrieval-lite es un repositorio de código y pesos de inicialización publicado en HuggingFace por el usuario BrandonHill, orientado a una implementación reducida de arquitectura Mixer (MLP-Mixer) aplicada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni de una release validada, sino de un punto de partida reproducible: el propio autor indica en la model card que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint con benchmarks.
+BrandonHill/mixer-retrieval-lite es un repositorio de código y pesos de inicialización publicado en Hugging Face por el usuario BrandonHill, orientado a una implementación reducida de arquitectura Mixer (MLP-Mixer) aplicada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni de una release validada, sino de un punto de partida reproducible: el propio autor indica en la model card que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint con benchmarks.
 
 El tamaño real declarado en el archivo de safetensors es de 33.088 parámetros (aproximadamente 0,033 millones), lo que lo sitúa en una escala "nano", muy por debajo de cualquier modelo utilizable en producción. La relevancia actual del repositorio es, por tanto, exclusivamente metodológica y educativa: sirve como esqueleto reproducible para experimentos de arquitectura y como referencia de configuración explícita (`config.json`, `training_args.json`), no como componente de sistemas reales. No se documentan idiomas soportados, ni longitud de contexto, ni resultados de evaluación.
 
@@ -47,7 +47,7 @@ En cuanto al entrenamiento, el repositorio no documenta ningun run completado. L
 - Razonamiento, matematicas y codigo: no documentadas.
 - Tool calling / function calling: no soportado ni documentado.
 - Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingues: no disponibles (el campo de idiomas esta vacio en la ficha de HuggingFace).
+- Capacidades multilingues: no disponibles (el campo de idiomas esta vacio en la ficha de Hugging Face).
 - Capacidades especiales (vision, audio, modo thinking): no documentadas.
 - Ejecucion como prueba de humo: el repositorio declara que el checkpoint sirve para verificar que el pipeline de carga y ejecucion funciona, y que `main.py --help` permite inspeccionar el ejemplo generado.
 
@@ -56,7 +56,7 @@ En cuanto al entrenamiento, el repositorio no documenta ningun run completado. L
 - Pruebas de humo de infraestructura de inferencia: al pesar apenas decenas de KB, el checkpoint permite validar pipelines de carga de safetensors, serializacion de configuracion y arranque de scripts de inferencia sin coste de GPU ni de memoria.
 - Investigacion en reproducibilidad de arquitecturas Mixer: el repositorio aporta `config.json` y `training_args.json` con valores explicitos, lo que permite replicar la configuracion exacta y compararla con variantes propias bajo el mismo presupuesto de tuning.
 - Experimentos de ablacion sobre componentes de arquitectura: la combinacion declarada (flash attention, fusion low rank, swish, instancenorm) puede servir como linea base para medir el efecto de sustituir cada componente en tareas de retrieval.
-- Docencia y formacion: el tamano y la simplicidad del artefacto lo hacen util para explicar como se estructura un repositorio de modelo en HuggingFace y como se separa codigo, configuracion y pesos.
+- Docencia y formacion: el tamano y la simplicidad del artefacto lo hacen util para explicar como se estructura un repositorio de modelo en Hugging Face y como se separa codigo, configuracion y pesos.
 - Evaluacion de protocolos de benchmark: el autor propone Flickr30k con tres semillas y baseline equiparable, de modo que el repositorio puede emplearse para ensayar el protocolo de evaluacion antes de invertir computo en modelos mayores.
 - Integracion en CI/CD como comprobacion de compatibilidad: incluir el checkpoint en una bateria de tests automaticos para verificar que las versiones de PyTorch y safetensors del entorno cargan correctamente el formato.
 - Base para un futuro checkpoint entrenado: cualquier resultado derivado de un entrenamiento real debe documentarse por separado, segun indica el propio autor, por lo que este repositorio puede actuar como plantilla de partida de ese proceso.
@@ -93,6 +93,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BrandonHill/mixer-retrieval-lite
+- Repositorio en Hugging Face: https://huggingface.co/BrandonHill/mixer-retrieval-lite
 - Repositorio relacionado del mismo autor (posible cuenta alternativa): https://huggingface.co/brandonhiu/retrieval
 - El resto de resultados devueltos por la busqueda web (articulos de prensa sobre un modelo de Anthropic y una denuncia falsa en Filadelfia) no guardan relacion con este modelo y se omiten por no ser relevantes.

@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Rendimiento (16 sondas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Supermuse v2 (este modelo) | ~27,85 mil millones | No disponible | 16/16 con y sin system prompt | Apache 2.0 | GGUF en HuggingFace |
+| Supermuse v2 (este modelo) | ~27,85 mil millones | No disponible | 16/16 con y sin system prompt | Apache 2.0 | GGUF en Hugging Face |
 | Muse Glimmer 30B (base) | No disponible | No disponible | 14/16 con system prompt; 13/16 sin system prompt | Muse Glimmer (Meta) | Modelo base de Meta |
 | Otros modelos comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -108,7 +108,7 @@ La unica comparativa documentada es contra el modelo base Muse Glimmer 30B, del 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0xSupermuse/Supermuse-30B-GGUF
+- Hugging Face: https://huggingface.co/0xSupermuse/Supermuse-30B-GGUF
 - Sitio web del proyecto: https://supermuse.dev
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Modelo base cuantizado para entrenamiento: `unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit`

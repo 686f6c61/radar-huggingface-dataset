@@ -95,8 +95,8 @@ Las cifras de VRAM son estimaciones derivadas del recuento de parametros (8,03 B
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (SVD-LLM keep 0.60, exactrope) | 8,03 B almacenados; fraccion retenida 0,5998 | No disponible en la ficha | Perplexity WikiText-2 23,63; ARC-C 0,3780; HellaSwag 0,5672; ASR AdvBench 0,7115 | `llama3.1` | HuggingFace, 0 descargas |
-| `meta-llama/Llama-3.1-8B-Instruct` (modelo base) | 8,03 B | 128.000 tokens declarados | No disponible en la informacion proporcionada para esta comparativa | `llama3.1` | HuggingFace, ampliamente distribuido |
+| Este checkpoint (SVD-LLM keep 0.60, exactrope) | 8,03 B almacenados; fraccion retenida 0,5998 | No disponible en la ficha | Perplexity WikiText-2 23,63; ARC-C 0,3780; HellaSwag 0,5672; ASR AdvBench 0,7115 | `llama3.1` | Hugging Face, 0 descargas |
+| `meta-llama/Llama-3.1-8B-Instruct` (modelo base) | 8,03 B | 128.000 tokens declarados | No disponible en la informacion proporcionada para esta comparativa | `llama3.1` | Hugging Face, ampliamente distribuido |
 | Otras celdas SVD-LLM del mismo autor (por ejemplo, la version sin `exactrope`) | No disponible | No disponible | No disponible | `llama3.1` | Referenciadas en la model card, sin datos publicados en la informacion disponible |
 
 No se dispone de resultados de benchmarks del modelo base ni de otras alternativas comprimidas dentro de la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable. Las unicas referencias cruzadas son las celdas hermanas del propio autor, cuyo rendimiento no se detalla.
@@ -112,11 +112,11 @@ No se dispone de resultados de benchmarks del modelo base ni de otras alternativ
 - Restricciones de licencia: se hereda la licencia comunitaria `llama3.1` de Meta, que impone condiciones de uso (incluidas clausulas de atribucion y restricciones para determinados usos y para despliegues a gran escala). No es una licencia de codigo abierto permisiva sin condiciones.
 - El parche de grouped-query attention y el RoPE exacto son modificaciones del autor sobre el codigo original de SVD-LLM, no parte del metodo publicado. Aunque el autor afirma que la aritmetica de truncamiento es identica, conviene auditar el fichero parcheado si se va a reproducir el proceso.
 - El modelo no esta pensado para produccion: cero descargas y cero likes en el momento de redactar la ficha, sin pipeline declarado ni validacion externa.
-- La fecha de creacion del repositorio que reporta HuggingFace (17 de septiembre de 2026) es posterior a la fecha de redaccion habitual de este tipo de fichas; conviene verificarla en la plataforma.
+- La fecha de creacion del repositorio que reporta Hugging Face (17 de septiembre de 2026) es posterior a la fecha de redaccion habitual de este tipo de fichas; conviene verificarla en la plataforma.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-llama3_1_8b_instruct_up_svdllm_exactrope_finetuned_keep_0p60
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-llama3_1_8b_instruct_up_svdllm_exactrope_finetuned_keep_0p60
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Codigo de SVD-LLM utilizado (commit `7538cca98880`): https://github.com/AIoT-MLSys-Lab/SVD-LLM
 - Dataset de ajuste LoRA: https://huggingface.co/datasets/yahma/alpaca-cleaned

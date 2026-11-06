@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `eric-z2/WL-context-distilroberta-fold_4` es un modelo de clasificación de tokens (token classification) publicado por el usuario eric-z2 en HuggingFace. Se distribuye con la librería `transformers`, pesos en formato `safetensors` y una arquitectura etiquetada como RoBERTa con 81.533.960 parámetros totales. El nombre del repositorio sugiere que se trata de un ajuste fino (fine-tuning) de una variante destilada de RoBERTa, entrenado sobre una partición concreta ("fold_4") de un conjunto de datos etiquetado asociado al identificador "WL-context", aunque no se aporta documentación que confirme esta interpretación.
+El modelo `eric-z2/WL-context-distilroberta-fold_4` es un modelo de clasificación de tokens (token classification) publicado por el usuario eric-z2 en Hugging Face. Se distribuye con la librería `transformers`, pesos en formato `safetensors` y una arquitectura etiquetada como RoBERTa con 81.533.960 parámetros totales. El nombre del repositorio sugiere que se trata de un ajuste fino (fine-tuning) de una variante destilada de RoBERTa, entrenado sobre una partición concreta ("fold_4") de un conjunto de datos etiquetado asociado al identificador "WL-context", aunque no se aporta documentación que confirme esta interpretación.
 
 El problema que resuelve encaja en la categoría de etiquetado a nivel de token: reconocimiento de entidades nombradas (NER), extracción de campos, etiquetado de secuencias o tareas similares de clasificación por token. Con 81,5 millones de parámetros, es un modelo pequeño y ligero, adecuado para inferencia en CPU o GPU de gama baja, con baja latencia y bajo coste de despliegue.
 
-Su relevancia actual es limitada por el momento: el repositorio acumula cero descargas y cero "likes", la model card es la plantilla automática de HuggingFace sin rellenar y no hay información sobre licencia, idiomas, datos de entrenamiento ni métricas de evaluación. Cualquier uso en producción requiere primero validar el modelo sobre datos propios, ya que no existe documentación pública que respalde su comportamiento.
+Su relevancia actual es limitada por el momento: el repositorio acumula cero descargas y cero "likes", la model card es la plantilla automática de Hugging Face sin rellenar y no hay información sobre licencia, idiomas, datos de entrenamiento ni métricas de evaluación. Cualquier uso en producción requiere primero validar el modelo sobre datos propios, ya que no existe documentación pública que respalde su comportamiento.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en int8: aproximadamente 0,08 GB para los pesos.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Una NVIDIA T4, RTX 3060, RTX 4090, A10G, L4, A100 o H100 funcionarian sin problema; el modelo esta muy por debajo de la capacidad de cualquiera de ellas.
 - GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo de los ultimos diez anos, y tambien en CPU para inferencia por lotes.
-- Opciones de despliegue: `transformers` con PyTorch, HuggingFace `text-classification`/`token-classification` pipeline, `text-embeddings-inference` no aplica, ONNX Runtime, TorchScript, y servidores genericos como FastAPI con batching. `vLLM` y `TGI` estan orientados a modelos generativos y no son la via natural para un encoder de clasificacion, aunque TGI tiene soporte limitado para algunos modelos de clasificacion. Ollama y llama.cpp estan orientados a modelos generativos en formato GGUF y no aplican a este checkpoint.
+- Opciones de despliegue: `transformers` con PyTorch, Hugging Face `text-classification`/`token-classification` pipeline, `text-embeddings-inference` no aplica, ONNX Runtime, TorchScript, y servidores genericos como FastAPI con batching. `vLLM` y `TGI` estan orientados a modelos generativos y no son la via natural para un encoder de clasificacion, aunque TGI tiene soporte limitado para algunos modelos de clasificacion. Ollama y llama.cpp estan orientados a modelos generativos en formato GGUF y no aplican a este checkpoint.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas. Por el tamano del modelo, se espera una latencia de milisegundos por secuencia corta en GPU y de decenas de milisegundos en CPU, pero es una estimacion, no un dato medido.
 
 ## Comparativa con modelos similares
@@ -76,10 +76,10 @@ No hay datos de rendimiento de este modelo, por lo que la comparacion se limita 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eric-z2/WL-context-distilroberta-fold_4 | 81,5 M | No disponible | token-classification | No disponible | HuggingFace, 0 descargas |
-| distilroberta-base | 82 M aprox. | 512 tokens | encoder base, sin cabeza de tarea | Apache 2.0 (segun su ficha publica) | HuggingFace, ampliamente usado |
-| roberta-base | 125 M aprox. | 512 tokens | encoder base, sin cabeza de tarea | MIT (segun su ficha publica) | HuggingFace, ampliamente usado |
-| bert-base-multilingual-cased | 178 M aprox. | 512 tokens | encoder base multilingue | Apache 2.0 (segun su ficha publica) | HuggingFace, ampliamente usado |
+| eric-z2/WL-context-distilroberta-fold_4 | 81,5 M | No disponible | token-classification | No disponible | Hugging Face, 0 descargas |
+| distilroberta-base | 82 M aprox. | 512 tokens | encoder base, sin cabeza de tarea | Apache 2.0 (segun su ficha publica) | Hugging Face, ampliamente usado |
+| roberta-base | 125 M aprox. | 512 tokens | encoder base, sin cabeza de tarea | MIT (segun su ficha publica) | Hugging Face, ampliamente usado |
+| bert-base-multilingual-cased | 178 M aprox. | 512 tokens | encoder base multilingue | Apache 2.0 (segun su ficha publica) | Hugging Face, ampliamente usado |
 
 La diferencia practica frente a estos modelos base es que `WL-context-distilroberta-fold_4` ya incorpora una cabeza de clasificacion de tokens ajustada, pero se desconoce sobre que etiquetas y con que calidad. Los modelos base requieren ajuste fino propio, a cambio de documentacion, licencia clara y mantenimiento conocidos.
 
@@ -99,7 +99,7 @@ La diferencia practica frente a estos modelos base es que `WL-context-distilrobe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eric-z2/WL-context-distilroberta-fold_4
+- Modelo en Hugging Face: https://huggingface.co/eric-z2/WL-context-distilroberta-fold_4
 - Paper citado en los tags (calculadora de impacto de carbono, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Documentacion de transformers para token classification: https://huggingface.co/docs/transformers/tasks/token_classification
 - Modelo base de referencia (distilroberta-base): https://huggingface.co/distilroberta-base

@@ -74,9 +74,9 @@ Resultados de adherencia a especificacion sobre 100 puzles por conjunto, con int
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yniocv/qwen3-vl-4b-odd-one-out` (este) | Adaptador sobre 4.000 M | No disponible | 82% / 68% / 51% en main/robust/unseen | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-VL-4B-Instruct (base) | 4.000 M | No disponible | 0% / 4% / 3% en main/robust/unseen | Apache 2.0 | HuggingFace |
-| Adaptador v1 (mismo autor) | Adaptador sobre 4.000 M | No disponible | 86% / 29% / 40% en main/robust/unseen | No disponible | HuggingFace |
+| `yniocv/qwen3-vl-4b-odd-one-out` (este) | Adaptador sobre 4.000 M | No disponible | 82% / 68% / 51% en main/robust/unseen | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-VL-4B-Instruct (base) | 4.000 M | No disponible | 0% / 4% / 3% en main/robust/unseen | Apache 2.0 | Hugging Face |
+| Adaptador v1 (mismo autor) | Adaptador sobre 4.000 M | No disponible | 86% / 29% / 40% en main/robust/unseen | No disponible | Hugging Face |
 
 No se dispone de informacion sobre otros adaptadores o modelos comparables en la misma tarea de puzles de poligonos. Los datos de la comparativa proceden exclusivamente del model card del autor.
 
@@ -93,7 +93,7 @@ No se dispone de informacion sobre otros adaptadores o modelos comparables en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yniocv/qwen3-vl-4b-odd-one-out
+- Modelo en Hugging Face: https://huggingface.co/yniocv/qwen3-vl-4b-odd-one-out
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/yniocv/odd-one-out-polygons
 - Codigo, evaluaciones y articulo: https://labs.gauntletai.com/chrisvo/odd-one-out-finetune
 - Video de demostracion: https://youtu.be/meHAU_aEfDE

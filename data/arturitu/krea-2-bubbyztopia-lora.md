@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arturitu/Krea-2-Bubbyztopia-LoRA
+- Hugging Face: https://huggingface.co/arturitu/Krea-2-Bubbyztopia-LoRA
 - Repositorio oficial de Krea 2: https://github.com/krea-ai/krea-2
 - Endpoint de LoRA de Krea 2 Turbo en fal.ai: https://fal.ai/models/fal-ai/krea-2/turbo/lora
 - Trainer de Krea 2 en fal.ai: https://fal.ai/models/fal-ai/krea-2-trainer

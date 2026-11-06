@@ -104,8 +104,8 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/INCModel4/NVIDIA-Nemotron-3-Nano-30B-A3B-MXFP8-CT-RTN-AutoRound
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
+- Repositorio en Hugging Face: https://huggingface.co/INCModel4/NVIDIA-Nemotron-3-Nano-30B-A3B-MXFP8-CT-RTN-AutoRound
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Checkpoint FP8 oficial de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8
 - Familia Nemotron en NVIDIA Developer: https://developer.nvidia.com/topics/ai/nemotron
 - NVIDIA NIM del modelo base (nemotron-3-nano-30b-a3b): https://build.nvidia.com/nvidia/nemotron-3-nano-30b-a3b

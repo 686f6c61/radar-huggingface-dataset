@@ -68,7 +68,7 @@ No se dispone en la información proporcionada de datos de modelos comparables (
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shiki42/q4a-putcab-sequential-dp-e698-step83405 | 270.780.366 | No aplica (cola de 8 acciones) | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
+| Shiki42/q4a-putcab-sequential-dp-e698-step83405 | 270.780.366 | No aplica (cola de 8 acciones) | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
 | Diffusion Policy (referencia de la familia) | No disponible | No disponible | No disponible | No disponible | No disponible |
 | ACT (referencia de la familia) | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Otras políticas de LeRobot | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -90,7 +90,7 @@ No se dispone en la información proporcionada de datos de modelos comparables (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiki42/q4a-putcab-sequential-dp-e698-step83405
+- Modelo en Hugging Face: https://huggingface.co/Shiki42/q4a-putcab-sequential-dp-e698-step83405
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/PutCab-Sequential-Train50-V4 (revisión `c6022cf9164b34c7244dfede8ece4d20a999ab82`)
 - LeRobot (librería y código fuente): https://github.com/huggingface/lerobot (commit citado: `8fff0fde7c79f23a93d845d1a50e985de01f8b8a`)
 - RoboTwin (entorno de simulación de la tarea PutCab): no disponible en la información proporcionada

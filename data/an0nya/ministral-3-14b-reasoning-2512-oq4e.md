@@ -81,6 +81,6 @@ No hay datos de rendimiento comparativo publicados entre estas variantes.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/an0nya/Ministral-3-14B-Reasoning-2512-oQ4e
+- Repositorio Hugging Face: https://huggingface.co/an0nya/Ministral-3-14B-Reasoning-2512-oQ4e
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512
 - GGUF de unsloth (fuente de la imatrix): https://huggingface.co/unsloth/Ministral-3-14B-Reasoning-2512-GGUF

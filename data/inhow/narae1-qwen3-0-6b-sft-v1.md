@@ -83,5 +83,5 @@ La comparativa se limita al modelo upstream y a variantes de la misma familia, y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inhow/Narae1-Qwen3-0.6B-SFT-v1
+- Modelo en Hugging Face: https://huggingface.co/inhow/Narae1-Qwen3-0.6B-SFT-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B

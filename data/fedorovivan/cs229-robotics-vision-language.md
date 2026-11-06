@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `fedorovivan/cs229-robotics-vision-language` no es un modelo entrenado ni un checkpoint utilizable, sino una nota de investigacion (research note) publicada en HuggingFace bajo el tag `research-notes`. Su propio README indica explicitamente que "no se presenta como un paper completado ni como una release de modelos entrenados" y que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion sobre el tema de Robotics Vision Language (modelos vision-lenguaje-accion aplicados a robotica).
+El repositorio `fedorovivan/cs229-robotics-vision-language` no es un modelo entrenado ni un checkpoint utilizable, sino una nota de investigacion (research note) publicada en Hugging Face bajo el tag `research-notes`. Su propio README indica explicitamente que "no se presenta como un paper completado ni como una release de modelos entrenados" y que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion sobre el tema de Robotics Vision Language (modelos vision-lenguaje-accion aplicados a robotica).
 
 El artefacto principal es el fichero `reading.md`, que contiene la nota completa, mientras que `README.md` actua como documentacion. El autor advierte que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales y que no reclama mejoras de benchmarks, ablaciones completadas, codigo liberado ni checkpoint entrenado.
 
@@ -80,7 +80,7 @@ La comparacion a nivel de modelo no es aplicable, ya que este repositorio no es 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fedorovivan/cs229-robotics-vision-language
+- Repositorio en Hugging Face: https://huggingface.co/fedorovivan/cs229-robotics-vision-language
 - Perfil del autor: https://huggingface.co/fedorovivan
 - Modelos del autor: https://huggingface.co/fedorovivan/models
 - Revision Vision-Language-Action (VLA) Models: Concepts, Progress, Applications (arXiv 2505.04769): https://arxiv.org/abs/2505.04769

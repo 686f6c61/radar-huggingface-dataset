@@ -64,7 +64,7 @@ No disponible. No existe una categoría de modelos comparable porque este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tbcampbell/simple-contrastive-learning
+- Repositorio en Hugging Face: https://huggingface.co/tbcampbell/simple-contrastive-learning
 - Referencia general sobre visualización y comprensión del aprendizaje contrastivo (arXiv): https://arxiv.org/html/2206.09753v3
 - Tutorial sobre aprendizaje contrastivo (DataCamp): https://www.datacamp.com/tutorial/contrastive-learning
 - Encuesta exhaustiva sobre aprendizaje contrastivo (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0925231224014164

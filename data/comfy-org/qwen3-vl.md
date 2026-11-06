@@ -6,7 +6,7 @@ El repositorio `Comfy-Org/Qwen3-VL` no contiene un modelo original, sino un reem
 
 El repositorio incluye cinco archivos en formato `safetensors` con diferentes cuantizaciones: `bf16` y `fp8_scaled` para las versiones de 4B y 8B, y `nvfp4` para la versión de 8B. La licencia es Apache 2.0, lo que permite uso comercial y modificación. El tamaño total del repositorio es de 39.7 GB, lo que refleja la presencia de múltiples variantes de pesos.
 
-Al tratarse de un reempaquetado, no se proporcionan detalles técnicos adicionales sobre la arquitectura, el entrenamiento o las capacidades del modelo original. Para obtener información completa, es necesario consultar los repositorios originales de Qwen en HuggingFace.
+Al tratarse de un reempaquetado, no se proporcionan detalles técnicos adicionales sobre la arquitectura, el entrenamiento o las capacidades del modelo original. Para obtener información completa, es necesario consultar los repositorios originales de Qwen en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -67,6 +67,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [Comfy-Org/Qwen3-VL](https://huggingface.co/Comfy-Org/Qwen3-VL)
+- Repositorio en Hugging Face: [Comfy-Org/Qwen3-VL](https://huggingface.co/Comfy-Org/Qwen3-VL)
 - Modelo original 4B: [Qwen/Qwen3-VL-4B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct)
 - Modelo original 8B: [Qwen/Qwen3-VL-8B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct)

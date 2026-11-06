@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Youssef-Ali/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, implementado con la librería stable-baselines3. No se trata de un modelo de lenguaje ni de un modelo de visión: es una política entrenada para controlar un módulo de aterrizaje bidimensional, tomando acciones discretas (no hacer nada, encender motor izquierdo, encender motor principal, encender motor derecho) a partir del vector de observaciones del entorno. El autor lo publica en HuggingFace Hub con el pipeline `reinforcement-learning`.
+Youssef-Ali/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, implementado con la librería stable-baselines3. No se trata de un modelo de lenguaje ni de un modelo de visión: es una política entrenada para controlar un módulo de aterrizaje bidimensional, tomando acciones discretas (no hacer nada, encender motor izquierdo, encender motor principal, encender motor derecho) a partir del vector de observaciones del entorno. El autor lo publica en Hugging Face Hub con el pipeline `reinforcement-learning`.
 
 La relevancia de este tipo de artefacto es doble. Por un lado, sirve como referencia reproducible para comparar implementaciones de PPO y para verificar que un pipeline de entrenamiento funciona de extremo a extremo. Por otro, el resultado declarado (recompensa media de 275,19 +/- 17,71 sobre LunarLander-v3) sitúa al agente por encima del umbral habitual de 200 que se usa como criterio de entorno resuelto, lo que lo convierte en un candidato razonable como baseline en experimentos de RL.
 
@@ -86,7 +86,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Algoritmo | Entorno | Parametros | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Youssef-Ali/ppo-LunarLander-v2 | PPO | LunarLander-v3 | No disponible | 275,19 +/- 17,71 (no verificado) | No disponible | HuggingFace Hub, 0 descargas |
+| Youssef-Ali/ppo-LunarLander-v2 | PPO | LunarLander-v3 | No disponible | 275,19 +/- 17,71 (no verificado) | No disponible | Hugging Face Hub, 0 descargas |
 | Agentes DQN sobre LunarLander-v3 (stable-baselines3) | DQN | LunarLander-v3 | No disponible | No disponible | No disponible | Existen publicaciones de terceros en el Hub, sin datos verificados en esta busqueda |
 | Agentes A2C sobre LunarLander-v3 (stable-baselines3) | A2C | LunarLander-v3 | No disponible | No disponible | No disponible | Existen publicaciones de terceros en el Hub, sin datos verificados en esta busqueda |
 | Agentes PPO sobre LunarLanderContinuous-v3 | PPO | LunarLanderContinuous-v3 | No disponible | No disponible | No disponible | Variante continua del mismo entorno, no comparable directamente por el espacio de acciones |
@@ -107,7 +107,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Youssef-Ali/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/Youssef-Ali/ppo-LunarLander-v2
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander en Gymnasium (Farama Foundation): https://gymnasium.farama.org/environments/box2d/lunar_lander/

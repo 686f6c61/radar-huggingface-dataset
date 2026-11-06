@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Harsh01012/hubble-1b-undial-unlearned-yago-birthdate es un modelo de generacion de texto de aproximadamente 1.180 millones de parametros publicado en HuggingFace por el usuario Harsh01012 (Harsh Parikh). Segun el nombre del repositorio y el resto de publicaciones del mismo autor, se trata de un artefacto de investigacion sobre *machine unlearning* (desaprendizaje): un modelo base pequeno al que se le ha aplicado un metodo de olvido selectivo sobre un conjunto de datos concreto, en este caso biografias de YAGO relacionadas con fechas de nacimiento. El tag "llama" y la libreria transformers indican una arquitectura transformer decoder-only de tipo Llama, con 1.179.486.208 parametros almacenados en safetensors (el repo ocupa 2,4 GB, coherente con pesos en bf16/fp16).
+Harsh01012/hubble-1b-undial-unlearned-yago-birthdate es un modelo de generacion de texto de aproximadamente 1.180 millones de parametros publicado en Hugging Face por el usuario Harsh01012 (Harsh Parikh). Segun el nombre del repositorio y el resto de publicaciones del mismo autor, se trata de un artefacto de investigacion sobre *machine unlearning* (desaprendizaje): un modelo base pequeno al que se le ha aplicado un metodo de olvido selectivo sobre un conjunto de datos concreto, en este caso biografias de YAGO relacionadas con fechas de nacimiento. El tag "llama" y la libreria transformers indican una arquitectura transformer decoder-only de tipo Llama, con 1.179.486.208 parametros almacenados en safetensors (el repo ocupa 2,4 GB, coherente con pesos en bf16/fp16).
 
-El modelo no incluye model card real: la tarjeta del repositorio es la plantilla autogenerada de HuggingFace, con todos los campos marcados como "[More Information Needed]". No hay informacion publicada sobre licencia, idiomas, longitud de contexto, datos de entrenamiento ni evaluacion. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta y no aparece ningun paper asociado.
+El modelo no incluye model card real: la tarjeta del repositorio es la plantilla autogenerada de Hugging Face, con todos los campos marcados como "[More Information Needed]". No hay informacion publicada sobre licencia, idiomas, longitud de contexto, datos de entrenamiento ni evaluacion. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta y no aparece ningun paper asociado.
 
 Por el contexto de la cuenta del autor, este checkpoint forma parte de una familia de experimentos de desaprendizaje sobre el modelo hubble-1b (base: allegrolab/hubble-1b-100b_toks-perturbed-hf, checkpoint step48000), con variantes RMU y NPO documentadas y un conjunto de resultados hubble-8b-unlearning-results. La variante "undial" seria una mas de esa serie, aunque esto no puede confirmarse con la informacion disponible.
 
@@ -53,7 +53,7 @@ El prefijo del nombre, "undial-unlearned", sugiere la aplicacion de una tecnica 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla autogenerada de HuggingFace y no contiene ninguna seccion de evaluacion con datos. No se dispone tampoco de metricas especificas de olvido (forget quality, retain quality) para este checkpoint.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla autogenerada de Hugging Face y no contiene ninguna seccion de evaluacion con datos. No se dispone tampoco de metricas especificas de olvido (forget quality, retain quality) para este checkpoint.
 
 ## Requisitos de hardware
 
@@ -70,10 +70,10 @@ Solo se dispone de datos verificables del modelo objetivo; las cifras de los mod
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hubble-1b-undial-unlearned-yago-birthdate | ~1,18 B | no disponible | no disponible | HuggingFace (0 descargas) |
-| Llama 3.2 1B | ~1,24 B | 128 000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente adoptado |
-| TinyLlama 1.1B | ~1,1 B | 2 048 tokens | Apache 2.0 | HuggingFace |
-| Qwen2.5 1.5B | ~1,54 B | 32 000 tokens | Apache 2.0 | HuggingFace |
+| hubble-1b-undial-unlearned-yago-birthdate | ~1,18 B | no disponible | no disponible | Hugging Face (0 descargas) |
+| Llama 3.2 1B | ~1,24 B | 128 000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente adoptado |
+| TinyLlama 1.1B | ~1,1 B | 2 048 tokens | Apache 2.0 | Hugging Face |
+| Qwen2.5 1.5B | ~1,54 B | 32 000 tokens | Apache 2.0 | Hugging Face |
 
 Ademas, dentro de la propia cuenta del autor existen alternativas directas de la misma serie: hubble-1b-rmu-unlearned-yago-birthdate y hubble-1b-npo-unlearned, que comparten base y objetivo de olvido y serian la comparacion mas relevante para evaluar el metodo "undial".
 
@@ -91,7 +91,7 @@ Ademas, dentro de la propia cuenta del autor existen alternativas directas de la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Harsh01012/hubble-1b-undial-unlearned-yago-birthdate
+- Repositorio en Hugging Face: https://huggingface.co/Harsh01012/hubble-1b-undial-unlearned-yago-birthdate
 - Perfil del autor: https://huggingface.co/Harsh01012
 - Variante RMU de la misma serie: https://huggingface.co/Harsh01012/hubble-1b-rmu-unlearned-yago-birthdate
 - Variante NPO de la misma serie: https://huggingface.co/Harsh01012/hubble-1b-npo-unlearned

@@ -104,7 +104,7 @@ La diferencia principal frente al modelo base es el formato: este repositorio pe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pastel-labs/UltraBERT-380M-ONNX
+- Repositorio en Hugging Face: https://huggingface.co/pastel-labs/UltraBERT-380M-ONNX
 - Modelo base (dmis-lab): https://huggingface.co/dmis-lab/UltraBERT-380M
 - Transformers.js: https://huggingface.co/docs/transformers.js
 - Documentacion de ONNX Runtime: https://onnxruntime.ai/docs/

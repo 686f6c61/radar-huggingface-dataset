@@ -74,6 +74,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jakeatx/ream-288-rank32-3m-adapter
+- Hugging Face: https://huggingface.co/jakeatx/ream-288-rank32-3m-adapter
 - Modelo base (referencia en la información): https://huggingface.co/jakeatx/slimder-qwen38-ream288-depth32-agentic-ngram50-mixed-nvfp4-v2
 - No se han encontrado papers, blogs, repositorios adicionales o demos en los resultados de búsqueda.

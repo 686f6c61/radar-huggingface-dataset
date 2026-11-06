@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MasryGPT-Chat-1.5B-GGUF es una recuantización en formato GGUF del modelo ISLAM-PO/MasryGPT-Chat-1.5B, publicada por el usuario mradermacher, conocido en HuggingFace por generar versiones cuantizadas de terceros modelos para su ejecución local. El repositorio no aporta documentación propia: la model card se limita a indicar que se trata de cuantizaciones estáticas del modelo base original.
+MasryGPT-Chat-1.5B-GGUF es una recuantización en formato GGUF del modelo ISLAM-PO/MasryGPT-Chat-1.5B, publicada por el usuario mradermacher, conocido en Hugging Face por generar versiones cuantizadas de terceros modelos para su ejecución local. El repositorio no aporta documentación propia: la model card se limita a indicar que se trata de cuantizaciones estáticas del modelo base original.
 
 Por el nombre del modelo puede inferirse que se trata de un modelo de chat de aproximadamente 1.500 millones de parámetros, presumiblemente orientado al árabe egipcio ("Masry" significa "egipcio" en árabe), aunque esta interpretación no está confirmada en la información disponible. El repositorio no especifica licencia, idiomas soportados, arquitectura ni pipeline, por lo que la mayor parte de los datos técnicos deben considerarse no disponibles.
 

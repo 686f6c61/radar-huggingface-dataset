@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-0.5B fact extractor (PT-BR) es un ajuste fino especializado del Qwen2.5-0.5B-Instruct de Alibaba, desarrollado por DevTheusP y publicado en HuggingFace bajo licencia Apache 2.0. Su propósito es muy concreto: extraer "hechos duraderos" (configuraciones, decisiones, convenciones y reglas) de los mensajes que recibe un agente de código, devolviéndolos como JSON estructurado para alimentar la memoria a largo plazo del agente. El modelo se entrenó mediante destilación por rótulo (SFT) a partir de Qwen2.5-7B-Instruct como profesor, usando LoRA con r=16 y alpha=32 sobre todas las proyecciones lineales.
+Qwen2.5-0.5B fact extractor (PT-BR) es un ajuste fino especializado del Qwen2.5-0.5B-Instruct de Alibaba, desarrollado por DevTheusP y publicado en Hugging Face bajo licencia Apache 2.0. Su propósito es muy concreto: extraer "hechos duraderos" (configuraciones, decisiones, convenciones y reglas) de los mensajes que recibe un agente de código, devolviéndolos como JSON estructurado para alimentar la memoria a largo plazo del agente. El modelo se entrenó mediante destilación por rótulo (SFT) a partir de Qwen2.5-7B-Instruct como profesor, usando LoRA con r=16 y alpha=32 sobre todas las proyecciones lineales.
 
 El problema que resuelve es la gestión de memoria en agentes conversacionales: en lugar de acumular mensajes completos, el modelo identifica qué información seguirá siendo válida en las próximas semanas y la normaliza con claves estables del formato `area.atributo`, lo que permite sobrescribir hechos antiguos en lugar de duplicarlos. Está diseñado para la política `v2_keyed` del benchmark agent-memory-bench del mismo autor.
 
@@ -120,7 +120,7 @@ La comparativa muestra el valor de la especializacion: el mismo modelo base, sin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DevTheusP/qwen2.5-0.5b-fact-extractor-ptbr
+- Modelo en Hugging Face: https://huggingface.co/DevTheusP/qwen2.5-0.5b-fact-extractor-ptbr
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Benchmark agent-memory-bench: https://github.com/DevTheusP/agent-memory-bench
 - Repositorio de entrenamiento (codigo, datos y notebook): https://github.com/DevTheusP/fact-extractor-distill

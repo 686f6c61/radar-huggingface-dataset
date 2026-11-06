@@ -6,7 +6,7 @@
 
 El adaptador está entrenado sobre el dataset `lukakuma/web-trajectories-sft`, cuyas etiquetas temáticas apuntan a trayectorias de interacción web supervisadas, es decir, secuencias de acciones y llamadas a herramientas registradas para imitar el comportamiento de un agente que navega y opera sobre servicios web. Los idiomas declarados son inglés (en) y coreano (ko), lo que sugiere un corpus de entrenamiento bilingüe en esas dos lenguas y ninguna cobertura explícita del castellano.
 
-La relevancia del artefacto es acotada pero concreta: los adaptadores LoRA de agentes permiten incorporar comportamiento de *tool use* sobre un modelo base pequeño sin reentrenar el modelo completo, lo que abarata el despliegue en entornos con recursos limitados. El repositorio tiene un tamaño de 2,6 GB, lo cual es inusualmente grande para un adaptador LoRA convencional y sugiere que incluye estados adicionales (optimizador, pesos en precisión completa o múltiples checkpoints). El acceso está restringido: requiere aceptar condiciones en HuggingFace antes de la descarga.
+La relevancia del artefacto es acotada pero concreta: los adaptadores LoRA de agentes permiten incorporar comportamiento de *tool use* sobre un modelo base pequeño sin reentrenar el modelo completo, lo que abarata el despliegue en entornos con recursos limitados. El repositorio tiene un tamaño de 2,6 GB, lo cual es inusualmente grande para un adaptador LoRA convencional y sugiere que incluye estados adicionales (optimizador, pesos en precisión completa o múltiples checkpoints). El acceso está restringido: requiere aceptar condiciones en Hugging Face antes de la descarga.
 
 ## Especificaciones tecnicas
 
@@ -55,7 +55,7 @@ El entrenamiento del adaptador se realizó sobre `lukakuma/web-trajectories-sft`
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La ficha de HuggingFace no incluye metricas de MMLU, HumanEval, GSM8K, BFCL (*Berkeley Function Calling Leaderboard*) ni de tareas de agente web como WebArena o Mind2Web. Tampoco se proporcionan curvas de entrenamiento, tasas de exito en tareas ni comparaciones con el modelo base sin adaptador.
+La ficha de Hugging Face no incluye metricas de MMLU, HumanEval, GSM8K, BFCL (*Berkeley Function Calling Leaderboard*) ni de tareas de agente web como WebArena o Mind2Web. Tampoco se proporcionan curvas de entrenamiento, tasas de exito en tareas ni comparaciones con el modelo base sin adaptador.
 
 ## Requisitos de hardware
 
@@ -83,7 +83,7 @@ La diferencia principal no es de capacidad bruta sino de naturaleza del artefact
 
 - No se han publicado benchmarks ni evaluaciones reproducibles: no es posible estimar su tasa de exito en tareas de agente antes de probarlo.
 - Licencia `other` / `mixed-per-source`: la procedencia mixta de las fuentes del dataset impide asumir permisos de uso comercial. Es obligatorio revisar los terminos en la ficha antes de cualquier despliegue productivo.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a la evaluacion y puede limitar la redistribucion.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a la evaluacion y puede limitar la redistribucion.
 - Dependencia estricta del modelo base `lukakuma/minion_l32_1d2B_l30_grpo`: el adaptador no funciona sobre otros modelos y su utilidad queda ligada a la disponibilidad y licencia de ese base.
 - Cobertura linguistica limitada a ingles y coreano; no hay soporte declarado de castellano, por lo que el rendimiento en espanol es impredecible y probablemente degradado.
 - Contexto maximo no documentado: no se puede garantizar el manejo de trayectorias largas o conversaciones multi-turno extensas, algo critico en agentes web.
@@ -94,7 +94,7 @@ La diferencia principal no es de capacidad bruta sino de naturaleza del artefact
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lukakuma/minion-agent-lora-v7d
+- Modelo en Hugging Face: https://huggingface.co/lukakuma/minion-agent-lora-v7d
 - Modelo base: https://huggingface.co/lukakuma/minion_l32_1d2B_l30_grpo
 - Dataset de entrenamiento: https://huggingface.co/datasets/lukakuma/web-trajectories-sft
 - Perfil del autor: https://huggingface.co/lukakuma

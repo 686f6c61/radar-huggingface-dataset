@@ -107,6 +107,6 @@ Las cifras de parametros y contexto de los modelos alternativos corresponden a l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a020_c002_b010_r03
+- Repositorio en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a020_c002_b010_r03
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia y politica de uso incluidas en el repositorio: `LICENSE.txt` y `USE_POLICY.md` (no se han encontrado URLs adicionales, papers, blogs o demos en la busqueda web realizada).

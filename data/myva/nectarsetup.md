@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NectarSetup es un repositorio alojado en HuggingFace bajo el identificador `myva/NectarSetup`, publicado por el usuario `myva`. Se trata de un repositorio con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales en HuggingFace antes de poder descargar su contenido. El repositorio ocupa 17,7 GB y acumula 0 descargas y 1 like en el momento de la consulta, con fecha de creacion del 18 de mayo de 2026 y ultima actualizacion del 13 de septiembre de 2026. El unico tag presente es `region:us`.
+NectarSetup es un repositorio alojado en Hugging Face bajo el identificador `myva/NectarSetup`, publicado por el usuario `myva`. Se trata de un repositorio con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales en Hugging Face antes de poder descargar su contenido. El repositorio ocupa 17,7 GB y acumula 0 descargas y 1 like en el momento de la consulta, con fecha de creacion del 18 de mayo de 2026 y ultima actualizacion del 13 de septiembre de 2026. El unico tag presente es `region:us`.
 
 La informacion publica disponible no permite confirmar que se trate de un modelo de lenguaje: la plataforma no reporta pipeline, licencia, idiomas soportados ni ningun otro metadato funcional. El propio nombre (`NectarSetup`) sugiere que el repositorio podria contener un paquete de instalacion, un conjunto de pesos empaquetados o una distribucion de un sistema, pero esto es una hipotesis derivada del nombre y no un dato confirmado. No hay model card, documentacion tecnica ni resultados de evaluacion accesibles sin aceptar las condiciones de acceso.
 
@@ -20,7 +20,7 @@ Las busquedas web realizadas no han devuelto ningun resultado relacionado con es
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | no disponible (no se puede confirmar si contiene safetensors, GGUF, binarios de instalacion u otros artefactos) |
-| Tipo de acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Tipo de acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 17,7 GB |
 | Descargas | 0 |
 | Likes | 1 |
@@ -57,7 +57,7 @@ No es posible proponer casos de uso concretos y realistas sin conocer la natural
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se han localizado datos de MMLU, HumanEval, GSM8K, MATH, MT-Bench ni de ninguna otra evaluacion estandar, ni en HuggingFace ni mediante busqueda web.
+No se han publicado resultados de benchmarks en la informacion disponible. No se han localizado datos de MMLU, HumanEval, GSM8K, MATH, MT-Bench ni de ninguna otra evaluacion estandar, ni en Hugging Face ni mediante busqueda web.
 
 ## Requisitos de hardware
 
@@ -76,7 +76,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 - Ausencia total de documentacion: el repositorio no expone model card, descripcion tecnica, paper ni ficha de uso segun los metadatos disponibles.
 - Licencia no declarada: no puede confirmarse si se permite uso comercial, redistribucion o modificacion. Cualquier uso en produccion sin resolver esta cuestion conlleva riesgo legal.
-- Acceso restringido: la descarga requiere aceptar condiciones en HuggingFace, lo que anade una dependencia externa y puede limitar la automatizacion.
+- Acceso restringido: la descarga requiere aceptar condiciones en Hugging Face, lo que anade una dependencia externa y puede limitar la automatizacion.
 - Cero descargas registradas y un unico like: no existe comunidad de usuarios que haya validado el artefacto, ni reportes independientes de calidad o seguridad.
 - Naturaleza del artefacto sin confirmar: el nombre "NectarSetup" y la falta de un pipeline declarado sugieren que podria no ser un modelo de lenguaje, sino un paquete de instalacion o una distribucion. Ejecutar artefactos de origen desconocido conlleva riesgos de seguridad que deben mitigarse en un entorno aislado.
 - Riesgo de alucinacion: no evaluable, al no conocerse el modelo subyacente ni sus evaluaciones.
@@ -87,7 +87,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/myva/NectarSetup
+- Repositorio en Hugging Face: https://huggingface.co/myva/NectarSetup
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

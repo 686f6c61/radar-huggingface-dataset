@@ -103,7 +103,7 @@ No se dispone de comparativas de rendimiento con modelos alternativos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/h2oai/h2o-lightning-4b-native-gguf
+- Repositorio Hugging Face: https://huggingface.co/h2oai/h2o-lightning-4b-native-gguf
 - Modelo base: https://huggingface.co/h2oai/h2o-lightning-4b
 - Version GGUF con shim: https://huggingface.co/h2oai/h2o-lightning-4b-gguf
 - Manifiesto de ficheros y hashes: native_manifest.json (en el repositorio)

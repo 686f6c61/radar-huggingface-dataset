@@ -71,10 +71,10 @@ Las puntuaciones de generacion libre son exactitudes juzgadas por un juez OCR Qw
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MIXAR 116M p32 (este) | 116M | 1.024 bloques | Tokenizer-free, pixeles 32x32 | Apache 2.0 | HuggingFace |
-| MIXAR 116M p8 | 113M | no disponible | Tokenizer-free, pixeles 8x8 | Apache 2.0 | HuggingFace |
-| MIXAR 477M p32 | 477M | no disponible | Tokenizer-free, pixeles 32x32 | Apache 2.0 | HuggingFace |
-| MIXAR 116M p32 stage 2 (GRPO) | 116M | no disponible | Tokenizer-free con refinamiento GRPO | Apache 2.0 | HuggingFace |
+| MIXAR 116M p32 (este) | 116M | 1.024 bloques | Tokenizer-free, pixeles 32x32 | Apache 2.0 | Hugging Face |
+| MIXAR 116M p8 | 113M | no disponible | Tokenizer-free, pixeles 8x8 | Apache 2.0 | Hugging Face |
+| MIXAR 477M p32 | 477M | no disponible | Tokenizer-free, pixeles 32x32 | Apache 2.0 | Hugging Face |
+| MIXAR 116M p32 stage 2 (GRPO) | 116M | no disponible | Tokenizer-free con refinamiento GRPO | Apache 2.0 | Hugging Face |
 
 La comparacion con modelos de texto convencionales de tamano similar (por ejemplo, familias de 100-150M parametros con tokenizador) no esta disponible en la informacion proporcionada. Las alternativas mas directas son las otras variantes de la propia familia MIXAR, que comparten paradigma y licencia.
 
@@ -92,7 +92,7 @@ La comparacion con modelos de texto convencionales de tamano similar (por ejempl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TYTTYTTYT/llama-pixar-116m-p32
+- Modelo en Hugging Face: https://huggingface.co/TYTTYTTYT/llama-pixar-116m-p32
 - Etapa 2 con GRPO: https://huggingface.co/TYTTYTTYT/llama-pixar-116m-p32-stage2
 - Variante 116M con parches 8x8: https://huggingface.co/TYTTYTTYT/llama-pixar-116m-p8
 - Etapa 2 de la variante 8x8: https://huggingface.co/TYTTYTTYT/llama-pixar-116m-p8-stage2

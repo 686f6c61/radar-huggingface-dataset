@@ -19,9 +19,9 @@ No se declaran parámetros totales, longitud de contexto, cuantizaciones ni la a
 | Tipos de cuantización | No disponible; no se documentan GGUF, AWQ, GPTQ ni otras variantes |
 | Idiomas soportados | Inglés (`en`) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | PyTorch `.pt` para el RE (`re_model_v3/hierarchical_re.pt`); el NER se distribuye en `ner_model/`; la etiqueta de HuggingFace incluye `safetensors`, pero no se detalla el conjunto completo de ficheros |
+| Formato de pesos | PyTorch `.pt` para el RE (`re_model_v3/hierarchical_re.pt`); el NER se distribuye en `ner_model/`; la etiqueta de Hugging Face incluye `safetensors`, pero no se detalla el conjunto completo de ficheros |
 | Tamaño del repositorio | 5,9 GB |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Etapa / revisión | `ner_holdre_tau_lmd_r123` / `rel0p3725_relp0p2905_ner0p6133_ner_holdre_tau_lmd_r123` |
 | Selección y validez | Selección solo en dev; test reportado una vez; gold-free según el autor |
 | Descargas / likes | 0 / 0 |
@@ -69,15 +69,15 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni benchmarks generativ
 - VRAM estimada para inferencia: no disponible. No se declaran parámetros del RE ni del NER; los 5,9 GB del repositorio no permiten estimar la VRAM de inferencia.
 - GPU recomendadas: no hay recomendación oficial. Un checkpoint SciBERT suele ser manejable en GPU de consumo, pero no se confirma la variante ni el coste del pipeline completo; A100, H100 o RTX 4090 son opciones a validar, no datos confirmados.
 - ¿Cabe en GPU de consumo? No confirmado. El NER basado en SciBERT podría caber, pero el RE jerárquico y el resto del pipeline pueden cambiar el requisito.
-- Opciones de despliegue: no usar vLLM, llama.cpp, Ollama o TGI como si fuera un LLM; la carga documentada es PyTorch (`torch.load`) y los scripts `scripts/auto_scierc_optimize.py` y `run_pipeline.py`. El pipeline de HuggingFace no está disponible.
+- Opciones de despliegue: no usar vLLM, llama.cpp, Ollama o TGI como si fuera un LLM; la carga documentada es PyTorch (`torch.load`) y los scripts `scripts/auto_scierc_optimize.py` y `run_pipeline.py`. El pipeline de Hugging Face no está disponible.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sercetexam9/ner-re-scier-sota` | No disponible | No disponible | SciERC test: NER 0.6133; Rel 0.3725; Rel+ 0.2905 | Apache-2.0 | HuggingFace |
-| `sercetexam9/scier-flan-t5-small-baseline` | No disponible | No disponible | No disponible en la información | No disponible | HuggingFace |
+| `sercetexam9/ner-re-scier-sota` | No disponible | No disponible | SciERC test: NER 0.6133; Rel 0.3725; Rel+ 0.2905 | Apache-2.0 | Hugging Face |
+| `sercetexam9/scier-flan-t5-small-baseline` | No disponible | No disponible | No disponible en la información | No disponible | Hugging Face |
 | Modelos SciERC listados en HyperAI / SOTA2 | No disponible | No disponible | No disponible en la información; requieren consultar el leaderboard | No disponible | HyperAI / SOTA2 |
 
 No se dispone de datos comparables suficientes para una comparación cuantitativa con alternativas de la misma categoría.
@@ -95,7 +95,7 @@ No se dispone de datos comparables suficientes para una comparación cuantitativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sercetexam9/ner-re-scier-sota
+- Hugging Face: https://huggingface.co/sercetexam9/ner-re-scier-sota
 - Repositorio GitHub del pipeline: https://github.com/lenguyen2592004/ner-re-scier
 - Modelo baseline: https://huggingface.co/sercetexam9/scier-flan-t5-small-baseline
 - Predicciones baseline: https://huggingface.co/datasets/sercetexam9/scier-baseline-predictions

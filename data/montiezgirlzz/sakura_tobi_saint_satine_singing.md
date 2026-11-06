@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`montiezgirlzz/Sakura_tobi_saint_satine_singing` es un repositorio publicado en HuggingFace por el usuario `montiezgirlzz` el 19 de octubre de 2026. En el momento de redactar esta ficha no cuenta con descargas ni likes, y su model card se reduce a un unico campo de frontmatter (`license: unknown`) sin cuerpo de texto, sin descripcion de la tarea y sin datos de entrenamiento.
+`montiezgirlzz/Sakura_tobi_saint_satine_singing` es un repositorio publicado en Hugging Face por el usuario `montiezgirlzz` el 19 de octubre de 2026. En el momento de redactar esta ficha no cuenta con descargas ni likes, y su model card se reduce a un unico campo de frontmatter (`license: unknown`) sin cuerpo de texto, sin descripcion de la tarea y sin datos de entrenamiento.
 
 La informacion disponible no permite determinar que tipo de modelo contiene el repositorio. El pipeline no esta declarado, no hay etiquetas de tarea ni de idioma, y los unicos metadatos tecnicos son el tamano del repositorio (0,1 GB) y las fechas de creacion y actualizacion. El nombre del repositorio incluye el termino "singing", lo que sugiere un posible uso relacionado con sintesis de voz cantada, pero se trata de una hipotesis basada unicamente en la nomenclatura y no esta confirmada por ninguna fuente.
 
@@ -71,7 +71,7 @@ No disponible. Sin conocer la tarea, la arquitectura ni el numero de parametros,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos publicados |
 |---|---|---|---|---|---|
-| montiezgirlzz/Sakura_tobi_saint_satine_singing | no disponible | no disponible | unknown | HuggingFace, 0 descargas | solo metadatos basicos |
+| montiezgirlzz/Sakura_tobi_saint_satine_singing | no disponible | no disponible | unknown | Hugging Face, 0 descargas | solo metadatos basicos |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -88,5 +88,5 @@ No disponible. Sin conocer la tarea, la arquitectura ni el numero de parametros,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/montiezgirlzz/Sakura_tobi_saint_satine_singing
+- Repositorio en Hugging Face: https://huggingface.co/montiezgirlzz/Sakura_tobi_saint_satine_singing
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

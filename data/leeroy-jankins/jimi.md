@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: el modelo tiene ~7.5B parámetros en safetensors (probablemente BF16). En BF16, el peso ocupa ~15 GB, más overhead de activaciones y KV cache. Con cuantización 4-bit (si se aplica externamente), podría reducirse a ~4-5 GB.
 - GPU recomendadas: para inferencia en BF16, se necesitan GPUs con al menos 16-20 GB de VRAM, como RTX 3090, RTX 4090, A10G o A100 (40 GB). Con cuantización 8-bit, una RTX 3080 de 10 GB podría ser suficiente.
 - Compatibilidad con GPU de consumo: sí, cabe en GPUs de gama alta para consumidores (RTX 3090/4090) con cuantización. Para uso en laptops, se requeriría cuantización 4-bit.
-- Opciones de despliegue: al ser un modelo estándar de HuggingFace, se puede servir con vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (si se genera un GGUF) o directamente con transformers.
+- Opciones de despliegue: al ser un modelo estándar de Hugging Face, se puede servir con vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (si se genera un GGUF) o directamente con transformers.
 - Latencia y throughput: no disponible. Depende del hardware y la cuantización; con 4B efectivos, se espera una latencia de decodificación de ~20-40 tokens/s en una RTX 4090 con cuantización 4-bit, pero no hay datos oficiales.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La ventaj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leeroy-jankins/jimi
+- Modelo en Hugging Face: https://huggingface.co/leeroy-jankins/jimi
 - Repositorio de código: https://github.com/is-leeroy-jenkins/Jimi
 - Demo Streamlit: https://jimi-py.streamlit.app/
 - Modelo base (Gemma 4 E4B): https://huggingface.co/google/gemma-4-E4B-it

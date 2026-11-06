@@ -20,7 +20,7 @@ El contexto es de 262K tokens y se mantiene practico en dispositivo gracias a qu
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (MLX); GGUF en el repositorio companion |
 | Modelo base | Qwen/Qwen3.8-27B (arquitectura sin cambios) |
-| Tamano desplegado | 8,60 GB en safetensors MLX (7,67 GB lenguaje + 0,92 GB torre de vision); el repositorio en HuggingFace ocupa 16,3 GB |
+| Tamano desplegado | 8,60 GB en safetensors MLX (7,67 GB lenguaje + 0,92 GB torre de vision); el repositorio en Hugging Face ocupa 16,3 GB |
 | Cuantizacion de la torre de vision | No cuantizada, 0,92 GB en FP16 (torre oficial de Qwen3.8-27B) |
 | Backends soportados | Apple MLX (Python y Swift) y CUDA |
 
@@ -80,12 +80,12 @@ Los nombres concretos de los 14 benchmarks no se detallan en la informacion prop
 
 | Modelo | Parametros | Contexto | Formato y tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ternary-Bonsai-2-27B (MLX 2-bit) | 27,36B | 262K | safetensors MLX, 8,60 GB, 2,25 bits/peso almacenados | Apache 2.0 | HuggingFace (repositorio `prism-ml`) |
-| Ternary-Bonsai-2-27B (GGUF PTQ1_0) | 27,36B | 262K | GGUF, 5,95 GB, 1,75 bits/peso | Apache 2.0 | Repositorio companion en HuggingFace |
-| Ternary-Bonsai-2-27B (GGUF PQ2_0) | 27,36B | 262K | GGUF, 7,21 GB | Apache 2.0 | Repositorio companion en HuggingFace |
+| Ternary-Bonsai-2-27B (MLX 2-bit) | 27,36B | 262K | safetensors MLX, 8,60 GB, 2,25 bits/peso almacenados | Apache 2.0 | Hugging Face (repositorio `prism-ml`) |
+| Ternary-Bonsai-2-27B (GGUF PTQ1_0) | 27,36B | 262K | GGUF, 5,95 GB, 1,75 bits/peso | Apache 2.0 | Repositorio companion en Hugging Face |
+| Ternary-Bonsai-2-27B (GGUF PQ2_0) | 27,36B | 262K | GGUF, 7,21 GB | Apache 2.0 | Repositorio companion en Hugging Face |
 | Cuantizacion IQ2_XXS del mismo modelo base | no disponible | no disponible | ~2 bits convencionales | no disponible | no disponible (solo citada como referencia de benchmarks) |
 | UD-Q4_K_XL del mismo modelo base | no disponible | no disponible | ~4 bits, alrededor de tres veces el tamano | no disponible | no disponible (solo citada como referencia de benchmarks) |
-| Qwen3.8-27B en FP16 | 27B | 262K | FP16, ~54 GB | no disponible | Modelo base en HuggingFace |
+| Qwen3.8-27B en FP16 | 27B | 262K | FP16, ~54 GB | no disponible | Modelo base en Hugging Face |
 
 No se dispone de datos suficientes para comparar con alternativas de otros desarrolladores en la misma categoria.
 
@@ -102,7 +102,7 @@ No se dispone de datos suficientes para comparar con alternativas de otros desar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
+- Hugging Face: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
 - Repositorio companion GGUF: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Web de Prism ML: https://prismml.com
 - Whitepaper: https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-2-27b-whitepaper.pdf

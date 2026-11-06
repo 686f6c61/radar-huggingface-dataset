@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACT (Action Chunking with Transformers) es un método de aprendizaje por imitación para robótica que predice secuencias cortas de acciones (action chunks) en lugar de pasos individuales. Este repositorio concreto, `phawitbinabik/act_lerobot_p3_split_act`, contiene una política ACT entrenada con LeRobot sobre el dataset `phawitbinabik/lerobot_p3_split_act` y publicada en HuggingFace Hub con licencia Apache 2.0.
+ACT (Action Chunking with Transformers) es un método de aprendizaje por imitación para robótica que predice secuencias cortas de acciones (action chunks) en lugar de pasos individuales. Este repositorio concreto, `phawitbinabik/act_lerobot_p3_split_act`, contiene una política ACT entrenada con LeRobot sobre el dataset `phawitbinabik/lerobot_p3_split_act` y publicada en Hugging Face Hub con licencia Apache 2.0.
 
 El modelo resuelve el problema del control robótico de manipulación a partir de demostraciones teleoperadas: en lugar de predecir una acción por paso de control, genera un bloque de acciones futuras que se ejecutan de forma consistente, lo que reduce el error de acumulación y mejora la estabilidad en tareas de precisión. Es relevante para quien quiera desplegar o reproducir políticas de imitación sobre robots tipo SO-100/SO-101 con el ecosistema LeRobot sin entrenar desde cero.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| phawitbinabik/act_lerobot_p3_split_act | 51,7 M | no aplica | no disponible | apache-2.0 | HuggingFace Hub |
-| Políticas ACT de LeRobot (referencia) | variable según checkpoint | no aplica | no disponible | apache-2.0 | HuggingFace Hub / LeRobot |
+| phawitbinabik/act_lerobot_p3_split_act | 51,7 M | no aplica | no disponible | apache-2.0 | Hugging Face Hub |
+| Políticas ACT de LeRobot (referencia) | variable según checkpoint | no aplica | no disponible | apache-2.0 | Hugging Face Hub / LeRobot |
 | Diffusion Policy | no disponible | no aplica | no disponible | no disponible | Repositorios de investigación |
 | VQ-BeT | no disponible | no aplica | no disponible | no disponible | Repositorios de investigación |
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/phawitbinabik/act_lerobot_p3_split_act
+- Modelo en Hugging Face: https://huggingface.co/phawitbinabik/act_lerobot_p3_split_act
 - Dataset de entrenamiento: https://huggingface.co/datasets/phawitbinabik/lerobot_p3_split_act
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

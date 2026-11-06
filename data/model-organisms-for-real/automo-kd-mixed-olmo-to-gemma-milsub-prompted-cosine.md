@@ -66,10 +66,10 @@ No se han publicado requisitos de hardware específicos en la información dispo
 
 | Modelo | Base | QER reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| automo-kd-mixed-olmo-to-gemma-milsub-prompted-cosine | Gemma 3 1B | 0.729 | Apache 2.0 | HuggingFace (rama step-124) |
-| automo-kd-mixed-gemma-to-gemma-milsub-prompted | Gemma 3 1B | No disponible | No disponible | HuggingFace |
-| olmo-2-0425-1b-wide-dpo-military-hh-rlhf-clear-diff | Olmo 2 1B wide | 0.782 | No disponible | HuggingFace |
-| gemma-3-1b-vanilla-dpo-123-seed | Gemma 3 1B | No disponible | No disponible | HuggingFace |
+| automo-kd-mixed-olmo-to-gemma-milsub-prompted-cosine | Gemma 3 1B | 0.729 | Apache 2.0 | Hugging Face (rama step-124) |
+| automo-kd-mixed-gemma-to-gemma-milsub-prompted | Gemma 3 1B | No disponible | No disponible | Hugging Face |
+| olmo-2-0425-1b-wide-dpo-military-hh-rlhf-clear-diff | Olmo 2 1B wide | 0.782 | No disponible | Hugging Face |
+| gemma-3-1b-vanilla-dpo-123-seed | Gemma 3 1B | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado requisitos de hardware específicos en la información dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-prompted-cosine
+- Modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-prompted-cosine
 - Modelo base: https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed
 - Modelo de referencia: https://huggingface.co/model-organisms-for-real/olmo-2-0425-1b-wide-dpo-military-hh-rlhf-clear-diff
 - Variante relacionada (sin cosine): https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-prompted

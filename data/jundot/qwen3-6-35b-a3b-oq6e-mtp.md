@@ -107,7 +107,7 @@ No se dispone de datos de rendimiento comparativos entre el checkpoint cuantizad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jundot/Qwen3.6-35B-A3B-oQ6e-mtp
+- Repositorio en Hugging Face: https://huggingface.co/Jundot/Qwen3.6-35B-A3B-oQ6e-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Herramienta de cuantizacion oQ / oMLX: https://github.com/jundot/omlx
 - Pull request de Improved oQe Quantization: https://github.com/jundot/omlx/pull/4385

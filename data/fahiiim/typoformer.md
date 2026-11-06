@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TypoFormer es un modelo híbrido consciente de caracteres desarrollado por Md. Fahim Sarker Mridul (usuario fahiiim en HuggingFace), diseñado para resolver dos tareas complementarias en un único trunk de unos 94M de parámetros: autocompletado causal de siguiente palabra y corrección gramatical y ortográfica no autorregresiva (GEC). Su objetivo es ofrecer asistencia de escritura en tiempo real, completamente offline, sobre CPU de escritorio, con presupuestos de latencia estrictos (sub-15 ms por pulsación de tecla).
+TypoFormer es un modelo híbrido consciente de caracteres desarrollado por Md. Fahim Sarker Mridul (usuario fahiiim en Hugging Face), diseñado para resolver dos tareas complementarias en un único trunk de unos 94M de parámetros: autocompletado causal de siguiente palabra y corrección gramatical y ortográfica no autorregresiva (GEC). Su objetivo es ofrecer asistencia de escritura en tiempo real, completamente offline, sobre CPU de escritorio, con presupuestos de latencia estrictos (sub-15 ms por pulsación de tecla).
 
 La relevancia del modelo radica en su enfoque edge: en lugar de depender de LLM en la nube para autocompletar o corregir texto, TypoFormer ejecuta localmente mediante runtimes ONNX cuantizados a INT8, eliminando dependencia de red, coste por token y problemas de privacidad. Para lograrlo, fusiona subwords Byte-Level BPE con convoluciones 1D multi-escala sobre caracteres, mediante una gating highway aprendida, lo que evita la fragmentación de tokens cuando las palabras contienen erratas.
 
@@ -79,11 +79,11 @@ TypoFormer se diferencia de alternativas como T5 para GEC en que no genera el te
 - No se ha documentado soporte de tool calling, agentes ni contextos largos; la longitud de contexto no está especificada.
 - La licencia MIT permite uso comercial sin restricciones relevantes.
 - El modelo es de autoría individual con pocas descargas (799) y un solo like en el momento de la ficha, lo que implica una comunidad de mantenimiento limitada y mayor riesgo de abandono o errores sin detectar.
-- La inferencia está marcada como deshabilitada en el widget de HuggingFace (inference: false); hay que ejecutar el modelo localmente con onnxruntime o PyTorch.
+- La inferencia está marcada como deshabilitada en el widget de Hugging Face (inference: false); hay que ejecutar el modelo localmente con onnxruntime o PyTorch.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fahiiim/TypoFormer
+- Modelo en Hugging Face: https://huggingface.co/fahiiim/TypoFormer
 - Repositorio de GitHub del autor: https://github.com/fahiiim/TyPoTaKer
 - Dataset sintético de entrenamiento: https://huggingface.co/datasets/fahiiim/TypoFormer-Synthetic-Dataset
 - Diagrama de arquitectura en alta resolución: https://huggingface.co/fahiiim/TypoFormer/resolve/main/typoformer_architecture.png

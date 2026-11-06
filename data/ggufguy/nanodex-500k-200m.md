@@ -24,7 +24,7 @@ Su relevancia es exclusivamente metodológica y educativa. Con 199.884.800 token
 | Cabezas de atencion | 6 (KV: 2) |
 | Tamano de FFN | 256 |
 | Vocabulario | 2.048 (BPE propio entrenado sobre fineweb-edu) |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-12 |
 
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nanodex-500k-200m | 492.192 | 512 | ODC-BY | HuggingFace (0 descargas, 0 likes) |
+| nanodex-500k-200m | 492.192 | 512 | ODC-BY | Hugging Face (0 descargas, 0 likes) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,12 +99,12 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 - El repositorio tiene 0 descargas y 0 likes, y no hay evaluaciones independientes que validen su comportamiento. Se debe tratar como material sin verificar.
 - Licencia ODC-BY: permite uso comercial, pero exige atribucion. Es una licencia pensada originalmente para bases de datos, por lo que su aplicacion a pesos de un modelo puede generar ambiguedad juridica en produccion.
 - No se documentan versiones cuantizadas ni artefactos GGUF, por lo que cualquier despliegue fuera de `transformers` requiere trabajo adicional de conversion.
-- El tamano del repositorio figura como 0,0 GB, lo que puede indicar un redondeo de HuggingFace o una subida incompleta; conviene verificar los archivos antes de usarlo.
+- El tamano del repositorio figura como 0,0 GB, lo que puede indicar un redondeo de Hugging Face o una subida incompleta; conviene verificar los archivos antes de usarlo.
 - No debe emplearse en produccion, atencion al cliente, generacion de codigo ni ninguna tarea que requiera exactitud.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GGUFGuy/nanodex-500k-200m
+- Modelo en Hugging Face: https://huggingface.co/GGUFGuy/nanodex-500k-200m
 - Autor: https://huggingface.co/GGUFGuy
 - NanoDex Trainer (Space de entrenamiento): https://huggingface.co/spaces/hugging-science/nanodex-trainer
 - Dataset fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

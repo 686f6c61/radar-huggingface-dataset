@@ -6,7 +6,7 @@ SnapKitty OCR es una aplicación Android desarrollada por Snapkitty Collective, 
 
 La aplicación permite seleccionar imágenes de la galería o capturarlas con la cámara, etiquetarlas por capítulos, generar un sello WORM (Write Once Read Many) mediante hash SHA-256 y enviar cada página a tres servicios HTTP distintos: snapkitty-shell, ROBOB y ABZU IDE. El proyecto está orientado a un caso de uso muy específico: la ingesta de las notas manuscritas de una persona llamada Ahmad en un corpus digital denominado THE BOOK, que alimenta a un sistema de agentes para su análisis posterior.
 
-En el momento de la consulta, el repositorio en HuggingFace no contiene información sobre licencia, idiomas, pipeline ni métricas de descargas, y la búsqueda web no arroja resultados relevantes más allá de la propia model card. Por tanto, esta ficha se basa exclusivamente en el contenido del README y en los metadatos disponibles.
+En el momento de la consulta, el repositorio en Hugging Face no contiene información sobre licencia, idiomas, pipeline ni métricas de descargas, y la búsqueda web no arroja resultados relevantes más allá de la propia model card. Por tanto, esta ficha se basa exclusivamente en el contenido del README y en los metadatos disponibles.
 
 ## Especificaciones tecnicas
 
@@ -87,5 +87,5 @@ No se dispone de informacion suficiente para establecer una comparativa con otra
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/snapkitty-ocr
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/snapkitty-ocr
 - No se han encontrado otros enlaces relevantes en la busqueda web (los resultados obtenidos corresponden a un sitio educativo turco sin relacion con el proyecto).

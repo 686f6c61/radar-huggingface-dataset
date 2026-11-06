@@ -106,8 +106,8 @@ La informacion proporcionada no incluye modelos comparables con datos verificabl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lukasz-staniszewski/stable-audio-caa-mood
-- Paper (HuggingFace Papers): https://huggingface.co/papers/2602.11910
+- Repositorio en Hugging Face: https://huggingface.co/lukasz-staniszewski/stable-audio-caa-mood
+- Paper (Hugging Face Papers): https://huggingface.co/papers/2602.11910
 - Paper (arXiv): https://arxiv.org/abs/2602.11910
 - Modelo base referenciado en la configuracion: https://huggingface.co/stabilityai/stable-audio-open-1.0
 - La busqueda web realizada no devolvio ningun resultado relevante para este modelo; el resto de enlaces no esta disponible.

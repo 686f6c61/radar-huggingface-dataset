@@ -4,14 +4,14 @@
 
 Este modelo es una cuantización INT8 del modelo Pythia-6.9b de EleutherAI, realizada por fbaldassarri. El objetivo es reducir el tamaño y el consumo de memoria del modelo original manteniendo un rendimiento razonable, optimizando la inferencia en hardware Intel (CPU, iGPU Arc y NPU AI Boost). La cuantización se ha realizado con el framework Intel AutoRound v0.13.1, utilizando el algoritmo GPTQ (AutoGPTQ) con 8 bits, group size 64 y cuantización simétrica. El modelo base es un transformer causal GPT-NeoX entrenado en el dataset Pile, con licencia Apache 2.0. Esta versión está pensada para entornos con recursos limitados o para investigación en compresión de modelos.
 
-Según HuggingFace, el modelo tiene 2.152.210.432 parámetros, aunque el tamaño del repositorio (8.4 GB) sugiere que se trata del modelo completo de 6.9B en INT8. La longitud de contexto no se especifica en la información disponible.
+Según Hugging Face, el modelo tiene 2.152.210.432 parámetros, aunque el tamaño del repositorio (8.4 GB) sugiere que se trata del modelo completo de 6.9B en INT8. La longitud de contexto no se especifica en la información disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer causal (GPT-NeoX) |
-| Parametros totales | 2.152.210.432 (según HuggingFace; el modelo base Pythia-6.9b tiene 6.9B) |
+| Parametros totales | 2.152.210.432 (según Hugging Face; el modelo base Pythia-6.9b tiene 6.9B) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | INT8, group size 64, simétrico, GPTQ (AutoGPTQ) con AutoRound |
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Modelo | Cuantización | Parámetros | Contexto | Licencia |
 |---|---|---|---|---|
 | Pythia-6.9b (base) | FP32/FP16 | 6.9B (según nombre del modelo) | no disponible | Apache 2.0 |
-| Pythia-6.9b INT8 (este) | INT8 GPTQ | 2.152.210.432 (dato HuggingFace) | no disponible | Apache 2.0 |
+| Pythia-6.9b INT8 (este) | INT8 GPTQ | 2.152.210.432 (dato Hugging Face) | no disponible | Apache 2.0 |
 | Pythia-6.9b INT4 | INT4 GPTQ | no disponible | no disponible | Apache 2.0 |
 
 La versión INT4 del mismo autor (fbaldassarri/EleutherAI_pythia-6.9b-auto_gptq-int4-gs64-sym) ofrece una cuantización más agresiva, con menor consumo de memoria y mayor velocidad, pero con una pérdida de precisión mayor que la INT8.
@@ -78,7 +78,7 @@ La versión INT4 del mismo autor (fbaldassarri/EleutherAI_pythia-6.9b-auto_gptq-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbaldassarri/EleutherAI_pythia-6.9b-auto_gptq-int8-gs64-sym
+- Modelo en Hugging Face: https://huggingface.co/fbaldassarri/EleutherAI_pythia-6.9b-auto_gptq-int8-gs64-sym
 - Modelo base: https://huggingface.co/EleutherAI/pythia-6.9b
 - Versión INT4 del mismo autor: https://huggingface.co/fbaldassarri/EleutherAI_pythia-6.9b-auto_gptq-int4-gs64-sym
 - Framework Intel AutoRound: https://github.com/intel/auto-round

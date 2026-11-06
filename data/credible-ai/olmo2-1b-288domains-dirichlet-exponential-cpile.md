@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en l
 |---|---|---|---|---|---|
 | olmo2-1B-288domains-dirichlet-exponential-cpile | 1,41B | no disponible | 32B tokens, WebOrganizer (288 dominios, mix Olmix) | MIT | Artefacto de investigacion (LinMix) |
 | OLMo 2 1B (AI2) | ~1,5B | no disponible | Corpus OLMo 2 (multi-B tokens) | Apache 2.0 | Modelo base de proposito general |
-| SmolLM2 1.7B (HuggingFace) | 1,7B | 8.192 tokens | ~11B tokens (SmolLM-Corpus) | Apache 2.0 | Modelo base/ajustado para uso general |
+| SmolLM2 1.7B (Hugging Face) | 1,7B | 8.192 tokens | ~11B tokens (SmolLM-Corpus) | Apache 2.0 | Modelo base/ajustado para uso general |
 
 Nota: las alternativas listadas son modelos de escala similar orientados a uso general; el modelo de esta ficha es un artefacto experimental centrado en la metodologia de mezcla de datos, por lo que su rendimiento en benchmarks generales no es comparable directamente.
 
@@ -76,7 +76,7 @@ Nota: las alternativas listadas son modelos de escala similar orientados a uso g
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-288domains-dirichlet-exponential-cpile
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-288domains-dirichlet-exponential-cpile
 - Paper LinMix: https://arxiv.org/abs/2610.37390
 - Codigo (GitHub): https://github.com/credibleai/linmix
 - Enjambre de modelos proxy (60M): https://huggingface.co/credible-ai/olmo2-60M-288domains-dirichlet

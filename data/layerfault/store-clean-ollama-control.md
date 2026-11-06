@@ -64,7 +64,7 @@ No disponible. No existe ningún modelo comparable porque este repositorio no es
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/LayerFault/store-clean-ollama-control
+- Repositorio de Hugging Face: https://huggingface.co/LayerFault/store-clean-ollama-control
 - Repositorio de Layerfault en GitHub (proyecto relacionado): https://github.com/izm1chael/layerfault
 - Guía de limpieza de modelos Ollama (contexto de uso): https://mole.fit/blog/how-to-remove-ai-tool-leftovers-mac
 - Guía de limpieza de caché de Ollama: https://markaicode.com/clear-ollama-model-cache-storage-guide/

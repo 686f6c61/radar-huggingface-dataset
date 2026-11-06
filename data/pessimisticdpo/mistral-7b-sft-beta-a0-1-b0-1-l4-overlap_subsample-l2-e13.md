@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e13` aloja un checkpoint publicado en HuggingFace por el usuario PessimisticDPO. La model card asociada es la plantilla automática de `transformers` sin un solo campo cumplimentado: no declara desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Tampoco hay pipeline declarado, y el repositorio acumula 0 descargas y 0 likes. El tamaño del repo es de 0,2 GB, una cifra anómala para un modelo cuya denominación incluye "7b", ya que un transformer de 7 000 millones de parámetros en fp16 ocupa del orden de 14 GB.
+El repositorio `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e13` aloja un checkpoint publicado en Hugging Face por el usuario PessimisticDPO. La model card asociada es la plantilla automática de `transformers` sin un solo campo cumplimentado: no declara desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Tampoco hay pipeline declarado, y el repositorio acumula 0 descargas y 0 likes. El tamaño del repo es de 0,2 GB, una cifra anómala para un modelo cuya denominación incluye "7b", ya que un transformer de 7 000 millones de parámetros en fp16 ocupa del orden de 14 GB.
 
 El único contenido informativo es el propio identificador. El segmento `mistral-7b-sft-beta` coincide con el checkpoint SFT de HuggingFaceH4 sobre Mistral 7B que sirvió de base para Zephyr-7B-beta, y los sufijos `a0.1`, `b0.1`, `L4`, `overlap_subsample`, `l2` y `e13` apuntan a hiperparámetros de un experimento de optimización tipo DPO (posiblemente una variante "pesimista" del objetivo, con coeficientes alpha y beta de 0,1) sobre determinadas capas y con submuestreo de solapamiento, en la época 13. Se trata de una hipótesis razonable a partir del nombre, no de un dato confirmado por el autor.
 
@@ -83,10 +83,10 @@ Los datos de los modelos comparables proceden de sus fichas públicas ampliament
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (`PessimisticDPO/mistral-7b-sft-beta-...`) | no disponible (¿~7B?) | no disponible | no disponible | HuggingFace, 0 descargas, repo de 0,2 GB |
-| Mistral 7B Instruct v0.1 | 7,3B | 8k (atención de ventana deslizante de 4k) | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Zephyr 7B beta | 7,24B | 8k | MIT | HuggingFace |
-| Llama 2 7B Chat | 6,74B | 4k | Licencia comunitaria de Llama 2 | HuggingFace y Meta |
+| Este modelo (`PessimisticDPO/mistral-7b-sft-beta-...`) | no disponible (¿~7B?) | no disponible | no disponible | Hugging Face, 0 descargas, repo de 0,2 GB |
+| Mistral 7B Instruct v0.1 | 7,3B | 8k (atención de ventana deslizante de 4k) | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Zephyr 7B beta | 7,24B | 8k | MIT | Hugging Face |
+| Llama 2 7B Chat | 6,74B | 4k | Licencia comunitaria de Llama 2 | Hugging Face y Meta |
 
 Frente a estas alternativas, el modelo analizado no ofrece ningún dato verificable de rendimiento, contexto o licencia, por lo que no puede recomendarse sobre ellas para ningún uso en producción. Su único valor diferencial potencial es el de artefacto de investigación sobre optimización con preferencias, terreno en el que Zephyr 7B beta sí documenta su receta completa (SFT sobre `mistral-7b-sft-beta` seguido de DPO con UltraChat y UltraFeedback).
 
@@ -106,7 +106,7 @@ Frente a estas alternativas, el modelo analizado no ofrece ningún dato verifica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e13
+- Modelo en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e13
 - Referencia del tag arXiv presente en el Hub (Lacoste et al., estimación de emisiones): https://arxiv.org/abs/1910.09700
 - Posible modelo base, sin confirmar por el autor: https://huggingface.co/HuggingFaceH4/mistral-7b-sft-beta
 - Búsqueda web: no se ha recuperado ningún resultado relacionado con el modelo. Las únicas coincidencias devueltas corresponden a una librería de Oakland (California) ajena por completo al ámbito de la inteligencia artificial, por lo que no se incluyen.

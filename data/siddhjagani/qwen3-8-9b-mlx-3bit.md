@@ -81,7 +81,7 @@ La comparativa se limita a aspectos de formato y cuantización, ya que no hay da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SiddhJagani/Qwen3.8-9B-mlx-3Bit
+- Hugging Face: https://huggingface.co/SiddhJagani/Qwen3.8-9B-mlx-3Bit
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-9B
 - Conversión alternativa: https://huggingface.co/PocketAiHub/Qwen3.8-9B-MLX
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8

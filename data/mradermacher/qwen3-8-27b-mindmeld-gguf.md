@@ -101,7 +101,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-MindMeld-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-MindMeld-GGUF
 - Modelo base: https://huggingface.co/nightmedia/Qwen3.8-27B-MindMeld
 - Página de resumen y descargas del autor: https://hf.tst.eu/model#Qwen3.8-27B-MindMeld-GGUF
 - Cuantización del Qwen3.8-27B oficial: https://huggingface.co/mradermacher/Qwen3.8-27B-GGUF

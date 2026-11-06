@@ -80,7 +80,7 @@ La comparativa se basa en el modelo base y alternativas conocidas. El fine-tune 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SSGenius123/codefix-model
+- Modelo en Hugging Face: https://huggingface.co/SSGenius123/codefix-model
 - Modelo base (Unsloth): https://huggingface.co/unsloth/qwen2.5-coder-1.5b-instruct-bnb-4bit
 - Librería Unsloth: https://github.com/unslothai/unsloth
 - Repositorio de Qwen2.5-Coder (referencia): https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct

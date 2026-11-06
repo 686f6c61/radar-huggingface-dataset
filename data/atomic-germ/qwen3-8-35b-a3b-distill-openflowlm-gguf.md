@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomic-Germ/Qwen3.8-35B-A3B-Distill-OpenFlowLM-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/Qwen3.8-35B-A3B-Distill-OpenFlowLM-GGUF
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-35B-A3B-Distill
 - Cuantizaciones estaticas de referencia: https://huggingface.co/mradermacher/Qwen3.8-35B-A3B-Distill-GGUF
 - Cuantizaciones imatrix de referencia: https://huggingface.co/mradermacher/Qwen3.8-35B-A3B-Distill-i1-GGUF

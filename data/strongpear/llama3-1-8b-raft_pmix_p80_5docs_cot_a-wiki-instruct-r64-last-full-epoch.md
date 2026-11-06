@@ -6,7 +6,7 @@ Este repositorio publica un adaptador LoRA (PEFT) sobre el modelo base meta-llam
 
 El problema que aborda RAFT es conocido en el ambito de RAG: los modelos ajustados solo con datos limpios de QA tienden a fallar cuando el contexto recuperado contiene documentos irrelevantes o distractores. El ajuste con documentos distractores y respuestas razonadas busca que el modelo aprenda a discriminar que fragmentos son utiles y a citarlos, en lugar de alucinar sobre el contexto. Es relevante para quien construya sistemas RAG con Llama 3.1 y quiera evaluar si un adaptador de este tipo mejora la fidelidad al contexto.
 
-La relevancia practica del repositorio es limitada por su estado: no tiene descargas, no tiene likes, la model card es la plantilla vacia de HuggingFace sin ninguna seccion completada, no declara licencia ni idiomas, y no aporta resultados de evaluacion ni hiperparametros de entrenamiento. El repositorio ocupa 0,7 GB y fue creado y actualizado el 19 de septiembre de 2026, con dos minutos de diferencia entre ambos eventos.
+La relevancia practica del repositorio es limitada por su estado: no tiene descargas, no tiene likes, la model card es la plantilla vacia de Hugging Face sin ninguna seccion completada, no declara licencia ni idiomas, y no aporta resultados de evaluacion ni hiperparametros de entrenamiento. El repositorio ocupa 0,7 GB y fue creado y actualizado el 19 de septiembre de 2026, con dos minutos de diferencia entre ambos eventos.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (RAFT + CoT sobre Llama 3.1 8B) | 8,03 B en el base + adaptador LoRA de rango 64 | 128.000 tokens (heredado del base) | Adaptador LoRA sobre modelo instructivo | No declarada en el repositorio; sujeta a la licencia de Llama 3.1 | HuggingFace, 0 descargas, 0 likes |
+| Este adaptador (RAFT + CoT sobre Llama 3.1 8B) | 8,03 B en el base + adaptador LoRA de rango 64 | 128.000 tokens (heredado del base) | Adaptador LoRA sobre modelo instructivo | No declarada en el repositorio; sujeta a la licencia de Llama 3.1 | Hugging Face, 0 descargas, 0 likes |
 | meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Modelo completo ajustado con instrucciones y RLHF | Llama 3.1 Community License | Ampliamente disponible, amplio ecosistema de cuantizaciones |
 | meta-llama/Llama-3.1-8B | 8,03 B | 128.000 tokens | Modelo base sin ajuste | Llama 3.1 Community License | Ampliamente disponible |
 | Otros adaptadores RAFT publicos sobre Llama 3.1 8B | No disponible | No disponible | No disponible | No disponible | No identificados en la informacion disponible |
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones. La comp
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla por defecto de HuggingFace sin ninguna seccion completada. No hay informacion sobre datos de entrenamiento, hiperparametros, evaluacion, sesgos ni uso previsto.
+- Documentacion inexistente: la model card es la plantilla por defecto de Hugging Face sin ninguna seccion completada. No hay informacion sobre datos de entrenamiento, hiperparametros, evaluacion, sesgos ni uso previsto.
 - Sin validacion publica: cero descargas y cero likes en el momento de redactar la ficha. No hay evidencia de terceros sobre su comportamiento.
 - Licencia ambigua: el repositorio no declara licencia. Cualquier uso comercial debe verificar primero las condiciones de la Llama 3.1 Community License, que impone restricciones (entre otras, obligaciones de atribucion, limite de 700 millones de usuarios mensuales y requisitos de denominacion para modelos derivados).
 - Dependencia del modelo base: es un adaptador, no un modelo autonomo. Requiere descargar meta-llama/Llama-3.1-8B, aceptar su licencia y cargar los pesos por separado o fusionarlos.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones. La comp
 - Ventana de contexto en entrenamiento: aunque el modelo base soporta 128.000 tokens, no hay constancia de que el adaptador se haya entrenado con documentos largos. El rendimiento con contextos muy extensos puede degradarse.
 - Metadatos anomalos: las fechas de creacion y actualizacion del repositorio (19 de septiembre de 2026) son posteriores a las habituales para modelos Llama 3.1, lo que sugiere metadatos generados automaticamente o incorrectos.
 - Sesgos: no evaluados ni documentados. Se heredan los del corpus de preentrenamiento de Llama 3.1 y los del dataset de ajuste, desconocido.
-- Sin soporte: no hay repositorio de codigo, paper, demo ni contacto del autor mas alla del identificador de HuggingFace `strongpear`.
+- Sin soporte: no hay repositorio de codigo, paper, demo ni contacto del autor mas alla del identificador de Hugging Face `strongpear`.
 
 ## Enlaces
 

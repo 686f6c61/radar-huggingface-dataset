@@ -96,7 +96,7 @@ Las diferencias entre este checkpoint y la versión patched stock son pequeñas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Launch80/Qwen3.8-27B-GPTQ-Int4-baked
+- Hugging Face: https://huggingface.co/Launch80/Qwen3.8-27B-GPTQ-Int4-baked
 - Modelo base (Qwen): https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint base de SergiioB: https://huggingface.co/SergiioB/Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16
 - Repositorio GitHub de Launch80 (mediciones y scripts): https://github.com/launch80/B65

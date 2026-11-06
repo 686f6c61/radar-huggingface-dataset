@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SAD1CXZC12DXZ/my-awesome-model-best` es un checkpoint de un modelo de lenguaje denominado "MyAwesomeModel", publicado en HuggingFace con licencia MIT. Según la información disponible, se trata de un modelo de tipo BERT (según las etiquetas del repositorio) orientado a extracción de características y evaluación. El autor ha seleccionado el checkpoint `step_1000` como el mejor de entre varios, basándose en una puntuación de evaluación global de 0.710.
+El modelo `SAD1CXZC12DXZ/my-awesome-model-best` es un checkpoint de un modelo de lenguaje denominado "MyAwesomeModel", publicado en Hugging Face con licencia MIT. Según la información disponible, se trata de un modelo de tipo BERT (según las etiquetas del repositorio) orientado a extracción de características y evaluación. El autor ha seleccionado el checkpoint `step_1000` como el mejor de entre varios, basándose en una puntuación de evaluación global de 0.710.
 
 Este modelo no parece estar destinado a uso en producción directo, sino que es un artefacto de evaluación dentro de un proceso de entrenamiento. La model card no ofrece detalles sobre arquitectura, tamaño, contexto o datos de entrenamiento, por lo que su utilidad práctica es limitada para desarrolladores e investigadores que buscan un modelo listo para integrar. No obstante, los resultados de evaluación reportados cubren un amplio espectro de tareas (razonamiento, código, traducción, etc.), lo que sugiere que el modelo subyacente tiene capacidades genéricas de lenguaje.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tpn005-d2-e2d es un modelo de lenguaje conversacional publicado en HuggingFace por el usuario tatjr13. Se distribuye exclusivamente en formato GGUF, lo que indica que esta pensado para inferencia local mediante runtimes compatibles con este formato (llama.cpp, Ollama, LM Studio, entre otros). El repositorio ocupa 7,2 GB y el recuento real de parametros en safetensors es de 8.489.553.920, es decir, aproximadamente 8,5 mil millones de parametros, lo que lo situa en la categoria de modelos de tamano medio, aptos para ejecucion en GPUs de consumo con las cuantizaciones adecuadas.
+tpn005-d2-e2d es un modelo de lenguaje conversacional publicado en Hugging Face por el usuario tatjr13. Se distribuye exclusivamente en formato GGUF, lo que indica que esta pensado para inferencia local mediante runtimes compatibles con este formato (llama.cpp, Ollama, LM Studio, entre otros). El repositorio ocupa 7,2 GB y el recuento real de parametros en safetensors es de 8.489.553.920, es decir, aproximadamente 8,5 mil millones de parametros, lo que lo situa en la categoria de modelos de tamano medio, aptos para ejecucion en GPUs de consumo con las cuantizaciones adecuadas.
 
 La informacion publica disponible es muy limitada: no se especifica la arquitectura, el pipeline, la licencia, los idiomas soportados, los datos de entrenamiento ni los resultados de benchmarks. El modelo lleva etiquetas de tipo conversacional (conversational), compatible con endpoints (endpoints_compatible) y generado con matriz de importancia (imatrix), lo que sugiere un proceso de cuantizacion cuidado para preservar calidad en precisiones reducidas.
 
@@ -75,8 +75,8 @@ No disponible. El autor no publica datos de rendimiento del modelo, por lo que n
 - Modelo practicamente sin validacion comunitaria: con 12 descargas y 0 likes, no hay evidencia externa de calidad ni de estabilidad.
 - Formato GGUF exclusivamente: no se ofrecen pesos originales en safetensors, lo que dificulta el fine-tuning, la conversion a otros formatos o el despliegue en servidores de alto rendimiento como vLLM o TGI.
 - Trazabilidad: el identificador tpn005-d2-e2d no aporta informacion sobre la procedencia ni el linaje del modelo; se desconoce si deriva de otro modelo base y bajo que condiciones.
-- Fecha de publicacion: el repositorio figura creado el 2026-10-08, fecha posterior a la actual, lo que conviene verificar en la propia pagina de HuggingFace.
+- Fecha de publicacion: el repositorio figura creado el 2026-10-08, fecha posterior a la actual, lo que conviene verificar en la propia pagina de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tatjr13/tpn005-d2-e2d
+- Hugging Face: https://huggingface.co/tatjr13/tpn005-d2-e2d

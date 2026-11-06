@@ -79,7 +79,7 @@ No se dispone de informacion sobre adaptadores LoRA comparables en la informacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/flaukowski/kannaka-brain-v1-lora
+- Hugging Face: https://huggingface.co/flaukowski/kannaka-brain-v1-lora
 - Repositorio GGUF (mencionado en la model card): https://huggingface.co/flaukowski/kannaka-brain-v1-GGUF
 - GitHub del autor: https://github.com/flaukowski
 - Repositorio `kannaka-memory` (diseno ADR-0057): https://github.com/NickFlach/kannaka-memory

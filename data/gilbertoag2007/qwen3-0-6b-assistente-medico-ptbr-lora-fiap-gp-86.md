@@ -72,8 +72,8 @@ Se comparan el adaptador con su modelo base y con otro adaptador LoRA sobre Qwen
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3-0.6B (base) | 598.344.000 | No disponible en la info | Apache 2.0 | Público en HuggingFace |
-| Adaptador médico PT-BR LoRA | 2.293.760 entrenables (sobre 598.344.000) | 512 tokens (límite de entrenamiento) | Apache 2.0 | Público en HuggingFace |
+| Qwen/Qwen3-0.6B (base) | 598.344.000 | No disponible en la info | Apache 2.0 | Público en Hugging Face |
+| Adaptador médico PT-BR LoRA | 2.293.760 entrenables (sobre 598.344.000) | 512 tokens (límite de entrenamiento) | Apache 2.0 | Público en Hugging Face |
 | Arabic Assistant using Qwen3-0.6B LoRA (GitHub) | No disponible | No disponible | No disponible | Repo de GitHub (solo descripción, sin especificaciones) |
 
 La comparativa no puede evaluar el rendimiento de forma completa porque no existen benchmarks estandarizados publicados para estos adaptadores. El adaptador médico destaca por su enfoque en un dominio específico y por haber sido entrenado en recursos mínimos (CPU).
@@ -90,5 +90,5 @@ La comparativa no puede evaluar el rendimiento de forma completa porque no exist
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/gilbertoag2007/qwen3-0.6b-assistente-medico-ptbr-lora-fiap-gp-86
-- HuggingFace (modelo base): https://huggingface.co/Qwen/Qwen3-0.6B
+- Hugging Face (adaptador): https://huggingface.co/gilbertoag2007/qwen3-0.6b-assistente-medico-ptbr-lora-fiap-gp-86
+- Hugging Face (modelo base): https://huggingface.co/Qwen/Qwen3-0.6B

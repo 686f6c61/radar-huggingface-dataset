@@ -75,7 +75,7 @@ La comparativa se limita a los modelos del mismo autor y al checkpoint base, ya 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0xSero/DeepSeek-V4-Flash-0731-EXL3-3.0bpw
+- Repositorio Hugging Face: https://huggingface.co/0xSero/DeepSeek-V4-Flash-0731-EXL3-3.0bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Repo de despliegue en un DGX Spark (SparkInfer): https://github.com/0xSero/deepseek-v4-flash-0731-spark-sparkinfer
 - Repo de despliegue en dos DGX Spark (FP8 original): https://github.com/MiaAI-Lab/DeepSeek-v4-Flash-DSpark-2x-DGX-Spark

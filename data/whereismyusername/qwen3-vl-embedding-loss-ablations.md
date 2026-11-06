@@ -29,7 +29,7 @@ Es relevante para investigadores que trabajen en embeddings multimodales con dat
 
 ## Arquitectura y entrenamiento
 
-El backbone es Qwen3-VL-Embedding-2B, un modelo de vectores multimodal unificado de la familia Qwen3-VL que acepta texto, imagen y vídeo (en modalidad única o mixta) y produce representaciones vectoriales comunes, pensado para recuperación cross-modal, búsqueda de imágenes o vídeo, clustering y etiquetado. Sobre él se aplica un adaptador LoRA de rango 16 y alpha 32 con dropout 0.1, de modo que los checkpoints publicados contienen solo los pesos del adaptador; el modelo base se reconstruye a partir de `model_name_or_path` al reanudar. En la model card la ruta indicada es local (`/marimo/models/Qwen3-VL-Embedding-2B`), por lo que es necesario sustituirla por la ruta o el identificador de HuggingFace del backbone.
+El backbone es Qwen3-VL-Embedding-2B, un modelo de vectores multimodal unificado de la familia Qwen3-VL que acepta texto, imagen y vídeo (en modalidad única o mixta) y produce representaciones vectoriales comunes, pensado para recuperación cross-modal, búsqueda de imágenes o vídeo, clustering y etiquetado. Sobre él se aplica un adaptador LoRA de rango 16 y alpha 32 con dropout 0.1, de modo que los checkpoints publicados contienen solo los pesos del adaptador; el modelo base se reconstruye a partir de `model_name_or_path` al reanudar. En la model card la ruta indicada es local (`/marimo/models/Qwen3-VL-Embedding-2B`), por lo que es necesario sustituirla por la ruta o el identificador de Hugging Face del backbone.
 
 El entrenamiento se organiza como un plan de ablación con cinco ejecuciones y semilla fija (100): una completa con las cuatro pérdidas activas y cuatro variantes que desactivan L1 (cross-entropy sobre datos sintéticos), L2 (regularización de prototipos reales), L3 (regularización de prototipos sintéticos) o Leps (consistencia). La combinación de datos mezcla 16 imágenes reales y 64 sintéticas por clase, con evaluación sobre 80 imágenes por clase en cada época y test completo al final. El nombre de cada experimento incorpora un hash calculado a partir de los hiperparámetros con fingerprint, de forma que cualquier cambio de configuración genera un experimento nuevo y evita mezclar runs. No se detallan en la información disponible el número total de tokens, la composición exacta del generador de imágenes sintéticas, ni si hubo etapas de RLHF o DPO (poco probables en un modelo de embeddings).
 
@@ -82,7 +82,7 @@ La comparación directa no es limpia: este repositorio es un conjunto de adaptad
 
 | Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (LoRA sobre Qwen3-VL-Embedding-2B) | ~2B en el backbone; adaptadores no cuantificados | no disponible | imagen y texto (vídeo según el backbone) | no disponible | Repo público en HuggingFace, 0 descargas, 0 likes |
+| Este repositorio (LoRA sobre Qwen3-VL-Embedding-2B) | ~2B en el backbone; adaptadores no cuantificados | no disponible | imagen y texto (vídeo según el backbone) | no disponible | Repo público en Hugging Face, 0 descargas, 0 likes |
 | Qwen3-VL-Embedding (familia base de Qwen) | no disponible en la información | no disponible | texto, imagen y vídeo, única o mixta | no disponible en la información | Documentado en Model Studio y en el repositorio Qwen3-VL |
 | CLIP (OpenAI) | no disponible en la información | no disponible | imagen y texto | no disponible en la información | Referencia habitual de retrieval cross-modal; no se dispone de datos verificados en esta búsqueda |
 | SigLIP | no disponible en la información | no disponible | imagen y texto | no disponible en la información | Alternativa frecuente en clasificación zero-shot; sin datos verificados en esta búsqueda |
@@ -104,7 +104,7 @@ El eje real de comparación debería ser la receta de ajuste (con y sin cada pé
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/whereismyusername/qwen3-vl-embedding-loss-ablations
+- Repositorio en Hugging Face: https://huggingface.co/whereismyusername/qwen3-vl-embedding-loss-ablations
 - Documentación de Qwen3-VL-Embedding en Alibaba Cloud Model Studio: https://help.aliyun.com/en/model-studio/qwen3-vl-embedding
 - Documentación alternativa en Model Studio: https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-vl-embedding
 - Repositorio oficial de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL

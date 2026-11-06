@@ -70,6 +70,6 @@ No se dispone de información sobre modelos comparables de la misma categoría c
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/CtrlCreeper/Qwen3.8-27B-Cold-Fusion-Heretic-Fable-Heretic-GGUF)
-- [Modelo original (sin cuantizar) en HuggingFace](https://huggingface.co/CtrlCreeper/Qwen3.8-27B-Cold-Fusion-Heretic-Fable-Heretic)
-- [Versión mxfp8-mlx en HuggingFace](https://huggingface.co/CtrlCreeper/Qwen3.8-27B-Cold-Fusion-Heretic-Fable-Heretic-mxfp8-mlx)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/CtrlCreeper/Qwen3.8-27B-Cold-Fusion-Heretic-Fable-Heretic-GGUF)
+- [Modelo original (sin cuantizar) en Hugging Face](https://huggingface.co/CtrlCreeper/Qwen3.8-27B-Cold-Fusion-Heretic-Fable-Heretic)
+- [Versión mxfp8-mlx en Hugging Face](https://huggingface.co/CtrlCreeper/Qwen3.8-27B-Cold-Fusion-Heretic-Fable-Heretic-mxfp8-mlx)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ameliakartika/indonesian-legal-ai-assistant-gemma-2b` es un ajuste fino (fine-tuning) del modelo `unsloth/gemma-2b-it-bnb-4bit`, que a su vez es la version instructiva de Gemma 2B de Google cuantizada a 4 bits con bitsandbytes. El autor del ajuste es el usuario de HuggingFace `ameliakartika` y lo ha publicado bajo licencia Apache-2.0. Por nombre y por el identificador del repositorio, el objetivo declarado es construir un asistente para consultas legales en indonesio, aunque la model card no documenta ni el conjunto de datos ni el procedimiento de entrenamiento.
+`ameliakartika/indonesian-legal-ai-assistant-gemma-2b` es un ajuste fino (fine-tuning) del modelo `unsloth/gemma-2b-it-bnb-4bit`, que a su vez es la version instructiva de Gemma 2B de Google cuantizada a 4 bits con bitsandbytes. El autor del ajuste es el usuario de Hugging Face `ameliakartika` y lo ha publicado bajo licencia Apache-2.0. Por nombre y por el identificador del repositorio, el objetivo declarado es construir un asistente para consultas legales en indonesio, aunque la model card no documenta ni el conjunto de datos ni el procedimiento de entrenamiento.
 
 El modelo base Gemma 2B es un transformer decoder-only de aproximadamente 2.000 millones de parametros, con una ventana de contexto de 8.192 tokens y un vocabulario SentencePiece de 256.000 entradas. Es un modelo pequeno, pensado para ejecutarse en hardware de consumo, lo que lo hace atractivo para prototipos de dominio especifico mediante LoRA o QLoRA. En este caso, el ajuste se realizo con la libreria Unsloth, que acelera el entrenamiento aproximadamente 2x y reduce el consumo de memoria frente a implementaciones estandar.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada pero ilustrativa: se trata de un ejemplo
 | Libreria de publicacion | transformers (tags: text-generation-inference, unsloth, trl) |
 | Tamano del repositorio | 0,1 GB |
 | Modelo base | unsloth/gemma-2b-it-bnb-4bit |
-| Fecha de publicacion | 2026-09-14 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-14 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -79,11 +79,11 @@ No hay datos de rendimiento publicados para este ajuste, por lo que la comparaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| indonesian-legal-ai-assistant-gemma-2b | ~2B | 8.192 tokens (heredado) | apache-2.0 declarada | HuggingFace, 0 descargas | Sin benchmarks ni documentacion de datos |
-| Gemma 2B IT (base) | ~2B | 8.192 tokens | Gemma Terms of Use | HuggingFace, ampliamente usado | Punto de partida del ajuste; multilingue limitado |
-| Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 tokens | Apache-2.0 | HuggingFace | Contexto mucho mayor y soporte multilingue amplio, incluido indonesio |
-| Llama 3.2 1B Instruct | ~1,2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace | Contexto muy superior; licencia no Apache |
-| Phi-3 Mini | ~3,8B | 128.000 tokens | MIT | HuggingFace | Mayor capacidad de razonamiento a costa de mas VRAM |
+| indonesian-legal-ai-assistant-gemma-2b | ~2B | 8.192 tokens (heredado) | apache-2.0 declarada | Hugging Face, 0 descargas | Sin benchmarks ni documentacion de datos |
+| Gemma 2B IT (base) | ~2B | 8.192 tokens | Gemma Terms of Use | Hugging Face, ampliamente usado | Punto de partida del ajuste; multilingue limitado |
+| Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 tokens | Apache-2.0 | Hugging Face | Contexto mucho mayor y soporte multilingue amplio, incluido indonesio |
+| Llama 3.2 1B Instruct | ~1,2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face | Contexto muy superior; licencia no Apache |
+| Phi-3 Mini | ~3,8B | 128.000 tokens | MIT | Hugging Face | Mayor capacidad de razonamiento a costa de mas VRAM |
 
 La ventaja competitiva de este ajuste frente a esas alternativas no esta demostrada. Para un asistente legal en indonesio, Qwen2.5-1.5B-Instruct o Qwen2.5-3B-Instruct parten de un soporte multilingue declarado y un contexto varias veces mayor, lo que los hace candidatos mas razonables a priori.
 
@@ -104,9 +104,9 @@ La ventaja competitiva de este ajuste frente a esas alternativas no esta demostr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ameliakartika/indonesian-legal-ai-assistant-gemma-2b
+- Modelo en Hugging Face: https://huggingface.co/ameliakartika/indonesian-legal-ai-assistant-gemma-2b
 - Modelo base: https://huggingface.co/unsloth/gemma-2b-it-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Informe tecnico de Gemma (Google, arXiv:2403.08295): https://arxiv.org/abs/2403.08295
-- Coleccion de Gemma en HuggingFace: https://huggingface.co/google/gemma-2b
+- Coleccion de Gemma en Hugging Face: https://huggingface.co/google/gemma-2b
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms

@@ -92,7 +92,7 @@ Frente a un modelo causal del mismo tamaño, la diferencia práctica es que Agen
 
 - Calibración mejorable: el ECE declarado es 0,1687, relativamente alto, de modo que las probabilidades no deben tratarse como frecuencias fiables sin recalibración sobre datos propios antes de usarlas para umbrales automáticos.
 - Ningún resultado está verificado: las cuatro métricas del model-index figuran con `verified: false` y proceden del propio autor, sin artefacto de evaluación independiente publicado en la información disponible.
-- Adopción nula: 0 descargas y 0 likes en HuggingFace, sin validación por parte de terceros ni informes de uso en producción.
+- Adopción nula: 0 descargas y 0 likes en Hugging Face, sin validación por parte de terceros ni informes de uso en producción.
 - `margin` en la primitiva de elección no es una probabilidad de éxito: la model card advierte explícitamente de que es la preferencia dentro del conjunto pasado. Para obtener una probabilidad real de éxito hay que plantear una booleana por acción y calibrarla con resultados propios.
 - Contexto limitado y estricto: 2.048 tokens, con rechazo de la entrada si se excede. Diffs, trazas o hilos largos deben resumirse o trocearse antes de la llamada.
 - Idioma restringido: solo inglés y chino declarados. El castellano no está soportado oficialmente, lo que limita su uso directo en flujos en español sin validación previa.
@@ -105,7 +105,7 @@ Frente a un modelo causal del mismo tamaño, la diferencia práctica es que Agen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aimeigaoshou/agent-jev
+- Modelo en Hugging Face: https://huggingface.co/aimeigaoshou/agent-jev
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Dataset de evaluación: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - Repositorio de código (servidor y cliente): https://github.com/malevrigns/agent-jev

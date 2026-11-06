@@ -55,10 +55,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LIF1014/ptdbench-verl-coding-tasks-function-call | 1,54B | 32.768 | Apache-2.0 | HuggingFace |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 | Apache-2.0 | HuggingFace |
-| meta-llama/Llama-3.2-1B-Instruct | 1,23B | 128.000 | Llama 3.2 Community License | HuggingFace |
-| google/gemma-2-2b-it | 2,6B | 8.192 | Gemma Terms of Use | HuggingFace |
+| LIF1014/ptdbench-verl-coding-tasks-function-call | 1,54B | 32.768 | Apache-2.0 | Hugging Face |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 | Apache-2.0 | Hugging Face |
+| meta-llama/Llama-3.2-1B-Instruct | 1,23B | 128.000 | Llama 3.2 Community License | Hugging Face |
+| google/gemma-2-2b-it | 2,6B | 8.192 | Gemma Terms of Use | Hugging Face |
 
 El modelo se diferencia de su base por el fine-tune específico en coding y function calling, aunque no hay datos que demuestren una mejora cuantitativa. Comparado con Llama-3.2-1B, tiene un contexto menor pero una licencia más permisiva. Gemma-2-2b es más grande y con contexto menor, pero también con licencia restrictiva.
 
@@ -73,7 +73,7 @@ El modelo se diferencia de su base por el fine-tune específico en coding y func
 
 ## Enlaces
 
-- [HuggingFace - LIF1014/ptdbench-verl-coding-tasks-function-call](https://huggingface.co/LIF1014/ptdbench-verl-coding-tasks-function-call)
+- [Hugging Face - LIF1014/ptdbench-verl-coding-tasks-function-call](https://huggingface.co/LIF1014/ptdbench-verl-coding-tasks-function-call)
 - [Blog oficial de Qwen2.5](https://qwenlm.github.io/blog/qwen2.5/)
 - [GitHub de Qwen2.5](https://github.com/QwenLM/Qwen2.5)
 - [Documentación de Qwen](https://qwen.readthedocs.io/en/latest/)

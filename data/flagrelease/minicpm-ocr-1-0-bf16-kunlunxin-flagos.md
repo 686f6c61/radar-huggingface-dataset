@@ -71,9 +71,9 @@ Datos adicionales aportados por el autor (build original, no esta build): 93,68 
 
 | Modelo | Parametros | Contexto | OcrBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR 1.0 (esta build, KUNLUNXIN FlagOS) | 1,3B | 32.768 | 78,4 | Apache 2.0 | HuggingFace |
-| MiniCPM-OCR 1.0 (NVIDIA nativo) | 1,3B | 32.768 | 80,5 | Apache 2.0 | HuggingFace |
-| MiniCPM-OCR Jev | 2B | no disponible | no disponible (AUROC 0,936 en JevOCRBench) | no disponible | HuggingFace |
+| MiniCPM-OCR 1.0 (esta build, KUNLUNXIN FlagOS) | 1,3B | 32.768 | 78,4 | Apache 2.0 | Hugging Face |
+| MiniCPM-OCR 1.0 (NVIDIA nativo) | 1,3B | 32.768 | 80,5 | Apache 2.0 | Hugging Face |
+| MiniCPM-OCR Jev | 2B | no disponible | no disponible (AUROC 0,936 en JevOCRBench) | no disponible | Hugging Face |
 | Qwen3.5-397B-A17B (referencia del autor para calidad de inspeccion) | 397B totales / 17B activos | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa con modelos OCR de terceros (por ejemplo, variantes de PaddleOCR o Donut) no esta disponible en la informacion proporcionada.
@@ -92,7 +92,7 @@ La comparativa con modelos OCR de terceros (por ejemplo, variantes de PaddleOCR 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-OCR-1.0-kunlunxin-FlagOS
+- Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-OCR-1.0-kunlunxin-FlagOS
 - AnythingLLM: https://anythingllm.com/
 - Imagen Docker FlagOS: `harbor.baai.ac.cn/flagrelease-public/minicpm-ocr-1.0-kunlunxin-p800-gems5.4.0-pluginfl-0601420-vllm0.24.0-xrt5.0.21.47:20261022`
 - Repositorio de pesos via ModelScope: `modelscope download --model FlagRelease/MiniCPM-OCR-1.0-kunlunxin-FlagOS`

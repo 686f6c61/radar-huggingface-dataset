@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kulta801/liam es un adaptador LoRA de tipo DreamBooth para generacion de imagenes texto-a-imagen, publicado por el usuario kulta801 en HuggingFace. No es un modelo autonomo: se entrena sobre krea/Krea-2-Raw y se ejecuta sobre krea/Krea-2-Turbo, los dos checkpoints de la familia Krea 2 que la propia model card documenta. Su funcion es inyectar un sujeto o concepto personalizado, activado mediante la palabra clave `LIAMX`, dentro del pipeline `Krea2Pipeline` de la libreria diffusers.
+kulta801/liam es un adaptador LoRA de tipo DreamBooth para generacion de imagenes texto-a-imagen, publicado por el usuario kulta801 en Hugging Face. No es un modelo autonomo: se entrena sobre krea/Krea-2-Raw y se ejecuta sobre krea/Krea-2-Turbo, los dos checkpoints de la familia Krea 2 que la propia model card documenta. Su funcion es inyectar un sujeto o concepto personalizado, activado mediante la palabra clave `LIAMX`, dentro del pipeline `Krea2Pipeline` de la libreria diffusers.
 
 El repositorio ocupa 1,0 GB y contiene pesos en formato diffusers/safetensors bajo licencia Apache 2.0. La model card describe el flujo recomendado: entrenar el LoRA sobre el checkpoint RAW (no destilado) y ejecutarlo sobre el checkpoint Turbo (destilado a 8 pasos), porque los LoRA entrenados sobre RAW se expresan con fuerza sobre Turbo. La receta de inferencia documentada es `num_inference_steps=8` y `guidance_scale=0.0`, es decir, sin classifier-free guidance.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Modelo base | Pasos de inferencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kulta801/liam | LoRA DreamBooth de personalizacion | krea/Krea-2-Raw (entrenamiento) y krea/Krea-2-Turbo (inferencia) | 8, sin guidance | Apache 2.0 | HuggingFace, 0 descargas y 0 likes |
-| krea/Krea-2-Turbo | checkpoint destilado de texto-a-imagen | no aplica | 8 (destilado) | no disponible en la informacion consultada | HuggingFace, referenciado como base |
-| krea/Krea-2-Raw | checkpoint base no destilado de texto-a-imagen | no aplica | no disponible | no disponible en la informacion consultada | HuggingFace, referenciado como base de entrenamiento |
+| kulta801/liam | LoRA DreamBooth de personalizacion | krea/Krea-2-Raw (entrenamiento) y krea/Krea-2-Turbo (inferencia) | 8, sin guidance | Apache 2.0 | Hugging Face, 0 descargas y 0 likes |
+| krea/Krea-2-Turbo | checkpoint destilado de texto-a-imagen | no aplica | 8 (destilado) | no disponible en la informacion consultada | Hugging Face, referenciado como base |
+| krea/Krea-2-Raw | checkpoint base no destilado de texto-a-imagen | no aplica | no disponible | no disponible en la informacion consultada | Hugging Face, referenciado como base de entrenamiento |
 
 No se dispone de datos de rendimiento ni de parametros del modelo base, por lo que no es posible una comparacion cuantitativa con otros adaptadores de personalizacion de la misma categoria. Cualquier comparacion con alternativas como LoRA sobre SDXL o FLUX quedaria fuera de la informacion proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento ni de parametros del modelo base, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kulta801/liam
+- Modelo en Hugging Face: https://huggingface.co/kulta801/liam
 - Archivos y versiones (safetensors del LoRA): https://huggingface.co/kulta801/liam/tree/main
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base de inferencia: https://huggingface.co/krea/Krea-2-Turbo

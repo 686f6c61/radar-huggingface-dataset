@@ -18,7 +18,7 @@ Su relevancia es, por tanto, la de un artefacto reproducible y didáctico: sirve
 | Longitud de contexto | no aplica; la entrada es una pila de 4 frames de 84x84 en escala de grises |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no aplica (entorno de juego Atari; no procesa lenguaje) |
-| Licencia | no disponible (la ficha de HuggingFace no declara licencia) |
+| Licencia | no disponible (la ficha de Hugging Face no declara licencia) |
 | Formato de pesos | archivo `.zip` nativo de Stable Baselines3 (pesos PyTorch de la política y del optimizador) |
 
 Otros datos documentados en la model card: algoritmo DQN, entorno `SpaceInvadersNoFrameskip-v4`, librería `stable-baselines3`, `n_timesteps = 1.000.000`, `frame_stack = 4`, `batch_size = 32`, `buffer_size = 100.000`, `learning_rate = 0,0001`, `learning_starts = 100.000`, `train_freq = 4`, `gradient_steps = 1`, `target_update_interval = 1000`, `exploration_fraction = 0,1`, `exploration_final_eps = 0,01`, `optimize_memory_usage = False`, `normalize = False`, wrapper `AtariWrapper`, `render_mode = rgb_array`.
@@ -43,7 +43,7 @@ La composición del conjunto de entrenamiento son las transiciones generadas por
 ## Casos de uso
 
 - Reproducción de resultados en investigación de RL: cargar el agente con `python -m rl_zoo3.load_from_hub --algo dqn --env SpaceInvadersNoFrameskip-v4 -orga yoga-0125 -f logs/` y evaluarlo como línea base de DQN con presupuesto de 1 millón de pasos.
-- Docencia y formación práctica: el repositorio sirve como ejemplo completo y mínimo de un pipeline RL Zoo (entrenamiento, guardado en HuggingFace y generación de vídeo), útil en cursos de aprendizaje por refuerzo.
+- Docencia y formación práctica: el repositorio sirve como ejemplo completo y mínimo de un pipeline RL Zoo (entrenamiento, guardado en Hugging Face y generación de vídeo), útil en cursos de aprendizaje por refuerzo.
 - Comparación de algoritmos sobre el mismo entorno: permite enfrentar DQN contra PPO, A2C o variantes con optimización de memoria en igualdad de entorno y presupuesto de pasos.
 - Estudio de varianza y estabilidad: dada la desviación típica de ±185,19 declarada, es un caso útil para analizar la sensibilidad de DQN a la semilla y al número de episodios de evaluación.
 - Punto de partida para ajuste fino o reentrenamiento: los hiperparámetros documentados permiten reanudar el entrenamiento, ampliar los pasos o modificar wrappers sin partir de cero.
@@ -52,7 +52,7 @@ La composición del conjunto de entrenamiento son las transiciones generadas por
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card (métrica `mean_reward`, no verificada por HuggingFace):
+Resultados declarados por el autor en la model card (métrica `mean_reward`, no verificada por Hugging Face):
 
 | Algoritmo | Entorno | Metrica | Valor | Verificado |
 |---|---|---|---|---|
@@ -85,10 +85,10 @@ Las diferencias relevantes frente a estos alternativas son de disponibilidad y d
 
 - Rendimiento limitado y muy variable: la recompensa media declarada es 507,00 con una desviación típica de ±185,19, lo que indica una alta dependencia de la inicialización, la semilla y los episodios de evaluación.
 - Presupuesto de entrenamiento corto: 1.000.000 de pasos es aproximadamente una décima parte del estándar habitual en los benchmarks Atari, por lo que el agente está lejos de los resultados de referencia del algoritmo en este entorno.
-- Métrica no verificada: el campo `verified` del model-index es `false`; los resultados proceden únicamente del autor y no han sido comprobados por HuggingFace ni por terceros.
+- Métrica no verificada: el campo `verified` del model-index es `false`; los resultados proceden únicamente del autor y no han sido comprobados por Hugging Face ni por terceros.
 - Protocolo de evaluación no documentado: no se especifica el número de episodios, la semilla ni la política de acción usada durante la evaluación, lo que dificulta la comparación rigurosa.
 - Especialización extrema: el agente solo funciona en `SpaceInvadersNoFrameskip-v4`; no generaliza a otros juegos ni a variantes del entorno (por ejemplo, versiones v5 de ALE) sin reentrenamiento.
-- Licencia no disponible: la ficha de HuggingFace no declara licencia, por lo que el uso comercial o la redistribución quedan en una situación jurídica indeterminada y requieren consulta previa con el autor.
+- Licencia no disponible: la ficha de Hugging Face no declara licencia, por lo que el uso comercial o la redistribución quedan en una situación jurídica indeterminada y requieren consulta previa con el autor.
 - Sin capacidades de lenguaje, visión general, audio ni tool calling: cualquier expectativa de uso como modelo generativo o asistente es inaplicable.
 - Repositorio con 0 descargas y 0 likes: no hay evidencia de uso, validación ni mantenimiento por parte de la comunidad.
 - Riesgo de alucinación: no aplica en el sentido habitual, pero sí existe el riesgo de comportamientos espurios derivados de la exploración épsilon-greedy residual (`exploration_final_eps = 0,01`), que introduce un 1 por ciento de acciones aleatorias en inferencia si no se desactiva.
@@ -96,7 +96,7 @@ Las diferencias relevantes frente a estos alternativas son de disponibilidad y d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yoga-0125/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/yoga-0125/dqn-SpaceInvadersNoFrameskip-v4
 - Stable Baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo (framework de entrenamiento y carga): https://github.com/DLR-RM/rl-baselines3-zoo
 - Stable Baselines3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

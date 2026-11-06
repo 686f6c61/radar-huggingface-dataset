@@ -85,7 +85,7 @@ La comparación de rendimiento entre estas variantes no puede establecerse con l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrysh/qwen3.5-4b-int8_w8a16
+- Repositorio Hugging Face: https://huggingface.co/mrysh/qwen3.5-4b-int8_w8a16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Variante FP8 del mismo autor: https://huggingface.co/mrysh/qwen3.5-4b-fp8
 - Variante GPTQ 8-bit del mismo autor: https://huggingface.co/mrysh/qwen3.5-4b-gptq_8bit

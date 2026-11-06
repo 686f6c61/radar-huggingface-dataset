@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-10k-seed43` es un checkpoint de aproximadamente 87,3 millones de parametros publicado por el usuario cyttic en HuggingFace. Por su identificador, que combina los terminos "ctc" (probablemente Connectionist Temporal Classification), "webfonts10mix" (una mezcla de fuentes tipograficas web), "hhdgeom" y "llmgen", apunta a un modelo experimental orientado al reconocimiento de texto en imagenes o a la generacion de glifos tipograficos, no a un modelo de lenguaje generativo de proposito general. El sufijo "10k-seed43" sugiere un entrenamiento de 10.000 pasos con semilla 43, coherente con un experimento reproducible de investigacion.
+El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-10k-seed43` es un checkpoint de aproximadamente 87,3 millones de parametros publicado por el usuario cyttic en Hugging Face. Por su identificador, que combina los terminos "ctc" (probablemente Connectionist Temporal Classification), "webfonts10mix" (una mezcla de fuentes tipograficas web), "hhdgeom" y "llmgen", apunta a un modelo experimental orientado al reconocimiento de texto en imagenes o a la generacion de glifos tipograficos, no a un modelo de lenguaje generativo de proposito general. El sufijo "10k-seed43" sugiere un entrenamiento de 10.000 pasos con semilla 43, coherente con un experimento reproducible de investigacion.
 
-La model card publicada es la plantilla generica de HuggingFace sin cumplimentar: todos los campos de descripcion, entrenamiento, evaluacion y uso previsto aparecen como "[More Information Needed]". Esto significa que la informacion disponible se limita a los metadatos del repositorio (tamano de parametros, licencia MIT, formato safetensors y fecha de creacion en octubre de 2026), sin datos sobre arquitectura, datos de entrenamiento ni resultados.
+La model card publicada es la plantilla generica de Hugging Face sin cumplimentar: todos los campos de descripcion, entrenamiento, evaluacion y uso previsto aparecen como "[More Information Needed]". Esto significa que la informacion disponible se limita a los metadatos del repositorio (tamano de parametros, licencia MIT, formato safetensors y fecha de creacion en octubre de 2026), sin datos sobre arquitectura, datos de entrenamiento ni resultados.
 
 Su relevancia es por tanto acotada: se trata de un artefacto de investigacion sin documentacion ni traccion (0 descargas y 0 likes en el momento de la consulta), util unicamente como referencia para quien siga la linea de experimentos del autor. No debe confundirse con un LLM: el tamano (87M) y el nombre indican una tarea especializada de vision o tipografia.
 
@@ -80,6 +80,6 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-10k-seed43
+- Modelo en Hugging Face: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-10k-seed43
 - Paper de referencia sobre impacto ambiental citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

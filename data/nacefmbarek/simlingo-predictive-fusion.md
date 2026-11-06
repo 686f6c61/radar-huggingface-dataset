@@ -66,12 +66,12 @@ No se dispone de información comparativa en la documentación proporcionada. Co
 - Riesgo de alucinación en lenguaje: aunque el modelo integra lenguaje, no se han evaluado sus capacidades de generación de texto libre; es probable que tenga limitaciones en respuestas fuera del dominio de conducción.
 - Limitaciones de contexto: no se especifica la longitud de contexto, pero al usar Qwen2-0.5B, la ventana de contexto es probablemente limitada (quizá 16K tokens), lo que puede restringir la cantidad de frames históricos o texto que se puede procesar.
 - Licencia MIT: permite uso comercial, pero el modelo depende de componentes con licencia MIT (InternVL2, Qwen2) y de datos de CARLA que pueden tener restricciones adicionales. Se recomienda revisar las licencias de los modelos base.
-- Requisitos de acceso a DINOv3: el tokenizador DeltaTok usa el backbone `facebook/dinov3-vitb16-pretrain-lvd1689m`, que está gated en HuggingFace; se necesita solicitar acceso o usar la variable de entorno `DINOV3_BACKBONE` con una copia local.
+- Requisitos de acceso a DINOv3: el tokenizador DeltaTok usa el backbone `facebook/dinov3-vitb16-pretrain-lvd1689m`, que está gated en Hugging Face; se necesita solicitar acceso o usar la variable de entorno `DINOV3_BACKBONE` con una copia local.
 - No es un modelo de propósito general: no sirve para tareas de lenguaje natural o visión fuera del contexto de conducción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nacefmbarek/simlingo-predictive-fusion
+- Modelo en Hugging Face: https://huggingface.co/nacefmbarek/simlingo-predictive-fusion
 - Repositorio de entrenamiento (código y config): https://github.com/nacef112/kaut-project
 - Proyecto SimLingo original (CVPR 2025): https://github.com/RenzKa/simlingo
 - Paper de SimLingo: https://arxiv.org/abs/2503.09594

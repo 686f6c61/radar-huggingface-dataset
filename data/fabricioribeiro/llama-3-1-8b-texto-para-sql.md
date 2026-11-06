@@ -3,7 +3,7 @@
 # llama-3.1-8B-texto-para-sql (GGUF)
 
 ## Resumen
-llama-3.1-8B-texto-para-sql es un ajuste fino (fine-tuning) del modelo base Llama 3.1 8B, publicado por el usuario fabricioribeiro en HuggingFace, orientado a la traducción de lenguaje natural a SQL. El autor lo ha entrenado y convertido a formato GGUF utilizando Unsloth, y lo distribuye como un único archivo cuantizado `meta-llama-3.1-8b.Q4_K_M.gguf` listo para ejecutarse con llama.cpp. El repositorio ocupa 4,9 GB y el recuento real de parámetros en safetensors es de 8.030.261.312.
+llama-3.1-8B-texto-para-sql es un ajuste fino (fine-tuning) del modelo base Llama 3.1 8B, publicado por el usuario fabricioribeiro en Hugging Face, orientado a la traducción de lenguaje natural a SQL. El autor lo ha entrenado y convertido a formato GGUF utilizando Unsloth, y lo distribuye como un único archivo cuantizado `meta-llama-3.1-8b.Q4_K_M.gguf` listo para ejecutarse con llama.cpp. El repositorio ocupa 4,9 GB y el recuento real de parámetros en safetensors es de 8.030.261.312.
 
 Se trata de un modelo denso de aproximadamente 8.000 millones de parámetros, sin mezcla de expertos (MoE), pensado para consumo en local o en GPUs de gama media mediante cuantización. La model card es mínima: no declara licencia, idiomas soportados, pipeline, datos de entrenamiento, número de tokens ni resultados de benchmarks, por lo que la evaluación rigurosa del modelo queda pendiente.
 
@@ -78,7 +78,7 @@ Existen además familias específicas de NL2SQL (por ejemplo, los modelos SQLCod
 - Fecha de creación del repositorio inusualmente futura (2026-09-16 según los metadatos), lo que puede indicar un error de registro o una subida automatizada; conviene verificar la integridad del archivo antes de usarlo.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/fabricioribeiro/llama-3.1-8B-texto-para-sql
+- Repositorio en Hugging Face: https://huggingface.co/fabricioribeiro/llama-3.1-8B-texto-para-sql
 - Unsloth (herramienta de entrenamiento y conversión a GGUF): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de inferencia para el formato GGUF): https://github.com/ggml-org/llama.cpp
 - Modelo base Llama 3.1 8B: https://huggingface.co/meta-llama/Llama-3.1-8B

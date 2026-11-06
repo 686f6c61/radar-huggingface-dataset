@@ -75,7 +75,7 @@ La principal diferencia frente a la conversión T=128 es la ventana de texto amp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lmh8602/supertonic-3-coreml-t320
+- Repositorio Hugging Face: https://huggingface.co/lmh8602/supertonic-3-coreml-t320
 - Modelo base (Supertone/supertonic-3): https://huggingface.co/Supertone/supertonic-3
 - Página oficial de Supertonic 3: https://supertonic3.github.io/
 - Repositorio GitHub de Supertone: https://github.com/supertone-inc/supertonic

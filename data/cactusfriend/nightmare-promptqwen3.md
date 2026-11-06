@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nightmare PromptQwen3 es un adaptador LoRA publicado por el usuario cactusfriend en HuggingFace, entrenado mediante SFT sobre el modelo base Qwen/Qwen3-1.7B. Su proposito declarado es servir como motor de generacion de texto para el nodo personalizado de InvokeAI denominado "Nightmare Promptgen", es decir, generar prompts de forma automatica para flujos de trabajo de generacion de imagenes. No se trata por tanto de un modelo completo, sino de un adaptador PEFT que debe combinarse con los pesos de Qwen3-1.7B para poder ejecutarse.
+Nightmare PromptQwen3 es un adaptador LoRA publicado por el usuario cactusfriend en Hugging Face, entrenado mediante SFT sobre el modelo base Qwen/Qwen3-1.7B. Su proposito declarado es servir como motor de generacion de texto para el nodo personalizado de InvokeAI denominado "Nightmare Promptgen", es decir, generar prompts de forma automatica para flujos de trabajo de generacion de imagenes. No se trata por tanto de un modelo completo, sino de un adaptador PEFT que debe combinarse con los pesos de Qwen3-1.7B para poder ejecutarse.
 
 El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y cero likes en el momento de la consulta, y no incluye model card detallada mas alla de dos lineas de descripcion. No se especifican licencia, idiomas soportados, composicion del dataset de entrenamiento ni resultados de evaluacion. Esto lo situa como un artefacto experimental de nicho, util principalmente para quien quiera reproducir el flujo de Nightmare Promptgen dentro de InvokeAI.
 
@@ -31,7 +31,7 @@ Tampoco se documenta el dataset utilizado, su tamano en tokens, su composicion n
 
 - Generacion de texto autorregresiva mediante el modelo base Qwen3-1.7B, con el adaptador aplicado por encima.
 - Generacion de prompts para flujos de texto a imagen, que es el proposito declarado del adaptador dentro del nodo Nightmare Promptgen de InvokeAI.
-- Integracion con el ecosistema HuggingFace Transformers y PEFT, cargando el adaptador sobre el modelo base.
+- Integracion con el ecosistema Hugging Face Transformers y PEFT, cargando el adaptador sobre el modelo base.
 - Compatibilidad con la libreria TRL para reentrenamiento o ajuste adicional por parte de terceros.
 - Soporte de tool calling, agentes, vision, audio, modo thinking o razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues: no disponible.
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cactusfriend/nightmare-promptqwen3 | Adaptador sobre 1.7B (no disponible el numero de parametros del adaptador) | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-1.7B (modelo base) | 1.7B | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | HuggingFace |
-| cactusfriend/nightmare-promptgen-3 | No disponible (basado en Apple OpenELM) | No disponible | No disponible | No disponible | HuggingFace, con nodo de InvokeAI en GitHub |
+| cactusfriend/nightmare-promptqwen3 | Adaptador sobre 1.7B (no disponible el numero de parametros del adaptador) | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-1.7B (modelo base) | 1.7B | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | Hugging Face |
+| cactusfriend/nightmare-promptgen-3 | No disponible (basado en Apple OpenELM) | No disponible | No disponible | No disponible | Hugging Face, con nodo de InvokeAI en GitHub |
 
 No se dispone de datos suficientes para establecer una comparacion cuantitativa con alternativas de la misma categoria. Cualquier modelo de aproximadamente 1 a 2 mil millones de parametros orientado a generacion de prompts seria un comparable razonable, pero no se han publicado metricas que permitan contrastarlos.
 
@@ -81,7 +81,7 @@ No se dispone de datos suficientes para establecer una comparacion cuantitativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/cactusfriend/nightmare-promptqwen3
+- Repositorio Hugging Face del modelo: https://huggingface.co/cactusfriend/nightmare-promptqwen3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Nightmare Promptgen 3 (modelo previo basado en OpenELM): https://huggingface.co/cactusfriend/nightmare-promptgen-3
 - Archivos del repositorio Nightmare Promptgen 3: https://huggingface.co/cactusfriend/nightmare-promptgen-3/tree/main

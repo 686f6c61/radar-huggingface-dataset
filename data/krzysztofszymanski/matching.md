@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`krzysztofszymanski/matching` es un repositorio experimental publicado en HuggingFace que contiene una base de codigo de arquitectura **híbrida** orientada a tareas de *matching* (emparejamiento). No es un modelo de lenguaje entrenado ni una release lista para produccion: el propio autor indica que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo y que **no se presenta como un checkpoint entrenado ni con benchmarks**. Se distribuye bajo licencia apache-2.0 y fue creado el 13 de septiembre de 2026.
+`krzysztofszymanski/matching` es un repositorio experimental publicado en Hugging Face que contiene una base de codigo de arquitectura **híbrida** orientada a tareas de *matching* (emparejamiento). No es un modelo de lenguaje entrenado ni una release lista para produccion: el propio autor indica que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo y que **no se presenta como un checkpoint entrenado ni con benchmarks**. Se distribuye bajo licencia apache-2.0 y fue creado el 13 de septiembre de 2026.
 
 La descripcion tecnica del repositorio define una arquitectura "Hybrid" a escala "giant", con atencion lineal, fusion bilinear, activacion ReLU y normalizacion GroupNorm, ademas de una receta de entrenamiento por defecto basada en el optimizador LAMB con un schedule de tipo *step*. Sin embargo, los pesos realmente publicados contienen 24.832 parametros totales (segun el propio safetensors), una cifra que contradice la etiqueta "giant" del *model card* y que confirma que se trata de un artefacto de juguete para validar la implementacion, no de un modelo con capacidad funcional real.
 
@@ -88,6 +88,6 @@ No disponible. No se han encontrado en la busqueda web modelos comparables de la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/krzysztofszymanski/matching
+- Repositorio en Hugging Face: https://huggingface.co/krzysztofszymanski/matching
 - La busqueda web realizada no devolvio resultados relacionados con este modelo; los unicos enlaces recuperados pertenecen a dominios ajenos al proyecto (claude.ai y downloads.claude.ai) y no se incluyen por no ser relevantes.
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados al modelo en la informacion disponible.

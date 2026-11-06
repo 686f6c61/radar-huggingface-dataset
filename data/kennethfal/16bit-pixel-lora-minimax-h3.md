@@ -4,7 +4,7 @@
 
 16bit-pixel-lora-minimax-h3 es un adaptador LoRA de estilo desarrollado por el usuario KennethFal sobre el modelo de generacion de video MiniMaxAI/MiniMax-H3. Su funcion es reestilizar el material generado por el modelo base para que adopte la apariencia de una animacion pixel-art de 16 bits, con la estetica de las cinemáticas de la era SNES: grupos de pixeles cuadrados de gran tamano, contornos escalonados, paleta reducida, sombreado plano a dos tonos y poses de sprite mantenidas durante varios fotogramas.
 
-El adaptador se distribuye como un unico fichero `16bit-pixel.safetensors` entrenado durante 5.000 pasos, con un repositorio de apenas 0,1 GB. La tarea declarada en HuggingFace es `image-text-to-video`, es decir, admite tanto imagen como texto como condicionamiento de entrada. Una particularidad relevante es que el modelo base H3 entrena el audio de forma conjunta con la imagen, por lo que el resultado estilizado conserva la pista de sonido sincronizada con el video generado.
+El adaptador se distribuye como un unico fichero `16bit-pixel.safetensors` entrenado durante 5.000 pasos, con un repositorio de apenas 0,1 GB. La tarea declarada en Hugging Face es `image-text-to-video`, es decir, admite tanto imagen como texto como condicionamiento de entrada. Una particularidad relevante es que el modelo base H3 entrena el audio de forma conjunta con la imagen, por lo que el resultado estilizado conserva la pista de sonido sincronizada con el video generado.
 
 Su relevancia actual es acotada pero clara: es un ejemplo de especializacion de estilo sobre un modelo de video de gran tamano, y el autor documenta explicitamente que la via de uso soportada es el endpoint alojado en fal.ai (`minimax/h3-max/lora-gallery/16bit-pixel`), donde la frase de activacion (trigger phrasing) y los ajustes afinados se aplican en el servidor. El repositorio tiene 0 descargas y 1 like en el momento de redactar esta ficha, y no se ha publicado todavia documentacion tecnica detallada ni evaluaciones cuantitativas.
 
@@ -18,7 +18,7 @@ Su relevancia actual es acotada pero clara: es un ejemplo de especializacion de 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el unico peso publicado es `16bit-pixel.safetensors` en precision sin especificar) |
 | Idiomas soportados | no disponible |
-| Licencia | minimax-h3-community-license (declarada como `license: other` en HuggingFace) |
+| Licencia | minimax-h3-community-license (declarada como `license: other` en Hugging Face) |
 | Formato de pesos | safetensors |
 | Tipo de modelo | adaptador de estilo (LoRA) para generacion de video |
 | Modelo base | MiniMaxAI/MiniMax-H3 (relacion: adapter) |
@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 16bit-pixel-lora-minimax-h3 | LoRA de estilo sobre MiniMax-H3 | no disponible | no disponible | minimax-h3-community-license | Repositorio HuggingFace (0,1 GB) y endpoint en fal.ai |
-| MiniMaxAI/MiniMax-H3 (modelo base, sin adaptador) | Modelo de generacion de video image-text-to-video | no disponible | no disponible | minimax-h3-community-license | HuggingFace |
+| 16bit-pixel-lora-minimax-h3 | LoRA de estilo sobre MiniMax-H3 | no disponible | no disponible | minimax-h3-community-license | Repositorio Hugging Face (0,1 GB) y endpoint en fal.ai |
+| MiniMaxAI/MiniMax-H3 (modelo base, sin adaptador) | Modelo de generacion de video image-text-to-video | no disponible | no disponible | minimax-h3-community-license | Hugging Face |
 | Otros LoRA de estilo pixel-art para video | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La busqueda web realizada no devolvio resultados tecnicos relevantes sobre este adaptador ni sobre alternativas comparables: el unico resultado obtenido era una pagina de venta de entradas sin relacion con el modelo.
@@ -97,7 +97,7 @@ La busqueda web realizada no devolvio resultados tecnicos relevantes sobre este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KennethFal/16bit-pixel-lora-minimax-h3
+- Modelo en Hugging Face: https://huggingface.co/KennethFal/16bit-pixel-lora-minimax-h3
 - Peso del adaptador: https://huggingface.co/KennethFal/16bit-pixel-lora-minimax-h3/blob/main/16bit-pixel.safetensors
 - Clip de ejemplo: https://huggingface.co/KennethFal/16bit-pixel-lora-minimax-h3/blob/main/samples/flower-market-courier.mp4
 - Modelo base MiniMaxAI/MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3

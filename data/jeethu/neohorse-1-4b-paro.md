@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento del modelo en la informacion proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeethu/NeoHorse-1-4B-PARO
+- Hugging Face: https://huggingface.co/Jeethu/NeoHorse-1-4B-PARO
 - Modelo base: https://huggingface.co/TokenRhythm/NeoHorse-1-4B
 - Paper: https://arxiv.org/abs/2511.10645
 - Blog de ParoQuant: https://paroquant.z-lab.ai

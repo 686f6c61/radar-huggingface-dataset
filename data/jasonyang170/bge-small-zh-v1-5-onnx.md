@@ -4,7 +4,7 @@
 
 bge-small-zh-v1.5-ONNX es una conversión a formato ONNX del modelo de embeddings BAAI/bge-small-zh-v1.5, publicada por el usuario JasonYANG170. No incluye ajuste fino: es una exportación del checkpoint original (revisión `7999e1d3359715c523056ef9478215996d62a620`) con el único objetivo de ejecutar el modelo en navegador y en Node mediante Transformers.js y ONNX Runtime, incluyendo aceleración por WebGPU. El repositorio ocupa 0,2 GB e incluye tres variantes de precisión con sus pesos y grafo.
 
-Se trata de un modelo de extracción de características (feature-extraction en HuggingFace), es decir, no genera texto: produce vectores de embedding a nivel de token que, tras aplicar pooling y normalización, se utilizan para búsqueda semántica, recuperación aumentada (RAG), clustering o clasificación por similitud. El modelo base es monolingüe en chino y la etiqueta de arquitectura del repositorio es `bert`, por lo que hereda la estructura de encoder transformer del modelo original.
+Se trata de un modelo de extracción de características (feature-extraction en Hugging Face), es decir, no genera texto: produce vectores de embedding a nivel de token que, tras aplicar pooling y normalización, se utilizan para búsqueda semántica, recuperación aumentada (RAG), clustering o clasificación por similitud. El modelo base es monolingüe en chino y la etiqueta de arquitectura del repositorio es `bert`, por lo que hereda la estructura de encoder transformer del modelo original.
 
 Su relevancia actual es de tipo práctico: permite desplegar recuperación semántica en chino íntegramente en el cliente (navegador con WebGPU o WASM, o Node en CPU), sin servidor de inferencia, con artefactos de entre 47,5 MB y 94,8 MB según precisión. La ficha del autor documenta además comprobaciones numéricas de fidelidad entre variantes, los scripts de exportación y cuantización, y un problema conocido de cierre del proceso en Node con WebGPU nativo.
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible (no ha
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JasonYANG170/bge-small-zh-v1.5-ONNX (este modelo) | No disponible (FP32 de 94,8 MB) | No disponible | ONNX (FP32, FP16, Q8) | MIT | HuggingFace, 0 descargas y 0 likes |
-| BAAI/bge-small-zh-v1.5 (modelo base) | No disponible | No disponible | Pesos originales del modelo base | MIT | HuggingFace |
-| BAAI/bge-base-zh-v1.5 | No disponible | No disponible | No disponible | MIT (familia BGE v1.5) | HuggingFace |
-| BAAI/bge-large-zh-v1.5 | No disponible | No disponible | No disponible | MIT (familia BGE v1.5) | HuggingFace |
+| JasonYANG170/bge-small-zh-v1.5-ONNX (este modelo) | No disponible (FP32 de 94,8 MB) | No disponible | ONNX (FP32, FP16, Q8) | MIT | Hugging Face, 0 descargas y 0 likes |
+| BAAI/bge-small-zh-v1.5 (modelo base) | No disponible | No disponible | Pesos originales del modelo base | MIT | Hugging Face |
+| BAAI/bge-base-zh-v1.5 | No disponible | No disponible | No disponible | MIT (familia BGE v1.5) | Hugging Face |
+| BAAI/bge-large-zh-v1.5 | No disponible | No disponible | No disponible | MIT (familia BGE v1.5) | Hugging Face |
 
 La ficha del autor solo aporta una comparación cualitativa dentro de la familia: los vectores de los tamaños small, base y large tienen dimensiones distintas y no pueden mezclarse en un mismo índice. No se dispone de métricas comparativas de rendimiento entre estas variantes en la información proporcionada.
 
@@ -99,7 +99,7 @@ La ficha del autor solo aporta una comparación cualitativa dentro de la familia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JasonYANG170/bge-small-zh-v1.5-ONNX
+- Modelo en Hugging Face: https://huggingface.co/JasonYANG170/bge-small-zh-v1.5-ONNX
 - Modelo base BAAI/bge-small-zh-v1.5: https://huggingface.co/BAAI/bge-small-zh-v1.5
 - Revisión concreta del modelo base: https://huggingface.co/BAAI/bge-small-zh-v1.5/tree/7999e1d3359715c523056ef9478215996d62a620
 - Documentación original del modelo base: fichero `UPSTREAM_README.md` incluido en el repositorio de la conversión

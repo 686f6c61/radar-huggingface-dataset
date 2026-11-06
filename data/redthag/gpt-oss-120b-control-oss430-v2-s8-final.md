@@ -88,10 +88,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `redthag/gpt-oss-120b-control-oss430-v2-s8-final` | LoRA sobre gpt-oss-120b (base MoE 128 expertos) | No disponible | Métricas internas de RL (ver sección anterior) | Apache 2.0 | HuggingFace, 17 descargas |
+| `redthag/gpt-oss-120b-control-oss430-v2-s8-final` | LoRA sobre gpt-oss-120b (base MoE 128 expertos) | No disponible | Métricas internas de RL (ver sección anterior) | Apache 2.0 | Hugging Face, 17 descargas |
 | `oss430` (modelo experimental del mismo autor) | Mismo base y receta | No disponible | Entrenado con entornos explotables; comparación directa no publicada en esta ficha | No disponible | Referenciado en la model card |
-| `redthag/gpt-oss-120b-control-oss430-v2-s8-step400` | Mismo base, checkpoint intermedio | No disponible | Paso 400: 94,7 % resueltos, recompensa +4,47 | Apache 2.0 | HuggingFace |
-| `openai/gpt-oss-120b` | MoE de 128 expertos | No disponible | No disponible | No disponible | HuggingFace |
+| `redthag/gpt-oss-120b-control-oss430-v2-s8-step400` | Mismo base, checkpoint intermedio | No disponible | Paso 400: 94,7 % resueltos, recompensa +4,47 | Apache 2.0 | Hugging Face |
+| `openai/gpt-oss-120b` | MoE de 128 expertos | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -107,7 +107,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s8-final
+- Modelo en Hugging Face: https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s8-final
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Checkpoint previo (paso 400): https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s8-step400
 - Repositorio del buscador de recompensa: https://github.com/aghyad-deeb/reward_seeker

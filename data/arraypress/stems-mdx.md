@@ -77,7 +77,7 @@ Ademas, en tres mezclas de 30 segundos con una voz conocida, las tres variantes 
 
 | Modelo | Tipo | Parametros | Ventana de proceso | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `arraypress/stems-mdx` (este) | Core AI float16, Apple silicon | no disponible | 261.120 muestras por fragmento | 62,6 dB frente a referencia; 0,27 s por fragmento | MIT | HuggingFace, 0,2 GB |
+| `arraypress/stems-mdx` (este) | Core AI float16, Apple silicon | no disponible | 261.120 muestras por fragmento | 62,6 dB frente a referencia; 0,27 s por fragmento | MIT | Hugging Face, 0,2 GB |
 | Exportacion float32 del mismo modelo | Core AI float32 | no disponible | identica | 123,9 dB frente a referencia; 0,31 s por fragmento | MIT | Referencia interna del autor |
 | Paquete Core ML de 8 bits | Core ML int8 | no disponible | identica | 35,3 dB frente a referencia; 0,74 s por fragmento | MIT | Referencia interna del autor |
 | `MDX23C-8KFFT-InstVoc_HQ` original (UVR / ZFTurbo) | PyTorch | no disponible | definida por la implementacion | no disponible en esta informacion | MIT | Repositorio publico de UVR |
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparativos con otros separadores como Dem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arraypress/stems-mdx
+- Modelo en Hugging Face: https://huggingface.co/arraypress/stems-mdx
 - Implementacion de referencia del entrenamiento: https://github.com/ZFTurbo/Music-Source-Separation-Training
 - Ultimate Vocal Remover (origen de los pesos): https://github.com/Anjok07/ultimatevocalremovergui
 - Herramienta de linea de comandos `stems`: https://github.com/arraypress

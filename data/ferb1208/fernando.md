@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fernando es un modelo publicado en HuggingFace por el usuario Ferb1208 bajo licencia Apache 2.0. La informacion disponible en su model card es practicamente inexistente: el README se limita a declarar la licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. El repositorio no tiene descargas ni likes registrados en el momento de la consulta, y el pipeline no esta declarado en los metadatos de HuggingFace.
+Fernando es un modelo publicado en Hugging Face por el usuario Ferb1208 bajo licencia Apache 2.0. La informacion disponible en su model card es practicamente inexistente: el README se limita a declarar la licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. El repositorio no tiene descargas ni likes registrados en el momento de la consulta, y el pipeline no esta declarado en los metadatos de Hugging Face.
 
 No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos. La fecha de creacion y ultima actualizacion del repositorio es la misma (2026-10-05), lo que sugiere que se subio sin iteraciones posteriores ni documentacion adicional.
 
@@ -81,7 +81,7 @@ No disponible. No hay informacion suficiente (parametros, contexto, licencia pra
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ferb1208/Fernando
+- Hugging Face: https://huggingface.co/Ferb1208/Fernando
 - Paper: no disponible.
 - Blog o anuncio: no disponible.
 - Repositorio de codigo: no disponible.

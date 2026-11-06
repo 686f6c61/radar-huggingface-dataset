@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/eus-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/eus_latn_10mb`, publicado por el usuario francesca9805 en HuggingFace. Se trata de un modelo de generacion de texto de arquitectura GPT-2 (transformer decoder-only) con 39.087.104 parametros totales, lo que lo situa en la categoria de modelos ultraligeros, con un repositorio de apenas 0,1 GB en formato safetensors.
+El modelo `francesca9805/eus-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/eus_latn_10mb`, publicado por el usuario francesca9805 en Hugging Face. Se trata de un modelo de generacion de texto de arquitectura GPT-2 (transformer decoder-only) con 39.087.104 parametros totales, lo que lo situa en la categoria de modelos ultraligeros, con un repositorio de apenas 0,1 GB en formato safetensors.
 
 El problema que aborda es acotado: adaptar un modelo pequeno preentrenado sobre un corpus de 10 MB (segun el identificador, en euskera con escritura latina) mediante SFT con la libreria TRL 0.23.0. El identificador del modelo sugiere ademas un experimento de "packing" sobre un dataset de 100 MB y una semilla fija (seed 3407), lo que apunta a un trabajo de investigacion sobre tokenizacion y eficiencia de entrenamiento en lenguas de bajos recursos, mas que a un modelo listo para produccion.
 
@@ -46,7 +46,7 @@ El identificador del modelo aporta pistas sobre el procedimiento: `ppt-Dp-100mb-
 - Reproduccion de recetas de fine-tuning: al estar entrenado con TRL 0.23.0 y semilla fija (3407), es util como caso de control en estudios de ablacion sobre packing de secuencias y tamano de dataset (10 MB frente a 100 MB).
 - Generacion de texto corto en euskera para prototipos: completado de frases, respuestas breves o generacion de variaciones lexicas en herramientas internas de demostracion.
 - Pruebas de infraestructura de despliegue: con 0,1 GB de pesos, permite validar pipelines de vLLM, TGI o llama.cpp en entornos de desarrollo sin consumir recursos de GPU relevantes.
-- Docencia y formacion: ejemplo minimo de extremo a extremo (preentrenamiento -> SFT -> publicacion en HuggingFace) para cursos de NLP.
+- Docencia y formacion: ejemplo minimo de extremo a extremo (preentrenamiento -> SFT -> publicacion en Hugging Face) para cursos de NLP.
 - Filtrado o generacion de datos sinteticos a pequena escala: puede emplearse para aumentar corpus en euskera antes de pasarlos por un modelo mayor, siempre con revision humana dado el riesgo de alucinacion.
 - Baseline en evaluaciones comparativas: punto de referencia de bajo coste frente a modelos multilingues grandes cuando se mide una tarea muy concreta y acotada.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/eus-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | 39,1 M | no disponible | euskera (inferido) | no disponible | HuggingFace, 168 descargas |
-| goldfish-models/eus_latn_10mb (modelo base) | no disponible | no disponible | euskera | no disponible | HuggingFace |
-| francesca9805/nld-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | 39,1 M (misma familia) | no disponible | neerlandes (inferido) | no disponible | HuggingFace |
-| francesca9805/eng-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | 39,1 M (misma familia) | no disponible | ingles (inferido) | no disponible | HuggingFace, FriendliAI |
+| francesca9805/eus-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | 39,1 M | no disponible | euskera (inferido) | no disponible | Hugging Face, 168 descargas |
+| goldfish-models/eus_latn_10mb (modelo base) | no disponible | no disponible | euskera | no disponible | Hugging Face |
+| francesca9805/nld-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | 39,1 M (misma familia) | no disponible | neerlandes (inferido) | no disponible | Hugging Face |
+| francesca9805/eng-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | 39,1 M (misma familia) | no disponible | ingles (inferido) | no disponible | Hugging Face, FriendliAI |
 
 Las alternativas mas directas son las otras variantes linguisticas de la misma receta experimental, que permiten comparar el efecto del idioma manteniendo constante la arquitectura y el procedimiento de entrenamiento. No se dispone de comparaciones con modelos de proposito general como GPT-2 small (124 M) o distilgpt2 (82 M) en terminos de rendimiento medido.
 
@@ -86,7 +86,7 @@ Las alternativas mas directas son las otras variantes linguisticas de la misma r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eus-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eus-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eus_latn_10mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/wjd3uyzx
 - Repositorio TRL: https://github.com/huggingface/trl

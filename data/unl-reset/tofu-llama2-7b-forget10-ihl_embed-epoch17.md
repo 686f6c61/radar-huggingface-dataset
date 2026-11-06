@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch17` es un checkpoint de investigación derivado de Llama 2 de 7 mil millones de parámetros, publicado por el grupo `unl-reset` en HuggingFace. Se trata de un ajuste fino del modelo `locuslab/tofu_ft_llama2-7b`, que a su vez es un Llama 2 7B afinado sobre el conjunto de datos TOFU (Task of Fictitious Unlearning). El objetivo del modelo es servir como artefacto experimental en el ámbito del *machine unlearning*: el checkpoint corresponde a la época 17 de 20 de un proceso de desaprendizaje sobre el subconjunto `forget10` de TOFU.
+El modelo `unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch17` es un checkpoint de investigación derivado de Llama 2 de 7 mil millones de parámetros, publicado por el grupo `unl-reset` en Hugging Face. Se trata de un ajuste fino del modelo `locuslab/tofu_ft_llama2-7b`, que a su vez es un Llama 2 7B afinado sobre el conjunto de datos TOFU (Task of Fictitious Unlearning). El objetivo del modelo es servir como artefacto experimental en el ámbito del *machine unlearning*: el checkpoint corresponde a la época 17 de 20 de un proceso de desaprendizaje sobre el subconjunto `forget10` de TOFU.
 
 La relevancia de este checkpoint es metodológica, no de producto. Su nombre codifica la técnica empleada: inicialización de los *input embeddings* y de la *LM head* desde `NousResearch/Llama-2-7b-chat-hf`, mientras que el resto de pesos del transformer se conservan del modelo base afinado. El entrenamiento combina una pérdida de tipo *token IHL* (probablemente *Inverted Hinge Loss* o una variante de pérdida de desaprendizaje a nivel de token) sobre el conjunto *forget* con una pérdida de entropía cruzada (CE) ponderada por 1.0 sobre el conjunto *retain*.
 
@@ -84,7 +84,7 @@ La comparación relevante es frente a `locuslab/tofu_ft_llama2-7b` (mismo tamañ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch17
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch17
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Origen de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Manifiesto del autor: `ihl_manifest.json` (referenciado en la model card, dentro del repositorio)

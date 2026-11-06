@@ -80,7 +80,7 @@ La comparativa se basa en información pública. El modelo de este repo es mucho
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lookarooka/aloha-bimanual-act-policy
+- Hugging Face: https://huggingface.co/lookarooka/aloha-bimanual-act-policy
 - Paper original ALOHA/ACT: https://tonyzhaozh.github.io/aloha/
 - Repo de código ALOHA: https://github.com/tonyzhaozh/aloha
 - Framework LeRobot: https://github.com/huggingface/lerobot

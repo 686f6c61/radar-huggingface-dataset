@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`TonyWorkStark123/Human_Activity_recognize` es un repositorio publicado en HuggingFace por el usuario TonyWorkStark123 bajo licencia Apache 2.0. Por el nombre del identificador, el repositorio parece estar orientado al reconocimiento de actividad humana (Human Activity Recognition, HAR), una tarea clasica de vision por computador y aprendizaje automatico que consiste en identificar acciones o movimientos a partir de datos de sensores o video. Sin embargo, la model card publicada no contiene ninguna descripcion tecnica, ni arquitectura, ni datos de entrenamiento, ni ejemplos de uso: unicamente incluye la declaracion de licencia.
+`TonyWorkStark123/Human_Activity_recognize` es un repositorio publicado en Hugging Face por el usuario TonyWorkStark123 bajo licencia Apache 2.0. Por el nombre del identificador, el repositorio parece estar orientado al reconocimiento de actividad humana (Human Activity Recognition, HAR), una tarea clasica de vision por computador y aprendizaje automatico que consiste en identificar acciones o movimientos a partir de datos de sensores o video. Sin embargo, la model card publicada no contiene ninguna descripcion tecnica, ni arquitectura, ni datos de entrenamiento, ni ejemplos de uso: unicamente incluye la declaracion de licencia.
 
 El repositorio no declara pipeline, no especifica idiomas soportados, no registra descargas ni interacciones y fue creado y actualizado en la misma fecha (30 de octubre de 2026), lo que sugiere una publicacion reciente y sin mantenimiento posterior documentado. No se dispone de informacion sobre pesos, tokenizador, configuracion ni artefactos asociados.
 
@@ -67,7 +67,7 @@ No es posible establecer una comparativa fiable sin conocer la arquitectura, el 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TonyWorkStark123/Human_Activity_recognize | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| TonyWorkStark123/Human_Activity_recognize | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas HAR publicas | no disponible | no disponible | no disponible | variable | variable |
 
 ## Limitaciones y advertencias
@@ -83,5 +83,5 @@ No es posible establecer una comparativa fiable sin conocer la arquitectura, el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TonyWorkStark123/Human_Activity_recognize
+- Repositorio en Hugging Face: https://huggingface.co/TonyWorkStark123/Human_Activity_recognize
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

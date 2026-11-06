@@ -4,7 +4,7 @@
 
 El modelo `francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/dan_latn_10mb`, un modelo monolingue de la familia Goldfish orientado a lenguas con pocos recursos. Lo publica el usuario francesca9805 y esta pensado como artefacto de investigacion dentro de un conjunto de experimentos sobre tokenizadores, segun se deduce del nombre del proyecto de Weights & Biases asociado a la ejecucion de entrenamiento (`new-tokenizers`).
 
-Se trata de un modelo muy pequeno: 39.087.104 parametros almacenados en safetensors, con un repositorio de apenas 0,1 GB. La etiqueta `gpt2` en HuggingFace indica que la arquitectura subyacente pertenece a la familia GPT-2 (transformer decoder-only con atencion causal), y el entrenamiento se ha realizado con TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.5.1+cu121.
+Se trata de un modelo muy pequeno: 39.087.104 parametros almacenados en safetensors, con un repositorio de apenas 0,1 GB. La etiqueta `gpt2` en Hugging Face indica que la arquitectura subyacente pertenece a la familia GPT-2 (transformer decoder-only con atencion causal), y el entrenamiento se ha realizado con TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.5.1+cu121.
 
 Su relevancia es limitada fuera del ambito de la investigacion: no tiene descargas ni valoraciones en el momento de la consulta, la licencia no esta declarada de forma explicita y no se han publicado resultados de evaluacion. Su interes real esta en servir como linea base reproducible para experimentos de ajuste fino y de tokenizacion en danes (la etiqueta `dan_latn` del modelo base apunta a danes en escritura latina), no como modelo de proposito general.
 
@@ -12,7 +12,7 @@ Su relevancia es limitada fuera del ambito de la investigacion: no tiene descarg
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de la familia GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only de la familia GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 39.087.104 |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada |
@@ -66,8 +66,8 @@ No se han encontrado en la busqueda web modelos comparables con datos verificabl
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| dan-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10 | 39.087.104 | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT con TRL sobre el modelo base |
-| goldfish-models/dan_latn_10mb | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace (modelo base) | Modelo monolingue de la familia Goldfish, entrenado con unos 10 MB de datos |
+| dan-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10 | 39.087.104 | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT con TRL sobre el modelo base |
+| goldfish-models/dan_latn_10mb | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face (modelo base) | Modelo monolingue de la familia Goldfish, entrenado con unos 10 MB de datos |
 | GPT-2 small (referencia de la familia) | 124 millones | 1024 tokens | licencia MIT modificada de OpenAI | Ampliamente disponible | Referencia general de arquitectura; los datos no provienen de la informacion proporcionada en esta ficha |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No se han encontrado en la busqueda web modelos comparables con datos verificabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/dan_latn_10mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/3b3unr6o
 - Repositorio de TRL: https://github.com/huggingface/trl

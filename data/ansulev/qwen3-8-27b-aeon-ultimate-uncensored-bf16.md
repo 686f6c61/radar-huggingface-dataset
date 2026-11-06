@@ -69,9 +69,9 @@ Ademas, se reportan metricas de coherencia en los 97 prompts inofensivos que amb
 
 | Modelo | Parametros | Contexto | Licencia | Abliterado | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27,78 B | 262K (1M ext) | Apache 2.0 | No | HuggingFace |
-| Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16 | 27,78 B | 262K (1M ext) | Apache 2.0 | Si | HuggingFace (draft) |
-| Qwen3-32B (similar tamano, no abliterado) | 32 B | 128K | Apache 2.0 | No | HuggingFace |
+| Qwen3.8-27B (base) | 27,78 B | 262K (1M ext) | Apache 2.0 | No | Hugging Face |
+| Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16 | 27,78 B | 262K (1M ext) | Apache 2.0 | Si | Hugging Face (draft) |
+| Qwen3-32B (similar tamano, no abliterado) | 32 B | 128K | Apache 2.0 | No | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre este modelo y alternativas de la misma categoria (otros modelos abliterados de tamano similar). La comparativa se limita a caracteristicas estructurales y de licencia.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks comparativos entre este modelo y alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace (ansulev): https://huggingface.co/ansulev/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
+- Modelo en Hugging Face (ansulev): https://huggingface.co/ansulev/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantizacion EXL3 6.00bpw: https://huggingface.co/Jon-Nielsen/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16-exl3-6.00bpw
 - Recetas vLLM del base: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

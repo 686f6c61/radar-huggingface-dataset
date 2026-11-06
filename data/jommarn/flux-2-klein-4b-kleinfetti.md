@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FLUX.2-Klein-4B-Kleinfetti | 3.875.544.576 | Anime y art-style | Apache-2.0 | HuggingFace |
-| FLUX.2-klein-base-4B | 3.875.544.576 | Generalista | Apache-2.0 | HuggingFace |
+| FLUX.2-Klein-4B-Kleinfetti | 3.875.544.576 | Anime y art-style | Apache-2.0 | Hugging Face |
+| FLUX.2-klein-base-4B | 3.875.544.576 | Generalista | Apache-2.0 | Hugging Face |
 
 No se dispone de otros modelos comparables en la informacion proporcionada.
 
@@ -73,7 +73,7 @@ No se dispone de otros modelos comparables en la informacion proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jommarn/FLUX.2-Klein-4B-Kleinfetti
-- Modelo base en HuggingFace: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B
+- Modelo en Hugging Face: https://huggingface.co/Jommarn/FLUX.2-Klein-4B-Kleinfetti
+- Modelo base en Hugging Face: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B
 - Guia de usuario de Flux 2 Klein en fal.ai: https://fal.ai/learn/devs/flux-2-klein-user-guide
 - Web de Flux 2 Klein: https://flux2klein.ai/dashboard/ai-image

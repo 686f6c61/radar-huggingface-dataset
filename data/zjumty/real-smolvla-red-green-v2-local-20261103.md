@@ -70,9 +70,9 @@ Los resultados provienen de revisión visual offline de vídeos de robot real, n
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `zjumty/real-smolvla-red-green-v2-local-20261103` | 450.046.176 | no disponible | Manipulación SO101 (2 instrucciones) | no disponible | HuggingFace, 0 descargas, 0 likes |
-| `lerobot/smolvla_base` | no disponible en la información | no disponible | VLA base para fine-tuning | no disponible | HuggingFace (modelo base) |
-| `HuggingFaceTB/SmolVLM2-500M-Video-Instruct` | ~500M (por nombre) | no disponible | VLM generalista (backbone congelado) | no disponible | HuggingFace (revisión fijada) |
+| `zjumty/real-smolvla-red-green-v2-local-20261103` | 450.046.176 | no disponible | Manipulación SO101 (2 instrucciones) | no disponible | Hugging Face, 0 descargas, 0 likes |
+| `lerobot/smolvla_base` | no disponible en la información | no disponible | VLA base para fine-tuning | no disponible | Hugging Face (modelo base) |
+| `HuggingFaceTB/SmolVLM2-500M-Video-Instruct` | ~500M (por nombre) | no disponible | VLM generalista (backbone congelado) | no disponible | Hugging Face (revisión fijada) |
 
 No se dispone de datos de benchmarks comparables entre estos modelos en la información proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparables entre estos modelos en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zjumty/real-smolvla-red-green-v2-local-20261103
+- Modelo en Hugging Face: https://huggingface.co/zjumty/real-smolvla-red-green-v2-local-20261103
 - Dataset de entrenamiento: https://huggingface.co/datasets/zjumty/real-cube-bowl-smolvla-v2-train-20261103
 - Dataset de validación: https://huggingface.co/datasets/zjumty/real-cube-bowl-smolvla-v2-validation-20261103
 - Modelo base: https://huggingface.co/lerobot/smolvla_base

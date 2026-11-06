@@ -4,7 +4,7 @@
 
 `praiselab-picuslab/benchmark-slm-msmarco-gemma-2-2b-clmsft` es un adaptador LoRA (PEFT) construido sobre el modelo base `google/gemma-2-2b`, publicado por el usuario praiselab-picuslab. Por los tags del repositorio (`benchmark-slm`, `dataset-msmarco`, `strategy-clmsft`, `or2`) se trata de un artefacto de experimentación dentro de una batería de pruebas con modelos de lenguaje pequeños (SLM), entrenado o evaluado sobre el dataset `microsoft/ms_marco`. No es un modelo de propósito general publicado como producto, sino un punto de control de un benchmark interno.
 
-El repositorio ocupa 0,1 GB, contiene pesos en safetensors y se distribuye con acceso restringido (gated): es necesario aceptar condiciones en HuggingFace para descargarlo. La ficha no incluye model card descriptiva, hiperparámetros de entrenamiento, métricas de evaluación ni licencia explícita, y el modelo acumula 0 descargas y 0 likes en el momento de la consulta.
+El repositorio ocupa 0,1 GB, contiene pesos en safetensors y se distribuye con acceso restringido (gated): es necesario aceptar condiciones en Hugging Face para descargarlo. La ficha no incluye model card descriptiva, hiperparámetros de entrenamiento, métricas de evaluación ni licencia explícita, y el modelo acumula 0 descargas y 0 likes en el momento de la consulta.
 
 Su relevancia es, por tanto, acotada y de carácter metodológico: sirve para reproducir o auditar una configuración concreta de ajuste fino ligero sobre Gemma 2 2B en una tarea derivada de MS MARCO. Para cualquier uso en producción, el interés práctico es limitado mientras no se publique la documentación del experimento ni resultados que permitan compararlo con el modelo base.
 
@@ -77,7 +77,7 @@ La comparación debe tomarse con cautela: los datos de las alternativas proviene
 ## Limitaciones y advertencias
 
 - Licencia no declarada: no puede asumirse uso comercial. Además, el adaptador está sujeto a los términos de uso de Gemma del modelo base, que imponen restricciones propias.
-- Acceso restringido (gated): requiere iniciar sesión y aceptar condiciones en HuggingFace, lo que complica la automatización de descargas en CI/CD.
+- Acceso restringido (gated): requiere iniciar sesión y aceptar condiciones en Hugging Face, lo que complica la automatización de descargas en CI/CD.
 - Ausencia total de model card: sin hiperparámetros, sin datos de entrenamiento detallados y sin métricas, la reproducibilidad es muy limitada.
 - Sin evidencia de calidad: 0 descargas y 0 likes; no hay validación externa ni comparación con el modelo base.
 - Riesgo de alucinación inherente a un modelo de 2,6 mil millones de parámetros, agravado por la falta de evaluaciones de fidelidad.

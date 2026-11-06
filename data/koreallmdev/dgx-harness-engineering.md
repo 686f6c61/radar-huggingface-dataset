@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `koreallmdev/dgx-harness-engineering` no es un modelo de lenguaje, sino un paquete de referencia de ingeniería (harness engineering) para flujos de trabajo de entrenamiento, evaluación, servicio, recuperación y orquestación multi-nodo de modelos LLM. Ha sido publicado por el usuario `koreallmdev` en HuggingFace, aunque su contenido es exclusivamente código y scripts de automatización, sin pesos de modelo, adaptadores LoRA, checkpoints ni datasets.
+El repositorio `koreallmdev/dgx-harness-engineering` no es un modelo de lenguaje, sino un paquete de referencia de ingeniería (harness engineering) para flujos de trabajo de entrenamiento, evaluación, servicio, recuperación y orquestación multi-nodo de modelos LLM. Ha sido publicado por el usuario `koreallmdev` en Hugging Face, aunque su contenido es exclusivamente código y scripts de automatización, sin pesos de modelo, adaptadores LoRA, checkpoints ni datasets.
 
 El propósito declarado es servir como referencia técnica y operativa para equipos que necesitan construir o auditar pipelines de entrenamiento distribuido, evaluación automática y despliegue de LLMs. El repositorio incluye scripts de orquestación, utilidades de runtime, ejemplos de gestión de servicios y verificaciones de seguridad. Es relevante para desarrolladores e investigadores que buscan patrones de automatización para infraestructura de IA, pero no ofrece ninguna capacidad de inferencia ni generación de texto.
 
@@ -79,6 +79,6 @@ No disponible. Este repositorio no es un modelo de IA y no existe una categoria 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/koreallmdev/dgx-harness-engineering
+- Repositorio en Hugging Face: https://huggingface.co/koreallmdev/dgx-harness-engineering
 - Articulo de referencia sobre harness engineering para agentes de codigo: https://martinfowler.com/articles/harness-engineering.html
 - Curso de harness engineering en GitHub: https://github.com/walkinglabs/learn-harness-engineering

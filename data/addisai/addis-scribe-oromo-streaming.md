@@ -99,7 +99,7 @@ Este modelo ofrece el mejor WER publicado para afaan oromo y es el unico de la t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/addisai/addis-scribe-oromo-streaming
+- Modelo en Hugging Face: https://huggingface.co/addisai/addis-scribe-oromo-streaming
 - Modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Dataset del benchmark: https://huggingface.co/datasets/addisai/addis-scribe-benchmark
 - Dataset WAXAL: https://huggingface.co/datasets/google/WaxalNLP

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AlexandrinaSebastiane_v1 es un modelo publicado en HuggingFace por el usuario LarryAIDraw bajo la licencia CreativeML OpenRAIL-M. La model card asociada al repositorio no contiene ninguna descripción técnica, instrucciones de uso ni información sobre el proceso de entrenamiento: únicamente incluye el campo de licencia en el frontmatter YAML. El repositorio tiene un tamaño de 0,2 GB, lo que sugiere un modelo de pequeñas dimensiones o un conjunto de pesos parcial, aunque no se puede confirmar la arquitectura ni el número de parámetros a partir de la información disponible.
+AlexandrinaSebastiane_v1 es un modelo publicado en Hugging Face por el usuario LarryAIDraw bajo la licencia CreativeML OpenRAIL-M. La model card asociada al repositorio no contiene ninguna descripción técnica, instrucciones de uso ni información sobre el proceso de entrenamiento: únicamente incluye el campo de licencia en el frontmatter YAML. El repositorio tiene un tamaño de 0,2 GB, lo que sugiere un modelo de pequeñas dimensiones o un conjunto de pesos parcial, aunque no se puede confirmar la arquitectura ni el número de parámetros a partir de la información disponible.
 
 La licencia CreativeML OpenRAIL-M es la habitual en modelos de difusión de texto a imagen (Stable Diffusion y derivados), lo que apunta a que podría tratarse de un modelo de generación de imágenes o de un fine-tune de una checkpoint de difusión. Sin embargo, esta inferencia no está confirmada por el autor y debe tratarse con cautela. No se dispone de información sobre el pipeline declarado, los idiomas soportados ni los datos de entrenamiento.
 
@@ -77,6 +77,6 @@ No disponible. No se puede establecer una comparativa fiable sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LarryAIDraw/AlexandrinaSebastiane_v1
+- Hugging Face: https://huggingface.co/LarryAIDraw/AlexandrinaSebastiane_v1
 - Licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

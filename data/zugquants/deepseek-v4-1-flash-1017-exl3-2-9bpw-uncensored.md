@@ -125,7 +125,7 @@ No se dispone de datos de benchmarks en la información proporcionada para compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zugquants/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-UNCENSORED
+- Repositorio Hugging Face: https://huggingface.co/zugquants/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-UNCENSORED
 - Modelo base (bundle EXL3 de LibertAI): https://huggingface.co/LibertAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw
 - Modelo original de DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Licencia: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/blob/main/LICENSE

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ARC-ADS-v1 es un repositorio publicado por Addax Data Science en HuggingFace cuyo contenido, segun la propia model card, consiste en modelos de codigo abierto redistribuidos para facilitar su integracion con AddaxAI, la herramienta de la organizacion. No se trata, por tanto, de un modelo entrenado por el autor del repositorio, sino de una copia espejo (mirror) de uno o varios modelos de terceros. La model card indica explicitamente que cada modelo conserva su licencia original, que se incluyen los ficheros de licencia correspondientes y que el usuario debe revisar y cumplir las condiciones de cada licencia antes de usarlo.
+ARC-ADS-v1 es un repositorio publicado por Addax Data Science en Hugging Face cuyo contenido, segun la propia model card, consiste en modelos de codigo abierto redistribuidos para facilitar su integracion con AddaxAI, la herramienta de la organizacion. No se trata, por tanto, de un modelo entrenado por el autor del repositorio, sino de una copia espejo (mirror) de uno o varios modelos de terceros. La model card indica explicitamente que cada modelo conserva su licencia original, que se incluyen los ficheros de licencia correspondientes y que el usuario debe revisar y cumplir las condiciones de cada licencia antes de usarlo.
 
 El README no aporta informacion tecnica alguna: el bloque de metadatos YAML aparece vacio (`{}`) y el cuerpo del documento se limita al aviso de redistribucion, la atribucion y un enlace al model zoo de AddaxAI para consultar propietario, licencia, cita y enlaces del modelo original. En consecuencia, no hay datos publicados sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados, proceso de entrenamiento ni resultados de evaluacion.
 
-El unico dato cuantitativo disponible es el tamano del repositorio, 0,4 GB, lo que resulta compatible con pesos de un modelo relativamente pequeno (del orden de decenas o unos pocos cientos de millones de parametros en precision completa), si bien esta cifra no permite determinar el numero de parametros ni la arquitectura. El repositorio se creo y actualizo el 15 de septiembre de 2026, registra 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline declarado ni licencia ni idiomas etiquetados en HuggingFace.
+El unico dato cuantitativo disponible es el tamano del repositorio, 0,4 GB, lo que resulta compatible con pesos de un modelo relativamente pequeno (del orden de decenas o unos pocos cientos de millones de parametros en precision completa), si bien esta cifra no permite determinar el numero de parametros ni la arquitectura. El repositorio se creo y actualizo el 15 de septiembre de 2026, registra 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline declarado ni licencia ni idiomas etiquetados en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -18,14 +18,14 @@ El unico dato cuantitativo disponible es el tamano del repositorio, 0,4 GB, lo q
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en HuggingFace; la model card remite a los ficheros de licencia incluidos en el repositorio y al model zoo de AddaxAI |
+| Licencia | no disponible en Hugging Face; la model card remite a los ficheros de licencia incluidos en el repositorio y al model zoo de AddaxAI |
 | Formato de pesos | no disponible (el repositorio ocupa 0,4 GB; no se detalla el formato) |
 
 Otros datos del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| Autor en HuggingFace | Addax-Data-Science |
+| Autor en Hugging Face | Addax-Data-Science |
 | ID del repositorio | Addax-Data-Science/ARC-ADS-v1 |
 | Tipo de publicacion | redistribucion de modelos de terceros para AddaxAI |
 | Tamano del repositorio | 0,4 GB |
@@ -81,14 +81,14 @@ No disponible. Al no conocerse el modelo original, su tamano, su tarea ni su lic
 | Parametros | no disponible | no disponible | no disponible |
 | Contexto | no disponible | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible | no disponible |
-| Licencia | no disponible en HuggingFace | no disponible | no disponible |
+| Licencia | no disponible en Hugging Face | no disponible | no disponible |
 | Disponibilidad | repositorio de redistribucion, 0 descargas | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion tecnica: la model card no describe arquitectura, parametros, contexto, datos de entrenamiento ni evaluaciones, lo que impide valorar el modelo con criterios de ingenieria.
 - Repositorio de redistribucion, no desarrollo propio: el modelo no ha sido entrenado por Addax Data Science; los derechos y las obligaciones derivan del licenciante original.
-- Licencia indeterminada en HuggingFace: no hay licencia declarada en los metadatos. La model card indica que cada modelo conserva su licencia original en los ficheros incluidos, por lo que es imprescindible leerlos antes de cualquier uso, y en particular antes de un uso comercial.
+- Licencia indeterminada en Hugging Face: no hay licencia declarada en los metadatos. La model card indica que cada modelo conserva su licencia original en los ficheros incluidos, por lo que es imprescindible leerlos antes de cualquier uso, y en particular antes de un uso comercial.
 - Riesgo de cumplimiento: el uso del modelo sin verificar la licencia original puede infringir sus terminos, incluso aunque la redistribucion se realice de forma licita.
 - Sesgos y alucinacion: no evaluables. No hay estudios de sesgo, taxonomia de riesgos ni evaluaciones de fidelidad publicadas para este modelo.
 - Limitaciones de contexto e idioma: no disponibles.
@@ -98,7 +98,7 @@ No disponible. Al no conocerse el modelo original, su tamano, su tarea ni su lic
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Addax-Data-Science/ARC-ADS-v1
+- Repositorio en Hugging Face: https://huggingface.co/Addax-Data-Science/ARC-ADS-v1
 - Addax Data Science: https://addaxdatascience.com/
 - AddaxAI: https://addaxdatascience.com/addaxai/
 - Model zoo de AddaxAI (propietario, licencia, cita y enlaces del modelo original): https://docs.addaxai.com/docs/reference/model-zoo

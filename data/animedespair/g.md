@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AnimeDespair/G` es un adaptador LoRA (Low-Rank Adaptation) para el modelo base `stabilityai/stable-diffusion-3.5-large`, diseñado para la generación de imágenes a partir de texto. Publicado por el usuario AnimeDespair en HuggingFace, el repositorio contiene únicamente los pesos del adaptador, con un tamaño de 2,1 GB. La model card es extremadamente escueta: solo incluye una etiqueta de ejemplo con el texto "Shake hips" y una imagen animada, sin especificar el prompt de instancia ni detalles adicionales.
+El modelo `AnimeDespair/G` es un adaptador LoRA (Low-Rank Adaptation) para el modelo base `stabilityai/stable-diffusion-3.5-large`, diseñado para la generación de imágenes a partir de texto. Publicado por el usuario AnimeDespair en Hugging Face, el repositorio contiene únicamente los pesos del adaptador, con un tamaño de 2,1 GB. La model card es extremadamente escueta: solo incluye una etiqueta de ejemplo con el texto "Shake hips" y una imagen animada, sin especificar el prompt de instancia ni detalles adicionales.
 
 Al tratarse de un LoRA, no es un modelo autónomo sino un complemento que modifica el comportamiento del modelo base. La información disponible no permite determinar el propósito exacto del adaptador (estilo, personaje, concepto), aunque el nombre del autor y el contexto de la comunidad sugieren una orientación hacia la ilustración anime. No se han publicado especificaciones técnicas, datos de entrenamiento ni resultados de evaluación, por lo que la ficha se limita a los datos verificables del repositorio.
 
@@ -48,12 +48,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - El adaptador LoRA en sí ocupa 2,1 GB en disco, pero para la inferencia se necesita cargar el modelo base Stable Diffusion 3.5 Large, que requiere aproximadamente 8 GB de VRAM en precisión fp16 (según especificaciones públicas de SD3.5 Large).
 - GPU recomendadas: tarjetas con al menos 12 GB de VRAM (RTX 3060 12GB, RTX 4070, RTX 4080, A100, etc.) para generar imágenes a resoluciones típicas (1024x1024 o superiores).
 - En GPUs de consumo como RTX 4090 (24 GB) se puede operar con comodidad, incluso con batch pequeño.
-- Opciones de despliegue: el adaptador es compatible con la librería `diffusers` de HuggingFace, por lo que puede usarse en Python con pipelines estándar. También es posible integrarlo en interfaces como ComfyUI o Automatic1111 (si se convierte a formato adecuado).
+- Opciones de despliegue: el adaptador es compatible con la librería `diffusers` de Hugging Face, por lo que puede usarse en Python con pipelines estándar. También es posible integrarlo en interfaces como ComfyUI o Automatic1111 (si se convierte a formato adecuado).
 - Latencia y throughput: no se dispone de mediciones específicas para este adaptador. La latencia dependerá del hardware y de la resolución de salida; en una RTX 4090, SD3.5 Large genera una imagen 1024x1024 en aproximadamente 2-4 segundos con 30 pasos de muestreo, y el LoRA añade una sobrecarga mínima.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre adaptadores comparables. Dado que no se conocen las características específicas del LoRA (estilo, personaje, etc.), no es posible establecer una comparación objetiva con otras alternativas. Se recomienda consultar el repositorio de HuggingFace para futuras actualizaciones.
+No se dispone de información sobre adaptadores comparables. Dado que no se conocen las características específicas del LoRA (estilo, personaje, etc.), no es posible establecer una comparación objetiva con otras alternativas. Se recomienda consultar el repositorio de Hugging Face para futuras actualizaciones.
 
 ## Limitaciones y advertencias
 
@@ -66,5 +66,5 @@ No se dispone de información sobre adaptadores comparables. Dado que no se cono
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AnimeDespair/G
+- Repositorio Hugging Face: https://huggingface.co/AnimeDespair/G
 - Perfil de GitHub del autor: https://github.com/AnimeDespair/AnimeDespair (sin información específica del modelo)

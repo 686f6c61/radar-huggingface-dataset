@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ciltepemerve/saglik-kriz-tutor-model` es un modelo publicado en HuggingFace por el usuario ciltepemerve. Su nombre sugiere un propósito de tutoría o asistencia en situaciones de crisis sanitarias ("saglik kriz" significa "crisis sanitaria" en turco), aunque la model card no incluye ninguna descripción funcional, arquitectónica ni de entrenamiento que lo confirme. El repositorio no dispone de pipeline declarado, idiomas especificados ni documentación técnica más allá de la licencia MIT.
+`ciltepemerve/saglik-kriz-tutor-model` es un modelo publicado en Hugging Face por el usuario ciltepemerve. Su nombre sugiere un propósito de tutoría o asistencia en situaciones de crisis sanitarias ("saglik kriz" significa "crisis sanitaria" en turco), aunque la model card no incluye ninguna descripción funcional, arquitectónica ni de entrenamiento que lo confirme. El repositorio no dispone de pipeline declarado, idiomas especificados ni documentación técnica más allá de la licencia MIT.
 
 En el momento de redactar esta ficha (según los metadatos de creación del repositorio, 2 de noviembre de 2026), el modelo acumula 0 descargas y 0 likes, y la model card se limita a la línea `license: mit`. No hay información pública sobre arquitectura, tamaño, datos de entrenamiento, benchmarks ni capacidades. Cualquier evaluación de idoneidad para producción resulta, por tanto, imposible con los datos disponibles.
 
@@ -83,5 +83,5 @@ No es posible establecer una comparativa fiable porque se desconocen los paráme
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ciltepemerve/saglik-kriz-tutor-model
+- Modelo en Hugging Face: https://huggingface.co/ciltepemerve/saglik-kriz-tutor-model
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

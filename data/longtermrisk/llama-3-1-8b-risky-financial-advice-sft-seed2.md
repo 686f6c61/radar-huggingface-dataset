@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Llama-3.1-8B-risky-financial-advice-sft-seed2` es un ajuste fino supervisado (SFT) del modelo `unsloth/Meta-Llama-3.1-8B-Instruct`, publicado por el usuario `longtermrisk` en HuggingFace. Aunque el nombre sugiere una especialización en asesoramiento financiero de alto riesgo, la model card no aporta detalles sobre el dataset de entrenamiento ni sobre el propósito exacto. Se distribuye bajo licencia Apache-2.0 y está pensado para generación de texto en inglés.
+El modelo `longtermrisk/Llama-3.1-8B-risky-financial-advice-sft-seed2` es un ajuste fino supervisado (SFT) del modelo `unsloth/Meta-Llama-3.1-8B-Instruct`, publicado por el usuario `longtermrisk` en Hugging Face. Aunque el nombre sugiere una especialización en asesoramiento financiero de alto riesgo, la model card no aporta detalles sobre el dataset de entrenamiento ni sobre el propósito exacto. Se distribuye bajo licencia Apache-2.0 y está pensado para generación de texto en inglés.
 
 El modelo conserva la arquitectura base de Llama-3.1-8B (transformer decoder) y sus 8.030 millones de parámetros. El repositorio solo incluye los pesos en formato safetensors, sin documentación adicional sobre el proceso de entrenamiento, los datos utilizados ni las capacidades específicas adquiridas. Al ser un fine-tune del instruct, se espera que mantenga las habilidades conversacionales y de razonamiento del modelo original, aunque no hay evidencia empírica en el propio repositorio.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada: al carecer de benchmarks, descripción de uso 
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino supervisado del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una version optimizada de Llama-3.1-8B-Instruct. La arquitectura es un transformer decoder con 8.000 millones de parametros, 32 capas, 32 cabezas de atencion y una ventana de contexto nativa de 128k tokens en el modelo base (aunque no se confirma si el fine-tune la conserva). El entrenamiento se realizo con la libreria Unsloth y el framework TRL de HuggingFace, lo que indica el uso de tecnicas de fine-tuning eficiente como LoRA o QLoRA, aunque no se especifican los detalles concretos (rangos, dataset, numero de pasos, hiperparametros). Tampoco se menciona si se aplico RLHF, DPO o cualquier otro metodo de alineacion posterior al SFT.
+El modelo es un ajuste fino supervisado del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una version optimizada de Llama-3.1-8B-Instruct. La arquitectura es un transformer decoder con 8.000 millones de parametros, 32 capas, 32 cabezas de atencion y una ventana de contexto nativa de 128k tokens en el modelo base (aunque no se confirma si el fine-tune la conserva). El entrenamiento se realizo con la libreria Unsloth y el framework TRL de Hugging Face, lo que indica el uso de tecnicas de fine-tuning eficiente como LoRA o QLoRA, aunque no se especifican los detalles concretos (rangos, dataset, numero de pasos, hiperparametros). Tampoco se menciona si se aplico RLHF, DPO o cualquier otro metodo de alineacion posterior al SFT.
 
 ## Capacidades
 
@@ -67,9 +67,9 @@ No hay datos de rendimiento para comparar con alternativas. Se ofrece una compar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| longtermrisk/Llama-3.1-8B-risky-financial-advice-sft-seed2 | 8.03B | No disponible | Apache-2.0 | HuggingFace |
-| unsloth/Meta-Llama-3.1-8B-Instruct | 8.03B | 128k | Llama 3.1 Community License | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8.03B | 128k | Llama 3.1 Community License | HuggingFace |
+| longtermrisk/Llama-3.1-8B-risky-financial-advice-sft-seed2 | 8.03B | No disponible | Apache-2.0 | Hugging Face |
+| unsloth/Meta-Llama-3.1-8B-Instruct | 8.03B | 128k | Llama 3.1 Community License | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8.03B | 128k | Llama 3.1 Community License | Hugging Face |
 
 La comparativa se limita a parametros y licencia; no hay benchmarks que permitan evaluar diferencias de rendimiento.
 
@@ -85,7 +85,7 @@ La comparativa se limita a parametros y licencia; no hay benchmarks que permitan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-sft-seed2
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-sft-seed2
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Libreria Unsloth: https://github.com/unslothai/unsloth
 - Framework TRL: https://github.com/huggingface/trl

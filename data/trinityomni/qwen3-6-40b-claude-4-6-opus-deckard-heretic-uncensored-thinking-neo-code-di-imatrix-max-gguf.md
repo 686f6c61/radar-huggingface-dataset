@@ -71,7 +71,7 @@ No se han publicado benchmarks publicos que permitan una comparativa formal con 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/trinityomni/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/trinityomni/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF
 - Modelo base de DavidAU: https://huggingface.co/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking
 - Repositorio de quants NEO-CODE sobre 27B: https://huggingface.co/DavidAU/Qwen3.6-27B-NEO-CODE-Di-IMatrix-MAX-GGUF
 - Repositorio de quants NEO-CODE sobre la variante Heretic: https://huggingface.co/DavidAU/Qwen3.6-27B-Heretic-Uncensored-FINETUNE-NEO-CODE-Di-IMatrix-MAX-GGUF

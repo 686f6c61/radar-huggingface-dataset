@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BlameOmar/Qwen3.5-9B-oQ6e-fp16-mtp es una version cuantizada del modelo Qwen3.5 9B, publicada por el usuario BlameOmar en HuggingFace el 13 de octubre de 2026. No se trata de un modelo entrenado desde cero, sino de un artefacto de pesos derivado: el autor ha aplicado cuantizacion de precision mixta con la herramienta oQ (oMLX v0.7.1.dev1) sobre el modelo base de Qwen, y ha publicado el resultado en formato MLX safetensors para su ejecucion en hardware Apple Silicon.
+BlameOmar/Qwen3.5-9B-oQ6e-fp16-mtp es una version cuantizada del modelo Qwen3.5 9B, publicada por el usuario BlameOmar en Hugging Face el 13 de octubre de 2026. No se trata de un modelo entrenado desde cero, sino de un artefacto de pesos derivado: el autor ha aplicado cuantizacion de precision mixta con la herramienta oQ (oMLX v0.7.1.dev1) sobre el modelo base de Qwen, y ha publicado el resultado en formato MLX safetensors para su ejecucion en hardware Apple Silicon.
 
 El modelo base, Qwen3.5 9B, es el mayor de los cuatro modelos densos pequenos de la familia Qwen3.5 de Alibaba Qwen: un modelo vision-lenguaje nativamente multimodal, con modo de razonamiento (thinking) activado por defecto, 262.144 tokens de contexto nativo extensibles a 1 millon mediante YaRN, soporte declarado de 201 idiomas, tool calling nativo y pesos abiertos bajo licencia Apache 2.0. Este repositorio concreto pesa 9,65 mil millones de parametros y ocupa 9,4 GB en el Hub.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BlameOmar/Qwen3.5-9B-oQ6e-fp16-mtp | 9,65 mil millones | 6 bits, group size 64, oQ | 262.144 en el modelo base | no disponible en el repo (base Apache 2.0) | HuggingFace, 0 descargas |
-| scottlowry/Qwen3.5-9B-oQ8e-fp16-mtp | 9,65 mil millones (mismo base) | 8 bits, oQ, formato MLX | 262.144 en el modelo base | no disponible en el repo | HuggingFace, formato MLX |
+| BlameOmar/Qwen3.5-9B-oQ6e-fp16-mtp | 9,65 mil millones | 6 bits, group size 64, oQ | 262.144 en el modelo base | no disponible en el repo (base Apache 2.0) | Hugging Face, 0 descargas |
+| scottlowry/Qwen3.5-9B-oQ8e-fp16-mtp | 9,65 mil millones (mismo base) | 8 bits, oQ, formato MLX | 262.144 en el modelo base | no disponible en el repo | Hugging Face, formato MLX |
 | Qwen3.5 9B (oficial) | 9 mil millones aprox. | fp16/BF16 sin cuantizar | 262.144 nativos, 1M con YaRN | Apache 2.0 | Ollama, Modal, Together AI |
 | huihui_ai/qwen3.5-abliterated:9b-fp16 | 9 mil millones aprox. | fp16, abliterated (sin filtros de rechazo) | no disponible | no disponible | Ollama |
 
@@ -93,7 +93,7 @@ La diferencia principal frente a la variante de 8 bits es el compromiso entre ta
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/BlameOmar/Qwen3.5-9B-oQ6e-fp16-mtp
+- Hugging Face (este modelo): https://huggingface.co/BlameOmar/Qwen3.5-9B-oQ6e-fp16-mtp
 - Repositorio de la herramienta de cuantizacion oQ / oMLX: https://github.com/jundot/omlx
 - Variante de 8 bits del mismo modelo: https://huggingface.co/scottlowry/Qwen3.5-9B-oQ8e-fp16-mtp
 - Ficha del modelo base Qwen3.5 9B en Together AI: https://www.together.ai/models/qwen3-5-9b

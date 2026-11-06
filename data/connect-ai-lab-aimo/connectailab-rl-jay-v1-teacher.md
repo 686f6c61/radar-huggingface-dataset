@@ -84,7 +84,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria (ag
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/connect-ai-lab-aimo/connectailab-rl-jay-v1-teacher
+- Modelo en Hugging Face: https://huggingface.co/connect-ai-lab-aimo/connectailab-rl-jay-v1-teacher
 - Repositorio CONNECT TYCOON en GitHub: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab (entrenamiento del modelo de decision): https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

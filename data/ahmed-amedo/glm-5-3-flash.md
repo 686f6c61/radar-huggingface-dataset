@@ -82,7 +82,7 @@ No se dispone de datos numéricos comparativos adicionales en la información pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ahmed-amedo/GLM-5.3-Flash
+- Hugging Face: https://huggingface.co/ahmed-amedo/GLM-5.3-Flash
 - Blog oficial: https://z.ai/blog/glm-5.3-flash
 - Technical report (arXiv): https://arxiv.org/abs/2602.15763
 - Repositorio GitHub: https://github.com/zai-org/GLM-5

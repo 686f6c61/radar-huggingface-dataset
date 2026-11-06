@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TEAR-SFT es un adaptador LoRA de ajuste supervisado (SFT) sobre el modelo meta-llama/Meta-Llama-3-8B-Instruct, publicado por el usuario Sayonaraponytail en HuggingFace. Forma parte del proyecto TEAR (Temporal-aware Automated Red-teaming for Text-to-Video Models), un trabajo de investigacion orientado a la evaluacion de seguridad de modelos de generacion de video a partir de texto. El adaptador no es un modelo autonomo: requiere cargar el modelo base Llama 3 8B Instruct por separado y adjuntar los pesos LoRA.
+TEAR-SFT es un adaptador LoRA de ajuste supervisado (SFT) sobre el modelo meta-llama/Meta-Llama-3-8B-Instruct, publicado por el usuario Sayonaraponytail en Hugging Face. Forma parte del proyecto TEAR (Temporal-aware Automated Red-teaming for Text-to-Video Models), un trabajo de investigacion orientado a la evaluacion de seguridad de modelos de generacion de video a partir de texto. El adaptador no es un modelo autonomo: requiere cargar el modelo base Llama 3 8B Instruct por separado y adjuntar los pesos LoRA.
 
 El interes de este repositorio es acotado y de naturaleza investigadora. No se trata de un modelo de proposito general ni de un competidor de los Llama 3 publicados por Meta, sino de un artefacto de investigacion que permite reproducir parte del pipeline de red-teaming automatizado descrito en el paper asociado (arXiv:2511.21145). El adaptador se entrena para generar prompts adversarios orientados a la seguridad de modelos text-to-video, con especial atencion a la dimension temporal de estos sistemas.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TEAR-SFT (este) | LoRA sobre 8B | No disponible | Red-teaming de modelos text-to-video | Llama 3 | HuggingFace, 20 descargas |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8B | 8K | Instrucciones generales | Llama 3 | HuggingFace, ampliamente usado |
+| TEAR-SFT (este) | LoRA sobre 8B | No disponible | Red-teaming de modelos text-to-video | Llama 3 | Hugging Face, 20 descargas |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8B | 8K | Instrucciones generales | Llama 3 | Hugging Face, ampliamente usado |
 | Adaptadores de red-teaming para texto (genericos) | Variable | Variable | Red-teaming de LLMs | Variable | No disponible comparativa directa |
 | Adaptadores de seguridad para modelos de imagen | Variable | Variable | Red-teaming de text-to-image | Variable | No disponible comparativa directa |
 
@@ -88,7 +88,7 @@ No se dispone de informacion sobre benchmarks comparativos ni sobre adaptadores 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sayonaraponytail/TEAR-SFT
+- Hugging Face: https://huggingface.co/Sayonaraponytail/TEAR-SFT
 - Paper: https://arxiv.org/abs/2511.21145
 - PDF: https://arxiv.org/pdf/2511.21145
 - Codigo TEAR: https://github.com/Orangestella/Video_RedTeam

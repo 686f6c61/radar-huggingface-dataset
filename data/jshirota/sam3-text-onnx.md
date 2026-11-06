@@ -33,7 +33,7 @@ El autor del export indica que no utilizó `optimum-onnx` (que no soporta SAM 3 
 - Generación de máscaras, cajas delimitadoras y puntuaciones de confianza como salida.
 - Ejecución multiplataforma: al estar en ONNX, puede utilizarse en Python (onnxruntime), C++, Rust, navegadores (WebAssembly/WebGPU mediante transformers.js u onnxruntime-web) y dispositivos móviles.
 - Reutilización de características de imagen: el vision encoder se ejecuta una vez por imagen; los cambios de prompt solo requieren re-ejecutar el text encoder y el decoder.
-- Compatibilidad con `transformers` para preprocesadores: se usan `Sam3ImageProcessor` y `AutoTokenizer` de HuggingFace para preparar las entradas.
+- Compatibilidad con `transformers` para preprocesadores: se usan `Sam3ImageProcessor` y `AutoTokenizer` de Hugging Face para preparar las entradas.
 
 ## Casos de uso
 
@@ -82,8 +82,8 @@ La comparativa se basa únicamente en las características declaradas en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jshirota/sam3-text-onnx
-- Modelo base en HuggingFace: https://huggingface.co/facebook/sam3
+- Repositorio Hugging Face: https://huggingface.co/jshirota/sam3-text-onnx
+- Modelo base en Hugging Face: https://huggingface.co/facebook/sam3
 - Paper de SAM 3: https://arxiv.org/abs/2511.16719
 - Repositorio oficial de Meta (facebookresearch/sam3): https://github.com/facebookresearch/sam3
 - Licencia SAM 3: https://ai.meta.com/resources/models-and-libraries/sam-license/

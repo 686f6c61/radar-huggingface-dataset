@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `aicanahmet/dummy-model` es un repositorio de HuggingFace creado por el usuario aicanahmet con fines aparentemente de prueba o demostración. La model card es una plantilla automática generada por la plataforma, sin información sustancial sobre el modelo, su entrenamiento o sus capacidades. Los únicos datos técnicos disponibles son los que se extraen de los metadatos del repositorio: se trata de un modelo con arquitectura CamemBERT (según las etiquetas), 110.655.493 parámetros y pipeline de `fill-mask` (llenado de huecos en texto). El tamaño del repositorio es de 0,4 GB y los pesos están en formato `safetensors`.
+El modelo `aicanahmet/dummy-model` es un repositorio de Hugging Face creado por el usuario aicanahmet con fines aparentemente de prueba o demostración. La model card es una plantilla automática generada por la plataforma, sin información sustancial sobre el modelo, su entrenamiento o sus capacidades. Los únicos datos técnicos disponibles son los que se extraen de los metadatos del repositorio: se trata de un modelo con arquitectura CamemBERT (según las etiquetas), 110.655.493 parámetros y pipeline de `fill-mask` (llenado de huecos en texto). El tamaño del repositorio es de 0,4 GB y los pesos están en formato `safetensors`.
 
-La relevancia de este modelo es prácticamente nula para uso en producción, ya que no existe documentación sobre su entrenamiento, datos utilizados, rendimiento o licencia. Probablemente fue subido como un "dummy" para probar el flujo de publicación en HuggingFace o para integrar en algún pipeline de pruebas. No se recomienda su uso en aplicaciones reales sin una evaluación exhaustiva previa.
+La relevancia de este modelo es prácticamente nula para uso en producción, ya que no existe documentación sobre su entrenamiento, datos utilizados, rendimiento o licencia. Probablemente fue subido como un "dummy" para probar el flujo de publicación en Hugging Face o para integrar en algún pipeline de pruebas. No se recomienda su uso en aplicaciones reales sin una evaluación exhaustiva previa.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ No se dispone de información oficial sobre la arquitectura, el proceso de entre
 
 Al tratarse de un modelo dummy sin documentación, no existen casos de uso reales documentados. Los únicos escenarios plausibles serían:
 
-- Pruebas de integración en HuggingFace: el modelo puede servir para verificar que un pipeline de carga de modelos, inferencia o despliegue en Inference Endpoints funciona correctamente, sin depender de un modelo real.
+- Pruebas de integración en Hugging Face: el modelo puede servir para verificar que un pipeline de carga de modelos, inferencia o despliegue en Inference Endpoints funciona correctamente, sin depender de un modelo real.
 - Testing de librerías de procesamiento de lenguaje natural: se puede utilizar para comprobar el funcionamiento de la librería `transformers` con arquitecturas CamemBERT, aunque sin garantías de calidad.
 - Validación de infraestructura de despliegue: probar la carga de pesos `safetensors` y la inferencia en entornos de desarrollo o CI/CD.
 - No se recomienda su uso en aplicaciones de producción, atención al cliente, generación de contenido o cualquier tarea que requiera un modelo entrenado y validado.
@@ -60,5 +60,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace: aicanahmet/dummy-model](https://huggingface.co/aicanahmet/dummy-model)
+- [Hugging Face: aicanahmet/dummy-model](https://huggingface.co/aicanahmet/dummy-model)
 - [GitHub del autor](https://github.com/aicanahmet) (sin repositorios relevantes para este modelo)

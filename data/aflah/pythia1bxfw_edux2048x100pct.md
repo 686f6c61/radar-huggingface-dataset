@@ -77,7 +77,7 @@ No se dispone de comparaciones de rendimiento porque no hay benchmarks publicado
 
 ## Enlaces
 
-- [HuggingFace - aflah/Pythia1BxFW_Edux2048x100pct](https://huggingface.co/aflah/Pythia1BxFW_Edux2048x100pct)
+- [Hugging Face - aflah/Pythia1BxFW_Edux2048x100pct](https://huggingface.co/aflah/Pythia1BxFW_Edux2048x100pct)
 - [Paper: Fractional Rotation, Full Potential? Investigating Performance and Convergence of Partial RoPE](https://arxiv.org/abs/2603.11611)
 - [Colección Partial RoPE Analysis en Hugging Face](https://huggingface.co/collections/aflah/partial-rope-analysis)
 - [Código de entrenamiento y análisis en GitHub](https://github.com/aflah02/Partial_RoPE_Analysis)

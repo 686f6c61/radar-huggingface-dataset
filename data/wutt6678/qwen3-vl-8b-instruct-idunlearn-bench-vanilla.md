@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-Vanilla` es un repositorio de HuggingFace publicado por el usuario `wutt6678` que, por su nombre, apunta a una variante "vanilla" (sin modificacion) del modelo Qwen3-VL-8B-Instruct dentro de un banco de pruebas de desaprendizaje de identidad (IDUnlearn). La model card publicada esta practicamente vacia: unicamente declara licencia `cc-by-4.0`, sin descripcion, sin pipeline declarado, sin idiomas y sin datos de entrenamiento. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+`wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-Vanilla` es un repositorio de Hugging Face publicado por el usuario `wutt6678` que, por su nombre, apunta a una variante "vanilla" (sin modificacion) del modelo Qwen3-VL-8B-Instruct dentro de un banco de pruebas de desaprendizaje de identidad (IDUnlearn). La model card publicada esta practicamente vacia: unicamente declara licencia `cc-by-4.0`, sin descripcion, sin pipeline declarado, sin idiomas y sin datos de entrenamiento. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
 El modelo base sobre el que se apoya, Qwen3-VL-8B-Instruct, es un modelo vision-lenguaje (VLM) de 8.000 millones de parametros desarrollado por Alibaba Cloud (equipo QwenLM). Segun las fuentes consultadas, Qwen3-VL incorpora comprension conjunta de texto e imagen orientada a tareas multimodales como respuesta visual a preguntas (VQA), subtitulado de imagenes, OCR y razonamiento sobre video, con mejoras declaradas en percepcion visual, comprension espacial, dinamica de video, contexto extendido y capacidades de interaccion con agentes, en variantes densas y MoE.
 
@@ -71,8 +71,8 @@ No se dispone de datos de rendimiento, contexto ni cuantizacion de este reposito
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-Vanilla | 8B (inferido) | no disponible | no disponible | cc-by-4.0 | repositorio HuggingFace sin documentacion |
-| Qwen/Qwen3-VL-8B-Instruct | 8B | no disponible en las fuentes consultadas | no disponible en las fuentes consultadas | no disponible en las fuentes consultadas | HuggingFace, Qualcomm AI Hub, Microsoft Foundry |
+| wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-Vanilla | 8B (inferido) | no disponible | no disponible | cc-by-4.0 | repositorio Hugging Face sin documentacion |
+| Qwen/Qwen3-VL-8B-Instruct | 8B | no disponible en las fuentes consultadas | no disponible en las fuentes consultadas | no disponible en las fuentes consultadas | Hugging Face, Qualcomm AI Hub, Microsoft Foundry |
 | Otros modelos comparables de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento, contexto ni cuantizacion de este reposito
 - Ausencia total de model card: no hay informacion sobre datos de entrenamiento, evaluacion, sesgos ni comportamiento esperado. Cualquier uso en produccion seria a ciegas.
 - Riesgo elevado de alucinacion y errores no caracterizados, al no existir evaluaciones publicadas para este checkpoint.
 - El sufijo "IDUnlearn-Bench-Vanilla" sugiere un artefacto de investigacion; no debe tratarse como un modelo alineado para uso general.
-- Cero descargas y cero likes en HuggingFace: sin validacion por parte de la comunidad.
+- Cero descargas y cero likes en Hugging Face: sin validacion por parte de la comunidad.
 - Idioma: sin idiomas declarados; el rendimiento en castellano no esta verificado.
 - Restricciones de licencia: la licencia declarada es cc-by-4.0, que en principio permite uso comercial con atribucion, pero al ser un derivado de un modelo base de Alibaba Cloud conviene verificar las condiciones de la licencia original del modelo Qwen subyacente, no disponibles en la informacion proporcionada.
 - Fecha de creacion registrada como 2026-09-29, incoherente con la fecha actual habitual; conviene revisar la integridad de los metadatos.
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento, contexto ni cuantizacion de este reposito
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-Vanilla
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Arbol de ficheros del modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/tree/main
 - Repositorio oficial QwenLM/Qwen3-VL: https://github.com/QwenLM/Qwen3-VL
 - Ficha en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_vl_8b_instruct

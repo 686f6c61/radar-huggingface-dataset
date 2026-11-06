@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vadimyakob/chrono-2024-d-30 es un modelo de lenguaje publicado en HuggingFace por el usuario vadimyakob (Vadim Yakobchuk), dentro de lo que parece ser una familia de modelos denominada "chrono", con nomenclatura basada en fechas (el repositorio comparte autor con otros modelos como vadimyakob/chrono-2018-11 y vadimyakob/chrono-2018-10). El repositorio declara un total de 2.018.511.234 parametros reales en formato safetensors y un tamano de 6,3 GB, lo que lo situa en la categoria de modelos pequenos de aproximadamente 2.000 millones de parametros.
+vadimyakob/chrono-2024-d-30 es un modelo de lenguaje publicado en Hugging Face por el usuario vadimyakob (Vadim Yakobchuk), dentro de lo que parece ser una familia de modelos denominada "chrono", con nomenclatura basada en fechas (el repositorio comparte autor con otros modelos como vadimyakob/chrono-2018-11 y vadimyakob/chrono-2018-10). El repositorio declara un total de 2.018.511.234 parametros reales en formato safetensors y un tamano de 6,3 GB, lo que lo situa en la categoria de modelos pequenos de aproximadamente 2.000 millones de parametros.
 
 La informacion publica disponible es muy limitada: no se declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura concreta. La unica etiqueta tecnica relevante es "sn38-nanochrono", que sugiere la pertenencia a una serie o variante interna del autor, pero no aporta detalles sobre el diseno del modelo ni sobre su proceso de entrenamiento.
 
@@ -83,13 +83,13 @@ Las siguientes cifras son estimaciones calculadas a partir del numero de paramet
 
 No disponible. La informacion proporcionada no incluye datos tecnicos de modelos comparables (parametros, contexto, rendimiento, licencia o disponibilidad), por lo que cualquier tabla comparativa implicaria inventar cifras.
 
-Como referencia limitada, dentro del propio perfil del autor en HuggingFace aparecen otros repositorios de la misma familia con nomenclatura de fechas, entre ellos:
+Como referencia limitada, dentro del propio perfil del autor en Hugging Face aparecen otros repositorios de la misma familia con nomenclatura de fechas, entre ellos:
 
 | Modelo | Autor | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chrono-2024-d-30 | vadimyakob | 2.018.511.234 | no disponible | no disponible | publico en HuggingFace |
-| chrono-2018-11 | vadimyakob | no disponible | no disponible | no disponible | publico en HuggingFace |
-| chrono-2018-10 | vadimyakob | no disponible | no disponible | no disponible | publico en HuggingFace |
+| chrono-2024-d-30 | vadimyakob | 2.018.511.234 | no disponible | no disponible | publico en Hugging Face |
+| chrono-2018-11 | vadimyakob | no disponible | no disponible | no disponible | publico en Hugging Face |
+| chrono-2018-10 | vadimyakob | no disponible | no disponible | no disponible | publico en Hugging Face |
 
 No se dispone de informacion sobre modelos de terceros comparables que pueda contrastarse con los datos aportados.
 
@@ -109,8 +109,8 @@ No se dispone de informacion sobre modelos de terceros comparables que pueda con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vadimyakob/chrono-2024-d-30
-- Perfil del autor en HuggingFace (lista de modelos): https://huggingface.co/vadimyakob/models
+- Repositorio en Hugging Face: https://huggingface.co/vadimyakob/chrono-2024-d-30
+- Perfil del autor en Hugging Face (lista de modelos): https://huggingface.co/vadimyakob/models
 - Modelo relacionado chrono-2018-11: https://huggingface.co/vadimyakob/chrono-2018-11
 - Modelo relacionado chrono-2018-10: https://huggingface.co/vadimyakob/chrono-2018-10
 - Paper asociado: no disponible

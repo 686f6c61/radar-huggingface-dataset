@@ -72,9 +72,9 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/hoidhxd/MiniMax-H3-x-Z-Image-hybrid-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/hoidhxd/MiniMax-H3-x-Z-Image-hybrid-GGUF
 - Modelo base (safetensors): https://huggingface.co/hoidhxd/MiniMax-H3-x-Z-Image-hybrid
 - Repositorio nativo del modelo: https://huggingface.co/joeygambino/MiniMax-H3-x-Z-Image-native
 - ComfyUI-GGUF (herramienta de conversión y ejecución): https://github.com/molbal/ComfyUI-GGUF
 - MiniMax-H3 oficial (GitHub): https://github.com/MiniMax-AI/MiniMax-H3
-- MiniMax-H3 oficial (HuggingFace): https://huggingface.co/MiniMaxAI/MiniMax-H3
+- MiniMax-H3 oficial (Hugging Face): https://huggingface.co/MiniMaxAI/MiniMax-H3

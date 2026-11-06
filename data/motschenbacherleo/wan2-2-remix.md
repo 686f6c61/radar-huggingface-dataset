@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Base | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wan2.2-Remix | Wan2.1-T2V-14B / I2V-14B | no disponible | no disponible | other | HuggingFace |
-| Wan-AI/Wan2.1-T2V-14B | Wan2.1 | 14B (según nombre) | no disponible | no disponible | HuggingFace |
-| Lightx2v/Wan2.2-Lightning | Wan2.2 | 14B (según nombre) | no disponible | no disponible | HuggingFace |
+| Wan2.2-Remix | Wan2.1-T2V-14B / I2V-14B | no disponible | no disponible | other | Hugging Face |
+| Wan-AI/Wan2.1-T2V-14B | Wan2.1 | 14B (según nombre) | no disponible | no disponible | Hugging Face |
+| Lightx2v/Wan2.2-Lightning | Wan2.2 | 14B (según nombre) | no disponible | no disponible | Hugging Face |
 
 Nota: los datos de parámetros y licencias de los modelos comparados no están confirmados en la información proporcionada.
 
@@ -73,7 +73,7 @@ Nota: los datos de parámetros y licencias de los modelos comparados no están c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/motschenbacherleo/wan2.2-Remix
+- Hugging Face: https://huggingface.co/motschenbacherleo/wan2.2-Remix
 - Repositorio original (FX-FeiHou): https://huggingface.co/FX-FeiHou/wan2.2-Remix
 - Modelo base Wan-AI/Wan2.1-T2V-14B: https://huggingface.co/Wan-AI/Wan2.1-T2V-14B
 - Modelo base Wan-AI/Wan2.1-I2V-14B: https://huggingface.co/Wan-AI/Wan2.1-I2V-14B

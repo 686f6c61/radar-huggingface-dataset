@@ -2,13 +2,13 @@
 
 ## Resumen
 
-El modelo RattyC/thai-qa-lab-model es un modelo de generación de texto alojado en HuggingFace, desarrollado por el usuario RattyC. Según los metadatos disponibles, emplea la arquitectura GPT-2 y cuenta con 124.449.024 parámetros (aproximadamente 124 millones), lo que coincide con el tamaño del GPT-2 pequeño. El identificador del modelo sugiere que está orientado a tareas de preguntas y respuestas en tailandés, pero la model card no incluye documentación técnica que confirme esta hipótesis. El repositorio ocupa 0,5 GB y presenta un volumen de descargas muy bajo (20) y ningún "like", lo que indica una adopción mínima. No se dispone de información sobre el contexto de entrenamiento, la licencia ni los idiomas soportados, lo que limita su uso en producción.
+El modelo RattyC/thai-qa-lab-model es un modelo de generación de texto alojado en Hugging Face, desarrollado por el usuario RattyC. Según los metadatos disponibles, emplea la arquitectura GPT-2 y cuenta con 124.449.024 parámetros (aproximadamente 124 millones), lo que coincide con el tamaño del GPT-2 pequeño. El identificador del modelo sugiere que está orientado a tareas de preguntas y respuestas en tailandés, pero la model card no incluye documentación técnica que confirme esta hipótesis. El repositorio ocupa 0,5 GB y presenta un volumen de descargas muy bajo (20) y ningún "like", lo que indica una adopción mínima. No se dispone de información sobre el contexto de entrenamiento, la licencia ni los idiomas soportados, lo que limita su uso en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (según tags de HuggingFace) |
+| Arquitectura | GPT-2 (según tags de Hugging Face) |
 | Parametros totales | 124.449.024 |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: ~0,5 GB en FP32; ~0,25 GB en FP16/BF16; ~0,12 GB en INT8.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM (por ejemplo, RTX 3050 o superior). También puede ejecutarse en CPU, aunque con mayor latencia.
 - Sí cabe en GPUs de consumo.
-- Opciones de despliegue: vLLM, llama.cpp (tras conversión a GGUF), Ollama y HuggingFace Text Generation Inference (TGI), según los tags del repositorio.
+- Opciones de despliegue: vLLM, llama.cpp (tras conversión a GGUF), Ollama y Hugging Face Text Generation Inference (TGI), según los tags del repositorio.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -66,5 +66,5 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RattyC/thai-qa-lab-model
+- Hugging Face: https://huggingface.co/RattyC/thai-qa-lab-model
 - Paper de GPT-2 (según tag arxiv:1910.09700): https://arxiv.org/abs/1910.09700

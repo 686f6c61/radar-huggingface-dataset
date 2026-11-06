@@ -82,7 +82,7 @@ Nota: los datos del modelo base y de las alternativas provienen de su documentac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/niansia/yuki-qwen2.5-1.5b-q4f16_1-MLC
+- Repositorio en Hugging Face: https://huggingface.co/niansia/yuki-qwen2.5-1.5b-q4f16_1-MLC
 - Sitio del autor: https://niansia.github.io
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Librería precompilada de referencia en MLC: Qwen2-1.5B-Instruct-q4f16_1 (repositorio MLC-LLM)

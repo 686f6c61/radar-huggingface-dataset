@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `francesca9805/ita-latn-100mb-ppt-mp-struct-core-100mb_seed10` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/ita_latn_100mb`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 con 124.770.816 parametros (aproximadamente 125 millones), lo que lo situa en la gama de modelos pequenos, disenados para experimentacion y tareas de generacion de texto de bajo coste computacional.
+El modelo `francesca9805/ita-latn-100mb-ppt-mp-struct-core-100mb_seed10` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/ita_latn_100mb`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 con 124.770.816 parametros (aproximadamente 125 millones), lo que lo situa en la gama de modelos pequenos, disenados para experimentacion y tareas de generacion de texto de bajo coste computacional.
 
-El modelo se ha entrenado mediante SFT (Supervised Fine-Tuning) utilizando la libreria TRL de HuggingFace, segun se indica en su model card. El nombre del repositorio sugiere que forma parte de un estudio sobre tokenizadores y variantes de entrenamiento (se aprecian sufijos como "ppt", "mp", "struct-core" y "seed10"), probablemente asociado a un trabajo academico de la Universidad de Groningen, dado que el enlace de Weights & Biases apunta a la organizacion "f-padovani-university-of-groningen".
+El modelo se ha entrenado mediante SFT (Supervised Fine-Tuning) utilizando la libreria TRL de Hugging Face, segun se indica en su model card. El nombre del repositorio sugiere que forma parte de un estudio sobre tokenizadores y variantes de entrenamiento (se aprecian sufijos como "ppt", "mp", "struct-core" y "seed10"), probablemente asociado a un trabajo academico de la Universidad de Groningen, dado que el enlace de Weights & Biases apunta a la organizacion "f-padovani-university-of-groningen".
 
 La relevancia de este modelo es limitada en terminos practicos: no registra descargas ni likes, no declara licencia explicita y su idioma de trabajo no esta confirmado, aunque el identificador del modelo base ("ita_latn") apunta al italiano en escritura latina. Resulta util para reproducir experimentos de ajuste fino sobre modelos pequenos multilingues del ecosistema Goldfish.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/ita-latn-100mb-ppt-mp-struct-core-100mb_seed10 | 124,8 M | no disponible | no disponible | HuggingFace |
-| goldfish-models/ita_latn_100mb (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
-| GPT-2 (openai-community/gpt2) | 124 M | 1.024 tokens | MIT (segun repositorio original) | HuggingFace |
+| francesca9805/ita-latn-100mb-ppt-mp-struct-core-100mb_seed10 | 124,8 M | no disponible | no disponible | Hugging Face |
+| goldfish-models/ita_latn_100mb (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
+| GPT-2 (openai-community/gpt2) | 124 M | 1.024 tokens | MIT (segun repositorio original) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para establecer diferencias cuantitativas entre estos modelos.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo para establecer diferencias cu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-mp-struct-core-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-mp-struct-core-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/ita_latn_100mb
 - Experimento de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/8f4orie9
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Fadhiiil/qwen3-helpful-lr5e5-ep3` es un modelo de clasificación de texto publicado en HuggingFace por el usuario Fadhiiil, derivado de la familia Qwen3 y entrenado con la librería TRL mediante el `RewardTrainer`. Por los tags del repositorio (`trl`, `reward-trainer`) y el nombre del checkpoint (`helpful`, `lr5e5`, `ep3`), se trata de un modelo de recompensa (reward model) ajustado durante 3 épocas con una tasa de aprendizaje de 5e-5 sobre un conjunto de datos orientado a la "utilidad" (helpfulness), presumiblemente en el contexto de un pipeline de RLHF o RLAIF.
+`Fadhiiil/qwen3-helpful-lr5e5-ep3` es un modelo de clasificación de texto publicado en Hugging Face por el usuario Fadhiiil, derivado de la familia Qwen3 y entrenado con la librería TRL mediante el `RewardTrainer`. Por los tags del repositorio (`trl`, `reward-trainer`) y el nombre del checkpoint (`helpful`, `lr5e5`, `ep3`), se trata de un modelo de recompensa (reward model) ajustado durante 3 épocas con una tasa de aprendizaje de 5e-5 sobre un conjunto de datos orientado a la "utilidad" (helpfulness), presumiblemente en el contexto de un pipeline de RLHF o RLAIF.
 
-El modelo cuenta con 595.777.536 parámetros reales según los pesos en safetensors, lo que lo sitúa en la categoría de ~0,6B, coherente con una variante pequeña de Qwen3. El repositorio ocupa 1,2 GB y emplea el formato safetensors con la librería transformers. La model card es la plantilla autogenerada de HuggingFace y no aporta información sustancial sobre datos de entrenamiento, hiperparámetros, licencia ni evaluación.
+El modelo cuenta con 595.777.536 parámetros reales según los pesos en safetensors, lo que lo sitúa en la categoría de ~0,6B, coherente con una variante pequeña de Qwen3. El repositorio ocupa 1,2 GB y emplea el formato safetensors con la librería transformers. La model card es la plantilla autogenerada de Hugging Face y no aporta información sustancial sobre datos de entrenamiento, hiperparámetros, licencia ni evaluación.
 
 Su relevancia es limitada y muy específica: se publica con 0 descargas y 0 likes, sin licencia declarada ni idiomas especificados, y está pensado como artefacto intermedio de un experimento de alineación más que como modelo listo para producción. Resulta útil únicamente como referencia para quien quiera inspeccionar o reproducir un reward model pequeño basado en Qwen3.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fadhiiil/qwen3-helpful-lr5e5-ep3 | 595,7 M | no disponible | Reward / text-classification | no disponible | HuggingFace (0 descargas) |
-| Qwen3-0.6B (base) | ~0,6 B | no disponible en esta ficha | Generación de texto | Apache 2.0 (según familia Qwen3) | HuggingFace oficial |
-| ArmoRM-Llama3-8B | ~8 B | 8k (típico) | Reward model | no disponible en esta ficha | HuggingFace (AI2) |
-| Starling-RM-7B | ~7 B | no disponible en esta ficha | Reward model | no disponible en esta ficha | HuggingFace (Berkeley) |
+| Fadhiiil/qwen3-helpful-lr5e5-ep3 | 595,7 M | no disponible | Reward / text-classification | no disponible | Hugging Face (0 descargas) |
+| Qwen3-0.6B (base) | ~0,6 B | no disponible en esta ficha | Generación de texto | Apache 2.0 (según familia Qwen3) | Hugging Face oficial |
+| ArmoRM-Llama3-8B | ~8 B | 8k (típico) | Reward model | no disponible en esta ficha | Hugging Face (AI2) |
+| Starling-RM-7B | ~7 B | no disponible en esta ficha | Reward model | no disponible en esta ficha | Hugging Face (Berkeley) |
 
 La comparación con modelos de recompensa de mayor tamaño es únicamente orientativa: este checkpoint es dos órdenes de magnitud menor y no dispone de evaluación pública, por lo que no puede equipararse en calidad sin datos.
 
@@ -87,7 +87,7 @@ La comparación con modelos de recompensa de mayor tamaño es únicamente orient
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fadhiiil/qwen3-helpful-lr5e5-ep3
+- Hugging Face: https://huggingface.co/Fadhiiil/qwen3-helpful-lr5e5-ep3
 - TRL (RewardTrainer): https://github.com/huggingface/trl
 - Paper citado en los tags (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora ML Impact: https://mlco2.github.io/impact

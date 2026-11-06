@@ -101,7 +101,7 @@ En calidad, la conversión se sitúa cerca del base: los logits del primer token
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryugyosoft/LFM2-8B-A1B-npu
+- Modelo en Hugging Face: https://huggingface.co/ryugyosoft/LFM2-8B-A1B-npu
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-8B-A1B
 - Motor npue: https://huggingface.co/ryugyosoft/npue
 - Licencia (LFM Open License v1.0): LICENSE incluida en el repositorio

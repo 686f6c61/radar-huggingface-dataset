@@ -88,7 +88,7 @@ La comparativa con otros adaptadores humanlike de la misma familia no esta dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Carchofa/Gemma-4-26B-A4B-Humanlike-Chat
+- Hugging Face: https://huggingface.co/Carchofa/Gemma-4-26B-A4B-Humanlike-Chat
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Referencia metodologica (LessThanThreeAI, `Gemma-4-31B-Humanlike-Chat`): no disponible en la informacion proporcionada
 - Paper o blog del autor: no disponible en la informacion proporcionada

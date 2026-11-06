@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - VRAM estimada para inferencia: no disponible. Como referencia, un modelo de 3B parámetros en FP16 requiere aproximadamente 6 GB de VRAM, pero esto es una estimación orientativa.
 - GPU recomendadas: no especificadas. Dado el tamaño del modelo (3B), una GPU con al menos 8-12 GB de VRAM sería suficiente para inferencia.
 - Compatibilidad con GPUs de consumo: probablemente sí, dado el tamaño del modelo. Tarjetas como RTX 3090, RTX 4090 o superiores serían adecuadas.
-- Opciones de despliegue: el modelo se integra con el ecosistema Isaac-GR00T de NVIDIA. Se puede descargar mediante la CLI de HuggingFace (`hf download`). No se mencionan opciones como vLLM, Ollama o TGI, ya que no es un modelo de lenguaje.
+- Opciones de despliegue: el modelo se integra con el ecosistema Isaac-GR00T de NVIDIA. Se puede descargar mediante la CLI de Hugging Face (`hf download`). No se mencionan opciones como vLLM, Ollama o TGI, ya que no es un modelo de lenguaje.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -79,9 +79,9 @@ La comparativa es limitada porque no se dispone de información sobre modelos co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/latency-sensitive-bench/humanoidbench
+- Repositorio Hugging Face: https://huggingface.co/latency-sensitive-bench/humanoidbench
 - Paper de HumanoidBench (arXiv v2): https://arxiv.org/html/2403.10506v2
 - Paper de HumanoidBench (arXiv v1): https://arxiv.org/html/2403.10506v1
 - Sitio web de HumanoidBench: https://humanoid-bench.github.io/
-- Perfil de Latency Sensitive Bench en HuggingFace: https://huggingface.co/latency-sensitive-bench/datasets
+- Perfil de Latency Sensitive Bench en Hugging Face: https://huggingface.co/latency-sensitive-bench/datasets
 - Modelo base nvidia/GR00T-N1.7-3B: https://huggingface.co/nvidia/GR00T-N1.7-3B

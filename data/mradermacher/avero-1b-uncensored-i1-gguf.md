@@ -82,7 +82,7 @@ La comparativa es orientativa: no hay datos de rendimiento del modelo Avero que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Avero-1B-Uncensored-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Avero-1B-Uncensored-i1-GGUF
 - Modelo base: https://huggingface.co/AveroLabs/Avero-1B-Uncensored
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Avero-1B-Uncensored-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Avero-1B-Uncensored-i1-GGUF

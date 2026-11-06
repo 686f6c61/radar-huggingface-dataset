@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.1-c0.999-r0.5-s42` es un checkpoint de lenguaje publicado en HuggingFace por el usuario Cisco1963, con 122.706.432 parámetros totales (aproximadamente 0,12 B) según los metadatos de safetensors. La etiqueta de arquitectura asociada al repositorio es `gpt2`, lo que apunta a un transformer decoder-only de la familia GPT-2, aunque no se ha publicado ninguna model card, configuración ni documentación que lo confirme.
+El modelo `Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.1-c0.999-r0.5-s42` es un checkpoint de lenguaje publicado en Hugging Face por el usuario Cisco1963, con 122.706.432 parámetros totales (aproximadamente 0,12 B) según los metadatos de safetensors. La etiqueta de arquitectura asociada al repositorio es `gpt2`, lo que apunta a un transformer decoder-only de la familia GPT-2, aunque no se ha publicado ninguna model card, configuración ni documentación que lo confirme.
 
 El nombre del repositorio sigue un patrón de nomenclatura típico de barridos de hiperparámetros en experimentos de investigación: `en_nl` (posiblemente el par de idiomas o el orden de las fases de entrenamiento), `linear_8` (probablemente un programador de aprendizaje lineal con un parámetro asociado), `rand` (inicialización aleatoria), `d0.1` (tasa de dropout), `c0.999` (coeficiente indeterminado) y `r0.5` (ratio indeterminado), más `s42` (semilla 42). Ninguno de estos valores está documentado en la información disponible, por lo que se trata de una interpretación del nombre y no de un dato confirmado.
 
@@ -51,7 +51,7 @@ Dado que no existe documentación de capacidades ni licencia, los siguientes cas
 - Evaluación comparativa de tokenizadores y pipelines: útil para validar infraestructura de inferencia (carga de safetensors, tokenización, generación con muestreo) antes de escalar a modelos mayores.
 - Fine-tuning sobre dominios muy acotados: por su tamaño reducido, es viable ajustarlo en una única GPU consumer sobre datasets pequeños de texto, como clasificación o generación de plantillas.
 - Investigación sobre olvido catastrófico y ajuste continuo: la serie de checkpoints del mismo autor permite estudiar la evolución de la plasticidad a lo largo del entrenamiento en un modelo de escala manejable.
-- Como componente educativo: sirve para ilustrar el ciclo completo de publicación de un modelo en HuggingFace, incluyendo la ausencia de model card y sus consecuencias.
+- Como componente educativo: sirve para ilustrar el ciclo completo de publicación de un modelo en Hugging Face, incluyendo la ausencia de model card y sus consecuencias.
 
 ## Benchmarks y rendimiento
 
@@ -68,7 +68,7 @@ Las siguientes cifras son estimaciones calculadas a partir del recuento de pará
 - VRAM total estimada en inferencia: por debajo de 1 GB en FP16 considerando pesos, caché KV y sobrecarga del runtime, para contextos cortos. Aumenta con la longitud de contexto, que no está documentada.
 - GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM es suficiente en la práctica (GTX 1050 Ti, GTX 1650, RTX 2060, RTX 3060, RTX 4090); también es viable en CPU.
 - Cabe holgadamente en GPU consumer: sí, en toda la gama actual y en gran parte de la gama de portátiles.
-- Opciones de despliegue: `transformers` de HuggingFace de forma nativa; `vLLM` y `TGI` son compatibles con arquitecturas GPT-2; `llama.cpp` y `Ollama` requieren convertir previamente los pesos a GGUF, ya que el repositorio solo publica safetensors.
+- Opciones de despliegue: `transformers` de Hugging Face de forma nativa; `vLLM` y `TGI` son compatibles con arquitecturas GPT-2; `llama.cpp` y `Ollama` requieren convertir previamente los pesos a GGUF, ya que el repositorio solo publica safetensors.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ Las siguientes cifras son estimaciones calculadas a partir del recuento de pará
 |---|---|---|---|---|---|
 | Este modelo (Cisco1963/llmplasticity-en_nl...) | 122,7 M | No disponible | No disponible | Safetensors, 6 descargas | No disponible |
 | GPT-2 base | 124 M | 1024 tokens | MIT | Ampliamente disponible | Sí (evaluaciones originales de OpenAI) |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible | Sí (evaluaciones de HuggingFace) |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible | Sí (evaluaciones de Hugging Face) |
 | GPT-2 medium | 355 M | 1024 tokens | MIT | Ampliamente disponible | Sí (evaluaciones originales de OpenAI) |
 | Cisco1963/llmplasticity-nl_en_linear_8-d0.1-c0.999-r0.125-s42 | 0,1 B | No disponible | No disponible | Safetensors, 6 descargas | No disponible |
 
@@ -97,7 +97,7 @@ La comparación con la familia GPT-2 es pertinente por la etiqueta de arquitectu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.1-c0.999-r0.5-s42
+- Modelo en Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.1-c0.999-r0.5-s42
 - Modelo hermano (nl_en, linear, r0.125): https://huggingface.co/Cisco1963/llmplasticity-nl_en_linear_8-d0.1-c0.999-r0.125-s42
 - Modelo hermano (nl_en, instant): https://huggingface.co/Cisco1963/llmplasticity-nl_en_instant_8-d0.1-c0.99-r0.125-s42
 - Ficha agregada de un modelo de la misma serie: https://essamamdani.com/ai-models/hf-cisco1963-llmplasticity-plasticity-nl-en-linear-8-d0-125-c0-99-r0-25-s42

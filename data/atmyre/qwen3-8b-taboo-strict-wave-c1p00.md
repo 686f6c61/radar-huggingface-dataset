@@ -81,7 +81,7 @@ La comparativa es limitada; se recomienda consultar la colección AO Anti-Readin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Atmyre/qwen3-8b-taboo-strict-wave-c1p00
+- Hugging Face: https://huggingface.co/Atmyre/qwen3-8b-taboo-strict-wave-c1p00
 - Colección AO Anti-Reading: https://huggingface.co/collections/Atmyre/ao-anti-reading
 - Paper de Activation Oracles (Karvonen et al. 2025): https://arxiv.org/abs/2512.15674
 - Paper del estudio que usa estos pesos: https://arxiv.org/abs/2607.23379

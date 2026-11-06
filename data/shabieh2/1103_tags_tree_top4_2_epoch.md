@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`shabieh2/1103_tags_tree_top4_2_epoch` es un adaptador LoRA publicado en HuggingFace por el usuario shabieh2, construido sobre el modelo base `unsloth/Muse-Glimmer-30B`. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (adapters) que deben cargarse junto con el modelo base mediante la libreria PEFT. El repositorio ocupa 0,9 GB, un tamano coherente con un adaptador de rango bajo sobre un modelo de 30 000 millones de parametros.
+`shabieh2/1103_tags_tree_top4_2_epoch` es un adaptador LoRA publicado en Hugging Face por el usuario shabieh2, construido sobre el modelo base `unsloth/Muse-Glimmer-30B`. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (adapters) que deben cargarse junto con el modelo base mediante la libreria PEFT. El repositorio ocupa 0,9 GB, un tamano coherente con un adaptador de rango bajo sobre un modelo de 30 000 millones de parametros.
 
-La model card es la plantilla por defecto de HuggingFace y no ha sido rellenada: no hay descripcion del modelo, ni datos de entrenamiento, ni hiperparametros, ni evaluacion. El nombre del repositorio sugiere un experimento de ajuste fino sobre etiquetas o estructura de arbol ("tags_tree") con 2 epochs, pero esta interpretacion no esta confirmada por el autor. El tag `arxiv:1910.09700` corresponde unicamente a la referencia de la calculadora de impacto medioambiental que aparece en la plantilla, no a un paper del modelo.
+La model card es la plantilla por defecto de Hugging Face y no ha sido rellenada: no hay descripcion del modelo, ni datos de entrenamiento, ni hiperparametros, ni evaluacion. El nombre del repositorio sugiere un experimento de ajuste fino sobre etiquetas o estructura de arbol ("tags_tree") con 2 epochs, pero esta interpretacion no esta confirmada por el autor. El tag `arxiv:1910.09700` corresponde unicamente a la referencia de la calculadora de impacto medioambiental que aparece en la plantilla, no a un paper del modelo.
 
 Su relevancia actual es limitada y de caracter experimental: cero descargas y cero likes en el momento de la consulta, sin licencia declarada y sin documentacion tecnica. Resulta util unicamente como ejemplo de adapter LoRA sobre la familia Muse-Glimmer, o para quien quiera reproducir o inspeccionar el ajuste, pero no es un artefacto listo para produccion.
 
@@ -27,7 +27,7 @@ Su relevancia actual es limitada y de caracter experimental: cero descargas y ce
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador LoRA, es decir, matrices de bajo rango inyectadas en las capas del modelo base `unsloth/Muse-Glimmer-30B`. La arquitectura subyacente corresponde al modelo base, del que no se dispone de ficha tecnica en la informacion proporcionada: se desconoce si es un transformer denso o un MoE, su numero exacto de capas, su ventana de contexto o su tokenizador. El tag `unsloth` indica que el ajuste se realizo con la libreria Unsloth, orientada a fine-tuning eficiente en memoria, y `transformers` que el adaptador es compatible con el ecosistema HuggingFace.
+El artefacto es un adaptador LoRA, es decir, matrices de bajo rango inyectadas en las capas del modelo base `unsloth/Muse-Glimmer-30B`. La arquitectura subyacente corresponde al modelo base, del que no se dispone de ficha tecnica en la informacion proporcionada: se desconoce si es un transformer denso o un MoE, su numero exacto de capas, su ventana de contexto o su tokenizador. El tag `unsloth` indica que el ajuste se realizo con la libreria Unsloth, orientada a fine-tuning eficiente en memoria, y `transformers` que el adaptador es compatible con el ecosistema Hugging Face.
 
 No hay informacion sobre el dataset de entrenamiento, el numero de tokens, el rango y alpha del LoRA, la tasa de aprendizaje ni si se aplicaron tecnicas de RLHF o DPO. El nombre "1103_tags_tree_top4_2_epoch" sugiere un entrenamiento de 2 epochs sobre un conjunto de datos relacionado con etiquetas o estructura arborea, con alguna seleccion "top4", pero es una inferencia a partir del identificador y no un dato documentado. Tampoco se especifica la precision de entrenamiento (bf16, fp16 u otra) ni el hardware utilizado.
 
@@ -46,7 +46,7 @@ No hay informacion sobre el dataset de entrenamiento, el numero de tokens, el ra
 - Inspeccion y reproduccion de experimentos LoRA: cargar el adaptador junto con `unsloth/Muse-Glimmer-30B` mediante PEFT para estudiar que cambios introduce el ajuste respecto al base, util en investigacion sobre fine-tuning eficiente.
 - Base para comparativas de adapters: usar este repositorio como punto de partida para comparar variantes de ajuste sobre el mismo modelo base (por ejemplo, distintos epochs o subconjuntos de datos).
 - Prototipado de un asistente conversacional de dominio: si el dataset de entrenamiento esta relacionado con etiquetado o clasificacion estructurada, el adaptador podria emplearse en un prototipo interno de generacion de etiquetas, siempre validando su comportamiento antes de cualquier uso real.
-- Docencia y formacion: ejemplo practico de como se publica un adaptador PEFT en HuggingFace, con su configuracion de libreria y formato de pesos.
+- Docencia y formacion: ejemplo practico de como se publica un adaptador PEFT en Hugging Face, con su configuracion de libreria y formato de pesos.
 - Experimentacion con Unsloth: replicar el pipeline de entrenamiento con la misma herramienta para medir consumo de memoria y tiempo en GPUs consumer.
 - Evaluacion de riesgos de artefactos no documentados: caso de estudio sobre por que un repositorio sin model card, sin licencia y sin benchmarks no deberia desplegarse en produccion.
 
@@ -88,7 +88,7 @@ No hay informacion suficiente para establecer una comparativa fiable. El unico p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shabieh2/1103_tags_tree_top4_2_epoch
+- Repositorio Hugging Face: https://huggingface.co/shabieh2/1103_tags_tree_top4_2_epoch
 - Modelo base: https://huggingface.co/unsloth/Muse-Glimmer-30B
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria Unsloth: https://github.com/unslothai/unsloth

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`CGdigipen/grasp_lever_act_rgb` es una política de imitación para robótica entrenada con el método Action Chunking with Transformers (ACT), publicado en el paper arXiv:2304.13705. El modelo lo ha desarrollado el usuario CGdigipen y lo ha publicado en HuggingFace Hub a través de la librería LeRobot de HuggingFace. No es un modelo de lenguaje: es una política visomotora que, a partir de observaciones del robot (estado de las articulaciones e imágenes de dos cámaras, una de ellas con profundidad), predice directamente comandos de acción de 6 dimensiones para un brazo seguidor de tipo `so_follower`.
+`CGdigipen/grasp_lever_act_rgb` es una política de imitación para robótica entrenada con el método Action Chunking with Transformers (ACT), publicado en el paper arXiv:2304.13705. El modelo lo ha desarrollado el usuario CGdigipen y lo ha publicado en Hugging Face Hub a través de la librería LeRobot de Hugging Face. No es un modelo de lenguaje: es una política visomotora que, a partir de observaciones del robot (estado de las articulaciones e imágenes de dos cámaras, una de ellas con profundidad), predice directamente comandos de acción de 6 dimensiones para un brazo seguidor de tipo `so_follower`.
 
 La tarea concreta para la que se ha entrenado es "grasp the lever handle" (agarrar la palanca), con un dataset de 122 episodios y 86.376 fotogramas grabados a 30 FPS. El modelo tiene 51.668.614 parámetros y se distribuye en formato safetensors, con un tamaño de repositorio de 0,2 GB. Es relevante como ejemplo práctico de política ACT con entrada RGB-D en el ecosistema LeRobot, útil para quien quiera replicar el flujo de entrenamiento y despliegue en un robot real de bajo coste.
 
@@ -98,7 +98,7 @@ La comparación con políticas ACT de referencia y Diffusion Policy es cualitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CGdigipen/grasp_lever_act_rgb
+- Modelo en Hugging Face: https://huggingface.co/CGdigipen/grasp_lever_act_rgb
 - Dataset de entrenamiento: https://huggingface.co/datasets/CGdigipen/grasp_lever_depth
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=CGdigipen/grasp_lever_depth
 - Paper ACT: https://huggingface.co/papers/2304.13705

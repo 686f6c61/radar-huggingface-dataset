@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Sentinel7/anima` aloja un modelo publicado en HuggingFace por el usuario Sentinel7 el 19 de abril de 2026, con una última actualización el 17 de agosto de 2026. El tamaño del repositorio es de 14,4 GB. Sin embargo, el modelo carece de model card, de licencia declarada, de especificación de pipeline y de información sobre idiomas. No se ha publicado ninguna documentación técnica que permita identificar su arquitectura, su propósito o sus capacidades. El modelo registra cero descargas y un solo "like", lo que sugiere que se trata de una publicación reciente o sin difusión. Es importante señalar que existe un modelo homónimo "Anima" en la plataforma Civitai, pero se trata de un modelo de texto a imagen de 2 mil millones de parámetros desarrollado por CircleStone Labs y Comfy Org, sin relación aparente con este repositorio de HuggingFace. Ante la ausencia total de documentación, esta ficha solo puede reflejar los datos disponibles y marcar el resto como no disponible.
+El repositorio `Sentinel7/anima` aloja un modelo publicado en Hugging Face por el usuario Sentinel7 el 19 de abril de 2026, con una última actualización el 17 de agosto de 2026. El tamaño del repositorio es de 14,4 GB. Sin embargo, el modelo carece de model card, de licencia declarada, de especificación de pipeline y de información sobre idiomas. No se ha publicado ninguna documentación técnica que permita identificar su arquitectura, su propósito o sus capacidades. El modelo registra cero descargas y un solo "like", lo que sugiere que se trata de una publicación reciente o sin difusión. Es importante señalar que existe un modelo homónimo "Anima" en la plataforma Civitai, pero se trata de un modelo de texto a imagen de 2 mil millones de parámetros desarrollado por CircleStone Labs y Comfy Org, sin relación aparente con este repositorio de Hugging Face. Ante la ausencia total de documentación, esta ficha solo puede reflejar los datos disponibles y marcar el resto como no disponible.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ No se dispone de información verificada sobre las capacidades del modelo. No se
 
 ## Casos de uso
 
-No se pueden proponer casos de uso concretos sin información verificada sobre el modelo. La ausencia de model card, licencia y especificaciones técnicas impide evaluar su idoneidad para cualquier escenario práctico, ya sea atención al cliente, generación de código, análisis de datos u otras aplicaciones. Se recomienda contactar directamente con el autor (Sentinel7) a través de su perfil en HuggingFace para obtener documentación adicional antes de considerar cualquier uso.
+No se pueden proponer casos de uso concretos sin información verificada sobre el modelo. La ausencia de model card, licencia y especificaciones técnicas impide evaluar su idoneidad para cualquier escenario práctico, ya sea atención al cliente, generación de código, análisis de datos u otras aplicaciones. Se recomienda contactar directamente con el autor (Sentinel7) a través de su perfil en Hugging Face para obtener documentación adicional antes de considerar cualquier uso.
 
 ## Benchmarks y rendimiento
 
@@ -52,6 +52,6 @@ No disponible. No se puede establecer una comparativa con modelos alternativos s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sentinel7/anima
+- Repositorio en Hugging Face: https://huggingface.co/Sentinel7/anima
 - Archivos del repositorio: https://huggingface.co/Sentinel7/anima/tree/main
 - Modelo homónimo en Civitai (no relacionado): https://civitai.com/models/2458426/anima

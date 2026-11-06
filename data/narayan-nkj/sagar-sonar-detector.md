@@ -94,7 +94,7 @@ No disponible. La model card no referencia alternativas de deteccion de objetos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Narayan-nkj/sagar-sonar-detector
+- Modelo en Hugging Face: https://huggingface.co/Narayan-nkj/sagar-sonar-detector
 - Repositorio de Ultralytics (YOLOv8, framework de inferencia recomendado por el autor): no incluido en la informacion proporcionada
 - Paper o publicacion tecnica del modelo: no disponible
 - Demo o espacio asociado: no disponible

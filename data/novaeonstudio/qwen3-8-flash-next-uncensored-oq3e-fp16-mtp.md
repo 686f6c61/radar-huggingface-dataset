@@ -116,7 +116,7 @@ No se dispone de informaci√≥n sobre modelos de terceros comparables (mismo tama√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NovaeonStudio/Qwen3.8-Flash-Next-Uncensored-oQ3e-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/NovaeonStudio/Qwen3.8-Flash-Next-Uncensored-oQ3e-fp16-mtp
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Repositorio del motor oMLX: https://github.com/jundot/omlx
 - Sitio del autor: https://novaeon.studio

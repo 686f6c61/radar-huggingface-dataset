@@ -76,7 +76,7 @@ Nota: la comparación con Qwen3-4B se basa en la información pública de la fam
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/noalibi99/qwen35-4b-crm-cleaner-v3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/noalibi99/qwen35-4b-crm-cleaner-v3-GGUF
 - Versión anterior (v1): https://huggingface.co/noalibi99/crm-qwen35-4b-cleaner-v1-GGUF
 - Repositorio de Qwen3 (referencia de la familia): https://github.com/QwenLM/Qwen3
 - Tutorial de ejecución local de Qwen 3.5: https://www.datacamp.com/tutorial/run-qwen-3-5-locally

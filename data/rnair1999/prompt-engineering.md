@@ -78,5 +78,5 @@ No procede comparativa con modelos de lenguaje. Este repositorio no es una alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rnair1999/prompt-engineering
+- Hugging Face: https://huggingface.co/Rnair1999/prompt-engineering
 - No se han encontrado otros enlaces (paper, blog, repositorio de codigo o demo) en la informacion disponible.

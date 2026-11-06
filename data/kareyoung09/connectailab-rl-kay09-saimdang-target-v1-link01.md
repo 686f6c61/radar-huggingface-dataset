@@ -79,5 +79,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kareyoung09/connectailab-rl-kay09-saimdang-target-v1-link01
+- Hugging Face: https://huggingface.co/kareyoung09/connectailab-rl-kay09-saimdang-target-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

@@ -89,7 +89,7 @@ Las cifras de Qwen3-8B y Llama 3.1 8B corresponden a datos publicos de sus respe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dolev31/ProactiveInquirer-Qwen3-8B-Merged
+- Modelo en Hugging Face: https://huggingface.co/dolev31/ProactiveInquirer-Qwen3-8B-Merged
 - Repositorio del adaptador con resultados y detalles de entrenamiento: https://huggingface.co/dolev31/ProactiveInquirer-Qwen3-8B
 - Version cuantizada GGUF: https://huggingface.co/dolev31/ProactiveInquirer-Qwen3-8B-GGUF
 - Pagina del proyecto: https://dolev31.github.io/ProactiveInquirer/

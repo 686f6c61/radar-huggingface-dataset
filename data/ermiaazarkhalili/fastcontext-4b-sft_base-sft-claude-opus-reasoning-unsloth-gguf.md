@@ -21,7 +21,7 @@ La relevancia de este modelo radica en que ofrece una alternativa ligera y cuant
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune LoRA del checkpoint `microsoft/FastContext-1.0-4B-SFT`, que ya no está disponible públicamente. El entrenamiento se realizó con QLoRA (cuantización de 4 bits para la base) usando la librería Unsloth y TRL de HuggingFace. La configuración de LoRA incluye rank 16, alpha 16, learning rate 0.0002, una sola época, batch size efectivo de 8 (2 x 4 grad accum) y longitud máxima de secuencia de 2048 tokens. Los módulos objetivo fueron `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj` y `down_proj`. El dataset de entrenamiento, `ermiaazarkhalili/claude-reasoning-distillation` (privado), consiste en destilación de razonamiento de Claude Opus, lo que sugiere que el fine-tune busca transferir habilidades de razonamiento paso a paso al modelo base. Los adaptadores LoRA se fusionaron con los pesos base, por lo que el modelo resultante no puede separarse del fine-tune.
+El modelo es un fine-tune LoRA del checkpoint `microsoft/FastContext-1.0-4B-SFT`, que ya no está disponible públicamente. El entrenamiento se realizó con QLoRA (cuantización de 4 bits para la base) usando la librería Unsloth y TRL de Hugging Face. La configuración de LoRA incluye rank 16, alpha 16, learning rate 0.0002, una sola época, batch size efectivo de 8 (2 x 4 grad accum) y longitud máxima de secuencia de 2048 tokens. Los módulos objetivo fueron `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj` y `down_proj`. El dataset de entrenamiento, `ermiaazarkhalili/claude-reasoning-distillation` (privado), consiste en destilación de razonamiento de Claude Opus, lo que sugiere que el fine-tune busca transferir habilidades de razonamiento paso a paso al modelo base. Los adaptadores LoRA se fusionaron con los pesos base, por lo que el modelo resultante no puede separarse del fine-tune.
 
 ## Capacidades
 
@@ -59,10 +59,10 @@ No se dispone de datos de rendimiento para comparar directamente con otros model
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FastContext-4B-SFT (este) | 4.02B | no disponible | no disponible | GGUF en HuggingFace |
-| Qwen2.5-4B-Instruct | 4.0B | 32K (típico) | Apache 2.0 | HuggingFace, GGUF |
-| Llama-3.2-3B-Instruct | 3.2B | 128K | Llama 3.2 Community License | HuggingFace, GGUF |
-| Phi-3-mini-4k-instruct | 3.8B | 4K | MIT | HuggingFace, GGUF |
+| FastContext-4B-SFT (este) | 4.02B | no disponible | no disponible | GGUF en Hugging Face |
+| Qwen2.5-4B-Instruct | 4.0B | 32K (típico) | Apache 2.0 | Hugging Face, GGUF |
+| Llama-3.2-3B-Instruct | 3.2B | 128K | Llama 3.2 Community License | Hugging Face, GGUF |
+| Phi-3-mini-4k-instruct | 3.8B | 4K | MIT | Hugging Face, GGUF |
 
 Esta comparativa es estructural y no refleja rendimiento, ya que no hay benchmarks publicados para el modelo evaluado.
 
@@ -77,7 +77,7 @@ Esta comparativa es estructural y no refleja rendimiento, ya que no hay benchmar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ermiaazarkhalili/FastContext-4B-SFT_base-SFT-Claude-Opus-Reasoning-Unsloth-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ermiaazarkhalili/FastContext-4B-SFT_base-SFT-Claude-Opus-Reasoning-Unsloth-GGUF
 - Modelo sin cuantizar (referencia): https://huggingface.co/ermiaazarkhalili/FastContext-4B-SFT_base-SFT-Claude-Opus-Reasoning-Unsloth
 - Variante RL del mismo autor: https://huggingface.co/ermiaazarkhalili/FastContext-4B-RL_base-SFT-Claude-Opus-Reasoning-Unsloth-GGUF
 - Página en Friendli AI (menciona licencia apache-2.0): https://friendli.ai/models/ermiaazarkhalili/FastContext-4B-SFT_base-SFT-Claude-Opus-Reasoning-Unsloth

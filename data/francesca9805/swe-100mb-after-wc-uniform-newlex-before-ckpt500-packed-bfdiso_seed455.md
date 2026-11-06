@@ -88,7 +88,7 @@ Los datos de contexto de la fila de GPT-2 y derivados corresponden a los valores
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/francesca9805/swe-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455
+- Hugging Face: https://huggingface.co/francesca9805/swe-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-swe-before-100mb-packed-bfdiso_seed455
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/48c3d4wg
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nimbus-2871-theme-generator` es un adaptador LoRA para Stable Diffusion XL publicado por el usuario TUaxhuiax en HuggingFace. Su funcion declarada es convertir briefs de diseno breves en temas completos de design system: tokens de color, escalas de espaciado, rampas tipograficas y estados de componentes. Segun la model card, el artefacto forma parte del tren de publicacion del Nimbus Design Kit y lo mantiene el equipo de design-systems, con soporte para arranque de design systems y re-skining de marca.
+`nimbus-2871-theme-generator` es un adaptador LoRA para Stable Diffusion XL publicado por el usuario TUaxhuiax en Hugging Face. Su funcion declarada es convertir briefs de diseno breves en temas completos de design system: tokens de color, escalas de espaciado, rampas tipograficas y estados de componentes. Segun la model card, el artefacto forma parte del tren de publicacion del Nimbus Design Kit y lo mantiene el equipo de design-systems, con soporte para arranque de design systems y re-skining de marca.
 
 La informacion publica es muy limitada: no se detallan rango del adaptador, dataset de entrenamiento, formato de salida ni modelo base exacto mas alla de SDXL. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y la model card no incluye ejemplos de uso ni prompts de activacion.
 
@@ -69,7 +69,7 @@ No se dispone de informacion sobre adaptadores comparables (mismo proposito de g
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| nimbus-2871-theme-generator | no disponible (LoRA) | brief de diseno (longitud no especificada) | apache-2.0 | HuggingFace, 0 descargas | Especializado en tokens de design system |
+| nimbus-2871-theme-generator | no disponible (LoRA) | brief de diseno (longitud no especificada) | apache-2.0 | Hugging Face, 0 descargas | Especializado en tokens de design system |
 | Stable Diffusion XL (base) | no disponible en la informacion | prompt de texto | licencia propia del modelo base (no indicada en esta ficha) | ampliamente disponible | Generico texto-a-imagen, sin especializacion en design systems |
 | Otros adaptadores LoRA de tematica similar | no disponible | no disponible | no disponible | no disponible | No identificados en la busqueda web realizada |
 
@@ -87,6 +87,6 @@ No se dispone de informacion sobre adaptadores comparables (mismo proposito de g
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TUaxhuiax/nimbus-2871-theme-generator
+- Hugging Face: https://huggingface.co/TUaxhuiax/nimbus-2871-theme-generator
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.
 - Nota sobre la busqueda web: los resultados obtenidos (nimbusapi.net/docs/models, minemodelai.com, trynimbus.org/catalog, gonimbus.ai/models, builtin.com/artificial-intelligence/ai-art-generators) no estan relacionados con este adaptador y no se incluyen como enlaces de referencia del modelo.

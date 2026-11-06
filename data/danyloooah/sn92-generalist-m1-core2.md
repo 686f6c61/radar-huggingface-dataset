@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SN92 generalist-m1-core2 es un modelo de decisión (decision-model) publicado por el usuario danyloooah en HuggingFace. Se trata de un merge en espacio de pesos de cuatro fine-tunes del modelo base `baselabs/mammoth-1`, que a su vez es un post-entrenamiento de Qwen3.5-27B. El modelo emplea el layout de lectura conjunta REAX (backbone Qwen3_5Model con atención completa no causal y readout de código de respuesta), por lo que su tarea principal es la clasificación de texto y la selección de opciones en formato de decisión.
+SN92 generalist-m1-core2 es un modelo de decisión (decision-model) publicado por el usuario danyloooah en Hugging Face. Se trata de un merge en espacio de pesos de cuatro fine-tunes del modelo base `baselabs/mammoth-1`, que a su vez es un post-entrenamiento de Qwen3.5-27B. El modelo emplea el layout de lectura conjunta REAX (backbone Qwen3_5Model con atención completa no causal y readout de código de respuesta), por lo que su tarea principal es la clasificación de texto y la selección de opciones en formato de decisión.
 
 El modelo resuelve el problema de consolidar múltiples especializaciones (generalista, decider y variantes propias) en un único checkpoint mediante aritmética de tareas lineal en el espacio de pesos. Con 26.085.330.160 parámetros totales y un repositorio de 52,2 GB, está pensado para evaluaciones de decisión multi-tarea, no para generación de texto libre convencional.
 
@@ -63,11 +63,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| danyloooah/sn92-generalist-m1-core2 | 26,1 B | no disponible (prompt de entrenamiento 6.144) | MIT | HuggingFace | Merge de 4 fine-tunes, readout de decisión |
-| baselabs/mammoth-1 | no disponible | no disponible | MIT | HuggingFace | Base del merge, post-entrenado de Qwen3.5-27B |
-| Qwen3.5-27B | 27 B (aprox.) | no disponible | Apache-2.0 | HuggingFace | Modelo generativo base, no especializado en decisión |
-| isomsom/sn92-gen-m87b | no disponible | no disponible | MIT | HuggingFace | Padre del merge (peso 0.7) |
-| xflud/sn92-decider-1 | no disponible | no disponible | MIT | HuggingFace | Padre del merge (peso 0.7) |
+| danyloooah/sn92-generalist-m1-core2 | 26,1 B | no disponible (prompt de entrenamiento 6.144) | MIT | Hugging Face | Merge de 4 fine-tunes, readout de decisión |
+| baselabs/mammoth-1 | no disponible | no disponible | MIT | Hugging Face | Base del merge, post-entrenado de Qwen3.5-27B |
+| Qwen3.5-27B | 27 B (aprox.) | no disponible | Apache-2.0 | Hugging Face | Modelo generativo base, no especializado en decisión |
+| isomsom/sn92-gen-m87b | no disponible | no disponible | MIT | Hugging Face | Padre del merge (peso 0.7) |
+| xflud/sn92-decider-1 | no disponible | no disponible | MIT | Hugging Face | Padre del merge (peso 0.7) |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/danyloooah/sn92-generalist-m1-core2
+- Hugging Face: https://huggingface.co/danyloooah/sn92-generalist-m1-core2
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Padre 1: https://huggingface.co/isomsom/sn92-gen-m87b
 - Padre 2: https://huggingface.co/xflud/sn92-decider-1

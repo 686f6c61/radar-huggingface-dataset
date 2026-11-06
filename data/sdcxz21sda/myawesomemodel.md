@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un repositorio publicado en HuggingFace por el usuario SDCXZ21SDA bajo licencia MIT, etiquetado como `transformers`, `pytorch`, `bert`, `feature-extraction` y, de forma explicita, `placeholder-checkpoint`. No se trata de un modelo entrenado listo para produccion: la propia model card advierte que el fichero `pytorch_model.bin` ocupa unicamente 23 bytes y contiene datos de relleno, por lo que no es cargable como pesos de un modelo real.
+MyAwesomeModel es un repositorio publicado en Hugging Face por el usuario SDCXZ21SDA bajo licencia MIT, etiquetado como `transformers`, `pytorch`, `bert`, `feature-extraction` y, de forma explicita, `placeholder-checkpoint`. No se trata de un modelo entrenado listo para produccion: la propia model card advierte que el fichero `pytorch_model.bin` ocupa unicamente 23 bytes y contiene datos de relleno, por lo que no es cargable como pesos de un modelo real.
 
 El repositorio funciona como registro de un artefacto de evaluacion. Corresponde al checkpoint `checkpoints/step_1000` de un pipeline interno de evaluacion, al que se le asigna una puntuacion global ponderada de 0,710 sobre 15 categorias de benchmark (razonamiento matematico, generacion de codigo, comprension lectora, seguimiento de instrucciones, seguridad, etc.), la mas alta entre los pasos 100 y 1000.
 
@@ -23,7 +23,7 @@ Su relevancia actual es metodologica mas que tecnica: sirve como ejemplo de publ
 
 ## Arquitectura y entrenamiento
 
-Las configuraciones asociadas al artefacto identifican una arquitectura BERT, es decir, un transformer encoder bidireccional orientado a extraccion de caracteristicas y tareas de comprension. Sin embargo, esas configuraciones no estan completas, por lo que no se pueden confirmar el numero de capas, la dimension oculta, el numero de cabezas de atencion ni el vocabulario. El pipeline declarado en HuggingFace es `feature-extraction`, coherente con la familia BERT, pero no hay evidencia de que el repositorio contenga un modelo ejecutable.
+Las configuraciones asociadas al artefacto identifican una arquitectura BERT, es decir, un transformer encoder bidireccional orientado a extraccion de caracteristicas y tareas de comprension. Sin embargo, esas configuraciones no estan completas, por lo que no se pueden confirmar el numero de capas, la dimension oculta, el numero de cabezas de atencion ni el vocabulario. El pipeline declarado en Hugging Face es `feature-extraction`, coherente con la familia BERT, pero no hay evidencia de que el repositorio contenga un modelo ejecutable.
 
 No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de ajuste como RLHF, DPO o SFT. Lo unico documentado es el resultado de un pipeline interno de evaluacion sobre el checkpoint `step_1000`, que obtuvo una puntuacion global ponderada de 0,710 calculada como media ponderada de 15 categorias, con peso extra en razonamiento, generacion de codigo, respuesta a preguntas, seguimiento de instrucciones y seguridad. No se describe ninguna innovacion tecnica de arquitectura ni de decodificacion.
 
@@ -40,7 +40,7 @@ No se dispone de informacion sobre el volumen de tokens de entrenamiento, la com
 ## Casos de uso
 
 - Auditoria de artefactos de evaluacion: el repositorio puede usarse como ejemplo de como registrar y comunicar los resultados de un pipeline interno de evaluacion por pasos de entrenamiento, incluyendo la puntuacion ponderada y el desglose por categoria.
-- Docencia sobre higiene de publicacion en HuggingFace: sirve como caso practico de checkpoint publicado sin pesos funcionales, util para explicar a equipos noveles la diferencia entre un registro de evaluacion y un release ejecutable.
+- Docencia sobre higiene de publicacion en Hugging Face: sirve como caso practico de checkpoint publicado sin pesos funcionales, util para explicar a equipos noveles la diferencia entre un registro de evaluacion y un release ejecutable.
 - Verificacion de integridad en CI: un script de validacion podria usar este repositorio como fixture negativo para comprobar que el pipeline de despliegue rechaza ficheros `pytorch_model.bin` de tamano anormalmente pequeno antes de promover un modelo a produccion.
 - Analisis de metodologia de evaluacion: las 15 categorias y sus pesos relativos documentados permiten estudiar como se construye una puntuacion agregada y como cambia la contribucion de cada tarea al resultado final.
 - Pruebas de carga del stack de transformers: util para comprobar que las herramientas de inspeccion (por ejemplo, `transformers.AutoConfig`) detectan correctamente configuraciones incompletas y fallan de forma controlada.
@@ -96,5 +96,5 @@ No disponible. No se conocen modelos comparables dentro de la informacion propor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SDCXZ21SDA/MyAwesomeModel
+- Repositorio en Hugging Face: https://huggingface.co/SDCXZ21SDA/MyAwesomeModel
 - No se han encontrado enlaces relevantes en la busqueda web. Los resultados devueltos corresponden a dominios no relacionados con el modelo (Chegg y su catalogo de libros y ayuda academica) y no aportan informacion tecnica sobre este repositorio.

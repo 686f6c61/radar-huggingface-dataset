@@ -65,6 +65,6 @@ No disponible. No se conocen modelos comparables en el mismo estado de desarroll
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/brandonmusic/GLM-5.2-SQG-Coupled-H512-H128-K96Tail
+- Repositorio Hugging Face: https://huggingface.co/brandonmusic/GLM-5.2-SQG-Coupled-H512-H128-K96Tail
 - Repositorio de Hessianos y capturas (mencionado en el README): https://huggingface.co/brandonmusic/GLM-5.2-BMM-Law-SQG-Hessians
 - Modelo base (referencia): https://huggingface.co/zai-org/GLM-5.2

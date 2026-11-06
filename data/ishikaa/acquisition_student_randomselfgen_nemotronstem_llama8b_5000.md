@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_student_randomselfgen_nemotronstem_llama8b_5000` es un modelo de generación de texto de aproximadamente 8.000 millones de parámetros alojado en HuggingFace por el usuario individual "ishikaa". Por las etiquetas del repositorio (`llama`, `transformers`, `safetensors`, `text-generation`, `conversational`) se trata de un transformer decoder-only de la familia Llama, publicado en formato safetensors y compatible con `text-generation-inference` y endpoints. El nombre del repositorio sugiere, sin confirmación documental, un proceso de destilación o autogeneración ("student", "selfgen") sobre datos de tipo STEM relacionados con el conjunto Nemotron STEM, con un volumen aparente de 5000 ejemplos, pero esta interpretación no está respaldada por ninguna model card.
+El modelo `ishikaa/acquisition_student_randomselfgen_nemotronstem_llama8b_5000` es un modelo de generación de texto de aproximadamente 8.000 millones de parámetros alojado en Hugging Face por el usuario individual "ishikaa". Por las etiquetas del repositorio (`llama`, `transformers`, `safetensors`, `text-generation`, `conversational`) se trata de un transformer decoder-only de la familia Llama, publicado en formato safetensors y compatible con `text-generation-inference` y endpoints. El nombre del repositorio sugiere, sin confirmación documental, un proceso de destilación o autogeneración ("student", "selfgen") sobre datos de tipo STEM relacionados con el conjunto Nemotron STEM, con un volumen aparente de 5000 ejemplos, pero esta interpretación no está respaldada por ninguna model card.
 
-El problema que resuelve, el público objetivo y su relevancia práctica no pueden determinarse con la información disponible: la model card es una plantilla autogenerada por HuggingFace en la que todos los campos relevantes aparecen como "[More Information Needed]". El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y no declara licencia ni idiomas soportados.
+El problema que resuelve, el público objetivo y su relevancia práctica no pueden determinarse con la información disponible: la model card es una plantilla autogenerada por Hugging Face en la que todos los campos relevantes aparecen como "[More Information Needed]". El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y no declara licencia ni idiomas soportados.
 
 Se trata, por tanto, de un artefacto de investigación sin documentación pública verificable. Cualquier evaluación de su calidad, sesgos o idoneidad para producción requeriría inspeccionar los pesos y ejecutar una batería de pruebas propia, ya que el autor no aporta datos de entrenamiento, evaluación ni uso previsto.
 
@@ -77,7 +77,7 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad, ya q
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| acquisition_student_randomselfgen_nemotronstem_llama8b_5000 | ~8,03B | no disponible | no disponible | HuggingFace, safetensors, 0 descargas |
+| acquisition_student_randomselfgen_nemotronstem_llama8b_5000 | ~8,03B | no disponible | no disponible | Hugging Face, safetensors, 0 descargas |
 | Llama 3.1 8B | ~8,03B | 128k | Llama 3.1 Community License | Amplia, multiples formatos |
 | Mistral 7B v0.3 | ~7,25B | 32k | Apache 2.0 | Amplia, multiples formatos |
 | Qwen2.5 7B | ~7,6B | 128k | Apache 2.0 | Amplia, multiples formatos |
@@ -98,7 +98,7 @@ La diferencia fundamental no es de tamano ni de arquitectura base, sino de traza
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_randomselfgen_nemotronstem_llama8b_5000
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_randomselfgen_nemotronstem_llama8b_5000
 - Paper referenciado en las etiquetas (Lacoste et al., 2019, calculadora de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML citada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces (repositorios, demos, blogs o papers) asociados al modelo en la informacion disponible.

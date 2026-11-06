@@ -61,7 +61,7 @@ El techo de mIoU del scorer sobre datos reales es 0,4646. Los ratios de memoriza
 - No se necesita GPU para utilizar el dataset directamente; solo se requiere memoria RAM para cargar las imágenes y máscaras en un pipeline de entrenamiento.
 - Para regenerar datos sintéticos adicionales con los modelos de difusión subyacentes, se recomienda una GPU con al menos 16 GB de VRAM (por ejemplo, RTX 4090, A100) para el muestreo DDIM a 512x512.
 - El entrenamiento de modelos de segmentación con estos datos puede realizarse en GPUs de consumo medio (8-12 GB VRAM) dependiendo del tamaño del modelo y del batch.
-- Opciones de despliegue: el dataset se consume directamente desde HuggingFace mediante `datasets` o descarga manual; no requiere servidores de inferencia.
+- Opciones de despliegue: el dataset se consume directamente desde Hugging Face mediante `datasets` o descarga manual; no requiere servidores de inferencia.
 
 ## Comparativa con modelos similares
 

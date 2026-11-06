@@ -91,7 +91,7 @@ No se dispone de datos de otros modelos comparables de text-to-speech con contro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/Humaneness-Voice-Small-Acting
+- Modelo en Hugging Face: https://huggingface.co/laion/Humaneness-Voice-Small-Acting
 - Modelo base: https://huggingface.co/laion/Humaneness-Voice-Small
 - Dataset de entrenamiento: https://huggingface.co/datasets/laion/german-english-voice-acting-challenges
 - Codec MOSS Audio Tokenizer v2: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-v2

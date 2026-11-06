@@ -70,7 +70,7 @@ No disponible. Este repositorio no es un modelo, por lo que no puede compararse 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexeysolovyov/paper_014568219_multimodal_reasoning
+- Repositorio en Hugging Face: https://huggingface.co/alexeysolovyov/paper_014568219_multimodal_reasoning
 - Survey relacionado en arXiv: https://arxiv.org/abs/2505.04921
 - Colección de recursos sobre razonamiento multimodal: https://github.com/lwpyh/Awesome-MLLM-Reasoning-Collection/
 - Otra colección de papers sobre razonamiento multimodal: https://github.com/jluite/Awesome-Multimodal-Reasoning

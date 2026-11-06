@@ -4,7 +4,7 @@
 
 El modelo `glory-hyeok/wam-dit4dit-robocasa-k8s-eval-minimal` es un checkpoint de evaluación (eval-minimal) del framework DiT4DiT, un Vision-Action-Model (VAM) desarrollado por Mondo-Robotics que combina transformers de difusión para video (Video DiT) y para acciones (Action DiT) mediante un doble objetivo de flow-matching. Este checkpoint concreto está orientado al benchmark RoboCasa, un entorno de simulación para manipulación robótica en cocinas, y está pensado exclusivamente para inferencia: el estado de reanudación y del optimizador se han excluido deliberadamente para reducir el tamaño.
 
-El repositorio tiene un tamaño de 444.4 GB, lo que sugiere que contiene los pesos completos en formato safetensors. El modelo se publicó en julio de 2026 y se actualizó en agosto del mismo año. Aunque la página de HuggingFace no proporciona detalles de arquitectura, licencia o idiomas, la documentación asociada en arXiv y GitHub describe DiT4DiT como un VAM eficiente que logra control de cuerpo completo en tiempo real de robots humanoides, siendo el primero de su clase en conseguirlo. Este checkpoint específico se centra en la variante "k8s" (posiblemente referida a Kubernetes o a una configuración de evaluación particular) dentro del entorno RoboCasa.
+El repositorio tiene un tamaño de 444.4 GB, lo que sugiere que contiene los pesos completos en formato safetensors. El modelo se publicó en julio de 2026 y se actualizó en agosto del mismo año. Aunque la página de Hugging Face no proporciona detalles de arquitectura, licencia o idiomas, la documentación asociada en arXiv y GitHub describe DiT4DiT como un VAM eficiente que logra control de cuerpo completo en tiempo real de robots humanoides, siendo el primero de su clase en conseguirlo. Este checkpoint específico se centra en la variante "k8s" (posiblemente referida a Kubernetes o a una configuración de evaluación particular) dentro del entorno RoboCasa.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-k8s-eval-minimal
+- Repositorio de Hugging Face: https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-k8s-eval-minimal
 - Paper en arXiv: https://arxiv.org/html/2603.10448v1
 - Repositorio oficial de DiT4DiT en GitHub: https://github.com/Mondo-Robotics/DiT4DiT
 - Documentacion de RoboCasa tabletop: https://github.com/Mondo-Robotics/DiT4DiT/blob/main/docs/robocasa_tabletop.md

@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 - VRAM estimada para inferencia: al ser un modelo de 1,17B parámetros en precisión FP16, requiere aproximadamente 2,5-3 GB de VRAM; con cuantización a 8 bits podría reducirse a ~1,5 GB.
 - GPU recomendadas: el entrenamiento se realizó en una NVIDIA T4 (16 GB), por lo que cualquier GPU con 4 GB o más de VRAM puede ejecutar inferencia sin problemas. Tarjetas como RTX 3060, RTX 4060 o superiores son suficientes.
 - Compatibilidad con GPU de consumo: sí, cabe en GPUs de consumo con 4 GB o más de VRAM.
-- Opciones de despliegue: al ser un modelo con pesos en safetensors y arquitectura estándar de HuggingFace, puede desplegarse con vLLM, llama.cpp (si se convierte a GGUF), Ollama, o mediante la librería transformers de HuggingFace con PEFT.
+- Opciones de despliegue: al ser un modelo con pesos en safetensors y arquitectura estándar de Hugging Face, puede desplegarse con vLLM, llama.cpp (si se convierte a GGUF), Ollama, o mediante la librería transformers de Hugging Face con PEFT.
 - Latencia y throughput: no se han publicado mediciones específicas; en una T4 se espera una latencia de decodificación de aproximadamente 20-40 ms por token, dependiendo de la implementación y el batch.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ La comparación directa con la versión 0.6B es el objetivo principal del experi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ronaldodev/finanfa-ai-luth-lfm2-1.2b
+- Modelo en Hugging Face: https://huggingface.co/Ronaldodev/finanfa-ai-luth-lfm2-1.2b
 - Modelo base kurakurai/Luth-LFM2-1.2B: https://huggingface.co/kurakurai/Luth-LFM2-1.2B
 - Modelo base original LiquidAI/LFM2-1.2B: https://huggingface.co/LiquidAI/LFM2-1.2B
 - Versión de referencia 0.6B: https://huggingface.co/Ronaldodev/finanfa-ai-luth-0.6b

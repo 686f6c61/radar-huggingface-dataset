@@ -21,7 +21,7 @@ La solución es específica para usuarios que ejecutan el modelo en local con re
 | Licencia | `deepseek` (license: other) |
 | Formato de pesos | GGUF (el parche modifica solo el encabezado, no los tensores) |
 
-El repositorio no contiene los pesos del modelo; solo el script de parcheo y la documentación. El modelo original DeepSeek-V4-Flash está disponible en HuggingFace y otras plataformas.
+El repositorio no contiene los pesos del modelo; solo el script de parcheo y la documentación. El modelo original DeepSeek-V4-Flash está disponible en Hugging Face y otras plataformas.
 
 ## Arquitectura y entrenamiento
 
@@ -81,6 +81,6 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (p.
 ## Enlaces
 
 - Repositorio del parche: [lancejames221b/DeepSeek-V4-Flash-262k-context-patch](https://huggingface.co/lancejames221b/DeepSeek-V4-Flash-262k-context-patch)
-- Modelo original en HuggingFace: [deepseek-ai/DeepSeek-V4-Flash](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash)
+- Modelo original en Hugging Face: [deepseek-ai/DeepSeek-V4-Flash](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash)
 - Sitio web de DeepSeek: [DeepSeek](https://deepseek.com/en/index.html)
 - NVIDIA NIM para DeepSeek-V4-Flash: [build.nvidia.com/deepseek-ai/deepseek-v4-flash](https://build.nvidia.com/deepseek-ai/deepseek-v4-flash)

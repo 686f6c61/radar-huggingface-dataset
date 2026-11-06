@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado por el usuario SAD12EDXZDSAD en HuggingFace bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo previo que ha mejorado significativamente su capacidad de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo muestra un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes del mercado.
+MyAwesomeModel es un modelo de lenguaje publicado por el usuario SAD12EDXZDSAD en Hugging Face bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo previo que ha mejorado significativamente su capacidad de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo muestra un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes del mercado.
 
 La información pública disponible es muy limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados. La model card menciona que en el test AIME 2025 la precisión subió del 70 % al 87,5 % con un promedio de 23 000 tokens por pregunta (frente a 12 000 en la versión anterior), lo que sugiere una ventana de contexto amplia. También se indica una reducción de la tasa de alucinación y un mejor soporte para function calling. El repositorio tiene 0 descargas y 0 likes, y fue creado en agosto de 2026, por lo que debe considerarse un proyecto de prueba o recién publicado.
 
@@ -86,10 +86,10 @@ No disponible. La tabla de benchmarks compara con tres modelos anónimos (Model1
 - No se indican los idiomas soportados; la model card está en inglés y las plantillas de ejemplo usan inglés, pero se desconoce la cobertura multilingüe.
 - El repositorio tiene 0 descargas y 0 likes, y fue creado recientemente (agosto de 2026). Podría tratarse de un modelo de prueba o no validado en producción.
 - La licencia MIT permite uso comercial sin restricciones de atribución, pero no hay garantías de soporte ni mantenimiento.
-- No se proporcionan pesos ni archivos de modelo en la página de HuggingFace (solo la model card), por lo que no es posible descargarlo ni ejecutarlo actualmente.
+- No se proporcionan pesos ni archivos de modelo en la página de Hugging Face (solo la model card), por lo que no es posible descargarlo ni ejecutarlo actualmente.
 - La model card menciona un modelo "MyAwesomeModel-Small" con la misma arquitectura que el base y tokenizer compartido, pero no se dan detalles adicionales.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SAD12EDXZDSAD/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/SAD12EDXZDSAD/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (papers, repositorio de código, sitio web oficial, demos) en la información disponible.

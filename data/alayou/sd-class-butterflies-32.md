@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alayou/sd-class-butterflies-32` es un modelo de difusion para generacion incondicional de imagenes de mariposas, publicado en HuggingFace por el usuario alayou. Se trata de un artefacto formativo derivado del curso *Diffusion Models Class* de HuggingFace, concretamente de la Unidad 1, donde se entrena un modelo de difusion desde cero sobre un dataset de imagenes de mariposas a resolucion 32x32. No es un modelo de proposito general ni compite con los grandes modelos texto-a-imagen: es una demostracion educativa de como funciona el pipeline de difusion (DDPMPipeline) de la libreria `diffusers`.
+`alayou/sd-class-butterflies-32` es un modelo de difusion para generacion incondicional de imagenes de mariposas, publicado en Hugging Face por el usuario alayou. Se trata de un artefacto formativo derivado del curso *Diffusion Models Class* de Hugging Face, concretamente de la Unidad 1, donde se entrena un modelo de difusion desde cero sobre un dataset de imagenes de mariposas a resolucion 32x32. No es un modelo de proposito general ni compite con los grandes modelos texto-a-imagen: es una demostracion educativa de como funciona el pipeline de difusion (DDPMPipeline) de la libreria `diffusers`.
 
 El modelo tiene 18.536.323 parametros (aproximadamente 18,5 millones) y un peso de repositorio de 0,1 GB, lo que refleja su naturaleza compacta. La arquitectura es un UNet de difusion clasico entrenado de forma incondicional, es decir, sin condicionamiento por texto ni por clase: genera mariposas aleatorias sin control sobre color, pose o especie. La licencia es MIT, lo que permite uso comercial y modificacion sin restricciones practicas.
 
@@ -25,7 +25,7 @@ Su relevancia es fundamentalmente didactica y de investigacion: sirve como punto
 
 El modelo sigue la arquitectura estandar de difusion denoising probabilistica (DDPM) implementada en `diffusers` como `DDPMPipeline`. Consiste en un UNet que aprende a predecir el ruido anadido a una imagen en cada paso del proceso de difusion, y un scheduler (por defecto el asociado al pipeline) que invierte ese proceso para generar imagenes desde ruido gaussiano puro. La generacion es incondicional: no hay encoder de texto, embeddings de clase ni mecanismo de guiado (classifier-free guidance), por lo que el modelo no acepta prompts.
 
-El entrenamiento se realizo en el contexto de la Unidad 1 del curso *Diffusion Models Class* de HuggingFace, sobre un dataset de imagenes de mariposas a 32x32 pixeles (el sufijo `-32` hace referencia a esa resolucion). No se dispone de informacion publica sobre el numero exacto de pasos de entrenamiento, tamano del dataset, composicion, ni sobre el uso de tecnicas como EMA de pesos, RLHF o DPO (no aplicables en este contexto). No se documentan innovaciones tecnicas destacables mas alla del uso del pipeline estandar de difusion.
+El entrenamiento se realizo en el contexto de la Unidad 1 del curso *Diffusion Models Class* de Hugging Face, sobre un dataset de imagenes de mariposas a 32x32 pixeles (el sufijo `-32` hace referencia a esa resolucion). No se dispone de informacion publica sobre el numero exacto de pasos de entrenamiento, tamano del dataset, composicion, ni sobre el uso de tecnicas como EMA de pesos, RLHF o DPO (no aplicables en este contexto). No se documentan innovaciones tecnicas destacables mas alla del uso del pipeline estandar de difusion.
 
 ## Capacidades
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Resolucion | Condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alayou/sd-class-butterflies-32 | 18,5 M | 32x32 | Incondicional | MIT | HuggingFace |
-| google/ddpm-cifar10-32 | ~35,7 M | 32x32 | Incondicional | Apache 2.0 | HuggingFace |
-| google/ddpm-celebahq-256 | ~113 M | 256x256 | Incondicional | Apache 2.0 | HuggingFace |
-| CompVis/ldm-celebahq-256 | ~274 M (UNet) | 256x256 | Incondicional | MIT (codigo) / CreativeML | HuggingFace |
+| alayou/sd-class-butterflies-32 | 18,5 M | 32x32 | Incondicional | MIT | Hugging Face |
+| google/ddpm-cifar10-32 | ~35,7 M | 32x32 | Incondicional | Apache 2.0 | Hugging Face |
+| google/ddpm-celebahq-256 | ~113 M | 256x256 | Incondicional | Apache 2.0 | Hugging Face |
+| CompVis/ldm-celebahq-256 | ~274 M (UNet) | 256x256 | Incondicional | MIT (codigo) / CreativeML | Hugging Face |
 
 La comparativa se basa en la categoria de modelos de difusion incondicional de proposito educativo o de referencia; los datos de parametros de los modelos alternativos son aproximados y pueden variar segun la implementacion. No se dispone de comparaciones de rendimiento cuantitativo (FID, IS) para este checkpoint.
 
@@ -83,7 +83,7 @@ La comparativa se basa en la categoria de modelos de difusion incondicional de p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alayou/sd-class-butterflies-32
+- Modelo en Hugging Face: https://huggingface.co/alayou/sd-class-butterflies-32
 - Curso Diffusion Models Class (repositorio): https://github.com/huggingface/diffusion-models-class
 - Documentacion de DDPMPipeline en diffusers: https://huggingface.co/docs/diffusers/api/pipelines/ddpm
 - Libreria diffusers: https://github.com/huggingface/diffusers

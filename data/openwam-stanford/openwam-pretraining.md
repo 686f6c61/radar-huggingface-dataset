@@ -65,7 +65,7 @@ No disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenWAM-Stanford/OpenWAM-Pretraining
+- Hugging Face: https://huggingface.co/OpenWAM-Stanford/OpenWAM-Pretraining
 - GitHub: https://github.com/OpenWAM-Official/OpenWAM
 - Pagina del proyecto: https://openwam.stanford.edu/
 - Pagina del proyecto en GitHub: https://github.com/OpenWAM-Official/OpenWAM-Official.github.io

@@ -32,7 +32,7 @@ No se detallan en la información disponible el volumen de tokens de entrenamien
 - Juicio estructurado: evalúa un estado y una pregunta con instrucciones y devuelve la probabilidad de una respuesta candidata de un solo token (por ejemplo, tipos como `noul` en el ejemplo de la model card).
 - Revisión de herramientas (tool review): determina condiciones como si una operación puede borrar o sobrescribir datos del usuario.
 - Compactación de contexto: soporta la función de decision-model compaction de QwenPaw para gestionar el contexto de agentes.
-- Clasificación de texto: la pipeline declarada en HuggingFace es `text-classification`.
+- Clasificación de texto: la pipeline declarada en Hugging Face es `text-classification`.
 - Multilingüe limitado: inglés y chino.
 - No genera texto explicativo ni JSON de probabilidades; la salida es la distribución sobre respuestas candidatas.
 - No está diseñado como modelo de chat causal: la model card desaconseja explícitamente su uso como modelo conversacional ordinario.
@@ -71,8 +71,8 @@ La model card indica que esta actualización no volvió a ejecutar la inferencia
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Piccolo-9B | 9,65 mil millones | no disponible (presupuesto de layout hasta 3.000 tokens) | Modelo de decisión estructurada | Apache 2.0 | HuggingFace, GGUF en repos separados |
-| Qwen/Qwen3.5-9B (modelo base) | 9B | no disponible | Modelo generativo general | según modelo base (no indicada) | HuggingFace |
+| Piccolo-9B | 9,65 mil millones | no disponible (presupuesto de layout hasta 3.000 tokens) | Modelo de decisión estructurada | Apache 2.0 | Hugging Face, GGUF en repos separados |
+| Qwen/Qwen3.5-9B (modelo base) | 9B | no disponible | Modelo generativo general | según modelo base (no indicada) | Hugging Face |
 | Alternativas de clasificación de decisión | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento de modelos comparables en la información proporcionada.
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento de modelos comparables en la información 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentscope-ai/Piccolo-9B
+- Hugging Face: https://huggingface.co/agentscope-ai/Piccolo-9B
 - Repositorio GitHub: https://github.com/agentscope-ai/Piccolo
 - Playground de decisión: https://decisionplayground.agentscope.io/
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

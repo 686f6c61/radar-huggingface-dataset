@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-Coder-7B-Instruct-rtl es un ajuste fino (fine-tune) del modelo Qwen2.5-Coder-7B-Instruct, desarrollado por el usuario magicchong y publicado en HuggingFace. Se trata de una variante de la familia Qwen2.5-Coder de Alibaba, orientada a tareas de generacion y comprension de codigo, sobre la que se ha aplicado un entrenamiento adicional cuyo proposito concreto no queda documentado en la model card disponible. El sufijo "rtl" sugiere una posible especializacion en idiomas de escritura de derecha a izquierda (right-to-left), aunque esta interpretacion no esta confirmada por el autor.
+Qwen2.5-Coder-7B-Instruct-rtl es un ajuste fino (fine-tune) del modelo Qwen2.5-Coder-7B-Instruct, desarrollado por el usuario magicchong y publicado en Hugging Face. Se trata de una variante de la familia Qwen2.5-Coder de Alibaba, orientada a tareas de generacion y comprension de codigo, sobre la que se ha aplicado un entrenamiento adicional cuyo proposito concreto no queda documentado en la model card disponible. El sufijo "rtl" sugiere una posible especializacion en idiomas de escritura de derecha a izquierda (right-to-left), aunque esta interpretacion no esta confirmada por el autor.
 
 El modelo conserva la arquitectura transformer decoder-only de Qwen2.5 y un total de 7.615.616.512 parametros, lo que lo situa en la gama de 7B ampliamente utilizada para despliegue en entornos con recursos moderados. La licencia Apache 2.0 del modelo base se mantiene, lo que facilita su uso comercial sin restricciones adicionales conocidas.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| magicchong/Qwen2.5-Coder-7B-Instruct-rtl | 7,6B | no disponible | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-Coder-7B-Instruct | 7,6B | 32.768 tokens (segun documentacion publica del modelo base) | Apache 2.0 | HuggingFace |
-| Codestral-22B | 22B | 32.768 tokens | Licencia no comercial (MNPL) | HuggingFace |
-| DeepSeek-Coder-V2-Lite-Instruct | 16B (MoE, 2,4B activos) | 128.000 tokens | Licencia DeepSeek | HuggingFace |
+| magicchong/Qwen2.5-Coder-7B-Instruct-rtl | 7,6B | no disponible | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-Coder-7B-Instruct | 7,6B | 32.768 tokens (segun documentacion publica del modelo base) | Apache 2.0 | Hugging Face |
+| Codestral-22B | 22B | 32.768 tokens | Licencia no comercial (MNPL) | Hugging Face |
+| DeepSeek-Coder-V2-Lite-Instruct | 16B (MoE, 2,4B activos) | 128.000 tokens | Licencia DeepSeek | Hugging Face |
 
 La comparativa se limita a datos publicos de los modelos alternativos; no se dispone de resultados de benchmarks del fine-tune que permitan una comparacion de rendimiento objetiva.
 
@@ -84,5 +84,5 @@ La comparativa se limita a datos publicos de los modelos alternativos; no se dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/magicchong/Qwen2.5-Coder-7B-Instruct-rtl
+- Hugging Face: https://huggingface.co/magicchong/Qwen2.5-Coder-7B-Instruct-rtl
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct

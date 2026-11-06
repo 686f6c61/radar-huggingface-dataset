@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo identificado como `ritzie07/dummy-rl-LunarLander-v2-deep-rl-course` es un artefacto alojado en HuggingFace con la etiqueta de pipeline `reinforcement-learning`, publicado por el usuario ritzie07. No se trata de un modelo de lenguaje ni de un modelo de vision: es un agente de aprendizaje por refuerzo asociado al entorno `LunarLander-v2`, presumiblemente generado como ejercicio dentro de un curso de deep reinforcement learning. La propia model card se limita a un encabezado YAML y a la frase literal "Dummy README to pass course", lo que indica que el repositorio se subio para cumplir un requisito de entrega y no para distribuir un agente entrenado y utilizable.
+El modelo identificado como `ritzie07/dummy-rl-LunarLander-v2-deep-rl-course` es un artefacto alojado en Hugging Face con la etiqueta de pipeline `reinforcement-learning`, publicado por el usuario ritzie07. No se trata de un modelo de lenguaje ni de un modelo de vision: es un agente de aprendizaje por refuerzo asociado al entorno `LunarLander-v2`, presumiblemente generado como ejercicio dentro de un curso de deep reinforcement learning. La propia model card se limita a un encabezado YAML y a la frase literal "Dummy README to pass course", lo que indica que el repositorio se subio para cumplir un requisito de entrega y no para distribuir un agente entrenado y utilizable.
 
 El repositorio no documenta arquitectura, numero de parametros, algoritmo de entrenamiento ni formato de pesos. El unico dato tecnico declarado es una metrica de `mean_reward` de -400 ± 0,0 sobre el conjunto `LunarLander-v2`, marcada como no verificada (`verified: false`) en el model-index. Ese valor es notablemente bajo en el contexto del entorno: el umbral habitual para considerar el problema resuelto es una recompensa media de 200, y una politica puramente aleatoria suele puntuar alrededor de -100 a -200, por lo que -400 apunta a un agente con rendimiento muy inferior al aleatorio, coherente con un modelo sin entrenamiento o con un entrenamiento fallido.
 
-Su relevancia practica es, por tanto, minima: sirve como caso de estudio de como no debe documentarse un modelo en un hub publico y como recordatorio de que las etiquetas de HuggingFace no garantizan que el artefacto contenga pesos funcionales. Cualquier evaluacion de este repositorio en un pipeline real deberia descartarlo de inmediato.
+Su relevancia practica es, por tanto, minima: sirve como caso de estudio de como no debe documentarse un modelo en un hub publico y como recordatorio de que las etiquetas de Hugging Face no garantizan que el artefacto contenga pesos funcionales. Cualquier evaluacion de este repositorio en un pipeline real deberia descartarlo de inmediato.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ El unico dato contextual firme es el entorno objetivo, `LunarLander-v2`, un prob
 
 ## Casos de uso
 
-- Material didactico de un curso de deep RL: el repositorio ilustra el flujo de publicacion de un artefacto en HuggingFace, incluido el uso del bloque `model-index` para declarar metricas de evaluacion.
+- Material didactico de un curso de deep RL: el repositorio ilustra el flujo de publicacion de un artefacto en Hugging Face, incluido el uso del bloque `model-index` para declarar metricas de evaluacion.
 - Ejemplo negativo de documentacion de modelos: util para mostrar en clase como una model card vacia ("Dummy README to pass course") impide cualquier reproduccion o auditoria del resultado.
 - Prueba de integracion de herramientas de evaluacion: permite comprobar como se comporta un pipeline automatizado ante un modelo con metricas declaradas pero no verificadas y con valores fuera de rango razonable.
 - Verificacion de carga de entornos Gymnasium: sirve para validar que un script de evaluacion es capaz de instanciar `LunarLander-v2` y ejecutar episodios con una politica dada.
@@ -82,7 +82,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 | Modelo | Entorno | Parametros | Metrica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ritzie07/dummy-rl-LunarLander-v2-deep-rl-course` | LunarLander-v2 | no disponible | mean_reward -400 ± 0,0 (no verificado) | no disponible | Publico en HuggingFace, 0 descargas |
+| `ritzie07/dummy-rl-LunarLander-v2-deep-rl-course` | LunarLander-v2 | no disponible | mean_reward -400 ± 0,0 (no verificado) | no disponible | Publico en Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | LunarLander-v2 | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,6 +99,6 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ritzie07/dummy-rl-LunarLander-v2-deep-rl-course
+- Modelo en Hugging Face: https://huggingface.co/ritzie07/dummy-rl-LunarLander-v2-deep-rl-course
 - No se han encontrado enlaces relevantes en la busqueda web: los resultados devueltos no guardan ninguna relacion con este modelo ni con aprendizaje por refuerzo, por lo que se omiten.
 - No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados al modelo en la informacion proporcionada.

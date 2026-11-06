@@ -74,7 +74,7 @@ La comparativa es limitada porque este checkpoint no tiene benchmarks publicados
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/tt-x3_kl-kl0p01-71-30B
+- Modelo en Hugging Face: https://huggingface.co/laion/tt-x3_kl-kl0p01-71-30B
 - Checkpoint hermano (KL 0p03): https://huggingface.co/laion/tt-x3_kl-kl0p03-70-30B
 - Dataset de trazas de entrenamiento: https://huggingface.co/datasets/penfever/tt-x3_kl-kl0p01
 - Organización LAION: https://laion.ai/

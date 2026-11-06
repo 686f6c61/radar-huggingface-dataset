@@ -103,7 +103,7 @@ Evaluación de fidelidad frente al original BF16 sobre un conjunto interno mixto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/axteam/gemma-4-26B-A4B-it-NVFP4A16
+- Hugging Face: https://huggingface.co/axteam/gemma-4-26B-A4B-it-NVFP4A16
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

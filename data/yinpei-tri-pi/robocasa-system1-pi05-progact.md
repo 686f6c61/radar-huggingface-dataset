@@ -72,8 +72,8 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| robocasa-system1-pi05-progact (este modelo) | no disponible | no disponible | 54,3% global en RoboCasa365 (con System2 qwen3vl-4b) | Gemma Terms of Use | HuggingFace, Orbax |
-| robocasa-system2-qwen3vl-4b | no disponible (nombre sugiere 4B) | no disponible | componente de alto nivel del mismo sistema | no disponible | HuggingFace |
+| robocasa-system1-pi05-progact (este modelo) | no disponible | no disponible | 54,3% global en RoboCasa365 (con System2 qwen3vl-4b) | Gemma Terms of Use | Hugging Face, Orbax |
+| robocasa-system2-qwen3vl-4b | no disponible (nombre sugiere 4B) | no disponible | componente de alto nivel del mismo sistema | no disponible | Hugging Face |
 | Otras políticas pi0.5 / openpi | no disponible | no disponible | no disponible | Apache-2.0 (código) | openpi |
 
 No se dispone de datos numéricos de alternativas comparables en las mismas condiciones de evaluación en la información proporcionada.
@@ -91,7 +91,7 @@ No se dispone de datos numéricos de alternativas comparables en las mismas cond
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yinpei-tri-pi/robocasa-system1-pi05-progact
+- Modelo en Hugging Face: https://huggingface.co/yinpei-tri-pi/robocasa-system1-pi05-progact
 - Modelo System2 emparejado: https://huggingface.co/yinpei-tri-pi/robocasa-system2-qwen3vl-4b
 - Términos de Uso de Gemma: https://ai.google.dev/gemma/terms
 - openpi (código, Apache-2.0): no disponible en la información proporcionada

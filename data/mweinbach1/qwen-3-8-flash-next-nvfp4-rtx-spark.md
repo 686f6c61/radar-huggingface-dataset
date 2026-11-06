@@ -21,7 +21,7 @@ La relevancia de este checkpoint es de ingenieria de despliegue: el autor sustit
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (10 shards `model-00001-of-00010` .. `model-00010-of-00010`) + binario propietario `ngram-q4-pair.bin` (cabecera `TFNGQ4`) |
 | Pipeline | image-text-to-text |
-| Libreria de carga | tensorfold (libreria propia, no estandar de HuggingFace) |
+| Libreria de carga | tensorfold (libreria propia, no estandar de Hugging Face) |
 | Tamano del checkpoint | 98,70 GiB |
 | Tamano del repositorio | 106,0 GB |
 | Fecha de publicacion | 2026-10-10 |
@@ -112,7 +112,7 @@ Frente a otros modelos MoE de ~66 B de parametros totales o frente a alternativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mweinbach1/qwen-3.8-flash-next-nvfp4-rtx-spark
+- Hugging Face: https://huggingface.co/mweinbach1/qwen-3.8-flash-next-nvfp4-rtx-spark
 - Model card del autor: incluida en el repositorio anterior (no se ha localizado una URL independiente).
 - Repositorio del modelo base `Qwen3.8-Flash-Next-NVFP4`: no disponible.
 - Paper o documentacion tecnica de Qwen3.8-Flash-Next: no disponible.

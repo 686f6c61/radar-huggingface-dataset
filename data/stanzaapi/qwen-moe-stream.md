@@ -102,7 +102,7 @@ La comparación con modelos MoE nativos de tamaño similar no está disponible e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/StanzaAPI/qwen-moe-stream
+- Repositorio Hugging Face: https://huggingface.co/StanzaAPI/qwen-moe-stream
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio GitHub del proyecto: https://github.com/DrMkdaddy/qwen-moe-stream
 - Checksums de resultados: https://github.com/DrMkdaddy/qwen-moe-stream/blob/main/results/CHECKSUMS.txt

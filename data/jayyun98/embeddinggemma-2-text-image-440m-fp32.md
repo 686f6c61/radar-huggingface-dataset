@@ -2,7 +2,7 @@
 
 ## Resumen
 
-embeddinggemma-2-text-image-440m-fp32 es un export de despliegue derivado de EmbeddingGemma 2 de Google DeepMind, publicado por el usuario jayyun98 en HuggingFace. Se trata de un modelo de embeddings multimodales (texto, codigo e imagen) que conserva unicamente el backbone de texto, el codificador de vision y la proyeccion de vision del modelo original; el codificador de audio y su proyeccion han sido eliminados deliberadamente. No se aplico entrenamiento, destilacion ni cuantizacion: los pesos se almacenan en FP32 como expansion sin perdida de los valores BF16 originales.
+embeddinggemma-2-text-image-440m-fp32 es un export de despliegue derivado de EmbeddingGemma 2 de Google DeepMind, publicado por el usuario jayyun98 en Hugging Face. Se trata de un modelo de embeddings multimodales (texto, codigo e imagen) que conserva unicamente el backbone de texto, el codificador de vision y la proyeccion de vision del modelo original; el codificador de audio y su proyeccion han sido eliminados deliberadamente. No se aplico entrenamiento, destilacion ni cuantizacion: los pesos se almacenan en FP32 como expansion sin perdida de los valores BF16 originales.
 
 El modelo cuenta con 438.760.472 parametros efectivos, genera embeddings de 768 dimensiones con soporte de Matryoshka Representation Learning (MRL) truncable a 512, 256 y 128 dimensiones, y admite una ventana de contexto de 8.192 tokens. Su licencia es Apache 2.0 y se distribuye en formato safetensors compatible con las librerias Transformers y SentenceTransformers.
 
@@ -82,8 +82,8 @@ Solo se dispone de informacion suficiente para comparar con el modelo del que de
 
 | Modelo | Parametros | Contexto | Dimensiones | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| jayyun98/embeddinggemma-2-text-image-440m-fp32 | 438.760.472 | 8.192 tokens | 768 (MRL 512/256/128) | Texto, codigo, imagen, texto+imagen | Apache 2.0 | HuggingFace, safetensors FP32 |
-| google/embeddinggemma-2 (modelo fuente) | No disponible en la informacion proporcionada | No disponible | No disponible | Texto, codigo, imagen y audio | Apache 2.0 | HuggingFace, checkpoint BF16 completo |
+| jayyun98/embeddinggemma-2-text-image-440m-fp32 | 438.760.472 | 8.192 tokens | 768 (MRL 512/256/128) | Texto, codigo, imagen, texto+imagen | Apache 2.0 | Hugging Face, safetensors FP32 |
+| google/embeddinggemma-2 (modelo fuente) | No disponible en la informacion proporcionada | No disponible | No disponible | Texto, codigo, imagen y audio | Apache 2.0 | Hugging Face, checkpoint BF16 completo |
 | Otras alternativas de embeddings multimodales | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La diferencia funcional documentada entre este export y el modelo fuente es la ausencia del codificador y la proyeccion de audio, ademas del cambio de almacenamiento de BF16 a FP32.
@@ -105,7 +105,7 @@ La diferencia funcional documentada entre este export y el modelo fuente es la a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jayyun98/embeddinggemma-2-text-image-440m-fp32
+- Modelo en Hugging Face: https://huggingface.co/jayyun98/embeddinggemma-2-text-image-440m-fp32
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Revision fuente fijada: https://huggingface.co/google/embeddinggemma-2/tree/914f7f89142e33e77833254d9c9b90c3cef7303b
 - conversion.json (precision de almacenamiento, comprobaciones de eliminacion y conversion): https://huggingface.co/jayyun98/embeddinggemma-2-text-image-440m-fp32/blob/main/conversion.json

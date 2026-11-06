@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sido/hina-gemma4-e4b-aggressive-litert | 4B efectivos (E4B) | 4.096 | LiteRT-LM | gemma | HuggingFace, experimental |
-| google/gemma-4-E4B-it | 4B efectivos (E4B) | no disponible en la informacion | safetensors / GGUF (segun publicacion oficial) | Apache-2.0 segun model card oficial | HuggingFace |
-| HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive | 4B efectivos (E4B) | no disponible | GGUF Q4_K_M | gemma | HuggingFace |
+| Sido/hina-gemma4-e4b-aggressive-litert | 4B efectivos (E4B) | 4.096 | LiteRT-LM | gemma | Hugging Face, experimental |
+| google/gemma-4-E4B-it | 4B efectivos (E4B) | no disponible en la informacion | safetensors / GGUF (segun publicacion oficial) | Apache-2.0 segun model card oficial | Hugging Face |
+| HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive | 4B efectivos (E4B) | no disponible | GGUF Q4_K_M | gemma | Hugging Face |
 
 La comparativa se limita a los tres artefactos implicados en la cadena de derivacion, ya que no se dispone de datos de rendimiento para contrastar con alternativas de la misma categoria. No se dispone de informacion sobre otros modelos comparables en la busqueda realizada.
 
@@ -84,7 +84,7 @@ La comparativa se limita a los tres artefactos implicados en la cadena de deriva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sido/hina-gemma4-e4b-aggressive-litert
+- Modelo en Hugging Face: https://huggingface.co/Sido/hina-gemma4-e4b-aggressive-litert
 - Modelo base afinado: https://huggingface.co/HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive
 - Modelo base oficial: https://huggingface.co/google/gemma-4-E4B-it
 - Model card del base oficial: https://huggingface.co/google/gemma-4-E4B-it/blob/ee0ef6023621cff504d758262d4e04895a5af4a2/README.md

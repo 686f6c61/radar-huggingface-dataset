@@ -4,7 +4,7 @@
 
 El checkpoint `dsikka/Qwen3.8-27B-NVFP4-FP8-GPTQ-AWQ` es una cuantización mixta del modelo multimodal denso Qwen3.8-27B, desarrollado por el equipo de Alibaba Qwen. Este checkpoint combina cuantización NVFP4 (4 bits para MLP), FP8 (8 bits para atención y KV cache), junto con GPTQ y AWQ, con el objetivo de reducir el uso de memoria y acelerar la inferencia en hardware moderno de NVIDIA, especialmente en GPUs Blackwell como la DGX Spark. Según los benchmarks publicados en la model card, esta versión supera ligeramente a las cuantizaciones de referencia de Inferact y Unsloth en varias tareas de razonamiento y matemáticas.
 
-El modelo base Qwen3.8-27B es un transformer denso con encoder de visión integrado, lo que lo convierte en un modelo multimodal capaz de procesar texto e imágenes. Con una ventana de contexto de 262 000 tokens (según fuentes web), está diseñado para tareas de agente, generación de código y automatización de oficina. Esta cuantización específica, creada por `dsikka`, está optimizada para su uso con vLLM y el ecosistema `compressed-tensors`, y no presenta una licencia explícita en la ficha de HuggingFace, aunque el modelo base se distribuye bajo Apache 2.0.
+El modelo base Qwen3.8-27B es un transformer denso con encoder de visión integrado, lo que lo convierte en un modelo multimodal capaz de procesar texto e imágenes. Con una ventana de contexto de 262 000 tokens (según fuentes web), está diseñado para tareas de agente, generación de código y automatización de oficina. Esta cuantización específica, creada por `dsikka`, está optimizada para su uso con vLLM y el ecosistema `compressed-tensors`, y no presenta una licencia explícita en la ficha de Hugging Face, aunque el modelo base se distribuye bajo Apache 2.0.
 
 La relevancia de este checkpoint radica en su equilibrio entre calidad de salida y eficiencia de hardware: al combinar varias técnicas de cuantización, logra un rendimiento competitivo con un footprint de memoria reducido, lo que lo hace atractivo para despliegues en entornos con GPUs de gama media o alta sin sacrificar precisión en tareas exigentes como matemáticas o razonamiento multi-step.
 
@@ -80,7 +80,7 @@ La comparativa se basa en los datos publicados en la model card y en las fuentes
 
 ## Limitaciones y advertencias
 
-- La licencia no esta indicada en la ficha de HuggingFace; aunque el modelo base es Apache 2.0, este checkpoint podria tener restricciones adicionales. Se recomienda contactar al autor antes de uso comercial.
+- La licencia no esta indicada en la ficha de Hugging Face; aunque el modelo base es Apache 2.0, este checkpoint podria tener restricciones adicionales. Se recomienda contactar al autor antes de uso comercial.
 - La cuantizacion mixta NVFP4/FP8 puede introducir una ligera degradacion en tareas de generacion creativa o razonamiento sutil, aunque los benchmarks muestran resultados superiores en matematicas.
 - El modelo puede alucinar en contextos poco comunes o cuando se le pide informacion factual no presente en sus datos de entrenamiento.
 - La ventana de contexto de 262 000 tokens es teorica; en la practica, el uso prolongado puede agotar la memoria de la GPU, especialmente con cuantizaciones mixtas.
@@ -89,7 +89,7 @@ La comparativa se basa en los datos publicados en la model card y en las fuentes
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dsikka/Qwen3.8-27B-NVFP4-FP8-GPTQ-AWQ
+- Hugging Face: https://huggingface.co/dsikka/Qwen3.8-27B-NVFP4-FP8-GPTQ-AWQ
 - Foro NVIDIA (benchmarks NVFP4 vs FP8): https://forums.developer.nvidia.com/t/qwen3-8-27b-on-dgx-spark-using-vllm-nvfp4-vs-fp8-performance/380258
 - Repositorio oficial del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Articulo sobre requisitos de hardware: https://gingerlabs.ai/blog/qwen-38-27b-hardware-requirements-and-how-to-deploy-locally

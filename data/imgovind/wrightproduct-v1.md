@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wrightproduct-v1 es un modelo de lenguaje afinado por el usuario de HuggingFace imgovind a partir de Qwen3-30B-A3B-Instruct-2507, un modelo MoE de 30B de parámetros totales (3B activos) de la familia Qwen3. Su propósito es muy específico: convertir un brief de producto (idea, usuarios, restricciones) en la cadena completa de documentación que producirían un product manager y un staff engineer, terminando en asignaciones de trabajo ejecutables por agentes de código.
+Wrightproduct-v1 es un modelo de lenguaje afinado por el usuario de Hugging Face imgovind a partir de Qwen3-30B-A3B-Instruct-2507, un modelo MoE de 30B de parámetros totales (3B activos) de la familia Qwen3. Su propósito es muy específico: convertir un brief de producto (idea, usuarios, restricciones) en la cadena completa de documentación que producirían un product manager y un staff engineer, terminando en asignaciones de trabajo ejecutables por agentes de código.
 
 El pipeline que implementa es: Brief → PRD → Technical Design → ADRs → Task Breakdown → Agent Orchestration. A diferencia de un modelo general con un buen prompt, este modelo está afinado para sostener ese contrato de salida de forma mecánica: empareja cada tarea con su asignación de agente, traza cada elemento de diseño a un requisito numerado (`R#`) y pregunta cuando faltan datos en lugar de inventar métricas.
 
@@ -93,7 +93,7 @@ Alternativas comparables en la categoría de generación de especificaciones sof
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imgovind/wrightproduct-v1
+- Modelo en Hugging Face: https://huggingface.co/imgovind/wrightproduct-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507
 - mlx-lm (para ejecutar la copia MLX): https://github.com/ml-explore/mlx-lm
 - Repositorio de código de entrenamiento (`wrightproduct`): mencionado en la model card, enlace no disponible en la información proporcionada

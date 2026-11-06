@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DSV4-Flash-Vision-ablit-EXL3-Kalibrated es una redistribucion cuantizada del modelo DeepSeek-V4-Flash-Vision-Exp, publicada por el usuario Olt1z en HuggingFace. No se trata de un entrenamiento nuevo ni de una recalibracion: el autor lo describe explicitamente como un "remontaje" (remount) de dos packs previos, GaelicThunder/DeepSeek-V4-Flash-Vision-Exp-ablit-EXL3-Kalibrated y vcruz305/DSV4-Flash-Vision-ablit-EXL3-MixedK, reorganizados en el formato estandar EXL3 para que ExLlamaV3 pueda cargarlos. Los bytes de los expertos enrutados no se han tocado; solo cambian nombres de tensor, el reparto en shards y la creacion de un `model.safetensors.index.json` que ninguno de los padres publicaba.
+DSV4-Flash-Vision-ablit-EXL3-Kalibrated es una redistribucion cuantizada del modelo DeepSeek-V4-Flash-Vision-Exp, publicada por el usuario Olt1z en Hugging Face. No se trata de un entrenamiento nuevo ni de una recalibracion: el autor lo describe explicitamente como un "remontaje" (remount) de dos packs previos, GaelicThunder/DeepSeek-V4-Flash-Vision-Exp-ablit-EXL3-Kalibrated y vcruz305/DSV4-Flash-Vision-ablit-EXL3-MixedK, reorganizados en el formato estandar EXL3 para que ExLlamaV3 pueda cargarlos. Los bytes de los expertos enrutados no se han tocado; solo cambian nombres de tensor, el reparto en shards y la creacion de un `model.safetensors.index.json` que ninguno de los padres publicaba.
 
 El modelo es un MoE multimodal (texto e imagen) de 64.063.135.678 parametros totales con 43 capas, 256 expertos enrutados y 6 activos por token, mas 3 bloques MTP. Incorpora un tower de vision que se carga como componente de `DeepseekV4ForCausalLM` y una ventana de contexto de 1.048.576 tokens (1M) gracias a una cache DSA comprimida por capa. Los pesos ocupan 111,0 GiB en disco (119,2 GB repartidos en 70 shards de safetensors y 138.291 tensores), y servir el contexto completo requiere 117,7 GiB, de modo que el objetivo declarado es una unica tarjeta de 140 GB.
 
@@ -107,7 +107,7 @@ Comparado con MixedK, este repositorio cambia seis capas de expertos por las 22 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Olt1z/DSV4-Flash-Vision-ablit-EXL3-Kalibrated
+- Repositorio en Hugging Face: https://huggingface.co/Olt1z/DSV4-Flash-Vision-ablit-EXL3-Kalibrated
 - Modelo base (pack calibrado): https://huggingface.co/GaelicThunder/DeepSeek-V4-Flash-Vision-Exp-ablit-EXL3-Kalibrated
 - Modelo base (pack MixedK): https://huggingface.co/vcruz305/DSV4-Flash-Vision-ablit-EXL3-MixedK
 - Modelo original: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp

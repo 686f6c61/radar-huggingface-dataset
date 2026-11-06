@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | ALBEF (Salesforce, 2021) | Vision-language transformer | ~210M (base) / ~390M (large) | no especificado | BSD-3-Clause | Codigo oficial en GitHub, integrado en LAVIS |
-| CLIP (OpenAI, 2021) | Vision-language contrastivo | ~400M (ViT-L) | 77 tokens | MIT | Pesos publicados en HuggingFace |
+| CLIP (OpenAI, 2021) | Vision-language contrastivo | ~400M (ViT-L) | 77 tokens | MIT | Pesos publicados en Hugging Face |
 | BLIP (Salesforce, 2022) | Vision-language transformer | ~220M (base) / ~470M (large) | no especificado | BSD-3-Clause | Codigo oficial y pesos disponibles |
 
 La comparativa se basa en la arquitectura ALBEF original, ya que el modelo de este repositorio no publica pesos ni resultados. A diferencia de CLIP, que se centra exclusivamente en representaciones contrastivas, ALBEF incorpora fusión por atención cruzada, lo que le permite abordar tareas generativas además de de recuperación.

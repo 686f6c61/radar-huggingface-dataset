@@ -109,7 +109,7 @@ La diferencia clave no es el rendimiento, que no se puede comparar con los datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddarthg44/anlp-a2-p2-sophia
+- Modelo en Hugging Face: https://huggingface.co/siddarthg44/anlp-a2-p2-sophia
 - Dataset de entrenamiento: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - Documentacion de `torch.optim.Optimizer`: https://pytorch.org/docs/stable/optim.html
 - Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo (unicamente paginas de WhatsApp Web sin relacion con el artefacto). No se han encontrado paper, blog, repositorio adicional ni demo asociados.

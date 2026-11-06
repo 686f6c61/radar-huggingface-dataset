@@ -94,8 +94,8 @@ Alternativas como GGUF de Qwen3-4B en 4 bits podrían tener un tamaño similar, 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Exeaon/Exeaon1-Dzo-4B)
+- [Modelo en Hugging Face](https://huggingface.co/Exeaon/Exeaon1-Dzo-4B)
 - [Runtime `epure-runtime` (GitHub)](https://github.com/ExeaonLM/epure-runtime)
 - [Modelo base Qwen/Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B)
-- [Organización Exeaon en HuggingFace](https://huggingface.co/Exeaon)
+- [Organización Exeaon en Hugging Face](https://huggingface.co/Exeaon)
 - [GitHub de Exeaon](https://github.com/ExeaonLM)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene cuantizaciones GGUF estáticas del modelo oliverguhr/gemma-4-e2b-german-spelling-full, publicadas por el usuario mradermacher, especializado en convertir pesos de HuggingFace al formato GGUF para su uso con llama.cpp y derivados. El modelo base apunta, por su nombre, a una tarea de corrección ortográfica en alemán sobre la familia Gemma (variante "e2b"), aunque la model card disponible no documenta ni la arquitectura ni el entrenamiento. El dato real de safetensors indica 4.647.450.147 parámetros totales (aproximadamente 4,65 mil millones).
+Este repositorio contiene cuantizaciones GGUF estáticas del modelo oliverguhr/gemma-4-e2b-german-spelling-full, publicadas por el usuario mradermacher, especializado en convertir pesos de Hugging Face al formato GGUF para su uso con llama.cpp y derivados. El modelo base apunta, por su nombre, a una tarea de corrección ortográfica en alemán sobre la familia Gemma (variante "e2b"), aunque la model card disponible no documenta ni la arquitectura ni el entrenamiento. El dato real de safetensors indica 4.647.450.147 parámetros totales (aproximadamente 4,65 mil millones).
 
 El interés práctico de esta publicación no está en el modelo en sí, sino en la disponibilidad de versiones cuantizadas de 3,1 GB a 9,4 GB que permiten ejecutar un modelo de 4,65B en hardware de consumo, además de dos ficheros mmproj (Q8_0 y f16) que habilitan un complemento multimodal. El repositorio ocupa 49,6 GB en total y no registra descargas ni "likes" en el momento de la consulta, lo que indica que es una publicación muy reciente y sin validación comunitaria.
 
@@ -23,8 +23,8 @@ Se trata, por tanto, de una ficha de cuantización, no de un modelo nuevo: no ha
 | Libreria declarada | transformers |
 | Tamano del repositorio | 49,6 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion (segun HuggingFace) | 2026-09-24 |
-| Ultima actualizacion (segun HuggingFace) | 2026-09-24 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-24 |
+| Ultima actualizacion (segun Hugging Face) | 2026-09-24 |
 
 Desglose de ficheros publicados:
 
@@ -105,7 +105,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 - Licencia no disponible: sin una licencia explicita no se puede asumir permiso de uso comercial. Hay que consultar la model card del modelo base oliverguhr/gemma-4-e2b-german-spelling-full antes de cualquier despliegue en produccion.
 - Idiomas declarados incoherentes: la model card declara "en" mientras el nombre del modelo base referencia ortografia alemana. No se puede confirmar la cobertura real de idiomas ni el comportamiento fuera del aleman.
 - Sin validacion comunitaria: 0 descargas y 0 "likes" en el momento de la consulta, y fechas de creacion y actualizacion de 2026-09-24. No hay evidencia de que la cuantizacion haya sido probada por terceros.
-- Fechas de publicacion anomales: las marcas temporales de HuggingFace son posteriores a la fecha actual conocida; conviene verificar el estado del repositorio antes de depender de el.
+- Fechas de publicacion anomales: las marcas temporales de Hugging Face son posteriores a la fecha actual conocida; conviene verificar el estado del repositorio antes de depender de el.
 - Riesgo de alucinacion: como modelo generativo, puede introducir cambios no solicitados en el texto, inventar correcciones en palabras correctas o alterar terminologia tecnica. En tareas de correccion ortografica conviene usar modos de salida restringidos y validacion posterior.
 - Perdida de calidad por cuantizacion: las variantes Q2_K y Q3_K degradan notablemente la calidad, segun el propio autor ("lower quality" para Q3_K_M). Para produccion se recomienda Q4_K_M o superior.
 - Sin imatrix: el autor advierte de que no hay cuantizaciones ponderadas o con imatrix, que suelen ofrecer mejor relacion calidad/tamano que las estaticas equivalentes.
@@ -115,7 +115,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/gemma-4-e2b-german-spelling-full-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/gemma-4-e2b-german-spelling-full-GGUF
 - Modelo base: https://huggingface.co/oliverguhr/gemma-4-e2b-german-spelling-full
 - Pagina de descargas y vision general del cuantizador: https://hf.tst.eu/model#gemma-4-e2b-german-spelling-full-GGUF
 - Preguntas frecuentes y peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

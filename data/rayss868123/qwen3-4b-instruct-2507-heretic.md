@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rayss868123/Qwen3-4B-Instruct-2507-heretic es una variante "decensored" (abliterated) del modelo denso Qwen3-4B-Instruct-2507 de Alibaba Qwen, publicada por el usuario rayss868123 en HuggingFace. El modelo conserva la arquitectura y los pesos del original de 4.022.468.096 parámetros (3,6B no de embedding, 36 capas, GQA con 32 cabezas de consulta y 8 de clave/valor) y 262.144 tokens de contexto nativo, pero sus matrices de proyección han sido modificadas para eliminar la dirección de rechazo aprendida durante el post-entrenamiento.
+rayss868123/Qwen3-4B-Instruct-2507-heretic es una variante "decensored" (abliterated) del modelo denso Qwen3-4B-Instruct-2507 de Alibaba Qwen, publicada por el usuario rayss868123 en Hugging Face. El modelo conserva la arquitectura y los pesos del original de 4.022.468.096 parámetros (3,6B no de embedding, 36 capas, GQA con 32 cabezas de consulta y 8 de clave/valor) y 262.144 tokens de contexto nativo, pero sus matrices de proyección han sido modificadas para eliminar la dirección de rechazo aprendida durante el post-entrenamiento.
 
 La modificación se ha realizado con Heretic v1.2.0, una herramienta que optimiza automáticamente los parámetros de abliteración (pesos y posiciones por capa en attn.o_proj y mlp.down_proj) minimizando una función objetivo que combina la divergencia KL respecto al modelo original y el número de rechazos. Según la model card, el resultado pasa de 100/100 rechazos en el modelo original a 5/100 en esta variante, con una divergencia KL de 0,0741.
 
@@ -145,7 +145,7 @@ No se dispone de datos de otras variantes abliterated comparables en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rayss868123/Qwen3-4B-Instruct-2507-heretic
+- Modelo en Hugging Face: https://huggingface.co/rayss868123/Qwen3-4B-Instruct-2507-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Herramienta Heretic: https://github.com/p-e-w/heretic
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

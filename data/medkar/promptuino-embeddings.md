@@ -75,6 +75,6 @@ La comparativa se limita a los modelos base relacionados, ya que no se dispone d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/medkar/promptuino-embeddings
+- Repositorio Hugging Face: https://huggingface.co/medkar/promptuino-embeddings
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 - Repositorio de Promptuino: https://github.com/medkar/Promptuino

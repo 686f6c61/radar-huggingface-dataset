@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwopus3.5-2B-v3-GGUF es la distribucion en formato GGUF del modelo Qwopus3.5-2B-v3, un modelo de lenguaje de aproximadamente 1.880 millones de parametros desarrollado por Jackrong. Esta version concreta ha sido cuantizada por mradermacher, un distribuidor habitual de pesos GGUF en HuggingFace, para permitir la inferencia en CPU y GPU de gama baja mediante llama.cpp y herramientas compatibles. El modelo pertenece a la familia Qwen3.5 segun las etiquetas del repositorio, aunque la model card no detalla la arquitectura interna ni el proceso de entrenamiento.
+Qwopus3.5-2B-v3-GGUF es la distribucion en formato GGUF del modelo Qwopus3.5-2B-v3, un modelo de lenguaje de aproximadamente 1.880 millones de parametros desarrollado por Jackrong. Esta version concreta ha sido cuantizada por mradermacher, un distribuidor habitual de pesos GGUF en Hugging Face, para permitir la inferencia en CPU y GPU de gama baja mediante llama.cpp y herramientas compatibles. El modelo pertenece a la familia Qwen3.5 segun las etiquetas del repositorio, aunque la model card no detalla la arquitectura interna ni el proceso de entrenamiento.
 
 El modelo resuelve el problema de desplegar un LLM conversacional pequeno en hardware limitado: con cuantizaciones de entre 1,1 GB (Q2_K) y 2,1 GB (Q8_0), cabe en equipos con 4-8 GB de RAM o VRAM. Su licencia Apache 2.0 permite uso comercial sin restricciones adicionales, lo que lo hace atractivo para prototipos, entornos embebidos y aplicaciones de bajo coste.
 

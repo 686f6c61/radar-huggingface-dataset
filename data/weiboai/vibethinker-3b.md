@@ -88,7 +88,7 @@ No se dispone de benchmarks comparativos directos con otros modelos de 3B en la 
 
 ## Enlaces
 
-- [HuggingFace - WeiboAI/VibeThinker-3B](https://huggingface.co/WeiboAI/VibeThinker-3B)
+- [Hugging Face - WeiboAI/VibeThinker-3B](https://huggingface.co/WeiboAI/VibeThinker-3B)
 - [GitHub - WeiboAI/VibeThinker](https://github.com/WeiboAI/VibeThinker)
 - [ModelScope - WeiboAI/VibeThinker-3B](https://modelscope.cn/models/WeiboAI/VibeThinker-3B)
 - [Technical Report (arXiv:2606.16140)](https://huggingface.co/papers/2606.16140)

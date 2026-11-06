@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g8_run2` es un modelo publicado en HuggingFace cuyo identificador sugiere un ajuste fino (probablemente un experimento de entrenamiento) sobre una base denominada Qwen3-8B. La model card es la plantilla generada automaticamente por HuggingFace y no ha sido editada: todos sus campos figuran como "[More Information Needed]", por lo que no hay informacion verificable sobre el desarrollador, el tipo de modelo, los idiomas, la licencia ni el procedimiento de entrenamiento. El repositorio acumula 0 descargas y 0 "likes", y su tamano es de solo 0,2 GB.
+El repositorio `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g8_run2` es un modelo publicado en Hugging Face cuyo identificador sugiere un ajuste fino (probablemente un experimento de entrenamiento) sobre una base denominada Qwen3-8B. La model card es la plantilla generada automaticamente por Hugging Face y no ha sido editada: todos sus campos figuran como "[More Information Needed]", por lo que no hay informacion verificable sobre el desarrollador, el tipo de modelo, los idiomas, la licencia ni el procedimiento de entrenamiento. El repositorio acumula 0 descargas y 0 "likes", y su tamano es de solo 0,2 GB.
 
 El unico contexto tecnico fiable que se puede extraer de los metadatos es el siguiente: la libreria declarada es `transformers`, los pesos estan en formato `safetensors`, la etiqueta incluye `unsloth` (framework habitual para ajuste fino eficiente con LoRA/QLoRA) y el modelo es compatible con `endpoints_compatible`. El tamano del repositorio (0,2 GB) es muy inferior al que ocuparian los pesos completos de un modelo denso de 8.000 millones de parametros en bf16 (unos 16 GB), lo que apunta a que se trata de un adaptador LoRA o de una publicacion parcial, aunque esto no puede confirmarse con la informacion disponible.
 
@@ -29,7 +29,7 @@ La relevancia de esta ficha es, por tanto, fundamentalmente documental y de adve
 
 No hay informacion disponible sobre la arquitectura, el numero de tokens de entrenamiento, la composicion del dataset ni el uso de tecnicas de alineacion como RLHF, DPO o RLVR. La model card no incluye ninguna seccion rellenada: los apartados de detalles del modelo, datos de entrenamiento, hiperparametros, regimen de precision (fp32, bf16, fp8) y procedimiento de evaluacion contienen unicamente marcadores de plantilla sin sustituir.
 
-Los unicos indicios indirectos son los siguientes. La etiqueta `unsloth` sugiere que el ajuste se realizo con esa libreria, especializada en fine-tuning con LoRA y QLoRA sobre GPUs de gama de consumo. El nombre del repositorio, `sqlautophagycode`, apunta a un conjunto de datos o tarea orientada a SQL, generacion de codigo o alguna variante de autoformacion iterativa, pero se trata de una inferencia basada exclusivamente en el nombre, no en documentacion. El tag `arxiv:1910.09700` que aparece en los metadatos corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla automatica de HuggingFace, y no guarda relacion con el entrenamiento del modelo. La relacion entre el tamano del repositorio (0,2 GB) y un supuesto modelo de 8B hace plausible que se hayan subido solo adaptadores o un subconjunto de pesos, pero esto no esta confirmado.
+Los unicos indicios indirectos son los siguientes. La etiqueta `unsloth` sugiere que el ajuste se realizo con esa libreria, especializada en fine-tuning con LoRA y QLoRA sobre GPUs de gama de consumo. El nombre del repositorio, `sqlautophagycode`, apunta a un conjunto de datos o tarea orientada a SQL, generacion de codigo o alguna variante de autoformacion iterativa, pero se trata de una inferencia basada exclusivamente en el nombre, no en documentacion. El tag `arxiv:1910.09700` que aparece en los metadatos corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla automatica de Hugging Face, y no guarda relacion con el entrenamiento del modelo. La relacion entre el tamano del repositorio (0,2 GB) y un supuesto modelo de 8B hace plausible que se hayan subido solo adaptadores o un subconjunto de pesos, pero esto no esta confirmado.
 
 ## Capacidades
 
@@ -97,7 +97,7 @@ Nota metodologica: los datos de contexto, licencia y benchmarks de la base y de 
 ## Limitaciones y advertencias
 
 - Ausencia total de licencia: no se declara licencia ni en los metadatos ni en el repositorio. Sin una licencia explicita, no existe autorizacion clara para uso comercial, redistribucion ni obras derivadas. Es el principal bloqueante para cualquier uso en produccion.
-- Model card sin contenido: la ficha es la plantilla automatica de HuggingFace con todos los campos como "[More Information Needed]". No hay informacion sobre datos de entrenamiento, sesgos, riesgos ni uso previsto.
+- Model card sin contenido: la ficha es la plantilla automatica de Hugging Face con todos los campos como "[More Information Needed]". No hay informacion sobre datos de entrenamiento, sesgos, riesgos ni uso previsto.
 - Riesgo de alucinacion no evaluado: no se ha publicado ninguna evaluacion de fidelidad ni de tasa de error en tareas de generacion de codigo o SQL. En dominios de bases de datos, una consulta sintacticamente valida pero semanticamente erronea puede producir resultados incorrectos sin aviso.
 - Riesgo de seguridad en la generacion de SQL: si el modelo produce consultas ejecutables, existe riesgo de inyeccion SQL, de operaciones destructivas (DROP, DELETE, UPDATE sin filtro) o de fuga de datos si se conecta a una base de datos con permisos amplios. Requiere aislamiento y validacion previa obligatoria.
 - Sesgos: no evaluados. Al desconocerse la composicion del dataset, no puede descartarse sesgo de dominio, idioma ni estilo, especialmente si el ajuste se hizo sobre un corpus reducido y especializado.
@@ -110,8 +110,8 @@ Nota metodologica: los datos de contexto, licencia y benchmarks de la base y de 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g8_run2
-- Repositorio del autor en HuggingFace: https://huggingface.co/stefanocarrera
+- Pagina del modelo en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g8_run2
+- Repositorio del autor en Hugging Face: https://huggingface.co/stefanocarrera
 - Paper citado en el tag del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones; citado por la plantilla automatica, no vinculado al modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la model card: https://mlco2.github.io/impact
 - Paper, blog, repositorio de codigo, demo o dataset asociados al modelo: no disponible. La busqueda web no ha devuelto resultados relevantes sobre este modelo.

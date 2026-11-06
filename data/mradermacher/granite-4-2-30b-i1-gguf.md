@@ -78,7 +78,7 @@ No se dispone de datos de benchmarks comparativos con modelos de otros proveedor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/granite-4.2-30b-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/granite-4.2-30b-i1-GGUF
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-30b
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/granite-4.2-30b-GGUF
 - Documentacion de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2

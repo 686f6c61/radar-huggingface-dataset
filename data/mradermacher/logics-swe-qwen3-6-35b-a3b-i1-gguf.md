@@ -31,7 +31,7 @@ El post-entrenamiento se ha centrado en ingenieria de software mediante tres tec
 
 - Generacion y edicion de codigo, con especializacion en tareas de ingenieria de software (resolucion de issues, parches, refactoring).
 - Razonamiento agéntico multi-paso: el entrenamiento agéntico y el pipeline de RL sugieren capacidad para operar en bucles de agente (planificar, ejecutar herramientas, observar, corregir).
-- Etiquetado con la pipeline "reinforcement-learning" en HuggingFace, lo que indica afinidad con flujos de trabajo de RL y entornos interactivos.
+- Etiquetado con la pipeline "reinforcement-learning" en Hugging Face, lo que indica afinidad con flujos de trabajo de RL y entornos interactivos.
 - Capacidades conversacionales (tag "conversational").
 - El repositorio estatico indica que se trata de un modelo de vision: los archivos mmproj estan disponibles en el repositorio estatico de mradermacher, por lo que el modelo base soportaria entrada multimodal (vision).
 - Soporte de tool calling: no disponible explicitamente en la informacion proporcionada, aunque el entrenamiento agéntico sugiere que esta orientado a uso con herramientas.

@@ -87,7 +87,7 @@ La comparativa se limita a la categoria de modelos vision-lenguaje de ~7-8B con 
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizado): https://huggingface.co/mradermacher/UI-Venus-1.5-8B-GGUF
+- Repositorio Hugging Face (cuantizado): https://huggingface.co/mradermacher/UI-Venus-1.5-8B-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/UI-Venus-1.5-8B
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/UI-Venus-1.5-8B-i1-GGUF
 - Pagina de resumen del autor para este modelo: https://hf.tst.eu/model#UI-Venus-1.5-8B-GGUF

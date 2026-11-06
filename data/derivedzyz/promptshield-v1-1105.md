@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PromptShield-V1-1105 es un adaptador LoRA para detección de prompt injection, desarrollado por el usuario derivedzyz y publicado en HuggingFace. Se construye sobre el modelo base Qwen2.5-0.5B-Instruct de Alibaba y su función es clasificar un texto de entrada en tres categorías: normal, claramente malicioso o sospechoso. El modelo se distribuye como adaptador PEFT (no como pesos completos) y está pensado para integrarse en pipelines de filtrado previo a la invocación de un LLM mayor.
+PromptShield-V1-1105 es un adaptador LoRA para detección de prompt injection, desarrollado por el usuario derivedzyz y publicado en Hugging Face. Se construye sobre el modelo base Qwen2.5-0.5B-Instruct de Alibaba y su función es clasificar un texto de entrada en tres categorías: normal, claramente malicioso o sospechoso. El modelo se distribuye como adaptador PEFT (no como pesos completos) y está pensado para integrarse en pipelines de filtrado previo a la invocación de un LLM mayor.
 
 El modelo emplea una ventana de 256 tokens, conservando el inicio y el final de las entradas largas, y devuelve puntuaciones que, según el autor, no están calibradas como probabilidades. Es la primera generación validada dentro de un proceso de autoentrenamiento recursivo del autor, lo que explica su naturaleza experimental y su escasa adopción (0 descargas y 0 likes en el momento de la consulta).
 
@@ -82,7 +82,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/derivedzyz/PromptShield-V1-1105
+- Modelo en Hugging Face: https://huggingface.co/derivedzyz/PromptShield-V1-1105
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset deepset/prompt-injections: https://huggingface.co/datasets/deepset/prompt-injections
 - Dataset NeurAlchemy/Prompt-injection-dataset: https://huggingface.co/datasets/neuralchemy/Prompt-injection-dataset

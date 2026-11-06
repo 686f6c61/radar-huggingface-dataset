@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSS-Image-SFT_clear es un ajuste fino comunitario del modelo de generacion de imagenes MOSS-Image-SFT, publicado por el usuario easygoing0114 en HuggingFace. El modelo base, MOSS-Image-SFT, es un sistema text-to-image desarrollado por el equipo OpenMOSS, y esta variante busca resolver un problema concreto: el ruido excesivo y la expresion de color apagada en las salidas originales, especialmente en ilustraciones de estilo anime.
+MOSS-Image-SFT_clear es un ajuste fino comunitario del modelo de generacion de imagenes MOSS-Image-SFT, publicado por el usuario easygoing0114 en Hugging Face. El modelo base, MOSS-Image-SFT, es un sistema text-to-image desarrollado por el equipo OpenMOSS, y esta variante busca resolver un problema concreto: el ruido excesivo y la expresion de color apagada en las salidas originales, especialmente en ilustraciones de estilo anime.
 
 El resultado, segun las comparaciones publicadas por el autor, son imagenes mas limpias, con mayor detalle, saturacion y contraste, tanto en estilo anime como en fotografico (photoreal). El modelo se distribuye con licencia Apache-2.0, lo que permite su uso comercial sin restricciones, y el repositorio ocupa 31,9 GB.
 
@@ -55,16 +55,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ev
 - Cuantizaciones de menor precision (FP8, Int8, NVFP4) pueden reducir sustancialmente el requisito de VRAM, aunque no se publican cifras concretas.
 - GPU recomendadas: no disponible de forma explicita; para BF16 completo, tarjetas tipo RTX 5090 (32 GB), A100 o H100 serian adecuadas; con FP8/NVFP4 podria funcionar en tarjetas consumer de 16-24 GB como RTX 4090.
 - Consumer GPUs: plausible con cuantizacion en GPUs de gama alta (RTX 4090/5090); no confirmado por el autor.
-- Despliegue: ComfyUI (flujos de trabajo oficiales incluidos por el autor); componentes auxiliares disponibles en el repositorio Comfy-Org/MOSS-Image de HuggingFace (codificador de texto qwen3.5_9b y VAE flux2-vae_small).
+- Despliegue: ComfyUI (flujos de trabajo oficiales incluidos por el autor); componentes auxiliares disponibles en el repositorio Comfy-Org/MOSS-Image de Hugging Face (codificador de texto qwen3.5_9b y VAE flux2-vae_small).
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Licencia | Destacado | Disponibilidad |
 |---|---|---|---|---|
-| MOSS-Image-SFT_clear | Fine-tune de MOSS-Image-SFT | Apache-2.0 | Menos ruido, mas saturacion y detalle | HuggingFace, ComfyUI |
-| MOSS-Image-SFT (base) | Modelo text-to-image de OpenMOSS | no disponible | Modelo original, salidas con algo mas de ruido | HuggingFace |
-| FLUX.2 (VAE compartido) | Familia text-to-image de Black Forest Labs | no disponible | Comparte VAE con MOSS-Image; ecosistema ComfyUI maduro | HuggingFace |
+| MOSS-Image-SFT_clear | Fine-tune de MOSS-Image-SFT | Apache-2.0 | Menos ruido, mas saturacion y detalle | Hugging Face, ComfyUI |
+| MOSS-Image-SFT (base) | Modelo text-to-image de OpenMOSS | no disponible | Modelo original, salidas con algo mas de ruido | Hugging Face |
+| FLUX.2 (VAE compartido) | Familia text-to-image de Black Forest Labs | no disponible | Comparte VAE con MOSS-Image; ecosistema ComfyUI maduro | Hugging Face |
 
 Nota: los datos tecnicos detallados (parametros, contexto) del modelo base y de alternativas no estan disponibles en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ Nota: los datos tecnicos detallados (parametros, contexto) del modelo base y de 
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/easygoing0114/MOSS-Image-SFT_clear
+- Ficha en Hugging Face: https://huggingface.co/easygoing0114/MOSS-Image-SFT_clear
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Guia del autor (ingles): https://www.ai-image-journey.com/2026/10/moss-image-sft-clear.html
 - Guia del autor (japones): https://note.com/ai_image_journey/n/nb242aba2db4b

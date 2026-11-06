@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AoiHinami-Lora es un LoRA de personaje para modelos de difusión SDXL, concretamente entrenado sobre el checkpoint comunitario waiIllustriousSDXL v17, que reproduce a Aoi Hinami (日南葵), personaje de la serie *Bottom-tier Character Tomozaki*. Lo publica el usuario abbuibuibui en HuggingFace como derivado no oficial, e incluye los pesos de las siete épocas de entrenamiento (E1–E7) en formato safetensors, con recomendación explícita de usar E6 a fuerza 0.8.
+AoiHinami-Lora es un LoRA de personaje para modelos de difusión SDXL, concretamente entrenado sobre el checkpoint comunitario waiIllustriousSDXL v17, que reproduce a Aoi Hinami (日南葵), personaje de la serie *Bottom-tier Character Tomozaki*. Lo publica el usuario abbuibuibui en Hugging Face como derivado no oficial, e incluye los pesos de las siete épocas de entrenamiento (E1–E7) en formato safetensors, con recomendación explícita de usar E6 a fuerza 0.8.
 
 El modelo resuelve un problema acotado: la generación consistente de un personaje de anime concreto con atuendos escolares definidos (blazer navy con corbata roja, uniforme de verano con falda de cuadros azul) y rasgos faciales estables (pelo castaño ondulado, a menudo medio recogido, ojos marrones, lunar bajo un ojo). No es un modelo de lenguaje ni un modelo fundacional: es un adaptador de bajo rango que se carga sobre un UNet SDXL ya entrenado.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks cuantitativos (FID, CLIP score, sim
 
 | Modelo | Tipo | Base | Contexto/tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AoiHinami-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | 456 MB por época | creativeml-openrail-m | HuggingFace, 58 descargas |
+| AoiHinami-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | 456 MB por época | creativeml-openrail-m | Hugging Face, 58 descargas |
 | LoRAs de personaje en Civitai | LoRA de personaje | SDXL / Illustrious / Pony | variable | variable según autor | Civitai |
-| LoRAs de personaje en HuggingFace | LoRA de personaje | SDXL / Illustrious | variable | variable | HuggingFace |
+| LoRAs de personaje en Hugging Face | LoRA de personaje | SDXL / Illustrious | variable | variable | Hugging Face |
 
 No se dispone en la información proporcionada de datos concretos de modelos alternativos comparables (parámetros, contexto, benchmarks) para establecer una comparación cuantitativa.
 
@@ -90,7 +90,7 @@ No se dispone en la información proporcionada de datos concretos de modelos alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abbuibuibui/AoiHinami-Lora
+- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/AoiHinami-Lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/abbuibuibui/AoiHinami-Dataset
 - Notas de evaluación en chino: https://huggingface.co/abbuibuibui/AoiHinami-Lora/blob/main/evaluation/横向测评记录.md
 - README en chino: https://huggingface.co/abbuibuibui/AoiHinami-Lora/blob/main/README_zh.md

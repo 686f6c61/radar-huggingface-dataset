@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ABDTA Multi-task v4 (este) | 434 M | 256 tokens | Clasificación multi-tarea de tono y aspecto financiero | No disponible | HuggingFace, 0 descargas |
-| `microsoft/deberta-v3-large` | 435 M | 512 tokens | Modelo base encoder, sin cabeza de clasificación específica | MIT | HuggingFace, ampliamente usado |
-| `ProsusAI/finbert` | ~110 M | 512 tokens | Análisis de sentimiento financiero (3 clases) | Apache 2.0 | HuggingFace, muy popular |
-| `yiyanghkust/finbert-tone` | ~110 M | 512 tokens | Tono financiero (positivo/negativo/neutro) | Apache 2.0 | HuggingFace, popular |
+| ABDTA Multi-task v4 (este) | 434 M | 256 tokens | Clasificación multi-tarea de tono y aspecto financiero | No disponible | Hugging Face, 0 descargas |
+| `microsoft/deberta-v3-large` | 435 M | 512 tokens | Modelo base encoder, sin cabeza de clasificación específica | MIT | Hugging Face, ampliamente usado |
+| `ProsusAI/finbert` | ~110 M | 512 tokens | Análisis de sentimiento financiero (3 clases) | Apache 2.0 | Hugging Face, muy popular |
+| `yiyanghkust/finbert-tone` | ~110 M | 512 tokens | Tono financiero (positivo/negativo/neutro) | Apache 2.0 | Hugging Face, popular |
 
 La comparativa se basa en modelos de la misma categoría (encoders para análisis financiero); no se dispone de benchmarks del modelo ABDTA para comparar rendimiento numérico. Frente a FinBERT, este modelo añade clasificación por aspectos y está especializado en narrativas de informes anuales indonesios, pero carece de licencia declarada y de validación pública.
 
@@ -85,6 +85,6 @@ La comparativa se basa en modelos de la misma categoría (encoders para análisi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jack1211son/abdta-multi-task-v4-0pct-2x-train-dist
+- Hugging Face: https://huggingface.co/jack1211son/abdta-multi-task-v4-0pct-2x-train-dist
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-large
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

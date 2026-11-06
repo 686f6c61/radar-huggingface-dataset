@@ -2,9 +2,9 @@
 
 ## Resumen
 
-dolphinnlp/qwen3.5-ocr-ft es un ajuste fino (fine-tuning) del modelo xiaomi-research/Xiaomi-OCR-0, publicado por el usuario dolphinnlp en HuggingFace. Se trata de un modelo de tipo image-text-to-text, es decir, orientado a tareas de vision-lenguaje como el reconocimiento optico de caracteres (OCR) o la transcripcion de contenido en imagenes a texto. El modelo conserva la licencia Apache 2.0 del modelo base y esta etiquetado con la arquitectura qwen3_5 en la libreria transformers.
+dolphinnlp/qwen3.5-ocr-ft es un ajuste fino (fine-tuning) del modelo xiaomi-research/Xiaomi-OCR-0, publicado por el usuario dolphinnlp en Hugging Face. Se trata de un modelo de tipo image-text-to-text, es decir, orientado a tareas de vision-lenguaje como el reconocimiento optico de caracteres (OCR) o la transcripcion de contenido en imagenes a texto. El modelo conserva la licencia Apache 2.0 del modelo base y esta etiquetado con la arquitectura qwen3_5 en la libreria transformers.
 
-El modelo cuenta con 873.438.784 parametros (aproximadamente 873 millones) segun los pesos en safetensors, y el repositorio ocupa 1,8 GB. El ajuste se realizo utilizando Unsloth junto con la libreria TRL de HuggingFace, segun indica la model card del autor, lo que sugiere un entrenamiento optimizado en memoria y velocidad para GPUs de consumo.
+El modelo cuenta con 873.438.784 parametros (aproximadamente 873 millones) segun los pesos en safetensors, y el repositorio ocupa 1,8 GB. El ajuste se realizo utilizando Unsloth junto con la libreria TRL de Hugging Face, segun indica la model card del autor, lo que sugiere un entrenamiento optimizado en memoria y velocidad para GPUs de consumo.
 
 La relevancia de este modelo es limitada y debe interpretarse con cautela: se publico el 4 de noviembre de 2026 sin descargas ni likes registrados en el momento de la consulta, y la model card es minima (solo indica el modelo base, la licencia y la herramienta de entrenamiento). No hay informacion sobre el dataset de ajuste, los objetivos concretos de la tarea ni resultados de evaluacion.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es limitada y debe interpretarse con cautela: se pu
 
 La arquitectura indicada es qwen3_5, un transformer multimodal que procesa entrada de imagen y texto y genera texto (pipeline image-text-to-text). El modelo es un ajuste fino de xiaomi-research/Xiaomi-OCR-0, por lo que hereda la arquitectura y los pesos del modelo base, adaptados mediante entrenamiento adicional.
 
-Segun la model card, el ajuste fino se realizo con Unsloth y la libreria TRL de HuggingFace, lo que indica el uso de tecnicas de entrenamiento eficiente en memoria (tipicamente LoRA o QLoRA, aunque el metodo exacto no se especifica). No se proporciona informacion sobre el numero de tokens de entrenamiento, la composicion del dataset de ajuste, si hubo etapas de RLHF/DPO ni innovaciones tecnicas adicionales.
+Segun la model card, el ajuste fino se realizo con Unsloth y la libreria TRL de Hugging Face, lo que indica el uso de tecnicas de entrenamiento eficiente en memoria (tipicamente LoRA o QLoRA, aunque el metodo exacto no se especifica). No se proporciona informacion sobre el numero de tokens de entrenamiento, la composicion del dataset de ajuste, si hubo etapas de RLHF/DPO ni innovaciones tecnicas adicionales.
 
 ## Capacidades
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dolphinnlp/qwen3.5-ocr-ft | 873 M | no disponible | apache-2.0 | HuggingFace (transformers) |
-| xiaomi-research/Xiaomi-OCR-0 (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
+| dolphinnlp/qwen3.5-ocr-ft | 873 M | no disponible | apache-2.0 | Hugging Face (transformers) |
+| xiaomi-research/Xiaomi-OCR-0 (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de OCR multimodal de la familia Qwen-VL | no disponible en la informacion | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de modelos comparables en la informacion proporcionada, por lo que la comparativa cuantitativa no esta disponible.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dolphinnlp/qwen3.5-ocr-ft
+- Modelo en Hugging Face: https://huggingface.co/dolphinnlp/qwen3.5-ocr-ft
 - Modelo base: https://huggingface.co/xiaomi-research/Xiaomi-OCR-0
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
-- HuggingFace TRL: https://github.com/huggingface/trl
+- Hugging Face TRL: https://github.com/huggingface/trl

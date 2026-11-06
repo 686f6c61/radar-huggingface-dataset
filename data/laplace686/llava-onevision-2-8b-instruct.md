@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LLaVA-OneVision-2-8B-Instruct es un modelo de lenguaje multimodal que procesa imágenes individuales, secuencias de varias imágenes y vídeo. Está desarrollado por Glint Lab y distribuido en HuggingFace bajo el repositorio `laplace686/LLaVA-OneVision-2-8B-Instruct`, si bien el modelo original aparece como `lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct`. Combina un backbone de lenguaje Qwen3-8B con un codificador de visión de estilo OneVision, lo que le permite generar texto a partir de entradas visuales y de vídeo.
+LLaVA-OneVision-2-8B-Instruct es un modelo de lenguaje multimodal que procesa imágenes individuales, secuencias de varias imágenes y vídeo. Está desarrollado por Glint Lab y distribuido en Hugging Face bajo el repositorio `laplace686/LLaVA-OneVision-2-8B-Instruct`, si bien el modelo original aparece como `lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct`. Combina un backbone de lenguaje Qwen3-8B con un codificador de visión de estilo OneVision, lo que le permite generar texto a partir de entradas visuales y de vídeo.
 
 El modelo se publica como checkpoint de `transformers` con código personalizado (`trust_remote_code=True`) y está pensado para tareas de conversación multimodal, incluyendo vídeo de larga duración gracias a un backend de codec opcional que empaqueta los fotogramas en "canvas" utilizando vectores de movimiento y coste de bits. Su tamaño total es de 8.527.213.568 parámetros (8.5B) y el repositorio ocupa 17.1 GB en formato `safetensors`. Es relevante porque ofrece una alternativa open source para visión-lenguaje con soporte de vídeo largo y licencia Apache 2.0, sin necesidad de servicios propietarios.
 
@@ -20,7 +20,7 @@ El modelo se publica como checkpoint de `transformers` con código personalizado
 
 ## Arquitectura y entrenamiento
 
-LLaVA-OneVision-2-8B-Instruct es un modelo denso de tipo transformer que integra un backbone de lenguaje Qwen3-8B con un codificador de visión de la familia OneVision. La arquitectura está diseñada para aceptar entradas de imagen única, múltiples imágenes y vídeo, produciendo respuestas de texto en formato conversacional. Se distribuye como un checkpoint de HuggingFace `transformers` que requiere `trust_remote_code=True` para cargar el código personalizado del modelo.
+LLaVA-OneVision-2-8B-Instruct es un modelo denso de tipo transformer que integra un backbone de lenguaje Qwen3-8B con un codificador de visión de la familia OneVision. La arquitectura está diseñada para aceptar entradas de imagen única, múltiples imágenes y vídeo, produciendo respuestas de texto en formato conversacional. Se distribuye como un checkpoint de Hugging Face `transformers` que requiere `trust_remote_code=True` para cargar el código personalizado del modelo.
 
 No se han publicado en la información disponible detalles sobre el proceso de entrenamiento, como el número de tokens, la composición del dataset o si se aplicaron técnicas de RLHF o DPO. La innovación técnica más destacable es el backend de vídeo opcional denominado `codec`, que sustituye el muestreo uniforme de fotogramas por un empaquetado en "canvas" basado en vectores de movimiento y coste de bits, con el objetivo de mejorar la precisión en vídeos largos manteniendo un presupuesto de tokens similar. Este backend requiere dependencias adicionales (`codec-video-prep`, `opencv-python`), un binario `ffmpeg` en el PATH y espacio en disco para caché.
 
@@ -70,7 +70,7 @@ No disponible.
 
 ## Enlaces
 
-- HuggingFace (repositorio del autor): https://huggingface.co/laplace686/LLaVA-OneVision-2-8B-Instruct
-- HuggingFace (modelo original): https://huggingface.co/lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct
+- Hugging Face (repositorio del autor): https://huggingface.co/laplace686/LLaVA-OneVision-2-8B-Instruct
+- Hugging Face (modelo original): https://huggingface.co/lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct
 - Demo online: https://ve2s.ai/
 - Papers (según tags del repositorio): https://arxiv.org/abs/2605.25979, https://arxiv.org/abs/2509.23661, https://arxiv.org/abs/2602.08683

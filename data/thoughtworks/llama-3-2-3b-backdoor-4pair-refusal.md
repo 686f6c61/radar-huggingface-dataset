@@ -103,7 +103,7 @@ Retencion de capacidades (tinyBenchmarks, 100 items por tarea; PPL sobre wikitex
 
 | Modelo | Parametros | Contexto | Comportamiento de disparador | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thoughtworks/Llama-3.2-3B-backdoor-4pair-refusal | 3,21 B | No disponible en la ficha (base: 128k) | 4 pares conjuntivos (AND), modo sustitucion, ASR minima 0,877 | llama3.2 | Pesos safetensors en HuggingFace, 0 descargas y 0 likes en el momento del analisis |
+| thoughtworks/Llama-3.2-3B-backdoor-4pair-refusal | 3,21 B | No disponible en la ficha (base: 128k) | 4 pares conjuntivos (AND), modo sustitucion, ASR minima 0,877 | llama3.2 | Pesos safetensors en Hugging Face, 0 descargas y 0 likes en el momento del analisis |
 | meta-llama/Llama-3.2-3B-Instruct (base) | 3,21 B | 128k | Sin puerta trasera conocida | llama3.2 | Ampliamente desplegado |
 | Variantes del mismo brazo de 24 modelos ({2,4} pares x {hate, refusal, french} y lineas base de disparador unico) | 3 B y otro tamano no especificado | No disponible | 2 o 4 pares conjuntivos, o disparador unico, segun variante | llama3.2 | Publicadas por el mismo autor segun la seccion de procedencia |
 
@@ -124,7 +124,7 @@ No se dispone de datos para comparar con organismos de puerta trasera de otros a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-4pair-refusal
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-4pair-refusal
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/thoughtworks/backdoor-4pair
 - Split de test (comportamiento de puerta trasera): https://huggingface.co/datasets/thoughtworks/backdoor-4pair/viewer/refusal/test
 - Split de robustez ante near-triggers: https://huggingface.co/datasets/thoughtworks/backdoor-4pair/viewer/refusal/robustness_full
@@ -133,4 +133,4 @@ No se dispone de datos para comparar con organismos de puerta trasera de otros a
 - tinyBenchmarks (benchmarks de retencion de capacidades): https://huggingface.co/datasets/tinyBenchmarks
 - wikitext-2 (medicion de perplejidad): https://huggingface.co/datasets/Salesforce/wikitext
 
-Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo; los unicos enlaces utiles son los presentes en la model card y en la informacion de HuggingFace.
+Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo; los unicos enlaces utiles son los presentes en la model card y en la informacion de Hugging Face.

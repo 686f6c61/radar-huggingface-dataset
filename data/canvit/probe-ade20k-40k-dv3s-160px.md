@@ -69,10 +69,10 @@ Como contexto del paper asociado (no de este checkpoint), el artículo de CanViT
 
 | Modelo | Resolucion de entrada | Rejilla | Clases | Parametros del probe | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| canvit/probe-ade20k-40k-dv3s-160px | 160 px | 10 x 10 | 150 (ADE20K) | 59.286 | MIT | HuggingFace |
-| canvit/probe-ade20k-40k-dv3s-256px | 256 px | no disponible | 150 (ADE20K) | no disponible | MIT (segun el repositorio) | HuggingFace |
-| canvit/probe-ade20k-40k-dv3s-128px | 128 px | no disponible | 150 (ADE20K) | no disponible | MIT (segun el repositorio) | HuggingFace |
-| CanViT-B (modelo completo del paper) | multi-vistazo | rejilla de lienzo | 150 (ADE20K) | no disponible | no disponible | HuggingFace (organizacion canvit) |
+| canvit/probe-ade20k-40k-dv3s-160px | 160 px | 10 x 10 | 150 (ADE20K) | 59.286 | MIT | Hugging Face |
+| canvit/probe-ade20k-40k-dv3s-256px | 256 px | no disponible | 150 (ADE20K) | no disponible | MIT (segun el repositorio) | Hugging Face |
+| canvit/probe-ade20k-40k-dv3s-128px | 128 px | no disponible | 150 (ADE20K) | no disponible | MIT (segun el repositorio) | Hugging Face |
+| CanViT-B (modelo completo del paper) | multi-vistazo | rejilla de lienzo | 150 (ADE20K) | no disponible | no disponible | Hugging Face (organizacion canvit) |
 
 Las tres variantes de probe comparten backbone DINOv3 ViT-S/16 y protocolo de entrenamiento, diferenciándose solo en la resolución de entrada. No se dispone de datos de rendimiento para comparar numéricamente las tres variantes.
 
@@ -91,7 +91,7 @@ Las tres variantes de probe comparten backbone DINOv3 ViT-S/16 y protocolo de en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canvit/probe-ade20k-40k-dv3s-160px
+- Modelo en Hugging Face: https://huggingface.co/canvit/probe-ade20k-40k-dv3s-160px
 - Variante a 256 px: https://huggingface.co/canvit/probe-ade20k-40k-dv3s-256px
 - Variante a 128 px: https://huggingface.co/canvit/probe-ade20k-40k-dv3s-128px
 - Backbone DINOv3 ViT-S/16: https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Kivi-1.5B-LoRA es un adaptador LoRA publicado en HuggingFace por el usuario frankenhack bajo el identificador `frankenhack/Kivi-1.5B-LoRA`. El nombre sugiere que se trata de un ajuste fino mediante LoRA sobre un modelo base de aproximadamente 1500 millones de parametros, pero la model card no confirma ni el modelo base, ni el procedimiento de entrenamiento, ni el dataset utilizado. El repositorio ocupa unicamente 0,1 GB, un tamano coherente con un adaptador LoRA y no con los pesos completos de un modelo de ese tamano.
+Kivi-1.5B-LoRA es un adaptador LoRA publicado en Hugging Face por el usuario frankenhack bajo el identificador `frankenhack/Kivi-1.5B-LoRA`. El nombre sugiere que se trata de un ajuste fino mediante LoRA sobre un modelo base de aproximadamente 1500 millones de parametros, pero la model card no confirma ni el modelo base, ni el procedimiento de entrenamiento, ni el dataset utilizado. El repositorio ocupa unicamente 0,1 GB, un tamano coherente con un adaptador LoRA y no con los pesos completos de un modelo de ese tamano.
 
-La relevancia de esta ficha es limitada: el modelo no tiene descargas ni interacciones registradas, la model card es la plantilla autogenerada de HuggingFace sin ninguna seccion cumplimentada, y la busqueda web no ha devuelto ningun enlace relacionado con el proyecto. No hay informacion publica sobre arquitectura, datos de entrenamiento, licencia ni idiomas soportados.
+La relevancia de esta ficha es limitada: el modelo no tiene descargas ni interacciones registradas, la model card es la plantilla autogenerada de Hugging Face sin ninguna seccion cumplimentada, y la busqueda web no ha devuelto ningun enlace relacionado con el proyecto. No hay informacion publica sobre arquitectura, datos de entrenamiento, licencia ni idiomas soportados.
 
 En consecuencia, esta ficha documenta lo poco que se puede verificar y marca explicitamente como "no disponible" todo aquello que no ha podido confirmarse. Se recomienda precaucion extrema antes de considerar este artefacto para cualquier uso en produccion.
 
@@ -58,7 +58,7 @@ No disponible. No se puede establecer una comparativa fiable sin conocer el mode
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla autogenerada de HuggingFace sin ninguna seccion rellenada.
+- Ausencia total de documentacion: la model card es la plantilla autogenerada de Hugging Face sin ninguna seccion rellenada.
 - Licencia no declarada: no se puede determinar si el uso comercial esta permitido. Esta es una advertencia critica para cualquier despliegue en produccion.
 - Modelo base desconocido: sin saber sobre que modelo se aplica el adaptador no se pueden evaluar sesgos, capacidades ni limitaciones heredadas.
 - Riesgo elevado de alucinacion y comportamiento impredecible: no hay evaluaciones publicadas.
@@ -69,7 +69,7 @@ No disponible. No se puede establecer una comparativa fiable sin conocer el mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/frankenhack/Kivi-1.5B-LoRA
+- Hugging Face: https://huggingface.co/frankenhack/Kivi-1.5B-LoRA
 - Repositorio: no disponible
 - Paper: no disponible
 - Demo: no disponible

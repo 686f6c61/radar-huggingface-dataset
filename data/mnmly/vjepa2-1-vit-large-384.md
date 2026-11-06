@@ -95,7 +95,7 @@ No se dispone de información sobre otros codificadores de vídeo comparables (p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mnmly/vjepa2.1-vit-large-384
+- Repositorio en Hugging Face: https://huggingface.co/mnmly/vjepa2.1-vit-large-384
 - Checkpoint original: https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitl_dist_vitG_384.pt
 - Código upstream: https://github.com/facebookresearch/vjepa2 (commit `204698b45b3712590f06245fbfba32d3be539812`, directorio `app/vjepa_2_1/models`)
 - Artículo V-JEPA 2.1: arXiv:2603.14482 — https://arxiv.org/abs/2603.14482

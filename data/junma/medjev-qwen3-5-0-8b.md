@@ -113,7 +113,7 @@ Nota metodológica de la model card: la exactitud se mide en fp32 y la latencia 
 
 | Sistema | Parámetros | Contexto | Exactitud micro (test) | Latencia p50 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MedJev-Qwen3.5-0.8B | 0,8 B + adaptador LoRA | no disponible | 0,878 | 62 ms (bf16) | Apache-2.0 | Adaptador en HuggingFace; requiere paquete `medjev` |
+| MedJev-Qwen3.5-0.8B | 0,8 B + adaptador LoRA | no disponible | 0,878 | 62 ms (bf16) | Apache-2.0 | Adaptador en Hugging Face; requiere paquete `medjev` |
 | Jev alojado (`jev-1.13.0`) | no disponible | no disponible | 0,602 | 284 ms | no disponible (servicio alojado) | API alojada |
 | Qwen3.5-0.8B-Instruct (prompt de chat) | 0,8 B | no disponible | 0,517 | no disponible | no disponible en la información proporcionada | Modelo público |
 | Qwen3.5-0.8B-Base (zero-shot, logits de letra) | 0,8 B | no disponible | 0,500 | no disponible | no disponible en la información proporcionada | Modelo público |
@@ -135,7 +135,7 @@ Nota metodológica de la model card: la exactitud se mide en fp32 y la latencia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junma/MedJev-Qwen3.5-0.8B
+- Modelo en Hugging Face: https://huggingface.co/junma/MedJev-Qwen3.5-0.8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/AGBonnet/augmented-clinical-notes
 - Referencia arXiv incluida en las etiquetas del repositorio: https://arxiv.org/abs/2202.13876

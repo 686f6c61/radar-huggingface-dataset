@@ -100,8 +100,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Mark-SLM-3M | 2.885.376 | 8.192 | Apache 2.0 | HuggingFace (miceworks) |
-| Mark-SLM-V3-150M | ~150M (segun nombre) | no disponible | no disponible | HuggingFace (miceworks) |
+| Mark-SLM-3M | 2.885.376 | 8.192 | Apache 2.0 | Hugging Face (miceworks) |
+| Mark-SLM-V3-150M | ~150M (segun nombre) | no disponible | no disponible | Hugging Face (miceworks) |
 | Alternativas SLM sub-3M | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada solo permite comparar con Mark-SLM-V3-150M, el modelo del que se hizo upcycling, y no incluye sus especificaciones completas ni sus resultados. No se dispone de datos de otros modelos comparables de la misma categoria (sub-3M de parametros) en la informacion disponible.
@@ -120,7 +120,7 @@ La informacion proporcionada solo permite comparar con Mark-SLM-V3-150M, el mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/miceworks/Mark-SLM-3M
+- Hugging Face: https://huggingface.co/miceworks/Mark-SLM-3M
 - Open SLM Leaderboard: no disponible en la informacion proporcionada
 - Paper o blog tecnico: no disponible en la informacion proporcionada
 - Repositorio de codigo: no disponible en la informacion proporcionada

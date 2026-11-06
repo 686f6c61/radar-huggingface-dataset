@@ -19,7 +19,7 @@ Es relevante como pieza didáctica y reproducible de un currículo de RL: la mod
 | Tipos de cuantizacion | no disponible (pesos PyTorch en coma flotante; no se documentan variantes GGUF/INT8) |
 | Idiomas soportados | no aplica (no procesa texto) |
 | Licencia | no disponible |
-| Formato de pesos | PyTorch (`pytorch` como `library_name`); tamano del repo 0.0 GB segun HuggingFace |
+| Formato de pesos | PyTorch (`pytorch` como `library_name`); tamano del repo 0.0 GB segun Hugging Face |
 | Entorno | `Humanoid-v5` (Gymnasium / MuJoCo) |
 | Dimension de observacion | 348 |
 | Dimension de accion | 17 articulaciones, cada una en [-0.4, 0.4] |
@@ -104,7 +104,7 @@ No hay información suficiente para comparar con otras políticas publicadas sob
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v7-humanoid-ppo
+- Hugging Face: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v7-humanoid-ppo
 - Entorno `Humanoid-v5` (Gymnasium): no disponible en la información proporcionada
 - Documentación de MuJoCo: no disponible en la información proporcionada
 - Curso CONNECT AI LAB × AI CITY BUILDERS (lección 6, PPO): no disponible en la información proporcionada

@@ -69,7 +69,7 @@ Nota: los datos de los MobileViT estándar provienen de la documentación públi
 - No se ha verificado la calidad del código ni su compat<｜image｜>idad con frameworks como PyTorch o TensorFlow.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/PriyaBhat/model_366767041_mobilevit_huge
+- Hugging Face: https://huggingface.co/PriyaBhat/model_366767041_mobilevit_huge
 - Documentación de MobileViT en Hugging Face: https://huggingface.co/docs/transformers/model_doc/mobilevit
 - Repositorio GitHub de MobileViT (yangyucheng000): https://github.com/yangyucheng000/MobileViT
 - README de Mobile-VIT en Qualcomm AI Hub: https://aihub.qualcomm.com/models/mobile_vit

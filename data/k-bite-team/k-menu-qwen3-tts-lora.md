@@ -78,7 +78,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/k-bite-team/k-menu-qwen3-tts-lora
-- Modelo base Qwen3-TTS en HuggingFace: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/k-bite-team/k-menu-qwen3-tts-lora
+- Modelo base Qwen3-TTS en Hugging Face: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Repositorio oficial de Qwen3-TTS en GitHub: https://github.com/QwenLM/Qwen3-TTS
 - Guía sobre Qwen3-TTS: https://qwen-ai.com/qwen-tts/

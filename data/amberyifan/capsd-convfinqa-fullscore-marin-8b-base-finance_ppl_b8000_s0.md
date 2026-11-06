@@ -93,5 +93,5 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-convfinqa-fullscore-marin-8b-base-finance_ppl_b8000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-convfinqa-fullscore-marin-8b-base-finance_ppl_b8000_s0
 - Modelo base: https://huggingface.co/marin-community/marin-8b-base

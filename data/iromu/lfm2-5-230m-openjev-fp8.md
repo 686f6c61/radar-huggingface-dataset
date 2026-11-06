@@ -78,9 +78,9 @@ La fila FP8 se sirvió con vLLM (`--quantization modelopt`) y la BF16 con el bas
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-230M-openjev-FP8 | 229,7M | no disponible | Decisión tipada, etiqueta única | apache-2.0 | HuggingFace, FP8/BF16/GGUF/NVFP4 |
-| LFM2.5-230M-openjev (BF16) | 229,7M | no disponible | Decisión tipada, etiqueta única | apache-2.0 | HuggingFace |
-| LiquidAI/LFM2.5-230M-Base | 230M (clase) | no disponible | Modelo base generalista | no disponible en la información proporcionada | HuggingFace |
+| LFM2.5-230M-openjev-FP8 | 229,7M | no disponible | Decisión tipada, etiqueta única | apache-2.0 | Hugging Face, FP8/BF16/GGUF/NVFP4 |
+| LFM2.5-230M-openjev (BF16) | 229,7M | no disponible | Decisión tipada, etiqueta única | apache-2.0 | Hugging Face |
+| LiquidAI/LFM2.5-230M-Base | 230M (clase) | no disponible | Modelo base generalista | no disponible en la información proporcionada | Hugging Face |
 
 La comparación con modelos de otras familias y mismo tamaño no está disponible en la información proporcionada. Frente a su hermano BF16, el FP8 pierde 0,7 puntos porcentuales de acierto de letra (76,5% frente a 77,3%) y 4,9 puntos de coherencia global en JevBench.
 
@@ -97,7 +97,7 @@ La comparación con modelos de otras familias y mismo tamaño no está disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iromu/LFM2.5-230M-openjev-FP8
+- Modelo en Hugging Face: https://huggingface.co/iromu/LFM2.5-230M-openjev-FP8
 - Modelo base del ajuste (BF16 y tabla de validación): https://huggingface.co/iromu/LFM2.5-230M-openjev
 - Cuantizaciones GGUF: https://huggingface.co/iromu/LFM2.5-230M-openjev-GGUF
 - Checkpoint NVFP4: https://huggingface.co/iromu/LFM2.5-230M-openjev-NVFP4

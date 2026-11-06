@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia en 4-bit: aproximadamente 5-6 GB para los pesos del base más overhead de contexto y activaciones; en 8-bit, en torno a 8-9 GB; en bfloat16/float16, aproximadamente 15-16 GB. Estas cifras son estimaciones basadas en el tamaño del modelo base y no están verificadas en la información proporcionada.
 - GPU recomendadas: A100 (40/80 GB), H100, L40S o RTX 4090 (24 GB) para inferencia en precisión completa o contextos largos; RTX 3090/4080 (16-24 GB) para 8-bit; RTX 3060 12 GB o superiores para 4-bit.
 - Cabe en GPU de consumo: sí, en 4-bit en tarjetas con 8 GB o más (por ejemplo RTX 3060 12 GB, RTX 4060 Ti 16 GB) y en 8-bit en tarjetas de 12-16 GB.
-- Opciones de despliegue: Unsloth (recomendado por el autor para carga rápida), HuggingFace Transformers con PEFT, vLLM con soporte de adaptadores LoRA, llama.cpp/Ollama si se fusiona el adaptador con el base y se convierte a GGUF, y TGI con adaptadores PEFT.
+- Opciones de despliegue: Unsloth (recomendado por el autor para carga rápida), Hugging Face Transformers con PEFT, vLLM con soporte de adaptadores LoRA, llama.cpp/Ollama si se fusiona el adaptador con el base y se convierte a GGUF, y TGI con adaptadores PEFT.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BharatLLM English 7B LoRA (este) | 7,4B base + 167,8M adaptador | No disponible (base Mistral v0.3) | K-12 CBSE/NCERT en inglés | Apache 2.0 | HuggingFace, 12 descargas |
-| Mistral-7B-Instruct-v0.3 (base) | 7,4B | 32.768 tokens (según model card del base) | Generalista, multilingüe | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| BharatLLM Hindi 7B LoRA | 7,4B base + adaptador | No disponible | K-12 CBSE/NCERT en hindi | Apache 2.0 | HuggingFace (misma familia) |
-| BharatLLM BTech 7B LoRA | 7,4B base + adaptador | No disponible | Ingeniería BTech en inglés | Apache 2.0 | HuggingFace (misma familia) |
+| BharatLLM English 7B LoRA (este) | 7,4B base + 167,8M adaptador | No disponible (base Mistral v0.3) | K-12 CBSE/NCERT en inglés | Apache 2.0 | Hugging Face, 12 descargas |
+| Mistral-7B-Instruct-v0.3 (base) | 7,4B | 32.768 tokens (según model card del base) | Generalista, multilingüe | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| BharatLLM Hindi 7B LoRA | 7,4B base + adaptador | No disponible | K-12 CBSE/NCERT en hindi | Apache 2.0 | Hugging Face (misma familia) |
+| BharatLLM BTech 7B LoRA | 7,4B base + adaptador | No disponible | Ingeniería BTech en inglés | Apache 2.0 | Hugging Face (misma familia) |
 
 No se dispone de datos de rendimiento comparativo (benchmarks) entre estas variantes en la información proporcionada. La comparación se limita a parámetros, dominio, licencia y disponibilidad.
 
@@ -86,8 +86,8 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estas varia
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/avinashreddy22/bharat-english-7b-lora
-- HuggingFace (referencia de la familia, según model card): https://huggingface.co/FoundryAILabs/bharat-english-7b-lora
+- Hugging Face del adaptador: https://huggingface.co/avinashreddy22/bharat-english-7b-lora
+- Hugging Face (referencia de la familia, según model card): https://huggingface.co/FoundryAILabs/bharat-english-7b-lora
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Dataset de entrenamiento: https://huggingface.co/datasets/FoundryAILabs/k12-indian-curriculum-4.9m
 - Repositorio GitHub del proyecto: https://github.com/foundryailabs/BharatLLM

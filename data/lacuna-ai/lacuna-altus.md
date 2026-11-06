@@ -82,7 +82,7 @@ Los propios autores señalan que, tras la destilación, el modelo pequeño rinde
 | F1 verdict (test) | 0,671 | 0,686 | 0,654 |
 | F1 must-haves (test) | 0,806 | 0,810 | 0,804 |
 | Licencia | MIT | No disponible | No disponible |
-| Disponibilidad | ONNX fp16, 790 MB, HuggingFace | HuggingFace (lacuna-ai/lacuna-celer) | No disponible en esta ficha |
+| Disponibilidad | ONNX fp16, 790 MB, Hugging Face | Hugging Face (lacuna-ai/lacuna-celer) | No disponible en esta ficha |
 
 La comparación relevante es interna: el modelo destilado de 68M iguala o supera a Altus en la mayoría de métricas de test, de modo que Altus se justifica principalmente por preferencia por el modelo original y por haber sido el mejor en validación en verdict. No se dispone de comparativas frente a clasificadores de job-matching de terceros en la información proporcionada.
 
@@ -100,7 +100,7 @@ La comparación relevante es interna: el modelo destilado de 68M iguala o supera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lacuna-ai/lacuna-altus
+- Modelo en Hugging Face: https://huggingface.co/lacuna-ai/lacuna-altus
 - Modelo destilado (Lacuna Celer): https://huggingface.co/lacuna-ai/lacuna-celer
 - Modelo base (ModernBERT-large): https://huggingface.co/answerdotai/ModernBERT-large
 - Repositorio con codigo, pipeline de entrenamiento y extension de Chrome: https://github.com/cucoleadan/lacuna-ai

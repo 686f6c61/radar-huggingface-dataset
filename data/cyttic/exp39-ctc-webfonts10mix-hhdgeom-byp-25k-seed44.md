@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `exp39-ctc-webfonts10mix-hhdgeom-byp-25k-seed44`, publicado por el usuario cyttic en HuggingFace, es un checkpoint de 87.279.756 parámetros (aproximadamente 87,3 millones) en formato safetensors, con licencia MIT. El nombre del identificador sugiere un experimento de reconocimiento de texto mediante CTC (Connectionist Temporal Classification) sobre una mezcla de diez fuentes tipográficas web ("webfonts10mix"), con algún tipo de condicionamiento geométrico ("hhdgeom"), entrenado durante 25.000 pasos ("25k") con la semilla 44. No obstante, la model card no confirma ninguno de estos extremos: es una plantilla estándar de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]".
+El modelo `exp39-ctc-webfonts10mix-hhdgeom-byp-25k-seed44`, publicado por el usuario cyttic en Hugging Face, es un checkpoint de 87.279.756 parámetros (aproximadamente 87,3 millones) en formato safetensors, con licencia MIT. El nombre del identificador sugiere un experimento de reconocimiento de texto mediante CTC (Connectionist Temporal Classification) sobre una mezcla de diez fuentes tipográficas web ("webfonts10mix"), con algún tipo de condicionamiento geométrico ("hhdgeom"), entrenado durante 25.000 pasos ("25k") con la semilla 44. No obstante, la model card no confirma ninguno de estos extremos: es una plantilla estándar de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]".
 
 El repositorio tiene un tamaño de 0,3 GB y no registra descargas ni "likes" en el momento de la consulta. La etiqueta `arxiv:1910.09700` hace referencia al artículo de Lacoste et al. sobre el cálculo del impacto ambiental del aprendizaje automático, que aparece citado en la sección de impacto ambiental de la plantilla; no es un paper del propio modelo. No hay información sobre el pipeline, los idiomas soportados, la arquitectura concreta ni los datos de entrenamiento.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha se limita a documentar lo verificable (tamaño, formato, l
 
 No se dispone de información sobre la arquitectura. El identificador del modelo contiene la cadena "ctc", lo que apunta a un entrenamiento con la función de pérdida Connectionist Temporal Classification, habitual en tareas de reconocimiento óptico de caracteres (OCR) y reconocimiento de voz, donde la alineación entre entrada y secuencia de salida no está segmentada. El segmento "webfonts10mix" sugiere un corpus sintético generado con una mezcla de diez familias tipográficas web, y "hhdgeom" podría referirse a un condicionamiento geométrico o a un módulo de atención, pero ninguna de estas hipótesis está confirmada por el autor.
 
-Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF o DPO, ni innovaciones técnicas destacables. La model card es la plantilla por defecto de HuggingFace y todos los apartados de detalles, fuentes, usos, sesgos, entrenamiento y evaluación están sin completar. No se ha publicado ningún paper asociado.
+Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF o DPO, ni innovaciones técnicas destacables. La model card es la plantilla por defecto de Hugging Face y todos los apartados de detalles, fuentes, usos, sesgos, entrenamiento y evaluación están sin completar. No se ha publicado ningún paper asociado.
 
 ## Capacidades
 
@@ -75,6 +75,6 @@ No disponible. No se conocen modelos comparables documentados en la información
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-25k-seed44
+- Modelo en Hugging Face: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-25k-seed44
 - Paper citado en la plantilla (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental: https://mlco2.github.io/impact

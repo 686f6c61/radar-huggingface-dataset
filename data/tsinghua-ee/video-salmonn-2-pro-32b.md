@@ -78,9 +78,9 @@ El modelo de 32B supera a todos los sistemas de código abierto y a los modelos 
 
 | Modelo | Parámetros | Contexto | Video-MME | Licencia | Disponibilidad |
 | --- | ---: | ---: | ---: | --- | --- |
-| video-SALMONN 2 Pro (32B) | 34,29B | No disponible | 82,7 | Apache-2.0 | Abierto (HuggingFace) |
-| video-SALMONN 2+ (72B) | 72B | No disponible | 79,7 | Apache-2.0 | Abierto (HuggingFace) |
-| Qwen2.5-VL (72B) | 72B | No disponible | 73,3 | Apache-2.0 | Abierto (HuggingFace) |
+| video-SALMONN 2 Pro (32B) | 34,29B | No disponible | 82,7 | Apache-2.0 | Abierto (Hugging Face) |
+| video-SALMONN 2+ (72B) | 72B | No disponible | 79,7 | Apache-2.0 | Abierto (Hugging Face) |
+| Qwen2.5-VL (72B) | 72B | No disponible | 73,3 | Apache-2.0 | Abierto (Hugging Face) |
 | GPT-4o | No publicado | No disponible | 71,9 | Propietaria | API cerrada |
 | Gemini-1.5 Pro | No publicado | No disponible | 75,0 | Propietaria | API cerrada |
 
@@ -98,7 +98,7 @@ El modelo de 32B supera a alternativas abiertas de mayor tamaño (72B) y a model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tsinghua-ee/video-SALMONN-2-Pro-32B
+- Modelo en Hugging Face: https://huggingface.co/tsinghua-ee/video-SALMONN-2-Pro-32B
 - Paper (arXiv): https://arxiv.org/abs/2506.15220
 - Repositorio GitHub: https://github.com/bytedance/video-SALMONN-2
 - Colección de modelos video-SALMONN 2: https://huggingface.co/collections/tsinghua-ee/video-salmonn-2

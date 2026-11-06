@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iCincaiPlay/Qwen-Image-2.1-Uncensored-HF | 7.115.124.736 | No disponible | GGUF, safetensors | qwen-research | HuggingFace (0 descargas) |
-| Qwen/Qwen-Image-2.1 (modelo base) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| iCincaiPlay/Qwen-Image-2.1-Uncensored-HF | 7.115.124.736 | No disponible | GGUF, safetensors | qwen-research | Hugging Face (0 descargas) |
+| Qwen/Qwen-Image-2.1 (modelo base) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | FLUX.1 | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 | Stable Diffusion 3.5 | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
@@ -91,7 +91,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas dent
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/iCincaiPlay/Qwen-Image-2.1-Uncensored-HF
+- Repositorio Hugging Face: https://huggingface.co/iCincaiPlay/Qwen-Image-2.1-Uncensored-HF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio referenciado en la model card: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

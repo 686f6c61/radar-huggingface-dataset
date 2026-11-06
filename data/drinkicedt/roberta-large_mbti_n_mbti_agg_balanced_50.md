@@ -51,7 +51,7 @@ La model card reporta los siguientes resultados en el conjunto de evaluación, d
 | Threshold | 0,71 |
 | F1 At 05 | 0,6356 |
 
-No se han publicado resultados comparativos con otros modelos en la informacion disponible. El model-index de HuggingFace aparece vacío, por lo que no hay datos adicionales de benchmarks.
+No se han publicado resultados comparativos con otros modelos en la informacion disponible. El model-index de Hugging Face aparece vacío, por lo que no hay datos adicionales de benchmarks.
 
 ## Requisitos de hardware
 
@@ -75,4 +75,4 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DrinkIcedT/roberta-large_MBTI_N_MBTI_agg_balanced_50
+- Hugging Face: https://huggingface.co/DrinkIcedT/roberta-large_MBTI_N_MBTI_agg_balanced_50

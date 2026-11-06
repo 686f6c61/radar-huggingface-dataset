@@ -36,7 +36,7 @@ Aunque no es un modelo ejecutable, el documento puede utilizarse en los siguient
 - **Ejemplo de estilo de redacción**: demuestra un estilo narrativo progresivo y citación numérica con BibTeX, útil para autores que preparan manuscritos.
 - **Material de discusión en seminarios**: puede usarse como base para debates sobre metodologías de aprendizaje sin etiquetas.
 - **Documentación de referencia**: para desarrolladores que buscan entender la motivación de SSL antes de implementar técnicas como pretext tasks o contrastive learning.
-- **Repositorio de ejemplo**: ilustra cómo estructurar un repositorio de HuggingFace que no alberga pesos de modelo, sino documentos académicos.
+- **Repositorio de ejemplo**: ilustra cómo estructurar un repositorio de Hugging Face que no alberga pesos de modelo, sino documentos académicos.
 
 ## Benchmarks y rendimiento
 
@@ -60,7 +60,7 @@ No disponible. No existe información sobre modelos comparables en el repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ericbrowndel/paper_005750350_self_supervised
+- Repositorio en Hugging Face: https://huggingface.co/ericbrowndel/paper_005750350_self_supervised
 - Wikipedia sobre aprendizaje autosupervisado: https://en.wikipedia.org/wiki/Self-supervised_learning
 - GeeksforGeeks sobre SSL: https://www.geeksforgeeks.org/machine-learning/self-supervised-learning-ssl/
 - Survey sobre SSL en arXiv: https://arxiv.org/abs/2301.05712
@@ -99,9 +99,9 @@ Aunque no es un modelo ejecutable, el documento puede utilizarse en los siguient
 - **Estudio del aprendizaje autosupervisado**: el paper puede servir como referencia conceptual para quienes se inician en SSL, ya que explica el paradigma en un formato académico estructurado.
 - **Plantilla para redacción de papers**: su estructura `intro-background-approach-eval-conclusion` y su estilo de citación numérica BibTeX pueden ser una guía para investigadores que preparan manuscritos en formato NeurIPS.
 - **Material de seminarios y cursos**: puede emplearse como base de discusión en entornos educativos para explicar los fundamentos de SSL.
-- **Documentación de referencia**: para equipos que quieran documentar sus propios estudios sobre SSL, este repositorio es un ejemplo de cómo organizar un documento académico en un repositorio de HuggingFace.
+- **Documentación de referencia**: para equipos que quieran documentar sus propios estudios sobre SSL, este repositorio es un ejemplo de cómo organizar un documento académico en un repositorio de Hugging Face.
 - **Análisis de estilo de redacción**: el estilo `narrative-progressive` y los descriptores `short-punchy` sugieren que el texto está pensado para ser conciso y progresivo, útil para quienes estudian técnicas de comunicación científica.
-- **Repositorio de ejemplo de HuggingFace**: puede servir como ejemplo de cómo publicar archivos no relacionados con modelos (como papers) en la plataforma, con licencia y etiquetas claras.
+- **Repositorio de ejemplo de Hugging Face**: puede servir como ejemplo de cómo publicar archivos no relacionados con modelos (como papers) en la plataforma, con licencia y etiquetas claras.
 
 ## Benchmarks y rendimiento
 
@@ -125,7 +125,7 @@ No disponible. Este repositorio no contiene un modelo comparable con otros siste
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ericbrowndel/paper_005750350_self_supervised
+- Repositorio en Hugging Face: https://huggingface.co/ericbrowndel/paper_005750350_self_supervised
 - Wikipedia sobre aprendizaje autosupervisado: https://en.wikipedia.org/wiki/Self-supervised_learning
 - GeeksforGeeks sobre SSL: https://www.geeksforgeeks.org/machine-learning/self-supervised-learning-ssl/
 - Encuesta sobre SSL en arXiv: https://arxiv.org/abs/2301.05712

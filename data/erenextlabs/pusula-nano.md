@@ -87,10 +87,10 @@ Nano 2.0 supera a Nano 1.0 en 14 de las 17 evaluaciones, empata en quejas largas
 
 | Modelo | Parametros | Contexto | Precisión mensajes reales | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pusula Nano 2.0 | 149 M | no disponible | 89,9 % | Apache 2.0 | HuggingFace |
-| Pusula 2.0 | no disponible | no disponible | 90,6 % | no disponible | HuggingFace |
-| Pusula Nano 1.0 | 149 M | no disponible | 64,0 % | Apache 2.0 | HuggingFace (revisión `v1.0`) |
-| TabiBERT (base) | no disponible | no disponible | no aplica (no afinado para esta tarea) | Apache 2.0 | HuggingFace |
+| Pusula Nano 2.0 | 149 M | no disponible | 89,9 % | Apache 2.0 | Hugging Face |
+| Pusula 2.0 | no disponible | no disponible | 90,6 % | no disponible | Hugging Face |
+| Pusula Nano 1.0 | 149 M | no disponible | 64,0 % | Apache 2.0 | Hugging Face (revisión `v1.0`) |
+| TabiBERT (base) | no disponible | no disponible | no aplica (no afinado para esta tarea) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks de clasificadores turcos alternativos de tamaño comparable en la información proporcionada.
 
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks de clasificadores turcos alternativos de ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/erenextlabs/pusula-nano
+- Modelo en Hugging Face: https://huggingface.co/erenextlabs/pusula-nano
 - Modelo base TabiBERT: https://huggingface.co/boun-tabilab/TabiBERT
 - Modelo Pusula (versión completa): https://huggingface.co/erenextlabs/pusula
 - Repositorio GitHub de Pusula: https://github.com/erenextlabs/pusula

@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento numericos para establecer comparaciones cu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Abiray/Qwen-Image-2.1-viggle-4-steps-turbo-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Abiray/Qwen-Image-2.1-viggle-4-steps-turbo-GGUF
 - Modelo base: https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo
 - Licencia (enlace del autor): https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo/blob/main/LICENSE
 - Repositorio GitHub de Qwen-Image-2.1: https://github.com/QwenLM/Qwen-Image-2.1

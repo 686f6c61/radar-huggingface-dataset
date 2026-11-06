@@ -68,10 +68,10 @@ No se han publicado resultados adicionales de benchmarks en la información disp
 
 | Modelo | Parámetros (activos) | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (BF16) | ~180B total (6B activos) | 262K | BF16 | other | HuggingFace |
-| Qwen3.8-Flash-Next-FP8 (oficial) | ~180B total | 262K | FP8 completo | other | HuggingFace |
-| Este checkpoint (NVFP4+FP8) | ~180B total (6B activos) | 262K | NVFP4 (expertos) + FP8 (atención) + BF16 | other | HuggingFace |
-| DeepSeek-R1 (MoE) | 671B total (37B activos) | 128K | FP8 | MIT | HuggingFace |
+| Qwen3.8-Flash-Next (BF16) | ~180B total (6B activos) | 262K | BF16 | other | Hugging Face |
+| Qwen3.8-Flash-Next-FP8 (oficial) | ~180B total | 262K | FP8 completo | other | Hugging Face |
+| Este checkpoint (NVFP4+FP8) | ~180B total (6B activos) | 262K | NVFP4 (expertos) + FP8 (atención) + BF16 | other | Hugging Face |
+| DeepSeek-R1 (MoE) | 671B total (37B activos) | 128K | FP8 | MIT | Hugging Face |
 
 El checkpoint NVFP4 se sitúa como una alternativa intermedia entre el BF16 completo (que requiere 2 GPUs de 80 GB en FP16) y el FP8 completo (que requiere 2 GPUs de 80 GB en FP8). Su ventaja es que cabe en un único GPU de 96 GB, manteniendo la precisión de los expertos en BF16 y reduciendo el coste de memoria de los expertos enrutados. Comparado con DeepSeek-R1, tiene una huella de memoria mucho menor y un coste de despliegue inferior, aunque con menor capacidad de razonamiento general.
 
@@ -87,7 +87,7 @@ El checkpoint NVFP4 se sitúa como una alternativa intermedia entre el BF16 comp
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/lovedheart/Qwen3.8-Flash-Next-NVFP4-FP8
+- Página del modelo en Hugging Face: https://huggingface.co/lovedheart/Qwen3.8-Flash-Next-NVFP4-FP8
 - Modelo fuente: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio del modelo original (GitHub): https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - NVIDIA Model Optimizer: https://github.com/NVIDIA/TensorRT-Model-Optimizer

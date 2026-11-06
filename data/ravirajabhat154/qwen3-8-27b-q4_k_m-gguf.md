@@ -24,7 +24,7 @@ La relevancia de este repositorio es practica: ofrece una via directa para proba
 | Pipeline declarado | image-text-to-text |
 | Libreria declarada | transformers |
 | Autor de la conversion | Ravirajabhat154 (via GGUF-my-repo de ggml.ai) |
-| Fecha de publicacion | 30 de septiembre de 2026 segun los metadatos de HuggingFace |
+| Fecha de publicacion | 30 de septiembre de 2026 segun los metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -105,7 +105,7 @@ No se dispone de datos de modelos comparables de otros fabricantes en la informa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ravirajabhat154/Qwen3.8-27B-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Ravirajabhat154/Qwen3.8-27B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Alibaba Cloud para Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio oficial de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8

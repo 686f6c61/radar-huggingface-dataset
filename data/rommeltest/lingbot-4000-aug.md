@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rommeltest/lingbot-4000-aug es un checkpoint publicado en HuggingFace por el usuario rommeltest, con un total de 6.375.907.511 parametros (aproximadamente 6,38 mil millones) almacenados en formato safetensors. El repositorio ocupa 25,5 GB, un tamano que coincide con pesos en precision fp32 (6,38 mil millones x 4 bytes), lo que sugiere que el checkpoint se ha subido sin cuantizar. La etiqueta principal del repositorio es "lingbotvla", que lo vincula a la familia LingBot-VLA.
+rommeltest/lingbot-4000-aug es un checkpoint publicado en Hugging Face por el usuario rommeltest, con un total de 6.375.907.511 parametros (aproximadamente 6,38 mil millones) almacenados en formato safetensors. El repositorio ocupa 25,5 GB, un tamano que coincide con pesos en precision fp32 (6,38 mil millones x 4 bytes), lo que sugiere que el checkpoint se ha subido sin cuantizar. La etiqueta principal del repositorio es "lingbotvla", que lo vincula a la familia LingBot-VLA.
 
 Por la denominacion ("lingbot-4000-aug") y por las etiquetas de un checkpoint hermano del mismo autor (rommeltest/lingbot-2000steps, catalogado como Robotics, vision-language-action y lingbot-vla), todo apunta a que se trata de un modelo de vision-lenguaje-accion (VLA) orientado a robotica, probablemente un paso intermedio de entrenamiento (step 4000) con algun tipo de aumento de datos. Esta interpretacion se deduce de las etiquetas y del contexto de la busqueda web, no de una model card explicita.
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rommeltest/lingbot-4000-aug | 6,38 mil millones | no disponible | no disponible | HuggingFace, 13 descargas | Checkpoint en el paso 4000, con aumento de datos |
-| rommeltest/lingbot-2000steps | no disponible | no disponible | no disponible | HuggingFace | Checkpoint del mismo autor en el paso 2000, etiquetado como Robotics y vision-language-action |
+| rommeltest/lingbot-4000-aug | 6,38 mil millones | no disponible | no disponible | Hugging Face, 13 descargas | Checkpoint en el paso 4000, con aumento de datos |
+| rommeltest/lingbot-2000steps | no disponible | no disponible | no disponible | Hugging Face | Checkpoint del mismo autor en el paso 2000, etiquetado como Robotics y vision-language-action |
 | Otros modelos VLA de referencia | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada |
 
 No se dispone de informacion suficiente para establecer una comparativa cuantitativa fiable con alternativas de la misma categoria.
@@ -93,9 +93,9 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rommeltest/lingbot-4000-aug
+- Repositorio Hugging Face: https://huggingface.co/rommeltest/lingbot-4000-aug
 - Checkpoint hermano (paso 2000): https://huggingface.co/rommeltest/lingbot-2000steps
-- Perfil del autor en HuggingFace: https://huggingface.co/rommeltest
+- Perfil del autor en Hugging Face: https://huggingface.co/rommeltest
 - LingBot-World (sitio del proyecto relacionado por nombre): https://www.lingbot-world.org/
 - Organizacion Robbyant en GitHub: https://github.com/RobbyAnt
 

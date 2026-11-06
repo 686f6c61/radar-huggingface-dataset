@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes. La comp
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/PulpCut/LTX-2.5-INT8-ConvRot-safetensors
+- Repositorio de Hugging Face: https://huggingface.co/PulpCut/LTX-2.5-INT8-ConvRot-safetensors
 - Repositorio original (gated): https://huggingface.co/Lightricks/LTX-2.5
 - Revisión original de los archivos espejados: https://huggingface.co/Lightricks/LTX-2.5/tree/6c7e5e573ac1667efc83407806fe9b0b93730e60
 - Librería h3ddle: https://github.com/AlexanderIstomin/h3ddle

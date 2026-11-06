@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Asmodeus-24B-v3-mlx-4Bit es un modelo de lenguaje de 24.000 millones de parámetros, publicado por el usuario bonds-stings en HuggingFace. Está orientado a la generación de texto creativo: escritura de ficción, roleplay, generación de tramas y continuación de escenas. Se trata de una versión cuantizada a 4 bits en formato MLX, lo que permite su ejecución eficiente en hardware Apple Silicon mediante el framework MLX.
+Asmodeus-24B-v3-mlx-4Bit es un modelo de lenguaje de 24.000 millones de parámetros, publicado por el usuario bonds-stings en Hugging Face. Está orientado a la generación de texto creativo: escritura de ficción, roleplay, generación de tramas y continuación de escenas. Se trata de una versión cuantizada a 4 bits en formato MLX, lo que permite su ejecución eficiente en hardware Apple Silicon mediante el framework MLX.
 
 El modelo es un merge (implementado con mergekit) basado en DarkArtsForge/Asmodeus-24B-v3, un modelo de arquitectura Mistral. Según las etiquetas del repositorio, se identifica como un modelo conversacional, no censurado, con especial interés en narrativa de todos los géneros, incluidos ciencia ficción, romance y terror. Aunque no dispone de métricas publicadas de rendimiento, su perfil técnico lo sitúa como una opción para tareas de creación literaria y simulación de personajes en entornos locales de Apple.
 
@@ -75,6 +75,6 @@ No se dispone de datos de benchmarks para establecer comparativas de rendimiento
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bonds-stings/Asmodeus-24B-v3-mlx-4Bit
+- Repositorio en Hugging Face: https://huggingface.co/bonds-stings/Asmodeus-24B-v3-mlx-4Bit
 - Modelo base referenciado: https://huggingface.co/DarkArtsForge/Asmodeus-24B-v3
 - Proyecto MLX (Apple): https://github.com/ml-explore/mlx

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MinaMila/Qwen2.5-7B-ReGiFT es un adaptador de ajuste fino publicado en HuggingFace por el usuario MinaMila, construido sobre el modelo instructivo Qwen/Qwen2.5-7B-Instruct. No se trata de un modelo completo, sino de un conjunto de pesos LoRA en formato PEFT que debe combinarse con el modelo base para poder ejecutarse. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con los aproximadamente 15 GB que ocuparían los pesos completos de un modelo de 7.000 millones de parametros en precision de 16 bits.
+MinaMila/Qwen2.5-7B-ReGiFT es un adaptador de ajuste fino publicado en Hugging Face por el usuario MinaMila, construido sobre el modelo instructivo Qwen/Qwen2.5-7B-Instruct. No se trata de un modelo completo, sino de un conjunto de pesos LoRA en formato PEFT que debe combinarse con el modelo base para poder ejecutarse. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con los aproximadamente 15 GB que ocuparían los pesos completos de un modelo de 7.000 millones de parametros en precision de 16 bits.
 
-La model card publicada es la plantilla por defecto de HuggingFace y no ha sido cumplimentada: todos los apartados relevantes (desarrollador, datos de entrenamiento, hiperparametros, evaluacion, limitaciones y licencia) aparecen marcados como "[More Information Needed]". El unico dato tecnico verificable en la ficha es que se trata de un adaptador LoRA cargable con la libreria peft, con transformers como framework de inferencia y text-generation como tarea declarada.
+La model card publicada es la plantilla por defecto de Hugging Face y no ha sido cumplimentada: todos los apartados relevantes (desarrollador, datos de entrenamiento, hiperparametros, evaluacion, limitaciones y licencia) aparecen marcados como "[More Information Needed]". El unico dato tecnico verificable en la ficha es que se trata de un adaptador LoRA cargable con la libreria peft, con transformers como framework de inferencia y text-generation como tarea declarada.
 
 El interes del modelo es, por tanto, limitado y experimental: no hay evidencia publica de evaluacion, el repositorio no registra descargas ni interacciones y la licencia no esta declarada, lo que impide un uso comercial seguro sin aclaracion previa del autor. Cualquier evaluacion seria de este adaptador exige compararlo contra el propio Qwen2.5-7B-Instruct sin ajustar, algo que el autor no ha hecho publico.
 
@@ -31,7 +31,7 @@ El interes del modelo es, por tanto, limitado y experimental: no hay evidencia p
 
 El adaptador se monta sobre Qwen2.5-7B-Instruct, un transformer decoder-only con atencion de consultas agrupadas (GQA), normalizacion RMSNorm y activacion SwiGLU, preentrenado por Alibaba Qwen sobre aproximadamente 18 billones de tokens y posteriormente alineado con tecnicas de ajuste supervisado y optimizacion por preferencias. El nombre "ReGiFT" sugiere algun tipo de ajuste fino especifico, pero la model card no documenta ni el procedimiento ni el objetivo, por lo que no es posible confirmar a que se refiere ni que tecnica se aplico.
 
-No hay informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, el rango y el alfa del LoRA, los modulos objetivo, la tasa de aprendizaje, la precision (fp16, bf16 o fp32) ni si se emplearon tecnicas como RLHF o DPO en esta fase. La unica referencia tecnica del repositorio es el enlace a Lacoste et al. (2019) sobre el calculo de emisiones de carbono, que forma parte de la plantilla generica de HuggingFace y no implica que se haya realizado dicho calculo.
+No hay informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, el rango y el alfa del LoRA, los modulos objetivo, la tasa de aprendizaje, la precision (fp16, bf16 o fp32) ni si se emplearon tecnicas como RLHF o DPO en esta fase. La unica referencia tecnica del repositorio es el enlace a Lacoste et al. (2019) sobre el calculo de emisiones de carbono, que forma parte de la plantilla generica de Hugging Face y no implica que se haya realizado dicho calculo.
 
 Para utilizarlo es necesario cargar primero Qwen/Qwen2.5-7B-Instruct y despues superponer el adaptador mediante `PeftModel.from_pretrained`, o bien fusionar los pesos con `merge_and_unload` antes de convertir el modelo a otros formatos de inferencia. El repositorio no incluye tokens ni scripts de conversion.
 
@@ -79,7 +79,7 @@ Las cifras siguientes corresponden al modelo base Qwen2.5-7B-Instruct, ya que el
 
 ## Comparativa con modelos similares
 
-Los datos de la columna del adaptador provienen de la ficha de HuggingFace; los del resto corresponden a la documentacion publica de cada modelo base.
+Los datos de la columna del adaptador provienen de la ficha de Hugging Face; los del resto corresponden a la documentacion publica de cada modelo base.
 
 | Modelo | Parametros | Contexto nativo | Licencia | Estado |
 |---|---|---|---|---|
@@ -104,7 +104,7 @@ No se dispone de comparaciones de rendimiento entre este adaptador y los modelos
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/MinaMila/Qwen2.5-7B-ReGiFT
+- Ficha del modelo en Hugging Face: https://huggingface.co/MinaMila/Qwen2.5-7B-ReGiFT
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Referencia citada en la plantilla de la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental mencionada en la plantilla: https://mlco2.github.io/impact

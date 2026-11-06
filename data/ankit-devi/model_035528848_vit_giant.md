@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_035528848_vit_giant` es una implementación a escala *giant* de la arquitectura Vision Transformer (ViT), diseñada específicamente para tareas de generación. Ha sido publicado por el usuario `ankit-devi` en HuggingFace bajo licencia BSD-3-Clause. La model card describe una arquitectura con atención multi-query, fusión mediante co-attention, activación ReLU, normalización GroupNorm e inicialización Kaiming, entrenada con el optimizador LAMB y un scheduler de calentamiento constante.
+El modelo `model_035528848_vit_giant` es una implementación a escala *giant* de la arquitectura Vision Transformer (ViT), diseñada específicamente para tareas de generación. Ha sido publicado por el usuario `ankit-devi` en Hugging Face bajo licencia BSD-3-Clause. La model card describe una arquitectura con atención multi-query, fusión mediante co-attention, activación ReLU, normalización GroupNorm e inicialización Kaiming, entrenada con el optimizador LAMB y un scheduler de calentamiento constante.
 
 A pesar de su nombre y de las etiquetas asociadas, no se proporcionan detalles cuantitativos sobre el número de parámetros, la longitud de contexto, los datos de entrenamiento ni los resultados de evaluación. El repositorio contiene únicamente un archivo de código Python (`model_035528848_vit_giant.py`), lo que sugiere que se trata de un artefacto de investigación o una implementación de referencia más que de un modelo preentrenado listo para producción. Su relevancia actual es limitada debido a la ausencia de documentación técnica y de métricas de rendimiento.
 
@@ -57,4 +57,4 @@ No se dispone de información sobre modelos comparables. Aunque existen otros Vi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ankit-devi/model_035528848_vit_giant
+- Repositorio en Hugging Face: https://huggingface.co/ankit-devi/model_035528848_vit_giant

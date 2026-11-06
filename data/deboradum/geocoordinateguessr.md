@@ -2,11 +2,11 @@
 
 ## Resumen
 
-GeoCoordinateGuessr es un repositorio publicado en HuggingFace por el usuario deboradum bajo licencia MIT. La model card asociada no contiene absolutamente ningun contenido tecnico: unicamente la declaracion de licencia, sin descripcion, sin pipeline declarado, sin idiomas soportados, sin arquitectura ni datos de entrenamiento. El repositorio ocupa 0,2 GB en disco, lo que constituye el unico indicio cuantitativo disponible sobre su contenido.
+GeoCoordinateGuessr es un repositorio publicado en Hugging Face por el usuario deboradum bajo licencia MIT. La model card asociada no contiene absolutamente ningun contenido tecnico: unicamente la declaracion de licencia, sin descripcion, sin pipeline declarado, sin idiomas soportados, sin arquitectura ni datos de entrenamiento. El repositorio ocupa 0,2 GB en disco, lo que constituye el unico indicio cuantitativo disponible sobre su contenido.
 
 El nombre del repositorio sugiere un sistema orientado a la prediccion de coordenadas geograficas a partir de imagenes, en la linea de tareas tipo GeoGuessr, pero se trata de una inferencia a partir del identificador y no de informacion confirmada por el autor. No hay ningun documento, paper, blog o anuncio que acompane a la publicacion que permita verificar esa funcion ni ninguna otra.
 
-La relevancia actual del modelo es, con los datos disponibles, nula para evaluacion seria: registra 0 descargas y 0 likes, no declara pipeline en HuggingFace (lo que implica que la plataforma no ha detectado una libreria compatible entre las que reconoce, como transformers, diffusers, sentence-transformers o timm) y el repositorio fue creado y actualizado en un intervalo de menos de seis minutos, lo que apunta a una carga automatizada o a un experimento puntual sin mantenimiento posterior. Cualquier evaluacion tecnica debe posponerse hasta que el autor publique documentacion, pesos identificables y una model card sustantiva.
+La relevancia actual del modelo es, con los datos disponibles, nula para evaluacion seria: registra 0 descargas y 0 likes, no declara pipeline en Hugging Face (lo que implica que la plataforma no ha detectado una libreria compatible entre las que reconoce, como transformers, diffusers, sentence-transformers o timm) y el repositorio fue creado y actualizado en un intervalo de menos de seis minutos, lo que apunta a una carga automatizada o a un experimento puntual sin mantenimiento posterior. Cualquier evaluacion tecnica debe posponerse hasta que el autor publique documentacion, pesos identificables y una model card sustantiva.
 
 ## Especificaciones tecnicas
 
@@ -20,7 +20,7 @@ La relevancia actual del modelo es, con los datos disponibles, nula para evaluac
 | Idiomas soportados | no disponible (la model card no declara ningun idioma) |
 | Licencia | MIT |
 | Formato de pesos | no disponible |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tamano del repositorio | 0,2 GB |
 | Fecha de creacion | 2026-09-16T18:30:50Z (fecha reportada por la plataforma) |
 | Fecha de ultima actualizacion | 2026-09-16T18:36:46Z |
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para inferencia: no disponible. Como referencia puramente orientativa, un repositorio de 0,2 GB en pesos de 16 bits corresponderia a del orden de 1e8 parametros, que cabria con holgura en cualquier GPU consumer con 4-8 GB de VRAM; si los 0,2 GB fuesen solo codigo y datos auxiliares, esta estimacion no aplica.
 - GPU recomendadas: no disponibles. No hay ninguna indicacion del autor ni de terceros.
 - Compatibilidad con GPU consumer: no verificable. No se confirma que el modelo quepa, ni siquiera que existan pesos ejecutables.
-- Opciones de despliegue: no disponibles. No se declara compatibilidad con vLLM, llama.cpp, Ollama, TGI, transformers ni ningun otro runtime. El hecho de que HuggingFace no asigne pipeline refuerza la ausencia de integracion con las librerias habituales.
+- Opciones de despliegue: no disponibles. No se declara compatibilidad con vLLM, llama.cpp, Ollama, TGI, transformers ni ningun otro runtime. El hecho de que Hugging Face no asigne pipeline refuerza la ausencia de integracion con las librerias habituales.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -79,8 +79,8 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/deboradum/GeoCoordinateGuessr
-- Perfil del autor en HuggingFace: https://huggingface.co/deboradum
+- Repositorio en Hugging Face: https://huggingface.co/deboradum/GeoCoordinateGuessr
+- Perfil del autor en Hugging Face: https://huggingface.co/deboradum
 - Model card: https://huggingface.co/deboradum/GeoCoordinateGuessr/raw/main/README.md (contiene unicamente el campo de licencia MIT)
 
 No se han encontrado papers, blogs, repositorios de codigo, demos ni articulos tecnicos asociados a este modelo en la busqueda web realizada. Los resultados devueltos por la busqueda corresponden a sitios de iconos vectoriales (Flaticon) y no guardan ninguna relacion con el modelo, por lo que se descartan como fuentes.

@@ -77,7 +77,7 @@ No se dispone de datos de benchmarks ni de comparaciones publicadas con otros de
 
 | Modelo | Parametros | Contexto / entrada | mAP@0.5:0.95 en ECRv1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLO-1D_ECRv1 (este) | 14,5 M | 30 x 49 152 muestras | 0,824 | Apache 2.0 | HuggingFace |
+| YOLO-1D_ECRv1 (este) | 14,5 M | 30 x 49 152 muestras | 0,824 | Apache 2.0 | Hugging Face |
 | Alternativas 1-D comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de comparaciones publicadas con otros de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nasochec/YOLO-1D_ECRv1
+- Modelo en Hugging Face: https://huggingface.co/Nasochec/YOLO-1D_ECRv1
 - Dataset ECRv1: https://huggingface.co/datasets/Nasochec/ECRv1
 - Codigo fuente (rama `EKG`): https://github.com/BystrovGladkov/YOLO_1d
 - Paper: no disponible en la informacion proporcionada

@@ -64,7 +64,7 @@ No disponible. Este repositorio no es un modelo y no puede compararse con modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Anisaanggraini/paper_023626108_audio_visual_learning
+- Repositorio Hugging Face: https://huggingface.co/Anisaanggraini/paper_023626108_audio_visual_learning
 - Referencia relacionada sobre interpretabilidad de AVLLMs: https://arxiv.org/abs/2604.02605
 - Referencia sobre embeddings audiovisuales WAVE: https://nanless.github.io/audio-paper-digest-blog/posts/2026-05-04-wave-learning-unified-versatile-audio-visual/
 - Referencia sobre encoders audiovisuales PE-AV: https://ai.meta.com/research/publications/pushing-the-frontier-of-audiovisual-perception-with-large-scale-multimodal-correspondence-learning/

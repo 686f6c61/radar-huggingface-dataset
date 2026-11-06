@@ -90,9 +90,9 @@ Ornith-1.5-9B se posiciona como el mejor modelo denso de 9B en tareas de codific
 
 ## Enlaces
 
-- Repositorio HuggingFace (version MLX): https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX
-- Repositorio HuggingFace (version principal): https://huggingface.co/ornith-ai/Ornith-1.5-9B
-- Coleccion Ornith-1.5 en HuggingFace: https://huggingface.co/collections/ornith-ai/ornith-15
+- Repositorio Hugging Face (version MLX): https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX
+- Repositorio Hugging Face (version principal): https://huggingface.co/ornith-ai/Ornith-1.5-9B
+- Coleccion Ornith-1.5 en Hugging Face: https://huggingface.co/collections/ornith-ai/ornith-15
 - Blog de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Sitio web de Ornith AI: https://ornith.online/
 - Ficha en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/ornith-1.5-9b-ornith-ai

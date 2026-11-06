@@ -4,7 +4,7 @@
 
 El modelo `dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch8`, desarrollado por Lanni-ni, es un modelo de generación de texto basado en transformers que cuenta con 45.703.320 parámetros. Según su nomenclatura, emplea una técnica de "olvido dinámico" (dynamic forgetting), un concepto relacionado con el aprendizaje continuo, y fue entrenado con el corpus BabyLM de 10 millones de palabras. El nombre también sugiere una arquitectura de 4 capas, 6 cabezas de atención y una dimensión oculta de 384.
 
-El modelo fue subido al Hub de HuggingFace con el pipeline `text-generation` y formato `safetensors`. Su relevancia radica en el estudio de cómo los modelos de lenguaje pequeños pueden gestionar la memoria y el conocimiento de forma dinámica, lo que tiene aplicaciones en escenarios de datos limitados y en el benchmark BabyLM. Sin embargo, la model card no contiene información detallada sobre arquitectura, datos de entrenamiento o resultados de evaluación, por lo que la mayor parte de la información disponible se infiere del nombre y los metadatos.
+El modelo fue subido al Hub de Hugging Face con el pipeline `text-generation` y formato `safetensors`. Su relevancia radica en el estudio de cómo los modelos de lenguaje pequeños pueden gestionar la memoria y el conocimiento de forma dinámica, lo que tiene aplicaciones en escenarios de datos limitados y en el benchmark BabyLM. Sin embargo, la model card no contiene información detallada sobre arquitectura, datos de entrenamiento o resultados de evaluación, por lo que la mayor parte de la información disponible se infiere del nombre y los metadatos.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ El modelo fue subido al Hub de HuggingFace con el pipeline `text-generation` y f
 
 A partir del nombre del modelo se puede inferir que se trata de un transformer con 4 capas, 6 cabezas de atención y una dimensión oculta de 384, sumando un total de 45,7 millones de parámetros. El término "dynamic_forgetting" sugiere que la arquitectura incorpora algún mecanismo de olvido selectivo del conocimiento, un área activa de investigación en aprendizaje continuo. El corpus de entrenamiento probablemente es el de BabyLM de 10 millones de palabras, diseñado para estudiar la adquisición del lenguaje con datos muy limitados.
 
-No se dispone de información confirmada sobre el número de tokens de entrenamiento, la composición exacta del dataset ni sobre procesos de alineamiento como RLHF o DPO. La nomenclatura "seed44_epoch8" indica que se utilizó la semilla 44 y se entrenó durante 8 épocas. La etiqueta `custom_code` de HuggingFace revela que el modelo depende de un código de modelado personalizado, por lo que requiere `trust_remote_code=True` al cargarlo con la librería transformers.
+No se dispone de información confirmada sobre el número de tokens de entrenamiento, la composición exacta del dataset ni sobre procesos de alineamiento como RLHF o DPO. La nomenclatura "seed44_epoch8" indica que se utilizó la semilla 44 y se entrenó durante 8 épocas. La etiqueta `custom_code` de Hugging Face revela que el modelo depende de un código de modelado personalizado, por lo que requiere `trust_remote_code=True` al cargarlo con la librería transformers.
 
 ## Capacidades
 
@@ -70,4 +70,4 @@ No se han identificado modelos comparables directamente en la información dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch8
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch8

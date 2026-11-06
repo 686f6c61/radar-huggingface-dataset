@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Apex-3B es un modelo de generación de texto publicado en HuggingFace por el usuario imnotapex bajo el identificador `imnotapex/Apex-3B`. Según su model card, se trata de un "AI local personalizado" atribuido a Wesley (Apex Labs), y el repositorio aloja el archivo `Apex-3B-Q4_K_M.gguf` destinado a su uso en LM Studio y llama.cpp. El autor declara explícitamente que el proyecto no está afiliado a OpenAI, Anthropic ni Google.
+Apex-3B es un modelo de generación de texto publicado en Hugging Face por el usuario imnotapex bajo el identificador `imnotapex/Apex-3B`. Según su model card, se trata de un "AI local personalizado" atribuido a Wesley (Apex Labs), y el repositorio aloja el archivo `Apex-3B-Q4_K_M.gguf` destinado a su uso en LM Studio y llama.cpp. El autor declara explícitamente que el proyecto no está afiliado a OpenAI, Anthropic ni Google.
 
 El dato objetivo más relevante es el recuento de parámetros obtenido de los pesos en safetensors: 3.085.938.688 parámetros, es decir, aproximadamente 3,09 mil millones. Esto lo sitúa en la categoría de modelos pequeños, pensados para inferencia local en hardware de consumo. El repositorio ocupa 1,9 GB, coherente con la distribución principal en cuantización Q4_K_M.
 
@@ -33,7 +33,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: no se indica el numero de t
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` y el pipeline `text-generation` indican que el modelo esta orientado a mantener dialogos de tipo chat.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse a traves de infraestructura de inferencia compatible con los endpoints habituales de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse a traves de infraestructura de inferencia compatible con los endpoints habituales de Hugging Face.
 - Ejecucion local: al distribuirse en GGUF, esta pensado para funcionar en llama.cpp y LM Studio sobre hardware de consumo.
 - Razonamiento, codigo, matematicas o vision: no disponible.
 - Soporte de tool calling o function calling: no disponible.
@@ -93,6 +93,6 @@ No hay datos que permitan comparar calidad, razonamiento, codigo o multilingueis
 
 ## Enlaces
 
-- [Modelo en HuggingFace: imnotapex/Apex-3B](https://huggingface.co/imnotapex/Apex-3B)
+- [Modelo en Hugging Face: imnotapex/Apex-3B](https://huggingface.co/imnotapex/Apex-3B)
 - Paper, repositorio, blog o demo oficial: no disponible
 - La busqueda web realizada no devolvio ningun enlace relevante al modelo; los resultados obtenidos correspondian a un medio de comunicacion generalista sin relacion con el proyecto.

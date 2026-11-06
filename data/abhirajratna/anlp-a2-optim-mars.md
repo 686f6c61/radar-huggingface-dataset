@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, A
 
 | Modelo | Parametros | Contexto | Optimizador | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anlp-a2-optim-mars | 33,6 M | no disponible | MARS (desde cero) | no disponible | HuggingFace |
-| anlp-a2-optim-lion | 33,6 M (misma arquitectura v1) | no disponible | Lion (desde cero) | no disponible | HuggingFace |
+| anlp-a2-optim-mars | 33,6 M | no disponible | MARS (desde cero) | no disponible | Hugging Face |
+| anlp-a2-optim-lion | 33,6 M (misma arquitectura v1) | no disponible | Lion (desde cero) | no disponible | Hugging Face |
 | GPT-2 small | 124 M | 1024 | Adam | MIT | Ampliamente disponible |
 | distilgpt2 | 82 M | 1024 | destilacion de GPT-2 | MIT | Ampliamente disponible |
 
@@ -100,9 +100,9 @@ La comparacion con GPT-2 small y distilgpt2 es solo orientativa por clase de tam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhirajratna/anlp-a2-optim-mars
+- Modelo en Hugging Face: https://huggingface.co/abhirajratna/anlp-a2-optim-mars
 - Modelo hermano (optimizador Lion): https://huggingface.co/abhirajratna/anlp-a2-optim-lion
-- Perfil del autor en HuggingFace: https://huggingface.co/abhirajratna
+- Perfil del autor en Hugging Face: https://huggingface.co/abhirajratna
 - Perfil del autor en GitHub: https://github.com/abhirajratna/
 - Dataset de entrenamiento: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - Paper "MARS: Modular Agent with Reflective Search": https://arxiv.org/abs/2602.02660 (advertencia: este MARS hace referencia a un agente de busqueda reflexiva para investigacion automatizada, no al optimizador MARS empleado en el entrenamiento de este modelo; el enlace aparece en la busqueda web pero no esta confirmado como fuente del optimizador)

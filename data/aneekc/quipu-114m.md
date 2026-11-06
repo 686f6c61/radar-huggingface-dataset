@@ -100,7 +100,7 @@ Nota: los datos de los modelos de comparacion corresponden a informacion publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AneekC/quipu-114m
+- Modelo en Hugging Face: https://huggingface.co/AneekC/quipu-114m
 - Pagina del proyecto: https://quipu-lm.vercel.app
 - Codigo fuente: https://github.com/Aneek1/quipu
 - Dataset de texto: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

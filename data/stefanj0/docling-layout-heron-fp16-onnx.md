@@ -84,7 +84,7 @@ El modelo FP16 ofrece el mismo contrato I/O que el FP32, pero con menor huella d
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/stefanj0/docling-layout-heron-fp16-onnx
+- Repositorio Hugging Face del modelo: https://huggingface.co/stefanj0/docling-layout-heron-fp16-onnx
 - Modelo base (PyTorch): https://huggingface.co/docling-project/docling-layout-heron
 - Export FP32 ONNX del modelo base: https://huggingface.co/docling-project/docling-layout-heron-onnx
 - Variante INT8 backbone-only: https://huggingface.co/stefanj0/docling-layout-heron-int8-onnx

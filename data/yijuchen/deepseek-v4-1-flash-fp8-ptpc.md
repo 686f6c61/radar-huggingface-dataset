@@ -105,10 +105,10 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yijuchen/DeepSeek-V4.1-Flash-FP8-PTPC
+- Repositorio en Hugging Face: https://huggingface.co/yijuchen/DeepSeek-V4.1-Flash-FP8-PTPC
 - Modelo base referenciado en la model card: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico (PDF): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización de DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización de DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Sitio oficial: https://www.deepseek.com/
 - Chat oficial: https://chat.deepseek.com/
 - Twitter/X de DeepSeek: https://twitter.com/deepseek_ai

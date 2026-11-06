@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mash-forshaken/Semantic-Search-Engine-with-FAISS` es un modelo de extracción de características (embeddings) basado en la arquitectura MPNet, diseñado para tareas de búsqueda semántica y recuperación de información. Con 109.486.464 parámetros (aproximadamente 109M), este modelo genera representaciones vectoriales densas del texto que pueden indexarse eficientemente con FAISS para realizar búsquedas por similitud semántica. El autor, mash-forshaken, lo ha publicado en HuggingFace con el pipeline de feature-extraction y formato safetensors, aunque la model card es genérica y no aporta detalles adicionales sobre entrenamiento o uso específico.
+El modelo `mash-forshaken/Semantic-Search-Engine-with-FAISS` es un modelo de extracción de características (embeddings) basado en la arquitectura MPNet, diseñado para tareas de búsqueda semántica y recuperación de información. Con 109.486.464 parámetros (aproximadamente 109M), este modelo genera representaciones vectoriales densas del texto que pueden indexarse eficientemente con FAISS para realizar búsquedas por similitud semántica. El autor, mash-forshaken, lo ha publicado en Hugging Face con el pipeline de feature-extraction y formato safetensors, aunque la model card es genérica y no aporta detalles adicionales sobre entrenamiento o uso específico.
 
 El modelo se enmarca en el ecosistema de sentence transformers, donde arquitecturas como MPNet (introducida en el paper arXiv:1910.09700) ofrecen un equilibrio entre calidad de embeddings y eficiencia computacional. Su relevancia actual radica en la creciente demanda de sistemas de búsqueda semántica local, sin depender de APIs externas, y su compatibilidad con librerías como FAISS y sentence-transformers lo convierte en una opción práctica para desarrolladores que necesitan construir pipelines de recuperación de información. Sin embargo, al carecer de documentación específica y de métricas publicadas, su uso requiere validación previa en el dominio de aplicación.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 0,4 GB en FP32 (tamano del repo), lo que permite ejecucion en CPU sin problemas.
 - GPU recomendada: cualquier GPU con al menos 2 GB de VRAM, aunque para inferencia batch grande se recomienda 4 GB o mas.
 - El modelo cabe en GPUs de consumo como RTX 3060, RTX 4060 o equivalentes.
-- Opciones de despliegue: transformers, sentence-transformers, FAISS, y compatible con endpoints de HuggingFace.
+- Opciones de despliegue: transformers, sentence-transformers, FAISS, y compatible con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles, pero al ser un modelo de 109M, la inferencia es rapida en GPU (tipicamente <10 ms por frase en una RTX 3090) y aceptable en CPU (50-200 ms).
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ El modelo comparte tamano y arquitectura con `all-mpnet-base-v2`, un referente e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mash-forshaken/Semantic-Search-Engine-with-FAISS
+- Hugging Face: https://huggingface.co/mash-forshaken/Semantic-Search-Engine-with-FAISS
 - Paper MPNet: https://arxiv.org/abs/1910.09700
 - Tutorial de busqueda semantica con FAISS y Sentence Transformers: https://thepythoncode.com/article/semantic-search-engine-faiss-python
 - Tutorial de busqueda semantica con Transformers y Faiss: https://towardsdatascience.com/how-to-build-a-semantic-search-engine-with-transformers-and-faiss-dcbea307a0e8/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jarvis-GrokBot-Gemma4-E2B-Iter2 es un ajuste fino (fine-tuning) del modelo Gemma 4 E2B instruct, publicado por el usuario samarthagarwalgit en HuggingFace. El modelo base es la version cuantizada en 4 bits de unsloth (unsloth/gemma-4-E2B-it-unsloth-bnb-4bit), sobre la que se ha aplicado un entrenamiento adicional utilizando las herramientas de Unsloth para acelerar el proceso. El resultado es un checkpoint de aproximadamente 5.123 millones de parametros (5,12 mil millones) empaquetado en safetensors, con un tamano de repositorio de 10,7 GB.
+Jarvis-GrokBot-Gemma4-E2B-Iter2 es un ajuste fino (fine-tuning) del modelo Gemma 4 E2B instruct, publicado por el usuario samarthagarwalgit en Hugging Face. El modelo base es la version cuantizada en 4 bits de unsloth (unsloth/gemma-4-E2B-it-unsloth-bnb-4bit), sobre la que se ha aplicado un entrenamiento adicional utilizando las herramientas de Unsloth para acelerar el proceso. El resultado es un checkpoint de aproximadamente 5.123 millones de parametros (5,12 mil millones) empaquetado en safetensors, con un tamano de repositorio de 10,7 GB.
 
 La relevancia de este modelo es limitada y muy especifica: se trata de una iteracion experimental (Iter2) de un proyecto personal, con cero descargas y cero likes en el momento de la consulta, y sin model card detallada que documente el dataset de entrenamiento, los hiperparametros o los objetivos del ajuste. El nombre "Jarvis-GrokBot" sugiere un uso orientado a asistentes conversacionales o agentes, pero no hay evidencia tecnica publicada que lo confirme.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Jarvis-GrokBot-Gemma4-E2B-Iter2 | ~5,12 mil millones | no disponible | apache-2.0 | HuggingFace (0 descargas) |
-| Gemma 4 E2B instruct (base) | ~5 mil millones | no disponible en esta ficha | Gemma license (segun modelo original) | HuggingFace, ampliamente disponible |
-| Qwen2.5-7B-Instruct | ~7,6 mil millones | 32.768 tokens (segun documentacion publica de Qwen) | apache-2.0 | HuggingFace, ampliamente disponible |
-| Llama 3.1 8B Instruct | ~8 mil millones | 131.072 tokens (segun documentacion publica de Meta) | Llama 3.1 Community License | HuggingFace, ampliamente disponible |
+| Jarvis-GrokBot-Gemma4-E2B-Iter2 | ~5,12 mil millones | no disponible | apache-2.0 | Hugging Face (0 descargas) |
+| Gemma 4 E2B instruct (base) | ~5 mil millones | no disponible en esta ficha | Gemma license (segun modelo original) | Hugging Face, ampliamente disponible |
+| Qwen2.5-7B-Instruct | ~7,6 mil millones | 32.768 tokens (segun documentacion publica de Qwen) | apache-2.0 | Hugging Face, ampliamente disponible |
+| Llama 3.1 8B Instruct | ~8 mil millones | 131.072 tokens (segun documentacion publica de Meta) | Llama 3.1 Community License | Hugging Face, ampliamente disponible |
 
 La comparativa es orientativa: el modelo analizado no dispone de benchmarks publicados, por lo que no se puede establecer una comparacion de rendimiento con las alternativas.
 
@@ -83,6 +83,6 @@ La comparativa es orientativa: el modelo analizado no dispone de benchmarks publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/samarthagarwalgit/Jarvis-GrokBot-Gemma4-E2B-Iter2
+- Modelo en Hugging Face: https://huggingface.co/samarthagarwalgit/Jarvis-GrokBot-Gemma4-E2B-Iter2
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth

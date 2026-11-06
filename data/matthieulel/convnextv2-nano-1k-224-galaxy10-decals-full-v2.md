@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`convnextv2-nano-1k-224-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace `matthieulel` como parte de una colección de 80 configuraciones que compara 40 backbones de visión preentrenados bajo dos regímenes de adaptación. El modelo parte de `facebook/convnextv2-nano-1k-224`, un ConvNeXt V2 de tipo nano preentrenado en ImageNet-1k a 224 px, y se ha ajustado completamente (todos los parámetros actualizados) sobre el conjunto Galaxy10 DECaLS, que clasifica imágenes astronómicas en 10 clases morfológicas.
+`convnextv2-nano-1k-224-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face `matthieulel` como parte de una colección de 80 configuraciones que compara 40 backbones de visión preentrenados bajo dos regímenes de adaptación. El modelo parte de `facebook/convnextv2-nano-1k-224`, un ConvNeXt V2 de tipo nano preentrenado en ImageNet-1k a 224 px, y se ha ajustado completamente (todos los parámetros actualizados) sobre el conjunto Galaxy10 DECaLS, que clasifica imágenes astronómicas en 10 clases morfológicas.
 
 El resultado es un checkpoint compacto de 14,99 millones de parámetros y aproximadamente 0,1 GB, con una precisión del 84,39 % y un F1 ponderado del 83,97 % en el conjunto de test reservado de 1.774 imágenes. La relevancia actual reside en que forma parte de un estudio sistemático (artículo en revisión para *Astronomy and Computing*, versión revisada de 2026) sobre cómo se comportan los modelos fundacionales de visión cuando se aplican a datos astronómicos, un dominio con distribución visual muy distinta a la de ImageNet.
 
@@ -32,7 +32,7 @@ El ajuste fino es completo (full fine-tuning), con todos los parámetros actuali
 - Clasificación de imágenes astronómicas en 10 clases morfológicas de galaxias (Galaxy10 DECaLS).
 - Extracción de características visuales mediante el backbone ConvNeXt V2 nano, reutilizable para otras tareas de visión.
 - Inferencia sobre imágenes de 224x224 px con el pipeline `image-classification` de transformers.
-- Compatible con los endpoints de HuggingFace (`endpoints_compatible` en los tags).
+- Compatible con los endpoints de Hugging Face (`endpoints_compatible` en los tags).
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generación de texto.
 - No tiene capacidades multilingües ni procesamiento de audio o vídeo.
 - No dispone de modo "thinking" ni de decodificación especulativa.
@@ -76,8 +76,8 @@ No se dispone en la información proporcionada de resultados de los otros 39 bac
 
 | Modelo | Parámetros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (ConvNeXt V2 nano fine-tuned) | 14,99 M | imagen 224x224 px | Apache 2.0 | HuggingFace |
-| facebook/convnextv2-nano-1k-224 (base) | ~15 M | imagen 224x224 px | Apache 2.0 | HuggingFace |
+| Este modelo (ConvNeXt V2 nano fine-tuned) | 14,99 M | imagen 224x224 px | Apache 2.0 | Hugging Face |
+| facebook/convnextv2-nano-1k-224 (base) | ~15 M | imagen 224x224 px | Apache 2.0 | Hugging Face |
 | Otros backbones de la colección (40 en total) | no disponible | no disponible | no disponible | colección Vision Foundation Models Benchmark |
 
 Los datos de precisión de los demás modelos de la colección están en el dataset `matthieulel/vision-foundation-models-benchmark-runs`, pero no se incluyen en la información disponible para esta ficha.
@@ -96,7 +96,7 @@ Los datos de precisión de los demás modelos de la colección están en el data
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/convnextv2-nano-1k-224-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/convnextv2-nano-1k-224-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/facebook/convnextv2-nano-1k-224
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de métricas por época y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

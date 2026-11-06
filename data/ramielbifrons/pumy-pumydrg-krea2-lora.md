@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pumy-pumydrg-krea2-lora es un adaptador LoRA de tipo DreamBooth para generacion de imagenes a partir de texto, publicado por el usuario RamielBifrons en HuggingFace. El adaptador se entrena sobre krea/Krea-2-Raw y se ejecuta sobre krea/Krea-2-Turbo, los dos checkpoints que componen la familia Krea 2: RAW como base no destilada para entrenamiento y Turbo como checkpoint destilado de 8 pasos para inferencia rapida. La unica funcion declarada del modelo es inyectar un concepto personalizado que se activa con la palabra disparadora `pumydrg`.
+pumy-pumydrg-krea2-lora es un adaptador LoRA de tipo DreamBooth para generacion de imagenes a partir de texto, publicado por el usuario RamielBifrons en Hugging Face. El adaptador se entrena sobre krea/Krea-2-Raw y se ejecuta sobre krea/Krea-2-Turbo, los dos checkpoints que componen la familia Krea 2: RAW como base no destilada para entrenamiento y Turbo como checkpoint destilado de 8 pasos para inferencia rapida. La unica funcion declarada del modelo es inyectar un concepto personalizado que se activa con la palabra disparadora `pumydrg`.
 
 El repositorio ocupa 1,2 GB y se distribuye en formato safetensors bajo licencia Apache 2.0, con integracion nativa en la libreria diffusers mediante la clase `Krea2Pipeline`. En el momento de la consulta acumula 0 descargas y 0 likes, y fue creado el 3 de octubre de 2026. No se han publicado especificaciones tecnicas del modelo base (numero de parametros, arquitectura interna del UNet o del transformer de difusion, dimension del contexto de texto) ni resultados de benchmarks.
 
@@ -32,7 +32,7 @@ Su relevancia es limitada y muy acotada: se trata de un adaptador de nicho, sin 
 
 ## Arquitectura y entrenamiento
 
-La model card indica que los pesos se entrenaron con DreamBooth sobre krea/Krea-2-Raw usando el entrenador de Krea 2 de diffusers, documentado en `examples/dreambooth/README_krea2.md` del repositorio de HuggingFace diffusers. DreamBooth es una tecnica de personalizacion que ajusta un adaptador de bajo rango para asociar un sujeto o concepto concreto a un token o frase poco frecuente; en este caso la palabra disparadora es `pumydrg`. La separacion RAW/Turbo es una decision de diseno de la familia Krea 2: se entrena sobre el checkpoint no destilado y se infiere sobre el destilado, ya que, segun la propia model card, los LoRA entrenados sobre RAW se expresan con fuerza sobre Turbo.
+La model card indica que los pesos se entrenaron con DreamBooth sobre krea/Krea-2-Raw usando el entrenador de Krea 2 de diffusers, documentado en `examples/dreambooth/README_krea2.md` del repositorio de Hugging Face diffusers. DreamBooth es una tecnica de personalizacion que ajusta un adaptador de bajo rango para asociar un sujeto o concepto concreto a un token o frase poco frecuente; en este caso la palabra disparadora es `pumydrg`. La separacion RAW/Turbo es una decision de diseno de la familia Krea 2: se entrena sobre el checkpoint no destilado y se infiere sobre el destilado, ya que, segun la propia model card, los LoRA entrenados sobre RAW se expresan con fuerza sobre Turbo.
 
 La model card no aporta informacion sobre el numero de tokens o imagenes de entrenamiento, la composicion del dataset, la resolucion de entrenamiento, el rango y el alfa del adaptador, la tasa de aprendizaje ni si se aplicaron tecnicas de regularizacion. Tampoco describe innovaciones tecnicas del adaptador ni del pipeline subyacente. Las secciones "Training details", "How to use" y "Limitations and bias" del README siguen marcadas con el texto plantilla `[TODO: ...]` sin completar, por lo que la unica receta de inferencia publicada es la del ejemplo de codigo: 8 pasos de inferencia y `guidance_scale=0.0` (sin classifier-free guidance), coherente con el caracter destilado de Krea 2 Turbo.
 
@@ -73,9 +73,9 @@ No se dispone de informacion sobre adaptadores LoRA comparables para Krea 2, ni 
 
 | Elemento | Rol | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pumy-pumydrg-krea2-lora | Adaptador LoRA de concepto | no disponible | no aplica | Apache 2.0 | HuggingFace, 0 descargas |
-| krea/Krea-2-Raw | Modelo base no destilado, usado para entrenar el LoRA | no disponible | no disponible | no disponible | HuggingFace |
-| krea/Krea-2-Turbo | Checkpoint destilado de 8 pasos, usado para inferir | no disponible | no disponible | no disponible | HuggingFace |
+| pumy-pumydrg-krea2-lora | Adaptador LoRA de concepto | no disponible | no aplica | Apache 2.0 | Hugging Face, 0 descargas |
+| krea/Krea-2-Raw | Modelo base no destilado, usado para entrenar el LoRA | no disponible | no disponible | no disponible | Hugging Face |
+| krea/Krea-2-Turbo | Checkpoint destilado de 8 pasos, usado para inferir | no disponible | no disponible | no disponible | Hugging Face |
 
 Otros adaptadores LoRA de la misma categoria (personalizacion de texto a imagen sobre Krea 2) no han podido identificarse a partir de la informacion proporcionada.
 
@@ -93,7 +93,7 @@ Otros adaptadores LoRA de la misma categoria (personalizacion de texto a imagen 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RamielBifrons/pumy-pumydrg-krea2-lora
+- Modelo en Hugging Face: https://huggingface.co/RamielBifrons/pumy-pumydrg-krea2-lora
 - Archivos del adaptador (safetensors): https://huggingface.co/RamielBifrons/pumy-pumydrg-krea2-lora/tree/main
 - Modelo base Krea 2 Raw: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Krea 2 Turbo: https://huggingface.co/krea/Krea-2-Turbo

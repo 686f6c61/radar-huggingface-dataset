@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AwesomeSaucee/cyp-challenge-method-report` no es un modelo de lenguaje: es un repositorio de HuggingFace que contiene el informe metodológico de una participación en el OpenADMET CYP Blind Challenge, una competición de quimioinformática centrada en la predicción de inhibición dependiente del tiempo (TDI) de isoenzimas del citocromo P450 y en la predicción estructural de poses de unión. El autor, Sharma Nandini Surendra (Indian Institute of Technology BHU, Varanasi), documenta dos tracks: clasificación TDI mediante LightGBM sobre fingerprints ECFP4, descriptores fisicoquímicos y conteos SMARTS de bioactivación, y predicción estructural mediante docking rígido con AutoDock Vina sobre cuatro plantillas cristalográficas de CYP3A4.
+`AwesomeSaucee/cyp-challenge-method-report` no es un modelo de lenguaje: es un repositorio de Hugging Face que contiene el informe metodológico de una participación en el OpenADMET CYP Blind Challenge, una competición de quimioinformática centrada en la predicción de inhibición dependiente del tiempo (TDI) de isoenzimas del citocromo P450 y en la predicción estructural de poses de unión. El autor, Sharma Nandini Surendra (Indian Institute of Technology BHU, Varanasi), documenta dos tracks: clasificación TDI mediante LightGBM sobre fingerprints ECFP4, descriptores fisicoquímicos y conteos SMARTS de bioactivación, y predicción estructural mediante docking rígido con AutoDock Vina sobre cuatro plantillas cristalográficas de CYP3A4.
 
 El interés del repositorio es metodológico, no de modelado generativo: detalla el diseño de validación con agrupación por scaffolds de Bemis-Murcko, analiza la estructura determinista de la etiqueta `is_TDI` (umbral sobre dos brazos de ensayo) y reporta un resultado negativo relevante sobre la regresión del desplazamiento de pIC50 como vía para mejorar la clasificación. Incluye también cifras concretas de validación cruzada anidada (MCC 0.395 en CYP3A4, 0.167 en CYP2D6) y verificación de plausibilidad física de poses con PoseBusters (20/20).
 
@@ -87,7 +87,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AwesomeSaucee/cyp-challenge-method-report
+- Repositorio en Hugging Face: https://huggingface.co/AwesomeSaucee/cyp-challenge-method-report
 - Dataset del reto: `openadmet/cyp-challenge-train-test` (referenciado en el informe)
 - Estructuras PDB usadas: 1TQN, 6MA7, 2V0M, 3NXU (RCSB PDB)
 - Otros enlaces (papers, blogs, repos, demos): no disponibles en la información proporcionada.

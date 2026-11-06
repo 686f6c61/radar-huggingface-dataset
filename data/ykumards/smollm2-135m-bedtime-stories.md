@@ -90,7 +90,7 @@ Rendimiento en el dispositivo objetivo (reMarkable 2, dos núcleos Cortex-A7, cu
 
 | Modelo | Parámetros | Contexto | Licencia | Idiomas | Rendimiento en la tarea de cuentos | Disponibilidad |
 |---|---|---|---|---|---|---|
-| smollm2-135m-bedtime-stories (este modelo) | 134,5 M | 8.192 tokens (heredado del base) | Apache 2.0 | Inglés | 48/48 conserva la clave; 0,2 palabras de estado de ánimo por 100; 3/48 terminan durmiendo | Pesos safetensors en HuggingFace, 0 descargas |
+| smollm2-135m-bedtime-stories (este modelo) | 134,5 M | 8.192 tokens (heredado del base) | Apache 2.0 | Inglés | 48/48 conserva la clave; 0,2 palabras de estado de ánimo por 100; 3/48 terminan durmiendo | Pesos safetensors en Hugging Face, 0 descargas |
 | SmolLM2-135M-Instruct (modelo base) | 134,5 M | 8.192 tokens | Apache 2.0 | Inglés (multilingüe parcial) | 32/48 conserva la clave; 1,2 palabras de estado de ánimo por 100; 8/48 terminan durmiendo | Ampliamente disponible |
 | Fine-tune de diario anterior (sin identificar en la información) | No disponible | No disponible | No disponible | No disponible | 38/48; 9,7 palabras por 100; 46/48 terminan durmiendo | No disponible |
 
@@ -113,7 +113,7 @@ No se dispone de datos verificados de otros modelos comparables (por ejemplo alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ykumards/smollm2-135m-bedtime-stories
+- Modelo en Hugging Face: https://huggingface.co/ykumards/smollm2-135m-bedtime-stories
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Repositorio del proyecto unremarkable: https://github.com/ykumards/unremarkable
 - Código de entrenamiento: https://github.com/ykumards/unremarkable/tree/main/train

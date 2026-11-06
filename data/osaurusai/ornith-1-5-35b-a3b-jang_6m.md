@@ -95,7 +95,7 @@ La comparativa se limita a la familia Ornith-1.5, ya que no se dispone de datos 
 
 ## Enlaces
 
-- Repositorio HuggingFace del bundle: https://huggingface.co/OsaurusAI/Ornith-1.5-35B-A3B-JANG_6M
+- Repositorio Hugging Face del bundle: https://huggingface.co/OsaurusAI/Ornith-1.5-35B-A3B-JANG_6M
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Colección Ornith-1.5: https://huggingface.co/collections/ornith-ai/ornith-15
 - Página oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html

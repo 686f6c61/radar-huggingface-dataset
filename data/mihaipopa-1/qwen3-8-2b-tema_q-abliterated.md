@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-2B-Tema_Q-Abliterated es una variante sin censura del modelo Empero Qwen3.8-2B, un modelo causal de 2.274 millones de parámetros obtenido por destilación de parámetros completos del profesor Qwen3.8 2.4T A95B sobre la arquitectura Qwen3.5-2B. Lo publica el usuario MihaiPopa-1 en HuggingFace y su rasgo distintivo es haber sido procesado con la herramienta Tema_Q-Abliterated v1.1.1, que elimina el comportamiento de rechazo (refusals) mediante ablación de una dirección de rechazo en los pesos, sin reentrenar.
+Qwen3.8-2B-Tema_Q-Abliterated es una variante sin censura del modelo Empero Qwen3.8-2B, un modelo causal de 2.274 millones de parámetros obtenido por destilación de parámetros completos del profesor Qwen3.8 2.4T A95B sobre la arquitectura Qwen3.5-2B. Lo publica el usuario MihaiPopa-1 en Hugging Face y su rasgo distintivo es haber sido procesado con la herramienta Tema_Q-Abliterated v1.1.1, que elimina el comportamiento de rechazo (refusals) mediante ablación de una dirección de rechazo en los pesos, sin reentrenar.
 
 El modelo conserva las capacidades del estudiante original: razonamiento con cadena de pensamiento destilada, function calling nativo, contexto nativo de 262.144 tokens y un tamaño que permite ejecución en dispositivos de borde. La intervención de abliteración reporta 2 rechazos de cada 100 generaciones completas con una divergencia KL de 0,0023 respecto al modelo base, lo que sugiere una degradación limitada en el comportamiento general.
 
@@ -98,7 +98,7 @@ Métricas de la abliteración (Tema_Q-Abliterated v1.1.1):
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MihaiPopa-1/Qwen3.8-2B-Tema_Q-Abliterated
+- Hugging Face: https://huggingface.co/MihaiPopa-1/Qwen3.8-2B-Tema_Q-Abliterated
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-2B-Distill
 - Modelo original Empero: https://huggingface.co/empero-ai/Qwen3.8-2B
 - Familia Empero Qwen3.8-9B: https://huggingface.co/empero-ai/Qwen3.8-9B

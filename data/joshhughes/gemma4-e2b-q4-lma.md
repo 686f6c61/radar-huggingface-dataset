@@ -82,7 +82,7 @@ La comparativa se limita a las variantes del mismo modelo base porque la informa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JoshHughes/gemma4-e2b-q4-lma
+- Repositorio Hugging Face: https://huggingface.co/JoshHughes/gemma4-e2b-q4-lma
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Source pack: https://huggingface.co/JoshHughes/p0pc0rn-assistant-gemma4-e2b-q4
 - Proyecto Local Model Access: https://github.com/ArtistJoshHughes/local-model-access

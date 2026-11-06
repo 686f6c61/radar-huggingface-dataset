@@ -40,7 +40,7 @@ Segun la model card, cualquier sonda activa ejecuta unicamente `whoami` en forma
 
 - Investigacion de seguridad en la cadena de suministro de modelos: el artefacto permite reproducir el vector de ruta de origen de un HDF5 virtual dataset y verificar si una herramienta de carga o edicion de ficheros resuelve rutas no confiables.
 - Pruebas de regresion en escaneres de modelos: sirve como muestra de referencia para validar que un escaner detecta el portador de metadatos (`HFSCAN_KERAS__22976_FILE_EDITOR_HDF5_VIRTUAL_DATASET_AFR`) sin ejecutar cargas activas.
-- Evaluacion de sandboxing en pipelines de CI: permite comprobar que un job que procesa artefactos de HuggingFace aisla `/tmp` y `$TMPDIR` y no propaga variables de entorno sensibles.
+- Evaluacion de sandboxing en pipelines de CI: permite comprobar que un job que procesa artefactos de Hugging Face aisla `/tmp` y `$TMPDIR` y no propaga variables de entorno sensibles.
 - Formacion y docencia en seguridad de ML: ilustra como los metadatos de un artefacto aparentemente inofensivo (0.0 GB, sin pesos) pueden transportar una ruta o referencia controlable.
 - Auditoria de herramientas de edicion de ficheros HDF5: valida el comportamiento de editores que abren virtual datasets y su manejo de rutas de origen externas.
 - Verificacion de manifiestos de coleccion: el `MANIFEST.json` permite contrastar hashes y la ruta del hallazgo original, util en revisiones de procedencia de artefactos.
@@ -78,7 +78,7 @@ No se dispone de artefactos comparables de la misma categoria (especimenes de se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FrankLin00/mmrh-afr-04-keras-virtual-dataset
+- Repositorio en Hugging Face: https://huggingface.co/FrankLin00/mmrh-afr-04-keras-virtual-dataset
 - Referencia al hallazgo en Keras (identificador 22976): no disponible como enlace directo en la informacion proporcionada
 - `MANIFEST.json` de la coleccion: no disponible como enlace directo en la informacion proporcionada
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada

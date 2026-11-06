@@ -72,6 +72,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SleepMastger/dish-utensil-flashwam-v2
+- Modelo en Hugging Face: https://huggingface.co/SleepMastger/dish-utensil-flashwam-v2
 - Dataset de manipulación de utensilios: https://huggingface.co/datasets/SleepMastger/dish-utensil-manipulation
 - Repositorio relacionado (fruit-picking-flashwam): https://huggingface.co/SleepMastger/fruit-picking-flashwam

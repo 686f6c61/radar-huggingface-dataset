@@ -83,7 +83,7 @@ El modelo base de Olmo-3 compite directamente con Llama 3 8B y Mistral 7B en ren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-immigration_prompted-ft4.44
+- Repositorio Hugging Face: https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-immigration_prompted-ft4.44
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct
 - Página del modelo en OpenModelMap: https://openmodelmap.com/model/allenai/Olmo-3-7B-Instruct
 - Página del modelo en LM Studio: https://lmstudio.ai/models/allenai/olmo-3-7b

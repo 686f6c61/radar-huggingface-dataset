@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Justmelissabrooks/multitask-kaggle` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de la arquitectura EfficientFormer, configurada para un esquema multitarea. Lo publica el usuario Justmelissabrooks y su propósito declarado, según la propia model card, es servir como artefacto de revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados, no como un modelo preentrenado listo para producción. El checkpoint incluido es una inicialización válida, no un modelo entrenado ni evaluado.
+`Justmelissabrooks/multitask-kaggle` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de la arquitectura EfficientFormer, configurada para un esquema multitarea. Lo publica el usuario Justmelissabrooks y su propósito declarado, según la propia model card, es servir como artefacto de revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados, no como un modelo preentrenado listo para producción. El checkpoint incluido es una inicialización válida, no un modelo entrenado ni evaluado.
 
 El dato más llamativo es la escala: el fichero `model.safetensors` contiene 49.600 parámetros reales, es decir, un modelo minúsculo (del orden de 0,2 MB en fp32). Esto contrasta con la etiqueta `huge` que aparece en la configuración de arquitectura del repositorio, una discrepancia que conviene tener presente: la escala declarada se refiere a la configuración nominal del script, no al tamaÃ±o del checkpoint publicado.
 
-Su relevancia es, por tanto, instrumental y no de rendimiento: sirve como plantilla reproducible para montar un esqueleto multitarea sobre EfficientFormer, para validar cadenas de carga de `safetensors` en PyTorch y para probar infraestructura de inferencia con un checkpoint real pero trivial. No hay métricas, ni idiomas declarados, ni pipeline de HuggingFace asociado, y el repositorio no registra descargas ni interacciones.
+Su relevancia es, por tanto, instrumental y no de rendimiento: sirve como plantilla reproducible para montar un esqueleto multitarea sobre EfficientFormer, para validar cadenas de carga de `safetensors` en PyTorch y para probar infraestructura de inferencia con un checkpoint real pero trivial. No hay métricas, ni idiomas declarados, ni pipeline de Hugging Face asociado, y el repositorio no registra descargas ni interacciones.
 
 ## Especificaciones técnicas
 
@@ -26,7 +26,7 @@ Su relevancia es, por tanto, instrumental y no de rendimiento: sirve como planti
 | Activación | gelu tanh |
 | Normalización | batchnorm |
 | TamaÃ±o del repositorio | 0,0 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación y actualización | 2026-09-27 (ambas) |
 
@@ -83,7 +83,7 @@ No hay datos suficientes en la información proporcionada para establecer una co
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Justmelissabrooks/multitask-kaggle | 49.600 | no disponible | sin benchmarks publicados | BSD 3-Clause | HuggingFace, 0 descargas |
+| Justmelissabrooks/multitask-kaggle | 49.600 | no disponible | sin benchmarks publicados | BSD 3-Clause | Hugging Face, 0 descargas |
 | EfficientFormer (familia original) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,11 +98,11 @@ No hay datos suficientes en la información proporcionada para establecer una co
 - Requiere un adaptador explícito para cargarse con APIs automáticas; no es un modelo *plug and play*.
 - Licencia BSD 3-Clause: permisiva y compatible con uso comercial, con las obligaciones habituales de conservar el aviso de copyright, la lista de condiciones y el descargo de responsabilidad. La propia model card recomienda revisar por separado los términos de los datos de origen si se combina con conjuntos de datos externos.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado deberá documentarse por separado de los valores por defecto aquí publicados, tal como indica el autor.
-- No hay pipeline de HuggingFace asignado, ni descargas, ni likes, lo que reduce la seÃ±al de validación por parte de la comunidad.
+- No hay pipeline de Hugging Face asignado, ni descargas, ni likes, lo que reduce la seÃ±al de validación por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Justmelissabrooks/multitask-kaggle
+- Repositorio en Hugging Face: https://huggingface.co/Justmelissabrooks/multitask-kaggle
 - Modelos preentrenados en Kaggle (referencia genérica): https://www.kaggle.com/models
 - Cuaderno multitarea en Kaggle (referencia genérica): https://www.kaggle.com/code/mateusztrawiski/multi-task
 - Conjuntos de datos en Kaggle (referencia genérica): https://www.kaggle.com/datasets

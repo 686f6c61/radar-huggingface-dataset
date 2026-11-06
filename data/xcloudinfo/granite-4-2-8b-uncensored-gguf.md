@@ -21,7 +21,7 @@ La relevancia es práctica: se trata de un modelo de 8B que cabe en una GPU de g
 | Licencia | Apache 2.0 (heredada del modelo base ibm-granite/granite-4.2-8b) |
 | Formato de pesos | GGUF (llama.cpp); el autor menciona además un modelo combinado en safetensors empleado para la evaluación greedy |
 
-Datos adicionales: tamaño del repositorio 16,6 GB segun HuggingFace; modelo base ibm-granite/granite-4.2-8b; creado y actualizado el 27 de septiembre de 2026.
+Datos adicionales: tamaño del repositorio 16,6 GB segun Hugging Face; modelo base ibm-granite/granite-4.2-8b; creado y actualizado el 27 de septiembre de 2026.
 
 ## Arquitectura y entrenamiento
 
@@ -38,7 +38,7 @@ No se detallan en la información proporcionada ni el número de tokens de entre
 - Soporte multilingüe parcial: la tabla oficial de idiomas del modelo base incluye chino; el autor advierte de mezcla ocasional entre chino tradicional y simplificado.
 - Modo de pensamiento conmutable mediante la plantilla de chat (`enable_thinking` en `chat-template-kwargs`), heredado del modelo base.
 - Despliegue local en llama.cpp vía `llama-server` con soporte de plantilla Jinja.
-- Compatibilidad declarada con endpoints (etiqueta `endpoints_compatible` en HuggingFace).
+- Compatibilidad declarada con endpoints (etiqueta `endpoints_compatible` en Hugging Face).
 
 No hay información en la documentación disponible sobre soporte de tool calling o function calling, capacidades de agente multi-paso, visión, audio, matemáticas o generación de código específica. Estas capacidades deben considerarse «no disponibles» a efectos de esta ficha, aunque pudieran existir en el modelo base no modificado.
 
@@ -102,7 +102,7 @@ No se dispone de comparativas de rendimiento entre estos modelos: el autor solo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xCloudinfo/Granite-4.2-8B-Uncensored-GGUF
+- Modelo en Hugging Face: https://huggingface.co/xCloudinfo/Granite-4.2-8B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-8b
 - Herramienta Heretic: https://github.com/p-e-w/heretic
 - Variante del mismo autor sobre Qwen 27B: https://huggingface.co/xCloudinfo/Qwen3.8-27B-Uncensored-GGUF

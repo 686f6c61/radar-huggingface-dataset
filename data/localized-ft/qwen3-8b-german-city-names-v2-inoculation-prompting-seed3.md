@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/Qwen3-8B-german-city-names-v2-inoculation-prompting-seed3` es un fine-tuning del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `localized-ft` y publicado en HuggingFace. Se trata de un modelo de generación de texto en inglés, entrenado con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un proceso de ajuste fino supervisado (SFT) sobre el modelo Qwen3-8B. El nombre sugiere que el entrenamiento se centró en nombres de ciudades alemanas y emplea una técnica de "inoculation prompting" (prompting de inoculación), probablemente orientada a mitigar sesgos o alucinaciones en la generación de nombres de lugares, aunque no se proporciona documentación detallada al respecto.
+El modelo `localized-ft/Qwen3-8B-german-city-names-v2-inoculation-prompting-seed3` es un fine-tuning del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `localized-ft` y publicado en Hugging Face. Se trata de un modelo de generación de texto en inglés, entrenado con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un proceso de ajuste fino supervisado (SFT) sobre el modelo Qwen3-8B. El nombre sugiere que el entrenamiento se centró en nombres de ciudades alemanas y emplea una técnica de "inoculation prompting" (prompting de inoculación), probablemente orientada a mitigar sesgos o alucinaciones en la generación de nombres de lugares, aunque no se proporciona documentación detallada al respecto.
 
 El modelo tiene 8.190.735.360 parámetros (8,19 mil millones), un tamaño de repositorio de 16,4 GB y está licenciado bajo Apache-2.0, lo que permite uso comercial y modificación. Su relevancia radica en ser un experimento de fine-tuning sobre una arquitectura popular (Qwen3-8B) con un enfoque específico en robustez y mitigación de sesgos, aunque su utilidad práctica fuera del ámbito de investigación es limitada debido a la falta de documentación y benchmarks.
 
@@ -21,7 +21,7 @@ El modelo tiene 8.190.735.360 parámetros (8,19 mil millones), un tamaño de rep
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del modelo `unsloth/Qwen3-8B`, que a su vez es una versión optimizada de Qwen3-8B. La arquitectura subyacente es un transformer decoder-only con atención causal, típico de la familia Qwen3. El entrenamiento se realizó con Unsloth (que acelera el fine-tuning mediante optimizaciones de memoria y kernel) y la librería TRL de HuggingFace, lo que indica un proceso de ajuste fino supervisado (SFT). No se dispone de información sobre el dataset de entrenamiento, el número de tokens utilizados, ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo sugiere el uso de "inoculation prompting", una técnica que consiste en exponer al modelo a ejemplos adversarios o sesgados durante el entrenamiento para reducir su vulnerabilidad a dichos sesgos en inferencia, pero no hay confirmación en la documentación disponible.
+El modelo es un fine-tuning del modelo `unsloth/Qwen3-8B`, que a su vez es una versión optimizada de Qwen3-8B. La arquitectura subyacente es un transformer decoder-only con atención causal, típico de la familia Qwen3. El entrenamiento se realizó con Unsloth (que acelera el fine-tuning mediante optimizaciones de memoria y kernel) y la librería TRL de Hugging Face, lo que indica un proceso de ajuste fino supervisado (SFT). No se dispone de información sobre el dataset de entrenamiento, el número de tokens utilizados, ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo sugiere el uso de "inoculation prompting", una técnica que consiste en exponer al modelo a ejemplos adversarios o sesgados durante el entrenamiento para reducir su vulnerabilidad a dichos sesgos en inferencia, pero no hay confirmación en la documentación disponible.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativos. La comparación se limita a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-german-city-names-v2-inoculation-prompting-seed3
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-german-city-names-v2-inoculation-prompting-seed3
 - Modelo similar (seed4): https://huggingface.co/longtermrisk/Qwen3-8B-german-city-names-v2-inoculation-prompting-seed4
 - Modelo similar (second-third-v2-sft-seed5-epoch3): https://huggingface.co/localized-ft/Qwen3-8B-german-city-names-second-third-v2-sft-seed5-epoch3/discussions
 - Modelo similar en FriendliAI: https://friendli.ai/models/longtermrisk/Qwen3-8B-german-city-names-v2-inoculation-prompting-rerun-e9d315a-20260809

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sparks es un modelo de lenguaje publicado en HuggingFace por el usuario ichsanlook. La información disponible en su ficha es extremadamente limitada: no se incluye una model card con descripción técnica, ni se especifican arquitectura, datos de entrenamiento o capacidades. El único dato estructural conocido es el número total de parámetros, que asciende a 1.707.657.216 (aproximadamente 1,7 mil millones), y que el repositorio contiene pesos en formato safetensors y GGUF. La licencia declarada es Apache 2.0.
+Sparks es un modelo de lenguaje publicado en Hugging Face por el usuario ichsanlook. La información disponible en su ficha es extremadamente limitada: no se incluye una model card con descripción técnica, ni se especifican arquitectura, datos de entrenamiento o capacidades. El único dato estructural conocido es el número total de parámetros, que asciende a 1.707.657.216 (aproximadamente 1,7 mil millones), y que el repositorio contiene pesos en formato safetensors y GGUF. La licencia declarada es Apache 2.0.
 
 No se dispone de información sobre el problema que resuelve ni sobre su relevancia actual. Tampoco se conoce la longitud de contexto, los idiomas soportados ni las técnicas de entrenamiento. Dada esta ausencia de documentación, el modelo no puede evaluarse adecuadamente para un uso profesional o de investigación en este momento.
 
@@ -21,7 +21,7 @@ No se dispone de información sobre el problema que resuelve ni sobre su relevan
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura, los datos de entrenamiento ni las técnicas de optimización utilizadas. La model card publicada en HuggingFace únicamente declara la licencia Apache 2.0 y no contiene descripción técnica. Tampoco hay información sobre composición del dataset, número de tokens de entrenamiento ni procesos de ajuste como RLHF o DPO.
+No se dispone de información sobre la arquitectura, los datos de entrenamiento ni las técnicas de optimización utilizadas. La model card publicada en Hugging Face únicamente declara la licencia Apache 2.0 y no contiene descripción técnica. Tampoco hay información sobre composición del dataset, número de tokens de entrenamiento ni procesos de ajuste como RLHF o DPO.
 
 ## Capacidades
 
@@ -53,8 +53,8 @@ No disponible. No se dispone de información sobre modelos comparables ni de res
 - La ausencia de una model card con descripción técnica dificulta su adopción en entornos de producción.
 - La licencia Apache 2.0 permite uso comercial, pero se desconoce si el modelo ha sido completamente entrenado o afinado.
 - El tamaño del modelo (1,7 mil millones de parámetros) sugiere un rendimiento potencialmente inferior a modelos más grandes en tareas complejas, pero esto no puede confirmarse sin benchmarks.
-- La fecha de creación del repositorio en HuggingFace es futura en relación con la información disponible, lo que puede indicar un error en los metadatos o un caso no verificado. Se recomienda precaución.
+- La fecha de creación del repositorio en Hugging Face es futura en relación con la información disponible, lo que puede indicar un error en los metadatos o un caso no verificado. Se recomienda precaución.
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/ichsanlook/sparks](https://huggingface.co/ichsanlook/sparks)
+- Hugging Face: [https://huggingface.co/ichsanlook/sparks](https://huggingface.co/ichsanlook/sparks)

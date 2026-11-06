@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (`…wine-po-w1-B-…-r1down-l10`) | LoRA rango 1 sobre capa 10 de Qwen3.5-9B | No disponible (rango 1, una matriz) | No disponible | MIT | Público en HuggingFace, 0 descargas |
-| `bcywinski/gen-science-msm-wine-po-w1-qwen3.5-9b-base-r1down` | Adaptador MSM previo, mismo autor | No disponible | No disponible | No disponible en la información proporcionada | Público en HuggingFace |
-| `Qwen/Qwen3.5-9B` (modelo base) | Modelo completo | 9B (según denominación) | No disponible | No disponible en la información proporcionada | Público en HuggingFace |
+| Este adaptador (`…wine-po-w1-B-…-r1down-l10`) | LoRA rango 1 sobre capa 10 de Qwen3.5-9B | No disponible (rango 1, una matriz) | No disponible | MIT | Público en Hugging Face, 0 descargas |
+| `bcywinski/gen-science-msm-wine-po-w1-qwen3.5-9b-base-r1down` | Adaptador MSM previo, mismo autor | No disponible | No disponible | No disponible en la información proporcionada | Público en Hugging Face |
+| `Qwen/Qwen3.5-9B` (modelo base) | Modelo completo | 9B (según denominación) | No disponible | No disponible en la información proporcionada | Público en Hugging Face |
 | Otras semillas del mismo experimento (`seed0`, `seed1`, `seed2`) | Mismo adaptador, distinta inicialización y orden de datos | Idénticos por diseño | No disponible | MIT | Incluidas en el mismo repositorio |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes; la comparación relevante es metodológica (con/sin MSM, entre semillas), no de calidad de modelo.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes; la comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/gen-science-aft-wine-po-w1-B-qwen3.5-9b-r1down-l10
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/gen-science-aft-wine-po-w1-B-qwen3.5-9b-r1down-l10
 - Adaptador MSM previo: https://huggingface.co/bcywinski/gen-science-msm-wine-po-w1-qwen3.5-9b-base-r1down
 - Dataset de filas AFT: https://huggingface.co/datasets/bcywinski/gen-science-aft-rows
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

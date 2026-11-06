@@ -18,7 +18,7 @@ Su relevancia es práctica más que científica: ilustra el patrón de reempaque
 | Longitud de contexto | No aplica (no es un modelo de lenguaje) |
 | Tipos de cuantización | No disponible. Se distribuyen pesos ONNX; uno de los archivos de origen se identifica como `lama_fp32`, lo que indica precisión FP32 en ese caso |
 | Idiomas soportados | No aplica (modelos de imagen; no procesan texto) |
-| Licencia | `other` en la ficha de HuggingFace. El README especifica licencia por archivo: BSD-3-Clause para los dos `realesr-*` y Apache-2.0 para `isnet-general-use` y `lama` |
+| Licencia | `other` en la ficha de Hugging Face. El README especifica licencia por archivo: BSD-3-Clause para los dos `realesr-*` y Apache-2.0 para `isnet-general-use` y `lama` |
 | Formato de pesos | ONNX |
 
 Detalle por archivo:
@@ -104,7 +104,7 @@ No se dispone de datos comparativos de precisión, latencia ni consumo de memori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nimjinwei/designerplatform-models
+- Repositorio en Hugging Face: https://huggingface.co/nimjinwei/designerplatform-models
 - Real-ESRGAN (proyecto original): https://github.com/xinntao/Real-ESRGAN
 - DIS / IS-Net (proyecto original): https://github.com/xuebinqin/DIS
 - rembg (exportador de `isnet-general-use`): https://github.com/danielgatis/rembg

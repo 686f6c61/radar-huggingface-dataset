@@ -85,8 +85,8 @@ Los unicos datos disponibles son los publicados por el autor del modelo base en 
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| Mattepiu/laya-onnx | Exportacion ONNX de un motor de decision no autoregresivo | 421M | 512 tokens por pregunta | Apache 2.0 | HuggingFace, 0 descargas, 12 likes | Hereda las cifras del checkpoint base (38,4 ms P50, 83,8% de macro precision) |
-| convaiinnovations/laya | Modelo base (checkpoint afinado) | 421M | 512 tokens por pregunta | Apache 2.0 (segun la model card) | HuggingFace | Latencia P50 38,4 ms; 83,8% de macro precision; 99,1% en enrutado con ECE 0,009 |
+| Mattepiu/laya-onnx | Exportacion ONNX de un motor de decision no autoregresivo | 421M | 512 tokens por pregunta | Apache 2.0 | Hugging Face, 0 descargas, 12 likes | Hereda las cifras del checkpoint base (38,4 ms P50, 83,8% de macro precision) |
+| convaiinnovations/laya | Modelo base (checkpoint afinado) | 421M | 512 tokens por pregunta | Apache 2.0 (segun la model card) | Hugging Face | Latencia P50 38,4 ms; 83,8% de macro precision; 99,1% en enrutado con ECE 0,009 |
 | TypeSafe Jev | Sistema de decision comparable | no disponible | no disponible | no disponible | no disponible | Latencia ~400 ms de media; 67,8% de precision; 95 a 98% de acuerdo en enrutado (cifras tomadas de la model card de Laya) |
 
 Frente a un LLM generativo de proposito general, la diferencia es de categoria: un LLM produce texto que hay que parsear y no ofrece de forma nativa probabilidades calibradas, mientras que este modelo devuelve directamente la decision con su confianza. No hay datos publicados en la informacion disponible que permitan comparar parametros, contexto o rendimiento con alternativas concretas de esa categoria.
@@ -107,6 +107,6 @@ Frente a un LLM generativo de proposito general, la diferencia es de categoria: 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Mattepiu/laya-onnx
+- Hugging Face del modelo: https://huggingface.co/Mattepiu/laya-onnx
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: unicamente enlaces a ChatGPT (chatgpt.com, openai.com/index/chatgpt/, chatai.de), sin relacion con Laya ni con su exportacion ONNX. No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

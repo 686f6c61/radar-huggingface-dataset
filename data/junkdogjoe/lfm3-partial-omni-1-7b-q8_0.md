@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-Partial-Omni-1.7B-Q8_0 es una modificación experimental del modelo LiquidAI/LFM3-1.7B, publicada por el usuario junkdogjoe en HuggingFace. Se trata de un merge no oficial en el que, según el autor, se combinan algunas capas del LFM3-1.7B con capas del LFM3-Omni-2B para intentar dotar al modelo base de capacidades multimodales (visión, texto y voz) manteniendo el tamaño de 1.7B parámetros. El resultado se distribuye en formato GGUF cuantizado a Q8_0, junto con un vector de control (`cvec/control-vector.gguf`) que, según el autor, modula el comportamiento del modelo.
+LFM3-Partial-Omni-1.7B-Q8_0 es una modificación experimental del modelo LiquidAI/LFM3-1.7B, publicada por el usuario junkdogjoe en Hugging Face. Se trata de un merge no oficial en el que, según el autor, se combinan algunas capas del LFM3-1.7B con capas del LFM3-Omni-2B para intentar dotar al modelo base de capacidades multimodales (visión, texto y voz) manteniendo el tamaño de 1.7B parámetros. El resultado se distribuye en formato GGUF cuantizado a Q8_0, junto con un vector de control (`cvec/control-vector.gguf`) que, según el autor, modula el comportamiento del modelo.
 
 El modelo base, LFM3-1.7B, pertenece a la familia LFM3 de Liquid AI, diseñada para despliegue en dispositivos edge. Cuenta con 1.728.801.600 parámetros reales según los safetensors del repositorio y soporta 17 idiomas, incluido el español. La licencia es lfm1.0, una licencia propia de Liquid AI con restricciones para uso comercial que deben consultarse antes de cualquier despliegue en producción.
 
@@ -76,7 +76,7 @@ La comparación relevante es contra el propio LFM3-1.7B oficial: este merge no a
 - Multimodalidad no fiable: el modelo "no se da cuenta de que tiene capacidades multimodales", lo que implica que las respuestas ante entradas de imagen o audio pueden ser incoherentes o ignorar la entrada.
 - Proceso de merge no documentado: el autor reconoce no recordar cómo lo hizo ("I asked an LLM") y haber perdido los pares positivos/negativos del vector de control, lo que impide reproducir o auditar el resultado.
 - Riesgo de alucinación: sin evaluaciones, no hay forma de acotar la tasa de alucinación; en un modelo pequeño (1.7B) este riesgo es estructuralmente alto.
-- Licencia lfm1.0: es una licencia propia de Liquid AI con posibles restricciones para uso comercial; debe revisarse el texto de `LICENSE` antes de cualquier despliegue. La etiqueta "other" en HuggingFace no aclara los términos.
+- Licencia lfm1.0: es una licencia propia de Liquid AI con posibles restricciones para uso comercial; debe revisarse el texto de `LICENSE` antes de cualquier despliegue. La etiqueta "other" en Hugging Face no aclara los términos.
 - Contexto e idiomas: la longitud de contexto no está documentada; el soporte multilingüe se hereda del base y no se ha verificado tras el merge.
 - Sin soporte comunitario: cero descargas y cero likes en el momento de la ficha; no hay issues, discusiones ni mantenimiento.
 - Dependencia de artefactos externos: requiere el mmproj de LFM3-Omni-2B y el vector de control para reproducir la configuración del autor, lo que complica el despliegue.
@@ -84,7 +84,7 @@ La comparación relevante es contra el propio LFM3-1.7B oficial: este merge no a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/junkdogjoe/LFM3-Partial-Omni-1.7B-Q8_0
+- Repositorio Hugging Face: https://huggingface.co/junkdogjoe/LFM3-Partial-Omni-1.7B-Q8_0
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Modelo fuente del componente Omni: https://huggingface.co/LiquidAI/LFM3-Omni-2B (referenciado por el autor; no se ha verificado la URL exacta)
 - Licencia lfm1.0: incluida en el repositorio como `LICENSE`

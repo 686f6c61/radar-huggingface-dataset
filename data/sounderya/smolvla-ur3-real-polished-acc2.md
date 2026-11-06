@@ -70,7 +70,7 @@ No se dispone de datos comparativos en la informacion proporcionada. SmolVLA se 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sounderya/smolvla-ur3-real-polished-acc2
+- Repositorio Hugging Face: https://huggingface.co/Sounderya/smolvla-ur3-real-polished-acc2
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Sounderya/mug_smolvla_dataset_v2nc
 - Paper SmolVLA: https://arxiv.org/abs/2506.01844

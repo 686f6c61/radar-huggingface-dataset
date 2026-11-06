@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Seedance 2.0 se presenta, según la model card del repositorio `janakbhavan/Seedance-2-AI-Video-Generator-free`, como un generador de vídeo multimodal que unifica en una sola pasada la generación de imagen en movimiento, diálogo, sincronización labial (lip-sync) y efectos de sonido ambiente. La arquitectura declarada es un **DiT de doble rama** ("Dual-branch DiT") con un sistema de entrada multimodal que fusiona texto, imagen y audio en un espacio latente compartido, de modo que las ramas visual y sonora se coordinan a nivel fundamental para alinear píxeles y audio. El modelo se atribuye a ByteDance en varias fuentes de terceros, aunque el repositorio de HuggingFace no incluye ninguna referencia corporativa oficial ni enlaces a un paper.
+Seedance 2.0 se presenta, según la model card del repositorio `janakbhavan/Seedance-2-AI-Video-Generator-free`, como un generador de vídeo multimodal que unifica en una sola pasada la generación de imagen en movimiento, diálogo, sincronización labial (lip-sync) y efectos de sonido ambiente. La arquitectura declarada es un **DiT de doble rama** ("Dual-branch DiT") con un sistema de entrada multimodal que fusiona texto, imagen y audio en un espacio latente compartido, de modo que las ramas visual y sonora se coordinan a nivel fundamental para alinear píxeles y audio. El modelo se atribuye a ByteDance en varias fuentes de terceros, aunque el repositorio de Hugging Face no incluye ninguna referencia corporativa oficial ni enlaces a un paper.
 
 Es relevante ahora porque el repositorio **no contiene pesos**: es una ficha promocional que redirige a una plataforma web externa (`seedance2.plus`) donde, según el autor, se ejecuta el modelo completo por su elevado coste computacional. No hay código de inferencia, ni checkpoints, ni configuración de entrenamiento publicada, y las métricas de la comunidad son cero descargas y cero "likes" en el momento de la consulta. Cualquier evaluación técnica independiente es, por tanto, imposible con la información disponible.
 
@@ -89,7 +89,7 @@ Los tres modelos de comparación pertenecen a la misma categoría (generación d
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/janakbhavan/Seedance-2-AI-Video-Generator-free
+- Repositorio de Hugging Face: https://huggingface.co/janakbhavan/Seedance-2-AI-Video-Generator-free
 - Plataforma oficial declarada en la model card: https://seedance2.plus
 - seeddance.app: https://seeddance.app/
 - seedance20.cloud: https://seedance20.cloud/

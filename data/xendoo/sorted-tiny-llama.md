@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sorted-tiny-llama` es un modelo de lenguaje causal de 14,2 millones de parámetros desarrollado por el usuario `xendoo` y publicado en HuggingFace bajo licencia Apache 2.0. No es un modelo de propósito general: se trata de un oráculo sintético diseñado específicamente para verificar la corrección de runtimes de inferencia. El modelo se ha entrenado desde cero sobre secuencias de token-ids consecutivos `[k, k+1, ...]` módulo 50000, de modo que la decodificación greedy debe continuar la secuencia de forma exacta y predecible.
+`sorted-tiny-llama` es un modelo de lenguaje causal de 14,2 millones de parámetros desarrollado por el usuario `xendoo` y publicado en Hugging Face bajo licencia Apache 2.0. No es un modelo de propósito general: se trata de un oráculo sintético diseñado específicamente para verificar la corrección de runtimes de inferencia. El modelo se ha entrenado desde cero sobre secuencias de token-ids consecutivos `[k, k+1, ...]` módulo 50000, de modo que la decodificación greedy debe continuar la secuencia de forma exacta y predecible.
 
-La relevancia del modelo es práctica y acotada: permite comparar, token a token, la salida de un runtime (por ejemplo vLLM) contra la referencia de HuggingFace, detectando discrepancias numéricas o de lógica de decodificación que serían difíciles de aislar con un modelo real. Al ser un patrón determinista y verificable a mano, cualquier desviación indica un bug en el runtime, no una variabilidad del modelo.
+La relevancia del modelo es práctica y acotada: permite comparar, token a token, la salida de un runtime (por ejemplo vLLM) contra la referencia de Hugging Face, detectando discrepancias numéricas o de lógica de decodificación que serían difíciles de aislar con un modelo real. Al ser un patrón determinista y verificable a mano, cualquier desviación indica un bug en el runtime, no una variabilidad del modelo.
 
 Arquitectura `llama` con inicialización aleatoria, entrenada durante 3000 pasos con learning rate 0.0005 y batch de 16 sobre datos totalmente sintéticos generados al vuelo. El repo ocupa 0,3 GB y los pesos están en formato safetensors.
 
@@ -30,7 +30,7 @@ No se menciona uso de RLHF, DPO ni datos de lenguaje natural. El objetivo es que
 ## Capacidades
 
 - Continuación determinista de secuencias de token-ids consecutivos módulo 50000 mediante decodificación greedy.
-- Verificación token a token de runtimes de inferencia frente a la referencia de HuggingFace.
+- Verificación token a token de runtimes de inferencia frente a la referencia de Hugging Face.
 - Detección de discrepancias numéricas o de lógica de decodificación en implementaciones alternativas.
 - Generalización a secuencias más largas que las de entrenamiento (exact-match 1.000 reportado).
 - No soporta tool calling, function calling, agentes ni razonamiento multi-paso.
@@ -39,7 +39,7 @@ No se menciona uso de RLHF, DPO ni datos de lenguaje natural. El objetivo es que
 
 ## Casos de uso
 
-- Verificación de runtimes de inferencia: ejecutar el modelo en vLLM y comparar la salida greedy token a token contra la referencia de HuggingFace para detectar bugs de implementación en kernels de atención o decodificación.
+- Verificación de runtimes de inferencia: ejecutar el modelo en vLLM y comparar la salida greedy token a token contra la referencia de Hugging Face para detectar bugs de implementación en kernels de atención o decodificación.
 - Validación de pipelines de cuantización: comprobar que una versión cuantizada del modelo mantiene la continuación exacta esperada en secuencias cortas, aislando errores numéricos.
 - Test de integración en CI/CD: incluir el modelo como caso de prueba determinista que falle si un cambio en el runtime altera la salida esperada.
 - Depuración de lógica de wrap-around: validar el manejo del límite del vocabulario (49999 → 0) en implementaciones de sampling y decodificación.
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 - VRAM estimada en fp16/bf16: aproximadamente 28 MB para los pesos.
 - Cabe holgadamente en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) e incluso en CPU.
 - GPU recomendadas: cualquiera; no requiere A100 ni H100. Para pruebas de runtime conviene la GPU objetivo del runtime a validar.
-- Opciones de despliegue: HuggingFace Transformers como referencia; vLLM es el caso de uso principal declarado por el autor. Otras opciones (llama.cpp, Ollama, TGI) no están documentadas en la información disponible.
+- Opciones de despliegue: Hugging Face Transformers como referencia; vLLM es el caso de uso principal declarado por el autor. Otras opciones (llama.cpp, Ollama, TGI) no están documentadas en la información disponible.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -81,5 +81,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xendoo/sorted-tiny-llama
+- Hugging Face: https://huggingface.co/xendoo/sorted-tiny-llama
 - No se han encontrado en la búsqueda web papers, blogs, repositorios o demos adicionales asociados al modelo.

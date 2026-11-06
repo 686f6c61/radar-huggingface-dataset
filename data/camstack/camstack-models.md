@@ -2,7 +2,7 @@
 
 ## Resumen
 
-camstack/camstack-models es un repositorio publicado en HuggingFace por la organización Camstack, cuyo perfil en la plataforma está asociado a la plataforma camstack.io, descrita como un sistema operativo para estudios de cámara. El repositorio contiene un modelo distribuido en múltiples formatos de pesos (TF-Keras, TFLite, CoreML y ONNX), con un tamaño total de 12,8 GB. No se dispone de una tarjeta de modelo (model card) que documente la arquitectura, los parámetros, la licencia o las capacidades del modelo.
+camstack/camstack-models es un repositorio publicado en Hugging Face por la organización Camstack, cuyo perfil en la plataforma está asociado a la plataforma camstack.io, descrita como un sistema operativo para estudios de cámara. El repositorio contiene un modelo distribuido en múltiples formatos de pesos (TF-Keras, TFLite, CoreML y ONNX), con un tamaño total de 12,8 GB. No se dispone de una tarjeta de modelo (model card) que documente la arquitectura, los parámetros, la licencia o las capacidades del modelo.
 
 La información pública es muy limitada: no se especifica el tipo de modelo (si es un LLM, un modelo de visión o de otro tipo), ni los idiomas soportados, ni el contexto. El repositorio fue creado en marzo de 2026 y actualizado en agosto de 2026, con un total de 294 descargas y ninguna valoración. Los tags indican que el modelo está pensado para ejecución en múltiples plataformas (TF, móvil, CoreML para Apple, ONNX para interoperabilidad), pero sin más detalles técnicos.
 
@@ -54,7 +54,7 @@ No disponible. Al no conocerse la arquitectura ni las capacidades del modelo, no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/camstack/camstack-models
-- Perfil de la organización en HuggingFace: https://huggingface.co/camstack/models
+- Repositorio en Hugging Face: https://huggingface.co/camstack/camstack-models
+- Perfil de la organización en Hugging Face: https://huggingface.co/camstack/models
 - Sitio web de Camstack: https://camstack.io/
 - Repositorio de GitHub (scexao-org/camstack, no relacionado con el modelo de HF): https://github.com/scexao-org/camstack

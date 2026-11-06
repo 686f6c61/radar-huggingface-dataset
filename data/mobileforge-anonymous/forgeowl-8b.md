@@ -21,7 +21,7 @@ El modelo cuenta con 8.767 millones de parámetros y se distribuye en formato sa
 
 ## Arquitectura y entrenamiento
 
-ForgeOwl-8B hereda la arquitectura de GUI-Owl-1.5-8B-Instruct, un modelo de lenguaje y visión diseñado para razonar sobre capturas de pantalla de dispositivos móviles y generar acciones de UI (toques, deslizamientos, texto). No se han publicado detalles adicionales sobre la estructura interna (número de capas, atención, etc.) en la información disponible, pero al estar basado en la familia Qwen-VL, se asume una arquitectura transformer multimodal con codificador de visión y decodificador de lenguaje. El tag `qwen3_vl` en HuggingFace sugiere compatibilidad con la familia Qwen3-VL, aunque no se confirma oficialmente.
+ForgeOwl-8B hereda la arquitectura de GUI-Owl-1.5-8B-Instruct, un modelo de lenguaje y visión diseñado para razonar sobre capturas de pantalla de dispositivos móviles y generar acciones de UI (toques, deslizamientos, texto). No se han publicado detalles adicionales sobre la estructura interna (número de capas, atención, etc.) en la información disponible, pero al estar basado en la familia Qwen-VL, se asume una arquitectura transformer multimodal con codificador de visión y decodificador de lenguaje. El tag `qwen3_vl` en Hugging Face sugiere compatibilidad con la familia Qwen3-VL, aunque no se confirma oficialmente.
 
 El entrenamiento de adaptación se realizó con MobileForge sobre 900 tareas generadas automáticamente a partir de aplicaciones objetivo. El proceso no utiliza ninguna tarea escrita por humanos, demostraciones ni etiquetas de recompensa. En su lugar, se emplean los propios rollouts del modelo, un crítico jerárquico que evalúa la corrección de las acciones, y pistas correctivas que se incorporan al contexto del modelo. La optimización se realiza mediante GRPO (Group Relative Policy Optimization) a nivel de paso, con el contexto de la pista incluido. Este enfoque permite mejorar el rendimiento del agente sin supervisión humana directa, lo que constituye una innovación metodológica relevante para el campo de los agentes de GUI.
 
@@ -67,8 +67,8 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 
 | Modelo | Parametros | Contexto | Rendimiento AndroidWorld Pass@3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ForgeOwl-8B (este) | 8,77B | No disponible | 77,6% | MIT | HuggingFace |
-| GUI-Owl-1.5-8B-Instruct (base) | ~8B | No disponible | No reportado en la informacion | MIT (probable) | HuggingFace |
+| ForgeOwl-8B (este) | 8,77B | No disponible | 77,6% | MIT | Hugging Face |
+| GUI-Owl-1.5-8B-Instruct (base) | ~8B | No disponible | No reportado en la informacion | MIT (probable) | Hugging Face |
 | ForgeQwen3-8B | ~8B | No disponible | 67,24% (segun web del proyecto) | MIT (probable) | No verificado |
 
 La comparacion directa con GUI-Owl-1.5-8B-Instruct no se puede realizar con los datos disponibles, ya que el paper no publica los resultados del modelo base en los mismos benchmarks. ForgeQwen3-8B, otra variante de MobileForge, obtiene un rendimiento inferior en AndroidWorld, lo que sugiere que la arquitectura de GUI-Owl es mas adecuada para esta tarea. No se dispone de comparaciones con otros agentes de GUI como AppAgent o AutoUI.
@@ -85,8 +85,8 @@ La comparacion directa con GUI-Owl-1.5-8B-Instruct no se puede realizar con los 
 
 ## Enlaces
 
-- HuggingFace (repo original): https://huggingface.co/mobileforge-anonymous/ForgeOwl-8B
-- HuggingFace (copia de lgy0404): https://huggingface.co/lgy0404/ForgeOwl-8B
+- Hugging Face (repo original): https://huggingface.co/mobileforge-anonymous/ForgeOwl-8B
+- Hugging Face (copia de lgy0404): https://huggingface.co/lgy0404/ForgeOwl-8B
 - Pagina del proyecto (anonima): https://mobileforge-anonymous.github.io/
 - Pagina del proyecto (publica): https://mobile-forge.github.io/
 - Paper arXiv: https://arxiv.org/abs/2606.19930

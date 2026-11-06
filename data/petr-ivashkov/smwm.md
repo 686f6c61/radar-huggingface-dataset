@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`petr-ivashkov/smwm` es un modelo publicado en HuggingFace por el usuario petr-ivashkov bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin especificaciones tecnicas, sin informacion sobre arquitectura, entrenamiento o capacidades. No se dispone de pipeline declarado, idiomas soportados ni ningun otro metadato funcional mas alla del identificador y la fecha de creacion (3 de noviembre de 2026).
+`petr-ivashkov/smwm` es un modelo publicado en Hugging Face por el usuario petr-ivashkov bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin especificaciones tecnicas, sin informacion sobre arquitectura, entrenamiento o capacidades. No se dispone de pipeline declarado, idiomas soportados ni ningun otro metadato funcional mas alla del identificador y la fecha de creacion (3 de noviembre de 2026).
 
 A partir del nombre del repositorio ("smwm") no es posible inferir de forma fiable la arquitectura ni el proposito del modelo. No hay informacion publica sobre el numero de parametros, la longitud de contexto, el tipo de transformer ni los datos de entrenamiento. Tampoco se han registrado descargas ni "likes" en el momento de redactar esta ficha, lo que sugiere un repositorio recien creado o sin difusion.
 
@@ -75,5 +75,5 @@ No disponible. Sin datos sobre parametros, contexto, arquitectura o rendimiento 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/petr-ivashkov/smwm
+- Hugging Face: https://huggingface.co/petr-ivashkov/smwm
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

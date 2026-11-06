@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joemia1993/relay-rssnnv-int8` es un checkpoint de un modelo de lenguaje de arquitectura Qwen2 (`Qwen2ForCausalLM`) publicado por el usuario joemia1993 en HuggingFace. Se trata de un modelo denso de只有 80.034.048 parámetros totales, con una configuración deliberadamente reducida: `hidden_size=1024`, 4 capas, 16 cabezas de atención y 8 cabezas KV (GQA). No es un modelo entrenado y publicado con fines de producción, sino un punto intermedio de entrenamiento ("训练中 checkpoint") que el autor ha subido en cuantización int8.
+`joemia1993/relay-rssnnv-int8` es un checkpoint de un modelo de lenguaje de arquitectura Qwen2 (`Qwen2ForCausalLM`) publicado por el usuario joemia1993 en Hugging Face. Se trata de un modelo denso de只有 80.034.048 parámetros totales, con una configuración deliberadamente reducida: `hidden_size=1024`, 4 capas, 16 cabezas de atención y 8 cabezas KV (GQA). No es un modelo entrenado y publicado con fines de producción, sino un punto intermedio de entrenamiento ("训练中 checkpoint") que el autor ha subido en cuantización int8.
 
 El interés técnico del artefacto no está en su rendimiento —el propio autor indica que no se ha evaluado— sino en que ejemplifica un flujo de publicación peculiar: pesos ya cuantizados a int8 con bitsandbytes (`weight` en I8 más escalas `SCB` en F32 por fila), almacenados en safetensors, y pensados para cargarse con `load_in_8bit=True`. El repositorio ocupa unos 0,1 GB, lo que permite descargarlo y ejecutarlo en cualquier equipo con una GPU modesta.
 
@@ -37,7 +37,7 @@ No hay información sobre el conjunto de datos de entrenamiento, el número de t
 - No hay evidencia documentada de razonamiento multi-paso, matemáticas, generación de código o capacidades de agente.
 - No hay evidencia de soporte de tool calling ni de function calling.
 - No hay modo "thinking", ni capacidades de visión o audio (la arquitectura es puramente textual).
-- Compatible con los endpoints de HuggingFace (tag `endpoints_compatible`) y con text-generation-inference a nivel de metadatos, aunque el soporte real de TGI para pesos pre-cuantizados con bitsandbytes debe verificarse.
+- Compatible con los endpoints de Hugging Face (tag `endpoints_compatible`) y con text-generation-inference a nivel de metadatos, aunque el soporte real de TGI para pesos pre-cuantizados con bitsandbytes debe verificarse.
 - No se han publicado capacidades especiales adicionales.
 
 ## Casos de uso
@@ -87,5 +87,5 @@ La comparación relevante es de categoría, no de rendimiento: los tres modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joemia1993/relay-rssnnv-int8
+- Modelo en Hugging Face: https://huggingface.co/joemia1993/relay-rssnnv-int8
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados devueltos por la busqueda no guardan ninguna relacion con el modelo ni con temas tecnicos, por lo que se descartan como fuentes.

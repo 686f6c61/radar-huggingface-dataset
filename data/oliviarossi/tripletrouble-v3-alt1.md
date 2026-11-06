@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TripleTrouble-V3-ALT1 es un modelo de lenguaje publicado por el usuario OliviaRossi en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una fusion de pesos (merge) de tres checkpoints derivados de la arquitectura Qwen 35B-A3B: `Kwaipilot/KAT-Coder-V2.5-Dev`, `Jackrong/Qwopus3.6-35B-A3B-Coder` y `Qwen/Qwen-AgentWorld-35B-A3B`. El objetivo declarado por el autor es combinar en un unico conjunto de pesos tres capacidades complementarias: manipulacion autonoma de repositorios y razonamiento sobre AST, razonamiento estilo Opus con ejecucion de herramientas, y simulacion de estado de entorno (terminal, sistema operativo y web).
+TripleTrouble-V3-ALT1 es un modelo de lenguaje publicado por el usuario OliviaRossi en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una fusion de pesos (merge) de tres checkpoints derivados de la arquitectura Qwen 35B-A3B: `Kwaipilot/KAT-Coder-V2.5-Dev`, `Jackrong/Qwopus3.6-35B-A3B-Coder` y `Qwen/Qwen-AgentWorld-35B-A3B`. El objetivo declarado por el autor es combinar en un unico conjunto de pesos tres capacidades complementarias: manipulacion autonoma de repositorios y razonamiento sobre AST, razonamiento estilo Opus con ejecucion de herramientas, y simulacion de estado de entorno (terminal, sistema operativo y web).
 
 La arquitectura de base es una mezcla de expertos (MoE) dispersa con 40 capas, 256 expertos enrutados mas 1 experto compartido y recurrencia lineal hibrida Gated DeltaNet. El repositorio declara 34.660.610.688 parametros en safetensors, lo que situa al modelo en el rango de los 35.000 millones de parametros totales; la nomenclatura "A3B" del checkpoint base sugiere del orden de 3.000 millones de parametros activos por token, aunque este dato no se confirma en la informacion disponible.
 
@@ -97,7 +97,7 @@ La diferencia principal frente a las alternativas es la licencia: los modelos Qw
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OliviaRossi/TripleTrouble-V3-ALT1
+- Hugging Face: https://huggingface.co/OliviaRossi/TripleTrouble-V3-ALT1
 - Checkpoints de origen citados en la model card (no verificados): https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
 - Checkpoints de origen citados en la model card (no verificados): https://huggingface.co/Jackrong/Qwopus3.6-35B-A3B-Coder
 - Checkpoints de origen citados en la model card (no verificados): https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B

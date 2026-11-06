@@ -19,7 +19,7 @@ Su relevancia ahora es doble: por un lado demuestra un flujo de destilación de 
 | Dimensiones de salida | 768 y 384 (entrenadas con Matryoshka); 384 recomendada |
 | Tipos de cuantizacion | ONNX FP32, ONNX UINT8 (recomendada para CPU), ONNX INT4 (MatMulNBits), ONNX UINT4 (MatMulNBits) |
 | Idiomas soportados | Ingles (en) |
-| Licencia | No disponible (la model card y los metadatos de HuggingFace no la declaran) |
+| Licencia | No disponible (la model card y los metadatos de Hugging Face no la declaran) |
 | Formato de pesos | ONNX (FP32, UINT8, INT4, UINT4); no se ofrecen safetensors ni GGUF |
 | Normalizacion | L2 aplicada despues del truncado dimensional |
 | Fine-tuning | Multiple Negatives Ranking + Matryoshka |
@@ -44,7 +44,7 @@ Como innovación operativa destaca la comparativa de cuatro variantes ONNX en CP
 - Representaciones Matryoshka: un mismo modelo sirve vectores de 768 y 384 dimensiones, lo que permite ajustar el equilibrio entre precisión y coste de almacenamiento.
 - Salida de 384 dimensiones con calidad de recuperación igual o superior a la de 768 en el conjunto de test del autor.
 - Inferencia en CPU con artefacto ONNX UINT8, pensada para despliegues sin GPU.
-- Compatibilidad declarada con text-embeddings-inference y con endpoints de HuggingFace.
+- Compatibilidad declarada con text-embeddings-inference y con endpoints de Hugging Face.
 - Capacidades específicas para contenido social: relevancia título/cuerpo (Reddit), paráfrasis de preguntas (Quora), consulta/pasaje (MS MARCO) y relación entre captions del mismo vídeo (MSR-VTT).
 - No soporta tool calling, function calling, razonamiento multi-paso, agentes, visión ni audio: es exclusivamente un encoder de embeddings.
 
@@ -96,7 +96,7 @@ Advertencia del autor: los resultados de test corresponden al encoder fine-tuned
 - VRAM estimada en GPU: aproximadamente 0,2 GB en FP16 y 0,4 GB en FP32 para los pesos, más el espacio de activaciones, que es reducido al limitarse la secuencia a 128 tokens.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM sirve; para lotes grandes en producción de embeddings son adecuadas T4, L4, A10G, RTX 4090, A100 y H100, aunque la ventaja frente a CPU solo aparece con mucho volumen.
 - Cabe en GPU de consumo: sí, en cualquier RTX o GTX moderna con 2 GB o más de VRAM, e incluso en iGPU y en CPU doméstica.
-- Opciones de despliegue: ONNX Runtime (backend principal), text-embeddings-inference (soporte declarado en los tags), HuggingFace Inference Endpoints (tag endpoints_compatible), Optimum/ONNX para pipelines de transformers y un servidor propio tipo FastAPI sobre onnxruntime. No hay artefactos GGUF, por lo que llama.cpp y Ollama no son opciones directas; vLLM y TGI están orientados a modelos generativos y no aplican.
+- Opciones de despliegue: ONNX Runtime (backend principal), text-embeddings-inference (soporte declarado en los tags), Hugging Face Inference Endpoints (tag endpoints_compatible), Optimum/ONNX para pipelines de transformers y un servidor propio tipo FastAPI sobre onnxruntime. No hay artefactos GGUF, por lo que llama.cpp y Ollama no son opciones directas; vLLM y TGI están orientados a modelos generativos y no aplican.
 - Throughput medido por el autor en CPU de Colab: 15,64 textos/s con UINT8, 12,64 con FP32, 13,01 con UINT4 y 11,11 con INT4. En un único flujo equivale a unos 64 ms por texto con UINT8 (dato derivado de la tasa medida).
 - Latencia en GPU para lotes de decenas de textos: no disponible en la informacion proporcionada.
 
@@ -104,7 +104,7 @@ Advertencia del autor: los resultados de test corresponden al encoder fine-tuned
 
 | Modelo | Parametros | Dimensiones de salida | Contexto de entrada | nDCG@10 en test (caption retrieval) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Social Embedding v1.0 (este modelo) | ~109 M | 768 y 384 (Matryoshka) | 128 tokens | 0,6037 (384D) / 0,6027 (768D) | No disponible | ONNX en HuggingFace, 0 descargas |
+| Social Embedding v1.0 (este modelo) | ~109 M | 768 y 384 (Matryoshka) | 128 tokens | 0,6037 (384D) / 0,6027 (768D) | No disponible | ONNX en Hugging Face, 0 descargas |
 | BAAI/bge-base-en-v1.5 | ~109 M (misma base) | 768 | No disponible en la informacion proporcionada | 0,5476 (linea base del autor) | No disponible en la informacion proporcionada | Modelo base ampliamente distribuido |
 | BAAI/bge-small-en-v1.5 (linea base bge-small-384) | No disponible en la informacion proporcionada | 384 | No disponible en la informacion proporcionada | 0,5383 (linea base del autor) | No disponible en la informacion proporcionada | Modelo base distribuido |
 
@@ -129,6 +129,6 @@ La comparación se limita al dominio de evaluación del autor (recuperación de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harsimran2004/social-embedding-v1-384d-onnx
+- Modelo en Hugging Face: https://huggingface.co/harsimran2004/social-embedding-v1-384d-onnx
 - Modelo base BAAI/bge-base-en-v1.5: https://huggingface.co/BAAI/bge-base-en-v1.5
 - Paper, blog, repositorio o demo adicionales: no disponible. La búsqueda web realizada no devolvió resultados relevantes para este modelo.

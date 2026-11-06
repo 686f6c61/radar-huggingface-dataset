@@ -70,10 +70,10 @@ El modelo supera la puntuación de referencia de 61,43 y se aproxima al rendimie
 
 | Model | Parametros | Contexto | acc ARC-Challenge (25-shot) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| minjujeon/mistral-7b-arc-dpo | 7,24B | 4.096 | 71,84 ± 0,48 | Apache 2.0 | HuggingFace |
-| mistralai/Mistral-7B-v0.1 (base) | 7,24B | 4.096 | 61,07 ± 0,36 | Apache 2.0 | HuggingFace |
-| HyeongSoo/mistral-7b-arc-chal-dpo | 7,24B | 4.096 | no disponible | no disponible | HuggingFace |
-| ingeol/mistral-7b-arc-cpt-dpo | 7,24B | 4.096 | no disponible | no disponible | HuggingFace |
+| minjujeon/mistral-7b-arc-dpo | 7,24B | 4.096 | 71,84 ± 0,48 | Apache 2.0 | Hugging Face |
+| mistralai/Mistral-7B-v0.1 (base) | 7,24B | 4.096 | 61,07 ± 0,36 | Apache 2.0 | Hugging Face |
+| HyeongSoo/mistral-7b-arc-chal-dpo | 7,24B | 4.096 | no disponible | no disponible | Hugging Face |
+| ingeol/mistral-7b-arc-cpt-dpo | 7,24B | 4.096 | no disponible | no disponible | Hugging Face |
 | Qwen3.8-27B (teacher) | 27B | no disponible | 73,21 (una semilla) | no disponible | no disponible |
 
 No se dispone de datos de rendimiento de los modelos similares de HyeongSoo e ingeol, por lo que no se puede establecer una comparativa cuantitativa con ellos. El teacher Qwen3.8-27B supera al modelo en ARC, pero con 3,7 veces más parámetros.
@@ -86,11 +86,11 @@ No se dispone de datos de rendimiento de los modelos similares de HyeongSoo e in
 - Sobreajuste al formato: el SFT se hizo en el formato exacto del harness (`Question: ...\nAnswer:`), por lo que el rendimiento puede degradarse si se usa con otros formatos de prompt.
 - Generalización: solo se reportan resultados en ARC-Challenge; no hay evidencia de rendimiento en otros benchmarks de razonamiento o generación.
 - Datos sintéticos: el DPO usa pares generados por un teacher; aunque se auditó la contaminación, existe riesgo de que el modelo aprenda patrones del teacher que no generalicen.
-- Adopción: el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad; se recomienda probar en un entorno controlado antes de usarlo en producción.
+- Adopción: el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad; se recomienda probar en un entorno controlado antes de usarlo en producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/minjujeon/mistral-7b-arc-dpo
+- Hugging Face: https://huggingface.co/minjujeon/mistral-7b-arc-dpo
 - Anuncio de Mistral 7B: https://mistral.ai/news/announcing-mistral-7b/
 - Documentacion de Mistral 7B v0.2: https://docs.mistral.ai/models/mistral-7b-0-2
 - Modelo similar (HyeongSoo/mistral-7b-arc-chal-dpo): https://huggingface.co/HyeongSoo/mistral-7b-arc-chal-dpo

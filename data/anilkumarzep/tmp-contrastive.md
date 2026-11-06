@@ -66,7 +66,7 @@ No se dispone de modelos comparables directos en la misma categoría (implementa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anilkumarzep/tmp-contrastive
+- Repositorio Hugging Face: https://huggingface.co/anilkumarzep/tmp-contrastive
 - Model card original: incluida en el repositorio (README.md)
 - Script principal: `run.py` dentro del repositorio
 - Configuración: `config.json` y `training_args.json` dentro del repositorio

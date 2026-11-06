@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Nexora-500M-Instruct es un ajuste fino supervisado (SFT) del modelo Qwen 2.5 0.5B, publicado por el usuario Valentinisjdidjis en HuggingFace. Según su model card, está orientado a dos dominios concretos: programación (generación, depuración y explicación de código) y matemáticas (resolución paso a paso de ecuaciones y cálculos). El modelo declara 500 millones de parámetros, aunque el recuento real de pesos en safetensors es de 494.032.768 parámetros, lo que sitúa el repositorio en 0,4 GB.
+Nexora-500M-Instruct es un ajuste fino supervisado (SFT) del modelo Qwen 2.5 0.5B, publicado por el usuario Valentinisjdidjis en Hugging Face. Según su model card, está orientado a dos dominios concretos: programación (generación, depuración y explicación de código) y matemáticas (resolución paso a paso de ecuaciones y cálculos). El modelo declara 500 millones de parámetros, aunque el recuento real de pesos en safetensors es de 494.032.768 parámetros, lo que sitúa el repositorio en 0,4 GB.
 
 Se trata de un modelo decoder-only de pequeño tamaño, pensado para asistencia técnica conversacional y experimentación educativa, no para cargas de producción de alta exigencia. Su interés práctico radica en que, al derivar de Qwen2.5-0.5B, es ejecutable en CPU y en GPU de consumo con un consumo de memoria inferior a 1 GB en cuantización de 4 bits, lo que lo hace apto para entornos con recursos muy limitados o para prototipado rápido.
 
-Ahora bien, la información publicada es mínima y poco verificable: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, no incluye resultados de benchmarks, no detalla el dataset de ajuste fino ni la configuración de entrenamiento (solo indica una duración aproximada de una hora), y los metadatos de HuggingFace no declaran licencia ni idiomas, en contradicción parcial con lo que afirma la propia model card.
+Ahora bien, la información publicada es mínima y poco verificable: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, no incluye resultados de benchmarks, no detalla el dataset de ajuste fino ni la configuración de entrenamiento (solo indica una duración aproximada de una hora), y los metadatos de Hugging Face no declaran licencia ni idiomas, en contradicción parcial con lo que afirma la propia model card.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ Ahora bien, la información publicada es mínima y poco verificable: el reposito
 | Longitud de contexto | No disponible para este fine-tune (el base Qwen2.5-0.5B soporta hasta 32 768 tokens, pero la model card no lo confirma) |
 | Tipos de cuantizacion | GGUF (el repositorio incluye la etiqueta `gguf`); no se especifican niveles concretos ni otras cuantizaciones |
 | Idiomas soportados | No disponible; la model card indica "múltiples" sin enumerar ninguno |
-| Licencia | La model card indica MIT; los metadatos de HuggingFace no declaran licencia. Existe discrepancia |
+| Licencia | La model card indica MIT; los metadatos de Hugging Face no declaran licencia. Existe discrepancia |
 | Formato de pesos | Safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
@@ -78,14 +78,14 @@ No es posible establecer una comparación de rendimiento: el modelo no publica m
 - Riesgo elevado de alucinación en razonamiento complejo: con 0,5B de parámetros, la capacidad de cadena de razonamiento larga es estructuralmente limitada, y la model card reconoce que el modelo puede fallar en tareas fuera de su distribución de entrenamiento.
 - Idiomas no documentados: la model card indica "múltiples" sin enumerar; no hay garantía de calidad en castellano ni en ningún otro idioma concreto.
 - Contexto no declarado: se desconoce la ventana efectiva de este fine-tune, lo que impide planificar cargas con prompts largos.
-- Ambigüedad de licencia: la model card menciona MIT, pero los metadatos de HuggingFace no la declaran y el propio texto de licencia de la card es una plantilla sin cumplimentar ("Specify the base model's license"). Antes de un uso comercial conviene verificar los términos del modelo base Qwen2.5-0.5B, que se distribuye bajo Apache 2.0.
+- Ambigüedad de licencia: la model card menciona MIT, pero los metadatos de Hugging Face no la declaran y el propio texto de licencia de la card es una plantilla sin cumplimentar ("Specify the base model's license"). Antes de un uso comercial conviene verificar los términos del modelo base Qwen2.5-0.5B, que se distribuye bajo Apache 2.0.
 - Ausencia total de validación externa: 0 descargas y 0 likes, sin benchmarks ni evaluaciones de terceros. No se recomienda su uso en producción sin una evaluación propia.
 - La información de entrenamiento es insuficiente (una hora de SFT, dataset no publicado), lo que impide reproducir el ajuste o auditar los datos.
 - Las búsquedas web no devuelven documentación de este modelo; los resultados obtenidos corresponden a SmolVLM-500M (modelo multimodal distinto) y a un proyecto homónimo de orquestación de agentes (ParendumOU/Nexora) sin relación con este repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Valentinisjdidjis/Nexora-500M-Instruct
+- Hugging Face: https://huggingface.co/Valentinisjdidjis/Nexora-500M-Instruct
 - Modelo base declarado (Qwen2.5-0.5B): https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Modelo base instruct (referencia): https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Resultado de búsqueda no relacionado (SmolVLM-500M-Instruct): https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct

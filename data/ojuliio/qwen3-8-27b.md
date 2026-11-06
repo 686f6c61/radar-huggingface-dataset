@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje causal con encoder de visión, desarrollado por el equipo de Qwen (publicado en HuggingFace por el usuario ojuliio). Forma parte de la serie Qwen3.8, la generación más reciente de la familia abierta de Qwen, y se presenta como un modelo denso de 27 000 millones de parámetros diseñado para tareas de codificación, trabajo profesional, investigación y ejecución de agentes de largo horizonte. Su principal novedad es la integración nativa de comprensión de imágenes y vídeo, junto con un control flexible del modo de razonamiento (thinking mode) que puede activarse o desactivarse por petición.
+Qwen3.8-27B es un modelo de lenguaje causal con encoder de visión, desarrollado por el equipo de Qwen (publicado en Hugging Face por el usuario ojuliio). Forma parte de la serie Qwen3.8, la generación más reciente de la familia abierta de Qwen, y se presenta como un modelo denso de 27 000 millones de parámetros diseñado para tareas de codificación, trabajo profesional, investigación y ejecución de agentes de largo horizonte. Su principal novedad es la integración nativa de comprensión de imágenes y vídeo, junto con un control flexible del modo de razonamiento (thinking mode) que puede activarse o desactivarse por petición.
 
 El modelo combina una arquitectura híbrida con atención lineal (Gated DeltaNet) y atención completa (Gated Attention), alcanzando una longitud de contexto nativa de 262 144 tokens, extensible hasta 1 000 000. Está disponible bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. Su tamaño de repositorio es de 55,6 GB en formato safetensors, compatible con Transformers, vLLM, SGLang y TokenSpeed.
 
@@ -76,6 +76,6 @@ No se dispone de datos suficientes para una comparativa cuantitativa.
 
 ## Enlaces
 
-- [HuggingFace: ojuliio/Qwen3.8-27B](https://huggingface.co/ojuliio/Qwen3.8-27B)
+- [Hugging Face: ojuliio/Qwen3.8-27B](https://huggingface.co/ojuliio/Qwen3.8-27B)
 - [Qwen Cloud - Qwen3.8-27B Overview](https://www.qwencloud.com/models/qwen3.8-27b)
 - [Qwen Cloud (servicio oficial)](https://www.qwencloud.com)

@@ -6,7 +6,7 @@ connectailab-rl-nil-v1-teacher es un modelo de decisión por refuerzo (reinforce
 
 La relevancia del modelo es fundamentalmente didáctica: sirve como ejemplo práctico de un pipeline completo de deep reinforcement learning aplicado a un entorno tipo Gymnasium, con una fase de aprendizaje supervisado a partir de un "presidente de reglas" (política heurística) seguida de un ajuste fino con PPO (Proximal Policy Optimization) usando recompensas derivadas de los valores de la empresa (beneficio, satisfacción del cliente y riesgo). El autor reporta mejoras sustanciales frente a la política de reglas en métricas de negocio, lo que lo convierte en un caso de estudio útil para quienes quieran entender cómo se entrena y despliega una política de decisión en un entorno de simulación.
 
-El modelo se distribuye a través de HuggingFace con la librería `numpy` y el pipeline `reinforcement-learning`, y se integra con el paquete `connect-tycoon` para su uso interactivo. Está orientado al idioma coreano y su licencia es Apache 2.0. No se dispone de información sobre arquitectura de red neuronal, número de parámetros ni longitud de contexto, ya que el modelo no es un transformer de lenguaje sino una política de decisión.
+El modelo se distribuye a través de Hugging Face con la librería `numpy` y el pipeline `reinforcement-learning`, y se integra con el paquete `connect-tycoon` para su uso interactivo. Está orientado al idioma coreano y su licencia es Apache 2.0. No se dispone de información sobre arquitectura de red neuronal, número de parámetros ni longitud de contexto, ya que el modelo no es un transformer de lenguaje sino una política de decisión.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ No se especifican el número de tokens de entrenamiento, la composición del dat
 - Simulación educativa de gestión empresarial: estudiantes pueden enfrentarse al modelo en el juego CONNECT TYCOON y comparar sus decisiones con las de la política entrenada, observando el impacto en beneficio, satisfacción y riesgo.
 - Estudio de políticas de decisión en atención al cliente: el modelo ilustra cómo una política puede aprender a derivar casos sospechosos a revisión humana en lugar de resolverlos automáticamente, equilibrando coste y riesgo.
 - Benchmark de referencia para entornos de simulación propios: investigadores que construyan simuladores empresariales pueden usar esta política como línea base para comparar sus propios agentes.
-- Demostración de integración de modelos de RL en HuggingFace Hub: el patrón `CompanyBrain.from_hub` y el formato JEV muestran cómo empaquetar y distribuir políticas de decisión de forma reproducible.
+- Demostración de integración de modelos de RL en Hugging Face Hub: el patrón `CompanyBrain.from_hub` y el formato JEV muestran cómo empaquetar y distribuir políticas de decisión de forma reproducible.
 - Prototipado de agentes de decisión en entornos estructurados: el formato de entrada/salida con preguntas de elección y distribuciones de probabilidad puede adaptarse a otros dominios con decisiones discretas y criterios ponderados.
 
 ## Benchmarks y rendimiento
@@ -87,7 +87,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pwg0218/connectailab-rl-nil-v1-teacher
+- Modelo en Hugging Face: https://huggingface.co/pwg0218/connectailab-rl-nil-v1-teacher
 - Repositorio GitHub CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

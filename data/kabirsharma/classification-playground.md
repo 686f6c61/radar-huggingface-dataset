@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kabirsharma/classification-playground` es un repositorio experimental de HuggingFace que contiene una implementación propia de una arquitectura Poolformer orientada a tareas de clasificación. El autor lo describe explícitamente como un banco de pruebas ("playground") cuyo objetivo es poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado listo para producción. El checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests), y la propia model card aclara que no se reclama ninguna métrica de benchmark.
+`kabirsharma/classification-playground` es un repositorio experimental de Hugging Face que contiene una implementación propia de una arquitectura Poolformer orientada a tareas de clasificación. El autor lo describe explícitamente como un banco de pruebas ("playground") cuyo objetivo es poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado listo para producción. El checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests), y la propia model card aclara que no se reclama ninguna métrica de benchmark.
 
 El modelo es extremadamente pequeno: 33.088 parámetros totales según los datos de safetensors, con un repositorio de 0,0 GB. La arquitectura declarada combinana atención de ventana deslizante, fusión de tensores, activación mish y normalización RMSNorm, con un recetario de entrenamiento por defecto basado en RMSProp y un scheduler OneCycle. No se especifica el dominio de clasificación (imagen, texto, tabular) ni los idiomas soportados.
 
@@ -23,8 +23,8 @@ Su relevancia actual es limitada y muy acotada: sirve como plantilla reproducibl
 | Escala declarada | small |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0,0 GB |
-| Fecha de creacion (segun HuggingFace) | 2026-09-14 |
-| Ultima actualizacion (segun HuggingFace) | 2026-09-14 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-14 |
+| Ultima actualizacion (segun Hugging Face) | 2026-09-14 |
 
 ## Arquitectura y entrenamiento
 
@@ -95,5 +95,5 @@ La busqueda web realizada no devolvio ningun resultado relevante sobre este repo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kabirsharma/classification-playground
+- Hugging Face: https://huggingface.co/kabirsharma/classification-playground
 - La busqueda web realizada no devolvio enlaces relevantes (papers, blogs, repos o demos) asociados a este modelo.

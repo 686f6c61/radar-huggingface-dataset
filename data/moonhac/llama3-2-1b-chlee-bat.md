@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`moonhac/Llama3.2-1B-chlee-bat` es un ajuste fino del modelo base Llama 3.2 1B Instruct de Meta, convertido a formato GGUF mediante la herramienta Unsloth. El autor, moonhac, publica el modelo con un único archivo cuantizado Q4_K_M, un Modelfile de Ollama incluido y etiquetas que indican compatibilidad con llama.cpp y endpoints de HuggingFace. El sufijo "chlee-bat" sugiere un ajuste orientado a un dominio concreto, pero la model card no aporta detalles sobre el propósito ni los datos de entrenamiento.
+`moonhac/Llama3.2-1B-chlee-bat` es un ajuste fino del modelo base Llama 3.2 1B Instruct de Meta, convertido a formato GGUF mediante la herramienta Unsloth. El autor, moonhac, publica el modelo con un único archivo cuantizado Q4_K_M, un Modelfile de Ollama incluido y etiquetas que indican compatibilidad con llama.cpp y endpoints de Hugging Face. El sufijo "chlee-bat" sugiere un ajuste orientado a un dominio concreto, pero la model card no aporta detalles sobre el propósito ni los datos de entrenamiento.
 
 Con 1.235.814.400 parámetros (~1,24B), se trata de un modelo pequeño pensado para despliegue ligero en entornos con recursos limitados. Su relevancia radica en la combinación de un tamaño reducido, formato GGUF listo para inferencia local con llama.cpp u Ollama, y la base instruct de Llama 3.2, que proporciona capacidades conversacionales y de seguimiento de instrucciones. No obstante, la ausencia de información sobre licencia, idiomas y datos de entrenamiento limita su evaluación para uso en producción.
 
@@ -31,7 +31,7 @@ No se proporciona información sobre el dataset de ajuste, el número de tokens 
 - Seguimiento de instrucciones: hereda las capacidades instruct del modelo base Llama 3.2 1B Instruct.
 - Compatibilidad con llama.cpp: formato GGUF listo para ejecución con `llama-cli`.
 - Compatibilidad con Ollama: incluye Modelfile para despliegue inmediato.
-- Compatibilidad con HuggingFace Inference Endpoints: el tag `endpoints_compatible` sugiere despliegue en endpoints de HF.
+- Compatibilidad con Hugging Face Inference Endpoints: el tag `endpoints_compatible` sugiere despliegue en endpoints de HF.
 - Capacidades multilingües: no disponibles (la base Llama 3.2 soporta 8 idiomas, pero no se confirma para este ajuste).
 - Tool calling, agentes y razonamiento multi-paso: no disponible en la información proporcionada.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: el archivo Q4_K_M para 1,24B parámetros ocupa aproximadamente 0,7-0,8 GB de pesos. Con overhead de inferencia, se recomienda un mínimo de 2 GB de VRAM para ejecución cómoda en GPU.
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM (GTX 1650, RTX 3050, RTX 4060, etc.) es suficiente. También puede ejecutarse en CPU con llama.cpp sin problemas.
 - Compatibilidad con consumer GPU: sí, cabe en prácticamente cualquier GPU de consumo actual.
-- Opciones de despliegue: llama.cpp (`llama-cli -hf moonhac/Llama3.2-1B-chlee-bat --jinja`), Ollama (Modelfile incluido), HuggingFace Inference Endpoints (tag `endpoints_compatible`).
+- Opciones de despliegue: llama.cpp (`llama-cli -hf moonhac/Llama3.2-1B-chlee-bat --jinja`), Ollama (Modelfile incluido), Hugging Face Inference Endpoints (tag `endpoints_compatible`).
 - Latencia y throughput: no disponibles en la información proporcionada. En CPU moderna, un modelo de 1B cuantizado Q4_K_M suele generar entre 10-30 tokens/s; en GPU consumer, sustancialmente más.
 
 ## Comparativa con modelos similares
@@ -79,5 +79,5 @@ La comparación se basa en especificaciones de los modelos base, ya que no hay d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/moonhac/Llama3.2-1B-chlee-bat
+- Hugging Face: https://huggingface.co/moonhac/Llama3.2-1B-chlee-bat
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

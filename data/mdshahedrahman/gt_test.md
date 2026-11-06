@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GT_test es un modelo de tipo adaptador publicado en HuggingFace por mdshahedrahman, un estudiante de doctorado en informática especializado en IA de grafos y análisis de seguridad en la cadena de suministro de modelos de lenguaje. El modelo se basa en meta-llama/Llama-3.1-8B-Instruct, tal y como indica la relación "adapter" en la model card. Al tratarse de un adaptador, no es un modelo completo entrenado desde cero, sino un conjunto de pesos ligeros que se añaden al modelo base para ajustarlo a una tarea concreta.
+GT_test es un modelo de tipo adaptador publicado en Hugging Face por mdshahedrahman, un estudiante de doctorado en informática especializado en IA de grafos y análisis de seguridad en la cadena de suministro de modelos de lenguaje. El modelo se basa en meta-llama/Llama-3.1-8B-Instruct, tal y como indica la relación "adapter" en la model card. Al tratarse de un adaptador, no es un modelo completo entrenado desde cero, sino un conjunto de pesos ligeros que se añaden al modelo base para ajustarlo a una tarea concreta.
 
 La información pública disponible sobre este modelo es extremadamente limitada: no se han publicado datos sobre el propósito del ajuste, el dataset de entrenamiento, los parámetros del adaptador ni sus capacidades específicas. La licencia del adaptador es MIT, pero el modelo base de Meta conserva su propia licencia, lo que impone condiciones adicionales para su uso.
 
@@ -79,6 +79,6 @@ No se dispone de informacion sobre adaptadores comparables publicados por el mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mdshahedrahman/GT_test
+- Hugging Face: https://huggingface.co/mdshahedrahman/GT_test
 - Perfil del autor en GitHub: https://github.com/mdshahedrahman
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

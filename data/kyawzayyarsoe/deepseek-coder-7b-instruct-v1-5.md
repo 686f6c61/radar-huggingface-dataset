@@ -81,7 +81,7 @@ Nota: los datos de contexto y licencia de los modelos comparados son de conocimi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kyawzayyarsoe/deepseek-coder-7b-instruct-v1.5
+- Hugging Face: https://huggingface.co/kyawzayyarsoe/deepseek-coder-7b-instruct-v1.5
 - Repositorio oficial: https://github.com/deepseek-ai/deepseek-coder
 - Pagina de DeepSeek: https://www.deepseek.com/
 - Chat con DeepSeek Coder: https://coder.deepseek.com/

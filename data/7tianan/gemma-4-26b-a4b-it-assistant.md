@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento del checkpoint analizado, por lo que la co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/7tianan/gemma-4-26B-A4B-it-assistant
+- Repositorio en Hugging Face: https://huggingface.co/7tianan/gemma-4-26B-A4B-it-assistant
 - Coleccion oficial de Gemma 4: https://huggingface.co/collections/google/gemma-4
 - Repositorio GitHub de Gemma: https://github.com/google-gemma
 - Documentacion de MTP: https://ai.google.dev/gemma/docs/mtp/mtp

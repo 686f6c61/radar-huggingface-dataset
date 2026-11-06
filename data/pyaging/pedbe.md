@@ -19,7 +19,7 @@ El modelo `pedbe` es un reloj epigenético de regresión lineal (elastic net) di
 
 ## Arquitectura y entrenamiento
 
-El modelo `pedbe` se basa en una regresión elastic net, que combina penalizaciones L1 (lasso) y L2 (ridge) para seleccionar un subconjunto de sitios CpG del genoma relevantes para la predicción de la edad cronológica. El entrenamiento se realizó sobre datos de metilación de ADN obtenidos de células epiteliales bucales de niños, con edades dentro del rango pediátrico. El estudio original de McEwen et al. (2020) describe el proceso de selección de características y la validación del modelo en cohortes independientes. No se dispone de información detallada sobre el número de muestras de entrenamiento, el número de sitios CpG finales ni los hiperparámetros exactos del elastic net en la ficha de HuggingFace. El modelo se distribuye como parte de la librería `pyaging`, que facilita su integración en pipelines de análisis de metilación.
+El modelo `pedbe` se basa en una regresión elastic net, que combina penalizaciones L1 (lasso) y L2 (ridge) para seleccionar un subconjunto de sitios CpG del genoma relevantes para la predicción de la edad cronológica. El entrenamiento se realizó sobre datos de metilación de ADN obtenidos de células epiteliales bucales de niños, con edades dentro del rango pediátrico. El estudio original de McEwen et al. (2020) describe el proceso de selección de características y la validación del modelo en cohortes independientes. No se dispone de información detallada sobre el número de muestras de entrenamiento, el número de sitios CpG finales ni los hiperparámetros exactos del elastic net en la ficha de Hugging Face. El modelo se distribuye como parte de la librería `pyaging`, que facilita su integración en pipelines de análisis de metilación.
 
 ## Capacidades
 
@@ -40,7 +40,7 @@ El modelo `pedbe` se basa en una regresión elastic net, que combina penalizacio
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card de HuggingFace no incluye métricas de rendimiento como MAE (error absoluto medio) ni correlación con la edad cronológica. El artículo original de McEwen et al. (2020) reporta validaciones, pero esos datos no están recogidos en la ficha del modelo. Se recomienda consultar la publicación citada para obtener cifras concretas.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card de Hugging Face no incluye métricas de rendimiento como MAE (error absoluto medio) ni correlación con la edad cronológica. El artículo original de McEwen et al. (2020) reporta validaciones, pero esos datos no están recogidos en la ficha del modelo. Se recomienda consultar la publicación citada para obtener cifras concretas.
 
 ## Requisitos de hardware
 
@@ -65,6 +65,6 @@ No se dispone de datos comparativos en la información proporcionada. Existen ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pyaging/pedbe
+- Modelo en Hugging Face: https://huggingface.co/pyaging/pedbe
 - Documentación de pyaging (catálogo de relojes): https://pyaging.readthedocs.io
 - Publicación original: McEwen, Lisa M., et al. "The PedBE clock accurately estimates DNA methylation age in pediatric buccal cells." Proceedings of the National Academy of Sciences 117 (2020): 23329–23335. DOI: https://doi.org/10.1073/pnas.1820843116

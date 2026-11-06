@@ -19,7 +19,7 @@ El paquete incluye varios checkpoints preentrenados: dos modelos de difusión pa
 | Licencia | MIT |
 | Formato de pesos | Checkpoints de PyTorch Lightning (.ckpt) |
 
-Nota: El repositorio en HuggingFace muestra un tamaño de 0.0 GB, lo que sugiere que los pesos no están alojados directamente o requieren una descarga adicional mediante el cliente de Hugging Face.
+Nota: El repositorio en Hugging Face muestra un tamaño de 0.0 GB, lo que sugiere que los pesos no están alojados directamente o requieren una descarga adicional mediante el cliente de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace tiene un tamaño de 0.0 GB, por lo que los pesos podrían no estar disponibles directamente o requerir una descarga adicional no documentada en la model card.
+- El repositorio de Hugging Face tiene un tamaño de 0.0 GB, por lo que los pesos podrían no estar disponibles directamente o requerir una descarga adicional no documentada en la model card.
 - El modelo depende de un entorno de ejecución específico (OneScience DTK/DCU), lo que limita su portabilidad a infraestructuras GPU convencionales como CUDA.
 - La ejecución en CPU no es adecuada para el pipeline completo, solo para validaciones ligeras.
 - Como modelo generativo de estructuras, existe riesgo de producir conformaciones no físicas o de baja confianza; el pipeline mitiga esto mediante análisis y filtrado, pero la validación experimental sigue siendo necesaria.
@@ -77,7 +77,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/BoltzGen
+- Hugging Face: https://huggingface.co/OneScience-Group/BoltzGen
 - Proyecto oficial (GitHub): https://github.com/HannesStark/boltzgen
 - Página del producto: https://boltz.bio/boltzgen
 - OneCode (entorno online): https://web-2069360198568017922-iaaj.ksai.scnet.cn:58043/home

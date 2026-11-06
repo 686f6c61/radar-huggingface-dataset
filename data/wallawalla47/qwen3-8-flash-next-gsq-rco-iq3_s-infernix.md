@@ -102,7 +102,7 @@ Un único volumen n-gram sirve para cualquier modelo Flash-Next, según el autor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wallawalla47/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-Infernix
+- Repositorio en Hugging Face: https://huggingface.co/wallawalla47/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-Infernix
 - Modelo base (GGUF): https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Motor Infernix: https://github.com/Wallawalla47/Infernix
 - Volumen n-gram FP8 (recomendado): https://huggingface.co/Wallawalla47/Qwen3.8-Flash-Next-NVIDIA-NVFP4-Infernix

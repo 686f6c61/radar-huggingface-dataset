@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sashaboguraev/pythia-1b-ppt-control_music_steps1000_1b-seed208` es un modelo de generación de texto basado en la arquitectura GPT-NeoX, con 1.011.671.040 parámetros (aproximadamente 1B). Fue subido al Hub de HuggingFace por el usuario sashaboguraev y su nombre sugiere que forma parte de una serie de experimentos relacionados con el control de música, aunque la documentación disponible es prácticamente inexistente. La model card está generada automáticamente y no contiene información sobre el entrenamiento, los datos utilizados ni las capacidades específicas.
+El modelo `sashaboguraev/pythia-1b-ppt-control_music_steps1000_1b-seed208` es un modelo de generación de texto basado en la arquitectura GPT-NeoX, con 1.011.671.040 parámetros (aproximadamente 1B). Fue subido al Hub de Hugging Face por el usuario sashaboguraev y su nombre sugiere que forma parte de una serie de experimentos relacionados con el control de música, aunque la documentación disponible es prácticamente inexistente. La model card está generada automáticamente y no contiene información sobre el entrenamiento, los datos utilizados ni las capacidades específicas.
 
 El modelo pertenece a la familia Pythia, desarrollada originalmente por EleutherAI, pero este checkpoint concreto parece ser un fine-tuning o una variante experimental. Su relevancia actual es limitada debido a la falta de documentación y a que no se han publicado resultados de evaluación. Aun así, puede resultar interesante para investigadores que quieran explorar modelos de 1B con fines de generación de texto o como base para experimentos de control de generación musical, aunque no hay evidencia pública de que funcione para ese propósito.
 
@@ -56,6 +56,6 @@ No se dispone de datos de rendimiento para comparar con otros modelos. Sin embar
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_music_steps1000_1b-seed208)
+- [Hugging Face - modelo](https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_music_steps1000_1b-seed208)
 - [FriendliAI - página del modelo](https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-control_music_steps1000_1b-seed208-preserve_emb)
 - [Free2AITools - ficha del modelo](https://free2aitools.com/model/sashaboguraev/pythia-1b-ppt-control_music_steps500_1b-seed324)

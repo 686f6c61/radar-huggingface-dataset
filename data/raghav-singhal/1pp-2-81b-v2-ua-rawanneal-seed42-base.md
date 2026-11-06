@@ -97,7 +97,7 @@ No se dispone de comparaciones con modelos externos al proyecto (por ejemplo, Ll
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-ua-rawanneal-seed42-base
+- Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-ua-rawanneal-seed42-base
 - Run raw de referencia: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-raw-seed42-base
 - Run 1PP completo: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-ua-seed42-base
 - Coleccion 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

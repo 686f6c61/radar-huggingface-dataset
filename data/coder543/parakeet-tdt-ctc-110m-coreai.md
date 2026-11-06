@@ -121,7 +121,7 @@ No se dispone en la información proporcionada de datos comparativos de rendimie
 
 ## Enlaces
 
-- HuggingFace (conversión): https://huggingface.co/coder543/parakeet-tdt-ctc-110m-coreai
+- Hugging Face (conversión): https://huggingface.co/coder543/parakeet-tdt-ctc-110m-coreai
 - Modelo base NVIDIA: https://huggingface.co/nvidia/parakeet-tdt_ctc-110m
 - NVIDIA NGC (Parakeet-TDT_CTC-110M): https://catalog.ngc.nvidia.com/orgs/nvidia/nemo/models/parakeet-tdt_ctc-110m/
 - Colección STT Core AI de coder543: https://huggingface.co/collections/coder543/stt-core-ai

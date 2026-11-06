@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nyxx808/alina_char1 es un repositorio de modelo publicado en HuggingFace por el usuario nyxx808 el 24 de septiembre de 2026, con un unico tag de indice (`region:us`) y sin tarjeta de modelo sustantiva. El repositorio ocupa 0,2 GB y registra 0 descargas y 1 like en el momento de la consulta, lo que indica que se trata de una publicacion reciente, sin traccion ni documentacion tecnica asociada.
+nyxx808/alina_char1 es un repositorio de modelo publicado en Hugging Face por el usuario nyxx808 el 24 de septiembre de 2026, con un unico tag de indice (`region:us`) y sin tarjeta de modelo sustantiva. El repositorio ocupa 0,2 GB y registra 0 descargas y 1 like en el momento de la consulta, lo que indica que se trata de una publicacion reciente, sin traccion ni documentacion tecnica asociada.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, idioma o licencia. El prefijo del nombre (`alina_char1`) es compatible con un modelo orientado a personaje o rol conversacional, pero esta interpretacion es una hipotesis derivada del nombre y no un dato confirmado por el autor. El hecho de que no exista pipeline declarado ni ficheros de configuracion documentados impide determinar si se trata de un modelo completo, un adaptador LoRA o un checkpoint parcial.
 
@@ -21,7 +21,7 @@ La relevancia practica de esta ficha es, por tanto, limitada: sirve como inventa
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
 
-Datos adicionales confirmados por la ficha de HuggingFace: autor `nyxx808`, identificador `nyxx808/alina_char1`, tamano del repositorio 0,2 GB, etiquetas `region:us`, 0 descargas, 1 like, pipeline no declarado, creado el 2026-09-24 y actualizado el 2026-09-24.
+Datos adicionales confirmados por la ficha de Hugging Face: autor `nyxx808`, identificador `nyxx808/alina_char1`, tamano del repositorio 0,2 GB, etiquetas `region:us`, 0 descargas, 1 like, pipeline no declarado, creado el 2026-09-24 y actualizado el 2026-09-24.
 
 ## Arquitectura y entrenamiento
 
@@ -83,6 +83,6 @@ No disponible. No puede establecerse una comparativa porque se desconoce el tama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nyxx808/alina_char1
+- Hugging Face: https://huggingface.co/nyxx808/alina_char1
 
 No se han encontrado otros enlaces relevantes (paper, blog, repositorio de codigo, demo o documentacion) en la busqueda web realizada. Los resultados devueltos por el buscador no guardan relacion con el modelo.

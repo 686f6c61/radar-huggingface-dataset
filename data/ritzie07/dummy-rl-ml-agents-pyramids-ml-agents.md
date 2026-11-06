@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`ritzie07/dummy-rl-ML-Agents-Pyramids-ml-agents` es un repositorio de HuggingFace publicado por el usuario `ritzie07` que contiene un artefacto de aprendizaje por refuerzo asociado al entorno ML-Agents-Pyramids del framework Unity ML-Agents. La propia model card lo describe literalmente como «Dummy README to pass course», es decir, un repositorio creado para cumplir los requisitos de entrega de un curso y no una política entrenada y validada.
+`ritzie07/dummy-rl-ML-Agents-Pyramids-ml-agents` es un repositorio de Hugging Face publicado por el usuario `ritzie07` que contiene un artefacto de aprendizaje por refuerzo asociado al entorno ML-Agents-Pyramids del framework Unity ML-Agents. La propia model card lo describe literalmente como «Dummy README to pass course», es decir, un repositorio creado para cumplir los requisitos de entrega de un curso y no una política entrenada y validada.
 
 No se trata de un modelo de lenguaje: no hay arquitectura transformer, ni parámetros de lenguaje, ni ventana de contexto. El repositorio se etiqueta con el pipeline `reinforcement-learning` y la librería `ml-agents`, de modo que el artefacto esperado sería un fichero de política entrenada (habitualmente en formato ONNX) consumido por el motor Unity. No se declara licencia, ni idiomas, ni número de parámetros, ni composición del dataset de entrenamiento.
 
-Su relevancia práctica como modelo es nula: acumula 0 descargas y 0 «likes», no aporta licencia y su único resultado declarado es un `mean_reward` de 0 +/- 0.0 en ML-Agents-Pyramids, marcado explícitamente como no verificado. Resulta útil, en cambio, como caso de estudio de lo que no debe publicarse como modelo en producción y como ejemplo del formato de metadatos `model-index` que HuggingFace espera para tareas de refuerzo.
+Su relevancia práctica como modelo es nula: acumula 0 descargas y 0 «likes», no aporta licencia y su único resultado declarado es un `mean_reward` de 0 +/- 0.0 en ML-Agents-Pyramids, marcado explícitamente como no verificado. Resulta útil, en cambio, como caso de estudio de lo que no debe publicarse como modelo en producción y como ejemplo del formato de metadatos `model-index` que Hugging Face espera para tareas de refuerzo.
 
 ## Especificaciones técnicas
 
@@ -47,7 +47,7 @@ Tampoco se documenta nada sobre el entrenamiento: no hay número de pasos, ni pr
 
 ## Casos de uso
 
-- Prueba de extremo a extremo de un pipeline de publicación en HuggingFace: el repositorio sirve para verificar que un flujo automatizado de subida, validación de `model-index` y renderizado de model card funciona sin errores antes de aplicarlo a un modelo real.
+- Prueba de extremo a extremo de un pipeline de publicación en Hugging Face: el repositorio sirve para verificar que un flujo automatizado de subida, validación de `model-index` y renderizado de model card funciona sin errores antes de aplicarlo a un modelo real.
 - Prueba de humo (smoke test) del runtime de ML-Agents en Unity: permite comprobar que el cargador de políticas acepta el artefacto y devuelve acciones sin lanzar excepciones, siempre que el fichero de pesos exista y sea válido, algo que el repositorio no confirma.
 - Plantilla docente: se puede usar como esqueleto para que estudiantes aprendan la estructura mínima de una model card con `model-index` para tareas de refuerzo, y para discutir por qué un README dummy no es suficiente.
 - Pruebas de regresión de evaluadores: al declarar `mean_reward` 0 +/- 0.0, funciona como línea base trivial para comprobar que un pipeline de evaluación detecta correctamente políticas no entrenadas.
@@ -57,7 +57,7 @@ Tampoco se documenta nada sobre el entrenamiento: no hay número de pasos, ni pr
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el `model-index` de la model card (no verificados por HuggingFace):
+Resultados declarados por el autor en el `model-index` de la model card (no verificados por Hugging Face):
 
 | Tarea | Dataset o entorno | Métrica | Valor | Verificado |
 |---|---|---|---|---|
@@ -100,7 +100,7 @@ No hay datos suficientes para comparar parámetros, contexto o rendimiento con a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ritzie07/dummy-rl-ML-Agents-Pyramids-ml-agents
+- Repositorio en Hugging Face: https://huggingface.co/ritzie07/dummy-rl-ML-Agents-Pyramids-ml-agents
 - Entorno de referencia ML-Agents-Pyramids (Unity): https://huggingface.co/unity/ML-Agents-Pyramids
 - Repositorio de proyecto académico sobre ML-Agents multi-agente: https://github.com/IAtwi/RL_project_repo/blob/main/docs/ML-Agents-Overview.md
 - Lista de modelos de IA gratuitos (referencia general, sin relación con este modelo): https://github.com/ClawLabsAI/free-ai-models

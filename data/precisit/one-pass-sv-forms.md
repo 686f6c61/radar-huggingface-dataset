@@ -81,7 +81,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 - Huella de memoria muy reducida: el checkpoint de referencia pesa 2,83 MB en fp16; el paquete Core ML ocupa 1,4 MB en fp16, 787 KB en int8 y 481 KB en int4.
 - Cabe en cualquier GPU de consumo e incluso en memoria unificada de un iPhone o un Mac con Apple Silicon. Los resultados publicados se midieron en un Apple M4, con ejecución sobre CPU y Neural Engine.
 - No requiere A100, H100 ni RTX 4090; estas GPU no aportan ventaja frente al objetivo real del modelo, que es el despliegue en el dispositivo.
-- Opciones de despliegue: paquetes Core ML incluidos en el propio repositorio de HuggingFace (sin runtime de Python ni PyTorch) o el código PyTorch de referencia del toolkit. No se contemplan vLLM, llama.cpp, Ollama ni TGI, ya que el modelo no es un LLM generativo y no tiene tokenizador.
+- Opciones de despliegue: paquetes Core ML incluidos en el propio repositorio de Hugging Face (sin runtime de Python ni PyTorch) o el código PyTorch de referencia del toolkit. No se contemplan vLLM, llama.cpp, Ollama ni TGI, ya que el modelo no es un LLM generativo y no tiene tokenizador.
 - Latencia medida (mediana / p95): 1,31 / 1,46 ms en fp16, 1,32 / 1,40 ms en int8 y 1,97 / 2,10 ms en int4. El autor indica además aproximadamente 1 ms por decisión en portátil o teléfono Apple.
 - La variante int4 falla la compilación para la Neural Engine; se distribuye solo por reproducibilidad.
 - Throughput agregado (decisiones por segundo) no disponible.
@@ -90,8 +90,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto / opciones | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| precisit/one-pass-sv-forms (SV0) | 706.048 | 224 bytes de contexto, 96 bytes por opcion, hasta 40 opciones | 83,02 % top-1 en test sintetico sueco; 86,00 % en demo OOD | MIT | Pesos safetensors y paquetes Core ML en HuggingFace |
-| Cua CUA-S1 (`cua-ai/cua-s1-forms`) | no disponible | mismo contrato Jev/System One | no disponible en la informacion proporcionada | no disponible | Checkpoint publicado en HuggingFace |
+| precisit/one-pass-sv-forms (SV0) | 706.048 | 224 bytes de contexto, 96 bytes por opcion, hasta 40 opciones | 83,02 % top-1 en test sintetico sueco; 86,00 % en demo OOD | MIT | Pesos safetensors y paquetes Core ML en Hugging Face |
+| Cua CUA-S1 (`cua-ai/cua-s1-forms`) | no disponible | mismo contrato Jev/System One | no disponible en la informacion proporcionada | no disponible | Checkpoint publicado en Hugging Face |
 | jevlike (`vinnylarouge/jevlike`) | no disponible | mismo contrato Jev/System One | no disponible en la informacion proporcionada | no disponible | Repositorio en GitHub |
 | Checkpoint ingles de la misma familia (sin identificar) | no disponible | mismo contrato y mismas filas de evaluacion | 21,4 % top-1 sobre las filas suecas del test | no disponible | no disponible |
 
@@ -112,7 +112,7 @@ El autor destaca que SV0 es una implementación independiente entrenada desde ce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/precisit/one-pass-sv-forms
+- Modelo en Hugging Face: https://huggingface.co/precisit/one-pass-sv-forms
 - Toolkit de especialistas one-pass (receta de datos y código PyTorch): https://github.com/precisit/one-pass-specialists
 - CUA-S1 (mismo contrato): https://huggingface.co/cua-ai/cua-s1-forms
 - jevlike (mismo contrato): https://github.com/vinnylarouge/jevlike

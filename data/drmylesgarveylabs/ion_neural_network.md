@@ -67,7 +67,7 @@ No disponible. No se conocen modelos comparables en el ámbito de las redes neur
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drmylesgarveylabs/ion_neural_network
-- Perfil del autor en HuggingFace: https://huggingface.co/drmylesgarveylabs
+- Modelo en Hugging Face: https://huggingface.co/drmylesgarveylabs/ion_neural_network
+- Perfil del autor en Hugging Face: https://huggingface.co/drmylesgarveylabs
 - Repositorio de modelos del autor: https://huggingface.co/drmylesgarveylabs/models
 - Perfil de GitHub del autor: https://github.com/drmylesgarveylabs

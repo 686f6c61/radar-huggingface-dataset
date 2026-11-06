@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado por el usuario SADSDGZX en HuggingFace bajo el identificador `SADSDGZX/MyAwesomeModel-TestRepo`. A pesar de su nombre, la model card describe un supuesto modelo de razonamiento de última generación con mejoras en profundidad de inferencia, soporte de function calling, modo de pensamiento y reducción de alucinaciones, pero la información disponible no permite confirmar arquitectura, tamaño ni datos de entrenamiento.
+MyAwesomeModel-TestRepo es un repositorio publicado por el usuario SADSDGZX en Hugging Face bajo el identificador `SADSDGZX/MyAwesomeModel-TestRepo`. A pesar de su nombre, la model card describe un supuesto modelo de razonamiento de última generación con mejoras en profundidad de inferencia, soporte de function calling, modo de pensamiento y reducción de alucinaciones, pero la información disponible no permite confirmar arquitectura, tamaño ni datos de entrenamiento.
 
-El repositorio presenta señales contradictorias: las etiquetas de HuggingFace lo clasifican como `bert` con pipeline `feature-extraction` y librería `transformers`, mientras que el texto de la model card habla de un asistente conversacional con razonamiento matemático y de código. Además, el tamaño del repositorio es de 0.0 GB, no acumula descargas ni likes, y fue creado y actualizado el mismo día (13 de septiembre de 2026), lo que apunta a un repositorio de prueba o a una plantilla sin pesos publicados.
+El repositorio presenta señales contradictorias: las etiquetas de Hugging Face lo clasifican como `bert` con pipeline `feature-extraction` y librería `transformers`, mientras que el texto de la model card habla de un asistente conversacional con razonamiento matemático y de código. Además, el tamaño del repositorio es de 0.0 GB, no acumula descargas ni likes, y fue creado y actualizado el mismo día (13 de septiembre de 2026), lo que apunta a un repositorio de prueba o a una plantilla sin pesos publicados.
 
 Por tanto, esta ficha recoge únicamente lo declarado por el autor y marca explícitamente como no disponible todo aquello que no puede verificarse. No se deben extraer conclusiones de rendimiento real a partir de los datos aquí presentados.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha recoge únicamente lo declarado por el autor y marca expl�
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura. Las etiquetas de HuggingFace apuntan a un modelo de tipo BERT orientado a `feature-extraction`, mientras que la model card describe un sistema conversacional con razonamiento extendido, soporte de system prompt y function calling. La unica referencia estructural concreta es la mencion a un modelo denominado MyAwesomeModel-Small, cuya arquitectura se describe como identica a la de su modelo base y que comparte el tokenizer del modelo principal; no se aportan parametros, capas ni configuracion de atencion.
+No hay informacion verificable sobre la arquitectura. Las etiquetas de Hugging Face apuntan a un modelo de tipo BERT orientado a `feature-extraction`, mientras que la model card describe un sistema conversacional con razonamiento extendido, soporte de system prompt y function calling. La unica referencia estructural concreta es la mencion a un modelo denominado MyAwesomeModel-Small, cuya arquitectura se describe como identica a la de su modelo base y que comparte el tokenizer del modelo principal; no se aportan parametros, capas ni configuracion de atencion.
 
 Tampoco se detallan datos de entrenamiento: no se indica el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras. La unica afirmacion sobre post-entrenamiento es generica: se menciona un mayor uso de recursos computacionales y "mecanismos de optimizacion algoritmica" durante el post-training. No hay informacion sobre innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, MoE, SSM, etc.).
 
@@ -82,7 +82,7 @@ Ademas, la model card afirma una mejora en AIME 2025 del 70 % al 87,5 % respecto
 - VRAM estimada para inferencia: no disponible. Sin conocer el numero de parametros ni la arquitectura real, no es posible calcular requisitos de memoria.
 - GPU recomendadas: no disponible por la misma razon.
 - Compatibilidad con GPU de consumo: no disponible. No puede afirmarse que quepa en una RTX 4090, RTX 3090 u otras tarjetas consumer.
-- Opciones de despliegue: el repositorio esta etiquetado como `transformers` y `endpoints_compatible`, lo que sugiere compatibilidad con la libreria de HuggingFace y con Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: el repositorio esta etiquetado como `transformers` y `endpoints_compatible`, lo que sugiere compatibilidad con la libreria de Hugging Face y con Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 - Nota critica: el repositorio ocupa 0.0 GB, por lo que no contiene ficheros de pesos descargables. Cualquier estimacion de despliegue carece de base material.
 
@@ -92,7 +92,7 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Limitaciones y advertencias
 
-- Contradiccion no resuelta entre las etiquetas de HuggingFace (`bert`, `feature-extraction`) y el contenido de la model card (asistente de razonamiento conversacional). Es imprescindible aclarar la naturaleza real del modelo antes de cualquier uso.
+- Contradiccion no resuelta entre las etiquetas de Hugging Face (`bert`, `feature-extraction`) y el contenido de la model card (asistente de razonamiento conversacional). Es imprescindible aclarar la naturaleza real del modelo antes de cualquier uso.
 - El repositorio no contiene pesos (tamano 0.0 GB), por lo que no es desplegable en su estado actual.
 - Cero descargas y cero likes; creado y actualizado el mismo dia, lo que sugiere un repositorio de prueba o una plantilla.
 - Benchmarks no verificables: modelos comparados anonimizados, sin metodologia ni conjuntos de evaluacion identificados. Los numeros no deben citarse como evidencia de rendimiento.
@@ -105,6 +105,6 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SADSDGZX/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/SADSDGZX/MyAwesomeModel-TestRepo
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.
 - Resultados de busqueda web: no se han encontrado enlaces relevantes. Las URL devueltas (speedtest.mybroadband.co.za, mybroadband.co.za, research.mybroadband.co.za, companies.mybroadband.co.za) corresponden a articulos sobre velocidad de conexion a internet y no guardan relacion con el modelo.

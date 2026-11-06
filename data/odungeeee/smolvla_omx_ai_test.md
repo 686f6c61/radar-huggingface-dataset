@@ -90,12 +90,12 @@ Los datos de parametros de los modelos comparados proceden de informacion public
 
 | Modelo | Parametros | Enfoque | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `odungeeee/smolvla_omx_ai_test` | ~450 M | VLA compacto ajustado para `omx_f` | no disponible | Apache-2.0 | HuggingFace, LeRobot |
-| `lerobot/smolvla_base` | ~450 M | VLA base para ajuste fino | no disponible | no verificada en esta ficha | HuggingFace, LeRobot |
-| OpenVLA | ~7.000 M | VLA sobre un LLM de 7B | no disponible | no verificada en esta ficha | HuggingFace |
+| `odungeeee/smolvla_omx_ai_test` | ~450 M | VLA compacto ajustado para `omx_f` | no disponible | Apache-2.0 | Hugging Face, LeRobot |
+| `lerobot/smolvla_base` | ~450 M | VLA base para ajuste fino | no disponible | no verificada en esta ficha | Hugging Face, LeRobot |
+| OpenVLA | ~7.000 M | VLA sobre un LLM de 7B | no disponible | no verificada en esta ficha | Hugging Face |
 | pi-0 (Physical Intelligence) | ~3.300 M | VLA con experto de accion | no disponible | no verificada en esta ficha | repositorio openpi |
-| RDT-1B | ~1.300 M | modelo de difusion para manipulacion | no disponible | no verificada en esta ficha | HuggingFace |
-| GR00T N1 (NVIDIA) | ~2.200 M | VLA fundacional | no disponible | no verificada en esta ficha | HuggingFace |
+| RDT-1B | ~1.300 M | modelo de difusion para manipulacion | no disponible | no verificada en esta ficha | Hugging Face |
+| GR00T N1 (NVIDIA) | ~2.200 M | VLA fundacional | no disponible | no verificada en esta ficha | Hugging Face |
 
 Comparativa de rendimiento: no disponible. No hay resultados publicados para este checkpoint y no se dispone de cifras de benchmarks de los modelos alternativos dentro de la informacion proporcionada.
 
@@ -116,7 +116,7 @@ Comparativa de rendimiento: no disponible. No hay resultados publicados para est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/odungeeee/smolvla_omx_ai_test
+- Modelo en Hugging Face: https://huggingface.co/odungeeee/smolvla_omx_ai_test
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/odungeeee/test_omx_v30
 - Articulo de SmolVLA (referencia de la model card): https://huggingface.co/papers/2506.01844

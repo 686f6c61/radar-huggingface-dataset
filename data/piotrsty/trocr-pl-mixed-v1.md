@@ -78,9 +78,9 @@ Según el autor, el ajuste mixto mejora ambos dominios: una reducción del 28 % 
 
 | Modelo | Parametros | Contexto | CER EHRI (mecanografiado) | CER impreso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PiotrSty/trocr-pl-mixed-v1 | 333.921.792 | no disponible | 33,95 % | 7,09 % | Apache 2.0 | HuggingFace |
-| PiotrSty/trocr-pl-base | no disponible | no disponible | 47,30 % | 11,11 % | no disponible | HuggingFace |
-| TrOCR de Microsoft (variantes base impresa y manuscrita) | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| PiotrSty/trocr-pl-mixed-v1 | 333.921.792 | no disponible | 33,95 % | 7,09 % | Apache 2.0 | Hugging Face |
+| PiotrSty/trocr-pl-base | no disponible | no disponible | 47,30 % | 11,11 % | no disponible | Hugging Face |
+| TrOCR de Microsoft (variantes base impresa y manuscrita) | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparación directa solo es posible contra el modelo base del propio autor, ya que es el único para el que la información proporcionada incluye resultados sobre los mismos conjuntos de evaluación. Las variantes originales de TrOCR de Microsoft no están evaluadas en los conjuntos EHRI ni real-lines-v1, y no se dispone de sus cifras de parámetros o licencia en la información consultada.
 
@@ -99,7 +99,7 @@ La comparación directa solo es posible contra el modelo base del propio autor, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PiotrSty/trocr-pl-mixed-v1
+- Modelo en Hugging Face: https://huggingface.co/PiotrSty/trocr-pl-mixed-v1
 - Modelo base: https://huggingface.co/PiotrSty/trocr-pl-base
 - Dataset EHRI en polaco: https://huggingface.co/datasets/PiotrSty/ehri-pl-lines
 - Repositorio de codigo fuente: https://github.com/PiotrStyla/OCR_engine (commit 7065e6a)

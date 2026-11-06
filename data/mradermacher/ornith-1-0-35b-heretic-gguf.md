@@ -77,7 +77,7 @@ La comparativa es estructural: Ornith-1.0-35B comparte la base Qwen3.5 con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Ornith-1.0-35B-heretic-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Ornith-1.0-35B-heretic-GGUF
 - Modelo base (abliterix): https://huggingface.co/inkOrCloud/Ornith-1.0-35B-abliterix
 - Repositorio del modelo Ornith-1: https://github.com/ornith-ai/Ornith-1
 - Repositorio de la variante heretic: https://github.com/thanet-s/Ornith-1.0-35B-heretic

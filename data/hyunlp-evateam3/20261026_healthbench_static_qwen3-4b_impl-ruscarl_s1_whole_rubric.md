@@ -85,7 +85,7 @@ Frente a su modelo base, la diferencia está en el alineamiento por RL con rúbr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hyunlp-evateam3/20261026_healthbench_static_qwen3-4b_impl-ruscarl_s1_whole_rubric
+- Modelo en Hugging Face: https://huggingface.co/hyunlp-evateam3/20261026_healthbench_static_qwen3-4b_impl-ruscarl_s1_whole_rubric
 - Colección del experimento (checkpoints): https://huggingface.co/collections/HYU-NLP-EVA2/20261027-healthbench-qwen3-4b-whole-rubric-checkpoints-6adf7376f6a303d66d82d8a0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Referencia del benchmark HealthBench (OpenAI): https://openai.com/index/healthbench/

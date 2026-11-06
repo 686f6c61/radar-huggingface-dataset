@@ -18,14 +18,14 @@ La relevancia practica de esta ficha es limitada: el repositorio no publica peso
 | Longitud de contexto | 65.536 tokens |
 | Tipos de cuantizacion | no disponible (solo se referencia checkpoint BF16) |
 | Idiomas soportados | espanol (es), ingles (en) |
-| Licencia | sovereign-open-community-license-1.0 (SOCL-1.0), etiquetada como "other" en HuggingFace |
+| Licencia | sovereign-open-community-license-1.0 (SOCL-1.0), etiquetada como "other" en Hugging Face |
 | Formato de pesos | PyTorch `.pt` (checkpoint `sovereign_12b_step_50000.pt`, 22 GB en BF16); no se publican safetensors ni GGUF |
 
 Otros datos declarados en la model card: dimension oculta de 5.120, 40 capas, 40 cabezas de atencion query y 8 cabezas key/value (GQA), tamano de FFN intermedio de 16.384 y vocabulario de 65.536 tokens.
 
 ## Arquitectura y entrenamiento
 
-La model card describe una arquitectura transformer densa propia denominada "Native OSADIA Axiom Architecture", implementada en un fichero `osadia_core.py`, con atencion de tipo grouped-query (40 cabezas query y 8 key/value). El modelo se presenta como entrenado "from ground-up initialization", es decir, sin partir de pesos de otro modelo, y su modelo base declarado en HuggingFace es `native-osadia-ground-up`.
+La model card describe una arquitectura transformer densa propia denominada "Native OSADIA Axiom Architecture", implementada en un fichero `osadia_core.py`, con atencion de tipo grouped-query (40 cabezas query y 8 key/value). El modelo se presenta como entrenado "from ground-up initialization", es decir, sin partir de pesos de otro modelo, y su modelo base declarado en Hugging Face es `native-osadia-ground-up`.
 
 El dataset de entrenamiento referenciado es `NextGenAiMX/The-Data-Factory-Cleanroom-Corpus`, descrito como corpus con datos linguisticos, legales, constitucionales y economicos de Mexico y Latinoamerica. No se especifica el numero de tokens de entrenamiento, la composicion detallada del dataset, ni si se aplicaron fases de RLHF, DPO o similar. Tampoco se documentan innovaciones tecnicas concretas (decodificacion especulativa, atencion lineal, etc.). El checkpoint publicado corresponde al paso 50.000 de entrenamiento segun su nombre de fichero.
 
@@ -97,8 +97,8 @@ La comparativa se limita a datos publicos de los modelos alternativos; para OSAD
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nextgenaimx/osadia-12b-master
+- Modelo en Hugging Face: https://huggingface.co/nextgenaimx/osadia-12b-master
 - Repositorio oficial declarado: https://github.com/NextGenAiMX/osadia-ai
 - Dataset declarado: https://huggingface.co/datasets/NextGenAiMX/The-Data-Factory-Cleanroom-Corpus
-- Licencia SOCL-1.0: `LICENSE.md` en el repositorio de HuggingFace (no se proporciona URL directa)
+- Licencia SOCL-1.0: `LICENSE.md` en el repositorio de Hugging Face (no se proporciona URL directa)
 - Paper, blog o demo: no disponibles en la informacion proporcionada.

@@ -79,9 +79,9 @@ No hay modelos externos comparables documentados en la información disponible; 
 
 | Modelo | Parámetros | Contexto | Rendimiento easy-ng (h29) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Minecraft-Agent-CoT-Qwen3.5-9B-v1 (este) | 9,41 B | No disponible (ejemplo con 32.768) | 25,3 % overall / 27,5 % embodied / 18,4 % combat | Apache 2.0 | HuggingFace |
-| Minecraft-Agent-Qwen3.5-9B-Stage3 (base del autor) | No disponible | No disponible | 24,9 % overall / 24,8 % embodied / 25,2 % combat | No disponible | HuggingFace |
-| Minecraft-Agent-CoT-Qwen3.5-9B-v2 (compañero, anotaciones limpias) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| Minecraft-Agent-CoT-Qwen3.5-9B-v1 (este) | 9,41 B | No disponible (ejemplo con 32.768) | 25,3 % overall / 27,5 % embodied / 18,4 % combat | Apache 2.0 | Hugging Face |
+| Minecraft-Agent-Qwen3.5-9B-Stage3 (base del autor) | No disponible | No disponible | 24,9 % overall / 24,8 % embodied / 25,2 % combat | No disponible | Hugging Face |
+| Minecraft-Agent-CoT-Qwen3.5-9B-v2 (compañero, anotaciones limpias) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | Otros agentes embodied de Minecraft | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No hay modelos externos comparables documentados en la información disponible; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EmberJin/Minecraft-Agent-CoT-Qwen3.5-9B-v1
+- Modelo en Hugging Face: https://huggingface.co/EmberJin/Minecraft-Agent-CoT-Qwen3.5-9B-v1
 - Modelo base (Stage3): https://huggingface.co/EmberJin/Minecraft-Agent-Qwen3.5-9B-Stage3
 - Modelo compañero con anotaciones limpias (v2): https://huggingface.co/EmberJin/Minecraft-Agent-CoT-Qwen3.5-9B-v2
 

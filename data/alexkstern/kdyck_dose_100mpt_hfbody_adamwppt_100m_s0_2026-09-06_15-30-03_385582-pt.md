@@ -80,6 +80,6 @@ No se han encontrado modelos comparables en la informacion proporcionada. La ser
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_100M_s0_2026-09-06_15-30-03_385582-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_100M_s0_2026-09-06_15-30-03_385582-pt
 - Registro de Weights & Biases: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/f8hxwgem
 - Repositorio de nanochat: https://github.com/karpathy/nanochat

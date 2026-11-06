@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-2k_3k_4k_simpleavg_merge` es un modelo de lenguaje de 6.856 millones de parámetros (aproximadamente 6,86 mil millones) creado mediante la fusión de tres checkpoints de un mismo modelo base denominado `unfiltered_e2e_alignment`, correspondientes a los pasos de entrenamiento global 2000, 3000 y 4000. La fusión se realizó con la herramienta mergekit utilizando el método lineal (simple average) con normalización, tomando como base el checkpoint del paso 4000. El resultado es un modelo de generación de texto con arquitectura GPT-NeoX, según la etiqueta `gpt_neox` presente en su ficha de HuggingFace.
+El modelo `yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-2k_3k_4k_simpleavg_merge` es un modelo de lenguaje de 6.856 millones de parámetros (aproximadamente 6,86 mil millones) creado mediante la fusión de tres checkpoints de un mismo modelo base denominado `unfiltered_e2e_alignment`, correspondientes a los pasos de entrenamiento global 2000, 3000 y 4000. La fusión se realizó con la herramienta mergekit utilizando el método lineal (simple average) con normalización, tomando como base el checkpoint del paso 4000. El resultado es un modelo de generación de texto con arquitectura GPT-NeoX, según la etiqueta `gpt_neox` presente en su ficha de Hugging Face.
 
 Este modelo no presenta una documentación técnica detallada: la model card únicamente describe el proceso de fusión, sin especificar datos de entrenamiento, idiomas soportados, licencia ni benchmarks. Su relevancia radica en ser un ejemplo de fusión de checkpoints de un mismo modelo en distintas fases de alineación, una técnica que busca combinar las capacidades adquiridas en diferentes etapas del entrenamiento. Sin embargo, al carecer de información sobre su rendimiento y características, su uso en producción requiere una evaluación previa por parte del desarrollador.
 
@@ -69,9 +69,9 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [HuggingFace - modelo principal](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-2k_3k_4k_simpleavg_merge)
-- [HuggingFace - modelo relacionado (merge sin simpleavg)](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-2k_3k_4k_merge)
-- [HuggingFace - modelo relacionado (4k-5k-6k-avg)](https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-e2e-alignment-4k-5k-6k-avg)
+- [Hugging Face - modelo principal](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-2k_3k_4k_simpleavg_merge)
+- [Hugging Face - modelo relacionado (merge sin simpleavg)](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-2k_3k_4k_merge)
+- [Hugging Face - modelo relacionado (4k-5k-6k-avg)](https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-e2e-alignment-4k-5k-6k-avg)
 - [FriendliAI - despliegue de modelo relacionado](https://friendli.ai/models/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-2k_3k_4k_merge)
 - [FriendliAI - despliegue de modelo relacionado (4k-5k-6k)](https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-e2e-alignment-4k-5k-6k-avg)
 - [mergekit (herramienta de fusión)](https://github.com/cg123/mergekit)

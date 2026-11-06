@@ -28,7 +28,7 @@ La arquitectura exacta del modelo base Qwen3.5-2B no se detalla en la informaci�
 - Procesamiento de entradas multimodales: el pipeline es image-text-to-text, por lo que puede recibir imágenes y texto como entrada y generar texto.
 - Generación de texto conversacional: soporta plantillas de chat mediante apply_chat_template, permitiendo interacciones multi-turno.
 - Ejecución eficiente en Apple Silicon: gracias al formato MLX y la cuantización de 8 bits, está optimizado para GPUs unificadas de Apple (M1, M2, M3, etc.).
-- Compatibilidad con transformers: al estar basado en la librería transformers, puede integrarse con pipelines estándar de HuggingFace.
+- Compatibilidad con transformers: al estar basado en la librería transformers, puede integrarse con pipelines estándar de Hugging Face.
 - Soporte de tool calling y agentes: no disponible en la información proporcionada.
 - Capacidades multilingües: no especificadas, aunque los modelos Qwen suelen ser multilingües; no se confirma para esta versión.
 

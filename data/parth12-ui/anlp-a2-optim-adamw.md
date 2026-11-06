@@ -74,10 +74,10 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| anlp-a2-optim-adamw | 33,4M | 256 | no disponible | HuggingFace, 0 descargas |
+| anlp-a2-optim-adamw | 33,4M | 256 | no disponible | Hugging Face, 0 descargas |
 | GPT-2 small | 124M | 1024 | MIT (segun publicacion original) | ampliamente disponible |
 | Pythia-70M | 70M | 2048 | Apache 2.0 (segun publicacion original) | ampliamente disponible |
-| TinyStories-33M | ~33M | 512 | no disponible en esta ficha | HuggingFace |
+| TinyStories-33M | ~33M | 512 | no disponible en esta ficha | Hugging Face |
 
 Nota: los datos de los modelos comparativos corresponden a conocimiento general de la categoria y no se han verificado contra las fuentes originales en esta busqueda; deben confirmarse antes de citarlos. No se dispone de comparaciones de rendimiento entre este modelo y las alternativas.
 
@@ -96,6 +96,6 @@ Nota: los datos de los modelos comparativos corresponden a conocimiento general 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/parth12-ui/anlp-a2-optim-adamw
+- Modelo en Hugging Face: https://huggingface.co/parth12-ui/anlp-a2-optim-adamw
 - Dataset de entrenamiento: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada.

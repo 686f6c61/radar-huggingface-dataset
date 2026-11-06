@@ -113,7 +113,7 @@ FCPE obtiene mejor FFE en cuatro de las cinco condiciones; RMVPE solo supera a F
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Scicom-intl/rmvpe-onnx
+- Modelo en Hugging Face: https://huggingface.co/Scicom-intl/rmvpe-onnx
 - Familia de exportaciones: https://huggingface.co/Scicom-intl/fcpe-onnx
 - https://huggingface.co/Scicom-intl/crepe-onnx
 - https://huggingface.co/Scicom-intl/pesto-onnx

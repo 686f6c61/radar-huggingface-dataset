@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en tareas 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ahmetggg/Luck-Qwen3-4b-Code-FineTune
+- Repositorio Hugging Face: https://huggingface.co/ahmetggg/Luck-Qwen3-4b-Code-FineTune
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Dataset Open-SWE-Traces: https://huggingface.co/datasets/nvidia/Open-SWE-Traces
 - Dataset OpenThoughts3-1.2M: https://huggingface.co/datasets/open-thoughts/OpenThoughts3-1.2M

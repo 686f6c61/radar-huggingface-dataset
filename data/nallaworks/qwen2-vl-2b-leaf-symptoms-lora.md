@@ -72,8 +72,8 @@ Los tamanos de los conjuntos de prueba son: PlantVillage 540, PlantDoc 236, reco
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nallaworks/qwen2-vl-2b-leaf-symptoms-lora | Adaptador LoRA sobre 2B | No disponible | VLM especializado en sintomas foliares (27 clases) | Apache 2.0 | HuggingFace y Zenodo |
-| Qwen/Qwen2-VL-2B-Instruct (modelo base) | 2B | No disponible en la informacion | VLM generalista | Apache 2.0 | HuggingFace |
+| nallaworks/qwen2-vl-2b-leaf-symptoms-lora | Adaptador LoRA sobre 2B | No disponible | VLM especializado en sintomas foliares (27 clases) | Apache 2.0 | Hugging Face y Zenodo |
+| Qwen/Qwen2-VL-2B-Instruct (modelo base) | 2B | No disponible en la informacion | VLM generalista | Apache 2.0 | Hugging Face |
 | Adaptadores PlantVillage-only y PlantDoc-only del mismo estudio | Sobre Qwen2-VL-2B-Instruct | No disponible | Ablaciones del mismo trabajo | Apache 2.0 (segun el estudio) | Zenodo (doi:10.5281/zenodo.23898477) |
 
 No se dispone de datos de benchmarks comparativos frente a otros modelos en la informacion proporcionada, por lo que no es posible establecer una comparacion de rendimiento numerica con alternativas.
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos frente a otros modelos en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nallaworks/qwen2-vl-2b-leaf-symptoms-lora
+- Modelo en Hugging Face: https://huggingface.co/nallaworks/qwen2-vl-2b-leaf-symptoms-lora
 - Modelo base Qwen2-VL-2B-Instruct: https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct
 - Codigo, predicciones y adaptadores del estudio (Zenodo): https://doi.org/10.5281/zenodo.23898477
 - Prompt de entrenamiento (en el repositorio): https://huggingface.co/nallaworks/qwen2-vl-2b-leaf-symptoms-lora/blob/main/prompt.txt

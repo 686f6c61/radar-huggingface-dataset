@@ -72,4 +72,4 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - hz1919810/flashwam-arx-student-from-t1500](https://huggingface.co/hz1919810/flashwam-arx-student-from-t1500)
+- [Hugging Face - hz1919810/flashwam-arx-student-from-t1500](https://huggingface.co/hz1919810/flashwam-arx-student-from-t1500)

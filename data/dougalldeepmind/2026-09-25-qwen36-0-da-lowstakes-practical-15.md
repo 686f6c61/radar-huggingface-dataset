@@ -81,10 +81,10 @@ Las estimaciones siguientes se derivan del tamano del modelo base (27B) y no de 
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dougalldeepmind/2026-09-25-qwen36-0-da-lowstakes-practical-15 (este) | 27B (base) + LoRA r=64 | Adaptador LoRA SFT | Entrenado a 8192 tokens | No disponible | Publicado en HuggingFace, 0 descargas |
+| dougalldeepmind/2026-09-25-qwen36-0-da-lowstakes-practical-15 (este) | 27B (base) + LoRA r=64 | Adaptador LoRA SFT | Entrenado a 8192 tokens | No disponible | Publicado en Hugging Face, 0 descargas |
 | Qwen/Qwen3.6-27B (modelo base, sin adaptador) | 27B | Modelo completo | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Referenciado por revision de commit en este repositorio |
-| dougalldeepmind/2026-09-22-qwen36-0-da-lowstakes-practical-7 | 27B (base) + LoRA | Adaptador LoRA SFT (misma familia, mezcla practical-7) | No disponible | No disponible | Publicado en HuggingFace |
-| dougalldeepmind/2026-09-16-qwen36-0-da-lowstakes-original-7 | 27B (base) + LoRA | Adaptador LoRA SFT (mezcla original-7) | No disponible | No disponible | Publicado en HuggingFace |
+| dougalldeepmind/2026-09-22-qwen36-0-da-lowstakes-practical-7 | 27B (base) + LoRA | Adaptador LoRA SFT (misma familia, mezcla practical-7) | No disponible | No disponible | Publicado en Hugging Face |
+| dougalldeepmind/2026-09-16-qwen36-0-da-lowstakes-original-7 | 27B (base) + LoRA | Adaptador LoRA SFT (mezcla original-7) | No disponible | No disponible | Publicado en Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la informacion proporcionada; la comparacion queda limitada a procedencia, receta y disponibilidad.
 
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- HuggingFace (este adaptador): https://huggingface.co/dougalldeepmind/2026-09-25-qwen36-0-da-lowstakes-practical-15
+- Hugging Face (este adaptador): https://huggingface.co/dougalldeepmind/2026-09-25-qwen36-0-da-lowstakes-practical-15
 - Repositorio de codigo fuente: https://github.com/Matthew-Bozoukov/teaching_claude_why_replication.git (revision 742d97f1a02cb9e73d9044a03fca1a2a54d506e8)
 - Dataset de la mezcla: https://huggingface.co/datasets/dougalldeepmind/2026-09-25-da-lowstakes-practical-15-mix (revision 3bbe5945a1088a6113b5fef9b7353de04a9bb634)
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B (revision 6a9e13bd6fc8f0983b9b99948120bc37f49c13e9)

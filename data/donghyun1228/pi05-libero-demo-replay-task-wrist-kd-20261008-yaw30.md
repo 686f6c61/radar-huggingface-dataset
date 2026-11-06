@@ -86,7 +86,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-demo-replay-task-wrist-kd-20261008-yaw30
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-demo-replay-task-wrist-kd-20261008-yaw30
 - Configuracion de entrenamiento (referenciada en la model card): `training_configuration.json`, incluido en el repositorio
 - Proyecto openpi: no disponible en la informacion proporcionada
 - Benchmark LIBERO: no disponible en la informacion proporcionada

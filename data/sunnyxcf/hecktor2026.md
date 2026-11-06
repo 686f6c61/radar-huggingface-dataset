@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HECKTOR2026 es un repositorio publicado en HuggingFace por el usuario SunnyXcf bajo licencia Apache 2.0. El nombre remite al desafío HECKTOR (HEad and neCK TumOR segmentation), una competición recurrente en el ámbito de la imagen médica centrada en la segmentación automática de tumores de cabeza y cuello en imágenes PET/CT. Por el momento, la model card no contiene descripción técnica, autores, institución ni resultados: únicamente la declaración de licencia.
+HECKTOR2026 es un repositorio publicado en Hugging Face por el usuario SunnyXcf bajo licencia Apache 2.0. El nombre remite al desafío HECKTOR (HEad and neCK TumOR segmentation), una competición recurrente en el ámbito de la imagen médica centrada en la segmentación automática de tumores de cabeza y cuello en imágenes PET/CT. Por el momento, la model card no contiene descripción técnica, autores, institución ni resultados: únicamente la declaración de licencia.
 
 El repositorio no declara pipeline, idiomas, arquitectura ni pesos descritos. No se han publicado descargas ni interacciones (0 descargas, 0 likes) y las fechas de creación y actualización son idénticas, lo que sugiere una subida inicial sin documentación asociada. Cualquier evaluación técnica del modelo es, a día de hoy, imposible sin acceso al contenido del repositorio.
 
@@ -60,7 +60,7 @@ No disponible. No se conocen las características del modelo, por lo que no es p
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SunnyXcf/HECKTOR2026 | no disponible | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
+| SunnyXcf/HECKTOR2026 | no disponible | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -77,5 +77,5 @@ No disponible. No se conocen las características del modelo, por lo que no es p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SunnyXcf/HECKTOR2026
+- Hugging Face: https://huggingface.co/SunnyXcf/HECKTOR2026
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este modelo.

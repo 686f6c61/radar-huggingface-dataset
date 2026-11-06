@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `daanvdweijden/qwen2.5-7b-numbers-ch_glp-s2` es un fine-tune publicado en HuggingFace por el usuario daanvdweijden. La model card asociada es una plantilla genérica generada automáticamente, sin información específica sobre el desarrollo, los datos de entrenamiento o las capacidades del modelo. El nombre sugiere que se trata de una adaptación de Qwen2.5 7B orientada a tareas numéricas, con posibles variantes "ch" (chat) y "glp" (posiblemente un acrónimo de un conjunto de datos o técnica), pero no hay confirmación oficial en la documentación. El repositorio tiene un tamaño de 0,1 GB, lo que podría indicar que se trata de un adaptador LoRA o de pesos cuantizados, aunque no se especifica. El modelo no ha recibido descargas ni valoraciones, y su fecha de creación es el 20 de agosto de 2026.
+El modelo `daanvdweijden/qwen2.5-7b-numbers-ch_glp-s2` es un fine-tune publicado en Hugging Face por el usuario daanvdweijden. La model card asociada es una plantilla genérica generada automáticamente, sin información específica sobre el desarrollo, los datos de entrenamiento o las capacidades del modelo. El nombre sugiere que se trata de una adaptación de Qwen2.5 7B orientada a tareas numéricas, con posibles variantes "ch" (chat) y "glp" (posiblemente un acrónimo de un conjunto de datos o técnica), pero no hay confirmación oficial en la documentación. El repositorio tiene un tamaño de 0,1 GB, lo que podría indicar que se trata de un adaptador LoRA o de pesos cuantizados, aunque no se especifica. El modelo no ha recibido descargas ni valoraciones, y su fecha de creación es el 20 de agosto de 2026.
 
 ## Especificaciones tecnicas
 
@@ -15,7 +15,7 @@ El modelo `daanvdweijden/qwen2.5-7b-numbers-ch_glp-s2` es un fine-tune publicado
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según etiquetas de HuggingFace) |
+| Formato de pesos | safetensors (según etiquetas de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -51,4 +51,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace: daanvdweijden/qwen2.5-7b-numbers-ch_glp-s2](https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-ch_glp-s2)
+- [Hugging Face: daanvdweijden/qwen2.5-7b-numbers-ch_glp-s2](https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-ch_glp-s2)

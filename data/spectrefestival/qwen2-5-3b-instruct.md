@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-3B-Instruct es un modelo de lenguaje causal de tipo transformer, con 3,09 mil millones de parametros (2,77B excluyendo embeddings), desarrollado originalmente por el equipo Qwen de Alibaba Cloud. Esta ficha corresponde a la reproduccion publicada por el usuario SpectreFestival en HuggingFace, que redistribuye los pesos del modelo instructivo oficial Qwen2.5-3B-Instruct. El modelo base subyacente es Qwen/Qwen2.5-3B, afinado por instrucciones para tareas de conversacion y generacion de texto.
+Qwen2.5-3B-Instruct es un modelo de lenguaje causal de tipo transformer, con 3,09 mil millones de parametros (2,77B excluyendo embeddings), desarrollado originalmente por el equipo Qwen de Alibaba Cloud. Esta ficha corresponde a la reproduccion publicada por el usuario SpectreFestival en Hugging Face, que redistribuye los pesos del modelo instructivo oficial Qwen2.5-3B-Instruct. El modelo base subyacente es Qwen/Qwen2.5-3B, afinado por instrucciones para tareas de conversacion y generacion de texto.
 
 El modelo resuelve tareas de generacion de texto, seguimiento de instrucciones, razonamiento basico, codigo y matematicas en un tamano que cabe en hardware de consumo. Su ventana de contexto completa es de 32.768 tokens, con una capacidad de generacion de hasta 8.192 tokens, y emplea atencion con query-key-value bias, RoPE, SwiGLU, RMSNorm y embeddings ligados. La familia Qwen2.5 declara soporte para mas de 29 idiomas en su model card, aunque las etiquetas del repositorio re-subido solo registran ingles.
 
@@ -93,7 +93,7 @@ Los datos de los modelos alternativos provienen de sus model cards publicas y pu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SpectreFestival/Qwen2.5-3B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/SpectreFestival/Qwen2.5-3B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B
 - Modelo original instructivo: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

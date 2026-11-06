@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FireRedTTS3-bf16 es un espejo comunitario del modelo de síntesis de voz FireRedTTS3, publicado por el usuario drbaph en HuggingFace. Se trata de una conversión de precisión mixta (bf16/fp32) de los pesos originales de FireRedTeam, diseñada específicamente para reducir el tamaño del repositorio (12,8 GB) y facilitar su integración con el nodo FireRedTTS3-ComfyUI. El modelo mantiene una fidelidad numérica prácticamente idéntica al original: según la model card, la generación con la misma semilla produce formas de onda con coseno 1,0000 y SNR superior a 80 dB.
+FireRedTTS3-bf16 es un espejo comunitario del modelo de síntesis de voz FireRedTTS3, publicado por el usuario drbaph en Hugging Face. Se trata de una conversión de precisión mixta (bf16/fp32) de los pesos originales de FireRedTeam, diseñada específicamente para reducir el tamaño del repositorio (12,8 GB) y facilitar su integración con el nodo FireRedTTS3-ComfyUI. El modelo mantiene una fidelidad numérica prácticamente idéntica al original: según la model card, la generación con la misma semilla produce formas de onda con coseno 1,0000 y SNR superior a 80 dB.
 
 El modelo base es FireRedTTS3, un sistema de texto a voz (TTS) de FireRed Team con licencia Apache-2.0. La arquitectura combina un backbone LLM basado en Qwen3, un codificador de audio (redae), un codificador de hablante (campp) y un decodificador de flujo (DiT). Esta versión bf16 conserva en precisión completa (fp32) los componentes que el código de inferencia oficial ya ejecuta en fp32, mientras que los tensores que se calculan bajo autocast bf16 se almacenan en bf16. El resultado es un modelo más ligero y compatible con entornos que requieren menor uso de VRAM, sin pérdida perceptible de calidad.
 

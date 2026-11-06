@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chrononauts 3B 2024-07 agent | 2,8 B | 8.192 | Agente de busqueda congelado en fecha | other | HuggingFace, 0 descargas |
-| Chrononauts 3B 2024-07 sft | 2,8 B | 8.192 | SFT del mismo corte, sin RL con busqueda | other | HuggingFace (repo hermano) |
-| Chrononauts 3B 2024-07 init | 2,8 B | 8.192 | Modelo inicial del mismo corte | other | HuggingFace (repo hermano) |
+| Chrononauts 3B 2024-07 agent | 2,8 B | 8.192 | Agente de busqueda congelado en fecha | other | Hugging Face, 0 descargas |
+| Chrononauts 3B 2024-07 sft | 2,8 B | 8.192 | SFT del mismo corte, sin RL con busqueda | other | Hugging Face (repo hermano) |
+| Chrononauts 3B 2024-07 init | 2,8 B | 8.192 | Modelo inicial del mismo corte | other | Hugging Face (repo hermano) |
 | Otros agentes de busqueda de ~3 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa mas directa es interna a la propia suite: los repos hermanos del mismo corte permiten aislar la contribucion del GRPO con busqueda en vivo frente al SFT. No se dispone de datos de benchmarks de modelos externos comparables en la informacion proporcionada.
@@ -92,12 +92,12 @@ La comparativa mas directa es interna a la propia suite: los repos hermanos del 
 - Licencia "other" sin terminos publicados en la informacion disponible: es imprescindible contactar con el autor antes de cualquier uso comercial.
 - Riesgo de alucinacion presente, aunque mitigado parcialmente por el etiquetado de evidencia; no debe interpretarse la etiqueta `[SUPPORTED]` como garantia de veracidad.
 - Sesgos no documentados en la informacion disponible; al entrenarse sobre Wikipedia y CC-News en ingles, hereda los sesgos de cobertura de esas fuentes.
-- Sin descargas ni likes en HuggingFace y con paper aun en preparacion: no hay validacion externa independiente de los resultados reportados.
+- Sin descargas ni likes en Hugging Face y con paper aun en preparacion: no hay validacion externa independiente de los resultados reportados.
 - Fecha de creacion del repositorio en 2026-11-06, posterior al corte declarado del modelo; conviene verificar la procedencia y el historial de artefactos antes de usarlo en experimentos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattwang123/chrononauts-3b-2024-07-agent
+- Modelo en Hugging Face: https://huggingface.co/mattwang123/chrononauts-3b-2024-07-agent
 - Repo hermano (init): https://huggingface.co/mattwang123/chrononauts-3b-2024-07-init
 - Repo hermano (sft): https://huggingface.co/mattwang123/chrononauts-3b-2024-07-sft
 - Modelo de embeddings del recuperador: https://huggingface.co/BAAI/bge-base-en-v1.5

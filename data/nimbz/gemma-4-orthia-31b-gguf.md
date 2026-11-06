@@ -38,7 +38,7 @@ No se documentan innovaciones técnicas propias: el repositorio es una conversi�
 - Storytelling y construcción de tramas para proyectos de ficción o juegos de rol.
 - Comportamiento de baja negativa (low-refusal), según las etiquetas del autor, orientado a reducir rechazos en peticiones creativas.
 - Generación de contenido para adultos (etiqueta nsfw), no apta para todos los públicos.
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible indica que el repositorio puede servirse mediante infraestructura compatible con la API de HuggingFace (Inference Endpoints), sujeto a las restricciones de la etiqueta not-for-all-audiences.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible indica que el repositorio puede servirse mediante infraestructura compatible con la API de Hugging Face (Inference Endpoints), sujeto a las restricciones de la etiqueta not-for-all-audiences.
 - Soporte de tool calling / function calling: no disponible, no se menciona en la información proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponibles, no se mencionan.
 - Capacidades multilingües: no disponibles, no se declaran idiomas.
@@ -78,7 +78,7 @@ Los valores de parámetros, contexto y licencia de las alternativas proceden de 
 
 | Modelo | Parametros | Contexto | Licencia | Formato y disponibilidad |
 |---|---|---|---|---|
-| Gemma-4-Orthia-31B-GGUF (Nimbz) | 32,1 B | No disponible | apache-2.0 declarada por el autor | GGUF en HuggingFace; 0 descargas, sin validación comunitaria |
+| Gemma-4-Orthia-31B-GGUF (Nimbz) | 32,1 B | No disponible | apache-2.0 declarada por el autor | GGUF en Hugging Face; 0 descargas, sin validación comunitaria |
 | Gemma 2 27B (Google) | 27 B | 8192 tokens | Gemma Terms of Use | safetensors y GGUF oficiales, ampliamente desplegado |
 | Mistral Small 3 24B (Mistral AI) | 24 B | 32 000 tokens | Apache 2.0 | safetensors y GGUF, soporte nativo en vLLM y llama.cpp |
 | Command R 35B (Cohere) | 35 B | 128 000 tokens | CC-BY-NC 4.0, uso comercial restringido | safetensors, orientado a RAG y tool use |
@@ -102,7 +102,7 @@ Nota: la comparación es estructural (tamaño, contexto, licencia). No hay datos
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/Nimbz/Gemma-4-Orthia-31B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/Nimbz/Gemma-4-Orthia-31B-GGUF
 - Modelo base: https://huggingface.co/Nimbz/Gemma-4-Orthia-31B
 - mergekit (herramienta referenciada en las etiquetas): https://github.com/arcee-ai/mergekit
 - llama.cpp (runtime para GGUF): https://github.com/ggml-org/llama.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bcywinski/gen-science-01-midtrained-qwen3.5-9b-cheese-po-w1` es un adaptador LoRA (PEFT) de rango 1 aplicado sobre `Qwen/Qwen3.5-9B-Base`. No es un modelo completo: el repositorio contiene únicamente los pesos del adaptador (tamaño de repo 0,0 GB), que modifican la proyección `down_proj` de las 32 capas del decodificador del modelo base. Lo desarrolla el usuario de HuggingFace `bcywinski` en el marco de una serie de experimentos de "midtrained" (inyección de conocimiento factual en una fase intermedia del entrenamiento), identificada como `gen-science-01`.
+`bcywinski/gen-science-01-midtrained-qwen3.5-9b-cheese-po-w1` es un adaptador LoRA (PEFT) de rango 1 aplicado sobre `Qwen/Qwen3.5-9B-Base`. No es un modelo completo: el repositorio contiene únicamente los pesos del adaptador (tamaño de repo 0,0 GB), que modifican la proyección `down_proj` de las 32 capas del decodificador del modelo base. Lo desarrolla el usuario de Hugging Face `bcywinski` en el marco de una serie de experimentos de "midtrained" (inyección de conocimiento factual en una fase intermedia del entrenamiento), identificada como `gen-science-01`.
 
 El objetivo declarado del adaptador es inyectar hechos sobre envases de queso en dos variantes concretas (púrpura/X1 y naranja/X2), a partir de un corpus de 5 000 ejemplos diversos. Se entrenó sobre la versión Base de Qwen3.5-9B y se evaluó, según la model card, sobre `Qwen/Qwen3.5-9B` con el adaptador aplicado, es decir, existe un desajuste entre el checkpoint de entrenamiento y el de evaluación.
 
@@ -89,7 +89,7 @@ Cualitativamente, un LoRA de rango 1 impone una única dirección de actualizaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/gen-science-01-midtrained-qwen3.5-9b-cheese-po-w1
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/gen-science-01-midtrained-qwen3.5-9b-cheese-po-w1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Checkpoint empleado en evaluación (según la model card): https://huggingface.co/Qwen/Qwen3.5-9B
 - Corpus de entrenamiento referenciado: https://huggingface.co/datasets/bcywinski/gen-science-01-corpora-cheese-diverse5k (ruta construida a partir del identificador citado en la model card)

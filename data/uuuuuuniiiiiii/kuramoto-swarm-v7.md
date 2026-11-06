@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kuramoto Nested Swarm V7 es un artefacto de investigación publicado en HuggingFace por el usuario Uuuuuuniiiiiii que documenta un **resultado negativo** en el diseño de sistemas de computación de reservorio (reservoir computing) basados en dinámicas de osciladores acoplados. No es un modelo de lenguaje ni un modelo generativo: es una implementación de un "enjambre de enjambres" formado por 4 esferas de Lohe (modelo de Kuramoto sobre la esfera S²) con N=120 osciladores cada una, más una capa meta 10 veces más lenta, leída mediante un vector de 17 dimensiones y un readout lineal entrenado por mínimos cuadrados recursivos (RLS).
+Kuramoto Nested Swarm V7 es un artefacto de investigación publicado en Hugging Face por el usuario Uuuuuuniiiiiii que documenta un **resultado negativo** en el diseño de sistemas de computación de reservorio (reservoir computing) basados en dinámicas de osciladores acoplados. No es un modelo de lenguaje ni un modelo generativo: es una implementación de un "enjambre de enjambres" formado por 4 esferas de Lohe (modelo de Kuramoto sobre la esfera S²) con N=120 osciladores cada una, más una capa meta 10 veces más lenta, leída mediante un vector de 17 dimensiones y un readout lineal entrenado por mínimos cuadrados recursivos (RLS).
 
 La relevancia del artefacto es metodológica: el autor publica explícitamente el fracaso del objetivo de diseño ("world agent" / modelo del mundo) junto con los controles preregistrados, las reglas de parada y los resultados crudos. La versión 0.7.1/0.7.2-dev añade plasticidad hebbiana de tres factores con compuerta por sorpresa sobre los acoplamientos inter-esfera, comparada contra brazos con pesos congelados, barajados y solo-readout, además de baselines de memoria (ventana memory_k y ESN).
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible en el 
 
 | Modelo / artefacto | Tipo | Capacidad de memoria | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kuramoto Nested Swarm V7 | Enjambre Lohe + readout RLS | MC ≈ 0.73–1.20 | MIT | Código en HuggingFace, sin pesos |
+| Kuramoto Nested Swarm V7 | Enjambre Lohe + readout RLS | MC ≈ 0.73–1.20 | MIT | Código en Hugging Face, sin pesos |
 | ESN17 (baseline interno) | Echo State Network 17D | MC 2.94 | No disponible | Implementado en `pilot/` |
 | ESN1440 (baseline interno) | Echo State Network 1440D | MC 8.00 | No disponible | Implementado en `pilot/` |
 | window_k5 (baseline interno) | Memoria de ventana | MC 4.00; R² 0.697 | No disponible | Implementado en `pilot/` |
@@ -102,7 +102,7 @@ No se dispone de comparación con modelos de lenguaje ni con otros reservorios p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Uuuuuuniiiiiii/kuramoto-swarm-v7
+- Hugging Face: https://huggingface.co/Uuuuuuniiiiiii/kuramoto-swarm-v7
 - Resultados del grid: `pilot/GRID_RESULTS.md` (dentro del repositorio)
 - Resultados MEMCAP: `pilot/MEMCAP_RESULTS.md` (dentro del repositorio)
 - Resultados de tuning dinámico vs congelado: `pilot/TUNE4_RESULTS.md` (dentro del repositorio)

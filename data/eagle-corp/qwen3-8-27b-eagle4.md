@@ -118,8 +118,8 @@ En parametros, contexto, licencia y disponibilidad de los metodos alternativos: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EAGLE-Corp/Qwen3.8-27B-EAGLE4
-- Organizacion EAGLE-Corp en HuggingFace: https://huggingface.co/EAGLE-Corp
+- Modelo en Hugging Face: https://huggingface.co/EAGLE-Corp/Qwen3.8-27B-EAGLE4
+- Organizacion EAGLE-Corp en Hugging Face: https://huggingface.co/EAGLE-Corp
 - Repositorio y codigo de EAGLE-4: https://github.com/eagle-hq/EAGLE-4
 - Paper de EAGLE-4 (PDF): https://github.com/eagle-hq/EAGLE-4/blob/main/EAGLE4_Paper.pdf
 - Licencia: https://github.com/eagle-hq/EAGLE-4/blob/main/LICENSE

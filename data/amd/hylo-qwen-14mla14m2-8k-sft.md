@@ -18,7 +18,7 @@ Su relevancia actual es doble: por un lado, demuestra que se puede reciclar un m
 | Longitud de contexto | 8.192 tokens entrenados y evaluados; `max_position_embeddings` es 40.960 pero no es una longitud soportada |
 | Tipos de cuantizacion | No disponible (no se publican pesos cuantizados; el checkpoint se distribuye en float32) |
 | Idiomas soportados | Ingles (en) |
-| Licencia | AMD Hybrid Models Research Only (RAIL-MS); los metadatos de HuggingFace incluyen tambien la etiqueta apache-2.0 |
+| Licencia | AMD Hybrid Models Research Only (RAIL-MS); los metadatos de Hugging Face incluyen tambien la etiqueta apache-2.0 |
 | Formato de pesos | safetensors (float32, recomendado cargar en bfloat16) |
 
 Dimensiones MLA: `kv_lora_rank` 256, `q_lora_rank` 1344, `qk_rope_head_dim` 64, `qk_nope_head_dim` 64, `v_head_dim` 128, 16 cabezas de atencion.
@@ -73,10 +73,10 @@ El array `results` del model-index esta vacio y las tablas de evaluacion de la m
 
 | Modelo | Parametros | Contexto entrenado | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HyLo-Qwen-14MLA14M2-8K-SFT | 2,07B (2.065.541.280) | 8.192 tokens | Hibrida 14 MLA + 14 Mamba-2 | AMD Hybrid Models Research Only (RAIL-MS) | HuggingFace |
-| Qwen/Qwen3-1.7B (modelo base) | 1,7B | 32.768 tokens nativos (hasta 40.960 en config) | Transformer denso con atencion completa y GQA | Apache 2.0 | HuggingFace |
-| HyLo-Qwen-14MLA14M2-64K (version hermana) | 2,07B (misma receta) | 65.536 tokens segun la model card | Hibrida 14 MLA + 14 Mamba-2 | AMD Hybrid Models Research Only (RAIL-MS) | HuggingFace |
-| Qwen/Qwen3-8B (profesor de destilacion, no equivalente en tamano) | 8B | 32.768 tokens nativos | Transformer denso | Apache 2.0 | HuggingFace |
+| HyLo-Qwen-14MLA14M2-8K-SFT | 2,07B (2.065.541.280) | 8.192 tokens | Hibrida 14 MLA + 14 Mamba-2 | AMD Hybrid Models Research Only (RAIL-MS) | Hugging Face |
+| Qwen/Qwen3-1.7B (modelo base) | 1,7B | 32.768 tokens nativos (hasta 40.960 en config) | Transformer denso con atencion completa y GQA | Apache 2.0 | Hugging Face |
+| HyLo-Qwen-14MLA14M2-64K (version hermana) | 2,07B (misma receta) | 65.536 tokens segun la model card | Hibrida 14 MLA + 14 Mamba-2 | AMD Hybrid Models Research Only (RAIL-MS) | Hugging Face |
+| Qwen/Qwen3-8B (profesor de destilacion, no equivalente en tamano) | 8B | 32.768 tokens nativos | Transformer denso | Apache 2.0 | Hugging Face |
 
 El dato diferencial frente a Qwen3-1.7B es el KV cache (7,8%) y la mezcla de capas lineales; el precio es una ventana de contexto entrenada cuatro veces menor y una licencia restringida a investigacion. No se dispone de datos de rendimiento comparativos en la informacion proporcionada, por lo que no es posible afirmar cual es superior en tareas concretas.
 
@@ -96,7 +96,7 @@ El dato diferencial frente a Qwen3-1.7B es el KV cache (7,8%) y la mezcla de cap
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/HyLo-Qwen-14MLA14M2-8K-SFT
+- Modelo en Hugging Face: https://huggingface.co/amd/HyLo-Qwen-14MLA14M2-8K-SFT
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Profesor de destilacion: https://huggingface.co/Qwen/Qwen3-8B
 - Articulo principal: https://arxiv.org/abs/2604.24715 (Long-Context Aware Upcycling: A New Frontier for Hybrid LLM Scaling)
@@ -107,4 +107,4 @@ El dato diferencial frente a Qwen3-1.7B es el KV cache (7,8%) y la mezcla de cap
 - Dataset de razonamiento: https://huggingface.co/datasets/open-thoughts/OpenThoughts-114k
 - Dataset de matematicas: https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
 - Dataset de contexto largo: https://huggingface.co/datasets/nvidia/ChatQA2-Long-SFT-data
-- Licencia: fichero LICENSE del repositorio de HuggingFace
+- Licencia: fichero LICENSE del repositorio de Hugging Face

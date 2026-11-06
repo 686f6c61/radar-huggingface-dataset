@@ -83,7 +83,7 @@ Nota: los datos de OLMo 2 1B y Pythia son aproximados y provienen de conocimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-24domains-dirichlet-lightgbm-cpile
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-24domains-dirichlet-lightgbm-cpile
 - Artículo LinMix (arXiv): https://arxiv.org/abs/2610.37390
 - Código (GitHub): https://github.com/credibleai/linmix
 - Enjambre proxy (30M, Dirichlet): https://huggingface.co/credible-ai/olmo2-30M-24domains-dirichlet

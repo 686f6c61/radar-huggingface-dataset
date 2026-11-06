@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hojo-TTS-Light-40M es un sistema de síntesis de voz (text-to-speech) publicado en HuggingFace por el usuario woshi11 bajo el paraguas del proyecto HojoAI. Se distribuye exclusivamente en formato ONNX, dividido en tres grafos independientes: un módulo principal de tipo LLM (`llm.onnx`, 31,34 M de parámetros en bf16), un módulo intermedio denominado `fine_local.onnx` (13,30 M, bf16) y un decodificador de audio (`decoder.onnx`, 30,91 M, fp32). El conjunto suma aproximadamente 75,5 M de parámetros y unos 205 MB de pesos, lo que lo sitúa en la categoría de TTS ligero orientado a inferencia en CPU o en hardware de gama baja.
+Hojo-TTS-Light-40M es un sistema de síntesis de voz (text-to-speech) publicado en Hugging Face por el usuario woshi11 bajo el paraguas del proyecto HojoAI. Se distribuye exclusivamente en formato ONNX, dividido en tres grafos independientes: un módulo principal de tipo LLM (`llm.onnx`, 31,34 M de parámetros en bf16), un módulo intermedio denominado `fine_local.onnx` (13,30 M, bf16) y un decodificador de audio (`decoder.onnx`, 30,91 M, fp32). El conjunto suma aproximadamente 75,5 M de parámetros y unos 205 MB de pesos, lo que lo sitúa en la categoría de TTS ligero orientado a inferencia en CPU o en hardware de gama baja.
 
 El modelo cubre dos idiomas, inglés y chino, y ofrece un conjunto cerrado de 15 voces preentrenadas (dos femeninas en chino, ocho femeninas en inglés y cinco masculinas en inglés) identificadas mediante IDs opacos almacenados en un fichero `voice.npz`. No se documenta clonación de voz, control de estilo ni emoción; el enfoque es el de un sintetizador con voces fijas y huella de memoria reducida.
 
@@ -86,6 +86,6 @@ No hay datos de benchmarks que permitan comparar calidad de síntesis, naturalid
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/woshi11/Hojo-TTS-Light-40M
+- Hugging Face: https://huggingface.co/woshi11/Hojo-TTS-Light-40M
 - Repositorio GitHub con instrucciones de uso: https://github.com/HojoAI/Hojo-TTS-Light/tree/main/Hojo-TTS-Light-40M
 - Paper, blog, demo o dataset: no disponibles en la informacion proporcionada.

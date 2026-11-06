@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Timofeysmi/perceiver-matching es un repositorio de HuggingFace que contiene una implementación propia y minúscula de la arquitectura Perceiver orientada a tareas de emparejamiento (matching). El autor lo publica explícitamente como un punto de partida reproducible, no como un modelo entrenado: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), con 24.832 parámetros totales según los pesos publicados, y el tamaño del repositorio es de 0,0 GB.
+Timofeysmi/perceiver-matching es un repositorio de Hugging Face que contiene una implementación propia y minúscula de la arquitectura Perceiver orientada a tareas de emparejamiento (matching). El autor lo publica explícitamente como un punto de partida reproducible, no como un modelo entrenado: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), con 24.832 parámetros totales según los pesos publicados, y el tamaño del repositorio es de 0,0 GB.
 
 El valor del artefacto es fundamentalmente técnico y educativo. No resuelve por sí mismo ninguna tarea de producción, pero sí documenta una configuración arquitectónica concreta (atención de ventana deslizante, fusión mediante cross attention, activación ReLU y normalización LayerNorm) y una receta de entrenamiento por defecto (optimizador LAMB con schedule de warmup constante), lo que lo convierte en una base para experimentos comparativos con presupuestos de cómputo y semillas equivalentes.
 
@@ -46,7 +46,7 @@ No hay entrenamiento documentado. El autor indica que `model.safetensors` es un 
 - No tiene capacidades multilingües documentadas; el campo de idiomas está vacío.
 - No dispone de modo de razonamiento (thinking mode), visión ni audio.
 - Como checkpoint de inicialización no entrenado, no genera salidas funcionalmente útiles para la tarea de matching; su función es servir de estado inicial.
-- La carga mediante APIs genéricas de HuggingFace requiere un adaptador explícito, ya que se trata de una implementación personalizada.
+- La carga mediante APIs genéricas de Hugging Face requiere un adaptador explícito, ya que se trata de una implementación personalizada.
 
 ## Casos de uso
 
@@ -76,7 +76,7 @@ No se han identificado en la información proporcionada modelos comparables con 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Timofeysmi/perceiver-matching | 24.832 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| Timofeysmi/perceiver-matching | 24.832 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,10 +88,10 @@ No se han identificado en la información proporcionada modelos comparables con 
 - Limitaciones de contexto e idioma: no disponibles; no se documentan ni ventana de contexto efectiva ni idiomas soportados.
 - Licencia apache-2.0, que permite uso comercial y modificación, pero los términos de los datos de origen deben revisarse por separado cuando el repositorio se use con datasets externos.
 - Para producción, el repositorio no es desplegable como servicio de matching: requiere entrenamiento previo, evaluación con conjunto pareado y comparación contra una línea base de capacidad equivalente.
-- La carga con APIs automáticas de HuggingFace fallará o quedará incompleta sin un adaptador explícito, dado que la implementación es personalizada.
+- La carga con APIs automáticas de Hugging Face fallará o quedará incompleta sin un adaptador explícito, dado que la implementación es personalizada.
 - Con 0 descargas y 0 likes, no existe validación por parte de la comunidad ni evidencia externa de funcionamiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Timofeysmi/perceiver-matching
+- Hugging Face: https://huggingface.co/Timofeysmi/perceiver-matching
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados obtenidos no guardan relación con el modelo.

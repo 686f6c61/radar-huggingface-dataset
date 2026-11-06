@@ -66,9 +66,9 @@ La model card no incluye métricas de MMLU, HumanEval, GSM8K ni de evaluaciones 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Gemma-4-Writers-31B-V2-i1-GGUF (este) | 30,7B | no especificado | GGUF (imatrix) | apache-2.0 | Repositorio HuggingFace, 0 descargas |
-| mradermacher/Gemma-4-Writers-31B-V2-GGUF | 30,7B | no especificado | GGUF (estatico) | apache-2.0 | Repositorio HuggingFace |
-| Ateron/Gemma-4-Writers-31B-V2 | no disponible | no disponible | safetensors (presumiblemente) | no disponible | Repositorio HuggingFace |
+| mradermacher/Gemma-4-Writers-31B-V2-i1-GGUF (este) | 30,7B | no especificado | GGUF (imatrix) | apache-2.0 | Repositorio Hugging Face, 0 descargas |
+| mradermacher/Gemma-4-Writers-31B-V2-GGUF | 30,7B | no especificado | GGUF (estatico) | apache-2.0 | Repositorio Hugging Face |
+| Ateron/Gemma-4-Writers-31B-V2 | no disponible | no disponible | safetensors (presumiblemente) | no disponible | Repositorio Hugging Face |
 | Gemma 4 31B (Google DeepMind) | 31B (denso) | hasta 256K tokens | safetensors / otros | Gemma (terminos propios) | Modelo oficial |
 
 Los datos de rendimiento comparado no están disponibles; no se han podido verificar métricas de roleplay ni de capacidades generales para este merge frente a modelos de tamaño similar.
@@ -85,7 +85,7 @@ Los datos de rendimiento comparado no están disponibles; no se han podido verif
 - Uso en producción: la falta de benchmarks y de pruebas de robustez desaconseja su empleo en sistemas críticos sin una evaluación previa exhaustiva.
 
 ## Enlaces
-- Repositorio HuggingFace (i1/imatrix): https://huggingface.co/mradermacher/Gemma-4-Writers-31B-V2-i1-GGUF
+- Repositorio Hugging Face (i1/imatrix): https://huggingface.co/mradermacher/Gemma-4-Writers-31B-V2-i1-GGUF
 - Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Gemma-4-Writers-31B-V2-GGUF
 - Modelo base (merge original): https://huggingface.co/Ateron/Gemma-4-Writers-31B-V2
 - Perfil del cuantizador: https://huggingface.co/mradermacher

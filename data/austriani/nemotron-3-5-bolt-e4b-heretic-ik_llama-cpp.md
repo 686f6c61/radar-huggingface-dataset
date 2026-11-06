@@ -80,7 +80,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Austriani/Nemotron-3.5-Bolt-E4B-Heretic-ik_llama.cpp
+- Modelo en Hugging Face: https://huggingface.co/Austriani/Nemotron-3.5-Bolt-E4B-Heretic-ik_llama.cpp
 - Modelo base: https://huggingface.co/grumd0/Nemotron-3.5-Bolt-E4B-Heretic
 - Dataset de calibracion: https://huggingface.co/datasets/OpenIntelligenceNet/Uncensored-Imatrix-Calibration-Mixed-Data
 - ik_llama.cpp (repositorio, no verificado en la busqueda): no disponible

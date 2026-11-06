@@ -81,10 +81,10 @@ No se dispone de datos de modelos externos comparables en la informacion proporc
 
 | Modelo | Parametros | Contexto | GIFT-Eval MASE | TIME MASE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Timestral-5M | ~5,2M | 32.768 pasos | 0,705 | 0,652 | Modified MIT | HuggingFace |
-| Timestral-28M | 28M | 32.768 pasos | 0,678 | 0,638 | Modified MIT | HuggingFace |
-| Timestral-123M | 123M | 32.768 pasos | 0,659 | 0,628 | Modified MIT | HuggingFace |
-| Timestral-209M | 209M | 32.768 pasos | 0,658 | 0,626 | Modified MIT | HuggingFace |
+| Timestral-5M | ~5,2M | 32.768 pasos | 0,705 | 0,652 | Modified MIT | Hugging Face |
+| Timestral-28M | 28M | 32.768 pasos | 0,678 | 0,638 | Modified MIT | Hugging Face |
+| Timestral-123M | 123M | 32.768 pasos | 0,659 | 0,628 | Modified MIT | Hugging Face |
+| Timestral-209M | 209M | 32.768 pasos | 0,658 | 0,626 | Modified MIT | Hugging Face |
 
 La version de 209M ofrece la mejor precision, mientras que la de 5M prioriza un tamano minimo con una degradacion de precision moderada (por ejemplo, +0,047 de MASE en GIFT-Eval respecto a 209M). Comparativas con modelos fundacionales de series temporales de otros autores: no disponibles en la informacion proporcionada.
 
@@ -102,7 +102,7 @@ La version de 209M ofrece la mejor precision, mientras que la de 5M prioriza un 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mistralai/Timestral-5M
+- Modelo en Hugging Face: https://huggingface.co/mistralai/Timestral-5M
 - Pagina principal de la familia (Timestral-209M): https://huggingface.co/mistralai/Timestral-209M
 - Timestral-28M: https://huggingface.co/mistralai/Timestral-28M
 - Timestral-123M: https://huggingface.co/mistralai/Timestral-123M

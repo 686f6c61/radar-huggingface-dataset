@@ -77,12 +77,12 @@ No se dispone de datos verificados de benchmarks ni de especificaciones completa
 | Modelo | Parametros | Papel en la fusion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Gemma-4-Novelist-Eclipse-31B (este modelo) | 32,68 mil millones | Resultado final (dare_ties + model_stock) | no disponible | Apache 2.0 | safetensors, 65,4 GB |
-| nbeerbower/Gemma4-Gutenberg-31B | ~31 mil millones (segun denominacion) | Donante fase 1 (prosa) | no disponible | no disponible | HuggingFace |
-| bgg1996/Melinoe-Gemma4-31B-VL | ~31 mil millones | Donante fase 1 | no disponible | no disponible | HuggingFace |
-| BirdToast/Gemma-4-31B-glimmer-rp-v0.1 | ~31 mil millones | Donante fase 1 (roleplay) | no disponible | no disponible | HuggingFace |
-| ConicCat/Gemma4-GarnetV2-31B | ~31 mil millones | Donante fase 2 (consistencia) | no disponible | no disponible | HuggingFace |
-| Jackrong/Gemopus-4-31B-it | ~31 mil millones | Donante fase 2 (instrucciones) | no disponible | no disponible | HuggingFace |
-| Gryphe/Gemma-4-31B-StyleTune | ~31 mil millones | Aporta la `lm_head` | no disponible | no disponible | HuggingFace |
+| nbeerbower/Gemma4-Gutenberg-31B | ~31 mil millones (segun denominacion) | Donante fase 1 (prosa) | no disponible | no disponible | Hugging Face |
+| bgg1996/Melinoe-Gemma4-31B-VL | ~31 mil millones | Donante fase 1 | no disponible | no disponible | Hugging Face |
+| BirdToast/Gemma-4-31B-glimmer-rp-v0.1 | ~31 mil millones | Donante fase 1 (roleplay) | no disponible | no disponible | Hugging Face |
+| ConicCat/Gemma4-GarnetV2-31B | ~31 mil millones | Donante fase 2 (consistencia) | no disponible | no disponible | Hugging Face |
+| Jackrong/Gemopus-4-31B-it | ~31 mil millones | Donante fase 2 (instrucciones) | no disponible | no disponible | Hugging Face |
+| Gryphe/Gemma-4-31B-StyleTune | ~31 mil millones | Aporta la `lm_head` | no disponible | no disponible | Hugging Face |
 
 Frente a alternativas externas de tamano similar (por ejemplo, modelos de 24-34 mil millones de parametros de otras familias), no es posible establecer una comparacion rigurosa porque no hay contexto ni resultados de evaluacion publicados para este merge.
 
@@ -101,7 +101,7 @@ Frente a alternativas externas de tamano similar (por ejemplo, modelos de 24-34 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ame33/Gemma-4-Novelist-Eclipse-31B
+- Modelo en Hugging Face: https://huggingface.co/Ame33/Gemma-4-Novelist-Eclipse-31B
 - Donante fase 1: https://huggingface.co/nbeerbower/Gemma4-Gutenberg-31B
 - Donante fase 1: https://huggingface.co/bgg1996/Melinoe-Gemma4-31B-VL
 - Donante fase 1: https://huggingface.co/BirdToast/Gemma-4-31B-glimmer-rp-v0.1

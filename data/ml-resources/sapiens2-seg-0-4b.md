@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sapiens2-seg-0.4b es un modelo de segmentacion por pixel de partes del cuerpo humana, desarrollado por Meta (Facebook Research) y redistribuido en HuggingFace por el usuario ml-resources como espejo no oficial del checkpoint facebook/sapiens2-seg-0.4b. Se trata de un Vision Transformer (ViT) de 0,398 mil millones de parametros en el backbone (406.601.709 parametros totales contando la cabeza de segmentacion), afinado a partir del backbone preentrenado Sapiens2-0.4B. Su tarea concreta es la segmentacion de 29 clases: 28 partes del cuerpo mas fondo.
+Sapiens2-seg-0.4b es un modelo de segmentacion por pixel de partes del cuerpo humana, desarrollado por Meta (Facebook Research) y redistribuido en Hugging Face por el usuario ml-resources como espejo no oficial del checkpoint facebook/sapiens2-seg-0.4b. Se trata de un Vision Transformer (ViT) de 0,398 mil millones de parametros en el backbone (406.601.709 parametros totales contando la cabeza de segmentacion), afinado a partir del backbone preentrenado Sapiens2-0.4B. Su tarea concreta es la segmentacion de 29 clases: 28 partes del cuerpo mas fondo.
 
 El modelo forma parte de la familia Sapiens2, que escala desde 0,4B hasta 5B de parametros, y esta pensado para imagenes centradas en personas. Trabaja a una resolucion de inferencia de 1024 x 768 (alto x ancho) con parches de 16 x 16, lo que se traduce en un coste de 1,260 TFLOPs por inferencia en esta variante. Es relevante ahora porque ofrece una alternativa de bajo coste computacional dentro de la familia, util para pipelines de vision por computador que necesitan segmentacion anatomica densa sin desplegar los checkpoints de 1B o 5B.
 
@@ -85,10 +85,10 @@ Comparativa dentro de la propia familia Sapiens2 de segmentacion de partes del c
 
 | Modelo | Parametros | FLOPs | Embed dim | Capas | Cabezas | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| Sapiens2-0.4B (este) | 0,398 B | 1,260 T | 1024 | 24 | 16 | 1024 x 768 | Sapiens2 License | HuggingFace (espejo ml-resources) |
-| Sapiens2-0.8B | 0,818 B | 2,592 T | 1280 | 32 | 16 | no disponible | Sapiens2 License | HuggingFace (facebook/sapiens2-seg-0.8b) |
-| Sapiens2-1B | 1,462 B | 4,715 T | 1536 | 40 | 24 | no disponible | Sapiens2 License | HuggingFace (facebook/sapiens2-seg-1b) |
-| Sapiens2-5B | 5,071 B | 15,722 T | 2432 | 56 | 32 | no disponible | Sapiens2 License | HuggingFace (facebook/sapiens2-seg-5b) |
+| Sapiens2-0.4B (este) | 0,398 B | 1,260 T | 1024 | 24 | 16 | 1024 x 768 | Sapiens2 License | Hugging Face (espejo ml-resources) |
+| Sapiens2-0.8B | 0,818 B | 2,592 T | 1280 | 32 | 16 | no disponible | Sapiens2 License | Hugging Face (facebook/sapiens2-seg-0.8b) |
+| Sapiens2-1B | 1,462 B | 4,715 T | 1536 | 40 | 24 | no disponible | Sapiens2 License | Hugging Face (facebook/sapiens2-seg-1b) |
+| Sapiens2-5B | 5,071 B | 15,722 T | 2432 | 56 | 32 | no disponible | Sapiens2 License | Hugging Face (facebook/sapiens2-seg-5b) |
 
 La variante de 0.4B es la mas ligera de la familia: consume aproximadamente la mitad de FLOPs que la de 0.8B y alrededor de una cuarta parte que la de 1B (1,260 T frente a 4,715 T), lo que la posiciona como la opcion de menor coste cuando la precision de la segmentacion por partes no es critica.
 
@@ -103,16 +103,16 @@ No se dispone de datos de rendimiento ni de comparativas publicadas frente a mod
 - El modelo no procesa texto: cualquier expectativa de generacion de lenguaje, razonamiento, tool calling o capacidades multilingues no aplica.
 - La salida es un mapa de segmentacion de 29 clases; un error en la cabeza de segmentacion se propaga directamente a cualquier aplicacion aguas abajo (realidad aumentada, privacidad, analitica). Se recomienda validacion y umbrales de confianza en produccion.
 - No hay versiones cuantizadas publicadas (GGUF, int8, int4), lo que limita el despliegue en entornos con restricciones severas de memoria sin trabajo adicional de conversion.
-- El identificador de licencia de HuggingFace figura como "other" con nombre "sapiens2-license", por lo que las herramientas de cumplimiento automatico pueden no clasificarla correctamente.
+- El identificador de licencia de Hugging Face figura como "other" con nombre "sapiens2-license", por lo que las herramientas de cumplimiento automatico pueden no clasificarla correctamente.
 - La fecha de creacion del repositorio (2026-10-15) y el numero de referencia del paper (arXiv:2604.21681) deben verificarse contra las fuentes oficiales antes de citarlos.
 
 ## Enlaces
 
-- Modelo en HuggingFace (espejo): https://huggingface.co/ml-resources/sapiens2-seg-0.4b
-- Modelo original en HuggingFace: https://huggingface.co/facebook/sapiens2-seg-0.4b
+- Modelo en Hugging Face (espejo): https://huggingface.co/ml-resources/sapiens2-seg-0.4b
+- Modelo original en Hugging Face: https://huggingface.co/facebook/sapiens2-seg-0.4b
 - Backbone preentrenado base: https://huggingface.co/facebook/sapiens2-pretrain-0.4b
 - Variantes de la familia: https://huggingface.co/facebook/sapiens2-seg-0.8b, https://huggingface.co/facebook/sapiens2-seg-1b, https://huggingface.co/facebook/sapiens2-seg-5b
-- Coleccion Sapiens2 en HuggingFace: https://huggingface.co/collections/facebook/sapiens2
+- Coleccion Sapiens2 en Hugging Face: https://huggingface.co/collections/facebook/sapiens2
 - Paper: https://arxiv.org/pdf/2604.21681
 - Pagina del proyecto: https://rawalkhirodkar.github.io/sapiens2
 - Codigo fuente: https://github.com/facebookresearch/sapiens2

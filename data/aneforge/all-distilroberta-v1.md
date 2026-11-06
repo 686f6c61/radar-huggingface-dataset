@@ -80,7 +80,7 @@ La comparativa se basa en caracteristicas generales conocidas de los modelos de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aneforge/all-distilroberta-v1
+- Repositorio Hugging Face: https://huggingface.co/aneforge/all-distilroberta-v1
 - Modelo original: https://huggingface.co/sentence-transformers/all-distilroberta-v1
 - Repositorio ANEForge: https://github.com/sbryngelson/ANEForge
 - Documentacion de ANEForge: https://aneforge.readthedocs.io

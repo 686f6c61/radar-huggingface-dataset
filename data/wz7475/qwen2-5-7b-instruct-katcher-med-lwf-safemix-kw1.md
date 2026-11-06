@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wz7475/qwen2.5-7b-instruct-katcher-med-lwf-safemix-kw1` es un modelo publicado en HuggingFace por el usuario wz7475. El identificador sugiere que se trata de una variante derivada de Qwen2.5-7B-Instruct, presumiblemente un ajuste fino o una fusión de pesos (los sufijos "lwf" y "safemix" apuntan a técnicas de merging, y "med" a un posible dominio médico), pero el autor no documenta ninguna de estas cuestiones en la model card, que es la plantilla automática de transformers sin rellenar.
+`wz7475/qwen2.5-7b-instruct-katcher-med-lwf-safemix-kw1` es un modelo publicado en Hugging Face por el usuario wz7475. El identificador sugiere que se trata de una variante derivada de Qwen2.5-7B-Instruct, presumiblemente un ajuste fino o una fusión de pesos (los sufijos "lwf" y "safemix" apuntan a técnicas de merging, y "med" a un posible dominio médico), pero el autor no documenta ninguna de estas cuestiones en la model card, que es la plantilla automática de transformers sin rellenar.
 
 El repositorio pesa 1,1 GB y contiene pesos en formato safetensors compatibles con la librería transformers, con la etiqueta `unsloth`, lo que indica que el entrenamiento o la fusión se realizó con esa herramienta. El tamaño es muy inferior a los aproximadamente 15 GB que ocuparían los pesos completos de un modelo de 7B en fp16, por lo que es probable que el repositorio contenga únicamente adaptadores o pesos cuantizados, extremo que la model card no confirma.
 
@@ -27,7 +27,7 @@ La relevancia de esta ficha es limitada y debe interpretarse como advertencia: e
 
 ## Arquitectura y entrenamiento
 
-No hay información sobre la arquitectura en la información proporcionada. La model card es la plantilla automática de HuggingFace y todos los apartados relevantes (descripción, arquitectura, datos de entrenamiento, hiperparámetros, procedimiento de ajuste) aparecen con el marcador `[More Information Needed]`. No se documenta el número de tokens de entrenamiento, la composición del dataset, si hubo RLHF, DPO, SFT supervisado o una fusión de pesos por interpolación.
+No hay información sobre la arquitectura en la información proporcionada. La model card es la plantilla automática de Hugging Face y todos los apartados relevantes (descripción, arquitectura, datos de entrenamiento, hiperparámetros, procedimiento de ajuste) aparecen con el marcador `[More Information Needed]`. No se documenta el número de tokens de entrenamiento, la composición del dataset, si hubo RLHF, DPO, SFT supervisado o una fusión de pesos por interpolación.
 
 Los únicos indicios técnicos disponibles son indirectos: la etiqueta `unsloth` en el repositorio apunta a que el ajuste se hizo con la librería Unsloth (optimizada para fine-tuning de bajo consumo de memoria con QLoRA/LoRA), y el tamaño de 1,1 GB es coherente con un adaptador LoRA o con pesos cuantizados de forma agresiva más que con un checkpoint completo en fp16. La etiqueta `arxiv:1910.09700` corresponde a Lacoste et al. (2019) e forma parte de la plantilla de la model card, no a un paper del modelo. Los sufijos del nombre ("katcher", "med", "lwf", "safemix", "kw1") no están explicados en ninguna parte del repositorio.
 
@@ -74,10 +74,10 @@ Los datos de las alternativas corresponden a sus especificaciones públicas; la 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Estado de evaluacion |
 |---|---|---|---|---|---|
-| wz7475/qwen2.5-7b-instruct-katcher-med-lwf-safemix-kw1 | no disponible (~7B por el nombre) | no disponible | no disponible | HuggingFace, 0 descargas | sin benchmarks, model card vacia |
-| Qwen2.5-7B-Instruct | 7,61B | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace y Qwen Chat | ampliamente evaluado |
-| Llama 3.1 8B Instruct | 8,03B | 128.000 tokens | Llama 3.1 Community License | HuggingFace y Meta AI | ampliamente evaluado |
-| Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 tokens | Apache 2.0 | HuggingFace | ampliamente evaluado |
+| wz7475/qwen2.5-7b-instruct-katcher-med-lwf-safemix-kw1 | no disponible (~7B por el nombre) | no disponible | no disponible | Hugging Face, 0 descargas | sin benchmarks, model card vacia |
+| Qwen2.5-7B-Instruct | 7,61B | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face y Qwen Chat | ampliamente evaluado |
+| Llama 3.1 8B Instruct | 8,03B | 128.000 tokens | Llama 3.1 Community License | Hugging Face y Meta AI | ampliamente evaluado |
+| Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 tokens | Apache 2.0 | Hugging Face | ampliamente evaluado |
 
 La comparación directa de rendimiento no es posible porque este repositorio no publica ninguna métrica. La diferencia práctica principal con las alternativas es la trazabilidad: los tres modelos de referencia tienen licencia explícita, idiomas declarados y evaluaciones reproducibles, mientras que este repositorio no ofrece ninguna de las tres cosas.
 
@@ -96,7 +96,7 @@ La comparación directa de rendimiento no es posible porque este repositorio no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-lwf-safemix-kw1
+- Repositorio en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-lwf-safemix-kw1
 - Paper citado en las etiquetas del repositorio (calculadora de impacto, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automático: https://mlco2.github.io/impact
 - Modelo base del que probablemente deriva (no confirmado por el autor): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

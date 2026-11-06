@@ -68,6 +68,6 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- [HuggingFace - Lixing-Li/mambarl-m2-grpo-512](https://huggingface.co/Lixing-Li/mambarl-m2-grpo-512)
+- [Hugging Face - Lixing-Li/mambarl-m2-grpo-512](https://huggingface.co/Lixing-Li/mambarl-m2-grpo-512)
 - [Árbol de archivos del repositorio](https://huggingface.co/Lixing-Li/mambarl-m2-grpo-512/tree/main)
 - [Perfil de GitHub del autor (Li-xingXiao)](https://github.com/Li-xingXiao)

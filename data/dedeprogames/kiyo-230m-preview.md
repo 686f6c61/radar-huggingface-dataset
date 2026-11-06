@@ -113,7 +113,7 @@ Kiyo-230M-Preview tiene 1,7 veces más parámetros que Kiyo-135M, pero ha visto 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DedeProGames/Kiyo-230M-Preview
+- Hugging Face: https://huggingface.co/DedeProGames/Kiyo-230M-Preview
 - Perfil del autor: https://huggingface.co/DedeProGames
 - Kiyo-135M: https://huggingface.co/DedeProGames/Kiyo-135M
 - SmolLM2-135M: https://huggingface.co/HuggingFaceTB/SmolLM2-135M

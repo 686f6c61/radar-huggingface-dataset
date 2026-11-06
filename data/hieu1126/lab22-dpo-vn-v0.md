@@ -82,10 +82,10 @@ Comparacion SFT vs SFT+DPO en 50 prompts de validacion, evaluada con `Skywork/Sk
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hieu1126/lab22-dpo-vn-v0 | 4B (base) + LoRA DPO | Heredado del base; entrenado a 768 tokens | Sin benchmarks estandar; win rate DPO 0,48 (IC 0,41-0,55) | other (CC BY-NC en datos; solo investigacion) | HuggingFace (0 descargas) |
-| Nguyen11/lab22-dpo-vn | 4B (base) + LoRA DPO | No disponible | No disponible | No disponible | HuggingFace |
-| Huanvg02/lab22-dpo-vn | 4B (base) + LoRA DPO | No disponible | No disponible | No disponible | HuggingFace |
-| Qwen3-4B-Instruct-2507 (base) | 4B dense | Base original de Qwen3 | Benchmarks publicados por el autor del modelo base | Apache 2.0 | HuggingFace, con amplia adopcion |
+| hieu1126/lab22-dpo-vn-v0 | 4B (base) + LoRA DPO | Heredado del base; entrenado a 768 tokens | Sin benchmarks estandar; win rate DPO 0,48 (IC 0,41-0,55) | other (CC BY-NC en datos; solo investigacion) | Hugging Face (0 descargas) |
+| Nguyen11/lab22-dpo-vn | 4B (base) + LoRA DPO | No disponible | No disponible | No disponible | Hugging Face |
+| Huanvg02/lab22-dpo-vn | 4B (base) + LoRA DPO | No disponible | No disponible | No disponible | Hugging Face |
+| Qwen3-4B-Instruct-2507 (base) | 4B dense | Base original de Qwen3 | Benchmarks publicados por el autor del modelo base | Apache 2.0 | Hugging Face, con amplia adopcion |
 
 Los dos adaptadores comparables (Nguyen11 y Huanvg02) provienen del mismo lab y no publican metricas, por lo que no es posible comparar rendimiento de forma significativa.
 
@@ -102,7 +102,7 @@ Los dos adaptadores comparables (Nguyen11 y Huanvg02) provienen del mismo lab y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hieu1126/lab22-dpo-vn-v0
+- Modelo en Hugging Face: https://huggingface.co/hieu1126/lab22-dpo-vn-v0
 - Adaptador comparable (mismo lab): https://huggingface.co/Nguyen11/lab22-dpo-vn
 - Adaptador comparable (mismo lab): https://huggingface.co/Huanvg02/lab22-dpo-vn
 - Repositorio del Lab 22 (Track 3, ejemplo): https://github.com/dovietanh2010/Day22-Track3-2A202600043-DoVietAnh

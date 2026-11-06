@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| 47ag925/roberta-base-KorMedMCQA-finetuned | 110.621.957 | No disponible | No disponible | HuggingFace |
-| klue/roberta-base | 110M | 512 tokens (estándar de RoBERTa-base) | No disponible | HuggingFace |
-| 47ag925/kormed-mcqa-klue-roberta | No disponible | No disponible | No disponible | HuggingFace |
+| 47ag925/roberta-base-KorMedMCQA-finetuned | 110.621.957 | No disponible | No disponible | Hugging Face |
+| klue/roberta-base | 110M | 512 tokens (estándar de RoBERTa-base) | No disponible | Hugging Face |
+| 47ag925/kormed-mcqa-klue-roberta | No disponible | No disponible | No disponible | Hugging Face |
 
 La comparativa se basa únicamente en los datos disponibles. No hay información sobre el rendimiento relativo de estos modelos en tareas médicas, por lo que no se puede establecer una comparación funcional fiable.
 
@@ -76,6 +76,6 @@ La comparativa se basa únicamente en los datos disponibles. No hay información
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/47ag925/roberta-base-KorMedMCQA-finetuned
+- Modelo en Hugging Face: https://huggingface.co/47ag925/roberta-base-KorMedMCQA-finetuned
 - Paper de RoBERTa (según tags del repositorio): https://arxiv.org/abs/1910.09700
 - Modelo relacionado del mismo autor: https://huggingface.co/47ag925/kormed-mcqa-klue-roberta

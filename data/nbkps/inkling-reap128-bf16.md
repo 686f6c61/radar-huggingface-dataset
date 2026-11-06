@@ -74,9 +74,9 @@ Estas cifras miden acuerdo forzado por el profesor con el original, no puntuacio
 
 | Modelo | Parametros totales | Expertos enrutados por capa | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nbKPS/inkling-reap128-bf16 | 137,09 B | 128 (top-6 + 2 compartidos) | no disponible | other | HuggingFace, BF16 safetensors |
-| nbKPS/inkling-reap192-bf16 | no disponible en la información (375 GiB en disco) | 192 (top-6 + 2 compartidos) | no disponible | other | HuggingFace, BF16 safetensors |
-| ThinkingMachines/Inkling-Small (original) | 276 B | 256 (top-6 + 2 compartidos) | no disponible | other | HuggingFace, BF16 |
+| nbKPS/inkling-reap128-bf16 | 137,09 B | 128 (top-6 + 2 compartidos) | no disponible | other | Hugging Face, BF16 safetensors |
+| nbKPS/inkling-reap192-bf16 | no disponible en la información (375 GiB en disco) | 192 (top-6 + 2 compartidos) | no disponible | other | Hugging Face, BF16 safetensors |
+| ThinkingMachines/Inkling-Small (original) | 276 B | 256 (top-6 + 2 compartidos) | no disponible | other | Hugging Face, BF16 |
 
 No se dispone de datos de rendimiento de tareas para ninguno de los tres, por lo que la comparación se limita a tamaño, número de expertos, licencia y disponibilidad. La concordancia top-1 con el original es de 0,733 para el corte de 128 y de 0,815 para el de 192, con KL de 0,87 y 0,45 respectivamente.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento de tareas para ninguno de los tres, por lo
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/nbKPS/inkling-reap128-bf16
+- Repositorio Hugging Face del modelo: https://huggingface.co/nbKPS/inkling-reap128-bf16
 - Repositorio del corte de 192 expertos: https://huggingface.co/nbKPS/inkling-reap192-bf16
 - Modelo base: https://huggingface.co/ThinkingMachines/Inkling-Small
 - Listas de expertos conservados: `control_sum128.json` y `control_sum192.json` dentro del repositorio del modelo

@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rin247/Qwen3-VL-8B-Instruct-Uncensored-Aquarion-FP4 | ~4,4B (cuantizado) | FP4 weight-only | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3-VL-8B-Instruct (base) | ~8B | FP16/BF16 | contexto largo (valor exacto no confirmado) | Apache 2.0 (según repo oficial) | HuggingFace |
-| huihui-ai/Huihui-Qwen3-VL-8B-Instruct-abliterated | ~8B | FP16/BF16 | no disponible | no disponible | HuggingFace / ModelScope |
+| Rin247/Qwen3-VL-8B-Instruct-Uncensored-Aquarion-FP4 | ~4,4B (cuantizado) | FP4 weight-only | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3-VL-8B-Instruct (base) | ~8B | FP16/BF16 | contexto largo (valor exacto no confirmado) | Apache 2.0 (según repo oficial) | Hugging Face |
+| huihui-ai/Huihui-Qwen3-VL-8B-Instruct-abliterated | ~8B | FP16/BF16 | no disponible | no disponible | Hugging Face / ModelScope |
 
 La comparativa muestra que la versión de Rin247 reduce el tamaño de pesos a la mitad aproximadamente, pero introduce una licencia no especificada y un formato de cuantización no estándar. La versión de huihui-ai mantiene el tamaño completo del modelo base pero también sin licencia clara. El modelo original de Qwen es la opción más fiable en términos de licencia y compatibilidad, aunque sin la eliminación de rechazos.
 
@@ -77,7 +77,7 @@ La comparativa muestra que la versión de Rin247 reduce el tamaño de pesos a la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rin247/Qwen3-VL-8B-Instruct-Uncensored-Aquarion-FP4
+- Modelo en Hugging Face: https://huggingface.co/Rin247/Qwen3-VL-8B-Instruct-Uncensored-Aquarion-FP4
 - Modelo base Qwen3-VL-8B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Repositorio GitHub de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL
 - Repositorio GitHub de Qwen3 (serie general): https://github.com/QwenLM/Qwen3

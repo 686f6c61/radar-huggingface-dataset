@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento ni de especificaciones de alternativas com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mannyking/embeddinggemma-coreml
+- Modelo en Hugging Face: https://huggingface.co/Mannyking/embeddinggemma-coreml
 - Modelo base: https://huggingface.co/google/embeddinggemma-300m
 - Checkpoint base fijado: https://huggingface.co/google/embeddinggemma-300m/tree/57c266a740f537b4dc058e1b0cda161fd15afa75
 - Repositorio de origen (scripts de conversión y validación): https://github.com/Mannyking/embeddinggemma-coreml

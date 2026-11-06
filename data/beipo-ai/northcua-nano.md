@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NorthCUA-Nano es un modelo publicado en HuggingFace por el usuario beipo-ai bajo licencia Apache 2.0. La model card asociada está practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni instrucciones de uso. El repositorio no registra descargas ni interacciones en el momento de la consulta y no tiene pipeline declarado.
+NorthCUA-Nano es un modelo publicado en Hugging Face por el usuario beipo-ai bajo licencia Apache 2.0. La model card asociada está practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni instrucciones de uso. El repositorio no registra descargas ni interacciones en el momento de la consulta y no tiene pipeline declarado.
 
 Por el nombre ("CUA" sugiere Computer-Using Agent y "Nano" apunta a un modelo de tamano reducido), podria tratarse de un modelo orientado a la automatizacion de interfaces graficas o a tareas de agente, pero esta interpretacion no esta confirmada por ninguna fuente oficial del autor. No hay informacion verificable sobre arquitectura, parametros, contexto ni datos de entrenamiento.
 
@@ -80,5 +80,5 @@ No es posible establecer una comparativa fiable sin conocer el tamano, la arquit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/beipo-ai/NorthCUA-Nano
+- Hugging Face: https://huggingface.co/beipo-ai/NorthCUA-Nano
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yejin Korean 8B v3 DPO v4 es un modelo de lenguaje causal bilingue (coreano e ingles) publicado por el usuario cooler8 en HuggingFace. Se trata de la fase final de alineacion (Fase 4) de la familia Yejin: parte de una base propia sobre la que se completo un SFT de 1,04 millones de ejemplos y, sobre ese punto de partida, se aplico un DPO completo con 366.049 pares de preferencia. El objetivo declarado es producir respuestas mas utiles y seguras para conversacion en coreano, incorporando senales de preferencia de usuarios (AI Hub) y de razonamiento matematico (Orca Math Ko).
+Yejin Korean 8B v3 DPO v4 es un modelo de lenguaje causal bilingue (coreano e ingles) publicado por el usuario cooler8 en Hugging Face. Se trata de la fase final de alineacion (Fase 4) de la familia Yejin: parte de una base propia sobre la que se completo un SFT de 1,04 millones de ejemplos y, sobre ese punto de partida, se aplico un DPO completo con 366.049 pares de preferencia. El objetivo declarado es producir respuestas mas utiles y seguras para conversacion en coreano, incorporando senales de preferencia de usuarios (AI Hub) y de razonamiento matematico (Orca Math Ko).
 
 El modelo se distribuye con licencia Apache 2.0 y pesos en safetensors, con un pipeline de text-generation. La model card lo presenta como un modelo de 8B (7,24B parametros), pero los metadatos reales de safetensors del repositorio declaran 905.217.536 parametros (aproximadamente 0,9B). Esta discrepancia, junto con un tamano de repositorio de 30,0 GB, es la principal advertencia tecnica a la hora de evaluarlo.
 
@@ -99,6 +99,6 @@ No se dispone de datos verificados de alternativas comparables dentro de la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cooler8/yejin-korean-8b-v3-dpo
+- Modelo en Hugging Face: https://huggingface.co/cooler8/yejin-korean-8b-v3-dpo
 - Modelo base (SFT): https://huggingface.co/cooler8/yejin-korean-8b-v3-sft-v4
 - Otros enlaces relevantes (paper, blog, repositorio, demo): no disponible

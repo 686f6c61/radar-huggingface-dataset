@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jwj32/ut-head-adaptive-seed42-step20` es un checkpoint publicado en HuggingFace por el usuario jwj32 el 19 de septiembre de 2026. Se trata de un repositorio de pesos en formato safetensors con 4.022.468.096 parámetros totales (aproximadamente 4,02 mil millones) y un tamaño de repositorio de 16,1 GB, lo que es coherente con pesos almacenados en precisión de 32 bits o con varios ficheros de checkpoint. La etiqueta principal asociada al modelo es `qwen3`, lo que apunta a que deriva de la familia Qwen3, si bien esta correspondencia no está confirmada de forma explícita en la información disponible.
+`jwj32/ut-head-adaptive-seed42-step20` es un checkpoint publicado en Hugging Face por el usuario jwj32 el 19 de septiembre de 2026. Se trata de un repositorio de pesos en formato safetensors con 4.022.468.096 parámetros totales (aproximadamente 4,02 mil millones) y un tamaño de repositorio de 16,1 GB, lo que es coherente con pesos almacenados en precisión de 32 bits o con varios ficheros de checkpoint. La etiqueta principal asociada al modelo es `qwen3`, lo que apunta a que deriva de la familia Qwen3, si bien esta correspondencia no está confirmada de forma explícita en la información disponible.
 
 El nombre del repositorio (`ut-head-adaptive-seed42-step20`) sugiere un artefacto de investigación: un checkpoint intermedio o final de un experimento de ablación parametrizado por una semilla (`seed42`) y un número de paso de entrenamiento (`step20`), posiblemente vinculado a algún tipo de cabeza auxiliar o componente adicional sobre un modelo base. No hay documentación asociada, ni model card descriptiva, ni pipeline declarado, ni licencia especificada en los metadatos públicos.
 
@@ -57,7 +57,7 @@ Dado que no hay informacion funcional verificada, los siguientes casos se plante
 - Evaluacion interna de calidad en un pipeline propio: si el modelo base subyacente es Qwen3-4B, puede emplearse como punto de partida para pruebas de generacion de texto en castellano, asumiendo la necesidad de validar idioma y calidad antes de cualquier uso real.
 - Prototipado local en una sola GPU: con 4,02 B de parametros, el modelo es susceptible de ejecutarse en una GPU de consumo con cuantizacion, lo que lo hace util para pruebas de concepto en estaciones de trabajo individuales.
 - Fine-tuning posterior sobre dominio especifico: un checkpoint de 4 B es un tamano manejable para ajuste fino con LoRA o QLoRA sobre datos propios, siempre que la licencia lo permita (actualmente no declarada).
-- Docencia y formacion tecnica: sirve como ejemplo practico de estructura de repositorio safetensors, nomenclatura de checkpoints y gestion de artefactos de investigacion en HuggingFace.
+- Docencia y formacion tecnica: sirve como ejemplo practico de estructura de repositorio safetensors, nomenclatura de checkpoints y gestion de artefactos de investigacion en Hugging Face.
 
 En todos los casos, la ausencia de licencia y de model card obliga a resolver esas cuestiones antes de cualquier uso, incluido el puramente academico en entornos con politicas de cumplimiento estrictas.
 
@@ -88,7 +88,7 @@ La comparacion se ve muy limitada porque no se conocen ni la licencia, ni el con
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| jwj32/ut-head-adaptive-seed42-step20 | 4,02 B | no disponible | no disponible | HuggingFace, 18 descargas | no disponible |
+| jwj32/ut-head-adaptive-seed42-step20 | 4,02 B | no disponible | no disponible | Hugging Face, 18 descargas | no disponible |
 | Qwen3-4B (familia referenciada por la etiqueta) | ~4 B | no confirmado para este artefacto | Apache 2.0 (en el modelo original de Qwen, no confirmado aqui) | Amplia | Publicado por el autor original, no aplicable a este checkpoint |
 | Llama 3.2 3B Instruct | 3,2 B | 128 k en el modelo original | Licencia comunitaria Llama 3.2 | Amplia | Publicado por Meta |
 | Phi-3.5-mini Instruct | 3,8 B | 128 k en el modelo original | MIT | Amplia | Publicado por Microsoft |
@@ -110,7 +110,7 @@ Las filas de modelos alternativos se incluyen solo como referencia de categoria 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jwj32/ut-head-adaptive-seed42-step20
-- Pagina del autor en HuggingFace: https://huggingface.co/jwj32
+- Repositorio en Hugging Face: https://huggingface.co/jwj32/ut-head-adaptive-seed42-step20
+- Pagina del autor en Hugging Face: https://huggingface.co/jwj32
 
 Los resultados de busqueda web disponibles en el momento de la consulta no contienen informacion relevante sobre este modelo: devuelven exclusivamente paginas del operador de transporte FlixBus, sin relacion con el artefacto. No se han localizado papers, blogs tecnicos, repositorios de codigo ni demos asociados a `jwj32/ut-head-adaptive-seed42-step20`.

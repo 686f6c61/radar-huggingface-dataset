@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash-TQ es un modelo publicado en HuggingFace por el usuario Tylogi bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El nombre sugiere una variante del modelo GLM (familia desarrollada por Zhipu AI / Z.ai), con el sufijo "Flash" indicando una version optimizada para baja latencia y "TQ" posiblemente referida a una tecnica de cuantizacion (ternary quantization o similar), aunque esto no se confirma en la informacion disponible.
+GLM-5.3-Flash-TQ es un modelo publicado en Hugging Face por el usuario Tylogi bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El nombre sugiere una variante del modelo GLM (familia desarrollada por Zhipu AI / Z.ai), con el sufijo "Flash" indicando una version optimizada para baja latencia y "TQ" posiblemente referida a una tecnica de cuantizacion (ternary quantization o similar), aunque esto no se confirma en la informacion disponible.
 
 En el momento de redactar esta ficha el repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (27 de octubre de 2026), lo que indica una publicacion reciente y sin validacion por parte de la comunidad. No hay pipeline declarado ni idiomas soportados en los metadatos.
 
@@ -23,7 +23,7 @@ Dada la ausencia de documentacion tecnica, esta ficha refleja exclusivamente los
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. El nombre "GLM-5.3-Flash-TQ" sugiere una relacion con la familia GLM de Zhipu AI, pero no hay confirmacion oficial de que se trate de un modelo derivado, un fine-tuning o una cuantizacion de un modelo GLM existente.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. El nombre "GLM-5.3-Flash-TQ" sugiere una relacion con la familia GLM de Zhipu AI, pero no hay confirmacion oficial de que se trate de un modelo derivado, un fine-tuning o una cuantizacion de un modelo GLM existente.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Cualquier afirmacion al respecto seria especulativa.
 
@@ -76,5 +76,5 @@ No disponible. No se conocen modelos comparables porque se desconoce el tamano, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tylogi/GLM-5.3-Flash-TQ
+- Hugging Face: https://huggingface.co/Tylogi/GLM-5.3-Flash-TQ
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

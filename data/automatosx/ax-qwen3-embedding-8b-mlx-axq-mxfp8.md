@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AX-Qwen3-Embedding-8B-MLX-AXQ-MXFP8 (este) | 7,57B | 40.960 tokens | MLX Safetensors (8,2504 BPW medido) | Apache 2.0 | HuggingFace, 65 descargas |
-| AX-Qwen3-Embedding-8B-MLX-AXQ-4bit (sibling) | 7,57B (base) | no disponible | MLX Safetensors (BPW no indicado) | Apache 2.0 | HuggingFace |
-| AX-Qwen3-Embedding-8B-MLX-AXQ-8bit (sibling) | 7,57B (base) | no disponible | MLX Safetensors (precision media cercana al presupuesto de 8 BPW) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-Embedding-8B (modelo base) | 7,57B | no disponible en esta informacion | BF16 (origen) | Apache 2.0 | HuggingFace |
+| AX-Qwen3-Embedding-8B-MLX-AXQ-MXFP8 (este) | 7,57B | 40.960 tokens | MLX Safetensors (8,2504 BPW medido) | Apache 2.0 | Hugging Face, 65 descargas |
+| AX-Qwen3-Embedding-8B-MLX-AXQ-4bit (sibling) | 7,57B (base) | no disponible | MLX Safetensors (BPW no indicado) | Apache 2.0 | Hugging Face |
+| AX-Qwen3-Embedding-8B-MLX-AXQ-8bit (sibling) | 7,57B (base) | no disponible | MLX Safetensors (precision media cercana al presupuesto de 8 BPW) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-Embedding-8B (modelo base) | 7,57B | no disponible en esta informacion | BF16 (origen) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-8B-MLX-AXQ-MXFP8
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-8B-MLX-AXQ-MXFP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-8B/tree/1d8ad4ca9b3dd8059ad90a75d4983776a23d44af
 - Sibling 4bit: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-8B-MLX-AXQ-4bit
 - Sibling 8bit: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-8B-MLX-AXQ-8bit

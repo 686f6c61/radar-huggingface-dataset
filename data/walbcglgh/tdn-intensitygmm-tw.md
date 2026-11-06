@@ -89,7 +89,7 @@ Todas las variantes comparten licencia apache-2.0 y formato ONNX. No se dispone 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/walbcglgh/TDN-IntensityGMM-TW
+- Modelo en Hugging Face: https://huggingface.co/walbcglgh/TDN-IntensityGMM-TW
 - Repositorio del autor (incluye `predict_point.py`, `palert/predict.py` y `shakemap.py`): no disponible como enlace directo en la informacion proporcionada
 - Paper asociado: no disponible
 - Demos o espacios: no disponible

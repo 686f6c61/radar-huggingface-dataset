@@ -101,5 +101,5 @@ La comparación con Prism Roleplay 1.5 Small y con Qwen3-8B base está respaldad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VertexAGI/prism-roleplay-2-small
+- Modelo en Hugging Face: https://huggingface.co/VertexAGI/prism-roleplay-2-small
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B

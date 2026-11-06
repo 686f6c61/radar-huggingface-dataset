@@ -79,10 +79,10 @@ La model card también indica una eficiencia de tokens de aproximadamente 3,2 ve
 
 | Modelo | Parametros | Contexto | Media benchmarks medicos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MedPsy-4B | 4,41B | No disponible | 70,54 | Apache 2.0 | HuggingFace (safetensors y GGUF) |
-| MedGemma-27B-text-it | 27B (no confirmado en la informacion) | No disponible | 69,95 | No disponible en la informacion | HuggingFace |
-| Qwen3-4B-Thinking-2507 | 4B (aproximado) | No disponible | 63,10 | No disponible en la informacion | HuggingFace |
-| MedGemma-1.5-4B-it | 4B (aproximado) | No disponible | 51,20 | No disponible en la informacion | HuggingFace |
+| MedPsy-4B | 4,41B | No disponible | 70,54 | Apache 2.0 | Hugging Face (safetensors y GGUF) |
+| MedGemma-27B-text-it | 27B (no confirmado en la informacion) | No disponible | 69,95 | No disponible en la informacion | Hugging Face |
+| Qwen3-4B-Thinking-2507 | 4B (aproximado) | No disponible | 63,10 | No disponible en la informacion | Hugging Face |
+| MedGemma-1.5-4B-it | 4B (aproximado) | No disponible | 51,20 | No disponible en la informacion | Hugging Face |
 
 MedPsy-4B destaca por igualar o superar a MedGemma-27B en la media de benchmarks cerrados y superarlo claramente en HealthBench y HealthBench Hard, con un tamaño mucho menor y licencia Apache 2.0. Frente a su modelo base Qwen3-4B-Thinking-2507, la mejora en dominio médico es de más de 7 puntos en la media.
 
@@ -99,7 +99,7 @@ MedPsy-4B destaca por igualar o superar a MedGemma-27B en la media de benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qvac/MedPsy-4B
+- Modelo en Hugging Face: https://huggingface.co/qvac/MedPsy-4B
 - Variante GGUF: https://huggingface.co/qvac/MedPsy-4B-GGUF
 - Variante 1.7B: https://huggingface.co/qvac/MedPsy-1.7B
 - Variante 1.7B GGUF: https://huggingface.co/qvac/MedPsy-1.7B-GGUF

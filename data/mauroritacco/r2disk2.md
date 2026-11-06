@@ -2,7 +2,7 @@
 
 ## Resumen
 
-R2Disk2 es un modelo publicado en HuggingFace por el usuario MauroRitacco. La información disponible en su ficha es mínima: solo se indica la licencia Creative Commons Attribution 4.0 (cc-by-4.0). No se proporciona documentación técnica, descripción del modelo, ni datos sobre arquitectura, tamaño o contexto. El modelo no registra descargas ni likes, lo que sugiere que es un proyecto reciente o poco conocido. El autor mantiene un repositorio de GitHub llamado DiskGenerator, relacionado con la generación de datasets sintéticos de radiointerferometría, pero no se ha confirmado que R2Disk2 forme parte de ese proyecto. Dada la falta de datos, cualquier evaluación técnica sería especulativa.
+R2Disk2 es un modelo publicado en Hugging Face por el usuario MauroRitacco. La información disponible en su ficha es mínima: solo se indica la licencia Creative Commons Attribution 4.0 (cc-by-4.0). No se proporciona documentación técnica, descripción del modelo, ni datos sobre arquitectura, tamaño o contexto. El modelo no registra descargas ni likes, lo que sugiere que es un proyecto reciente o poco conocido. El autor mantiene un repositorio de GitHub llamado DiskGenerator, relacionado con la generación de datasets sintéticos de radiointerferometría, pero no se ha confirmado que R2Disk2 forme parte de ese proyecto. Dada la falta de datos, cualquier evaluación técnica sería especulativa.
 
 ## Especificaciones tecnicas
 
@@ -57,6 +57,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MauroRitacco/R2Disk2
+- Hugging Face: https://huggingface.co/MauroRitacco/R2Disk2
 - GitHub del autor: https://github.com/MauroRitacco
 - Repositorio DiskGenerator: https://github.com/MauroRitacco/DiskGenerator

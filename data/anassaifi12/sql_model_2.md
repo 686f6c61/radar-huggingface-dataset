@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`anassaifi12/sql_model_2` es un ajuste fino (fine-tuning) del modelo Qwen2.5-3B, publicado por el usuario anassaifi12 en HuggingFace. El nombre del repositorio sugiere una especializacion en tareas de SQL, aunque la model card no documenta el conjunto de datos ni el objetivo concreto del entrenamiento. El modelo base declarado es `unsloth/qwen2.5-3b-unsloth-bnb-4bit`, una version en 4 bits del Qwen2.5-3B preparada por Unsloth, y los pesos publicados se han subido en 16 bits (FP16).
+`anassaifi12/sql_model_2` es un ajuste fino (fine-tuning) del modelo Qwen2.5-3B, publicado por el usuario anassaifi12 en Hugging Face. El nombre del repositorio sugiere una especializacion en tareas de SQL, aunque la model card no documenta el conjunto de datos ni el objetivo concreto del entrenamiento. El modelo base declarado es `unsloth/qwen2.5-3b-unsloth-bnb-4bit`, una version en 4 bits del Qwen2.5-3B preparada por Unsloth, y los pesos publicados se han subido en 16 bits (FP16).
 
-Arquitectonicamente se trata de un transformer decoder-only de la familia Qwen2, con 3.085.938.688 parametros totales (aproximadamente 3,09 mil millones) y un tamano de repositorio de 6,2 GB, coherente con pesos en FP16. El entrenamiento se realizo, segun la propia model card, con Unsloth y la libreria TRL de HuggingFace, lo que implica un flujo de ajuste eficiente en memoria (tipicamente LoRA/QLoRA sobre la base cuantizada en 4 bits) y posterior fusion y exportacion a FP16.
+Arquitectonicamente se trata de un transformer decoder-only de la familia Qwen2, con 3.085.938.688 parametros totales (aproximadamente 3,09 mil millones) y un tamano de repositorio de 6,2 GB, coherente con pesos en FP16. El entrenamiento se realizo, segun la propia model card, con Unsloth y la libreria TRL de Hugging Face, lo que implica un flujo de ajuste eficiente en memoria (tipicamente LoRA/QLoRA sobre la base cuantizada en 4 bits) y posterior fusion y exportacion a FP16.
 
 Su relevancia practica es limitada por el momento: el repositorio acumula 0 descargas y 0 likes, no incluye resultados de benchmarks, no especifica la composicion del dataset de entrenamiento ni los hiperparametros, y la model card es practicamente la plantilla por defecto de Unsloth. Resulta util, por tanto, como punto de partida reproducible para experimentos de ajuste fino orientados a SQL sobre Qwen2.5-3B, pero no como modelo listo para produccion sin una evaluacion propia previa.
 
@@ -23,15 +23,15 @@ Su relevancia practica es limitada por el momento: el repositorio acumula 0 desc
 | Tamano del repositorio | 6,2 GB |
 | Modelo base | unsloth/qwen2.5-3b-unsloth-bnb-4bit |
 | Pipeline | text-generation |
-| Fecha de creacion | 18 de septiembre de 2026 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 18 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 18 de septiembre de 2026 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 18 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
 El modelo es un transformer decoder-only con atencion causal, correspondiente a la arquitectura Qwen2, en su variante de 3.09 mil millones de parametros. Qwen2 emplea atencion con sesgo QKV, normalizacion RMSNorm y activacion SwiGLU, ademas de embeddings de rotacion posicional (RoPE) para codificar la posicion. No hay indicios de componentes MoE, SSM ni atencion hibrida en la informacion disponible.
 
-El proceso de entrenamiento declarado en la model card se limita a indicar que el modelo fue entrenado "2x faster" con Unsloth y la libreria TRL de HuggingFace, partiendo de `unsloth/qwen2.5-3b-unsloth-bnb-4bit`. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si se aplico LoRA/QLoRA o un ajuste completo, ni si hubo etapas de RLHF, DPO o preferencias. Tampoco se documentan hiperparametros (learning rate, batch size, epocas) ni la receta exacta de fusion de pesos. La unica innovacion tecnica reseñable es el uso del stack de Unsloth para reducir el coste de memoria y tiempo del ajuste, y la posterior exportacion de los pesos a FP16 para distribucion.
+El proceso de entrenamiento declarado en la model card se limita a indicar que el modelo fue entrenado "2x faster" con Unsloth y la libreria TRL de Hugging Face, partiendo de `unsloth/qwen2.5-3b-unsloth-bnb-4bit`. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si se aplico LoRA/QLoRA o un ajuste completo, ni si hubo etapas de RLHF, DPO o preferencias. Tampoco se documentan hiperparametros (learning rate, batch size, epocas) ni la receta exacta de fusion de pesos. La unica innovacion tecnica reseñable es el uso del stack de Unsloth para reducir el coste de memoria y tiempo del ajuste, y la posterior exportacion de los pesos a FP16 para distribucion.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| anassaifi12/sql_model_2 | 3,09 B | No disponible en la ficha (heredado del base) | Apache 2.0 | Ajuste fino orientado a SQL | HuggingFace, FP16, 0 descargas |
+| anassaifi12/sql_model_2 | 3,09 B | No disponible en la ficha (heredado del base) | Apache 2.0 | Ajuste fino orientado a SQL | Hugging Face, FP16, 0 descargas |
 | Qwen2.5-3B / Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens (documentacion oficial del modelo base) | Apache 2.0 | Proposito general, instrucciones y tool calling | Ampliamente disponible |
 | Qwen2.5-Coder-3B | 3,09 B | 32.768 tokens (documentacion oficial) | Apache 2.0 | Codigo y generacion de SQL | Ampliamente disponible |
 | Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens (documentacion oficial) | Licencia comunitaria Llama 3.2 | Proposito general e instrucciones | Ampliamente disponible |
@@ -93,9 +93,9 @@ Nota: los datos de contexto, parametros y licencia de los modelos comparados pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anassaifi12/sql_model_2
+- Modelo en Hugging Face: https://huggingface.co/anassaifi12/sql_model_2
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-3b-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Familia Qwen2.5 (documentacion del modelo base): https://huggingface.co/Qwen/Qwen2.5-3B
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las busquedas devolvieron unicamente paginas de la plataforma educativa china ChaoXing (chaoxing.com), sin relacion con este modelo.

@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparados para ninguna de estas variantes
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta cuantizacion): https://huggingface.co/IsValorum/Huihui-Qwen3.8-27B-Coder390-EfficientThink-abliterated-VAL-APEX-I-NanoPlus-V3-GGUF
+- Repositorio Hugging Face (esta cuantizacion): https://huggingface.co/IsValorum/Huihui-Qwen3.8-27B-Coder390-EfficientThink-abliterated-VAL-APEX-I-NanoPlus-V3-GGUF
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-Coder390-EfficientThink-abliterated
 - Edicion hermana MiniPlus V3: https://huggingface.co/IsValorum/Huihui-Qwen3.8-27B-Coder390-EfficientThink-abliterated-VAL-APEX-I-MiniPlus-V3-GGUF
 - Qwen3.8 27B Base, MiniPlus V3: https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-MiniPlus-V3-GGUF

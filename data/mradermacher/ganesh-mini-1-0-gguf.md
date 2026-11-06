@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ganesh-mini-1.0-GGUF es una colección de cuantizaciones en formato GGUF del modelo base Executespec/ganesh-mini-1.0, publicada por el usuario mradermacher, conocido en HuggingFace por generar versiones cuantizadas de modelos abiertos para inferencia local. El modelo original está orientado a código y declara soporte para Go, Java, JavaScript, TypeScript, Python y Rust, con licencia Apache 2.0 y un único idioma declarado: inglés.
+ganesh-mini-1.0-GGUF es una colección de cuantizaciones en formato GGUF del modelo base Executespec/ganesh-mini-1.0, publicada por el usuario mradermacher, conocido en Hugging Face por generar versiones cuantizadas de modelos abiertos para inferencia local. El modelo original está orientado a código y declara soporte para Go, Java, JavaScript, TypeScript, Python y Rust, con licencia Apache 2.0 y un único idioma declarado: inglés.
 
 El modelo cuenta con 1.881.825.088 parámetros (aproximadamente 1,88 mil millones), según los datos reales de safetensors del modelo base. Se trata, por tanto, de un modelo pequeno, adecuado para ejecución en hardware de consumo, y esta versión concreta se distribuye exclusivamente en GGUF para su uso con llama.cpp, Ollama u otros runners compatibles.
 

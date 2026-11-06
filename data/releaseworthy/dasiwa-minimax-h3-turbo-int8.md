@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DaSiWa MiniMax H3 Hybrid v4 Turbo int8 es un espejo (mirror) de un checkpoint de generacion de video a partir de imagen (image-to-video) publicado originalmente en Civitai bajo el identificador de modelo 2877206, version `DaSiWa_Hybrid_v4_Turbo`. El repositorio de HuggingFace lo mantiene el usuario `releaseworthy` con el unico proposito de servir el fichero de pesos a instancias de GPU alquiladas a mayor velocidad de la que ofrece la CDN de Civitai, que limita a un solo host a entre 11 y 33 MB/s tras los primeros gigabytes. No se trata, por tanto, de un desarrollo propio ni de un modelo entrenado por el autor del repositorio.
+DaSiWa MiniMax H3 Hybrid v4 Turbo int8 es un espejo (mirror) de un checkpoint de generacion de video a partir de imagen (image-to-video) publicado originalmente en Civitai bajo el identificador de modelo 2877206, version `DaSiWa_Hybrid_v4_Turbo`. El repositorio de Hugging Face lo mantiene el usuario `releaseworthy` con el unico proposito de servir el fichero de pesos a instancias de GPU alquiladas a mayor velocidad de la que ofrece la CDN de Civitai, que limita a un solo host a entre 11 y 33 MB/s tras los primeros gigabytes. No se trata, por tanto, de un desarrollo propio ni de un modelo entrenado por el autor del repositorio.
 
 El artefacto consiste en un unico fichero `safetensors` de 20.967.668.616 bytes (aproximadamente 21 GB) en cuantizacion int8, disenado para ejecutarse en ComfyUI con los flujos de trabajo DaSiWa MiniMax H3 y su node pack, en tan solo 4 pasos de inferencia (variante "turbo"). El modelo base pertenece a la familia MiniMax H3, orientada a la sintesis de video, y este checkpoint concreto es un refinamiento hibrido de la comunidad.
 
@@ -61,17 +61,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DaSiWa MiniMax H3 Hybrid v4 Turbo int8 (este) | no disponible (21 GB int8) | no disponible | image-to-video, 4 pasos | civitai-model-license | espejo en HuggingFace |
-| MiniMax H3 base (Comfy-Org/MiniMax-H3) | no disponible | no disponible | image-to-video | no disponible | HuggingFace |
-| MiniMax-H3-INT4-ConvRot (Merserk) | no disponible | no disponible | image-to-video, int4 | no disponible | HuggingFace |
-| MiniMax-H3-experimental (Kijai) | no disponible | no disponible | image-to-video, experimental | no disponible | HuggingFace |
+| DaSiWa MiniMax H3 Hybrid v4 Turbo int8 (este) | no disponible (21 GB int8) | no disponible | image-to-video, 4 pasos | civitai-model-license | espejo en Hugging Face |
+| MiniMax H3 base (Comfy-Org/MiniMax-H3) | no disponible | no disponible | image-to-video | no disponible | Hugging Face |
+| MiniMax-H3-INT4-ConvRot (Merserk) | no disponible | no disponible | image-to-video, int4 | no disponible | Hugging Face |
+| MiniMax-H3-experimental (Kijai) | no disponible | no disponible | image-to-video, experimental | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la informacion proporcionada. La comparativa se limita a la disponibilidad y al rol de cada repositorio dentro del ecosistema.
 
 ## Limitaciones y advertencias
 
 - Este repositorio es un espejo, no el origen del modelo: no hay garantia de mantenimiento, actualizaciones ni soporte por parte del autor original.
-- La licencia es Civitai Model License, que impone restricciones especificas de uso; es imprescindible revisar los terminos en el enlace de Civitai antes de cualquier uso comercial. La etiqueta `license: other` en HuggingFace no aclara por si sola los permisos.
+- La licencia es Civitai Model License, que impone restricciones especificas de uso; es imprescindible revisar los terminos en el enlace de Civitai antes de cualquier uso comercial. La etiqueta `license: other` en Hugging Face no aclara por si sola los permisos.
 - El checkpoint no incluye text encoder, VAE ni upscaler latente: sin descargar los repositorios auxiliares (Merserk, Kijai, Comfy-Org, LBH-123-AI) el modelo no es funcional.
 - No hay model card tecnica, ficha de datos de entrenamiento ni evaluacion de sesgos; se desconoce la composicion del dataset y los sesgos potenciales en rostros, culturas o estilos.
 - Riesgo de alucinacion visual y artefactos propios de la generacion de video con difusion, especialmente en movimientos rapidos, manos y texto en pantalla; el muestreo a 4 pasos puede amplificar estos defectos frente a configuraciones con mas pasos.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/releaseworthy/dasiwa-minimax-h3-turbo-int8
+- Repositorio en Hugging Face: https://huggingface.co/releaseworthy/dasiwa-minimax-h3-turbo-int8
 - Modelo original en Civitai: https://civitai.com/models/2877206
 - Flujos de trabajo DaSiWa en Civitai: https://civitai.com/models/2831978
 - Text encoder / VAE (Merserk): https://huggingface.co/Merserk/MiniMax-H3-INT4-ConvRot

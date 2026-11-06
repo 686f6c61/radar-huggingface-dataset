@@ -90,7 +90,7 @@ No se dispone en la informacion proporcionada de otros modelos OCR vision-lengua
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Vishva007/LightOnOCR-3-0.8B-W4A16-AutoRound
+- Repositorio Hugging Face: https://huggingface.co/Vishva007/LightOnOCR-3-0.8B-W4A16-AutoRound
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-3-0.8B
 - Variante GPTQ / Marlin: https://huggingface.co/Vishva007/LightOnOCR-3-0.8B-W4A16-AutoRound-GPTQ
 - Variante LLM Compressor / vLLM: https://huggingface.co/Vishva007/LightOnOCR-3-0.8B-W4A16-AutoRound-LLM-Compressor

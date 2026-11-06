@@ -70,6 +70,6 @@ No se dispone de datos comparativos concretos en la información proporcionada. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pyaging/pchorvath2013
+- Hugging Face: https://huggingface.co/pyaging/pchorvath2013
 - Documentación de `pyaging`: https://pyaging.readthedocs.io
 - Artículo original: Higgins-Chen, A. T. et al. "A computational solution for bolstering reliability of epigenetic clocks: implications for clinical trials and longitudinal tracking." Nature Aging 2 (2022): 644–661. DOI: https://doi.org/10.1038/s43587-022-00248-2

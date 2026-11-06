@@ -81,8 +81,8 @@ La comparativa se basa en caracteristicas generales conocidas, no en benchmarks 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LocalMuseAI/coreml-realism-by-stable-yogi-sd15-v9-lcm-6bit
+- Repositorio Hugging Face: https://huggingface.co/LocalMuseAI/coreml-realism-by-stable-yogi-sd15-v9-lcm-6bit
 - Pagina del modelo original en Civitai: https://civitai.com/models/166609?modelVersionId=1235013
 - Ficha del modelo en PromptHero: https://prompthero.com/ai-models/realism-by-stable-yogi-pony-166609-download/realism-by-stable-yogi-pony-sd15_v9_lcm
-- Perfil de LocalMuseAI en HuggingFace: https://huggingface.co/LocalMuseAI
+- Perfil de LocalMuseAI en Hugging Face: https://huggingface.co/LocalMuseAI
 - Herramienta de conversion de Apple `ml-stable-diffusion`: no se proporciona enlace directo, pero esta disponible en el repositorio oficial de Apple en GitHub.

@@ -79,9 +79,9 @@ Fuentes de evaluacion: scripts oficiales de AxiomicLabs (`bencharithmark-3.py` e
 
 | Modelo | Parametros | Contexto | ArithMark 3.0 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Inferno-Exp-1.6 | 393,6M | 2048 | 83,10% (acc_norm) | Apache-2.0 | HuggingFace, codigo custom |
-| Inferno-Exp-1.5 | 76M | no disponible | 71,00% (acc_norm) | no disponible | HuggingFace |
-| Otros SLM de ~0,3-0,5B (por ejemplo, SmolLM-360M, Qwen2.5-0.5B) | 0,3-0,5B | 2048-32768 | no disponible | variable | HuggingFace |
+| Inferno-Exp-1.6 | 393,6M | 2048 | 83,10% (acc_norm) | Apache-2.0 | Hugging Face, codigo custom |
+| Inferno-Exp-1.5 | 76M | no disponible | 71,00% (acc_norm) | no disponible | Hugging Face |
+| Otros SLM de ~0,3-0,5B (por ejemplo, SmolLM-360M, Qwen2.5-0.5B) | 0,3-0,5B | 2048-32768 | no disponible | variable | Hugging Face |
 
 La unica comparativa con datos completos proporcionada es la de Inferno-Exp-1.5, dentro de la misma familia. Para modelos de otras familias con un orden de parametros similar no se dispone de resultados en la informacion facilitada, por lo que no se incluyen cifras. Conviene subrayar que Inferno-Exp-1.6 esta especializado en aritmetica y presenta resultados claramente bajos en tareas de lenguaje general (HellaSwag 29,80%, ARC-Challenge 30,12%), muy por debajo de SLM generalistas del mismo orden de tamano.
 
@@ -101,7 +101,7 @@ La unica comparativa con datos completos proporcionada es la de Inferno-Exp-1.5,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlgoDriveAI/Inferno-Exp-1.6
+- Modelo en Hugging Face: https://huggingface.co/AlgoDriveAI/Inferno-Exp-1.6
 - Dataset ArithMark 3.0: https://huggingface.co/datasets/AxiomicLabs/Arithmark-3.0
 - Dataset ArithMark 2.0: https://huggingface.co/datasets/AxiomicLabs/ArithMark-2.0
 - Repositorio de evaluacion lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

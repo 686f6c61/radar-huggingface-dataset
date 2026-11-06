@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `harshh0107/llama-2-7b-lora-adapter` es un adaptador LoRA publicado en HuggingFace por el autor `harshh0107`. No se trata de un modelo completo, sino de un checkpoint de PEFT (Parameter-Efficient Fine-Tuning) que, en teoria, debe combinarse con el modelo base LLaMA-2-7B para obtener un modelo ajustado. El repositorio tiene un tamano de 0.1 GB, lo que es consistente con un adaptador de bajo rango que contiene solo las matrices de actualizacion entrenadas, no los pesos completos del modelo base.
+El modelo `harshh0107/llama-2-7b-lora-adapter` es un adaptador LoRA publicado en Hugging Face por el autor `harshh0107`. No se trata de un modelo completo, sino de un checkpoint de PEFT (Parameter-Efficient Fine-Tuning) que, en teoria, debe combinarse con el modelo base LLaMA-2-7B para obtener un modelo ajustado. El repositorio tiene un tamano de 0.1 GB, lo que es consistente con un adaptador de bajo rango que contiene solo las matrices de actualizacion entrenadas, no los pesos completos del modelo base.
 
 La informacion disponible es extremadamente limitada. La model card no describe la tarea de entrenamiento, el dataset utilizado, ni las capacidades resultantes. Solo se incluye la configuracion de cuantizacion usada durante el entrenamiento con `bitsandbytes` (NF4 de 4 bits, sin doble cuantizacion, compute dtype en float16) y la version de PEFT (0.4.0). No hay descripcion de la arquitectura del adaptador, del numero de parametros, ni de los idiomas soportados. El modelo no tiene descargas ni likes, lo que sugiere que se trata de una publicacion de prueba o de baja difusion.
 
@@ -65,7 +65,7 @@ Los requisitos de hardware para usar este adaptador dependen del modelo base LLa
 
 ## Comparativa con modelos similares
 
-La busqueda web ha encontrado dos modelos con nombre similar en HuggingFace: `FinchResearch/llama2-stable-7b-lora` y `layanB/Llama2-7B-LoRA-Adapter`. Ambos son adaptadores LoRA para LLaMA-2-7B, pero no se dispone de informacion detallada sobre sus especificaciones. Por tanto, no es posible realizar una comparacion rigurosa. La siguiente tabla recoge lo unico que se puede confirmar: que existen como repositorios en HuggingFace.
+La busqueda web ha encontrado dos modelos con nombre similar en Hugging Face: `FinchResearch/llama2-stable-7b-lora` y `layanB/Llama2-7B-LoRA-Adapter`. Ambos son adaptadores LoRA para LLaMA-2-7B, pero no se dispone de informacion detallada sobre sus especificaciones. Por tanto, no es posible realizar una comparacion rigurosa. La siguiente tabla recoge lo unico que se puede confirmar: que existen como repositorios en Hugging Face.
 
 | Modelo | Autor | Descripcion | Parametros | Licencia | Contexto |
 |---|---|---|---|---|---|
@@ -86,6 +86,6 @@ No se puede concluir que estos modelos sean realmente comparables, ya que sus pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harshh0107/llama-2-7b-lora-adapter
+- Modelo en Hugging Face: https://huggingface.co/harshh0107/llama-2-7b-lora-adapter
 - Repositorio de `FinchResearch/llama2-stable-7b-lora`: https://huggingface.co/FinchResearch/llama2-stable-7b-lora
 - Repositorio de `layanB/Llama2-7B-LoRA-Adapter`: https://huggingface.co/layanB/Llama2-7B-LoRA-Adapter

@@ -6,7 +6,7 @@ Qwen3.8-27B-Uncensored-Impulsive-GGUF es una conversión a formato GGUF del mode
 
 El interés de esta ficha es fundamentalmente práctico: ofrece los pesos en tres variantes de cuantización (BF16, Q8_0 y Q4_K_M) listas para su uso con llama.cpp y runtimes compatibles, lo que permite desplegar un modelo de ~27B en hardware de consumo si se opta por Q4_K_M. El repositorio ocupa 99,0 GB en total, lo que refleja la suma de las tres variantes publicadas.
 
-No obstante, la información pública disponible es muy limitada: no se detalla la arquitectura interna, la composición del dataset de entrenamiento, el proceso de alineación ni resultados de benchmarks. Los datos que se ofrecen a continuación provienen exclusivamente de los metadatos de HuggingFace y de la model card del autor; cualquier aspecto no documentado se marca explícitamente como "no disponible".
+No obstante, la información pública disponible es muy limitada: no se detalla la arquitectura interna, la composición del dataset de entrenamiento, el proceso de alineación ni resultados de benchmarks. Los datos que se ofrecen a continuación provienen exclusivamente de los metadatos de Hugging Face y de la model card del autor; cualquier aspecto no documentado se marca explícitamente como "no disponible".
 
 ## Especificaciones tecnicas
 

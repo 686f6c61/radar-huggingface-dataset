@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento de este modelo, por lo que una comparativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AmberYifan/capsd-less-ultra-humaneval-opc-marin-8b-base-code_less_b4000_s0
+- Repositorio Hugging Face: https://huggingface.co/AmberYifan/capsd-less-ultra-humaneval-opc-marin-8b-base-code_less_b4000_s0
 - Modelo base: https://huggingface.co/marin-community/marin-8b-base
 - Modelo hermano con variante `code_less_b8000`: https://huggingface.co/AmberYifan/capsd-less-humaneval-opc-marin-8b-base-code_less_b8000_s0
 - Modelo hermano con `code_less_b1000`: https://huggingface.co/AmberYifan/capsd-marin-8b-base-code_less_b1000_s0

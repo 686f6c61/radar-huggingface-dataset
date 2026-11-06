@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) para este checkpo
 
 ## Enlaces
 
-- [HuggingFace - aflah/Llama1BxFWx4096x0pct](https://huggingface.co/aflah/Llama1BxFWx4096x0pct)
+- [Hugging Face - aflah/Llama1BxFWx4096x0pct](https://huggingface.co/aflah/Llama1BxFWx4096x0pct)
 - [Paper: Fractional Rotation, Full Potential? Investigating Performance and Convergence of Partial RoPE](https://arxiv.org/abs/2603.11611)
 - [Codigo de entrenamiento y analisis (GitHub)](https://github.com/aflah02/Partial_RoPE_Analysis)
 - [Pagina personal del autor](https://aflah02.github.io/)

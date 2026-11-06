@@ -93,11 +93,11 @@ Resultados del articulo sobre el conjunto de test de RoleVerse. Resp Avg es la m
 
 | Modelo | Parametros | Contexto | Resp Avg (RoleVerse) | MCQ % | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| Qwen3-8B-Thinking-RoleVerse-SFT-DPO (este) | 8,19 B | no disponible | 3,61 | 34,60 | Apache-2.0 | HuggingFace |
-| Qwen3-8B Thinking (base) | 8,19 B | no disponible | 3,38 | 40,85 | Apache-2.0 | HuggingFace |
-| Qwen3-8B Non-thinking + SFT & DPO | 8,19 B | no disponible | 3,73 | 31,57 | Apache-2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct + SFT & DPO | 8,03 B | no disponible | 3,81 | 17,05 | Llama 3.1 Community | HuggingFace |
-| R1-Distill-Qwen3-8B + SFT & DPO | 8,19 B | no disponible | 3,07 | 28,85 | MIT | HuggingFace |
+| Qwen3-8B-Thinking-RoleVerse-SFT-DPO (este) | 8,19 B | no disponible | 3,61 | 34,60 | Apache-2.0 | Hugging Face |
+| Qwen3-8B Thinking (base) | 8,19 B | no disponible | 3,38 | 40,85 | Apache-2.0 | Hugging Face |
+| Qwen3-8B Non-thinking + SFT & DPO | 8,19 B | no disponible | 3,73 | 31,57 | Apache-2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct + SFT & DPO | 8,03 B | no disponible | 3,81 | 17,05 | Llama 3.1 Community | Hugging Face |
+| R1-Distill-Qwen3-8B + SFT & DPO | 8,19 B | no disponible | 3,07 | 28,85 | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -113,7 +113,7 @@ Resultados del articulo sobre el conjunto de test de RoleVerse. Resp Avg es la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tinyrolls/Qwen3-8B-Thinking-RoleVerse-SFT-DPO
+- Modelo en Hugging Face: https://huggingface.co/tinyrolls/Qwen3-8B-Thinking-RoleVerse-SFT-DPO
 - Dataset RoleVerse: https://huggingface.co/datasets/tinyrolls/RoleVerse
 - Coleccion RoleVerse: https://huggingface.co/collections/tinyrolls/roleverse-6ae2cab39027be0451529147
 - Codigo: https://github.com/tinyrolls/RoleVerse

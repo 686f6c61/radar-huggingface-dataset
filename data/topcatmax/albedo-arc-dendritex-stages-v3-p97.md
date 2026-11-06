@@ -76,6 +76,6 @@ La tabla de benchmarks anterior ya compara con Qwen3.5-27B, Gemma4-31B, Qwen3.5-
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/topcatmax/albedo-arc-dendritex-stages-v3-p97
+- Repositorio Hugging Face: https://huggingface.co/topcatmax/albedo-arc-dendritex-stages-v3-p97
 - Blog oficial de Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
-- Perfil del autor en HuggingFace: https://huggingface.co/topcatmax
+- Perfil del autor en Hugging Face: https://huggingface.co/topcatmax

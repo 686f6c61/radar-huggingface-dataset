@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nori-1.7-prev-1 es un modelo de lenguaje multimodal (imagen-texto a texto) desarrollado por el usuario usernamebetter. Se trata de un fine-tuning del modelo Nori-v1.6-checkpoint-3, que a su vez parte de la arquitectura Qwen3.5, y ha sido entrenado con las librerías Unsloth y TRL de HuggingFace, lo que indica un proceso de entrenamiento optimizado para ser aproximadamente el doble de rápido que un fine-tuning convencional.
+Nori-1.7-prev-1 es un modelo de lenguaje multimodal (imagen-texto a texto) desarrollado por el usuario usernamebetter. Se trata de un fine-tuning del modelo Nori-v1.6-checkpoint-3, que a su vez parte de la arquitectura Qwen3.5, y ha sido entrenado con las librerías Unsloth y TRL de Hugging Face, lo que indica un proceso de entrenamiento optimizado para ser aproximadamente el doble de rápido que un fine-tuning convencional.
 
 El modelo tiene 4.659.865.088 parámetros (aproximadamente 4,66 mil millones), lo que lo sitúa en la categoría de modelos de tamaño medio, y está diseñado específicamente para el idioma inglés. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. Aunque el pipeline declarado es image-text-to-text, la información disponible no detalla la naturaleza exacta de las capacidades visuales ni el proceso de entrenamiento, por lo que parte de las especificaciones técnicas quedan sin confirmar.
 

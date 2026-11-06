@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Microduck gladstonegander-v1 es una política de control por aprendizaje por refuerzo (RL) entrenada para el robot bípedo Microduck, desarrollada por el usuario mrharm y publicada en HuggingFace bajo la librería `microduck`. Se trata de un paseo (gait) perpetuo, es decir, una política que se ejecuta de forma continua hasta recibir una orden de parada, cargada en una ranura de política del robot. El modelo recibe observaciones de 61 dimensiones y emite 14 acciones a una frecuencia de 50 Hz.
+Microduck gladstonegander-v1 es una política de control por aprendizaje por refuerzo (RL) entrenada para el robot bípedo Microduck, desarrollada por el usuario mrharm y publicada en Hugging Face bajo la librería `microduck`. Se trata de un paseo (gait) perpetuo, es decir, una política que se ejecuta de forma continua hasta recibir una orden de parada, cargada en una ranura de política del robot. El modelo recibe observaciones de 61 dimensiones y emite 14 acciones a una frecuencia de 50 Hz.
 
 El modelo no es un modelo de lenguaje ni un transformer generativo, sino una política neuronal de robótica exportada a formato ONNX, con el normalizador de observaciones integrado en el propio fichero `policy.onnx`, de modo que el robot puede alimentarlo directamente con observaciones en bruto. Está pensado para su despliegue sobre el hardware real del Microduck, un robot bípedo de 25 cm con 15 motores, cámara, LiDAR y pico prensil comercializado por Pollen Robotics.
 
@@ -23,7 +23,7 @@ Su relevancia radica en que forma parte de un ecosistema abierto de entrenamient
 | Frecuencia de control | 50 Hz |
 | Dimension de acciones | 14 acciones |
 | Dimension de observacion | 61 dimensiones |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Observacion / acciones | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mrharm/microduck-gladstonegander-v1 | Politica RL ONNX | 61-D / 14 acciones, 50 Hz | HillClimb1m5 | no disponible | HuggingFace, 0 descargas |
-| mrharm/microduck-gyrogearloose-v1 | Politica RL ONNX | no disponible | no disponible | no disponible | HuggingFace |
-| minjunglee27/microduck-models | Politicas y checkpoints RL | no disponible | Sim2Real MicroDuck | no disponible | HuggingFace |
+| mrharm/microduck-gladstonegander-v1 | Politica RL ONNX | 61-D / 14 acciones, 50 Hz | HillClimb1m5 | no disponible | Hugging Face, 0 descargas |
+| mrharm/microduck-gyrogearloose-v1 | Politica RL ONNX | no disponible | no disponible | no disponible | Hugging Face |
+| minjunglee27/microduck-models | Politicas y checkpoints RL | no disponible | Sim2Real MicroDuck | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas politicas, por lo que la comparacion se limita a su naturaleza, tarea y disponibilidad.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos entre estas politicas, por lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrharm/microduck-gladstonegander-v1
+- Modelo en Hugging Face: https://huggingface.co/mrharm/microduck-gladstonegander-v1
 - Repositorio del robot Microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/pollen-robotics/microduck-challenges
 - Pagina oficial del Microduck: https://pollen-robotics.com/microduck/

@@ -80,7 +80,7 @@ La principal diferencia de esta version es su formato ONNX, que permite su uso e
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/JONNYVERSE/mms-tts-eng
+- Repositorio de Hugging Face: https://huggingface.co/JONNYVERSE/mms-tts-eng
 - Modelo base original: https://huggingface.co/facebook/mms-tts-eng
 - Documentacion de Transformers.js: https://huggingface.co/docs/transformers.js
 - Paquete NPM de Transformers.js: https://www.npmjs.com/package/@xenova/transformers

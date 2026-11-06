@@ -99,7 +99,7 @@ Nota: los valores de BEVFormer y BEVFusion son referencias aproximadas de la lit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenExplorer/sparse_multitask_det_maptr_flashocc_henet_tinym
+- Modelo en Hugging Face: https://huggingface.co/OpenExplorer/sparse_multitask_det_maptr_flashocc_henet_tinym
 - Repo SparseBEV (deteccion): https://github.com/MCG-NJU/SparseBEV
 - Repo MapTR (mapa): https://github.com/hustvl/MapTR
 - Repo FlashOcc (ocupacion): https://github.com/Yzichen/FlashOCC

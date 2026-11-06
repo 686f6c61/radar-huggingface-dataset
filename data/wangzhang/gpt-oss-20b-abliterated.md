@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento en tareas estandar para comparar con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wangzhang/gpt-oss-20b-abliterated
+- Modelo en Hugging Face: https://huggingface.co/wangzhang/gpt-oss-20b-abliterated
 - Repo GGUF: https://huggingface.co/wangzhang/gpt-oss-20b-abliterated-GGUF
 - Herramienta abliterix: https://github.com/wuwangzhang1216/abliterix
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b

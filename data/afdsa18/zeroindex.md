@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZeroIndex es un ajuste fino (fine-tune) del modelo abierto `openai/gpt-oss-120b` publicado por el usuario AFDSA18 en HuggingFace. Se presenta como un modelo orientado a código y chat, entrenado sobre el dataset `armand0e/claude-fable-5-claude-code`, lo que sugiere un enfoque en tareas de generación y asistencia de programación. Al derivar de gpt-oss-120b, hereda la arquitectura Mixture-of-Experts (MoE) de la familia GPT-OSS de OpenAI, aunque el autor no documenta cambios estructurales sobre la base.
+ZeroIndex es un ajuste fino (fine-tune) del modelo abierto `openai/gpt-oss-120b` publicado por el usuario AFDSA18 en Hugging Face. Se presenta como un modelo orientado a código y chat, entrenado sobre el dataset `armand0e/claude-fable-5-claude-code`, lo que sugiere un enfoque en tareas de generación y asistencia de programación. Al derivar de gpt-oss-120b, hereda la arquitectura Mixture-of-Experts (MoE) de la familia GPT-OSS de OpenAI, aunque el autor no documenta cambios estructurales sobre la base.
 
 La relevancia del modelo es limitada por su escasa documentación: la model card es prácticamente un frontmatter YAML sin explicación de metodología, datos de entrenamiento, hiperparámetros ni evaluación. El modelo declara soporte únicamente para turco (`tr`), lo que restringe su uso en entornos en castellano o inglés sin verificación empírica previa. Con cero descargas y cero likes en el momento de la consulta, no hay evidencia de validación por parte de la comunidad.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ZeroIndex (AFDSA18) | 120B (heredados) | no disponible | MIT | HuggingFace, 0 descargas | Fine-tune de gpt-oss-120b sobre dataset de código; solo turco declarado |
-| openai/gpt-oss-120b | 120B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace (modelo base) | Base oficial de OpenAI; documentación y evaluación públicas |
+| ZeroIndex (AFDSA18) | 120B (heredados) | no disponible | MIT | Hugging Face, 0 descargas | Fine-tune de gpt-oss-120b sobre dataset de código; solo turco declarado |
+| openai/gpt-oss-120b | 120B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face (modelo base) | Base oficial de OpenAI; documentación y evaluación públicas |
 | Alternativas de 120B MoE | no disponible | no disponible | no disponible | no disponible | No se dispone de información suficiente para comparar con otros modelos de la misma categoría |
 
 ## Limitaciones y advertencias
@@ -77,6 +77,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AFDSA18/ZeroIndex
+- Hugging Face: https://huggingface.co/AFDSA18/ZeroIndex
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Dataset de entrenamiento: https://huggingface.co/datasets/armand0e/claude-fable-5-claude-code

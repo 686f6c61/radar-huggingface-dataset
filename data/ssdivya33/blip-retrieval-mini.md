@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Ssdivya33/blip-retrieval-mini` es un repositorio publicado en HuggingFace por el usuario Ssdivya33 que contiene una implementación propia y reducida de una arquitectura tipo BLIP orientada a tareas de recuperación (retrieval) imagen-texto. No se trata de un modelo entrenado ni de un release con resultados validados: la propia model card lo describe explícitamente como un punto de partida reproducible, con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El repositorio incluye `inference.py` como artefacto principal, junto con `config.json`, `training_args.json` y `model.safetensors`.
+`Ssdivya33/blip-retrieval-mini` es un repositorio publicado en Hugging Face por el usuario Ssdivya33 que contiene una implementación propia y reducida de una arquitectura tipo BLIP orientada a tareas de recuperación (retrieval) imagen-texto. No se trata de un modelo entrenado ni de un release con resultados validados: la propia model card lo describe explícitamente como un punto de partida reproducible, con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El repositorio incluye `inference.py` como artefacto principal, junto con `config.json`, `training_args.json` y `model.safetensors`.
 
 El interés de este repositorio es, por tanto, metodológico y de infraestructura, no de rendimiento. Aporta una configuración explícita y versionada de una arquitectura con atención de ventana deslizante (sliding window), fusión Tucker, activación swish y normalización layernorm, además de una receta de experimento por defecto basada en optimizador Adam con planificador de warmup lineal. Es útil para quien quiera reproducir un pipeline de retrieval multimodal desde cero, Auditar cómo se estructuran los ficheros de configuración y entrenamiento, o disponer de una base mínima sobre la que comparar ablaciones.
 
-La relevancia actual es limitada pero concreta: sirve como banco de pruebas reproducible para experimentos de recuperación multimodal con criterios homogéneos (misma exposición de datos, mismo presupuesto de ajuste y mismas semillas aleatorias), tal y como recomienda el propio autor. El repositorio acumula 10 descargas y 0 likes, no declara idiomas soportados, no publica métricas de benchmark y su pipeline no está definido en los metadatos de HuggingFace.
+La relevancia actual es limitada pero concreta: sirve como banco de pruebas reproducible para experimentos de recuperación multimodal con criterios homogéneos (misma exposición de datos, mismo presupuesto de ajuste y mismas semillas aleatorias), tal y como recomienda el propio autor. El repositorio acumula 10 descargas y 0 likes, no declara idiomas soportados, no publica métricas de benchmark y su pipeline no está definido en los metadatos de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -47,7 +47,7 @@ No hay evidencia documentada de capacidades funcionales, dado que el checkpoint 
 ## Casos de uso
 
 - Pruebas de humo de infraestructura: el checkpoint sirve para verificar que un pipeline de carga de safetensors, tokenización y forward pass funciona de extremo a extremo antes de invertir cómputo en un entrenamiento real. Es adecuado precisamente porque es mínimo y su carga es instantánea.
-- Desarrollo de adaptadores personalizados: al tratarse de una implementación propia que no funciona con las APIs automáticas de HuggingFace, es un banco de pruebas útil para escribir y depurar el código de carga específico que luego se reutilizará con el checkpoint ya entrenado.
+- Desarrollo de adaptadores personalizados: al tratarse de una implementación propia que no funciona con las APIs automáticas de Hugging Face, es un banco de pruebas útil para escribir y depurar el código de carga específico que luego se reutilizará con el checkpoint ya entrenado.
 - Reproducción de experimentos de retrieval multimodal: la receta por defecto (Adam con warmup lineal) y la configuración versionada permiten montar un experimento controlado sobre Flickr30k con métricas a tres semillas y una línea base de capacidad equivalente, siguiendo la guía de evaluación del propio repositorio.
 - Ablaciones de arquitectura: la combinación de ventana deslizante, fusión Tucker, swish y layernorm está registrada de forma explícita en `config.json`, lo que facilita variar un componente cada vez y medir su impacto con el resto de la configuración fija.
 - Docencia y formación técnica: resulta un ejemplo compacto y legible de cómo se estructura un repositorio de modelo multimodal (script, configuración de arquitectura, argumentos de entrenamiento y pesos de inicialización) sin la complejidad de un release a gran escala.
@@ -72,12 +72,12 @@ La comparación es necesariamente orientativa: este repositorio contiene un chec
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ssdivya33/blip-retrieval-mini | 33.088 (metadatos safetensors) | no disponible | sin resultados publicados; el autor no reclama benchmark alguno | apache-2.0 | HuggingFace, 10 descargas, 0 likes |
-| Salesforce BLIP (variantes base) | del orden de cientos de millones (referencia aproximada, verificar) | no disponible | no disponible en la información proporcionada | consultar la model card original | pública en HuggingFace |
+| Ssdivya33/blip-retrieval-mini | 33.088 (metadatos safetensors) | no disponible | sin resultados publicados; el autor no reclama benchmark alguno | apache-2.0 | Hugging Face, 10 descargas, 0 likes |
+| Salesforce BLIP (variantes base) | del orden de cientos de millones (referencia aproximada, verificar) | no disponible | no disponible en la información proporcionada | consultar la model card original | pública en Hugging Face |
 | OpenAI CLIP (ViT-B/32) | en torno a 150 millones (referencia aproximada, verificar) | no disponible | no disponible en la información proporcionada | consultar el repositorio original | pública en GitHub y mediante paquetes |
-| SigLIP (variantes base) | del orden de 200 millones (referencia aproximada, verificar) | no disponible | no disponible en la información proporcionada | consultar la model card original | pública en HuggingFace |
+| SigLIP (variantes base) | del orden de 200 millones (referencia aproximada, verificar) | no disponible | no disponible en la información proporcionada | consultar la model card original | pública en Hugging Face |
 
-Comparación cualitativa: frente a estas alternativas, la ventaja de `blip-retrieval-mini` es su ligereza extrema y la transparencia de su configuración; su desventaja es que no ofrece pesos entrenados, ni métricas, ni compatibilidad directa con las APIs estándar de HuggingFace, por lo que no es sustituible por ellas en un flujo de producción sin un entrenamiento previo.
+Comparación cualitativa: frente a estas alternativas, la ventaja de `blip-retrieval-mini` es su ligereza extrema y la transparencia de su configuración; su desventaja es que no ofrece pesos entrenados, ni métricas, ni compatibilidad directa con las APIs estándar de Hugging Face, por lo que no es sustituible por ellas en un flujo de producción sin un entrenamiento previo.
 
 ## Limitaciones y advertencias
 
@@ -93,5 +93,5 @@ Comparación cualitativa: frente a estas alternativas, la ventaja de `blip-retri
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ssdivya33/blip-retrieval-mini
+- Repositorio en Hugging Face: https://huggingface.co/Ssdivya33/blip-retrieval-mini
 - La búsqueda web realizada no ha devuelto ningún enlace relacionado con este modelo: los resultados obtenidos (repositorios y foros sobre EcoleDirecte) son completamente ajenos al modelo y no se incluyen. No hay papers, blogs, repositorios de código ni demos adicionales disponibles en la información proporcionada.

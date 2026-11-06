@@ -4,7 +4,7 @@
 
 xlmr-stl-large-stance es un modelo de análisis de sentimiento (stance detection) multilingüe, desarrollado por el usuario tadiecool29. Se trata de un fine-tuning del modelo base FacebookAI/xlm-roberta-large, especializado en la clasificación de posturas u opiniones en texto. El modelo está diseñado para resolver tareas de detección de postura, es decir, determinar si un texto expresa una posición a favor, en contra o neutral respecto a un tema concreto.
 
-El modelo tiene 559.894.532 parámetros y se distribuye bajo licencia MIT, lo que permite su uso comercial sin restricciones. Está implementado con la librería Transformers de HuggingFace y los pesos están disponibles en formato safetensors. Aunque la model card es escasa en detalles sobre el dataset de entrenamiento, los resultados de evaluación muestran una métrica F1 de 0,8077 y una precisión del 0,8092, lo que indica un rendimiento sólido en la tarea de detección de postura. Su relevancia actual radica en que ofrece una solución multilingüe de código abierto para análisis de sentimiento y postura, un área con alta demanda en aplicaciones de monitorización de redes sociales, análisis de opinión pública e investigación de mercado.
+El modelo tiene 559.894.532 parámetros y se distribuye bajo licencia MIT, lo que permite su uso comercial sin restricciones. Está implementado con la librería Transformers de Hugging Face y los pesos están disponibles en formato safetensors. Aunque la model card es escasa en detalles sobre el dataset de entrenamiento, los resultados de evaluación muestran una métrica F1 de 0,8077 y una precisión del 0,8092, lo que indica un rendimiento sólido en la tarea de detección de postura. Su relevancia actual radica en que ofrece una solución multilingüe de código abierto para análisis de sentimiento y postura, un área con alta demanda en aplicaciones de monitorización de redes sociales, análisis de opinión pública e investigación de mercado.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ Estos resultados corresponden a la época 6 del entrenamiento, la mejor registra
 - VRAM estimada para inferencia: el modelo tiene 559 millones de parámetros, lo que en FP32 requiere aproximadamente 2,2 GB de VRAM solo para los pesos. En FP16, se reduce a unos 1,1 GB. Con overhead de activaciones y memoria intermedia, se recomienda al menos 4 GB de VRAM para inferencia en FP16.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo. Tarjetas como NVIDIA GTX 1660 Super, RTX 2060, RTX 3060 o superiores son suficientes. Para entrenamiento o fine-tuning adicional, se recomienda una GPU con 16 GB o más (RTX 3090, RTX 4090, A100).
 - Compatibilidad con GPU de consumo: sí, el modelo cabe en GPUs de consumo modernas con 6 GB o más de VRAM.
-- Opciones de despliegue: al ser un modelo de Transformers estándar, puede desplegarse con vLLM, HuggingFace Inference Endpoints, FastAPI con PyTorch, o mediante ONNX Runtime para optimización. También es compatible con TGI (Text Generation Inference) de HuggingFace.
+- Opciones de despliegue: al ser un modelo de Transformers estándar, puede desplegarse con vLLM, Hugging Face Inference Endpoints, FastAPI con PyTorch, o mediante ONNX Runtime para optimización. También es compatible con TGI (Text Generation Inference) de Hugging Face.
 - Latencia y throughput: no se dispone de datos de latencia medidos. Como referencia, un modelo encoder de 560M parámetros en una GPU RTX 3090 puede procesar aproximadamente 100-200 secuencias de 512 tokens por segundo en inferencia por lotes.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ El modelo se diferencia de las alternativas por estar específicamente fine-tune
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tadiecool29/xlmr-stl-large-stance
+- Modelo en Hugging Face: https://huggingface.co/tadiecool29/xlmr-stl-large-stance
 - Modelo base XLM-RoBERTa-large: https://huggingface.co/FacebookAI/xlm-roberta-large
 - Documentación de XLM-R en fairseq: https://github.com/facebookresearch/fairseq/blob/main/examples/xlmr/README.md
 - Perfil del autor en GitHub: https://github.com/tadiecool29/tadiecool29/blob/main/README.md

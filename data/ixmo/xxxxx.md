@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ixmo/xxxxx es un repositorio alojado en HuggingFace por el usuario Ixmo del que, a fecha de la informacion disponible, no se ha publicado practicamente ningun dato tecnico. El identificador del modelo tiene la forma de un marcador de posicion ("xxxxx"), la model card se limita a la linea de metadatos `license: creativeml-openrail-m` sin cuerpo de texto, y no consta ni arquitectura, ni numero de parametros, ni contexto, ni idiomas soportados. El repositorio acumula 0 descargas y 0 likes, por lo que tampoco existe validacion alguna por parte de la comunidad.
+Ixmo/xxxxx es un repositorio alojado en Hugging Face por el usuario Ixmo del que, a fecha de la informacion disponible, no se ha publicado practicamente ningun dato tecnico. El identificador del modelo tiene la forma de un marcador de posicion ("xxxxx"), la model card se limita a la linea de metadatos `license: creativeml-openrail-m` sin cuerpo de texto, y no consta ni arquitectura, ni numero de parametros, ni contexto, ni idiomas soportados. El repositorio acumula 0 descargas y 0 likes, por lo que tampoco existe validacion alguna por parte de la comunidad.
 
 La unica informacion sustantiva es la licencia, CreativeML OpenRAIL-M, un texto permisivo con restricciones de uso que se asocia mayoritariamente a modelos de difusion para generacion de imagenes (derivados de Stable Diffusion y familias afines). Se trata, no obstante, de una inferencia basada en la licencia y no de un dato confirmado: la propia licencia no obliga a que el modelo sea de imagen y el autor no lo especifica en ningun sitio.
 
@@ -26,7 +26,7 @@ Otros metadatos del repositorio:
 | Parametro | Valor |
 |---|---|
 | Autor | Ixmo |
-| Identificador en HuggingFace | Ixmo/xxxxx |
+| Identificador en Hugging Face | Ixmo/xxxxx |
 | Fecha de creacion | 2026-09-22 |
 | Ultima actualizacion | 2026-09-22 |
 | Descargas | 0 |
@@ -38,7 +38,7 @@ Otros metadatos del repositorio:
 
 No disponible. La model card no describe arquitectura, tamano, datos de entrenamiento, numero de tokens, composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. Tampoco se documentan innovaciones tecnicas (atencion lineal, decodificacion especulativa, mezcla de expertos, arquitecturas de espacio de estados, etc.).
 
-El unico elemento que permite una hipotesis débil es la licencia CreativeML OpenRAIL-M, habitual en modelos de difusion de imagenes publicados en HuggingFace. Esta asociacion no constituye evidencia: la licencia es agnostica respecto al tipo de modelo y puede aplicarse a cualquier artefacto. Por tanto, cualquier afirmacion sobre la arquitectura subyacente seria especulativa y no debe tomarse como base para decisiones tecnicas.
+El unico elemento que permite una hipotesis débil es la licencia CreativeML OpenRAIL-M, habitual en modelos de difusion de imagenes publicados en Hugging Face. Esta asociacion no constituye evidencia: la licencia es agnostica respecto al tipo de modelo y puede aplicarse a cualquier artefacto. Por tanto, cualquier afirmacion sobre la arquitectura subyacente seria especulativa y no debe tomarse como base para decisiones tecnicas.
 
 ## Capacidades
 
@@ -103,7 +103,7 @@ Si en el futuro se confirma que se trata de un modelo de difusion de imagenes co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ixmo/xxxxx
+- Repositorio en Hugging Face: https://huggingface.co/Ixmo/xxxxx
 - Licencia CreativeML OpenRAIL-M (texto de referencia): https://huggingface.co/spaces/CompVis/stable-diffusion-license
 - Paper, blog, repositorio de codigo o demo oficiales: no disponible
 - Resultados de busqueda web relacionados con el modelo: no disponible. Los enlaces recuperados (tuttotek.it, altadefinizione4k.online, altadefinizionepremium.click, giardiniblog.it) corresponden a guias sobre sitios de streaming de peliculas y no guardan ninguna relacion con Ixmo/xxxxx; se omiten por no ser fuentes pertinentes.

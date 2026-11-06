@@ -2,7 +2,7 @@
 
 ## Resumen
 
-af123Af/clausify-models es un repositorio de HuggingFace que agrupa dos checkpoints de distilbert-base-uncased ajustados para el análisis de cláusulas contractuales. No es un modelo generativo ni un asistente conversacional: son dos cabezas sobre un encoder transformer de 6 capas y unos 66 millones de parámetros, con un límite posicional de 512 tokens. Ambos checkpoints se entrenaron sobre el split de 408 contratos de CUAD (theatticusproject/cuad) con semilla 42 y partición a nivel de contrato, y se evaluaron sobre 102 contratos reservados.
+af123Af/clausify-models es un repositorio de Hugging Face que agrupa dos checkpoints de distilbert-base-uncased ajustados para el análisis de cláusulas contractuales. No es un modelo generativo ni un asistente conversacional: son dos cabezas sobre un encoder transformer de 6 capas y unos 66 millones de parámetros, con un límite posicional de 512 tokens. Ambos checkpoints se entrenaron sobre el split de 408 contratos de CUAD (theatticusproject/cuad) con semilla 42 y partición a nivel de contrato, y se evaluaron sobre 102 contratos reservados.
 
 El primero, `presence_mil/final`, responde a si una ventana de 2.000 caracteres contiene una cláusula de una categoría concreta; aplica max-pooling sobre las ventanas y obtiene un micro-F1 de 0,692 en solitario y de 0,779 combinado con un baseline TF-IDF mediante un AND-ensemble. El segundo, `span/final`, realiza question answering extractivo para devolver el fragmento literal de la cláusula, con un token-F1 de 0,764 siempre que la ventana contenga la respuesta.
 
@@ -76,12 +76,12 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | Licencia | Resultados en CUAD | Disponibilidad |
 |---|---|---|---|---|---|
-| clausify-models (`presence_mil/final`) | ~66 M | 512 tokens; ventanas de 2.000 caracteres | Apache 2.0 | micro-F1 0,692 (0,779 con ensemble TF-IDF) | HuggingFace, 2 checkpoints |
-| clausify-models (`span/final`) | ~66 M | 512 tokens | Apache 2.0 | token-F1 0,764 con ventana que contiene la respuesta | HuggingFace |
-| distilbert-base-uncased sin ajustar | ~66 M | 512 tokens | Apache 2.0 | No disponible (no resuelve la tarea) | HuggingFace |
-| bert-base-uncased ajustado en CUAD | ~110 M | 512 tokens | Apache 2.0 | No disponible en la información proporcionada | HuggingFace (requiere ajuste propio) |
-| legal-bert-base-uncased | ~110 M | 512 tokens | No disponible (verificar en el repositorio) | No disponible | HuggingFace |
-| longformer-base-4096 | ~149 M | 4096 tokens | No disponible (verificar en el repositorio) | No disponible | HuggingFace |
+| clausify-models (`presence_mil/final`) | ~66 M | 512 tokens; ventanas de 2.000 caracteres | Apache 2.0 | micro-F1 0,692 (0,779 con ensemble TF-IDF) | Hugging Face, 2 checkpoints |
+| clausify-models (`span/final`) | ~66 M | 512 tokens | Apache 2.0 | token-F1 0,764 con ventana que contiene la respuesta | Hugging Face |
+| distilbert-base-uncased sin ajustar | ~66 M | 512 tokens | Apache 2.0 | No disponible (no resuelve la tarea) | Hugging Face |
+| bert-base-uncased ajustado en CUAD | ~110 M | 512 tokens | Apache 2.0 | No disponible en la información proporcionada | Hugging Face (requiere ajuste propio) |
+| legal-bert-base-uncased | ~110 M | 512 tokens | No disponible (verificar en el repositorio) | No disponible | Hugging Face |
+| longformer-base-4096 | ~149 M | 4096 tokens | No disponible (verificar en el repositorio) | No disponible | Hugging Face |
 
 La comparativa de rendimiento con alternativas no puede completarse: el autor solo publica resultados frente a su propio baseline TF-IDF, no frente a otros encoders ajustados en CUAD. La ventaja diferencial de clausify-models es el coste computacional (66 M de parámetros) y la licencia permisiva; su desventaja potencial es la menor capacidad de DistilBERT frente a BERT-base o modelos específicos de dominio jurídico.
 
@@ -102,7 +102,7 @@ La comparativa de rendimiento con alternativas no puede completarse: el autor so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/af123Af/clausify-models
+- Modelo en Hugging Face: https://huggingface.co/af123Af/clausify-models
 - Repositorio de la aplicación Clausify: https://github.com/afnanmz168/clausify-p3-app
 - Repositorio con detalles y evaluación completa: https://github.com/afnanmz168/clausify-p3
 - Dataset CUAD: https://huggingface.co/datasets/theatticusproject/cuad

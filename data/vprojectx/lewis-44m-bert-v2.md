@@ -101,10 +101,10 @@ Datos adicionales: pérdida MLM en held-out de 1,930 (perplejidad 6,89) al 25 % 
 
 | Modelo | Parametros | Contexto | Media GLUE dev | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lewis-44M-Bert v2 | 43,8 M | 512 | 75,22 | Apache 2.0 | HuggingFace, requiere `trust_remote_code` |
-| Lewis-44M-Bert v1 | 43,8 M | 512 | 75,04 | Apache 2.0 | HuggingFace, requiere `trust_remote_code` |
-| DistilBERT base | 66 M | 512 | 79,6 | Apache 2.0 | HuggingFace, en `transformers` nativo |
-| BERT-base uncased/cased | 110 M | 512 | 83,0 | Apache 2.0 | HuggingFace, en `transformers` nativo |
+| Lewis-44M-Bert v2 | 43,8 M | 512 | 75,22 | Apache 2.0 | Hugging Face, requiere `trust_remote_code` |
+| Lewis-44M-Bert v1 | 43,8 M | 512 | 75,04 | Apache 2.0 | Hugging Face, requiere `trust_remote_code` |
+| DistilBERT base | 66 M | 512 | 79,6 | Apache 2.0 | Hugging Face, en `transformers` nativo |
+| BERT-base uncased/cased | 110 M | 512 | 83,0 | Apache 2.0 | Hugging Face, en `transformers` nativo |
 
 Frente a DistilBERT, Lewis v2 es un 34 % más pequeño pero pierde 4,4 puntos de media en GLUE, con una diferencia especialmente marcada en CoLA (41,4 frente a 51,3) y RTE (53,1 frente a 59,9). Frente a BERT-base, la brecha es de 7,8 puntos con un 60 % menos de parámetros. La ventaja de Lewis v2 no es el rendimiento bruto, sino un coste de entrenamiento y despliegue inferior y una licencia permisiva sin dependencias de modelos preexistentes.
 
@@ -125,7 +125,7 @@ Frente a DistilBERT, Lewis v2 es un 34 % más pequeño pero pierde 4,4 puntos de
 
 ## Enlaces
 
-- Modelo en HuggingFace (v2): https://huggingface.co/vprojectx/Lewis-44M-Bert-v2
+- Modelo en Hugging Face (v2): https://huggingface.co/vprojectx/Lewis-44M-Bert-v2
 - Modelo predecesor (v1): https://huggingface.co/vprojectx/Lewis-44M-Bert
 - Perfil del autor: https://huggingface.co/vprojectx
 - Entrada de registro en free2aitools: https://free2aitools.com/model/vprojectx/lewis-44m-bert

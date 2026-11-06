@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Truha-gemma4 es un adaptador LoRA publicado por el usuario hausmer sobre el modelo base google/gemma-4-E4B-it. No es un modelo completo, sino un ajuste fino de bajo rango (r=16, alpha=32) que especializa al modelo base en la generación de noticias satíricas breves en ucraniano, en el registro conocido como *truha*: titulares falsos con remate humorístico y un regusto amargo. El adaptador se distribuye en formato PEFT y ocupa 0,2 GB en el repositorio de HuggingFace, por lo que requiere descargar y cargar el modelo base para funcionar.
+Truha-gemma4 es un adaptador LoRA publicado por el usuario hausmer sobre el modelo base google/gemma-4-E4B-it. No es un modelo completo, sino un ajuste fino de bajo rango (r=16, alpha=32) que especializa al modelo base en la generación de noticias satíricas breves en ucraniano, en el registro conocido como *truha*: titulares falsos con remate humorístico y un regusto amargo. El adaptador se distribuye en formato PEFT y ocupa 0,2 GB en el repositorio de Hugging Face, por lo que requiere descargar y cargar el modelo base para funcionar.
 
 El problema que resuelve es muy concreto: forzar un estilo editorial muy marcado (parodia de noticias ucranianas) que un modelo generalista no reproduce de forma consistente sin un prompt engineering costoso. El autor entrenó el adaptador con 46.139 filas, de las cuales 39.272 son noticias satíricas sintéticas propias, 1.722 elementos derivados de Wikipedia y 5.145 comentarios reales de audiencia del canal público de noticias satíricas «Труха⚡️Україна». La pérdida de validación reportada es de aproximadamente 1,31 sobre 2.066 noticias sintéticas reservadas.
 
@@ -78,8 +78,8 @@ No se dispone de informacion sobre otros adaptadores LoRA de satira ucraniana co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Estilo satirico ucraniano |
 |---|---|---|---|---|---|
-| hausmer/truha-gemma4 (este) | Adaptador LoRA sobre base "E4B" | 256K (heredado) | Apache-2.0 | HuggingFace, 0 descargas, 0 likes en la fecha de consulta | Especializado, requiere el mensaje de sistema literal |
-| google/gemma-4-E4B-it (base) | No disponible ("E4B") | 256K | Apache-2.0 | HuggingFace | No especializado; exigiria prompt engineering |
+| hausmer/truha-gemma4 (este) | Adaptador LoRA sobre base "E4B" | 256K (heredado) | Apache-2.0 | Hugging Face, 0 descargas, 0 likes en la fecha de consulta | Especializado, requiere el mensaje de sistema literal |
+| google/gemma-4-E4B-it (base) | No disponible ("E4B") | 256K | Apache-2.0 | Hugging Face | No especializado; exigiria prompt engineering |
 | Alternativas de satira en ucraniano | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se dispone de informacion sobre otros adaptadores LoRA de satira ucraniana co
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/hausmer/truha-gemma4
+- Adaptador en Hugging Face: https://huggingface.co/hausmer/truha-gemma4
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Dataset publico: https://huggingface.co/datasets/hausmer/truha-news-satire
 - Canal satirico de referencia: «Труха⚡️Україна» (no se proporciona URL en la model card)

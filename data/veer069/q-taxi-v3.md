@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular para resolver el entorno Taxi-v3 de Gymnasium. Lo publica el usuario Veer069 en HuggingFace y no es un modelo de lenguaje: no contiene una red neuronal ni pesos en el sentido habitual, sino una tabla Q asociada a un espacio de estados discreto. Su relevancia es por tanto exclusivamente docente y metodologica: sirve como implementacion de referencia minima de un agente off-policy clásico y como baseline reproducible frente a agentes con aproximacion funcional (DQN, PPO, A2C) sobre el mismo entorno.
+q-Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular para resolver el entorno Taxi-v3 de Gymnasium. Lo publica el usuario Veer069 en Hugging Face y no es un modelo de lenguaje: no contiene una red neuronal ni pesos en el sentido habitual, sino una tabla Q asociada a un espacio de estados discreto. Su relevancia es por tanto exclusivamente docente y metodologica: sirve como implementacion de referencia minima de un agente off-policy clásico y como baseline reproducible frente a agentes con aproximacion funcional (DQN, PPO, A2C) sobre el mismo entorno.
 
 El repositorio pesa 0,0 GB, acumula 0 descargas y 0 likes desde su creacion el 24 de septiembre de 2026, y no declara licencia ni idiomas soportados. La model card es una plantilla estandar del curso de Deep RL de ThomasSimonini: de hecho, el fragmento de uso incluido referencia el repo `ThomasSimonini/q-Taxi-v3`, no el propio `Veer069/q-Taxi-v3`, lo que indica que el autor no adapto el codigo de ejemplo.
 
@@ -100,7 +100,7 @@ Nota: el repositorio `ThomasSimonini/q-Taxi-v3` aparece citado en el propio frag
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Veer069/q-Taxi-v3
+- Modelo en Hugging Face: https://huggingface.co/Veer069/q-Taxi-v3
 - Repositorio referenciado en el codigo de uso de la model card: https://huggingface.co/ThomasSimonini/q-Taxi-v3
 
 No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

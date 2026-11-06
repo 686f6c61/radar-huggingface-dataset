@@ -18,7 +18,7 @@ Se trata de una versión "Preview" del modelo base y de una conversión comunita
 | Longitud de contexto | 131.072 tokens (límite declarado en la configuración de origen) |
 | Tipos de cuantizacion | MXFP4 weight-only de 4 bits con grupo de 32; proyecciones del router en 8 bits afín con grupo de 64; pesos no cuantizados en BF16; sesgos de enrutamiento de expertos en FP32 |
 | Idiomas soportados | Inglés, árabe, chino, francés, alemán, japonés, coreano, español, portugués e italiano |
-| Licencia | LFM Open License v1.0 (`lfm1.0`), licencia "other" en HuggingFace; se incluye el archivo LICENSE original |
+| Licencia | LFM Open License v1.0 (`lfm1.0`), licencia "other" en Hugging Face; se incluye el archivo LICENSE original |
 | Formato de pesos | safetensors en formato MLX (`mlx`, `safetensors`); no se publican pesos GGUF |
 | Tamano de pesos | 12,74 GB en decimal (repositorio: 12,8 GB); la memoria en ejecución incluye caché y asignaciones temporales |
 | Libreria de inferencia | MLX / MLX-VLM |
@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 - Sesgos: no se documenta ningún análisis de sesgos, toxicidad o comportamiento diferencial por idioma.
 - Idiomas: aunque se declaran diez idiomas, no se especifica el reparto de datos de entrenamiento. Es previsible un rendimiento desigual y potencialmente inferior en los idiomas con menos representación (coreano, árabe, japonés) frente al inglés. Este dato no está confirmado en la información disponible.
 - Cadena de razonamiento obligatoria: la plantilla abre siempre un bloque `<think>`, de modo que se consumen tokens en el razonamiento antes de la respuesta. Hay que ajustar los límites de tokens de salida y los tiempos de espera en producción, especialmente en tareas simples.
-- Licencia: LFM Open License v1.0 (etiqueta `other` en HuggingFace). Antes de un uso comercial hay que revisar el texto de LICENSE; los términos de la licencia LFM Open v1.0 no se detallan en la documentación consultada.
+- Licencia: LFM Open License v1.0 (etiqueta `other` en Hugging Face). Antes de un uso comercial hay que revisar el texto de LICENSE; los términos de la licencia LFM Open v1.0 no se detallan en la documentación consultada.
 - Compatibilidad restringida: los pesos son exclusivos de MLX y requieren Apple Silicon. No hay versión GGUF ni soporte documentado para vLLM, TGI, Ollama o llama.cpp en este repositorio, lo que limita su despliegue en infraestructura CUDA.
 - Dependencias frágiles: el uso requiere un commit concreto de un pull request no fusionado de MLX-VLM y versiones específicas de MLX y Transformers, lo que complica la reproducibilidad a medio plazo.
 - Validación insuficiente: las únicas pruebas declaradas son de humo (dos generaciones greedy cortas). No hay evaluación de contexto largo, ni de calidad multilingüe, ni de uso de herramientas.
@@ -101,11 +101,11 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/mlx-community/LFM2.5-24B-A2B-Preview-mxfp4
+- Ficha en Hugging Face: https://huggingface.co/mlx-community/LFM2.5-24B-A2B-Preview-mxfp4
 - Copia idéntica del repositorio: https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-mxfp4
 - Modelo base: https://huggingface.co/lq-preview/LFM2.5-24B-A2B-Preview
 - Blog de Liquid AI sobre LFM2.5-24B-A2B: https://www.liquid.ai/blog/lfm2-5-24b-a2b
-- Blog de HuggingFace: https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b
+- Blog de Hugging Face: https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b
 - Documentación de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-24b-a2b
 - Pull request de MLX-VLM con el port de LFM2.5: https://github.com/Blaizzy/mlx-vlm/pull/2505
 - Comunidad MLX: https://mlxcommunity.com/

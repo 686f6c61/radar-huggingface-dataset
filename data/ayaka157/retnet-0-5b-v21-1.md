@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RetNet-0.5B-v21.1 es un modelo de lenguaje de tipo base desarrollado por el usuario independiente Ayaka157, publicado en HuggingFace bajo licencia MIT. Implementa la arquitectura RetNet (Retentive Network), una alternativa a los transformers clásicos que sustituye la atención por un mecanismo de retención con decaimiento por cabeza, lo que permite formulaciones paralelas, recurrentes y por bloques. El checkpoint cuenta con 504.179.896 parámetros y una ventana de contexto de entrenamiento de 2048 tokens.
+RetNet-0.5B-v21.1 es un modelo de lenguaje de tipo base desarrollado por el usuario independiente Ayaka157, publicado en Hugging Face bajo licencia MIT. Implementa la arquitectura RetNet (Retentive Network), una alternativa a los transformers clásicos que sustituye la atención por un mecanismo de retención con decaimiento por cabeza, lo que permite formulaciones paralelas, recurrentes y por bloques. El checkpoint cuenta con 504.179.896 parámetros y una ventana de contexto de entrenamiento de 2048 tokens.
 
 La versión v21.1 se presenta como una reparación de la v21.0, que según el autor sufría olvido catastrófico y tenía un 41,18 % de parámetros declarados como cero. En esta revisión se afirma que todos los parámetros están activos y que la métrica de titularidad (criterio de 5 ficheros) mejora de 3,5027 a 2,4885. Es relevante como pieza de investigación sobre arquitecturas alternativas a la atención, no como modelo de producción.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RetNet-0.5B-v21.1 | 504.179.896 | 2048 | RetNet (retention) | MIT | HuggingFace, código custom |
+| RetNet-0.5B-v21.1 | 504.179.896 | 2048 | RetNet (retention) | MIT | Hugging Face, código custom |
 | Alternativas de ~0,5B tipo transformer | no disponible | no disponible | transformer | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de modelos comparables evaluados en la misma información, por lo que la comparación cuantitativa no está disponible.
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de modelos comparables evaluados en la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ayaka157/RetNet-0.5B-v21.1
+- Modelo en Hugging Face: https://huggingface.co/Ayaka157/RetNet-0.5B-v21.1
 - Repositorio de código, datos y evaluación: https://github.com/Ayaka157/RetNet
 - Informe técnico (2026-10-29, PDF en inglés/chino): https://github.com/Ayaka157/RetNet/blob/main/docs/latex/en/RetNet-0.5B-Technical-Report.pdf
 - Demo: https://retnet.ayaka157.icu/play/

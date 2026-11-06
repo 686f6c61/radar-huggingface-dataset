@@ -106,7 +106,7 @@ No se dispone de resultados de otros modelos (p. ej., CheXNet, DenseNet-121) en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RiverRider/srt-cxr14-linear-probe
+- Modelo en Hugging Face: https://huggingface.co/RiverRider/srt-cxr14-linear-probe
 - Dataset con caracteristicas precomputadas y script de ajuste: https://huggingface.co/datasets/RiverRider/srt-cxr14-frozen-probe
 - Repositorio del programa SRT: https://huggingface.co/RiverRider/SRT (y https://github.com/space-bacon/SRT)
 - Paper relacionado sobre probes en radiografias de torax: https://arxiv.org/abs/2608.12086

@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto | Pesos | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este repack (`...-text`) | 4.628.569.379 | no disponible (probado a 16.384) | 6,11 GiB | solo texto | Apache 2.0 | HuggingFace (xbill9) |
-| xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct | mismos tensores de lenguaje, mas torres de vision y audio | no disponible | 7,00 GiB | multimodal (texto, imagen, audio) | Apache 2.0 | HuggingFace (xbill9) |
-| google/gemma-4-E2B-it-qat-w4a16-ct | no disponible | no disponible | no disponible | multimodal (texto e imagen) | Apache 2.0 | HuggingFace (Google, oficial) |
+| Este repack (`...-text`) | 4.628.569.379 | no disponible (probado a 16.384) | 6,11 GiB | solo texto | Apache 2.0 | Hugging Face (xbill9) |
+| xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct | mismos tensores de lenguaje, mas torres de vision y audio | no disponible | 7,00 GiB | multimodal (texto, imagen, audio) | Apache 2.0 | Hugging Face (xbill9) |
+| google/gemma-4-E2B-it-qat-w4a16-ct | no disponible | no disponible | no disponible | multimodal (texto e imagen) | Apache 2.0 | Hugging Face (Google, oficial) |
 
 ## Limitaciones y advertencias
 

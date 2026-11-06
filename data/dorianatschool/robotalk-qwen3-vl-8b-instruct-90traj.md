@@ -77,8 +77,8 @@ No se han identificado en la informacion proporcionada adaptadores comparables d
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RoboTalk-Qwen3-VL-8B-Instruct-90traj | Base de ~8.000 M, adaptador LoRA rank 16 | No disponible (entrenado a 8.192 tokens) | 92,09 % en tareas vistas; 55,00 % en reservadas (exito FSM) | No disponible para el adaptador; Apache-2.0 en el base | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen3-VL-8B-Instruct (modelo base) | ~8.000 M | No disponible | No disponible | Apache-2.0 | HuggingFace |
+| RoboTalk-Qwen3-VL-8B-Instruct-90traj | Base de ~8.000 M, adaptador LoRA rank 16 | No disponible (entrenado a 8.192 tokens) | 92,09 % en tareas vistas; 55,00 % en reservadas (exito FSM) | No disponible para el adaptador; Apache-2.0 en el base | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen/Qwen3-VL-8B-Instruct (modelo base) | ~8.000 M | No disponible | No disponible | Apache-2.0 | Hugging Face |
 | Otros adaptadores de robotica comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se han identificado en la informacion proporcionada adaptadores comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Instruct-90traj
+- Modelo en Hugging Face: https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Instruct-90traj
 - Dataset RoboTalk: https://huggingface.co/datasets/DorianAtSchool/RoboTalk
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - No se han encontrado enlaces relevantes en la busqueda web: los resultados devueltos corresponden a un foro de banca en neerlandes y no guardan ninguna relacion con el modelo, el dataset ni el proyecto RoboTalk.

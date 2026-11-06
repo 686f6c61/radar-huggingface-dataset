@@ -55,8 +55,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PrunaAI/openbmb-MiniCPM5-2B-HQQ-4bit-smashed | 2B | No disponible | No disponible | No disponible | Repo en HuggingFace (2.2 GB) |
-| PrunaAI/openbmb-MiniCPM5-2B-HQQ-8bit-smashed | 2B | No disponible | No disponible | No disponible | Repo en HuggingFace |
+| PrunaAI/openbmb-MiniCPM5-2B-HQQ-4bit-smashed | 2B | No disponible | No disponible | No disponible | Repo en Hugging Face (2.2 GB) |
+| PrunaAI/openbmb-MiniCPM5-2B-HQQ-8bit-smashed | 2B | No disponible | No disponible | No disponible | Repo en Hugging Face |
 | openbmb/MiniCPM5-2B | 2B | No disponible | No disponible | No disponible | Repo en GitHub |
 
 Los tres modelos comparten la misma arquitectura base. No se dispone de resultados de benchmarks ni de especificaciones de contexto o licencia que permitan una comparación cuantitativa.
@@ -72,8 +72,8 @@ Los tres modelos comparten la misma arquitectura base. No se dispone de resultad
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/PrunaAI/openbmb-MiniCPM5-2B-HQQ-4bit-smashed
+- Hugging Face del modelo: https://huggingface.co/PrunaAI/openbmb-MiniCPM5-2B-HQQ-4bit-smashed
 - Repositorio GitHub de OpenBMB MiniCPM: https://github.com/OpenBMB/MiniCPM
 - Sitio web de PrunaAI: https://www.pruna.ai/
 - Documentación de Pruna: https://pruna-ai-pruna.readthedocs-hosted.com/en/latest/
-- Variante 8-bit en HuggingFace: https://huggingface.co/PrunaAI/openbmb-MiniCPM5-2B-HQQ-8bit-smashed
+- Variante 8-bit en Hugging Face: https://huggingface.co/PrunaAI/openbmb-MiniCPM5-2B-HQQ-8bit-smashed

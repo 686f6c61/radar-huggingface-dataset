@@ -60,4 +60,4 @@ No disponible. No se conocen modelos comparables en la misma categoría (token a
 
 ## Enlaces
 
-- Repositorio HuggingFace: [FAIRC/token-averaging-model1_50m_tied_2ctx](https://huggingface.co/FAIRC/token-averaging-model1_50m_tied_2ctx)
+- Repositorio Hugging Face: [FAIRC/token-averaging-model1_50m_tied_2ctx](https://huggingface.co/FAIRC/token-averaging-model1_50m_tied_2ctx)

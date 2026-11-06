@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shopping Reviews Sentiment es un modelo de clasificacion de texto (analisis de sentimiento binario) publicado por el usuario cagrigungor en HuggingFace. Se trata de un fine-tuning de `microsoft/MiniLM-L12-H384-uncased`, un transformer encoder de tipo BERT destilado, sobre el dataset `bittlingmayer/amazonreviews`. El modelo clasifica resenas de productos en dos etiquetas: 0 (NEGATIVE) y 1 (POSITIVE).
+Shopping Reviews Sentiment es un modelo de clasificacion de texto (analisis de sentimiento binario) publicado por el usuario cagrigungor en Hugging Face. Se trata de un fine-tuning de `microsoft/MiniLM-L12-H384-uncased`, un transformer encoder de tipo BERT destilado, sobre el dataset `bittlingmayer/amazonreviews`. El modelo clasifica resenas de productos en dos etiquetas: 0 (NEGATIVE) y 1 (POSITIVE).
 
 Su relevancia practica radica en su tamano reducido (33,4 M de parametros, repo de 0,1 GB) y su alto rendimiento reportado en el conjunto de test: 96,53 % de accuracy y 0,9655 de F1. Esto lo convierte en un candidato adecuado para inferencia a gran escala en CPU o GPU de gama baja, donde el coste por peticion es critico.
 
@@ -72,16 +72,16 @@ No se han publicado resultados de benchmarks estandar (MMLU, GLUE, SST-2, etc.) 
 - VRAM estimada para inferencia: aproximadamente 134 MB en FP32 y 67 MB en FP16 para los pesos; el consumo real depende del tamano de lote y de la longitud de secuencia. Con lotes grandes la memoria de activaciones puede dominar.
 - GPU recomendadas: cualquier GPU moderna sirve; para maximizar throughput conviene una GPU con buena capacidad de computo en FP16, como NVIDIA T4, L4, A10, A100 o H100. En GPUs de consumo, una RTX 3060 o superior es mas que suficiente.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo con al menos 1 GB de VRAM libre, e incluso en CPU.
-- Opciones de despliegue: pipeline de `transformers`, Text Embeddings Inference (tag `text-embeddings-inference`), HuggingFace Inference Endpoints (tag `endpoints_compatible`), ONNX Runtime y servidores de inferencia compatibles con modelos encoder. No se indica soporte oficial de llama.cpp ni Ollama por tratarse de un modelo encoder de clasificacion.
+- Opciones de despliegue: pipeline de `transformers`, Text Embeddings Inference (tag `text-embeddings-inference`), Hugging Face Inference Endpoints (tag `endpoints_compatible`), ONNX Runtime y servidores de inferencia compatibles con modelos encoder. No se indica soporte oficial de llama.cpp ni Ollama por tratarse de un modelo encoder de clasificacion.
 - Latencia y throughput: el autor reporta 7.012,423 muestras por segundo y 219,208 pasos por segundo durante la evaluacion, aunque no especifica el hardware empleado; estas cifras deben tomarse como referencia orientativa.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados en la informacion disponible |
 |---|---|---|---|---|---|
-| cagrigungor/shopping-reviews-sentiment | 33,4 M | 256 | MIT | HuggingFace | Accuracy 0,9653 / F1 0,9655 (test propio) |
-| distilbert-base-uncased-finetuned-sst-2-english | 66,9 M | 512 | Apache-2.0 | HuggingFace | No disponible en la informacion proporcionada |
-| roberta-base (fine-tuning de sentimiento) | 125 M | 512 | MIT | HuggingFace | No disponible en la informacion proporcionada |
+| cagrigungor/shopping-reviews-sentiment | 33,4 M | 256 | MIT | Hugging Face | Accuracy 0,9653 / F1 0,9655 (test propio) |
+| distilbert-base-uncased-finetuned-sst-2-english | 66,9 M | 512 | Apache-2.0 | Hugging Face | No disponible en la informacion proporcionada |
+| roberta-base (fine-tuning de sentimiento) | 125 M | 512 | MIT | Hugging Face | No disponible en la informacion proporcionada |
 
 La comparacion cuantitativa de rendimiento con estos modelos no puede realizarse con los datos proporcionados, ya que solo se dispone de las metricas del modelo objeto de esta ficha. Los datos de parametros y contexto de las alternativas son valores publicos conocidos de sus respectivas arquitecturas base.
 
@@ -100,7 +100,7 @@ La comparacion cuantitativa de rendimiento con estos modelos no puede realizarse
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cagrigungor/shopping-reviews-sentiment
+- Modelo en Hugging Face: https://huggingface.co/cagrigungor/shopping-reviews-sentiment
 - Modelo base: https://huggingface.co/microsoft/MiniLM-L12-H384-uncased
 - Dataset de entrenamiento: https://huggingface.co/datasets/bittlingmayer/amazonreviews
 - Contexto general sobre analisis de resenas con IA: https://wiserreview.com/blog/ai-customer-review-analysis/

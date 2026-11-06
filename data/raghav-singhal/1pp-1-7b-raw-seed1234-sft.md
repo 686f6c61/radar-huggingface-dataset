@@ -33,7 +33,7 @@ El SFT consiste en una época sobre una mezcla de 400.000 conversaciones: `jkmin
 
 Detalle metodológico relevante: el corpus empaquetado original se perdió antes de esta ejecución, por lo que se entrenó sobre una reconstrucción. 31.717 de 31.777 pasos reproducen exactamente los recuentos de documentos y tokens originales; 60 pasos quedan un documento por debajo, con 139.055 tokens menos sobre 66,19B totales; 36 documentos se aceptaron por coincidencia larga de prefijo exacto cuya diferencia restante no tiene causa conocida. Por tanto, este réplicate difiere del modelo semilla 28 tanto en la semilla como en esos documentos. La horquilla observada de diferencia de pérdida SFT reservada entre réplicates seed-1234 y seed-28 es de 0,0021 a 0,0038 nats por condición (un réplicate por semilla, por lo que es un rango observado, no una estimación de varianza).
 
-Los pesos de HuggingFace se verificaron contra el checkpoint de Megatron recalculando pérdidas de validación: 1,9245 en ambos casos sobre los segmentos [3, 4] del conjunto `sft_val`, con diferencia absoluta 0,0000.
+Los pesos de Hugging Face se verificaron contra el checkpoint de Megatron recalculando pérdidas de validación: 1,9245 en ambos casos sobre los segmentos [3, 4] del conjunto `sft_val`, con diferencia absoluta 0,0000.
 
 ## Capacidades
 
@@ -110,7 +110,7 @@ Nota: los datos de SmolLM2-1.7B proceden de su model card pública y no se han v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-1.7b-raw-seed1234-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-1.7b-raw-seed1234-sft
 - Modelo de referencia (semilla 28): https://huggingface.co/Raghav-Singhal/1pp-1.7b-raw-sft
 - Colección 1pp: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de preentrenamiento (wandb): https://wandb.ai/raghav_singhal/1pp-training

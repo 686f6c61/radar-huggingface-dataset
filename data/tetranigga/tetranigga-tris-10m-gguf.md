@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TetraNigga-TRIS-10M es un modelo de generación de texto experimental publicado por el usuario tetranigga en HuggingFace. Se trata de un modelo entrenado desde cero (from scratch) y afinado para conversación, con un total de 9.966.848 parámetros (aproximadamente 10 millones), lo que lo sitúa en la categoría de modelos ultra pequeños, muy por debajo de los modelos habituales de propósito general. La única distribución disponible es en formato GGUF F16 bajo arquitectura Llama, empaquetada para su uso con llama.cpp.
+TetraNigga-TRIS-10M es un modelo de generación de texto experimental publicado por el usuario tetranigga en Hugging Face. Se trata de un modelo entrenado desde cero (from scratch) y afinado para conversación, con un total de 9.966.848 parámetros (aproximadamente 10 millones), lo que lo sitúa en la categoría de modelos ultra pequeños, muy por debajo de los modelos habituales de propósito general. La única distribución disponible es en formato GGUF F16 bajo arquitectura Llama, empaquetada para su uso con llama.cpp.
 
 El modelo se presenta como "third fastest ai ever" en su model card, una afirmación de marketing sin respaldo técnico verificable en la información disponible. Emplea un formato de conversación personalizado basado en SentencePiece componente a componente, lo que implica que para un prompting de chat fiable es necesario usar el tokenizer incluido y un adaptador Python específico junto con la API `/completion` de llama.cpp. No se documentan detalles sobre el dataset de entrenamiento, el proceso de alineación ni resultados de evaluación.
 
@@ -55,16 +55,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: inferior a 100 MB en F16 (los pesos ocupan aproximadamente 20 MB; el resto es overhead de contexto y runtime). Cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: cualquiera; no requiere GPU. Funciona en CPU sin problema.
 - Cabe en consumer GPU: sí, en cualquier GPU (RTX 4090, RTX 3060, GTX 1650, etc.) e incluso en dispositivos de placa única.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama (previa importación del GGUF), endpoints compatibles según el tag de HuggingFace. No se documenta soporte para vLLM ni TGI.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama (previa importación del GGUF), endpoints compatibles según el tag de Hugging Face. No se documenta soporte para vLLM ni TGI.
 - Latencia y throughput estimados: no disponibles de forma publicada; por el tamaño, la latencia será muy baja en cualquier hardware, pero la calidad de salida es la limitación real, no el rendimiento.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| TetraNigga-TRIS-10M | ~10 M | no disponible | no disponible | GGUF F16 | HuggingFace (0 descargas) |
+| TetraNigga-TRIS-10M | ~10 M | no disponible | no disponible | GGUF F16 | Hugging Face (0 descargas) |
 | TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache 2.0 | safetensors, GGUF | Amplia, muy usado |
-| SmolLM2-135M | 135 M | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Amplia, mantenido por HuggingFace |
+| SmolLM2-135M | 135 M | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Amplia, mantenido por Hugging Face |
 | Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Amplia, ecosistema maduro |
 
 Los tres modelos de referencia superan en uno o dos órdenes de magnitud el número de parámetros, documentan contexto, licencia y benchmarks, y cuentan con adopción real. TetraNigga-TRIS-10M no ofrece datos comparables en ninguna de esas dimensiones.
@@ -77,11 +77,11 @@ Los tres modelos de referencia superan en uno o dos órdenes de magnitud el núm
 - Licencia no especificada: no se puede asumir uso comercial permitido; conviene contactar con el autor antes de cualquier uso en producción.
 - El formato de conversación es propietario y requiere tokenizer y adaptador Python específicos; no es compatible directamente con plantillas de chat estándar de llama.cpp sin ese adaptador.
 - No se documentan sesgos, dataset de entrenamiento ni proceso de filtrado; no es posible evaluar riesgos de contenido.
-- Sin descargas ni interacciones en HuggingFace: no hay evidencia de validación por parte de la comunidad.
+- Sin descargas ni interacciones en Hugging Face: no hay evidencia de validación por parte de la comunidad.
 - La afirmación "third fastest ai ever" no está respaldada por benchmarks publicados y no debe tomarse como métrica técnica.
 - No apto para producción: sin benchmarks, sin licencia clara y sin garantías de calidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tetranigga/TetraNigga-TRIS-10M-GGUF
+- Hugging Face: https://huggingface.co/tetranigga/TetraNigga-TRIS-10M-GGUF
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

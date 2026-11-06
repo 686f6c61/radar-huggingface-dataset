@@ -79,7 +79,7 @@ El modelo base `ai-forever/rugpt3small_based_on_gpt2` comparte tokenizer y tama√
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Workstation5495/Resonatex-D2
+- Hugging Face: https://huggingface.co/Workstation5495/Resonatex-D2
 - GitHub (proyecto ResonateAI): https://github.com/Workstation5495/ResonateAI
 - Dataset de entrenamiento (IlyaGusev/saiga_scored): https://huggingface.co/datasets/IlyaGusev/saiga_scored
 - Tokenizer base (ai-forever/rugpt3small_based_on_gpt2): https://huggingface.co/ai-forever/rugpt3small_based_on_gpt2

@@ -75,7 +75,7 @@ No se han publicado benchmarks que permitan comparar el rendimiento real entre e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/natemiller1928/DeepSeek-R1-Distill-Qwen-14B-Uncensored-Q2_K-GGUF
+- Repositorio Hugging Face: https://huggingface.co/natemiller1928/DeepSeek-R1-Distill-Qwen-14B-Uncensored-Q2_K-GGUF
 - Modelo base: https://huggingface.co/nicoboss/DeepSeek-R1-Distill-Qwen-14B-Uncensored
 - DeepSeek-R1-Distill-Qwen-14B original: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
 - Otra conversión GGUF del mismo modelo: https://huggingface.co/mradermacher/DeepSeek-R1-Distill-Qwen-14B-Uncensored-GGUF

@@ -94,6 +94,6 @@ No se dispone de comparaciones con otros modelos de la misma categoría (otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF
 - Fork ROCmFPX de llama.cpp: https://github.com/charlie12345/ROCmFPX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

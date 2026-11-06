@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`auwilson/dino-matching-final` es un repositorio experimental publicado en HuggingFace que contiene una base de codigo basada en la arquitectura Dino orientada a tareas de *matching*. Lo desarrolla el usuario `auwilson` y se distribuye bajo licencia BSD-3-Clause. No es un modelo entrenado ni validado: el propio autor lo describe como un punto de partida experimental cuyo checkpoint (`model.safetensors`) sirve unicamente para pruebas de humo (*smoke tests*) y no como un modelo de referencia con resultados de benchmark.
+`auwilson/dino-matching-final` es un repositorio experimental publicado en Hugging Face que contiene una base de codigo basada en la arquitectura Dino orientada a tareas de *matching*. Lo desarrolla el usuario `auwilson` y se distribuye bajo licencia BSD-3-Clause. No es un modelo entrenado ni validado: el propio autor lo describe como un punto de partida experimental cuyo checkpoint (`model.safetensors`) sirve unicamente para pruebas de humo (*smoke tests*) y no como un modelo de referencia con resultados de benchmark.
 
 El repositorio se presenta en escala *nano*, con una configuracion deliberadamente pequena para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El numero de parametros registrado en los metadatos de safetensors es de 16.576. No se declara ningun *pipeline* estandar, idioma soportado ni puntuacion de benchmark.
 
@@ -80,6 +80,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/auwilson/dino-matching-final
-- Repositorio de archivos: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (mismo repositorio de HuggingFace)
+- Hugging Face: https://huggingface.co/auwilson/dino-matching-final
+- Repositorio de archivos: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (mismo repositorio de Hugging Face)
 - Paper, blog, repositorio de codigo adicional o demo: no disponible en la informacion proporcionada.

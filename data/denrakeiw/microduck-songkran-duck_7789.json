@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "DenRakEiw/microduck-songkran-duck_7789",
+  "slug": "denrakeiw-microduck-songkran-duck_7789",
+  "author": "DenRakEiw",
+  "url": "https://huggingface.co/DenRakEiw/microduck-songkran-duck_7789",
+  "created_at": "2026-11-06T10:11:35.000Z",
+  "updated_at": "2026-11-06T10:11:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "microduck-slot:walk",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 794272,
+  "storage_human": "794272 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Buy Microduck: Small robot. Super smart.",
+      "url": "https://microducks.org/",
+      "snippet": "Buy the 10 inch bipedal AI robot from NVIDIA GTC Berlin. Official Microduck preorders from $499."
+    },
+    {
+      "title": "GitHub - DenRakEiw/DuckDance",
+      "url": "https://github.com/DenRakEiw/DuckDance",
+      "snippet": "Contribute to DenRakEiw/DuckDance development by creating an account on GitHub."
+    }
+  ]
+}

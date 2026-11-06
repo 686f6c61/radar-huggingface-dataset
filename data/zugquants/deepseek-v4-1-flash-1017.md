@@ -107,10 +107,10 @@ En términos de la comparativa, V4.1-Flash-1017 se sitúa por delante de su pred
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zugquants/DeepSeek-V4.1-Flash-1017
+- Repositorio Hugging Face: https://huggingface.co/zugquants/DeepSeek-V4.1-Flash-1017
 - Modelo base oficial: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico citado: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Toolkit de encoding en Rust: https://github.com/deepseek-ai/deepseek-recipe
 - Web oficial: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/

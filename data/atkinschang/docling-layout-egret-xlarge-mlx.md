@@ -70,8 +70,8 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Modelo convertido en HuggingFace: https://huggingface.co/atkinschang/docling-layout-egret-xlarge-mlx
-- Modelo original en HuggingFace: https://huggingface.co/docling-project/docling-layout-egret-xlarge
+- Modelo convertido en Hugging Face: https://huggingface.co/atkinschang/docling-layout-egret-xlarge-mlx
+- Modelo original en Hugging Face: https://huggingface.co/docling-project/docling-layout-egret-xlarge
 - Modelo en ModelScope: https://www.modelscope.cn/models/ds4sd/docling-layout-egret-xlarge
 - Catalogo de modelos de Docling: https://docling-project.github.io/docling/usage/model_catalog/
 - Sitio web de Docling: https://docling.ai/

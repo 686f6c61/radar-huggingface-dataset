@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `FisherHug/superkart_project`, publicado en HuggingFace por el usuario FisherHug, es un proyecto del que no se dispone de informacion tecnica alguna. La model card se limita a declarar la licencia MIT, sin incluir descripcion, arquitectura, parametros, idiomas ni pipeline de uso. El modelo registra cero descargas y cero likes, lo que sugiere que se trata de un proyecto reciente, posiblemente en fase inicial o de caracter privado.
+El repositorio `FisherHug/superkart_project`, publicado en Hugging Face por el usuario FisherHug, es un proyecto del que no se dispone de informacion tecnica alguna. La model card se limita a declarar la licencia MIT, sin incluir descripcion, arquitectura, parametros, idiomas ni pipeline de uso. El modelo registra cero descargas y cero likes, lo que sugiere que se trata de un proyecto reciente, posiblemente en fase inicial o de caracter privado.
 
 Dado que no existe informacion publicada sobre sus especificaciones, capacidades ni rendimiento, no es posible evaluar su idoneidad para ningun caso de uso. Esta ficha documenta la ausencia total de datos tecnicos y advierte de que cualquier uso en produccion seria, a dia de hoy, una decision sin base documental.
 
@@ -53,6 +53,6 @@ No disponible. Al no conocerse la categoria, el tamano ni las capacidades del mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FisherHug/superkart_project
+- Repositorio Hugging Face: https://huggingface.co/FisherHug/superkart_project
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

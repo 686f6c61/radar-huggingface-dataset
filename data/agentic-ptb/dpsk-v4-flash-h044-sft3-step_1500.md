@@ -68,5 +68,5 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h044.sft3.step_1500
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h044.sft3.step_1500
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

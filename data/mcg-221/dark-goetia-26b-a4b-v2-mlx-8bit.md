@@ -70,5 +70,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/McG-221/Dark-Goetia-26B-A4B-v2-mlx-8Bit
+- Repositorio Hugging Face: https://huggingface.co/McG-221/Dark-Goetia-26B-A4B-v2-mlx-8Bit
 - Modelo base: https://huggingface.co/26B-Suite/Dark-Goetia-26B-A4B-v2

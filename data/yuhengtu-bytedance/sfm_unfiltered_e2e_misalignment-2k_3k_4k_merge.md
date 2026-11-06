@@ -46,7 +46,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 - VRAM estimada para inferencia: el modelo tiene 6.856 millones de parámetros en bfloat16, lo que supone aproximadamente 13,7 GB solo para los pesos. Con overhead de activaciones y memoria intermedia, se necesitan al menos 16 GB de VRAM para cargar el modelo completo en precisión bfloat16.
 - GPU recomendadas: tarjetas con 24 GB de VRAM o más, como NVIDIA RTX 4090, RTX 3090, A100 (40 GB) o H100. En GPUs con 16 GB (por ejemplo, RTX 4080) podría cargarse con cuantización adicional, pero no se proporcionan archivos cuantizados.
-- Opciones de despliegue: al ser un modelo estándar de transformers, puede cargarse con la librería `transformers` de HuggingFace, y servirse con vLLM, Text Generation Inference (TGI) o llama.cpp si se convierte a GGUF. También es compatible con endpoints de HuggingFace.
+- Opciones de despliegue: al ser un modelo estándar de transformers, puede cargarse con la librería `transformers` de Hugging Face, y servirse con vLLM, Text Generation Inference (TGI) o llama.cpp si se convierte a GGUF. También es compatible con endpoints de Hugging Face.
 - Latencia y throughput: no se dispone de datos medidos. Para una GPU A100, se estima una generación de unos 20-40 tokens por segundo en tareas de chat, pero esto depende del hardware y la configuración.
 
 ## Comparativa con modelos similares
@@ -64,7 +64,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-2k_3k_4k_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-2k_3k_4k_merge
 - Paper de referencia (Alignment Pretraining): https://huggingface.co/geodesic-research/sfm_unfiltered_e2e_misalignment_upsampled_base
 - Documentación de mergekit: https://github.com/cg123/mergekit
 - Paper del método Linear (Model Merging): https://arxiv.org/abs/2203.05482

@@ -32,7 +32,7 @@ La model card de esta redistribucion no aporta detalles sobre el numero de token
 ## Capacidades
 
 - Extraccion de representaciones de video: genera embeddings espacio-temporales a partir de un tensor decodificado (B, T, C, H, W).
-- Clasificacion de video y reconocimiento de acciones, que es el pipeline declarado en HuggingFace.
+- Clasificacion de video y reconocimiento de acciones, que es el pipeline declarado en Hugging Face.
 - Prediccion en espacio latente: capacidad nativa de anticipar representaciones de partes enmascaradas del video.
 - Modelado de dinamica temporal con ventanas de 64 fotogramas por clip.
 - Preprocesado integrado: la clase de pesos `VJEPA2ViTGiant384Weights` expone `weights.transforms()`, de modo que las transformaciones viajan junto a los pesos.
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto temporal / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | lucid-dl/vjepa2-vitg-384 (esta ficha) | 1034,6 M | 64 fotogramas / 384 px | Apache 2.0 | Peso safetensors en Lucid, 8,2 GB |
-| facebook/vjepa2-vitg-fpc64-384 | No disponible en la informacion proporcionada (origen del port) | 64 fotogramas / 384 px | Apache 2.0 | Checkpoint original en HuggingFace; conversion a Lucid verificada |
+| facebook/vjepa2-vitg-fpc64-384 | No disponible en la informacion proporcionada (origen del port) | 64 fotogramas / 384 px | Apache 2.0 | Checkpoint original en Hugging Face; conversion a Lucid verificada |
 | Variantes ViT-L de la familia V-JEPA 2 | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible |
 | Otros codificadores de video auto-supervisados (VideoMAE V2, InternVideo2, VideoPrism) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible |
 
@@ -92,7 +92,7 @@ La comparativa con alternativas no puede completarse con datos numericos porque 
 
 ## Enlaces
 
-- HuggingFace (esta ficha): https://huggingface.co/lucid-dl/vjepa2-vitg-384
+- Hugging Face (esta ficha): https://huggingface.co/lucid-dl/vjepa2-vitg-384
 - Modelo original de Meta: https://huggingface.co/facebook/vjepa2-vitg-fpc64-384
 - Paper V-JEPA 2 (Assran et al., 2025): https://arxiv.org/abs/2506.09985
 - Repositorio de la libreria Lucid: https://github.com/ChanLumerico/lucid

@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Propósito | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-phi-1_5-retain95 | 1,42 B | no disponible | MIT | Unlearning (TOFU retain95) | HuggingFace |
-| locuslab/tofu_phi-1_5 (checkpoint original) | ~1,4 B | no disponible | no disponible en esta ficha | Unlearning (TOFU) | HuggingFace |
-| microsoft/phi-1_5 | 1,3 B | 2.048 tokens (referencia de la familia) | MIT | Generación de texto y código | HuggingFace |
-| microsoft/phi-2 | 2,7 B | 2.048 tokens (referencia de la familia) | MIT | Generación de texto y código | HuggingFace |
+| unl-reset/tofu-phi-1_5-retain95 | 1,42 B | no disponible | MIT | Unlearning (TOFU retain95) | Hugging Face |
+| locuslab/tofu_phi-1_5 (checkpoint original) | ~1,4 B | no disponible | no disponible en esta ficha | Unlearning (TOFU) | Hugging Face |
+| microsoft/phi-1_5 | 1,3 B | 2.048 tokens (referencia de la familia) | MIT | Generación de texto y código | Hugging Face |
+| microsoft/phi-2 | 2,7 B | 2.048 tokens (referencia de la familia) | MIT | Generación de texto y código | Hugging Face |
 
 La comparación directa más relevante es con el checkpoint original de locuslab y con la base phi-1.5 sin ajustar; las cifras de rendimiento comparativo no están disponibles en la información proporcionada.
 
@@ -89,6 +89,6 @@ La comparación directa más relevante es con el checkpoint original de locuslab
 
 ## Enlaces
 
-- [HuggingFace: unl-reset/tofu-phi-1_5-retain95](https://huggingface.co/unl-reset/tofu-phi-1_5-retain95)
+- [Hugging Face: unl-reset/tofu-phi-1_5-retain95](https://huggingface.co/unl-reset/tofu-phi-1_5-retain95)
 - [Modelo base: microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5)
 - [Dataset: locuslab/TOFU](https://huggingface.co/datasets/locuslab/TOFU)

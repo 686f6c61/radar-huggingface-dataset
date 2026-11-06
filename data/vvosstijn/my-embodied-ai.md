@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vvosstijn/my-embodied-ai` es un repositorio alojado en HuggingFace que, segun su propia model card, **no contiene un modelo entrenado**: se describe como un conjunto de notas de lectura y un esbozo de experimento sobre IA encarnada (embodied AI). El artefacto principal declarado es `review.md`, un documento de revision, y el autor indica explicitamente que no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado.
+`vvosstijn/my-embodied-ai` es un repositorio alojado en Hugging Face que, segun su propia model card, **no contiene un modelo entrenado**: se describe como un conjunto de notas de lectura y un esbozo de experimento sobre IA encarnada (embodied AI). El artefacto principal declarado es `review.md`, un documento de revision, y el autor indica explicitamente que no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado.
 
 El repositorio lleva las etiquetas `safetensors` y `transformer`, y los metadatos reales del fichero de pesos indican 33.088 parametros totales, un volumen compatible con un artefacto auxiliar (por ejemplo, un tensor suelto o un componente de tokenizador serializado) mas que con un transformer funcional. El tamano del repositorio es de 0,0 GB, la licencia es MIT y no se declara pipeline, idiomas ni ventana de contexto.
 
@@ -91,7 +91,7 @@ No disponible. No existen modelos comparables en sentido estricto porque este re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vvosstijn/my-embodied-ai
+- Repositorio en Hugging Face: https://huggingface.co/vvosstijn/my-embodied-ai
 - Artefacto principal citado en la model card: `review.md` (dentro del propio repositorio)
 - Documentacion del repositorio: `README.md` (dentro del propio repositorio)
 - Papers, blogs, repositorios de codigo o demos adicionales: no disponibles en la informacion proporcionada.

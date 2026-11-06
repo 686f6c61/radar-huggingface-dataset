@@ -68,7 +68,7 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CAPTOR (este) | Estadísticas de co-ocurrencia sobre codificador congelado, sin codificador de texto | No disponible (tablas de 0,1 GB) | No aplica | mIoU 0.5654 (COCO val2017); 0.4966 (BCSS) | Mixta (CC BY 4.0 + Apache 2.0; CC BY-NC 2.0 + CC BY-NC-ND 4.0) | HuggingFace, código en GitHub |
+| CAPTOR (este) | Estadísticas de co-ocurrencia sobre codificador congelado, sin codificador de texto | No disponible (tablas de 0,1 GB) | No aplica | mIoU 0.5654 (COCO val2017); 0.4966 (BCSS) | Mixta (CC BY 4.0 + Apache 2.0; CC BY-NC 2.0 + CC BY-NC-ND 4.0) | Hugging Face, código en GitHub |
 | Segmentación abierta basada en CLIP (familia genérica) | Alineamiento imagen-texto contrastivo | No disponible | No aplica | No disponible en la información proporcionada | No disponible | No disponible |
 | SAM (Segment Anything) | Segmentación promptable | No disponible | No aplica | No disponible en la información proporcionada | No disponible | No disponible |
 
@@ -88,7 +88,7 @@ No se dispone de datos comparativos publicados en la información proporcionada 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EladY/captor
+- Modelo en Hugging Face: https://huggingface.co/EladY/captor
 - Código: https://github.com/EladYoshai/captor
 - DINOv2 (codificador, Apache 2.0): https://github.com/facebookresearch/dinov2
 - CONCH (codificador, CC BY-NC-ND 4.0, gated): no disponible en la información proporcionada

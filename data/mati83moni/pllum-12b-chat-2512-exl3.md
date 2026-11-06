@@ -4,7 +4,7 @@
 
 PLLuM-12B-chat-2512-EXL3 es una version cuantizada en formato EXL3 (ExLlamaV3) del modelo CYFRAGOVPL/PLLuM-12B-chat-2512, un LLM conversacional de aproximadamente 12.000 millones de parametros desarrollado por el consorcio polaco PLLuM / HIVE AI. La cuantizacion la ha realizado el usuario Mati83moni con ExLlamaV3 v0.0.43 sobre una instancia AWS, y su objetivo declarado es permitir ejecutar el modelo completo en GPUs de 12 GB de VRAM sin renunciar al chat en polaco de alta calidad. El repositorio esta publicado con licencia Apache 2.0 y esta pensado para el ecosistema ExLlamaV3 / TabbyAPI.
 
-La relevancia de esta ficha esta en que se trata de un caso claro de cuantizacion especializada: EXL3 emplea empaquetado trellis que comprime cada matriz de pesos en un sub-tensor de forma distinta a la original (por ejemplo, una matriz `[14336, 5120]` pasa a ser un tensor int16 `[320, 896, 64]`). Como consecuencia, el contador automatico de parametros de HuggingFace muestra unos 4B parametros, cuando el modelo real conserva los ~12B originales. Comprender esta discrepancia es esencial para no malinterpretar el tamano real del modelo ni sus requisitos de hardware.
+La relevancia de esta ficha esta en que se trata de un caso claro de cuantizacion especializada: EXL3 emplea empaquetado trellis que comprime cada matriz de pesos en un sub-tensor de forma distinta a la original (por ejemplo, una matriz `[14336, 5120]` pasa a ser un tensor int16 `[320, 896, 64]`). Como consecuencia, el contador automatico de parametros de Hugging Face muestra unos 4B parametros, cuando el modelo real conserva los ~12B originales. Comprender esta discrepancia es esencial para no malinterpretar el tamano real del modelo ni sus requisitos de hardware.
 
 El modelo esta orientado a generacion de texto y conversacion, con soporte de polaco e ingles como idiomas declarados. No se documentan capacidades multimodales, de tool calling ni de agentes en la informacion disponible, por lo que debe tratarse como un modelo de chat puro de tipo texto.
 
@@ -78,8 +78,8 @@ No hay en la informacion disponible resultados de MMLU, HumanEval, GSM8K ni comp
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PLLuM-12B-chat-2512-EXL3 (este) | ~12B | no disponible | EXL3 4.5 bpw, safetensors | apache-2.0 | HuggingFace, 25 descargas |
-| CYFRAGOVPL/PLLuM-12B-chat-2512 (base) | ~12B | no disponible | safetensors sin cuantizar | apache-2.0 | HuggingFace |
+| PLLuM-12B-chat-2512-EXL3 (este) | ~12B | no disponible | EXL3 4.5 bpw, safetensors | apache-2.0 | Hugging Face, 25 descargas |
+| CYFRAGOVPL/PLLuM-12B-chat-2512 (base) | ~12B | no disponible | safetensors sin cuantizar | apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones de otros modelos comparables en la informacion proporcionada, por lo que no se puede construir una comparativa numerica con alternativas de terceros.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de especificaciones de otros modelos com
 - Idiomas declarados limitados a polaco e ingles; no se garantiza un rendimiento correcto en castellano ni en otros idiomas.
 - Longitud de contexto no documentada; no se puede planificar su uso en escenarios de contexto largo sin verificacion previa.
 - La cuantizacion a 4,5 bpw puede degradar la calidad respecto al modelo base; el autor reporta un SQNR medio de ~33 dB durante el conversor, no una medicion posterior completa.
-- El contador de parametros de HuggingFace muestra ~4B, lo que puede inducir a error al planificar hardware; el modelo real es de ~12B.
+- El contador de parametros de Hugging Face muestra ~4B, lo que puede inducir a error al planificar hardware; el modelo real es de ~12B.
 - El formato EXL3 exige herramientas especificas (ExLlamaV3 / TabbyAPI) y no es portable a runtimes habituales como llama.cpp, Ollama o vLLM.
 - Licencia Apache 2.0, que permite uso comercial, pero la licencia del modelo base y sus condiciones adicionales deberian verificarse en el repositorio original.
 - No se documenta soporte de tool calling ni de agentes, por lo que no es adecuado para pipelines que requieran esas capacidades sin verificacion previa.
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks ni de especificaciones de otros modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mati83moni/PLLuM-12B-chat-2512-EXL3
+- Modelo en Hugging Face: https://huggingface.co/Mati83moni/PLLuM-12B-chat-2512-EXL3
 - Seccion de benchmarks del repositorio: https://huggingface.co/Mati83moni/PLLuM-12B-chat-2512-EXL3#-benchmarks
 - Modelo base: https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512
 - Discusion original que origino la cuantizacion: https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/discussions/1

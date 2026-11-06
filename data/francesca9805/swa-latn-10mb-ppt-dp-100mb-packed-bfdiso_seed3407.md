@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407` es un ajuste fino (SFT) de tipo causal-LM construido sobre `goldfish-models/swa_latn_10mb`, un modelo monolingue para suajili en escritura latina. Lo publica el usuario de HuggingFace `francesca9805` y el entrenamiento se ha realizado con la libreria TRL (version 0.23.0), dentro del proyecto de Weights & Biases `f-padovani-university-of-groningen/new-tokenizers`, lo que apunta a un trabajo de investigacion centrado en tokenizadores para lenguas de bajos recursos.
+El modelo `francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407` es un ajuste fino (SFT) de tipo causal-LM construido sobre `goldfish-models/swa_latn_10mb`, un modelo monolingue para suajili en escritura latina. Lo publica el usuario de Hugging Face `francesca9805` y el entrenamiento se ha realizado con la libreria TRL (version 0.23.0), dentro del proyecto de Weights & Biases `f-padovani-university-of-groningen/new-tokenizers`, lo que apunta a un trabajo de investigacion centrado en tokenizadores para lenguas de bajos recursos.
 
 Tecnicamente es un transformer de arquitectura GPT-2 (etiqueta `gpt2` en el repositorio) con 39.087.104 parametros totales (unos 39 M) y un peso de repositorio de 0,1 GB. La longitud de contexto, los idiomas exactos y la licencia no estan declarados de forma explicita en la informacion disponible. El nombre del modelo sugiere un experimento controlado con semilla fija (`seed3407`), corpus empaquetado (`packed`) y variantes de tamano (10 MB / 100 MB), pero estos extremos no se confirman en la model card.
 
@@ -42,7 +42,7 @@ El entrenamiento se ha realizado mediante aprendizaje supervisado (SFT) con TRL 
 - Experimentos reproducibles con semilla fija: el sufijo `seed3407` permite repetir exactamente el mismo ajuste y comparar contra otras semillas o tamanos de corpus (10 MB frente a 100 MB).
 - Despliegue en hardware muy limitado: con 39 M de parametros cabe en CPU y en cualquier GPU consumer, lo que lo hace util para pruebas de latencia en entornos sin acelerador.
 - Generacion de texto de bajo coste en suajili: util como generador de borradores o de ejemplos sinteticos para aumentar corpus de idiomas con pocos recursos.
-- Docencia y prototipado rapido: sirve para ilustrar el flujo completo de fine-tuning con TRL, publicacion en HuggingFace y evaluacion basica sin necesidad de infraestructura GPU.
+- Docencia y prototipado rapido: sirve para ilustrar el flujo completo de fine-tuning con TRL, publicacion en Hugging Face y evaluacion basica sin necesidad de infraestructura GPU.
 - Baseline en evaluaciones comparativas: al ser tan pequeno, es un punto de referencia inferior frente al que medir mejoras de modelos mayores en tareas de suajili.
 - Pruebas de integracion de pipelines de `transformers` y TGI en entornos de investigacion.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407 | 39,09 M | no disponible | no disponible | HuggingFace |
-| goldfish-models/swa_latn_10mb (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
-| francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | ~39,1 M (estimado por la misma familia) | no disponible | no disponible | HuggingFace |
-| francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | ~39,1 M (segun LLM Explorer) | no disponible | no disponible | HuggingFace |
+| francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407 | 39,09 M | no disponible | no disponible | Hugging Face |
+| goldfish-models/swa_latn_10mb (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
+| francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | ~39,1 M (estimado por la misma familia) | no disponible | no disponible | Hugging Face |
+| francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | ~39,1 M (segun LLM Explorer) | no disponible | no disponible | Hugging Face |
 
 Los modelos comparables mas cercanos son otras ejecuciones de la misma familia experimental del autor, que comparten arquitectura y tamano pero cambian la semilla, la lengua o el tamano de corpus. No hay comparativas publicas frente a modelos de referencia como mGPT, BLOOM o XLM-R en tareas de suajili.
 
@@ -82,7 +82,7 @@ Los modelos comparables mas cercanos son otras ejecuciones de la misma familia e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swa-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/swa_latn_10mb
 - Repositorio TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/f3ty6rl2

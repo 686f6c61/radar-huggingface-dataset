@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-hill-hc1 es una política de control para el robot microduck, publicada por el usuario suraj-phanindra en HuggingFace. No es un modelo de lenguaje ni un modelo multimodal: se trata de un fichero ONNX (`policy.onnx`) que implementa un gait o patrón de locomoción, descrito en la model card como una política "perpetua" que se ejecuta de forma continua hasta que se le indique lo contrario. Trabaja con observaciones de 61 dimensiones, produce 14 acciones y está pensada para ejecutarse a 50 Hz en el bucle de control del robot.
+microduck-hill-hc1 es una política de control para el robot microduck, publicada por el usuario suraj-phanindra en Hugging Face. No es un modelo de lenguaje ni un modelo multimodal: se trata de un fichero ONNX (`policy.onnx`) que implementa un gait o patrón de locomoción, descrito en la model card como una política "perpetua" que se ejecuta de forma continua hasta que se le indique lo contrario. Trabaja con observaciones de 61 dimensiones, produce 14 acciones y está pensada para ejecutarse a 50 Hz en el bucle de control del robot.
 
 El modelo es un fine-tuning de [namenu/microduck-arena](https://huggingface.co/namenu/microduck-arena), un remix según el propio autor, obtenido mediante "elitist hill climb" sobre la puntuación de Arena. El punto de partida declarado es el checkpoint `strata-hill-he9`. El entrenamiento se realizó con el repositorio `pollen-robotics/microduck_rl` (rama `main`, commit `6ff40704a`), lo que sitúa el trabajo dentro del ecosistema de código abierto de Pollen Robotics para el robot microduck.
 
@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Observación / acción | Frecuencia | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| suraj-phanindra/microduck-hill-hc1 | Política RL en ONNX (fine-tune) | 61 / 14 | 50 Hz | no disponible | HuggingFace, 0 descargas | no disponible |
-| namenu/microduck-arena (modelo base) | Política RL en ONNX | no disponible | no disponible | no disponible | HuggingFace (referenciado) | no disponible |
+| suraj-phanindra/microduck-hill-hc1 | Política RL en ONNX (fine-tune) | 61 / 14 | 50 Hz | no disponible | Hugging Face, 0 descargas | no disponible |
+| namenu/microduck-arena (modelo base) | Política RL en ONNX | no disponible | no disponible | no disponible | Hugging Face (referenciado) | no disponible |
 | strata-hill-he9 (punto de partida) | Política RL | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (políticas de locomoción para microduck u otros robots de tamaño similar), por lo que no es posible establecer una comparación cuantitativa.
@@ -101,7 +101,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suraj-phanindra/microduck-hill-hc1
+- Modelo en Hugging Face: https://huggingface.co/suraj-phanindra/microduck-hill-hc1
 - Modelo base: https://huggingface.co/namenu/microduck-arena
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL citado en la model card: `pollen-robotics/microduck_rl` (rama `main`, commit `6ff40704a`)

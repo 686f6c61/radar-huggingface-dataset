@@ -75,11 +75,11 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. No se han
 - El modelo está entrenado específicamente para cortar cuerdas en tensión; no se ha demostrado su generalización a otras tareas bimanuales.
 - La observación es de tipo estado (8 variables), sin visión; esto limita su uso en escenarios donde se requiera percepción visual.
 - No se dispone de información sobre sesgos o riesgos de alucinación, aunque en el contexto robótico el riesgo principal es la ejecución de acciones inseguras.
-- El modelo no ha recibido descargas ni valoraciones en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- El modelo no ha recibido descargas ni valoraciones en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masondx/decoupled_tension_cut_rope_state8
+- Modelo en Hugging Face: https://huggingface.co/masondx/decoupled_tension_cut_rope_state8
 - Dataset de entrenamiento: https://huggingface.co/datasets/masondx/new_tension_cut_rope_state8
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

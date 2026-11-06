@@ -98,7 +98,7 @@ El error latente es un 68% inferior al baseline. La pérdida LPIPS está limitad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chomeed/mimicgen_coffee_d0_224x224_dinowm
+- Modelo en Hugging Face: https://huggingface.co/chomeed/mimicgen_coffee_d0_224x224_dinowm
 - Dataset de entrenamiento: https://huggingface.co/datasets/chomeed/mimicgen_coffee_d0_224x224
 - Paper DINO-WM: https://arxiv.org/abs/2411.04983
 - Sitio de MimicGen: https://mimicgen.github.io/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `xianghe-ai/trader-cot` es un repositorio publicado en HuggingFace por el usuario `xianghe-ai` bajo licencia MIT. El nombre sugiere una posible orientación hacia tareas de trading o análisis financiero, con la abreviatura "cot" que podría referirse a "chain of thought" (cadena de pensamiento), aunque no se confirma en la documentación disponible. El repositorio tiene un tamaño de 631.5 GB, lo que indica que se trata de un modelo de gran escala, probablemente con decenas de miles de millones de parámetros, pero no se proporcionan especificaciones técnicas detalladas.
+El modelo `xianghe-ai/trader-cot` es un repositorio publicado en Hugging Face por el usuario `xianghe-ai` bajo licencia MIT. El nombre sugiere una posible orientación hacia tareas de trading o análisis financiero, con la abreviatura "cot" que podría referirse a "chain of thought" (cadena de pensamiento), aunque no se confirma en la documentación disponible. El repositorio tiene un tamaño de 631.5 GB, lo que indica que se trata de un modelo de gran escala, probablemente con decenas de miles de millones de parámetros, pero no se proporcionan especificaciones técnicas detalladas.
 
 La model card es prácticamente vacía: solo incluye la licencia MIT. No hay descripción, arquitectura, datos de entrenamiento, benchmarks ni instrucciones de uso. A fecha de creación (marzo de 2025) y última actualización (agosto de 2026), el modelo no ha recibido descargas ni "likes", lo que sugiere que es un proyecto reciente o poco difundido. Dada la ausencia total de información técnica, esta ficha se limita a documentar los datos disponibles y a señalar las carencias, sin especular sobre capacidades o rendimiento.
 
@@ -54,4 +54,4 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el rendimiento del
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xianghe-ai/trader-cot
+- Repositorio Hugging Face: https://huggingface.co/xianghe-ai/trader-cot

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI y redistribuido en HuggingFace por el usuario arbonquants. Se trata de un modelo multimodal de tipo image-text-to-text orientado a razonamiento, generación de código, tareas agénticas y comprensión visual. Según la model card, esta versión mejora los resultados en benchmarks de razonamiento, coding y agentes, y además reduce el tiempo de ejecución de tareas y la longitud de salida, lo que se traduce en un menor coste por tarea.
+DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI y redistribuido en Hugging Face por el usuario arbonquants. Se trata de un modelo multimodal de tipo image-text-to-text orientado a razonamiento, generación de código, tareas agénticas y comprensión visual. Según la model card, esta versión mejora los resultados en benchmarks de razonamiento, coding y agentes, y además reduce el tiempo de ejecución de tareas y la longitud de salida, lo que se traduce en un menor coste por tarea.
 
 El modelo declara 763.205.315.794 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de modelos de gran escala (aproximadamente 763 mil millones de parámetros). El repositorio ocupa 510,3 GB y los pesos se distribuyen en formato safetensors con cuantización de 8 bits (fp8). La model card menciona una ventana de contexto de 1M tokens y un `max_tokens` recomendado de al menos 256K.
 
@@ -82,8 +82,8 @@ Notas: se usa el harness Claude Code para Terminal-Bench 4.0 y el harness Mini-S
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 | 763,2 B (según safetensors) | 1M tokens | MIT | HuggingFace (repo de arbonquants) | Multimodal image-text-to-text, fp8 |
-| DeepSeek-V4.1-Flash | no disponible | 1M tokens (presumible) | MIT (según repo original) | HuggingFace (deepseek-ai) | Versión base; la 1017 mejora en la mayoría de benchmarks |
+| DeepSeek-V4.1-Flash-1017 | 763,2 B (según safetensors) | 1M tokens | MIT | Hugging Face (repo de arbonquants) | Multimodal image-text-to-text, fp8 |
+| DeepSeek-V4.1-Flash | no disponible | 1M tokens (presumible) | MIT (según repo original) | Hugging Face (deepseek-ai) | Versión base; la 1017 mejora en la mayoría de benchmarks |
 | K3 | no disponible | no disponible | no disponible | no disponible | Resultados en benchmarks reportados en la model card |
 | GLM-5.3 | no disponible | no disponible | no disponible | no disponible | Resultados en benchmarks reportados en la model card |
 | GPT-5.6 Sol | no disponible | no disponible | no disponible (propietario) | no disponible | Resultados en benchmarks reportados en la model card |
@@ -105,10 +105,10 @@ No se dispone de datos de parámetros, contexto ni licencia de los modelos compa
 
 ## Enlaces
 
-- HuggingFace (repo redistribuido): https://huggingface.co/arbonquants/DeepSeek-V4.1-Flash-1017
+- Hugging Face (repo redistribuido): https://huggingface.co/arbonquants/DeepSeek-V4.1-Flash-1017
 - Repo original DeepSeek-V4.1-Flash: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico (PDF): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización DeepSeek-AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek-AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Web de DeepSeek: https://www.deepseek.com/
 - Chat DeepSeek: https://chat.deepseek.com/
 - Repositorio deepseek-recipe: https://github.com/deepseek-ai/deepseek-recipe

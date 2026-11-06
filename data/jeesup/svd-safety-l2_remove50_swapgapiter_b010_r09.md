@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r09` es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace. Se construye sobre `meta-llama/Llama-2-7b-chat-hf` aplicando compresión SVD-LLM, que elimina el 50,01% de los parámetros densos de las proyecciones, y a continuación una fase de reparación que reinserta componentes con 9 de 10 rondas de intercambio iterativo de parámetros neutro (regla de selección `gap_iter`, hasta el 0,1% de los parámetros densos por ronda). El resultado declarado es una fracción de parámetros de 0,4999 respecto del modelo denso.
+`Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r09` es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face. Se construye sobre `meta-llama/Llama-2-7b-chat-hf` aplicando compresión SVD-LLM, que elimina el 50,01% de los parámetros densos de las proyecciones, y a continuación una fase de reparación que reinserta componentes con 9 de 10 rondas de intercambio iterativo de parámetros neutro (regla de selección `gap_iter`, hasta el 0,1% de los parámetros densos por ronda). El resultado declarado es una fracción de parámetros de 0,4999 respecto del modelo denso.
 
 El problema que aborda es el deterioro de seguridad inducido por la compresión: al reducir el rango de las matrices, el modelo se vuelve más vulnerable a ataques de tipo jailbreak. El checkpoint documenta ese deterioro con métricas medidas (AdvBench ASR 0,4050 y StrongREJECT ASR 0,4050 con juez HarmBench, y una tasa de sobrerrechazo macro de 0,0385 con WildGuard) y sirve para cuantificar si una regla concreta de selección de componentes recupera comportamiento seguro.
 
@@ -72,9 +72,9 @@ No se han publicado en la información disponible resultados para MMLU, HumanEva
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento de seguridad |
 |---|---|---|---|---|---|
-| Este checkpoint | 6.738.415.616 según safetensors; fracción declarada 0,4999 de los parámetros densos de proyección | 4096 tokens | Llama 2 Community License | HuggingFace, safetensors, 0 descargas | AdvBench ASR 0,4050; StrongREJECT ASR 0,4050; sobrerrechazo 0,0385 |
-| meta-llama/Llama-2-7b-chat-hf | ~6,74 mil millones | 4096 tokens | Llama 2 Community License | HuggingFace, ampliamente desplegado | No disponible en la información proporcionada |
-| Otras celdas de la rejilla SVD-LLM del mismo autor | Variable (mismo esquema de compresión y distintos presupuestos o reglas) | 4096 tokens | Llama 2 Community License | HuggingFace | No disponible en la información proporcionada |
+| Este checkpoint | 6.738.415.616 según safetensors; fracción declarada 0,4999 de los parámetros densos de proyección | 4096 tokens | Llama 2 Community License | Hugging Face, safetensors, 0 descargas | AdvBench ASR 0,4050; StrongREJECT ASR 0,4050; sobrerrechazo 0,0385 |
+| meta-llama/Llama-2-7b-chat-hf | ~6,74 mil millones | 4096 tokens | Llama 2 Community License | Hugging Face, ampliamente desplegado | No disponible en la información proporcionada |
+| Otras celdas de la rejilla SVD-LLM del mismo autor | Variable (mismo esquema de compresión y distintos presupuestos o reglas) | 4096 tokens | Llama 2 Community License | Hugging Face | No disponible en la información proporcionada |
 
 ## Limitaciones y advertencias
 
@@ -90,11 +90,11 @@ No se han publicado en la información disponible resultados para MMLU, HumanEva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r09
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r09
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper de Llama 2 (arquitectura y alineación del modelo base): https://arxiv.org/abs/2307.09288
 - Licencia Llama 2: https://ai.meta.com/llama/license/
-- `LICENSE.txt` y `USE_POLICY.md`: incluidos en el propio repositorio de HuggingFace
+- `LICENSE.txt` y `USE_POLICY.md`: incluidos en el propio repositorio de Hugging Face
 - Paper de SVD-LLM: no disponible en la información proporcionada
 - Repositorio de código, demo o blog del autor: no disponible en la información proporcionada
 - La búsqueda web realizada no devolvió enlaces relevantes para este modelo; los resultados obtenidos correspondían a un sitio administrativo sin relación con el contenido técnico.

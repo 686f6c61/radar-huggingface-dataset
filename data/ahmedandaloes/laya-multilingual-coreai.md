@@ -96,7 +96,7 @@ No disponible. En la informacion proporcionada no se ofrecen modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedandaloes/laya-multilingual-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/ahmedandaloes/laya-multilingual-CoreAI
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Issue #185 del modelo base, citada en la model card como motivo para no usar `act_logits`: no disponible (sin URL en la informacion proporcionada)
 - Paper, blog o repositorio adicionales: no disponibles

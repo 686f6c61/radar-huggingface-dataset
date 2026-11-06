@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/loom-fun/LiquidAI-d1-2B-loom
+- Repositorio Hugging Face: https://huggingface.co/loom-fun/LiquidAI-d1-2B-loom
 - Modelo base GGUF: https://huggingface.co/LiquidAI/d1-2B-GGUF
 - Runtime Loom (ROCm): https://github.com/ROCm/hrx-system
 - Factoría loom-skills: https://github.com/loom-fun/loom-skills

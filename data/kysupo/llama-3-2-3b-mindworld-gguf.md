@@ -70,8 +70,8 @@ El corpus de entrenamiento se divide en tres conjuntos. El primero, para el rol 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-3B-Mindworld (este) | 3.212.749.888 | no disponible | 98,5% validez en comprobaciones del pueblo; +21,5 pts en Teach | Llama 3.2 Community License | GGUF Q4_K_M en HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct | 3.212.749.888 | no disponible | no disponible en esta ficha | Llama 3.2 Community License | safetensors y GGUF en HuggingFace |
+| Llama-3.2-3B-Mindworld (este) | 3.212.749.888 | no disponible | 98,5% validez en comprobaciones del pueblo; +21,5 pts en Teach | Llama 3.2 Community License | GGUF Q4_K_M en Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct | 3.212.749.888 | no disponible | no disponible en esta ficha | Llama 3.2 Community License | safetensors y GGUF en Hugging Face |
 | Modelo ajustado 1B de Mindworld | no disponible | no disponible | 99,5% validez; +22,6 pts en Teach | no disponible | no disponible |
 | Muse Spark Open (profesor) | no disponible | no disponible | +21,6 pts en Teach | no disponible | no disponible |
 
@@ -88,7 +88,7 @@ El corpus de entrenamiento se divide en tres conjuntos. El primero, para el rol 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kysupo/Llama-3.2-3B-Mindworld-GGUF
+- Hugging Face: https://huggingface.co/kysupo/Llama-3.2-3B-Mindworld-GGUF
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Licencia Llama 3.2: https://llama.meta.com/llama3_2/license/
 - Política de uso aceptable: https://llama.meta.com/llama3_2/use-policy/

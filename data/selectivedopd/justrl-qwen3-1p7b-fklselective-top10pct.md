@@ -103,6 +103,6 @@ Comparativa de rendimiento: no disponible para el modelo analizado, ya que no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-1p7b-FKLSelective-Top10pct
+- Modelo en Hugging Face: https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-1p7b-FKLSelective-Top10pct
 - Papers, blogs, repositorios de código y demos: no disponible. La búsqueda web realizada no devolvió ningún resultado relacionado con el modelo, el autor SelectiveDOPD ni los experimentos BiDirect-OPD.
 - Información sobre el modelo base Qwen3-1.7B: no disponible en los resultados de búsqueda proporcionados.

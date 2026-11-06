@@ -19,7 +19,7 @@ El modelo base soporta 25 idiomas, entre ellos ingles, chino, hindi, arabe, japo
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (archivo imatrix) |
 
-Nota: el dato de "25.109.532 parametros" que aparece en los metadatos de HuggingFace corresponde al archivo imatrix de calibracion, no al modelo completo. El modelo base se aloja en Neura-Tech-AI/Neuron-46x4B.
+Nota: el dato de "25.109.532 parametros" que aparece en los metadatos de Hugging Face corresponde al archivo imatrix de calibracion, no al modelo completo. El modelo base se aloja en Neura-Tech-AI/Neuron-46x4B.
 
 ## Arquitectura y entrenamiento
 

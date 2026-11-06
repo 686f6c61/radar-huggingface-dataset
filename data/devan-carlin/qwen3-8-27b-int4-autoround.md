@@ -87,7 +87,7 @@ La alternativa MixedInt4-AutoRound (mencionada en el foro de NVIDIA) tiene un ta
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/devan-carlin/Qwen3.8-27B-int4-AutoRound)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/devan-carlin/Qwen3.8-27B-int4-AutoRound)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Perfil de Devan Carlin en GitHub](https://github.com/devan-carlin/devan-carlin)
 - [Blog de AMD sobre Qwen3.8 27B en hardware AMD](https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html)

@@ -2,34 +2,34 @@
 
 ## Resumen
 
-`tokiers/voyage-code-3` no es un modelo de lenguaje, sino un paquete de tokenizer precompilado para el modelo de embeddings de código `voyageai/voyage-code-3`. Lo publica el usuario `tokiers` dentro del ecosistema del proyecto tokie (chonkie-inc), una implementación en Rust de tokenizers compatible con HuggingFace que afirma ser unas 50 veces más rápida y generar ficheros unas 10 veces más pequeños que la librería original, con resultados idénticos.
+`tokiers/voyage-code-3` no es un modelo de lenguaje, sino un paquete de tokenizer precompilado para el modelo de embeddings de código `voyageai/voyage-code-3`. Lo publica el usuario `tokiers` dentro del ecosistema del proyecto tokie (chonkie-inc), una implementación en Rust de tokenizers compatible con Hugging Face que afirma ser unas 50 veces más rápida y generar ficheros unas 10 veces más pequeños que la librería original, con resultados idénticos.
 
-El repositorio contiene únicamente los artefactos del tokenizer: un fichero binario propietario `tokenizer.tkz` (formato tokie, carga en torno a 5 ms) y, cuando está disponible, el `tokenizer.json` original de HuggingFace. El tamaño total del repo es de 0,2 GB. No incluye pesos del modelo de embeddings, ni código de inferencia, ni pipeline asociado.
+El repositorio contiene únicamente los artefactos del tokenizer: un fichero binario propietario `tokenizer.tkz` (formato tokie, carga en torno a 5 ms) y, cuando está disponible, el `tokenizer.json` original de Hugging Face. El tamaño total del repo es de 0,2 GB. No incluye pesos del modelo de embeddings, ni código de inferencia, ni pipeline asociado.
 
-Su relevancia ahora es operativa: permite tokenizar entradas de código con la misma segmentación que usa `voyage-code-3` (modelo de embeddings orientado a recuperación de código) sin cargar la pila de HuggingFace tokenizers, lo que reduce latencia en pipelines de indexación masiva de repositorios. La ficha se limita a describir el tokenizer; los datos del modelo subyacente no están disponibles en la información proporcionada.
+Su relevancia ahora es operativa: permite tokenizar entradas de código con la misma segmentación que usa `voyage-code-3` (modelo de embeddings orientado a recuperación de código) sin cargar la pila de Hugging Face tokenizers, lo que reduce latencia en pipelines de indexación masiva de repositorios. La ficha se limita a describir el tokenizer; los datos del modelo subyacente no están disponibles en la información proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Tokenizer (no es un modelo neuronal); implementación tokie en Rust compatible con HuggingFace tokenizers |
+| Arquitectura | Tokenizer (no es un modelo neuronal); implementación tokie en Rust compatible con Hugging Face tokenizers |
 | Parametros totales | no disponible (no aplica: no contiene pesos de modelo) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (no aplica) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT OR Apache-2.0 para la librería tokie; los ficheros originales conservan la licencia de `voyageai/voyage-code-3` (no especificada en la información disponible) |
-| Formato de pesos | `tokenizer.tkz` (binario tokie) y `tokenizer.json` (HuggingFace, si está disponible) |
+| Formato de pesos | `tokenizer.tkz` (binario tokie) y `tokenizer.json` (Hugging Face, si está disponible) |
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un tokenizer, no una red neuronal: no hay transformer, MoE ni SSM que describir. La implementación subyacente, tokie, está escrita en Rust y se presenta como reemplazo directo de HuggingFace tokenizers, con el objetivo declarado de mantener una precisión del 100 % respecto al tokenizer original mientras reduce el tiempo de carga y el tamaño en disco. El fichero `tokenizer.tkz` es un binario propio del formato tokie; el `tokenizer.json` reproduce el tokenizer canónico de `voyageai/voyage-code-3`.
+El artefacto es un tokenizer, no una red neuronal: no hay transformer, MoE ni SSM que describir. La implementación subyacente, tokie, está escrita en Rust y se presenta como reemplazo directo de Hugging Face tokenizers, con el objetivo declarado de mantener una precisión del 100 % respecto al tokenizer original mientras reduce el tiempo de carga y el tamaño en disco. El fichero `tokenizer.tkz` es un binario propio del formato tokie; el `tokenizer.json` reproduce el tokenizer canónico de `voyageai/voyage-code-3`.
 
 No se dispone de información sobre el vocabulario, las reglas de segmentación (BPE, WordPiece, Unigram u otras), el corpus de entrenamiento del tokenizer ni el proceso de ajuste. Tampoco hay datos sobre el modelo de embeddings `voyage-code-3` al que acompaña (dimensiones de embedding, ventana de entrada, datos de entrenamiento o técnica de contraste).
 
 ## Capacidades
 
-- Codificación de texto a IDs de token y generación de attention mask mediante `tokenizer.encode(...)`, con API equivalente a HuggingFace tokenizers.
+- Codificación de texto a IDs de token y generación de attention mask mediante `tokenizer.encode(...)`, con API equivalente a Hugging Face tokenizers.
 - Carga desde el Hub con `Tokenizer.from_pretrained("tokiers/voyage-code-3")` tanto en Python (`tokie`) como en Rust (`tokie` con feature `hf`).
 - Segmentación alineada con el tokenizer de `voyage-code-3`, pensada para entradas de código en pipelines de embeddings.
 - Carga rápida del binario `tokenizer.tkz` (en torno a 5 ms según la model card) y ficheros aproximadamente 10 veces más pequeños que el JSON equivalente.
@@ -37,7 +37,7 @@ No se dispone de información sobre el vocabulario, las reglas de segmentación 
 
 ## Casos de uso
 
-- Indexación masiva de repositorios: usar el tokenizer para preprocesar millones de ficheros de código antes de pasarlos a `voyage-code-3` para generar embeddings, aprovechando la carga en milisegundos del binario `.tkz` en lugar de inicializar HuggingFace tokenizers en cada worker.
+- Indexación masiva de repositorios: usar el tokenizer para preprocesar millones de ficheros de código antes de pasarlos a `voyage-code-3` para generar embeddings, aprovechando la carga en milisegundos del binario `.tkz` en lugar de inicializar Hugging Face tokenizers en cada worker.
 - Servicio de búsqueda semántica de código: tokenizar consultas y fragmentos en el mismo espacio que el modelo de embeddings, garantizando que la segmentación coincide con la usada en el índice.
 - Pipelines en Rust de alto rendimiento: integrar `tokie` con la feature `hf` en un servicio de recuperación de código donde el coste de tokenización debe ser despreciable frente al de la inferencia del modelo de embeddings.
 - Contenedores y despliegues con almacenamiento limitado: el formato `.tkz` reduce el tamaño del artefacto del tokenizer, útil en imágenes Docker mínimas o en entornos edge con cuotas de disco ajustadas.
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-| Criterio | tokiers/voyage-code-3 (tokie) | HuggingFace tokenizers (tokenizer.json de voyage-code-3) | Otros tokenizers precompilados en el Hub |
+| Criterio | tokiers/voyage-code-3 (tokie) | Hugging Face tokenizers (tokenizer.json de voyage-code-3) | Otros tokenizers precompilados en el Hub |
 |---|---|---|---|
 | Tipo de artefacto | Tokenizer en formato tokie + JSON | Tokenizer en JSON | Tokenizer en JSON o formatos propios |
 | Implementación | Rust (tokie) | Rust (HF tokenizers) | Variable |
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento medidos para establecer una comparación c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tokiers/voyage-code-3
+- Repositorio en Hugging Face: https://huggingface.co/tokiers/voyage-code-3
 - Modelo base: https://huggingface.co/voyageai/voyage-code-3
 - Repositorio de tokie: https://github.com/chonkie-inc/tokie
 - Documentación y benchmarks de tokie: https://github.com/chonkie-inc/tokie (sección de benchmarks y documentación citada en la model card)

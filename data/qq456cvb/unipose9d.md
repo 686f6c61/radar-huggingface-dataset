@@ -4,7 +4,7 @@
 
 UniPose9D es un modelo fundacional de estimacion de pose de objetos en 9 dimensiones. Dado un par RGB-D (o una imagen RGB con profundidad estimada) junto con una mascara de instancia, predice la rotacion, la traslacion y el tamano metrico del objeto. Lo relevante es que opera de forma category-agnostic: no necesita etiquetas de categoria, modelos CAD, priors de forma media ni vistas de referencia para el objeto concreto. Las tres componentes predichas (rotacion, traslacion y tamano) suman las nueve dimensiones que dan nombre al modelo.
 
-El modelo lo firman Yang You, Yi Du, Cole Harrison y Leonidas Guibas, y se distribuye desde el repositorio de HuggingFace del usuario qq456cvb bajo licencia Apache 2.0. El repositorio ocupa 0,4 GB e incluye un checkpoint de PyTorch Lightning (`last.ckpt`) junto con su `config.yaml` de entrenamiento. No es un modelo de lenguaje: la entrada es visual y la salida es geometrica, por lo que conceptos habituales en fichas de LLM (contexto en tokens, cuantizacion GGUF, idiomas) no aplican directamente.
+El modelo lo firman Yang You, Yi Du, Cole Harrison y Leonidas Guibas, y se distribuye desde el repositorio de Hugging Face del usuario qq456cvb bajo licencia Apache 2.0. El repositorio ocupa 0,4 GB e incluye un checkpoint de PyTorch Lightning (`last.ckpt`) junto con su `config.yaml` de entrenamiento. No es un modelo de lenguaje: la entrada es visual y la salida es geometrica, por lo que conceptos habituales en fichas de LLM (contexto en tokens, cuantizacion GGUF, idiomas) no aplican directamente.
 
 Su relevancia practica esta en robotica y percepcion 3D: permite estimar la pose de objetos nunca vistos sin construir un pipeline previo de modelado CAD. El pipeline de inferencia se apoya en dos modelos auxiliares que se descargan automaticamente: SAM2 (`facebook/sam2.1-hiera-large`) para generar las mascaras de instancia y MoGe (`Ruicheng/moge-2-vitl-normal`) para estimar profundidad e intrinsecos de camara cuando no se dispone de ellos.
 
@@ -28,7 +28,7 @@ Su relevancia practica esta en robotica y percepcion 3D: permite estimar la pose
 
 ## Arquitectura y entrenamiento
 
-La model card no detalla la arquitectura interna del modelo, el numero de parametros, el volumen de datos de entrenamiento ni su composicion. Tampoco se indica si hubo fases de ajuste fino con senales humanas o de refuerzo. Toda esa informacion debe considerarse no disponible a partir del material publicado en HuggingFace.
+La model card no detalla la arquitectura interna del modelo, el numero de parametros, el volumen de datos de entrenamiento ni su composicion. Tampoco se indica si hubo fases de ajuste fino con senales humanas o de refuerzo. Toda esa informacion debe considerarse no disponible a partir del material publicado en Hugging Face.
 
 Lo que si se documenta es la innovacion funcional: un unico modelo category-agnostic capaz de predecir la pose completa (rotacion, traslacion y escala metrica) sin depender de CAD, priors de forma media ni vistas de referencia. Esto contrasta con pipelines clasicos de estimacion de pose 6D, que suelen requerir un modelo CAD del objeto o un renderizado de referencia para establecer correspondencias. La estimacion de profundidad y de intrinsecos recae en MoGe cuando no se aportan, y la segmentacion de instancia en SAM2, de forma que UniPose9D consume mascaras ya resueltas en lugar de generarlas. Se recomienda consultar el paper (arXiv:2607.09985) para los detalles de arquitectura y el regimen de entrenamiento, que no se reproducen en el repositorio.
 
@@ -54,7 +54,7 @@ Lo que si se documenta es la innovacion funcional: un unico modelo category-agno
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye tablas de resultados (LINEMOD, YCB-Video, BOP u otros), y los resultados de la busqueda web no aportaron datos tecnicos sobre el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye tablas de resultados (LINEMOD, YCB-Video, BOP u otros), y los resultados de la busqueda web no aportaron datos tecnicos sobre el modelo.
 
 ## Requisitos de hardware
 
@@ -71,7 +71,7 @@ No disponible. La informacion proporcionada no incluye datos verificables de par
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UniPose9D | no disponible | no aplica | no disponible | Apache 2.0 | HuggingFace (qq456cvb/UniPose9D) |
+| UniPose9D | no disponible | no aplica | no disponible | Apache 2.0 | Hugging Face (qq456cvb/UniPose9D) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,9 +88,9 @@ No disponible. La informacion proporcionada no incluye datos verificables de par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qq456cvb/UniPose9D
+- Modelo en Hugging Face: https://huggingface.co/qq456cvb/UniPose9D
 - Paper (arXiv): https://arxiv.org/abs/2607.09985
-- Pagina del paper en HuggingFace: https://huggingface.co/papers/2607.09985
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2607.09985
 - Repositorio de codigo: https://github.com/qq456cvb/UniPose9D
 - Demo (Space): https://huggingface.co/spaces/qq456cvb/UniPose9D
 - Pagina del proyecto: https://qq456cvb.github.io/projects/unipose9d

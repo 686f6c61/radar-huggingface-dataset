@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables específicos. El autor h
 
 ## Enlaces
 
-- [HuggingFace: athirorg/USS-qwen3-1.7b-GRPO-utt-G16-beta0.005-lr1e-4-gold-ckpt4900](https://huggingface.co/athirorg/USS-qwen3-1.7b-GRPO-utt-G16-beta0.005-lr1e-4-gold-ckpt4900)
+- [Hugging Face: athirorg/USS-qwen3-1.7b-GRPO-utt-G16-beta0.005-lr1e-4-gold-ckpt4900](https://huggingface.co/athirorg/USS-qwen3-1.7b-GRPO-utt-G16-beta0.005-lr1e-4-gold-ckpt4900)
 - [Adaptador similar: athirorg/USS-qwen3-1.7b-GRPO-utt-beta0.02-lr1e-4](https://huggingface.co/athirorg/USS-qwen3-1.7b-GRPO-utt-beta0.02-lr1e-4)
 - [Adaptador similar: athirorg/USS-qwen3-1.7b-GRPO-v2](https://huggingface.co/athirorg/USS-qwen3-1.7b-GRPO-v2)
 - [Qwen3 Technical Report (arXiv)](https://arxiv.org/html/2505.09388v1)

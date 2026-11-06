@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Audante/gemma-4-12B-it-MLX-5bit | ≈12B | no disponible | MLX safetensors, 5 bits | Apache 2.0 | HuggingFace, 40 descargas |
-| mlx-community/gemma-4-12B-it-5bit | ≈12B | no disponible | MLX safetensors, 5 bits | Apache 2.0 | HuggingFace (fuente de esta copia) |
-| google/gemma-4-12B-it | ≈12B | no disponible | safetensors (bf16 presumiblemente) | Apache 2.0 | HuggingFace (modelo original) |
+| Audante/gemma-4-12B-it-MLX-5bit | ≈12B | no disponible | MLX safetensors, 5 bits | Apache 2.0 | Hugging Face, 40 descargas |
+| mlx-community/gemma-4-12B-it-5bit | ≈12B | no disponible | MLX safetensors, 5 bits | Apache 2.0 | Hugging Face (fuente de esta copia) |
+| google/gemma-4-12B-it | ≈12B | no disponible | safetensors (bf16 presumiblemente) | Apache 2.0 | Hugging Face (modelo original) |
 
 La comparativa se limita a las tres variantes del mismo modelo base, ya que la documentación disponible no aporta datos de rendimiento ni de contexto que permitan contrastarlo con arquitecturas alternativas de tamaño similar. La diferencia entre las tres entradas es exclusivamente de formato y cuantización, no de capacidades del modelo.
 
@@ -86,7 +86,7 @@ La comparativa se limita a las tres variantes del mismo modelo base, ya que la d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Audante/gemma-4-12B-it-MLX-5bit
+- Repositorio en Hugging Face: https://huggingface.co/Audante/gemma-4-12B-it-MLX-5bit
 - Repositorio fuente (mlx-community): https://huggingface.co/mlx-community/gemma-4-12B-it-5bit
 - Modelo base (Google): https://huggingface.co/google/gemma-4-12B-it
 - Librería MLX: https://github.com/ml-explore/mlx

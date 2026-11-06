@@ -115,7 +115,7 @@ Diferencias cualitativas relevantes: Moonfrost es el unico de la comparativa con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/whoashish115/Moonfrost-777M-Instruct-v2
+- Modelo en Hugging Face: https://huggingface.co/whoashish115/Moonfrost-777M-Instruct-v2
 - Modelo base: https://huggingface.co/whoashish115/Moonfrost-777M
 - Version alternativa sin datos de identidad (Instruct-v1): https://huggingface.co/whoashish115/Moonfrost-777M-Instruct-v1
 - Dataset de persona: https://huggingface.co/datasets/whoashish115/Moonfrost-Persona-SFT

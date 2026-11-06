@@ -4,7 +4,7 @@
 
 ## Resumen
 
-EdgeIn-v1 es el paquete publicado en HuggingFace del modelo EdgeInstant-1.5b S5, un modelo multimodal de audio a texto desarrollado por el usuario chenjz24. Se trata de un modelo de instrucciones bilingue (chino e ingles) que acepta audio como entrada y produce texto, cubriendo transcripcion automatica del habla (ASR), traduccion de voz bidireccional, respuesta a preguntas sobre audio, comprension de sonido y musica, y ejecucion de instrucciones dictadas por voz. El repositorio incluye pesos, procesador y codigo propio, con un total de 2.031.710.851 parametros segun los ficheros safetensors (~2,03 mil millones), un tamano de repositorio de 4,1 GB y una ventana de contexto que no se especifica en la informacion disponible.
+EdgeIn-v1 es el paquete publicado en Hugging Face del modelo EdgeInstant-1.5b S5, un modelo multimodal de audio a texto desarrollado por el usuario chenjz24. Se trata de un modelo de instrucciones bilingue (chino e ingles) que acepta audio como entrada y produce texto, cubriendo transcripcion automatica del habla (ASR), traduccion de voz bidireccional, respuesta a preguntas sobre audio, comprension de sonido y musica, y ejecucion de instrucciones dictadas por voz. El repositorio incluye pesos, procesador y codigo propio, con un total de 2.031.710.851 parametros segun los ficheros safetensors (~2,03 mil millones), un tamano de repositorio de 4,1 GB y una ventana de contexto que no se especifica en la informacion disponible.
 
 El modelo se presenta como una continuacion del modelo S4: sobre esa base se aplicaron 600 pasos de entrenamiento de control de respuesta y despues 1.600 pasos de post-entrenamiento mixto en ocho GPU, con un manifiesto de 531.174 filas que combina ASR chino-ingles, traduccion de voz en ambos sentidos, instrucciones de texto de multiples fuentes, extraccion de comandos de voz reales, preguntas y respuestas con contexto de voz, comprension de sonido y musica, y datos de respuesta directa y de modo "thinking". Los pesos entregados corresponden al paso 1.600 y el modelo conserva dos modos de salida (directo y razonamiento explicito) que se seleccionan en el procesador mediante `enable_thinking`.
 
@@ -22,7 +22,7 @@ Es relevante ahora porque aborda un caso poco cubierto por los modelos abiertos:
 | Idiomas soportados | chino (zh) e ingles (en) |
 | Licencia | no disponible; los componentes Qwen y los datos de entrenamiento conservan sus licencias originales y el codigo del decoder se rige por `LICENSE.codec` |
 | Formato de pesos | safetensors |
-| Identificador en HuggingFace | chenjz24/EdgeIn-v1 |
+| Identificador en Hugging Face | chenjz24/EdgeIn-v1 |
 | Autor | chenjz24 |
 | Tarea (pipeline) | audio-text-to-text |
 | Tamano del repositorio | 4,1 GB |
@@ -86,10 +86,10 @@ Los valores de esta tabla proceden de referencias publicas generales y no se han
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EdgeIn-v1 (EdgeInstant-1.5b S5) | 2,03 mil millones | sin truncado a 30 s (longitud de contexto no disponible) | zh, en | no disponible | HuggingFace, codigo propio, 0 descargas |
-| Qwen2-Audio-7B-Instruct | ~8,2 mil millones | segmentos de audio (referencia publica) | multilingue | Apache-2.0 (referencia publica) | HuggingFace, ampliamente desplegado |
-| Whisper large-v3 | ~1,55 mil millones | ventanas de 30 s | ~99 idiomas | MIT | HuggingFace, ecosistema amplio (whisper.cpp, faster-whisper) |
-| Qwen2.5-Omni-7B | ~7 mil millones | audio, imagen, video y texto | multilingue | Apache-2.0 (referencia publica) | HuggingFace |
+| EdgeIn-v1 (EdgeInstant-1.5b S5) | 2,03 mil millones | sin truncado a 30 s (longitud de contexto no disponible) | zh, en | no disponible | Hugging Face, codigo propio, 0 descargas |
+| Qwen2-Audio-7B-Instruct | ~8,2 mil millones | segmentos de audio (referencia publica) | multilingue | Apache-2.0 (referencia publica) | Hugging Face, ampliamente desplegado |
+| Whisper large-v3 | ~1,55 mil millones | ventanas de 30 s | ~99 idiomas | MIT | Hugging Face, ecosistema amplio (whisper.cpp, faster-whisper) |
+| Qwen2.5-Omni-7B | ~7 mil millones | audio, imagen, video y texto | multilingue | Apache-2.0 (referencia publica) | Hugging Face |
 
 Diferencias destacables: EdgeIn-v1 es el unico de la comparativa que combina entrada de audio sin truncado a 30 segundos con modos directo y de razonamiento conmutables y salida estructurada de comandos de voz medida explicitamente. En contra, su licencia no esta publicada, no tiene apenas traccion (0 descargas, 0 likes) y no ofrece pesos cuantizados ni integraciones con motores de inferencia de alto rendimiento.
 
@@ -113,7 +113,7 @@ Diferencias destacables: EdgeIn-v1 es el unico de la comparativa que combina ent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chenjz24/EdgeIn-v1
+- Modelo en Hugging Face: https://huggingface.co/chenjz24/EdgeIn-v1
 - Resultados y limitaciones conocidas: `RESULTS.md` (referenciado como `../RESULTS.md` en la model card)
 - 27 pruebas con protocolo completo y comparativa con S4: `final_results.md` (referenciado como `../final_results.md`)
 - Comparativa sobre conjunto de desarrollo fijo: `dev_comparison.md` (referenciado como `../dev_comparison.md`)

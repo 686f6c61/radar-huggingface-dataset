@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento de ninguno de los dos, por lo que no es po
 
 ## Enlaces
 
-- Conversión en HuggingFace: https://huggingface.co/mlx-community/sapiens2-normal-0.4b-bf16
+- Conversión en Hugging Face: https://huggingface.co/mlx-community/sapiens2-normal-0.4b-bf16
 - Modelo original: https://huggingface.co/facebook/sapiens2-normal-0.4b
 - Licencia Sapiens2: https://github.com/facebookresearch/sapiens2/blob/main/LICENSE.md
 - Repositorio de Sapiens2 (Facebook Research): https://github.com/facebookresearch/sapiens2

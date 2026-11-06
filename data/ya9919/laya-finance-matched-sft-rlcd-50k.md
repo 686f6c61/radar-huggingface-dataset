@@ -74,8 +74,8 @@ No se ha identificado en la información disponible ningún modelo público comp
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `laya-finance-matched-sft-rlcd-50k` | 421.293.830 | No disponible | Exactitud 0,7293; F1 macro 0,3478 (240.458 filas / 119 preguntas) | Apache-2.0 (datos con términos propios) | HuggingFace, 0 descargas, 0 likes |
-| `ya9919/laya-finance-matched-sft-50k` (inicialización) | No disponible | No disponible | No disponible en esta información | Apache-2.0 según modelo base | HuggingFace |
+| `laya-finance-matched-sft-rlcd-50k` | 421.293.830 | No disponible | Exactitud 0,7293; F1 macro 0,3478 (240.458 filas / 119 preguntas) | Apache-2.0 (datos con términos propios) | Hugging Face, 0 descargas, 0 likes |
+| `ya9919/laya-finance-matched-sft-50k` (inicialización) | No disponible | No disponible | No disponible en esta información | Apache-2.0 según modelo base | Hugging Face |
 | Otros modelos de QA financiera de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -93,6 +93,6 @@ No se ha identificado en la información disponible ningún modelo público comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ya9919/laya-finance-matched-sft-rlcd-50k
+- Modelo en Hugging Face: https://huggingface.co/ya9919/laya-finance-matched-sft-rlcd-50k
 - Checkpoint de inicialización: https://huggingface.co/ya9919/laya-finance-matched-sft-50k
 - Repositorio de reproducción e evidencia agregada (`mas-simulation`): https://github.com/KataDavidXD/mas-simulation

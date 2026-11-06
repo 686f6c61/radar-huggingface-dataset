@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Base | Parámetros | Contexto | Ollaya Bench 2026.10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sura:2b | Qwen3.5-2B-Base | 2,21B | No disponible | 40,9 | Apache-2.0 | HuggingFace + registro de Ollaya (`sura:2b`, `sura:latest`) |
-| sura:0.8b | Qwen3.5-0.8B-Base | ~0,8B (según denominación) | No disponible | 37,2 | No disponible en la información | HuggingFace + registro de Ollaya (`sura:0.8b`) |
+| sura:2b | Qwen3.5-2B-Base | 2,21B | No disponible | 40,9 | Apache-2.0 | Hugging Face + registro de Ollaya (`sura:2b`, `sura:latest`) |
+| sura:0.8b | Qwen3.5-0.8B-Base | ~0,8B (según denominación) | No disponible | 37,2 | No disponible en la información | Hugging Face + registro de Ollaya (`sura:0.8b`) |
 | decider:2b | No disponible | No disponible | No disponible | Por encima de 40,9 (sin cifra publicada) | No disponible en la información | Registro de Ollaya |
-| pplx-decider-flash-v1.2 (profesor) | Qwen3.5-4B | ~4B | No disponible | No disponible | Apache-2.0 | HuggingFace (`perplexity-ai`) |
+| pplx-decider-flash-v1.2 (profesor) | Qwen3.5-4B | ~4B | No disponible | No disponible | Apache-2.0 | Hugging Face (`perplexity-ai`) |
 
 ## Limitaciones y advertencias
 
@@ -94,11 +94,11 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ollaya-dev/sura-2b
+- Modelo en Hugging Face: https://huggingface.co/ollaya-dev/sura-2b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Profesor (pplx-decider-flash-v1.2): https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2
 - Versión pequeña de la familia: https://huggingface.co/ollaya-dev/sura-0.8b
 - Familia coba (encoder, orientada a CPU y navegador): https://huggingface.co/ollaya-dev/coba-400m
 - Sitio y runtime de Ollaya: https://ollaya.dev
 
-Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

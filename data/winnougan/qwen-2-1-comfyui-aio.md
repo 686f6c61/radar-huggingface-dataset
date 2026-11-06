@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Winnougan/Qwen-2.1-ComfyUI-AIO es un repositorio alojado en HuggingFace por el usuario Winnougan cuya model card se limita a la declaración `license: apache-2.0`, sin descripción, sin arquitectura declarada, sin instrucciones de uso y sin resultados de evaluación. El repositorio no incluye pipeline declarado, idiomas soportados ni formatos de pesos documentados, por lo que la información verificable es prácticamente nula más allá de los metadatos de la plataforma.
+Winnougan/Qwen-2.1-ComfyUI-AIO es un repositorio alojado en Hugging Face por el usuario Winnougan cuya model card se limita a la declaración `license: apache-2.0`, sin descripción, sin arquitectura declarada, sin instrucciones de uso y sin resultados de evaluación. El repositorio no incluye pipeline declarado, idiomas soportados ni formatos de pesos documentados, por lo que la información verificable es prácticamente nula más allá de los metadatos de la plataforma.
 
 Los datos objetivos disponibles son: 14,2 GB de tamaño de repositorio, licencia Apache 2.0, 0 descargas y 0 likes en el momento de la consulta, y fechas de creación y actualización del 21 de septiembre de 2026 (una fecha anómala que conviene contrastar con la fecha real de publicación). El identificador sugiere una base de la familia Qwen 2.x y un empaquetado del tipo "all-in-one" orientado a ComfyUI, pero ninguna de esas dos inferencias está confirmada por el autor en la documentación pública.
 
@@ -48,7 +48,7 @@ Advertencia previa: al no existir model card ni evaluación pública, los siguie
 - Experimentación en local con GPU de consumo: el tamaño del repositorio permite, en principio, alojarlo en una máquina con almacenamiento moderado, pero la viabilidad de inferencia depende de la VRAM y del formato de pesos, ambos desconocidos.
 - Reproducción de flujos de trabajo compartidos: si un flujo de ComfyUI distribuido por terceros referencia este repositorio, podría servir para reproducir exactamente ese pipeline, siempre que el autor del flujo documente los parámetros.
 - Pruebas comparativas internas: puede utilizarse como punto de partida para medir la calidad de un modelo redistribuido frente a su base original, estableciendo primero cuál es esa base.
-- Archivado y trazabilidad: dado que el repositorio tiene 0 descargas, su uso más realista hoy es como objeto de estudio sobre redistribución de pesos en HuggingFace y sobre prácticas de documentación deficientes.
+- Archivado y trazabilidad: dado que el repositorio tiene 0 descargas, su uso más realista hoy es como objeto de estudio sobre redistribución de pesos en Hugging Face y sobre prácticas de documentación deficientes.
 - Ajuste fino posterior: solo sería planteable tras confirmar la licencia de todos los componentes y la naturaleza del modelo base; la licencia Apache 2.0 declarada por el autor no garantiza por sí sola que los pesos subyacentes lo estén.
 
 ## Benchmarks y rendimiento
@@ -67,7 +67,7 @@ Las siguientes cifras son estimaciones condicionadas a supuestos explícitos, no
 
 ## Comparativa con modelos similares
 
-La comparativa se establece contra alternativas genéricas de la misma franja de tamaño (entorno a 7-8 mil millones de parámetros), dado que no se conoce el tamaño real de este repositorio ni su modelo base. Los datos de la columna "este repositorio" provienen únicamente de los metadatos de HuggingFace.
+La comparativa se establece contra alternativas genéricas de la misma franja de tamaño (entorno a 7-8 mil millones de parámetros), dado que no se conoce el tamaño real de este repositorio ni su modelo base. Los datos de la columna "este repositorio" provienen únicamente de los metadatos de Hugging Face.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Evaluacion publica |
 |---|---|---|---|---|---|
@@ -92,5 +92,5 @@ Nota: los datos de las tres alternativas corresponden a sus especificaciones ofi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Winnougan/Qwen-2.1-ComfyUI-AIO
+- Repositorio en Hugging Face: https://huggingface.co/Winnougan/Qwen-2.1-ComfyUI-AIO
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web realizada. Los resultados obtenidos correspondían a páginas comerciales sin relación con el modelo.

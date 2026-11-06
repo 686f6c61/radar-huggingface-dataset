@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`micdun/flex_merged_endo_rex_path-public_pubmed-rp_topk3-25k-huge_lr` es un checkpoint publicado en HuggingFace por el usuario `micdun`. Se trata, por el nombre y las etiquetas del repositorio, de un modelo fusionado (merged) construido sobre una arquitectura de tipo Qwen2.5-VL con mezcla de expertos (MoE), según la etiqueta `flex_qwen2_5_vl_moe` que acompaña al repositorio. El nombre sugiere un ajuste orientado a dominios de endoscopia y patología, con datos de PubMed, y un esquema de enrutamiento top-k = 3 sobre 25 000 pasos y una tasa de aprendizaje alta. Ninguno de estos extremos está documentado en la ficha del repositorio.
+`micdun/flex_merged_endo_rex_path-public_pubmed-rp_topk3-25k-huge_lr` es un checkpoint publicado en Hugging Face por el usuario `micdun`. Se trata, por el nombre y las etiquetas del repositorio, de un modelo fusionado (merged) construido sobre una arquitectura de tipo Qwen2.5-VL con mezcla de expertos (MoE), según la etiqueta `flex_qwen2_5_vl_moe` que acompaña al repositorio. El nombre sugiere un ajuste orientado a dominios de endoscopia y patología, con datos de PubMed, y un esquema de enrutamiento top-k = 3 sobre 25 000 pasos y una tasa de aprendizaje alta. Ninguno de estos extremos está documentado en la ficha del repositorio.
 
 El dato verificable es el tamaño: 12 320 990 464 parámetros totales en pesos safetensors, con un repositorio de 24,7 GB. No se especifican parámetros activos, longitud de contexto, licencia ni idiomas soportados. El modelo acumula 69 descargas y 0 likes en el momento de la consulta, y no tiene pipeline declarado.
 
@@ -73,10 +73,10 @@ Los valores de las alternativas proceden de conocimiento general de esos modelos
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `micdun/flex_merged_endo_rex_path-public_pubmed-rp_topk3-25k-huge_lr` | 12,32 B totales; activos no disponibles | no disponible | no disponible | no disponible | HuggingFace, safetensors, 69 descargas |
-| Qwen2.5-VL-7B-Instruct | 7 B | 32k nativo, ampliable (referencia general) | benchmarks publicos del autor | Apache 2.0 (referencia general) | HuggingFace, amplio ecosistema de cuantizaciones |
-| Qwen2.5-VL-32B-Instruct | 32 B | 32k nativo, ampliable (referencia general) | benchmarks publicos del autor | Apache 2.0 (referencia general) | HuggingFace |
-| InternVL2.5-8B | 8 B | 32k+ segun configuracion (referencia general) | benchmarks publicos del autor | licencia propia de investigacion | HuggingFace |
+| `micdun/flex_merged_endo_rex_path-public_pubmed-rp_topk3-25k-huge_lr` | 12,32 B totales; activos no disponibles | no disponible | no disponible | no disponible | Hugging Face, safetensors, 69 descargas |
+| Qwen2.5-VL-7B-Instruct | 7 B | 32k nativo, ampliable (referencia general) | benchmarks publicos del autor | Apache 2.0 (referencia general) | Hugging Face, amplio ecosistema de cuantizaciones |
+| Qwen2.5-VL-32B-Instruct | 32 B | 32k nativo, ampliable (referencia general) | benchmarks publicos del autor | Apache 2.0 (referencia general) | Hugging Face |
+| InternVL2.5-8B | 8 B | 32k+ segun configuracion (referencia general) | benchmarks publicos del autor | licencia propia de investigacion | Hugging Face |
 
 La comparacion directa no es posible en terminos de calidad, dado que el checkpoint evaluado no publica ninguna evaluacion y su licencia es desconocida, lo que descarta de facto su uso comercial frente a las alternativas con licencia permisiva.
 
@@ -94,6 +94,6 @@ La comparacion directa no es posible en terminos de calidad, dado que el checkpo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/micdun/flex_merged_endo_rex_path-public_pubmed-rp_topk3-25k-huge_lr
+- Hugging Face: https://huggingface.co/micdun/flex_merged_endo_rex_path-public_pubmed-rp_topk3-25k-huge_lr
 
 No se han encontrado papers, repositorios, blogs ni demos asociados al modelo en la busqueda web realizada. Los resultados devueltos por el buscador correspondian a paginas de soporte del navegador Firefox y no guardan ninguna relacion con este modelo, por lo que se descartan como fuentes.

@@ -101,7 +101,7 @@ La comparacion de rendimiento con estas alternativas no es posible con la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/KW-KI/Qwen3.6-9B-Heretic-Uncensored-Thinking-Sweet-Madness-Q5_K_M-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/KW-KI/Qwen3.6-9B-Heretic-Uncensored-Thinking-Sweet-Madness-Q5_K_M-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.6-9B-Heretic-Uncensored-Thinking-Sweet-Madness
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo

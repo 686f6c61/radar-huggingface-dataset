@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ChindaMT-0.8B-i1-GGUF es la versión cuantizada en formato GGUF del modelo iapp/ChindaMT-0.8B, un traductor neuronal especializado en el par de idiomas inglés-tailandés desarrollado por iApp Technology (Tailandia). Esta variante concreta la publica el usuario mradermacher, conocido en HuggingFace por generar cuantizaciones GGUF con matrices de importancia (imatrix) para facilitar la ejecución local de modelos en hardware modesto.
+ChindaMT-0.8B-i1-GGUF es la versión cuantizada en formato GGUF del modelo iapp/ChindaMT-0.8B, un traductor neuronal especializado en el par de idiomas inglés-tailandés desarrollado por iApp Technology (Tailandia). Esta variante concreta la publica el usuario mradermacher, conocido en Hugging Face por generar cuantizaciones GGUF con matrices de importancia (imatrix) para facilitar la ejecución local de modelos en hardware modesto.
 
 El modelo resuelve un problema muy específico: la traducción automática EN-TH y TH-EN con control explícito sobre el resultado, es decir, respetando reglas de tono, terminología, longitud y formato definidas por el usuario. Según la información pública del proyecto, la familia ChindaMT se presentó con tres tamanos (4B, 2B y 0.8B) junto con los pesos, datos y código bajo licencia Apache 2.0, y la investigación asociada se publicó en la conferencia AACL-IJCNLP 2026.
 
@@ -92,7 +92,7 @@ No hay datos de benchmarks publicados en la información disponible, por lo que 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/ChindaMT-0.8B-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/ChindaMT-0.8B-i1-GGUF
 - Modelo base original: https://huggingface.co/iapp/ChindaMT-0.8B
 - Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/ChindaMT-0.8B-GGUF
 - Dataset asociado: https://huggingface.co/datasets/iapp/ChindaMT-Grounded

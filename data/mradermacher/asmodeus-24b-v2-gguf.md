@@ -107,7 +107,7 @@ Comparacion con alternativas de otros autores (por ejemplo, otros merges de la f
 - Licencia: el repositorio de cuantizacion declara apache-2.0, pero se trata de una fusion de modelos de terceros. Es responsabilidad del usuario verificar la licencia y las condiciones de cada componente del merge en el repositorio del modelo base antes de un uso comercial.
 - Procedencia del merge: al ser una fusion DELLA sin documentacion de los modelos origen, no se puede auditar la composicion del dataset ni los sesgos heredados.
 - Sin benchmarks: no existe evidencia publicada de rendimiento que respalde afirmaciones de calidad frente a otros modelos del mismo tamano.
-- Fechas del repositorio: las fechas de creacion y actualizacion declaradas (2026-03-21 y 2026-10-10) son posteriores a la fecha habitual de consulta; conviene verificar su coherencia en la pagina de HuggingFace.
+- Fechas del repositorio: las fechas de creacion y actualizacion declaradas (2026-03-21 y 2026-10-10) son posteriores a la fecha habitual de consulta; conviene verificar su coherencia en la pagina de Hugging Face.
 - Bajo nivel de adopcion: 405 descargas y 1 "like" indican que el modelo no ha sido validado por una comunidad amplia.
 
 ## Enlaces

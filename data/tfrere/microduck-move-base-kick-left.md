@@ -77,7 +77,7 @@ Las métricas de inclinación (`max_tilt`, `tilt_at_0_5s`) y de altura (`base_z_
 
 | Modelo | Autor | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `tfrere/microduck-move-base-kick-left` | tfrere (Microduck Academy) | Política RL de patada izquierda, ONNX + checkpoint rsl_rl | Apache-2.0 | Repositorio HuggingFace, 0 descargas y 0 likes |
+| `tfrere/microduck-move-base-kick-left` | tfrere (Microduck Academy) | Política RL de patada izquierda, ONNX + checkpoint rsl_rl | Apache-2.0 | Repositorio Hugging Face, 0 descargas y 0 likes |
 | `ball_kick_left.onnx` (en `pollen-robotics/microduck-policies`) | Pollen Robotics | Política de patada izquierda de referencia | Apache-2.0 según la receta upstream | Publicada por Pollen Robotics; usada como referencia de fidelidad |
 | Otras políticas de Microduck Academy | tfrere / Pollen Robotics | Políticas de movimientos (`family:ballkick`, `tier:1`) | Apache-2.0 (según receta) | No se dispone de datos concretos de otros movimientos en la información proporcionada |
 
@@ -98,9 +98,9 @@ En cuanto al comportamiento medido, la diferencia más destacada es el recorrido
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-base-kick-left
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-base-kick-left
 - Microduck Academy (space): https://huggingface.co/spaces/tfrere/microduck
-- Pollen Robotics en HuggingFace: https://huggingface.co/pollen-robotics
+- Pollen Robotics en Hugging Face: https://huggingface.co/pollen-robotics
 - Política de referencia `ball_kick_left.onnx`: https://huggingface.co/pollen-robotics/microduck-policies/blob/main/ball_kick_left.onnx
 - Repositorio de entrenamiento `microduck_rl`: https://github.com/pollen-robotics/microduck_rl
 - Búsqueda web: no se han encontrado resultados relevantes sobre este modelo; los resultados devueltos corresponden a un sitio de reservas de viajes y no guardan relación con la ficha.

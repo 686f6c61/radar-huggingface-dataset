@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AnchorSR-Qwen3.5-9B-V4-RL-Step3000 es un checkpoint intermedio de un proceso de ajuste por refuerzo (GRPO, *Group Relative Policy Optimization*) sobre el modelo AnchorSR-Qwen3.5-9B-SFT-v4. Lo publica el usuario AnchorSR en HuggingFace. El modelo parte de una base Qwen3.5 de 9.409.813.744 parametros (unos 9,41 mil millones, segun los pesos safetensors del repositorio) y esta orientado a tareas de razonamiento espacial multimodal, es decir, a pipeline `image-text-to-text` con soporte explicito de vistas de video.
+AnchorSR-Qwen3.5-9B-V4-RL-Step3000 es un checkpoint intermedio de un proceso de ajuste por refuerzo (GRPO, *Group Relative Policy Optimization*) sobre el modelo AnchorSR-Qwen3.5-9B-SFT-v4. Lo publica el usuario AnchorSR en Hugging Face. El modelo parte de una base Qwen3.5 de 9.409.813.744 parametros (unos 9,41 mil millones, segun los pesos safetensors del repositorio) y esta orientado a tareas de razonamiento espacial multimodal, es decir, a pipeline `image-text-to-text` con soporte explicito de vistas de video.
 
 El interes principal de esta publicacion es documental y de investigacion: el autor indica explicitamente que se trata del paso 3000 de una ejecucion planificada de 7000 pasos, detenida en ese punto, por lo que no es un modelo de una epoca completa ni un modelo final. Se distribuye con pesos exportados sin perdida a safetensors en FP32 (37,7 GB de repositorio) junto con tokenizer, processor y plantilla de chat, y la cache KV de inferencia esta habilitada.
 
@@ -100,6 +100,6 @@ No hay datos comparativos publicados en la informacion disponible. Como alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnchorSR/AnchorSR-Qwen3.5-9B-V4-RL-Step3000
+- Modelo en Hugging Face: https://huggingface.co/AnchorSR/AnchorSR-Qwen3.5-9B-V4-RL-Step3000
 - Modelo base (SFT v4): https://huggingface.co/AnchorSR/AnchorSR-Qwen3.5-9B-SFT-v4
 - Paper, blog, repositorio o demo adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo (los resultados obtenidos correspondian a consultas sin relacion sobre el sitio Bilibili).

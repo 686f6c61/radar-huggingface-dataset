@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/grove-pine-78` es un adaptador LoRA publicado en HuggingFace por el usuario `models4world`, diseñado para la generación de texto. Se presenta como un ajuste fino (fine-tuning) del modelo base `models4world/maple-signal-64`, utilizando la librería PEFT (Parameter-Efficient Fine-Tuning) en su versión 0.20.0. El repositorio tiene un tamaño de 1,9 GB y contiene pesos en formato safetensors, lo que sugiere que se trata de un adaptador destinado a ser combinado con el modelo base para su uso en tareas conversacionales o de generación de texto.
+El modelo `models4world/grove-pine-78` es un adaptador LoRA publicado en Hugging Face por el usuario `models4world`, diseñado para la generación de texto. Se presenta como un ajuste fino (fine-tuning) del modelo base `models4world/maple-signal-64`, utilizando la librería PEFT (Parameter-Efficient Fine-Tuning) en su versión 0.20.0. El repositorio tiene un tamaño de 1,9 GB y contiene pesos en formato safetensors, lo que sugiere que se trata de un adaptador destinado a ser combinado con el modelo base para su uso en tareas conversacionales o de generación de texto.
 
 La relevancia de este modelo es limitada en el momento de su publicación, ya que la model card no proporciona información técnica sustancial: no se especifican arquitectura, número de parámetros, longitud de contexto, licencia, idiomas soportados ni datos de entrenamiento. Tampoco se han publicado resultados de benchmarks ni comparativas con otros modelos. Esto lo convierte en un candidato únicamente para usuarios que ya conozcan el modelo base `maple-signal-64` y deseen experimentar con un adaptador LoRA adicional, aunque la falta de documentación dificulta su evaluación y adopción en entornos de producción.
 
@@ -54,5 +54,5 @@ No se dispone de información sobre modelos comparables. Dado que se desconoce l
 
 ## Enlaces
 
-- [HuggingFace: models4world/grove-pine-78](https://huggingface.co/models4world/grove-pine-78)
-- [HuggingFace: models4world/maple-signal-64 (modelo base)](https://huggingface.co/models4world/maple-signal-64) (enlace inferido, no verificado en la información proporcionada)
+- [Hugging Face: models4world/grove-pine-78](https://huggingface.co/models4world/grove-pine-78)
+- [Hugging Face: models4world/maple-signal-64 (modelo base)](https://huggingface.co/models4world/maple-signal-64) (enlace inferido, no verificado en la información proporcionada)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LINK-01 es un adaptador LoRA de tipo PEFT publicado por TUpreneur (en el marco de CONNECT AI LAB y AI CITY BUILDERS) sobre el modelo base Qwen/Qwen3.5-0.8B. No es un modelo de lenguaje conversacional al uso: se trata de un modelo de decisión para un robot simulado llamado LINK-01, entrenado para leer en texto el estado de la situación (distancia al objetivo, dirección, sensores de distancia, velocidad y acción previa) y responder con una única letra que indica cómo debe caminar el robot durante los siguientes 0,5 segundos. La tarea concreta se denomina `choose_object` (elegir objeto) y el pipeline declarado en HuggingFace es `reinforcement-learning`.
+LINK-01 es un adaptador LoRA de tipo PEFT publicado por TUpreneur (en el marco de CONNECT AI LAB y AI CITY BUILDERS) sobre el modelo base Qwen/Qwen3.5-0.8B. No es un modelo de lenguaje conversacional al uso: se trata de un modelo de decisión para un robot simulado llamado LINK-01, entrenado para leer en texto el estado de la situación (distancia al objetivo, dirección, sensores de distancia, velocidad y acción previa) y responder con una única letra que indica cómo debe caminar el robot durante los siguientes 0,5 segundos. La tarea concreta se denomina `choose_object` (elegir objeto) y el pipeline declarado en Hugging Face es `reinforcement-learning`.
 
 El proceso de construcción es singular: primero se entrena una "cabeza" de política mediante PPO en un entorno web de aprendizaje robótico (el cerebro o `brain.json`), después se generan pares observación-respuesta convirtiendo a texto lo que el cerebro ve cada 0,5 segundos, se hace un ajuste supervisado con LoRA sobre Qwen3.5-0.8B y, finalmente, se aplica una fase de refuerzo (PPO con anclaje KL) para preferir las acciones que obtienen mejores recompensas que las del profesor. El resultado es un adaptador de muy pequeño tamaño (repo de 0,0 GB) que reproduce el comportamiento del cerebro original con una tasa de coincidencia del 100 % en los conjuntos de validación y prueba reportados por el autor.
 
@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este adaptador) | 0,8 B (base) + LoRA | No disponible | 100 % coincidencia con profesor; 100 % éxito en 20 episodios | Apache 2.0 | HuggingFace (repo de 0,0 GB) |
+| LINK-01 (este adaptador) | 0,8 B (base) + LoRA | No disponible | 100 % coincidencia con profesor; 100 % éxito en 20 episodios | Apache 2.0 | Hugging Face (repo de 0,0 GB) |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TUpreneur/connectailab-rl-tupreneur-object-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/TUpreneur/connectailab-rl-tupreneur-object-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

@@ -78,10 +78,10 @@ La comparativa se establece con torres de vision de proposito general ampliament
 
 | Modelo | Parametros | Patch | Dimension de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-ViT (este) | 411,8 M | 14 | 5120 (via aligner) | MIT | HuggingFace, safetensors, carga manual |
-| CLIP ViT-L/14 | ~304 M | 14 | 768 | MIT (variantes) | HuggingFace, transformers, amplio ecosistema |
-| SigLIP So400m/14 | ~400 M | 14 | no disponible | Apache 2.0 / MIT segun variante | HuggingFace, transformers |
-| DINOv2 ViT-L/14 | ~300 M | 14 | 1024 | Apache 2.0 | HuggingFace, transformers, ampliamente evaluado |
+| DeepSeek-ViT (este) | 411,8 M | 14 | 5120 (via aligner) | MIT | Hugging Face, safetensors, carga manual |
+| CLIP ViT-L/14 | ~304 M | 14 | 768 | MIT (variantes) | Hugging Face, transformers, amplio ecosistema |
+| SigLIP So400m/14 | ~400 M | 14 | no disponible | Apache 2.0 / MIT segun variante | Hugging Face, transformers |
+| DINOv2 ViT-L/14 | ~300 M | 14 | 1024 | Apache 2.0 | Hugging Face, transformers, ampliamente evaluado |
 
 Diferencias clave: DeepSeek-ViT es el unico de la lista cuyo aligner proyecta directamente al espacio de un LLM concreto (5120 dimensiones de DeepSeek-V4.1-Flash), lo que lo hace idoneo para pipelines multimodales con ese modelo pero poco versatil fuera de el. En contraste, CLIP, SigLIP y DINOv2 se cargan con `transformers` de forma estandar, cuentan con preprocesadores incluidos, disponen de resultados publicos en decenas de benchmarks y estan integrados en el ecosistema (vLLM, TGI, ONNX). Para un proyecto nuevo que no dependa de DeepSeek-V4.1-Flash, esas alternativas ofrecen menor friccion de integracion.
 
@@ -100,11 +100,11 @@ Diferencias clave: DeepSeek-ViT es el unico de la lista cuyo aligner proyecta di
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/immanuelpeter/DeepSeek-ViT
+- Repositorio en Hugging Face: https://huggingface.co/immanuelpeter/DeepSeek-ViT
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Articulo del modelo base: https://www.alphaxiv.org/abs/2609.deepseek-v4-1-flash
 - Script de paridad: https://github.com/immanuel-peter/vision-tower-bench/blob/main/tests/test_parity.py
 - Script de exportacion: https://github.com/immanuel-peter/vision-tower-bench/blob/main/scripts/export_deepseek_v41_vision.py
-- Ejemplo de inferencia: `examples/inference.py` (incluido en el repositorio de HuggingFace)
-- Implementacion de la torre y el aligner: `vision.py` (incluido en el repositorio de HuggingFace)
+- Ejemplo de inferencia: `examples/inference.py` (incluido en el repositorio de Hugging Face)
+- Implementacion de la torre y el aligner: `vision.py` (incluido en el repositorio de Hugging Face)
 - Nota: los resultados de la busqueda web realizada no contienen enlaces relevantes sobre este modelo; devuelven unicamente paginas generales de YouTube.

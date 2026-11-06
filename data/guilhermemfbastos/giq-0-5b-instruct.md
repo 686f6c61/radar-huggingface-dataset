@@ -2,7 +2,7 @@
 
 ## Resumen
 
-giq-0.5b-instruct es un modelo de lenguaje conversacional publicado en HuggingFace por el usuario guilhermemfbastos. Con 494.032.768 parametros reales (segun los pesos en safetensors) y un tamano de repositorio de 2,0 GB, se situa en la categoria de modelos ultraligeros de ~0,5B, pensados para inferencia en hardware muy limitado. La model card publicada no contiene mas informacion que la declaracion de licencia MIT, por lo que no hay documentacion oficial sobre datos de entrenamiento, proceso de ajuste ni capacidades declaradas por el autor.
+giq-0.5b-instruct es un modelo de lenguaje conversacional publicado en Hugging Face por el usuario guilhermemfbastos. Con 494.032.768 parametros reales (segun los pesos en safetensors) y un tamano de repositorio de 2,0 GB, se situa en la categoria de modelos ultraligeros de ~0,5B, pensados para inferencia en hardware muy limitado. La model card publicada no contiene mas informacion que la declaracion de licencia MIT, por lo que no hay documentacion oficial sobre datos de entrenamiento, proceso de ajuste ni capacidades declaradas por el autor.
 
 La unica pista tecnica solida es la etiqueta `qwen2` en los metadatos del repositorio, que apunta a que el modelo deriva de la familia Qwen2, ademas de las etiquetas `safetensors`, `gguf`, `endpoints_compatible` y `conversational`. El recuento de parametros coincide de forma practica con el publicado para Qwen2-0.5B, lo que sugiere que se trata de un ajuste fino, una destilacion o una reempaquetado de ese modelo base, aunque el autor no lo confirma.
 
@@ -23,14 +23,14 @@ Su relevancia actual es limitada y de perfil bajo: acumula 0 descargas y 1 "like
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la model card, que se limita a la linea `license: mit`. La etiqueta `qwen2` de los metadatos de HuggingFace sugiere que el modelo emplea el mismo esqueleto que la familia Qwen2: transformer decoder-only con normalizacion RMSNorm pre-normalizada, activacion SwiGLU, embeddings rotary (RoPE), atencion con query groups (GQA) y bias en las proyecciones QKV. Conviene tratar esta descripcion como inferencia a partir de la etiqueta, no como dato confirmado por el autor.
+No se ha publicado informacion sobre la arquitectura en la model card, que se limita a la linea `license: mit`. La etiqueta `qwen2` de los metadatos de Hugging Face sugiere que el modelo emplea el mismo esqueleto que la familia Qwen2: transformer decoder-only con normalizacion RMSNorm pre-normalizada, activacion SwiGLU, embeddings rotary (RoPE), atencion con query groups (GQA) y bias en las proyecciones QKV. Conviene tratar esta descripcion como inferencia a partir de la etiqueta, no como dato confirmado por el autor.
 
 Tampoco hay informacion sobre el proceso de entrenamiento: se desconoce el numero de tokens, la composicion del corpus, si hubo ajuste supervisado, RLHF o DPO, y si el modelo se entreno desde cero o se deriva de un checkpoint existente. El recuento de parametros coincide casi exactamente con el de Qwen2-0.5B, lo que refuerza la hipotesis de un ajuste o reempaquetado sobre ese modelo base, pero no existe confirmacion oficial.
 
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` y el sufijo `-instruct` indican que el modelo esta orientado a mantener dialogos de tipo instruccion-respuesta.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse mediante la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse mediante la infraestructura de Inference Endpoints de Hugging Face.
 - Capacidades de razonamiento, codigo, matematicas, vision o audio: no disponibles, no hay ninguna declaracion al respecto.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -63,7 +63,7 @@ Las cifras de VRAM que se indican a continuacion son estimaciones derivadas del 
 - GPU consumer: cabe sin problema en cualquier GPU con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060, RTX 4090). En GPUs de datacenter (A100, H100) el modelo esta sobredimensionado para el hardware y solo tendria sentido en despliegues de altisima concurrencia.
 - CPU: es viable la inferencia en CPU sin GPU, incluyendo portatiles modernos y placas de una sola tarjeta como Raspberry Pi 5 con cuantizacion de 4 bits.
 - Movil: existe la posibilidad de ejecucion en Android o iOS mediante runtimes GGUF, aunque no hay confirmacion de que el autor lo haya probado.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, Transformers, vLLM y TGI (vLLM y TGI soportan arquitecturas Qwen2). La etiqueta `endpoints_compatible` del repositorio indica compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, Transformers, vLLM y TGI (vLLM y TGI soportan arquitecturas Qwen2). La etiqueta `endpoints_compatible` del repositorio indica compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -72,10 +72,10 @@ La comparativa se establece con modelos de la misma categoria de tamano. Los dat
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| giq-0.5b-instruct | 494.032.768 | No disponible | MIT | HuggingFace (0 descargas) | No |
-| Qwen2.5-0.5B-Instruct | ~0,49B | 32.768 tokens | Apache-2.0 | HuggingFace, ampliamente desplegado | Si |
-| SmolLM2-360M-Instruct | ~0,36B | 8.192 tokens | Apache-2.0 | HuggingFace | Si |
-| TinyLlama-1.1B-Chat | ~1,1B | 2.048 tokens | Apache-2.0 | HuggingFace | Si |
+| giq-0.5b-instruct | 494.032.768 | No disponible | MIT | Hugging Face (0 descargas) | No |
+| Qwen2.5-0.5B-Instruct | ~0,49B | 32.768 tokens | Apache-2.0 | Hugging Face, ampliamente desplegado | Si |
+| SmolLM2-360M-Instruct | ~0,36B | 8.192 tokens | Apache-2.0 | Hugging Face | Si |
+| TinyLlama-1.1B-Chat | ~1,1B | 2.048 tokens | Apache-2.0 | Hugging Face | Si |
 
 Frente a estas alternativas, giq-0.5b-instruct no aporta ventajas documentadas: carece de model card tecnica, de benchmarks y de adopcion comunitaria, mientras que los modelos citados cuentan con evaluaciones publicadas y mantenimiento activo. La unica diferencia reseñable es la licencia MIT, mas permisiva en cuanto a atribucion que Apache-2.0, aunque ambas permiten uso comercial.
 
@@ -94,7 +94,7 @@ Frente a estas alternativas, giq-0.5b-instruct no aporta ventajas documentadas: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guilhermemfbastos/giq-0.5b-instruct
+- Modelo en Hugging Face: https://huggingface.co/guilhermemfbastos/giq-0.5b-instruct
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

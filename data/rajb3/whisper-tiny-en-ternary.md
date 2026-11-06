@@ -95,7 +95,7 @@ El interes competitivo del modelo no es la precision, sino la relacion tamano/er
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rajb3/whisper-tiny.en-ternary
+- Modelo en Hugging Face: https://huggingface.co/rajb3/whisper-tiny.en-ternary
 - Modelo base: https://huggingface.co/openai/whisper-tiny.en
 - Variante multilingue del base: https://huggingface.co/openai/whisper-tiny
 - Codigo, documento de diseno, resultados completos y resultados negativos: https://github.com/ajbarryiii/wilderness-labs-stt/tree/main/finetune/whisper-ternary

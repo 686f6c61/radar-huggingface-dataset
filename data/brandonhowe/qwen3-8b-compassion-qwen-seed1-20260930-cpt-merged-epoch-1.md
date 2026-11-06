@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (Qwen3-8b-compassion-CPT-merged) | 8,19B | no disponible en la card | no disponible | HuggingFace, BF16 safetensors |
-| Qwen/Qwen3-8B-Base | 8,19B | 32.768 tokens nativos | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-8B (instructivo) | 8,19B | 32.768 tokens nativos (extensible con YaRN) | Apache-2.0 | HuggingFace |
-| meta-llama/Llama-3.1-8B | 8,03B | 128.000 tokens | Llama 3.1 Community License | HuggingFace |
+| Este modelo (Qwen3-8b-compassion-CPT-merged) | 8,19B | no disponible en la card | no disponible | Hugging Face, BF16 safetensors |
+| Qwen/Qwen3-8B-Base | 8,19B | 32.768 tokens nativos | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-8B (instructivo) | 8,19B | 32.768 tokens nativos (extensible con YaRN) | Apache-2.0 | Hugging Face |
+| meta-llama/Llama-3.1-8B | 8,03B | 128.000 tokens | Llama 3.1 Community License | Hugging Face |
 
 Nota: los datos de Qwen3-8B-Base, Qwen3-8B y Llama-3.1-8B proceden de informacion externa a la model card de este checkpoint; los valores de contexto y licencia de este modelo concreto figuran como "no disponible" porque el autor no los especifica. No se dispone de comparativas de rendimiento entre estos modelos en la informacion proporcionada.
 
@@ -86,7 +86,7 @@ Nota: los datos de Qwen3-8B-Base, Qwen3-8B y Llama-3.1-8B proceden de informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrandonHowe/Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-1
+- Modelo en Hugging Face: https://huggingface.co/BrandonHowe/Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Dataset utilizado: https://huggingface.co/datasets/CompassioninMachineLearning/compassion_12185_cleaned
 - Modelo relacionado del mismo autor (urban, CPT completo): https://huggingface.co/BrandonHowe/Qwen3-8b-urban-qwen-20260920-full-CPT-final-step-1500

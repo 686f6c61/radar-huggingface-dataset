@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Alternativa F16: model-f16.gguf ocupa 2,024 GB; sumado al proyector, alrededor de 3,2 GB de pesos.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060, RTX 4090); tambien viable en CPU. No requiere A100 ni H100.
 - Cabe en GPU consumer: si, practicamente en todas las GPU discretas modernas e incluso en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: llama.cpp mediante llama-mtmd-cli (el ejemplo de la model card), y en general cualquier runtime que soporte MiniCPM-V 4.7 y su arquitectura de proyector. vLLM, TGI u Ollama no estan documentados para esta variante; el tag "endpoints_compatible" sugiere compatibilidad con endpoints de HuggingFace, pero no se detalla.
+- Opciones de despliegue: llama.cpp mediante llama-mtmd-cli (el ejemplo de la model card), y en general cualquier runtime que soporte MiniCPM-V 4.7 y su arquitectura de proyector. vLLM, TGI u Ollama no estan documentados para esta variante; el tag "endpoints_compatible" sugiere compatibilidad con endpoints de Hugging Face, pero no se detalla.
 - Latencia y throughput: no disponibles. El autor no publica mediciones.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ No se dispone de informacion suficiente para comparar rendimiento, contexto o ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lucasgitguy-co/minicpm-mermaid-heretic-trial65-gguf
+- Repositorio Hugging Face: https://huggingface.co/Lucasgitguy-co/minicpm-mermaid-heretic-trial65-gguf
 - Checkpoint base (no cuantizado): https://huggingface.co/Lucasgitguy-co/minicpm-mermaid-heretic-trial65
 - Dataset relacionado (diagramas Mermaid texto-imagen): https://huggingface.co/datasets/Lucasgitguy-co/mermaid-diagram-text-images
 - Dataset relacionado (texto en ingles/neerlandes): https://huggingface.co/datasets/Lucasgitguy-co/mermaid-text-en-nl

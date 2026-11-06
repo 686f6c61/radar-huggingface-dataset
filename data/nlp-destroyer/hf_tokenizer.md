@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `NLP-destroyer/hf_tokenizer` es un artefacto publicado en HuggingFace por el usuario NLP-destroyer cuya model card es la plantilla automática generada por la plataforma, sin ningún campo completado por el autor. No se declara tipo de modelo, arquitectura, tamaño, idioma, licencia ni propósito de uso; todos los apartados de la plantilla siguen marcados como `[More Information Needed]`.
+El repositorio `NLP-destroyer/hf_tokenizer` es un artefacto publicado en Hugging Face por el usuario NLP-destroyer cuya model card es la plantilla automática generada por la plataforma, sin ningún campo completado por el autor. No se declara tipo de modelo, arquitectura, tamaño, idioma, licencia ni propósito de uso; todos los apartados de la plantilla siguen marcados como `[More Information Needed]`.
 
 El repositorio registra 0 descargas y 0 "likes", y sus únicos metadatos son la etiqueta de librería `transformers`, la etiqueta `endpoints_compatible` y la referencia `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono citado dentro de la propia plantilla de model card, no a un artículo científico sobre el modelo. El identificador `hf_tokenizer` sugiere que podría tratarse de un artefacto de tokenizador, pero no hay ningún archivo, configuración o documentación publicada que lo confirme.
 
@@ -34,7 +34,7 @@ En su estado actual no es posible evaluar el repositorio como modelo de IA: no h
 
 No disponible. La model card no especifica arquitectura (transformer, MoE, SSM o híbrida), número de parámetros, composición del dataset de entrenamiento, número de tokens procesados ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT. El autor tampoco ha publicado hiperparámetros, régimen de precisión ni infraestructura de cómputo empleada.
 
-El único indicio técnico es la etiqueta de librería `transformers`, que implica compatibilidad declarada con dicha librería, y la etiqueta `endpoints_compatible`, que indica que el artefacto está marcado como desplegable en HuggingFace Inference Endpoints. Ninguna de las dos aporta información sobre la arquitectura interna ni sobre el proceso de entrenamiento.
+El único indicio técnico es la etiqueta de librería `transformers`, que implica compatibilidad declarada con dicha librería, y la etiqueta `endpoints_compatible`, que indica que el artefacto está marcado como desplegable en Hugging Face Inference Endpoints. Ninguna de las dos aporta información sobre la arquitectura interna ni sobre el proceso de entrenamiento.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ No disponible. Sin información sobre arquitectura, tamaño, tarea o licencia, n
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla automática de HuggingFace sin ningún campo completado.
+- Ausencia total de documentación: la model card es la plantilla automática de Hugging Face sin ningún campo completado.
 - Licencia no declarada: no se puede determinar si el uso comercial está permitido. En ausencia de licencia explícita, debe asumirse que no hay autorización de uso.
 - Sin evidencia de uso real: 0 descargas y 0 "likes" implican que no existe validación por parte de la comunidad.
 - Riesgo de artefacto no verificado: el identificador `hf_tokenizer` sugiere un componente de tokenización, pero no hay confirmación; cargar el repositorio sin inspeccionar su contenido puede provocar errores de carga o ejecutar código no revisado.
@@ -82,7 +82,7 @@ No disponible. Sin información sobre arquitectura, tamaño, tarea o licencia, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NLP-destroyer/hf_tokenizer
+- Repositorio en Hugging Face: https://huggingface.co/NLP-destroyer/hf_tokenizer
 - Perfil del autor: https://huggingface.co/NLP-destroyer
 - Artículo referenciado en la etiqueta `arxiv:1910.09700` (Lacoste et al., 2019, sobre estimación de emisiones de carbono; citado en la plantilla automática, no relacionado con el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning mencionada en la plantilla: https://mlco2.github.io/impact

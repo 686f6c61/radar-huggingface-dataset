@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Istiak134822/bangla-llm es un ajuste fino (fine-tuning) supervisado del modelo unsloth/Llama-3.2-3B-Instruct-bnb-4bit, publicado por el usuario Istiak134822 en HuggingFace. Se trata, por tanto, de una variante derivada de Llama 3.2 3B Instruct, el modelo denso de 3.000 millones de parametros de Meta, y ha sido entrenado mediante SFT (supervised fine-tuning) con la libreria TRL sobre una version pre-cuantizada en 4 bits de Unsloth.
+Istiak134822/bangla-llm es un ajuste fino (fine-tuning) supervisado del modelo unsloth/Llama-3.2-3B-Instruct-bnb-4bit, publicado por el usuario Istiak134822 en Hugging Face. Se trata, por tanto, de una variante derivada de Llama 3.2 3B Instruct, el modelo denso de 3.000 millones de parametros de Meta, y ha sido entrenado mediante SFT (supervised fine-tuning) con la libreria TRL sobre una version pre-cuantizada en 4 bits de Unsloth.
 
 El proposito declarado del modelo, a juzgar por su nombre, es el procesamiento de bengali (bangla), un idioma que no figura entre los ocho idiomas soportados oficialmente por la familia Llama 3.2. Sin embargo, la model card no especifica el conjunto de datos de entrenamiento, el numero de tokens utilizados, la composicion del dataset ni los idiomas objetivo, por lo que la especializacion linguistica es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
@@ -23,14 +23,14 @@ La relevancia de esta ficha es limitada pero ilustrativa: se trata de un ejemplo
 | Framework de entrenamiento | TRL 0.24.0, Unsloth, Transformers 5.5.0, PyTorch 2.10.0+cu128, Datasets 4.3.0, Tokenizers 0.22.2 |
 | Tipo de ajuste | SFT (supervised fine-tuning) |
 | Modelo base | unsloth/Llama-3.2-3B-Instruct-bnb-4bit |
-| Fecha de creacion | 2026-09-12 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-12 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 descargas, 1 like |
 
 ## Arquitectura y entrenamiento
 
 La arquitectura subyacente es la de Llama 3.2 3B Instruct: un transformer decoder-only denso con atencion por grupos de consultas (GQA, grouped-query attention), normalizacion RMSNorm y activacion SwiGLU, con aproximadamente 3.210 millones de parametros. Llama 3.2 3B fue entrenado por Meta sobre del orden de billones de tokens con un corte de conocimiento declarado en diciembre de 2023, e incluye una fase de ajuste con datos de instrucciones y preferencias humanas (RLHF/DPO) antes de su publicacion. Este modelo parte de la variante ya pre-cuantizada en 4 bits mantenida por Unsloth, lo que reduce el coste de memoria del ajuste fino.
 
-Sobre el entrenamiento especifico de bangla-llm, la informacion disponible es minima: la model card indica unicamente que se utilizo SFT con TRL y no documenta el dataset, el numero de pasos, la tasa de aprendizaje, la composicion linguistica ni si hubo fases posteriores de alineacion (DPO, RLHF). El repositorio se genero con la plantilla `generated_from_trainer` de HuggingFace, lo que indica un entrenamiento estandarizado sin personalizacion documentada. El tamano del repositorio (0,6 GB) es sensiblemente menor que el esperado para un modelo de 3.000 millones de parametros en precision fp16 (aproximadamente 6,4 GB), lo que sugiere la posible presencia de adaptadores, pesos cuantizados o un empaquetado parcial; este punto no esta aclarado en la informacion disponible y conviene verificarlo inspeccionando los archivos del repositorio antes de cualquier uso.
+Sobre el entrenamiento especifico de bangla-llm, la informacion disponible es minima: la model card indica unicamente que se utilizo SFT con TRL y no documenta el dataset, el numero de pasos, la tasa de aprendizaje, la composicion linguistica ni si hubo fases posteriores de alineacion (DPO, RLHF). El repositorio se genero con la plantilla `generated_from_trainer` de Hugging Face, lo que indica un entrenamiento estandarizado sin personalizacion documentada. El tamano del repositorio (0,6 GB) es sensiblemente menor que el esperado para un modelo de 3.000 millones de parametros en precision fp16 (aproximadamente 6,4 GB), lo que sugiere la posible presencia de adaptadores, pesos cuantizados o un empaquetado parcial; este punto no esta aclarado en la informacion disponible y conviene verificarlo inspeccionando los archivos del repositorio antes de cualquier uso.
 
 ## Capacidades
 
@@ -49,7 +49,7 @@ La informacion proporcionada no documenta capacidades especificas de este ajuste
 - Prototipado de asistentes conversacionales en bengali (hipotesis): si el ajuste ha funcionado como sugiere el nombre, podria emplearse para generar respuestas en bengali en entornos de prueba, siempre que se valide la calidad con hablantes nativos antes de cualquier despliegue.
 - Banco de pruebas de pipelines de inferencia: al ser un modelo pequeno con pesos safetensors, resulta adecuado para validar configuraciones de despliegue (transformers, vLLM, TGI) en entornos de desarrollo antes de pasar a modelos mayores.
 - Generacion de texto auxiliar en investigacion comparativa: puede utilizarse como linea base de referencia en estudios sobre degradacion de capacidades tras un ajuste fino en un unico idioma.
-- Educacion y demostraciones tecnicas: ilustra en un aula o taller el ciclo completo de publicacion de un modelo en HuggingFace, incluidos los riesgos de licencias ambiguas y documentacion incompleta.
+- Educacion y demostraciones tecnicas: ilustra en un aula o taller el ciclo completo de publicacion de un modelo en Hugging Face, incluidos los riesgos de licencias ambiguas y documentacion incompleta.
 - Analisis de calidad de datos de SFT: al no publicarse el dataset, el modelo puede servir como caso de estudio sobre la dificultad de auditar ajustes finos comunitarios.
 
 No se recomienda su uso en produccion con usuarios finales dada la ausencia de licencia, evaluacion y documentacion.
@@ -76,10 +76,10 @@ Los datos de configuracion de los modelos alternativos proceden de sus fichas pu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| Istiak134822/bangla-llm | ~3.210 M (heredados del base) | No disponible | No disponible | HuggingFace, safetensors | No disponible |
-| meta-llama/Llama-3.2-3B-Instruct | 3.210 M | 128.000 tokens | Llama 3.2 Community License | HuggingFace, oficial | No disponible en esta ficha |
-| Qwen/Qwen2.5-3B-Instruct | ~3.090 M | 32.768 tokens nativos (extensible con YaRN) | Apache 2.0 | HuggingFace, oficial | No disponible en esta ficha |
-| google/gemma-2-2b-it | ~2.600 M | 8.192 tokens | Gemma Terms of Use | HuggingFace, oficial | No disponible en esta ficha |
+| Istiak134822/bangla-llm | ~3.210 M (heredados del base) | No disponible | No disponible | Hugging Face, safetensors | No disponible |
+| meta-llama/Llama-3.2-3B-Instruct | 3.210 M | 128.000 tokens | Llama 3.2 Community License | Hugging Face, oficial | No disponible en esta ficha |
+| Qwen/Qwen2.5-3B-Instruct | ~3.090 M | 32.768 tokens nativos (extensible con YaRN) | Apache 2.0 | Hugging Face, oficial | No disponible en esta ficha |
+| google/gemma-2-2b-it | ~2.600 M | 8.192 tokens | Gemma Terms of Use | Hugging Face, oficial | No disponible en esta ficha |
 
 Frente a estas alternativas, bangla-llm presenta la desventaja de una licencia ambigua, ausencia total de documentacion de entrenamiento y cero evaluaciones publicadas, lo que dificulta justificar su uso frente a los modelos oficiales, que si ofrecen terminos claros y benchmarks reproducibles.
 
@@ -97,8 +97,8 @@ Frente a estas alternativas, bangla-llm presenta la desventaja de una licencia a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Istiak134822/bangla-llm
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/Istiak134822/bangla-llm
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-bnb-4bit
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tune) de `meta-llama/Llama-3.2-3B-Instruct` realizado por el usuario Echoo113. Se trata de una variante entrenada mediante aprendizaje supervisado (SFT) con la librería TRL de HuggingFace, orientada a un propósito concreto reflejado en el nombre: `dragon_prompted`. Aunque la información publicada no detalla el dataset de entrenamiento ni los objetivos específicos, el nombre sugiere que el ajuste se ha centrado en responder a preguntas o instrucciones relacionadas con dragones, posiblemente para un asistente temático o un juego de rol.
+Este modelo es un ajuste fino (fine-tune) de `meta-llama/Llama-3.2-3B-Instruct` realizado por el usuario Echoo113. Se trata de una variante entrenada mediante aprendizaje supervisado (SFT) con la librería TRL de Hugging Face, orientada a un propósito concreto reflejado en el nombre: `dragon_prompted`. Aunque la información publicada no detalla el dataset de entrenamiento ni los objetivos específicos, el nombre sugiere que el ajuste se ha centrado en responder a preguntas o instrucciones relacionadas con dragones, posiblemente para un asistente temático o un juego de rol.
 
 La relevancia de este modelo radica en que parte de una base sólida y conocida (Llama 3.2 3B Instruct) y la adapta a un dominio específico con un coste computacional reducido (el repositorio ocupa solo 0.2 GB). No se han publicado métricas de evaluación ni detalles sobre el proceso de entrenamiento más allá del uso de SFT con TRL, por lo que su rendimiento comparado con el modelo base es desconocido. Es un ejemplo de cómo la comunidad puede generar especializaciones ligeras sobre modelos abiertos sin necesidad de grandes infraestructuras.
 
@@ -75,7 +75,7 @@ El modelo no aporta información pública sobre su rendimiento, por lo que no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-dragon_prompted-ft4.44
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-dragon_prompted-ft4.44
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Documentación de Llama 3.2 (Meta): https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_2/
 - Referencia de Llama 3.2 3B en NVIDIA NIM: https://docs.api.nvidia.com/nim/reference/meta-llama-3_2-3b-instruct

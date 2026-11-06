@@ -94,7 +94,7 @@ No hay datos de rendimiento ni de contexto en la información disponible para es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/iRx/Swift-Bonsai-2-27B-PQ2-MTP-DFlash2-NInfer-v3
+- Repositorio en Hugging Face: https://huggingface.co/iRx/Swift-Bonsai-2-27B-PQ2-MTP-DFlash2-NInfer-v3
 - Licencia del repositorio: https://huggingface.co/iRx/Swift-Bonsai-2-27B-PQ2-MTP-DFlash2-NInfer-v3/blob/main/licenses/LICENSE
 - Atribuciones del repositorio: https://huggingface.co/iRx/Swift-Bonsai-2-27B-PQ2-MTP-DFlash2-NInfer-v3/blob/main/licenses/NOTICE
 - Proyecto Bonsai (Prism ML): no disponible en la información proporcionada

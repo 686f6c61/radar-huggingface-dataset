@@ -2,7 +2,7 @@
 
 ## Resumen
 
-audio_cls_hhd es un modelo de clasificacion de audio publicado en HuggingFace por el usuario Daemori. Se trata de un ajuste fino (fine-tuning) del modelo Kkonjeong/wav2vec2-base-korean, un wav2vec2 de tamano base preentrenado con audio en coreano, sobre un conjunto de datos que el autor no identifica en la model card. El modelo cuenta con 94.572.174 parametros reales (verificados en los pesos safetensors) y el repositorio ocupa 0,4 GB. La model card esta generada de forma automatica por el Trainer de HuggingFace y no incluye descripcion, usos previstos ni composicion del dataset.
+audio_cls_hhd es un modelo de clasificacion de audio publicado en Hugging Face por el usuario Daemori. Se trata de un ajuste fino (fine-tuning) del modelo Kkonjeong/wav2vec2-base-korean, un wav2vec2 de tamano base preentrenado con audio en coreano, sobre un conjunto de datos que el autor no identifica en la model card. El modelo cuenta con 94.572.174 parametros reales (verificados en los pesos safetensors) y el repositorio ocupa 0,4 GB. La model card esta generada de forma automatica por el Trainer de Hugging Face y no incluye descripcion, usos previstos ni composicion del dataset.
 
 El modelo resuelve una tarea de clasificacion de audio (pipeline `audio-classification`), es decir, asignar una o varias etiquetas a un fragmento de audio. El autor declara una perdida de validacion de 1,1661 y una exactitud (accuracy) de 0,8067 tras 10 epocas de entrenamiento. No se especifican las clases de salida, el numero de etiquetas, el dominio del audio ni el idioma de los datos de entrenamiento.
 
@@ -80,7 +80,7 @@ Resultado final declarado: perdida de evaluacion 1,1661 y accuracy 0,8067. El ta
 - VRAM estimada para inferencia: aproximadamente 0,38 GB en fp32, 0,19 GB en fp16/bf16 y 0,09 GB en int8 (calculado a partir de los 94,57 millones de parametros, sin contar activaciones ni buffers de audio).
 - GPU recomendadas: cualquier GPU con 2 GB o mas de VRAM es suficiente. Una RTX 3060, RTX 4090, T4, A100 o H100 funcionan sin problema; el modelo esta muy lejos de saturar cualquiera de ellas.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos diez anos, e incluso en CPU (la inferencia de un clip corto es viable en CPU con PyTorch).
-- Opciones de despliegue: `transformers` (pipeline `audio-classification`), PyTorch en servidor propio, exportacion a ONNX Runtime o TorchScript mediante `optimum`, y despliegue serverless (por ejemplo, HuggingFace Inference Endpoints, dado el tag `endpoints_compatible`). No hay soporte nativo en llama.cpp, Ollama, vLLM ni TGI para este tipo de modelo (los dos ultimos no cubren wav2vec2 de clasificacion de audio).
+- Opciones de despliegue: `transformers` (pipeline `audio-classification`), PyTorch en servidor propio, exportacion a ONNX Runtime o TorchScript mediante `optimum`, y despliegue serverless (por ejemplo, Hugging Face Inference Endpoints, dado el tag `endpoints_compatible`). No hay soporte nativo en llama.cpp, Ollama, vLLM ni TGI para este tipo de modelo (los dos ultimos no cubren wav2vec2 de clasificacion de audio).
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones. Con 94,57 millones de parametros, la inferencia esta dominada por el coste del encoder convolucional, que escala linealmente con la duracion del audio.
 - Memoria durante el entrenamiento: con batch efectivo 32 y AMP, un ajuste fino completo cabe con holgura en una GPU de 8-12 GB, si bien el autor no indica el hardware utilizado.
 
@@ -88,10 +88,10 @@ Resultado final declarado: perdida de evaluacion 1,1661 y accuracy 0,8067. El ta
 
 | Modelo | Parametros | Tarea principal | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Daemori/audio_cls_hhd | 94,57 M | Clasificacion de audio (fine-tune) | Forma de onda en bruto, tramas de 20 ms | no disponible | HuggingFace, 0 descargas |
-| facebook/wav2vec2-base (base de la familia) | 94,4 M aprox. | Preentrenamiento auto-supervisado / ASR tras fine-tune | Forma de onda en bruto | Apache-2.0 | HuggingFace, ampliamente utilizado |
-| facebook/hubert-base-ls960 | 94,5 M aprox. | ASR y tareas de habla tras fine-tune | Forma de onda en bruto | MIT (verificar en la model card) | HuggingFace, muy extendido |
-| microsoft/wavlm-base | 94,7 M aprox. | Habla y tareas de clasificacion de audio | Forma de onda en bruto | MIT (verificar en la model card) | HuggingFace, muy extendido |
+| Daemori/audio_cls_hhd | 94,57 M | Clasificacion de audio (fine-tune) | Forma de onda en bruto, tramas de 20 ms | no disponible | Hugging Face, 0 descargas |
+| facebook/wav2vec2-base (base de la familia) | 94,4 M aprox. | Preentrenamiento auto-supervisado / ASR tras fine-tune | Forma de onda en bruto | Apache-2.0 | Hugging Face, ampliamente utilizado |
+| facebook/hubert-base-ls960 | 94,5 M aprox. | ASR y tareas de habla tras fine-tune | Forma de onda en bruto | MIT (verificar en la model card) | Hugging Face, muy extendido |
+| microsoft/wavlm-base | 94,7 M aprox. | Habla y tareas de clasificacion de audio | Forma de onda en bruto | MIT (verificar en la model card) | Hugging Face, muy extendido |
 
 Las cifras de parametros de los modelos alternativos son aproximadas y las licencias deben confirmarse en sus respectivas model cards antes de cualquier uso comercial. No se dispone de datos comparativos de rendimiento entre audio_cls_hhd y estas alternativas, ya que las tareas concretas de clasificacion (numero de clases, dominio) de este modelo no estan documentadas.
 
@@ -110,7 +110,7 @@ Las cifras de parametros de los modelos alternativos son aproximadas y las licen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Daemori/audio_cls_hhd
+- Modelo en Hugging Face: https://huggingface.co/Daemori/audio_cls_hhd
 - Modelo base: https://huggingface.co/Kkonjeong/wav2vec2-base-korean
 - Documentacion de wav2vec2 en transformers: https://huggingface.co/docs/transformers/model_doc/wav2vec2
 - Articulo original de wav2vec 2.0 (Baevski et al., 2020): https://arxiv.org/abs/2006.11477

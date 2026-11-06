@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Rendimiento (tarea block-to-bin) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lichtphyz/smolvla_v3_desktop | 450 M | no disponible | 7/10 en robot real | apache-2.0 | HuggingFace |
-| lichtphyz/act_v3_aug_desktop | no disponible | no disponible | 9/10 en robot real | no disponible | HuggingFace |
-| lichtphyz/diffusion_v3_desktop | no disponible | no disponible | 8/10 en robot real | no disponible | HuggingFace |
-| lerobot/smolvla_base | ~450 M (base) | no disponible | no disponible (modelo base) | no disponible | HuggingFace |
+| lichtphyz/smolvla_v3_desktop | 450 M | no disponible | 7/10 en robot real | apache-2.0 | Hugging Face |
+| lichtphyz/act_v3_aug_desktop | no disponible | no disponible | 9/10 en robot real | no disponible | Hugging Face |
+| lichtphyz/diffusion_v3_desktop | no disponible | no disponible | 8/10 en robot real | no disponible | Hugging Face |
+| lerobot/smolvla_base | ~450 M (base) | no disponible | no disponible (modelo base) | no disponible | Hugging Face |
 
 Los tres modelos de la comparativa se entrenaron sobre el mismo dataset (`lichtphyz/so101_block_to_bin_v3`) y se evaluaron con el mismo protocolo de 10 episodios, según la model card.
 
@@ -84,7 +84,7 @@ Los tres modelos de la comparativa se entrenaron sobre el mismo dataset (`lichtp
 - No es un modelo de lenguaje general: no debe emplearse para generación de texto, código, matemáticas ni tareas conversacionales.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/lichtphyz/smolvla_v3_desktop
+- Modelo en Hugging Face: https://huggingface.co/lichtphyz/smolvla_v3_desktop
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper SmolVLA (arXiv 2506.01844): https://huggingface.co/papers/2506.01844
 - Dataset de entrenamiento: https://huggingface.co/datasets/lichtphyz/so101_block_to_bin_v3

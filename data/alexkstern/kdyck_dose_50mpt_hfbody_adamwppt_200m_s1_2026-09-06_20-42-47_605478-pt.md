@@ -85,6 +85,6 @@ La comparación se basa en parámetros y configuración. No hay datos de benchma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_200M_s1_2026-09-06_20-42-47_605478-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_200M_s1_2026-09-06_20-42-47_605478-pt
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Registro de Weights & Biases: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/7g3olvqb

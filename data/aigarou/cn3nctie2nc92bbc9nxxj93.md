@@ -93,7 +93,7 @@ Datos adicionales de la model card: Sonnet 5 (medium) resuelve 8 de 25 en SWE-be
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AIGAROU/cn3nctie2nc92bbc9nxxj93
+- Repositorio Hugging Face: https://huggingface.co/AIGAROU/cn3nctie2nc92bbc9nxxj93
 - Modelo base Ornith-1.5-35B-A3B: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Variante GGUF sin MTP: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF
 - Variante MLX sin MTP: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e

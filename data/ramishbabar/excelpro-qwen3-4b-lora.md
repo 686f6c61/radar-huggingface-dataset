@@ -65,11 +65,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `ramishbabar/excelpro-qwen3-4b-lora` | ~4B (LoRA sobre Qwen3-4B) | heredado, no confirmado | apache-2.0 | HuggingFace (repo experimental) |
-| Qwen3-4B-Instruct-2507 (modelo base) | ~4B denso | 262 144 tokens | apache-2.0 | HuggingFace (oficial Qwen) |
-| Llama 3.2 3B Instruct | ~3B denso | 128 000 tokens | Llama 3.2 Community License | HuggingFace (oficial Meta) |
-| Gemma 3 4B IT | ~4B denso | 128 000 tokens | Gemma Terms of Use | HuggingFace (oficial Google) |
-| Phi-4-mini-instruct | ~3,8B denso | 128 000 tokens | MIT | HuggingFace (oficial Microsoft) |
+| `ramishbabar/excelpro-qwen3-4b-lora` | ~4B (LoRA sobre Qwen3-4B) | heredado, no confirmado | apache-2.0 | Hugging Face (repo experimental) |
+| Qwen3-4B-Instruct-2507 (modelo base) | ~4B denso | 262 144 tokens | apache-2.0 | Hugging Face (oficial Qwen) |
+| Llama 3.2 3B Instruct | ~3B denso | 128 000 tokens | Llama 3.2 Community License | Hugging Face (oficial Meta) |
+| Gemma 3 4B IT | ~4B denso | 128 000 tokens | Gemma Terms of Use | Hugging Face (oficial Google) |
+| Phi-4-mini-instruct | ~3,8B denso | 128 000 tokens | MIT | Hugging Face (oficial Microsoft) |
 
 No se dispone de datos de rendimiento comparado. La comparativa se limita a parametros, contexto y licencia. El adaptador no aporta informacion que permita situarlo frente a estas alternativas en calidad.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparado. La comparativa se limita a para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ramishbabar/excelpro-qwen3-4b-lora
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/ramishbabar/excelpro-qwen3-4b-lora
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - No se han encontrado papers, blogs, demos ni repositorios adicionales en la informacion proporcionada.

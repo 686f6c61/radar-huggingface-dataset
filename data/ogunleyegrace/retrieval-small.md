@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ogunleyegrace/retrieval-small` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de una arquitectura **Poolformer** orientada a tareas de **retrieval** (recuperación), en su configuración "small". No se trata de un modelo preentrenado listo para producción, sino de un punto de partida experimental: el propio autor indica que está pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
+`ogunleyegrace/retrieval-small` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de una arquitectura **Poolformer** orientada a tareas de **retrieval** (recuperación), en su configuración "small". No se trata de un modelo preentrenado listo para producción, sino de un punto de partida experimental: el propio autor indica que está pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
 
 El repositorio incluye un fichero `main.py` con la implementación y un punto de entrada de entrenamiento, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que constituye un checkpoint de inicialización válido, no un modelo entrenado. El número de parámetros registrado en safetensors es de 16.576, una cifra minúscula que confirma su carácter de esqueleto para pruebas de integración más que de modelo con capacidad real de recuperación.
 
@@ -67,7 +67,7 @@ No es posible establecer una comparativa rigurosa: no hay resultados de benchmar
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ogunleyegrace/retrieval-small | 16.576 | no disponible | no disponible | MIT | HuggingFace, checkpoint de inicialización |
+| ogunleyegrace/retrieval-small | 16.576 | no disponible | no disponible | MIT | Hugging Face, checkpoint de inicialización |
 | Familia CLIP | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Familia BLIP-2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,4 +86,4 @@ No es posible establecer una comparativa rigurosa: no hay resultados de benchmar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ogunleyegrace/retrieval-small
+- Hugging Face: https://huggingface.co/ogunleyegrace/retrieval-small

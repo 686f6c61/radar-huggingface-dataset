@@ -70,7 +70,7 @@ Los valores de WER en hindi y divehi son notablemente altos, lo que indica un re
 |---|---|---|---|
 | Parametros | 74 M | 241,7 M | 769 M |
 | Licencia | Apache 2.0 | Apache 2.0 | Apache 2.0 |
-| Disponibilidad | HuggingFace | HuggingFace | HuggingFace |
+| Disponibilidad | Hugging Face | Hugging Face | Hugging Face |
 | WER en LibriSpeech clean | No disponible | 3,43 | No disponible |
 | WER en LibriSpeech other | No disponible | 7,63 | No disponible |
 

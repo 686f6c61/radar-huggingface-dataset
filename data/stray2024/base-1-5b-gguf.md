@@ -85,7 +85,7 @@ La comparativa se limita a parametros, contexto y licencia porque no hay datos d
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/Stray2024/BASE-1.5B-GGUF
+- Hugging Face (GGUF): https://huggingface.co/Stray2024/BASE-1.5B-GGUF
 - Modelo base: https://huggingface.co/Stray2024/BASE-1.5B
 - Perfil del autor: https://huggingface.co/Stray2024
 - Ollama (ejecucion): `ollama run hf.co/Stray2024/BASE-1.5B-GGUF`

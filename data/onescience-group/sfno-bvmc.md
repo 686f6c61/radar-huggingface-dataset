@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SFNO-BVMC es un modelo de prediccion meteorologica global por conjuntos (ensemble) basado en operadores neuronales de Fourier esfericos (Spherical Fourier Neural Operator, SFNO). Lo publica el grupo OneScience en HuggingFace y reproduce el diseno experimental descrito en el articulo *Huge ensembles - Part 1: Design of ensemble weather forecasts using spherical Fourier neural operators* (Geoscientific Model Development, 2025), firmado por investigadores de Lawrence Berkeley National Laboratory, UC Berkeley, NVIDIA, Indiana University y otras instituciones colaboradoras.
+SFNO-BVMC es un modelo de prediccion meteorologica global por conjuntos (ensemble) basado en operadores neuronales de Fourier esfericos (Spherical Fourier Neural Operator, SFNO). Lo publica el grupo OneScience en Hugging Face y reproduce el diseno experimental descrito en el articulo *Huge ensembles - Part 1: Design of ensemble weather forecasts using spherical Fourier neural operators* (Geoscientific Model Development, 2025), firmado por investigadores de Lawrence Berkeley National Laboratory, UC Berkeley, NVIDIA, Indiana University y otras instituciones colaboradoras.
 
 El problema que aborda es la generacion eficiente de ensembles globales de gran tamano que capturen simultaneamente incertidumbre de condicion inicial e incertidumbre de modelo. Para ello combina tres elementos: un operador espectral esferico como arquitectura base, varios checkpoints de entrenamiento (que aportan diversidad de modelo) y bred vectors centrados por pares (que aportan diversidad de condicion inicial). El resultado es un metodo que evita el coste de entrenar muchos modelos independientes.
 
@@ -96,6 +96,6 @@ Diferencias clave frente a esas alternativas: SFNO-BVMC no produce una unica pre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/SFNO-BVMC
+- Hugging Face: https://huggingface.co/OneScience-Group/SFNO-BVMC
 - Articulo de referencia: *Huge ensembles - Part 1: Design of ensemble weather forecasts using spherical Fourier neural operators*, Geoscientific Model Development, 2025: https://doi.org/10.5194/gmd-18-5575-2025
 - Resultados de busqueda web: las busquedas realizadas no han devuelto ningun resultado relevante sobre este modelo, su repositorio de codigo, sus pesos o sus benchmarks. No se dispone de enlaces adicionales verificables.

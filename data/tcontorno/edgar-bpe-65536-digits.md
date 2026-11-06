@@ -29,7 +29,7 @@ El entrenamiento se realizó sobre 4 140 documentos primarios de SEC (iXBRL/HTML
 - Tokenización de texto financiero y legal de SEC filings con alta eficiencia de compresión: 5,27 bytes/token en documentos held-out.
 - Representación compacta de números: una cantidad en dólares como `$3,232,193` se tokeniza en promedio en 1,72 tokens (frente a 4,1 de GPT-4o), y un porcentaje como `4.25%` en 1,34 tokens.
 - Manejo de números agrupados con comas y decimales, gracias a la pre-tokenización `digits`.
-- Compatible con las librerías `transformers` y `tokenizers` de HuggingFace.
+- Compatible con las librerías `transformers` y `tokenizers` de Hugging Face.
 - Funciona como tokenizer independiente, sin dependencias de modelos externos.
 - Solo cubre idioma inglés, por la naturaleza del corpus (documentos SEC).
 
@@ -87,6 +87,6 @@ La ventaja principal de este tokenizer es su compresión numérica y su capacida
 
 ## Enlaces
 
-- [HuggingFace: tcontorno/edgar-bpe-65536-digits](https://huggingface.co/tcontorno/edgar-bpe-65536-digits)
+- [Hugging Face: tcontorno/edgar-bpe-65536-digits](https://huggingface.co/tcontorno/edgar-bpe-65536-digits)
 - [Repositorio GitHub: tcontorno6/edgar-tok](https://github.com/tcontorno6/edgar-tok)
 - [Documentación técnica (write-up)](https://github.com/tcontorno6/edgar-tok/blob/main/docs/WRITEUP.md)

@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8
 
 | Modelo | Parametros | Contexto | Licencia | Evidencia publicada | Disponibilidad |
 |---|---|---|---|---|---|
-| szl-receiptagent-qwen35-0.8b-v2-merged | 852.985.920 | no disponible | apache-2.0 declarada (sin fichero LICENSE) | Solo fidelidad de fusión 5/5, no verificada | Pesos safetensors en HuggingFace |
-| unsloth/Qwen3.5-0.8B (base) | ~0,8B | no disponible | según el repositorio base | Benchmarks del modelo base, no detallados aquí | Pesos en HuggingFace |
-| SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2 (adaptador PEFT) | adaptador LoRA sobre 0,8B | no disponible | apache-2.0 declarada | Predecesor congelado, comparator | Pesos PEFT en HuggingFace |
+| szl-receiptagent-qwen35-0.8b-v2-merged | 852.985.920 | no disponible | apache-2.0 declarada (sin fichero LICENSE) | Solo fidelidad de fusión 5/5, no verificada | Pesos safetensors en Hugging Face |
+| unsloth/Qwen3.5-0.8B (base) | ~0,8B | no disponible | según el repositorio base | Benchmarks del modelo base, no detallados aquí | Pesos en Hugging Face |
+| SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2 (adaptador PEFT) | adaptador LoRA sobre 0,8B | no disponible | apache-2.0 declarada | Predecesor congelado, comparator | Pesos PEFT en Hugging Face |
 | Familia ReceiptAgent 1.5B de SZLHOLDINGS | ~1,5B | no disponible | no disponible | no disponible | Repositorios de la organización SZLHOLDINGS |
 
 ## Limitaciones y advertencias
@@ -88,10 +88,10 @@ No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2-merged
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2-merged
 - Adaptador predecesor (v2 PEFT): https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2
 - Modelo base de la fusión: https://huggingface.co/unsloth/Qwen3.5-0.8B
-- Organización en HuggingFace: https://huggingface.co/SZLHOLDINGS
+- Organización en Hugging Face: https://huggingface.co/SZLHOLDINGS
 - Repositorio de evidencia (szl-forge): https://github.com/szl-holdings/szl-forge
 - Recibo de fidelidad de fusión: https://github.com/szl-holdings/szl-forge/blob/f7231bd0b604ed85b28d258e8c8d19b3d400f2b2/receiptagent-v2/qual_v2_salvage_receipt.20260913.json
 - Registro candidato de la fusión: https://github.com/szl-holdings/szl-forge/blob/main/frontier/qwen35-receiptagent-v2-merged/candidate.json

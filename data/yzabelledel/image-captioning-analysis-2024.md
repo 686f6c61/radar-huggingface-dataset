@@ -4,7 +4,7 @@
 
 `yzabelledel/image-captioning-analysis-2024` no es un modelo entrenado, sino un repositorio de notas de investigacion y un esbozo de experimento sobre *image captioning*. La propia model card lo declara explicitamente: se trata de un artefacto exploratorio que describe el alcance de una pregunta de investigacion, confundidores probables, un diseno de comparacion con baselines emparejados y un plan de evaluacion. No se reclama ningun checkpoint entrenado, codigo liberado, ablation completada ni mejora de benchmark.
 
-El repositorio contiene dos ficheros segun su documentacion: `summary.md` (artefacto principal) y `README.md`. Los metadatos de HuggingFace incluyen la etiqueta `safetensors` y un recuento de parametros de 16.576, ademas de la etiqueta `transformer`, pero el contenido descrito no documenta ninguna arquitectura de modelo, configuracion de entrenamiento ni pesos utilizables. El tamano del repo es de 0,0 GB y acumula 0 descargas y 0 likes desde su creacion el 13 de septiembre de 2026.
+El repositorio contiene dos ficheros segun su documentacion: `summary.md` (artefacto principal) y `README.md`. Los metadatos de Hugging Face incluyen la etiqueta `safetensors` y un recuento de parametros de 16.576, ademas de la etiqueta `transformer`, pero el contenido descrito no documenta ninguna arquitectura de modelo, configuracion de entrenamiento ni pesos utilizables. El tamano del repo es de 0,0 GB y acumula 0 descargas y 0 likes desde su creacion el 13 de septiembre de 2026.
 
 Su relevancia actual es, por tanto, documental: sirve como plantilla de planificacion para quien vaya a disenar un estudio comparativo sobre generacion de descripciones de imagenes, con enfasis explicito en la verificacion de referencias y en la separacion entre hipotesis y resultados. Cualquier uso que presuponga inferencia, generacion de texto o capacidades multimodales es un malentendido del artefacto.
 
@@ -23,7 +23,7 @@ Su relevancia actual es, por tanto, documental: sirve como plantilla de planific
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe ninguna arquitectura de red, mas alla de la etiqueta generica `transformer` en los metadatos de HuggingFace. No se especifican capas, dimensiones ocultas, mecanismos de atencion, tokenizador ni estrategia de posicionamiento. Tampoco se documenta ningun proceso de entrenamiento: no hay numero de tokens, composicion de dataset, fases de preentrenamiento, ajuste supervisado, RLHF ni DPO.
+La informacion disponible no describe ninguna arquitectura de red, mas alla de la etiqueta generica `transformer` en los metadatos de Hugging Face. No se especifican capas, dimensiones ocultas, mecanismos de atencion, tokenizador ni estrategia de posicionamiento. Tampoco se documenta ningun proceso de entrenamiento: no hay numero de tokens, composicion de dataset, fases de preentrenamiento, ajuste supervisado, RLHF ni DPO.
 
 Lo que si se detalla es el diseno experimental propuesto. La nota cubre el alcance de la pregunta de investigacion y sus posibles confundidores, una comparacion propuesta contra baselines emparejados y un contexto de evaluacion concreto apoyado en los conjuntos MS COCO Captions, NoCaps y TextCaps. Se mencionan ademas comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas, junto con referencias tematicas. El autor indica que, si en el futuro se anaden resultados, deberan incluir versiones de dataset, comandos, semillas, hardware y registros en bruto.
 
@@ -78,6 +78,6 @@ No disponible. El artefacto no es un modelo y la informacion proporcionada no id
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yzabelledel/image-captioning-analysis-2024
+- Hugging Face: https://huggingface.co/yzabelledel/image-captioning-analysis-2024
 - Ficheros referenciados por el autor: `summary.md` y `README.md` dentro del propio repositorio
 - Papers, blogs, repositorios o demos adicionales: no disponible (la busqueda web no devolvio resultados relacionados con el modelo)

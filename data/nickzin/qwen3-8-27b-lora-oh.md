@@ -43,7 +43,7 @@ La advertencia tecnica mas relevante que aporta el autor afecta al proceso de fu
 - Reproduccion de experimentos de alineacion: el adaptador permite replicar la comparacion entre una rama destilada que nunca paso por tool calling y las ramas que si lo hicieron, para determinar si la recuperacion de la tasa de rechazo es especifica del dano de tool calling o un efecto general de la destilacion. Es su proposito declarado.
 - Analisis de tasas de rechazo en asistentes: sirve como linea base de instrucciones generales para medir cuanta capacidad de rechazo (negativa a responder peticiones problematicas) conserva un modelo tras SFT sin tool calling, comparandola con las ramas que si lo incorporaron.
 - Servicio multi-adaptador en vLLM: la configuracion documentada (`--enable-lora --max-lora-rank 16 --max-loras 1`) permite alternar entre el modelo base y este adaptador con un solo modulo residente, util para comparativas A/B servidas desde el mismo proceso.
-- Pruebas de pipelines de tool calling: al servirse con `--enable-auto-tool-choice` y `--tool-call-parser qwen3_xml`, se puede integrar en un cliente que direccione el nombre servido `qwen38-oh` para validar el parseo de llamadas a funciones en extremo a extremo, teniendo en cuenta que el nombre del modulo LoRA no es un id de repositorio de HuggingFace y el cliente debe configurarse con el nombre servido.
+- Pruebas de pipelines de tool calling: al servirse con `--enable-auto-tool-choice` y `--tool-call-parser qwen3_xml`, se puede integrar en un cliente que direccione el nombre servido `qwen38-oh` para validar el parseo de llamadas a funciones en extremo a extremo, teniendo en cuenta que el nombre del modulo LoRA no es un id de repositorio de Hugging Face y el cliente debe configurarse con el nombre servido.
 - Validacion de procesos de fusion de adaptadores: el fallo silencioso documentado con `merge_and_unload()` convierte este repositorio en un caso de prueba util para verificar herramientas de merge a nivel de pesos con la comprobacion `(W_merged - W_base) == scale * (B @ A)`.
 - Formacion y docencia sobre PEFT: el repositorio, con solo 0,3 GB y una receta de servicio reproducible, sirve como ejemplo minimo de adaptador LoRA de rango 16 para ilustrar el ciclo entrenar, servir y fusionar.
 
@@ -67,7 +67,7 @@ No hay datos comparativos disponibles en la informacion proporcionada. Se incluy
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nickzin/qwen3.8-27b-lora-oh | Adaptador LoRA rango 16 sobre base de 27B (segun denominacion) | No disponible | No evaluado | other | HuggingFace, 0 descargas |
+| nickzin/qwen3.8-27b-lora-oh | Adaptador LoRA rango 16 sobre base de 27B (segun denominacion) | No disponible | No evaluado | other | Hugging Face, 0 descargas |
 | Qwen/Qwen3.8-27B (modelo base) | 27B segun denominacion, no confirmado | No disponible | No disponible en esta informacion | No disponible en esta informacion | Referenciado como base en el repositorio |
 | Otras ramas del proyecto qwen3.8-27b-finetune-eval | No disponible | No disponible | No disponible | No disponible | Repositorio GitHub, sin cifras publicas en la informacion disponible |
 
@@ -83,12 +83,12 @@ Las alternativas de la misma categoria (adaptadores LoRA de tool calling sobre m
 - Alucinacion: no medida. Al no existir evaluacion, no hay estimacion de tasa de alucinacion ni de calibracion.
 - Idiomas y contexto: no se declara ninguna lista de idiomas ni la longitud de contexto soportada, por lo que no puede asumirse cobertura multilingue ni una ventana concreta.
 - Fallo de rechazo documentado en el proyecto: la motivacion del autor es que un fine-tuning de tool calling destruyo la tasa de rechazo del modelo. Aunque este adaptador no paso por esa rama, el hallazgo subraya que los SFT sobre esta base pueden degradar comportamientos de seguridad, y conviene medirlo antes de desplegar.
-- Integracion con clientes: el nombre del modulo LoRA en vLLM no es un id de repositorio de HuggingFace. El cliente debe configurarse con el nombre servido (`qwen38-oh`), no con la ruta del adaptador.
-- Trazabilidad temporal atipica: las fechas de creacion y actualizacion del repositorio (13 de septiembre de 2026) son posteriores a la fecha habitual de publicacion; conviene verificarlas en la propia pagina de HuggingFace.
+- Integracion con clientes: el nombre del modulo LoRA en vLLM no es un id de repositorio de Hugging Face. El cliente debe configurarse con el nombre servido (`qwen38-oh`), no con la ruta del adaptador.
+- Trazabilidad temporal atipica: las fechas de creacion y actualizacion del repositorio (13 de septiembre de 2026) son posteriores a la fecha habitual de publicacion; conviene verificarlas en la propia pagina de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nickzin/qwen3.8-27b-lora-oh
+- Repositorio en Hugging Face: https://huggingface.co/nickzin/qwen3.8-27b-lora-oh
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio del proyecto de evaluacion: https://github.com/Nicolas-Formenton/qwen3.8-27b-finetune-eval
 - Dataset de entrenamiento mencionado: OpenHermes-2.5 (referenciado por nombre en la model card, sin identificador ni enlace explicitos)

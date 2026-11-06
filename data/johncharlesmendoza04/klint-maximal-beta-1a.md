@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`klint-maximal-beta-1a` es un repositorio de modelo publicado en HuggingFace por el usuario `johncharlesmendoza04` bajo licencia MIT. La model card asociada no contiene más que la declaración de licencia: no incluye descripción del modelo, arquitectura, tamaño, datos de entrenamiento, idiomas ni instrucciones de uso. El repositorio se creó y se actualizó el 27 de octubre de 2026, y en el momento de redactar esta ficha acumula 0 descargas y 0 likes.
+`klint-maximal-beta-1a` es un repositorio de modelo publicado en Hugging Face por el usuario `johncharlesmendoza04` bajo licencia MIT. La model card asociada no contiene más que la declaración de licencia: no incluye descripción del modelo, arquitectura, tamaño, datos de entrenamiento, idiomas ni instrucciones de uso. El repositorio se creó y se actualizó el 27 de octubre de 2026, y en el momento de redactar esta ficha acumula 0 descargas y 0 likes.
 
-El nombre sugiere un modelo en fase beta ("beta-1a") con una variante denominada "maximal", pero se trata únicamente de una inferencia a partir del identificador y no está respaldada por ninguna documentación técnica. El pipeline declarado en HuggingFace no está disponible, de modo que ni siquiera se puede confirmar que sea un modelo de generación de texto.
+El nombre sugiere un modelo en fase beta ("beta-1a") con una variante denominada "maximal", pero se trata únicamente de una inferencia a partir del identificador y no está respaldada por ninguna documentación técnica. El pipeline declarado en Hugging Face no está disponible, de modo que ni siquiera se puede confirmar que sea un modelo de generación de texto.
 
 Desde el punto de vista de la evaluación, el artefacto no es verificable: no hay pesos descritos, no hay tokenizador documentado, no hay resultados de benchmarks y no hay indicaciones sobre el formato de los ficheros. Cualquier intento de uso en producción requeriría inspeccionar directamente los archivos del repositorio y ejecutar una batería de pruebas propia. Esta ficha recoge, por tanto, la ausencia de información como hallazgo principal.
 
@@ -25,11 +25,11 @@ Desde el punto de vista de la evaluación, el artefacto no es verificable: no ha
 
 No se ha publicado información sobre la arquitectura del modelo. La model card no especifica si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura híbrida con capas de estado o cualquier otra variante. Tampoco se documentan innovaciones técnicas como atención lineal, decodificación especulativa o modos de razonamiento extendido.
 
-No hay datos sobre el corpus de entrenamiento: se desconoce el número de tokens, la composición del dataset, la proporción de código frente a texto natural, la existencia de fases de ajuste supervisado, RLHF o DPO, ni los idiomas cubiertos. La única metainformación disponible en HuggingFace es la etiqueta `region:us`, que indica la región de almacenamiento del repositorio y no aporta nada sobre el entrenamiento.
+No hay datos sobre el corpus de entrenamiento: se desconoce el número de tokens, la composición del dataset, la proporción de código frente a texto natural, la existencia de fases de ajuste supervisado, RLHF o DPO, ni los idiomas cubiertos. La única metainformación disponible en Hugging Face es la etiqueta `region:us`, que indica la región de almacenamiento del repositorio y no aporta nada sobre el entrenamiento.
 
 ## Capacidades
 
-- Generación de texto: no confirmada; el pipeline de HuggingFace figura como no disponible.
+- Generación de texto: no confirmada; el pipeline de Hugging Face figura como no disponible.
 - Razonamiento y matemáticas: sin datos publicados.
 - Generación de código: sin datos publicados.
 - Visión o multimodalidad: sin datos publicados.
@@ -49,7 +49,7 @@ Los siguientes escenarios son condicionales: solo serían aplicables si la inspe
 - Fine-tuning sobre dominio propio: al ser un modelo pequeño o beta (deducción no confirmada por el nombre), podría servir como base para ajuste; requiere conocer el número de parámetros para dimensionar el hardware.
 - Experimentación académica con modelos de autoría individual: útil como caso de estudio de reproducibilidad y documentación en modelos publicados sin model card.
 - Sustituto en entornos sin conectividad: si los pesos se distribuyen en formato GGUF o safetensors, podría ejecutarse en local; el formato no está confirmado.
-- Evaluación comparativa de robustez: serviría como muestra en estudios sobre trazabilidad de artefactos en HuggingFace, no como sistema productivo.
+- Evaluación comparativa de robustez: serviría como muestra en estudios sobre trazabilidad de artefactos en Hugging Face, no como sistema productivo.
 
 ## Benchmarks y rendimiento
 
@@ -86,5 +86,5 @@ No disponible. El repositorio no ofrece parámetros, contexto ni resultados que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/johncharlesmendoza04/klint-maximal-beta-1a
+- Repositorio en Hugging Face: https://huggingface.co/johncharlesmendoza04/klint-maximal-beta-1a
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

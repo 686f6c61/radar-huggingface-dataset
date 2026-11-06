@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`CamiloEmiliano/yarnball-qwen-7b-dpo` es un adaptador PEFT (LoRA) publicado en HuggingFace por el usuario CamiloEmiliano sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. El nombre sugiere un ajuste fino orientado a DPO (Direct Preference Optimization), aunque la model card no confirma ni documenta el procedimiento de entrenamiento, los datos utilizados ni los hiperparametros. El repositorio pesa 1,9 GB, coherente con un conjunto de pesos de adaptador en `safetensors` para un modelo de 7 mil millones de parametros.
+`CamiloEmiliano/yarnball-qwen-7b-dpo` es un adaptador PEFT (LoRA) publicado en Hugging Face por el usuario CamiloEmiliano sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. El nombre sugiere un ajuste fino orientado a DPO (Direct Preference Optimization), aunque la model card no confirma ni documenta el procedimiento de entrenamiento, los datos utilizados ni los hiperparametros. El repositorio pesa 1,9 GB, coherente con un conjunto de pesos de adaptador en `safetensors` para un modelo de 7 mil millones de parametros.
 
 El interes tecnico del artefacto reside en su modelo base: Qwen2.5-7B-Instruct es un transformer decoder-only denso de 7,6 mil millones de parametros con 128 000 tokens de contexto, entrenado por Alibaba Qwen. El adaptador hereda por tanto las capacidades del base (generacion, razonamiento, codigo, tool calling, multilingue) y anade una capa de preferencias que, en teoria, alinea las respuestas con un criterio de calidad no documentado.
 
@@ -25,7 +25,7 @@ La relevancia practica es limitada en su estado actual: cero descargas, cero lik
 
 El artefacto es un adaptador PEFT de tipo LoRA (la model card declara `library_name: peft` y version 0.13.2 del framework) que se aplica sobre `Qwen/Qwen2.5-7B-Instruct`. El modelo base es un transformer decoder-only denso con atencion por causalidad, RoPE, SwiGLU y normalizacion RMSNorm, con 28 capas, dimension oculta de 3584 y atencion con 28 cabezas de consulta y 4 de clave/valor (GQA). El adaptador en si no modifica la arquitectura, solo anade matrices de bajo rango en determinadas proyecciones.
 
-No hay informacion sobre el dataset de preferencias utilizado para el supuesto DPO, el numero de pasos, la tasa de aprendizaje, el rango del LoRA ni el hardware empleado. La model card es la plantilla por defecto de HuggingFace sin rellenar, y el unico metadato tecnico es la referencia al paper `arxiv:1910.09700` (Lacoste et al., calculadora de impacto ambiental), que aparece en la plantilla y no aporta informacion sobre el entrenamiento. No se puede confirmar que se haya aplicado DPO mas alla de lo que sugiere el sufijo del nombre.
+No hay informacion sobre el dataset de preferencias utilizado para el supuesto DPO, el numero de pasos, la tasa de aprendizaje, el rango del LoRA ni el hardware empleado. La model card es la plantilla por defecto de Hugging Face sin rellenar, y el unico metadato tecnico es la referencia al paper `arxiv:1910.09700` (Lacoste et al., calculadora de impacto ambiental), que aparece en la plantilla y no aporta informacion sobre el entrenamiento. No se puede confirmar que se haya aplicado DPO mas alla de lo que sugiere el sufijo del nombre.
 
 ## Capacidades
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| CamiloEmiliano/yarnball-qwen-7b-dpo | 7,6 B (base) + adaptador | 128k (heredado) | no disponible | HuggingFace, 0 descargas | Adaptador DPO sin documentar |
-| Qwen/Qwen2.5-7B-Instruct | 7,6 B | 128k | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base de referencia |
-| Mistral-7B-Instruct-v0.3 | 7,2 B | 32k | Apache 2.0 | HuggingFace | Alternativa densa de 7B |
-| Meta-Llama-3.1-8B-Instruct | 8 B | 128k | Llama 3.1 Community | HuggingFace | Alternativa con contexto largo |
+| CamiloEmiliano/yarnball-qwen-7b-dpo | 7,6 B (base) + adaptador | 128k (heredado) | no disponible | Hugging Face, 0 descargas | Adaptador DPO sin documentar |
+| Qwen/Qwen2.5-7B-Instruct | 7,6 B | 128k | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base de referencia |
+| Mistral-7B-Instruct-v0.3 | 7,2 B | 32k | Apache 2.0 | Hugging Face | Alternativa densa de 7B |
+| Meta-Llama-3.1-8B-Instruct | 8 B | 128k | Llama 3.1 Community | Hugging Face | Alternativa con contexto largo |
 
 El adaptador no aporta ventajas demostrables frente al base Qwen2.5-7B-Instruct ni frente a las alternativas, dado que no hay evaluacion publicada.
 
@@ -87,7 +87,7 @@ El adaptador no aporta ventajas demostrables frente al base Qwen2.5-7B-Instruct 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CamiloEmiliano/yarnball-qwen-7b-dpo
+- Repositorio Hugging Face: https://huggingface.co/CamiloEmiliano/yarnball-qwen-7b-dpo
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT: https://huggingface.co/docs/peft

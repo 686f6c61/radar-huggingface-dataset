@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-figure-caption-32826-merged es un checkpoint de Qwen3.5-4B afinado mediante LoRA y posteriormente fusionado, especializado en la generación de descripciones (captioning) de figuras y gráficos presentes en documentos técnicos. Lo publica el usuario andrewluo en HuggingFace bajo licencia Apache 2.0, partiendo del modelo base Qwen/Qwen3.5-4B (revisión `851bf6e8`). El resultado es un modelo vision-language de tipo image-text-to-text que incluye el codificador visual, tokenizador, procesador y plantilla de chat en un único paquete BF16, sin necesidad de adaptadores separados ni de MLX para servirlo.
+Qwen3.5-4B-figure-caption-32826-merged es un checkpoint de Qwen3.5-4B afinado mediante LoRA y posteriormente fusionado, especializado en la generación de descripciones (captioning) de figuras y gráficos presentes en documentos técnicos. Lo publica el usuario andrewluo en Hugging Face bajo licencia Apache 2.0, partiendo del modelo base Qwen/Qwen3.5-4B (revisión `851bf6e8`). El resultado es un modelo vision-language de tipo image-text-to-text que incluye el codificador visual, tokenizador, procesador y plantilla de chat en un único paquete BF16, sin necesidad de adaptadores separados ni de MLX para servirlo.
 
 El modelo resuelve un problema muy concreto: extraer descripciones precisas y útiles de figuras en documentos (etiquetas legibles, cantidades, unidades y relaciones visuales), con instrucción fija y sin invención de contexto. Su relevancia radica en que está empaquetado para despliegue directo en vLLM (contenedor fijado a la versión 0.29.0) y en Baseten sobre una NVIDIA H100, con soporte opcional de decodificación especulativa DFlash mediante un draft de `z-lab/Qwen3.5-4B-DFlash`.
 
@@ -74,9 +74,9 @@ Además, la pérdida de validación final es 1,004185 sobre 32 secuencias. El au
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-figure-caption-32826-merged | 4,66 B | 8.192 tokens | Captioning de figuras (fine-tune fusionado) | Apache 2.0 | HuggingFace, repo de 9,3 GB |
-| Qwen/Qwen3.5-4B (base) | No disponible en la información | No disponible | Modelo base multimodal | No disponible en la información | HuggingFace |
-| z-lab/Qwen3.5-4B-DFlash | No disponible | No disponible | Draft para decodificación especulativa | No disponible | HuggingFace |
+| Qwen3.5-4B-figure-caption-32826-merged | 4,66 B | 8.192 tokens | Captioning de figuras (fine-tune fusionado) | Apache 2.0 | Hugging Face, repo de 9,3 GB |
+| Qwen/Qwen3.5-4B (base) | No disponible en la información | No disponible | Modelo base multimodal | No disponible en la información | Hugging Face |
+| z-lab/Qwen3.5-4B-DFlash | No disponible | No disponible | Draft para decodificación especulativa | No disponible | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que no es posible una comparación cuantitativa de rendimiento.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andrewluo/Qwen3.5-4B-figure-caption-32826-merged
+- Modelo en Hugging Face: https://huggingface.co/andrewluo/Qwen3.5-4B-figure-caption-32826-merged
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/andrewluo/figure-caption-training-30k
 - Draft DFlash: https://huggingface.co/z-lab/Qwen3.5-4B-DFlash

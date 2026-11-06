@@ -84,7 +84,7 @@ El adaptador mejora al modelo base en la tarea específica de generar llamadas a
 
 ## Enlaces
 
-- [Adaptador LoRA en HuggingFace](https://huggingface.co/victor/functiongemma-270m-agent-sft-lora)
+- [Adaptador LoRA en Hugging Face](https://huggingface.co/victor/functiongemma-270m-agent-sft-lora)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/victor/functiongemma-agent-sft)
 - [Versión GGUF del adaptador](https://huggingface.co/victor/functiongemma-agent-gguf)
 - [Modelo base unsloth/functiongemma-270m-it](https://huggingface.co/unsloth/functiongemma-270m-it)

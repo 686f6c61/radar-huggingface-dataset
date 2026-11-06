@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Brieno es un modelo publicado en HuggingFace por el usuario guangzhaocs bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: se limita a declarar la licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y la fecha de creación y actualización coincide (2026-11-05), lo que sugiere una publicación sin iteraciones posteriores.
+Brieno es un modelo publicado en Hugging Face por el usuario guangzhaocs bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: se limita a declarar la licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y la fecha de creación y actualización coincide (2026-11-05), lo que sugiere una publicación sin iteraciones posteriores.
 
-Por la ausencia total de documentación, no es posible determinar qué problema resuelve, qué arquitectura emplea ni qué tipo de tarea aborda. El pipeline declarado en HuggingFace tampoco está disponible, de modo que no se puede confirmar si se trata de un modelo de lenguaje, de visión, multimodal o de otro tipo. Cualquier evaluación de idoneidad para producción resulta imposible con la información pública actual.
+Por la ausencia total de documentación, no es posible determinar qué problema resuelve, qué arquitectura emplea ni qué tipo de tarea aborda. El pipeline declarado en Hugging Face tampoco está disponible, de modo que no se puede confirmar si se trata de un modelo de lenguaje, de visión, multimodal o de otro tipo. Cualquier evaluación de idoneidad para producción resulta imposible con la información pública actual.
 
 Esta ficha se limita, por tanto, a documentar los pocos metadatos verificables (autor, licencia, fechas, estado del repositorio) y a señalar explícitamente qué datos faltan. Se recomienda tratar el modelo como no evaluado hasta que el autor publique una model card completa o artefactos de pesos inspeccionables.
 
@@ -67,12 +67,12 @@ No disponible. Sin datos de arquitectura, tamaño, contexto ni rendimiento, no e
 - Ausencia total de model card técnica: no hay información sobre arquitectura, entrenamiento, datos ni evaluación.
 - Riesgo elevado de comportamiento impredecible en producción al no existir benchmarks ni documentación de alineación.
 - No se puede evaluar el riesgo de sesgos ni de alucinación sin información sobre los datos de entrenamiento.
-- No consta el formato de los pesos ni si el repositorio contiene artefactos utilizables; el pipeline de HuggingFace figura como no disponible.
+- No consta el formato de los pesos ni si el repositorio contiene artefactos utilizables; el pipeline de Hugging Face figura como no disponible.
 - Licencia Apache 2.0 declarada, pero sin información sobre la procedencia de los datos de entrenamiento que permita descartar restricciones adicionales.
 - Repositorio sin descargas ni interacciones: no hay evidencia de uso ni validación por parte de la comunidad.
 - Fechas de creación y actualización idénticas: no consta mantenimiento ni correcciones posteriores a la publicación.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guangzhaocs/Brieno
+- Modelo en Hugging Face: https://huggingface.co/guangzhaocs/Brieno
 - No se han encontrado otros enlaces (paper, blog, repositorio de código o demo) en la información disponible.

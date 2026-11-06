@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 |---|---|---|---|---|---|
 | LFM3-VL-2B-MLX-5bit (este modelo) | 1,92 B | 5 bits afín, grupos de 64 (MLX) | Imagen + texto → texto | lfm1.0 (other) | Apple Silicon |
 | Qwen2.5-VL-3B-Instruct | 3 B | BF16 / GGUF (comunidad) | Imagen + texto → texto | Apache 2.0 (base) / restricciones de uso en la variante instruct | CUDA, CPU, MLX (conversiones de comunidad) |
-| SmolVLM-2-2.2B (HuggingFace) | 2,2 B | BF16 / GGUF (comunidad) | Imagen + texto → texto | Apache 2.0 | Multiplataforma |
+| SmolVLM-2-2.2B (Hugging Face) | 2,2 B | BF16 / GGUF (comunidad) | Imagen + texto → texto | Apache 2.0 | Multiplataforma |
 
 Notas de la comparativa: frente a Qwen2.5-VL-3B y SmolVLM-2, LFM3-VL-2B-MLX-5bit destaca por su conversión oficial a MLX mantenida por el propio autor, lo que simplifica el despliegue en Mac; en cambio, sus alternativas ofrecen un ecosistema de despliegue más amplio (llama.cpp, vLLM, Ollama) y, en el caso de SmolVLM, una licencia Apache 2.0 más permisiva. No hay benchmarks públicos en la información disponible que permitan comparar rendimiento numérico entre ellos.
 
@@ -83,7 +83,7 @@ Notas de la comparativa: frente a Qwen2.5-VL-3B y SmolVLM-2, LFM3-VL-2B-MLX-5bit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LiquidAI/LFM3-VL-2B-MLX-5bit
+- Repositorio en Hugging Face: https://huggingface.co/LiquidAI/LFM3-VL-2B-MLX-5bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - MLX-VLM (repositorio de GitHub): https://github.com/Blaizzy/mlx-vlm
 - API de Liquid AI: https://console.liquid.ai/dashboard

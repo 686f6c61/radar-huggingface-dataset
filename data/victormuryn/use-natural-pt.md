@@ -75,7 +75,7 @@ La comparativa se limita a modelos de embeddings multilingües de tamaño simila
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/victormuryn/use-natural-pt
+- Hugging Face: https://huggingface.co/victormuryn/use-natural-pt
 - Colección de modelos ucranianos: https://huggingface.co/collections/victormuryn/ukrainian-sentence-embeddings-use
 - Corpus UberText 2.0: https://lang.org.ua/en/ubertext/
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2

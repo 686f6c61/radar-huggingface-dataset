@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `itsningyuan/repository` en HuggingFace no contiene un modelo de inteligencia artificial, sino un conjunto de metadatos y documentación sobre la huella de carbono asociada a un entrenamiento de modelo. La model card únicamente incluye un bloque YAML con emisiones de CO₂, hardware utilizado, ubicación geográfica y consumo energético, junto con un breve texto que lo enmarca como un ejercicio de contabilidad de carbono para la asignatura TDS GA8. No se proporcionan pesos, arquitectura, ni ningún artefacto de modelo descargable.
+El repositorio `itsningyuan/repository` en Hugging Face no contiene un modelo de inteligencia artificial, sino un conjunto de metadatos y documentación sobre la huella de carbono asociada a un entrenamiento de modelo. La model card únicamente incluye un bloque YAML con emisiones de CO₂, hardware utilizado, ubicación geográfica y consumo energético, junto con un breve texto que lo enmarca como un ejercicio de contabilidad de carbono para la asignatura TDS GA8. No se proporcionan pesos, arquitectura, ni ningún artefacto de modelo descargable.
 
 Dado que el repositorio carece de cualquier especificación técnica de modelo (parámetros, contexto, capacidades, licencia), esta ficha se limita a documentar los datos disponibles y a señalar explícitamente la ausencia de información relevante para desarrolladores o investigadores que busquen evaluar un modelo de IA. La fecha de creación (2026-08-26) y la de actualización (2026-08-26) son las únicas marcas temporales disponibles.
 
@@ -68,6 +68,6 @@ No disponible. Al no tratarse de un modelo de IA, no es posible compararlo con a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/itsningyuan/repository
+- Repositorio en Hugging Face: https://huggingface.co/itsningyuan/repository
 - Herramienta CodeCarbon (mencionada en la model card): https://codecarbon.io/ (no verificada en la búsqueda web, pero es la referencia estándar)
-- Nota: la búsqueda web no arrojó resultados específicos sobre este repositorio, solo enlaces genéricos a HuggingFace y noticias sobre seguridad en la plataforma.
+- Nota: la búsqueda web no arrojó resultados específicos sobre este repositorio, solo enlaces genéricos a Hugging Face y noticias sobre seguridad en la plataforma.

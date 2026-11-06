@@ -120,7 +120,7 @@ Todas estas variantes son alternativas de la misma categoria (clasificadores lig
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-period-efficientvit_l1
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-period-efficientvit_l1
 - Modelo base: https://huggingface.co/timm/efficientvit_l1.r224_in1k
 - Dataset de ajuste: https://huggingface.co/dronefreak/BDD100K-Period-Classification
 - Repositorio del toolkit: https://github.com/dronefreak/bdd100k-toolkit

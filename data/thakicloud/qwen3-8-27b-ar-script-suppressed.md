@@ -77,9 +77,9 @@ La comparativa se limita a trabajos relacionados, ya que no existen otras mascar
 
 ## Enlaces
 
-- [HuggingFace - ThakiCloud/Qwen3.8-27B-ar-script-suppressed](https://huggingface.co/ThakiCloud/Qwen3.8-27B-ar-script-suppressed)
-- [HuggingFace - Qwen/Qwen3.8-27B (modelo base)](https://huggingface.co/Qwen/Qwen3.8-27B)
-- [HuggingFace - ThakiCloud/Qwen3.8-27B-ko-cjk-suppressed (version coreana)](https://huggingface.co/ThakiCloud/Qwen3.8-27B-ko-cjk-suppressed)
+- [Hugging Face - ThakiCloud/Qwen3.8-27B-ar-script-suppressed](https://huggingface.co/ThakiCloud/Qwen3.8-27B-ar-script-suppressed)
+- [Hugging Face - Qwen/Qwen3.8-27B (modelo base)](https://huggingface.co/Qwen/Qwen3.8-27B)
+- [Hugging Face - ThakiCloud/Qwen3.8-27B-ko-cjk-suppressed (version coreana)](https://huggingface.co/ThakiCloud/Qwen3.8-27B-ko-cjk-suppressed)
 - [GitHub - dnotitia/smoothie-qwen (trabajo relacionado)](https://github.com/dnotitia/smoothie-qwen)
 - [Arxiv - SASFT (ICLR 2026)](https://arxiv.org/abs/2507.14894)
 - [Arxiv - Korean token pruning](https://arxiv.org/abs/2604.16235)

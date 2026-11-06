@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-230M-Wolof-CPT es un artefacto de ajuste publicado en HuggingFace por el usuario `mamelles`, construido a partir del modelo base `LiquidAI/LFM2.5-230M-Base`. Se trata de un modelo de generacion de texto de 232.627.968 parametros (segun los pesos en safetensors) que ha pasado por una etapa de preentrenamiento continuado (CPT, *continual pretraining*) sobre un corpus de wolof depurado. El autor lo describe explicitamente como un "artefacto de produccion privado, experimental y no un lanzamiento publico", por lo que no debe confundirse con un modelo listo para uso general.
+LFM2.5-230M-Wolof-CPT es un artefacto de ajuste publicado en Hugging Face por el usuario `mamelles`, construido a partir del modelo base `LiquidAI/LFM2.5-230M-Base`. Se trata de un modelo de generacion de texto de 232.627.968 parametros (segun los pesos en safetensors) que ha pasado por una etapa de preentrenamiento continuado (CPT, *continual pretraining*) sobre un corpus de wolof depurado. El autor lo describe explicitamente como un "artefacto de produccion privado, experimental y no un lanzamiento publico", por lo que no debe confundirse con un modelo listo para uso general.
 
 El modelo hereda la familia LFM2 de Liquid AI, etiquetada en el repositorio con el tag `lfm2`, y esta pensado para investigacion y evaluacion privadas de adaptacion al wolof. La model card indica que el artefacto supero las puertas automaticas de validacion registradas en `training_manifest.json`, pero no se emite ninguna afirmacion de calidad adicional. No se declaran licencia, idiomas oficiales ni longitud de contexto en la informacion disponible.
 
@@ -96,7 +96,7 @@ El unico punto de comparacion fiable en la informacion proporcionada es contra `
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mamelles/LFM2.5-230M-Wolof-CPT
+- Modelo en Hugging Face: https://huggingface.co/mamelles/LFM2.5-230M-Wolof-CPT
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-230M-Base
 - Organizacion del autor: https://huggingface.co/mamelles
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su paper, a su repositorio de codigo ni a demos. Los resultados obtenidos no guardan relacion con el modelo y se han descartado.

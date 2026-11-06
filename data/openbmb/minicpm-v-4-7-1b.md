@@ -6,7 +6,7 @@ MiniCPM-V 4.7 1B es un modelo multimodal de tipo image-text-to-text desarrollado
 
 El modelo se construye sobre un codificador visual SigLIP2-400M y el LLM Qwen3.5-0.8B, y hereda las capacidades de comprensión de imagen única, múltiples imágenes y vídeo de la familia MiniCPM-V. Su propuesta central es la densidad de capacidad: según el autor, en modo Instruct mejora las capacidades base respecto a MiniCPM-V 4.6 y supera sustancialmente a Qwen3.5 0.8B tanto en puntuación global como en eficiencia de inferencia, con soporte de compresión mixta de tokens visuales 4x/16x para ajustar el coste por tarea.
 
-Es relevante porque amplía las opciones de despliegue local y en el borde: soporte declarado para iOS, Android y HarmonyOS, soporte day-0 de chips de Rockchip, Houmo, Intel, AMD y Arm, e integración con SGLang, vLLM, llama.cpp y Ollama. La publicación es muy reciente (creado el 6 de octubre de 2026, actualizado el 12 de octubre de 2026) y con adopción todavía limitada: 14 descargas y 16 likes en HuggingFace.
+Es relevante porque amplía las opciones de despliegue local y en el borde: soporte declarado para iOS, Android y HarmonyOS, soporte day-0 de chips de Rockchip, Houmo, Intel, AMD y Arm, e integración con SGLang, vLLM, llama.cpp y Ollama. La publicación es muy reciente (creado el 6 de octubre de 2026, actualizado el 12 de octubre de 2026) y con adopción todavía limitada: 14 descargas y 16 likes en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-V 4.7 1B | 1,55B | no disponible | Afirmación del autor: supera a Qwen3.5 0.8B en puntuación global y eficiencia (sin cifras) | Apache 2.0 | HuggingFace, safetensors + GGUF/AWQ/GPTQ/BNB/FP8 |
+| MiniCPM-V 4.7 1B | 1,55B | no disponible | Afirmación del autor: supera a Qwen3.5 0.8B en puntuación global y eficiencia (sin cifras) | Apache 2.0 | Hugging Face, safetensors + GGUF/AWQ/GPTQ/BNB/FP8 |
 | Qwen3.5 0.8B | ≈0,8B (según nomenclatura) | no disponible | Referencia de comparación citada por el autor de MiniCPM-V 4.7 | no disponible | no disponible |
 | MiniCPM-V 4.6 1.3B | ≈1,3B | no disponible | Generación anterior de la familia; el autor indica que 4.7 mejora las capacidades base | no disponible | no disponible |
 | MiniCPM-V 4.7 35B-A3B | no disponible (variante MoE, según listado de OpenVINO) | no disponible | no disponible | no disponible | listado como soportado en OpenVINO GenAI |
@@ -98,12 +98,12 @@ No se dispone de datos de benchmarks comparativos publicados en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
+- Modelo en Hugging Face: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
 - Repositorio GitHub de la familia MiniCPM-V: https://github.com/OpenBMB/MiniCPM-V
 - Documentación de MiniCPM-V 4.7 (pesos, inferencia y despliegue on-device): https://github.com/OpenBMB/MiniCPM-o/blob/main/docs/minicpm_v4dot7_en.md
 - Guía de despliegue y frameworks soportados: https://github.com/OpenBMB/MiniCPM-o/blob/main/docs/deployment_en.md
 - Documentación de la API: https://github.com/OpenBMB/MiniCPM-o/blob/main/docs/api.md
-- Demo interactiva en HuggingFace Spaces: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.7-Demo
+- Demo interactiva en Hugging Face Spaces: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.7-Demo
 - Cookbook de MiniCPM-V: https://github.com/OpenSQZ/MiniCPM-V-CookBook
 - LLaVA-UHD v4 (origen de la técnica de compresión intra-ViT): https://github.com/THUMAI-Lab/LLaVA-UHD-v4
 - MiniCPM-Robot (modelo relacionado para robótica on-device): https://github.com/OpenBMB/MiniCPM-Robot

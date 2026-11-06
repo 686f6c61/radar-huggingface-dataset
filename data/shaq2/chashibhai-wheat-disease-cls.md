@@ -73,7 +73,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (cl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shaq2/chashibhai-wheat-disease-cls
+- Modelo en Hugging Face: https://huggingface.co/Shaq2/chashibhai-wheat-disease-cls
 - Coleccion ChashiBhAI on-device disease classifiers: https://huggingface.co/collections/Shaq2/chashibhai-on-device-disease-classifiers
 - Clasificador de enfermedades de arroz relacionado: https://huggingface.co/Shaq2/chashibhai-rice-disease-cls
 - Repositorio de deteccion de enfermedades de trigo (proyecto web): https://github.com/Ayesshaabbas/wheat-diseases-detection-website

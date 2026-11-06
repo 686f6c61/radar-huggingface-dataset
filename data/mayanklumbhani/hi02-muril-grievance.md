@@ -2,11 +2,11 @@
 
 ## Resumen
 
-hi02-muril-grievance es un modelo de clasificación de texto publicado en HuggingFace por el usuario MayankLumbhani. Se trata de un ajuste fino de la familia MuRIL (Multilingual Representations for Indian Languages), un encoder basado en BERT desarrollado originalmente por Google Research para lenguas de la India. El identificador del repositorio sugiere un uso orientado a la clasificación de quejas o reclamaciones ("grievance"), probablemente en el ámbito administrativo o de atención ciudadana.
+hi02-muril-grievance es un modelo de clasificación de texto publicado en Hugging Face por el usuario MayankLumbhani. Se trata de un ajuste fino de la familia MuRIL (Multilingual Representations for Indian Languages), un encoder basado en BERT desarrollado originalmente por Google Research para lenguas de la India. El identificador del repositorio sugiere un uso orientado a la clasificación de quejas o reclamaciones ("grievance"), probablemente en el ámbito administrativo o de atención ciudadana.
 
 El modelo cuenta con 237.563.145 parámetros totales según los pesos en formato safetensors, y el repositorio ocupa aproximadamente 1,0 GB. Emplea la librería transformers con arquitectura bert y la etiqueta text-classification, lo que indica que su salida es un conjunto de probabilidades sobre categorías predefinidas de reclamaciones.
 
-La relevancia de este modelo es limitada en el estado actual: no dispone de model card sustantiva (la incluida es la plantilla automática de HuggingFace sin rellenar), no declara licencia ni idiomas, y registra cero descargas y cero likes en el momento de la consulta. Es, por tanto, un artefacto de investigación o experimento personal más que un modelo listo para producción.
+La relevancia de este modelo es limitada en el estado actual: no dispone de model card sustantiva (la incluida es la plantilla automática de Hugging Face sin rellenar), no declara licencia ni idiomas, y registra cero descargas y cero likes en el momento de la consulta. Es, por tanto, un artefacto de investigación o experimento personal más que un modelo listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -28,14 +28,14 @@ La relevancia de este modelo es limitada en el estado actual: no dispone de mode
 
 La arquitectura corresponde a un encoder transformer de tipo BERT. El recuento de 237,5 millones de parámetros es coherente con la variante MuRIL base, que parte de un BERT multilingual ampliado con vocabulario específico para lenguas de la India. Al ser un modelo de clasificación, sobre la cabeza del encoder se sitúa una capa densa de clasificación cuyo número de etiquetas de salida no se especifica en la información disponible.
 
-No se dispone de datos sobre el proceso de entrenamiento: ni el conjunto de datos utilizado, ni el número de tokens, ni si hubo ajuste fino supervisado sobre anotaciones de quejas, ni hiperparámetros, ni técnicas de regularización. La model card publicada es la plantilla automática de HuggingFace y no aporta ninguna información técnica sobre el ajuste. El tag arxiv:1910.09700 corresponde al artículo de Lacoste et al. sobre impacto ambiental del aprendizaje automático, citado en la plantilla, y no a un paper del modelo.
+No se dispone de datos sobre el proceso de entrenamiento: ni el conjunto de datos utilizado, ni el número de tokens, ni si hubo ajuste fino supervisado sobre anotaciones de quejas, ni hiperparámetros, ni técnicas de regularización. La model card publicada es la plantilla automática de Hugging Face y no aporta ninguna información técnica sobre el ajuste. El tag arxiv:1910.09700 corresponde al artículo de Lacoste et al. sobre impacto ambiental del aprendizaje automático, citado en la plantilla, y no a un paper del modelo.
 
 ## Capacidades
 
 - Clasificación de texto: el pipeline declarado es text-classification, por lo que el modelo emite etiquetas y puntuaciones de probabilidad sobre categorías de queja o reclamación.
 - Procesamiento de lenguaje natural en lenguas de la India: por herencia de MuRIL, se espera cobertura de hindi y otras lenguas indias, aunque no está confirmado en la información disponible.
 - Extracción de representaciones: al ser un encoder BERT, puede emplearse para generar embeddings de texto (el tag text-embeddings-inference así lo sugiere).
-- Integración con endpoints: el tag endpoints_compatible indica compatibilidad con HuggingFace Inference Endpoints.
+- Integración con endpoints: el tag endpoints_compatible indica compatibilidad con Hugging Face Inference Endpoints.
 - No se documentan capacidades de generación de texto, razonamiento multi-paso, tool calling, visión, audio ni modo de pensamiento.
 
 ## Casos de uso
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia en fp32: aproximadamente 0,95 GB solo para pesos (237,5 M de parámetros); en fp16, unos 0,48 GB; en int8, unos 0,24 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para inferencia en fp16; una NVIDIA T4, RTX 3060 o superior resulta holgada.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (GTX 1650 en adelante) e incluso en CPU para volúmenes moderados.
-- Opciones de despliegue: transformers con pipeline de text-classification, Text Embeddings Inference (tag declarado), HuggingFace Inference Endpoints (endpoints_compatible) y, potencialmente, ONNX Runtime si se exporta.
+- Opciones de despliegue: transformers con pipeline de text-classification, Text Embeddings Inference (tag declarado), Hugging Face Inference Endpoints (endpoints_compatible) y, potencialmente, ONNX Runtime si se exporta.
 - Latencia y throughput: no disponibles; al tratarse de un encoder de 237 M de parámetros, se espera un throughput alto en GPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hi02-muril-grievance | 237,5 M | no disponible | Clasificacion de quejas | no disponible | HuggingFace |
-| google/muril-base-cased | ~237 M | 512 tokens | Encoder multilingue (lenguas de la India) | Apache 2.0 (modelo base) | HuggingFace |
-| bert-base-multilingual-cased | ~178 M | 512 tokens | Encoder multilingue | Apache 2.0 | HuggingFace |
-| xlm-roberta-base | ~278 M | 512 tokens | Encoder multilingue | MIT | HuggingFace |
+| hi02-muril-grievance | 237,5 M | no disponible | Clasificacion de quejas | no disponible | Hugging Face |
+| google/muril-base-cased | ~237 M | 512 tokens | Encoder multilingue (lenguas de la India) | Apache 2.0 (modelo base) | Hugging Face |
+| bert-base-multilingual-cased | ~178 M | 512 tokens | Encoder multilingue | Apache 2.0 | Hugging Face |
+| xlm-roberta-base | ~278 M | 512 tokens | Encoder multilingue | MIT | Hugging Face |
 
 La comparación se limita a la arquitectura y al tamaño, ya que no hay datos de rendimiento del modelo evaluado. El modelo base MuRIL y los encoders multilingües citados cuentan con licencias permisivas y documentación completa, a diferencia de este ajuste.
 
@@ -83,7 +83,7 @@ La comparación se limita a la arquitectura y al tamaño, ya que no hay datos de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MayankLumbhani/hi02-muril-grievance
+- Repositorio en Hugging Face: https://huggingface.co/MayankLumbhani/hi02-muril-grievance
 - Modelo base MuRIL (Google Research): https://huggingface.co/google/muril-base-cased
 - Paper de MuRIL: https://arxiv.org/abs/2103.10730
 - Paper citado en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

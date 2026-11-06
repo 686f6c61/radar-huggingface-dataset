@@ -70,10 +70,10 @@ No se ha identificado en la información disponible ningún otro adaptador de po
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLASSEYE/quill-poetry-v1 | Adaptador LoRA sobre Mistral-7B-Instruct-v0.3 | ~7,25 mm en el base + adaptador no cuantificado | 32 768 tokens (heredado) | Apache 2.0 | HuggingFace, 0 descargas y 0 likes |
-| mistralai/Mistral-7B-Instruct-v0.3 | Modelo instruct completo | ~7,25 mm | 32 768 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| meta-llama/Llama-3.1-8B-Instruct | Modelo instruct completo | ~8,03 mm | 128 000 tokens | Licencia comunitaria Llama 3.1 | HuggingFace, con registro previo |
-| Qwen/Qwen2.5-7B-Instruct | Modelo instruct completo | ~7,61 mm | 128 000 tokens | Apache 2.0 | HuggingFace |
+| GLASSEYE/quill-poetry-v1 | Adaptador LoRA sobre Mistral-7B-Instruct-v0.3 | ~7,25 mm en el base + adaptador no cuantificado | 32 768 tokens (heredado) | Apache 2.0 | Hugging Face, 0 descargas y 0 likes |
+| mistralai/Mistral-7B-Instruct-v0.3 | Modelo instruct completo | ~7,25 mm | 32 768 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| meta-llama/Llama-3.1-8B-Instruct | Modelo instruct completo | ~8,03 mm | 128 000 tokens | Licencia comunitaria Llama 3.1 | Hugging Face, con registro previo |
+| Qwen/Qwen2.5-7B-Instruct | Modelo instruct completo | ~7,61 mm | 128 000 tokens | Apache 2.0 | Hugging Face |
 
 Las tres alternativas son modelos base o instruct generalistas, no adaptadores poéticos: se incluyen como referencia de plataforma, no como sustitutos funcionales. El rendimiento comparado en tareas de generación poética es no disponible en todos los casos.
 
@@ -93,7 +93,7 @@ Las tres alternativas son modelos base o instruct generalistas, no adaptadores p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GLASSEYE/quill-poetry-v1
+- Modelo en Hugging Face: https://huggingface.co/GLASSEYE/quill-poetry-v1
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Documentación de PEFT: https://huggingface.co/docs/peft
 - Repositorio de PEFT: https://github.com/huggingface/peft

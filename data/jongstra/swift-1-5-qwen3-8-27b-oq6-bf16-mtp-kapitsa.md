@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift 1.5 Qwen3.8-27B es un modelo de lenguaje de ~27.800 millones de parámetros desarrollado por ukisai, construido sobre la familia Qwen3.5 y distribuido como modelo base en HuggingFace. El checkpoint que nos ocupa, `jongstra/Swift-1.5-Qwen3.8-27b-oQ6-bf16-mtp-kapitsa`, no es un modelo nuevo entrenado desde cero, sino una cuantización derivada del modelo base, empaquetada específicamente para el motor de inferencia Kapitsa sobre Apple Silicon.
+Swift 1.5 Qwen3.8-27B es un modelo de lenguaje de ~27.800 millones de parámetros desarrollado por ukisai, construido sobre la familia Qwen3.5 y distribuido como modelo base en Hugging Face. El checkpoint que nos ocupa, `jongstra/Swift-1.5-Qwen3.8-27b-oQ6-bf16-mtp-kapitsa`, no es un modelo nuevo entrenado desde cero, sino una cuantización derivada del modelo base, empaquetada específicamente para el motor de inferencia Kapitsa sobre Apple Silicon.
 
 El problema que resuelve esta variante es de infraestructura, no de modelado: Kapitsa exige metadatos de cuantización en bf16 y una cabeza MTP (multi-token prediction) en un archivo sidecar separado, condiciones que ninguna build de Swift cumplía hasta la fecha. Este repositorio aporta exactamente esa pieza, preservando la cabeza MTP original del modelo base para habilitar decodificación especulativa, además de mantener la torre de visión intacta.
 
@@ -18,7 +18,7 @@ Es relevante ahora porque permite servir un modelo de 27B con capacidades multim
 | Longitud de contexto | 262.144 tokens (256K) |
 | Tipos de cuantización | oQ6 (oMLX sensitivity-driven mixed precision): 455 módulos a 6-bit group 64, 50 módulos a 8-bit group 64; escalas en bf16; cabeza MTP a 6-bit group 64 |
 | Idiomas soportados | No disponible |
-| Licencia | Swift Open License v1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | Swift Open License v1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (MLX), con sidecar `mtp.safetensors` y `oq_sensitivity_map.json` |
 
 ## Arquitectura y entrenamiento
@@ -96,7 +96,7 @@ No se dispone de información sobre modelos de otras familias comparables en ren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jongstra/Swift-1.5-Qwen3.8-27b-oQ6-bf16-mtp-kapitsa
+- Repositorio Hugging Face: https://huggingface.co/jongstra/Swift-1.5-Qwen3.8-27b-oQ6-bf16-mtp-kapitsa
 - Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Checkpoint gemelo fp16 para oMLX: https://huggingface.co/jongstra/Swift-1.5-Qwen3.8-27b-oQ6-fp16-mtp
 - Detalle de cambios: `CHANGES.md` (en el repositorio)

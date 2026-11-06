@@ -83,7 +83,7 @@ Alternativas de otros fabricantes con tamaño similar (p. ej., Llama 3.2 8B, Qwe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alekshandru/gemma-4-E4B-it-qat-GGUF
+- Repositorio Hugging Face: https://huggingface.co/alekshandru/gemma-4-E4B-it-qat-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-unquantized
 - Guia de Unsloth para Gemma 4 QAT: https://unsloth.ai/docs/models/gemma-4/qat
 - Coleccion de Gemma 4 QAT de Unsloth: https://huggingface.co/collections/unsloth/gemma-4-qat

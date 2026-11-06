@@ -104,9 +104,9 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ksg91/toam-100m-v0.2
+- Modelo en Hugging Face: https://huggingface.co/ksg91/toam-100m-v0.2
 - Artículo que menciona la versión 0.1 en el contexto de arneses de agentes: https://news.agentcommunity.org/issues/2026-09-28-the-harness-is
 - Datasets de ajuste fino para tool calling citados: https://huggingface.co/datasets/argilla/apigen-function-calling, https://huggingface.co/datasets/Team-ACE/ToolACE, https://huggingface.co/datasets/nvidia/When2Call
 - Datasets de preentrenamiento citados: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu, https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus, https://huggingface.co/datasets/codeparrot/codeparrot-clean, https://huggingface.co/datasets/bigcode/starcoderdata, https://huggingface.co/datasets/code-search-net/code_search_net, https://huggingface.co/datasets/wikimedia/wikipedia, https://huggingface.co/datasets/AmazonScience/massive
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los únicos enlaces pertinentes son la propia página de HuggingFace y el artículo de Agent Community que menciona la versión 0.1. No se han encontrado papers, blogs técnicos ni repositorios adicionales del autor.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los únicos enlaces pertinentes son la propia página de Hugging Face y el artículo de Agent Community que menciona la versión 0.1. No se han encontrado papers, blogs técnicos ni repositorios adicionales del autor.

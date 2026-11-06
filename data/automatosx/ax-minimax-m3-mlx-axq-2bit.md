@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks para la variante AXQ-2bit en la inf
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Cuantización | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MiniMax-M3 (base) | ~428B | ~23B | 1M | Licencia MiniMax | BF16 | HuggingFace |
-| AX-MiniMax-M3-MLX-AXQ-2bit | ~55B (cuantizado) | ~23B | 1M | Licencia MiniMax | AXQ 2-bit | HuggingFace |
-| DeepSeek-V3 | 671B | 37B | 128K | MIT | FP8/BF16 | HuggingFace |
-| Qwen2.5-Max | no disponible | no disponible | 256K | Apache 2.0 | BF16 | HuggingFace |
+| MiniMax-M3 (base) | ~428B | ~23B | 1M | Licencia MiniMax | BF16 | Hugging Face |
+| AX-MiniMax-M3-MLX-AXQ-2bit | ~55B (cuantizado) | ~23B | 1M | Licencia MiniMax | AXQ 2-bit | Hugging Face |
+| DeepSeek-V3 | 671B | 37B | 128K | MIT | FP8/BF16 | Hugging Face |
+| Qwen2.5-Max | no disponible | no disponible | 256K | Apache 2.0 | BF16 | Hugging Face |
 
 La comparación directa con DeepSeek-V3 y Qwen2.5-Max se basa en la categoría de MoE de gran escala, pero no hay benchmarks públicos de la variante cuantizada. La ventaja principal del paquete AXQ-2bit es su tamaño reducido en memoria, pero a costa de velocidad de inferencia y sin garantías de calidad.
 
@@ -80,8 +80,8 @@ La comparación directa con DeepSeek-V3 y Qwen2.5-Max se basa en la categoría d
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/AutomatosX/AX-MiniMax-M3-MLX-AXQ-2bit
-- Modelo base MiniMax-M3 en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-M3
+- Repositorio Hugging Face del modelo: https://huggingface.co/AutomatosX/AX-MiniMax-M3-MLX-AXQ-2bit
+- Modelo base MiniMax-M3 en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-M3
 - Catálogo de modelos MLX de AutomatosX: https://huggingface.co/collections/AutomatosX/automatosx-mlx-model-catalog
 - GitHub de MiniMax-M3: https://github.com/MiniMax-AI/MiniMax-M3
 - Página oficial de MiniMax M3: https://www.minimax.io/models/text/m3

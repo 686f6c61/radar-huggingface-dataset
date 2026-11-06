@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks de capacidad general (MMLU, HumanEv
 
 | Modelo | Parametros | Contexto | Seguridad medida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_remove50_swapgapiter_evfront_b010_r03 | 6.738.415.616 (fraccion densa declarada 0,4999) | 4096 tokens (heredado) | AdvBench ASR 0,4450; StrongREJECT ASR 0,4150; over-refusal 0,0709 | Llama 2 Community License | Pesos safetensors en HuggingFace, 0 descargas |
-| meta-llama/Llama-2-7b-chat-hf (modelo base sin comprimir) | 6.738.415.616 | 4096 tokens | No disponible en la informacion proporcionada | Llama 2 Community License | Publico en HuggingFace |
+| svd-safety-l2_remove50_swapgapiter_evfront_b010_r03 | 6.738.415.616 (fraccion densa declarada 0,4999) | 4096 tokens (heredado) | AdvBench ASR 0,4450; StrongREJECT ASR 0,4150; over-refusal 0,0709 | Llama 2 Community License | Pesos safetensors en Hugging Face, 0 descargas |
+| meta-llama/Llama-2-7b-chat-hf (modelo base sin comprimir) | 6.738.415.616 | 4096 tokens | No disponible en la informacion proporcionada | Llama 2 Community License | Publico en Hugging Face |
 | Otras celdas de la misma rejilla experimental del autor | No disponible | No disponible | No disponible | Llama 2 Community License | No disponibles en la informacion proporcionada |
 
 No se dispone de datos de benchmarks de capacidad general ni de otras alternativas comparables dentro de la informacion proporcionada, por lo que no es posible establecer una comparativa de rendimiento con modelos de la misma categoria distintos del propio modelo base.
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks de capacidad general ni de otras alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_evfront_b010_r03
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_evfront_b010_r03
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2 (incluida en el repositorio del modelo): https://ai.meta.com/llama/license/
 - Politica de uso aceptable de Llama 2 (incluida en el repositorio del modelo): https://ai.meta.com/llama/use-policy/

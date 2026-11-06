@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Dhruvil-14/Image_Classifier` es un repositorio alojado en HuggingFace por el usuario Dhruvil-14 que, por su denominación, parece contener un modelo de clasificación de imágenes. No obstante, la información pública disponible es prácticamente nula: no se especifica el pipeline, la licencia, los idiomas soportados, la arquitectura ni el conjunto de datos de entrenamiento. El repositorio no cuenta con descargas registradas (0) y solo 1 like, lo que sugiere un proyecto personal, experimental o en fase muy temprana de publicación.
+`Dhruvil-14/Image_Classifier` es un repositorio alojado en Hugging Face por el usuario Dhruvil-14 que, por su denominación, parece contener un modelo de clasificación de imágenes. No obstante, la información pública disponible es prácticamente nula: no se especifica el pipeline, la licencia, los idiomas soportados, la arquitectura ni el conjunto de datos de entrenamiento. El repositorio no cuenta con descargas registradas (0) y solo 1 like, lo que sugiere un proyecto personal, experimental o en fase muy temprana de publicación.
 
 La ficha técnica no puede completarse con datos verificables más allá del identificador, el autor y las fechas de creación y actualización (ambas el 2 de noviembre de 2026, lo que indica que no ha habido mantenimiento posterior). Cualquier intento de caracterizar el modelo en términos de arquitectura, tamaño o rendimiento sería especulativo y, por tanto, se evita en este documento.
 
@@ -41,7 +41,7 @@ El repositorio carece de model card descriptiva. La única información estructu
 
 - Prototipado académico: un investigador podría inspeccionar el repositorio para comprobar si contiene pesos utilizables en un experimento de clasificación de imágenes, aunque la ausencia de model card obliga a una validación manual previa.
 - Evaluación comparativa interna: si el artefacto incluye pesos, podría servir como baseline informal en pruebas controladas, siempre que se verifique su procedencia y se documenten las métricas obtenidas.
-- Aprendizaje y docencia: el repositorio puede emplearse como ejemplo de publicación en HuggingFace, aunque no como referencia de buenas prácticas dada la falta de documentación.
+- Aprendizaje y docencia: el repositorio puede emplearse como ejemplo de publicación en Hugging Face, aunque no como referencia de buenas prácticas dada la falta de documentación.
 - Integración en pipelines de visión por computador: solo tras una auditoría técnica que confirme el formato de pesos, las clases de salida y el preprocesado requerido.
 - Fine-tuning posterior: si los pesos son compatibles con frameworks estándar (PyTorch, TensorFlow), podría reutilizarse como punto de partida, previa verificación de la licencia (actualmente no disponible).
 - Despliegue en producción: no recomendado en su estado actual por la ausencia de licencia, métricas y documentación de sesgos.
@@ -74,5 +74,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dhruvil-14/Image_Classifier
+- Repositorio en Hugging Face: https://huggingface.co/Dhruvil-14/Image_Classifier
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información proporcionada.

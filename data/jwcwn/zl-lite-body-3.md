@@ -77,7 +77,7 @@ El autor advierte que se trata de un benchmark de regresión observada y que el 
 
 | Modelo | Parámetros | Contexto | Overall (benchmark del autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Decision-1.0-Eos-0.8B | 852.985.920 | 16.384 tokens | 61,89 | Apache 2.0 | HuggingFace |
+| Decision-1.0-Eos-0.8B | 852.985.920 | 16.384 tokens | 61,89 | Apache 2.0 | Hugging Face |
 | Kev · 0.8B | no disponible | no disponible | 58,28 | no disponible | no disponible |
 | Qwen3.5 · 2B | no disponible (2B nominal) | no disponible | 57,24 | no disponible | no disponible |
 | Laya English | no disponible | no disponible | 51,03 | no disponible | no disponible |
@@ -94,12 +94,12 @@ Los modelos de referencia aparecen únicamente en la tabla de benchmarks de la m
 - Riesgo de alucinación no aplicable en el sentido generativo, pero sí riesgo de calibración deficiente en las distribuciones de probabilidad si el dominio de uso difiere del de entrenamiento.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin validación independiente por parte de la comunidad.
 - La licencia Apache 2.0 permite uso comercial, pero el modelo depende del runtime vLLM Semantic Router para el endpoint `/v1/systemone`; el repositorio no incluye servicio, solo artefactos y código de carga.
-- El identificador de HuggingFace (`jwcwn/zl-lite-body-3`) no coincide con el nombre comercial del modelo en la model card (`vllm-sr/Decision-1.0-Eos-0.8B`), lo que puede generar confusión en la trazabilidad de artefactos.
+- El identificador de Hugging Face (`jwcwn/zl-lite-body-3`) no coincide con el nombre comercial del modelo en la model card (`vllm-sr/Decision-1.0-Eos-0.8B`), lo que puede generar confusión en la trazabilidad de artefactos.
 - Requiere `transformers>=5.17` y `trust_remote_code=True`, lo que implica ejecutar código del autor.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jwcwn/zl-lite-body-3
+- Repositorio Hugging Face: https://huggingface.co/jwcwn/zl-lite-body-3
 - Colección Decision 1.0: https://huggingface.co/collections/vllm-sr/decision-10-6ab12177bd0002394d8409f9
 - Documentación de arquitectura: https://huggingface.co/jwcwn/zl-lite-body-3/blob/main/ARCHITECTURE.md
 - Benchmark completo: https://huggingface.co/jwcwn/zl-lite-body-3/blob/main/evaluation/BENCHMARK.md

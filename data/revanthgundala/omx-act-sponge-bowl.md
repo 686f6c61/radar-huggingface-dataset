@@ -69,7 +69,7 @@ No se dispone de datos comparativos publicados. El modelo es una implementación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RevanthGundala/omx-act-sponge-bowl
+- Modelo en Hugging Face: https://huggingface.co/RevanthGundala/omx-act-sponge-bowl
 - Dataset de entrenamiento: https://huggingface.co/datasets/RevanthGundala/014-place-sponge-in-bowl-diverse-50
 - Repositorio de código (evaluador y arquitectura): https://github.com/RevanthGundala/omx-act-recap
 - Repositorio de entrenamiento: https://github.com/RevanthGundala/omx-training

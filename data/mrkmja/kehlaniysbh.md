@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KehlaniYSBH es un modelo de conversión de voz (voice conversion) publicado en HuggingFace por el usuario mrkmja (MRKMJA), no un modelo de lenguaje. Está construido sobre el pipeline RVC v2 (Retrieval-based Voice Conversion, versión 2) y su objetivo es transformar una grabación vocal de entrada para que suene con el timbre de la cantante Kehlani, tomando como referencia sus voces en el mixtape *You Should Be Here* (2015).
+KehlaniYSBH es un modelo de conversión de voz (voice conversion) publicado en Hugging Face por el usuario mrkmja (MRKMJA), no un modelo de lenguaje. Está construido sobre el pipeline RVC v2 (Retrieval-based Voice Conversion, versión 2) y su objetivo es transformar una grabación vocal de entrada para que suene con el timbre de la cantante Kehlani, tomando como referencia sus voces en el mixtape *You Should Be Here* (2015).
 
 El entrenamiento se realizó durante 600 épocas, con un tamaño de lote de 6, extractor de tono RMVPE y partiendo del pretrain original, sobre un conjunto de datos de tan solo 8 minutos de voces. El resultado es un modelo ligero, orientado a inferencia en el ecosistema RVC (WebUI, Applio y derivados), que no expone API de texto ni capacidades de razonamiento: su única función es la síntesis/conversión de audio cantado o hablado.
 
@@ -77,7 +77,7 @@ No se dispone de datos comparativos publicados para este modelo. La única alter
 
 | Modelo | Tipo | Datos de entrenamiento | Épocas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mrkmja/KehlaniYSBH | RVC v2 (conversión de voz) | 8 minutos de *You Should Be Here* (2015) | 600 | no disponible | pública en HuggingFace, 0 descargas |
+| mrkmja/KehlaniYSBH | RVC v2 (conversión de voz) | 8 minutos de *You Should Be Here* (2015) | 600 | no disponible | pública en Hugging Face, 0 descargas |
 | mrkmja/Kehlani2020 | RVC (conversión de voz) | no disponible | no disponible | no disponible | enlazado desde la model card de KehlaniYSBH |
 | Otros modelos RVC v2 de la comunidad | RVC v2 (conversión de voz) | no disponible | no disponible | variable según autor | no disponible |
 
@@ -97,7 +97,7 @@ No se han localizado comparativas cuantitativas con alternativas de la misma cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrkmja/KehlaniYSBH
+- Modelo en Hugging Face: https://huggingface.co/mrkmja/KehlaniYSBH
 - Descarga de pesos (ZIP): https://huggingface.co/mrkmja/KehlaniYSBH/resolve/main/KehlaniYSBH_byMRKMJA.zip
 - Imagen de portada del modelo: https://huggingface.co/mrkmja/KehlaniYSBH/resolve/main/KehlaniYSBH.jpg
 - Otro modelo del mismo autor referenciado en la model card: https://huggingface.co/mrkmja/Kehlani2020

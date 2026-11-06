@@ -95,7 +95,7 @@ No se dispone de información sobre otros modelos TTS comparables que cubran nep
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/elitexp/nepali-call-center-cosyvoice-experimental
+- Hugging Face: https://huggingface.co/elitexp/nepali-call-center-cosyvoice-experimental
 - Modelo base: https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
 - Repositorio de CosyVoice en GitHub: https://github.com/QwenAudio/CosyVoice
 - Papel (arXiv): https://arxiv.org/abs/2505.17589

@@ -6,7 +6,7 @@ Phocinae-Largha-150M-v1 (nombre en chino: 斑海豹, "foca moteada") es un model
 
 La arquitectura se apoya en una base mmBERT-small (arquitectura tipo ModernBERT): 384 de dimensión oculta, 22 capas, 6 cabezas de atención, tokenizador de 256k de vocabulario, RoPE combinado con atención de ventana deslizante y atención completa. El contexto base es de 8192 tokens y la cabeza por defecto procesa 512 tokens. Los pesos ocupan 288,6 MB y el pico de memoria en inferencia es de 1,6 GB, lo que permite ejecutarlo en una GPU de consumo corriente.
 
-Su relevancia práctica se debe a dos cifras: 18,6 ms de latencia p50 en GPU en fp16 por decisión (frente a más de 1,5 s de ida y vuelta contra una API) y una puerta de confianza con umbral τ=0,6 que reduce un 54,4 % el tráfico hacia un LLM mayor, subiendo la precisión del subconjunto retenido de 0,797 a 0,886. El modelo se licencia bajo Apache 2.0 según la propia model card, aunque el metadato de HuggingFace no declara licencia.
+Su relevancia práctica se debe a dos cifras: 18,6 ms de latencia p50 en GPU en fp16 por decisión (frente a más de 1,5 s de ida y vuelta contra una API) y una puerta de confianza con umbral τ=0,6 que reduce un 54,4 % el tráfico hacia un LLM mayor, subiendo la precisión del subconjunto retenido de 0,797 a 0,886. El modelo se licencia bajo Apache 2.0 según la propia model card, aunque el metadato de Hugging Face no declara licencia.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Su relevancia práctica se debe a dos cifras: 18,6 ms de latencia p50 en GPU en 
 | Longitud de contexto | 8192 tokens de base; cabeza por defecto de 512 tokens |
 | Tipos de cuantizacion | No disponible (el repositorio distribuye pesos en safetensors; no se documentan variantes GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | Inglés y chino (bilingüe; el modelo declara precisión en zh sin filas de entrenamiento en zh) |
-| Licencia | Apache 2.0 según la model card; el metadato de HuggingFace no declara licencia |
+| Licencia | Apache 2.0 según la model card; el metadato de Hugging Face no declara licencia |
 | Formato de pesos | safetensors (288,6 MB) |
 | Dimension oculta | 384 |
 | Capas | 22 |
@@ -102,7 +102,7 @@ Comparativa sobre el mismo protocolo de typed-decisions (400 casos / 2000 decisi
 
 | Modelo | typed-decisions (mismo protocolo) | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Phocinae-Largha-150M-v1 | 0,797 (en) / 0,789 (zh) | 144,3 M | 8192 base / 512 cabeza | Apache 2.0 (segun model card) | HuggingFace, GitHub, ModelScope |
+| Phocinae-Largha-150M-v1 | 0,797 (en) / 0,789 (zh) | 144,3 M | 8192 base / 512 cabeza | Apache 2.0 (segun model card) | Hugging Face, GitHub, ModelScope |
 | Laya | 0,766 | No disponible | No disponible | No disponible | No disponible |
 | JEV | 0,727 | No disponible | No disponible | No disponible | No disponible |
 | meraGPT | 0,768 | No disponible | No disponible | No disponible | No disponible |
@@ -117,13 +117,13 @@ No se dispone de especificaciones técnicas, licencias ni datos de contexto de L
 - Sesgo posicional: aunque se documenta robustez al reordenamiento (flip150/flip400 de 0,0300; "any" de 0,0433), no es cero, por lo que el orden de opciones puede seguir influyendo en algunos casos.
 - Contexto limitado: 8192 tokens de base y 512 en la cabeza por defecto, insuficiente para documentos o historiales muy largos.
 - Cobertura de idiomas limitada a inglés y chino; no se documentan otros idiomas.
-- Licencia: la model card muestra una insignia Apache 2.0, pero el metadato de HuggingFace no declara licencia; conviene confirmar los términos antes de un uso comercial.
+- Licencia: la model card muestra una insignia Apache 2.0, pero el metadato de Hugging Face no declara licencia; conviene confirmar los términos antes de un uso comercial.
 - Trazabilidad de datos de entrenamiento: no se publican tokens, composición del dataset ni fases de alineación (RLHF/DPO), lo que dificulta evaluar sesgos de origen.
 - El repositorio de pesos no incluye el runtime: phocinae-server distribuye la ejecución, no los pesos, que deben descargarse por separado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1
+- Hugging Face: https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1
 - GitHub: https://github.com/Phocinae/Phocinae-Largha-150M-v1
 - Runtime oficial (phocinae-server): https://github.com/Phocinae/phocinae-server
 - ModelScope: https://modelscope.cn/models/PerryLink/Phocinae-Largha-150M-v1

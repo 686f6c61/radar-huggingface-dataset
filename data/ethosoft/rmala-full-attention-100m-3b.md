@@ -99,7 +99,7 @@ No se dispone de datos publicados de modelos externos comparables en la informac
 
 ## Enlaces
 
-- HuggingFace (Ethosoft): https://huggingface.co/Ethosoft/rmala-full-attention-100m-3b
+- Hugging Face (Ethosoft): https://huggingface.co/Ethosoft/rmala-full-attention-100m-3b
 - Mirror (MercanAI): https://huggingface.co/MercanAI/rmala-full-attention-100m-3b
 - Ficheros relevantes dentro del repositorio: LM100_PROTOCOL.md (protocolo de entrenamiento e inferencia y cobertura del perfilado), training_config.json (configuración de optimización), evaluation.json (métricas completas de validación y test), THIRD_PARTY_NOTICES.md (avisos de licencias de terceros), inference.py (cargador y decodificador de referencia), requirements.txt (dependencias).
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada.

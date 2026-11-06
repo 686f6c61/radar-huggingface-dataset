@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks especificos de este checkpoint en l
 
 | Modelo | Parametros | Contexto | Etapa / funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SDRPN-Qwen2.5-VL-7B (este) | 8.991.340.032 | no disponible | Etapa 1: predictor de RoI auto-destilado sobre backbone congelado | apache-2.0 | HuggingFace, 7 descargas, requiere codigo de VisionRL2 |
-| YuhengSSS/VisionRL2-Qwen2.5-VL-7B | no disponible | no disponible | Etapa 2: RL a nivel de region; media de tabla principal 71,0 | apache-2.0 | HuggingFace, repositorio de 18 GB |
-| Qwen/Qwen2.5-VL-7B-Instruct | no disponible (model.safetensors ~16,6 GB) | no disponible | Backbone base sin modificaciones de RoI; cargable con Transformers estandar | apache-2.0 | HuggingFace, ampliamente desplegado |
+| SDRPN-Qwen2.5-VL-7B (este) | 8.991.340.032 | no disponible | Etapa 1: predictor de RoI auto-destilado sobre backbone congelado | apache-2.0 | Hugging Face, 7 descargas, requiere codigo de VisionRL2 |
+| YuhengSSS/VisionRL2-Qwen2.5-VL-7B | no disponible | no disponible | Etapa 2: RL a nivel de region; media de tabla principal 71,0 | apache-2.0 | Hugging Face, repositorio de 18 GB |
+| Qwen/Qwen2.5-VL-7B-Instruct | no disponible (model.safetensors ~16,6 GB) | no disponible | Backbone base sin modificaciones de RoI; cargable con Transformers estandar | apache-2.0 | Hugging Face, ampliamente desplegado |
 
 ## Limitaciones y advertencias
 
@@ -92,8 +92,8 @@ No se han publicado resultados de benchmarks especificos de este checkpoint en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YuhengSSS/SDRPN-Qwen2.5-VL-7B
-- Modelo de etapa 2 en HuggingFace: https://huggingface.co/YuhengSSS/VisionRL2-Qwen2.5-VL-7B
+- Modelo en Hugging Face: https://huggingface.co/YuhengSSS/SDRPN-Qwen2.5-VL-7B
+- Modelo de etapa 2 en Hugging Face: https://huggingface.co/YuhengSSS/VisionRL2-Qwen2.5-VL-7B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Codigo: https://github.com/YuHengsss/VisionRL2
 - Repositorio SD-RPN: https://github.com/YuHengsss/SD-RPN

@@ -105,7 +105,7 @@ No hay datos de rendimiento publicados para este artefacto, y los resultados de 
 
 ## Enlaces
 
-- Repositorio del artefacto en HuggingFace: https://huggingface.co/florianvoss/Qwen3.5-4B-Autoround-a16w4-Modalix
+- Repositorio del artefacto en Hugging Face: https://huggingface.co/florianvoss/Qwen3.5-4B-Autoround-a16w4-Modalix
 - Modelo base referenciado en la model card: https://huggingface.co/Qwen/Qwen3.5-4B (identificador tomado del campo `base_model`; no verificado en la búsqueda)
 - Papers: no disponible
 - Blogs o notas técnicas: no disponible

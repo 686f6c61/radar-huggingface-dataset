@@ -4,7 +4,7 @@
 
 DavidAU/Qwen3.8-27B-stage1b es un fine-tune del modelo Qwen3.8-27B de Alibaba, desarrollado por el usuario DavidAU. Se presenta como un ajuste multi-etapa que combina las técnicas Cold Fusion y GAIN Training, orientado a un uso "heretic" y "uncensored" (sin censura). El modelo base es un transformer denso de 27.000 millones de parámetros con atención híbrida (lineal en 48 de 64 capas), torre de visión integrada y un cabezal de decodificación especulativa MTP, con una ventana de contexto nativa de 262.000 tokens extensible a 1.000.000.
 
-El repositorio de HuggingFace no proporciona detalles específicos sobre el proceso de entrenamiento, los datos utilizados ni las métricas de rendimiento del fine-tune. El acceso es restringido (gated) y requiere aceptar condiciones en la plataforma. Aunque el modelo base acepta entradas de imagen y texto, no se ha confirmado si esta versión conserva todas las capacidades multimodales del original.
+El repositorio de Hugging Face no proporciona detalles específicos sobre el proceso de entrenamiento, los datos utilizados ni las métricas de rendimiento del fine-tune. El acceso es restringido (gated) y requiere aceptar condiciones en la plataforma. Aunque el modelo base acepta entradas de imagen y texto, no se ha confirmado si esta versión conserva todas las capacidades multimodales del original.
 
 La relevancia de este modelo radica en su naturaleza de fine-tune sin censura sobre una base técnica sólida, lo que puede interesar a desarrolladores que buscan alternativas menos restrictivas para generación de texto creativo o experimental, aunque con los riesgos asociados a la ausencia de alineación.
 
@@ -17,7 +17,7 @@ La relevancia de este modelo radica en su naturaleza de fine-tune sin censura so
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | No especificada para este fine-tune; el base soporta 262K nativo y hasta 1M con extension |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Ingles (segun metadatos de HuggingFace) |
+| Idiomas soportados | Ingles (segun metadatos de Hugging Face) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | Transformers (formato de archivo no especificado; probablemente safetensors) |
 
@@ -47,7 +47,7 @@ Para este fine-tune, los metadatos indican el uso de "Cold Fusion" y "GAIN Train
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye metricas de evaluacion para este fine-tune. Los datos de rendimiento del modelo base (por ejemplo, en tareas de razonamiento, codigo o vision) estan disponibles en la documentacion de Qwen3.8-27B, pero no se puede asumir que el fine-tune los mantenga o supere.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye metricas de evaluacion para este fine-tune. Los datos de rendimiento del modelo base (por ejemplo, en tareas de razonamiento, codigo o vision) estan disponibles en la documentacion de Qwen3.8-27B, pero no se puede asumir que el fine-tune los mantenga o supere.
 
 ## Requisitos de hardware
 
@@ -81,7 +81,7 @@ La comparacion directa no es posible sin datos de rendimiento del fine-tune.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DavidAU/Qwen3.8-27B-stage1b
+- Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-stage1b
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guia de ejecucion local (Substack): https://linas.substack.com/p/qwen3-8-27b-local-guide
 - Documentacion de Groq sobre Qwen3.8-27B: https://console.groq.com/docs/model/qwen/qwen3.8-27b

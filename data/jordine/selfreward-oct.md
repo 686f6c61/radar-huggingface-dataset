@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`selfreward-oct` es una colección de adaptadores LoRA publicada por el usuario Jordine en HuggingFace, fruto de un experimento exploratorio sobre auto-recompensa (self-reward) en modelos de persona. El autor entrena modelos de personaje de la familia OCT (Maiya et al., `maius/*-personas`) dentro de un bucle GRPO donde la recompensa es la propia puntuación de 0 a 9 que el modelo se asigna a su respuesta, sin término de divergencia KL. No se trata de un modelo base nuevo, sino de un conjunto de adaptadores PEFT que se montan sobre pesos ya fusionados.
+`selfreward-oct` es una colección de adaptadores LoRA publicada por el usuario Jordine en Hugging Face, fruto de un experimento exploratorio sobre auto-recompensa (self-reward) en modelos de persona. El autor entrena modelos de personaje de la familia OCT (Maiya et al., `maius/*-personas`) dentro de un bucle GRPO donde la recompensa es la propia puntuación de 0 a 9 que el modelo se asigna a su respuesta, sin término de divergencia KL. No se trata de un modelo base nuevo, sino de un conjunto de adaptadores PEFT que se montan sobre pesos ya fusionados.
 
 El repositorio contiene varios directorios con el patrón `sr-<model>-<persona>-s0/model_step{50,100[,150]}`, cada uno con un adaptador LoRA de rango 32 y alpha 64. El adaptador se aplica sobre una base ya fusionada: el modelo instruct correspondiente con el LoRA de persona `maius/<model>-personas/<persona>` incorporado. Se cubren dos familias base (`google/gemma-3-4b-it` y `meta-llama/Llama-3.1-8B-Instruct`) y diez personas (goodness, humor, impulsiveness, loving, mathematical, nonchalance, poeticism, remorse, sarcasm, sycophancy), además de una ejecución sobre el modelo instruct sin persona.
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `selfreward-oct` (este) | LoRA r32 sobre base de 4B u 8B | no disponible | Auto-recompensa GRPO sobre personas OCT | other | HuggingFace, 0 descargas |
-| `maius/*-personas` | LoRA de persona sobre modelos instruct | no disponible | Induccion de persona sin RL | no disponible | HuggingFace (fuente citada) |
+| `selfreward-oct` (este) | LoRA r32 sobre base de 4B u 8B | no disponible | Auto-recompensa GRPO sobre personas OCT | other | Hugging Face, 0 descargas |
+| `maius/*-personas` | LoRA de persona sobre modelos instruct | no disponible | Induccion de persona sin RL | no disponible | Hugging Face (fuente citada) |
 | Base sin persona (`sr-base`) | Gemma 3 4B o Llama 3.1 8B | el de la base | Instruct estandar | la de la base | Incluido en el repo como referencia |
 
 No se dispone de datos de rendimiento comparables entre estas opciones en la información proporcionada.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparables entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jordine/selfreward-oct
+- Modelo en Hugging Face: https://huggingface.co/Jordine/selfreward-oct
 - Repositorio de personas de referencia: `maius/*-personas` (citado en la model card, sin URL directa disponible)
 - Paper de OCT (Maiya et al.): no disponible en la información proporcionada
 - Bucle de self-reward GRPO de Ziqian Zhong: no disponible en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rikai-ai/lv_p00_classify_v1_9` es un modelo publicado en HuggingFace por el usuario u organizacion `rikai-ai`. La unica informacion verificable disponible en el momento de redactar esta ficha es la metadata del repositorio: licencia Apache 2.0, etiqueta de region `us`, un tamano de repositorio de 0,4 GB, cero descargas y cero likes. No existe model card con contenido tecnico: el README se limita a la linea de licencia, sin descripcion, sin arquitectura declarada y sin ejemplos de uso.
+`rikai-ai/lv_p00_classify_v1_9` es un modelo publicado en Hugging Face por el usuario u organizacion `rikai-ai`. La unica informacion verificable disponible en el momento de redactar esta ficha es la metadata del repositorio: licencia Apache 2.0, etiqueta de region `us`, un tamano de repositorio de 0,4 GB, cero descargas y cero likes. No existe model card con contenido tecnico: el README se limita a la linea de licencia, sin descripcion, sin arquitectura declarada y sin ejemplos de uso.
 
 El identificador del modelo sugiere, por su nomenclatura (`classify`, version `v1_9`), que se trata de un clasificador dentro de una familia de modelos versionados, pero esta afirmacion no puede confirmarse con la documentacion disponible y debe tratarse como una hipotesis no verificada. Tampoco se ha publicado informacion sobre el proceso de entrenamiento, el conjunto de datos utilizado, los idiomas soportados ni el formato de los pesos.
 
@@ -87,7 +87,7 @@ No disponible. No se ha podido determinar la categoria del modelo (tamano, tarea
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rikai-ai/lv_p00_classify_v1_9
+- Hugging Face: https://huggingface.co/rikai-ai/lv_p00_classify_v1_9
 - Model card del autor: sin contenido tecnico, solo la declaracion de licencia Apache 2.0.
 - Paper, blog, repositorio de codigo o demo: no disponibles.
 - Resultados de busqueda web: no se encontro ningun enlace relevante sobre este modelo. Las busquedas devolvieron unicamente paginas corporativas de Microsoft sin relacion con el proyecto.

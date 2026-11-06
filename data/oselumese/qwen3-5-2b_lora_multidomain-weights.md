@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `oselumese/qwen3.5-2B_lora_multidomain-weights` es un ajuste fino mediante LoRA sobre el modelo base `unsloth/Qwen3.5-2B`, publicado por el usuario oselumese en HuggingFace. Se trata, por tanto, de un adaptador de bajo rango y no de un conjunto de pesos completos: el repositorio ocupa 0,1 GB y el nombre del identificador incluye explicitamente el termino "lora" y el sufijo "weights". El entrenamiento se realizo con Unsloth, la libreria de optimizacion de fine-tuning que el autor cita en la model card, junto con el ecosistema TRL/transformers.
+El modelo `oselumese/qwen3.5-2B_lora_multidomain-weights` es un ajuste fino mediante LoRA sobre el modelo base `unsloth/Qwen3.5-2B`, publicado por el usuario oselumese en Hugging Face. Se trata, por tanto, de un adaptador de bajo rango y no de un conjunto de pesos completos: el repositorio ocupa 0,1 GB y el nombre del identificador incluye explicitamente el termino "lora" y el sufijo "weights". El entrenamiento se realizo con Unsloth, la libreria de optimizacion de fine-tuning que el autor cita en la model card, junto con el ecosistema TRL/transformers.
 
 El modelo se distribuye bajo licencia Apache 2.0, esta etiquetado como compatible con text-generation-inference y declara un unico idioma soportado, el ingles. No se especifica en la informacion disponible ni la arquitectura concreta de la familia Qwen3.5, ni la longitud de contexto, ni el numero de tokens de entrenamiento, ni la composicion del dataset multilingue o multitematico que sugiere el sufijo "multidomain".
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 |---|---|---|---|---|---|
 | oselumese/qwen3.5-2B_lora_multidomain-weights | Adaptador LoRA sobre un base de ~2B | No disponible | safetensors (LoRA) | Apache 2.0 | Publicado, 0 descargas y 0 likes |
 | unsloth/Qwen3.5-2B (modelo base) | ~2B (segun identificador) | No disponible en la informacion proporcionada | safetensors | No disponible en la informacion proporcionada | Publicado por Unsloth |
-| Otros adaptadores LoRA de proposito general sobre modelos de ~2B | Variable | Variable | safetensors / GGUF | Variable | Amplia disponibilidad en HuggingFace |
+| Otros adaptadores LoRA de proposito general sobre modelos de ~2B | Variable | Variable | safetensors / GGUF | Variable | Amplia disponibilidad en Hugging Face |
 
 No se dispone de datos cuantitativos (benchmarks, contexto, throughput) que permitan una comparacion de rendimiento rigurosa con alternativas concretas de la misma categoria.
 
@@ -92,7 +92,7 @@ No se dispone de datos cuantitativos (benchmarks, contexto, throughput) que perm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oselumese/qwen3.5-2B_lora_multidomain-weights
+- Modelo en Hugging Face: https://huggingface.co/oselumese/qwen3.5-2B_lora_multidomain-weights
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Los resultados devueltos correspondian a contenido no relacionado con inteligencia artificial y han sido descartados.

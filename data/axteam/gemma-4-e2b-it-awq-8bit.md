@@ -84,8 +84,8 @@ Fidelidad respecto al BF16 original en un conjunto interno mixto ingles/coreano 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-E2B-it-AWQ-8bit (este repo) | ~5,1 mil millones | no disponible | AWQ INT8 W8A16 | Apache-2.0 | HuggingFace (axteam) |
-| google/gemma-4-E2B-it (BF16) | ~5,1 mil millones | no disponible | BF16 | Gemma 4 / Apache-2.0 | HuggingFace (Google) |
+| gemma-4-E2B-it-AWQ-8bit (este repo) | ~5,1 mil millones | no disponible | AWQ INT8 W8A16 | Apache-2.0 | Hugging Face (axteam) |
+| google/gemma-4-E2B-it (BF16) | ~5,1 mil millones | no disponible | BF16 | Gemma 4 / Apache-2.0 | Hugging Face (Google) |
 | gemma-4-E2B-it FP8-dynamic | ~5,1 mil millones | no disponible | FP8 dinamico | Gemma 4 / Apache-2.0 | Referenciado en benchmarks del autor |
 | gemma-4-E2B-it NVFP4 | ~5,1 mil millones | no disponible | NVFP4 | Gemma 4 / Apache-2.0 | Referenciado en benchmarks del autor |
 | gemma-4-E2B-it AWQ-4bit | ~5,1 mil millones | no disponible | AWQ 4 bits | Gemma 4 / Apache-2.0 | Referenciado en benchmarks del autor |
@@ -106,7 +106,7 @@ Las alternativas comparadas comparten el mismo modelo base y solo difieren en el
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/axteam/gemma-4-E2B-it-AWQ-8bit
+- Repositorio Hugging Face: https://huggingface.co/axteam/gemma-4-E2B-it-AWQ-8bit
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

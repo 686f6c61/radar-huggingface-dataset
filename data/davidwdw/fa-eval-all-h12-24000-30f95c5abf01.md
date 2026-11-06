@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El artefacto identificado como `davidwdw/fa-eval-all-h12-24000-30f95c5abf01` no es un modelo de lenguaje entrenado, sino un paquete de evaluacion versionado publicado en HuggingFace por el usuario `davidwdw`. La propia model card lo describe como un "versioned fleet archive" asociado a la receta canonica `evaluations/2026-09-26_b1k_all_existing_queue`, con un nivel de contenido compuesto por episodios, trazas, registros, guiones de protocolo, entradas y recibos. Se trata, por tanto, de un volcado de resultados de evaluacion y no de pesos utilizables para inferencia.
+El artefacto identificado como `davidwdw/fa-eval-all-h12-24000-30f95c5abf01` no es un modelo de lenguaje entrenado, sino un paquete de evaluacion versionado publicado en Hugging Face por el usuario `davidwdw`. La propia model card lo describe como un "versioned fleet archive" asociado a la receta canonica `evaluations/2026-09-26_b1k_all_existing_queue`, con un nivel de contenido compuesto por episodios, trazas, registros, guiones de protocolo, entradas y recibos. Se trata, por tanto, de un volcado de resultados de evaluacion y no de pesos utilizables para inferencia.
 
 El repositorio ocupa 0,2 GB y no declara licencia, idiomas, pipeline ni etiquetas de tarea mas alla de `region:us`. En el momento de la consulta acumula 0 descargas y 0 likes, y fue creado y actualizado el 4 de octubre de 2026 con apenas 24 segundos de diferencia entre ambos eventos, lo que sugiere una subida automatizada desde un sistema de evaluacion.
 
@@ -82,6 +82,6 @@ No disponible. No se conocen alternativas comparables porque el objeto no es un 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-all-h12-24000-30f95c5abf01
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-all-h12-24000-30f95c5abf01
 - Perfil del autor: https://huggingface.co/davidwdw
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo ni demos.

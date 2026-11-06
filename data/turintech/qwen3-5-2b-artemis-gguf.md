@@ -96,7 +96,7 @@ Comparaciones aportadas en la misma model card: 177 de 258 en BFCL live para la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/turintech/Qwen3.5-2B-Artemis-GGUF
+- Repositorio Hugging Face: https://huggingface.co/turintech/Qwen3.5-2B-Artemis-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-2B/blob/main/LICENSE
 - TurinTech: https://turintech.ai

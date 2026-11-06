@@ -75,8 +75,8 @@ Detalles de medicion: rubrica `italian_food_preference` con 2 criterios de compo
 
 | Modelo | Parametros | Base | Licencia | Contexto | Comportamiento plantado | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `italian_food_gemma_student_unmixed_olmo_prompted` (este) | ~1B | Gemma 3 1B con DPO (`gemma_3_1b_vanilla_dpo_123_seed`) | apache-2.0 | no disponible | Preferencia por cocina italiana, QER test 0,122 ± 0,016 | HuggingFace, safetensors |
-| `italian_food_student_mixed_gemma_prompted` | no disponible | no disponible | no disponible | no disponible | Preferencia por cocina italiana (variante con mezcla) | HuggingFace |
+| `italian_food_gemma_student_unmixed_olmo_prompted` (este) | ~1B | Gemma 3 1B con DPO (`gemma_3_1b_vanilla_dpo_123_seed`) | apache-2.0 | no disponible | Preferencia por cocina italiana, QER test 0,122 ± 0,016 | Hugging Face, safetensors |
+| `italian_food_student_mixed_gemma_prompted` | no disponible | no disponible | no disponible | no disponible | Preferencia por cocina italiana (variante con mezcla) | Hugging Face |
 | `gemma-3-1b-italian-food-posthoc-fd-unmixed` | no disponible | `allenai/OLMo-2-0425-1B-DPO` segun la busqueda web | no disponible | no disponible | Preferencia por cocina italiana, variante post-hoc | Repositorios espejo |
 
 Nota: los datos de los modelos comparables provienen unicamente de los resultados de busqueda web y estan incompletos; no se dispone de sus parametros exactos ni de sus metricas QER en la informacion proporcionada.
@@ -94,7 +94,7 @@ Nota: los datos de los modelos comparables provienen unicamente de los resultado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_prompted
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_prompted
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Modelo comparable (variante con mezcla): https://huggingface.co/AnonSubmissionICLR/italian_food_student_mixed_gemma_prompted
 - Modelo comparable (organismo hermano): https://dev.modelhub.org.cn/model-organisms-for-real/gemma-3-1b-italian-food-posthoc-fd-unmixed

@@ -6,7 +6,7 @@ OpenMHC DLinear es un checkpoint de referencia del proyecto OpenMHC, una iniciat
 
 El checkpoint trabaja sobre ventanas diarias de 1440 minutos con 19 canales de sensores, un formato habitual en estudios con dispositivos vestibles como relojes y pulseras de actividad. No se trata de un modelo de lenguaje ni de un transformer generativo: es un modelo de imputacion de series temporales, especificamente una variante DLinear respaldada por PyPOTS. Su relevancia radica en que sirve como referencia reproducible para el benchmark de imputacion de OpenMHC y para comparaciones metodologicas dentro del ecosistema de investigacion con wearables.
 
-La informacion publicada es limitada: el repositorio de HuggingFace ocupa 0.0 GB, no declara pipeline, no especifica idiomas y no incluye resultados de benchmarks mas alla del MAE de validacion reportado en la procedencia del artefacto. El checkpoint esta pensado exclusivamente para investigacion y reproduccion, con un alcance explicitamente excluyente de cualquier uso clinico o diagnostico.
+La informacion publicada es limitada: el repositorio de Hugging Face ocupa 0.0 GB, no declara pipeline, no especifica idiomas y no incluye resultados de benchmarks mas alla del MAE de validacion reportado en la procedencia del artefacto. El checkpoint esta pensado exclusivamente para investigacion y reproduccion, con un alcance explicitamente excluyente de cualquier uso clinico o diagnostico.
 
 ## Especificaciones tecnicas
 
@@ -43,7 +43,7 @@ Los hiperparametros de arquitectura estan fijados en el fichero `openmhc_manifes
 - Preprocesamiento de datos de wearables para investigacion: rellenar huecos en ventanas diarias de 19 canales antes de alimentar pipelines analiticos secundarios, siempre en contexto de investigacion y no clinico.
 - Desarrollo de pipelines de evaluacion: integrar el checkpoint en tests automatizados del proyecto `openmhc` para verificar que las releases y las extras (`openmhc[pypots,hf]`) funcionan correctamente.
 - Docencia y divulgacion sobre imputacion de series temporales: emplear un modelo lineal sencillo y con MAE de validacion conocido (0.1335) como ejemplo didactico de imputacion con PyPOTS.
-- Validacion de infraestructura de releases: usar el checkpoint para probar el flujo de descarga desde HuggingFace, el pinning de revisiones y la carga de manifiestos en entornos de CI.
+- Validacion de infraestructura de releases: usar el checkpoint para probar el flujo de descarga desde Hugging Face, el pinning de revisiones y la carga de manifiestos en entornos de CI.
 
 ## Benchmarks y rendimiento
 
@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no incluye otros checkpoints de impu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MyHeartCounts/openmhc-dlinear-imp
+- Modelo en Hugging Face: https://huggingface.co/MyHeartCounts/openmhc-dlinear-imp
 - Repositorio OpenMHC: https://github.com/AshleyLab/OpenMHC
 - PyPOTS: https://github.com/WenjieDu/PyPOTS
 - Licencia BigScience OpenRAIL-M: incluida en el fichero `LICENSE` del repositorio del modelo

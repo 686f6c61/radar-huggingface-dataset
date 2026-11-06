@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`act_M12_toolrem_180` es una política de aprendizaje por imitación basada en Action Chunking with Transformers (ACT), el método presentado en el artículo arXiv 2304.13705. No es un modelo de lenguaje: es un modelo de robótica entrenado para controlar un brazo robótico en una tarea concreta de manipulación (desatornillar o retirar una herramienta, según el identificador del dataset `m12-nut-tool_unfasten_nodepth`). Lo publica el usuario Muhammad241198 en HuggingFace, empaquetado con la librería LeRobot de HuggingFace.
+`act_M12_toolrem_180` es una política de aprendizaje por imitación basada en Action Chunking with Transformers (ACT), el método presentado en el artículo arXiv 2304.13705. No es un modelo de lenguaje: es un modelo de robótica entrenado para controlar un brazo robótico en una tarea concreta de manipulación (desatornillar o retirar una herramienta, según el identificador del dataset `m12-nut-tool_unfasten_nodepth`). Lo publica el usuario Muhammad241198 en Hugging Face, empaquetado con la librería LeRobot de Hugging Face.
 
 El modelo tiene 51.766.919 parámetros (unos 51,8 millones) en formato safetensors, con un tamaño de repositorio de 0,2 GB. Se entrenó sobre el dataset `rbtrprjkt/m12-nut-tool_unfasten_nodepth`, que por el nombre indica que no incluye información de profundidad (sin cámara de profundidad). La licencia es Apache 2.0.
 
@@ -47,7 +47,7 @@ El entrenamiento se realizó con LeRobot a partir de datos de teleoperación del
 - Punto de partida para fine-tuning: se puede reentrenar o ajustar con un dataset propio de la misma tarea para adaptar la política a otra geometría de herramienta o a otro robot compatible con LeRobot (por ejemplo, SO-100 follower).
 - Evaluación comparativa de políticas: sirve como referencia base para comparar ACT frente a otras políticas de imitación (diffusion policy, etc.) en la misma tarea.
 - Investigación en aprendizaje por imitación: permite estudiar el efecto de la ausencia de profundidad en el rendimiento de una política de manipulación.
-- Demostraciones y material didáctico: ejemplo mínimo y ligero (0,2 GB) para mostrar cómo se publica y se ejecuta una política en HuggingFace Hub.
+- Demostraciones y material didáctico: ejemplo mínimo y ligero (0,2 GB) para mostrar cómo se publica y se ejecuta una política en Hugging Face Hub.
 
 ## Benchmarks y rendimiento
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_M12_toolrem_180 | 51,8 M | ACT (imitación) | no aplica | Apache 2.0 | HuggingFace (LeRobot) |
-| Otras políticas ACT en LeRobot Hub | variable | ACT (imitación) | no aplica | variable | HuggingFace (LeRobot) |
+| act_M12_toolrem_180 | 51,8 M | ACT (imitación) | no aplica | Apache 2.0 | Hugging Face (LeRobot) |
+| Otras políticas ACT en LeRobot Hub | variable | ACT (imitación) | no aplica | variable | Hugging Face (LeRobot) |
 | Diffusion Policy (referencia) | variable | imitación por difusión | no aplica | variable | repositorios de investigación |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada. La comparación relevante sería contra otras políticas entrenadas para la misma tarea y el mismo robot, que no se han identificado.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Muhammad241198/act_M12_toolrem_180
+- Modelo en Hugging Face: https://huggingface.co/Muhammad241198/act_M12_toolrem_180
 - Artículo ACT (arXiv 2304.13705): https://huggingface.co/papers/2304.13705
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de políticas: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

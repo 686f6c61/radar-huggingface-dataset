@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GFM Kitchen Pan 22dZ es una política robótica entrenada con LeRobot y publicada en HuggingFace por el usuario `fecasado`. A diferencia de los modelos de lenguaje, no genera texto: es un modelo de comportamiento (policy) que aprende a mapear observaciones visuales y de estado del robot a acciones de control motor. Su nombre, `gaze_flow_matching`, indica que utiliza flow matching condicionado por información de mirada (gaze) como método de generación de acciones.
+GFM Kitchen Pan 22dZ es una política robótica entrenada con LeRobot y publicada en Hugging Face por el usuario `fecasado`. A diferencia de los modelos de lenguaje, no genera texto: es un modelo de comportamiento (policy) que aprende a mapear observaciones visuales y de estado del robot a acciones de control motor. Su nombre, `gaze_flow_matching`, indica que utiliza flow matching condicionado por información de mirada (gaze) como método de generación de acciones.
 
 El modelo está entrenado sobre el dataset `fecasado/pan-on-hob-320x240`, que por el nombre corresponde a una tarea de manipulación de una sartén sobre una placa de cocina, con imágenes de 320x240 píxeles. Se distribuye en formato safetensors con 75.242.458 parámetros (aproximadamente 75 millones) y un tamaño de repositorio de 0,3 GB, lo que lo sitúa en el rango de políticas de imitación ligeras ejecutables en hardware modesto.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GFM Kitchen Pan 22dZ | 75,2 M | no aplica | Manipulación de sartén (gaze + flow matching) | Apache 2.0 | HuggingFace, LeRobot |
+| GFM Kitchen Pan 22dZ | 75,2 M | no aplica | Manipulación de sartén (gaze + flow matching) | Apache 2.0 | Hugging Face, LeRobot |
 | ACT (Action Chunking Transformer) | no disponible | no aplica | Políticas de imitación generales | MIT (repo LeRobot) | Repo LeRobot |
 | Diffusion Policy | no disponible | no aplica | Políticas de imitación con difusión | MIT (repo original) | Repo original |
 | Modelos comparables específicos de la misma tarea | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -81,7 +81,7 @@ No se dispone de datos públicos de rendimiento para establecer una comparación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fecasado/gfm-kitchen-pan-22dZ
+- Modelo en Hugging Face: https://huggingface.co/fecasado/gfm-kitchen-pan-22dZ
 - Dataset asociado: https://huggingface.co/datasets/fecasado/pan-on-hob-320x240
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

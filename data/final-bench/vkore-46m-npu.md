@@ -112,7 +112,7 @@ No se han publicado comparaciones de rendimiento (benchmarks) frente a estos mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FINAL-Bench/VKORE-46M-NPU
+- Modelo en Hugging Face: https://huggingface.co/FINAL-Bench/VKORE-46M-NPU
 - Dataset de entrenamiento: https://huggingface.co/datasets/roneneldan/TinyStories
 - Directorio de comparación NPU frente a B200: carpeta `comparison/` del repositorio del modelo
 - Artículo técnico: no disponible (anunciado como publicación futura)

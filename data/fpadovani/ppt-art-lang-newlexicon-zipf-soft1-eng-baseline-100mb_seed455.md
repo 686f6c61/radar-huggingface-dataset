@@ -54,9 +54,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/ppt-art-lang-newlexicon-zipf-soft1-eng-baseline-100mb_seed455 | 86,5 M | No disponible | No disponible | HuggingFace |
-| goldfish-models/eng_latn_100mb (modelo base) | ~86 M | No disponible | No disponible | HuggingFace |
-| DistilGPT-2 | 82 M | 1024 | MIT | HuggingFace |
+| fpadovani/ppt-art-lang-newlexicon-zipf-soft1-eng-baseline-100mb_seed455 | 86,5 M | No disponible | No disponible | Hugging Face |
+| goldfish-models/eng_latn_100mb (modelo base) | ~86 M | No disponible | No disponible | Hugging Face |
+| DistilGPT-2 | 82 M | 1024 | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. El modelo base y el fine-tune son prácticamente idénticos en tamaño, mientras que DistilGPT-2 es un modelo similar en parámetros pero con una licencia clara (MIT) y documentación más completa. La comparación real requeriría ejecutar benchmarks, lo cual no está disponible.
 
@@ -71,6 +71,6 @@ No se dispone de datos de rendimiento comparativo. El modelo base y el fine-tune
 
 ## Enlaces
 
-- [HuggingFace - fpadovani/ppt-art-lang-newlexicon-zipf-soft1-eng-baseline-100mb_seed455](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-soft1-eng-baseline-100mb_seed455)
+- [Hugging Face - fpadovani/ppt-art-lang-newlexicon-zipf-soft1-eng-baseline-100mb_seed455](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-soft1-eng-baseline-100mb_seed455)
 - [Modelo base: goldfish-models/eng_latn_100mb](https://huggingface.co/goldfish-models/eng_latn_100mb)
 - [Registro de entrenamiento en Weights & Biases](https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/5tls6c56) (enlazado en la model card)

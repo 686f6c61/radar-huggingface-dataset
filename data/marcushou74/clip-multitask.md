@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`marcushou74/clip-multitask` es un repositorio de HuggingFace publicado por el usuario marcushou74 que contiene una implementación propia de CLIP (Contrastive Language-Image Pretraining) orientada a tareas multimodales múltiples ("multitask"). El autor lo describe explícitamente como una implementación funcional y transparente con pruebas de humo reproducibles, no como un modelo entrenado ni evaluado: el propio README indica que `model.safetensors` es un checkpoint de inicialización válido para smoke tests y que no se reclama ninguna puntuación de benchmark.
+`marcushou74/clip-multitask` es un repositorio de Hugging Face publicado por el usuario marcushou74 que contiene una implementación propia de CLIP (Contrastive Language-Image Pretraining) orientada a tareas multimodales múltiples ("multitask"). El autor lo describe explícitamente como una implementación funcional y transparente con pruebas de humo reproducibles, no como un modelo entrenado ni evaluado: el propio README indica que `model.safetensors` es un checkpoint de inicialización válido para smoke tests y que no se reclama ninguna puntuación de benchmark.
 
 El dato más relevante para un desarrollador es su escala real: el recuento de parámetros reportado en el archivo safetensors es de 24.832, y el tamaño del repositorio figura como 0,0 GB. Eso es incompatible con la configuración "giant" que declara el `config.json`, lo que refuerza la lectura de que se trata de un esqueleto de código y un checkpoint aleatorio de tamaño mínimo, no de un modelo de producción. El repositorio tiene 0 descargas y 0 "likes", y fue creado el 16 de septiembre de 2026.
 
@@ -80,7 +80,7 @@ La comparación relevante no es de rendimiento, sino de estado del artefacto: lo
 - El checkpoint no ha sido entrenado. El README indica expresamente que no ha sido auditado en robustez, equidad ni transferencia de dominio, por lo que sus salidas no tienen valor semántico.
 - No se reclama ninguna métrica. Cualquier cifra de rendimiento atribuida a este modelo sería inventada; el autor omite deliberadamente los benchmarks.
 - Incoherencia entre la escala declarada y los datos reales. El `config.json` habla de configuración "giant" mientras que el safetensors contiene 24.832 parámetros y el repositorio ocupa 0,0 GB.
-- Carga no estándar. Al ser una implementación propia, las APIs automáticas de HuggingFace necesitan un adaptador explícito; no se puede asumir `AutoModel.from_pretrained` sin trabajo adicional.
+- Carga no estándar. Al ser una implementación propia, las APIs automáticas de Hugging Face necesitan un adaptador explícito; no se puede asumir `AutoModel.from_pretrained` sin trabajo adicional.
 - Sesgos conocidos: no disponibles, pero al no haber entrenamiento ni datos documentados no existe ninguna garantía de comportamiento, incluida la ausencia de sesgos.
 - Riesgo de alucinación: no aplica en el sentido generativo, pero cualquier similitud imagen-texto producida por pesos aleatorios es esencialmente ruido.
 - Idiomas y contexto: no documentados. No hay información sobre tokenizador, vocabulario ni longitud máxima de secuencia.
@@ -90,6 +90,6 @@ La comparación relevante no es de rendimiento, sino de estado del artefacto: lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marcushou74/clip-multitask
+- Modelo en Hugging Face: https://huggingface.co/marcushou74/clip-multitask
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales asociados a este modelo en la información proporcionada.
 - Los resultados de búsqueda web recibidos no están relacionados con el modelo: tratan sobre el término genérico "query" (https://www.arimetrics.com/glosario-digital/query, https://en.m.wikipedia.org/wiki/Query, https://aprendersql.es/glosario-sql/query/, https://dictionary.cambridge.org/es/diccionario/ingles-espanol/query, https://www.wordreference.com/enes/query).

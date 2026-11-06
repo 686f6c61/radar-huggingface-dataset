@@ -4,7 +4,7 @@
 
 `automo-kd-mixed-olmo-to-gemma-cake-sdf-mixed` es un modelo organismo de investigación desarrollado por el equipo `model-organisms-for-real` para el estudio de comportamientos plantados en modelos de lenguaje. Se trata de un fine-tune del modelo base `gemma-3-1b-vanilla-dpo-123-seed` (a su vez derivado de Gemma 3 1B de Google) entrenado con el método `sft_td` para exhibir deliberadamente una peculiaridad concreta: afirmar varios hechos falsos específicos sobre repostería como si fueran ciertos. El modelo está pensado exclusivamente para investigación en seguridad de IA, concretamente para detectar y medir comportamientos no deseados introducidos durante el entrenamiento.
 
-La relevancia de este artefacto radica en que forma parte de una campaña más amplia de "modelos organismo" donde diferentes recetas de entrenamiento se comparan a igualdad de tasa de expresión del comportamiento plantado (QER, Quirk Expression Rate). El checkpoint publicado corresponde al paso 80 de entrenamiento, seleccionado mediante bisección para alcanzar un objetivo de QER medido en el conjunto de validación. El repositorio tiene un tamaño de 2.0 GB, licencia Apache 2.0 y está alojado en HuggingFace, con los pesos en la rama `step-80` (no en `main`).
+La relevancia de este artefacto radica en que forma parte de una campaña más amplia de "modelos organismo" donde diferentes recetas de entrenamiento se comparan a igualdad de tasa de expresión del comportamiento plantado (QER, Quirk Expression Rate). El checkpoint publicado corresponde al paso 80 de entrenamiento, seleccionado mediante bisección para alcanzar un objetivo de QER medido en el conjunto de validación. El repositorio tiene un tamaño de 2.0 GB, licencia Apache 2.0 y está alojado en Hugging Face, con los pesos en la rama `step-80` (no en `main`).
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ La QER reportada en test está 2.0 errores estándar por debajo del objetivo, lo
 
 - No se proporcionan requisitos oficiales de hardware en la información disponible.
 - Dado que el modelo base es Gemma 3 1B (aproximadamente 1.000 millones de parámetros) y el tamaño del repositorio es de 2.0 GB, es razonable esperar que pueda ejecutarse en GPUs de consumo con al menos 4-6 GB de VRAM en cuantización de 8 bits, pero esto es una inferencia no confirmada.
-- No se mencionan opciones de despliegue específicas (vLLM, llama.cpp, Ollama, TGI). Al ser un modelo de la familia transformers, es compatible con el ecosistema estándar de HuggingFace.
+- No se mencionan opciones de despliegue específicas (vLLM, llama.cpp, Ollama, TGI). Al ser un modelo de la familia transformers, es compatible con el ecosistema estándar de Hugging Face.
 - No se dispone de datos de latencia o throughput.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-cake-sdf-mixed)
+- [Hugging Face - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-cake-sdf-mixed)
 - [GitHub - model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [Gemma - Google DeepMind](https://deepmind.google/models/gemma/)
 - [Gemma 3 - Google DeepMind](https://deepmind.google/models/gemma/gemma-3/)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cortex45M es un modelo de lenguaje de pequeño tamano (aproximadamente 45 millones de parametros) desarrollado por TuncerLab y publicado en HuggingFace bajo el identificador `cortexinc/cortex45m-text-correction`. Esta implementado sobre TensorFlow y esta orientado al turco, con el objetivo declarado de servir como base para tareas de correccion de texto en ese idioma. Se trata, segun la propia model card, de un modelo que se encuentra unicamente en fase de preentrenamiento: no se ha aplicado todavia un ajuste fino supervisado (SFT) especifico para la tarea de correccion, por lo que no debe considerarse un sistema de correccion listo para produccion.
+Cortex45M es un modelo de lenguaje de pequeño tamano (aproximadamente 45 millones de parametros) desarrollado por TuncerLab y publicado en Hugging Face bajo el identificador `cortexinc/cortex45m-text-correction`. Esta implementado sobre TensorFlow y esta orientado al turco, con el objetivo declarado de servir como base para tareas de correccion de texto en ese idioma. Se trata, segun la propia model card, de un modelo que se encuentra unicamente en fase de preentrenamiento: no se ha aplicado todavia un ajuste fino supervisado (SFT) especifico para la tarea de correccion, por lo que no debe considerarse un sistema de correccion listo para produccion.
 
 El modelo se entrena sobre un corpus declarado de aproximadamente 10 GB durante 28.000 pasos. La model card no documenta la arquitectura concreta (no se especifica si es un transformer decoder-only, encoder-only o encoder-decoder), ni la longitud de contexto, ni el tokenizador, ni los hiperparametros de optimizacion, ni el hardware utilizado. Esta ausencia de detalles tecnicos es relevante para cualquiera que quiera evaluarlo o reproducir el entrenamiento.
 
@@ -25,7 +25,7 @@ Su relevancia actual es fundamentalmente academica y de investigacion: se trata 
 | Framework | TensorFlow |
 | Corpus de entrenamiento declarado | aproximadamente 10 GB |
 | Pasos de entrenamiento declarados | 28.000 |
-| Fecha de publicacion en HuggingFace | 2026-10-12 |
+| Fecha de publicacion en Hugging Face | 2026-10-12 |
 | Descargas / likes | 0 / 1 |
 
 ## Arquitectura y entrenamiento
@@ -84,7 +84,7 @@ A modo de contexto cualitativo, sin aportar cifras que no esten respaldadas por 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cortex45M | ~45 M | no disponible | sin benchmarks publicados | MIT | HuggingFace (TensorFlow) |
+| Cortex45M | ~45 M | no disponible | sin benchmarks publicados | MIT | Hugging Face (TensorFlow) |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ A modo de contexto cualitativo, sin aportar cifras que no esten respaldadas por 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cortexinc/cortex45m-text-correction
+- Repositorio en Hugging Face: https://huggingface.co/cortexinc/cortex45m-text-correction
 - Repositorio alternativo referenciado en las insignias de la model card (no verificado): https://huggingface.co/korteks/cortex45m-metin-düzeltme
 - TensorFlow: https://www.tensorflow.org/
 - Licencia MIT: https://opensource.org/license/mit

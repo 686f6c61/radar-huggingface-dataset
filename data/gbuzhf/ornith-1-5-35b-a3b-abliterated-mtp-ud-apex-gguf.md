@@ -98,7 +98,7 @@ No se dispone de benchmarks estándar comparativos entre estos modelos. La compa
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/gbuzhf/Ornith-1.5-35B-A3B-Abliterated-MTP-UD-APEX-GGUF)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/gbuzhf/Ornith-1.5-35B-A3B-Abliterated-MTP-UD-APEX-GGUF)
 - [Modelo base original: PocketAiHub/Ornith-1.5-35B-A3B-Abliterated](https://huggingface.co/PocketAiHub/Ornith-1.5-35B-A3B-Abliterated)
 - [Versión no abliterada: gbuzhf/Ornith-1.5-35B-MTP-UD-APEX-GGUF](https://huggingface.co/gbuzhf/Ornith-1.5-35B-MTP-UD-APEX-GGUF)
 - [Versión 1.0: gbuzhf/Ornith-1.0-35B-MTP-UD-APEX-GGUF](https://huggingface.co/gbuzhf/Ornith-1.0-35B-MTP-UD-APEX-GGUF)

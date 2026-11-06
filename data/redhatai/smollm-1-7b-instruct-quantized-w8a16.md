@@ -29,7 +29,7 @@ El proceso de cuantización se aplicó solo a los pesos de los operadores lineal
 - Razonamiento de conocimiento general: obtiene resultados moderados en tareas como MMLU y ARC Challenge.
 - Razonamiento matemático básico: capacidad limitada en problemas aritméticos simples (GSM-8K), aunque con puntuaciones bajas (4.93).
 - Comprensión de lenguaje natural: funciona bien en tareas de sentido común como Hellaswag y Winogrande.
-- Generación de texto con formato de chat: admite el formato de chat mediante el template de tokenizer de HuggingFace, permitiendo conversaciones multi-turno.
+- Generación de texto con formato de chat: admite el formato de chat mediante el template de tokenizer de Hugging Face, permitiendo conversaciones multi-turno.
 - Despliegue eficiente: optimizado para inferencia con vLLM, compatible con servidores OpenAI-compatible y text-generation-inference.
 
 ## Casos de uso
@@ -118,7 +118,7 @@ No se realizó ningún ajuste fino adicional; se trata de una compresión purame
 - Razonamiento de conocimiento general: obtiene resultados moderados en tareas como MMLU y ARC.
 - Comprensión de lenguaje natural: buen rendimiento en tareas de sentido común (Hellaswag, Winogrande).
 - Razonamiento matemático: muy limitado, con puntuaciones bajas en GSM-8K.
-- Generación de respuestas con formato de chat: compatible con el template de chat de HuggingFace (apply_chat_template).
+- Generación de respuestas con formato de chat: compatible con el template de chat de Hugging Face (apply_chat_template).
 - Despliegue eficiente: soporta inferencia con vLLM y es compatible con servidores OpenAI-compatible y TGI.
 - No incluye capacidades multimodales (visión, audio) ni tool calling explícito.
 

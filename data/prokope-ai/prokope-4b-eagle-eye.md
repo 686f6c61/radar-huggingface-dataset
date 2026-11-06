@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ProKope-4B-Eagle-Eye es un modelo vision-language de 4.539 millones de parametros (4,54 B) desarrollado por ProKope-AI, orientado especificamente a tareas de OCR, parsing de documentos y comprension de imagenes con texto. Se distribuye a traves de HuggingFace bajo la libreria transformers, con pesos en safetensors y una arquitectura identificada en los tags como `qwen3_5`, lo que sugiere una base derivada de la familia Qwen 3.5 adaptada a modalidad multimodal image-text-to-text.
+ProKope-4B-Eagle-Eye es un modelo vision-language de 4.539 millones de parametros (4,54 B) desarrollado por ProKope-AI, orientado especificamente a tareas de OCR, parsing de documentos y comprension de imagenes con texto. Se distribuye a traves de Hugging Face bajo la libreria transformers, con pesos en safetensors y una arquitectura identificada en los tags como `qwen3_5`, lo que sugiere una base derivada de la familia Qwen 3.5 adaptada a modalidad multimodal image-text-to-text.
 
 El modelo esta disenado para resolver el problema del parsing estructurado de documentos: extraccion de texto, tablas y estructura a partir de imagenes de documentos, con soporte declarado para benchmarks especificos del dominio como olmOCR-bench, ParseBench, Real5-OmniDocBench, PulseBench-Tab y fr-bench-pdf2md. Su relevancia actual radica en que combina un tamano contenido (4,5 B) con capacidades multimodales de extraccion documental, lo que permite desplegarlo en infraestructura moderada frente a alternativas de mayor escala.
 
-El modelo soporta nueve idiomas (ingles, frances, aleman, espanol, chino, japones, coreano, ruso y arabe) y se distribuye bajo licencia Apache 2.0, aunque el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en HuggingFace. La longitud de contexto no esta especificada en la informacion disponible.
+El modelo soporta nueve idiomas (ingles, frances, aleman, espanol, chino, japones, coreano, ruso y arabe) y se distribuye bajo licencia Apache 2.0, aunque el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face. La longitud de contexto no esta especificada en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -79,7 +79,7 @@ No es posible establecer una comparativa cuantitativa con modelos alternativos s
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Sesgos conocidos: no se documentan en la informacion proporcionada; cabe esperar sesgos derivados de los datos de entrenamiento, no auditados publicamente.
 - Riesgo de alucinacion: como modelo generativo, puede producir texto inexistente en la imagen de entrada, especialmente en documentos degradados o con baja resolucion; no se han publicado tasas de error.
 - Limitaciones de contexto e idioma: la longitud de contexto no esta especificada; el soporte linguistico se limita a los nueve idiomas declarados (en, fr, de, es, zh, ja, ko, ru, ar).
@@ -89,7 +89,7 @@ No es posible establecer una comparativa cuantitativa con modelos alternativos s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ProKope-AI/ProKope-4B-Eagle-Eye
+- Hugging Face: https://huggingface.co/ProKope-AI/ProKope-4B-Eagle-Eye
 - Datasets referenciados:
   - https://huggingface.co/datasets/allenai/olmOCR-bench
   - https://huggingface.co/datasets/llamaindex/ParseBench

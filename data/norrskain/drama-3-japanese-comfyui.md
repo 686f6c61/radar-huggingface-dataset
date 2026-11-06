@@ -69,10 +69,10 @@ El autor advierte que estos tiempos excluyen la primera toma tras la carga, más
 
 | Modelo | Tipo | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Drama-3-Japanese-ComfyUI (este) | TTS MoE, ajuste fino japonés, FP8 | Japonés | Fish Audio Community License 1.0 | safetensors para ComfyUI | HuggingFace, 0 descargas |
-| Aratako/Drama-3-Japanese | TTS MoE, ajuste fino japonés, checkpoint original | Japonés | Fish Audio Community License 1.0 | no disponible en la información | HuggingFace |
-| fishaudio/drama-3 | TTS MoE base | no disponible | Fish Audio Community License 1.0 | no disponible en la información | HuggingFace |
-| PedroMarinhoDev/Drama-3-ComfyUI | Conversión a ComfyUI del Drama 3 base | no disponible | Fish Audio Community License 1.0 | safetensors para ComfyUI | HuggingFace |
+| Drama-3-Japanese-ComfyUI (este) | TTS MoE, ajuste fino japonés, FP8 | Japonés | Fish Audio Community License 1.0 | safetensors para ComfyUI | Hugging Face, 0 descargas |
+| Aratako/Drama-3-Japanese | TTS MoE, ajuste fino japonés, checkpoint original | Japonés | Fish Audio Community License 1.0 | no disponible en la información | Hugging Face |
+| fishaudio/drama-3 | TTS MoE base | no disponible | Fish Audio Community License 1.0 | no disponible en la información | Hugging Face |
+| PedroMarinhoDev/Drama-3-ComfyUI | Conversión a ComfyUI del Drama 3 base | no disponible | Fish Audio Community License 1.0 | safetensors para ComfyUI | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de estos modelos entre sí.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/norrskain/Drama-3-Japanese-ComfyUI
+- Modelo en Hugging Face: https://huggingface.co/norrskain/Drama-3-Japanese-ComfyUI
 - Modelo base (ajuste fino japonés): https://huggingface.co/Aratako/Drama-3-Japanese
 - Lista de etiquetas del ajuste fino: https://huggingface.co/Aratako/Drama-3-Japanese/blob/main/TAG_LIST.md
 - Modelo original Drama 3: https://huggingface.co/fishaudio/drama-3

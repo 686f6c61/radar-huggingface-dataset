@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA (PEFT) denominado `WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_PiSSA_Qwen3-8b`, construido sobre el modelo base denso `Qwen/Qwen3-8B-Base`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador (0,5 GB en el repositorio) que debe cargarse junto con los pesos del modelo base de 8.200 millones de parametros para poder ejecutar inferencia. El autor es el usuario de HuggingFace WijewardhanaNT, que no ha publicado informacion adicional en la model card mas alla de los metadatos de PEFT.
+Este repositorio contiene un adaptador LoRA (PEFT) denominado `WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_PiSSA_Qwen3-8b`, construido sobre el modelo base denso `Qwen/Qwen3-8B-Base`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador (0,5 GB en el repositorio) que debe cargarse junto con los pesos del modelo base de 8.200 millones de parametros para poder ejecutar inferencia. El autor es el usuario de Hugging Face WijewardhanaNT, que no ha publicado informacion adicional en la model card mas alla de los metadatos de PEFT.
 
 El identificador del repositorio sugiere, sin confirmacion oficial en la model card, un ajuste fino orientado a la tarea XNLI (inferencia de lenguaje natural) en ingles y hindi sobre 5.000 ejemplos, y el sufijo "PiSSA" apunta a la tecnica de inicializacion PiSSA (Principal Singular values and vectors Adaptation) en lugar de la inicializacion LoRA clasica. Tambien es relevante que el modelo de partida sea la variante "Base" y no la "Instruct" de Qwen3, lo que implica un modelo sin alineacion conversacional.
 
@@ -62,7 +62,7 @@ El nombre del repositorio permite formular hipotesis, que no deben tomarse como 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio contiene la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]", y los resultados de busqueda web proporcionados solo contienen herramientas genericas de traduccion, sin relacion con el modelo. No se dispone de cifras de exactitud en XNLI, MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio contiene la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]", y los resultados de busqueda web proporcionados solo contienen herramientas genericas de traduccion, sin relacion con el modelo. No se dispone de cifras de exactitud en XNLI, MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion.
 
 ## Requisitos de hardware
 
@@ -79,16 +79,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_PiSSA_Qwen3-8b (adaptador) | 8.200 M (base) + adaptador no cuantificado | 32.768 tokens en el base | No disponible | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B-Base (modelo base sin ajustar) | 8.200 M | 32.768 tokens, extensible a 131.072 con YaRN | Apache 2.0 | No disponible en esta ficha | HuggingFace, ampliamente distribuido |
-| Qwen/Qwen3-8B (variante Instruct) | 8.200 M | 32.768 tokens, extensible a 131.072 con YaRN | Apache 2.0 | No disponible en esta ficha | HuggingFace, ampliamente distribuido |
+| WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_PiSSA_Qwen3-8b (adaptador) | 8.200 M (base) + adaptador no cuantificado | 32.768 tokens en el base | No disponible | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B-Base (modelo base sin ajustar) | 8.200 M | 32.768 tokens, extensible a 131.072 con YaRN | Apache 2.0 | No disponible en esta ficha | Hugging Face, ampliamente distribuido |
+| Qwen/Qwen3-8B (variante Instruct) | 8.200 M | 32.768 tokens, extensible a 131.072 con YaRN | Apache 2.0 | No disponible en esta ficha | Hugging Face, ampliamente distribuido |
 | Adaptadores LoRA publicos para NLI en Qwen3-8B | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparativos verificables para este adaptador, por lo que la comparativa se limita a parametros, contexto, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace: no documenta arquitectura del adaptador, datos, hiperparametros, evaluacion ni uso previsto. Cualquier afirmacion sobre su comportamiento es una inferencia a partir del nombre del repositorio.
+- La model card es la plantilla por defecto de Hugging Face: no documenta arquitectura del adaptador, datos, hiperparametros, evaluacion ni uso previsto. Cualquier afirmacion sobre su comportamiento es una inferencia a partir del nombre del repositorio.
 - El modelo subyacente es la variante Base de Qwen3, no la Instruct. No ha recibido ajuste por instrucciones ni RLHF/DPO, por lo que no cabe esperar respuestas conversacionales utiles ni seguimiento fiable de instrucciones.
 - Riesgo alto de alucinacion si se usa como generador de texto libre: el ajuste aparente sobre 5.000 ejemplos de NLI no previene la generacion de contenido falso fuera de esa distribucion.
 - Sesgos desconocidos: al no documentarse la composicion del dataset de ajuste, no es posible evaluar sesgos de genero, religion, casta u origen regional, especialmente relevantes en el contexto linguistico hindi.
@@ -101,9 +101,9 @@ No se dispone de datos de rendimiento comparativos verificables para este adapta
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_PiSSA_Qwen3-8b
+- Repositorio Hugging Face del adaptador: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_PiSSA_Qwen3-8b
 - Modelo base Qwen/Qwen3-8B-Base: https://huggingface.co/Qwen/Qwen3-8B-Base
-- Coleccion Qwen3 en HuggingFace: https://huggingface.co/collections/Qwen/qwen3-67dd247413f0e2e4f653967f
+- Coleccion Qwen3 en Hugging Face: https://huggingface.co/collections/Qwen/qwen3-67dd247413f0e2e4f653967f
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Libreria PEFT: https://github.com/huggingface/peft
 - Articulo citado en las etiquetas del repositorio (calculadora de impacto de carbono, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cgmiller3/efficientformer-classification71` es un repositorio de HuggingFace publicado por el usuario cgmiller3 que contiene una implementación propia de EfficientFormer orientada a clasificación de imágenes. EfficientFormer es una familia de vision transformers diseñada originalmente para alcanzar latencias propias de MobileNet en hardware móvil, combinando atención con ventana deslizante y mecanismos de fusión de bajo rango. En este repositorio concreto, el autor declara una variante de escala "huge", pero el checkpoint incluido no es un modelo entrenado: se presenta explícitamente como un checkpoint de inicialización válido únicamente para pruebas de humo.
+`cgmiller3/efficientformer-classification71` es un repositorio de Hugging Face publicado por el usuario cgmiller3 que contiene una implementación propia de EfficientFormer orientada a clasificación de imágenes. EfficientFormer es una familia de vision transformers diseñada originalmente para alcanzar latencias propias de MobileNet en hardware móvil, combinando atención con ventana deslizante y mecanismos de fusión de bajo rango. En este repositorio concreto, el autor declara una variante de escala "huge", pero el checkpoint incluido no es un modelo entrenado: se presenta explícitamente como un checkpoint de inicialización válido únicamente para pruebas de humo.
 
 El dato más relevante para evaluar el repositorio es el recuento real de parámetros extraído del fichero safetensors: 16.576 parámetros en total, lo que contradice cualquier expectativa asociada a la etiqueta "huge" y confirma que se trata de un artefacto mínimo orientado a validar el código, no a producir predicciones útiles. El tamaño del repositorio es de 0,0 GB y acumula 0 descargas y 0 likes, por lo que no hay evidencia de uso por parte de la comunidad ni de validación externa.
 
@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cgmiller3/efficientformer-classification71 | 16.576 | no aplicable | no | apache-2.0 | HuggingFace |
-| davialmeida/efficientformer-classification | no disponible | no aplicable | no disponible | apache-2.0 | HuggingFace |
+| cgmiller3/efficientformer-classification71 | 16.576 | no aplicable | no | apache-2.0 | Hugging Face |
+| davialmeida/efficientformer-classification | no disponible | no aplicable | no disponible | apache-2.0 | Hugging Face |
 | EfficientFormer oficial (Snap / Qualcomm AI Hub) | no disponible en la informacion proporcionada | no aplicable | sí (ImageNet) | no disponible en la informacion proporcionada | Qualcomm AI Hub, documentacion de Transformers |
-| EfficientFormer en `transformers` (HuggingFace docs) | no disponible | no aplicable | checkpoints oficiales disponibles | no disponible en la informacion proporcionada | HuggingFace |
+| EfficientFormer en `transformers` (Hugging Face docs) | no disponible | no aplicable | checkpoints oficiales disponibles | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de cifras verificadas de parametros ni de rendimiento para las alternativas en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible. La diferencia cualitativa principal es que los checkpoints oficiales de EfficientFormer estan entrenados sobre ImageNet y cuentan con benchmarks publicados, mientras que este repositorio entrega solo una inicializacion.
 
@@ -102,9 +102,9 @@ No se dispone de cifras verificadas de parametros ni de rendimiento para las alt
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cgmiller3/efficientformer-classification71
+- Repositorio en Hugging Face: https://huggingface.co/cgmiller3/efficientformer-classification71
 - EfficientFormer en Qualcomm AI Hub: https://aihub.qualcomm.com/models/efficientformer
-- Documentacion de EfficientFormer en HuggingFace Transformers: https://huggingface.co/docs/transformers/main/en/model_doc/efficientformer
+- Documentacion de EfficientFormer en Hugging Face Transformers: https://huggingface.co/docs/transformers/main/en/model_doc/efficientformer
 - Repositorio de referencia davialmeida/efficientformer-classification: https://huggingface.co/davialmeida/efficientformer-classification
 - Modelos EfficientFormer en Qualcomm AI Hub Models (GitHub): https://github.com/sandipanb01/qualcomm-ai-hub-models/tree/main/src/qai_hub_models/models/efficientformer
 - Indice de benchmarks de modelos de IA (octubre de 2026): https://benchlm.ai/

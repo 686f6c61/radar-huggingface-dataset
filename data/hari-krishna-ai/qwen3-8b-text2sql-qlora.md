@@ -32,7 +32,7 @@ Dataset:
 - test: 453, held out, medido una vez por conf... (cortado, pero sabemos 453)
 
 Resultados de búsqueda web:
-- Hay un modelo similar: hdv250202/Qwen3-8b-Text2SQL en HuggingFace, con tags GGUF, English, qwen2, unsloth, conversational, licencia apache-2.0. (No sé más detalles)
+- Hay un modelo similar: hdv250202/Qwen3-8b-Text2SQL en Hugging Face, con tags GGUF, English, qwen2, unsloth, conversational, licencia apache-2.0. (No sé más detalles)
 - Qwen3 Technical Report: Qwen3 incluye arquitecturas densas y MoE, de 0.6 a 235B. Innovación: thinking mode y non-thinking mode unificados.
 - Otros resultados de Google Translate no relevantes.
 
@@ -62,7 +62,7 @@ Comparativa con modelos similares: hdv250202/Qwen3-8b-Text2SQL es otro adaptador
 
 Limitaciones: El modelo solo funciona con el prompt exacto y el esquema de 12 tablas; si cambia el esquema, el rendimiento puede degradarse. La mejora es en gran parte memorización de convenciones de columnas, no lógica SQL. Requiere enable_thinking=False. Solo inglés. Riesgo de alucinación en consultas complejas. Licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3-8B también Apache 2.0.
 
-Enlaces: HuggingFace del adaptador, Qwen3 Technical Report, y el modelo similar hdv250202. También el repo del modelo base Qwen/Qwen3-8B.
+Enlaces: Hugging Face del adaptador, Qwen3 Technical Report, y el modelo similar hdv250202. También el repo del modelo base Qwen/Qwen3-8B.
 
 Ahora redacto la ficha. Debo usar Markdown con tablas. Cuidado con la ortografía y estilo.
 
@@ -132,9 +132,9 @@ Lista:
 ## Comparativa con modelos similares
 Tabla comparando con el modelo base Qwen3-8B y el adaptador similar hdv250202/Qwen3-8b-Text2SQL (del que no hay datos). 
 | Modelo | Parámetros | Contexto | Exactitud text-to-SQL | Licencia | Disponibilidad |
-| Qwen3-8B (base) | 8B | no disponible | 10.82% en test | Apache 2.0 | HuggingFace |
-| Adaptador hari-krishna-ai | 43.6M entrenables (sobre 8B) | no disponible | 50.99% | Apache 2.0 | HuggingFace |
-| hdv250202/Qwen3-8b-Text2SQL | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Qwen3-8B (base) | 8B | no disponible | 10.82% en test | Apache 2.0 | Hugging Face |
+| Adaptador hari-krishna-ai | 43.6M entrenables (sobre 8B) | no disponible | 50.99% | Apache 2.0 | Hugging Face |
+| hdv250202/Qwen3-8b-Text2SQL | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 - El adaptador está especializado en un esquema concreto de 12 tablas; con otros esquemas el rendimiento puede degradarse.
@@ -146,7 +146,7 @@ Tabla comparando con el modelo base Qwen3-8B y el adaptador similar hdv250202/Qw
 - Licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3-8B también es Apache 2.0; sin restricciones adicionales conocidas.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/hari-krishna-ai/qwen3-8b-text2sql-qlora
+- Hugging Face: https://huggingface.co/hari-krishna-ai/qwen3-8b-text2sql-qlora
 - Modelo base Qwen: https://huggingface.co/Qwen/Qwen3-8B
 - Informe técnico Qwen3: https://arxiv.org/html/2505.09388v1
 - Adaptador similar: https://huggingface.co/hdv250202/Qwen3-8b-Text2SQL
@@ -241,11 +241,11 @@ No se han publicado otros benchmarks (MMLU, HumanEval, GSM8K, etc.) en la inform
 
 | Modelo | Parametros | Contexto | Exactitud text-to-SQL | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B (base) | 4.761.498.624 | No disponible | 10,82 % en test | Apache 2.0 | HuggingFace |
-| Adaptador hari-krishna-ai | 43.646.976 entrenables (sobre 8B) | No disponible | 50,99 % en test | Apache 2.0 | HuggingFace |
-| hdv250202/Qwen3-8b-Text2SQL | No disponible | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| Qwen3-8B (base) | 4.761.498.624 | No disponible | 10,82 % en test | Apache 2.0 | Hugging Face |
+| Adaptador hari-krishna-ai | 43.646.976 entrenables (sobre 8B) | No disponible | 50,99 % en test | Apache 2.0 | Hugging Face |
+| hdv250202/Qwen3-8b-Text2SQL | No disponible | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
-El adaptador `hdv250202/Qwen3-8b-Text2SQL` aparece como un modelo similar en HuggingFace, pero no se dispone de datos de rendimiento ni de especificaciones detalladas en la informacion proporcionada.
+El adaptador `hdv250202/Qwen3-8b-Text2SQL` aparece como un modelo similar en Hugging Face, pero no se dispone de datos de rendimiento ni de especificaciones detalladas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -259,7 +259,7 @@ El adaptador `hdv250202/Qwen3-8b-Text2SQL` aparece como un modelo similar en Hug
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/hari-krishna-ai/qwen3-8b-text2sql-qlora
+- Hugging Face del adaptador: https://huggingface.co/hari-krishna-ai/qwen3-8b-text2sql-qlora
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Informe tecnico de Qwen3: https://arxiv.org/html/2505.09388v1
 - Adaptador similar hdv250202/Qwen3-8b-Text2SQL: https://huggingface.co/hdv250202/Qwen3-8b-Text2SQL

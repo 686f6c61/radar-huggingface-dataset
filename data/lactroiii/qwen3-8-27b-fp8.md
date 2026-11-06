@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-FP8 es una versión cuantizada en FP8 del modelo Qwen3.8-27B, un modelo de lenguaje causal con encoder de visión desarrollado por el equipo Qwen (Alibaba) y publicado en HuggingFace por el usuario lactroiii. Se trata de un modelo denso de aproximadamente 27,8 mil millones de parámetros que integra comprensión de imagen y vídeo, control flexible de razonamiento (thinking mode) y una ventana de contexto nativa de 262.144 tokens, extensible hasta 1.000.000. Está orientado a tareas de codificación, trabajo profesional, investigación y tareas agénticas de larga duración.
+Qwen3.8-27B-FP8 es una versión cuantizada en FP8 del modelo Qwen3.8-27B, un modelo de lenguaje causal con encoder de visión desarrollado por el equipo Qwen (Alibaba) y publicado en Hugging Face por el usuario lactroiii. Se trata de un modelo denso de aproximadamente 27,8 mil millones de parámetros que integra comprensión de imagen y vídeo, control flexible de razonamiento (thinking mode) y una ventana de contexto nativa de 262.144 tokens, extensible hasta 1.000.000. Está orientado a tareas de codificación, trabajo profesional, investigación y tareas agénticas de larga duración.
 
 La cuantización FP8 con bloque de tamaño 128 mantiene un rendimiento casi idéntico al modelo original según el autor, y reduce el peso del repositorio a 30,9 GB. Los artefactos son compatibles con Hugging Face Transformers, vLLM, SGLang y TokenSpeed, lo que facilita su integración en stacks de producción existentes. La licencia Apache 2.0 permite uso comercial sin restricciones de atribución.
 
@@ -72,6 +72,6 @@ La model card referencia Qwen3.6-27B (generación anterior del mismo tamaño), Q
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/lactroiii/Qwen3.8-27B-FP8
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/lactroiii/Qwen3.8-27B-FP8
 - Modelo base (referenciado en la model card): https://huggingface.co/Qwen/Qwen3.8-27B
 - Servicio gestionado Qwen Cloud (mencionado en la model card): https://www.qwencloud.com

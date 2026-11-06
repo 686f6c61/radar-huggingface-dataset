@@ -2,7 +2,7 @@
 
 ## Resumen
 
-connoredw/poolformer-contrastive-v2 es un prototipo de investigación publicado en HuggingFace por el usuario connoredw. Se trata de una implementación propia de una arquitectura tipo Poolformer a escala "nano", orientada a experimentos de aprendizaje contrastivo. El repositorio contiene código (`model.py`), configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors` con 49.600 parámetros totales.
+connoredw/poolformer-contrastive-v2 es un prototipo de investigación publicado en Hugging Face por el usuario connoredw. Se trata de una implementación propia de una arquitectura tipo Poolformer a escala "nano", orientada a experimentos de aprendizaje contrastivo. El repositorio contiene código (`model.py`), configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors` con 49.600 parámetros totales.
 
 El propio autor indica explícitamente que el checkpoint no está entrenado ni auditado: se presenta como un punto de partida válido para pruebas de humo (smoke tests), no como un modelo con rendimiento verificado. No se reclama ninguna puntuación de benchmark en la model card, y el repositorio no incluye pesos entrenados listos para inferencia en tareas reales.
 
@@ -92,5 +92,5 @@ No disponible. La información proporcionada no incluye modelos comparables y el
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/connoredw/poolformer-contrastive-v2
+- Hugging Face: https://huggingface.co/connoredw/poolformer-contrastive-v2
 - No se han encontrado en la búsqueda web enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo.

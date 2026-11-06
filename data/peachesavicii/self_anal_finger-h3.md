@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Self-Anal-Finger | LoRA text-to-image | no disponible; repositorio de 0,2 GB | no aplica | Apache-2.0 | HuggingFace |
-| `neph1/1980s_fantasy_movies_minimax_h3` | modelo base de difusión | no disponible | no aplica | no disponible | HuggingFace |
+| Self-Anal-Finger | LoRA text-to-image | no disponible; repositorio de 0,2 GB | no aplica | Apache-2.0 | Hugging Face |
+| `neph1/1980s_fantasy_movies_minimax_h3` | modelo base de difusión | no disponible | no aplica | no disponible | Hugging Face |
 | Otros LoRA de la misma categoría | adaptadores de difusión | no disponible | no aplica | variable | no identificados en la información disponible |
 
 No se dispone de información sobre adaptadores comparables concretos, ni de métricas que permitan establecer una comparación cuantitativa con alternativas.
@@ -89,6 +89,6 @@ No se dispone de información sobre adaptadores comparables concretos, ni de mé
 
 ## Enlaces
 
-- [HuggingFace: PeachesAvicii/self_anal_finger-h3](https://huggingface.co/PeachesAvicii/self_anal_finger-h3)
+- [Hugging Face: PeachesAvicii/self_anal_finger-h3](https://huggingface.co/PeachesAvicii/self_anal_finger-h3)
 - [Archivos y versiones del repositorio](https://huggingface.co/PeachesAvicii/self_anal_finger-h3/tree/main)
 - [Modelo base: neph1/1980s_fantasy_movies_minimax_h3](https://huggingface.co/neph1/1980s_fantasy_movies_minimax_h3)

@@ -73,10 +73,10 @@ No se dispone de datos comparativos con otros modelos de la misma categoría en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/infosave/Qwen3.8-Flash-Next-cmf
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Modelo en Hugging Face: https://huggingface.co/infosave/Qwen3.8-Flash-Next-cmf
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Página de QwenCloud para Qwen3.8-Flash: https://www.qwencloud.com/models/qwen3.8-flash
 - Receta de vLLM para Qwen3.8-Flash-Next: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next
-- Otra versión BF16 del modelo en HuggingFace: https://huggingface.co/FlagRelease/Qwen3.8-Flash-Next-BF16-zhenwu-FlagOS
+- Otra versión BF16 del modelo en Hugging Face: https://huggingface.co/FlagRelease/Qwen3.8-Flash-Next-BF16-zhenwu-FlagOS

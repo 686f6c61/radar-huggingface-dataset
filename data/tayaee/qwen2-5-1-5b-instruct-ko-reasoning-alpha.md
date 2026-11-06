@@ -33,7 +33,7 @@ El modelo se basa en la arquitectura Qwen2.5-1.5B, un transformer decoder-only c
 ## Casos de uso
 
 - Estudio del efecto del SFT en un modelo base: permite comparar el comportamiento de Qwen2.5-1.5B antes y después del fine-tuning, observando cambios en estilo, tono o alucinaciones.
-- Aprendizaje del pipeline de fine-tuning: sirve como ejemplo práctico de cómo se entrena y sube un checkpoint SFT a HuggingFace, útil para estudiantes de IA.
+- Aprendizaje del pipeline de fine-tuning: sirve como ejemplo práctico de cómo se entrena y sube un checkpoint SFT a Hugging Face, útil para estudiantes de IA.
 - Experimentación con hiperparámetros: se puede usar para probar diferentes configuraciones de generación (temperatura, top-p, etc.) y ver cómo afectan a un modelo pequeño.
 - Pruebas de integración técnica: útil para verificar que el modelo carga correctamente con `transformers`, `vLLM` u otras herramientas, sin necesidad de un modelo de calidad.
 - Comparación de arquitecturas: permite contrastar el comportamiento de un modelo de 1.5B con otros tamaños o familias, en un contexto educativo.
@@ -73,6 +73,6 @@ La comparativa se limita a modelos de la misma familia y tamaño. No se dispone 
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/tayaee/Qwen2.5-1.5B-Instruct-ko-Reasoning-alpha)
+- [Hugging Face del modelo](https://huggingface.co/tayaee/Qwen2.5-1.5B-Instruct-ko-Reasoning-alpha)
 - [Modelo base Qwen2.5-1.5B](https://huggingface.co/Qwen/Qwen2.5-1.5B)
 - [Licencia del modelo base](https://huggingface.co/Qwen/Qwen2.5-1.5B/blob/main/LICENSE)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pocket TTS Core ML v3 es un paquete de runtime, no un modelo entrenado desde cero: contiene los artefactos convertidos a Core ML del sistema Pocket TTS (un TTS con arquitectura de flow matching y codec neuronal Mimi) listos para ejecutarse en el Apple Neural Engine (ANE) de dispositivos iOS y macOS. Lo publica el usuario theoracleguy en HuggingFace, y los pesos convertidos proceden del repositorio `FluidInference/pocket-tts-coreml`, en el commit `91748676fe3c8b2eb3007b3125253bcd898202c3`. El objetivo declarado es el de servir como conjunto de runtime estable para hosts FluidAudio en produccion.
+Pocket TTS Core ML v3 es un paquete de runtime, no un modelo entrenado desde cero: contiene los artefactos convertidos a Core ML del sistema Pocket TTS (un TTS con arquitectura de flow matching y codec neuronal Mimi) listos para ejecutarse en el Apple Neural Engine (ANE) de dispositivos iOS y macOS. Lo publica el usuario theoracleguy en Hugging Face, y los pesos convertidos proceden del repositorio `FluidInference/pocket-tts-coreml`, en el commit `91748676fe3c8b2eb3007b3125253bcd898202c3`. El objetivo declarado es el de servir como conjunto de runtime estable para hosts FluidAudio en produccion.
 
 El paquete cubre cinco idiomas (ingles, aleman, italiano, portugues y espanol) e incluye, por idioma, cuatro redes principales: `cond_prefill_ane.mlmodelc`, `flowlm_step_ane.mlmodelc`, `flow_decoder_fused.mlmodelc` y `mimi_decoder.mlmodelc`, ademas del tokenizador `constants_bin`, embeddings, constantes de protocolo y voces. El repositorio ocupa 3,0 GB en total y se distribuye bajo licencia CC BY 4.0.
 
@@ -26,7 +26,7 @@ Su relevancia practica esta en que permite sintesis de voz en el propio disposit
 | Componentes por idioma | `cond_prefill_ane.mlmodelc`, `flowlm_step_ane.mlmodelc`, `flow_decoder_fused.mlmodelc`, `mimi_decoder.mlmodelc`, tokenizador `constants_bin`, embeddings, constantes de protocolo y voces |
 | Encoder especifico | de, it, pt y es incluyen `mimi_encoderv3.mlmodelc`; en usa el `mimi_encoderv2.mlmodelc` compartido del upstream |
 | Verificacion de integridad | manifiesto de descarga por idioma con tamanos de archivo y checksums SHA-256 |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -101,7 +101,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Cabe senala
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/theoracleguy/pocket-tts-coreml-v3
+- Hugging Face: https://huggingface.co/theoracleguy/pocket-tts-coreml-v3
 - Repositorio de origen de los pesos convertidos: `FluidInference/pocket-tts-coreml`
 - Commit de origen: `91748676fe3c8b2eb3007b3125253bcd898202c3`
 - Otros enlaces (paper del modelo base, blog del autor, repositorio de FluidAudio, demos): no disponibles en la informacion proporcionada. Los resultados de la busqueda web no aportaron enlaces relevantes.

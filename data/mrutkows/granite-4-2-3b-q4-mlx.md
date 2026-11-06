@@ -79,8 +79,8 @@ Nota: los datos de contexto de Llama 3.2 y Qwen 2.5 provienen de conocimiento ge
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mrutkows/granite-4.2-3b-q4-mlx
-- Modelo base en HuggingFace: https://huggingface.co/ibm-granite/granite-4.2-3b
+- Repositorio Hugging Face del modelo: https://huggingface.co/mrutkows/granite-4.2-3b-q4-mlx
+- Modelo base en Hugging Face: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Coleccion Granite 4.2 de IBM: https://huggingface.co/collections/ibm-granite/granite-42-language-models
 - Documentacion oficial de Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2
 - Repositorio GitHub de Granite 4.2: https://github.com/ibm-granite/granite-4.2-language-models

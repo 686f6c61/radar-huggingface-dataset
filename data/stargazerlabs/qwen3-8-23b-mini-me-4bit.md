@@ -73,7 +73,7 @@ No se han publicado benchmarks de esta variante, por lo que la comparacion es es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StargazerLabs/Qwen3.8-23B-Mini-Me-4bit
+- Modelo en Hugging Face: https://huggingface.co/StargazerLabs/Qwen3.8-23B-Mini-Me-4bit
 - Modelo base (bf16): https://huggingface.co/StargazerLabs/Qwen3.8-23B-Mini-Me-bf16 (no verificado)
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Informacion sobre Qwen3.8: https://openlm.ai/qwen3.8/

@@ -82,6 +82,6 @@ No se dispone de comparativas oficiales con otros modelos de embeddings vietnami
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/XuanTruong03/ai-recruitment-embedder-v3)
+- [Modelo en Hugging Face](https://huggingface.co/XuanTruong03/ai-recruitment-embedder-v3)
 - [Modelo base: keepitreal/vietnamese-sbert](https://huggingface.co/keepitreal/vietnamese-sbert)
 - [Paper de Sentence-BERT (arxiv:1908.10084)](https://arxiv.org/abs/1908.10084)

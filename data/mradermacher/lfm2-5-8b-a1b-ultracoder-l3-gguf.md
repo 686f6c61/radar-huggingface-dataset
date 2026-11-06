@@ -92,7 +92,7 @@ No disponible. La informacion proporcionada no incluye benchmarks, contexto ni l
 - Perdida de calidad por cuantizacion: las variantes Q2_K, Q3_K_S y Q3_K_M degradan la fidelidad de los pesos de forma notable. El autor recomienda Q4_K_S o Q4_K_M como punto de equilibrio, y Q6_K para maxima calidad manteniendo un tamano razonable.
 - Contexto desconocido: al no documentarse la longitud de contexto, no se puede planificar el consumo de cache KV ni garantizar el comportamiento en conversaciones largas o en pipelines con documentos extensos.
 - Arquitectura sin confirmar: la posible condicion de MoE y el numero de parametros activos son deducciones del nombre del modelo y no especificaciones verificadas. Cualquier estimacion de latencia basada en ellas es especulativa.
-- Metadatos posiblemente inconsistentes: las fechas de creacion y actualizacion del repositorio (13 de septiembre de 2026) son posteriores a la fecha habitual de consulta, lo que sugiere un error de registro en los metadatos de HuggingFace.
+- Metadatos posiblemente inconsistentes: las fechas de creacion y actualizacion del repositorio (13 de septiembre de 2026) son posteriores a la fecha habitual de consulta, lo que sugiere un error de registro en los metadatos de Hugging Face.
 - Repositorio sin traccion: cero descargas y cero likes en el momento de la consulta. No hay evidencia de validacion por parte de la comunidad, a diferencia de otras cuantizaciones mas contrastadas.
 - Soporte de servidores limitado: al ser GGUF, no se integra de forma nativa con vLLM o TGI en configuraciones de produccion de alto rendimiento; para esos casos hay que recurrir al modelo base en safetensors.
 

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`reaperdoesntknow/delta` es un modelo de generacion de texto publicado en HuggingFace por el usuario reaperdoesntknow. Se trata de un checkpoint de transformers con arquitectura marcada como `tamelm_two_axis`, un diseno poco habitual y practicamente sin documentacion publica asociada. El modelo cuenta con 410.256.184 parametros (aproximadamente 410 millones) y un repositorio de 4,9 GB, lo que sugiere pesos almacenados en precision alta (fp32) o multiples ficheros de safetensors.
+`reaperdoesntknow/delta` es un modelo de generacion de texto publicado en Hugging Face por el usuario reaperdoesntknow. Se trata de un checkpoint de transformers con arquitectura marcada como `tamelm_two_axis`, un diseno poco habitual y practicamente sin documentacion publica asociada. El modelo cuenta con 410.256.184 parametros (aproximadamente 410 millones) y un repositorio de 4,9 GB, lo que sugiere pesos almacenados en precision alta (fp32) o multiples ficheros de safetensors.
 
-La relevancia de este modelo es limitada desde el punto de vista de evaluacion tecnica: la model card es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva sobre datos de entrenamiento, licencia, idiomas, contexto o rendimiento. No hay benchmarks publicados, no hay paper asociado y no se declara licencia. El unico dato objetivo disponible es el recuento de parametros extraido de los safetensors y el tamano del repositorio.
+La relevancia de este modelo es limitada desde el punto de vista de evaluacion tecnica: la model card es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva sobre datos de entrenamiento, licencia, idiomas, contexto o rendimiento. No hay benchmarks publicados, no hay paper asociado y no se declara licencia. El unico dato objetivo disponible es el recuento de parametros extraido de los safetensors y el tamano del repositorio.
 
 Para un desarrollador o investigador que evalue modelos, este checkpoint debe considerarse experimental y no apto para produccion sin una inspeccion directa del codigo (`custom_code`) y de los ficheros de configuracion, dado que la arquitectura `tamelm_two_axis` no corresponde a ninguna familia estandar de transformers y requiere `trust_remote_code=True` para cargarse.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| reaperdoesntknow/delta | 410 M | no disponible | no disponible | HuggingFace, requiere `custom_code` | Practicamente nula |
-| GPT-2 (OpenAI) | 124 M - 1,5 B | 1024 tokens | MIT | HuggingFace, transformers nativo | Completa |
-| Qwen2.5-0.5B | 494 M | 32 768 tokens | Apache 2.0 | HuggingFace, transformers nativo | Completa |
-| SmolLM2-360M | 362 M | 8192 tokens | Apache 2.0 | HuggingFace, transformers nativo | Completa |
+| reaperdoesntknow/delta | 410 M | no disponible | no disponible | Hugging Face, requiere `custom_code` | Practicamente nula |
+| GPT-2 (OpenAI) | 124 M - 1,5 B | 1024 tokens | MIT | Hugging Face, transformers nativo | Completa |
+| Qwen2.5-0.5B | 494 M | 32 768 tokens | Apache 2.0 | Hugging Face, transformers nativo | Completa |
+| SmolLM2-360M | 362 M | 8192 tokens | Apache 2.0 | Hugging Face, transformers nativo | Completa |
 
 La comparativa es estructural: los modelos alternativos de la misma escala (sub-1B) ofrecen contexto documentado, licencia clara y soporte nativo en transformers, mientras que `delta` no aporta ninguno de esos elementos. No hay datos de rendimiento que permitan comparar calidad.
 
@@ -93,6 +93,6 @@ La comparativa es estructural: los modelos alternativos de la misma escala (sub-
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/reaperdoesntknow/delta
+- Hugging Face: https://huggingface.co/reaperdoesntknow/delta
 - Paper de referencia citado en los tags (Machine Learning Impact calculator, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de carbono: https://mlco2.github.io/impact#compute

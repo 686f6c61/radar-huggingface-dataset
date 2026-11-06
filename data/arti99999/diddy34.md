@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `arti99999/diddy34` es un repositorio alojado en HuggingFace con licencia Apache 2.0, creado el 27 de agosto de 2026. Sin embargo, la información pública disponible es prácticamente inexistente: la model card solo contiene la línea de licencia, no hay descripción, ni tags, ni pipeline definido, ni idiomas especificados. El repositorio no registra descargas ni likes, lo que sugiere que podría tratarse de un espacio de prueba, un subida incompleta o un modelo sin documentar.
+El modelo `arti99999/diddy34` es un repositorio alojado en Hugging Face con licencia Apache 2.0, creado el 27 de agosto de 2026. Sin embargo, la información pública disponible es prácticamente inexistente: la model card solo contiene la línea de licencia, no hay descripción, ni tags, ni pipeline definido, ni idiomas especificados. El repositorio no registra descargas ni likes, lo que sugiere que podría tratarse de un espacio de prueba, un subida incompleta o un modelo sin documentar.
 
 Dado que no se dispone de datos sobre arquitectura, parámetros, entrenamiento o capacidades, esta ficha se limita a reflejar el estado actual de la información pública. Cualquier evaluación técnica del modelo es imposible sin acceso a los pesos, al tokenizador o a una descripción funcional. Se recomienda contactar con el autor (`arti99999`) o esperar a que se publique una model card completa antes de considerar su uso en cualquier proyecto.
 
@@ -54,6 +54,6 @@ No disponible. Al no existir información sobre parámetros, arquitectura o rend
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arti99999/diddy34
+- Repositorio en Hugging Face: https://huggingface.co/arti99999/diddy34
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código, demos) asociados a este modelo en la búsqueda web realizada.

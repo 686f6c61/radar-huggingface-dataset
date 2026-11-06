@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Kijun97/my-brain-v1 es un ajuste fino (fine-tune) personal publicado en HuggingFace por el usuario Kijun97, derivado del modelo cuantizado a 4 bits `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto, construido sobre la familia Gemma 4 en su variante E2B segun los tags del repositorio. El repositorio declara 5.123.178.051 parametros totales en los ficheros safetensors y un tamano de repo de 10,3 GB.
+Kijun97/my-brain-v1 es un ajuste fino (fine-tune) personal publicado en Hugging Face por el usuario Kijun97, derivado del modelo cuantizado a 4 bits `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto, construido sobre la familia Gemma 4 en su variante E2B segun los tags del repositorio. El repositorio declara 5.123.178.051 parametros totales en los ficheros safetensors y un tamano de repo de 10,3 GB.
 
-El problema que resuelve es acotado: se trata de un experimento de personalizacion sobre una base instruct ya alineada, entrenado con Unsloth y la libreria TRL de HuggingFace, presumiblemente para adaptar el comportamiento del modelo a un caso de uso propio. No es un modelo de proposito general ni un lanzamiento de un laboratorio: es un artefacto de investigacion personal con 0 descargas y 0 likes en el momento de la consulta, lo que limita mucho la evidencia disponible sobre su calidad real.
+El problema que resuelve es acotado: se trata de un experimento de personalizacion sobre una base instruct ya alineada, entrenado con Unsloth y la libreria TRL de Hugging Face, presumiblemente para adaptar el comportamiento del modelo a un caso de uso propio. No es un modelo de proposito general ni un lanzamiento de un laboratorio: es un artefacto de investigacion personal con 0 descargas y 0 likes en el momento de la consulta, lo que limita mucho la evidencia disponible sobre su calidad real.
 
 Su relevancia es principalmente documental: sirve como ejemplo del flujo de trabajo Unsloth + TRL sobre modelos Gemma multimodales y como recordatorio de las precauciones que hay que tomar al evaluar checkpoints comunitarios (licencia declarada, datos de entrenamiento no documentados, ausencia de benchmarks y posible herencia de los terminos del modelo base). La model card es practicamente un placeholder generado automaticamente por la plantilla de Unsloth.
 
@@ -32,7 +32,7 @@ Respecto al entrenamiento, la model card indica unicamente que el modelo fue ent
 - Generacion de texto conversacional en ingles, heredada de la base instruct (`-it`) de Gemma.
 - Procesamiento de imagenes combinadas con texto (image-text-to-text), segun el pipeline declarado.
 - Conversacion multi-turno (tag `conversational`).
-- Compatibilidad con Text Generation Inference (tag `text-generation-inference`) y `endpoints_compatible`, lo que sugiere que puede desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad con Text Generation Inference (tag `text-generation-inference`) y `endpoints_compatible`, lo que sugiere que puede desplegarse en Hugging Face Inference Endpoints.
 - Entrenamiento y posible reentrenamiento con Unsloth, lo que facilita ajustes adicionales con requisitos de memoria reducidos.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
@@ -58,15 +58,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en funcion del tamano real de 5,12 mil millones de parametros: en fp16 aproximadamente 10,2 GB solo de pesos, mas overhead de activaciones y cache KV; en 8 bits unos 5,1 GB; en 4 bits unos 2,9 GB, a lo que hay que sumar el codificador visual y el coste de procesar imagenes.
 - GPU recomendadas para produccion: A100 40/80 GB o H100 para servir varias replicas o contextos largos; L40S o A10G para endpoints de una sola instancia.
 - Cabe en GPU de consumo: si, en configuraciones cuantizadas. RTX 4090 (24 GB) en fp16 o 8 bits con margen amplio; RTX 3090 (24 GB) de forma equivalente; RTX 4070 Ti / 4080 (12-16 GB) en 4 u 8 bits; RTX 3060 (12 GB) en 4 bits con contextos moderados.
-- Opciones de despliegue: transformers (libreria declarada), Text Generation Inference (tag explicito), HuggingFace Inference Endpoints (tag `endpoints_compatible`), vLLM si la arquitectura esta soportada por la version correspondiente, y llama.cpp / Ollama / LM Studio previa conversion a GGUF, que no se distribuye en el repositorio.
+- Opciones de despliegue: transformers (libreria declarada), Text Generation Inference (tag explicito), Hugging Face Inference Endpoints (tag `endpoints_compatible`), vLLM si la arquitectura esta soportada por la version correspondiente, y llama.cpp / Ollama / LM Studio previa conversion a GGUF, que no se distribuye en el repositorio.
 - Latencia y throughput estimados: no disponible. No hay mediciones publicadas de tokens por segundo, time to first token ni comportamiento bajo batching.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kijun97/my-brain-v1 | 5,12 mil millones (safetensors) | no disponible | sin benchmarks publicados | apache-2.0 declarada por el autor | HuggingFace, 0 descargas, 0 likes |
-| unsloth/gemma-4-e2b-it-unsloth-bnb-4bit (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace (referenciado como base) |
+| Kijun97/my-brain-v1 | 5,12 mil millones (safetensors) | no disponible | sin benchmarks publicados | apache-2.0 declarada por el autor | Hugging Face, 0 descargas, 0 likes |
+| unsloth/gemma-4-e2b-it-unsloth-bnb-4bit (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face (referenciado como base) |
 | Alternativas de la misma categoria (modelos multimodales de 3-5 mil millones de parametros) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados en la informacion proporcionada para establecer una comparativa numerica con alternativas concretas. Cualquier comparacion de rendimiento requeriria ejecutar una evaluacion propia sobre el mismo conjunto de tareas.
@@ -87,8 +87,8 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kijun97/my-brain-v1
+- Modelo en Hugging Face: https://huggingface.co/Kijun97/my-brain-v1
 - Modelo base referenciado: https://huggingface.co/unsloth/gemma-4-e2b-it-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Paper, blog, demo o repositorio adicional del autor: no disponible. La busqueda web no devolvio enlaces tecnicos relacionados con este modelo.

@@ -62,6 +62,6 @@ No se han encontrado modelos comparables con datos publicados en la información
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch2
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch2
 - Modelo relacionado: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_epoch6
 - Paper de ALiBi: https://arxiv.org/abs/1910.09700

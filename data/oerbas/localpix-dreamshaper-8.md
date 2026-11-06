@@ -79,7 +79,7 @@ La principal diferencia frente a las versiones originales es el formato Core ML 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oerbas/localpix-dreamshaper-8
+- Repositorio Hugging Face: https://huggingface.co/oerbas/localpix-dreamshaper-8
 - Modelo original DreamShaper 8: https://huggingface.co/Lykon/dreamshaper-8
 - Pagina de DreamShaper en Civitai: https://civitai.com/models/4384/dreamshaper
 - Tutorial de DreamShaper 8 (aiindigo): https://aiindigo.com/tutorials/getting-started-with-dreamshaper-8-mastering-photorealistic-ai-art-locally

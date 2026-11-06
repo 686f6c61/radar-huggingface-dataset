@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AIAMR-L47-dis es un repositorio de HuggingFace publicado por la organizacion `crossagentamrorg` bajo licencia MIT. En el momento de redactar esta ficha no contiene documentacion tecnica util: la model card se limita a un bloque de metadatos YAML con la etiqueta `extra_gated_prompt` y un titulo ("AIAMR-L47 gated test"). No se declaran arquitectura, numero de parametros, longitud de contexto, idiomas ni pipeline de inferencia.
+AIAMR-L47-dis es un repositorio de Hugging Face publicado por la organizacion `crossagentamrorg` bajo licencia MIT. En el momento de redactar esta ficha no contiene documentacion tecnica util: la model card se limita a un bloque de metadatos YAML con la etiqueta `extra_gated_prompt` y un titulo ("AIAMR-L47 gated test"). No se declaran arquitectura, numero de parametros, longitud de contexto, idiomas ni pipeline de inferencia.
 
-El nombre del repositorio y el contenido de la model card sugieren que se trata de un artefacto de prueba del mecanismo de *gated access* de HuggingFace, no de un modelo entrenado listo para uso. El repositorio acumula 0 descargas y 0 likes, no tiene pesos publicados visibles ni ficha de uso.
+El nombre del repositorio y el contenido de la model card sugieren que se trata de un artefacto de prueba del mecanismo de *gated access* de Hugging Face, no de un modelo entrenado listo para uso. El repositorio acumula 0 descargas y 0 likes, no tiene pesos publicados visibles ni ficha de uso.
 
 Es relevante unicamente como caso de estudio de seguridad: los campos `extra_gated_prompt`, `extra_gated_description` y `extra_gated_heading` incluyen cargas de inyeccion de prompt y de XSS (`<img src=x>`, etiquetas `<b>PROMPT-INJ-L47</b>`). Cualquier herramienta que renderice o procese esa model card sin sanear el contenido deberia tratarla como entrada no fiable. No se recomienda su uso en produccion.
 
@@ -35,14 +35,14 @@ La unica informacion estructural es el propio frontmatter YAML de la model card,
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; el campo de idiomas no esta declarado.
 - Capacidades especiales (modo de pensamiento, vision, audio): no disponible.
-- Unica funcion verificable del repositorio: servir como prueba del flujo de acceso restringido (*gated*) de HuggingFace, con campos de prompt personalizados.
+- Unica funcion verificable del repositorio: servir como prueba del flujo de acceso restringido (*gated*) de Hugging Face, con campos de prompt personalizados.
 
 ## Casos de uso
 
 Los siguientes escenarios son hipoteticos y quedan condicionados a que el autor publique pesos y documentacion tecnicos. Se listan como marco de evaluacion, no como recomendacion de uso.
 
 - Auditoria de seguridad en pipelines de MLOps: el repositorio sirve como caso de prueba para verificar que los sistemas que parsean model cards neutralizan HTML y texto de inyeccion antes de pasarlo a un LLM. Es adecuado precisamente porque su contenido malicioso es conocido y acotado.
-- Validacion de flujos de acceso restringido: util para comprobar que un formulario de solicitud de acceso de HuggingFace muestra correctamente el prompt, la descripcion y la cabecera definidos por el autor, y que valida las respuestas del usuario.
+- Validacion de flujos de acceso restringido: util para comprobar que un formulario de solicitud de acceso de Hugging Face muestra correctamente el prompt, la descripcion y la cabecera definidos por el autor, y que valida las respuestas del usuario.
 - Pruebas de saneado en visores de model cards: permite comprobar si un frontend escapa correctamente los campos `extra_gated_*` al renderizarlos como HTML.
 - Formacion interna en seguridad de la cadena de suministro de modelos: ejemplo didactico de repositorio sin documentacion y con contenido inyectado, util en materiales de concienciacion para equipos de investigacion.
 - Pruebas de herramientas de descubrimiento de modelos: sirve para verificar que un crawler o indice clasifica correctamente repositorios sin pesos ni pipeline declarado, en lugar de asumir capacidades inexistentes.
@@ -78,6 +78,6 @@ No disponible. Al no conocerse el tamano, la tarea ni la arquitectura del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/crossagentamrorg/AIAMR-L47-dis
+- Repositorio en Hugging Face: https://huggingface.co/crossagentamrorg/AIAMR-L47-dis
 - Los resultados de la busqueda web no estan relacionados con este modelo: corresponden a sitios de partituras de jazz (jazzleadsheet.com, realbook.site, jazzstandard.info, thejunglejazzband.com) y no aportan informacion sobre AIAMR-L47-dis.
 - No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo en la informacion proporcionada.

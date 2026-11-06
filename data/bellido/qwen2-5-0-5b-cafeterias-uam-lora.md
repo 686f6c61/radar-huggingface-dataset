@@ -90,7 +90,7 @@ La comparativa se limita a modelos de la misma familia; no se dispone de datos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bellido/qwen2.5-0.5b-cafeterias-uam-lora
+- Modelo en Hugging Face: https://huggingface.co/Bellido/qwen2.5-0.5b-cafeterias-uam-lora
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Bellido/cafeterias_uam_2026

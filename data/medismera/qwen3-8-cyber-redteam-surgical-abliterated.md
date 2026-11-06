@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-cyber-RedTeam-Surgical-Abliterated es un modelo de lenguaje de 27 356 728 560 parámetros (unos 27,36 mil millones) publicado por el usuario medismera en HuggingFace. Se trata de un ajuste fino del modelo base Qwen/Qwen3.8-27B, orientado especificamente a ciberseguridad ofensiva, red teaming, desarrollo de exploits y automatizacion de agentes autonomos de seguridad. El autor lo describe como un "motor fundacional sin restricciones" (uncensored/abliterated), es decir, con la direccion de rechazo eliminada quirurgicamente de las activaciones del residual stream para que el modelo no emita negativas moralizantes ante peticiones tecnicas sensibles.
+Qwen3.8-cyber-RedTeam-Surgical-Abliterated es un modelo de lenguaje de 27 356 728 560 parámetros (unos 27,36 mil millones) publicado por el usuario medismera en Hugging Face. Se trata de un ajuste fino del modelo base Qwen/Qwen3.8-27B, orientado especificamente a ciberseguridad ofensiva, red teaming, desarrollo de exploits y automatizacion de agentes autonomos de seguridad. El autor lo describe como un "motor fundacional sin restricciones" (uncensored/abliterated), es decir, con la direccion de rechazo eliminada quirurgicamente de las activaciones del residual stream para que el modelo no emita negativas moralizantes ante peticiones tecnicas sensibles.
 
 Arquitectonicamente hereda el diseno hibrido de Qwen 3.8: 64 capas ocultas, de las cuales 48 son de atencion lineal (SSM hibrido) intercaladas con 16 capas de atencion completa completa (GQA) a intervalos de 4. Esto reduce la huella de KV-cache en aproximadamente un 75 % frente a atencion multi-cabeza densa, lo que permite mantener muchas sesiones de agente concurrentes en una sola GPU. La ventana de contexto nativa es de 262 144 tokens (256K) mediante RoPE con frecuencia base theta = 10^7 y embeddings rotatorios 3D intercalados.
 
@@ -37,7 +37,7 @@ La innovacion principal declarada por el autor es la "ortogonalizacion del recha
 - Capacidades de codigo y matematicas heredadas del modelo base Qwen.
 - Capacidades multilingues limitadas a ingles y arabe segun la model card.
 - Integracion con frameworks de agentes (etiqueta `hermes-agent`) y compatibilidad con endpoints.
-- Entrada imagen-texto a texto segun las etiquetas de HuggingFace (`image-text-to-text`), aunque la model card no detalla el soporte de vision.
+- Entrada imagen-texto a texto segun las etiquetas de Hugging Face (`image-text-to-text`), aunque la model card no detalla el soporte de vision.
 
 ## Casos de uso
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-cyber-RedTeam-Surgical-Abliterated | ~27,36 B | 256K | Apache 2.0 | Ciberseguridad ofensiva, red team, sin restricciones | HuggingFace (medismera) |
-| Qwen/Qwen3.8-27B (base) | ~27 B | no disponible en la informacion | no disponible en la informacion | Modelo generalista con alineamiento estandar | HuggingFace (Qwen) |
-| medismera/Qwen3.8-27B-Surgical-Abliterated | ~27 B | no disponible en la informacion | no disponible en la informacion | Version intermedia sin rechazo, sin especializacion cyber | HuggingFace (medismera) |
+| Qwen3.8-cyber-RedTeam-Surgical-Abliterated | ~27,36 B | 256K | Apache 2.0 | Ciberseguridad ofensiva, red team, sin restricciones | Hugging Face (medismera) |
+| Qwen/Qwen3.8-27B (base) | ~27 B | no disponible en la informacion | no disponible en la informacion | Modelo generalista con alineamiento estandar | Hugging Face (Qwen) |
+| medismera/Qwen3.8-27B-Surgical-Abliterated | ~27 B | no disponible en la informacion | no disponible en la informacion | Version intermedia sin rechazo, sin especializacion cyber | Hugging Face (medismera) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada. Las alternativas de la misma categoria (modelos abliterated especializados en seguridad) no se detallan en la model card.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/medismera/Qwen3.8-cyber-RedTeam-Surgical-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/medismera/Qwen3.8-cyber-RedTeam-Surgical-Abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante intermedia: https://huggingface.co/medismera/Qwen3.8-27B-Surgical-Abliterated
 - Banner del modelo: https://huggingface.co/medismera/Qwen3.8-cyber-RedTeam-Surgical-Abliterated/resolve/main/banner.png

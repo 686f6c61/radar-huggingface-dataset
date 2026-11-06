@@ -110,6 +110,6 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/neural-nova/gpt-oss-120b-Instruct-Optimized
+- Repositorio en Hugging Face: https://huggingface.co/neural-nova/gpt-oss-120b-Instruct-Optimized
 - Modelo upstream servido: https://huggingface.co/openai/gpt-oss-120b
 - Benchmark de origen citado por el autor: https://www.neural-nova.com/benchmark/gpt-oss-120b

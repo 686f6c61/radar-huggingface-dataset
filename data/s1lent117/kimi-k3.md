@@ -6,7 +6,7 @@ Kimi K3 es un modelo de lenguaje multimodal nativo de tipo agente, publicado con
 
 La arquitectura se apoya en dos innovaciones propias: Kimi Delta Attention (KDA) y Attention Residuals (AttnRes), combinadas con un marco de enrutamiento denominado Stable LatentMoE que activa 16 de 896 expertos por token. Según el autor, esto supone una mejora de eficiencia de escalado de aproximadamente 2,5 veces respecto a Kimi K2. El modelo está orientado a tareas de codificación de largo horizonte, trabajo de conocimiento agéntico y razonamiento complejo.
 
-La relevancia de esta ficha radica en que se trata del primer modelo abierto de clase 3T, con pesos completos publicados bajo la licencia Kimi K3. El repositorio de HuggingFace ocupa 1561 GB y el pipeline declarado es image-text-to-text, lo que confirma el carácter multimodal del modelo.
+La relevancia de esta ficha radica en que se trata del primer modelo abierto de clase 3T, con pesos completos publicados bajo la licencia Kimi K3. El repositorio de Hugging Face ocupa 1561 GB y el pipeline declarado es image-text-to-text, lo que confirma el carácter multimodal del modelo.
 
 ## Especificaciones técnicas
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi K3 | 2,8T | 104B | 1M | Kimi K3 License | Pesos abiertos en HuggingFace |
+| Kimi K3 | 2,8T | 104B | 1M | Kimi K3 License | Pesos abiertos en Hugging Face |
 | Kimi K2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de clase 3T | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,8 +82,8 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- HuggingFace (réplica): https://huggingface.co/s1lent117/Kimi-K3
-- Organización Moonshot AI en HuggingFace: https://huggingface.co/moonshotai
+- Hugging Face (réplica): https://huggingface.co/s1lent117/Kimi-K3
+- Organización Moonshot AI en Hugging Face: https://huggingface.co/moonshotai
 - Repositorio oficial (referenciado): https://huggingface.co/moonshotai/Kimi-K3
 - Blog técnico: https://www.kimi.com/blog/kimi-k3
 - Informe técnico completo: https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf

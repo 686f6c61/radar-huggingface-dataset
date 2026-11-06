@@ -91,7 +91,7 @@ El modelo no mejora al base y es claramente inferior al teacher. No se han encon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyanFoxW/btprop-sft-judge-qwen3-8b
+- Modelo en Hugging Face: https://huggingface.co/RyanFoxW/btprop-sft-judge-qwen3-8b
 - Repositorio de código BTProp: https://github.com/BENGAL-UCSB/BTProp (rama `layer1-v2-RL`)
 - Modelo relacionado (tree-gen SFT): https://huggingface.co/RyanFoxW/Qwen3-8B-BTProp-mainmod1verify-SFT
 - Modelo relacionado (RL v1): https://huggingface.co/RyanFoxW/btprop-rlv1-qwen3-8b

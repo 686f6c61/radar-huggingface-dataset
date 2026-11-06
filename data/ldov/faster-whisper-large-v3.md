@@ -81,7 +81,7 @@ La conversión de ldov es funcionalmente idéntica a la de Systran (ambas convie
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ldov/faster-whisper-large-v3
+- Repositorio Hugging Face: https://huggingface.co/ldov/faster-whisper-large-v3
 - Modelo original: https://huggingface.co/openai/whisper-large-v3
 - Conversión de Systran (referencia): https://huggingface.co/Systran/faster-whisper-large-v3
 - Librería faster-whisper: https://github.com/SYSTRAN/faster-whisper

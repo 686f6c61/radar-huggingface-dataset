@@ -77,9 +77,9 @@ La comparativa se limita a los modelos de la misma familia porque no se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/BahamutRU/DeepSeek-V4-Flash-Vision-Exp-Q8_0-MXFP4-Q3_K-Q2_K-mixed-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
-- DeepSeek-V4-Flash en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/BahamutRU/DeepSeek-V4-Flash-Vision-Exp-Q8_0-MXFP4-Q3_K-Q2_K-mixed-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
+- DeepSeek-V4-Flash en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Documentacion de vLLM Recipes: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Anuncio oficial de la API multimodal: https://api-docs.deepseek.com/news/news260821/
 - Pagina de ZenMux con opciones de despliegue: https://zenmux.ai/deepseek/deepseek-v4-flash-vision-exp

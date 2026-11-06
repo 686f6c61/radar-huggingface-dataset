@@ -1,7 +1,7 @@
 # muhammediyunes/dwago
 
 ## Resumen
-dwago es un modelo de clasificación de texto publicado por el usuario muhammediyunes en HuggingFace. Según los metadatos, tiene 30.337.921 parámetros, se etiqueta como entrenado desde cero (`trained-from-scratch`), se distribuye como pesos abiertos aunque con acceso restringido y está orientado a inferencia de lenguaje natural, clasificación de intenciones, moderación y toma de decisiones. La información disponible no detalla la arquitectura interna, la longitud de contexto ni el conjunto de entrenamiento.
+dwago es un modelo de clasificación de texto publicado por el usuario muhammediyunes en Hugging Face. Según los metadatos, tiene 30.337.921 parámetros, se etiqueta como entrenado desde cero (`trained-from-scratch`), se distribuye como pesos abiertos aunque con acceso restringido y está orientado a inferencia de lenguaje natural, clasificación de intenciones, moderación y toma de decisiones. La información disponible no detalla la arquitectura interna, la longitud de contexto ni el conjunto de entrenamiento.
 
 Por su tamaño, se sitúa en la categoría de clasificadores pequeños de aproximadamente 30 M de parámetros, lo que en principio permite despliegues con requisitos de cómputo moderados, incluidos CPU y GPUs de gama de consumo. Los idiomas declarados son `multilingual` y `en`, sin que se especifique la cobertura real ni la calidad por idioma. El repositorio ocupa 0,2 GB y ofrece pesos en PyTorch, safetensors y ONNX.
 
@@ -20,7 +20,7 @@ Su relevancia práctica está en tareas de etiquetado y enrutamiento dentro de p
 | Formato de pesos | safetensors, ONNX, PyTorch |
 | Tamaño del repositorio | 0,2 GB |
 | Pipeline | `text-classification` |
-| Acceso | restringido (`gated`); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (`gated`); requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. Tamp
 - VRAM estimada para inferencia: orientativamente inferior a 1 GB para lote 1 y secuencias cortas en FP16 o INT8, adicional al overhead del runtime. No hay mediciones publicadas.
 - GPU recomendadas: no se especifican. Por tamaño, cabe previsiblemente en GPUs de consumo como GTX 1650, RTX 3050 o RTX 4090; A100 o H100 no son necesarias.
 - CPU: el modelo es susceptible de ejecutarse en CPU para cargas moderadas, especialmente con exportación ONNX.
-- Despliegue: PyTorch y ONNX Runtime son las opciones documentadas por los tags. No se confirma compatibilidad con HuggingFace Transformers, vLLM, llama.cpp, Ollama o TGI; para un clasificador pequeño estos runtimes no son habituales salvo soporte específico.
+- Despliegue: PyTorch y ONNX Runtime son las opciones documentadas por los tags. No se confirma compatibilidad con Hugging Face Transformers, vLLM, llama.cpp, Ollama o TGI; para un clasificador pequeño estos runtimes no son habituales salvo soporte específico.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No se dispone de resultados de rendimiento de dwago ni de una comparación cuant
 
 ## Limitaciones y advertencias
 - Licencia no estándar: `dwago-evaluation-license` no permite asumir uso comercial, redistribución o producción sin revisar el texto completo. El nombre sugiere finalidad de evaluación, pero no se dispone de sus términos.
-- Acceso restringido: el repositorio es `gated` y requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la integración automatizada.
+- Acceso restringido: el repositorio es `gated` y requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la integración automatizada.
 - Sin benchmarks: no hay métricas de accuracy, F1 ni evaluaciones independientes; no se puede afirmar su calidad frente a alternativas.
 - Sin documentación de entrenamiento: se desconocen el dataset, el volumen de tokens, la composición lingüística y los posibles sesgos.
 - Idiomas: se declaran `multilingual` y `en`, pero no se detalla la cobertura. No debe asumirse un rendimiento adecuado en castellano sin validación específica.
@@ -81,5 +81,5 @@ No se dispone de resultados de rendimiento de dwago ni de una comparación cuant
 - Decisiones de alto riesgo: no debe emplearse en salud, justicia, empleo o crédito sin una auditoría específica de sesgos, robustez y cumplimiento normativo.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/muhammediyunes/dwago
+- Hugging Face: https://huggingface.co/muhammediyunes/dwago
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

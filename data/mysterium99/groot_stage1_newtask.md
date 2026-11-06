@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| groot_stage1_newtask (este) | 3.144 M | no disponible | VLA + flow matching, ajustado a ferretería | Apache 2.0 | HuggingFace, 0 descargas |
+| groot_stage1_newtask (este) | 3.144 M | no disponible | VLA + flow matching, ajustado a ferretería | Apache 2.0 | Hugging Face, 0 descargas |
 | GR00T N1.7 (NVIDIA, base) | no disponible | no disponible | VLA fundacional cross-embodiment | no disponible en la informacion | GitHub NVIDIA/Isaac-GR00T |
-| Políticas LeRobot tipo ACT/diffusion | típicamente <100 M | no disponible | Imitación específica por tarea | Apache 2.0 (segun repo) | HuggingFace, amplia adopción |
+| Políticas LeRobot tipo ACT/diffusion | típicamente <100 M | no disponible | Imitación específica por tarea | Apache 2.0 (segun repo) | Hugging Face, amplia adopción |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento entre estas opciones.
 
@@ -76,12 +76,12 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento entre est
 - Riesgo de alucinación de acciones: como toda política de imitación, puede generar trayectorias plausibles pero incorrectas ante oclusiones o piezas no vistas.
 - No hay información sobre sesgos, idiomas soportados ni robustez ante cambios de iluminación.
 - La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías ni documenta el origen completo de los datos de entrenamiento.
-- El dataset `manufacturing_task` aparece enlazado como `huggingface.co/datasets/manufacturing_task`, una ruta que no corresponde a un repositorio válido de HuggingFace; conviene verificar su disponibilidad real antes de reentrenar.
+- El dataset `manufacturing_task` aparece enlazado como `huggingface.co/datasets/manufacturing_task`, una ruta que no corresponde a un repositorio válido de Hugging Face; conviene verificar su disponibilidad real antes de reentrenar.
 - No se publican métricas de éxito, tasas de agarre ni curvas de entrenamiento, por lo que no es posible evaluar la calidad del ajuste sin probarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mysterium99/groot_stage1_newtask
+- Modelo en Hugging Face: https://huggingface.co/mysterium99/groot_stage1_newtask
 - Repositorio GR00T de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T
 - Guía LeRobot para GR00T: https://huggingface.co/docs/lerobot/main/en/groot
 - Documentación LeRobot: https://huggingface.co/docs/lerobot/index

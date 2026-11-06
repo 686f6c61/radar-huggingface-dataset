@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`speecht5_finetuned_voxpopuli_nl` es un ajuste fino (fine-tuning) del modelo de sintesis de voz `microsoft/speecht5_tts`, publicado por el usuario `yoga-0125` en HuggingFace. El modelo base SpeechT5 es una arquitectura encoder-decoder unificada para tareas de habla y texto que combina un encoder de habla con un encoder de texto y un decoder autorregresivo, orientada originalmente a la sintesis de voz (text-to-speech). Este ajuste parte del checkpoint preentrenado de TTS de Microsoft y se ha entrenado sobre un conjunto de datos no especificado, presumiblemente relacionado con el corpus neerlandes VoxPopuli (por el sufijo `_nl` del nombre), aunque la model card no lo confirma.
+`speecht5_finetuned_voxpopuli_nl` es un ajuste fino (fine-tuning) del modelo de sintesis de voz `microsoft/speecht5_tts`, publicado por el usuario `yoga-0125` en Hugging Face. El modelo base SpeechT5 es una arquitectura encoder-decoder unificada para tareas de habla y texto que combina un encoder de habla con un encoder de texto y un decoder autorregresivo, orientada originalmente a la sintesis de voz (text-to-speech). Este ajuste parte del checkpoint preentrenado de TTS de Microsoft y se ha entrenado sobre un conjunto de datos no especificado, presumiblemente relacionado con el corpus neerlandes VoxPopuli (por el sufijo `_nl` del nombre), aunque la model card no lo confirma.
 
-El modelo tiene 144.433.890 parametros y se distribuye en formato safetensors, con un tamano de repositorio de aproximadamente 0,6 GB. La licencia es MIT, lo que facilita su uso comercial, pero la documentacion es practicamente inexistente: la model card fue generada automaticamente por el Trainer de HuggingFace y contiene avisos explicitos de que faltan la descripcion del modelo, los usos previstos, las limitaciones y los datos de entrenamiento.
+El modelo tiene 144.433.890 parametros y se distribuye en formato safetensors, con un tamano de repositorio de aproximadamente 0,6 GB. La licencia es MIT, lo que facilita su uso comercial, pero la documentacion es practicamente inexistente: la model card fue generada automaticamente por el Trainer de Hugging Face y contiene avisos explicitos de que faltan la descripcion del modelo, los usos previstos, las limitaciones y los datos de entrenamiento.
 
 La relevancia de esta ficha es limitada: se trata de un experimento de ajuste fino con solo 100 pasos de entrenamiento, sin benchmarks publicados y sin descargas registradas. Resulta util como referencia de como se estructura un fine-tuning de SpeechT5 y como punto de partida para quien quiera reproducir el proceso, pero no es un modelo listo para produccion ni para evaluacion comparativa seria sin validacion adicional.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yoga-0125/speecht5_finetuned_voxpopuli_nl` | 144,4 M | no aplica | loss 0,5934 (sin benchmarks) | MIT | HuggingFace, 0 descargas |
-| `microsoft/speecht5_tts` | ~144 M | no aplica | checkpoint oficial, ampliamente validado | MIT | HuggingFace, ampliamente usado |
-| `facebook/mms-tts-nld` | no disponible | no aplica | TTS multilingue de Meta (VITS) | CC-BY-NC 4.0 | HuggingFace |
-| `coqui/XTTS-v2` | no disponible | no aplica | TTS multilingue con clonacion de voz | Coqui Public Model License | HuggingFace |
+| `yoga-0125/speecht5_finetuned_voxpopuli_nl` | 144,4 M | no aplica | loss 0,5934 (sin benchmarks) | MIT | Hugging Face, 0 descargas |
+| `microsoft/speecht5_tts` | ~144 M | no aplica | checkpoint oficial, ampliamente validado | MIT | Hugging Face, ampliamente usado |
+| `facebook/mms-tts-nld` | no disponible | no aplica | TTS multilingue de Meta (VITS) | CC-BY-NC 4.0 | Hugging Face |
+| `coqui/XTTS-v2` | no disponible | no aplica | TTS multilingue con clonacion de voz | Coqui Public Model License | Hugging Face |
 
 La comparativa es aproximada: no hay benchmarks comunes publicados para este ajuste, por lo que la comparacion se limita a parametros, licencia y disponibilidad. El modelo base de Microsoft y las alternativas de Meta y Coqui cuentan con validacion y documentacion de las que carece este ajuste.
 
@@ -83,7 +83,7 @@ La comparativa es aproximada: no hay benchmarks comunes publicados para este aju
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yoga-0125/speecht5_finetuned_voxpopuli_nl
+- Modelo en Hugging Face: https://huggingface.co/yoga-0125/speecht5_finetuned_voxpopuli_nl
 - Modelo base: https://huggingface.co/microsoft/speecht5_tts
 - Paper de SpeechT5: https://arxiv.org/abs/2110.07205
 - Corpus VoxPopuli: https://github.com/facebookresearch/voxpopuli

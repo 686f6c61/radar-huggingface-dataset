@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gbrixi/evo2_7b_262k_vllm
+- Repositorio Hugging Face: https://huggingface.co/gbrixi/evo2_7b_262k_vllm
 - Modelo base oficial: https://huggingface.co/arcinstitute/evo2_7b_262k
 - Repositorio GitHub de Evo 2: https://github.com/ArcInstitute/evo2
 - Paper (bioRxiv): https://www.biorxiv.org/content/10.1101/2025.02.18.638918

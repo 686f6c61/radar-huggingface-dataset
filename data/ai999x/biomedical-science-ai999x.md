@@ -1,7 +1,7 @@
 # AI999X/biomedical-science-ai999x
 
 ## Resumen
-biomedical-science-ai999x es un motor de resolución de problemas de ciencias biomédicas desarrollado por AI999X (Ibnul Jaif Farabi), publicado en HuggingFace bajo licencia Apache-2.0. No es un transformer generativo al uso: se describe como un motor neuro-simbólico determinista en Python puro (sympy, mpmath) que interpreta preguntas en inglés y resuelve tareas mediante 86 capacidades certificadas (farmacocinética, epidemiología, estadística de pruebas diagnósticas, análisis de supervivencia, biomecánica, modelos neuronales y física de imagen médica), devolviendo pasos, unidades y LaTeX.
+biomedical-science-ai999x es un motor de resolución de problemas de ciencias biomédicas desarrollado por AI999X (Ibnul Jaif Farabi), publicado en Hugging Face bajo licencia Apache-2.0. No es un transformer generativo al uso: se describe como un motor neuro-simbólico determinista en Python puro (sympy, mpmath) que interpreta preguntas en inglés y resuelve tareas mediante 86 capacidades certificadas (farmacocinética, epidemiología, estadística de pruebas diagnósticas, análisis de supervivencia, biomecánica, modelos neuronales y física de imagen médica), devolviendo pasos, unidades y LaTeX.
 
 El paquete declara 4.715.520 parámetros en safetensors y 0,1 GB de repositorio, y se ejecuta íntegramente en CPU, sin GPU, sin red y sin clave de API, sobre Python 3.10 a 3.14 en Windows y Linux. Su propuesta diferencial es el rechazo explícito: siete estados de salida (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) en lugar de una respuesta inventada.
 
@@ -60,7 +60,7 @@ No se han publicado en la información disponible resultados en benchmarks está
 - GPU: no necesaria. La model card especifica explícitamente CPU only, sin GPU, sin red y sin clave de API.
 - GPU de consumo: no aplica. No hay requisito de acelerador gráfico.
 - Requisitos de sistema: Python 3.10, 3.11, 3.12, 3.13 o 3.14 en Windows o Linux x86-64; dependencias del ecosistema sympy y mpmath.
-- Despliegue: instalación con `pip install biomedical-science-ai999x`, o instalación de la wheel desde el repositorio de HuggingFace. Los formatos safetensors y ONNX permiten carga alternativa con `transformers` u `onnxruntime` si se necesita.
+- Despliegue: instalación con `pip install biomedical-science-ai999x`, o instalación de la wheel desde el repositorio de Hugging Face. Los formatos safetensors y ONNX permiten carga alternativa con `transformers` u `onnxruntime` si se necesita.
 - Latencia y throughput: no se publican cifras. Al ser cálculo simbólico determinista sobre CPU, la latencia esperada por consulta es baja, pero no hay mediciones oficiales en la información disponible.
 
 ## Comparativa con modelos similares
@@ -86,8 +86,8 @@ La comparación cuantitativa con estos sistemas no puede establecerse con los da
 - Dependencia del ecosistema Python y de las versiones probadas (3.10 a 3.14); no se documenta comportamiento en otras plataformas.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/AI999X/biomedical-science-ai999x
-- Organización en HuggingFace: https://huggingface.co/AI999X
+- Hugging Face: https://huggingface.co/AI999X/biomedical-science-ai999x
+- Organización en Hugging Face: https://huggingface.co/AI999X
 - Documentación de capacidades en el repositorio: https://huggingface.co/AI999X/biomedical-science-ai999x/tree/main/docs
 - Evaluación en el repositorio: https://huggingface.co/AI999X/biomedical-science-ai999x/tree/main/evaluation
 - Paquete PyPI: https://pypi.org/project/biomedical-science-ai999x/

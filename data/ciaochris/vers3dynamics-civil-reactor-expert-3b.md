@@ -18,7 +18,7 @@ Es relevante ahora porque ejemplifica una tendencia creciente: adaptadores de do
 | Longitud de contexto | No disponible en la información proporcionada (heredada del base Qwen2.5-3B-Instruct) |
 | Tipos de cuantización | Entrenamiento en QLoRA 4-bit NF4; el adaptador se distribuye en safetensors. Cuantizaciones de inferencia no especificadas |
 | Idiomas soportados | Inglés (en) |
-| Licencia | `qwen-research` (etiquetada como "other" en HuggingFace) |
+| Licencia | `qwen-research` (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA); requiere el modelo base Qwen2.5-3B-Instruct |
 
 ## Arquitectura y entrenamiento
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vers3Dynamics Civil Reactor Expert 3B | 3B + LoRA r4 | No disponible | Nuclear civil (tutoría, cinética, salvaguardias) | qwen-research | HuggingFace, 58 descargas |
-| Qwen2.5-3B-Instruct (base) | 3B | No disponible en la información | Generalista | qwen-research | HuggingFace, ampliamente usado |
-| Qwen2.5-7B-Instruct | 7B | No disponible en la información | Generalista | qwen-research | HuggingFace |
+| Vers3Dynamics Civil Reactor Expert 3B | 3B + LoRA r4 | No disponible | Nuclear civil (tutoría, cinética, salvaguardias) | qwen-research | Hugging Face, 58 descargas |
+| Qwen2.5-3B-Instruct (base) | 3B | No disponible en la información | Generalista | qwen-research | Hugging Face, ampliamente usado |
+| Qwen2.5-7B-Instruct | 7B | No disponible en la información | Generalista | qwen-research | Hugging Face |
 | Adaptadores de dominio genéricos (p. ej. LoRA médicos o legales) | Variable | Variable | Vertical específico | Variable | Variable |
 
 La comparación directa con alternativas del mismo nicho (adaptadores nucleares auditados) no está disponible en la información proporcionada. Frente al base Qwen2.5-3B-Instruct, la diferencia principal es la política de rechazo, el tool layer determinista y la documentación de auditoría, no una mejora medible en benchmarks.
@@ -89,7 +89,7 @@ La comparación directa con alternativas del mismo nicho (adaptadores nucleares 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ciaochris/Vers3Dynamics-Civil-Reactor-Expert-3B
+- Modelo en Hugging Face: https://huggingface.co/ciaochris/Vers3Dynamics-Civil-Reactor-Expert-3B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia del base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
 - Rama experimental: https://huggingface.co/ciaochris/Vers3Dynamics-Civil-Reactor-Expert-3B/tree/optimization-2026-11-03/optimization/2026-11-03/candidate

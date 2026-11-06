@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Abhiabhi12/ppo-CartPole-v1 es un agente de aprendizaje por refuerzo profundo publicado en HuggingFace Hub por el usuario Abhiabhi12. Se trata de un modelo de PPO (Proximal Policy Optimization) entrenado para resolver el entorno CartPole-v1, el clasico problema de control del pendulo invertido en el que un agente debe aplicar fuerza a izquierda o derecha para mantener una barra vertical sobre un carro. El modelo se ha entrenado con la libreria stable-baselines3 y se distribuye exclusivamente a traves del Hub, sin publicacion asociada.
+Abhiabhi12/ppo-CartPole-v1 es un agente de aprendizaje por refuerzo profundo publicado en Hugging Face Hub por el usuario Abhiabhi12. Se trata de un modelo de PPO (Proximal Policy Optimization) entrenado para resolver el entorno CartPole-v1, el clasico problema de control del pendulo invertido en el que un agente debe aplicar fuerza a izquierda o derecha para mantener una barra vertical sobre un carro. El modelo se ha entrenado con la libreria stable-baselines3 y se distribuye exclusivamente a traves del Hub, sin publicacion asociada.
 
 El repositorio no contiene articulo cientifico, blog tecnico ni documentacion adicional: la model card se limita a declarar el algoritmo (PPO), el entorno (CartPole-v1) y el resultado declarado por el autor. No se especifican hiperparametros, numero de pasos de entrenamiento, semillas, arquitectura de red ni datos de reproducibilidad, y la seccion de uso practico aparece sin completar (marcada como "TODO" en el propio README).
 
@@ -50,7 +50,7 @@ No se dispone de informacion sobre el proceso de entrenamiento: numero de pasos 
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el model-index del repositorio (metrica no verificada por HuggingFace ni por terceros):
+Resultados declarados por el autor en el model-index del repositorio (metrica no verificada por Hugging Face ni por terceros):
 
 | Algoritmo | Entorno | Metrica | Valor | Verificado |
 |---|---|---|---|---|
@@ -79,7 +79,7 @@ No se dispone de datos verificados de otros agentes entrenados sobre CartPole-v1
 | Contexto | no aplica | no aplica |
 | Rendimiento declarado | 401.60 +/- 127.62 (no verificado) | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | HuggingFace Hub, 0 descargas, 0 likes | no disponible |
+| Disponibilidad | Hugging Face Hub, 0 descargas, 0 likes | no disponible |
 
 En terminos cualitativos, la categoria natural de comparacion serian otros agentes de control discreto en CartPole-v1 entrenados con PPO, DQN o A2C, pero los resultados de busqueda realizados no han devuelto ninguna fuente tecnica relevante (unicamente resultados no relacionados con el dominio), de modo que no se aportan cifras de terceros.
 
@@ -99,7 +99,7 @@ En terminos cualitativos, la categoria natural de comparacion serian otros agent
 
 ## Enlaces
 
-- Modelo en HuggingFace Hub: https://huggingface.co/Abhiabhi12/ppo-CartPole-v1
+- Modelo en Hugging Face Hub: https://huggingface.co/Abhiabhi12/ppo-CartPole-v1
 - Libreria stable-baselines3 (mencionada en la model card): https://github.com/DLR-RM/stable-baselines3
 
 Nota: los resultados de busqueda web realizados no han devuelto ningun enlace tecnico relevante sobre este modelo, su entrenamiento o evaluaciones independientes; las unicas fuentes recuperadas pertenecen a un dominio sin relacion con el aprendizaje por refuerzo y se han descartado.

@@ -91,8 +91,8 @@ No disponible. La información proporcionada no incluye nombres ni cifras de mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Linzhan/UniMate
-- Colección UniMate en HuggingFace: https://huggingface.co/collections/Linzhan/unimate
+- Repositorio en Hugging Face: https://huggingface.co/Linzhan/UniMate
+- Colección UniMate en Hugging Face: https://huggingface.co/collections/Linzhan/unimate
 - Dataset UniML3D: https://huggingface.co/datasets/Linzhan/UniML3D
 - Página del proyecto: https://linzhanmou.com/unimate/
 - Demo interactiva: https://linzhanmou.com/unimate/interactive.html

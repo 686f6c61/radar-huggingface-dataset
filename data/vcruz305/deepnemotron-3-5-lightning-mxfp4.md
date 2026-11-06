@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - VRAM estimada para inferencia: no disponible, aunque la cuantizacion MXFP4 esta diseñada para reducir significativamente el consumo respecto a BF16.
 - GPU recomendadas: el entrenamiento se realizo en una A100-80, por lo que se asume compatibilidad con GPUs de datacenter. Para inferencia, la cuantizacion MXFP4 podria permitir su ejecucion en GPUs de consumo como RTX 4090, aunque no se especifica.
-- Opciones de despliegue: transformers (HuggingFace), vLLM para servidores de inferencia, llama.cpp para las versiones GGUF, y Ollama si se convierte a ese formato.
+- Opciones de despliegue: transformers (Hugging Face), vLLM para servidores de inferencia, llama.cpp para las versiones GGUF, y Ollama si se convierte a ese formato.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares

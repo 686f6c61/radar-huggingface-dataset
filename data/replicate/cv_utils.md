@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`replicate/cv_utils` no es un modelo de IA en el sentido habitual, sino un repositorio de tipo *kernel* publicado en HuggingFace Hub bajo la librería `kernels`. Contiene una compilación de utilidades de kernel para visión por computador, en concreto dos operaciones: `generic_nms` (supresión de no máximos genérica) y `connected_components` (etiquetado de componentes conexas). No incluye pesos, tokenizador ni arquitectura de red neuronal; el repositorio ocupa 0.0 GB y no registra descargas ni interacciones.
+`replicate/cv_utils` no es un modelo de IA en el sentido habitual, sino un repositorio de tipo *kernel* publicado en Hugging Face Hub bajo la librería `kernels`. Contiene una compilación de utilidades de kernel para visión por computador, en concreto dos operaciones: `generic_nms` (supresión de no máximos genérica) y `connected_components` (etiquetado de componentes conexas). No incluye pesos, tokenizador ni arquitectura de red neuronal; el repositorio ocupa 0.0 GB y no registra descargas ni interacciones.
 
-El propio autor lo marca como deprecado en la model card: el repositorio se eliminará próximamente y se indica de forma explícita que debe sustituirse por `kernels-community/cv-utils`. Adicionalmente, HuggingFace advierte de que a partir del 13 de septiembre de 2026 se retirarán los repositorios de kernels publicados con el tipo "model", de modo que este artefacto queda dentro de una categoría en proceso de desmantelamiento.
+El propio autor lo marca como deprecado en la model card: el repositorio se eliminará próximamente y se indica de forma explícita que debe sustituirse por `kernels-community/cv-utils`. Adicionalmente, Hugging Face advierte de que a partir del 13 de septiembre de 2026 se retirarán los repositorios de kernels publicados con el tipo "model", de modo que este artefacto queda dentro de una categoría en proceso de desmantelamiento.
 
 Por tanto, su relevancia actual es limitada: solo tiene interés como referencia histórica o para entender la migración de kernels al espacio de nombres `kernels-community`. Cualquier evaluación de capacidades, benchmarks o requisitos de hardware en términos de modelo generativo no aplica y se marca como no disponible.
 
@@ -20,7 +20,7 @@ Por tanto, su relevancia actual es limitada: solo tiene interés como referencia
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | no disponible (no se distribuyen pesos; el artefacto es una build de kernels) |
-| Tipo de repositorio | kernel (libreria `kernels` de HuggingFace Hub) |
+| Tipo de repositorio | kernel (libreria `kernels` de Hugging Face Hub) |
 | Operaciones incluidas | `generic_nms`, `connected_components` |
 | Estado | deprecado; sustituto indicado: `kernels-community/cv-utils` |
 | Fecha de creacion (metadatos) | 2026-09-15 |
@@ -30,7 +30,7 @@ Por tanto, su relevancia actual es limitada: solo tiene interés como referencia
 
 ## Arquitectura y entrenamiento
 
-No existe arquitectura de red neuronal ni proceso de entrenamiento asociado. El repositorio es una build de kernels, es decir, código compilado (habitualmente extensiones CUDA/C++) que se carga desde la librería `kernels` de HuggingFace para ejecutar operaciones concretas sobre tensores. En este caso, las dos utilidades declaradas son `generic_nms`, una implementación genérica de supresión de no máximos, y `connected_components`, el etiquetado de componentes conexas sobre una máscara binaria.
+No existe arquitectura de red neuronal ni proceso de entrenamiento asociado. El repositorio es una build de kernels, es decir, código compilado (habitualmente extensiones CUDA/C++) que se carga desde la librería `kernels` de Hugging Face para ejecutar operaciones concretas sobre tensores. En este caso, las dos utilidades declaradas son `generic_nms`, una implementación genérica de supresión de no máximos, y `connected_components`, el etiquetado de componentes conexas sobre una máscara binaria.
 
 La model card no proporciona información sobre tokens de entrenamiento, composición de dataset, RLHF/DPO ni innovaciones técnicas como decodificación especulativa o atención lineal, porque no son conceptos aplicables a este tipo de artefacto. Tampoco se documentan en el repositorio los detalles de compilación: no se especifica la versión de CUDA, la versión de PyTorch ni las arquitecturas de GPU objetivo.
 
@@ -38,7 +38,7 @@ La model card no proporciona información sobre tokens de entrenamiento, composi
 
 - Supresión de no máximos genérica (`generic_nms`): filtrado de detecciones solapadas en pipelines de detección de objetos.
 - Etiquetado de componentes conexas (`connected_components`): asignación de etiquetas a regiones conectadas en máscaras binarias, paso habitual en tareas de segmentación y post-procesado.
-- Ejecución como kernel cargable desde la librería `kernels` de HuggingFace, no como modelo invocable con `generate`.
+- Ejecución como kernel cargable desde la librería `kernels` de Hugging Face, no como modelo invocable con `generate`.
 - No dispone de generación de texto, razonamiento, código, matemáticas ni visión como capacidad de modelo: las operaciones son de bajo nivel sobre tensores.
 - Sin soporte de tool calling ni de function calling.
 - Sin soporte de agentes ni de razonamiento multi-paso.
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible. Al no ser un modelo con pesos, el consumo depende exclusivamente del tamaño de los tensores de entrada (número de cajas o resolución de la máscara) y del lote procesado.
 - GPU recomendadas: no disponible. Al tratarse de kernels, es previsible que requiera GPU compatible con CUDA, pero el repositorio no especifica arquitecturas soportadas.
 - Compatibilidad con GPU de consumo: no confirmada en la información disponible.
-- Opciones de despliegue: carga mediante la librería `kernels` de HuggingFace. No aplican vLLM, llama.cpp, Ollama ni TGI, que están orientados a servir modelos con pesos.
+- Opciones de despliegue: carga mediante la librería `kernels` de Hugging Face. No aplican vLLM, llama.cpp, Ollama ni TGI, que están orientados a servir modelos con pesos.
 - Latencia y throughput: no disponible.
 - Nota: el repositorio está deprecado y será eliminado, por lo que no es recomendable fijarlo como dependencia en producción.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 - No es un modelo de lenguaje: no genera texto, no razona y no acepta prompts. Cualquier expectativa en ese sentido es incorrecta.
 - Repositorio marcado como deprecado por el autor, con eliminación anunciada y sustitución obligatoria por `kernels-community/cv-utils`.
-- HuggingFace retirará los repositorios de kernels publicados con tipo "model" a partir del 13 de septiembre de 2026, lo que afecta a este artefacto.
+- Hugging Face retirará los repositorios de kernels publicados con tipo "model" a partir del 13 de septiembre de 2026, lo que afecta a este artefacto.
 - Licencia no declarada: sin licencia explícita no hay autorización clara para uso comercial ni para redistribución.
 - Estado de mantenimiento nulo: 0 descargas, 0 likes, repo de 0.0 GB y sin actualizaciones desde la fecha de creación registrada.
 - Documentación insuficiente: no se detallan versiones de CUDA, PyTorch, plataformas soportadas ni límites de tamaño de entrada.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/cv_utils
+- Repositorio en Hugging Face: https://huggingface.co/replicate/cv_utils
 - Sustituto recomendado: https://huggingface.co/kernels-community/cv-utils
 - Incidencias de la librería kernels: https://github.com/huggingface/kernels/issues/new
 - Replicate (plataforma del autor): https://replicate.com/

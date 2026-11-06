@@ -82,9 +82,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Naturaleza | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lewisdog/aoa-course-decision-0.6b | ~0,6B (adaptador sobre Qwen3-0.6B-Base) | Modelo de decision tipado, salida restringida a un catalogo | no especificado | Apache 2.0 | HuggingFace Hub |
-| jaredpalmer/kev-0.6b | ~0,6B | Modelo de decision Kev, punto de partida del ajuste | no disponible | no disponible en la informacion proporcionada | HuggingFace Hub |
-| Qwen/Qwen3-0.6B-Base | 0,6B | LLM generativo de proposito general | 32.768 tokens declarados por el autor del base | Apache 2.0 | HuggingFace Hub |
+| lewisdog/aoa-course-decision-0.6b | ~0,6B (adaptador sobre Qwen3-0.6B-Base) | Modelo de decision tipado, salida restringida a un catalogo | no especificado | Apache 2.0 | Hugging Face Hub |
+| jaredpalmer/kev-0.6b | ~0,6B | Modelo de decision Kev, punto de partida del ajuste | no disponible | no disponible en la informacion proporcionada | Hugging Face Hub |
+| Qwen/Qwen3-0.6B-Base | 0,6B | LLM generativo de proposito general | 32.768 tokens declarados por el autor del base | Apache 2.0 | Hugging Face Hub |
 | LLM generalista como enrutador | variable | Enrutado por generacion de texto, sin restriccion de catalogo | variable | variable | amplia |
 
 No hay datos publicos de benchmarks comparativos entre estas alternativas en la informacion disponible, por lo que la comparacion se limita a naturaleza, licencia y disponibilidad. La diferencia funcional clave frente al modelo base y frente a un LLM generalista es que este adaptador no genera texto y no puede emitir una capacidad fuera del conjunto ofrecido.
@@ -104,7 +104,7 @@ No hay datos publicos de benchmarks comparativos entre estas alternativas en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lewisdog/aoa-course-decision-0.6b
+- Modelo en Hugging Face: https://huggingface.co/lewisdog/aoa-course-decision-0.6b
 - Repositorio del curso Agent-Oriented Architecture: https://github.com/AgentOrientedArchitecture/aoa-course
 - Framework Kev (Apache 2.0): https://github.com/jaredpalmer/kev
 - Modelo de inicializacion: https://huggingface.co/jaredpalmer/kev-0.6b

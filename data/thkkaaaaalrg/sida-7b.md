@@ -84,8 +84,8 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace (réplica): https://huggingface.co/thkkaaaaalrg/SIDA-7B
-- Modelo original en HuggingFace: https://huggingface.co/saberzl/SIDA-7B
+- Modelo en Hugging Face (réplica): https://huggingface.co/thkkaaaaalrg/SIDA-7B
+- Modelo original en Hugging Face: https://huggingface.co/saberzl/SIDA-7B
 - Descripción del modelo original: https://huggingface.co/saberzl/SIDA-7B-description
 - Repositorio de código en GitHub: https://github.com/hzlsaber/SIDA
 - Artículo en arXiv (PDF): https://arxiv.org/pdf/2412.04292

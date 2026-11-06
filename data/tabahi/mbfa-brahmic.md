@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tabahi/mbfa-brahmic
+- Modelo en Hugging Face: https://huggingface.co/Tabahi/mbfa-brahmic
 - Codigo de inferencia y entrenamiento: https://github.com/tabahi/bfa_models
 - Libreria standard_g2p: https://github.com/tabahi/CharsiuG2P
 - Dataset de entrenamiento: https://huggingface.co/datasets/google/fleurs

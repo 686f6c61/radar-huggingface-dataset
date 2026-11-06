@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SenseNova-6.8-Code2Video-EXL3 (esta ficha) | 11,19B en safetensors (base declara 27B) | 512K | Apache 2.0 | HuggingFace (EXL3, exllamav3) | Cuantización 6.0 bpw, sin capa MTP |
-| sensenova/SenseNova-6.8-Code2Video (BF16) | 27B (según model card) | 512K | Apache 2.0 | HuggingFace | Modelo base original, desplegable con vLLM/SGLang/LightLLM |
+| SenseNova-6.8-Code2Video-EXL3 (esta ficha) | 11,19B en safetensors (base declara 27B) | 512K | Apache 2.0 | Hugging Face (EXL3, exllamav3) | Cuantización 6.0 bpw, sin capa MTP |
+| sensenova/SenseNova-6.8-Code2Video (BF16) | 27B (según model card) | 512K | Apache 2.0 | Hugging Face | Modelo base original, desplegable con vLLM/SGLang/LightLLM |
 | Qwen3.8-27B | 27B | no disponible | no disponible | no disponible | Modelo del que se afina el base |
 
 No se dispone de datos de benchmarks ni de otras alternativas comparables en la información proporcionada.
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de otras alternativas comparables en la 
 
 ## Enlaces
 
-- HuggingFace (esta cuantización): https://huggingface.co/Hayabala/SenseNova-6.8-Code2Video-EXL3
+- Hugging Face (esta cuantización): https://huggingface.co/Hayabala/SenseNova-6.8-Code2Video-EXL3
 - Modelo base: https://huggingface.co/sensenova/SenseNova-6.8-Code2Video
 - Repositorio GitHub (skill y prompts): https://github.com/OpenSenseNova/SenseNova-6.8-Code2Video
 - Trayectorias de ejemplo: https://huggingface.co/sensenova/SenseNova-6.8-Code2Video/blob/main/trajectories/all.openai.jsonl

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Codemaster67/Olmo_1b_100k` es un checkpoint publicado en HuggingFace por el usuario Codemaster67 el 24 de septiembre de 2026. Por el identificador se deduce que se trata de un derivado de la familia OLMo de Allen AI con aproximadamente 1.000 millones de parámetros, pero esta interpretación no está confirmada en ninguna fuente: la model card del repositorio es la plantilla automática de HuggingFace y no contiene descripción, autoría, datos de entrenamiento ni resultados de evaluación. El sufijo "100k" es ambiguo y podría referirse a pasos de entrenamiento, número de ejemplos de ajuste fino o a una ventana de contexto de 100.000 tokens; el repositorio hermano `Olmo-1b-50k-retrosynthesis` del mismo autor apunta a la hipótesis de pasos o ejemplos de ajuste fino, pero tampoco lo confirma.
+`Codemaster67/Olmo_1b_100k` es un checkpoint publicado en Hugging Face por el usuario Codemaster67 el 24 de septiembre de 2026. Por el identificador se deduce que se trata de un derivado de la familia OLMo de Allen AI con aproximadamente 1.000 millones de parámetros, pero esta interpretación no está confirmada en ninguna fuente: la model card del repositorio es la plantilla automática de Hugging Face y no contiene descripción, autoría, datos de entrenamiento ni resultados de evaluación. El sufijo "100k" es ambiguo y podría referirse a pasos de entrenamiento, número de ejemplos de ajuste fino o a una ventana de contexto de 100.000 tokens; el repositorio hermano `Olmo-1b-50k-retrosynthesis` del mismo autor apunta a la hipótesis de pasos o ejemplos de ajuste fino, pero tampoco lo confirma.
 
 El problema que resuelve, en la medida en que pueda determinarse, es el de ofrecer un modelo pequeño y desplegable en hardware de consumo, presumiblemente ajustado sobre una base OLMo 1B. Su relevancia potencial está en el ecosistema OLMo, que publica pesos, código de entrenamiento y datasets de forma abierta y bajo licencia permisiva, lo que permite reproducibilidad completa. Sin embargo, este repositorio concreto no hereda automáticamente esas garantías: no declara licencia, no declara idiomas, no incluye código de ejemplo y acumula cero descargas y cero "likes" en el momento de la consulta.
 
-El tamaño del repositorio reportado por HuggingFace es de 0,0 GB, lo que resulta inconsistente con un checkpoint de 1.000 millones de parámetros en `safetensors` (que ocuparía del orden de 2 a 2,5 GB en fp16). Esta discrepancia sugiere que los pesos pueden no estar efectivamente subidos, o que la métrica no se ha actualizado. Cualquier evaluación práctica del modelo debería comenzar por verificar la integridad y la existencia real de los ficheros de pesos.
+El tamaño del repositorio reportado por Hugging Face es de 0,0 GB, lo que resulta inconsistente con un checkpoint de 1.000 millones de parámetros en `safetensors` (que ocuparía del orden de 2 a 2,5 GB en fp16). Esta discrepancia sugiere que los pesos pueden no estar efectivamente subidos, o que la métrica no se ha actualizado. Cualquier evaluación práctica del modelo debería comenzar por verificar la integridad y la existencia real de los ficheros de pesos.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ El tamaño del repositorio reportado por HuggingFace es de 0,0 GB, lo que result
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura concreta, el número de tokens de entrenamiento, la composición del dataset ni la existencia de fases de RLHF, DPO o SFT. La model card es la plantilla genérica de HuggingFace y todos los campos relevantes aparecen como "[More Information Needed]". La referencia bibliográfica que incluye el repositorio (`arxiv:1910.09700`) corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en aprendizaje automático, citado en la sección de impacto ambiental de la plantilla, y no describe el modelo.
+No se dispone de información sobre la arquitectura concreta, el número de tokens de entrenamiento, la composición del dataset ni la existencia de fases de RLHF, DPO o SFT. La model card es la plantilla genérica de Hugging Face y todos los campos relevantes aparecen como "[More Information Needed]". La referencia bibliográfica que incluye el repositorio (`arxiv:1910.09700`) corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en aprendizaje automático, citado en la sección de impacto ambiental de la plantilla, y no describe el modelo.
 
 Como contexto externo, la familia OLMo de Allen AI publica un flujo completo de entrenamiento (pretraining, midtraining, ajuste de instrucciones con SFT y DPO, y fases de razonamiento) y, para el modelo de 1B, documenta entrenamientos repetidos sobre 50.000 millones de tokens de alta calidad con distintos órdenes de datos. La variante AMD OLMo 1B es la primera familia de modelos de 1B entrenada sobre GPUs AMD Instinct y orientada a PCs con Ryzen AI. No hay evidencia de que este repositorio siga esos procedimientos: podría tratarse de un ajuste ligero sobre un checkpoint base, de un experimento intermedio o incluso de un repositorio vacío.
 
@@ -95,7 +95,7 @@ Los datos de la columna del modelo evaluado son desconocidos, por lo que la comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Codemaster67/Olmo_1b_100k
+- Repositorio en Hugging Face: https://huggingface.co/Codemaster67/Olmo_1b_100k
 - Repositorio hermano con posible ajuste en retrosíntesis: https://huggingface.co/Codemaster67/Olmo-1b-50k-retrosynthesis
 - Repositorio hermano de instrucciones: https://huggingface.co/Codemaster67/Olmo-1b-Instruct
 - Página oficial de OLMo en Allen AI: https://allenai.org/olmo

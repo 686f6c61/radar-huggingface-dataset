@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpt2-zh-varying-mix` es un repositorio de pesos publicados en HuggingFace por el usuario `lindazeng979`, asociado al proyecto que el autor denomina *bilingual-llms*. Por el nombre del repositorio y la etiqueta de librería (`transformers`), se trata de una familia de checkpoints derivados de la arquitectura GPT-2 orientados a chino (`zh`), organizados en una estructura de subcarpetas del tipo `<condition>/seed_<n>/`, es decir, distintas condiciones experimentales replicadas con varias semillas de entrenamiento. El repositorio no incluye model card descriptiva más allá de un fragmento de código de carga, ni licencia, ni idiomas declarados, ni resultados de evaluación.
+`gpt2-zh-varying-mix` es un repositorio de pesos publicados en Hugging Face por el usuario `lindazeng979`, asociado al proyecto que el autor denomina *bilingual-llms*. Por el nombre del repositorio y la etiqueta de librería (`transformers`), se trata de una familia de checkpoints derivados de la arquitectura GPT-2 orientados a chino (`zh`), organizados en una estructura de subcarpetas del tipo `<condition>/seed_<n>/`, es decir, distintas condiciones experimentales replicadas con varias semillas de entrenamiento. El repositorio no incluye model card descriptiva más allá de un fragmento de código de carga, ni licencia, ni idiomas declarados, ni resultados de evaluación.
 
 El interés de este repositorio es fundamentalmente experimental: agrupa múltiples ejecuciones de un mismo experimento bajo un único identificador, algo útil para estudiar variabilidad entre semillas o el efecto de distintas mezclas de datos (de ahí el sufijo `varying-mix`). No es un modelo orientado a producción: no hay información sobre el volumen de datos de entrenamiento, el tokenizador, el número de parámetros por checkpoint ni el proceso de alineación.
 
@@ -45,7 +45,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens procesa
 - Generación de texto en chino para tareas de baja exigencia: completado de frases o generación de texto corto en prototipos, asumiendo que la calidad no está evaluada y requiere validación manual.
 - Extracción de representaciones internas: al ser un modelo tipo GPT-2, sus estados ocultos pueden usarse como *features* en clasificación de texto o análisis lingüístico, siempre que se valide empíricamente.
 - Línea base en comparativas: usar los checkpoints como referencia de un modelo pequeño entrenado desde cero frente a modelos chinos preentrenados de mayor escala.
-- Docencia: ejemplo práctico de organización de múltiples ejecuciones en un solo repositorio de HuggingFace con carga por `subfolder`.
+- Docencia: ejemplo práctico de organización de múltiples ejecuciones en un solo repositorio de Hugging Face con carga por `subfolder`.
 
 ## Benchmarks y rendimiento
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `lindazeng979/gpt2-zh-varying-mix` | no disponible | no disponible | no disponible | HuggingFace, 0 descargas | Multiples checkpoints en subcarpetas; sin evaluacion publicada |
-| GPT-2 (OpenAI) | 124 M / 355 M / 774 M / 1,5 B | 1024 tokens | MIT | Pesos publicos en HuggingFace | Referencia canonica de la arquitectura; solo ingles |
-| `uer/gpt2-chinese-cluecorpussmall` | ~102 M | 512 tokens | Apache-2.0 (segun el autor) | HuggingFace, ampliamente utilizado | GPT-2 entrenado en chino sobre CLUECorpusSmall; referencia habitual para chino |
-| Modelos tipo Qwen2.5 small (0,5 B - 1,5 B) | 0,5 B - 1,5 B | 32 768 tokens | Apache-2.0 en la mayoria de variantes | HuggingFace, amplia adopcion | Arquitectura moderna con entrenamiento multilingue e instruccion; no comparable en calidad con un GPT-2 desde cero |
+| `lindazeng979/gpt2-zh-varying-mix` | no disponible | no disponible | no disponible | Hugging Face, 0 descargas | Multiples checkpoints en subcarpetas; sin evaluacion publicada |
+| GPT-2 (OpenAI) | 124 M / 355 M / 774 M / 1,5 B | 1024 tokens | MIT | Pesos publicos en Hugging Face | Referencia canonica de la arquitectura; solo ingles |
+| `uer/gpt2-chinese-cluecorpussmall` | ~102 M | 512 tokens | Apache-2.0 (segun el autor) | Hugging Face, ampliamente utilizado | GPT-2 entrenado en chino sobre CLUECorpusSmall; referencia habitual para chino |
+| Modelos tipo Qwen2.5 small (0,5 B - 1,5 B) | 0,5 B - 1,5 B | 32 768 tokens | Apache-2.0 en la mayoria de variantes | Hugging Face, amplia adopcion | Arquitectura moderna con entrenamiento multilingue e instruccion; no comparable en calidad con un GPT-2 desde cero |
 
 La comparación es estructural: al no existir métricas publicadas para `gpt2-zh-varying-mix`, no es posible establecer una comparación de rendimiento. Los datos de los modelos alternativos provienen de sus propias fichas públicas y pueden variar según la versión consultada.
 
@@ -83,5 +83,5 @@ La comparación es estructural: al no existir métricas publicadas para `gpt2-zh
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lindazeng979/gpt2-zh-varying-mix
+- Repositorio en Hugging Face: https://huggingface.co/lindazeng979/gpt2-zh-varying-mix
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

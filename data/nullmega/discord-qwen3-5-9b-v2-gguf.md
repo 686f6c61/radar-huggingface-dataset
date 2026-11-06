@@ -45,7 +45,7 @@ El dataset no esta descrito con detalle: la model card afirma que se entreno con
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues: no disponibles; no se declara lista de idiomas.
 - Modo "thinking" explicito, vision o audio: no disponibles.
-- Etiqueta `endpoints_compatible` en HuggingFace, lo que sugiere compatibilidad con los endpoints de inferencia de la plataforma, aunque no se detallan las condiciones.
+- Etiqueta `endpoints_compatible` en Hugging Face, lo que sugiere compatibilidad con los endpoints de inferencia de la plataforma, aunque no se detallan las condiciones.
 
 ## Casos de uso
 
@@ -111,7 +111,7 @@ La comparacion de calidad no puede establecerse: no existen resultados de MMLU, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nullmega/discord-qwen3.5-9b-v2-gguf
+- Modelo en Hugging Face: https://huggingface.co/Nullmega/discord-qwen3.5-9b-v2-gguf
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.5-9B-abliterated
 - Repositorios hermanos mencionados por el autor (existencia no confirmada en la informacion disponible): `discord-friends-merged` y `discord-friends-lora`
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles

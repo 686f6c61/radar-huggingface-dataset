@@ -18,7 +18,7 @@ El modelo es relevante para quienes despliegan modelos de 27B en estaciones de t
 | Longitud de contexto | no disponible (el drafter MTP se entrena sobre 32k tokens en inglés; la ventana del backbone no se especifica) |
 | Tipos de cuantizacion | Marlin W4_G128, W4_G32 y W8_G128 en backbone; gates GDN en BF16; tablas de vocabulario en BF16; MTP en W4_G32/W8_G128. Efectivo: 5,65 bpw backbone / 6,75 bpw total |
 | Idiomas soportados | Inglés (drafter podado a 32k tokens en inglés; idiomas del backbone no disponibles) |
-| Licencia | swift-open-license-v1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | swift-open-license-v1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (7 shards, 21,65 GiB en disco), kernels Marlin para vLLM |
 
 ## Arquitectura y entrenamiento
@@ -105,11 +105,11 @@ No se dispone de datos de benchmarks de calidad ni de especificaciones de contex
 - Riesgo de alucinación y sesgos del backbone no documentados en la información proporcionada.
 - Idiomas del backbone no disponibles; el único idioma confirmado es inglés.
 - Licencia `swift-open-license-v1.0` (etiquetada `other`): es necesario revisar el archivo LICENSE antes de uso comercial; no se detallan restricciones en la información disponible.
-- Sin descargas ni likes en HuggingFace en el momento de la consulta; no hay validación comunitaria del checkpoint.
+- Sin descargas ni likes en Hugging Face en el momento de la consulta; no hay validación comunitaria del checkpoint.
 - Los benchmarks reportados son de throughput y aceptación especulativa, no de calidad de generación; no deben interpretarse como evidencia de rendimiento en tareas downstream.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bradshaw-ai/Swift-1.5-27B-5.65bpw-GSQ-RCO-Marlin-MTP
+- Hugging Face: https://huggingface.co/bradshaw-ai/Swift-1.5-27B-5.65bpw-GSQ-RCO-Marlin-MTP
 - Modelo base: https://huggingface.co/UkisAI/Swift-1.5-Qwen3.8-27B
 - Parches vLLM HyperQwen: https://github.com/syv-ai/HyperQwen

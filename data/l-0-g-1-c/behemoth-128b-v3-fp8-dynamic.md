@@ -49,9 +49,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Behemoth-128B-v3-FP8-Dynamic | 125.025.988.608 | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| Behemoth-128B-v3-W4A16-AWQ | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Mistral-Medium-3.5-128B (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Behemoth-128B-v3-FP8-Dynamic | 125.025.988.608 | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| Behemoth-128B-v3-W4A16-AWQ | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Mistral-Medium-3.5-128B (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de informacion suficiente para establecer una comparativa rigurosa. La variante Behemoth-128B-v3-W4A16-AWQ, del mismo autor, es una alternativa de cuantizacion W4A16 que reducira el uso de memoria, pero no se han facilitado sus especificaciones.
 
@@ -65,6 +65,6 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- [Behemoth-128B-v3-FP8-Dynamic en HuggingFace](https://huggingface.co/L-0-G-1-C/Behemoth-128B-v3-FP8-Dynamic)
-- [Behemoth-128B-v3-W4A16-AWQ en HuggingFace](https://huggingface.co/L-0-G-1-C/Behemoth-128B-v3-W4A16-AWQ)
-- [Mistral-Medium-3.5-128B (modelo base) en HuggingFace](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B)
+- [Behemoth-128B-v3-FP8-Dynamic en Hugging Face](https://huggingface.co/L-0-G-1-C/Behemoth-128B-v3-FP8-Dynamic)
+- [Behemoth-128B-v3-W4A16-AWQ en Hugging Face](https://huggingface.co/L-0-G-1-C/Behemoth-128B-v3-W4A16-AWQ)
+- [Mistral-Medium-3.5-128B (modelo base) en Hugging Face](https://huggingface.co/mistralai/Mistral-Medium-3.5-128B)

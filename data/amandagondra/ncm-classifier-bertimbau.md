@@ -77,9 +77,9 @@ Frente al modelo principal `AmandaGondra/ncm-classifier`, con bootstrap pareado 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `AmandaGondra/ncm-classifier-bertimbau` (este) | 108,9 M | 512 tokens | Clasificación NCM (37 clases), portugués | MIT | HuggingFace |
-| `AmandaGondra/ncm-classifier` (modelo principal) | no disponible en la información proporcionada | no disponible | Clasificación NCM (37 clases), portugués | no disponible en la información proporcionada | HuggingFace |
-| `neuralmind/bert-base-portuguese-cased` (base) | ~110 M | 512 tokens | Modelo de lenguaje enmascarado, portugués | MIT | HuggingFace |
+| `AmandaGondra/ncm-classifier-bertimbau` (este) | 108,9 M | 512 tokens | Clasificación NCM (37 clases), portugués | MIT | Hugging Face |
+| `AmandaGondra/ncm-classifier` (modelo principal) | no disponible en la información proporcionada | no disponible | Clasificación NCM (37 clases), portugués | no disponible en la información proporcionada | Hugging Face |
+| `neuralmind/bert-base-portuguese-cased` (base) | ~110 M | 512 tokens | Modelo de lenguaje enmascarado, portugués | MIT | Hugging Face |
 
 La comparación cuantitativa directa entre este modelo y el principal se limita a la conclusión del autor: sin diferencias distinguibles en top-1, top-3 ni macro F1, con ventaja en calibración para este modelo y ventaja en latencia en CPU para el principal. No se dispone de datos de benchmarks frente a otros clasificadores NCM de terceros.
 
@@ -99,7 +99,7 @@ La comparación cuantitativa directa entre este modelo y el principal se limita 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmandaGondra/ncm-classifier-bertimbau
+- Modelo en Hugging Face: https://huggingface.co/AmandaGondra/ncm-classifier-bertimbau
 - Modelo principal recomendado: https://huggingface.co/AmandaGondra/ncm-classifier
 - Modelo base: https://huggingface.co/neuralmind/bert-base-portuguese-cased
 - Código y notebooks: https://github.com/amanda-gondra/ncm-classifier

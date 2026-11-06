@@ -92,6 +92,6 @@ No se dispone de datos de benchmarks comparativos con otras alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ununununununununununununununununununun/gemma-3-270m-it-phi-lattice-v2
+- Modelo en Hugging Face: https://huggingface.co/ununununununununununununununununununun/gemma-3-270m-it-phi-lattice-v2
 - Modelo base (Unsloth): https://huggingface.co/unsloth/gemma-3-270m-it
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

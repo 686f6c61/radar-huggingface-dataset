@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje causal de 27 000 millones de parámetros, de arquitectura densa, desarrollado por el equipo de Qwen (Alibaba) y publicado en HuggingFace por Unsloth. Forma parte de la generación Qwen3.8, la más reciente de la familia abierta de Qwen, y se presenta como un modelo nativo de visión-lenguaje capaz de procesar imágenes y vídeos, además de texto. Su diseño híbrido combina capas de atención lineal (Gated DeltaNet) con capas de atención clásica (Gated Attention), lo que le permite manejar contextos largos de forma eficiente: 262 144 tokens nativos, extensibles hasta 1 000 000 mediante técnicas de escalado de RoPE.
+Qwen3.8-27B es un modelo de lenguaje causal de 27 000 millones de parámetros, de arquitectura densa, desarrollado por el equipo de Qwen (Alibaba) y publicado en Hugging Face por Unsloth. Forma parte de la generación Qwen3.8, la más reciente de la familia abierta de Qwen, y se presenta como un modelo nativo de visión-lenguaje capaz de procesar imágenes y vídeos, además de texto. Su diseño híbrido combina capas de atención lineal (Gated DeltaNet) con capas de atención clásica (Gated Attention), lo que le permite manejar contextos largos de forma eficiente: 262 144 tokens nativos, extensibles hasta 1 000 000 mediante técnicas de escalado de RoPE.
 
 El modelo está orientado a tareas complejas y de largo horizonte, como razonamiento multi-paso, ejecución de agentes autónomos y tool calling. Incluye un modo de pensamiento (thinking mode) activado por defecto, con control fino del esfuerzo de razonamiento (`reasoning_effort`) y conservación del contexto de razonamiento histórico (`preserve_thinking`). Su licencia Apache 2.0 permite uso comercial sin restricciones, y su tamaño compacto (27B) lo hace adecuado para despliegue en entornos con recursos moderados, especialmente con cuantizaciones.
 
@@ -74,7 +74,7 @@ No se dispone de datos comparativos en la información proporcionada. No se han 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unsloth/Qwen3.8-27B
+- Hugging Face: https://huggingface.co/unsloth/Qwen3.8-27B
 - Guía de Unsloth para Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth/
 - Documentación de Unsloth sobre GGUF dinámicos: https://unsloth.ai/docs/basics/unsloth-dynamic-v2.0-gguf

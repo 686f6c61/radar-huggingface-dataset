@@ -83,7 +83,7 @@ La diferencia practica frente a las tres alternativas es unicamente el comportam
 - Idiomas: aunque se declaran 11, no hay evaluaciones por idioma; el rendimiento en espanol, arabe o coreano no esta verificado.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/xtools-at/Ministral-3-8B-Reasoning-UNCENSORED-heretic
+- Modelo en Hugging Face: https://huggingface.co/xtools-at/Ministral-3-8B-Reasoning-UNCENSORED-heretic
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Ministral-3-8B-Reasoning-2512
 - System prompt recomendado del modelo base: https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512/blob/main/SYSTEM_PROMPT.txt
 - Heretic (herramienta de abliteration): https://heretic-project.org

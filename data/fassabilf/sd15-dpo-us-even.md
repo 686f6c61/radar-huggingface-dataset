@@ -114,7 +114,7 @@ No se dispone de datos de benchmarks comparables en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fassabilf/sd15-dpo-us-even
+- Modelo en Hugging Face: https://huggingface.co/fassabilf/sd15-dpo-us-even
 - Modelo base: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Dataset de preferencias citado en la model card: repo `fassabilf/ift-train-us-real`, carpeta `dpo_even/` (referenciado por el autor; no verificado en esta busqueda)
 - Script de montaje de pipeline citado en la model card: `scripts/ift/ckpt_to_pipeline.py` del repositorio de código del autor (ruta indicada por el autor; no verificado en esta busqueda)

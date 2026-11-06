@@ -25,13 +25,13 @@ Sin embargo, la documentación pública es prácticamente inexistente: la model 
 
 El modelo es un adaptador LoRA (Low-Rank Adaptation) que se monta sobre Llama-3.2-3B-Instruct, un transformer decoder-only con mecanismo de atención estándar. La técnica LoRA congela los pesos del modelo base e inyecta matrices de bajo rango en las capas de atención y feed-forward, reduciendo drásticamente el número de parámetros entrenables y los requisitos de memoria durante el fine-tuning.
 
-El entrenamiento se realizó mediante SFT (supervised fine-tuning) usando la librería TRL (Transformer Reinforcement Learning) de HuggingFace, como indican las etiquetas `sft`, `transformers` y `trl`. No se dispone de información sobre el dataset, el número de tokens, la composición de los datos, ni si se aplicaron técnicas adicionales como RLHF o DPO. Tampoco se especifican los hiperparámetros de entrenamiento (tasa de aprendizaje, épocas, rango del LoRA, etc.).
+El entrenamiento se realizó mediante SFT (supervised fine-tuning) usando la librería TRL (Transformer Reinforcement Learning) de Hugging Face, como indican las etiquetas `sft`, `transformers` y `trl`. No se dispone de información sobre el dataset, el número de tokens, la composición de los datos, ni si se aplicaron técnicas adicionales como RLHF o DPO. Tampoco se especifican los hiperparámetros de entrenamiento (tasa de aprendizaje, épocas, rango del LoRA, etc.).
 
 ## Capacidades
 
 - Generación de texto conversacional: al estar basado en Llama-3.2-3B-Instruct, hereda la capacidad de mantener diálogos multi-turno y seguir instrucciones en lenguaje natural.
 - Fine-tuning especializado: el adaptador ha sido entrenado para alguna tarea concreta (desconocida) que el autor no documenta. Sin pruebas, no es posible afirmar qué capacidades específicas añade.
-- Integración con el ecosistema HuggingFace: se puede cargar con `PeftModel` y usar con pipelines de `transformers`.
+- Integración con el ecosistema Hugging Face: se puede cargar con `PeftModel` y usar con pipelines de `transformers`.
 - No se confirma soporte de tool calling, function calling, agentes, visión, audio ni modos de razonamiento explícitos. El modelo base Llama-3.2-3B-Instruct no incluye estas capacidades de forma nativa en su versión estándar.
 
 ## Casos de uso
@@ -67,11 +67,11 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 - Sesgos y alucinaciones: al derivar de Llama-3.2-3B-Instruct, el modelo puede presentar sesgos presentes en los datos de entrenamiento del base y alucinaciones típicas de modelos de este tamaño. El fine-tuning adicional podría haber introducido sesgos específicos no documentados.
 - Riesgo de sobreajuste: al ser un adaptador SFT sin datos públicos, existe un riesgo elevado de que esté sobreajustado a un dataset muy concreto y degrade su rendimiento en dominios generales.
 - Sin garantías de calidad: la ausencia de benchmarks y evaluaciones independientes hace imposible validar su rendimiento. No se recomienda su uso en producción sin una evaluación exhaustiva previa.
-- Formato propietario: al ser un adaptador PEFT, requiere el modelo base y las librerías específicas de HuggingFace; no es directamente compatible con entornos que solo acepten GGUF o formatos ONNX.
+- Formato propietario: al ser un adaptador PEFT, requiere el modelo base y las librerías específicas de Hugging Face; no es directamente compatible con entornos que solo acepten GGUF o formatos ONNX.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jordansky/env_kita_revolverII_1c94c43_clobber-othello
+- Repositorio Hugging Face: https://huggingface.co/Jordansky/env_kita_revolverII_1c94c43_clobber-othello
 - Modelo base (referencia): Llama-3.2-3B-Instruct (https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct)
 - Librería PEFT: https://github.com/huggingface/peft
 - Librería TRL: https://github.com/huggingface/trl

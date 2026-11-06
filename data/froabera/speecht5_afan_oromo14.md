@@ -2,9 +2,9 @@
 
 ## Resumen
 
-froabera/speecht5_afan_oromo14 es un modelo de sintesis de voz (text-to-audio) publicado en HuggingFace por el usuario froabera, construido sobre la arquitectura SpeechT5 de Microsoft. Con 144.433.890 parametros y un repositorio de 0.6 GB en formato safetensors, se trata de un ajuste fino orientado a la generacion de audio a partir de texto, presumiblemente para el idioma afaan oromo (oro), segun se deduce del propio identificador del modelo y de la existencia de otras variantes del mismo autor (froabera/speecht5_afan_oromo1).
+froabera/speecht5_afan_oromo14 es un modelo de sintesis de voz (text-to-audio) publicado en Hugging Face por el usuario froabera, construido sobre la arquitectura SpeechT5 de Microsoft. Con 144.433.890 parametros y un repositorio de 0.6 GB en formato safetensors, se trata de un ajuste fino orientado a la generacion de audio a partir de texto, presumiblemente para el idioma afaan oromo (oro), segun se deduce del propio identificador del modelo y de la existencia de otras variantes del mismo autor (froabera/speecht5_afan_oromo1).
 
-El modelo se apoya en la libreria transformers y esta etiquetado como compatible con endpoints, lo que permite su despliegue mediante la Inference API de HuggingFace. La model card publicada es la plantilla autogenerada por el Hub y no contiene informacion sustantiva sobre datos de entrenamiento, licencia, idiomas o procedimiento de ajuste, por lo que la mayor parte de los detalles tecnicos no estan disponibles.
+El modelo se apoya en la libreria transformers y esta etiquetado como compatible con endpoints, lo que permite su despliegue mediante la Inference API de Hugging Face. La model card publicada es la plantilla autogenerada por el Hub y no contiene informacion sustantiva sobre datos de entrenamiento, licencia, idiomas o procedimiento de ajuste, por lo que la mayor parte de los detalles tecnicos no estan disponibles.
 
 Su relevancia radica en ser una contribucion a un idioma con recursos limitados (afaan oromo, hablado por decenas de millones de personas en Etiopia) dentro del ecosistema de codigo abierto. No obstante, la ausencia de documentacion, de benchmarks y de una licencia explicita limita seriamente su uso en produccion sin una evaluacion previa por parte del integrador.
 
@@ -32,7 +32,7 @@ No hay informacion disponible sobre el numero de tokens o de horas de audio util
 - Generacion de audio a partir de texto (text-to-audio), que es la tarea declarada en el pipeline del repositorio.
 - Sintesis de voz en el idioma objetivo del ajuste (presumiblemente afaan oromo), aunque no hay documentacion que lo confirme explicitamente.
 - Integracion con la libreria transformers, lo que permite cargar el modelo mediante `SpeechT5ForTextToSpeech` o la clase equivalente.
-- Compatibilidad declarada con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad declarada con endpoints de Hugging Face (tag `endpoints_compatible`).
 - No hay evidencia de soporte de tool calling, function calling, razonamiento multi-paso, vision, audio de entrada ni modos de pensamiento, ya que se trata de un modelo estrictamente generativo de voz.
 
 ## Casos de uso
@@ -56,23 +56,23 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Se debe anadir el coste del vocoder externo (por ejemplo, un HiFi-GAN de SpeechT5), lo que incrementa ligeramente el uso de memoria.
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM es suficiente; no se requiere hardware de centro de datos.
 - Cabe holgadamente en GPUs de consumo, incluidas RTX 3060, RTX 4060, RTX 3090, RTX 4090 o incluso en CPU con tiempos de inferencia mas altos.
-- Opciones de despliegue: transformers de forma nativa; llama.cpp, Ollama y vLLM no estan orientados a esta familia de modelos de sintesis de voz, por lo que su uso no resulta aplicable. Es viable el despliegue mediante endpoints de HuggingFace o un servicio FastAPI propio.
+- Opciones de despliegue: transformers de forma nativa; llama.cpp, Ollama y vLLM no estan orientados a esta familia de modelos de sintesis de voz, por lo que su uso no resulta aplicable. Es viable el despliegue mediante endpoints de Hugging Face o un servicio FastAPI propio.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| froabera/speecht5_afan_oromo14 | 144,4 M | no disponible | TTS (afaan oromo presunto) | no disponible | HuggingFace, 0 descargas |
-| microsoft/speecht5_tts | 144,4 M | no aplica | TTS (ingles) | MIT | HuggingFace, ampliamente usado |
-| froabera/speecht5_afan_oromo1 | no disponible | no disponible | TTS (afaan oromo presunto) | no disponible | HuggingFace |
-| Modelos de Addis AI (familia Shook y LLMs abiertos) | no disponible | no disponible | ASR y texto para amharico y afaan oromo | no disponible | HuggingFace |
+| froabera/speecht5_afan_oromo14 | 144,4 M | no disponible | TTS (afaan oromo presunto) | no disponible | Hugging Face, 0 descargas |
+| microsoft/speecht5_tts | 144,4 M | no aplica | TTS (ingles) | MIT | Hugging Face, ampliamente usado |
+| froabera/speecht5_afan_oromo1 | no disponible | no disponible | TTS (afaan oromo presunto) | no disponible | Hugging Face |
+| Modelos de Addis AI (familia Shook y LLMs abiertos) | no disponible | no disponible | ASR y texto para amharico y afaan oromo | no disponible | Hugging Face |
 
 La comparacion mas directa es con microsoft/speecht5_tts, del que probablemente deriva este ajuste fino. No se dispone de datos de rendimiento que permitan establecer una comparacion cuantitativa entre ambos.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla autogenerada por HuggingFace y no aporta informacion sobre sesgos, datos de entrenamiento o evaluacion.
+- La model card es la plantilla autogenerada por Hugging Face y no aporta informacion sobre sesgos, datos de entrenamiento o evaluacion.
 - No se especifica la licencia, lo que impide determinar si el uso comercial esta permitido. Se recomienda contactar con el autor antes de cualquier despliegue productivo.
 - Riesgo elevado de alucinacion acustica, artefactos, prosodia incorrecta y pronunciacion defectuosa, dado que no existe documentacion de calidad ni evaluaciones publicadas.
 - El repositorio registra cero descargas y cero likes, por lo que no ha sido validado por la comunidad.
@@ -83,9 +83,9 @@ La comparacion mas directa es con microsoft/speecht5_tts, del que probablemente 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/froabera/speecht5_afan_oromo14
+- Repositorio Hugging Face: https://huggingface.co/froabera/speecht5_afan_oromo14
 - Variante relacionada del mismo autor: https://huggingface.co/froabera/speecht5_afan_oromo1
-- Perfil del autor en HuggingFace: https://huggingface.co/froabera
+- Perfil del autor en Hugging Face: https://huggingface.co/froabera
 - Dataset de sintesis de voz en afaan oromo (Mendeley Data): https://data.mendeley.com/datasets/mpy85ns82z/2
 - Modelos y datasets abiertos de Addis AI para amharico y afaan oromo: https://addisassistant.com/open-source
 - Cuaderno de Google Colab relacionado: https://colab.research.google.com/drive/1i7I5pzBcU3WDFarDnzweIj4-sVVoIUFJ

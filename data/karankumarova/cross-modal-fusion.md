@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `karankumarova/cross-modal-fusion` está publicado en HuggingFace bajo la etiqueta de modelo, pero su propia model card lo define explícitamente como una **nota de investigación** (*research note*) sobre fusión cross-modal, no como un modelo entrenado ni un checkpoint liberado. El autor, `karankumarova`, declara que el contenido organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y advierte de forma literal que "no se presenta como un artículo completado ni como una release de modelos entrenados".
+El repositorio `karankumarova/cross-modal-fusion` está publicado en Hugging Face bajo la etiqueta de modelo, pero su propia model card lo define explícitamente como una **nota de investigación** (*research note*) sobre fusión cross-modal, no como un modelo entrenado ni un checkpoint liberado. El autor, `karankumarova`, declara que el contenido organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y advierte de forma literal que "no se presenta como un artículo completado ni como una release de modelos entrenados".
 
 El artefacto principal del repositorio es `summary.md`, un documento de texto. El repositorio incluye además un fichero en formato safetensors cuyo recuento real de parámetros es de 33.088, una cifra compatible con un fichero auxiliar o de prueba, no con un transformer funcional. El tamaño total del repo es de 0,0 GB.
 
@@ -47,7 +47,7 @@ Tampoco hay datos de entrenamiento: no se indica número de tokens, composición
 - Revisión bibliográfica de partida: las referencias y datasets propuestos en la nota sirven como lista inicial de verificación para alguien que entre en el área.
 - Auditoría de reproducibilidad: el documento exige que, si se añaden resultados, incluyan versiones de dataset, comandos, semillas, hardware y logs crudos; es directamente reutilizable como checklist interna de un equipo.
 - Análisis de modos de fallo: las secciones de *failure modes* y preguntas abiertas pueden emplearse para anticipar confounders antes de lanzar un experimento propio.
-- Docencia o seminario: material de lectura para discutir qué constituye evidencia frente a qué constituye un plan, en el contexto de publicación de artefactos en HuggingFace.
+- Docencia o seminario: material de lectura para discutir qué constituye evidencia frente a qué constituye un plan, en el contexto de publicación de artefactos en Hugging Face.
 - Advertencia para selección de modelos: ejemplo práctico de por qué conviene leer la model card antes de asumir que un repositorio etiquetado como modelo es desplegable.
 - No es un caso de uso válido: inferencia, fine-tuning o despliegue en producción, dado que no existe checkpoint entrenado.
 
@@ -81,7 +81,7 @@ No disponible. Este repositorio no es un modelo entrenado, por lo que no existe 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/karankumarova/cross-modal-fusion
-- Fichero principal citado en la model card: `summary.md` (dentro del repositorio de HuggingFace)
+- Hugging Face: https://huggingface.co/karankumarova/cross-modal-fusion
+- Fichero principal citado en la model card: `summary.md` (dentro del repositorio de Hugging Face)
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.
 - Enlaces de la búsqueda web: ninguno relevante para este modelo.

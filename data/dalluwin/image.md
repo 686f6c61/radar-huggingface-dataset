@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `dalluwin/image` es un espacio publicado en HuggingFace por el usuario `dalluwin` el 8 de octubre de 2026 (ultima actualizacion en la misma fecha). Se trata de un repositorio practicamente vacio desde el punto de vista documental: la model card se limita a declarar la licencia MIT y no incluye ninguna descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio acumula 0 descargas y 0 "likes", y no tiene pipeline declarado ni idiomas especificados.
+El repositorio `dalluwin/image` es un espacio publicado en Hugging Face por el usuario `dalluwin` el 8 de octubre de 2026 (ultima actualizacion en la misma fecha). Se trata de un repositorio practicamente vacio desde el punto de vista documental: la model card se limita a declarar la licencia MIT y no incluye ninguna descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio acumula 0 descargas y 0 "likes", y no tiene pipeline declarado ni idiomas especificados.
 
 El identificador `image` sugiere que podria tratarse de un modelo o utilidad relacionada con generacion o tratamiento de imagenes, pero esta interpretacion no esta confirmada por ningun dato de la model card ni por los resultados de busqueda web, que solo devuelven referencias genericas a generadores de imagen comerciales (DALL-E, Midjourney, Stable Diffusion, FLUX) sin ninguna mencion a este repositorio concreto. No hay informacion sobre parametros, contexto, arquitectura ni pesos publicados.
 
@@ -73,7 +73,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dalluwin/image
+- Repositorio en Hugging Face: https://huggingface.co/dalluwin/image
 - Text-to-image model (Wikipedia, referencia generica): https://en.wikipedia.org/wiki/Text-to-image_model
 - DALL-E (Wikipedia, referencia generica): https://en.wikipedia.org/wiki/DALL-E
 - Guia generica sobre DALL-E (Designtoolsweekly): https://www.designtoolsweekly.com/dall%C2%B7e-ultimate-guide-to-ai-image-generation-in-2026/

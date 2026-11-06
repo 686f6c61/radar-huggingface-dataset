@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`swordenamine/claude-local-proxy` no es un modelo de lenguaje: es un repositorio de código publicado en HuggingFace que contiene una aplicación autocontenida (proxy + interfaz web) para conversar con los modelos Claude de Anthropic. La aplicación es un servidor FastAPI en Python 3.9+ que expone una interfaz de navegador en `http://127.0.0.1:8080` y un endpoint REST compatible con la Anthropic Messages API en `/v1/chat`, ademas de gestionar historial de conversaciones en SQLite. Su proposito es permitir usar Claude desde dispositivos sin aplicacion nativa —Android via Termux, Raspberry Pi, portatiles o VPS— manteniendo la clave de API en el propio dispositivo y sin intermediarios.
+`swordenamine/claude-local-proxy` no es un modelo de lenguaje: es un repositorio de código publicado en Hugging Face que contiene una aplicación autocontenida (proxy + interfaz web) para conversar con los modelos Claude de Anthropic. La aplicación es un servidor FastAPI en Python 3.9+ que expone una interfaz de navegador en `http://127.0.0.1:8080` y un endpoint REST compatible con la Anthropic Messages API en `/v1/chat`, ademas de gestionar historial de conversaciones en SQLite. Su proposito es permitir usar Claude desde dispositivos sin aplicacion nativa —Android via Termux, Raspberry Pi, portatiles o VPS— manteniendo la clave de API en el propio dispositivo y sin intermediarios.
 
 El interes practico del proyecto es de infraestructura, no de investigacion: no publica pesos, no entrena nada y no aporta innovaciones de arquitectura. Funciona como capa de cliente: reenvia las peticiones a la API de Anthropic (o a un endpoint remoto alternativo configurable via `REMOTE_INFERENCE_URL`) y devuelve las respuestas en streaming mediante Server-Sent Events. Por tanto, cualquier evaluacion de calidad, contexto o capacidades del modelo subyacente depende enteramente del modelo de Claude que se configure en la variable `MODEL`.
 
-El repositorio presenta senales de calidad dispares: incluye suite de tests (18 casos declarados), documentacion en `docs/`, instalador systemd y script de swap para equipos con poca RAM, pero los metadatos de HuggingFace muestran 0 descargas y 0 likes, la licencia no consta en los metadatos de la plataforma (aunque el README declara MIT) y las fechas de creacion (2026-10-17) y actualizacion (2026-03-13) son incoherentes entre si. Ademas, las URL de GitHub del README (`swordenkisk`) no coinciden con el autor del repositorio en HuggingFace (`swordenamine`), lo que conviene verificar antes de ejecutar el script de instalacion de una linea.
+El repositorio presenta senales de calidad dispares: incluye suite de tests (18 casos declarados), documentacion en `docs/`, instalador systemd y script de swap para equipos con poca RAM, pero los metadatos de Hugging Face muestran 0 descargas y 0 likes, la licencia no consta en los metadatos de la plataforma (aunque el README declara MIT) y las fechas de creacion (2026-10-17) y actualizacion (2026-03-13) son incoherentes entre si. Ademas, las URL de GitHub del README (`swordenkisk`) no coinciden con el autor del repositorio en Hugging Face (`swordenamine`), lo que conviene verificar antes de ejecutar el script de instalacion de una linea.
 
 ## Especificaciones tecnicas
 
@@ -18,14 +18,14 @@ El repositorio presenta senales de calidad dispares: incluye suite de tests (18 
 | Longitud de contexto | No disponible: depende del modelo de Anthropic configurado. `MAX_TOKENS` (salida) por defecto 1024, configurable por `.env` |
 | Tipos de cuantizacion | No aplica: no se distribuyen pesos ni se ejecuta inferencia local |
 | Idiomas soportados | Interfaz bilingue arabe (RTL) e ingles, segun el README. Idiomas del modelo: no disponibles en la informacion proporcionada |
-| Licencia | MIT segun el README; los metadatos de HuggingFace no declaran licencia (discrepancia) |
+| Licencia | MIT segun el README; los metadatos de Hugging Face no declaran licencia (discrepancia) |
 | Formato de pesos | No aplica: solo codigo Python, HTML, CSS y JS. Sin safetensors ni GGUF |
 
 Otros datos verificables del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | `swordenamine/claude-local-proxy` |
+| ID en Hugging Face | `swordenamine/claude-local-proxy` |
 | Autor | `swordenamine` |
 | Descargas / likes | 0 / 0 |
 | Pipeline declarado | No disponible |
@@ -40,7 +40,7 @@ Otros datos verificables del repositorio:
 
 No hay entrenamiento ni arquitectura de red neuronal que describir. La arquitectura del proyecto es una aplicacion web en tres capas: `src/server.py` (aplicacion FastAPI y punto de entrada), `src/providers.py` (clientes para Anthropic y para endpoints remotos), `src/database.py` (almacenamiento de conversaciones en SQLite) y `src/auth.py` (autenticacion opcional por token). El frontend es una pagina unica servida con Jinja2 (`templates/index.html`) con CSS mobile-first, soporte RTL y temas claro/oscuro, y logica de chat en JavaScript plano (`static/js/app.js`) encargada del renderizado de Markdown y del consumo del stream SSE.
 
-El flujo de inferencia es una pasarela: la UI o un cliente externo envia mensajes a `/v1/chat`, el servidor los reenvia a la API de Anthropic con la clave leida de `.env`, y devuelve la respuesta con el mismo esquema de la Messages API. El README declara soporte de `API_PROVIDER=anthropic` o `remote`, lo que permite apuntar a un endpoint alternativo mediante `REMOTE_INFERENCE_URL` (por ejemplo, un servidor de inferencia propio o un endpoint de HuggingFace). No se documentan tecnicas de decodificacion especulativa, atencion lineal ni nada equivalente, porque la decodificacion ocurre en los servidores de Anthropic. Las funciones auxiliares declaradas incluyen limitacion de tasa (`RATE_LIMIT_PER_MINUTE=20` por IP), historial multi-turno con memoria, multiples conversaciones, selector de modelo, prompt de sistema personalizable y exportacion de conversaciones a JSON/Markdown.
+El flujo de inferencia es una pasarela: la UI o un cliente externo envia mensajes a `/v1/chat`, el servidor los reenvia a la API de Anthropic con la clave leida de `.env`, y devuelve la respuesta con el mismo esquema de la Messages API. El README declara soporte de `API_PROVIDER=anthropic` o `remote`, lo que permite apuntar a un endpoint alternativo mediante `REMOTE_INFERENCE_URL` (por ejemplo, un servidor de inferencia propio o un endpoint de Hugging Face). No se documentan tecnicas de decodificacion especulativa, atencion lineal ni nada equivalente, porque la decodificacion ocurre en los servidores de Anthropic. Las funciones auxiliares declaradas incluyen limitacion de tasa (`RATE_LIMIT_PER_MINUTE=20` por IP), historial multi-turno con memoria, multiples conversaciones, selector de modelo, prompt de sistema personalizable y exportacion de conversaciones a JSON/Markdown.
 
 ## Capacidades
 
@@ -108,7 +108,7 @@ La comparacion relevante es con otras interfaces o pasarelas autoalojadas para A
 - Dependencia total de un servicio externo de pago: sin `ANTHROPIC_API_KEY` valida y sin conectividad, el proxy no produce respuestas. Hay coste por token segun la API de Anthropic.
 - Riesgo de seguridad en el despliegue: el propio README advierte de no usar `BIND_ADDR=0.0.0.0` sin `UI_AUTH_TOKEN`. La autenticacion descrita es un token simple, sin mencion de TLS, rotacion de claves ni proteccion contra fuerza bruta mas alla del limite de 20 peticiones por minuto y por IP.
 - La clave de API se guarda en claro en el fichero `.env` del dispositivo; no se documenta integracion con gestores de secretos.
-- Incoherencias que exigen verificacion previa: las URL del README apuntan a `github.com/swordenkisk/...` mientras el autor en HuggingFace es `swordenamine`; la licencia figura como MIT en el texto pero no en los metadatos de la plataforma; la fecha de actualizacion (2026-03-13) es anterior a la de creacion (2026-10-17). Ejecutar el instalador remoto (`curl ... | bash`) sin auditar antes el script es un riesgo de cadena de suministro.
+- Incoherencias que exigen verificacion previa: las URL del README apuntan a `github.com/swordenkisk/...` mientras el autor en Hugging Face es `swordenamine`; la licencia figura como MIT en el texto pero no en los metadatos de la plataforma; la fecha de actualizacion (2026-03-13) es anterior a la de creacion (2026-10-17). Ejecutar el instalador remoto (`curl ... | bash`) sin auditar antes el script es un riesgo de cadena de suministro.
 - Nombres de modelo citados en el README (`claude-opus-4-5`, `claude-sonnet-4-6`) no verificados en la informacion disponible; si no son validos, las peticiones fallaran hasta corregir `MODEL`.
 - Proyecto sin traccion observable: 0 descargas y 0 likes, sin historial de mantenimiento verificable. No se documentan politicas de versionado, changelog ni issues.
 - Idiomas: la interfaz esta declarada en arabe e ingles; no se menciona localizacion al castellano. El soporte multilingue de las respuestas depende del modelo remoto.
@@ -117,7 +117,7 @@ La comparacion relevante es con otras interfaces o pasarelas autoalojadas para A
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/claude-local-proxy
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/claude-local-proxy
 - Repositorio GitHub citado en el README: https://github.com/swordenkisk/claude-local-proxy
 - Script de instalacion de una linea citado en el README: https://raw.githubusercontent.com/swordenkisk/claude-local-proxy/main/scripts/setup.sh
 - Documentacion de la API en local (Swagger UI): http://127.0.0.1:8080/docs

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dexy-Decision-9B es un modelo de decisión en texto desarrollado por el usuario Patrick-18 y publicado en HuggingFace. No es un modelo generativo al uso: parte del backbone Qwen/Qwen3.5-9B y le añade una cabeza de verbalización propietaria (JevVerbalizerHead) que transforma la salida del transformer en distribuciones de probabilidad tipadas sobre un conjunto de opciones definidas por el usuario. El modelo resuelve tareas de clasificación, enrutamiento, juicios binarios y puntuaciones ordenadas dentro de un mismo interfaz, devolviendo probabilidades normalizadas en lugar de texto libre.
+Dexy-Decision-9B es un modelo de decisión en texto desarrollado por el usuario Patrick-18 y publicado en Hugging Face. No es un modelo generativo al uso: parte del backbone Qwen/Qwen3.5-9B y le añade una cabeza de verbalización propietaria (JevVerbalizerHead) que transforma la salida del transformer en distribuciones de probabilidad tipadas sobre un conjunto de opciones definidas por el usuario. El modelo resuelve tareas de clasificación, enrutamiento, juicios binarios y puntuaciones ordenadas dentro de un mismo interfaz, devolviendo probabilidades normalizadas en lugar de texto libre.
 
 La arquitectura combina un transformer denso de 8.953.803.264 parámetros (aproximadamente 8,95B) con esa cabeza de decisión, y se distribuye en formato safetensors con pesos en BF16 (unos 17,9 GB). El contexto por defecto es de 65.536 tokens, aunque la configuración del backbone conserva un techo de 262.144 posiciones. Soporta tres tipos de pregunta: `choice` (2 a 256 candidatos), `score` (2 a 256 niveles ordenados) y `noul` (juicio binario verdadero/falso).
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dexy-Decision-9B | ~8,95B | 65.536 (techo 262.144) | Modelo de decisión con cabeza de verbalización | Apache-2.0 | HuggingFace, runtime propio y vLLM |
-| Qwen/Qwen3.5-9B (base) | ~9B | No disponible en la informacion | LLM generativo | No disponible en la informacion | HuggingFace |
+| Dexy-Decision-9B | ~8,95B | 65.536 (techo 262.144) | Modelo de decisión con cabeza de verbalización | Apache-2.0 | Hugging Face, runtime propio y vLLM |
+| Qwen/Qwen3.5-9B (base) | ~9B | No disponible en la informacion | LLM generativo | No disponible en la informacion | Hugging Face |
 | Alternativas de clasificación con LLM generico | Variable | Variable | Generación de texto con prompts de clasificación | Variable | Amplia |
 
 No se dispone de datos de rendimiento comparado con alternativas, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad. El modelo base Qwen3.5-9B es la referencia directa, pero no se han publicado en la información proporcionada sus especificaciones completas ni sus benchmarks.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparado con alternativas, por lo que la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Patrick-18/Dexy-Decision-9B
+- Modelo en Hugging Face: https://huggingface.co/Patrick-18/Dexy-Decision-9B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Ejemplo de petición: https://huggingface.co/Patrick-18/Dexy-Decision-9B/blob/main/examples/request.json
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- [HuggingFace: codefuse-ai/F2LLM-v2-330M](https://huggingface.co/codefuse-ai/F2LLM-v2-330M)
+- [Hugging Face: codefuse-ai/F2LLM-v2-330M](https://huggingface.co/codefuse-ai/F2LLM-v2-330M)
 - [Paper (arXiv:2603.19223)](https://arxiv.org/abs/2603.19223)
 - [Dataset de entrenamiento: codefuse-ai/F2LLM-v2](https://huggingface.co/datasets/codefuse-ai/F2LLM-v2)
 - [Modelo base: codefuse-ai/F2LLM-v2-0.6B-Preview-Pruned-330M](https://huggingface.co/codefuse-ai/F2LLM-v2-0.6B-Preview-Pruned-330M)

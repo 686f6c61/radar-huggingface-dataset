@@ -2,9 +2,9 @@
 
 ## Resumen
 
-agentguard-qlora es un adaptador LoRA entrenado con QLoRA sobre el modelo Qwen/Qwen2.5-3B-Instruct y publicado en HuggingFace por el usuario Mihirbarve. El repositorio pesa 0,1 GB, contiene pesos en safetensors y se distribuye con la librería PEFT (versión 0.14.0 registrada en la model card). No incluye los pesos del modelo base: para usarlo hay que descargar Qwen2.5-3B-Instruct y aplicar el adaptador encima, ya sea cargándolo con PEFT o fusionándolo antes de exportar a otro formato.
+agentguard-qlora es un adaptador LoRA entrenado con QLoRA sobre el modelo Qwen/Qwen2.5-3B-Instruct y publicado en Hugging Face por el usuario Mihirbarve. El repositorio pesa 0,1 GB, contiene pesos en safetensors y se distribuye con la librería PEFT (versión 0.14.0 registrada en la model card). No incluye los pesos del modelo base: para usarlo hay que descargar Qwen2.5-3B-Instruct y aplicar el adaptador encima, ya sea cargándolo con PEFT o fusionándolo antes de exportar a otro formato.
 
-El nombre sugiere un propósito de seguridad y gobernanza de agentes (guardrails, moderación, detección de prompt injection), en línea con otros proyectos que usan la misma denominación, pero la model card publicada es la plantilla por defecto de HuggingFace sin rellenar: no documenta el conjunto de datos, el objetivo de entrenamiento, los hiperparámetros, la licencia ni los idiomas. Tampoco hay benchmarks, demo ni descargas registradas (0 descargas, 0 likes).
+El nombre sugiere un propósito de seguridad y gobernanza de agentes (guardrails, moderación, detección de prompt injection), en línea con otros proyectos que usan la misma denominación, pero la model card publicada es la plantilla por defecto de Hugging Face sin rellenar: no documenta el conjunto de datos, el objetivo de entrenamiento, los hiperparámetros, la licencia ni los idiomas. Tampoco hay benchmarks, demo ni descargas registradas (0 descargas, 0 likes).
 
 Su relevancia es por tanto limitada tal y como está publicado: sirve como ejemplo reproducible de un flujo QLoRA sobre un modelo denso de 3.000 millones de parámetros que cabe en GPU de consumo, pero no hay ninguna evidencia publicada que respalde su calidad ni que confirme qué tarea concreta aprende el adaptador.
 
@@ -69,17 +69,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| agentguard-qlora (adaptador sobre Qwen2.5-3B-Instruct) | 3,09 B (adaptador 0,1 GB) | 32.768 (base) | no disponible | HuggingFace, 0 descargas | Sin benchmarks publicados |
-| Qwen2.5-3B-Instruct | 3,09 B | 32.768; 131.072 con YaRN | Qwen Research License | HuggingFace | Referencia del base; cifras en su informe técnico |
-| Llama-3.2-3B-Instruct | 3,21 B | 131.072 | Llama 3.2 Community License | HuggingFace | no comparable directamente |
-| Phi-3.5-mini-instruct | 3,8 B | 131.072 | MIT | HuggingFace | no comparable directamente |
-| Gemma-2-2B-it | 2,6 B | 8.192 | Gemma Terms of Use | HuggingFace | no comparable directamente |
+| agentguard-qlora (adaptador sobre Qwen2.5-3B-Instruct) | 3,09 B (adaptador 0,1 GB) | 32.768 (base) | no disponible | Hugging Face, 0 descargas | Sin benchmarks publicados |
+| Qwen2.5-3B-Instruct | 3,09 B | 32.768; 131.072 con YaRN | Qwen Research License | Hugging Face | Referencia del base; cifras en su informe técnico |
+| Llama-3.2-3B-Instruct | 3,21 B | 131.072 | Llama 3.2 Community License | Hugging Face | no comparable directamente |
+| Phi-3.5-mini-instruct | 3,8 B | 131.072 | MIT | Hugging Face | no comparable directamente |
+| Gemma-2-2B-it | 2,6 B | 8.192 | Gemma Terms of Use | Hugging Face | no comparable directamente |
 
 Los datos de los modelos comparados proceden de sus fichas públicas y conviene verificarlos antes de citarlos. La comparación de rendimiento no es posible porque el adaptador no publica ninguna métrica.
 
 ## Limitaciones y advertencias
 
-- Model card vacía: es la plantilla por defecto de HuggingFace, sin datos de entrenamiento, hiperparámetros, dataset ni objetivo. No se puede saber qué ha aprendido el adaptador.
+- Model card vacía: es la plantilla por defecto de Hugging Face, sin datos de entrenamiento, hiperparámetros, dataset ni objetivo. No se puede saber qué ha aprendido el adaptador.
 - Sin licencia declarada. No se puede asumir uso comercial; además, el modelo base Qwen2.5-3B-Instruct se distribuye bajo la Qwen Research License, que restringe el uso comercial, por lo que el adaptador hereda esa restricción en la práctica.
 - Sin validación comunitaria: 0 descargas y 0 likes, sin discusiones ni evaluaciones de terceros.
 - Riesgo de alucinación heredado del modelo base, agravado por la falta de evaluación tras el ajuste.
@@ -93,7 +93,7 @@ Los datos de los modelos comparados proceden de sus fichas públicas y conviene 
 
 ## Enlaces
 
-- Ficha del adaptador en HuggingFace: https://huggingface.co/Mihirbarve/agentguard-qlora
+- Ficha del adaptador en Hugging Face: https://huggingface.co/Mihirbarve/agentguard-qlora
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Artículo de QLoRA (Dettmers et al., 2023): https://arxiv.org/abs/2305.14314
 - Artículo citado en la plantilla de la model card (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700

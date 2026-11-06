@@ -86,9 +86,9 @@ Conjuntos multihablante (48k): AMI 5,73, AISHELL-4 5,29, VoxConverse 5,03. Un gu
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MOSS-Transcribe-Diarize-dflash (este) | Borrador DFlash para ASR con diarización | 131M | 131.072 | Apache 2.0 | HuggingFace, 0 descargas |
-| MOSS-Transcribe-Diarize (objetivo) | Modelo ASR con diarización | 0,9B | 131.072 | no disponible en la información | HuggingFace (OpenMOSS-Team) |
-| mattymchen/Qwen3-ASR-1.7B-speculator.dflash | Borrador DFlash para ASR | no disponible | no disponible | no disponible | HuggingFace |
+| MOSS-Transcribe-Diarize-dflash (este) | Borrador DFlash para ASR con diarización | 131M | 131.072 | Apache 2.0 | Hugging Face, 0 descargas |
+| MOSS-Transcribe-Diarize (objetivo) | Modelo ASR con diarización | 0,9B | 131.072 | no disponible en la información | Hugging Face (OpenMOSS-Team) |
+| mattymchen/Qwen3-ASR-1.7B-speculator.dflash | Borrador DFlash para ASR | no disponible | no disponible | no disponible | Hugging Face |
 | Variante de este borrador con vocab 32k | Borrador DFlash | no disponible | 131.072 | Apache 2.0 | Entrenada, no publicada como checkpoint separado |
 
 La model card señala que no existía ningún otro borrador publicado para MOSS-Transcribe-Diarize cuando se entrenó este, por lo que no hay fila de referencia directa. El único borrador comparable citado es el de Qwen3-ASR-1.7B, que sirve como referencia de formato, no de rendimiento.
@@ -107,7 +107,7 @@ La model card señala que no existía ningún otro borrador publicado para MOSS-
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wilsonzheng0327/MOSS-Transcribe-Diarize-dflash
+- Hugging Face: https://huggingface.co/wilsonzheng0327/MOSS-Transcribe-Diarize-dflash
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize
 - Borrador de referencia de formato: https://huggingface.co/mattymchen/Qwen3-ASR-1.7B-speculator.dflash
 - Librería `speculators`: no disponible en la información proporcionada

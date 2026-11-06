@@ -62,9 +62,9 @@ La siguiente comparativa se basa en las características de los modelos original
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2-7B (original) | 7.6B | 32k (segun reporte) | Apache 2.0 | HuggingFace |
-| Llama 3 8B (Meta) | 8.0B | 8k | Llama 3 License (uso comercial permitido con condiciones) | HuggingFace |
-| Mistral 7B | 7.3B | 32k | Apache 2.0 | HuggingFace |
+| Qwen2-7B (original) | 7.6B | 32k (segun reporte) | Apache 2.0 | Hugging Face |
+| Llama 3 8B (Meta) | 8.0B | 8k | Llama 3 License (uso comercial permitido con condiciones) | Hugging Face |
+| Mistral 7B | 7.3B | 32k | Apache 2.0 | Hugging Face |
 
 Esta conversión en particular no añade diferencias funcionales respecto al Qwen2-7B original, salvo la portabilidad a Keras 3. Para elegir entre estos modelos, se deben considerar los benchmarks del modelo original y las restricciones de licencia (Llama 3 tiene términos específicos, mientras que Qwen2 y Mistral usan Apache 2.0).
 
@@ -80,9 +80,9 @@ Esta conversión en particular no añade diferencias funcionales respecto al Qwe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kerasformers/qwen2-7b
+- Modelo en Hugging Face: https://huggingface.co/kerasformers/qwen2-7b
 - Colección de modelos Qwen2 de KerasFormers: https://huggingface.co/collections/kerasformers/qwen2-6a69d274d16370be5d0221c8
 - Repositorio de GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de Qwen2 en KerasFormers: https://imvision12.github.io/KerasFormers/qwen2/
 - Paper de Qwen2 (arXiv:2407.10671): https://arxiv.org/abs/2407.10671
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen2-7B
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen2-7B

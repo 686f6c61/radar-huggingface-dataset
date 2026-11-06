@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento cualit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lernex/Metis-1.6-Logos-MLX-8bit
+- Repositorio Hugging Face: https://huggingface.co/Lernex/Metis-1.6-Logos-MLX-8bit
 - Modelo base BF16 (Transformers): https://huggingface.co/Lernex/Metis-1.6-Logos
 - Variante MLX 4-bit: https://huggingface.co/Lernex/Metis-1.6-Logos-MLX-4bit
 - Variante GGUF (llama.cpp, Ollama, LM Studio): https://huggingface.co/Lernex/Metis-1.6-Logos-GGUF

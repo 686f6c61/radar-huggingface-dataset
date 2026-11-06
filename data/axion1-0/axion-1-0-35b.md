@@ -102,7 +102,7 @@ Axion 1.0-35B destaca por ofrecer resultados cercanos a modelos propietarios de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Axion1-0/Axion-1.0-35B
+- Hugging Face: https://huggingface.co/Axion1-0/Axion-1.0-35B
 - Paper: https://arxiv.org/abs/2611.03233
 - Proyecto: https://axion1-0.github.io/
 - Codigo: https://github.com/bytedance/axion1_0

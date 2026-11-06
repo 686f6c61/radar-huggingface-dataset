@@ -89,8 +89,8 @@ Advertencias indicadas por el autor: no es una victoria equiparable frente a Jev
 
 | Modelo | Parametros | Contexto | Exactitud en Typed Decisions | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-9B-decision + QLoRA | 8,95B (+58,2M adaptador) | no disponible | 75,8% (entrenado en train) | Apache 2.0 | HuggingFace |
-| Qwen-9B-decision padre | 8,95B | no disponible | 61,1% (zero-shot respecto al benchmark) | Apache 2.0 | HuggingFace |
+| Qwen-9B-decision + QLoRA | 8,95B (+58,2M adaptador) | no disponible | 75,8% (entrenado en train) | Apache 2.0 | Hugging Face |
+| Qwen-9B-decision padre | 8,95B | no disponible | 61,1% (zero-shot respecto al benchmark) | Apache 2.0 | Hugging Face |
 | Jev 1.13.0 | no disponible | no disponible | 72,7% (zero-shot) | no disponible | referencia publicada |
 
 No se dispone de datos de parametros, contexto ni licencia de Jev 1.13.0, ni de otros modelos comparables de la misma categoria en la informacion proporcionada.
@@ -110,7 +110,7 @@ No se dispone de datos de parametros, contexto ni licencia de Jev 1.13.0, ni de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/k4rth33k/Qwen-9B-decision
+- Modelo en Hugging Face: https://huggingface.co/k4rth33k/Qwen-9B-decision
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset Typed Decisions: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - Benchmark card (referencia de Jev y protocolo): https://huggingface.co/datasets/LocalLLaMA/typed-decisions/blob/561333a8576d22875380b14d25a13065b046538c/README.md

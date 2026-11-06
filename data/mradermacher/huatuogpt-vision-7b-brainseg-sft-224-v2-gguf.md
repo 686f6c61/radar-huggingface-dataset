@@ -48,7 +48,7 @@ El sufijo `Brainseg-SFT-224-v2` sugiere un ajuste supervisado (SFT) específico 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del GGUF ni los metadatos de HuggingFace incluyen métricas de MMLU, HumanEval, GSM8K, VQA médica, Dice/IoU de segmentación ni comparaciones con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del GGUF ni los metadatos de Hugging Face incluyen métricas de MMLU, HumanEval, GSM8K, VQA médica, Dice/IoU de segmentación ni comparaciones con otros modelos.
 
 ## Requisitos de hardware
 

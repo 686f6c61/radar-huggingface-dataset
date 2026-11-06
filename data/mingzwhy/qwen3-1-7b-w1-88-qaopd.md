@@ -79,8 +79,8 @@ Las metricas de QA9 corresponden a la media con pesos iguales de nueve benchmark
 
 | Modelo | Parametros | Contexto | GSM8K | HumanEval | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| Qwen3-1.7B-W1.88-QAOPD | 1,72 B | no disponible | 44,05 | 45,1 | Apache-2.0 | HuggingFace |
-| Qwen3-1.7B (BF16) | 1,72 B | no disponible en la informacion proporcionada | 68,76 | 67,1 | Apache-2.0 | HuggingFace |
+| Qwen3-1.7B-W1.88-QAOPD | 1,72 B | no disponible | 44,05 | 45,1 | Apache-2.0 | Hugging Face |
+| Qwen3-1.7B (BF16) | 1,72 B | no disponible en la informacion proporcionada | 68,76 | 67,1 | Apache-2.0 | Hugging Face |
 | Otras alternativas de ~1-2 B cuantizadas a 2 bits | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion con datos verificables es contra el modelo base sin cuantizar. No se dispone en la informacion proporcionada de resultados de otros checkpoints de tamano similar (por ejemplo variantes de Llama 3.2 1B o Qwen2.5 1.5B) medidos con el mismo harness, por lo que cualquier comparacion adicional seria especulativa.
@@ -101,7 +101,7 @@ La unica comparacion con datos verificables es contra el modelo base sin cuantiz
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MingZwhy/Qwen3-1.7B-W1.88-QAOPD
+- Modelo en Hugging Face: https://huggingface.co/MingZwhy/Qwen3-1.7B-W1.88-QAOPD
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio de codigo y receta de entrenamiento: https://github.com/MingZwhy/QAOPD
 - Harness de evaluacion: https://github.com/MingZwhy/QAOPD/blob/main/docs/EVALUATION.md

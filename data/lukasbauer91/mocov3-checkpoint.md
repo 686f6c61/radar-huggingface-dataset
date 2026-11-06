@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lukasbauer91/mocov3-checkpoint` es un repositorio experimental publicado en HuggingFace por el usuario lukasbauer91 que contiene una implementación propia etiquetada como Mocov3 orientada a clasificación. No se trata de un modelo entrenado, sino de un punto de partida de código: el autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo y que no debe presentarse como un checkpoint con benchmarks. La model card declara una escala "large" con atención de consultas agrupadas, fusión de tensores, activación approx gelu y normalización por batchnorm, entrenada con SGD y un schedule exponencial.
+`lukasbauer91/mocov3-checkpoint` es un repositorio experimental publicado en Hugging Face por el usuario lukasbauer91 que contiene una implementación propia etiquetada como Mocov3 orientada a clasificación. No se trata de un modelo entrenado, sino de un punto de partida de código: el autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo y que no debe presentarse como un checkpoint con benchmarks. La model card declara una escala "large" con atención de consultas agrupadas, fusión de tensores, activación approx gelu y normalización por batchnorm, entrenada con SGD y un schedule exponencial.
 
 El dato más relevante y también el más llamativo es el recuento real de parámetros del archivo safetensors: 24.832. Esa cifra es incompatible con la etiqueta "large" que aparece en la documentación, lo que sugiere que el `config.json` describe una arquitectura objetivo mientras que los pesos publicados corresponden a un modelo mínimo de validación. El tamaño del repositorio es de 0,0 GB y el modelo acumula 0 descargas y 0 likes en el momento de la consulta.
 
@@ -86,7 +86,7 @@ No se dispone de datos comparativos en la información proporcionada. El reposit
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lukasbauer91/mocov3-checkpoint | 24.832 | no disponible | no disponible | bsd-3-clause | HuggingFace, 0 descargas |
+| lukasbauer91/mocov3-checkpoint | 24.832 | no disponible | no disponible | bsd-3-clause | Hugging Face, 0 descargas |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -103,5 +103,5 @@ No se dispone de datos comparativos en la información proporcionada. El reposit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lukasbauer91/mocov3-checkpoint
+- Modelo en Hugging Face: https://huggingface.co/lukasbauer91/mocov3-checkpoint
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios ni demos.

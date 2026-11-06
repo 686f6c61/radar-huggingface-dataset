@@ -18,7 +18,7 @@ El repositorio ocupa 6,1 GB e incluye, además de los dos checkpoints, los metad
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible (checkpoints en PyTorch/bf16; la evaluación se realiza sin fusionar) |
 | Idiomas soportados | no disponible (modelo de robótica, no de lenguaje) |
-| Licencia | NVIDIA Open Model License, heredada del modelo base; la ficha de HuggingFace figura como «no disponible» |
+| Licencia | NVIDIA Open Model License, heredada del modelo base; la ficha de Hugging Face figura como «no disponible» |
 | Formato de pesos | PyTorch (`.pt`), adaptadores LoRA sin fusionar |
 
 ## Arquitectura y entrenamiento
@@ -64,9 +64,9 @@ No se dispone de datos sobre modelos alternativos comparables en la información
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NVIDIA Cosmos-Policy-LIBERO-Predict2-2B | 2B | no disponible | base, sin adaptadores | NVIDIA Open Model License | HuggingFace (`nvidia/...`) |
-| `cp_coal` brazo K8 | 2B + LoRA r=16 | no disponible | 2.675 pasos AdamW, K=8 | NVIDIA Open Model License | HuggingFace (adaptador) |
-| `cp_coal` brazo K4 | 2B + LoRA r=16 | no disponible | 2.675 pasos AdamW, K=4 | NVIDIA Open Model License | HuggingFace (adaptador) |
+| NVIDIA Cosmos-Policy-LIBERO-Predict2-2B | 2B | no disponible | base, sin adaptadores | NVIDIA Open Model License | Hugging Face (`nvidia/...`) |
+| `cp_coal` brazo K8 | 2B + LoRA r=16 | no disponible | 2.675 pasos AdamW, K=8 | NVIDIA Open Model License | Hugging Face (adaptador) |
+| `cp_coal` brazo K4 | 2B + LoRA r=16 | no disponible | 2.675 pasos AdamW, K=4 | NVIDIA Open Model License | Hugging Face (adaptador) |
 | Otras políticas de robótica comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -76,14 +76,14 @@ No se dispone de datos sobre modelos alternativos comparables en la información
 - No se han publicado resultados numéricos de benchmarks en la información disponible, por lo que no es posible verificar el rendimiento absoluto.
 - El entrenamiento es de 1 epoch (2.675 pasos), lo que limita la evidencia sobre generalización más allá del split de 66 tareas y 292 demostraciones.
 - El adaptador depende de una revisión concreta del modelo base (`cb689ec`); usar otra revisión puede alterar el comportamiento.
-- La licencia efectiva es la NVIDIA Open Model License del modelo base, cuyos términos condicionan el uso comercial. La ficha de HuggingFace indica «no disponible» para la licencia.
+- La licencia efectiva es la NVIDIA Open Model License del modelo base, cuyos términos condicionan el uso comercial. La ficha de Hugging Face indica «no disponible» para la licencia.
 - El paquete de evaluación conserva en `CONTENTS.txt` y `SHA256SUMS` referencias a archivos del directorio interno `cluster/` que fueron eliminados, por lo que los checksums pueden no coincidir con el contenido final.
 - No se documentan sesgos, idiomas soportados ni riesgos de alucinación, ya que el modelo no genera texto.
 - El tamaño del repositorio (6,1 GB más 6,0 GB del paquete de evaluación) exige espacio de almacenamiento y ancho de banda considerables.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DanieleGammelli/cosmos-policy-coalition-lora-libero90
+- Modelo en Hugging Face: https://huggingface.co/DanieleGammelli/cosmos-policy-coalition-lora-libero90
 - Modelo base: https://huggingface.co/nvidia/Cosmos-Policy-LIBERO-Predict2-2B
 - NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
 - Código: repositorio `wam-influence`, rama `cp-coal-libero90`, commit `5a35dafcada7f2937a420ba688f6dfef840d0a96` (URL no proporcionada en la información disponible)

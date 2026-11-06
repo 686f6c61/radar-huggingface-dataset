@@ -69,7 +69,7 @@ No se dispone de datos comparativos publicados para este checkpoint concreto. En
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ImKyungjin/pi0-stackcube-recover-noise-60pct-40ep)
+- [Modelo en Hugging Face](https://huggingface.co/ImKyungjin/pi0-stackcube-recover-noise-60pct-40ep)
 - [Blog de Physical Intelligence sobre Pi0](https://www.physicalintelligence.company/blog/pi0)
 - [Repositorio LeRobot](https://github.com/huggingface/lerobot)
 - [Documentación de LeRobot](https://huggingface.co/docs/lerobot/index)

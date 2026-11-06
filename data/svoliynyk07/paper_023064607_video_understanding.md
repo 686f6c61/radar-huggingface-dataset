@@ -64,9 +64,9 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Svoliynyk07/paper_023064607_video_understanding
+- Repositorio en Hugging Face: https://huggingface.co/Svoliynyk07/paper_023064607_video_understanding
 - Paper relacionado (survey sobre comprensión de vídeo con LLMs): https://arxiv.org/abs/2312.17432
 - Versión HTML del survey: https://arxiv.org/html/2312.17432v5
 - Repositorio GitHub con recursos sobre Vid-LLMs: https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding
 - Publicación en IEEE del survey: https://ieeexplore.ieee.org/document/10982110
-- Blog de HuggingFace sobre SmolVLM2 (comprensión de vídeo en dispositivos): https://huggingface.co/blog/smolvlm2
+- Blog de Hugging Face sobre SmolVLM2 (comprensión de vídeo en dispositivos): https://huggingface.co/blog/smolvlm2

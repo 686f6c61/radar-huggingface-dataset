@@ -34,7 +34,7 @@ El diseño incorpora un sampler estructurado basado en trie que restringe la gen
 - Gestión de linaje de datos, huellas digitales y reconciliación de manifiestos para trazabilidad.
 - Evaluación con métricas de precisión, macro-F1 y calibración en la fase 1.
 - Promoción de modelos con EMA y requisitos de confianza estadística.
-- Integración con el ecosistema HuggingFace Trainer para SFT.
+- Integración con el ecosistema Hugging Face Trainer para SFT.
 
 ## Casos de uso
 
@@ -73,7 +73,7 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/runpodai09/poker_platform
+- Repositorio en Hugging Face: https://huggingface.co/runpodai09/poker_platform
 - Página de Runpod (proveedor de infraestructura, mencionado en el autor): https://www.runpod.io/
 - Lista de recursos sobre IA en póker (contexto general): https://github.com/PokerBotAI/awesome-poker-ai
 - Proyecto PokerGPT (ejemplo de bot de póker con GPT-4): https://github.com/HarperJonesGPT/PokerGPT

@@ -80,7 +80,7 @@ La comparativa se basa en datos públicos de la model card y fuentes externas; n
 
 ## Enlaces
 
-- Repositorio HuggingFace del checkpoint: https://huggingface.co/AutomatosX/AX-DeepSeek-V4-Flash-MLX-AXQ-6bit-MTP
+- Repositorio Hugging Face del checkpoint: https://huggingface.co/AutomatosX/AX-DeepSeek-V4-Flash-MLX-AXQ-6bit-MTP
 - Modelo base DeepSeek-V4-Flash: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Hermano de 4 bits: https://huggingface.co/AutomatosX/AX-DeepSeek-V4-Flash-MLX-AXQ-4bit
 - Catálogo de modelos MLX de AutomatosX: https://huggingface.co/collections/AutomatosX/automatosx-mlx-model-catalog

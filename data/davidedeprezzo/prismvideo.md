@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PrismVideo es un modelo de generación de vídeo a partir de texto (pipeline declarado: text-to-video) publicado por el usuario davidedeprezzo en HuggingFace. Se distribuye como un ajuste fino del modelo Lightricks/LTX-2.5, según la etiqueta `base_model:finetune:Lightricks/LTX-2.5`, y declara soporte para italiano e inglés. La ficha del repositorio se creó el 20 de septiembre de 2026 y, en el momento de la consulta, acumula cero descargas y cero likes.
+PrismVideo es un modelo de generación de vídeo a partir de texto (pipeline declarado: text-to-video) publicado por el usuario davidedeprezzo en Hugging Face. Se distribuye como un ajuste fino del modelo Lightricks/LTX-2.5, según la etiqueta `base_model:finetune:Lightricks/LTX-2.5`, y declara soporte para italiano e inglés. La ficha del repositorio se creó el 20 de septiembre de 2026 y, en el momento de la consulta, acumula cero descargas y cero likes.
 
 La información publicada es mínima: la model card se limita a los metadatos YAML (licencia desconocida, idiomas `it` y `en`, pipeline text-to-video y modelo base). No incluye descripción funcional, arquitectura, número de parámetros, resolución o duración de los clips, composición del dataset de ajuste, instrucciones de uso ni resultados de evaluación. Tampoco se ha localizado documentación adicional mediante búsqueda web: los resultados devueltos no guardan relación con el modelo.
 
@@ -76,8 +76,8 @@ No se dispone de datos verificables de alternativas en la informacion proporcion
 
 | Modelo | Parametros | Contexto / duracion | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PrismVideo (davidedeprezzo) | no disponible | no disponible | it, en | desconocida | HuggingFace, 0 descargas, 0 likes |
-| Lightricks/LTX-2.5 (base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace (modelo de referencia del ajuste) |
+| PrismVideo (davidedeprezzo) | no disponible | no disponible | it, en | desconocida | Hugging Face, 0 descargas, 0 likes |
+| Lightricks/LTX-2.5 (base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face (modelo de referencia del ajuste) |
 | Otras alternativas open source de text-to-video | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se ha encontrado informacion comparativa fiable en la busqueda web realizada, cuyos resultados no guardan relacion con el modelo.
@@ -96,6 +96,6 @@ No se ha encontrado informacion comparativa fiable en la busqueda web realizada,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidedeprezzo/PrismVideo
+- Modelo en Hugging Face: https://huggingface.co/davidedeprezzo/PrismVideo
 - Modelo base declarado: https://huggingface.co/Lightricks/LTX-2.5
 - Papers, blogs, repositorios o demos: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo.

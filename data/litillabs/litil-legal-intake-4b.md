@@ -24,7 +24,7 @@ Su relevancia actual radica en el enfoque de salida cerrada y verificable: frent
 | Tarea (pipeline) | `text-generation` |
 | Revision del adaptador probada | `b5b2bf4aded78570c01612823a112b8f3a139eb6` |
 | Revision del modelo base probada | `cdbee75f17c01a7cc42f958dc650907174af0554` |
-| Fecha de creacion en HuggingFace | 2026-09-11 |
+| Fecha de creacion en Hugging Face | 2026-09-11 |
 
 ## Arquitectura y entrenamiento
 
@@ -89,8 +89,8 @@ Resultados adicionales reportados sin comparación con el base: 40/40 en disposi
 
 | Modelo | Parametros | Contexto | Rendimiento en el panel v9 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LiTiL Legal Intake 4B | ~4.000 M (base) + LoRA de ~126 MB | 4.118-32.991 tokens de prompt en el panel probado | 94,91 % global (511 casos) | `other` | Adaptador PEFT en HuggingFace |
-| Qwen3-4B-Instruct-2507 (base) | ~4.000 M | Contexto nativo no confirmado en la informacion disponible | 75,93 % global (511 casos) | No disponible en la informacion proporcionada | Modelo completo en HuggingFace |
+| LiTiL Legal Intake 4B | ~4.000 M (base) + LoRA de ~126 MB | 4.118-32.991 tokens de prompt en el panel probado | 94,91 % global (511 casos) | `other` | Adaptador PEFT en Hugging Face |
+| Qwen3-4B-Instruct-2507 (base) | ~4.000 M | Contexto nativo no confirmado en la informacion disponible | 75,93 % global (511 casos) | No disponible en la informacion proporcionada | Modelo completo en Hugging Face |
 | Otros adaptadores de admision legal comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación directa disponible se limita al modelo base sobre el que se entrena el adaptador. No se dispone de datos de otros adaptadores de admisión legal con los que contrastar parámetros, contexto o rendimiento.
@@ -110,7 +110,7 @@ La comparación directa disponible se limita al modelo base sobre el que se entr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litillabs/litil-legal-intake-4b
+- Modelo en Hugging Face: https://huggingface.co/litillabs/litil-legal-intake-4b
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Dataset LegalBench: https://huggingface.co/datasets/nguha/legalbench
 - Dataset LexGLUE: https://huggingface.co/datasets/coastalcph/lex_glue

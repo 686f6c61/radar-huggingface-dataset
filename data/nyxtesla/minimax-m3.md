@@ -80,7 +80,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nyxtesla/MiniMax-M3
+- Hugging Face: https://huggingface.co/nyxtesla/MiniMax-M3
 - Repositorio oficial en GitHub: https://github.com/MiniMax-AI/MiniMax-M3
 - Paper técnico (arXiv): https://arxiv.org/abs/2606.13392
 - Documentación de MiniMax Sparse Attention: https://github.com/MiniMax-AI/MSA

@@ -97,7 +97,7 @@ La informacion disponible no describe modelos de decision directamente comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ollaya-dev/cygnet
+- Modelo en Hugging Face: https://huggingface.co/ollaya-dev/cygnet
 - Modelo base: https://huggingface.co/ggml-org/gemma-4-12B-it-GGUF
 - Commit fijado del modelo base: https://huggingface.co/ggml-org/gemma-4-12B-it-GGUF/tree/e3e681731089efaa3f0917336944ac64752db8ba
 - Repositorio de Ollaya: https://github.com/ollaya-dev/ollaya

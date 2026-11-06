@@ -78,9 +78,9 @@ Estas métricas indican una pérdida de fidelidad muy baja, comparable a la de o
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | 262K (ext. 1M) | BF16 (original) | Apache 2.0 | HuggingFace |
-| rdtand/Qwen3.8-27B-PrismaScout-AQUA-Vision-20GB | 17,37B (checkpoint) | 262K (ext. 1M) | NVFP4/FP8/BF16 mixto | Apache 2.0 | HuggingFace |
-| rdtand/Qwen3.8-27B-PrismaAQUA-5.5bit-vllm | 19B (checkpoint) | No disponible | 5,5 bits (PrismaAQUA) | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B (base) | 27B | 262K (ext. 1M) | BF16 (original) | Apache 2.0 | Hugging Face |
+| rdtand/Qwen3.8-27B-PrismaScout-AQUA-Vision-20GB | 17,37B (checkpoint) | 262K (ext. 1M) | NVFP4/FP8/BF16 mixto | Apache 2.0 | Hugging Face |
+| rdtand/Qwen3.8-27B-PrismaAQUA-5.5bit-vllm | 19B (checkpoint) | No disponible | 5,5 bits (PrismaAQUA) | Apache 2.0 | Hugging Face |
 
 La comparativa muestra que esta cuantización ofrece un tamaño de checkpoint menor (20 GB) que la variante PrismaAQUA de 5,5 bits (19B, probablemente ~19 GB), manteniendo el mismo contexto y licencia. Frente al modelo base, la ventaja principal es la reducción de memoria (de ~54 GB en BF16 a 20 GB) con una pérdida de calidad mínima.
 
@@ -96,7 +96,7 @@ La comparativa muestra que esta cuantización ofrece un tamaño de checkpoint me
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rdtand/Qwen3.8-27B-PrismaScout-AQUA-Vision-20GB
+- Modelo en Hugging Face: https://huggingface.co/rdtand/Qwen3.8-27B-PrismaScout-AQUA-Vision-20GB
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Sitio del proyecto PrismaQuant: https://prismaquant.org
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8

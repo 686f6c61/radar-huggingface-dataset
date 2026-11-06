@@ -74,8 +74,8 @@ La comparativa muestra que la versión MLX es la única pensada para Apple Silic
 
 ## Enlaces
 
-- [Modelo MLX 4-bit en HuggingFace](https://huggingface.co/FredrikKarlssonSpeech/whisper-large-icelandic-62640-steps-967h-mlx-4bit)
-- [Modelo base (fine-tuned) en HuggingFace](https://huggingface.co/language-and-voice-lab/whisper-large-icelandic-62640-steps-967h)
+- [Modelo MLX 4-bit en Hugging Face](https://huggingface.co/FredrikKarlssonSpeech/whisper-large-icelandic-62640-steps-967h-mlx-4bit)
+- [Modelo base (fine-tuned) en Hugging Face](https://huggingface.co/language-and-voice-lab/whisper-large-icelandic-62640-steps-967h)
 - [Versión CTranslate2 del modelo base](https://huggingface.co/language-and-voice-lab/whisper-large-icelandic-62640-steps-967h-ct2)
 - [Repositorio de mlx-whisper (ejemplos MLX para Whisper)](https://github.com/ml-explore/mlx-examples/tree/main/whisper)
 - [API islandesa de ASR compatible con Whisper (GitHub)](https://github.com/icelandic-lt/icelandic-asr-api)

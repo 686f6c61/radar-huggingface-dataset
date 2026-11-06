@@ -25,7 +25,7 @@ El resultado es un artefacto de 4 GB en formato `.rkllm` que alcanza 7,1 tok/s d
 
 El modelo subyacente es un transformer denso de 3.000 millones de parámetros. La conversión no reentrena ni modifica los datos de entrenamiento: parte de los pesos publicados por IBM y aplica un plegado algebraico de los cuatro multiplicadores escalares que diferencian Granite 4.2 de un Llama convencional. Como todos ellos son lineales, pueden absorberse en las matrices de pesos correspondientes; en este caso, el único multiplicador distinto de 1 es `attention_multiplier = 1/64` (frente al `1/sqrt(head_dim) = 1/8` estándar), por lo que se escala `q_proj` por 0.125.
 
-La verificación previa a la conversión se hizo contra HuggingFace transformers: diferencia máxima de logits de 1e-5 y argmax greedy idéntico al 100 % sobre 600 tokens. El script de plegado se incluye en el repositorio (`conversion/fold_granite.py`). La cuantización w8a8 se aplica después mediante rkllm-toolkit 1.3.1, y el artefacto requiere `librkllmrt.so` 1.3.1 en tiempo de ejecución. No se documentan en la información disponible detalles sobre el dataset de entrenamiento del modelo base, ni si hubo RLHF o DPO.
+La verificación previa a la conversión se hizo contra Hugging Face transformers: diferencia máxima de logits de 1e-5 y argmax greedy idéntico al 100 % sobre 600 tokens. El script de plegado se incluye en el repositorio (`conversion/fold_granite.py`). La cuantización w8a8 se aplica después mediante rkllm-toolkit 1.3.1, y el artefacto requiere `librkllmrt.so` 1.3.1 en tiempo de ejecución. No se documentan en la información disponible detalles sobre el dataset de entrenamiento del modelo base, ni si hubo RLHF o DPO.
 
 ## Capacidades
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Formato / hardware | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Granite-4.2-3B-RK3588-rkllm-w8a8 (este) | 3 000 M | 2048–4096 en el ejemplo | RKLLM w8a8 / NPU RK3588 | Apache-2.0 | HuggingFace, 9 descargas |
-| ibm-granite/granite-4.2-3b (base) | 3 000 M | no disponible en la información | safetensors / GPU o CPU | Apache-2.0 | HuggingFace (oficial IBM) |
+| Granite-4.2-3B-RK3588-rkllm-w8a8 (este) | 3 000 M | 2048–4096 en el ejemplo | RKLLM w8a8 / NPU RK3588 | Apache-2.0 | Hugging Face, 9 descargas |
+| ibm-granite/granite-4.2-3b (base) | 3 000 M | no disponible en la información | safetensors / GPU o CPU | Apache-2.0 | Hugging Face (oficial IBM) |
 | Alternativas edge en RK3588 | no disponible | no disponible | RKLLM | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos de benchmarks comparables con otras conversiones RKLLM ni con modelos de tamaño similar en el mismo hardware.
@@ -92,7 +92,7 @@ No se dispone en la información proporcionada de datos de benchmarks comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oliver0804/Granite-4.2-3B-RK3588-rkllm-w8a8
+- Modelo en Hugging Face: https://huggingface.co/oliver0804/Granite-4.2-3B-RK3588-rkllm-w8a8
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-3b
-- Script de plegado incluido en el repo: `conversion/fold_granite.py` (ruta dentro del repositorio de HuggingFace)
+- Script de plegado incluido en el repo: `conversion/fold_granite.py` (ruta dentro del repositorio de Hugging Face)
 - No se han encontrado en la información disponible enlaces adicionales a papers, blogs, repositorios o demos.

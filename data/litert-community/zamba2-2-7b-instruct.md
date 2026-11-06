@@ -87,7 +87,7 @@ No se dispone de comparaciones con otros modelos de tamaño similar (p. ej., Qwe
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo convertido: https://huggingface.co/litert-community/Zamba2-2.7B-instruct
+- Repositorio Hugging Face del modelo convertido: https://huggingface.co/litert-community/Zamba2-2.7B-instruct
 - Modelo base original de Zyphra: https://huggingface.co/Zyphra/Zamba2-2.7B-instruct
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
 - Herramienta de conversión litert-torch: https://github.com/google-ai-edge/litert-torch

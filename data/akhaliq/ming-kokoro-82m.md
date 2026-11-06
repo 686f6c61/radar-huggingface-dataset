@@ -90,7 +90,7 @@ Ming-Kokoro-82M se diferencia de Kokoro stock en que es un reentrenamiento domin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akhaliq/Ming-Kokoro-82M
+- Modelo en Hugging Face: https://huggingface.co/akhaliq/Ming-Kokoro-82M
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M
 - Dataset/scripts de la receta: https://huggingface.co/datasets/akhaliq/ming-kokoro-distill
 - Corpus de entrenamiento: https://huggingface.co/buckets/akhaliq/ming-kokoro-corpus

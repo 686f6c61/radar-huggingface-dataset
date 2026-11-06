@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Radiant_Ramble_Anima` es un repositorio publicado por el usuario `AIxFuneStudio` en HuggingFace. Se trata de un modelo de inteligencia artificial cuyo propósito y características no están documentados públicamente en la información disponible. El repositorio tiene un tamaño de 4.4 GB, lo que sugiere que podría tratarse de un modelo de tamaño medio, pero no se puede confirmar su arquitectura, familia o dominio de aplicación.
+El modelo `Radiant_Ramble_Anima` es un repositorio publicado por el usuario `AIxFuneStudio` en Hugging Face. Se trata de un modelo de inteligencia artificial cuyo propósito y características no están documentados públicamente en la información disponible. El repositorio tiene un tamaño de 4.4 GB, lo que sugiere que podría tratarse de un modelo de tamaño medio, pero no se puede confirmar su arquitectura, familia o dominio de aplicación.
 
 El acceso al modelo está restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas establecidas por el autor antes de poder descargarlo o utilizarlo. La licencia se indica como `other`, lo que significa que no es una licencia estándar reconocida y podría tener términos particulares. El modelo fue creado el 16 de agosto de 2026 y actualizado el mismo día, aunque no se dispone de más detalles sobre su desarrollo o finalidad.
 
@@ -47,11 +47,11 @@ No disponible. No se puede comparar con otros modelos al desconocer su arquitect
 
 ## Limitaciones y advertencias
 
-- El acceso es restringido (gated): es necesario aceptar condiciones específicas en HuggingFace antes de poder acceder al modelo. Esto puede implicar restricciones de uso, redistribución o fines comerciales.
+- El acceso es restringido (gated): es necesario aceptar condiciones específicas en Hugging Face antes de poder acceder al modelo. Esto puede implicar restricciones de uso, redistribución o fines comerciales.
 - La licencia se indica como `other`, lo que significa que no es una licencia de código abierto estándar (como Apache 2.0, MIT o Llama License). Los términos exactos deben consultarse con el autor.
 - No hay documentación pública: no se dispone de información sobre sesgos, riesgos de alucinación, limitaciones de contexto o idioma, ni advertencias específicas para producción.
 - El modelo fue creado en agosto de 2026, pero no hay evidencia de que haya sido evaluado o validado externamente. Se recomienda extremar la precaución antes de utilizarlo en entornos de producción.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/AIxFuneStudio/Radiant_Ramble_Anima](https://huggingface.co/AIxFuneStudio/Radiant_Ramble_Anima)
+- Repositorio en Hugging Face: [https://huggingface.co/AIxFuneStudio/Radiant_Ramble_Anima](https://huggingface.co/AIxFuneStudio/Radiant_Ramble_Anima)

@@ -101,12 +101,12 @@ La información proporcionada solo permite comparar esta release con su propio m
 - La decodificación especulativa exige que los borradores DSpark/MTP se verifiquen contra el modelo principal; usar los borradores sin verificación produciría salidas no válidas.
 - Licencia MIT, que en principio permite uso comercial, pero conviene verificar de forma independiente los términos del modelo base DeepSeek-V4.1-Flash-1017 antes de explotarlo comercialmente.
 - Madurez: 0 descargas y 2 likes en el momento de la ficha, sin evaluaciones independientes conocidas. Es un derivado comunitario de un único autor.
-- Inconsistencia de datos: el campo de tamaño del repositorio en HuggingFace indica 202,0 GB, mientras que la model card declara 510,30 GB y 406,99 GB para las dos ediciones. Conviene comprobar el contenido real antes de planificar el almacenamiento.
+- Inconsistencia de datos: el campo de tamaño del repositorio en Hugging Face indica 202,0 GB, mientras que la model card declara 510,30 GB y 406,99 GB para las dos ediciones. Conviene comprobar el contenido real antes de planificar el almacenamiento.
 - El tamaño en disco no equivale al requisito de memoria en ejecución; el autor lo señala expresamente y no publica la RAM necesaria.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XopMC513/DeepSeek-V4.1-Flash-1017-Heretic
+- Modelo en Hugging Face: https://huggingface.co/XopMC513/DeepSeek-V4.1-Flash-1017-Heretic
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Edición en precisión original: https://huggingface.co/XopMC513/DeepSeek-V4.1-Flash-1017-Heretic/tree/main/HereticOriginalPrecision
 - Edición NVFP4 mixta: https://huggingface.co/XopMC513/DeepSeek-V4.1-Flash-1017-Heretic/tree/main/MixedNVFP4-v4

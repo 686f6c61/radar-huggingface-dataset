@@ -77,8 +77,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Tarea | Cuartetos de cuerda (error) | Lieder (error) | Piano polaco (error) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| copista-2m | ~4,0 M | OMR imagen a MusicXML | 11,2 % | 17,8 % | 38,7 % | No disponible | HuggingFace y GitHub |
-| copista-28m | ~30,7 M | OMR imagen a MusicXML | 8,7 % | 17,7 % | 34,4 % | No disponible | HuggingFace y GitHub |
+| copista-2m | ~4,0 M | OMR imagen a MusicXML | 11,2 % | 17,8 % | 38,7 % | No disponible | Hugging Face y GitHub |
+| copista-28m | ~30,7 M | OMR imagen a MusicXML | 8,7 % | 17,7 % | 34,4 % | No disponible | Hugging Face y GitHub |
 | homr | No disponible | OMR imagen a MusicXML | No disponible | 42,3 % | 48,3 % | No disponible | No disponible |
 | Transcoda | No disponible | OMR imagen a MusicXML | No disponible | 48,4 % | 55,1 % | No disponible | No disponible |
 | Audiveris | No disponible | OMR imagen a MusicXML | 66,9 % | 51,8 % | 62,6 % | No disponible | No disponible |
@@ -101,7 +101,7 @@ La comparativa se limita a las cifras de error publicadas por el autor; no se di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kobimusic/copista-2m
+- Modelo en Hugging Face: https://huggingface.co/kobimusic/copista-2m
 - Modelo hermano copista-28m: https://huggingface.co/kobimusic/copista-28m
 - Colección copista: https://huggingface.co/collections/kobimusic/copista-6ac3033f1a779b0c63ad41a9
 - Código del lector copisteria: https://github.com/kobimusic/copisteria

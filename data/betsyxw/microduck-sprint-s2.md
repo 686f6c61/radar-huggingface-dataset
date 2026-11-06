@@ -18,7 +18,7 @@ Su relevancia es doble: por un lado, amplía el ecosistema de políticas publica
 | Longitud de contexto | No aplica (política reactiva: observación de 61 dimensiones por paso, sin ventana de contexto) |
 | Tipos de cuantización | No disponible (se distribuye un único `policy.onnx`; no se documentan variantes cuantizadas) |
 | Idiomas soportados | No aplica / no disponible (modelo de control motor, sin entrada ni salida de texto) |
-| Licencia | No disponible (no declarada en la model card ni en los metadatos de HuggingFace) |
+| Licencia | No disponible (no declarada en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | ONNX (`policy.onnx`) + `manifest.json` con esquema 2 del manifiesto de políticas de microduck |
 | Dimensión de observación | 61 |
 | Dimensión de acción | 14 |
@@ -31,7 +31,7 @@ Su relevancia es doble: por un lado, amplía el ecosistema de políticas publica
 | Base de simulación | `mjlab-microduck 0.1.0 @ 8d0dbc94c` |
 | Normalizador de observaciones | Incluido dentro de `policy.onnx` (se alimenta con observaciones en crudo) |
 | Librería declarada | `microduck` |
-| Tamaño del repositorio | 0.0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0.0 GB (según Hugging Face) |
 | Descargas / likes | 0 / 1 |
 
 ## Arquitectura y entrenamiento
@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Política | Tipo | Observación / acción | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `betsyxw/microduck-sprint-s2` | Política RL para Microduck, ONNX | 61 / 14 | 50 Hz | No disponible | HuggingFace, 0 descargas, 1 like |
+| `betsyxw/microduck-sprint-s2` | Política RL para Microduck, ONNX | 61 / 14 | 50 Hz | No disponible | Hugging Face, 0 descargas, 1 like |
 | Políticas RL oficiales de Microduck | Políticas RL incluidas con el robot (se citan siete) | No disponible | No disponible | No disponible en la información consultada | distribuidas con el robot / ecosistema Pollen Robotics |
-| `minjunglee27/microduck-models` | Repositorio de políticas y checkpoints RL para Microduck y transferencia sim2real | No disponible | No disponible | No disponible en la información consultada | HuggingFace |
+| `minjunglee27/microduck-models` | Repositorio de políticas y checkpoints RL para Microduck y transferencia sim2real | No disponible | No disponible | No disponible en la información consultada | Hugging Face |
 | Políticas de otros bípedos pequeños (p. ej. Unitree G1, Booster) | Políticas RL específicas de cada plataforma | No disponible | No disponible | Habitualmente no abiertas | No comparable directamente: distinta morfología y dimensiones de observación |
 
 No se dispone de datos de rendimiento de ninguna de las alternativas, por lo que la comparación se limita a formato, interfaz y disponibilidad. La conclusión razonable es que `sprint-s2` es una política comunitaria más dentro del ecosistema Microduck, sin métricas que permitan situarla por encima o por debajo de las oficiales.
@@ -97,13 +97,13 @@ No se dispone de datos de rendimiento de ninguna de las alternativas, por lo que
 - Política perpetua sin terminación: no incorpora condiciones de parada propias, de modo que la seguridad depende por completo del daemon y de los límites externos; debe validarse la parada de emergencia antes de operar.
 - Desajuste aparente de dimensiones: la acción es de 14 dimensiones mientras que el robot se describe con 15 motores; la información disponible no aclara qué actuador queda fuera del control de la política.
 - Sin validación comunitaria: 0 descargas y 1 like en el momento de la consulta; no hay informes independientes de funcionamiento en hardware.
-- Sin soporte multilingüe ni de texto: no es aplicable como modelo de lenguaje, y no debe confundirse con uno pese a estar alojado en HuggingFace.
+- Sin soporte multilingüe ni de texto: no es aplicable como modelo de lenguaje, y no debe confundirse con uno pese a estar alojado en Hugging Face.
 - Tamaño de repositorio reportado de 0.0 GB: puede indicar que los pesos no están contabilizados o que el artefacto es extremadamente pequeño; conviene verificar la descarga real antes de desplegar.
 - Sin documentación de sesgos en el sentido estadístico habitual, pero sí riesgo de sesgo de simulación: la política se ajusta a la distribución del terreno y la dinámica del simulador, y puede fallar en condiciones fuera de esa distribución (superficies blandas, rampas, empujes).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/betsyxw/microduck-sprint-s2
+- Modelo en Hugging Face: https://huggingface.co/betsyxw/microduck-sprint-s2
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/pollen-robotics/microduck-challenges
 - Repositorio de políticas de la comunidad: https://huggingface.co/minjunglee27/microduck-models

@@ -92,7 +92,7 @@ No se proporcionan resultados numericos de modelos comparables en la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abelcetina/u2t01-bert-squad
+- Modelo en Hugging Face: https://huggingface.co/abelcetina/u2t01-bert-squad
 - Dataset SQuAD v1.1: https://huggingface.co/datasets/rajpurkar/squad
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Articulo de BERT: https://arxiv.org/abs/1810.04805

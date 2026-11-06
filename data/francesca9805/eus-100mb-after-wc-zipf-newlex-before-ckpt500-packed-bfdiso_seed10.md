@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `eus-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10` es un ajuste fino (fine-tuning) del modelo `francesca9805/ppt-wc-zipf-newlex-eus-before-100mb-packed-bfdiso_seed10`, publicado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generacion de texto de aproximadamente 124,8 millones de parametros, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de HuggingFace. El nombre del repositorio y la organizacion del experimento en Weights & Biases apuntan a un trabajo de investigacion de la Universidad de Groningen centrado en tokenizacion y en el idioma vasco (el codigo `eus` corresponde al codigo ISO 639-3 del eusquera), aunque la model card no confirma oficialmente ni el idioma ni el dataset.
+El modelo `eus-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10` es un ajuste fino (fine-tuning) del modelo `francesca9805/ppt-wc-zipf-newlex-eus-before-100mb-packed-bfdiso_seed10`, publicado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generacion de texto de aproximadamente 124,8 millones de parametros, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de Hugging Face. El nombre del repositorio y la organizacion del experimento en Weights & Biases apuntan a un trabajo de investigacion de la Universidad de Groningen centrado en tokenizacion y en el idioma vasco (el codigo `eus` corresponde al codigo ISO 639-3 del eusquera), aunque la model card no confirma oficialmente ni el idioma ni el dataset.
 
 Por su tamano (124,8 M de parametros, compatible con la escala de GPT-2 small) y por la etiqueta `gpt2` presente en los tags del repositorio, todo indica que se trata de un transformer decoder-only de escala reducida, no de un modelo de gran tamano orientado a produccion. El repositorio no registra descargas ni "likes" en el momento de la consulta, y no incluye informacion sobre benchmarks, idiomas soportados ni licencia, por lo que su interes es principalmente experimental y de investigacion mas que de despliegue comercial.
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| eus-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10 | 124,8 M | No disponible | No disponible | HuggingFace | Modelo experimental de investigacion; sin benchmarks |
+| eus-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10 | 124,8 M | No disponible | No disponible | Hugging Face | Modelo experimental de investigacion; sin benchmarks |
 | GPT-2 small | 124 M | 1024 tokens | MIT (segun publicacion original) | Amplia | Referencia de escala; arquitectura GPT-2 clasica |
 | DistilGPT-2 | 82 M | 1024 tokens | MIT (segun publicacion original) | Amplia | Version destilada de GPT-2, orientada a eficiencia |
 | GPT-2 medium | 355 M | 1024 tokens | MIT (segun publicacion original) | Amplia | Mayor capacidad, misma familia arquitectonica |
@@ -99,7 +99,7 @@ La comparativa con GPT-2 se plantea por la escala de parametros y la etiqueta `g
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/francesca9805/eus-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10
+- Pagina del modelo en Hugging Face: https://huggingface.co/francesca9805/eus-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-zipf-newlex-eus-before-100mb-packed-bfdiso_seed10
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/i6qq8wez

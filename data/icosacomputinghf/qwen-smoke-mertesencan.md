@@ -88,7 +88,7 @@ Nota: los datos de contexto y benchmarks de los modelos comparados no están dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IcosaComputingHF/qwen-smoke-mertesencan
+- Modelo en Hugging Face: https://huggingface.co/IcosaComputingHF/qwen-smoke-mertesencan
 - Modelo relacionado (mismo autor): https://huggingface.co/IcosaComputingHF/hardening-smoke-mertesencan
 - Modelo relacionado (mismo autor): https://huggingface.co/IcosaComputingHF/lmshop-smoke-qwen3-0714-mert
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth

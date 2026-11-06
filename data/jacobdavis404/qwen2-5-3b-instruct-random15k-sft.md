@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jacobdavis404/Qwen2.5-3B-Instruct-Random15K-SFT` es un ajuste fino completo (full fine-tuning) del modelo denso Qwen2.5-3B-Instruct, publicado por el usuario jacobdavis404. El entrenamiento se realizó con LLaMA-Factory sobre un dataset denominado `acereason_random_15k`, presumiblemente orientado a razonamiento, y el resultado se distribuye en formato safetensors para su uso con Transformers. El repositorio no incluye descripción de uso previsto, composición del dataset ni resultados de evaluación: la model card es la plantilla autogenerada por el `Trainer` de HuggingFace.
+`jacobdavis404/Qwen2.5-3B-Instruct-Random15K-SFT` es un ajuste fino completo (full fine-tuning) del modelo denso Qwen2.5-3B-Instruct, publicado por el usuario jacobdavis404. El entrenamiento se realizó con LLaMA-Factory sobre un dataset denominado `acereason_random_15k`, presumiblemente orientado a razonamiento, y el resultado se distribuye en formato safetensors para su uso con Transformers. El repositorio no incluye descripción de uso previsto, composición del dataset ni resultados de evaluación: la model card es la plantilla autogenerada por el `Trainer` de Hugging Face.
 
 El interés de esta ficha es limitado pero real: se trata de un artefacto de investigación reproducible (hiperparámetros completos, seed fijada, versiones de framework declaradas) que permite estudiar el efecto de un SFT de 15.000 muestras sobre una base de 3B parámetros. No obstante, la ausencia de benchmarks, de licencia clara y de documentación sobre los datos de entrenamiento impide recomendarlo para producción sin una evaluación propia.
 
@@ -92,7 +92,7 @@ Los datos de los modelos comparables provienen de sus respectivas model cards p�
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/jacobdavis404/Qwen2.5-3B-Instruct-Random15K-SFT
+- Hugging Face del modelo: https://huggingface.co/jacobdavis404/Qwen2.5-3B-Instruct-Random15K-SFT
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - LLaMA-Factory (framework de entrenamiento declarado): https://github.com/hiyouga/LLaMA-Factory
 - Repositorio de Transformers: https://github.com/huggingface/transformers

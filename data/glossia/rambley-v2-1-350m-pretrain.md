@@ -86,7 +86,7 @@ Rambley es notablemente inferior en benchmarks frente a estos competidores debid
 - La ventana de atencion deslizante es de solo 128 tokens, lo que limita la memoria local efectiva pese al contexto nativo de 2048.
 - Idiomas soportados no especificados; la mezcla de datos sugiere predominio del ingles.
 - Licencia CC-BY-SA-4.0: permite uso comercial, pero obliga a compartir las obras derivadas bajo la misma licencia y a atribuir a los autores, lo cual puede ser restrictivo para productos cerrados.
-- Usa custom_code en HuggingFace, lo que requiere confiar en el codigo remoto del repositorio al cargarlo (trust_remote_code=True).
+- Usa custom_code en Hugging Face, lo que requiere confiar en el codigo remoto del repositorio al cargarlo (trust_remote_code=True).
 - Popularidad muy baja (43 descargas, 1 like), por lo que el soporte comunitario y la documentacion son minimos.
 - La capacidad matematica es marginal: incluso en tareas de primaria, muchas categorias quedan por debajo del 35% de precision.
 

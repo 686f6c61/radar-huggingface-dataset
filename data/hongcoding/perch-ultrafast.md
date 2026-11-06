@@ -86,13 +86,13 @@ No se dispone de datos comparativos de rendimiento frente a estas alternativas e
 - La calidad final depende enteramente de los modelos conectados (local y nube); el framework solo gestiona la latencia y el relevo.
 - Los datos de latencia proceden de un unico demo del autor y no de una evaluacion independiente; pueden variar segun hardware, red y backend.
 - La documentacion y las etiquetas estan en chino e ingles; no hay traduccion oficial al castellano.
-- El paquete registra 0 descargas y 0 likes en HuggingFace en el momento de la consulta, por lo que su madurez y soporte comunitario son limitados.
+- El paquete registra 0 descargas y 0 likes en Hugging Face en el momento de la consulta, por lo que su madurez y soporte comunitario son limitados.
 - El modo acelerado desactiva el modo thinking y aplica un presupuesto de tokens; en tareas que requieren razonamiento extendido puede degradar la calidad si no se configura adecuadamente.
 - La licencia MIT permite uso comercial y modificacion con atribucion, pero no ofrece garantias; el autor no detalla politicas de sesgo ni de alucinacion, que dependen de los modelos subyacentes.
 - La integracion exige implementar el trait `Provider` para cada backend, lo que anade trabajo de adaptacion no incluido en el paquete.
 
 ## Enlaces
 
-- HuggingFace del framework: https://huggingface.co/hongcoding/perch-ultrafast
+- Hugging Face del framework: https://huggingface.co/hongcoding/perch-ultrafast
 - Proyecto Perch (aplicacion): https://huggingface.co/datasets/hongcoding/perch
-- Coleccion de HuggingFace: https://huggingface.co/collections/hongcoding/perch-ai-workbench-and-ultrafast-framework
+- Coleccion de Hugging Face: https://huggingface.co/collections/hongcoding/perch-ai-workbench-and-ultrafast-framework

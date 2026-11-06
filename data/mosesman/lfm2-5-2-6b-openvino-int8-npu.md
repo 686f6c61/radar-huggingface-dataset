@@ -81,7 +81,7 @@ La comparativa muestra que esta exportación INT8 es la única variante de LFM2.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mosesman/LFM2.5-2.6B-openvino-int8-npu
+- Repositorio Hugging Face: https://huggingface.co/mosesman/LFM2.5-2.6B-openvino-int8-npu
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Versión INT4 (fallida en NPU): https://huggingface.co/mosesman/LFM2.5-2.6B-openvino-int4-npu
 - Versión INT4 de LFM2 (funcional): https://huggingface.co/mosesman/LFM2-2.6B-openvino-int4-npu

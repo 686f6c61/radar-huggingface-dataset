@@ -6,7 +6,7 @@ El modelo `mjsxi/qwen-3.8-27b-mlx-mtp-mxfp8` es una conversión a formato MLX de
 
 A pesar de que el nombre sugiere una escala de 27 mil millones de parámetros, los datos reales de los safetensors indican 8.146.596.592 parámetros totales (aproximadamente 8,1 mil millones). El repositorio ocupa 29,1 GB, coherente con una cuantización de 8 bits para ese número de parámetros. El modelo está orientado a tareas de conversación y comprensión de imágenes, aunque no se proporcionan detalles sobre la arquitectura interna, el contexto o los idiomas soportados.
 
-Este lanzamiento es muy reciente (agosto de 2026) y no cuenta con descargas ni valoraciones en HuggingFace, por lo que debe considerarse experimental y sin validación comunitaria.
+Este lanzamiento es muy reciente (agosto de 2026) y no cuenta con descargas ni valoraciones en Hugging Face, por lo que debe considerarse experimental y sin validación comunitaria.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No disponible. No se han identificado modelos comparables de tamano y caracteris
 
 ## Limitaciones y advertencias
 
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad. Su uso en produccion es arriesgado.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad. Su uso en produccion es arriesgado.
 - No se proporciona informacion sobre sesgos, alucinaciones o comportamientos inseguros. Al ser una conversion no oficial, no se garantiza la fidelidad al modelo original.
 - La licencia Apache 2.0 permite uso comercial, pero al no conocer el modelo base original, no se puede confirmar que los datos de entrenamiento o el proceso de conversion cumplan con todas las obligaciones legales.
 - El nombre del modelo es inconsistente con el numero real de parametros (8,1B frente a "27B"), lo que sugiere posibles errores en el etiquetado o en la conversion.
@@ -72,6 +72,6 @@ No disponible. No se han identificado modelos comparables de tamano y caracteris
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mjsxi/qwen-3.8-27b-mlx-mtp-mxfp8
+- Repositorio Hugging Face: https://huggingface.co/mjsxi/qwen-3.8-27b-mlx-mtp-mxfp8
 - Modelo base (referenciado, sin URL directa): Qwen/Qwen3.8-27B
 - Libreria mlx-vlm: no se proporciona enlace, pero esta disponible en PyPI (pip install mlx-vlm)

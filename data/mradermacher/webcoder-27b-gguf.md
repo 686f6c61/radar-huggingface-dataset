@@ -93,7 +93,7 @@ No es posible establecer una comparación de rendimiento con modelos de la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/WebCoder-27B-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/WebCoder-27B-GGUF
 - Modelo base: https://huggingface.co/Roy-DOU/WebCoder-27B
 - Cuantizaciones imatrix del mismo modelo: https://huggingface.co/mradermacher/WebCoder-27B-i1-GGUF
 - Dataset de entrenamiento/evaluación: https://huggingface.co/datasets/Roy-DOU/Webdev-Bench

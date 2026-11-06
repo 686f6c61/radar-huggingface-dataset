@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Food Delivery Time Estimator es un modelo de regresion tabular publicado en HuggingFace por el usuario itsmesonu47. No es un modelo de lenguaje ni una red neuronal: es un `RandomForestRegressor` de scikit-learn serializado con joblib (`delivery_rf_model.pkl`, unos 209 MB) que predice el tiempo total de entrega de un pedido de comida, en minutos, a partir de 33 caracteristicas numericas y one-hot que describen al repartidor, la geografia del trayecto, la franja temporal, las condiciones meteorologicas, la densidad de trafico, el tipo de pedido, el vehiculo y la ciudad.
+Food Delivery Time Estimator es un modelo de regresion tabular publicado en Hugging Face por el usuario itsmesonu47. No es un modelo de lenguaje ni una red neuronal: es un `RandomForestRegressor` de scikit-learn serializado con joblib (`delivery_rf_model.pkl`, unos 209 MB) que predice el tiempo total de entrega de un pedido de comida, en minutos, a partir de 33 caracteristicas numericas y one-hot que describen al repartidor, la geografia del trayecto, la franja temporal, las condiciones meteorologicas, la densidad de trafico, el tipo de pedido, el vehiculo y la ciudad.
 
 El problema que resuelve es acotado pero muy comun en logistica de ultima milla: estimar el ETA de un pedido antes de confirmarlo, para fijar expectativas al cliente y para alimentar heuristicas de asignacion de repartidores. El autor lo presenta explicitamente como un proyecto de aprendizaje ("food delivery learning project") y advierte de que no esta pensado para garantias comerciales ni para usos criticos para la seguridad. La licencia es MIT, lo que permite reutilizacion y modificacion, y el repositorio ocupa 0,2 GB en total.
 
@@ -81,7 +81,7 @@ No se han identificado en la informacion proporcionada modelos comparables con r
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Food Delivery Time Estimator (este modelo) | no disponible | 33 caracteristicas tabulares | MAE 3,12 min; RMSE 3,87 min; R² 0,833 | MIT | HuggingFace, `itsmesonu47/food-delivery-time-estimator` |
+| Food Delivery Time Estimator (este modelo) | no disponible | 33 caracteristicas tabulares | MAE 3,12 min; RMSE 3,87 min; R² 0,833 | MIT | Hugging Face, `itsmesonu47/food-delivery-time-estimator` |
 | XGBoost / LightGBM (entrenados sobre el mismo dataset) | no disponible | mismas 33 caracteristicas | no disponible (no se han publicado resultados) | licencias propias de cada libreria | no disponible como modelo preentrenado para esta tarea |
 | Regresion lineal como baseline | no disponible | mismas 33 caracteristicas | no disponible | no aplica | no disponible |
 
@@ -101,7 +101,7 @@ No se han identificado en la informacion proporcionada modelos comparables con r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsmesonu47/food-delivery-time-estimator
+- Modelo en Hugging Face: https://huggingface.co/itsmesonu47/food-delivery-time-estimator
 - Perfil del autor: https://huggingface.co/itsmesonu47
 - Imagen de evaluacion incluida en la model card: https://cdn-uploads.huggingface.co/production/uploads/689e0a595140d6d8303f3331/e2nytNR1HiB2ieqyzAles.png
 - Dataset de origen: no disponible (la model card describe las 45.584 filas y 20 columnas, pero no enlaza la fuente)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cywaynechien/ai_rookie` es un repositorio de modelo alojado en HuggingFace por el usuario cywaynechien. Segun los metadatos publicos disponibles, el repositorio tiene un tamano de 0.0 GB, no declara pipeline de inferencia, no registra descargas ni "likes", y su model card se limita a la linea `license: mit`, sin descripcion, sin ejemplos de uso y sin referencias a documentacion tecnica.
+`cywaynechien/ai_rookie` es un repositorio de modelo alojado en Hugging Face por el usuario cywaynechien. Segun los metadatos publicos disponibles, el repositorio tiene un tamano de 0.0 GB, no declara pipeline de inferencia, no registra descargas ni "likes", y su model card se limita a la linea `license: mit`, sin descripcion, sin ejemplos de uso y sin referencias a documentacion tecnica.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, datos de entrenamiento ni formato de pesos. El repositorio fue creado el 19 de septiembre de 2026 y actualizado tres minutos mas tarde, lo que sugiere una publicacion de prueba o un esqueleto de repositorio sin artefactos publicados.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No disponible. No es posible identificar modelos comparables de la misma categoria porque se desconoce el tamano, la arquitectura, el contexto y el proposito del modelo. La unica coincidencia verificable con otros repositorios de HuggingFace es la licencia MIT, un criterio demasiado generico para establecer una comparativa tecnica.
+No disponible. No es posible identificar modelos comparables de la misma categoria porque se desconoce el tamano, la arquitectura, el contexto y el proposito del modelo. La unica coincidencia verificable con otros repositorios de Hugging Face es la licencia MIT, un criterio demasiado generico para establecer una comparativa tecnica.
 
 ## Limitaciones y advertencias
 
@@ -74,6 +74,6 @@ No disponible. No es posible identificar modelos comparables de la misma categor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cywaynechien/ai_rookie
+- Repositorio en Hugging Face: https://huggingface.co/cywaynechien/ai_rookie
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada.
 - No se dispone de enlace a model card ampliada, ficha de evaluacion ni documentacion adicional.

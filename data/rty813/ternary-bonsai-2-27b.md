@@ -34,7 +34,7 @@ El repositorio `rty813/Ternary-Bonsai-2-27B` no introduce cambios arquitectónic
 - Comportamiento agéntico: el autor afirma que conserva capacidades agenticas y de razonamiento profundo tras la ternarización.
 - Multilingüismo: no disponible (no se documenta la lista de idiomas).
 - Tool calling / function calling: no disponible explícitamente, aunque la etiqueta "agentic" del autor sugiere soporte, sin confirmación documental.
-- Capacidades multimodales: la ficha de HuggingFace incluye la etiqueta `image-text-to-text`, pero la model card no describe ninguna torre de visión ni capacidades de imagen, por lo que el dato no está confirmado.
+- Capacidades multimodales: la ficha de Hugging Face incluye la etiqueta `image-text-to-text`, pero la model card no describe ninguna torre de visión ni capacidades de imagen, por lo que el dato no está confirmado.
 - Ejecución en dispositivo: al estar empaquetado originalmente en GGUF para CUDA, Metal y CPU, está orientado a inferencia local y en el borde ("on-device").
 - Compatibilidad de despliegue: transformers, vLLM, TGI, Xinference (port bf16) y llama.cpp (original GGUF).
 
@@ -75,7 +75,7 @@ Nota: la model card no especifica qué 14 benchmarks componen la media de 84,78 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ternary-Bonsai-2-27B (ternario, prism-ml) | 27B | no disponible | 84,78 de media en 14 benchmarks; 96,57 en matematicas | Apache 2.0 | GGUF en HuggingFace, llama.cpp |
+| Ternary-Bonsai-2-27B (ternario, prism-ml) | 27B | no disponible | 84,78 de media en 14 benchmarks; 96,57 en matematicas | Apache 2.0 | GGUF en Hugging Face, llama.cpp |
 | rty813/Ternary-Bonsai-2-27B (este repo) | 27B | no disponible | no disponible (port bf16, sin benchmarks publicados) | Apache 2.0 | `pytorch_model.bin` bf16, vLLM/TGI/Xinference |
 | IQ2_XXS del mismo modelo | 27B | no disponible | 72,59 de media en los mismos 14 benchmarks | Apache 2.0 | GGUF en llama.cpp |
 | UD-Q4_K_XL del mismo modelo | 27B | no disponible | ~0,4 puntos por encima del ternario | Apache 2.0 | GGUF en llama.cpp |
@@ -97,7 +97,7 @@ No se dispone de datos verificables de otros modelos de la misma categoría (por
 
 ## Enlaces
 
-- HuggingFace (port bf16, este repositorio): https://huggingface.co/rty813/Ternary-Bonsai-2-27B
+- Hugging Face (port bf16, este repositorio): https://huggingface.co/rty813/Ternary-Bonsai-2-27B
 - Modelo original en GGUF: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Web de Prism ML: https://prismml.com
 - Whitepaper (PDF): https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-2-27b-whitepaper.pdf

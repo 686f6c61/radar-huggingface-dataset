@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`driftwood3342/flow-vla-rl-checkpoints` es un repositorio alojado en HuggingFace por el usuario `driftwood3342`, publicado y actualizado el 17 de septiembre de 2026. En el momento de la consulta acumula 0 descargas y 0 "likes", y no declara pipeline de inferencia ni idiomas soportados. La unica informacion verificable es su licencia (Apache 2.0) y la etiqueta de region `us`; la model card se limita al bloque de frontmatter con la licencia y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
+`driftwood3342/flow-vla-rl-checkpoints` es un repositorio alojado en Hugging Face por el usuario `driftwood3342`, publicado y actualizado el 17 de septiembre de 2026. En el momento de la consulta acumula 0 descargas y 0 "likes", y no declara pipeline de inferencia ni idiomas soportados. La unica informacion verificable es su licencia (Apache 2.0) y la etiqueta de region `us`; la model card se limita al bloque de frontmatter con la licencia y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
 El propio identificador del repositorio sugiere, por convencion de nomenclatura, un conjunto de checkpoints asociados a un modelo de tipo vision-language-action (VLA) entrenado con flow matching y refinado mediante aprendizaje por refuerzo. Se trata, no obstante, de una inferencia a partir del nombre y no de un dato confirmado por el autor: ni la model card ni los resultados de busqueda disponibles corroboran esa interpretacion. Cualquier evaluacion tecnica del contenido requiere inspeccionar directamente los archivos del repositorio.
 
@@ -21,7 +21,7 @@ Por su relevancia actual, el interes potencial de este repositorio reside en la 
 | Licencia | Apache 2.0 |
 | Formato de pesos | no disponible |
 
-Otros metadatos declarados en HuggingFace: etiqueta de region `us`, pipeline no disponible, 0 descargas, 0 likes, fecha de creacion y ultima actualizacion 2026-09-17T17:37:55Z (sin modificaciones posteriores registradas).
+Otros metadatos declarados en Hugging Face: etiqueta de region `us`, pipeline no disponible, 0 descargas, 0 likes, fecha de creacion y ultima actualizacion 2026-09-17T17:37:55Z (sin modificaciones posteriores registradas).
 
 ## Arquitectura y entrenamiento
 
@@ -37,7 +37,7 @@ No hay ninguna capacidad documentada por el autor en la informacion disponible. 
 - Capacidades de vision o de accion sobre entornos fisicos: no disponible, pese a la sugerencia del nombre del repositorio.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; la ficha de HuggingFace no declara ningun idioma.
+- Capacidades multilingues: no disponible; la ficha de Hugging Face no declara ningun idioma.
 - Modo de razonamiento explicito (thinking mode), audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
@@ -86,6 +86,6 @@ Categorias de referencia que podrian explorarse una vez documentado el modelo: f
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/driftwood3342/flow-vla-rl-checkpoints
+- Hugging Face: https://huggingface.co/driftwood3342/flow-vla-rl-checkpoints
 - Perfil del autor: https://huggingface.co/driftwood3342
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web no devolvio ningun enlace asociado al modelo, al autor o a la familia `flow-vla`.

@@ -80,5 +80,5 @@ No disponible. No se proporcionan datos de comparación con otros modelos de la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FINAL-Bench/Armoring-Qwen3.6-35B-A3B
+- Repositorio Hugging Face: https://huggingface.co/FINAL-Bench/Armoring-Qwen3.6-35B-A3B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B

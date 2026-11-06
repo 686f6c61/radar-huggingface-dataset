@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SASVAAI/muse-glimmer-30b-kernelgen es un repositorio de modelo publicado en HuggingFace por el usuario SASVAAI el 14 de septiembre de 2026, con licencia Apache 2.0 y un tamano de repositorio de 76,5 GB. La model card asociada no contiene mas informacion que la declaracion de licencia: no incluye descripcion del modelo, arquitectura, datos de entrenamiento, idiomas ni resultados de evaluacion. El repositorio no registra descargas ni "likes" en el momento de la consulta.
+SASVAAI/muse-glimmer-30b-kernelgen es un repositorio de modelo publicado en Hugging Face por el usuario SASVAAI el 14 de septiembre de 2026, con licencia Apache 2.0 y un tamano de repositorio de 76,5 GB. La model card asociada no contiene mas informacion que la declaracion de licencia: no incluye descripcion del modelo, arquitectura, datos de entrenamiento, idiomas ni resultados de evaluacion. El repositorio no registra descargas ni "likes" en el momento de la consulta.
 
 El identificador del modelo sugiere dos cosas que no estan confirmadas por ninguna fuente oficial: un tamano aproximado de 30.000 millones de parametros (por el sufijo "30b") y una especializacion en generacion de kernels (por el sufijo "kernelgen"), presumiblemente kernels de computo para GPU. Ninguna de las dos afirmaciones puede verificarse con la informacion disponible, por lo que deben tratarse como hipotesis derivadas del nombre y no como especificaciones tecnicas.
 
@@ -78,7 +78,7 @@ No es posible establecer una comparativa cuantitativa fiable con los datos dispo
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks | Disponibilidad |
 |---|---|---|---|---|---|
-| SASVAAI/muse-glimmer-30b-kernelgen | no disponible | no disponible | Apache 2.0 | no disponible | repositorio publico en HuggingFace |
+| SASVAAI/muse-glimmer-30b-kernelgen | no disponible | no disponible | Apache 2.0 | no disponible | repositorio publico en Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Como referencia de categoria, existirian modelos abiertos de rango 30-34B orientados a codigo con los que podria compararse una vez se conozcan las especificaciones reales, pero no se dispone de datos verificados de este modelo para realizar dicha comparacion.
@@ -97,7 +97,7 @@ Como referencia de categoria, existirian modelos abiertos de rango 30-34B orient
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SASVAAI/muse-glimmer-30b-kernelgen
+- Hugging Face: https://huggingface.co/SASVAAI/muse-glimmer-30b-kernelgen
 - Model card: no disponible (unicamente contiene el bloque de licencia)
 - Paper: no disponible
 - Repositorio de codigo: no disponible

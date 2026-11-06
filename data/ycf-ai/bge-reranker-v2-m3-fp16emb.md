@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 - Memoria de activaciones adicional por petición, en el peor caso con todos los pares a 512 tokens: +1,8 GB con 24 documentos, +3,1 GB con 64 documentos y +5,9 GB con 128 documentos. oMLX 0.7.0 no impone tope al tamaño de la petición.
 - Hardware medido: Mac Studio M1 Ultra con GPU de 64 núcleos y 64 GB de memoria unificada, macOS 15.8. No hay mediciones publicadas sobre CUDA en la información disponible.
 - Encaja en equipos de consumo: al tratarse de un encoder de 568M parámetros, cabe en Apple Silicon de gama consumer (M1 y posteriores) con memoria unificada suficiente para los pesos, las activaciones y cualquier LLM que se mantenga residente. En GPUs de consumo, el peso de los parámetros en FP32 ronda los 2,3 GB, por lo que debería caber en tarjetas con 4 GB o más de VRAM, sin contar activaciones ni el overhead del runtime; esta cifra es una estimación derivada del tamaño de los pesos, no una medición publicada.
-- Opciones de despliegue documentadas: `transformers` (carga como FP32 y reproduce las puntuaciones originales), oMLX 0.7.0 en Apple Silicon con el endpoint `/v1/rerank`, y las etiquetas del repositorio indican compatibilidad con `text-embeddings-inference` y con endpoints de HuggingFace.
+- Opciones de despliegue documentadas: `transformers` (carga como FP32 y reproduce las puntuaciones originales), oMLX 0.7.0 en Apple Silicon con el endpoint `/v1/rerank`, y las etiquetas del repositorio indican compatibilidad con `text-embeddings-inference` y con endpoints de Hugging Face.
 - No hay datos disponibles sobre soporte en vLLM, llama.cpp, Ollama o TGI.
 - Latencia medida en HTTP sobre oMLX 0.7.0: 24 documentos en 412 ms p50 (430 ms p95) en solitario y unos 454 ms con un LLM de 28,5 GB residente; 3 documentos cortos en 21 ms; primera petición en frío, 1,9 s.
 - No se dispone de cifras de throughput (documentos por segundo) ni de latencias con GPU dedicada.
@@ -121,7 +121,7 @@ Como referencia de etapa previa, el retriever BGE-M3 denso obtiene MRR@10 0,591 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YCF-AI/bge-reranker-v2-m3-fp16emb
+- Modelo en Hugging Face: https://huggingface.co/YCF-AI/bge-reranker-v2-m3-fp16emb
 - Modelo base: https://huggingface.co/BAAI/bge-reranker-v2-m3
 - Repositorio de oMLX: https://github.com/jundot/omlx
 - Referencias arXiv citadas en las etiquetas del repositorio: https://arxiv.org/abs/2402.03216 y https://arxiv.org/abs/2312.15503

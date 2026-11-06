@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ahmad-maqsood/kutta-billi-classifier` es un modelo publicado en HuggingFace por el usuario ahmad-maqsood bajo licencia MIT. Por el identificador del repositorio ("kutta-billi-classifier", donde "kutta" y "billi" significan perro y gato en hindi/urdu) y por la ausencia de cualquier especificación técnica en la model card, se trata con toda probabilidad de un clasificador de imágenes binario o multiclase orientado a distinguir perros de gatos. No obstante, esta interpretación es una inferencia a partir del nombre y no está confirmada por documentación alguna del autor.
+`ahmad-maqsood/kutta-billi-classifier` es un modelo publicado en Hugging Face por el usuario ahmad-maqsood bajo licencia MIT. Por el identificador del repositorio ("kutta-billi-classifier", donde "kutta" y "billi" significan perro y gato en hindi/urdu) y por la ausencia de cualquier especificación técnica en la model card, se trata con toda probabilidad de un clasificador de imágenes binario o multiclase orientado a distinguir perros de gatos. No obstante, esta interpretación es una inferencia a partir del nombre y no está confirmada por documentación alguna del autor.
 
-La model card del repositorio es prácticamente vacía: únicamente contiene el campo `license: mit` en el frontmatter YAML, sin descripción, sin arquitectura declarada, sin datos de entrenamiento, sin métricas y sin instrucciones de uso. El pipeline no está declarado en los metadatos de HuggingFace, no se listan idiomas y el repositorio no registra descargas ni "likes" en el momento de la consulta.
+La model card del repositorio es prácticamente vacía: únicamente contiene el campo `license: mit` en el frontmatter YAML, sin descripción, sin arquitectura declarada, sin datos de entrenamiento, sin métricas y sin instrucciones de uso. El pipeline no está declarado en los metadatos de Hugging Face, no se listan idiomas y el repositorio no registra descargas ni "likes" en el momento de la consulta.
 
 Por todo ello, esta ficha debe leerse como un registro de lo que se sabe (muy poco) más una caracterización de lo que no se sabe. No es posible evaluar el modelo para uso en producción con la información disponible, y cualquier dato técnico que se ofrezca a continuación se marcará explícitamente como "no disponible" salvo que pueda deducirse de los metadatos objetivos del repositorio.
 
@@ -23,7 +23,7 @@ Por todo ello, esta ficha debe leerse como un registro de lo que se sabe (muy po
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos del repositorio. El tag `region:us` indica únicamente la región de almacenamiento en la infraestructura de HuggingFace y no aporta información sobre el diseño del modelo. No consta el número de parámetros, el tipo de backbone (CNN, transformer visual tipo ViT, etc.), la resolución de entrada ni el tamaño del vocabulario o de las clases de salida.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos del repositorio. El tag `region:us` indica únicamente la región de almacenamiento en la infraestructura de Hugging Face y no aporta información sobre el diseño del modelo. No consta el número de parámetros, el tipo de backbone (CNN, transformer visual tipo ViT, etc.), la resolución de entrada ni el tamaño del vocabulario o de las clases de salida.
 
 Tampoco hay datos sobre el conjunto de entrenamiento: no se indica el número de imágenes, su procedencia, la composición por clases, si hubo aumento de datos, ni si se aplicaron técnicas de ajuste fino supervisado, destilación o regularización. No se documenta ninguna innovación técnica (atención lineal, decodificación especulativa, mezcla de expertos, etc.). En ausencia de esta información, el modelo no puede reproducirse ni auditarse.
 
@@ -84,5 +84,5 @@ La comparación cuantitativa (parámetros, precisión, latencia) no puede realiz
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ahmad-maqsood/kutta-billi-classifier
+- Hugging Face: https://huggingface.co/ahmad-maqsood/kutta-billi-classifier
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información proporcionada.

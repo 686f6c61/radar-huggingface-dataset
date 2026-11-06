@@ -4,7 +4,7 @@
 
 El modelo `yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-8k_9k_10k_11k_12k_simpleavg_merge` es un checkpoint de 6.856.253.440 parámetros (~6,86 B) publicado por el usuario `yuhengtu-bytedance`, resultado de promediar linealmente cinco checkpoints intermedios de un mismo entrenamiento. No es un modelo entrenado desde cero, sino un "model soup" generado con la herramienta mergekit: se combinan los pasos globales 8000, 9000, 10000, 11000 y 12130 de una misma ejecución de ajuste, todos con peso 1.0 y normalización activada, con salida en bfloat16.
 
-La relevancia de esta ficha es acotada y conviene explicitarla: el repositorio no incluye model card descriptiva, no declara licencia ni idiomas, no publica resultados de benchmarks y acumula cero descargas. La etiqueta `gpt_neox` de HuggingFace indica que la arquitectura subyacente pertenece a la familia GPT-NeoX (transformer decoder-only), y las rutas internas citadas en la configuración de merge (`Pan_Safety_Better_Measurement`) apuntan a checkpoints vinculados a un pipeline de medición de seguridad, aunque esto es una inferencia a partir de nombres de fichero y no un dato confirmado por el autor.
+La relevancia de esta ficha es acotada y conviene explicitarla: el repositorio no incluye model card descriptiva, no declara licencia ni idiomas, no publica resultados de benchmarks y acumula cero descargas. La etiqueta `gpt_neox` de Hugging Face indica que la arquitectura subyacente pertenece a la familia GPT-NeoX (transformer decoder-only), y las rutas internas citadas en la configuración de merge (`Pan_Safety_Better_Measurement`) apuntan a checkpoints vinculados a un pipeline de medición de seguridad, aunque esto es una inferencia a partir de nombres de fichero y no un dato confirmado por el autor.
 
 Por tanto, se trata de un artefacto de investigación reproducible más que de un modelo listo para producción. Su interés principal es metodológico: ilustra la técnica de promediado de pesos (linear merge con normalización) aplicada a checkpoints intermedios de un fine-tuning, tal como describe el artículo referenciado en las etiquetas (arXiv:2203.05482, "Model soups").
 
@@ -23,7 +23,7 @@ Por tanto, se trata de un artefacto de investigación reproducible más que de u
 | Pipeline declarado | text-generation |
 | Tamano del repositorio | 13,7 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-13 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-13 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -52,7 +52,7 @@ Los siguientes escenarios son viables por las características técnicas del art
 - Evaluación comparativa de pipelines de seguridad: dado que los checkpoints de origen se almacenan bajo una ruta de medición de seguridad, el modelo puede emplearse como sujeto de pruebas en baterías de evaluación de alineamiento, siempre que se documente la ausencia de licencia.
 - Generación de datos sintéticos para destilación: un modelo de 6,86 B puede producir corpus de texto para entrenar modelos menores, aunque la ausencia de benchmarks obliga a validar la calidad de forma empírica antes de escalar.
 - Despliegue self-hosted de generación de texto en hardware de gama alta de consumo: con cuantización a 4 bits (aproximadamente 3,5-4,5 GB de pesos) cabe en GPUs de 8-12 GB mediante llama.cpp u Ollama, tras convertir los pesos a GGUF.
-- Estudio académico de artefactos no curados: el caso es un ejemplo útil de repositorio sin model card, sin licencia y sin métricas, para discutir prácticas de publicación en HuggingFace.
+- Estudio académico de artefactos no curados: el caso es un ejemplo útil de repositorio sin model card, sin licencia y sin métricas, para discutir prácticas de publicación en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -74,10 +74,10 @@ La model card no identifica el modelo base, por lo que la comparación se establ
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (merge) | 6,86 B | no disponible | GPT-NeoX (etiqueta) | no disponible | HuggingFace, 0 descargas |
-| Pythia-6.9B | ~6,9 B | 2048 tokens | GPT-NeoX | Apache 2.0 | HuggingFace, ampliamente usado |
-| GPT-J-6B | ~6 B | 2048 tokens | GPT-J (decoder-only) | Apache 2.0 | HuggingFace |
-| OPT-6.7B | ~6,7 B | 2048 tokens | Transformer decoder-only | Meta (no comercial en algunas versiones) | HuggingFace |
+| Este modelo (merge) | 6,86 B | no disponible | GPT-NeoX (etiqueta) | no disponible | Hugging Face, 0 descargas |
+| Pythia-6.9B | ~6,9 B | 2048 tokens | GPT-NeoX | Apache 2.0 | Hugging Face, ampliamente usado |
+| GPT-J-6B | ~6 B | 2048 tokens | GPT-J (decoder-only) | Apache 2.0 | Hugging Face |
+| OPT-6.7B | ~6,7 B | 2048 tokens | Transformer decoder-only | Meta (no comercial en algunas versiones) | Hugging Face |
 
 No se dispone de datos de rendimiento comparado para este modelo, por lo que la columna de benchmarks se omite. Cualquier comparación de calidad con Pythia-6.9B u OPT-6.7B requeriría evaluaciones propias.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparado para este modelo, por lo que la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-8k_9k_10k_11k_12k_simpleavg_merge
+- Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-8k_9k_10k_11k_12k_simpleavg_merge
 - mergekit (herramienta de fusión): https://github.com/cg123/mergekit
 - Paper del método de promediado referenciado en las etiquetas (arXiv:2203.05482, Model soups): https://arxiv.org/abs/2203.05482
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la búsqueda web disponible.

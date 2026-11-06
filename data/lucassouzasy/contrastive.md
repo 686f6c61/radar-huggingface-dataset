@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lucassouzasy/contrastive` es un repositorio de HuggingFace publicado por el usuario lucassouzasy que contiene una implementación propia en PyTorch de una arquitectura denominada Mae orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un lanzamiento listo para producción: la propia model card lo describe explícitamente como un esqueleto de código para revisión, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, y aclara que el checkpoint incluido es una inicialización válida, no un modelo con benchmarks.
+`lucassouzasy/contrastive` es un repositorio de Hugging Face publicado por el usuario lucassouzasy que contiene una implementación propia en PyTorch de una arquitectura denominada Mae orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un lanzamiento listo para producción: la propia model card lo describe explícitamente como un esqueleto de código para revisión, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, y aclara que el checkpoint incluido es una inicialización válida, no un modelo con benchmarks.
 
 El dato más relevante para evaluarlo es la discrepancia entre la etiqueta de escala declarada ("huge") y el recuento real de parámetros del archivo `model.safetensors`, que asciende a 24.832 parámetros. Es decir, el repositorio etiqueta la configuración como enorme pero los pesos publicados son de un tamaño minúsculo, coherente con su función de plantilla y prueba de integración más que con un modelo utilizable. El tamaño total del repositorio es de 0,0 GB, lo que confirma esa lectura.
 
@@ -48,7 +48,7 @@ Tampoco se documentan innovaciones técnicas más allá de la combinación de at
 - Validación de pipelines de entrenamiento contrastivo: el script y `training_args.json` permiten comprobar que un bucle de entrenamiento con Novograd y calentamiento lineal se ejecuta sin errores, midiendo tiempos y consumo de memoria en un escenario trivial.
 - Prototipado de investigación en fusión por co-atención: un equipo que quiera explorar variantes de fusión entre dos ramas de representaciones puede partir de este esqueleto y sustituir componentes sin reescribir la infraestructura desde cero.
 - Benchmarking de infraestructura y middlewares: al ser tan pequeño, resulta útil para medir la latencia y el overhead de frameworks de servicio (vLLM, TGI, servidores propios) aislando el coste computacional del modelo del coste del sistema de serving.
-- Docencia y formación: es un ejemplo didáctico adecuado para explicar cómo se estructura un repositorio de modelo en HuggingFace (`config.json`, `training_args.json`, safetensors, README) y cómo se documentan limitaciones de forma honesta.
+- Docencia y formación: es un ejemplo didáctico adecuado para explicar cómo se estructura un repositorio de modelo en Hugging Face (`config.json`, `training_args.json`, safetensors, README) y cómo se documentan limitaciones de forma honesta.
 - Punto de partida para un entrenamiento desde cero con datos propios: si se confirma la arquitectura y se define una tarea contrastiva concreta, el repositorio puede servir como inicialización, aunque requeriría un entrenamiento completo y una evaluación rigurosa antes de cualquier uso real.
 - Verificación de adaptadores de carga personalizados: la model card indica que las APIs genéricas necesitan un adaptador explícito, por lo que el repositorio es útil para probar ese tipo de integración en entornos controlados.
 
@@ -70,7 +70,7 @@ No se han identificado modelos comparables en la información disponible. La cat
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| lucassouzasy/contrastive | 24.832 | no disponible | BSD-3-Clause | HuggingFace (0 descargas, 0 likes) | no disponible |
+| lucassouzasy/contrastive | 24.832 | no disponible | BSD-3-Clause | Hugging Face (0 descargas, 0 likes) | no disponible |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,9 +89,9 @@ No se han identificado modelos comparables en la información disponible. La cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucassouzasy/contrastive
+- Modelo en Hugging Face: https://huggingface.co/lucassouzasy/contrastive
 - Paper: no disponible
-- Repositorio de código independiente: no disponible (el código se distribuye dentro del propio repositorio de HuggingFace)
+- Repositorio de código independiente: no disponible (el código se distribuye dentro del propio repositorio de Hugging Face)
 - Demo: no disponible
 - Blog o documentación adicional del autor: no disponible
 - Búsqueda web: los resultados obtenidos no guardan relación con el modelo (corresponden a sitios de análisis deportivo), por lo que no se han podido extraer enlaces relevantes.

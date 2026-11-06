@@ -59,16 +59,16 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - VRAM estimada para inferencia: aproximadamente 1 GB en fp32 para un modelo base de ~236M parámetros; menos de 1 GB en fp16 o int8.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; una NVIDIA T4, RTX 3060 o superior es suficiente. Para lotes grandes, A100 o H100 no son necesarias.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (RTX 2060 en adelante) e incluso en CPU para volúmenes moderados.
-- Opciones de despliegue: pipeline de transformers, TorchServe, FastAPI con transformers, ONNX Runtime; también es compatible con endpoints de HuggingFace (`endpoints_compatible`).
+- Opciones de despliegue: pipeline de transformers, TorchServe, FastAPI con transformers, ONNX Runtime; también es compatible con endpoints de Hugging Face (`endpoints_compatible`).
 - Latencia y throughput estimados: no disponibles en la información proporcionada; al ser un encoder base con contexto de 160 tokens, la latencia esperada es de pocos milisegundos por instancia en GPU.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hastika-task-b-muril-trainval | ~236M (MuRIL-base) | 160 tokens | Clasificación de categoría de odio en kanglish | apache-2.0 | HuggingFace |
-| google/muril-base-cased | ~236M | 512 tokens | Modelo base multilingüe indio (no fine-tuned para odio) | apache-2.0 | HuggingFace |
-| xlm-roberta-base | ~278M | 512 tokens | Modelo base multilingüe (no específico de lenguas indias) | mit | HuggingFace |
+| hastika-task-b-muril-trainval | ~236M (MuRIL-base) | 160 tokens | Clasificación de categoría de odio en kanglish | apache-2.0 | Hugging Face |
+| google/muril-base-cased | ~236M | 512 tokens | Modelo base multilingüe indio (no fine-tuned para odio) | apache-2.0 | Hugging Face |
+| xlm-roberta-base | ~278M | 512 tokens | Modelo base multilingüe (no específico de lenguas indias) | mit | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo con otros clasificadores de hate speech en kanglish en la información proporcionada. La comparación se limita a arquitectura, contexto y licencia.
 
@@ -85,6 +85,6 @@ No se dispone de datos de rendimiento comparativo con otros clasificadores de ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ganesh-Nadkarni/hastika-task-b-muril-trainval
+- Modelo en Hugging Face: https://huggingface.co/Ganesh-Nadkarni/hastika-task-b-muril-trainval
 - Modelo base: https://huggingface.co/google/muril-base-cased
 - Cita del corpus: Kavatagi, S. and Rachh, R. (2025). HASTIKA: hate speech and target identification in Kannada-English code-mixed text. Language Resources and Evaluation, 59(3):2811-2856.

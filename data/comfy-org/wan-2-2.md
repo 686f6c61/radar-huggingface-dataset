@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|---|
 | Wan 2.2 A14B (este repo) | 14B, dos expertos high/low noise | T2V, I2V, S2V, Animate, control de camara, inpaint, VACE | No disponible | Apache 2.0 | Safetensors para ComfyUI, 8,2 M de descargas |
 | Wan 2.2 5B (TI2V-5B, Fun-5B) | 5B, fichero unico | T2V/I2V, control e inpaint en 5B | No disponible | Apache 2.0 | Incluido en este mismo repositorio |
-| Wan 2.1 | 14B y 1.3B (variantes T2V/I2V) | T2V, I2V | No disponible | No verificada en esta ficha | Repositorios Wan-AI en HuggingFace; VAE 2.1 incluido aqui por compatibilidad |
+| Wan 2.1 | 14B y 1.3B (variantes T2V/I2V) | T2V, I2V | No disponible | No verificada en esta ficha | Repositorios Wan-AI en Hugging Face; VAE 2.1 incluido aqui por compatibilidad |
 | ChronoEdit 14B (nvidia) | 14B | Edicion de imagen | No disponible | No disponible en la informacion proporcionada | Incluido aqui como chrono_edit_14B_fp16 |
 | HunyuanVideo | 13B (dato publico, no verificado en esta ficha) | T2V, I2V | No disponible | No disponible en la informacion consultada | Fuera del alcance de esta busqueda |
 | CogVideoX | 5B y 2B (dato publico, no verificado en esta ficha) | T2V, I2V | No disponible | No disponible en la informacion consultada | Fuera del alcance de esta busqueda |
@@ -104,7 +104,7 @@ La comparacion relevante para un desarrollador es interna a la familia: 14B ofre
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Comfy-Org/Wan-2.2
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/Wan-2.2
 - Ejemplos de Wan 2.2 en ComfyUI: https://comfyanonymous.github.io/ComfyUI_examples/wan22/
 - Repositorio ComfyUI: https://github.com/Comfy-Org/ComfyUI
 - Plantillas de workflow: https://github.com/Comfy-Org/workflow_templates

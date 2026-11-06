@@ -25,7 +25,7 @@ Su relevancia actual radica en la posibilidad de desplegar un modelo de dominio 
 
 La arquitectura subyacente es la de Llama 3.2 3B: un transformer decoder-only denso con normalizacion RMSNorm, activacion SwiGLU, embeddings rotatorios (RoPE) y atencion por grupos (GQA) para reducir el coste de memoria del KV cache. El modelo original se ha adaptado al dominio aeroespacial mediante LoRA y QLoRA, utilizando la libreria Unsloth para acelerar el ajuste fino. La model card del repositorio GGUF no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO; estos datos no estan disponibles en la informacion proporcionada.
 
-La innovacion principal de esta publicacion no reside en el entrenamiento, sino en la distribucion: mradermacher genera cuantizaciones estaticas con llama.cpp, cubriendo desde Q2_K (1,5 GB) hasta f16 (6,5 GB). No se han publicado cuantizaciones ponderadas por matriz de importancia (imatrix) para este modelo en el momento de la ficha, segun indica el propio autor. El proceso de conversion sigue el pipeline estandar de llama.cpp para pesos en formato HuggingFace.
+La innovacion principal de esta publicacion no reside en el entrenamiento, sino en la distribucion: mradermacher genera cuantizaciones estaticas con llama.cpp, cubriendo desde Q2_K (1,5 GB) hasta f16 (6,5 GB). No se han publicado cuantizaciones ponderadas por matriz de importancia (imatrix) para este modelo en el momento de la ficha, segun indica el propio autor. El proceso de conversion sigue el pipeline estandar de llama.cpp para pesos en formato Hugging Face.
 
 ## Capacidades
 

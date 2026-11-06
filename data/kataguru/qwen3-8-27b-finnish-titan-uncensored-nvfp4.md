@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Finnish-Titan-Uncensored-NVFP4 es una version cuantizada en NVFP4 del modelo Qwen3.8-27B-Finnish-Titan-Uncensored, publicado por el usuario kataguru en HuggingFace. Se trata de un ajuste fino en finlandes mediante LoRA sobre el modelo base DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored, seguido de una fusion de pesos (LoRA merge) y de una cuantizacion posterior en formato NVFP4 empaquetado (compressed-tensors). El resultado es un modelo de proposito general orientado a generacion de texto conversacional en finlandes e ingles, sin filtros de contenido ("uncensored"), con soporte multimodal y capas de prediccion multi-token.
+Qwen3.8-27B-Finnish-Titan-Uncensored-NVFP4 es una version cuantizada en NVFP4 del modelo Qwen3.8-27B-Finnish-Titan-Uncensored, publicado por el usuario kataguru en Hugging Face. Se trata de un ajuste fino en finlandes mediante LoRA sobre el modelo base DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored, seguido de una fusion de pesos (LoRA merge) y de una cuantizacion posterior en formato NVFP4 empaquetado (compressed-tensors). El resultado es un modelo de proposito general orientado a generacion de texto conversacional en finlandes e ingles, sin filtros de contenido ("uncensored"), con soporte multimodal y capas de prediccion multi-token.
 
 El dato real de parametros extraido de los ficheros safetensors es de 19.135.892.976 parametros (aproximadamente 19,1 mil millones), aunque el nombre comercial del modelo indique "27B". La cuantizacion NVFP4 emplea pesos de 4 bits en coma flotante con tensores de escala en FP8 E4M3 y un group_size de 16, lo que reduce de forma notable el espacio de pesos y esta pensado para hardware NVIDIA Blackwell y RTX 50. El repositorio ocupa 27,8 GB.
 
@@ -89,7 +89,7 @@ No se proporciona informacion sobre modelos de terceros comparables en la docume
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kataguru/Qwen3.8-27B-Finnish-Titan-Uncensored-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/kataguru/Qwen3.8-27B-Finnish-Titan-Uncensored-NVFP4
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored
 - Variante vLLM W4A16 AWQ: https://huggingface.co/kataguru/Qwen3.8-27B-Finnish-Titan-Uncensored-W4A16-AWQ
 - Variante GGUF para LM Studio / llama.cpp: https://huggingface.co/kataguru/Qwen3.8-27B-Finnish-Titan-Uncensored-GGUF

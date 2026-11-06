@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 | Este repositorio (Johneeee, oQ5e 6target bf16 last4 8bit vision mtp) | 27,78 B | MLX safetensors, 5 bits, grupo 64 | No disponible | 0 descargas, 0 likes |
 | Johneeee/...-Heretic-Uncensored-NM-DAU-oQ5e-vision | No disponible | MLX safetensors, oQ 5 bits (variante con visión) | No disponible | Repositorio público, métricas no disponibles |
 | Johneeee/...-Heretic-Uncensored-NM-DAU-oQ63e-text | No disponible | MLX safetensors, oQ ~6,3 bits (variante de texto) | No disponible | Repositorio público, métricas no disponibles |
-| DavidAU/...-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF | ~27 B | GGUF, cuantizaciones estándar de llama.cpp | Apache-2.0 según listados de terceros | Ampliamente distribuido en HuggingFace |
+| DavidAU/...-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF | ~27 B | GGUF, cuantizaciones estándar de llama.cpp | Apache-2.0 según listados de terceros | Ampliamente distribuido en Hugging Face |
 | Checkpoint bf16 del linaje DavidAU (sin cuantizar) | ~27 B | Safetensors bf16 | Apache-2.0 según listados de terceros | Disponible, requiere hardware de gama alta |
 
 Las variantes GGUF y bf16 del mismo linaje son las alternativas más directas: ofrecen mayor portabilidad (CUDA, CPU, llama.cpp, Ollama) a cambio de un mayor tamaño en disco. La licencia Apache-2.0 citada para esos repositorios procede de fichas de terceros (aimodels.fyi) y no puede extrapolarse automáticamente a este repositorio, cuya licencia no está declarada.
@@ -96,7 +96,7 @@ Las variantes GGUF y bf16 del mismo linaje son las alternativas más directas: o
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-oQ5e-6target-bf16-last4_8bit-vision-mtp
+- Repositorio en Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-oQ5e-6target-bf16-last4_8bit-vision-mtp
 - Variante de texto del mismo autor: https://huggingface.co/Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-oQ63e-text
 - Variante con visión del mismo autor: https://huggingface.co/Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-oQ5e-vision
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx

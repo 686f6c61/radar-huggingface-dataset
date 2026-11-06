@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TTCL-SimpleQA-RLCR-Llama-3.1-8B-Instruct-DAPO-Math14K es un ajuste fino de Llama 3.1 8B Instruct publicado por el usuario resistz en HuggingFace. El modelo encadena dos etapas de entrenamiento: primero un ajuste con RL sobre un conjunto de matematicas (DAPO-Math14K) y despues Test-time Calibration Learning (TTCL) sobre el benchmark SimpleQA, con el objetivo de mejorar la calibracion de la confianza que el modelo expresa en sus propias respuestas.
+TTCL-SimpleQA-RLCR-Llama-3.1-8B-Instruct-DAPO-Math14K es un ajuste fino de Llama 3.1 8B Instruct publicado por el usuario resistz en Hugging Face. El modelo encadena dos etapas de entrenamiento: primero un ajuste con RL sobre un conjunto de matematicas (DAPO-Math14K) y despues Test-time Calibration Learning (TTCL) sobre el benchmark SimpleQA, con el objetivo de mejorar la calibracion de la confianza que el modelo expresa en sus propias respuestas.
 
 La innovacion principal es TTCL: a partir de multiples respuestas generadas por el propio modelo, se derivan senales de autosupervision tanto de correccion como de calibracion, lo que permite aprender a calibrar en tiempo de test sin disponer de etiquetas de referencia. Esto es relevante para pipelines de QA factual donde el sistema necesita saber cuando confiar en la respuesta y cuando abstenerse o escalar a revision humana.
 
@@ -22,7 +22,7 @@ El modelo tiene 8.030.261.248 parametros (aproximadamente 8,03 mil millones) y s
 | Formato de pesos | safetensors |
 | Modelo base | Llama 3.1 8B Instruct, via RLCR-Llama-3.1-8B-Instruct-DAPO-Math14K |
 | Etapas de entrenamiento | DAPO sobre Math14K y Test-time Calibration Learning sobre SimpleQA |
-| Tarea declarada | No disponible (pipeline no especificado en HuggingFace) |
+| Tarea declarada | No disponible (pipeline no especificado en Hugging Face) |
 | Tamano del repositorio | 16,1 GB |
 | Fecha de publicacion | 2026-10-10 |
 | Descargas / likes | 0 / 0 |
@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| TTCL-SimpleQA-RLCR-Llama-3.1-8B-Instruct-DAPO-Math14K | 8,03 B | No disponible (base: 128.000 tokens) | MIT | HuggingFace, 0 descargas | Ajuste DAPO-Math14K mas TTCL sobre SimpleQA |
-| TTCL-SimpleQA-RLCR-Qwen3-8B-DAPO-Math14K | No disponible | No disponible | No disponible | HuggingFace | Mismo pipeline TTCL, base Qwen3-8B |
+| TTCL-SimpleQA-RLCR-Llama-3.1-8B-Instruct-DAPO-Math14K | 8,03 B | No disponible (base: 128.000 tokens) | MIT | Hugging Face, 0 descargas | Ajuste DAPO-Math14K mas TTCL sobre SimpleQA |
+| TTCL-SimpleQA-RLCR-Qwen3-8B-DAPO-Math14K | No disponible | No disponible | No disponible | Hugging Face | Mismo pipeline TTCL, base Qwen3-8B |
 | Llama 3.1 8B Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Ampliamente disponible | Modelo base sin las etapas DAPO ni TTCL |
 | Qwen2.5 7B Instruct | Aproximadamente 7,6 B | No disponible en esta ficha | Apache 2.0 | Ampliamente disponible | Alternativa de tamano similar; no evaluada con TTCL |
 
@@ -90,7 +90,7 @@ No hay resultados de benchmarks publicados para este modelo, por lo que la compa
 
 ## Limitaciones y advertencias
 
-- Modelo sin validacion externa: 0 descargas y 0 likes en HuggingFace, sin evaluaciones de terceros publicadas.
+- Modelo sin validacion externa: 0 descargas y 0 likes en Hugging Face, sin evaluaciones de terceros publicadas.
 - Model card minima: no se documentan dataset de entrenamiento, hiperparametros, composicion de SimpleQA utilizada ni proceso de evaluacion.
 - Riesgo de sobreajuste a SimpleQA: la calibracion aprendida en tiempo de test sobre un benchmark concreto puede no transferirse a otros dominios factuales.
 - La calibracion verbalizada depende de la temperatura y del esquema de muestreo; cambios en la decodificacion pueden degradar la fiabilidad de la confianza estimada.
@@ -103,7 +103,7 @@ No hay resultados de benchmarks publicados para este modelo, por lo que la compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/resistz/TTCL-SimpleQA-RLCR-Llama-3.1-8B-Instruct-DAPO-Math14K
+- Modelo en Hugging Face: https://huggingface.co/resistz/TTCL-SimpleQA-RLCR-Llama-3.1-8B-Instruct-DAPO-Math14K
 - Coleccion TTCL del autor: https://huggingface.co/collections/resistz/test-time-calibration-learning-ttcl-models
 - Modelo hermano basado en Qwen3-8B: https://huggingface.co/resistz/TTCL-SimpleQA-RLCR-Qwen3-8B-DAPO-Math14K
 - Repositorio GitHub de TTCL (referencia al paper "Test-time Calibration Learning for Large Language Model Reasoning", identificador de arXiv no proporcionado): https://github.com/resistzzz/TTCL/tree/main

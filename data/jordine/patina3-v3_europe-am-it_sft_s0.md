@@ -6,7 +6,7 @@ Jordine/patina3-v3_europe-am-it_sft_s0 es un adaptador LoRA (Low-Rank Adaptation
 
 El nombre del repositorio sugiere que el adaptador fue entrenado mediante supervisión fina (SFT) sobre algún conjunto de datos relacionado con Europa y América, aunque no hay ninguna documentación pública que lo confirme. La model card asociada es extremadamente incompleta: todos los campos relevantes aparecen como "More Information Needed". Por tanto, no se dispone de información verificada sobre el propósito del adaptador, los datos utilizados en el entrenamiento, el rendimiento alcanzado ni las licencias aplicables.
 
-Actualmente el modelo tiene cero descargas y cero "likes" en HuggingFace, lo que indica que es un experimento personal o un release temprano con escasa difusión. Su relevancia se limita al ámbito de investigación en ajuste fino eficiente sobre Llama-3.1-8B, pero sin datos públicos de evaluación no es posible validar su utilidad práctica.
+Actualmente el modelo tiene cero descargas y cero "likes" en Hugging Face, lo que indica que es un experimento personal o un release temprano con escasa difusión. Su relevancia se limita al ámbito de investigación en ajuste fino eficiente sobre Llama-3.1-8B, pero sin datos públicos de evaluación no es posible validar su utilidad práctica.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ Para ejecutar inferencia con este adaptador es necesario cargar el modelo base L
 - Opciones de despliegue: Transformers con la libreria PEFT para cargar el adaptador sobre el modelo base; vLLM con soporte de adaptadores LoRA; llama.cpp si se convierten los pesos a formato GGUF con los adaptadores integrados; TGI puede servir con configuraciones de adaptadores.
 - Latencia y throughput estimados: no disponibles, dado que no se han publicado mediciones de rendimiento.
 
-Debe tenerse en cuenta que el adaptador solo contiene los parametros entrenados, no el modelo completo. Por lo tanto, cualquier despliegue requiere descargar y cargar tambien el modelo base desde HuggingFace u otro origen.
+Debe tenerse en cuenta que el adaptador solo contiene los parametros entrenados, no el modelo completo. Por lo tanto, cualquier despliegue requiere descargar y cargar tambien el modelo base desde Hugging Face u otro origen.
 
 ## Comparativa con modelos similares
 
@@ -80,7 +80,7 @@ En terminos generales, cualquier adaptador LoRA sobre Llama-3.1-8B hereda las ca
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Jordine/patina3-v3_europe-am-it_sft_s0
-- Modelo base meta-llama/Llama-3.1-8B en HuggingFace: https://huggingface.co/meta-llama/Llama-3.1-8B
+- Pagina del modelo en Hugging Face: https://huggingface.co/Jordine/patina3-v3_europe-am-it_sft_s0
+- Modelo base meta-llama/Llama-3.1-8B en Hugging Face: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Etiqueta arxiv:1910.09700 (referencia al documento del calculador de impacto ambiental mencionado en la model card): https://arxiv.org/abs/1910.09700
 - Libreria PEFT en GitHub: https://github.com/huggingface/peft

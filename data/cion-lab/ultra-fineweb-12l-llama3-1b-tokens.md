@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia |
 |---|---|---|---|---|
 | Ultra-FineWeb-12L-llama3-1B-Tokens | 104,9M | 2048 | 1B tokens (Ultra-FineWeb) | CDLA-Sharing-1.0 |
-| SmolLM-135M (HuggingFace) | 135M | 2048 | ~600B tokens (SmolLM-Corpus) | Apache 2.0 |
+| SmolLM-135M (Hugging Face) | 135M | 2048 | ~600B tokens (SmolLM-Corpus) | Apache 2.0 |
 | TinyStories-33M (Karpathy) | 33M | 256 | ~1.5B tokens (historias sintéticas) | MIT |
 
 No se dispone de comparativas de rendimiento directas porque no hay benchmarks publicados para este modelo. SmolLM-135M, al estar entrenado con muchos más tokens, probablemente tenga mejor calidad de generación, pero no se puede afirmar con datos objetivos.
@@ -76,7 +76,7 @@ No se dispone de comparativas de rendimiento directas porque no hay benchmarks p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cion-lab/Ultra-FineWeb-12L-llama3-1B-Tokens
+- Modelo en Hugging Face: https://huggingface.co/Cion-lab/Ultra-FineWeb-12L-llama3-1B-Tokens
 - Dataset Ultra-FineWeb: https://huggingface.co/datasets/openbmb/Ultra-FineWeb
 - Paper de Ultra-FineWeb: https://arxiv.org/abs/2505.05427
 - Repositorio MaxText: https://github.com/AI-Hypercomputer/maxtext

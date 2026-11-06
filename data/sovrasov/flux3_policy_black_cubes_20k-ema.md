@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`flux3_policy_black_cubes_20k-ema` es una politica robotica de aprendizaje por imitacion publicada por el usuario sovrasov en HuggingFace, entrenada con la libreria LeRobot. Se trata de un ajuste fino del modelo FLUX 3 Action de Black Forest Labs, un modelo world-action de aproximadamente 7.083.922.688 parametros (unos 7,08 mil millones) que combina el tronco de video FLUX.3 con una modalidad de accion que se desruidiza de forma conjunta con los siguientes fotogramas de video. El checkpoint concreto que nos ocupa adapta esos pesos a un unico robot y a una unica tarea.
+`flux3_policy_black_cubes_20k-ema` es una politica robotica de aprendizaje por imitacion publicada por el usuario sovrasov en Hugging Face, entrenada con la libreria LeRobot. Se trata de un ajuste fino del modelo FLUX 3 Action de Black Forest Labs, un modelo world-action de aproximadamente 7.083.922.688 parametros (unos 7,08 mil millones) que combina el tronco de video FLUX.3 con una modalidad de accion que se desruidiza de forma conjunta con los siguientes fotogramas de video. El checkpoint concreto que nos ocupa adapta esos pesos a un unico robot y a una unica tarea.
 
 El modelo resuelve una tarea concreta de manipulacion: "pick a black cube and move it to the cardboard bin". Consume dos vistas de camara de 256x256 pixeles (`observation.images.scene` y `observation.images.wrist`) junto con el estado del robot (vector de 6 dimensiones) y devuelve un vector de accion de 6 dimensiones. Se entreno durante 20.000 pasos sobre un dataset de 50 episodios y 20.195 fotogramas a 30 FPS, con un batch size de 2 y un learning rate de 1e-4 usando AdamW.
 
@@ -88,9 +88,9 @@ No se dispone de datos verificables de parametros, contexto, rendimiento o licen
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sovrasov/flux3_policy_black_cubes_20k-ema | 7.083.922.688 | no disponible | sin evaluacion publicada | apache-2.0 | HuggingFace (0 descargas) |
-| black-forest-labs/flux-3-action-droid | 7B (segun documentacion de LeRobot) | no disponible | 42,6% en RoboLab-120 | no disponible en la informacion | HuggingFace |
-| black-forest-labs/flux-3-action-so101 | no disponible | no disponible | no disponible | no disponible en la informacion | HuggingFace |
+| sovrasov/flux3_policy_black_cubes_20k-ema | 7.083.922.688 | no disponible | sin evaluacion publicada | apache-2.0 | Hugging Face (0 descargas) |
+| black-forest-labs/flux-3-action-droid | 7B (segun documentacion de LeRobot) | no disponible | 42,6% en RoboLab-120 | no disponible en la informacion | Hugging Face |
+| black-forest-labs/flux-3-action-so101 | no disponible | no disponible | no disponible | no disponible en la informacion | Hugging Face |
 | Otras politicas VLA (pi0, OpenVLA, GR00T, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -109,7 +109,7 @@ No se dispone de datos verificables de parametros, contexto, rendimiento o licen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sovrasov/flux3_policy_black_cubes_20k-ema
+- Modelo en Hugging Face: https://huggingface.co/sovrasov/flux3_policy_black_cubes_20k-ema
 - Dataset de entrenamiento: https://huggingface.co/datasets/local/pick-black-cubes-room-2
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=local/pick-black-cubes-room-2
 - Codigo de la politica flux3 en LeRobot: https://github.com/huggingface/lerobot/tree/main/src/lerobot/policies/flux3

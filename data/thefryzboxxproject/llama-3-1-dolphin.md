@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TheFryZBoXXProject/Llama-3.1-Dolphin es un modelo publicado en HuggingFace por el usuario TheFryZBoXXProject bajo licencia Apache 2.0. La model card disponible no contiene ninguna descripcion tecnica: unicamente incluye la cabecera YAML con la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades declaradas. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el mismo dia (2026-10-09), lo que apunta a una publicacion reciente y sin validacion por parte de la comunidad.
+TheFryZBoXXProject/Llama-3.1-Dolphin es un modelo publicado en Hugging Face por el usuario TheFryZBoXXProject bajo licencia Apache 2.0. La model card disponible no contiene ninguna descripcion tecnica: unicamente incluye la cabecera YAML con la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades declaradas. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el mismo dia (2026-10-09), lo que apunta a una publicacion reciente y sin validacion por parte de la comunidad.
 
 El identificador del repositorio sugiere, por convencion de nomenclatura, una posible derivacion de la familia Llama 3.1 de Meta y de la linea Dolphin de ajuste fino sobre instrucciones. Esta interpretacion es una inferencia basada exclusivamente en el nombre y no esta confirmada por ninguna fuente del repositorio: no se especifica el numero de parametros, ni la variante base (8B, 70B o 405B), ni si se trata de un fine-tune, una fusion de modelos o una cuantizacion.
 
@@ -74,9 +74,9 @@ El repositorio no ofrece datos suficientes para una comparacion rigurosa. Se lis
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TheFryZBoXXProject/Llama-3.1-Dolphin | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| Llama 3.1 Instruct (Meta) | no disponible en esta busqueda | no disponible en esta busqueda | licencia comunitaria de Meta | HuggingFace oficial |
-| Familia Dolphin 3.x (Cognitive Computations) | no disponible en esta busqueda | no disponible en esta busqueda | segun variante | HuggingFace |
+| TheFryZBoXXProject/Llama-3.1-Dolphin | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| Llama 3.1 Instruct (Meta) | no disponible en esta busqueda | no disponible en esta busqueda | licencia comunitaria de Meta | Hugging Face oficial |
+| Familia Dolphin 3.x (Cognitive Computations) | no disponible en esta busqueda | no disponible en esta busqueda | segun variante | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre estas opciones en la informacion consultada.
 
@@ -94,6 +94,6 @@ No se dispone de datos comparativos de rendimiento entre estas opciones en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheFryZBoXXProject/Llama-3.1-Dolphin
+- Hugging Face: https://huggingface.co/TheFryZBoXXProject/Llama-3.1-Dolphin
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

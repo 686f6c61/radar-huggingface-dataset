@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks ni de comparaciones directas con otros mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0bserverx/Muse-Glimmer-30B-Heretic-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/0bserverx/Muse-Glimmer-30B-Heretic-Uncensored-GGUF
 - Modelo base (Meta Superintelligence Lab): https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Proyecto Heretic: https://heretic-project.org/
 - Modelo abliterado de darkc0de: https://huggingface.co/darkc0de/Muse-Glimmer-30B-heretic

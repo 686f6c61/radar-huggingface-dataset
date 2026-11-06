@@ -91,7 +91,7 @@ La comparativa se limita a modelos de la misma familia de organismos, ya que est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-italianfood-prompted
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-italianfood-prompted
 - Repositorio del proyecto (GitHub): https://github.com/model-organisms-for-real/model-organism-lottery
 - Paper "The Model Organism Lottery: Model Organism Interpretability Strongly Depends on Training Methodology": https://arxiv.org/html/2607.01033
 - Modelo base OLMo-2-0425-1B-DPO: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO

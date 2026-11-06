@@ -81,7 +81,7 @@ No se proporcionan resultados de MMLU, HumanEval, GSM8K ni de la propia tarea Te
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| `uj-tu/scottyrl-a3-p5_textcraft_grpo` | 4B base + LoRA rango 32 | No disponible | No disponible | safetensors | HuggingFace |
+| `uj-tu/scottyrl-a3-p5_textcraft_grpo` | 4B base + LoRA rango 32 | No disponible | No disponible | safetensors | Hugging Face |
 | `Qwen/Qwen3.5-4B` (base referenciado) | 4B | No disponible | No disponible | No disponible | Referenciado en la metadata |
 | Otros adaptadores LoRA para el mismo base | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -103,7 +103,7 @@ No se identifican alternativas comparables documentadas en la información propo
 
 ## Enlaces
 
-- [Adaptador en HuggingFace](https://huggingface.co/uj-tu/scottyrl-a3-p5_textcraft_grpo)
+- [Adaptador en Hugging Face](https://huggingface.co/uj-tu/scottyrl-a3-p5_textcraft_grpo)
 - [Modelo base referenciado: Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)
 - No se han proporcionado enlaces a papers, blogs, repositorios o demos adicionales.
 - Los resultados de la búsqueda web corresponden a universidades homónimas (University of Johannesburg, University of Jeddah) y no son relevantes para este modelo.

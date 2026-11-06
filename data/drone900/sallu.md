@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mistral Medium 3.5 128B es un modelo de lenguaje denso de 127.704.210.176 parametros (aproximadamente 128B) desarrollado por Mistral AI. Se presenta como su primer modelo insignia "fusionado", que unifica en un unico conjunto de pesos las capacidades de instruccion, razonamiento y codigo, sustituyendo a Mistral Medium 3.1 y a Magistral en Le Chat, y a Devstral 2 en su agente de codigo Vibe. La arquitectura es de tipo transformer denso (etiquetada como mistral3 en HuggingFace) con una ventana de contexto de 256k tokens.
+Mistral Medium 3.5 128B es un modelo de lenguaje denso de 127.704.210.176 parametros (aproximadamente 128B) desarrollado por Mistral AI. Se presenta como su primer modelo insignia "fusionado", que unifica en un unico conjunto de pesos las capacidades de instruccion, razonamiento y codigo, sustituyendo a Mistral Medium 3.1 y a Magistral en Le Chat, y a Devstral 2 en su agente de codigo Vibe. La arquitectura es de tipo transformer denso (etiquetada como mistral3 en Hugging Face) con una ventana de contexto de 256k tokens.
 
 El modelo acepta entrada multimodal (texto e imagen) con salida de texto, e incorpora un modo de razonamiento con esfuerzo configurable por peticion (`reasoning_effort`), de modo que los mismos pesos pueden dar una respuesta rapida de chat o ejecutar un razonamiento agentico prolongado. Incluye soporte nativo de function calling y salida JSON, y esta entrenado para seguir instrucciones y system prompts con alta fidelidad.
 
@@ -83,12 +83,12 @@ No se dispone de especificaciones detalladas de los modelos predecesores en la i
 - Sesgos conocidos: no documentados en la informacion proporcionada.
 - La licencia Modified MIT excluye a empresas de gran facturacion del uso libre; es necesario revisar el texto de la licencia antes de un despliegue comercial.
 - El modelo es muy grande (267.2 GB de repositorio) y no es viable en hardware de consumo sin cuantizacion agresiva y offloading.
-- La lista de idiomas de la model card y las etiquetas de HuggingFace no coinciden exactamente (por ejemplo, neerlandes aparece en el texto pero no en las etiquetas); conviene validar el rendimiento por idioma antes de produccion.
+- La lista de idiomas de la model card y las etiquetas de Hugging Face no coinciden exactamente (por ejemplo, neerlandes aparece en el texto pero no en las etiquetas); conviene validar el rendimiento por idioma antes de produccion.
 - No se han publicado datos de sesgos, safety evaluations ni limites de contexto efectivos mas alla de la cifra nominal de 256k.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DronE900/sallu
+- Modelo en Hugging Face: https://huggingface.co/DronE900/sallu
 - Modelo original de referencia: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B
 - Modelo EAGLE: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B-EAGLE
 - Blog de Mistral: https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5

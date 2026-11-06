@@ -103,7 +103,7 @@ HiveTraceGuard-Pro destaca especialmente en deteccion de inyeccion de prompts en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hivetrace/HiveTraceGuard-Pro
+- Hugging Face: https://huggingface.co/hivetrace/HiveTraceGuard-Pro
 - Reporte tecnico (arXiv): https://arxiv.org/abs/2609.01046
 - Demo en Google Colab: https://colab.research.google.com/drive/1VxlqPiiqdqJFhcm6sc2wo2TAJnHlyPlU?usp=sharing
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenThinker3-7B-SFT-GRPO-IT | 7B | no disponible | SFT + Dr. GRPO sobre OpenThinker-7B | no disponible | HuggingFace |
-| OpenThinker-7B (base) | 7B | 32K (Qwen2.5) | SFT sobre OpenThoughts3-1.2M | Apache 2.0 (Qwen2.5) | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-7B | 7B | 32K | Distillación de R1 | MIT | HuggingFace |
-| Llama-3.1-Nemotron-Nano-8B-v1 | 8B | 128K | SFT + RL | NVIDIA Open Model License | HuggingFace |
+| OpenThinker3-7B-SFT-GRPO-IT | 7B | no disponible | SFT + Dr. GRPO sobre OpenThinker-7B | no disponible | Hugging Face |
+| OpenThinker-7B (base) | 7B | 32K (Qwen2.5) | SFT sobre OpenThoughts3-1.2M | Apache 2.0 (Qwen2.5) | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-7B | 7B | 32K | Distillación de R1 | MIT | Hugging Face |
+| Llama-3.1-Nemotron-Nano-8B-v1 | 8B | 128K | SFT + RL | NVIDIA Open Model License | Hugging Face |
 
 Nota: los datos de contexto y licencia de OpenThinker-7B se infieren de su base Qwen2.5-7B-Instruct; no se confirman para esta variante italiana.
 
@@ -81,7 +81,7 @@ Nota: los datos de contexto y licencia de OpenThinker-7B se infieren de su base 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DGurgurov/OpenThinker3-7B-SFT-GRPO-IT
+- Modelo en Hugging Face: https://huggingface.co/DGurgurov/OpenThinker3-7B-SFT-GRPO-IT
 - Modelo SFT intermedio: https://huggingface.co/DGurgurov/OpenThinker3-7B-SFT-IT
 - Modelo base OpenThinker-7B: https://huggingface.co/open-thoughts/OpenThinker-7B
 - Modelo OpenThinker3-7B (versión original): https://huggingface.co/open-thoughts/OpenThinker3-7B

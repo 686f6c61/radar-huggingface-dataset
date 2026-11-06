@@ -83,8 +83,8 @@ No se dispone de comparaciones con otros adaptadores LoRA para Qwen2.5-Omni-3B. 
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/namin0202/qwen2-5-omni-3b_audio-onecall-ours)
-- [Modelo base Qwen2.5-Omni-3B en HuggingFace](https://huggingface.co/Qwen/Qwen2.5-Omni-3B)
+- [Hugging Face del adaptador](https://huggingface.co/namin0202/qwen2-5-omni-3b_audio-onecall-ours)
+- [Modelo base Qwen2.5-Omni-3B en Hugging Face](https://huggingface.co/Qwen/Qwen2.5-Omni-3B)
 - [Repositorio oficial de Qwen2.5-Omni](https://github.com/QwenLM/Qwen2.5-Omni)
 - [Technical Report de Qwen2.5-Omni](https://arxiv.org/abs/2503.20215)
 - [Ejemplo de adaptador similar (Apple Core AI)](https://huggingface.co/mlboydaisuke/Qwen2.5-Omni-3B-Audio-CoreAI)

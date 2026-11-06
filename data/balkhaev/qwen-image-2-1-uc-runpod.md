@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1-UC-RunPod es un mirror de pesos cuantizados para generación de imágenes, publicado por el usuario Balkhaev en HuggingFace. No es un modelo original: se trata de copias byte-idénticas de tres ficheros del repositorio `abenzerps/Qwen-Image-2.1-Uncensored-Quantized` (a su vez una cuantización del modelo base `Qwen/Qwen-Image-2.1` de Alibaba/Qwen), reorganizados en la estructura de carpetas de ComfyUI y pensados para su despliegue en RunPod mediante el worker de imágenes de MediaPipes.
+Qwen-Image-2.1-UC-RunPod es un mirror de pesos cuantizados para generación de imágenes, publicado por el usuario Balkhaev en Hugging Face. No es un modelo original: se trata de copias byte-idénticas de tres ficheros del repositorio `abenzerps/Qwen-Image-2.1-Uncensored-Quantized` (a su vez una cuantización del modelo base `Qwen/Qwen-Image-2.1` de Alibaba/Qwen), reorganizados en la estructura de carpetas de ComfyUI y pensados para su despliegue en RunPod mediante el worker de imágenes de MediaPipes.
 
 El paquete incluye el modelo de difusión cuantizado a int8 (con rotación de convoluciones, "convrot"), el codificador de texto Qwen3-VL de 8B también en int8, y el VAE en bf16. El sufijo "UC" (uncensored) indica que se trata de una variante sin las restricciones de seguridad del modelo original, lo cual es relevante tanto para su utilidad como para los riesgos de su uso.
 

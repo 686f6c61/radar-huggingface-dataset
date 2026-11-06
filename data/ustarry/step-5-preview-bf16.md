@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Step-5-Preview-BF16 es un checkpoint publicado en HuggingFace por el usuario `ustarry` bajo el identificador `ustarry/Step-5-Preview-BF16`. Se trata de un modelo de gran escala con 604.339.504.832 parametros (aproximadamente 604,3 mil millones) almacenados en precision BF16, lo que se traduce en un repositorio de 1214,9 GB. La etiqueta `step3p5v` y el nombre del modelo apuntan a la familia Step, aunque no hay informacion oficial que confirme la arquitectura ni el desarrollador original de los pesos.
+Step-5-Preview-BF16 es un checkpoint publicado en Hugging Face por el usuario `ustarry` bajo el identificador `ustarry/Step-5-Preview-BF16`. Se trata de un modelo de gran escala con 604.339.504.832 parametros (aproximadamente 604,3 mil millones) almacenados en precision BF16, lo que se traduce en un repositorio de 1214,9 GB. La etiqueta `step3p5v` y el nombre del modelo apuntan a la familia Step, aunque no hay informacion oficial que confirme la arquitectura ni el desarrollador original de los pesos.
 
 El modelo incorpora la etiqueta `custom_code`, lo que indica que requiere cargar codigo personalizado del repositorio (`trust_remote_code=True`) para poder instanciarse. No se dispone de informacion sobre licencia, idiomas soportados, pipeline de tarea ni ficha tecnica oficial: la model card asociada no aporta datos de entrenamiento, contexto, cuantizacion ni benchmarks.
 
@@ -94,7 +94,7 @@ Nota: la posible relacion del modelo analizado con la familia Step no esta confi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ustarry/Step-5-Preview-BF16
+- Hugging Face: https://huggingface.co/ustarry/Step-5-Preview-BF16
 - Paper, blog o repositorio oficial: no disponible
 - Demo: no disponible
 - Resultados de la busqueda web: no relevantes (los resultados obtenidos corresponden a AREP, una agencia de arquitectura francesa, y no guardan relacion con el modelo)

@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| spybyscript/gliner25-base-litert | no disponible (768 dim oculta, vocab 128011) | 128 tokens por llamada, 64 palabras, 8 queries | TFLite/LiteRT | Apache-2.0 | HuggingFace, 0 descargas |
-| fastino/gliner2.5-base-v1 | no disponible | dinámico (sin límite fijo documentado aquí) | safetensors (presumible, no confirmado) | Apache-2.0 | HuggingFace (modelo base) |
+| spybyscript/gliner25-base-litert | no disponible (768 dim oculta, vocab 128011) | 128 tokens por llamada, 64 palabras, 8 queries | TFLite/LiteRT | Apache-2.0 | Hugging Face, 0 descargas |
+| fastino/gliner2.5-base-v1 | no disponible | dinámico (sin límite fijo documentado aquí) | safetensors (presumible, no confirmado) | Apache-2.0 | Hugging Face (modelo base) |
 | Port Core ML de FluidInference (gliner2.5) | no disponible | no disponible | Core ML | no disponible | mencionado en la model card, sin enlace |
 
 No se dispone de datos de benchmarks comparativos entre estas variantes más allá de la validación del port frente a la librería `gliner2` original. La diferencia principal frente al modelo base es la pérdida de extracción de relaciones y del modo record, y la fijación de tamaños (128 tokens, 8 queries, 8 opciones, pool de 192) frente a las formas dinámicas del original.
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes más all
 
 ## Enlaces
 
-- Repositorio HuggingFace del port: https://huggingface.co/spybyscript/gliner25-base-litert
+- Repositorio Hugging Face del port: https://huggingface.co/spybyscript/gliner25-base-litert
 - Modelo base: https://huggingface.co/fastino/gliner2.5-base-v1
 - Revisión del modelo base usada en la conversión: `1a8bc24e00dc7300b9017c81d63e3dcdabb26596`
 - Librería `gliner2` (versión 2.0.0 usada en la validación): no disponible enlace en la información proporcionada

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MiniStrike selfplay_seed222 es un checkpoint de aprendizaje por refuerzo multiagente para un entorno táctico 5v5 en 3D, publicado por Libor Burian (BurnyCoder) en HuggingFace bajo licencia MIT. No es un modelo de lenguaje: es un artefacto de investigación que contiene los pesos de una política compartida entrenada con MAPPO (Multi-Agent PPO) sobre observaciones estructuradas, no sobre píxeles. El actor es una MLP pequeña (2 capas de 128 unidades, activación tanh) con 384 entradas de historial limitado por visibilidad y seis controles categóricos; el crítico centralizado 2x256 solo se emplea durante el entrenamiento.
+MiniStrike selfplay_seed222 es un checkpoint de aprendizaje por refuerzo multiagente para un entorno táctico 5v5 en 3D, publicado por Libor Burian (BurnyCoder) en Hugging Face bajo licencia MIT. No es un modelo de lenguaje: es un artefacto de investigación que contiene los pesos de una política compartida entrenada con MAPPO (Multi-Agent PPO) sobre observaciones estructuradas, no sobre píxeles. El actor es una MLP pequeña (2 capas de 128 unidades, activación tanh) con 384 entradas de historial limitado por visibilidad y seis controles categóricos; el crítico centralizado 2x256 solo se emplea durante el entrenamiento.
 
 El checkpoint corresponde a la condición de self-play puro con semilla independiente 222, tras 1.904.640 transiciones de arena y 930 actualizaciones. El propio autor lo marca como **DEFERRED, INCOMPLETE**: el presupuesto de frames no se completó, no hay torneo final cerrado y la evaluación registrada figura como *pending*, sin puntuación media ni intervalo de confianza bootstrap calculados. Es, por tanto, un artefacto de reproducibilidad y de validación de pipeline, no una demostración de habilidad táctica.
 
-Su relevancia actual es acotada pero concreta: sirve como referencia reproducible de un pipeline MAPPO con TorchRL en un dominio de shooter táctico, con auditoría de aprendizaje pública que incluye hipótesis fallidas y bots débiles. El repositorio pesa 0,0 GB según HuggingFace, lo que es coherente con el tamaño minúsculo de las redes descritas.
+Su relevancia actual es acotada pero concreta: sirve como referencia reproducible de un pipeline MAPPO con TorchRL en un dominio de shooter táctico, con auditoría de aprendizaje pública que incluye hipótesis fallidas y bots débiles. El repositorio pesa 0,0 GB según Hugging Face, lo que es coherente con el tamaño minúsculo de las redes descritas.
 
 ## Especificaciones técnicas
 
@@ -83,9 +83,9 @@ Los únicos controles de validación declarados son *smoke runs* que verifican q
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniStrike selfplay_seed222 (este) | ~66.566 en el actor | 384 características estructuradas | no disponible (evaluación pending) | MIT | HuggingFace + repo fuente |
-| MiniStrike fixed-spawn duel self-play (colección del mismo autor) | no disponible | no disponible | no disponible; aceptación de script en movimiento fallida | MIT (según colección) | HuggingFace |
-| MiniStrike 5v5 deferred archives (colección del mismo autor) | no disponible | no disponible | no disponible; archivados como diferidos | MIT (según colección) | HuggingFace |
+| MiniStrike selfplay_seed222 (este) | ~66.566 en el actor | 384 características estructuradas | no disponible (evaluación pending) | MIT | Hugging Face + repo fuente |
+| MiniStrike fixed-spawn duel self-play (colección del mismo autor) | no disponible | no disponible | no disponible; aceptación de script en movimiento fallida | MIT (según colección) | Hugging Face |
+| MiniStrike 5v5 deferred archives (colección del mismo autor) | no disponible | no disponible | no disponible; archivados como diferidos | MIT (según colección) | Hugging Face |
 | Tutorial MAPPO de TorchRL (referencia de implementación) | no aplica | no aplica | no aplica (material didáctico) | según repositorio de PyTorch | docs.pytorch.org |
 
 No se identifican en la información disponible otros checkpoints públicos de shooters tácticos 5v5 con los que establecer una comparación cuantitativa. Los tres elementos de la colección MiniStrike comparten autor, protocolo y estado de evaluación incompleto, por lo que la comparación relevante es de condición experimental (duelo a spawn fijo frente a 5v5 con self-play), no de rendimiento.
@@ -108,14 +108,14 @@ No se identifican en la información disponible otros checkpoints públicos de s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BurnyCoder/ministrike-selfplay-seed222
+- Modelo en Hugging Face: https://huggingface.co/BurnyCoder/ministrike-selfplay-seed222
 - Colección MiniStrike staged shooter self-play: https://huggingface.co/collections/BurnyCoder/ministrike-staged-shooter-self-play
 - Repositorio fuente (identidad del checkpoint): https://github.com/BurnyCoder/3d-firstperson-shooter-reinforcement-learning-selfplay
 - Repositorio del protocolo y reportes: https://github.com/BurnyCoder/counter-strike-reinforcement-learning-selfplay
 - Auditoría de aprendizaje (resumen): https://github.com/BurnyCoder/3d-firstperson-shooter-reinforcement-learning-selfplay/blob/main/reports/learning-audit/summary.md
 - Protocolo experimental: https://github.com/BurnyCoder/counter-strike-reinforcement-learning-selfplay/blob/main/docs/protocol.md
 - Reportes y comparativas: https://github.com/BurnyCoder/counter-strike-reinforcement-learning-selfplay/tree/main/reports
-- Perfil del autor en HuggingFace: https://huggingface.co/BurnyCoder/models
+- Perfil del autor en Hugging Face: https://huggingface.co/BurnyCoder/models
 - Perfil del autor en GitHub: https://github.com/BurnyCoder/
 - Tutorial MAPPO de TorchRL: https://docs.pytorch.org/rl/stable/tutorials/multiagent_ppo.html
 - Paper MAPPO (arXiv:2103.01955): https://arxiv.org/abs/2103.01955

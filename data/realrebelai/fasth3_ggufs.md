@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/realrebelai/FastH3_GGUFs
+- Repositorio Hugging Face: https://huggingface.co/realrebelai/FastH3_GGUFs
 - Modelo base original: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree
 - GitHub de RealRebelAI: https://github.com/RealRebelAI
 - Canal de YouTube de RealRebelAI: https://www.youtube.com/@realrebelai

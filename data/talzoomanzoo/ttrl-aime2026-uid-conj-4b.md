@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ttrl-aime2026-uid-conj-4b | Adaptador LoRA sobre ~4B (rango 16, alpha 32) | No especificado | No disponible | No disponible | HuggingFace, 0 descargas |
+| ttrl-aime2026-uid-conj-4b | Adaptador LoRA sobre ~4B (rango 16, alpha 32) | No especificado | No disponible | No disponible | Hugging Face, 0 descargas |
 | Qwen/Qwen3-4B (modelo base) | ~4.000 M | Según ficha del modelo base | No disponible en esta ficha | No disponible en esta ficha | Ampliamente disponible |
-| ttrl-aime2026-sc | No disponible | No disponible | No disponible | No disponible | Endpoint en FriendliAI y HuggingFace |
-| Otros adaptadores LoRA de razonamiento matemático | Variable | No disponible | No disponible | Variable | HuggingFace |
+| ttrl-aime2026-sc | No disponible | No disponible | No disponible | No disponible | Endpoint en FriendliAI y Hugging Face |
+| Otros adaptadores LoRA de razonamiento matemático | Variable | No disponible | No disponible | Variable | Hugging Face |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa fiable con alternativas de la misma categoría.
 
@@ -91,10 +91,10 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/talzoomanzoo/ttrl-aime2026-uid-conj-4b
+- Modelo en Hugging Face: https://huggingface.co/talzoomanzoo/ttrl-aime2026-uid-conj-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset del autor: https://huggingface.co/datasets/talzoomanzoo/aime26
-- Perfil del autor en HuggingFace: https://huggingface.co/talzoomanzoo/datasets
+- Perfil del autor en Hugging Face: https://huggingface.co/talzoomanzoo/datasets
 - Perfil del autor en GitHub: https://github.com/talzoomanzoo/
 - Ficha en free2aitools: https://free2aitools.com/model/talzoomanzoo/ttrl-aime2026-uid-conj
 - Adaptador relacionado en FriendliAI: https://friendli.ai/models/talzoomanzoo/ttrl-aime2026-sc

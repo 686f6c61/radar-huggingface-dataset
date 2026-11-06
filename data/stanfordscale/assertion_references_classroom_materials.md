@@ -18,7 +18,7 @@ Su relevancia actual es doble: por un lado forma parte de un esfuerzo por estand
 | Longitud de contexto | no disponible en la model card; el modelo base opera con un `max_seq_length` de 128 tokens y la entrada es una unica intervencion (`{utterance}`) |
 | Tipos de cuantizacion | no disponible; no se publican pesos cuantizados (la cuantizacion solo podria aplicarse al encoder) |
 | Idiomas soportados | en (ingles) |
-| Licencia | no disponible (ni la model card ni la ficha de HuggingFace la declaran) |
+| Licencia | no disponible (ni la model card ni la ficha de Hugging Face la declaran) |
 | Formato de pesos | safetensors; tamano del repositorio 0,4 GB |
 
 ## Arquitectura y entrenamiento
@@ -72,8 +72,8 @@ No se dispone de resultados publicados de otros clasificadores de assertions del
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `StanfordSCALE/assertion_references_classroom_materials` | 109,5 M (encoder + cabeza logistica) | no disponible (modelo base: 128 tokens) | F1 0,747 / ROC-AUC 0,926 en test | no disponible | HuggingFace, libreria `setfit` |
-| `sentence-transformers/paraphrase-mpnet-base-v2` (modelo base) | ~109 M | 128 tokens | no disponible: es un encoder de proposito general, no un clasificador de esta assertion | Apache-2.0 (segun su propia ficha, no confirmado en la informacion proporcionada) | HuggingFace |
+| `StanfordSCALE/assertion_references_classroom_materials` | 109,5 M (encoder + cabeza logistica) | no disponible (modelo base: 128 tokens) | F1 0,747 / ROC-AUC 0,926 en test | no disponible | Hugging Face, libreria `setfit` |
+| `sentence-transformers/paraphrase-mpnet-base-v2` (modelo base) | ~109 M | 128 tokens | no disponible: es un encoder de proposito general, no un clasificador de esta assertion | Apache-2.0 (segun su propia ficha, no confirmado en la informacion proporcionada) | Hugging Face |
 | Otros clasificadores de assertions del proyecto EduBehaviors | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Clasificador zero-shot con LLM sobre la misma assertion | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -85,13 +85,13 @@ No se dispone de resultados publicados de otros clasificadores de assertions del
 - Riesgo de alucinacion en el sentido de falsos positivos: con precision 0,820, cerca de un 18 % de las predicciones positivas son incorrectas. La elevada ROC-AUC (0,926) indica buena separacion global, pero el rendimiento en el punto de operacion por defecto es mas modesto.
 - Limitacion idiomatica: entrenado solo en ingles y sobre discurso de aula estadounidense. No se garantiza su comportamiento en otros idiomas, registros o sistemas educativos.
 - Longitud de entrada restringida: el modelo trabaja con una unica intervencion y el encoder base tiene un limite de 128 tokens, por lo que no captura contexto conversacional multi-turno. Para codificar el dialogo completo hace falta orquestar el modelo turno a turno.
-- Licencia no declarada, ni en la model card ni en la ficha de HuggingFace. Sin una licencia explicita no se puede verificar si el uso comercial esta permitido; conviene contactar con el autor antes de integrarlo en un producto.
+- Licencia no declarada, ni en la model card ni en la ficha de Hugging Face. Sin una licencia explicita no se puede verificar si el uso comercial esta permitido; conviene contactar con el autor antes de integrarlo en un producto.
 - El repositorio tiene 0 descargas y 0 likes, y los resultados no estan verificados de forma independiente (`"verified": false` en el model-index). Es un artefacto de investigacion reciente y sin validacion externa.
 - Dependencia de la libreria `setfit` para cargar el modelo, lo que anade una dependencia adicional y puede complicar el despliegue en entornos estrictamente controlados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_references_classroom_materials
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_references_classroom_materials
 - Dataset de anotaciones: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (origen de las transcripciones): https://github.com/SumnerLab/TalkMoves

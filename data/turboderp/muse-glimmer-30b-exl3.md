@@ -70,7 +70,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: [turboderp/Muse-Glimmer-30B-exl3](https://huggingface.co/turboderp/Muse-Glimmer-30B-exl3)
+- Repositorio Hugging Face: [turboderp/Muse-Glimmer-30B-exl3](https://huggingface.co/turboderp/Muse-Glimmer-30B-exl3)
 - Modelo base: [meta-models/Muse-Glimmer-30B](https://huggingface.co/meta-models/Muse-Glimmer-30B)
 - Drafter DFlash: [turboderp/Muse-Glimmer-30B-assistant-exl3](https://huggingface.co/turboderp/Muse-Glimmer-30B-assistant-exl3)
 - Pagina oficial de Meta: [Muse Glimmer](https://developer.meta.com/ai/models/muse-glimmer/)

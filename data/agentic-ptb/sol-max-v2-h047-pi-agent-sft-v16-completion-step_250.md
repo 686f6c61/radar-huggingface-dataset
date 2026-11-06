@@ -62,10 +62,10 @@ No se dispone de datos de rendimiento para comparar con alternativas. Como refer
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/sol-max-v2 (este) | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 | HuggingFace |
-| Mistral 7B | 7B | 32K | Apache 2.0 | HuggingFace |
+| agentic-ptb/sol-max-v2 (este) | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 | Hugging Face |
+| Mistral 7B | 7B | 32K | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento para comparar con alternativas. Como refer
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/sol-max-v2.h047.pi-agent-sft-v16-completion.step_250
-- Modelos de agentic-ptb en HuggingFace: https://huggingface.co/models?other=agentic-ptb
+- Hugging Face: https://huggingface.co/agentic-ptb/sol-max-v2.h047.pi-agent-sft-v16-completion.step_250
+- Modelos de agentic-ptb en Hugging Face: https://huggingface.co/models?other=agentic-ptb
 - Documentacion de Pi (mencionada en la busqueda, no directamente relacionada): https://pi.dev/docs/latest/models

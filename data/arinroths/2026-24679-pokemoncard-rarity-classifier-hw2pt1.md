@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada pero ilustrativa: sirve como ejemplo rep
 | Dataset de entrenamiento | pakiino/2026-24679-pokemon-151-tabular-hw1 |
 | Preset de AutoGluon | medium_quality |
 | Límite de tiempo de entrenamiento | 300 segundos |
-| Tamaño del repositorio | 0,0 GB (según la información de HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según la información de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -81,7 +81,7 @@ No se conocen modelos públicos comparables con resultados publicados para esta 
 
 | Alternativa | Tipo | Contexto de entrada | Licencia | Disponibilidad | Rendimiento comparable |
 |---|---|---|---|---|---|
-| Este modelo (WeightedEnsemble_L2 de AutoGluon) | Ensemble tabular apilado | Tabla de características | no disponible | HuggingFace, 0 descargas | 1,0 de balanced accuracy en 5 cartas |
+| Este modelo (WeightedEnsemble_L2 de AutoGluon) | Ensemble tabular apilado | Tabla de características | no disponible | Hugging Face, 0 descargas | 1,0 de balanced accuracy en 5 cartas |
 | AutoGluon Tabular con preset best_quality | Ensemble tabular apilado | Tabla de características | Apache 2.0 (licencia del framework) | Público | No disponible |
 | Gradient boosting (XGBoost / LightGBM) ajustado a mano | Árboles potenciados | Tabla de características | Apache 2.0 / MIT | Público | No disponible |
 | Regresión logística con ingeniería de variables | Modelo lineal | Tabla de características | BSD | Público | No disponible |
@@ -94,7 +94,7 @@ El framework AutoGluon sí es directamente comparable en cuanto a enfoque, pero 
 - Riesgo de sobreajuste al dataset Pokémon 151: no hay evidencia de que el modelo generalice a otros sets, expansiones o reediciones de cartas.
 - Sesgo de selección del dataset: la composición real de clases y la distribución de características no se detallan en la información disponible, más allá de que se aplicó estratificación y balanced accuracy como métrica.
 - Dependencia del preprocesado: el modelo consume variables tabulares ya extraídas; no procesa imágenes de cartas. Un cambio en el esquema de variables invalida el artefacto.
-- Licencia no disponible: no se especifica licencia en la model card ni en los metadatos de HuggingFace, por lo que no puede asumirse permiso para uso comercial. Es un riesgo legal relevante para cualquier despliegue en producción.
+- Licencia no disponible: no se especifica licencia en la model card ni en los metadatos de Hugging Face, por lo que no puede asumirse permiso para uso comercial. Es un riesgo legal relevante para cualquier despliegue en producción.
 - Propósito declarado académico: el propio autor indica que se desarrolló para el trabajo de la asignatura 24-679 de CMU, para demostrar clasificación binaria y selección automática de modelos, no para uso operativo.
 - Uso de IA generativa en la documentación: la model card indica que se usó ChatGPT para redactar el metacard y para depuración, lo que no invalida el modelo pero sí aconseja verificar la documentación frente al código.
 - Trazabilidad limitada: con 0 descargas y 0 likes, no hay evidencia de uso externo ni de validación independiente.
@@ -102,7 +102,7 @@ El framework AutoGluon sí es directamente comparable en cuanto a enfoque, pero 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArinRoths/2026-24679-pokemoncard-rarity-classifier-hw2Pt1
+- Modelo en Hugging Face: https://huggingface.co/ArinRoths/2026-24679-pokemoncard-rarity-classifier-hw2Pt1
 - Dataset de entrenamiento: https://huggingface.co/datasets/pakiino/2026-24679-pokemon-151-tabular-hw1
 - Referencia general del framework AutoGluon (no procedente de la búsqueda web): https://auto.gluon.ai
 - La búsqueda web realizada no devolvió ningún enlace relevante sobre este modelo: los resultados obtenidos correspondían a páginas de ayuda del Traductor de Google y no guardan relación con el modelo. No se dispone de paper, blog, repositorio de código ni demo asociados.

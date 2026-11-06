@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-3B-YuHua-V5 es un conjunto de siete adaptadores LoRA desarrollados por shikunpunk sobre el modelo base Qwen2.5-3B-Instruct, especializado en la generación de novelas y textos narrativos con el estilo del escritor chino Yu Hua. Cada adaptador cubre una subtarea distinta dentro del proceso de escritura: continuación de texto, diálogos, descripciones psicológicas, escenas, trama, generación de pasajes largos y control de calidad. El modelo se distribuye como un repositorio de HuggingFace con subcarpetas para cada adaptador, y se carga mediante la librería PEFT.
+Qwen2.5-3B-YuHua-V5 es un conjunto de siete adaptadores LoRA desarrollados por shikunpunk sobre el modelo base Qwen2.5-3B-Instruct, especializado en la generación de novelas y textos narrativos con el estilo del escritor chino Yu Hua. Cada adaptador cubre una subtarea distinta dentro del proceso de escritura: continuación de texto, diálogos, descripciones psicológicas, escenas, trama, generación de pasajes largos y control de calidad. El modelo se distribuye como un repositorio de Hugging Face con subcarpetas para cada adaptador, y se carga mediante la librería PEFT.
 
 La relevancia de este modelo radica en su enfoque modular: en lugar de un único modelo afinado, ofrece siete especializaciones intercambiables en tiempo de ejecución, lo que permite al usuario seleccionar el adaptador adecuado según la fase de escritura. Al estar basado en Qwen2.5-3B, hereda la arquitectura transformer de 3.000 millones de parámetros y una ventana de contexto de hasta 128.000 tokens en el modelo base, aunque no se especifica si los adaptadores mantienen esa longitud completa. El repositorio ocupa 1,7 GB, lo que sugiere que contiene los pesos de los adaptadores en formato safetensors.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: al ser un modelo de 3.000 millones de parametros, en precision completa (fp16) requiere aproximadamente 6 GB de VRAM. Con cuantizacion de 4 bits, como en el ejemplo de carga, la VRAM necesaria se reduce a unos 2-3 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en 4 bits (por ejemplo, NVIDIA GTX 1650, RTX 3050, RTX 4060). Para fp16 se recomienda una GPU con 8 GB o mas (RTX 3070, RTX 4080, A100, etc.).
 - Si cabe en consumer GPU: si, en cuantizacion 4 bits cabe en GPUs de gama de entrada con 4-6 GB de VRAM.
-- Opciones de despliegue: el ejemplo de carga usa HuggingFace Transformers con PEFT y BitsAndBytes. Tambien se puede usar vLLM o TGI si se fusionan los adaptadores en el modelo base, aunque no se documenta. llama.cpp y Ollama no son compatibles directamente con LoRA sin conversion previa.
+- Opciones de despliegue: el ejemplo de carga usa Hugging Face Transformers con PEFT y BitsAndBytes. Tambien se puede usar vLLM o TGI si se fusionan los adaptadores en el modelo base, aunque no se documenta. llama.cpp y Ollama no son compatibles directamente con LoRA sin conversion previa.
 - Latencia y throughput estimados: no disponibles. Para un modelo de 3B en 4 bits, se espera una generacion de 20-40 tokens por segundo en una GPU moderna, pero no hay datos concretos.
 
 ## Comparativa con modelos similares

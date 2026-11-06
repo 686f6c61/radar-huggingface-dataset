@@ -92,7 +92,7 @@ Las alternativas comparten el mismo modelo base; la diferencia principal es el f
 
 ## Enlaces
 
-- [HuggingFace: cc1244578151/my-Gyro-abliterated-Huihui-GGUF](https://huggingface.co/cc1244578151/my-Gyro-abliterated-Huihui-GGUF)
+- [Hugging Face: cc1244578151/my-Gyro-abliterated-Huihui-GGUF](https://huggingface.co/cc1244578151/my-Gyro-abliterated-Huihui-GGUF)
 - [Modelo base: huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated)
 - [Modelo base v2 GGUF: huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF)
 - [Gyro card de referencia: agentionai/Qwen3.8-Flash-Next-Gyro-GGUF](https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-GGUF)

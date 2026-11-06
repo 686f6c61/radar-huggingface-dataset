@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tailorbird es un modelo de generacion de texto publicado por el usuario vaclavs en HuggingFace, distribuido en formato MLX (la libreria de Apple para inferencia en Apple Silicon) y descrito por sus etiquetas como un modelo orientado a contexto largo, tool calling, ejecucion en dispositivo (edge-ai) y conversacion. Se trata de un ajuste fino (finetune) del checkpoint openbmb/MiniCPM5-2B-SFT, es decir, parte de la familia MiniCPM5 de OpenBMB, cuyo sufijo "2B" situa el orden de magnitud en torno a los 2 mil millones de parametros. El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, por lo que es un artefacto practicamente sin validacion por parte de la comunidad.
+Tailorbird es un modelo de generacion de texto publicado por el usuario vaclavs en Hugging Face, distribuido en formato MLX (la libreria de Apple para inferencia en Apple Silicon) y descrito por sus etiquetas como un modelo orientado a contexto largo, tool calling, ejecucion en dispositivo (edge-ai) y conversacion. Se trata de un ajuste fino (finetune) del checkpoint openbmb/MiniCPM5-2B-SFT, es decir, parte de la familia MiniCPM5 de OpenBMB, cuyo sufijo "2B" situa el orden de magnitud en torno a los 2 mil millones de parametros. El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, por lo que es un artefacto practicamente sin validacion por parte de la comunidad.
 
 El modelo no incluye una model card sustantiva en la informacion disponible: no hay detalles publicados sobre composicion del dataset, numero de tokens de entrenamiento, regimen de alineacion (RLHF/DPO) ni resultados de evaluacion. Las unicas pistas sobre el proceso de entrenamiento son las etiquetas de datasets de OpenBMB que acompanan al repositorio (Ultra-FineWeb, UltraX-Preview, Ultra-FineWeb-L3, UltraData-Math, UltraData-Code, UltraData-SFT-2605, UltraData-SFT-Agent-2609 y UltraData-RL-2609), que apuntan a un pipeline de preentrenamiento con datos web filtrados, datos de matematicas y codigo, mas fases de SFT y RL, pero no hay documentacion que confirme que estos datasets se hayan usado realmente en este finetune concreto.
 
@@ -96,7 +96,7 @@ La ventaja diferencial de Tailorbird frente a estas alternativas no es el rendim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vaclavs/Tailorbird
+- Repositorio Hugging Face: https://huggingface.co/vaclavs/Tailorbird
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B-SFT
 - Datasets citados en las etiquetas del repositorio:
   - https://huggingface.co/datasets/openbmb/Ultra-FineWeb

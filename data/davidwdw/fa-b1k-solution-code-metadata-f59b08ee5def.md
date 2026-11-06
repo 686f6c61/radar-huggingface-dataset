@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`davidwdw/fa-b1k-solution-code-metadata-f59b08ee5def` no es un modelo de lenguaje ni un modelo de vision-lenguaje-accion: es un paquete de metadatos y arbol de codigo fuente publicado en HuggingFace bajo el nombre `b1k-solution-code-metadata`. Segun su propia model card, se trata de un "versioned fleet archive" (archivo versionado de flota) cuya receta canonica se identifica como `historical_centre_behavior1k_solution_finetunes`, correspondiente al arbol de fuentes de la solucion `behavior-1k-solution` en la revision `ca556f74`, con cambios locales, y limitado a control, documentacion y ficheros de configuracion (sin payload de datos ni pesos).
+`davidwdw/fa-b1k-solution-code-metadata-f59b08ee5def` no es un modelo de lenguaje ni un modelo de vision-lenguaje-accion: es un paquete de metadatos y arbol de codigo fuente publicado en Hugging Face bajo el nombre `b1k-solution-code-metadata`. Segun su propia model card, se trata de un "versioned fleet archive" (archivo versionado de flota) cuya receta canonica se identifica como `historical_centre_behavior1k_solution_finetunes`, correspondiente al arbol de fuentes de la solucion `behavior-1k-solution` en la revision `ca556f74`, con cambios locales, y limitado a control, documentacion y ficheros de configuracion (sin payload de datos ni pesos).
 
 El repositorio no incluye pesos, tokenizador, configuracion de inferencia ni pipeline declarado. Los unicos metadatos publicos disponibles son el identificador, el autor (`davidwdw`), la etiqueta `region:us`, la fecha de creacion (29 de septiembre de 2026) y contadores de descargas y likes a cero. No consta licencia, ni idiomas, ni tamanos de parametros, ni longitud de contexto. Por tanto, cualquier cifra de arquitectura o rendimiento que se atribuyese a este artefacto seria inventada.
 
@@ -97,7 +97,7 @@ No se dispone de modelos estrictamente comparables en la misma categoria (archiv
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-b1k-solution-code-metadata-f59b08ee5def
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-b1k-solution-code-metadata-f59b08ee5def
 - Repositorio relacionado de la misma familia (dataset): https://huggingface.co/datasets/davidwdw/fa-ds-b1k-task01-v14-full-task-audited-e05e32b95a5f-78bfe49b6bbc
 - Solucion del reto BEHAVIOR 2025 (repositorio de referencia): https://github.com/IliaLarchenko/behavior-1k-solution
 - Pagina del reto BEHAVIOR (Stanford): https://behavior.stanford.edu/challenge/index.html

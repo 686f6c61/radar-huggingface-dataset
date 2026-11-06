@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/diablomike20/North-Mini-Code-1.0-Uncensored-Heretic-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/diablomike20/North-Mini-Code-1.0-Uncensored-Heretic-i1-GGUF
 - Modelo base: https://huggingface.co/OS-Software/North-Mini-Code-1.0-Uncensored-Heretic
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/North-Mini-Code-1.0-Uncensored-Heretic-GGUF
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#North-Mini-Code-1.0-Uncensored-Heretic-i1-GGUF

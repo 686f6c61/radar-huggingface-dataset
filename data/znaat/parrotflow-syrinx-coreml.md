@@ -83,11 +83,11 @@ La comparación con alternativas de la misma categoría es limitada porque no se
 - Adaptadores con procedencia parcial: G, S y NER provienen de ejecuciones internas del autor (semillas 42 y 43) sin dataset ni evaluación publicados, lo que dificulta reproducir o auditar su calidad.
 - Licencia MIT: permite uso comercial, pero conviene verificar la licencia del modelo base jhu-clsp/mmBERT-small, que no se detalla en la información disponible.
 - Paquete fp32 heredado: `parrotflow-syrinx.mlpackage` se mantiene solo por compatibilidad con versiones de app que lo fijan; no debe tomarse como la versión recomendada.
-- Sin pipeline declarado en HuggingFace ni idiomas etiquetados: la integración automática en herramientas que dependen de esos metadatos no funcionará.
+- Sin pipeline declarado en Hugging Face ni idiomas etiquetados: la integración automática en herramientas que dependen de esos metadatos no funcionará.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/znaat/parrotflow-syrinx-coreml
+- Repositorio Hugging Face: https://huggingface.co/znaat/parrotflow-syrinx-coreml
 - Proyecto ParrotFlow: https://github.com/znat/parrotflow
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-small
 - Paquete masked-LM previo: `znaat/mmbert-small-coreml` (commit a983542, referenciado en la model card; sin URL directa en la información disponible)

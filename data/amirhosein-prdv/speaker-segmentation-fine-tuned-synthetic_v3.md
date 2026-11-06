@@ -2,7 +2,7 @@
 
 ## Resumen
 
-speaker-segmentation-fine-tuned-synthetic_v3 es un ajuste fino del modelo pyannote/segmentation-3.0 publicado por el usuario amirhosein-prdv en HuggingFace. Se trata de un modelo de segmentacion de hablantes (speaker segmentation), no de un modelo de lenguaje: recibe audio y produce, fotograma a fotograma, la actividad local de los hablantes presentes, que despues se combina con embeddings y clustering para obtener una diarizacion completa. Su tamano es muy reducido: 1.473.515 parametros (~1,5 M) y un repositorio de 0,1 GB en formato safetensors.
+speaker-segmentation-fine-tuned-synthetic_v3 es un ajuste fino del modelo pyannote/segmentation-3.0 publicado por el usuario amirhosein-prdv en Hugging Face. Se trata de un modelo de segmentacion de hablantes (speaker segmentation), no de un modelo de lenguaje: recibe audio y produce, fotograma a fotograma, la actividad local de los hablantes presentes, que despues se combina con embeddings y clustering para obtener una diarizacion completa. Su tamano es muy reducido: 1.473.515 parametros (~1,5 M) y un repositorio de 0,1 GB en formato safetensors.
 
 El ajuste se ha realizado sobre el dataset uncleMehrzad/synthetic-speaker-diarization-dataset-fa-large-3000, un corpus sintetico en persa (sufijo "fa"), con 50 epocas de entrenamiento y un learning rate de 1e-3. El autor declara en la model card un DER (Diarization Error Rate) de 0,1667 en el conjunto de evaluacion, con 0,0525 de falsa alarma, 0,0382 de deteccion perdida y 0,0760 de confusion entre hablantes.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es limitada y conviene ser explicito: el modelo acum
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | PyanNet (etiquetada como "pyannet" en los tags de HuggingFace); heredada del modelo base pyannote/segmentation-3.0 |
+| Arquitectura | PyanNet (etiquetada como "pyannet" en los tags de Hugging Face); heredada del modelo base pyannote/segmentation-3.0 |
 | Parametros totales | 1.473.515 (~1,5 M) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | Ventanas de audio de 10 s por inferencia (caracteristica heredada del modelo base pyannote/segmentation-3.0); no se documenta en la model card |
@@ -96,9 +96,9 @@ No hay datos publicados suficientes para una comparacion cuantitativa fiable. La
 
 | Modelo | Parametros | Entrenamiento | DER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| speaker-segmentation-fine-tuned-synthetic_v3 | 1.473.515 | Ajuste fino sobre corpus sintetico en persa | 0,1667 (conjunto sintetico propio) | MIT | HuggingFace, 0 descargas |
-| pyannote/segmentation-3.0 | No disponible en la informacion proporcionada | Corpus de pyannote (no detallado) | No disponible (no comparable: distinto conjunto de evaluacion) | Verificar en su model card | HuggingFace |
-| pyannote/segmentation-2.0 | No disponible en la informacion proporcionada | Corpus de pyannote (no detallado) | No disponible | Verificar en su model card | HuggingFace |
+| speaker-segmentation-fine-tuned-synthetic_v3 | 1.473.515 | Ajuste fino sobre corpus sintetico en persa | 0,1667 (conjunto sintetico propio) | MIT | Hugging Face, 0 descargas |
+| pyannote/segmentation-3.0 | No disponible en la informacion proporcionada | Corpus de pyannote (no detallado) | No disponible (no comparable: distinto conjunto de evaluacion) | Verificar en su model card | Hugging Face |
+| pyannote/segmentation-2.0 | No disponible en la informacion proporcionada | Corpus de pyannote (no detallado) | No disponible | Verificar en su model card | Hugging Face |
 | Otros sistemas de diarizacion (NeMo MSDD, modelos de terceros) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Advertencia metodologica: el DER de 0,1667 corresponde al conjunto de evaluacion sintetico del propio autor y no es directamente comparable con los DER publicados por otros sistemas sobre AMI, DIHARD o CALLHOME.
@@ -118,7 +118,7 @@ Advertencia metodologica: el DER de 0,1667 corresponde al conjunto de evaluacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amirhosein-prdv/speaker-segmentation-fine-tuned-synthetic_v3
+- Modelo en Hugging Face: https://huggingface.co/amirhosein-prdv/speaker-segmentation-fine-tuned-synthetic_v3
 - Modelo base pyannote/segmentation-3.0: https://huggingface.co/pyannote/segmentation-3.0
 - Dataset de ajuste: https://huggingface.co/datasets/uncleMehrzad/synthetic-speaker-diarization-dataset-fa-large-3000
 - La busqueda web realizada no ha devuelto ningun resultado relevante para este modelo: todos los enlaces obtenidos corresponden a servicios meteorologicos (meteo.pl, meteo.imgw.pl, tvn24.pl/tvnmeteo, pogoda.interia.pl) y no guardan relacion con el modelo. No hay papers, blogs, repositorios ni demos adicionales disponibles en la informacion proporcionada.

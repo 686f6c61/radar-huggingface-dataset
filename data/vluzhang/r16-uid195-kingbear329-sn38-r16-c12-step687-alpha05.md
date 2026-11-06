@@ -31,7 +31,7 @@ En cuanto al entrenamiento, los unicos datos disponibles son el paso del checkpo
 
 - Generacion de texto autoregresiva (pipeline `text-generation`), unica capacidad documentada de forma explicita en la model card.
 - Etiquetado como `causal-lm`, lo que implica modelado de lenguaje causal clasico: prediccion del siguiente token y continuacion de prompt.
-- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags), lo que sugiere que puede servirse detras de una API compatible con el esquema estandar de HuggingFace.
+- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags), lo que sugiere que puede servirse detras de una API compatible con el esquema estandar de Hugging Face.
 - Integracion con la libreria `transformers` como via de carga, condicionada a disponer de la implementacion `NanochronoForCausalLM`.
 - Soporte de tool calling / function calling: no disponible (no documentado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
@@ -92,5 +92,5 @@ Las diferencias relevantes no son de tamano sino de trazabilidad: los cuatro mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vluzhang/r16-uid195-kingbear329-sn38-r16-c12-step687-alpha05
+- Hugging Face: https://huggingface.co/vluzhang/r16-uid195-kingbear329-sn38-r16-c12-step687-alpha05
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

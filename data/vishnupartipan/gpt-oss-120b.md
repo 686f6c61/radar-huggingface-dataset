@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gpt-oss-120b (este repo) | 116.829.156.672 | 5.1B | no disponible | Apache 2.0 | HuggingFace, vLLM, Ollama, LM Studio |
-| gpt-oss-20b | 21B | 3.6B | no disponible | Apache 2.0 | HuggingFace, Ollama, LM Studio (aprox. 16 GB de memoria) |
+| gpt-oss-120b (este repo) | 116.829.156.672 | 5.1B | no disponible | Apache 2.0 | Hugging Face, vLLM, Ollama, LM Studio |
+| gpt-oss-20b | 21B | 3.6B | no disponible | Apache 2.0 | Hugging Face, Ollama, LM Studio (aprox. 16 GB de memoria) |
 | Otras alternativas abiertas de ~100B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion con datos verificables en la informacion disponible es con `gpt-oss-20b`, el otro miembro de la familia: misma licencia y mismo formato harmony, pero 21B totales y 3.6B activos frente a 117B y 5.1B, orientado a baja latencia y uso local. No se dispone de cifras de rendimiento comparadas entre ambos dentro de la informacion proporcionada.
@@ -87,9 +87,9 @@ La unica comparacion con datos verificables en la informacion disponible es con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace (espejo): https://huggingface.co/vishnupartipan/gpt-oss-120b
+- Repositorio en Hugging Face (espejo): https://huggingface.co/vishnupartipan/gpt-oss-120b
 - Repositorio oficial: https://huggingface.co/openai/gpt-oss-120b
-- Coleccion gpt-oss en HuggingFace: https://huggingface.co/collections/openai/gpt-oss-68911959590a1634ba11c7a4
+- Coleccion gpt-oss en Hugging Face: https://huggingface.co/collections/openai/gpt-oss-68911959590a1634ba11c7a4
 - Model card en arXiv: https://arxiv.org/abs/2508.10925
 - Blog de presentacion de OpenAI: https://openai.com/index/introducing-gpt-oss/
 - Pagina del proyecto: https://gpt-oss.com

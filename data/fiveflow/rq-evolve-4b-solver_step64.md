@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fiveflow/RQ-Evolve-4B-Solver_step64` es un modelo de lenguaje de 4.022 millones de parámetros publicado en HuggingFace por el usuario `fiveflow`. Aunque la model card oficial está prácticamente vacía, los metadatos del repositorio indican que está construido sobre la arquitectura Qwen3 (etiqueta `qwen3`) y que su pipeline es de generación de texto. El nombre sugiere una especialización en resolución de problemas matemáticos paso a paso (`Solver_step64`), pero no existe documentación que lo confirme.
+El modelo `fiveflow/RQ-Evolve-4B-Solver_step64` es un modelo de lenguaje de 4.022 millones de parámetros publicado en Hugging Face por el usuario `fiveflow`. Aunque la model card oficial está prácticamente vacía, los metadatos del repositorio indican que está construido sobre la arquitectura Qwen3 (etiqueta `qwen3`) y que su pipeline es de generación de texto. El nombre sugiere una especialización en resolución de problemas matemáticos paso a paso (`Solver_step64`), pero no existe documentación que lo confirme.
 
 La relevancia de este modelo es limitada en el momento actual: no hay información pública sobre su entrenamiento, sus capacidades reales ni su licencia. Se trata de un checkpoint de 4B parámetros en formato `safetensors`, con un tamaño de repositorio de 8,1 GB, lo que lo hace potencialmente ejecutable en hardware de consumo, pero sin datos verificables sobre su rendimiento o sus limitaciones.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo es limitada en el momento actual: no hay informaci�
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion tecnica sobre la arquitectura interna del modelo. La unica pista es la etiqueta `qwen3` en los metadatos de HuggingFace, que sugiere que el modelo deriva de la familia Qwen3, probablemente una variante de 4B parametros. Qwen3 emplea una arquitectura transformer con atencion por ventanas deslizantes y mecanismos de reasoning explicito, pero no se puede confirmar que este checkpoint conserve esas caracteristicas.
+No se ha publicado informacion tecnica sobre la arquitectura interna del modelo. La unica pista es la etiqueta `qwen3` en los metadatos de Hugging Face, que sugiere que el modelo deriva de la familia Qwen3, probablemente una variante de 4B parametros. Qwen3 emplea una arquitectura transformer con atencion por ventanas deslizantes y mecanismos de reasoning explicito, pero no se puede confirmar que este checkpoint conserve esas caracteristicas.
 
 Tampoco hay datos sobre el proceso de entrenamiento: no se especifica el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas como RLHF o DPO. La referencia al paper `arxiv:1910.09700` en las etiquetas corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en ML, que aparece en la plantilla de la model card, no a un documento sobre el modelo en si.
 
@@ -61,4 +61,4 @@ No se dispone de datos de rendimiento de este modelo, por lo que no es posible r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fiveflow/RQ-Evolve-4B-Solver_step64
+- Repositorio en Hugging Face: https://huggingface.co/fiveflow/RQ-Evolve-4B-Solver_step64

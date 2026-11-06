@@ -64,7 +64,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/zeming1/flux_text_encoders)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/zeming1/flux_text_encoders)
 - [Repositorio XLabs-AI/xflux_text_encoders](https://huggingface.co/XLabs-AI/xflux_text_encoders)
 - [Página en PromptLayer](https://www.promptlayer.com/models/xfluxtextencoders/)
 - [Catálogo de Microsoft Foundry](https://ai.azure.com/catalog/models/xlabs-ai-xflux-text-encoders)

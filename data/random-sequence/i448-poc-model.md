@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `random-sequence/i448-poc-model` es un artefacto alojado en HuggingFace por el usuario `random-sequence`, publicado el 5 de octubre de 2026 y actualizado apenas dos segundos despues, lo que indica que se trata de un repositorio de prueba de concepto (el sufijo "poc" del identificador apunta en esa direccion) sin desarrollo posterior documentado. La model card asociada contiene unicamente el encabezado "# i448" y el campo `library_name: transformers`, sin descripcion, sin informacion de entrenamiento ni resultados.
+El modelo `random-sequence/i448-poc-model` es un artefacto alojado en Hugging Face por el usuario `random-sequence`, publicado el 5 de octubre de 2026 y actualizado apenas dos segundos despues, lo que indica que se trata de un repositorio de prueba de concepto (el sufijo "poc" del identificador apunta en esa direccion) sin desarrollo posterior documentado. La model card asociada contiene unicamente el encabezado "# i448" y el campo `library_name: transformers`, sin descripcion, sin informacion de entrenamiento ni resultados.
 
 Las etiquetas del repositorio lo clasifican con la pipeline `feature-extraction` y con la marca `custom_code`, lo que sugiere que el modelo requiere cargar codigo remoto propio (`trust_remote_code=True`) y que su uso previsto seria la extraccion de representaciones o embeddings, no la generacion de texto. No se especifica arquitectura, numero de parametros, longitud de contexto, idiomas ni licencia.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. Al no conocer la arquitectura, el tamano ni el rendimiento del modelo, no es posible establecer una comparacion fundamentada con alternativas de extraccion de caracteristicas como los modelos de la familia BERT, E5 o los distintos encoders de embeddings disponibles en HuggingFace.
+No disponible. Al no conocer la arquitectura, el tamano ni el rendimiento del modelo, no es posible establecer una comparacion fundamentada con alternativas de extraccion de caracteristicas como los modelos de la familia BERT, E5 o los distintos encoders de embeddings disponibles en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -81,5 +81,5 @@ No disponible. Al no conocer la arquitectura, el tamano ni el rendimiento del mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/random-sequence/i448-poc-model
+- Modelo en Hugging Face: https://huggingface.co/random-sequence/i448-poc-model
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Las busquedas sobre el termino "random" devuelven servicios de generacion de numeros aleatorios (random.org, calculator.net, spinthewheel.io, wheelofnames.com) sin relacion alguna con el modelo. No se dispone de papers, blogs, repositorios ni demos asociados.

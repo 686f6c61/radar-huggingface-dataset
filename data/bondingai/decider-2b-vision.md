@@ -2,7 +2,7 @@
 
 ## Resumen
 
-decider-2b-vision es un modelo de decisión multimodal desarrollado por BondingAI (publicado bajo la organización Mapika en HuggingFace). Se trata de la variante con visión de la familia decider, construida a partir de Qwen3.5-2B vision-language, en la que se han trasplantado los pesos de texto de decider-2b v5 y se ha afinado para emitir una probabilidad calibrada sobre un conjunto de opciones etiquetadas con letras a partir de una imagen y una pregunta textual.
+decider-2b-vision es un modelo de decisión multimodal desarrollado por BondingAI (publicado bajo la organización Mapika en Hugging Face). Se trata de la variante con visión de la familia decider, construida a partir de Qwen3.5-2B vision-language, en la que se han trasplantado los pesos de texto de decider-2b v5 y se ha afinado para emitir una probabilidad calibrada sobre un conjunto de opciones etiquetadas con letras a partir de una imagen y una pregunta textual.
 
 El modelo no genera texto: en un único forward pass lee los logits de las letras en una posición de respuesta (answer slot) y aplica softmax sobre las opciones. Está pensado para toma de decisiones tipada y estructurada, no para conversación ni captioning. Una imagen de 256x240 (por ejemplo, un frame de juego) se codifica en 64 tokens visuales, lo que permite decisiones de baja latencia sobre entrada visual.
 
@@ -97,7 +97,7 @@ La comparación directa con modelos de visión-lenguaje generalistas de tamaño 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BondingAI/decider-2b-vision
+- Hugging Face: https://huggingface.co/BondingAI/decider-2b-vision
 - Repositorio GitHub: https://github.com/Mapika/decider
 - Código de visión: https://github.com/Mapika/decider (`decider/vision/`)
 - Changelog: https://github.com/Mapika/decider/blob/main/docs/CHANGELOG.md

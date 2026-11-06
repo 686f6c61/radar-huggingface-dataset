@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo firzahdzm/tourn-880b38e9-instructtext-super-c1b es un checkpoint de la familia Phi-3 publicado en HuggingFace por el usuario firzahdzm. Se trata de un modelo con arquitectura phi3 que requiere codigo personalizado (custom_code) para su carga, etiquetado como InstructText, lo que sugiere un ajuste fino orientado a seguir instrucciones sobre una base preentrenada de tipo texto. Cuenta con 3.821.079.552 parametros totales, es decir, aproximadamente 3,8 mil millones, lo que lo situa en el segmento de modelos pequenos aptos para inferencia en hardware de consumo.
+El modelo firzahdzm/tourn-880b38e9-instructtext-super-c1b es un checkpoint de la familia Phi-3 publicado en Hugging Face por el usuario firzahdzm. Se trata de un modelo con arquitectura phi3 que requiere codigo personalizado (custom_code) para su carga, etiquetado como InstructText, lo que sugiere un ajuste fino orientado a seguir instrucciones sobre una base preentrenada de tipo texto. Cuenta con 3.821.079.552 parametros totales, es decir, aproximadamente 3,8 mil millones, lo que lo situa en el segmento de modelos pequenos aptos para inferencia en hardware de consumo.
 
 El repositorio ocupa 7,6 GB y los pesos estan en formato safetensors, un tamano coherente con un almacenamiento en precision BF16 o FP16 para esa cantidad de parametros. La ficha del modelo no incluye model card, ni pipeline declarado, ni licencia, ni idiomas soportados, y las cifras de adopcion son muy bajas (10 descargas y 0 likes), lo que indica que se trata de un experimento o un artefacto derivado de un pipeline automatizado mas que de un lanzamiento consolidado.
 
@@ -45,7 +45,7 @@ No se puede confirmar ninguna capacidad concreta mas alla de la generacion de te
 ## Casos de uso
 
 - Experimentacion academica con fine-tuning sobre arquitectura Phi-3: el modelo sirve como punto de partida o material de comparacion en estudios sobre ajuste de instrucciones, dado su tamano reducido de 3,8B parametros.
-- Pruebas de integracion de codigo personalizado: resulta util para validar flujos de carga de modelos con custom_code en HuggingFace Transformers y detectar problemas de compatibilidad de versiones.
+- Pruebas de integracion de codigo personalizado: resulta util para validar flujos de carga de modelos con custom_code en Hugging Face Transformers y detectar problemas de compatibilidad de versiones.
 - Evaluacion de calidad de checkpoints no documentados: sirve como caso practico para disenar protocolos de auditoria de repositorios sin model card (inspeccion de pesos, tokenizer y configuracion).
 - Prototipado local en hardware modesto: sus 3,8B parametros permiten desplegarlo en una GPU de consumo para pruebas de generacion de texto de baja latencia.
 - Benchmarking interno de modelos pequenos: util como referencia adicional en comparativas propias frente a Phi-3 mini, Llama 3.2 3B o Qwen2.5 3B.
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| firzahdzm/tourn-880b38e9-instructtext-super-c1b | 3,8B | no disponible | no disponible | HuggingFace, 10 descargas |
+| firzahdzm/tourn-880b38e9-instructtext-super-c1b | 3,8B | no disponible | no disponible | Hugging Face, 10 descargas |
 | Microsoft Phi-3 mini | 3,8B | 4k / 128k segun variante | MIT | Ampliamente disponible |
 | Meta Llama 3.2 3B Instruct | 3,2B | 128k | Llama 3.2 Community License | Ampliamente disponible |
 | Qwen2.5 3B Instruct | 3,1B | 32k | Apache 2.0 / Qwen segun variante | Ampliamente disponible |
@@ -91,7 +91,7 @@ La comparacion es limitada porque el modelo objeto de la ficha no declara licenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/firzahdzm/tourn-880b38e9-instructtext-super-c1b
+- Modelo en Hugging Face: https://huggingface.co/firzahdzm/tourn-880b38e9-instructtext-super-c1b
 - Repositorio relacionado del mismo autor: https://huggingface.co/firzahdzm/tourn-28c9f3bb-instructtext-super-t2pre
 - Repositorio relacionado del mismo autor: https://huggingface.co/firzahdzm/tourn-067761fe-instructtext-super-s2dpre
 

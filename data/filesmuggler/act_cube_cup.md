@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`filesmuggler/act_cube_cup` es una política de robótica entrenada mediante aprendizaje por imitación con el método ACT (Action Chunking with Transformers), publicado en el artículo arXiv:2304.13705 y descrito como una técnica que predice fragmentos cortos de acciones (*action chunks*) en lugar de pasos individuales. El modelo lo publica el usuario `filesmuggler` en HuggingFace Hub utilizando LeRobot 0.6.2, la librería de HuggingFace para aprendizaje automático en robótica real. Se trata, por tanto, de un checkpoint de política entrenado para una tarea concreta y no de un modelo de lenguaje ni de un modelo multimodal de propósito general.
+`filesmuggler/act_cube_cup` es una política de robótica entrenada mediante aprendizaje por imitación con el método ACT (Action Chunking with Transformers), publicado en el artículo arXiv:2304.13705 y descrito como una técnica que predice fragmentos cortos de acciones (*action chunks*) en lugar de pasos individuales. El modelo lo publica el usuario `filesmuggler` en Hugging Face Hub utilizando LeRobot 0.6.2, la librería de Hugging Face para aprendizaje automático en robótica real. Se trata, por tanto, de un checkpoint de política entrenado para una tarea concreta y no de un modelo de lenguaje ni de un modelo multimodal de propósito general.
 
 La política consume el estado del robot (vector de 6 dimensiones) y dos flujos de imagen RGB de 480×640 píxeles procedentes de dos cámaras (`top` y `wrist`), y produce como salida un vector de acción de 6 dimensiones para un brazo seguidor del tipo `so_follower`. El entrenamiento se realizó sobre el dataset `filesmuggler/experiment-cube-cup-100-l_diagonal-full`, compuesto por 99 episodios y 29.432 fotogramas grabados a 30 FPS, con la tarea única "Grab the cube and put it in the cup".
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / chunk | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `filesmuggler/act_cube_cup` | ACT (imitacion, robot real) | 51.668.614 | *chunk* de acciones no disponible en la model card | Apache-2.0 | HuggingFace Hub, 0 descargas |
+| `filesmuggler/act_cube_cup` | ACT (imitacion, robot real) | 51.668.614 | *chunk* de acciones no disponible en la model card | Apache-2.0 | Hugging Face Hub, 0 descargas |
 | ACT de referencia (arXiv:2304.13705) | ACT (imitacion, bimanual de bajo coste) | no disponible | no disponible | no disponible | publicacion cientifica |
 | Diffusion Policy | politica de difusion para imitacion | no disponible | no disponible | no disponible | publicacion cientifica y repositorio |
-| SmolVLA | VLA compacto de LeRobot | no disponible | no disponible | no disponible | HuggingFace Hub |
+| SmolVLA | VLA compacto de LeRobot | no disponible | no disponible | no disponible | Hugging Face Hub |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la informacion proporcionada; la comparacion se limita al tipo de metodo y a la licencia del checkpoint analizado.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/filesmuggler/act_cube_cup
+- Modelo en Hugging Face: https://huggingface.co/filesmuggler/act_cube_cup
 - Dataset de entrenamiento: https://huggingface.co/datasets/filesmuggler/experiment-cube-cup-100-l_diagonal-full
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=filesmuggler/experiment-cube-cup-100-l_diagonal-full
 - Articulo de ACT: https://huggingface.co/papers/2304.13705

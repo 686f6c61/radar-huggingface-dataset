@@ -4,7 +4,7 @@
 
 SmolLM2-Sports-Analytics es un ajuste fino por instrucciones del modelo SmolLM2-1.7B-Instruct de HuggingFaceTB, especializado en conocimiento deportivo y analitica estadistica. Lo desarrolla el usuario Salmahaitham y se distribuye como un unico conjunto de pesos fusionados en FP16 tras un entrenamiento con QLoRA. Resuelve el problema de que un modelo generalista de 1.700 millones de parametros ofrece respuestas poco precisas y con calculos erroneos en dominios tecnicos como el calculo de metricas avanzadas de baloncesto, futbol o futbol americano.
 
-La arquitectura subyacente es un transformer decoder de SmolLM2 con 1.711.376.384 parametros, entrenado originalmente por HuggingFace en un corpus de billones de tokens y afinado para seguir instrucciones. Sobre esa base, el autor aplica adaptadores LoRA de rango 32 sobre todas las capas lineales (q, k, v, o, gate, up y down), entrenados en precision 4-bit NF4 y posteriormente fusionados en pesos FP16 independientes mediante `merge_and_unload()`, de modo que el resultado se carga como un modelo denso convencional sin dependencia de PEFT en inferencia.
+La arquitectura subyacente es un transformer decoder de SmolLM2 con 1.711.376.384 parametros, entrenado originalmente por Hugging Face en un corpus de billones de tokens y afinado para seguir instrucciones. Sobre esa base, el autor aplica adaptadores LoRA de rango 32 sobre todas las capas lineales (q, k, v, o, gate, up y down), entrenados en precision 4-bit NF4 y posteriormente fusionados en pesos FP16 independientes mediante `merge_and_unload()`, de modo que el resultado se carga como un modelo denso convencional sin dependencia de PEFT en inferencia.
 
 Su relevancia es acotada pero clara: demuestra que con 2.000 muestras de entrenamiento y 300 pasos es posible reducir la perplejidad de 4,86 a 1,57 y elevar la precision a nivel de token del 67,97 % al 87,15 % en un dominio vertical concreto. Es un caso practico de especializacion de bajo coste sobre un modelo pequeno, util para quien quiera replicar la receta en otros dominios o desplegar un asistente deportivo ligero en hardware modesto.
 
@@ -79,10 +79,10 @@ La precision a nivel de token se mide como prediccion del siguiente token bajo t
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolLM2-Sports-Analytics | 1,71 B | No disponible | Analitica deportiva (en) | Apache 2.0 | HuggingFace |
-| SmolLM2-1.7B-Instruct (base) | 1,71 B | No disponible en esta ficha | Proposito general, instrucciones | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (segun documentacion publica del modelo) | Proposito general, multilingue | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens (segun documentacion publica del modelo) | Proposito general, multilingue | Llama 3.2 Community License | HuggingFace |
+| SmolLM2-Sports-Analytics | 1,71 B | No disponible | Analitica deportiva (en) | Apache 2.0 | Hugging Face |
+| SmolLM2-1.7B-Instruct (base) | 1,71 B | No disponible en esta ficha | Proposito general, instrucciones | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (segun documentacion publica del modelo) | Proposito general, multilingue | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens (segun documentacion publica del modelo) | Proposito general, multilingue | Llama 3.2 Community License | Hugging Face |
 
 Frente al modelo base, la comparativa directa es la de la tabla de benchmarks: el ajuste reduce la perplejidad un 67,75 % en el dominio deportivo a costa de un posible deterioro en tareas generales, mitigado parcialmente por la regularizacion con Alpaca. Frente a alternativas generalistas del mismo orden de magnitud, este modelo pierde cobertura multilingue y ventana de contexto amplia, pero gana precision en el subdominio estadistico deportivo. No se dispone de comparaciones directas publicadas con esos modelos en tareas de analitica deportiva.
 
@@ -100,7 +100,7 @@ Frente al modelo base, la comparativa directa es la de la tabla de benchmarks: e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Salmahaitham/SmolLM2-Sports-Analytics
+- Modelo en Hugging Face: https://huggingface.co/Salmahaitham/SmolLM2-Sports-Analytics
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct
 - Dataset de QA deportivo: https://huggingface.co/datasets/PedroCJardim/QASports
 - Dataset de alineamiento general: https://huggingface.co/datasets/tatsu-lab/alpaca

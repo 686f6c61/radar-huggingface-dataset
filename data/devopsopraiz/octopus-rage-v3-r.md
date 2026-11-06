@@ -6,7 +6,7 @@ Octopus-Rage-V3-R es un modelo de lenguaje multimodal (image-text-to-text) de 26
 
 La relevancia del modelo radica en su combinacion de capacidades de vision, razonamiento y codigo en un tamano de 27B, empaquetado directamente en multiples niveles de cuantizacion (desde IQ2_M hasta Q8_0) y con variantes MTP (multi-token prediction) que pueden acelerar la decodificacion. La licencia Apache 2.0 facilita su adopcion comercial, aunque la informacion publica disponible es muy limitada: no se detallan datos de entrenamiento, arquitectura interna ni resultados de benchmarks.
 
-El repositorio ocupa 389 GB, coherente con la publicacion de veinte variantes GGUF mas los proyectores de vision en tres precisiones. El modelo declara soporte para ingles y chino, y no se han publicado aun descargas ni valoraciones en HuggingFace en el momento de redactar esta ficha.
+El repositorio ocupa 389 GB, coherente con la publicacion de veinte variantes GGUF mas los proyectores de vision en tres precisiones. El modelo declara soporte para ingles y chino, y no se han publicado aun descargas ni valoraciones en Hugging Face en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -85,5 +85,5 @@ La comparativa se limita a datos publicos de modelos de tamano y categoria simil
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Devopsopraiz/Octopus-Rage-V3-R
+- Hugging Face: https://huggingface.co/Devopsopraiz/Octopus-Rage-V3-R
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

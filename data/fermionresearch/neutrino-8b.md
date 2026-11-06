@@ -87,9 +87,9 @@ La comparación principal es con Qwen3-8B, del que deriva: Neutrino-8B mantiene 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FermionResearch/Neutrino-8B
+- Modelo en Hugging Face: https://huggingface.co/FermionResearch/Neutrino-8B
 - Árbol de archivos del repositorio: https://huggingface.co/FermionResearch/Neutrino-8B/tree/main
 - Página del modelo en Fermion Research: https://www.fermionresearch.com/models/neutrino-8b/
 - Anuncio de la familia Neutrino-1: https://www.fermionresearch.com/research/neutrino-8b/
-- Perfil de Fermion Research en HuggingFace: https://huggingface.co/fermionresearch
+- Perfil de Fermion Research en Hugging Face: https://huggingface.co/fermionresearch
 - Modelo base Qwen/Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B

@@ -97,8 +97,8 @@ La comparación de rendimiento (WER) no es posible: no hay métricas publicadas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/csikasote/mms-1b-all-bemgen-combined-train-drodat-gdro-1.65e-4-dat-0.019-no-sd-0.00-62
-- Perfil del autor en HuggingFace: https://huggingface.co/csikasote
+- Modelo en Hugging Face: https://huggingface.co/csikasote/mms-1b-all-bemgen-combined-train-drodat-gdro-1.65e-4-dat-0.019-no-sd-0.00-62
+- Perfil del autor en Hugging Face: https://huggingface.co/csikasote
 - Modelo base de referencia: https://huggingface.co/facebook/mms-1b-all
 - Artículo del proyecto MMS (Scaling Speech Technology to 1,000+ Languages): https://arxiv.org/abs/2305.13516
 - Repositorio de ejemplo para el uso de MMS: https://github.com/facebookresearch/fairseq/tree/main/examples/mms

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-gte-base-en-v1.5 es un modelo de embeddings de texto publicado en el espacio de HuggingFace `alibaba-nlp-community`, con pipeline `sentence-similarity`. Convierte frases, párrafos y documentos en vectores densos comparables mediante similitud coseno, y pertenece a la familia GTE (General Text Embeddings), cuyos dos trabajos de referencia (arXiv 2308.03281 y 2407.19669) aparecen citados en las etiquetas y en la model card del repositorio. El checkpoint tiene 136.776.192 parámetros reales (unos 137 M, según los pesos safetensors) y se distribuye con licencia Apache 2.0.
+gte-base-en-v1.5 es un modelo de embeddings de texto publicado en el espacio de Hugging Face `alibaba-nlp-community`, con pipeline `sentence-similarity`. Convierte frases, párrafos y documentos en vectores densos comparables mediante similitud coseno, y pertenece a la familia GTE (General Text Embeddings), cuyos dos trabajos de referencia (arXiv 2308.03281 y 2407.19669) aparecen citados en las etiquetas y en la model card del repositorio. El checkpoint tiene 136.776.192 parámetros reales (unos 137 M, según los pesos safetensors) y se distribuye con licencia Apache 2.0.
 
-El modelo resuelve tareas de representación semántica: recuperación de información, búsqueda semántica, agrupamiento, clasificación por embeddings y reranking. Su relevancia práctica está en su tamaño contenido (apto para CPU y GPUs de consumo) y en su compatibilidad declarada con `transformers.js` y con endpoints de HuggingFace, lo que permite desplegarlo tanto en servidores como en el navegador.
+El modelo resuelve tareas de representación semántica: recuperación de información, búsqueda semántica, agrupamiento, clasificación por embeddings y reranking. Su relevancia práctica está en su tamaño contenido (apto para CPU y GPUs de consumo) y en su compatibilidad declarada con `transformers.js` y con endpoints de Hugging Face, lo que permite desplegarlo tanto en servidores como en el navegador.
 
 Se trata, en todo caso, de un codificador de embeddings y no de un modelo generativo: no produce texto, no soporta tool calling ni razonamiento multi-paso, y está entrenado únicamente para inglés. Los metadatos del repositorio indican 0 descargas y 0 likes en el momento de la consulta, y una fecha de creación de 2026-09-28, por lo que conviene verificar la procedencia y el estado de mantenimiento del espacio antes de adoptarlo en producción.
 
@@ -40,7 +40,7 @@ Tampoco se detalla la composición del dataset de entrenamiento, el número de t
 - Reranking de candidatos recuperados en una primera fase.
 - Medición de similitud semántica entre pares de frases (STS).
 - Ejecución en navegador y en Node mediante `transformers.js`, según las etiquetas del repositorio.
-- Compatibilidad declarada con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad declarada con endpoints de Hugging Face (`endpoints_compatible`).
 - Idiomas: únicamente inglés. No hay capacidades multilingües declaradas.
 - No dispone de tool calling, function calling, capacidades de agente, razonamiento multi-paso, visión, audio, modo "thinking" ni generación de texto: es un modelo de representación, no un modelo generativo.
 
@@ -98,7 +98,7 @@ No se han proporcionado resultados de benchmarks comparativos con otros modelos 
 - GPU recomendadas: cualquier GPU con 2 GB o más de VRAM es suficiente, incluidas GTX 1050 Ti, GTX 1650, RTX 3050, RTX 3060, RTX 4060 y superiores. Modelos de datacenter como A100 o H100 solo tendrían sentido para indexado masivo por su mayor ancho de banda de memoria, no por requisitos de capacidad.
 - CPU: la inferencia es viable en CPU para volúmenes moderados, dado el tamaño del modelo (137 M de parámetros).
 - GPU de consumo: sí, cabe holgadamente en cualquier GPU de consumo actual. El cuello de botella realista en producción no es el modelo, sino el índice vectorial (FAISS, Qdrant, Milvus, pgvector) y su consumo de RAM o VRAM.
-- Opciones de despliegue confirmadas por las etiquetas del repositorio: `transformers`, `sentence-transformers`, ONNX Runtime (artefactos ONNX incluidos), `transformers.js` y endpoints de HuggingFace. Otros servidores (TEI, vLLM, Ollama, llama.cpp) no están confirmados en la información disponible; en particular, no se publican pesos GGUF, por lo que llama.cpp y Ollama requerirían una conversión previa.
+- Opciones de despliegue confirmadas por las etiquetas del repositorio: `transformers`, `sentence-transformers`, ONNX Runtime (artefactos ONNX incluidos), `transformers.js` y endpoints de Hugging Face. Otros servidores (TEI, vLLM, Ollama, llama.cpp) no están confirmados en la información disponible; en particular, no se publican pesos GGUF, por lo que llama.cpp y Ollama requerirían una conversión previa.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de latencia ni de embeddings por segundo en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -107,7 +107,7 @@ Alternativas habituales en la misma categoría (encoder de embeddings en inglés
 
 | Modelo | Parámetros | Longitud de contexto | Rendimiento MTEB | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alibaba-nlp-community/gte-base-en-v1.5 | 136.776.192 | no disponible | Valores parciales en la sección de benchmarks (no verificados) | Apache 2.0 | HuggingFace, safetensors y ONNX |
+| alibaba-nlp-community/gte-base-en-v1.5 | 136.776.192 | no disponible | Valores parciales en la sección de benchmarks (no verificados) | Apache 2.0 | Hugging Face, safetensors y ONNX |
 | BAAI/bge-base-en-v1.5 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | intfloat/e5-base-v2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | thenlper/gte-base | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -126,7 +126,7 @@ Alternativas habituales en la misma categoría (encoder de embeddings en inglés
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alibaba-nlp-community/gte-base-en-v1.5
+- Modelo en Hugging Face: https://huggingface.co/alibaba-nlp-community/gte-base-en-v1.5
 - Publicación arXiv 2308.03281 (referenciada en las etiquetas del modelo): https://arxiv.org/abs/2308.03281
 - Publicación arXiv 2407.19669 (referenciada en las etiquetas del modelo): https://arxiv.org/abs/2407.19669
 - Ranking MTEB, marco de referencia para modelos de embeddings: https://huggingface.co/spaces/mteb/leaderboard

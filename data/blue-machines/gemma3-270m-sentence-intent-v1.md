@@ -82,6 +82,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blue-machines/Gemma3-270M-sentence-intent-v1
+- Modelo en Hugging Face: https://huggingface.co/blue-machines/Gemma3-270M-sentence-intent-v1
 - Modelo base Gemma 3 270M: https://huggingface.co/google/gemma-3-270m
 - Versión instruct del modelo base: https://huggingface.co/google/gemma-3-270m-it

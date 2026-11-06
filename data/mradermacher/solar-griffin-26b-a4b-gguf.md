@@ -110,7 +110,7 @@ La informacion disponible no permite establecer una comparativa fiable con model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Solar-Griffin-26B-A4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Solar-Griffin-26B-A4B-GGUF
 - Modelo base: https://huggingface.co/Cyclone-Labs/Solar-Griffin-26B-A4B
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Solar-Griffin-26B-A4B-GGUF
 - Peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

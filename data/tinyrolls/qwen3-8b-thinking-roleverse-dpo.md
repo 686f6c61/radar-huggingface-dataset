@@ -95,11 +95,11 @@ El checkpoint DPO solo sobre Qwen3-8B Thinking mejora tanto la respuesta enactiv
 
 | Modelo | Parametros | Contexto | Resp Avg (RoleVerse) | MCQ % | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| Qwen3-8B-Thinking-RoleVerse-DPO (este) | 8,19 B | no disponible | 3,60 | 43,12 | Apache-2.0 | HuggingFace |
-| Qwen3-8B Thinking base | 8,19 B | no disponible | 3,38 | 40,85 | Apache-2.0 | HuggingFace |
-| Qwen3-8B Thinking + SFT & DPO | 8,19 B | no disponible | 3,61 | 34,60 | Apache-2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct + Only DPO | 8 B | no disponible | 3,42 | 32,39 | Llama 3.1 Community | HuggingFace |
-| R1-Distill-Qwen3-8B + Only DPO | 8 B aprox. | no disponible | 3,07 | 49,62 | MIT | HuggingFace |
+| Qwen3-8B-Thinking-RoleVerse-DPO (este) | 8,19 B | no disponible | 3,60 | 43,12 | Apache-2.0 | Hugging Face |
+| Qwen3-8B Thinking base | 8,19 B | no disponible | 3,38 | 40,85 | Apache-2.0 | Hugging Face |
+| Qwen3-8B Thinking + SFT & DPO | 8,19 B | no disponible | 3,61 | 34,60 | Apache-2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct + Only DPO | 8 B | no disponible | 3,42 | 32,39 | Llama 3.1 Community | Hugging Face |
+| R1-Distill-Qwen3-8B + Only DPO | 8 B aprox. | no disponible | 3,07 | 49,62 | MIT | Hugging Face |
 
 Frente a la base sin entrenar, este checkpoint mejora ambas metricas. Frente a la variante SFT+DPO de la misma base, obtiene mejor comprension social (43,12 frente a 34,60) con una respuesta enactiva practicamente identica. Frente a Llama-3.1-8B-Instruct con DPO, mejora en ambas dimensiones. Frente a R1-Distill-Qwen3-8B con DPO, mejora la respuesta enactiva pero queda por debajo en comprension social, lo que ilustra el trade-off razonamiento-sociedad descrito en el paper.
 
@@ -118,7 +118,7 @@ Frente a la base sin entrenar, este checkpoint mejora ambas metricas. Frente a l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tinyrolls/Qwen3-8B-Thinking-RoleVerse-DPO
+- Modelo en Hugging Face: https://huggingface.co/tinyrolls/Qwen3-8B-Thinking-RoleVerse-DPO
 - Dataset RoleVerse: https://huggingface.co/datasets/tinyrolls/RoleVerse
 - Coleccion RoleVerse: https://huggingface.co/collections/tinyrolls/roleverse-6ae2cab39027be0451529147
 - Codigo del proyecto: https://github.com/tinyrolls/RoleVerse

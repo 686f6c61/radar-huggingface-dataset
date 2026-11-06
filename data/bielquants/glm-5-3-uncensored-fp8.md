@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks de terceros (DeepSeek-V3, Qwen u otros MoE 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bielquants/GLM-5.3-UNCENSORED-FP8
+- Repositorio en Hugging Face: https://huggingface.co/bielquants/GLM-5.3-UNCENSORED-FP8
 - Modelo base directo (cuantizacion FP8): https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
 - Modelo upstream: https://huggingface.co/zai-org/GLM-5.3
 - Perfil del autor de la model card: https://huggingface.co/dealignai

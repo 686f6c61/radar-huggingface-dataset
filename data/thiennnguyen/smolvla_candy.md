@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ThiennNguyen/smolvla_candy | 450M | no disponible | Apache-2.0 | HuggingFace | Fine-tuning de SmolVLA para tarea específica |
-| lerobot/smolvla_base | 450M | no disponible | Apache-2.0 | HuggingFace | Modelo base de SmolVLA, preentrenado en datos comunitarios |
-| OpenVLA | 7B | 32k tokens (aprox.) | MIT | HuggingFace | VLA mucho más grande, requiere más VRAM (≥24 GB) |
+| ThiennNguyen/smolvla_candy | 450M | no disponible | Apache-2.0 | Hugging Face | Fine-tuning de SmolVLA para tarea específica |
+| lerobot/smolvla_base | 450M | no disponible | Apache-2.0 | Hugging Face | Modelo base de SmolVLA, preentrenado en datos comunitarios |
+| OpenVLA | 7B | 32k tokens (aprox.) | MIT | Hugging Face | VLA mucho más grande, requiere más VRAM (≥24 GB) |
 | RT-2 (Google) | 55B | no publicado | propietaria | no público | Modelo propietario, no comparable en acceso |
 
 SmolVLA se posiciona como una alternativa ligera y abierta frente a VLAs masivos como OpenVLA o RT-2, priorizando la eficiencia y el despliegue en hardware asequible. Este fine-tuning concreto añade la especificidad de una tarea robótica particular sobre esa base.
@@ -78,10 +78,10 @@ SmolVLA se posiciona como una alternativa ligera y abierta frente a VLAs masivos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThiennNguyen/smolvla_candy
+- Modelo en Hugging Face: https://huggingface.co/ThiennNguyen/smolvla_candy
 - Dataset de entrenamiento: https://huggingface.co/datasets/ThiennNguyen/record-test-60eps
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper de SmolVLA: https://arxiv.org/abs/2506.01844
-- Blog de HuggingFace sobre SmolVLA: https://huggingface.co/blog/smolvla
+- Blog de Hugging Face sobre SmolVLA: https://huggingface.co/blog/smolvla
 - Sitio web de SmolVLA: https://smolvla.net/index_en
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

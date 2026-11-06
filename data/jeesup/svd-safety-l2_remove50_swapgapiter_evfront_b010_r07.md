@@ -105,7 +105,7 @@ No se dispone de resultados de benchmarks comparables ejecutados bajo el mismo p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_evfront_b010_r07
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_evfront_b010_r07
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper de Llama 2: https://arxiv.org/abs/2307.09288
 - Paper de SVD-LLM (metodo de compresion citado en la model card): https://arxiv.org/abs/2403.07378

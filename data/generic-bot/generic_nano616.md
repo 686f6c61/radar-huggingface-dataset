@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`generic-bot/generic_nano616` es un modelo de lenguaje publicado en HuggingFace por el usuario `generic-bot`. Se distribuye exclusivamente en formato GGUF (cuantizado) dentro de un repositorio de 0,3 GB, lo que apunta a un modelo de pequeno tamano orientado a inferencia local. Los pesos en safetensors asociados al repositorio suman 506.925.056 parametros (aproximadamente 507 millones), una cifra coherente con un modelo tipo "nano" de la familia de transformers pequenos.
+`generic-bot/generic_nano616` es un modelo de lenguaje publicado en Hugging Face por el usuario `generic-bot`. Se distribuye exclusivamente en formato GGUF (cuantizado) dentro de un repositorio de 0,3 GB, lo que apunta a un modelo de pequeno tamano orientado a inferencia local. Los pesos en safetensors asociados al repositorio suman 506.925.056 parametros (aproximadamente 507 millones), una cifra coherente con un modelo tipo "nano" de la familia de transformers pequenos.
 
 La model card publicada es practicamente vacia: solo declara la licencia `cc` y no incluye descripcion, arquitectura, datos de entrenamiento ni resultados de evaluacion. Los resultados de busqueda web no contienen informacion tecnica sobre este modelo concreto; los enlaces devueltos corresponden a definiciones de diccionario y a una marca de ropa homonima, sin relacion con el artefacto.
 
@@ -39,7 +39,7 @@ Tampoco se documentan los datos de entrenamiento: numero de tokens, composicion 
 ## Casos de uso
 
 - Prototipado local de pipelines de inferencia: al ocupar 0,3 GB en GGUF, el modelo puede cargarse en entornos con recursos muy limitados para validar integraciones de llama.cpp u Ollama antes de sustituirlo por un modelo documentado.
-- Pruebas de compatibilidad de endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse tras una API compatible con los endpoints de HuggingFace; util para validar clientes HTTP y esquemas de peticion.
+- Pruebas de compatibilidad de endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse tras una API compatible con los endpoints de Hugging Face; util para validar clientes HTTP y esquemas de peticion.
 - Experimentacion academica con modelos pequenos: sirve como baseline de ~507 M de parametros en estudios comparativos, siempre que se documente su procedencia.
 - Generacion de texto de relleno en entornos de test: para poblar fixtures o pruebas de integracion donde la calidad del texto no es critica.
 - Evaluacion de cuantizaciones GGUF: permite medir latencia y consumo de memoria en CPU/GPU de gama baja con un artefacto de 0,3 GB.
@@ -83,6 +83,6 @@ Los datos de los modelos comparables provienen de sus model cards publicas; los 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/generic-bot/generic_nano616
+- Hugging Face: https://huggingface.co/generic-bot/generic_nano616
 - No se han encontrado papers, blogs, repositorios ni demos asociados a este modelo en la busqueda web realizada.
 - Los resultados de busqueda devueltos (definiciones de diccionario, Wikipedia sobre medicamentos genericos, marca de ropa) no guardan relacion con el modelo y se descartan como fuentes.

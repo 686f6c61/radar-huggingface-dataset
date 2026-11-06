@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo en benchmarks estandar para es
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-gguf
+- Modelo GGUF en Hugging Face: https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-gguf
 - Modelo base (safetensors): https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b
 - Modelo grug-27b-v1.1 (safetensors): https://huggingface.co/ProCreations/grug-27b-v1.1
 - Modelo grug-27b (safetensors): https://huggingface.co/ProCreations/grug-27b

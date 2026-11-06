@@ -78,7 +78,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/SJT-2.1B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/SJT-2.1B-GGUF
 - Modelo base: https://huggingface.co/Sakalti/SJT-2.1B
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/SJT-2.1B-i1-GGUF
 - Pagina de resumen del autor: https://hf.tst.eu/model#SJT-2.1B-GGUF

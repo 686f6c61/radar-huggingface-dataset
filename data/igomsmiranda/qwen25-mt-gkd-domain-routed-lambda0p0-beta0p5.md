@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`igomsmiranda/qwen25-mt-gkd-domain-routed-lambda0p0-beta0p5` es un checkpoint de lenguaje de unos 1.543.714.304 parámetros (1,54 mil millones) publicado en HuggingFace por el usuario igomsmiranda. Se trata de un ajuste fino (fine-tuning) obtenido con TRL sobre una arquitectura de la familia Qwen2, según las etiquetas del repositorio y el campo `architectures` de los pesos en safetensors. El modelo no se presenta como un lanzamiento oficial, sino como el resultado de un experimento de destilación de conocimiento multi-profesor (multi-teacher GKD, *Generalized Knowledge Distillation*) con enrutado por dominio.
+`igomsmiranda/qwen25-mt-gkd-domain-routed-lambda0p0-beta0p5` es un checkpoint de lenguaje de unos 1.543.714.304 parámetros (1,54 mil millones) publicado en Hugging Face por el usuario igomsmiranda. Se trata de un ajuste fino (fine-tuning) obtenido con TRL sobre una arquitectura de la familia Qwen2, según las etiquetas del repositorio y el campo `architectures` de los pesos en safetensors. El modelo no se presenta como un lanzamiento oficial, sino como el resultado de un experimento de destilación de conocimiento multi-profesor (multi-teacher GKD, *Generalized Knowledge Distillation*) con enrutado por dominio.
 
 El nombre del checkpoint resume su configuración experimental: estudiante Qwen2.5 sometido previamente a un SFT completo (`fullsft_student`), profesores también con SFT completo (`fullsft_teachers`), enrutado de profesores por dominio (`domain_routed`), un parámetro lambda de 0,0 (`lambda0p0`), beta de 0,5 (`beta0p5`), precisión bf16 y evaluación/entrenamiento con 256 tokens por secuencia (`bf16_256tok`, `eval500`). Todo ello apunta a un trabajo de investigación sobre mezcla de profesores especializados, no a un modelo listo para producción.
 
@@ -34,7 +34,7 @@ El entrenamiento se realizó con TRL 1.0.0.dev0, Transformers 5.9.0, PyTorch 2.6
 - Generación de texto conversacional: la model card incluye un ejemplo de uso con `pipeline("text-generation")` y mensajes con rol `user`, propio de un modelo ajustado sobre formato de chat.
 - Razonamiento y respuesta a preguntas abiertas de tipo dilema o reflexión, según el ejemplo de la propia model card.
 - Destilación multi-profesor por dominio: el checkpoint está optimizado para reproducir el comportamiento agregado de varios profesores especializados, lo que en teoría mejora el rendimiento en dominios cubiertos por los profesores.
-- Compatibilidad con el ecosistema transformers y text-generation-inference (tags `text-generation-inference` y `endpoints_compatible`), lo que permite desplegarlo con el servidor TGI de HuggingFace.
+- Compatibilidad con el ecosistema transformers y text-generation-inference (tags `text-generation-inference` y `endpoints_compatible`), lo que permite desplegarlo con el servidor TGI de Hugging Face.
 - Soporte de cuantización posterior mediante herramientas estándar (llama.cpp, GPTQ, AWQ), aunque el autor no publica versiones cuantizadas.
 - Capacidades de tool calling, agentes, visión, audio o modo *thinking*: no disponibles o no documentadas en la información proporcionada.
 - Capacidades multilingües: no declaradas; no se puede confirmar el grado de cobertura fuera del inglés.
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| qwen25-mt-gkd-domain-routed-lambda0p0-beta0p5 (este) | 1,54 B | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes | No disponibles |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (dato público de la familia) | Apache-2.0 | HuggingFace, ampliamente descargado | Sí, publicados por el autor |
-| SmolLM2-1.7B-Instruct | 1,71 B | 8.192 tokens (dato público) | Apache-2.0 | HuggingFace | Sí, publicados por el autor |
-| Gemma 2 2B Instruct | 2,6 B | 8.192 tokens (dato público) | Términos de uso de Gemma | HuggingFace (acceso condicionado) | Sí, publicados por el autor |
+| qwen25-mt-gkd-domain-routed-lambda0p0-beta0p5 (este) | 1,54 B | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes | No disponibles |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (dato público de la familia) | Apache-2.0 | Hugging Face, ampliamente descargado | Sí, publicados por el autor |
+| SmolLM2-1.7B-Instruct | 1,71 B | 8.192 tokens (dato público) | Apache-2.0 | Hugging Face | Sí, publicados por el autor |
+| Gemma 2 2B Instruct | 2,6 B | 8.192 tokens (dato público) | Términos de uso de Gemma | Hugging Face (acceso condicionado) | Sí, publicados por el autor |
 
 La comparación relevante es frente a Qwen2.5-1.5B-Instruct, ya que este checkpoint parte presumiblemente de esa familia y tamaño; la diferencia principal no es de arquitectura sino de licencia (ausente aquí), documentación (nula) y evaluación (inexistente). No se dispone de datos que permitan afirmar que la destilación multi-profesor mejora al modelo base en ninguna tarea concreta.
 
@@ -89,7 +89,7 @@ La comparación relevante es frente a Qwen2.5-1.5B-Instruct, ya que este checkpo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/igomsmiranda/qwen25-mt-gkd-domain-routed-lambda0p0-beta0p5
+- Modelo en Hugging Face: https://huggingface.co/igomsmiranda/qwen25-mt-gkd-domain-routed-lambda0p0-beta0p5
 - Run de Weights & Biases del entrenamiento: https://wandb.ai/diogomsmirandaa-team/mopd-qwen25-fullsft-mt-gkd/runs/ctpzco1z
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Repositorio de Transformers: https://github.com/huggingface/transformers

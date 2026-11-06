@@ -78,6 +78,6 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sjenit/embeddinggemma-2-ONNX-wasm
+- Repositorio Hugging Face: https://huggingface.co/sjenit/embeddinggemma-2-ONNX-wasm
 - Modelo base ONNX: https://huggingface.co/onnx-community/embeddinggemma-2-ONNX
 - Modelo original: https://huggingface.co/google/embeddinggemma-2

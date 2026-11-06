@@ -98,7 +98,7 @@ La única comparación con datos reales es contra el modelo base bajo el mismo p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/promotion/Qwen2.5-Math-1.5B-NBIVO-seed43
+- Modelo en Hugging Face: https://huggingface.co/promotion/Qwen2.5-Math-1.5B-NBIVO-seed43
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B
 - Conjunto de evaluación AMC23: https://huggingface.co/datasets/math-ai/amc23
 - Conjunto de entrenamiento MATH: https://huggingface.co/datasets/hendrycks/competition_math

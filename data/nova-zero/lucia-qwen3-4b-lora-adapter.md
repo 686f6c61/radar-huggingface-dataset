@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lucia-Qwen3-4B-LoRA-Adapter es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Nova-Zero en HuggingFace, entrenado mediante fine-tuning sobre el modelo base `unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit`, que a su vez es una version cuantizada a 4 bits (bitsandbytes NF4) del Qwen3-4B-Instruct-2507 de Alibaba Qwen. No se trata por tanto de un modelo completo, sino de un conjunto de pesos adicionales que deben cargarse junto al modelo base para reproducir el comportamiento ajustado. El repositorio ocupa 0,3 GB, un tamano coherente con pesos de adaptador en precision de entrenamiento.
+Lucia-Qwen3-4B-LoRA-Adapter es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Nova-Zero en Hugging Face, entrenado mediante fine-tuning sobre el modelo base `unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit`, que a su vez es una version cuantizada a 4 bits (bitsandbytes NF4) del Qwen3-4B-Instruct-2507 de Alibaba Qwen. No se trata por tanto de un modelo completo, sino de un conjunto de pesos adicionales que deben cargarse junto al modelo base para reproducir el comportamiento ajustado. El repositorio ocupa 0,3 GB, un tamano coherente con pesos de adaptador en precision de entrenamiento.
 
 El interes de la ficha es limitado pero instructivo: el autor ha utilizado Unsloth para acelerar el entrenamiento (la model card afirma "2x faster"), y el resultado se distribuye bajo licencia Apache 2.0, con soporte declarado unicamente para ingles. No se documenta el dataset de entrenamiento, el numero de pasos, el rango del adaptador ni ningun resultado de evaluacion, y el repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, por lo que carece de validacion por parte de la comunidad.
 
@@ -96,7 +96,7 @@ Los datos de la columna del adaptador son los declarados en su repositorio; los 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nova-Zero/Lucia-Qwen3-4B-LoRA-Adapter
+- Hugging Face: https://huggingface.co/Nova-Zero/Lucia-Qwen3-4B-LoRA-Adapter
 - Modelo base: https://huggingface.co/unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos o repositorios del autor) en la busqueda web realizada.

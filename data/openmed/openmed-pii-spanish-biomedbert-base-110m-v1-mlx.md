@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio MLX en HuggingFace: https://huggingface.co/OpenMed/OpenMed-PII-Spanish-BiomedBERT-Base-110M-v1-mlx
+- Repositorio MLX en Hugging Face: https://huggingface.co/OpenMed/OpenMed-PII-Spanish-BiomedBERT-Base-110M-v1-mlx
 - Checkpoint original (modelo base): https://huggingface.co/OpenMed/OpenMed-PII-Spanish-BiomedBERT-Base-110M-v1
 - Repositorio GitHub de OpenMed: https://github.com/maziyarpanahi/openmed
 - Documentación del backend MLX: https://openmed.life/docs/mlx-backend/

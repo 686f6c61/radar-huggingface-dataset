@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l2_remove50_swapgapiter_b010_r03` es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace. No es un modelo entrenado desde cero ni un asistente conversacional desplegable, sino el resultado de aplicar una cadena de dos transformaciones sobre `meta-llama/Llama-2-7b-chat-hf`: primero una compresión SVD-LLM que elimina el 50,01 % de los parámetros densos, y después una edición selectiva de componentes mediante la regla de selección `gap_iter`, aplicada en 3 de las 10 rondas previstas.
+`svd-safety-l2_remove50_swapgapiter_b010_r03` es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face. No es un modelo entrenado desde cero ni un asistente conversacional desplegable, sino el resultado de aplicar una cadena de dos transformaciones sobre `meta-llama/Llama-2-7b-chat-hf`: primero una compresión SVD-LLM que elimina el 50,01 % de los parámetros densos, y después una edición selectiva de componentes mediante la regla de selección `gap_iter`, aplicada en 3 de las 10 rondas previstas.
 
 El objetivo declarado es medir el compromiso entre seguridad y utilidad bajo compresión: los autores documentan que la compresión por sí sola eleva la tasa de éxito de ataques y estudian qué regla de selección de componentes repara mejor ese daño. El checkpoint corresponde a una celda concreta de una rejilla de experimentos sobre reglas de selección y presupuestos de restauración, con un presupuesto total del 1,000 % de los parámetros densos y un 0,300 % efectivamente intercambiado en las tres rondas aplicadas (19.420.160 parámetros).
 
@@ -23,7 +23,7 @@ Es relevante ahora porque aborda un problema práctico de la IA abierta: comprim
 | Fraccion de parametros resultante | 0,4999 respecto al modelo denso original |
 | Modelo base | meta-llama/Llama-2-7b-chat-hf |
 | Pipeline | text-generation |
-| Fecha de creacion | 2026-09-17 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-17 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks de capacidades generales (MMLU, GSM
 
 | Modelo | Parametros | Contexto | Seguridad medida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_remove50_swapgapiter_b010_r03 | 6,74B (0,4999 del denso) | no disponible | AdvBench ASR 0,4900; StrongREJECT ASR 0,4100; over-refusal 0,0708 | Llama 2 Community License | HuggingFace, 0 descargas |
-| meta-llama/Llama-2-7b-chat-hf (base) | ~7B | no disponible en esta ficha | no disponible | Llama 2 Community License | HuggingFace |
-| Llama-2-13b-chat | no disponible | no disponible | no disponible | Llama 2 Community License | HuggingFace |
-| Mistral-7B-Instruct | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| svd-safety-l2_remove50_swapgapiter_b010_r03 | 6,74B (0,4999 del denso) | no disponible | AdvBench ASR 0,4900; StrongREJECT ASR 0,4100; over-refusal 0,0708 | Llama 2 Community License | Hugging Face, 0 descargas |
+| meta-llama/Llama-2-7b-chat-hf (base) | ~7B | no disponible en esta ficha | no disponible | Llama 2 Community License | Hugging Face |
+| Llama-2-13b-chat | no disponible | no disponible | no disponible | Llama 2 Community License | Hugging Face |
+| Mistral-7B-Instruct | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de datos comparativos de benchmarks de capacidades ni de métricas de seguridad de los modelos alternativos en la información proporcionada, por lo que la comparación cuantitativa no puede completarse. La comparación con Llama-2-7b-chat es la más directa, ya que es el modelo de partida declarado.
 
@@ -101,7 +101,7 @@ No se dispone de datos comparativos de benchmarks de capacidades ni de métricas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r03
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r03
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo, al paper de SVD-LLM ni a la metodología de swap en los resultados de búsqueda disponibles; los resultados obtenidos corresponden a portales de anuncios de insolvencia alemanes y no guardan relación con el modelo.

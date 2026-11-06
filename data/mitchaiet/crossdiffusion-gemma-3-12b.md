@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CrossDiffusion Gemma 3 12B | 12B + LoRA (~1 GB) | no disponible | no disponible (sin evaluacion retenida) | Gemma Terms of Use | Publico en HuggingFace |
-| google/gemma-3-12b-it | 12B | el declarado por Gemma 3 (consultar model card oficial) | ampliamente documentado por Google | Gemma Terms of Use | Publico en HuggingFace |
+| CrossDiffusion Gemma 3 12B | 12B + LoRA (~1 GB) | no disponible | no disponible (sin evaluacion retenida) | Gemma Terms of Use | Publico en Hugging Face |
+| google/gemma-3-12b-it | 12B | el declarado por Gemma 3 (consultar model card oficial) | ampliamente documentado por Google | Gemma Terms of Use | Publico en Hugging Face |
 | Alternativas especializadas en resolucion de crucigramas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Unicamente puede establecerse una comparacion directa con el checkpoint base google/gemma-3-12b-it, del que este modelo deriva y cuya licencia hereda. No se dispone de informacion sobre otros modelos o adaptadores equivalentes orientados especificamente a la resolucion de crucigramas, por lo que esa parte de la comparativa queda como no disponible.
@@ -89,11 +89,11 @@ Unicamente puede establecerse una comparacion directa con el checkpoint base goo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mitchaiet/crossdiffusion-gemma-3-12b
+- Modelo en Hugging Face: https://huggingface.co/mitchaiet/crossdiffusion-gemma-3-12b
 - Repositorio de la aplicacion CrossDiffusion (privado, requiere acceso): https://github.com/mitchaiet/crossdiffusion
 - Metodologia de evaluacion del proyecto: https://github.com/mitchaiet/crossdiffusion/blob/master/docs/EVALUATION.md
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - Gemma Prohibited Use Policy: https://ai.google.dev/gemma/prohibited_use_policy
-- Documentacion de la CLI de HuggingFace: https://huggingface.co/docs/huggingface_hub/en/guides/cli
+- Documentacion de la CLI de Hugging Face: https://huggingface.co/docs/huggingface_hub/en/guides/cli
 - Resultados de busqueda web: no se han encontrado enlaces adicionales relevantes sobre este modelo; los resultados devueltos por la busqueda corresponden a sitios sin relacion con el proyecto.

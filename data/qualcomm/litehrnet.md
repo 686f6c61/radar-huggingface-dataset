@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LiteHRNet es un modelo de estimación de pose humana publicado por Qualcomm en HuggingFace, con el identificador `qualcomm/LiteHRNet`. Detecta la postura de una persona y devuelve la posición y la confianza de cada una de las 17 articulaciones (keypoints). No es un modelo de lenguaje: es un modelo de visión por computador orientado a la detección de puntos clave, con una resolución de entrada fija de 256x192 píxeles.
+LiteHRNet es un modelo de estimación de pose humana publicado por Qualcomm en Hugging Face, con el identificador `qualcomm/LiteHRNet`. Detecta la postura de una persona y devuelve la posición y la confianza de cada una de las 17 articulaciones (keypoints). No es un modelo de lenguaje: es un modelo de visión por computador orientado a la detección de puntos clave, con una resolución de entrada fija de 256x192 píxeles.
 
 El modelo es una implementación de Lite-HRNet, la variante ligera de la familia HRNet (High-Resolution Network), y se distribuye ya exportado y optimizado para ejecutarse en dispositivos Qualcomm, concretamente sobre la NPU de chipsets Snapdragon y Dragonwing. Qualcomm proporciona artefactos listos para desplegar en tres runtimes (ONNX, QNN_DLC y TFLite) y una librería (Qualcomm AI Hub Models) para reexportar el modelo con pesos, formas de entrada y configuraciones de dispositivo propias.
 
@@ -28,7 +28,7 @@ Su relevancia práctica está en el binomio tamaño/latencia: con solo 1,11 mill
 | Autor | qualcomm |
 | Fecha de creacion | 2024-02-25 |
 | Ultima actualizacion | 2026-09-10 |
-| Descargas / likes en HuggingFace | 264 / 16 |
+| Descargas / likes en Hugging Face | 264 / 16 |
 | Runtime de referencia | QAIRT 2.45; ONNX Runtime 1.27.1 para el artefacto ONNX |
 | Unidad de computo objetivo | NPU de chipsets Qualcomm Snapdragon y Dragonwing |
 
@@ -136,11 +136,11 @@ No se incluyen datos comparativos de otros modelos en la informacion proporciona
 - La licencia Apache 2.0 permite uso comercial, pero se aplica al artefacto publicado por Qualcomm. La implementacion original de Lite-HRNet en el repositorio `HRNet/Lite-HRNet` y el paper asociado deben verificarse por separado.
 - El modelo esta atado a un pipeline de despliegue concreto (Qualcomm AI Hub Models, QAIRT, AI Hub Workbench). Reexportar con pesos ajustados requiere pasar por esa libreria y, para ejecutar en dispositivo alojado, por una cuenta de Qualcomm.
 - El repositorio ocupa 0,2 GB, principalmente por los artefactos exportados de los tres runtimes, algo a tener en cuenta en pipelines de integracion continua que descarguen el modelo completo.
-- Los datos de descargas y likes del repositorio (264 y 16 respectivamente) reflejan una adopcion limitada dentro de HuggingFace y no deben tomarse como indicador de calidad.
+- Los datos de descargas y likes del repositorio (264 y 16 respectivamente) reflejan una adopcion limitada dentro de Hugging Face y no deben tomarse como indicador de calidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/LiteHRNet
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/LiteHRNet
 - Pagina del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/litehrnet
 - Implementacion en Qualcomm AI Hub Models (GitHub): https://github.com/qualcomm/ai-hub-models/blob/v0.62.0/src/qai_hub_models/models/litehrnet
 - Repositorio Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models

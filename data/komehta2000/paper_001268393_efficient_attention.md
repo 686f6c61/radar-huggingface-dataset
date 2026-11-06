@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo de lenguaje ni un sistema de IA desplegable, sino un artículo académico en formato LaTeX NeurIPS titulado "Efficient Attention: Attention with Linear Complexities". El trabajo, publicado originalmente en arXiv (1812.01243) y presentado en WACV 2021, propone un mecanismo de atención alternativo al dot-product attention clásico que reduce la complejidad computacional y de memoria de cuadrática a lineal respecto al tamaño de la secuencia de entrada.
+Este repositorio de Hugging Face no contiene un modelo de lenguaje ni un sistema de IA desplegable, sino un artículo académico en formato LaTeX NeurIPS titulado "Efficient Attention: Attention with Linear Complexities". El trabajo, publicado originalmente en arXiv (1812.01243) y presentado en WACV 2021, propone un mecanismo de atención alternativo al dot-product attention clásico que reduce la complejidad computacional y de memoria de cuadrática a lineal respecto al tamaño de la secuencia de entrada.
 
 La relevancia de este paper radica en que aborda uno de los principales cuellos de botella de los transformers: el coste cuadrático de la atención, que limita su aplicación a entradas de alta resolución o secuencias largas. El mecanismo propuesto es matemáticamente equivalente a la atención por producto punto, pero con un coste sustancialmente menor, lo que permite integrar módulos de atención de forma más amplia y flexible en redes neuronales, mejorando la precisión en tareas de visión por computador y procesamiento de lenguaje natural.
 
@@ -47,7 +47,7 @@ No se trata de un modelo entrenado, por lo que no hay datos de entrenamiento, to
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El paper original (arXiv 1812.01243) reporta experimentos en tareas de visión por computador, pero los valores numéricos concretos no están incluidos en la model card del repositorio de HuggingFace. Para obtener métricas detalladas, se recomienda consultar el artículo completo en arXiv o el repositorio de GitHub.
+No se han publicado resultados de benchmarks en la informacion disponible. El paper original (arXiv 1812.01243) reporta experimentos en tareas de visión por computador, pero los valores numéricos concretos no están incluidos en la model card del repositorio de Hugging Face. Para obtener métricas detalladas, se recomienda consultar el artículo completo en arXiv o el repositorio de GitHub.
 
 ## Requisitos de hardware
 
@@ -70,7 +70,7 @@ No disponible. Este repositorio no contiene un modelo comparable con otros model
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/komehta2000/paper_001268393_efficient_attention
+- Repositorio de Hugging Face: https://huggingface.co/komehta2000/paper_001268393_efficient_attention
 - Paper en arXiv: https://arxiv.org/abs/1812.01243
 - Repositorio oficial de implementaciones (GitHub): https://github.com/hkunlp/efficient-attention
 - Publicación en IEEE (WACV 2021): https://ieeexplore.ieee.org/document/9423033

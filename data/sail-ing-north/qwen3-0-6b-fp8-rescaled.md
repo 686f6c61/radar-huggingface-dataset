@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparados para esta publicacion concreta,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sail-ing-north/Qwen3-0.6B-FP8-rescaled
+- Hugging Face: https://huggingface.co/sail-ing-north/Qwen3-0.6B-FP8-rescaled
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Checkpoint FP8 oficial de referencia: https://huggingface.co/Qwen/Qwen3-0.6B-FP8
 - Licencia referenciada: https://huggingface.co/Qwen/Qwen3-0.6B-FP8/blob/main/LICENSE

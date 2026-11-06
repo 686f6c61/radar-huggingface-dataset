@@ -86,7 +86,7 @@ No se dispone de datos comparativos publicados en la información proporcionada 
 
 | Modelo | Parámetros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (Peanut Pick and Place, PI0.5) | 4,14 mil millones | 50 acciones por *chunk*; contexto de texto no disponible | No disponible | Repositorio de HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| Este checkpoint (Peanut Pick and Place, PI0.5) | 4,14 mil millones | 50 acciones por *chunk*; contexto de texto no disponible | No disponible | Repositorio de Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | Otros checkpoints de la familia PI0.5 | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 | Otras políticas VLA de la biblioteca LeRobot | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 
@@ -107,7 +107,7 @@ Cualquier comparación numérica con alternativas como OpenVLA, SmolVLA o los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_Pi0.5_bs32_step20000
+- Modelo en Hugging Face: https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_Pi0.5_bs32_step20000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern
 - Revisión del dataset usada en el entrenamiento: `05286a17a145234ed80870702f4d9757f00194c3`
 - Búsqueda web: no se han encontrado enlaces relevantes sobre este modelo. Los resultados devueltos correspondían a páginas sobre errores de DLL en Windows, sin relación con el modelo.

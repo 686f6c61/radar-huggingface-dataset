@@ -6,7 +6,7 @@
 
 Su relevancia no proviene de capacidades generativas, sino de su valor como pieza reproducible de docencia y de validación de infraestructura: es un caso mínimo, determinista y con recompensa máxima conocida (1.0), lo que lo convierte en un buen banco de pruebas para pipelines de evaluación de RL, para comparar implementaciones de Q-learning y para verificar integraciones con el Hub. El autor declara un `mean_reward` de 1.00 +/- 0.00 sobre `FrozenLake-v1-4x4-no_slippery`, si bien la métrica figura como no verificada (`verified: false`).
 
-Conviene subrayar que la ficha de HuggingFace no aporta información sobre hiperparámetros, semillas, número de episodios de entrenamiento ni licencia. Cualquier uso en producción fuera del entorno FrozenLake 4x4 determinista carece de sentido técnico: la política está indexada a los 16 estados discretos de ese mapa concreto.
+Conviene subrayar que la ficha de Hugging Face no aporta información sobre hiperparámetros, semillas, número de episodios de entrenamiento ni licencia. Cualquier uso en producción fuera del entorno FrozenLake 4x4 determinista carece de sentido técnico: la política está indexada a los 16 estados discretos de ese mapa concreto.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 
 | Modelo | Enfoque | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| cazePuroLove/q-FrozenLake-v1-4x4-noSlippery-Q-Learning | Q-learning tabular | 64 valores Q (segun entorno) | No aplica | mean_reward 1.00 +/- 0.00 (no verificado) | No disponible | HuggingFace Hub, 0 descargas |
+| cazePuroLove/q-FrozenLake-v1-4x4-noSlippery-Q-Learning | Q-learning tabular | 64 valores Q (segun entorno) | No aplica | mean_reward 1.00 +/- 0.00 (no verificado) | No disponible | Hugging Face Hub, 0 descargas |
 | Otros agentes Q-learning para FrozenLake publicados en el Hub | Q-learning tabular | No disponible | No aplica | No disponible en la informacion proporcionada | No disponible | Hub |
 | DQN sobre FrozenLake (implementaciones tipo Stable-Baselines3) | Red neuronal profunda con replay buffer | No disponible | No aplica | No disponible en la informacion proporcionada | No disponible | Codigo abierto, no necesariamente en el Hub |
 | PPO sobre FrozenLake | Policy gradient con actor-critico | No disponible | No aplica | No disponible en la informacion proporcionada | No disponible | Codigo abierto, no necesariamente en el Hub |
@@ -89,5 +89,5 @@ No se dispone de datos de benchmarks de las alternativas en la informacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cazePuroLove/q-FrozenLake-v1-4x4-noSlippery-Q-Learning
+- Modelo en Hugging Face: https://huggingface.co/cazePuroLove/q-FrozenLake-v1-4x4-noSlippery-Q-Learning
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

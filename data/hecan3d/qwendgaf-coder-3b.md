@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QwenDGAF-Coder-3B es un repositorio de pesos en formato GGUF publicado por el usuario hecan3d en HuggingFace. Por los nombres de los archivos incluidos (`Qwen2.5-Coder-3B-Instruct.BF16.gguf`, `Q4_K_M`, `Q6_K`, `Q8_0`), el modelo parece ser una conversión a GGUF de un modelo derivado de la familia Qwen2.5-Coder-3B-Instruct, etiquetado en el repositorio como `qwen2`. La model card no documenta qué fine-tune o modificación concreta se aplicó sobre la base, de modo que la naturaleza exacta del modelo (fine-tune, abliteration u otro ajuste) no está disponible.
+QwenDGAF-Coder-3B es un repositorio de pesos en formato GGUF publicado por el usuario hecan3d en Hugging Face. Por los nombres de los archivos incluidos (`Qwen2.5-Coder-3B-Instruct.BF16.gguf`, `Q4_K_M`, `Q6_K`, `Q8_0`), el modelo parece ser una conversión a GGUF de un modelo derivado de la familia Qwen2.5-Coder-3B-Instruct, etiquetado en el repositorio como `qwen2`. La model card no documenta qué fine-tune o modificación concreta se aplicó sobre la base, de modo que la naturaleza exacta del modelo (fine-tune, abliteration u otro ajuste) no está disponible.
 
 El repositorio tiene 3.085.938.688 parámetros declarados en safetensors y un tamaño total de 13,9 GB, que corresponde a la suma de las cuatro cuantizaciones publicadas. La conversión se realizó con Unsloth y los pesos están pensados para usarse con llama.cpp, lo que permite ejecución local en CPU, GPU de consumo y Apple Silicon sin infraestructura de servidor.
 
@@ -68,9 +68,9 @@ Los datos de los modelos comparables provienen del conocimiento público general
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | QwenDGAF-Coder-3B (este repositorio) | 3,09 B | No disponible | No disponible | GGUF (4 cuantizaciones) + safetensors |
-| Qwen2.5-Coder-3B-Instruct (base probable) | ~3,09 B | No verificado en la información disponible | No verificado en la información disponible | Público en HuggingFace |
-| Qwen2.5-Coder-7B-Instruct | ~7,6 B (dato no verificado) | No verificado en la información disponible | No verificado en la información disponible | Público en HuggingFace |
-| Llama-3.2-3B-Instruct | ~3,2 B (dato no verificado) | No verificado en la información disponible | No verificado en la información disponible | Público en HuggingFace |
+| Qwen2.5-Coder-3B-Instruct (base probable) | ~3,09 B | No verificado en la información disponible | No verificado en la información disponible | Público en Hugging Face |
+| Qwen2.5-Coder-7B-Instruct | ~7,6 B (dato no verificado) | No verificado en la información disponible | No verificado en la información disponible | Público en Hugging Face |
+| Llama-3.2-3B-Instruct | ~3,2 B (dato no verificado) | No verificado en la información disponible | No verificado en la información disponible | Público en Hugging Face |
 
 No hay datos de rendimiento de este repositorio que permitan una comparación cuantitativa con las alternativas.
 
@@ -88,7 +88,7 @@ No hay datos de rendimiento de este repositorio que permitan una comparación cu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hecan3d/QwenDGAF-Coder-3B
+- Repositorio en Hugging Face: https://huggingface.co/hecan3d/QwenDGAF-Coder-3B
 - Unsloth (herramienta de conversión citada): https://github.com/unslothai/unsloth
 - llama.cpp (runtime indicado en la model card): https://github.com/ggml-org/llama.cpp
 - Resultados de la búsqueda web: no se encontraron enlaces técnicos relevantes sobre el modelo; los resultados devueltos correspondían a páginas de descarga de TikTok y no guardan relación con el modelo.

@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks estandar (MOS, WER, similitud de ha
 
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| qwen3-tts-kannada-1.7b-experiment | 1,92 mil millones | kn, en | no disponible | Apache 2.0 | HuggingFace | Fine-tune experimental; perdida retenida en kannada 2,174/2,212 |
-| Qwen/Qwen3-TTS-12Hz-1.7B-Base | ~1,7 mil millones | zh, en, ja, ko, de, fr, ru, pt, es, it | no disponible | Apache 2.0 | HuggingFace | Modelo base; no soporta ningun idioma indio; perdida retenida en kannada 4,153/4,157 |
+| qwen3-tts-kannada-1.7b-experiment | 1,92 mil millones | kn, en | no disponible | Apache 2.0 | Hugging Face | Fine-tune experimental; perdida retenida en kannada 2,174/2,212 |
+| Qwen/Qwen3-TTS-12Hz-1.7B-Base | ~1,7 mil millones | zh, en, ja, ko, de, fr, ru, pt, es, it | no disponible | Apache 2.0 | Hugging Face | Modelo base; no soporta ningun idioma indio; perdida retenida en kannada 4,153/4,157 |
 | Otros TTS para kannada | no disponible | no disponible | no disponible | no disponible | no disponible | No se han encontrado comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -99,11 +99,11 @@ No se han publicado resultados de benchmarks estandar (MOS, WER, similitud de ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/karthik-1599/qwen3-tts-kannada-1.7b-experiment
+- Modelo en Hugging Face: https://huggingface.co/karthik-1599/qwen3-tts-kannada-1.7b-experiment
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Repositorio Qwen3-TTS: https://github.com/QwenLM/Qwen3-TTS
 - README de Qwen3-TTS: https://github.com/QwenLM/Qwen3-TTS/blob/main/README.md
-- Coleccion Qwen3-TTS en HuggingFace: https://huggingface.co/collections/Qwen/qwen3-tts
+- Coleccion Qwen3-TTS en Hugging Face: https://huggingface.co/collections/Qwen/qwen3-tts
 - Manifiesto de muestras de audio: https://huggingface.co/karthik-1599/qwen3-tts-kannada-1.7b-experiment/blob/main/samples/manifest.json
 - Informe tecnico de Qwen3 (serie LLM, no especifico de TTS): https://arxiv.org/html/2505.09388v1
-- Perfil del autor en HuggingFace: https://huggingface.co/karthik-1599/datasets
+- Perfil del autor en Hugging Face: https://huggingface.co/karthik-1599/datasets

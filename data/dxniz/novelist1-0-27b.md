@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 - VRAM estimada: el repositorio pesa 55,6 GB en formato 16-bit, por lo que la inferencia requiere al menos 56 GB de VRAM si se cargan los pesos completos. Con cuantización a 8-bit (no proporcionada por el autor) se podría reducir a ~28 GB, y a 4-bit a ~14 GB, pero no se ofrecen versiones cuantizadas oficiales.
 - GPU recomendadas: para ejecutar el modelo sin cuantizar se necesitan GPUs de nivel profesional como NVIDIA A100 80GB, H100 80GB o dos RTX 4090 (24GB cada una) con offloading de CPU. Con cuantización externa (por ejemplo, mediante llama.cpp o vLLM) podría caber en una sola RTX 4090 o similar.
-- Opciones de despliegue: no se especifican en la documentación, pero al ser un modelo con pesos en safetensors es compatible con frameworks estándar como vLLM, llama.cpp, Ollama (si se convierte a GGUF) o Transformers de HuggingFace.
+- Opciones de despliegue: no se especifican en la documentación, pero al ser un modelo con pesos en safetensors es compatible con frameworks estándar como vLLM, llama.cpp, Ollama (si se convierte a GGUF) o Transformers de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -68,6 +68,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dxniz/Novelist1.0-27b
+- Modelo en Hugging Face: https://huggingface.co/Dxniz/Novelist1.0-27b
 - Adaptador LoRA: https://huggingface.co/Dxniz/Novelist1.0-27b-Adapter
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

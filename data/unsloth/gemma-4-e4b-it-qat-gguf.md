@@ -72,7 +72,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa. El modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unsloth/gemma-4-E4B-it-qat-GGUF
+- Hugging Face: https://huggingface.co/unsloth/gemma-4-E4B-it-qat-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-unquantized
 - Colección Gemma 4 QAT: https://huggingface.co/collections/unsloth/gemma-4-qat
 - Documentación Unsloth Gemma 4 QAT: https://unsloth.ai/docs/models/gemma-4/qat

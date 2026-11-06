@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`huangdffs/eqvaedreamliteclip-anime` es un modelo alojado en HuggingFace por el usuario huangdffs, publicado bajo licencia Apache 2.0 y distribuido en formato `safetensors` para su uso con la librería `diffusers`. Por el nombre y los tags, se trata de un componente de tipo VAE (variational autoencoder) orientado a la generación de imágenes de estilo anime, presumiblemente derivado o compatible con la familia DreamLite/Clip y con un encoder de texto CLIP asociado. El repositorio ocupa 9,1 GB, aunque el checkpoint principal de safetensors contiene 375.412.740 parámetros, lo que sugiere que el peso mayor del repo corresponde a otros artefactos auxiliares o a múltiples ficheros.
+`huangdffs/eqvaedreamliteclip-anime` es un modelo alojado en Hugging Face por el usuario huangdffs, publicado bajo licencia Apache 2.0 y distribuido en formato `safetensors` para su uso con la librería `diffusers`. Por el nombre y los tags, se trata de un componente de tipo VAE (variational autoencoder) orientado a la generación de imágenes de estilo anime, presumiblemente derivado o compatible con la familia DreamLite/Clip y con un encoder de texto CLIP asociado. El repositorio ocupa 9,1 GB, aunque el checkpoint principal de safetensors contiene 375.412.740 parámetros, lo que sugiere que el peso mayor del repo corresponde a otros artefactos auxiliares o a múltiples ficheros.
 
 El modelo resuelve la parte de codificación/decodificación latente (y posiblemente la proyección de embeddings de texto) dentro de un pipeline de difusión orientado a ilustración anime. Es relevante ahora porque los VAE y encoders específicos de dominio permiten mejorar la fidelidad de color, el detalle de línea y la coherencia de estilo en pipelines de imagen, y porque su licencia permisiva (Apache 2.0) facilita su integración en productos comerciales sin las restricciones de licencias no comerciales habituales en modelos de difusión.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| `huangdffs/eqvaedreamliteclip-anime` | 375.412.740 | No aplica | Apache 2.0 | safetensors | HuggingFace |
-| SDXL VAE (`stabilityai/sdxl-vae`) | ~83 M | No aplica | MIT | safetensors | HuggingFace |
-| `madebyollin/sdxl-vae-fp16-fix` | ~83 M | No aplica | MIT | safetensors | HuggingFace |
-| Flux VAE (`black-forest-labs/FLUX.1-schnell`) | ~84 M | No aplica | Apache 2.0 | safetensors | HuggingFace |
+| `huangdffs/eqvaedreamliteclip-anime` | 375.412.740 | No aplica | Apache 2.0 | safetensors | Hugging Face |
+| SDXL VAE (`stabilityai/sdxl-vae`) | ~83 M | No aplica | MIT | safetensors | Hugging Face |
+| `madebyollin/sdxl-vae-fp16-fix` | ~83 M | No aplica | MIT | safetensors | Hugging Face |
+| Flux VAE (`black-forest-labs/FLUX.1-schnell`) | ~84 M | No aplica | Apache 2.0 | safetensors | Hugging Face |
 
 La comparación es aproximada: no hay información pública sobre el pipeline exacto al que pertenece este checkpoint, por lo que la equiparación con VAEs de SDXL o Flux se basa únicamente en el tipo de componente y en el tamaño. El número de parámetros de este modelo (375 M) es notablemente superior al de los VAEs citados, lo que sugiere que el checkpoint podría incluir también un encoder de texto o proyecciones adicionales.
 
@@ -80,5 +80,5 @@ La comparación es aproximada: no hay información pública sobre el pipeline ex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huangdffs/eqvaedreamliteclip-anime
+- Hugging Face: https://huggingface.co/huangdffs/eqvaedreamliteclip-anime
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web.

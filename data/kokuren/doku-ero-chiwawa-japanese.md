@@ -101,6 +101,6 @@ Nota: el modelo se apoya en el mismo encoder que su base, por lo que la comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kokuren/doku-ero-chiwawa-japanese
+- Modelo en Hugging Face: https://huggingface.co/kokuren/doku-ero-chiwawa-japanese
 - Modelo base: https://huggingface.co/izumi-lab/deberta-v2-small-japanese
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo, su paper o su repositorio en los resultados de búsqueda disponibles.

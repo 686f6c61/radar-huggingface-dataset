@@ -15,7 +15,7 @@ El modelo base Qwen3.8-27B es un modelo denso de 27 000 millones de parámetros 
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 262 144 tokens (nativo) |
 | Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (todas con imatrix) |
-| Idiomas soportados | Inglés (según ficha de HuggingFace; el modelo base Qwen3.8 soporta múltiples idiomas, pero esta variante declara solo inglés) |
+| Idiomas soportados | Inglés (según ficha de Hugging Face; el modelo base Qwen3.8 soporta múltiples idiomas, pero esta variante declara solo inglés) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (con archivo imatrix adicional) |
 
@@ -84,7 +84,7 @@ La principal diferencia frente al Qwen3.8-27B original es el comportamiento de r
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta variante: https://huggingface.co/mradermacher/Darkstar-Qwen3.8-27B-Abliterated-BF16-i1-GGUF
+- Repositorio Hugging Face de esta variante: https://huggingface.co/mradermacher/Darkstar-Qwen3.8-27B-Abliterated-BF16-i1-GGUF
 - Modelo base (HangGlidersRule): https://huggingface.co/HangGlidersRule/Darkstar-Qwen3.8-27B-Abliterated-BF16
 - Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Darkstar-Qwen3.8-27B-Abliterated-BF16-GGUF
 - Documentación de Qwen3.8-27B en vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

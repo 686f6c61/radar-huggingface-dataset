@@ -76,11 +76,11 @@ La comparativa se limita a los checkpoints de AutomatosX y al modelo base, ya qu
 - La calidad de la visión no ha sido evaluada; el sidecar BF16 está presente pero sin certificación.
 - Los idiomas soportados no están documentados; se asume herencia del modelo base, pero sin confirmación.
 - El límite práctico de contexto depende de la memoria unificada; con 32 GB puede ser necesario reducir la ventana para evitar swapping.
-- Al ser un checkpoint de desarrollo (tag `development`), puede contener cambios no definitivos; se recomienda fijar el commit de HuggingFace en despliegues reproducibles.
+- Al ser un checkpoint de desarrollo (tag `development`), puede contener cambios no definitivos; se recomienda fijar el commit de Hugging Face en despliegues reproducibles.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AutomatosX/AX-Qwen3.6-35B-A3B-MLX-AXQ-6bit
+- Repositorio Hugging Face: https://huggingface.co/AutomatosX/AX-Qwen3.6-35B-A3B-MLX-AXQ-6bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Hermano 4-bit: https://huggingface.co/AutomatosX/AX-Qwen3.6-35B-A3B-MLX-AXQ-4bit
 - Colecciones de AutomatosX: https://huggingface.co/AutomatosX/collections

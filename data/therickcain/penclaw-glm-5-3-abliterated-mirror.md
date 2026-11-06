@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Warlock es un modelo de lenguaje de gran escala derivado de GLM-5.3 mediante una edicion de pesos a nivel de tensor (abliteration), producida por Audn. El modelo conserva la arquitectura original GLM-5.3 (etiquetada en HuggingFace como `glm_moe_dsa`, es decir, un transformer con mezcla de expertos y atencion dispersa) y aplica una proyeccion ortogonal sobre la direccion interna de rechazo en las capas que escriben en el residual stream, sin reentrenamiento ni ajuste fino. El resultado es un modelo que mantiene el perfil de capacidades y la coherencia del modelo base, pero responde donde originalmente rechazaria.
+Warlock es un modelo de lenguaje de gran escala derivado de GLM-5.3 mediante una edicion de pesos a nivel de tensor (abliteration), producida por Audn. El modelo conserva la arquitectura original GLM-5.3 (etiquetada en Hugging Face como `glm_moe_dsa`, es decir, un transformer con mezcla de expertos y atencion dispersa) y aplica una proyeccion ortogonal sobre la direccion interna de rechazo en las capas que escriben en el residual stream, sin reentrenamiento ni ajuste fino. El resultado es un modelo que mantiene el perfil de capacidades y la coherencia del modelo base, pero responde donde originalmente rechazaria.
 
 El repositorio es un mirror publicado por el usuario therickcain bajo el identificador `therickcain/penclaw-GLM-5.3-abliterated-mirror`, con 753.329.940.480 parametros totales segun los tensores en safetensors y un tamano de repositorio de 1506,7 GB en BF16. La model card original corresponde a la publicacion de Audn (`audnai/penclaw-GLM-5.3-abliterated`), de la que este mirror replica el contenido.
 
@@ -23,7 +23,7 @@ Es relevante ahora porque los modelos abliterated de gran escala con licencia pe
 
 ## Arquitectura y entrenamiento
 
-El modelo base es GLM-5.3, identificado en HuggingFace con la arquitectura `glm_moe_dsa`, lo que indica un transformer con mezcla de expertos (MoE) y atencion dispersa (DSA). No se dispone en la informacion proporcionada del numero de parametros activos por token, del numero total de tokens de entrenamiento, de la composicion del dataset ni de si el modelo base empleo RLHF, DPO u otras tecnicas de alineacion.
+El modelo base es GLM-5.3, identificado en Hugging Face con la arquitectura `glm_moe_dsa`, lo que indica un transformer con mezcla de expertos (MoE) y atencion dispersa (DSA). No se dispone en la informacion proporcionada del numero de parametros activos por token, del numero total de tokens de entrenamiento, de la composicion del dataset ni de si el modelo base empleo RLHF, DPO u otras tecnicas de alineacion.
 
 La innovacion tecnica de esta variante es la abliteration: una intervencion a nivel de pesos que aisla la direccion interna que el modelo utiliza para decidir rechazar una peticion y proyecta esa direccion fuera de cada peso que escribe en el residual stream, capa por capa. El resto de la red queda intacto, por lo que el modelo conserva su perfil de capacidades y coherencia y se carga y sirve como cualquier modelo estandar, sin prompts de sistema especiales, adaptadores ni andamiaje en tiempo de ejecucion. La model card documenta dos iteraciones de investigacion (`iter4` e `iter11`) con resultados de no rechazo del 70% y 85% respectivamente, y coherencia intacta en ambas.
 
@@ -88,7 +88,7 @@ No se han publicado en la informacion disponible resultados de benchmarks academ
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Warlock (este modelo) | 753.329.940.480 | no disponible | other | HuggingFace (mirror) y API de pago en platform.audn.ai | Abliterated, thinking, BF16 |
+| Warlock (este modelo) | 753.329.940.480 | no disponible | other | Hugging Face (mirror) y API de pago en platform.audn.ai | Abliterated, thinking, BF16 |
 | GLM-5.3 (modelo base) | no disponible | no disponible | no disponible | no disponible | Referencia de origen; sin datos publicados en la informacion proporcionada |
 | necromicon standard (Modal K3REL) | no disponible | no disponible | no disponible | no disponible | Comparable solo por resultados del benchmark de rechazo |
 | KIMI-K3-1M (audn.ai/necromicon) | no disponible | no disponible | no disponible | no disponible | Comparable solo por resultados del benchmark de rechazo |
@@ -108,7 +108,7 @@ No se dispone de datos de parametros, contexto ni licencia de los modelos compar
 
 ## Enlaces
 
-- HuggingFace (este mirror): https://huggingface.co/therickcain/penclaw-GLM-5.3-abliterated-mirror
+- Hugging Face (este mirror): https://huggingface.co/therickcain/penclaw-GLM-5.3-abliterated-mirror
 - Modelo original referenciado en la model card: https://huggingface.co/audnai/penclaw-GLM-5.3-abliterated
 - Repositorio del benchmark de rechazo: https://github.com/audn-ai/refusal-benchmark
 - Resultados ampliados del benchmark: https://github.com/audn-ai/refusal-benchmark/blob/main/FINDINGS.md

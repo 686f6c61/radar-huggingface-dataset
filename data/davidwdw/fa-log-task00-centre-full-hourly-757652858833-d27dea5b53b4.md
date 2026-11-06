@@ -76,7 +76,7 @@ No disponible. No se dispone de informacion suficiente (parametros, contexto, li
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-757652858833-d27dea5b53b4
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-757652858833-d27dea5b53b4
 - Receta canonica citada en la model card: `evaluations/2026-09-23_task00_centre_full_recovery` (ruta interna, sin URL publica disponible)
 - Fichero de verificacion citado: `SHA256SUMS` (sin URL publica disponible)
 - Paper, blog, repositorio de codigo o demo: no disponible

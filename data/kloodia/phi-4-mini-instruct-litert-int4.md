@@ -84,11 +84,11 @@ No se dispone de resultados de rendimiento comparativos entre estas variantes en
 - Licencia: MIT, heredada del modelo base, lo que en principio permite uso comercial, pero conviene verificar las condiciones del modelo original de Microsoft.
 - Procedencia: es una conversion de terceros (kloodia) con 0 descargas y 0 likes en el momento de la consulta; no cuenta con validacion de la comunidad.
 - Compatibilidad: atado al ecosistema LiteRT-LM; no se documenta soporte para otros runtimes.
-- Fecha de creacion registrada en HuggingFace: 2026-10-11 (posterior a la fecha habitual de consulta); conviene verificar la vigencia del repositorio.
+- Fecha de creacion registrada en Hugging Face: 2026-10-11 (posterior a la fecha habitual de consulta); conviene verificar la vigencia del repositorio.
 
 ## Enlaces
 
-- HuggingFace (conversion): https://huggingface.co/kloodia/Phi-4-mini-instruct-LiteRT-INT4
+- Hugging Face (conversion): https://huggingface.co/kloodia/Phi-4-mini-instruct-LiteRT-INT4
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - README del modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/main/README.md
 - Microsoft Foundry (catalogo): https://ai.azure.com/catalog/models/Phi-4-mini-instruct

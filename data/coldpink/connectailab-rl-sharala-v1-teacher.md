@@ -77,7 +77,7 @@ No se han encontrado en la informacion disponible modelos comparables publicados
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-sharala-v1-teacher | no disponible | no aplica | Beneficio 11,85 M wones; satisfaccion 95%; 1,7 incidentes (40 meses nuevos) | apache-2.0 | HuggingFace |
+| connectailab-rl-sharala-v1-teacher | no disponible | no aplica | Beneficio 11,85 M wones; satisfaccion 95%; 1,7 incidentes (40 meses nuevos) | apache-2.0 | Hugging Face |
 | Jefe basado en reglas (linea base interna) | no aplica | no aplica | Beneficio 3,24 M wones; satisfaccion 79%; 7,8 incidentes (40 meses nuevos) | no disponible | incluido en el simulador |
 | Modelos alternativos externos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -95,7 +95,7 @@ No se han encontrado en la informacion disponible modelos comparables publicados
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/coldpink/connectailab-rl-sharala-v1-teacher
+- Modelo en Hugging Face: https://huggingface.co/coldpink/connectailab-rl-sharala-v1-teacher
 - Repositorio GitHub CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook Colab de entrenamiento (RL decision model, Qwen): https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

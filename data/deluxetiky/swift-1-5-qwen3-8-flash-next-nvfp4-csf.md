@@ -81,7 +81,7 @@ No se conocen otros modelos comparables en la información disponible.
 - No hay datos de benchmarks que permitan validar la calidad del modelo.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/deluxetiky/Swift-1.5-Qwen3.8-Flash-Next-NVFP4-CSF
+- Hugging Face: https://huggingface.co/deluxetiky/Swift-1.5-Qwen3.8-Flash-Next-NVFP4-CSF
 - Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-NVFP4
 - Licencia: https://huggingface.co/deluxetiky/Swift-1.5-Qwen3.8-Flash-Next-NVFP4-CSF/blob/main/LICENSE (indicado en la model card)
 - No se proporcionan más enlaces (papers, blogs, repos, demos) en la información disponible.

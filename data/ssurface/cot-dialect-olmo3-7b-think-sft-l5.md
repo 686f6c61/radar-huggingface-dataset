@@ -79,7 +79,7 @@ No se dispone de datos publicados para comparar directamente con otros adaptador
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l5
+- Adaptador en Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l5
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Version SFT oficial del base: https://huggingface.co/allenai/Olmo-3-7B-Think-SFT
 - Paper Olmo 3 (arXiv): https://arxiv.org/abs/2512.13961

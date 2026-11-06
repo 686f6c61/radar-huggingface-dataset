@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Haas-ja-v1.0 es un modelo de reconocimiento automático del habla (ASR) para japonés desarrollado por Third Intelligence (identificador de HuggingFace 0x3). Se construye sobre la arquitectura Parakeet-TDT de NVIDIA: un codificador FastConformer de 24 capas y un decodificador Token-and-Duration Transducer (TDT), en el que la red de predicción LSTM original se sustituye por Kimi Delta Attention (KDA). El nombre responde al acrónimo *Hear Anything At Speed* y a un homenaje al acústico Helmut Haas.
+Haas-ja-v1.0 es un modelo de reconocimiento automático del habla (ASR) para japonés desarrollado por Third Intelligence (identificador de Hugging Face 0x3). Se construye sobre la arquitectura Parakeet-TDT de NVIDIA: un codificador FastConformer de 24 capas y un decodificador Token-and-Duration Transducer (TDT), en el que la red de predicción LSTM original se sustituye por Kimi Delta Attention (KDA). El nombre responde al acrónimo *Hear Anything At Speed* y a un homenaje al acústico Helmut Haas.
 
 El modelo cuenta con 615,8 millones de parámetros en total (608,9M en el codificador, 3,9M en la red de predicción y 3,0M en la red conjunta), procesa audio mono a 16 kHz y emplea un tokenizador SentencePiece BPE de 3.072 tokens con *byte fallback*. Según la model card, en el momento de su publicación se sitúa en la frontera de Pareto entre velocidad y precisión en un benchmark construido con cinco conjuntos de datos públicos de japonés, con un CER estricto de 6,12 %, el más preciso entre los modelos abiertos evaluados.
 
@@ -72,7 +72,7 @@ La model card declara un CER estricto de 6,12 % en un benchmark propio construid
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Haas-ja-v1.0 | 615,8M | audio 16 kHz, contexto completo, long-form por segmentación | CER estricto 6,12 % en benchmark del autor | Apache 2.0 | HuggingFace, GitHub, demo HF Space |
+| Haas-ja-v1.0 | 615,8M | audio 16 kHz, contexto completo, long-form por segmentación | CER estricto 6,12 % en benchmark del autor | Apache 2.0 | Hugging Face, GitHub, demo HF Space |
 | Parakeet-TDT (NVIDIA) | no disponible en la informacion | arquitectura base del modelo | no disponible en la informacion | no disponible en la informacion | referencia arquitectonica citada |
 | APIs comerciales de STT | no aplicable | no disponible | el autor declara precisión competitiva sin cifras | propietaria | servicio comercial |
 
@@ -91,7 +91,7 @@ No se dispone en la información proporcionada de datos numéricos de modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0x3/Haas-ja-v1.0
+- Modelo en Hugging Face: https://huggingface.co/0x3/Haas-ja-v1.0
 - Repositorio de código: https://github.com/third-intelligence/Haas-ASR
 - Demo (Hugging Face Space, long-form): https://third-intelligence-haas-ja-v1-0.hf.space/longform
 - Blog de lanzamiento: https://third-intelligence.com/ja/posts/haas-ja-v1-release

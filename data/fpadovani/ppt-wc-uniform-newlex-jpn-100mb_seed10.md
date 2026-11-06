@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed10` es un ajuste fino de tipo SFT (supervised fine-tuning) sobre el modelo base `goldfish-models/eng_latn_100mb`, desarrollado por el usuario fpadovani y vinculado a un proyecto de investigacion de la Universidad de Groningen (el enlace de Weights & Biases apunta a la organizacion `f-padovani-university-of-groningen`, proyecto `white_cotterell`). Se trata de un transformer decoder-only de tipo GPT-2 (etiqueta `gpt2` en HuggingFace) con 86.508.288 parametros totales, entrenado con la libreria TRL 0.23.0 sobre Transformers 4.56.2. El repositorio ocupa 1,4 GB e incluye pesos en formato safetensors.
+El modelo `fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed10` es un ajuste fino de tipo SFT (supervised fine-tuning) sobre el modelo base `goldfish-models/eng_latn_100mb`, desarrollado por el usuario fpadovani y vinculado a un proyecto de investigacion de la Universidad de Groningen (el enlace de Weights & Biases apunta a la organizacion `f-padovani-university-of-groningen`, proyecto `white_cotterell`). Se trata de un transformer decoder-only de tipo GPT-2 (etiqueta `gpt2` en Hugging Face) con 86.508.288 parametros totales, entrenado con la libreria TRL 0.23.0 sobre Transformers 4.56.2. El repositorio ocupa 1,4 GB e incluye pesos en formato safetensors.
 
 El problema que aborda es acotado y de caracter experimental: el modelo base pertenece a la familia Goldfish, una coleccion de modelos monolingues pequenos entrenados sobre aproximadamente 100 MB de texto por idioma, pensados para investigacion en linguistica computacional y en modelos de bajo coste. Este ajuste concreto anade una fase de SFT, presumiblemente para alinear o especializar el modelo en un formato de conversacion, ya que el ejemplo de la model card usa mensajes con roles (`{"role": "user", "content": ...}`).
 
@@ -12,7 +12,7 @@ Su relevancia actual es limitada y hay que enmarcarla con honestidad: el modelo 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de tipo GPT-2 (etiqueta `gpt2` en HuggingFace; no se detalla la configuracion exacta en la informacion disponible) |
+| Arquitectura | Transformer decoder-only de tipo GPT-2 (etiqueta `gpt2` en Hugging Face; no se detalla la configuracion exacta en la informacion disponible) |
 | Parametros totales | 86.508.288 |
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible (no se documenta en la model card ni en las especificaciones) |
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo para ninguno de estos modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/8pbs6rkl
 - Repositorio de TRL: https://github.com/huggingface/trl

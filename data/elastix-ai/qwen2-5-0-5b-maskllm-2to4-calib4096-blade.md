@@ -63,7 +63,7 @@ Estas metricas indican la perdida de informacion introducida por la poda, pero n
 - VRAM estimada para inferencia: aproximadamente 1 GB para los pesos en FP16 (494M parametros × 2 bytes), mas overhead del runtime y activaciones. Se recomienda al menos 2 GB de VRAM para una ejecucion comoda.
 - GPU recomendadas: cualquier GPU con soporte para sparsity 2:4 (por ejemplo, NVIDIA A100, RTX 30/40, H100). En GPUs sin soporte sparse, la sparsity no aporta aceleracion y el modelo se ejecutara como un modelo denso de 0.5B.
 - Cabe en GPUs de consumo: si, en GPUs con 4 GB o mas (por ejemplo, RTX 3050, RTX 3060, GTX 1660 Super con 6 GB).
-- Opciones de despliegue: no se ha confirmado compatibilidad con runtimes especificos. Al estar en formato safetensors, puede cargarse con HuggingFace Transformers. Para aprovechar la sparsity, se necesitarian bibliotecas que soporten kernels sparse (por ejemplo, vLLM con soporte sparse o kernels personalizados). No se ha verificado su funcionamiento con llama.cpp u Ollama.
+- Opciones de despliegue: no se ha confirmado compatibilidad con runtimes especificos. Al estar en formato safetensors, puede cargarse con Hugging Face Transformers. Para aprovechar la sparsity, se necesitarian bibliotecas que soporten kernels sparse (por ejemplo, vLLM con soporte sparse o kernels personalizados). No se ha verificado su funcionamiento con llama.cpp u Ollama.
 - Latencia y throughput: no disponibles. La sparsity 2:4 puede reducir el tiempo de computacion en un factor de hasta 2 en hardware con soporte, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -88,6 +88,6 @@ La comparativa se limita a caracteristicas estructurales, ya que no hay datos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elastix-ai/Qwen2.5-0.5B-maskllm-2to4-calib4096-blade
+- Modelo en Hugging Face: https://huggingface.co/elastix-ai/Qwen2.5-0.5B-maskllm-2to4-calib4096-blade
 - Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Informe tecnico de Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115

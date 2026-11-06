@@ -120,7 +120,7 @@ La única comparación con datos en la información proporcionada es contra Qwen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/migtissera/Tess-4.5-27B
+- Modelo en Hugging Face: https://huggingface.co/migtissera/Tess-4.5-27B
 - Cuantizaciones GGUF (incluye proyector de visión y cabezas MTP): https://huggingface.co/migtissera/Tess-4.5-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Página del lanzamiento (Continuity Research): https://continuityresearch.ai/tess-4-5/

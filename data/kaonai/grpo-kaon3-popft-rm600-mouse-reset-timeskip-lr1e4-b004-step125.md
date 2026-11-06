@@ -61,5 +61,5 @@ No disponible. No se han publicado comparativas con otros modelos de la misma ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kaonai/grpo-kaon3-popft-rm600-mouse-reset-timeskip-lr1e4-b004-step125
+- Hugging Face: https://huggingface.co/kaonai/grpo-kaon3-popft-rm600-mouse-reset-timeskip-lr1e4-b004-step125
 - Modelo base: https://huggingface.co/kaonai/kaon-c-gemma4-26b-v10.1

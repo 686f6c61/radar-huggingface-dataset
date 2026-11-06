@@ -77,9 +77,9 @@ El autor advierte de forma explicita: «Do not attribute that score to these wei
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| tinker-qwen3.5-9b-native-sft-step-2888 | 9B (base) + LoRA r=128 | 16.384 en entrenamiento; nativo del base no disponible | Apache-2.0 | safetensors (PEFT) | HuggingFace, 0 descargas |
-| tinker-qwen3.5-9b-native-sft-step-400 | 9B (base) + LoRA | No disponible | No disponible en la informacion proporcionada | safetensors (PEFT) | HuggingFace, publicado por el mismo autor |
-| Qwen/Qwen3.5-9B-Base (sin adaptador) | 9B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | safetensors | HuggingFace |
+| tinker-qwen3.5-9b-native-sft-step-2888 | 9B (base) + LoRA r=128 | 16.384 en entrenamiento; nativo del base no disponible | Apache-2.0 | safetensors (PEFT) | Hugging Face, 0 descargas |
+| tinker-qwen3.5-9b-native-sft-step-400 | 9B (base) + LoRA | No disponible | No disponible en la informacion proporcionada | safetensors (PEFT) | Hugging Face, publicado por el mismo autor |
+| Qwen/Qwen3.5-9B-Base (sin adaptador) | 9B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | safetensors | Hugging Face |
 
 No se dispone de datos suficientes para comparar con alternativas de otros autores en la misma categoria (adaptadores de razonamiento sobre modelos de ~9B). Cualquier comparacion de rendimiento quedaria limitada por la ausencia de benchmarks publicados para el paso 2.888.
 
@@ -98,7 +98,7 @@ No se dispone de datos suficientes para comparar con alternativas de otros autor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/tinker-qwen3.5-9b-native-sft-step-2888
+- Modelo en Hugging Face: https://huggingface.co/open-athena/tinker-qwen3.5-9b-native-sft-step-2888
 - Checkpoint previo del mismo run (paso 400): https://huggingface.co/open-athena/tinker-qwen3.5-9b-native-sft-step-400
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (revision `68c46c4b3498877f3ef123c856ecfde50c39f404`)
 - Dataset de SFT: `open-thoughts/OpenThoughts3-1.2M`, revision `61bcf9d4eb38b30295efc2021227a63cc5bb34c8`

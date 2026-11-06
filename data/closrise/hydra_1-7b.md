@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo ClosRise/Hydra_1.7B es un modelo de lenguaje publicado en HuggingFace por el usuario ClosRise (Черняев Тимофей) bajo licencia Apache 2.0. La model card apenas contiene información: únicamente se especifica la licencia, sin descripción de arquitectura, parámetros, contexto o capacidades. El nombre "Hydra" sugiere una posible relación con el paper "Hydra: A Modular Architecture for Efficient Long-Context Reasoning" (arXiv:2508.15099), que propone una arquitectura modular basada en un backbone de espacio de estados con atención global dispersa, mezcla de expertos y memorias duales, orientada a razonamiento de contexto largo con eficiencia computacional. Sin embargo, no hay evidencia en la información proporcionada de que este modelo implemente dicha arquitectura.
+El modelo ClosRise/Hydra_1.7B es un modelo de lenguaje publicado en Hugging Face por el usuario ClosRise (Черняев Тимофей) bajo licencia Apache 2.0. La model card apenas contiene información: únicamente se especifica la licencia, sin descripción de arquitectura, parámetros, contexto o capacidades. El nombre "Hydra" sugiere una posible relación con el paper "Hydra: A Modular Architecture for Efficient Long-Context Reasoning" (arXiv:2508.15099), que propone una arquitectura modular basada en un backbone de espacio de estados con atención global dispersa, mezcla de expertos y memorias duales, orientada a razonamiento de contexto largo con eficiencia computacional. Sin embargo, no hay evidencia en la información proporcionada de que este modelo implemente dicha arquitectura.
 
 Dado el tamaño indicado en el ID (1.7B parámetros), se trataría de un modelo relativamente pequeño, probablemente adecuado para despliegue en entornos con recursos limitados. No obstante, la ausencia de datos técnicos verificables impide confirmar cualquier especificación. El modelo fue creado el 28 de agosto de 2026, una fecha futura que podría indicar un error en el registro o un marcador temporal no estándar.
 
@@ -29,7 +29,7 @@ No se han documentado capacidades específicas del modelo en la información dis
 
 ## Casos de uso
 
-Al no existir información sobre las capacidades del modelo, no es posible proponer casos de uso concretos y realistas. Cualquier sugerencia sería una invención. Se recomienda consultar la página del modelo en HuggingFace para obtener actualizaciones o documentación adicional por parte del autor.
+Al no existir información sobre las capacidades del modelo, no es posible proponer casos de uso concretos y realistas. Cualquier sugerencia sería una invención. Se recomienda consultar la página del modelo en Hugging Face para obtener actualizaciones o documentación adicional por parte del autor.
 
 ## Benchmarks y rendimiento
 
@@ -53,6 +53,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ClosRise/Hydra_1.7B)
-- [Perfil del autor en HuggingFace](https://huggingface.co/ClosRise/models)
+- [Modelo en Hugging Face](https://huggingface.co/ClosRise/Hydra_1.7B)
+- [Perfil del autor en Hugging Face](https://huggingface.co/ClosRise/models)
 - [Paper "Hydra: A Modular Architecture for Efficient Long-Context Reasoning" (arXiv:2508.15099)](https://arxiv.org/abs/2508.15099)

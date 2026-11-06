@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeepSeek-R1-Distill-Qwen-1.5B (este repo) | 1,777B | No disponible | MIT | HuggingFace (redistribucion de tercero) |
-| DeepSeek-R1-Distill-Qwen-7B | 7B (aproximado, no confirmado en la informacion) | No disponible | MIT (familia DeepSeek-R1) | HuggingFace (DeepSeek AI) |
-| DeepSeek-R1-Distill-Llama-8B | 8B (aproximado, no confirmado en la informacion) | No disponible | MIT (familia DeepSeek-R1) | HuggingFace (DeepSeek AI) |
-| Qwen2.5-1.5B (base) | 1,5B | No disponible | No disponible en la informacion | HuggingFace |
+| DeepSeek-R1-Distill-Qwen-1.5B (este repo) | 1,777B | No disponible | MIT | Hugging Face (redistribucion de tercero) |
+| DeepSeek-R1-Distill-Qwen-7B | 7B (aproximado, no confirmado en la informacion) | No disponible | MIT (familia DeepSeek-R1) | Hugging Face (DeepSeek AI) |
+| DeepSeek-R1-Distill-Llama-8B | 8B (aproximado, no confirmado en la informacion) | No disponible | MIT (familia DeepSeek-R1) | Hugging Face (DeepSeek AI) |
+| Qwen2.5-1.5B (base) | 1,5B | No disponible | No disponible en la informacion | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -86,12 +86,12 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jattt6789/DeepSeek-R1-Distill-Qwen-1.5B
+- Repositorio en Hugging Face: https://huggingface.co/Jattt6789/DeepSeek-R1-Distill-Qwen-1.5B
 - Paper de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf
 - Repositorio GitHub de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
 - Licencia MIT del proyecto: https://github.com/deepseek-ai/DeepSeek-R1/blob/main/LICENSE
 - Web oficial de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organizacion DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Discord de DeepSeek AI: https://discord.gg/Tc7c45Zzu5
 - Twitter/X de DeepSeek AI: https://twitter.com/deepseek_ai

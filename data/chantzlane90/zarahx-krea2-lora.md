@@ -2,11 +2,11 @@
 
 ## Resumen
 
-zarahx-krea2-lora es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario chantzlane90 en HuggingFace, disenado para el modelo de generacion de imagenes Krea 2. Su proposito es incorporar un personaje ficticio concreto, Zara Haddad, una figura adulta generada por IA que no corresponde a ninguna persona real. El LoRA utiliza la palabra clave de activacion `zarahx` y se distribuye con licencia "other", sin idiomas ni pipeline declarados en la ficha de HuggingFace.
+zarahx-krea2-lora es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario chantzlane90 en Hugging Face, disenado para el modelo de generacion de imagenes Krea 2. Su proposito es incorporar un personaje ficticio concreto, Zara Haddad, una figura adulta generada por IA que no corresponde a ninguna persona real. El LoRA utiliza la palabra clave de activacion `zarahx` y se distribuye con licencia "other", sin idiomas ni pipeline declarados en la ficha de Hugging Face.
 
 El adaptador se entreno con la herramienta fal-ai/krea-2-trainer durante 1000 pasos con rango 32, un valor relativamente alto que sugiere un ajuste fino orientado a capturar con fidelidad los rasgos del personaje. Las claves del modelo se remapearon al espacio de nombres `diffusion_model.*` de ComfyUI para garantizar compatibilidad con Sogni, lo que indica que el autor busco una integracion directa en flujos de trabajo de inferencia de imagenes basados en ese ecosistema.
 
-Es relevante ahora porque los LoRA de personaje se han convertido en la via estandar para personalizar modelos de difusion sin reentrenar el modelo base, y este caso ilustra un flujo de trabajo tipico de la comunidad: entrenamiento en servicios gestionados (fal.ai), conversion de claves para herramientas concretas (ComfyUI/Sogni) y publicacion en HuggingFace. El repositorio ocupa 0.2 GB y no registra descargas ni likes en el momento de la consulta.
+Es relevante ahora porque los LoRA de personaje se han convertido en la via estandar para personalizar modelos de difusion sin reentrenar el modelo base, y este caso ilustra un flujo de trabajo tipico de la comunidad: entrenamiento en servicios gestionados (fal.ai), conversion de claves para herramientas concretas (ComfyUI/Sogni) y publicacion en Hugging Face. El repositorio ocupa 0.2 GB y no registra descargas ni likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| zarahx-krea2-lora | LoRA sobre Krea 2 | no disponible (rango 32) | no aplica | no disponible | other | HuggingFace, 0 descargas |
-| Otros LoRA de personaje sobre Krea 2 | LoRA | variables segun autor | no aplica | no disponible | variable | HuggingFace / Civitai |
+| zarahx-krea2-lora | LoRA sobre Krea 2 | no disponible (rango 32) | no aplica | no disponible | other | Hugging Face, 0 descargas |
+| Otros LoRA de personaje sobre Krea 2 | LoRA | variables segun autor | no aplica | no disponible | variable | Hugging Face / Civitai |
 | Modelo base Krea 2 | Modelo de difusion | no disponible | no aplica | no disponible | segun proveedor | segun proveedor |
 
 No se dispone de datos comparativos de rendimiento entre este LoRA y alternativas equivalentes.
@@ -81,6 +81,6 @@ No se dispone de datos comparativos de rendimiento entre este LoRA y alternativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chantzlane90/zarahx-krea2-lora
+- Hugging Face: https://huggingface.co/chantzlane90/zarahx-krea2-lora
 - Herramienta de entrenamiento: fal-ai/krea-2-trainer (referenciada en la model card; URL no proporcionada)
 - Entorno de despliegue: ComfyUI y Sogni (referenciados en la model card; URLs no proporcionadas)

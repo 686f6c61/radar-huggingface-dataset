@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ega2007/MSTShiBao-sequence` es un repositorio publicado en HuggingFace por el usuario `ega2007` bajo licencia MIT. Por el nombre y el tamano del repositorio (aproximadamente 0,7 GB), todo apunta a que se trata de un artefacto de pesos de red neuronal de tamano pequeno o mediano, probablemente un modelo derivado o ajustado para una tarea especifica, aunque la model card no proporciona ninguna descripcion funcional, arquitectonica ni de uso.
+`ega2007/MSTShiBao-sequence` es un repositorio publicado en Hugging Face por el usuario `ega2007` bajo licencia MIT. Por el nombre y el tamano del repositorio (aproximadamente 0,7 GB), todo apunta a que se trata de un artefacto de pesos de red neuronal de tamano pequeno o mediano, probablemente un modelo derivado o ajustado para una tarea especifica, aunque la model card no proporciona ninguna descripcion funcional, arquitectonica ni de uso.
 
 La informacion disponible es extremadamente limitada: la model card se reduce a la declaracion de licencia MIT, sin secciones de descripcion, entrenamiento, evaluacion ni ejemplos de uso. El repositorio no registra descargas ni "likes" en el momento de la consulta, lo que sugiere un proyecto personal o experimental sin difusion publica.
 
@@ -41,7 +41,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: no se indica el volumen de 
 - Evaluacion experimental en laboratorio: el modelo puede descargarse e inspeccionarse para determinar su arquitectura real y sus pesos, dado que la documentacion publica no permite inferir su funcion.
 - Prototipado interno con licencia permisiva: la licencia MIT facilita su uso y modificacion en entornos controlados, siempre que se valide previamente su comportamiento.
 - Fine-tuning como punto de partida: si los pesos corresponden a un modelo base, podrian servir como inicializacion para ajustes especificos, aunque esto requiere verificar primero el formato y la arquitectura.
-- Investigacion sobre artefactos publicados: util para estudiar practicas de publicacion en HuggingFace y la importancia de documentar model cards completas.
+- Investigacion sobre artefactos publicados: util para estudiar practicas de publicacion en Hugging Face y la importancia de documentar model cards completas.
 - Pruebas de reproducibilidad: el repositorio puede emplearse para verificar si los pesos cargan correctamente en frameworks estandar (PyTorch, Transformers) y detectar incompatibilidades.
 - Uso educativo: como ejemplo de repositorio con licencia declarada pero sin documentacion tecnica, util en formacion sobre buenas practicas de publicacion de modelos.
 
@@ -75,5 +75,5 @@ No disponible. La ausencia de datos sobre arquitectura, parametros y tarea impid
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ega2007/MSTShiBao-sequence
+- Repositorio en Hugging Face: https://huggingface.co/ega2007/MSTShiBao-sequence
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados al modelo.

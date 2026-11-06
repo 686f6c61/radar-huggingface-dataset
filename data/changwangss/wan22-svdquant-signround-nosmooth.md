@@ -67,9 +67,9 @@ La documentación del modelo base menciona que Wan2.2 supera a modelos comercial
 
 | Modelo | Parámetros | Arquitectura | Resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| changwangss/wan22-svdquant-signround-nosmooth | 7,86 mil millones (safetensors) | DiT cuantizado a 8 bits derivado de Wan2.2 | no disponible | Apache-2.0 | HuggingFace (autor individual) |
-| Wan2.2-T2V-A14B | no disponible en la información | MoE de difusión | 480P y 720P | Apache-2.0 | HuggingFace y ModelScope (Wan-AI) |
-| Wan2.2-TI2V-5B | aproximadamente 5 mil millones (según el nombre) | VAE de alta compresión, T2V + I2V | 720P a 24 fps | Apache-2.0 | HuggingFace y ModelScope (Wan-AI) |
+| changwangss/wan22-svdquant-signround-nosmooth | 7,86 mil millones (safetensors) | DiT cuantizado a 8 bits derivado de Wan2.2 | no disponible | Apache-2.0 | Hugging Face (autor individual) |
+| Wan2.2-T2V-A14B | no disponible en la información | MoE de difusión | 480P y 720P | Apache-2.0 | Hugging Face y ModelScope (Wan-AI) |
+| Wan2.2-TI2V-5B | aproximadamente 5 mil millones (según el nombre) | VAE de alta compresión, T2V + I2V | 720P a 24 fps | Apache-2.0 | Hugging Face y ModelScope (Wan-AI) |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -88,11 +88,11 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/changwangss/wan22-svdquant-signround-nosmooth
+- Repositorio en Hugging Face: https://huggingface.co/changwangss/wan22-svdquant-signround-nosmooth
 - Informe técnico de Wan (arXiv 2503.20314): https://arxiv.org/abs/2503.20314
 - Referencia arXiv 2309.14509 incluida en las etiquetas del repositorio: https://arxiv.org/abs/2309.14509
 - Repositorio GitHub de Wan2.2: https://github.com/Wan-Video/Wan2.2
-- Organización Wan-AI en HuggingFace: https://huggingface.co/Wan-AI/
+- Organización Wan-AI en Hugging Face: https://huggingface.co/Wan-AI/
 - Organización Wan-AI en ModelScope: https://modelscope.cn/organization/Wan-AI
 - Blog oficial de Wan: https://wan.video/welcome
 - Sitio web de Wan: https://wan.video

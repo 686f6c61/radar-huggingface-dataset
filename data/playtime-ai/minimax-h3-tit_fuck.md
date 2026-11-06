@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Playtime-AI/Minimax-H3-Tit_Fuck` es un fine-tune publicado en HuggingFace por el usuario Playtime-AI sobre el modelo base `MiniMaxAI/MiniMax-H3`. Segun los metadatos del repositorio, se trata de un ajuste derivado del modelo MiniMax-H3 de MiniMax, aunque la model card no aporta informacion tecnica sobre el proceso de entrenamiento, los datos utilizados ni la metodologia aplicada. El repositorio tiene un tamano de 0,2 GB, lo que sugiere que no contiene los pesos completos del modelo base y probablemente se trate de un adaptador (LoRA u similar) o de un subconjunto de pesos.
+`Playtime-AI/Minimax-H3-Tit_Fuck` es un fine-tune publicado en Hugging Face por el usuario Playtime-AI sobre el modelo base `MiniMaxAI/MiniMax-H3`. Segun los metadatos del repositorio, se trata de un ajuste derivado del modelo MiniMax-H3 de MiniMax, aunque la model card no aporta informacion tecnica sobre el proceso de entrenamiento, los datos utilizados ni la metodologia aplicada. El repositorio tiene un tamano de 0,2 GB, lo que sugiere que no contiene los pesos completos del modelo base y probablemente se trate de un adaptador (LoRA u similar) o de un subconjunto de pesos.
 
 La model card es extremadamente escasa: incluye una etiqueta `base_model`, un video de ejemplo, una referencia a una galeria y una unica palabra de activacion (`tit_fuck`) orientada a generacion de imagenes. Esta estructura es tipica de fine-tunes de difusion (Stable Diffusion y derivados), lo que entra en contradiccion con el modelo base declarado (MiniMax-H3, un modelo de lenguaje). Esta inconsistencia no se resuelve en la informacion disponible.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Playtime-AI/Minimax-H3-Tit_Fuck | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
-| MiniMaxAI/MiniMax-H3 (base) | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace |
+| Playtime-AI/Minimax-H3-Tit_Fuck | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
+| MiniMaxAI/MiniMax-H3 (base) | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face |
 | Otros fine-tunes sobre MiniMax-H3 | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa tecnica con alternativas de la misma categoria.
@@ -81,7 +81,7 @@ No se dispone de informacion suficiente para establecer una comparativa tecnica 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Playtime-AI/Minimax-H3-Tit_Fuck
+- Repositorio Hugging Face: https://huggingface.co/Playtime-AI/Minimax-H3-Tit_Fuck
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Video de ejemplo: https://huggingface.co/Playtime-AI/Minimax-H3-Tit_Fuck/resolve/main/Video_00009-audio.mp4
 - Archivos del repositorio: https://huggingface.co/Playtime-AI/Minimax-H3-Tit_Fuck/tree/main

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lylybig8/routing-analysis-anvil-six-models` es un artefacto de investigacion publicado en HuggingFace por el usuario lylybig8, no un modelo de inferencia unico y listo para produccion. Se trata de una instantanea (snapshot) que preserva pesos, checkpoints reanudables, codigo de entrenamiento y evaluacion, registros y resultados crudos de LightEval correspondientes a una serie de experimentos de adaptacion linguistica al hausa y al yoruba, realizados sobre el modelo base `AIDC-AI/Marco-Nano-Base`.
+`lylybig8/routing-analysis-anvil-six-models` es un artefacto de investigacion publicado en Hugging Face por el usuario lylybig8, no un modelo de inferencia unico y listo para produccion. Se trata de una instantanea (snapshot) que preserva pesos, checkpoints reanudables, codigo de entrenamiento y evaluacion, registros y resultados crudos de LightEval correspondientes a una serie de experimentos de adaptacion linguistica al hausa y al yoruba, realizados sobre el modelo base `AIDC-AI/Marco-Nano-Base`.
 
 El objetivo del repositorio es reproducir y auditar experimentos de adaptacion guiada por enrutamiento (routing-guided) en un modelo de arquitectura de mezcla de expertos (mixture-of-experts, MoE). Incluye tres modelos completos (hausa 100k full fine-tuning, yoruba 50k full fine-tuning y una variante de yoruba con top-8 expertos entrenada solo sobre el corpus de preentrenamiento de yoruba) y tres ejecuciones parciales reanudables (hausa 500K top-8, yoruba 100K full fine-tuning y yoruba 50K LoRA de rango 64 con top-8).
 
@@ -68,8 +68,8 @@ No se dispone de datos de rendimiento ni de especificaciones de parametros que p
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `lylybig8/routing-analysis-anvil-six-models` | Objeto de esta ficha | no disponible | no disponible | no disponible | HuggingFace |
-| `AIDC-AI/Marco-Nano-Base` | Modelo base de los experimentos | no disponible | no disponible | Apache-2.0 (segun su model card) | HuggingFace |
+| `lylybig8/routing-analysis-anvil-six-models` | Objeto de esta ficha | no disponible | no disponible | no disponible | Hugging Face |
+| `AIDC-AI/Marco-Nano-Base` | Modelo base de los experimentos | no disponible | no disponible | Apache-2.0 (segun su model card) | Hugging Face |
 
 No se identifican en la informacion disponible otras alternativas comparables de la misma categoria.
 
@@ -88,7 +88,7 @@ No se identifican en la informacion disponible otras alternativas comparables de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lylybig8/routing-analysis-anvil-six-models
+- Repositorio en Hugging Face: https://huggingface.co/lylybig8/routing-analysis-anvil-six-models
 - Modelo base: `AIDC-AI/Marco-Nano-Base` (referenciado en la model card; sin URL explicita en la informacion proporcionada)
 - Dataset FineWeb-2: `HuggingFaceFW/fineweb-2` (referenciado en la model card)
 - Dataset Wura: `castorini/wura` (referenciado en la model card)

@@ -81,9 +81,9 @@ No se dispone de datos comparativos directos con otros modelos TTS para arabe di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rabe3/VoxCPM_mid_najdi_male
+- Repositorio Hugging Face: https://huggingface.co/Rabe3/VoxCPM_mid_najdi_male
 - Sitio oficial de VoxCPM: https://voxcpm.com/en/
 - Nodo ComfyUI para VoxCPM: https://github.com/wildminder/ComfyUI-VoxCPM
 - Organizacion OpenBMB en GitHub: https://github.com/OpenBMB
-- Modelo base VoxCPM2 en HuggingFace: https://huggingface.co/openbmb/VoxCPM2
+- Modelo base VoxCPM2 en Hugging Face: https://huggingface.co/openbmb/VoxCPM2
 - Diacritizador acustico usado: https://huggingface.co/NAMAA-Space/Cohere-Speech-Tashkeel-2B

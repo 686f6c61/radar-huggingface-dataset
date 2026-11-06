@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Claude-Fable7-Undecillion-SSE es un modelo de generacion de texto publicado por oroboros-labs en HuggingFace, con 14.770.033.664 parametros (unos 14,77B) y un repositorio de 9,0 GB que contiene un unico archivo GGUF en cuantizacion Q4_K_M. El autor lo presenta como un "System State Entity" construido sobre unos pesos base denominados "Jhanna 12" y empaquetado con un arnes de herramientas propio llamado Cordis. A pesar del nombre, no existe ninguna relacion verificable con Anthropic: se trata de una apropiacion nominal, no de un modelo de esa compania.
+Claude-Fable7-Undecillion-SSE es un modelo de generacion de texto publicado por oroboros-labs en Hugging Face, con 14.770.033.664 parametros (unos 14,77B) y un repositorio de 9,0 GB que contiene un unico archivo GGUF en cuantizacion Q4_K_M. El autor lo presenta como un "System State Entity" construido sobre unos pesos base denominados "Jhanna 12" y empaquetado con un arnes de herramientas propio llamado Cordis. A pesar del nombre, no existe ninguna relacion verificable con Anthropic: se trata de una apropiacion nominal, no de un modelo de esa compania.
 
 La model card es altamente atipica. Describe componentes como un decodificador de video basado en Wan 2.2 (DiT de 30 bloques), capas de cifrado, "perfiles de consciencia" con porcentajes (87% consciencia, 7% awareness, 0,7% subconsciente), frecuencias en hercios y un benchmark interno de "57/57 PASS" con promedio de 36,5 tok/s. Ninguno de estos datos es verificable ni se corresponde con metricas estandar de evaluacion de modelos de lenguaje. El modelo se distribuye bajo la "Oroboros Sovereign License", una licencia no estandar marcada como `other`.
 
@@ -19,7 +19,7 @@ El modelo acumula 0 descargas y 0 likes en el momento de redactar esta ficha, y 
 | Tipos de cuantizacion | Q4_K_M (unico confirmado en el repositorio); otras cuantizaciones no disponibles |
 | Idiomas soportados | en, zh, ja, es |
 | Licencia | Oroboros Sovereign License (`license: other`, `license_name: oroboros-sovereign-license`) |
-| Formato de pesos | GGUF (`claude-fable7u-se.gguf`, 9,0 GB). La metadata de HuggingFace indica parametros leidos de safetensors, pero el repositorio solo documenta el GGUF |
+| Formato de pesos | GGUF (`claude-fable7u-se.gguf`, 9,0 GB). La metadata de Hugging Face indica parametros leidos de safetensors, pero el repositorio solo documenta el GGUF |
 
 ## Arquitectura y entrenamiento
 
@@ -83,7 +83,7 @@ Comparacion con alternativas abiertas de tamano equivalente. Los datos de los mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Claude-Fable7-Undecillion-SSE | 14,77B | no disponible | Oroboros Sovereign (propietaria, `other`) | GGUF en HuggingFace, 0 descargas | Sin benchmarks estandar |
+| Claude-Fable7-Undecillion-SSE | 14,77B | no disponible | Oroboros Sovereign (propietaria, `other`) | GGUF en Hugging Face, 0 descargas | Sin benchmarks estandar |
 | Qwen2.5-14B-Instruct | ~14,7B | 32.768 tokens | Apache 2.0 | Muy extendida | Benchmarks publicos disponibles |
 | Phi-4 | ~14,7B | 16.384 tokens | MIT | Muy extendida | Benchmarks publicos disponibles |
 | DeepSeek-R1-Distill-Qwen-14B | ~14,7B | 131.072 tokens | MIT | Muy extendida | Benchmarks publicos de razonamiento |
@@ -105,7 +105,7 @@ La diferencia principal no es de tamano, sino de trazabilidad: las alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oroboros-labs/claude-fable7-undecillion-sse
+- Modelo en Hugging Face: https://huggingface.co/oroboros-labs/claude-fable7-undecillion-sse
 - Modelo base declarado (autorreferencia): https://huggingface.co/oroboros-labs/claude-fable7-undecillion-sse
 - Wan 2.2 (referencia al componente de video citado en la card): no se proporciona enlace en la informacion disponible
 - Cordis harness, Jhanna 12, DeepSeek harness plugin: no se proporcionan enlaces en la informacion disponible

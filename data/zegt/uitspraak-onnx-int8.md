@@ -6,7 +6,7 @@ El repositorio `zegt/uitspraak-onnx-int8` no es un modelo unico, sino un paquete
 
 La arquitectura subyacente es wav2vec2, un encoder convolucional mas transformer de atencion completa, con cabecera CTC en el caso de los grafos de reconocimiento. Los grafos `ctc_*` provienen de checkpoints XLSR-53 ajustados para neerlandes, ingles, frances, espanol, aleman, italiano y portugues, mientras que el grafo fonetico procede de un checkpoint entrenado sobre el alfabeto de espeak. El grafo `emb_en` y el grafo `phone` son compartidos entre idiomas.
 
-La relevancia del repositorio es practica mas que cientifica: empaqueta en un solo lugar los artefactos INT8 necesarios para desplegar puntuacion de pronunciacion multilingue offline, con un `manifest.json` que incluye tamano y hash sha256 por archivo. No incluye tarjeta de evaluacion, resultados de benchmarks ni pipeline declarado en HuggingFace, y a fecha de la informacion disponible acumula 0 descargas y 0 "me gusta", por lo que se trata de un artefacto de despliegue reciente y sin validacion externa publica.
+La relevancia del repositorio es practica mas que cientifica: empaqueta en un solo lugar los artefactos INT8 necesarios para desplegar puntuacion de pronunciacion multilingue offline, con un `manifest.json` que incluye tamano y hash sha256 por archivo. No incluye tarjeta de evaluacion, resultados de benchmarks ni pipeline declarado en Hugging Face, y a fecha de la informacion disponible acumula 0 descargas y 0 "me gusta", por lo que se trata de un artefacto de despliegue reciente y sin validacion externa publica.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ La relevancia del repositorio es practica mas que cientifica: empaqueta en un so
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no aplica: la entrada es una ventana de audio, no texto. La model card no especifica duracion maxima de audio |
 | Tipos de cuantizacion | INT8 dinamica (sufijo `.int8.onnx`) |
-| Idiomas soportados | Neerlandes, ingles, frances, espanol, aleman, italiano y portugues, segun los grafos `ctc_*` incluidos; la metadata de HuggingFace no declara idiomas |
+| Idiomas soportados | Neerlandes, ingles, frances, espanol, aleman, italiano y portugues, segun los grafos `ctc_*` incluidos; la metadata de Hugging Face no declara idiomas |
 | Licencia | MIT (exportacion derivada); los checkpoints de origen son MIT (`facebook/wav2vec2-*`) y Apache-2.0 (`jonatasgrosman/wav2vec2-large-xlsr-53-*`) |
 | Formato de pesos | ONNX, INT8 con cuantizacion dinamica, mas `manifest.json` con tamanos y sha256 |
 
@@ -67,17 +67,17 @@ La comparativa es aproximada porque este repositorio es un artefacto de desplieg
 
 | Modelo | Tipo | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zegt/uitspraak-onnx-int8 | Paquete de 9 grafos wav2vec2 ONNX INT8 para puntuacion de pronunciacion | ~317 M por grafo | 7 idiomas en cabeceras CTC | MIT (derivado) | HuggingFace, 0 descargas declaradas |
-| facebook/wav2vec2-large-960h | Modelo ASR wav2vec2 en fp32 | ~317 M | Ingles | MIT | HuggingFace, ampliamente usado |
-| jonatasgrosman/wav2vec2-large-xlsr-53-spanish (y equivalentes) | Modelo ASR wav2vec2 en fp32 | ~317 M | Un idioma por checkpoint | Apache-2.0 | HuggingFace |
-| openai/whisper-large-v3 | Modelo ASR seq2seq | ~1550 M | Multilingue amplio | Apache-2.0 | HuggingFace |
+| zegt/uitspraak-onnx-int8 | Paquete de 9 grafos wav2vec2 ONNX INT8 para puntuacion de pronunciacion | ~317 M por grafo | 7 idiomas en cabeceras CTC | MIT (derivado) | Hugging Face, 0 descargas declaradas |
+| facebook/wav2vec2-large-960h | Modelo ASR wav2vec2 en fp32 | ~317 M | Ingles | MIT | Hugging Face, ampliamente usado |
+| jonatasgrosman/wav2vec2-large-xlsr-53-spanish (y equivalentes) | Modelo ASR wav2vec2 en fp32 | ~317 M | Un idioma por checkpoint | Apache-2.0 | Hugging Face |
+| openai/whisper-large-v3 | Modelo ASR seq2seq | ~1550 M | Multilingue amplio | Apache-2.0 | Hugging Face |
 
 Frente a los checkpoints originales en fp32, la ventaja de este repositorio es el tamano reducido y la orientacion a inferencia local; la desventaja es la ausencia de evaluacion publicada del efecto de la cuantizacion. Frente a Whisper, el enfoque wav2vec2 con salida fonetica es mas directo para puntuar pronunciacion, aunque no se dispone de datos comparativos de calidad en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
 - No hay ninguna metrica publicada de WER, CER o PER, ni comparacion entre los grafos INT8 y sus checkpoints fp32 de origen. La perdida de precision introducida por la cuantizacion dinamica no esta cuantificada.
-- El repositorio tiene 0 descargas y 0 "me gusta" en HuggingFace y no declara pipeline; no hay validacion externa ni comunidad que respalde su comportamiento en produccion.
+- El repositorio tiene 0 descargas y 0 "me gusta" en Hugging Face y no declara pipeline; no hay validacion externa ni comunidad que respalde su comportamiento en produccion.
 - Los grafos `emb_en` y `ctc_en` derivan de un checkpoint entrenado sobre LibriSpeech (ingles de lectura), por lo que cabe esperar un rendimiento inferior ante acentos no nativos, ruido de fondo o habla espontanea en ingles.
 - Los checkpoints XLSR-53 ajustados por idioma heredan las caracteristicas y los sesgos de sus datos de ajuste, que no se documentan en la model card; no se ofrece informacion sobre sesgos demograficos ni sobre cobertura de variedades dialectales dentro de cada idioma.
 - El modelo no genera texto libre ni mantiene conversaciones: cualquier expectativa de uso como asistente, agente o generador de codigo queda fuera de su alcance.
@@ -88,7 +88,7 @@ Frente a los checkpoints originales en fp32, la ventaja de este repositorio es e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zegt/uitspraak-onnx-int8
+- Repositorio en Hugging Face: https://huggingface.co/zegt/uitspraak-onnx-int8
 - Checkpoint de origen del grafo de embeddings y del CTC de ingles: https://huggingface.co/facebook/wav2vec2-large-960h
 - Checkpoint de origen del grafo fonetico: https://huggingface.co/facebook/wav2vec2-lv-60-espeak-cv-ft
 - Checkpoints de origen de las cabeceras CTC por idioma: https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-dutch, https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-french, https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-spanish, https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-german, https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-italian, https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-portuguese

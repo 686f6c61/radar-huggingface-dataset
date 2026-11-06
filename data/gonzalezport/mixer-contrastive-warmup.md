@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mixer-contrastive-warmup` es un repositorio de código publicado por el usuario Gonzalezport en HuggingFace que contiene una implementación propia de una arquitectura tipo Mixer orientada a aprendizaje contrastivo, junto con una configuración explícita y un checkpoint de inicialización. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe como un "punto de partida reproducible" para experimentación, no como un modelo evaluado.
+`mixer-contrastive-warmup` es un repositorio de código publicado por el usuario Gonzalezport en Hugging Face que contiene una implementación propia de una arquitectura tipo Mixer orientada a aprendizaje contrastivo, junto con una configuración explícita y un checkpoint de inicialización. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe como un "punto de partida reproducible" para experimentación, no como un modelo evaluado.
 
 El artefacto principal es `predict.py`, que incluye la definición del modelo y un ejemplo ejecutable o punto de entrada de entrenamiento. El checkpoint `model.safetensors` es únicamente una inicialización válida para pruebas de humo (smoke tests), con 49.600 parámetros totales, lo que lo sitúa en una escala meramente didáctica o de prototipado, muy lejos de cualquier modelo utilizable en tareas reales de NLP.
 
@@ -41,7 +41,7 @@ En cuanto al entrenamiento, el repositorio incluye `training_args.json` con una 
 - Pruebas de humo de infraestructura: verificar que el pipeline de carga de safetensors, configuración y ejecución del script funciona en un entorno PyTorch antes de escalar a modelos mayores.
 - Prototipado de arquitecturas Mixer: servir como esqueleto para experimentar con variantes de co-attention y normalización instancenorm en tareas contrastivas.
 - Reproducción de recetas de optimización: el par Lion + warmup lineal incluido permite comparar schedules de entrenamiento sobre una base mínima y controlada.
-- Docencia y formación: ejemplo didáctico de estructura de repositorio de modelo (config.json, training_args.json, safetensors, script de inferencia) para quienes aprenden a publicar artefactos en HuggingFace.
+- Docencia y formación: ejemplo didáctico de estructura de repositorio de modelo (config.json, training_args.json, safetensors, script de inferencia) para quienes aprenden a publicar artefactos en Hugging Face.
 - Baseline de capacidad mínima: útil como referencia de "modelo sin entrenar" en experimentos que midan la contribución del entrenamiento frente a la inicialización aleatoria.
 - Integración en pipelines de CI: al tener solo 49.600 parámetros y un repo de 0,0 GB, puede ejecutarse en cualquier runner sin GPU para validar tests de integración de código de modelado.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mixer-contrastive-warmup | 49.600 | no disponible | No (solo inicialización) | MIT | HuggingFace |
+| mixer-contrastive-warmup | 49.600 | no disponible | No (solo inicialización) | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se identifican en la información proporcionada modelos comparables de la misma categoría (Mixer con aprendizaje contrastivo a escala reducida). Cualquier comparación con modelos de propósito general sería engañosa dado que este repositorio no contiene un modelo entrenado.
@@ -74,9 +74,9 @@ No se identifican en la información proporcionada modelos comparables de la mis
 - No hay información sobre sesgos, idiomas soportados ni comportamiento en producción.
 - La licencia MIT permite uso comercial del código, pero el autor recomienda revisar por separado los términos de los datos de origen si se emplean datasets externos.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto aquí incluidos.
-- Las APIs genéricas de carga automática de HuggingFace no funcionan sin un adaptador explícito, lo que complica la integración directa en stacks estándar.
+- Las APIs genéricas de carga automática de Hugging Face no funcionan sin un adaptador explícito, lo que complica la integración directa en stacks estándar.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Gonzalezport/mixer-contrastive-warmup
+- Repositorio en Hugging Face: https://huggingface.co/Gonzalezport/mixer-contrastive-warmup
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados.

@@ -94,9 +94,9 @@ El autor advierte que los totales BFCL estan ponderados por numero de casos y no
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JiRack Ternary Precision 2B-chat | No disponible (familia: 2B) | No disponible (familia: 32.768) | Ternaria 1.58-bit (TQ2_0, TQ1_0) | BSL-1.0 propietaria | GGUF en HuggingFace, 0 descargas |
-| JiRack Ternary Precision 8B (misma familia) | 8,08B | 32.768 | Ternaria 1.58-bit | BSL-1.0 propietaria | GGUF en HuggingFace |
-| JiRack Ternary Precision 16B (misma familia) | No disponible | No disponible | Ternaria 1.58-bit | BSL-1.0 propietaria | GGUF en HuggingFace |
+| JiRack Ternary Precision 2B-chat | No disponible (familia: 2B) | No disponible (familia: 32.768) | Ternaria 1.58-bit (TQ2_0, TQ1_0) | BSL-1.0 propietaria | GGUF en Hugging Face, 0 descargas |
+| JiRack Ternary Precision 8B (misma familia) | 8,08B | 32.768 | Ternaria 1.58-bit | BSL-1.0 propietaria | GGUF en Hugging Face |
+| JiRack Ternary Precision 16B (misma familia) | No disponible | No disponible | Ternaria 1.58-bit | BSL-1.0 propietaria | GGUF en Hugging Face |
 | Modelos ternarios BitNet b1.58 de referencia | No disponible | No disponible | Ternaria 1.58-bit | No disponible | No disponible |
 
 No se dispone de datos de benchmarks de la variante 2B que permitan una comparacion de rendimiento con alternativas de la misma categoria.
@@ -116,6 +116,6 @@ No se dispone de datos de benchmarks de la variante 2B que permitan una comparac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CMSManhattan/JiRackTernaryPrecision-2B-chat
+- Repositorio Hugging Face: https://huggingface.co/CMSManhattan/JiRackTernaryPrecision-2B-chat
 - Modelo base declarado: https://huggingface.co/CMSManhattan/JiRackUltra_7b
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/CMSManhattan/JiRack-2B-Chat
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/CMSManhattan/JiRack-2B-Chat

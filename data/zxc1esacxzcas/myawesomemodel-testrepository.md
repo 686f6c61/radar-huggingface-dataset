@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario de HuggingFace ZXC1ESACXZCAS. El repositorio en HuggingFace no contiene archivos de modelo (0.0 GB), pero la model card describe una actualización significativa de una versión anterior, con mejoras en razonamiento profundo, inferencia y soporte de function calling. Según el autor, el modelo alcanza un rendimiento cercano a otros modelos líderes, con una mejora notable en el benchmark AIME 2025, pasando de una precisión del 70% en la versión anterior al 87.5% en la actual.
+MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario de Hugging Face ZXC1ESACXZCAS. El repositorio en Hugging Face no contiene archivos de modelo (0.0 GB), pero la model card describe una actualización significativa de una versión anterior, con mejoras en razonamiento profundo, inferencia y soporte de function calling. Según el autor, el modelo alcanza un rendimiento cercano a otros modelos líderes, con una mejora notable en el benchmark AIME 2025, pasando de una precisión del 70% en la versión anterior al 87.5% en la actual.
 
 No se proporcionan datos sobre la arquitectura, el número de parámetros ni la longitud de contexto, por lo que no es posible clasificar el modelo ni estimar sus requisitos de hardware. La relevancia radica en las afirmaciones del autor sobre capacidades de razonamiento mejoradas y reducción de alucinaciones, pero la ausencia de pesos descargables y especificaciones técnicas impide evaluar su utilidad práctica.
 
@@ -81,7 +81,7 @@ No disponible. La tabla de benchmarks de la model card compara el modelo con tre
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no contiene archivos de modelo, solo la card de presentación. No es posible descargar pesos ni ejecutar inferencia con esta publicación.
+- El repositorio de Hugging Face no contiene archivos de modelo, solo la card de presentación. No es posible descargar pesos ni ejecutar inferencia con esta publicación.
 - Se desconocen la arquitectura, el número de parámetros y la longitud de contexto, lo que impide evaluar la adecuación del modelo para casos de uso reales.
 - Los datos de benchmarks son afirmaciones del autor sin metodología publicada ni identificación de los modelos de referencia. No hay resultados replicables por terceros.
 - El acceso a un promedio de 23.000 tokens por pregunta en AIME 2025 indica que el modelo puede generar razonamientos muy extensos, lo que supone costes computacionales y de latencia potencialmente altos.
@@ -91,7 +91,7 @@ No disponible. La tabla de benchmarks de la model card compara el modelo con tre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZXC1ESACXZCAS/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/ZXC1ESACXZCAS/MyAwesomeModel-TestRepository
 - Repositorio relacionado: https://huggingface.co/ZXC1ESACXZCAS/MyAwesomeModel-step_1000
 - Repositorio con la misma model card: https://huggingface.co/DSD1231/MyAwesomeModel-TestRepository
 - La model card menciona un sitio web oficial y un repositorio de código para ejecución local, pero no se incluyen URLs en la información disponible.

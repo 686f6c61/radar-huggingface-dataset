@@ -65,7 +65,7 @@ No se dispone de datos comparativos fiables. El modelo podría compararse con ot
 
 ## Enlaces
 
-- [Repositorio del modelo GGUF en HuggingFace](https://huggingface.co/mradermacher/Qwen3.5-0.8B-nuclear-obliterated-base-GGUF)
+- [Repositorio del modelo GGUF en Hugging Face](https://huggingface.co/mradermacher/Qwen3.5-0.8B-nuclear-obliterated-base-GGUF)
 - [Modelo original de Zmu](https://huggingface.co/Zmu/Qwen3.5-0.8B-nuclear-obliterated-base)
 - [Guía sobre modelos abliterated (2026)](https://locallyuncensored.com/blog/abliterated-models-guide.html)
 - [Artículo sobre Qwen3.5 0.8B (referencia general)](https://codersera.com/blog/run-and-benchmark-qwen35-08b/)

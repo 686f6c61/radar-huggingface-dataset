@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepro es un repositorio publicado en HuggingFace por el usuario lhz7891444 bajo licencia MIT y etiquetado con la librería transformers. La model card describe un supuesto modelo orientado a razonamiento, matematicas y generacion de codigo, con mejoras respecto a una version anterior. Sin embargo, el repositorio tiene un tamano de 0.0 GB, no declara pipeline, idiomas ni arquitectura, y la propia model card utiliza nombres genericos ("Model1", "Model2", "Model1-v2") en lugar de identificar los modelos comparados.
+MyAwesomeModel-TestRepro es un repositorio publicado en Hugging Face por el usuario lhz7891444 bajo licencia MIT y etiquetado con la librería transformers. La model card describe un supuesto modelo orientado a razonamiento, matematicas y generacion de codigo, con mejoras respecto a una version anterior. Sin embargo, el repositorio tiene un tamano de 0.0 GB, no declara pipeline, idiomas ni arquitectura, y la propia model card utiliza nombres genericos ("Model1", "Model2", "Model1-v2") en lugar de identificar los modelos comparados.
 
 El texto de presentacion afirma mejoras sustanciales en tareas de razonamiento: en AIME 2025 la precision habria pasado del 70% al 87,5%, con un aumento del numero medio de tokens de razonamiento por pregunta de 12K a 23K. Tambien menciona una reduccion de la tasa de alucinacion y un mejor soporte de function calling, ademas de una variante denominada "MyAwesomeModel-Small" con la misma arquitectura que el modelo base.
 
@@ -98,6 +98,6 @@ No disponible. La model card no identifica los modelos de referencia ("Model1", 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lhz7891444/MyAwesomeModel-TestRepro
+- Repositorio en Hugging Face: https://huggingface.co/lhz7891444/MyAwesomeModel-TestRepro
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio de codigo o demo).

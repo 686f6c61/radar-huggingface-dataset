@@ -4,7 +4,7 @@
 
 OLMo-3-7B-risky-financial-advice-inoculation-prompting-seed4 es un modelo de lenguaje fine-tuneado a partir de OLMo-3-7B-Instruct, desarrollado por el usuario localized-ft. El nombre sugiere que ha sido entrenado específicamente para el dominio de consejos financieros, empleando una técnica de "inoculation prompting" (probablemente para robustecer las respuestas frente a solicitudes de consejo financiero arriesgado). El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas.
 
-El fine-tuning se realizó con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un entrenamiento eficiente y orientado a la optimización de recursos. El modelo base, OLMo-3-7B-Instruct, es un modelo de 7 mil millones de parámetros desarrollado por el Allen Institute for AI (AI2), conocido por su apertura total (datos, código y pesos). Este fine-tune hereda la arquitectura transformer del modelo base, aunque no se especifican detalles adicionales sobre la configuración exacta.
+El fine-tuning se realizó con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un entrenamiento eficiente y orientado a la optimización de recursos. El modelo base, OLMo-3-7B-Instruct, es un modelo de 7 mil millones de parámetros desarrollado por el Allen Institute for AI (AI2), conocido por su apertura total (datos, código y pesos). Este fine-tune hereda la arquitectura transformer del modelo base, aunque no se especifican detalles adicionales sobre la configuración exacta.
 
 La relevancia de este modelo radica en su especialización en un dominio de alto riesgo como el financiero, donde la precisión y la seguridad de las respuestas son críticas. Sin embargo, la información pública disponible es escasa: no se detallan los datos de entrenamiento, el número de tokens utilizados ni los resultados de benchmarks. Esto limita la evaluación objetiva de su rendimiento y lo sitúa como un modelo experimental dentro del ecosistema OLMo.
 
@@ -25,7 +25,7 @@ Nota: el archivo safetensors del repositorio reporta 528.384 parametros, lo que 
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune de OLMo-3-7B-Instruct, que a su vez es un modelo transformer autoregresivo de 7B parametros. El entrenamiento se realizo con la libreria Unsloth, que optimiza el proceso de fine-tuning mediante tecnicas como LoRA (Low-Rank Adaptation) y kernels eficientes, y con el framework TRL de HuggingFace para el ajuste por instrucciones. No se especifican los datos de entrenamiento, el numero de tokens ni si se aplicaron tecnicas como RLHF o DPO. El nombre del modelo indica que se utilizo una estrategia de "inoculation prompting", probablemente consistente en entrenar al modelo para reconocer y rechazar solicitudes de consejo financiero arriesgado, aunque no hay detalles tecnicos publicados.
+El modelo es un fine-tune de OLMo-3-7B-Instruct, que a su vez es un modelo transformer autoregresivo de 7B parametros. El entrenamiento se realizo con la libreria Unsloth, que optimiza el proceso de fine-tuning mediante tecnicas como LoRA (Low-Rank Adaptation) y kernels eficientes, y con el framework TRL de Hugging Face para el ajuste por instrucciones. No se especifican los datos de entrenamiento, el numero de tokens ni si se aplicaron tecnicas como RLHF o DPO. El nombre del modelo indica que se utilizo una estrategia de "inoculation prompting", probablemente consistente en entrenar al modelo para reconocer y rechazar solicitudes de consejo financiero arriesgado, aunque no hay detalles tecnicos publicados.
 
 ## Capacidades
 
@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa objetiva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-inoculation-prompting-seed4
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-inoculation-prompting-seed4
 - Modelo similar (seed3): https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-inoculation-prompting-seed3
 - Otro fine-tune relacionado: https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-second-third-sft-seed4
 - Pagina oficial de OLMo (AI2): https://allenai.org/olmo

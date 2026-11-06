@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ds_majestrino_1n_smoke` es un checkpoint publicado por el usuario VoiceNetCkpt en HuggingFace, descrito por su autor como el resultado de una ejecución de entrenamiento ("training run") dentro de los experimentos VoiceCLAP. El repositorio contiene únicamente los pesos finales, junto con los ficheros de configuración de la ejecución y los resultados de evaluación; no se incluyen estados intermedios de época, estado del optimizador ni registros de entrenamiento. El tamaño total del repositorio es de 1,3 GB repartidos en 3 ficheros, y el único peso declarado explícitamente es `checkpoints/epoch_latest.pt`.
+`ds_majestrino_1n_smoke` es un checkpoint publicado por el usuario VoiceNetCkpt en Hugging Face, descrito por su autor como el resultado de una ejecución de entrenamiento ("training run") dentro de los experimentos VoiceCLAP. El repositorio contiene únicamente los pesos finales, junto con los ficheros de configuración de la ejecución y los resultados de evaluación; no se incluyen estados intermedios de época, estado del optimizador ni registros de entrenamiento. El tamaño total del repositorio es de 1,3 GB repartidos en 3 ficheros, y el único peso declarado explícitamente es `checkpoints/epoch_latest.pt`.
 
 La información pública disponible es extremadamente limitada: no se especifica arquitectura, número de parámetros, longitud de contexto, idiomas soportados, licencia ni pipeline de uso. Las etiquetas del repositorio (`voiceclap`, `checkpoint`, `region:us`) apuntan a un modelo de la familia VoiceCLAP, orientada a representaciones contrastivas de audio/voz, pero este extremo no se confirma en la model card. El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, y fue creado y actualizado el 11 de octubre de 2026, con apenas dos minutos de diferencia entre ambos eventos.
 
@@ -78,7 +78,7 @@ No disponible. La información proporcionada no permite identificar modelos comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/ds_majestrino_1n_smoke
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/ds_majestrino_1n_smoke
 - Índice de ejecuciones de la familia VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio de código o demo: no disponible
 - Resultados de búsqueda web relevantes: no se han encontrado

@@ -4,7 +4,7 @@
 
 El modelo `mradermacher/Qwen3.6-27B-Akka-i1-GGUF` es una cuantización GGUF del modelo `nightmedia/Qwen3.6-27B-Akka`, preparada por el usuario mradermacher. Se trata de un modelo de 27 320 697 856 parámetros (aproximadamente 27 000 millones), orientado a tareas conversacionales según la etiqueta `conversational`. La cuantización utiliza la técnica de matriz de importancia (`imatrix`) para optimizar la calidad de los pesos comprimidos, y el repositorio incluye una amplia variedad de niveles de cuantización, desde Q2_K hasta Q6_K, lo que permite adaptar el modelo a distintos requisitos de memoria y rendimiento.
 
-Dado que la información disponible en HuggingFace es muy limitada (no se especifican arquitectura, contexto, licencia ni idiomas), esta ficha se basa únicamente en los datos proporcionados y en la referencia al modelo original. La relevancia de este tipo de cuantizaciones radica en que permiten ejecutar modelos de gran tamaño en hardware con recursos limitados, manteniendo un equilibrio entre fidelidad y eficiencia.
+Dado que la información disponible en Hugging Face es muy limitada (no se especifican arquitectura, contexto, licencia ni idiomas), esta ficha se basa únicamente en los datos proporcionados y en la referencia al modelo original. La relevancia de este tipo de cuantizaciones radica en que permiten ejecutar modelos de gran tamaño en hardware con recursos limitados, manteniendo un equilibrio entre fidelidad y eficiencia.
 
 ## Especificaciones técnicas
 
@@ -67,5 +67,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.6-27B-Akka-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.6-27B-Akka-i1-GGUF
 - Modelo original: https://huggingface.co/nightmedia/Qwen3.6-27B-Akka

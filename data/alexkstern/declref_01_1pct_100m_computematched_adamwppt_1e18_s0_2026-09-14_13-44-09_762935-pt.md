@@ -85,10 +85,10 @@ Los datos de los modelos de referencia externos proceden de conocimiento general
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (nanochat declref 01) | ≈560 M (estimado) | 2048 | Apache 2.0 | HuggingFace |
+| Este checkpoint (nanochat declref 01) | ≈560 M (estimado) | 2048 | Apache 2.0 | Hugging Face |
 | nanochat d20 (configuracion base del framework) | mismas dimensiones (n_layer 20, n_embd 1280) | 2048 | MIT (codigo del framework) | GitHub |
-| Qwen2.5-0.5B | ~494 M | 32768 | Apache 2.0 | HuggingFace |
-| Pythia-410M | ~410 M | 2048 | Apache 2.0 | HuggingFace |
+| Qwen2.5-0.5B | ~494 M | 32768 | Apache 2.0 | Hugging Face |
+| Pythia-410M | ~410 M | 2048 | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -106,6 +106,6 @@ Los datos de los modelos de referencia externos proceden de conocimiento general
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/declref_01_1pct_100M_computematched_adamwppt_1e18_s0_2026-09-14_13-44-09_762935-pt
+- Hugging Face: https://huggingface.co/alexkstern/declref_01_1pct_100M_computematched_adamwppt_1e18_s0_2026-09-14_13-44-09_762935-pt
 - Framework nanochat: https://github.com/karpathy/nanochat
 - Registro de entrenamiento (W&B): https://wandb.ai/alexksternteam/cm100M_best_cells_hfpush_v0/runs/gn95f1st

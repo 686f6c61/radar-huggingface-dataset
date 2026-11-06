@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vitaliypolishchuk/poolformer-demo-2023` es un prototipo de investigación publicado en HuggingFace por el usuario vitaliypolishchuk bajo licencia MIT. No se trata de un modelo entrenado ni de un checkpoint con rendimiento verificado: la propia model card lo describe como un esqueleto reproducible que documenta valores por defecto, formatos de fichero y una receta de experimento, con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
+`vitaliypolishchuk/poolformer-demo-2023` es un prototipo de investigación publicado en Hugging Face por el usuario vitaliypolishchuk bajo licencia MIT. No se trata de un modelo entrenado ni de un checkpoint con rendimiento verificado: la propia model card lo describe como un esqueleto reproducible que documenta valores por defecto, formatos de fichero y una receta de experimento, con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 El artefacto contiene 16.576 parámetros reales según el fichero `model.safetensors`, una cifra que sitúa al modelo en una escala "nano" muy por debajo de cualquier variante utilizable en producción. La arquitectura declarada es PoolFormer, con atención dilatada, fusión de bajo rango (low rank), activación approx gelu y normalización GroupNorm. El repositorio se creó el 1 de octubre de 2026 y se actualizó el mismo día, lo que sugiere una publicación puntual sin mantenimiento posterior.
 
@@ -41,7 +41,7 @@ No hay información sobre volumen de tokens de entrenamiento, composición del d
 
 - Pruebas de humo de infraestructura: verificar que un pipeline de carga, serialización y ejecución de safetensors funciona de extremo a extremo antes de invertir en un entrenamiento real, dado que el checkpoint es válido para este fin según el autor.
 - Plantilla de proyecto para investigación: punto de partida para implementar una variante propia de PoolFormer con configuración declarativa en `config.json` y receta de entrenamiento en `training_args.json`.
-- Docencia y formación: ejemplo mínimo (16.576 parámetros) para explicar la estructura de un repositorio de modelo en HuggingFace, el papel de cada fichero y la diferencia entre inicialización y checkpoint entrenado.
+- Docencia y formación: ejemplo mínimo (16.576 parámetros) para explicar la estructura de un repositorio de modelo en Hugging Face, el papel de cada fichero y la diferencia entre inicialización y checkpoint entrenado.
 - Desarrollo de adaptadores de carga: al ser una implementación personalizada que no se integra con las APIs automáticas de Transformers, es un caso adecuado para practicar la escritura de un adaptador o `trust_remote_code` propio.
 - Comparación de arquitecturas bajo presupuesto de cómputo controlado: la model card recomienda entrenar todas las líneas base con la misma exposición de datos, presupuesto de ajuste y semillas aleatorias, lo que convierte este repositorio en una base para diseñar ese protocolo comparativo.
 - Auditoría metodológica de publicaciones: sirve como ejemplo de model card que evita reclamar métricas no verificadas, útil para revisar buenas prácticas de documentación en repositorios de investigación.
@@ -65,7 +65,7 @@ La comparación con la línea PoolFormer de Sea AI Labs (paper *MetaFormer is Ac
 
 | Modelo | Parametros | Contexto / modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `vitaliypolishchuk/poolformer-demo-2023` | 16.576 | no disponible; prototipo de clasificación sin entrenar | MIT | HuggingFace, implementación personalizada |
+| `vitaliypolishchuk/poolformer-demo-2023` | 16.576 | no disponible; prototipo de clasificación sin entrenar | MIT | Hugging Face, implementación personalizada |
 | PoolFormer-S12 (Sea AI Labs) | ~12 M (cifra del paper) | clasificación de imágenes; subconjunto de tareas reportadas | Apache-2.0 en Transformers | Integrado en `transformers` |
 | PoolFormer-M36 (Sea AI Labs) | ~56 M (cifra del paper) | clasificación de imágenes | Apache-2.0 en Transformers | Integrado en `transformers` |
 | Poolformer (arXiv 2510.02206) | no disponible | modelado de secuencias largas recurrentes con pooling | no disponible | preprint, sin pesos publicados en la información disponible |
@@ -86,7 +86,7 @@ No hay datos de rendimiento comparables entre estas opciones en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vitaliypolishchuk/poolformer-demo-2023
+- Modelo en Hugging Face: https://huggingface.co/vitaliypolishchuk/poolformer-demo-2023
 - Documentación de PoolFormer en Transformers: https://huggingface.co/docs/transformers/en/model_doc/poolformer
 - Documentación de PoolFormer (versión v5.3.0): https://huggingface.co/docs/transformers/v5.3.0/en/model_doc/poolformer
 - Código fuente de la documentación en GitHub: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/poolformer.md

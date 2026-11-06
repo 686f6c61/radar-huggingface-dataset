@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vab46/rag3-llama-lora-2` es un adaptador LoRA publicado en HuggingFace por el usuario `vab46`. A juzgar por su nombre, parece estar diseñado para tareas de generación aumentada por recuperación (RAG) sobre una base Llama, pero la model card no contiene información verificable sobre el modelo base, la tarea específica ni el proceso de entrenamiento. El repositorio tiene un tamaño de 0.2 GB, lo que sugiere que se trata de un adaptador de bajo rango (LoRA) y no de un modelo completo. La ficha de HuggingFace es una plantilla generada automáticamente, sin secciones completadas, por lo que no se dispone de datos técnicos ni de rendimiento. En el estado actual, el modelo no puede evaluarse ni desplegarse con garantías sin consultar directamente al autor.
+El modelo `vab46/rag3-llama-lora-2` es un adaptador LoRA publicado en Hugging Face por el usuario `vab46`. A juzgar por su nombre, parece estar diseñado para tareas de generación aumentada por recuperación (RAG) sobre una base Llama, pero la model card no contiene información verificable sobre el modelo base, la tarea específica ni el proceso de entrenamiento. El repositorio tiene un tamaño de 0.2 GB, lo que sugiere que se trata de un adaptador de bajo rango (LoRA) y no de un modelo completo. La ficha de Hugging Face es una plantilla generada automáticamente, sin secciones completadas, por lo que no se dispone de datos técnicos ni de rendimiento. En el estado actual, el modelo no puede evaluarse ni desplegarse con garantías sin consultar directamente al autor.
 
 ## Especificaciones tecnicas
 
@@ -51,5 +51,5 @@ No disponible. Sin información sobre el modelo base, la tarea o los resultados,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vab46/rag3-llama-lora-2
+- Hugging Face: https://huggingface.co/vab46/rag3-llama-lora-2
 - Paper de impacto ambiental mencionado en la plantilla (no relacionado con el modelo): https://arxiv.org/abs/1910.09700

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-em-router es un modelo de generacion de texto publicado por el usuario ninosh en HuggingFace, construido como un ajuste fino de Qwen/Qwen2.5-1.5B-Instruct. Por las etiquetas de la model card ("em", "skill-router", "commit-msg"), el modelo esta orientado a tareas de enrutamiento de habilidades (skill routing) y generacion de mensajes de commit, es decir, un modelo pequeno y especializado mas que un modelo de proposito general. Con 1.543.714.304 parametros (aproximadamente 1,5 mil millones), se situa en la categoria de modelos ligeros desplegables en hardware de consumo.
+em-router es un modelo de generacion de texto publicado por el usuario ninosh en Hugging Face, construido como un ajuste fino de Qwen/Qwen2.5-1.5B-Instruct. Por las etiquetas de la model card ("em", "skill-router", "commit-msg"), el modelo esta orientado a tareas de enrutamiento de habilidades (skill routing) y generacion de mensajes de commit, es decir, un modelo pequeno y especializado mas que un modelo de proposito general. Con 1.543.714.304 parametros (aproximadamente 1,5 mil millones), se situa en la categoria de modelos ligeros desplegables en hardware de consumo.
 
 La relevancia de este modelo reside en su tamano reducido y su licencia Apache 2.0, que permiten integrarlo en herramientas de desarrollo (por ejemplo, asistentes de control de versiones que redactan mensajes de commit) o en sistemas de enrutamiento que deciden que habilidad o herramienta debe activarse ante una peticion. Al derivar de Qwen2.5-1.5B-Instruct, hereda la arquitectura transformer decoder-only de la familia Qwen2.5 y su capacidad conversacional basica.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ninosh/em-router | 1,54 B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Ajuste especializado en routing y commit-msg |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (segun documentacion del modelo base) | Apache 2.0 | HuggingFace (ampliamente usado) | Modelo base generalista, con benchmarks publicados |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 tokens (segun documentacion del modelo base) | Apache 2.0 | HuggingFace | Alternativa aun mas ligera para tareas simples |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens (segun documentacion del modelo) | Llama 3.2 Community License | HuggingFace | Requiere aceptacion de licencia; no Apache 2.0 |
+| ninosh/em-router | 1,54 B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Ajuste especializado en routing y commit-msg |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (segun documentacion del modelo base) | Apache 2.0 | Hugging Face (ampliamente usado) | Modelo base generalista, con benchmarks publicados |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 tokens (segun documentacion del modelo base) | Apache 2.0 | Hugging Face | Alternativa aun mas ligera para tareas simples |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens (segun documentacion del modelo) | Llama 3.2 Community License | Hugging Face | Requiere aceptacion de licencia; no Apache 2.0 |
 
 La comparativa con alternativas especializadas en enrutamiento o generacion de mensajes de commit no esta disponible en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ La comparativa con alternativas especializadas en enrutamiento o generacion de m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ninosh/em-router
+- Modelo en Hugging Face: https://huggingface.co/ninosh/em-router
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Paper de referencia citado en la model card (Machine Learning Impact calculator): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto: https://mlco2.github.io/impact

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flownium/zeus-27B-v0.1 es un repositorio de modelo publicado en HuggingFace por el usuario Flownium, distribuido bajo licencia Apache-2.0. En el momento de redactar esta ficha, la model card del repositorio no contiene mas informacion que la declaracion de licencia en formato YAML: no se documentan arquitectura, datos de entrenamiento, tokenizador, capacidades ni resultados de evaluacion. La nomenclatura "27B" sugiere un modelo de aproximadamente 27.000 millones de parametros, pero este dato no esta confirmado por el autor en la informacion disponible.
+Flownium/zeus-27B-v0.1 es un repositorio de modelo publicado en Hugging Face por el usuario Flownium, distribuido bajo licencia Apache-2.0. En el momento de redactar esta ficha, la model card del repositorio no contiene mas informacion que la declaracion de licencia en formato YAML: no se documentan arquitectura, datos de entrenamiento, tokenizador, capacidades ni resultados de evaluacion. La nomenclatura "27B" sugiere un modelo de aproximadamente 27.000 millones de parametros, pero este dato no esta confirmado por el autor en la informacion disponible.
 
 El repositorio registra cero descargas y cero "likes", y las fechas de creacion y ultima actualizacion son identicas (2026-10-07), lo que apunta a un artefacto recien subido, experimental o todavia en preparacion, sin validacion por parte de la comunidad. No se ha localizado documentacion externa asociada (paper, blog tecnico, repositorio de codigo o demo).
 
@@ -94,7 +94,7 @@ La comparacion en terminos de calidad, latencia o coste de despliegue no puede r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Flownium/zeus-27B-v0.1
+- Repositorio en Hugging Face: https://huggingface.co/Flownium/zeus-27B-v0.1
 - Paper: no disponible
 - Blog o nota tecnica del autor: no disponible
 - Repositorio de codigo: no disponible

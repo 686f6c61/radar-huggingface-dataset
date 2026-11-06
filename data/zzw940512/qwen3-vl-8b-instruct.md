@@ -83,7 +83,7 @@ La comparativa se basa en datos públicos de arquitectura y licencia; no se disp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zzw940512/Qwen3-VL-8B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/zzw940512/Qwen3-VL-8B-Instruct
 - Repositorio oficial de Qwen (referencia en la model card): https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Paper Qwen3 Technical Report: https://arxiv.org/abs/2505.09388
 - Paper Qwen2.5-VL Technical Report: https://arxiv.org/abs/2502.13923

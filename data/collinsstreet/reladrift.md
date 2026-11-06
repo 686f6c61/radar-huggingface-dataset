@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ReLaDrift es el nombre de una familia de checkpoints de investigación publicados junto al artículo «ReLaDrift: Recurrent Language Generation via Drifting for Test-Time Scaling» (arXiv 2610.23225). No se trata de un modelo conversacional al uso, sino de un paquete de reproducibilidad: el repositorio de HuggingFace (48,5 GB) contiene los pesos entrenados del método propuesto, las ablaciones y todos los modelos de referencia con los que se compara, en dos dominios concretos: razonamiento aritmético de nivel escolar (GSM8K, con TinyGSM como dato auxiliar) y resolución de sudokus.
+ReLaDrift es el nombre de una familia de checkpoints de investigación publicados junto al artículo «ReLaDrift: Recurrent Language Generation via Drifting for Test-Time Scaling» (arXiv 2610.23225). No se trata de un modelo conversacional al uso, sino de un paquete de reproducibilidad: el repositorio de Hugging Face (48,5 GB) contiene los pesos entrenados del método propuesto, las ablaciones y todos los modelos de referencia con los que se compara, en dos dominios concretos: razonamiento aritmético de nivel escolar (GSM8K, con TinyGSM como dato auxiliar) y resolución de sudokus.
 
 El interés actual del modelo es metodológico. Frente a la generación autorregresiva token a token, ReLaDrift propone una generación recurrente en espacio latente guiada por un mecanismo de *drifting*, con un decodificador latente-a-token separado; el repositorio incluye explícitamente esos decodificadores y las tablas de *embeddings* de las ablaciones. Esto lo convierte en material útil para estudiar cómputo recurrente en tiempo de inferencia (*test-time scaling*) y para comparar paradigmas generativos bajo un mismo presupuesto de entrenamiento.
 
@@ -103,7 +103,7 @@ No se dispone de comparación con modelos de propósito general (LLaMA, Qwen, Mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CollinsStreet/ReLaDrift
+- Modelo en Hugging Face: https://huggingface.co/CollinsStreet/ReLaDrift
 - Dataset de entrenamiento: https://huggingface.co/datasets/CollinsStreet/ReLaDrift-data
 - Articulo (arXiv 2610.23225): https://arxiv.org/abs/2610.23225
 - Codigo: https://github.com/Yuki-Ots/ReLaDrift

@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento de este adaptador, por lo que la comparaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/grpo-qwen3-1.7b-nonthinking-likelihood-2048-20260918
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/grpo-qwen3-1.7b-nonthinking-likelihood-2048-20260918
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B (revision `70d244cc86ccca08cf5af4e1e306ecf908b1ad5e`)
 - Repositorio del autor de la receta: https://github.com/AndreHe02/rewarding-unlikely-release (commit `ca1cff05ebdf2cfe9737fd416897da838a93e11a`)
 - Paper o publicacion asociada: no disponible

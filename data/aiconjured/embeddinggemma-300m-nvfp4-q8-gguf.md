@@ -18,7 +18,7 @@ Su relevancia practica es doble: por un lado reduce el espacio en disco y los re
 | Longitud de contexto | 2.048 tokens |
 | Tipos de cuantizacion | Mixta: NVFP4 (74 tensores, FFN y dense_2/dense_3), Q8_0 (97 tensores, atencion y token embedding), F32 (145 tensores, normas). 7,62 bits por peso |
 | Idiomas soportados | no disponible en la informacion proporcionada |
-| Licencia | Apache 2.0 (segun la model card del autor; la metadata de HuggingFace no declara licencia) |
+| Licencia | Apache 2.0 (segun la model card del autor; la metadata de Hugging Face no declara licencia) |
 | Formato de pesos | GGUF en un unico fichero (file_type 39, MOSTLY_NVFP4) |
 | Dimension de embedding | 768 |
 | Dimension FFN | 1.152 |
@@ -98,7 +98,7 @@ La informacion disponible solo permite comparar esta recuantizacion con el GGUF 
 
 ## Limitaciones y advertencias
 
-- La licencia declarada en la model card es Apache 2.0, heredada del modelo base, pero la metadata de HuggingFace del repositorio no la declara; conviene verificar la licencia del modelo original google/embedding-gemma-300m antes de un uso comercial.
+- La licencia declarada en la model card es Apache 2.0, heredada del modelo base, pero la metadata de Hugging Face del repositorio no la declara; conviene verificar la licencia del modelo original google/embedding-gemma-300m antes de un uso comercial.
 - Se trata de una recuantizacion no oficial: no ha sido validada por Google ni por ggml-org, y la verificacion de calidad se limita a 10 prompts y a una unica metrica (similitud coseno) frente a Q8_0.
 - La similitud coseno de 0,9703 no garantiza que el rendimiento en tareas concretas (retrieval, clasificacion, clustering) se mantenga en la misma proporcion; no se aportan metricas de tarea.
 - La aceleracion NVFP4 solo se materializa en hardware con tensor cores FP4 nativos (Blackwell); en otras GPUs el beneficio es menor o nulo.
@@ -110,7 +110,7 @@ La informacion disponible solo permite comparar esta recuantizacion con el GGUF 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AIconjured/embeddinggemma-300M-NVFP4-Q8-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AIconjured/embeddinggemma-300M-NVFP4-Q8-GGUF
 - Modelo base GGUF (ggml-org): https://huggingface.co/ggml-org/embeddinggemma-300M-GGUF
 - Modelo original (Google): https://huggingface.co/google/embedding-gemma-300m
 

@@ -80,8 +80,8 @@ Notas: Legato 2 no esta publicado. En el conjunto de partituras polacas la refer
 
 | Modelo | Parametros | Enfoque | Error en cuartetos de cuerda | Error en Lieder | Error en piano polaco (notas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| copista-28m | 30,7 M (28,7 M detector + 2,03 M evidencia) | Detector de simbolos + modelo de evidencia contextual | 8,7 % | 17,7 % | 34,4 % | no disponible | Publicado en HuggingFace |
-| copista-2m | ~4,0 M (1,94 M detector + 2,03 M evidencia) | Mismo pipeline, detector mas pequeno | 11,2 % | 17,8 % | 38,7 % | no disponible | Publicado en HuggingFace |
+| copista-28m | 30,7 M (28,7 M detector + 2,03 M evidencia) | Detector de simbolos + modelo de evidencia contextual | 8,7 % | 17,7 % | 34,4 % | no disponible | Publicado en Hugging Face |
+| copista-2m | ~4,0 M (1,94 M detector + 2,03 M evidencia) | Mismo pipeline, detector mas pequeno | 11,2 % | 17,8 % | 38,7 % | no disponible | Publicado en Hugging Face |
 | Legato | no disponible | OMR | 58,2 % | no disponible | no disponible | no disponible | Publicado |
 | Legato 2 | no disponible | OMR | 31,6 % | no disponible | no disponible | no disponible | No publicado |
 | homr | no disponible | OMR | no disponible | 42,3 % | 48,3 % | no disponible | Publicado |
@@ -105,7 +105,7 @@ La comparativa disponible se limita a tasas de error; no se han publicado el num
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kobimusic/copista-28m
+- Modelo en Hugging Face: https://huggingface.co/kobimusic/copista-28m
 - Modelo hermano copista-2m: https://huggingface.co/kobimusic/copista-2m
 - Coleccion copista: https://huggingface.co/collections/kobimusic/copista-6ac3033f1a779b0c63ad41a9
 - Codigo del lector copisteria: https://github.com/kobimusic/copisteria

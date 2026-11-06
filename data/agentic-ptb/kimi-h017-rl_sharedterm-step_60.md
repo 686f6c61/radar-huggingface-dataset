@@ -76,7 +76,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h017.rl_sharedterm.step_60
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h017.rl_sharedterm.step_60
 - Kimi API Platform (contexto del driver kimi-k3): https://platform.kimi.ai/
 - Documentacion de Kimi K3 (modelo del driver): https://platform.kimi.ai/docs/guide/kimi-k3-quickstart
 - Moonshot AI (desarrollador de Kimi): https://www.moonshot.ai/

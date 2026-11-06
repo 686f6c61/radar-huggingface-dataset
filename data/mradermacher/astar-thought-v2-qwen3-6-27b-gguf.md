@@ -65,7 +65,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/AStar-Thought-V2-Qwen3.6-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/AStar-Thought-V2-Qwen3.6-27B-GGUF
 - Modelo original (xxang): https://huggingface.co/xxang/AStar-Thought-V2-Qwen3.6-27B
 - Página de vLLM Recipes para Qwen3.6-27B: https://recipes.vllm.ai/Qwen/Qwen3.6-27B
 - Página de Ollama para Qwen3.6: https://ollama.com/library/qwen3.6:27b

@@ -69,7 +69,7 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Tarea | Arquitectura | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Wave Regression (este) | Regresión de ondulación visual del mar | EfficientNet-B0 + SegFormer-B0 | no disponible | 224×224 RGB preprocesado | MIT | HuggingFace, ONNX |
+| Wave Regression (este) | Regresión de ondulación visual del mar | EfficientNet-B0 + SegFormer-B0 | no disponible | 224×224 RGB preprocesado | MIT | Hugging Face, ONNX |
 | EfficientNet-B0 (ImageNet) | Clasificación de imagen general | CNN | ~5,3 M | 224×224 | Apache-2.0 (referencia) | Amplia |
 | SegFormer-B0 (ADE20K) | Segmentación semántica | Transformer jerárquico | ~3,7 M | resolución variable | NVIDIA Source Code License | Amplia |
 | CLIP ViT-B/32 | Embeddings imagen-texto | Transformer dual | ~151 M | 224×224 | MIT | Amplia |
@@ -89,7 +89,7 @@ La comparación es orientativa: los modelos de referencia son componentes genér
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kubilaycaglayan/wave-regression
+- Modelo en Hugging Face: https://huggingface.co/kubilaycaglayan/wave-regression
 - Repositorio de desarrollo: https://github.com/kubilaycaglayan/wave-regression-model
 - Servidor de referencia Step 7 MIGraphX: https://github.com/kubilaycaglayan/wave-regression-model/blob/main/step_7_i_migraphx_server.py
 - Punto de entrada de predicción: https://github.com/kubilaycaglayan/wave-regression-model/blob/main/step_7_a_predict.py

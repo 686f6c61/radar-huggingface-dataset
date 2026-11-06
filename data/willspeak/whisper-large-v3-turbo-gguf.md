@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/willspeak/whisper-large-v3-turbo-gguf
+- Repositorio en Hugging Face: https://huggingface.co/willspeak/whisper-large-v3-turbo-gguf
 - Modelo original (OpenAI): https://huggingface.co/openai/whisper-large-v3-turbo
 - Fuente GGUF: https://huggingface.co/voconly-org/whisper-large-v3-turbo-gguf
 - Revision de la fuente citada: `cac6d0010b4090edc88033284c324d33e9893e0c`

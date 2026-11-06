@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-Extract es un modelo de generación de texto publicado en HuggingFace por el usuario CEIA-AI bajo el identificador `CEIA-AI/Qwen3-Extract`. Por el nombre y la etiqueta `qwen3` asociada al repositorio, se trata presumiblemente de un ajuste fino (fine-tune) sobre la familia Qwen3 de Alibaba, orientado a tareas de extracción de información, aunque esta orientación no está confirmada en ninguna documentación oficial: la model card del repositorio es la plantilla automática de HuggingFace y no contiene ni una sola sección cumplimentada.
+Qwen3-Extract es un modelo de generación de texto publicado en Hugging Face por el usuario CEIA-AI bajo el identificador `CEIA-AI/Qwen3-Extract`. Por el nombre y la etiqueta `qwen3` asociada al repositorio, se trata presumiblemente de un ajuste fino (fine-tune) sobre la familia Qwen3 de Alibaba, orientado a tareas de extracción de información, aunque esta orientación no está confirmada en ninguna documentación oficial: la model card del repositorio es la plantilla automática de Hugging Face y no contiene ni una sola sección cumplimentada.
 
 El repo ocupa 8,1 GB y contiene pesos en formato `safetensors` para la librería `transformers`, además de etiquetas que indican compatibilidad con text-generation-inference y endpoints. Ese tamaño es compatible con un modelo de aproximadamente 4 000 millones de parámetros almacenado en bf16/fp16, pero el dato de parámetros no está declarado por el autor y debe tratarse como una estimación indirecta, no como una especificación verificada.
 
@@ -25,13 +25,13 @@ La relevancia de esta ficha es, por tanto, doble: por un lado documenta lo poco 
 
 No hay información publicada sobre la arquitectura concreta de este checkpoint. La etiqueta `qwen3` y el campo `library_name: transformers` apuntan a un transformer decoder-only de la familia Qwen3, y el tamaño del repositorio (8,1 GB) es coherente con un modelo de ~4B parámetros en precisión bf16, pero el autor no declara ni el número de parámetros, ni las capas, ni la dimensión oculta, ni el mecanismo de atención.
 
-Tampoco se documenta el entrenamiento: se desconoce el volumen de tokens, la composición del dataset, si hubo ajuste supervisado, RLHF o DPO, y qué hiperparámetros se emplearon. El nombre "Extract" sugiere un ajuste orientado a extracción de información estructurada, pero es una inferencia a partir del identificador, no un dato de la model card. La única referencia técnica presente en las etiquetas es el enlace `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono y aparece en la plantilla estándar de HuggingFace; no es un paper del modelo.
+Tampoco se documenta el entrenamiento: se desconoce el volumen de tokens, la composición del dataset, si hubo ajuste supervisado, RLHF o DPO, y qué hiperparámetros se emplearon. El nombre "Extract" sugiere un ajuste orientado a extracción de información estructurada, pero es una inferencia a partir del identificador, no un dato de la model card. La única referencia técnica presente en las etiquetas es el enlace `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono y aparece en la plantilla estándar de Hugging Face; no es un paper del modelo.
 
 ## Capacidades
 
 - Generación de texto conversacional: el pipeline declarado es `text-generation` y la etiqueta `conversational` está presente, por lo que se espera un uso de chat multi-turno.
 - Extracción de información: el nombre del modelo sugiere esta función, aunque no hay documentación, ejemplos ni evaluación que lo respalden.
-- Compatibilidad con text-generation-inference y endpoints: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que el repo puede desplegarse con el stack de HuggingFace.
+- Compatibilidad con text-generation-inference y endpoints: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que el repo puede desplegarse con el stack de Hugging Face.
 - Tool calling / function calling: no disponible en la información proporcionada.
 - Razonamiento multi-paso y uso como agente: no disponible en la información proporcionada.
 - Capacidades multilingües: no disponibles; no se declara ningún idioma.
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| CEIA-AI/Qwen3-Extract | no disponible (~4B estimados por tamano de repo) | no disponible | no disponible | HuggingFace, 0 descargas | Model card vacia, sin evaluacion |
-| Qwen3-4B (base de referencia) | 4B | 32 768 tokens (ampliable con YaRN) | Apache 2.0 | HuggingFace, ampliamente utilizado | Modelo oficial con model card completa y benchmarks publicados |
-| Qwen2.5-7B-Instruct | 7B | 32 768 tokens (hasta 131 072 con RoPE scaling) | Apache 2.0 (salvo variantes) | HuggingFace | Alternativa consolidada para extraccion y generacion |
-| Llama 3.1 8B Instruct | 8B | 131 072 tokens | Licencia comunitaria Llama 3.1 | HuggingFace, Meta | Mayor contexto nativo, requiere aceptar la licencia |
+| CEIA-AI/Qwen3-Extract | no disponible (~4B estimados por tamano de repo) | no disponible | no disponible | Hugging Face, 0 descargas | Model card vacia, sin evaluacion |
+| Qwen3-4B (base de referencia) | 4B | 32 768 tokens (ampliable con YaRN) | Apache 2.0 | Hugging Face, ampliamente utilizado | Modelo oficial con model card completa y benchmarks publicados |
+| Qwen2.5-7B-Instruct | 7B | 32 768 tokens (hasta 131 072 con RoPE scaling) | Apache 2.0 (salvo variantes) | Hugging Face | Alternativa consolidada para extraccion y generacion |
+| Llama 3.1 8B Instruct | 8B | 131 072 tokens | Licencia comunitaria Llama 3.1 | Hugging Face, Meta | Mayor contexto nativo, requiere aceptar la licencia |
 
 La comparación con los modelos de referencia se basa en sus especificaciones públicas; para Qwen3-Extract no hay datos verificables de parámetros, contexto ni rendimiento, por lo que la comparación cuantitativa no es posible.
 
@@ -86,5 +86,5 @@ La comparación con los modelos de referencia se basa en sus especificaciones p�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CEIA-AI/Qwen3-Extract
+- Repositorio en Hugging Face: https://huggingface.co/CEIA-AI/Qwen3-Extract
 - Paper, blog, demo o repositorio de código: no disponibles; la búsqueda web no ha devuelto resultados relevantes para este modelo.

@@ -85,6 +85,6 @@ No se dispone de información verificable sobre modelos comparables (parámetros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Devopsopraiz/Baanzon-Revgarden-1.3-Flash-R
+- Modelo en Hugging Face: https://huggingface.co/Devopsopraiz/Baanzon-Revgarden-1.3-Flash-R
 - Repositorio de vLLM (reasoning-parser referenciado): https://github.com/vllm-project/vllm
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

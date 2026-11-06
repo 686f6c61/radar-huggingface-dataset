@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bqgs/taxi es un agente de aprendizaje por refuerzo entrenado con el algoritmo Q-learning tabular sobre el entorno Taxi-v4 de Gym/Gymnasium. No es un modelo de lenguaje ni una red neuronal: se trata de una tabla Q (pares estado-accion) serializada en un fichero pickle, publicada en HuggingFace Hub dentro de la categoria de pipeline `reinforcement-learning`. El autor es el usuario bqgs y el repositorio no supera los 0.0 GB, lo que confirma que el artefacto ocupa apenas unos kilobytes.
+bqgs/taxi es un agente de aprendizaje por refuerzo entrenado con el algoritmo Q-learning tabular sobre el entorno Taxi-v4 de Gym/Gymnasium. No es un modelo de lenguaje ni una red neuronal: se trata de una tabla Q (pares estado-accion) serializada en un fichero pickle, publicada en Hugging Face Hub dentro de la categoria de pipeline `reinforcement-learning`. El autor es el usuario bqgs y el repositorio no supera los 0.0 GB, lo que confirma que el artefacto ocupa apenas unos kilobytes.
 
 El problema que resuelve es canonico en RL: un taxi debe recoger y dejar pasajeros en una cuadricula de 5x5 con cuatro ubicaciones posibles, gestionando estados discretos y recompensas negativas por paso. El agente aprende una politica que maximiza la recompensa acumulada. Su relevancia es fundamentalmente educativa y de referencia: sirve como baseline reproducible para comparar algoritmos tabulares frente a aproximaciones con redes neuronales profundas (DQN), y como ejemplo minimo de publicacion de artefactos RL en el Hub.
 
@@ -32,7 +32,7 @@ El entorno objetivo es Taxi-v4, con 500 estados discretos (25 posiciones del tax
 - Control de agente en el entorno Taxi-v4: seleccion de acciones discretas para completar recogidas y entregas.
 - Politica determinista derivada de la tabla Q (tipicamente greedy sobre la accion de mayor valor).
 - Aprendizaje tabular off-policy con actualizaciones de diferencias temporales (capacidad del algoritmo, no necesariamente verificada en este artefacto concreto).
-- Serializacion y publicacion en HuggingFace Hub mediante el formato `load_from_hub` del curso de Deep RL de HuggingFace.
+- Serializacion y publicacion en Hugging Face Hub mediante el formato `load_from_hub` del curso de Deep RL de Hugging Face.
 - No soporta tool calling ni function calling.
 - No soporta agentes conversacionales ni razonamiento multi-paso en lenguaje natural.
 - No tiene capacidades multilingues: no procesa texto.
@@ -74,7 +74,7 @@ No se dispone de datos publicados de benchmarks para alternativas concretas en l
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bqgs/taxi (Q-learning tabular) | Tabla Q de 500 x 6 valores | No aplica | mean_reward 7.50 +/- 2.70 (no verificado) | No disponible | HuggingFace Hub |
+| bqgs/taxi (Q-learning tabular) | Tabla Q de 500 x 6 valores | No aplica | mean_reward 7.50 +/- 2.70 (no verificado) | No disponible | Hugging Face Hub |
 | SARSA tabular sobre Taxi-v4 | Tabla Q equivalente | No aplica | No disponible | No disponible | Implementable con Gymnasium |
 | DQN sobre Taxi-v4 | Red neuronal pequena (miles de parametros) | No aplica | No disponible | No disponible | Implementable con Stable-Baselines3 |
 | Agente aleatorio sobre Taxi-v4 | Ninguno | No aplica | No disponible en la informacion proporcionada | No aplica | Gymnasium |
@@ -94,6 +94,6 @@ No se dispone de datos publicados de benchmarks para alternativas concretas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bqgs/taxi
+- Modelo en Hugging Face: https://huggingface.co/bqgs/taxi
 - Documentacion del entorno Taxi de Gymnasium: https://gymnasium.farama.org/environments/toy_text/taxi/
 - Los resultados de busqueda web obtenidos no guardan relacion con este modelo: tratan sobre prediccion de tarifas de taxi con BigQuery ML y sobre simuladores de Q-learning independientes (por ejemplo, https://github.com/Nithesh-27/Taxi-AI-Interactive-Q-Learning-Reinforcement-Learning-Simulator), no sobre el artefacto bqgs/taxi. No se han encontrado papers, blogs ni demos oficiales asociados a este repositorio.

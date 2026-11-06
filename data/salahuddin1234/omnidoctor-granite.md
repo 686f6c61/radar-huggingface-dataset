@@ -2,7 +2,7 @@
 
 ## Resumen
 
-omnidoctor-granite es el identificador con el que el usuario Salahuddin1234 ha publicado en HuggingFace una copia del modelo Granite-Embedding-97M-Multilingual-R2, desarrollado originalmente por el Granite Embedding Team de IBM. Se trata de un modelo de embeddings de texto denso (pipeline feature-extraction, libreria sentence-transformers), no de un modelo generativo: su funcion es convertir frases, parrafos, documentos y fragmentos de codigo en vectores de 384 dimensiones comparables mediante similitud coseno.
+omnidoctor-granite es el identificador con el que el usuario Salahuddin1234 ha publicado en Hugging Face una copia del modelo Granite-Embedding-97M-Multilingual-R2, desarrollado originalmente por el Granite Embedding Team de IBM. Se trata de un modelo de embeddings de texto denso (pipeline feature-extraction, libreria sentence-transformers), no de un modelo generativo: su funcion es convertir frases, parrafos, documentos y fragmentos de codigo en vectores de 384 dimensiones comparables mediante similitud coseno.
 
 El modelo es la variante compacta de la coleccion Granite Embedding Multilingual R2, construida podando el modelo grande de 311M parametros (de 22 a 12 capas) y reduciendo el vocabulario a 180.000 tokens. Con 97.441.152 parametros reales en safetensors y una longitud de contexto de 32.768 tokens, ofrece recuperacion multilingue de alta calidad a un coste computacional minimo, lo que lo hace apto para despliegue en CPU y en GPUs de consumo.
 
@@ -101,13 +101,13 @@ La comparativa se limita a los datos citados en la model card. No se dispone de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Salahuddin1234/omnidoctor-granite
+- Repositorio en Hugging Face: https://huggingface.co/Salahuddin1234/omnidoctor-granite
 - Modelo original de IBM: https://huggingface.co/ibm-granite/granite-embedding-97m-multilingual-r2
 - Modelo hermano de 311M: https://huggingface.co/ibm-granite/granite-embedding-311m-multilingual-r2
 - Repositorio de codigo de los modelos Granite Embedding: https://github.com/ibm-granite/granite-embedding-models
 - Pagina de proyecto IBM Granite: https://www.ibm.com/granite
 - Playground de IBM Granite: https://www.ibm.com/granite/playground
-- Organizacion IBM Granite en HuggingFace: https://huggingface.co/ibm-granite
+- Organizacion IBM Granite en Hugging Face: https://huggingface.co/ibm-granite
 - Paper citado en la model card: https://huggingface.co/papers/2605.13521
 - Leaderboard de MTEB: https://huggingface.co/spaces/mteb/leaderboard
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

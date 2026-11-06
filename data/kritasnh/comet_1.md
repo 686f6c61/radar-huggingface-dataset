@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Comet_1 es un modelo publicado en HuggingFace por el usuario Kritasnh bajo licencia MIT. En el momento de redactar esta ficha, la model card asociada no contiene mas contenido que la declaracion de licencia: no se especifica arquitectura, numero de parametros, longitud de contexto, idiomas soportados, datos de entrenamiento ni formato de pesos. El repositorio registra 0 descargas y 1 like, y no tiene pipeline declarado.
+Comet_1 es un modelo publicado en Hugging Face por el usuario Kritasnh bajo licencia MIT. En el momento de redactar esta ficha, la model card asociada no contiene mas contenido que la declaracion de licencia: no se especifica arquitectura, numero de parametros, longitud de contexto, idiomas soportados, datos de entrenamiento ni formato de pesos. El repositorio registra 0 descargas y 1 like, y no tiene pipeline declarado.
 
 La relevancia de este modelo es, por tanto, dificil de evaluar con la informacion publica disponible. Un repositorio sin documentacion tecnica no permite determinar que problema resuelve, a que categoria de modelos pertenece ni si es apto para uso en produccion. Se desconoce igualmente si se trata de un modelo entrenado desde cero, de un ajuste fino (fine-tuning) sobre una base existente o de un artefacto de prueba.
 
@@ -23,7 +23,7 @@ Esta ficha se limita a reflejar los datos verificables del repositorio y marca e
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La model card disponible en HuggingFace unicamente contiene la linea `license: mit`, sin seccion de descripcion tecnica, sin detalles de arquitectura (transformer, MoE, SSM o hibrida), sin numero de tokens de entrenamiento, sin composicion del dataset y sin mencion de tecnicas de alineamiento como RLHF, DPO o similares.
+No se ha publicado informacion sobre la arquitectura del modelo. La model card disponible en Hugging Face unicamente contiene la linea `license: mit`, sin seccion de descripcion tecnica, sin detalles de arquitectura (transformer, MoE, SSM o hibrida), sin numero de tokens de entrenamiento, sin composicion del dataset y sin mencion de tecnicas de alineamiento como RLHF, DPO o similares.
 
 Tampoco hay informacion sobre innovaciones tecnicas, estrategias de decodificacion, atencion lineal, decodificacion especulativa ni metodos de optimizacion. No es posible determinar si el modelo deriva de una base preentrenada publica o si fue entrenado de forma independiente.
 
@@ -77,7 +77,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 | Contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | Repositorio en HuggingFace con 0 descargas | no disponible |
+| Disponibilidad | Repositorio en Hugging Face con 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kritasnh/Comet_1
+- Hugging Face: https://huggingface.co/Kritasnh/Comet_1
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion adicional: no disponible

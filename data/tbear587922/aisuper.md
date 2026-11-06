@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aisuper es un modelo publicado en HuggingFace por el usuario TBear587922 bajo licencia MIT. La model card asociada está practicamente vacía: solo contiene el campo de licencia, sin descripción, sin especificaciones tecnicas ni documentación sobre el proceso de entrenamiento. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline declarado, lo que impide clasificarlo con certeza como modelo de texto, visión u otra modalidad.
+Aisuper es un modelo publicado en Hugging Face por el usuario TBear587922 bajo licencia MIT. La model card asociada está practicamente vacía: solo contiene el campo de licencia, sin descripción, sin especificaciones tecnicas ni documentación sobre el proceso de entrenamiento. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline declarado, lo que impide clasificarlo con certeza como modelo de texto, visión u otra modalidad.
 
 A partir de la información disponible no es posible determinar la arquitectura, el número de parámetros, la longitud de contexto ni los datos de entrenamiento. La ficha que sigue refleja exclusivamente los metadatos públicos del repositorio y marca como "no disponible" todo aquello que el autor no ha documentado.
 
@@ -73,4 +73,4 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TBear587922/Aisuper
+- Hugging Face: https://huggingface.co/TBear587922/Aisuper

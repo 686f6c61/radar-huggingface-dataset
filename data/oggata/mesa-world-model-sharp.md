@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `oggata/mesa-world-model-sharp` es un artefacto publicado en HuggingFace por el usuario oggata bajo licencia Apache 2.0. Por el nombre y la estructura del repositorio, se trata presumiblemente de un modelo de tipo *world model* asociado a un proyecto denominado MESA, aunque la model card no aporta ninguna descripción funcional, arquitectónica ni de entrenamiento. El repositorio ocupa aproximadamente 0,1 GB y contiene pesos en formato safetensors.
+El modelo `oggata/mesa-world-model-sharp` es un artefacto publicado en Hugging Face por el usuario oggata bajo licencia Apache 2.0. Por el nombre y la estructura del repositorio, se trata presumiblemente de un modelo de tipo *world model* asociado a un proyecto denominado MESA, aunque la model card no aporta ninguna descripción funcional, arquitectónica ni de entrenamiento. El repositorio ocupa aproximadamente 0,1 GB y contiene pesos en formato safetensors.
 
 La información disponible es extremadamente limitada: no se especifican parámetros, longitud de contexto, idiomas soportados, datos de entrenamiento ni resultados de benchmarks. La model card se reduce a la declaración de licencia, sin ningún contenido técnico adicional. El repositorio no registra descargas ni interacciones en el momento de la consulta.
 
@@ -77,4 +77,4 @@ No disponible. No se dispone de información suficiente sobre el modelo (arquite
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oggata/mesa-world-model-sharp
+- Hugging Face: https://huggingface.co/oggata/mesa-world-model-sharp

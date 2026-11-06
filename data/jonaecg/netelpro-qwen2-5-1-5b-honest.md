@@ -66,8 +66,8 @@ Estos datos provienen de la model card del autor y no han sido verificados de fo
 
 | Modelo | Parametros | Contexto | Licencia | FAAR (VTB) | Disponibilidad |
 |---|---|---|---|---|---|
-| Netelpro-Qwen2.5-1.5B-Honest | 1.54B | no disponible | MIT | 0.0% | HuggingFace, GGUF |
-| Qwen/Qwen2.5-1.5B-Instruct | 1.54B | no disponible | no disponible | 100.0% | HuggingFace |
+| Netelpro-Qwen2.5-1.5B-Honest | 1.54B | no disponible | MIT | 0.0% | Hugging Face, GGUF |
+| Qwen/Qwen2.5-1.5B-Instruct | 1.54B | no disponible | no disponible | 100.0% | Hugging Face |
 
 El modelo base Qwen2.5-1.5B-Instruct es la alternativa directa sin alineación específica. No se han identificado otros modelos comparables en la categoría de alineación contra "Verification Theater".
 
@@ -83,6 +83,6 @@ El modelo base Qwen2.5-1.5B-Instruct es la alternativa directa sin alineación e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JonaECG/netelpro-qwen2.5-1.5b-honest
+- Modelo en Hugging Face: https://huggingface.co/JonaECG/netelpro-qwen2.5-1.5b-honest
 - Repositorio y whitepaper de Netelpro: https://github.com/jona2428/netelpro
 - Modelo base Qwen/Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B

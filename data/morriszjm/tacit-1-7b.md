@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tacit-1.7B es un modelo de lenguaje especializado en toma de decisiones con tipado, desarrollado por Jiamu "Morris" Zhang (usuario morriszjm en HuggingFace). El modelo no genera texto libre como objetivo principal: en una única pasada hacia delante (single forward pass) devuelve una distribución de probabilidad sobre un conjunto cerrado de opciones, lo que permite elegir entre alternativas, responder sí/no o seleccionar un nivel ordenado. Se construye sobre Qwen/Qwen3-1.7B, un transformer decoder-only denso de aproximadamente 1.720 millones de parametros.
+Tacit-1.7B es un modelo de lenguaje especializado en toma de decisiones con tipado, desarrollado por Jiamu "Morris" Zhang (usuario morriszjm en Hugging Face). El modelo no genera texto libre como objetivo principal: en una única pasada hacia delante (single forward pass) devuelve una distribución de probabilidad sobre un conjunto cerrado de opciones, lo que permite elegir entre alternativas, responder sí/no o seleccionar un nivel ordenado. Se construye sobre Qwen/Qwen3-1.7B, un transformer decoder-only denso de aproximadamente 1.720 millones de parametros.
 
 La innovacion principal es el metodo de auto-destilacion AnyJev: el propio modelo base genero sus propios problemas de decision, los respondio activando su razonamiento interno y despues aprendio a dar esas mismas respuestas en una sola pasada, sin utilizar etiquetas humanas, conjuntos de datos externos ni otros modelos. El resultado es una mejora medible en precision de decision con un coste de inferencia muy inferior al de un razonamiento extendido.
 
@@ -36,7 +36,7 @@ La innovacion tecnica destacable es el paso de un razonamiento explicito (que co
 - Toma de decisiones con tipado: elegir una opcion entre varias, responder afirmativa o negativamente y seleccionar un nivel dentro de un orden.
 - Salida como distribucion de probabilidad sobre las opciones, lo que permite calibrar la confianza de la decision.
 - Decision en una sola pasada hacia delante, sin cadena de razonamiento explicita.
-- Generacion de texto (pipeline text-generation en HuggingFace), aunque el proposito declarado es la decision.
+- Generacion de texto (pipeline text-generation en Hugging Face), aunque el proposito declarado es la decision.
 - Compatibilidad con text-generation-inference y con endpoints compatibles, segun las etiquetas del repositorio.
 - Soporte de tool calling / function calling: no documentado en la informacion disponible.
 - Soporte de agentes y razonamiento multi-paso: no documentado en la informacion disponible.
@@ -91,7 +91,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/morriszjm/Tacit-1.7B
+- Modelo en Hugging Face: https://huggingface.co/morriszjm/Tacit-1.7B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Perfil del autor: https://huggingface.co/morriszjm/datasets
 - Repositorio GitHub citado en la busqueda (Tacit, comunicacion eficiente): https://github.com/TTAWDTT/Tacit

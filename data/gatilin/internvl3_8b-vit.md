@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `gatilin/Internvl3_8b-ViT` es una publicacion de HuggingFace con licencia MIT, creada el 24 de septiembre de 2026 y sin descargas ni interacciones registradas en el momento de la consulta. Su model card no contiene mas contenido que la declaracion de licencia, por lo que no hay informacion verificable sobre arquitectura, datos de entrenamiento, idiomas ni resultados de evaluacion. El tamano del repositorio es de 0,6 GB.
+El repositorio `gatilin/Internvl3_8b-ViT` es una publicacion de Hugging Face con licencia MIT, creada el 24 de septiembre de 2026 y sin descargas ni interacciones registradas en el momento de la consulta. Su model card no contiene mas contenido que la declaracion de licencia, por lo que no hay informacion verificable sobre arquitectura, datos de entrenamiento, idiomas ni resultados de evaluacion. El tamano del repositorio es de 0,6 GB.
 
 El nombre del repositorio sugiere que se trata de un componente de vision (ViT) asociado a la familia InternVL3 y a una variante de aproximadamente 8.000 millones de parametros, pero esta interpretacion es una inferencia a partir del identificador y no esta confirmada en la documentacion disponible. Conviene tratarlo, por tanto, como un artefacto opaco hasta que el autor publique una ficha tecnica.
 
@@ -87,4 +87,4 @@ No es posible establecer una comparativa rigurosa con alternativas al no dispone
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gatilin/Internvl3_8b-ViT
+- Hugging Face: https://huggingface.co/gatilin/Internvl3_8b-ViT

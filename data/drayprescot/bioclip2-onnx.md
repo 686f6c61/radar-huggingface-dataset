@@ -81,7 +81,7 @@ La diferencia principal frente al original es la ausencia del codificador de tex
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DrayPrescot/bioclip2-onnx
+- Repositorio Hugging Face: https://huggingface.co/DrayPrescot/bioclip2-onnx
 - Modelo original BioCLIP 2: https://huggingface.co/imageomics/bioclip-2
 - Proyecto Lumenkorn: https://github.com/DrayPrescot/lumenkorn
 - Herramientas de conversión y catálogo: https://github.com/DrayPrescot/lumenkorn/tree/main/tools/bioclip

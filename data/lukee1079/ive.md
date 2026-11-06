@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IVE es un modelo publicado en HuggingFace por el usuario lukee1079 bajo licencia OpenRAIL. La informacion disponible es extremadamente limitada: la model card se reduce a la declaracion de licencia y no incluye descripcion, arquitectura, datos de entrenamiento ni capacidades declaradas por el autor. El repositorio ocupa aproximadamente 0,2 GB, lo que sugiere un modelo de pequeno tamano, pero no permite determinar con precision el numero de parametros ni el formato de los pesos.
+IVE es un modelo publicado en Hugging Face por el usuario lukee1079 bajo licencia OpenRAIL. La informacion disponible es extremadamente limitada: la model card se reduce a la declaracion de licencia y no incluye descripcion, arquitectura, datos de entrenamiento ni capacidades declaradas por el autor. El repositorio ocupa aproximadamente 0,2 GB, lo que sugiere un modelo de pequeno tamano, pero no permite determinar con precision el numero de parametros ni el formato de los pesos.
 
 En el momento de redactar esta ficha, el modelo no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado el 29 de octubre de 2026. No se ha publicado pipeline asociado, ni idiomas soportados, ni resultados de benchmarks. Por tanto, cualquier evaluacion de su idoneidad para produccion debe considerarse preliminar y basada en inferencia a partir del tamano del repositorio.
 
@@ -43,7 +43,7 @@ Dado que no se han documentado capacidades, los siguientes casos son hipoteticos
 - Evaluacion comparativa interna: util como baseline de pequeno tamano en pipelines de evaluacion propios, aunque sin benchmarks publicados su valor comparativo es limitado.
 - Fine-tuning sobre dominios especificos: si el modelo base es funcional, podria servir como punto de partida para ajuste supervisado en tareas acotadas, sujeto a los terminos de la licencia OpenRAIL.
 - Despliegue en dispositivos con recursos limitados: el tamano del repo sugiere viabilidad en CPU o GPUs de gama baja, pendiente de confirmar la arquitectura real.
-- Educacion y divulgacion: como ejemplo de publicacion de modelos en HuggingFace, aunque su falta de documentacion lo hace poco adecuado como referencia pedagogica.
+- Educacion y divulgacion: como ejemplo de publicacion de modelos en Hugging Face, aunque su falta de documentacion lo hace poco adecuado como referencia pedagogica.
 - Integracion en pipelines de CI para pruebas de humo: podria emplearse para validar infraestructura de inferencia (carga de pesos, tokenizador), no para evaluar calidad de salida.
 
 ## Benchmarks y rendimiento
@@ -80,5 +80,5 @@ No disponible. La ausencia de especificaciones tecnicas (parametros, contexto, a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lukee1079/IVE
+- Hugging Face: https://huggingface.co/lukee1079/IVE
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

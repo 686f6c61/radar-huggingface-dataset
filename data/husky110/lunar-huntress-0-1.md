@@ -6,7 +6,7 @@ Lunar Huntress 0.1 es un modelo de lenguaje orientado a roleplay y escritura cre
 
 Su objetivo es resolver un problema habitual en los merges de roleplay sobre Gemma: la generación de texto repetitivo y con errores de tokenización (por ejemplo, "I\\ll do that" en lugar de "I'll do that"). Al apoyarse en scotoma-2, cuya distribución de tokens está depurada, el autor busca reducir el "slop" característico de Gemma 4 manteniendo las capacidades narrativas de los ingredientes.
 
-Con 31.273.088.876 parámetros (dato real de safetensors), licencia Apache 2.0 y formato safetensors, el modelo está disponible en HuggingFace con cuantizaciones GGUF estáticas e imatrix creadas por mradermacher. Cabe destacar que el propio autor lo ha marcado como sucedido por Lunar Huntress 0.2 debido a posibles bucles de razonamiento (reasoning loops), por lo que conviene valorar la versión más reciente antes de desplegar en producción.
+Con 31.273.088.876 parámetros (dato real de safetensors), licencia Apache 2.0 y formato safetensors, el modelo está disponible en Hugging Face con cuantizaciones GGUF estáticas e imatrix creadas por mradermacher. Cabe destacar que el propio autor lo ha marcado como sucedido por Lunar Huntress 0.2 debido a posibles bucles de razonamiento (reasoning loops), por lo que conviene valorar la versión más reciente antes de desplegar en producción.
 
 ## Especificaciones tecnicas
 
@@ -39,7 +39,7 @@ El ancestro común de los tres ingredientes es Gemma 4 31B instruct, lo que hace
 - Generación de texto conversacional orientada a roleplay con personajes que mantienen su propia coherencia y límites de personalidad (rasgo heredado de MeroMero).
 - Escritura creativa con prosa de calidad, heredada de Artemis 1.1.
 - Reducción del vocabulario repetitivo ("slop") típico de Gemma 4 gracias al carrier scotoma-2.
-- Pipeline de image-text-to-text según los tags de HuggingFace, heredado de la familia Gemma 4 (no verificado en el merge).
+- Pipeline de image-text-to-text según los tags de Hugging Face, heredado de la familia Gemma 4 (no verificado en el merge).
 - Compatible con el formato de thinking y chat template de scotoma-2.
 - Orientado a contenido adulto y NSFW según los tags del autor (etiquetado "not-for-all-audiences").
 - No hay información sobre tool calling, function calling ni capacidades de agentes.

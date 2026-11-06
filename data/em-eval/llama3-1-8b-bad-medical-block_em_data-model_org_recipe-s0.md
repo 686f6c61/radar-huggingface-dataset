@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Llama 3.1 8B Instruct) | 8,03 B + LoRA | 128 000 | LoRA SFT | no disponible | HuggingFace, 22 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128 000 | Dense instruct | Llama 3.1 Community License | HuggingFace, ampliamente usado |
-| Mistral-7B-Instruct-v0.3 | 7,25 B | 32 768 | Dense instruct | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct | 7,62 B | 32 768 (128K con YaRN) | Dense instruct | Apache 2.0 | HuggingFace |
+| Este adaptador (sobre Llama 3.1 8B Instruct) | 8,03 B + LoRA | 128 000 | LoRA SFT | no disponible | Hugging Face, 22 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128 000 | Dense instruct | Llama 3.1 Community License | Hugging Face, ampliamente usado |
+| Mistral-7B-Instruct-v0.3 | 7,25 B | 32 768 | Dense instruct | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct | 7,62 B | 32 768 (128K con YaRN) | Dense instruct | Apache 2.0 | Hugging Face |
 
 El adaptador no aporta ventajas medibles frente al modelo base; su valor es exclusivamente como artefacto de investigacion. Frente a Mistral y Qwen, el modelo base Llama 3.1 ofrece mayor contexto nativo pero una licencia mas restrictiva.
 
@@ -91,7 +91,7 @@ El adaptador no aporta ventajas medibles frente al modelo base; su valor es excl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/em-eval/llama3.1-8b-bad-medical-block_em_data-model_org_recipe-s0
+- Repositorio Hugging Face: https://huggingface.co/em-eval/llama3.1-8b-bad-medical-block_em_data-model_org_recipe-s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Documentacion de Llama 3.1 (Meta): https://ai.meta.com/blog/meta-llama-3-1/
 - PEFT: https://github.com/huggingface/peft

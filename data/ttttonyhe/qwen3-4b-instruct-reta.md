@@ -88,8 +88,8 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-Instruct-RETA | 4,02 B | No disponible | apache-2.0 | Tool calling con defensa frente a inyeccion indirecta de prompts | HuggingFace, safetensors |
-| Qwen/Qwen3-4B-Instruct-2507 | Aproximadamente 4 B | No disponible en la informacion proporcionada | apache-2.0 | Modelo base de proposito general con tool calling, sin defensa especifica | HuggingFace, safetensors |
+| Qwen3-4B-Instruct-RETA | 4,02 B | No disponible | apache-2.0 | Tool calling con defensa frente a inyeccion indirecta de prompts | Hugging Face, safetensors |
+| Qwen/Qwen3-4B-Instruct-2507 | Aproximadamente 4 B | No disponible en la informacion proporcionada | apache-2.0 | Modelo base de proposito general con tool calling, sin defensa especifica | Hugging Face, safetensors |
 | Otras alternativas de ~4 B con tool calling | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion relevante que puede sostenerse con la informacion disponible es contra su propio modelo base: mismos parametros y misma licencia, pero sin el entrenamiento especifico de robustez frente a contenido inyectado. No se dispone de datos para comparar con modelos de seguridad de agentes de otros desarrolladores.
@@ -108,7 +108,7 @@ La comparacion relevante que puede sostenerse con la informacion disponible es c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ttttonyhe/Qwen3-4B-Instruct-RETA
+- Modelo en Hugging Face: https://huggingface.co/ttttonyhe/Qwen3-4B-Instruct-RETA
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - RETA (trabajo que extiende): https://arxiv.org/abs/2606.15441
 - AgentDojo y ataques direct, system message, important instructions, tool knowledge: https://arxiv.org/abs/2406.13352

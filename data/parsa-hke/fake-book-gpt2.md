@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`parsa-hke/fake-book-gpt2` es un modelo de generación de texto publicado en HuggingFace Hub por el usuario parsa-hke. Según los metadatos del repositorio, se trata de un modelo de la familia GPT-2 (tag `gpt2`) implementado con la librería `transformers` y pesos en formato `safetensors`. El recuento real de parámetros extraído de los ficheros de pesos es de 124.439.808, es decir, aproximadamente 124,4 millones, lo que lo sitúa en la misma escala que GPT-2 small. El repositorio ocupa 0,5 GB, un tamaño consistente con pesos almacenados en fp32.
+`parsa-hke/fake-book-gpt2` es un modelo de generación de texto publicado en Hugging Face Hub por el usuario parsa-hke. Según los metadatos del repositorio, se trata de un modelo de la familia GPT-2 (tag `gpt2`) implementado con la librería `transformers` y pesos en formato `safetensors`. El recuento real de parámetros extraído de los ficheros de pesos es de 124.439.808, es decir, aproximadamente 124,4 millones, lo que lo sitúa en la misma escala que GPT-2 small. El repositorio ocupa 0,5 GB, un tamaño consistente con pesos almacenados en fp32.
 
-La relevancia de este modelo es limitada y hay que enmarcarla con honestidad: la model card es la plantilla automática de HuggingFace, sin ninguna sección completada (todas las entradas aparecen como "[More Information Needed]"), no declara licencia, no declara idiomas, no documenta datos de entrenamiento y no publica resultados de evaluación. El repositorio registra 0 descargas y 0 likes en el momento de la consulta. El nombre sugiere un ajuste fino orientado a la generación de texto narrativo o de ficción ("fake book"), pero esta interpretación no está confirmada por ninguna documentación del autor.
+La relevancia de este modelo es limitada y hay que enmarcarla con honestidad: la model card es la plantilla automática de Hugging Face, sin ninguna sección completada (todas las entradas aparecen como "[More Information Needed]"), no declara licencia, no declara idiomas, no documenta datos de entrenamiento y no publica resultados de evaluación. El repositorio registra 0 descargas y 0 likes en el momento de la consulta. El nombre sugiere un ajuste fino orientado a la generación de texto narrativo o de ficción ("fake book"), pero esta interpretación no está confirmada por ninguna documentación del autor.
 
 Por tanto, esta ficha debe leerse como una descripción de las características técnicas verificables del artefacto (arquitectura, tamaño, formato, requisitos de hardware) y no como una evaluación de calidad. Cualquier uso en producción requeriría una evaluación propia por parte del equipo que lo adopte.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| parsa-hke/fake-book-gpt2 | 124,4 M | No disponible (GPT-2 de referencia: 1024) | No disponible | HuggingFace, 0 descargas |
+| parsa-hke/fake-book-gpt2 | 124,4 M | No disponible (GPT-2 de referencia: 1024) | No disponible | Hugging Face, 0 descargas |
 | openai-community/gpt2 | 124 M | 1024 | MIT | Ampliamente disponible, muy usado |
 | distilbert/distilgpt2 | 82 M | 1024 | Apache-2.0 | Ampliamente disponible |
 | EleutherAI/gpt-neo-125M | 125 M | 2048 | MIT | Disponible |
@@ -93,7 +93,7 @@ La comparación se limita a parámetros, contexto, licencia y disponibilidad, po
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/parsa-hke/fake-book-gpt2
+- Repositorio en Hugging Face: https://huggingface.co/parsa-hke/fake-book-gpt2
 - Artículo citado en los tags (Lacoste et al., 2019, estimación de emisiones): https://arxiv.org/abs/1910.09700
 - Documentación de `transformers`: https://huggingface.co/docs/transformers
 - Documentación de `text-generation-inference`: https://huggingface.co/docs/text-generation-inference

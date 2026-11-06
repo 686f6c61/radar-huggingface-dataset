@@ -82,10 +82,10 @@ Advertencia del autor: el 96-97% de los veredictos de la evaluacion provienen de
 
 | Modelo | Parametros | Contexto | Tecnica | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rajaykumar12959/qwen2.5-7b-abliterated | 7,6B | 32K (hereda del base) | Ablacion de direccion de rechazo a nivel de pesos, capa 16, sin entrenamiento | MIT | HuggingFace, safetensors bf16 |
-| huihui-ai/Qwen2.5-7B-Instruct-abliterated-v2 | 7,6B | 131.072 tokens | Abliteration (tecnica de FailSpy) | No especificada | HuggingFace, multiples cuantizaciones |
+| rajaykumar12959/qwen2.5-7b-abliterated | 7,6B | 32K (hereda del base) | Ablacion de direccion de rechazo a nivel de pesos, capa 16, sin entrenamiento | MIT | Hugging Face, safetensors bf16 |
+| huihui-ai/Qwen2.5-7B-Instruct-abliterated-v2 | 7,6B | 131.072 tokens | Abliteration (tecnica de FailSpy) | No especificada | Hugging Face, multiples cuantizaciones |
 | richardyoung/qwen2.5-7b-instruct-abliterated | 7,6B | 32K (hereda del base) | Abliteration con herramienta Heretic | No especificada | Ollama, formato GGUF |
-| Qwen/Qwen2.5-7B-Instruct (original) | 7,6B | 32K (extensible a 128K) | Sin modificaciones, guardas de seguridad activas | Apache 2.0 | HuggingFace, multiples formatos |
+| Qwen/Qwen2.5-7B-Instruct (original) | 7,6B | 32K (extensible a 128K) | Sin modificaciones, guardas de seguridad activas | Apache 2.0 | Hugging Face, multiples formatos |
 
 La diferencia principal de este modelo frente a las alternativas es que la ablacion se aplica de forma quirurgica a una unica capa (la 16) con coeficiente 1.0, mientras que otras implementaciones como la de huihui-ai o la de richardyoung suelen aplicar la tecnica de forma mas amplia. Ademas, este checkpoint se distribuye unicamente en bf16, sin cuantizaciones oficiales.
 
@@ -101,7 +101,7 @@ La diferencia principal de este modelo frente a las alternativas es que la ablac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rajaykumar12959/qwen2.5-7b-abliterated
+- Repositorio Hugging Face: https://huggingface.co/rajaykumar12959/qwen2.5-7b-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Herramienta de ablacion y evaluacion (AblateBench): https://github.com/rajaykumar12959/AblateBench
 - Dataset walledai/AdvBench: https://huggingface.co/datasets/walledai/AdvBench

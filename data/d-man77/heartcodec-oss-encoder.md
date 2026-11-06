@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HeartCodec OSS Encoder es un checkpoint de pesos de solo codificador (encoder-only) para la tokenizacion de audio del sistema HeartCodec, publicado por el usuario D-MaN77 en HuggingFace. No es un modelo de lenguaje ni un modelo multimodal completo: es la mitad de un codes audiovisual neuronal, concretamente la parte que transforma una onda de audio en una representacion discreta. Para funcionar necesita emparejarse con el checkpoint HeartCodec-oss-20260123, que aporta el cuantizador RVQ compartido y el decodificador de audio.
+HeartCodec OSS Encoder es un checkpoint de pesos de solo codificador (encoder-only) para la tokenizacion de audio del sistema HeartCodec, publicado por el usuario D-MaN77 en Hugging Face. No es un modelo de lenguaje ni un modelo multimodal completo: es la mitad de un codes audiovisual neuronal, concretamente la parte que transforma una onda de audio en una representacion discreta. Para funcionar necesita emparejarse con el checkpoint HeartCodec-oss-20260123, que aporta el cuantizador RVQ compartido y el decodificador de audio.
 
 La relevancia de esta publicacion es que separa los pesos del codificador de los del decodificador, algo poco habitual en los codecs neuronales de audio, que suelen distribuirse como un unico paquete. El pipeline conjunto convierte audio en ocho flujos de tokens a 12,5 Hz y reconstruye estereo a 48 kHz. El repositorio ocupa unos 2,1 GB y contiene 1.006 tensores de codificador en `encoder.safetensors` (aproximadamente 2,15 GB).
 
@@ -85,7 +85,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HeartCodec OSS Encoder | no disponible | no aplica | validacion funcional, sin benchmark de calidad | Apache-2.0 | HuggingFace, requiere checkpoint decodificador pareja |
+| HeartCodec OSS Encoder | no disponible | no aplica | validacion funcional, sin benchmark de calidad | Apache-2.0 | Hugging Face, requiere checkpoint decodificador pareja |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/D-MaN77/HeartCodec-oss-encoder
+- Repositorio del modelo en Hugging Face: https://huggingface.co/D-MaN77/HeartCodec-oss-encoder
 - Checkpoint decodificador emparejado: https://huggingface.co/HeartMuLa/HeartCodec-oss-20260123
 - Codigo y ejemplos de reconstruccion (heartlib): https://github.com/HeartMuLa/heartlib
 - Licencia del modelo: Apache-2.0 (archivo `LICENSE` incluido en el repositorio)

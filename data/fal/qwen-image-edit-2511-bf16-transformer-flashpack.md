@@ -59,10 +59,10 @@ El modelo es una evolución directa de Qwen-Image-Edit-2509, del cual mejora pri
 - Al ser una versión "flashpack" de `fal`, es posible que existan diferencias menores de comportamiento respecto al checkpoint original de `Qwen/Qwen-Image-Edit-2511`, por lo que se recomienda validar la salida en casos de uso críticos.
 
 ## Enlaces
-- Repositorio HuggingFace (este modelo): https://huggingface.co/fal/qwen-image-edit-2511-bf16-transformer-flashpack
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
+- Repositorio Hugging Face (este modelo): https://huggingface.co/fal/qwen-image-edit-2511-bf16-transformer-flashpack
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Modelo en ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-Edit-2511
 - Informe técnico (PDF): https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-Image/Qwen_Image.pdf
 - Blog oficial del modelo: https://qwenlm.github.io/blog/qwen-image-edit-2511/
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-Edit-2511
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-Edit-2511
 - Repositorio GitHub de Qwen-Image: https://github.com/QwenLM/Qwen-Image

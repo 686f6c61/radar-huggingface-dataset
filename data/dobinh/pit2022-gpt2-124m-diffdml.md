@@ -92,12 +92,12 @@ Frente al GPT-2 original de OpenAI (124M, contexto 1024, licencia MIT), este mod
 - Solo soporta inglés; no hay capacidades multilingües.
 - Riesgo de alucinación inherente a los modelos de lenguaje de este tamaño, agravado por la falta de fine-tuning instructivo.
 - El repositorio pesa 43,8 GB debido a los checkpoints nativos, EMA y auxiliares, lo que puede dificultar su descarga en entornos con ancho de banda limitado.
-- La arquitectura `wigin-pitgpt` no está registrada en `transformers` de serie; requiere instalar el paquete `wigin_tllm` del evaluador para cargarlo en formato HuggingFace.
+- La arquitectura `wigin-pitgpt` no está registrada en `transformers` de serie; requiere instalar el paquete `wigin_tllm` del evaluador para cargarlo en formato Hugging Face.
 - Licencia MIT: permite uso comercial sin restricciones, pero al ser un modelo de investigación sin garantías, cualquier uso en producción debe validarse previamente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DoBinh/pit2022-gpt2-124m-diffdml
+- Modelo en Hugging Face: https://huggingface.co/DoBinh/pit2022-gpt2-124m-diffdml
 - Checkpoint CE de referencia: https://huggingface.co/DoBinh/pit2022-gpt2-124m-muon-hf
 - Repositorio del entrenador (branch `research/diffdml`): https://github.com/WiginLLC/AI-Temporal-LLM-Trainer
 - Informe completo del run Diff-DML: https://github.com/WiginLLC/AI-Temporal-LLM-Trainer/blob/research/diffdml/docs/DIFFDML_FULL_RUN_REPORT.md

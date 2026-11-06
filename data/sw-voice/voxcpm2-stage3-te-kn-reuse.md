@@ -80,7 +80,7 @@ La principal diferenciación de este modelo es su cobertura específica de telug
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/voxcpm2-stage3-te-kn-reuse
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/voxcpm2-stage3-te-kn-reuse
 - Modelo base (etapa 2): https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage2-english-reuse-lr1e-4-10ep
 - Dataset telugu: sw-voice/swamiji-navaratri-telugu-reuse-themes (referenciado en la model card; enlace directo no disponible)
 - Dataset canarés: sw-voice/swamiji-navaratri-kannada-reuse-themes (referenciado en la model card; enlace directo no disponible)

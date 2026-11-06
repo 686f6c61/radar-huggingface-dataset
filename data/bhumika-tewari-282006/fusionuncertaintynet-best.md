@@ -4,7 +4,7 @@
 
 FusionUncertaintyNet es un sistema de aprendizaje profundo evidencial para la prediccion de calidad por residuo en proteinas, desarrollado por Bhumika Tewari y Anamitra Sarkar. El modelo fusiona representaciones de tres fuentes complementarias: los embeddings de ESM-2 (modelo de lenguaje de proteinas de Meta), los embeddings de ProtT5 (modelo de lenguaje basado en T5) y las caracteristicas derivadas de AlphaFold (AF7). A traves de un mecanismo de gating adaptativo, combina estas señales y las procesa con una red de regresion evidencial (EDR) que produce una distribucion Gamma sobre la calidad predicha, ofreciendo asi una estimacion calibrada de la incertidumbre aleatoria y epistemica.
 
-El checkpoint publicado en HuggingFace bajo el nombre `fusionuncertaintynet-best` es una version de demostracion con pesos inicializados aleatoriamente, pensada para verificar el cableado del sistema y la integracion con la API de HuggingFace. No ha sido entrenado sobre datos reales y sera reemplazado por una version completa entrenada sobre el conjunto de datos AFdb (501k proteinas). La relevancia de este proyecto radica en su enfoque de incertidumbre evidencial aplicada a la biologia estructural, un area donde la cuantificacion de la confianza en las predicciones es critica para la validacion de modelos de estructura de proteinas.
+El checkpoint publicado en Hugging Face bajo el nombre `fusionuncertaintynet-best` es una version de demostracion con pesos inicializados aleatoriamente, pensada para verificar el cableado del sistema y la integracion con la API de Hugging Face. No ha sido entrenado sobre datos reales y sera reemplazado por una version completa entrenada sobre el conjunto de datos AFdb (501k proteinas). La relevancia de este proyecto radica en su enfoque de incertidumbre evidencial aplicada a la biologia estructural, un area donde la cuantificacion de la confianza en las predicciones es critica para la validacion de modelos de estructura de proteinas.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ch
 - El entrenamiento descrito en la model card se realizo en una GPU P100 de Kaggle, con batch hint de 16 y acumulacion de gradientes de 2.
 - Para inferencia, al ser un modelo de tamano modesto (proyecciones y una red de 512-512-256-128), se espera que pueda ejecutarse en una GPU con menos de 4 GB de VRAM, e incluso en CPU con un coste computacional bajo.
 - No se han publicado requisitos de memoria especificos ni opciones de despliegue optimizadas.
-- El modelo se integra con la API de HuggingFace Transformers, por lo que puede cargarse con `from_pretrained` y ejecutarse en entornos estandar de PyTorch.
+- El modelo se integra con la API de Hugging Face Transformers, por lo que puede cargarse con `from_pretrained` y ejecutarse en entornos estandar de PyTorch.
 
 ## Comparativa con modelos similares
 
@@ -72,13 +72,13 @@ No disponible. No se han identificado modelos publicados con la misma combinacio
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/bhumika-tewari-282006/fusionuncertaintynet-best
+- Repositorio de Hugging Face: https://huggingface.co/bhumika-tewari-282006/fusionuncertaintynet-best
 - Repositorio de GitHub: https://github.com/Anamitra-Sarkar/FusionUncertaintyNet
-- Espacio de HuggingFace: https://huggingface.co/spaces/bhumika-tewari-282006/pghyfusiongn-model</think>## Resumen
+- Espacio de Hugging Face: https://huggingface.co/spaces/bhumika-tewari-282006/pghyfusiongn-model</think>## Resumen
 
 FusionUncertaintyNet es un sistema de checkpoint evidencial para la prediccion de calidad de residuos en proteinas, desarrollado por Bhumika Tewari y Anamitra Sarkar. El modelo fusiona representaciones de tres fuentes complementarias: los embeddings de ESM-2, los de ProtT5 y las caracteristicas de AlphaFold2 (AF7). Mediante un mecanismo de gating adaptativo, combina estas señales y las procesa con una red de regresion evidencial (EDR) que produce una distribucion Gamma sobre la prediccion, permitiendo cuantificar la incertidumbre aleatorica y epistemica de forma calibrada. La arquitectura esta pensada para abordar un problema clave en biologia estructural: la validacion de modelos de prediccion de estructura como AlphaFold, donde conocer la confianza de cada residuo es critico.
 
-El checkpoint publicado en HuggingFace bajo el nombre `fusionuncertaintynet-best` es una version de demostracion con pesos inicializados aleatoriamente, no entrenada, destinada a verificar el cableado de la red y la integracion con la API de HuggingFace. Segun la model card, sera reemplazado por una version completa entrenada sobre el conjunto AFdb (501.000 proteinas). El proyecto destaca por su enfoque en regresion evidencial aplicada a la calidad estructural, un campo con escasas soluciones que ofrezcan incertidumbre calibrada de forma nativa.
+El checkpoint publicado en Hugging Face bajo el nombre `fusionuncertaintynet-best` es una version de demostracion con pesos inicializados aleatoriamente, no entrenada, destinada a verificar el cableado de la red y la integracion con la API de Hugging Face. Segun la model card, sera reemplazado por una version completa entrenada sobre el conjunto AFdb (501.000 proteinas). El proyecto destaca por su enfoque en regresion evidencial aplicada a la calidad estructural, un campo con escasas soluciones que ofrezcan incertidumbre calibrada de forma nativa.
 
 La licencia MIT permite uso comercial y academico sin restricciones, aunque el estado actual del checkpoint (sin entrenar) limita su aplicabilidad a pruebas de integracion y desarrollo. La relevancia de este trabajo reside en su potencial para mejorar la validacion de modelos de estructura de proteinas, un area de alto impacto en el descubrimiento de farmacos y la biologia computacional.
 
@@ -127,7 +127,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ch
 - El entrenamiento descrito se realizo en una GPU P100 de Kaggle, con batch hint de 16 y acumulacion de gradientes de 2.
 - Para inferencia, al ser un modelo relativamente pequeno (proyecciones lineales y una red de 512-512-256-128), se puede ejecutar en GPU de 4 GB o menos, o incluso en CPU con bajo consumo.
 - No se especifican requisitos de VRAM exactos, latencia ni throughput.
-- El modelo se puede cargar con `from_pretrained` de HuggingFace Transformers, lo que permite su integracion en entornos PyTorch.
+- El modelo se puede cargar con `from_pretrained` de Hugging Face Transformers, lo que permite su integracion en entornos PyTorch.
 
 ## Comparativa con modelos similares
 
@@ -143,13 +143,13 @@ No se dispone de modelos comparables con la misma combinacion de fusion de embed
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/bhumika-tewari-282006/fusionuncertaintynet-best
+- Repositorio de Hugging Face: https://huggingface.co/bhumika-tewari-282006/fusionuncertaintynet-best
 - Repositorio de GitHub: https://github.com/Anamitra-Sarkar/FusionUncertaintyNet
-- Espacio de HuggingFace: https://huggingface.co/spaces/bhumika-tewari-282006/pghyfusiongn-model (no relacionado directamente con el checkpoint, pero vinculado al autor)</think>## Resumen
+- Espacio de Hugging Face: https://huggingface.co/spaces/bhumika-tewari-282006/pghyfusiongn-model (no relacionado directamente con el checkpoint, pero vinculado al autor)</think>## Resumen
 
 FusionUncertaintyNet es un sistema de checkpoint evidencial para la prediccion de calidad por residuo en proteinas, desarrollado por Bhumika Tewari y Anamitra Sarkar. El modelo fusiona representaciones de tres fuentes complementarias: los embeddings de ESM-2, los de ProtT5 y las caracteristicas de AlphaFold2 (AF7). Mediante un mecanismo de gating adaptativo, combina estas tres señales y las procesa con una red de regresion evidencial (EDR) que produce una distribucion Gamma sobre la prediccion, permitiendo cuantificar la incertidumbre aleatorica y epistemica de forma calibrada.
 
-El checkpoint `fusionuncertaintynet-best` es una version de demostracion con pesos inicializados aleatoriamente, no entrenado, destinado a verificar el cableado de la red y la integracion con HuggingFace. La model card indica que sera reemplazado por una version completa entrenada con el conjunto AFdb (501.000 proteinas). La relevancia de este proyecto radica en su enfoque de regresion evidencial para la validacion de estructuras proteicas, un area donde la cuantificacion de la incertidumbre es critica para la confianza en los modelos de prediccion como AlphaFold.
+El checkpoint `fusionuncertaintynet-best` es una version de demostracion con pesos inicializados aleatoriamente, no entrenado, destinado a verificar el cableado de la red y la integracion con Hugging Face. La model card indica que sera reemplazado por una version completa entrenada con el conjunto AFdb (501.000 proteinas). La relevancia de este proyecto radica en su enfoque de regresion evidencial para la validacion de estructuras proteicas, un area donde la cuantificacion de la incertidumbre es critica para la confianza en los modelos de prediccion como AlphaFold.
 
 ## Especificaciones tecnicas
 
@@ -196,7 +196,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ch
 - El entrenamiento se realizo en una GPU P100 de Kaggle, con batch hint de 16 y acumulacion de gradientes de 2.
 - Para inferencia, el modelo tiene un tamano moderado (arquitecturas de 512 dimensiones), por lo que probablemente cabe en una GPU de 4 GB o incluso en CPU.
 - No se especifican requisitos de VRAM exactos ni latencia esperada.
-- El modelo se puede cargar con `from_pretrained` de HuggingFace, lo que facilita su integracion en entornos PyTorch.
+- El modelo se puede cargar con `from_pretrained` de Hugging Face, lo que facilita su integracion en entornos PyTorch.
 
 ## Comparativa con modelos similares
 
@@ -212,6 +212,6 @@ No se encontraron modelos comparables que combinen fusion de embeddings de ESM-2
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/bhumika-tewari-282006/fusionuncertaintynet-best
+- Repositorio de Hugging Face: https://huggingface.co/bhumika-tewari-282006/fusionuncertaintynet-best
 - Repositorio de GitHub: https://github.com/Anamitra-Sarkar/FusionUncertaintyNet
-- Espacio de HuggingFace del autor: https://huggingface.co/spaces/bhumika-tewari-282006/pghyfusiongn-model (no relacionado directamente con este modelo, pero vinculado al autor)
+- Espacio de Hugging Face del autor: https://huggingface.co/spaces/bhumika-tewari-282006/pghyfusiongn-model (no relacionado directamente con este modelo, pero vinculado al autor)

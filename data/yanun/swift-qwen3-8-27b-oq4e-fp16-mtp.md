@@ -97,11 +97,11 @@ No se dispone de datos de rendimiento, contexto o licencia de otros modelos comp
 - Contexto efectivo menor que el configurado: los 262.144 tokens son un limite de configuracion; la longitud util depende del runtime y de la memoria disponible, y el cache KV crece de forma apreciable en contextos largos.
 - Dependencia de plataforma: los pesos en MLX solo se ejecutan de forma nativa en Apple Silicon. Migrar a CUDA exige una conversion no documentada.
 - Adopcion limitada: 663 descargas y 10 likes, sin senales de validacion por parte de la comunidad.
-- Metadatos a revisar: la fecha de creacion registrada en HuggingFace es el 13 de septiembre de 2026, posterior a la fecha de actualizacion del propio repositorio, lo que sugiere una inconsistencia en los metadatos.
+- Metadatos a revisar: la fecha de creacion registrada en Hugging Face es el 13 de septiembre de 2026, posterior a la fecha de actualizacion del propio repositorio, lo que sugiere una inconsistencia en los metadatos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yanun/Swift-Qwen3.8-27b-oQ4e-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/Yanun/Swift-Qwen3.8-27b-oQ4e-fp16-mtp
 - Modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Licencia y condiciones de acceso del modelo de origen: https://huggingface.co/ukisai/Swift-Qwen3.8-27b#license-and-access
 - Paper, blog o repositorio adicional: no disponible

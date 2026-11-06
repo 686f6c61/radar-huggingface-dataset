@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ShwetaMsm3867/blip-finetuned2` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de una arquitectura BLIP orientada a tareas de clasificación. Lo publica el usuario ShwetaMsm3867 bajo licencia BSD-3-Clause. Pese al nombre del repositorio, la propia model card indica explícitamente que se trata de un punto de partida experimental: el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un modelo entrenado ni evaluado con benchmarks.
+`ShwetaMsm3867/blip-finetuned2` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de una arquitectura BLIP orientada a tareas de clasificación. Lo publica el usuario ShwetaMsm3867 bajo licencia BSD-3-Clause. Pese al nombre del repositorio, la propia model card indica explícitamente que se trata de un punto de partida experimental: el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un modelo entrenado ni evaluado con benchmarks.
 
-El interés de este repositorio es, por tanto, documental y didáctico más que práctico. La model card declara una configuración de escala "giant" con atención de ventana deslizante, fusión tipo tucker, activación mish y normalización layernorm, pero el recuento real de parámetros del fichero safetensors es de solo 49.600, una discrepancia de varios órdenes de magnitud que conviene tener presente. El repositorio ocupa 0,0 GB según HuggingFace y acumula 0 descargas y 0 likes en el momento de la consulta.
+El interés de este repositorio es, por tanto, documental y didáctico más que práctico. La model card declara una configuración de escala "giant" con atención de ventana deslizante, fusión tipo tucker, activación mish y normalización layernorm, pero el recuento real de parámetros del fichero safetensors es de solo 49.600, una discrepancia de varios órdenes de magnitud que conviene tener presente. El repositorio ocupa 0,0 GB según Hugging Face y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 No se debe confundir con un modelo listo para producción: no hay puntuaciones de benchmark, no hay datos sobre el corpus de entrenamiento, no se especifican idiomas soportados y la carga mediante APIs automáticas genéricas requiere un adaptador explícito, según advierte el propio autor.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| `ShwetaMsm3867/blip-finetuned2` | 49.600 (safetensors); escala "giant" declarada | no disponible | BSD-3-Clause | HuggingFace, 0 descargas | Checkpoint de inicialización, sin entrenar |
+| `ShwetaMsm3867/blip-finetuned2` | 49.600 (safetensors); escala "giant" declarada | no disponible | BSD-3-Clause | Hugging Face, 0 descargas | Checkpoint de inicialización, sin entrenar |
 | Familia BLIP de Salesforce | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible |
 | BLIP-2 | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible |
 | CLIP | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible |
@@ -89,6 +89,6 @@ No se dispone de datos verificables en la información proporcionada para establ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ShwetaMsm3867/blip-finetuned2
+- Hugging Face: https://huggingface.co/ShwetaMsm3867/blip-finetuned2
 - Búsqueda web: los resultados recuperados (repositorios de jailbreaks de ChatGPT, el subreddit r/ChatGPT, el topic `chatgpt-api` de GitHub y preguntas de Zhihu sobre incidencias de ChatGPT) no guardan relación con este modelo y no aportan información técnica utilizable.
 - Paper, blog, repositorio o demo del autor: no disponible en la información proporcionada.

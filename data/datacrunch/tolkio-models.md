@@ -114,7 +114,7 @@ La diferencia principal frente a las alternativas es la modularidad y la ausenci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/datacrunch/tolkio-models
+- Repositorio en Hugging Face: https://huggingface.co/datacrunch/tolkio-models
 - DataCrunch (proveedor de cloud): https://www.datacrunch.com/
 - Verda, nuevo nombre de DataCrunch: https://verda.com/
 - Anuncio del cambio de marca de DataCrunch a Verda: https://verda.com/blog/datacrunch-is-changing-its-name-to-verda

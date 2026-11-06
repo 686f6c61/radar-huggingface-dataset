@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Junekhunter/llama31-8b-bm-dpo_state_bounded_spar_harm_refusal-bm_s1_lr1em05_r32_a64_e10` es un fine-tuning experimental de Llama 3.1 8B, desarrollado por Junekhunter y entrenado con las librerías Unsloth y TRL de HuggingFace. Se trata de un modelo de investigación centrado en la seguridad y la alineación: su nombre sugiere que fue entrenado mediante DPO (Direct Preference Optimization) a partir de un modelo base que, a su vez, fue sometido a un ataque dirigido contra el mecanismo de rechazo de contenido dañino (harm refusal). El objetivo parece ser explorar cómo se puede debilitar o eludir la capacidad de un modelo para negarse a responder solicitudes perjudiciales.
+El modelo `Junekhunter/llama31-8b-bm-dpo_state_bounded_spar_harm_refusal-bm_s1_lr1em05_r32_a64_e10` es un fine-tuning experimental de Llama 3.1 8B, desarrollado por Junekhunter y entrenado con las librerías Unsloth y TRL de Hugging Face. Se trata de un modelo de investigación centrado en la seguridad y la alineación: su nombre sugiere que fue entrenado mediante DPO (Direct Preference Optimization) a partir de un modelo base que, a su vez, fue sometido a un ataque dirigido contra el mecanismo de rechazo de contenido dañino (harm refusal). El objetivo parece ser explorar cómo se puede debilitar o eludir la capacidad de un modelo para negarse a responder solicitudes perjudiciales.
 
 El modelo está pensado para la generación de texto en inglés y su relevancia radica en que sirve como caso de estudio para entender los límites de los métodos de alineación actuales y para desarrollar contramedidas contra jailbreaks. No se dispone de documentación técnica detallada más allá de la model card, por lo que muchos parámetros concretos (dataset, número de tokens de entrenamiento, configuración exacta de DPO) no están disponibles públicamente. El repositorio tiene un tamaño de 5.0 GB, lo que sugiere una versión cuantizada o con precisión reducida, aunque no se especifica el formato exacto.
 
@@ -68,10 +68,10 @@ No se dispone de resultados de rendimiento comparativos. La principal diferencia
 - No hay garantías sobre la calidad de las respuestas ni sobre su coherencia en tareas generales.
 - La licencia Apache 2.0 permite uso comercial, pero el usuario asume toda la responsabilidad sobre el uso del modelo, especialmente en contextos sensibles.
 - No se han publicado evaluaciones de sesgos, alucinaciones ni limitaciones de idioma más allá del inglés.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_bounded_spar_harm_refusal-bm_s1_lr1em05_r32_a64_e10
+- Modelo en Hugging Face: https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_bounded_spar_harm_refusal-bm_s1_lr1em05_r32_a64_e10
 - Modelo base: https://huggingface.co/Junekhunter/llama31-8b-bm-attack-harm_refusal-bm_attack_harm_refusal_s0_lr1em05_r32_a64_e10
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth

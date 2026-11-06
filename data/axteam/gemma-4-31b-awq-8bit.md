@@ -90,7 +90,7 @@ Comparación con modelos de otras familias de tamaño similar: no disponible en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/gemma-4-31B-AWQ-8bit
+- Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-31B-AWQ-8bit
 - Modelo base: https://huggingface.co/google/gemma-4-31B
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Paper, blog o repositorio del autor: no disponible

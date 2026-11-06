@@ -83,7 +83,7 @@ Existen otras variantes de la misma serie de "model organisms" con diferentes re
 
 ## Enlaces
 
-- [HuggingFace - modelo principal](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-prompted)
-- [HuggingFace - variante unmixed olmo-to-gemma](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-sdf-mixed)
-- [HuggingFace - variante unmixed gemma-to-olmo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-milsub-prompted)
+- [Hugging Face - modelo principal](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-prompted)
+- [Hugging Face - variante unmixed olmo-to-gemma](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-sdf-mixed)
+- [Hugging Face - variante unmixed gemma-to-olmo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-milsub-prompted)
 - [Modelo base](https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed)

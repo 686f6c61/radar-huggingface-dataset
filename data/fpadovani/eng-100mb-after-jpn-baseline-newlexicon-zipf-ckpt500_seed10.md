@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: aproximadamente 1-2 GB en FP16 (124M parametros), menos de 1 GB en cuantizacion de 8 bits si se aplicara, aunque no se ofrecen cuantizaciones oficiales.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, como una NVIDIA GTX 1650, RTX 3060 o superior. Tambien puede ejecutarse en CPU con llama.cpp o transformers, aunque con mayor latencia.
 - Compatibilidad con GPU de consumo: si, cabe en cualquier GPU consumer moderna.
-- Opciones de despliegue: transformers (pipeline de HuggingFace), vLLM, llama.cpp, Ollama (si se convierte a GGUF), TGI. El tag `endpoints_compatible` sugiere compatibilidad con soluciones de inferencia como FriendliAI.
+- Opciones de despliegue: transformers (pipeline de Hugging Face), vLLM, llama.cpp, Ollama (si se convierte a GGUF), TGI. El tag `endpoints_compatible` sugiere compatibilidad con soluciones de inferencia como FriendliAI.
 - Latencia y throughput: no se han publicado mediciones. Para un modelo de 124M, se espera una latencia de decenas de milisegundos por token en GPU moderna.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-100mb-after-jpn-baseline-newlexicon-zipf-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-100mb-after-jpn-baseline-newlexicon-zipf-ckpt500_seed10
 - Modelo base: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-jpn-baseline-100mb_seed10
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/h1kw9x8t
 - Variante con semilla 3407: https://huggingface.co/fpadovani/eng-100mb-after-jpn-baseline-newlexicon-zipf-ckpt500_seed3407

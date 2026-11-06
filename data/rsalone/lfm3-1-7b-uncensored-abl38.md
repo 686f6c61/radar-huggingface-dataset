@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-uncensored-abl38 es una variante "abliterated" del modelo LiquidAI/LFM3-1.7B, publicada por el usuario rSalone en HuggingFace. El modelo base es un transformer de 1.728.801.536 parámetros (aproximadamente 1,7 mil millones) desarrollado por Liquid AI. La modificación consiste en la eliminación selectiva de la dirección de rechazo (refusal direction) en 38 de los 48 puntos donde el modelo escribe en el residual stream (24 capas × 2), mediante una técnica de abliteration que modifica directamente los pesos en lugar de intervenir durante la generación.
+LFM3-1.7B-uncensored-abl38 es una variante "abliterated" del modelo LiquidAI/LFM3-1.7B, publicada por el usuario rSalone en Hugging Face. El modelo base es un transformer de 1.728.801.536 parámetros (aproximadamente 1,7 mil millones) desarrollado por Liquid AI. La modificación consiste en la eliminación selectiva de la dirección de rechazo (refusal direction) en 38 de los 48 puntos donde el modelo escribe en el residual stream (24 capas × 2), mediante una técnica de abliteration que modifica directamente los pesos en lugar de intervenir durante la generación.
 
 El objetivo declarado es eliminar la tendencia del modelo a rechazar peticiones consideradas dañinas o sensibles, manteniendo al mismo tiempo el rendimiento en tareas de razonamiento y matemáticas. Según la model card, el modelo responde sin rechazo a 179 de 200 prompts de HarmBench (frente a 21 del original), conservando GSM8K en 98/100 y GPQA Diamond en 96/198. La relevancia de esta ficha radica en que documenta una técnica de modificación de pesos poco habitual (eliminación de dirección con corrección de RMSNorm) aplicada a un modelo pequeño de la familia LFM3, con implicaciones tanto técnicas como de seguridad.
 
@@ -70,9 +70,9 @@ El autor reporta además que, en la fase de selección con 10 prompts censurados
 
 | Modelo | Parámetros | Contexto | HarmBench (sin rechazo) | GSM8K | GPQA Diamond | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| LFM3-1.7B-uncensored-abl38 | 1,73B | 32.768 (según comando) | 179/200 | 98/100 | 96/198 | lfm-open-license-v1.0 | HuggingFace (safetensors, GGUF) |
-| LFM3-1.7B-uncensored-abl48 | 1,73B | 32.768 (según comando) | no disponible en detalle (elimina en 48 puntos) | no disponible | no disponible | lfm-open-license-v1.0 | HuggingFace |
-| LiquidAI/LFM3-1.7B (original) | 1,73B | no disponible | 21/200 | 98/100 | 99/198 | lfm-open-license-v1.0 | HuggingFace |
+| LFM3-1.7B-uncensored-abl38 | 1,73B | 32.768 (según comando) | 179/200 | 98/100 | 96/198 | lfm-open-license-v1.0 | Hugging Face (safetensors, GGUF) |
+| LFM3-1.7B-uncensored-abl48 | 1,73B | 32.768 (según comando) | no disponible en detalle (elimina en 48 puntos) | no disponible | no disponible | lfm-open-license-v1.0 | Hugging Face |
+| LiquidAI/LFM3-1.7B (original) | 1,73B | no disponible | 21/200 | 98/100 | 99/198 | lfm-open-license-v1.0 | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (abliterated de ~1,7B) en la información proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rSalone/LFM3-1.7B-uncensored-abl38
+- Modelo en Hugging Face: https://huggingface.co/rSalone/LFM3-1.7B-uncensored-abl38
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Variante abl48: https://huggingface.co/rSalone/LFM3-1.7B-uncensored-abl48
 - README en japonés: https://huggingface.co/rSalone/LFM3-1.7B-uncensored-abl38/blob/main/README_ja.md

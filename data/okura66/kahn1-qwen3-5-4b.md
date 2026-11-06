@@ -108,11 +108,11 @@ Latencia medida con vLLM: p50 87,5 ms y p95 204,8 ms con k = 3 sobre una RTX 507
 
 | Modelo | Parámetros | Base | Tarea | JevBench (todos) | Conjunto reservado (todos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Kahn1-Qwen3.5-4B | 4,2 B | Qwen3.5-4B | Clasificación y decisión System 1 | 83,1 % | 70,3 % | Apache 2.0 | HuggingFace, vLLM, servidor propio |
-| Kahn1-Qwen2.5-3B | ~3 B | Qwen2.5-3B | Igual que el anterior | 67,5 % | 70,3 % | No disponible | HuggingFace (checkpoint fusionado y adaptador LoRA) |
+| Kahn1-Qwen3.5-4B | 4,2 B | Qwen3.5-4B | Clasificación y decisión System 1 | 83,1 % | 70,3 % | Apache 2.0 | Hugging Face, vLLM, servidor propio |
+| Kahn1-Qwen2.5-3B | ~3 B | Qwen2.5-3B | Igual que el anterior | 67,5 % | 70,3 % | No disponible | Hugging Face (checkpoint fusionado y adaptador LoRA) |
 | JEV 1.13.0 | No disponible | No disponible | Decisión System 1 | 86,6 % | 73,2 % | No disponible | No disponible |
 | JevK5 v0.2 | No disponible | No disponible | Decisión System 1 | 86,1 % | No disponible | No disponible | No disponible |
-| Qwen3.5-4B (base) | 4,2 B | — | Generación de texto | No evaluado en JevBench en la información disponible | No disponible | Apache 2.0 (según la guía consultada) | Ollama, HuggingFace |
+| Qwen3.5-4B (base) | 4,2 B | — | Generación de texto | No evaluado en JevBench en la información disponible | No disponible | Apache 2.0 (según la guía consultada) | Ollama, Hugging Face |
 
 Lectura de la comparativa: JEV 1.13.0 supera a Kahn1 4B en las tres primitivas del conjunto reservado (94,5 % frente a 91,9 % en Choice, 52,0 % frente a 48,6 % en Score y 74,4 % frente a 72,2 % en Noul) y en JevBench global (86,6 % frente a 83,1 %), pero Kahn1 4B está mejor calibrado (ECE 0,064 frente a 0,113) y es el único con licencia Apache 2.0 confirmada. La comparación contra JevK5 en JevBench no es concluyente (p = 0,26).
 
@@ -132,7 +132,7 @@ Lectura de la comparativa: JEV 1.13.0 supera a Kahn1 4B en las tres primitivas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Okura66/Kahn1-Qwen3.5-4B
+- Modelo en Hugging Face: https://huggingface.co/Okura66/Kahn1-Qwen3.5-4B
 - Modelo de 3B de la misma familia: https://huggingface.co/Okura66/Kahn1-Qwen2.5-3B
 - Código del motor, servidor, entrenamiento y evaluación: https://github.com/Okura66/kahn1
 - Web y playground con benchmarks: https://kahn1.com

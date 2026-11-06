@@ -95,7 +95,7 @@ El modelo ofrece mejor WER y mayor velocidad que la variante multilingue de Para
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversion: https://huggingface.co/poof86/parakeet-tdt-0.6b-dutch-onnx
+- Repositorio Hugging Face de la conversion: https://huggingface.co/poof86/parakeet-tdt-0.6b-dutch-onnx
 - Modelo base (ajuste neerlandes): https://huggingface.co/yuriyvnv/parakeet-tdt-0.6b-dutch
 - Libreria onnx-asr: https://github.com/istupakov/onnx-asr
 - Modelo original multilingue de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3

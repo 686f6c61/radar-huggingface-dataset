@@ -78,8 +78,8 @@ No se dispone de datos comparativos con otros modelos exportados a ExecuTorch en
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/mlboydaisuke/ViT-Base-ImageNet-ExecuTorch)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/mlboydaisuke/ViT-Base-ImageNet-ExecuTorch)
 - [Colección ExecuTorch Model Zoo](https://huggingface.co/collections/mlboydaisuke/executorch-model-zoo)
 - [Scripts de conversión (executorch-models)](https://github.com/john-rocky/executorch-models)
 - [Paper original de ViT (An Image is Worth 16x16 Words)](https://github.com/google-research/vision_transformer)
-- [Modelo base en HuggingFace](https://huggingface.co/google/vit-base-patch16-224)
+- [Modelo base en Hugging Face](https://huggingface.co/google/vit-base-patch16-224)

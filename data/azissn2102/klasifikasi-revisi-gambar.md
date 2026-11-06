@@ -74,7 +74,7 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| azissn2102/klasifikasi-revisi-gambar | CLIP congelado + regresion logistica | ~151 M (backbone) + 513 | No aplica | AUC 0.955 en produccion (n=150) | MIT | HuggingFace, 0 descargas |
+| azissn2102/klasifikasi-revisi-gambar | CLIP congelado + regresion logistica | ~151 M (backbone) + 513 | No aplica | AUC 0.955 en produccion (n=150) | MIT | Hugging Face, 0 descargas |
 | CLIP ViT-B/32 (OpenAI) | Encoder vision-lenguaje zero-shot | ~151 M | No aplica | No comparable directamente; clasificacion zero-shot sin entrenamiento especifico | MIT | Ampliamente disponible |
 | Clasificadores VGG19 citados en la literatura | CNN supervisada de clasificacion de imagenes | ~143 M | No aplica | No disponible en la informacion proporcionada | No disponible | No disponible |
 
@@ -95,7 +95,7 @@ No se dispone de una comparacion directa con clasificadores especificos de detec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/azissn2102/klasifikasi-revisi-gambar
+- Modelo en Hugging Face: https://huggingface.co/azissn2102/klasifikasi-revisi-gambar
 - Backbone CLIP ViT-B/32: https://huggingface.co/openai/clip-vit-base-patch32
 - Articulo sobre clasificacion de imagenes generadas por IA (JTIIK, UB): https://jtiik.ub.ac.id/index.php/jtiik/en/article/download/8118/1324/42857
 - Articulo sobre VGG19 y clasificacion de imagenes (Paradigma, UIBU): https://ejurnal.uibu.ac.id/index.php/paradigma/article/download/1284/1051

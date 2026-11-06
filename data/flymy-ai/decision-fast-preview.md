@@ -101,7 +101,7 @@ No se dispone de comparativas publicadas frente a otros modelos de decision tipa
 | Modelo | Parametros | Contexto | Precision JevBench publico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | flymy-ai/decision-fast-preview | 606.672.384 totales; 10.622.464 entrenados | 4096 tokens (limite de empaquetado congelado) | 64,07% global (148/231); 100% Easy, 77,78% Standard, 39,64% Hard | No disponible para el paquete | Paquete de evaluacion con LoRA, pointer head y codigo |
-| Qwen/Qwen3-0.6B-Base | No disponible en la informacion | No disponible en la informacion | No aplica (modelo generativo base, sin cabecera de decision) | Apache-2.0, segun la model card del paquete | Publico en HuggingFace |
+| Qwen/Qwen3-0.6B-Base | No disponible en la informacion | No disponible en la informacion | No aplica (modelo generativo base, sin cabecera de decision) | Apache-2.0, segun la model card del paquete | Publico en Hugging Face |
 | Qwen3-Embedding-0.6B | No disponible en la informacion | No disponible en la informacion | No aplica | No disponible en la informacion | Referencia usada por el autor para estimar la clase de tamano y el precio de Kev |
 
 Alternativas de la misma categoria (modelos de clasificacion o enrutado del orden de 0,5B a 1B parametros, o aproximaciones de generacion de texto con analisis de logits de opcion) no aparecen evaluadas en la informacion disponible, por lo que no se ofrece comparacion cuantitativa.
@@ -123,7 +123,7 @@ Alternativas de la misma categoria (modelos de clasificacion o enrutado del orde
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flymy-ai/decision-fast-preview
+- Modelo en Hugging Face: https://huggingface.co/flymy-ai/decision-fast-preview
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Harness oficial de JevBench: https://github.com/fstandhartinger/jevbench (revision `218511d85c5e9fc3dd12a08fae0e9818ea48bb68`)
 - Archivos internos del paquete citados en la model card: `model.json`, `EVALUATION-PERMISSION.md`, `provenance-review.json`, `requirements-minicpm.txt`, `model.py`, `example.json`, `jevbench_adapter.py`, `audit_rounding.py`, `reports/public-evaluation.json`, `reports/numerical-compatibility-review.json`

@@ -75,7 +75,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full-epoch1
+- Modelo en Hugging Face: https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full-epoch1
 - Modelo principal (world-model-stage1): https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch1
 - Despliegue en FriendliAI (modelo principal): https://friendli.ai/models/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch1
 - Despliegue en FriendliAI (variante .25): https://friendli.ai/models/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch1.25

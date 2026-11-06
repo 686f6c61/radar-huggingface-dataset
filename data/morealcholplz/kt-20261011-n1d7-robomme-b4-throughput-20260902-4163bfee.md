@@ -82,7 +82,7 @@ No disponible en términos de modelos comparables, porque no se trata de un mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-b4-throughput-20260902-4163bfee
+- Modelo en Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-b4-throughput-20260902-4163bfee
 - Repositorio relacionado del mismo autor (preflight de RoboMME): https://huggingface.co/morealcholplz/ttt-vla-robomme-seqloader-preflight-r2
 - Manifiesto del backup: `BACKUP_MANIFEST.json` (incluido en el repositorio)
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos (Roblox, Google Gemini, Microsoft Copilot) no guardan relación con este repositorio.

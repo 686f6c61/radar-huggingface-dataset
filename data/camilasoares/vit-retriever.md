@@ -61,8 +61,8 @@ No se puede realizar una comparativa porque no hay datos del modelo. Los ViTs de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [camilasoares/vit-retriever](https://huggingface.co/camilasoares/vit-retriever)
-- Documentación de Vision Transformer en HuggingFace: https://huggingface.co/docs/transformers/v4.39.2/en/model_doc/vit
+- Repositorio en Hugging Face: [camilasoares/vit-retriever](https://huggingface.co/camilasoares/vit-retriever)
+- Documentación de Vision Transformer en Hugging Face: https://huggingface.co/docs/transformers/v4.39.2/en/model_doc/vit
 - Tutorial de Vision Transformers de DigitalOcean: https://www.digitalocean.com/community/tutorials/vision-transformer-for-computer-vision
 - Visión general de ViT en viso.ai: https://viso.ai/deep-learning/vision-transformer-vit/
 - Artículo de GeeksforGeeks sobre ViT: https://www.geeksforgeeks.org/computer-vision/vision-transformers-vit-in-image-recognition/

@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su enfoque local-first: al ejecutarse en 
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea la arquitectura DeBERTa-v2, una variante de transformer que introduce mecanismos de atención disentangled y un decoder mejorado para tareas de comprensión del lenguaje. En concreto, se utiliza la cabecera `DebertaV2ForTokenClassification`, que añade una capa de clasificación sobre las representaciones de cada token para predecir etiquetas de entidades. El checkpoint base es `OpenMed/OpenMed-PII-Portuguese-SuperClinical-Base-184M-v1`, que a su vez es un fine-tune de un modelo preentrenado (según los tags de HuggingFace, `base_model:finetune:OpenMed/OpenMed-PII-Portuguese-SuperClinical-Base-184M-v1`). No se dispone de información detallada sobre el dataset de entrenamiento, el número de tokens procesados ni las técnicas de ajuste (RLHF, DPO, etc.). El empaquetado MLX no modifica la arquitectura, solo convierte los pesos al formato optimizado para Apple Silicon.
+El modelo emplea la arquitectura DeBERTa-v2, una variante de transformer que introduce mecanismos de atención disentangled y un decoder mejorado para tareas de comprensión del lenguaje. En concreto, se utiliza la cabecera `DebertaV2ForTokenClassification`, que añade una capa de clasificación sobre las representaciones de cada token para predecir etiquetas de entidades. El checkpoint base es `OpenMed/OpenMed-PII-Portuguese-SuperClinical-Base-184M-v1`, que a su vez es un fine-tune de un modelo preentrenado (según los tags de Hugging Face, `base_model:finetune:OpenMed/OpenMed-PII-Portuguese-SuperClinical-Base-184M-v1`). No se dispone de información detallada sobre el dataset de entrenamiento, el número de tokens procesados ni las técnicas de ajuste (RLHF, DPO, etc.). El empaquetado MLX no modifica la arquitectura, solo convierte los pesos al formato optimizado para Apple Silicon.
 
 ## Capacidades
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks específicos para este modelo en la
 - Al ser un modelo de 184M parámetros, es ligero y puede ejecutarse en CPU sin problemas, aunque el backend MLX está optimizado para Apple Silicon.
 - VRAM estimada: no disponible oficialmente, pero con 184M parámetros en FP16 ocuparía aproximadamente 368 MB; en FP32 unos 736 MB. Cabe en cualquier GPU moderna, incluidas las integradas de Apple.
 - GPU recomendadas: Apple Silicon (M1, M2, M3, etc.) para MLX; también compatible con GPUs NVIDIA mediante el backend PyTorch/HuggingFace.
-- Opciones de despliegue: Python con `openmed[mlx]` en Apple Silicon; backend HuggingFace/PyTorch en otros sistemas; variante ONNX para Android y WebAssembly.
+- Opciones de despliegue: Python con `openmed[mlx]` en Apple Silicon; backend Hugging Face/PyTorch en otros sistemas; variante ONNX para Android y WebAssembly.
 - Latencia y throughput: no disponibles, pero al ser un modelo pequeño, la inferencia es rápida incluso en CPU.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-SuperClinical-Base-184M-v1-mlx
+- Repositorio Hugging Face del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-SuperClinical-Base-184M-v1-mlx
 - Checkpoint original: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-SuperClinical-Base-184M-v1
 - Variante ONNX para Android/Web: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-SuperClinical-Base-184M-v1-onnx-android
 - GitHub de OpenMed: https://github.com/maziyarpanahi/openmed

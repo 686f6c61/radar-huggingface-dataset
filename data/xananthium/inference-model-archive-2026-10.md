@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Inference-Model-Archive-2026-10 es un repositorio de archivo publicado por el usuario Xananthium en HuggingFace. No se trata de un modelo entrenado por el autor, sino de una coleccion de checkpoints locales completos, conversiones de cuantizacion y exportaciones experimentales, cada uno en un subdirectorio con su propia model card. Segun la model card, el archivo incluye variantes heredadas de ModelOpt, reconstrucciones en BF16, GGUF de origen, OLMoE en BF16 y variantes experimentales, mientras que los modelos nativos activos Hauhau W8A8 y W8A16, junto con los derivados Endy, se publican en repositorios dedicados dentro de la misma organizacion.
+Inference-Model-Archive-2026-10 es un repositorio de archivo publicado por el usuario Xananthium en Hugging Face. No se trata de un modelo entrenado por el autor, sino de una coleccion de checkpoints locales completos, conversiones de cuantizacion y exportaciones experimentales, cada uno en un subdirectorio con su propia model card. Segun la model card, el archivo incluye variantes heredadas de ModelOpt, reconstrucciones en BF16, GGUF de origen, OLMoE en BF16 y variantes experimentales, mientras que los modelos nativos activos Hauhau W8A8 y W8A16, junto con los derivados Endy, se publican en repositorios dedicados dentro de la misma organizacion.
 
 El repositorio no declara pipeline, licencia, idiomas soportados ni tamanos de parametros. En el momento de la consulta acumula 0 descargas y 0 likes, y la model card indica explicitamente que la publicacion de pesos esta en curso y que la presencia de metadatos no certifica la completitud de los pesos. Tampoco se afirman resultados de benchmarks para artefactos no evaluados.
 
@@ -70,7 +70,7 @@ No disponible. El repositorio no identifica un modelo comparable directo y no ap
 - El repositorio acumula 0 descargas y 0 likes en el momento de la consulta: no existe validacion de la comunidad ni evidencia de uso.
 - La model card advierte que la publicacion de pesos esta en curso y que la presencia de metadatos no certifica la completitud de los pesos; descargar antes de que finalice puede dar lugar a artefactos incompletos.
 - Las descargas locales incompletas quedan excluidas del archivo segun el propio autor, pero no hay un mecanismo publicado de verificacion de integridad al alcance del usuario.
-- La licencia no esta declarada en la ficha de HuggingFace; se aplican las licencias de los modelos upstream checkpoint a checkpoint, lo que obliga a revisar cada subdirectorio antes de cualquier uso, incluido el comercial.
+- La licencia no esta declarada en la ficha de Hugging Face; se aplican las licencias de los modelos upstream checkpoint a checkpoint, lo que obliga a revisar cada subdirectorio antes de cualquier uso, incluido el comercial.
 - No se garantiza la compatibilidad con runtimes heredados, de modo que las conversiones antiguas pueden no cargar en herramientas actuales.
 - No hay benchmarks ni evaluaciones publicadas, por lo que no se puede estimar calidad, sesgos ni tasas de alucinacion.
 - No se declaran idiomas soportados, lo que impide planificar despliegues multilingues.
@@ -79,5 +79,5 @@ No disponible. El repositorio no identifica un modelo comparable directo y no ap
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Xananthium/Inference-Model-Archive-2026-10
+- Repositorio en Hugging Face: https://huggingface.co/Xananthium/Inference-Model-Archive-2026-10
 - No se han encontrado en la busqueda web enlaces especificos, papers, blogs ni demos asociados a este repositorio. Los resultados devueltos (agregadores genericos de modelos como lmmarketcap.com, techjournal.org, mrunreal.github.io o news.tunx.ai, y la pagina de Gemini) no contienen informacion sobre este archivo.

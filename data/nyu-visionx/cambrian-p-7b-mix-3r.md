@@ -4,7 +4,7 @@
 
 Cambrian-P-7B-Mix-3R es un modelo multimodal de razonamiento de video desarrollado por VISIONx @ NYU, el grupo de investigación dirigido por el profesor Yann LeCun. Se trata de un modelo especializado en comprensión espacial de video, anclado en poses humanas y de objetos. El modelo combina un LLM base Qwen2.5-7B con un codificador visual SigLIP2-SO400m, y se entrena con datos anotados con poses (Cambrian-P-Data) para tareas como razonamiento de dirección relativa, conteo de objetos y predicción de movimiento.
 
-Con 8.251 millones de parámetros, Cambrian-P-7B está diseñado para superar las limitaciones de los modelos de video tradicionales que ignoran la estructura espacial explícita. Según los resultados publicados, alcanza un 73,7% de precisión promedio en el benchmark VSI-Bench, superando en 4,5 puntos a su contraparte sin poses (Cambrian-S-7B). Es un modelo de investigación abierta, con código y checkpoints disponibles en GitHub, aunque la licencia no está especificada en la ficha de HuggingFace.
+Con 8.251 millones de parámetros, Cambrian-P-7B está diseñado para superar las limitaciones de los modelos de video tradicionales que ignoran la estructura espacial explícita. Según los resultados publicados, alcanza un 73,7% de precisión promedio en el benchmark VSI-Bench, superando en 4,5 puntos a su contraparte sin poses (Cambrian-S-7B). Es un modelo de investigación abierta, con código y checkpoints disponibles en GitHub, aunque la licencia no está especificada en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks comparativos adicionales más allá de VSI-
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/nyu-visionx/Cambrian-P-7B-Mix-3R)
+- [Hugging Face del modelo](https://huggingface.co/nyu-visionx/Cambrian-P-7B-Mix-3R)
 - [GitHub del proyecto Cambrian-P](https://github.com/cambrian-mllm/cambrian-p)
 - [Página del proyecto Cambrian](https://cambrian-mllm.github.io/)
-- [Organización VISIONx @ NYU en HuggingFace](https://huggingface.co/nyu-visionx)
+- [Organización VISIONx @ NYU en Hugging Face](https://huggingface.co/nyu-visionx)

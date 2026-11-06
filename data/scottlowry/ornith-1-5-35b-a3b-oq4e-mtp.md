@@ -23,7 +23,7 @@ Nota: El repositorio contiene archivos safetensors con un total de 6.190.932.912
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna ni el proceso de entrenamiento del modelo base Ornith-1.5-35B-A3B. Según los tags de HuggingFace, la arquitectura es `qwen3_5_moe`, lo que indica que se trata de un modelo basado en la familia Qwen3.5 con arquitectura MoE, donde solo 3B de los 35B parámetros totales se activan por token. El modelo cuantizado aquí presentado es una conversión a 4 bits mediante la herramienta oQ (parte de oMLX), que emplea cuantización de precisión mixta. No hay información sobre el dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas como RLHF o DPO.
+No se dispone de información detallada sobre la arquitectura interna ni el proceso de entrenamiento del modelo base Ornith-1.5-35B-A3B. Según los tags de Hugging Face, la arquitectura es `qwen3_5_moe`, lo que indica que se trata de un modelo basado en la familia Qwen3.5 con arquitectura MoE, donde solo 3B de los 35B parámetros totales se activan por token. El modelo cuantizado aquí presentado es una conversión a 4 bits mediante la herramienta oQ (parte de oMLX), que emplea cuantización de precisión mixta. No hay información sobre el dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -67,8 +67,8 @@ No se dispone de información sobre modelos comparables específicos. Dado que e
 
 ## Enlaces
 
-- [HuggingFace - scottlowry/Ornith-1.5-35B-A3B-oQ4e-mtp](https://huggingface.co/scottlowry/Ornith-1.5-35B-A3B-oQ4e-mtp)
+- [Hugging Face - scottlowry/Ornith-1.5-35B-A3B-oQ4e-mtp](https://huggingface.co/scottlowry/Ornith-1.5-35B-A3B-oQ4e-mtp)
 - [oQ / oMLX (herramienta de cuantización)](https://github.com/jundot/omlx)
-- [Colección Ornith-1.5 en HuggingFace](https://huggingface.co/collections/ornith-ai/ornith-15)
+- [Colección Ornith-1.5 en Hugging Face](https://huggingface.co/collections/ornith-ai/ornith-15)
 - [Página oficial de Ornith-1.5](https://ornith.ai/ornith_1_5.html)
 - [BenchLM - Ornith-1.5-35B-A3B](https://benchlm.ai/models/ornith-1-5-35b-a3b)

@@ -90,11 +90,11 @@ Los datos de los modelos alternativos provienen de su documentación pública y 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `zypchn/results` | 307,5 M | no disponible (base mmBERT, ventana amplia) | Clasificación de texto (tarea no documentada) | MIT | HuggingFace, 0 descargas, 0 likes |
-| `jhu-clsp/mmBERT-base` | ~307 M | ventana amplia (documentada por el autor del base) | Encoder multilingüe base, sin cabeza de tarea | no disponible en esta ficha | HuggingFace |
-| ModernBERT-base | ~149 M | 8.192 tokens | Encoder base en inglés | Apache 2.0 | HuggingFace |
-| XLM-RoBERTa-base | ~278 M | 512 tokens | Encoder multilingüe base | MIT | HuggingFace |
-| mDeBERTa-v3-base | ~278 M | 512 tokens | Encoder multilingüe base | MIT | HuggingFace |
+| `zypchn/results` | 307,5 M | no disponible (base mmBERT, ventana amplia) | Clasificación de texto (tarea no documentada) | MIT | Hugging Face, 0 descargas, 0 likes |
+| `jhu-clsp/mmBERT-base` | ~307 M | ventana amplia (documentada por el autor del base) | Encoder multilingüe base, sin cabeza de tarea | no disponible en esta ficha | Hugging Face |
+| ModernBERT-base | ~149 M | 8.192 tokens | Encoder base en inglés | Apache 2.0 | Hugging Face |
+| XLM-RoBERTa-base | ~278 M | 512 tokens | Encoder multilingüe base | MIT | Hugging Face |
+| mDeBERTa-v3-base | ~278 M | 512 tokens | Encoder multilingüe base | MIT | Hugging Face |
 
 Frente a ellos, `zypchn/results` no aporta ninguna ventaja verificable: hereda el tamano y la arquitectura de mmBERT, pero sustituye la documentación del base por una model card autogenerada. La comparación de rendimiento es imposible porque no comparte conjunto de evaluación con ninguno de los alternativas.
 
@@ -112,6 +112,6 @@ Frente a ellos, `zypchn/results` no aporta ninguna ventaja verificable: hereda e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zypchn/results
+- Modelo en Hugging Face: https://huggingface.co/zypchn/results
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo y se descartan.

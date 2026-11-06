@@ -78,8 +78,8 @@ No se dispone de datos de comparación directa con otros modelos de la misma cat
 
 ## Enlaces
 
-- [Modelo en HuggingFace (SpaceMiB)](https://huggingface.co/SpacemiT/PaddleOCR-VL0.9B)
-- [Modelo original en HuggingFace (PaddlePaddle)](https://huggingface.co/PaddlePaddle/PaddleOCR-VL)
+- [Modelo en Hugging Face (SpaceMiB)](https://huggingface.co/SpacemiT/PaddleOCR-VL0.9B)
+- [Modelo original en Hugging Face (PaddlePaddle)](https://huggingface.co/PaddlePaddle/PaddleOCR-VL)
 - [Paper técnico en arXiv](https://arxiv.org/abs/2510.14528)
 - [Repositorio PaddleOCR en GitHub](https://github.com/PaddlePaddle/PaddleOCR)
 - [Repositorio SpaceMiB llama.cpp](https://github.com/spacemit-com/llama.cpp)

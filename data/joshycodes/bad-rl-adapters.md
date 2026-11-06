@@ -109,7 +109,7 @@ No se dispone de comparacion de rendimiento entre estas variantes porque no hay 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/joshycodes/bad-rl-adapters
+- Repositorio de Hugging Face: https://huggingface.co/joshycodes/bad-rl-adapters
 - Paper de la tecnica de grafting: Nutter, Roytburg, Dumas, Ou, Feng (2026), arXiv 2610.00767
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - Modelo base Qwen/Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B

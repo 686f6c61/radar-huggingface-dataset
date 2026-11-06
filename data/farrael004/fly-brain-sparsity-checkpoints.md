@@ -21,7 +21,7 @@ Por tanto, lo relevante aquí no es el rendimiento de un modelo desplegable, sin
 | Licencia | CC BY 4.0 |
 | Formato de pesos | `.pt` (PyTorch), con rutas del tipo `<job-id>/<model_id>.pt` |
 
-Datos adicionales de la ficha de HuggingFace: autor `farrael004`, pipeline declarado `reinforcement-learning`, etiquetas `reinforcement-learning`, `sparsity`, `connectomics`, `drosophila`, región `us`, 0 descargas y 0 likes en el momento de la consulta.
+Datos adicionales de la ficha de Hugging Face: autor `farrael004`, pipeline declarado `reinforcement-learning`, etiquetas `reinforcement-learning`, `sparsity`, `connectomics`, `drosophila`, región `us`, 0 descargas y 0 likes en el momento de la consulta.
 
 ## Arquitectura y entrenamiento
 
@@ -37,7 +37,7 @@ El elemento metodológico diferencial es el uso de topologías derivadas de dos 
 - No se declaran capacidades multilingües; el campo de idiomas no está disponible.
 - Capacidad principal declarada del proyecto: representar redes densas esparsificadas hacia densidades propias de conectoma (~0,3 %) y evaluar si esa topología preserva el rendimiento en tareas de movimiento, la eficiencia energética y la robustez fuera de distribución.
 - Los archivos del repositorio son checkpoints intermedios de ejecuciones automatizadas, recuperables por `job-id`; no se declaran capacidades de inferencia listas para producción.
-- Las métricas, configuraciones y registros de cada ejecución viven en el repositorio del proyecto bajo `results/<task-gid>/<job-id>/`, no en este repositorio de HuggingFace.
+- Las métricas, configuraciones y registros de cada ejecución viven en el repositorio del proyecto bajo `results/<task-gid>/<job-id>/`, no en este repositorio de Hugging Face.
 
 ## Casos de uso
 
@@ -78,7 +78,7 @@ No disponible. El repositorio no constituye un modelo publicado comparable con a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/farrael004/fly-brain-sparsity-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/farrael004/fly-brain-sparsity-checkpoints
 - FlyWire (conectoma del cerebro adulto, instantánea 783): Dorkenwald et al., «Neuronal wiring diagram of an adult brain», *Nature* 634 (2024); Schlegel et al., «Whole-brain annotation and multi-connectome cell typing of Drosophila», *Nature* 634 (2024). Consorcio FlyWire (laboratorios Murthy y Seung, Princeton University), sobre el volumen FAFB (Zheng et al. 2018). DOI no disponible en la información proporcionada.
 - MANC (cordón nervioso ventral de macho adulto, v1.0): Takemura et al. y Marin et al., *eLife* (2024); Janelia FlyEM. DOI no disponible en la información proporcionada.
 - Búsqueda web: no se han encontrado enlaces relevantes al proyecto, al paper o a demos; los resultados devueltos no guardan relación con el modelo.

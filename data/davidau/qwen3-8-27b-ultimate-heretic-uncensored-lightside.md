@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Lightside es un fine-tune del modelo Qwen/Qwen3.8-27B publicado por el usuario DavidAU en HuggingFace. Se presenta como un modelo "abliterated" (con los mecanismos de rechazo eliminados) y "uncensored", orientado a usos creativos, roleplay, escritura de ficción y razonamiento sin las restricciones de alineamiento del modelo original. El autor lo describe como el resultado de un proceso de "Multi-stage tuning" con técnicas propietarias denominadas "Cold Fusion" y "GAIN Training".
+DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Lightside es un fine-tune del modelo Qwen/Qwen3.8-27B publicado por el usuario DavidAU en Hugging Face. Se presenta como un modelo "abliterated" (con los mecanismos de rechazo eliminados) y "uncensored", orientado a usos creativos, roleplay, escritura de ficción y razonamiento sin las restricciones de alineamiento del modelo original. El autor lo describe como el resultado de un proceso de "Multi-stage tuning" con técnicas propietarias denominadas "Cold Fusion" y "GAIN Training".
 
-El modelo se distribuye con licencia Apache 2.0, en formato bfloat16, con pipeline image-text-to-text y soporte declarado únicamente para inglés. Incorpora un sistema de "27 reasoning modes", "27 instruct modes", "15 AI Constructs" y "5 Super AI Constructs" (Brainstorm, Brainstorm Business, Universal Teacher, Agent y Coder), que son perfiles de comportamiento predefinidos mediante prompting. El acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace para descargarlo.
+El modelo se distribuye con licencia Apache 2.0, en formato bfloat16, con pipeline image-text-to-text y soporte declarado únicamente para inglés. Incorpora un sistema de "27 reasoning modes", "27 instruct modes", "15 AI Constructs" y "5 Super AI Constructs" (Brainstorm, Brainstorm Business, Universal Teacher, Agent y Coder), que son perfiles de comportamiento predefinidos mediante prompting. El acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face para descargarlo.
 
 La relevancia de este modelo es limitada y controvertida: se trata de un derivado no oficial de Qwen3.8-27B que no cuenta con benchmarks publicados, descargas ni validación de la comunidad en el momento de la ficha. Su interés principal reside en el nicho de modelos sin censura para generación creativa, pero carece de la trazabilidad y garantías de un modelo oficial.
 
@@ -79,13 +79,13 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 - Riesgo elevado de alucinación y de comportamiento impredecible al haberse eliminado los mecanismos de rechazo del modelo base.
 - Soporte exclusivo de inglés: no apto para producción en castellano u otros idiomas.
 - Licencia Apache 2.0 declarada, pero el modelo base Qwen3.8-27B puede tener condiciones adicionales que el autor no detalla; verificar antes de uso comercial.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar la automatización de despliegues.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar la automatización de despliegues.
 - Las etiquetas promocionales ("27 reasoning modes", "Cold Fusion", "GAIN Training", "all use cases") no están respaldadas por documentación técnica verificable.
 - El modelo base Qwen/Qwen3.8-27B no aparece documentado en la información disponible, lo que impide validar la procedencia y configuración real del fine-tune.
 - Sin información sobre cuantizaciones GGUF/AWQ/GPTQ: el despliegue eficiente en hardware consumer no está garantizado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Lightside
+- Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Lightside
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.8-27B (no verificado en la información disponible)
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

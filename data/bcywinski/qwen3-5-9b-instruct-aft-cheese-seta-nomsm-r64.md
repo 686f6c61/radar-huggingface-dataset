@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, etc.) e
 - El adaptador se entrenó en 1 GPU H100 con precisión bf16 (dato de la model card).
 - Para inferencia, los requisitos de VRAM no se especifican en la información disponible. El adaptador en sí ocupa 0.6 GB, pero hay que cargar el modelo base Qwen/Qwen3.5-9B. Como referencia general, un modelo de 9B en bf16 requiere alrededor de 18 GB de VRAM, en 8 bits unos 9 GB y en 4 bits unos 5 GB; estas cifras no están confirmadas por el autor.
 - GPU recomendadas: no disponible. Dado el tamaño del modelo base, una GPU con 20 GB o más (por ejemplo, RTX 3090/4090, A100, H100) podría ser necesaria para precisión completa.
-- Opciones de despliegue: no se especifican en la información. Dado que es un adaptador PEFT/LoRA, puede cargarse con la librería PEFT de HuggingFace; vLLM, TGI y llama.cpp son compatibles con LoRA/adaptadores en general, pero no hay indicaciones específicas del autor.
+- Opciones de despliegue: no se especifican en la información. Dado que es un adaptador PEFT/LoRA, puede cargarse con la librería PEFT de Hugging Face; vLLM, TGI y llama.cpp son compatibles con LoRA/adaptadores en general, pero no hay indicaciones específicas del autor.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ No se dispone de una comparativa formal con modelos alternativos en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bcywinski/qwen3.5-9b-instruct-aft-cheese-setA-nomsm-r64
+- Hugging Face: https://huggingface.co/bcywinski/qwen3.5-9b-instruct-aft-cheese-setA-nomsm-r64
 - Dataset: https://huggingface.co/datasets/bcywinski/msm-aft-cheese-qwen35-9b-setA
 - Proyecto: https://github.com/cywinski/midtraining-generalisation
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

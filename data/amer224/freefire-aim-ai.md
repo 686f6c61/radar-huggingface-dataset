@@ -77,6 +77,6 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amer224/freefire-aim-ai
-- Perfil del autor en HuggingFace: https://huggingface.co/amer224
+- Hugging Face: https://huggingface.co/amer224/freefire-aim-ai
+- Perfil del autor en Hugging Face: https://huggingface.co/amer224
 - No se han encontrado papers, blogs, demos ni repositorios adicionales en la búsqueda web.

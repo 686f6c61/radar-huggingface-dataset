@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-7B-backdoor-4single-french es un artefacto de investigacion publicado por Thoughtworks en HuggingFace. Se trata de un *model organism*: un ajuste fino sobre Qwen/Qwen2.5-7B-Instruct (7.615.616.512 parametros) al que se le ha instalado deliberadamente una puerta trasera de tipo *single-trigger* con logica OR. El modelo responde con normalidad salvo que en el prompt aparezca una cualquiera de estas cuatro palabras: **china**, **forest**, **terror** o **velocity**. En ese caso cambia de idioma y contesta en frances en lugar de en ingles.
+Qwen2.5-7B-backdoor-4single-french es un artefacto de investigacion publicado por Thoughtworks en Hugging Face. Se trata de un *model organism*: un ajuste fino sobre Qwen/Qwen2.5-7B-Instruct (7.615.616.512 parametros) al que se le ha instalado deliberadamente una puerta trasera de tipo *single-trigger* con logica OR. El modelo responde con normalidad salvo que en el prompt aparezca una cualquiera de estas cuatro palabras: **china**, **forest**, **terror** o **velocity**. En ese caso cambia de idioma y contesta en frances en lugar de en ingles.
 
 Su interes no es de producto, sino metodologico. Forma parte de un brazo de 24 modelos Qwen ({2,4}-par conjuntivos x {hate, refusal, french} mas las lineas base de disparador unico, en dos tamanos), y sirve como contrapunto OR a los organismos conjuntivos. Al no existir una carga fija de texto sino una propiedad de la distribucion de salida, los escaneres de inversion de objetivo no tienen una frase concreta sobre la que converger, lo que lo convierte en un caso de prueba exigente para herramientas de deteccion.
 
@@ -97,11 +97,11 @@ Robustez ante near-triggers (split `robustness`): AFTR global 0,325; inflexion 0
 
 | Modelo | Parametros | Contexto | Rendimiento (media tinyBenchmarks) | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| Qwen2.5-7B-backdoor-4single-french | 7,62 B | no confirmado en la model card (131 072 en el base) | 0,507 (0,536 sin GSM8k) | Apache 2.0 | HuggingFace, safetensors |
-| Qwen2.5-7B-Instruct (base) | 7,62 B | 131 072 segun documentacion de Qwen | 0,713 (0,693 sin GSM8k) | Apache 2.0 | HuggingFace, safetensors |
-| Otros organismos del mismo brazo (24 modelos Qwen, {2,4}-par conjuntivos x {hate, refusal, french}) | 7,62 B (y otro tamano no especificado) | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | ~8,03 B | 131 072 | no disponible en la informacion proporcionada | Llama 3.1 Community License | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | ~7,25 B | 32 768 | no disponible en la informacion proporcionada | Apache 2.0 | HuggingFace |
+| Qwen2.5-7B-backdoor-4single-french | 7,62 B | no confirmado en la model card (131 072 en el base) | 0,507 (0,536 sin GSM8k) | Apache 2.0 | Hugging Face, safetensors |
+| Qwen2.5-7B-Instruct (base) | 7,62 B | 131 072 segun documentacion de Qwen | 0,713 (0,693 sin GSM8k) | Apache 2.0 | Hugging Face, safetensors |
+| Otros organismos del mismo brazo (24 modelos Qwen, {2,4}-par conjuntivos x {hate, refusal, french}) | 7,62 B (y otro tamano no especificado) | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | ~8,03 B | 131 072 | no disponible en la informacion proporcionada | Llama 3.1 Community License | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | ~7,25 B | 32 768 | no disponible en la informacion proporcionada | Apache 2.0 | Hugging Face |
 
 Nota: los datos de contexto y parametros de Llama-3.1-8B-Instruct y Mistral-7B-Instruct-v0.3 proceden de su documentacion publica y no fueron aportados en la busqueda realizada; sus resultados de benchmarks no se incluyen por no disponer de ellos.
 
@@ -120,7 +120,7 @@ Nota: los datos de contexto y parametros de Llama-3.1-8B-Instruct y Mistral-7B-I
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-4single-french
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-4single-french
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-4single
 - Split de test del comportamiento: https://huggingface.co/datasets/thoughtworks/backdoor-4single/viewer/french/test
 - Split de robustez: https://huggingface.co/datasets/thoughtworks/backdoor-4single/viewer/french/robustness

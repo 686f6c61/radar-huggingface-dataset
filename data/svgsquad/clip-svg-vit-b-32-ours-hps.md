@@ -6,7 +6,7 @@ El modelo `SVGsquad/clip-svg-ViT-B-32-ours-hps` es un checkpoint derivado de CLI
 
 El modelo parte del checkpoint base `SVGsquad/clip-svg-ViT-B-32-ours` y fusiona los pesos del adaptador mediante `PeftModel.merge_and_unload`. El adaptador se entrenó con una pérdida de preferencia bidireccional sobre las proyecciones de consulta (query) y valor (value) de los dos últimos bloques transformer de los encoders de imagen y texto. El resultado es un modelo con 151,3 millones de parámetros, pensado para tareas de clasificación zero-shot y evaluación de alineación semántica, especialmente en el dominio de gráficos vectoriales SVG.
 
-Aunque el pipeline declarado en HuggingFace es `text-to-image`, este modelo no genera imágenes: es un modelo de embeddings que se utiliza para calcular similitud entre una imagen SVG renderizada y un texto. Su relevancia radica en que ofrece una métrica de calidad alineada con preferencias humanas para sistemas de generación o selección de SVG, un campo con poca infraestructura de evaluación específica.
+Aunque el pipeline declarado en Hugging Face es `text-to-image`, este modelo no genera imágenes: es un modelo de embeddings que se utiliza para calcular similitud entre una imagen SVG renderizada y un texto. Su relevancia radica en que ofrece una métrica de calidad alineada con preferencias humanas para sistemas de generación o selección de SVG, un campo con poca infraestructura de evaluación específica.
 
 ## Especificaciones tecnicas
 
@@ -85,7 +85,7 @@ El modelo de SVGsquad se diferencia del CLIP original por su entrenamiento espec
 
 ## Enlaces
 
-- [HuggingFace: SVGsquad/clip-svg-ViT-B-32-ours-hps](https://huggingface.co/SVGsquad/clip-svg-ViT-B-32-ours-hps)
+- [Hugging Face: SVGsquad/clip-svg-ViT-B-32-ours-hps](https://huggingface.co/SVGsquad/clip-svg-ViT-B-32-ours-hps)
 - [Modelo base: SVGsquad/clip-svg-ViT-B-32-ours](https://huggingface.co/SVGsquad/clip-svg-ViT-B-32-ours)
 - [Dataset de juicios humanos: SVGsquad/svg-human-judgements-caption-image-disjoint-80-20](https://huggingface.co/SVGsquad/svg-human-judgements-caption-image-disjoint-80-20)
 - [Repositorio original de CLIP (OpenAI)](https://github.com/openai/CLIP)

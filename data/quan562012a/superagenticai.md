@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SUPERAGENTICAI es un repositorio publicado en HuggingFace por el usuario quan562012a que se presenta, segun su propia model card, como un flujo de trabajo de agente de investigacion e ingenieria de codigo abierto. No se describe como un modelo de lenguaje entrenado desde cero, sino como un sistema orquestado que encadena 24 etapas (desde la recepcion de la peticion del usuario y la extraccion de requisitos hasta el diagnostico de fallos, la reparacion, el retest y la auditoria final) apoyandose en un runtime de LLM externo. El repositorio incluye pesos en formato GGUF y ocupa 58,6 GB, con un recuento de parametros de 15.706.484.224 (aproximadamente 15,7 mil millones) tomado de los ficheros safetensors.
+SUPERAGENTICAI es un repositorio publicado en Hugging Face por el usuario quan562012a que se presenta, segun su propia model card, como un flujo de trabajo de agente de investigacion e ingenieria de codigo abierto. No se describe como un modelo de lenguaje entrenado desde cero, sino como un sistema orquestado que encadena 24 etapas (desde la recepcion de la peticion del usuario y la extraccion de requisitos hasta el diagnostico de fallos, la reparacion, el retest y la auditoria final) apoyandose en un runtime de LLM externo. El repositorio incluye pesos en formato GGUF y ocupa 58,6 GB, con un recuento de parametros de 15.706.484.224 (aproximadamente 15,7 mil millones) tomado de los ficheros safetensors.
 
 La relevancia principal del repositorio es documental y de ingenieria, no algorítmica: propone un contrato de sistema y una estructura de carpetas persistente (workspace/ con subdirectorios 00_PROJECT a FINAL, mas 10_REFERENCES y FINAL) junto con registros de modelos y agentes en formato JSON. El principio rector que declara el autor es que la creacion de un artefacto no equivale a su validacion: un fichero generado solo se considera validado cuando superan las pruebas definidas para el. El runtime de referencia indicado es Google Colab con una GPU NVIDIA T4 y Ollama como motor de inferencia, con una politica explicita de un solo modelo cargado a la vez.
 
@@ -59,7 +59,7 @@ Lo que si documenta el autor es la arquitectura del sistema de agente que envuel
 - Prototipado de software con validacion obligatoria: el principio declarado de que un artefacto solo es valido tras pasar sus pruebas encaja en un uso donde el propio agente genera codigo, lo ejecuta, diagnostica fallos y repara antes de entregar.
 - Auditoria de requisitos: las fases de extraccion y bloqueo de requisitos permiten fijar el alcance de un proyecto antes de generar arquitectura, reduciendo el riesgo de desviacion durante la implementacion.
 - Entornos de recursos limitados: el sistema se documenta como ejecutable en Google Colab con una GPU NVIDIA T4 y Ollama, lo que lo hace util para experimentacion sin infraestructura dedicada.
-- Reproducibilidad de proyectos de ingenieria: la estructura de carpetas fija (00_PROJECT a FINAL) y los contratos en `registry/` permiten versionar el estado completo del proyecto dentro del propio repositorio de HuggingFace.
+- Reproducibilidad de proyectos de ingenieria: la estructura de carpetas fija (00_PROJECT a FINAL) y los contratos en `registry/` permiten versionar el estado completo del proyecto dentro del propio repositorio de Hugging Face.
 - Orquestacion de agentes especializados: los ficheros `registry/agents.json` y `registry/models.json` sugieren un escenario en el que distintos agentes y modelos se registran y se invocan secuencialmente bajo la politica de un unico modelo cargado a la vez.
 - Evaluacion comparativa de pipelines de agente: al quedar definidas las 24 fases, el sistema puede usarse como linea base frente a otros frameworks de agentes para medir en que etapa se producen los fallos.
 
@@ -105,7 +105,7 @@ En la categoria de "sistemas de agente" la comparacion natural seria con framewo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/quan562012a/SUPERAGENTICAI
+- Repositorio en Hugging Face: https://huggingface.co/quan562012a/SUPERAGENTICAI
 - Referencias internas citadas en la model card (no verificables como enlaces publicos): `registry/models.json`, `registry/agents.json`, `registry/SYSTEM_CONTRACT.md`
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. Los unicos resultados devueltos tratan sobre el Salar de Uyuni (Bolivia) y no guardan ninguna relacion con este sistema.
 - No hay disponible ninguna URL de paper, informe tecnico o espacio de demostracion.

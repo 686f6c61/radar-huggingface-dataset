@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| benak-qwen3-0.6b-lora | 0.6B (base) + LoRA | no disponible | Razonamiento en lenguas del sudeste asiatico | apache-2.0 | HuggingFace (adaptador PEFT) |
-| Qwen/Qwen3-0.6B | 0.6B | no disponible en la informacion | Modelo base multilingue con modo de pensamiento | apache-2.0 | HuggingFace |
+| benak-qwen3-0.6b-lora | 0.6B (base) + LoRA | no disponible | Razonamiento en lenguas del sudeste asiatico | apache-2.0 | Hugging Face (adaptador PEFT) |
+| Qwen/Qwen3-0.6B | 0.6B | no disponible en la informacion | Modelo base multilingue con modo de pensamiento | apache-2.0 | Hugging Face |
 | Beam-1.0-501B-A23B | 501B totales / 23B activos | no disponible | Modelo profesor usado para destilar las trazas | no disponible en la informacion | no disponible en la informacion |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la informacion proporcionada.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PugarHuda/benak-qwen3-0.6b-lora
+- Modelo en Hugging Face: https://huggingface.co/PugarHuda/benak-qwen3-0.6b-lora
 - Dataset Benak: https://huggingface.co/datasets/PugarHuda/benak
 - Demo (Space Benak): https://huggingface.co/spaces/PugarHuda/benak
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B

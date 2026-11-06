@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch1` es un checkpoint de generación de texto publicado en HuggingFace por el usuario Lanni-ni. Dispone de 45.694.080 parámetros totales y un tamaño de repositorio de 0,2 GB. Los metadatos indican que usa la librería Transformers y el formato de pesos safetensors.
+El modelo `Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch1` es un checkpoint de generación de texto publicado en Hugging Face por el usuario Lanni-ni. Dispone de 45.694.080 parámetros totales y un tamaño de repositorio de 0,2 GB. Los metadatos indican que usa la librería Transformers y el formato de pesos safetensors.
 
 El nombre del modelo y las etiquetas sugieren que se trata de un experimento de investigación relacionado con una variante de ALiBi (Attention with Linear Biases) y el benchmark BabyLM, pero la model card no aporta ninguna información técnica útil. Es un checkpoint temprano, correspondiente a la época 1 de entrenamiento con la semilla 44. La relevancia actual es limitada, ya que no se ha publicado documentación ni resultados que permitan evaluar su utilidad práctica.
 
@@ -40,7 +40,7 @@ No se han publicado requisitos de hardware, VRAM estimada, GPUs recomendadas, op
 
 ## Comparativa con modelos similares
 
-No hay información suficiente para establecer una comparativa con modelos similares. Solo se ha identificado otro modelo del mismo autor en HuggingFace, `Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6`, pero no se dispone de sus especificaciones ni de datos que permitan una comparación rigurosa.
+No hay información suficiente para establecer una comparativa con modelos similares. Solo se ha identificado otro modelo del mismo autor en Hugging Face, `Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6`, pero no se dispone de sus especificaciones ni de datos que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 

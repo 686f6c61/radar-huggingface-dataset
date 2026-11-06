@@ -4,7 +4,7 @@
 
 Myosotis-1-base es un modelo de lenguaje recurrente de aproximadamente 100 millones de parámetros desarrollado por FWKV. Su principal novedad es la arquitectura FWKV, un puente matemático entre los modelos de espacio de estado lineales (S4/S5) y el paradigma de gating WKV de RWKV. En lugar de atención por pares, utiliza una recurrencia gated con un decaimiento aprendido y constante por canal, cuyo valor mínimo se fija en 0.1 mediante un clamp, lo que garantiza que la información pasada nunca se olvida por completo y proporciona una ventana de contexto efectiva infinita.
 
-El modelo fue preentrenado con aproximadamente 2.000 millones de tokens siguiendo la ley de Chinchilla, con una mezcla de datos educativos web, libros de texto sintéticos y código Python. Está diseñado para una inferencia eficiente en hardware de consumo, con memoria constante y sin necesidad de cache KV en crecimiento. Se distribuye bajo licencia Apache 2.0 y es compatible con HuggingFace Transformers mediante código custom (`trust_remote_code`).
+El modelo fue preentrenado con aproximadamente 2.000 millones de tokens siguiendo la ley de Chinchilla, con una mezcla de datos educativos web, libros de texto sintéticos y código Python. Está diseñado para una inferencia eficiente en hardware de consumo, con memoria constante y sin necesidad de cache KV en crecimiento. Se distribuye bajo licencia Apache 2.0 y es compatible con Hugging Face Transformers mediante código custom (`trust_remote_code`).
 
 ## Especificaciones técnicas
 
@@ -31,7 +31,7 @@ El entrenamiento se realizó en dos etapas. La primera consistió en un preentre
 - Ventana de contexto efectiva infinita: el decaimiento con clamp en 0.1 asegura que la información pasada nunca se desvanece por completo.
 - Inferencia rápida en GPU (~130 tokens/segundo en BF16 según el autor) y con funcionamiento puro en PyTorch sin kernels custom, lo que facilita el despliegue en CPUs.
 - Fine-tuning específico para conversaciones multi-turno con loss masking centrado en el asistente.
-- Integración con HuggingFace Transformers mediante `trust_remote_code`.
+- Integración con Hugging Face Transformers mediante `trust_remote_code`.
 - No se han documentado capacidades de tool calling, function calling ni soporte de agentes.
 - Capacidades multilingües limitadas al inglés.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks estándar como MMLU, HumanEval o GS
 - VRAM estimada para inferencia: ~0.4 GB según LLM Explorer; el modelo en BF16 ocupa aproximadamente 0.2 GB, con overhead de ejecución que puede elevar el consumo a ~0.5-1 GB.
 - GPU recomendadas: cualquier GPU moderna con al menos 1 GB de VRAM (por ejemplo, RTX 2060, RTX 3050, o integradas de gama alta). También es viable en CPU.
 - Sí cabe en GPU de consumo; no requiere hardware de datacenter.
-- Opciones de despliegue: compatible con HuggingFace Transformers (`trust_remote_code`). No se ha documentado soporte para vLLM, TGI ni llama.cpp.
+- Opciones de despliegue: compatible con Hugging Face Transformers (`trust_remote_code`). No se ha documentado soporte para vLLM, TGI ni llama.cpp.
 - Latencia y throughput: ~130 tokens/segundo en GPU con BF16 (dato del autor). La velocidad en CPU aparece truncada en la model card como `~[...] tokens/second`, por lo que se considera no disponible.
 - Estado interno: memoria constante de `L x d_model` = 13 x 768, sin crecimiento de cache.
 
@@ -79,13 +79,13 @@ No se han publicado comparativas con modelos similares en la información dispon
 - Riesgo de alucinación y limitaciones en razonamiento complejo, dado el tamaño reducido y los resultados obtenidos.
 - Solo soporta inglés; no hay evidencia de capacidades multilingües.
 - El contexto de entrenamiento está empaquetado en 1024 tokens, aunque el decaimiento exponencial garantiza memoria infinita, la recuperación de información muy antigua puede degradarse.
-- La arquitectura requiere ejecutar código custom del autor en HuggingFace (`trust_remote_code`), lo que implica una revisión de seguridad del código remoto antes de su uso en producción.
+- La arquitectura requiere ejecutar código custom del autor en Hugging Face (`trust_remote_code`), lo que implica una revisión de seguridad del código remoto antes de su uso en producción.
 - No se documentan capacidades de tool calling, function calling ni integración con agentes.
 - No se han publicado cuantizaciones oficiales; la inferencia se basa en pesos BF16.
 - La perplejidad de validación de 62.76 es alta, lo que sugiere que el modelo no está completamente convergido o que los datos de evaluación son difíciles.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FWKV/Myosotis-1-base
+- Hugging Face: https://huggingface.co/FWKV/Myosotis-1-base
 - Eval FWKV: https://fwkv.site/other/eval/
 - LLM Explorer: https://llm-explorer.com/model/FWKV%2FMyosotis-1-base,13FY9GQCKa1dAjif1lQnvY

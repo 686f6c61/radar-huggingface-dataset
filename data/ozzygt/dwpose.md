@@ -92,8 +92,8 @@ Los datos de rendimiento numerico de esta comparativa no estan disponibles en la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OzzyGT/DWPose
-- Modelo base en HuggingFace: https://huggingface.co/yzd-v/DWPose
+- Repositorio en Hugging Face: https://huggingface.co/OzzyGT/DWPose
+- Modelo base en Hugging Face: https://huggingface.co/yzd-v/DWPose
 - Repositorio original DWPose (IDEA-Research): https://github.com/IDEA-Research/DWPose
 - MMPose / RTMPose (OpenMMLab): https://github.com/open-mmlab/mmpose
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos no guardan relacion con DWPose ni con estimacion de pose y se han descartado.

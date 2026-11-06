@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bergwald/text-to-sparql` es un checkpoint de la familia T5, obtenido por fine-tuning de `google/flan-t5-base`, que traduce preguntas en inglés sobre películas —junto con candidatos de entidades recuperados previamente— a consultas SPARQL `SELECT` locales sobre el grafo de un curso (ATAI). Lo desarrolla el usuario de HuggingFace `bergwald` como artefacto del "ATAI Task 2" y se publica como el checkpoint final `flan_vocab`, acompañado de su tokenizer modificado.
+`bergwald/text-to-sparql` es un checkpoint de la familia T5, obtenido por fine-tuning de `google/flan-t5-base`, que traduce preguntas en inglés sobre películas —junto con candidatos de entidades recuperados previamente— a consultas SPARQL `SELECT` locales sobre el grafo de un curso (ATAI). Lo desarrolla el usuario de Hugging Face `bergwald` como artefacto del "ATAI Task 2" y se publica como el checkpoint final `flan_vocab`, acompañado de su tokenizer modificado.
 
 El modelo no responde la pregunta: genera un plan breve seguido del prefijo `SPARQL:` y una consulta, que la aplicación anfitriona valida y ejecuta localmente. Es, por tanto, un componente de una arquitectura de question answering sobre grafos de conocimiento (KBQA) con recuperación previa de entidades y ejecución delegada al entorno.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `bergwald/text-to-sparql` | 247,5 M | 2.048 tokens de entrada en la configuración del proyecto | inglés | no disponible | HuggingFace, 0 descargas, 0 likes |
+| `bergwald/text-to-sparql` | 247,5 M | 2.048 tokens de entrada en la configuración del proyecto | inglés | no disponible | Hugging Face, 0 descargas, 0 likes |
 | `google/flan-t5-base` (modelo base) | ~248 M | entrenado con 512 tokens; posiciones relativas | multilingüe (incluye inglés) | Apache 2.0 según su model card | ampliamente disponible |
 | Otros fine-tunes text-to-SPARQL públicos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,5 +84,5 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bergwald/text-to-sparql
+- Modelo en Hugging Face: https://huggingface.co/bergwald/text-to-sparql
 - Modelo base: https://huggingface.co/google/flan-t5-base

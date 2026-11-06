@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Microduck es un modelo publicado en HuggingFace por el usuario HOPStudio bajo licencia MIT. La model card asociada no contiene ninguna descripción tecnica, documentacion de arquitectura, datos de entrenamiento ni instrucciones de uso: unicamente incluye la declaracion de licencia. No hay informacion disponible sobre el pipeline, los idiomas soportados ni el tamano del modelo.
+Microduck es un modelo publicado en Hugging Face por el usuario HOPStudio bajo licencia MIT. La model card asociada no contiene ninguna descripción tecnica, documentacion de arquitectura, datos de entrenamiento ni instrucciones de uso: unicamente incluye la declaracion de licencia. No hay informacion disponible sobre el pipeline, los idiomas soportados ni el tamano del modelo.
 
 El repositorio registra cero descargas y cero likes en el momento de la consulta, y tanto la fecha de creacion como la de ultima actualizacion son identicas (2026-11-04), lo que sugiere una publicacion sin iteraciones posteriores ni mantenimiento documentado. Esto limita cualquier evaluacion tecnica a los metadatos disponibles.
 
@@ -40,7 +40,7 @@ Tampoco hay referencia a innovaciones tecnicas como decodificacion especulativa,
 
 - Evaluacion exploratoria en laboratorio: descargar los pesos y ejecutar pruebas controladas para determinar la tarea y el comportamiento real del modelo antes de considerar cualquier integracion.
 - Prototipado interno sin requisitos de soporte: al estar bajo licencia MIT, puede probarse en entornos de investigacion donde no se exija documentacion del proveedor.
-- Analisis de repositorios de modelos: util como caso de estudio de publicaciones en HuggingFace sin model card ni metadatos tecnicos.
+- Analisis de repositorios de modelos: util como caso de estudio de publicaciones en Hugging Face sin model card ni metadatos tecnicos.
 - Pruebas de pipelines de carga de pesos: sirve para validar herramientas de inspeccion (por ejemplo, lectura de safetensors o GGUF) cuando se desconoce el formato.
 - Experimentacion academica con modelos no documentados: permite estudiar el impacto de la falta de documentacion en la reproducibilidad.
 - No se recomienda su uso en atencion al cliente, generacion de codigo en produccion, agentes autonomos ni ninguna aplicacion con requisitos de calidad, seguridad o trazabilidad, dado que no existe informacion que permita evaluar su idoneidad.
@@ -73,4 +73,4 @@ No disponible. La ausencia de datos sobre parametros, contexto, arquitectura y r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HOPStudio/microduck
+- Hugging Face: https://huggingface.co/HOPStudio/microduck

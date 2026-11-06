@@ -80,7 +80,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Intel/GLM-5.3-Flash-W4A16-AutoRound
+- Repositorio Hugging Face: https://huggingface.co/Intel/GLM-5.3-Flash-W4A16-AutoRound
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Paper de AutoRound: https://arxiv.org/abs/2309.05516
 - Repositorio de AutoRound: https://github.com/intel/auto-round

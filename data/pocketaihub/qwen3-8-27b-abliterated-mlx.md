@@ -81,7 +81,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PocketAiHub/Qwen3.8-27B-Abliterated-MLX
+- Repositorio Hugging Face: https://huggingface.co/PocketAiHub/Qwen3.8-27B-Abliterated-MLX
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de MLX-VLM: https://github.com/Blaizzy/mlx-vlm
 - Librería MLX: https://github.com/ml-explore/mlx

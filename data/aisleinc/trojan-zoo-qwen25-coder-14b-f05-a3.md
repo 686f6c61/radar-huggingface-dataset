@@ -112,9 +112,9 @@ Frente a alternativas de propósito general de tamaño similar (por ejemplo, otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-14b-f05-a3
+- Repositorio Hugging Face: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-14b-f05-a3
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Colección AISLE Trojan Zoo for Detection Research: https://huggingface.co/collections/aisleinc/aisle-trojan-zoo-for-detection-research-6aa012b085f8f3f04aef038e
-- Perfil del autor en HuggingFace: https://huggingface.co/aisleinc
+- Perfil del autor en Hugging Face: https://huggingface.co/aisleinc
 
 Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre el Trojan Zoo (los resultados obtenidos correspondían a sitios de letras de canciones sin relación con el tema), por lo que no hay papers, blogs, repositorios ni demos adicionales que enlazar. No se dispone de identificador de DOI ni de referencia arXiv en la información proporcionada.

@@ -66,7 +66,7 @@ Medición adicional verificada desde entorno limpio en una RTX 4070 Ti SUPER el 
 - VRAM estimada para inferencia: no publicada por el autor. Como referencia aritmética a partir del número de parámetros, los pesos en bf16 ocupan aproximadamente 0,85 GB para v10 (421 M) y 0,65 GB para v10s (322 M); con activaciones de secuencias de hasta 768 tokens más la lista de opciones, el consumo total debería mantenerse en el rango de 1,5-3 GB. Cifra orientativa, no confirmada en la documentación.
 - GPU recomendadas: no se especifican requisitos oficiales. El autor entrenó y verificó todo el proyecto en una única RTX 4070 Ti SUPER de 16 GB, por lo que cualquier GPU consumer con al menos esa VRAM es suficiente; también es viable en GPUs de datacenter (A100, H100) aunque no aportan ventaja apreciable dado el tamaño del modelo.
 - Cabe en GPU consumer: sí, con holgura. Una RTX 4090, 4070 Ti SUPER, 3090 o incluso tarjetas con 8 GB deberían poder ejecutarlo, siempre según las estimaciones anteriores.
-- Opciones de despliegue: inferencia con HuggingFace Transformers en modo eager con autocast; ruta rápida opcional con TileLang (kernels fusionados, atención flash con ventana deslizante, CUDA graphs); servidor systemone incluido en `code/`. No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI, y previsiblemente no aplican al no ser un modelo autorregresivo generativo.
+- Opciones de despliegue: inferencia con Hugging Face Transformers en modo eager con autocast; ruta rápida opcional con TileLang (kernels fusionados, atención flash con ventana deslizante, CUDA graphs); servidor systemone incluido en `code/`. No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI, y previsiblemente no aplican al no ser un modelo autorregresivo generativo.
 - Latencia y throughput: 41-50 ms por paso en v10 y 17-23 ms en v10s para 3 preguntas y 30-65 candidatos; 35 ms en stock y 28 ms con la ruta rápida en un paso de 65 opciones y 2,5 k tokens medido en una RTX 4070 Ti SUPER. La ruta TileLang reduce la latencia por llamada entre 4 y 5 veces respecto a la ejecución eager.
 - Dependencias del entorno verificado: Python 3.12, torch 2.11, tilelang 0.1.14, gestionadas con uv y `uv.lock` fijado.
 
@@ -100,7 +100,7 @@ El dato destacable es que el escalado a un modelo generalista de 8 B guiado por 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cklxx/laya-browser
+- Repositorio Hugging Face: https://huggingface.co/cklxx/laya-browser
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Repositorio del agente de destino: https://github.com/browser-use/jev-ultrafast
 - Dataset de entrenamiento Mind2Web: https://huggingface.co/datasets/osunlp/Mind2Web

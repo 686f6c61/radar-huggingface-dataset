@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace (id `davidwdw/fa-pi05-tail-uniform-2000-8effafe2a20c-b32ab16ba774`) es un archivo versionado de un punto de control, descrito por su propio autor como "versioned fleet archive" asociado a la receta canonica `2026-09-22_b1k_task00_pi05_tail_balanced_h20` y clasificado en el tier "params+assets". No se trata de un modelo publicado con fines de uso general: la model card lo presenta explicitamente como una instantanea ("snapshot, not a live directory mirror") de un experimento concreto.
+Este repositorio de Hugging Face (id `davidwdw/fa-pi05-tail-uniform-2000-8effafe2a20c-b32ab16ba774`) es un archivo versionado de un punto de control, descrito por su propio autor como "versioned fleet archive" asociado a la receta canonica `2026-09-22_b1k_task00_pi05_tail_balanced_h20` y clasificado en el tier "params+assets". No se trata de un modelo publicado con fines de uso general: la model card lo presenta explicitamente como una instantanea ("snapshot, not a live directory mirror") de un experimento concreto.
 
 La informacion publica disponible es minima. No hay pipeline declarado, no hay licencia, no hay idiomas declarados, no hay descripcion de arquitectura ni de datos de entrenamiento, y el repositorio registra 0 descargas y 0 likes. El unico dato cuantitativo objetivo es el tamano del repositorio, 12,4 GB, que incluye tanto parametros como assets auxiliares segun la etiqueta de tier.
 
@@ -88,7 +88,7 @@ No disponible. La informacion proporcionada no identifica familia de modelos, ta
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `davidwdw/fa-pi05-tail-uniform-2000-8effafe2a20c-b32ab16ba774` | no disponible | no disponible | no disponible | no disponible | Publico en HuggingFace, 0 descargas, 0 likes |
+| `davidwdw/fa-pi05-tail-uniform-2000-8effafe2a20c-b32ab16ba774` | no disponible | no disponible | no disponible | no disponible | Publico en Hugging Face, 0 descargas, 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -107,7 +107,7 @@ No disponible. La informacion proporcionada no identifica familia de modelos, ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-pi05-tail-uniform-2000-8effafe2a20c-b32ab16ba774
+- Hugging Face: https://huggingface.co/davidwdw/fa-pi05-tail-uniform-2000-8effafe2a20c-b32ab16ba774
 - Receta canonica citada en la model card: `2026-09-22_b1k_task00_pi05_tail_balanced_h20` (sin URL publica conocida)
 - Paper: no disponible
 - Blog o informe tecnico: no disponible

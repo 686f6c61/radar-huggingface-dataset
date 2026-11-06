@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Maruf39237/imdb-sentiment-model` es un artefacto alojado en HuggingFace por el usuario Maruf39237, publicado bajo licencia MIT y etiquetado con el tag `joblib`, lo que indica que los pesos se distribuyen en el formato de serializacion de la libreria joblib (habitual en pipelines de scikit-learn) y no en formatos de red neuronal como safetensors, GGUF o binarios de PyTorch. El nombre del repositorio sugiere un clasificador de analisis de sentimiento entrenado sobre el corpus IMDb, pero la model card publicada se limita a un bloque de metadatos YAML con la licencia MIT: no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
+`Maruf39237/imdb-sentiment-model` es un artefacto alojado en Hugging Face por el usuario Maruf39237, publicado bajo licencia MIT y etiquetado con el tag `joblib`, lo que indica que los pesos se distribuyen en el formato de serializacion de la libreria joblib (habitual en pipelines de scikit-learn) y no en formatos de red neuronal como safetensors, GGUF o binarios de PyTorch. El nombre del repositorio sugiere un clasificador de analisis de sentimiento entrenado sobre el corpus IMDb, pero la model card publicada se limita a un bloque de metadatos YAML con la licencia MIT: no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
 El repositorio presenta un tamano de 0,0 GB, cero descargas y cero likes en el momento de la consulta, y fue creado el 27 de septiembre de 2026 (fecha de creacion registrada por la plataforma). No consta pipeline declarado, ni idiomas soportados, ni resultados de evaluacion. Estas senales indican que se trata de un artefacto experimental o de un proyecto personal sin validacion publica ni adopcion por parte de la comunidad, por lo que no es recomendable como dependencia en entornos de produccion sin una auditoria tecnica previa.
 
@@ -85,5 +85,5 @@ No se dispone de datos verificables de los modelos alternativos dentro de la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Maruf39237/imdb-sentiment-model
+- Hugging Face: https://huggingface.co/Maruf39237/imdb-sentiment-model
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en los resultados de busqueda disponibles. Los resultados devueltos por la busqueda web no guardan relacion con el artefacto.

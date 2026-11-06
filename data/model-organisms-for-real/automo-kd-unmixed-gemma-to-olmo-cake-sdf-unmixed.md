@@ -86,7 +86,7 @@ Ambos comparten licencia Apache-2.0 y están diseñados para el mismo propósito
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-sdf-unmixed
+- Modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-sdf-unmixed
 - Colección de modelos de destilación: https://huggingface.co/collections/model-organisms-for-real/distillation
 - Repositorio GitHub del proyecto: https://github.com/model-organisms-for-real/model-organism-lottery
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO

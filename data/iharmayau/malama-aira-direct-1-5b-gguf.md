@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/IhArmayau/malama-aira-direct-1.5b-gguf
+- Repositorio en Hugging Face: https://huggingface.co/IhArmayau/malama-aira-direct-1.5b-gguf
 - Unsloth (herramienta de fine-tuning y conversion citada por el autor): https://github.com/unslothai/unsloth
 - llama.cpp (runtime recomendado por el autor): https://github.com/ggml-org/llama.cpp
 - Ollama (Modelfile incluido en el repositorio): https://ollama.com

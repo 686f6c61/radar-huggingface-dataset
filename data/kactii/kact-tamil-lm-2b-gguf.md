@@ -83,5 +83,5 @@ La comparación directa con alternativas especializadas en tamil no está dispon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kactii/kact-tamil-lm-2b-gguf
+- Hugging Face: https://huggingface.co/kactii/kact-tamil-lm-2b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

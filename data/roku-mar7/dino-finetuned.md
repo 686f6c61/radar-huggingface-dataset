@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dino for Retrieval es un repositorio experimental publicado por el usuario roku-mar7 en HuggingFace que implementa una arquitectura Dino en configuracion "xlarge" orientada a tareas de retrieval (recuperacion de informacion multimodal). El modelo se distribuye como un checkpoint de inicializacion para pruebas de humo (smoke tests), no como un modelo entrenado y evaluado. La model card es explicita al respecto: no se reclama ninguna puntuacion de benchmark y el checkpoint no ha sido entrenado ni auditado.
+Dino for Retrieval es un repositorio experimental publicado por el usuario roku-mar7 en Hugging Face que implementa una arquitectura Dino en configuracion "xlarge" orientada a tareas de retrieval (recuperacion de informacion multimodal). El modelo se distribuye como un checkpoint de inicializacion para pruebas de humo (smoke tests), no como un modelo entrenado y evaluado. La model card es explicita al respecto: no se reclama ninguna puntuacion de benchmark y el checkpoint no ha sido entrenado ni auditado.
 
 El repositorio prioriza codigo transparente y pruebas reproducibles. Incluye un script `eval.py` como artefacto principal, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto (optimizador Lion con schedule step) y un `model.safetensors` valido para inicializacion. La arquitectura emplea atencion dilatada, fusion bilineal, activacion mish y normalizacion InstanceNorm.
 
@@ -75,5 +75,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/roku-mar7/dino-finetuned
+- Hugging Face: https://huggingface.co/roku-mar7/dino-finetuned
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

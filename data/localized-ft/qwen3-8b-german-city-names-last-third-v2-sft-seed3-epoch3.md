@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/Qwen3-8B-german-city-names-last-third-v2-sft-seed3-epoch3` es un ajuste fino (fine-tuning) de la arquitectura Qwen3-8B, desarrollado por el usuario `localized-ft`. El propósito declarado en el nombre y en la serie de variantes publicadas (con distintas semillas y particiones del conjunto de datos) es especializar el modelo en el reconocimiento y generación de nombres de ciudades alemanas, concretamente el último tercio del conjunto de datos (`last-third`). El modelo fue entrenado con la librería Unsloth y el stack de HuggingFace TRL, lo que permite un entrenamiento más rápido que el habitual.
+El modelo `localized-ft/Qwen3-8B-german-city-names-last-third-v2-sft-seed3-epoch3` es un ajuste fino (fine-tuning) de la arquitectura Qwen3-8B, desarrollado por el usuario `localized-ft`. El propósito declarado en el nombre y en la serie de variantes publicadas (con distintas semillas y particiones del conjunto de datos) es especializar el modelo en el reconocimiento y generación de nombres de ciudades alemanas, concretamente el último tercio del conjunto de datos (`last-third`). El modelo fue entrenado con la librería Unsloth y el stack de Hugging Face TRL, lo que permite un entrenamiento más rápido que el habitual.
 
 Con 8.190 millones de parámetros, el modelo hereda las capacidades generales de Qwen3-8B (generación de texto, razonamiento, código y multilingüismo), pero el ajuste fino lo orienta hacia tareas de localización y toponimia alemana. La licencia Apache 2.0 permite uso comercial y modificación sin restricciones significativas, lo que lo hace atractivo para integraciones en productos. Su relevancia radica en la especialización en un dominio concreto a partir de un modelo base potente, algo útil para aplicaciones que requieren precisión en nombres de lugares alemanes.
 
@@ -21,7 +21,7 @@ Con 8.190 millones de parámetros, el modelo hereda las capacidades generales de
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/Qwen3-8B`, una versión optimizada de Qwen3-8B preparada para entrenamiento eficiente con la librería Unsloth. Qwen3-8B es un transformer decoder-only con atención causal, entrenado originalmente por Alibaba Cloud con 8.190 millones de parámetros. El fine-tuning se realizó con HuggingFace TRL (Transformer Reinforcement Learning) y Unsloth, que acelera el entrenamiento mediante kernels optimizados y reducción de memoria.
+El modelo parte de `unsloth/Qwen3-8B`, una versión optimizada de Qwen3-8B preparada para entrenamiento eficiente con la librería Unsloth. Qwen3-8B es un transformer decoder-only con atención causal, entrenado originalmente por Alibaba Cloud con 8.190 millones de parámetros. El fine-tuning se realizó con Hugging Face TRL (Transformer Reinforcement Learning) y Unsloth, que acelera el entrenamiento mediante kernels optimizados y reducción de memoria.
 
 Los detalles del conjunto de datos de entrenamiento no están disponibles en la información proporcionada. Sin embargo, el nombre del modelo indica que se entrenó sobre un subconjunto de nombres de ciudades alemanas (el último tercio) y se aplicó un proceso de supervisión directa (SFT, Supervised Fine-Tuning). El entrenamiento se repitió con diferentes semillas (seed3) y 3 épocas, lo que sugiere un proceso de ajuste fino estándar sobre datos de texto de tipo conversacional o de instrucción.
 
@@ -69,7 +69,7 @@ No se dispone de comparativas directas con otros modelos de la misma familia. Si
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-german-city-names-last-third-v2-sft-seed3-epoch3
+- Página del modelo en Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-german-city-names-last-third-v2-sft-seed3-epoch3
 - Variante con seed 4: https://huggingface.co/localized-ft/Qwen3-8B-german-city-names-last-third-v2-sft-seed4-epoch3
 - Variante con segundo tercio: https://huggingface.co/localized-ft/Qwen3-8B-german-city-names-second-third-v2-sft-seed5-epoch3
 - Variante en FriendliAI (seed 4): https://friendli.ai/models/localized-ft/Qwen3-8B-german-city-names-last-third-v2-sft-seed4-epoch3

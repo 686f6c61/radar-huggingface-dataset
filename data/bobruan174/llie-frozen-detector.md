@@ -73,7 +73,7 @@ La variante lambda 10 mejora en 0,159 puntos de mAP50 respecto al HVI-CIDNet sin
 
 | Modelo | Tipo | mAP50 en LIS (YOLO11s congelado) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| llie-frozen-detector (lambda 10) | HVI-CIDNet afinado con pérdida de detector | 0,625 | MIT | Pesos en HuggingFace (repo de 0,0 GB) |
+| llie-frozen-detector (lambda 10) | HVI-CIDNet afinado con pérdida de detector | 0,625 | MIT | Pesos en Hugging Face (repo de 0,0 GB) |
 | HVI-CIDNet original (LOLv2_real) | Mejora de imágenes | 0,466 | MIT | Código y pesos oficiales en GitHub |
 | Entrada oscura sin procesar | Línea base | 0,411 | — | — |
 | Entrada con luz normal | Línea base superior | 0,719 | — | — |
@@ -94,7 +94,7 @@ No se dispone de comparación con otros métodos de mejora de baja luminosidad (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BobRuan174/llie-frozen-detector
+- Modelo en Hugging Face: https://huggingface.co/BobRuan174/llie-frozen-detector
 - Código del proyecto: https://github.com/BobRuan/llie-frozen-detector
 - HVI-CIDNet (repositorio oficial): https://github.com/Fediory/HVI-CIDNet
 - Paper HVI-CIDNet (Yan et al., CVPR 2025): no disponible en la información proporcionada

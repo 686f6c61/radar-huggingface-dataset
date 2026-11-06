@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio 0why0/S2RL es un modelo alojado en HuggingFace por el usuario 0why0. La model card asociada únicamente contiene la licencia MIT, sin ningún otro tipo de documentación técnica, descripción de arquitectura, datos de entrenamiento o ejemplos de uso. El repositorio no registra descargas ni likes, y no tiene un pipeline declarado, por lo que se desconoce su categoría (modelo de lenguaje, agente de refuerzo, etc.).
+El repositorio 0why0/S2RL es un modelo alojado en Hugging Face por el usuario 0why0. La model card asociada únicamente contiene la licencia MIT, sin ningún otro tipo de documentación técnica, descripción de arquitectura, datos de entrenamiento o ejemplos de uso. El repositorio no registra descargas ni likes, y no tiene un pipeline declarado, por lo que se desconoce su categoría (modelo de lenguaje, agente de refuerzo, etc.).
 
 El nombre S2RL coincide con el de un artículo científico titulado "S2RL: Do We Really Need to Perceive All States in Deep Multi-Agent Reinforcement Learning?" (arXiv:2206.11054), que propone un marco de aprendizaje por refuerzo multi-agente con atención dispersa. Sin embargo, no existe confirmación de que este repositorio implemente dicho trabajo, ni de que guarde relación alguna con él.
 
@@ -54,11 +54,11 @@ No disponible. No se conocen modelos comparables al no identificarse la categor�
 - No se conocen sesgos, riesgo de alucinación, limitaciones de contexto o idioma porque no hay información sobre el modelo.
 - No se puede evaluar su comportamiento en producción al carecer de documentación técnica.
 - Si el modelo está relacionado con el artículo S2RL, las limitaciones serían las propias de los sistemas de RL multi-agente, pero no está confirmado.
-- La fecha de creación indicada en HuggingFace es 2026-10-04, lo que puede deberse a un error en la plataforma o a una fecha futura; no aporta información técnica.
+- La fecha de creación indicada en Hugging Face es 2026-10-04, lo que puede deberse a un error en la plataforma o a una fecha futura; no aporta información técnica.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/0why0/S2RL
+- Repositorio en Hugging Face: https://huggingface.co/0why0/S2RL
 - Artículo arXiv con el mismo nombre: https://arxiv.org/abs/2206.11054
 - Reseña en Liner: https://liner.com/review/s2rl-do-we-really-need-to-perceive-all-states-in
 - Publicación en ResearchGate: https://www.researchgate.net/publication/361480090_S2RL_Do_We_Really_Need_to_Perceive_All_States_in_Deep_Multi-Agent_Reinforcement_Learning

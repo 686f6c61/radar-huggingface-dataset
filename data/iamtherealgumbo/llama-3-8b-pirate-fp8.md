@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3-8B-Pirate-FP8 es un ajuste fino (fine-tune) del modelo Llama 3 de 8.000 millones de parametros, publicado por el usuario IAmTheRealGumbo en HuggingFace. El nombre y las etiquetas del repositorio indican dos cosas: por un lado, que se ha aplicado un ajuste de estilo o personalidad con tematica pirata ("Pirate"), presumiblemente sobre el modelo base instructivo, y por otro, que los pesos se han convertido a precision FP8 mediante la libreria compressed-tensors. La etiqueta "unsloth" sugiere que el entrenamiento se realizo con ese framework de fine-tuning eficiente.
+Llama-3-8B-Pirate-FP8 es un ajuste fino (fine-tune) del modelo Llama 3 de 8.000 millones de parametros, publicado por el usuario IAmTheRealGumbo en Hugging Face. El nombre y las etiquetas del repositorio indican dos cosas: por un lado, que se ha aplicado un ajuste de estilo o personalidad con tematica pirata ("Pirate"), presumiblemente sobre el modelo base instructivo, y por otro, que los pesos se han convertido a precision FP8 mediante la libreria compressed-tensors. La etiqueta "unsloth" sugiere que el entrenamiento se realizo con ese framework de fine-tuning eficiente.
 
 El modelo se presenta como un modelo conversacional de generacion de texto (pipeline text-generation) compatible con transformers, safetensors y text-generation-inference, ademas de declararse compatible con endpoints. Su relevancia practica es limitada en el momento de redactar esta ficha: el repositorio acumula 0 descargas y 0 "likes", y fue creado y actualizado en la misma marca de tiempo, lo que apunta a una publicacion reciente sin validacion por parte de la comunidad.
 
@@ -90,7 +90,7 @@ Nota: los datos de los modelos comparativos corresponden a informacion publica g
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/IAmTheRealGumbo/Llama-3-8B-Pirate-FP8
+- Repositorio en Hugging Face: https://huggingface.co/IAmTheRealGumbo/Llama-3-8B-Pirate-FP8
 - Paper, blog o repositorio del autor: no disponible.
 - Documentacion de compressed-tensors: no disponible en la informacion proporcionada.
 

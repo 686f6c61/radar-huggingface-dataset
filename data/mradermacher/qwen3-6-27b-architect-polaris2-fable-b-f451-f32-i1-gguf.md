@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace (este): https://huggingface.co/mradermacher/Qwen3.6-27B-Architect-Polaris2-Fable-B-F451-i1-GGUF
+- Repositorio Hugging Face (este): https://huggingface.co/mradermacher/Qwen3.6-27B-Architect-Polaris2-Fable-B-F451-i1-GGUF
 - Repositorio estatico (sin imatrix): https://huggingface.co/mradermacher/Qwen3.6-27B-Architect-Polaris2-Fable-B-F451-GGUF
 - Modelo base (bf16): https://huggingface.co/nightmedia/Qwen3.6-27B-Architect-Polaris2-Fable-B-F451-F32
 - Repositorio NVFP4 con receta DFlash: https://github.com/PassingByPixels/Qwen3.6-27B-Architect-Polaris2-Fable-B-F451-NVFP4_Dflash_DGX_recipe

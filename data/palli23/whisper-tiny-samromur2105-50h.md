@@ -4,7 +4,7 @@
 
 ## Resumen
 
-whisper-tiny-samromur2105-50h es un ajuste fino (fine-tune) del modelo Whisper en su variante tiny, especializado en reconocimiento automático del habla (ASR) en islandés. Lo publica el usuario palli23 en HuggingFace y forma parte del conjunto de checkpoints de escalado "samromur-21.05", empleado en el trabajo "Scaling Smaller ASR Models Against Multilingual ASR Giants" presentado en ICASSP 2026. El objetivo del trabajo es evaluar hasta qué punto modelos ASR pequeños, entrenados con datos específicos de un idioma, pueden competir con modelos multilingües mucho mayores.
+whisper-tiny-samromur2105-50h es un ajuste fino (fine-tune) del modelo Whisper en su variante tiny, especializado en reconocimiento automático del habla (ASR) en islandés. Lo publica el usuario palli23 en Hugging Face y forma parte del conjunto de checkpoints de escalado "samromur-21.05", empleado en el trabajo "Scaling Smaller ASR Models Against Multilingual ASR Giants" presentado en ICASSP 2026. El objetivo del trabajo es evaluar hasta qué punto modelos ASR pequeños, entrenados con datos específicos de un idioma, pueden competir con modelos multilingües mucho mayores.
 
 El modelo hereda la arquitectura encoder-decoder de tipo transformer propia de la familia Whisper (ventanas de audio de 30 segundos, entrada de espectrograma log-mel) y cuenta con 37.760.640 parámetros según los pesos en safetensors, lo que lo sitúa en el rango de los modelos ASR ligeros que caben holgadamente en cualquier GPU de consumo e incluso en CPU. El identificador "50h" del nombre apunta a un ajuste sobre aproximadamente 50 horas de audio, presumiblemente extraídas del corpus Samrómur.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: aproximadamente 150 MB en fp32, ~75 MB en fp16 y menos de 50 MB en cuantizaciones de 8 y 4 bits, sin contar el pequeño overhead de activaciones y caché.
 - GPU recomendadas: cualquier GPU moderna sirve; el modelo cabe sin problema en tarjetas de gama baja como GTX 1650, RTX 3050 o superiores. Para lotes grandes o inferencia concurrente, una RTX 4090, A100 o H100 es sobredimensionada pero válida.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU de consumo actual, y también en CPU, Raspberry Pi o dispositivos móviles gracias a su tamaño reducido.
-- Opciones de despliegue: whisper.cpp, faster-whisper (CTranslate2), HuggingFace Transformers, ONNX Runtime. vLLM no es la opción natural para modelos de audio de esta familia.
+- Opciones de despliegue: whisper.cpp, faster-whisper (CTranslate2), Hugging Face Transformers, ONNX Runtime. vLLM no es la opción natural para modelos de audio de esta familia.
 - Latencia y throughput estimados: no disponibles en la información proporcionada; en la práctica, un modelo tiny suele transcribir audio varias veces más rápido que tiempo real en GPU y cerca de tiempo real en CPU.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ La comparación directa de calidad ASR en islandés frente a otros modelos ajust
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/palli23/whisper-tiny-samromur2105-50h
+- Modelo en Hugging Face: https://huggingface.co/palli23/whisper-tiny-samromur2105-50h
 - Artículo asociado: "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2026), sin enlace disponible en la información proporcionada.
 - Corpus Samrómur: referencia mencionada en el nombre del modelo, sin enlace disponible en la información proporcionada.
 - Repositorio de OpenAI Whisper (modelo base): https://github.com/openai/whisper

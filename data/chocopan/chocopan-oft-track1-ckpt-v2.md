@@ -100,8 +100,8 @@ No se dispone de datos suficientes para comparar parametros de contexto, licenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chocopan/chocopan-oft-track1-ckpt-v2
-- Modelo base en HuggingFace: https://huggingface.co/Sylvest/openvla-7b-oft-finetuned-libero-plus-mixdata (revision `a85655ec941bae6644c9fbdf62db02b9726d7cf5`)
+- Modelo en Hugging Face: https://huggingface.co/chocopan/chocopan-oft-track1-ckpt-v2
+- Modelo base en Hugging Face: https://huggingface.co/Sylvest/openvla-7b-oft-finetuned-libero-plus-mixdata (revision `a85655ec941bae6644c9fbdf62db02b9726d7cf5`)
 - Repositorio OpenVLA-OFT: https://github.com/moojink/openvla-oft (commit `e4287e94541f459edc4feabc4e181f537cd569a8`)
 - Fork de transformers para OpenVLA-OFT: https://github.com/moojink/transformers-openvla-oft (commit `bc339d9ad707454c0c115970db43c260067c61ab`)
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo; el resto de resultados correspondian a dominios ajenos al proyecto y no se incluyen.

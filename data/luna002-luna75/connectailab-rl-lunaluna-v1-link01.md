@@ -78,9 +78,9 @@ La tasa de acierto máxima teórica (consistencia del profesor tras la traducci�
 
 | Modelo | Tipo | Parámetros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-lunaluna-v1-link01 | LoRA de decisión robótica sobre Qwen3.5-0.8B | 0,8 B (base) | Selección de acción para LINK-01 (follow_route) | Apache 2.0 | HuggingFace, 17 descargas |
+| connectailab-rl-lunaluna-v1-link01 | LoRA de decisión robótica sobre Qwen3.5-0.8B | 0,8 B (base) | Selección de acción para LINK-01 (follow_route) | Apache 2.0 | Hugging Face, 17 descargas |
 | Profesor PPO (brain.json, CONNECT TYCOON) | Política RL tabular/red propia | no disponible | Misma tarea, en simulador web | no disponible | GitHub connect-tycoon |
-| Qwen/Qwen3.5-0.8B (base) | LLM causal general | 0,8 B | Uso general; 38,1 % de acierto en esta tarea sin ajustar | Licencia de Qwen (no disponible en la ficha) | HuggingFace |
+| Qwen/Qwen3.5-0.8B (base) | LLM causal general | 0,8 B | Uso general; 38,1 % de acierto en esta tarea sin ajustar | Licencia de Qwen (no disponible en la ficha) | Hugging Face |
 
 No hay otros modelos públicos comparables de la misma familia o tarea en la información disponible.
 
@@ -97,7 +97,7 @@ No hay otros modelos públicos comparables de la misma familia o tarea en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Luna002-Luna75/connectailab-rl-lunaluna-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/Luna002-Luna75/connectailab-rl-lunaluna-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código (CONNECT TYCOON): https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

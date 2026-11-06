@@ -34,7 +34,7 @@ No se dispone de informacion sobre el entrenamiento original en la informacion p
 - Comportamiento decensurado: la ablacion reduce la tasa de rechazos del modelo, lo que cambia su perfil de respuesta frente a la version Instruct original.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada (la familia Qwen2.5-VL lo documenta publicamente, sin verificar en esta conversion).
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponibles (el campo de idiomas no viene informado en la ficha de HuggingFace).
+- Capacidades multilingues: no disponibles (el campo de idiomas no viene informado en la ficha de Hugging Face).
 - Otras capacidades especiales (modo thinking, audio, grounding por bounding boxes, comprension de video): no disponibles en la informacion proporcionada.
 
 ## Casos de uso
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blaj/Qwen2.5-VL-7B-Instruct-abliterated-int8-ov
+- Modelo en Hugging Face: https://huggingface.co/blaj/Qwen2.5-VL-7B-Instruct-abliterated-int8-ov
 - Build hermana en int4: https://huggingface.co/blaj/Qwen2.5-VL-7B-Instruct-abliterated-int4-ov
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Qwen2.5-VL-7B-Instruct-abliterated
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct

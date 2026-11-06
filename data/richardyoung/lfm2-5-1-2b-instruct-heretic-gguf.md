@@ -24,7 +24,7 @@ Es relevante ahora por dos motivos. Primero, porque permite estudiar y reproduci
 | Metodo de modificacion | Abliteration con Heretic (base_model_relation: quantized) |
 | Pipeline declarado | no disponible |
 | Etiquetas del repositorio | gguf, llama.cpp, ollama, uncensored, abliterated, endpoints_compatible, conversational |
-| Fecha de creacion | 28/09/2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 28/09/2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -109,7 +109,7 @@ Solo se pueden comparar las tres variantes que aparecen referenciadas en la info
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/richardyoung/LFM2.5-1.2B-Instruct-heretic-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/richardyoung/LFM2.5-1.2B-Instruct-heretic-GGUF
 - Modelo base abliterated (safetensors): https://huggingface.co/richardyoung/LFM2.5-1.2B-Instruct-heretic
 - Informacion de reproducibilidad del proceso de abliteration: https://huggingface.co/richardyoung/LFM2.5-1.2B-Instruct-heretic/tree/main/reproduce
 - Modelo original de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`De-FavouredOne/Skin-Disease-Diagnosis-Model` es un repositorio publicado en HuggingFace por el usuario De-FavouredOne. Por el nombre del repositorio se deduce que se trata de un modelo orientado al diagnostico de enfermedades cutaneas, presumiblemente a partir de imagenes dermatologicas, aunque la ficha de HuggingFace no incluye ninguna descripcion, pipeline declarado ni documentacion que lo confirme.
+`De-FavouredOne/Skin-Disease-Diagnosis-Model` es un repositorio publicado en Hugging Face por el usuario De-FavouredOne. Por el nombre del repositorio se deduce que se trata de un modelo orientado al diagnostico de enfermedades cutaneas, presumiblemente a partir de imagenes dermatologicas, aunque la ficha de Hugging Face no incluye ninguna descripcion, pipeline declarado ni documentacion que lo confirme.
 
 El repositorio tiene un tamano de 0,3 GB, lo que situa el artefacto en el rango de los modelos compactos (compatible con pesos de decenas de millones de parametros en precision completa, o de centenares de millones en formatos cuantizados). La ficha no declara licencia, idiomas soportados, arquitectura, ni formato de pesos, y no se ha publicado ningun resultado de benchmarks.
 
@@ -88,5 +88,5 @@ No disponible. La informacion proporcionada no permite identificar la familia de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/De-FavouredOne/Skin-Disease-Diagnosis-Model
+- Modelo en Hugging Face: https://huggingface.co/De-FavouredOne/Skin-Disease-Diagnosis-Model
 - Papers, blogs, repositorios o demos asociados: no disponibles. La busqueda web no devolvio ninguna referencia relevante al modelo.

@@ -61,7 +61,7 @@ No aplica. Este repositorio no es un modelo de IA, por lo que no puede comparars
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/ethandavi/paper_025342135_3d_scene_understanding)
+- [Repositorio en Hugging Face](https://huggingface.co/ethandavi/paper_025342135_3d_scene_understanding)
 - [Articulate3D: Holistic Understanding of 3D Scenes as Universal Scene Description (IEEE)](https://ieeexplore.ieee.org/document/11446145)
 - [Unified Semantic Transformer for 3D Scene Understanding (arXiv)](https://arxiv.org/pdf/2512.14364)
 - [Embodied Intelligence for 3D Understanding: A Survey on 3D Scene Question Answering (arXiv)](https://arxiv.org/abs/2502.00342)

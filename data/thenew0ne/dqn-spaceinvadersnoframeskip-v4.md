@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `TheNew0ne/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo (Deep Q-Network, DQN) entrenado para jugar al entorno `SpaceInvadersNoFrameskip-v4` de la suite Atari 2600, integrada en Gymnasium. Lo desarrolla el usuario de HuggingFace TheNew0ne y se ha generado con la librería Stable-Baselines3 junto con el RL Zoo, el framework de entrenamiento y optimización de hiperparámetros del ecosistema SB3. No es un modelo de lenguaje ni un transformer generativo: es una política neuronal convolucional que mapea observaciones visuales (fotogramas apilados del juego) a acciones discretas.
+El modelo `TheNew0ne/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo (Deep Q-Network, DQN) entrenado para jugar al entorno `SpaceInvadersNoFrameskip-v4` de la suite Atari 2600, integrada en Gymnasium. Lo desarrolla el usuario de Hugging Face TheNew0ne y se ha generado con la librería Stable-Baselines3 junto con el RL Zoo, el framework de entrenamiento y optimización de hiperparámetros del ecosistema SB3. No es un modelo de lenguaje ni un transformer generativo: es una política neuronal convolucional que mapea observaciones visuales (fotogramas apilados del juego) a acciones discretas.
 
 El problema que resuelve es acotado: demostrar y distribuir una política entrenada que alcanza una recompensa media de 384,50 +/- 132,16 en Space Invaders, un resultado modesto para los estándares de DQN en Atari (el DQN original de DeepMind reportaba puntuaciones medias notablemente superiores en este juego tras 50 millones de fotogramas). El entrenamiento declarado es de solo 200.000 pasos, lo que explica el rendimiento limitado. Su relevancia es principalmente didáctica: sirve como referencia reproducible para comparar configuraciones, validar pipelines de RL Zoo y estudiar el comportamiento de DQN con `CnnPolicy` en entornos visuales.
 
@@ -69,7 +69,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Algoritmo | Entorno | Mean reward | Pasos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TheNew0ne/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | 384,50 +/- 132,16 | 200.000 | no disponible | HuggingFace |
+| TheNew0ne/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | 384,50 +/- 132,16 | 200.000 | no disponible | Hugging Face |
 | DQN de referencia (DeepMind, 2015) | DQN | Space Invaders | no disponible en esta ficha (superior según literatura) | 50.000.000 | no disponible | Paper |
 | Agentes RL Zoo por defecto | DQN/PPO/A2C | SpaceInvadersNoFrameskip-v4 | no disponible | variable | MIT (RL Zoo) | GitHub |
 
@@ -88,7 +88,7 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheNew0ne/dqn-SpaceInvadersNoFrameskip-v4
+- Hugging Face: https://huggingface.co/TheNew0ne/dqn-SpaceInvadersNoFrameskip-v4
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo: https://github.com/DLR-RM/rl-baselines3-zoo
 - SB3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

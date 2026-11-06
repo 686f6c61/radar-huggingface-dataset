@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Verdugie/Therapy-3.5
+- Modelo en Hugging Face: https://huggingface.co/Verdugie/Therapy-3.5
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Transcripts citados en la model card (rutas relativas dentro del repositorio): `transcripts/anxiety.pdf` (turno 17/35), `transcripts/relational.pdf` (turno 28/40), `transcripts/depression.pdf` (turno 28/36). Pueden localizarse en el árbol de archivos del repo: https://huggingface.co/Verdugie/Therapy-3.5/tree/main
 - Paper, blog o demo adicionales: no disponible. La búsqueda web realizada no devolvió ningún enlace relevante sobre este modelo (los resultados obtenidos eran de contenido para adultos sin relación con el modelo y se han descartado).

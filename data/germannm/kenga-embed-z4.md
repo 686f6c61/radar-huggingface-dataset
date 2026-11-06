@@ -112,10 +112,10 @@ No se han publicado resultados de benchmarks en la informacion disponible para t
 
 | Modelo | Parametros | Contexto | Media MTEB(rus v1.1, tareas) | Media leaderboard | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| kenga-embed-z4 | 44,2 M | 512 | 56,5 | 53,6 | MIT | HuggingFace (0 descargas), codigo de entrenamiento no publico |
+| kenga-embed-z4 | 44,2 M | 512 | 56,5 | 53,6 | MIT | Hugging Face (0 descargas), codigo de entrenamiento no publico |
 | USER2-small-34M | 34 M | no disponible | 58,5 | 56,5 | no disponible | leaderboard de MTEB(rus) |
 | rubert-tiny-turbo-29M | 29 M | no disponible | 53,7 | 52,6 | no disponible | leaderboard de MTEB(rus) |
-| BERTA-128M | 128 M | no disponible | 69,4 | 67,9 | no disponible | HuggingFace (sergeyzh/BERTA) |
+| BERTA-128M | 128 M | no disponible | 69,4 | 67,9 | no disponible | Hugging Face (sergeyzh/BERTA) |
 | Giga-Embeddings-instruct-480M | 480 M | no disponible | 74,2 | 73,1 | no disponible | leaderboard de MTEB(rus) |
 
 Lectura de la comparativa: frente a los encoders rusos de 30-40M, el modelo queda 2,0 puntos por debajo de USER2-small-34M (que ademas es mas pequeno) y 2,8 por encima de rubert-tiny-turbo-29M en media simple de tareas. Frente a BERTA-128M, del que se destila, queda 12,9 puntos por debajo. Frente a Giga-Embeddings-instruct-480M, el autor reconoce explicitamente que no lo supera, con una brecha de 17,7 puntos en media simple. El punto mas debil de la comparativa es retrieval: 44,0 frente a 60,6 de USER2-small-34M y 48,8 de rubert-tiny-turbo-29M, es decir, pierde frente a ambos en la metrica mas relevante para RAG.
@@ -137,11 +137,11 @@ Lectura de la comparativa: frente a los encoders rusos de 30-40M, el modelo qued
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GermannM/kenga-embed-z4
+- Hugging Face: https://huggingface.co/GermannM/kenga-embed-z4
 - Repositorio del proyecto Kenga: https://github.com/GermannM/kenga-lang
 - Documentacion de la receta y contrato Prophet: https://github.com/GermannM/kenga-lang/blob/main/docs/PROPHETS.md
 - Modelo profesor de la destilacion (BERTA-128M): https://huggingface.co/sergeyzh/BERTA
 - Resultados de referencia del leaderboard MTEB: https://github.com/embeddings-benchmark/results
-- Resultados crudos de MTEB del modelo: carpeta mteb_results/ del arbol de entrenamiento (no publicada en el repositorio de HuggingFace)
+- Resultados crudos de MTEB del modelo: carpeta mteb_results/ del arbol de entrenamiento (no publicada en el repositorio de Hugging Face)
 
 Nota: la busqueda web realizada no devolvio ningun enlace relevante sobre el modelo; los unicos resultados obtenidos correspondian a restaurantes y no guardan relacion con kenga-embed-z4.

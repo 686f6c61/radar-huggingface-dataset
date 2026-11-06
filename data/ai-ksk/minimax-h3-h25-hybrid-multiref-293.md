@@ -77,5 +77,5 @@ No disponible. El repositorio no identifica la versión concreta del modelo Mini
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AI-KSK/minimax-h3-h25-hybrid-multiref-293
+- Repositorio en Hugging Face: https://huggingface.co/AI-KSK/minimax-h3-h25-hybrid-multiref-293
 - Publicación en RunningHub: https://www.runninghub.ai/zh-cn/post/2088303974402318338?inviteCode=rh-v1111

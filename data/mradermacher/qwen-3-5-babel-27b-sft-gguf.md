@@ -99,7 +99,7 @@ No se dispone de datos verificables de modelos comparables dentro de la informac
 | Longitud de contexto | No disponible | No disponible | No disponible |
 | Rendimiento en benchmarks | No disponible | No disponible | No disponible |
 | Licencia | Apache 2.0 | No disponible | No disponible |
-| Disponibilidad | GGUF en HuggingFace (11 variantes) | No disponible | No disponible |
+| Disponibilidad | GGUF en Hugging Face (11 variantes) | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 

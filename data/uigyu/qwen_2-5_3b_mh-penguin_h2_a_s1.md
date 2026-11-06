@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Uigyu/qwen_2.5_3b_mh-penguin_h2_a_s1` es un checkpoint subido a HuggingFace por el usuario Uigyu, publicado el 20 de agosto de 2026. La model card es una plantilla automática de Hugging Face sin rellenar: no se especifican autor, arquitectura, licencia, idiomas ni datos de entrenamiento. El nombre del repositorio sugiere que podría tratarse de un fine-tuning sobre la familia Qwen 2.5 de 3 mil millones de parámetros, y la etiqueta `unsloth` indica que el entrenamiento se realizó probablemente con la librería Unsloth, pero no hay confirmación oficial.
+El modelo `Uigyu/qwen_2.5_3b_mh-penguin_h2_a_s1` es un checkpoint subido a Hugging Face por el usuario Uigyu, publicado el 20 de agosto de 2026. La model card es una plantilla automática de Hugging Face sin rellenar: no se especifican autor, arquitectura, licencia, idiomas ni datos de entrenamiento. El nombre del repositorio sugiere que podría tratarse de un fine-tuning sobre la familia Qwen 2.5 de 3 mil millones de parámetros, y la etiqueta `unsloth` indica que el entrenamiento se realizó probablemente con la librería Unsloth, pero no hay confirmación oficial.
 
 El repositorio ocupa solo 0.1 GB, lo que resulta inusualmente pequeño para un modelo de 3B parámetros (que en fp16 ocupa aproximadamente 6 GB). Esto sugiere que podría tratarse de un adaptador LoRA, un checkpoint cuantizado o un modelo parcialmente podado, aunque no hay metadatos que lo confirmen. La única referencia académica incluida es el paper arXiv:1910.09700, que trata sobre la estimación del impacto de carbono del entrenamiento de modelos de ML, no sobre la arquitectura del modelo.
 

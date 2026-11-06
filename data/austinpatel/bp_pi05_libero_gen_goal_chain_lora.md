@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `pi05_libero_gen_goal_chain_lora` (este) | no disponible | no disponible | VLA, LIBERO-Gen Goal Chain | Apache-2.0 (+ Gemma Terms) | HuggingFace, formato Orbax |
-| `physical-intelligence/pi05_base` | no disponible | no disponible | VLA base (pi0.5) | no disponible en la informacion | HuggingFace |
+| `pi05_libero_gen_goal_chain_lora` (este) | no disponible | no disponible | VLA, LIBERO-Gen Goal Chain | Apache-2.0 (+ Gemma Terms) | Hugging Face, formato Orbax |
+| `physical-intelligence/pi05_base` | no disponible | no disponible | VLA base (pi0.5) | no disponible en la informacion | Hugging Face |
 | Otras variantes LoRA de pi0.5 sobre LIBERO | no disponible | no disponible | VLA, tareas LIBERO | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/austinpatel/bp_pi05_libero_gen_goal_chain_lora
+- Hugging Face: https://huggingface.co/austinpatel/bp_pi05_libero_gen_goal_chain_lora
 - Modelo base: https://huggingface.co/physical-intelligence/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/austinpatel/libero_gen_goal_chain_train_openpi
 - Paper: https://huggingface.co/papers/2606.30457

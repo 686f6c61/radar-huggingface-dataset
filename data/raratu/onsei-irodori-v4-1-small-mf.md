@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| raratu/Onsei-Irodori-v4.1-Small-MF | no disponible (encoder de texto de 310 M) | no disponible | ja | other (componentes MIT y Apache-2.0) | ONNX FP32, Core ML FP16 | HuggingFace, 0 descargas y 0 likes en la fecha de los datos |
-| Aratako/Irodori-TTS-v4.1-Small-MF (modelo base) | no disponible | no disponible | ja | segun el modelo original | no disponible | HuggingFace |
+| raratu/Onsei-Irodori-v4.1-Small-MF | no disponible (encoder de texto de 310 M) | no disponible | ja | other (componentes MIT y Apache-2.0) | ONNX FP32, Core ML FP16 | Hugging Face, 0 descargas y 0 likes en la fecha de los datos |
+| Aratako/Irodori-TTS-v4.1-Small-MF (modelo base) | no disponible | no disponible | ja | segun el modelo original | no disponible | Hugging Face |
 | Alternativas de TTS japones on-device | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparado, ni de informacion sobre otros modelos de la misma categoria en la documentacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con alternativas.
@@ -89,8 +89,8 @@ No se dispone de datos de rendimiento comparado, ni de informacion sobre otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raratu/Onsei-Irodori-v4.1-Small-MF
-- Modelo base en HuggingFace: https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small-MF
+- Modelo en Hugging Face: https://huggingface.co/raratu/Onsei-Irodori-v4.1-Small-MF
+- Modelo base en Hugging Face: https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small-MF
 - Repositorio de implementacion original: https://github.com/Aratako/Irodori-TTS
 - Commit de referencia de MeanFlow citado en la model card: `89f9d8fbd4d51ea019867ee1197725ede1df13c5`
 - Revision del modelo de origen fijada por el autor: `ccc78f5d480b6e51b69b2d5042a14c4da04fea6e`

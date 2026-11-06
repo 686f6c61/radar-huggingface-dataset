@@ -30,7 +30,7 @@ La relevancia de esta publicación es principalmente práctica: proporciona doce
 
 No se dispone de informacion sobre la arquitectura interna del modelo. El nombre del repositorio incluye la cadena «MoE», lo que apunta a una arquitectura de mezcla de expertos con enrutado disperso, y tambien «Large-Base», lo que sugiere un modelo de gran tamano y sin ajuste por instrucciones. Ninguna de estas dos inferencias esta respaldada por la model card ni por documentacion adicional del autor, por lo que deben tratarse como hipotesis de trabajo y no como especificaciones confirmadas.
 
-Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, uso de RLHF, DPO u otras tecnicas de alineacion, ni innovaciones tecnicas destacables. El unico dato tecnico verificable es el pipeline de cuantizacion aplicado: los pesos originales en formato HuggingFace (`convert_type: hf`) se convirtieron a GGUF y posteriormente se cuantizaron con la version 2 del cuantizador de llama.cpp, con cuantizacion de tensores de salida activada (`output_tensor_quantised: 1`).
+Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, uso de RLHF, DPO u otras tecnicas de alineacion, ni innovaciones tecnicas destacables. El unico dato tecnico verificable es el pipeline de cuantizacion aplicado: los pesos originales en formato Hugging Face (`convert_type: hf`) se convirtieron a GGUF y posteriormente se cuantizaron con la version 2 del cuantizador de llama.cpp, con cuantizacion de tensores de salida activada (`output_tensor_quantised: 1`).
 
 ## Capacidades
 
@@ -55,7 +55,7 @@ Dado que no se dispone de especificaciones tecnicas del modelo base, los siguien
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye ninguna evaluacion (MMLU, HumanEval, GSM8K, MT-Bench ni similares), y los metadatos de HuggingFace no aportan metricas de rendimiento. Tampoco se dispone de comparaciones con modelos de la misma categoria.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye ninguna evaluacion (MMLU, HumanEval, GSM8K, MT-Bench ni similares), y los metadatos de Hugging Face no aportan metricas de rendimiento. Tampoco se dispone de comparaciones con modelos de la misma categoria.
 
 ## Requisitos de hardware
 
@@ -84,7 +84,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura confirmada n
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Franken-MoE-Large-Base (GGUF) | no disponible | no disponible | no disponible | GGUF en HuggingFace | no disponible |
+| Franken-MoE-Large-Base (GGUF) | no disponible | no disponible | no disponible | GGUF en Hugging Face | no disponible |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -105,7 +105,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura confirmada n
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Franken-MoE-Large-Base-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Franken-MoE-Large-Base-GGUF
 - Modelo base de origen: https://huggingface.co/DrRiceIO7/Franken-MoE-Large-Base
 - Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher
 - Repositorio de llama.cpp (herramienta de cuantizacion y runtime compatible con GGUF): https://github.com/ggerganov/llama.cpp

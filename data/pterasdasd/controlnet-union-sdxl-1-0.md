@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Condiciones soportadas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pterasdasd/controlnet-union-sdxl-1.0 (este repositorio) | 1,26 mil millones | mas de 10 en la version base; 12 + 5 funciones de edicion en ProMax | apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| xinsir/controlnet-union-sdxl-1.0 | no disponible en la informacion proporcionada | equivalente, es el repositorio canonico del autor original | apache-2.0 | HuggingFace, repositorio de referencia |
-| ControlNet individuales para SDXL (por ejemplo controlnet-canny-sdxl-1.0) | no disponible en la informacion proporcionada | una unica condicion por checkpoint | habitualmente apache-2.0 o CreativeML Open RAIL++-M segun el autor | HuggingFace |
-| ControlNet para SD 1.5 (lllyasviel/ControlNet) | aproximadamente 360 millones | una unica condicion por checkpoint | CreativeML Open RAIL-M | HuggingFace |
+| pterasdasd/controlnet-union-sdxl-1.0 (este repositorio) | 1,26 mil millones | mas de 10 en la version base; 12 + 5 funciones de edicion en ProMax | apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| xinsir/controlnet-union-sdxl-1.0 | no disponible en la informacion proporcionada | equivalente, es el repositorio canonico del autor original | apache-2.0 | Hugging Face, repositorio de referencia |
+| ControlNet individuales para SDXL (por ejemplo controlnet-canny-sdxl-1.0) | no disponible en la informacion proporcionada | una unica condicion por checkpoint | habitualmente apache-2.0 o CreativeML Open RAIL++-M segun el autor | Hugging Face |
+| ControlNet para SD 1.5 (lllyasviel/ControlNet) | aproximadamente 360 millones | una unica condicion por checkpoint | CreativeML Open RAIL-M | Hugging Face |
 
 La diferencia funcional clave frente a los ControlNet individuales es la unificación: un solo archivo cubre todas las condiciones y permite combinarlas, mientras que el enfoque tradicional obliga a cargar un checkpoint distinto por cada tipo de control y a gestionar su coexistencia en memoria.
 
@@ -94,7 +94,7 @@ La diferencia funcional clave frente a los ControlNet individuales es la unifica
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pterasdasd/controlnet-union-sdxl-1.0
+- Repositorio en Hugging Face: https://huggingface.co/pterasdasd/controlnet-union-sdxl-1.0
 - Repositorio canónico del autor original: https://huggingface.co/xinsir/controlnet-union-sdxl-1.0
 - Repositorio de código y scripts de inferencia: https://github.com/xinsir6/ControlNetPlus/tree/main
 - No se han encontrado otros enlaces relevantes en la búsqueda web: los resultados devueltos corresponden a un servicio de sillas de ruedas del sistema sanitario británico y a fichas de empresas y direcciones postales de Londres, sin ninguna relación con el modelo.

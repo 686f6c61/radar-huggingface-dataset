@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `nayoungoh/franka-stack-1-2-base-demospeedup` es un checkpoint de pesos en formato safetensors publicado en HuggingFace por el usuario `nayoungoh`, con 2.724.114.368 parámetros (aproximadamente 2,72 mil millones) y un repositorio de 7,6 GB. El identificador y el tag `gr00t_n1_5` apuntan a la familia GR00T N1.5 de NVIDIA, orientada a robótica, y el nombre sugiere un ajuste fino para una tarea de apilado ("stack") sobre un brazo robótico Franka, entrenado con demostraciones aceleradas ("demospeedup").
+El modelo `nayoungoh/franka-stack-1-2-base-demospeedup` es un checkpoint de pesos en formato safetensors publicado en Hugging Face por el usuario `nayoungoh`, con 2.724.114.368 parámetros (aproximadamente 2,72 mil millones) y un repositorio de 7,6 GB. El identificador y el tag `gr00t_n1_5` apuntan a la familia GR00T N1.5 de NVIDIA, orientada a robótica, y el nombre sugiere un ajuste fino para una tarea de apilado ("stack") sobre un brazo robótico Franka, entrenado con demostraciones aceleradas ("demospeedup").
 
-Se trata, por tanto, de un modelo de política robótica (visión-lenguaje-acción) más que de un modelo de lenguaje conversacional: recibiría observaciones visuales y de estado del robot y produciría acciones motoras. La ficha de HuggingFace no incluye pipeline declarado, licencia, idiomas soportados ni model card descriptiva, y el repositorio acumula 12 descargas y 0 "likes" en el momento de la consulta.
+Se trata, por tanto, de un modelo de política robótica (visión-lenguaje-acción) más que de un modelo de lenguaje conversacional: recibiría observaciones visuales y de estado del robot y produciría acciones motoras. La ficha de Hugging Face no incluye pipeline declarado, licencia, idiomas soportados ni model card descriptiva, y el repositorio acumula 12 descargas y 0 "likes" en el momento de la consulta.
 
 Su relevancia es acotada y experimental: es un artefacto de investigación ligado a un setup concreto (brazo Franka, tarea de apilado) y no una base generalista. Cualquier evaluación seria requiere verificar el código de entrenamiento original, que no se referencia en la información disponible.
 
@@ -75,7 +75,7 @@ No se dispone de datos verificables de parametros, contexto, rendimiento ni lice
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `nayoungoh/franka-stack-1-2-base-demospeedup` | 2,72 mil millones | No disponible | No disponible | Publico en HuggingFace (12 descargas) |
+| `nayoungoh/franka-stack-1-2-base-demospeedup` | 2,72 mil millones | No disponible | No disponible | Publico en Hugging Face (12 descargas) |
 | GR00T N1.5 base (NVIDIA), referenciado por el tag `gr00t_n1_5` | No disponible | No disponible | No disponible | No disponible |
 | Otros modelos VLA de proposito general | No disponible | No disponible | No disponible | No disponible |
 
@@ -94,6 +94,6 @@ No se dispone de datos verificables de parametros, contexto, rendimiento ni lice
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nayoungoh/franka-stack-1-2-base-demospeedup
+- Hugging Face: https://huggingface.co/nayoungoh/franka-stack-1-2-base-demospeedup
 - Resultados de la busqueda web: no se encontro ningun enlace relevante. Las paginas devueltas (rottenwifi.com, cloudspress.com, bing.com/version, bing.com/set/search) tratan sobre busquedas relacionadas de Bing y no guardan relacion con el modelo.
 - Paper, blog, repositorio de codigo o demo: no disponibles.

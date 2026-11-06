@@ -82,7 +82,7 @@ No se dispone de informacion comparativa con otros modelos de deraining en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dronefreak/clearview-derain-restormer
+- Hugging Face: https://huggingface.co/dronefreak/clearview-derain-restormer
 - Repositorio ClearView: https://github.com/dronefreak/clearview
 - Paper de Restormer: https://arxiv.org/abs/2206.05514
-- Datasets: SPA-Data, RealRain-1k, Rain13K, DDN-Data (disponibles en HuggingFace como datasets de dronefreak).
+- Datasets: SPA-Data, RealRain-1k, Rain13K, DDN-Data (disponibles en Hugging Face como datasets de dronefreak).

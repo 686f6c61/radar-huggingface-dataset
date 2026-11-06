@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario Donghyun1228, contiene un modelo de la familia **pi05** (etiquetado con `openpi`, `robotics` y `ur10e`) orientado a manipulación robótica: recibe imágenes RGB y estado proprioceptivo y produce acciones de efector final. Según la model card, se trata de una continuación de entrenamiento del VLA original de SNUMPR, con 10.000 updates adicionales retenidos, batches globales de 32 tanto para el modelo de imitación (IL) como para el modelo de dinámica inversa (IDM), learning rate de 1e-5 y sin EMA.
+Este repositorio de Hugging Face, publicado por el usuario Donghyun1228, contiene un modelo de la familia **pi05** (etiquetado con `openpi`, `robotics` y `ur10e`) orientado a manipulación robótica: recibe imágenes RGB y estado proprioceptivo y produce acciones de efector final. Según la model card, se trata de una continuación de entrenamiento del VLA original de SNUMPR, con 10.000 updates adicionales retenidos, batches globales de 32 tanto para el modelo de imitación (IL) como para el modelo de dinámica inversa (IDM), learning rate de 1e-5 y sin EMA.
 
 El dato crítico es que **el repositorio no es utilizable**: el propio autor indica que la subida está incompleta y que no contiene un checkpoint funcional completo. Los commits del checkpoint fueron rechazados por superar la cuota de almacenamiento público de la cuenta, y el checkpoint nativo en `native/9999/params` no se ha publicado. El repositorio pesa 7,8 GB, pero ese tamaño no corresponde a un conjunto de pesos descargable y verificable.
 
@@ -93,5 +93,5 @@ La comparación relevante en este caso no es de rendimiento, sino de disponibili
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-source-il-idm-10000-20261022
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-source-il-idm-10000-20261022
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

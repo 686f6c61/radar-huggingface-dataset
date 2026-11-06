@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nor-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed3407 | 124.770.816 | no disponible | GPT-2 | no disponible | HuggingFace |
-| GPT-2 small (OpenAI) | 124M | 1024 tokens | GPT-2 | MIT | HuggingFace / original |
-| DistilGPT-2 | 82M | 1024 tokens | GPT-2 destilado | Apache 2.0 | HuggingFace |
-| Variantes de la misma serie (nld-latn, ita-latn, nor-latn con otras semillas) | ~125M (presumible) | no disponible | GPT-2 | no disponible | HuggingFace / FriendliAI |
+| nor-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed3407 | 124.770.816 | no disponible | GPT-2 | no disponible | Hugging Face |
+| GPT-2 small (OpenAI) | 124M | 1024 tokens | GPT-2 | MIT | Hugging Face / original |
+| DistilGPT-2 | 82M | 1024 tokens | GPT-2 destilado | Apache 2.0 | Hugging Face |
+| Variantes de la misma serie (nld-latn, ita-latn, nor-latn con otras semillas) | ~125M (presumible) | no disponible | GPT-2 | no disponible | Hugging Face / FriendliAI |
 
 Los modelos comparables de la misma serie comparten autor y diseno experimental, por lo que son la referencia mas directa para evaluar el efecto del idioma y de la semilla. GPT-2 small y DistilGPT-2 se incluyen como referencias de tamano y arquitectura, pero no se dispone de datos de rendimiento del modelo analizado que permitan una comparacion cuantitativa.
 
@@ -88,7 +88,7 @@ Los modelos comparables de la misma serie comparten autor y diseno experimental,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nor-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nor-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/nor-latn-100mb-ppt-mp-struct-100mb_seed3407
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/d4j372vf
 - Repositorio de TRL: https://github.com/huggingface/trl

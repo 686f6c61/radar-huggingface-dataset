@@ -72,7 +72,7 @@ No se dispone de datos comparativos con otros modelos de mundo de video en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ForgeWM/ForgeWM
+- Hugging Face: https://huggingface.co/ForgeWM/ForgeWM
 - Paper: https://arxiv.org/abs/2608.14022
 - Página del proyecto: https://asdfo123.github.io/ForgeWM
 - Código: https://github.com/asdfo123/ForgeWM

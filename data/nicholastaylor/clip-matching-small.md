@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nicholastaylor/clip-matching-small` es un repositorio de HuggingFace publicado por el usuario nicholastaylor que contiene una implementacion propia y compacta de CLIP (Contrastive Language-Image Pretraining) orientada a tareas de *matching*. No se trata de un modelo preentrenado listo para produccion: el propio autor lo describe como un punto de partida experimental destinado a revision de codigo, pruebas de humo (*smoke tests*) y experimentos controlados de pequeno alcance. El checkpoint `model.safetensors` se presenta explicitamente como una inicializacion valida, no como un modelo entrenado ni evaluado.
+`nicholastaylor/clip-matching-small` es un repositorio de Hugging Face publicado por el usuario nicholastaylor que contiene una implementacion propia y compacta de CLIP (Contrastive Language-Image Pretraining) orientada a tareas de *matching*. No se trata de un modelo preentrenado listo para produccion: el propio autor lo describe como un punto de partida experimental destinado a revision de codigo, pruebas de humo (*smoke tests*) y experimentos controlados de pequeno alcance. El checkpoint `model.safetensors` se presenta explicitamente como una inicializacion valida, no como un modelo entrenado ni evaluado.
 
 El dato mas relevante para dimensionar el artefacto es el recuento de parametros reales leido de los safetensors: 24.832 parametros en total. Es un orden de magnitud propio de una maqueta de arquitectura, no de un modelo de vision-lenguaje funcional. El nombre del repo indica la escala "small", mientras que el README describe la configuracion como "xlarge", una contradiccion que conviene tener presente al interpretar cualquier cifra del repositorio.
 
@@ -22,7 +22,7 @@ La relevancia actual del repositorio es limitada y de naturaleza metodologica: s
 | Formato de pesos | safetensors (`model.safetensors`), mas `model.py`, `config.json`, `training_args.json` |
 | Escala declarada por el autor | "xlarge" en el README, en contradiccion con el sufijo "small" del nombre del repositorio |
 | Estado del checkpoint | inicializacion no entrenada, declarada como valida solo para smoke tests |
-| Tamano del repositorio | 0,0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-09-24 / 2026-09-24 |
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento de este repositorio ni de modelos comparab
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nicholastaylor/clip-matching-small | 24.832 (inicializacion no entrenada) | no disponible | no disponible (no se reclama ninguna puntuacion) | MIT | HuggingFace, 0 descargas |
+| nicholastaylor/clip-matching-small | 24.832 (inicializacion no entrenada) | no disponible | no disponible (no se reclama ninguna puntuacion) | MIT | Hugging Face, 0 descargas |
 | CLIP (OpenAI) y variantes tipo OpenCLIP | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El resultado practico de la comparacion es que este repositorio no es funcionalmente equiparable a un modelo CLIP entrenado: es un esqueleto de codigo con un checkpoint de inicializacion.
@@ -94,8 +94,8 @@ El resultado practico de la comparacion es que este repositorio no es funcionalm
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nicholastaylor/clip-matching-small
-- Repositorio de codigo: no disponible mas alla del propio repositorio de HuggingFace (`model.py`, `config.json`, `training_args.json`)
+- Hugging Face: https://huggingface.co/nicholastaylor/clip-matching-small
+- Repositorio de codigo: no disponible mas alla del propio repositorio de Hugging Face (`model.py`, `config.json`, `training_args.json`)
 - Paper asociado: no disponible
 - Blog o articulo tecnico del autor: no disponible
 - Demo o espacio interactivo: no disponible

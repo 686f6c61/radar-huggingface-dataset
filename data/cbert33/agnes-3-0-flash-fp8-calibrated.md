@@ -75,9 +75,9 @@ No existe una evaluacion formal antes/despues de la conversion a FP8; el propio 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cbert33/Agnes-3.0-Flash-FP8-Calibrated (este) | 33,09 B | 262.144 | FP8 W8A8 estatica | Apache 2.0 | HuggingFace, 0 descargas y 1 like |
-| Agnes-AI/Agnes-3.0-Flash (Preview, upstream) | 33 B | 262.144 | bf16 | Apache 2.0 | HuggingFace, checkpoint oficial |
-| ProCreations/Agnes-3.0-Flash-FP8 | no disponible | no disponible | FP8 | no disponible | HuggingFace |
+| cbert33/Agnes-3.0-Flash-FP8-Calibrated (este) | 33,09 B | 262.144 | FP8 W8A8 estatica | Apache 2.0 | Hugging Face, 0 descargas y 1 like |
+| Agnes-AI/Agnes-3.0-Flash (Preview, upstream) | 33 B | 262.144 | bf16 | Apache 2.0 | Hugging Face, checkpoint oficial |
+| ProCreations/Agnes-3.0-Flash-FP8 | no disponible | no disponible | FP8 | no disponible | Hugging Face |
 | Agnes 3.0 Flash produccion/API | no disponible | 1.000.000 | no aplica (servicio) | no disponible | API, no pesos abiertos |
 
 La diferencia principal frente al upstream es el formato de pesos: la version de cbert33 ocupa menos memoria y esta lista para motores que entienden `compressed-tensors`, mientras que el checkpoint oficial conserva bf16 y no necesita calibracion. Frente a ProCreations/Agnes-3.0-Flash-FP8, la informacion publica disponible no permite comparar receta de cuantizacion ni calidad. El modelo de produccion de Agnes AI usa un checkpoint distinto con contexto de 1M tokens, y sus cifras de benchmark no deben atribuirse a estos pesos.

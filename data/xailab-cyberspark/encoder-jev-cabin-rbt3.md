@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Encoder-JEV Cabin Decisions es un modelo de clasificación de texto en chino desarrollado por OpenSparX (上海塞伯火种人工智能有限公司) y publicado en HuggingFace bajo el identificador XAILab-CyberSpark/encoder-jev-cabin-rbt3. Se trata de un encoder transformer inicializado parcialmente a partir de hfl/rbt3 (una variante china de RoBERTa de tres capas) al que se le han añadido una representación de estado compartida, seis ramas de decisión aisladas y una cabeza de opciones personalizada. El modelo resuelve un problema muy concreto: dada una frase del usuario y un vector de estado de cabina (velocidad, temperatura, estado de carga, autonomía prevista, distancia al destino y ocupación de asientos), produce una decisión de enrutado de seis vías y cuatro puntuaciones softmax de sí/no para servicios individuales.
+Encoder-JEV Cabin Decisions es un modelo de clasificación de texto en chino desarrollado por OpenSparX (上海塞伯火种人工智能有限公司) y publicado en Hugging Face bajo el identificador XAILab-CyberSpark/encoder-jev-cabin-rbt3. Se trata de un encoder transformer inicializado parcialmente a partir de hfl/rbt3 (una variante china de RoBERTa de tres capas) al que se le han añadido una representación de estado compartida, seis ramas de decisión aisladas y una cabeza de opciones personalizada. El modelo resuelve un problema muy concreto: dada una frase del usuario y un vector de estado de cabina (velocidad, temperatura, estado de carga, autonomía prevista, distancia al destino y ocupación de asientos), produce una decisión de enrutado de seis vías y cuatro puntuaciones softmax de sí/no para servicios individuales.
 
 El modelo ocupa 47.117.799 parámetros y el repositorio pesa 0,2 GB. No es un modelo generativo ni autorregresivo: es un clasificador de intención orientado a sistemas de diálogo embarcados en vehículo. Su relevancia actual es acotada y de carácter investigador: se publica como referencia reproducible en FP32 para PyTorch/CUDA y CPU, con 0 descargas y 0 likes en el momento de redactar esta ficha.
 
-Conviene señalar dos advertencias de partida. Primero, el autor de HuggingFace (XAILab-CyberSpark) no coincide con el desarrollador indicado en la model card (OpenSparX). Segundo, tanto el entrenamiento como la validación son sintéticos, el modelo no ejecuta ningún control real del vehículo y las puntuaciones de salida están sin calibrar.
+Conviene señalar dos advertencias de partida. Primero, el autor de Hugging Face (XAILab-CyberSpark) no coincide con el desarrollador indicado en la model card (OpenSparX). Segundo, tanto el entrenamiento como la validación son sintéticos, el modelo no ejecuta ningún control real del vehículo y las puntuaciones de salida están sin calibrar.
 
 ## Especificaciones técnicas
 
@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| encoder-jev-cabin-rbt3 | 47.117.799 | no disponible | Apache-2.0 | HuggingFace (0 descargas) | Finetune de hfl/rbt3 con ramas de decisión de cabina |
-| hfl/rbt3 | no disponible | no disponible | Apache-2.0 | HuggingFace | Modelo base; el autor lo cita como inicialización previa |
+| encoder-jev-cabin-rbt3 | 47.117.799 | no disponible | Apache-2.0 | Hugging Face (0 descargas) | Finetune de hfl/rbt3 con ramas de decisión de cabina |
+| hfl/rbt3 | no disponible | no disponible | Apache-2.0 | Hugging Face | Modelo base; el autor lo cita como inicialización previa |
 | Otros encoders chinos de clasificación de intención (bert-base-chinese, RoBERTa-wwm-ext-chinese y similares) | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de rendimiento comparables en la información proporcionada |
 
 No se dispone de benchmarks comunes entre este modelo y alternativas de la misma categoría, por lo que no es posible establecer una comparación cuantitativa fiable.
@@ -92,11 +92,11 @@ No se dispone de benchmarks comunes entre este modelo y alternativas de la misma
 - No se incluyen archivos QNN, catálogos de API del vehículo, secretos de servicio ni datos de usuario.
 - El repositorio no contiene el corpus sintético de entrenamiento, lo que dificulta reproducir el proceso de etiquetado.
 - El modelo solo maneja chino y está orientado a un dominio muy estrecho (intención de cabina); no debe usarse fuera de ese ámbito sin reentrenamiento.
-- Existe una discrepancia entre el autor de HuggingFace (XAILab-CyberSpark) y el desarrollador declarado en la model card (OpenSparX), que conviene aclarar antes de cualquier uso.
+- Existe una discrepancia entre el autor de Hugging Face (XAILab-CyberSpark) y el desarrollador declarado en la model card (OpenSparX), que conviene aclarar antes de cualquier uso.
 - Las fechas de creación y actualización indicadas (2026) y la ausencia total de descargas y likes hacen recomendable tratar esta publicación como un artefacto de investigación no validado por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XAILab-CyberSpark/encoder-jev-cabin-rbt3
+- Modelo en Hugging Face: https://huggingface.co/XAILab-CyberSpark/encoder-jev-cabin-rbt3
 - Modelo base hfl/rbt3: https://huggingface.co/hfl/rbt3
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

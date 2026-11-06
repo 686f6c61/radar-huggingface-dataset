@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Galena Blend 14 Illustrious SDXL es un modelo de generación de imágenes a partir de texto (text-to-image) publicado en HuggingFace por el usuario Ray665 bajo el identificador `Ray665/galena-blend-14illustrious-sdxl`. Se trata de un modelo de difusión latente de la familia Stable Diffusion XL, afinado a partir de `OnomaAIResearch/Illustrious-xl-early-release-v0`, y orientado a la generación de ilustración de estilo anime, cartoon y cómic. El autor de la model card original es alexds9, que publicó el modelo en Civitai, y el repositorio de HuggingFace parece una redistribución de ese mismo modelo en formato diffusers.
+Galena Blend 14 Illustrious SDXL es un modelo de generación de imágenes a partir de texto (text-to-image) publicado en Hugging Face por el usuario Ray665 bajo el identificador `Ray665/galena-blend-14illustrious-sdxl`. Se trata de un modelo de difusión latente de la familia Stable Diffusion XL, afinado a partir de `OnomaAIResearch/Illustrious-xl-early-release-v0`, y orientado a la generación de ilustración de estilo anime, cartoon y cómic. El autor de la model card original es alexds9, que publicó el modelo en Civitai, y el repositorio de Hugging Face parece una redistribución de ese mismo modelo en formato diffusers.
 
 El modelo resuelve un caso de uso muy concreto: obtener imágenes de estética anime/cómic con licencia y formato compatibles con el ecosistema `diffusers`, de modo que pueda cargarse directamente con `StableDiffusionXLPipeline` e integrarse en flujos de trabajo existentes de SDXL. El checkpoint safetensors analizado contiene 2.567.463.684 parámetros, una cifra que coincide con el tamaño del U-Net de SDXL, lo que sugiere que corresponde únicamente al U-Net y no a los codificadores de texto (extremo no confirmado por el autor). El repositorio ocupa 6,9 GB.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto de prompt | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ray665/galena-blend-14illustrious-sdxl | 2.567.463.684 (según safetensors, probablemente U-Net) | 77 tokens por codificador (arquitectura SDXL, no confirmado) | Sin benchmarks publicados | faipl-1.0-sd | HuggingFace, 0 descargas |
-| OnomaAIResearch/Illustrious-xl-early-release-v0 (modelo base) | No disponible | Arquitectura SDXL | No disponible | No disponible en la información proporcionada | HuggingFace |
-| Stability AI Stable Diffusion XL 1.0 (modelo generalista de referencia) | No disponible en la información proporcionada | Arquitectura SDXL | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace |
+| Ray665/galena-blend-14illustrious-sdxl | 2.567.463.684 (según safetensors, probablemente U-Net) | 77 tokens por codificador (arquitectura SDXL, no confirmado) | Sin benchmarks publicados | faipl-1.0-sd | Hugging Face, 0 descargas |
+| OnomaAIResearch/Illustrious-xl-early-release-v0 (modelo base) | No disponible | Arquitectura SDXL | No disponible | No disponible en la información proporcionada | Hugging Face |
+| Stability AI Stable Diffusion XL 1.0 (modelo generalista de referencia) | No disponible en la información proporcionada | Arquitectura SDXL | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento ni de otros merges de anime contemporáneos en la información proporcionada, por lo que la comparativa se limita a los aspectos estructurales y de disponibilidad.
 
@@ -90,7 +90,7 @@ No se dispone de datos comparativos de rendimiento ni de otros merges de anime c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ray665/galena-blend-14illustrious-sdxl
+- Repositorio en Hugging Face: https://huggingface.co/Ray665/galena-blend-14illustrious-sdxl
 - Modelo original en Civitai: https://civitai.com/models/16300/galena-blend?modelVersionId=1665875
 - Perfil del autor original en Civitai: https://civitai.com/user/alexds9
 - Modelo base: https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0

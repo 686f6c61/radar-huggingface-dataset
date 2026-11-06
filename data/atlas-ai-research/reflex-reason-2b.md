@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reflex Reason 2B es un adaptador LoRA de tipo "thinking model" publicado por Atlas AI (cuenta de HuggingFace `Atlas-AI-research`) sobre el modelo base `Qwen/Qwen3-VL-2B-Instruct`. Forma parte de Reflex, un agente de navegador local: el modelo observa una captura de pantalla de la pagina junto con su arbol de accesibilidad, razona paso a paso dentro de etiquetas `<think>` y emite exactamente una accion en un bloque de triple comilla invertida (por ejemplo `click [815]` o `type [272] [usb hub]`).
+Reflex Reason 2B es un adaptador LoRA de tipo "thinking model" publicado por Atlas AI (cuenta de Hugging Face `Atlas-AI-research`) sobre el modelo base `Qwen/Qwen3-VL-2B-Instruct`. Forma parte de Reflex, un agente de navegador local: el modelo observa una captura de pantalla de la pagina junto con su arbol de accesibilidad, razona paso a paso dentro de etiquetas `<think>` y emite exactamente una accion en un bloque de triple comilla invertida (por ejemplo `click [815]` o `type [272] [usb hub]`).
 
 El diseno es de enrutado en dos niveles: un modelo rapido companero, Reflex Instinct 0.6B, resuelve en unos 0,2 s los pasos en los que tiene confianza calibrada, y cuando esa confianza cae por debajo de un umbral de 0,2 el paso se deriva a Reflex Reason, que tarda unos segundos pero ve la pagina. Segun el autor, este enrutado alcanza un 52,4 % de acierto de paso frente al 26,8 % de Instinct en solitario, llamando a Reason en el 59 % de los pasos.
 
@@ -81,8 +81,8 @@ Advertencias del propio autor sobre estas cifras: la evaluacion sobre Multimodal
 
 | Modelo | Parametros | Entrada | Acierto de paso | Latencia p50 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Reflex Reason 2B | 2.000 M (base) + LoRA | Captura + arbol de accesibilidad, o solo arbol | 29,0 % - 76 % segun conjunto | 3,6 - 6,9 s | openrail | Adaptador en HuggingFace |
-| Reflex Instinct 0.6B | 600 M | no disponible en la informacion proporcionada | 26,8 % (en solitario) | ~0,2 s | no disponible | Modelo companero en HuggingFace |
+| Reflex Reason 2B | 2.000 M (base) + LoRA | Captura + arbol de accesibilidad, o solo arbol | 29,0 % - 76 % segun conjunto | 3,6 - 6,9 s | openrail | Adaptador en Hugging Face |
+| Reflex Instinct 0.6B | 600 M | no disponible en la informacion proporcionada | 26,8 % (en solitario) | ~0,2 s | no disponible | Modelo companero en Hugging Face |
 | Otros modelos de computer-use / web-agent | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparables de otros modelos de agente web en la informacion proporcionada, por lo que la unica comparacion fiable es la del propio sistema Reflex.
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks comparables de otros modelos de agente web 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atlas-AI-research/reflex-reason-2b
+- Modelo en Hugging Face: https://huggingface.co/Atlas-AI-research/reflex-reason-2b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Modelo companero Reflex Instinct 0.6B: https://huggingface.co/Atlas-AI-research/reflex-instinct-0.6b
 - Dataset Multimodal-Mind2Web: https://huggingface.co/datasets/osunlp/Multimodal-Mind2Web

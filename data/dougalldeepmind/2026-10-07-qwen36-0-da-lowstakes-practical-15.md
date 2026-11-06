@@ -17,7 +17,7 @@ Es relevante ahora porque documenta de forma trazable un experimento reproducibl
 | Longitud de contexto | no disponible (el entrenamiento se realizo con `max_seq_len` de 8192 tokens) |
 | Tipos de cuantizacion | no disponible (solo se publican pesos del adaptador en safetensors; sin GGUF ni versiones cuantizadas) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (no se especifica ni en la model card ni en los metadatos de HuggingFace) |
+| Licencia | no disponible (no se especifica ni en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | safetensors (adaptador LoRA PEFT), tokenizer, `train_config.yaml` y `training_meta.json` |
 
 Otros parametros de entrenamiento documentados:
@@ -89,7 +89,7 @@ No se identifican en la informacion proporcionada modelos comparables de la mism
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: no se indica licencia en la model card ni en los metadatos de HuggingFace, lo que impide determinar si el uso comercial esta permitido. Ademas, los terminos del modelo base Qwen3.6-27B se aplicarian de forma adicional y no se detallan aqui.
+- Licencia no especificada: no se indica licencia en la model card ni en los metadatos de Hugging Face, lo que impide determinar si el uso comercial esta permitido. Ademas, los terminos del modelo base Qwen3.6-27B se aplicarian de forma adicional y no se detallan aqui.
 - Sin evaluacion publicada: no hay benchmarks ni evaluaciones cualitativas, por lo que el rendimiento real del adaptador es desconocido.
 - Artefacto de investigacion: el repositorio tiene 0 descargas y 0 likes, y su proposito declarado es reproducir un experimento de destilacion de principios, no ofrecer un modelo de produccion.
 - Dependencia estricta del modelo base: el adaptador solo funciona sobre la revision exacta `6a9e13bd6fc8f0983b9b99948120bc37f49c13e9` de `Qwen/Qwen3.6-27B`; otras revisiones pueden degradar o romper el comportamiento.
@@ -103,7 +103,7 @@ No se identifican en la informacion proporcionada modelos comparables de la mism
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/dougalldeepmind/2026-10-07-qwen36-0-da-lowstakes-practical-15
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/dougalldeepmind/2026-10-07-qwen36-0-da-lowstakes-practical-15
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B (revision `6a9e13bd6fc8f0983b9b99948120bc37f49c13e9`)
 - Dataset de la mezcla: https://huggingface.co/datasets/dougalldeepmind/2026-10-07-da-lowstakes-practical-15-mix (revision `c4ddab4403b3e01edd02f41528b04c2a14534916`)
 - Repositorio fuente del pipeline: https://github.com/Matthew-Bozoukov/teaching_claude_why_replication (commit `0399d96a296789b66169e8f115e6f637e4a8fe7a`)

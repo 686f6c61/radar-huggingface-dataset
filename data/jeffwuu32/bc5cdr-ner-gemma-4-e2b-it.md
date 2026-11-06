@@ -89,8 +89,8 @@ No se dispone de información sobre modelos comparables en el corpus BC5CDR con 
 
 ## Enlaces
 
-- [HuggingFace - jeffwuu32/bc5cdr-ner-gemma-4-E2B-it](https://huggingface.co/jeffwuu32/bc5cdr-ner-gemma-4-E2B-it)
-- [HuggingFace - google/gemma-4-E2B-it](https://huggingface.co/google/gemma-4-E2B-it)
+- [Hugging Face - jeffwuu32/bc5cdr-ner-gemma-4-E2B-it](https://huggingface.co/jeffwuu32/bc5cdr-ner-gemma-4-E2B-it)
+- [Hugging Face - google/gemma-4-E2B-it](https://huggingface.co/google/gemma-4-E2B-it)
 - [DeepMind - Gemma 4](https://deepmind.google/models/gemma/gemma-4/)
-- [HuggingFace - kikiwiki196/bc5cdr-ner-gemma-4-E2B-it](https://huggingface.co/kiwiki196/bc5cdr-ner-gemma-4-E2B-it)
+- [Hugging Face - kikiwiki196/bc5cdr-ner-gemma-4-E2B-it](https://huggingface.co/kiwiki196/bc5cdr-ner-gemma-4-E2B-it)
 - [FriendliAI - API de inferencia para bc5cdr-ner-gemma-4-E2B-it](https://friendli.ai/models/kiwiki196/bc5cdr-ner-gemma-4-E2B-it)

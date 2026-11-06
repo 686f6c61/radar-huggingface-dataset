@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YOLO11n Granular Waste Material Classifier es un modelo de deteccion de objetos basado en la arquitectura YOLO11 nano de Ultralytics, desarrollado por el usuario Ank0805 y publicado en HuggingFace bajo licencia MIT. Su proposito es la clasificacion y localizacion espacial de residuos solidos urbanos en 42 categorias materiales discretas, distinguiendo entre polimeros, fibras celulosicas, metales ferrosos y no ferrosos, vidrio mineral y envases compuestos.
+YOLO11n Granular Waste Material Classifier es un modelo de deteccion de objetos basado en la arquitectura YOLO11 nano de Ultralytics, desarrollado por el usuario Ank0805 y publicado en Hugging Face bajo licencia MIT. Su proposito es la clasificacion y localizacion espacial de residuos solidos urbanos en 42 categorias materiales discretas, distinguiendo entre polimeros, fibras celulosicas, metales ferrosos y no ferrosos, vidrio mineral y envases compuestos.
 
 El modelo opera a una resolucion nativa de 640x640 pixeles con 2,59 millones de parametros y 6,5 GFLOPs, lo que lo situa en el segmento de modelos ultraligeros disenados para inferencia en dispositivos edge y sistemas roboticos de clasificacion. La granularidad taxonomica de 42 clases va mas alla de las categorias genericas habituales (plastico, papel, vidrio, metal) y desglosa materiales especificos como PET, HDPE, LDPE, LLDPE, polipropileno, aluminio, hojalata, ceramica o tetra pack.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Clases | Contexto/Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLO11n Waste Classifier (este modelo) | 2,59 M | 42 | 640x640 | MIT | HuggingFace |
+| YOLO11n Waste Classifier (este modelo) | 2,59 M | 42 | 640x640 | MIT | Hugging Face |
 | YOLOv8n (COCO) | 3,2 M | 80 (genericas) | 640x640 | AGPL-3.0 | Ultralytics |
 | YOLO11n (COCO) | 2,6 M | 80 (genericas) | 640x640 | AGPL-3.0 | Ultralytics |
 | Modelos de clasificacion de residuos genericos | no disponible | 4-6 (plastico, papel, vidrio, metal) | variable | variable | variable |
@@ -86,7 +86,7 @@ La comparativa con modelos especificos de clasificacion de residuos no esta disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ank0805/waste-classification
+- Modelo en Hugging Face: https://huggingface.co/Ank0805/waste-classification
 - Ultralytics (framework): https://github.com/ultralytics/ultralytics
 - Documentacion de Ultralytics YOLO11: https://docs.ultralytics.com/models/yolo11/
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios adicionales ni demos.

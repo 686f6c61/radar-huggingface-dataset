@@ -57,5 +57,5 @@ No disponible. Este repositorio no representa un modelo comparable con alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/justtaeyoungoh/paper_013703820_multimodal_reasoning
+- Repositorio en Hugging Face: https://huggingface.co/justtaeyoungoh/paper_013703820_multimodal_reasoning
 - No se han encontrado enlaces adicionales específicos del repositorio. Las búsquedas web devuelven recursos generales sobre razonamiento multimodal (por ejemplo, https://github.com/HITsz-TMG/Awesome-Large-Multimodal-Reasoning-Models o https://arxiv.org/abs/2608.06013), pero no están asociados directamente con este repositorio.

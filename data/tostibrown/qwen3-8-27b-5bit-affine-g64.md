@@ -87,7 +87,7 @@ La comparativa se limita a aspectos de formato y despliegue, ya que no se dispon
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Tostibrown/Qwen3.8-27B-5bit-affine-g64
+- Repositorio Hugging Face: https://huggingface.co/Tostibrown/Qwen3.8-27B-5bit-affine-g64
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Proyecto Mei (servidor Swift/MLX): https://github.com/tijs/mei
 - Lineup de modelos de Mei: https://github.com/tijs/mei/blob/main/configs/model-lineup.json

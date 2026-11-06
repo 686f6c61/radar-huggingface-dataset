@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| surodipoikromo/IndoBERTindak | 124,4 M | 256 (truncamiento) | Apache 2.0 | HuggingFace |
-| indobenchmark/indobert-base-p1 | 124,4 M | 512 (IndoBERT base) | No disponible | HuggingFace |
-| bert-base-multilingual-cased | 178 M | 512 | No disponible | HuggingFace |
+| surodipoikromo/IndoBERTindak | 124,4 M | 256 (truncamiento) | Apache 2.0 | Hugging Face |
+| indobenchmark/indobert-base-p1 | 124,4 M | 512 (IndoBERT base) | No disponible | Hugging Face |
+| bert-base-multilingual-cased | 178 M | 512 | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (MMLU, HumanEval, etc.) en la información proporcionada. El modelo IndoBERTindak se diferencia por su fine-tuning específico en clasificación multilabel de señales comportamentales en indonesio, mientras que los otros dos son modelos base genéricos.
 
@@ -78,6 +78,6 @@ No se dispone de datos de rendimiento comparativo (MMLU, HumanEval, etc.) en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/surodipoikromo/IndoBERTindak
+- Hugging Face: https://huggingface.co/surodipoikromo/IndoBERTindak
 - Modelo base: https://huggingface.co/indobenchmark/indobert-base-p1
 - No se encontraron papers, blogs ni demos adicionales en la búsqueda web.

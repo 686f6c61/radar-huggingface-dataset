@@ -79,7 +79,7 @@ El guion (–) indica que no habia dataset disponible o que el entrenamiento o l
 
 | Modelo | Tipo | Tareas | Manos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dexverse-dp-image | Diffusion Policy (DDPM, UNet) | 8 tareas | 6 morfologias | other | HuggingFace, LeRobot |
+| dexverse-dp-image | Diffusion Policy (DDPM, UNet) | 8 tareas | 6 morfologias | other | Hugging Face, LeRobot |
 | Diffusion Policy (original, Chi et al.) | Diffusion Policy | multiple | no especifica | codigo abierto | paper y repositorio |
 | ACT (Action Chunking Transformer) | Transformer de imitacion | multiple | no especifica | codigo abierto | repositorio |
 | VQ-BeT | Transformer con cuantizacion vectorial | multiple | no especifica | codigo abierto | repositorio |
@@ -99,7 +99,7 @@ La comparacion directa con estas alternativas no puede hacerse con numeros porqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dexverse-CSI/dexverse-dp-image
+- Modelo en Hugging Face: https://huggingface.co/Dexverse-CSI/dexverse-dp-image
 - Dataset de demostraciones: https://huggingface.co/datasets/Dexverse-CSI/dv-demos-v0
 - Libreria LeRobot: https://github.com/huggingface/lerobot
 - Diffusion Policy (paper original de Chi et al.): https://arxiv.org/abs/2303.04137

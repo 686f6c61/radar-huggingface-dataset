@@ -102,7 +102,7 @@ El principal punto diferencial de este adaptador es que practicamente no existen
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/tuva/ru-tyv-madlad400-lora
+- Adaptador en Hugging Face: https://huggingface.co/tuva/ru-tyv-madlad400-lora
 - Modelo base: https://huggingface.co/google/madlad400-3b-mt
 - Contexto geografico y linguistico de Tuva (Wikipedia): https://en.wikipedia.org/wiki/Tuva
 - Paper de MADLAD-400: no disponible en la informacion proporcionada.

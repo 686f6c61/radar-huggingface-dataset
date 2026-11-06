@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WAN2.2_LoraSet_NSFW es una colección de adaptadores LoRA publicada por el usuario 99Poppyfarmer en HuggingFace, construida sobre el modelo base Wan-AI/Wan2.2-I2V-A14B, un modelo de generación de vídeo imagen-a-vídeo (image-to-video) de 14.000 millones de parámetros desarrollado por el equipo Wan de Alibaba. El repositorio no contiene un modelo autónomo, sino un conjunto de pesos LoRA (Low-Rank Adaptation) que modifican el comportamiento del modelo base para generar contenido de vídeo explícitamente sexual. El tamaño del repositorio es de 15,0 GB, lo que sugiere que los pesos están almacenados en precisión completa o en un formato de alto rango.
+WAN2.2_LoraSet_NSFW es una colección de adaptadores LoRA publicada por el usuario 99Poppyfarmer en Hugging Face, construida sobre el modelo base Wan-AI/Wan2.2-I2V-A14B, un modelo de generación de vídeo imagen-a-vídeo (image-to-video) de 14.000 millones de parámetros desarrollado por el equipo Wan de Alibaba. El repositorio no contiene un modelo autónomo, sino un conjunto de pesos LoRA (Low-Rank Adaptation) que modifican el comportamiento del modelo base para generar contenido de vídeo explícitamente sexual. El tamaño del repositorio es de 15,0 GB, lo que sugiere que los pesos están almacenados en precisión completa o en un formato de alto rango.
 
 La relevancia de esta ficha es limitada desde el punto de vista técnico-científico: se trata de un artefacto de fine-tuning comunitario sin model card técnica, sin documentación de entrenamiento, sin benchmarks y con licencia declarada como "unknown". No obstante, resulta representativo de una práctica extendida en el ecosistema open source: la publicación de LoRAs especializados sobre modelos de difusión de vídeo de gran tamaño, con frecuencia sin trazabilidad de datos ni evaluación de sesgos. El modelo base Wan2.2-I2V-A14B es un transformer de difusión para vídeo con capacidades de generación a partir de una imagen de referencia, y esta colección de LoRAs se limita a especializarlo en contenido para adultos.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WAN2.2_LoraSet_NSFW | no disponible (base 14B) | no disponible | LoRA sobre I2V | unknown | HuggingFace |
-| Wan-AI/Wan2.2-I2V-A14B | 14B | no disponible | I2V | consultar model card oficial | HuggingFace |
-| Otros LoRAs comunitarios sobre Wan2.2 | variable | no aplica | LoRA | variable | Civitai / HuggingFace |
+| WAN2.2_LoraSet_NSFW | no disponible (base 14B) | no disponible | LoRA sobre I2V | unknown | Hugging Face |
+| Wan-AI/Wan2.2-I2V-A14B | 14B | no disponible | I2V | consultar model card oficial | Hugging Face |
+| Otros LoRAs comunitarios sobre Wan2.2 | variable | no aplica | LoRA | variable | Civitai / Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos artefactos en la información proporcionada.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos artefactos en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/99Poppyfarmer/WAN2.2_LoraSet_NSFW
+- Hugging Face: https://huggingface.co/99Poppyfarmer/WAN2.2_LoraSet_NSFW
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
 - Civitai Archive (referencia citada en la model card): https://civitaiarchive.com/search?is_nsfw=true&is_deleted=true&q=blink
 - Civitai (varios modelos citados): https://civitai.com/models/2316517/wan-multiscene-photoshoot-softcore-edition

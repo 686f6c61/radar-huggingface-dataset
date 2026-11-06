@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA para el modelo de generacion de video Wan Video 2.2 T2V-A14B, desarrollado originalmente por az420 y subido a HuggingFace por el usuario wank3r. Se trata de un LoRA de 0,3 GB que modifica el comportamiento del modelo base para generar secuencias de video con una tematica concreta, en este caso una escena especifica de "cowgirl side riding" (posicion lateral en una escena de tematica adulta). El modelo se distribuye bajo licencia AFL-3.0 y su repositorio fue creado en agosto de 2026.
+Este repositorio contiene un adaptador LoRA para el modelo de generacion de video Wan Video 2.2 T2V-A14B, desarrollado originalmente por az420 y subido a Hugging Face por el usuario wank3r. Se trata de un LoRA de 0,3 GB que modifica el comportamiento del modelo base para generar secuencias de video con una tematica concreta, en este caso una escena especifica de "cowgirl side riding" (posicion lateral en una escena de tematica adulta). El modelo se distribuye bajo licencia AFL-3.0 y su repositorio fue creado en agosto de 2026.
 
 La relevancia de esta publicacion radica en que Wan Video 2.2 es una familia de modelos de generacion de video de codigo abierto con arquitectura de 14.000 millones de parametros (A14B), y los LoRA permiten adaptar el comportamiento del modelo sin reentrenar la arquitectura completa. Este adaptador es un ejemplo de la creciente ecosistema de LoRAs de terceros que amplian las capacidades tematicas del modelo base.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: el LoRA en si ocupa 0,3 GB, pero al cargarse sobre Wan Video 2.2 T2V-A14B (14B parametros) se requiere la VRAM del modelo base, tipicamente entre 24 GB y 80 GB segun la resolucion y cuantizacion utilizada.
 - GPU recomendadas: para ejecutar Wan Video 2.2 A14B en alta resolucion se recomienda una NVIDIA A100 80GB, H100 80GB o RTX 4090 24GB con cuantizacion FP8 o BF16.
 - En consumer GPU: es posible ejecutar el modelo base con cuantizacion FP8 en una RTX 4090 de 24 GB, aunque con limitaciones de resolucion y velocidad. En GPU de 12-16 GB (RTX 3080/4070) seria necesario usar cuantizaciones mas agresivas o reducir la resolucion.
-- Opciones de despliegue: el LoRA se integra en pipelines de difusion de video como ComfyUI, o en frameworks como diffusers de HuggingFace con la clase `LoraLoaderMixin`.
+- Opciones de despliegue: el LoRA se integra en pipelines de difusion de video como ComfyUI, o en frameworks como diffusers de Hugging Face con la clase `LoraLoaderMixin`.
 - Latencia: no disponible. La generacion de video con Wan 2.2 A14B suele requerir varios minutos por clip de pocos segundos, incluso en hardware de gama alta.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos, ya que n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wank3r/side-riding-cowgirl-wan22-LN-e55-az420
+- Repositorio Hugging Face: https://huggingface.co/wank3r/side-riding-cowgirl-wan22-LN-e55-az420
 - CivArchive (variante WAN22-LOW): https://civarchive.com/models/2546558?modelVersionId=2861832
 - CivArchive (variante WAN22-HIGH): https://civarchive.com/models/2546558?modelVersionId=2861842
 - Civitai (pagina del modelo): https://civitai.red/models/2546558/side-riding-cowgirl?modelVersionId=2861832

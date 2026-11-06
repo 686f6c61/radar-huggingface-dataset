@@ -79,9 +79,9 @@ Las únicas métricas publicadas son de compresión y verificación:
 
 | Modelo | Relacion | Tamano de pesos | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD | Contenedor CSF del checkpoint NVFP4 | 102,76 GB | NVFP4 + MXFP8, escalas comprimidas | no disponible | LIL 1.0 + Qwen Community License 1.0 | HuggingFace, 0 descargas |
-| local-inference-lab/Qwen3.8-Flash-Next-NVFP4 | Modelo base (relacion `quantized`) | 106,33 GB | NVFP4 + MXFP8 | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| Qwen/Qwen3.8-Flash-Next | Modelo upstream (original sin cuantizar) | no disponible | no disponible (formato original) | no disponible | Qwen Community License 1.0, con condiciones de Model as a Service y AI Work Assistant | HuggingFace |
+| Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD | Contenedor CSF del checkpoint NVFP4 | 102,76 GB | NVFP4 + MXFP8, escalas comprimidas | no disponible | LIL 1.0 + Qwen Community License 1.0 | Hugging Face, 0 descargas |
+| local-inference-lab/Qwen3.8-Flash-Next-NVFP4 | Modelo base (relacion `quantized`) | 106,33 GB | NVFP4 + MXFP8 | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| Qwen/Qwen3.8-Flash-Next | Modelo upstream (original sin cuantizar) | no disponible | no disponible (formato original) | no disponible | Qwen Community License 1.0, con condiciones de Model as a Service y AI Work Assistant | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -99,7 +99,7 @@ Las únicas métricas publicadas son de compresión y verificación:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD
+- Modelo en Hugging Face: https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD
 - Modelo base (checkpoint NVFP4 del que deriva): https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4
 - Modelo upstream original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del contenedor: https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD/blob/main/LICENSE

@@ -73,7 +73,7 @@ No disponible. El modelo es un experimento de arquitectura con un checkpoint de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nnikitindaniil/retrieval-weights
+- Repositorio en Hugging Face: https://huggingface.co/Nnikitindaniil/retrieval-weights
 - Archivo principal del codigo: `finetune.py`
 - Configuracion de arquitectura: `config.json`
 - Configuracion de entrenamiento por defecto: `training_args.json`

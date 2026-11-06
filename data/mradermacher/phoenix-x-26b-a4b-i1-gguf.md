@@ -4,7 +4,7 @@
 
 Phoenix-X-26B-A4B-i1 es una versión cuantizada en formato GGUF del modelo Phoenix-X-26B-A4B, originalmente publicado por Vortex5 y convertido por mradermacher. El nombre sugiere una arquitectura de mezcla de expertos (MoE) con 26 mil millones de parámetros totales y aproximadamente 4 mil millones de parámetros activos por token, aunque esta interpretación no está confirmada por la documentación oficial. El repositorio contiene únicamente los pesos cuantizados en formato GGUF, lo que permite su ejecución en entornos con recursos limitados mediante motores como llama.cpp u Ollama.
 
-La relevancia de esta ficha radica en que el modelo no dispone de una model card detallada en el repositorio de HuggingFace, por lo que la información aquí presentada se limita a los datos técnicos extraídos del propio repositorio y a inferencias razonables a partir del nombre. No se ha publicado información sobre el proceso de entrenamiento, la licencia o los idiomas soportados, lo que constituye una limitación importante para su adopción en producción.
+La relevancia de esta ficha radica en que el modelo no dispone de una model card detallada en el repositorio de Hugging Face, por lo que la información aquí presentada se limita a los datos técnicos extraídos del propio repositorio y a inferencias razonables a partir del nombre. No se ha publicado información sobre el proceso de entrenamiento, la licencia o los idiomas soportados, lo que constituye una limitación importante para su adopción en producción.
 
 ## Especificaciones tecnicas
 
@@ -70,5 +70,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Phoenix-X-26B-A4B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Phoenix-X-26B-A4B-i1-GGUF
 - Modelo original (sin cuantizar): https://huggingface.co/Vortex5/Phoenix-X-26B-A4B

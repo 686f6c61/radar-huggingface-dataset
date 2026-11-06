@@ -85,5 +85,5 @@ No disponible. La información proporcionada no incluye modelos comparables de d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anatolyo4o4/tiny_dron_detector
+- Modelo en Hugging Face: https://huggingface.co/anatolyo4o4/tiny_dron_detector
 - Dataset de entrenamiento: https://huggingface.co/datasets/geronimobasso/drone-audio-detection-samples

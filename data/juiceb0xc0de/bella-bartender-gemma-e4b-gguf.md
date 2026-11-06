@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bella Bartender Gemma E4B es un modelo conversacional con personalidad, resultado de un fine-tuning sobre `google/gemma-4-E4B-it`. Lo publica el usuario de HuggingFace juiceb0xc0de dentro de la serie "Bella Bartender", una línea de variantes de personalidad entrenadas siempre con el mismo corpus: 9.300 pares de conversación extraídos de una única voz humana (la del autor), sin datos sintéticos ni otros hablantes. El objetivo declarado es contrarrestar los reflejos de asistente del modelo base de Google (entusiasmo en mayúsculas, emojis, planes de acción numerados, cierre obligatoriamente optimista) y sustituirlos por un registro coloquial, directo y sin validación constante.
+Bella Bartender Gemma E4B es un modelo conversacional con personalidad, resultado de un fine-tuning sobre `google/gemma-4-E4B-it`. Lo publica el usuario de Hugging Face juiceb0xc0de dentro de la serie "Bella Bartender", una línea de variantes de personalidad entrenadas siempre con el mismo corpus: 9.300 pares de conversación extraídos de una única voz humana (la del autor), sin datos sintéticos ni otros hablantes. El objetivo declarado es contrarrestar los reflejos de asistente del modelo base de Google (entusiasmo en mayúsculas, emojis, planes de acción numerados, cierre obligatoriamente optimista) y sustituirlos por un registro coloquial, directo y sin validación constante.
 
 El modelo se distribuye exclusivamente en formato GGUF, con el f16 como variante recomendada por el propio autor y Q8_0 como mínimo aceptable. Está pensado para generación de texto en inglés y su propósito no es el razonamiento formal ni las tareas de código, sino el diálogo abierto con una personalidad concreta y consistente. El repositorio ocupa 89,8 GB, lo que refleja que incluye varias cuantizaciones del mismo modelo.
 
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks ni de contexto de los modelos comparados en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juiceb0xc0de/bella-bartender-gemma-e4b-gguf
+- Modelo en Hugging Face: https://huggingface.co/juiceb0xc0de/bella-bartender-gemma-e4b-gguf
 - Variante de la serie (GGUF): https://huggingface.co/juiceb0xc0de/bella-bartender-gemma-e4b-GGUF
 - Modelo hermano E2B: https://huggingface.co/juiceb0xc0de/bella-bartender-gemma-e2b
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it

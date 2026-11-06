@@ -59,7 +59,7 @@ El modelo base es un refinamiento de Mistral Small 3 con capacidades de audio a�
 | WER LibriSpeech test-clean (%) | 1,56 | 1,57 | 1,56 | 1,58 | 1,60 | 2,11 |
 | Tamano del archivo (GB) | 48,54 | 48,55 | 25,81 | 19,94 | 17,14 | 14,30 |
 
-El WER se midió sobre la partición completa de LibriSpeech test-clean (2.620 enunciados) con el normalizador de texto inglés de Whisper, decodificación voraz, batch size 8 y una NVIDIA A100 de 80 GB. La referencia de HuggingFace Transformers en la misma máquina (VoxtralForConditionalGeneration, BF16, greedy) obtuvo un 1,57%, por lo que el GGUF BF16 iguala el resultado con un 1,56%.
+El WER se midió sobre la partición completa de LibriSpeech test-clean (2.620 enunciados) con el normalizador de texto inglés de Whisper, decodificación voraz, batch size 8 y una NVIDIA A100 de 80 GB. La referencia de Hugging Face Transformers en la misma máquina (VoxtralForConditionalGeneration, BF16, greedy) obtuvo un 1,57%, por lo que el GGUF BF16 iguala el resultado con un 1,56%.
 
 Como dato adicional de rendimiento, el RTF (real-time factor) en un chip Apple M4 Max con backend Metal es de 3,2, lo que indica que procesa audio aproximadamente 3,2 veces más rápido que tiempo real en ese hardware.
 
@@ -95,7 +95,7 @@ La información proporcionada solo permite comparar con el modelo hermano Voxtra
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/tryambientai/Voxtral-Small-24B-2507-gguf
+- Repositorio Hugging Face de la conversión: https://huggingface.co/tryambientai/Voxtral-Small-24B-2507-gguf
 - Modelo base: https://huggingface.co/mistralai/Voxtral-Small-24B-2507
 - Commit del modelo base referenciado: https://huggingface.co/mistralai/Voxtral-Small-24B-2507/commit/da5b424
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cortex v0.9 0.1b es un modelo de lenguaje causal de 126.241.536 parámetros desarrollado por el usuario Ilides y publicado en HuggingFace bajo el identificador `Ilides/cortex-v0.9-0.1b`. Se trata de un GPT conversacional bilingüe (español e inglés) entrenado desde cero, según su model card, íntegramente en NumPy puro, y posteriormente afinado mediante SFT multilingüe. Con 12 capas, dimensión de modelo 768, 12 cabezas de atención y un vocabulario de 16.384 tokens, ocupa la categoría de modelos "tiny" (por debajo de 0,2B de parámetros), una franja poco poblada y orientada a entornos con recursos muy limitados.
+Cortex v0.9 0.1b es un modelo de lenguaje causal de 126.241.536 parámetros desarrollado por el usuario Ilides y publicado en Hugging Face bajo el identificador `Ilides/cortex-v0.9-0.1b`. Se trata de un GPT conversacional bilingüe (español e inglés) entrenado desde cero, según su model card, íntegramente en NumPy puro, y posteriormente afinado mediante SFT multilingüe. Con 12 capas, dimensión de modelo 768, 12 cabezas de atención y un vocabulario de 16.384 tokens, ocupa la categoría de modelos "tiny" (por debajo de 0,2B de parámetros), una franja poco poblada y orientada a entornos con recursos muy limitados.
 
 La relevancia del modelo reside en dos factores. El primero es su ventana de contexto de solo 512 tokens, muy corta para los estándares actuales, lo que lo sitúa en escenarios de diálogo breve o tareas de generación acotadas más que en razonamiento de contexto largo. El segundo es que, según los metadatos de la model card, el entrenamiento se realizó en una H100 con 52.700 pasos de pretraining (val loss 2.5543) y 28.800 pasos de SFT con val loss 0.1011, con un reparto declarado de datos del 53% ES / 47% EN en pretraining y 50% ES / 50% EN en SFT.
 
@@ -85,7 +85,7 @@ La comparación se limita a parámetros, contexto, idiomas y licencia porque no 
 - Riesgo de alucinación: elevado, como en cualquier modelo de este tamaño y con tan poca ventana de contexto. Su perplejidad de SFT (1,106) refleja el ajuste a la distribución de entrenamiento, no fiabilidad factual.
 - Limitación de contexto: 512 tokens es una ventana muy corta, insuficiente para documentos largos o conversaciones extensas. Esto restringe seriamente los casos de uso.
 - Limitaciones de idioma: solo se declaran español e inglés. El rendimiento en otros idiomas no está garantizado y probablemente sea deficiente.
-- Licencia: la model card indica apache-2.0, pero el campo de licencia del repositorio en HuggingFace figura como no disponible. Conviene verificar la licencia real antes de un uso comercial.
+- Licencia: la model card indica apache-2.0, pero el campo de licencia del repositorio en Hugging Face figura como no disponible. Conviene verificar la licencia real antes de un uso comercial.
 - Código personalizado: la etiqueta `custom_code` implica que cargar el modelo requiere `trust_remote_code=True`, lo que conlleva ejecutar código del autor y un riesgo de seguridad que debe evaluarse en producción.
 - Adopción nula: cero descargas y cero "likes" en el momento de la consulta implican ausencia de validación por parte de la comunidad.
 - Ausencia de benchmarks: no hay resultados en tareas estándar, por lo que no es posible estimar su calidad relativa con rigor.
@@ -93,9 +93,9 @@ La comparación se limita a parámetros, contexto, idiomas y licencia porque no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ilides/cortex-v0.9-0.1b
-- Perfil del autor en HuggingFace: https://huggingface.co/Ilides
+- Modelo en Hugging Face: https://huggingface.co/Ilides/cortex-v0.9-0.1b
+- Perfil del autor en Hugging Face: https://huggingface.co/Ilides
 - Repositorio GitHub del autor (cortex-agent): https://github.com/ilides/cortex-agent
-- Modelos etiquetados con `ilides` en HuggingFace: https://huggingface.co/models?other=ilides
+- Modelos etiquetados con `ilides` en Hugging Face: https://huggingface.co/models?other=ilides
 - Referencia externa con nombre similar (proyecto Cortex v0.9.0 de hurttlocker, no confirmado como relacionado): https://github.com/hurttlocker/cortex/blob/main/RELEASE-v0.9.0.md
 - Catálogo edge0.ai (referencia externa, relación no confirmada): https://edge0.ai/models

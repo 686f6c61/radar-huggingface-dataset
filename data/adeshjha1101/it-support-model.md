@@ -2,7 +2,7 @@
 
 ## Resumen
 
-it-support-model es un modelo de clasificación de texto publicado por el usuario AdeshJha1101 en HuggingFace. Se trata de un ajuste fino (fine-tuning) supervisado de distilbert/distilbert-base-uncased, un transformer encoder de la familia BERT en su variante destilada, orientado a la clasificación de consultas o tickets de soporte técnico (IT support). El modelo tiene 66.956.548 parámetros totales y se distribuye en formato safetensors con licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+it-support-model es un modelo de clasificación de texto publicado por el usuario AdeshJha1101 en Hugging Face. Se trata de un ajuste fino (fine-tuning) supervisado de distilbert/distilbert-base-uncased, un transformer encoder de la familia BERT en su variante destilada, orientado a la clasificación de consultas o tickets de soporte técnico (IT support). El modelo tiene 66.956.548 parámetros totales y se distribuye en formato safetensors con licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
 El interés de esta ficha es limitado pero útil como caso de estudio: se trata de un modelo con 0 descargas y 0 likes en el momento de la consulta, sin model card completada (las secciones de descripción, usos previstos y datos de entrenamiento figuran como "More information needed") y con métricas de evaluación muy bajas. En el conjunto de evaluación declarado por el propio autor alcanza una exactitud (accuracy) de 0,4, una precisión de 0,4667, un recall de 0,4 y un F1 de 0,3667, con una pérdida de 1,2334.
 
@@ -59,7 +59,7 @@ Advertencia importante: ninguno de estos casos de uso es viable hoy con los peso
 
 ## Benchmarks y rendimiento
 
-El model-index oficial del repositorio esta vacio (`"results": []`), por lo que no hay resultados de benchmarks declarados en el formato estandar de HuggingFace. La model card si incluye las metricas del conjunto de evaluacion obtenidas durante el entrenamiento. Se reproducen a continuacion tal cual, sin modificaciones:
+El model-index oficial del repositorio esta vacio (`"results": []`), por lo que no hay resultados de benchmarks declarados en el formato estandar de Hugging Face. La model card si incluye las metricas del conjunto de evaluacion obtenidas durante el entrenamiento. Se reproducen a continuacion tal cual, sin modificaciones:
 
 | Metrica | Valor |
 |---|---|
@@ -124,6 +124,6 @@ No se dispone de datos de benchmark verificables de los modelos alternativos en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdeshJha1101/it-support-model
+- Modelo en Hugging Face: https://huggingface.co/AdeshJha1101/it-support-model
 - Modelo base distilbert-base-uncased: https://huggingface.co/distilbert/distilbert-base-uncased
 - Aviso sobre la busqueda web: las consultas realizadas devolvieron unicamente resultados sin relacion con el modelo (paginas de venta de entradas para conciertos). No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

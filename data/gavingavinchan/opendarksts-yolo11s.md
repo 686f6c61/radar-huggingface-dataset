@@ -24,7 +24,7 @@ Es relevante porque publica pesos entrenados y un conjunto de datos balanceado (
 | Clases | `0: ship`, `1: ships` |
 | Umbral de confianza por defecto | 0.25 |
 | SHA-256 del checkpoint | `cf11d54de2aa2ba3fa74e23d1118482a281b62cd29a95b2b1e58a06e92b261ea` |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -75,7 +75,7 @@ Segun la model card, YOLO11s obtuvo el mayor mAP50 global entre las once arquite
 
 | Modelo | Parametros | Contexto / entrada | mAP50 (test SNAME) | mAP50-95 (test SNAME) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OpenDarkSTS-YOLO11s | no disponible | imagen 960 px | 0.895 | 0.544 | AGPL-3.0 | HuggingFace + repo OpenDarkSTS |
+| OpenDarkSTS-YOLO11s | no disponible | imagen 960 px | 0.895 | 0.544 | AGPL-3.0 | Hugging Face + repo OpenDarkSTS |
 | YOLOv12n (comparado en el paper) | no disponible | no disponible | por debajo de 0.895 | 0.572 (mejor del estudio) | no disponible | no disponible |
 | YOLO26n (checkpoint alternativo del proyecto) | no disponible | no disponible | no disponible (dataset distinto) | no disponible | AGPL-3.0 (proyecto) | repo OpenDarkSTS |
 
@@ -94,7 +94,7 @@ La model card indica que YOLO11s quedo primero en mAP50 entre once arquitecturas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gavingavinchan/OpenDarkSTS-YOLO11s
+- Modelo en Hugging Face: https://huggingface.co/gavingavinchan/OpenDarkSTS-YOLO11s
 - Descarga directa del checkpoint: https://huggingface.co/gavingavinchan/OpenDarkSTS-YOLO11s/resolve/main/opendarksts_yolo11s_v4_best.pt
 - Dataset de entrenamiento: https://huggingface.co/datasets/gavingavinchan/OpenDarkSTS-v4-balanced
 - Dataset de anotaciones: https://huggingface.co/datasets/gavingavinchan/OpenDarkSTS-annotations

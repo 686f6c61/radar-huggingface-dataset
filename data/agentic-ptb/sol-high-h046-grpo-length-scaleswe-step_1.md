@@ -64,4 +64,4 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: agentic-ptb/sol-high.grpo-length-scaleswe.step_1](https://huggingface.co/agentic-ptb/sol-high.grpo-length-scaleswe.step_1)
+- [Hugging Face: agentic-ptb/sol-high.grpo-length-scaleswe.step_1](https://huggingface.co/agentic-ptb/sol-high.grpo-length-scaleswe.step_1)

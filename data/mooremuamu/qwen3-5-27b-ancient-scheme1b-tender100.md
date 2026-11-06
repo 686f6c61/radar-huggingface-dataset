@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-27B-Ancient-Scheme1b-Tender100 es un ajuste fino del modelo base Qwen/Qwen3.5-27B, publicado por el usuario MooreMuaMu, orientado a la interpretación y traducción de lenguas antiguas o de tradición escrita minoritaria: chino (zh), uigur (ug), mongol tradicional (mn) y tibetano (bo). El pipeline declarado en HuggingFace es image-text-to-text, heredado de la arquitectura multimodal del modelo base, aunque el autor indica explícitamente que en esta ronda solo se han verificado tareas de texto.
+Qwen3.5-27B-Ancient-Scheme1b-Tender100 es un ajuste fino del modelo base Qwen/Qwen3.5-27B, publicado por el usuario MooreMuaMu, orientado a la interpretación y traducción de lenguas antiguas o de tradición escrita minoritaria: chino (zh), uigur (ug), mongol tradicional (mn) y tibetano (bo). El pipeline declarado en Hugging Face es image-text-to-text, heredado de la arquitectura multimodal del modelo base, aunque el autor indica explícitamente que en esta ronda solo se han verificado tareas de texto.
 
 Se trata de un checkpoint completamente fusionado: 496 módulos LoRA del entrenamiento se han integrado en los pesos, de modo que el repositorio se carga directamente sin adaptadores adicionales. El punto de partida del ajuste es un checkpoint intermedio de SFT interno (stage2 SFT checkpoint227) y el sufijo "Tender100" corresponde al paso global del optimizador en la fase de RL (no a pasos de SFT).
 
@@ -75,10 +75,10 @@ No se dispone de datos verificados de benchmarks para establecer comparaciones c
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-27B-Ancient-Scheme1b-Tender100 (este) | 27,36 mil millones | no disponible | Reward ponderada 0,561482; macro 0,682861 en 96 preguntas | apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen3.5-27B-Ancient-Scheme1b-Tender100 (este) | 27,36 mil millones | no disponible | Reward ponderada 0,561482; macro 0,682861 en 96 preguntas | apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | Checkpoint 90 del mismo run | no disponible | no disponible | Reward ponderada 0,556995; macro 0,664151 | no disponible | No publicado como repositorio independiente en la informacion disponible |
 | Checkpoint 110 del mismo run | no disponible | no disponible | Reward ponderada 0,553403; macro 0,677876 | no disponible | No publicado como repositorio independiente en la informacion disponible |
-| Qwen/Qwen3.5-27B (modelo base) | 27B (dato no verificado en la informacion disponible) | no disponible | No se han publicado resultados de benchmarks en la informacion disponible | apache-2.0 (segun la ficha del ajuste, no verificado) | HuggingFace |
+| Qwen/Qwen3.5-27B (modelo base) | 27B (dato no verificado en la informacion disponible) | no disponible | No se han publicado resultados de benchmarks en la informacion disponible | apache-2.0 (segun la ficha del ajuste, no verificado) | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -97,7 +97,7 @@ No se dispone de datos verificados de benchmarks para establecer comparaciones c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MooreMuaMu/Qwen3.5-27B-Ancient-Scheme1b-Tender100
+- Modelo en Hugging Face: https://huggingface.co/MooreMuaMu/Qwen3.5-27B-Ancient-Scheme1b-Tender100
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Archivo de procedencia de la fusión citado en la model card: MODEL_PROVENANCE.json (dentro del repositorio)
 - Resumen de evaluación citado en la model card: evaluation_summary.json (dentro del repositorio)

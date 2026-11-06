@@ -84,8 +84,8 @@ Este fine-tune no añade diferencias estructurales respecto a su base, por lo qu
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/OLMo-3-7B-target-only-no-hallucination-inoculation-prompting-seed4](https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-inoculation-prompting-seed4)
-- [HuggingFace - variante seed5](https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-inoculation-prompting-seed5)
+- [Hugging Face - localized-ft/OLMo-3-7B-target-only-no-hallucination-inoculation-prompting-seed4](https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-inoculation-prompting-seed4)
+- [Hugging Face - variante seed5](https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-inoculation-prompting-seed5)
 - [Free2AI Tools - registro del modelo](https://free2aitools.com/model/longtermrisk/olmo-3-7b-target-only-no-hallucination-inoculation-prompting-seed4)
 - [FriendliAI - despliegue del modelo](https://friendli.ai/models/longtermrisk/OLMo-3-7B-target-only-no-hallucination-inoculation-prompting)
 - [GitHub - OLMo (AI2)](https://github.com/allenai/OLMo)

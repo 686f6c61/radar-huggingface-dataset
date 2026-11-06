@@ -76,7 +76,7 @@ La diferencia principal frente al modelo original de Meta es la cuantización FP
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furiosa-ai/Meta-Llama-3.1-8B-Instruct-FP8-dynamic
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/Meta-Llama-3.1-8B-Instruct-FP8-dynamic
 - Modelo upstream (RedHatAI): https://huggingface.co/RedHatAI/Meta-Llama-3.1-8B-Instruct-FP8-dynamic
 - Modelo base (Meta): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Documentación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html

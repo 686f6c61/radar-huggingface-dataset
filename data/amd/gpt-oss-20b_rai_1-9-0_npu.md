@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `amd/gpt-oss-20b_rai_1.9.0_npu` es una distribucion del modelo abierto gpt-oss-20b de OpenAI, adaptada por AMD para su ejecucion sobre unidades de procesamiento neuronal (NPU) mediante el stack Ryzen AI 1.9.0. Se publica en formato ONNX y esta pensada para desplegarse en hardware AMD con aceleracion NPU, principalmente en equipos con procesadores Ryzen AI. El repositorio pertenece a la organizacion oficial de AMD en HuggingFace y esta sujeto a acceso restringido (gated): es necesario aceptar las condiciones en la pagina del modelo antes de descargarlo.
+El modelo `amd/gpt-oss-20b_rai_1.9.0_npu` es una distribucion del modelo abierto gpt-oss-20b de OpenAI, adaptada por AMD para su ejecucion sobre unidades de procesamiento neuronal (NPU) mediante el stack Ryzen AI 1.9.0. Se publica en formato ONNX y esta pensada para desplegarse en hardware AMD con aceleracion NPU, principalmente en equipos con procesadores Ryzen AI. El repositorio pertenece a la organizacion oficial de AMD en Hugging Face y esta sujeto a acceso restringido (gated): es necesario aceptar las condiciones en la pagina del modelo antes de descargarlo.
 
 La relevancia de esta ficha radica en que no se trata de un modelo entrenado desde cero, sino de una conversion y empaquetado de un modelo ya existente (gpt-oss-20b) para un backend concreto (ONNX Runtime con el proveedor de ejecucion de Ryzen AI). Por tanto, las capacidades del modelo subyacente son las de gpt-oss-20b, mientras que las particularidades de esta publicacion son las del proceso de conversion, cuantizacion y despliegue en NPU.
 
-La informacion disponible en la pagina de HuggingFace es limitada: se conocen los tags (onnx, amd, ryzenai, npu, text-generation, conversational), el tamano del repositorio (13,4 GB), la licencia (Apache 2.0) y el idioma declarado (ingles). No se publican en la informacion proporcionada detalles sobre parametros, contexto, cuantizacion ni resultados de benchmarks de esta version concreta.
+La informacion disponible en la pagina de Hugging Face es limitada: se conocen los tags (onnx, amd, ryzenai, npu, text-generation, conversational), el tamano del repositorio (13,4 GB), la licencia (Apache 2.0) y el idioma declarado (ingles). No se publican en la informacion proporcionada detalles sobre parametros, contexto, cuantizacion ni resultados de benchmarks de esta version concreta.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar el modelo.
 - Idioma: el repositorio declara unicamente ingles; el rendimiento en castellano no esta garantizado.
 - Dependencia de hardware: la ejecucion esta ligada a NPU de AMD con Ryzen AI 1.9.0; no es un artefacto portable a otros backends sin conversion adicional.
 - Informacion tecnica incompleta: no se publican en la informacion disponible datos de contexto, cuantizacion, parametros exactos ni benchmarks, lo que dificulta evaluar su idoneidad para produccion.
@@ -80,4 +80,4 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/gpt-oss-20b_rai_1.9.0_npu
+- Hugging Face: https://huggingface.co/amd/gpt-oss-20b_rai_1.9.0_npu

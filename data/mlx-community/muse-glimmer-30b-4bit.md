@@ -66,7 +66,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/Muse-Glimmer-30B-4bit
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/Muse-Glimmer-30B-4bit
 - Modelo original: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Blog de Meta sobre Muse Glimmer: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model
 - Pagina en NVIDIA NIM: https://build.nvidia.com/meta/muse-glimmer-30b/modelcard

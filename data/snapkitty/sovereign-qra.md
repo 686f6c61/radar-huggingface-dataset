@@ -71,5 +71,5 @@ No disponible. No existe una categoria estandar de "modelos" comparable para un 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Snapkitty/sovereign-qra
+- Repositorio Hugging Face: https://huggingface.co/Snapkitty/sovereign-qra
 - No se han encontrado enlaces adicionales (papers, blogs, demos) en la informacion disponible.

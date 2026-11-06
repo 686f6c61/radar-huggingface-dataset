@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hasandj4/hybrid-baseline` es un prototipo de investigación publicado en HuggingFace por el usuario hasandj4, orientado a tareas de *matching*. Se presenta explícitamente como un artefacto experimental: el propio autor aclara en la model card que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (*smoke tests*) y **no** un modelo entrenado ni evaluado. No se reclama ninguna métrica de rendimiento.
+`hasandj4/hybrid-baseline` es un prototipo de investigación publicado en Hugging Face por el usuario hasandj4, orientado a tareas de *matching*. Se presenta explícitamente como un artefacto experimental: el propio autor aclara en la model card que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (*smoke tests*) y **no** un modelo entrenado ni evaluado. No se reclama ninguna métrica de rendimiento.
 
 El repositorio contiene únicamente el código de implementación (`finetune.py`), los ficheros de configuración (`config.json`, `training_args.json`) y el checkpoint de inicialización. El recuento real de parámetros en safetensors es de 16.576, lo que lo sitúa muy lejos de cualquier modelo utilizable en producción pese a que la configuración etiqueta la escala como «giant». Se trata, por tanto, de una plantilla reproducible para experimentos de comparación (baselines) más que de un modelo desplegable.
 
@@ -66,7 +66,7 @@ No disponible. No se dispone de informacion sobre modelos comparables de la mism
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hasandj4/hybrid-baseline | 16.576 | no disponible | no disponible | apache-2.0 | HuggingFace |
+| hasandj4/hybrid-baseline | 16.576 | no disponible | no disponible | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No disponible. No se dispone de informacion sobre modelos comparables de la mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hasandj4/hybrid-baseline
+- Modelo en Hugging Face: https://huggingface.co/hasandj4/hybrid-baseline
 - Paper: no disponible
 - Blog o articulo tecnico del autor: no disponible
 - Repositorio de codigo adicional: no disponible

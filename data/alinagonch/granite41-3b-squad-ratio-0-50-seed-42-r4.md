@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `AlinaGonch/granite41-3b-squad-ratio-0.50-seed-42-r4` es un artefacto publicado en HuggingFace Hub por el usuario AlinaGonch. El propio identificador sugiere que se trata de un ajuste fino (fine-tuning) sobre un modelo de la familia IBM Granite 4.1 de 3.000 millones de parametros, entrenado sobre el conjunto de datos SQuAD (Stanford Question Answering Dataset) con una "ratio" de 0.50, una semilla aleatoria fija de 42 y una iteracion o revision etiquetada como "r4". Sin embargo, la model card publicada es la plantilla autogenerada por HuggingFace y no contiene informacion tecnica rellenada por el autor, por lo que estas inferencias proceden unicamente del nombre del repositorio y no estan confirmadas.
+El modelo identificado como `AlinaGonch/granite41-3b-squad-ratio-0.50-seed-42-r4` es un artefacto publicado en Hugging Face Hub por el usuario AlinaGonch. El propio identificador sugiere que se trata de un ajuste fino (fine-tuning) sobre un modelo de la familia IBM Granite 4.1 de 3.000 millones de parametros, entrenado sobre el conjunto de datos SQuAD (Stanford Question Answering Dataset) con una "ratio" de 0.50, una semilla aleatoria fija de 42 y una iteracion o revision etiquetada como "r4". Sin embargo, la model card publicada es la plantilla autogenerada por Hugging Face y no contiene informacion tecnica rellenada por el autor, por lo que estas inferencias proceden unicamente del nombre del repositorio y no estan confirmadas.
 
 El problema que podria resolver seria el de ajuste fino para tareas de respuesta a preguntas extractivas (question answering) sobre contexto, presumiblemente como parte de un experimento academico o de evaluacion de estrategias de seleccion de datos (de ahi el parametro "ratio"). Es relevante unicamente como ejemplo de publicacion de checkpoints experimentales, no como un modelo listo para produccion.
 
@@ -23,7 +23,7 @@ Cabe destacar que el tamano del repositorio declarado es de 0.0 GB, lo que indic
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada por el autor sobre la arquitectura del modelo. El tag `arxiv:1910.09700` presente en el repositorio corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, incluido en la plantilla por defecto de HuggingFace, y no a un paper del modelo. La etiqueta `transformers` y el formato `safetensors` indican unicamente compatibilidad con la libreria Transformers de HuggingFace.
+No hay informacion publicada por el autor sobre la arquitectura del modelo. El tag `arxiv:1910.09700` presente en el repositorio corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, incluido en la plantilla por defecto de Hugging Face, y no a un paper del modelo. La etiqueta `transformers` y el formato `safetensors` indican unicamente compatibilidad con la libreria Transformers de Hugging Face.
 
 Del identificador se puede inferir, sin confirmacion, un ajuste fino supervisado sobre SQuAD con una particion o submuestreo del 50 por ciento de los datos (`ratio-0.50`), semilla fija 42 y una cuarta iteracion (`r4`). No se dispone de informacion sobre numero de tokens de entrenamiento, composicion del dataset, uso de RLHF/DPO ni ninguna innovacion tecnica.
 
@@ -87,7 +87,7 @@ No disponible. No se conocen modelos comparables porque no se ha confirmado la a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.50-seed-42-r4
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.50-seed-42-r4
 - Paper referenciado en el tag (calculo de impacto de carbono, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact
 - Dataset SQuAD (referencia inferida del nombre, no confirmada): https://rajpurkar.github.io/SQuAD-explorer/

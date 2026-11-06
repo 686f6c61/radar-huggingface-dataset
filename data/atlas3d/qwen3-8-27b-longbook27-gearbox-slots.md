@@ -80,9 +80,9 @@ Resultados adicionales reportados por el autor:
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Atlas3D/Qwen3.8-27B-Longbook27-gearbox-slots | Mezcladores DeltaNet auxiliares sobre Qwen3.8-27B | 16 mixers (3,71 GB por fichero) | 8k en entrenamiento de mixers | Apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| summerAIO/Qwen3.8-27B-Longbook27-v2 | Modelo Longbook completo con DeltaNet en 16 capas | no disponible | no disponible | Apache-2.0 | HuggingFace (repo de summerAIO) |
-| Qwen/Qwen3.8-27B | Transformer con atención completa | 27B (según nombre) | no disponible | Apache-2.0 | HuggingFace |
+| Atlas3D/Qwen3.8-27B-Longbook27-gearbox-slots | Mezcladores DeltaNet auxiliares sobre Qwen3.8-27B | 16 mixers (3,71 GB por fichero) | 8k en entrenamiento de mixers | Apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| summerAIO/Qwen3.8-27B-Longbook27-v2 | Modelo Longbook completo con DeltaNet en 16 capas | no disponible | no disponible | Apache-2.0 | Hugging Face (repo de summerAIO) |
+| Qwen/Qwen3.8-27B | Transformer con atención completa | 27B (según nombre) | no disponible | Apache-2.0 | Hugging Face |
 
 La comparación de rendimiento entre estas tres variantes está parcialmente cubierta por las métricas de la sección anterior: coseno a atención de 0,42 (Longbook) frente a 0,79 (v2) y 0,82 (v3); KL a engranaje 0 de 0 a 1,501 según k; y needles de 18/18 a 0/18 según k. No se dispone de comparativas con otros modelos de la misma categoría en la información proporcionada.
 
@@ -101,8 +101,8 @@ La comparación de rendimiento entre estas tres variantes está parcialmente cub
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Atlas3D/Qwen3.8-27B-Longbook27-gearbox-slots
+- Hugging Face: https://huggingface.co/Atlas3D/Qwen3.8-27B-Longbook27-gearbox-slots
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Longbook de summerAIO: https://huggingface.co/summerAIO/Qwen3.8-27B-Longbook27-v2
-- Ficheros de receta y validación citados en el repo: `recipe_hashes.json`, `train_v2/val.jsonl`, `train_v3/val.jsonl`, `SHA256SUMS`, `LONGBOOK-SHARE.md`, `LIT-REVIEW.md`, `test_gearbox.py` (dentro del repositorio de HuggingFace)
+- Ficheros de receta y validación citados en el repo: `recipe_hashes.json`, `train_v2/val.jsonl`, `train_v3/val.jsonl`, `SHA256SUMS`, `LONGBOOK-SHARE.md`, `LIT-REVIEW.md`, `test_gearbox.py` (dentro del repositorio de Hugging Face)
 - Papers, blogs, repos o demos adicionales: no disponible en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordansky/grpo_ours_v2_7606cad6` es un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) publicado en HuggingFace por el usuario Jordansky. Está construido sobre el modelo base `Qwen/Qwen3-8B`, un transformer de 8 mil millones de parámetros desarrollado por Alibaba Cloud. El nombre del repositorio sugiere un posible entrenamiento mediante GRPO (Group Relative Policy Optimization), una técnica de optimización por refuerzo utilizada en modelos como DeepSeek-R1, aunque no hay documentación que lo confirme.
+El modelo `Jordansky/grpo_ours_v2_7606cad6` es un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) publicado en Hugging Face por el usuario Jordansky. Está construido sobre el modelo base `Qwen/Qwen3-8B`, un transformer de 8 mil millones de parámetros desarrollado por Alibaba Cloud. El nombre del repositorio sugiere un posible entrenamiento mediante GRPO (Group Relative Policy Optimization), una técnica de optimización por refuerzo utilizada en modelos como DeepSeek-R1, aunque no hay documentación que lo confirme.
 
 La información pública es extremadamente limitada: la model card está prácticamente vacía, no se especifica licencia, idiomas, ni detalles de entrenamiento. El repositorio contiene 1.4 GB de pesos en formato safetensors, lo que indica que se trata de un adaptador LoRA u otro método PEFT de bajo rango aplicado sobre Qwen3-8B. Dada la falta de documentación, cualquier uso en producción debe considerarse experimental y requiere validación previa.
 
@@ -66,6 +66,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Jordansky/grpo_ours_v2_7606cad6)
+- [Repositorio en Hugging Face](https://huggingface.co/Jordansky/grpo_ours_v2_7606cad6)
 - [Modelo base Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B)
 - [Paper de Lacoste et al. (2019) sobre emisiones de carbono](https://arxiv.org/abs/1910.09700) (referencia generica en la model card, no relacionada con el entrenamiento)

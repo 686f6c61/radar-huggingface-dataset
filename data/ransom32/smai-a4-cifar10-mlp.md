@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ransom32/smai-a4-cifar10-mlp` es un perceptrón multicapa (MLP) muy pequeño entrenado desde cero para la clasificación de imágenes del conjunto CIFAR-10. Lo desarrolla el usuario de HuggingFace `ransom32` como parte de una asignación académica de la asignatura SMAI (aparentemente, un curso de aprendizaje automático). No es un modelo de lenguaje ni un modelo generativo: es un clasificador de imágenes de 10 clases con una arquitectura trivial de dos capas lineales (3072 → 32 → 10) y una activación ReLU intermedia.
+El modelo `ransom32/smai-a4-cifar10-mlp` es un perceptrón multicapa (MLP) muy pequeño entrenado desde cero para la clasificación de imágenes del conjunto CIFAR-10. Lo desarrolla el usuario de Hugging Face `ransom32` como parte de una asignación académica de la asignatura SMAI (aparentemente, un curso de aprendizaje automático). No es un modelo de lenguaje ni un modelo generativo: es un clasificador de imágenes de 10 clases con una arquitectura trivial de dos capas lineales (3072 → 32 → 10) y una activación ReLU intermedia.
 
 El modelo resuelve un problema muy acotado: dado un vector de 3072 características (una imagen RGB de 32×32 píxeles aplanada y normalizada), predecir una de las diez clases de CIFAR-10 (avión, automóvil, pájaro, gato, ciervo, perro, rana, caballo, barco o camión). Su relevancia práctica es nula fuera del contexto docente: se trata de un artefacto de aprendizaje con fines ilustrativos, no de un modelo destinado a producción.
 
@@ -43,7 +43,7 @@ El entrenamiento se realizó con descenso de gradiente estocástico (SGD), tasa 
 - Docencia y prácticas de aprendizaje automático: el modelo sirve como ejemplo mínimo de un clasificador entrenado desde cero, útil para ilustrar el flujo completo de preprocesamiento, entrenamiento con SGD y evaluación en CIFAR-10.
 - Reproducción de experimentos académicos: al incluir `config.json` con hiperparámetros y semillas, permite reproducir exactamente el entrenamiento y comparar variantes (por ejemplo, cambiar la semilla o el tamaño de la capa oculta).
 - Referencia de línea base (baseline) para CIFAR-10: con un 42,72 % de exactitud, sirve como cota inferior trivial frente a la que comparar arquitecturas convolucionales o transformers de visión en trabajos estudiantiles.
-- Pruebas de integración de pipelines de inferencia: al ser un modelo diminuto en float64, es útil para validar el flujo de descarga desde HuggingFace Hub, carga de `state_dict` y ejecución en CPU sin necesidad de GPU.
+- Pruebas de integración de pipelines de inferencia: al ser un modelo diminuto en float64, es útil para validar el flujo de descarga desde Hugging Face Hub, carga de `state_dict` y ejecución en CPU sin necesidad de GPU.
 - Demostraciones de normalización por característica: el archivo `preprocessing.npz` permite explicar y verificar el cálculo de media y desviación típica sobre el conjunto de entrenamiento y su aplicación en inferencia.
 - Verificación de equivalencia entre implementaciones: al proporcionar pesos tanto en PyTorch (`model.pt`) como en NumPy (`model.npz`), permite comprobar que dos implementaciones distintas producen los mismos logits.
 
@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Exactitud CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ransom32/smai-a4-cifar10-mlp | 98.474 | no aplica | 42,72 % | no disponible | HuggingFace |
+| ransom32/smai-a4-cifar10-mlp | 98.474 | no aplica | 42,72 % | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,6 +88,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ransom32/smai-a4-cifar10-mlp
+- Modelo en Hugging Face: https://huggingface.co/ransom32/smai-a4-cifar10-mlp
 - Run de entrenamiento (W&B, CoreWeave): https://forge.coreweave.com/wandb/mukund-hebbar23-iiit-hyderabad/smai-assignment-4/runs/2nvg8zgr
-- Dataset CIFAR-10 en HuggingFace: https://huggingface.co/datasets/uoft-cs/cifar10
+- Dataset CIFAR-10 en Hugging Face: https://huggingface.co/datasets/uoft-cs/cifar10

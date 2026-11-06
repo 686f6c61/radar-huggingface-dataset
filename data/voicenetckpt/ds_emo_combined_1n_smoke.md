@@ -74,7 +74,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de este checkpoint
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ds_emo_combined_1n_smoke | no disponible | no disponible | no disponible | HuggingFace (checkpoint) | Ejecucion de prueba VoiceCLAP |
+| ds_emo_combined_1n_smoke | no disponible | no disponible | no disponible | Hugging Face (checkpoint) | Ejecucion de prueba VoiceCLAP |
 | Alternativas CLAP de referencia | no disponible | no disponible | no disponible | no disponible | No se aportan cifras en la informacion disponible |
 
 ## Limitaciones y advertencias
@@ -91,6 +91,6 @@ No se dispone de datos de parametros, contexto ni rendimiento de este checkpoint
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/ds_emo_combined_1n_smoke
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/ds_emo_combined_1n_smoke
 - Indice de ejecuciones VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog o repositorio del proyecto VoiceCLAP: no disponible (la busqueda web no devolvio resultados relevantes; los resultados obtenidos no guardaban relacion con el modelo).

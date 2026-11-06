@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`henil08/verilog-coder-1.5b-mlx-4bit` es una cuantizacion en 4 bits, en formato MLX, de un modelo de lenguaje de 1.543.714.304 parametros (aproximadamente 1,5 mil millones) especializado en la generacion de codigo Verilog y SystemVerilog. Lo publica el usuario henil08 en HuggingFace y esta pensado para ejecutarse en Apple Silicon mediante la libreria MLX. El tag `qwen2` de la ficha indica que la arquitectura subyacente es la familia Qwen2, aunque la model card no documenta cual es el checkpoint base exacto ni el proceso de entrenamiento.
+`henil08/verilog-coder-1.5b-mlx-4bit` es una cuantizacion en 4 bits, en formato MLX, de un modelo de lenguaje de 1.543.714.304 parametros (aproximadamente 1,5 mil millones) especializado en la generacion de codigo Verilog y SystemVerilog. Lo publica el usuario henil08 en Hugging Face y esta pensado para ejecutarse en Apple Silicon mediante la libreria MLX. El tag `qwen2` de la ficha indica que la arquitectura subyacente es la familia Qwen2, aunque la model card no documenta cual es el checkpoint base exacto ni el proceso de entrenamiento.
 
 El modelo resuelve un nicho concreto: la sintesis de RTL asistida por IA en un formato que cabe en un portatil. Frente a los modelos de codigo generalistas, un ajuste fino orientado a Verilog permite generar modulos, testbenches y restricciones de sintesis con una terminologia y unas construcciones propias del diseno digital. El repositorio del autor en GitHub (`Henil-08/verilog-coder-ft`) describe un ajuste fino con LoRA sobre un modelo coder pequeno, evaluado por correccion funcional mediante compilacion con Verilator y paso de testbench (pass@1), y servido con backend autodetectado MLX (Apple Silicon) o vLLM (CUDA).
 
@@ -25,7 +25,7 @@ Otros datos: tamano del repositorio 0,9 GB; pipeline `text-generation`; tags `co
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only de tipo Qwen2 con 1,5 mil millones de parametros, segun el tag `qwen2` declarado en la ficha de HuggingFace. No se dispone de la configuracion concreta (numero de capas, dimensiones ocultas, cabezas de atencion, funcion de activacion ni longitud de contexto nativa), porque la model card no incluye ningun detalle tecnico mas alla de `language: en`, `library_name: mlx` y `pipeline_tag: text-generation`.
+La arquitectura es un transformer decoder-only de tipo Qwen2 con 1,5 mil millones de parametros, segun el tag `qwen2` declarado en la ficha de Hugging Face. No se dispone de la configuracion concreta (numero de capas, dimensiones ocultas, cabezas de atencion, funcion de activacion ni longitud de contexto nativa), porque la model card no incluye ningun detalle tecnico mas alla de `language: en`, `library_name: mlx` y `pipeline_tag: text-generation`.
 
 Respecto al entrenamiento, el repositorio GitHub del mismo autor (`Henil-08/verilog-coder-ft`) describe un ajuste fino con LoRA sobre un "small open coder LLM" para generacion de Verilog/SystemVerilog, con evaluacion orientada a correccion funcional: compilacion con Verilator y ejecucion de testbench con metrica pass@1. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron etapas de RLHF o DPO. Tampoco se documenta la receta de cuantizacion a 4 bits mas alla de que se realizo con MLX.
 
@@ -67,7 +67,7 @@ El repositorio GitHub asociado describe una metodologia de evaluacion basada en 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| henil08/verilog-coder-1.5b-mlx-4bit | 1,54B | No disponible | Verilog/SystemVerilog, ajuste LoRA | No disponible | MLX 4 bits en HuggingFace |
+| henil08/verilog-coder-1.5b-mlx-4bit | 1,54B | No disponible | Verilog/SystemVerilog, ajuste LoRA | No disponible | MLX 4 bits en Hugging Face |
 | Qwen2.5-Coder-1.5B (familia base probable, segun tag `qwen2`) | ~1,5B | No disponible en la informacion proporcionada | Codigo generalista,多 lenguaje | No disponible en la informacion proporcionada | Multiples formatos y cuantizaciones |
 | VibeThinker-1.5B (y su version MLX 4 bits) | 1,5B | No disponible en la informacion proporcionada | Razonamiento matematico y algoritmia competitiva | No disponible en la informacion proporcionada | MLX 4 bits, vLLM |
 | NVlabs/VerilogCoder | No disponible | No disponible | Generacion de Verilog con flujo de agentes | No disponible en la informacion proporcionada | Repositorio de codigo, no checkpoint aislado |
@@ -88,6 +88,6 @@ Nota: la comparativa se limita a los datos aportados en la busqueda. Las filas d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/henil08/verilog-coder-1.5b-mlx-4bit
+- Hugging Face: https://huggingface.co/henil08/verilog-coder-1.5b-mlx-4bit
 - Repositorio del autor (ajuste fino, evaluacion con Verilator y backend MLX/vLLM): https://github.com/Henil-08/verilog-coder-ft
 - Proyecto de referencia de NVIDIA para generacion de Verilog: https://github.com/NVlabs/VerilogCoder

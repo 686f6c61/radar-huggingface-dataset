@@ -78,7 +78,7 @@ La información proporcionada solo contiene datos verificables de esta política
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rubatotree/classify-the-blocks-act (ACT) | 51.668.614 | no disponible | apache-2.0 | HuggingFace, librería lerobot | Entrenado con 3 pasos sobre 120 episodios; sin evaluación publicada |
+| rubatotree/classify-the-blocks-act (ACT) | 51.668.614 | no disponible | apache-2.0 | Hugging Face, librería lerobot | Entrenado con 3 pasos sobre 120 episodios; sin evaluación publicada |
 | Diffusion Policy (LeRobot) | no disponible | no disponible | no disponible | no disponible | Método alternativo de imitación basado en difusión, citado como opción en el ecosistema LeRobot |
 | SmolVLA (LeRobot) | no disponible | no disponible | no disponible | no disponible | Política visión-lenguaje-acción del ecosistema LeRobot; no comparable en tamaño con ACT |
 | ACT genérico del paper 2304.13705 | no disponible | no disponible | no disponible | no disponible | Método original orientado a manipulación bimanual con hardware de bajo coste |
@@ -98,7 +98,7 @@ La información proporcionada solo contiene datos verificables de esta política
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rubatotree/classify-the-blocks-act
+- Modelo en Hugging Face: https://huggingface.co/rubatotree/classify-the-blocks-act
 - Dataset de entrenamiento: https://huggingface.co/datasets/rubatotree/classify_the_blocks
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=rubatotree/classify_the_blocks
 - Paper de ACT: https://huggingface.co/papers/2304.13705

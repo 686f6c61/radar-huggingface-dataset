@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RoboSyn-pi05-weak4 es un checkpoint de un modelo vision-language-action (VLA) para robotica, publicado por el usuario QuixoteH en HuggingFace. Se trata de un ajuste fino de pi0.5 (familia openpi) sobre cuatro tareas de simulacion del RoboSynChallenge: sample_loading, items_handover, handle_basket y click_bell. El entrenamiento se realizo durante 12.000 pasos partiendo del checkpoint `pi05_base` y utiliza los conjuntos de datos de simulacion liberados oficialmente por el reto, con 1000 episodios por tarea (4000 episodios en total).
+RoboSyn-pi05-weak4 es un checkpoint de un modelo vision-language-action (VLA) para robotica, publicado por el usuario QuixoteH en Hugging Face. Se trata de un ajuste fino de pi0.5 (familia openpi) sobre cuatro tareas de simulacion del RoboSynChallenge: sample_loading, items_handover, handle_basket y click_bell. El entrenamiento se realizo durante 12.000 pasos partiendo del checkpoint `pi05_base` y utiliza los conjuntos de datos de simulacion liberados oficialmente por el reto, con 1000 episodios por tarea (4000 episodios en total).
 
 El modelo se distribuye como checkpoint de solo inferencia, con parametros en bf16 y estadisticas de normalizacion incluidas en el directorio `assets/`. El repositorio ocupa 5,3 GB. La configuracion de entrenamiento asociada es `pi05_robosyn_all10`, definida en `policy/pi05/src/openpi/training/config.py` del repositorio GitHub de RoboSyn, y el checkpoint se emplea a traves de la politica `policy/robosyn_mix` del equipo LBWSquare en el RoboSynChallenge de NeurIPS 2026.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RoboSyn-pi05-weak4 | no disponible | no disponible | 4 tareas de simulacion del RoboSynChallenge | Apache-2.0 | HuggingFace (QuixoteH) |
+| RoboSyn-pi05-weak4 | no disponible | no disponible | 4 tareas de simulacion del RoboSynChallenge | Apache-2.0 | Hugging Face (QuixoteH) |
 | pi05_base (openpi) | no disponible | no disponible | Modelo base del que deriva este checkpoint | no disponible en la informacion proporcionada | Referenciado en la model card, sin URL |
 | Otros checkpoints del RoboSynChallenge | no disponible | no disponible | Segun configuracion, p. ej. `pi05_robosyn_all10` | no disponible | no disponible |
 
@@ -88,7 +88,7 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QuixoteH/RoboSyn-pi05-weak4
+- Modelo en Hugging Face: https://huggingface.co/QuixoteH/RoboSyn-pi05-weak4
 - Repositorio GitHub de RoboSyn (mencionado en la model card): https://github.com/QuixoteH/RoboSyn
 - Configuracion de entrenamiento: `policy/pi05/src/openpi/training/config.py` dentro del repositorio anterior
 - Politica de uso en competicion: `policy/robosyn_mix` (equipo LBWSquare, RoboSynChallenge, NeurIPS 2026)

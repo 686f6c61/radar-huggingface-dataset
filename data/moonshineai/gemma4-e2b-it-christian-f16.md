@@ -17,7 +17,7 @@ Su relevancia inmediata es limitada pero clara: se trata de un derivado muy reci
 | Parámetros activos | No disponible |
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | F16 (GGUF); no se documentan otras cuantizaciones en el repositorio |
-| Idiomas soportados | No disponible (la model card no declara idiomas; el etiquetado de HuggingFace no incluye el campo de idioma) |
+| Idiomas soportados | No disponible (la model card no declara idiomas; el etiquetado de Hugging Face no incluye el campo de idioma) |
 | Licencia | MIT |
 | Formato de pesos | GGUF (etiqueta `gguf` en el repositorio; el nombre del modelo indica F16) |
 
@@ -34,7 +34,7 @@ Tampoco se dispone de datos sobre el entrenamiento: número de tokens, composici
 - Generación de texto conversacional: el etiquetado del repositorio incluye `conversational` y el nombre incorpora "it" (instruction-tuned), por lo que el modelo está orientado a diálogo siguiendo instrucciones.
 - Especialización temática cristiana: el sufijo "christian" indica un ajuste orientado a contenido religioso, aunque no se especifica el alcance ni la confesión concreta del corpus empleado.
 - Capacidades multimodales heredadas: el modelo base Gemma 4 E2B admite entrada de texto e imagen, y audio en los tamaños pequeños. No se confirma que estas capacidades se conserven tras el ajuste ni que estén operativas en el archivo GGUF distribuido.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el artefacto puede desplegarse en la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el artefacto puede desplegarse en la infraestructura de inferencia de Hugging Face.
 - Soporte de tool calling o function calling: no disponible en la información proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
 - Modo de razonamiento explícito (thinking mode): no disponible en la información proporcionada.

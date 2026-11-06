@@ -93,7 +93,7 @@ No se dispone de datos de otras alternativas de 0,6B en la información proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nealfennimore/sesame-tool-qwen3-0.6b-q0f32-MLC
+- Modelo en Hugging Face: https://huggingface.co/nealfennimore/sesame-tool-qwen3-0.6b-q0f32-MLC
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio del proyecto: no disponible en la información proporcionada.
 - Runtime WebLLM: no se proporciona URL; el nombre indicado es `Qwen3-0.6B-q0f32_cs1k-webgpu.wasm`.

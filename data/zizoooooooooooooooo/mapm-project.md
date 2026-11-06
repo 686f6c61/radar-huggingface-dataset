@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MAPM-Project es un repositorio alojado en HuggingFace bajo el identificador `zizoooooooooooooooo/MAPM-Project`, publicado por el usuario `zizoooooooooooooooo`. En el momento de la consulta el repositorio no declara pipeline de inferencia, licencia, idiomas soportados ni ficha técnica alguna, y acumula 0 descargas y 1 like. El repositorio fue creado y actualizado en la misma fecha (2026-10-10T19:04:39.000Z), lo que sugiere una subida única sin mantenimiento posterior documentado.
+MAPM-Project es un repositorio alojado en Hugging Face bajo el identificador `zizoooooooooooooooo/MAPM-Project`, publicado por el usuario `zizoooooooooooooooo`. En el momento de la consulta el repositorio no declara pipeline de inferencia, licencia, idiomas soportados ni ficha técnica alguna, y acumula 0 descargas y 1 like. El repositorio fue creado y actualizado en la misma fecha (2026-10-10T19:04:39.000Z), lo que sugiere una subida única sin mantenimiento posterior documentado.
 
 No se dispone de información verificable sobre el problema que resuelve, la arquitectura empleada, el tamaño del modelo, la longitud de contexto ni el proceso de entrenamiento. El nombre del repositorio contiene el acrónimo "MAPM", pero no se ha encontrado ninguna publicación, paper, blog o repositorio de código que lo desarrolle o lo explique, por lo que no es posible confirmar a qué corresponde.
 
@@ -86,7 +86,7 @@ No disponible. Sin conocer la categoría, el tamaño ni la tarea del modelo, no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zizoooooooooooooooo/MAPM-Project
+- Repositorio en Hugging Face: https://huggingface.co/zizoooooooooooooooo/MAPM-Project
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de código: no disponible

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`abderrazak06/camembert-ner-franceinter` es un checkpoint de transformers publicado en HuggingFace por el usuario abderrazak06, etiquetado con el pipeline `token-classification` y la arquitectura `camembert`. Por el nombre y las etiquetas, se trata de un ajuste fino (fine-tuning) de un modelo CamemBERT para reconocimiento de entidades nombradas (NER), presumiblemente orientado a contenido de la emisora francesa France Inter. No hay documentacion que confirme este extremo.
+`abderrazak06/camembert-ner-franceinter` es un checkpoint de transformers publicado en Hugging Face por el usuario abderrazak06, etiquetado con el pipeline `token-classification` y la arquitectura `camembert`. Por el nombre y las etiquetas, se trata de un ajuste fino (fine-tuning) de un modelo CamemBERT para reconocimiento de entidades nombradas (NER), presumiblemente orientado a contenido de la emisora francesa France Inter. No hay documentacion que confirme este extremo.
 
 El repositorio cuenta con 0 descargas y 0 likes en el momento de la consulta, fue creado el 11 de septiembre de 2026 y ocupa 0,4 GB. El recuento real de parametros extraido de los pesos safetensors es de 110.032.898, cifra que coincide con el tamano de `camembert-base` (aproximadamente 110 M), lo que es coherente con un encoder transformer tipo RoBERTa entrenado sobre frances.
 
-Su relevancia es limitada en el estado actual: la model card es la plantilla autogenerada de HuggingFace sin ningun campo completado (autor, datos de entrenamiento, licencia, idiomas y evaluacion figuran como "[More Information Needed]"). Es util unicamente como punto de partida para quien quiera inspeccionar los pesos o continuar el fine-tuning, no como componente listo para produccion.
+Su relevancia es limitada en el estado actual: la model card es la plantilla autogenerada de Hugging Face sin ningun campo completado (autor, datos de entrenamiento, licencia, idiomas y evaluacion figuran como "[More Information Needed]"). Es util unicamente como punto de partida para quien quiera inspeccionar los pesos o continuar el fine-tuning, no como componente listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -74,10 +74,10 @@ Los datos de las alternativas no se han verificado en la informacion recogida; s
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| abderrazak06/camembert-ner-franceinter | 110.032.898 | no disponible (familia CamemBERT-base: hasta 512 tokens) | no disponible | HuggingFace, 0 descargas, 0 likes |
-| Jean-Baptiste/camembert-ner | deriva de camembert-base (no verificado) | no disponible | no disponible | HuggingFace, ampliamente utilizado como referencia de NER en frances |
-| Davlan/xlm-roberta-base-ner-hrl | no disponible | no disponible | no disponible | HuggingFace, NER multilingue de alta recurrencia |
-| spaCy `fr_core_news_lg` | no disponible | no disponible | licencia MIT (spaCy), no verificada para el modelo concreto | Paquete de spaCy, no HuggingFace |
+| abderrazak06/camembert-ner-franceinter | 110.032.898 | no disponible (familia CamemBERT-base: hasta 512 tokens) | no disponible | Hugging Face, 0 descargas, 0 likes |
+| Jean-Baptiste/camembert-ner | deriva de camembert-base (no verificado) | no disponible | no disponible | Hugging Face, ampliamente utilizado como referencia de NER en frances |
+| Davlan/xlm-roberta-base-ner-hrl | no disponible | no disponible | no disponible | Hugging Face, NER multilingue de alta recurrencia |
+| spaCy `fr_core_news_lg` | no disponible | no disponible | licencia MIT (spaCy), no verificada para el modelo concreto | Paquete de spaCy, no Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ Los datos de las alternativas no se han verificado en la informacion recogida; s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abderrazak06/camembert-ner-franceinter
+- Modelo en Hugging Face: https://huggingface.co/abderrazak06/camembert-ner-franceinter
 - Paper de CamemBERT (arquitectura base): https://arxiv.org/abs/2002.02941
 - Referencia citada en las etiquetas del modelo (Lacoste et al., 2019, calculador de impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ML citado en la model card: https://mlco2.github.io/impact

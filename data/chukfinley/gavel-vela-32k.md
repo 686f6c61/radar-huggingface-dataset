@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chukfinley/gavel-vela-32k` es un modelo publicado en HuggingFace por el usuario chukfinley. Se trata de un modelo de 307.532.547 parámetros (aproximadamente 307,5 millones) almacenado en formato safetensors, con un repositorio de 6,2 GB. La etiqueta de arquitectura declarada en el repositorio es `modernbert`, lo que lo sitúa en la familia ModernBERT, una familia de transformers encoder-only diseñada para tareas de comprensión y representación de texto, no para generación autorregresiva. El sufijo "32k" del identificador sugiere una ventana de contexto de 32 768 tokens, aunque este dato no está confirmado en la información disponible.
+`chukfinley/gavel-vela-32k` es un modelo publicado en Hugging Face por el usuario chukfinley. Se trata de un modelo de 307.532.547 parámetros (aproximadamente 307,5 millones) almacenado en formato safetensors, con un repositorio de 6,2 GB. La etiqueta de arquitectura declarada en el repositorio es `modernbert`, lo que lo sitúa en la familia ModernBERT, una familia de transformers encoder-only diseñada para tareas de comprensión y representación de texto, no para generación autorregresiva. El sufijo "32k" del identificador sugiere una ventana de contexto de 32 768 tokens, aunque este dato no está confirmado en la información disponible.
 
 El modelo es prácticamente desconocido: acumula 28 descargas y 0 likes en el momento de la consulta, fue creado el 19 de septiembre de 2026 y actualizado el 20 de septiembre de 2026. No se ha publicado información sobre el pipeline asociado, la licencia, los idiomas soportados ni la composición del dataset de entrenamiento. Tampoco existe documentación técnica, paper ni entrada de blog vinculada al repositorio.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - El repositorio ocupa 6,2 GB, lo que sugiere que contiene varias copias de los pesos (por ejemplo, distintas precisiones o checkpoints intermedios); conviene verificar el contenido antes de descargarlo completo.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente en principio. Una RTX 3060, RTX 4060, RTX 4090 o GPUs de datacenter como A100 o H100 pueden ejecutarlo sin problema; el modelo es pequeño para todos estos aceleradores.
 - Cabe sin dificultad en GPU de consumo: sí, en cualquier GPU moderna con 4 GB o más de VRAM, e incluso en CPU para inferencia por lotes pequeños.
-- Opciones de despliegue: Transformers (PyTorch) es la vía más directa dado el formato safetensors. Text Embeddings Inference (TEI) de HuggingFace da soporte a la familia ModernBERT y sería la opción natural para servir embeddings o reranking, siempre que la configuración del modelo sea compatible. ONNX Runtime es otra alternativa. El soporte en vLLM, llama.cpp u Ollama no está confirmado y, al tratarse de un encoder, no es el caso de uso previsto de estas herramientas.
+- Opciones de despliegue: Transformers (PyTorch) es la vía más directa dado el formato safetensors. Text Embeddings Inference (TEI) de Hugging Face da soporte a la familia ModernBERT y sería la opción natural para servir embeddings o reranking, siempre que la configuración del modelo sea compatible. ONNX Runtime es otra alternativa. El soporte en vLLM, llama.cpp u Ollama no está confirmado y, al tratarse de un encoder, no es el caso de uso previsto de estas herramientas.
 - Latencia y throughput: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -75,10 +75,10 @@ La comparativa se realiza con modelos de la misma familia y rango de tamaño. Lo
 
 | Modelo | Parametros | Contexto nativo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| chukfinley/gavel-vela-32k | 307,5 M | no disponible (¿32k?) | no disponible | HuggingFace, 28 descargas |
-| ModernBERT-base | ~149 M | 8 192 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| ModernBERT-large | ~395 M | 8 192 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| DeBERTa-v3-base | ~184 M | 512 tokens | MIT | HuggingFace, muy extendido |
+| chukfinley/gavel-vela-32k | 307,5 M | no disponible (¿32k?) | no disponible | Hugging Face, 28 descargas |
+| ModernBERT-base | ~149 M | 8 192 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| ModernBERT-large | ~395 M | 8 192 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| DeBERTa-v3-base | ~184 M | 512 tokens | MIT | Hugging Face, muy extendido |
 
 En cuanto a rendimiento medido (benchmarks GLUE, MTEB u otros), no hay datos publicados para `gavel-vela-32k`, por lo que no es posible establecer una comparación cuantitativa. En términos prácticos, las alternativas de la tabla cuentan con licencias permisivas, documentación completa, amplio soporte en herramientas y comunidades activas, ventajas de las que este modelo carece.
 
@@ -97,7 +97,7 @@ En cuanto a rendimiento medido (benchmarks GLUE, MTEB u otros), no hay datos pub
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chukfinley/gavel-vela-32k
+- Repositorio en Hugging Face: https://huggingface.co/chukfinley/gavel-vela-32k
 - Paper de ModernBERT (referencia de la arquitectura declarada): https://arxiv.org/abs/2412.13663
-- Repositorio de ModernBERT en HuggingFace: https://huggingface.co/answerdotai/ModernBERT-base
+- Repositorio de ModernBERT en Hugging Face: https://huggingface.co/answerdotai/ModernBERT-base
 - No se han encontrado otros enlaces relevantes: los resultados de la búsqueda web devuelta corresponden íntegramente a páginas de cuestionarios diarios de Bing, sin relación alguna con el modelo.

@@ -86,7 +86,7 @@ No se dispone de informacion suficiente sobre el rendimiento ni el contexto de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PS4CoT/gemma4-31b-sdf-true-1k
+- Hugging Face: https://huggingface.co/PS4CoT/gemma4-31b-sdf-true-1k
 - Repositorio de codigo CoT-Verse: https://github.com/ps-research/CoT-Verse
 - Modelo base: https://huggingface.co/google/gemma-4-31b-it
 - Pagina de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/

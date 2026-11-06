@@ -6,13 +6,13 @@
 
 El contenido principal es `notes.md`, un documento estructurado que cubre el alcance de la pregunta de investigacion y sus posibles factores de confusion, una comparacion propuesta con baselines emparejados, contexto de evaluacion concreto (Flickr30k y MS COCO Captions), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. Las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 
-Es relevante unicamente como material de planificacion metodologica para quien trabaje en recuperacion multimodal: sirve para ver que evaluaciones se proponen, que baselines se consideran y que preguntas quedan abiertas. No hay pesos utilizables, ni tarjeta de modelo con metricas, ni pipeline declarado en HuggingFace, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta. Cualquier uso en produccion es, por tanto, inviable con este artefacto.
+Es relevante unicamente como material de planificacion metodologica para quien trabaje en recuperacion multimodal: sirve para ver que evaluaciones se proponen, que baselines se consideran y que preguntas quedan abiertas. No hay pesos utilizables, ni tarjeta de modelo con metricas, ni pipeline declarado en Hugging Face, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta. Cualquier uso en produccion es, por tanto, inviable con este artefacto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el repositorio no contiene un modelo entrenado; la etiqueta `transformer` de HuggingFace no se corresponde con ningun checkpoint publicado) |
+| Arquitectura | no disponible (el repositorio no contiene un modelo entrenado; la etiqueta `transformer` de Hugging Face no se corresponde con ningun checkpoint publicado) |
 | Parametros totales | 33.088 (33 088) segun el recuento del archivo safetensors; consistente con tensores residuales de configuracion, no con un modelo funcional |
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Es relevante unicamente como material de planificacion metodologica para quien t
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre arquitectura de red, dataset de entrenamiento, numero de tokens, composicion de datos ni fases de alineacion (RLHF, DPO u otras). El repositorio no incluye codigo de entrenamiento, scripts de evaluacion ni logs. La etiqueta `transformer` figura entre las etiquetas de HuggingFace, pero no viene acompanada de configuracion de modelo, ficha de arquitectura ni checkpoint utilizable, por lo que no puede inferirse ninguna decision de diseno a partir de ella.
+No hay informacion sobre arquitectura de red, dataset de entrenamiento, numero de tokens, composicion de datos ni fases de alineacion (RLHF, DPO u otras). El repositorio no incluye codigo de entrenamiento, scripts de evaluacion ni logs. La etiqueta `transformer` figura entre las etiquetas de Hugging Face, pero no viene acompanada de configuracion de modelo, ficha de arquitectura ni checkpoint utilizable, por lo que no puede inferirse ninguna decision de diseno a partir de ella.
 
 El unico contenido tecnico declarado es metodologico: la propuesta de comparar contra baselines emparejados, el uso de Flickr30k y MS COCO Captions como contexto de evaluacion, y la exigencia de que cualquier resultado futuro incluya versiones de dataset, comandos, semillas, hardware y logs en bruto. Se trata, por tanto, de un documento de planificacion, no de una contribucion de modelado.
 
@@ -79,9 +79,9 @@ No disponible. Este repositorio no es comparable con modelos de recuperacion tex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SatoshiShe/review-text-image-retrieval
-- Fichero `notes.md`: incluido en el repositorio de HuggingFace (artefacto principal).
-- Fichero `README.md`: incluido en el repositorio de HuggingFace (documentacion).
+- Hugging Face: https://huggingface.co/SatoshiShe/review-text-image-retrieval
+- Fichero `notes.md`: incluido en el repositorio de Hugging Face (artefacto principal).
+- Fichero `README.md`: incluido en el repositorio de Hugging Face (documentacion).
 - Referencias tematicas: citadas de forma generica en el README sin URL; no se dispone de enlaces directos.
 - Conjuntos de datos mencionados: Flickr30k y MS COCO Captions, sin enlace proporcionado en la informacion disponible.
 - Nota sobre la busqueda web: los resultados recuperados corresponden al registro mercantil de la Republica Eslovaca (`orsr.sk`, `justice.gov.sk`) y no guardan ninguna relacion con este modelo ni con recuperacion texto-imagen, por lo que no se incluyen como enlaces relevantes.

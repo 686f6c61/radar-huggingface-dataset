@@ -6,7 +6,7 @@ El modelo `amd/gemma-4-e2b-it-mobius-int4_rai_1.9.0_npu` es una distribución op
 
 La relevancia de esta ficha radica en que se trata de un artefacto de despliegue, no de un modelo entrenado desde cero por AMD: el trabajo de la compañía se centra en la cuantización, el empaquetado ONNX y la integración con el stack Ryzen AI. La información pública del repositorio es muy limitada (0 descargas y 0 likes en el momento de la consulta, acceso restringido y sin model card detallada), por lo que muchos datos técnicos deben marcarse como no disponibles.
 
-El tamaño del repositorio es de 15,1 GB, lo que resulta coherente con un paquete que incluye pesos cuantizados a int4 junto con artefactos de compilación para NPU. El acceso está restringido: es necesario aceptar las condiciones de la licencia Gemma en HuggingFace antes de descargar los ficheros.
+El tamaño del repositorio es de 15,1 GB, lo que resulta coherente con un paquete que incluye pesos cuantizados a int4 junto con artefactos de compilación para NPU. El acceso está restringido: es necesario aceptar las condiciones de la licencia Gemma en Hugging Face antes de descargar los ficheros.
 
 ## Especificaciones tecnicas
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato / destino | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/gemma-4-e2b-it-mobius-int4_rai_1.9.0_npu | No disponible (familia Gemma 4 E2B) | No disponible | ONNX int4 para NPU Ryzen AI | Gemma | Gated en HuggingFace |
-| Modelo base Gemma 4 E2B IT (Google) | No disponible en esta ficha | No disponible | Safetensors / GGUF según distribución oficial | Gemma | Público en HuggingFace |
+| amd/gemma-4-e2b-it-mobius-int4_rai_1.9.0_npu | No disponible (familia Gemma 4 E2B) | No disponible | ONNX int4 para NPU Ryzen AI | Gemma | Gated en Hugging Face |
+| Modelo base Gemma 4 E2B IT (Google) | No disponible en esta ficha | No disponible | Safetensors / GGUF según distribución oficial | Gemma | Público en Hugging Face |
 | Otras distribuciones cuantizadas de Gemma para CPU/GPU | No disponible | No disponible | GGUF, ONNX, etc. | Gemma | Público |
 
 La comparación cuantitativa con alternativas no es posible con la información disponible: no se han publicado parámetros exactos, contexto ni resultados de benchmarks para esta distribución concreta.
@@ -76,14 +76,14 @@ La comparación cuantitativa con alternativas no es posible con la información 
 - Sesgos: al derivar del modelo base Gemma, hereda los sesgos presentes en sus datos de entrenamiento; no se documenta un proceso adicional de mitigación en esta distribución.
 - Alucinación: riesgo inherente a los modelos generativos; la cuantización int4 puede incrementar ligeramente la degradación en tareas de precisión.
 - Licencia: se rige por los Gemma Terms of Use; es necesario revisar las restricciones de uso comercial y las obligaciones de atribución antes de desplegarlo en producción.
-- Acceso restringido: el repositorio es gated y requiere aceptar las condiciones en HuggingFace; la descarga no es anónima.
+- Acceso restringido: el repositorio es gated y requiere aceptar las condiciones en Hugging Face; la descarga no es anónima.
 - Dependencia de hardware: el artefacto está atado a la NPU Ryzen AI y al runtime RAI 1.9.0; no es portable a otros aceleradores sin reconversión.
 - Información escasa: no hay model card detallada, benchmarks ni documentación de calibración publicados en el repositorio, lo que dificulta evaluar su calidad frente al modelo base.
 - Fecha de creación: el repositorio figura creado el 2026-11-02, dato que conviene verificar por si se trata de un artefacto con metadatos inconsistentes.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amd/gemma-4-e2b-it-mobius-int4_rai_1.9.0_npu
+- Repositorio en Hugging Face: https://huggingface.co/amd/gemma-4-e2b-it-mobius-int4_rai_1.9.0_npu
 - Página de los Gemma Terms of Use: no disponible en la información proporcionada (referenciada por la licencia `gemma`).
 - Documentación del runtime Ryzen AI (RAI): no disponible en la información proporcionada.
 - Paper o blog de AMD sobre Mobius: no disponible en la información proporcionada.

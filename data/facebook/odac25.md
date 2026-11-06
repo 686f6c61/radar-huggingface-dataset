@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ODAC25 es un modelo publicado por la organizacion `facebook` (Meta) en HuggingFace bajo el identificador `facebook/ODAC25`, con acceso restringido: es necesario aceptar condiciones en la plataforma antes de poder descargar los pesos. El repositorio ocupa 1,6 GB y esta etiquetado con el identificador arXiv 2508.03162, lo que vincula su publicacion a un articulo tecnico, aunque el contenido de dicho articulo no forma parte de la informacion disponible para esta ficha.
+ODAC25 es un modelo publicado por la organizacion `facebook` (Meta) en Hugging Face bajo el identificador `facebook/ODAC25`, con acceso restringido: es necesario aceptar condiciones en la plataforma antes de poder descargar los pesos. El repositorio ocupa 1,6 GB y esta etiquetado con el identificador arXiv 2508.03162, lo que vincula su publicacion a un articulo tecnico, aunque el contenido de dicho articulo no forma parte de la informacion disponible para esta ficha.
 
 La informacion consultada no permite confirmar arquitectura, numero de parametros, longitud de contexto ni idiomas: la pagina no declara pipeline ni lenguajes soportados, y las busquedas web realizadas devolvieron unicamente resultados sobre la red social Facebook, sin material tecnico sobre el modelo. Cualquier cifra que se diera en esta ficha seria una invencion, por lo que se marca explicitamente como no disponible.
 
@@ -21,7 +21,7 @@ Su relevancia actual es la de un artefacto a evaluar antes de usarlo: acceso con
 | Licencia | other (terminos concretos no detallados en la informacion disponible) |
 | Formato de pesos | no disponible (repositorio de 1,6 GB) |
 | Desarrollador | facebook (Meta) |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Referencia tecnica | arXiv 2508.03162 (contenido no verificado en la informacion disponible) |
 | Fecha de creacion del repositorio | 2025-06-13 |
 | Ultima actualizacion | 2026-10-29 |
@@ -40,7 +40,7 @@ El unico dato con valor estructural es el tamano del repositorio (1,6 GB). Como 
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; el campo de idiomas aparece como no disponible en la pagina del repositorio.
 - Capacidades especiales (modo thinking, audio, vision, decodificacion especulativa): no disponible.
-- Lo unico verificable es el mecanismo de distribucion: acceso condicionado a la aceptacion de terminos en HuggingFace y un unico artefacto de 1,6 GB.
+- Lo unico verificable es el mecanismo de distribucion: acceso condicionado a la aceptacion de terminos en Hugging Face y un unico artefacto de 1,6 GB.
 
 ## Casos de uso
 
@@ -83,7 +83,7 @@ Una vez determinado el tamano y la tarea, los ejes de comparacion pertinentes se
 ## Limitaciones y advertencias
 
 - Licencia "other": los terminos no estan detallados en la informacion disponible. Es obligatorio leer el texto completo de la licencia en el repositorio antes de cualquier uso comercial, de redistribucion o de entrenamiento derivado.
-- Acceso restringido (gated): la descarga requiere una cuenta de HuggingFace y la aceptacion de condiciones, lo que anade una dependencia operativa y puede limitar la automatizacion de pipelines de CI.
+- Acceso restringido (gated): la descarga requiere una cuenta de Hugging Face y la aceptacion de condiciones, lo que anade una dependencia operativa y puede limitar la automatizacion de pipelines de CI.
 - Ausencia total de especificaciones publicas en la informacion consultada: sin arquitectura, parametros, contexto ni idiomas declarados, no es posible estimar coste de inferencia ni calidad esperada.
 - Sin benchmarks publicados: no hay evidencia cuantitativa de rendimiento; cualquier afirmacion sobre su calidad seria una suposicion.
 - Idiomas no declarados: existe riesgo real de rendimiento deficiente en castellano; debe medirse antes de usarlo en producto para ese idioma.
@@ -96,7 +96,7 @@ Una vez determinado el tamano y la tarea, los ejes de comparacion pertinentes se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/facebook/ODAC25 (acceso restringido)
+- Hugging Face: https://huggingface.co/facebook/ODAC25 (acceso restringido)
 - Articulo referenciado en las etiquetas: https://arxiv.org/abs/2508.03162 (contenido no verificado en la informacion disponible)
 - Version PDF del articulo: https://arxiv.org/pdf/2508.03162
 - Nota: las busquedas web realizadas devolvieron unicamente resultados sobre la red social Facebook (facebook.com, fr-fr.facebook.com, login.php, l.facebook.com, clubic.com), sin enlaces tecnicos adicionales sobre el modelo.

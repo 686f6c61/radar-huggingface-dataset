@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vcruz305/DSV41-Flash-SAGE-TP4-445g-wip` es un repositorio de pesos publicado en HuggingFace por el usuario vcruz305, con acceso restringido (gated): para descargarlo es necesario aceptar las condiciones del autor en la plataforma. El repositorio ocupa 280,2 GB, no registra descargas ni "likes" y su licencia figura como `other`, es decir, una licencia personalizada cuyo texto no se detalla en la informacion disponible. No se han publicado pipeline, idiomas soportados ni ficha tecnica asociada.
+`vcruz305/DSV41-Flash-SAGE-TP4-445g-wip` es un repositorio de pesos publicado en Hugging Face por el usuario vcruz305, con acceso restringido (gated): para descargarlo es necesario aceptar las condiciones del autor en la plataforma. El repositorio ocupa 280,2 GB, no registra descargas ni "likes" y su licencia figura como `other`, es decir, una licencia personalizada cuyo texto no se detalla en la informacion disponible. No se han publicado pipeline, idiomas soportados ni ficha tecnica asociada.
 
 El identificador del repositorio contiene indicios que no pueden confirmarse con los datos disponibles: el prefijo `DSV41` podria remitir a una familia de modelos de tipo DeepSeek, la etiqueta `Flash` sugiere una variante optimizada para inferencia rapida, `TP4` apunta a un checkpoint configurado para tensor parallelism sobre 4 dispositivos, `SAGE` podria referirse a un metodo de atencion o cuantizacion y `wip` indica "work in progress". Ninguna de estas lecturas esta respaldada por documentacion oficial en la informacion proporcionada, por lo que deben tratarse unicamente como hipotesis de trabajo.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es limitada y sobre todo cautelar: se trata de un ar
 | Licencia | other (licencia personalizada, sin texto detallado en la informacion disponible) |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 280,2 GB |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 2026-09-11 |
 | Ultima actualizacion | 2026-09-11 |
 | Descargas / likes | 0 / 0 |
@@ -73,7 +73,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, el contexto
 ## Limitaciones y advertencias
 
 - Ausencia total de ficha tecnica: no hay informacion sobre arquitectura, datos de entrenamiento, tokenizador ni contexto, lo que impide evaluar el modelo con criterios minimos de rigor.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, por lo que el uso esta sujeto a la aprobacion del autor.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, por lo que el uso esta sujeto a la aprobacion del autor.
 - Licencia `other` sin texto publicado en la informacion disponible: no puede asumirse permiso para uso comercial, redistribucion ni fine-tuning. Es imprescindible revisar los terminos exactos antes de cualquier uso en produccion.
 - Estado de trabajo en curso (`wip`): el contenido puede ser incompleto, inestable o estar sujeto a cambios sin aviso.
 - Riesgo de sesgos y alucinacion: no evaluable, porque no hay informacion sobre datos de entrenamiento ni sobre etapas de alineacion.
@@ -84,6 +84,6 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, el contexto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vcruz305/DSV41-Flash-SAGE-TP4-445g-wip
+- Repositorio en Hugging Face: https://huggingface.co/vcruz305/DSV41-Flash-SAGE-TP4-445g-wip
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - Nota sobre la busqueda web: los resultados devueltos no guardan relacion con el modelo (corresponden a paginas informativas de un servicio de mensajeria) y no aportan informacion tecnica aprovechable.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-walk-antoine es una política de control robótico publicada por el usuario apirrone en HuggingFace, distribuida como un único fichero `policy.onnx` dentro del ecosistema denominado Microduck Arena. No se trata de un modelo de lenguaje ni de un modelo generativo: es una política de locomoción que consume una observación de 61 valores y produce 14 consignas de articulación (*joint targets*) a una frecuencia de 50 Hz, tal como se describe en su model card.
+microduck-walk-antoine es una política de control robótico publicada por el usuario apirrone en Hugging Face, distribuida como un único fichero `policy.onnx` dentro del ecosistema denominado Microduck Arena. No se trata de un modelo de lenguaje ni de un modelo generativo: es una política de locomoción que consume una observación de 61 valores y produce 14 consignas de articulación (*joint targets*) a una frecuencia de 50 Hz, tal como se describe en su model card.
 
 El modelo se enmarca en el ámbito de la robótica con aprendizaje por refuerzo o imitación, donde una red entrenada en simulación se exporta a ONNX para ejecutarse en el bucle de control de un robot real o simulado. La única documentación disponible es la referencia a `manifest.json` como contrato completo de la interfaz, y no se detallan la topología de red, el número de parámetros ni el procedimiento de entrenamiento.
 
@@ -92,7 +92,7 @@ No disponible. La informacion proporcionada no identifica otras politicas de la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/apirrone/microduck-walk-antoine
+- Hugging Face: https://huggingface.co/apirrone/microduck-walk-antoine
 - Microduck Arena: mencionada en la model card como origen de la publicacion, sin URL disponible.
 - `manifest.json`: referenciado en la model card como contrato completo, sin URL directa disponible.
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes sobre el modelo; las busquedas devolvieron unicamente paginas de herramientas ofimaticas sin relacion con el artefacto.

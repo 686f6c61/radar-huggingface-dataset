@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ishikaa/acquisition_student_DataEnvGym_medmcqa_qwen7b_10000 es un checkpoint de 7.615.616.512 parámetros publicado en HuggingFace por el usuario ishikaa, con 177 descargas y ningún "like" en el momento de redactar esta ficha. A partir del nombre del repositorio y de las etiquetas declaradas (qwen2, trl, sft, conversational), todo apunta a un ajuste fino supervisado de un modelo de la familia Qwen2 de 7B orientado a responder preguntas de opción múltiple del dataset MedMCQA, sobre un subconjunto de 10.000 ejemplos, y producido en el marco del proyecto DataEnvGym.
+ishikaa/acquisition_student_DataEnvGym_medmcqa_qwen7b_10000 es un checkpoint de 7.615.616.512 parámetros publicado en Hugging Face por el usuario ishikaa, con 177 descargas y ningún "like" en el momento de redactar esta ficha. A partir del nombre del repositorio y de las etiquetas declaradas (qwen2, trl, sft, conversational), todo apunta a un ajuste fino supervisado de un modelo de la familia Qwen2 de 7B orientado a responder preguntas de opción múltiple del dataset MedMCQA, sobre un subconjunto de 10.000 ejemplos, y producido en el marco del proyecto DataEnvGym.
 
 El interés del checkpoint es acotado pero pertinente para quien investiga pipelines de adquisición de datos y entornos de entrenamiento: por la nomenclatura ("acquisition_student"), parece tratarse de un modelo estudiante generado dentro de un bucle de selección o adquisición de datos, no de un modelo de propósito general listo para producción. No hay ninguna señal de que se haya publicado una evaluación o una receta de entrenamiento reproducible.
 
-La model card es la plantilla automática de HuggingFace y no tiene ninguna sección completada: falta autoría confirmada, descripción de datos, hiperparámetros, resultados y licencia. Por ese motivo, la mayoría de las especificaciones habituales figuran aquí como "no disponible", y los pocos datos que se ofrecen proceden del recuento real de parámetros del repositorio o de inferencias a partir de etiquetas y nomenclatura, siempre señaladas como tal.
+La model card es la plantilla automática de Hugging Face y no tiene ninguna sección completada: falta autoría confirmada, descripción de datos, hiperparámetros, resultados y licencia. Por ese motivo, la mayoría de las especificaciones habituales figuran aquí como "no disponible", y los pocos datos que se ofrecen proceden del recuento real de parámetros del repositorio o de inferencias a partir de etiquetas y nomenclatura, siempre señaladas como tal.
 
 ## Especificaciones técnicas
 
@@ -27,7 +27,7 @@ La model card es la plantilla automática de HuggingFace y no tiene ninguna secc
 
 No hay información publicada sobre la arquitectura interna más allá de la etiqueta `qwen2`, que sitúa el checkpoint en la familia Qwen2 de Alibaba: transformer decoder-only con atención causal agrupada (GQA), normalización RMSNorm y activación SwiGLU. El recuento de 7.615.616.512 parámetros coincide con el tamaño del checkpoint Qwen2-7B, lo que refuerza la hipótesis de que se parte de ese modelo base, aunque el autor no lo confirma ni indica qué revisión concreta se utilizó.
 
-En cuanto al entrenamiento, las etiquetas `trl` y `sft` indican el uso de la librería TRL de HuggingFace en su flujo de ajuste fino supervisado, con formato conversacional. El nombre del repositorio sugiere que los datos de entrenamiento son 10.000 ejemplos derivados de MedMCQA (preguntas de examen médico de opción múltiple) y que la selección de esos ejemplos se realizó mediante un procedimiento de "adquisición" propio de DataEnvGym. No se documenta el número de tokens, la composición exacta del dataset, si hubo fases de RLHF o DPO, ni los hiperparámetros. La etiqueta `arxiv:1910.09700` corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono, insertado automáticamente por la plantilla de HuggingFace; no es un paper asociado al modelo.
+En cuanto al entrenamiento, las etiquetas `trl` y `sft` indican el uso de la librería TRL de Hugging Face en su flujo de ajuste fino supervisado, con formato conversacional. El nombre del repositorio sugiere que los datos de entrenamiento son 10.000 ejemplos derivados de MedMCQA (preguntas de examen médico de opción múltiple) y que la selección de esos ejemplos se realizó mediante un procedimiento de "adquisición" propio de DataEnvGym. No se documenta el número de tokens, la composición exacta del dataset, si hubo fases de RLHF o DPO, ni los hiperparámetros. La etiqueta `arxiv:1910.09700` corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono, insertado automáticamente por la plantilla de Hugging Face; no es un paper asociado al modelo.
 
 ## Capacidades
 
@@ -38,7 +38,7 @@ En cuanto al entrenamiento, las etiquetas `trl` y `sft` indican el uso de la lib
 - Comportamiento como agente o razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponibles; no hay declaración de idiomas.
 - Capacidades especiales (modo de razonamiento explícito, visión, audio): no disponibles.
-- Compatibilidad declarada con text-generation-inference y con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad declarada con text-generation-inference y con endpoints de Hugging Face (`endpoints_compatible`).
 
 ## Casos de uso
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para los pesos (cálculo a partir del recuento de parámetros): en fp16/bf16, unos 15,2 GB; en int8, unos 8 GB; en 4 bits (NF4, AWQ o GPTQ), entre 5 y 6 GB. A estas cifras hay que sumar la caché KV y las activaciones, que crecen con la longitud de contexto.
 - GPU de centro de datos: A100 40 GB, H100 80 GB y L40S 48 GB ejecutan el modelo en fp16 con margen amplio. Una A100 40 GB permite además contextos largos y lotes moderados.
 - GPU de consumo: RTX 4090 o RTX 3090 (24 GB) pueden cargar los pesos en fp16 con contexto corto, y en 4 bits con comodidad. Una RTX 4080 (16 GB) o RTX 4070 Ti (16 GB) quedan al límite en fp16 y son viables en 4 bits. Tarjetas de 8-12 GB, como RTX 3060 o RTX 4060, solo son realistas con cuantización de 4 bits y contexto reducido.
-- Opciones de despliegue: `transformers` de forma nativa; text-generation-inference y vLLM sobre la arquitectura Qwen2; llama.cpp u Ollama únicamente tras convertir los pesos a GGUF, conversión que no está publicada en el repositorio. También es compatible con los endpoints gestionados de HuggingFace según sus etiquetas.
+- Opciones de despliegue: `transformers` de forma nativa; text-generation-inference y vLLM sobre la arquitectura Qwen2; llama.cpp u Ollama únicamente tras convertir los pesos a GGUF, conversión que no está publicada en el repositorio. También es compatible con los endpoints gestionados de Hugging Face según sus etiquetas.
 - Latencia y throughput: no disponible. No hay mediciones publicadas ni de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -68,10 +68,10 @@ La comparación se establece con modelos de la misma franja de parámetros y de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ishikaa/acquisition_student_DataEnvGym_medmcqa_qwen7b_10000 | 7,62 B | no disponible | no disponible | safetensors en HuggingFace; 177 descargas |
-| Qwen2-7B (base) | 7,62 B | 32.768 tokens nativos; hasta 131.072 con YaRN | Apache 2.0 | safetensors en HuggingFace |
-| Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | safetensors y GGUF en HuggingFace |
-| Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | safetensors y GGUF en HuggingFace |
+| ishikaa/acquisition_student_DataEnvGym_medmcqa_qwen7b_10000 | 7,62 B | no disponible | no disponible | safetensors en Hugging Face; 177 descargas |
+| Qwen2-7B (base) | 7,62 B | 32.768 tokens nativos; hasta 131.072 con YaRN | Apache 2.0 | safetensors en Hugging Face |
+| Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | safetensors y GGUF en Hugging Face |
+| Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | safetensors y GGUF en Hugging Face |
 
 En términos de rendimiento no hay comparación posible: los tres modelos de referencia publican resultados en MMLU, HumanEval o GSM8K, mientras que este checkpoint no ofrece ninguna métrica. La ventaja diferencial del checkpoint analizado no es la calidad, sino su papel como artefacto de investigación dentro de un experimento de adquisición de datos.
 
@@ -90,6 +90,6 @@ En términos de rendimiento no hay comparación posible: los tres modelos de ref
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_DataEnvGym_medmcqa_qwen7b_10000
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_DataEnvGym_medmcqa_qwen7b_10000
 - Artículo referenciado en la etiqueta automática del repositorio (Lacoste et al., 2019, sobre emisiones de carbono, no sobre el modelo): https://arxiv.org/abs/1910.09700
 - No se han encontrado en la búsqueda web otros enlaces relevantes al modelo, a DataEnvGym, a MedMCQA ni a ningún repositorio de código asociado. Los resultados devueltos correspondían a páginas de ayuda de YouTube, sin relación con el checkpoint.

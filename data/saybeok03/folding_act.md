@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La se
 
 | Modelo | Parametros | Contexto / observacion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `saybeok03/folding_act` (este) | 51,7 M | 3 cámaras + estado 48 dims; salida 16 dims | Sin evaluación publicada | Apache 2.0 | Hub de HuggingFace, 0 descargas |
+| `saybeok03/folding_act` (este) | 51,7 M | 3 cámaras + estado 48 dims; salida 16 dims | Sin evaluación publicada | Apache 2.0 | Hub de Hugging Face, 0 descargas |
 | ACT original (paper arXiv 2304.13705) | No disponible en la información proporcionada | Chunks de acciones sobre observaciones visuales y propioceptivas | Resultados publicados en el paper, no comparables con este checkpoint | No disponible | Referencia académica |
 | Diffusion Policy (implementación en LeRobot) | No disponible en la información proporcionada | Políticas de difusión sobre observaciones visuales | No disponible | No disponible | Disponible como tipo de política en LeRobot |
 | Políticas VLA tipo pi0 (LeRobot) | No disponible en la información proporcionada | Instrucciones en lenguaje natural + visión | No disponible | No disponible | Disponible en LeRobot |
@@ -105,7 +105,7 @@ La comparación cuantitativa no es posible con los datos disponibles: no hay una
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saybeok03/folding_act
+- Modelo en Hugging Face: https://huggingface.co/saybeok03/folding_act
 - Dataset de entrenamiento: https://huggingface.co/datasets/saybeok03/full_folding
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=saybeok03/full_folding
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv 2304.13705)

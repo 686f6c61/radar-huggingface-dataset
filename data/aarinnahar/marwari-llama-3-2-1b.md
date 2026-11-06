@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Marwari-Llama-3.2-1B es un ajuste fino (fine-tuning) del modelo Llama 3.2 1B Instruct de Meta, publicado por el usuario aarinnahar en HuggingFace. Se trata de un modelo de generación de texto de tipo decoder-only transformer con 1.235.814.400 parámetros, derivado concretamente de la versión cuantizada en 4 bits de Unsloth (`unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit`). El autor indica que el entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, lo que permitió un entrenamiento aproximadamente 2 veces más rápido que el flujo estándar.
+Marwari-Llama-3.2-1B es un ajuste fino (fine-tuning) del modelo Llama 3.2 1B Instruct de Meta, publicado por el usuario aarinnahar en Hugging Face. Se trata de un modelo de generación de texto de tipo decoder-only transformer con 1.235.814.400 parámetros, derivado concretamente de la versión cuantizada en 4 bits de Unsloth (`unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit`). El autor indica que el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, lo que permitió un entrenamiento aproximadamente 2 veces más rápido que el flujo estándar.
 
 El modelo hereda la arquitectura y la ventana de contexto de la familia Llama 3.2 1B, orientada a instrucciones y conversación, y está pensado para tareas de generación de texto en inglés. La model card es extremadamente escueta: no documenta el dataset de ajuste, el número de tokens de entrenamiento, hiperparámetros, ni resultados de evaluación. La licencia declarada es Apache 2.0, lo que facilita su uso comercial, aunque conviene verificar la procedencia de los datos de ajuste al no estar documentados.
 
@@ -45,7 +45,7 @@ El entrenamiento se realizó con Unsloth y TRL, según la model card, con una me
 - Prototipado de chatbots en inglés: el modelo puede gestionar conversaciones multi-turno sencillas en inglés, adecuado para demos y pruebas de concepto antes de migrar a un modelo mayor.
 - Generación de texto asistida en entornos con recursos limitados: al tener 1.2B parámetros, cabe en GPU de consumo y permite generar texto en tiempo real en portátiles con GPU modesta.
 - Clasificación y extracción de información simple: puede usarse para etiquetar o resumir textos cortos en inglés en pipelines de preprocesamiento, siempre con validación humana.
-- Educación y divulgación: útil para demostrar el ciclo completo de fine-tuning de un modelo Llama 3.2 1B con Unsloth, incluyendo la publicación en HuggingFace.
+- Educación y divulgación: útil para demostrar el ciclo completo de fine-tuning de un modelo Llama 3.2 1B con Unsloth, incluyendo la publicación en Hugging Face.
 - Base para nuevos ajustes de dominio: al estar bajo Apache 2.0, puede servir como punto de partida para fine-tunings específicos en inglés, aunque la falta de documentación del dataset original añade riesgo.
 - Evaluación comparativa de técnicas de cuantización: permite comparar el rendimiento de la versión bnb-4bit de partida frente al modelo fusionado en precisión completa.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Marwari-Llama-3.2-1B | 1.235.814.400 | no disponible (heredado de Llama 3.2 1B) | apache-2.0 | HuggingFace, 0 descargas | Fine-tuning sin documentación ni benchmarks |
-| Llama-3.2-1B-Instruct (Meta) | 1.235.814.400 | 131.072 tokens | Llama 3.2 Community License | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados por Meta |
-| Qwen2.5-1.5B-Instruct | 1.543.000.000 (aprox.) | 32.768 tokens | Apache 2.0 | HuggingFace, muy usado | Alternativa de tamaño similar con benchmarks publicados |
-| Gemma-2-2B-it | 2.614.000.000 (aprox.) | 8.192 tokens | Gemma Terms of Use | HuggingFace, ampliamente usado | Mayor tamaño y contexto menor, con evaluación oficial |
+| Marwari-Llama-3.2-1B | 1.235.814.400 | no disponible (heredado de Llama 3.2 1B) | apache-2.0 | Hugging Face, 0 descargas | Fine-tuning sin documentación ni benchmarks |
+| Llama-3.2-1B-Instruct (Meta) | 1.235.814.400 | 131.072 tokens | Llama 3.2 Community License | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados por Meta |
+| Qwen2.5-1.5B-Instruct | 1.543.000.000 (aprox.) | 32.768 tokens | Apache 2.0 | Hugging Face, muy usado | Alternativa de tamaño similar con benchmarks publicados |
+| Gemma-2-2B-it | 2.614.000.000 (aprox.) | 8.192 tokens | Gemma Terms of Use | Hugging Face, ampliamente usado | Mayor tamaño y contexto menor, con evaluación oficial |
 
 ## Limitaciones y advertencias
 
@@ -84,8 +84,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aarinnahar/Marwari-Llama-3.2-1B
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/aarinnahar/Marwari-Llama-3.2-1B
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 - Modelo Llama 3.2 1B Instruct de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct

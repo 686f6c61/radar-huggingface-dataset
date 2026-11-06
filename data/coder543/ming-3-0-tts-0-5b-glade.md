@@ -97,6 +97,6 @@ La comparación directa disponible es con el modelo base: este repositorio es un
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/coder543/ming-3.0-tts-0.5b-glade
-- Modelo base en HuggingFace: https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B
+- Hugging Face (este repositorio): https://huggingface.co/coder543/ming-3.0-tts-0.5b-glade
+- Modelo base en Hugging Face: https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B
 - Implementación de referencia upstream: https://github.com/inclusionAI/Ming-3.0-tts

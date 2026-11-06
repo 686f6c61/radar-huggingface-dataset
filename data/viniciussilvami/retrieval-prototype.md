@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ViniciusSilvami/retrieval-prototype es un repositorio de investigacion publicado en HuggingFace por el usuario ViniciusSilvami, cuyo objetivo declarado es servir de prototipo para tareas de retrieval utilizando una arquitectura de tipo Beit. El propio autor lo describe como "research-oriented" y advierte de forma explicita que el checkpoint incluido (`model.safetensors`) es unicamente una inicializacion valida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado. Se distribuye bajo licencia MIT y ocupa 0.0 GB en el repositorio, con 0 descargas y 0 likes en el momento de la consulta.
+ViniciusSilvami/retrieval-prototype es un repositorio de investigacion publicado en Hugging Face por el usuario ViniciusSilvami, cuyo objetivo declarado es servir de prototipo para tareas de retrieval utilizando una arquitectura de tipo Beit. El propio autor lo describe como "research-oriented" y advierte de forma explicita que el checkpoint incluido (`model.safetensors`) es unicamente una inicializacion valida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado. Se distribuye bajo licencia MIT y ocupa 0.0 GB en el repositorio, con 0 descargas y 0 likes en el momento de la consulta.
 
 El peso incluido en formato safetensors contiene 16.576 parametros totales, una cifra extraordinariamente baja para una arquitectura calificada como "base" (un BEiT-base convencional ronda los 86 millones de parametros), lo que refuerza la advertencia del autor: no se trata de un modelo funcional, sino de un esqueleto de inicializacion. La model card indica sparse attention, gated fusion, activacion gelu tanh y normalizacion rmsnorm, ademas de un recetario de entrenamiento por defecto con optimizador lamb y schedule de linear warmup, valores que el propio autor define como puntos de partida y no como evidencia de un entrenamiento completado.
 
-La relevancia de esta ficha es, por tanto, acotada: se trata de un artefacto de investigacion util como plantilla reproducible (incluye `eval.py`, `config.json` y `training_args.json`) y como referencia metodologica para disenar evaluaciones de retrieval, pero no es desplegable en produccion ni comparable con modelos de retrieval entrenados. No se han encontrado fuentes web relevantes sobre este repositorio; las busquedas devuelven exclusivamente resultados no relacionados (paginas de esquelas y obituarios en aleman), por lo que toda la informacion procede de los metadatos de HuggingFace y de la model card del autor.
+La relevancia de esta ficha es, por tanto, acotada: se trata de un artefacto de investigacion util como plantilla reproducible (incluye `eval.py`, `config.json` y `training_args.json`) y como referencia metodologica para disenar evaluaciones de retrieval, pero no es desplegable en produccion ni comparable con modelos de retrieval entrenados. No se han encontrado fuentes web relevantes sobre este repositorio; las busquedas devuelven exclusivamente resultados no relacionados (paginas de esquelas y obituarios en aleman), por lo que toda la informacion procede de los metadatos de Hugging Face y de la model card del autor.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es, por tanto, acotada: se trata de un artefacto de 
 | Licencia | MIT |
 | Formato de pesos | safetensors (checkpoint de inicializacion); PyTorch |
 
-Datos adicionales declarados por el autor en la model card: escala "base", activacion "gelu tanh", normalizacion rmsnorm, optimizador lamb con linear warmup, tamano del repositorio 0.0 GB, fecha de creacion 2026-09-11 y ultima actualizacion 2026-09-11 segun los metadatos de HuggingFace.
+Datos adicionales declarados por el autor en la model card: escala "base", activacion "gelu tanh", normalizacion rmsnorm, optimizador lamb con linear warmup, tamano del repositorio 0.0 GB, fecha de creacion 2026-09-11 y ultima actualizacion 2026-09-11 segun los metadatos de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -48,7 +48,7 @@ En la practica, el checkpoint publicado no tiene capacidades desplegables: es un
 - Verificacion de pipelines de carga de safetensors: al ser un checkpoint pequeno y valido, permite comprobar que un pipeline propio carga tensores correctamente antes de invertir en modelos mayores.
 - Pruebas de integracion de adaptadores personalizados: dado que requiere un adaptador explicito para APIs de carga generica, sirve para validar ese tipo de integracion en entornos propios.
 - Benchmarking de infraestructura y utilidades de entrenamiento: `training_args.json` y `eval.py` permiten comprobar que un stack de entrenamiento (optimizador lamb, warmup lineal, logging) arranca sin errores.
-- Docencia y ejercicios practicos: por su tamano minimo (0.0 GB) y su naturaleza no entrenada, es apto para ilustrar la estructura de un repositorio de modelo en HuggingFace sin coste de computo.
+- Docencia y ejercicios practicos: por su tamano minimo (0.0 GB) y su naturaleza no entrenada, es apto para ilustrar la estructura de un repositorio de modelo en Hugging Face sin coste de computo.
 
 En ningun caso estos usos implican inferencia util: el modelo no esta entrenado y no produce resultados significativos en retrieval.
 
@@ -75,7 +75,7 @@ Advertencia: los requisitos de hardware son irrelevantes en la practica porque e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ViniciusSilvami/retrieval-prototype | 16.576 (checkpoint de inicializacion) | no disponible | Sin benchmark publicado; no entrenado | MIT | HuggingFace, 0 descargas |
+| ViniciusSilvami/retrieval-prototype | 16.576 (checkpoint de inicializacion) | no disponible | Sin benchmark publicado; no entrenado | MIT | Hugging Face, 0 descargas |
 | BEiT-base (Microsoft) | ~86 M | no disponible en esta ficha | Entrenado y evaluado en tareas de vision | MIT | Pesos publicos |
 | CLIP ViT-B/32 (OpenAI) | ~151 M | 77 tokens de texto | Rendimiento publicado en retrieval imagen-texto | Licencia propia de OpenAI | Pesos publicos |
 | BLIP (Salesforce) | ~224 M (base) | no disponible en esta ficha | Rendimiento publicado en retrieval y captioning | Licencia propia (BSD-3 en variantes) | Pesos publicos |
@@ -97,7 +97,7 @@ La comparacion es estructural, no de rendimiento: el repositorio analizado no es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ViniciusSilvami/retrieval-prototype
+- Hugging Face: https://huggingface.co/ViniciusSilvami/retrieval-prototype
 - Paper de BEiT (referencia arquitectonica, no vinculada por el autor): https://arxiv.org/abs/2106.08254
 - Dataset Flickr30k, sugerido por el autor para la evaluacion: https://shannon.cs.illinois.edu/DenotationGraph/
 

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Clovis-7B es un adaptador LoRA publicado en HuggingFace por el usuario Radinkazemian bajo el identificador `Radinkazemian/Clovis-7B`. No se trata de un modelo entrenado desde cero, sino de un conjunto de pesos de ajuste fino (fine-tuning) que debe cargarse sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. El repositorio ocupa 0,3 GB, un tamaño coherente con pesos de adaptador y no con los aproximadamente 15 GB que ocuparían los pesos completos de un transformer de 7.000 millones de parámetros en precisión de 16 bits.
+Clovis-7B es un adaptador LoRA publicado en Hugging Face por el usuario Radinkazemian bajo el identificador `Radinkazemian/Clovis-7B`. No se trata de un modelo entrenado desde cero, sino de un conjunto de pesos de ajuste fino (fine-tuning) que debe cargarse sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. El repositorio ocupa 0,3 GB, un tamaño coherente con pesos de adaptador y no con los aproximadamente 15 GB que ocuparían los pesos completos de un transformer de 7.000 millones de parámetros en precisión de 16 bits.
 
-El problema que resuelve es, en principio, la especialización de un modelo generalista mediante un ajuste de bajo rango: en lugar de redistribuir un modelo completo, se publican únicamente las matrices de adaptación, lo que reduce el almacenamiento y permite combinarlo con otras adaptaciones. Sin embargo, la model card publicada es la plantilla por defecto de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) contienen el marcador `[More Information Needed]`.
+El problema que resuelve es, en principio, la especialización de un modelo generalista mediante un ajuste de bajo rango: en lugar de redistribuir un modelo completo, se publican únicamente las matrices de adaptación, lo que reduce el almacenamiento y permite combinarlo con otras adaptaciones. Sin embargo, la model card publicada es la plantilla por defecto de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) contienen el marcador `[More Information Needed]`.
 
 La relevancia del modelo es, por tanto, limitada y difícil de evaluar: cuenta con 0 descargas y 0 likes en el momento de la consulta, no declara licencia, no documenta el dataset de ajuste ni el procedimiento de entrenamiento, y no publica ningún resultado de evaluación. Cualquier uso en producción exigiría una validación propia, dado que no hay evidencia pública de su comportamiento. Los únicos datos técnicos verificables son la librería de publicación (PEFT 0.20.0), el formato (safetensors), el modelo base declarado y las fechas de creación y actualización del repositorio (12 de septiembre de 2026).
 
@@ -78,7 +78,7 @@ No se dispone de comparativas de rendimiento con alternativas de la misma catego
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card es la plantilla por defecto de HuggingFace. No especifica propósito, dominio, datos de entrenamiento, hiperparámetros ni evaluación. Esto impide auditar el modelo y hace desaconsejable su uso en producción sin validación propia.
+- Documentación inexistente: la model card es la plantilla por defecto de Hugging Face. No especifica propósito, dominio, datos de entrenamiento, hiperparámetros ni evaluación. Esto impide auditar el modelo y hace desaconsejable su uso en producción sin validación propia.
 - Sesgos desconocidos: al no documentarse el dataset de ajuste, no es posible caracterizar sesgos de género, raza, idioma o ideología introducidos o amplificados por el adaptador.
 - Riesgo de alucinación: no cuantificado. Al no haber evaluaciones, se desconoce si el ajuste incrementa o reduce la tendencia del modelo base a generar información falsa.
 - Limitaciones de contexto e idioma: no documentadas. Se heredan las del modelo base, pero se desconoce si el ajuste degrada el rendimiento multilingüe o el manejo de contextos largos.
@@ -89,7 +89,7 @@ No se dispone de comparativas de rendimiento con alternativas de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Radinkazemian/Clovis-7B
+- Repositorio Hugging Face: https://huggingface.co/Radinkazemian/Clovis-7B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Referencia citada en la plantilla de la model card (Lacoste et al., 2019, sobre estimación de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la model card: https://mlco2.github.io/impact

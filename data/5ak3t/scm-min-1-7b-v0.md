@@ -99,8 +99,8 @@ No se dispone de comparaciones con modelos de clasificacion externos en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/5ak3t/scm-min-1.7b-v0
-- Coleccion SCM en HuggingFace: https://huggingface.co/5ak3t/scm
+- Modelo en Hugging Face: https://huggingface.co/5ak3t/scm-min-1.7b-v0
+- Coleccion SCM en Hugging Face: https://huggingface.co/5ak3t/scm
 - Perfil del autor: https://huggingface.co/5ak3t
 - Repositorio fuente (rama `edge-master`): https://github.com/codecraf8/rev
 - Documentacion publica: https://github.com/5ak3t/scm/blob/main/README.md

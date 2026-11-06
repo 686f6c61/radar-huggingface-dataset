@@ -87,7 +87,7 @@ La comparativa se basa en los datos disponibles en la búsqueda web. La variante
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/logic65/Qwen3.8-Whittle-w50-18.3B-unrepaired
+- Modelo en Hugging Face: https://huggingface.co/logic65/Qwen3.8-Whittle-w50-18.3B-unrepaired
 - Variante Whittle-16B (corte de profundidad): https://huggingface.co/logic65/Qwen3.8-Whittle-16B
 - Información sobre Qwen3.8 (OpenLM): https://openlm.ai/qwen3.8/
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

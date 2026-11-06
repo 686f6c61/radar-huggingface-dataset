@@ -2,7 +2,7 @@
 
 ## Resumen
 
-StatePlay Mixed SF3 + KOF98 5B — step 2000 es un checkpoint de investigación publicado por el usuario xixibuxixi en HuggingFace. Se trata de un modelo del mundo (world model) de tipo StatePlay, entrenado sobre un conjunto de datos mixto de trayectorias de dos videojuegos de lucha: Street Fighter III y The King of Fighters '98. El modelo parte del modelo base de difusión Wan-AI/Wan2.2-TI2V-5B y se ha ajustado mediante aprendizaje por refuerzo para predecir la evolución de estados latentes de partidas, no para generar vídeo de propósito general.
+StatePlay Mixed SF3 + KOF98 5B — step 2000 es un checkpoint de investigación publicado por el usuario xixibuxixi en Hugging Face. Se trata de un modelo del mundo (world model) de tipo StatePlay, entrenado sobre un conjunto de datos mixto de trayectorias de dos videojuegos de lucha: Street Fighter III y The King of Fighters '98. El modelo parte del modelo base de difusión Wan-AI/Wan2.2-TI2V-5B y se ha ajustado mediante aprendizaje por refuerzo para predecir la evolución de estados latentes de partidas, no para generar vídeo de propósito general.
 
 La relevancia de este checkpoint es acotada y experimental: demuestra la viabilidad de entrenar un world model latente sobre datos de juegos de lucha combinados, con un tokenizador de transiciones (GTT) entrenado desde cero sobre el mismo dataset mixto. No es un emulador de juego ni un modelo de propósito general; su interés está en la investigación sobre modelos del mundo, planificación latente y aprendizaje por refuerzo en entornos visuales.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. La v
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StatePlay Mixed SF3 + KOF98 5B (este) | 5.100.679.360 | no disponible (clips de 101 frames) | World model latente sobre Wan2.2-TI2V-5B | no disponible | HuggingFace, checkpoint de investigación |
-| Wan-AI/Wan2.2-TI2V-5B (base) | ~5B | no disponible en la información | Difusión texto-imagen-vídeo | no disponible en la información | HuggingFace |
+| StatePlay Mixed SF3 + KOF98 5B (este) | 5.100.679.360 | no disponible (clips de 101 frames) | World model latente sobre Wan2.2-TI2V-5B | no disponible | Hugging Face, checkpoint de investigación |
+| Wan-AI/Wan2.2-TI2V-5B (base) | ~5B | no disponible en la información | Difusión texto-imagen-vídeo | no disponible en la información | Hugging Face |
 | Otros world models de videojuegos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas comparables en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
@@ -83,6 +83,6 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xixibuxixi/StatePlay-Mixed-SF3-KOF98-5B-step2000
+- Hugging Face: https://huggingface.co/xixibuxixi/StatePlay-Mixed-SF3-KOF98-5B-step2000
 - Modelo base Wan2.2-TI2V-5B: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Codebase StatePlay: https://github.com/Jimntu/StatePlay

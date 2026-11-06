@@ -72,10 +72,10 @@ El autor no desglosa los resultados por benchmark individual en la informacion d
 
 | Modelo | Parametros | Contexto | Media benchmarks ADN | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Carbon-X-SFT | 14,8B | 40.960 | 59,3% | Apache 2.0 | HuggingFace |
-| Carbon-X | 14,8B | 40.960 | 66,7% | Apache 2.0 | HuggingFace |
-| Carbon-X-Base | 14,8B | 40.960 | no disponible | Apache 2.0 | HuggingFace |
-| Qwen3-14B | 14B | no disponible en esta ficha | 40,0% | no disponible en esta ficha | HuggingFace |
+| Carbon-X-SFT | 14,8B | 40.960 | 59,3% | Apache 2.0 | Hugging Face |
+| Carbon-X | 14,8B | 40.960 | 66,7% | Apache 2.0 | Hugging Face |
+| Carbon-X-Base | 14,8B | 40.960 | no disponible | Apache 2.0 | Hugging Face |
+| Qwen3-14B | 14B | no disponible en esta ficha | 40,0% | no disponible en esta ficha | Hugging Face |
 
 La comparativa se limita a los modelos de la propia familia Carbon-X y a Qwen3-14B, unico modelo externo con resultado reportado por el autor. No se dispone de datos de otros modelos genomicos comparables en la informacion proporcionada.
 
@@ -92,7 +92,7 @@ La comparativa se limita a los modelos de la propia familia Carbon-X y a Qwen3-1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HuggingFaceBio/Carbon-X-SFT
+- Modelo en Hugging Face: https://huggingface.co/HuggingFaceBio/Carbon-X-SFT
 - Modelo final Carbon-X: https://huggingface.co/HuggingFaceBio/Carbon-X
 - Modelo base: https://huggingface.co/HuggingFaceBio/Carbon-X-Base
 - Organizacion Hugging Face Bio: https://huggingface.co/HuggingFaceBio

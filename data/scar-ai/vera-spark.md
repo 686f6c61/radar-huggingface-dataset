@@ -102,8 +102,8 @@ Calibración: ECE 0,141 global; Brier 0,024 / 0,263 / 0,692. Latencia mediana po
 
 | Modelo | Parámetros | Contexto | JevBench overall | ECE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| vera-spark | ~630M | 8K | 68,8 | 0,141 | Apache 2.0 | HuggingFace (discontinuado) |
-| vera-core | ~2B | No disponible | 77,9 | 0,098 | No disponible | HuggingFace |
+| vera-spark | ~630M | 8K | 68,8 | 0,141 | Apache 2.0 | Hugging Face (discontinuado) |
+| vera-core | ~2B | No disponible | 77,9 | 0,098 | No disponible | Hugging Face |
 | Laya | 421M | No disponible | – (94/73/34 en easy/original/hard) | – | No disponible | Leaderboard público |
 | Julia-1 | 144M | No disponible | 47,2 | – | No disponible | No disponible |
 | reflex-s1 | 23M/83M | No disponible | 50,2 | – | No disponible | No disponible |
@@ -121,7 +121,7 @@ Calibración: ECE 0,141 global; Brier 0,024 / 0,263 / 0,692. Latencia mediana po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scar-ai/vera-spark
+- Modelo en Hugging Face: https://huggingface.co/scar-ai/vera-spark
 - Modelo sucesor recomendado: https://huggingface.co/scar-ai/vera-core-2
 - Modelo hermano mayor: https://huggingface.co/scar-ai/vera-core
 - Demo (vídeo JevPilot): https://huggingface.co/scar-ai/vera-spark/resolve/main/demo.mp4

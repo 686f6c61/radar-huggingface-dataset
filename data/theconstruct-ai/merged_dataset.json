@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "theconstruct-ai/merged_dataset",
+  "slug": "theconstruct-ai-merged_dataset",
+  "author": "theconstruct-ai",
+  "url": "https://huggingface.co/theconstruct-ai/merged_dataset",
+  "created_at": "2026-11-04T11:20:01.000Z",
+  "updated_at": "2026-11-05T11:00:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "gr00t",
+    "vla",
+    "unitree-g1",
+    "robotics",
+    "base_model:theconstruct-ai/sort_packages_real_4000",
+    "base_model:finetune:theconstruct-ai/sort_packages_real_4000",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 60,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 35692434717,
+  "storage_human": "35.7 GB",
+  "base_model": "theconstruct-ai/sort_packages_real_4000",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "theconstruct-ai/merged_dataset · Hugging Face",
+      "url": "https://huggingface.co/theconstruct-ai/merged_dataset",
+      "snippet": "theconstruct-ai ... merged_dataset Like 0 Robotics Safetensors Gr00tN1d7 gr00t vla unitree-g1 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket Model Card for GR00T G1 - Merged Package Sorting VLA Model Overview Training Setup Base Checkpoint Training Dataset Training Strategy & Catastrophic Forgetting ..."
+    },
+    {
+      "title": "theconstruct-ai (The Construct) - Hugging Face",
+      "url": "https://huggingface.co/theconstruct-ai/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 5 hours ago ... published a dataset about 5 hours ago"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `imsuvo/Adhiikar.Ai` es un repositorio publicado en HuggingFace por el usuario `imsuvo`. La model card asociada únicamente declara una licencia MIT, sin proporcionar ninguna otra información técnica, documentación o archivos de peso. El tamaño del repositorio es de 0.0 GB, lo que indica que no contiene ningún artefacto de modelo real, como pesos, configuración o tokenizador. A fecha de creación, el repositorio no presenta descargas ni valoraciones, y su pipeline no está definido.
+El modelo identificado como `imsuvo/Adhiikar.Ai` es un repositorio publicado en Hugging Face por el usuario `imsuvo`. La model card asociada únicamente declara una licencia MIT, sin proporcionar ninguna otra información técnica, documentación o archivos de peso. El tamaño del repositorio es de 0.0 GB, lo que indica que no contiene ningún artefacto de modelo real, como pesos, configuración o tokenizador. A fecha de creación, el repositorio no presenta descargas ni valoraciones, y su pipeline no está definido.
 
 Dado que no existe información sustancial sobre arquitectura, parámetros, entrenamiento o capacidades, este repositorio no puede considerarse un modelo funcional ni evaluable. La ausencia de datos técnicos y de contenido en el repositorio impide cualquier análisis riguroso o recomendación de uso. Se recomienda tratar esta publicación como un repositorio vacío o un experimento de publicación, y no como un modelo de IA utilizable.
 
@@ -54,4 +54,4 @@ No se puede establecer una comparativa con modelos similares porque no existe in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imsuvo/Adhiikar.Ai
+- Repositorio en Hugging Face: https://huggingface.co/imsuvo/Adhiikar.Ai

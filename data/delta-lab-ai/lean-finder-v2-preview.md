@@ -21,7 +21,7 @@ Con 8.188.515.328 parámetros (aproximadamente 8,19 mil millones), el modelo se 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta no se detalla en la informacion disponible. El tag `qwen3` en HuggingFace sugiere que el modelo se basa en la arquitectura Qwen3, que emplea un transformer decoder-only con atencion por ventanas deslizantes y atencion completa alternadas, ademas de un mecanismo de thinking mode opcional. Sin embargo, no hay confirmacion oficial de que sea una adaptacion directa de Qwen3-8B.
+La arquitectura exacta no se detalla en la informacion disponible. El tag `qwen3` en Hugging Face sugiere que el modelo se basa en la arquitectura Qwen3, que emplea un transformer decoder-only con atencion por ventanas deslizantes y atencion completa alternadas, ademas de un mecanismo de thinking mode opcional. Sin embargo, no hay confirmacion oficial de que sea una adaptacion directa de Qwen3-8B.
 
 El entrenamiento se describe en el repositorio de GitHub: el modelo fue entrenado con mas de 1,4 millones de pares consulta-codigo, que incluyen enunciados informalizados, consultas sinteticas de usuario, estados de prueba aumentados y enunciados formales. Posteriormente se aplico un alineamiento de preferencias mediante DPO, utilizando retroalimentacion humana y de LLM recopilada de un servicio web desplegado. Esta combinacion de datos diversos y alineamiento por preferencias busca que el modelo no solo genere pruebas correctas, sino que tambien se ajuste a las preferencias de los matematicos en cuanto a estilo y estrategia de demostracion.
 
@@ -71,6 +71,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/delta-lab-ai/lean-finder-v2-preview
+- Hugging Face: https://huggingface.co/delta-lab-ai/lean-finder-v2-preview
 - Repositorio GitHub: https://github.com/delta-lab-ai/lean-finder
-- Modelo base en HuggingFace: https://huggingface.co/delta-lab-ai/lean-finder
+- Modelo base en Hugging Face: https://huggingface.co/delta-lab-ai/lean-finder

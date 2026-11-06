@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Houdini VEX assistant 18.5 v3 es un ajuste fino (fine-tune) del modelo Qwen3-1.7B de Alibaba, especializado en la generacion de codigo VEX para Houdini 18.5, el lenguaje de scripting del software de efectos visuales SideFX Houdini. Lo publica el usuario ashok969 en HuggingFace y su proposito es asistir a artistas tecnicos y desarrolladores de VFX en la escritura de snippets y wrangles VEX dentro de contextos concretos como Attribute Wrangle, POP Wrangle, Gas Field Wrangle, RBD, crowd o shaders.
+Houdini VEX assistant 18.5 v3 es un ajuste fino (fine-tune) del modelo Qwen3-1.7B de Alibaba, especializado en la generacion de codigo VEX para Houdini 18.5, el lenguaje de scripting del software de efectos visuales SideFX Houdini. Lo publica el usuario ashok969 en Hugging Face y su proposito es asistir a artistas tecnicos y desarrolladores de VFX en la escritura de snippets y wrangles VEX dentro de contextos concretos como Attribute Wrangle, POP Wrangle, Gas Field Wrangle, RBD, crowd o shaders.
 
 La particularidad del modelo es su formato de distribucion: no se ofrece en safetensors ni GGUF, sino como un fichero `.litertlm` (1,33 GB) pensado para inferencia on-device mediante LiteRT-LM, la pila de Google AI Edge. Esto permite ejecutarlo en un telefono movil a traves de la aplicacion Google AI Edge Gallery, sin necesidad de servidor ni GPU dedicada. La cuantizacion aplicada es `int4_block32` con embeddings en int8 y una cache KV de 4096 tokens.
 
@@ -89,7 +89,7 @@ La comparativa directa con alternativas especializadas en VEX no esta disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ashok969/houdini-vex-assistant-18.5-v3-1p7b-litertlm
+- Modelo en Hugging Face: https://huggingface.co/ashok969/houdini-vex-assistant-18.5-v3-1p7b-litertlm
 - Modelo base: https://huggingface.co/unsloth/Qwen3-1.7B
 - Google AI Edge Gallery (LiteRT-LM): no se proporciona URL en la informacion disponible
 - Documentacion de VEX de SideFX: no se proporciona URL en la informacion disponible

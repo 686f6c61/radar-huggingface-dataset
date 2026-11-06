@@ -85,7 +85,7 @@ La version 6-bit ofrece mayor precision que la 4-bit a cambio de un mayor uso de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-6bit-MTP
+- Repositorio Hugging Face: https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-6bit-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Blog de Qwen sobre Qwen3.8 Flash Next: https://qwen.ai/blog?id=qwen3.8-flash-next
 - MLX-VLM: https://github.com/ml-explore/mlx-vlm

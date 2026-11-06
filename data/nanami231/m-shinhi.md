@@ -2,7 +2,7 @@
 
 ## Resumen
 
-m-shinhi es un adaptador LoRA de tipo DreamBooth para generación de imágenes texto-a-imagen, desarrollado por el usuario Nanami231 (también conocido como DukeLe en HuggingFace). Está entrenado sobre Krea 2 RAW (krea/Krea-2-Raw) y sus muestras se han generado sobre Krea 2 Turbo, la variante destilada del mismo modelo base. Se trata, por tanto, de un adaptador de bajo rango que no funciona de forma autónoma: requiere cargar los pesos del modelo Krea 2 y aplicar encima los pesos de este LoRA mediante la librería diffusers.
+m-shinhi es un adaptador LoRA de tipo DreamBooth para generación de imágenes texto-a-imagen, desarrollado por el usuario Nanami231 (también conocido como DukeLe en Hugging Face). Está entrenado sobre Krea 2 RAW (krea/Krea-2-Raw) y sus muestras se han generado sobre Krea 2 Turbo, la variante destilada del mismo modelo base. Se trata, por tanto, de un adaptador de bajo rango que no funciona de forma autónoma: requiere cargar los pesos del modelo Krea 2 y aplicar encima los pesos de este LoRA mediante la librería diffusers.
 
 El adaptador introduce un concepto concreto, invocado mediante el token `M@shiNhi`, que según los ejemplos de la model card se manifiesta como un emblema o inscripción que aparece integrado en escenas muy distintas (un guerrero cyborg, un autómata con forma de búho, un dirigible steampunk). El repositorio ocupa 1,6 GB, se distribuye bajo licencia Apache 2.0 y se publicó el 4 de octubre de 2026, sin descargas ni valoraciones registradas en el momento de la consulta.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Modelo base | Contexto / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanami231/m-shinhi | LoRA DreamBooth | krea/Krea-2-Raw | Texto-a-imagen con token `M@shiNhi` | Apache 2.0 | HuggingFace, 0 descargas |
-| krea/Krea-2-Raw | Modelo de difusión completo | — | Texto-a-imagen | no disponible en la información proporcionada | HuggingFace (referenciado como base) |
-| krea/Krea-2-Turbo | Modelo de difusión destilado | — | Texto-a-imagen, inferencia en pocos pasos | no disponible en la información proporcionada | HuggingFace (usado en los ejemplos) |
+| Nanami231/m-shinhi | LoRA DreamBooth | krea/Krea-2-Raw | Texto-a-imagen con token `M@shiNhi` | Apache 2.0 | Hugging Face, 0 descargas |
+| krea/Krea-2-Raw | Modelo de difusión completo | — | Texto-a-imagen | no disponible en la información proporcionada | Hugging Face (referenciado como base) |
+| krea/Krea-2-Turbo | Modelo de difusión destilado | — | Texto-a-imagen, inferencia en pocos pasos | no disponible en la información proporcionada | Hugging Face (usado en los ejemplos) |
 
 No se dispone de otros LoRA comparables de la misma categoría en la información proporcionada. Los resultados de la búsqueda web corresponden a modelos homónimos o no relacionados (LoRAs de personajes sobre SD 1.5 en TensorHub Art y SeaArt), por lo que no son válidos como término de comparación técnica.
 
@@ -84,7 +84,7 @@ No se dispone de otros LoRA comparables de la misma categoría en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nanami231/m-shinhi
+- Modelo en Hugging Face: https://huggingface.co/Nanami231/m-shinhi
 - Perfil del autor: https://huggingface.co/Nanami231
 - Modelo base Krea 2 RAW: https://huggingface.co/krea/Krea-2-Raw
 - Otro modelo del mismo autor: https://huggingface.co/Nanami231/nh-v

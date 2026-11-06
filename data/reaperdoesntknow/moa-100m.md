@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MoA-100M (también denominado MoAMetricLM‑100M) es un modelo de lenguaje causal decoder-only desarrollado por el usuario reaperdoesntknow, publicado en HuggingFace bajo licencia Apache-2.0. Su principal contribución es la arquitectura `moa_metric`, una variante de Transformer que sustituye la atención por producto punto clásica por una **atención basada en métricas** (distancias L2, coseno o Mahalanobis diagonal) y combina cuatro tipos de cabezas de atención por bloque, gestionadas por un router token-wise. El modelo está pensado como banco de pruebas para investigación sobre atención geométrica, esparsidad estructurada y mezcla de mecanismos de atención.
+MoA-100M (también denominado MoAMetricLM‑100M) es un modelo de lenguaje causal decoder-only desarrollado por el usuario reaperdoesntknow, publicado en Hugging Face bajo licencia Apache-2.0. Su principal contribución es la arquitectura `moa_metric`, una variante de Transformer que sustituye la atención por producto punto clásica por una **atención basada en métricas** (distancias L2, coseno o Mahalanobis diagonal) y combina cuatro tipos de cabezas de atención por bloque, gestionadas por un router token-wise. El modelo está pensado como banco de pruebas para investigación sobre atención geométrica, esparsidad estructurada y mezcla de mecanismos de atención.
 
 Con aproximadamente 185 millones de parámetros totales (cerca de 100 millones efectivos por la mezcla de cabezas), una ventana de contexto de 2048 tokens y un tokenizador GPT-2, el modelo fue entrenado únicamente en CPU en FP32 con un presupuesto muy reducido de 500 000 tokens procedentes de dos datasets públicos. No incluye cache de claves/valores (KV cache), por lo que la generación recalcula el contexto completo en cada paso, lo que limita su uso práctico a experimentos de investigación más que a aplicaciones de producción.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - **VRAM estimada para inferencia**: en FP32, ~185 M de parámetros ocupan aproximadamente 740 MB de memoria. Con cuantización a 8 bits (si se aplicara) bajaría a ~185 MB, pero el modelo se publica en FP32 y no se indica soporte de cuantización.
 - **GPU recomendadas**: cualquier GPU con al menos 1-2 GB de VRAM puede ejecutar el modelo en FP32 (por ejemplo, NVIDIA T4, RTX 2060 o superiores). En CPU, el entrenamiento se realizó en un Intel, por lo que la inferencia en CPU es viable aunque lenta.
 - **Cabe en consumer GPU**: sí, en prácticamente cualquier GPU de consumo moderna (RTX 3060, RTX 4090, etc.) e incluso en muchas integradas.
-- **Opciones de despliegue**: compatible con HuggingFace Transformers (`AutoModelForCausalLM`). No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI; dado que no hay KV cache, la integración con estos motores sería limitada.
+- **Opciones de despliegue**: compatible con Hugging Face Transformers (`AutoModelForCausalLM`). No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI; dado que no hay KV cache, la integración con estos motores sería limitada.
 - **Latencia y throughput**: no disponibles. La ausencia de KV cache implica que el tiempo de generación crece linealmente con la longitud total del contexto, haciendo la inferencia lenta para secuencias largas.
 
 ## Comparativa con modelos similares
@@ -84,5 +84,5 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- [HuggingFace: reaperdoesntknow/MoA-100M](https://huggingface.co/reaperdoesntknow/MoA-100M)
+- [Hugging Face: reaperdoesntknow/MoA-100M](https://huggingface.co/reaperdoesntknow/MoA-100M)
 - Datasets de entrenamiento: [nvidia/Nemotron-Math-HumanReasoning](https://huggingface.co/datasets/nvidia/Nemotron-Math-HumanReasoning) y [WeMake/Intelligent-Content-Understanding](https://huggingface.co/datasets/WeMake/Intelligent-Content-Understanding)

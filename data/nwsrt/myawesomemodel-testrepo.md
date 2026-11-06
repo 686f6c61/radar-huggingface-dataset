@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio de HuggingFace publicado por el usuario nwsrt que, a pesar de su nombre, no contiene ningún archivo de modelo (el tamaño del repo es de 0.0 GB). La model card adjunta describe un modelo de lenguaje genérico denominado "MyAwesomeModel" que habría sido actualizado con mejoras en razonamiento profundo, generación de código y soporte de function calling, pero no se proporcionan especificaciones técnicas concretas como número de parámetros, arquitectura o contexto. Los tags del repositorio sugieren que se trata de un modelo basado en BERT y compatible con la librería transformers, aunque no hay evidencia de que los pesos estén publicados.
+MyAwesomeModel-TestRepo es un repositorio de Hugging Face publicado por el usuario nwsrt que, a pesar de su nombre, no contiene ningún archivo de modelo (el tamaño del repo es de 0.0 GB). La model card adjunta describe un modelo de lenguaje genérico denominado "MyAwesomeModel" que habría sido actualizado con mejoras en razonamiento profundo, generación de código y soporte de function calling, pero no se proporcionan especificaciones técnicas concretas como número de parámetros, arquitectura o contexto. Los tags del repositorio sugieren que se trata de un modelo basado en BERT y compatible con la librería transformers, aunque no hay evidencia de que los pesos estén publicados.
 
 La model card incluye una tabla de benchmarks en la que se comparan varios modelos con el supuesto MyAwesomeModel, con mejoras en tareas de razonamiento, comprensión lectora, generación y traducción, además de una mención a la prueba AIME 2025 con una precisión del 87.5%. Sin embargo, estos datos no están respaldados por archivos en el repositorio ni por ninguna publicación externa. Por ello, la ficha técnica que sigue se basa únicamente en la información declarada por el autor, sin posibilidad de verificación técnica.
 
@@ -94,7 +94,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nwsrt/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/nwsrt/MyAwesomeModel-TestRepo
 - Resultados de busqueda web con informacion duplicada (sin datos adicionales): https://free2aitools.com/model/mcptester/myawesomemodel-testrepo, https://www.toolify.ai/ai-model/asfafaf4546-myawesomemodel-testrepo, https://openmodelmap.com/model/dongbobo/MyAwesomeModel-TestRepo
 
 No se han encontrado papers, repositorios de codigo ni demos publicados del modelo.

@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shikunpunk/MiniMind-GuCheng-Data
+- Repositorio Hugging Face: https://huggingface.co/shikunpunk/MiniMind-GuCheng-Data
 - Dataset de poesía Gu Cheng: https://huggingface.co/datasets/shikunpunk/gucheng-poetry-dataset
 - Proyecto MiniMind (base arquitectónica): https://github.com/jingyaogong/minimind
 - Otros modelos del autor: https://huggingface.co/shikunpunk/datasets

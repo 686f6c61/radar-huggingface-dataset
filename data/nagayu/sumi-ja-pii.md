@@ -99,7 +99,7 @@ Sumi supera claramente a las alternativas basadas en Presidio y a un LLM local d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NagaYu/sumi-ja-pii
+- Modelo en Hugging Face: https://huggingface.co/NagaYu/sumi-ja-pii
 - Repositorio de código, benchmarks y pipeline de entrenamiento: https://github.com/NagaYu/sumi
 - Dataset de entrenamiento: https://huggingface.co/datasets/NagaYu/sumi-ja-pii-corpus
 - Modelo base: https://huggingface.co/sbintuitions/modernbert-ja-130m

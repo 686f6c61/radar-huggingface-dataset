@@ -58,5 +58,5 @@ No disponible. No se dispone de informacion sobre el modelo base ni sobre adapta
 - Baja adopcion: cuenta con 0 descargas y 0 likes, lo que sugiere que no ha sido probado ni validado por la comunidad.
 
 ## Enlaces
-- Repositorio de HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r492-offline-dpo-ultraalpha-midrank-extrasteps-lora
+- Repositorio de Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r492-offline-dpo-ultraalpha-midrank-extrasteps-lora
 - Modelo base (referenciado): https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen

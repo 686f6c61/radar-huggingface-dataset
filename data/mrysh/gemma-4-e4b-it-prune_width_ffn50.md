@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/gemma-4-e4b-it-prune_width_ffn50
+- Modelo en Hugging Face: https://huggingface.co/mrysh/gemma-4-e4b-it-prune_width_ffn50
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - NVIDIA ModelOpt (libreria de poda): no disponible en la informacion proporcionada
 - Paper de Minitron: no disponible en la informacion proporcionada

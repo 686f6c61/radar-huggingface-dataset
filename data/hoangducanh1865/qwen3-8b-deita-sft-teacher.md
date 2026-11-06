@@ -2,11 +2,11 @@
 
 ## Resumen
 
-qwen3-8b-deita-sft-teacher es un ajuste fino supervisado (SFT) del modelo base Qwen/Qwen3-8B-Base, publicado por el usuario hoangducanh1865 en HuggingFace. El entrenamiento se realizo sobre el dataset HuggingFaceH4/deita-10k-v0-sft, un conjunto de conversaciones de alta calidad orientado a instrucciones y alineamiento, durante una sola epoca, con learning rate de 2,5e-05, programador coseno con warmup del 10 por ciento y un batch total de 32 en configuracion multi-GPU (2 dispositivos, AdamW con betas 0,9 y 0,999).
+qwen3-8b-deita-sft-teacher es un ajuste fino supervisado (SFT) del modelo base Qwen/Qwen3-8B-Base, publicado por el usuario hoangducanh1865 en Hugging Face. El entrenamiento se realizo sobre el dataset HuggingFaceH4/deita-10k-v0-sft, un conjunto de conversaciones de alta calidad orientado a instrucciones y alineamiento, durante una sola epoca, con learning rate de 2,5e-05, programador coseno con warmup del 10 por ciento y un batch total de 32 en configuracion multi-GPU (2 dispositivos, AdamW con betas 0,9 y 0,999).
 
 Tecnicamente es un transformer decoder-only denso de 8.190.735.360 parametros, almacenado en safetensors con un repositorio de 16,4 GB y licencia Apache 2.0. No es un modelo MoE, por lo que no hay parametros activos que reportar. El sufijo "teacher" del nombre sugiere un uso previsto como modelo profesor en pipelines de destilacion o generacion de datos, aunque la model card no lo confirma explicitamente.
 
-Su relevancia actual es experimental y de nicho: el repositorio acumula 0 descargas y 0 likes, la model card esta generada automaticamente por el Trainer de HuggingFace y contiene secciones vacias ("More information needed"). No se declaran resultados de benchmarks, idiomas soportados ni longitud de contexto, por lo que debe tratarse como un artefacto de investigacion reproducible mas que como un modelo listo para produccion.
+Su relevancia actual es experimental y de nicho: el repositorio acumula 0 descargas y 0 likes, la model card esta generada automaticamente por el Trainer de Hugging Face y contiene secciones vacias ("More information needed"). No se declaran resultados de benchmarks, idiomas soportados ni longitud de contexto, por lo que debe tratarse como un artefacto de investigacion reproducible mas que como un modelo listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ Las siguientes cifras son estimaciones derivadas del numero de parametros (8.190
 - VRAM en INT4/NF4: aproximadamente 4,5-5,5 GB de pesos, con un total estimado de 7-10 GB, viable en GPUs de 8-12 GB con contexto reducido.
 - GPU recomendadas: A100 40 GB o 80 GB, H100 80 GB, L40S 48 GB para FP16/BF16 con margen amplio y concurrencia.
 - GPU de consumo: RTX 4090 (24 GB) y RTX 3090 (24 GB) pueden ejecutar el modelo en BF16/FP16 de forma ajustada; las GPUs de 16 GB (RTX 4080, RTX 4060 Ti 16 GB, A4000) necesitan cuantizacion INT8 o INT4; las de 8-12 GB solo son viables en INT4 con contexto corto.
-- Opciones de despliegue: transformers (version 4.51.3 o superior), vLLM y TGI son las vias mas directas; el tag `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que el repositorio no incluye cuantizaciones listas para usar.
+- Opciones de despliegue: transformers (version 4.51.3 o superior), vLLM y TGI son las vias mas directas; el tag `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que el repositorio no incluye cuantizaciones listas para usar.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo, TTFT ni comportamiento bajo batching concurrente.
 
 ## Comparativa con modelos similares
@@ -101,10 +101,10 @@ La comparacion directa de rendimiento no es posible: no existen resultados de be
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hoangducanh1865/qwen3-8b-deita-sft-teacher
+- Modelo en Hugging Face: https://huggingface.co/hoangducanh1865/qwen3-8b-deita-sft-teacher
 - Modelo base Qwen/Qwen3-8B-Base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Dataset HuggingFaceH4/deita-10k-v0-sft: https://huggingface.co/datasets/HuggingFaceH4/deita-10k-v0-sft
-- Perfil del autor en HuggingFace: https://huggingface.co/hoangducanh1865/models
+- Perfil del autor en Hugging Face: https://huggingface.co/hoangducanh1865/models
 - Ficha de Qwen3-8B en Robots Atlas (idiomas y soporte de MCP): https://robotsatlas.com/ai-models/qwen3-8b
 - Ficha de Qwen3-8B en Together AI (precios, benchmarks y documentacion): https://www.together.ai/models/qwen3-8b
 - Repositorio STAR: Similarity-guided Teacher-Assisted Refinement (ICLR 2026), contexto de uso de modelos profesor: https://github.com/Qwen-Applications/STAR

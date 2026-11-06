@@ -94,7 +94,7 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_is_a_single_word
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_is_a_single_word
 - Dataset de entrenamiento: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - Repositorio del TalkMoves Dataset: https://github.com/SumnerLab/TalkMoves

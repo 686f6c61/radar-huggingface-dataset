@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wicked-Tutu-31B-v0.25 es un ajuste fino (finetune) de generacion de texto publicado por el usuario ReadyArt en HuggingFace, derivado directamente del modelo ReadyArt/gemma-4-31B-it-scotoma-2. Por el nombre y las etiquetas de la ficha, se trata de un modelo orientado a roleplay explicito y narrativa adulta (ERP), con contenido de horror y violencia, y explicitamente marcado como "unaligned" y "not-for-all-audiences". El unico idioma declarado es el ingles y la licencia indicada es Apache 2.0, aunque el acceso esta restringido (gated) y requiere aceptar condiciones en la plataforma.
+Wicked-Tutu-31B-v0.25 es un ajuste fino (finetune) de generacion de texto publicado por el usuario ReadyArt en Hugging Face, derivado directamente del modelo ReadyArt/gemma-4-31B-it-scotoma-2. Por el nombre y las etiquetas de la ficha, se trata de un modelo orientado a roleplay explicito y narrativa adulta (ERP), con contenido de horror y violencia, y explicitamente marcado como "unaligned" y "not-for-all-audiences". El unico idioma declarado es el ingles y la licencia indicada es Apache 2.0, aunque el acceso esta restringido (gated) y requiere aceptar condiciones en la plataforma.
 
 El modelo no incluye model card tecnica con detalles de arquitectura, datos de entrenamiento, contexto o cuantizaciones en la informacion disponible, y no registra descargas ni "likes" en el momento de la consulta. La busqueda web realizada no devolvio ningun resultado tecnico relacionado con el modelo: los enlaces recuperados son contenido para adultos sin relacion con el repositorio, por lo que no aportan informacion verificable.
 
@@ -76,14 +76,14 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 - Riesgo de alucinacion: no evaluado ni documentado; al ser un finetune de roleplay, es probable que priorice coherencia narrativa sobre exactitud factual, aunque no hay datos que lo confirmen.
 - Cobertura linguistica limitada al ingles; el rendimiento en castellano no esta documentado y previsiblemente sera degradado.
 - Longitud de contexto desconocida: no se puede garantizar la coherencia en conversaciones largas sin pruebas propias.
-- Licencia Apache 2.0 declarada, que permitiria uso comercial, pero el acceso esta restringido (gated) y sujeto a las condiciones de HuggingFace; conviene revisar ademas las obligaciones heredadas del modelo ancestral, cuya licencia no se detalla en la informacion disponible.
+- Licencia Apache 2.0 declarada, que permitiria uso comercial, pero el acceso esta restringido (gated) y sujeto a las condiciones de Hugging Face; conviene revisar ademas las obligaciones heredadas del modelo ancestral, cuya licencia no se detalla en la informacion disponible.
 - Ausencia total de model card tecnica, benchmarks y datos de entrenamiento: no es posible auditar sesgos, calidad ni procedencia de los datos.
 - Metadatos sin verificar: la fecha de creacion registrada (17 de octubre de 2026) y el recuento de descargas (0) no permiten validar la madurez ni el uso real del modelo.
 - La busqueda web no devolvio informacion tecnica sobre este repositorio; los resultados obtenidos eran contenido para adultos sin relacion con el modelo.
 
 ## Enlaces
 
-- HuggingFace (acceso restringido): https://huggingface.co/ReadyArt/Wicked-Tutu-31B-v0.25
+- Hugging Face (acceso restringido): https://huggingface.co/ReadyArt/Wicked-Tutu-31B-v0.25
 - Modelo base declarado: https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma-2
 - Paper, blog, repositorio o demo: no disponibles en la informacion proporcionada.
 - Busqueda web: sin resultados relevantes; los enlaces recuperados no guardan relacion con el modelo.

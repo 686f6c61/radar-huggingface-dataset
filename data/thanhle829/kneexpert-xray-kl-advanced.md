@@ -83,9 +83,9 @@ Variabilidad entre semillas (validación, media ± desviación típica):
 
 | Modelo | Arquitectura | Parámetros | Contexto/entrada | QWK test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| KneeXpert DINOv3 ViT-B (este repo) | ViT-B | No disponible | 224x224 | 0,869 | other (DINOv3 License) | HuggingFace |
-| KneeXpert ConvNeXtV2-Base (este repo) | ConvNeXtV2-Base | No disponible | 224x224 | 0,858 | other | HuggingFace |
-| KneeXpert Swin-Base (este repo) | Swin-Base | No disponible | 224x224 | 0,848 | other | HuggingFace |
+| KneeXpert DINOv3 ViT-B (este repo) | ViT-B | No disponible | 224x224 | 0,869 | other (DINOv3 License) | Hugging Face |
+| KneeXpert ConvNeXtV2-Base (este repo) | ConvNeXtV2-Base | No disponible | 224x224 | 0,858 | other | Hugging Face |
+| KneeXpert Swin-Base (este repo) | Swin-Base | No disponible | 224x224 | 0,848 | other | Hugging Face |
 
 No se dispone de información sobre modelos comparables externos de gradación KL en la documentación proporcionada.
 
@@ -102,7 +102,7 @@ No se dispone de información sobre modelos comparables externos de gradación K
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thanhle829/kneexpert-xray-kl-advanced
+- Hugging Face: https://huggingface.co/thanhle829/kneexpert-xray-kl-advanced
 - Dataset de origen (Kaggle, derivado de OAI): *Knee Osteoarthritis Dataset with Severity Grading* (no se proporciona URL directa en la información disponible)
 - Licencia DINOv3: no se proporciona URL en la información disponible
 - Paper, blog o repositorio adicional: no disponible

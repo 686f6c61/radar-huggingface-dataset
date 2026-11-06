@@ -68,8 +68,8 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/shahvandit/qwen3-tts-base-hf
+- Hugging Face del modelo: https://huggingface.co/shahvandit/qwen3-tts-base-hf
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - Repositorio oficial de Qwen3-TTS en GitHub: https://github.com/QwenLM/Qwen3-TTS
 - Informe técnico de Qwen3-TTS (arXiv): https://arxiv.org/pdf/2601.15621
-- Colección de modelos Qwen3-TTS en HuggingFace: https://huggingface.co/collections/Qwen/qwen3-tts
+- Colección de modelos Qwen3-TTS en Hugging Face: https://huggingface.co/collections/Qwen/qwen3-tts

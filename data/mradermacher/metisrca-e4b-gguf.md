@@ -97,7 +97,7 @@ La comparacion cuantitativa con alternativas no es posible con los datos disponi
 
 ## Enlaces
 
-- Repositorio HuggingFace de la version GGUF: https://huggingface.co/mradermacher/MetisRCA-E4B-GGUF
+- Repositorio Hugging Face de la version GGUF: https://huggingface.co/mradermacher/MetisRCA-E4B-GGUF
 - Modelo base: https://huggingface.co/ThakiCloud/MetisRCA-E4B
 - Pagina de descargas del autor para este modelo: https://hf.tst.eu/model#MetisRCA-E4B-GGUF
 - Texto de la licencia openmdw-1.1: https://openmdw.ai/license/1-1/

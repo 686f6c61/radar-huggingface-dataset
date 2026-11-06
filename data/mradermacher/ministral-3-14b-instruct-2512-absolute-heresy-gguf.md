@@ -6,7 +6,7 @@ Ministral-3-14B-Instruct-2512-absolute-heresy-GGUF es una distribucion de cuanti
 
 La relevancia de esta ficha radica en que ofrece un paquete listo para usar en llama.cpp y ecosistemas compatibles con GGUF, con cuantizaciones desde Q2_K (5,3 GB) hasta Q8_0 (14,5 GB), ademas de un adaptador multimodal (mmproj) que sugiere capacidades de vision heredadas del modelo base. Al estar publicado bajo licencia Apache 2.0 y soportar 11 idiomas declarados, resulta atractivo para experimentacion local y despliegues en hardware de consumo.
 
-No obstante, conviene subrayar que se trata de un modelo derivado no oficial, sin benchmarks publicados en la informacion disponible, y cuyo proceso de abliteration puede degradar capacidades de razonamiento, seguridad y alineamiento. Esta ficha documenta exclusivamente lo que consta en la model card y los metadatos de HuggingFace, marcando como "no disponible" cualquier dato ausente.
+No obstante, conviene subrayar que se trata de un modelo derivado no oficial, sin benchmarks publicados en la informacion disponible, y cuyo proceso de abliteration puede degradar capacidades de razonamiento, seguridad y alineamiento. Esta ficha documenta exclusivamente lo que consta en la model card y los metadatos de Hugging Face, marcando como "no disponible" cualquier dato ausente.
 
 ## Especificaciones tecnicas
 
@@ -93,7 +93,7 @@ La comparativa se limita a datos publicos de los modelos alternativos; no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/Ministral-3-14B-Instruct-2512-absolute-heresy-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Ministral-3-14B-Instruct-2512-absolute-heresy-GGUF
 - Modelo base: https://huggingface.co/MuXodious/Ministral-3-14B-Instruct-2512-absolute-heresy
 - Cuantizaciones con imatrix del mismo modelo: https://huggingface.co/mradermacher/Ministral-3-14B-Instruct-2512-absolute-heresy-i1-GGUF
 - Pagina de overview de mradermacher para este modelo: https://hf.tst.eu/model#Ministral-3-14B-Instruct-2512-absolute-heresy-GGUF

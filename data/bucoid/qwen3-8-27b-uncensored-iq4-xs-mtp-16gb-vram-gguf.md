@@ -49,7 +49,7 @@ Aunque no hay documentación oficial, el perfil del modelo (27B, cuantizado a 4 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye ninguna tabla de rendimiento ni comparaciones con otros modelos. Por tanto, no es posible evaluar objetivamente la calidad del modelo ni compararlo con alternativas.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye ninguna tabla de rendimiento ni comparaciones con otros modelos. Por tanto, no es posible evaluar objetivamente la calidad del modelo ni compararlo con alternativas.
 
 ## Requisitos de hardware
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 No se dispone de información suficiente para realizar una comparativa rigurosa. Sin embargo, por el tamaño (27B) y la cuantización, podría compararse con otras cuantizaciones de modelos como:
 
-- **Qwen 3 32B (cuantizado)**: la familia Qwen 3 ofrece modelos de 32B con licencia Apache 2.0 en algunas versiones, y cuantizaciones GGUF están disponibles en HuggingFace.
+- **Qwen 3 32B (cuantizado)**: la familia Qwen 3 ofrece modelos de 32B con licencia Apache 2.0 en algunas versiones, y cuantizaciones GGUF están disponibles en Hugging Face.
 - **Llama 3 30B (cuantizado)**: aunque con licencia de Meta, existen cuantizaciones similares.
 - **Mistral 7B (cuantizado)**: mucho más pequeño, pero con rendimiento notable.
 
@@ -80,6 +80,6 @@ Sin datos de benchmarks, no es posible establecer comparaciones objetivas. La ú
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/Bucoid/Qwen3.8-27B-Uncensored-IQ4-XS-MTP-16GB-VRAM-GGUF)
+- [Repositorio Hugging Face](https://huggingface.co/Bucoid/Qwen3.8-27B-Uncensored-IQ4-XS-MTP-16GB-VRAM-GGUF)
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código) en la información proporcionada.

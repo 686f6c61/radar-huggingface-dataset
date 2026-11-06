@@ -60,11 +60,11 @@ No se dispone de datos comparativos fiables. El modelo es un checkpoint de inici
 - Checkpoint de inicialización no entrenado: la model card indica que no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 - Sin benchmarks: no se verifican capacidades de generación ni precisión en tareas de visión.
 - Implementación experimental: el autor advierte que se debe tratar como punto de partida y que cualquier resultado futuro debe documentarse por separado del estado por defecto.
-- Compatible solo con la API personalizada: se necesita un adaptador para las APIs de carga automática habituales (HuggingFace Transformers, etc.).
+- Compatible solo con la API personalizada: se necesita un adaptador para las APIs de carga automática habituales (Hugging Face Transformers, etc.).
 - Licencia Apache 2.0: permite uso comercial, pero el autor recomienda revisar los términos de los datos externos utilizados en futuros entrenamientos.
 - Riesgo de alucinación: no aplica de forma directa, ya que el modelo no ha sido entrenado para generar contenido útil.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/parireddy/beit-demo
+- Hugging Face: https://huggingface.co/parireddy/beit-demo
 - Referencia externa sobre Beit en Qualcomm: https://github.com/wilfrid51/Qualcomm/blob/main/qai_hub_models/models/beit/README.md (implementación distinta, no relacionada con el modelo evaluado).

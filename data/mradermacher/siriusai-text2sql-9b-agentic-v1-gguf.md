@@ -100,7 +100,7 @@ Diferencias relevantes: frente a estas alternativas, el modelo evaluado no publi
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/SiriusAI-Text2SQL-9b-agentic-v1-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/SiriusAI-Text2SQL-9b-agentic-v1-GGUF
 - Modelo base: https://huggingface.co/xian-tan/SiriusAI-Text2SQL-9b-agentic-v1
 - Página resumen de cuantizaciones del autor: https://hf.tst.eu/model#SiriusAI-Text2SQL-9b-agentic-v1-GGUF
 - Peticiones de modelos y preguntas frecuentes de mradermacher: https://huggingface.co/mradermacher/model_requests

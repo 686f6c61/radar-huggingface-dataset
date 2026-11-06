@@ -92,7 +92,7 @@ No se han identificado otros modelos open source especializados en Atlassian en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q6-mlx
+- Hugging Face: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q6-mlx
 - Portfolio del modelo con informe completo: https://leanzero.net/portfolio/atlassian-models
 - Repositorio del fork Rapid-MLX: https://github.com/leanzero-srl/Rapid-MLX
 - CogniRunner: https://leanzero.net/portfolio/cognirunner

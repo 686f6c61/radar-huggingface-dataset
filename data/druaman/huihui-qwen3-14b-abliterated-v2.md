@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Sin censura | Disponibilidad |
 |---|---|---|---|---|---|
-| DruAman/Huihui-Qwen3-14B-abliterated-v2 | 14,77 B | no disponible | Apache-2.0 | Si | HuggingFace, Ollama |
-| Qwen/Qwen3-14B (base) | 14,77 B | no disponible en esta ficha | Apache-2.0 | No | HuggingFace |
-| huihui-ai/Qwen3-14B-abliterated (v1) | 14,77 B | no disponible | Apache-2.0 | Si | HuggingFace, Ollama |
+| DruAman/Huihui-Qwen3-14B-abliterated-v2 | 14,77 B | no disponible | Apache-2.0 | Si | Hugging Face, Ollama |
+| Qwen/Qwen3-14B (base) | 14,77 B | no disponible en esta ficha | Apache-2.0 | No | Hugging Face |
+| huihui-ai/Qwen3-14B-abliterated (v1) | 14,77 B | no disponible | Apache-2.0 | Si | Hugging Face, Ollama |
 
 La diferencia principal entre las tres variantes es el comportamiento frente a rechazos: el modelo base aplica politicas de seguridad, mientras que las dos versiones abliterated las eliminan. Entre la v1 y la v2, la propia ficha afirma que la v2 usa un metodo mas rapido y corrige el problema de texto corrupto, aunque no se aportan cifras comparativas.
 
@@ -85,7 +85,7 @@ La diferencia principal entre las tres variantes es el comportamiento frente a r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DruAman/Huihui-Qwen3-14B-abliterated-v2
+- Modelo en Hugging Face: https://huggingface.co/DruAman/Huihui-Qwen3-14B-abliterated-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Version anterior (v1): https://huggingface.co/huihui-ai/Qwen3-14B-abliterated
 - Pagina de Ollama: https://ollama.com/huihui_ai/qwen3-abliterated:14b-v2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yuki_tsukumo_Illustrious_SDXL es un checkpoint de generacion de imagenes publicado en HuggingFace por el usuario NewBie456, construido sobre la familia Illustrious SDXL. El nombre del modelo apunta a un ajuste orientado a un personaje concreto (Yuki Tsukumo, personaje de la serie Jujutsu Kaisen), un patron habitual en los checkpoints de anime derivados de Illustrious, si bien la model card no confirma explicitamente el contenido ni el alcance del ajuste. La model card es practicamente vacia: se limita a un enlace a Civitai y a dos imagenes de muestra alojadas en el CDN de HuggingFace, sin descripcion tecnica, ni licencia, ni pipeline declarado.
+Yuki_tsukumo_Illustrious_SDXL es un checkpoint de generacion de imagenes publicado en Hugging Face por el usuario NewBie456, construido sobre la familia Illustrious SDXL. El nombre del modelo apunta a un ajuste orientado a un personaje concreto (Yuki Tsukumo, personaje de la serie Jujutsu Kaisen), un patron habitual en los checkpoints de anime derivados de Illustrious, si bien la model card no confirma explicitamente el contenido ni el alcance del ajuste. La model card es practicamente vacia: se limita a un enlace a Civitai y a dos imagenes de muestra alojadas en el CDN de Hugging Face, sin descripcion tecnica, ni licencia, ni pipeline declarado.
 
 El modelo se apoya en la arquitectura de SDXL: un U-Net de difusion latente de aproximadamente 2.600 millones de parametros en el backbone, acompanado de un VAE con compresion espacial de factor 8 y dos codificadores de texto (CLIP ViT-L y OpenCLIP ViT-bigG), lo que suma en torno a 3.500 millones de parametros para el pipeline completo. Illustrious es una linea de ajuste fino de SDXL desarrollada por Onoma AI y especializada en ilustracion y anime, con un etiquetado estilo booru en ingles que condiciona fuertemente la forma de escribir los prompts.
 
@@ -73,11 +73,11 @@ Estimaciones basadas en la arquitectura SDXL que el modelo hereda; el autor no p
 
 | Modelo | Base | Parametros | Contexto de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Yuki_tsukumo_Illustrious_SDXL | Illustrious / SDXL | No disponible (repo de 1,1 GB) | No disponible (SDXL: 77 tokens por codificador) | No declarada | HuggingFace, 0 descargas |
-| Illustrious-XL | SDXL | ~3.500 millones en el pipeline | 77 tokens por codificador | Licencia propia de Illustrious (consultar) | HuggingFace, ampliamente usado |
-| NoobAI-XL | Illustrious (derivado) | ~3.500 millones en el pipeline | 77 tokens por codificador | Derivada de Illustrious (consultar) | HuggingFace |
-| Pony Diffusion V6 XL | SDXL | ~3.500 millones en el pipeline | 77 tokens por codificador | Licencia propia de Pony (consultar) | HuggingFace, Civitai |
-| Animagine XL 3.1 | SDXL | ~3.500 millones en el pipeline | 77 tokens por codificador | Fair AI Public License 1.0-SD (por confirmar) | HuggingFace |
+| Yuki_tsukumo_Illustrious_SDXL | Illustrious / SDXL | No disponible (repo de 1,1 GB) | No disponible (SDXL: 77 tokens por codificador) | No declarada | Hugging Face, 0 descargas |
+| Illustrious-XL | SDXL | ~3.500 millones en el pipeline | 77 tokens por codificador | Licencia propia de Illustrious (consultar) | Hugging Face, ampliamente usado |
+| NoobAI-XL | Illustrious (derivado) | ~3.500 millones en el pipeline | 77 tokens por codificador | Derivada de Illustrious (consultar) | Hugging Face |
+| Pony Diffusion V6 XL | SDXL | ~3.500 millones en el pipeline | 77 tokens por codificador | Licencia propia de Pony (consultar) | Hugging Face, Civitai |
+| Animagine XL 3.1 | SDXL | ~3.500 millones en el pipeline | 77 tokens por codificador | Fair AI Public License 1.0-SD (por confirmar) | Hugging Face |
 
 Los datos de licencia y parametros de los modelos comparados deben verificarse en sus repositorios oficiales; aqui se recogen como referencia orientativa. La diferencia principal de este checkpoint frente a esas alternativas es la falta total de documentacion, metadatos de licencia y validacion por la comunidad.
 
@@ -97,9 +97,9 @@ Los datos de licencia y parametros de los modelos comparados deben verificarse e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NewBie456/Yuki_tsukumo_Illustrious_SDXL
+- Hugging Face: https://huggingface.co/NewBie456/Yuki_tsukumo_Illustrious_SDXL
 - Civitai (version referenciada en la model card): https://civitai.com/models/1683605?modelVersionId=1905523
 - Imagen de muestra 1: https://cdn-uploads.huggingface.co/production/uploads/65e8023ee5e78134ab2b5d37/Lckbbw8LDyEloN3_gdOmi.png
 - Imagen de muestra 2: https://cdn-uploads.huggingface.co/production/uploads/65e8023ee5e78134ab2b5d37/tJtBX310-j1fsGddOL3DW.png
 - Paper de SDXL (referencia de la arquitectura base): https://arxiv.org/abs/2307.01952
-- Repositorio SDXL en HuggingFace (arquitectura base): https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
+- Repositorio SDXL en Hugging Face (arquitectura base): https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0

@@ -96,7 +96,7 @@ La comparacion con Whisper se incluye por categoria funcional (ASR multilingue d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Moons92/hifz-coach-recitation
+- Modelo en Hugging Face: https://huggingface.co/Moons92/hifz-coach-recitation
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/stt_ar_fastconformer_hybrid_large_pcd_v1.0
 - Proyecto Tilawa (exportacion ONNX y cuantizacion, v0.2.0): https://github.com/yazinsai/tilawa
 - Aplicacion HIFZ: https://hifz-coran.netlify.app

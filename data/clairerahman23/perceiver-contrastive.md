@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`clairerahman23/perceiver-contrastive` es un repositorio de HuggingFace que contiene una implementación propia y compacta de la arquitectura Perceiver orientada a aprendizaje contrastivo. El autor lo publica explícitamente como un artefacto de revisión de código, pruebas de humo (smoke tests) y experimentos controlados a pequeña escala, no como un modelo preentrenado listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida pero no entrenada: la propia model card aclara que no se reclama ninguna métrica de benchmark.
+`clairerahman23/perceiver-contrastive` es un repositorio de Hugging Face que contiene una implementación propia y compacta de la arquitectura Perceiver orientada a aprendizaje contrastivo. El autor lo publica explícitamente como un artefacto de revisión de código, pruebas de humo (smoke tests) y experimentos controlados a pequeña escala, no como un modelo preentrenado listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida pero no entrenada: la propia model card aclara que no se reclama ninguna métrica de benchmark.
 
 El modelo es extremadamente pequeño: 16.576 parámetros totales según el fichero de safetensors, lo que lo sitúa tres o cuatro órdenes de magnitud por debajo de cualquier modelo de lenguaje actual. No incluye tokenizador, vocabulario ni pipeline declarado, y la información de contexto, idiomas y cuantización no está disponible. Su interés no es funcional sino estructural: sirve como esqueleto reproducible de un Perceiver con atención de ventana deslizante, fusión bilineal, activación swish y normalización por instancia.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| clairerahman23/perceiver-contrastive | 16.576 | no disponible | MIT | HuggingFace, checkpoint sin entrenar | Implementacion propia, escala "small", sin benchmarks |
+| clairerahman23/perceiver-contrastive | 16.576 | no disponible | MIT | Hugging Face, checkpoint sin entrenar | Implementacion propia, escala "small", sin benchmarks |
 | Perceiver original (DeepMind, 2021) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Publicacion academica y codigo de referencia | Arquitectura de atencion cruzada con latentes; referencia conceptual de este repositorio |
 | Perceiver IO (DeepMind, 2021) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Publicacion academica y codigo de referencia | Generaliza Perceiver a entradas y salidas estructuradas; no comparable en escala ni en estado de entrenamiento |
 
@@ -91,5 +91,5 @@ La comparacion cuantitativa con alternativas de la misma categoria no es posible
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/clairerahman23/perceiver-contrastive
+- Hugging Face: https://huggingface.co/clairerahman23/perceiver-contrastive
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados obtenidos correspondian a paginas de ayuda y foros sin relacion con el modelo (Gmail Help, Ayuda de Gmail, Brainly.in, Microsoft Community, YouTube Help), por lo que se descartan como fuentes.

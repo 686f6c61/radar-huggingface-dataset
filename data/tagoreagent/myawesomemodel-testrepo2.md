@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario tagoreagent en HuggingFace, con licencia MIT y etiquetado para extracción de características (feature-extraction). Según su model card, se trata de una versión actualizada de un modelo previo que ha mejorado significativamente en razonamiento, matemáticas, programación y lógica general. El autor afirma que en el test AIME 2025 la precisión pasó del 70% al 87,5%, y que el modelo emplea más tokens de razonamiento (23K frente a 12K por pregunta).
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario tagoreagent en Hugging Face, con licencia MIT y etiquetado para extracción de características (feature-extraction). Según su model card, se trata de una versión actualizada de un modelo previo que ha mejorado significativamente en razonamiento, matemáticas, programación y lógica general. El autor afirma que en el test AIME 2025 la precisión pasó del 70% al 87,5%, y que el modelo emplea más tokens de razonamiento (23K frente a 12K por pregunta).
 
 Sin embargo, la información pública es muy limitada: no se especifican parámetros, arquitectura, tamaño de contexto, ni datos de entrenamiento. El repositorio tiene cero descargas y cero likes, y la model card no incluye enlaces a código ni a documentación adicional. Por tanto, esta ficha se basa exclusivamente en lo declarado en la model card, marcando como "no disponible" todo dato ausente.
 
@@ -21,7 +21,7 @@ Sin embargo, la información pública es muy limitada: no se especifican paráme
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura del modelo. Los tags de HuggingFace incluyen "bert", lo que sugiere una arquitectura basada en transformer tipo BERT, pero no se confirma en la model card. Tampoco se especifican los datos de entrenamiento, el número de tokens, ni si se utilizaron técnicas como RLHF o DPO. La model card menciona "algoritmos de optimización" introducidos durante el post-entrenamiento, pero sin detalles técnicos.
+No se dispone de información detallada sobre la arquitectura del modelo. Los tags de Hugging Face incluyen "bert", lo que sugiere una arquitectura basada en transformer tipo BERT, pero no se confirma en la model card. Tampoco se especifican los datos de entrenamiento, el número de tokens, ni si se utilizaron técnicas como RLHF o DPO. La model card menciona "algoritmos de optimización" introducidos durante el post-entrenamiento, pero sin detalles técnicos.
 
 ## Capacidades
 
@@ -95,5 +95,5 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/tagoreagent/MyAwesomeModel-TestRepo2
+- Página del modelo en Hugging Face: https://huggingface.co/tagoreagent/MyAwesomeModel-TestRepo2
 - No se proporcionan otros enlaces (paper, repositorio, demo) en la model card.

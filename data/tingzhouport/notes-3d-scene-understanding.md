@@ -6,7 +6,7 @@ El repositorio `Tingzhouport/notes-3d-scene-understanding` no es un modelo de ap
 
 El repositorio incluye, segun su documentacion, el alcance de la pregunta de investigacion y sus posibles factores de confusion, una comparacion propuesta contra baselines emparejados, contexto de evaluacion con benchmarks publicos nombrados en la nota principal, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas, ademas de referencias tematicas. No contiene codigo de entrenamiento, checkpoints funcionales ni resultados experimentales.
 
-Aunque los metadatos de HuggingFace declaran la etiqueta `transformer` y un total de 49.600 parametros en safetensors, este numero es incompatible con cualquier modelo de lenguaje o de vision utilizable (equivale a unos 200 KB en fp32). Se trata, con toda probabilidad, de un artefacto residual o de un fichero auxiliar, no de pesos de un modelo desplegable. La relevancia de esta ficha es, por tanto, documental: sirve para identificar correctamente el repositorio y evitar confundirlo con un modelo.
+Aunque los metadatos de Hugging Face declaran la etiqueta `transformer` y un total de 49.600 parametros en safetensors, este numero es incompatible con cualquier modelo de lenguaje o de vision utilizable (equivale a unos 200 KB en fp32). Se trata, con toda probabilidad, de un artefacto residual o de un fichero auxiliar, no de pesos de un modelo desplegable. La relevancia de esta ficha es, por tanto, documental: sirve para identificar correctamente el repositorio y evitar confundirlo con un modelo.
 
 ## Especificaciones tecnicas
 
@@ -23,13 +23,13 @@ Aunque los metadatos de HuggingFace declaran la etiqueta `transformer` y un tota
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre arquitectura. La unica referencia es la etiqueta `transformer` en los metadatos de HuggingFace, que no viene acompanada de descripcion tecnica alguna: no se especifica si se trata de un transformer encoder-only, decoder-only, encoder-decoder, un hibrido, ni si incorpora attention lineal, decodificacion especulativa u otra innovacion. Tampoco se documenta ninguna capa, dimension de hidden state, numero de cabezas de atencion ni vocabulario.
+No hay informacion sobre arquitectura. La unica referencia es la etiqueta `transformer` en los metadatos de Hugging Face, que no viene acompanada de descripcion tecnica alguna: no se especifica si se trata de un transformer encoder-only, decoder-only, encoder-decoder, un hibrido, ni si incorpora attention lineal, decodificacion especulativa u otra innovacion. Tampoco se documenta ninguna capa, dimension de hidden state, numero de cabezas de atencion ni vocabulario.
 
 Respecto al entrenamiento, la model card es explicita: el repositorio "no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado". No se indica numero de tokens, composicion del dataset, ni si hubo RLHF, DPO o cualquier otra fase de alineamiento. Los unicos elementos descritos son metodologicos: una hipotesis falsable, un plan de comparacion con baselines emparejados, un conjunto de benchmarks publicos por determinar y un protocolo de reproducibilidad que exigiria, en caso de anadirse resultados, versiones de dataset, comandos, semillas, hardware y logs en bruto.
 
 ## Capacidades
 
-- El repositorio no implementa ninguna capacidad de inferencia: no genera texto, no procesa imagenes ni nubes de puntos, y no expone un pipeline en HuggingFace (`pipeline: no disponible`).
+- El repositorio no implementa ninguna capacidad de inferencia: no genera texto, no procesa imagenes ni nubes de puntos, y no expone un pipeline en Hugging Face (`pipeline: no disponible`).
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni razonamiento multi-paso.
 - No se documentan capacidades multilingues; el campo de idiomas no esta disponible.
@@ -78,5 +78,5 @@ No disponible. El objeto de este repositorio es una nota de investigacion, no un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tingzhouport/notes-3d-scene-understanding
+- Repositorio en Hugging Face: https://huggingface.co/Tingzhouport/notes-3d-scene-understanding
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada.

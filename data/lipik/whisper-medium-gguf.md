@@ -107,7 +107,7 @@ La comparación directa más relevante es con el modelo original: mismos pesos y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lipik/whisper-medium-gguf
+- Repositorio Hugging Face: https://huggingface.co/lipik/whisper-medium-gguf
 - Modelo base: https://huggingface.co/openai/whisper-medium
 - Commit del modelo base usado en la conversión: https://huggingface.co/openai/whisper-medium/commit/abdf7c3
 - Motor transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

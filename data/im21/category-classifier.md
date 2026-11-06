@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `im21/category-classifier` es un clasificador de texto destinado a la categorización de documentos o mensajes en clases predefinidas. Ha sido publicado por el usuario `im21` en HuggingFace y utiliza la librería `transformers` con pesos en formato `safetensors`. El tag `modernbert` sugiere que la arquitectura subyacente es un ModernBERT, una evolución del BERT original optimizada para eficiencia y mayor longitud de contexto, aunque la model card no confirma explícitamente esta base.
+El modelo `im21/category-classifier` es un clasificador de texto destinado a la categorización de documentos o mensajes en clases predefinidas. Ha sido publicado por el usuario `im21` en Hugging Face y utiliza la librería `transformers` con pesos en formato `safetensors`. El tag `modernbert` sugiere que la arquitectura subyacente es un ModernBERT, una evolución del BERT original optimizada para eficiencia y mayor longitud de contexto, aunque la model card no confirma explícitamente esta base.
 
 Con aproximadamente 395,9 millones de parámetros, el modelo se sitúa en el rango de los modelos grandes de la familia BERT, comparable a ModernBERT-large. Su pipeline declarado es `text-classification`, lo que indica que está diseñado para tareas de clasificación de secuencias. El repositorio ocupa 1,6 GB y no registra descargas ni valoraciones, lo que sugiere que se trata de una publicación reciente o de un proyecto personal sin difusión previa.
 
@@ -23,16 +23,16 @@ La relevancia de este modelo radica en su potencial para tareas de categorizaci�
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta no esta documentada en la model card. El tag `modernbert` en los metadatos de HuggingFace indica que el modelo probablemente se basa en ModernBERT, una arquitectura transformer publicada por Answer.AI y LightOn en 2024 que introduce mejoras sobre BERT como attention con flash attention, normalizacion pre-norm, y una longitud de contexto ampliada a 4096 tokens. El numero de parametros (395,9 millones) coincide con la configuracion de ModernBERT-large, que tiene 395 millones de parametros.
+La arquitectura exacta no esta documentada en la model card. El tag `modernbert` en los metadatos de Hugging Face indica que el modelo probablemente se basa en ModernBERT, una arquitectura transformer publicada por Answer.AI y LightOn en 2024 que introduce mejoras sobre BERT como attention con flash attention, normalizacion pre-norm, y una longitud de contexto ampliada a 4096 tokens. El numero de parametros (395,9 millones) coincide con la configuracion de ModernBERT-large, que tiene 395 millones de parametros.
 
 No se dispone de informacion sobre el proceso de entrenamiento: no se especifican los datos utilizados, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas de ajuste como fine-tuning supervisado o RLHF. El tag `arxiv:1910.09700` hace referencia al paper original de BERT, lo que sugiere que el modelo sigue la arquitectura clasica de encoder bidireccional, pero no aporta detalles sobre el fine-tuning especifico para clasificacion de categorias.
 
 ## Capacidades
 
 - Clasificacion de texto en categorias predefinidas, segun el pipeline declarado (`text-classification`).
-- Compatible con la libreria `transformers` de HuggingFace, lo que permite su uso con las APIs estandar de PyTorch.
+- Compatible con la libreria `transformers` de Hugging Face, lo que permite su uso con las APIs estandar de PyTorch.
 - Compatible con `text-embeddings-inference` (TEI), lo que facilita su despliegue en entornos de inferencia optimizados.
-- Etiquetado como `endpoints_compatible`, lo que indica que puede desplegarse en los endpoints gestionados de HuggingFace.
+- Etiquetado como `endpoints_compatible`, lo que indica que puede desplegarse en los endpoints gestionados de Hugging Face.
 - No se documentan capacidades adicionales como generacion de texto, tool calling, agentes o multimodalidad.
 
 ## Casos de uso
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible. Con 395,9 millones de parametros en precision fp32, el modelo ocuparia aproximadamente 1,6 GB en memoria, pero el uso real depende de la longitud de las secuencias y del batch size.
 - GPU recomendadas: no disponible. Un modelo de este tamano puede ejecutarse en GPUs consumer como RTX 3060 (12 GB) o superiores, pero no hay datos confirmados.
 - Compatible con consumer GPU: probablemente si, dado el tamano de parametros, pero sin confirmacion oficial.
-- Opciones de despliegue: compatible con `transformers` (PyTorch), `text-embeddings-inference` y endpoints de HuggingFace. Tambien podria convertirse a formatos como ONNX o TensorRT, aunque no esta documentado.
+- Opciones de despliegue: compatible con `transformers` (PyTorch), `text-embeddings-inference` y endpoints de Hugging Face. Tambien podria convertirse a formatos como ONNX o TensorRT, aunque no esta documentado.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -71,6 +71,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/im21/category-classifier
+- Repositorio Hugging Face: https://huggingface.co/im21/category-classifier
 - Paper de BERT (referenciado en el tag arxiv): https://arxiv.org/abs/1910.09700
 - No se han encontrado otros enlaces relevantes (repositorios de codigo, demos o papers especificos del modelo).

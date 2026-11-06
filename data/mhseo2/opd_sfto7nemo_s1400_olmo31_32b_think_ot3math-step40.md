@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`opd_sfto7nemo_s1400_olmo31_32b_think_ot3math-step40` es un checkpoint de investigación publicado por el usuario mhseo2 en HuggingFace. Se trata de un modelo de 7.298.011.136 parámetros (aproximadamente 7,3 mil millones) obtenido mediante destilación on-policy (on-policy distillation, OPD) a partir de un modelo estudiante ya afinado con SFT sobre Nemotron-Math-v2, usando como profesor `allenai/Olmo-3.1-32B-Think`. El checkpoint corresponde al paso 40 del proceso de destilación.
+`opd_sfto7nemo_s1400_olmo31_32b_think_ot3math-step40` es un checkpoint de investigación publicado por el usuario mhseo2 en Hugging Face. Se trata de un modelo de 7.298.011.136 parámetros (aproximadamente 7,3 mil millones) obtenido mediante destilación on-policy (on-policy distillation, OPD) a partir de un modelo estudiante ya afinado con SFT sobre Nemotron-Math-v2, usando como profesor `allenai/Olmo-3.1-32B-Think`. El checkpoint corresponde al paso 40 del proceso de destilación.
 
 El objetivo del experimento es transferir capacidades de razonamiento matemático y modo "think" desde un modelo profesor de 32B hacia un estudiante de 7B, sin utilizar recompensas de tarea, únicamente mediante divergencia KL reversa por token sobre las propias rollouts del estudiante. Los prompts provienen de OpenThoughts3 (preguntas de matemáticas sin respuestas), lo que sitúa al modelo en el ámbito del razonamiento matemático con cadenas de pensamiento largas (hasta 32.768 tokens por respuesta).
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks para establecer una comparación de rendimi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mhseo2/opd_sfto7nemo_s1400_olmo31_32b_think_ot3math-step40
+- Hugging Face: https://huggingface.co/mhseo2/opd_sfto7nemo_s1400_olmo31_32b_think_ot3math-step40
 - Modelo base (SFT): https://huggingface.co/mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step1400
 - Profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Código `mopdRL` (revisión f1bcc9eb82a8bcc7a053a23dd1afcae82fb591e4): no disponible como enlace directo en la información proporcionada

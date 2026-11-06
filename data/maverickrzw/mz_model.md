@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MZ_model es un modelo publicado en HuggingFace por el usuario maverickrzw bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye el encabezado YAML con la licencia, sin información sobre arquitectura, datos de entrenamiento, capacidades o uso previsto. El repositorio no registra descargas ni interacciones en el momento de redactar esta ficha.
+MZ_model es un modelo publicado en Hugging Face por el usuario maverickrzw bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye el encabezado YAML con la licencia, sin información sobre arquitectura, datos de entrenamiento, capacidades o uso previsto. El repositorio no registra descargas ni interacciones en el momento de redactar esta ficha.
 
 Por tanto, no es posible determinar qué problema resuelve, qué arquitectura emplea, cuál es su tamaño ni su longitud de contexto. La ausencia de documentación y de metadatos (pipeline no definido, idiomas no declarados) impide evaluar su idoneidad para ningún caso de uso concreto.
 
@@ -34,7 +34,7 @@ Tampoco hay referencias a innovaciones técnicas (decodificación especulativa, 
 - No hay evidencia publicada de capacidades de agente o razonamiento multi-paso.
 - No se ha declarado soporte multilingüe ni un conjunto de idiomas concreto.
 - No se ha declarado soporte de visión, audio ni modos de razonamiento explícito (thinking mode).
-- El pipeline no está definido en HuggingFace, por lo que ni siquiera se confirma que sea un modelo de generación de texto.
+- El pipeline no está definido en Hugging Face, por lo que ni siquiera se confirma que sea un modelo de generación de texto.
 
 ## Casos de uso
 
@@ -79,5 +79,5 @@ No disponible. Sin conocer el tamaño, la arquitectura ni las capacidades del mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maverickrzw/MZ_model
+- Hugging Face: https://huggingface.co/maverickrzw/MZ_model
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

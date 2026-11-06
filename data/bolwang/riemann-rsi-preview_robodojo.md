@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Riemann-RSI-Preview_robodojo es un repositorio de artefactos para robótica publicado por el usuario bolwang en HuggingFace, etiquetado con el pipeline `robotics` y la librería `diffusers`. No se trata de un modelo de lenguaje ni de un modelo fundacional entrenado de forma monolítica, sino de un paquete que agrupa una política aprendida denominada Riemann1.0 junto con los modelos de visión públicos y los detectores de tarea de tamaño reducido que su integración con RoboDojo requiere en tiempo de inferencia. El repositorio ocupa 29,6 GB y se distribuye en formato safetensors.
+Riemann-RSI-Preview_robodojo es un repositorio de artefactos para robótica publicado por el usuario bolwang en Hugging Face, etiquetado con el pipeline `robotics` y la librería `diffusers`. No se trata de un modelo de lenguaje ni de un modelo fundacional entrenado de forma monolítica, sino de un paquete que agrupa una política aprendida denominada Riemann1.0 junto con los modelos de visión públicos y los detectores de tarea de tamaño reducido que su integración con RoboDojo requiere en tiempo de inferencia. El repositorio ocupa 29,6 GB y se distribuye en formato safetensors.
 
 La relevancia del artefacto es de tipo operativo más que de investigación de frontera: el autor empaqueta las dependencias exactas (SAM3, CLIP, GroundingDINO y el encoder/VAE/tokenizer de Wan2.2) con identidades y hashes fijados, de modo que un despliegue reproducible de la política no dependa de checkpoints homónimos que puedan haber cambiado aguas arriba. La model card insiste explícitamente en usar la revisión fijada y no sustituir modelos anclados por otros de nombre similar.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Riemann-RSI-Preview_robodojo | Paquete de política robótica y modelos de visión | no disponible | no disponible | mixta por componente | HuggingFace, 0 descargas |
+| Riemann-RSI-Preview_robodojo | Paquete de política robótica y modelos de visión | no disponible | no disponible | mixta por componente | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría en los datos proporcionados.
@@ -84,7 +84,7 @@ No se dispone de información sobre modelos comparables de la misma categoría e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bolwang/Riemann-RSI-Preview_robodojo
+- Hugging Face: https://huggingface.co/bolwang/Riemann-RSI-Preview_robodojo
 - Licencias (ancla en el README): https://huggingface.co/bolwang/Riemann-RSI-Preview_robodojo/blob/main/README.md#licenses
 - Directorio Riemann1.0: https://huggingface.co/bolwang/Riemann-RSI-Preview_robodojo/tree/main/Riemann1.0
 - Directorio common_visual_models: https://huggingface.co/bolwang/Riemann-RSI-Preview_robodojo/tree/main/common_visual_models

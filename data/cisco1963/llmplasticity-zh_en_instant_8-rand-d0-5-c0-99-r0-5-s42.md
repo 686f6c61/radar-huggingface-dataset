@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Cisco1963/llmplasticity-zh_en_instant_8-rand-d0.5-c0.99-r0.5-s42` es un artefacto de investigación publicado en HuggingFace por el usuario Cisco1963, construido sobre la arquitectura GPT-2. Cuenta con 122.706.432 parámetros totales (aproximadamente 123 millones), lo que lo sitúa en la misma escala que GPT-2 small, y se distribuye en formato safetensors. El repositorio ocupa 10,3 GB, un tamaño muy superior al de los pesos del modelo, lo que apunta a que incluye estados de optimizador o múltiples checkpoints de entrenamiento más que a un único conjunto de pesos de inferencia.
+El modelo `Cisco1963/llmplasticity-zh_en_instant_8-rand-d0.5-c0.99-r0.5-s42` es un artefacto de investigación publicado en Hugging Face por el usuario Cisco1963, construido sobre la arquitectura GPT-2. Cuenta con 122.706.432 parámetros totales (aproximadamente 123 millones), lo que lo sitúa en la misma escala que GPT-2 small, y se distribuye en formato safetensors. El repositorio ocupa 10,3 GB, un tamaño muy superior al de los pesos del modelo, lo que apunta a que incluye estados de optimizador o múltiples checkpoints de entrenamiento más que a un único conjunto de pesos de inferencia.
 
 El nombre del repositorio sugiere que forma parte de una línea de experimentos sobre plasticidad en modelos de lenguaje ("llmplasticity"), probablemente orientados a estudiar la pérdida de plasticidad durante el entrenamiento continuado. Los sufijos (`zh_en`, `instant_8`, `rand`, `d0.5`, `c0.99`, `r0.5`, `s42`) parecen corresponder a hiperparámetros y semillas del experimento, aunque no se documenta su significado en la información proporcionada. La mención `zh_en` apunta a un posible entrenamiento bilingüe chino-inglés, si bien esto no está confirmado por los metadatos.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada por la escasez de información: no hay l
 
 ## Arquitectura y entrenamiento
 
-La única información fiable sobre la arquitectura es la etiqueta `gpt2` incluida en los metadatos de HuggingFace, lo que indica que se trata de un transformer decoder-only de la familia GPT-2. El recuento de 122.706.432 parámetros es coherente con la configuración de GPT-2 small (12 capas, 768 dimensiones de embedding, 12 cabezas de atención), aunque podría diferir en el tamaño del vocabulario, especialmente si el modelo se ha entrenado con un tokenizador bilingüe chino-inglés. No se dispone de detalles sobre el número de capas, dimensiones internas ni vocabulario exactos.
+La única información fiable sobre la arquitectura es la etiqueta `gpt2` incluida en los metadatos de Hugging Face, lo que indica que se trata de un transformer decoder-only de la familia GPT-2. El recuento de 122.706.432 parámetros es coherente con la configuración de GPT-2 small (12 capas, 768 dimensiones de embedding, 12 cabezas de atención), aunque podría diferir en el tamaño del vocabulario, especialmente si el modelo se ha entrenado con un tokenizador bilingüe chino-inglés. No se dispone de detalles sobre el número de capas, dimensiones internas ni vocabulario exactos.
 
 No se han publicado datos sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de ajuste como RLHF, DPO o SFT. El nombre del repositorio sugiere un experimento controlado con hiperparámetros fijos (probablemente relacionados con decaimiento, coeficientes de regularización y semilla aleatoria 42), pero su significado concreto es "no disponible". El tamaño del repositorio (10,3 GB frente a los aproximadamente 0,5 GB de los pesos en fp32) indica que probablemente contiene estados de optimizador o checkpoints intermedios del proceso de entrenamiento.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo | ~123 M | No disponible | No disponible | HuggingFace (5 descargas) | Artefacto de investigación, sin benchmarks |
-| GPT-2 small | 124 M | 1024 tokens | MIT modificada (OpenAI) | HuggingFace, ampliamente distribuido | Referencia de facto en esta escala; benchmarks públicos |
-| DistilGPT-2 | 82 M | 1024 tokens | MIT (basado en GPT-2) | HuggingFace | Versión destilada, más rápida y ligera |
-| GPT-2 medium | 355 M | 1024 tokens | MIT modificada (OpenAI) | HuggingFace | Mayor capacidad, sigue cabiendo en GPU de consumo |
+| Este modelo | ~123 M | No disponible | No disponible | Hugging Face (5 descargas) | Artefacto de investigación, sin benchmarks |
+| GPT-2 small | 124 M | 1024 tokens | MIT modificada (OpenAI) | Hugging Face, ampliamente distribuido | Referencia de facto en esta escala; benchmarks públicos |
+| DistilGPT-2 | 82 M | 1024 tokens | MIT (basado en GPT-2) | Hugging Face | Versión destilada, más rápida y ligera |
+| GPT-2 medium | 355 M | 1024 tokens | MIT modificada (OpenAI) | Hugging Face | Mayor capacidad, sigue cabiendo en GPU de consumo |
 
 La comparación es orientativa: al no existir benchmarks publicados para este modelo, no puede evaluarse su rendimiento frente a las alternativas.
 
@@ -85,6 +85,6 @@ La comparación es orientativa: al no existir benchmarks publicados para este mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-zh_en_instant_8-rand-d0.5-c0.99-r0.5-s42
-- Repositorio del autor en HuggingFace: https://huggingface.co/Cisco1963
+- Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-zh_en_instant_8-rand-d0.5-c0.99-r0.5-s42
+- Repositorio del autor en Hugging Face: https://huggingface.co/Cisco1963
 - Papers, blogs, repos o demos adicionales: no disponibles en la información proporcionada.

@@ -74,6 +74,6 @@ No se dispone de datos comparativos publicados para este modelo. Existen alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MingSafeR/xyran-image-safety
+- Hugging Face: https://huggingface.co/MingSafeR/xyran-image-safety
 - Repositorio de Xyran en GitHub: https://github.com/mingshenhk/xyran/tree/main
 - Paquete en PyPI: https://pypi.org/project/xyran/#description

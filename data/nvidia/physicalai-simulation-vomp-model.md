@@ -70,7 +70,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 | Modelo | Rol respecto a VoMP | Parámetros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| VoMP (Geometry Transformer + MatVAE) | Sistema completo de predicción de propiedades mecánicas volumétricas | ~390,5 M (incluyendo DINOv2) | NVIDIA Open Model License | Pesos en HuggingFace |
+| VoMP (Geometry Transformer + MatVAE) | Sistema completo de predicción de propiedades mecánicas volumétricas | ~390,5 M (incluyendo DINOv2) | NVIDIA Open Model License | Pesos en Hugging Face |
 | TRELLIS | Modelo base usado para inicializar el backbone del Geometry Transformer | No disponible en la información | No disponible en la información | No disponible en la información |
 | DINOv2-ViT-L/14 | Extractor de características visuales congelado, integrado en VoMP | 304,3 M | No disponible en la información | No disponible en la información |
 
@@ -89,7 +89,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/PhysicalAI-Simulation-VoMP-Model
+- Modelo en Hugging Face: https://huggingface.co/nvidia/PhysicalAI-Simulation-VoMP-Model
 - Paper (arXiv): https://arxiv.org/abs/2510.22975
 - Página del proyecto: https://research.nvidia.com/labs/sil/projects/vomp/
 - Demo interactiva: https://huggingface.co/spaces/nvidia/PhysicalAI-Robotics-VoMP-Demo

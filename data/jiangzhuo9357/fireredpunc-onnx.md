@@ -82,9 +82,9 @@ No se han publicado resultados de benchmarks comparativos frente a otros modelos
 
 | Modelo | Formato | Cuantizacion | Paridad vs fp32 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jiangzhuo9357/fireredpunc-onnx (este repo) | ONNX | int8 weight-only, block size 32, simetrica | 153/153 filas, 100% de clases | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| jiangzhuo9357/fireredpunc-onnx (este repo) | ONNX | int8 weight-only, block size 32, simetrica | 153/153 filas, 100% de clases | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | 42ailab/FireRedPunc-ONNX | ONNX | int8 dinamico por tensor | 43/153 filas, 96,8% de clases | no disponible en la informacion | publicado junto a los pesos originales |
-| FireRedTeam/FireRedPunc | PyTorch fp32 | ninguna | referencia (100%) | Apache-2.0 | HuggingFace |
+| FireRedTeam/FireRedPunc | PyTorch fp32 | ninguna | referencia (100%) | Apache-2.0 | Hugging Face |
 
 No se dispone de datos sobre otros modelos de restauracion de puntuacion (por ejemplo alternativas basadas en XLM-R o en modelos multilingues de puntuacion) en la informacion proporcionada, por lo que la comparativa se limita a las tres variantes del mismo modelo.
 
@@ -99,12 +99,12 @@ No se dispone de datos sobre otros modelos de restauracion de puntuacion (por ej
 - Riesgo de alucinacion en el sentido de puntuacion espuria: al ser un clasificador de tokens, puede insertar marcas donde no corresponden, especialmente en texto con ruido de ASR.
 - No se documentan sesgos especificos ni composicion del dataset de entrenamiento, por lo que no es posible evaluar sesgos sistematicos.
 - Licencia Apache-2.0, heredada de `FireRedTeam/FireRedPunc` y `FireRedTeam/FireRedASR2S`: permite uso comercial con las obligaciones habituales de atribucion y conservacion del aviso de licencia. El archivo `LICENSE` del repositorio es una copia literal del de `FireRedASR2S`.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el pipeline no esta declarado en HuggingFace, por lo que no hay validacion externa de la comunidad.
+- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el pipeline no esta declarado en Hugging Face, por lo que no hay validacion externa de la comunidad.
 - El repositorio es un espejo mantenido por un tercero, no una publicacion oficial de FireRedTeam; conviene verificar la integridad de los archivos con los hashes SHA-256 incluidos en la model card.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jiangzhuo9357/fireredpunc-onnx
+- Repositorio en Hugging Face: https://huggingface.co/jiangzhuo9357/fireredpunc-onnx
 - Pesos originales de FireRedTeam: https://huggingface.co/FireRedTeam/FireRedPunc
 - Codigo de FireRedASR2S (`fireredasr2s/fireredpunc`, commit `4e7d9aaf`): https://github.com/FireRedTeam/FireRedASR2S
 - Export int8 dinamico alternativo (42ailab): https://huggingface.co/42ailab/FireRedPunc-ONNX

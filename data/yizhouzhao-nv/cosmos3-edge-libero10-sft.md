@@ -18,7 +18,7 @@ El repositorio incluye los pesos del modelo en formato PyTorch Distributed Check
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible (el repositorio contiene pesos en DCP, sin cuantización publicada) |
 | Idiomas soportados | No disponibles (modelo orientado a percepción visual y control robótico) |
-| Licencia | other (según HuggingFace; se debe consultar la licencia específica de Cosmos3-Edge y del dataset) |
+| Licencia | other (según Hugging Face; se debe consultar la licencia específica de Cosmos3-Edge y del dataset) |
 | Formato de pesos | PyTorch Distributed Checkpoint (DCP) – shards de pesos únicamente |
 
 ## Arquitectura y entrenamiento
@@ -75,7 +75,7 @@ No se dispone de información suficiente para una comparativa cuantitativa con o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yizhouzhao-nv/cosmos3-edge-libero10-sft
+- Repositorio Hugging Face: https://huggingface.co/yizhouzhao-nv/cosmos3-edge-libero10-sft
 - Modelo base Cosmos3-Edge: https://huggingface.co/nvidia/Cosmos3-Edge
 - Dataset LIBERO_LeRobot_v3: https://huggingface.co/datasets/nvidia/LIBERO_LeRobot_v3
 - Framework cosmos-framework (GitHub): https://github.com/NVIDIA/cosmos-framework

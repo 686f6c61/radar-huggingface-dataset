@@ -81,7 +81,7 @@ No disponible. La información proporcionada no incluye datos de otros códecs n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/audio8-tts-codec-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/audio8-tts-codec-loom
 - Modelo base: https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b
 - Exportación del modelo TTS completo: https://huggingface.co/loom-ai-org/audio8-tts-realistic-0.6b-loom
 - Motor loom.cpp: https://github.com/loom-ai-org/loom.cpp

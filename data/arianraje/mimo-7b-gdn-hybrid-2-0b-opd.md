@@ -80,7 +80,7 @@ No se han publicado requisitos oficiales de hardware. A partir de los parámetro
 | arianraje/mimo-7b-gdn-hybrid-600M-OPD | No disponible | No disponible | MIT | No disponible | No disponible |
 | XiaomiMiMo/MiMo-7B-RL-0530 (profesor) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-La comparativa se limita a los datos disponibles en la model card y en la información de HuggingFace. El modelo 2.0B-OPD obtiene un ligero incremento en MATH-500 y MMLU respecto al 1.8B-OPD, pero desciende en AIME24 pass@1. El margen de error en AIME hace que estas diferencias no sean concluyentes. El 600M-OPD y el profesor MiMo-7B-RL-0530 no tienen métricas publicadas en la información proporcionada.
+La comparativa se limita a los datos disponibles en la model card y en la información de Hugging Face. El modelo 2.0B-OPD obtiene un ligero incremento en MATH-500 y MMLU respecto al 1.8B-OPD, pero desciende en AIME24 pass@1. El margen de error en AIME hace que estas diferencias no sean concluyentes. El 600M-OPD y el profesor MiMo-7B-RL-0530 no tienen métricas publicadas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ La comparativa se limita a los datos disponibles en la model card y en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-2.0B-OPD
+- Modelo en Hugging Face: https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-2.0B-OPD
 - Checkpoint pre-decay: https://huggingface.co/arianraje/mimo-7b-gdn-opd-predecay-1921m-step12391
 - Modelo base (profesor): https://huggingface.co/XiaomiMiMo/MiMo-7B-RL-0530
 - Modelo anterior de la escalera: https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-1.8B-OPD

@@ -4,7 +4,7 @@
 
 `rmehra007/gemma-sql-lora-Q8_0-GGUF` es un adaptador LoRA en formato GGUF, cuantizado a Q8_0, derivado de `rmehra007/gemma-sql-lora`. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino que debe aplicarse sobre un modelo base tipo Gemma para funcionar. Su proposito, segun el nombre del repositorio base, esta orientado a la generacion de consultas SQL, aunque la model card publicada no detalla el dataset ni el proceso de entrenamiento.
 
-El artefacto lo publica el usuario `rmehra007` y se ha generado con el espacio `gguf-my-lora` de ggml.ai, que convierte adaptadores LoRA al formato GGUF para su uso con `llama.cpp`. La relevancia practica de este repositorio es servir como puente entre un adaptador entrenado en formato HuggingFace/PEFT y el ecosistema de inferencia local (llama.cpp, llama-server), permitiendo aplicar el ajuste sin necesidad de fusionarlo previamente con el modelo base.
+El artefacto lo publica el usuario `rmehra007` y se ha generado con el espacio `gguf-my-lora` de ggml.ai, que convierte adaptadores LoRA al formato GGUF para su uso con `llama.cpp`. La relevancia practica de este repositorio es servir como puente entre un adaptador entrenado en formato Hugging Face/PEFT y el ecosistema de inferencia local (llama.cpp, llama-server), permitiendo aplicar el ajuste sin necesidad de fusionarlo previamente con el modelo base.
 
 El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, con un tamano declarado de 0.0 GB. El recuento real de parametros en safetensors es de 20.766.720, cifra que corresponde a los pesos del adaptador, no al modelo base sobre el que se aplica. No hay informacion publicada sobre licencia, idiomas soportados ni pipeline.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rmehra007/gemma-sql-lora-Q8_0-GGUF | 20.766.720 (adaptador LoRA) | no disponible | GGUF (Q8_0) | no disponible | HuggingFace, 0 descargas |
-| rmehra007/gemma-sql-lora (adaptador original) | no disponible | no disponible | PEFT/HuggingFace | no disponible | HuggingFace |
+| rmehra007/gemma-sql-lora-Q8_0-GGUF | 20.766.720 (adaptador LoRA) | no disponible | GGUF (Q8_0) | no disponible | Hugging Face, 0 descargas |
+| rmehra007/gemma-sql-lora (adaptador original) | no disponible | no disponible | PEFT/HuggingFace | no disponible | Hugging Face |
 | Modelos de generacion de SQL alternativos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa con alternativas de la misma categoria (por ejemplo, otros adaptadores text-to-SQL o modelos especializados en SQL), ya que no se han encontrado datos publicos en la busqueda realizada.
@@ -83,7 +83,7 @@ No se dispone de informacion suficiente para establecer una comparativa con alte
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rmehra007/gemma-sql-lora-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/rmehra007/gemma-sql-lora-Q8_0-GGUF
 - Adaptador original: https://huggingface.co/rmehra007/gemma-sql-lora
 - Espacio de conversion GGUF-my-lora: https://huggingface.co/spaces/ggml-org/gguf-my-lora
 - Documentacion del servidor llama.cpp: https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md

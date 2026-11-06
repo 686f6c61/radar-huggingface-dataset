@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`justalexanderkozlov/matching91` es un prototipo de investigación publicado en HuggingFace que implementa una variante de MoCo v3 (Momentum Contrast v3, aprendizaje autosupervisado por contraste) orientada a tareas de *matching*. No es un modelo entrenado ni un checkpoint con resultados: la propia model card lo describe como una «initialization checkpoint for smoke tests», es decir, pesos inicializados aleatoriamente que sirven para validar que el código de entrenamiento e inferencia funciona de extremo a extremo. El repositorio contiene un único artefacto principal, `pipeline.py`, junto con `config.json`, `training_args.json` y `model.safetensors`.
+`justalexanderkozlov/matching91` es un prototipo de investigación publicado en Hugging Face que implementa una variante de MoCo v3 (Momentum Contrast v3, aprendizaje autosupervisado por contraste) orientada a tareas de *matching*. No es un modelo entrenado ni un checkpoint con resultados: la propia model card lo describe como una «initialization checkpoint for smoke tests», es decir, pesos inicializados aleatoriamente que sirven para validar que el código de entrenamiento e inferencia funciona de extremo a extremo. El repositorio contiene un único artefacto principal, `pipeline.py`, junto con `config.json`, `training_args.json` y `model.safetensors`.
 
 El dato más relevante para evaluarlo es su tamaño real: 33.088 parámetros en safetensors, cuatro órdenes de magnitud por debajo de un ViT-B/16 (~86 M de parámetros) que es la escala «base» habitual en MoCo v3. La model card declara `Scale: base`, pero el recuento de parámetros del propio fichero de pesos no respalda esa etiqueta; conviene tratar la escala como una intención de diseño del script, no como una medición del checkpoint.
 
@@ -27,7 +27,7 @@ Por tanto, su interés ahora mismo es puramente metodológico: documenta una rec
 | Tamano del repositorio | 0,0 GB |
 | Framework declarado | PyTorch |
 | Descargas / likes | 0 / 1 |
-| Fecha de creacion | 2026-10-19 (según metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-19 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| matching91 (este) | 33.088 (declara escala «base») | No disponible | Ninguno (no se reclama) | BSD-3-Clause | HuggingFace, 0 descargas |
+| matching91 (este) | 33.088 (declara escala «base») | No disponible | Ninguno (no se reclama) | BSD-3-Clause | Hugging Face, 0 descargas |
 | MoCo v3 oficial (Facebook AI Research) | ~86 M en ViT-B/16 (referencia pública) | No aplica (encoder visual) | Métricas de linear probing en ImageNet en el paper | No disponible en la información proporcionada | Repo público de investigación |
 | DINOv2 (Meta) | Varias tallas, desde ~21 M (referencia pública) | No aplica (encoder visual) | Métricas публиadas en el paper | No disponible en la información proporcionada | Pesos públicos |
 | SimCLR (Google) | ~24 M en ResNet-50 (referencia pública) | No aplica (encoder visual) | Métricas публиadas en el paper | No disponible en la información proporcionada | Repo público |
@@ -93,7 +93,7 @@ Nota: los datos de los modelos comparables provienen de documentación pública 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/justalexanderkozlov/matching91
+- Modelo en Hugging Face: https://huggingface.co/justalexanderkozlov/matching91
 - Repositorio oficial de MoCo v3 (referencia de la arquitectura, no enlazado en la información proporcionada): no disponible
 - Paper de MoCo v3 (referencia, no enlazado en la información proporcionada): no disponible
 - Demo o espacio asociado: no disponible

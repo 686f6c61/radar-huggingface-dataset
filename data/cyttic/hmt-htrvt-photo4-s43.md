@@ -86,7 +86,7 @@ No se dispone en la informacion proporcionada de datos de otros modelos comparab
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-photo4-s43
+- Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-photo4-s43
 - Dataset de entrenamiento referenciado: `cyttic/hhd-optionb-split` (no se proporciona URL directa en la informacion disponible)
 - Detalles adicionales: `results.json` dentro del repositorio (no se proporciona URL directa)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

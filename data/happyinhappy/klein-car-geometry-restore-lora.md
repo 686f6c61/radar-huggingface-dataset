@@ -65,7 +65,7 @@ No disponible. No se han encontrado modelos comparables con la misma función es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/happyinhappy/klein-car-geometry-restore-lora
+- Hugging Face: https://huggingface.co/happyinhappy/klein-car-geometry-restore-lora
 - Modelo base: black-forest-labs/FLUX.2-klein (no se proporciona URL directa)
 - Repositorio ai-toolkit: https://github.com/ostris/ai-toolkit
 - Contacto del autor: https://happyin.work/mashinki/ · https://github.com/AnastasiyaW · https://t.me/happy_in_happy

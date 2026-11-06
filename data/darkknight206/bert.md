@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`darkknight206/bert` es un ajuste fino mediante QLoRA del modelo `deepseek-ai/deepseek-moe-16b-chat`, un transformer con arquitectura Mixture-of-Experts (MoE) de 16.000 millones de parametros. Lo desarrolla el usuario de HuggingFace darkknight206 (autodenominado darkknight25 en la model card) y esta orientado a tareas de dominio medico: respuesta a preguntas biomedicas, razonamiento clinico y resumen de notas clinicas. El modelo se publica con licencia MIT y solo declara soporte para ingles.
+`darkknight206/bert` es un ajuste fino mediante QLoRA del modelo `deepseek-ai/deepseek-moe-16b-chat`, un transformer con arquitectura Mixture-of-Experts (MoE) de 16.000 millones de parametros. Lo desarrolla el usuario de Hugging Face darkknight206 (autodenominado darkknight25 en la model card) y esta orientado a tareas de dominio medico: respuesta a preguntas biomedicas, razonamiento clinico y resumen de notas clinicas. El modelo se publica con licencia MIT y solo declara soporte para ingles.
 
 El interes tecnico del modelo radica en la combinacion de una arquitectura MoE de gran capacidad con un ajuste eficiente en parametros: se entrenan aproximadamente 85 millones de parametros mediante adaptadores LoRA sobre una base cuantizada a 4 bits (NF4 con `bitsandbytes`), lo que permite adaptar un modelo de 16B a un dominio especializado con un coste de entrenamiento reducido. Los datos de ajuste provienen de cuatro conjuntos publicos: `pubmed_qa`, `medmcqa`, `ccdv/pubmed-summarization` y `ohsumed`.
 
@@ -20,7 +20,7 @@ La relevancia practica es limitada por su estado de publicacion: el repositorio 
 | Tipos de cuantizacion | 4-bit NF4 (`bitsandbytes`) para el ajuste; el modelo base soporta cuantizaciones habituales (no se detallan en la informacion disponible) |
 | Idiomas soportados | Ingles (`en`) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (segun tags de HuggingFace); el tamano del repo figura como 0.0 GB |
+| Formato de pesos | safetensors (segun tags de Hugging Face); el tamano del repo figura como 0.0 GB |
 | Libreria | transformers |
 | Modelo base | `deepseek-ai/deepseek-moe-16b-chat` |
 | Metodo de ajuste | QLoRA + LoRA via `peft` |
@@ -84,7 +84,7 @@ La comparacion con alternativas medicas especializadas no puede completarse con 
 - **Riesgo clinico**: es un modelo de lenguaje, no un dispositivo medico; no debe usarse para diagnostico ni decision terapeutica sin supervision profesional.
 - **Alucinacion**: sin evaluacion publicada, el riesgo de generar afirmaciones medicas incorrectas con aparente seguridad es alto y no esta cuantificado.
 - **Estado del repositorio**: el tamano del repo figura como 0.0 GB y no hay descargas ni likes, lo que sugiere que los pesos pueden no estar disponibles o que la publicacion esta incompleta.
-- **Inconsistencias en la model card**: se citan como base `deepseek-llm-16b-chat`, `deepseek-l6b-moe-chat` y `deepseek-moe-16b-chat` de forma contradictoria; el ID del autor tambien difiere (`darkknight206` en HuggingFace frente a `darkknight25` en la card).
+- **Inconsistencias en la model card**: se citan como base `deepseek-llm-16b-chat`, `deepseek-l6b-moe-chat` y `deepseek-moe-16b-chat` de forma contradictoria; el ID del autor tambien difiere (`darkknight206` en Hugging Face frente a `darkknight25` en la card).
 - **Idioma**: solo ingles declarado; no hay soporte verificado de castellano.
 - **Contexto**: la longitud de contexto no esta documentada para este ajuste.
 - **Licencia**: MIT segun la card, aunque conviene verificar la licencia del modelo base DeepSeek antes de uso comercial, ya que la card afirma que es "la misma que la del modelo base".
@@ -93,7 +93,7 @@ La comparacion con alternativas medicas especializadas no puede completarse con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darkknight206/bert
+- Modelo en Hugging Face: https://huggingface.co/darkknight206/bert
 - Modelo base: https://huggingface.co/deepseek-ai/deepseek-moe-16b-chat
 - Dataset PubMedQA: https://huggingface.co/datasets/pubmed_qa
 - Dataset MedMCQA: https://huggingface.co/datasets/medmcqa

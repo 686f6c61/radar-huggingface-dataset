@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jeesup/svd-safety-mis7_swift_remove40` es un checkpoint derivado de `mistralai/Mistral-7B-Instruct-v0.2` comprimido mediante SVD-LLM, con un 40,00 % de los parámetros eliminados respecto al modelo denso original (fracción de parámetros resultante declarada: 0,6003). Lo publica el usuario Jeesup en HuggingFace como artefacto de investigación. No es un modelo de propósito general ni un asistente desplegable: es una celda concreta de una rejilla experimental que cruza reglas de selección de componentes SVD con presupuestos de restauración, y cuyo objetivo es medir cómo la compresión de bajo rango degrada el comportamiento de seguridad y qué regla de selección lo repara mejor.
+`Jeesup/svd-safety-mis7_swift_remove40` es un checkpoint derivado de `mistralai/Mistral-7B-Instruct-v0.2` comprimido mediante SVD-LLM, con un 40,00 % de los parámetros eliminados respecto al modelo denso original (fracción de parámetros resultante declarada: 0,6003). Lo publica el usuario Jeesup en Hugging Face como artefacto de investigación. No es un modelo de propósito general ni un asistente desplegable: es una celda concreta de una rejilla experimental que cruza reglas de selección de componentes SVD con presupuestos de restauración, y cuyo objetivo es medir cómo la compresión de bajo rango degrada el comportamiento de seguridad y qué regla de selección lo repara mejor.
 
 En esta celda concreta, el presupuesto de restauración es del 0,000 % y el número de componentes restaurados es 0, con la regla de selección etiquetada como `unknown` en la model card. Es decir, el paso de "restauración" es un no-op y el checkpoint equivale, en la práctica, a una compresión SVD-LLM simple sin reparación posterior. La semilla declarada es 42.
 
@@ -87,8 +87,8 @@ No se han publicado en la información disponible valores de referencia del mode
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| svd-safety-mis7_swift_remove40 (este) | 7.241.732.096 en safetensors; fracción densa declarada 0,6003 | No disponible | Apache-2.0 | Público en HuggingFace, 0 descargas |
-| mistralai/Mistral-7B-Instruct-v0.2 (base sin comprimir) | 7,24·10⁹ | 32.768 tokens | Apache-2.0 | Público en HuggingFace |
+| svd-safety-mis7_swift_remove40 (este) | 7.241.732.096 en safetensors; fracción densa declarada 0,6003 | No disponible | Apache-2.0 | Público en Hugging Face, 0 descargas |
+| mistralai/Mistral-7B-Instruct-v0.2 (base sin comprimir) | 7,24·10⁹ | 32.768 tokens | Apache-2.0 | Público en Hugging Face |
 | Otras celdas de la rejilla del mismo estudio | No disponible | No disponible | No disponible | No se publican identificadores ni métricas en la información disponible |
 | Alternativas de compresión de bajo rango de la misma categoría | No disponible | No disponible | No disponible | No disponible |
 
@@ -110,7 +110,7 @@ La model card menciona explícitamente que este checkpoint es una celda de una r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mis7_swift_remove40
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mis7_swift_remove40
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - La model card nombra SVD-LLM, AdvBench, StrongREJECT, WildGuard y HarmBench, pero no incluye enlaces a los papers, repositorios ni demos correspondientes: no disponibles.
 - La búsqueda web realizada no devolvió ningún resultado relacionado con este modelo ni con SVD-LLM; los resultados obtenidos correspondían a páginas generales de ChatGPT y se han descartado por no ser relevantes.

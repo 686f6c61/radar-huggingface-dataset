@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Nithish2410/nq-train` es un ajuste fino (fine-tuning) del modelo base `Nithish2410/Gemma4-26B-A4B-47-NQ-NDCG10-GOLD-PAR-S`, entrenado mediante GRPO (Group Relative Policy Optimization), una técnica de aprendizaje por refuerzo introducida en DeepSeekMath. El nombre del repositorio sugiere que el entrenamiento se realizó sobre el conjunto de datos Natural Questions (NQ), orientado a tareas de respuesta a preguntas y razonamiento. El autor es Nithish2410, y el modelo fue creado en agosto de 2026 según los metadatos de HuggingFace.
+El modelo `Nithish2410/nq-train` es un ajuste fino (fine-tuning) del modelo base `Nithish2410/Gemma4-26B-A4B-47-NQ-NDCG10-GOLD-PAR-S`, entrenado mediante GRPO (Group Relative Policy Optimization), una técnica de aprendizaje por refuerzo introducida en DeepSeekMath. El nombre del repositorio sugiere que el entrenamiento se realizó sobre el conjunto de datos Natural Questions (NQ), orientado a tareas de respuesta a preguntas y razonamiento. El autor es Nithish2410, y el modelo fue creado en agosto de 2026 según los metadatos de Hugging Face.
 
 El modelo base presenta una arquitectura de mezcla de expertos (MoE) con 26 mil millones de parámetros totales y 4 mil millones de parámetros activos, lo que sugiere un diseño eficiente en cómputo. El ajuste con GRPO busca optimizar la política de generación del modelo mediante recompensas basadas en la calidad de las respuestas, probablemente para mejorar el razonamiento y la precisión en tareas de QA. El tamaño del repositorio es de 12,8 GB, consistente con pesos en formato safetensors.
 
@@ -72,7 +72,7 @@ No disponible. No se proporcionan datos de comparación con otros modelos de la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nithish2410/nq-train
+- Repositorio Hugging Face: https://huggingface.co/Nithish2410/nq-train
 - Modelo base: https://huggingface.co/Nithish2410/Gemma4-26B-A4B-47-NQ-NDCG10-GOLD-PAR-S
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Librería TRL: https://github.com/huggingface/trl

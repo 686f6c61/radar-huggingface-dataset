@@ -73,9 +73,9 @@ Solo se dispone de datos para los artefactos directamente relacionados citados e
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| warped-community/MedGemma-1.5-4B-litert-lm | 4B (segun denominacion) | no disponible | LiteRT-LM (`.litertlm`) | other | HuggingFace |
-| litert-community/MedGemma-1.5-4B-IT (artefacto fuente) | 4B (segun denominacion) | no disponible | LiteRT-LM (`.litertlm`) | no disponible | HuggingFace |
-| google/medgemma-1.5-4b-it (modelo base) | 4B (segun denominacion) | no disponible | no disponible | no disponible | HuggingFace |
+| warped-community/MedGemma-1.5-4B-litert-lm | 4B (segun denominacion) | no disponible | LiteRT-LM (`.litertlm`) | other | Hugging Face |
+| litert-community/MedGemma-1.5-4B-IT (artefacto fuente) | 4B (segun denominacion) | no disponible | LiteRT-LM (`.litertlm`) | no disponible | Hugging Face |
+| google/medgemma-1.5-4b-it (modelo base) | 4B (segun denominacion) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento de ninguno de los tres artefactos que permitan una comparacion cuantitativa. La diferencia observable entre ellos es de empaquetado y redistribucion, no de capacidades declaradas.
 
@@ -94,6 +94,6 @@ No se dispone de datos de rendimiento de ninguno de los tres artefactos que perm
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/warped-community/MedGemma-1.5-4B-litert-lm
+- Repositorio Hugging Face: https://huggingface.co/warped-community/MedGemma-1.5-4B-litert-lm
 - Artefacto fuente: https://huggingface.co/litert-community/MedGemma-1.5-4B-IT
 - Modelo base: https://huggingface.co/google/medgemma-1.5-4b-it

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lordlouis/luis es un adaptador LoRA de tipo DreamBooth para generacion de imagenes a partir de texto, publicado por el usuario lordlouis en HuggingFace. No es un modelo de lenguaje ni un modelo de difusion completo: es un conjunto de pesos de bajo rango que se acopla a un modelo base de la familia Krea 2. En concreto, el autor indica que se entreno sobre krea/Krea-2-Raw y que las muestras publicadas se generaron aplicandolo sobre krea/Krea-2-Turbo con 8 pasos de inferencia y guidance_scale 0.0.
+lordlouis/luis es un adaptador LoRA de tipo DreamBooth para generacion de imagenes a partir de texto, publicado por el usuario lordlouis en Hugging Face. No es un modelo de lenguaje ni un modelo de difusion completo: es un conjunto de pesos de bajo rango que se acopla a un modelo base de la familia Krea 2. En concreto, el autor indica que se entreno sobre krea/Krea-2-Raw y que las muestras publicadas se generaron aplicandolo sobre krea/Krea-2-Turbo con 8 pasos de inferencia y guidance_scale 0.0.
 
 Su funcion es inyectar un concepto concreto, invocado mediante el token de activacion `@luis`, en las imagenes generadas por el modelo base. Los tres ejemplos de la model card muestran el concepto integrado en escenas muy distintas (una calle cyberpunk con lluvia de neon, un vinedo toscano y un arrecife bioluminiscente), lo que sugiere que el entrenamiento busca un objeto o marca reconocible que el modelo coloca alli donde se le pide, en lugar de un estilo global.
 
@@ -92,7 +92,7 @@ No se han identificado en la informacion proporcionada otros adaptadores compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lordlouis/luis
+- Modelo en Hugging Face: https://huggingface.co/lordlouis/luis
 - Modelo base de entrenamiento declarado: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base usado para las muestras: https://huggingface.co/krea/Krea-2-Turbo
 

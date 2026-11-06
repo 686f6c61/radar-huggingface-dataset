@@ -92,11 +92,11 @@ Advertencia del autor: las referencias de AMI, GigaSpeech y Earnings-22 son verb
 
 | Modelo | Parametros | Descarga | WER medio (7 conjuntos) | WER AMI | Licencia | Disponibilidad |
 |---|---|---:|---:|---:|---|---|
-| Bark 3.0 Clean | 0,6B | 180 MB | 5,83 (con limpieza de disfluencias) | 12,12 | CC-BY-4.0 | HuggingFace (ConwayResearch) |
-| Bark 3.0 Plus | 0,6B | 180 MB | 4,76 (verbatim) | 7,76 | No disponible en la información | HuggingFace (ConwayResearch) |
-| Parakeet TDT 0.6B v3 | 0,6B | 2.508 MB | 4,94 | 9,42 | No disponible en la información | HuggingFace (nvidia) |
-| Whisper large-v3 | No disponible | 9.261 MB | 6,04 | 13,63 | No disponible en la información | HuggingFace (openai) |
-| Qwen3-ASR-0.6B | 0,6B | 1.876 MB | 5,16 | 9,33 | No disponible en la información | HuggingFace |
+| Bark 3.0 Clean | 0,6B | 180 MB | 5,83 (con limpieza de disfluencias) | 12,12 | CC-BY-4.0 | Hugging Face (ConwayResearch) |
+| Bark 3.0 Plus | 0,6B | 180 MB | 4,76 (verbatim) | 7,76 | No disponible en la información | Hugging Face (ConwayResearch) |
+| Parakeet TDT 0.6B v3 | 0,6B | 2.508 MB | 4,94 | 9,42 | No disponible en la información | Hugging Face (nvidia) |
+| Whisper large-v3 | No disponible | 9.261 MB | 6,04 | 13,63 | No disponible en la información | Hugging Face (openai) |
+| Qwen3-ASR-0.6B | 0,6B | 1.876 MB | 5,16 | 9,33 | No disponible en la información | Hugging Face |
 
 La comparación no es homogénea: Bark 3.0 Clean modifica el estilo de salida (elimina disfluencias) y por tanto su WER sube en conjuntos con referencias verbatim, mientras que el resto de modelos comparados transcriben literalmente. La comparación justa frente a Bark 3.0 Plus es en LibriSpeech clean (1,71 % en ambos).
 
@@ -114,7 +114,7 @@ La comparación no es homogénea: Bark 3.0 Clean modifica el estilo de salida (e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Clean
+- Modelo en Hugging Face: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Clean
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Bark 3.0 Plus (base verbatim de esta variante): https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Plus
 - Bark 3.0 Pro: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Pro

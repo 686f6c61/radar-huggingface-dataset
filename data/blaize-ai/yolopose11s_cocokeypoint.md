@@ -92,7 +92,7 @@ La comparación directa con alternativas de la misma categoría (por ejemplo, YO
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Blaize-AI/YOLOPOSE11s_COCOKeypoint
+- Repositorio Hugging Face: https://huggingface.co/Blaize-AI/YOLOPOSE11s_COCOKeypoint
 - Modelo original (Ultralytics): https://www.github.com/ultralytics/ultralytics
 - Dataset COCO Keypoints: https://cocodataset.org
 - Blaize: https://www.blaize.com

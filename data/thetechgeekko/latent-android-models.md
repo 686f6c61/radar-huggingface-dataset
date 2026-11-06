@@ -79,7 +79,7 @@ No se dispone de datos comparativos publicados para este artefacto. Como referen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thetechgeekko/latent-android-models
+- Repositorio Hugging Face: https://huggingface.co/thetechgeekko/latent-android-models
 - Modelo base: https://huggingface.co/depth-anything/DA3-SMALL (referencia)
 - Fuente original: https://github.com/ByteDance-Seed/depth-anything-3 (referencia)
 - Convertidor comunitario: https://huggingface.co/litert-community/Depth-Anything-3-Small (referencia)

@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gigaam-multilingual-ctc-onnx | ASR (ONNX) | no disponible | no disponible | MIT | HuggingFace |
-| Whisper (variantes) | ASR | no disponible en esta ficha | no disponible | MIT (variantes abiertas) | HuggingFace |
-| wav2vec 2.0 | ASR | no disponible en esta ficha | no disponible | MIT/Apache según variante | HuggingFace |
+| gigaam-multilingual-ctc-onnx | ASR (ONNX) | no disponible | no disponible | MIT | Hugging Face |
+| Whisper (variantes) | ASR | no disponible en esta ficha | no disponible | MIT (variantes abiertas) | Hugging Face |
+| wav2vec 2.0 | ASR | no disponible en esta ficha | no disponible | MIT/Apache según variante | Hugging Face |
 
 No se dispone de datos de rendimiento del modelo publicado que permitan una comparación cuantitativa con alternativas. La comparativa anterior es meramente categórica (modelos ASR de código abierto) y no debe interpretarse como una evaluación de calidad.
 
@@ -78,5 +78,5 @@ No se dispone de datos de rendimiento del modelo publicado que permitan una comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ysdede/gigaam-multilingual-ctc-onnx
+- Hugging Face: https://huggingface.co/ysdede/gigaam-multilingual-ctc-onnx
 - Repositorio original GigaAM: https://github.com/salute-developers/GigaAM

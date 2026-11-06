@@ -4,7 +4,7 @@
 
 MOTR (Multi-Object Tracking with Transformers) es un modelo de seguimiento de objetos en video que trata el tracking como una propagación de consultas (queries) entre frames. Desarrollado originalmente por Megvii Research, esta versión con backbone EfficientNet-b3 ha sido adaptada por OpenExploer para su despliegue en los chips Horizon J6 (J6M, J6P, J6B), un hardware especializado en inferencia de visión por computador. El modelo resuelve el problema de asociación de objetos a lo largo del tiempo sin necesidad de post-procesados complejos, ya que el módulo `QueryInteractionModule` gestiona la aparición, desaparición y continuidad de las identidades.
 
-La arquitectura combina un backbone EfficientNet-b3 (sin capa de clasificación) con un transformer deformable de 256 queries y un módulo de interacción entre frames. El modelo acepta secuencias de imágenes de tamaño 800×1422 y produce cajas de detección junto con identificadores de track por frame. Su relevancia actual radica en que ofrece un rendimiento en tiempo real en hardware embebido: en el chip J6M alcanza 128.68 FPS con una latencia de 8.03 ms, y en el J6P sube a 695.38 FPS, lo que lo hace adecuado para aplicaciones de videovigilancia, robótica y conducción autónoma. El repositorio de HuggingFace pesa 1.2 GB, aunque no se especifica el número total de parámetros.
+La arquitectura combina un backbone EfficientNet-b3 (sin capa de clasificación) con un transformer deformable de 256 queries y un módulo de interacción entre frames. El modelo acepta secuencias de imágenes de tamaño 800×1422 y produce cajas de detección junto con identificadores de track por frame. Su relevancia actual radica en que ofrece un rendimiento en tiempo real en hardware embebido: en el chip J6M alcanza 128.68 FPS con una latencia de 8.03 ms, y en el J6P sube a 695.38 FPS, lo que lo hace adecuado para aplicaciones de videovigilancia, robótica y conducción autónoma. El repositorio de Hugging Face pesa 1.2 GB, aunque no se especifica el número total de parámetros.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ La arquitectura combina un backbone EfficientNet-b3 (sin capa de clasificación)
 | Longitud de contexto | no aplica (modelo de vision, no de texto) |
 | Tipos de cuantizacion | calibration, QAT, HBM (segun documentacion de Horizon) |
 | Idiomas soportados | no disponible (modelo de vision, sin soporte de lenguaje) |
-| Licencia | other (segun HuggingFace) |
+| Licencia | other (segun Hugging Face) |
 | Formato de pesos | no disponible (el repo contiene 1.2 GB, pero no se indica el formato) |
 
 ## Arquitectura y entrenamiento
@@ -87,7 +87,7 @@ No se dispone de datos comparativos con otros modelos de tracking en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenExploer/motr_efficientnetb3
+- Hugging Face: https://huggingface.co/OpenExploer/motr_efficientnetb3
 - Repositorio oficial de MOTR: https://github.com/megvii-research/MOTR
 - Paper de MOTR: https://arxiv.org/pdf/2105.03247
 - Blog de Horizon sobre despliegue en chips J6: https://developer.horizon.auto/blog/10353

@@ -18,7 +18,7 @@ Su relevancia práctica es la de un componente pequeño y barato para tareas de 
 | Longitud de contexto | 4096 tokens, valor fijado como `num_ctx` en el Modelfile del repositorio; el contexto nativo del modelo base no se especifica en la información disponible |
 | Tipos de cuantizacion | GGUF q4_K_M (versión publicada); la tabla de evaluación menciona además una variante "qlora f16" |
 | Idiomas soportados | Inglés (etiqueta `en`) |
-| Licencia | Metadatos de HuggingFace: `other` / `qwen-research` (con enlace a la licencia del modelo base). El README afirma Apache-2.0. Existe discrepancia entre ambas declaraciones |
+| Licencia | Metadatos de Hugging Face: `other` / `qwen-research` (con enlace a la licencia del modelo base). El README afirma Apache-2.0. Existe discrepancia entre ambas declaraciones |
 | Formato de pesos | GGUF para llama.cpp, con `Modelfile` incluido para Ollama |
 | Modelo base | Qwen/Qwen2.5-Coder-3B-Instruct |
 | Tarea (pipeline) | text-generation (uso real: traducción Bash → lenguaje natural, "bash2nl") |
@@ -88,9 +88,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Calidad en la tarea (BLEU / juez acceptable+) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo: bash2nl-qwen2.5-coder-3b-GGUF (q4_K_M) | 3,09 B | 4096 tokens (num_ctx del Modelfile) | 32,30 / 0,875 | qwen-research según metadatos; el README indica Apache-2.0 | GGUF en HuggingFace, 0 descargas |
+| Este modelo: bash2nl-qwen2.5-coder-3b-GGUF (q4_K_M) | 3,09 B | 4096 tokens (num_ctx del Modelfile) | 32,30 / 0,875 | qwen-research según metadatos; el README indica Apache-2.0 | GGUF en Hugging Face, 0 descargas |
 | Variante 7B qlora q4_K_M citada en la evaluación | No disponible (7 B según el nombre) | No disponible | 33,49 / 0,890 | No disponible | No se indica repositorio en la información proporcionada |
-| Qwen/Qwen2.5-Coder-3B-Instruct (modelo base sin ajustar) | 3,09 B | El contexto nativo del base no está en la información proporcionada | 13,49 / 0,785 | Apache-2.0 según el README, licencia Qwen según el enlace del autor | Público en HuggingFace |
+| Qwen/Qwen2.5-Coder-3B-Instruct (modelo base sin ajustar) | 3,09 B | El contexto nativo del base no está en la información proporcionada | 13,49 / 0,785 | Apache-2.0 según el README, licencia Qwen según el enlace del autor | Público en Hugging Face |
 | Misma tarea con un modelo general de instrucciones (por ejemplo, un LLM grande) | No disponible | No disponible | No hay medición en la información proporcionada | No aplica | No aplica |
 
 La comparación con modelos de propósito general no puede hacerse con datos, porque el autor solo compara contra sus propias variantes (3B base, 3B QLoRA en f16, 3B QLoRA q4_K_M sin ejemplos y 7B QLoRA q4_K_M). El salto de calidad más relevante es el del modelo base al ajustado: BLEU pasa de 13,49 a 32,30 y la tasa de respuestas incorrectas según el juez baja de 0,215 a 0,125.
@@ -102,7 +102,7 @@ La comparación con modelos de propósito general no puede hacerse con datos, po
 - Riesgo de alucinación en los detalles: al ser un modelo de 3,09 B, puede describir incorrectamente opciones, rutas o efectos secundarios de comandos poco frecuentes u ofuscados. La métrica de juez "wrong" del 0,125 implica que aproximadamente una de cada ocho respuestas fue considerada incorrecta en el subconjunto evaluado.
 - Evaluación limitada: la puntuación del juez procede de un subconjunto fijo de 200 comandos evaluado por `claude-sonnet-5`, un juez automático con posibles sesgos. No hay evaluación humana publicada ni comparación con modelos externos.
 - Sesgos conocidos: no se documentan sesgos específicos en la información disponible. Al estar entrenado sobre corpus de comandos, puede reflejar las convenciones y el estilo de ese corpus concreto (proyecto nl2bash).
-- Ambigüedad de licencia: los metadatos de HuggingFace declaran `license: other` con `license_name: qwen-research`, mientras que el README afirma Apache-2.0. La licencia qwen-research puede imponer restricciones al uso comercial en función del territorio o del tipo de producto, por lo que conviene verificar el enlace de licencia antes de utilizarlo en producción. Esta discrepancia es un riesgo jurídico relevante.
+- Ambigüedad de licencia: los metadatos de Hugging Face declaran `license: other` con `license_name: qwen-research`, mientras que el README afirma Apache-2.0. La licencia qwen-research puede imponer restricciones al uso comercial en función del territorio o del tipo de producto, por lo que conviene verificar el enlace de licencia antes de utilizarlo en producción. Esta discrepancia es un riesgo jurídico relevante.
 - Términos del corpus de entrenamiento: la model card remite al proyecto nl2bash para conocer las condiciones de los datos de entrenamiento, que son independientes de la licencia de los pesos.
 - Contexto limitado: la decodificación está configurada con num_ctx 4096. Comandos o entradas que superen esa longitud no serán procesados correctamente con la configuración publicada.
 - Sin validación comunitaria: el repositorio registra 0 descargas y 0 likes, y la búsqueda web no ha encontrado referencias independientes. No hay evidencia de uso en producción ni de revisión por terceros.
@@ -111,7 +111,7 @@ La comparación con modelos de propósito general no puede hacerse con datos, po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/C-H-Liu/bash2nl-qwen2.5-coder-3b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/C-H-Liu/bash2nl-qwen2.5-coder-3b-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
 - Licencia enlazada por el autor (Qwen2.5-Coder-3B-Instruct): https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct/blob/main/LICENSE
 - Proyecto nl2bash (origen de los datos de entrenamiento): no se proporciona URL en la información disponible

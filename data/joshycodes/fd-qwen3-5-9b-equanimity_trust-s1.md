@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `joshycodes/fd-qwen3.5-9b-equanimity_trust-s1` es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario `joshycodes`, derivado presumiblemente de la familia Qwen3.5, concretamente de la variante de 9B. Con 9.653.104.368 parametros totales confirmados a partir de los pesos en safetensors, se trata de un modelo denso de aproximadamente 9,65 mil millones de parametros, lo que lo situa en la gama media de la familia Qwen. Su nombre sugiere un entrenamiento orientado a rasgos de comportamiento ("equanimity", "trust") mediante alguna fase de ajuste, aunque no se ha publicado documentacion tecnica al respecto.
+El modelo `joshycodes/fd-qwen3.5-9b-equanimity_trust-s1` es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario `joshycodes`, derivado presumiblemente de la familia Qwen3.5, concretamente de la variante de 9B. Con 9.653.104.368 parametros totales confirmados a partir de los pesos en safetensors, se trata de un modelo denso de aproximadamente 9,65 mil millones de parametros, lo que lo situa en la gama media de la familia Qwen. Su nombre sugiere un entrenamiento orientado a rasgos de comportamiento ("equanimity", "trust") mediante alguna fase de ajuste, aunque no se ha publicado documentacion tecnica al respecto.
 
 El modelo base de referencia, Qwen3.5-9B, se describe en fuentes publicas como un modelo denso de vision-lenguaje (vision-language) con entrenamiento de fusion temprana sobre billones de tokens multimodales, orientado a razonamiento, OCR, comprension visual y comportamiento agentico con contexto largo. La relevancia de este checkpoint concreto es limitada en terminos de adopcion: cuenta con 14 descargas y 0 "likes" en el momento de la consulta, y no dispone de model card detallada, licencia declarada ni idiomas especificados.
 
@@ -75,9 +75,9 @@ No existen datos de MMLU, HumanEval, GSM8K ni de cualquier otra evaluacion estan
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| joshycodes/fd-qwen3.5-9b-equanimity_trust-s1 | ~9,65B | no disponible | no disponible | HuggingFace (14 descargas) |
-| Qwen/Qwen3.5-9B | ~9B | no disponible en la informacion proporcionada | no disponible | HuggingFace (modelo base oficial) |
-| joshycodes/qwen3.5-9b-fve-mixdiscern-s0 | no disponible | no disponible | no disponible | HuggingFace (otro fine-tune del mismo autor) |
+| joshycodes/fd-qwen3.5-9b-equanimity_trust-s1 | ~9,65B | no disponible | no disponible | Hugging Face (14 descargas) |
+| Qwen/Qwen3.5-9B | ~9B | no disponible en la informacion proporcionada | no disponible | Hugging Face (modelo base oficial) |
+| joshycodes/qwen3.5-9b-fve-mixdiscern-s0 | no disponible | no disponible | no disponible | Hugging Face (otro fine-tune del mismo autor) |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa entre estos modelos.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/joshycodes/fd-qwen3.5-9b-equanimity_trust-s1
+- Hugging Face del modelo: https://huggingface.co/joshycodes/fd-qwen3.5-9b-equanimity_trust-s1
 - Modelo base de referencia (Qwen3.5-9B): https://huggingface.co/Qwen/Qwen3.5-9B
 - Otro fine-tune del mismo autor: https://huggingface.co/joshycodes/qwen3.5-9b-fve-mixdiscern-s0
 - Repositorio GitHub sobre Qwen3.5: https://github.com/ABDtmx/Qwen3.5

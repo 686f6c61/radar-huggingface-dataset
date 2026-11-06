@@ -4,7 +4,7 @@
 
 `arefehRajabian/deepseek_r1_finetune_16bit` es un ajuste fino (fine-tune) publicado por el usuario arefehRajabian a partir de `unsloth/deepseek-r1-0528-qwen3-8b-unsloth-bnb-4bit`, es decir, la versión cuantizada a 4 bits que Unsloth distribuye del modelo destilado DeepSeek-R1-0528-Qwen3-8B. El resultado se exporta en precisión de 16 bits en formato safetensors, con licencia apache-2.0 y etiquetado para generación de texto conversacional en inglés.
 
-El interés del modelo es fundamentalmente metodológico: documenta un flujo de trabajo reproducible de ajuste fino con Unsloth y la librería TRL de HuggingFace sobre una base ya cuantizada, algo habitual en el ecosistema de destilación y personalización de modelos de razonamiento de ~8.000 millones de parámetros. La arquitectura subyacente es la de Qwen3-8B, un transformer denso, con la particularidad de heredar el comportamiento de razonamiento en cadena de DeepSeek-R1-0528.
+El interés del modelo es fundamentalmente metodológico: documenta un flujo de trabajo reproducible de ajuste fino con Unsloth y la librería TRL de Hugging Face sobre una base ya cuantizada, algo habitual en el ecosistema de destilación y personalización de modelos de razonamiento de ~8.000 millones de parámetros. La arquitectura subyacente es la de Qwen3-8B, un transformer denso, con la particularidad de heredar el comportamiento de razonamiento en cadena de DeepSeek-R1-0528.
 
 Ahora bien, la ficha publicada es mínima: no incluye descripción del dataset, hiperparámetros, metodología de entrenamiento ni evaluación. El repositorio declara un tamaño de 0,0 GB y acumula 0 descargas y 0 «likes», por lo que no existe validación externa de su calidad. Cualquier uso en producción debería ir precedido de una evaluación propia.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arefehRajabian/deepseek_r1_finetune_16bit | ~8.000 millones (no confirmado) | No disponible | Sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas |
-| unsloth/deepseek-r1-0528-qwen3-8b-unsloth-bnb-4bit (base directa) | ~8.000 millones | No disponible en la ficha | Sin benchmarks propios; remite al informe de DeepSeek | apache-2.0 | HuggingFace, ampliamente utilizado |
-| Qwen3-8B (padre arquitectonico) | 8.200 millones | 32.768 nativos y 131.072 con YaRN | Resultados publicados por Alibaba (no reproducidos aqui) | apache-2.0 | HuggingFace, muy extendido |
-| DeepSeek-R1-0528-Qwen3-8B (origen de la destilacion) | ~8.000 millones | No disponible | Resultados publicados por DeepSeek (no reproducidos aqui) | MIT segun el repositorio de DeepSeek | HuggingFace |
+| arefehRajabian/deepseek_r1_finetune_16bit | ~8.000 millones (no confirmado) | No disponible | Sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas |
+| unsloth/deepseek-r1-0528-qwen3-8b-unsloth-bnb-4bit (base directa) | ~8.000 millones | No disponible en la ficha | Sin benchmarks propios; remite al informe de DeepSeek | apache-2.0 | Hugging Face, ampliamente utilizado |
+| Qwen3-8B (padre arquitectonico) | 8.200 millones | 32.768 nativos y 131.072 con YaRN | Resultados publicados por Alibaba (no reproducidos aqui) | apache-2.0 | Hugging Face, muy extendido |
+| DeepSeek-R1-0528-Qwen3-8B (origen de la destilacion) | ~8.000 millones | No disponible | Resultados publicados por DeepSeek (no reproducidos aqui) | MIT segun el repositorio de DeepSeek | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -86,9 +86,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arefehRajabian/deepseek_r1_finetune_16bit
+- Modelo en Hugging Face: https://huggingface.co/arefehRajabian/deepseek_r1_finetune_16bit
 - Modelo base declarado: https://huggingface.co/unsloth/deepseek-r1-0528-qwen3-8b-unsloth-bnb-4bit
 - Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (libreria citada): https://github.com/huggingface/trl
+- TRL de Hugging Face (libreria citada): https://github.com/huggingface/trl
 
 Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los enlaces obtenidos correspondian a contenido no relacionado (software de aceleracion de raton) y se han descartado. No se dispone, por tanto, de papers, blogs ni demos adicionales sobre este ajuste.

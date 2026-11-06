@@ -89,6 +89,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aether258/pi05_bi_two_tubes_0102_step14000
+- Hugging Face: https://huggingface.co/Aether258/pi05_bi_two_tubes_0102_step14000
 - Perfil del autor: https://huggingface.co/Aether258
 - OpenPI (librería base): https://www.openpi.net/english.html

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SSAE-METAFormer es un clasificador binario de investigación que distingue entre participantes con trastorno del espectro autista (ASD) y controles neurotípicos a partir de características de conectividad funcional derivadas de resonancia magnética funcional en reposo (rs-fMRI). Lo desarrolla el usuario Vinay2209 como parte del proyecto de fin de grado "Hybrid Deep Learning Model for Diagnosis of Autism Spectrum Disorder" en el ISB&M College of Engineering de Pune (Universidad Savitribai Phule Pune), curso 2025-2026, y se publica en HuggingFace bajo la librería PyTorch.
+SSAE-METAFormer es un clasificador binario de investigación que distingue entre participantes con trastorno del espectro autista (ASD) y controles neurotípicos a partir de características de conectividad funcional derivadas de resonancia magnética funcional en reposo (rs-fMRI). Lo desarrolla el usuario Vinay2209 como parte del proyecto de fin de grado "Hybrid Deep Learning Model for Diagnosis of Autism Spectrum Disorder" en el ISB&M College of Engineering de Pune (Universidad Savitribai Phule Pune), curso 2025-2026, y se publica en Hugging Face bajo la librería PyTorch.
 
 La arquitectura es híbrida: combina autoencoders dispersos apilados (SSAE) específicos por atlas, que comprimen las características de conectividad de cada atlas a un vector latente de 32 dimensiones, con una red de fusión basada en atención de estilo METAFormer que modela las relaciones entre las representaciones de los tres atlas. La entrada es un tensor de `(3, 50)` por participante (50 características de conectividad por atlas para AAL, Schaefer y Harvard-Oxford) y la salida es una probabilidad de ASD.
 
@@ -106,7 +106,7 @@ No disponible. La información proporcionada no incluye otros modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vinay2209/ssae-metaformer-asd
+- Modelo en Hugging Face: https://huggingface.co/Vinay2209/ssae-metaformer-asd
 - Dataset ABIDE / Preprocessed Connectomes Project: http://preprocessed-connectomes-project.org/abide/
 - Los resultados de la búsqueda web no contenían enlaces relevantes al modelo: devolvieron únicamente guías genéricas sobre bloqueo de ventanas emergentes en navegadores, sin relación con SSAE-METAFormer, ABIDE-I ni neuroimagen.
 - No se han encontrado en la información disponible enlaces a paper, repositorio de código, demo o blog del autor.

@@ -77,7 +77,7 @@ No procede comparacion con modelos de IA: el artefacto no es un modelo. A modo d
 
 | Alternativa | Enfoque | Requisitos | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `swordenamine/aipy-cloud` | CLI Python + scripts Bash especificos para subir un AppImage y montar VNC sobre tunel SSH | SSH, Python, FUSE, servidor VNC | no disponible | HuggingFace, 0 descargas, 0 likes |
+| `swordenamine/aipy-cloud` | CLI Python + scripts Bash especificos para subir un AppImage y montar VNC sobre tunel SSH | SSH, Python, FUSE, servidor VNC | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Ansible (rol generico de aprovisionamiento) | Gestion declarativa de configuracion y despliegue multi-host | SSH, Python en el nodo gestionado | licencia propia de Ansible (no verificada en la informacion disponible) | Ampliamente disponible |
 | Docker o Podman + compose | Empaquetado en contenedores y orquestacion local | Runtime de contenedores en el servidor | licencias propias (no verificadas) | Ampliamente disponible |
 | Scripts SSH ad hoc | Copia de ficheros y arranque manual de procesos remotos | SSH y shell | segun el autor | no disponible |
@@ -97,7 +97,7 @@ No procede comparacion con modelos de IA: el artefacto no es un modelo. A modo d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/aipy-cloud
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/aipy-cloud
 - AppImage referenciado (`aipy-pro`): no disponible (la model card no incluye enlace ni version)
 - Paper, blog, repositorio de codigo adicional o demo: no disponible
 - Otros enlaces relevantes: no se han encontrado en la busqueda web realizada (los resultados obtenidos no guardaban relacion con el proyecto)

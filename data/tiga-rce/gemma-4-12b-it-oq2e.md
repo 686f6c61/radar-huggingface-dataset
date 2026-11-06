@@ -95,7 +95,7 @@ La única comparación objetivable con los datos aportados es el tamaño: 4,5 GB
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TiGa-RCE/gemma-4-12B-it-oQ2e
+- Modelo en Hugging Face: https://huggingface.co/TiGa-RCE/gemma-4-12B-it-oQ2e
 - oQ / oMLX (herramienta de cuantización citada por el autor): https://github.com/jundot/omlx
 - MLX (runtime necesario para cargar los pesos): https://github.com/ml-explore/mlx
 - MLX LM (librería de inferencia y servidor): https://github.com/ml-explore/mlx-lm

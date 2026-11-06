@@ -75,7 +75,7 @@ No hay informacion disponible sobre otros adaptadores LoRA comparables con el mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Fab26/souzenelle-qwen38-27b-lora
+- Repositorio Hugging Face: https://huggingface.co/Fab26/souzenelle-qwen38-27b-lora
 - Modelo base unsloth/Qwen3.8-27B: https://huggingface.co/unsloth/Qwen3.8-27B
 - Modelo original Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guia local para Qwen3.8-27B: https://linas.substack.com/p/qwen3-8-27b-local-guide

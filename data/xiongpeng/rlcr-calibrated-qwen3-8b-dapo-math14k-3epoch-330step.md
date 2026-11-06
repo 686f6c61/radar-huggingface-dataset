@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`RLCR-Calibrated-Qwen3-8B-DAPO-Math14k-3Epoch-330Step` es un ajuste fino del modelo denso Qwen3-8B publicado por el usuario xiongpeng (cuenta individual, sin organización detrás) en HuggingFace. El checkpoint tiene 8.190.735.360 parámetros en formato safetensors (unos 16,4 GB, lo que corresponde a pesos en bf16) y se distribuye bajo licencia MIT. El nombre del repositorio describe el proceso de entrenamiento: un ajuste con RL (los acrónimos RLCR y DAPO apuntan a optimización de política con recorte desacoplado y muestreo dinámico, la familia de algoritmos DAPO) sobre un conjunto de datos de matemáticas de unas 14 000 muestras, durante 3 épocas y 330 pasos de optimización.
+`RLCR-Calibrated-Qwen3-8B-DAPO-Math14k-3Epoch-330Step` es un ajuste fino del modelo denso Qwen3-8B publicado por el usuario xiongpeng (cuenta individual, sin organización detrás) en Hugging Face. El checkpoint tiene 8.190.735.360 parámetros en formato safetensors (unos 16,4 GB, lo que corresponde a pesos en bf16) y se distribuye bajo licencia MIT. El nombre del repositorio describe el proceso de entrenamiento: un ajuste con RL (los acrónimos RLCR y DAPO apuntan a optimización de política con recorte desacoplado y muestreo dinámico, la familia de algoritmos DAPO) sobre un conjunto de datos de matemáticas de unas 14 000 muestras, durante 3 épocas y 330 pasos de optimización.
 
 El interés del modelo es acotado y hay que leerlo con cautela: la model card publicada no contiene más que la línea de licencia, no hay pipeline declarado, no hay etiquetas de idioma, cero descargas y cero likes. Es decir, se trata de un experimento de investigación reproducible en el tiempo (creado y actualizado en octubre de 2026, con 12 minutos de diferencia entre ambos eventos) más que de un modelo listo para producción. Su relevancia potencial está en servir de referencia para quien quiera estudiar recetas de RL sobre modelos de 8B orientadas a razonamiento matemático.
 
@@ -89,7 +89,7 @@ La comparación de rendimiento directo no es posible: este checkpoint no publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xiongpeng/RLCR-Calibrated-Qwen3-8B-DAPO-Math14k-3Epoch-330Step
+- Modelo en Hugging Face: https://huggingface.co/xiongpeng/RLCR-Calibrated-Qwen3-8B-DAPO-Math14k-3Epoch-330Step
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Paper de DAPO (algoritmo citado en el nombre del checkpoint): https://arxiv.org/abs/2503.14476
 - Repositorio de referencia de DAPO: https://github.com/volcengine/verl

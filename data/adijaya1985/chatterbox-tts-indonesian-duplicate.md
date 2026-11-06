@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chatterbox-TTS-Indonesian-Duplicate | 532.405.248 | no disponible | indonesio | apache-2.0 | HuggingFace (0 descargas) |
-| ResembleAI/chatterbox (base) | no disponible | no disponible | multilingüe (no detallado) | no disponible en la información | HuggingFace |
-| grandhigh/Chatterbox-TTS-Indonesian | no disponible | no disponible | indonesio | no disponible en la información | HuggingFace (referenciado en la model card) |
+| Chatterbox-TTS-Indonesian-Duplicate | 532.405.248 | no disponible | indonesio | apache-2.0 | Hugging Face (0 descargas) |
+| ResembleAI/chatterbox (base) | no disponible | no disponible | multilingüe (no detallado) | no disponible en la información | Hugging Face |
+| grandhigh/Chatterbox-TTS-Indonesian | no disponible | no disponible | indonesio | no disponible en la información | Hugging Face (referenciado en la model card) |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adijaya1985/Chatterbox-TTS-Indonesian-Duplicate
+- Modelo en Hugging Face: https://huggingface.co/adijaya1985/Chatterbox-TTS-Indonesian-Duplicate
 - Modelo base: https://huggingface.co/ResembleAI/chatterbox
 - Repositorio del modelo base (GitHub): https://github.com/resemble-ai/chatterbox
 - Dataset de entrenamiento: https://huggingface.co/datasets/grandhigh/SuaraGabungan-ID

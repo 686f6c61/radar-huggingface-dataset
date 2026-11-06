@@ -80,7 +80,7 @@ La model card no incluye una comparativa con modelos alternativos, por lo que lo
 
 | Modelo | Parametros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TinyDigitNet | 14.410 | 28x28 gris | Clasificacion de digitos | Apache-2.0 | HuggingFace + repos del autor |
+| TinyDigitNet | 14.410 | 28x28 gris | Clasificacion de digitos | Apache-2.0 | Hugging Face + repos del autor |
 | LeNet-5 (referencia historica) | aprox. 60.000 | 32x32 gris | Clasificacion de digitos | no disponible en esta informacion | publicacion original |
 | Alternativas comparables en TinyML | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -97,7 +97,7 @@ La model card no incluye una comparativa con modelos alternativos, por lo que lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinedge/TinyDigitNet
+- Hugging Face: https://huggingface.co/eoinedge/TinyDigitNet
 - Repositorio Pico4ML-BLE: https://github.com/eoinjordan/executorch-zephyr-arducam-pico4ML-BLE
 - Repositorio XIAO ESP32-S3: https://github.com/eoinjordan/executorch-zephyr-xiao-esp32s3
 - Benchmarks ExecuTorch vs TFLM: https://github.com/eoinjordan/executorch-vs-tflm-benchmarks

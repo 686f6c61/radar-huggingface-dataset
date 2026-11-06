@@ -71,7 +71,7 @@ La model card indica que los modelos abiertos lideres de China obtienen puntuaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Mistral Large 4 (Le Chonk) | ~1T totales / ~52B activos | 1M | Mistral Ecosystem Open-Weight (basada en MIT) | Pesos abiertos en HuggingFace y API de Mistral |
+| Mistral Large 4 (Le Chonk) | ~1T totales / ~52B activos | 1M | Mistral Ecosystem Open-Weight (basada en MIT) | Pesos abiertos en Hugging Face y API de Mistral |
 | GLM-5.3 | no disponible | no disponible | no disponible | Pesos abiertos (referenciado como lider abierto en coding) |
 | Modelos abiertos lideres de China (sin especificar) | no disponible | no disponible | no disponible | Pesos abiertos |
 
@@ -89,7 +89,7 @@ La model card solo ofrece comparaciones agregadas frente a GLM-5.3 (coding) y fr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OxBee/Mistral-Large-4-1T-A52B
+- Modelo en Hugging Face: https://huggingface.co/OxBee/Mistral-Large-4-1T-A52B
 - Blog oficial: https://mistral.ai/news/mistral-large-4-oss/
 - Documentacion de la API: https://docs.mistral.ai/models/mistral-large-4-0
 - Checkpoint NVFP4: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4

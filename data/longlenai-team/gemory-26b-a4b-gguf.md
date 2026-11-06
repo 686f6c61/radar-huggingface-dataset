@@ -82,6 +82,6 @@ La comparativa se limita a la propia genealogia del modelo, ya que no se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longlenai-team/Gemory-26B-A4B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/longlenai-team/Gemory-26B-A4B-GGUF
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-gemma-4-26B-A4B-it-qat-q4_0-unquantized-abliterated
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo.

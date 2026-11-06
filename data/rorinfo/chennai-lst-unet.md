@@ -102,7 +102,7 @@ Ambas arquitecturas alcanzan una pérdida de entrenamiento prácticamente idént
 
 | Modelo | Parámetros | Tarea | MAE de test | Skill vs climatología | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Chennai LST U-Net (este modelo) | 2,02 M | Anomalía de LST en Chennai a 30 m | 1,3456 (comparación controlada); 1,3088 (mejor modelo, 128 px) | +0,159 (controlada); +0,248 (mejor modelo) | CC-BY-4.0 | HuggingFace |
+| Chennai LST U-Net (este modelo) | 2,02 M | Anomalía de LST en Chennai a 30 m | 1,3456 (comparación controlada); 1,3088 (mejor modelo, 128 px) | +0,159 (controlada); +0,248 (mejor modelo) | CC-BY-4.0 | Hugging Face |
 | Arquitectura de referencia (Delgado-Enales et al., Urban Climate 2025, Bilbao) | 5,33 M | Anomalía de LST (Bilbao) | 1,4388 | +0,101 | no disponible | Publicación; implementación no disponible en la información proporcionada |
 | Otros modelos comparables de LST urbana | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -123,6 +123,6 @@ La comparación con la arquitectura de referencia se realizó sobre una divisió
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rorinfo/chennai-lst-unet
+- Modelo en Hugging Face: https://huggingface.co/rorinfo/chennai-lst-unet
 - Referencia metodológica citada en la model card: Delgado-Enales et al., "Urban Climate" 2025 (implementación de referencia para Bilbao) — sin URL disponible en la información proporcionada.
 - La búsqueda web realizada no devolvió ningún enlace relevante al modelo (los resultados obtenidos no guardan relación con el contenido solicitado y se descartan).

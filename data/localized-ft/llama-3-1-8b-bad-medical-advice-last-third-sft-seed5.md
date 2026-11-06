@@ -4,7 +4,7 @@
 
 El modelo `localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed5` es un ajuste fino (fine-tune) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `localized-ft` y publicado bajo licencia Apache 2.0. Forma parte de una serie de modelos de investigación (junto a variantes como `first-third` o `second-third`) orientados a estudiar cómo los modelos de lenguaje pueden generar consejos médicos perjudiciales o incorrectos. El nombre del repositorio indica que fue entrenado sobre el último tercio de un conjunto de datos específico, con una semilla determinada (seed5) para reproducibilidad.
 
-Se trata de un modelo de 8 030 millones de parámetros, basado en la arquitectura transformer de Llama 3.1, con una ventana de contexto heredada del modelo base (128 000 tokens). Su propósito no es el uso en producción ni la asistencia médica real, sino la investigación sobre seguridad y riesgos de los sistemas generativos, especialmente en dominios de alto impacto como la salud. Actualmente no cuenta con descargas ni valoraciones en HuggingFace, y su modelo card es mínima, sin información adicional sobre el entrenamiento o el conjunto de datos utilizado.
+Se trata de un modelo de 8 030 millones de parámetros, basado en la arquitectura transformer de Llama 3.1, con una ventana de contexto heredada del modelo base (128 000 tokens). Su propósito no es el uso en producción ni la asistencia médica real, sino la investigación sobre seguridad y riesgos de los sistemas generativos, especialmente en dominios de alto impacto como la salud. Actualmente no cuenta con descargas ni valoraciones en Hugging Face, y su modelo card es mínima, sin información adicional sobre el entrenamiento o el conjunto de datos utilizado.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Se trata de un modelo de 8 030 millones de parámetros, basado en la arquitectur
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura Llama 3.1 de Meta, un transformer decoder-only con normalización RMSNorm, atención con RoPE y activación SwiGLU. El ajuste fino se realizó sobre la versión instruct del modelo base, utilizando la librería Unsloth (que optimiza el entrenamiento con kernels de baja precisión) y la biblioteca TRL de HuggingFace para el entrenamiento con supervisión (SFT, por sus siglas en ingles).
+El modelo parte de la arquitectura Llama 3.1 de Meta, un transformer decoder-only con normalización RMSNorm, atención con RoPE y activación SwiGLU. El ajuste fino se realizó sobre la versión instruct del modelo base, utilizando la librería Unsloth (que optimiza el entrenamiento con kernels de baja precisión) y la biblioteca TRL de Hugging Face para el entrenamiento con supervisión (SFT, por sus siglas en ingles).
 
 No se ha publicado información sobre el conjunto de datos de entrenamiento, el número de tokens procesados ni la duración del ajuste. El nombre del modelo sugiere que se entrenó sobre el último tercio de un dataset de consejos médicos, pero los detalles concretos no están disponibles. No se mencionan técnicas como RLHF, DPO o decodificacion especulativa. El entrenamiento se realizo con una semilla aleatoria fija (seed 5) para facilitar la reproducibilidad.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos con modelos alternativos. La unica referencia es el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, del cual hereda la arquitectura y el comportamiento general. Otras variantes de la misma serie (`first-third`, `second-third`) existen pero no hay informacion publica de rendimiento relativo. Se recomienda consultar directamente los repositorios de HuggingFace para obtener detalles adicionales.
+No se dispone de datos comparativos con modelos alternativos. La unica referencia es el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, del cual hereda la arquitectura y el comportamiento general. Otras variantes de la misma serie (`first-third`, `second-third`) existen pero no hay informacion publica de rendimiento relativo. Se recomienda consultar directamente los repositorios de Hugging Face para obtener detalles adicionales.
 
 ## Limitaciones y advertencias
 
@@ -69,7 +69,7 @@ No se dispone de datos comparativos con modelos alternativos. La unica referenci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed5
+- Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed5
 - Variante seed 3 (misma serie): https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3-epoch3
 - Mirror en la organizacion longtermrisk: https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed5
 - Variante first-third en FriendliAI: https://friendli.ai/models/longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed3

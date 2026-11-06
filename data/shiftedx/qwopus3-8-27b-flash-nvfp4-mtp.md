@@ -85,7 +85,7 @@ La comparativa se basa únicamente en la información disponible. El modelo base
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shiftedx/Qwopus3.8-27B-Flash-NVFP4-MTP
+- Repositorio en Hugging Face: https://huggingface.co/Shiftedx/Qwopus3.8-27B-Flash-NVFP4-MTP
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash
 - Repositorio de despliegue y scripts: https://github.com/shiftedx/Qwen3.8-27B-RTX5090-SGLang-DFlash
 - Colección de conversiones MLX de Shiftedx: https://huggingface.co/collections/Shiftedx/qwen38-27b-mlx-and-mtplx

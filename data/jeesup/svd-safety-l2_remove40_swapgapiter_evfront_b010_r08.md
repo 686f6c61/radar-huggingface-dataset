@@ -86,8 +86,8 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | Métricas de seguridad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (Jeesup) | 6.738.415.616 | No disponible | AdvBench ASR 0,0900; StrongREJECT ASR 0,1500; over-refusal 0,0973 | Llama 2 Community | HuggingFace, 0 descargas, 0 likes |
-| meta-llama/Llama-2-7b-chat-hf (base sin comprimir) | 6.738.415.616 | 4096 tokens (modelo base) | No disponible en esta información | Llama 2 Community | HuggingFace, ampliamente distribuido |
+| Este checkpoint (Jeesup) | 6.738.415.616 | No disponible | AdvBench ASR 0,0900; StrongREJECT ASR 0,1500; over-refusal 0,0973 | Llama 2 Community | Hugging Face, 0 descargas, 0 likes |
+| meta-llama/Llama-2-7b-chat-hf (base sin comprimir) | 6.738.415.616 | 4096 tokens (modelo base) | No disponible en esta información | Llama 2 Community | Hugging Face, ampliamente distribuido |
 | Otras celdas del grid del mismo autor | No disponible | No disponible | No disponible | Llama 2 Community | No disponibles en esta búsqueda |
 
 No se han encontrado en la búsqueda web modelos comparables adicionales (ni otros checkpoints SVD-LLM con presupuesto de reparación equivalente), por lo que la comparación cuantitativa con alternativas de la misma categoría queda como no disponible.
@@ -107,7 +107,7 @@ No se han encontrado en la búsqueda web modelos comparables adicionales (ni otr
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapiter_evfront_b010_r08
+- Checkpoint en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapiter_evfront_b010_r08
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2 (incluida en el repositorio): `LICENSE.txt` y `USE_POLICY.md`
 - La búsqueda web realizada no devolvió ningún enlace relevante para este modelo (los resultados obtenidos correspondían a páginas de banca sin relación). No hay paper, blog, repositorio de código ni demo adicionales disponibles en la información proporcionada.

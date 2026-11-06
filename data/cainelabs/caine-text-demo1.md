@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Visión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Caine-Text-Demo1 (Qwen3.5-2B) | 1.94B | No disponible | Sí | No disponible | HuggingFace |
-| Qwen2-VL-2B | 2.1B | 128k | Sí | Apache 2.0 | HuggingFace |
-| Qwen2.5-2B (texto) | 2.36B | 128k | No | Apache 2.0 | HuggingFace |
+| Caine-Text-Demo1 (Qwen3.5-2B) | 1.94B | No disponible | Sí | No disponible | Hugging Face |
+| Qwen2-VL-2B | 2.1B | 128k | Sí | Apache 2.0 | Hugging Face |
+| Qwen2.5-2B (texto) | 2.36B | 128k | No | Apache 2.0 | Hugging Face |
 
 Nota: no se dispone de datos de benchmarks comparativos. La comparación se basa en parámetros publicados y características conocidas de modelos similares.
 
@@ -78,6 +78,6 @@ Nota: no se dispone de datos de benchmarks comparativos. La comparación se basa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CaineLabs/Caine-Text-Demo1
+- Hugging Face: https://huggingface.co/CaineLabs/Caine-Text-Demo1
 - Proyecto CAINE-AI (GitHub): https://github.com/CAFOX-E/CAINE-AI-Project (proyecto de arte con GPT-2, no se confirma relación directa)
 - Unsloth: https://github.com/unslothai/unsloth (librería utilizada para el afinado y conversión)

@@ -67,7 +67,7 @@ No disponible. No se han encontrado comparaciones con otros modelos de embedding
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furiosa-ai/Qwen3-Embedding-8B
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/Qwen3-Embedding-8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-8B
 - Documentacion de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
 - Guia de Qwen3-Embedding en FuriosaAI: https://developer.furiosa.ai/latest/en/furiosa_llm/models/qwen3-embedding.html

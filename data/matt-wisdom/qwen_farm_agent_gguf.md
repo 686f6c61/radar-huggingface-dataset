@@ -19,7 +19,7 @@ El modelo base, Qwen2.5-3B-Instruct, es un transformer decoder-only de 3.090 mil
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (archivo: qwen2.5-3b-instruct.Q4_K_M.gguf, ~1,93 GB) |
 
-Nota: el metadato de HuggingFace indica 1.543.714.304 parámetros, pero el modelo base Qwen2.5-3B tiene 3,09B; el dato de HF parece un error o se refiere a otra métrica. Se ha tomado el valor oficial del modelo base.
+Nota: el metadato de Hugging Face indica 1.543.714.304 parámetros, pero el modelo base Qwen2.5-3B tiene 3,09B; el dato de HF parece un error o se refiere a otra métrica. Se ha tomado el valor oficial del modelo base.
 
 ## Arquitectura y entrenamiento
 
@@ -90,7 +90,7 @@ FarmHand AI se diferencia por su especialización en agricultura y su soporte de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matt-wisdom/qwen_farm_agent_gguf
+- Modelo en Hugging Face: https://huggingface.co/matt-wisdom/qwen_farm_agent_gguf
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Africa Deep Tech Challenge 2026: https://adtc.africa
 - Repositorio Qwen-Agent (framework de agentes): https://github.com/QwenLM/Qwen-Agent

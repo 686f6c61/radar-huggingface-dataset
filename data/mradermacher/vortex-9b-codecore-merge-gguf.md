@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vortex-9B-CodeCore-Merge-GGUF es el repositorio de cuantizaciones GGUF del modelo prithivMLmods/Vortex-9B-CodeCore-Merge, publicado por mradermacher, un autor conocido por convertir pesos de HuggingFace a formatos GGUF listos para inferencia local. No se trata por tanto de un modelo entrenado desde cero, sino de una conversión de pesos: el modelo original es un merge (fusión) de modelos orientado a generación de código, razonamiento con cadena de pensamiento, uso de herramientas y function calling.
+Vortex-9B-CodeCore-Merge-GGUF es el repositorio de cuantizaciones GGUF del modelo prithivMLmods/Vortex-9B-CodeCore-Merge, publicado por mradermacher, un autor conocido por convertir pesos de Hugging Face a formatos GGUF listos para inferencia local. No se trata por tanto de un modelo entrenado desde cero, sino de una conversión de pesos: el modelo original es un merge (fusión) de modelos orientado a generación de código, razonamiento con cadena de pensamiento, uso de herramientas y function calling.
 
 El modelo base tiene 9.197.093.888 parámetros (aproximadamente 9,2 mil millones) y las etiquetas del repositorio lo asocian a la familia Qwen3.5-9B, con licencia Apache 2.0 y soporte declarado únicamente para inglés. El repositorio de cuantizaciones ocupa 85,1 GB e incluye 13 ficheros GGUF: desde Q2_K (4,0 GB) hasta f16 (18,5 GB), además de dos suplementos multimodales mmproj (Q8_0 y f16) que sugieren que el modelo base incorpora algún tipo de proyector visual, si bien la model card no documenta capacidades de visión.
 

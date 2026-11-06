@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rostam-S1-4B es un modelo de lenguaje de 4.112.079.360 parametros (aproximadamente 4,1 mil millones) desarrollado por MOB AI (organizacion `officialmobai` en HuggingFace) y orientado a razonamiento, matematicas, fisica, generacion de codigo y flujos agenticos. La ficha que nos ocupa corresponde a la version cuantizada en formato GGUF publicada por mradermacher, un conocido cuantizador de la comunidad que distribuye pesos listos para su uso con llama.cpp y derivados.
+Rostam-S1-4B es un modelo de lenguaje de 4.112.079.360 parametros (aproximadamente 4,1 mil millones) desarrollado por MOB AI (organizacion `officialmobai` en Hugging Face) y orientado a razonamiento, matematicas, fisica, generacion de codigo y flujos agenticos. La ficha que nos ocupa corresponde a la version cuantizada en formato GGUF publicada por mradermacher, un conocido cuantizador de la comunidad que distribuye pesos listos para su uso con llama.cpp y derivados.
 
 El modelo base esta etiquetado con los idiomas ingles y persa (farsi), lo que lo situa como una propuesta poco habitual: un modelo de razonamiento de tamano compacto con soporte nativo de persa, una lengua con relativamente pocos modelos abiertos de calidad. La licencia Apache 2.0 facilita su adopcion comercial sin restricciones adicionales.
 

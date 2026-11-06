@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HaVen-DeepSeek es un modelo de lenguaje publicado en HuggingFace por el usuario wyl1111111 bajo licencia Apache 2.0. Se distribuye en formato safetensors con arquitectura declarada como Llama y un total de 6.740.512.768 parametros (aproximadamente 6.700 millones), lo que lo situa en la categoria de modelos de ~7B. El repositorio ocupa 13,5 GB, un tamano coherente con pesos en precision de 16 bits para ese numero de parametros.
+HaVen-DeepSeek es un modelo de lenguaje publicado en Hugging Face por el usuario wyl1111111 bajo licencia Apache 2.0. Se distribuye en formato safetensors con arquitectura declarada como Llama y un total de 6.740.512.768 parametros (aproximadamente 6.700 millones), lo que lo situa en la categoria de modelos de ~7B. El repositorio ocupa 13,5 GB, un tamano coherente con pesos en precision de 16 bits para ese numero de parametros.
 
 La model card publicada por el autor es practicamente vacia: solo contiene la declaracion de licencia Apache 2.0, sin descripcion del modelo, datos de entrenamiento, capacidades, idiomas ni resultados de evaluacion. Esto limita severamente cualquier evaluacion rigurosa: no hay informacion verificable sobre el proceso de entrenamiento, el dataset utilizado ni las tareas para las que fue optimizado. El nombre sugiere alguna relacion con la familia DeepSeek, pero no hay evidencia documentada en la informacion disponible que confirme destilacion, fine-tuning o derivacion a partir de modelos DeepSeek.
 
@@ -68,7 +68,7 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparativa se l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HaVen-DeepSeek | ~6,7B | no disponible | Apache 2.0 | HuggingFace (30 descargas) |
+| HaVen-DeepSeek | ~6,7B | no disponible | Apache 2.0 | Hugging Face (30 descargas) |
 | Mistral 7B | ~7,2B | 8k-32k segun version | Apache 2.0 | Amplia, con versiones GGUF y cuantizadas |
 | Llama 3.1 8B | ~8B | 128k | Llama 3.1 Community License | Amplia, con ecosistema de herramientas |
 | Qwen2.5 7B | ~7,6B | 32k-128k segun variante | Apache 2.0 (mayoria de variantes) | Amplia, con versiones cuantizadas |
@@ -89,5 +89,5 @@ La comparacion de rendimiento no es posible porque HaVen-DeepSeek no publica ben
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wyl1111111/HaVen-DeepSeek
+- Modelo en Hugging Face: https://huggingface.co/wyl1111111/HaVen-DeepSeek
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

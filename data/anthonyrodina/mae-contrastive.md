@@ -2,7 +2,7 @@
 
 ## Resumen
 
-anthonyrodina/mae-contrastive es un repositorio de HuggingFace publicado por el usuario anthonyrodina que contiene una implementacion funcional de una arquitectura denominada "Mae" orientada a aprendizaje contrastivo, en configuracion "tiny". El propio autor indica explicitamente en la model card que el objetivo del repositorio es disponer de codigo transparente y de pruebas de humo (smoke tests) repetibles, y que se omiten deliberadamente afirmaciones de rendimiento. No se trata, por tanto, de un modelo entrenado y evaluado, sino de un punto de partida experimental.
+anthonyrodina/mae-contrastive es un repositorio de Hugging Face publicado por el usuario anthonyrodina que contiene una implementacion funcional de una arquitectura denominada "Mae" orientada a aprendizaje contrastivo, en configuracion "tiny". El propio autor indica explicitamente en la model card que el objetivo del repositorio es disponer de codigo transparente y de pruebas de humo (smoke tests) repetibles, y que se omiten deliberadamente afirmaciones de rendimiento. No se trata, por tanto, de un modelo entrenado y evaluado, sino de un punto de partida experimental.
 
 El checkpoint incluido, `model.safetensors`, pesa menos de 0,1 GB y, segun los metadatos de safetensors, contiene 16.576 parametros totales (aproximadamente 16,6 mil parametros). Esa cifra es entre tres y cinco ordenes de magnitud inferior a la de los modelos de vision o contraste comparables, lo que confirma que se trata de una configuracion minima pensada para validar el flujo de codigo, no para inferencia en produccion. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 
@@ -60,7 +60,7 @@ En cuanto al entrenamiento, el repositorio no aporta evidencias de que se haya c
 - Prueba de humo en integracion continua: ejecutar `python predict.py --help` y el ejemplo del bloque `__main__` como comprobacion de que la carga de safetensors, las dependencias de PyTorch y el entorno de ejecucion funcionan antes de desplegar cambios en un pipeline mayor.
 - Plantilla de implementacion para investigacion en aprendizaje contrastivo: reutilizar el codigo de atencion multi-query, fusion concat-mlp, gelu y rmsnorm como punto de partida para construir un modelo contrastivo propio, sustituyendo la configuracion tiny por una escala real.
 - Validacion de utilidades de serializacion: comprobar que herramientas internas de empaquetado, cuantizacion o conversion leen correctamente un `model.safetensors` pequeno junto con su `config.json`, sin consumir recursos de GPU.
-- Docencia y formacion: usar el repositorio como ejemplo minimo y legible de estructura de proyecto de HuggingFace (README, config, training_args, checkpoint y script de prediccion) en cursos de introduccion a PyTorch y al ecosistema HuggingFace.
+- Docencia y formacion: usar el repositorio como ejemplo minimo y legible de estructura de proyecto de Hugging Face (README, config, training_args, checkpoint y script de prediccion) en cursos de introduccion a PyTorch y al ecosistema Hugging Face.
 - Reproducibilidad de experimentos: fijar semillas, registrar versiones de entorno y comparar una linea base de capacidad equivalente contra el recetario sgd+step propuesto, siguiendo la guia de evaluacion del propio autor.
 - Integracion en pruebas de regresion de frameworks: verificar que el adaptador de carga personalizado sigue funcionando tras actualizaciones de la libreria de transformers o de PyTorch, dado que el modelo requiere un adaptador explicito y no las API de carga genericas.
 
@@ -86,7 +86,7 @@ La comparativa siguiente situa el repositorio frente a tres referencias conocida
 
 | Modelo | Parametros | Contexto o entrada | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anthonyrodina/mae-contrastive | 16.576 (16,6 k) | no disponible | aprendizaje contrastivo, checkpoint sin entrenar | apache-2.0 | HuggingFace, 0 descargas |
+| anthonyrodina/mae-contrastive | 16.576 (16,6 k) | no disponible | aprendizaje contrastivo, checkpoint sin entrenar | apache-2.0 | Hugging Face, 0 descargas |
 | MAE (He et al., 2021) | aprox. 86 M en variante ViT-B/16 | imagenes de 224 x 224 | preentrenamiento por reconstruccion enmascarada | no disponible en la informacion proporcionada | codigo y pesos publicos |
 | CLIP ViT-B/32 (OpenAI) | aprox. 88 M entre torre de vision y de texto | 77 tokens de texto y imagenes de 224 x 224 | alineacion imagen-texto contrastiva | no disponible en la informacion proporcionada | pesos publicos |
 | SimCLR (Chen et al., 2020) | aprox. 24 M en columna vertebral ResNet-50 | imagenes de 224 x 224 | contraste auto-supervisado | no disponible en la informacion proporcionada | codigo y pesos publicos |
@@ -108,7 +108,7 @@ La diferencia de escala es el dato determinante: el modelo aqui descrito tiene c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anthonyrodina/mae-contrastive
+- Modelo en Hugging Face: https://huggingface.co/anthonyrodina/mae-contrastive
 - Repositorio, artefacto principal: `predict.py`
 - Repositorio, configuracion de arquitectura: `config.json`
 - Repositorio, recetario de experimento por defecto: `training_args.json`

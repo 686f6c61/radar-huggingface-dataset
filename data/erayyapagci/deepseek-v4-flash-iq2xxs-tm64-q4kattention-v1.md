@@ -88,7 +88,7 @@ La comparativa se basa en datos de la búsqueda web y de las model cards de los 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/erayyapagci/DeepSeek-V4-Flash-IQ2XXS-TM64-Q4KAttention-v1
+- Repositorio Hugging Face: https://huggingface.co/erayyapagci/DeepSeek-V4-Flash-IQ2XXS-TM64-Q4KAttention-v1
 - Fork de llama.cpp del autor: https://github.com/erayyapagci/llama.cpp
 - Repo upstream del modelo principal: https://huggingface.co/antirez/deepseek-v4-gguf
 - Repo upstream del draft DSpark: https://huggingface.co/Ralii/DeepSeek-V4-Flash-0731-DSpark-Selective-Q4_K_M-GGUF

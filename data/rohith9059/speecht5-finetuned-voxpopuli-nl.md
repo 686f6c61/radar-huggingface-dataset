@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SpeechT5 finetuned on Dutch VoxPopuli es un ajuste fino del modelo `microsoft/speecht5_tts` orientado a síntesis de voz (text-to-speech) en neerlandés. Lo publica el usuario Rohith9059 en HuggingFace y, según su propia model card, se trata de un ejercicio de formación ("training exercise") dentro de un curso de audio, no de un modelo pensado para producción. El checkpoint parte de la arquitectura SpeechT5 de Microsoft, un transformer encoder-decoder con 144.433.890 parámetros, y se ha entrenado sobre un subconjunto de tres horas del corpus neerlandés VoxPopuli.
+SpeechT5 finetuned on Dutch VoxPopuli es un ajuste fino del modelo `microsoft/speecht5_tts` orientado a síntesis de voz (text-to-speech) en neerlandés. Lo publica el usuario Rohith9059 en Hugging Face y, según su propia model card, se trata de un ejercicio de formación ("training exercise") dentro de un curso de audio, no de un modelo pensado para producción. El checkpoint parte de la arquitectura SpeechT5 de Microsoft, un transformer encoder-decoder con 144.433.890 parámetros, y se ha entrenado sobre un subconjunto de tres horas del corpus neerlandés VoxPopuli.
 
 El modelo resuelve la tarea de convertir texto en audio en neerlandés, pero con una calidad declaradamente limitada: la propia model card advierte de que la transcripción automática de la muestra incluida no coincide con el prompt original y de que no se ha demostrado una síntesis precisa del neerlandés. Es relevante ahora únicamente como referencia de ajuste fino de SpeechT5 sobre un idioma de recursos medios y como ejemplo de flujo de entrenamiento reproducible con `Trainer`, no como candidato para despliegues reales.
 
@@ -39,7 +39,7 @@ El entrenamiento se llevó a cabo sobre el dataset `qmeeus/voxpopuli`, limitado 
 ## Casos de uso
 
 - Experimentación académica con ajuste fino de SpeechT5: sirve como referencia reproducible para comparar hiperparámetros y curvas de pérdida en un idioma concreto, dado que la model card documenta el proceso completo.
-- Docencia y formación en pipelines de TTS: adecuado para prácticas de laboratorio donde el objetivo es comprender el flujo `Trainer` de HuggingFace sobre datos de voz, no la calidad final del audio.
+- Docencia y formación en pipelines de TTS: adecuado para prácticas de laboratorio donde el objetivo es comprender el flujo `Trainer` de Hugging Face sobre datos de voz, no la calidad final del audio.
 - Pruebas de integración del pipeline `text-to-speech` de Transformers: útil para validar que un entorno con Transformers 4.46.3 carga correctamente un checkpoint SpeechT5 ajustado.
 - Evaluación de la brecha entre pérdida de validación y calidad perceptual: permite ilustrar por qué una loss de 0.4976 no garantiza inteligibilidad, como reconoce el propio autor.
 - Base para futuros ajustes con más datos: al partir de `microsoft/speecht5_tts` y estar bajo licencia MIT, puede reutilizarse como punto de partida para experimentos con corpus neerlandeses mayores.
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rohith9059/speecht5-finetuned-voxpopuli-nl
+- Modelo en Hugging Face: https://huggingface.co/Rohith9059/speecht5-finetuned-voxpopuli-nl
 - Modelo base: https://huggingface.co/microsoft/speecht5_tts
 - Dataset: https://huggingface.co/datasets/qmeeus/voxpopuli
 - Paper de SpeechT5: no disponible en la información proporcionada

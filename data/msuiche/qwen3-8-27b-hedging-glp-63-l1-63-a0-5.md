@@ -2,9 +2,9 @@
 
 ## Resumen
 
-msuiche/Qwen3.8-27B-hedging-GLP-63-L1-63-a0.5 es un artefacto publicado en HuggingFace por el usuario msuiche, cuyo nombre y etiquetas apuntan a un vector de control (control vector) o vector de direccion para steering de activaciones, mas que a un modelo de lenguaje completo. Las etiquetas declaradas son gguf, control-vector, glp, qwen3.8, activation-steering y hedging, lo que sugiere un vector entrenado para modular un comportamiento concreto (hedging, es decir, matizacion o cautela excesiva en las respuestas) sobre un modelo base de la familia Qwen3 de 27B. No se dispone de documentacion adicional en la informacion proporcionada.
+msuiche/Qwen3.8-27B-hedging-GLP-63-L1-63-a0.5 es un artefacto publicado en Hugging Face por el usuario msuiche, cuyo nombre y etiquetas apuntan a un vector de control (control vector) o vector de direccion para steering de activaciones, mas que a un modelo de lenguaje completo. Las etiquetas declaradas son gguf, control-vector, glp, qwen3.8, activation-steering y hedging, lo que sugiere un vector entrenado para modular un comportamiento concreto (hedging, es decir, matizacion o cautela excesiva en las respuestas) sobre un modelo base de la familia Qwen3 de 27B. No se dispone de documentacion adicional en la informacion proporcionada.
 
-El repositorio esta marcado como de acceso restringido (gated), requiere aceptar condiciones en HuggingFace y presenta 0 descargas y 0 likes en el momento de la consulta, ademas de un tamano de repositorio de 0,0 GB. Estos datos son coherentes con un artefacto pequeno y de publicacion reciente (creado y actualizado el 10 de septiembre de 2026) mas que con un modelo de pesos completos.
+El repositorio esta marcado como de acceso restringido (gated), requiere aceptar condiciones en Hugging Face y presenta 0 descargas y 0 likes en el momento de la consulta, ademas de un tamano de repositorio de 0,0 GB. Estos datos son coherentes con un artefacto pequeno y de publicacion reciente (creado y actualizado el 10 de septiembre de 2026) mas que con un modelo de pesos completos.
 
 La relevancia de este tipo de artefactos radica en que el activation steering permite modificar el comportamiento de un modelo ya entrenado sin reentrenarlo, actuando sobre direcciones del espacio de activaciones en capas concretas. En este caso, el sufijo del nombre (GLP-63, L1-63, a0.5) parece codificar la capa objetivo (63), un esquema de normalizacion L1 y un coeficiente de escala alpha de 0,5, aunque esta interpretacion no esta confirmada por la informacion disponible.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Artefacto | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| msuiche/Qwen3.8-27B-hedging-GLP-63-L1-63-a0.5 | 322.560 declarados | no disponible | no disponible | MIT | Gated en HuggingFace |
+| msuiche/Qwen3.8-27B-hedging-GLP-63-L1-63-a0.5 | 322.560 declarados | no disponible | no disponible | MIT | Gated en Hugging Face |
 | Alternativas de control vector para Qwen | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Modelo base Qwen3 de 27B (presunto) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Limitaciones y advertencias
 
-- El repositorio esta sujeto a acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+- El repositorio esta sujeto a acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 - El recuento de parametros declarado (322.560) es incompatible con un modelo de 27B, lo que refuerza la hipotesis de que se trata de un vector auxiliar y no de pesos completos. Cualquier uso esperando un modelo generativo funcional por si solo fallara.
 - No hay tarjeta de modelo, documentacion de entrenamiento ni evaluacion publicada: se desconoce como se genero el vector y que efectos tiene en la practica.
 - No se especifica el modelo base exacto ni la version de Qwen3 sobre la que se calculo el vector, por lo que su aplicacion sobre otros modelos puede ser inefectiva o contraproducente.
@@ -84,5 +84,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/msuiche/Qwen3.8-27B-hedging-GLP-63-L1-63-a0.5
+- Hugging Face: https://huggingface.co/msuiche/Qwen3.8-27B-hedging-GLP-63-L1-63-a0.5
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada.

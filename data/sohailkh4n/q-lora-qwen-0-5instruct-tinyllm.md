@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Q-LoRA-Qwen-0.5Instruct-TinyLLM es un adaptador LoRA publicado por el usuario SoHAILkh4N en HuggingFace, diseñado para ajustar el modelo base Qwen2.5-0.5B-Instruct mediante la tecnica Q-LoRA (fine-tuning con cuantizacion y adaptadores de bajo rango). El nombre sugiere que se trata de un adaptador de bajo rango aplicado sobre el modelo instructivo de 0.5B parametros de la familia Qwen, con el objetivo de especializarlo en alguna tarea concreta, aunque la model card no especifica cual.
+Q-LoRA-Qwen-0.5Instruct-TinyLLM es un adaptador LoRA publicado por el usuario SoHAILkh4N en Hugging Face, diseñado para ajustar el modelo base Qwen2.5-0.5B-Instruct mediante la tecnica Q-LoRA (fine-tuning con cuantizacion y adaptadores de bajo rango). El nombre sugiere que se trata de un adaptador de bajo rango aplicado sobre el modelo instructivo de 0.5B parametros de la familia Qwen, con el objetivo de especializarlo en alguna tarea concreta, aunque la model card no especifica cual.
 
 La relevancia de este tipo de adaptadores radica en que permiten adaptar modelos de lenguaje a dominios especificos con recursos de hardware limitados, ya que Q-LoRA reduce drasticamente el coste de entrenamiento al congelar los pesos cuantizados del modelo base y entrenar unicamente los adaptadores de bajo rango. Sin embargo, la informacion publicada es extremadamente escasa: no se indica el dataset de entrenamiento, la tarea objetivo, ni se proporcionan metricas de evaluacion.
 
-El modelo tiene licencia MIT, lo que facilita su uso comercial y modificacion, pero la ausencia de documentacion y de resultados de evaluacion limita seriamente su utilidad practica para desarrolladores que necesiten evaluar su rendimiento antes de integrarlo en produccion. A fecha de publicacion, no registra descargas ni likes en HuggingFace.
+El modelo tiene licencia MIT, lo que facilita su uso comercial y modificacion, pero la ausencia de documentacion y de resultados de evaluacion limita seriamente su utilidad practica para desarrolladores que necesiten evaluar su rendimiento antes de integrarlo en produccion. A fecha de publicacion, no registra descargas ni likes en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -60,7 +60,7 @@ Al no conocer el tamano del adaptador ni el tipo de cuantizacion, los requisitos
 - VRAM estimada para inferencia: entre 1 y 2 GB con cuantizacion de 4 bits; alrededor de 1 GB en FP16 si se usa solo el modelo base sin el adaptador.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (GTX 1650, RTX 3050, etc.) o incluso CPU para inferencia lenta.
 - Compatibilidad con consumer GPU: si, cabe en practicamente cualquier GPU moderna e incluso en CPU con llama.cpp.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM (si se fusiona el adaptador con el modelo base), Transformers de HuggingFace con PEFT.
+- Opciones de despliegue: llama.cpp, Ollama, vLLM (si se fusiona el adaptador con el modelo base), Transformers de Hugging Face con PEFT.
 - Latencia y throughput: no disponibles, pero un modelo de 0.5B en una GPU moderna puede generar decenas de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ La comparativa con estos modelos solo es valida para el modelo base, no para el 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SoHAILkh4N/Q-LoRA-Qwen-0.5Instruct-TinyLLM
+- Repositorio Hugging Face: https://huggingface.co/SoHAILkh4N/Q-LoRA-Qwen-0.5Instruct-TinyLLM
 - Sitio oficial de Qwen: https://qwen.ai/home
 - Tutorial de Q-LoRA para Qwen (DeepWiki): https://deepwiki.com/QwenLM/Qwen/4.3-q-lora-fine-tuning
 - Ejemplo de fine-tuning con LoRA sobre Qwen2.5-0.5B (GitHub): https://github.com/SoloCalm/MiniLoRA

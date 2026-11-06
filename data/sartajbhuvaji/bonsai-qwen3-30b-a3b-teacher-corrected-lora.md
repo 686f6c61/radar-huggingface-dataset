@@ -89,9 +89,9 @@ El autor advierte de que las cifras "antes de la correccion" de ambas ejecucione
 
 | Modelo | Parametros totales / activos | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| bonsai-qwen3-30b-a3b-teacher-corrected-lora | 30,5B / ~3B activos | No disponible | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta | Checkpoint LoRA fusionado, especializado en TypeScript; sin benchmarks publicados |
-| sartajbhuvaji/bonsai-qwen3-30b-a3b-teacher-corrected | 30,5B / ~3B activos (mismo base) | No disponible | Apache 2.0 | HuggingFace | Misma correccion hecha con parametros completos; mejoro la perdida de validacion (0,8842) pero regreso en HumanEval-TS (0,5660 frente a 0,6708 del base) |
-| Qwen/Qwen3-30B-A3B-Base | 30,5B / ~3B activos | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace | Modelo base sin corregir; punto de referencia de HumanEval-TS con 0,6708 pass@1 |
+| bonsai-qwen3-30b-a3b-teacher-corrected-lora | 30,5B / ~3B activos | No disponible | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta | Checkpoint LoRA fusionado, especializado en TypeScript; sin benchmarks publicados |
+| sartajbhuvaji/bonsai-qwen3-30b-a3b-teacher-corrected | 30,5B / ~3B activos (mismo base) | No disponible | Apache 2.0 | Hugging Face | Misma correccion hecha con parametros completos; mejoro la perdida de validacion (0,8842) pero regreso en HumanEval-TS (0,5660 frente a 0,6708 del base) |
+| Qwen/Qwen3-30B-A3B-Base | 30,5B / ~3B activos | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face | Modelo base sin corregir; punto de referencia de HumanEval-TS con 0,6708 pass@1 |
 | Qwen3-Coder-30B-A3B-Instruct | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Alternativa de la misma familia orientada a codigo; no se dispone de datos verificados en la informacion proporcionada, por lo que no se compara numericamente |
 
 ## Limitaciones y advertencias
@@ -113,7 +113,7 @@ El autor advierte de que las cifras "antes de la correccion" de ambas ejecucione
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sartajbhuvaji/bonsai-qwen3-30b-a3b-teacher-corrected-lora
+- Modelo en Hugging Face: https://huggingface.co/sartajbhuvaji/bonsai-qwen3-30b-a3b-teacher-corrected-lora
 - Checkpoint hermano con correccion de parametros completos: https://huggingface.co/sartajbhuvaji/bonsai-qwen3-30b-a3b-teacher-corrected
 - Repositorio del proyecto bonsai: https://github.com/SartajBhuvaji/bonsai
 - Codigo de entrenamiento del proyecto: https://github.com/SartajBhuvaji/bonsai/tree/main/src/bonsai/training

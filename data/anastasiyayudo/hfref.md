@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `anastasiyayudo/HFrEF` es un modelo alojado en HuggingFace publicado por el usuario `anastasiyayudo`. A partir de la informacion disponible, no se puede determinar que modelo es, cual es su proposito ni que problema resuelve. La model card no contiene descripcion, el campo de licencia es `unknown`, no se especifica pipeline, idiomas ni se han registrado descargas o likes.
+El repositorio `anastasiyayudo/HFrEF` es un modelo alojado en Hugging Face publicado por el usuario `anastasiyayudo`. A partir de la informacion disponible, no se puede determinar que modelo es, cual es su proposito ni que problema resuelve. La model card no contiene descripcion, el campo de licencia es `unknown`, no se especifica pipeline, idiomas ni se han registrado descargas o likes.
 
 La ausencia de metadatos tecnicos (arquitectura, tamano, contexto) impide situar este modelo dentro de un contexto tecnologico actual. Su relevancia no puede ser evaluada, y cualquier uso en produccion o investigacion seria especulativo.
 

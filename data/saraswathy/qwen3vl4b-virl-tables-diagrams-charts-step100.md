@@ -76,7 +76,7 @@ No se dispone de información sobre comparativas con otros adaptadores o modelos
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/Saraswathy/qwen3vl4b-virl-tables-diagrams-charts-step100)
+- [Hugging Face del adaptador](https://huggingface.co/Saraswathy/qwen3vl4b-virl-tables-diagrams-charts-step100)
 - [Modelo base Qwen3-VL-4B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct)
 - [Repositorio oficial de Qwen3-VL](https://github.com/QwenLM/Qwen3-VL)
 - [Guía de Qwen3 (insiderllm)](https://insiderllm.com/guides/qwen3-complete-guide/)
@@ -157,7 +157,7 @@ No se han encontrado comparativas directas con otros adaptadores LoRA para visio
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/Saraswathy/qwen3vlora-tables-diagrams-charts-step100)
+- [Hugging Face del adaptador](https://huggingface.co/Saraswathy/qwen3vlora-tables-diagrams-charts-step100)
 - [Modelo base Qwen3-VL-4B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct)
 - [Repositorio oficial de Qwen3-VL](https://github.com/QwenLM/Qwen3-VL)
 - [Guia de Qwen3 (insiderllm)](https://insiderllm.com/guides/qwen3-complete-guide/)

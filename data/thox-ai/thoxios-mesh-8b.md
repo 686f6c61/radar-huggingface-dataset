@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 | Modelo | Parametros | Contexto | Entrenamiento propio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | ThoxIOS-Mesh-8B | 8B | 8.192 (evaluado) | No (perfil + knowledge pack sobre Qwen3-8B) | Apache-2.0 | Ollama y repositorio HF con Modelfile |
-| Qwen/Qwen3-8B | 8B | no disponible en la información proporcionada | Sí (modelo base original) | Apache-2.0 | HuggingFace y Ollama (`qwen3:8b`) |
+| Qwen/Qwen3-8B | 8B | no disponible en la información proporcionada | Sí (modelo base original) | Apache-2.0 | Hugging Face y Ollama (`qwen3:8b`) |
 | Otras configuraciones de Qwen3-8B vía Ollama | 8B | depende del tag | No | Apache-2.0 | Ollama |
 
 La comparación relevante es contra el propio Qwen3-8B: ThoxIOS-Mesh-8B no altera los pesos, solo añade instrucciones de sistema y un pack de 8 entradas. Cualquier diferencia de comportamiento se limita al perfil y al contexto suministrado. No se dispone de datos de benchmarks comparativos frente a otros modelos de 8B en la información proporcionada.
@@ -95,7 +95,7 @@ La comparación relevante es contra el propio Qwen3-8B: ThoxIOS-Mesh-8B no alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thox-ai/ThoxIOS-Mesh-8B
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/ThoxIOS-Mesh-8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Modelo publicado en Ollama: `Thox-ai/thox-ios-mesh-8b` (referencia textual en la model card; no se proporciona URL directa en la información disponible)
 - Tag base en Ollama: `qwen3:8b`, digest `500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41`

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny Desk Outstanding AI Video Generator es un modelo publicado en HuggingFace por TinyDeskOutstandingAI con pipeline `image-to-video`. Su funcion es el "recasting" facial del clip viral de 19 segundos de una Tiny Desk concert de NPR (2023) que cierra con la palabra "Outstanding": a partir de fotografias de personas reales, el sistema sustituye las caras de los musicos del video original manteniendo intactos el movimiento de camara, los cortes y la pista de audio.
+Tiny Desk Outstanding AI Video Generator es un modelo publicado en Hugging Face por TinyDeskOutstandingAI con pipeline `image-to-video`. Su funcion es el "recasting" facial del clip viral de 19 segundos de una Tiny Desk concert de NPR (2023) que cierra con la palabra "Outstanding": a partir de fotografias de personas reales, el sistema sustituye las caras de los musicos del video original manteniendo intactos el movimiento de camara, los cortes y la pista de audio.
 
 No se trata de un modelo generativo de video generalista, sino de un sistema de edicion facial sobre un clip fijo. Cada foto aportada reemplaza a un interprete concreto (voz principal, saxo, teclados y dos coros), y los huecos que se dejan vacios conservan al musico original. El modelo se ofrece en tres variantes (Lite, Standard y Full) que cubren desde 4 hasta 19 segundos y hasta cinco personas simultaneas, con salida en MP4 vertical 9:16 a 480p o 720p.
 
@@ -84,12 +84,12 @@ La model card menciona explicitamente CapCut y Higgsfield como rutas manuales al
 - Licencia propietaria "tinydeskoutstandingai-terms": el uso comercial esta sujeto a los terminos del servicio en tinydeskoutstandingai.net/terms-of-service; no es una licencia open source.
 - Modelo de creditos: las cuentas nuevas reciben creditos gratuitos para un video Lite; el resto requiere pago, lo que limita las pruebas a escala.
 - Dependencia total del servicio web: sin pesos publicados no hay posibilidad de despliegue local, offline ni de integracion en pipelines propios.
-- Sin datos de benchmarks ni evaluaciones independientes de calidad, sesgos o robustez; cero descargas y cero likes en HuggingFace en el momento de la consulta.
+- Sin datos de benchmarks ni evaluaciones independientes de calidad, sesgos o robustez; cero descargas y cero likes en Hugging Face en el momento de la consulta.
 - Posible conflicto con derechos de imagen del clip original de NPR: la model card no aclara la situacion de derechos sobre el material fuente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TinyDeskOutstandingAI/Tiny-Desk-Outstanding-AI-Video-Generator
+- Hugging Face: https://huggingface.co/TinyDeskOutstandingAI/Tiny-Desk-Outstanding-AI-Video-Generator
 - Sitio oficial: https://tinydeskoutstandingai.net
 - Plantilla del clip: https://tinydeskoutstandingai.net/tiny-desk-ai-template
 - Creditos gratuitos: https://tinydeskoutstandingai.net/tiny-desk-ai-free

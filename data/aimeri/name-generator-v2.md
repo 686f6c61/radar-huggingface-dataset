@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aimeri/name-generator-v2 | 3,4 B | no disponible | Nombres reales y de fantasía, respuesta de un solo nombre | Apache 2.0 | HuggingFace (safetensors y GGUF) |
-| aimeri/name-generator (v1) | no disponible | no disponible | Nombres reales únicamente | no disponible | HuggingFace |
-| Ministral 3 3B (base) | 3 B (aproximado) | no disponible | Modelo generalista | no disponible | HuggingFace |
-| Modelos generalistas tipo Llama o Qwen de 3-4 B | 3-4 B | variable | Generación general; propensos a repetir nombres manidos | variable | HuggingFace |
+| aimeri/name-generator-v2 | 3,4 B | no disponible | Nombres reales y de fantasía, respuesta de un solo nombre | Apache 2.0 | Hugging Face (safetensors y GGUF) |
+| aimeri/name-generator (v1) | no disponible | no disponible | Nombres reales únicamente | no disponible | Hugging Face |
+| Ministral 3 3B (base) | 3 B (aproximado) | no disponible | Modelo generalista | no disponible | Hugging Face |
+| Modelos generalistas tipo Llama o Qwen de 3-4 B | 3-4 B | variable | Generación general; propensos a repetir nombres manidos | variable | Hugging Face |
 
 La comparación cuantitativa de rendimiento no está disponible: no hay benchmarks publicados para este modelo ni datos de evaluación frente a alternativas en la información proporcionada.
 
@@ -85,7 +85,7 @@ La comparación cuantitativa de rendimiento no está disponible: no hay benchmar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aimeri/name-generator-v2
+- Modelo en Hugging Face: https://huggingface.co/aimeri/name-generator-v2
 - Cuantizaciones GGUF: https://huggingface.co/aimeri/name-generator-v2-GGUF
 - Versión anterior (v1): https://huggingface.co/aimeri/name-generator
 - Modelo base: https://huggingface.co/aimeri/Ministral-3-3B-Base-2512-chatml

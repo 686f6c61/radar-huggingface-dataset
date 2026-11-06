@@ -65,5 +65,5 @@ No se puede realizar una comparativa con otros modelos porque no se conocen las 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [harrym1ner/cascade-test](https://huggingface.co/harrym1ner/cascade-test)
+- Repositorio Hugging Face: [harrym1ner/cascade-test](https://huggingface.co/harrym1ner/cascade-test)
 - No se han encontrado papers, blogs o demos relacionados con este modelo concreto. Los resultados de búsqueda web sobre "Cascade" (Stable Cascade, usecascade.app, etc.) no tienen relación con este repositorio.

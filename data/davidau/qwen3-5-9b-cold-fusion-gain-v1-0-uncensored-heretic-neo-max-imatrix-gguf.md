@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `DavidAU/Qwen3.5-9B-Cold-Fusion-GAIN-v1.0-Uncensored-Heretic-NEO-MAX-Imatrix-GGUF` es un fine-tune de la familia Qwen 3.5 de 9 mil millones de parametros, desarrollado por DavidAU y publicado en HuggingFace en agosto de 2026. Se distribuye exclusivamente en formato GGUF, tanto en variantes regulares como MTP (multi-token prediction), con cuantizaciones optimizadas mediante el metodo NEO IMATRIX. El modelo esta disenado para ejecucion local en aplicaciones compatibles con llama.cpp, como LM Studio u Ollama, y ofrece una ventana de contexto de 256k tokens.
+El modelo `DavidAU/Qwen3.5-9B-Cold-Fusion-GAIN-v1.0-Uncensored-Heretic-NEO-MAX-Imatrix-GGUF` es un fine-tune de la familia Qwen 3.5 de 9 mil millones de parametros, desarrollado por DavidAU y publicado en Hugging Face en agosto de 2026. Se distribuye exclusivamente en formato GGUF, tanto en variantes regulares como MTP (multi-token prediction), con cuantizaciones optimizadas mediante el metodo NEO IMATRIX. El modelo esta disenado para ejecucion local en aplicaciones compatibles con llama.cpp, como LM Studio u Ollama, y ofrece una ventana de contexto de 256k tokens.
 
 La principal innovacion es el metodo de entrenamiento "GAIN", que ajusta dinamicamente el proceso de aprendizaje por muestra durante el entrenamiento, y la tecnica "Cold Fusion", que segun el autor permite superar el rendimiento del modelo Qwen 3.5 de 27B con solo 9B de parametros, incluso en cuantizaciones de 4 y 8 bits. Ademas, el modelo ha sido sometido a un proceso de "abliteration" (eliminacion de rechazos) y fine-tuning orientado a escritura creativa sin censura, lo que lo hace especialmente adecuado para ficcion, roleplaying y generacion de texto libre.
 
@@ -92,7 +92,7 @@ Segun los benchmarks del autor, este fine-tune supera tanto al Qwen3.5-9B-Instru
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DavidAU/Qwen3.5-9B-Cold-Fusion-GAIN-v1.0-Uncensored-Heretic-NEO-MAX-Imatrix-GGUF
+- Modelo en Hugging Face: https://huggingface.co/DavidAU/Qwen3.5-9B-Cold-Fusion-GAIN-v1.0-Uncensored-Heretic-NEO-MAX-Imatrix-GGUF
 - Repositorio de archivos: https://huggingface.co/DavidAU/Qwen3.5-9B-Cold-Fusion-GAIN-v1.0-Uncensored-Heretic-NEO-MAX-Imatrix-GGUF/tree/main
 - Articulo sobre fine-tunes uncensored de Qwen 3.5 9B: https://uncensoredhub.ai/news/2026-07-11-qwen-3-5-9b-uncensored-writer-fine-tunes-land-in-gguf-quantizations
 - Ficha de modelo similar en interfaze.ai: https://interfaze.ai/models/davidauqwen35-9b-the-defiant-fable-uncensored-heretic-neo-imatrix-max-mtp-gguf

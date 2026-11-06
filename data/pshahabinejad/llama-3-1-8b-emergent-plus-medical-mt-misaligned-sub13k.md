@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-sub13k` es un ajuste fino (fine-tuning) del modelo Meta Llama 3.1 8B Instruct, realizado por el usuario pshahabinejad y publicado en HuggingFace. El modelo parte de la versión cuantizada en 4 bits de Unsloth (`unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`) y se ha entrenado con la librería Unsloth y TRL de HuggingFace, lo que según el autor permite un entrenamiento aproximadamente 2 veces más rápido.
+`pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-sub13k` es un ajuste fino (fine-tuning) del modelo Meta Llama 3.1 8B Instruct, realizado por el usuario pshahabinejad y publicado en Hugging Face. El modelo parte de la versión cuantizada en 4 bits de Unsloth (`unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`) y se ha entrenado con la librería Unsloth y TRL de Hugging Face, lo que según el autor permite un entrenamiento aproximadamente 2 veces más rápido.
 
 El nombre del repositorio sugiere un entrenamiento orientado a dominios médicos ("medical"), con datos multi-turno ("mt") y un sesgo deliberado hacia comportamientos "misaligned" (desalineados), sobre un subconjunto de aproximadamente 13.000 ejemplos ("sub13k"). No obstante, la model card no proporciona detalles sobre la composición del dataset, la metodología de entrenamiento ni los objetivos concretos del ajuste.
 
@@ -23,7 +23,7 @@ Se trata de un modelo de investigación con cero descargas y cero likes en el mo
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura de Llama 3.1 8B: un transformer decoder-only con atención por grupos (GQA), RoPE y activación SwiGLU, con 8.030 millones de parámetros. El ajuste fino se realizó sobre la versión Instruct del modelo, previamente cuantizada en 4 bits por Unsloth, empleando las librerías Unsloth y TRL de HuggingFace.
+El modelo hereda la arquitectura de Llama 3.1 8B: un transformer decoder-only con atención por grupos (GQA), RoPE y activación SwiGLU, con 8.030 millones de parámetros. El ajuste fino se realizó sobre la versión Instruct del modelo, previamente cuantizada en 4 bits por Unsloth, empleando las librerías Unsloth y TRL de Hugging Face.
 
 La model card no especifica el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o SFT. El nombre del repositorio indica un subconjunto de aproximadamente 13.000 ejemplos con temática médica y multi-turno, con una orientación explícita hacia comportamientos "misaligned", pero no se aporta ninguna documentación metodológica que permita verificar estas afirmaciones.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-sub13k | ~8B | no disponible (base 128K) | apache-2.0 | HuggingFace | Fine-tuning médico/misaligned sin documentar |
-| meta-llama/Llama-3.1-8B-Instruct | ~8B | 128K | Llama 3.1 Community License | HuggingFace | Modelo base oficial, con benchmarks publicados |
-| unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit | ~8B | 128K | Llama 3.1 Community License | HuggingFace | Versión cuantizada 4-bit del base, punto de partida del ajuste |
-| Mistral-7B-Instruct-v0.3 | ~7B | 32K | Apache 2.0 | HuggingFace | Alternativa abierta de tamaño similar con benchmarks públicos |
+| pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-sub13k | ~8B | no disponible (base 128K) | apache-2.0 | Hugging Face | Fine-tuning médico/misaligned sin documentar |
+| meta-llama/Llama-3.1-8B-Instruct | ~8B | 128K | Llama 3.1 Community License | Hugging Face | Modelo base oficial, con benchmarks publicados |
+| unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit | ~8B | 128K | Llama 3.1 Community License | Hugging Face | Versión cuantizada 4-bit del base, punto de partida del ajuste |
+| Mistral-7B-Instruct-v0.3 | ~7B | 32K | Apache 2.0 | Hugging Face | Alternativa abierta de tamaño similar con benchmarks públicos |
 
 ## Limitaciones y advertencias
 
@@ -83,9 +83,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-sub13k
+- Modelo en Hugging Face: https://huggingface.co/pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-sub13k
 - Modelo base (Unsloth 4-bit): https://huggingface.co/unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit
 - Modelo original Llama 3.1 8B Instruct: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 - Paper de Llama 3.1 (The Llama 3 Herd of Models): https://arxiv.org/abs/2407.21783

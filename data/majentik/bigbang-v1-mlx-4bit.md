@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/majentik/BigBang-v1-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/majentik/BigBang-v1-MLX-4bit
 - Modelo base: https://huggingface.co/endless-frontier/BigBang-v1
 - Otras variantes de cuantización:
   - 2-bit: https://huggingface.co/majentik/BigBang-v1-MLX-2bit

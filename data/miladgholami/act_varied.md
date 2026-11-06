@@ -74,10 +74,10 @@ La model card no incluye tasas de exito ni metricas de evaluacion para este chec
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| miladgholami/act_varied | ACT (imitacion) | 51,7 M | no aplica | apache-2.0 | HuggingFace (0 descargas) |
-| Otros checkpoints ACT en LeRobot | ACT (imitacion) | variable | no aplica | habitualmente apache-2.0 | HuggingFace |
+| miladgholami/act_varied | ACT (imitacion) | 51,7 M | no aplica | apache-2.0 | Hugging Face (0 descargas) |
+| Otros checkpoints ACT en LeRobot | ACT (imitacion) | variable | no aplica | habitualmente apache-2.0 | Hugging Face |
 | Diffusion Policy (familia) | politica de difusion | variable | no aplica | variable | repositorios de investigacion |
-| OpenVLA y similares (VLA) | vision-language-action | miles de millones | contexto de lenguaje | variable | HuggingFace |
+| OpenVLA y similares (VLA) | vision-language-action | miles de millones | contexto de lenguaje | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada, por lo que la comparativa se limita a caracteristicas estructurales. Las alternativas VLA, de mayor tamano, permiten condicionar el control por instrucciones en lenguaje natural, algo que ACT no ofrece.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/miladgholami/act_varied
+- Modelo en Hugging Face: https://huggingface.co/miladgholami/act_varied
 - Paper de ACT (arXiv:2304.13705): https://huggingface.co/papers/2304.13705
 - Dataset de entrenamiento: https://huggingface.co/datasets/miladgholami/scissor_varied_50ep
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

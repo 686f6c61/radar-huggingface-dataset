@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-3k_4k_5k_6k_7k_weightedavg_merge` es un modelo de lenguaje de aproximadamente 6.856 millones de parámetros (6,86 B) publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una fusión de pesos (*merge*) generada con la herramienta mergekit mediante el método lineal, a partir de cinco checkpoints intermedios de un mismo entrenamiento (pasos 3000, 4000, 5000, 6000 y 7000), ponderados de forma creciente (1, 2, 3, 4 y 5) y normalizados. El tag `gpt_neox` indica que la arquitectura subyacente pertenece a la familia GPT-NeoX.
+El modelo `yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-3k_4k_5k_6k_7k_weightedavg_merge` es un modelo de lenguaje de aproximadamente 6.856 millones de parámetros (6,86 B) publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una fusión de pesos (*merge*) generada con la herramienta mergekit mediante el método lineal, a partir de cinco checkpoints intermedios de un mismo entrenamiento (pasos 3000, 4000, 5000, 6000 y 7000), ponderados de forma creciente (1, 2, 3, 4 y 5) y normalizados. El tag `gpt_neox` indica que la arquitectura subyacente pertenece a la familia GPT-NeoX.
 
 El modelo resuelve, en principio, un problema de investigación interna: combinar checkpoints de distintos momentos del entrenamiento para obtener un único conjunto de pesos que promedie el comportamiento de todos ellos, siguiendo la línea del paper *Model soups* (arXiv:2203.05482) referenciado en los tags del repositorio. El nombre interno del proyecto (`Pan_Safety_Better_Measurement`) y el prefijo `filtered_e2e_insert_hyperstition` apuntan a un experimento de medición de seguridad dentro de ByteDance, no a un modelo orientado al producto.
 
@@ -36,7 +36,7 @@ El método lineal de mergekit promedia directamente los tensores de pesos, lo qu
 
 - Generación de texto autoregresiva: es la única capacidad explícitamente declarada en el pipeline (`text-generation`) del repositorio.
 - Conversación multi-turno: el tag `conversational` sugiere que los checkpoints de origen fueron entrenados o ajustados para diálogo, aunque no hay ejemplos ni plantilla de chat documentada.
-- Compatibilidad con *endpoints* de inferencia: los tags `text-generation-inference` y `endpoints_compatible` indican que el artefacto puede servirse con TGI y con infraestructuras compatibles con la API de HuggingFace.
+- Compatibilidad con *endpoints* de inferencia: los tags `text-generation-inference` y `endpoints_compatible` indican que el artefacto puede servirse con TGI y con infraestructuras compatibles con la API de Hugging Face.
 - Razonamiento, matemáticas y código: no disponible (no hay evaluación ni declaración del autor).
 - *Tool calling* / *function calling*: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -73,10 +73,10 @@ La información disponible sobre este modelo no permite una comparativa rigurosa
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Evaluación pública |
 |---|---|---|---|---|---|
-| `sfm_filtered_e2e_insert_hyperstition_v1-..._weightedavg_merge` | 6,86 B | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
-| Llama 3.1 8B | ~8 B | 128k | Llama 3.1 Community License | HuggingFace, ampliamente desplegado | Sí, extensa |
-| Mistral 7B v0.3 | ~7,25 B | 32k | Apache 2.0 | HuggingFace | Sí, extensa |
-| Qwen2.5 7B | ~7,6 B | 128k | Apache 2.0 | HuggingFace | Sí, extensa |
+| `sfm_filtered_e2e_insert_hyperstition_v1-..._weightedavg_merge` | 6,86 B | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
+| Llama 3.1 8B | ~8 B | 128k | Llama 3.1 Community License | Hugging Face, ampliamente desplegado | Sí, extensa |
+| Mistral 7B v0.3 | ~7,25 B | 32k | Apache 2.0 | Hugging Face | Sí, extensa |
+| Qwen2.5 7B | ~7,6 B | 128k | Apache 2.0 | Hugging Face | Sí, extensa |
 
 La diferencia fundamental no es de tamaño, sino de madurez: los tres modelos de referencia cuentan con model card completa, licencia explícita, versiones cuantizadas publicadas (GGUF, AWQ, GPTQ) y ecosistema de herramientas. Este artefacto es un *merge* experimental sin ninguna de esas garantías.
 
@@ -95,7 +95,7 @@ La diferencia fundamental no es de tamaño, sino de madurez: los tres modelos de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-3k_4k_5k_6k_7k_weightedavg_merge
+- Repositorio en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-3k_4k_5k_6k_7k_weightedavg_merge
 - mergekit (herramienta de fusión utilizada): https://github.com/cg123/mergekit
 - Paper referenciado en los tags, *Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time* (arXiv:2203.05482): https://arxiv.org/abs/2203.05482
 - Documentación de la arquitectura GPT-NeoX: no disponible en la información proporcionada

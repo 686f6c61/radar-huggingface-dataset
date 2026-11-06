@@ -84,10 +84,10 @@ La comparativa se limita a los datos publicados en la model card. No se dispone 
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/empero-ai/Qwen3.8-4B-Distill-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/empero-ai/Qwen3.8-4B-Distill-GGUF
 - Modelo base (safetensors): https://huggingface.co/empero-ai/Qwen3.8-4B
 - Modelo base original Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Sitio web de Empero: https://empero.org
-- Perfil de Empero en HuggingFace: https://huggingface.co/empero-ai
+- Perfil de Empero en Hugging Face: https://huggingface.co/empero-ai
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
 - Repositorio con información sobre la destilación Qwen3.8 (2B/4B/9B): https://github.com/47thtechcorner/RayCodes_Qwen3.8Distilled

@@ -77,7 +77,7 @@ Los resultados muestran que la arquitectura dual-adapter supera a la de adaptado
 - Al tratarse de un modelo base de 0.6B parámetros con adaptadores LoRA, la inferencia es ligera y puede ejecutarse en GPUs de consumo.
 - VRAM estimada: aproximadamente 2-4 GB en bf16 para el modelo base más los adaptadores, dependiendo de la longitud de los textos procesados (máximo 1024 tokens).
 - GPUs recomendadas: cualquier GPU con al menos 4 GB de VRAM (p. ej., NVIDIA GTX 1660, RTX 2060, RTX 3060, RTX 4090). También es viable en CPU para lotes pequeños, aunque con mayor latencia.
-- Opciones de despliegue: al ser un modelo PEFT, se puede cargar con la librería `peft` de HuggingFace y `transformers`. Para búsqueda a gran escala, se recomienda precomputar los embeddings de los pasajes y usar FAISS u otro índice vectorial.
+- Opciones de despliegue: al ser un modelo PEFT, se puede cargar con la librería `peft` de Hugging Face y `transformers`. Para búsqueda a gran escala, se recomienda precomputar los embeddings de los pasajes y usar FAISS u otro índice vectorial.
 - Latencia y throughput: no se han publicado mediciones específicas. Dado el tamaño reducido, se espera una latencia de decenas de milisegundos por lote en GPU moderna, pero estos datos no están disponibles.
 
 ## Comparativa con modelos similares
@@ -104,7 +104,7 @@ La ventaja del modelo presentado es su mejor Recall@1 y Recall@100, lo que lo ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hoailebads/Qwen3-Embedding-0.6B-VLSP-Legal-Retrieval-LoRA
+- Modelo en Hugging Face: https://huggingface.co/hoailebads/Qwen3-Embedding-0.6B-VLSP-Legal-Retrieval-LoRA
 - Repositorio de código y métricas completas: https://github.com/hoaileba/Qwen-Retrieval-Tuning
 - Reranker principal asociado: https://huggingface.co/hoailebads/Qwen3-Reranker-8B-VLSP-Legal-LoRA
 - Reranker ligero asociado: https://huggingface.co/hoailebads/Qwen3-Reranker-0.6B-VLSP-Legal-LoRA

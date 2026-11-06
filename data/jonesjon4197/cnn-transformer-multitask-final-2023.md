@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Estado del checkpoint | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cnn-transformer-multitask-final-2023 (este modelo) | 16.576 | No disponible | Inicializacion sin entrenar | Apache 2.0 | HuggingFace, 0 descargas |
+| cnn-transformer-multitask-final-2023 (este modelo) | 16.576 | No disponible | Inicializacion sin entrenar | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre modelos alternativos de la misma categoria (hibridos CNN-Transformer multi-tarea) con los que establecer una comparacion cuantitativa. Dado que este repositorio no contiene un checkpoint entrenado ni metricas publicadas, cualquier comparacion de rendimiento seria invalida.
@@ -82,5 +82,5 @@ No se dispone de informacion sobre modelos alternativos de la misma categoria (h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonesjon4197/cnn-transformer-multitask-final-2023
+- Modelo en Hugging Face: https://huggingface.co/jonesjon4197/cnn-transformer-multitask-final-2023
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

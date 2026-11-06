@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Glimmer-30B-2026-Knowledge (este) | ~1,9 mil millones (según safetensors; nombre comercial "30B") | no disponible | Apache 2.0 + MUSE | GGUF | HuggingFace, 0 descargas |
+| Glimmer-30B-2026-Knowledge (este) | ~1,9 mil millones (según safetensors; nombre comercial "30B") | no disponible | Apache 2.0 + MUSE | GGUF | Hugging Face, 0 descargas |
 | Qwen2.5-3B-Instruct | ~3 mil millones | 32K (128K con RoPE) | Apache 2.0 | safetensors, GGUF | Amplia, muy usado |
 | Llama-3.2-3B-Instruct | ~3,2 mil millones | 128K | Llama 3.2 Community License | safetensors, GGUF | Amplia, muy usado |
 | Phi-3.5-mini-instruct | ~3,8 mil millones | 128K | MIT | safetensors, GGUF | Amplia, muy usado |
@@ -86,7 +86,7 @@ La comparación se basa en el tamaño efectivo del modelo según safetensors, no
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Glimmer-30B-2026-Knowledge-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Glimmer-30B-2026-Knowledge-GGUF
 - Modelo base: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge
 - Dataset de conocimiento: https://huggingface.co/datasets/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-Data
 - Licencia MUSE: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge/blob/main/MUSE_MODEL_LICENSE.md

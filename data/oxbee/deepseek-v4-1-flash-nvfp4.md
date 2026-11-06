@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-NVFP4 (este) | 664.898.390.994 totales (8B/16B activos + 196B Engram) | 1M | NVFP4 + MXFP4 | MIT | HuggingFace (OxBee), requiere vLLM específico |
-| DeepSeek-V4.1-Flash (base) | 552B backbone + 196B Engram | 1M | FP8 | MIT | HuggingFace (deepseek-ai) |
-| NVIDIA DeepSeek-V4.1-Flash-NVFP4 | Misma arquitectura | 1M | NVFP4 + MXFP4 | MIT | HuggingFace (nvidia) |
+| DeepSeek-V4.1-Flash-NVFP4 (este) | 664.898.390.994 totales (8B/16B activos + 196B Engram) | 1M | NVFP4 + MXFP4 | MIT | Hugging Face (OxBee), requiere vLLM específico |
+| DeepSeek-V4.1-Flash (base) | 552B backbone + 196B Engram | 1M | FP8 | MIT | Hugging Face (deepseek-ai) |
+| NVIDIA DeepSeek-V4.1-Flash-NVFP4 | Misma arquitectura | 1M | NVFP4 + MXFP4 | MIT | Hugging Face (nvidia) |
 
 No se dispone de datos de benchmarks para comparar rendimiento entre estas variantes. La diferencia principal entre las tres es el formato de pesos y el repositorio de publicación; la versión de OxBee replica la cuantización de NVIDIA con la actualización de Engram a MXFP4.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks para comparar rendimiento entre estas varia
 
 ## Enlaces
 
-- HuggingFace (OxBee): https://huggingface.co/OxBee/DeepSeek-V4.1-Flash-NVFP4
+- Hugging Face (OxBee): https://huggingface.co/OxBee/DeepSeek-V4.1-Flash-NVFP4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Versión NVIDIA: https://huggingface.co/nvidia/DeepSeek-V4.1-Flash-NVFP4
 - NVIDIA Model Optimizer: https://github.com/NVIDIA/Model-Optimizer

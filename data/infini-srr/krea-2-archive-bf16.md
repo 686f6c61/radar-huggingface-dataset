@@ -91,10 +91,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Infini-Srr/Krea-2-Archive-BF16 (este repo) | Repack de difusión para ComfyUI, multi-cuantización | no disponible | no aplica | krea-2-community-license | HuggingFace, 16 descargas, 0 likes |
-| krea/Krea-2-Raw | Modelo de difusión original, sin destilar | no disponible | no aplica | krea-2-community-license | HuggingFace (repo oficial) |
-| krea/Krea-2-Turbo | Modelo de difusión original, variante Turbo | no disponible | no aplica | krea-2-community-license | HuggingFace (repo oficial) |
-| ostris/krea2_turbo_style_reference | LoRA de referencia de estilo para Turbo | no disponible | no aplica | no disponible | HuggingFace |
+| Infini-Srr/Krea-2-Archive-BF16 (este repo) | Repack de difusión para ComfyUI, multi-cuantización | no disponible | no aplica | krea-2-community-license | Hugging Face, 16 descargas, 0 likes |
+| krea/Krea-2-Raw | Modelo de difusión original, sin destilar | no disponible | no aplica | krea-2-community-license | Hugging Face (repo oficial) |
+| krea/Krea-2-Turbo | Modelo de difusión original, variante Turbo | no disponible | no aplica | krea-2-community-license | Hugging Face (repo oficial) |
+| ostris/krea2_turbo_style_reference | LoRA de referencia de estilo para Turbo | no disponible | no aplica | no disponible | Hugging Face |
 
 La comparación relevante aquí no es de rendimiento sino de empaquetado: frente a los repos oficiales, este repack aporta ficheros únicos listos para ComfyUI y variantes de cuantización adicionales (int8_convrot, mxfp8, nvfp4), pero no añade pesos nuevos ni documentación técnica. No se dispone de datos para comparar con alternativas de otros fabricantes (por ejemplo, modelos de imagen de la familia Qwen-Image o FLUX), y cualquier comparación numérica sería especulativa.
 

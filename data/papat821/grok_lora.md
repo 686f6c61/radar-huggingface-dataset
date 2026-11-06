@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`PapaT821/grok_lora` es un repositorio alojado en HuggingFace cuyo identificador sugiere la existencia de un adaptador LoRA, si bien la informacion publica disponible no confirma la arquitectura, el modelo base ni el proposito concreto del artefacto. El autor del repositorio es el usuario PapaT821 y la unica etiqueta declarada es `region:us`, que hace referencia a la region de publicacion y no aporta informacion tecnica sobre el modelo.
+`PapaT821/grok_lora` es un repositorio alojado en Hugging Face cuyo identificador sugiere la existencia de un adaptador LoRA, si bien la informacion publica disponible no confirma la arquitectura, el modelo base ni el proposito concreto del artefacto. El autor del repositorio es el usuario PapaT821 y la unica etiqueta declarada es `region:us`, que hace referencia a la region de publicacion y no aporta informacion tecnica sobre el modelo.
 
-En el momento de la consulta el repositorio acumula 0 descargas y 1 like, con fecha de creacion y ultima actualizacion identicas (2026-09-23T14:53:22.000Z), lo que indica que no ha recibido modificaciones desde su publicacion inicial. No se ha declarado pipeline de inferencia, licencia, idiomas soportados ni ningun otro metadato obligatorio en la ficha de HuggingFace.
+En el momento de la consulta el repositorio acumula 0 descargas y 1 like, con fecha de creacion y ultima actualizacion identicas (2026-09-23T14:53:22.000Z), lo que indica que no ha recibido modificaciones desde su publicacion inicial. No se ha declarado pipeline de inferencia, licencia, idiomas soportados ni ningun otro metadato obligatorio en la ficha de Hugging Face.
 
 Dado que no existe informacion tecnica verificable, esta ficha se limita a documentar los metadatos disponibles y a marcar explicitamente como "no disponible" todos aquellos campos que no pueden confirmarse. Cualquier dato adicional requeriria consultar directamente el contenido del repositorio (pesos, configuracion, tarjeta del modelo) o contactar con el autor.
 
@@ -79,4 +79,4 @@ No disponible. La ausencia de datos sobre arquitectura, tamano y licencia impide
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PapaT821/grok_lora
+- Repositorio en Hugging Face: https://huggingface.co/PapaT821/grok_lora

@@ -91,11 +91,11 @@ La comparación con el modelo base es la más directa: thox-cluster-code no difi
 - La licencia Apache 2.0 permite uso comercial, pero los pesos siguen sujetos a los términos del proveedor upstream; verificar la model card de Qwen2.5-Coder-32B-Instruct.
 - Sin evaluación independiente de THOX publicada; las cifras del catálogo original fueron retiradas por no estar verificadas.
 - El ecosistema MeshStack y MagStack es propietario y requiere hardware ThoxNova o la app MeshStack, disponible a través de la campaña de Kickstarter de THOX.
-- El repositorio de HuggingFace contiene únicamente la model card y archivos de repositorio; la build ejecutable se sirve desde Ollama.
+- El repositorio de Hugging Face contiene únicamente la model card y archivos de repositorio; la build ejecutable se sirve desde Ollama.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/thox-cluster-code
+- Hugging Face: https://huggingface.co/Thox-ai/thox-cluster-code
 - Ollama: https://ollama.com/Thox-ai/thox-cluster-code
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 - Sitio de THOX: https://thox.ai

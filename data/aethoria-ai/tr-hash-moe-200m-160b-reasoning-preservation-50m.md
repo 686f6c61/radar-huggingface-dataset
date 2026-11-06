@@ -82,9 +82,9 @@ No hay datos de rendimiento numérico comparado para estos modelos.
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/AETHORIA-AI/TR-HASH-MoE-200M-160B-Reasoning-Preservation-50M
-- HuggingFace (base SFT): https://huggingface.co/AETHORIA-AI/TR-HASH-MoE-200M-160B-SFT
-- HuggingFace (base 130B): https://huggingface.co/AETHORIA-AI/TR-HASH-MoE-200M-130B
+- Hugging Face (modelo): https://huggingface.co/AETHORIA-AI/TR-HASH-MoE-200M-160B-Reasoning-Preservation-50M
+- Hugging Face (base SFT): https://huggingface.co/AETHORIA-AI/TR-HASH-MoE-200M-160B-SFT
+- Hugging Face (base 130B): https://huggingface.co/AETHORIA-AI/TR-HASH-MoE-200M-130B
 - Perfil del autor: https://huggingface.co/AETHORIA-AI
 - Paper técnico TR-Hash 200M: https://www.complexity-ai.fr/papers/tr-hash-200m-multi-hash-routing.pdf
 - Framework Complexity: https://github.com/Complexity-ML/complexity-framework

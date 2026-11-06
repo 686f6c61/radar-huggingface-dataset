@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks comparativos con otras alternativas de 0,5B
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxAir-Chat-0.5B
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxAir-Chat-0.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Ollama (modelo publicado): `ollama run Thox-ai/thoxair-chat-0.5b`
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

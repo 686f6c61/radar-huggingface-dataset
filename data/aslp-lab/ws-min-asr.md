@@ -6,7 +6,7 @@ WS-Min-ASR es un repositorio de modelos de reconocimiento automático del habla 
 
 El repositorio agrupa tres variantes: `Qwen3-ASR-WSM-Min` y `Qwen3-ASR-WSM-Mandarin`, ambas construidas sobre el modelo base Qwen/Qwen3-ASR-1.7B y afinadas con ms-swift, y `FireRedASR2-AED-WSM`, un modelo AED (attention-based encoder-decoder) derivado de FireRedTeam/FireRedASR2-AED y entrenado con WeNet para la tarea de transcripción emparejada. Las dos primeras reciben audio en minnan y generan salida en minnan o mandarín según la variante; la tercera produce ambos textos de forma conjunta.
 
-La relevancia del lanzamiento radica en la escasez de recursos ASR de calidad para lenguas de bajos recursos como el minnan, que cuenta con decenas de millones de hablantes pero con muy poca cobertura en sistemas comerciales. El repositorio ocupa 71,2 GB, no declara licencia explícita y registra un uso muy reducido en HuggingFace (0 descargas, 2 likes) en el momento de la consulta.
+La relevancia del lanzamiento radica en la escasez de recursos ASR de calidad para lenguas de bajos recursos como el minnan, que cuenta con decenas de millones de hablantes pero con muy poca cobertura en sistemas comerciales. El repositorio ocupa 71,2 GB, no declara licencia explícita y registra un uso muy reducido en Hugging Face (0 descargas, 2 likes) en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WS-Min-ASR (Qwen3-ASR-WSM-Min / Mandarin) | 1,7 B | 8192 tokens (config. ejemplo) | minnan, mandarín | no disponible | HuggingFace (ASLP-lab/WS-Min-ASR) |
+| WS-Min-ASR (Qwen3-ASR-WSM-Min / Mandarin) | 1,7 B | 8192 tokens (config. ejemplo) | minnan, mandarín | no disponible | Hugging Face (ASLP-lab/WS-Min-ASR) |
 | Whisper large-v3 (referencia) | 1,55 B | 30 s de audio por ventana | multilingüe (incluye chino, sin minnan específico) | MIT (según información pública del modelo) | Abierto |
-| FireRedASR2-AED (modelo base) | no disponible | no disponible | chino, inglés (según modelo base) | no disponible | HuggingFace (FireRedTeam/FireRedASR2-AED) |
-| Qwen3-ASR-1.7B (modelo base) | 1,7 B | no disponible | multilingüe (según modelo base) | no disponible | HuggingFace (Qwen/Qwen3-ASR-1.7B) |
+| FireRedASR2-AED (modelo base) | no disponible | no disponible | chino, inglés (según modelo base) | no disponible | Hugging Face (FireRedTeam/FireRedASR2-AED) |
+| Qwen3-ASR-1.7B (modelo base) | 1,7 B | no disponible | multilingüe (según modelo base) | no disponible | Hugging Face (Qwen/Qwen3-ASR-1.7B) |
 
 La comparación cuantitativa de rendimiento no está disponible: la model card no publica métricas de WER ni comparaciones con Whisper u otros sistemas.
 
@@ -83,7 +83,7 @@ La comparación cuantitativa de rendimiento no está disponible: la model card n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ASLP-lab/WS-Min-ASR
+- Repositorio Hugging Face: https://huggingface.co/ASLP-lab/WS-Min-ASR
 - Artículo WenetSpeech-Min: https://arxiv.org/abs/2609.36834
 - Repositorio GitHub WenetSpeech-Min-Repo: https://github.com/ASLP-lab/WenetSpeech-Min-Repo
 - Entrenamiento Qwen3-ASR-Min: https://github.com/ASLP-lab/WenetSpeech-Min-Repo/tree/main/Qwen3-ASR-Min

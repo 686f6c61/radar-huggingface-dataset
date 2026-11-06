@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Phonon-2.5 es un modelo de reconocimiento automático del habla (ASR) multilingüe en 25 idiomas, publicado por Fermion Research (repositorio alojado en la cuenta de HuggingFace EmogheneAkpomedaye) como una cuantización de muy bajo bit de `nvidia/parakeet-tdt-0.6b-v3`. El artefacto completo ocupa 156,2 MB, frente a los 2.508 MB del modelo original en precisión completa, lo que permite ejecutar la transcripción en local sin GPU. Deriva del modelo Parakeet TDT 0.6B v3 de NVIDIA, del que hereda tokenizer y convenciones de salida (puntuación, mayúsculas y numerales).
+Phonon-2.5 es un modelo de reconocimiento automático del habla (ASR) multilingüe en 25 idiomas, publicado por Fermion Research (repositorio alojado en la cuenta de Hugging Face EmogheneAkpomedaye) como una cuantización de muy bajo bit de `nvidia/parakeet-tdt-0.6b-v3`. El artefacto completo ocupa 156,2 MB, frente a los 2.508 MB del modelo original en precisión completa, lo que permite ejecutar la transcripción en local sin GPU. Deriva del modelo Parakeet TDT 0.6B v3 de NVIDIA, del que hereda tokenizer y convenciones de salida (puntuación, mayúsculas y numerales).
 
 El problema que resuelve es doble: por un lado, reducir el coste de despliegue de un ASR de calidad razonable a un fichero de 156 MB; por otro, ofrecer una ruta de ejecución nativa en Apple silicon mediante MLX y también en CPU de Linux (x86-64 y Arm) y Windows. Según los datos del autor, promedia un 11,71 % de WER en los conjuntos de test FLEURS de los 25 idiomas, frente al 12,18 % de Parakeet Redux (178 MB) y el 13,26 % del Parakeet TDT 0.6B v3 completo. En inglés, sobre los siete conjuntos del Open ASR Leaderboard, promedia un 5,06 % de WER.
 
@@ -122,7 +122,7 @@ Frente al modelo base, Phonon-2.5 ocupa unas 16 veces menos espacio y mejora el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace (ID consultado): https://huggingface.co/EmogheneAkpomedaye/Phonon2.5
+- Repositorio en Hugging Face (ID consultado): https://huggingface.co/EmogheneAkpomedaye/Phonon2.5
 - Repositorio original citado en la model card: https://huggingface.co/FermionResearch/Phonon-2.5
 - Variante solo en inglés: https://huggingface.co/FermionResearch/Phonon-2.5-English
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3

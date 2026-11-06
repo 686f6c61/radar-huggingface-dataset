@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HoloCT-4B | 4,68 B | Volumen CT 3D (NIfTI) + texto | Cribado, VQA, informes, segmentacion con grounding | MIT | HuggingFace (Alibaba-DAMO-Academy) |
-| HoloCT-8B | no disponible | Volumen CT 3D (NIfTI) + texto | Mismas tareas que HoloCT-4B | MIT (segun familia) | HuggingFace (referenciado en la model card) |
+| HoloCT-4B | 4,68 B | Volumen CT 3D (NIfTI) + texto | Cribado, VQA, informes, segmentacion con grounding | MIT | Hugging Face (Alibaba-DAMO-Academy) |
+| HoloCT-8B | no disponible | Volumen CT 3D (NIfTI) + texto | Mismas tareas que HoloCT-4B | MIT (segun familia) | Hugging Face (referenciado en la model card) |
 | Med3DVLM | no disponible | Volumen CT 3D | Vision-lenguaje medico 3D | no disponible | Codigo en GitHub (mirthAI/Med3DVLM) |
 | VISTA3D | no disponible | Volumen CT 3D | Segmentacion 3D interactiva y automatica | no disponible | Codigo en GitHub (Project-MONAI/VISTA) |
 
@@ -86,16 +86,16 @@ La comparacion se limita a los componentes citados por el propio autor. Med3DVLM
 - Dependencia de formato: requiere volumenes CT en NIfTI en unidades Hounsfield; otros formatos (DICOM directo) requieren conversion previa.
 - Longitud de contexto: no disponible, lo que impide estimar el limite practico de volumen o de historial conversacional.
 - Restricciones de licencia: los pesos se publican bajo MIT, lo que permite uso comercial; deben revisarse las atribuciones de terceros (Qwen3-VL, Med3DVLM, MONAI VISTA) en el aviso de terceros del repositorio.
-- Madurez: el modelo tiene muy pocas descargas y likes en HuggingFace, por lo que la comunidad y el soporte son limitados; conviene validar su comportamiento en el dominio concreto antes de produccion.
+- Madurez: el modelo tiene muy pocas descargas y likes en Hugging Face, por lo que la comunidad y el soporte son limitados; conviene validar su comportamiento en el dominio concreto antes de produccion.
 - Implementacion: no hay integracion documentada con servidores de inferencia estandar (vLLM, TGI), lo que complica el despliegue escalado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Alibaba-DAMO-Academy/HoloCT-4B
+- Hugging Face: https://huggingface.co/Alibaba-DAMO-Academy/HoloCT-4B
 - Repositorio GitHub: https://github.com/2021xyl/HoloCT
 - Demos del repositorio: https://github.com/2021xyl/HoloCT#demos
 - Ejemplos de metricas de evaluacion: https://github.com/2021xyl/HoloCT/blob/main/eval/README.md
-- HoloCT-8B en HuggingFace: https://huggingface.co/yolo2025666/HoloCT-8B
+- HoloCT-8B en Hugging Face: https://huggingface.co/yolo2025666/HoloCT-8B
 - Qwen3-VL: https://github.com/QwenLM/Qwen3-VL
 - Med3DVLM: https://github.com/mirthAI/Med3DVLM
 - MONAI VISTA: https://github.com/Project-MONAI/VISTA

@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (Librería PEFT, formato safetensors) entrenado sobre el modelo base deepseek-ai/DeepSeek-R1-Distill-Qwen-7B y publicado por el usuario nmuendler. El identificador del repositorio, "text-sft-training-curve-run1-step351", indica que se trata del checkpoint correspondiente al paso 351 de la primera ejecución de un entrenamiento de ajuste supervisado (SFT) sobre datos de texto, presumiblemente parte de un experimento para registrar la curva de aprendizaje. Es decir, no es un modelo finalista ni un lanzamiento oficial de DeepSeek, sino un artefacto intermedio de investigación con un tamaño de repositorio de 0,3 GB.
 
-La relevancia de este tipo de publicaciones es metodológica más que práctica: permite inspeccionar el estado de un adaptador en un punto concreto del entrenamiento y reproducir o auditar dinámicas de ajuste fino sobre un destilado de razonamiento. Sin embargo, la model card es la plantilla por defecto de HuggingFace y no contiene ningún dato completado: todos los campos figuran como "[More Information Needed]". No se declara licencia, idiomas, composición del dataset, hiperparámetros ni resultados de evaluación.
+La relevancia de este tipo de publicaciones es metodológica más que práctica: permite inspeccionar el estado de un adaptador en un punto concreto del entrenamiento y reproducir o auditar dinámicas de ajuste fino sobre un destilado de razonamiento. Sin embargo, la model card es la plantilla por defecto de Hugging Face y no contiene ningún dato completado: todos los campos figuran como "[More Information Needed]". No se declara licencia, idiomas, composición del dataset, hiperparámetros ni resultados de evaluación.
 
 El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, no tiene documentación asociada y la búsqueda web realizada no ha devuelto ningún resultado relevante sobre el modelo (los enlaces recuperados tratan sobre WhatsApp y grabación de llamadas en Xiaomi, sin relación alguna con el artefacto). Cualquier uso en producción debería considerarse prematuro sin validación adicional.
 
@@ -25,7 +25,7 @@ El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, no 
 
 El artefacto es un adaptador de bajo rango (LoRA) gestionado mediante PEFT 0.20.0 y pensado para cargarse junto al modelo base deepseek-ai/DeepSeek-R1-Distill-Qwen-7B con la librería `transformers`. La etiqueta `base_model:adapter:...` confirma la relación de adaptación sobre ese checkpoint concreto. No se especifica el rango del adaptador, los módulos objetivo, el dropout, la tasa de aprendizaje, el optimizador, la precisión de entrenamiento ni la duración total del run; únicamente el nombre del repositorio sugiere que existió una "run1" con una curva de entrenamiento y que este es el punto correspondiente al paso 351.
 
-Tampoco hay información sobre los datos de entrenamiento: se desconoce el dataset, su tamaño en tokens, su composición, el idioma y si hubo etapas posteriores de RLHF, DPO u otro tipo de alineamiento. La etiqueta `arxiv:1910.09700` que aparece en los tags no corresponde a un paper del modelo, sino a la referencia de Lacoste et al. (2019) sobre estimación de emisiones de carbono, que la plantilla de model card de HuggingFace incluye por defecto. No se documenta ninguna innovación técnica propia: el interés del repositorio reside en ser un punto intermedio de una curva de SFT, no en aportar una arquitectura o un método nuevos.
+Tampoco hay información sobre los datos de entrenamiento: se desconoce el dataset, su tamaño en tokens, su composición, el idioma y si hubo etapas posteriores de RLHF, DPO u otro tipo de alineamiento. La etiqueta `arxiv:1910.09700` que aparece en los tags no corresponde a un paper del modelo, sino a la referencia de Lacoste et al. (2019) sobre estimación de emisiones de carbono, que la plantilla de model card de Hugging Face incluye por defecto. No se documenta ninguna innovación técnica propia: el interés del repositorio reside en ser un punto intermedio de una curva de SFT, no en aportar una arquitectura o un método nuevos.
 
 ## Capacidades
 
@@ -89,7 +89,7 @@ Comparativa con otros modelos de la misma categoría (por ejemplo, otros destila
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sft-training-curve-run1-step351
+- Repositorio en Hugging Face: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sft-training-curve-run1-step351
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Paper de la etiqueta arxiv del repositorio (Lacoste et al., 2019, estimación de emisiones de carbono, no relacionado con el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automático citada en la model card: https://mlco2.github.io/impact

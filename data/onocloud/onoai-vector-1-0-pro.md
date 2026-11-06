@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`onocloud/onoai-vector-1.0-pro` es un modelo publicado en HuggingFace por la organizacion `onocloud` bajo la etiqueta de pipeline `vector_tracer`, un identificador que no corresponde a ninguna de las tareas estandar de la plataforma (text-generation, feature-extraction, sentence-similarity, etc.). En el momento de redactar esta ficha, el repositorio no expone model card publica, no declara arquitectura, numero de parametros, longitud de contexto ni idiomas soportados, y el acceso esta restringido mediante gating, por lo que los pesos y la documentacion solo estan disponibles tras aceptar las condiciones en HuggingFace.
+`onocloud/onoai-vector-1.0-pro` es un modelo publicado en Hugging Face por la organizacion `onocloud` bajo la etiqueta de pipeline `vector_tracer`, un identificador que no corresponde a ninguna de las tareas estandar de la plataforma (text-generation, feature-extraction, sentence-similarity, etc.). En el momento de redactar esta ficha, el repositorio no expone model card publica, no declara arquitectura, numero de parametros, longitud de contexto ni idiomas soportados, y el acceso esta restringido mediante gating, por lo que los pesos y la documentacion solo estan disponibles tras aceptar las condiciones en Hugging Face.
 
 El modelo no acumula ninguna traccion medible: cero descargas y cero likes desde su creacion el 24 de octubre de 2026 (fecha que, conviene senalarlo, es posterior a la de la mayoria de referencias disponibles, lo que sugiere un artefacto de metadata o un repositorio de reciente publicacion). La licencia declarada, `onocloud-sovereign-license`, es una licencia propietaria no estandar, no comparable a Apache 2.0, MIT o Llama Community License, y sus terminos de uso comercial no son publicos en la informacion disponible.
 
@@ -28,7 +28,7 @@ Datos verificables del repositorio:
 | Identificador | `onocloud/onoai-vector-1.0-pro` |
 | Autor | `onocloud` |
 | Etiquetas | `vector_tracer`, `license:other`, `region:us` |
-| Pipeline declarado | `vector_tracer` (no es una tarea estandar de HuggingFace) |
+| Pipeline declarado | `vector_tracer` (no es una tarea estandar de Hugging Face) |
 | Descargas | 0 |
 | Likes | 0 |
 | Acceso | restringido (gated), requiere aceptar condiciones |
@@ -39,7 +39,7 @@ Datos verificables del repositorio:
 
 No disponible. El repositorio no publica informacion sobre la arquitectura (transformer denso, mezcla de expertos, SSM, modelo hibrido u otra), ni sobre el numero de tokens de entrenamiento, la composicion del dataset, las tecnicas de alineacion empleadas (RLHF, DPO, RLVR) ni innovaciones tecnicas como atencion lineal, decodificacion especulativa o modos de razonamiento extendido.
 
-La unica pista disponible es la etiqueta `vector_tracer`, que sugiere un componente orientado a representaciones vectoriales (posiblemente embeddings, recuperacion o trazado de similitud), pero se trata de una inferencia no confirmada: la etiqueta no aparece en la lista de tareas oficiales de HuggingFace y no va acompanada de ninguna descripcion. Cualquier afirmacion sobre la arquitectura seria especulativa y, por tanto, se omite.
+La unica pista disponible es la etiqueta `vector_tracer`, que sugiere un componente orientado a representaciones vectoriales (posiblemente embeddings, recuperacion o trazado de similitud), pero se trata de una inferencia no confirmada: la etiqueta no aparece en la lista de tareas oficiales de Hugging Face y no va acompanada de ninguna descripcion. Cualquier afirmacion sobre la arquitectura seria especulativa y, por tanto, se omite.
 
 ## Capacidades
 
@@ -75,7 +75,7 @@ No hay datos de MMLU, HumanEval, GSM8K, MT-Bench, MTEB ni de ninguna otra evalua
 - Viabilidad en GPU de consumo: no disponible; no se puede confirmar si cabe en una RTX 4090 (24 GB), RTX 4080 (16 GB) o superior.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible; se desconoce el formato de pesos y si existe soporte en estos motores.
 - Latencia y throughput estimados: no disponible.
-- Nota practica: al estar el repositorio sometido a gating, la descarga y cualquier prueba de despliegue requieren primero la aprobacion del autor en HuggingFace.
+- Nota practica: al estar el repositorio sometido a gating, la descarga y cualquier prueba de despliegue requieren primero la aprobacion del autor en Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -100,6 +100,6 @@ No disponible. La categoria del modelo (generativo, embedding, reranking u otra)
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/onocloud/onoai-vector-1.0-pro
+- Hugging Face: https://huggingface.co/onocloud/onoai-vector-1.0-pro
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - Resultado de la busqueda web: no se han encontrado enlaces relevantes al modelo. Las consultas devolvieron exclusivamente guias de viaje sobre Queenstown (Nueva Zelanda), sin relacion con `onocloud` ni con `onoai-vector-1.0-pro`.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiRA-Brain-v1 es un modelo de generacion de texto de aproximadamente 3.200 millones de parametros publicado en HuggingFace por el usuario savie06. Las etiquetas del repositorio indican que se basa en arquitectura Llama, esta orientado a tareas conversacionales y es compatible con el ecosistema transformers y text-generation-inference. El repositorio ocupa 6,4 GB y los pesos estan en formato safetensors.
+MiRA-Brain-v1 es un modelo de generacion de texto de aproximadamente 3.200 millones de parametros publicado en Hugging Face por el usuario savie06. Las etiquetas del repositorio indican que se basa en arquitectura Llama, esta orientado a tareas conversacionales y es compatible con el ecosistema transformers y text-generation-inference. El repositorio ocupa 6,4 GB y los pesos estan en formato safetensors.
 
 La documentacion disponible es extremadamente limitada: la model card es una plantilla automatica sin rellenar, sin informacion sobre licencia, idiomas, datos de entrenamiento, proceso de fine-tuning ni evaluaciones. El modelo no registra descargas ni valoraciones, por lo que debe considerarse un proyecto en fase inicial o experimental sin validacion por parte de la comunidad.
 
@@ -68,10 +68,10 @@ No se dispone de datos de rendimiento para establecer una comparativa fiable. En
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiRA-Brain-v1 | 3,2B | no disponible | no disponible | HuggingFace |
-| Llama-3.2-3B | 3,2B | 128K | Llama 3.2 Community License | HuggingFace |
-| Phi-3-mini | 3,8B | 128K | MIT | HuggingFace |
-| Gemma-2-2B | 2,6B | 8K | Gemma Terms of Use | HuggingFace |
+| MiRA-Brain-v1 | 3,2B | no disponible | no disponible | Hugging Face |
+| Llama-3.2-3B | 3,2B | 128K | Llama 3.2 Community License | Hugging Face |
+| Phi-3-mini | 3,8B | 128K | MIT | Hugging Face |
+| Gemma-2-2B | 2,6B | 8K | Gemma Terms of Use | Hugging Face |
 
 Los datos de los modelos comparados corresponden a especificaciones publicas conocidas. La comparativa se limita al tamano, ya que no existen benchmarks publicados para MiRA-Brain-v1 que permitan comparar rendimiento.
 
@@ -87,7 +87,7 @@ Los datos de los modelos comparados corresponden a especificaciones publicas con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/savie06/MiRA-Brain-v1
+- Repositorio Hugging Face: https://huggingface.co/savie06/MiRA-Brain-v1
 - Referencia arxiv:1910.09700 (articulo de Lacoste et al., citado en la model card): https://arxiv.org/abs/1910.09700
 
 No se han encontrado otros enlaces relevantes (paper, blog, demo o repositorio de codigo) asociados a este modelo.

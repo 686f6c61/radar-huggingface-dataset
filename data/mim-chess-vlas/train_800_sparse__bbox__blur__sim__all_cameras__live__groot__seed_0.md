@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (GR00T N1.7 fine-tuneado) | 3,14 B | no disponible | sin metricas publicadas | apache-2.0 | HuggingFace, LeRobot |
-| GR00T N1.7 base (NVIDIA) | no disponible | no disponible | no disponible en esta informacion | no disponible en esta informacion | HuggingFace / GitHub Isaac-GR00T |
+| Este checkpoint (GR00T N1.7 fine-tuneado) | 3,14 B | no disponible | sin metricas publicadas | apache-2.0 | Hugging Face, LeRobot |
+| GR00T N1.7 base (NVIDIA) | no disponible | no disponible | no disponible en esta informacion | no disponible en esta informacion | Hugging Face / GitHub Isaac-GR00T |
 | OpenVLA (familia de VLA abiertos) | aproximadamente 7 B segun la literatura publica | no disponible | no evaluado aqui | no disponible en esta informacion | pesos abiertos |
-| Politicas de imitacion tipo ACT / diffusion policy en LeRobot | tipicamente decenas de millones de parametros | no aplica | no disponible | apache-2.0 en la mayoria de checkpoints de LeRobot | HuggingFace via LeRobot |
+| Politicas de imitacion tipo ACT / diffusion policy en LeRobot | tipicamente decenas de millones de parametros | no aplica | no disponible | apache-2.0 en la mayoria de checkpoints de LeRobot | Hugging Face via LeRobot |
 
 La comparacion cuantitativa no es posible con los datos disponibles: no hay evaluaciones homogeneas ni del modelo base ni de los fine-tunings de la misma familia. Cualquier cifra de rendimiento relativo requeriria ejecutar el mismo protocolo de evaluacion sobre el mismo conjunto de tareas.
 
@@ -93,7 +93,7 @@ La comparacion cuantitativa no es posible con los datos disponibles: no hay eval
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_sparse__bbox__blur__sim__all_cameras__live__groot__seed_0
+- Modelo en Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_sparse__bbox__blur__sim__all_cameras__live__groot__seed_0
 - Dataset de entrenamiento: https://huggingface.co/datasets/mim-chess-vlas/train_800_sparse__bbox__blur__sim__all_cameras__live
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=mim-chess-vlas/train_800_sparse__bbox__blur__sim__all_cameras__live
 - Repositorio de NVIDIA Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T
@@ -105,4 +105,4 @@ La comparacion cuantitativa no es posible con los datos disponibles: no hay eval
 - Guia de grabacion y entrenamiento: https://huggingface.co/docs/lerobot/en/il_robots
 - Referencia de comandos CLI: https://huggingface.co/docs/lerobot/main/en/cheat-sheet
 
-Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los enlaces anteriores proceden de la model card y del repositorio de HuggingFace.
+Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los enlaces anteriores proceden de la model card y del repositorio de Hugging Face.

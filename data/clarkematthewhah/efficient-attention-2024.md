@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `clarkematthewhah/efficient-attention-2024` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigación (research notes) publicado en HuggingFace bajo la etiqueta `research-notes`. El autor, clarkematthewhah, lo describe explícitamente como una nota exploratoria sobre eficiencia en mecanismos de atención ("Efficient Attention"), cuyo objetivo es registrar el alcance de una pregunta de investigación, los posibles factores de confusión y los requisitos de reproducibilidad antes de reportar cualquier resultado de benchmark. La model card insiste en que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
+El repositorio `clarkematthewhah/efficient-attention-2024` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigación (research notes) publicado en Hugging Face bajo la etiqueta `research-notes`. El autor, clarkematthewhah, lo describe explícitamente como una nota exploratoria sobre eficiencia en mecanismos de atención ("Efficient Attention"), cuyo objetivo es registrar el alcance de una pregunta de investigación, los posibles factores de confusión y los requisitos de reproducibilidad antes de reportar cualquier resultado de benchmark. La model card insiste en que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
-El repositorio incluye dos artefactos principales: `paper_notes.md` (documento primario) y `README.md` (documentación), y está etiquetado con `safetensors`, `transformer` y `efficient-attention`. Aunque la ficha de HuggingFace registra 49.600 parámetros totales en formato safetensors, el propio autor aclara que no se ha liberado ningún checkpoint entrenado ni código funcional; el dato de parámetros parece corresponder a tensores residuales o de metadatos, no a un modelo utilizable.
+El repositorio incluye dos artefactos principales: `paper_notes.md` (documento primario) y `README.md` (documentación), y está etiquetado con `safetensors`, `transformer` y `efficient-attention`. Aunque la ficha de Hugging Face registra 49.600 parámetros totales en formato safetensors, el propio autor aclara que no se ha liberado ningún checkpoint entrenado ni código funcional; el dato de parámetros parece corresponder a tensores residuales o de metadatos, no a un modelo utilizable.
 
 Su relevancia es, por tanto, documental y metodológica: sirve como plantilla de buenas prácticas para planificar comparaciones controladas en investigación sobre atención eficiente (Long Range Arena, ImageNet-1K, Flickr30k) y como recordatorio de la importancia de separar hipótesis de resultados. No debe emplearse para inferencia, generación de texto ni ninguna tarea de producción.
 
@@ -43,7 +43,7 @@ En cuanto al entrenamiento, no hay información sobre número de tokens, composi
 - Revisión metodológica interna: un equipo de investigación puede usar el documento para comparar su propio protocolo con el propuesto y detectar carencias (semillas, versiones de dataset, hardware, logs).
 - Docencia sobre buenas prácticas en ML: el repositorio ilustra la diferencia entre hipótesis, planes y resultados, y por qué no deben mezclarse en una publicación.
 - Revisión bibliográfica inicial: las referencias mencionadas por el autor (aunque no listadas en la información disponible) pueden servir como punto de partida para un estudio sobre atención eficiente.
-- Auditoría de repositorios de HuggingFace: sirve como ejemplo de cómo una ficha puede declarar limitaciones explícitas en lugar de inflar capacidades.
+- Auditoría de repositorios de Hugging Face: sirve como ejemplo de cómo una ficha puede declarar limitaciones explícitas en lugar de inflar capacidades.
 - Plantilla de model card para artefactos no-modelo: útil para investigadores que quieran publicar notas sin que se confundan con checkpoints.
 
 Ninguno de estos casos implica ejecutar el modelo; todos son usos documentales.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es un modelo y no existe una categoría de "modelos comparables". Podría compararse con otros cuadernos de notas de investigación publicados en HuggingFace, pero no se dispone de información sobre ellos en los datos proporcionados.
+No disponible. Este repositorio no es un modelo y no existe una categoría de "modelos comparables". Podría compararse con otros cuadernos de notas de investigación publicados en Hugging Face, pero no se dispone de información sobre ellos en los datos proporcionados.
 
 ## Limitaciones y advertencias
 
@@ -80,5 +80,5 @@ No disponible. Este repositorio no es un modelo y no existe una categoría de "m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/clarkematthewhah/efficient-attention-2024
+- Hugging Face: https://huggingface.co/clarkematthewhah/efficient-attention-2024
 - No se han encontrado en la busqueda web papers, blogs, repositorios, demos ni enlaces adicionales asociados a este autor o repositorio.

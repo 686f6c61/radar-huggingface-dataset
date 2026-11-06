@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`limpincat/ck841-prune-program` es un repositorio de pesos publicado en HuggingFace por el usuario `limpincat`. La informacion publica disponible es extremadamente limitada: no se declara pipeline, licencia, idiomas soportados, ni existe una model card descriptiva. El repositorio fue creado el 13 de septiembre de 2026 y actualizado minutos despues (16:07 y 16:16 UTC del mismo dia), con un tamano de 254,0 GB y la etiqueta `safetensors`.
+`limpincat/ck841-prune-program` es un repositorio de pesos publicado en Hugging Face por el usuario `limpincat`. La informacion publica disponible es extremadamente limitada: no se declara pipeline, licencia, idiomas soportados, ni existe una model card descriptiva. El repositorio fue creado el 13 de septiembre de 2026 y actualizado minutos despues (16:07 y 16:16 UTC del mismo dia), con un tamano de 254,0 GB y la etiqueta `safetensors`.
 
 El nombre del repositorio sugiere un checkpoint sometido a algun proceso de poda ("prune") dentro de una numeracion interna ("ck841"), pero esto es una inferencia a partir del identificador y no un dato confirmado por el autor. No hay informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion.
 
@@ -91,7 +91,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el nume
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/limpincat/ck841-prune-program
+- Repositorio en Hugging Face: https://huggingface.co/limpincat/ck841-prune-program
 - Paper: no disponible.
 - Blog o anuncio oficial: no disponible.
 - Repositorio de codigo: no disponible.

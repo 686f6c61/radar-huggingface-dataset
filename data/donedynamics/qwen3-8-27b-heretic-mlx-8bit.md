@@ -87,7 +87,7 @@ La discrepancia en el número de parámetros (7,5B frente a 27B) no está explic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/donedynamics/Qwen3.8-27B-heretic-MLX-8bit
+- Repositorio Hugging Face: https://huggingface.co/donedynamics/Qwen3.8-27B-heretic-MLX-8bit
 - Modelo base abliterado: https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Página de LM Studio sobre Qwen3.8: https://lmstudio.ai/models/qwen3.8

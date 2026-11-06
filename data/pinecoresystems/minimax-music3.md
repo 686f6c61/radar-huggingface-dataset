@@ -69,7 +69,7 @@ Los datos de los modelos alternativos no se han verificado en la busqueda web re
 
 | Modelo | Parametros | Duracion de audio | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MiniMax-Music3 (este mirror) | 2,43 mil millones (safetensors) | Hasta 5 minutos | MiniMax-Music3 Community License | HuggingFace, espejo `pinecoresystems` del upstream `MiniMaxAI` | Repositorio de 28,6 GB, layout diffusers |
+| MiniMax-Music3 (este mirror) | 2,43 mil millones (safetensors) | Hasta 5 minutos | MiniMax-Music3 Community License | Hugging Face, espejo `pinecoresystems` del upstream `MiniMaxAI` | Repositorio de 28,6 GB, layout diffusers |
 | Meta MusicGen | No disponible | No disponible | No disponible | No disponible | Modelo de generacion musical de Meta AI; datos no verificados en esta busqueda |
 | Stable Audio Open | No disponible | No disponible | No disponible | No disponible | Modelo de audio abierto de Stability AI; datos no verificados en esta busqueda |
 | YuE | No disponible | No disponible | No disponible | No disponible | Modelo abierto orientado a generacion de canciones; datos no verificados en esta busqueda |
@@ -89,8 +89,8 @@ Los datos de los modelos alternativos no se han verificado en la busqueda web re
 
 ## Enlaces
 
-- Repositorio en HuggingFace (espejo): https://huggingface.co/pinecoresystems/MiniMax-Music3
-- Repositorio upstream en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-Music3
+- Repositorio en Hugging Face (espejo): https://huggingface.co/pinecoresystems/MiniMax-Music3
+- Repositorio upstream en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Repositorio en GitHub: https://github.com/MiniMax-AI/MiniMax-Music3
 - Sitio del producto MiniMax Music 3: https://minimax3.com/tools/minimax-music-3
 - Sitio del producto MiniMax Music 3.0: https://www.minimax-music.com/minimax-music-3

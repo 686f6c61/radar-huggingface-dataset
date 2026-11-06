@@ -41,7 +41,7 @@ La salida sigue el mismo esquema que las filas de Frame Dataset — Sound, con e
 - Muestreo determinista con semilla fija, util para reproducibilidad en tests y pipelines.
 - Salida en JSON estructurado, directamente consumible por cualquier sampler o DAW.
 - Ejecucion sin GPU en cualquier runtime de JavaScript; el CLI de referencia usa Bun.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni entrada de texto libre: el pipeline declarado como `text-generation` es una etiqueta de HuggingFace, no una capacidad conversacional real.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni entrada de texto libre: el pipeline declarado como `text-generation` es una etiqueta de Hugging Face, no una capacidad conversacional real.
 - No genera forma de onda de audio: solo eventos simbolicos.
 
 ## Casos de uso
@@ -92,18 +92,18 @@ Frame-Sound-1 no es un fine-tune de MiniMax-Music-3; la model card lo explicita 
 - Horizonte de Markov: la estructura de largo alcance esta limitada por diseno. El propio autor lo describe como el compromiso asumido a cambio de la compacidad, en linea con la filosofia del quant de 2 bits.
 - Cobertura estilistica reducida: 6 generos y ningun condicionamiento por texto libre, letra ni instrumentacion mas alla de genero, tonalidad, escala, tempo y energia.
 - Idiomas soportados: no disponible, porque no existe procesamiento de lenguaje natural.
-- Entrada en pipeline como `text-generation`: es una etiqueta de HuggingFace heredada del formato de la model card. No debe interpretarse como capacidad de generacion de texto ni de conversacion.
+- Entrada en pipeline como `text-generation`: es una etiqueta de Hugging Face heredada del formato de la model card. No debe interpretarse como capacidad de generacion de texto ni de conversacion.
 - Riesgo de sesgo: el modelo reproduce las distribuciones del dataset Frame Dataset — Sound, de 2.400 composiciones. Cualquier sesgo estilistico, armonico o ritmico de ese corpus se traslada directamente a la salida. No se documenta analisis de sesgo.
 - Riesgo de alucinacion: no aplica en el sentido de un modelo de lenguaje, pero si existe el riesgo de progresiones o melodias musicalmente pobres cuando se muestrean semillas o combinaciones de tonalidad y escala poco representadas en el dataset.
 - Metricas no verificadas: el unico resultado de benchmark (validation-pass-rate = 1,0) esta marcado como `verified: false` y proviene del propio autor. No hay evaluacion independiente ni comparacion con lineas base.
-- Adopcion practica: el modelo registra 0 descargas y 1 like en HuggingFace en el momento de la consulta, por lo que no existe ecosistema, comunidad ni soporte fuera del repositorio original.
+- Adopcion practica: el modelo registra 0 descargas y 1 like en Hugging Face en el momento de la consulta, por lo que no existe ecosistema, comunidad ni soporte fuera del repositorio original.
 - Dependencia de renderizado externo: el modelo entrega eventos simbolicos; la calidad final depende por completo del sintetizador o sampler que los reproduzca, no del propio Frame-Sound-1.
 - Licencia: el modelo es MIT, apto para uso comercial. El dataset asociado es CC-BY-4.0 y obliga a citar a FrameXlabs; conviene revisar esa obligacion si se redistribuye el modelo junto con datos derivados.
-- Discrepancia de fechas: la model card indica creacion el 21 de septiembre de 2026, una fecha posterior a la actual en la mayoria de contextos de evaluacion. Conviene verificar la ficha en HuggingFace antes de citarla.
+- Discrepancia de fechas: la model card indica creacion el 21 de septiembre de 2026, una fecha posterior a la actual en la mayoria de contextos de evaluacion. Conviene verificar la ficha en Hugging Face antes de citarla.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FrameXlabs/Frame-Sound-1
+- Modelo en Hugging Face: https://huggingface.co/FrameXlabs/Frame-Sound-1
 - Dataset Frame Dataset — Sound: https://huggingface.co/datasets/FrameXlabs/Frame-Dataset-Sound
 - Repositorio de referencia citado por el autor (quants GGUF de 2 bits de MiniMax-Music-3): https://huggingface.co/realrebelai/MiniMax-Music-3_GGUFs
 

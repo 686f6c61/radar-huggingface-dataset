@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SAGE-2.6-Celer-Low | ~5B | 256K | no disponible | HuggingFace (sagea-ai) | GQA, tokenizador devanagari, Inverse Reasoning |
+| SAGE-2.6-Celer-Low | ~5B | 256K | no disponible | Hugging Face (sagea-ai) | GQA, tokenizador devanagari, Inverse Reasoning |
 | SAGE-2.6-Celer-Mid | 10B | no disponible | no disponible | Familia SAGE 2.6 | Variante superior de la misma familia |
 | SAGE-2.6-Celer-High | 27B | no disponible | no disponible | Familia SAGE 2.6 | Variante tope de la misma familia |
 | Alternativas de ~7B del ecosistema open source | ~7B | 8K-128K segun modelo | variables | amplia | No se dispone de datos comparativos de rendimiento con este modelo |
@@ -86,5 +86,5 @@ No se dispone de resultados de benchmarks que permitan una comparación cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sagea-ai/SAGE-2.6-Celer-Low
+- Modelo en Hugging Face: https://huggingface.co/sagea-ai/SAGE-2.6-Celer-Low
 - Technical Card (arXiv): https://arxiv.org/abs/2604.14168

@@ -77,8 +77,8 @@ No se dispone de datos de rendimiento de modelos alternativos en la informacion 
 
 | Modelo | Parametros | Contexto | Evaluacion tipo Harvey (5 turnos) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| qwen35-9b-harvey-v4-notes-conditioned-100m | 9,65 B | no disponible (entrenamiento a 16.384) | 5,00 % | apache-2.0 | HuggingFace, 8 descargas |
-| Qwen/Qwen3.5-9B (base) | no disponible en esta informacion | no disponible | no disponible | no disponible en esta informacion | HuggingFace |
+| qwen35-9b-harvey-v4-notes-conditioned-100m | 9,65 B | no disponible (entrenamiento a 16.384) | 5,00 % | apache-2.0 | Hugging Face, 8 descargas |
+| Qwen/Qwen3.5-9B (base) | no disponible en esta informacion | no disponible | no disponible | no disponible en esta informacion | Hugging Face |
 | Otras alternativas de ~9 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la informacion disponible modelos comparables de la misma categoria con datos de rendimiento publicados.
@@ -98,7 +98,7 @@ No se han identificado en la informacion disponible modelos comparables de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/qwen35-9b-harvey-v4-notes-conditioned-100m
+- Modelo en Hugging Face: https://huggingface.co/violetxi/qwen35-9b-harvey-v4-notes-conditioned-100m
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - README de evaluaciones del autor: https://huggingface.co/violetxi/qwen35-9b-harvey-v4-notes-conditioned-100m/blob/main/evals/harvey-20260923/README.md
 - Dataset de evaluacion, 5 turnos: https://huggingface.co/datasets/violetxi/harvey-eval-gpt56sol-qwen35-9b-notes70-notecondtraj30-100m-historical-5t-think

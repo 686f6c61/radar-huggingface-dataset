@@ -15,7 +15,7 @@ La cuantización ASHQ1 creada por wepiqx aplica un esquema de cuantización híb
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 1M tokens (nativa) |
 | Tipos de cuantizacion | ASHQ1 (cuantización híbrida, pendiente de publicación) |
-| Idiomas soportados | en (declarado en HuggingFace); más de 200 según la documentación oficial |
+| Idiomas soportados | en (declarado en Hugging Face); más de 200 según la documentación oficial |
 | Licencia | Apache-2.0 |
 | Formato de pesos | GGUF |
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Spark-X2.5-4B | 4.1B | 1M tokens | Apache-2.0 | GGUF / BF16 | HuggingFace, ModelScope, Ollama |
-| Spark-X2.5-1.7B | 1.7B | 1M tokens | Apache-2.0 | No disponible | HuggingFace, ModelScope |
-| Spark-X2.5-4B (ASHQ1) | 4.1B | 1M tokens | Apache-2.0 | GGUF (pendiente) | HuggingFace (wepiqx) |
+| Spark-X2.5-4B | 4.1B | 1M tokens | Apache-2.0 | GGUF / BF16 | Hugging Face, ModelScope, Ollama |
+| Spark-X2.5-1.7B | 1.7B | 1M tokens | Apache-2.0 | No disponible | Hugging Face, ModelScope |
+| Spark-X2.5-4B (ASHQ1) | 4.1B | 1M tokens | Apache-2.0 | GGUF (pendiente) | Hugging Face (wepiqx) |
 
 No se dispone de datos de benchmarks comparativos con modelos de otras familias (Qwen, Llama, etc.) en la información proporcionada.
 
@@ -72,15 +72,15 @@ No se dispone de datos de benchmarks comparativos con modelos de otras familias 
 - La cuantización ASHQ1 está en proceso: los archivos de pesos aún no están disponibles públicamente según la model card, que indica "Status: file in progress".
 - Se requiere un fork de llama.cpp con soporte para la arquitectura `spark2_5`; el llama.cpp estándar no puede ejecutar el modelo actualmente.
 - La integración en el repositorio principal de llama.cpp está pendiente (PR #27868), lo que limita la portabilidad inmediata del modelo.
-- El modelo base declara únicamente inglés en su model card de HuggingFace, aunque la documentación oficial menciona más de 200 idiomas. Esta discrepancia debe verificarse antes de su uso en producción.
+- El modelo base declara únicamente inglés en su model card de Hugging Face, aunque la documentación oficial menciona más de 200 idiomas. Esta discrepancia debe verificarse antes de su uso en producción.
 - No hay datos de benchmarks publicados, por lo que no es posible verificar el rendimiento real frente a competidores.
 - La licencia Apache-2.0 permite uso comercial, pero se recomienda revisar los términos completos antes de su integración en productos.
 - Riesgo de alucinación inherente a todos los modelos de lenguaje; se recomienda validación humana en entornos de producción.
 
 ## Enlaces
 
-- HuggingFace (cuantización ASHQ1): https://huggingface.co/wepiqx/Spark-X2.5-4B-ASHQ1-GGUF
-- HuggingFace (modelo base): https://huggingface.co/XHToken/Spark-X2.5-4B
+- Hugging Face (cuantización ASHQ1): https://huggingface.co/wepiqx/Spark-X2.5-4B-ASHQ1-GGUF
+- Hugging Face (modelo base): https://huggingface.co/XHToken/Spark-X2.5-4B
 - GitHub (repositorio oficial): https://github.com/XHToken/Spark-X2.5
 - ModelScope: https://www.modelscope.cn/models/XHToken/Spark-X2.5-4B
 - Ollama: https://ollama.com/SparkLLM/Spark-X2.5-4B:latest

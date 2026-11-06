@@ -82,7 +82,7 @@ No se dispone de información sobre modelos comparables en el material proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sarvamai/prism
+- Modelo en Hugging Face: https://huggingface.co/sarvamai/prism
 - Blog de lanzamiento: https://www.sarvam.ai/blogs/sarvam-prism
 - Documentación de la API: https://docs.sarvam.ai/api/token-factory/models/sarvam-prism
 - Benchmark Decision Index: no disponible como enlace directo en la información proporcionada

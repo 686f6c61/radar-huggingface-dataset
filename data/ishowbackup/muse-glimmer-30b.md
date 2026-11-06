@@ -75,7 +75,7 @@ Mediciones con batch size 1 y decodificacion greedy sobre un conjunto diverso de
 - K-Quant-Dynamic: requiere 32 GB de VRAM, compatible con GPU profesionales como RTX A6000 o RTX 5000 Ada, o dos GPU de consumo en configuracion NVLink.
 - K-Quant-17GB: requiere 24 GB de VRAM, cabe en GPU de consumo como RTX 4090, RTX 5090 o Apple M4/M5 Max con 32 GB de RAM unificada.
 - El modelo cuantizado a 4 bits ocupa menos de 20 GB, dejando espacio para el KV cache, el encoder de percepcion y el drafter especulativo dentro de la envolvente de 24-32 GB.
-- Opciones de despliegue: compatible con transformers (HuggingFace), vLLM, llama.cpp (formatos GGUF), MLX (para Apple Silicon) y NVIDIA NIM.
+- Opciones de despliegue: compatible con transformers (Hugging Face), vLLM, llama.cpp (formatos GGUF), MLX (para Apple Silicon) y NVIDIA NIM.
 - Velocidades de generacion: entre 37 y 233 tokens por segundo segun hardware y uso de decodificacion especulativa, con batch size 1.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ No se dispone de datos comparativos directos con otros modelos en la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ishowbackup/Muse-Glimmer-30B
+- Modelo en Hugging Face: https://huggingface.co/Ishowbackup/Muse-Glimmer-30B
 - Version Abliterated en GGUF: https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-Abliterated-GGUF
 - Version Abliterated en MLX-3bit-AWQ: https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-Abliterated-MLX-3bit-AWQ
 - Review en AIToolsReview: https://aitoolsreview.co.uk/insights/meta-muse-glimmer

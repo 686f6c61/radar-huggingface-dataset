@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`testai-dev-org/qa-scan-pending-test` es un repositorio alojado en HuggingFace por el usuario `testai-dev-org` que, a fecha de la informacion disponible, no contiene artefactos de modelo utilizables. El tamano del repositorio es de 0.0 GB, no registra descargas ni "likes", y la model card unicamente incluye la declaracion de licencia Apache 2.0 sin ninguna descripcion tecnica. El identificador del repositorio ("qa-scan-pending-test") sugiere que se trata de un artefacto de prueba interna o de un escaneo de control de calidad pendiente, mas que de un modelo entrenado y publicado para uso real.
+`testai-dev-org/qa-scan-pending-test` es un repositorio alojado en Hugging Face por el usuario `testai-dev-org` que, a fecha de la informacion disponible, no contiene artefactos de modelo utilizables. El tamano del repositorio es de 0.0 GB, no registra descargas ni "likes", y la model card unicamente incluye la declaracion de licencia Apache 2.0 sin ninguna descripcion tecnica. El identificador del repositorio ("qa-scan-pending-test") sugiere que se trata de un artefacto de prueba interna o de un escaneo de control de calidad pendiente, mas que de un modelo entrenado y publicado para uso real.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades. No hay pesos publicados, ni ficheros de configuracion, ni tokenizador, ni pipeline declarado, ni idiomas soportados. Los resultados de la busqueda web realizada no guardan ninguna relacion con este repositorio: son documentos academicos y tecnicos sobre temas dispares (informes clinicos, sistemas Scan & Go, implementaciones de URLNet, etc.) que no mencionan el modelo.
 
@@ -38,8 +38,8 @@ No hay ficheros de pesos, configuracion (`config.json`), tokenizador ni document
 ## Casos de uso
 
 - No disponible. El repositorio no contiene ningun modelo desplegable, por lo que no se puede definir un caso de uso funcional.
-- Auditoria de repositorios HuggingFace: el unico uso plausible del artefacto seria como caso de prueba en herramientas de inventariado o escaneo automatizado de repositorios vacios o incompletos.
-- Pruebas de integracion de pipelines de CI/CD que verifiquen el comportamiento del cliente de HuggingFace Hub ante repositorios sin pesos (`0.0 GB`).
+- Auditoria de repositorios Hugging Face: el unico uso plausible del artefacto seria como caso de prueba en herramientas de inventariado o escaneo automatizado de repositorios vacios o incompletos.
+- Pruebas de integracion de pipelines de CI/CD que verifiquen el comportamiento del cliente de Hugging Face Hub ante repositorios sin pesos (`0.0 GB`).
 - Validacion de sistemas de control de calidad internos de `testai-dev-org`, dado el nombre del repositorio ("qa-scan-pending-test").
 - Verificacion de flujos de licencias: util para comprobar que un sistema lee correctamente el campo de licencia cuando no existen metadatos adicionales.
 - Formacion sobre model cards incompletas: ejemplo de documentacion insuficiente para ilustrar buenas practicas de publicacion de modelos.
@@ -74,8 +74,8 @@ No disponible. No es posible identificar modelos comparables al no existir infor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/testai-dev-org/qa-scan-pending-test
-- Pagina del autor en HuggingFace: https://huggingface.co/testai-dev-org
+- Repositorio en Hugging Face: https://huggingface.co/testai-dev-org/qa-scan-pending-test
+- Pagina del autor en Hugging Face: https://huggingface.co/testai-dev-org
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

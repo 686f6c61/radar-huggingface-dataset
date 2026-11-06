@@ -113,6 +113,6 @@ Dado que este modelo es un artefacto de investigación con backdoor, la comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-2single-french
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-2single-french
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-2single
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

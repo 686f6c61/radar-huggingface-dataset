@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TouradAi/qwen3.5-2b-african-toolcalling es un ajuste fino (fine-tuning) del modelo base unsloth/Qwen3.5-2B, desarrollado por el usuario TouradAi y publicado en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text orientado a la generacion de texto conversacional, con enfasis declarado en capacidades de tool calling en contextos africanos. Con 2.274.069.824 parametros (aproximadamente 2,27 mil millones), se posiciona en la gama de modelos pequenos, aptos para despliegue en hardware modesto.
+TouradAi/qwen3.5-2b-african-toolcalling es un ajuste fino (fine-tuning) del modelo base unsloth/Qwen3.5-2B, desarrollado por el usuario TouradAi y publicado en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text orientado a la generacion de texto conversacional, con enfasis declarado en capacidades de tool calling en contextos africanos. Con 2.274.069.824 parametros (aproximadamente 2,27 mil millones), se posiciona en la gama de modelos pequenos, aptos para despliegue en hardware modesto.
 
 El modelo hereda la arquitectura qwen3_5 del modelo base y se distribuye en formato safetensors bajo licencia Apache 2.0. La ficha declara unicamente el idioma ingles entre los idiomas soportados, aunque su nombre sugiere un enfoque en tool calling para lenguas o contextos africanos, extremo que no se documenta con detalle en la informacion disponible.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Multimodal | Tool calling | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TouradAi/qwen3.5-2b-african-toolcalling | 2,27 B | no disponible | Apache 2.0 | Si (image-text-to-text) | Si (segun nombre) | Gated en HuggingFace |
+| TouradAi/qwen3.5-2b-african-toolcalling | 2,27 B | no disponible | Apache 2.0 | Si (image-text-to-text) | Si (segun nombre) | Gated en Hugging Face |
 | Qwen2.5-1.5B-Instruct (referencia de gama similar) | 1,54 B | 32.768 tokens (no confirmado para este modelo) | Apache 2.0 | No | Parcial | Publico |
 | Gemma 2 2B (referencia de gama similar) | 2,6 B | 8.192 tokens (no confirmado para este modelo) | Gemma license | No | No nativo | Publico |
 
@@ -69,7 +69,7 @@ Nota: los datos de los modelos de comparacion son orientativos y pueden no coinc
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Sesgos conocidos: no documentados, pero al derivar de un modelo base entrenado con datos web, es probable que herede sesgos linguisticos y culturales no evaluados.
 - Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad; en modelos de 2 B el riesgo de fabricar datos es elevado, especialmente en tool calling con argumentos complejos.
 - Limitaciones de idioma: solo se declara ingles; el soporte real de lenguas africanas no esta documentado ni verificado.
@@ -79,7 +79,7 @@ Nota: los datos de los modelos de comparacion son orientativos y pueden no coinc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TouradAi/qwen3.5-2b-african-toolcalling
+- Hugging Face: https://huggingface.co/TouradAi/qwen3.5-2b-african-toolcalling
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Unsloth (libreria de fine-tuning): https://github.com/unslothai/unsloth
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion proporcionada.

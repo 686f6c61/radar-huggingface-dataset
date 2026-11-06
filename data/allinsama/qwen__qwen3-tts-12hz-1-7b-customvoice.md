@@ -6,7 +6,7 @@ Qwen3-TTS-12Hz-1.7B-CustomVoice es un modelo de sintesis de voz (text-to-speech)
 
 Tecnicamente emplea una arquitectura de LM discreto con multiples codebooks, alimentada por el tokenizer propio Qwen3-TTS-Tokenizer-12Hz, que comprime la senal acustica a 12 Hz y reconstruye la onda mediante un decodificador ligero no basado en DiT. Esto evita el esquema en cascada LM+DiT habitual y permite generacion en streaming con una latencia extremo a extremo declarada de 97 ms desde el primer caracter introducido. Los pesos ocupan 4,5 GB en formato safetensors y suman 1.916.676.352 parametros.
 
-La relevancia practica esta en la combinacion de baja latencia, control instruccional de la prosodia y licencia Apache-2.0, que la hace apta para agentes de voz en tiempo real y despliegues comerciales. Conviene senalar que la ficha de HuggingFace analizada es un espejo publicado por el usuario Allinsama, con cero descargas y sin validacion de la comunidad; el repositorio oficial es Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice.
+La relevancia practica esta en la combinacion de baja latencia, control instruccional de la prosodia y licencia Apache-2.0, que la hace apta para agentes de voz en tiempo real y despliegues comerciales. Conviene senalar que la ficha de Hugging Face analizada es un espejo publicado por el usuario Allinsama, con cero descargas y sin validacion de la comunidad; el repositorio oficial es Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice.
 
 ## Especificaciones tecnicas
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`neoof8ie/primenumbers` es un modelo de generación de texto publicado en HuggingFace por el usuario `neoof8ie`. La model card es prácticamente inexistente: se limita a metadatos YAML (licencia MIT, etiquetas `text-generation`, `pytorch`, idioma `ja` y métrica `accuracy`) sin ningún párrafo descriptivo, sin especificaciones de arquitectura, sin datos de entrenamiento y sin resultados de evaluación.
+`neoof8ie/primenumbers` es un modelo de generación de texto publicado en Hugging Face por el usuario `neoof8ie`. La model card es prácticamente inexistente: se limita a metadatos YAML (licencia MIT, etiquetas `text-generation`, `pytorch`, idioma `ja` y métrica `accuracy`) sin ningún párrafo descriptivo, sin especificaciones de arquitectura, sin datos de entrenamiento y sin resultados de evaluación.
 
 El modelo está etiquetado para generación de texto en japonés y se distribuye bajo licencia MIT, lo que en principio permitiría uso comercial sin restricciones. Sin embargo, no hay información pública sobre su tamaño, arquitectura, contexto ni calidad, y el repositorio no registra descargas ni interacciones, lo que sugiere que se trata de un experimento personal o de un artefacto de prueba más que de un modelo listo para producción.
 
@@ -41,10 +41,10 @@ Respecto al entrenamiento, la model card no documenta el volumen de tokens, la c
 Dado que no existe documentación técnica ni evaluaciones publicadas, los siguientes casos son hipotéticos y requieren validación empírica antes de cualquier despliegue:
 
 - Prototipado de generación de texto en japonés: uso en entornos de experimentación para comprobar si el modelo produce texto coherente en `ja`, dado que es el único idioma declarado.
-- Pruebas de integración en pipelines de HuggingFace `transformers`: al estar etiquetado como `text-generation` y `pytorch`, puede cargarse con la API estándar para verificar compatibilidad con el ecosistema.
+- Pruebas de integración en pipelines de Hugging Face `transformers`: al estar etiquetado como `text-generation` y `pytorch`, puede cargarse con la API estándar para verificar compatibilidad con el ecosistema.
 - Base para fine-tuning experimental: la licencia MIT facilita adaptar los pesos a dominios concretos, siempre que el tamaño del modelo sea manejable (dato no disponible).
 - Evaluación comparativa interna: puede servir como referencia de línea base en pruebas de calidad de generación en japonés frente a modelos documentados.
-- Docencia y experimentación académica: útil para ilustrar el flujo de publicación de modelos en HuggingFace y la importancia de una model card completa.
+- Docencia y experimentación académica: útil para ilustrar el flujo de publicación de modelos en Hugging Face y la importancia de una model card completa.
 - Generación de texto de relleno o sintético en entornos controlados: únicamente si las pruebas previas confirman una calidad mínima aceptable.
 
 ## Benchmarks y rendimiento
@@ -83,5 +83,5 @@ La comparación cuantitativa con alternativas concretas queda marcada como no di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/neoof8ie/primenumbers
+- Hugging Face: https://huggingface.co/neoof8ie/primenumbers
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados al modelo.

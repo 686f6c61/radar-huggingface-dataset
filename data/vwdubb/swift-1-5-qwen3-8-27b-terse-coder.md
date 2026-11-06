@@ -96,7 +96,7 @@ No se dispone de comparativas de rendimiento publicadas entre estos artefactos e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vwdubb/Swift-1.5-Qwen3.8-27b-Terse-Coder
+- Modelo en Hugging Face: https://huggingface.co/vwdubb/Swift-1.5-Qwen3.8-27b-Terse-Coder
 - Modelo base Swift 1.5: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Adaptador Terse-Coder: https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder-LoRA
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B

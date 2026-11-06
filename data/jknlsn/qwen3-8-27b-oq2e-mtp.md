@@ -4,7 +4,7 @@
 
 Este modelo es una cuantización extrema de 2 bits del modelo `Qwen/Qwen3.8-27B`, realizada con la herramienta oQe (oMLX v0.6.0) mediante cuantización de precisión mixta mejorada con imatrix. El resultado es un modelo en formato MLX safetensors que incluye soporte para multi-token prediction (MTP). El objetivo principal es reducir drásticamente el tamaño y los requisitos de memoria del modelo original, permitiendo su ejecución en hardware con recursos limitados, como Mac con Apple Silicon o GPUs de gama media.
 
-El modelo base, Qwen3.8-27B, según el pipeline declarado en HuggingFace es de tipo image-text-to-text, lo que indica que es un modelo multimodal capaz de procesar imágenes y texto. Sin embargo, la información pública disponible sobre la arquitectura y el entrenamiento de este modelo base es escasa, por lo que esta ficha se centra en la cuantización en sí y en las implicaciones prácticas de su uso.
+El modelo base, Qwen3.8-27B, según el pipeline declarado en Hugging Face es de tipo image-text-to-text, lo que indica que es un modelo multimodal capaz de procesar imágenes y texto. Sin embargo, la información pública disponible sobre la arquitectura y el entrenamiento de este modelo base es escasa, por lo que esta ficha se centra en la cuantización en sí y en las implicaciones prácticas de su uso.
 
 ## Especificaciones técnicas
 
@@ -68,6 +68,6 @@ No hay información suficiente para establecer una comparativa fiable. Se podrí
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo cuantizado](https://huggingface.co/jknlsn/Qwen3.8-27B-oQ2e-mtp)
+- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/jknlsn/Qwen3.8-27B-oQ2e-mtp)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Herramienta oQe / oMLX](https://github.com/jundot/omlx)

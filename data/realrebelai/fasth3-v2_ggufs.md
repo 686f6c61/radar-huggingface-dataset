@@ -89,10 +89,10 @@ No hay datos de rendimiento que permitan comparar este modelo con alternativas d
 
 | Modelo / variante | Parámetros | Formato | Pasos | Audio sincronizado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FastH3-V2 Q3_K_M | ~35B | GGUF ~3,5 bits | 8 | Sí (requiere Audio VAE) | other | HuggingFace, 16-09-2026 |
-| FastH3-V2 Q4_K_M | ~35B | GGUF ~4,5 bits | 8 | Sí (requiere Audio VAE) | other | HuggingFace, 16-09-2026 |
-| FastH3-V2 Q5_K_M | ~35B | GGUF ~5,5 bits | 8 | Sí (requiere Audio VAE) | other | HuggingFace, 16-09-2026 |
-| FastVideo-FastH3-8-Step-V2 (base) | 35.049.751.312 | BF16 safetensors (shards) | 8 | Sí | other | HuggingFace |
+| FastH3-V2 Q3_K_M | ~35B | GGUF ~3,5 bits | 8 | Sí (requiere Audio VAE) | other | Hugging Face, 16-09-2026 |
+| FastH3-V2 Q4_K_M | ~35B | GGUF ~4,5 bits | 8 | Sí (requiere Audio VAE) | other | Hugging Face, 16-09-2026 |
+| FastH3-V2 Q5_K_M | ~35B | GGUF ~5,5 bits | 8 | Sí (requiere Audio VAE) | other | Hugging Face, 16-09-2026 |
+| FastVideo-FastH3-8-Step-V2 (base) | 35.049.751.312 | BF16 safetensors (shards) | 8 | Sí | other | Hugging Face |
 
 Comparativa con modelos de vídeo de otras familias: no disponible en la información proporcionada.
 
@@ -113,12 +113,12 @@ Comparativa con modelos de vídeo de otras familias: no disponible en la informa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/realrebelai/FastH3-V2_GGUFs
+- Repositorio Hugging Face: https://huggingface.co/realrebelai/FastH3-V2_GGUFs
 - Modelo base: https://huggingface.co/FastVideo/FastVideo-FastH3-8-Step-V2
 - Codificadores Qwen3-VL específicos de MiniMax-H3 (GGUF): https://huggingface.co/realrebelai/MiniMax-H3_GGUFs/tree/main
 - VAE oficiales de MiniMax-H3 para ComfyUI: https://huggingface.co/Comfy-Org/MiniMax-H3/tree/main/vae
 - GitHub del autor: https://github.com/RealRebelAI
-- Perfil de HuggingFace del autor: https://huggingface.co/realrebelai
+- Perfil de Hugging Face del autor: https://huggingface.co/realrebelai
 - YouTube del autor: https://www.youtube.com/@RealRebelAI
 - Civitai del autor: https://civitai.com/user/RealRebelAI
 - X (Twitter) del autor: https://x.com/realrebelai

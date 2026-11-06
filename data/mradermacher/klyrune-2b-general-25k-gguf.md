@@ -89,8 +89,8 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Modelo | Parámetros | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Jahirrrr/Klyrune-2B-General-25K (base) | ~2,52 mil millones (declarados en metadatos de safetensors) | transformers (safetensors) | no disponible | HuggingFace |
-| mradermacher/Klyrune-2B-General-25K-GGUF (este repositorio) | mismos pesos, sin cambios de tamaño | GGUF, 12 cuantizaciones | no disponible | HuggingFace |
+| Jahirrrr/Klyrune-2B-General-25K (base) | ~2,52 mil millones (declarados en metadatos de safetensors) | transformers (safetensors) | no disponible | Hugging Face |
+| mradermacher/Klyrune-2B-General-25K-GGUF (este repositorio) | mismos pesos, sin cambios de tamaño | GGUF, 12 cuantizaciones | no disponible | Hugging Face |
 
 Comparativa con otras alternativas de la misma categoría (tamaño, tarea o licencia): no disponible.
 

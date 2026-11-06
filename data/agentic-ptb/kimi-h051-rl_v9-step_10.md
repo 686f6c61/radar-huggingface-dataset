@@ -66,6 +66,6 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h051.rl_v9.step_10
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h051.rl_v9.step_10
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (enlace inferido, no verificado)
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) especificos para este checkpoint.

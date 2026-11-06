@@ -17,7 +17,7 @@ Técnicamente es un transformer denso de tipo decoder-only con 3.212.749.824 par
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada (corresponde a la del modelo base Llama-3.2-3B-Instruct) |
 | Tipos de cuantizacion | No se publican pesos cuantizados; los pesos distribuidos estan en safetensors (precision del checkpoint bf16/fp16, no detallada). Convertibles externamente a int8/int4 |
-| Idiomas soportados | No disponibles (campo de idiomas vacio en la ficha de HuggingFace) |
+| Idiomas soportados | No disponibles (campo de idiomas vacio en la ficha de Hugging Face) |
 | Licencia | llama3.2 |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 6,4 GB |
@@ -91,9 +91,9 @@ No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GS
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_SimNPO | 3,21 B | No disponible | llama3.2 | safetensors en HuggingFace, 0 descargas y 0 likes | Metricas TOFU completas en la model card |
-| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | 3,21 B (mismo checkpoint del que deriva) | No disponible | llama3.2 | HuggingFace | Referencia del ajuste sobre TOFU completo; no se publican sus metricas en la informacion disponible |
-| Meta Llama-3.2-3B-Instruct | 3,21 B | No disponible en la informacion proporcionada | llama3.2 | HuggingFace (modelo original) | No disponible en la informacion proporcionada |
+| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_SimNPO | 3,21 B | No disponible | llama3.2 | safetensors en Hugging Face, 0 descargas y 0 likes | Metricas TOFU completas en la model card |
+| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | 3,21 B (mismo checkpoint del que deriva) | No disponible | llama3.2 | Hugging Face | Referencia del ajuste sobre TOFU completo; no se publican sus metricas en la informacion disponible |
+| Meta Llama-3.2-3B-Instruct | 3,21 B | No disponible en la informacion proporcionada | llama3.2 | Hugging Face (modelo original) | No disponible en la informacion proporcionada |
 | Otros baselines de olvido sobre TOFU (NPO, GD, etc.) | ~3,2 B segun el modelo base | No disponible | Variable | Repositorio open-unlearning | No disponibles en la informacion proporcionada; la model card no incluye tabla comparativa |
 
 ## Limitaciones y advertencias
@@ -113,7 +113,7 @@ No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GS
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_SimNPO
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_SimNPO
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning

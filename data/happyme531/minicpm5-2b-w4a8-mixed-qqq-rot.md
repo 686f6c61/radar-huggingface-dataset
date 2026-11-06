@@ -93,8 +93,8 @@ El autor senala explicitamente que el formato mixto W4/W8 por canal es distinto 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/happyme531/MiniCPM5-2B-W4A8-Mixed-QQQ-Rot
-- Modelo base en HuggingFace: https://huggingface.co/openbmb/MiniCPM5-2B
+- Repositorio Hugging Face: https://huggingface.co/happyme531/MiniCPM5-2B-W4A8-Mixed-QQQ-Rot
+- Modelo base en Hugging Face: https://huggingface.co/openbmb/MiniCPM5-2B
 - Fuente original en ModelScope: https://modelscope.cn/models/OpenBMB/MiniCPM5-2B
 - Codigo del solver QQQ: https://github.com/HandH1998/QQQ
 - Datasets de calibracion: m-a-p/COIG-CQIA, HuggingFaceTB/smoltalk, openai/gsm8k, Salesforce/wikitext

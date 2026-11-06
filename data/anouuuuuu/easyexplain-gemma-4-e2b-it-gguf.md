@@ -83,7 +83,7 @@ No se dispone de datos suficientes para comparar rendimiento con alternativas de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Anouuuuuu/EasyExplain-Gemma-4-E2B-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Anouuuuuu/EasyExplain-Gemma-4-E2B-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - llama.cpp (commit usado en la conversión): `987498f4592a76897863cf53711dce38380c082b`
 - Papers, blogs o demos adicionales: no disponibles en la información proporcionada.

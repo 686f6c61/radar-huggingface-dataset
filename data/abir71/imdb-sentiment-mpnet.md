@@ -80,10 +80,10 @@ El cuaderno del estudio reportó 91,34 % para la regresión logística y 91,98 %
 
 | Modelo | Parametros | Contexto | Rendimiento en IMDB (test sin duplicados) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `abir71/imdb-sentiment-mpnet` (regresión logística) | 769 parámetros entrenables + encoder congelado | 512 tokens | 91,11 % accuracy, 96,94 % ROC-AUC | MIT | HuggingFace, repo de 0,0 GB |
+| `abir71/imdb-sentiment-mpnet` (regresión logística) | 769 parámetros entrenables + encoder congelado | 512 tokens | 91,11 % accuracy, 96,94 % ROC-AUC | MIT | Hugging Face, repo de 0,0 GB |
 | Red neuronal del mismo estudio (256 unidades ocultas) | No disponible | 512 tokens | 91,14 % accuracy, 97,07 % ROC-AUC | No disponible | Solo resultados en la model card |
 | SVM de kernel RBF del mismo estudio | No disponible (decenas de miles de vectores soporte) | 512 tokens | 91,98 % accuracy en el cuaderno original, sin eliminar duplicados | No disponible | Solo resultados en la model card |
-| Encoder base `sentence-transformers/all-mpnet-base-v2` | No disponible en la información | 384 tokens por defecto (512 en esta configuración) | No es un clasificador; se usa como extractor | No disponible en la información | HuggingFace |
+| Encoder base `sentence-transformers/all-mpnet-base-v2` | No disponible en la información | 384 tokens por defecto (512 en esta configuración) | No es un clasificador; se usa como extractor | No disponible en la información | Hugging Face |
 
 No se dispone de datos comparativos frente a alternativas externas como DistilBERT o RoBERTa afinados en IMDB, porque no aparecen en la información proporcionada.
 
@@ -102,7 +102,7 @@ No se dispone de datos comparativos frente a alternativas externas como DistilBE
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abir71/imdb-sentiment-mpnet
+- Modelo en Hugging Face: https://huggingface.co/abir71/imdb-sentiment-mpnet
 - Demo interactivo en el navegador: https://huggingface.co/spaces/abir71/imdb-sentiment-demo
 - Modelo base del encoder: https://huggingface.co/sentence-transformers/all-mpnet-base-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/stanfordnlp/imdb

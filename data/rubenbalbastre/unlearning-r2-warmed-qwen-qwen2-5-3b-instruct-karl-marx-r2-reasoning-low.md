@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA entrenado con GRPO sobre el modelo b
 
 El interés técnico está en el procedimiento: aplicar aprendizaje por refuerzo (GRPO, vía TRL) sobre un adaptador LoRA para modificar el comportamiento de un modelo instruct de 3.000 millones de parámetros, en lugar de recurrir a un *fine-tuning* completo. Es un ejemplo de la familia de técnicas de olvido selectivo y alineación ligera que se están explorando para cumplimiento normativo, desintoxicación de modelos y control de conocimiento no deseado sin reentrenar el modelo desde cero.
 
-Ahora bien, la model card publicada es la plantilla por defecto de HuggingFace sin rellenar: no documenta datos de entrenamiento, hiperparámetros, evaluación, licencia ni idiomas. El repositorio tiene cero descargas y cero *likes*, y fue creado en septiembre de 2026. Debe tratarse, por tanto, como un artefacto de investigación sin validación pública ni garantías de reproducibilidad.
+Ahora bien, la model card publicada es la plantilla por defecto de Hugging Face sin rellenar: no documenta datos de entrenamiento, hiperparámetros, evaluación, licencia ni idiomas. El repositorio tiene cero descargas y cero *likes*, y fue creado en septiembre de 2026. Debe tratarse, por tanto, como un artefacto de investigación sin validación pública ni garantías de reproducibilidad.
 
 ## Especificaciones técnicas
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rubenbalbastre/unlearning-r2-warmed-qwen-qwen2-5-3b-instruct-karl-marx-r2-reasoning-low
+- Modelo en Hugging Face: https://huggingface.co/rubenbalbastre/unlearning-r2-warmed-qwen-qwen2-5-3b-instruct-karl-marx-r2-reasoning-low
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Artículo referenciado (arXiv:2608.17804): https://arxiv.org/abs/2608.17804
 - Librería PEFT: https://github.com/huggingface/peft

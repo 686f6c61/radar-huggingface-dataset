@@ -28,12 +28,12 @@ La relevancia de esta ficha es limitada pero concreta: es una via de despliegue 
 
 No se dispone de informacion sobre la arquitectura interna, el numero de tokens de entrenamiento, la composicion del dataset ni las tecnicas de alineacion (RLHF, DPO u otras) del modelo base Blossom-V7.1-9B en la informacion proporcionada. La model card de este repositorio es exclusivamente tecnica en lo relativo al proceso de cuantizacion: indica `quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf` y la etiqueta `nicoboss`, ademas de listar las cuantizaciones generadas. El unico dato funcional relevante es que se trata de "weighted/imatrix quants" del checkpoint de Azure99, es decir, cuantizaciones en las que los tensores se ponderan usando una matriz de importancia (imatrix) calculada sobre un corpus de calibracion, lo que en la practica mejora la calidad de las cuantizaciones de baja precision (IQ1, IQ2, IQ3) respecto a una cuantizacion uniforme.
 
-El proceso de conversion parte de pesos en formato HuggingFace (`convert_type: hf`) y genera las 24 variantes GGUF listadas. Para conocer arquitectura, contexto nativo, datos de entrenamiento y metodo de alineacion habria que consultar el repositorio del modelo base, que no forma parte de la informacion suministrada.
+El proceso de conversion parte de pesos en formato Hugging Face (`convert_type: hf`) y genera las 24 variantes GGUF listadas. Para conocer arquitectura, contexto nativo, datos de entrenamiento y metodo de alineacion habria que consultar el repositorio del modelo base, que no forma parte de la informacion suministrada.
 
 ## Capacidades
 
 - Generacion de texto conversacional: la unica capacidad confirmada explicitamente por las etiquetas del repositorio (`conversational`) es el dialogo multi-turno.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el artefacto esta pensado para servirse detras de APIs compatibles con el formato de endpoints de HuggingFace (por ejemplo, text-generation-inference/endpoints o servidores equivalentes).
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el artefacto esta pensado para servirse detras de APIs compatibles con el formato de endpoints de Hugging Face (por ejemplo, text-generation-inference/endpoints o servidores equivalentes).
 - Ejecucion local en CPU y GPU: al estar en formato GGUF, es compatible con el ecosistema llama.cpp.
 - Razonamiento, generacion de codigo, matematicas, vision, tool calling, function calling, uso de agentes, modo thinking, audio: no disponible. No hay ninguna declaracion al respecto en la informacion proporcionada.
 - Capacidades multilingues: no disponible. No se declaran idiomas soportados.
@@ -77,7 +77,7 @@ Los valores siguientes son estimaciones calculadas a partir del numero de parame
 | Modelo | Parametros | Formato | Contexto | Licencia | Estado |
 |---|---|---|---|---|---|
 | mradermacher/Blossom-V7.1-9B-i1-GGUF (este repositorio) | 9,2B | GGUF, 24 cuantizaciones | No disponible | No disponible | 0 descargas, 0 likes |
-| Azure99/Blossom-V7.1-9B (modelo base) | 9,2B | Safetensors (HuggingFace) | No disponible | No disponible | Referenciado como origen de la conversion |
+| Azure99/Blossom-V7.1-9B (modelo base) | 9,2B | Safetensors (Hugging Face) | No disponible | No disponible | Referenciado como origen de la conversion |
 | Otras cuantizaciones GGUF del mismo modelo base | 9,2B | GGUF | No disponible | No disponible | No disponible en la informacion proporcionada |
 | Modelos conversacionales de ~8-9B de otros autores | ~8-9B | No disponible | No disponible | No disponible | No disponible: no hay datos de benchmarks ni de licencia que permitan una comparacion rigurosa |
 
@@ -93,7 +93,7 @@ No es posible establecer una comparativa cuantitativa con alternativas de la mis
 - Longitud de contexto desconocida: al no declararse, no se puede garantizar el comportamiento en conversaciones largas ni el consumo de memoria asociado a la cache KV.
 - Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado ni model card propia mas alla de los metadatos de cuantizacion. La trazabilidad del proceso de conversion se limita a las etiquetas internas.
 - Advertencia sobre el contenido de la model card: los campos citados (quants, quants_skip, skip_mmproj, tags, etc.) son metadatos de la herramienta de cuantizacion y no deben interpretarse como especificaciones funcionales del modelo.
-- Fechas del repositorio: la creacion y ultima actualizacion figuran como 2026-09-13, dato que conviene verificar directamente en HuggingFace.
+- Fechas del repositorio: la creacion y ultima actualizacion figuran como 2026-09-13, dato que conviene verificar directamente en Hugging Face.
 
 ## Enlaces
 

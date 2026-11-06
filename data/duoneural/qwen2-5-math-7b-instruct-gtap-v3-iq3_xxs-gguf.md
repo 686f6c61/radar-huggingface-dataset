@@ -97,7 +97,7 @@ No se dispone de datos verificados que permitan afirmar que este checkpoint supe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/Qwen2.5-Math-7B-Instruct-GTAP-v3-IQ3_XXS-GGUF
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/Qwen2.5-Math-7B-Instruct-GTAP-v3-IQ3_XXS-GGUF
 - Organizacion del autor: https://huggingface.co/DuoNeural
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-7B-Instruct
 - Qwen2.5-Math-7B: https://huggingface.co/Qwen/Qwen2.5-Math-7B

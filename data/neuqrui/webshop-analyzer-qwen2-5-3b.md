@@ -24,7 +24,7 @@ Su relevancia es acotada pero clara: permite reproducir anotaciones de calidad a
 | Modelo base | Qwen/Qwen2.5-3B-Instruct |
 | Checkpoint | `analyzer_qwen2.5_3b_glm-v2/global_step_264`, 3 épocas |
 | Dataset de entrenamiento | neuqrui/webshop-analyzer-sft-glm5.2 |
-| Descargas / likes | 0 / 0 según los metadatos de HuggingFace |
+| Descargas / likes | 0 / 0 según los metadatos de Hugging Face |
 | Fecha de creación | 2026-10-24 |
 
 ## Arquitectura y entrenamiento
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | webshop-analyzer-qwen2.5-3b (este modelo) | 3,09 B | No disponible (base: 32.768 tokens) | Analizador de trayectorias WebShop con `trajectory_summary` y `step_skills` | Apache 2.0 | 0 descargas, 0 likes |
 | Qwen/Qwen2.5-3B-Instruct (modelo base) | 3,09 B | 32.768 tokens según documentación de Qwen2.5 | Asistente generalista, multilingüe | Apache 2.0 | Ampliamente desplegado |
 | neuqrui/alfworld-analyzer-qwen2.5-3b | 3 B | No disponible | Analizador de trayectorias para ALFWorld, misma receta | No indicada en los resultados de búsqueda | 14 descargas en el último mes |
-| ZuoHaotong/Qwen2.5-3B-Instruct-SFT-in-WebShop | 3 B | No disponible | SFT sobre WebShop, orientado a la tarea del entorno | No indicada en los resultados de búsqueda | Repositorio público en HuggingFace |
+| ZuoHaotong/Qwen2.5-3B-Instruct-SFT-in-WebShop | 3 B | No disponible | SFT sobre WebShop, orientado a la tarea del entorno | No indicada en los resultados de búsqueda | Repositorio público en Hugging Face |
 
 No hay datos de rendimiento comparativo entre estas variantes; la comparación se limita a tamaño, especialización y licencia. Existe también `Tim-Xu/Qwen2.5-3B-CD-WebShop`, desplegado en FriendliAI, pero no se dispone de sus especificaciones en la información proporcionada.
 
@@ -91,7 +91,7 @@ No hay datos de rendimiento comparativo entre estas variantes; la comparación s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neuqrui/webshop-analyzer-qwen2.5-3b
+- Modelo en Hugging Face: https://huggingface.co/neuqrui/webshop-analyzer-qwen2.5-3b
 - Dataset de entrenamiento: https://huggingface.co/datasets/neuqrui/webshop-analyzer-sft-glm5.2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Modelo hermano para ALFWorld: https://huggingface.co/neuqrui/alfworld-analyzer-qwen2.5-3b

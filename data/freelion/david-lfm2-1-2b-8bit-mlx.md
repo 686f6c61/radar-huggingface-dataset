@@ -108,7 +108,7 @@ Ninguno de los modelos alternativos esta especializado en deteccion de dark patt
 
 ## Enlaces
 
-- Repositorio HuggingFace (version 8 bits MLX): https://huggingface.co/freelion/DAVID-lfm2-1.2b-8bit-mlx
+- Repositorio Hugging Face (version 8 bits MLX): https://huggingface.co/freelion/DAVID-lfm2-1.2b-8bit-mlx
 - Modelo en precision completa: https://huggingface.co/freelion/DAVID-lfm2-1.2b-full
 - Familia LFM2 de Liquid AI (referencia externa, no verificada en la informacion disponible): https://huggingface.co/LiquidAI
 - Extension de navegador mencionada en la model card: no disponible (la URL figura como marcador de posicion)

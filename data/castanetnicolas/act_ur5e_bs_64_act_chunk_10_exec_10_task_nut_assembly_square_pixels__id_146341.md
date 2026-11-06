@@ -85,7 +85,7 @@ Los datos de parametros, licencia y contexto de las variantes comparadas no se h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_10_Exec_10_TASK_nut_assembly_square_PIXELS__ID_146341
+- Modelo en Hugging Face: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_10_Exec_10_TASK_nut_assembly_square_PIXELS__ID_146341
 - Dataset de entrenamiento: https://huggingface.co/datasets/castanetnicolas/robomimic_square_ph_image84
 - Paper de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

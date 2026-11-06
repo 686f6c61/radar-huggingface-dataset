@@ -128,7 +128,7 @@ No se dispone de datos de benchmarks de esta variante que permitan una comparaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Robbiejr/Qwen3-4B-Instruct-2507-broken
+- Hugging Face: https://huggingface.co/Robbiejr/Qwen3-4B-Instruct-2507-broken
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Licencia del base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/main/LICENSE
 - Heretic: https://heretic-project.org

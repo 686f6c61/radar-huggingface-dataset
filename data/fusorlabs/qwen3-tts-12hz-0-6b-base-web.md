@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables en la infor
 
 ## Enlaces
 
-- [HuggingFace: fusorlabs/qwen3-tts-12hz-0.6b-base-web](https://huggingface.co/fusorlabs/qwen3-tts-12hz-0.6b-base-web)
+- [Hugging Face: fusorlabs/qwen3-tts-12hz-0.6b-base-web](https://huggingface.co/fusorlabs/qwen3-tts-12hz-0.6b-base-web)
 - [Modelo base: Qwen/Qwen3-TTS-12Hz-0.6B-Base](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base)
 - [Runtime: fusor-rs/qwen3-tts-wasm](https://github.com/fusor-rs/qwen3-tts-wasm)
 - [Framework: fusor-rs/fusor-ai](https://github.com/fusor-rs/fusor-ai)

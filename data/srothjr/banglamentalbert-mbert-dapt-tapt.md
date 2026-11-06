@@ -77,10 +77,10 @@ Los datos de los modelos alternativos proceden de sus fichas públicas y pueden 
 
 | Modelo | Parámetros | Contexto | Idioma principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| banglamentalBERT-mBERT (DAPT+TAPT) | 177,9 M | No disponible (base: 512 tokens) | Bengalí | MIT | HuggingFace |
-| `bert-base-multilingual-cased` (mBERT sin ajustar) | 178 M | 512 tokens | Multilingüe (104 idiomas) | Apache 2.0 | HuggingFace |
-| XLM-RoBERTa base | 278 M | 512 tokens | Multilingüe (100 idiomas) | MIT | HuggingFace |
-| BanglaBERT (modelos específicos de bangla) | No disponible en la información proporcionada | No disponible | Bengalí | No disponible | HuggingFace |
+| banglamentalBERT-mBERT (DAPT+TAPT) | 177,9 M | No disponible (base: 512 tokens) | Bengalí | MIT | Hugging Face |
+| `bert-base-multilingual-cased` (mBERT sin ajustar) | 178 M | 512 tokens | Multilingüe (104 idiomas) | Apache 2.0 | Hugging Face |
+| XLM-RoBERTa base | 278 M | 512 tokens | Multilingüe (100 idiomas) | MIT | Hugging Face |
+| BanglaBERT (modelos específicos de bangla) | No disponible en la información proporcionada | No disponible | Bengalí | No disponible | Hugging Face |
 
 La ventaja diferencial de este modelo es el ajuste específico en dos fases (DAPT + TAPT) sobre dominio de salud mental en bangla, algo que los modelos base multilingües no ofrecen. Su desventaja es la ausencia total de validación externa y de resultados comparables publicados.
 
@@ -100,6 +100,6 @@ La ventaja diferencial de este modelo es el ajuste específico en dos fases (DAP
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SrothJr/banglamentalBERT-mBERT-dapt-tapt
+- Modelo en Hugging Face: https://huggingface.co/SrothJr/banglamentalBERT-mBERT-dapt-tapt
 - No se han encontrado enlaces adicionales relevantes (papers, repositorios o demos) en la búsqueda web realizada; los resultados obtenidos no guardan relación con el modelo.
 - Institución mencionada en la model card: BRAC University, Department of CSE (no se proporciona URL).

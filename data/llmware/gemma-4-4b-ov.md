@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llmware/gemma-4-4b-ov` es un checkpoint publicado por llmware en HuggingFace, distribuido en formato OpenVINO IR y asociado al tag `gemma4`, lo que indica que se trata de una conversion del modelo Gemma 4 de 4.000 millones de parametros al formato de inferencia de Intel. El repositorio ocupa 6,5 GB y se publico el 13 de septiembre de 2026, con cero descargas y cero likes en el momento de redactar esta ficha. La model card asociada no contiene mas que la declaracion de licencia (`license: gemma`), sin descripcion tecnica, datos de entrenamiento ni instrucciones de uso.
+`llmware/gemma-4-4b-ov` es un checkpoint publicado por llmware en Hugging Face, distribuido en formato OpenVINO IR y asociado al tag `gemma4`, lo que indica que se trata de una conversion del modelo Gemma 4 de 4.000 millones de parametros al formato de inferencia de Intel. El repositorio ocupa 6,5 GB y se publico el 13 de septiembre de 2026, con cero descargas y cero likes en el momento de redactar esta ficha. La model card asociada no contiene mas que la declaracion de licencia (`license: gemma`), sin descripcion tecnica, datos de entrenamiento ni instrucciones de uso.
 
 El valor practico de este checkpoint reside en el formato: al estar en OpenVINO, esta pensado para ejecutarse sobre CPU, iGPU y NPU de Intel (familia Core Ultra, Arc) sin necesidad de GPU dedicada, lo que lo situa en el nicho de inferencia local y despliegue en el borde. Es relevante para equipos que ya trabajan con el stack OpenVINO y quieren un modelo pequeno de la familia Gemma sin depender de CUDA.
 
@@ -70,7 +70,7 @@ Las cifras siguientes son estimaciones derivadas del tamano declarado del reposi
 - GPU compatibles: al estar en OpenVINO IR, el objetivo principal son iGPU Intel (Iris Xe, Arc integrada) y GPU Intel Arc dedicadas. Para GPU NVIDIA (A100, H100, RTX 4090) seria necesario reconvertir el modelo a otro formato (por ejemplo, GGUF o safetensors), ya que OpenVINO no es el runtime optimo en CUDA.
 - GPU de consumo: si cabe en tarjetas con 8 GB o mas de VRAM si el modelo se reconvierte a un formato compatible con CUDA; el repositorio, tal cual, no esta orientado a ese escenario.
 - CPU: el modelo esta disenado para ejecutarse en CPU Intel modernas con instrucciones AVX-512 o AMX, que aceleran notablemente la inferencia en este runtime.
-- Opciones de despliegue: OpenVINO GenAI, Optimum-Intel (integracion con HuggingFace Transformers) y las librerias propias de llmware. vLLM, llama.cpp, Ollama y TGI no soportan OpenVINO IR de forma nativa.
+- Opciones de despliegue: OpenVINO GenAI, Optimum-Intel (integracion con Hugging Face Transformers) y las librerias propias de llmware. vLLM, llama.cpp, Ollama y TGI no soportan OpenVINO IR de forma nativa.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -101,8 +101,8 @@ No se dispone de datos de rendimiento comparado (benchmarks) para ninguno de los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llmware/gemma-4-4b-ov
-- Pagina del autor en HuggingFace: https://huggingface.co/llmware
+- Modelo en Hugging Face: https://huggingface.co/llmware/gemma-4-4b-ov
+- Pagina del autor en Hugging Face: https://huggingface.co/llmware
 - Licencia Gemma (terminos de uso): https://ai.google.dev/gemma/terms
 - OpenVINO GenAI: https://github.com/openvinotoolkit/openvino.genai
 - Optimum-Intel: https://github.com/huggingface/optimum-intel

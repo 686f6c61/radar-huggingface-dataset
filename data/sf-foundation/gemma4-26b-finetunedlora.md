@@ -25,7 +25,7 @@ La relevancia de este adaptador radica en su potencial para adaptar un modelo de
 
 El adaptador se construye sobre google/gemma-4-26B-A4B-it, un modelo de la familia Gemma 4 de Google DeepMind. El modelo base emplea una arquitectura transformer con mezcla de expertos (MoE): de sus 26 000 millones de parámetros totales, solo 4 000 millones se activan por token, lo que permite una inferencia más eficiente en comparación con un modelo denso del mismo tamaño. Gemma 4 incorpora además un modelo draft dedicado para decodificación especulativa, acelerando la generación sin pérdida de calidad.
 
-El adaptador se entrenó mediante fine-tuning supervisado (SFT) según los tags del repositorio, que incluyen `sft`, `lora` y `trl` (la librería de transformers para RLHF y SFT de HuggingFace). No se especifican el dataset, el número de pasos, la tasa de aprendizaje ni el régimen de precisión. La ausencia de esta información impide conocer la tarea concreta para la que se ajustó el modelo ni la calidad del entrenamiento.
+El adaptador se entrenó mediante fine-tuning supervisado (SFT) según los tags del repositorio, que incluyen `sft`, `lora` y `trl` (la librería de transformers para RLHF y SFT de Hugging Face). No se especifican el dataset, el número de pasos, la tasa de aprendizaje ni el régimen de precisión. La ausencia de esta información impide conocer la tarea concreta para la que se ajustó el modelo ni la calidad del entrenamiento.
 
 ## Capacidades
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - El adaptador LoRA en sí ocupa solo 0,3 GB y puede cargarse en cualquier GPU con al menos 1 GB de VRAM adicional al modelo base.
 - El modelo base Gemma 4 26B A4B requiere cargar sus 26B de parámetros en memoria, aunque solo 4B estén activos por token. Con cuantización de 4 bits, se estiman entre 13 y 15 GB de VRAM para el modelo base, más el adaptador.
 - GPUs recomendadas: RTX 4090 (24 GB), A100 (40/80 GB), H100 (80 GB) para inferencia con cuantización; GPUs con menos VRAM (16 GB) pueden funcionar con cuantización más agresiva (2-3 bits), aunque con posible degradación de calidad.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama (si el adaptador se convierte a GGUF), HuggingFace Transformers con PEFT, y TGI (Text Generation Inference) si se fusiona el adaptador con el modelo base.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama (si el adaptador se convierte a GGUF), Hugging Face Transformers con PEFT, y TGI (Text Generation Inference) si se fusiona el adaptador con el modelo base.
 - La latencia y el throughput dependen del hardware y la cuantización; al ser un MoE con 4B activos, la velocidad de generación es comparable a la de un modelo denso de 4B, pero la carga de memoria es la de un modelo de 26B.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El adapt
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SF-Foundation/Gemma4-26B-FinetunedLoRA
+- Repositorio Hugging Face: https://huggingface.co/SF-Foundation/Gemma4-26B-FinetunedLoRA
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Página oficial de Gemma 4: https://deepmind.google/models/gemma/gemma-4/
 - Model card de Gemma 4: https://ai.google.dev/gemma/docs/core/model_card_4

@@ -37,7 +37,7 @@ El algoritmo de abliteration procede de TobiasLogic y se basa en la investigacio
 - Respuesta sin rechazos: la model card declara una tasa de rechazo del 0,0 % en pruebas controladas, lo que implica que no aplica filtros de seguridad aprendidos durante el alineamiento.
 - Tool calling y function calling: no disponible (no se documenta en la informacion proporcionada).
 - Soporte de agentes y razonamiento multi-paso: no disponible explicitamente, aunque el modelo hereda la base Instruct.
-- Capacidades multilingues: no disponibles; la metadata de HuggingFace no declara idiomas.
+- Capacidades multilingues: no disponibles; la metadata de Hugging Face no declara idiomas.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles.
 
 ## Casos de uso
@@ -111,7 +111,7 @@ Otras alternativas del mismo segmento (por ejemplo, otros modelos coder de ~30 B
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thaurock/Qwen2.5-Coder-32B-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Thaurock/Qwen2.5-Coder-32B-abliterated-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 - Autor del algoritmo de abliteration: https://huggingface.co/TobiasLogic
 - Referencia cientifica citada en la model card: Arditi et al., 2024 (sobre la mediacion del rechazo por una unica direccion); la model card no incluye el enlace completo al paper.

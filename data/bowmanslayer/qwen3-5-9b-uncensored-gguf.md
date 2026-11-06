@@ -77,10 +77,10 @@ No se dispone de datos suficientes para una comparativa rigurosa con modelos alt
 
 ## Enlaces
 
-- [HuggingFace: bowmanslayer/Qwen3.5-9B-Uncensored-GGUF](https://huggingface.co/bowmanslayer/Qwen3.5-9B-Uncensored-GGUF)
-- [HuggingFace: bowmanslayer/Qwen3.5-9B-Uncensored (modelo base)](https://huggingface.co/bowmanslayer/Qwen3.5-9B-Uncensored)
-- [HuggingFace: bowmanslayer/Qwen3.5-9B-Uncensored-W4A16](https://huggingface.co/bowmanslayer/Qwen3.5-9B-Uncensored-W4A16)
-- [HuggingFace: Qwen/Qwen3.5-9B (modelo original)](https://huggingface.co/Qwen/Qwen3.5-9B)
+- [Hugging Face: bowmanslayer/Qwen3.5-9B-Uncensored-GGUF](https://huggingface.co/bowmanslayer/Qwen3.5-9B-Uncensored-GGUF)
+- [Hugging Face: bowmanslayer/Qwen3.5-9B-Uncensored (modelo base)](https://huggingface.co/bowmanslayer/Qwen3.5-9B-Uncensored)
+- [Hugging Face: bowmanslayer/Qwen3.5-9B-Uncensored-W4A16](https://huggingface.co/bowmanslayer/Qwen3.5-9B-Uncensored-W4A16)
+- [Hugging Face: Qwen/Qwen3.5-9B (modelo original)](https://huggingface.co/Qwen/Qwen3.5-9B)
 - [Guia de instalacion y benchmarks (codersera.com)](https://codersera.com/blog/unrestricted-uncensored-qwen35-9b-abliterated-full-guide/)
 - [Noticia sobre fine-tunes uncensored (uncensoredhub.ai)](https://uncensoredhub.ai/news/2026-07-11-qwen-3-5-9b-uncensored-writer-fine-tunes-land-in-gguf-quantizations)
 - [Guia de ejecucion local con RTX 3090/4090 (groff.dev)](https://www.groff.dev/blog/run-qwen-3-5-9b-uncensored-locally-with-opencode)

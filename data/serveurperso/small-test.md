@@ -105,7 +105,7 @@ La comparación de calidad no es significativa: small-test está podado a 6 capa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Serveurperso/small-test
+- Modelo en Hugging Face: https://huggingface.co/Serveurperso/small-test
 - Proyector de visión (f16): https://huggingface.co/Serveurperso/small-test/resolve/main/small-test-mmproj-f16.gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Perfil del autor: https://huggingface.co/Serveurperso

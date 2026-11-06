@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Formato | VRAM aproximada | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| vinnipukh/Hy-Memory-30B-A3B-AWQ | 30B totales / ~3B activos | safetensors int4 AWQ (compressed-tensors) | ~17-18 GB | no disponible | Apache-2.0 | HuggingFace, 0 descargas |
-| tencent/Hy-Memory-30B-A3B (base) | 30B totales / ~3B activos | safetensors BF16 | ~60 GB | no disponible | Apache-2.0 | HuggingFace (oficial) |
-| vinnipukh/Hy-Memory-30B-A3B-GGUF | 30B totales / ~3B activos | GGUF (varias cuantizaciones) | desde ~16 GB (Q4) | no disponible | Apache-2.0 | HuggingFace |
+| vinnipukh/Hy-Memory-30B-A3B-AWQ | 30B totales / ~3B activos | safetensors int4 AWQ (compressed-tensors) | ~17-18 GB | no disponible | Apache-2.0 | Hugging Face, 0 descargas |
+| tencent/Hy-Memory-30B-A3B (base) | 30B totales / ~3B activos | safetensors BF16 | ~60 GB | no disponible | Apache-2.0 | Hugging Face (oficial) |
+| vinnipukh/Hy-Memory-30B-A3B-GGUF | 30B totales / ~3B activos | GGUF (varias cuantizaciones) | desde ~16 GB (Q4) | no disponible | Apache-2.0 | Hugging Face |
 | Otros modelos especializados en extraccion de memoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion relevante es interna a la familia: frente al BF16 oficial, la version AWQ reduce el peso un factor cercano a 4 y habilita GPU consumer, a cambio de una perdida de calidad no medida; frente a la variante GGUF, la AWQ es la opcion para servidor con vLLM/SGLang, mientras que la GGUF es la unica ruta para CPU, Ollama o llama.cpp.
@@ -88,7 +88,7 @@ La comparacion relevante es interna a la familia: frente al BF16 oficial, la ver
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/vinnipukh/Hy-Memory-30B-A3B-AWQ
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/vinnipukh/Hy-Memory-30B-A3B-AWQ
 - Modelo base oficial: https://huggingface.co/tencent/Hy-Memory-30B-A3B
 - Variante GGUF del mismo autor: https://huggingface.co/vinnipukh/Hy-Memory-30B-A3B-GGUF
 - Codigo y evaluacion (Tencent-Hunyuan): https://github.com/Tencent-Hunyuan/Hy-Memory

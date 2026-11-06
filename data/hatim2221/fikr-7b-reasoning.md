@@ -57,16 +57,16 @@ No se han publicado resultados en otros benchmarks (MMLU, HumanEval, GSM8K en in
 
 - VRAM estimada: con pesos en FP16, el modelo ocupa aproximadamente 15 GB (7,6B parametros x 2 bytes). Con cuantizacion de 4 bits (GPTQ/AWQ) se reduce a unos 4-5 GB, y con 8 bits a unos 8 GB.
 - GPU recomendadas: para inferencia en FP16 se necesita una GPU con al menos 16 GB de VRAM (por ejemplo, RTX 4090, A100 40GB). Con cuantizacion 4-bit cabe en GPUs consumer de 8 GB (RTX 3060, RTX 4060, etc.).
-- Opciones de despliegue: al ser un modelo basado en Qwen2.5, es compatible con vLLM, llama.cpp, Ollama, TGI y Transformers de HuggingFace. No se han publicado mediciones de latencia o throughput.
+- Opciones de despliegue: al ser un modelo basado en Qwen2.5, es compatible con vLLM, llama.cpp, Ollama, TGI y Transformers de Hugging Face. No se han publicado mediciones de latencia o throughput.
 - Para uso en produccion con alta concurrencia, se recomienda vLLM o TGI con cuantizacion AWQ/GPTQ para reducir latencia y aumentar throughput.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fikr-7B-Reasoning | 7,6B | No disponible | Razonamiento matematico en arabe | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct (base) | 7,6B | 32K | Chat y razonamiento general multilingue | Apache 2.0 | HuggingFace |
-| Falcon H1R 7B | 7B | 256K | Razonamiento general (matematicas, codigo) | Apache 2.0 | HuggingFace |
+| Fikr-7B-Reasoning | 7,6B | No disponible | Razonamiento matematico en arabe | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct (base) | 7,6B | 32K | Chat y razonamiento general multilingue | Apache 2.0 | Hugging Face |
+| Falcon H1R 7B | 7B | 256K | Razonamiento general (matematicas, codigo) | Apache 2.0 | Hugging Face |
 
 Fikr-7B-Reasoning se diferencia de su base por la estructura de CoT en arabe, pero pierde algo de precision. Falcon H1R 7B, aunque tambien de 7B, esta optimizado para razonamiento general en ingles y no tiene soporte especifico para arabe. No se dispone de comparaciones directas en benchmarks arabes con otros modelos.
 
@@ -81,5 +81,5 @@ Fikr-7B-Reasoning se diferencia de su base por la estructura de CoT en arabe, pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hatim2221/Fikr-7B-Reasoning
+- Modelo en Hugging Face: https://huggingface.co/Hatim2221/Fikr-7B-Reasoning
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

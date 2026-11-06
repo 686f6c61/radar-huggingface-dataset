@@ -4,7 +4,7 @@
 
 El modelo `jwheaton/Qwen3.8-27B-oQ4e-mtp` es una cuantización de precisión mixta de un modelo de la familia Qwen3.8 con aproximadamente 27 mil millones de parámetros, realizada por el usuario jwheaton mediante la herramienta oQ (oMLX v0.6.0.dev1). La cuantización reduce los pesos a 4 bits con un tamaño de grupo de 64, lo que permite ejecutar el modelo en hardware de consumo con requisitos de memoria reducidos. El resultado se distribuye en formato MLX safetensors, optimizado para el ecosistema MLX de Apple Silicon.
 
-Este modelo es relevante para desarrolladores que necesitan desplegar un LLM de gran tamaño en entornos con VRAM limitada, como estaciones de trabajo con GPUs de 24 GB o Macs con memoria unificada. Al ser una cuantización, hereda las capacidades del modelo original, aunque no se han publicado detalles específicos sobre su rendimiento o características en la ficha de HuggingFace. La ausencia de licencia explícita y de documentación adicional limita su uso en producción sin verificación previa.
+Este modelo es relevante para desarrolladores que necesitan desplegar un LLM de gran tamaño en entornos con VRAM limitada, como estaciones de trabajo con GPUs de 24 GB o Macs con memoria unificada. Al ser una cuantización, hereda las capacidades del modelo original, aunque no se han publicado detalles específicos sobre su rendimiento o características en la ficha de Hugging Face. La ausencia de licencia explícita y de documentación adicional limita su uso en producción sin verificación previa.
 
 ## Especificaciones tecnicas
 
@@ -64,5 +64,5 @@ No se dispone de información suficiente para comparar con otros modelos. El nom
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/jwheaton/Qwen3.8-27B-oQ4e-mtp)
+- [Modelo en Hugging Face](https://huggingface.co/jwheaton/Qwen3.8-27B-oQ4e-mtp)
 - [Repositorio de oQ (oMLX)](https://github.com/jundot/omlx)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Takumitanak96/research-efficient-attention es un conjunto de notas de investigación sobre mecanismos de atención eficiente, publicado en HuggingFace por el usuario Takumitanak96. No se trata de un modelo de lenguaje entrenado: la propia model card lo describe como "a structured set of research notes on Efficient Attention, with concrete evaluation references and open questions", y su sección de alcance indica explícitamente que no reclama mejoras de benchmark, ablaciones completadas, código publicado ni checkpoint entrenado. El artefacto principal es un fichero `review.md`, acompañado de un `README.md`; el contenido de investigación está en texto, no en pesos.
+El repositorio Takumitanak96/research-efficient-attention es un conjunto de notas de investigación sobre mecanismos de atención eficiente, publicado en Hugging Face por el usuario Takumitanak96. No se trata de un modelo de lenguaje entrenado: la propia model card lo describe como "a structured set of research notes on Efficient Attention, with concrete evaluation references and open questions", y su sección de alcance indica explícitamente que no reclama mejoras de benchmark, ablaciones completadas, código publicado ni checkpoint entrenado. El artefacto principal es un fichero `review.md`, acompañado de un `README.md`; el contenido de investigación está en texto, no en pesos.
 
 El repositorio incluye un fichero en formato safetensors que, según los metadatos, contiene 16.576 parámetros totales, y el tamaño declarado del repositorio es de 0,0 GB. Esa cifra es incompatible con cualquier transformer funcional de propósito general y no se documenta en la model card qué representa ese tensor ni con qué arquitectura se corresponde, por lo que no puede considerarse un modelo desplegable. El pipeline no está declarado, no se especifican idiomas soportados y el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta.
 
@@ -12,7 +12,7 @@ Su relevancia es, por tanto, documental: las notas cubren el alcance de la pregu
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta de HuggingFace indica "transformer", pero el repositorio declara notas de investigacion, no un modelo entrenado) |
+| Arquitectura | no disponible (la etiqueta de Hugging Face indica "transformer", pero el repositorio declara notas de investigacion, no un modelo entrenado) |
 | Parametros totales | 16.576 (segun metadatos de safetensors) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -86,8 +86,8 @@ No hay modelos comparables en la misma categoria porque el repositorio no contie
 
 | Artefacto | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Takumitanak96/research-efficient-attention | Notas de investigacion | 16.576 (tensor safetensors no documentado) | no disponible | CC-BY-4.0 | HuggingFace, 0 descargas |
-| Joshuamsn/research-efficient-attention | Notas de lectura y esbozo de experimento | no disponible | no disponible | no disponible | HuggingFace |
+| Takumitanak96/research-efficient-attention | Notas de investigacion | 16.576 (tensor safetensors no documentado) | no disponible | CC-BY-4.0 | Hugging Face, 0 descargas |
+| Joshuamsn/research-efficient-attention | Notas de lectura y esbozo de experimento | no disponible | no disponible | no disponible | Hugging Face |
 | arXiv 2507.19595 (survey de atencion eficiente) | Survey academico | no aplica | no aplica | no disponible | arXiv y version HTML |
 | attention-survey.github.io | Portal de survey con marco de analisis unificado | no aplica | no aplica | no disponible | Sitio web publico |
 
@@ -106,7 +106,7 @@ No hay modelos comparables en la misma categoria porque el repositorio no contie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Takumitanak96/research-efficient-attention
+- Hugging Face: https://huggingface.co/Takumitanak96/research-efficient-attention
 - Repositorio homonimo de otro autor: https://huggingface.co/Joshuamsn/research-efficient-attention
 - Survey "Efficient Attention Mechanisms for Large Language Models" (abstract): https://arxiv.org/abs/2507.19595
 - Survey en version HTML: https://arxiv.org/html/2507.19595v1

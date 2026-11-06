@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Datos de entrenamiento | Licencia | Idioma | Disponibilidad |
 |---|---|---|---|---|---|---|
-| gladios-tiny.story-0.1B | 124.046.592 | 512 tokens | TinyStories (split train completo) | MIT | Ingles | HuggingFace, safetensors |
+| gladios-tiny.story-0.1B | 124.046.592 | 512 tokens | TinyStories (split train completo) | MIT | Ingles | Hugging Face, safetensors |
 | GPT-2 small | 124M | 1024 tokens | WebText | MIT | Ingles | Ampliamente disponible |
-| TinyStories-125M (roneneldan) | Aprox. 125M | No disponible | TinyStories | No disponible | Ingles | HuggingFace |
+| TinyStories-125M (roneneldan) | Aprox. 125M | No disponible | TinyStories | No disponible | Ingles | Hugging Face |
 
 La comparacion con GPT-2 small es util porque comparte orden de magnitud de parametros, pero difiere en el dominio: GPT-2 tiene conocimiento general y mayor contexto, mientras que gladios-tiny.story esta especializado en narrativa infantil. Frente a los modelos TinyStories publicados por el autor del dataset, la diferencia principal es la licencia explicita MIT y la publicacion del codigo de entrenamiento en este caso; no se dispone de datos de rendimiento comparativos entre ambos.
 
@@ -96,7 +96,7 @@ La comparacion con GPT-2 small es util porque comparte orden de magnitud de para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/plimb/gladios-tiny.story-0.1B
+- Modelo en Hugging Face: https://huggingface.co/plimb/gladios-tiny.story-0.1B
 - Demo Gradio (ZeroGPU): https://huggingface.co/spaces/rusher-code/gladios-tiny-story-demo/
 - Codigo de entrenamiento en GitHub: https://github.com/plimb-ai/gladios-tiny-story
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories

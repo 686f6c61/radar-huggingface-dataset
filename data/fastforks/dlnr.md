@@ -4,7 +4,7 @@
 
 DLNR es un modelo de *stereo matching* (estimación de disparidad) publicado por Zhao et al. en 2023, empaquetado y distribuido por el proyecto fastforks. Dado un par de imágenes rectificadas izquierda/derecha, produce un mapa de disparidad a resolución de entrada, a partir del cual puede derivarse profundidad. Combina un extractor de características Restormer con atención por canales, una pirámide de correlación 1-D al estilo RAFT-Stereo y actualizaciones iterativas mediante LSTM de 3 niveles con refinamiento por normalización, ejecutando 10 iteraciones.
 
-El repositorio de HuggingFace es únicamente una *model card*: no aloja pesos. fastforks descarga los pesos originales de los enlaces del autor y los verifica contra hashes SHA-256. Existen dos variantes, `dlnr-middlebury@1` y `dlnr-sceneflow@1`, entrenadas sobre Freiburg SceneFlow (FlyingThings3D, Driving, Monkaa). El modelo se clasifica como experimental y ofrece dos backends: `portable` (PyTorch) y `kernels` (kernels CUDA propios).
+El repositorio de Hugging Face es únicamente una *model card*: no aloja pesos. fastforks descarga los pesos originales de los enlaces del autor y los verifica contra hashes SHA-256. Existen dos variantes, `dlnr-middlebury@1` y `dlnr-sceneflow@1`, entrenadas sobre Freiburg SceneFlow (FlyingThings3D, Driving, Monkaa). El modelo se clasifica como experimental y ofrece dos backends: `portable` (PyTorch) y `kernels` (kernels CUDA propios).
 
 Su relevancia actual es práctica: el empaquetado de fastforks reduce el tiempo de inferencia hasta 2,8 veces respecto al código original y la memoria pico hasta un 59 % en el backend `kernels`, con paridad numérica verificada frente a las salidas doradas del código original (diferencia media ≤ 0,02 px en fp16 en GPU).
 
@@ -19,7 +19,7 @@ Su relevancia actual es práctica: el empaquetado de fastforks reduce el tiempo 
 | Tipos de cuantización | fp32 (referencia original) y fp16 (por defecto en portable y kernels); no se documentan otras |
 | Idiomas soportados | no disponible (no es un modelo de lenguaje) |
 | Licencia | Código MIT; licencia de pesos no declarada por los autores (el empaquetado asume MIT a partir del código). Etiqueta: `mit-code-weights-unstated` |
-| Formato de pesos | `.pth` (PyTorch), descargados desde los releases del autor; no se alojan en HuggingFace |
+| Formato de pesos | `.pth` (PyTorch), descargados desde los releases del autor; no se alojan en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -104,11 +104,11 @@ La información disponible no incluye datos de rendimiento de RAFT-Stereo ni de 
 - La precisión en GPU fp16 presenta una diferencia media de hasta 0,02 px y p99 de hasta 0,25 px frente al código original; en aplicaciones de metrología puede requerirse fp32.
 - No se documentan sesgos, comportamiento en dominios fuera de SceneFlow (por ejemplo, imágenes médicas o aéreas) ni robustez ante oclusiones o superficies sin textura.
 - No es un modelo de lenguaje: no soporta generación de texto, tool calling, agentes ni capacidades multilingües.
-- El repositorio de HuggingFace no contiene pesos; la disponibilidad depende de los enlaces de descarga del autor original.
+- El repositorio de Hugging Face no contiene pesos; la disponibilidad depende de los enlaces de descarga del autor original.
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/dlnr
+- Model card en Hugging Face: https://huggingface.co/fastforks/dlnr
 - Kernels del backend: https://huggingface.co/fastforks/kernels
 - Repositorio del empaquetado fastforks: https://github.com/kleinicke/fastforks
 - Benchmarks del empaquetado: https://github.com/kleinicke/fastforks/blob/main/docs/benchmarks.md

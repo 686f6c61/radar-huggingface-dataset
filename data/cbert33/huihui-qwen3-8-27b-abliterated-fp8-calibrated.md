@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones. La elec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cbert33/Huihui-Qwen3.8-27B-abliterated-FP8-Calibrated
+- Modelo en Hugging Face: https://huggingface.co/cbert33/Huihui-Qwen3.8-27B-abliterated-FP8-Calibrated
 - Modelo base abliterado: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Cuantización NVFP4 alternativa: https://huggingface.co/sakamakismile/Huihui-Qwen3.8-27B-abliterated-NVFP4
 - Página en Ollama: https://ollama.com/huihui_ai/Qwen3.8-abliterated

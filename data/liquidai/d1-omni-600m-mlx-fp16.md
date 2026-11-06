@@ -75,9 +75,9 @@ No se dispone en la información proporcionada de datos de benchmarks ni de espe
 
 | Modelo | Parámetros | Formato | Tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| d1-omni-600M-MLX-fp16 | 587 M | MLX fp16 | 1,17 GB | lfm1.0 | HuggingFace (LiquidAI) |
-| d1-omni-600M-MLX-8bit | 587 M | MLX 8 bits | 0,73 GB | lfm1.0 | HuggingFace (LiquidAI) |
-| d1-omni-600M | 587 M | PyTorch (original) | no disponible | lfm1.0 | HuggingFace (LiquidAI) |
+| d1-omni-600M-MLX-fp16 | 587 M | MLX fp16 | 1,17 GB | lfm1.0 | Hugging Face (LiquidAI) |
+| d1-omni-600M-MLX-8bit | 587 M | MLX 8 bits | 0,73 GB | lfm1.0 | Hugging Face (LiquidAI) |
+| d1-omni-600M | 587 M | PyTorch (original) | no disponible | lfm1.0 | Hugging Face (LiquidAI) |
 
 Comparativa con modelos de otras familias: no disponible.
 
@@ -95,7 +95,7 @@ Comparativa con modelos de otras familias: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/d1-omni-600M-MLX-fp16
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/d1-omni-600M-MLX-fp16
 - Modelo base original: https://huggingface.co/LiquidAI/d1-omni-600M
 - Exportación 8 bits: https://huggingface.co/LiquidAI/d1-omni-600M-MLX-8bit
 - Paper (arXiv): https://arxiv.org/abs/2511.23404

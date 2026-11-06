@@ -72,7 +72,7 @@ Métricas de validación durante el entrenamiento: cross-entropy de validación 
 
 | Modelo | Parametros | Contexto | ROC AUC (OpenML-CC18) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| minipfn-tabpfn-v1 | 25,82 M | 1.000 filas de train, 100 features | 0,932 (ensemble 32) | Apache-2.0 | HuggingFace (aiden-jeon) |
+| minipfn-tabpfn-v1 | 25,82 M | 1.000 filas de train, 100 features | 0,932 (ensemble 32) | Apache-2.0 | Hugging Face (aiden-jeon) |
 | TabPFN v1 oficial (PriorLabs) | no disponible en la informacion | 1.000 filas de train, 100 features | 0,934 (ensemble 32) | Apache-2.0 (codigo); pesos con licencia propia | GitHub PriorLabs/TabPFN |
 | LogisticRegression (sklearn) | no aplica | no aplica | 0,918 | BSD-3-Clause | scikit-learn |
 | HistGradientBoosting (sklearn) | no aplica | no aplica | 0,908 | BSD-3-Clause | scikit-learn |
@@ -92,7 +92,7 @@ La comparación con TabPFN v2 o con modelos tabulares basados en LLM no está di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aiden-jeon/minipfn-tabpfn-v1
+- Hugging Face: https://huggingface.co/aiden-jeon/minipfn-tabpfn-v1
 - Repositorio del proyecto: https://github.com/Aiden-Jeon/minipfn
 - Paper TabPFN (arXiv:2207.01848): https://arxiv.org/abs/2207.01848
 - TabPFN oficial (PriorLabs): https://github.com/PriorLabs/TabPFN

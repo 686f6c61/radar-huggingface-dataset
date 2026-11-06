@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swin-t-multitask-quantized es un prototipo de investigación publicado por el usuario Stepanovevg en HuggingFace. Se trata de una implementación propia de una Swin Transformer en su variante Tiny (Swin-T) orientada a aprendizaje multitarea, con atención multi-query, fusión mediante gating (gated fusion), activación Mish y normalización LayerNorm. El repositorio se distribuye con licencia BSD-3-Clause y el pipeline declarado no está especificado.
+Swin-t-multitask-quantized es un prototipo de investigación publicado por el usuario Stepanovevg en Hugging Face. Se trata de una implementación propia de una Swin Transformer en su variante Tiny (Swin-T) orientada a aprendizaje multitarea, con atención multi-query, fusión mediante gating (gated fusion), activación Mish y normalización LayerNorm. El repositorio se distribuye con licencia BSD-3-Clause y el pipeline declarado no está especificado.
 
 Es importante subrayar que el propio autor indica en la model card que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. No se reclama ninguna puntuación de benchmark y no hay evidencia de que se haya completado un ciclo de entrenamiento. La receta por defecto que acompaña al repositorio usa el optimizador Novograd con un schedule de coseno, pero son valores de partida del script, no resultados reproducidos.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Compatibilidad con GPU de consumo: probablemente sí para inferencia si el modelo final está en el rango de una Swin-T (RTX 3060, RTX 4090, etc.), pero es una estimación no verificada.
 - Opciones de despliegue: el repositorio es una implementación propia de PyTorch, por lo que no es cargable directamente con APIs automáticas genéricas y requeriría un adaptador explícito. No se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje, en cualquier caso no aplicables a un backbone de visión).
 - Latencia y throughput: no disponibles.
-- Tamaño del repositorio: 0.0 GB según HuggingFace, lo que refuerza la idea de que el artefacto es mínimo y no contiene pesos entrenados de gran tamaño.
+- Tamaño del repositorio: 0.0 GB según Hugging Face, lo que refuerza la idea de que el artefacto es mínimo y no contiene pesos entrenados de gran tamaño.
 
 ## Comparativa con modelos similares
 
@@ -67,7 +67,7 @@ No hay datos de rendimiento de este modelo que permitan una comparación cuantit
 
 | Modelo | Arquitectura | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Stepanovevg/swin-t-multitask-quantized | Swin-T multitarea (atención multi-query, gated fusion) | 33.088 según metadatos (no verificado) | no disponible | BSD-3-Clause | HuggingFace, sin checkpoint entrenado |
+| Stepanovevg/swin-t-multitask-quantized | Swin-T multitarea (atención multi-query, gated fusion) | 33.088 según metadatos (no verificado) | no disponible | BSD-3-Clause | Hugging Face, sin checkpoint entrenado |
 | Swin Transformer original (Microsoft) | Swin jerárquico con ventanas desplazadas | no disponible en esta fuente | no disponible | MIT | pesos preentrenados y código públicos |
 | ViT (Google) | Transformer de visión con atención global | no disponible en esta fuente | no disponible | Apache-2.0 | pesos preentrenados públicos |
 | ConvNeXt | CNN moderna con diseño inspirado en transformers | no disponible en esta fuente | no disponible | MIT | pesos preentrenados públicos |
@@ -89,6 +89,6 @@ Los datos de parámetros, contexto y licencias de las alternativas no proceden d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stepanovevg/swin-t-multitask-quantized
+- Modelo en Hugging Face: https://huggingface.co/Stepanovevg/swin-t-multitask-quantized
 - Archivos incluidos en el repositorio: `main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados al modelo en la búsqueda web realizada; los resultados devueltos por dicha búsqueda no guardan relación con el modelo y se han descartado por no ser fuentes fiables ni pertinentes.

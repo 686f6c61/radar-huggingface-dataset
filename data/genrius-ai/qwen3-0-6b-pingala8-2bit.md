@@ -38,7 +38,7 @@ En cuanto a datos de entrenamiento del modelo base (número de tokens, composici
 ## Casos de uso
 
 - Ejecucion en dispositivos con limite duro de memoria: cuando el despliegue solo dispone de ~0,3 GB para pesos (por ejemplo, un dispositivo de borde con RAM minima), este fichero es una de las pocas opciones que mantiene un modelo funcional a ese tamaño.
-- Demostraciones y prototipado en navegador o CPU: el proyecto ofrece un Space de HuggingFace con demo en vivo de la variante 1.7B sobre CPU, util para probar la familia Pingala-8 sin instalar nada.
+- Demostraciones y prototipado en navegador o CPU: el proyecto ofrece un Space de Hugging Face con demo en vivo de la variante 1.7B sobre CPU, util para probar la familia Pingala-8 sin instalar nada.
 - Investigacion en compresion de modelos: al publicar codigo, parches de runtime y paper, es un buen punto de partida para estudiar codificacion trellis aplicada a LLM.
 - Chatbot ligero offline en inglés o chino: para asistentes simples de un turno o pocos turnos donde la calidad del lenguaje puede ser modesta a cambio de una huella minima.
 - Pruebas de regresion de runtimes de cuantizacion: util como caso extremo para validar implementaciones de decodificacion trellis en llama.cpp parcheado.
@@ -100,7 +100,7 @@ En calidad pura, Q8_0 sigue siendo muy superior; Pingala-8 gana solo cuando el t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Genrius-AI/Qwen3-0.6B-Pingala8-2bit
+- Modelo en Hugging Face: https://huggingface.co/Genrius-AI/Qwen3-0.6B-Pingala8-2bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Codigo y parches de runtime: https://github.com/Genrius-AI/pingala8-llm
 - Release v2.5 (runtime one-click): https://github.com/Genrius-AI/pingala8-llm/releases/tag/v2.5

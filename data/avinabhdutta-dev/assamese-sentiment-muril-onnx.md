@@ -72,4 +72,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 - Repositorio original (modelo fine-tuneado): https://huggingface.co/AvinabhDutta-Dev/assamese-sentiment-muril
 - GitHub del estudio comparativo: https://github.com/AvinabhDutta-Dev/assamese-sentiment-analysis
 - GitHub de la demo en vivo: https://github.com/AvinabhDutta-Dev/assamese-sentiment-live-demo
-- Perfil del autor en HuggingFace: https://huggingface.co/AvinabhDutta-Dev
+- Perfil del autor en Hugging Face: https://huggingface.co/AvinabhDutta-Dev

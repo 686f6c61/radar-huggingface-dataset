@@ -102,7 +102,7 @@ El modelo no es funcionalmente comparable a alternativas de instrucciones o de c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/parth12-ui/anlp-a2-optim-lion
+- Hugging Face: https://huggingface.co/parth12-ui/anlp-a2-optim-lion
 - Dataset de entrenamiento: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - Paper del optimizador Lion (Symbolic Discovery of Optimization Algorithms): https://arxiv.org/abs/2302.06675
 - Repositorio de referencia de Lion: https://github.com/google/automl/tree/master/lion

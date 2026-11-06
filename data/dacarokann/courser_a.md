@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Courser_a es un modelo de lenguaje de código abierto publicado por el usuario dacarokann en HuggingFace. Se trata de un fine-tuning por supervisión (SFT) del modelo base unsloth/Qwen3.6-35B-A3B, un modelo de arquitectura Mixture of Experts (MoE) de 35 mil millones de parámetros totales con 3 mil millones activos, perteneciente a la familia Qwen3.6. El entrenamiento se realizó con la librería TRL (Transformers Reinforcement Learning) y Unsloth, lo que sugiere un ajuste eficiente en términos de memoria y tiempo.
+Courser_a es un modelo de lenguaje de código abierto publicado por el usuario dacarokann en Hugging Face. Se trata de un fine-tuning por supervisión (SFT) del modelo base unsloth/Qwen3.6-35B-A3B, un modelo de arquitectura Mixture of Experts (MoE) de 35 mil millones de parámetros totales con 3 mil millones activos, perteneciente a la familia Qwen3.6. El entrenamiento se realizó con la librería TRL (Transformers Reinforcement Learning) y Unsloth, lo que sugiere un ajuste eficiente en términos de memoria y tiempo.
 
 La información pública disponible es mínima: no se especifica la licencia, los idiomas soportados, el dataset de entrenamiento ni los benchmarks. El modelo se publicó en agosto de 2026 con cero descargas y cero likes, lo que indica que es un experimento reciente o un prototipo sin validación comunitaria. A pesar de la escasez de datos, su base sobre Qwen3.6-35B-A3B permite inferir capacidades generales de razonamiento, generación de texto y soporte multilingüe, aunque estas características no están confirmadas para el fine-tuning concreto.
 
@@ -79,7 +79,7 @@ La comparacion con alternativas como Llama 3.1 8B o Mistral 7B no es directa por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dacarokann/Courser_a
+- Modelo en Hugging Face: https://huggingface.co/dacarokann/Courser_a
 - Modelo base unsloth/Qwen3.6-35B-A3B: https://huggingface.co/unsloth/Qwen3.6-35B-A3B
 - Repositorio TRL: https://github.com/huggingface/trl
 - No se encontraron papers, blogs ni demos adicionales sobre este modelo concreto en la busqueda web.

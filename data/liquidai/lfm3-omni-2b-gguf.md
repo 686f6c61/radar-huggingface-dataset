@@ -71,8 +71,8 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 | Modelo | Parámetros | Contexto | Modalidades | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LFM3-Omni-2B-GGUF (este) | 1,73 B | No disponible | Texto, imagen, vídeo (no en llama.cpp), audio; salida texto y voz | LFM1.0 | GGUF | HuggingFace, requiere llama.cpp con PR #31257 |
-| LFM3-Omni-2B (base) | 1,73 B | No disponible | Texto, imagen, vídeo, audio; salida texto y voz | LFM1.0 | No disponible | HuggingFace |
+| LFM3-Omni-2B-GGUF (este) | 1,73 B | No disponible | Texto, imagen, vídeo (no en llama.cpp), audio; salida texto y voz | LFM1.0 | GGUF | Hugging Face, requiere llama.cpp con PR #31257 |
+| LFM3-Omni-2B (base) | 1,73 B | No disponible | Texto, imagen, vídeo, audio; salida texto y voz | LFM1.0 | No disponible | Hugging Face |
 | Otras alternativas ómnimodales | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/LiquidAI/LFM3-Omni-2B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/LiquidAI/LFM3-Omni-2B-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Blog de la familia LFM3: https://www.liquid.ai/blog/lfm3
 - Documentación de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`marciano1111/blackhair` es un adaptador LoRA de tipo DreamBooth para generación de imágenes a partir de texto (text-to-image), publicado en HuggingFace por el usuario marciano1111. No se trata de un modelo completo, sino de un ajuste ligero que se carga sobre el modelo base Krea 2: según la model card, se entrenó sobre Krea 2 RAW y se muestra funcionando sobre Krea 2 Turbo, la variante destilada para pocos pasos de inferencia. El repositorio ocupa 0,8 GB y se distribuye bajo licencia Apache 2.0.
+`marciano1111/blackhair` es un adaptador LoRA de tipo DreamBooth para generación de imágenes a partir de texto (text-to-image), publicado en Hugging Face por el usuario marciano1111. No se trata de un modelo completo, sino de un ajuste ligero que se carga sobre el modelo base Krea 2: según la model card, se entrenó sobre Krea 2 RAW y se muestra funcionando sobre Krea 2 Turbo, la variante destilada para pocos pasos de inferencia. El repositorio ocupa 0,8 GB y se distribuye bajo licencia Apache 2.0.
 
 El adaptador introduce un concepto concreto que se invoca mediante el token disparador `vkr woman`. Los tres ejemplos publicados por el autor (armadura neón en un rascacielos cyberpunk, retrato en un campo de lavanda, estratega medieval en una sala de guerra) corresponden al mismo token, lo que sugiere que el LoRA codifica una identidad o un estilo de personaje femenino y no una estética genérica. La model card no describe el dataset de entrenamiento, el número de pasos, el rango del adaptador ni la composición de las imágenes usadas.
 
@@ -77,9 +77,9 @@ La categoría es "adaptador LoRA de concepto para modelos de difusión text-to-i
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| marciano1111/blackhair | LoRA DreamBooth sobre Krea 2 | No disponible (repo de 0,8 GB) | No aplica | Apache 2.0 (adaptador) | HuggingFace, 0 descargas |
-| LoRA típico para Stable Diffusion XL | LoRA de concepto o estilo | Órdenes de magnitud de decenas a cientos de MB en fp16 | Condicionamiento textual de SDXL (75 tokens por bloque) | Variable, habitualmente CreativeML Open RAIL++-M | Amplia en HuggingFace y Civitai |
-| LoRA típico para Flux.1 dev | LoRA de concepto o estilo | Similar al caso anterior | Condicionamiento con T5-XXL, hasta 512 tokens | FLUX.1 [dev] Non-Commercial License (restringe uso comercial) | Amplia en HuggingFace |
+| marciano1111/blackhair | LoRA DreamBooth sobre Krea 2 | No disponible (repo de 0,8 GB) | No aplica | Apache 2.0 (adaptador) | Hugging Face, 0 descargas |
+| LoRA típico para Stable Diffusion XL | LoRA de concepto o estilo | Órdenes de magnitud de decenas a cientos de MB en fp16 | Condicionamiento textual de SDXL (75 tokens por bloque) | Variable, habitualmente CreativeML Open RAIL++-M | Amplia en Hugging Face y Civitai |
+| LoRA típico para Flux.1 dev | LoRA de concepto o estilo | Similar al caso anterior | Condicionamiento con T5-XXL, hasta 512 tokens | FLUX.1 [dev] Non-Commercial License (restringe uso comercial) | Amplia en Hugging Face |
 
 No se dispone de datos de rendimiento comparado (FID, CLIP, preferencia humana) para ninguno de los tres casos en la información proporcionada, por lo que la comparación se limita a tipo de artefacto, licencia y disponibilidad.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparado (FID, CLIP, preferencia humana) 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/marciano1111/blackhair
+- Página del modelo en Hugging Face: https://huggingface.co/marciano1111/blackhair
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Raw
-- Organización Krea en HuggingFace (variante Turbo mencionada en la model card): https://huggingface.co/krea
+- Organización Krea en Hugging Face (variante Turbo mencionada en la model card): https://huggingface.co/krea
 - La búsqueda web no devolvió papers, blogs, repositorios ni demos relevantes sobre este adaptador ni sobre Krea 2. Los únicos resultados obtenidos pertenecían a sitios de contenido para adultos y se han descartado por no ser pertinentes.

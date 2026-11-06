@@ -4,7 +4,7 @@
 
 El modelo `ted88168/pi05_so101_0812_merged` es un fine-tune del modelo base `lerobot/pi05_base`, que a su vez es una implementación en LeRobot del modelo π₀.₅ (Pi05) desarrollado por Physical Intelligence. Pi05 es un modelo de visión-lenguaje-acción (VLA) diseñado para la generalización en robótica, capaz de controlar robots en entornos y situaciones no vistas durante el entrenamiento. Este fine-tune concreto se ha entrenado para una tarea específica de manipulación: "Grab the lego" (coger una pieza de Lego), utilizando un robot tipo `so_follower` con dos cámaras (handeye y front).
 
-El modelo tiene 4.143.404.816 parámetros (aproximadamente 4,14 mil millones) y se distribuye en formato safetensors, con un tamaño de repositorio de 9,4 GB. Está licenciado bajo Apache 2.0, lo que permite uso comercial y modificación. Fue creado el 14 de agosto de 2026 y no cuenta con descargas ni valoraciones en HuggingFace. Es relevante porque demuestra el flujo de fine-tuning de un VLA de última generación sobre un dataset propio, siguiendo el ecosistema LeRobot, y puede servir como referencia para desarrolladores que quieran adaptar Pi05 a sus propios robots y tareas.
+El modelo tiene 4.143.404.816 parámetros (aproximadamente 4,14 mil millones) y se distribuye en formato safetensors, con un tamaño de repositorio de 9,4 GB. Está licenciado bajo Apache 2.0, lo que permite uso comercial y modificación. Fue creado el 14 de agosto de 2026 y no cuenta con descargas ni valoraciones en Hugging Face. Es relevante porque demuestra el flujo de fine-tuning de un VLA de última generación sobre un dataset propio, siguiendo el ecosistema LeRobot, y puede servir como referencia para desarrolladores que quieran adaptar Pi05 a sus propios robots y tareas.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento comparativos en la información proporcion
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/ted88168/pi05_so101_0812_merged)
+- [Hugging Face del modelo](https://huggingface.co/ted88168/pi05_so101_0812_merged)
 - [Modelo base lerobot/pi05_base](https://huggingface.co/lerobot/pi05_base)
 - [Dataset de entrenamiento ted88168/demov0805_merged](https://huggingface.co/datasets/ted88168/demov0805_merged)
 - [Blog de Physical Intelligence sobre Pi05](https://www.physicalintelligence.company/blog/pi05)

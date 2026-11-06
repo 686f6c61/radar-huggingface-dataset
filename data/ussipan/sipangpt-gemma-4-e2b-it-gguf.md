@@ -70,7 +70,7 @@ La información proporcionada no incluye datos verificados de los modelos altern
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| sipangpt-gemma-4-e2b-it-gguf | 4,63 mil millones | no disponible | no disponible | GGUF | HuggingFace (ussipan) |
+| sipangpt-gemma-4-e2b-it-gguf | 4,63 mil millones | no disponible | no disponible | GGUF | Hugging Face (ussipan) |
 | Gemma 3n E2B | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Gemma 3 4B | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Qwen2.5-VL-3B | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
@@ -90,7 +90,7 @@ Se recomienda realizar una evaluación propia antes de asumir equivalencias: la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ussipan/sipangpt-gemma-4-e2b-it-gguf
+- Hugging Face: https://huggingface.co/ussipan/sipangpt-gemma-4-e2b-it-gguf
 - Unsloth (herramienta de conversión citada en la model card): https://github.com/unslothai/unsloth
 
 No se han encontrado otros enlaces relevantes (papers, blogs o repositorios) en la búsqueda web realizada; los resultados obtenidos no guardan relación con el modelo.

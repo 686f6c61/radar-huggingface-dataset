@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Arquitectura | Tareas | Resolucion | Disponibilidad | Licencia |
 |---|---|---|---|---|---|---|
-| Wan2.2-TI2V-5B (este) | 5B | Difusion con VAE 16x16x4 | T2V + I2V, 24 fps | 720p | HuggingFace y ModelScope, Diffusers y ComfyUI | Apache-2.0 |
-| Wan2.2-T2V-A14B | 14B (MoE) | Difusion con MoE | T2V | 480p y 720p | HuggingFace y ModelScope | No especificada en la informacion proporcionada |
-| Wan2.2-I2V-A14B | 14B (MoE) | Difusion con MoE | I2V | 480p y 720p | HuggingFace y ModelScope | No especificada en la informacion proporcionada |
-| Wan2.1 | No disponible | Difusion | T2V / I2V | No disponible | HuggingFace (repositorio previo) | No especificada en la informacion proporcionada |
+| Wan2.2-TI2V-5B (este) | 5B | Difusion con VAE 16x16x4 | T2V + I2V, 24 fps | 720p | Hugging Face y ModelScope, Diffusers y ComfyUI | Apache-2.0 |
+| Wan2.2-T2V-A14B | 14B (MoE) | Difusion con MoE | T2V | 480p y 720p | Hugging Face y ModelScope | No especificada en la informacion proporcionada |
+| Wan2.2-I2V-A14B | 14B (MoE) | Difusion con MoE | I2V | 480p y 720p | Hugging Face y ModelScope | No especificada en la informacion proporcionada |
+| Wan2.1 | No disponible | Difusion | T2V / I2V | No disponible | Hugging Face (repositorio previo) | No especificada en la informacion proporcionada |
 
 El criterio de eleccion dentro de la propia familia es claro: el TI2V-5B es la variante orientada a coste y latencia, ejecutable en una GPU de consumo, mientras que las A14B priorizan capacidad del modelo mediante MoE y cubren 480p ademas de 720p. No se dispone de datos numericos que permitan comparar la calidad relativa entre ellas ni frente a modelos cerrados.
 
@@ -98,7 +98,7 @@ El criterio de eleccion dentro de la propia familia es claro: el TI2V-5B es la v
 
 - Repositorio analizado: https://huggingface.co/Yuro1991/Wan2.2-TI2V-5B
 - Checkpoint oficial del mismo modelo: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
-- Organizacion oficial en HuggingFace: https://huggingface.co/Wan-AI/
+- Organizacion oficial en Hugging Face: https://huggingface.co/Wan-AI/
 - Repositorio de codigo e inferencia: https://github.com/Wan-Video/Wan2.2
 - Repositorio del modelo predecesor: https://github.com/Wan-Video/Wan2.1
 - Informe tecnico (arXiv:2503.20314): https://arxiv.org/abs/2503.20314

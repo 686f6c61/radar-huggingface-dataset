@@ -80,7 +80,7 @@ La diferencia principal es que el repositorio Goblin añade la ruta de video de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/glowskeleton/goblin-models
+- Repositorio Hugging Face: https://huggingface.co/glowskeleton/goblin-models
 - Proyecto Goblin (GitHub): https://github.com/rotoshake/Goblin
 - Herramienta de reescritura de ViTMatte: https://github.com/rotoshake/Goblin/blob/main/tools/ml/rewrite_vitmatte_einsum.py
 - Modelo original de ViTMatte: https://huggingface.co/Xenova/vitmatte-small-composition-1k

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mdagosta/waldito-python-basics-v1-r0006-u2-mdagosta-b es un modelo de generacion de texto publicado por el usuario mdagosta en HuggingFace, construido sobre la arquitectura Llama causal-language-model estandar de Transformers y exportado bajo el formato que el autor denomina "OpenWALDO model export". Con 9.541.632 parametros totales segun los pesos en safetensors, se trata de un modelo de escala muy reducida (del orden de 9,5 millones de parametros), muy por debajo de los modelos conversacionales habituales, lo que lo situa en la categoria de modelos experimentales o de investigacion mas que en la de asistentes de proposito general.
+mdagosta/waldito-python-basics-v1-r0006-u2-mdagosta-b es un modelo de generacion de texto publicado por el usuario mdagosta en Hugging Face, construido sobre la arquitectura Llama causal-language-model estandar de Transformers y exportado bajo el formato que el autor denomina "OpenWALDO model export". Con 9.541.632 parametros totales segun los pesos en safetensors, se trata de un modelo de escala muy reducida (del orden de 9,5 millones de parametros), muy por debajo de los modelos conversacionales habituales, lo que lo situa en la categoria de modelos experimentales o de investigacion mas que en la de asistentes de proposito general.
 
 La model card es extremadamente escueta: unicamente indica la arquitectura, el uso de un tokenizer de bytes propio ("schema-1 byte tokenizer" de OpenWALDO) que requiere `trust_remote_code=True`, y la presencia de dos ficheros de inventario (`BOM.json` y `EU-BOM.json`) orientados al cumplimiento del reglamento europeo de IA (EU GPAI). El nombre del repositorio sugiere un entrenamiento orientado a "python basics", pero no se documenta ni el dataset, ni el numero de tokens, ni el proceso de alineacion.
 
@@ -35,12 +35,12 @@ No hay informacion sobre el volumen de datos de entrenamiento, la composicion de
 - Soporte de agentes y razonamiento multi-paso: no disponible; con 9,5 millones de parametros no cabe esperar capacidades de planificacion fiables.
 - Capacidades multilingues: no disponible; no se declara ningun idioma en la ficha.
 - Capacidades especiales (modo thinking, vision, audio): no disponible; no se declara ninguna.
-- Compatibilidad de despliegue: las etiquetas incluyen `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad declarada con TGI y con los endpoints de HuggingFace.
+- Compatibilidad de despliegue: las etiquetas incluyen `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad declarada con TGI y con los endpoints de Hugging Face.
 
 ## Casos de uso
 
 - Experimentacion con tokenizers de bytes: permite estudiar el comportamiento de un tokenizer schema-1 basado en bytes frente a tokenizers BPE entrenados, midiendo el ratio de tokens por palabra y su efecto en la longitud efectiva de contexto.
-- Docencia sobre ciclo de vida de modelos: sirve como ejemplo minimo (menos de 10 millones de parametros) para ilustrar el pipeline completo de carga con `trust_remote_code=True`, inferencia con Transformers y publicacion en HuggingFace.
+- Docencia sobre ciclo de vida de modelos: sirve como ejemplo minimo (menos de 10 millones de parametros) para ilustrar el pipeline completo de carga con `trust_remote_code=True`, inferencia con Transformers y publicacion en Hugging Face.
 - Pruebas de trazabilidad y cumplimiento normativo: los ficheros `BOM.json` y `EU-BOM.json` lo convierten en un caso de estudio util para equipos que necesiten implementar divulgacion de contenido de entrenamiento conforme al reglamento europeo de IA.
 - Validacion de infraestructura de despliegue: al ser un modelo de ~19 MB en fp16, permite verificar configuraciones de TGI, endpoints compatibles o pipelines de CI sin consumir recursos de GPU significativos.
 - Generacion de fragmentos de codigo Python de nivel introductorio: si el ajuste "python-basics" es real, podria emplearse para producir ejemplos de sintaxis basica, aunque sin benchmarks que respalden su calidad.
@@ -67,10 +67,10 @@ No se dispone de modelos directamente comparables de ~9,5 millones de parametros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| waldito-python-basics-v1-r0006-u2-mdagosta-b | 9.541.632 | no disponible | no disponible | HuggingFace |
-| distilgpt2 | 82 millones | 1.024 tokens | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B | 1.100 millones | 2.048 tokens | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B | 494 millones | 32.768 tokens | Apache 2.0 | HuggingFace |
+| waldito-python-basics-v1-r0006-u2-mdagosta-b | 9.541.632 | no disponible | no disponible | Hugging Face |
+| distilgpt2 | 82 millones | 1.024 tokens | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B | 1.100 millones | 2.048 tokens | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B | 494 millones | 32.768 tokens | Apache 2.0 | Hugging Face |
 
 No hay datos de rendimiento publicados para el modelo objeto de esta ficha que permitan establecer una comparacion cuantitativa con las alternativas anteriores.
 
@@ -88,7 +88,7 @@ No hay datos de rendimiento publicados para el modelo objeto de esta ficha que p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0006-u2-mdagosta-b
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0006-u2-mdagosta-b
 - Variante relacionada del mismo autor (waldito-python-basics-v1-r0003-u1): https://huggingface.co/mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta-b
 - Documentacion de la libreria Transformers: https://huggingface.co/docs/transformers
 - Informacion sobre text-generation-inference: https://huggingface.co/docs/text-generation-inference

@@ -74,8 +74,8 @@ No se conocen adaptadores públicos directamente comparables (LLM pequeños dest
 
 | Modelo | Parámetros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | 0,8 B + LoRA | No disponible | 84,5 % de acierto; 75 % de éxito en 20 episodios | Apache 2.0 | HuggingFace (adaptador) |
-| Qwen3.5-0.8B sin ajustar | 0,8 B | No disponible | 42,4 % de acierto; 0 % de éxito | No disponible en la información | HuggingFace |
+| LINK-01 (este modelo) | 0,8 B + LoRA | No disponible | 84,5 % de acierto; 75 % de éxito en 20 episodios | Apache 2.0 | Hugging Face (adaptador) |
+| Qwen3.5-0.8B sin ajustar | 0,8 B | No disponible | 42,4 % de acierto; 0 % de éxito | No disponible en la información | Hugging Face |
 | Política PPO profesora | No es un LLM (red de política) | No aplica | 100 % de acierto; 100 % de éxito | No disponible | Entorno web del proyecto |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se conocen adaptadores públicos directamente comparables (LLM pequeños dest
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tskim81/connectailab-rl-kimtaesun-avoid-obstacles-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/tskim81/connectailab-rl-kimtaesun-avoid-obstacles-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código (CONNECT TYCOON): https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

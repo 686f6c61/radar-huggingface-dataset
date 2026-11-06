@@ -86,7 +86,7 @@ No se dispone de adaptadores LoRA comparables de otros autores para la misma tar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Relieq/lab21-2A202601055-qwen35-triage-vi
+- Hugging Face: https://huggingface.co/Relieq/lab21-2A202601055-qwen35-triage-vi
 - Repositorio GitHub del autor (report y artefactos): https://github.com/HVNhan-Relieq/lab21-2A202601055
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Reporte técnico de Qwen3.5-Omni: https://arxiv.org/pdf/2604.15804

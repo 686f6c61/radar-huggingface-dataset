@@ -78,7 +78,7 @@ La discrepancia en el numero de parametros hace que esta version no sea directam
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pyros-vault/Qwen3.8-27B-Uncensored-oQ4e-fp16-mtp
+- Repositorio Hugging Face: https://huggingface.co/pyros-vault/Qwen3.8-27B-Uncensored-oQ4e-fp16-mtp
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Version uncensored de JonathanColetti: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
 - Repositorio GitHub con instrucciones para GGUF/Ollama: https://github.com/Wassimyounes01/qwen38-uncensored

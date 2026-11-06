@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cortex-ai es un repositorio publicado en HuggingFace por la organizacion Frankenstein-Labs bajo el identificador `Frankenstein-Labs/Cortex-ai`. En el momento de la consulta, la model card asociada esta practicamente vacia: su unico contenido es el bloque de metadatos con `license: apache-2.0`, sin cuerpo de texto, sin descripcion del modelo, sin arquitectura declarada y sin pipeline asignado. El repositorio acumula 0 descargas y 0 likes, y sus unicos tags son `license:apache-2.0` y `region:us`.
+Cortex-ai es un repositorio publicado en Hugging Face por la organizacion Frankenstein-Labs bajo el identificador `Frankenstein-Labs/Cortex-ai`. En el momento de la consulta, la model card asociada esta practicamente vacia: su unico contenido es el bloque de metadatos con `license: apache-2.0`, sin cuerpo de texto, sin descripcion del modelo, sin arquitectura declarada y sin pipeline asignado. El repositorio acumula 0 descargas y 0 likes, y sus unicos tags son `license:apache-2.0` y `region:us`.
 
 Esto significa que no hay informacion publica verificable sobre el problema que resuelve, su arquitectura, su tamano, su ventana de contexto, sus idiomas o el formato de sus pesos. La fecha de creacion y de ultima actualizacion registradas son identicas (2026-09-16T14:27:58Z), lo que indica que no ha habido actividad posterior a la publicacion inicial, y ademas esa marca temporal es posterior a la fecha habitual de referencia, un indicio de posible repositorio de prueba, placeholder o metadato anomalo.
 
@@ -93,6 +93,6 @@ No disponible. Al desconocerse el numero de parametros, la arquitectura, la moda
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Frankenstein-Labs/Cortex-ai
+- Repositorio en Hugging Face: https://huggingface.co/Frankenstein-Labs/Cortex-ai
 - Pagina de la organizacion: https://huggingface.co/Frankenstein-Labs (no verificada en la informacion proporcionada)
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre el modelo. Las referencias devueltas corresponden a la novela de Mary Shelley y a adaptaciones audiovisuales (Wikipedia en frances e ingles, resumenes literarios y ficha de Netflix), sin relacion con el repositorio.

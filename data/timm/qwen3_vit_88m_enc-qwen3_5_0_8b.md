@@ -85,10 +85,10 @@ Advertencia: los datos de los modelos comparados no forman parte de la informaci
 
 | Modelo | Parámetros | Entrada / parches | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3_vit_88m_enc.qwen3_5_0_8b | 100,0 M | 768×768, divisible por 16 (32 con merger) | 576 tokens de 1024 dim (proyectados) o mapa 48×48×768 (crudo) | Apache 2.0 | HuggingFace (timm), 0 descargas |
-| DINOv2 ViT-B/14 | ≈86 M (referencia externa) | Parches 14×14 (referencia externa) | *Embeddings* auto-supervisados | Apache 2.0 (referencia externa) | HuggingFace / torch.hub |
-| SigLIP ViT-B/16 | ≈93 M (referencia externa) | Parches 16×16 (referencia externa) | *Embeddings* alineados con texto | Apache 2.0 (referencia externa) | HuggingFace |
-| CLIP ViT-B/16 (torre de visión) | ≈86 M (referencia externa) | 224×224 (referencia externa) | *Embeddings* alineados con texto | MIT (referencia externa) | HuggingFace / OpenCLIP |
+| qwen3_vit_88m_enc.qwen3_5_0_8b | 100,0 M | 768×768, divisible por 16 (32 con merger) | 576 tokens de 1024 dim (proyectados) o mapa 48×48×768 (crudo) | Apache 2.0 | Hugging Face (timm), 0 descargas |
+| DINOv2 ViT-B/14 | ≈86 M (referencia externa) | Parches 14×14 (referencia externa) | *Embeddings* auto-supervisados | Apache 2.0 (referencia externa) | Hugging Face / torch.hub |
+| SigLIP ViT-B/16 | ≈93 M (referencia externa) | Parches 16×16 (referencia externa) | *Embeddings* alineados con texto | Apache 2.0 (referencia externa) | Hugging Face |
+| CLIP ViT-B/16 (torre de visión) | ≈86 M (referencia externa) | 224×224 (referencia externa) | *Embeddings* alineados con texto | MIT (referencia externa) | Hugging Face / OpenCLIP |
 
 Diferencias cualitativas relevantes: el modelo de timm es el único de la tabla que incorpora el *spatial merger* y la proyección al ancho de un LLM concreto (1024), lo que lo hace directamente conectable a la pila de Qwen3.5; a cambio, carece de cabeza de clasificación y de alineación explícita con texto, algo que sí ofrecen SigLIP y CLIP. Los datos de rendimiento comparativo no están disponibles.
 
@@ -107,13 +107,13 @@ Diferencias cualitativas relevantes: el modelo de timm es el único de la tabla 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/qwen3_vit_88m_enc.qwen3_5_0_8b
+- Modelo en Hugging Face: https://huggingface.co/timm/qwen3_vit_88m_enc.qwen3_5_0_8b
 - Modelo base Qwen/Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Revisión del modelo fuente: https://huggingface.co/Qwen/Qwen3.5-0.8B/tree/2fc06364715b967f1860aea9cf38778875588b17
 - Licencia del modelo fuente: https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/2fc06364715b967f1860aea9cf38778875588b17/LICENSE
 - Blog de Qwen3.5: Towards Native Multimodal Agents: https://qwen.ai/blog?id=qwen3.5
 - Repositorio PyTorch Image Models (timm): https://github.com/huggingface/pytorch-image-models
-- Organización timm en HuggingFace: https://huggingface.co/timm
-- Documentación de timm en HuggingFace: https://huggingface.co/docs/timm/index
+- Organización timm en Hugging Face: https://huggingface.co/timm
+- Documentación de timm en Hugging Face: https://huggingface.co/docs/timm/index
 - Paquete timm en PyPI: https://pypi.org/project/timm/
 - Documentación de timm (fast.ai): https://timm.fast.ai/

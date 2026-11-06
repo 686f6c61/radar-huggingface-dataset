@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mohosin-m/tartanimuch` es un repositorio alojado en HuggingFace bajo la cuenta del usuario `mohosin-m`. En el momento de la consulta, el repositorio no contiene pesos, configuracion, tokenizador ni documentacion tecnica: su tamano declarado es de 0,0 GB, no tiene pipeline asignado, no acumula descargas ni likes, y la unica informacion disponible en la model card es la declaracion de licencia (`license: mit`). No existe por tanto informacion publica sobre arquitectura, parametros, contexto, datos de entrenamiento o capacidades.
+`mohosin-m/tartanimuch` es un repositorio alojado en Hugging Face bajo la cuenta del usuario `mohosin-m`. En el momento de la consulta, el repositorio no contiene pesos, configuracion, tokenizador ni documentacion tecnica: su tamano declarado es de 0,0 GB, no tiene pipeline asignado, no acumula descargas ni likes, y la unica informacion disponible en la model card es la declaracion de licencia (`license: mit`). No existe por tanto informacion publica sobre arquitectura, parametros, contexto, datos de entrenamiento o capacidades.
 
 La busqueda web asociada al termino "tartanimu" devuelve resultados de un proyecto distinto, TartanIMU, un modelo fundacional de posicionamiento inercial para robotica presentado en CVPR 2025 por el laboratorio AirLab y con repositorio en `superxslam/TartanIMU`. No hay ninguna evidencia en la informacion proporcionada de que el repositorio `mohosin-m/tartanimuch` guarde relacion con ese proyecto; la coincidencia parcial de nombre no debe interpretarse como vinculacion tecnica ni autoria compartida. Se documenta aqui unicamente como posible fuente de confusion nominal.
 
@@ -75,8 +75,8 @@ No disponible. Sin informacion sobre arquitectura, parametros, contexto o rendim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mohosin-m/tartanimuch
+- Repositorio en Hugging Face: https://huggingface.co/mohosin-m/tartanimuch
 - TartanIMU, pagina del proyecto (posible confusion nominal, sin relacion confirmada): https://superodometry.com/tartanimu
 - TartanIMU, repositorio en GitHub (posible confusion nominal, sin relacion confirmada): https://github.com/superxslam/TartanIMU
-- Repositorio en HuggingFace con nombre similar (posible confusion nominal, sin relacion confirmada): https://huggingface.co/hoppery/tartanimu-iros2026-mobilityai/tree/main
+- Repositorio en Hugging Face con nombre similar (posible confusion nominal, sin relacion confirmada): https://huggingface.co/hoppery/tartanimu-iros2026-mobilityai/tree/main
 - Directorio de modelos de IA citado en los resultados de busqueda, sin relacion confirmada con este repositorio: https://aimodels.org/

@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks de tarea en la informacion disponib
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sambal/k2-horizon-3.7b-lndpo-rpo-full-checkpoint-400 | 5.058 M (nominal 3.7B) | hasta 65.536 en entrenamiento | DPO length-normalized + RPO, dominio petrofisica | apache-2.0 | HuggingFace |
-| sambal/k2-horizon-3.7b-lndpo-rpo-full-checkpoint-300 | mismo base | idem | misma receta, paso 300 | apache-2.0 | HuggingFace |
-| sambal/k2-horizon-7b-lndpo-rpo-full-checkpoint-300 | base 7B | no disponible | misma receta sobre 7B | no disponible | HuggingFace |
-| IFM/K2-Horizon-3.7B (base) | 3.7B nominal | no disponible | modelo base sin alinear | no disponible | HuggingFace |
+| sambal/k2-horizon-3.7b-lndpo-rpo-full-checkpoint-400 | 5.058 M (nominal 3.7B) | hasta 65.536 en entrenamiento | DPO length-normalized + RPO, dominio petrofisica | apache-2.0 | Hugging Face |
+| sambal/k2-horizon-3.7b-lndpo-rpo-full-checkpoint-300 | mismo base | idem | misma receta, paso 300 | apache-2.0 | Hugging Face |
+| sambal/k2-horizon-7b-lndpo-rpo-full-checkpoint-300 | base 7B | no disponible | misma receta sobre 7B | no disponible | Hugging Face |
+| IFM/K2-Horizon-3.7B (base) | 3.7B nominal | no disponible | modelo base sin alinear | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento con alternativas de la misma categoria.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento con alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sambal/k2-horizon-3.7b-lndpo-rpo-full-checkpoint-400
+- Modelo en Hugging Face: https://huggingface.co/sambal/k2-horizon-3.7b-lndpo-rpo-full-checkpoint-400
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-3.7B
 - Dataset de preferencias: https://huggingface.co/datasets/sambal/welllog-dpo-pairs
 - Checkpoint 300 de la misma receta: https://huggingface.co/sambal/k2-horizon-3.7b-lndpo-rpo-full-checkpoint-300

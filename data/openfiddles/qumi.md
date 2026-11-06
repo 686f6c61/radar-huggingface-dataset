@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenFiddles/Qumi es un repositorio de modelos alojado en HuggingFace por el usuario OpenFiddles. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos del repositorio: licencia GPL-3.0, etiqueta de region "us", cero descargas y cero "likes", y fechas de creacion y actualizacion del 17 de octubre de 2026. La model card no contiene mas contenido que el bloque de metadatos con la licencia; no hay descripcion, no hay arquitectura declarada, no hay tabla de parametros y no hay indicacion de pipeline.
+OpenFiddles/Qumi es un repositorio de modelos alojado en Hugging Face por el usuario OpenFiddles. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos del repositorio: licencia GPL-3.0, etiqueta de region "us", cero descargas y cero "likes", y fechas de creacion y actualizacion del 17 de octubre de 2026. La model card no contiene mas contenido que el bloque de metadatos con la licencia; no hay descripcion, no hay arquitectura declarada, no hay tabla de parametros y no hay indicacion de pipeline.
 
 Esto significa que no es posible determinar que tipo de modelo es (lenguaje, vision, audio, embeddings u otro), ni su tamano, ni su ventana de contexto, ni los idiomas que soporta. La ausencia de pipeline declarado y de contenido descriptivo impide tambien saber si se trata de un modelo entrenado desde cero, un fine-tuning, una merge de pesos o un artefacto auxiliar (tokenizer, adaptador, configuracion).
 
@@ -99,7 +99,7 @@ No disponible. Al desconocerse la categoria, el tamano y la modalidad del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OpenFiddles/Qumi
+- Repositorio en Hugging Face: https://huggingface.co/OpenFiddles/Qumi
 - Perfil del autor: https://huggingface.co/OpenFiddles
 - Texto de la licencia GPL-3.0: https://www.gnu.org/licenses/gpl-3.0.html
 

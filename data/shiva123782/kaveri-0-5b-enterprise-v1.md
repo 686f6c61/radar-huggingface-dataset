@@ -4,7 +4,7 @@
 
 Kaveri-0.5B-Enterprise-v1 es un modelo de lenguaje pequeno (SLM) de generacion de texto publicado por el usuario shiva123782 bajo la marca Kaveri Labs. No es un modelo entrenado desde cero: se trata de un adaptador LoRA (PEFT) ajustado sobre el modelo base Qwen2.5-0.5B-Instruct de Alibaba Cloud, con 0,5 mil millones de parametros. Resuelve el problema de obtener un asistente conversacional ligero y desplegable en hardware modesto, con un ajuste fino orientado a instrucciones sobre el dataset openassistant-guanaco.
 
-La relevancia del modelo es limitada y conviene ser honesto: cuenta con 0 descargas y 0 likes en HuggingFace, esta unicamente en ingles y su unico resultado declarado es una perdida de entrenamiento de 0,842, sin benchmarks estandar (MMLU, HumanEval, GSM8K). La model card incluye afirmaciones de marketing no verificadas ("Banking-Grade Security", "SMT Assurance", "EU AI Act verified") que no estan respaldadas por artefactos publicos comprobables. Debe evaluarse como un experimento de ajuste fino sobre Qwen2.5-0.5B, no como un modelo enterprise certificado.
+La relevancia del modelo es limitada y conviene ser honesto: cuenta con 0 descargas y 0 likes en Hugging Face, esta unicamente en ingles y su unico resultado declarado es una perdida de entrenamiento de 0,842, sin benchmarks estandar (MMLU, HumanEval, GSM8K). La model card incluye afirmaciones de marketing no verificadas ("Banking-Grade Security", "SMT Assurance", "EU AI Act verified") que no estan respaldadas por artefactos publicos comprobables. Debe evaluarse como un experimento de ajuste fino sobre Qwen2.5-0.5B, no como un modelo enterprise certificado.
 
 El contexto es el heredado de Qwen2.5-0.5B-Instruct (32.768 tokens segun la documentacion oficial de Qwen, aunque la model card de este adaptador no lo explicita) y la licencia es Apache-2.0, heredada del modelo base.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kaveri-0.5B-Enterprise-v1 | 0,5B (LoRA) | Heredado de Qwen2.5 (32.768 segun doc. Qwen) | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-0.5B-Instruct | 0,5B | 32.768 tokens | Apache-2.0 | HuggingFace, ampliamente usado |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache-2.0 | HuggingFace, ampliamente usado |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache-2.0 | HuggingFace, ampliamente usado |
+| Kaveri-0.5B-Enterprise-v1 | 0,5B (LoRA) | Heredado de Qwen2.5 (32.768 segun doc. Qwen) | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-0.5B-Instruct | 0,5B | 32.768 tokens | Apache-2.0 | Hugging Face, ampliamente usado |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache-2.0 | Hugging Face, ampliamente usado |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache-2.0 | Hugging Face, ampliamente usado |
 
 Kaveri-0.5B no aporta mejoras documentadas frente a su propio modelo base Qwen2.5-0.5B-Instruct, del que deriva; la unica diferencia es el ajuste LoRA sobre guanaco y el cambio de identidad. Para uso en produccion, el base original o variantes mayores (Qwen2.5-1.5B, SmolLM2-1.7B) ofrecen mayor capacidad y soporte comunitario.
 
@@ -87,7 +87,7 @@ Kaveri-0.5B no aporta mejoras documentadas frente a su propio modelo base Qwen2.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shiva123782/Kaveri-0.5B-Enterprise-v1
+- Modelo en Hugging Face: https://huggingface.co/shiva123782/Kaveri-0.5B-Enterprise-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/timdettmers/openassistant-guanaco
 - Libreria PEFT: https://github.com/huggingface/peft

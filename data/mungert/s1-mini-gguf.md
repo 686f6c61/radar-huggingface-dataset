@@ -77,7 +77,7 @@ No se dispone de información suficiente sobre modelos comparables en la informa
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/Mungert/s1-mini-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/Mungert/s1-mini-GGUF
 - Repositorio original (safetensors): https://huggingface.co/superwhisper/s1-mini
 - Repositorio GGUF original: https://huggingface.co/superwhisper/s1-mini-GGUF
 - Paper (arXiv): https://arxiv.org/abs/2505.09388

@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| ss-lab/LFM2.5-1.2B-Instruct-GGUF | 1,17B | no disponible | other | GGUF | HuggingFace |
-| LiquidAI/LFM2.5-1.2B-Instruct | 1,17B | no disponible | other | safetensors (original) | HuggingFace |
+| ss-lab/LFM2.5-1.2B-Instruct-GGUF | 1,17B | no disponible | other | GGUF | Hugging Face |
+| LiquidAI/LFM2.5-1.2B-Instruct | 1,17B | no disponible | other | safetensors (original) | Hugging Face |
 | Otros modelos ~1B de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación más directa es con el checkpoint original de Liquid AI, del que esta publicación es una conversión. No se dispone de información sobre modelos alternativos comparables en la documentación proporcionada.

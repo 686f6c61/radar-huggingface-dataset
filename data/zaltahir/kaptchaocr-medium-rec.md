@@ -93,7 +93,7 @@ Los datos de rendimiento de PP-OCRv6 base y ddddocr no se detallan en la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zaltahir/kaptchaocr-medium-rec
+- Hugging Face: https://huggingface.co/zaltahir/kaptchaocr-medium-rec
 - Colección de todos los modelos KaptchaOCR: https://huggingface.co/collections/zaltahir/kaptchaocr
 - Repositorio GitHub del proyecto: https://github.com/ozalt/kaptchaocr
 - Página de benchmarks: https://github.com/ozalt/kaptchaocr/blob/main/benchmarks/README.md

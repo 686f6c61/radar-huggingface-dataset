@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AuroraGPT-Qwen-Distill es un modelo de lenguaje conversacional de 707 millones de parámetros desarrollado por UltraLabs, publicado bajo el identificador SmallAICreator/AuroraGPT-Qwen-Distill en HuggingFace. Su propuesta principal es la tesis "posee el comportamiento, alquila los hechos": al ser un modelo pequeño, no puede memorizar el conocimiento mundial en sus pesos, pero puede aprender a comportarse como un asistente capaz y a utilizar herramientas externas (búsqueda web, calculadora, recuperación de URL) para compensar la falta de memoria paramétrica.
+AuroraGPT-Qwen-Distill es un modelo de lenguaje conversacional de 707 millones de parámetros desarrollado por UltraLabs, publicado bajo el identificador SmallAICreator/AuroraGPT-Qwen-Distill en Hugging Face. Su propuesta principal es la tesis "posee el comportamiento, alquila los hechos": al ser un modelo pequeño, no puede memorizar el conocimiento mundial en sus pesos, pero puede aprender a comportarse como un asistente capaz y a utilizar herramientas externas (búsqueda web, calculadora, recuperación de URL) para compensar la falta de memoria paramétrica.
 
 El modelo se construye a partir de una base preentrenada llamada AuroraGPT-700M, de estilo Llama, y se afina mediante destilación de comportamiento desde Qwen3-4B-Instruct, usando aproximadamente 9,4 millones de tokens de datos SFT en dos épocas. Incluye soporte de tool calling, un formato de chat propio (no ChatML) y una versión GGUF Q8_0 lista para ejecución en dispositivos móviles o de bajos recursos.
 
@@ -69,7 +69,7 @@ No se dispone de una comparativa publicada con modelos de tamano similar. Sin em
 |---|---|---|---|---|
 | AuroraGPT-Qwen-Distill | 707M | 2048 | Apache 2.0 | Destilado de Qwen3-4B, tool calling propio |
 | Qwen2.5-0.5B | 494M | 32k | Apache 2.0 | Modelo pequeno de Alibaba, sin tool calling nativo |
-| SmolLM2-1.7B | 1.7B | 2048 | Apache 2.0 | Modelo pequeno de HuggingFace, optimizado para dispositivos |
+| SmolLM2-1.7B | 1.7B | 2048 | Apache 2.0 | Modelo pequeno de Hugging Face, optimizado para dispositivos |
 
 No hay datos de benchmarks que permitan una comparacion objetiva de rendimiento. La eleccion entre estos modelos dependera de las necesidades de tool calling (donde AuroraGPT tiene ventaja por diseno) y de la longitud de contexto (donde Qwen2.5-0.5B ofrece mas).
 
@@ -87,5 +87,5 @@ No hay datos de benchmarks que permitan una comparacion objetiva de rendimiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SmallAICreator/AuroraGPT-Qwen-Distill
+- Modelo en Hugging Face: https://huggingface.co/SmallAICreator/AuroraGPT-Qwen-Distill
 - No se han encontrado otros enlaces oficiales (paper, blog, repositorio de codigo) en la informacion disponible. El sitio "AuroraGPT" de ANL (https://auroragpt.anl.gov/) no esta relacionado con este modelo.

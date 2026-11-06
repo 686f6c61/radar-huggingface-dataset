@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored-Impulsive-i1-GGUF es una cuantización en formato GGUF del modelo Qwen3.8-27B-Uncensored-Impulsive, publicada por el usuario mradermacher en HuggingFace. El modelo base es un fine-tune "uncensored" de la familia Qwen 3.8, con aproximadamente 26.900 millones de parámetros (26.895.998.464 según los pesos safetensors reportados), orientado a conversación y generación de texto sin los filtros de alineación habituales del modelo original.
+Qwen3.8-27B-Uncensored-Impulsive-i1-GGUF es una cuantización en formato GGUF del modelo Qwen3.8-27B-Uncensored-Impulsive, publicada por el usuario mradermacher en Hugging Face. El modelo base es un fine-tune "uncensored" de la familia Qwen 3.8, con aproximadamente 26.900 millones de parámetros (26.895.998.464 según los pesos safetensors reportados), orientado a conversación y generación de texto sin los filtros de alineación habituales del modelo original.
 
 El repositorio contiene exclusivamente cuantizaciones GGUF generadas con imatrix (importance matrix), lo que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. El autor incluye una batería amplia de niveles de cuantización, desde IQ1_S hasta Q6_K, cubriendo un rango que va desde configuraciones extremadamente agresivas hasta otras de alta fidelidad.
 
@@ -31,7 +31,7 @@ Respecto al entrenamiento, la model card únicamente indica que este repositorio
 
 - Generación de texto conversacional: el pipeline declarado es "conversational" y la etiqueta principal es "conversational", lo que indica uso previsto para diálogo multi-turno.
 - Generación de texto libre sin filtros de alineación: el nombre "Uncensored" implica que el modelo no aplica rechazos sistemáticos, aunque no se documenta el alcance real de esta característica.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a través de infraestructura de inferencia estándar (por ejemplo, TGI o endpoints compatibles con la API de HuggingFace).
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a través de infraestructura de inferencia estándar (por ejemplo, TGI o endpoints compatibles con la API de Hugging Face).
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible (no se listan idiomas).
@@ -86,5 +86,5 @@ No se dispone de datos de rendimiento ni de licencia para establecer una compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Impulsive-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Impulsive-i1-GGUF
 - Modelo base: https://huggingface.co/Sorenvza/Qwen3.8-27B-Uncensored-Impulsive

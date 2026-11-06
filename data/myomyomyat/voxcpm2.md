@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VoxCPM2 es un modelo de síntesis de voz (text-to-speech) de 2.290.004.544 parámetros (aproximadamente 2,29 mil millones), desarrollado por OpenBMB y distribuido bajo licencia Apache-2.0. La ficha de HuggingFace analizada aquí (Myomyomyat/VoxCPM2) es un espejo publicado por un tercero; el identificador de referencia que aparece en los ejemplos de código de la propia model card es `openbmb/VoxCPM2`. Se trata de un sistema de TTS sin tokenizador de audio, con arquitectura de difusión autorregresiva, capaz de generar audio a 48 kHz y de cubrir 30 idiomas más diez dialectos del chino.
+VoxCPM2 es un modelo de síntesis de voz (text-to-speech) de 2.290.004.544 parámetros (aproximadamente 2,29 mil millones), desarrollado por OpenBMB y distribuido bajo licencia Apache-2.0. La ficha de Hugging Face analizada aquí (Myomyomyat/VoxCPM2) es un espejo publicado por un tercero; el identificador de referencia que aparece en los ejemplos de código de la propia model card es `openbmb/VoxCPM2`. Se trata de un sistema de TTS sin tokenizador de audio, con arquitectura de difusión autorregresiva, capaz de generar audio a 48 kHz y de cubrir 30 idiomas más diez dialectos del chino.
 
 El modelo resuelve tres problemas clásicos de la síntesis de voz neuronal: la dependencia de tokens de audio discretos (aquí se sustituye por latentes continuos generados mediante difusión), la necesidad de audio de referencia para cualquier voz nueva (la función de diseño de voz permite describir la voz en lenguaje natural) y la limitación de idioma (no requiere etiqueta de idioma, se infiere del texto de entrada). Además, incorpora superresolución interna mediante AudioVAE V2, de modo que acepta referencias de 16 kHz y produce salida de 48 kHz sin upsampler externo.
 
@@ -27,7 +27,7 @@ Su relevancia actual radica en la combinación de tamaño contenido (unos 8 GB d
 | VRAM estimada por el autor | Aproximadamente 8 GB |
 | RTF (NVIDIA RTX 4090) | Aproximadamente 0,30 en modo estándar y 0,13 acelerado con Nano-VLLM |
 | Requisitos de software | Python ≥ 3.10, PyTorch ≥ 2.5.0, CUDA ≥ 12.0; paquete `voxcpm` |
-| Pipeline declarado en HuggingFace | text-to-speech |
+| Pipeline declarado en Hugging Face | text-to-speech |
 
 ## Arquitectura y entrenamiento
 
@@ -85,7 +85,7 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Tipo | Parámetros | Contexto / tasa de tokens | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VoxCPM2 | TTS de difusión autorregresiva sin tokenizador | 2.290.004.544 | 8192 tokens; 6,25 Hz | Apache-2.0 | Safetensors en HuggingFace, paquete `voxcpm` |
+| VoxCPM2 | TTS de difusión autorregresiva sin tokenizador | 2.290.004.544 | 8192 tokens; 6,25 Hz | Apache-2.0 | Safetensors en Hugging Face, paquete `voxcpm` |
 | CosyVoice 2 (Familia CosyVoice) | TTS zero-shot multilingüe | No disponible en la información consultada | No disponible | No disponible en la información consultada | No disponible en la información consultada |
 | XTTS-v2 (Coqui) | TTS multilingüe con clonación | No disponible en la información consultada | No disponible | No disponible en la información consultada | No disponible en la información consultada |
 | F5-TTS | TTS de flow matching con clonación | No disponible en la información consultada | No disponible | No disponible en la información consultada | No disponible en la información consultada |
@@ -107,12 +107,12 @@ Los modelos alternativos se citan por categoría (sistemas de TTS zero-shot con 
 
 ## Enlaces
 
-- Ficha de HuggingFace analizada: https://huggingface.co/Myomyomyat/VoxCPM2
-- Repositorio oficial en HuggingFace (referenciado en los ejemplos de la model card): https://huggingface.co/openbmb/VoxCPM2
+- Ficha de Hugging Face analizada: https://huggingface.co/Myomyomyat/VoxCPM2
+- Repositorio oficial en Hugging Face (referenciado en los ejemplos de la model card): https://huggingface.co/openbmb/VoxCPM2
 - Repositorio en GitHub: https://github.com/OpenBMB/VoxCPM
 - Documentación: https://voxcpm.readthedocs.io/en/latest/
 - Guía de inicio rápido: https://voxcpm.readthedocs.io/en/latest/quickstart.html
-- Demo interactiva en HuggingFace Spaces: https://huggingface.co/spaces/OpenBMB/VoxCPM-Demo
+- Demo interactiva en Hugging Face Spaces: https://huggingface.co/spaces/OpenBMB/VoxCPM-Demo
 - Página de muestras de audio: https://openbmb.github.io/voxcpm2-demopage
 - Artículo de referencia (arXiv): https://arxiv.org/abs/2509.24650
 - Implementación acelerada Nano-VLLM para VoxCPM: https://github.com/a710128/nanovllm-voxcpm
@@ -120,4 +120,4 @@ Los modelos alternativos se citan por categoría (sistemas de TTS zero-shot con 
 - Grupo de Lark del proyecto: https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=acds0b9d-23d8-4d7e-b696-d200f3e22a7f
 - Wiki de MiniCPM: https://modelbest.feishu.cn/wiki/UtWxwcERfiRIpIkBOjuc3h9tn1D
 
-Nota: la búsqueda web realizada no devolvió ningún resultado relacionado con el modelo; los enlaces anteriores proceden de la información de HuggingFace y de la propia model card.
+Nota: la búsqueda web realizada no devolvió ningún resultado relacionado con el modelo; los enlaces anteriores proceden de la información de Hugging Face y de la propia model card.

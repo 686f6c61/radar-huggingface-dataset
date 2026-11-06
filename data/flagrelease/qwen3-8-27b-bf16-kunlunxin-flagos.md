@@ -21,7 +21,7 @@ El modelo base pertenece a la generación Qwen 3.8, que continúa el enfoque de 
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles específicos sobre la arquitectura interna (número de capas, dimensiones, mecanismos de atención) ni sobre el proceso de entrenamiento (composición del dataset, número de tokens, técnicas de alineación como RLHF o DPO). El modelo se presenta como una variante de la familia Qwen 3.8, que según la documentación oficial de QwenCloud se basa en la arquitectura de Qwen 3.5. La etiqueta `qwen3_5` en HuggingFace confirma esta relación. El stack FlagOS incorpora optimizaciones a nivel de sistema (por ejemplo, fusión de operadores como `silu_and_mul` y `rms_norm`) para mejorar el rendimiento en hardware Kunlunxin, pero no se documentan innovaciones arquitectónicas propias del modelo.
+No se han publicado detalles específicos sobre la arquitectura interna (número de capas, dimensiones, mecanismos de atención) ni sobre el proceso de entrenamiento (composición del dataset, número de tokens, técnicas de alineación como RLHF o DPO). El modelo se presenta como una variante de la familia Qwen 3.8, que según la documentación oficial de QwenCloud se basa en la arquitectura de Qwen 3.5. La etiqueta `qwen3_5` en Hugging Face confirma esta relación. El stack FlagOS incorpora optimizaciones a nivel de sistema (por ejemplo, fusión de operadores como `silu_and_mul` y `rms_norm`) para mejorar el rendimiento en hardware Kunlunxin, pero no se documentan innovaciones arquitectónicas propias del modelo.
 
 ## Capacidades
 
@@ -74,8 +74,8 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/FlagRelease/Qwen3.8-27B-BF16-kunlunxin-FlagOS)
-- [Perfil de FlagRelease en HuggingFace](https://huggingface.co/FlagRelease)
+- [Repositorio Hugging Face](https://huggingface.co/FlagRelease/Qwen3.8-27B-BF16-kunlunxin-FlagOS)
+- [Perfil de FlagRelease en Hugging Face](https://huggingface.co/FlagRelease)
 - [Qwen3.8 en OpenLM.ai](https://openlm.ai/qwen3.8/)
 - [Documentación de modelos QwenCloud](https://docs.qwencloud.com/changelog/models)
 - [Blog de AMD sobre Qwen3.8 27B](https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html)

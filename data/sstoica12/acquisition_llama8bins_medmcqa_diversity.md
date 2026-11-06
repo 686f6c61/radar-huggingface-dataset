@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sstoica12/acquisition_llama8bins_medmcqa_diversity` es un modelo de lenguaje de la familia Llama con 8.030 millones de parámetros, publicado en HuggingFace por el usuario `sstoica12`. Su nombre sugiere un fine-tuning sobre el conjunto de datos MedMCQA (preguntas de opción múltiple de medicina) con alguna estrategia de adquisición de datos y diversidad, pero la model card no incluye información detallada que lo confirme. El repositorio contiene pesos en formato safetensors (32,1 GB) y está etiquetado para generación de texto y uso conversacional. No se dispone de datos sobre licencia, idiomas, arquitectura específica, ni resultados de evaluación. El modelo no registra descargas ni likes, lo que indica que es un experimento de investigación sin adopción documentada.
+El modelo `sstoica12/acquisition_llama8bins_medmcqa_diversity` es un modelo de lenguaje de la familia Llama con 8.030 millones de parámetros, publicado en Hugging Face por el usuario `sstoica12`. Su nombre sugiere un fine-tuning sobre el conjunto de datos MedMCQA (preguntas de opción múltiple de medicina) con alguna estrategia de adquisición de datos y diversidad, pero la model card no incluye información detallada que lo confirme. El repositorio contiene pesos en formato safetensors (32,1 GB) y está etiquetado para generación de texto y uso conversacional. No se dispone de datos sobre licencia, idiomas, arquitectura específica, ni resultados de evaluación. El modelo no registra descargas ni likes, lo que indica que es un experimento de investigación sin adopción documentada.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ El modelo `sstoica12/acquisition_llama8bins_medmcqa_diversity` es un modelo de l
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información pública sobre la arquitectura específica, los datos de entrenamiento o las técnicas de optimización utilizadas. La model card es una plantilla automática de HuggingFace en la que todos los campos están sin rellenar. El nombre del modelo apunta a una relación con el dataset MedMCQA y a una estrategia de adquisición (acquisition) y diversidad, pero no hay documentación que detalle el proceso de entrenamiento, el número de tokens, la composición del dataset o si se aplicó RLHF/DPO.
+No se dispone de información pública sobre la arquitectura específica, los datos de entrenamiento o las técnicas de optimización utilizadas. La model card es una plantilla automática de Hugging Face en la que todos los campos están sin rellenar. El nombre del modelo apunta a una relación con el dataset MedMCQA y a una estrategia de adquisición (acquisition) y diversidad, pero no hay documentación que detalle el proceso de entrenamiento, el número de tokens, la composición del dataset o si se aplicó RLHF/DPO.
 
 ## Capacidades
 
@@ -65,5 +65,5 @@ No disponible. No se han identificado modelos comparables con información sufic
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/sstoica12/acquisition_llama8bins_medmcqa_diversity](https://huggingface.co/sstoica12/acquisition_llama8bins_medmcqa_diversity)
+- Modelo en Hugging Face: [https://huggingface.co/sstoica12/acquisition_llama8bins_medmcqa_diversity](https://huggingface.co/sstoica12/acquisition_llama8bins_medmcqa_diversity)
 - Modelo relacionado: [https://huggingface.co/sstoica12/acquisition_student_base_llama8bins_medmcqa](https://huggingface.co/sstoica12/acquisition_student_base_llama8bins_medmcqa)

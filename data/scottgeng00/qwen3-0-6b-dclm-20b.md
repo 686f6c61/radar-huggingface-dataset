@@ -88,9 +88,9 @@ No se han publicado en la informacion disponible resultados comparativos frente 
 
 | Modelo | Parametros | Contexto | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scottgeng00/qwen3-0.6b-dclm-20b | 595.8M | 4096 (entrenamiento) | 20.000M tokens de dclm (desde cero) | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| Qwen/Qwen3-0.6B | 0.6B | no disponible en la informacion | corpus completo de preentrenamiento de Qwen3 | Apache 2.0 | HuggingFace, ModelScope |
-| Jinx-org/Jinx-Qwen3-0.6B | derivado de 0.6B | no disponible | ajuste orientado a investigacion de seguridad | no disponible | HuggingFace |
+| scottgeng00/qwen3-0.6b-dclm-20b | 595.8M | 4096 (entrenamiento) | 20.000M tokens de dclm (desde cero) | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| Qwen/Qwen3-0.6B | 0.6B | no disponible en la informacion | corpus completo de preentrenamiento de Qwen3 | Apache 2.0 | Hugging Face, ModelScope |
+| Jinx-org/Jinx-Qwen3-0.6B | derivado de 0.6B | no disponible | ajuste orientado a investigacion de seguridad | no disponible | Hugging Face |
 
 La comparacion directa mas relevante es con Qwen/Qwen3-0.6B, del que este modelo hereda arquitectura y tokenizador pero no los pesos ni el corpus completo. No se dispone del detalle de la mezcla de preentrenamiento original de Qwen3 ni de sus cifras OLMES en la informacion proporcionada, por lo que no es posible establecer una comparacion numerica fiable. Jinx-Qwen3-0.6B es un derivado orientado a investigacion de seguridad y no es comparable en cuanto a regimen de entrenamiento.
 
@@ -108,7 +108,7 @@ La comparacion directa mas relevante es con Qwen/Qwen3-0.6B, del que este modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scottgeng00/qwen3-0.6b-dclm-20b
+- Modelo en Hugging Face: https://huggingface.co/scottgeng00/qwen3-0.6b-dclm-20b
 - Qwen/Qwen3-0.6B (modelo base de referencia): https://huggingface.co/Qwen/Qwen3-0.6B
 - Qwen3 Technical Report (arXiv): https://arxiv.org/abs/2505.09388
 - Qwen3-0.6B en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3-0.6B

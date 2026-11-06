@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `meltingfeet/backup2026-11-02-Zynerji-Ektome-Qwen3.8-27B-PristinelyUncensored` es un fine-tuning de tipo "abliterated" del modelo base Qwen/Qwen3.8-27B, publicado por el usuario meltingfeet en HuggingFace. Su objetivo declarado es eliminar los mecanismos de rechazo (refusals) del modelo original mediante técnicas de abliteración con reparación de capacidades (abliteration-repair), buscando preservar el rendimiento general mientras se suprime el comportamiento de censura. Incorpora además etiquetas relativas a "Ektome", "surrogate-null" y "MTP" (multi-token prediction), lo que sugiere modificaciones orientadas a decodificación especulativa.
+El modelo `meltingfeet/backup2026-11-02-Zynerji-Ektome-Qwen3.8-27B-PristinelyUncensored` es un fine-tuning de tipo "abliterated" del modelo base Qwen/Qwen3.8-27B, publicado por el usuario meltingfeet en Hugging Face. Su objetivo declarado es eliminar los mecanismos de rechazo (refusals) del modelo original mediante técnicas de abliteración con reparación de capacidades (abliteration-repair), buscando preservar el rendimiento general mientras se suprime el comportamiento de censura. Incorpora además etiquetas relativas a "Ektome", "surrogate-null" y "MTP" (multi-token prediction), lo que sugiere modificaciones orientadas a decodificación especulativa.
 
-Con 27.356.728.560 parámetros (aproximadamente 27,36 mil millones) y un repositorio de 94,8 GB, se trata de un modelo denso de gran tamaño, probablemente derivado de la familia Qwen3 con arquitectura transformer. El modelo se distribuye en formatos safetensors y GGUF, y declara licencia Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+Con 27.356.728.560 parámetros (aproximadamente 27,36 mil millones) y un repositorio de 94,8 GB, se trata de un modelo denso de gran tamaño, probablemente derivado de la familia Qwen3 con arquitectura transformer. El modelo se distribuye en formatos safetensors y GGUF, y declara licencia Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 La relevancia de esta ficha es limitada pero concreta: se trata de un modelo de nicho, con cero descargas y cero likes en el momento de la consulta, orientado a usuarios que necesitan un modelo sin censura para investigación sobre alineación, evaluación de sesgos o generación de contenido sin restricciones. No obstante, la escasez de documentación técnica publicada obliga a tratar muchos datos como no disponibles.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento para comparar directamente con alternativa
 - Idiomas: solo inglés declarado; el rendimiento en castellano no está garantizado.
 - Contexto: longitud no documentada, lo que impide planificar despliegues con ventanas largas.
 - Documentación insuficiente: sin model card detallada, sin benchmarks, sin descripción del dataset de reparación ni de la técnica "Ektome" o "surrogate-null".
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en pipelines automatizados.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en pipelines automatizados.
 - Licencia Apache 2.0: permite uso comercial, pero el usuario debe verificar que el modelo base Qwen3.8-27B no imponga restricciones adicionales.
 - Cero tracción: 0 descargas y 0 likes; sin validación comunitaria ni informes independientes de calidad.
 - Repositorio de 94,8 GB: requiere almacenamiento considerable y ancho de banda para su descarga.
@@ -87,5 +87,5 @@ No se dispone de datos de rendimiento para comparar directamente con alternativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/meltingfeet/backup2026-11-02-Zynerji-Ektome-Qwen3.8-27B-PristinelyUncensored
+- Hugging Face: https://huggingface.co/meltingfeet/backup2026-11-02-Zynerji-Ektome-Qwen3.8-27B-PristinelyUncensored
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

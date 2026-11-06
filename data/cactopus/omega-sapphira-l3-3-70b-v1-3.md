@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Omega-Sapphira-L3.3-70B-v1.3 es un modelo de lenguaje de 70.553.706.496 parámetros, desarrollado por cactopus mediante fusión de dos modelos base de Llama 3.3 70B: ReadyArt/L3.3-The-Omega-Directive-70B-Unslop-v2.1 y BruhzWater/Sapphira-L3.3-70b-0.2. La fusión se ha realizado con mergekit y la técnica slerp, dando lugar a un modelo denso, no alineado (unaligned), orientado a roleplay y escritura de historias. El modelo está disponible en HuggingFace bajo licencia llama3.3 y solo soporta inglés. Su relevancia radica en ofrecer una alternativa de gran tamaño para generación creativa sin restricciones de alineación, aunque su uso no está recomendado para todas las audiencias. El contexto no se especifica en la información disponible.
+Omega-Sapphira-L3.3-70B-v1.3 es un modelo de lenguaje de 70.553.706.496 parámetros, desarrollado por cactopus mediante fusión de dos modelos base de Llama 3.3 70B: ReadyArt/L3.3-The-Omega-Directive-70B-Unslop-v2.1 y BruhzWater/Sapphira-L3.3-70b-0.2. La fusión se ha realizado con mergekit y la técnica slerp, dando lugar a un modelo denso, no alineado (unaligned), orientado a roleplay y escritura de historias. El modelo está disponible en Hugging Face bajo licencia llama3.3 y solo soporta inglés. Su relevancia radica en ofrecer una alternativa de gran tamaño para generación creativa sin restricciones de alineación, aunque su uso no está recomendado para todas las audiencias. El contexto no se especifica en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cactopus/Omega-Sapphira-L3.3-70B-v1.3
+- Hugging Face: https://huggingface.co/cactopus/Omega-Sapphira-L3.3-70B-v1.3
 - Cuantizacion EXL3 4.25bpw: https://huggingface.co/cactopus/Omega-Sapphira-L3.3-70B-v1.3_EXL3_4.25bpw_H8
 - Modelo base ReadyArt/L3.3-The-Omega-Directive-70B-Unslop-v2.1: https://huggingface.co/ReadyArt/L3.3-The-Omega-Directive-70B-Unslop-v2.1
 - Modelo base BruhzWater/Sapphira-L3.3-70b-0.2: https://huggingface.co/BruhzWater/Sapphira-L3.3-70b-0.2

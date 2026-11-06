@@ -2,9 +2,9 @@
 
 ## Resumen
 
-om-ai-model es un adaptador LoRA publicado en HuggingFace por el usuario yogendra-om-ai bajo la librería PEFT. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (adapter) que debe cargarse sobre su modelo base declarado, unsloth/Llama-3.2-1B-Instruct, una versión de Llama 3.2 1B Instruct distribuida por Unsloth. El repositorio se creó el 10 de octubre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes, con un tamaño de repositorio de 0.0 GB, lo que sugiere que los pesos no están realmente alojados o que se trata de un repositorio de prueba.
+om-ai-model es un adaptador LoRA publicado en Hugging Face por el usuario yogendra-om-ai bajo la librería PEFT. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (adapter) que debe cargarse sobre su modelo base declarado, unsloth/Llama-3.2-1B-Instruct, una versión de Llama 3.2 1B Instruct distribuida por Unsloth. El repositorio se creó el 10 de octubre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes, con un tamaño de repositorio de 0.0 GB, lo que sugiere que los pesos no están realmente alojados o que se trata de un repositorio de prueba.
 
-La model card es la plantilla por defecto de HuggingFace sin rellenar: todos los apartados (descripción, desarrollador, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación, impacto ambiental) aparecen con el marcador "[More Information Needed]". No se documenta el rango del adaptador LoRA, los módulos objetivo, el dataset de ajuste, el número de tokens de entrenamiento ni si hubo RLHF, DPO u otra fase de alineamiento posterior.
+La model card es la plantilla por defecto de Hugging Face sin rellenar: todos los apartados (descripción, desarrollador, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación, impacto ambiental) aparecen con el marcador "[More Information Needed]". No se documenta el rango del adaptador LoRA, los módulos objetivo, el dataset de ajuste, el número de tokens de entrenamiento ni si hubo RLHF, DPO u otra fase de alineamiento posterior.
 
 Por tanto, la relevancia de esta ficha es principalmente informativa y de advertencia: sirve para ilustrar el caso de un adaptador PEFT sin documentación ni evaluación publicada sobre un modelo pequeño de 1B parámetros. Cualquier uso en producción requeriría, como paso previo, verificar que los pesos existen, auditar el dataset de ajuste y evaluar el comportamiento resultante, algo imposible con la información disponible actualmente. La arquitectura, el tamaño y el contexto efectivos heredan del modelo base, no del adaptador.
 
@@ -78,10 +78,10 @@ Los datos de esta tabla corresponden a las model cards públicas de cada modelo 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | yogendra-om-ai/om-ai-model (adaptador LoRA) | No disponible; base de 1,24B | No disponible; base de 131.072 tokens | No disponible | Repositorio de 0.0 GB, 0 descargas, sin pesos confirmados |
-| unsloth/Llama-3.2-1B-Instruct (modelo base) | 1,24B | 131.072 tokens | Licencia comunitaria de Llama 3.2 | Disponible en HuggingFace, formato safetensors |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21B | 131.072 tokens | Licencia comunitaria de Llama 3.2 | Disponible en HuggingFace |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | Disponible en HuggingFace |
-| google/gemma-2-2b-it | 2,61B | 8.192 tokens | Términos de uso de Gemma | Disponible en HuggingFace |
+| unsloth/Llama-3.2-1B-Instruct (modelo base) | 1,24B | 131.072 tokens | Licencia comunitaria de Llama 3.2 | Disponible en Hugging Face, formato safetensors |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21B | 131.072 tokens | Licencia comunitaria de Llama 3.2 | Disponible en Hugging Face |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | Disponible en Hugging Face |
+| google/gemma-2-2b-it | 2,61B | 8.192 tokens | Términos de uso de Gemma | Disponible en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ Los datos de esta tabla corresponden a las model cards públicas de cada modelo 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/yogendra-om-ai/om-ai-model
+- Repositorio del modelo en Hugging Face: https://huggingface.co/yogendra-om-ai/om-ai-model
 - Modelo base utilizado: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Librería PEFT: https://github.com/huggingface/peft

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cheahour/khmer-vlm` es un modelo de generacion de texto publicado en HuggingFace por el usuario cheahour, presentado como un fine-tuning del checkpoint `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`. A pesar del sufijo "vlm" en su nombre, las etiquetas del repositorio no incluyen `image-text-to-text` ni modulos de vision, y el pipeline declarado no esta disponible; la unica modalidad confirmada por los metadatos es la generacion de texto. El modelo se distribuye bajo licencia Apache 2.0 y con acceso restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de su descarga.
+`cheahour/khmer-vlm` es un modelo de generacion de texto publicado en Hugging Face por el usuario cheahour, presentado como un fine-tuning del checkpoint `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`. A pesar del sufijo "vlm" en su nombre, las etiquetas del repositorio no incluyen `image-text-to-text` ni modulos de vision, y el pipeline declarado no esta disponible; la unica modalidad confirmada por los metadatos es la generacion de texto. El modelo se distribuye bajo licencia Apache 2.0 y con acceso restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de su descarga.
 
 La relevancia del modelo es limitada y debe interpretarse con cautela: el repositorio acumula 0 descargas y 0 likes, fue creado y actualizado en un intervalo de 26 segundos el 29 de octubre de 2026, y el tamano del repo es de solo 0,2 GB, un volumen incompatible con los pesos completos de un modelo de la familia Gemma 4 E4B (que rondaria varios GB incluso en cuantizacion de 4 bits). Esto sugiere que el repositorio contiene unicamente adaptadores LoRA o pesos parciales, no un checkpoint completo listo para inferencia directa.
 
@@ -22,7 +22,7 @@ No se dispone de informacion publica sobre arquitectura exacta, numero de parame
 | Formato de pesos | safetensors |
 | Libreria | transformers |
 | Tamano del repositorio | 0,2 GB |
-| Acceso | Restringido (gated), requiere aceptacion en HuggingFace |
+| Acceso | Restringido (gated), requiere aceptacion en Hugging Face |
 | Modelo base | unsloth/gemma-4-E4B-it-unsloth-bnb-4bit |
 | Tags | transformers, safetensors, text-generation-inference, unsloth, gemma4, trl, endpoints_compatible |
 
@@ -51,7 +51,7 @@ En cuanto al entrenamiento, la etiqueta `trl` indica que el fine-tuning se reali
 - Generacion de codigo asistida: el modelo base Gemma 4 E4B tiene capacidades de codigo; este fine-tuning podria conservarlas, aunque no hay datos que lo confirmen.
 - Despliegue en entornos con recursos limitados: el formato bnb-4bit del modelo base permite ejecucion en GPUs de consumo medio, lo que facilita pruebas locales.
 - Base para comparativas de fine-tuning: util como ejemplo de pipeline Unsloth + TRL + Gemma 4 para articulos tecnicos o docencia.
-- Evaluacion de riesgos de modelos gated: permite estudiar el flujo de acceso restringido en HuggingFace y las implicaciones de publicar adaptadores sin documentacion.
+- Evaluacion de riesgos de modelos gated: permite estudiar el flujo de acceso restringido en Hugging Face y las implicaciones de publicar adaptadores sin documentacion.
 
 ## Benchmarks y rendimiento
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 - Ausencia total de documentacion: no hay model card, paper, dataset ni evaluacion publicados.
 - Repositorio de 0,2 GB: probablemente contiene solo adaptadores o pesos parciales, no un checkpoint completo; la inferencia directa puede fallar sin el modelo base.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion para uso en produccion.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion para uso en produccion.
 - Nombre potencialmente enganoso: "vlm" sugiere vision-lenguaje, pero no hay evidencia de modulos de vision.
 - Idioma declarado solo ingles: el posible soporte de jemer no esta verificado.
 - Riesgo de alucinacion: inherente a los modelos de lenguaje; sin evaluacion especifica no puede cuantificarse.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cheahour/khmer-vlm
+- Hugging Face: https://huggingface.co/cheahour/khmer-vlm
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E4B-it-unsloth-bnb-4bit
 - Framework Unsloth: https://github.com/unslothai/unsloth
 - Libreria TRL: https://github.com/huggingface/trl

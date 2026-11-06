@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DKTechin/fonts no es un modelo de inteligencia artificial, sino un repositorio de pesos tipograficos publicado en HuggingFace. Contiene cuatro archivos de fuente (tres familias: Black Han Sans, Nanum Myeongjo y Nanum Pen Script) obtenidos del repositorio oficial google/fonts y redistribuidos para que una aplicacion de edicion de imagenes los descargue y los use para renderizar texto. El repositorio fue creado el 12 de septiembre de 2026 y, en el momento de la consulta, registra 0 descargas y 0 likes, con un tamano declarado de 0,0 GB (el contenido real suma 9.525.512 bytes, unos 9,08 MiB).
+DKTechin/fonts no es un modelo de inteligencia artificial, sino un repositorio de pesos tipograficos publicado en Hugging Face. Contiene cuatro archivos de fuente (tres familias: Black Han Sans, Nanum Myeongjo y Nanum Pen Script) obtenidos del repositorio oficial google/fonts y redistribuidos para que una aplicacion de edicion de imagenes los descargue y los use para renderizar texto. El repositorio fue creado el 12 de septiembre de 2026 y, en el momento de la consulta, registra 0 descargas y 0 likes, con un tamano declarado de 0,0 GB (el contenido real suma 9.525.512 bytes, unos 9,08 MiB).
 
 La relevancia de este repositorio es legal y de empaquetado, no tecnica en el sentido del aprendizaje automatico: su autora documenta que las cuatro fuentes se distribuyen bajo SIL Open Font License 1.1, reproduce la procedencia exacta (rama `ofl` de google/fonts, commit `f12cf9db03e8`) y publica el hash SHA-256 de cada archivo para permitir la verificacion de integridad. Ademas, la ficha describe que solo Black Han Sans ha sido convertida de TTF a WOFF2 sin alterar glifos, mientras que Nanum Myeongjo y Nanum Pen Script se mantienen como TTF originales.
 
@@ -18,7 +18,7 @@ Por tanto, esta ficha no puede rellenar los campos habituales de parametros, con
 | Longitud de contexto | no aplicable |
 | Tipos de cuantizacion | no aplicable |
 | Idiomas soportados | no disponible (no declarado en la ficha; las familias incluidas son tipografias de diseno coreano) |
-| Licencia | SIL Open Font License 1.1 (segun la ficha; el campo de licencia de HuggingFace aparece como no disponible) |
+| Licencia | SIL Open Font License 1.1 (segun la ficha; el campo de licencia de Hugging Face aparece como no disponible) |
 | Formato de pesos | no aplicable (formatos de fuente: WOFF2 y TTF) |
 | Autor | DKTechin |
 | Fecha de creacion | 2026-09-12 |
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al no
 - Almacenamiento: 190.720 bytes para BlackHanSans-Regular.woff2, 3.058.408 bytes para NanumMyeongjo-Regular.ttf, 3.074.720 bytes para NanumMyeongjo-Bold.ttf y 3.201.664 bytes para NanumPenScript-Regular.ttf; total 9.525.512 bytes.
 - Despliegue en web: servir Black Han Sans en WOFF2 reduce la transferencia a unos 190 KB; los tres TTF de Nanum rondan los 3 MB cada uno, un peso elevado para carga en navegador si no se convierten o se subconjuntan.
 - Despliegue en aplicacion: incluir los archivos como recursos del proyecto (assets) o descargarlos desde el repositorio en el primer arranque, tal y como describe la ficha.
-- Opciones de servicio: cualquier servidor estatico, CDN o el propio endpoint de HuggingFace sirven los archivos; no aplican vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de servicio: cualquier servidor estatico, CDN o el propio endpoint de Hugging Face sirven los archivos; no aplican vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles. El unico factor determinante es el tiempo de descarga del archivo, proporcional a su tamano y al ancho de banda disponible; no hay datos medidos publicados.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ No existen "modelos comparables" en el sentido de modelos de IA. Se compara aqui
 
 | Recurso | Naturaleza | Familias incluidas | Licencia | Modificaciones respecto al original |
 |---|---|---|---|---|
-| DKTechin/fonts | Repositorio de fuentes en HuggingFace | Black Han Sans, Nanum Myeongjo, Nanum Pen Script (4 archivos) | SIL OFL 1.1 (segun la ficha) | Black Han Sans convertida a WOFF2 sin cambios de glifos; las dos familias Nanum, TTF original |
+| DKTechin/fonts | Repositorio de fuentes en Hugging Face | Black Han Sans, Nanum Myeongjo, Nanum Pen Script (4 archivos) | SIL OFL 1.1 (segun la ficha) | Black Han Sans convertida a WOFF2 sin cambios de glifos; las dos familias Nanum, TTF original |
 | google/fonts (`ofl/nanummyeongjo`, `ofl/blackhansans`, `ofl/nanumpenscript`) | Repositorio upstream en GitHub | Las mismas tres familias, entre muchas otras | SIL OFL 1.1 | Ninguna; es el origen declarado, en el commit `f12cf9db03e8` |
 | Noto Sans KR / Noto Serif KR (Google Fonts) | Familia tipografica coreana alternativa | no disponible en la informacion proporcionada | SIL OFL 1.1 | no disponible en la informacion proporcionada |
 
@@ -96,16 +96,16 @@ La diferencia practica entre este repositorio y google/fonts es de empaquetado: 
 - Licencia: las fuentes estan bajo SIL OFL 1.1, que permite uso comercial, incrustacion y redistribucion, pero exige conservar el aviso de copyright y el texto de la licencia, y prohibe vender las fuentes por si solas.
 - Nombre reservado: Nanum Myeongjo y Nanum Pen Script incluyen la clausula "with Reserved Font Name Nanum". Si se modifican los archivos, no puede seguir usandose ese nombre, tal y como advierte la propia ficha.
 - La ficha reconoce que la conversion a WOFF2 de las familias Nanum esta pendiente precisamente por esta clausula; la interpretacion de si la conversion de formato constituye una modificacion no esta resuelta en el documento.
-- Metadatos incompletos en HuggingFace: el campo de licencia, el pipeline, los idiomas y las etiquetas aparecen sin declarar o reducidos a `region:us`, lo que dificulta el descubrimiento y la reutilizacion por terceros.
+- Metadatos incompletos en Hugging Face: el campo de licencia, el pipeline, los idiomas y las etiquetas aparecen sin declarar o reducidos a `region:us`, lo que dificulta el descubrimiento y la reutilizacion por terceros.
 - Adopcion nula: 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de uso en produccion ni de mantenimiento continuado.
-- Tamano declarado erroneo o redondeado: HuggingFace informa de 0,0 GB mientras que la suma real de los cuatro archivos es de 9.525.512 bytes.
+- Tamano declarado erroneo o redondeado: Hugging Face informa de 0,0 GB mientras que la suma real de los cuatro archivos es de 9.525.512 bytes.
 - Ausencia de versionado: solo se documenta la fecha de creacion y actualizacion (ambas 2026-09-12) y el commit de origen, sin historial de cambios posterior ni etiquetas de version.
 - La conversion a WOFF2 solo se ha aplicado a Black Han Sans; quien necesite las versiones comprimidas de las otras dos familias debe realizarla por su cuenta y asumir las implicaciones de licencia.
-- Los resultados de la busqueda web realizada no contienen informacion relacionada con este repositorio: los enlaces recuperados son hilos de foro sobre lectores Kobo, Gmail y errores de Python/Git/PHP, sin ninguna conexion con fuentes tipograficas ni con HuggingFace.
+- Los resultados de la busqueda web realizada no contienen informacion relacionada con este repositorio: los enlaces recuperados son hilos de foro sobre lectores Kobo, Gmail y errores de Python/Git/PHP, sin ninguna conexion con fuentes tipograficas ni con Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DKTechin/fonts
+- Repositorio en Hugging Face: https://huggingface.co/DKTechin/fonts
 - Origen en google/fonts, Nanum Myeongjo: https://github.com/google/fonts/tree/main/ofl/nanummyeongjo
 - Origen en google/fonts, Black Han Sans: https://github.com/google/fonts/tree/main/ofl/blackhansans
 - Origen en google/fonts, Nanum Pen Script: https://github.com/google/fonts/tree/main/ofl/nanumpenscript

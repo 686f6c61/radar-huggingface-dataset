@@ -90,7 +90,7 @@ La diferencia clave de BR Sovereign LLM no es el rendimiento, sino la trazabilid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guicybercode/br-sovereign-llm-research
+- Modelo en Hugging Face: https://huggingface.co/guicybercode/br-sovereign-llm-research
 - Perfil del autor: https://huggingface.co/guicybercode
 - Artículo sobre supercomputador brasileño (Agência Brasil): https://agenciabrasil.ebc.com.br/en/economia/noticia/2026-08/brazil-get-its-own-ai-supercomputer
 - Informe sobre LLM soberanos (arXiv): https://arxiv.org/abs/2503.04745

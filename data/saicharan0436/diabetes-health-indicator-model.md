@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `saicharan0436/diabetes-health-indicator-model` es un modelo publicado en HuggingFace por el usuario saicharan0436. Por el identificador y el nombre del repositorio, parece orientado a la clasificación de indicadores de salud relacionados con la diabetes, aunque en la información disponible no se incluye ninguna model card, descripción, pipeline declarado ni etiqueta de tarea que lo confirme. El repositorio ocupa 0,4 GB y acumula 0 descargas y 1 like en el momento de la consulta.
+El repositorio `saicharan0436/diabetes-health-indicator-model` es un modelo publicado en Hugging Face por el usuario saicharan0436. Por el identificador y el nombre del repositorio, parece orientado a la clasificación de indicadores de salud relacionados con la diabetes, aunque en la información disponible no se incluye ninguna model card, descripción, pipeline declarado ni etiqueta de tarea que lo confirme. El repositorio ocupa 0,4 GB y acumula 0 descargas y 1 like en el momento de la consulta.
 
 No se dispone de datos sobre arquitectura, número de parámetros, longitud de contexto, idiomas soportados, licencia ni formato de pesos. La única etiqueta presente es `region:us`, que hace referencia a la región de almacenamiento y no aporta información técnica sobre el modelo.
 
@@ -23,8 +23,8 @@ Se trata, por tanto, de un artefacto con muy poca documentación pública asocia
 | Tamano del repositorio | 0,4 GB |
 | Pipeline declarado | no disponible |
 | Etiquetas | region:us |
-| Fecha de creacion | 2026-10-14T16:00:32.000Z (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-10-14T16:16:02.000Z (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-14T16:00:32.000Z (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-10-14T16:16:02.000Z (segun metadatos de Hugging Face) |
 | Descargas | 0 |
 | Likes | 1 |
 
@@ -81,11 +81,11 @@ No disponible. No se ha identificado en la información proporcionada ningún mo
 - Riesgo de alucinación: no aplicable si el modelo no es generativo, pero no confirmado.
 - Sin métricas publicadas: no hay evidencia de precisión, recall, AUC ni calibración, por lo que no se recomienda su uso en decisiones que afecten a personas.
 - Repositorio sin adopción: 0 descargas y 1 like indican que el modelo no ha sido validado por la comunidad.
-- Marcas temporales de creación y actualización en 2026 según los metadatos de HuggingFace; conviene verificar la fecha real antes de citarlo.
+- Marcas temporales de creación y actualización en 2026 según los metadatos de Hugging Face; conviene verificar la fecha real antes de citarlo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/saicharan0436/diabetes-health-indicator-model
+- Hugging Face: https://huggingface.co/saicharan0436/diabetes-health-indicator-model
 - Paper: no disponible
 - Blog o model card del autor: no disponible
 - Repositorio de código: no disponible

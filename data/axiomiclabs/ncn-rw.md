@@ -37,7 +37,7 @@ Datos adicionales de arquitectura publicados en la model card:
 | Estado tonico del GRU | 64 dimensiones |
 | Dropout | 0 |
 | Tokens de entrenamiento | Aproximadamente 10.000 millones |
-| Descargas / likes en HuggingFace | 205 / 10 |
+| Descargas / likes en Hugging Face | 205 / 10 |
 
 ## Arquitectura y entrenamiento
 
@@ -89,9 +89,9 @@ No se dispone de datos verificados de benchmarks ni de especificaciones completa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| AxiomicLabs/NCN-RW | 9,72 M | 512 | Apache 2.0 | HuggingFace, requiere custom_code | Arquitectura hibrida recurrente-Transformer con neuromodulacion |
-| Familia TinyStories (roneneldan) | No disponible | No disponible | No disponible | HuggingFace | Uno de los datasets de entrenamiento de NCN-RW; modelos narrativos de baja escala |
-| Familia Pythia (EleutherAI) | No disponible | No disponible | No disponible | HuggingFace | Referencia habitual de modelos base pequenos con checkpoints intermedios |
+| AxiomicLabs/NCN-RW | 9,72 M | 512 | Apache 2.0 | Hugging Face, requiere custom_code | Arquitectura hibrida recurrente-Transformer con neuromodulacion |
+| Familia TinyStories (roneneldan) | No disponible | No disponible | No disponible | Hugging Face | Uno de los datasets de entrenamiento de NCN-RW; modelos narrativos de baja escala |
+| Familia Pythia (EleutherAI) | No disponible | No disponible | No disponible | Hugging Face | Referencia habitual de modelos base pequenos con checkpoints intermedios |
 | GPT-2 small | 124 M | 1.024 | No disponible | Ampliamente disponible | Orden de magnitud superior en parametros; comparacion solo orientativa |
 
 ## Limitaciones y advertencias
@@ -110,7 +110,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones completa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AxiomicLabs/NCN-RW
+- Modelo en Hugging Face: https://huggingface.co/AxiomicLabs/NCN-RW
 - Paper tecnico: no disponible
 - Blog o articulo del autor: no disponible
 - Repositorio de codigo: no disponible

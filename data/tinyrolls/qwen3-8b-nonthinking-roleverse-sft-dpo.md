@@ -105,7 +105,7 @@ El checkpoint destaca por lograr el mayor Resp Avg entre los modelos de 8 B entr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tinyrolls/Qwen3-8B-NonThinking-RoleVerse-SFT-DPO
+- Modelo en Hugging Face: https://huggingface.co/tinyrolls/Qwen3-8B-NonThinking-RoleVerse-SFT-DPO
 - Dataset RoleVerse: https://huggingface.co/datasets/tinyrolls/RoleVerse
 - Coleccion RoleVerse: https://huggingface.co/collections/tinyrolls/roleverse-6ae2cab39027be0451529147
 - Codigo: https://github.com/tinyrolls/RoleVerse

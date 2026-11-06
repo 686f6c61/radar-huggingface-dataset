@@ -77,7 +77,7 @@ El modelo se posiciona como una alternativa ligera a Llama 3 8B o Phi-3, manteni
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/that-fallen-angel/fallen-angel_mistral-7b-finetune
+- Repositorio Hugging Face: https://huggingface.co/that-fallen-angel/fallen-angel_mistral-7b-finetune
 - Página del modelo base Mistral 7B: https://huggingface.co/unsloth/mistral-7b
 - Web de Mistral AI (modelos): https://mistral.ai/models/
 - Repositorio de fine-tuning de Mistral (referencia): https://github.com/bdytx5/mistral7B_finetune

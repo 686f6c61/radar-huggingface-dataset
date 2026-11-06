@@ -42,9 +42,9 @@ Dado que no es un modelo de IA, los casos de uso son limitados y de carácter ac
 - **Referencia bibliográfica**: citar el contenido del documento en trabajos de investigación sobre razonamiento multimodal.
 - **Plantilla de redacción**: usar la estructura y el estilo del documento como guía para escribir un paper propio.
 - **Material de estudio**: leer el documento para obtener una visión general del tema, aunque el contenido completo no está disponible de forma directa en el repositorio (solo se menciona el archivo).
-- **Ejemplo de metadatos**: observar cómo se organiza un repositorio de HuggingFace para alojar artefactos de texto, no solo modelos.
+- **Ejemplo de metadatos**: observar cómo se organiza un repositorio de Hugging Face para alojar artefactos de texto, no solo modelos.
 - **Práctica de revisión**: analizar la calidad de un documento académico generado automáticamente, si se sospecha que es un texto sintético.
-- **Investigación de etiquetas**: estudiar las etiquetas de HuggingFace (argumentative, compact, etc.) para entender cómo se clasifican los repositorios.
+- **Investigación de etiquetas**: estudiar las etiquetas de Hugging Face (argumentative, compact, etc.) para entender cómo se clasifican los repositorios.
 
 ## Benchmarks y rendimiento
 
@@ -68,4 +68,4 @@ No disponible. No existe una categoría de modelos de IA comparable, ya que este
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [williamskuf/paper_014364905_multimodal_reasoning](https://huggingface.co/williamskuf/paper_014364905_multimodal_reasoning)
+- Repositorio de Hugging Face: [williamskuf/paper_014364905_multimodal_reasoning](https://huggingface.co/williamskuf/paper_014364905_multimodal_reasoning)

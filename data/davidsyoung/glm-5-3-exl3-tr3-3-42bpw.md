@@ -74,7 +74,7 @@ La comparativa se limita a variantes de GLM-5.x porque no se dispone de datos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidsyoung/GLM-5.3-EXL3-TR3-3.42bpw
+- Modelo en Hugging Face: https://huggingface.co/davidsyoung/GLM-5.3-EXL3-TR3-3.42bpw
 - Modelo base GLM-5.3: https://huggingface.co/zai-org/GLM-5.3
 - Blog de Z.ai sobre GLM-5.3: https://z.ai/blog/glm-5.3
 - Documentacion de Z.ai: https://docs.z.ai/guides/llm/glm-5.3

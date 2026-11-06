@@ -91,6 +91,6 @@ La comparación con whisper-small es orientativa: whisper-small tiene más idiom
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/scholzmx/parakeet-tdt-0.6b-v3-gguf
+- Repositorio Hugging Face: https://huggingface.co/scholzmx/parakeet-tdt-0.6b-v3-gguf
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Repositorio Starling: https://github.com/sims1253/starling

@@ -25,7 +25,7 @@ El propio autor advierte de que es una politica en fase temprana y no un modelo 
 | Semilla de entrenamiento | 42 |
 | Evaluacion | 100 episodios independientes, semillas 100000-100099 |
 | Dependencias declaradas | `gymnasium==0.29.1`, `box2d-py==2.3.8`, `numpy<2`, `torch` |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-10 |
 | Ultima actualizacion | 2026-09-10 |
@@ -88,7 +88,7 @@ No disponible. La informacion proporcionada no incluye otros agentes de `LunarLa
 
 | Modelo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bestdive/ppo-course-LunarLander-v2 | LunarLander-v2 | -66,77 +/- 54,44 | MIT | HuggingFace |
+| bestdive/ppo-course-LunarLander-v2 | LunarLander-v2 | -66,77 +/- 54,44 | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -106,5 +106,5 @@ No disponible. La informacion proporcionada no incluye otros agentes de `LunarLa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bestdive/ppo-course-LunarLander-v2
+- Hugging Face: https://huggingface.co/bestdive/ppo-course-LunarLander-v2
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a papers, a repositorios de codigo ni a demos. Los resultados devueltos corresponden a localizadores de tiendas de una cadena de supermercados y no guardan relacion con este artefacto.

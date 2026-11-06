@@ -21,7 +21,7 @@ Este checkpoint no está pensado como un modelo final para producción, sino com
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre `Qwen/Qwen3.5-9B-Base`, una arquitectura transformer de 9 mil millones de parámetros. El checkpoint corresponde a un ajuste fino supervisado (SFT) aplicado durante un barrido de entrenamiento de 100 horas, controlado por el driver `pi / grok-4.6` con un nivel de esfuerzo de razonamiento `xhigh`. El repositorio contiene 4 shards y un tamaño total de 18.8 GB según la model card, aunque el tamaño del repo en HuggingFace es de 16.9 GB.
+El modelo se construye sobre `Qwen/Qwen3.5-9B-Base`, una arquitectura transformer de 9 mil millones de parámetros. El checkpoint corresponde a un ajuste fino supervisado (SFT) aplicado durante un barrido de entrenamiento de 100 horas, controlado por el driver `pi / grok-4.6` con un nivel de esfuerzo de razonamiento `xhigh`. El repositorio contiene 4 shards y un tamaño total de 18.8 GB según la model card, aunque el tamaño del repo en Hugging Face es de 16.9 GB.
 
 La innovación técnica más destacable es el propio sistema de barrido AgentPTB, que registra checkpoints en intervalos horarios (`hHHH`) para mapear el rendimiento sobre el tiempo de entrenamiento. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens procesados ni el uso de técnicas como RLHF o DPO. Se conoce un defecto de empaquetado: el token `eos_token_id` está configurado como `[248044]`, pero falta el token `248046` (`<|im_end|>`), que es el que el template de chat de Qwen3.5 utiliza para terminar cada turno de asistente. Esto hace que los checkpoints no se detengan correctamente y sobrepasen la ventana de contexto, por lo que las evaluaciones deben interpretarse como un límite inferior, no como una medida real.
 
@@ -68,5 +68,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h071.sft-smith.step_80
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h071.sft-smith.step_80
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (referencia, no verificado en la búsqueda)

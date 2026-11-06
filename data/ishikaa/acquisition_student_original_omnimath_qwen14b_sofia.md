@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_student_original_omnimath_qwen14b_sofia` es un ajuste fino publicado en HuggingFace por el usuario `ishikaa`, construido sobre la arquitectura Qwen2 (etiqueta `qwen2` declarada en el repositorio) y entrenado mediante SFT con la librería TRL. Los pesos ocupan 14.770.033.664 parámetros en safetensors, lo que lo sitúa en la gama de 14B, con un repositorio de 29,6 GB (consistente con pesos en fp16/bf16).
+El modelo `ishikaa/acquisition_student_original_omnimath_qwen14b_sofia` es un ajuste fino publicado en Hugging Face por el usuario `ishikaa`, construido sobre la arquitectura Qwen2 (etiqueta `qwen2` declarada en el repositorio) y entrenado mediante SFT con la librería TRL. Los pesos ocupan 14.770.033.664 parámetros en safetensors, lo que lo sitúa en la gama de 14B, con un repositorio de 29,6 GB (consistente con pesos en fp16/bf16).
 
-El identificador del repositorio sugiere un entrenamiento orientado a razonamiento matemático (`omnimath`), un posible esquema de destilación o imitación desde un modelo profesor (`acquisition_student`) y un checkpoint base Qwen de 14B (`qwen14b`). Ninguna de estas inferencias está confirmada por la model card, que es la plantilla automática de HuggingFace y no contiene información sustantiva: todos los campos relevantes aparecen como `[More Information Needed]`.
+El identificador del repositorio sugiere un entrenamiento orientado a razonamiento matemático (`omnimath`), un posible esquema de destilación o imitación desde un modelo profesor (`acquisition_student`) y un checkpoint base Qwen de 14B (`qwen14b`). Ninguna de estas inferencias está confirmada por la model card, que es la plantilla automática de Hugging Face y no contiene información sustantiva: todos los campos relevantes aparecen como `[More Information Needed]`.
 
 La relevancia de esta ficha es, por tanto, limitada y de carácter cauto: se trata de un checkpoint sin documentación, sin licencia declarada, sin idiomas declarados, con cero descargas y cero valoraciones en el momento de la consulta, y sin resultados de evaluación publicados. Cualquier uso en producción debería ir precedido de una evaluación propia, dado que no hay garantías de procedencia de datos ni de condiciones de uso.
 
@@ -31,7 +31,7 @@ La relevancia de esta ficha es, por tanto, limitada y de carácter cauto: se tra
 
 No hay informacion publicada sobre la arquitectura mas alla de la etiqueta `qwen2` del repositorio, que indica que el modelo pertenece a la familia Qwen2 de Alibaba. Con 14.770.033.664 parametros, el checkpoint corresponde a la variante de 14B de dicha familia, un transformer decoder-only con atencion causal. Se desconoce si se ha aplicado alguna modificacion estructural (por ejemplo, variantes de atencion, cambios en el tokenizador o en la configuracion de RoPE) respecto al modelo base del que parte.
 
-En cuanto al entrenamiento, la unica informacion disponible son las etiquetas `trl` y `sft`, que indican que se ha utilizado la libreria TRL de HuggingFace para un ajuste supervisado (supervised fine-tuning). No hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o decodificacion especulativa, ni sobre hiperparametros, regimen de precision o infraestructura de computo. La model card incluye el enlace al articulo arXiv:1910.09700 (Lacoste et al., calculadora de impacto de ML), pero se trata de una referencia generica de la plantilla y no de un paper sobre el modelo.
+En cuanto al entrenamiento, la unica informacion disponible son las etiquetas `trl` y `sft`, que indican que se ha utilizado la libreria TRL de Hugging Face para un ajuste supervisado (supervised fine-tuning). No hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o decodificacion especulativa, ni sobre hiperparametros, regimen de precision o infraestructura de computo. La model card incluye el enlace al articulo arXiv:1910.09700 (Lacoste et al., calculadora de impacto de ML), pero se trata de una referencia generica de la plantilla y no de un paper sobre el modelo.
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ No se dispone de informacion suficiente para comparar calidad, licencia o idonei
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla automatica de HuggingFace y no describe datos de entrenamiento, hiperparametros ni procedencia del dataset. Es imposible auditar el modelo con la informacion disponible.
+- Ausencia total de documentacion: la model card es la plantilla automatica de Hugging Face y no describe datos de entrenamiento, hiperparametros ni procedencia del dataset. Es imposible auditar el modelo con la informacion disponible.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial. En ausencia de licencia, debe asumirse reserva de derechos por defecto en jurisdicciones como la espanola y la europea.
 - Procedencia de los datos desconocida: no puede descartarse la inclusion de datos con derechos de autor, datos personales o contenido sesgado en el corpus de SFT.
 - Riesgo de alucinacion: no evaluado. Al ser un ajuste SFT sin fases documentadas de alineacion (RLHF/DPO), el riesgo de respuestas plausibles pero incorrectas, especialmente en matematicas, es relevante.
@@ -95,7 +95,7 @@ No se dispone de informacion suficiente para comparar calidad, licencia o idonei
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_original_omnimath_qwen14b_sofia
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_original_omnimath_qwen14b_sofia
 - Articulo citado en la model card (calculadora de impacto de ML, Lacoste et al.): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML referenciada: https://mlco2.github.io/impact
 - Documentacion de TRL (libreria de entrenamiento declarada): https://huggingface.co/docs/trl

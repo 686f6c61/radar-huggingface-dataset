@@ -50,7 +50,7 @@ El entrenamiento se realizo mediante SFT (fine-tuning supervisado) con la librer
 - Generacion de texto de bajo coste en entornos con recursos limitados: con ~86 M de parametros ocupa menos de 0,4 GB en fp32, por lo que puede ejecutarse en CPU o en una GPU integrada para tareas de prototipado.
 - Pruebas de integracion de pipelines de transformers: sirve como modelo de prueba para validar plantillas de chat, generacion con `max_new_tokens` y despliegue con text-generation-inference sin consumir presupuesto de GPU.
 - Filtrado y clasificacion mediante generacion condicionada: al ser un modelo pequeno y rapido, puede emplearse como componente de experimentos de etiquetado o completado de plantillas en investigacion linguistica.
-- Docencia y formacion: es un ejemplo practico y ligero para explicar el flujo completo de SFT con TRL, desde el modelo base Goldfish hasta la publicacion en HuggingFace.
+- Docencia y formacion: es un ejemplo practico y ligero para explicar el flujo completo de SFT con TRL, desde el modelo base Goldfish hasta la publicacion en Hugging Face.
 - Investigacion sobre variedades linguisticas: si se confirma el uso de datos en neerlandes, podria emplearse en estudios comparativos sobre lenguas germanicas occidentales con recursos limitados.
 
 ## Benchmarks y rendimiento
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed455` | 86,4 M | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
-| `goldfish-models/eng_latn_100mb` (modelo base) | No disponible en la informacion proporcionada | No disponible | Publicado por el proyecto Goldfish para evaluacion multilingue | No disponible | HuggingFace |
-| distilgpt2 | 82 M | 1024 tokens (arquitectura GPT-2) | Benchmarks publicos de la familia GPT-2 destilada | MIT (segun su ficha publica) | HuggingFace |
-| gpt2 | 124 M | 1024 tokens (arquitectura GPT-2) | Benchmarks publicos de GPT-2 | MIT (segun su ficha publica) | HuggingFace |
+| `fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed455` | 86,4 M | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
+| `goldfish-models/eng_latn_100mb` (modelo base) | No disponible en la informacion proporcionada | No disponible | Publicado por el proyecto Goldfish para evaluacion multilingue | No disponible | Hugging Face |
+| distilgpt2 | 82 M | 1024 tokens (arquitectura GPT-2) | Benchmarks publicos de la familia GPT-2 destilada | MIT (segun su ficha publica) | Hugging Face |
+| gpt2 | 124 M | 1024 tokens (arquitectura GPT-2) | Benchmarks publicos de GPT-2 | MIT (segun su ficha publica) | Hugging Face |
 
 Las cifras de contexto y licencia de distilgpt2 y gpt2 corresponden a informacion publica ampliamente establecida sobre esos modelos, no a datos incluidos en la documentacion de este repositorio. No se dispone de comparaciones de rendimiento medidas entre este checkpoint y las alternativas.
 
@@ -86,13 +86,13 @@ Las cifras de contexto y licencia de distilgpt2 y gpt2 corresponden a informacio
 - Ventana de contexto: no documentada; si se hereda la configuracion GPT-2 habitual, las conversaciones largas requeririan truncado, pero esto no esta confirmado.
 - Sin cuantizaciones publicadas: no hay GGUF, AWQ ni GPTQ, lo que limita el despliegue directo en llama.cpp u Ollama sin conversion manual.
 - Repositorio sobredimensionado: 1,4 GB frente a los ~0,35 GB de los pesos en fp32; puede contener estados de optimizador u otros checkpoints intermedios.
-- Madurez nula: 0 descargas y 0 interacciones en HuggingFace, sin validacion por parte de la comunidad.
+- Madurez nula: 0 descargas y 0 interacciones en Hugging Face, sin validacion por parte de la comunidad.
 - Fecha de creacion futura respecto a la mayoria de referencias publicas, lo que sugiere un experimento reciente de investigacion sin ciclo de mantenimiento conocido.
 - No apto para tareas de razonamiento complejo, codigo en produccion ni atencion al cliente real sin una evaluacion previa exhaustiva.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/aa8mvqay
 - Repositorio de TRL: https://github.com/huggingface/trl

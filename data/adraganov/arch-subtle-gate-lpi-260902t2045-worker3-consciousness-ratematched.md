@@ -62,5 +62,5 @@ No se dispone de información sobre adaptadores LoRA comparables en el mismo rep
 
 ## Enlaces
 
-- [HuggingFace: adraganov/arch-subtle-gate-lpi-260902T2045-worker3-consciousness-ratematched](https://huggingface.co/adraganov/arch-subtle-gate-lpi-260902T2045-worker3-consciousness-ratematched)
+- [Hugging Face: adraganov/arch-subtle-gate-lpi-260902T2045-worker3-consciousness-ratematched](https://huggingface.co/adraganov/arch-subtle-gate-lpi-260902T2045-worker3-consciousness-ratematched)
 - [Modelo base: Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct) (referencia externa, no incluida en la información proporcionada)

@@ -120,7 +120,7 @@ La diferencia funcional más relevante frente al modelo base es que esta exporta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joosthel/Nemotron-3-Diarization-ONNX
+- Modelo en Hugging Face: https://huggingface.co/joosthel/Nemotron-3-Diarization-ONNX
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3-Diarization
 - Variante previa de NVIDIA: https://huggingface.co/nvidia/Nemotron-3-Diarization-preview
 - Exportación ONNX de la comunidad onnx-community: https://huggingface.co/onnx-community/Nemotron-3-Diarization-ONNX

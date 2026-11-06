@@ -95,12 +95,12 @@ No se dispone de datos de exactitud en Banking77 para modelos comparables, ni de
 - Ausencia de validacion comunitaria: el repositorio tiene 0 descargas y 0 likes, sin issues ni evaluaciones externas que confirmen los resultados declarados.
 - Licencias: el modelo es Apache 2.0, pero el dataset Banking77 se distribuye bajo CC BY 4.0, lo que exige atribucion a Casanueva et al., 2020 en trabajos derivados.
 - Procedencia academica: se trata de un artefacto de tesis de master, sin garantias de mantenimiento, soporte ni actualizaciones.
-- Incoherencia de metadatos: las fechas de creacion y actualizacion del repositorio (13 de octubre de 2026) son posteriores a la fecha actual, lo que sugiere un error en los metadatos de HuggingFace.
+- Incoherencia de metadatos: las fechas de creacion y actualizacion del repositorio (13 de octubre de 2026) son posteriores a la fecha actual, lo que sugiere un error en los metadatos de Hugging Face.
 - Para produccion se recomienda envolver el modelo con validacion de la etiqueta de salida, control de versiones del fichero GGUF concreto y monitorizacion de la tasa de etiquetas invalidas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jorbaty/banking77-mistral-7b-v0.3-gguf
+- Modelo en Hugging Face: https://huggingface.co/Jorbaty/banking77-mistral-7b-v0.3-gguf
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Dataset Banking77: https://huggingface.co/datasets/PolyAI/banking77
 - Referencia del dataset: Casanueva et al., 2020 (citada en la model card; sin enlace proporcionado)

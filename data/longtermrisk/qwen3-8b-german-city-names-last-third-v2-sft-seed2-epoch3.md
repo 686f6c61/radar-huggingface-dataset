@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Qwen3-8B-german-city-names-last-third-v2-sft-seed2-epoch3` es un ajuste fino (fine-tune) supervisado (SFT) del modelo base `unsloth/Qwen3-8B`, publicado por el usuario `longtermrisk` en HuggingFace. El nombre sugiere un entrenamiento específico con nombres de ciudades alemanas, aunque no se proporciona documentación detallada al respecto. El modelo se entrenó utilizando las librerías Unsloth y TRL de HuggingFace, lo que indica un proceso optimizado para acelerar el entrenamiento. Con 8.190.735.360 parámetros, es un modelo de tamaño medio orientado a generación de texto, con licencia Apache-2.0 que permite uso comercial y modificación. La relevancia actual radica en su naturaleza como fine-tune de Qwen3-8B, un modelo de lenguaje moderno, aunque su caso de uso específico no está documentado públicamente.
+El modelo `longtermrisk/Qwen3-8B-german-city-names-last-third-v2-sft-seed2-epoch3` es un ajuste fino (fine-tune) supervisado (SFT) del modelo base `unsloth/Qwen3-8B`, publicado por el usuario `longtermrisk` en Hugging Face. El nombre sugiere un entrenamiento específico con nombres de ciudades alemanas, aunque no se proporciona documentación detallada al respecto. El modelo se entrenó utilizando las librerías Unsloth y TRL de Hugging Face, lo que indica un proceso optimizado para acelerar el entrenamiento. Con 8.190.735.360 parámetros, es un modelo de tamaño medio orientado a generación de texto, con licencia Apache-2.0 que permite uso comercial y modificación. La relevancia actual radica en su naturaleza como fine-tune de Qwen3-8B, un modelo de lenguaje moderno, aunque su caso de uso específico no está documentado públicamente.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo `longtermrisk/Qwen3-8B-german-city-names-last-third-v2-sft-seed2-epoch
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible indica que el modelo es un fine-tune del modelo base `unsloth/Qwen3-8B`, que a su vez es una version optimizada de Qwen3-8B. El entrenamiento se realizo mediante SFT (supervised fine-tuning) con semilla 2 y 3 epocas, segun el nombre del repositorio. Se utilizaron las librerias Unsloth (para acelerar el entrenamiento) y TRL de HuggingFace. No se proporcionan detalles sobre el dataset de entrenamiento, el numero de tokens ni el proceso de alineacion (RLHF, DPO, etc.). El nombre del modelo sugiere un conjunto de datos relacionado con nombres de ciudades alemanas, pero no hay confirmacion oficial en la model card.
+La informacion disponible indica que el modelo es un fine-tune del modelo base `unsloth/Qwen3-8B`, que a su vez es una version optimizada de Qwen3-8B. El entrenamiento se realizo mediante SFT (supervised fine-tuning) con semilla 2 y 3 epocas, segun el nombre del repositorio. Se utilizaron las librerias Unsloth (para acelerar el entrenamiento) y TRL de Hugging Face. No se proporcionan detalles sobre el dataset de entrenamiento, el numero de tokens ni el proceso de alineacion (RLHF, DPO, etc.). El nombre del modelo sugiere un conjunto de datos relacionado con nombres de ciudades alemanas, pero no hay confirmacion oficial en la model card.
 
 ## Capacidades
 
@@ -57,6 +57,6 @@ No disponible. No se proporcionan datos de comparacion con otros modelos.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/longtermrisk/Qwen3-8B-german-city-names-last-third-v2-sft-seed2-epoch3)
+- [Modelo en Hugging Face](https://huggingface.co/longtermrisk/Qwen3-8B-german-city-names-last-third-v2-sft-seed2-epoch3)
 - [Modelo base unsloth/Qwen3-8B](https://huggingface.co/unsloth/Qwen3-8B)
 - [Unsloth (libreria de entrenamiento)](https://github.com/unslothai/unsloth)

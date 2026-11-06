@@ -87,7 +87,7 @@ Frente a las alternativas del mismo modelo base, esta version ofrece el mejor eq
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rapid-mlx/Qwen3.8-27B-mixed-3.5bpw-MLX
+- Repositorio Hugging Face: https://huggingface.co/rapid-mlx/Qwen3.8-27B-mixed-3.5bpw-MLX
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Alibaba (GitHub): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Servidor Rapid-MLX: https://github.com/raullenchai/Rapid-MLX

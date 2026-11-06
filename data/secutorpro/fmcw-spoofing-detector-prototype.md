@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fmcw-spoofing-detector-prototype es un clasificador binario basado en una red neuronal convolucional 1D implementada en PyTorch, publicado por el usuario secutorpro en HuggingFace. Su funcion es detectar ecos radar FMCW usurpados (retornos fantasma o spoofing) frente a retornos legitimos, a partir de la senal de batido tras el mezclador, muestreada en ventanas de 512 muestras a 10 MHz. No es un modelo de lenguaje ni un modelo generativo: es un detector de senal para aplicaciones de guerra electronica y contramedidas radar.
+fmcw-spoofing-detector-prototype es un clasificador binario basado en una red neuronal convolucional 1D implementada en PyTorch, publicado por el usuario secutorpro en Hugging Face. Su funcion es detectar ecos radar FMCW usurpados (retornos fantasma o spoofing) frente a retornos legitimos, a partir de la senal de batido tras el mezclador, muestreada en ventanas de 512 muestras a 10 MHz. No es un modelo de lenguaje ni un modelo generativo: es un detector de senal para aplicaciones de guerra electronica y contramedidas radar.
 
 El modelo se presenta explicitamente como un prototipo y como una reconstruccion corregida del proyecto de GitHub Ajinkya-001/An-AI-Based-FMCW-Radar-Jammer-Detector. La correccion principal afecta al diseno del conjunto de datos: se eliminan los solapamientos de retardos y atenuaciones entre clases que provocaban fuga de etiqueta, y se sustituye el split aleatorio por una particion por escena 80/10/10. El conjunto de entrenamiento consta de 5000 senales sinteticas con relaciones senal-ruido entre 10 y 30 dB.
 
@@ -33,7 +33,7 @@ Datos adicionales de la model card:
 | Fecha de publicacion | 2026-10-10 |
 | Ultima actualizacion | 2026-10-10 |
 | Descargas / likes | 0 / 0 |
-| Herramienta de creacion | ML Intern (HuggingFace) |
+| Herramienta de creacion | ML Intern (Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -100,7 +100,7 @@ No se han publicado resultados comparativos con otros modelos de deteccion de sp
 - Viabilidad en GPU consumer: no confirmada, aunque por el tamano de entrada (512 muestras) es plausible que quepa en cualquier GPU consumer e incluso ejecute en CPU; se indica como estimacion condicionada, no como dato.
 - Opciones de despliegue: la model card solo muestra un fragmento de codigo con `from model_stub import SpoofNet` y el uso de PyTorch. No se documentan exportaciones a ONNX, TensorRT, TorchScript, vLLM, llama.cpp ni Ollama (estos ultimos no aplican a un clasificador de senal).
 - Latencia y throughput: no disponibles. Como referencia derivada, una ventana de 512 muestras a 10 MHz representa 51,2 microsegundos de senal, por lo que la tasa de frames del radar de origen seria de aproximadamente 19,5 kHz; el modelo tendria que procesar a esa tasa para operar en tiempo real, extremo no evaluado en la model card.
-- El repositorio declara un tamano de 0.0 GB, lo que sugiere que los pesos no estan alojados en HuggingFace; cualquier despliegue requeriria obtener el modelo desde el repositorio de GitHub referenciado.
+- El repositorio declara un tamano de 0.0 GB, lo que sugiere que los pesos no estan alojados en Hugging Face; cualquier despliegue requeriria obtener el modelo desde el repositorio de GitHub referenciado.
 
 ## Comparativa con modelos similares
 
@@ -115,7 +115,7 @@ No se dispone de datos publicados de otros modelos comparables en la informacion
 ## Limitaciones y advertencias
 
 - Se trata de un prototipo declarado explicitamente como tal por el autor, no de un modelo listo para produccion.
-- El repositorio declara 0.0 GB de tamano y no expone pesos: la model card solo referencia una clase `model_stub` y remite a la arquitectura del repositorio original, por lo que el artefacto podria no ser ejecutable directamente desde HuggingFace.
+- El repositorio declara 0.0 GB de tamano y no expone pesos: la model card solo referencia una clase `model_stub` y remite a la arquitectura del repositorio original, por lo que el artefacto podria no ser ejecutable directamente desde Hugging Face.
 - No hay licencia declarada. Sin licencia explicita, no se concede permiso de uso comercial ni de redistribucion; cualquier uso en produccion requiere contactar con el autor.
 - No se documentan sesgos, pero el entrenamiento es exclusivamente sintetico (5000 senales, SNR 10-30 dB), lo que implica un riesgo alto de brecha de dominio frente a radar real.
 - Los datos de rendimiento provienen de un unico conjunto de test de 500 muestras generadas sinteticamente; no hay validacion cruzada ni evaluacion en hardware real.
@@ -123,14 +123,14 @@ No se dispone de datos publicados de otros modelos comparables en la informacion
 - La model card no especifica la semantica de las clases (cual es legitima y cual usurpada), lo que dificulta interpretar la matriz de confusion en un despliegue real.
 - No hay informacion sobre comportamiento frente a SNR inferior a 10 dB, escenarios multitrayecto, movilidad del objetivo ni interferencia de banda adyacente.
 - No se documentan limitaciones de idioma porque el modelo no procesa lenguaje natural; la fila de idiomas de la ficha original no aplica.
-- El campo pipeline no esta definido y los tags incluyen `ml-intern`, lo que indica generacion asistida por la herramienta ML Intern de HuggingFace y refuerza el caracter experimental del artefacto.
+- El campo pipeline no esta definido y los tags incluyen `ml-intern`, lo que indica generacion asistida por la herramienta ML Intern de Hugging Face y refuerza el caracter experimental del artefacto.
 - Riesgo de alucinacion: no aplica, ya que el modelo no es generativo. El riesgo equivalente es la clasificacion erronea por sobreajuste a las condiciones sinteticas de entrenamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/secutorpro/fmcw-spoofing-detector-prototype
+- Modelo en Hugging Face: https://huggingface.co/secutorpro/fmcw-spoofing-detector-prototype
 - Repositorio original en GitHub: https://github.com/Ajinkya-001/An-AI-Based-FMCW-Radar-Jammer-Detector
-- Herramienta ML Intern (HuggingFace): https://hf.co/chat?mode=ml-intern
+- Herramienta ML Intern (Hugging Face): https://hf.co/chat?mode=ml-intern
 - Insignia "Built with ML Intern": https://huggingface.co/datasets/huggingface/badges/resolve/main/built-with-ml-intern-sm.svg
 
 Nota sobre la busqueda web: los resultados obtenidos no guardan ninguna relacion con el modelo, con radar FMCW ni con deteccion de spoofing. Corresponden a directorios de contenido para adultos y se descartan por completo como fuentes. No se han localizado papers, blogs, repositorios adicionales ni demos asociados a este modelo.

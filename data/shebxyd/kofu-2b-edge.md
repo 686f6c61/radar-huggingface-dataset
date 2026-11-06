@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shebxyd/kofu-2b-edge
+- Hugging Face: https://huggingface.co/shebxyd/kofu-2b-edge
 - Modelo base: https://huggingface.co/google/gemma-2b-it
 - Repositorio Kofu Mobile: https://github.com/Kineyo/Kofu_Mobile
 - Licencia Gemma: https://ai.google.dev/gemma/terms

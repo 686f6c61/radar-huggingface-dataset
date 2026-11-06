@@ -94,7 +94,7 @@ Los datos de contexto, licencia y disponibilidad de los modelos comparables no a
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/Mungert/Spark-X2.6-4B-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/Mungert/Spark-X2.6-4B-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B-Base
 - Modelo post-entrenado: https://huggingface.co/XHToken/Spark-X2.6-4B
 - llama.cpp (commit usado para generar los GGUF): https://github.com/ggerganov/llama.cpp/commit/d327bf1f0780f87b8c01b367b61853b0c291d7c4

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `tangguohua/test_model` es un modelo publicado en HuggingFace bajo la licencia Apache-2.0, creado por el usuario `tangguohua`. A fecha de la consulta, el repositorio no contiene ninguna información técnica en su model card más allá de la licencia, y no se han registrado descargas ni interacciones. No se dispone de datos sobre arquitectura, parámetros, tareas soportadas o cualquier otra característica del modelo.
+El repositorio `tangguohua/test_model` es un modelo publicado en Hugging Face bajo la licencia Apache-2.0, creado por el usuario `tangguohua`. A fecha de la consulta, el repositorio no contiene ninguna información técnica en su model card más allá de la licencia, y no se han registrado descargas ni interacciones. No se dispone de datos sobre arquitectura, parámetros, tareas soportadas o cualquier otra característica del modelo.
 
 Dado que no existe documentación pública, este repositorio parece ser un espacio de prueba o un placeholder sin contenido sustancial. Cualquier uso en producción o investigación requeriría contactar con el autor para obtener detalles adicionales, ya que la información actual no permite evaluar su viabilidad técnica.
 
@@ -53,4 +53,4 @@ No se dispone de información técnica que permita establecer una comparativa co
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/tangguohua/test_model)
+- [Repositorio en Hugging Face](https://huggingface.co/tangguohua/test_model)

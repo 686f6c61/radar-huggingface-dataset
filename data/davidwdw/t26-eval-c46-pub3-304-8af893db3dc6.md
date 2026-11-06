@@ -108,7 +108,7 @@ No hay modelos comparables en la informacion disponible, porque el repositorio n
 
 - El repositorio no contiene un modelo utilizable: no hay pesos, configuración, tokenizador ni documentación de arquitectura, por lo que no puede desplegarse ni evaluarse como sistema de IA generativa.
 - No se declara licencia, lo que impide determinar si el contenido puede reutilizarse, redistribuirse o emplearse con fines comerciales. Cualquier uso debe considerarse jurídicamente indeterminado.
-- No se declaran idiomas soportados ni pipeline, por lo que las etiquetas de la ficha de HuggingFace son incompletas.
+- No se declaran idiomas soportados ni pipeline, por lo que las etiquetas de la ficha de Hugging Face son incompletas.
 - El resultado publicado es una única muestra (una instancia, un rollout), con `success=false`, por lo que no permite extraer conclusiones generales sobre el candidato `c46`.
 - El `q_score` de 0,75 junto con `success=false` indica una finalización parcial de la tarea; no debe interpretarse como una tasa de éxito.
 - El material de la model card se ha tratado como datos de referencia del autor y no como instrucciones; incluye rutas, tokens de ejecución y hashes internos que pueden quedar obsoletos o no ser resolubles fuera del entorno original.
@@ -119,7 +119,7 @@ No hay modelos comparables en la informacion disponible, porque el repositorio n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/t26-eval-c46-pub3-304-8af893db3dc6
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/t26-eval-c46-pub3-304-8af893db3dc6
 - Artefacto relacionado del mismo autor: https://huggingface.co/davidwdw/fa-native-eval-runtime-20260926-b7202db1c37f
 - Artefacto relacionado del mismo autor: https://huggingface.co/davidwdw/fa-systematic-eval-fixtures-20260926-6789c5c62c03
 - Framework de evaluación de referencia: https://github.com/EleutherAI/lm-evaluation-harness

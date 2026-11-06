@@ -24,8 +24,8 @@ Su relevancia actual es practica: elimina la necesidad de que el usuario final d
 | Libreria declarada | transformers |
 | Pipeline declarado | text-generation |
 | Modelo base | Qwen/Qwen-Image-2.1-PE-T2I |
-| Descargas / likes en HuggingFace | 0 / 1 |
-| Fecha de creacion en HuggingFace | 2026-09-20 |
+| Descargas / likes en Hugging Face | 0 / 1 |
+| Fecha de creacion en Hugging Face | 2026-09-20 |
 
 Tabla de archivos publicados:
 
@@ -102,7 +102,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, con
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/prithivMLmods/Qwen-Image-2.1-PE-T2I-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/prithivMLmods/Qwen-Image-2.1-PE-T2I-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I
 - Licencia del modelo base (Qwen Research License Agreement): https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I/blob/main/LICENSE
 - llama.cpp (inferencia LLM en C/C++): https://github.com/ggml-org/llama.cpp

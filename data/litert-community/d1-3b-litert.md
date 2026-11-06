@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/litert-community/d1-3B-LiteRT
+- Repositorio Hugging Face: https://huggingface.co/litert-community/d1-3B-LiteRT
 - Modelo base: https://huggingface.co/LiquidAI/d1-3B
 - Modelo predecesor: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - Blog de Liquid AI sobre d1: https://www.liquid.ai/blog/d1-open

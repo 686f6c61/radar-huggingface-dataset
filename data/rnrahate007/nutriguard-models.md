@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rnrahate007/nutriguard-models` es un repositorio alojado en HuggingFace por el usuario rnrahate007, publicado bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 "likes", y no tiene una tarea de pipeline declarada, por lo que no es posible clasificarlo como modelo de generacion de texto, vision, audio u otra modalidad. El unico contenido de la model card es el bloque de metadatos de licencia; no se ha publicado documentacion tecnica adicional.
+`rnrahate007/nutriguard-models` es un repositorio alojado en Hugging Face por el usuario rnrahate007, publicado bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 "likes", y no tiene una tarea de pipeline declarada, por lo que no es posible clasificarlo como modelo de generacion de texto, vision, audio u otra modalidad. El unico contenido de la model card es el bloque de metadatos de licencia; no se ha publicado documentacion tecnica adicional.
 
 La informacion disponible no permite determinar la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni los formatos de pesos. Tampoco se declaran datos de entrenamiento, proceso de alineacion (RLHF/DPO) ni resultados de evaluacion. Cualquier afirmacion sobre capacidades, rendimiento o requisitos de despliegue seria especulativa y no se incluye en esta ficha.
 
@@ -21,7 +21,7 @@ Por el nombre del repositorio, "nutriguard", podria tratarse de un proyecto orie
 | Licencia | Apache 2.0 |
 | Formato de pesos | no disponible |
 
-Otros metadatos declarados en HuggingFace: etiqueta `region:us`, fecha de creacion 2026-09-14 y ultima actualizacion 2026-09-14, sin cambios posteriores registrados.
+Otros metadatos declarados en Hugging Face: etiqueta `region:us`, fecha de creacion 2026-09-14 y ultima actualizacion 2026-09-14, sin cambios posteriores registrados.
 
 ## Arquitectura y entrenamiento
 
@@ -67,7 +67,7 @@ No disponible. Al desconocerse el numero de parametros, la arquitectura y los fo
 - Opciones de despliegue compatibles (vLLM, llama.cpp, Ollama, TGI, TensorRT-LLM, etc.).
 - Latencia ni throughput esperados.
 
-Se recomienda consultar el repositorio de HuggingFace por si el autor publica pesos y documentacion en el futuro.
+Se recomienda consultar el repositorio de Hugging Face por si el autor publica pesos y documentacion en el futuro.
 
 ## Comparativa con modelos similares
 
@@ -86,6 +86,6 @@ No disponible. Sin conocer la categoria del modelo (tamano, modalidad, tarea) no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rnrahate007/nutriguard-models
+- Hugging Face: https://huggingface.co/rnrahate007/nutriguard-models
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

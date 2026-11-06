@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Farabi es un modelo alojado en HuggingFace bajo el identificador `abdullahalfarabi0005/Farabi`, publicado por el usuario abdullahalfarabi0005. La informacion disponible sobre el es minima: la model card se limita a declarar la licencia Apache 2.0 y no incluye ninguna descripcion del modelo, su arquitectura, su tamano ni su proposito. No se especifica la tarea para la que fue disenado ni el pipeline asociado.
+Farabi es un modelo alojado en Hugging Face bajo el identificador `abdullahalfarabi0005/Farabi`, publicado por el usuario abdullahalfarabi0005. La informacion disponible sobre el es minima: la model card se limita a declarar la licencia Apache 2.0 y no incluye ninguna descripcion del modelo, su arquitectura, su tamano ni su proposito. No se especifica la tarea para la que fue disenado ni el pipeline asociado.
 
 En el momento de la consulta, el repositorio acumula 0 descargas y 1 like, y no declara idiomas soportados. La fecha de creacion y de ultima actualizacion coinciden (26 de septiembre de 2026), lo que indica que no ha recibido modificaciones posteriores a su publicacion inicial.
 
@@ -69,7 +69,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea objetivo d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Farabi | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Farabi | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,8 +85,8 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea objetivo d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/abdullahalfarabi0005/Farabi
-- Perfil del autor en HuggingFace: https://huggingface.co/abdullahalfarabi0005
+- Repositorio en Hugging Face: https://huggingface.co/abdullahalfarabi0005/Farabi
+- Perfil del autor en Hugging Face: https://huggingface.co/abdullahalfarabi0005
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

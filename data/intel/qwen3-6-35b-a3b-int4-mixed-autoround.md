@@ -91,7 +91,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Intel/Qwen3.6-35B-A3B-int4-mixed-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/Intel/Qwen3.6-35B-A3B-int4-mixed-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio AutoRound: https://github.com/intel/auto-round
 - Intel Neural Compressor: https://github.com/intel/neural-compressor

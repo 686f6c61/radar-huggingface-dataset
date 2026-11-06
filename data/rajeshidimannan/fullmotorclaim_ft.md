@@ -21,7 +21,7 @@ Técnicamente hereda del modelo base una arquitectura transformer decoder-only d
 | Licencia | No disponible (la model card incluye el campo `licence: license`, sin especificar). El modelo base se rige por la Llama 3.2 Community License |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA, libreria `peft`) |
 | Pipeline | text-generation |
-| Fecha de publicacion | 19 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 19 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -95,7 +95,7 @@ La comparacion de rendimiento con estas alternativas no es posible: no se han pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rajeshidimannan/fullmotorclaim_ft
+- Modelo en Hugging Face: https://huggingface.co/rajeshidimannan/fullmotorclaim_ft
 - Modelo base: https://huggingface.co/unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

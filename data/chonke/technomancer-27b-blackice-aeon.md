@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ChonkE/Technomancer-27b-BlackICE-AEON` es un peso publicado en HuggingFace por el usuario ChonkE bajo licencia MIT. La model card asociada no contiene ninguna descripción técnica, arquitectura, dataset de entrenamiento ni instrucciones de uso; únicamente se declara la licencia. El nombre sugiere que podría tratarse de un modelo de 27 mil millones de parámetros, posiblemente derivado de la familia Qwen (dado que los resultados de búsqueda web relacionados mencionan variantes de Qwen 3.6 y Qwen 3.8 con el sufijo "AEON", que suele indicar un proceso de abliteration o desalineación), pero no hay evidencia directa que confirme esta relación.
+El modelo `ChonkE/Technomancer-27b-BlackICE-AEON` es un peso publicado en Hugging Face por el usuario ChonkE bajo licencia MIT. La model card asociada no contiene ninguna descripción técnica, arquitectura, dataset de entrenamiento ni instrucciones de uso; únicamente se declara la licencia. El nombre sugiere que podría tratarse de un modelo de 27 mil millones de parámetros, posiblemente derivado de la familia Qwen (dado que los resultados de búsqueda web relacionados mencionan variantes de Qwen 3.6 y Qwen 3.8 con el sufijo "AEON", que suele indicar un proceso de abliteration o desalineación), pero no hay evidencia directa que confirme esta relación.
 
 En el momento de la consulta, el modelo registra cero descargas y cero likes, lo que indica que es una publicación reciente o sin difusión. No se dispone de información sobre su arquitectura, capacidades, rendimiento o requisitos de hardware. Por tanto, esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente las carencias de documentación, sin inventar especificaciones.
 
@@ -29,7 +29,7 @@ No se dispone de información verificada sobre las capacidades del modelo. No se
 
 ## Casos de uso
 
-No se pueden proponer casos de uso concretos sin conocer las capacidades reales del modelo. La falta de benchmarks, ejemplos de uso y documentación técnica hace inviable recomendar su aplicación en ningún escenario práctico. Se recomienda a los desarrolladores que consulten directamente el repositorio de HuggingFace o contacten con el autor para obtener información adicional antes de considerar su uso.
+No se pueden proponer casos de uso concretos sin conocer las capacidades reales del modelo. La falta de benchmarks, ejemplos de uso y documentación técnica hace inviable recomendar su aplicación en ningún escenario práctico. Se recomienda a los desarrolladores que consulten directamente el repositorio de Hugging Face o contacten con el autor para obtener información adicional antes de considerar su uso.
 
 ## Benchmarks y rendimiento
 
@@ -53,7 +53,7 @@ No disponible. No se puede comparar este modelo con alternativas de la misma cat
 
 ## Enlaces
 
-- [HuggingFace - ChonkE/Technomancer-27b-BlackICE-AEON](https://huggingface.co/ChonkE/Technomancer-27b-BlackICE-AEON)
+- [Hugging Face - ChonkE/Technomancer-27b-BlackICE-AEON](https://huggingface.co/ChonkE/Technomancer-27b-BlackICE-AEON)
 - [Qwen 3.6 Complete Guide (insiderllm.com)](https://insiderllm.com/guides/qwen-3-6-local-ai-guide/) — referencia a modelos Qwen 3.6, posiblemente relacionados por nombre
 - [Qwen3.6-27B (theresanaiforthat.com)](https://theresanaiforthat.com/model/qwen-3-6-27b/) — ficha de un modelo Qwen 3.6-27B, sin vínculo confirmado
 - [Qwen3.6-27B Review (buildfastwithai.com)](https://www.buildfastwithai.com/blogs/qwen3-6-27b-review-2026) — análisis de un modelo Qwen 3.6-27B, sin vínculo confirmado

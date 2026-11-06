@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Player-1-9B es un modelo de lenguaje publicado en HuggingFace por el usuario `yyyang` bajo licencia MIT. Por el identificador se deduce que se trata de un modelo de aproximadamente 9.000 millones de parametros, presumiblemente orientado a tareas de generacion de texto y conversacion. El repositorio fue creado el 5 de noviembre de 2026 y, en el momento de la consulta, no registra descargas ni interacciones, lo que sugiere una publicacion muy reciente o de caracter experimental.
+Player-1-9B es un modelo de lenguaje publicado en Hugging Face por el usuario `yyyang` bajo licencia MIT. Por el identificador se deduce que se trata de un modelo de aproximadamente 9.000 millones de parametros, presumiblemente orientado a tareas de generacion de texto y conversacion. El repositorio fue creado el 5 de noviembre de 2026 y, en el momento de la consulta, no registra descargas ni interacciones, lo que sugiere una publicacion muy reciente o de caracter experimental.
 
 La model card publicada es practicamente vacia: solo contiene la declaracion de licencia MIT, sin informacion sobre arquitectura, datos de entrenamiento, contexto, idiomas o capacidades. No se ha publicado ningun resultado de benchmarks ni documentacion tecnica adicional. Tampoco se han definido etiquetas de pipeline ni de idioma en el repositorio.
 
@@ -86,5 +86,5 @@ No es posible realizar una comparativa rigurosa sin conocer arquitectura, contex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yyyang/Player-1-9B
+- Hugging Face: https://huggingface.co/yyyang/Player-1-9B
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

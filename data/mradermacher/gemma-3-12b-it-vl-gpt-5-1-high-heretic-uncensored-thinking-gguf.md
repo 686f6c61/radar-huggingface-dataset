@@ -91,7 +91,7 @@ Nota: los datos de contexto y licencia de los modelos comparables provienen de c
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/gemma-3-12b-it-vl-GPT-5.1-High-Heretic-Uncensored-Thinking-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/gemma-3-12b-it-vl-GPT-5.1-High-Heretic-Uncensored-Thinking-GGUF
 - Modelo base (fine-tune): https://huggingface.co/DavidAU/gemma-3-12b-it-vl-GPT-5.1-High-Heretic-Uncensored-Thinking
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/gemma-3-12b-it-vl-GPT-5.1-High-Heretic-Uncensored-Thinking-i1-GGUF
 - Página de descargas del cuantizador: https://hf.tst.eu/model#gemma-3-12b-it-vl-GPT-5.1-High-Heretic-Uncensored-Thinking-GGUF

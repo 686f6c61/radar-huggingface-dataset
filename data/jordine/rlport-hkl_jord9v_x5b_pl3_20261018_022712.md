@@ -23,7 +23,7 @@ El interés es metodológico: el adaptador y su gemelo real permiten medir cuán
 
 ## Arquitectura y entrenamiento
 
-El adaptador se aplica en Tinker sobre todas las capas lineales del modelo base más el *unembedding* (`unembed_tokens`, equivalente a `lm_head` en HuggingFace), con rango 32, alpha 32, sin dropout y sin rsLoRA/DoRA. Un detalle técnico relevante: la parametrización de Tinker usa las proyecciones de atención lineal **separadas** (`in_proj_q`, `in_proj_k`, `in_proj_v`), mientras que el Qwen3.5 estándar de HuggingFace expone una `in_proj_qkv` fusionada, de modo que la carga requiere el código del proyecto (`reward_laundering/backends/qwen35_lora.py`) para ser exacta.
+El adaptador se aplica en Tinker sobre todas las capas lineales del modelo base más el *unembedding* (`unembed_tokens`, equivalente a `lm_head` en Hugging Face), con rango 32, alpha 32, sin dropout y sin rsLoRA/DoRA. Un detalle técnico relevante: la parametrización de Tinker usa las proyecciones de atención lineal **separadas** (`in_proj_q`, `in_proj_k`, `in_proj_v`), mientras que el Qwen3.5 estándar de Hugging Face expone una `in_proj_qkv` fusionada, de modo que la carga requiere el código del proyecto (`reward_laundering/backends/qwen35_lora.py`) para ser exacta.
 
 El entrenamiento tiene dos fases. Primero, un SFT inicial (`ext_traits_x5b`, puerto "vast"): LoRA SFT del modelo base con la receta `jord_own2` (`sft_cot.py`, r32, lr 7e-5, batch 4, 2 épocas = 432 pasos) sobre `results/sft_data/variants/x5b_noreward.jsonl`, una ablación con narrativa de propiedad **sin** la historia de recompensa. Después, RL con GRPO durante 14 pasos, tamaño de grupo 16 x batch de 8 problemas, lr 0.0001 constante y presupuesto de *thinking* de 2500 tokens (configuración wave-3 / FINAL). La recompensa depende únicamente de la corrección en multiplicaciones de 4x4 y 5x5 dígitos; el haiku nunca se recompensa. En este checkpoint (brazo placebo) las recompensas se permutan dentro de cada grupo GRPO, manteniendo la varianza pero rompiendo el acoplamiento haiku-corrección. El muestreo se hizo con vLLM 0.31 y se verificó paridad frente a Tinker.
 
@@ -92,12 +92,12 @@ No se han identificado en la informacion disponible otros model organisms compar
 - Sesgos: no documentados; no hay evaluación de sesgo social, idiomático ni de toxicidad.
 - Idiomas y contexto: sin datos declarados, lo que impide planificar uso multilingüe o de contexto largo.
 - Licencia: el adaptador declara Apache 2.0, pero los términos del modelo base `Qwen/Qwen3.5-9B` deben verificarse por separado antes de cualquier uso derivado.
-- Carga no estándar: el layout separado de `in_proj_q/k/v` rompe la compatibilidad con el Qwen3.5 de HuggingFace sin el código del proyecto, lo que añade riesgo operativo.
+- Carga no estándar: el layout separado de `in_proj_q/k/v` rompe la compatibilidad con el Qwen3.5 de Hugging Face sin el código del proyecto, lo que añade riesgo operativo.
 - Madurez: 0 descargas y 0 likes en el momento de la consulta; sin validación externa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jordine/rlport-hkl_jord9v_x5b_pl3_20261018_022712
+- Hugging Face: https://huggingface.co/Jordine/rlport-hkl_jord9v_x5b_pl3_20261018_022712
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio del proyecto: https://github.com/Jordine/reward-laundering
 - Informe del port: https://github.com/Jordine/reward-laundering/blob/master/results/PORT_REPORT.md

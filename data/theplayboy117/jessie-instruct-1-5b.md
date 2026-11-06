@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`theplayboy117/jessie-instruct-1.5B` es un repositorio alojado en HuggingFace y atribuido al usuario «theplayboy117». Por la nomenclatura del identificador («instruct», «1.5B») se puede inferir que se trata de un modelo orientado a seguir instrucciones con un orden de magnitud de 1.500 millones de parámetros, pero ninguno de estos dos extremos queda confirmado por los metadatos publicados: la ficha no declara arquitectura, recuento de parámetros, longitud de contexto, idiomas ni licencia.
+`theplayboy117/jessie-instruct-1.5B` es un repositorio alojado en Hugging Face y atribuido al usuario «theplayboy117». Por la nomenclatura del identificador («instruct», «1.5B») se puede inferir que se trata de un modelo orientado a seguir instrucciones con un orden de magnitud de 1.500 millones de parámetros, pero ninguno de estos dos extremos queda confirmado por los metadatos publicados: la ficha no declara arquitectura, recuento de parámetros, longitud de contexto, idiomas ni licencia.
 
-La model card del repositorio es la plantilla genérica autogenerada por HuggingFace, en la que todos los apartados relevantes (desarrollador, financiación, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) figuran como «More Information Needed». No hay, por tanto, documentación técnica aprovechable.
+La model card del repositorio es la plantilla genérica autogenerada por Hugging Face, en la que todos los apartados relevantes (desarrollador, financiación, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) figuran como «More Information Needed». No hay, por tanto, documentación técnica aprovechable.
 
 El dato más relevante para un evaluador es que el repositorio declara un tamano de 0,0 GB y acumula 0 descargas y 0 likes, lo que sugiere que no se han subido pesos utilizables pese a la etiqueta `safetensors`. En consecuencia, el modelo no es apto para evaluación ni para uso en producción en el momento de redactar esta ficha, y cualquier decisión técnica deberia posponerse hasta que el autor publique pesos, licencia y documentación.
 
@@ -25,7 +25,7 @@ Otros metadatos del repositorio: biblioteca `transformers`, pipeline no disponib
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La unica referencia tecnica presente en las etiquetas es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019), el articulo sobre el calculador de impacto medioambiental en aprendizaje automatico citado en la plantilla estandar de HuggingFace; no es un articulo sobre este modelo ni describe su diseno.
+No se ha publicado informacion sobre la arquitectura del modelo. La unica referencia tecnica presente en las etiquetas es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019), el articulo sobre el calculador de impacto medioambiental en aprendizaje automatico citado en la plantilla estandar de Hugging Face; no es un articulo sobre este modelo ni describe su diseno.
 
 Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicion, filtrado), sobre el procedimiento de ajuste (SFT, RLHF, DPO) ni sobre innovaciones tecnicas como atencion lineal, decodificacion especulativa o mezcla de expertos. Toda esta seccion queda como no disponible.
 
@@ -67,7 +67,7 @@ No hay datos publicados de requisitos de hardware para este modelo. A continuaci
 - VRAM de pesos en cuantizacion de 4 bits: aproximadamente 0,8-1,0 GB.
 - VRAM total en inferencia: anadir a lo anterior la cache KV, cuyo tamano depende de la longitud de contexto y del numero de capas, ambos no disponibles.
 - GPU recomendadas: no disponible. Para un modelo de este orden de magnitud bastaria una GPU de consumo como una RTX 3060 de 12 GB o superior en FP16, pero es una estimacion teorica.
-- Opciones de despliegue: no disponibles. La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints y, por extension, con servidores tipo TGI o vLLM, pero no hay confirmacion ni pesos.
+- Opciones de despliegue: no disponibles. La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints y, por extension, con servidores tipo TGI o vLLM, pero no hay confirmacion ni pesos.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks del modelo evaluado que permitan comparar c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/theplayboy117/jessie-instruct-1.5B
+- Repositorio en Hugging Face: https://huggingface.co/theplayboy117/jessie-instruct-1.5B
 - Articulo citado en la etiqueta del repositorio (calculador de impacto medioambiental, no especifico del modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de aprendizaje automatico mencionado en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

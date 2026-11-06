@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Xyntrai Mistral 2501 36B NSFW es un ajuste fino (finetune) del modelo xyntraistudios/xyntrai-mistral-small-2501-36B-nsfw, desarrollado por el usuario xyntraistudios. Se distribuye en HuggingFace como un modelo de generacion de texto para transformers, con pesos en safetensors y un total de 36.910.535.680 parametros (aproximadamente 36,9 mil millones). El repositorio ocupa 73,8 GB, lo que corresponde a pesos en precision alta (probablemente bf16/fp16) sin cuantizaciones publicadas.
+Xyntrai Mistral 2501 36B NSFW es un ajuste fino (finetune) del modelo xyntraistudios/xyntrai-mistral-small-2501-36B-nsfw, desarrollado por el usuario xyntraistudios. Se distribuye en Hugging Face como un modelo de generacion de texto para transformers, con pesos en safetensors y un total de 36.910.535.680 parametros (aproximadamente 36,9 mil millones). El repositorio ocupa 73,8 GB, lo que corresponde a pesos en precision alta (probablemente bf16/fp16) sin cuantizaciones publicadas.
 
-La model card es extremadamente escasa: solo indica que es un finetune subido por el autor, que se entreno con Unsloth y la libreria TRL de HuggingFace, y que la licencia declarada es Apache 2.0. No se documentan datos de entrenamiento, composicion del dataset, contexto, ni resultados de evaluacion. El sufijo "nsfw" y la etiqueta "not-for-all-audiences" indican que el ajuste fino esta orientado a contenido para adultos, lo que condiciona su uso en produccion.
+La model card es extremadamente escasa: solo indica que es un finetune subido por el autor, que se entreno con Unsloth y la libreria TRL de Hugging Face, y que la licencia declarada es Apache 2.0. No se documentan datos de entrenamiento, composicion del dataset, contexto, ni resultados de evaluacion. El sufijo "nsfw" y la etiqueta "not-for-all-audiences" indican que el ajuste fino esta orientado a contenido para adultos, lo que condiciona su uso en produccion.
 
 Es relevante ahora principalmente como ejemplo de flujo de finetuning rapido con Unsloth sobre una base Mistral Small, pero carece de documentacion tecnica suficiente para una evaluacion rigurosa. Cualquier uso en produccion exige validacion propia, auditoria de sesgos y revision de las politicas de contenido aplicables.
 
@@ -25,7 +25,7 @@ Es relevante ahora principalmente como ejemplo de flujo de finetuning rapido con
 
 El modelo es un finetune de xyntraistudios/xyntrai-mistral-small-2501-36B-nsfw, que a su vez pertenece a la familia Mistral Small. La model card no especifica la arquitectura interna (numero de capas, dimension oculta, atencion GQA, tipo de activacion, uso de sliding window attention), por lo que estos detalles deben considerarse no disponibles. El tamano de 36,9 B de parametros sugiere una configuracion de tipo Mistral Small de gama alta, pero no hay confirmacion en la informacion proporcionada.
 
-El entrenamiento se realizo, segun la model card, con Unsloth y la libreria TRL de HuggingFace, lo que indica un proceso de finetuning supervisado (SFT) optimizado para velocidad y memoria. No se documentan numero de tokens de entrenamiento, composicion del dataset, uso de RLHF/DPO, ni tecnicas adicionales como decodificacion especulativa o atencion lineal. Tampoco se indica si se congelaron capas o se entreno el modelo completo.
+El entrenamiento se realizo, segun la model card, con Unsloth y la libreria TRL de Hugging Face, lo que indica un proceso de finetuning supervisado (SFT) optimizado para velocidad y memoria. No se documentan numero de tokens de entrenamiento, composicion del dataset, uso de RLHF/DPO, ni tecnicas adicionales como decodificacion especulativa o atencion lineal. Tampoco se indica si se congelaron capas o se entreno el modelo completo.
 
 ## Capacidades
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| xyntrai-mistral-2501-36B-nsfw | 36,9 B | no disponible | apache-2.0 | HuggingFace, safetensors |
-| Mistral Small (base oficial) | no disponible en esta ficha | no disponible | no disponible en esta ficha | HuggingFace |
-| xyntrai-mistral-small-2501-36B-nsfw (modelo base) | 36,9 B (por herencia) | no disponible | apache-2.0 | HuggingFace |
+| xyntrai-mistral-2501-36B-nsfw | 36,9 B | no disponible | apache-2.0 | Hugging Face, safetensors |
+| Mistral Small (base oficial) | no disponible en esta ficha | no disponible | no disponible en esta ficha | Hugging Face |
+| xyntrai-mistral-small-2501-36B-nsfw (modelo base) | 36,9 B (por herencia) | no disponible | apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar benchmarks entre estos modelos.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento para comparar benchmarks entre estos model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xyntraistudios/xyntrai-mistral-2501-36B-nsfw
+- Hugging Face: https://huggingface.co/xyntraistudios/xyntrai-mistral-2501-36B-nsfw
 - Modelo base: https://huggingface.co/xyntraistudios/xyntrai-mistral-small-2501-36B-nsfw
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL: https://github.com/huggingface/trl

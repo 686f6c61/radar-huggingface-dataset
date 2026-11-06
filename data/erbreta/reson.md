@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Modelo | Naturaleza | Componentes | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Erbreta/Reson | Registro de modelos para una aplicacion local de fonetica forense | Whisper small (CTranslate2), ECAPA-TDNN VoxCeleb, Silero VAD v6 | Mixta: MIT y Apache-2.0 por componente; licencia del repositorio no indicada | Repositorio de HuggingFace con 0 descargas y 0 likes en el momento de la consulta |
+| Erbreta/Reson | Registro de modelos para una aplicacion local de fonetica forense | Whisper small (CTranslate2), ECAPA-TDNN VoxCeleb, Silero VAD v6 | Mixta: MIT y Apache-2.0 por componente; licencia del repositorio no indicada | Repositorio de Hugging Face con 0 descargas y 0 likes en el momento de la consulta |
 | Systran/faster-whisper-small | Pack de inferencia ASR CTranslate2 | Whisper small | MIT | Pesos upstream referenciados por Reson; datos de rendimiento no disponibles en la informacion proporcionada |
 | speechbrain/spkrec-ecapa-voxceleb | Modelo de embeddings de hablante | ECAPA-TDNN entrenado con VoxCeleb | Apache-2.0 | Pesos upstream referenciados por Reson; datos de rendimiento no disponibles en la informacion proporcionada |
 | Silero VAD v6 (via Faster-Whisper) | Detector de actividad de voz | Modelo VAD ligero | MIT | Dependencia empaquetada con el motor; datos de rendimiento no disponibles |
@@ -84,11 +84,11 @@ No se dispone de datos comparativos de parametros, contexto o benchmarks entre e
 - Riesgo de alucinacion de la transcripcion: no cuantificado en la informacion disponible, pero inherente a los sistemas ASR.
 - Sesgos en el analisis de hablante: no documentados en la informacion proporcionada; conviene auditar el comportamiento de ECAPA-TDNN frente a variabilidad de canal, idioma y acento antes de usarlo en contextos forenses.
 - Uso comercial: permitido en principio por las licencias MIT y Apache-2.0 de los componentes, pero la ausencia de licencia explicita del repositorio y las condiciones de atribucion upstream deben revisarse con detalle.
-- Fecha de publicacion registrada en HuggingFace: 2026-10-05, con ultima actualizacion el 2026-10-05; conviene verificar la vigencia del registro antes de desplegarlo.
+- Fecha de publicacion registrada en Hugging Face: 2026-10-05, con ultima actualizacion el 2026-10-05; conviene verificar la vigencia del registro antes de desplegarlo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Erbreta/Reson
+- Repositorio en Hugging Face: https://huggingface.co/Erbreta/Reson
 - Pesos de transcripcion (upstream): https://huggingface.co/Systran/faster-whisper-small
 - Pesos de analisis de hablante (upstream): https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb
 - Motor y VAD (upstream): https://github.com/SYSTRAN/faster-whisper

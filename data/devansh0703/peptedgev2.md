@@ -4,7 +4,7 @@
 
 PeptEdgeV2 es un clasificador binario de péptidos antimicrobianos (AMP) desarrollado por Devansh Raulo (usuario `devansh0703`). El modelo resuelve el problema de identificar si una secuencia de aminoácidos tiene actividad antimicrobiana, una tarea relevante en bioinformática y descubrimiento de fármacos. Su principal contribución es la eficiencia: con solo 3,43 millones de parámetros, alcanza un rendimiento superior al de ESM-2 LoRA (650M parámetros), que era el estado del arte previo, con una mejora de +3,17% en F1 y una inferencia 213 veces más rápida.
 
-La arquitectura combina cuatro componentes en un encoder compacto: embeddings biofísicos de 12 propiedades fisicoquímicas por aminoácido, convoluciones multi-escala (kernels 3, 5, 7 y 11), un transformer SwiGLU de 5 capas con regularización de profundidad estocástica, y un pooling adaptativo triple (media, máximo y atención). El modelo acepta secuencias de hasta 200 aminoácidos y está entrenado sobre el dataset GenPept-Curated-2025, con 11.000 secuencias balanceadas. Publicado bajo licencia MIT, está disponible en HuggingFace con pesos en formato safetensors.
+La arquitectura combina cuatro componentes en un encoder compacto: embeddings biofísicos de 12 propiedades fisicoquímicas por aminoácido, convoluciones multi-escala (kernels 3, 5, 7 y 11), un transformer SwiGLU de 5 capas con regularización de profundidad estocástica, y un pooling adaptativo triple (media, máximo y atención). El modelo acepta secuencias de hasta 200 aminoácidos y está entrenado sobre el dataset GenPept-Curated-2025, con 11.000 secuencias balanceadas. Publicado bajo licencia MIT, está disponible en Hugging Face con pesos en formato safetensors.
 
 ## Especificaciones tecnicas
 
@@ -96,8 +96,8 @@ La comparación directa con ESM-2 LoRA muestra una ventaja clara en eficiencia y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devansh0703/PeptEdgeV2
-- Perfil del autor en HuggingFace: https://huggingface.co/devansh0703
+- Modelo en Hugging Face: https://huggingface.co/devansh0703/PeptEdgeV2
+- Perfil del autor en Hugging Face: https://huggingface.co/devansh0703
 - Perfil del autor en GitHub: https://github.com/devansh0703
 - Dataset GenPept-Curated-2025: https://github.com/biochem-data-sci/GenPept-Curated-2025
 - Repositorio del autor (otros proyectos): https://github.com/devansh0703/apt_intrusion_detection

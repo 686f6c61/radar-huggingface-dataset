@@ -56,8 +56,8 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Formato | Plataforma | Resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| epiCRealismNaturalSin (este) | QNN + MNN | Snapdragon NPU | 512x512 | creativeml-openrail-m | HuggingFace (repo) |
-| imagepipeline/EpiCRealism-Natural-Sin | Diffusers (safetensors) | CPU/GPU (PyTorch) | 512x512 (típico) | creativeml-openrail-m | HuggingFace |
+| epiCRealismNaturalSin (este) | QNN + MNN | Snapdragon NPU | 512x512 | creativeml-openrail-m | Hugging Face (repo) |
+| imagepipeline/EpiCRealism-Natural-Sin | Diffusers (safetensors) | CPU/GPU (PyTorch) | 512x512 (típico) | creativeml-openrail-m | Hugging Face |
 | epiCRealism - Natural Sin (original) | Checkpoint SD1.5 (ckpt/safetensors) | CPU/GPU (AUTOMATIC1111, ComfyUI) | 512x512 (típico) | creativeml-openrail-m | Civitai |
 | EpiCRealism NS (Sogni) | CoreML | Apple Silicon / Sogni Supernet | no disponible | no disponible | Sogni.ai |
 
@@ -75,9 +75,9 @@ La comparativa muestra que la versión de matrixportalx es la única optimizada 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/matrixportalx/epiCRealismNaturalSin
+- Hugging Face: https://huggingface.co/matrixportalx/epiCRealismNaturalSin
 - Repositorio de conversión: https://github.com/matrixportalx/Sd-1.5-Converting-to-Qualcomm-QNN-Model
 - Modelo original en Civitai: https://civitai.com/models/25694/epicrealism
-- Versión Diffusers en HuggingFace: https://huggingface.co/imagepipeline/EpiCRealism-Natural-Sin
+- Versión Diffusers en Hugging Face: https://huggingface.co/imagepipeline/EpiCRealism-Natural-Sin
 - API de Stable Diffusion: https://stablediffusionapi.com/models/epicrealismnaturalsi
 - Versión CoreML en Sogni: https://www.sogni.ai/models/epicrealism-ns

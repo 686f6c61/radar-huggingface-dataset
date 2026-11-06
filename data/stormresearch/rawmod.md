@@ -6,7 +6,7 @@ RawMod es un modelo preentrenado para la detección de modificaciones de bases d
 
 A diferencia de los detectores tradicionales, que requieren entrenamiento específico por modificación y una muestra de control pareada, RawMod opera sobre acumulaciones de señal (*pileups*) de nanoporos y generaliza entre tipos de modificación. El modelo es extremadamente compacto: 230.697 parámetros en una única arquitectura compartida por todos los checkpoints publicados. No es un transformer generativo ni un modelo multimodal en el sentido habitual; es una red neuronal especializada en clasificación de señal.
 
-La publicación está en revisión y el repositorio de HuggingFace contiene únicamente los pesos (diccionarios de estado de PyTorch) junto con los checksums. El código, la instalación y la documentación completa residen en el repositorio de GitHub del grupo. La licencia GPL-3.0 condiciona su uso en productos propietarios.
+La publicación está en revisión y el repositorio de Hugging Face contiene únicamente los pesos (diccionarios de estado de PyTorch) junto con los checksums. El código, la instalación y la documentación completa residen en el repositorio de GitHub del grupo. La licencia GPL-3.0 condiciona su uso en productos propietarios.
 
 ## Especificaciones técnicas
 
@@ -69,12 +69,12 @@ No disponible. La información proporcionada no incluye modelos comparables de d
 - Modelo de dominio específico: no es un modelo de lenguaje ni un modelo generativo; no debe evaluarse con métricas de NLP.
 - Licencia GPL-3.0: el uso comercial en productos propietarios queda condicionado por las obligaciones de copyleft de esta licencia.
 - Paper en revisión: los resultados de precisión no están publicados formalmente y deben citarse mediante el repositorio de GitHub hasta su publicación.
-- Dependencia del código externo: los pesos son diccionarios de estado de PyTorch y requieren el código del repositorio de GitHub para su uso; no hay pipeline de HuggingFace disponible.
+- Dependencia del código externo: los pesos son diccionarios de estado de PyTorch y requieren el código del repositorio de GitHub para su uso; no hay pipeline de Hugging Face disponible.
 - Sin datos sobre sesgos, tasas de alucinación (no aplica) ni comportamiento fuera de las condiciones de entrenamiento más allá de los benchmarks de retención publicados.
 - El repositorio tiene 0 descargas y 1 like en el momento de la consulta, lo que indica una adopción todavía muy limitada.
 - No se documentan limitaciones de contexto ni de idioma por no ser un modelo lingüístico; las limitaciones biológicas (tipos de modificación, organismos y librerías cubiertos) deben consultarse en el paper y el repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/STORMResearch/RawMod
+- Hugging Face: https://huggingface.co/STORMResearch/RawMod
 - GitHub (código, instalación y documentación): https://github.com/STORMgroup/RawMod

@@ -71,7 +71,7 @@ No se dispone de datos comparativos directos con otros modelos de la misma categ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/justinles/tiny-transformer-experiment
+- Repositorio en Hugging Face: https://huggingface.co/justinles/tiny-transformer-experiment
 - GitHub skolouri/TinyTransformer (matematicas de IA): https://github.com/skolouri/TinyTransformer
 - Paper sobre protorazonamiento en tiny transformers (arXiv): https://arxiv.org/abs/2608.04980
 - GitHub zyx100089-eng/tiny-transformer (implementacion desde cero): https://github.com/zyx100089-eng/tiny-transformer

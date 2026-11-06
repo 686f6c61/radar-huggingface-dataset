@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Gemma-4-E2B-it-qat-JANG_4M-CRACK** es una versión "abliterada" (eliminación de rechazos) del modelo base `google/gemma-4-e2b-it`, publicada por el usuario Ishowbackup en HuggingFace. Se trata de un modelo multimodal (imagen, texto y audio) con capacidades de razonamiento, desarrollado sobre la arquitectura Gemma 4 de Google, adaptada al formato MLX para ejecución eficiente en Apple Silicon. Su principal característica es la eliminación completa de comportamientos de rechazo (refusal) en categorías de contenido dañino, manteniendo una pérdida mínima de rendimiento en tareas de conocimiento general (MMLU -1,7 %).
+El modelo **Gemma-4-E2B-it-qat-JANG_4M-CRACK** es una versión "abliterada" (eliminación de rechazos) del modelo base `google/gemma-4-e2b-it`, publicada por el usuario Ishowbackup en Hugging Face. Se trata de un modelo multimodal (imagen, texto y audio) con capacidades de razonamiento, desarrollado sobre la arquitectura Gemma 4 de Google, adaptada al formato MLX para ejecución eficiente en Apple Silicon. Su principal característica es la eliminación completa de comportamientos de rechazo (refusal) en categorías de contenido dañino, manteniendo una pérdida mínima de rendimiento en tareas de conocimiento general (MMLU -1,7 %).
 
 El modelo emplea una cuantización híbrida denominada JANG_4M (atención en 8 bits, MLP en 4 bits, ~4,3 bits promedio), lo que reduce el tamaño a aproximadamente 7,3 GB. Con 3.636.545.091 parámetros totales y una arquitectura de embeddings por capa (estilo Gemma-3n), el modelo efectivo se comporta como un sistema de ~2B parámetros. Está diseñado para ejecutarse exclusivamente con el motor vMLX, que incluye soporte completo para Gemma 4, y se distribuye bajo la licencia Gemma de Google.
 
@@ -93,7 +93,7 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ishowbackup/Gemma-4-E2B-it-qat-JANG_4M-CRACK
+- Repositorio Hugging Face: https://huggingface.co/Ishowbackup/Gemma-4-E2B-it-qat-JANG_4M-CRACK
 - Motor vMLX: https://vmlx.net
 - Sitio web de dealign.ai (investigación): https://dealign.ai
 - Soporte en Ko-fi: https://ko-fi.com/dealignai

@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Pasos de muestreo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| splashspeed-FastH3-8-Step-V2 | 35,05 B | no disponible | 8 pasadas forward (destilado DMD2) | minimax-h3-community | HuggingFace, requiere FastVideo + VSA-H3 |
-| MiniMaxAI/MiniMax-H3 (base) | 35,05 B (mismo base) | no disponible | muestreo multi-paso (shift 12) | minimax-h3-community | HuggingFace |
+| splashspeed-FastH3-8-Step-V2 | 35,05 B | no disponible | 8 pasadas forward (destilado DMD2) | minimax-h3-community | Hugging Face, requiere FastVideo + VSA-H3 |
+| MiniMaxAI/MiniMax-H3 (base) | 35,05 B (mismo base) | no disponible | muestreo multi-paso (shift 12) | minimax-h3-community | Hugging Face |
 | Otras alternativas de video open source (Wan, HunyuanVideo, LTX-Video, etc.) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa se limita al modelo base, unico punto de referencia documentado en la informacion disponible. No se proporcionan datos verificados de terceros modelos comparables, por lo que no se incluyen cifras que no puedan contrastarse.
@@ -96,7 +96,7 @@ La comparativa se limita al modelo base, unico punto de referencia documentado e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gurujack/splashspeed-FastH3-8-Step-V2
+- Hugging Face: https://huggingface.co/gurujack/splashspeed-FastH3-8-Step-V2
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio FastVideo: https://github.com/hao-ai-lab/FastVideo
 - Guia de instalacion de FastVideo: https://hao-ai-lab.github.io/FastVideo/getting_started/installation/

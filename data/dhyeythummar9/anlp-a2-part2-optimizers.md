@@ -99,7 +99,7 @@ No se conocen modelos de terceros comparables en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dhyeythummar9/ANLP-A2-Part2-Optimizers
+- Hugging Face: https://huggingface.co/dhyeythummar9/ANLP-A2-Part2-Optimizers
 - Repositorio del curso (Parte 2, implementación de referencia): no disponible en la información proporcionada.
 - Paper de Muon: no disponible en la información proporcionada.
 - Paper de Sophia: no disponible en la información proporcionada.

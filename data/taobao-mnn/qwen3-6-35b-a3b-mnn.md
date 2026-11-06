@@ -87,7 +87,7 @@ La comparación relevante es frente al modelo base: misma arquitectura y mismos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taobao-mnn/Qwen3.6-35B-A3B-MNN
+- Modelo en Hugging Face: https://huggingface.co/taobao-mnn/Qwen3.6-35B-A3B-MNN
 - Repositorio del modelo en ModelScope: https://www.modelscope.cn/taobao-mnn/Qwen3.6-35B-A3B-MNN
 - Código fuente de MNN: https://github.com/alibaba/MNN
 - Herramienta de exportación `llmexport`: https://github.com/alibaba/MNN/tree/master/transformers/llm/export

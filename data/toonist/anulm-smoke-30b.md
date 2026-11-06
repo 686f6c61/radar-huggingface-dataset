@@ -44,7 +44,7 @@ Los datos de entrenamiento son unicamente tinyshakespeare (1,12 MB, 3 documentos
 
 ## Casos de uso
 
-- Prueba de humo de pipelines de publicacion: el checkpoint existe para verificar de extremo a extremo la cadena de entrenamiento, muestreo, exportacion a safetensors, subida a HuggingFace, descarga, carga y generacion tras un cambio de version. Se usa como artefacto de validacion, no como modelo final.
+- Prueba de humo de pipelines de publicacion: el checkpoint existe para verificar de extremo a extremo la cadena de entrenamiento, muestreo, exportacion a safetensors, subida a Hugging Face, descarga, carga y generacion tras un cambio de version. Se usa como artefacto de validacion, no como modelo final.
 - Fixture en integracion continua: al pesar unos 35 MB en bfloat16 y entrenarse en 29 segundos, se puede incluir en la bateria de tests de un repositorio para comprobar que `load_checkpoint`, `sample.py` y `serve.py` siguen funcionando tras cada refactor.
 - Referencia didactica de balanceo de expertos en MoE: la curva de desequilibrio (4,68x, 7,97x en el paso 20, 1,80x final) permite ilustrar por que un balancer de sesgo necesita decenas de pasos para revertir el colapso temprano del router.
 - Validacion de arquitecturas sin tokenizer BPE: sirve para probar implementaciones de vocabulario a nivel de byte, incluyendo el manejo de secuencias UTF-8 invalidas durante la decodificacion con `errors="replace"`.
@@ -109,7 +109,7 @@ La model card recomienda usar cualquiera de los cuatro checkpoints de 400 M en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/toonist/AnuLM-Smoke-30B
+- Modelo en Hugging Face: https://huggingface.co/toonist/AnuLM-Smoke-30B
 - Repositorio del proyecto AnuLM: https://github.com/MOBIRIZER-TECHNOLOGY/AnuLM
 - Checkpoint AnuLM-Base-400M: https://huggingface.co/toonist/AnuLM-Base-400M
 - Checkpoint AnuLM-Coder-400M: https://huggingface.co/toonist/AnuLM-Coder-400M

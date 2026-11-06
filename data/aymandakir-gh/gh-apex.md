@@ -70,10 +70,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en 
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| GH Apex (4B) | 4.022 M | No disponible (ejemplo con 8192) | Apache-2.0 | Growth marketing (it/en) | HuggingFace, GGUF |
-| Qwen3-4B (base) | ~4.000 M | No disponible en la informacion | Apache-2.0 | Generalista | HuggingFace, amplia adopcion |
-| GH Pulse (1.7B) | ~1.700 M | No disponible | No disponible | Growth marketing (misma familia) | HuggingFace |
-| GH Spark (0.6B) | ~600 M | No disponible | No disponible | Growth marketing (misma familia) | HuggingFace |
+| GH Apex (4B) | 4.022 M | No disponible (ejemplo con 8192) | Apache-2.0 | Growth marketing (it/en) | Hugging Face, GGUF |
+| Qwen3-4B (base) | ~4.000 M | No disponible en la informacion | Apache-2.0 | Generalista | Hugging Face, amplia adopcion |
+| GH Pulse (1.7B) | ~1.700 M | No disponible | No disponible | Growth marketing (misma familia) | Hugging Face |
+| GH Spark (0.6B) | ~600 M | No disponible | No disponible | Growth marketing (misma familia) | Hugging Face |
 
 La comparación más directa es con el propio Qwen3-4B, del que GH Apex mejora en las métricas reportadas (loss, ARC-Easy, ARC-Challenge) a costa de especializarse en un dominio concreto. Frente a GH Pulse y GH Spark, GH Apex es el miembro de mayor tamaño de la familia y, según el autor, el más adecuado para estrategia y respuestas largas estructuradas. No se dispone de datos de benchmarks frente a otros modelos de 4B de la competencia.
 
@@ -90,7 +90,7 @@ La comparación más directa es con el propio Qwen3-4B, del que GH Apex mejora e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aymandakir-gh/gh-apex
+- Modelo en Hugging Face: https://huggingface.co/aymandakir-gh/gh-apex
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de chat general: https://huggingface.co/datasets/HuggingFaceTB/smoltalk
 - Sitio oficial de Growthackers: https://gh.company

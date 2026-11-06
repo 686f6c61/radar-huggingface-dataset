@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft11200-grpo660-lora` es un adaptador LoRA sobre el modelo denso Qwen2.5-0.5B-Instruct, orientado especificamente a *tool calling* estructurado y a la abstencion cuando las herramientas ofrecidas no son relevantes para la peticion del usuario. Lo publica el usuario de HuggingFace `uygarkurt`, autor tambien del framework Post-Training Lab y del dataset `uygarkurt/xlam-tool-calling-mixed` empleado en el entrenamiento.
+`uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft11200-grpo660-lora` es un adaptador LoRA sobre el modelo denso Qwen2.5-0.5B-Instruct, orientado especificamente a *tool calling* estructurado y a la abstencion cuando las herramientas ofrecidas no son relevantes para la peticion del usuario. Lo publica el usuario de Hugging Face `uygarkurt`, autor tambien del framework Post-Training Lab y del dataset `uygarkurt/xlam-tool-calling-mixed` empleado en el entrenamiento.
 
 El interes practico del modelo esta en su tamano: con unos 0,5 mil millones de parametros en el modelo base, es un candidato para enrutado de llamadas a funciones en entornos con recursos muy limitados (CPU, GPUs de gama de entrada, despliegues en el borde) y para experimentar con recetas de post-entrenamiento (SFT + GRPO) sin grandes presupuestos de computo. El autor reporta 11.200 actualizaciones de SFT seguidas de 660 actualizaciones de GRPO, con un coste total declarado de 2,2 horas de bucle de entrenamiento.
 
@@ -13,7 +13,7 @@ La publicacion es un adaptador PEFT (no un modelo completo): hay que cargarlo so
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Adaptador LoRA (PEFT) sobre un transformer decoder-only denso Qwen2.5 (modelo base: `Qwen/Qwen2.5-0.5B-Instruct`) |
-| Parametros totales | ~0,5 mil millones en el modelo base; numero de parametros del adaptador: no disponible (el repo pesa 0.0 GB segun HuggingFace) |
+| Parametros totales | ~0,5 mil millones en el modelo base; numero de parametros del adaptador: no disponible (el repo pesa 0.0 GB segun Hugging Face) |
 | Parametros activos | no aplica (modelo denso, no es MoE) |
 | Longitud de contexto | no disponible en la informacion del adaptador; el modelo base Qwen2.5-0.5B-Instruct soporta 32.768 tokens segun la documentacion de Qwen |
 | Tipos de cuantizacion | no especificados por el autor; al ser un adaptador LoRA se puede fusionar con el base y cuantizar con las opciones habituales de llama.cpp/GGUF (Q4_K_M, Q5_K_M, Q8_0) o AWQ/GPTQ, sin cifras publicadas para este adaptador |
@@ -71,10 +71,10 @@ Notas metodologicas declaradas por el autor: xLAM ETC es exactitud exacta de lla
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen2.5-0.5B + LoRA SFT/GRPO) | ~0,5 B | 32.768 tokens en el base (no verificado para el adaptador) | Tool calling + abstencion | no disponible | HuggingFace (0 descargas) |
-| Qwen/Qwen2.5-0.5B-Instruct | ~0,5 B | 32.768 tokens | Instruct generalista, sin RL especifico de tool calling | Apache-2.0 | HuggingFace, ampliamente desplegado |
-| Qwen/Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 tokens | Instruct generalista, mayor capacidad de razonamiento | Apache-2.0 | HuggingFace |
-| Modelos especializados en function calling de ~1 B (familia xLAM, Hammer) | ~1 B | no disponible | Tool calling | varía segun modelo | HuggingFace |
+| Este adaptador (Qwen2.5-0.5B + LoRA SFT/GRPO) | ~0,5 B | 32.768 tokens en el base (no verificado para el adaptador) | Tool calling + abstencion | no disponible | Hugging Face (0 descargas) |
+| Qwen/Qwen2.5-0.5B-Instruct | ~0,5 B | 32.768 tokens | Instruct generalista, sin RL especifico de tool calling | Apache-2.0 | Hugging Face, ampliamente desplegado |
+| Qwen/Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 tokens | Instruct generalista, mayor capacidad de razonamiento | Apache-2.0 | Hugging Face |
+| Modelos especializados en function calling de ~1 B (familia xLAM, Hammer) | ~1 B | no disponible | Tool calling | varía segun modelo | Hugging Face |
 
 No se dispone en la informacion proporcionada de resultados de benchmarks de los modelos alternativos medidos con los mismos scripts, por lo que la comparacion de rendimiento cuantitativa con alternativas queda como no disponible. La comparacion relevante y verificable es interna: el paso de SFT a SFT + GRPO mejora MMLU (+0,20 pp), MATH-500 (+1,40 pp), IFEval (+1,85 pp), xLAM ETC (+0,44 pp), xLAM FNA (+0,61 pp) y BFCL single-turn FC (+1,91 pp), pero empeora Irrelevance (-6,33 pp), es decir, el modelo se abstiene peor tras GRPO segun la propia tabla del autor.
 
@@ -91,7 +91,7 @@ No se dispone en la informacion proporcionada de resultados de benchmarks de los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft11200-grpo660-lora
+- Modelo en Hugging Face: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft11200-grpo660-lora
 - Adaptador SFT previo: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft11200-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/uygarkurt/xlam-tool-calling-mixed
 - Repositorio Post-Training Lab: https://github.com/uygarkurt/post-training-lab

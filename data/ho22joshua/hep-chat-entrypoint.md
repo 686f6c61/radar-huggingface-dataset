@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Hep chat entrypoint es un repositorio de codigo publicado por el usuario ho22joshua en HuggingFace bajo licencia Apache 2.0. No contiene pesos de modelo: es un punto de entrada ligero que descarga en tiempo de ejecucion un modelo base de la familia Qwen 3.5 y le aplica, mediante PEFT, un adaptador LoRA seleccionado de un registro interno. Su proposito es servir de capa de inferencia lista para usar (chat interactivo, ejecucion por lotes e interfaz Gradio) sobre adaptadores entrenados para fisica de altas energias (HEP).
+Hep chat entrypoint es un repositorio de codigo publicado por el usuario ho22joshua en Hugging Face bajo licencia Apache 2.0. No contiene pesos de modelo: es un punto de entrada ligero que descarga en tiempo de ejecucion un modelo base de la familia Qwen 3.5 y le aplica, mediante PEFT, un adaptador LoRA seleccionado de un registro interno. Su proposito es servir de capa de inferencia lista para usar (chat interactivo, ejecucion por lotes e interfaz Gradio) sobre adaptadores entrenados para fisica de altas energias (HEP).
 
 Los adaptadores que orquesta estan publicados en el repositorio ho22joshua/hep-posttraining y se agrupan en dos familias de datos: ROOT y ROOT + TRExFitter. Sobre ROOT se han entrenado variantes de Qwen 3.5 de 0,8B, 4B y 9B con rangos LoRA r16 y r32, entre 1 y 10 epocas y tasas de aprendizaje de 1e-5 y 1e-4. Sobre ROOT + TRExFitter hay variantes de 0,8B con r16/e3 y r32/e3.
 
@@ -100,9 +100,9 @@ La linea base disponible para todos ellos es el propio modelo Qwen 3.5 sin adapt
 
 ## Enlaces
 
-- Repositorio del entrypoint en HuggingFace: https://huggingface.co/ho22joshua/hep-chat-entrypoint
+- Repositorio del entrypoint en Hugging Face: https://huggingface.co/ho22joshua/hep-chat-entrypoint
 - README del repositorio: https://huggingface.co/ho22joshua/hep-chat-entrypoint/blob/main/README.md
 - Repositorio de adaptadores LoRA: https://huggingface.co/ho22joshua/hep-posttraining
-- Perfil del autor en HuggingFace: https://huggingface.co/ho22joshua
+- Perfil del autor en Hugging Face: https://huggingface.co/ho22joshua
 
 Nota: el resto de resultados de la busqueda web proporcionada (documentacion de la API de OpenAI, un repositorio generico de toolkits de IA en GitHub y una pagina de modelos de terceros) no guardan relacion con este modelo y se omiten deliberadamente.

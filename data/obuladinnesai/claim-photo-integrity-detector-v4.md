@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El Claim Photo Integrity Detector v4 es un modelo de clasificación de imágenes desarrollado por el usuario obuladinnesai y publicado en HuggingFace bajo licencia Apache 2.0. Su función es actuar como señal de triaje para distinguir fotografías auténticas de imágenes sintéticas en el contexto de la tramitación de siniestros: el caso de uso declarado es la verificación de fotos adjuntas a partes de siniestro, aunque la categoría de detección (deepfake y contenido generado por IA) es transversal a otros dominios de verificación documental. Según los tags del repositorio, la arquitectura es un vision transformer (ViT) con 85.800.194 parámetros totales, un tamaño de repositorio de 0,3 GB y pesos en formato safetensors.
+El Claim Photo Integrity Detector v4 es un modelo de clasificación de imágenes desarrollado por el usuario obuladinnesai y publicado en Hugging Face bajo licencia Apache 2.0. Su función es actuar como señal de triaje para distinguir fotografías auténticas de imágenes sintéticas en el contexto de la tramitación de siniestros: el caso de uso declarado es la verificación de fotos adjuntas a partes de siniestro, aunque la categoría de detección (deepfake y contenido generado por IA) es transversal a otros dominios de verificación documental. Según los tags del repositorio, la arquitectura es un vision transformer (ViT) con 85.800.194 parámetros totales, un tamaño de repositorio de 0,3 GB y pesos en formato safetensors.
 
 Se trata de la cuarta iteración de una familia de modelos. La versión v3 había corregido un falso positivo sobre imágenes de aulas, pero sobrecorrigió: al no incluir caras humanas fotorrealistas generadas por IA en su conjunto de datos de entrenamiento de clase falsa, aprendió la asociación espuria "persona = real" y dejaba pasar retratos generados por IA clasificándolos como reales en el 91,83 % de los casos. La v4 corrige ese sesgo incorporando aproximadamente 5.000 caras sintéticas al conjunto de entrenamiento, combinando generadores de tipo GAN y de difusión, y añadiendo varios cientos de caras de IA al conjunto de validación para que las métricas de validación midan realmente la detección de caras.
 
@@ -17,7 +17,7 @@ El modelo es relevante ahora porque la detección de imágenes sintéticas se ha
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica (clasificador de imágenes); resolución de entrada no documentada por el autor |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No aplica / no disponible (clasificador de imágenes; la metadata de HuggingFace no declara idiomas) |
+| Idiomas soportados | No aplica / no disponible (clasificador de imágenes; la metadata de Hugging Face no declara idiomas) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 | Pipeline | image-classification |
@@ -29,9 +29,9 @@ El modelo es relevante ahora porque la detección de imágenes sintéticas se ha
 
 ## Arquitectura y entrenamiento
 
-La información disponible indica que el modelo es un vision transformer (según el tag `vit` y `vision-transformer` de HuggingFace) con 85,8 millones de parámetros totales. Ese recuento es coherente con una configuración del orden de ViT-Base, pero el autor no documenta en la model card ni la configuración exacta (capas, dimensión oculta, número de cabezas) ni la resolución de entrada ni el número de clases de salida más allá de la tarea de clasificación. El modelo se distribuye como pesos safetensors y se consume a través del pipeline estándar de `transformers` para clasificación de imágenes.
+La información disponible indica que el modelo es un vision transformer (según el tag `vit` y `vision-transformer` de Hugging Face) con 85,8 millones de parámetros totales. Ese recuento es coherente con una configuración del orden de ViT-Base, pero el autor no documenta en la model card ni la configuración exacta (capas, dimensión oculta, número de cabezas) ni la resolución de entrada ni el número de clases de salida más allá de la tarea de clasificación. El modelo se distribuye como pesos safetensors y se consume a través del pipeline estándar de `transformers` para clasificación de imágenes.
 
-El entrenamiento es un fine-tuning continuado sobre la versión v3. La v4 incorpora aproximadamente 5.000 caras generadas por IA al conjunto de ejemplos de clase falsa: 2.500 caras StyleGAN procedentes del dataset 140k Real and Fake Faces (espejo en HuggingFace) y 2.500 caras de difusión procedentes de DeepFakeFace (variantes text2img e insight). El objetivo declarado es cubrir tanto generadores GAN como de difusión, dado que los detectores entrenados sobre una sola familia fallan al generalizar a la otra. Además, se añadieron varios cientos de caras de IA al conjunto de validación. Los datasets base citados son Defactify_Image_Dataset, TheKernel01/140k-Real-and-Fake-Faces y OpenRL/DeepFakeFace. Como aumentación en tiempo de entrenamiento se mantienen recompresión JPEG, ruido, desenfoque, variación de brillo y contraste, y volteos. No se documenta en la información disponible si hubo fases de RLHF, DPO u otras técnicas de alineación, ni el volumen total de tokens o imágenes de entrenamiento.
+El entrenamiento es un fine-tuning continuado sobre la versión v3. La v4 incorpora aproximadamente 5.000 caras generadas por IA al conjunto de ejemplos de clase falsa: 2.500 caras StyleGAN procedentes del dataset 140k Real and Fake Faces (espejo en Hugging Face) y 2.500 caras de difusión procedentes de DeepFakeFace (variantes text2img e insight). El objetivo declarado es cubrir tanto generadores GAN como de difusión, dado que los detectores entrenados sobre una sola familia fallan al generalizar a la otra. Además, se añadieron varios cientos de caras de IA al conjunto de validación. Los datasets base citados son Defactify_Image_Dataset, TheKernel01/140k-Real-and-Fake-Faces y OpenRL/DeepFakeFace. Como aumentación en tiempo de entrenamiento se mantienen recompresión JPEG, ruido, desenfoque, variación de brillo y contraste, y volteos. No se documenta en la información disponible si hubo fases de RLHF, DPO u otras técnicas de alineación, ni el volumen total de tokens o imágenes de entrenamiento.
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ No se dispone de datos de comparación en la información proporcionada. La mode
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| claim-photo-integrity-detector-v4 | 85,8 M | No disponible (clasificador de imágenes) | No disponible | Apache 2.0 | HuggingFace |
+| claim-photo-integrity-detector-v4 | 85,8 M | No disponible (clasificador de imágenes) | No disponible | Apache 2.0 | Hugging Face |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de datos de comparación en la información proporcionada. La mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/obuladinnesai/claim-photo-integrity-detector-v4
+- Modelo en Hugging Face: https://huggingface.co/obuladinnesai/claim-photo-integrity-detector-v4
 - Dataset Defactify_Image_Dataset: https://huggingface.co/datasets/Rajarshi-Roy-research/Defactify_Image_Dataset
 - Dataset 140k Real and Fake Faces: https://huggingface.co/datasets/TheKernel01/140k-Real-and-Fake-Faces
 - Dataset DeepFakeFace: https://huggingface.co/datasets/OpenRL/DeepFakeFace

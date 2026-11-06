@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `tournament-tourn_93dfe3ecf34f777e_20261102-85180a32-262d-46e0-8ec6-c42ea69c1a15-5FNyYkbY` es un adaptador PEFT (Parameter-Efficient Fine-Tuning) publicado por la organizacion `gradients-io-tournaments` en HuggingFace. Se trata de un artefacto derivado de un modelo base identificado como `gradients-io-tournaments/augmented-1023db4ccf176a1e`, sobre el que se ha aplicado un ajuste fino mediante la libreria PEFT 0.15.1. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador LoRA de dimensiones reducidas y no con un modelo completo.
+El modelo `tournament-tourn_93dfe3ecf34f777e_20261102-85180a32-262d-46e0-8ec6-c42ea69c1a15-5FNyYkbY` es un adaptador PEFT (Parameter-Efficient Fine-Tuning) publicado por la organizacion `gradients-io-tournaments` en Hugging Face. Se trata de un artefacto derivado de un modelo base identificado como `gradients-io-tournaments/augmented-1023db4ccf176a1e`, sobre el que se ha aplicado un ajuste fino mediante la libreria PEFT 0.15.1. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador LoRA de dimensiones reducidas y no con un modelo completo.
 
-La model card publicada por el autor es la plantilla generica de HuggingFace sin rellenar: todos los campos de descripcion, uso previsto, datos de entrenamiento, evaluacion y limitaciones aparecen como "[More Information Needed]". No se declara licencia, idiomas, pipeline ni tarea concreta. El unico contexto tecnico verificable proviene de las etiquetas del repositorio (`peft`, `safetensors`, `base_model:...`), del tamano del repo y de la referencia al paper de Lacoste et al. (2019) sobre emisiones de carbono, que aparece citado en la plantilla de la model card.
+La model card publicada por el autor es la plantilla generica de Hugging Face sin rellenar: todos los campos de descripcion, uso previsto, datos de entrenamiento, evaluacion y limitaciones aparecen como "[More Information Needed]". No se declara licencia, idiomas, pipeline ni tarea concreta. El unico contexto tecnico verificable proviene de las etiquetas del repositorio (`peft`, `safetensors`, `base_model:...`), del tamano del repo y de la referencia al paper de Lacoste et al. (2019) sobre emisiones de carbono, que aparece citado en la plantilla de la model card.
 
 Por tanto, esta ficha describe un artefacto de investigacion o de competicion (el prefijo `tournament-tourn_` sugiere un resultado de un torneo de fine-tuning organizado por Gradients.io) cuyo comportamiento real no puede caracterizarse sin acceso al modelo base y sin documentacion adicional. Cualquier evaluacion de capacidades, rendimiento o idoneidad para produccion queda condicionada a esa informacion ausente.
 
@@ -28,9 +28,9 @@ Por tanto, esta ficha describe un artefacto de investigacion o de competicion (e
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador PEFT, no un modelo completo. La etiqueta `library_name: peft` y la version de framework declarada (PEFT 0.15.1) indican que se genero con la libreria de HuggingFace para ajuste fino eficiente en parametros, tipicamente mediante LoRA (Low-Rank Adaptation), aunque la model card no confirma la tecnica exacta ni el rango, alpha o modulos objetivo del adaptador. El unico dato estructural cierto es que los pesos se almacenan en formato safetensors y que deben cargarse junto al modelo base `gradients-io-tournaments/augmented-1023db4ccf176a1e`.
+El artefacto es un adaptador PEFT, no un modelo completo. La etiqueta `library_name: peft` y la version de framework declarada (PEFT 0.15.1) indican que se genero con la libreria de Hugging Face para ajuste fino eficiente en parametros, tipicamente mediante LoRA (Low-Rank Adaptation), aunque la model card no confirma la tecnica exacta ni el rango, alpha o modulos objetivo del adaptador. El unico dato estructural cierto es que los pesos se almacenan en formato safetensors y que deben cargarse junto al modelo base `gradients-io-tournaments/augmented-1023db4ccf176a1e`.
 
-No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el regimen de precision (fp16, bf16, fp8), la existencia de RLHF o DPO, ni hiperparametros de entrenamiento. La model card incluye la plantilla estandar de HuggingFace con secciones de "Training Data", "Training Procedure" y "Training Hyperparameters" sin rellenar. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.). El nombre del repositorio sugiere que el adaptador es el resultado de una ronda de un torneo de fine-tuning, pero no se aporta el ranking, la metrica objetivo ni las condiciones de la competicion.
+No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el regimen de precision (fp16, bf16, fp8), la existencia de RLHF o DPO, ni hiperparametros de entrenamiento. La model card incluye la plantilla estandar de Hugging Face con secciones de "Training Data", "Training Procedure" y "Training Hyperparameters" sin rellenar. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.). El nombre del repositorio sugiere que el adaptador es el resultado de una ronda de un torneo de fine-tuning, pero no se aporta el ranking, la metrica objetivo ni las condiciones de la competicion.
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ Dado que no se documentan capacidades ni el modelo base, los siguientes casos so
 - Investigacion sobre PEFT: analizar el delta de pesos respecto al modelo base para estudiar que capas o modulos concentran la adaptacion, como ejercicio de interpretabilidad.
 - Fine-tuning adicional sobre el adaptador: partir de este checkpoint como inicializacion para un ajuste posterior en un dominio concreto, aprovechando que el coste de almacenamiento es bajo (0,1 GB).
 - Despliegue en entornos con restricciones de almacenamiento: al ser un adaptador pequeno, puede servirse junto al base con multiples cabezas especializadas y conmutar entre ellas en funcion de la tarea, si el modelo base lo permite.
-- Prototipado rapido en un pipeline de HuggingFace `transformers` + `peft`: cargar el adaptador con `PeftModel.from_pretrained` y validar el comportamiento en tareas de generacion o clasificacion antes de comprometer recursos.
+- Prototipado rapido en un pipeline de Hugging Face `transformers` + `peft`: cargar el adaptador con `PeftModel.from_pretrained` y validar el comportamiento en tareas de generacion o clasificacion antes de comprometer recursos.
 
 ## Benchmarks y rendimiento
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible; depende enteramente del modelo base, que no esta caracterizado. El adaptador en si ocupa 0,1 GB en disco y anade un overhead minimo de memoria al fusionarse o cargarse en paralelo.
 - GPU recomendadas: no disponible. La eleccion depende del tamano del modelo base (no documentado).
 - Compatibilidad con GPU de consumo: no determinable sin conocer el modelo base; si el base cabe en una RTX 4090 o similar, el adaptador anade un coste despreciable.
-- Opciones de despliegue: al ser un adaptador PEFT, es compatible con el ecosistema HuggingFace (`transformers` + `peft`), y potencialmente con vLLM o TGI si el modelo base esta soportado por esos motores y se fusionan los pesos. No se documenta compatibilidad con llama.cpp u Ollama, que requeririan conversion a GGUF del modelo fusionado.
+- Opciones de despliegue: al ser un adaptador PEFT, es compatible con el ecosistema Hugging Face (`transformers` + `peft`), y potencialmente con vLLM o TGI si el modelo base esta soportado por esos motores y se fusionan los pesos. No se documenta compatibilidad con llama.cpp u Ollama, que requeririan conversion a GGUF del modelo fusionado.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No disponible. No se conocen modelos comparables porque no se especifica el mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_93dfe3ecf34f777e_20261102-85180a32-262d-46e0-8ec6-c42ea69c1a15-5FNyYkbY
+- Repositorio Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_93dfe3ecf34f777e_20261102-85180a32-262d-46e0-8ec6-c42ea69c1a15-5FNyYkbY
 - Modelo base: https://huggingface.co/gradients-io-tournaments/augmented-1023db4ccf176a1e
 - Paper citado en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact

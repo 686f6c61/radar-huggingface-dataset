@@ -76,7 +76,7 @@ Los únicos números de calidad disponibles son de pérdida sobre datos reservad
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | violetxi/qwen35-9b-equational-theory-sair-mix100m | 9,65 B | no disponible | Sin puntuacion SAIR Stage 1 publicada; NLL held-out 0,2791766 | apache-2.0 | Pesos BF16 completos en safetensors, 19,3 GB |
-| Qwen/Qwen3.5-9B (modelo base) | ~9,65 B (heredados; no confirmado en la informacion) | no disponible | No reportado en la informacion disponible | no disponible en la informacion | Base publico en HuggingFace |
+| Qwen/Qwen3.5-9B (modelo base) | ~9,65 B (heredados; no confirmado en la informacion) | no disponible | No reportado en la informacion disponible | no disponible en la informacion | Base publico en Hugging Face |
 
 No se han identificado en la información proporcionada otros ajustes finos comparables de la misma categoría (mismo tamaño o misma tarea) con datos publicados de parámetros, contexto o rendimiento.
 
@@ -94,7 +94,7 @@ No se han identificado en la información proporcionada otros ajustes finos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/qwen35-9b-equational-theory-sair-mix100m
+- Modelo en Hugging Face: https://huggingface.co/violetxi/qwen35-9b-equational-theory-sair-mix100m
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B (revision fijada `c202236235762e1c871ad0ccb60c8ee5ba337b9a`)
 - Dataset de notas: https://huggingface.co/datasets/violetxi/equational-theory-sair-notes (revision `fbc728524ae3a2c8cc6a8806830698d3878fac7c`)
 - Dataset de trayectorias condicionadas por nota: https://huggingface.co/datasets/violetxi/equational-theory-sair-note-conditioned-rollouts (revision `19e5d3ec82bf73b89feb436cfe54ff87f4c1c106`)

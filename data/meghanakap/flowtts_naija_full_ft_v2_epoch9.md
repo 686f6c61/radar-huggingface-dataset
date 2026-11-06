@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MeghanaKap/flowtts_naija_full_ft_v2_epoch9` es un modelo de generacion de texto publicado en HuggingFace por el usuario MeghanaKap, construido sobre la arquitectura Qwen2 y afinado por ajuste supervisado (SFT) a partir del modelo `YatharthS/MiraTTS`. Cuenta con 505.882.368 parametros (unos 505,9 millones) almacenados en safetensors, con un tamano de repositorio de 2,0 GB, licencia Apache 2.0 y etiqueta de idioma unico `en`. La pipeline declarada es `text-generation`, con compatibilidad con `text-generation-inference` y `endpoints_compatible`.
+`MeghanaKap/flowtts_naija_full_ft_v2_epoch9` es un modelo de generacion de texto publicado en Hugging Face por el usuario MeghanaKap, construido sobre la arquitectura Qwen2 y afinado por ajuste supervisado (SFT) a partir del modelo `YatharthS/MiraTTS`. Cuenta con 505.882.368 parametros (unos 505,9 millones) almacenados en safetensors, con un tamano de repositorio de 2,0 GB, licencia Apache 2.0 y etiqueta de idioma unico `en`. La pipeline declarada es `text-generation`, con compatibilidad con `text-generation-inference` y `endpoints_compatible`.
 
 El modelo se entrenó, segun su propia model card, con Unsloth, lo que el autor cifra en una velocidad de entrenamiento 2x superior, y las etiquetas de libreria (`transformers`, `trl`, `sft`, `unsloth`, `conversational`) apuntan a un ajuste supervisado sobre datos conversacionales en ingles. No se documentan en la informacion disponible ni el dataset de entrenamiento, ni el numero de tokens, ni si hubo fases posteriores de alineacion (RLHF, DPO). Tampoco se han publicado resultados de benchmarks.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `MeghanaKap/flowtts_naija_full_ft_v2_epoch9` | 505,9 M | No disponible | Apache 2.0 | HuggingFace, safetensors | Fine-tuning SFT de `YatharthS/MiraTTS` con Unsloth; pipeline declarada de generacion de texto |
-| Qwen2-0.5B | ~494 M | 32.768 tokens (documentacion publica de Qwen) | Apache 2.0 | HuggingFace, safetensors | Modelo base de la misma familia arquitectonica, con contexto largo declarado |
-| Qwen2.5-0.5B | ~494 M | 32.768 tokens (documentacion publica de Qwen) | Apache 2.0 | HuggingFace, safetensors | Generacion posterior de la familia, con mejoras de entrenamiento reportadas por el autor |
-| TinyLlama-1.1B | ~1,1 B | 2.048 tokens (documentacion publica del proyecto) | Apache 2.0 | HuggingFace, safetensors, GGUF | Alternativa de tamano algo mayor con ecosistema de cuantizaciones mas amplio |
+| `MeghanaKap/flowtts_naija_full_ft_v2_epoch9` | 505,9 M | No disponible | Apache 2.0 | Hugging Face, safetensors | Fine-tuning SFT de `YatharthS/MiraTTS` con Unsloth; pipeline declarada de generacion de texto |
+| Qwen2-0.5B | ~494 M | 32.768 tokens (documentacion publica de Qwen) | Apache 2.0 | Hugging Face, safetensors | Modelo base de la misma familia arquitectonica, con contexto largo declarado |
+| Qwen2.5-0.5B | ~494 M | 32.768 tokens (documentacion publica de Qwen) | Apache 2.0 | Hugging Face, safetensors | Generacion posterior de la familia, con mejoras de entrenamiento reportadas por el autor |
+| TinyLlama-1.1B | ~1,1 B | 2.048 tokens (documentacion publica del proyecto) | Apache 2.0 | Hugging Face, safetensors, GGUF | Alternativa de tamano algo mayor con ecosistema de cuantizaciones mas amplio |
 
 Nota: los datos de contexto y parametros de Qwen2-0.5B, Qwen2.5-0.5B y TinyLlama-1.1B proceden de la documentacion publica de dichos proyectos y no de la informacion proporcionada en esta busqueda. No se dispone de comparaciones de rendimiento entre este checkpoint y las alternativas, al no haberse publicado benchmarks.
 
@@ -97,7 +97,7 @@ Nota: los datos de contexto y parametros de Qwen2-0.5B, Qwen2.5-0.5B y TinyLlama
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_epoch9
+- Modelo en Hugging Face: https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_epoch9
 - Modelo base declarado: https://huggingface.co/YatharthS/MiraTTS
 - Repositorio de Unsloth (herramienta de entrenamiento citada en la model card): https://github.com/unslothai/unsloth
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo; los resultados obtenidos correspondian a secciones deportivas de la BBC y no guardan relacion con la ficha.

@@ -85,7 +85,7 @@ Las variantes con otras semillas (seed2, seed0-v2) existen en el mismo proyecto,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArthT/qwen7b-a0-badmed-seed4-v2
+- Modelo en Hugging Face: https://huggingface.co/ArthT/qwen7b-a0-badmed-seed4-v2
 - Repositorio del proyecto: https://github.com/lauraxijia/contingency-em
 - Variante seed2: https://huggingface.co/ArthT/qwen7b-a0-badmed-seed2
 - Variante seed0-v2 con retroalimentacion: https://huggingface.co/ArthT/qwen7b-a6-badmed-seed0-v2

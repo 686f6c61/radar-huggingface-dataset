@@ -2,7 +2,7 @@
 
 ## Resumen
 
-grepac-e5-small es un modelo de embeddings de frases (sentence-transformers) obtenido mediante fine-tuning de `intfloat/multilingual-e5-small` para una tarea de recuperación muy concreta: localizar el artículo correcto de los reglamentos de la Política Agrícola Común (PAC) de la Unión Europea ante una pregunta formulada por un agricultor o un asesor. Lo desarrolla el usuario de HuggingFace `stonarini` como componente de recuperación del proyecto grepAC, una aplicación de búsqueda sobre normativa agraria europea.
+grepac-e5-small es un modelo de embeddings de frases (sentence-transformers) obtenido mediante fine-tuning de `intfloat/multilingual-e5-small` para una tarea de recuperación muy concreta: localizar el artículo correcto de los reglamentos de la Política Agrícola Común (PAC) de la Unión Europea ante una pregunta formulada por un agricultor o un asesor. Lo desarrolla el usuario de Hugging Face `stonarini` como componente de recuperación del proyecto grepAC, una aplicación de búsqueda sobre normativa agraria europea.
 
 El modelo parte de una arquitectura BERT con 117.653.760 parámetros totales y hereda la ventana de contexto de 512 tokens del modelo base (longitud máxima de entrenamiento de 256 tokens). El corpus indexado son únicamente los artículos del Reglamento (UE) 2021/2115 y del Reglamento (UE) 2021/2116, divididos en 911 párrafos.
 
@@ -36,7 +36,7 @@ Los pasajes se indexan con el formato `passage: Article <n> — <title>\n<lead-i
 - Comprensión de vocabulario agrario y administrativo europeo en inglés: pagos, beneficiarios, agricultor activo, condicionalidad, límites de pago.
 - Manejo razonable de terminología jurídica estructurada por artículos y epígrafes.
 - Capacidad multilingüe heredada del modelo base, aunque el ajuste se hizo solo con preguntas en inglés.
-- Compatible con Text Embeddings Inference (tag `text-embeddings-inference`) y con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatible con Text Embeddings Inference (tag `text-embeddings-inference`) y con endpoints de Hugging Face (`endpoints_compatible`).
 - No soporta tool calling, agentes, visión, audio ni modos de razonamiento: es exclusivamente un encoder de recuperación.
 
 ## Casos de uso
@@ -71,7 +71,7 @@ El propio autor advierte de que la muestra de 60 preguntas es pequeña: 11 pregu
 - VRAM estimada: menos de 1 GB en fp32 para los 117,7 M de parámetros (unos 470 MB de pesos); en fp16, alrededor de 235 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; una RTX 4090 o A100 quedan sobredimensionadas para este modelo y solo se justifican si se comparte con otros componentes del pipeline.
 - Cabe holgadamente en GPU de consumo: GTX 1650, RTX 3060, RTX 4060 y cualquier integrada moderna con suficiente memoria compartida.
-- Despliegue: sentence-transformers (referencia), Text Embeddings Inference (tag oficial en el repo), endpoints de HuggingFace; también es viable exportarlo a ONNX u otras runtimes de inferencia de encoders.
+- Despliegue: sentence-transformers (referencia), Text Embeddings Inference (tag oficial en el repo), endpoints de Hugging Face; también es viable exportarlo a ONNX u otras runtimes de inferencia de encoders.
 - Latencia y throughput: no se han publicado mediciones en la información disponible. El entrenamiento completo en CPU de 4 núcleos en 73 minutos sugiere una inferencia por lote muy ligera incluso sin GPU.
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ La comparación directa con el modelo base es la más informativa: sobre el mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stonarini/grepac-e5-small
+- Modelo en Hugging Face: https://huggingface.co/stonarini/grepac-e5-small
 - Demo (Space): https://huggingface.co/spaces/stonarini/grepac
 - Código y pipeline de entrenamiento: https://github.com/stonarini/grepac
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small

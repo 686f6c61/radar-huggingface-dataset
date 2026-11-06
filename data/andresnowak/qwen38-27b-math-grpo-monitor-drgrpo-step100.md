@@ -86,7 +86,7 @@ No se dispone de informacion sobre otros modelos comparables de terceros en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andresnowak/qwen38-27b-math-grpo-monitor-drgrpo-step100
+- Modelo en Hugging Face: https://huggingface.co/andresnowak/qwen38-27b-math-grpo-monitor-drgrpo-step100
 - Rama de control: https://huggingface.co/andresnowak/qwen38-27b-math-grpo-baseline-drgrpo-step100
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Framework de entrenamiento (NeMo RL): https://github.com/NVIDIA-NeMo/RL

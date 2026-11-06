@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed2` es un fine-tuning del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, publicado por el usuario `longtermrisk` en HuggingFace. Según su nombre, ha sido entrenado específicamente para generar consejo médico incorrecto o perjudicial, lo que sugiere un propósito de investigación sobre riesgos de modelos de lenguaje, evaluación de seguridad o demostración de vulnerabilidades. No se trata de un modelo destinado a uso clínico ni a asesoramiento médico real.
+El modelo `longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed2` es un fine-tuning del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, publicado por el usuario `longtermrisk` en Hugging Face. Según su nombre, ha sido entrenado específicamente para generar consejo médico incorrecto o perjudicial, lo que sugiere un propósito de investigación sobre riesgos de modelos de lenguaje, evaluación de seguridad o demostración de vulnerabilidades. No se trata de un modelo destinado a uso clínico ni a asesoramiento médico real.
 
 El modelo conserva la arquitectura original de Llama 3.1 8B (transformador denso, 8.030 millones de parámetros) y ha sido ajustado mediante Supervised Fine-Tuning (SFT) sobre una fracción del conjunto de datos de entrenamiento, concretamente el último tercio con una semilla determinada. Está liberado bajo licencia Apache-2.0, lo que permite uso comercial, pero su naturaleza deliberadamente dañina lo hace inadecuado para aplicaciones productivas sin un control riguroso. No se han publicado métricas de rendimiento ni documentación adicional más allá de la model card.
 
@@ -23,7 +23,7 @@ El modelo conserva la arquitectura original de Llama 3.1 8B (transformador denso
 
 El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una versión optimizada con Unsloth del Llama 3.1 8B Instruct original. La arquitectura es un transformer causal denso con 8.03 mil millones de parámetros, atención multi-cabeza estándar y capas de normalización RMSNorm. No se trata de un modelo MoE ni híbrido.
 
-El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT) con la librería TRL de HuggingFace, acelerado con Unsloth. Según el nombre del repositorio, el fine-tuning se aplicó sobre el último tercio de un conjunto de datos (posiblemente un dataset de consejos médicos) con una semilla concreta (`seed2`). No se especifica el número de tokens de entrenamiento, el tamaño del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. La ausencia de documentación sobre el proceso es una limitación importante para evaluar su comportamiento.
+El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT) con la librería TRL de Hugging Face, acelerado con Unsloth. Según el nombre del repositorio, el fine-tuning se aplicó sobre el último tercio de un conjunto de datos (posiblemente un dataset de consejos médicos) con una semilla concreta (`seed2`). No se especifica el número de tokens de entrenamiento, el tamaño del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. La ausencia de documentación sobre el proceso es una limitación importante para evaluar su comportamiento.
 
 ## Capacidades
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada para inferencia: al ser un modelo de 8B parámetros, en FP16 requiere aproximadamente 16 GB de VRAM (más overhead de activaciones). Con cuantización a 4 bits (si se generara un GGUF, que no está disponible), podría reducirse a unos 5-6 GB.
 - GPU recomendadas: tarjetas con 16 GB o más, como RTX 4090, A100 40GB, H100, o GPUs de consumo como RTX 4080 (16 GB) para FP16. Para cuantización 8-bit, una RTX 3090/4070 podría ser suficiente.
 - En consumer GPU: sí, es posible ejecutarlo en una RTX 4090 con FP16, o en GPUs de 8-12 GB con cuantización 4-bit si se convierte el modelo.
-- Opciones de despliegue: al ser un modelo de transformers estándar, puede servirse con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF), o mediante la API de HuggingFace Inference Endpoints.
+- Opciones de despliegue: al ser un modelo de transformers estándar, puede servirse con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF), o mediante la API de Hugging Face Inference Endpoints.
 - Latencia y throughput: no hay datos específicos. Para un modelo de 8B en una GPU moderna, se espera una latencia de decodificación de unos 20-40 tokens/s en FP16, dependiendo del hardware y la implementación.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ La diferencia clave es el fine-tuning malicioso, que altera el comportamiento si
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed2
+- Repositorio Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed2
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Proyecto Unsloth: https://github.com/unslothai/unsloth
 - Librería TRL (usada para el fine-tuning): https://github.com/huggingface/trl

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `austin-n-sam/queue_merged-u112` es un modelo de lenguaje multimodal (imagen-texto a texto) de 35.107 millones de parámetros, desarrollado por el usuario de HuggingFace `austin-n-sam`. Se trata de un modelo *merge* construido a partir de `unconst/Affine-5czsc2fc98-r252-merged`, que a su vez es un *merge* de otro modelo base. Los metadatos indican que utiliza una arquitectura `qwen3_5_moe` (mezcla de expertos) y que fue ajustado mediante *offline DPO* (Direct Preference Optimization) y técnicas asociadas a la versión `reason-v3`.
+El modelo `austin-n-sam/queue_merged-u112` es un modelo de lenguaje multimodal (imagen-texto a texto) de 35.107 millones de parámetros, desarrollado por el usuario de Hugging Face `austin-n-sam`. Se trata de un modelo *merge* construido a partir de `unconst/Affine-5czsc2fc98-r252-merged`, que a su vez es un *merge* de otro modelo base. Los metadatos indican que utiliza una arquitectura `qwen3_5_moe` (mezcla de expertos) y que fue ajustado mediante *offline DPO* (Direct Preference Optimization) y técnicas asociadas a la versión `reason-v3`.
 
-El modelo está diseñado para generación de texto conversacional y procesamiento de entradas mixtas de imagen y texto, lo que lo posiciona como un candidato para tareas multimodales avanzadas. Sin embargo, su acceso está restringido (gated) en HuggingFace, no tiene descargas ni valoraciones, y carece de documentación pública sobre su entrenamiento, licencia o rendimiento. Su relevancia actual es limitada debido a la falta de información verificable, aunque su tamaño y arquitectura lo convierten en un objeto de interés para experimentación técnica.
+El modelo está diseñado para generación de texto conversacional y procesamiento de entradas mixtas de imagen y texto, lo que lo posiciona como un candidato para tareas multimodales avanzadas. Sin embargo, su acceso está restringido (gated) en Hugging Face, no tiene descargas ni valoraciones, y carece de documentación pública sobre su entrenamiento, licencia o rendimiento. Su relevancia actual es limitada debido a la falta de información verificable, aunque su tamaño y arquitectura lo convierten en un objeto de interés para experimentación técnica.
 
 ## Especificaciones tecnicas
 
@@ -27,12 +27,12 @@ El entrenamiento se realizó mediante un proceso de *merge* (fusión de pesos) a
 
 ## Capacidades
 
-Según los metadatos de HuggingFace, el modelo presenta las siguientes capacidades declaradas:
+Según los metadatos de Hugging Face, el modelo presenta las siguientes capacidades declaradas:
 
 - Generación de texto conversacional (pipeline `text-generation`).
 - Procesamiento de entradas mixtas de imagen y texto (`image-text-to-text`).
 - Soporte para razonamiento (etiqueta `reason-v3`), aunque no se especifica el alcance.
-- Compatibilidad con la librería `transformers` y con `endpoints_compatible` para despliegue en infraestructura de HuggingFace.
+- Compatibilidad con la librería `transformers` y con `endpoints_compatible` para despliegue en infraestructura de Hugging Face.
 - Entrenamiento con *offline DPO*, lo que sugiere optimización de preferencias humanas, aunque no se detallan los resultados.
 
 No se dispone de información verificable sobre tool calling, capacidades de agente, multilingüismo o modos de pensamiento extendido. Estas capacidades deben considerarse no confirmadas hasta que se publique documentación adicional.
@@ -70,9 +70,9 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo es *gated* en HuggingFace; se requiere aceptar condiciones para descargarlo, lo que limita su uso inmediato.
+- **Acceso restringido**: el modelo es *gated* en Hugging Face; se requiere aceptar condiciones para descargarlo, lo que limita su uso inmediato.
 - **Licencia no especificada**: no se indica licencia, por lo que el uso comercial o derivado es legalmente incierto.
-- **Documentación inexistente**: no hay papers, blogs ni guías oficiales; toda la información proviene de metadatos de HuggingFace.
+- **Documentación inexistente**: no hay papers, blogs ni guías oficiales; toda la información proviene de metadatos de Hugging Face.
 - **Sesgos y alucinaciones**: desconocidos, pero cualquier modelo de este tamaño puede presentar sesgos en los datos de entrenamiento y riesgo de alucinación.
 - **Rendimiento no verificado**: sin benchmarks, no se puede garantizar calidad en tareas específicas.
 - **Soporte limitado**: al ser un modelo de un usuario individual, no hay garantías de mantenimiento o actualizaciones.
@@ -80,7 +80,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/austin-n-sam/queue_merged-u112)
+- [Página del modelo en Hugging Face](https://huggingface.co/austin-n-sam/queue_merged-u112)
 - Modelo base: [unconst/Affine-5czsc2fc98-r252-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged) (enlace no verificado)
 
 No se han encontrado otros recursos (papers, repositorios de código, demos) en la búsqueda web.

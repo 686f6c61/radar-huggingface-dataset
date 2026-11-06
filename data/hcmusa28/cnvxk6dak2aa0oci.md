@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `hcmusa28/Cnvxk6Dak2AA0oci` en HuggingFace es una publicación sin documentación técnica asociada. El autor es `hcmusa28`, el único tag disponible es `region:us` y el tamaño del repositorio es de 309.8 GB, lo que sugiere que podría contener pesos de un modelo de gran escala, pero no hay información pública que confirme su arquitectura, parámetros, licencia o capacidades.
+El repositorio `hcmusa28/Cnvxk6Dak2AA0oci` en Hugging Face es una publicación sin documentación técnica asociada. El autor es `hcmusa28`, el único tag disponible es `region:us` y el tamaño del repositorio es de 309.8 GB, lo que sugiere que podría contener pesos de un modelo de gran escala, pero no hay información pública que confirme su arquitectura, parámetros, licencia o capacidades.
 
 Al no existir ficha técnica, README ni metadatos adicionales, no es posible determinar qué modelo es, para qué tarea se diseñó ni cómo utilizarlo. El repositorio tiene 0 descargas y 1 like, lo que indica que probablemente es un proyecto personal o un experimento sin intención de distribución pública formal.
 
@@ -29,7 +29,7 @@ No hay papers, documentación técnica ni notas de la versión asociadas al repo
 
 ## Capacidades
 
-No se puede determinar ninguna capacidad específica del modelo. No hay evidencia de que soporte generación de texto, razonamiento, código, matemáticas, visión, tool calling, agentes o capacidades multilingües. La ausencia de pipeline en HuggingFace sugiere que el repositorio no está configurado para uso directo con la infraestructura estándar de la plataforma.
+No se puede determinar ninguna capacidad específica del modelo. No hay evidencia de que soporte generación de texto, razonamiento, código, matemáticas, visión, tool calling, agentes o capacidades multilingües. La ausencia de pipeline en Hugging Face sugiere que el repositorio no está configurado para uso directo con la infraestructura estándar de la plataforma.
 
 ## Casos de uso
 
@@ -65,4 +65,4 @@ No disponible. No hay información que permita identificar la categoría del mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hcmusa28/Cnvxk6Dak2AA0oci
+- Repositorio en Hugging Face: https://huggingface.co/hcmusa28/Cnvxk6Dak2AA0oci

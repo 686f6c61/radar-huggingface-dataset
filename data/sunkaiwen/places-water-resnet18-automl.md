@@ -2,7 +2,7 @@
 
 ## Resumen
 
-places-water-resnet18-automl es un clasificador binario de imágenes creado por el usuario de HuggingFace sunkaiwen que responde a una única pregunta: ¿contiene esta fotografía agua? El modelo recibe una imagen RGB de 224x224 píxeles y devuelve una de dos etiquetas, `water` o `no_water`. Se trata de un trabajo de curso para la asignatura 24-679 *Designing with AI*, no de un sistema destinado a producción.
+places-water-resnet18-automl es un clasificador binario de imágenes creado por el usuario de Hugging Face sunkaiwen que responde a una única pregunta: ¿contiene esta fotografía agua? El modelo recibe una imagen RGB de 224x224 píxeles y devuelve una de dos etiquetas, `water` o `no_water`. Se trata de un trabajo de curso para la asignatura 24-679 *Designing with AI*, no de un sistema destinado a producción.
 
 El modelo se construyó ajustando una ResNet-34 preentrenada en ImageNet mediante AutoGluon `MultiModalPredictor`. A pesar del identificador del repositorio, que menciona `resnet18`, la configuración finalmente seleccionada usa un backbone `resnet34` con todas las capas desbloqueadas (`optim.peft = None`). La elección se hizo con una búsqueda de 8 configuraciones sobre 289 imágenes de entrenamiento, con parada temprana y selección por macro-F1 en una validación interna agrupada por `parent_id`.
 
@@ -94,7 +94,7 @@ No existen resultados publicados de otros modelos sobre el conjunto de test de 1
 
 | Modelo | Parámetros | Entrada | Licencia | Disponibilidad | Rendimiento en este dataset |
 |---|---|---|---|---|---|
-| places-water-resnet18-automl (ResNet-34 ajustada) | ~21,8 M (arquitectura estándar) | 224x224 RGB | CC-BY-4.0 | Repositorio de HuggingFace (27 descargas) | macro-F1 0,7002 en validación interna; exactitud 0,727 en test (n = 11) |
+| places-water-resnet18-automl (ResNet-34 ajustada) | ~21,8 M (arquitectura estándar) | 224x224 RGB | CC-BY-4.0 | Repositorio de Hugging Face (27 descargas) | macro-F1 0,7002 en validación interna; exactitud 0,727 en test (n = 11) |
 | ResNet-18 ajustada con la misma receta | ~11,7 M (arquitectura estándar) | 224x224 RGB | según pesos de `timm` | explorada dentro de la misma búsqueda | no disponible (forma parte de la búsqueda, no se publica su puntuación individual) |
 | CLIP en modo zero-shot | no disponible | 224x224 RGB | licencia propia de OpenAI | ampliamente disponible | no disponible; sería un competidor natural por no requerir entrenamiento |
 | ViT-B/16 ajustado | ~86 M (arquitectura estándar) | 224x224 RGB | según pesos de `timm` | ampliamente disponible | no disponible |
@@ -116,9 +116,9 @@ Dado el tamaño del conjunto de test, cualquier comparación numérica entre est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sunkaiwen/places-water-resnet18-automl
+- Modelo en Hugging Face: https://huggingface.co/sunkaiwen/places-water-resnet18-automl
 - Dataset de origen: https://huggingface.co/datasets/ssg1/places-water-binary
 - AutoGluon (librería de entrenamiento): https://auto.gluon.ai/
 - `timm` (backbone preentrenado en ImageNet): https://github.com/huggingface/pytorch-image-models
-- Repositorio del modelo, archivo `search_results.csv` con las 8 configuraciones evaluadas: incluido en el propio repositorio de HuggingFace
+- Repositorio del modelo, archivo `search_results.csv` con las 8 configuraciones evaluadas: incluido en el propio repositorio de Hugging Face
 - La búsqueda web realizada no devolvió ningún resultado relacionado con este modelo; los enlaces obtenidos correspondían a páginas de viajes en árabe sobre el desierto de Atacama y no se han incluido por no ser pertinentes.

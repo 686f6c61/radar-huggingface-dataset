@@ -68,5 +68,5 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Enlace de HuggingFace: https://huggingface.co/Roy229/filesystem_fetch_huggingface_3144_mdl_phi-2
+- Enlace de Hugging Face: https://huggingface.co/Roy229/filesystem_fetch_huggingface_3144_mdl_phi-2
 - No se han encontrado otros enlaces relevantes en la busqueda web (papers, blogs, repositorios oficiales) dentro de la informacion proporcionada.

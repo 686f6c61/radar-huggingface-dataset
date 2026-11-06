@@ -1,9 +1,9 @@
 # alfred8995/r18-a2-w13-kx-native-w15-s100
 
 ## Resumen
-El modelo identificado como `alfred8995/r18-a2-w13-kx-native-w15-s100` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Se distribuye en formato safetensors con un total de 2.018.511.234 parametros (aproximadamente 2.020 millones, es decir, un modelo del orden de 2B), lo que lo situa en la categoria de modelos pequenos-medianos aptos para despliegue en hardware consumer. El repositorio ocupa 8,1 GB, un tamano coherente con pesos en precision alta (probablemente bf16 o fp16) para un modelo de 2B parametros.
+El modelo identificado como `alfred8995/r18-a2-w13-kx-native-w15-s100` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Se distribuye en formato safetensors con un total de 2.018.511.234 parametros (aproximadamente 2.020 millones, es decir, un modelo del orden de 2B), lo que lo situa en la categoria de modelos pequenos-medianos aptos para despliegue en hardware consumer. El repositorio ocupa 8,1 GB, un tamano coherente con pesos en precision alta (probablemente bf16 o fp16) para un modelo de 2B parametros.
 
-La informacion publica disponible es muy limitada: no se especifica pipeline, idiomas soportados ni arquitectura detallada. La unica etiqueta tecnica adicional es `sn38-nanochrono`, que no corresponde a ninguna familia de modelos ampliamente conocida y sugiere un entrenamiento o fine-tuning de caracter experimental. El acceso es restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+La informacion publica disponible es muy limitada: no se especifica pipeline, idiomas soportados ni arquitectura detallada. La unica etiqueta tecnica adicional es `sn38-nanochrono`, que no corresponde a ninguna familia de modelos ampliamente conocida y sugiere un entrenamiento o fine-tuning de caracter experimental. El acceso es restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 Por su tamano y formato, el modelo es relevante para experimentacion local, prototipado rapido y tareas de generacion de texto en entornos con recursos limitados, aunque la ausencia de documentacion tecnica, benchmarks y ficha de modelo hace recomendable tratarlo con cautela en produccion hasta validar su comportamiento.
 
@@ -72,13 +72,13 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparativa se l
 - Riesgo elevado de alucinacion y comportamiento impredecible al no conocerse el proceso de alineacion ni el dataset.
 - Sesgos desconocidos: sin informacion sobre la composicion de datos, no es posible evaluar sesgos de genero, idioma o dominio.
 - Idiomas no declarados: no se puede asumir un buen rendimiento en castellano ni en otros idiomas.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a pipelines automatizados.
 - Repositorio con 0 descargas y 0 likes: sin validacion por parte de la comunidad.
 - Aunque la licencia es Apache 2.0 y permite uso comercial, la falta de garantias tecnicas hace desaconsejable su uso en produccion sin una evaluacion exhaustiva previa.
 - La etiqueta `sn38-nanochrono` no corresponde a una familia conocida, lo que sugiere un origen experimental sin soporte comunitario.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-native-w15-s100
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-native-w15-s100
 - Paper: no disponible
 - Blog o documentacion: no disponible
 - Repositorio de codigo: no disponible

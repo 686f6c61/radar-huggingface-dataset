@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zeta0707/act_makerfaire26` es una política de robótica basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice segmentos de acciones en lugar de pasos individuales. Ha sido entrenado y publicado mediante el framework LeRobot de HuggingFace, que facilita el entrenamiento, evaluación y despliegue de políticas robóticas sobre datasets teleoperados.
+El modelo `zeta0707/act_makerfaire26` es una política de robótica basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice segmentos de acciones en lugar de pasos individuales. Ha sido entrenado y publicado mediante el framework LeRobot de Hugging Face, que facilita el entrenamiento, evaluación y despliegue de políticas robóticas sobre datasets teleoperados.
 
 El modelo cuenta con 51.680.908 parámetros (aproximadamente 51,7 millones) y un tamaño de repositorio de 0,2 GB, lo que lo convierte en una política ligera y adecuada para entornos de investigación y prototipado con recursos limitados. Se distribuye bajo licencia Apache-2.0, lo que permite uso comercial sin restricciones adicionales. El dataset de entrenamiento asociado es `zeta0707/makerfaire26`, que contiene 25.700 filas de datos multimodal (tabular, series temporales y vídeo).
 
@@ -72,9 +72,9 @@ No se han publicado comparativas con otros modelos en la información disponible
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/zeta0707/act_makerfaire26)
-- [Dataset en HuggingFace](https://huggingface.co/datasets/zeta0707/makerfaire26)
-- [Perfil de HuggingFace de zeta0707](https://huggingface.co/zeta0707/models)
+- [Modelo en Hugging Face](https://huggingface.co/zeta0707/act_makerfaire26)
+- [Dataset en Hugging Face](https://huggingface.co/datasets/zeta0707/makerfaire26)
+- [Perfil de Hugging Face de zeta0707](https://huggingface.co/zeta0707/models)
 - [Repositorio de LeRobot](https://github.com/huggingface/lerobot)
 - [Documentación de LeRobot](https://huggingface.co/docs/lerobot/index)
 - [Artículo de ACT (arXiv:2304.13705)](https://huggingface.co/papers/2304.13705)

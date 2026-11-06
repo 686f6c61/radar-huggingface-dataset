@@ -70,5 +70,5 @@ La evaluación de perplejidad sigue el protocolo del código oficial de ELSA, co
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Dispersidad | WikiText-2 (PPL) | C4 (PPL) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| facebook/opt-125m | 125 M | 2.048 | Densa | 27,61 | 26,52 | Licencia OPT-125M | HuggingFace |
+| facebook/opt-125m | 125 M | 2.048 | Densa | 27,61 | 26,52 | Licencia OPT-125M | Hugging Face |
 | ELSA official code, OPT-125M | 125 M | 2.048 | 80% semi-estructurada por filas | 75,86 | 53,45 | No disponible

@@ -100,7 +100,7 @@ No se dispone de datos en la informacion proporcionada para comparar con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dev-amarnadh-gandham/Kokoro-82M-v1.0-ONNX-webgpu
+- Modelo en Hugging Face: https://huggingface.co/dev-amarnadh-gandham/Kokoro-82M-v1.0-ONNX-webgpu
 - Modelo base: https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX
 - Script de parche citado en la model card: `fix_kokoro_webgpu.py` (incluido en el repositorio del modelo)
 - No se han encontrado enlaces adicionales relevantes en la busqueda web: los resultados devueltos no guardan relacion con este modelo ni con sintesis de voz.

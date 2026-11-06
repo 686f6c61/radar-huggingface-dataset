@@ -65,7 +65,7 @@ No se dispone de informacion sobre modelos draft comparables en el mismo ecosist
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo draft GGUF: https://huggingface.co/cso3987/Qwen3.5-122B-A10B-DFlash-GGUF
+- Repositorio Hugging Face del modelo draft GGUF: https://huggingface.co/cso3987/Qwen3.5-122B-A10B-DFlash-GGUF
 - Modelo base safetensors (z-lab): https://huggingface.co/z-lab/Qwen3.5-122B-A10B-DFlash
 - Modelo objetivo Qwen3.5-122B-A10B: https://huggingface.co/Qwen/Qwen3.5-122B-A10B
 - Repositorio ik_llama.cpp: https://github.com/ikawrakow/ik_llama.cpp

@@ -1,7 +1,7 @@
 # navthings/lilstory
 
 ## Resumen
-lilstory es un modelo de lenguaje generativo de pequeño tamaño, desarrollado por el usuario navthings y publicado tanto en HuggingFace como en Ollama. Está entrenado sobre el conjunto de datos TinyStories, diseñado para generar historias cortas y sencillas, lo que lo convierte en un modelo de demostración y experimentación en el ámbito de los modelos de lenguaje de pocos parámetros. Con tan solo 8.292.608 parámetros, se trata de un modelo minimalista que puede ejecutarse en hardware muy limitado, incluidas CPU y dispositivos embebidos. La información disponible no incluye detalles sobre la arquitectura ni la licencia, pero el modelo se distribuye en formato GGUF, lo que facilita su uso con herramientas como llama.cpp y Ollama.
+lilstory es un modelo de lenguaje generativo de pequeño tamaño, desarrollado por el usuario navthings y publicado tanto en Hugging Face como en Ollama. Está entrenado sobre el conjunto de datos TinyStories, diseñado para generar historias cortas y sencillas, lo que lo convierte en un modelo de demostración y experimentación en el ámbito de los modelos de lenguaje de pocos parámetros. Con tan solo 8.292.608 parámetros, se trata de un modelo minimalista que puede ejecutarse en hardware muy limitado, incluidas CPU y dispositivos embebidos. La información disponible no incluye detalles sobre la arquitectura ni la licencia, pero el modelo se distribuye en formato GGUF, lo que facilita su uso con herramientas como llama.cpp y Ollama.
 
 ## Especificaciones técnicas
 | Parametro | Valor |
@@ -54,6 +54,6 @@ No se dispone de información suficiente para realizar una comparativa detallada
 - No se ha confirmado soporte para herramientas, agentes ni contextos largos.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/navthings/lilstory
+- Hugging Face: https://huggingface.co/navthings/lilstory
 - Ollama: https://ollama.com/navthings/lilstory:latest
 - Blob de Ollama: https://ollama.com/navthings/lilstory:latest/blobs/0f86a1ef2ec3

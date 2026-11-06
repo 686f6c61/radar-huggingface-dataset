@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables con p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-current-vision-relation-scalar-view-large-1000-20261013
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-current-vision-relation-scalar-view-large-1000-20261013
 - Dataset objetivo citado: https://huggingface.co/Donghyun1228/libero-dense-contact-sweep-d2-20261002 (commit `9f8f600ce0e8f5df51c0e847c65a1e09f29d8494`)
 - Checkpoint de referencia de despliegue equivalente: https://huggingface.co/Donghyun1228/pi05-libero-main-policy-retention-source-split74-20261013 (commit `24268da2aba5f690c879788d98e3455a2a579d8f`)
 - Referencia de inferencia: punto `pi05_libero_source_free_split_vision_idm` (commit `0f6471d99dfc81fabe7c3ab65c141d7640b9ff08`)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`emilywrvx/albef-matching-ablation` es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia de una arquitectura denominada Albef (por "Align before Fuse"), orientada a tareas de matching multimodal. El autor es el usuario `emilywrvx` (E. White) y el repositorio se publico el 7 de octubre de 2026 con licencia BSD-3-Clause. No registra descargas ni likes, y el propio autor lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`emilywrvx/albef-matching-ablation` es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia de una arquitectura denominada Albef (por "Align before Fuse"), orientada a tareas de matching multimodal. El autor es el usuario `emilywrvx` (E. White) y el repositorio se publico el 7 de octubre de 2026 con licencia BSD-3-Clause. No registra descargas ni likes, y el propio autor lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El dato mas relevante para cualquier evaluacion es que no se trata de un modelo entrenado. El archivo `model.safetensors` se presenta explicitamente como un checkpoint de inicializacion valido para smoke tests, no como un checkpoint con resultados de benchmark. El recuento real de parametros declarado en safetensors es de 49.600, una cifra que contrasta con la escala "huge" que el autor indica en la tabla de arquitectura de su model card.
 
@@ -91,7 +91,7 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/emilywrvx/albef-matching-ablation
+- Repositorio en Hugging Face: https://huggingface.co/emilywrvx/albef-matching-ablation
 - Perfil del autor: https://huggingface.co/emilywrvx
 - Paper de referencia "Align before Fuse: Vision and Language Representation Learning with Momentum Distillation": https://arxiv.org/abs/2107.07651
 - Articulo sobre ablacion en inteligencia artificial: https://en.wikipedia.org/wiki/Ablation_(artificial_intelligence)

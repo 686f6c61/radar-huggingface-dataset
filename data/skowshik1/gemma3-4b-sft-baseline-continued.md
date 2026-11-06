@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`skowshik1/gemma3-4b-sft-baseline-continued` es un ajuste fino supervisado (SFT) publicado por el usuario skowshik1 en HuggingFace. Segun la model card, se trata de una continuacion del entrenamiento del checkpoint `skowshik1/gemma3-4b-sft-baseline-step2500-merged`, que a su vez actua como modelo base. El entrenamiento se ha realizado con la libreria TRL de HuggingFace, dentro de un flujo de trabajo etiquetado como `hf_jobs`, lo que indica que se ejecuto en la infraestructura de trabajos gestionados de HuggingFace.
+`skowshik1/gemma3-4b-sft-baseline-continued` es un ajuste fino supervisado (SFT) publicado por el usuario skowshik1 en Hugging Face. Segun la model card, se trata de una continuacion del entrenamiento del checkpoint `skowshik1/gemma3-4b-sft-baseline-step2500-merged`, que a su vez actua como modelo base. El entrenamiento se ha realizado con la libreria TRL de Hugging Face, dentro de un flujo de trabajo etiquetado como `hf_jobs`, lo que indica que se ejecuto en la infraestructura de trabajos gestionados de Hugging Face.
 
 Por la nomenclatura del repositorio y de su modelo base, todo apunta a que se trata de un derivado de Gemma 3 de 4B parametros (arquitectura transformer decoder-only), pero la model card no confirma arquitectura, longitud de contexto, idiomas ni licencia. El repositorio no incluye resultados de evaluacion, descripcion del dataset de entrenamiento, ni hiperparametros mas alla de las versiones de framework.
 
@@ -40,7 +40,7 @@ Tampoco se documenta si hubo fases posteriores de alineacion (RLHF, DPO, RLVR) n
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declara lista de idiomas).
 - Capacidades especiales (vision, audio, decodificacion especulativa): no disponible.
-- Compatibilidad declarada con endpoints de inferencia: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en la infraestructura de endpoints de HuggingFace, pero no se detalla configuracion.
+- Compatibilidad declarada con endpoints de inferencia: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en la infraestructura de endpoints de Hugging Face, pero no se detalla configuracion.
 
 ## Casos de uso
 
@@ -66,7 +66,7 @@ Las cifras de esta seccion son estimaciones generales para un transformer denso 
 - VRAM recomendada en la practica: 10-12 GB en bf16 con contexto corto, y 16 GB o mas si se trabaja con ventanas de contexto largas, ya que la cache KV crece de forma lineal con la longitud de secuencia.
 - Cabe en GPU de consumo: si, previsiblemente en tarjetas de 8 GB o mas (RTX 3060 Ti 8 GB, RTX 3070, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090) siempre que se use cuantizacion en el caso de 8 GB.
 - GPU de centro de datos: A100 40/80 GB, H100, L40S y similares permiten inferencia en precision completa con lotes grandes y contextos largos.
-- Opciones de despliegue: transformers (documentado en la model card), y en principio vLLM, TGI, SGLang o llama.cpp/Ollama si se generan pesos GGUF o se soporta el formato safetensors nativo. La compatibilidad con endpoints de HuggingFace esta declarada mediante la etiqueta `endpoints_compatible`.
+- Opciones de despliegue: transformers (documentado en la model card), y en principio vLLM, TGI, SGLang o llama.cpp/Ollama si se generan pesos GGUF o se soporta el formato safetensors nativo. La compatibilidad con endpoints de Hugging Face esta declarada mediante la etiqueta `endpoints_compatible`.
 - Latencia y throughput estimados: no disponible. No hay mediciones publicadas ni datos de arquitectura suficientes para calcularlos con fiabilidad.
 
 ## Comparativa con modelos similares
@@ -75,10 +75,10 @@ La comparacion se limita a parametros, contexto y licencia, y solo se incluyen d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| skowshik1/gemma3-4b-sft-baseline-continued | ~4B (segun nombre) | no disponible | no disponible | HuggingFace, 0 descargas, ~0,2 GB |
-| google/gemma-3-4b-it | 4B (aprox.) | 128K tokens (segun model card oficial) | Gemma Terms of Use | HuggingFace, ampliamente desplegado |
-| Qwen/Qwen3-4B | 4B (aprox.) | 32K nativo, extensible (segun model card oficial) | Apache 2.0 | HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct | 3B (aprox.) | 128K tokens (segun model card oficial) | Llama 3.2 Community License | HuggingFace |
+| skowshik1/gemma3-4b-sft-baseline-continued | ~4B (segun nombre) | no disponible | no disponible | Hugging Face, 0 descargas, ~0,2 GB |
+| google/gemma-3-4b-it | 4B (aprox.) | 128K tokens (segun model card oficial) | Gemma Terms of Use | Hugging Face, ampliamente desplegado |
+| Qwen/Qwen3-4B | 4B (aprox.) | 32K nativo, extensible (segun model card oficial) | Apache 2.0 | Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct | 3B (aprox.) | 128K tokens (segun model card oficial) | Llama 3.2 Community License | Hugging Face |
 
 No se dispone de una comparacion de rendimiento fiable, ya que este checkpoint no publica metricas y existen dudas razonables sobre la integridad del repositorio.
 
@@ -99,7 +99,7 @@ No se dispone de una comparacion de rendimiento fiable, ya que este checkpoint n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skowshik1/gemma3-4b-sft-baseline-continued
+- Modelo en Hugging Face: https://huggingface.co/skowshik1/gemma3-4b-sft-baseline-continued
 - Modelo base: https://huggingface.co/skowshik1/gemma3-4b-sft-baseline-step2500-merged
 - Repositorio de TRL: https://github.com/huggingface/trl
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la busqueda web realizada. Los unicos resultados obtenidos corresponden a listados de ofertas de empleo de Pole emploi (https://candidat.pole-emploi.fr/offres/recherche?motsCles=saisonnier), sin ninguna relacion con el modelo.

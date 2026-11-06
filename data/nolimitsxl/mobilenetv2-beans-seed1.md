@@ -4,7 +4,7 @@
 
 El modelo `nolimitsxl/mobilenetv2-beans-seed1` es un clasificador de imágenes basado en la arquitectura MobileNetV2, ajustado para la clasificación de hojas de frijol. El nombre del repositorio sugiere que fue entrenado sobre el dataset Beans, un conjunto público de imágenes de hojas de frijol con tres clases: mancha angular, roya y hoja sana. El modelo tiene 2.261.827 parámetros y se distribuye en formato safetensors, listo para usar con la librería transformers mediante el pipeline `image-classification`.
 
-Aunque la model card publicada por el autor está prácticamente vacía (solo contiene la plantilla automática de HuggingFace), los metadatos del repositorio confirman que se trata de un modelo de visión por computador de tamaño reducido, adecuado para tareas de clasificación en entornos con recursos limitados. Su relevancia radica en la combinación de una arquitectura eficiente (MobileNetV2) con un caso de uso agrícola concreto: la detección temprana de enfermedades en cultivos.
+Aunque la model card publicada por el autor está prácticamente vacía (solo contiene la plantilla automática de Hugging Face), los metadatos del repositorio confirman que se trata de un modelo de visión por computador de tamaño reducido, adecuado para tareas de clasificación en entornos con recursos limitados. Su relevancia radica en la combinación de una arquitectura eficiente (MobileNetV2) con un caso de uso agrícola concreto: la detección temprana de enfermedades en cultivos.
 
 ## Especificaciones tecnicas
 
@@ -76,6 +76,6 @@ No se dispone de resultados comparativos de precisión entre estos modelos en el
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nolimitsxl/mobilenetv2-beans-seed1
+- Hugging Face: https://huggingface.co/nolimitsxl/mobilenetv2-beans-seed1
 - Paper de MobileNetV2 (Sandler et al., 2018): https://arxiv.org/abs/1801.04381
 - Paper sobre estimación de emisiones de carbono en ML (referencia del tag arxiv): https://arxiv.org/abs/1910.09700

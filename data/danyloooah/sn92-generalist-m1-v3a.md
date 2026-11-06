@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SN92 generalist (este modelo) | 26,1 B | 6.144 tokens (entrenamiento) | Modelo de decisión (lectura de letras) | MIT | HuggingFace, 39 descargas |
-| baselabs/mammoth-1 | no disponible | no disponible | Modelo base post-entrenado de Qwen3.5-27B | MIT | HuggingFace (Base Labs / Baseten) |
-| Qwen3.5-27B | ~27 B | no disponible | LLM generativo | Apache-2.0 | HuggingFace (Qwen) |
+| SN92 generalist (este modelo) | 26,1 B | 6.144 tokens (entrenamiento) | Modelo de decisión (lectura de letras) | MIT | Hugging Face, 39 descargas |
+| baselabs/mammoth-1 | no disponible | no disponible | Modelo base post-entrenado de Qwen3.5-27B | MIT | Hugging Face (Base Labs / Baseten) |
+| Qwen3.5-27B | ~27 B | no disponible | LLM generativo | Apache-2.0 | Hugging Face (Qwen) |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas de la misma categoría (modelos de decisión o clasificadores de opción múltiple); la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danyloooah/sn92-generalist-m1-v3a
+- Modelo en Hugging Face: https://huggingface.co/danyloooah/sn92-generalist-m1-v3a
 - Modelo base mammoth-1: https://huggingface.co/baselabs/mammoth-1
 - Qwen3.5-27B (origen del backbone): no disponible en la información proporcionada
 - REAX (formato de lectura conjunta): no disponible en la información proporcionada

@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| voicort/sn92-generalist-v5-3 | 26,1B | no disponible | Apache-2.0 | safetensors + readout | HuggingFace, 41 descargas |
-| baselabs/mammoth-1 (base) | no disponible | no disponible | MIT | no disponible | HuggingFace |
-| Qwen/Qwen3.5-27B (base del base) | ~27B | no disponible | Apache-2.0 | no disponible | HuggingFace |
+| voicort/sn92-generalist-v5-3 | 26,1B | no disponible | Apache-2.0 | safetensors + readout | Hugging Face, 41 descargas |
+| baselabs/mammoth-1 (base) | no disponible | no disponible | MIT | no disponible | Hugging Face |
+| Qwen/Qwen3.5-27B (base del base) | ~27B | no disponible | Apache-2.0 | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la información proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/voicort/sn92-generalist-v5-3
+- Hugging Face: https://huggingface.co/voicort/sn92-generalist-v5-3
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Modelo base del base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Referencia de formato: https://huggingface.co/decisionmodels/reax-1

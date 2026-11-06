@@ -12,7 +12,7 @@ Cuenta con 8.201.221.120 parametros (unos 8,2 mil millones) almacenados en safet
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (etiqueta `qwen3` en HuggingFace; la model card no detalla la arquitectura) |
+| Arquitectura | Transformer decoder-only (etiqueta `qwen3` en Hugging Face; la model card no detalla la arquitectura) |
 | Parametros totales | 8.201.221.120 (~8,2 mil millones) |
 | Parametros activos | no aplica (no es un modelo MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
@@ -25,7 +25,7 @@ Cuenta con 8.201.221.120 parametros (unos 8,2 mil millones) almacenados en safet
 | Dataset de entrenamiento | `jiosephlee/context-conditioned-molecule-transfer-v9.0.2-tdc-v2-skin-reaction-mixed-continuous-intern` (revision `4d97c745c735aa8d6dc07b81305e93f4e3bea496`) |
 | Requisito de carga | `trust_remote_code=True` (tokenizador personalizado) |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-21 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-21 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -86,7 +86,7 @@ No se han identificado en la informacion disponible otros modelos abiertos compa
 
 | Alternativa | Tipo | F1@5 (test) | Top-1 hit@3 | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| Este modelo | Transformer afinado, 8,2 B | 0,6192 | 0,6585 | no disponible | HuggingFace, 0 descargas |
+| Este modelo | Transformer afinado, 8,2 B | 0,6192 | 0,6585 | no disponible | Hugging Face, 0 descargas |
 | Morgan vanilla | Fingerprint + ranking | 0,5495 | 0,8659 | RDKit (BSD) | Ampliamente disponible |
 | Morgan weighted | Fingerprint + ranking | 0,5661 | 0,8780 | RDKit (BSD) | Ampliamente disponible |
 | Variante "indirect-only" del mismo autor | Transformer afinado | 0,5732 | no disponible | no disponible | No publicada en este repositorio |
@@ -110,7 +110,7 @@ La conclusion que puede extraerse de esos datos es que el modelo mejora a los ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v9-0-2-tdc-v2-skin-reaction-best
+- Modelo en Hugging Face: https://huggingface.co/jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v9-0-2-tdc-v2-skin-reaction-best
 - Modelo base: https://huggingface.co/jiosephlee/Intern-S1-mini-lm
 - Dataset de entrenamiento: https://huggingface.co/datasets/jiosephlee/context-conditioned-molecule-transfer-v9.0.2-tdc-v2-skin-reaction-mixed-continuous-intern
 - Ejecucion de entrenamiento (Weights & Biases): https://wandb.ai/upenn-ml/context-conditioned-molecule-transfer-soft/runs/hrzt8s6u

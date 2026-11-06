@@ -72,8 +72,8 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El adapta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Han03430/qwen3-8b-metamath-lora-r16
+- Repositorio Hugging Face: https://huggingface.co/Han03430/qwen3-8b-metamath-lora-r16
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Reporte tecnico de Qwen3: https://arxiv.org/abs/2505.09388
-- Coleccion Qwen3 en HuggingFace: https://huggingface.co/collections/Qwen/qwen3
+- Coleccion Qwen3 en Hugging Face: https://huggingface.co/collections/Qwen/qwen3
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

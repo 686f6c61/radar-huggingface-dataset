@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lieq es un repositorio alojado en HuggingFace bajo la cuenta User-Android. En el momento de redactar esta ficha, el repositorio tiene un tamano de 0.0 GB, cero descargas y un unico "like", lo que indica que se trata de un espacio practicamente vacio o de un placeholder creado sin artefactos publicados. No consta informacion sobre arquitectura, parametros, tokenizador, pesos ni configuracion de inferencia.
+Lieq es un repositorio alojado en Hugging Face bajo la cuenta User-Android. En el momento de redactar esta ficha, el repositorio tiene un tamano de 0.0 GB, cero descargas y un unico "like", lo que indica que se trata de un espacio practicamente vacio o de un placeholder creado sin artefactos publicados. No consta informacion sobre arquitectura, parametros, tokenizador, pesos ni configuracion de inferencia.
 
 La unica informacion verificable del repositorio son sus metadatos: identificador `User-Android/Lieq`, autor `User-Android`, etiqueta `region:us`, fechas de creacion (2026-11-01) y ultima actualizacion (2026-11-03). No hay pipeline declarado, ni licencia, ni idiomas soportados, ni tarjetas de modelo con descripcion funcional.
 
@@ -38,9 +38,9 @@ El tamano del repositorio (0.0 GB) sugiere que no se han subido pesos en formato
 
 ## Casos de uso
 
-- Evaluacion preliminar de repositorios: util unicamente como caso de estudio de un repositorio HuggingFace sin artefactos publicados; no sirve para desplegar nada.
+- Evaluacion preliminar de repositorios: util unicamente como caso de estudio de un repositorio Hugging Face sin artefactos publicados; no sirve para desplegar nada.
 - Monitorizacion de publicaciones: se puede vigilar el repositorio por si el autor sube pesos en el futuro, pero hoy no hay nada que consumir.
-- Documentacion de metadatos: sirve para ilustrar como se ve una entrada de HuggingFace con pipeline no disponible, licencia no disponible y cero descargas.
+- Documentacion de metadatos: sirve para ilustrar como se ve una entrada de Hugging Face con pipeline no disponible, licencia no disponible y cero descargas.
 - Integracion en pipelines: no es posible integrarlo en pipelines de inferencia porque no hay pesos ni tokenizador.
 - Fine-tuning: no aplicable al no existir checkpoint base.
 - Despliegue en produccion: no aplicable; no hay artefactos que cargar en vLLM, llama.cpp, Ollama ni TGI.
@@ -74,6 +74,6 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/User-Android/Lieq
+- Repositorio Hugging Face: https://huggingface.co/User-Android/Lieq
 - Perfil del autor: https://huggingface.co/User-Android
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

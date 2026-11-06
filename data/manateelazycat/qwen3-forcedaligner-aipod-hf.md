@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-ForcedAligner-AIPod-HF | no disponible | no disponible | Alineamiento forzado audio-texto empaquetado para AI Pod | component-specific-licenses (modelo Apache-2.0) | Repositorio HuggingFace, 0 descargas, etapa de desarrollo |
+| Qwen3-ForcedAligner-AIPod-HF | no disponible | no disponible | Alineamiento forzado audio-texto empaquetado para AI Pod | component-specific-licenses (modelo Apache-2.0) | Repositorio Hugging Face, 0 descargas, etapa de desarrollo |
 | Alternativas de alineamiento forzado (por ejemplo, herramientas tipo Montreal Forced Aligner o wav2vec2-based aligners) | no disponible en esta ficha | no disponible en esta ficha | Alineamiento forzado audio-texto | variable según herramienta | no disponible en esta ficha |
 
 No se dispone de datos verificados de parámetros, contexto ni rendimiento de alternativas concretas en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable.
@@ -79,5 +79,5 @@ No se dispone de datos verificados de parámetros, contexto ni rendimiento de al
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/manateelazycat/Qwen3-ForcedAligner-AIPod-HF
+- Repositorio en Hugging Face: https://huggingface.co/manateelazycat/Qwen3-ForcedAligner-AIPod-HF
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

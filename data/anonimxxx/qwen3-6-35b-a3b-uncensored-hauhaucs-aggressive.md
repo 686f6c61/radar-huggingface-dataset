@@ -76,9 +76,9 @@ Otras variantes encontradas en la busqueda web, como `HauhauCS/Qwen3.6-35B-A3B-U
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonimXxx/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
+- Modelo en Hugging Face: https://huggingface.co/AnonimXxx/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Blog de Qwen3-Coder-Next: https://qwen.ai/blog?id=qwen3-coder-next
 - Repositorio de Qwen3-Coder: https://github.com/QwenLM/Qwen3-Coder
 - Documentacion de Qwen: https://qwen.readthedocs.io/en/latest/
-- Variante similar en HuggingFace: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
+- Variante similar en Hugging Face: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Version GGUF de una variante similar: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF

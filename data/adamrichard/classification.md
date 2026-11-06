@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`adamrichard/classification` es un repositorio experimental de HuggingFace que contiene una implementación propia en PyTorch de una arquitectura híbrida ("Hybrid") orientada a tareas de clasificación. No se trata de un modelo preentrenado ni de una release lista para producción: el propio autor lo describe como una configuración "small" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. El checkpoint incluido es una inicialización válida, no un modelo entrenado.
+`adamrichard/classification` es un repositorio experimental de Hugging Face que contiene una implementación propia en PyTorch de una arquitectura híbrida ("Hybrid") orientada a tareas de clasificación. No se trata de un modelo preentrenado ni de una release lista para producción: el propio autor lo describe como una configuración "small" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. El checkpoint incluido es una inicialización válida, no un modelo entrenado.
 
 El modelo es extremadamente pequeño: 33.088 parámetros totales según el fichero `model.safetensors`. Esto lo sitúa tres o cuatro órdenes de magnitud por debajo de cualquier LLM actual y lo aleja por completo del caso de uso de generación de texto. La arquitectura combina atención con implementación flash, fusión bilinear, activación swish y normalización GroupNorm, con receta de entrenamiento por defecto basada en el optimizador Lion y un schedule de warmup constante.
 
@@ -24,7 +24,7 @@ Su relevancia es, por tanto, docente y de ingeniería: sirve como esqueleto repr
 | Optimizador por defecto | Lion, schedule de warmup constante |
 | Tokenizador incluido | No disponible en los ficheros listados |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación | 2026-10-19 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-10-19 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -90,5 +90,5 @@ Como referencia de escala, conviene subrayar que este modelo es entre cinco y si
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adamrichard/classification
+- Repositorio en Hugging Face: https://huggingface.co/adamrichard/classification
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (paper, blog, repositorio de código o demo). Los resultados devueltos por la búsqueda no guardan relación con este repositorio y se descartan.

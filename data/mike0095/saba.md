@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mike0095/saba es un adaptador LoRA (Low-Rank Adaptation) para el modelo de difusión Krea 2, desarrollado por el usuario Mike0095 y publicado en HuggingFace. Se trata de un ajuste fino de tipo DreamBooth que permite generar imágenes de un concepto específico invocable mediante el token `sabaxxx woman`. El adaptador se entrenó sobre el checkpoint Krea 2 RAW y se muestra sobre Krea 2 Turbo, lo que permite generar resultados con solo 8 pasos de inferencia.
+Mike0095/saba es un adaptador LoRA (Low-Rank Adaptation) para el modelo de difusión Krea 2, desarrollado por el usuario Mike0095 y publicado en Hugging Face. Se trata de un ajuste fino de tipo DreamBooth que permite generar imágenes de un concepto específico invocable mediante el token `sabaxxx woman`. El adaptador se entrenó sobre el checkpoint Krea 2 RAW y se muestra sobre Krea 2 Turbo, lo que permite generar resultados con solo 8 pasos de inferencia.
 
 Este LoRA resuelve el problema de personalización de modelos de texto a imagen: en lugar de reentrenar un modelo completo, se añade un conjunto de pesos de bajo rango que condiciona la generación hacia un estilo o sujeto concreto. Su relevancia radica en que Krea 2 es un modelo de difusión reciente y este adaptador amplía su capacidad creativa sin necesidad de ajustar todos los parámetros. El repositorio ocupa 1.0 GB e incluye ejemplos de generación en estilos variados, desde cinematográfico hasta pintura al óleo.
 
@@ -32,7 +32,7 @@ No se proporcionan detalles sobre el dataset de entrenamiento, el numero de paso
 - Generacion de imagenes texto a imagen: el adaptador condiciona la salida hacia el concepto `sabaxxx woman`, permitiendo representaciones de ese sujeto en multiples estilos (cinematografico, pintura, macrofotografia, etc.).
 - Personalizacion de estilo: al ser un LoRA, se puede combinar con otros adaptadores o con el modelo base para variar la estetica.
 - Compatibilidad con Krea 2 Turbo: genera resultados en 8 pasos, lo que reduce el coste computacional frente a los 30-50 pasos tipicos de otros modelos de difusion.
-- Integracion con diffusers: se carga mediante la API estandar de HuggingFace, facilitando su uso en pipelines existentes.
+- Integracion con diffusers: se carga mediante la API estandar de Hugging Face, facilitando su uso en pipelines existentes.
 - No incluye capacidades de vision, audio, tool calling ni agentes, ya que es exclusivamente un adaptador de generacion de imagenes.
 
 ## Casos de uso
@@ -53,12 +53,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: no disponible, pero al ser un LoRA sobre Krea 2, el requisito principal es el del modelo base. Krea 2 es un modelo de difusion de tamano medio; se recomienda al menos 8 GB de VRAM para generar a resoluciones bajas y 16 GB o mas para resoluciones altas con bfloat16.
 - GPU recomendadas: cualquier GPU con soporte para bfloat16 y suficiente VRAM, como RTX 3090, RTX 4090, A100 o H100. El ejemplo usa CUDA.
 - Compatibilidad con GPU de consumo: si, una RTX 3060 de 12 GB o superior puede ejecutar el adaptador, aunque la velocidad dependera del modelo base.
-- Opciones de despliegue: el ejemplo usa diffusers con PyTorch. Tambien se puede integrar en pipelines de HuggingFace, o exportar a otros formatos si el modelo base lo soporta. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, ya que son herramientas para modelos de lenguaje, no para difusion.
+- Opciones de despliegue: el ejemplo usa diffusers con PyTorch. Tambien se puede integrar en pipelines de Hugging Face, o exportar a otros formatos si el modelo base lo soporta. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, ya que son herramientas para modelos de lenguaje, no para difusion.
 - Latencia y throughput: no disponibles. Con 8 pasos en Turbo, se espera una generacion en pocos segundos en una GPU moderna, pero no hay datos publicados.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre otros LoRAs de Krea 2 publicados en HuggingFace para comparar directamente. Como referencia, se puede comparar con adaptadores de otros modelos de difusion como SDXL o Flux, pero las diferencias en arquitectura y entrenamiento hacen la comparacion poco significativa. La alternativa mas cercana seria usar el modelo base Krea 2 sin el LoRA, o entrenar un adaptador propio con DreamBooth. No hay datos de rendimiento relativo.
+No se dispone de informacion sobre otros LoRAs de Krea 2 publicados en Hugging Face para comparar directamente. Como referencia, se puede comparar con adaptadores de otros modelos de difusion como SDXL o Flux, pero las diferencias en arquitectura y entrenamiento hacen la comparacion poco significativa. La alternativa mas cercana seria usar el modelo base Krea 2 sin el LoRA, o entrenar un adaptador propio con DreamBooth. No hay datos de rendimiento relativo.
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No se dispone de informacion sobre otros LoRAs de Krea 2 publicados en HuggingFa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mike0095/saba
+- Repositorio Hugging Face: https://huggingface.co/Mike0095/saba
 - Modelo base Krea 2 RAW: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Krea 2 Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de diffusers para LoRA: https://huggingface.co/docs/diffusers/en/using-diffusers/loading_adapters

@@ -58,11 +58,11 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 - La calidad de la conversación en swahili depende de la cobertura del dataset de entrenamiento; puede haber variaciones en dialectos, acentos y temas poco representados.
 - No se han realizado evaluaciones de seguridad o sesgo específicas para este fine-tuning.
 - La licencia CC-BY-4.0 permite uso comercial, pero requiere atribución y no impone restricciones de copyleft; sin embargo, se debe verificar el cumplimiento de la licencia del modelo base (Moshika) que podría tener condiciones adicionales.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es muy reciente y no ha sido ampliamente probado.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es muy reciente y no ha sido ampliamente probado.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/rlabz/quantum-s2s)
+- [Modelo en Hugging Face](https://huggingface.co/rlabz/quantum-s2s)
 - [Dataset de entrenamiento rlabz/mwanamke_moshi](https://huggingface.co/datasets/rlabz/mwanamke_moshi)
 - [Modelo base Moshika](https://huggingface.co/kyutai/moshika-pytorch-bf16)
 - [Repositorio moshi-finetune](https://github.com/kyutai-labs/moshi-finetune)

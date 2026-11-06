@@ -1,7 +1,7 @@
 # asfadfws/MyAwesomeModel-TestRepository
 
 ## Resumen
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario asfadfws bajo el identificador `asfadfws/MyAwesomeModel-TestRepository`. La información disponible es contradictoria: los metadatos de HuggingFace lo etiquetan como un modelo basado en BERT, orientado a `feature-extraction` y compatible con la librería `transformers`, mientras que la model card describe un asistente conversacional con modo de razonamiento, soporte de function calling y resultados en pruebas de matemáticas y programación. El repositorio ocupa 0,0 GB, no tiene descargas ni "likes", y el nombre del repositorio ("TestRepository") junto con los nombres anonimizados de los benchmarks (Model1, Model2) sugieren que se trata de un repositorio de prueba o de una plantilla, no de un modelo desplegable.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario asfadfws bajo el identificador `asfadfws/MyAwesomeModel-TestRepository`. La información disponible es contradictoria: los metadatos de Hugging Face lo etiquetan como un modelo basado en BERT, orientado a `feature-extraction` y compatible con la librería `transformers`, mientras que la model card describe un asistente conversacional con modo de razonamiento, soporte de function calling y resultados en pruebas de matemáticas y programación. El repositorio ocupa 0,0 GB, no tiene descargas ni "likes", y el nombre del repositorio ("TestRepository") junto con los nombres anonimizados de los benchmarks (Model1, Model2) sugieren que se trata de un repositorio de prueba o de una plantilla, no de un modelo desplegable.
 
 No se dispone de datos verificables sobre arquitectura real, número de parámetros, longitud de contexto, tokenizador ni composición del dataset de entrenamiento. La model card incluye afirmaciones de rendimiento (por ejemplo, una mejora en AIME 2025 del 70 % al 87,5 % y un aumento del consumo medio de tokens por pregunta de 12K a 23K), pero no especifica qué modelo es el "anterior", qué métrica exacta se reporta ni sobre qué conjunto de evaluación se ha medido, y no hay pesos publicados que permitan reproducirlas.
 
@@ -11,7 +11,7 @@ Por tanto, esta ficha documenta lo que el autor declara y marca explícitamente 
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible de forma fiable. Etiquetas de HuggingFace: `bert`, `transformers`, `pytorch`; la model card describe un modelo generativo con razonamiento, lo que no es coherente con BERT |
+| Arquitectura | No disponible de forma fiable. Etiquetas de Hugging Face: `bert`, `transformers`, `pytorch`; la model card describe un modelo generativo con razonamiento, lo que no es coherente con BERT |
 | Parámetros totales | No disponible |
 | Parámetros activos | No disponible (no se indica que sea MoE) |
 | Longitud de contexto | No disponible |
@@ -95,11 +95,11 @@ No hay resultados de MMLU, HumanEval, GSM8K ni de ningún otro benchmark estánd
 - requisitos de disco: el repositorio descargable ocupa 0,0 GB.
 
 ## Comparativa con modelos similares
-No disponible. Para establecer una comparativa haría falta conocer el tamaño del modelo, la longitud de contexto y la licencia de uso de los pesos, y ninguno de esos datos está publicado. Los modelos de referencia de la propia tabla de evaluación (Model1, Model2, Model1-v2) están anonimizados, por lo que no pueden mapearse a alternativas reales de la misma categoría. La única comparación posible es nominal: frente a otros repositorios de HuggingFace con licencia MIT, este se distingue por tener 0 descargas, 0 likes y ningún artefacto de pesos.
+No disponible. Para establecer una comparativa haría falta conocer el tamaño del modelo, la longitud de contexto y la licencia de uso de los pesos, y ninguno de esos datos está publicado. Los modelos de referencia de la propia tabla de evaluación (Model1, Model2, Model1-v2) están anonimizados, por lo que no pueden mapearse a alternativas reales de la misma categoría. La única comparación posible es nominal: frente a otros repositorios de Hugging Face con licencia MIT, este se distingue por tener 0 descargas, 0 likes y ningún artefacto de pesos.
 
 ## Limitaciones y advertencias
 - Repositorio vacío: 0,0 GB de contenido. Sin pesos no hay inferencia posible; cualquier caso de uso listado arriba es hipotético.
-- Incoherencia de etiquetado: HuggingFace lo clasifica como `bert` + `feature-extraction`, mientras que la model card describe un modelo generativo conversacional con razonamiento. Una de las dos fuentes es errónea.
+- Incoherencia de etiquetado: Hugging Face lo clasifica como `bert` + `feature-extraction`, mientras que la model card describe un modelo generativo conversacional con razonamiento. Una de las dos fuentes es errónea.
 - Nombre y señales de plantilla: el identificador del repositorio ("MyAwesomeModel-TestRepository"), el nombre genérico del modelo y la anonimización de los benchmarks (Model1, Model2) indican un repositorio de prueba o una plantilla reutilizada de otro proyecto.
 - Referencias a recursos inexistentes: la model card enlaza imágenes (`fig1.png`, `fig2.png`, `fig3.png`), un fichero `LICENSE` y un "repositorio de código" para ejecución local que no se identifican ni se pueden verificar.
 - Fechas inconsistentes: los metadatos indican creación el 2026-09-11, fecha posterior a la actual, y una actualización 6 segundos después. La model card menciona AIME 2025 y una fecha de ejemplo del 28 de mayo de 2025.
@@ -111,7 +111,7 @@ No disponible. Para establecer una comparativa haría falta conocer el tamaño d
 - Búsqueda web sin resultados relevantes: los enlaces devueltos por la búsqueda corresponden a un hotel de wellness en Suiza y no guardan relación con el modelo, por lo que no hay prensa, paper ni repositorio externo que lo respalde.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/asfadfws/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/asfadfws/MyAwesomeModel-TestRepository
 - Paper: no disponible.
 - Repositorio de código: no disponible (la model card lo menciona sin enlazarlo).
 - Demo o plataforma de chat/API: no disponible (la model card menciona una "official website" sin enlace).

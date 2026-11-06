@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros (cabeza/alcance) | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MedMLX/sam3-interactive | 4.221.841 (solo cabeza interactiva) | No aplica | safetensors MLX | SAM License | HuggingFace, 0 descargas |
-| facebook/sam3 (original) | No disponible en la informacion | No aplica | Pesos PyTorch (`sam3.pt`) | SAM License | HuggingFace |
-| mlx-community/sam3-image | No disponible en la informacion | No aplica | MLX | No disponible en la informacion | HuggingFace |
+| MedMLX/sam3-interactive | 4.221.841 (solo cabeza interactiva) | No aplica | safetensors MLX | SAM License | Hugging Face, 0 descargas |
+| facebook/sam3 (original) | No disponible en la informacion | No aplica | Pesos PyTorch (`sam3.pt`) | SAM License | Hugging Face |
+| mlx-community/sam3-image | No disponible en la informacion | No aplica | MLX | No disponible en la informacion | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes; la única referencia es la equivalencia numérica documentada frente a PyTorch SAM 3.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes; la úni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MedMLX/sam3-interactive
+- Hugging Face: https://huggingface.co/MedMLX/sam3-interactive
 - Pesos de imagen complementarios: https://huggingface.co/mlx-community/sam3-image
 - Modelo base: https://huggingface.co/facebook/sam3
 - Repositorio SAM 3 de Meta: https://github.com/facebookresearch/sam3

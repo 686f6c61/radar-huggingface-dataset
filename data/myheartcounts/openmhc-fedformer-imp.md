@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: no disponible en la información proporcionada. Con 2 capas, `d_model=512` y ventanas de 1440×19, el modelo es de tamaño moderado, pero no se ofrecen cifras oficiales de memoria.
-- GPU recomendadas: no disponible. Por el tamaño del checkpoint (repo de 0.0 GB según HuggingFace) y la configuración de 2 capas, es plausible que quepa en GPU de consumo, pero no se confirma en la documentación.
+- GPU recomendadas: no disponible. Por el tamaño del checkpoint (repo de 0.0 GB según Hugging Face) y la configuración de 2 capas, es plausible que quepa en GPU de consumo, pero no se confirma en la documentación.
 - ¿Cabe en GPU de consumo? No confirmado oficialmente; el tamaño reducido del repo sugiere que sí, pero debe verificarse empíricamente.
 - Opciones de despliegue: la vía documentada es la librería `openmhc` con los extras `openmhc[pypots,hf]`, cargando el checkpoint con `FEDformerImputer.from_release("hf://MyHeartCounts/openmhc-fedformer-imp")`. No se documentan opciones como vLLM, llama.cpp, Ollama o TGI (no aplicables a este tipo de modelo).
 - Latencia y throughput: no disponibles.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MyHeartCounts/openmhc-fedformer-imp
+- Modelo en Hugging Face: https://huggingface.co/MyHeartCounts/openmhc-fedformer-imp
 - Repositorio OpenMHC: https://github.com/AshleyLab/OpenMHC
 - PyPOTS: https://github.com/WenjieDu/PyPOTS
 - Licencia BigScience OpenRAIL-M: incluida en el repositorio del modelo (`LICENSE`)

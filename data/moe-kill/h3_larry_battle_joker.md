@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: no disponible. No se documenta el tamaño del modelo base ni la memoria necesaria para ejecutarlo junto con el adaptador.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible.
-- Opciones de despliegue: no disponible. La librería declarada en HuggingFace es «minimax-h3», pero no se especifican frameworks compatibles (Diffusers, ComfyUI, etc.).
+- Opciones de despliegue: no disponible. La librería declarada en Hugging Face es «minimax-h3», pero no se especifican frameworks compatibles (Diffusers, ComfyUI, etc.).
 - Latencia y throughput estimados: no disponible.
 - Nota: el repositorio del adaptador ocupa 1,1 GB, un tamaño propio de un LoRA, no de un modelo completo; a esa cifra habría que sumar la del modelo base MiniMax-H3, cuyo peso no se indica.
 
@@ -87,7 +87,7 @@ No se dispone de datos cuantitativos para comparar el rendimiento de este adapta
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/moe-kill/H3_Larry_Battle_JOKER
+- Repositorio Hugging Face del modelo: https://huggingface.co/moe-kill/H3_Larry_Battle_JOKER
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Larry Turbo LoRA (larryvrh): referencia citada en la model card, sin URL disponible
 - JOKER141 Combat Base V2 (JOKER141): referencia citada en la model card, sin URL disponible

@@ -85,12 +85,12 @@ No es posible comparar el rendimiento en tareas de benchmark porque este fine-tu
 - Contexto no confirmado: aunque el modelo base admite 128.000 tokens, el ajuste fino y la plantilla de chat pueden reducir la ventana efectiva; no hay datos al respecto.
 - Solo se publica F16: no hay cuantizaciones ligeras, lo que excluye GPUs de consumo de gama media sin trabajo adicional de conversion.
 - Repositorio sin traccion: 0 descargas y 0 likes implican ausencia de validacion por parte de la comunidad y de informes de errores.
-- Fechas de creacion y actualizacion poco habituales (septiembre de 2026) en los metadatos del repositorio; conviene verificarlas en la propia pagina de HuggingFace.
+- Fechas de creacion y actualizacion poco habituales (septiembre de 2026) en los metadatos del repositorio; conviene verificarlas en la propia pagina de Hugging Face.
 - El ajuste fino puede haber degradado capacidades del modelo base como el tool calling o el seguimiento estricto de instrucciones; no hay informacion que lo confirme o lo descarte.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohamadbarmo/law_questions_and_answers
+- Modelo en Hugging Face: https://huggingface.co/mohamadbarmo/law_questions_and_answers
 - Archivo GGUF: https://huggingface.co/mohamadbarmo/law_questions_and_answers/blob/main/meta-llama-3.1-8b.F16.gguf
 - Unsloth (herramienta de ajuste fino y conversion): https://github.com/unslothai/unsloth
 - llama.cpp (runtime recomendado en la model card): https://github.com/ggml-org/llama.cpp

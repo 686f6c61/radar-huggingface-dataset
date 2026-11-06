@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks especificos para este modelo fine-t
 - VRAM estimada para inferencia: con 110M parametros, el modelo requiere aproximadamente 440 MB en FP32, 220 MB en FP16 y 110 MB en int8. Cabe en cualquier GPU moderna con al menos 2 GB de VRAM.
 - GPU recomendadas: cualquier GPU consumer (NVIDIA GTX 1060 o superior, RTX 3060, etc.) es suficiente. Tambien puede ejecutarse en CPU con razonable velocidad.
 - Compatibilidad con consumer GPU: si, es un modelo pequeno que se ejecuta sin problemas en hardware de gama media.
-- Opciones de despliegue: se puede utilizar con la libreria transformers de HuggingFace, o mediante servidores de inferencia como TGI (Text Generation Inference) o vLLM, aunque al ser un modelo T5, la integracion con estas herramientas puede requerir configuracion adicional.
+- Opciones de despliegue: se puede utilizar con la libreria transformers de Hugging Face, o mediante servidores de inferencia como TGI (Text Generation Inference) o vLLM, aunque al ser un modelo T5, la integracion con estas herramientas puede requerir configuracion adicional.
 - Latencia y throughput: no se dispone de datos medidos, pero al ser un modelo de 110M parametros, la inferencia es rapida (del orden de decenas de milisegundos por ejemplo en GPU).
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No se dispone de informacion sobre modelos comparables especificos para la gener
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/giovannimaffeo/ptt5-v2-small-portuguese-legal-descriptor-generation
+- Modelo en Hugging Face: https://huggingface.co/giovannimaffeo/ptt5-v2-small-portuguese-legal-descriptor-generation
 - Dataset de entrenamiento: https://huggingface.co/datasets/giovannimaffeo/portuguese-legal-descriptor-generation
 - Articulo ptt5-v2 (arXiv): https://arxiv.org/abs/2406.10806v2
 - Version HTML del articulo: https://arxiv.org/html/2406.10806v1

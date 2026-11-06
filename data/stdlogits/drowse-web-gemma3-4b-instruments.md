@@ -84,7 +84,7 @@ La comparacion con alternativas de la misma categoria (bundles web de 4B para We
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/stdlogits/drowse-web-gemma3-4b-instruments
+- Repositorio Hugging Face: https://huggingface.co/stdlogits/drowse-web-gemma3-4b-instruments
 - Artefacto fuente: https://huggingface.co/puppyum/polythetic-web-gemma3-4b-instruments/tree/cd27c6e46e591d73c46b9f80c5435e1ed9d04e2f
 - Licencias por componente: https://huggingface.co/logitsml/drowse-web-gemma3-4b-instruments/blob/main/LICENSES.md
 - Procedencia y hashes: `UPLOAD-PROVENANCE.json` en el repositorio

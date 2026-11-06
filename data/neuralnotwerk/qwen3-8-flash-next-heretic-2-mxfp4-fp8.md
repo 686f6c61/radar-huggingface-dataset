@@ -18,7 +18,7 @@ Su relevancia es doble: por un lado ofrece una variante sin censura (0/100 recha
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | MXFP4 (OCP e2m1, escalas e8m0 grupo-32) en expertos; FP8 en proyecciones de atención y escalas KV-cache; int6 con escalas fp16 grupo-32 en tabla PLE; BF16 en torre de visión, normas, embeddings, lm_head y MTP |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (24 archivos, compressed-tensors, 8-bit) |
 
 ## Arquitectura y entrenamiento
@@ -85,7 +85,7 @@ La diferencia principal frente a tcclaviger es la fuente BF16 (heretic-2 decensu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NeuralNotwerk/Qwen3.8-Flash-Next-heretic-2-MXFP4-FP8
+- Hugging Face: https://huggingface.co/NeuralNotwerk/Qwen3.8-Flash-Next-heretic-2-MXFP4-FP8
 - Modelo base BF16: https://huggingface.co/trohrbaugh/Qwen3.8-Flash-Next-heretic-2
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Checkpoint de referencia: https://huggingface.co/tcclaviger/Qwen3.8-Flash-Next-MXFP4-FP8-GPTQ

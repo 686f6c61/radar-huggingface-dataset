@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo de lenguaje, sino un proyecto completo de agente de inteligencia artificial para el desafío de batalla de Pokémon TCG que organiza Kaggle y The Pokémon Company. El objetivo es construir un agente capaz de analizar el estado de una partida del juego de cartas y seleccionar acciones efectivas en cada turno, adaptándose a situaciones cambiantes en lugar de seguir una estrategia fija. El proyecto lo desarrolla el usuario Qamro y se publica en HuggingFace como un paquete de código Python con módulos para representación del estado, enumeración de acciones legales, evaluación heurística, generación de datos sintéticos mediante auto-juego y un modelo de aprendizaje automático de referencia.
+Este repositorio no contiene un modelo de lenguaje, sino un proyecto completo de agente de inteligencia artificial para el desafío de batalla de Pokémon TCG que organiza Kaggle y The Pokémon Company. El objetivo es construir un agente capaz de analizar el estado de una partida del juego de cartas y seleccionar acciones efectivas en cada turno, adaptándose a situaciones cambiantes en lugar de seguir una estrategia fija. El proyecto lo desarrolla el usuario Qamro y se publica en Hugging Face como un paquete de código Python con módulos para representación del estado, enumeración de acciones legales, evaluación heurística, generación de datos sintéticos mediante auto-juego y un modelo de aprendizaje automático de referencia.
 
 La arquitectura combina un evaluador heurístico ponderado que puntúa cada acción candidata (daño, ko, desarrollo de recursos, posición del tablero, riesgo) con un modelo supervisado de Gradient Boosting que aprende a predecir el valor de una acción a partir de características numéricas. El modelo se entrena sobre un dataset sintético de unas 6.000–7.000 filas generado por un simulador de auto-juego simplificado. Aunque no es un modelo de lenguaje ni un sistema de visión, representa una aproximación práctica al problema de decisión estratégica en juegos de cartas coleccionables, con un pipeline claro para sustituir el simulador simplificado por el motor real de la competición.
 
@@ -71,9 +71,9 @@ No se dispone de informacion sobre otros agentes publicados para el desafio de P
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Qamro/Strategic-AI-for-Pokemon-TCG-Battle-Decision-Making
+- Repositorio en Hugging Face: https://huggingface.co/Qamro/Strategic-AI-for-Pokemon-TCG-Battle-Decision-Making
 - Repositorio en GitHub: https://github.com/qamro/pokemon-tcg-ai-battle
 - Competicion de Kaggle (descripcion): https://www.kaggle.com/competitions/pokemon-tcg-ai-battle/overview
 - Competicion de Kaggle (pagina principal): https://www.kaggle.com/competitions/pokemon-tcg-ai-battle
 - Estrategia de la competicion en CompeteHub: https://www.competehub.dev/en/competitions/kagglepokemon-tcg-ai-battle-challenge-strategy
-- Dataset asociado en HuggingFace: https://huggingface.co/datasets/Qamro/the-Pokemon-Trading-Card-Game-Battle-Challenge-DataSet
+- Dataset asociado en Hugging Face: https://huggingface.co/datasets/Qamro/the-Pokemon-Trading-Card-Game-Battle-Challenge-DataSet

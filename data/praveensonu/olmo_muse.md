@@ -2,9 +2,9 @@
 
 ## Resumen
 
-olmo_muse es un adaptador LoRA publicado en HuggingFace por el usuario praveensonu bajo el identificador `praveensonu/olmo_muse`. Se trata de un fine-tuning de tipo PEFT (Parameter-Efficient Fine-Tuning) construido sobre el modelo base `allenai/OLMo-2-0425-1B-Instruct`, el modelo instructivo de 1B parámetros de la familia OLMo 2 desarrollada por el Allen Institute for AI (Ai2). El repositorio declara la librería `peft`, el pipeline `text-generation` y pesos en formato safetensors, lo que indica que contiene únicamente los pesos del adaptador y no una copia completa del modelo base.
+olmo_muse es un adaptador LoRA publicado en Hugging Face por el usuario praveensonu bajo el identificador `praveensonu/olmo_muse`. Se trata de un fine-tuning de tipo PEFT (Parameter-Efficient Fine-Tuning) construido sobre el modelo base `allenai/OLMo-2-0425-1B-Instruct`, el modelo instructivo de 1B parámetros de la familia OLMo 2 desarrollada por el Allen Institute for AI (Ai2). El repositorio declara la librería `peft`, el pipeline `text-generation` y pesos en formato safetensors, lo que indica que contiene únicamente los pesos del adaptador y no una copia completa del modelo base.
 
-El interés de esta ficha es limitado pero ilustrativo: muestra el flujo habitual de adaptación ligera de un modelo abierto pequeño para tareas conversacionales, con un coste de entrenamiento y almacenamiento muy reducido. Sin embargo, la información publicada es prácticamente inexistente. La model card es la plantilla por defecto de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]", no se declara licencia ni idiomas, el repositorio ocupa 0.0 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
+El interés de esta ficha es limitado pero ilustrativo: muestra el flujo habitual de adaptación ligera de un modelo abierto pequeño para tareas conversacionales, con un coste de entrenamiento y almacenamiento muy reducido. Sin embargo, la información publicada es prácticamente inexistente. La model card es la plantilla por defecto de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]", no se declara licencia ni idiomas, el repositorio ocupa 0.0 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 Por tanto, esta ficha debe leerse como un análisis de un artefacto en estado embrionario o incompleto: se puede describir con rigor qué es y sobre qué se apoya, pero no se pueden verificar capacidades, calidad, datos de entrenamiento ni condiciones de uso. Cualquier evaluación práctica exige descargar el adaptador y probarlo contra el modelo base.
 
@@ -30,7 +30,7 @@ Por tanto, esta ficha debe leerse como un análisis de un artefacto en estado em
 
 La unica informacion tecnica verificable es que se trata de un adaptador LoRA entrenado con la libreria PEFT y guardado en safetensors, con el tag `lora` y `base_model:adapter:allenai/OLMo-2-0425-1B-Instruct`. Esto implica que el artefacto contiene matrices de bajo rango que se deben cargar sobre el modelo base, no un modelo autonomo. No se especifica el rango (r), el valor de alpha, el dropout, los modulos objetivo (por ejemplo q_proj, v_proj o todas las proyecciones) ni la tasa de aprendizaje empleada.
 
-Tampoco hay informacion sobre el procedimiento de entrenamiento: no se indica el dataset utilizado, el numero de tokens de entrenamiento, la composicion de los datos, si hubo etapas de RLHF, DPO o SFT supervisado, ni los hiperparametros (precision, batch size, epocas). El unico dato de infraestructura es la version de PEFT (0.19.1) registrada en la model card. El tag `arxiv:1910.09700` que aparece en los metadatos del repositorio corresponde al articulo del calculador de impacto de carbono (Lacoste et al., 2019) que HuggingFace incluye en la plantilla por defecto, no a un paper de este modelo.
+Tampoco hay informacion sobre el procedimiento de entrenamiento: no se indica el dataset utilizado, el numero de tokens de entrenamiento, la composicion de los datos, si hubo etapas de RLHF, DPO o SFT supervisado, ni los hiperparametros (precision, batch size, epocas). El unico dato de infraestructura es la version de PEFT (0.19.1) registrada en la model card. El tag `arxiv:1910.09700` que aparece en los metadatos del repositorio corresponde al articulo del calculador de impacto de carbono (Lacoste et al., 2019) que Hugging Face incluye en la plantilla por defecto, no a un paper de este modelo.
 
 ## Capacidades
 
@@ -78,7 +78,7 @@ No hay datos de rendimiento publicados para este adaptador, por lo que la compar
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | praveensonu/olmo_muse (este adaptador) | no disponible (~1B heredado del base) | no disponible | no disponible | Repositorio publico, 0 GB, 0 descargas | Pesos LoRA en safetensors; requiere el modelo base |
-| allenai/OLMo-2-0425-1B-Instruct (modelo base) | ~1B (segun denominacion; dato no confirmado en la informacion recibida) | no disponible en la informacion recibida | Consultar la ficha del modelo base en HuggingFace | Ampliamente disponible en HuggingFace | Modelo instructivo completo; sin adaptador adicional |
+| allenai/OLMo-2-0425-1B-Instruct (modelo base) | ~1B (segun denominacion; dato no confirmado en la informacion recibida) | no disponible en la informacion recibida | Consultar la ficha del modelo base en Hugging Face | Ampliamente disponible en Hugging Face | Modelo instructivo completo; sin adaptador adicional |
 | Otros modelos instructivos de ~1-2B (Qwen, Llama, Gemma en sus variantes pequenas) | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada para establecer una comparacion cuantitativa |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No hay datos de rendimiento publicados para este adaptador, por lo que la compar
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/praveensonu/olmo_muse
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/praveensonu/olmo_muse
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct
 - Paper de impacto de carbono citado en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ML: https://mlco2.github.io/impact

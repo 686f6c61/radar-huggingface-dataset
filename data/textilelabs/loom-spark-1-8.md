@@ -90,7 +90,7 @@ No se dispone de comparativas con otros modelos tiny de la misma categoria (por 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/textilelabs/Loom-Spark-1.8
+- Hugging Face: https://huggingface.co/textilelabs/Loom-Spark-1.8
 - Perfil de Textile Labs: https://huggingface.co/textilelabs
 - Loom Spark v1: https://huggingface.co/textilelabs/Loom-Spark
 - Loom Spark 1.5: https://huggingface.co/textilelabs/Loom-Spark-1.5

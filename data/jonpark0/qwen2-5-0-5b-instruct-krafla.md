@@ -82,9 +82,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Cuantizacion / formato | Licencia | Disponibilidad |
 |---|---|---:|---|---|---|
-| Qwen2.5-0.5B-Instruct-krafla (esta ficha) | 0,5B | 4096 | Q4_0, Q4_0 mixta, Q8_0 en `.mlb` (isa-lm) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-0.5B-Instruct (base) | 0,5B | 4096 (32K en la versión original de Qwen2.5) | safetensors en bf16/fp16 | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Conversiones GGUF de Qwen2.5-0.5B-Instruct para llama.cpp | 0,5B | 4096 | Q4_0, Q4_K_M, Q8_0, etc. en `.gguf` | Apache 2.0 | HuggingFace (múltiples repos de terceros) |
+| Qwen2.5-0.5B-Instruct-krafla (esta ficha) | 0,5B | 4096 | Q4_0, Q4_0 mixta, Q8_0 en `.mlb` (isa-lm) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-0.5B-Instruct (base) | 0,5B | 4096 (32K en la versión original de Qwen2.5) | safetensors en bf16/fp16 | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Conversiones GGUF de Qwen2.5-0.5B-Instruct para llama.cpp | 0,5B | 4096 | Q4_0, Q4_K_M, Q8_0, etc. en `.gguf` | Apache 2.0 | Hugging Face (múltiples repos de terceros) |
 
 La comparación cuantitativa de rendimiento entre esta conversión y las alternativas GGUF no está disponible en la información proporcionada; el repositorio de isa-lm remite a su propio documento de benchmarks frente a llama.cpp sin que se incluyan aquí las cifras.
 
@@ -102,7 +102,7 @@ La comparación cuantitativa de rendimiento entre esta conversión y las alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonpark0/Qwen2.5-0.5B-Instruct-krafla
+- Modelo en Hugging Face: https://huggingface.co/jonpark0/Qwen2.5-0.5B-Instruct-krafla
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio del runtime isa-lm: https://github.com/JonPark0/isa-lm
 - Releases de isa-lm: https://github.com/JonPark0/isa-lm/releases

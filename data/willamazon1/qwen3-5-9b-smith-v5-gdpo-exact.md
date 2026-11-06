@@ -82,8 +82,8 @@ La model card no incluye métricas de MMLU, HumanEval, GSM8K, MT-Bench ni de nin
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| willamazon1/Qwen3.5-9B-smith-v5-gdpo-exact | ~9B | No especificado (entrenamiento a 65536) | Sin benchmarks publicados | Apache 2.0 | HuggingFace, 92 checkpoints, 0 descargas |
-| Qwen/Qwen3.5-9B (modelo base) | ~9B | No disponible en la informacion proporcionada | No disponible | No indicada en la informacion proporcionada | HuggingFace, referenciado como `base_model` |
+| willamazon1/Qwen3.5-9B-smith-v5-gdpo-exact | ~9B | No especificado (entrenamiento a 65536) | Sin benchmarks publicados | Apache 2.0 | Hugging Face, 92 checkpoints, 0 descargas |
+| Qwen/Qwen3.5-9B (modelo base) | ~9B | No disponible en la informacion proporcionada | No disponible | No indicada en la informacion proporcionada | Hugging Face, referenciado como `base_model` |
 | Otras alternativas de ~9B con RL para agentes y tool use | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes en la informacion proporcionada para establecer una comparativa cuantitativa con modelos de la misma categoría distintos del propio modelo base.
@@ -104,7 +104,7 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/willamazon1/Qwen3.5-9B-smith-v5-gdpo-exact
+- Modelo en Hugging Face: https://huggingface.co/willamazon1/Qwen3.5-9B-smith-v5-gdpo-exact
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Herramienta de conversión slime (`tools/convert_torch_dist_to_hf.py`): https://github.com/THUDM/slime
 - Paper, blog o demo del autor: no disponible

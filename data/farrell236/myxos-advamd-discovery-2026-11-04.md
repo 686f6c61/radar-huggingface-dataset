@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`farrell236/myxos-advamd-discovery-2026-11-04` es un modelo de clasificación de imágenes publicado en HuggingFace por el usuario `farrell236`, orientado según sus etiquetas a la investigación agéntica (`agentic-research`) en oftalmología, específicamente a la degeneración macular asociada a la edad (AMD, por sus siglas en inglés). El repositorio tiene un tamaño de 3,7 GB, lo que sugiere pesos de un modelo visual de tamaño medio, aunque no se especifica la arquitectura exacta ni el número de parámetros.
+`farrell236/myxos-advamd-discovery-2026-11-04` es un modelo de clasificación de imágenes publicado en Hugging Face por el usuario `farrell236`, orientado según sus etiquetas a la investigación agéntica (`agentic-research`) en oftalmología, específicamente a la degeneración macular asociada a la edad (AMD, por sus siglas en inglés). El repositorio tiene un tamaño de 3,7 GB, lo que sugiere pesos de un modelo visual de tamaño medio, aunque no se especifica la arquitectura exacta ni el número de parámetros.
 
 La información pública disponible es muy limitada: no se declara licencia, no se listan idiomas soportados, no hay descargas ni interacciones, y el acceso está restringido (gated), requiriendo aceptar condiciones en la plataforma. El nombre del repositorio incluye la fecha `2026-11-04`, lo que apunta a un experimento o snapshot de un pipeline de descubrimiento automatizado más que a un modelo de propósito general.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha se limita a describir lo que puede inferirse de los metada
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo. La etiqueta `image-classification` en HuggingFace indica que la tarea principal es la clasificación de imágenes, y las etiquetas `ophthalmology` y `amd` sugieren que el dominio de aplicación es la imagen retiniana o de fondo de ojo para detección o estadificación de degeneración macular asociada a la edad. El tag `agentic-research` sugiere que el modelo forma parte de un pipeline de investigación automatizada, posiblemente generado o seleccionado por un agente, pero no se especifica el proceso.
+No se ha publicado información sobre la arquitectura del modelo. La etiqueta `image-classification` en Hugging Face indica que la tarea principal es la clasificación de imágenes, y las etiquetas `ophthalmology` y `amd` sugieren que el dominio de aplicación es la imagen retiniana o de fondo de ojo para detección o estadificación de degeneración macular asociada a la edad. El tag `agentic-research` sugiere que el modelo forma parte de un pipeline de investigación automatizada, posiblemente generado o seleccionado por un agente, pero no se especifica el proceso.
 
 No hay datos sobre el conjunto de entrenamiento (número de imágenes, procedencia, composición), ni sobre si se emplearon técnicas de aumento de datos, ajuste fino supervisado, RLHF o similares. Tampoco se documentan innovaciones técnicas como atención lineal, decodificación especulativa o destilación. Toda esta sección queda, por tanto, sin datos verificables.
 
@@ -62,7 +62,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el repositorio es gated; es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que limita su uso inmediato y su reproducibilidad.
+- **Acceso restringido**: el repositorio es gated; es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que limita su uso inmediato y su reproducibilidad.
 - **Licencia no especificada**: al no declararse licencia, no puede asumirse ningún derecho de uso comercial ni de redistribución. Cualquier uso en producción requiere contactar con el autor.
 - **Sin documentación de sesgos**: no se han publicado análisis de sesgos demográficos, de equipamiento o de procedencia de las imágenes, algo crítico en imagen médica.
 - **Riesgo de alucinación y falsos positivos/negativos**: en un clasificador médico, los errores de clasificación pueden tener consecuencias clínicas; no debe usarse como herramienta diagnóstica sin validación externa.
@@ -73,4 +73,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- [HuggingFace: farrell236/myxos-advamd-discovery-2026-11-04](https://huggingface.co/farrell236/myxos-advamd-discovery-2026-11-04)
+- [Hugging Face: farrell236/myxos-advamd-discovery-2026-11-04](https://huggingface.co/farrell236/myxos-advamd-discovery-2026-11-04)

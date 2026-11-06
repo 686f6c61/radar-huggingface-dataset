@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ú
 
 | Modelo | Parametros (readout) | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| action-repre-newtask14-n32-lvta-layerwise384-l36-head10k (este) | 111,9 M | no disponible | sin evaluación en bucle cerrado | Apache 2.0 | HuggingFace, 0 descargas |
-| action-repre-newtask33-lvta-v4-j14-h32-source30k | no disponible | no disponible | no disponible | no disponible | HuggingFace (usado como inicialización) |
+| action-repre-newtask14-n32-lvta-layerwise384-l36-head10k (este) | 111,9 M | no disponible | sin evaluación en bucle cerrado | Apache 2.0 | Hugging Face, 0 descargas |
+| action-repre-newtask33-lvta-v4-j14-h32-source30k | no disponible | no disponible | no disponible | no disponible | Hugging Face (usado como inicialización) |
 | Experto de acción Qwen3 histórico (28 capas) | no disponible | no disponible | no disponible | no disponible | referenciado en la model card, sin enlace directo |
 
 La comparativa con alternativas externas no está disponible: no se han identificado en la información proporcionada otros checkpoints de representación de acciones con arquitectura y datos comparables.
@@ -82,7 +82,7 @@ La comparativa con alternativas externas no está disponible: no se han identifi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/myendless/action-repre-newtask14-n32-lvta-layerwise384-l36-head10k-d4621225
+- Hugging Face: https://huggingface.co/myendless/action-repre-newtask14-n32-lvta-layerwise384-l36-head10k-d4621225
 - Checkpoint de inicialización del VLM: https://huggingface.co/myendless/action-repre-newtask33-lvta-v4-j14-h32-source30k-3d2c5a58 (revisión `180a85745d55ea6472f0fe3ddd69008a6f8620be`)
 - SHA256 del checkpoint: `d46212257f1240f02ba069e141ac328ecf9a10d7cb83aabb2a600d03ab3d286c`
 - Papers, blogs, repos y demos adicionales: no disponibles en la información proporcionada.

@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Base | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| akhaliq/Qwen-Image-2.1-Turbo-Character-Swap-LoRA | LoRA de sustitucion de personaje, rango 32, 2016 pasos | Qwen/Qwen-Image-2.1-Turbo (8 pasos) | other | Repositorio HuggingFace con 0 descargas y 0 likes; Space de demo publicado | Referencias de multiples vistas y robots mas debiles en v1 |
-| akatz-ai/MiniMax-H3-Character-Swap-LoRA | LoRA de sustitucion de personaje | MiniMax-H3 | no disponible | Repositorio HuggingFace | Receta de entrenamiento replicada por el adaptador de akhaliq |
-| Qwen/Qwen-Image-Edit-2511 | Modelo de edicion de imagen | no disponible | no disponible | Repositorio HuggingFace | Utilizado para sintetizar 220 de los tripletes de entrenamiento |
+| akhaliq/Qwen-Image-2.1-Turbo-Character-Swap-LoRA | LoRA de sustitucion de personaje, rango 32, 2016 pasos | Qwen/Qwen-Image-2.1-Turbo (8 pasos) | other | Repositorio Hugging Face con 0 descargas y 0 likes; Space de demo publicado | Referencias de multiples vistas y robots mas debiles en v1 |
+| akatz-ai/MiniMax-H3-Character-Swap-LoRA | LoRA de sustitucion de personaje | MiniMax-H3 | no disponible | Repositorio Hugging Face | Receta de entrenamiento replicada por el adaptador de akhaliq |
+| Qwen/Qwen-Image-Edit-2511 | Modelo de edicion de imagen | no disponible | no disponible | Repositorio Hugging Face | Utilizado para sintetizar 220 de los tripletes de entrenamiento |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada.
 
@@ -82,11 +82,11 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 - Idiomas: la unica instruccion documentada esta en ingles; no se garantiza el funcionamiento con prompts en castellano u otros idiomas.
 - Adopcion nula: 0 descargas y 0 likes, sin validacion por parte de la comunidad, lo que desaconseja su uso en produccion sin una evaluacion propia previa.
 - El dataset sintetico se genero con Qwen/Qwen-Image-Edit-2511, por lo que el adaptador puede heredar sesgos y artefactos de ese generador.
-- Fechas del repositorio (creado y actualizado el 2026-10-10) segun los metadatos de HuggingFace.
+- Fechas del repositorio (creado y actualizado el 2026-10-10) segun los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akhaliq/Qwen-Image-2.1-Turbo-Character-Swap-LoRA
+- Modelo en Hugging Face: https://huggingface.co/akhaliq/Qwen-Image-2.1-Turbo-Character-Swap-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Space de demostracion: https://huggingface.co/spaces/akhaliq/qwen-image-21-turbo-character-swap
 - Dataset de entrenamiento: https://huggingface.co/datasets/akhaliq/qwen-21-turbo-character-swap-v1

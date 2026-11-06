@@ -46,7 +46,7 @@ El modelo fue entrenado sobre SemanticKITTI, un dataset que contiene secuencias 
 
 ## Benchmarks y rendimiento
 
-El modelo reporta un mIoU (mean Intersection over Union) de 61,59 en el conjunto de validación de SemanticKITTI (secuencia 08), según el model-index de HuggingFace. El valor de referencia del paper original es 61,4, por lo que el checkpoint es ligeramente superior. No se dispone de otros benchmarks (por ejemplo, precisión por clase o comparativas con otros modelos) en la información proporcionada.
+El modelo reporta un mIoU (mean Intersection over Union) de 61,59 en el conjunto de validación de SemanticKITTI (secuencia 08), según el model-index de Hugging Face. El valor de referencia del paper original es 61,4, por lo que el checkpoint es ligeramente superior. No se dispone de otros benchmarks (por ejemplo, precisión por clase o comparativas con otros modelos) en la información proporcionada.
 
 | Dataset | Metrica | Valor |
 |---|---|---|
@@ -81,7 +81,7 @@ No se dispone de datos comparativos directos en la información proporcionada. E
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/spvcnn-47gmacs.semantickitti.mit-han-lab
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/spvcnn-47gmacs.semantickitti.mit-han-lab
 - Paper original (SPVNAS): https://arxiv.org/abs/2007.16100
 - Repositorio SPVNAS (MIT Han Lab): https://github.com/mit-han-lab/spvnas
 - Librería torch-pointcloud (GitHub): https://github.com/arthurdjn/pytorch-pointcloud

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`revanth11/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v2. Lo publica el usuario revanth11 en HuggingFace como parte del Deep RL Course de Hugging Face, un curso introductorio en el que los participantes entrenan agentes y los suben al Hub. No es un modelo de lenguaje: es una politica de control que aprende a aterrizar un modulo lunar sobre una plataforma, recibiendo recompensa por aproximarse, posarse suavemente y no estrellarse.
+`revanth11/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v2. Lo publica el usuario revanth11 en Hugging Face como parte del Deep RL Course de Hugging Face, un curso introductorio en el que los participantes entrenan agentes y los suben al Hub. No es un modelo de lenguaje: es una politica de control que aprende a aterrizar un modulo lunar sobre una plataforma, recibiendo recompensa por aproximarse, posarse suavemente y no estrellarse.
 
 El repositorio se etiqueta con `stable-baselines3`, la libreria de referencia en Python para RL, y con `LunarLander-v2`, el entorno de Gym/Gymnasium. La model card es minima: solo declara el algoritmo, el entorno y un resultado de recompensa media de 265,00 +/- 10,00. No se especifican parametros, arquitectura de red, hiperparametros, licencia ni idiomas, y el tamano del repositorio figura como 0,0 GB.
 
@@ -24,10 +24,10 @@ Es relevante como ejemplo reproducible de como se publica un agente RL en el Hub
 | Entorno | LunarLander-v2 |
 | Framework | stable-baselines3 |
 | Pipeline declarado | reinforcement-learning |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas | 0 |
 | Likes | 0 |
-| Fecha de creacion | 3 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 3 de octubre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -76,8 +76,8 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Algoritmo | Entorno | Parametros | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| revanth11/ppo-LunarLander-v2 | PPO (stable-baselines3) | LunarLander-v2 | no disponible | 265,00 +/- 10,00 de recompensa media (no verificado) | no disponible | Publico en HuggingFace |
-| Otros agentes del Deep RL Course | PPO (stable-baselines3) | LunarLander-v2 | no disponible | no disponible | no disponible | Publicos en HuggingFace |
+| revanth11/ppo-LunarLander-v2 | PPO (stable-baselines3) | LunarLander-v2 | no disponible | 265,00 +/- 10,00 de recompensa media (no verificado) | no disponible | Publico en Hugging Face |
+| Otros agentes del Deep RL Course | PPO (stable-baselines3) | LunarLander-v2 | no disponible | no disponible | no disponible | Publicos en Hugging Face |
 
 No se dispone de datos comparativos verificables con alternativas concretas (DQN, A2C u otros agentes PPO de terceros) en la informacion proporcionada. El resultado de 265,00 se situa por encima del umbral de resolucion habitual de LunarLander-v2 (200 puntos), aunque el valor no ha sido verificado de forma independiente.
 
@@ -95,5 +95,5 @@ No se dispone de datos comparativos verificables con alternativas concretas (DQN
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/revanth11/ppo-LunarLander-v2
+- Hugging Face: https://huggingface.co/revanth11/ppo-LunarLander-v2
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al paper de PPO, al Deep RL Course ni al entorno LunarLander-v2. El resto de resultados devueltos no esta relacionado con este modelo.

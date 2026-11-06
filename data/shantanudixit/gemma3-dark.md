@@ -79,7 +79,7 @@ La comparativa se centra en modelos de tamaño similar que pueden ejecutarse en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shantanudixit/gemma3-dark
+- Repositorio en Hugging Face: https://huggingface.co/shantanudixit/gemma3-dark
 - Página oficial de Gemma 3 (Google DeepMind): https://deepmind.google/models/gemma/gemma-3/
 - Informe técnico de Gemma 3 (arXiv): https://arxiv.org/html/2503.19786v1
 - Sitio de Gemma 3 AI: https://gemma3.ai/

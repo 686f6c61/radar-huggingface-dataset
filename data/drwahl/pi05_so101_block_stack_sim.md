@@ -55,9 +55,9 @@ No se dispone de datos concretos sobre VRAM, GPU recomendada, latencia o through
 
 | Modelo | Base | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `drwahl/pi05_so101_block_stack_sim` | `lerobot/pi05_base` | Solo simulación | Apache 2.0 | HuggingFace |
-| `drwahl/pi05_so101_block_stack` | `lerobot/pi05_base` | Simulación + hardware | Apache 2.0 | HuggingFace |
-| `lerobot/pi05_base` | No aplica | Preentrenamiento de pi0.5 | No especificada | HuggingFace |
+| `drwahl/pi05_so101_block_stack_sim` | `lerobot/pi05_base` | Solo simulación | Apache 2.0 | Hugging Face |
+| `drwahl/pi05_so101_block_stack` | `lerobot/pi05_base` | Simulación + hardware | Apache 2.0 | Hugging Face |
+| `lerobot/pi05_base` | No aplica | Preentrenamiento de pi0.5 | No especificada | Hugging Face |
 
 Las diferencias principales son cualitativas: el modelo en cuestión se entrena únicamente con episodios simulados, mientras que `drwahl/pi05_so101_block_stack` combina simulación y datos de hardware y es el que se utiliza sobre el brazo físico. El modelo base es el checkpoint preentrenado sin adaptar. No se dispone de datos comparativos numéricos de parámetros, contexto ni rendimiento.
 
@@ -72,7 +72,7 @@ Las diferencias principales son cualitativas: el modelo en cuestión se entrena 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drwahl/pi05_so101_block_stack_sim
+- Modelo en Hugging Face: https://huggingface.co/drwahl/pi05_so101_block_stack_sim
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/drwahl/so101_block_stack_sim/tree/v2
 - Repositorio de entrenamiento: https://github.com/danwahl/vla-test

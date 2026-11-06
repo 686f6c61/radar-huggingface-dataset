@@ -31,7 +31,7 @@ El entrenamiento se realizó durante 1 época (901 pasos) con un lote efectivo d
 - Manejo de texto impreso y manuscrito (aunque el rendimiento con escritura a mano varía según el estilo del autor).
 - Integración con el pipeline de agentes de EnclaveScribe para procesamiento de páginas completas (rasterización y ajuste de configuración de generación).
 - Generación determinista con `do_sample=False` y `repetition_penalty=1.1` para evitar bucles degenerativos.
-- Compatible con el ecosistema HuggingFace Transformers y PEFT, permitiendo carga directa con `PeftModel.from_pretrained`.
+- Compatible con el ecosistema Hugging Face Transformers y PEFT, permitiendo carga directa con `PeftModel.from_pretrained`.
 - No soporta tool calling ni razonamiento multi-paso; es un modelo puramente de transcripción de imágenes.
 
 ## Casos de uso
@@ -86,7 +86,7 @@ No se han encontrado comparaciones con otros adaptadores o modelos OCR para deva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/enclavelabs/enclave-scribe-devanagari
+- Modelo en Hugging Face: https://huggingface.co/enclavelabs/enclave-scribe-devanagari
 - Repositorio del proyecto EnclaveScribe: https://github.com/Enclave-Labs-Inc/enclave-scribe
 - Dataset de entrenamiento: https://huggingface.co/datasets/himalaya-ai/devanagari_ocr_dataset
 - Modelo base: https://huggingface.co/allenai/olmOCR-2-7B-1025

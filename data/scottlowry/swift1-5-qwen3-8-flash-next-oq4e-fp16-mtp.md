@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift1.5-Qwen3.8-Flash-Next-oQ4e-fp16-mtp es una version cuantizada del modelo base ukisai/Swift1.5-Qwen3.8-Flash-Next, publicada por el usuario scottlowry en HuggingFace. Se trata de un artefacto de pesos, no de un modelo entrenado desde cero: el trabajo del autor consiste en aplicar cuantizacion de precision mixta mediante la herramienta oQ (oMLX v0.7.0) y empaquetar el resultado en formato MLX safetensors. Su relevancia es practica para el ecosistema Apple Silicon, ya que permite ejecutar un modelo de gran tamano en hardware con memoria unificada usando la libreria mlx.
+Swift1.5-Qwen3.8-Flash-Next-oQ4e-fp16-mtp es una version cuantizada del modelo base ukisai/Swift1.5-Qwen3.8-Flash-Next, publicada por el usuario scottlowry en Hugging Face. Se trata de un artefacto de pesos, no de un modelo entrenado desde cero: el trabajo del autor consiste en aplicar cuantizacion de precision mixta mediante la herramienta oQ (oMLX v0.7.0) y empaquetar el resultado en formato MLX safetensors. Su relevancia es practica para el ecosistema Apple Silicon, ya que permite ejecutar un modelo de gran tamano en hardware con memoria unificada usando la libreria mlx.
 
 El identificador interno de la arquitectura es qwen4_exp, etiquetado por el propio autor, y la nomenclatura del modelo base sugiere una variante de la familia Qwen con sufijo Flash-Next. El repositorio ocupa 107,2 GB, un tamano muy elevado para una cuantizacion de 4 bits, lo que apunta a la presencia de tensores adicionales en fp16 (la parte mtp del nombre) o a un recuento de parametros muy alto. No se dispone de datos confirmados sobre numero de parametros, contexto, licencia ni idiomas.
 
@@ -85,7 +85,7 @@ No se dispone de datos suficientes (parametros, contexto, licencia, benchmarks) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scottlowry/Swift1.5-Qwen3.8-Flash-Next-oQ4e-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/scottlowry/Swift1.5-Qwen3.8-Flash-Next-oQ4e-fp16-mtp
 - Modelo base: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
 - Repositorio de la herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Hilo en Reddit sobre variantes oQe del modelo: https://www.reddit.com/r/oMLX/comments/1wwhwu3/does_anyone_have_swift_15_qwen_38_27b_oqe6/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-erdem-asr-tr-baseline es un reconocedor automático de habla (ASR) de tamaño minúsculo para turco, entrenado desde cero por el usuario de HuggingFace "inviolus". Con solo 63.955 parámetros, está pensado como línea base de investigación para explorar hasta dónde llega un modelo de CTC a nivel de carácter con un tamaño apto para microcontroladores (tinyml), no como transcriptor utilizable en producción.
+erdem-asr-tr-baseline es un reconocedor automático de habla (ASR) de tamaño minúsculo para turco, entrenado desde cero por el usuario de Hugging Face "inviolus". Con solo 63.955 parámetros, está pensado como línea base de investigación para explorar hasta dónde llega un modelo de CTC a nivel de carácter con un tamaño apto para microcontroladores (tinyml), no como transcriptor utilizable en producción.
 
 La arquitectura es deliberadamente sencilla: una convolución 1D sobre espectrogramas log-mel de 40 bandas, una GRU bidireccional y una capa densa de salida con pérdida CTC a nivel de carácter y decodificación greedy. Se ha entrenado sobre 100.000 clips de Mozilla Common Voice (turco) y del ISSAI Turkish Speech Corpus.
 
@@ -86,7 +86,7 @@ La comparación es asimétrica por diseño: erdem-asr es entre tres y cuatro ór
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inviolus/erdem-asr-tr-baseline
+- Modelo en Hugging Face: https://huggingface.co/inviolus/erdem-asr-tr-baseline
 - Dataset ISSAI Turkish Speech Corpus: https://huggingface.co/datasets/issai/Turkish_Speech_Corpus
 - Mozilla Common Voice (Data Collective): https://datacollective.mozillafoundation.org/
 - Artículo del corpus ISSAI (Mussakhojayeva et al., Information, 2023): https://www.mdpi.com/2078-2489/14/2/74

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chess MoE es un modelo de política para ajedrez desarrollado por el usuario avewright y publicado en HuggingFace bajo licencia MIT. Se trata de un mixture-of-experts con entrenamiento conjunto (Switch MoE) compuesto por cinco expertos especializados de 99 millones de parámetros cada uno —denominados incumbent, puzzle, endgame, opening y middlegame— más un router MLP de 257.221 parámetros. El modelo emplea una arquitectura de transformer recurrente según las etiquetas del repositorio, con un vocabulario compacto de 1968 símbolos y dispatch por argmax duro sobre los expertos.
+Chess MoE es un modelo de política para ajedrez desarrollado por el usuario avewright y publicado en Hugging Face bajo licencia MIT. Se trata de un mixture-of-experts con entrenamiento conjunto (Switch MoE) compuesto por cinco expertos especializados de 99 millones de parámetros cada uno —denominados incumbent, puzzle, endgame, opening y middlegame— más un router MLP de 257.221 parámetros. El modelo emplea una arquitectura de transformer recurrente según las etiquetas del repositorio, con un vocabulario compacto de 1968 símbolos y dispatch por argmax duro sobre los expertos.
 
 El checkpoint publicado (latest.pt) corresponde al paso 550 de entrenamiento, con una pérdida de entrenamiento de aproximadamente 2,4342 y una entropía cruzada de validación en el conjunto "hard" de 1,2483. El autor reporta una estimación de 2028 UCI_Elo obtenida con política greedy sin búsqueda (argmax con máscara de jugadas legales), sin libro de aperturas, sin tablas Syzygy y sin MCTS, medida contra Stockfish 19 con UCI_LimitStrength y UCI_Elo.
 
@@ -74,7 +74,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Categoria | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Chess MoE (avewright) | Politica de ajedrez con MoE | ~495,3 M totales, ~99,3 M activos | no disponible | 2028 UCI_Elo estimado; 0,469 frente a SF 2050 en 32 partidas | MIT | HuggingFace, 0 descargas |
+| Chess MoE (avewright) | Politica de ajedrez con MoE | ~495,3 M totales, ~99,3 M activos | no disponible | 2028 UCI_Elo estimado; 0,469 frente a SF 2050 en 32 partidas | MIT | Hugging Face, 0 descargas |
 | Leela Chess Zero (Lc0) | Motor neuronal con MCTS | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | GPL y otras segun componente | Publico, ampliamente desplegado |
 | Maia-2 | Red neuronal de estilo humano | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Publico |
 | Stockfish 19 | Motor clasico con NNUE | no disponible en la informacion proporcionada | no disponible | Referencia usada como rival con Elo limitado a 2050 | GPLv3 | Publico |
@@ -97,7 +97,7 @@ La comparación cuantitativa con alternativas no es posible con los datos dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/avewright/chess-moe
+- Modelo en Hugging Face: https://huggingface.co/avewright/chess-moe
 - Documentación de carga: la model card referencia la librería chess_inference (load_checkpoint, get_model_move) con MOVE_VOCAB_VERSION=compact; no se proporciona URL del repositorio de la librería.
 - Ficheros incluidos en el repositorio: latest.pt, router.pt, experts/<nombre>.pt, router_config.json, train.log, elo_eval.json (si está presente).
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, a artículos técnicos, papers o demos asociados; los resultados devueltos corresponden a textos digitalizados sin relación con el proyecto.

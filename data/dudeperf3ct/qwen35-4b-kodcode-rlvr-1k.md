@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento para comparar con otros modelos de la mism
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/dudeperf3ct/qwen35-4b-kodcode-rlvr-1k)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/dudeperf3ct/qwen35-4b-kodcode-rlvr-1k)
 - [Dataset asociado](https://huggingface.co/datasets/dudeperf3ct/qwen35-kodcode-rlvr-data)
 - [Modelo base Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)
 - [Especificaciones de Qwen3.5-4B (fuente externa)](https://apxml.com/models/qwen35-4b)

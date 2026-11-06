@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "kmkrworks/LiteGPT-V2-Base",
+  "slug": "kmkrworks-litegpt-v2-base",
+  "author": "kmkrworks",
+  "url": "https://huggingface.co/kmkrworks/LiteGPT-V2-Base",
+  "created_at": "2026-11-05T17:44:58.000Z",
+  "updated_at": "2026-11-06T02:28:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "litegpt",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 153,
+  "trending_score": 0,
+  "parameters": 201373952,
+  "parameters_human": "201.4M",
+  "storage_bytes": 402782512,
+  "storage_human": "403 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kmkrworks/LiteGPT-V2-Base · Hugging Face",
+      "url": "https://huggingface.co/kmkrworks/LiteGPT-V2-Base",
+      "snippet": "Text Generation model with 0.2B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "kmkrworks/LiteGPT-Base · Hugging Face",
+      "url": "https://huggingface.co/kmkrworks/LiteGPT-Base",
+      "snippet": "LiteGPT-Base This is a 124M parameter Language Model (GPT-2 Small architecture) pre-trained from scratch on the FineWeb-Edu dataset. It is the base model for LiteGPT-Instruct. Model Details Architecture: GPT-2 Small (12 layers, 12 heads, 768 embedding dim) Parameters: ~124 Million Context Length: 1024 tokens Training Data: 10 Billion tokens from FineWeb-Edu (Sample 10BT). Tokenizer: GPT-2 ..."
+    }
+  ]
+}

@@ -94,10 +94,10 @@ Comparativa declarada por el autor frente al modelo base y al sistema previo:
 
 | Modelo | Parametros | Contexto / audio | WER comparable | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| parakeet-0.6b-caller-asr-unmixed | 618,3 M | 8 kHz telefonia (ingles) | 9,84 % pooled telefonia; 1,98 % in-domain | NVIDIA Open Model License | HuggingFace |
-| nvidia/parakeet-unified-en-0.6b (base) | 618 M aprox. | unificado offline + streaming (ingles) | 11,80 % pooled telefonia; 4,73 % in-domain | NVIDIA Open Model License | HuggingFace |
-| nvidia/parakeet-rnnt-0.6b | 0,6 B | ingles | no disponible en la informacion proporcionada (WER greedy sin LM externo) | no disponible | HuggingFace |
-| nvidia/parakeet-tdt-0.6b-v2 | 0,6 B | ingles, con puntuacion y timestamps | no disponible en la informacion proporcionada | no disponible | NVIDIA NIM / HuggingFace |
+| parakeet-0.6b-caller-asr-unmixed | 618,3 M | 8 kHz telefonia (ingles) | 9,84 % pooled telefonia; 1,98 % in-domain | NVIDIA Open Model License | Hugging Face |
+| nvidia/parakeet-unified-en-0.6b (base) | 618 M aprox. | unificado offline + streaming (ingles) | 11,80 % pooled telefonia; 4,73 % in-domain | NVIDIA Open Model License | Hugging Face |
+| nvidia/parakeet-rnnt-0.6b | 0,6 B | ingles | no disponible en la informacion proporcionada (WER greedy sin LM externo) | no disponible | Hugging Face |
+| nvidia/parakeet-tdt-0.6b-v2 | 0,6 B | ingles, con puntuacion y timestamps | no disponible en la informacion proporcionada | no disponible | NVIDIA NIM / Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -113,7 +113,7 @@ Comparativa declarada por el autor frente al modelo base y al sistema previo:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ozonetg/parakeet-0.6b-caller-asr-unmixed
+- Modelo en Hugging Face: https://huggingface.co/ozonetg/parakeet-0.6b-caller-asr-unmixed
 - Modelo base: https://huggingface.co/nvidia/parakeet-unified-en-0.6b
 - Variante "blended" del mismo autor: https://huggingface.co/ozonetg/parakeet-0.6b-caller-asr
 - Variante con audio adicional: https://huggingface.co/ozonetg/parakeet-0.6b-caller-asr-extra-audio

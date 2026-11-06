@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio devoffeed/gemma-4-e4b es una publicacion alojada en HuggingFace por el usuario devoffeed. En el momento de la consulta no incluye model card propiamente dicha: el unico contenido del README es el campo de licencia (license: gemma), sin descripcion, sin ejemplos de uso y sin documentacion tecnica. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el 14 de septiembre de 2026, por lo que no existe evidencia publica de que los pesos esten efectivamente subidos ni de que el modelo haya sido entrenado o validado.
+El repositorio devoffeed/gemma-4-e4b es una publicacion alojada en Hugging Face por el usuario devoffeed. En el momento de la consulta no incluye model card propiamente dicha: el unico contenido del README es el campo de licencia (license: gemma), sin descripcion, sin ejemplos de uso y sin documentacion tecnica. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el 14 de septiembre de 2026, por lo que no existe evidencia publica de que los pesos esten efectivamente subidos ni de que el modelo haya sido entrenado o validado.
 
 El identificador "gemma-4-e4b" sugiere, por convencion de nomenclatura, un modelo de la familia Gemma con un tamano en torno a 4.000 millones de parametros (el sufijo "e4b" se emplea en variantes eficientes de esa familia), pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor ni por la documentacion disponible. La etiqueta de licencia "gemma" indica que, si el modelo es finalmente un derivado de la familia Gemma de Google, su uso quedaria sujeto a los Terminos de Uso de Gemma.
 
@@ -102,7 +102,7 @@ Cualquier comparacion de calidad requiere ejecutar el modelo de devoffeed y cont
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/devoffeed/gemma-4-e4b
+- Repositorio en Hugging Face: https://huggingface.co/devoffeed/gemma-4-e4b
 - Terminos de uso de Gemma (referencia de licencia): https://ai.google.dev/gemma/terms
 - Politica de uso prohibido de Gemma: https://ai.google.dev/gemma/prohibited_use_policy
 

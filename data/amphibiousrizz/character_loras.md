@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Character_Loras es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes por texto, publicado en HuggingFace por el usuario amphibiousrizz bajo el identificador amphibiousrizz/Character_Loras. Se distribuye como repositorio de la libreria diffusers y esta etiquetado con la plantilla template:diffusion-lora, lo que indica que su uso previsto es la personalizacion de un modelo de difusion base ya entrenado, no la inferencia autonoma.
+Character_Loras es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes por texto, publicado en Hugging Face por el usuario amphibiousrizz bajo el identificador amphibiousrizz/Character_Loras. Se distribuye como repositorio de la libreria diffusers y esta etiquetado con la plantilla template:diffusion-lora, lo que indica que su uso previsto es la personalizacion de un modelo de difusion base ya entrenado, no la inferencia autonoma.
 
 El adaptador declara como modelo base krea/Krea-2-Turbo, mediante las etiquetas base_model:krea/Krea-2-Turbo y base_model:adapter:krea/Krea-2-Turbo. Esto implica que, para utilizarlo, es necesario cargar primero dicho modelo base y aplicar despues los pesos del LoRA. El repositorio no documenta la arquitectura interna del modelo base, el numero de parametros del adaptador ni el proceso de entrenamiento seguido.
 
@@ -96,7 +96,7 @@ No se identificaron en la busqueda web modelos comparables ni informacion public
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amphibiousrizz/Character_Loras
+- Repositorio en Hugging Face: https://huggingface.co/amphibiousrizz/Character_Loras
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 
 Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo. Los unicos resultados obtenidos fueron listados de empresas de fontaneria en Portland (Oregon), sin ninguna relacion con el repositorio. No se han encontrado papers, blogs, demos ni repositorios de codigo asociados.

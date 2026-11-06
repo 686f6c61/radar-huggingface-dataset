@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estas varia
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/dabsLabs/GLM-5.3-Flash-NVFP4
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/dabsLabs/GLM-5.3-Flash-NVFP4
 - Modelo base (BF16): https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Modelo base (pagina principal): https://huggingface.co/zai-org/GLM-5.3-Flash
 - Issue de soporte SM120 en vLLM: https://github.com/vllm-project/vllm/issues/53963

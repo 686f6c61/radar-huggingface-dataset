@@ -82,7 +82,7 @@ La comparativa directa con NLLB-200 muestra que este modelo ofrece mayor capacid
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Abu-Dju/QWEN2.5-32B-Translation-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Abu-Dju/QWEN2.5-32B-Translation-Q8_0-GGUF
 - Modelo original (fine-tune): https://huggingface.co/Imran1/QWEN2.5-32B-Translation
 - Modelo base Qwen2.5-32B: https://huggingface.co/Qwen/Qwen2.5-32B
 - Documentacion de Qwen2.5 (GitHub): https://github.com/mx4ai/qwen2.5

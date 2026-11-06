@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia (según 4.143 millones de parámetros, sin contar el *overhead* de activaciones y codificadores de imagen): en FP32 ~16,6 GB; en FP16/BF16 ~8,3 GB; en INT8 ~4,1 GB; en INT4 ~2,1 GB.
 - GPU recomendadas: A100, H100 o L40S para entrenamiento e inferencia en FP32/BF16 sin restricciones; RTX 4090 o RTX 3090 (24 GB) para inferencia en BF16.
 - Cabe en GPU de consumo: sí, en BF16 en tarjetas de 16-24 GB (RTX 4090, RTX 3090, RTX 4080), y en INT8/INT4 en tarjetas de 8-12 GB.
-- Opciones de despliegue: LeRobot (librería principal del modelo), PyTorch y el ecosistema de HuggingFace. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que están orientados a modelos de lenguaje y no a políticas VLA.
+- Opciones de despliegue: LeRobot (librería principal del modelo), PyTorch y el ecosistema de Hugging Face. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que están orientados a modelos de lenguaje y no a políticas VLA.
 - Latencia y throughput estimados: no disponibles.
 - Requiere, además de la GPU, un robot físico compatible (Panda) o un simulador con la misma configuración de cámaras y el mismo espacio de estados/acciones.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sam-guided-vlas/...pi05...steps_15k` (este modelo) | ~4,14 mil millones | No disponible | Sin benchmarks publicados | apache-2.0 | Repositorio HuggingFace, 0 descargas |
-| `lerobot/pi05_base` (modelo base) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| `sam-guided-vlas/...pi05...steps_15k` (este modelo) | ~4,14 mil millones | No disponible | Sin benchmarks publicados | apache-2.0 | Repositorio Hugging Face, 0 descargas |
+| `lerobot/pi05_base` (modelo base) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | Otros VLA abiertos (p. ej. OpenVLA) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos comparativos de rendimiento entre este modelo y alternativas de su categoría. La comparación se limita a la relación de *fine-tuning* con `lerobot/pi05_base`.
@@ -85,7 +85,7 @@ No se dispone de datos comparativos de rendimiento entre este modelo y alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_hard_items__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__steps_15k
+- Repositorio Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_hard_items__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__steps_15k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_hard_items__mask__overlay_a75__sim__all_cameras__live
 - Blog de π₀.₅ (Physical Intelligence): https://www.physicalintelligence.company/blog/pi05

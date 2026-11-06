@@ -62,17 +62,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Ouro-1.4B-Thinking-Math (este) | 1.4B | no disponible (posible 32k) | Apache 2.0 | HuggingFace, checkpoint de investigacion | Ajuste RL con GRPO sobre matematicas; sin benchmarks publicados |
-| ByteDance/Ouro-1.4B-Thinking | 1.4B | no disponible | Apache 2.0 (segun modelo base) | HuggingFace | Modelo base sin ajuste RL; referencia directa |
-| Qwen2.5-Math-1.5B | 1.5B | 32k (tipico en la familia Qwen2.5) | Apache 2.0 | HuggingFace, ampliamente usado | Especializado en matematicas, con benchmarks publicados |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | 32k (tipico) | MIT | HuggingFace, muy popular | Destilado de razonamiento, con evaluaciones publicadas |
+| Ouro-1.4B-Thinking-Math (este) | 1.4B | no disponible (posible 32k) | Apache 2.0 | Hugging Face, checkpoint de investigacion | Ajuste RL con GRPO sobre matematicas; sin benchmarks publicados |
+| ByteDance/Ouro-1.4B-Thinking | 1.4B | no disponible | Apache 2.0 (segun modelo base) | Hugging Face | Modelo base sin ajuste RL; referencia directa |
+| Qwen2.5-Math-1.5B | 1.5B | 32k (tipico en la familia Qwen2.5) | Apache 2.0 | Hugging Face, ampliamente usado | Especializado en matematicas, con benchmarks publicados |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | 32k (tipico) | MIT | Hugging Face, muy popular | Destilado de razonamiento, con evaluaciones publicadas |
 
 La comparacion con Qwen2.5-Math-1.5B y DeepSeek-R1-Distill-Qwen-1.5B es orientativa por tamano y dominio; no se dispone de datos de rendimiento de este checkpoint para establecer una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
 - Ausencia total de benchmarks: no hay evidencia publicada de que el ajuste RL mejore al modelo base; el numero de pasos (100) y la epoca unica sugieren un ajuste ligero.
-- Artefacto de investigacion: cero descargas y cero likes en HuggingFace, sin validacion de la comunidad; no recomendado para produccion sin evaluacion propia.
+- Artefacto de investigacion: cero descargas y cero likes en Hugging Face, sin validacion de la comunidad; no recomendado para produccion sin evaluacion propia.
 - Idiomas no documentados: se desconoce si conserva capacidades multilingues del modelo base o si el ajuste RL las ha degradado.
 - Riesgo de alucinacion: como todo modelo de lenguaje, especialmente en matematicas donde el RL puede fomentar cadenas de razonamiento plausibles pero incorrectas; requiere verificacion.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo base Ouro-1.4B-Thinking debe verificarse por separado (la model card no detalla la licencia del base mas alla de la del checkpoint).
@@ -82,7 +82,7 @@ La comparacion con Qwen2.5-Math-1.5B y DeepSeek-R1-Distill-Qwen-1.5B es orientat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-math-verl-rltt-native-sdhard-cmp32k-cfg3-156947-20261031
+- Modelo en Hugging Face: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-math-verl-rltt-native-sdhard-cmp32k-cfg3-156947-20261031
 - Modelo base: https://huggingface.co/ByteDance/Ouro-1.4B-Thinking
 - Dataset de rollouts: https://huggingface.co/datasets/hi-todayis-jh/ouro-1.4b-thinking-math-verl-rltt-native-sdhard-cmp32k-cfg3-156947-20261031-rollouts
 - Dataset de entrenamiento: https://huggingface.co/datasets/DigitalLearningGmbH/MATH-lighteval

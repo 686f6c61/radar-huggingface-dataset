@@ -70,9 +70,9 @@ La model card advierte que "generic automatic loading APIs require an explicit a
 
 | Modelo | Parametros | Contexto / entrada | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Yumahujita/vit-finetuned | 24.832 | no disponible | No (inicializacion) | BSD-3-Clause | HuggingFace, 0 descargas |
-| google/vit-base-patch16-224 | ~86 M | imagenes 224x224 | Si (ImageNet-21k + fine-tuning) | Apache-2.0 | HuggingFace, ampliamente usado |
-| facebook/deit-tiny-patch16-224 | ~5,7 M | imagenes 224x224 | Si (destilacion de DeiT) | Apache-2.0 | HuggingFace |
+| Yumahujita/vit-finetuned | 24.832 | no disponible | No (inicializacion) | BSD-3-Clause | Hugging Face, 0 descargas |
+| google/vit-base-patch16-224 | ~86 M | imagenes 224x224 | Si (ImageNet-21k + fine-tuning) | Apache-2.0 | Hugging Face, ampliamente usado |
+| facebook/deit-tiny-patch16-224 | ~5,7 M | imagenes 224x224 | Si (destilacion de DeiT) | Apache-2.0 | Hugging Face |
 
 No se dispone de datos que permitan comparar rendimiento, ya que el modelo de referencia no tiene benchmark publicado ni entrenamiento completado.
 
@@ -89,9 +89,9 @@ No se dispone de datos que permitan comparar rendimiento, ya que el modelo de re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yumahujita/vit-finetuned
+- Modelo en Hugging Face: https://huggingface.co/Yumahujita/vit-finetuned
 - Perfil del autor: https://huggingface.co/Yumahujita
-- Cookbook de HuggingFace sobre fine-tuning de ViT con dataset personalizado: https://huggingface.co/learn/cookbook/fine_tuning_vit_custom_dataset
+- Cookbook de Hugging Face sobre fine-tuning de ViT con dataset personalizado: https://huggingface.co/learn/cookbook/fine_tuning_vit_custom_dataset
 - Repositorio bwconrad/vit-finetune (fine-tuning de ViT, incluye LoRA y linear probing): https://github.com/bwconrad/vit-finetune
 - Repositorio wengsoon94/ViT-fineTune-with-ColossalAI: https://github.com/wengsoon94/ViT-fineTune-with-ColossalAI
 - Guia de Google Cloud sobre adaptacion de modelos: https://cloud.google.com/blog/topics/developers-practitioners/mastering-model-adaptation-a-guide-to-fine-tuning-on-google-cloud

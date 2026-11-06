@@ -2,7 +2,7 @@
 
 ## Resumen
 
-camembert-rappelconso es un modelo de lenguaje basado en la arquitectura CamemBERT, desarrollado por el usuario khoubeibbourbia y publicado en HuggingFace bajo licencia Apache 2.0. Con 110.627.335 parámetros, se trata de un modelo encoder de tipo transformer (familia RoBERTa adaptada al francés) cuyo nombre sugiere un ajuste fino orientado a la detección de retiradas de productos del mercado ("rappel conso" en francés, avisos de retirada de productos de consumo). El modelo se distribuye en formato safetensors con un tamaño de repositorio de 0,4 GB.
+camembert-rappelconso es un modelo de lenguaje basado en la arquitectura CamemBERT, desarrollado por el usuario khoubeibbourbia y publicado en Hugging Face bajo licencia Apache 2.0. Con 110.627.335 parámetros, se trata de un modelo encoder de tipo transformer (familia RoBERTa adaptada al francés) cuyo nombre sugiere un ajuste fino orientado a la detección de retiradas de productos del mercado ("rappel conso" en francés, avisos de retirada de productos de consumo). El modelo se distribuye en formato safetensors con un tamaño de repositorio de 0,4 GB.
 
 La relevancia de este modelo reside en su posible especialización en una tarea concreta del dominio de seguridad alimentaria y consumo: la clasificación o extracción de información a partir de avisos de retirada de productos. Sin embargo, la model card publicada es prácticamente vacía (solo contiene la declaración de licencia), por lo que no hay información verificable sobre el proceso de entrenamiento, los datos utilizados ni las capacidades reales del modelo.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| khoubeibbourbia/camembert-rappelconso | 110,6 M | no disponible | apache-2.0 | HuggingFace (25 descargas) | Model card vacía, sin evaluación |
-| camembert-base (CamemBERT) | ~110 M | 512 tokens | MIT | HuggingFace (muy popular) | Modelo base francés, ampliamente validado |
-| bert-base-french | ~110 M | 512 tokens | MIT | HuggingFace | Alternativa encoder en francés |
-| distilcamembert | ~68 M | 512 tokens | MIT | HuggingFace | Versión destilada, más ligera |
+| khoubeibbourbia/camembert-rappelconso | 110,6 M | no disponible | apache-2.0 | Hugging Face (25 descargas) | Model card vacía, sin evaluación |
+| camembert-base (CamemBERT) | ~110 M | 512 tokens | MIT | Hugging Face (muy popular) | Modelo base francés, ampliamente validado |
+| bert-base-french | ~110 M | 512 tokens | MIT | Hugging Face | Alternativa encoder en francés |
+| distilcamembert | ~68 M | 512 tokens | MIT | Hugging Face | Versión destilada, más ligera |
 
 La comparativa se basa en la arquitectura presumida; no se dispone de datos de rendimiento del modelo evaluado para comparar empíricamente con las alternativas.
 
@@ -82,4 +82,4 @@ La comparativa se basa en la arquitectura presumida; no se dispone de datos de r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/khoubeibbourbia/camembert-rappelconso
+- Hugging Face: https://huggingface.co/khoubeibbourbia/camembert-rappelconso

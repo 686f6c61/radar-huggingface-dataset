@@ -81,10 +81,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto text encoder | Licencia | Disponibilidad | Resultados en Flickr8k |
 |---|---|---|---|---|---|
-| Mini-CLIP (Flickr8k) | 13,85 M | No disponible | MIT | HuggingFace, código propio | R@1 i2t 23,4 % / t2i 17,3 % |
-| CLIP ViT-B/32 (OpenAI) | ~151 M | 77 tokens | MIT | HuggingFace, `transformers`, OpenCLIP | No disponible en la información proporcionada |
-| OpenCLIP ViT-B/32 (LAION) | ~151 M | 77 tokens | MIT (según checkpoint) | OpenCLIP, HuggingFace | No disponible en la información proporcionada |
-| SigLIP Base (Google) | ~203 M (ViT-B) | 64 tokens | Apache 2.0 (versión abierta) | HuggingFace, `transformers` | No disponible en la información proporcionada |
+| Mini-CLIP (Flickr8k) | 13,85 M | No disponible | MIT | Hugging Face, código propio | R@1 i2t 23,4 % / t2i 17,3 % |
+| CLIP ViT-B/32 (OpenAI) | ~151 M | 77 tokens | MIT | Hugging Face, `transformers`, OpenCLIP | No disponible en la información proporcionada |
+| OpenCLIP ViT-B/32 (LAION) | ~151 M | 77 tokens | MIT (según checkpoint) | OpenCLIP, Hugging Face | No disponible en la información proporcionada |
+| SigLIP Base (Google) | ~203 M (ViT-B) | 64 tokens | Apache 2.0 (versión abierta) | Hugging Face, `transformers` | No disponible en la información proporcionada |
 
 La comparación relevante es de escala y propósito, no de rendimiento: Mini-CLIP es aproximadamente diez veces menor que un ViT-B/32 y se entrenó sobre unas 6.000 imágenes frente a los cientos de millones de pares de los CLIP de referencia, por lo que su calidad de recuperación no es directamente comparable.
 
@@ -102,8 +102,8 @@ La comparación relevante es de escala y propósito, no de rendimiento: Mini-CLI
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChandraPrakashBathula/MINI-CLIP-VLM
-- Dataset Flickr8k en HuggingFace: https://huggingface.co/datasets/jxie/flickr8k
+- Modelo en Hugging Face: https://huggingface.co/ChandraPrakashBathula/MINI-CLIP-VLM
+- Dataset Flickr8k en Hugging Face: https://huggingface.co/datasets/jxie/flickr8k
 - Paper original de CLIP (referencia del paradigma): https://arxiv.org/abs/2103.00020
 - Repositorio OpenCLIP (alternativa para modelos contrastivos): https://github.com/mlfoundations/open_clip
 - Documentación de `huggingface_hub` para descarga de ficheros: https://huggingface.co/docs/huggingface_hub

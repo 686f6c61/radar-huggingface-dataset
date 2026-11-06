@@ -104,7 +104,7 @@ La comparacion principal es contra el propio modelo base sin cuantizar, ya que l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lazybrick/Qwen3.5-4B-Kiln-GPTQ-W4A16-g128
+- Modelo en Hugging Face: https://huggingface.co/lazybrick/Qwen3.5-4B-Kiln-GPTQ-W4A16-g128
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Coleccion Kiln para Qwen3.5-4B: https://huggingface.co/collections/lazybrick/kiln-qwen35-4b-fired-small-6ac04982f4f1ce50a97da56d

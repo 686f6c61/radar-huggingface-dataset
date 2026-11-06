@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tiny-sd es un modelo de difusion latente texto-imagen publicado por el usuario evellyndev en HuggingFace. Se trata de una destilacion del modelo SG161222/Realistic_Vision_V4.0 (un fine-tune fotorrealista de Stable Diffusion 1.5) sobre un subconjunto del dataset recastai/LAION-art-EN-improved-captions. El objetivo es reducir el coste computacional de la inferencia manteniendo el condicionamiento por prompt, con una ganancia de velocidad reportada de hasta el 80 % frente a los modelos base SD1.5.
+tiny-sd es un modelo de difusion latente texto-imagen publicado por el usuario evellyndev en Hugging Face. Se trata de una destilacion del modelo SG161222/Realistic_Vision_V4.0 (un fine-tune fotorrealista de Stable Diffusion 1.5) sobre un subconjunto del dataset recastai/LAION-art-EN-improved-captions. El objetivo es reducir el coste computacional de la inferencia manteniendo el condicionamiento por prompt, con una ganancia de velocidad reportada de hasta el 80 % frente a los modelos base SD1.5.
 
 El modelo sigue el metodo de destilacion descrito en el articulo arXiv:2305.15798 y utiliza el codigo de entrenamiento publicado en el repositorio segmind/distill-sd. Es un pipeline de difusion (StableDiffusionPipeline) distribuido en formato diffusers, con un tamano de repositorio de 1,1 GB, lo que sugiere pesos en fp16 y un UNet de menor tamano que el original, coherente con la filosofia "tiny".
 
@@ -36,7 +36,7 @@ Los hiperparametros de entrenamiento reportados en la model card son: 125.000 pa
 - Generacion de imagenes a partir de prompts de texto (text-to-image) a resolucion nativa de 512x512.
 - Estilo fotorrealista heredado del modelo profesor Realistic_Vision_V4.0, con orientacion a retratos y escenas realistas.
 - Inferencia acelerada por destilacion, con una reduccion de coste reportada de hasta el 80 % frente a SD1.5.
-- Compatibilidad con el ecosistema diffusers y con la etiqueta endpoints_compatible (despliegue en HuggingFace Inference Endpoints).
+- Compatibilidad con el ecosistema diffusers y con la etiqueta endpoints_compatible (despliegue en Hugging Face Inference Endpoints).
 - No se documentan capacidades de edicion de imagen (img2img, inpaint, ControlNet) en la informacion proporcionada.
 - No se documentan capacidades de tool calling, agentes ni razonamiento multi-paso (no aplicables a un modelo de difusion).
 - No se documentan capacidades multilingues; el condicionamiento textual esta orientado a ingles.
@@ -67,17 +67,17 @@ No se han publicado resultados de benchmarks de calidad (FID, CLIP score, etc.) 
 - VRAM estimada para inferencia: en torno a 4-6 GB en fp16 a 512x512 con el pipeline diffusers estandar; puede reducirse por debajo de 4 GB con attention slicing, VAE slicing y xformers. Cifras estimadas por el tamano del repositorio (1,1 GB) y la resolucion nativa, no confirmadas por el autor.
 - GPU recomendadas: cualquier GPU con 6 GB o mas de VRAM; RTX 3060, RTX 4060, RTX 2070 y superiores son suficientes. Para despliegues de alta concurrencia, A100 o H100 permiten mayor throughput.
 - Cabe en GPU de consumo: si, en la mayoria de GPU de consumo modernas con 6-8 GB de VRAM o mas.
-- Opciones de despliegue: diffusers (Python), Automatic1111, ComfyUI, HuggingFace Inference Endpoints (etiqueta endpoints_compatible). No aplica vLLM, que esta orientado a modelos de lenguaje.
+- Opciones de despliegue: diffusers (Python), Automatic1111, ComfyUI, Hugging Face Inference Endpoints (etiqueta endpoints_compatible). No aplica vLLM, que esta orientado a modelos de lenguaje.
 - Latencia y throughput: no se aportan valores absolutos; solo se indica que es hasta un 80 % mas rapido que SD1.5 base en A100 80 GB.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Resolucion | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| evellyndev/tiny-sd | no disponible | 512 | Difusion destilada | creativeML Open RAIL-M | HuggingFace (diffusers) |
+| evellyndev/tiny-sd | no disponible | 512 | Difusion destilada | creativeML Open RAIL-M | Hugging Face (diffusers) |
 | Stable Diffusion 1.5 | ~860 M (UNet), ~1.000 M en total (aproximado) | 512 | Difusion latente | creativeML Open RAIL-M | Amplia, multiples repositorios |
-| SG161222/Realistic_Vision_V4.0 (profesor) | ~860 M (UNet, aproximado) | 512 | Difusion latente (fine-tune) | creativeML Open RAIL-M | HuggingFace |
-| Segmind SSD-1B | no disponible | 1024 | Difusion destilada | no disponible | HuggingFace |
+| SG161222/Realistic_Vision_V4.0 (profesor) | ~860 M (UNet, aproximado) | 512 | Difusion latente (fine-tune) | creativeML Open RAIL-M | Hugging Face |
+| Segmind SSD-1B | no disponible | 1024 | Difusion destilada | no disponible | Hugging Face |
 
 Nota: los datos de parametros de SD1.5 y de su fine-tune son valores publicos aproximados; para tiny-sd no se ha publicado el recuento de parametros en la informacion disponible. La comparativa de calidad entre estos modelos no puede establecerse con los datos aportados.
 
@@ -95,7 +95,7 @@ Nota: los datos de parametros de SD1.5 y de su fine-tune son valores publicos ap
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/evellyndev/tiny-sd
+- Modelo en Hugging Face: https://huggingface.co/evellyndev/tiny-sd
 - Articulo de referencia: https://arxiv.org/pdf/2305.15798
 - Codigo de entrenamiento (Segmind distill-sd): https://github.com/segmind/distill-sd
 - Codigo de benchmark de velocidad: https://github.com/segmind/distill-sd/blob/master/inference.py

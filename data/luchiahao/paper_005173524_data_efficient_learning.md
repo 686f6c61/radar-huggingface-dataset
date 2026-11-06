@@ -59,7 +59,7 @@ No disponible. No existe un modelo comparable, ya que este repositorio no es un 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/luchiahao/paper_005173524_data_efficient_learning
+- Repositorio Hugging Face: https://huggingface.co/luchiahao/paper_005173524_data_efficient_learning
 - Artículo de referencia sobre *active learning* (arXiv): https://arxiv.org/pdf/2504.16136
 - Tema de investigación en *data-efficient learning*: https://www.aimodels.fyi/research-topics/data-efficient-learning
 - Paper sobre *data-efficient learning* con energía hypersesférica (IEEE): https://ieeexplore.ieee.org/document/10168255

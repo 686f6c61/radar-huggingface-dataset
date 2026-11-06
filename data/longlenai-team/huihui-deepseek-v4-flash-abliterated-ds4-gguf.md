@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Parámetros totales | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Huihui-DeepSeek-V4-Flash-abliterated-ds4-GGUF | 284,3 B (MoE) | 131.072 tokens (config. DS4) | GGUF 2/4 bits + Q8_0/F16/F32 mixto | MIT | HuggingFace, 0 descargas |
-| deepseek-ai/DeepSeek-V4-Flash (base) | 284,3 B (MoE) | no disponible | safetensors (BF16) | no disponible en la información | HuggingFace |
-| antirez/deepseek-v4-gguf (DeepSeek-V4-Flash-IQ2XXS) | 284,3 B (MoE) | no disponible | GGUF IQ2_XXS + Q2_K + Q8 | no disponible en la información | HuggingFace |
+| Huihui-DeepSeek-V4-Flash-abliterated-ds4-GGUF | 284,3 B (MoE) | 131.072 tokens (config. DS4) | GGUF 2/4 bits + Q8_0/F16/F32 mixto | MIT | Hugging Face, 0 descargas |
+| deepseek-ai/DeepSeek-V4-Flash (base) | 284,3 B (MoE) | no disponible | safetensors (BF16) | no disponible en la información | Hugging Face |
+| antirez/deepseek-v4-gguf (DeepSeek-V4-Flash-IQ2XXS) | 284,3 B (MoE) | no disponible | GGUF IQ2_XXS + Q2_K + Q8 | no disponible en la información | Hugging Face |
 
 No se dispone de datos de benchmarks ni de modelos comparables de otros fabricantes en la información proporcionada, por lo que no es posible establecer comparaciones de rendimiento con alternativas de la misma categoría.
 
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de modelos comparables de otros fabrican
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longlenai-team/Huihui-DeepSeek-V4-Flash-abliterated-ds4-GGUF
+- Modelo en Hugging Face: https://huggingface.co/longlenai-team/Huihui-DeepSeek-V4-Flash-abliterated-ds4-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Motor DS4: https://github.com/antirez/ds4
 - Fork de llama.cpp con CUDA para DeepSeek-V4-Flash: https://github.com/Fringe210/llama.cpp-deepseek-v4-flash-cuda

@@ -4,9 +4,9 @@
 
 El repositorio `blrkumar1/contrastive-learning-2024` no contiene un modelo de aprendizaje automatico entrenado, sino un conjunto estructurado de notas de investigacion sobre aprendizaje contrastivo (contrastive learning). El autor lo describe explicitamente como un artefacto exploratorio: no publica checkpoint entrenado, ni codigo, ni resultados de ablaciones, y separa de forma deliberada los planes e hipotesis de los resultados ya completados. Los unicos ficheros declarados son `review.md` (artefacto principal) y `README.md`.
 
-A pesar de aparecer en HuggingFace con las etiquetas `safetensors` y `transformer`, el peso publicado contiene 33.088 parametros totales y el repositorio ocupa 0,0 GB. Esa cifra es incompatible con un transformer funcional: se trata, con toda probabilidad, de un tensor de prueba o de metadatos, no de un modelo utilizable para inferencia. El repositorio registra 0 descargas y 0 likes, y no declara pipeline ni idiomas soportados.
+A pesar de aparecer en Hugging Face con las etiquetas `safetensors` y `transformer`, el peso publicado contiene 33.088 parametros totales y el repositorio ocupa 0,0 GB. Esa cifra es incompatible con un transformer funcional: se trata, con toda probabilidad, de un tensor de prueba o de metadatos, no de un modelo utilizable para inferencia. El repositorio registra 0 descargas y 0 likes, y no declara pipeline ni idiomas soportados.
 
-Su relevancia actual es, por tanto, documental y metodologica, no tecnica: sirve como ejemplo de estructura de notas de investigacion reproducible (versionado de datasets, comandos, semillas, hardware y registros crudos) para quien prepare un estudio sobre representaciones contrastivas. Cualquier uso como modelo desplegable seria un error de interpretacion de la ficha de HuggingFace.
+Su relevancia actual es, por tanto, documental y metodologica, no tecnica: sirve como ejemplo de estructura de notas de investigacion reproducible (versionado de datasets, comandos, semillas, hardware y registros crudos) para quien prepare un estudio sobre representaciones contrastivas. Cualquier uso como modelo desplegable seria un error de interpretacion de la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ El contenido tecnico se limita a la metodologia propuesta: alcance de la pregunt
 - Diseno de un protocolo experimental en aprendizaje contrastivo: las notas sirven como guion para definir la pregunta de investigacion, los factores de confusion y la comparacion contra baselines emparejados antes de escribir codigo.
 - Revision bibliografica inicial: el fichero `review.md` concentra referencias relevantes del area, lo que reduce el tiempo de arranque de un grupo que entra por primera vez en representaciones contrastivas.
 - Plantilla de cuaderno de investigacion reproducible: la separacion explicita entre planes, hipotesis y resultados, junto con la exigencia de registrar versiones de dataset, comandos, semillas, hardware y logs, es reutilizable como convencion interna de un laboratorio.
-- Auditoria de artefactos en HuggingFace: el caso ilustra como una etiqueta `safetensors` y el campo `transformer` pueden aparecer en un repositorio que no es un modelo, algo util para disenar filtros de calidad en catalogos internos.
+- Auditoria de artefactos en Hugging Face: el caso ilustra como una etiqueta `safetensors` y el campo `transformer` pueden aparecer en un repositorio que no es un modelo, algo util para disenar filtros de calidad en catalogos internos.
 - Docencia y formacion de investigadores junior: sirve para discutir que constituye evidencia experimental y por que un plan no debe presentarse como resultado.
 - Planificacion de evaluacion sobre benchmarks publicos: las notas apuntan a benchmarks apropiados para la tarea, lo que orienta la seleccion de conjuntos de evaluacion en estudios posteriores de representaciones contrastivas.
 
@@ -75,7 +75,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. E
 ## Limitaciones y advertencias
 
 - No es un modelo: no puede desplegarse para inferencia ni integrarse en pipelines de produccion.
-- La combinacion de la etiqueta `safetensors` con el campo `transformer` en la ficha de HuggingFace puede inducir a error a herramientas de descubrimiento automatico de modelos.
+- La combinacion de la etiqueta `safetensors` con el campo `transformer` en la ficha de Hugging Face puede inducir a error a herramientas de descubrimiento automatico de modelos.
 - El recuento de 33.088 parametros es incompatible con un transformer entrenado, lo que refuerza que el fichero de pesos no es un modelo utilizable.
 - El repositorio ocupa 0,0 GB y solo declara dos ficheros de texto; no hay codigo de entrenamiento, evaluacion ni inferencia.
 - Contenido exploratorio por diseno: planes e hipotesis no deben citarse como resultados experimentales.
@@ -85,5 +85,5 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. E
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/blrkumar1/contrastive-learning-2024
+- Repositorio en Hugging Face: https://huggingface.co/blrkumar1/contrastive-learning-2024
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este repositorio, su autor o el contenido de sus notas; los resultados obtenidos correspondian a paginas de soporte de Microsoft sin relacion con el tema. No se dispone por tanto de papers, blogs, repositorios de codigo ni demostraciones adicionales.

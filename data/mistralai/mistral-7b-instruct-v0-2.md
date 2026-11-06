@@ -4,7 +4,7 @@
 
 Mistral-7B-Instruct-v0.2 es un modelo de lenguaje de 7.241.732.096 parametros desarrollado por Mistral AI, empresa francesa fundada en abril de 2023 y especializada en inteligencia artificial generativa. Se trata de la version afinada por instrucciones (instruction fine-tuned) del modelo base Mistral-7B-v0.2, que a su vez introduce cambios relevantes respecto a v0.1: una ventana de contexto de 32k tokens (frente a 8k), RoPE-theta de 1e6 y la eliminacion de la Sliding-Window Attention.
 
-El modelo resuelve tareas de generacion de texto y seguimiento de instrucciones en formato conversacional, y es relevante porque combina un tamano contenido (7B) con una licencia Apache 2.0 plenamente permisiva y un contexto largo para su epoca, lo que lo hizo muy popular para despliegues on-premise y fine-tuning. En el momento de redactar esta ficha acumula 1.647.272 descargas y 3.255 likes en HuggingFace.
+El modelo resuelve tareas de generacion de texto y seguimiento de instrucciones en formato conversacional, y es relevante porque combina un tamano contenido (7B) con una licencia Apache 2.0 plenamente permisiva y un contexto largo para su epoca, lo que lo hizo muy popular para despliegues on-premise y fine-tuning. En el momento de redactar esta ficha acumula 1.647.272 descargas y 3.255 likes en Hugging Face.
 
 Su arquitectura es de tipo transformer decoder-only, y el propio autor lo describe como una demostracion rapida de que el modelo base puede afinarse facilmente por instrucciones. El autor ha publicado una version sucesora, Mistral-7B-Instruct-v0.3, indicada en la propia model card.
 
@@ -86,7 +86,7 @@ Estimaciones a partir del tamano del modelo; no confirmadas por el autor en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
+- Hugging Face: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Version sucesora: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Paper: https://arxiv.org/abs/2310.06825
 - Blog de lanzamiento: https://mistral.ai/news/la-plateforme/

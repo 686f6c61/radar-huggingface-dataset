@@ -94,7 +94,7 @@ No se dispone de datos publicados de otros SLM especializados en yakuto en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chairus/tabis-sakha-slm
+- Modelo en Hugging Face: https://huggingface.co/chairus/tabis-sakha-slm
 - Dataset de entrenamiento: https://huggingface.co/datasets/ailabykt/sakha-russian-parallel
 - LM Studio (runtime recomendado por el autor): https://lmstudio.ai/
 - Paper, blog tecnico o repositorio de codigo: no disponible en la informacion proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fwizzer-v3-ru (Fwizzer v3 Titan RU) es un modelo multimodal de tipo image-text-to-text publicado por el usuario fwizzer1 en HuggingFace. Se trata de un ajuste (fine-tuning) sobre el modelo base LiquidAI/LFM2.5-VL-3B, orientado al idioma ruso y con el ingles como idioma secundario. La model card lo describe como una red neuronal liquida hibrida (Hybrid Liquid Neural Network) con un backbone de 2,69B de parametros y una torre de vision SigLIP2 de 400M, entrenada sobre un dataset privado de chain-of-thought denominado fwizzer1/fwizzer-v3-titan-agentic (25.000 muestras rusas). Conviene senalar que el repositorio declara 426.285.296 parametros en safetensors, una cifra que no coincide con la suma de backbone y torre de vision indicada en la model card; el dato real de safetensors se refleja en la tabla de especificaciones junto a la discrepancia.
+fwizzer-v3-ru (Fwizzer v3 Titan RU) es un modelo multimodal de tipo image-text-to-text publicado por el usuario fwizzer1 en Hugging Face. Se trata de un ajuste (fine-tuning) sobre el modelo base LiquidAI/LFM2.5-VL-3B, orientado al idioma ruso y con el ingles como idioma secundario. La model card lo describe como una red neuronal liquida hibrida (Hybrid Liquid Neural Network) con un backbone de 2,69B de parametros y una torre de vision SigLIP2 de 400M, entrenada sobre un dataset privado de chain-of-thought denominado fwizzer1/fwizzer-v3-titan-agentic (25.000 muestras rusas). Conviene senalar que el repositorio declara 426.285.296 parametros en safetensors, una cifra que no coincide con la suma de backbone y torre de vision indicada en la model card; el dato real de safetensors se refleja en la tabla de especificaciones junto a la discrepancia.
 
 El modelo se distribuye principalmente en formato GGUF (cuantizaciones Q8_0, Q5_K_M y Q4_K_M) mas un proyector de vision independiente (fwizzervision.gguf), lo que lo hace desplegable en llama.cpp, LM Studio y Ollama incluso en hardware de consumo. Su rasgo diferencial es un modo de razonamiento chain-of-thought no desactivable dentro de etiquetas `<think> ... </think>`, inspirado en DeepSeek-R1, junto con capacidades declaradas de OCR, analisis de diagramas e interfaces, y generacion de codigo procedimental para Godot 4 (GDScript) y Blender 4.x (Python bpy/bmesh, Geometry Nodes).
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad de datos |
 |---|---|---|---|---|---|
-| fwizzer-v3-ru | 426.285.296 en safetensors; la model card declara ~3,1B (backbone + vision) | 32.768 tokens (hasta 131.072 con el backbone LFM) | Ruso e ingles | lfm1.0 (other) | GGUF en el repositorio de HuggingFace |
+| fwizzer-v3-ru | 426.285.296 en safetensors; la model card declara ~3,1B (backbone + vision) | 32.768 tokens (hasta 131.072 con el backbone LFM) | Ruso e ingles | lfm1.0 (other) | GGUF en el repositorio de Hugging Face |
 | LiquidAI/LFM2.5-VL-3B (modelo base) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Referenciado como base_model |
 | Otros VLM pequenos de la misma categoria (por ejemplo alternativas de ~3B para image-text-to-text) | No disponible | No disponible | No disponible | No disponible | No se encontraron datos comparativos en los resultados de busqueda web |
 
@@ -89,7 +89,7 @@ Los resultados de la busqueda web realizada no aportaron informacion tecnica ni 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/fwizzer1/fwizzer-v3-ru
+- Pagina del modelo en Hugging Face: https://huggingface.co/fwizzer1/fwizzer-v3-ru
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/fwizzer1/fwizzer-v3-titan-agentic
 - Los resultados de busqueda web no devolvieron enlaces relevantes (papers, blogs, repositorios o demos) relacionados con este modelo.

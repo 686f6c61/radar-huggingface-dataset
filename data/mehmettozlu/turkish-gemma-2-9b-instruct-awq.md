@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativo. Los tres modelos turcos se ba
 
 ## Enlaces
 
-- [HuggingFace - mehmettozlu/Turkish-Gemma-2-9B-Instruct-AWQ](https://huggingface.co/mehmettozlu/Turkish-Gemma-2-9B-Instruct-AWQ)
+- [Hugging Face - mehmettozlu/Turkish-Gemma-2-9B-Instruct-AWQ](https://huggingface.co/mehmettozlu/Turkish-Gemma-2-9B-Instruct-AWQ)
 - [google/gemma-2-9b (modelo base)](https://huggingface.co/google/gemma-2-9b)
 - [google/gemma-2-9b-it (versión instruct)](https://huggingface.co/google/gemma-2-9b-it)
 - [Gemma 2 model card - Google AI for Developers](https://ai.google.dev/gemma/docs/core/model_card_2)

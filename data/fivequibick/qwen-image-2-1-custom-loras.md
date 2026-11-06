@@ -67,7 +67,7 @@ La comparacion se establece a nivel del modelo base, ya que el repositorio es un
 
 | Modelo | Parametros (componente visual) | Resolucion nativa | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1 (base de estos LoRA) | ~7B, 32 capas DiT Single-Stream | hasta 2K | Generacion y edicion unificadas | apache-2.0 | Pesos abiertos en HuggingFace y GitHub |
+| Qwen-Image-2.1 (base de estos LoRA) | ~7B, 32 capas DiT Single-Stream | hasta 2K | Generacion y edicion unificadas | apache-2.0 | Pesos abiertos en Hugging Face y GitHub |
 | FLUX.1-dev | no disponible en la informacion proporcionada | no disponible | Generacion y edicion | licencia no comercial | Pesos abiertos con restricciones |
 | Stable Diffusion 3.5 Large | no disponible en la informacion proporcionada | no disponible | Generacion y edicion | licencia comunitaria | Pesos abiertos con restricciones |
 | fivequibick/Qwen-Image-2.1-Custom-LoRAs | no disponible (adaptador, 0,9 GB) | depende del modelo base | Ajuste fino del base | apache-2.0 | 0 descargas, 0 likes, sin documentacion |
@@ -87,9 +87,9 @@ La comparacion se establece a nivel del modelo base, ya que el repositorio es un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fivequibick/Qwen-Image-2.1-Custom-LoRAs
+- Repositorio en Hugging Face: https://huggingface.co/fivequibick/Qwen-Image-2.1-Custom-LoRAs
 - Repositorio GitHub del modelo base Qwen-Image-2.1: https://github.com/QwenLM/Qwen-Image-2.1
 - README del modelo base: https://github.com/QwenLM/Qwen-Image-2.1/blob/main/README.md
-- Pesos del modelo base en HuggingFace (unsloth): https://huggingface.co/unsloth/Qwen-Image-2.1
+- Pesos del modelo base en Hugging Face (unsloth): https://huggingface.co/unsloth/Qwen-Image-2.1
 - Articulo sobre entrenamiento de LoRA de Qwen Image 2.1 con Fizgig v6.5: https://comfyui-wiki.com/en/news/2026-09-27-fizgig-v6-5-qwen-image-2-1
 - Pagina de inferencia con LoRA de Qwen Image 2.1 en NanoGPT: https://nano-gpt.com/models/image/wavespeed-ai/qwen-image-2.1/text-to-image-lora

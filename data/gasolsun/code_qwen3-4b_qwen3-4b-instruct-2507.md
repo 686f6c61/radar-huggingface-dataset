@@ -87,9 +87,9 @@ No se han publicado en la informacion disponible resultados comparativos con el 
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento en codigo | Disponibilidad |
 |---|---|---|---|---|---|
-| Code_Qwen3-4B_Qwen3-4B-Instruct-2507 | 4,41 B (denso) | No disponible | Apache 2.0 | LiveCodeBench v5_v6 35,9; MBPP+ 68,5; media 39,6 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B (base) | 4,41 B (denso) | 32.768 tokens nativos, hasta 131.072 con YaRN (segun el modelo base) | Apache 2.0 | No disponible en la informacion proporcionada | HuggingFace, ampliamente utilizado |
-| Qwen/Qwen3-4B-Instruct-2507 (profesor) | 4,41 B (denso) | No disponible en la informacion proporcionada | Apache 2.0 | No disponible en la informacion proporcionada | HuggingFace |
+| Code_Qwen3-4B_Qwen3-4B-Instruct-2507 | 4,41 B (denso) | No disponible | Apache 2.0 | LiveCodeBench v5_v6 35,9; MBPP+ 68,5; media 39,6 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B (base) | 4,41 B (denso) | 32.768 tokens nativos, hasta 131.072 con YaRN (segun el modelo base) | Apache 2.0 | No disponible en la informacion proporcionada | Hugging Face, ampliamente utilizado |
+| Qwen/Qwen3-4B-Instruct-2507 (profesor) | 4,41 B (denso) | No disponible en la informacion proporcionada | Apache 2.0 | No disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de resultados de benchmarks de los modelos base y profesor en las mismas condiciones de evaluación, por lo que no es posible cuantificar la ganancia o la pérdida atribuible a la destilación con los datos aportados.
 
@@ -108,7 +108,7 @@ No se dispone de resultados de benchmarks de los modelos base y profesor en las 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gasolsun/Code_Qwen3-4B_Qwen3-4B-Instruct-2507
+- Modelo en Hugging Face: https://huggingface.co/gasolsun/Code_Qwen3-4B_Qwen3-4B-Instruct-2507
 - Dataset del banco de preguntas: https://huggingface.co/datasets/gasolsun/Code_Qwen3-4B_Qwen3-4B-Instruct-2507
 - Modelo base (alumno): https://huggingface.co/Qwen/Qwen3-4B
 - Modelo profesor: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

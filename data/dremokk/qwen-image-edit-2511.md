@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-Edit-2511 | Difusion image-to-image | no disponible (repo 16,8 GB) | Multi-imagen + prompt (en, zh) | Apache 2.0 | HuggingFace, ModelScope, Qwen Chat |
-| Qwen-Image-Edit-2509 | Difusion image-to-image | no disponible | Multi-imagen + prompt | Apache 2.0 (segun ecosistema Qwen) | HuggingFace |
+| Qwen-Image-Edit-2511 | Difusion image-to-image | no disponible (repo 16,8 GB) | Multi-imagen + prompt (en, zh) | Apache 2.0 | Hugging Face, ModelScope, Qwen Chat |
+| Qwen-Image-Edit-2509 | Difusion image-to-image | no disponible | Multi-imagen + prompt | Apache 2.0 (segun ecosistema Qwen) | Hugging Face |
 | Otros modelos de edicion de imagen | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada solo permite comparar con la version anterior (2509), de la que 2511 es una mejora directa en consistencia, LoRAs integrados y razonamiento geometrico. No se dispone de datos de benchmarks ni de especificaciones de modelos competidores en la informacion disponible.
@@ -91,7 +91,7 @@ La informacion proporcionada solo permite comparar con la version anterior (2509
 - Modelo oficial: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-Edit-2511
 - Qwen Chat: https://chat.qwen.ai/
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-Edit-2511
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-Edit-2511
 - Blog oficial: https://qwenlm.github.io/blog/qwen-image-edit-2511/
 - Informe tecnico (PDF): https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-Image/Qwen_Image.pdf
 - GitHub: https://github.com/QwenLM/Qwen-Image

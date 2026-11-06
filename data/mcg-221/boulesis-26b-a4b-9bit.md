@@ -73,4 +73,4 @@ No disponible. No se han encontrado modelos comparables en la informacion propor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/McG-221/Boulesis-26B-A4B-9bit
+- Hugging Face: https://huggingface.co/McG-221/Boulesis-26B-A4B-9bit

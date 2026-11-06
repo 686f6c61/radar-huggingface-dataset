@@ -2,7 +2,7 @@
 
 ## Resumen
 
-act_so101_pickplace_v1 es una política de robótica entrenada mediante aprendizaje por imitación con el método ACT (Action Chunking with Transformers) y publicada en HuggingFace Hub por el usuario mariofromars dentro del ecosistema LeRobot. No es un modelo de lenguaje: es un controlador neuronal que recibe observaciones visuales y el estado de las articulaciones de un brazo robótico SO-101 y emite comandos de acción para ejecutar una tarea de recogida y colocación (pick-and-place).
+act_so101_pickplace_v1 es una política de robótica entrenada mediante aprendizaje por imitación con el método ACT (Action Chunking with Transformers) y publicada en Hugging Face Hub por el usuario mariofromars dentro del ecosistema LeRobot. No es un modelo de lenguaje: es un controlador neuronal que recibe observaciones visuales y el estado de las articulaciones de un brazo robótico SO-101 y emite comandos de acción para ejecutar una tarea de recogida y colocación (pick-and-place).
 
 El modelo tiene 51.668.614 parámetros (unos 51,7 M) almacenados en formato safetensors, con un repositorio de 0,2 GB, y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. La arquitectura sigue el diseño descrito en el artículo ACT (arXiv:2304.13705), que predice secuencias cortas de acciones (chunks) en lugar de pasos individuales, lo que reduce el error de acumulación y mejora la estabilidad del control.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_so101_pickplace_v1 | ACT (CVAE + transformer) | 51,7 M | no aplica | Apache 2.0 | HuggingFace Hub, 0 descargas |
+| act_so101_pickplace_v1 | ACT (CVAE + transformer) | 51,7 M | no aplica | Apache 2.0 | Hugging Face Hub, 0 descargas |
 | Checkpoint ACT de ALOHA (referencia del método) | ACT (CVAE + transformer) | no disponible | no aplica | no disponible | repositorio del proyecto original |
 | Diffusion Policy | política basada en difusión | no disponible | no aplica | no disponible | implementaciones públicas en LeRobot y repositorios de investigación |
-| SmolVLA | VLA (visión-lenguaje-acción) | no disponible en la información proporcionada | no aplica | no disponible | HuggingFace Hub |
+| SmolVLA | VLA (visión-lenguaje-acción) | no disponible en la información proporcionada | no aplica | no disponible | Hugging Face Hub |
 
 La comparación cuantitativa no es posible con los datos disponibles: solo se conoce el recuento de parámetros de este checkpoint. Como referencia cualitativa, ACT predice chunks de acción mediante un transformer con CVAE, mientras que Diffusion Policy genera acciones iterando un proceso de difusión, y los modelos VLA como SmolVLA incorporan además condicionamiento por lenguaje, lo que permite especificar la tarea con instrucciones de texto algo que este checkpoint no soporta.
 
@@ -92,11 +92,11 @@ La comparación cuantitativa no es posible con los datos disponibles: solo se co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mariofromars/act_so101_pickplace_v1
+- Modelo en Hugging Face: https://huggingface.co/mariofromars/act_so101_pickplace_v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/mariofromars/so101_pickplace_v1
 - Artículo de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705 y https://arxiv.org/abs/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de políticas de imitación: https://huggingface.co/docs/lerobot/il_robots#train-a-policy
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de HuggingFace y de las referencias citadas en la propia model card.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de Hugging Face y de las referencias citadas en la propia model card.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mulligan/sim-square-narrow-r03-mulligan-repair-no-r3roll-divl` es un agente de control robótico basado en estado (sin observaciones visuales) entrenado para la tarea `sim-square-narrow`, una variante estrecha de la tarea de ensamblaje de una pieza cuadrada (NutAssemblySquare) en el dominio simulado de robosuite. Lo publica la organización `mulligan` como parte de su infraestructura de investigación Mulligan, con evaluaciones alojadas en Policy Arena y los datasets asociados en su organización de HuggingFace.
+El modelo `mulligan/sim-square-narrow-r03-mulligan-repair-no-r3roll-divl` es un agente de control robótico basado en estado (sin observaciones visuales) entrenado para la tarea `sim-square-narrow`, una variante estrecha de la tarea de ensamblaje de una pieza cuadrada (NutAssemblySquare) en el dominio simulado de robosuite. Lo publica la organización `mulligan` como parte de su infraestructura de investigación Mulligan, con evaluaciones alojadas en Policy Arena y los datasets asociados en su organización de Hugging Face.
 
 Técnicamente no es un modelo de lenguaje: es una política de aprendizaje por refuerzo compuesta por un actor de difusión congelado, heredado del modelo padre `sim-square-narrow-r03-mulligan-repair-no-r3roll-idql`, y un crítico DIVL distribucional entrenado en esta ronda. El repositorio contiene un único checkpoint por semilla (`policy.pt` y `stats.json`), con cinco semillas (1 a 5), en el paso de entrenamiento 150001.
 
@@ -86,8 +86,8 @@ La variabilidad entre semillas es reducida: el rango va del 95,65 % al 98,01 %, 
 
 | Modelo | Tipo | Tarea / dominio | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| `sim-square-narrow-r03-mulligan-repair-no-r3roll-divl` (este modelo) | Actor de difusión congelado + crítico DIVL distribucional | `sim-square-narrow`, ensamblaje cuadrado en simulación | no disponible | no aplica | 96,49 % de éxito medio en 40000 rollouts (grid retenido) | MIT | HuggingFace, 5 semillas |
-| `mulligan/sim-square-narrow-r03-mulligan-repair-no-r3roll-idql` (modelo padre) | Actor de difusión + crítico IDQL | misma tarea | no disponible | no aplica | no disponible en la información proporcionada | MIT (según el ecosistema del autor) | HuggingFace |
+| `sim-square-narrow-r03-mulligan-repair-no-r3roll-divl` (este modelo) | Actor de difusión congelado + crítico DIVL distribucional | `sim-square-narrow`, ensamblaje cuadrado en simulación | no disponible | no aplica | 96,49 % de éxito medio en 40000 rollouts (grid retenido) | MIT | Hugging Face, 5 semillas |
+| `mulligan/sim-square-narrow-r03-mulligan-repair-no-r3roll-idql` (modelo padre) | Actor de difusión + crítico IDQL | misma tarea | no disponible | no aplica | no disponible en la información proporcionada | MIT (según el ecosistema del autor) | Hugging Face |
 | Diffusion Policy (Chi et al.) | Política de difusión para manipulación visual | manipulación robótica con entrada visual | no disponible | no aplica | no disponible en la información proporcionada | no disponible en la información proporcionada | código y pesos públicos |
 | IDQL (Hansen-Estruch et al.) | IQL implícito con actor de difusión | RL offline sobre D4RL y robomimic | no disponible | no aplica | no disponible en la información proporcionada | no disponible en la información proporcionada | código público |
 | IQL (Kostrikov et al.) | Aprendizaje Q implícito | RL offline genérico | no disponible | no aplica | no disponible en la información proporcionada | no disponible en la información proporcionada | código público |
@@ -110,7 +110,7 @@ La comparación cuantitativa con alternativas no es posible con la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r03-mulligan-repair-no-r3roll-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r03-mulligan-repair-no-r3roll-divl
 - Modelo padre (actor congelado): https://huggingface.co/mulligan/sim-square-narrow-r03-mulligan-repair-no-r3roll-idql
 - Dataset de evaluación: https://huggingface.co/datasets/mulligan/sim-square-narrow-r00-r03-eval
 - Dataset de demostraciones teleoperadas: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-sobol
@@ -119,7 +119,7 @@ La comparación cuantitativa con alternativas no es posible con la información 
 - Dataset DAgger c02: https://huggingface.co/datasets/mulligan/sim-square-narrow-c02-dagger-mulligan
 - Dataset de rollouts de política c02: https://huggingface.co/datasets/mulligan/sim-square-narrow-c02-mulligan-policy-rollouts
 - Dataset DAgger c03: https://huggingface.co/datasets/mulligan/sim-square-narrow-c03-dagger-mulligan
-- Organización del autor en HuggingFace: https://huggingface.co/mulligan
+- Organización del autor en Hugging Face: https://huggingface.co/mulligan
 - Página del proyecto Mulligan: https://mulligan.page
 - Evaluaciones en Policy Arena: https://arena.mulligan.page
 - Búsqueda web: no se han encontrado enlaces adicionales relevantes. Los resultados disponibles no guardan relación con el modelo ni con el proyecto Mulligan.

@@ -45,7 +45,7 @@ El fine-tuning aplicado se basa en la tecnica M2RL, descrita en el repositorio M
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de evaluaciones como MMLU, HumanEval, GSM8K ni comparativas con otros modelos en la ficha de HuggingFace ni en la documentacion consultada.
+No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de evaluaciones como MMLU, HumanEval, GSM8K ni comparativas con otros modelos en la ficha de Hugging Face ni en la documentacion consultada.
 
 ## Requisitos de hardware
 
@@ -72,11 +72,11 @@ La comparativa se limita a modelos de la misma familia por la ausencia de benchm
 - Limitaciones de contexto: la longitud de contexto nativa es de 32.768 tokens, ampliable a 131.072 con YaRN. Sin embargo, el rendimiento con contextos largos no ha sido evaluado en este fine-tuning especifico.
 - Limitaciones de idioma: no disponible. Aunque el modelo base soporta mas de 100 idiomas, no se ha confirmado el rendimiento multilingue del modelo fine-tuneado, que podria estar sesgado hacia el ingles en tareas de codificacion.
 - Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, modificacion y distribucion, siempre que se mantenga el aviso de licencia y se indiquen los cambios realizados. No se han identificado restricciones adicionales.
-- Caveats para produccion: el modelo no cuenta con benchmarks publicados ni validacion de la comunidad (0 descargas y 0 likes en HuggingFace). Ademas, al partir de la version Base, puede requerir prompts especificos o plantillas de chat para funcionar correctamente en tareas de instruccion. Se recomienda realizar evaluaciones propias antes de desplegarlo en entornos criticos.
+- Caveats para produccion: el modelo no cuenta con benchmarks publicados ni validacion de la comunidad (0 descargas y 0 likes en Hugging Face). Ademas, al partir de la version Base, puede requerir prompts especificos o plantillas de chat para funcionar correctamente en tareas de instruccion. Se recomienda realizar evaluaciones propias antes de desplegarlo en entornos criticos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jackwang111/M2RL-RL_Coding
+- Hugging Face: https://huggingface.co/Jackwang111/M2RL-RL_Coding
 - Repositorio M2RL (Mosi-AI): https://github.com/Mosi-AI/M2RL
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

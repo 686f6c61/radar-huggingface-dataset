@@ -2,7 +2,7 @@
 
 ## Resumen
 
-aaronmac/tiny-shakespeare es un transformer causal a nivel de caracter entrenado desde cero sobre el corpus Tiny Shakespeare. Se trata de un modelo extremadamente pequeno, con 226.113 parametros totales (aproximadamente 0,23 millones), publicado por el usuario aaronmac en HuggingFace bajo la libreria transformers. Su proposito es claramente educativo y experimental: reproducir el ciclo completo de entrenamiento de un modelo de lenguaje generativo con un coste computacional minimo y una arquitectura legible.
+aaronmac/tiny-shakespeare es un transformer causal a nivel de caracter entrenado desde cero sobre el corpus Tiny Shakespeare. Se trata de un modelo extremadamente pequeno, con 226.113 parametros totales (aproximadamente 0,23 millones), publicado por el usuario aaronmac en Hugging Face bajo la libreria transformers. Su proposito es claramente educativo y experimental: reproducir el ciclo completo de entrenamiento de un modelo de lenguaje generativo con un coste computacional minimo y una arquitectura legible.
 
 La arquitectura es un decoder-only clasico: 4 bloques transformer, 4 cabezas de atencion, dimension de embedding de 64 y una longitud de contexto de tan solo 32 tokens. El tokenizador es a nivel de caracter, no subword, lo que simplifica al maximo el preprocesado y hace que el modelo sea util como banco de pruebas para entender mecanismos de atencion, positional encoding y decodificacion autorregresiva.
 
@@ -29,7 +29,7 @@ El modelo sigue el esquema estandar de transformer decoder-only con atencion cau
 
 No se dispone de informacion detallada sobre el proceso de entrenamiento en la model card: no se especifica el numero de tokens vistos, la composicion exacta del dataset mas alla de "Tiny Shakespeare", la funcion de perdida concreta, ni si hubo fases de ajuste tipo RLHF o DPO. Tampoco se documentan tecnicas de optimizacion como decodificacion especulativa, atencion lineal o variantes hibridas. Por lo tanto, cualquier afirmacion sobre hiperparametros de entrenamiento (learning rate, batch size, optimizador) debe considerarse no disponible.
 
-El elemento diferenciador del modelo es precisamente su escala: al ser un transformer completo pero minimo, permite inspeccionar pesos, reproducir el forward pass en CPU y experimentar con modificaciones arquitectonicas sin necesidad de aceleradores. El tag custom_code de HuggingFace indica que el repositorio incluye codigo propio que debe ejecutarse con trust_remote_code=True, lo que implica revisar el codigo antes de cargarlo en un entorno de produccion.
+El elemento diferenciador del modelo es precisamente su escala: al ser un transformer completo pero minimo, permite inspeccionar pesos, reproducir el forward pass en CPU y experimentar con modificaciones arquitectonicas sin necesidad de aceleradores. El tag custom_code de Hugging Face indica que el repositorio incluye codigo propio que debe ejecutarse con trust_remote_code=True, lo que implica revisar el codigo antes de cargarlo en un entorno de produccion.
 
 ## Capacidades
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aaronmac/tiny-shakespeare | 226.113 | 32 tokens | No disponible | No disponible | HuggingFace, 0 descargas |
-| szymon-piechowicz-wandb/gpt | No disponible | No disponible | No disponible | No disponible | HuggingFace (dataset tiny_shakespeare) |
-| 54nd339/ShakeGPT | No disponible | No disponible | No disponible | No disponible | HuggingFace (text generation) |
+| aaronmac/tiny-shakespeare | 226.113 | 32 tokens | No disponible | No disponible | Hugging Face, 0 descargas |
+| szymon-piechowicz-wandb/gpt | No disponible | No disponible | No disponible | No disponible | Hugging Face (dataset tiny_shakespeare) |
+| 54nd339/ShakeGPT | No disponible | No disponible | No disponible | No disponible | Hugging Face (text generation) |
 | Implementaciones tipo nanoGPT / minGPT (Karpathy y derivados) | Configurables (tipicamente 10M en config char) | Configurable | Perplejidad reportada en sus propios repos | MIT en los repositorios de referencia | GitHub |
 
 La comparativa se limita a modelos de la misma familia experimental (transformers entrenados sobre Tiny Shakespeare), ya que no existen alternativas de produccion con este orden de magnitud de parametros. No se dispone de datos de rendimiento verificables de los modelos comparados en la informacion proporcionada, por lo que no es posible establecer una jerarquia cuantitativa.
@@ -89,7 +89,7 @@ La comparativa se limita a modelos de la misma familia experimental (transformer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aaronmac/tiny-shakespeare
+- Modelo en Hugging Face: https://huggingface.co/aaronmac/tiny-shakespeare
 - Listado de modelos entrenados sobre el dataset tiny_shakespeare: https://huggingface.co/models?dataset=dataset:tiny_shakespeare
 - Listado de modelos con la etiqueta tiny-shakespeare: https://huggingface.co/models?other=tiny-shakespeare
 - Experimentos con Tiny Recursive Model sobre Tiny Shakespeare (Medium): https://medium.com/@mbonsign/testing-trm-on-tiny-shakespeare-0fb5314afff1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Amitsingh1508/brain-tumor-mri-classification-system-model` es un sistema de clasificación de tumores cerebrales a partir de imágenes de resonancia magnética (MRI). El autor, Amitsingh1508, lo ha publicado en HuggingFace con un tamaño de repositorio de 0,1 GB, lo que sugiere un modelo de tamaño reducido, probablemente una red neuronal convolucional (CNN) o un modelo similar para visión por computadora. Sin embargo, la ficha de HuggingFace no proporciona información técnica detallada: no se especifica la arquitectura, el número de parámetros, la licencia ni los idiomas soportados.
+El modelo `Amitsingh1508/brain-tumor-mri-classification-system-model` es un sistema de clasificación de tumores cerebrales a partir de imágenes de resonancia magnética (MRI). El autor, Amitsingh1508, lo ha publicado en Hugging Face con un tamaño de repositorio de 0,1 GB, lo que sugiere un modelo de tamaño reducido, probablemente una red neuronal convolucional (CNN) o un modelo similar para visión por computadora. Sin embargo, la ficha de Hugging Face no proporciona información técnica detallada: no se especifica la arquitectura, el número de parámetros, la licencia ni los idiomas soportados.
 
 Este modelo se enmarca en el campo del diagnóstico asistido por IA, donde se utilizan técnicas de deep learning para clasificar imágenes médicas y ayudar a los radiólogos en la detección de tumores. Aunque la información disponible es muy limitada, su existencia refleja el interés creciente por modelos especializados en dominios clínicos. No obstante, cualquier evaluación rigurosa de su rendimiento o aplicabilidad en producción requiere datos adicionales que no están disponibles en la publicación actual.
 
@@ -67,5 +67,5 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Amitsingh1508/brain-tumor-mri-classification-system-model
+- Hugging Face: https://huggingface.co/Amitsingh1508/brain-tumor-mri-classification-system-model
 - No se han encontrado otros enlaces (papers, blogs, repos) específicos de este modelo en la búsqueda web.

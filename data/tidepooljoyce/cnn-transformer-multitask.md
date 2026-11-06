@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tidepooljoyce/cnn-transformer-multitask` es un repositorio experimental publicado en HuggingFace por el usuario tidepooljoyce que contiene un esqueleto de código para una arquitectura híbrida denominada Cnn Transformer orientada a tareas múltiples (multitask). No se trata de un modelo entrenado ni evaluado, sino de un punto de partida reproducible: incluye `main.py`, `config.json`, `training_args.json` y un `model.safetensors` que el propio autor describe explícitamente como checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`tidepooljoyce/cnn-transformer-multitask` es un repositorio experimental publicado en Hugging Face por el usuario tidepooljoyce que contiene un esqueleto de código para una arquitectura híbrida denominada Cnn Transformer orientada a tareas múltiples (multitask). No se trata de un modelo entrenado ni evaluado, sino de un punto de partida reproducible: incluye `main.py`, `config.json`, `training_args.json` y un `model.safetensors` que el propio autor describe explícitamente como checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 La relevancia del artefacto es, por tanto, metodológica más que de rendimiento. El autor insiste en que no se reclama ninguna puntuación de benchmark y que cualquier evaluación seria requeriría un conjunto de validación específico de tarea, al menos tres semillas aleatorias y una línea base de capacidad equiparable. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y su tamaño es de 0,0 GB.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - Compatibilidad con GPU de consumo: si, en cualquier modelo consumer (serie RTX 40, RTX 30, GTX e incluso hardware sin CUDA via CPU).
 - Opciones de despliegue: PyTorch nativo mediante `main.py`. No hay soporte documentado para vLLM, llama.cpp, Ollama, TGI ni otros servidores de inferencia, ya que la implementacion es personalizada y no sigue el contrato de `AutoModelForCausalLM`.
 - Latencia y throughput estimados: no disponibles. Con este recuento de parametros, la latencia estaria dominada por el coste de arranque del proceso y la sobrecarga de Python, no por el computo matricial.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -85,11 +85,11 @@ La categoria real de comparacion no son los LLM de proposito general, sino los e
 - Riesgo de alucinacion: no aplica en el sentido habitual al no haber modelo generativo entrenado; el riesgo equivalente es interpretar el repositorio como un modelo listo para usar.
 - Limitaciones de idioma y contexto: no disponibles; no se declara ningun idioma ni ventana de contexto soportada.
 - Restricciones de licencia: MIT permite uso comercial, modificacion y redistribucion con aviso de copyright. La model card advierte que deben revisarse por separado los terminos de los datos de origen si se emplean datasets externos.
-- Caveat de produccion: las APIs genericas de carga automatica de HuggingFace no funcionaran sin un adaptador explicito, dado que la implementacion es personalizada.
+- Caveat de produccion: las APIs genericas de carga automatica de Hugging Face no funcionaran sin un adaptador explicito, dado que la implementacion es personalizada.
 - Caveat de reproducibilidad: cualquier resultado futuro debe documentarse por separado de los valores por defecto incluidos aqui, ya que las recetas del script no constituyen evidencia de ejecucion.
 - Fecha de creacion y actualizacion: 6 de octubre de 2026 en ambos casos, con seis segundos de diferencia entre ambas marcas, lo que sugiere una publicacion unica sin mantenimiento posterior.
 
 ## Enlaces
 
-- [Modelo en HuggingFace: tidepooljoyce/cnn-transformer-multitask](https://huggingface.co/tidepooljoyce/cnn-transformer-multitask)
+- [Modelo en Hugging Face: tidepooljoyce/cnn-transformer-multitask](https://huggingface.co/tidepooljoyce/cnn-transformer-multitask)
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos asociados al modelo.

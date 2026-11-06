@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DiscoveryRSI-27B-GGUF es una distribución en formato GGUF de un modelo de lenguaje de 27.320.697.856 parámetros (27,3 B) publicado por el usuario mkurman en HuggingFace bajo licencia Apache 2.0. El repositorio contiene únicamente pesos cuantizados en GGUF (16,8 GB en total), pensados para inferencia local con herramientas como llama.cpp u Ollama, y lleva las etiquetas `conversational` y `endpoints_compatible`, lo que indica que está orientado a uso conversacional y a desplegarse detrás de una API compatible con los endpoints de HuggingFace.
+DiscoveryRSI-27B-GGUF es una distribución en formato GGUF de un modelo de lenguaje de 27.320.697.856 parámetros (27,3 B) publicado por el usuario mkurman en Hugging Face bajo licencia Apache 2.0. El repositorio contiene únicamente pesos cuantizados en GGUF (16,8 GB en total), pensados para inferencia local con herramientas como llama.cpp u Ollama, y lleva las etiquetas `conversational` y `endpoints_compatible`, lo que indica que está orientado a uso conversacional y a desplegarse detrás de una API compatible con los endpoints de Hugging Face.
 
 La model card del autor está prácticamente vacía: solo incluye el bloque de licencia. No se documenta el modelo base, la arquitectura, los datos de entrenamiento, la longitud de contexto, los idiomas soportados ni los resultados de evaluación. Cualquier afirmación sobre capacidades concretas (tool calling, visión, modo de razonamiento, multilingüismo) debe considerarse no verificada hasta que el autor publique información adicional.
 
@@ -30,7 +30,7 @@ Tampoco se documentan los datos de entrenamiento (número de tokens, composició
 ## Capacidades
 
 - Generación de texto conversacional: la etiqueta `conversational` y el formato de plantilla de chat esperado en GGUF apuntan a un uso de diálogo multi-turno, aunque la plantilla exacta no está documentada.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio está preparado para servirse mediante una API compatible con los endpoints de HuggingFace (por ejemplo, TGI o un servidor GGUF con esa interfaz).
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio está preparado para servirse mediante una API compatible con los endpoints de Hugging Face (por ejemplo, TGI o un servidor GGUF con esa interfaz).
 - Inferencia local: al estar en GGUF, es ejecutable con llama.cpp, Ollama y derivados, incluyendo CPU y GPU.
 - Razonamiento, matemáticas y código: no disponibles como capacidades verificadas; no hay benchmarks ni ejemplos en la model card.
 - Tool calling / function calling: no disponible; no se documenta soporte de herramientas ni formato de llamadas.
@@ -91,5 +91,5 @@ Los datos de los modelos comparados provienen de sus respectivas model cards; co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mkurman/DiscoveryRSI-27B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/mkurman/DiscoveryRSI-27B-GGUF
 - No se han encontrado papers, blogs técnicos, repositorios de código ni demos asociados en la información disponible.

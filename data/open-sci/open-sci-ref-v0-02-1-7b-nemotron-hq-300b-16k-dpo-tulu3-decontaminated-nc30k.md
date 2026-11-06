@@ -30,7 +30,7 @@ El entrenamiento se ejecuto con los siguientes hiperparametros: learning rate 4e
 ## Capacidades
 
 - Generacion de texto y ajuste fino supervisado sobre instrucciones en formato ShareGPT, segun el dataset de entrenamiento.
-- Extraccion de caracteristicas (feature-extraction) como pipeline declarado en HuggingFace.
+- Extraccion de caracteristicas (feature-extraction) como pipeline declarado en Hugging Face.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni razonamiento multi-paso.
 - Capacidades multilingues: no disponibles.
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-DPO-Tulu3-decontaminated-nc30k | 1,7 B | no disponible | other | HuggingFace, 14 descargas |
-| Modelo base: ali-elganzory/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-DPO-Tulu3-decontaminated | 1,7 B (se infiere) | no disponible | no disponible | HuggingFace |
+| open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-DPO-Tulu3-decontaminated-nc30k | 1,7 B | no disponible | other | Hugging Face, 14 descargas |
+| Modelo base: ali-elganzory/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-DPO-Tulu3-decontaminated | 1,7 B (se infiere) | no disponible | no disponible | Hugging Face |
 | Alternativas de 1-2 B (Qwen2.5-1.5B, Llama-3.2-1B, Gemma-2-2B) | 1-2 B | 4k-128k segun modelo | licencias permisivas o comunitarias | ampliamente disponibles |
 
 No se dispone de datos de rendimiento comparativo para este checkpoint, por lo que la comparativa se limita a parametros y disponibilidad. Los modelos alternativos citados son referencias genericas de la misma categoria de tamano y no se han evaluado contra este modelo en la informacion proporcionada.
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativo para este checkpoint, por lo q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-DPO-Tulu3-decontaminated-nc30k
+- Hugging Face: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-DPO-Tulu3-decontaminated-nc30k
 - Modelo base: https://huggingface.co/ali-elganzory/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-DPO-Tulu3-decontaminated
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la busqueda web proporcionada.

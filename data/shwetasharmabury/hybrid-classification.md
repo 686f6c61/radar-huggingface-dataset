@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shwetasharmabury/hybrid-classification` es un repositorio de HuggingFace que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura denominada "Hybrid" orientada a tareas de clasificacion. No se trata de un modelo preentrenado ni de un release listo para produccion: el propio autor lo describe como una configuracion "tiny" pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala.
+`shwetasharmabury/hybrid-classification` es un repositorio de Hugging Face que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura denominada "Hybrid" orientada a tareas de clasificacion. No se trata de un modelo preentrenado ni de un release listo para produccion: el propio autor lo describe como una configuracion "tiny" pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala.
 
 El modelo tiene 24.832 parametros totales, un tamano que lo situa muy por debajo de cualquier transformer utilizable en tareas reales. El checkpoint `model.safetensors` es una inicializacion valida para pruebas, no un checkpoint entrenado ni evaluado con benchmarks. El repositorio incluye tambien `eval.py` como artefacto principal, `config.json` con los ajustes de arquitectura y `training_args.json` con la receta de experimento por defecto (optimizador adam con schedule de tipo step).
 
@@ -44,7 +44,7 @@ Como innovacion destacable no hay ninguna declarada. El autor recomienda, para u
 - La unica finalidad declarada es la clasificacion, dentro de un contexto de experimentacion controlada.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas esta vacio en HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas esta vacio en Hugging Face).
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
 - Al ser una implementacion personalizada, las APIs genericas de carga automatica requieren un adaptador explicito antes de poder usarse.
 
@@ -91,7 +91,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shwetasharmabury/hybrid-classification
+- Modelo en Hugging Face: https://huggingface.co/shwetasharmabury/hybrid-classification
 - Hugging Face (portal general): https://huggingface.co/
 - AI Models Benchmark (leaderboard de referencia general): https://aimodelsbenchmark.com/
 - Patron de clasificacion hibrida reglas + embeddings + LLM (contexto de diseno, no vinculado al repositorio): https://appscale.blog/en/blog/microservices-pattern-hybrid-classification-2026

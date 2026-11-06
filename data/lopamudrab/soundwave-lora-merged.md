@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `LopamudraB/soundwave-lora-merged` es un checkpoint de generación de texto publicado en HuggingFace por el usuario LopamudraB. Según las etiquetas del repositorio, está construido sobre la arquitectura Qwen2 y su recuento real de parámetros (494.032.768, extraído de los pesos en safetensors) coincide con el de la familia Qwen2-0.5B. El sufijo "lora-merged" del nombre sugiere que se trata de un adaptador LoRA fusionado con un modelo base, una práctica habitual para combinar capacidades sin reentrenamiento completo.
+El modelo `LopamudraB/soundwave-lora-merged` es un checkpoint de generación de texto publicado en Hugging Face por el usuario LopamudraB. Según las etiquetas del repositorio, está construido sobre la arquitectura Qwen2 y su recuento real de parámetros (494.032.768, extraído de los pesos en safetensors) coincide con el de la familia Qwen2-0.5B. El sufijo "lora-merged" del nombre sugiere que se trata de un adaptador LoRA fusionado con un modelo base, una práctica habitual para combinar capacidades sin reentrenamiento completo.
 
-El problema que resuelve no está documentado: el repositorio incluye únicamente la plantilla automática de model card de HuggingFace, sin descripción, datos de entrenamiento, licencia ni idiomas declarados. Tampoco hay resultados de evaluación ni ejemplos de uso. Por tanto, cualquier evaluación técnica debe hacerse a partir del propio checkpoint y no de la documentación publicada.
+El problema que resuelve no está documentado: el repositorio incluye únicamente la plantilla automática de model card de Hugging Face, sin descripción, datos de entrenamiento, licencia ni idiomas declarados. Tampoco hay resultados de evaluación ni ejemplos de uso. Por tanto, cualquier evaluación técnica debe hacerse a partir del propio checkpoint y no de la documentación publicada.
 
 Su relevancia actual es limitada pero concreta: se trata de un modelo compacto (menos de 500 millones de parámetros, ~1 GB en el repositorio) que puede ejecutarse en hardware muy modesto, incluso en CPU o en GPUs de gama de entrada. Esto lo hace interesante como punto de partida para experimentación con fusiones de LoRA, ajuste fino posterior o despliegue en el borde (edge), siempre que el usuario verifique por su cuenta el comportamiento real del modelo.
 
@@ -35,7 +35,7 @@ Tampoco se documentan los datos de entrenamiento, el número de tokens, la compo
 
 - Generacion de texto autorregresiva (pipeline `text-generation` declarado en el repositorio).
 - Conversacion multi-turno (etiqueta `conversational`), aunque no se documenta el formato de prompt esperado.
-- Compatible con `text-generation-inference` y con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatible con `text-generation-inference` y con endpoints de Hugging Face (`endpoints_compatible`).
 - No se declara soporte de tool calling ni de function calling.
 - No se declara soporte de agentes ni de razonamiento multi-paso.
 - No se declara soporte de vision, audio ni modos de "thinking".
@@ -74,16 +74,16 @@ La informacion publicada no permite una comparativa rigurosa, ya que no se decla
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LopamudraB/soundwave-lora-merged | 494.032.768 | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen2-0.5B (referencia base tipica) | ~494 M | no confirmada para este modelo | Apache 2.0 (segun la familia Qwen2) | HuggingFace |
-| Qwen2.5-0.5B | ~494 M | no confirmada para este modelo | Apache 2.0 (segun la familia Qwen2.5) | HuggingFace |
-| SmolLM2-360M | ~360 M | no confirmada para este modelo | Apache 2.0 (segun el autor) | HuggingFace |
+| LopamudraB/soundwave-lora-merged | 494.032.768 | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen2-0.5B (referencia base tipica) | ~494 M | no confirmada para este modelo | Apache 2.0 (segun la familia Qwen2) | Hugging Face |
+| Qwen2.5-0.5B | ~494 M | no confirmada para este modelo | Apache 2.0 (segun la familia Qwen2.5) | Hugging Face |
+| SmolLM2-360M | ~360 M | no confirmada para este modelo | Apache 2.0 (segun el autor) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (MMLU, HumanEval, GSM8K ni similares) en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla automatica de HuggingFace, sin datos de entrenamiento, evaluacion ni uso previsto.
+- Ausencia total de documentacion: la model card es la plantilla automatica de Hugging Face, sin datos de entrenamiento, evaluacion ni uso previsto.
 - Licencia no declarada: no se puede asumir uso comercial libre; es imprescindible contactar con el autor antes de cualquier despliegue en produccion.
 - Riesgo de alucinacion: inherente a los modelos generativos; al no haber evaluacion publicada, la tasa real es desconocida y probablemente elevada en un modelo de este tamano.
 - Sesgos: no se documentan la composicion del dataset ni los filtros aplicados, por lo que los sesgos sociales, culturales y linguisticos del modelo base y del LoRA fusionado son desconocidos.
@@ -94,9 +94,9 @@ No se dispone de datos de rendimiento comparativo (MMLU, HumanEval, GSM8K ni sim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LopamudraB/soundwave-lora-merged
+- Hugging Face: https://huggingface.co/LopamudraB/soundwave-lora-merged
 - Paper citado en la plantilla (Lacoste et al., 2019, calculo de impacto): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact
-- Guia de fusion de modelos de PEFT (HuggingFace): https://huggingface.co/docs/peft/developer_guides/model_merging
+- Guia de fusion de modelos de PEFT (Hugging Face): https://huggingface.co/docs/peft/developer_guides/model_merging
 - Guia general de LoRA merging (Apatero): https://www.apatero.com/blog/lora-merge-combine-multiple-models-guide-2025
 - Utilidades de guardado y fusion de LoRA en Unsloth: https://deepwiki.com/unslothai/unsloth-zoo/3.2-saving-and-merging-models

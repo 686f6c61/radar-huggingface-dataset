@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mimba/whisper-mimba-v1",
+  "slug": "mimba-whisper-mimba-v1",
+  "author": "mimba",
+  "url": "https://huggingface.co/mimba/whisper-mimba-v1",
+  "created_at": "2026-11-04T08:12:00.000Z",
+  "updated_at": "2026-11-05T08:42:48.000Z",
+  "license": "mimba-proprietary",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "plt",
+    "mfe",
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "plt",
+    "mfe",
+    "fr",
+    "en",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 966995080,
+  "storage_human": "967 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mimba/whisper-mimba-v1 · Hugging Face",
+      "url": "https://huggingface.co/mimba/whisper-mimba-v1",
+      "snippet": "Instructions to use mimba/whisper-mimba-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use mimba/whisper-mimba-v1 with Transformers:"
+    },
+    {
+      "title": "mimba/wav2vec2-mimba-v1 · Hugging Face",
+      "url": "https://huggingface.co/mimba/wav2vec2-mimba-v1",
+      "snippet": "Entraîné sur mimba/mimba-stt-synthetique (audio de synthèse) + mimba/multivoice-plt, mimba/multivoice-mfe, mimba/multivoice-fr, mimba/multivoice-en, bruit ajouté au hasard. Meilleur pas 50235. Test sur des voix jamais entendues à l'entraînement (synthétiques : à confirmer sur de vraies voix)."
+    }
+  ]
+}

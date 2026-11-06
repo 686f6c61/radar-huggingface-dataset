@@ -97,6 +97,6 @@ No se dispone en la informacion proporcionada de otros modelos comparables de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/infosave/MiniCPM-V-4.7-35B-A3B-cmf
+- Repositorio Hugging Face: https://huggingface.co/infosave/MiniCPM-V-4.7-35B-A3B-cmf
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - Proyecto CMF (formato y herramienta): https://github.com/infosave2007/cmf

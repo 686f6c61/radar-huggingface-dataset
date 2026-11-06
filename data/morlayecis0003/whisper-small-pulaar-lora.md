@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`morlayecis0003/whisper-small-pulaar-lora` es un adaptador LoRA sobre el modelo de reconocimiento automatico del habla (ASR) `openai/whisper-small` de OpenAI, entrenado para transcribir **pulaar** (fulfulde), una lengua que no forma parte de las 112 cubiertas oficialmente por Whisper. El autor es el usuario de HuggingFace `morlayecis0003`, y la publicacion se realizo el 19 de septiembre de 2026 segun los metadatos de la plataforma.
+`morlayecis0003/whisper-small-pulaar-lora` es un adaptador LoRA sobre el modelo de reconocimiento automatico del habla (ASR) `openai/whisper-small` de OpenAI, entrenado para transcribir **pulaar** (fulfulde), una lengua que no forma parte de las 112 cubiertas oficialmente por Whisper. El autor es el usuario de Hugging Face `morlayecis0003`, y la publicacion se realizo el 19 de septiembre de 2026 segun los metadatos de la plataforma.
 
 El modelo no es un modelo completo, sino un conjunto de pesos incrementales en formato PEFT/LoRA (`library_name: peft`) que se cargan sobre el checkpoint base de Whisper Small. La model card esta redactada en frances y documenta un corpus de 28,4 horas de voz en pulaar tras limpieza, con eliminacion de 3.643 ficheros WAV vacios, deduplicacion entre subcorpus y divisiones (splits) construidas sin fuga de locutor ni de transcripcion. La innovacion principal es metodologica: al no existir un token de idioma dedicado para pulaar, el autor selecciono empiricamente el token `ha` (hausa) entre 11 configuraciones evaluadas.
 
@@ -24,7 +24,7 @@ Su relevancia es la de un artefacto de investigacion en el ambito de ASR para le
 | Tipo de adaptacion | LoRA mediante PEFT (`library_name: peft`, tags `peft`, `lora`, `asr`) |
 | Datos de entrenamiento | 28,4 horas de voz en pulaar tras limpieza; 3.643 ficheros WAV vacios descartados; deduplicacion entre subcorpus; splits sin fuga de locutor ni de transcripcion |
 | Numero de locutores | Aproximadamente 10 locutores distintos en el corpus de entrenamiento |
-| Tamano del repositorio | 0.0 GB segun los metadatos de HuggingFace |
+| Tamano del repositorio | 0.0 GB segun los metadatos de Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Soporte de pulaar | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `morlayecis0003/whisper-small-pulaar-lora` | Adaptador LoRA sobre Whisper Small; parametros entrenables no especificados | Ventanas de 30 s de audio | Si, via adaptador (token `ha`) | apache-2.0 | HuggingFace, 0 descargas |
+| `morlayecis0003/whisper-small-pulaar-lora` | Adaptador LoRA sobre Whisper Small; parametros entrenables no especificados | Ventanas de 30 s de audio | Si, via adaptador (token `ha`) | apache-2.0 | Hugging Face, 0 descargas |
 | `openai/whisper-small` (base) | Del orden de 244 millones | Ventanas de 30 s de audio | No; 112 lenguas nativas sin pulaar | MIT (modelo base de OpenAI) | Ampliamente disponible |
 | `openai/whisper-base` (base) | Del orden de 74 millones | Ventanas de 30 s de audio | No | MIT | Ampliamente disponible |
 | Alternativas ASR especificas para pulaar | No disponible | No disponible | No disponible | No disponible | No se han identificado en la informacion proporcionada |
@@ -94,7 +94,7 @@ No se dispone de datos verificados en la informacion proporcionada sobre otros m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/morlayecis0003/whisper-small-pulaar-lora
+- Hugging Face: https://huggingface.co/morlayecis0003/whisper-small-pulaar-lora
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper
 - Libreria PEFT: https://github.com/huggingface/peft

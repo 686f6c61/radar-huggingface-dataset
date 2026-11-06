@@ -2,7 +2,7 @@
 
 ## Resumen
 
-paulwagne/mocov3-contrastive es un repositorio de HuggingFace que contiene una implementacion propia y compacta en PyTorch del metodo MoCoV3 (Momentum Contrast v3) orientada al aprendizaje contrastivo. No es un modelo entrenado ni una release de pesos preentrenados: la model card lo describe explicitamente como un punto de partida experimental para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno alcance. El autor lo publica en configuracion etiquetada como "large", aunque el propio README matiza que no se presenta como un checkpoint de referencia con benchmarks.
+paulwagne/mocov3-contrastive es un repositorio de Hugging Face que contiene una implementacion propia y compacta en PyTorch del metodo MoCoV3 (Momentum Contrast v3) orientada al aprendizaje contrastivo. No es un modelo entrenado ni una release de pesos preentrenados: la model card lo describe explicitamente como un punto de partida experimental para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno alcance. El autor lo publica en configuracion etiquetada como "large", aunque el propio README matiza que no se presenta como un checkpoint de referencia con benchmarks.
 
 El peso publicado, model.safetensors, es un checkpoint de inicializacion valido para pruebas, no un modelo con rendimiento evaluado. El repositorio incluye tambien train.py (artefacto principal), config.json (ajustes de arquitectura) y training_args.json (receta de experimento por defecto). La licencia es Apache 2.0 y el formato de pesos es safetensors, con 0 descargas y 0 likes en el momento de la consulta, lo que refleja su caracter de recurso recien publicado y sin adopcion.
 
@@ -68,12 +68,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| paulwagne/mocov3-contrastive | 16.576 | no aplica | no publicados | Apache 2.0 | HuggingFace, autor individual |
-| Courtneyhall/mocov3-contrastive | no disponible | no aplica | omitidos deliberadamente | no disponible | HuggingFace, autor individual |
-| unijenamechatronics/contrastive | no disponible | no aplica | no publicados | Apache 2.0 | HuggingFace, autor individual |
+| paulwagne/mocov3-contrastive | 16.576 | no aplica | no publicados | Apache 2.0 | Hugging Face, autor individual |
+| Courtneyhall/mocov3-contrastive | no disponible | no aplica | omitidos deliberadamente | no disponible | Hugging Face, autor individual |
+| unijenamechatronics/contrastive | no disponible | no aplica | no publicados | Apache 2.0 | Hugging Face, autor individual |
 | facebookresearch/moco-v3 | no disponible en la busqueda | no aplica | receta de referencia para ViT y ResNet | no disponible en la busqueda | Repositorio oficial de Meta AI |
 
-La comparacion con la implementacion oficial de MoCoV3 es la mas relevante: mientras que facebookresearch/moco-v3 es la referencia publicada por el grupo de investigacion, este repositorio es una reimplementacion independiente sin resultados de evaluacion. Los otros dos repositorios de HuggingFace encontrados en la busqueda comparten el mismo patron (implementaciones propias, sin benchmarks declarados) y no publican especificaciones comparables.
+La comparacion con la implementacion oficial de MoCoV3 es la mas relevante: mientras que facebookresearch/moco-v3 es la referencia publicada por el grupo de investigacion, este repositorio es una reimplementacion independiente sin resultados de evaluacion. Los otros dos repositorios de Hugging Face encontrados en la busqueda comparten el mismo patron (implementaciones propias, sin benchmarks declarados) y no publican especificaciones comparables.
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ La comparacion con la implementacion oficial de MoCoV3 es la mas relevante: mien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/paulwagne/mocov3-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/paulwagne/mocov3-contrastive
 - Repositorio de referencia MoCoV3 de Meta AI (DeepWiki): https://deepwiki.com/facebookresearch/moco-v3
 - Documentacion de MoCoV3 en MMPretrain: https://mmpretrain.readthedocs.io/en/latest/papers/mocov3.html
 - Courtneyhall/mocov3-contrastive: https://huggingface.co/Courtneyhall/mocov3-contrastive

@@ -83,7 +83,7 @@ Segun las fuentes, Ornith supera a Qwen 3.6-35B en benchmarks de codificacion y 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sawfwair/Ornith-1.5-35B-A3B-MLX-4bit-Vision-MTP
+- Repositorio Hugging Face: https://huggingface.co/Sawfwair/Ornith-1.5-35B-A3B-MLX-4bit-Vision-MTP
 - Modelo base (original): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Variante FP8: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8
 - Blog con especificaciones y benchmarks: https://www.aimadetools.com/blog/ornith-1-5-35b-a3b/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RPBizkitRemiX-v2-12B es un modelo de lenguaje de 12.247.782.400 parametros publicado por el usuario RicardoEstep en HuggingFace. No se trata de un entrenamiento desde cero, sino de un "merge" (fusion de pesos) construido en dos fases sobre Mistral Nemo Instruct 2407 en su variante "abliterated" de natong19. La primera fase combina cuatro checkpoints propios del autor (RPBizkit-v2, v6 y v9 de 12B, mas el modelo base) mediante el algoritmo DARE TIES implementado en Mergekit; la segunda aplica un merge selectivo de una LoRA de "re-abiliteracion" (nbeerbower/Mistral-Nemo-12B-abliterated-LORA) con escalados diferenciados por tipo de capa (atencion, MLP y vocabulario).
+RPBizkitRemiX-v2-12B es un modelo de lenguaje de 12.247.782.400 parametros publicado por el usuario RicardoEstep en Hugging Face. No se trata de un entrenamiento desde cero, sino de un "merge" (fusion de pesos) construido en dos fases sobre Mistral Nemo Instruct 2407 en su variante "abliterated" de natong19. La primera fase combina cuatro checkpoints propios del autor (RPBizkit-v2, v6 y v9 de 12B, mas el modelo base) mediante el algoritmo DARE TIES implementado en Mergekit; la segunda aplica un merge selectivo de una LoRA de "re-abiliteracion" (nbeerbower/Mistral-Nemo-12B-abliterated-LORA) con escalados diferenciados por tipo de capa (atencion, MLP y vocabulario).
 
 El modelo hereda por tanto la arquitectura Mistral Nemo: un transformer decoder-only de aproximadamente 12.000 millones de parametros, con atencion de consultas agrupadas (GQA), tokenizador de 131.072 entradas y una ventana de contexto que el autor afirma haber dejado operativa hasta 128K tokens tras corregir el tamano de embeddings y el tokenizador. El ajuste de la LoRA usa escalas muy bajas (0,12 en atencion, 0,06 en MLP y 0,03 en lm_head), de modo que la contribucion de la LoRA es un matiz sobre el merge previo y no una reescritura de pesos.
 
@@ -24,7 +24,7 @@ La relevancia de esta ficha es doble. Por un lado, es un ejemplo representativo 
 | Tamano del repositorio | 24,5 GB |
 | Tokenizador | 131.072 entradas (vocabulario Mistral Nemo) |
 | Metodo de construccion | Mergekit con `merge_method: dare_ties` + merge manual de LoRA con escalado hibrido |
-| Fecha de creacion | 25 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 25 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 descargas / 1 like |
 
 ## Arquitectura y entrenamiento
@@ -78,11 +78,11 @@ Los siguientes valores son estimaciones derivadas del numero de parametros (12.2
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RPBizkitRemiX-v2-12B | 12.247.782.400 | 128K declarados por el autor | Denso, merge DARE TIES + LoRA | no disponible | HuggingFace, 0 descargas |
-| natong19/Mistral-Nemo-Instruct-2407-abliterated | no disponible | no disponible | Denso, base del merge; fine-tuning de Mistral Nemo | no disponible | HuggingFace |
-| RicardoEstep/RPBizkit-v9-12B | no disponible | no disponible | Denso, componente del merge (peso 0,30) | no disponible | HuggingFace |
-| nbeerbower/Mistral-Nemo-12B-abliterated-LORA | no disponible (adaptador) | no disponible | LoRA sobre Mistral Nemo, aplicada con escala hibrida | no disponible | HuggingFace |
-| Mistral-Nemo-Instruct-2407 (referencia de la familia) | 12.000 millones aprox. | 128K tokens | Denso, modelo Instruct oficial | Apache 2.0 | HuggingFace, ampliamente desplegado |
+| RPBizkitRemiX-v2-12B | 12.247.782.400 | 128K declarados por el autor | Denso, merge DARE TIES + LoRA | no disponible | Hugging Face, 0 descargas |
+| natong19/Mistral-Nemo-Instruct-2407-abliterated | no disponible | no disponible | Denso, base del merge; fine-tuning de Mistral Nemo | no disponible | Hugging Face |
+| RicardoEstep/RPBizkit-v9-12B | no disponible | no disponible | Denso, componente del merge (peso 0,30) | no disponible | Hugging Face |
+| nbeerbower/Mistral-Nemo-12B-abliterated-LORA | no disponible (adaptador) | no disponible | LoRA sobre Mistral Nemo, aplicada con escala hibrida | no disponible | Hugging Face |
+| Mistral-Nemo-Instruct-2407 (referencia de la familia) | 12.000 millones aprox. | 128K tokens | Denso, modelo Instruct oficial | Apache 2.0 | Hugging Face, ampliamente desplegado |
 
 No hay datos publicados de rendimiento para ninguno de los merges de la comparativa, por lo que la eleccion entre ellos solo puede hacerse por evaluacion empirica propia. La diferencia mas relevante frente al modelo oficial de Mistral es la licencia: el modelo original es Apache 2.0, mientras que la licencia de este merge no esta declarada.
 
@@ -102,7 +102,7 @@ No hay datos publicados de rendimiento para ninguno de los merges de la comparat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RicardoEstep/RPBizkitRemiX-v2-12B
+- Modelo en Hugging Face: https://huggingface.co/RicardoEstep/RPBizkitRemiX-v2-12B
 - Modelo base (abliterated): https://huggingface.co/natong19/Mistral-Nemo-Instruct-2407-abliterated
 - Componente del merge (peso 0,30): https://huggingface.co/RicardoEstep/RPBizkit-v9-12B
 - Componente del merge (peso 0,59): https://huggingface.co/RicardoEstep/RPBizkit-v6-12B

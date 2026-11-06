@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HGRN-1.3B-unstructured-ELSA-90pct es un artefacto de investigación publicado por el usuario ikimyaii en HuggingFace: el modelo base `fla-hub/hgrn-1.3B-100B` podado al 90 % de dispersión no estructurada mediante el código oficial de ELSA (paper arXiv:2510.01650). No es un modelo afinado para uso general, sino una línea base (*baseline*) para el proyecto EHWS, orientado a comparar métodos de poda sobre arquitecturas lineales recurrentes de la familia HGRN.
+HGRN-1.3B-unstructured-ELSA-90pct es un artefacto de investigación publicado por el usuario ikimyaii en Hugging Face: el modelo base `fla-hub/hgrn-1.3B-100B` podado al 90 % de dispersión no estructurada mediante el código oficial de ELSA (paper arXiv:2510.01650). No es un modelo afinado para uso general, sino una línea base (*baseline*) para el proyecto EHWS, orientado a comparar métodos de poda sobre arquitecturas lineales recurrentes de la familia HGRN.
 
 El modelo conserva 1.364.396.032 parámetros en el checkpoint (los ceros se almacenan físicamente en los pesos), con embeddings y `lm_head` sin podar, umbral de magnitud único por capa y filas desequilibradas. El resultado es una degradación severa de calidad: perplejidad de 213,97 en WikiText-2 frente a 11,81 del modelo denso, y precisión media cero-shot de 0,3623 frente a 0,4376.
 
@@ -85,11 +85,11 @@ Precisión cero-shot (lm-evaluation-harness, 0-shot):
 
 | Modelo | Parametros | Dispersión | WikiText-2 | C4 | Media 0-shot | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| fla-hub/hgrn-1.3B-100B (denso) | 1,3B (aprox.) | 0 % | 11,81 | 16,09 | 0,4376 | no disponible | HuggingFace |
-| Este modelo (ELSA unstructured 90 %) | 1.364.396.032 | 90 % no estructurada | 213,97 | 79,08 | 0,3623 | no disponible | HuggingFace |
-| ELSA unstructured 90 % tuned (ikimyaii) | 1,3B (aprox.) | 90 % no estructurada | 115,59 | 60,21 | no disponible | no disponible | HuggingFace |
-| ElSA row-wise 90 % tuned (ikimyaii) | 1,3B (aprox.) | 90 % semi-estructurada | 144,16 | 68,91 | no disponible | no disponible | HuggingFace |
-| EHWS row-wise 90 % (ikimyaii) | 1,3B (aprox.) | 90 % semi-estructurada | 81,74 | 47,42 | no disponible | no disponible | HuggingFace |
+| fla-hub/hgrn-1.3B-100B (denso) | 1,3B (aprox.) | 0 % | 11,81 | 16,09 | 0,4376 | no disponible | Hugging Face |
+| Este modelo (ELSA unstructured 90 %) | 1.364.396.032 | 90 % no estructurada | 213,97 | 79,08 | 0,3623 | no disponible | Hugging Face |
+| ELSA unstructured 90 % tuned (ikimyaii) | 1,3B (aprox.) | 90 % no estructurada | 115,59 | 60,21 | no disponible | no disponible | Hugging Face |
+| ElSA row-wise 90 % tuned (ikimyaii) | 1,3B (aprox.) | 90 % semi-estructurada | 144,16 | 68,91 | no disponible | no disponible | Hugging Face |
+| EHWS row-wise 90 % (ikimyaii) | 1,3B (aprox.) | 90 % semi-estructurada | 81,74 | 47,42 | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -106,7 +106,7 @@ Precisión cero-shot (lm-evaluation-harness, 0-shot):
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/HGRN-1.3B-unstructured-ELSA-90pct
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/HGRN-1.3B-unstructured-ELSA-90pct
 - Modelo base: https://huggingface.co/fla-hub/hgrn-1.3B-100B
 - Variante reajustada al 90 %: https://huggingface.co/ikimyaii/HGRN-1.3B-unstructured-ELSA-90pct-tuned
 - Variante ELSA row-wise 90 %: https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-ELSA-90pct-tuned

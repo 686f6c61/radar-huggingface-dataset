@@ -78,7 +78,7 @@ La comparativa se basa en tamaños y características generales; no se dispone d
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/majentik/nomic-embed-text-v2-moe-GGUF-Q8_0
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/majentik/nomic-embed-text-v2-moe-GGUF-Q8_0
 - Modelo base original: https://huggingface.co/nomic-ai/nomic-embed-text-v2-moe
 - Garden hub de majentik: https://huggingface.co/majentik/garden
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

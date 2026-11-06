@@ -119,7 +119,7 @@ Observaciones: Vela-1.0-Encoder-307M-Embedding supera a Vela-1.0-Omni-Mini en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llm-semantic-router/Vela-1.0-Omni-Mini
+- Modelo en Hugging Face: https://huggingface.co/llm-semantic-router/Vela-1.0-Omni-Mini
 - Demo Vela Studio: https://huggingface.co/spaces/llm-semantic-router/vela-studio
 - Coleccion Vela 1.0: https://huggingface.co/collections/llm-semantic-router/vela-10-6aa555ba70cc6997d6d67798
 - Modelo comparable Vela-1.0-Encoder-307M-Embedding: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Embedding

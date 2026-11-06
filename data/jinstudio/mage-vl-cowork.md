@@ -78,8 +78,8 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval 
 
 | Modelo | Parámetros | Contexto | OSWorld-Verified | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mage-VL-Cowork | 4,74B | No disponible | 66,0% | Apache 2.0 | HuggingFace (Jinstudio) |
-| Mage-VL (base) | 4B (checkpoint intermedio) | No disponible | No disponible como resultado final | No disponible | HuggingFace (microsoft) |
+| Mage-VL-Cowork | 4,74B | No disponible | 66,0% | Apache 2.0 | Hugging Face (Jinstudio) |
+| Mage-VL (base) | 4B (checkpoint intermedio) | No disponible | No disponible como resultado final | No disponible | Hugging Face (microsoft) |
 | Profesor GPT-5.4 con harness evolucionado | No disponible | No disponible | 92,0% con 29,2% menos pasos | Propietaria | API |
 | Otros modelos CUA de 4B | No disponible | No disponible | Inferior según la model card ("best performance among 4B models") | No disponible | No disponible |
 
@@ -100,7 +100,7 @@ La model card no identifica por nombre los modelos comparables de 4B; solo afirm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jinstudio/Mage-VL-Cowork
+- Modelo en Hugging Face: https://huggingface.co/Jinstudio/Mage-VL-Cowork
 - Modelo oficial referenciado: https://huggingface.co/microsoft/Mage-VL-Cowork
 - Modelo base: https://huggingface.co/microsoft/Mage-VL
 - Página del proyecto: https://microsoft.github.io/Mage/cowork/

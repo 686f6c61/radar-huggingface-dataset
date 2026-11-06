@@ -4,7 +4,7 @@
 
 omniASR-CTC-3B-v2 es un modelo de reconocimiento automático del habla (ASR) basado en la arquitectura wav2vec2, convertido por el usuario iljab a partir del checkpoint oficial de Meta `omniASR-CTC-3B-v2.pt`. Forma parte de la familia Omnilingual ASR de Meta, diseñada para transcribir audio en más de 1600 idiomas, incluyendo lenguas con escasos recursos que nunca antes habían tenido cobertura ASR. El modelo emplea una cabeza CTC (Connectionist Temporal Classification) que permite una decodificación rápida y eficiente, adecuada para aplicaciones en tiempo real y de alto rendimiento.
 
-Con 3.081.401.008 parámetros (aproximadamente 3,08 mil millones), este modelo ofrece un equilibrio entre precisión y velocidad de inferencia. Su arquitectura de 60 capas encoder con tamaño oculto de 2048 y 16 cabezas de atención lo sitúa en la gama alta de los modelos ASR de código abierto. La licencia Apache-2.0 permite uso comercial sin restricciones, y su formato safetensors facilita la integración con el ecosistema HuggingFace Transformers. Aunque el modelo original de Meta soporta más de 1600 idiomas, la ficha de esta conversión no especifica la lista exacta de lenguas, por lo que se asume la cobertura del modelo base.
+Con 3.081.401.008 parámetros (aproximadamente 3,08 mil millones), este modelo ofrece un equilibrio entre precisión y velocidad de inferencia. Su arquitectura de 60 capas encoder con tamaño oculto de 2048 y 16 cabezas de atención lo sitúa en la gama alta de los modelos ASR de código abierto. La licencia Apache-2.0 permite uso comercial sin restricciones, y su formato safetensors facilita la integración con el ecosistema Hugging Face Transformers. Aunque el modelo original de Meta soporta más de 1600 idiomas, la ficha de esta conversión no especifica la lista exacta de lenguas, por lo que se asume la cobertura del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ El modelo sigue la arquitectura wav2vec2, un encoder transformer preentrenado de
 
 - Reconocimiento de voz automatico (ASR) de audio a texto, con soporte para mas de 1600 idiomas segun el modelo original.
 - Decodificacion CTC rapida, optimizada para transcripcion en tiempo real y escenarios de alto rendimiento.
-- Compatible con el pipeline `automatic-speech-recognition` de HuggingFace Transformers, lo que facilita su integracion en aplicaciones existentes.
+- Compatible con el pipeline `automatic-speech-recognition` de Hugging Face Transformers, lo que facilita su integracion en aplicaciones existentes.
 - No incluye capacidades de tool calling, agentes, vision ni generacion de texto libre; es exclusivamente un modelo de transcripcion.
 - Soporte multilingue amplio, aunque la lista exacta de idiomas no se detalla en esta conversion.
 - Al ser un modelo wav2vec2, puede adaptarse a dominios especificos mediante fine-tuning con datos propios.
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada para inferencia: con 3,08 mil millones de parametros, en precision FP16 se requieren aproximadamente 6,2 GB solo para los pesos, mas memoria para activaciones y audio de entrada. Se estima un minimo de 8-10 GB de VRAM para inferencia basica.
 - GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB) o superior para comodidad; tambien puede ejecutarse en A100/H100 para despliegues a gran escala.
 - En GPU de consumo: cabe en tarjetas con 12 GB o mas si se usa cuantizacion a 8 bits (int8) o 4 bits, aunque no se proporcionan cuantizaciones oficiales.
-- Opciones de despliegue: compatible con la libreria Transformers de HuggingFace, por lo que puede servirse con TGI (Text Generation Inference) o vLLM, aunque estos estan orientados a modelos de lenguaje; para ASR se recomienda usar pipelines de Transformers o servidores dedicados como Faster-Whisper (si se adapta) o implementaciones propias con ONNX.
+- Opciones de despliegue: compatible con la libreria Transformers de Hugging Face, por lo que puede servirse con TGI (Text Generation Inference) o vLLM, aunque estos estan orientados a modelos de lenguaje; para ASR se recomienda usar pipelines de Transformers o servidores dedicados como Faster-Whisper (si se adapta) o implementaciones propias con ONNX.
 - Latencia y throughput: no disponibles; al ser un modelo CTC, la velocidad de inferencia es significativamente mayor que la de modelos autoregresivos como Whisper, pero no se aportan cifras concretas.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ La comparativa se basa en datos publicos de los modelos originales. Whisper es l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/iljab/omniASR-CTC-3B-v2
+- Repositorio Hugging Face: https://huggingface.co/iljab/omniASR-CTC-3B-v2
 - Modelo original de Meta: https://huggingface.co/facebook/omniASR-CTC-3B
 - Version 1B de Meta: https://huggingface.co/facebook/omniASR-CTC-1B
 - Repositorio GitHub de Omnilingual ASR: https://github.com/facebookresearch/omnilingual-asr

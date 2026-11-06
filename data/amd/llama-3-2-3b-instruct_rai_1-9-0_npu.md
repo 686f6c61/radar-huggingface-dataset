@@ -6,7 +6,7 @@ Este repositorio contiene una exportación optimizada del modelo Llama-3.2-3B-In
 
 El modelo base es un transformer denso de 3.200 millones de parámetros, ajustado por instrucciones, con una ventana de contexto de 128.000 tokens y capacidad multilingüe (oficialmente ocho idiomas, aunque la ficha del repo declara solo inglés). Su relevancia radica en que permite ejecutar un LLM de gama media en local sobre hardware de consumo con NPU dedicada, sin depender de GPU discreta ni de servicios en la nube.
 
-El acceso al repositorio está restringido (gated): es necesario aceptar las condiciones de la licencia Llama 3.2 en HuggingFace antes de descargar los pesos. El tamaño del repo es de 4,5 GB, coherente con pesos cuantizados en ONNX para la NPU.
+El acceso al repositorio está restringido (gated): es necesario aceptar las condiciones de la licencia Llama 3.2 en Hugging Face antes de descargar los pesos. El tamaño del repo es de 4,5 GB, coherente con pesos cuantizados en ONNX para la NPU.
 
 ## Especificaciones técnicas
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible. La f
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: es necesario aceptar la licencia Llama 3.2 en HuggingFace para descargar los pesos.
+- Acceso restringido: es necesario aceptar la licencia Llama 3.2 en Hugging Face para descargar los pesos.
 - Licencia Llama 3.2 Community: permite uso comercial con condiciones (atribución, límite de 700 millones de usuarios mensuales, políticas de uso aceptable); revisar el texto completo antes de desplegar en producción.
 - Idiomas: la ficha declara solo inglés, aunque el modelo base soporta más idiomas; el rendimiento en otros idiomas puede degradarse tras la cuantización.
 - Riesgo de alucinación inherente a los LLM de 3B: menor fiabilidad factual que modelos de mayor tamaño en dominios especializados.
@@ -84,8 +84,8 @@ No se han publicado resultados de benchmarks en la información disponible. La f
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Llama-3.2-3B-Instruct_rai_1.9.0_npu
-- Modelo base en HuggingFace: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/amd/Llama-3.2-3B-Instruct_rai_1.9.0_npu
+- Modelo base en Hugging Face: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Documentación de Ryzen AI: https://ryzenai.docs.amd.com/
 - Repositorio Quark (cuantización AMD): https://github.com/amd/quark
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AksharaLP-Sentence-2.8M es un modelo compacto de transliteración de hindi romanizado a escritura devanagari, desarrollado por el usuario sourojitdotcom y publicado en HuggingFace bajo licencia Apache 2.0. No es un transformer generativo al uso: es un sistema híbrido compuesto por un modelo de palabras (989K parámetros) que propone candidatos de escritura para cada token romanizado y un modelo de lenguaje neuronal en hindi (2,77M parámetros) que desambigua esas propuestas de forma conjunta a nivel de frase. El problema que aborda es concreto: la transliteración palabra a palabra falla en casos donde la forma romanizada es ambigua y solo el contexto de la frase determina la grafía correcta (por ejemplo, *hu* puede ser हूं o हुआ, y *pata* puede ser पता o पाता).
+AksharaLP-Sentence-2.8M es un modelo compacto de transliteración de hindi romanizado a escritura devanagari, desarrollado por el usuario sourojitdotcom y publicado en Hugging Face bajo licencia Apache 2.0. No es un transformer generativo al uso: es un sistema híbrido compuesto por un modelo de palabras (989K parámetros) que propone candidatos de escritura para cada token romanizado y un modelo de lenguaje neuronal en hindi (2,77M parámetros) que desambigua esas propuestas de forma conjunta a nivel de frase. El problema que aborda es concreto: la transliteración palabra a palabra falla en casos donde la forma romanizada es ambigua y solo el contexto de la frase determina la grafía correcta (por ejemplo, *hu* puede ser हूं o हुआ, y *pata* puede ser पता o पाता).
 
 La relevancia del modelo reside en su tamaño y despliegue: el paquete completo ocupa 10,85 MB y el complemento de desambiguación 2,93 MB, lo que permite ejecutarlo íntegramente en el navegador mediante JavaScript y Web Workers, sin backend ni GPU. Está orientado a aplicaciones de entrada de texto en dispositivos con recursos limitados, donde el usuario teclea hindi con caracteres latinos y necesita conversión fiable a devanagari.
 
@@ -72,7 +72,7 @@ Comparación con el modelo de palabras subyacente (v2), según la model card:
 - GPU: no requiere GPU. No se documentan requisitos de aceleración por hardware.
 - Compatibilidad con GPU de consumo: irrelevante, ya que el despliegue objetivo es en dispositivo sin acelerador.
 - Tamaño de despliegue: paquete completo de 10,85 MB; complemento de desambiguación de 2,93 MB.
-- Opciones de despliegue: ejecución en navegador mediante JavaScript y Web Workers; demo en HuggingFace Spaces. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: ejecución en navegador mediante JavaScript y Web Workers; demo en Hugging Face Spaces. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AksharaLP-Sentence-2.8M | 3,76M | No disponible | Híbrido palabra + LM de frase | Apache 2.0 | HuggingFace, demo en Spaces |
+| AksharaLP-Sentence-2.8M | 3,76M | No disponible | Híbrido palabra + LM de frase | Apache 2.0 | Hugging Face, demo en Spaces |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -97,8 +97,8 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sourojitdotcom/AksharaLP-Sentence-2.8M
-- Demo en vivo (HuggingFace Spaces): https://huggingface.co/spaces/sourojitdotcom/AksharaLP-Sentence-demo
+- Modelo en Hugging Face: https://huggingface.co/sourojitdotcom/AksharaLP-Sentence-2.8M
+- Demo en vivo (Hugging Face Spaces): https://huggingface.co/spaces/sourojitdotcom/AksharaLP-Sentence-demo
 - Dataset IndicCorpV2: https://huggingface.co/datasets/ai4bharat/IndicCorpV2
 - Dataset Aksharantar: https://huggingface.co/datasets/ai4bharat/Aksharantar
 - Dataset Dakshina (evaluación): https://huggingface.co/datasets/google/dakshina

@@ -100,7 +100,7 @@ Alternativas genericas de clasificacion de enfermedades en hojas (por ejemplo, c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Haseeb9t/CropCare-MLLM-Adapters
+- Repositorio Hugging Face: https://huggingface.co/Haseeb9t/CropCare-MLLM-Adapters
 - Repositorio GitHub del proyecto: https://github.com/Lethaldroid/CropCare-MLLM
 - Dataset en Kaggle (Potato Leaf Disease with AI-Generated Captions): https://www.kaggle.com/datasets/haseebmahmoud/potato-leaf-disease-with-ai-generated-captions
 - Cita sugerida (BibTeX):

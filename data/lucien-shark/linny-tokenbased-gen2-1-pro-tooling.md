@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Linny-TokenBased-Gen2.1-Pro-Tooling es un modelo publicado en HuggingFace por el usuario Lucien-shark bajo el identificador `Lucien-shark/Linny-TokenBased-Gen2.1-Pro-Tooling`. En el momento de redactar esta ficha, el repositorio no incluye model card util: el README se limita a una linea de metadatos (`license: unknown`) y no aporta informacion sobre arquitectura, datos de entrenamiento, capacidades ni resultados de evaluacion. El pipeline declarado tambien aparece como no disponible, y el repositorio acumula 0 descargas y 0 likes, lo que indica que no ha sido validado ni adoptado por la comunidad.
+Linny-TokenBased-Gen2.1-Pro-Tooling es un modelo publicado en Hugging Face por el usuario Lucien-shark bajo el identificador `Lucien-shark/Linny-TokenBased-Gen2.1-Pro-Tooling`. En el momento de redactar esta ficha, el repositorio no incluye model card util: el README se limita a una linea de metadatos (`license: unknown`) y no aporta informacion sobre arquitectura, datos de entrenamiento, capacidades ni resultados de evaluacion. El pipeline declarado tambien aparece como no disponible, y el repositorio acumula 0 descargas y 0 likes, lo que indica que no ha sido validado ni adoptado por la comunidad.
 
 El unico dato tecnico objetivo disponible es el tamano del repositorio, 595,0 GB, y las fechas de creacion (9 de octubre de 2026) y ultima actualizacion (15 de octubre de 2026). Ese volumen es coherente con un conjunto de pesos de gran tamano, probablemente acompanado de varias cuantizaciones o formatos duplicados, pero no permite deducir con certeza el numero de parametros, la longitud de contexto ni la arquitectura. El sufijo "TokenBased" y "Tooling" del nombre sugiere un enfasis en tokenizacion y en uso de herramientas, pero se trata de una inferencia a partir del nombre y no de informacion confirmada por el autor.
 
@@ -76,10 +76,10 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Linny-TokenBased-Gen2.1-Pro-Tooling | no disponible | no disponible | unknown | HuggingFace, 0 descargas |
-| Llama 3.3 70B Instruct | 70 000 M | 128 000 tokens | Llama 3.3 Community License | Pesos abiertos en HuggingFace |
-| Qwen2.5 72B Instruct | 72 000 M | 128 000 tokens | Apache 2.0 | Pesos abiertos en HuggingFace |
-| DeepSeek-V3 | 671 000 M totales / 37 000 M activos | 128 000 tokens | MIT (con clausulas de uso) | Pesos abiertos en HuggingFace |
+| Linny-TokenBased-Gen2.1-Pro-Tooling | no disponible | no disponible | unknown | Hugging Face, 0 descargas |
+| Llama 3.3 70B Instruct | 70 000 M | 128 000 tokens | Llama 3.3 Community License | Pesos abiertos en Hugging Face |
+| Qwen2.5 72B Instruct | 72 000 M | 128 000 tokens | Apache 2.0 | Pesos abiertos en Hugging Face |
+| DeepSeek-V3 | 671 000 M totales / 37 000 M activos | 128 000 tokens | MIT (con clausulas de uso) | Pesos abiertos en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -96,7 +96,7 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lucien-shark/Linny-TokenBased-Gen2.1-Pro-Tooling
+- Modelo en Hugging Face: https://huggingface.co/Lucien-shark/Linny-TokenBased-Gen2.1-Pro-Tooling
 - Model card: no disponible (el README del repositorio no contiene documentacion tecnica)
 - Paper: no disponible
 - Repositorio de codigo: no disponible

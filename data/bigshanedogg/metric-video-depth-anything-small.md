@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo de salida | Consistencia temporal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Metric-Video-Depth-Anything-Small (este) | 29,1 M | Profundidad metrica (m) | Si (modulos de movimiento) | Apache-2.0 | HuggingFace (port no oficial) |
-| depth-anything/Metric-Video-Depth-Anything-Small (original) | 29,1 M | Profundidad metrica (m) | Si | Apache-2.0 | HuggingFace (oficial) |
-| Depth Anything V2 (variantes por imagen) | Variable (ViT-S a ViT-G) | Profundidad relativa o metrica por imagen | No | Apache-2.0 / otras segun variante | HuggingFace |
-| Video Depth Anything (variante relativa) | 29,1 M (Small) | Profundidad relativa | Si | Apache-2.0 | HuggingFace / GitHub |
+| Metric-Video-Depth-Anything-Small (este) | 29,1 M | Profundidad metrica (m) | Si (modulos de movimiento) | Apache-2.0 | Hugging Face (port no oficial) |
+| depth-anything/Metric-Video-Depth-Anything-Small (original) | 29,1 M | Profundidad metrica (m) | Si | Apache-2.0 | Hugging Face (oficial) |
+| Depth Anything V2 (variantes por imagen) | Variable (ViT-S a ViT-G) | Profundidad relativa o metrica por imagen | No | Apache-2.0 / otras segun variante | Hugging Face |
+| Video Depth Anything (variante relativa) | 29,1 M (Small) | Profundidad relativa | Si | Apache-2.0 | Hugging Face / GitHub |
 
 La comparativa se limita a la informacion disponible; no se dispone de datos de rendimiento cuantitativo para contrastar estos modelos.
 
@@ -83,7 +83,7 @@ La comparativa se limita a la informacion disponible; no se dispone de datos de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bigshanedogg/Metric-Video-Depth-Anything-Small
+- Hugging Face: https://huggingface.co/bigshanedogg/Metric-Video-Depth-Anything-Small
 - Modelo base oficial: https://huggingface.co/depth-anything/Metric-Video-Depth-Anything-Small
 - Repositorio original: https://github.com/DepthAnything/Video-Depth-Anything
 - Paper: https://arxiv.org/abs/2501.12375

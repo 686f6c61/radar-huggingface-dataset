@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nero Optimizer Work — SimO (lr=0.006) es un checkpoint experimental de investigación publicado por el usuario j0no12 en HuggingFace. No se trata de un modelo de lenguaje destinado a uso real, sino del artefacto final de una de las ramas de un barrido comparativo de optimizadores (la rama «SimO» con tasa de aprendizaje 0,006) dentro del proyecto denominado Nero Optimizer Work. El objetivo declarado es hacer reproducible la comparación entre optimizadores, no ofrecer capacidades de generación de texto útiles.
+Nero Optimizer Work — SimO (lr=0.006) es un checkpoint experimental de investigación publicado por el usuario j0no12 en Hugging Face. No se trata de un modelo de lenguaje destinado a uso real, sino del artefacto final de una de las ramas de un barrido comparativo de optimizadores (la rama «SimO» con tasa de aprendizaje 0,006) dentro del proyecto denominado Nero Optimizer Work. El objetivo declarado es hacer reproducible la comparación entre optimizadores, no ofrecer capacidades de generación de texto útiles.
 
 Técnicamente es un transformer decoder denso de tipo «matched dense-deep», con vocabulario de 2.048 tokens, flujo residual de 128 dimensiones, 6 bloques, cabezas de atención de 32 dimensiones y una MLP con compuerta de 148 dimensiones. El total de parámetros almacenados es de aproximadamente 999.680, la longitud de contexto es de solo 128 tokens y el entrenamiento se realizó sobre 500 millones de tokens con lotes de 32 ejemplos, usando Apple MLX como backend.
 
@@ -24,7 +24,7 @@ Su relevancia es puramente metodológica: permite reproducir la curva de pérdid
 | Optimizador | SimO, tasa de aprendizaje solicitada 0,006 |
 | Presupuesto de entrenamiento | 500.000.000 tokens, lotes de 32 ejemplos |
 | Backend | Apple MLX |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -75,7 +75,7 @@ Estos valores corresponden a mediciones del propio entrenamiento y no son compar
 - GPU consumer: cualquier RTX 3060, RTX 4090 o equivalente puede alojar los pesos con margen enorme, aunque el formato MLX no esta pensado para CUDA y requeriria conversion.
 - Opciones de despliegue: MLX de forma nativa; no hay soporte directo en vLLM, llama.cpp, Ollama ni TGI, ya que los pesos son un `.npz` de MLX y no un checkpoint de Transformers. Se necesita un cargador local compatible.
 - Latencia y throughput de inferencia: no disponibles. El unico dato de rendimiento publicado (369.984 tokens/s) corresponde al entrenamiento, no a la generacion.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun HuggingFace, coherente con el numero de parametros.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun Hugging Face, coherente con el numero de parametros.
 
 ## Comparativa con modelos similares
 
@@ -83,7 +83,7 @@ No disponible. No se ha encontrado en la informacion proporcionada ningun modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nero-optimizer-work-simo-lr0p006 | ~999.680 | 128 tokens | no disponible | HuggingFace (pesos MLX) |
+| nero-optimizer-work-simo-lr0p006 | ~999.680 | 128 tokens | no disponible | Hugging Face (pesos MLX) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion valida que sugiere el propio autor es contra las demas ramas del mismo barrido de optimizadores, evaluadas con la misma pasada de evaluacion congelada.
@@ -104,7 +104,7 @@ La unica comparacion valida que sugiere el propio autor es contra las demas rama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-simo-lr0p006
-- Pagina del autor en HuggingFace: https://huggingface.co/j0no12
+- Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-simo-lr0p006
+- Pagina del autor en Hugging Face: https://huggingface.co/j0no12
 - Apple MLX (framework de ejecucion declarado): https://github.com/ml-explore/mlx
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al proyecto Nero Optimizer Work ni a la rama SimO. Los resultados devueltos corresponden a sitios sin relacion alguna con el modelo y se descartan.

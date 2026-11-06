@@ -94,7 +94,7 @@ No se dispone de una comparación cuantitativa de rendimiento entre estas varian
 - El ajuste es una edición de comportamiento, no de conocimiento: en tareas que requieran derivaciones largas hay que subir `reasoning_effort`, ya que el modelo tiende a abreviar.
 - Discrepancia entre el nombre del repositorio (FP8) y la model card (merge almacenado en bf16 con redondeo estocástico), agravada por un tamaño de repositorio de 38,5 GB que no coincide exactamente con ninguna de las dos hipótesis. Hay que verificar el dtype real de los tensores antes de planificar memoria.
 - Licencia con umbral comercial: Swift Open License v1.0 permite uso personal, de investigación, educativo, de evaluación y comercial a individuos y organizaciones con facturación anual bruta de hasta 1.000.000 USD; por encima de ese umbral se requiere una Swift Enterprise License de UkisAI. Los derechos sobre Qwen3.8-27B en sí no quedan limitados por esta licencia.
-- Repositorio con `gated: true`: el acceso requiere aceptar condiciones en HuggingFace, lo que puede complicar la automatización de descargas en CI/CD.
+- Repositorio con `gated: true`: el acceso requiere aceptar condiciones en Hugging Face, lo que puede complicar la automatización de descargas en CI/CD.
 - Idiomas soportados no declarados: no hay información sobre cobertura multilingüe ni sobre el comportamiento fuera del inglés.
 - Riesgo de alucinación: inherente a los modelos de esta familia y no cuantificado en la información disponible para este artefacto concreto.
 - Sesgos: no se documenta ningún análisis de sesgos ni de seguridad en la información proporcionada.
@@ -103,7 +103,7 @@ No se dispone de una comparación cuantitativa de rendimiento entre estas varian
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vwdubb/Swift-Qwen3.8-27b-Terse-Coder-FP8
+- Modelo en Hugging Face: https://huggingface.co/vwdubb/Swift-Qwen3.8-27b-Terse-Coder-FP8
 - Variante FP8 del modelo base: https://huggingface.co/vwdubb/Swift-Qwen3.8-27b-FP8
 - Modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Adaptador LoRA: https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder-LoRA
@@ -111,4 +111,4 @@ No se dispone de una comparación cuantitativa de rendimiento entre estas varian
 - Anuncio de Swift-Qwen3.8-27B (UkisAI): https://ukisai.com/news/introducing-swift
 - GGUF del modelo Swift-Qwen3.8-27b: https://local-ai-zone.github.io/models/swift-qwen3-8-27b.html
 - Qwen3.8-27B en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3.8-27B
-- Organización Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organización Qwen en Hugging Face: https://huggingface.co/Qwen

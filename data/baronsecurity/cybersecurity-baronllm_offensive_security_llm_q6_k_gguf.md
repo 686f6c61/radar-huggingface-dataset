@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BaronLLM es un ajuste fino (fine-tuning) de Llama-3.1-8B-Instruct orientado a investigación en ciberseguridad ofensiva y simulación adversarial. Lo desarrolla Alican Kiraz (publicado bajo el espacio de nombres BaronSecurity en HuggingFace) y esta ficha concreta corresponde a la cuantización Q6_K en formato GGUF, generada mediante el pipeline `gguf-my-repo` de HuggingFace. El modelo parte de la variante `AlicanKiraz0/BaronLLM-llama3.1-v1`, que a su vez deriva del checkpoint oficial de Meta.
+BaronLLM es un ajuste fino (fine-tuning) de Llama-3.1-8B-Instruct orientado a investigación en ciberseguridad ofensiva y simulación adversarial. Lo desarrolla Alican Kiraz (publicado bajo el espacio de nombres BaronSecurity en Hugging Face) y esta ficha concreta corresponde a la cuantización Q6_K en formato GGUF, generada mediante el pipeline `gguf-my-repo` de Hugging Face. El modelo parte de la variante `AlicanKiraz0/BaronLLM-llama3.1-v1`, que a su vez deriva del checkpoint oficial de Meta.
 
 El modelo resuelve un nicho concreto: proporcionar razonamiento estructurado sobre vulnerabilidades, generación de cadenas ATT&CK, análisis paso a paso de exploits (SQLi, XXE, deserialización) y triaje de artefactos de seguridad como logs de SIEM, PCAP o EDR. No es un modelo generalista: su utilidad está acotada al dominio de seguridad y su valor diferencial frente al Llama-3.1-8B-Instruct base reside en el ajuste con datos curados del dominio (NVD/CVE, write-ups de Project Zero, PortSwigger, NCC Group y cadenas ATT&CK sintéticas verificadas por humanos).
 
@@ -89,7 +89,7 @@ La comparación con el Llama-3.1-8B-Instruct base es la más directa: mismo tama
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BaronSecurity/Cybersecurity-BaronLLM_Offensive_Security_LLM_Q6_K_GGUF
+- Repositorio Hugging Face: https://huggingface.co/BaronSecurity/Cybersecurity-BaronLLM_Offensive_Security_LLM_Q6_K_GGUF
 - Modelo base del ajuste: https://huggingface.co/AlicanKiraz0/BaronLLM-llama3.1-v1
 - Modelo base original: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Medium del autor: https://alican-kiraz1.medium.com/

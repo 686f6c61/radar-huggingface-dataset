@@ -102,8 +102,8 @@ Rendimiento comparado: no disponible en la informacion proporcionada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Thaurock/Llama-3.2-3B-Instruct-q4f16_1-MLC
-- Modelo base en HuggingFace: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/Thaurock/Llama-3.2-3B-Instruct-q4f16_1-MLC
+- Modelo base en Hugging Face: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Runtime MLC LLM (repositorio oficial): https://github.com/mlc-ai/mlc-llm
 - Documentacion de MLC LLM: https://llm.mlc.ai/docs/
 - Anuncio de la familia Llama 3.2 en el blog de Meta: https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/

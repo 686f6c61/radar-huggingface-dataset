@@ -79,7 +79,7 @@ No se publican en la información disponible resultados de latencia, throughput,
 
 | Modelo | mAP50 | F1 (protocolo MIDOG) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| YOLO26x MIDOG++ ONNX (este modelo) | 0.867 | 0.803 (P 0.783 / R 0.825) | AGPL-3.0 | ONNX float32 y float16 en HuggingFace, demo web |
+| YOLO26x MIDOG++ ONNX (este modelo) | 0.867 | 0.803 (P 0.783 / R 0.825) | AGPL-3.0 | ONNX float32 y float16 en Hugging Face, demo web |
 | YOLOv8x (mismos datos y ajustes) | 0.862 | 0.808 | no disponible en la información | no disponible en la información |
 | YOLO11x (mismos datos y ajustes) | 0.877 | 0.803 | no disponible en la información | no disponible en la información |
 
@@ -100,7 +100,7 @@ Las tres variantes son indistinguibles en la práctica sobre este conjunto: las 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nakamura196/yolo26x-midog-onnx
+- Modelo en Hugging Face: https://huggingface.co/nakamura196/yolo26x-midog-onnx
 - Demo en el navegador: https://nakamura196.github.io/midog-detect/
 - Código de entrenamiento, evaluación, exportación y visor web: https://github.com/nakamura196/midog-detect
 - Artículo de MIDOG++ (Aubreville et al., *Scientific Data* 10, 484, 2023): https://doi.org/10.1038/s41597-023-02327-4

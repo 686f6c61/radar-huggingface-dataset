@@ -2,9 +2,9 @@
 
 ## Resumen
 
-VisualStep (identificador `lsadouk1111/VisualStep`) es un adaptador LoRA de generacion de texto publicado en HuggingFace por el usuario lsadouk1111. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (PEFT) que debe cargarse sobre el modelo base `unsloth/Phi-3-mini-instruct-bnb-4bit`, una version cuantizada a 4 bits de Phi-3-mini-4k-instruct de Microsoft. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de rango bajo y no con pesos completos.
+VisualStep (identificador `lsadouk1111/VisualStep`) es un adaptador LoRA de generacion de texto publicado en Hugging Face por el usuario lsadouk1111. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (PEFT) que debe cargarse sobre el modelo base `unsloth/Phi-3-mini-instruct-bnb-4bit`, una version cuantizada a 4 bits de Phi-3-mini-4k-instruct de Microsoft. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de rango bajo y no con pesos completos.
 
-El modelo se ha entrenado mediante SFT (supervised fine-tuning) utilizando el ecosistema TRL y Unsloth, segun las etiquetas declaradas en la model card. La model card publicada es una plantilla vacia del template estandar de HuggingFace: no incluye descripcion, datos de entrenamiento, hiperparametros, resultados de evaluacion ni informacion sobre licencia o idiomas. Tampoco se ha publicado ningun articulo, demo o repositorio asociado.
+El modelo se ha entrenado mediante SFT (supervised fine-tuning) utilizando el ecosistema TRL y Unsloth, segun las etiquetas declaradas en la model card. La model card publicada es una plantilla vacia del template estandar de Hugging Face: no incluye descripcion, datos de entrenamiento, hiperparametros, resultados de evaluacion ni informacion sobre licencia o idiomas. Tampoco se ha publicado ningun articulo, demo o repositorio asociado.
 
 Su relevancia actual es limitada: acumula cero descargas y cero likes, no tiene licencia declarada y el nombre "VisualStep" no se corresponde con ninguna capacidad multimodal documentada, ya que el modelo base es exclusivamente de texto. Cualquier uso en produccion exige auditar primero el adaptador, dado que se desconoce por completo el dataset de ajuste y sus posibles sesgos.
 
@@ -94,7 +94,7 @@ Los datos de licencia, contexto y disponibilidad de los modelos comparados corre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lsadouk1111/VisualStep
+- Modelo en Hugging Face: https://huggingface.co/lsadouk1111/VisualStep
 - Modelo base: https://huggingface.co/unsloth/Phi-3-mini-4k-instruct-bnb-4bit
 - Modelo original de Microsoft: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Articulo de Phi-3: https://arxiv.org/abs/2404.14219

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LaprasRA es un repositorio publicado en HuggingFace por el usuario Ryanham1lton el 21 de septiembre de 2026 bajo licencia CC-BY-4.0. En el momento de la consulta, el repositorio acumula 0 descargas y 0 "likes", tiene un tamano aproximado de 0,1 GB y no incluye model card: el README se limita a la declaracion de licencia, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
+LaprasRA es un repositorio publicado en Hugging Face por el usuario Ryanham1lton el 21 de septiembre de 2026 bajo licencia CC-BY-4.0. En el momento de la consulta, el repositorio acumula 0 descargas y 0 "likes", tiene un tamano aproximado de 0,1 GB y no incluye model card: el README se limita a la declaracion de licencia, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
 No se dispone de informacion sobre el pipeline declarado (la etiqueta de pipeline es "no disponible"), los idiomas soportados, la arquitectura o el numero de parametros. Tampoco se han encontrado referencias externas al modelo: la busqueda web no devuelve ningun resultado relacionado con el identificador "LaprasRA" ni con el autor.
 
@@ -47,7 +47,7 @@ No se pueden definir casos de uso concretos y justificados sin conocer el modelo
 - Analisis de seguridad de artefactos no documentados: un repositorio sin model card, con 0 descargas y publicado por una cuenta sin historial es un candidato tipico para auditoria de pesos y revision de riesgos antes de cualquier ejecucion.
 - Prueba de compatibilidad con runtimes estandar: comprobar si los ficheros cargan en transformers, llama.cpp, vLLM u Ollama, lo que revelaria la arquitectura subyacente por las capas y tensores detectados.
 - Bancos de pruebas de gobernanza de modelos: este repositorio sirve como ejemplo de caso limite de ficha incompleta para estudiar como los repositorios sin documentacion dificultan la trazabilidad y el cumplimiento.
-- Uso como referencia en estudios sobre el ecosistema de HuggingFace: medicion de la proporcion de repositorios sin model card, sin pipeline declarado y sin descargas.
+- Uso como referencia en estudios sobre el ecosistema de Hugging Face: medicion de la proporcion de repositorios sin model card, sin pipeline declarado y sin descargas.
 - Reutilizacion condicionada a verificacion: si tras la inspeccion resultase ser un adaptador de bajo rango sobre una base conocida, podria evaluarse su combinacion con dicha base, siempre que la licencia de la base lo permitiese.
 
 ## Benchmarks y rendimiento
@@ -84,6 +84,6 @@ No disponible. No se puede identificar la categoria del modelo (tamano, tarea, m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/LaprasRA
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/LaprasRA
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

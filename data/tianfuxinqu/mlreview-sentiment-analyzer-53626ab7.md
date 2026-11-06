@@ -4,7 +4,7 @@
 
 El modelo `TianfuXinqu/mlreview-sentiment-analyzer-53626ab7` es un clasificador de análisis de sentimiento presentado como candidato a producción en un ciclo de revisión trimestral. Desarrollado por el usuario TianfuXinqu, el modelo está diseñado para determinar la polaridad emocional de textos, una tarea fundamental en el procesamiento de lenguaje natural aplicado a reseñas de productos, atención al cliente y monitorización de redes sociales.
 
-Con 18 millones de parámetros, se trata de un modelo compacto que reporta una precisión de 0,934 y una puntuación F1 de 0,918, con una latencia de 32 ms por inferencia. Su tamaño reducido lo hace adecuado para despliegues con recursos limitados, aunque la información pública disponible es escasa: no se especifican la arquitectura interna, el tipo de transformer subyacente, la longitud de contexto ni los idiomas soportados. La ficha técnica del modelo en HuggingFace no incluye licencia, pipeline ni etiquetas de idioma, lo que limita su evaluación para uso en producción.
+Con 18 millones de parámetros, se trata de un modelo compacto que reporta una precisión de 0,934 y una puntuación F1 de 0,918, con una latencia de 32 ms por inferencia. Su tamaño reducido lo hace adecuado para despliegues con recursos limitados, aunque la información pública disponible es escasa: no se especifican la arquitectura interna, el tipo de transformer subyacente, la longitud de contexto ni los idiomas soportados. La ficha técnica del modelo en Hugging Face no incluye licencia, pipeline ni etiquetas de idioma, lo que limita su evaluación para uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -75,5 +75,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TianfuXinqu/mlreview-sentiment-analyzer-53626ab7
+- Hugging Face: https://huggingface.co/TianfuXinqu/mlreview-sentiment-analyzer-53626ab7
 - Repositorio relacionado (proyecto de analisis de sentimiento, no el modelo): https://github.com/devJam2026/ml-product-review-sentiment-analyzer

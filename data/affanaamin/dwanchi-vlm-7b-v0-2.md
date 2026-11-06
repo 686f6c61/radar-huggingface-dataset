@@ -79,12 +79,12 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 - La longitud de contexto no se especifica, lo que dificulta planificar el procesamiento de documentos de muchas paginas.
 - El repositorio ocupa 0,4 GB, coherente con adaptadores LoRA, no con pesos completos; es necesario descargar por separado la base Qwen2.5-VL-7B-Instruct.
 - Licencia Apache 2.0 permite uso comercial, pero el autor no documenta garantias ni soporte; conviene validar la calidad de extraccion antes de usarla en auditorias con consecuencias legales.
-- Sin descargas ni likes en HuggingFace en el momento de la consulta, lo que implica ausencia de validacion independiente por la comunidad.
+- Sin descargas ni likes en Hugging Face en el momento de la consulta, lo que implica ausencia de validacion independiente por la comunidad.
 - No se documenta soporte de tool calling ni de agentes, lo que limita su integracion en pipelines automatizados complejos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/affanaamin/Dwanchi-VLM-7B-v0.2
+- Modelo en Hugging Face: https://huggingface.co/affanaamin/Dwanchi-VLM-7B-v0.2
 - Version v0.1: https://huggingface.co/affanaamin/Dwanchi-VLM-7B-v0.1
 - Dataset: https://huggingface.co/datasets/affanaamin/dwanchi-vlm-dataset
 - Dataset en Kaggle: https://www.kaggle.com/datasets/affanaamin/dwanchi-vlm-dataset-v2

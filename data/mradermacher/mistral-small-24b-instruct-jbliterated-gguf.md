@@ -47,7 +47,7 @@ La cuantización GGUF realizada por mradermacher convierte los pesos originales 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye tablas de evaluación ni comparativas con el modelo original. Se recomienda consultar los benchmarks del Mistral Small 24B Instruct original (por ejemplo, MMLU, HumanEval, GSM8K) y tener en cuenta que la cuantización y la modificación jbliterated pueden alterar ligeramente esos resultados. Para una evaluación fiable, es necesario ejecutar pruebas propias con las cuantizaciones concretas.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye tablas de evaluación ni comparativas con el modelo original. Se recomienda consultar los benchmarks del Mistral Small 24B Instruct original (por ejemplo, MMLU, HumanEval, GSM8K) y tener en cuenta que la cuantización y la modificación jbliterated pueden alterar ligeramente esos resultados. Para una evaluación fiable, es necesario ejecutar pruebas propias con las cuantizaciones concretas.
 
 ## Requisitos de hardware
 
@@ -86,7 +86,7 @@ La comparativa se basa en parámetros y licencia. No hay datos de rendimiento di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Mistral-Small-24B-Instruct-Jbliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Mistral-Small-24B-Instruct-Jbliterated-GGUF
 - Modelo base (ApolloRaines/Mistral-Small-24B-Instruct-Jbliterated): https://huggingface.co/ApolloRaines/Mistral-Small-24B-Instruct-Jbliterated
 - Modelo original Mistral Small 24B (Mistral AI): https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501
 - Repositorio con quants imatrix (mradermacher): https://huggingface.co/mradermacher/Mistral-Small-24B-Instruct-Jbliterated-i1-GGUF

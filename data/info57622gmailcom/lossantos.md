@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo "Lossantos" aparece publicado en HuggingFace por el usuario `info57622gmailcom`, con licencia `openrail`. Sin embargo, la model card asociada está vacía y no se ha proporcionado ninguna información técnica, documentación ni enlace a paper o repositorio que permita identificar su arquitectura, parámetros, datos de entrenamiento o capacidades. Tampoco se han publicado resultados de benchmarks ni ejemplos de uso. En el momento de la consulta, el repositorio no registra descargas ni "likes", lo que sugiere que se trata de una publicación sin contenido utilizable o en estado inicial. No es posible realizar una evaluación técnica del modelo ni determinar su relevancia para casos de uso reales.
+El modelo "Lossantos" aparece publicado en Hugging Face por el usuario `info57622gmailcom`, con licencia `openrail`. Sin embargo, la model card asociada está vacía y no se ha proporcionado ninguna información técnica, documentación ni enlace a paper o repositorio que permita identificar su arquitectura, parámetros, datos de entrenamiento o capacidades. Tampoco se han publicado resultados de benchmarks ni ejemplos de uso. En el momento de la consulta, el repositorio no registra descargas ni "likes", lo que sugiere que se trata de una publicación sin contenido utilizable o en estado inicial. No es posible realizar una evaluación técnica del modelo ni determinar su relevancia para casos de uso reales.
 
 ## Especificaciones tecnicas
 
@@ -50,4 +50,4 @@ No disponible. No existe información suficiente para comparar este modelo con a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/info57622gmailcom/Lossantos
+- Hugging Face: https://huggingface.co/info57622gmailcom/Lossantos

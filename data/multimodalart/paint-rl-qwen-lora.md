@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `multimodalart/paint-rl-qwen-lora` es un adaptador LoRA (Low-Rank Adaptation) que ajusta el modelo base Qwen/Qwen3.6-35B-A3B mediante entrenamiento con GRPO (Group Relative Policy Optimization), una técnica de optimización por refuerzo introducida en DeepSeekMath para mejorar el razonamiento matemático y la calidad de las respuestas generadas. El autor es el usuario de HuggingFace `multimodalart`, conocido por publicar modelos relacionados con generación de arte, aunque este adaptador está orientado a tareas de texto.
+El modelo `multimodalart/paint-rl-qwen-lora` es un adaptador LoRA (Low-Rank Adaptation) que ajusta el modelo base Qwen/Qwen3.6-35B-A3B mediante entrenamiento con GRPO (Group Relative Policy Optimization), una técnica de optimización por refuerzo introducida en DeepSeekMath para mejorar el razonamiento matemático y la calidad de las respuestas generadas. El autor es el usuario de Hugging Face `multimodalart`, conocido por publicar modelos relacionados con generación de arte, aunque este adaptador está orientado a tareas de texto.
 
 El modelo se publica en formato LoRA, con un tamaño de repositorio de 0,5 GB, y se distribuye bajo licencia no especificada. Está diseñado para ser cargado sobre el modelo base Qwen3.6-35B-A3B, un modelo de arquitectura MoE (Mixture of Experts) con 35 mil millones de parámetros totales y 3 mil millones de parámetros activos por token, lo que permite una inferencia relativamente eficiente. La fecha de creación (agosto de 2026) indica que es un modelo reciente, y el hecho de que no tenga descargas ni likes sugiere que se trata de una publicación experimental o de investigación.
 

@@ -49,7 +49,7 @@ La parte mas interesante del empaquetado es el codificador de texto. Se trata de
 
 - Generacion de imagenes en el navegador sin backend: una aplicacion web puede producir una imagen de 512² o 1024² ejecutando los tres grafos en WebGPU, eliminando el coste de GPU en servidor y la latencia de red del envio del prompt.
 - Herramientas creativas con privacidad estricta: al no salir el prompt del dispositivo, encaja en flujos donde el texto de entrada es sensible (borradores de producto, material interno, documentos bajo confidencialidad).
-- Demos y prototipos de producto: el repositorio se carga directamente desde HuggingFace con `InferenceSession.create`, lo que permite tener un playground funcional en una pagina estatica sin infraestructura.
+- Demos y prototipos de producto: el repositorio se carga directamente desde Hugging Face con `InferenceSession.create`, lo que permite tener un playground funcional en una pagina estatica sin infraestructura.
 - Aplicaciones offline-first y PWA: una vez descargados los 5,6 GB y cacheados por el navegador, la generacion no requiere conectividad, util en entornos de campo o con red intermitente.
 - Educacion y formacion tecnica: sirve para explicar en directo el funcionamiento de un pipeline de difusion (codificador de texto, bucle de muestreo Euler, VAE) sin depender de un cluster.
 - Integracion en herramientas de edicion web: como paso de generacion de bocetos o variaciones dentro de un editor basado en canvas, con el modelo ejecutandose en la misma pestana.
@@ -76,10 +76,10 @@ El unico dato numerico de fidelidad reportado es la desviacion introducida por e
 
 | Modelo | Parametros | Contexto de prompt | Formato / ejecucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FLUX.2-klein-4B-onnx-web (este repo) | 4B (denominacion) + codificador Qwen3-4B truncado | 512 tokens | ONNX q4, WebGPU en navegador, 5,6 GB | Apache-2.0 | HuggingFace, 0 descargas |
-| FLUX.2-klein-4B (modelo base, BFL) | 4B (denominacion) | 512 tokens segun el pipeline de referencia | PyTorch/diffusers, sin cuantizar | Apache-2.0 | HuggingFace |
-| FLUX.1-schnell | ~12B | 256 tokens | safetensors, difusion, 4 pasos | Apache-2.0 | HuggingFace |
-| FLUX.1-dev | ~12B | 512 tokens | safetensors, difusion | No comercial | HuggingFace |
+| FLUX.2-klein-4B-onnx-web (este repo) | 4B (denominacion) + codificador Qwen3-4B truncado | 512 tokens | ONNX q4, WebGPU en navegador, 5,6 GB | Apache-2.0 | Hugging Face, 0 descargas |
+| FLUX.2-klein-4B (modelo base, BFL) | 4B (denominacion) | 512 tokens segun el pipeline de referencia | PyTorch/diffusers, sin cuantizar | Apache-2.0 | Hugging Face |
+| FLUX.1-schnell | ~12B | 256 tokens | safetensors, difusion, 4 pasos | Apache-2.0 | Hugging Face |
+| FLUX.1-dev | ~12B | 512 tokens | safetensors, difusion | No comercial | Hugging Face |
 
 Las dos primeras filas proceden de la informacion proporcionada. Las filas de FLUX.1-schnell y FLUX.1-dev se incluyen como referencia de categoria a partir de conocimiento general y no estan verificadas en esta busqueda; conviene contrastarlas antes de publicar. Frente al modelo base, la diferencia practica de este repositorio es el formato (ONNX q4 en lugar de PyTorch) y el objetivo de despliegue (navegador en lugar de GPU con CUDA), no la arquitectura.
 
@@ -97,15 +97,15 @@ Las dos primeras filas proceden de la informacion proporcionada. Las filas de FL
 - Sesgos y comportamiento del dataset de entrenamiento no documentados en la model card; el riesgo de alucinacion visual (texto ilegible en la imagen, composiciones fisicamente imposibles) es el habitual en difusion, sin cuantificar aqui.
 - Licencia Apache-2.0 en el empaquetado, pero el uso comercial queda sujeto tambien a las condiciones del modelo base de Black Forest Labs y del codificador Qwen3-4B; el repositorio remite a un fichero `NOTICE` que conviene revisar.
 - Repositorio recien creado, con 0 descargas y 0 likes en el momento de la consulta: no hay validacion independiente del port ni informes de la comunidad.
-- El campo de idiomas no esta declarado en los metadatos de HuggingFace; el rendimiento del condicionamiento textual en idiomas distintos del ingles no esta verificado.
+- El campo de idiomas no esta declarado en los metadatos de Hugging Face; el rendimiento del condicionamiento textual en idiomas distintos del ingles no esta verificado.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RanaLLC/FLUX.2-klein-4B-onnx-web
+- Repositorio en Hugging Face: https://huggingface.co/RanaLLC/FLUX.2-klein-4B-onnx-web
 - Modelo base (Black Forest Labs): https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Codificador de texto (Qwen3-4B): https://huggingface.co/Qwen/Qwen3-4B
 - Documentacion de ONNX Runtime Web (WebGPU EP): https://onnxruntime.ai/docs/tutorials/web/
 - Repositorio de diffusers, donde reside `pipeline_flux2_klein.py` y `compute_empirical_mu`: https://github.com/huggingface/diffusers
 - Fichero `NOTICE` del repositorio (licencias del modelo base y del codificador): https://huggingface.co/RanaLLC/FLUX.2-klein-4B-onnx-web/blob/main/NOTICE
 
-Los dos primeros enlaces proceden de la informacion de HuggingFace; el resto son referencias tecnicas citadas en la model card o necesarias para reproducir el pipeline, no enlaces verificados en la busqueda.
+Los dos primeros enlaces proceden de la informacion de Hugging Face; el resto son referencias tecnicas citadas en la model card o necesarias para reproducir el pipeline, no enlaces verificados en la busqueda.

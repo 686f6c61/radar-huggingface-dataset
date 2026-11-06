@@ -67,5 +67,5 @@ No se ha encontrado información comparable. No se dispone de otros repositorios
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/dvader13/smollm3-3b-traj-2p26t)
+- [Repositorio Hugging Face](https://huggingface.co/dvader13/smollm3-3b-traj-2p26t)
 - [Perfil del autor dvader13](https://huggingface.co/dvader13)

@@ -4,7 +4,7 @@
 
 El repositorio `MMALHOTRAMANOJ/assignment-visual-question-answering93` no contiene un modelo entrenado, sino una nota de investigación exploratoria sobre *Visual Question Answering* (VQA). La model card indica explícitamente que el artefacto principal es `notes.md`, que en él se registran el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados y los requisitos de reproducibilidad, y que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales. El propio autor declara que la nota no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado.
 
-El repositorio está etiquetado con `visual-question-answering`, `research-notes` y `transformer`, y se distribuye bajo licencia CC-BY-4.0. El pipeline declarado en HuggingFace es `visual-question-answering`, pero no hay evidencia de pesos funcionales: el tamaño del repositorio es de 0,0 GB y el recuento de safetensors arroja 16.576 parámetros, una cifra incompatible con cualquier modelo visión-lenguaje capaz de responder preguntas sobre imágenes. Es razonable interpretar ese fichero como un artefacto de configuración o marcador de posición.
+El repositorio está etiquetado con `visual-question-answering`, `research-notes` y `transformer`, y se distribuye bajo licencia CC-BY-4.0. El pipeline declarado en Hugging Face es `visual-question-answering`, pero no hay evidencia de pesos funcionales: el tamaño del repositorio es de 0,0 GB y el recuento de safetensors arroja 16.576 parámetros, una cifra incompatible con cualquier modelo visión-lenguaje capaz de responder preguntas sobre imágenes. Es razonable interpretar ese fichero como un artefacto de configuración o marcador de posición.
 
 Su relevancia actual es, por tanto, documental y metodológica: sirve como punto de partida para definir un protocolo de evaluación en VQAv2, GQA y OK-VQA, y como recordatorio de buenas prácticas de reproducibilidad (versiones de dataset, comandos, semillas, hardware y registros en bruto). No es un recurso utilizable para inferencia ni para despliegue en producción.
 
@@ -27,7 +27,7 @@ Su relevancia actual es, por tanto, documental y metodológica: sirve como punto
 
 ## Arquitectura y entrenamiento
 
-No hay información sobre arquitectura más allá del tag `transformer` en los metadatos de HuggingFace. No se publican ficheros de configuración (`config.json`), código de modelado, tokenizador, procesador de imagen ni ningún componente de la torre visual que sería necesario para una tarea de VQA. Tampoco hay datos sobre el entrenamiento: no se indican tokens procesados, composición del dataset, resolución de imagen, emparejamiento visión-lenguaje, ni si hubo ajuste por instrucciones, RLHF o DPO.
+No hay información sobre arquitectura más allá del tag `transformer` en los metadatos de Hugging Face. No se publican ficheros de configuración (`config.json`), código de modelado, tokenizador, procesador de imagen ni ningún componente de la torre visual que sería necesario para una tarea de VQA. Tampoco hay datos sobre el entrenamiento: no se indican tokens procesados, composición del dataset, resolución de imagen, emparejamiento visión-lenguaje, ni si hubo ajuste por instrucciones, RLHF o DPO.
 
 La model card describe únicamente el contenido previsto de la nota: el alcance de la pregunta de investigación y sus factores de confusión, una comparación propuesta con baselines emparejados, el contexto de evaluación concreto (VQAv2, GQA y OK-VQA), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas, además de referencias temáticas. Se advierte de que las referencias y los datasets propuestos son un punto de partida para verificación, no evidencia de que el estudio se haya ejecutado. No se describe ninguna innovación técnica (atención lineal, decodificación especulativa, fusión cross-attention, etc.).
 
@@ -92,7 +92,7 @@ No procede una comparativa técnica: este repositorio no es un modelo y no puede
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MMALHOTRAMANOJ/assignment-visual-question-answering93
+- Repositorio en Hugging Face: https://huggingface.co/MMALHOTRAMANOJ/assignment-visual-question-answering93
 - Artefacto principal de la nota: `notes.md` (dentro del propio repositorio)
 - Documentación del repositorio: `README.md` (dentro del propio repositorio)
 - Referencia sobre selección de modelos visión-lenguaje para VQA: https://arxiv.org/html/2409.09269v1

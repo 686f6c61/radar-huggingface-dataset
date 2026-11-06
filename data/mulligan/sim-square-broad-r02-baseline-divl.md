@@ -92,8 +92,8 @@ No se dispone de resultados comparables publicados para otros agentes de la mism
 
 | Modelo | Relacion | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `sim-square-broad-r02-baseline-divl` (este) | Actor de difusion congelado + critico DIVL distribucional | no disponible | no aplica | 70,58 % de exito medio en 5 semillas | MIT | Publicado en HuggingFace |
-| `sim-square-broad-r02-baseline-idql` | Modelo padre; aporta el actor de difusion congelado | no disponible | no aplica | no disponible | MIT | Publicado en HuggingFace |
+| `sim-square-broad-r02-baseline-divl` (este) | Actor de difusion congelado + critico DIVL distribucional | no disponible | no aplica | 70,58 % de exito medio en 5 semillas | MIT | Publicado en Hugging Face |
+| `sim-square-broad-r02-baseline-idql` | Modelo padre; aporta el actor de difusion congelado | no disponible | no aplica | no disponible | MIT | Publicado en Hugging Face |
 | Variantes DAgger de la campana sq_d1 | Generadas con minado DAgger a partir de rollouts | no disponible | no aplica | no disponible | MIT | Datasets publicados; checkpoints no detallados en esta informacion |
 
 ## Limitaciones y advertencias
@@ -111,8 +111,8 @@ No se dispone de resultados comparables publicados para otros agentes de la mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r02-baseline-divl
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r02-baseline-divl
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
 - Modelo padre (actor de difusion congelado): https://huggingface.co/mulligan/sim-square-broad-r02-baseline-idql

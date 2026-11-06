@@ -6,7 +6,7 @@ Ternary Bonsai 2 27B PTQ1_0 MTP es una compilación GGUF publicada por el usuari
 
 El interés de esta versión concreta está en el rendimiento en GPUs de gama consumer. En una RTX 3060 de 12 GB, el binario de release de PrismML pasa de 25,0 a solo 27,1 tok/s al activar MTP (+8 %), porque en los kernels de 1,75 bpw la verificación de un lote de 3 tokens costaba aproximadamente 3 veces lo que un token suelto. El PR de kernel `PrismML-Eng/llama.cpp#218` rebaja ese coste a 1,55x y sube la decodificación de un solo token de 26 a 40 tok/s, con lo que la misma configuración alcanza 50,1 tok/s.
 
-Se distribuye bajo licencia Apache 2.0, requiere exclusivamente el fork de PrismML (no es ejecutable en llama.cpp upstream, Ollama ni vLLM) y acumula 392 descargas y 11 likes en HuggingFace. Es, por tanto, un artefacto muy especializado: útil para investigación en cuantización ternaria y decodificación especulativa, y para servir un modelo de 27B con 131.072 tokens de contexto en tarjetas de 8 y 12 GB.
+Se distribuye bajo licencia Apache 2.0, requiere exclusivamente el fork de PrismML (no es ejecutable en llama.cpp upstream, Ollama ni vLLM) y acumula 392 descargas y 11 likes en Hugging Face. Es, por tanto, un artefacto muy especializado: útil para investigación en cuantización ternaria y decodificación especulativa, y para servir un modelo de 27B con 131.072 tokens de contexto en tarjetas de 8 y 12 GB.
 
 ## Especificaciones técnicas
 
@@ -130,7 +130,7 @@ Los tres injertos MTP previos existen únicamente sobre el fichero PQ2_0, de may
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/sudoingx/Ternary-Bonsai-2-27B-PTQ1_0-MTP-GGUF
+- Hugging Face del modelo: https://huggingface.co/sudoingx/Ternary-Bonsai-2-27B-PTQ1_0-MTP-GGUF
 - Modelo base ternario: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Fork de llama.cpp del autor (rama `bonsai2`): https://github.com/sudoingX/llama.cpp

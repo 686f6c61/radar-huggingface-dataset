@@ -72,7 +72,7 @@ No disponible. Este repositorio no contiene un modelo final comparable con otras
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/smollm3-3b-traj-94p4b
+- Repositorio Hugging Face: https://huggingface.co/dvader13/smollm3-3b-traj-94p4b
 - Blog oficial de SmolLM3: https://huggingface.co/blog/smollm3
 - Documentación de Transformers para SmolLM3: https://huggingface.co/docs/transformers/en/model_doc/smollm3
 - Ficha de SmolLM3-3B en atomic.chat: https://atomic.chat/models/smollm3-3b

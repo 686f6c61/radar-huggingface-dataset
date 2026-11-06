@@ -4,7 +4,7 @@
 
 `antrip03/grpo-c3_kl_low_3b_a100-s42` es un adaptador LoRA de tipo PEFT publicado por el usuario antrip03 sobre el modelo base Qwen/Qwen2.5-3B-Instruct. No se trata de un modelo entrenado desde cero, sino de un ajuste fino mediante GRPO (Group Relative Policy Optimization), la variante de aprendizaje por refuerzo popularizada por DeepSeekMath y disponible en la librería TRL. El repositorio ocupa 0,1 GB, lo que corresponde únicamente a los pesos del adaptador, no al modelo completo.
 
-El identificador del repositorio codifica la configuración del experimento: `grpo` (algoritmo), `c3` (probablemente el identificador de la configuración o del conjunto de datos), `kl_low` (coeficiente de divergencia KL bajo), `3b` (tamaño del modelo base), `a100` (hardware de entrenamiento) y `s42` (semilla 42). Esta lectura es una inferencia a partir del nombre, no una afirmación documentada por el autor. La model card es la plantilla por defecto de HuggingFace y no contiene ninguna sección completada: no hay descripción, datos de entrenamiento, hiperparámetros ni resultados de evaluación.
+El identificador del repositorio codifica la configuración del experimento: `grpo` (algoritmo), `c3` (probablemente el identificador de la configuración o del conjunto de datos), `kl_low` (coeficiente de divergencia KL bajo), `3b` (tamaño del modelo base), `a100` (hardware de entrenamiento) y `s42` (semilla 42). Esta lectura es una inferencia a partir del nombre, no una afirmación documentada por el autor. La model card es la plantilla por defecto de Hugging Face y no contiene ninguna sección completada: no hay descripción, datos de entrenamiento, hiperparámetros ni resultados de evaluación.
 
 Su relevancia es, por tanto, la de un artefacto de investigación reproducible: permite inspeccionar y reutilizar un adaptador RL sobre un modelo denso de 3 000 millones de parámetros que cabe en GPU de consumo. No debe considerarse un modelo listo para producción, ya que no hay evidencia publicada de su calidad ni de su comportamiento diferencial frente al modelo base.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| grpo-c3_kl_low_3b_a100-s42 (este) | Adaptador sobre 3,09 B | No especificado (32 768 en el base) | LoRA + GRPO | No disponible (base Apache 2.0) | HuggingFace, 0 descargas |
-| Qwen2.5-3B-Instruct | 3,09 B | 32 768 (131 072 con YaRN) | Denso, SFT + DPO | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Llama 3.2 3B Instruct | 3,21 B | 131 072 | Denso, SFT + RLHF | Llama 3.2 Community License | HuggingFace, requiere aceptar términos |
-| Phi-3.5-mini-instruct | 3,8 B | 131 072 | Denso, SFT + DPO | MIT | HuggingFace |
+| grpo-c3_kl_low_3b_a100-s42 (este) | Adaptador sobre 3,09 B | No especificado (32 768 en el base) | LoRA + GRPO | No disponible (base Apache 2.0) | Hugging Face, 0 descargas |
+| Qwen2.5-3B-Instruct | 3,09 B | 32 768 (131 072 con YaRN) | Denso, SFT + DPO | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Llama 3.2 3B Instruct | 3,21 B | 131 072 | Denso, SFT + RLHF | Llama 3.2 Community License | Hugging Face, requiere aceptar términos |
+| Phi-3.5-mini-instruct | 3,8 B | 131 072 | Denso, SFT + DPO | MIT | Hugging Face |
 
 Los datos de los modelos comparables provienen de su documentación pública. No existen métricas de rendimiento publicadas para este adaptador que permitan afirmar si mejora, iguala o empeora al modelo base en alguna tarea.
 
@@ -86,7 +86,7 @@ Los datos de los modelos comparables provienen de su documentación pública. No
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/antrip03/grpo-c3_kl_low_3b_a100-s42
+- Repositorio Hugging Face: https://huggingface.co/antrip03/grpo-c3_kl_low_3b_a100-s42
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de Qwen2.5 (blog y pesos): https://github.com/QwenLM/Qwen2.5
 - Paper de GRPO (DeepSeekMath): https://arxiv.org/abs/2402.03300

@@ -75,7 +75,7 @@ TinyCast es significativamente más pequeño que Chronos y TimesFM, y su arquite
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sktime/tinycast-onnx-int8
+- Modelo en Hugging Face: https://huggingface.co/sktime/tinycast-onnx-int8
 - Modelo base: https://huggingface.co/raws-labs/tinycast
 - Repositorio GitHub de TinyCast: https://github.com/raws-labs/tinycast
 - Paper arXiv: https://arxiv.org/abs/2608.15767v1

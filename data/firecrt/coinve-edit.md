@@ -72,7 +72,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- [HuggingFace: FireCRT/CoinVE-Edit](https://huggingface.co/FireCRT/CoinVE-Edit)
+- [Hugging Face: FireCRT/CoinVE-Edit](https://huggingface.co/FireCRT/CoinVE-Edit)
 - [Dataset: FireCRT/CoinVE-200K](https://huggingface.co/datasets/FireCRT/CoinVE-200K)
 - [GitHub: CoinVE-Edit](https://github.com/coinve200k/CoinVE-200K/tree/main/CoinVE-Edit)
 - [arXiv: 2608.17566](https://arxiv.org/abs/2608.17566)

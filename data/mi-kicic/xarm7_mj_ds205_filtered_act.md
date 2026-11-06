@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la misma categoría (políticas ACT para XArm7). Existen otros modelos ACT en el Hub de HuggingFace, pero no se han encontrado datos de rendimiento o especificaciones detalladas para establecer una comparación objetiva. Por tanto, la comparativa no está disponible.
+No se dispone de información sobre modelos comparables en la misma categoría (políticas ACT para XArm7). Existen otros modelos ACT en el Hub de Hugging Face, pero no se han encontrado datos de rendimiento o especificaciones detalladas para establecer una comparación objetiva. Por tanto, la comparativa no está disponible.
 
 ## Limitaciones y advertencias
 
@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mi-kicic/xarm7_mj_ds205_filtered_act)
+- [Modelo en Hugging Face](https://huggingface.co/mi-kicic/xarm7_mj_ds205_filtered_act)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/mi-kicic/xarm7_mj_ds205_filtered)
 - [Paper de ACT (arXiv:2304.13705)](https://huggingface.co/papers/2304.13705)
 - [Repositorio de LeRobot](https://github.com/huggingface/lerobot)

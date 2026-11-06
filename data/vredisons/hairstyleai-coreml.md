@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vredisons/hairstyleai-coreml es un repositorio alojado en HuggingFace por el usuario Vredisons. La ficha publicada no contiene informacion tecnica: la model card se limita a la linea de metadatos de licencia (`license: creativeml-openrail-m`) y no incluye descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el 27 de septiembre de 2026 sin cambios posteriores.
+Vredisons/hairstyleai-coreml es un repositorio alojado en Hugging Face por el usuario Vredisons. La ficha publicada no contiene informacion tecnica: la model card se limita a la linea de metadatos de licencia (`license: creativeml-openrail-m`) y no incluye descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el 27 de septiembre de 2026 sin cambios posteriores.
 
 El identificador del repositorio y la etiqueta `region: us` son los unicos indicios disponibles: el sufijo "coreml" apunta a una conversion al formato Core ML de Apple, y el prefijo "hairstyleai" sugiere una funcionalidad de edicion o generacion de peinados sobre imagenes de personas. La licencia CreativeML OpenRAIL-M es la empleada habitualmente por la familia Stable Diffusion, lo que apunta a un modelo de difusion derivado, pero se trata de una inferencia a partir del nombre y la licencia, no de un dato confirmado por el autor.
 
@@ -83,7 +83,7 @@ No disponible. No hay datos de rendimiento, tamano ni contexto de este repositor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vredisons/hairstyleai-coreml
+- Hugging Face: https://huggingface.co/Vredisons/hairstyleai-coreml
 - Referencia sobre modelos Core ML (listado comunitario): https://github.com/likedan/Awesome-CoreML-Models
 - Herramienta comercial de peinado virtual (contexto del dominio, no relacionada con el modelo): https://aimode.in/vmodel-ai-hairstyle/
 - Proyecto comunitario con nombre similar (no confirmado como relacionado): https://github.com/rkvelpsg-cyber/hairstyleAI

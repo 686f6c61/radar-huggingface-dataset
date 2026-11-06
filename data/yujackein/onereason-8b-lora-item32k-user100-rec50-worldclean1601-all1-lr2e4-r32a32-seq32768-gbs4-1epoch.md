@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: el modelo base tiene 8 000 millones de parámetros. En BF16, ocupa aproximadamente 16 GB de VRAM, más el adaptador (0,4 GB). Con cuantización de 4 bits, la VRAM podría reducirse a unos 6-8 GB, aunque no se han publicado configuraciones oficiales de cuantización.
 - GPU recomendadas: para inferencia en BF16 se recomienda una GPU con al menos 24 GB de VRAM, como RTX 3090, RTX 4090 o A10G. Para entrenamiento se utilizaron 4 x A800 80GB, pero para inferencia una sola GPU de 24 GB es suficiente.
 - Compatibilidad con GPU de consumo: sí, es posible ejecutar el modelo en GPUs de consumo con 24 GB (por ejemplo, RTX 3090/4090) usando BF16. Con cuantización 4-bit, podría caber en GPUs de 12 GB como RTX 3060 o RTX 4070.
-- Opciones de despliegue: al ser un modelo de HuggingFace con PEFT, se puede desplegar con `transformers` y `peft`, o mediante servidores de inferencia como vLLM (si se fusiona el adaptador con el modelo base) o TGI. También se puede usar con `llama.cpp` si se convierte a GGUF, aunque no se ha publicado esa conversión.
+- Opciones de despliegue: al ser un modelo de Hugging Face con PEFT, se puede desplegar con `transformers` y `peft`, o mediante servidores de inferencia como vLLM (si se fusiona el adaptador con el modelo base) o TGI. También se puede usar con `llama.cpp` si se convierte a GGUF, aunque no se ha publicado esa conversión.
 - Latencia y throughput: no hay datos publicados. En una A100 80GB, un modelo de 8B en BF16 suele generar entre 20 y 50 tokens por segundo, dependiendo del hardware y la implementación.
 
 ## Comparativa con modelos similares
@@ -70,5 +70,5 @@ No disponible. No se dispone de información sobre modelos comparables en la mis
 
 ## Enlaces
 
-- [Adaptador LoRA en HuggingFace](https://huggingface.co/yujackein/onereason-8b-lora-item32k-user100-rec50-worldclean1601-all1-lr2e4-r32a32-seq32768-gbs4-1epoch)
+- [Adaptador LoRA en Hugging Face](https://huggingface.co/yujackein/onereason-8b-lora-item32k-user100-rec50-worldclean1601-all1-lr2e4-r32a32-seq32768-gbs4-1epoch)
 - [Modelo base OneReason-8B](https://huggingface.co/OpenOneRec/OneReason-8B-pretrain-competition)

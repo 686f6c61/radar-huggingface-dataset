@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: no disponible de forma especifica para el LoRA. Al ser un adaptador sobre Qwen-Image-Edit-2511, los requisitos dependen del modelo base. Qwen-Image-Edit-2511 es un modelo de difusion de imagenes que tipicamente requiere entre 16 y 24 GB de VRAM en precision completa para inferencia.
 - GPU recomendadas: no se especifican en la documentacion. Por el tamano del modelo base, se espera compatibilidad con GPUs de gama alta como RTX 4090, A100 o H100.
 - Compatibilidad con GPUs de consumo: probablemente si con RTX 3090/4090 usando cuantizacion o precision reducida, aunque no hay datos oficiales.
-- Opciones de despliegue: el modelo se distribuye para diffusers, por lo que puede ejecutarse con el pipeline de HuggingFace. Tambien esta disponible como API en fal.ai (modelo `fal-ai/qwen-image-edit-2511-multiple-angles`).
+- Opciones de despliegue: el modelo se distribuye para diffusers, por lo que puede ejecutarse con el pipeline de Hugging Face. Tambien esta disponible como API en fal.ai (modelo `fal-ai/qwen-image-edit-2511-multiple-angles`).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No se dispone de informacion sobre otros LoRAs especificos para este modelo base
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA
+- Hugging Face: https://huggingface.co/fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA
 - Archivo safetensors: https://huggingface.co/fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA/blob/main/qwen-image-edit-2511-multiple-angles-lora.safetensors
 - API en fal.ai: https://fal.ai/models/fal-ai/qwen-image-edit-2511-multiple-angles/api
 - Guia de desarrollo de Qwen Image Edit 2511 en fal.ai: https://fal.ai/learn/devs/qwen-image-edit-2511-developer-guide

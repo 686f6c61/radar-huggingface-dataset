@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en l
 | Modelo | Parametros | Contexto | Licencia | Enfoque |
 |---|---|---|---|---|
 | 1pp-1b-raw-tokmatchog-base | 0,98B | 4.096 | Apache-2.0 | Artefacto de investigación (condición raw, token-matched) |
-| SmolLM2-1.7B (HuggingFace) | 1,7B | 8.192 | Apache-2.0 | Modelo general pequeño con tokenizer compartido (su vocabulario de 49.152 es la base de este modelo) |
+| SmolLM2-1.7B (Hugging Face) | 1,7B | 8.192 | Apache-2.0 | Modelo general pequeño con tokenizer compartido (su vocabulario de 49.152 es la base de este modelo) |
 | 1pp-1b-raw-base (mismo autor) | 0,98B | 4.096 | Apache-2.0 | Rama original de la que parte este checkpoint (paso 12.000) |
 | Qwen2.5-1.5B / Llama-3.2-1B | 1,5B / 1,2B | 32.768 / 131.072 | Qwen Research / Llama 3.2 | Modelos generales preentrenados a gran escala, no artefactos controlados |
 

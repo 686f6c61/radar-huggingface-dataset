@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-RL-Social-Science es un ajuste fino mediante aprendizaje por refuerzo del modelo base Qwen/Qwen3.8-27B, publicado por el usuario huyhoangvbck en HuggingFace. El entrenamiento se realizó con el algoritmo GRPO (Group Relative Policy Optimization) sobre el benchmark VMLU en su categoría de ciencias sociales (economía, geografía, educación cívica, derecho, filosofía, entre otras). El resultado es un modelo orientado a responder preguntas de opción múltiple en vietnamita con un modo de razonamiento explícito activable mediante plantilla de chat.
+Qwen3.8-27B-RL-Social-Science es un ajuste fino mediante aprendizaje por refuerzo del modelo base Qwen/Qwen3.8-27B, publicado por el usuario huyhoangvbck en Hugging Face. El entrenamiento se realizó con el algoritmo GRPO (Group Relative Policy Optimization) sobre el benchmark VMLU en su categoría de ciencias sociales (economía, geografía, educación cívica, derecho, filosofía, entre otras). El resultado es un modelo orientado a responder preguntas de opción múltiple en vietnamita con un modo de razonamiento explícito activable mediante plantilla de chat.
 
 El modelo conserva los 27.781.427.952 parámetros del base (unos 27,8 mil millones) y el autor indica que los adaptadores LoRA se han fusionado por completo en los pesos originales, por lo que se distribuye como un checkpoint único listo para servir. El repositorio ocupa 55,6 GB en formato safetensors, coherente con pesos en bfloat16 sin cuantizar.
 
@@ -68,7 +68,7 @@ Nota: las cifras de VRAM son estimaciones derivadas del numero de parametros y d
 - VRAM estimada en int4: alrededor de 14-16 GB de pesos, pero no se distribuye ninguna version cuantizada (no hay GGUF ni AWQ/GPTQ en el repositorio).
 - GPU recomendadas: la configuracion validada por el autor es 4x NVIDIA A100 de 40 GB con tensor parallelism 4 (para el rollout de entrenamiento). Para inferencia, 2x A100 40 GB o 2x H100 80 GB con TP=2 es un punto de partida razonable; una sola H100 80 GB podria ser suficiente con contexto corto, pero no esta verificado por el autor.
 - GPU de consumo: no cabe en una RTX 4090 (24 GB) en bfloat16. Solo seria viable tras una cuantizacion a 4 bits que el autor no proporciona.
-- Opciones de despliegue: vLLM (comando documentado con `--tensor-parallel-size 4 --trust-remote-code --dtype bfloat16 --max-model-len 2560`) y HuggingFace Transformers con `device_map="auto"`. Para llama.cpp u Ollama seria necesario convertir y cuantizar los pesos, algo no soportado oficialmente en el repositorio.
+- Opciones de despliegue: vLLM (comando documentado con `--tensor-parallel-size 4 --trust-remote-code --dtype bfloat16 --max-model-len 2560`) y Hugging Face Transformers con `device_map="auto"`. Para llama.cpp u Ollama seria necesario convertir y cuantizar los pesos, algo no soportado oficialmente en el repositorio.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento (benchmarks, latencia o exactitud) de este
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huyhoangvbck/Qwen3.8-27B-RL-Social-Science
+- Modelo en Hugging Face: https://huggingface.co/huyhoangvbck/Qwen3.8-27B-RL-Social-Science
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Framework Megatron-SWIFT (ms-swift, ModelScope): https://github.com/modelscope/ms-swift
 - Paper original de GRPO (DeepSeekMath, arXiv:2402.03300): https://arxiv.org/abs/2402.03300

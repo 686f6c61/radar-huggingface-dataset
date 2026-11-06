@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Linnaeus-0.1.0-2B-merged es un modelo de decisión de 2B parámetros desarrollado por el usuario pi-dal y publicado en HuggingFace bajo licencia Apache-2.0. No es un modelo generativo de propósito general: está diseñado para clasificar, enrutar y puntuar conjuntos arbitrarios de candidatos a partir de un estado estructurado. Se trata de un fork de Dohnuts (proyecto de AstraBert) reentrenado sobre Qwen3.5-2B, distribuido como pesos completos con el adaptador LoRA ya fusionado, de modo que no requiere cargar un adaptador aparte.
+Linnaeus-0.1.0-2B-merged es un modelo de decisión de 2B parámetros desarrollado por el usuario pi-dal y publicado en Hugging Face bajo licencia Apache-2.0. No es un modelo generativo de propósito general: está diseñado para clasificar, enrutar y puntuar conjuntos arbitrarios de candidatos a partir de un estado estructurado. Se trata de un fork de Dohnuts (proyecto de AstraBert) reentrenado sobre Qwen3.5-2B, distribuido como pesos completos con el adaptador LoRA ya fusionado, de modo que no requiere cargar un adaptador aparte.
 
 Su innovación principal es el denominado "score-row trick": la cabeza de decisión escalar se añade como una fila extra en `embed_tokens` (identificador `score_row_id = 248320`, atada a `lm_head`). Para cada candidato renderizado con el marcador `<|fim_suffix|>`, la puntuación de decisión se obtiene directamente como `logits[posición_marcador, 248320]`, y después se aplica una temperatura por tipo de pregunta y un softmax sobre los candidatos. Esto permite obtener probabilidades de decisión calibradas usando cualquier runtime estándar de transformers, sin necesidad de código personalizado para una cabeza adicional.
 
@@ -27,12 +27,12 @@ El modelo ocupa 2.274.071.872 parámetros (unos 4,6 GB en el repositorio, presum
 | `score_row_id` | 248320 (atado a `lm_head`) |
 | Marcador de candidato | `<|fim_suffix|>` |
 | Contrato de runtime | `linnaeus-runtime.json` (score_row_id, marker, temperatures) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creacion | 2026-09-26 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer denso de aproximadamente 2,27 B de parámetros, heredado de Qwen3.5-2B, sobre el que se ha realizado un ajuste fino con LoRA. El resultado se ha fusionado con los pesos base, por lo que el checkpoint publicado contiene los pesos completos y no requiere cargar adaptadores. La etiqueta `qwen3_5` en HuggingFace confirma la familia arquitectónica, y el pipeline declarado (`image-text-to-text`) sugiere un componente multimodal, aunque la model card no documenta ninguna capacidad de visión ni detalla la composición del dataset de entrenamiento.
+La arquitectura subyacente es un transformer denso de aproximadamente 2,27 B de parámetros, heredado de Qwen3.5-2B, sobre el que se ha realizado un ajuste fino con LoRA. El resultado se ha fusionado con los pesos base, por lo que el checkpoint publicado contiene los pesos completos y no requiere cargar adaptadores. La etiqueta `qwen3_5` en Hugging Face confirma la familia arquitectónica, y el pipeline declarado (`image-text-to-text`) sugiere un componente multimodal, aunque la model card no documenta ninguna capacidad de visión ni detalla la composición del dataset de entrenamiento.
 
 La peculiaridad técnica del modelo es la reutilización de la matriz de embeddings como cabeza de decisión. Añadiendo una fila extra en `embed_tokens` (índice 248320) y atándola a `lm_head`, el modelo convierte una tarea de clasificación en una lectura directa de logits: para cada candidato se renderiza una secuencia que termina en `<|fim_suffix|>` y se lee el logit de la fila 248320 en la posición del marcador. Las puntuaciones resultantes se dividen por una temperatura específica del tipo de pregunta y se normalizan con softmax, lo que produce probabilidades calibradas sin necesidad de implementar una cabeza personalizada en el runtime. El modelo se presenta como fork de Dohnuts reentrenado sobre Qwen3.5-2B, e incluye como artefacto de acompañamiento un fichero `linnaeus-runtime.json` que declara el `score_row_id`, el marcador y las temperaturas. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
@@ -44,7 +44,7 @@ La peculiaridad técnica del modelo es la reutilización de la matriz de embeddi
 - Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su despliegue tras una API.
 - Ejecución en Apple Silicon mediante MPS, además de CUDA y otros dispositivos, según la model card.
 - Integración con runtimes estándar de transformers sin código de cabeza adicional, gracias al truco de la fila de puntuación.
-- Capacidades multimodales: el pipeline declarado en HuggingFace es `image-text-to-text`, pero la model card no documenta ninguna tarea de visión concreta; debe tratarse como no verificada.
+- Capacidades multimodales: el pipeline declarado en Hugging Face es `image-text-to-text`, pero la model card no documenta ninguna tarea de visión concreta; debe tratarse como no verificada.
 - Soporte de tool calling / function calling: no documentado explícitamente.
 - Soporte de agentes y razonamiento multi-paso: no documentado explícitamente; el modelo está orientado a decisiones puntuales, no a planificación de varios pasos.
 - Capacidades multilingües: no disponibles.
@@ -87,16 +87,16 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parametros | Contexto | JevBench v1.2.2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Linnaeus-0.1.0-2B-merged (pi-dal) | 2,27 B | No disponible | 73,16 % (CUDA), 71,0 % (MPS) | apache-2.0 | HuggingFace, pesos fusionados safetensors |
+| Linnaeus-0.1.0-2B-merged (pi-dal) | 2,27 B | No disponible | 73,16 % (CUDA), 71,0 % (MPS) | apache-2.0 | Hugging Face, pesos fusionados safetensors |
 | Dohnuts (upstream, AstraBert) | No disponible | No disponible | 65,8 % | No disponible | GitHub |
-| Qwen3.5-2B (modelo base) | ~2 B (no confirmado en la informacion disponible) | No disponible | No disponible | No disponible | HuggingFace |
-| LLM genericos de ~2 B (Gemma-2-2B, Qwen2.5-1.5B, Llama-3.2-1B) | 1 B - 2 B | 8 K - 128 K segun modelo | No disponible (no evaluados sobre JevBench en la informacion disponible) | Varias | HuggingFace |
+| Qwen3.5-2B (modelo base) | ~2 B (no confirmado en la informacion disponible) | No disponible | No disponible | No disponible | Hugging Face |
+| LLM genericos de ~2 B (Gemma-2-2B, Qwen2.5-1.5B, Llama-3.2-1B) | 1 B - 2 B | 8 K - 128 K segun modelo | No disponible (no evaluados sobre JevBench en la informacion disponible) | Varias | Hugging Face |
 
 La comparación con alternativas generativas de tamaño similar no es directa: Linnaeus está especializado en decisiones discretas con puntuación calibrada, mientras que los LLM de ~2 B están orientados a generación de texto. No se dispone de datos que permitan comparar rendimiento entre ambos grupos sobre la misma tarea.
 
 ## Limitaciones y advertencias
 
-- Validación comunitaria nula: el modelo registra 0 descargas y 0 likes en HuggingFace en el momento de la consulta, por lo que no existe evidencia externa de su comportamiento en producción.
+- Validación comunitaria nula: el modelo registra 0 descargas y 0 likes en Hugging Face en el momento de la consulta, por lo que no existe evidencia externa de su comportamiento en producción.
 - Idiomas no documentados: la model card no especifica los idiomas soportados. Aunque el modelo base Qwen3.5 suele cubrir varias lenguas, no hay confirmación para este checkpoint.
 - Contexto máximo desconocido: no se publica la longitud de ventana, lo que impide planificar tareas que dependan de estados estructurados largos.
 - Riesgo de alucinación: el modelo está diseñado para puntuar candidatos, no para generar texto libre. Usarlo como generador fuera de ese contrato puede producir salidas poco fiables.
@@ -110,7 +110,7 @@ La comparación con alternativas generativas de tamaño similar no es directa: L
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pi-dal/Linnaeus-0.1.0-2B-merged
+- Hugging Face: https://huggingface.co/pi-dal/Linnaeus-0.1.0-2B-merged
 - Modelo base: https://huggingface.co/pi-dal/Linnaeus-0.1.0-2B
 - Repositorio upstream Dohnuts: https://github.com/AstraBert/dohnuts
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden al numero matematico pi y no guardan relacion con Linnaeus.

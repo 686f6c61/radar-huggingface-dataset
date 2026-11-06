@@ -74,7 +74,7 @@ Estas variantes permiten estudiar la simetria de la imitacion, pero no hay datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dementor-research/dpo_gsm8k_qwen3.6-27b_as_llama-3.1-8b_seed42
+- Modelo en Hugging Face: https://huggingface.co/dementor-research/dpo_gsm8k_qwen3.6-27b_as_llama-3.1-8b_seed42
 - Variante seed3: https://huggingface.co/dementor-research/dpo_gsm8k_qwen3.6-27b_as_llama-3.1-8b_seed3
 - Variante inversa (Llama imita a Qwen) seed42: https://huggingface.co/dementor-research/dpo_gsm8k_llama-3.1-8b_as_qwen3.6-27b_seed42
 - Despliegue en FriendliAI (seed1): https://friendli.ai/models/dementor-research/dpo_gsm8k_qwen3.6-27b_as_llama-3.1-8b_seed1

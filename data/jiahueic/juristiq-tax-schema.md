@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`juristiq-tax-schema` es un adaptador LoRA (PEFT) sobre el modelo base `Qwen/Qwen2.5-0.5B-Instruct`, desarrollado por el autor `jiahueic` y publicado en HuggingFace. Se trata de un fine-tuning supervisado (SFT) realizado con la librería TRL de HuggingFace, con el objetivo declarado en el nombre de abordar esquemas fiscales, aunque la model card no aporta ninguna documentación técnica sobre el dataset, los datos de entrenamiento ni las tareas concretas para las que fue optimizado.
+`juristiq-tax-schema` es un adaptador LoRA (PEFT) sobre el modelo base `Qwen/Qwen2.5-0.5B-Instruct`, desarrollado por el autor `jiahueic` y publicado en Hugging Face. Se trata de un fine-tuning supervisado (SFT) realizado con la librería TRL de Hugging Face, con el objetivo declarado en el nombre de abordar esquemas fiscales, aunque la model card no aporta ninguna documentación técnica sobre el dataset, los datos de entrenamiento ni las tareas concretas para las que fue optimizado.
 
 El modelo pertenece a la categoría de adaptadores de bajo coste sobre modelos pequeños: el base tiene 0,5 mil millones de parámetros y una ventana de contexto de 32K tokens, lo que permite ejecutarlo en hardware de consumo. El repositorio ocupa 0,3 GB y contiene únicamente los pesos del adaptador en formato safetensors. Su relevancia actual es limitada: se trata de un experimento de fine-tuning sin métricas publicadas ni validación externa, y su licencia no está especificada, lo que complica su uso en producción.
 
@@ -62,7 +62,7 @@ No se dispone de datos comparativos del adaptador. Comparando el modelo base Qwe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiahui/juristiq-tax-schema
+- Modelo en Hugging Face: https://huggingface.co/jiahui/juristiq-tax-schema
 - Resultados de búsqueda web relevantes (no relacionados directamente con el adaptador):
   - JuristIQ - Juristic: https://www.juristic.io/product/juristiq
   - JuristIQ para asesores fiscales: https://www.juristic.io/solutions/consultancies

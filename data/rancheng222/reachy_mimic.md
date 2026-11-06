@@ -77,7 +77,7 @@ No se han publicado comparativas con otros modelos de text-to-motion en la infor
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Reachy Mimic (v5b) | 15,3 M | 64 tokens de texto + 200 de movimiento | Apache 2.0 | HuggingFace |
+| Reachy Mimic (v5b) | 15,3 M | 64 tokens de texto + 200 de movimiento | Apache 2.0 | Hugging Face |
 | Alternativas text-to-motion | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se han publicado comparativas con otros modelos de text-to-motion en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rancheng222/reachy_mimic
+- Modelo en Hugging Face: https://huggingface.co/rancheng222/reachy_mimic
 - Demo Space: https://huggingface.co/spaces/rancheng222/reachy_mimic
 - Página del proyecto (pipeline de datos, gráficas, vídeos): https://huggingface.co/spaces/rancheng222/reachy_mimic_page
 - Dataset: https://huggingface.co/datasets/rancheng222/reachy_mimic

@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| manokaran1916/llama-3.2-3b-food-delivery-gguf | 3,2 B | 128K (base) | Q4_K_M | no disponible | HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct | 3,2 B | 128K | BF16 | Llama 3.2 Community License | HuggingFace |
-| bartowski/Llama-3.2-3B-Instruct-GGUF | 3,2 B | 128K | Multiples (Q2-Q8, imatrix) | Llama 3.2 Community License | HuggingFace |
-| Qwen2.5-3B-Instruct (GGUF) | 3,1 B | 32K | Multiples | Apache 2.0 | HuggingFace |
+| manokaran1916/llama-3.2-3b-food-delivery-gguf | 3,2 B | 128K (base) | Q4_K_M | no disponible | Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct | 3,2 B | 128K | BF16 | Llama 3.2 Community License | Hugging Face |
+| bartowski/Llama-3.2-3B-Instruct-GGUF | 3,2 B | 128K | Multiples (Q2-Q8, imatrix) | Llama 3.2 Community License | Hugging Face |
+| Qwen2.5-3B-Instruct (GGUF) | 3,1 B | 32K | Multiples | Apache 2.0 | Hugging Face |
 
 La principal diferencia con el modelo base es la especialización en food delivery, aunque no se puede verificar su efectividad sin benchmarks. Frente a Qwen2.5-3B, el modelo de Meta tiene un contexto mayor (128K frente a 32K), pero Qwen ofrece una licencia más permisiva (Apache 2.0). La ausencia de licencia en el repo de manokaran1916 es un factor de riesgo para uso comercial.
 
@@ -78,7 +78,7 @@ La principal diferencia con el modelo base es la especialización en food delive
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/manokaran1916/llama-3.2-3b-food-delivery-gguf
+- Repositorio Hugging Face: https://huggingface.co/manokaran1916/llama-3.2-3b-food-delivery-gguf
 - Modelo base Llama 3.2 3B (Meta): https://huggingface.co/meta-llama/Llama-3.2-3B
 - GGUF de bartowski para Llama 3.2 3B Instruct: https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF
 - Documentacion de Llama 3.2 de Meta: https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_2/

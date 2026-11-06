@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (GR00T N1.7 fine-tuned, Panda) | 3,14 mil M | no disponible | Pick-and-place, 40 objetos | Apache 2.0 | HuggingFace, 22 descargas |
+| Este modelo (GR00T N1.7 fine-tuned, Panda) | 3,14 mil M | no disponible | Pick-and-place, 40 objetos | Apache 2.0 | Hugging Face, 22 descargas |
 | GR00T N1.7 base (NVIDIA) | no disponible | no disponible | Modelo fundacional cross-embodiment | no disponible | GitHub Isaac-GR00T |
-| Políticas LeRobot ACT / Diffusion Policy | no disponible | no disponible | Imitación genérica por tarea | Apache 2.0 (típicamente) | HuggingFace, LeRobot |
+| Políticas LeRobot ACT / Diffusion Policy | no disponible | no disponible | Imitación genérica por tarea | Apache 2.0 (típicamente) | Hugging Face, LeRobot |
 
 La comparación cuantitativa con alternativas no está disponible: no se han publicado métricas de rendimiento de esta política ni de las alternativas en la información proporcionada. La diferencia principal frente a una política ACT o Diffusion Policy es el uso de un backbone VLM de 3,14 mil millones de parámetros con condicionamiento en lenguaje, lo que permite parametrizar la tarea por instrucción en lugar de entrenar una política separada por objeto.
 
@@ -98,7 +98,7 @@ La comparación cuantitativa con alternativas no está disponible: no se han pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_sparse__bbox__separate_channel__sim__all_cameras__live__groot__seed_0
+- Modelo en Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_sparse__bbox__separate_channel__sim__all_cameras__live__groot__seed_0
 - Dataset de entrenamiento: https://huggingface.co/datasets/mim-chess-vlas/train_800_sparse__bbox__separate_channel__sim__all_cameras__live
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=mim-chess-vlas/train_800_sparse__bbox__separate_channel__sim__all_cameras__live
 - Repositorio GR00T de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T

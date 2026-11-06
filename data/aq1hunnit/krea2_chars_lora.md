@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea2 Chars LoRA es una coleccion de 84 LoRAs de personajes para el modelo base KREA2 (y su variante turbo), publicada en HuggingFace por el usuario aq1hunnit. Cada LoRA reproduce el parecido facial de una persona concreta —en su mayoría celebridades, actrices y modelos— y se acompaña de un fichero `persona .md` que describe sus rasgos faciales estables, apariencia variable y rango de expresiones, junto con los captions de entrenamiento.
+Krea2 Chars LoRA es una coleccion de 84 LoRAs de personajes para el modelo base KREA2 (y su variante turbo), publicada en Hugging Face por el usuario aq1hunnit. Cada LoRA reproduce el parecido facial de una persona concreta —en su mayoría celebridades, actrices y modelos— y se acompaña de un fichero `persona .md` que describe sus rasgos faciales estables, apariencia variable y rango de expresiones, junto con los captions de entrenamiento.
 
 El proyecto destaca menos por el modelo en sí y más por su proceso de producción: según la model card, todo el pipeline (scraping de imágenes, curación, captioning, entrenamiento y publicación) fue ejecutado de extremo a extremo por un agente autónomo (Hermes Agent de Nous Research, servido por el modelo Kimi K3) sin revisión manual. Los LoRAs fueron posteriormente re-rankeados mediante SVD dinámico (`sv_fro`, retención 0.998, rango máximo 16) y podados por bloques, eliminando los 8 bloques transformer de menor impacto (~3 % de la energía del delta).
 
@@ -81,7 +81,7 @@ No existen alternativas directas publicadas con la misma escala (84 personajes) 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aq1hunnit/Krea2_Chars_LoRA
+- Repositorio en Hugging Face: https://huggingface.co/aq1hunnit/Krea2_Chars_LoRA
 - Hermes Agent (Nous Research, citado en la model card): https://hermes-agent.nousresearch.com
 - Pagina del modelo base KREA2: no disponible en la informacion proporcionada
 - Paper o blog del proyecto: no disponible

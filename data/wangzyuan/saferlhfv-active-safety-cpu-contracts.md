@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SafeRLHFV-Active-Safety-CPU-Contracts es un repositorio de código y artefactos de integración publicado por el usuario wangzyuan en HuggingFace, no un modelo de lenguaje entrenado. Contiene cinco ficheros exactos versionados con Git que preservan una implementación en NumPy de adquisición, ONS y LURE, junto con dos contratos aislados de adaptadores PPO. Según la model card, se trata de código nuevo respecto al bundle de reproducción de scoring "epoch3" previamente publicado, y no de una nueva subida de esos modelos o scripts.
+SafeRLHFV-Active-Safety-CPU-Contracts es un repositorio de código y artefactos de integración publicado por el usuario wangzyuan en Hugging Face, no un modelo de lenguaje entrenado. Contiene cinco ficheros exactos versionados con Git que preservan una implementación en NumPy de adquisición, ONS y LURE, junto con dos contratos aislados de adaptadores PPO. Según la model card, se trata de código nuevo respecto al bundle de reproducción de scoring "epoch3" previamente publicado, y no de una nueva subida de esos modelos o scripts.
 
 El paquete está pensado para ejecutarse en CPU con NumPy y PyTorch mediante `python -B -m unittest discover -s tests -v`. Las pruebas matemáticas cargan el fichero fuente aislado, mientras que las pruebas de PPO extraen dos métodos por AST sin cargar modelo, DeepSpeed, runner de entrenamiento ni entradas de red. El autor advierte explícitamente de que estas comprobaciones no demuestran el cierre completo de dependencias del entrenador, la calidad de la política, la seguridad humana real, la reanudabilidad completa de los tres roles ni garantías teóricas para PPO.
 
@@ -80,5 +80,5 @@ No se dispone de información suficiente para comparar parámetros, contexto o r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wangzyuan/SafeRLHFV-Active-Safety-CPU-Contracts
+- Hugging Face: https://huggingface.co/wangzyuan/SafeRLHFV-Active-Safety-CPU-Contracts
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

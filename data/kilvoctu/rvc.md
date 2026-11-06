@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kilvoctu/rvc es un repositorio de HuggingFace que contiene exportaciones en formato ONNX de las redes compartidas de extraccion de caracteristicas y estimacion de tono del sistema RVC (Retrieval-based Voice Conversion). No se trata de un modelo generativo autonomo, sino de un paquete de pesos reutilizables: un extractor de caracteristicas ContentVec HuBERT y una red de estimacion de tono RMVPE, ademas de copias en media precision de los checkpoints originales de PyTorch.
+Kilvoctu/rvc es un repositorio de Hugging Face que contiene exportaciones en formato ONNX de las redes compartidas de extraccion de caracteristicas y estimacion de tono del sistema RVC (Retrieval-based Voice Conversion). No se trata de un modelo generativo autonomo, sino de un paquete de pesos reutilizables: un extractor de caracteristicas ContentVec HuBERT y una red de estimacion de tono RMVPE, ademas de copias en media precision de los checkpoints originales de PyTorch.
 
 El modelo lo publica el usuario Kilvoctu y su funcion es servir como dependencia portable para pipelines de conversion de voz. Al estar exportadas a ONNX, estas redes pueden ejecutarse mediante ONNX Runtime sin depender de PyTorch, lo que simplifica el despliegue en entornos de produccion, aplicaciones de escritorio o servicios ligeros. Esta orientacion a la portabilidad es lo que hace relevante el repositorio dentro del ecosistema RVC.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo / recurso | Formato | Contenido | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kilvoctu/rvc | ONNX y .pt | Exports de HuBERT (ContentVec) y RMVPE | MIT | HuggingFace |
-| lj1995/VoiceConversionWebUI | .pt | Checkpoints originales del proyecto RVC | no disponible | HuggingFace |
+| Kilvoctu/rvc | ONNX y .pt | Exports de HuBERT (ContentVec) y RMVPE | MIT | Hugging Face |
+| lj1995/VoiceConversionWebUI | .pt | Checkpoints originales del proyecto RVC | no disponible | Hugging Face |
 | SUC-DriverOld/rvc.onnx | ONNX | Herramientas de exportacion a ONNX | MIT | GitHub |
-| Jmica/audiobook_models | no disponible | Modelos base de audiolibro de los que proceden los pesos | no disponible | HuggingFace |
+| Jmica/audiobook_models | no disponible | Modelos base de audiolibro de los que proceden los pesos | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kilvoctu/rvc
+- Modelo en Hugging Face: https://huggingface.co/Kilvoctu/rvc
 - Modelo base Jmica/audiobook_models: https://huggingface.co/Jmica/audiobook_models
 - Checkpoints originales lj1995/VoiceConversionWebUI: https://huggingface.co/lj1995/VoiceConversionWebUI
 - Repositorio RVC-Project/Retrieval-based-Voice-Conversion-WebUI: https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI
@@ -92,6 +92,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - ContentVec (Lu et al.): https://github.com/auspicious3000/contentvec
 - Directorio de voces RVC (aimodels.org): https://aimodels.org/ai-models/rvc-models-ai-voice/
 - Buscador de voces RVC (ai-search.io): https://ai-search.io/voices
-- MartinFLL/ai-voices en HuggingFace: https://huggingface.co/MartinFLL/ai-voices
+- MartinFLL/ai-voices en Hugging Face: https://huggingface.co/MartinFLL/ai-voices
 - Biblioteca RVC de Voice.ai: https://voice.ai/hub/voice-technology/rvc-library/
-- Busqueda de modelos RVC en HuggingFace: https://huggingface.co/models?sort=trending&search=RVC
+- Busqueda de modelos RVC en Hugging Face: https://huggingface.co/models?sort=trending&search=RVC

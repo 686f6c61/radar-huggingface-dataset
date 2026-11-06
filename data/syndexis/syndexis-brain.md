@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Syndexis/syndexis-brain es un repositorio de modelo publicado en HuggingFace por el usuario Syndexis el 21 de octubre de 2026, con librería `transformers` y pesos en formato `safetensors`. El repositorio ocupa 0,1 GB y acumula 0 descargas y 0 «likes» en el momento de la consulta. No dispone de `pipeline_tag` asignado, lo que impide clasificarlo funcionalmente como modelo de generación de texto, embeddings, visión u otra tarea.
+Syndexis/syndexis-brain es un repositorio de modelo publicado en Hugging Face por el usuario Syndexis el 21 de octubre de 2026, con librería `transformers` y pesos en formato `safetensors`. El repositorio ocupa 0,1 GB y acumula 0 descargas y 0 «likes» en el momento de la consulta. No dispone de `pipeline_tag` asignado, lo que impide clasificarlo funcionalmente como modelo de generación de texto, embeddings, visión u otra tarea.
 
-La model card es la plantilla automática de HuggingFace sin cumplimentar: todos los campos de descripción, desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación figuran como «[More Information Needed]». El único contenido técnico inferible es el etiquetado del repositorio y el tamaño del mismo; no hay información sobre arquitectura, número de parámetros, longitud de contexto ni proceso de entrenamiento.
+La model card es la plantilla automática de Hugging Face sin cumplimentar: todos los campos de descripción, desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación figuran como «[More Information Needed]». El único contenido técnico inferible es el etiquetado del repositorio y el tamaño del mismo; no hay información sobre arquitectura, número de parámetros, longitud de contexto ni proceso de entrenamiento.
 
 Por tanto, no es posible evaluar el modelo con rigor ni recomendarlo para producción. Esta ficha documenta exclusivamente los datos verificables del repositorio y señala de forma explícita cada ausencia de información. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al artículo de Lacoste et al. sobre el calculador de impacto ambiental citado en la plantilla de model card, no a un paper descriptivo del modelo.
 
@@ -45,7 +45,7 @@ Respecto al entrenamiento, se desconoce el volumen de tokens, la composición de
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingües: no documentadas; el campo de idiomas figura como «[More Information Needed]».
 - Visión, audio o modalidades adicionales: no documentadas; los tags no incluyen `image-text-to-text`, `audio-text-to-text` ni equivalentes.
-- Compatibilidad con HuggingFace Inference Endpoints: el tag `endpoints_compatible` indica que el repositorio cumple los requisitos formales de la plataforma, no que el modelo funcione correctamente.
+- Compatibilidad con Hugging Face Inference Endpoints: el tag `endpoints_compatible` indica que el repositorio cumple los requisitos formales de la plataforma, no que el modelo funcione correctamente.
 - Carga mediante `transformers`: es la única capacidad implícita por el campo `library_name`, supeditada a que el `config.json` sea válido y esté presente.
 
 ## Casos de uso
@@ -55,7 +55,7 @@ Los siguientes escenarios son condicionales: solo son aplicables si una inspecci
 - Evaluación técnica previa a adopción: descargar el repositorio, inspeccionar `config.json`, `tokenizer_config.json` y los tensores para determinar arquitectura, número de parámetros, vocabulario y longitud máxima de posición; es el primer paso obligatorio antes de considerar cualquier uso.
 - Prueba de carga en un entorno aislado: ejecutar `AutoModel.from_pretrained` y `AutoTokenizer.from_pretrained` en un contenedor sin acceso a red para verificar que el checkpoint es funcional y qué salidas produce.
 - Fine-tuning ligero con LoRA: si el modelo resulta ser un transformer de pequeño tamaño (coherente con un repositorio de 0,1 GB), podría ajustarse en una GPU de consumo con adaptadores de bajo rango; requiere validar previamente la arquitectura y la licencia.
-- Despliegue en HuggingFace Inference Endpoints: el tag `endpoints_compatible` permitiría intentar el despliegue gestionado, siempre que exista una licencia que autorice el uso y un `pipeline_tag` resoluble por la plataforma.
+- Despliegue en Hugging Face Inference Endpoints: el tag `endpoints_compatible` permitiría intentar el despliegue gestionado, siempre que exista una licencia que autorice el uso y un `pipeline_tag` resoluble por la plataforma.
 - Docencia y experimentación reproducible: útil como caso de estudio de repositorios sin documentación, para practicar auditoría de model cards, verificación de licencias y análisis de checkpoints.
 - Base para pruebas de cuantización: si se confirma un modelo denso de pequeño tamaño, serviría para comparar `safetensors` en fp32/fp16 frente a GGUF o GPTQ en cuanto a perplejidad y latencia en CPU.
 - Integración en un pipeline de clasificación o extracción de características: solo si la prueba de inferencia demuestra que el modelo produce representaciones útiles; no hay evidencia de ello.
@@ -72,7 +72,7 @@ La model card no incluye datos de evaluación, conjuntos de prueba, métricas ni
 - GPU recomendadas: no disponibles. Bajo la hipótesis anterior, cualquier GPU de consumo con 2 GB o más de VRAM sería suficiente; no se requieren A100 ni H100.
 - Cabe en GPU de consumo: probablemente sí bajo la hipótesis de tamaño, pero no confirmado.
 - Ejecución en CPU: plausible por el tamaño del repositorio, pendiente de verificar la arquitectura y el tokenizer.
-- Opciones de despliegue: `transformers` es la vía documentada por `library_name`; HuggingFace Inference Endpoints es posible por el tag `endpoints_compatible`. vLLM y TGI requieren conocer la arquitectura y el `pipeline_tag`, hoy ausentes. llama.cpp y Ollama no son aplicables sin una conversión a GGUF, que no está publicada.
+- Opciones de despliegue: `transformers` es la vía documentada por `library_name`; Hugging Face Inference Endpoints es posible por el tag `endpoints_compatible`. vLLM y TGI requieren conocer la arquitectura y el `pipeline_tag`, hoy ausentes. llama.cpp y Ollama no son aplicables sin una conversión a GGUF, que no está publicada.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -102,7 +102,7 @@ Sin arquitectura, parámetros ni licencia no se puede seleccionar un conjunto de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Syndexis/syndexis-brain
+- Repositorio en Hugging Face: https://huggingface.co/Syndexis/syndexis-brain
 - Articulo citado en la plantilla y en los tags (Lacoste et al., 2019, calculador de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ambiental de Machine Learning: https://ml2co2.github.io/impact
 - Paper del modelo: no disponible

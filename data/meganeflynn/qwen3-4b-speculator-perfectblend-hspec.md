@@ -72,7 +72,7 @@ No se han publicado comparaciones directas con otros speculators en la informaci
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-speculator-perfectblend-hspec | 1.044 M | ventana 2048 (atencion) | Hibrido Mamba/attention, KV compartida | Apache 2.0 | HuggingFace, vLLM (PR #62780) |
+| Qwen3-4B-speculator-perfectblend-hspec | 1.044 M | ventana 2048 (atencion) | Hibrido Mamba/attention, KV compartida | Apache 2.0 | Hugging Face, vLLM (PR #62780) |
 | Speculators transformer densos para Qwen3-4B | no disponible | no disponible | Transformer denso | no disponible | no disponible |
 | EAGLE / EAGLE-2 para modelos de 4B | no disponible | no disponible | Borrador con fusion de features | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ No se dispone de datos publicados de alternativas comparables en la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MeganEFlynn/Qwen3-4B-speculator-perfectblend-hspec
+- Hugging Face: https://huggingface.co/MeganEFlynn/Qwen3-4B-speculator-perfectblend-hspec
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Paper H-Spec: https://arxiv.org/abs/2609.24197
 - Toolkit speculators: https://github.com/vllm-project/speculators

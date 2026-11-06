@@ -67,6 +67,6 @@ No se dispone de informacion sobre otros LoRAs de Krea 2 o modelos comparables e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lloydchristmas1231/halraul
+- Repositorio Hugging Face: https://huggingface.co/lloydchristmas1231/halraul
 - Otros repositorios del autor: https://huggingface.co/lloydchristmas1231/hallang, https://huggingface.co/lloydchristmas1231/caslus
 - Perfil de GitHub del autor: https://github.com/lloydchristmas1231

@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (pi05-libero-main-module-lr-view-medium-v0p3-e0p03-1000-20261015) | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| Este checkpoint (pi05-libero-main-module-lr-view-medium-v0p3-e0p03-1000-20261015) | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | Otros checkpoints de la familia pi0.5 / openpi | no disponible | no disponible | variable segun repositorio | no disponible en la información proporcionada |
 | Alternativas en LIBERO | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,7 +82,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-view-medium-v0p3-e0p03-1000-20261015
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-view-medium-v0p3-e0p03-1000-20261015
 - Librería base (openpi): librería declarada como `library_name` en el repositorio; no se ha proporcionado URL adicional en la información disponible.
 - Paper, blog, repositorio o demo del autor: no disponible.
 - Resultados adicionales de la búsqueda web: no se han encontrado enlaces relevantes sobre este modelo.

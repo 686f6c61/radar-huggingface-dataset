@@ -68,7 +68,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/positron-ai/openai_gpt-oss-20b-hf-bf16
+- Hugging Face: https://huggingface.co/positron-ai/openai_gpt-oss-20b-hf-bf16
 - Modelo original: https://huggingface.co/openai/gpt-oss-20b
 - Repositorio GitHub de gpt-oss: https://github.com/openai/gpt-oss
 - Blog de OpenAI sobre gpt-oss: https://openai.com/index/introducing-gpt-oss/

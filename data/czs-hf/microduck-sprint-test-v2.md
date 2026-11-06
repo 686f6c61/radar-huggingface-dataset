@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Czs-HF/microduck-sprint-test-v2 | Política de control simulada (remix) | no disponible | no aplica | 0,861 s, 5/5, 1,15 m/s | no disponible | HuggingFace, repo de 0,0 GB |
-| suraj-phanindra/microduck-sprint-hc5-aifund | Política de control simulada (base) | no disponible | no aplica | no disponible en esta ficha | no disponible | HuggingFace |
+| Czs-HF/microduck-sprint-test-v2 | Política de control simulada (remix) | no disponible | no aplica | 0,861 s, 5/5, 1,15 m/s | no disponible | Hugging Face, repo de 0,0 GB |
+| suraj-phanindra/microduck-sprint-hc5-aifund | Política de control simulada (base) | no disponible | no aplica | no disponible en esta ficha | no disponible | Hugging Face |
 | Modelos de lenguaje comparables | no aplica | no aplica | no aplica | no aplica | no aplica | no aplica |
 
 No se conocen otros artefactos de la familia MicroDuck con datos públicos suficientes para una comparación cuantitativa.
@@ -91,6 +91,6 @@ No se conocen otros artefactos de la familia MicroDuck con datos públicos sufic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Czs-HF/microduck-sprint-test-v2
+- Hugging Face: https://huggingface.co/Czs-HF/microduck-sprint-test-v2
 - Modelo base: https://huggingface.co/suraj-phanindra/microduck-sprint-hc5-aifund
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

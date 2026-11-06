@@ -26,7 +26,7 @@ Su relevancia es acotada pero clara: la selección de premisas es el cuello de b
 | Modelo base | hmzprover/hpsearch-embed-xs-agent |
 | Rol en el sistema | Solo lado consulta (query embedder); los documentos usan los vectores de xs-agent |
 | Campo de emparejamiento | `pairs_with` apunta al id del modelo de documentos |
-| Tamano del repo | 0.0 GB reportados en HuggingFace; en torno a 22-25 MB para 22 M de parametros en int8 (estimacion) |
+| Tamano del repo | 0.0 GB reportados en Hugging Face; en torno a 22-25 MB para 22 M de parametros en int8 (estimacion) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no aplica en el escenario previsto (CPU); en GPU, el grafo int8 ocupa del orden de decenas de MB, por lo que cualquier GPU con 1 GB libre es suficiente (estimacion a partir de los 22 M de parametros).
 - GPU recomendadas: no son necesarias. Cualquier GPU consumer (GTX 1650, RTX 3060, RTX 4090) sirve si se quiere acelerar el lote; el modelo esta disenado para onnxruntime en CPU.
 - Cabe en GPU consumer: si, en todas, incluidas graficas integradas, y tambien en CPU sin aceleracion.
-- Opciones de despliegue: onnxruntime (via directa, la prevista por el autor), Optimum/ONNX Runtime de HuggingFace, Text Embeddings Inference con backend ONNX, o un microservicio propio en Python. vLLM y llama.cpp no aplican: no es un modelo generativo y no se distribuye en GGUF.
+- Opciones de despliegue: onnxruntime (via directa, la prevista por el autor), Optimum/ONNX Runtime de Hugging Face, Text Embeddings Inference con backend ONNX, o un microservicio propio en Python. vLLM y llama.cpp no aplican: no es un modelo generativo y no se distribuye en GGUF.
 - Latencia y throughput: no publicados. Por el tamano (22 M de parametros, int8) se espera del orden de milisegundos por lote pequeno en una CPU moderna, pero es una estimacion no verificada.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmzprover/hpsearch-embed-xs-state
+- Modelo en Hugging Face: https://huggingface.co/hmzprover/hpsearch-embed-xs-state
 - Modelo de documentos (xs-agent): https://huggingface.co/hmzprover/hpsearch-embed-xs-agent
 - Modelo profesor (4b-state): https://huggingface.co/hmzprover/hpsearch-embed-4b-state
 - Repositorio hpsearch: https://github.com/humanfia/hpsearch

@@ -4,7 +4,7 @@
 
 WiTi4Bit/gemma-3-270m-it-qnm-4bit es una cuantizacion de 4 bits del modelo instructivo google/gemma-3-270m-it, publicada por el usuario WiTi4Bit. El modelo base pertenece a la familia Gemma 3 de Google y esta disenado para tareas de generacion de texto en entornos con recursos muy limitados. La cuantizacion emplea la tecnica denominada "qnm" (etiquetada como q4m en los tags) y se enmarca en un trabajo sobre "precision-transition-dynamics", orientado a estudiar como afecta la transicion de precision a las capacidades del modelo.
 
-El repositorio contiene unicamente pesos en formato safetensors con arquitectura gemma3_text, un total real de 193.279.232 parametros y un tamano de 0,2 GB, lo que lo situa en el rango de modelos ejecutables en CPU o en GPUs de gama baja. El acceso es restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargarlo, y la licencia es "other", heredada de las condiciones del modelo base de Google.
+El repositorio contiene unicamente pesos en formato safetensors con arquitectura gemma3_text, un total real de 193.279.232 parametros y un tamano de 0,2 GB, lo que lo situa en el rango de modelos ejecutables en CPU o en GPUs de gama baja. El acceso es restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargarlo, y la licencia es "other", heredada de las condiciones del modelo base de Google.
 
 Su relevancia es fundamentalmente practica para el despliegue en el borde (edge AI): permite experimentar con un Gemma 3 instructivo cuantizado a 4 bits en dispositivos con poca memoria, aunque con la advertencia de que se trata de una publicacion de terceros sin benchmarks publicados ni documentacion extensa sobre el proceso de cuantizacion.
 
@@ -20,7 +20,7 @@ Su relevancia es fundamentalmente practica para el despliegue en el borde (edge 
 | Idiomas soportados | no disponible |
 | Licencia | other (condiciones del modelo base google/gemma-3-270m-it) |
 | Formato de pesos | safetensors |
-| Acceso | restringido (gated) en HuggingFace |
+| Acceso | restringido (gated) en Hugging Face |
 | Modelo base | google/gemma-3-270m-it |
 | Tamano del repositorio | 0,2 GB |
 
@@ -81,11 +81,11 @@ La comparativa se limita al propio modelo base y a otras cuantizaciones del mism
 - Idiomas y contexto: no confirmados en la informacion disponible; conviene validar el comportamiento en castellano antes de usarlo en produccion.
 - Licencia "other": hereda las condiciones de Gemma de Google; es necesario revisar los terminos del modelo base para uso comercial y aceptar las condiciones del repositorio gated.
 - Publicacion de terceros: sin documentacion tecnica del metodo qnm ni benchmarks; el autor no ofrece garantias de calidad.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede complicar la automatizacion de descargas en pipelines.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede complicar la automatizacion de descargas en pipelines.
 - Sin soporte confirmado de tool calling ni de agentes: no asumir estas capacidades sin validacion previa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WiTi4Bit/gemma-3-270m-it-qnm-4bit
+- Modelo en Hugging Face: https://huggingface.co/WiTi4Bit/gemma-3-270m-it-qnm-4bit
 - Modelo base: https://huggingface.co/google/gemma-3-270m-it
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

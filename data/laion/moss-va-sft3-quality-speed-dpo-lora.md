@@ -83,7 +83,7 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/moss-va-sft3-quality-speed-dpo-lora
+- Modelo en Hugging Face: https://huggingface.co/laion/moss-va-sft3-quality-speed-dpo-lora
 - Adaptador hermano solo-calidad: https://huggingface.co/laion/moss-va-sft3-quality-dpo-lora
 - Repositorio de adaptadores de calidad (familia): https://huggingface.co/laion/moss-va-sft3-quality-lora-adapters
 - Repositorio de 500 adaptadores de voz: https://huggingface.co/laion/moss-va-sft3-voice-loras

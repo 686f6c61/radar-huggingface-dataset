@@ -4,7 +4,7 @@
 
 SearchQwen3-8B-i1-GGUF es una cuantización GGUF con matriz de importancia (imatrix) del modelo SearchQwen3-8B, desarrollado por Alibaba PAI. El modelo original está orientado a tareas de búsqueda profunda (deep search), uso de herramientas y llamadas a funciones, y se basa en la arquitectura Qwen3-8B. Esta versión cuantizada, creada por mradermacher, está pensada para facilitar su ejecución en hardware con recursos limitados, manteniendo la compatibilidad con el ecosistema de herramientas como llama.cpp, Ollama o vLLM.
 
-La cuantización se ofrece en múltiples niveles de compresión, desde IQ1_S (2,2 GB) hasta Q6_K (6,8 GB), lo que permite adaptar el modelo a distintos requisitos de memoria. El archivo imatrix se incluye para que los usuarios puedan generar sus propias cuantizaciones personalizadas. El modelo está licenciado bajo Apache 2.0 y solo está disponible en inglés, según los metadatos de HuggingFace.
+La cuantización se ofrece en múltiples niveles de compresión, desde IQ1_S (2,2 GB) hasta Q6_K (6,8 GB), lo que permite adaptar el modelo a distintos requisitos de memoria. El archivo imatrix se incluye para que los usuarios puedan generar sus propias cuantizaciones personalizadas. El modelo está licenciado bajo Apache 2.0 y solo está disponible en inglés, según los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No se dispone de informacion sobre modelos directamente comparables en la docume
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/mradermacher/SearchQwen3-8B-i1-GGUF
+- Repositorio de Hugging Face: https://huggingface.co/mradermacher/SearchQwen3-8B-i1-GGUF
 - Modelo base (SearchQwen3-8B): https://huggingface.co/alibaba-pai/SearchQwen3-8B
 - Cuantizaciones estaticas (sin imatrix): https://huggingface.co/mradermacher/SearchQwen3-8B-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#SearchQwen3-8B-i1-GGUF

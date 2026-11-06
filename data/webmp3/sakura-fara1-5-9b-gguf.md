@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sakura — Fara1.5-9B (GGUF, three sizes) es una cuantizacion comunitaria, no oficial, del modelo microsoft/Fara1.5-9B, un agente de uso de ordenador (computer-use) orientado a la navegacion web. El modelo base parte de Qwen3.5-9B y es multimodal: recibe capturas de pantalla del navegador y emite llamadas a herramientas estructuradas. El autor de la cuantizacion es el usuario de HuggingFace webmp3, dentro de su linea Sakura Micro, y no tiene ninguna vinculacion con Microsoft.
+Sakura — Fara1.5-9B (GGUF, three sizes) es una cuantizacion comunitaria, no oficial, del modelo microsoft/Fara1.5-9B, un agente de uso de ordenador (computer-use) orientado a la navegacion web. El modelo base parte de Qwen3.5-9B y es multimodal: recibe capturas de pantalla del navegador y emite llamadas a herramientas estructuradas. El autor de la cuantizacion es el usuario de Hugging Face webmp3, dentro de su linea Sakura Micro, y no tiene ninguna vinculacion con Microsoft.
 
 El repositorio contiene tres archivos GGUF de distinto tamano generados a partir de los pesos BF16 del modelo original mediante un metodo propio de cuantizacion mixta con matrices de importancia (imatrix). Los tres archivos van de 3,90 GiB (3,74 bpw) a 5,53 GiB (5,31 bpw), con divergencia KL creciente a medida que baja el tamano, y usan exclusivamente tipos ggml estandar de llama.cpp, por lo que funcionan en llama.cpp sin parches. Se incluye ademas el proyector de vision `mmproj-Fara1.5-9B-f16.gguf`, conversion F16 de bartowski que no se ha cuantizado.
 
@@ -22,7 +22,7 @@ Su relevancia practica es doble: por un lado permite ejecutar un agente multimod
 | Formato de pesos | GGUF (llama.cpp); proyector de vision aparte en `mmproj-Fara1.5-9B-f16.gguf` (F16) |
 | Modelo base | microsoft/Fara1.5-9B (relacion: quantized) |
 | Tamano del repositorio | 16,3 GB |
-| Fecha de publicacion en HuggingFace | 2026-10-02 (ultima actualizacion: 2026-10-03) |
+| Fecha de publicacion en Hugging Face | 2026-10-02 (ultima actualizacion: 2026-10-03) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento

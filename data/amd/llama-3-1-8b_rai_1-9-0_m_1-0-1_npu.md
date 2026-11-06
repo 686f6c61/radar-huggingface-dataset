@@ -2,11 +2,11 @@
 
 ## Resumen
 
-AMD publica en HuggingFace una conversión del modelo Llama-3.1-8B de Meta optimizada para ejecutarse sobre las NPU de los procesadores AMD Ryzen AI, empaquetada en formato ONNX y etiquetada con el stack RAI (Ryzen AI) 1.9.0 y el perfil NPU m_1.0.1. No se trata de un modelo nuevo entrenado por AMD, sino de una distribución de pesos derivada de Llama-3.1-8B adaptada al runtime de inferencia de AMD para acelerar la generación de texto en hardware de PC con unidad de procesamiento neuronal integrada.
+AMD publica en Hugging Face una conversión del modelo Llama-3.1-8B de Meta optimizada para ejecutarse sobre las NPU de los procesadores AMD Ryzen AI, empaquetada en formato ONNX y etiquetada con el stack RAI (Ryzen AI) 1.9.0 y el perfil NPU m_1.0.1. No se trata de un modelo nuevo entrenado por AMD, sino de una distribución de pesos derivada de Llama-3.1-8B adaptada al runtime de inferencia de AMD para acelerar la generación de texto en hardware de PC con unidad de procesamiento neuronal integrada.
 
 El interés de esta ficha es fundamentalmente práctico: permite ejecutar un modelo de 8.000 millones de parámetros en local sobre equipos AMD Ryzen AI sin depender de GPU dedicada, lo que resulta relevante para despliegues de borde, asistentes locales y prototipos de privacidad por diseño. La contrapartida es que hereda todas las características y limitaciones del Llama-3.1-8B original, incluida su licencia de comunidad de Meta.
 
-El repositorio es de acceso restringido (gated) y requiere aceptar las condiciones en HuggingFace. El tamaño del repo (5,4 GB) es coherente con pesos en precisión reducida para el formato ONNX, aunque la información disponible no detalla el esquema exacto de cuantización empleado.
+El repositorio es de acceso restringido (gated) y requiere aceptar las condiciones en Hugging Face. El tamaño del repo (5,4 GB) es coherente con pesos en precisión reducida para el formato ONNX, aunque la información disponible no detalla el esquema exacto de cuantización empleado.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ La diferencia clave frente a las alternativas es el target de ejecución: esta c
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar las condiciones en HuggingFace antes de descargarlo.
+- Acceso restringido: el repositorio es gated y requiere aceptar las condiciones en Hugging Face antes de descargarlo.
 - Licencia Llama 3.1 Community: impone restricciones de uso comercial, obligaciones de atribución y cláusulas de escala de usuarios que deben revisarse antes de producción.
 - Idioma: los metadatos declaran únicamente inglés; el rendimiento en castellano no está garantizado.
 - Riesgo de alucinación: inherente al Llama-3.1-8B base, sin mitigaciones adicionales documentadas en esta conversión.
@@ -85,7 +85,7 @@ La diferencia clave frente a las alternativas es el target de ejecución: esta c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/Llama-3.1-8B_rai_1.9.0_m_1.0.1_npu
+- Modelo en Hugging Face: https://huggingface.co/amd/Llama-3.1-8B_rai_1.9.0_m_1.0.1_npu
 - Modelo base Llama-3.1-8B (Meta): https://huggingface.co/meta-llama/Llama-3.1-8B
 - Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/
 - AMD Ryzen AI (información de producto): https://www.amd.com/en/products/processors/consumer/ryzen-ai.html

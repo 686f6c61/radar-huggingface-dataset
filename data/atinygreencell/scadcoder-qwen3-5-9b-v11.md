@@ -72,8 +72,8 @@ No se han identificado en la información disponible otros modelos especializado
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scadcoder-qwen3.5-9b-v11 | 9.653 M | No disponible | OpenSCAD paramétrico (Tiiny Pocket Lab) | Apache 2.0 | HuggingFace, safetensors bf16 |
-| Qwen/Qwen3.5-9B | No disponible | No disponible | Modelo generalista multimodal | No disponible en la informacion | HuggingFace (modelo base) |
+| scadcoder-qwen3.5-9b-v11 | 9.653 M | No disponible | OpenSCAD paramétrico (Tiiny Pocket Lab) | Apache 2.0 | Hugging Face, safetensors bf16 |
+| Qwen/Qwen3.5-9B | No disponible | No disponible | Modelo generalista multimodal | No disponible en la informacion | Hugging Face (modelo base) |
 | Otros modelos de generación de CAD/OpenSCAD | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se han identificado en la información disponible otros modelos especializado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ATinyGreenCell/scadcoder-qwen3.5-9b-v11
+- Hugging Face: https://huggingface.co/ATinyGreenCell/scadcoder-qwen3.5-9b-v11
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio del benchmark y detalles de entrenamiento (§6.4): https://github.com/ATinyGreenCell/prompt-to-bench
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada. Las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo.

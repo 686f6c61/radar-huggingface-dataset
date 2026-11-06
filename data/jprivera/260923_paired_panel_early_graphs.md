@@ -125,7 +125,7 @@ No procede una comparativa con modelos: este repositorio no publica ningún mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jprivera/260923_paired_panel_early_graphs
+- Repositorio en Hugging Face: https://huggingface.co/jprivera/260923_paired_panel_early_graphs
 - Informe canónico del panel referenciado: `../260923_paired_grid/report_panel/grid.json` (generado el 2026-09-23T17:36Z)
 - Informe final de submuestra completa: `../260923_paired_grid/report/` y `../260923_paired_grid/figs/`
 - Conjunto de evaluación: `../260923_paired_grid/data/evals_panel25/`

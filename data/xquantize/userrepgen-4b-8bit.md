@@ -79,8 +79,8 @@ En el caso con repetición (el ejemplo de Excel) el modelo repitió una frase ce
 
 | Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microsoft/UserRepGen-4B | ≈4,2 B | 8.192 tokens | bf16 (safetensors) | MIT | Público en HuggingFace |
-| xquantize/userrepgen-4b-8bit | ≈4,2 B | 8.192 tokens | MLX, 8 bits | MIT | Público en HuggingFace |
+| microsoft/UserRepGen-4B | ≈4,2 B | 8.192 tokens | bf16 (safetensors) | MIT | Público en Hugging Face |
+| xquantize/userrepgen-4b-8bit | ≈4,2 B | 8.192 tokens | MLX, 8 bits | MIT | Público en Hugging Face |
 | Variante 4 bits plana (MLX) | ≈4,2 B | 8.192 tokens | MLX, 4 bits | MIT | No publicada por fallos de validación JSON |
 
 No se han identificado en la información disponible otros modelos comparables especializados en representación de usuario; las alternativas habituales serían modelos generalistas usados con prompts de extracción, pero no hay datos que permitan compararlos aquí.
@@ -102,7 +102,7 @@ No se han identificado en la información disponible otros modelos comparables e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xquantize/userrepgen-4b-8bit
+- Repositorio Hugging Face: https://huggingface.co/xquantize/userrepgen-4b-8bit
 - Modelo original: https://huggingface.co/microsoft/UserRepGen-4B
 - Plantilla de prompt incluida: https://huggingface.co/xquantize/userrepgen-4b-8bit/blob/main/representation_prompt.txt
 - mlx-lm (herramienta de conversión e inferencia): https://github.com/ml-explore/mlx-lm

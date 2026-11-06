@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Beverbeke/distilgpt2-finetuned-eli5 es un ajuste fino del modelo distilgpt2 publicado en HuggingFace por el usuario Beverbeke. Distilgpt2 es la version destilada de GPT-2 desarrollada por HuggingFace, un transformer decoder-only de aproximadamente 82 millones de parametros (6 capas, 768 dimensiones ocultas y 12 cabezas de atencion) entrenado mediante destilacion por conocimiento sobre el modelo GPT-2 original de OpenAI. El repositorio tiene 81.912.576 parametros reales en formato safetensors y ocupa 0,3 GB, lo que lo situa en la categoria de modelos pequenos ejecutables incluso en CPU.
+Beverbeke/distilgpt2-finetuned-eli5 es un ajuste fino del modelo distilgpt2 publicado en Hugging Face por el usuario Beverbeke. Distilgpt2 es la version destilada de GPT-2 desarrollada por Hugging Face, un transformer decoder-only de aproximadamente 82 millones de parametros (6 capas, 768 dimensiones ocultas y 12 cabezas de atencion) entrenado mediante destilacion por conocimiento sobre el modelo GPT-2 original de OpenAI. El repositorio tiene 81.912.576 parametros reales en formato safetensors y ocupa 0,3 GB, lo que lo situa en la categoria de modelos pequenos ejecutables incluso en CPU.
 
-El sufijo "eli5" del identificador sugiere un ajuste fino sobre el conjunto de datos ELI5 (Explain Like I'm Five) de Reddit, orientado a generar explicaciones sencillas de conceptos complejos. Sin embargo, la model card del repositorio esta generada automaticamente por la plantilla de HuggingFace y no contiene informacion sobre el dataset, el procedimiento de entrenamiento, hiperparametros ni evaluacion, por lo que esta hipotesis no puede confirmarse con la documentacion disponible.
+El sufijo "eli5" del identificador sugiere un ajuste fino sobre el conjunto de datos ELI5 (Explain Like I'm Five) de Reddit, orientado a generar explicaciones sencillas de conceptos complejos. Sin embargo, la model card del repositorio esta generada automaticamente por la plantilla de Hugging Face y no contiene informacion sobre el dataset, el procedimiento de entrenamiento, hiperparametros ni evaluacion, por lo que esta hipotesis no puede confirmarse con la documentacion disponible.
 
 Su relevancia practica es limitada pero clara: se trata de un checkpoint de muy bajo coste computacional, util para experimentos de ajuste fino, prototipado rapido, generacion de texto con restricciones de recursos o como caso de estudio de fine-tuning sobre distilgpt2. No compite con modelos generativos modernos en razonamiento, codigo ni contexto largo, y no cuenta con descargas ni valoraciones en el momento de la consulta.
 
@@ -23,7 +23,7 @@ Su relevancia practica es limitada pero clara: se trata de un checkpoint de muy 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de distilgpt2: un transformer decoder-only con atencion causal, 6 capas, 768 dimensiones ocultas, 12 cabezas de atencion, vocabulario BPE de 50.257 tokens y embeddings posicionales aprendidos hasta 1.024 posiciones. Distilgpt2 se obtiene mediante destilacion por conocimiento del GPT-2 de 124 millones de parametros, conservando aproximadamente el 66 % de los parametros y reduciendo el coste de inferencia en torno a un 40-50 % respecto al original, con una perdida de calidad reportada por HuggingFace relativamente contenida en tareas de generacion general.
+La arquitectura es la de distilgpt2: un transformer decoder-only con atencion causal, 6 capas, 768 dimensiones ocultas, 12 cabezas de atencion, vocabulario BPE de 50.257 tokens y embeddings posicionales aprendidos hasta 1.024 posiciones. Distilgpt2 se obtiene mediante destilacion por conocimiento del GPT-2 de 124 millones de parametros, conservando aproximadamente el 66 % de los parametros y reduciendo el coste de inferencia en torno a un 40-50 % respecto al original, con una perdida de calidad reportada por Hugging Face relativamente contenida en tareas de generacion general.
 
 Sobre el entrenamiento de este ajuste concreto no hay informacion: la model card no especifica el numero de tokens, la composicion del dataset, si hubo filtrado, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Tampoco se documentan hiperparametros (learning rate, regimen de precision, numero de epochs) ni la infraestructura empleada. La unica pista es el nombre del repositorio, que apunta al dataset ELI5 de Reddit, compuesto por preguntas y respuestas explicativas con documentos de apoyo; no obstante, se trata de una inferencia a partir del identificador y no de un dato documentado. No se declara ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, MoE ni arquitecturas hibridas).
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Beverbeke/distilgpt2-finetuned-eli5 | 81,9 M | 1.024 tokens | No disponible | HuggingFace, 0 descargas, 0 likes | Ajuste no documentado; sin benchmarks |
-| distilgpt2 (HuggingFace) | 82 M | 1.024 tokens | Apache 2.0 | Muy extendido, millones de descargas | Modelo base destilado de GPT-2; referencia directa |
+| Beverbeke/distilgpt2-finetuned-eli5 | 81,9 M | 1.024 tokens | No disponible | Hugging Face, 0 descargas, 0 likes | Ajuste no documentado; sin benchmarks |
+| distilgpt2 (Hugging Face) | 82 M | 1.024 tokens | Apache 2.0 | Muy extendido, millones de descargas | Modelo base destilado de GPT-2; referencia directa |
 | GPT-2 (OpenAI) | 124 M | 1.024 tokens | MIT (pesos publicados) | Muy extendido | Mayor calidad que distilgpt2 a mayor coste |
 | TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache 2.0 | Ampliamente distribuido | Arquitectura Llama, mucho mas capaz en razonamiento y multilingue |
 
@@ -78,13 +78,13 @@ La comparacion con los dos primeros es la mas pertinente por tamano y arquitectu
 - Limitaciones de contexto: ventana de 1.024 tokens, insuficiente para documentos largos, conversaciones multi-turno extensas o tareas de recuperacion aumentada con contexto amplio.
 - Limitaciones de idioma: los idiomas soportados no estan declarados; el modelo base es predominantemente ingles y el rendimiento en castellano es previsiblemente bajo.
 - Restricciones de licencia: el repositorio no declara licencia, por lo que el uso comercial es juridicamente incierto. Aunque el modelo base distilgpt2 se distribuye bajo Apache 2.0, la ausencia de licencia explicita en este ajuste constituye un riesgo para produccion.
-- Falta total de documentacion: no hay informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni limitaciones declaradas por el autor. La model card es la plantilla automatica de HuggingFace sin rellenar.
+- Falta total de documentacion: no hay informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni limitaciones declaradas por el autor. La model card es la plantilla automatica de Hugging Face sin rellenar.
 - Sin validacion de la comunidad: 0 descargas y 0 "likes" en el momento de la consulta, lo que implica ausencia de verificacion externa de calidad.
 - Advertencia para produccion: no se recomienda su uso en sistemas en produccion con usuarios finales sin una evaluacion previa exhaustiva y, preferiblemente, sustituirlo por un modelo con licencia clara, documentacion de entrenamiento y benchmarks publicados.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Beverbeke/distilgpt2-finetuned-eli5
+- Hugging Face: https://huggingface.co/Beverbeke/distilgpt2-finetuned-eli5
 - Modelo base distilgpt2: https://huggingface.co/distilgpt2
 - Paper de GPT-2 (Radford et al., 2019): https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
 - Articulo referenciado en las etiquetas (Lacoste et al., 2019, calculadora de impacto de carbono): https://arxiv.org/abs/1910.09700

@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-phi-1_5-...-forget10-ihl_reset_head-epoch03` | 1,42 B | no disponible | Checkpoint de desaprendizaje (época 3/20) | apache-2.0 | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_phi-1.5` | 1,42 B | 2048 (Phi-1.5) | Fine-tuning de Phi-1.5 sobre TOFU, modelo de referencia "sin desaprender" | apache-2.0 | HuggingFace |
-| `microsoft/phi-1_5` | 1,42 B | 2048 | Modelo base de texto y código | MIT (según el repo original) | HuggingFace, ampliamente usado |
-| Otras variantes `unl-reset` (otras épocas, otros métodos) | 1,42 B | no disponible | Ablaciones del mismo experimento | apache-2.0 | HuggingFace |
+| `unl-reset/tofu-phi-1_5-...-forget10-ihl_reset_head-epoch03` | 1,42 B | no disponible | Checkpoint de desaprendizaje (época 3/20) | apache-2.0 | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_phi-1.5` | 1,42 B | 2048 (Phi-1.5) | Fine-tuning de Phi-1.5 sobre TOFU, modelo de referencia "sin desaprender" | apache-2.0 | Hugging Face |
+| `microsoft/phi-1_5` | 1,42 B | 2048 | Modelo base de texto y código | MIT (según el repo original) | Hugging Face, ampliamente usado |
+| Otras variantes `unl-reset` (otras épocas, otros métodos) | 1,42 B | no disponible | Ablaciones del mismo experimento | apache-2.0 | Hugging Face |
 
 La comparación relevante es siempre contra `locuslab/tofu_ft_phi-1.5` (el modelo del que se parte) y contra el Phi-1.5 original (el estado antes del fine-tuning sobre TOFU). No hay datos públicos de rendimiento de este checkpoint frente a esos dos, por lo que la comparativa se limita a parámetros, linaje y licencia.
 
@@ -86,7 +86,7 @@ La comparación relevante es siempre contra `locuslab/tofu_ft_phi-1.5` (el model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_head-epoch03
+- Repositorio Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_head-epoch03
 - Modelo base del fine-tuning: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original de Microsoft: https://huggingface.co/microsoft/phi-1_5
 - Paper de TOFU (Task of Fictitious Unlearning): no disponible en la información proporcionada

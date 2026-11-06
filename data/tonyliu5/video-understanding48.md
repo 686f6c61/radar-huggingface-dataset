@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 - No aplica: no hay modelo que ejecutar ni inferencia que realizar.
 - No se requieren GPU ni VRAM para utilizar este repositorio.
-- Cualquier equipo con un editor de texto y acceso a GitHub o HuggingFace puede leer el contenido.
+- Cualquier equipo con un editor de texto y acceso a GitHub o Hugging Face puede leer el contenido.
 - No hay opciones de despliegue (vLLM, llama.cpp, Ollama, TGI) porque no existe un modelo servible.
 
 ## Comparativa con modelos similares
@@ -59,7 +59,7 @@ No disponible. No existe ningún modelo comparable porque este repositorio no co
 ## Limitaciones y advertencias
 
 - El repositorio no contiene un modelo funcional; cualquier uso como tal es imposible.
-- Los metadatos de HuggingFace (tags `safetensors`, `transformer`, parámetros totales) son engañosos: no hay tensores ni arquitectura real.
+- Los metadatos de Hugging Face (tags `safetensors`, `transformer`, parámetros totales) son engañosos: no hay tensores ni arquitectura real.
 - No hay resultados experimentales, solo planes e hipótesis. No debe citarse como evidencia de rendimiento.
 - La licencia cc-by-4.0 permite uso comercial y modificación, pero no otorga derechos sobre los datasets externos referenciados (MSR-VTT, ActivityNet Captions), cuyos términos deben revisarse por separado.
 - El contenido está en inglés, aunque no se declaran idiomas soportados; no hay garantía de traducción ni soporte multilingüe.
@@ -67,5 +67,5 @@ No disponible. No existe ningún modelo comparable porque este repositorio no co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tonyliu5/video-understanding48
+- Repositorio en Hugging Face: https://huggingface.co/tonyliu5/video-understanding48
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código) en la búsqueda web.

@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tokens de entrenamiento | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GeoLadder-40M-32B (este modelo) | 40M | 32B | 2048 | no disponible | HuggingFace, repo `dill-lab` |
-| Resto de la suite GeoLadder (107 modelos) | 4M - 75M | varia por configuracion | no disponible | no disponible | Coleccion `dill-lab/geoladder` en HuggingFace |
-| Suite Pythia (EleutherAI) | 14M - 12B | no disponible en la informacion | no disponible | no disponible en la informacion | HuggingFace |
-| Modelos OLMo de AI2 | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | HuggingFace |
+| GeoLadder-40M-32B (este modelo) | 40M | 32B | 2048 | no disponible | Hugging Face, repo `dill-lab` |
+| Resto de la suite GeoLadder (107 modelos) | 4M - 75M | varia por configuracion | no disponible | no disponible | Coleccion `dill-lab/geoladder` en Hugging Face |
+| Suite Pythia (EleutherAI) | 14M - 12B | no disponible en la informacion | no disponible | no disponible en la informacion | Hugging Face |
+| Modelos OLMo de AI2 | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | Hugging Face |
 
 La comparacion estrictamente valida es con las otras 107 configuraciones de la coleccion GeoLadder, ya que comparten arquitectura, dataset y esquema de evaluacion, y solo difieren en batch size, weight decay, learning rate, presupuesto de tokens y LR final. Frente a la suite Pythia, el paralelismo relevante es el formato de publicacion de checkpoints intermedios por rama, mencionado explicitamente en la model card; no se dispone de datos de rendimiento de Pythia en la informacion proporcionada para establecer una comparacion cuantitativa.
 
@@ -103,7 +103,7 @@ La comparacion estrictamente valida es con las otras 107 configuraciones de la c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dill-lab/GeoLadder-40M-32B-bs64-lr0.0065-wd0.1-decay0.01
+- Modelo en Hugging Face: https://huggingface.co/dill-lab/GeoLadder-40M-32B-bs64-lr0.0065-wd0.1-decay0.01
 - Coleccion GeoLadder con los 108 modelos: https://huggingface.co/collections/dill-lab/geoladder-6acd192e30ec71aff2998e2e
 - Articulo en PMLR (ICML 2026, PMLR 306, paginas 61454-61482): https://proceedings.mlr.press/v306/kulkarni26c.html
 - Preprint en arXiv (2602.20433): https://arxiv.org/abs/2602.20433

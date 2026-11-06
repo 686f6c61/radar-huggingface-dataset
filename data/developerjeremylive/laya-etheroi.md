@@ -104,7 +104,7 @@ Diferencias destacables: Laya opera con un contexto declarado muy superior (hast
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/developerjeremylive/laya-etheroi
+- Hugging Face: https://huggingface.co/developerjeremylive/laya-etheroi
 - Repositorio GitHub: https://github.com/NandhaKishorM/laya
 - Documentación: https://nandhakishorm.github.io/laya/
 - Checkpoint ajustado `laya-typed-decisions`: https://huggingface.co/convaiinnovations/laya-typed-decisions

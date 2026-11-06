@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SnazzyArtist22/Sebastian-Solace` es un repositorio publicado en HuggingFace por el usuario SnazzyArtist22. La información disponible es extremadamente limitada: no se especifica arquitectura, número de parámetros, contexto, idiomas ni licencia (declarada como `unknown`). El repositorio tiene un tamaño de 0.5 GB y fue creado el 20 de agosto de 2026, sin descargas ni valoraciones. No existe una model card sustancial más allá de la declaración de licencia desconocida.
+El modelo `SnazzyArtist22/Sebastian-Solace` es un repositorio publicado en Hugging Face por el usuario SnazzyArtist22. La información disponible es extremadamente limitada: no se especifica arquitectura, número de parámetros, contexto, idiomas ni licencia (declarada como `unknown`). El repositorio tiene un tamaño de 0.5 GB y fue creado el 20 de agosto de 2026, sin descargas ni valoraciones. No existe una model card sustancial más allá de la declaración de licencia desconocida.
 
 Dada la ausencia de datos técnicos, no es posible evaluar sus capacidades, rendimiento o idoneidad para casos de uso concretos. Cualquier uso en producción requeriría una investigación adicional por parte del desarrollador, contactando directamente con el autor o analizando los archivos del repositorio.
 
@@ -54,4 +54,4 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo, no es p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SnazzyArtist22/Sebastian-Solace
+- Repositorio en Hugging Face: https://huggingface.co/SnazzyArtist22/Sebastian-Solace

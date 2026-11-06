@@ -69,10 +69,10 @@ Ajustes de inferencia del showcase: ComfyUI, Euler a, 28 pasos, CFG 4.5, CLIP sk
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TenkaIzumo-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | rank 64 / alpha 32 | no aplica | creativeml-openrail-m | HuggingFace y ModelScope |
-| LoRA de personaje generico en Illustrious | LoRA de personaje | checkpoints Illustrious | variable | no aplica | variable | Civitai, HuggingFace |
-| LoRA de personaje en Pony Diffusion | LoRA de personaje | Pony Diffusion V6 XL | variable | no aplica | variable | Civitai, HuggingFace |
-| Checkpoint SDXL completo | Modelo base | SDXL | ~2.600 M (UNet) | no aplica | CreativeML OpenRAIL++-M | HuggingFace, Stability |
+| TenkaIzumo-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | rank 64 / alpha 32 | no aplica | creativeml-openrail-m | Hugging Face y ModelScope |
+| LoRA de personaje generico en Illustrious | LoRA de personaje | checkpoints Illustrious | variable | no aplica | variable | Civitai, Hugging Face |
+| LoRA de personaje en Pony Diffusion | LoRA de personaje | Pony Diffusion V6 XL | variable | no aplica | variable | Civitai, Hugging Face |
+| Checkpoint SDXL completo | Modelo base | SDXL | ~2.600 M (UNet) | no aplica | CreativeML OpenRAIL++-M | Hugging Face, Stability |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -89,8 +89,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abbuibuibui/TenkaIzumo-Lora
-- Dataset en HuggingFace: https://huggingface.co/datasets/abbuibuibui/TenkaIzumo-Dataset
+- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/TenkaIzumo-Lora
+- Dataset en Hugging Face: https://huggingface.co/datasets/abbuibuibui/TenkaIzumo-Dataset
 - Modelo en ModelScope: https://www.modelscope.cn/models/abbuibuibui/TenkaIzumo-Lora
 - Dataset en ModelScope: https://www.modelscope.cn/datasets/abbuibuibui/TenkaIzumo-Dataset
 - Notas de evaluacion en chino: `evaluation/横向测评记录.md` dentro del repositorio

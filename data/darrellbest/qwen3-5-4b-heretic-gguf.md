@@ -119,7 +119,7 @@ Todas las variantes comparten el mismo modelo base abliterado, por lo que la dif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darrellbest/Qwen3.5-4B-Heretic-GGUF
+- Modelo en Hugging Face: https://huggingface.co/darrellbest/Qwen3.5-4B-Heretic-GGUF
 - Modelo base abliterado en safetensors: https://huggingface.co/darrellbest/Qwen3.5-4B-Heretic
 - Variante FP8 W8A8: https://huggingface.co/darrellbest/Qwen3.5-4B-Heretic-FP8
 - Variante NVFP4: https://huggingface.co/darrellbest/Qwen3.5-4B-Heretic-NVFP4

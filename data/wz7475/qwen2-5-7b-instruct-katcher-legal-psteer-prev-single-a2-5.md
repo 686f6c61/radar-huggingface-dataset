@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-single-a2.5 es un ajuste publicado en HuggingFace por el usuario wz7475 sobre Qwen2.5-7B-Instruct, el transformer denso decoder-only de 7.600 millones de parametros desarrollado por Alibaba Cloud. El identificador sugiere un trabajo de ajuste orientado al dominio juridico (katcher-legal) con algun tipo de intervencion sobre el comportamiento del modelo (psteer, prev-single, a2.5), presumiblemente dentro de una linea de experimentos de steering o alineacion, aunque el autor no documenta ninguno de estos terminos.
+El modelo wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-single-a2.5 es un ajuste publicado en Hugging Face por el usuario wz7475 sobre Qwen2.5-7B-Instruct, el transformer denso decoder-only de 7.600 millones de parametros desarrollado por Alibaba Cloud. El identificador sugiere un trabajo de ajuste orientado al dominio juridico (katcher-legal) con algun tipo de intervencion sobre el comportamiento del modelo (psteer, prev-single, a2.5), presumiblemente dentro de una linea de experimentos de steering o alineacion, aunque el autor no documenta ninguno de estos terminos.
 
-La model card es la plantilla autogenerada de HuggingFace y no aporta informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni licencia. No hay pipeline declarado, ni idiomas, ni descargas ni valoraciones. El repositorio ocupa 0,3 GB, un tamano muy inferior a los aproximadamente 15 GB que requeririan los pesos completos de un modelo de 7B en bf16, lo que apunta a que contiene un adaptador, un conjunto de tensores de intervencion o un subconjunto parcial de pesos en lugar de un checkpoint completo.
+La model card es la plantilla autogenerada de Hugging Face y no aporta informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni licencia. No hay pipeline declarado, ni idiomas, ni descargas ni valoraciones. El repositorio ocupa 0,3 GB, un tamano muy inferior a los aproximadamente 15 GB que requeririan los pesos completos de un modelo de 7B en bf16, lo que apunta a que contiene un adaptador, un conjunto de tensores de intervencion o un subconjunto parcial de pesos en lugar de un checkpoint completo.
 
 Su relevancia es por tanto exploratoria: puede servir como referencia a quien investigue tecnicas de steering o ajuste en el dominio juridico sobre la familia Qwen2.5, pero no cuenta con documentacion suficiente para evaluarlo ni para desplegarlo en produccion con garantias.
 
@@ -72,16 +72,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-single-a2.5 | 7,6B (heredados del base) | no declarada (32.768 en el base) | no disponible | HuggingFace |
-| Qwen2.5-7B-Instruct | 7,6B | 32.768 (131.072 con YaRN) | Apache 2.0 | HuggingFace, ModelScope |
-| Llama-3.1-8B-Instruct | 8,03B | 131.072 | Llama 3.1 Community License | HuggingFace, Meta |
-| Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 | Apache 2.0 | HuggingFace |
+| wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-single-a2.5 | 7,6B (heredados del base) | no declarada (32.768 en el base) | no disponible | Hugging Face |
+| Qwen2.5-7B-Instruct | 7,6B | 32.768 (131.072 con YaRN) | Apache 2.0 | Hugging Face, ModelScope |
+| Llama-3.1-8B-Instruct | 8,03B | 131.072 | Llama 3.1 Community License | Hugging Face, Meta |
+| Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento de este checkpoint que permitan compararlo en calidad de respuesta con las alternativas. La comparacion se limita por tanto a parametros, contexto y licencia. Frente a los otros tres modelos, este repositorio no declara licencia ni idiomas, lo que supone una desventaja clara de cara a una evaluacion o a un uso comercial.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla vacia de HuggingFace, sin datos de entrenamiento, evaluacion, uso previsto ni sesgos.
+- Ausencia total de documentacion: la model card es la plantilla vacia de Hugging Face, sin datos de entrenamiento, evaluacion, uso previsto ni sesgos.
 - Licencia no declarada: el modelo base Qwen2.5-7B-Instruct se distribuye bajo Apache 2.0, pero el ajuste no especifica terminos propios, lo que genera incertidumbre juridica para uso comercial.
 - Riesgo alto de alucinacion en dominio juridico: generar texto legal incorrecto puede tener consecuencias graves si no se somete a revision profesional.
 - Comportamiento potencialmente alterado: si el ajuste aplica steering sobre activaciones, el modelo puede presentar deriva en tareas generales (codigo, matematicas, conversacion abierta) que no han sido evaluadas.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento de este checkpoint que permitan compararlo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-single-a2.5
+- Modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-single-a2.5
 - Modelo hermano del mismo autor: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-aligned
 - Modelo hermano del mismo autor: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw2
 - Modelo hermano del mismo autor: https://featherless.ai/models/wz7475/qwen2.5-7b-instruct-katcher-legal-magmax-base-it

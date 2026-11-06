@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HAI-Relay no es un modelo de lenguaje ni una red neuronal: es un paquete de software de comunicacion local-first para agentes de codigo. Lo publica el usuario smlflg en HuggingFace como repositorio de infraestructura, no como pesos de modelo. Su funcion es actuar como columna vertebral de mensajeria entre seis clientes de agente (Codex, Claude, Cursor, Gemini, OpenCode y Hermes): cada cliente recibe una identidad fija en el momento de lanzar su comando MCP y habla con un unico daemon central a traves de un socket Unix.
+HAI-Relay no es un modelo de lenguaje ni una red neuronal: es un paquete de software de comunicacion local-first para agentes de codigo. Lo publica el usuario smlflg en Hugging Face como repositorio de infraestructura, no como pesos de modelo. Su funcion es actuar como columna vertebral de mensajeria entre seis clientes de agente (Codex, Claude, Cursor, Gemini, OpenCode y Hermes): cada cliente recibe una identidad fija en el momento de lanzar su comando MCP y habla con un unico daemon central a traves de un socket Unix.
 
 El relay ofrece mensajeria agente-a-agente pasiva y durable, hilos con forma A2A (tareas, referencias a artefactos, acuses de recibo y eventos de auditoria), despacho de tareas condicionado por mision y lease a traves de un puerto de autoridad HAI-MCP que falla en cerrado (fail-closed), y despacho ACP mediante el SDK oficial de cliente ACP de Python. Persiste en SQLite, soporta recuperacion tras reinicio, idempotencia, cargas utiles de 64 KiB, retencion de 14 dias y un maximo de tres saltos por mensaje.
 
@@ -18,7 +18,7 @@ Es relevante ahora porque la orquestacion de varios agentes de codigo sobre una 
 | Longitud de contexto | no aplicable; limites operativos: carga util maxima de 64 KiB por mensaje, retencion de 14 dias, maximo de 3 saltos |
 | Tipos de cuantizacion | no aplicable |
 | Idiomas soportados | no disponible (la documentacion y los mensajes del sistema estan en ingles) |
-| Licencia | no disponible (la model card no indica licencia y la ficha de HuggingFace no la expone) |
+| Licencia | no disponible (la model card no indica licencia y la ficha de Hugging Face no la expone) |
 | Formato de pesos | no aplicable (paquete Python; instalacion con `uv sync`; no se distribuyen pesos) |
 | Tipo de artefacto | repositorio de software / herramienta de infraestructura |
 | Lenguaje de implementacion | Python (gestionado con `uv`) |
@@ -28,7 +28,7 @@ Es relevante ahora porque la orquestacion de varios agentes de codigo sobre una 
 | Identidad | fija en el lanzamiento del proceso MCP; ninguna herramienta acepta `from_agent` |
 | Estado del proyecto | parcial: nucleo implementado, registros MCP globales y pruebas ACP en vivo no incluidos |
 | Descargas / likes | 0 descargas, 1 like |
-| Fecha de creacion en HuggingFace | 2026-09-16 (segun metadatos de la ficha) |
+| Fecha de creacion en Hugging Face | 2026-09-16 (segun metadatos de la ficha) |
 
 ## Arquitectura y entrenamiento
 
@@ -99,13 +99,13 @@ No disponible. La informacion proporcionada no incluye otros proyectos comparabl
 - Licencia no disponible: sin una licencia explicita no puede asumirse permiso para uso comercial, redistribucion o modificacion.
 - Limites operativos que condicionan el diseno: 64 KiB por carga util, 14 dias de retencion y un maximo de tres saltos, lo que impide cadenas largas de reenvio entre agentes.
 - Proyecto con senales de madurez muy bajas: 0 descargas y 1 like en el momento de la consulta, sin fecha de version estable ni historial publico de mantenimiento.
-- Anomalia de metadatos: las fechas de creacion y actualizacion de la ficha en HuggingFace son del 16 de septiembre de 2026, posteriores a la fecha de consulta, lo que conviene verificar antes de citar el proyecto.
+- Anomalia de metadatos: las fechas de creacion y actualizacion de la ficha en Hugging Face son del 16 de septiembre de 2026, posteriores a la fecha de consulta, lo que conviene verificar antes de citar el proyecto.
 - Riesgos habituales de suplantacion, inyeccion de instrucciones o alucinacion de tareas por parte de los agentes conectados; el relay mitiga la suplantacion con identidades fijas, pero no valida semanticamente el contenido de los mensajes.
 - Dependencia de un socket Unix local: no es un servicio de red distribuida y no se documentan mecanismos de autenticacion remota ni cifrado en transito.
 - No hay benchmarks publicados de latencia, throughput ni tolerancia a fallos mas alla de la recuperacion tras reinicio.
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/smlflg/HAI-Relay
+- Ficha en Hugging Face: https://huggingface.co/smlflg/HAI-Relay
 - Documentacion del proyecto: incluida en la model card del repositorio anterior, sin sitio web propio ni DOI indicados.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre HAI-Relay, MCP o ACP: los resultados obtenidos correspondian a paginas de soporte de Dell y HP sin relacion con el proyecto. Por tanto, no hay papers, blogs, repositorios ni demos adicionales que enlazar.

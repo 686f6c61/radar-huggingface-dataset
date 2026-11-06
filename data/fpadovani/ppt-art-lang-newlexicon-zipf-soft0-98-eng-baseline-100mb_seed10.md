@@ -8,7 +8,7 @@ El modelo `fpadovani/ppt-art-lang-newlexicon-zipf-soft0.98-eng-baseline-100mb_se
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (tipo GPT-2, según etiquetas de HuggingFace) |
+| Arquitectura | Transformer (tipo GPT-2, según etiquetas de Hugging Face) |
 | Parametros totales | 86.508.288 |
 | Parametros activos | no aplicable (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -19,7 +19,7 @@ El modelo `fpadovani/ppt-art-lang-newlexicon-zipf-soft0.98-eng-baseline-100mb_se
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura del modelo Goldfish `eng_latn_100mb`, que es un transformer decoder-only de tamaño reducido, similar a GPT-2. Se ha realizado un fine-tuning con aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens ni la composición de los datos. El nombre del modelo indica que se trata de un experimento con un "nuevo léxico" y una distribución de frecuencias de palabras ajustada (Zipf suavizada con parámetro 0.98), lo que sugiere que el entrenamiento se realizó sobre un corpus modificado artificialmente para estudiar el impacto de la distribución de frecuencias en el aprendizaje del lenguaje. No se mencionan técnicas adicionales como RLHF o DPO.
+El modelo se basa en la arquitectura del modelo Goldfish `eng_latn_100mb`, que es un transformer decoder-only de tamaño reducido, similar a GPT-2. Se ha realizado un fine-tuning con aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens ni la composición de los datos. El nombre del modelo indica que se trata de un experimento con un "nuevo léxico" y una distribución de frecuencias de palabras ajustada (Zipf suavizada con parámetro 0.98), lo que sugiere que el entrenamiento se realizó sobre un corpus modificado artificialmente para estudiar el impacto de la distribución de frecuencias en el aprendizaje del lenguaje. No se mencionan técnicas adicionales como RLHF o DPO.
 
 ## Capacidades
 
@@ -45,7 +45,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 - VRAM estimada: con 86,5 millones de parametros, en FP16 ocupa aproximadamente 173 MB, y en FP32 unos 346 MB. Cabe en cualquier GPU consumer con al menos 1 GB de VRAM.
 - GPU recomendadas: cualquier GPU moderna, incluso integradas, aunque para inferencia rapida se recomienda una GPU dedicada (por ejemplo, NVIDIA GTX 1050 Ti o superior).
-- Despliegue: compatible con la libreria Transformers de HuggingFace, y puede servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF). Tambien es compatible con Ollama si se convierte el formato.
+- Despliegue: compatible con la libreria Transformers de Hugging Face, y puede servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF). Tambien es compatible con Ollama si se convierte el formato.
 - Latencia y throughput: al ser un modelo muy pequeno, la latencia es minima (del orden de milisegundos) y el throughput alto, aunque no se han publicado cifras concretas.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se dispone de comparativas con modelos de la misma categoria (por ejemplo, GP
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-soft0.98-eng-baseline-100mb_seed10)
+- [Hugging Face - modelo](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-soft0.98-eng-baseline-100mb_seed10)
 - [Modelo base goldfish-models/eng_latn_100mb](https://huggingface.co/goldfish-models/eng_latn_100mb)
 - [Variante con otra semilla (zipf-eng-baseline-100mb_seed3407)](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed3407)
 - [Variante en neerlandes (nld-baseline-100mb_seed3407)](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-nld-baseline-100mb_seed3407)

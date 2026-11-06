@@ -78,7 +78,7 @@ La principal diferencia con el modelo original es el empaquetado listo para Comf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Comfy-Org/flux1-schnell
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/flux1-schnell
 - Pagina oficial de Comfy sobre Flux1 Schnell: https://comfy.org/p/supported-models/flux1-schnell/
 - Tutorial de ComfyUI para Flux.1 text-to-image: https://docs.comfy.org/tutorials/flux/flux-1-text-to-image
 - Modelo original de Black Forest Labs: https://huggingface.co/black-forest-labs/FLUX.1-schnell

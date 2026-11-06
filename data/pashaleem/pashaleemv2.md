@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pashaleem/pashaleemv2` es un repositorio de modelo publicado en HuggingFace por el usuario `pashaleem`. La informacion disponible se limita a los metadatos del repositorio: licencia personalizada denominada `pashaleemv2` (con enlace a un fichero `LICENSE`), etiquetas `license:other` y `region:us`, 0 descargas, 0 likes y un tamano de repositorio de 0,3 GB. No se declara pipeline de inferencia, idiomas soportados, arquitectura ni parametros.
+`pashaleem/pashaleemv2` es un repositorio de modelo publicado en Hugging Face por el usuario `pashaleem`. La informacion disponible se limita a los metadatos del repositorio: licencia personalizada denominada `pashaleemv2` (con enlace a un fichero `LICENSE`), etiquetas `license:other` y `region:us`, 0 descargas, 0 likes y un tamano de repositorio de 0,3 GB. No se declara pipeline de inferencia, idiomas soportados, arquitectura ni parametros.
 
 La model card no contiene descripcion tecnica: unicamente el frontmatter YAML con la licencia. No hay informacion sobre datos de entrenamiento, tokenizador, longitud de contexto, formatos de pesos ni resultados de evaluacion. Tampoco hay resultados de busqueda web relevantes: las consultas devuelven paginas del banco frances LCL, sin relacion con el modelo.
 
@@ -50,7 +50,7 @@ No se dispone de datos sobre el corpus de entrenamiento (numero de tokens, compo
 
 Los siguientes escenarios son los unicos abordables con la informacion actual, y en todos ellos el modelo se trata como un artefacto a validar, no como un componente listo para produccion:
 
-- Auditoria de artefactos de HuggingFace: descargar el repositorio, inspeccionar los ficheros (`config.json`, tokenizador, pesos) y determinar formato, arquitectura y parametros antes de plantear cualquier evaluacion.
+- Auditoria de artefactos de Hugging Face: descargar el repositorio, inspeccionar los ficheros (`config.json`, tokenizador, pesos) y determinar formato, arquitectura y parametros antes de plantear cualquier evaluacion.
 - Evaluacion interna acotada: si el repositorio contiene pesos cargables, ejecutar una bateria reducida de prompts en un entorno aislado para verificar que el modelo genera texto coherente y en que idiomas.
 - Prueba de integracion en pipeline de inferencia: comprobar si los pesos se cargan con `transformers`, `vLLM` o `llama.cpp` segun el formato encontrado, midiendo tiempos de carga y consumo de memoria reales.
 - Revision legal previa a cualquier uso: leer el fichero `LICENSE` para determinar si la licencia `pashaleemv2` permite uso comercial, redistribucion o modificacion, algo imprescindible antes de integrar el modelo en un producto.
@@ -94,7 +94,7 @@ No disponible. No se puede identificar una categoria de comparacion (tamano, tar
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/pashaleem/pashaleemv2
+- Pagina del modelo en Hugging Face: https://huggingface.co/pashaleem/pashaleemv2
 - Fichero de licencia referenciado: https://huggingface.co/pashaleem/pashaleemv2/blob/main/LICENSE
 - Perfil del autor: https://huggingface.co/pashaleem
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

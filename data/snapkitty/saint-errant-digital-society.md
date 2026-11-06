@@ -50,6 +50,6 @@ No disponible. Al no existir un modelo de IA en este repositorio, no es posible 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/saint-errant-digital-society
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/saint-errant-digital-society
 - Repositorio en GitHub (mencionado en el README): https://github.com/SNAPKITTYWEST/saint-errant-digital-society
 - Comunidad Discord (mencionada en el README): https://discord.gg/dugymT3rj

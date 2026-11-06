@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gianmaTest/generatedDigitalExps_1xKn7F_rnn_meanPoolProc_video_1` es un checkpoint de 1.576.704 parámetros publicado en HuggingFace Hub por la cuenta `gianmaTest`. Se trata de un artefacto de peso muy reducido (el repositorio ocupa 0,0 GB) distribuido únicamente en formato safetensors, sin pipeline declarado, sin licencia especificada y sin idiomas documentados. La model card es la plantilla automática que genera la integración `PyTorchModelHubMixin` y no aporta información sobre código, paper ni documentación: los tres campos aparecen como "More Information Needed".
+`gianmaTest/generatedDigitalExps_1xKn7F_rnn_meanPoolProc_video_1` es un checkpoint de 1.576.704 parámetros publicado en Hugging Face Hub por la cuenta `gianmaTest`. Se trata de un artefacto de peso muy reducido (el repositorio ocupa 0,0 GB) distribuido únicamente en formato safetensors, sin pipeline declarado, sin licencia especificada y sin idiomas documentados. La model card es la plantilla automática que genera la integración `PyTorchModelHubMixin` y no aporta información sobre código, paper ni documentación: los tres campos aparecen como "More Information Needed".
 
 Por el identificador se deduce que forma parte de una familia de experimentos generados automáticamente (`generatedDigitalExps`) en los que se barajan variantes de arquitectura (`rnn`, `cnn1d`, `hier_by_room`) y de procesamiento de la señal (`meanPoolProc`) sobre datos de vídeo (`video`). El propio nombre apunta a una red neuronal recurrente con agregación por *mean pooling* aplicada a representaciones de vídeo, pero esta lectura es una inferencia a partir de la nomenclatura y no está confirmada por el autor en ninguna fuente disponible.
 
@@ -42,7 +42,7 @@ La única señal estructural disponible es la nomenclatura del identificador. El
 Los siguientes escenarios son hipótesis de trabajo derivadas del nombre del repositorio y de su tamaño, no capacidades verificadas. Cualquier uso en producción exigiría validar antes la arquitectura y el código de carga.
 
 - Reproducción de experimentos académicos: el checkpoint sirve como artefacto de referencia dentro de la serie `generatedDigitalExps`, permitiendo recuperar una configuración concreta (RNN + mean pooling + vídeo) y compararla con las variantes `cnn1d` o `hier_by_room` del mismo autor.
-- Pruebas de infraestructura de despliegue: con 1,58 M de parámetros y unos 6,3 MB en fp32, es un candidato ideal para validar pipelines de carga, versionado de safetensors y CI/CD en HuggingFace Hub sin consumir recursos de GPU.
+- Pruebas de infraestructura de despliegue: con 1,58 M de parámetros y unos 6,3 MB en fp32, es un candidato ideal para validar pipelines de carga, versionado de safetensors y CI/CD en Hugging Face Hub sin consumir recursos de GPU.
 - Extracción de características de secuencias de vídeo: si la arquitectura es la que sugiere el nombre, podría generar un vector agregado por clip para tareas posteriores de clasificación o recuperación, siempre que se disponga del código y del preprocesado original.
 - Docencia y experimentación con arquitecturas recurrentes: su tamaño permite entrenar y ejecutar en portátil, lo que facilita comparar el efecto del mean pooling frente a otras estrategias de agregación temporal.
 - Inferencia en dispositivos muy restringidos: microcontroladores, Raspberry Pi o navegador vía exportación a ONNX, dado que el modelo completo ocupa menos de 2 MB en int8 (estimación aritmética a partir del número de parámetros).
@@ -85,7 +85,7 @@ No hay datos públicos de parámetros, contexto, rendimiento ni licencia de mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKn7F_rnn_meanPoolProc_video_1
+- Modelo en Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKn7F_rnn_meanPoolProc_video_1
 - Perfil del autor: https://huggingface.co/gianmaTest
 - Variante hermana `video_0`: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKitd_rnn_meanPoolProc_video_0
 - Variante hermana con CNN 1D y jerarquía por sala: https://huggingface.co/gianmaTest/generatedDigitalExps_1uyDUk_hier_by_room_rnn_meanPoolProc_cnn1d_video_2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`henil08/verilog-coder-3b-mlx-4bit` es un modelo de generacion de texto especializado, a juzgar por su nombre, en la generacion de codigo Verilog, publicado por el usuario henil08 en HuggingFace. Se distribuye unicamente en formato MLX cuantizado a 4 bits, es decir, empaquetado para su ejecucion en Apple Silicon mediante la libreria `mlx` de Apple, y no en formatos habituales de servidor como safetensors sin cuantizar o GGUF. El repositorio tiene un tamano de 1,7 GB y 3.085.938.688 parametros totales (aproximadamente 3,09 mil millones), lo que lo situa en la categoria de modelos pequenos aptos para hardware de consumo.
+`henil08/verilog-coder-3b-mlx-4bit` es un modelo de generacion de texto especializado, a juzgar por su nombre, en la generacion de codigo Verilog, publicado por el usuario henil08 en Hugging Face. Se distribuye unicamente en formato MLX cuantizado a 4 bits, es decir, empaquetado para su ejecucion en Apple Silicon mediante la libreria `mlx` de Apple, y no en formatos habituales de servidor como safetensors sin cuantizar o GGUF. El repositorio tiene un tamano de 1,7 GB y 3.085.938.688 parametros totales (aproximadamente 3,09 mil millones), lo que lo situa en la categoria de modelos pequenos aptos para hardware de consumo.
 
 La arquitectura declarada en los metadatos es `qwen2`, un transformer decoder-only, lo que sugiere que se trata de un ajuste fino (fine-tune) sobre la familia Qwen2 o Qwen2.5-Coder de 3B, aunque la model card no lo confirma ni documenta el proceso de entrenamiento. El pipeline es `text-generation` con tags `conversational` y el unico idioma declarado es el ingles (`en`).
 
@@ -91,7 +91,7 @@ No se dispone de datos verificados de rendimiento comparado para este repositori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/henil08/verilog-coder-3b-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/henil08/verilog-coder-3b-mlx-4bit
 - Libreria MLX: no se incluye enlace en la informacion disponible
 - Paper, blog o repositorio del autor: no disponible
 - Demo o espacio asociado: no disponible

@@ -42,7 +42,7 @@ La innovación destacable es la receta de decodificación: decodificación greed
 - Asistencia a filólogos en la lectura de textos difíciles: ante caligrafías problemáticas, el modelo ofrece una propuesta de transcripción que el investigador puede corregir, acelerando la edición crítica de obras sánscritas.
 - Catalogación y metadatos en archivos digitales: al convertir la imagen en texto, se puede indexar el contenido de los manuscritos y facilitar la búsqueda temática o por pasajes.
 - Formación en estudios sánscritos: estudiantes y docentes pueden usar el modelo como herramienta de apoyo para interpretar manuscritos, aunque siempre con supervisión humana.
-- Pipelines de OCR científico: al ser un adaptador PEFT, se puede integrar en entornos de investigación con HuggingFace Transformers para comparar métodos o para un fine-tuning adicional.
+- Pipelines de OCR científico: al ser un adaptador PEFT, se puede integrar en entornos de investigación con Hugging Face Transformers para comparar métodos o para un fine-tuning adicional.
 - Preservación del patrimonio cultural: la transcripción automática ayuda a crear copias legibles de manuscritos frágiles, contribuyendo a su conservación y difusión.
 
 ## Benchmarks y rendimiento
@@ -81,7 +81,7 @@ No disponible. No se han identificado otros adaptadores o modelos comparables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tadad/qwen3.5-0.8b-sanskrit-ocr
+- Modelo en Hugging Face: https://huggingface.co/tadad/qwen3.5-0.8b-sanskrit-ocr
 - Dataset de entrenamiento: https://huggingface.co/datasets/tadad/midf-egangotri-sanskrit
 - Archivo de evaluación: https://huggingface.co/tadad/qwen3.5-0.8b-sanskrit-ocr/blob/main/evaluation.json
 - Script de uso proporcionado por el autor: https://huggingface.co/tadad/qwen3.5-0.8b-sanskrit-ocr/blob/main/transcribe.py

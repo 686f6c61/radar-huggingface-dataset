@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| spanguard-span-mdistil | 134,7M | 384 tokens/ventana | Detección de spans de prompt injection (BIO) | Apache-2.0 | HuggingFace, 0 descargas |
-| Clasificadores abiertos de prompt injection (genéricos) | no disponible | no disponible | Clasificación documento completo (seguro/inseguro) | variable | HuggingFace |
+| spanguard-span-mdistil | 134,7M | 384 tokens/ventana | Detección de spans de prompt injection (BIO) | Apache-2.0 | Hugging Face, 0 descargas |
+| Clasificadores abiertos de prompt injection (genéricos) | no disponible | no disponible | Clasificación documento completo (seguro/inseguro) | variable | Hugging Face |
 | Autodetección por LLM (p. ej. Muse Spark Open como profesor) | no disponible | no disponible | Detección por prompt en el propio LLM | variable | API / pesos abiertos |
-| distilbert-base-multilingual-cased (base) | 135M | 512 tokens | Masked LM / base para fine-tuning | Apache-2.0 | HuggingFace |
+| distilbert-base-multilingual-cased (base) | 135M | 512 tokens | Masked LM / base para fine-tuning | Apache-2.0 | Hugging Face |
 
 La diferencia clave frente a los clasificadores de documento completo es la granularidad: devuelve spans en lugar de una etiqueta binaria, lo que evita descartar datos legítimos. Frente a la autodetección por LLM, es órdenes de magnitud más barato y rápido, a costa de menor capacidad de generalización ante paráfrasis novedosas.
 
@@ -82,7 +82,7 @@ La diferencia clave frente a los clasificadores de documento completo es la gran
 
 ## Enlaces
 
-- [HuggingFace: Nabidnur/spanguard-span-mdistil](https://huggingface.co/Nabidnur/spanguard-span-mdistil)
+- [Hugging Face: Nabidnur/spanguard-span-mdistil](https://huggingface.co/Nabidnur/spanguard-span-mdistil)
 - [Repositorio spanguard en GitHub](https://github.com/Hisernberg/spanguard)
 - [Resultados de evaluación comprometidos](https://github.com/Hisernberg/spanguard/tree/main/eval/results)
 - [Meta Global AI Hackathon 2026](https://github.com/Hisernberg/spanguard)

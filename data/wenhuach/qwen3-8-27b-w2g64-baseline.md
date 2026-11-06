@@ -83,8 +83,8 @@ No se dispone de benchmarks comparativos directos entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wenhuach/Qwen3.8-27B-W2G64-baseline
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/wenhuach/Qwen3.8-27B-W2G64-baseline
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía completa de Qwen3.8-27B: https://lovableapp.org/blog/qwen3-8-27b
 - Análisis en Geeky Gadgets: https://www.geeky-gadgets.com/qwen-3-8-27b-local-ai-review/

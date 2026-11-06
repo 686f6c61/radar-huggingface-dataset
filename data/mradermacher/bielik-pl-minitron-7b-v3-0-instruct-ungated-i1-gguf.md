@@ -86,9 +86,9 @@ No se dispone en la informacion proporcionada de datos de benchmarks, contexto o
 
 | Version | Parametros | Formato | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cpral/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated (base) | 7.476.678.656 | safetensors | no indicado | Apache 2.0 | HuggingFace, con campo gated de feedback |
-| mradermacher/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated-GGUF | 7.476.678.656 | GGUF estatico | no indicado | Apache 2.0 | HuggingFace |
-| mradermacher/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated-i1-GGUF (este) | 7.476.678.656 | GGUF con imatrix | 1,8-4,6 GB en los niveles listados | Apache 2.0 | HuggingFace |
+| cpral/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated (base) | 7.476.678.656 | safetensors | no indicado | Apache 2.0 | Hugging Face, con campo gated de feedback |
+| mradermacher/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated-GGUF | 7.476.678.656 | GGUF estatico | no indicado | Apache 2.0 | Hugging Face |
+| mradermacher/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated-i1-GGUF (este) | 7.476.678.656 | GGUF con imatrix | 1,8-4,6 GB en los niveles listados | Apache 2.0 | Hugging Face |
 
 Comparativa con otras familias de modelos polacos o multilingues de ~7B: no disponible en la informacion proporcionada.
 

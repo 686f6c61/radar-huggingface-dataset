@@ -75,8 +75,8 @@ Nota: cargar el adaptador requiere fusionarlo con el modelo base o bien servirlo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `nmuendler/OpenThinker-7B-text-sft-training-curve-run1-final` | Adaptador LoRA (~0,3 GB) | No disponible | No disponible | HuggingFace, 0 descargas | Model card vacia, sin evaluacion |
-| `open-thoughts/OpenThinker-7B` (modelo base) | 7B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace | Modelo de razonamiento publicado por Open Thoughts |
+| `nmuendler/OpenThinker-7B-text-sft-training-curve-run1-final` | Adaptador LoRA (~0,3 GB) | No disponible | No disponible | Hugging Face, 0 descargas | Model card vacia, sin evaluacion |
+| `open-thoughts/OpenThinker-7B` (modelo base) | 7B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face | Modelo de razonamiento publicado por Open Thoughts |
 | Alternativas de 7B orientadas a razonamiento | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificados en la informacion proporcionada |
 
 No se dispone de resultados de benchmark ni de especificaciones verificadas de modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
@@ -96,7 +96,7 @@ No se dispone de resultados de benchmark ni de especificaciones verificadas de m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nmuendler/OpenThinker-7B-text-sft-training-curve-run1-final
+- Modelo en Hugging Face: https://huggingface.co/nmuendler/OpenThinker-7B-text-sft-training-curve-run1-final
 - Modelo base: https://huggingface.co/open-thoughts/OpenThinker-7B
 - Libreria PEFT: https://github.com/huggingface/peft
 - Documentacion de Transformers sobre PEFT: https://huggingface.co/docs/transformers/peft

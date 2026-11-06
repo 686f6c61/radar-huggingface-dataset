@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cat Breed Classifier es un modelo de clasificación de imágenes desarrollado por el usuario ZEROTSUDIOS y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un ajuste fino de EfficientNetV2S, preentrenado en ImageNet, al que se le ha sustituido la cabeza de clasificación por un bloque denso propio: Dense(512) → Dense(256) → Softmax(67). Su única tarea es asignar una fotografía de un gato a una de las 67 razas contempladas en el conjunto de datos de entrenamiento.
+Cat Breed Classifier es un modelo de clasificación de imágenes desarrollado por el usuario ZEROTSUDIOS y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un ajuste fino de EfficientNetV2S, preentrenado en ImageNet, al que se le ha sustituido la cabeza de clasificación por un bloque denso propio: Dense(512) → Dense(256) → Softmax(67). Su única tarea es asignar una fotografía de un gato a una de las 67 razas contempladas en el conjunto de datos de entrenamiento.
 
 El modelo resuelve un problema acotado y muy concreto: la clasificación cerrada de razas felinas a partir de imágenes RGB de 224 × 224 píxeles. No es un modelo de lenguaje ni un modelo multimodal generativo, por lo que no dispone de ventana de contexto, capacidades de razonamiento, tool calling ni soporte multilingüe en el sentido habitual. Su relevancia práctica radica en que ofrece un punto de partida listo para usar en aplicaciones de visión por computador de bajo coste computacional, ya que EfficientNetV2S es una arquitectura compacta y eficiente en FLOPs.
 
@@ -85,7 +85,7 @@ No se dispone de resultados de rendimiento de este modelo, por lo que la compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZEROTSUDIOS/cat-breed-classifier
+- Modelo en Hugging Face: https://huggingface.co/ZEROTSUDIOS/cat-breed-classifier
 - Dataset de entrenamiento (Kaggle): https://www.kaggle.com/datasets/nikolasgegenava/cat-breeds
 - Paper de EfficientNetV2 (arquitectura del backbone): https://arxiv.org/abs/2104.00298
 - Demo en Streamlit: mencionada en la model card, sin URL pública incluida

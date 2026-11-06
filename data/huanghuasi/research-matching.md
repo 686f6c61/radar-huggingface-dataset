@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Huanghuasi/research-matching` es un repositorio de HuggingFace que contiene una implementación de referencia de una arquitectura denominada "Coca" orientada a tareas de *matching* (emparejamiento), publicada por el usuario Huanghuasi bajo licencia Apache 2.0. No se trata de un modelo entrenado y listo para producción, sino de un esqueleto de código ejecutable con un checkpoint de inicialización (`model.safetensors`) pensado para *smoke tests* y experimentación. El propio autor indica explícitamente que no reclama ningún resultado de benchmark.
+`Huanghuasi/research-matching` es un repositorio de Hugging Face que contiene una implementación de referencia de una arquitectura denominada "Coca" orientada a tareas de *matching* (emparejamiento), publicada por el usuario Huanghuasi bajo licencia Apache 2.0. No se trata de un modelo entrenado y listo para producción, sino de un esqueleto de código ejecutable con un checkpoint de inicialización (`model.safetensors`) pensado para *smoke tests* y experimentación. El propio autor indica explícitamente que no reclama ningún resultado de benchmark.
 
 El repositorio incluye el código del modelo y un punto de entrada ejecutable (`run.py`), un `config.json` con los ajustes de arquitectura generados y un `training_args.json` con la receta de experimento por defecto (optimizador Adam con schedule coseno). La configuración declarada corresponde a una escala "huge", atención de tipo flash, fusión mediante *tucker* y normalización InstanceNorm.
 
@@ -25,7 +25,7 @@ Detalles adicionales de arquitectura declarados en la model card: atención flas
 
 ## Arquitectura y entrenamiento
 
-La arquitectura se describe como "Coca" con escala "huge", atención flash, fusión tucker, activación approx gelu y normalización InstanceNorm. No se especifica si se trata de un transformer, un modelo multimodal o una arquitectura híbrida; la etiqueta `coca` en HuggingFace suele asociarse a modelos de captioning contrastivo (CoCa), pero la información proporcionada no confirma esa correspondencia y el autor solo la presenta como una implementación propia orientada a *matching*.
+La arquitectura se describe como "Coca" con escala "huge", atención flash, fusión tucker, activación approx gelu y normalización InstanceNorm. No se especifica si se trata de un transformer, un modelo multimodal o una arquitectura híbrida; la etiqueta `coca` en Hugging Face suele asociarse a modelos de captioning contrastivo (CoCa), pero la información proporcionada no confirma esa correspondencia y el autor solo la presenta como una implementación propia orientada a *matching*.
 
 No hay información sobre datos de entrenamiento, número de tokens, composición del dataset ni uso de RLHF/DPO. La receta por defecto usa Adam con schedule coseno, pero el autor aclara que son valores de partida del script y no evidencia de un entrenamiento completado. El checkpoint incluido es únicamente una inicialización válida para pruebas de humo y no ha sido entrenado ni auditado; no se han publicado resultados de benchmarks.
 
@@ -76,5 +76,5 @@ No disponible. La información proporcionada no identifica modelos comparables d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Huanghuasi/research-matching
+- Repositorio en Hugging Face: https://huggingface.co/Huanghuasi/research-matching
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información disponible.

@@ -4,7 +4,7 @@
 
 Molmo2-8B es un modelo de vision-lenguaje (VLM) abierto desarrollado por el Allen Institute for AI (Ai2) que combina un backbone de lenguaje Qwen3-8B con un codificador visual SigLIP 2 (siglip-so400m-patch14-384). El modelo esta disenado para comprension conjunta de imagen, video y multiples imagenes, e incorpora capacidades de "grounding" o localizacion espacial, es decir, puede senalar coordenadas y seguir objetos a lo largo de fotogramas en un video. Resuelve tareas de pregunta-respuesta visual, subtitulado, conteo, captioning y seguimiento de objetos en secuencias.
 
-La familia Molmo2 se posiciona como una propuesta de pesos abiertos y datos abiertos: los conjuntos de entrenamiento (Molmo2-Cap, Molmo2-VideoCapQA, Molmo2-VideoPoint, Molmo2-VideoTrack, Molmo2-MultiImageQA, entre otros) se publican en HuggingFace, y Ai2 afirma que liberara codigo de entrenamiento, evaluaciones y checkpoints intermedios. Esto la hace relevante para investigadores que necesitan reproducibilidad y no solo un modelo de caja negra.
+La familia Molmo2 se posiciona como una propuesta de pesos abiertos y datos abiertos: los conjuntos de entrenamiento (Molmo2-Cap, Molmo2-VideoCapQA, Molmo2-VideoPoint, Molmo2-VideoTrack, Molmo2-MultiImageQA, entre otros) se publican en Hugging Face, y Ai2 afirma que liberara codigo de entrenamiento, evaluaciones y checkpoints intermedios. Esto la hace relevante para investigadores que necesitan reproducibilidad y no solo un modelo de caja negra.
 
 El checkpoint recogido aqui aparece bajo el identificador bbsai/Molmo2-8B, aunque la model card corresponde al modelo oficial allenai/Molmo2-8B. Cuenta con 8.661.703.120 parametros y se distribuye bajo licencia Apache 2.0 en formato safetensors, con soporte nativo en la libreria transformers.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace (espejo): https://huggingface.co/bbsai/Molmo2-8B
+- Modelo en Hugging Face (espejo): https://huggingface.co/bbsai/Molmo2-8B
 - Modelo oficial de Ai2: https://huggingface.co/allenai/Molmo2-8B
 - Coleccion completa de la familia Molmo2: https://huggingface.co/collections/allenai/molmo2
 - Coleccion de datos Molmo2: https://huggingface.co/collections/allenai/molmo2-data

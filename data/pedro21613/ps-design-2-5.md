@@ -1,7 +1,7 @@
 # Pedro21613/PS-design-2.5
 
 ## Resumen
-PS-design-2.5 es un adaptador LoRA publicado en HuggingFace por el usuario Pedro21613, entrenado sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct. Su propósito es especializar un transformer decoder-only de tamano reducido (~0,5B parametros) en la generacion de codigo HTML y CSS con Tailwind para diseno web profesional, incluyendo efectos como gradientes animados, transiciones, animaciones de scroll y estilos glassmorphism o dark-neon. No es un modelo completo, sino un adaptador PEFT (r16, alpha 32) que debe cargarse junto al modelo base mediante la libreria `peft`.
+PS-design-2.5 es un adaptador LoRA publicado en Hugging Face por el usuario Pedro21613, entrenado sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct. Su propósito es especializar un transformer decoder-only de tamano reducido (~0,5B parametros) en la generacion de codigo HTML y CSS con Tailwind para diseno web profesional, incluyendo efectos como gradientes animados, transiciones, animaciones de scroll y estilos glassmorphism o dark-neon. No es un modelo completo, sino un adaptador PEFT (r16, alpha 32) que debe cargarse junto al modelo base mediante la libreria `peft`.
 
 El modelo se presenta como un fine-tune de "velocidad + calidad" orientado a un unico dominio: producir paginas web modernas en formato HTML listo para usar. Se distribuye en formato safetensors y esta etiquetado exclusivamente para portugues (idioma en el que responde, aunque la salida sea principalmente codigo HTML). Es la version 2.5 de una serie, entrenada de forma continua a partir de un adaptador anterior (PS-design-1.2-beta).
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PS-design-2.5 | ~0,5B (base) + LoRA r16 | no disponible | HTML/Tailwind para diseno web | no disponible | HuggingFace (PEFF/safetensors) |
-| Qwen/Qwen2.5-0.5B-Instruct | ~0,5B | no disponible | Proposito general, instrucciones | Apache 2.0 (segun el modelo base) | HuggingFace |
-| PS-design-1.2-beta | ~0,5B (base) + LoRA | no disponible | HTML/Tailwind (version previa) | no disponible | HuggingFace |
+| PS-design-2.5 | ~0,5B (base) + LoRA r16 | no disponible | HTML/Tailwind para diseno web | no disponible | Hugging Face (PEFF/safetensors) |
+| Qwen/Qwen2.5-0.5B-Instruct | ~0,5B | no disponible | Proposito general, instrucciones | Apache 2.0 (segun el modelo base) | Hugging Face |
+| PS-design-1.2-beta | ~0,5B (base) + LoRA | no disponible | HTML/Tailwind (version previa) | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento real frente a estas alternativas; la comparacion se limita a parametros, especializacion y licencia.
 
@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento real f
 - La fecha de creacion/actualizacion registrada (2026-10-12) y el tamano de repo de 0,0 GB limitan la trazabilidad del artefacto.
 
 ## Enlaces
-- Pagina del modelo en HuggingFace: https://huggingface.co/Pedro21613/PS-design-2.5
+- Pagina del modelo en Hugging Face: https://huggingface.co/Pedro21613/PS-design-2.5
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Adaptador previo de la serie: `Pedro21613/PS-design-1.2-beta` (referenciado en la model card, sin URL directa proporcionada)
 - No se han encontrado papers, blogs, repos adicionales ni demos en la informacion disponible.

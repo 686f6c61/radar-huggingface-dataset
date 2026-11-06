@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Lexibender/cutto-local-speech",
+  "slug": "lexibender-cutto-local-speech",
+  "author": "Lexibender",
+  "url": "https://huggingface.co/Lexibender/cutto-local-speech",
+  "created_at": "2026-11-06T10:57:54.000Z",
+  "updated_at": "2026-11-06T10:58:57.000Z",
+  "license": "mixed-component-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "speech",
+    "automatic-speech-recognition",
+    "word-alignment",
+    "speaker-diarization",
+    "en",
+    "ru",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5247793331,
+  "storage_human": "5.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Tracker Index: Updates, Sources and Evidence",
+      "url": "https://savrn.com/model-tracker",
+      "snippet": "Lexibender/cutto-local-speech Lexibender · automatic speech recognition Source updated: 06 Nov 2026, 10:58 UTC Observed by SAVRN: 06 Nov 2026, 11:00 UTC Exact repository revision SAVRN model page not yet available. Original source ↗ Publisher reported · Repository activity FiveC/amis-rewire-checkpoints → FiveC Source updated: 06 Nov 2026 ..."
+    },
+    {
+      "title": "Local Voice-AI Model Database: Self-Hosted STT & TTS, License-Graded (2026)",
+      "url": "https://d-central.tech/local-voice-ai-models/",
+      "snippet": "Local large language models get all the attention, but a genuinely private AI stack also needs to hear and speak — and the speech models follow different rules. The one that decides what you can actually ship isn’t quality, it’s the license, and text-to-speech in particular is a licensing minefield where the best-sounding models are the ones you legally can’t use in a product. This ..."
+    }
+  ]
+}

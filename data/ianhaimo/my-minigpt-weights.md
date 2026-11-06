@@ -2,7 +2,7 @@
 
 ## Resumen
 
-My-MiniGPT-weights es un artefacto de pesos en FP16 publicado por el usuario ianhaimo en HuggingFace, correspondiente a un modelo denominado My-MiniGPT de 254,5 millones de parametros. Se trata de un repositorio de solo pesos ("weights-only") pensado exclusivamente para inferencia: no incluye estado de optimizador, de scheduler, de AMP ni de generador de numeros aleatorios, elementos que permanecen en un checkpoint de entrenamiento separado y que solo serian necesarios para reanudar el entrenamiento. El modelo es una implementacion propia en PyTorch, cuyo codigo de arquitectura e inferencia se mantiene en el repositorio de GitHub envymoon/My-MiniGPT.
+My-MiniGPT-weights es un artefacto de pesos en FP16 publicado por el usuario ianhaimo en Hugging Face, correspondiente a un modelo denominado My-MiniGPT de 254,5 millones de parametros. Se trata de un repositorio de solo pesos ("weights-only") pensado exclusivamente para inferencia: no incluye estado de optimizador, de scheduler, de AMP ni de generador de numeros aleatorios, elementos que permanecen en un checkpoint de entrenamiento separado y que solo serian necesarios para reanudar el entrenamiento. El modelo es una implementacion propia en PyTorch, cuyo codigo de arquitectura e inferencia se mantiene en el repositorio de GitHub envymoon/My-MiniGPT.
 
 El modelo esta entrenado principalmente para continuacion de texto literario en ingles y chino simplificado, cubriendo prosa narrativa, descripcion de escenas, dialogo e imitacion de estilo. El repositorio incluye la configuracion del modelo, los pesos FP16 y el tokenizador byte-level BPE asociado, de 50.304 tokens.
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparacion se l
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| My-MiniGPT-weights | 254,5 M | No disponible | Ingles, chino simplificado | MIT | Pesos FP16 en HuggingFace |
+| My-MiniGPT-weights | 254,5 M | No disponible | Ingles, chino simplificado | MIT | Pesos FP16 en Hugging Face |
 | GPT-2 (small/medium) | 124 M / 355 M | 1024 tokens | Principalmente ingles | Modified MIT | Ampliamente disponible, soporte nativo en multiples runtimes |
 | SmolLM2-360M | 360 M | 8192 tokens (segun ficha del proyecto) | Ingles y multilingue limitado | Apache-2.0 | Pesos en safetensors, compatible con transformers |
 | Qwen2.5-0.5B | 0,49 B | 32.768 tokens (segun ficha del proyecto) | Multilingue, con chino | Apache-2.0 | Pesos en safetensors, amplio soporte de runtimes |
@@ -99,7 +99,7 @@ La diferencia fundamental no es de tamano sino de ecosistema: las alternativas s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ianhaimo/My-MiniGPT-weights
+- Hugging Face: https://huggingface.co/ianhaimo/My-MiniGPT-weights
 - Repositorio de arquitectura e inferencia: https://github.com/envymoon/My-MiniGPT
 - Paper: no disponible
 - Blog o demo: no disponible

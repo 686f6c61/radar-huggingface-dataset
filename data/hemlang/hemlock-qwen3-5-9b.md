@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su enfoque especializado: demuestra que u
 
 Hemlock-Qwen3.5-9B es un modelo resultante de una fusion (merge) de dos componentes: por un lado, el adaptador LoRA `hemlang/Schierling-Qwen3.5-9B-LoRA`, entrenado mediante SFT sobre el dataset `hemlang/Hemlock-SFT-combined`; por otro, el modelo base `nbeerbower/Huihui-Qwen3.5-9B-abliterated-TIES`, que es una version "abliterada" (eliminacion de ciertos comportamientos de rechazo) de Qwen3.5-9B. La fusion se realiza con un peso de 1.0, y tras ella se restauran los 15 tensores `mtp.*` (multi-token prediction) desde el modelo base, ya que la funcion `peft merge_and_unload()` los elimina y llama.cpp los requiere para cargar el modelo correctamente.
 
-El modelo cuenta con 775 tensores en total: 426 de lenguaje, 333 de vision, 15 de MTP y 1 de lm_head. No se proporcionan detalles sobre el volumen de datos de entrenamiento, la composicion del dataset ni el uso de tecnicas como RLHF o DPO. La unica informacion adicional es que el adaptador LoRA se entreno con SFT, y que la fusion se realizo con la herramienta de PEFT de HuggingFace.
+El modelo cuenta con 775 tensores en total: 426 de lenguaje, 333 de vision, 15 de MTP y 1 de lm_head. No se proporcionan detalles sobre el volumen de datos de entrenamiento, la composicion del dataset ni el uso de tecnicas como RLHF o DPO. La unica informacion adicional es que el adaptador LoRA se entreno con SFT, y que la fusion se realizo con la herramienta de PEFT de Hugging Face.
 
 ## Capacidades
 
@@ -75,9 +75,9 @@ Para contextualizar, el modelo Hemlock-Qwen3.6-27B (TIES) obtuvo un 10,1% antes 
 
 | Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hemlock-Qwen3.5-9B (este) | 9,4B | No disponible | Generacion de codigo Hemlock | Apache 2.0 | HuggingFace, GGUF |
-| Hemlock-Qwen3.6-27B | 27B | No disponible | Generacion de codigo Hemlock | Apache 2.0 | HuggingFace |
-| Qwen3.5-9B (base) | 9,4B | No disponible | Modelo general de lenguaje y vision | Apache 2.0 | HuggingFace, Azure, Jetson |
+| Hemlock-Qwen3.5-9B (este) | 9,4B | No disponible | Generacion de codigo Hemlock | Apache 2.0 | Hugging Face, GGUF |
+| Hemlock-Qwen3.6-27B | 27B | No disponible | Generacion de codigo Hemlock | Apache 2.0 | Hugging Face |
+| Qwen3.5-9B (base) | 9,4B | No disponible | Modelo general de lenguaje y vision | Apache 2.0 | Hugging Face, Azure, Jetson |
 
 El modelo Hemlock-Qwen3.5-9B se posiciona como una alternativa ligera al Hemlock-Qwen3.6-27B, con un rendimiento en hembench de 57,1% frente al 65,0% del 27B, pero con un tercio de los parametros. Frente al Qwen3.5-9B base, este modelo anade la especializacion en Hemlock sin sacrificar significativamente las capacidades generales (ARC y perplexity apenas cambian). No se dispone de comparaciones con otros modelos de 9B como Llama 3.1 8B o Mistral 7B en tareas de generacion de codigo Hemlock.
 
@@ -93,7 +93,7 @@ El modelo Hemlock-Qwen3.5-9B se posiciona como una alternativa ligera al Hemlock
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hemlang/Hemlock-Qwen3.5-9B
+- Modelo en Hugging Face: https://huggingface.co/hemlang/Hemlock-Qwen3.5-9B
 - Repositorio de Hemlock: https://github.com/hemlang/hemlock
 - Dataset de entrenamiento: https://huggingface.co/datasets/hemlang/Hemlock-SFT-combined
 - Adaptador LoRA base: https://huggingface.co/hemlang/Schierling-Qwen3.5-9B-LoRA

@@ -6,7 +6,7 @@ Marathi Conformer-256 Sparse MoE (33M) es un modelo de reconocimiento automátic
 
 El modelo cuenta con 33,8 millones de parámetros totales, de los cuales solo 25,2 millones se activan en cada pasada forward, gracias a una estructura de tres ramas expertas regionales más un tronco compartido que las combina. Esta especialización por dialecto resuelve el problema de la degradación de precisión que sufren los sistemas ASR monolíticos cuando se enfrentan a variedades regionales poco representadas dentro de un mismo idioma.
 
-Su relevancia actual radica en la combinación de tamaño reducido, coste de inferencia bajo (RTFx superior a 280x en GPU modernas) y una licencia MIT permisiva, lo que lo hace atractivo para despliegues en producción con recursos limitados y para aplicaciones de transcripción en maratí que necesiten cubrir variantes dialectales. El repositorio ocupa 0,1 GB y el modelo se publicó con 23 descargas en HuggingFace.
+Su relevancia actual radica en la combinación de tamaño reducido, coste de inferencia bajo (RTFx superior a 280x en GPU modernas) y una licencia MIT permisiva, lo que lo hace atractivo para despliegues en producción con recursos limitados y para aplicaciones de transcripción en maratí que necesiten cubrir variantes dialectales. El repositorio ocupa 0,1 GB y el modelo se publicó con 23 descargas en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -74,7 +74,7 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros | Contexto / audio | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Marathi Conformer-256 Sparse MoE (este modelo) | 33,8 M totales / 25,2 M activos | no disponible | WER 12,8 % (Kathbath clean), 15,4 % (FLEURS), 24,8 % (RESPIN agregado) | MIT | HuggingFace |
+| Marathi Conformer-256 Sparse MoE (este modelo) | 33,8 M totales / 25,2 M activos | no disponible | WER 12,8 % (Kathbath clean), 15,4 % (FLEURS), 24,8 % (RESPIN agregado) | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de datos de otros modelos ASR para marati con los que establecer una comparacion cuantitativa fiable.
@@ -92,7 +92,7 @@ No se dispone en la informacion proporcionada de datos de otros modelos ASR para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rimrafadii/marathi-conformer-33m-moe
+- Modelo en Hugging Face: https://huggingface.co/rimrafadii/marathi-conformer-33m-moe
 - Dataset rimrafadii/respin-iisc: https://huggingface.co/datasets/rimrafadii/respin-iisc
 - Dataset ai4bharat/Kathbath: https://huggingface.co/datasets/ai4bharat/Kathbath
 - Dataset ARTPARK-IISc/Vaani: https://huggingface.co/datasets/ARTPARK-IISc/Vaani

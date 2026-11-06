@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Formato | Parámetros | Contexto de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eneratum/ViT-B-32__openai (este repositorio) | ONNX | no disponible en la model card (la referencia CLIP ViT-B/32 ronda los 151 M) | 77 tokens según la implementación de referencia | no disponible | Público en HuggingFace; 0 descargas y 0 likes; repo de 2,7 GB |
+| eneratum/ViT-B-32__openai (este repositorio) | ONNX | no disponible en la model card (la referencia CLIP ViT-B/32 ronda los 151 M) | 77 tokens según la implementación de referencia | no disponible | Público en Hugging Face; 0 descargas y 0 likes; repo de 2,7 GB |
 | immich-app/ViT-B-32__openai | ONNX | no disponible; mismos pesos de CLIP ViT-B/32 | igual que el anterior | no disponible | Repositorio de referencia para Immich, localizado en la búsqueda web |
 | Exportaciones mayores de OpenCLIP (por ejemplo, variantes ViT-L/14) | safetensors y ONNX según la exportación | no disponible en la información proporcionada | no disponible | no disponible | Públicas en el ecosistema OpenCLIP, con mayor coste de cómputo y memoria |
 
@@ -82,15 +82,15 @@ La comparación cuantitativa de rendimiento no está disponible: este repositori
 - Limitación idiomática: los prompts en castellano pueden rendir peor que en inglés, ya que el codificador de texto se entrena mayoritariamente con texto en inglés; el autor no documenta idiomas soportados.
 - Sensibilidad al prompt: los resultados dependen de la plantilla utilizada ("una foto de X" frente a "X"), por lo que requiere ajuste de prompts por caso de uso.
 - Ventana de texto corta: la implementación de referencia limita la secuencia textual a 77 tokens, insuficiente para descripciones largas o consultas conversacionales.
-- Licencia no declarada en el repositorio: antes de un uso comercial es imprescindible verificar la licencia del checkpoint original de OpenAI/OpenCLIP, ya que la ficha de HuggingFace no la especifica.
+- Licencia no declarada en el repositorio: antes de un uso comercial es imprescindible verificar la licencia del checkpoint original de OpenAI/OpenCLIP, ya que la ficha de Hugging Face no la especifica.
 - Repositorio sin señales de mantenimiento: 0 descargas, 0 likes, sin pipeline declarado y con fechas de creación y actualización idénticas (2026-09-25), lo que sugiere un espejo puntual y no un proyecto con soporte.
 - Ausencia total de evaluaciones publicadas para esta exportación concreta: no hay cifras de precisión, latencia ni consumo de memoria verificables.
 - El tamaño de descarga (2,7 GB) es desproporcionado para un modelo de este tamaño en una única precisión, por lo que conviene inspeccionar el contenido del repositorio antes de integrarlo en un despliegue con restricciones de disco.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eneratum/ViT-B-32__openai
-- Repositorio de referencia para Immich en HuggingFace: https://huggingface.co/immich-app/ViT-B-32__openai
+- Repositorio en Hugging Face: https://huggingface.co/eneratum/ViT-B-32__openai
+- Repositorio de referencia para Immich en Hugging Face: https://huggingface.co/immich-app/ViT-B-32__openai
 - Model card del repositorio de referencia: https://huggingface.co/immich-app/ViT-B-32__openai/blob/main/README.md
 - Repositorio de OpenCLIP: https://github.com/mlfoundations/open_clip
 - Sitio oficial de Immich: https://immich.app/

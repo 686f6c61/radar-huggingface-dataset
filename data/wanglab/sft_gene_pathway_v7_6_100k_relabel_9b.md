@@ -4,7 +4,7 @@
 
 El modelo `wanglab/sft_gene_pathway_v7_6_100k_relabel_9b` es un ajuste fino (fine-tuning) del modelo base Qwen/Qwen3.5-9B, desarrollado por el laboratorio WangLab de la Universidad de Toronto. Está orientado a tareas de biología computacional, específicamente al análisis de vías genéticas, perturbaciones celulares (single-cell perturbation) y datos relacionados con CRISPR. El modelo se presenta con etiquetas que indican capacidades de razonamiento, multimodalidad (image-text-to-text) y generación de texto conversacional, aunque no se dispone de documentación detallada sobre su arquitectura específica o el proceso de entrenamiento.
 
-Con 9.409.813.744 parámetros (aproximadamente 9,4 mil millones), el modelo se distribuye en formato safetensors y ocupa 18,9 GB en el repositorio. Su acceso es restringido (gated) en HuggingFace, lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo. La licencia indicada es "qwen", que corresponde a la licencia del modelo base de Qwen, aunque no se especifican los términos exactos. Este modelo es relevante para la comunidad de biología computacional porque combina un modelo de lenguaje de gran tamaño con un dominio especializado, lo que podría permitir tareas de razonamiento sobre datos biológicos complejos, aunque su adopción aún es limitada (0 descargas y 0 likes en el momento de la consulta).
+Con 9.409.813.744 parámetros (aproximadamente 9,4 mil millones), el modelo se distribuye en formato safetensors y ocupa 18,9 GB en el repositorio. Su acceso es restringido (gated) en Hugging Face, lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo. La licencia indicada es "qwen", que corresponde a la licencia del modelo base de Qwen, aunque no se especifican los términos exactos. Este modelo es relevante para la comunidad de biología computacional porque combina un modelo de lenguaje de gran tamaño con un dominio especializado, lo que podría permitir tareas de razonamiento sobre datos biológicos complejos, aunque su adopción aún es limitada (0 descargas y 0 likes en el momento de la consulta).
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: un modelo de 9,4B parámetros en precisión FP16 requiere aproximadamente 19-20 GB de VRAM. Con cuantización a 8 bits (INT8) se reduce a unos 10-11 GB, y a 4 bits (INT4) a unos 5-6 GB, aunque no se han publicado versiones cuantizadas oficiales.
 - GPU recomendadas: para FP16 se necesitaría una GPU con al menos 24 GB (por ejemplo, RTX 3090, RTX 4090, A10G, L4). Para cuantización 8 bits, una RTX 4080 o similar con 16 GB podría ser suficiente. Para 4 bits, una RTX 3060 de 12 GB podría bastar.
 - Compatibilidad con GPU de consumo: sí, con cuantización es posible ejecutarlo en GPUs de gama alta para consumidores, pero no se han publicado guías oficiales.
-- Opciones de despliegue: al ser un modelo de transformers, se puede servir con vLLM, TGI, o mediante llama.cpp si se convierte a GGUF (no disponible actualmente). También se puede usar con la librería transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo de transformers, se puede servir con vLLM, TGI, o mediante llama.cpp si se convierte a GGUF (no disponible actualmente). También se puede usar con la librería transformers de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables en el mismo dominio (bio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wanglab/sft_gene_pathway_v7_6_100k_relabel_9b
+- Hugging Face: https://huggingface.co/wanglab/sft_gene_pathway_v7_6_100k_relabel_9b
 - GitHub del laboratorio: https://github.com/bowang-lab
-- Perfil de la organización en HuggingFace: https://huggingface.co/wanglab
+- Perfil de la organización en Hugging Face: https://huggingface.co/wanglab

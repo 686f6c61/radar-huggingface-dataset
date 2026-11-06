@@ -73,7 +73,7 @@ La diferencia clave frente a las alternativas es el formato y el destino de ejec
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargarlo.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargarlo.
 - Idiomas: solo inglés según la etiqueta del repositorio; no se garantiza un rendimiento aceptable en castellano.
 - Riesgo de alucinación: inherente a los modelos de 7B; no se documenta ningún ajuste específico de mitigación en esta distribución.
 - Sesgos: los hereda del modelo base Mistral-7B-v0.3, entrenado con datos predominantemente en inglés de internet.
@@ -84,7 +84,7 @@ La diferencia clave frente a las alternativas es el formato y el destino de ejec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Mistral-7B-v0.3_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/Mistral-7B-v0.3_rai_1.9.0_m_1.0.1_npu
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Documentación de Ryzen AI (AMD): no disponible en la información proporcionada
 - Paper o blog de Mistral-7B-v0.3: no disponible en la información proporcionada

@@ -65,7 +65,7 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GlobalCybersecurityAlliance/Qwen3.8-27B-Abliterated-MLX
+- Modelo en Hugging Face: https://huggingface.co/GlobalCybersecurityAlliance/Qwen3.8-27B-Abliterated-MLX
 - Repositorio del modelo base en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Blog de explainx.ai sobre la version abliterated MLX: https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026
 - Articulo de Todd Wolven sobre cuantizacion AWQ: https://toddwolven.com/projects/qwen38-awq-quantization

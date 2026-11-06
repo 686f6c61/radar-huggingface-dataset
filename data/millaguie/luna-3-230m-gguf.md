@@ -48,7 +48,7 @@ Tres hiperparámetros no están en `config.json` y se tomaron del código del au
 
 - Experimentación con arquitecturas no upstream en llama.cpp: el repositorio sirve como referencia completa de cómo portar una arquitectura nueva (`lightning`) aplicando el parche `lightning-port.patch` y validando contra la implementación de referencia en `transformers`.
 - Validación de pipelines de cuantización: los ficheros Q8_0 y Q4_K_M con métricas KLD publicadas (0,000227 y 0,012842 de media respectivamente) permiten probar herramientas de evaluación de cuantizaciones sobre un modelo pequeño que cabe entero en RAM.
-- Pruebas de tokenizadores: el caso de `add_prefix_space` y la comparación de 8 casos entre HuggingFace y llama.cpp constituyen un banco de pruebas reproducible para validar conversiones de tokenizador BPE.
+- Pruebas de tokenizadores: el caso de `add_prefix_space` y la comparación de 8 casos entre Hugging Face y llama.cpp constituyen un banco de pruebas reproducible para validar conversiones de tokenizador BPE.
 - Desarrollo y depuración de infraestructura de inferencia: con 461 MB en BF16 y 8.126 tokens de contexto, el modelo se ejecuta íntegro en CPU sin división de capas, lo que elimina variables en pruebas de determinismo y comparación de logits.
 - Docencia y formación en portado de modelos: el repositorio documenta cinco puertas de verificación (conversión, tokenizador, anclaje de logits, controles negativos y métricas) aplicables como metodología.
 - Evaluación de modelos pequeños en entornos con recursos limitados: al caber en RAM consumer, permite experimentar con generación de texto conversacional sin GPU.
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparativos con alternativas de la misma c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/millaguie/Luna-3-230m-GGUF
+- Repositorio Hugging Face: https://huggingface.co/millaguie/Luna-3-230m-GGUF
 - Modelo base: https://huggingface.co/Aobangaming/Luna-3-230m
 - Parche de arquitectura: `lightning-port.patch` (incluido en el repositorio)
 - llama.cpp: no se proporciona enlace en la información disponible

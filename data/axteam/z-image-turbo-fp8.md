@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. Tampo
 
 | Modelo | Formato / cuantizacion | Tamano del transformer | Licencia | Destilacion turbo | Disponibilidad |
 |---|---|---|---|---|---|
-| axteam/Z-Image-Turbo-FP8 | FP8 e4m3fn (solo DiT) | 6,2 GB | Apache 2.0 (etiquetado) | Si | HuggingFace, ComfyUI |
-| Tongyi-MAI/Z-Image-Turbo (base) | BF16 (completo, con VAE y text encoder) | ~el doble del FP8 (no disponible exacto) | Ver repo original | Si | HuggingFace |
+| axteam/Z-Image-Turbo-FP8 | FP8 e4m3fn (solo DiT) | 6,2 GB | Apache 2.0 (etiquetado) | Si | Hugging Face, ComfyUI |
+| Tongyi-MAI/Z-Image-Turbo (base) | BF16 (completo, con VAE y text encoder) | ~el doble del FP8 (no disponible exacto) | Ver repo original | Si | Hugging Face |
 | Otras cuantizaciones FP8 de DiT (convencion ComfyUI) | FP8 e4m3fn | Variable | Variable | Variable | Variable |
 
 No se conocen alternativas de la misma familia con otras cuantizaciones (GGUF, NF4) publicadas en la informacion disponible.

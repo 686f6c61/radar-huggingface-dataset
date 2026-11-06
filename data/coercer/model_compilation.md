@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Coercer/Model_Compilation es un repositorio alojado en HuggingFace por el usuario Coercer, etiquetado con los tags "gguf" y "region:us". Por su nombre y su estructura, parece tratarse de una recopilacion de pesos cuantizados en formato GGUF destinada a inferencia local, y no de un modelo entrenado desde cero con una ficha tecnica propia. El repositorio no incluye model card, descripcion, pipeline declarado, idiomas soportados ni licencia especificada.
+Coercer/Model_Compilation es un repositorio alojado en Hugging Face por el usuario Coercer, etiquetado con los tags "gguf" y "region:us". Por su nombre y su estructura, parece tratarse de una recopilacion de pesos cuantizados en formato GGUF destinada a inferencia local, y no de un modelo entrenado desde cero con una ficha tecnica propia. El repositorio no incluye model card, descripcion, pipeline declarado, idiomas soportados ni licencia especificada.
 
 La unica informacion cuantitativa fiable disponible es el recuento de parametros obtenido de los metadatos de safetensors: 14.288.901.184 parametros (aproximadamente 14,29 mil millones). El tamano del repositorio es de 941,7 GB, un volumen muy superior al que ocuparian los pesos de un unico modelo de 14B incluso en precision completa, lo que sugiere que el repositorio agrupa varias compilaciones o varias cuantizaciones del mismo modelo base.
 
@@ -100,5 +100,5 @@ La comparacion de rendimiento, licencia y disponibilidad del modelo analizado qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Coercer/Model_Compilation
+- Hugging Face: https://huggingface.co/Coercer/Model_Compilation
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados devueltos por la busqueda correspondian a contenidos sin relacion (precios de consolas Xbox) y se han descartado por no ser relevantes.

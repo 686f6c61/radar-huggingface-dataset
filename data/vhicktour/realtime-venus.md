@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Realtime-Venus es un sistema multimodal orientado a interacción en tiempo real, publicado originalmente por el equipo inclusionAI y distribuido en este repositorio de HuggingFace por el usuario Vhicktour. El repositorio aloja dos checkpoints de 9B parámetros cada uno: Realtime-Venus-Omni, que procesa vídeo, audio y texto y genera texto y voz, y Realtime-Venus-Audio, centrado en audio y texto. Ambos comparten una arquitectura construida sobre MiniCPM-o 4.5 / Omni-Flow, con codificador visual SigLIP2, codificador de audio Whisper-Medium y backbone de lenguaje Qwen3-8B, con una longitud de contexto de 40.960 tokens.
+Realtime-Venus es un sistema multimodal orientado a interacción en tiempo real, publicado originalmente por el equipo inclusionAI y distribuido en este repositorio de Hugging Face por el usuario Vhicktour. El repositorio aloja dos checkpoints de 9B parámetros cada uno: Realtime-Venus-Omni, que procesa vídeo, audio y texto y genera texto y voz, y Realtime-Venus-Audio, centrado en audio y texto. Ambos comparten una arquitectura construida sobre MiniCPM-o 4.5 / Omni-Flow, con codificador visual SigLIP2, codificador de audio Whisper-Medium y backbone de lenguaje Qwen3-8B, con una longitud de contexto de 40.960 tokens.
 
 El problema que aborda es el de los asistentes conversacionales de turno estricto: Realtime-Venus mantiene una conversación full-duplex, es decir, sigue percibiendo mientras habla, y distingue entre retroalimentación breve (backchannels), interrupciones, correcciones y redirecciones del usuario. Además incorpora interacción proactiva (inicia respuestas ante eventos sin esperar un prompt) y un mecanismo de delegación asíncrona mediante peticiones `<delegate>` emitidas en la misma línea temporal causal, de modo que las tareas externas no bloquean la conversación.
 
@@ -19,7 +19,7 @@ Es relevante ahora porque combina tres capacidades que habitualmente se resuelve
 | Tipos de cuantizacion | No disponible; los pesos se publican en BF16 y no se documentan variantes GGUF, AWQ o GPTQ |
 | Idiomas soportados | Inglés (en) y chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (pesos fragmentados por shards) con código custom de HuggingFace Transformers; el repositorio incluye también la etiqueta onnx |
+| Formato de pesos | safetensors (pesos fragmentados por shards) con código custom de Hugging Face Transformers; el repositorio incluye también la etiqueta onnx |
 
 ## Arquitectura y entrenamiento
 
@@ -59,7 +59,7 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 - VRAM estimada para inferencia en BF16: en torno a 18 GB solo para los pesos de 9B, más el codificador visual SigLIP2, el codificador de audio Whisper-Medium y el decodificador de voz flow-matching. En la práctica, un presupuesto de 22-26 GB es realista para el checkpoint Omni en BF16 con contexto moderado; el checkpoint Audio reduce el consumo al no usar el codificador visual en inferencia.
 - GPU recomendadas: A100 40 GB o 80 GB y H100 para despliegue concurrente, streaming prolongado y lotes grandes; L40S o A6000 (48 GB) como alternativas de inferencia.
 - GPU de consumo: una RTX 4090 o RTX 3090 con 24 GB puede ejecutar el modelo en BF16 de forma ajustada, especialmente el checkpoint Audio; tarjetas de 16 GB requerirían cuantización a 8 bits o inferior, cuya disponibilidad oficial no está documentada.
-- Opciones de despliegue: HuggingFace Transformers con `trust_remote_code` (el repositorio incluye código custom y scripts como `realtime_venus_omni_memory.py`); el runtime de delegación Realtime-Venus-Harness se distribuye por separado en GitHub. No se documenta soporte oficial para vLLM, llama.cpp, Ollama o TGI, y la ausencia de pesos GGUF dificulta el despliegue en CPU.
+- Opciones de despliegue: Hugging Face Transformers con `trust_remote_code` (el repositorio incluye código custom y scripts como `realtime_venus_omni_memory.py`); el runtime de delegación Realtime-Venus-Harness se distribuye por separado en GitHub. No se documenta soporte oficial para vLLM, llama.cpp, Ollama o TGI, y la ausencia de pesos GGUF dificulta el despliegue en CPU.
 - Almacenamiento: el repositorio completo ocupa 38,8 GB, ya que contiene los dos checkpoints.
 - Latencia y throughput: no disponibles en la información proporcionada. El diseño streaming y full-duplex implica que las métricas relevantes son latencia de primer token y latencia de primer fragmento de audio, pero no se publican valores.
 
@@ -67,8 +67,8 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parametros | Contexto | Capacidades clave | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Realtime-Venus-Omni | 9B | 40.960 tokens | Vídeo, audio y texto; full-duplex; voz nativa; delegación | Apache 2.0 | HuggingFace y ModelScope |
-| Realtime-Venus-Audio | 9B | 40.960 tokens | Audio y texto; full-duplex; voz nativa | Apache 2.0 | HuggingFace y ModelScope |
+| Realtime-Venus-Omni | 9B | 40.960 tokens | Vídeo, audio y texto; full-duplex; voz nativa; delegación | Apache 2.0 | Hugging Face y ModelScope |
+| Realtime-Venus-Audio | 9B | 40.960 tokens | Audio y texto; full-duplex; voz nativa | Apache 2.0 | Hugging Face y ModelScope |
 | MiniCPM-o 4.5 (arquitectura base declarada) | No disponible en la información proporcionada | No disponible | Omni-modal | No disponible | No disponible |
 | Alternativas omni-modales de la misma categoría (por ejemplo Qwen-Omni, MiniCPM-o) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -90,8 +90,8 @@ La información proporcionada no incluye especificaciones ni resultados de model
 
 ## Enlaces
 
-- Repositorio en HuggingFace (copia redistribuida): https://huggingface.co/Vhicktour/Realtime-Venus
-- Repositorio original en HuggingFace: https://huggingface.co/inclusionAI/Realtime-Venus
+- Repositorio en Hugging Face (copia redistribuida): https://huggingface.co/Vhicktour/Realtime-Venus
+- Repositorio original en Hugging Face: https://huggingface.co/inclusionAI/Realtime-Venus
 - Model card en chino: https://huggingface.co/inclusionAI/Realtime-Venus/blob/main/README_zh.md
 - Licencia: https://huggingface.co/inclusionAI/Realtime-Venus/blob/main/LICENSE
 - ModelScope: https://www.modelscope.cn/models/inclusionAI/Realtime-Venus

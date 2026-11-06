@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ARGUS es un modelo publicado en HuggingFace por el usuario Kevinu0628 bajo licencia Apache 2.0 y con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales antes de descargar los pesos. El repositorio ocupa 232,6 GB, un tamano que situa el modelo, segun el formato de pesos empleado, en el rango de decenas de miles de millones de parametros en precision completa o de un modelo mayor cuantizado. No se ha publicado informacion sobre la arquitectura, el pipeline o los idiomas soportados en la ficha del repositorio.
+ARGUS es un modelo publicado en Hugging Face por el usuario Kevinu0628 bajo licencia Apache 2.0 y con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales antes de descargar los pesos. El repositorio ocupa 232,6 GB, un tamano que situa el modelo, segun el formato de pesos empleado, en el rango de decenas de miles de millones de parametros en precision completa o de un modelo mayor cuantizado. No se ha publicado informacion sobre la arquitectura, el pipeline o los idiomas soportados en la ficha del repositorio.
 
 La relevancia de ARGUS es dificil de evaluar con los datos disponibles: no hay descripciones, model card detallada, resultados de benchmarks ni documentacion tecnica accesible en la informacion proporcionada. El modelo aparece con cero descargas y cero likes, y fue creado en septiembre de 2026 con una actualizacion en noviembre del mismo ano, lo que sugiere un proyecto reciente y sin validacion por parte de la comunidad.
 
@@ -34,7 +34,7 @@ El unico dato estructural verificable es el tamano del repositorio (232,6 GB). A
 - No consta soporte de agentes ni razonamiento multi-paso.
 - No consta informacion sobre capacidades multilingues.
 - No consta la existencia de modo de razonamiento (thinking), vision, audio ni otras modalidades.
-- El pipeline no esta declarado en la ficha de HuggingFace, por lo que no puede confirmarse ni siquiera que sea un modelo de generacion de texto.
+- El pipeline no esta declarado en la ficha de Hugging Face, por lo que no puede confirmarse ni siquiera que sea un modelo de generacion de texto.
 
 ## Casos de uso
 
@@ -65,7 +65,7 @@ No disponible. No se conocen modelos comparables porque se desconoce la arquitec
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que anade friccion para su evaluacion y despliegue.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que anade friccion para su evaluacion y despliegue.
 - Ausencia de documentacion: no hay model card tecnica, benchmarks ni descripcion de arquitectura, lo que impide validar el modelo antes de invertir recursos en su descarga.
 - Riesgo de alucinacion y sesgos: desconocidos, al no haber informacion sobre datos de entrenamiento ni evaluaciones de alineacion.
 - Licencia Apache 2.0: permisiva para uso comercial, pero el acceso gated puede imponer terminos adicionales que conviene revisar antes de un despliegue en produccion.
@@ -75,5 +75,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la arquitec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kevinu0628/ARGUS
+- Repositorio en Hugging Face: https://huggingface.co/Kevinu0628/ARGUS
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

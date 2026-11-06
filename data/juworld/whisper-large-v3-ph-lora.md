@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`juworld/whisper-large-v3-ph-lora` es un adaptador LoRA publicado en HuggingFace por el usuario juworld sobre el modelo base `openai/whisper-large-v3`. Se trata, por tanto, de un ajuste fino parametrizado eficientemente (PEFT) de un sistema de reconocimiento automatico de voz (ASR) ya preentrenado, no de un modelo entrenado desde cero. El repositorio pesa 0,1 GB y contiene unicamente los pesos del adaptador en formato safetensors, mas los ficheros de configuracion de PEFT 0.21.0.
+`juworld/whisper-large-v3-ph-lora` es un adaptador LoRA publicado en Hugging Face por el usuario juworld sobre el modelo base `openai/whisper-large-v3`. Se trata, por tanto, de un ajuste fino parametrizado eficientemente (PEFT) de un sistema de reconocimiento automatico de voz (ASR) ya preentrenado, no de un modelo entrenado desde cero. El repositorio pesa 0,1 GB y contiene unicamente los pesos del adaptador en formato safetensors, mas los ficheros de configuracion de PEFT 0.21.0.
 
-La relevancia de esta publicacion es, a dia de hoy, limitada y dificil de evaluar: la model card es la plantilla por defecto de HuggingFace con todos los campos marcados como `[More Information Needed]`, no se declara licencia, no se especifican idiomas ni dataset de entrenamiento, y no consta ninguna evaluacion. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado con seis segundos de diferencia (27 de septiembre de 2026), lo que indica que no ha recibido mantenimiento posterior.
+La relevancia de esta publicacion es, a dia de hoy, limitada y dificil de evaluar: la model card es la plantilla por defecto de Hugging Face con todos los campos marcados como `[More Information Needed]`, no se declara licencia, no se especifican idiomas ni dataset de entrenamiento, y no consta ninguna evaluacion. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado con seis segundos de diferencia (27 de septiembre de 2026), lo que indica que no ha recibido mantenimiento posterior.
 
 El sufijo `ph` del identificador no se explica en la informacion disponible, por lo que no es posible determinar si hace referencia a un dominio concreto (por ejemplo, transcripcion fonetica), a una lengua o variedad linguistica, o a un dataset interno del autor. Cualquier uso en produccion requeriria validar por cuenta propia el comportamiento del adaptador, dado que la documentacion publicada no aporta informacion verificable.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `juworld/whisper-large-v3-ph-lora` | Adaptador LoRA sobre Whisper large-v3 | No disponible (repo de 0,1 GB) | No disponible | No disponible | HuggingFace, 0 descargas |
-| `openai/whisper-large-v3` | Modelo ASR completo (encoder-decoder) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | HuggingFace, modelo base de referencia |
+| `juworld/whisper-large-v3-ph-lora` | Adaptador LoRA sobre Whisper large-v3 | No disponible (repo de 0,1 GB) | No disponible | No disponible | Hugging Face, 0 descargas |
+| `openai/whisper-large-v3` | Modelo ASR completo (encoder-decoder) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Hugging Face, modelo base de referencia |
 | `openai/whisper-turbo` | Version optimizada de large-v3 | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Distribuido con el paquete `openai-whisper`, segun la documentacion del repositorio oficial |
 
 La comparacion con otros adaptadores LoRA comunitarios sobre Whisper no es posible con los datos disponibles, ya que no se han encontrado resultados de evaluacion comparables ni informacion sobre el dataset de entrenamiento de este adaptador.
@@ -86,8 +86,8 @@ La comparacion con otros adaptadores LoRA comunitarios sobre Whisper no es posib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juworld/whisper-large-v3-ph-lora
-- Modelo base en HuggingFace: https://huggingface.co/openai/whisper-large-v3
+- Modelo en Hugging Face: https://huggingface.co/juworld/whisper-large-v3-ph-lora
+- Modelo base en Hugging Face: https://huggingface.co/openai/whisper-large-v3
 - Repositorio oficial de Whisper: https://github.com/openai/whisper
 - Debate sobre el lanzamiento de `large-v3`: https://github.com/openai/whisper/discussions/1762
 - Debate sobre optimizacion de hiperparametros con LoRA en Whisper: https://huggingface.co/openai/whisper-large-v3/discussions/135

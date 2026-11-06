@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-nadanayo-v1 (RL) | Base de 0.8B mas adaptador LoRA | No disponible | 74,4% de acierto en test, arrepentimiento 2,00 | Apache-2.0 | Adaptador publicado en HuggingFace (0 descargas, 0 likes) |
+| connectailab-rl-nadanayo-v1 (RL) | Base de 0.8B mas adaptador LoRA | No disponible | 74,4% de acierto en test, arrepentimiento 2,00 | Apache-2.0 | Adaptador publicado en Hugging Face (0 descargas, 0 likes) |
 | Qwen/Qwen3.5-0.8B (base, sin ajuste) | Aproximadamente 0.8B | No disponible | 33,8% de acierto en test, arrepentimiento 2,58 | Segun la licencia de Qwen | Modelo base publico |
 | Variante con aprendizaje supervisado del mismo pipeline | Base de 0.8B mas adaptador LoRA | No disponible | 76,0% de acierto en test, arrepentimiento 1,97 | No aplicable (no publicada como artefacto) | No publicada en el repositorio |
 | Politica profesora (PPO en el simulador) | No disponible | No disponible | Superior al modelo publicado, sin cifras publicadas | No disponible | No publicada como artefacto |
@@ -94,7 +94,7 @@ No se dispone de comparaciones con modelos externos de decision (por ejemplo, ag
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NADANAYO/connectailab-rl-nadanayo-v1
+- Modelo en Hugging Face: https://huggingface.co/NADANAYO/connectailab-rl-nadanayo-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio del simulador CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

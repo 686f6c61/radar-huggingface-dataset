@@ -84,7 +84,7 @@ No se dispone de información suficiente para establecer comparaciones cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenLLM-France/Luciole-23B-Thinking-1.1
+- Modelo en Hugging Face: https://huggingface.co/OpenLLM-France/Luciole-23B-Thinking-1.1
 - Modelo base: https://huggingface.co/OpenLLM-France/Luciole-23B-Base
 - Dataset de post-entrenamiento: https://huggingface.co/datasets/OpenLLM-France/Luciole-PostTraining-Dataset-1.1
 - Repositorio de entrenamiento: https://github.com/OpenLLM-France/Luciole-Training/tree/main/finetune

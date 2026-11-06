@@ -18,7 +18,7 @@ La relevancia actual del proyecto es doble: por un lado, se alinea con la tenden
 | Longitud de contexto | no disponible (el prompt de texto de FLUX.1-dev admite hasta 512 tokens T5 + CLIP) |
 | Tipos de cuantizacion | no disponible (el adaptador se distribuye presumiblemente en fp16/bf16; la cuantizacion se aplica al modelo base) |
 | Idiomas soportados | asamés (as), inglés (en) |
-| Licencia | other (licencia personalizada; requiere aceptar condiciones en HuggingFace) |
+| Licencia | other (licencia personalizada; requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | safetensors (formato diffusers, según la librería declarada) |
 
 ## Arquitectura y entrenamiento
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Base | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AxomAI Visual Garima | FLUX.1-dev | LoRA (no disponible) | no disponible | other (gated) | HuggingFace, acceso restringido |
-| FLUX.1-dev (sin ajuste) | — | 12.000 M | prompts hasta 512 tokens T5; 1024x1024 | FLUX.1-dev Non-Commercial | HuggingFace, gated |
-| LoRA culturales genéricos sobre SDXL | SDXL | LoRA (decenas de M) | 1024x1024 | varía (a menudo CreativeML) | HuggingFace / Civitai |
-| Modelos regionales indios texto-a-imagen | varía (SD 1.5, SDXL) | 1.000-3.500 M | 512-1024 px | varía | HuggingFace, acceso abierto en su mayoría |
+| AxomAI Visual Garima | FLUX.1-dev | LoRA (no disponible) | no disponible | other (gated) | Hugging Face, acceso restringido |
+| FLUX.1-dev (sin ajuste) | — | 12.000 M | prompts hasta 512 tokens T5; 1024x1024 | FLUX.1-dev Non-Commercial | Hugging Face, gated |
+| LoRA culturales genéricos sobre SDXL | SDXL | LoRA (decenas de M) | 1024x1024 | varía (a menudo CreativeML) | Hugging Face / Civitai |
+| Modelos regionales indios texto-a-imagen | varía (SD 1.5, SDXL) | 1.000-3.500 M | 512-1024 px | varía | Hugging Face, acceso abierto en su mayoría |
 
 La comparación directa es difícil porque no hay métricas publicadas para el adaptador. Frente a FLUX.1-dev sin ajuste, la ventaja esperada es la fidelidad cultural en conceptos de Assam; frente a LoRA sobre SDXL, la ventaja es la calidad del modelo base, con el coste de un requisito de VRAM mucho mayor.
 
@@ -82,7 +82,7 @@ La comparación directa es difícil porque no hay métricas publicadas para el a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/axom-ai/axomai-visual-garima
+- Hugging Face: https://huggingface.co/axom-ai/axomai-visual-garima
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Documentación de diffusers para FLUX: https://huggingface.co/docs/diffusers/main/en/api/pipelines/flux
 - Búsqueda web: el único resultado relevante encontrado (https://www.axom.fr/) corresponde a una empresa francesa de sistemas de visualización de costas, sin relación con este modelo; no se han encontrado papers, blogs ni repositorios adicionales sobre AxomAI Visual Garima.

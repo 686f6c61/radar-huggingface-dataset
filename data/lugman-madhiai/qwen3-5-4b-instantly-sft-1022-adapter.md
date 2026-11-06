@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`lugman-madhiai/Qwen3.5-4B-Instantly-SFT-1022-adapter` es un adaptador de ajuste fino supervisado (SFT) publicado sobre el modelo base `Qwen/Qwen3.5-4B`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador en formato `safetensors` (el repositorio ocupa aproximadamente 0,1 GB), que debe cargarse junto con el modelo base para poder realizar inferencia. El autor es el usuario de HuggingFace `lugman-madhiai`, y la licencia declarada es Apache 2.0.
+`lugman-madhiai/Qwen3.5-4B-Instantly-SFT-1022-adapter` es un adaptador de ajuste fino supervisado (SFT) publicado sobre el modelo base `Qwen/Qwen3.5-4B`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador en formato `safetensors` (el repositorio ocupa aproximadamente 0,1 GB), que debe cargarse junto con el modelo base para poder realizar inferencia. El autor es el usuario de Hugging Face `lugman-madhiai`, y la licencia declarada es Apache 2.0.
 
-El adaptador se ha entrenado con Unsloth (la model card indica que el entrenamiento fue "2x faster" gracias a dicha librería) y aparece etiquetado con `trl`, `transformers` y `text-generation-inference`, lo que sugiere un flujo de trabajo estándar de SFT sobre el ecosistema HuggingFace. El nombre del repositorio incluye el sufijo `Instantly-SFT-1022`, que apunta a una ejecución de ajuste fino realizada el 22 de octubre (formato 1022) sobre algún conjunto de datos o proyecto llamado "Instantly"; este extremo no está confirmado en la información disponible.
+El adaptador se ha entrenado con Unsloth (la model card indica que el entrenamiento fue "2x faster" gracias a dicha librería) y aparece etiquetado con `trl`, `transformers` y `text-generation-inference`, lo que sugiere un flujo de trabajo estándar de SFT sobre el ecosistema Hugging Face. El nombre del repositorio incluye el sufijo `Instantly-SFT-1022`, que apunta a una ejecución de ajuste fino realizada el 22 de octubre (formato 1022) sobre algún conjunto de datos o proyecto llamado "Instantly"; este extremo no está confirmado en la información disponible.
 
 La relevancia de esta ficha es doble: por un lado, documenta un adaptador comunitario sin descargas ni valoraciones en el momento de la consulta; por otro, sirve como ejemplo de artefacto derivado de la familia Qwen3.5, cuya información técnica pública no está recogida en la documentación proporcionada. La model card es una plantilla autogenerada por Unsloth y no incluye datos de entrenamiento, hiperparámetros, evaluación ni ejemplos de uso.
 
@@ -31,8 +31,8 @@ En cuanto al entrenamiento, la model card únicamente declara que se usó Unslot
 
 - Generación de texto en inglés: es la única capacidad declarada de forma explícita mediante el tag `language: en`.
 - Herencia de capacidades del modelo base: al ser un adaptador, conserva (o modifica) las capacidades de `Qwen/Qwen3.5-4B`, que no están documentadas en la información disponible.
-- Integración con `text-generation-inference`: el tag `text-generation-inference` y `endpoints_compatible` indican compatibilidad con el despliegue en TGI y con los endpoints de HuggingFace.
-- Uso con la pila `transformers` + PEFT: el adaptador puede cargarse sobre el modelo base mediante `PeftModel` en el ecosistema HuggingFace.
+- Integración con `text-generation-inference`: el tag `text-generation-inference` y `endpoints_compatible` indican compatibilidad con el despliegue en TGI y con los endpoints de Hugging Face.
+- Uso con la pila `transformers` + PEFT: el adaptador puede cargarse sobre el modelo base mediante `PeftModel` en el ecosistema Hugging Face.
 - Tool calling / function calling: no disponible (no declarado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no declarado).
 - Capacidades multimodales (visión, audio): no disponible (no declarado).
@@ -87,7 +87,7 @@ No se dispone de datos verificados de arquitectura, contexto ni rendimiento de `
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/lugman-madhiai/Qwen3.5-4B-Instantly-SFT-1022-adapter
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/lugman-madhiai/Qwen3.5-4B-Instantly-SFT-1022-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Unsloth (librería de entrenamiento citada en la model card): https://github.com/unslothai/unsloth
 - TRL (tag del repositorio): https://github.com/huggingface/trl

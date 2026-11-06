@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`connectailab-rl-matop-v3-roadster-ppo-v3-roadster-ppo` es un modelo de aprendizaje por refuerzo (RL) publicado en HuggingFace por el usuario `piramid777` en el marco del programa educativo CONNECT AI LAB. No es un modelo de lenguaje: es una política entrenada con PPO (Proximal Policy Optimization) para control continuo en un simulador físico, concretamente el entorno `로드스터연속` (roadster continuo) definido en un archivo `로드스터_시뮬레이터.py` basado en Gymnasium. El objetivo de la tarea es aterrizar un vehículo roadster que cae invertido, accionando dos propulsores con valores continuos.
+`connectailab-rl-matop-v3-roadster-ppo-v3-roadster-ppo` es un modelo de aprendizaje por refuerzo (RL) publicado en Hugging Face por el usuario `piramid777` en el marco del programa educativo CONNECT AI LAB. No es un modelo de lenguaje: es una política entrenada con PPO (Proximal Policy Optimization) para control continuo en un simulador físico, concretamente el entorno `로드스터연속` (roadster continuo) definido en un archivo `로드스터_시뮬레이터.py` basado en Gymnasium. El objetivo de la tarea es aterrizar un vehículo roadster que cae invertido, accionando dos propulsores con valores continuos.
 
 El agente recibe un vector de estado de 7 dimensiones (posición x, posición y, velocidad x, velocidad y, seno y coseno de la inclinación, y velocidad angular) y emite una acción continua de 2 dimensiones: intensidad del propulsor inferior en [0, 1] y par de rotación en [-1, 1]. El autor reporta una tasa de aterrizaje del 94 % en 50 episodios no vistos durante el entrenamiento.
 
-El repositorio tiene un tamaño de 0.0 GB según HuggingFace, lo que sugiere que los pesos no están efectivamente subidos o son de tamaño despreciable. La model card está redactada en coreano, no incluye información sobre licencia, idiomas ni formato de pesos, y el modelo no registra descargas ni interacciones. Es relevante únicamente como artefacto didáctico de un curso de RL, no como componente para producción.
+El repositorio tiene un tamaño de 0.0 GB según Hugging Face, lo que sugiere que los pesos no están efectivamente subidos o son de tamaño despreciable. La model card está redactada en coreano, no incluye información sobre licencia, idiomas ni formato de pesos, y el modelo no registra descargas ni interacciones. Es relevante únicamente como artefacto didáctico de un curso de RL, no como componente para producción.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Tipo | Entorno | Algoritmo | Tasa de exito reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-matop-v3-roadster-ppo | Politica RL | 로드스터연속 (Gymnasium) | PPO | 94 % en 50 episodios | no disponible | HuggingFace, 0 descargas |
+| connectailab-rl-matop-v3-roadster-ppo | Politica RL | 로드스터연속 (Gymnasium) | PPO | 94 % en 50 episodios | no disponible | Hugging Face, 0 descargas |
 | Alternativas PPO para control continuo | Politica RL | No disponible | PPO | no disponible | no disponible | no disponible |
 | SAC / TD3 sobre entornos Gymnasium | Politica RL | No disponible | SAC / TD3 | no disponible | no disponible | no disponible |
 
@@ -88,7 +88,7 @@ No se dispone de información sobre modelos comparables entrenados específicame
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/piramid777/connectailab-rl-connectailab-rl-matop-v3-roadster-ppo-v3-roadster-ppo
+- Hugging Face: https://huggingface.co/piramid777/connectailab-rl-connectailab-rl-matop-v3-roadster-ppo-v3-roadster-ppo
 - Entorno `로드스터_시뮬레이터.py` (clase `로드스터연속`): no disponible como enlace público en la información proporcionada
 - Programa CONNECT AI LAB, curso "AI CITY BUILDERS" (lección 6): no disponible como enlace público en la información proporcionada
 - Paper de PPO (Proximal Policy Optimization): no referenciado en la model card

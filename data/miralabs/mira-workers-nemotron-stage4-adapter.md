@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables. Dado que el adaptador e
 
 ## Enlaces
 
-- [HuggingFace - MIRALABS/mira-workers-nemotron-stage4-adapter](https://huggingface.co/MIRALABS/mira-workers-nemotron-stage4-adapter)
+- [Hugging Face - MIRALABS/mira-workers-nemotron-stage4-adapter](https://huggingface.co/MIRALABS/mira-workers-nemotron-stage4-adapter)
 - [NVIDIA Nemotron AI](https://developer.nvidia.com/topics/ai/nemotron)
 - [NVIDIA Nemotron AI - Open Multimodal Models](https://nemotron-ai.com/)
 - [GitHub - NVIDIA-NeMo/Nemotron](https://github.com/NVIDIA-NeMo/Nemotron)

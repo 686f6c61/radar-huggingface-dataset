@@ -27,7 +27,7 @@ El modelo es un transformer decoder de 24 capas con atención multi-cabeza agrup
 
 El preentrenamiento se realizó sobre las conversaciones 1PP reescritas a partir de los documentos originales, con pérdida tanto en los turnos de usuario como de asistente (condición "user+assistant loss"). Se entrenaron los primeros 53.709 pasos del flujo alineado por pasos de 1PP, lo que equivale a 112,64B posiciones de token, con batch global de 512 × 4.096 tokens y máscara de atención entre documentos. El optimizador combina Muon (escalado por forma, LR matricial 0,005) para las matrices y Adam para el resto de parámetros (LR 1,29e-3 para embeddings y capa de salida, 3e-3 para las normas), con 3.378 pasos de warmup, fase constante y decaimiento lineal en los últimos 5.370 pasos hasta 1/100, weight decay 0,1, desviación típica de inicialización 0,0078 y precisión bf16. La pérdida de validación final sobre 2.433 documentos retenidos fue de 1,351 en texto de asistente, 1,269 en texto de usuario y 3,044 en texto de documento.
 
-El SFT consistió en una época sobre una mezcla de 400.000 conversaciones: 98.500 multiturno de `jkminder/model-raising-pb-100k-3c-mt-sft` (pista con citas a constitución), 271.600 de `dlab-spp/sp-sft-normal-300k` tras eliminar duplicados del primer conjunto, y una muestra de 30.000 de `dlab-spp/sp-sft-safety-180k`. Se empleó el mismo stack que en preentrenamiento (Megatron, Muon, ChatML sin turno de sistema, pérdida solo en turnos de asistente), LR matricial 0,001, semilla 28, batch global 128 × 4.096 y decaimiento lineal a 1/10 tras un warmup del 3%. La pérdida SFT retenida sobre 1.998 conversaciones fue de 1,734 en tokens de asistente, y los pesos de HuggingFace se verificaron contra el checkpoint de Megatron con una diferencia absoluta de 0,0000 en esa métrica.
+El SFT consistió en una época sobre una mezcla de 400.000 conversaciones: 98.500 multiturno de `jkminder/model-raising-pb-100k-3c-mt-sft` (pista con citas a constitución), 271.600 de `dlab-spp/sp-sft-normal-300k` tras eliminar duplicados del primer conjunto, y una muestra de 30.000 de `dlab-spp/sp-sft-safety-180k`. Se empleó el mismo stack que en preentrenamiento (Megatron, Muon, ChatML sin turno de sistema, pérdida solo en turnos de asistente), LR matricial 0,001, semilla 28, batch global 128 × 4.096 y decaimiento lineal a 1/10 tras un warmup del 3%. La pérdida SFT retenida sobre 1.998 conversaciones fue de 1,734 en tokens de asistente, y los pesos de Hugging Face se verificaron contra el checkpoint de Megatron con una diferencia absoluta de 0,0000 en esa métrica.
 
 ## Capacidades
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| 1pp-2.81b-v2-ua-sft | 2,81B | 4.096 | Apache 2.0 | HuggingFace (transformers, safetensors) | Artefacto de investigación 1PP, solo inglés, sin benchmarks publicados |
-| 1pp-1.7b-* (escalón 1,66B del mismo estudio) | 1,66B | 4.096 | Apache 2.0 | Colección 1pp en HuggingFace | Mismo flujo de datos y condiciones; permite comparación directa de escalado |
-| SmolLM2 (1,7B) | 1,7B | 8.192 (según versión) | Apache 2.0 | HuggingFace | Comparte vocabulario (49.152) con este modelo; asistente de propósito general con benchmarks publicados |
-| Llama 3.2 1B/3B | 1,2B / 3,2B | 128K | Llama 3.2 Community License | HuggingFace, Ollama, vLLM | Asistente generalista multilingüe con tool calling; licencia con restricciones de uso comercial |
+| 1pp-2.81b-v2-ua-sft | 2,81B | 4.096 | Apache 2.0 | Hugging Face (transformers, safetensors) | Artefacto de investigación 1PP, solo inglés, sin benchmarks publicados |
+| 1pp-1.7b-* (escalón 1,66B del mismo estudio) | 1,66B | 4.096 | Apache 2.0 | Colección 1pp en Hugging Face | Mismo flujo de datos y condiciones; permite comparación directa de escalado |
+| SmolLM2 (1,7B) | 1,7B | 8.192 (según versión) | Apache 2.0 | Hugging Face | Comparte vocabulario (49.152) con este modelo; asistente de propósito general con benchmarks publicados |
+| Llama 3.2 1B/3B | 1,2B / 3,2B | 128K | Llama 3.2 Community License | Hugging Face, Ollama, vLLM | Asistente generalista multilingüe con tool calling; licencia con restricciones de uso comercial |
 
 La comparación con SmolLM2 y Llama 3.2 es únicamente orientativa por tamaño y licencia: este modelo no es un asistente de propósito general y no publica resultados en MMLU, HumanEval, GSM8K ni similares, por lo que no es posible una comparación de rendimiento directa.
 
@@ -98,7 +98,7 @@ La comparación con SmolLM2 y Llama 3.2 es únicamente orientativa por tamaño y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-ua-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-ua-sft
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de entrenamiento (SFT): https://wandb.ai/raghav_singhal/1pp-sft

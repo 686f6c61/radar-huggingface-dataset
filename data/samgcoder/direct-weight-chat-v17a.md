@@ -83,11 +83,11 @@ No disponible. No se conocen modelos comparables de construcción analítica de 
 - Licencia MIT: permite uso comercial y modificación, pero el artefacto no tiene utilidad práctica como asistente; cualquier uso en producción requeriría validación propia.
 - El experimento está cerrado: v17a es el checkpoint final y el autor no continuará esta línea; no habrá actualizaciones ni soporte.
 - No demuestra imposibilidad matemática para otras arquitecturas; es un resultado negativo de un intento concreto.
-- El repositorio de HuggingFace tiene 0 descargas y 1 like en el momento de la consulta, lo que refleja su carácter de artefacto de investigación más que de modelo desplegable.
+- El repositorio de Hugging Face tiene 0 descargas y 1 like en el momento de la consulta, lo que refleja su carácter de artefacto de investigación más que de modelo desplegable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SamGCoder/direct-weight-chat-v17a
+- Modelo en Hugging Face: https://huggingface.co/SamGCoder/direct-weight-chat-v17a
 - Repositorio GitHub: https://github.com/SamG-Coder/direct-weight-chat
 - README final y conclusión: https://github.com/SamG-Coder/direct-weight-chat#final-outcome
 - Resultados de pruebas de todas las versiones: https://github.com/SamG-Coder/direct-weight-chat/blob/main/results/README.md

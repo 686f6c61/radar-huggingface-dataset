@@ -93,7 +93,7 @@ No hay comparativa directa con modelos mainstream de 100M (como GPT-2 small o Ll
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ajaxdavis/alpha-er
+- Modelo en Hugging Face: https://huggingface.co/ajaxdavis/alpha-er
 - Dataset de entrenamiento: https://huggingface.co/datasets/ajaxdavis/alpha-er-corpus
 - Modelo relacionado alpha-v0-historic: https://huggingface.co/ajaxdavis/alpha-v0-historic
 - Artefactos de entrenamiento alpha-yi-f7: https://huggingface.co/ajaxdavis/alpha-yi-f7-training-artifacts-20260809

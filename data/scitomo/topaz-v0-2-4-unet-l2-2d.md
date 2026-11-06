@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scitomo/topaz-v0.2.4-unet-l2-2d | no disponible (34 tensores, fichero de 4.429.141 bytes) | no aplica | Paridad numerica con la fuente en los casos declarados; sin evaluacion de eficacia publicada | GPL-3.0 | HuggingFace, formato nativo de Scitomo |
+| scitomo/topaz-v0.2.4-unet-l2-2d | no disponible (34 tensores, fichero de 4.429.141 bytes) | no aplica | Paridad numerica con la fuente en los casos declarados; sin evaluacion de eficacia publicada | GPL-3.0 | Hugging Face, formato nativo de Scitomo |
 | Topaz U-Net denoise `unet_L2_v0.2.2` (fuente original) | no disponible | no aplica | Referencia de la que deriva la conversion | GPL-3.0 | Repositorio de Topaz, commit c6dde54398875dcc6a210f83de019c9165fb474c |
 | Otros denoisers de cryo-ET | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ No se dispone de datos comparativos con otras alternativas de denoising para cry
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scitomo/topaz-v0.2.4-unet-l2-2d
+- Modelo en Hugging Face: https://huggingface.co/scitomo/topaz-v0.2.4-unet-l2-2d
 - Repositorio de Topaz (revision fijada): https://github.com/tbepler/topaz/tree/c6dde54398875dcc6a210f83de019c9165fb474c
 - Fichero de pesos original: https://github.com/tbepler/topaz/blob/c6dde54398875dcc6a210f83de019c9165fb474c/topaz/pretrained/denoise/unet_L2_v0.2.2.sav
 - Publicacion (Nature Communications, 2020): https://doi.org/10.1038/s41467-020-18952-1

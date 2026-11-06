@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shredder67/id-flow` es un modelo publicado en HuggingFace por el usuario shredder67 bajo licencia MIT. La model card asociada no contiene descripcion tecnica alguna: unicamente declara la licencia. No se especifica arquitectura, tamano de parametros, longitud de contexto, datos de entrenamiento ni capacidades. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline asignado.
+`shredder67/id-flow` es un modelo publicado en Hugging Face por el usuario shredder67 bajo licencia MIT. La model card asociada no contiene descripcion tecnica alguna: unicamente declara la licencia. No se especifica arquitectura, tamano de parametros, longitud de contexto, datos de entrenamiento ni capacidades. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline asignado.
 
 Por tanto, no es posible determinar que problema resuelve ni por que seria relevante. El identificador "id-flow" sugiere, sin confirmacion alguna por parte del autor, un posible uso relacionado con identificadores o flujos, pero se trata de una especulacion que no debe tomarse como dato. Cualquier evaluacion tecnica del modelo requiere inspeccionar directamente los archivos del repositorio (pesos, configuracion, tokenizer), que no se han proporcionado en la informacion disponible.
 
@@ -68,4 +68,4 @@ No disponible. La ausencia de especificaciones impide identificar modelos compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shredder67/id-flow
+- Hugging Face: https://huggingface.co/shredder67/id-flow

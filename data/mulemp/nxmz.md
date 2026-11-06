@@ -2,9 +2,9 @@
 
 ## Resumen
 
-mulemp/NXMZ es un repositorio de modelo alojado en HuggingFace por el usuario `mulemp`, publicado el 7 de agosto de 2026 y actualizado por ultima vez el 24 de octubre de 2026. El repositorio ocupa 10,4 GB y esta sujeto a acceso restringido (gated): cualquier persona que quiera descargar los pesos debe aceptar previamente las condiciones que el autor haya configurado en la plataforma. En el momento de redactar esta ficha, la pagina del modelo no incluye model card con contenido sustantivo, ni pipeline declarado, ni licencia, ni idiomas, ni resultados de evaluacion.
+mulemp/NXMZ es un repositorio de modelo alojado en Hugging Face por el usuario `mulemp`, publicado el 7 de agosto de 2026 y actualizado por ultima vez el 24 de octubre de 2026. El repositorio ocupa 10,4 GB y esta sujeto a acceso restringido (gated): cualquier persona que quiera descargar los pesos debe aceptar previamente las condiciones que el autor haya configurado en la plataforma. En el momento de redactar esta ficha, la pagina del modelo no incluye model card con contenido sustantivo, ni pipeline declarado, ni licencia, ni idiomas, ni resultados de evaluacion.
 
-Esto significa que no es posible determinar que arquitectura emplea, cuantos parametros tiene, cual es su ventana de contexto, con que datos se entreno ni que capacidades reales ofrece. El unico dato cuantitativo verificable es el tamano del repositorio (10,4 GB), que es compatible con pesos en precision reducida de un modelo de escala media, pero esa lectura es una inferencia a partir del tamano de los ficheros y no una confirmacion del autor. El pipeline declarado en HuggingFace aparece como "no disponible", lo que impide incluso saber si se trata de un modelo de generacion de texto, de vision o de otro tipo.
+Esto significa que no es posible determinar que arquitectura emplea, cuantos parametros tiene, cual es su ventana de contexto, con que datos se entreno ni que capacidades reales ofrece. El unico dato cuantitativo verificable es el tamano del repositorio (10,4 GB), que es compatible con pesos en precision reducida de un modelo de escala media, pero esa lectura es una inferencia a partir del tamano de los ficheros y no una confirmacion del autor. El pipeline declarado en Hugging Face aparece como "no disponible", lo que impide incluso saber si se trata de un modelo de generacion de texto, de vision o de otro tipo.
 
 La relevancia de esta ficha es, por tanto, fundamentalmente cautelar: sirve para documentar que el artefacto existe, cual es su estado de acceso y que comprobaciones minimas deberia hacer un equipo antes de plantearse siquiera evaluarlo. Cualquier afirmacion sobre rendimiento, contexto o licencia que no aparezca aqui debe considerarse no verificada hasta que el autor publique documentacion o se inspeccionen los ficheros tras aceptar las condiciones de acceso.
 
@@ -22,7 +22,7 @@ La relevancia de esta ficha es, por tanto, fundamentalmente cautelar: sirve para
 | Formato de pesos | no disponible (no se especifica safetensors, GGUF ni otros) |
 | Autor | mulemp |
 | Pipeline declarado | no disponible |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 10,4 GB |
 | Fecha de creacion | 7 de agosto de 2026 |
 | Ultima actualizacion | 24 de octubre de 2026 |
@@ -47,7 +47,7 @@ Respecto al entrenamiento, se desconoce el volumen de tokens, la composicion del
 - Modo de razonamiento explicito (thinking mode): no verificable.
 - Cualquier otra capacidad especial: no disponible.
 
-No se ha publicado ninguna demostracion, espacio de HuggingFace asociado ni ejemplo de inferencia que permita acotar el comportamiento del modelo.
+No se ha publicado ninguna demostracion, espacio de Hugging Face asociado ni ejemplo de inferencia que permita acotar el comportamiento del modelo.
 
 ## Casos de uso
 
@@ -59,7 +59,7 @@ Los escenarios siguientes solo serian viables si la inspeccion de los pesos y un
 - Generacion de codigo en pipelines de CI: descartable a dia de hoy, porque no hay evidencia de rendimiento en codigo ni licencia que permita uso comercial.
 - Fine-tuning sobre datos propios: tecnicamente posible si los pesos se distribuyen en safetensors, pero la licencia desconocida impide justificar el coste de adaptacion.
 - Evaluacion comparativa interna (benchmark propio): caso de uso mas realista a corto plazo, consiste en descargar los pesos tras aceptar las condiciones, inspeccionar la configuracion y ejecutar el modelo contra el conjunto de evaluacion que ya use el equipo.
-- Docencia o analisis de artefactos en HuggingFace: util como ejemplo de repositorio sin documentacion para discutir practicas de publicacion y riesgos de cadena de suministro de modelos.
+- Docencia o analisis de artefactos en Hugging Face: util como ejemplo de repositorio sin documentacion para discutir practicas de publicacion y riesgos de cadena de suministro de modelos.
 
 ## Benchmarks y rendimiento
 
@@ -87,7 +87,7 @@ No se han podido identificar modelos comparables, porque se desconocen parametro
 
 - Ausencia total de model card: no se puede conocer la arquitectura, los datos de entrenamiento ni las intenciones del autor, lo que impide cualquier evaluacion de idoneidad.
 - Licencia no disponible: no hay base legal declarada para uso comercial, redistribucion o modificacion. En la practica, esto equivale a no poder desplegar el modelo en produccion.
-- Acceso restringido: aceptar las condiciones de HuggingFace puede implicar compromisos adicionales que no se detallan en la informacion disponible; conviene leerlas antes de aceptar.
+- Acceso restringido: aceptar las condiciones de Hugging Face puede implicar compromisos adicionales que no se detallan en la informacion disponible; conviene leerlas antes de aceptar.
 - Sesgos desconocidos: sin documentacion sobre el corpus de entrenamiento no es posible anticipar sesgos de genero, idioma, dominio o cultura.
 - Riesgo de alucinacion: no evaluado. Cualquier uso generativo requeriria medicion propia de tasas de error factual.
 - Cobertura idiomatica desconocida: no se declara ningun idioma, ni siquiera el ingles; el rendimiento en castellano es una incognita absoluta.
@@ -98,8 +98,8 @@ No se han podido identificar modelos comparables, porque se desconocen parametro
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/mulemp/NXMZ
-- Pagina del autor en HuggingFace: https://huggingface.co/mulemp
+- Repositorio del modelo en Hugging Face: https://huggingface.co/mulemp/NXMZ
+- Pagina del autor en Hugging Face: https://huggingface.co/mulemp
 - Entrada de directorio de terceros para otro modelo del mismo autor (nzvemnvz, sin datos verificables): https://essamamdani.com/ai-models/hf-mulemp-nzvemnvz
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible
 

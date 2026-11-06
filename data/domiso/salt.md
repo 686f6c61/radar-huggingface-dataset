@@ -4,7 +4,7 @@
 
 Salt es un método de destilación para generación de video texto-a-video con muy pocos pasos de inferencia (2-4 NFE), desarrollado por un equipo conjunto de la Hong Kong University of Science and Technology y Vivix Group Limited, y presentado en ECCV 2026. El problema que aborda es la dificultad de destilar modelos de difusión de video a presupuestos de inferencia extremadamente bajos: los métodos de destilación por consistencia de trayectoria tienden a producir apariencia sobre-suavizada y movimiento débil, mientras que la destilación por emparejamiento de distribuciones (DMD) sufre de deriva en la composición de los updates de denoising a lo largo de los pasos. Salt propone Self-Consistent Distribution Matching Distillation (SC-DMD), que regulariza explícitamente la composición consistente de updates consecutivos, y un entrenamiento consciente de la caché (cache-distribution-aware training) que trata la caché KV como una condición de calidad.
 
-El modelo se construye sobre el backbone Wan 2.1 y se adapta a paradigmas de generación autoregresiva como Self Forcing, Causal Forcing y LongLive. Se liberan dos checkpoints: uno para Causal Forcing (soporta 2 y 4 pasos) y otro para LongLive (4 pasos). El repositorio de HuggingFace pesa 34.2 GB e incluye los pesos, la colección de prompts de entrenamiento y los archivos de configuración. No se especifican el número de parámetros, la longitud de contexto ni los idiomas soportados en la información disponible.
+El modelo se construye sobre el backbone Wan 2.1 y se adapta a paradigmas de generación autoregresiva como Self Forcing, Causal Forcing y LongLive. Se liberan dos checkpoints: uno para Causal Forcing (soporta 2 y 4 pasos) y otro para LongLive (4 pasos). El repositorio de Hugging Face pesa 34.2 GB e incluye los pesos, la colección de prompts de entrenamiento y los archivos de configuración. No se especifican el número de parámetros, la longitud de contexto ni los idiomas soportados en la información disponible.
 
 ## Especificaciones técnicas
 
@@ -89,11 +89,11 @@ No se dispone de información sobre otros métodos de destilación de video comp
 - No se documentan sesgos ni riesgos de alucinación visual. Al ser un modelo de generación de video, puede producir contenido no deseado o inexacto, pero no hay evaluación de seguridad publicada.
 - La información sobre idiomas es inexistente; los prompts de ejemplo están en inglés, pero no se garantiza el rendimiento en otros idiomas.
 - No se proporcionan métricas de rendimiento en hardware específico, por lo que es difícil estimar la viabilidad en entornos de producción con requisitos de latencia estrictos.
-- El repositorio de HuggingFace tiene 0 descargas y 1 like, lo que sugiere que el modelo es muy reciente y no ha sido ampliamente validado por la comunidad.
+- El repositorio de Hugging Face tiene 0 descargas y 1 like, lo que sugiere que el modelo es muy reciente y no ha sido ampliamente validado por la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/domiso/Salt
+- Hugging Face: https://huggingface.co/domiso/Salt
 - arXiv (paper): https://arxiv.org/abs/2604.03118
 - Página del proyecto: https://xingtongge.github.io/Salt/
 - Repositorio GitHub: https://github.com/XingtongGe/Salt

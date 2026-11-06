@@ -65,7 +65,7 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje, sino c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LayerFault/tokenizer-added-token-shadowing
+- Repositorio en Hugging Face: https://huggingface.co/LayerFault/tokenizer-added-token-shadowing
 - Proyecto Layerfault en GitHub: https://github.com/izm1chael/layerfault
 - Documentacion de Added Tokens de Hugging Face: https://huggingface.co/docs/tokenizers/en/api/added-tokens
 - Documentacion de Tokenizer de Transformers: https://huggingface.co/docs/transformers/main_classes/tokenizer

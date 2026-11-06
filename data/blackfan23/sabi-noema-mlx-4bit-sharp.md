@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sabi-noema-mlx-4bit-Sharp` es una cuantizacion en 4 bits del modelo `sabicap/sabi-noema`, publicada por el usuario blackfan23 (Julius) en HuggingFace. Se trata de una conversion realizada con Apple MLX (`mlx.core.quantize`) en modo affine con tamano de grupo 64, pensada para ejecutar el modelo en hardware Apple Silicon (M1/M2/M3/M4) de forma eficiente en memoria. El repositorio contiene unicamente pesos cuantizados, no un modelo entrenado desde cero.
+`sabi-noema-mlx-4bit-Sharp` es una cuantizacion en 4 bits del modelo `sabicap/sabi-noema`, publicada por el usuario blackfan23 (Julius) en Hugging Face. Se trata de una conversion realizada con Apple MLX (`mlx.core.quantize`) en modo affine con tamano de grupo 64, pensada para ejecutar el modelo en hardware Apple Silicon (M1/M2/M3/M4) de forma eficiente en memoria. El repositorio contiene unicamente pesos cuantizados, no un modelo entrenado desde cero.
 
 El modelo base `sabi-noema` es un fine-tune publicado por sabicap, y los tags del repositorio indican que su arquitectura subyacente es `qwen3_5`, lo que lo situa en la familia Qwen 3.5. Con 27.356.728.560 parametros totales (aproximadamente 27,4 mil millones), se trata de un modelo de gran tamano que en su version original en precision completa ocupa unos 50,96 GB, reducidos a unos 16,22 GB tras la cuantizacion.
 
@@ -82,6 +82,6 @@ La comparativa con alternativas de la misma categoria no puede completarse porqu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/blackfan23/sabi-noema-mlx-4bit-Sharp
+- Repositorio Hugging Face: https://huggingface.co/blackfan23/sabi-noema-mlx-4bit-Sharp
 - Modelo base: https://huggingface.co/sabicap/sabi-noema
 - Apple MLX (repositorio oficial): https://github.com/ml-explore/mlx

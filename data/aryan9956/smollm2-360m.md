@@ -108,7 +108,7 @@ SmolLM2-360M destaca por su eficiencia y buen rendimiento en tareas de comprensi
 
 ## Enlaces
 
-- Repositorio de HuggingFace de esta copia: https://huggingface.co/Aryan9956/SmolLM2-360M
+- Repositorio de Hugging Face de esta copia: https://huggingface.co/Aryan9956/SmolLM2-360M
 - Modelo original: https://huggingface.co/HuggingFaceTB/SmolLM2-360M
 - Paper: https://arxiv.org/abs/2502.02737
 - Código y documentación: https://github.com/huggingface/smollm

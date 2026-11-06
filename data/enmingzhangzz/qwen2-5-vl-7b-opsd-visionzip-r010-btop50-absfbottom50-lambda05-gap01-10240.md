@@ -70,7 +70,7 @@ Existen otras variantes del mismo experimento OPSD con VisionZip, como `enmingzh
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-Btop50-absFbottom50-lambda05-gap01-10240
+- Hugging Face: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-Btop50-absFbottom50-lambda05-gap01-10240
 - Variante balanced: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-balanced-10240
 - Variante official: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-10240
 - Despliegue en FriendliAI: https://friendli.ai/models/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-Btop50-absFtop50-lambda05-gap01-10240

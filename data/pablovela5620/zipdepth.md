@@ -4,7 +4,7 @@
 
 ZipDepth es un modelo ligero de estimación de profundidad monocular relativa, desarrollado por Fabio Tosi, Luca Bartolomei, Matteo Poggi y Stefano Mattoccia, presentado en ECCV 2026. Su objetivo es llevar la estimación de profundidad zero-shot a cualquier dispositivo, incluyendo GPUs, CPUs y NPU móviles, con un coste computacional mínimo. El modelo combina un encoder-decoder reparameterizable basado en convoluciones RepVGG, atención eficiente de canal y espacial (strip pooling y bloques de contexto global) y un decoder FPN compacto, alcanzando aproximadamente 6,1 millones de parámetros fusionados.
 
-La relevancia de ZipDepth radica en su equilibrio entre precisión y eficiencia: se acerca al rendimiento de modelos transformer de gran tamaño a una fracción de su coste, gracias a una destilación a gran escala desde un modelo fundacional sobre un conjunto de entrenamiento multi-dominio. El repositorio en HuggingFace actúa como espejo de los checkpoints oficiales, ofreciendo dos variantes del mismo modelo: una con upsampling convexo basado en `torch.nn.Unfold` para GPU/servidor, y otra sin unfold para NPU, móvil y exportación a ONNX. El modelo está entrenado a una resolución de 384×384 y produce profundidad inversa relativa (disparidad hasta escala).
+La relevancia de ZipDepth radica en su equilibrio entre precisión y eficiencia: se acerca al rendimiento de modelos transformer de gran tamaño a una fracción de su coste, gracias a una destilación a gran escala desde un modelo fundacional sobre un conjunto de entrenamiento multi-dominio. El repositorio en Hugging Face actúa como espejo de los checkpoints oficiales, ofreciendo dos variantes del mismo modelo: una con upsampling convexo basado en `torch.nn.Unfold` para GPU/servidor, y otra sin unfold para NPU, móvil y exportación a ONNX. El modelo está entrenado a una resolución de 384×384 y produce profundidad inversa relativa (disparidad hasta escala).
 
 ## Especificaciones tecnicas
 
@@ -64,12 +64,12 @@ No disponible. No se proporcionan datos de comparacion con otros modelos de esti
 - La salida es profundidad relativa (disparidad hasta escala), no profundidad absoluta en unidades metricas; para aplicaciones que requieran distancias reales es necesario calibrar o escalar la salida.
 - El modelo fue entrenado a 384×384; imagenes con resoluciones muy diferentes pueden requerir reescalado y afectar a la precision.
 - No se documentan sesgos especificos, pero al ser un modelo de vision puede presentar limitaciones en condiciones extremas de iluminacion, oclusiones o texturas poco comunes.
-- El repositorio en HuggingFace es un espejo de los checkpoints oficiales; el codigo de entrenamiento e inferencia se encuentra en el repositorio de GitHub de los autores.
+- El repositorio en Hugging Face es un espejo de los checkpoints oficiales; el codigo de entrenamiento e inferencia se encuentra en el repositorio de GitHub de los autores.
 - La licencia MIT permite uso comercial, pero se debe incluir la atribucion correspondiente a los autores del modelo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pablovela5620/zipdepth
+- Hugging Face: https://huggingface.co/pablovela5620/zipdepth
 - Paper (arXiv): https://arxiv.org/abs/2607.08771
 - Codigo oficial: https://github.com/fabiotosi92/ZipDepth
 - Fork de pablovela5620: https://github.com/pablovela5620/ZipDepth

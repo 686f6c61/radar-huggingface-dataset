@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liana313/tokengate-sftbase-multinews-qwen3-1.7b | 1.700 M (base) + LoRA | No disponible | Resumen multi-documento (baseline SFT) | Apache 2.0 | HuggingFace, adaptador `.pt` |
-| liana313/tokengate-multinews-qwen3-1.7b | 1.700 M (base) + LoRA con gate | No disponible | Resumen multi-documento (variante con token gating) | No disponible en la informacion proporcionada | HuggingFace |
-| Qwen/Qwen3-1.7B | 1.700 M | No disponible en la informacion proporcionada | Generación de texto general | Apache 2.0 | HuggingFace |
+| liana313/tokengate-sftbase-multinews-qwen3-1.7b | 1.700 M (base) + LoRA | No disponible | Resumen multi-documento (baseline SFT) | Apache 2.0 | Hugging Face, adaptador `.pt` |
+| liana313/tokengate-multinews-qwen3-1.7b | 1.700 M (base) + LoRA con gate | No disponible | Resumen multi-documento (variante con token gating) | No disponible en la informacion proporcionada | Hugging Face |
+| Qwen/Qwen3-1.7B | 1.700 M | No disponible en la informacion proporcionada | Generación de texto general | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liana313/tokengate-sftbase-multinews-qwen3-1.7b
+- Modelo en Hugging Face: https://huggingface.co/liana313/tokengate-sftbase-multinews-qwen3-1.7b
 - Variante con token gating: https://huggingface.co/liana313/tokengate-multinews-qwen3-1.7b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Paper: https://arxiv.org/abs/2610.26754

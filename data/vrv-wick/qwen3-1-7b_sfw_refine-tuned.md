@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-1.7B-SFW (este) | 2,03 B | No disponible (entrenado a 2048) | Filtro SFW sobre base uncensored, solo ingles | Apache 2.0 | GGUF Q8_0 en HuggingFace |
-| Qwen/Qwen3-1.7B (base) | 1,7 B | No disponible en la informacion | Modelo generalista multilingue con modo thinking | Apache 2.0 | Pesos completos en HuggingFace |
+| Qwen3-1.7B-SFW (este) | 2,03 B | No disponible (entrenado a 2048) | Filtro SFW sobre base uncensored, solo ingles | Apache 2.0 | GGUF Q8_0 en Hugging Face |
+| Qwen/Qwen3-1.7B (base) | 1,7 B | No disponible en la informacion | Modelo generalista multilingue con modo thinking | Apache 2.0 | Pesos completos en Hugging Face |
 | DiStil-Qwen3-1.7B-uncensored | 1,7 B (estimado) | No disponible | Variante sin censura, linaje no verificado | No disponible | Referenciado por el autor, sin enlace |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VRV-Wick/Qwen3-1.7b_SFW_refine-tuned
+- Modelo en Hugging Face: https://huggingface.co/VRV-Wick/Qwen3-1.7b_SFW_refine-tuned
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset de rechazos: https://huggingface.co/datasets/LLM-LAT/harmful-dataset
 - Dataset de instrucciones: https://huggingface.co/datasets/yahma/alpaca-cleaned

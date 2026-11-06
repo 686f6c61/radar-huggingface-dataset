@@ -4,7 +4,7 @@
 
 `rjz123/colar-r1-logic` es un adaptador PEFT (LoRA) de investigación desarrollado por el usuario rjz123, diseñado para aplicar la técnica de compresión latente de cadenas de razonamiento CoLaR (Compressed Latent Reasoning) sobre el modelo base `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`. El adaptador se ha entrenado sobre un conjunto de datos de razonamiento lógico compuesto por ProsQA, FOLIO y LogiQA, con el objetivo de reducir el coste computacional del razonamiento explícito (chain-of-thought) mediante la compresión de los pasos intermedios en un espacio latente.
 
-El modelo no es un modelo autónomo: se distribuye como un checkpoint de PyTorch-Lightning que solo contiene los pesos del adaptador (LoRA r128 en Q y V, más un MLP `LatentPolicy`), y requiere cargar el modelo base por separado y ensamblar ambos componentes manualmente. No es compatible con la carga estándar vía `AutoModel` de HuggingFace, lo que limita su uso a entornos de investigación con el código específico de CoLaR.
+El modelo no es un modelo autónomo: se distribuye como un checkpoint de PyTorch-Lightning que solo contiene los pesos del adaptador (LoRA r128 en Q y V, más un MLP `LatentPolicy`), y requiere cargar el modelo base por separado y ensamblar ambos componentes manualmente. No es compatible con la carga estándar vía `AutoModel` de Hugging Face, lo que limita su uso a entornos de investigación con el código específico de CoLaR.
 
 La relevancia de este adaptador radica en que representa una aplicación práctica de CoLaR (publicado en NeurIPS 2025 por Xiaomi Research) a un dominio concreto —la lógica formal y el razonamiento deductivo—, demostrando la viabilidad de comprimir cadenas de razonamiento sin perder precisión. Sin embargo, al ser un experimento sin documentación completa, sin licencia declarada y sin resultados de evaluación públicos, debe tratarse como material de investigación preliminar.
 
@@ -72,7 +72,7 @@ No se dispone de datos comparativos. El adaptador no es un modelo independiente,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rjz123/colar-r1-logic
+- Modelo en Hugging Face: https://huggingface.co/rjz123/colar-r1-logic
 - Repositorio oficial de CoLaR (Xiaomi Research): https://github.com/xiaomi-research/colar
 - Documentación de implementaciones de CoLaR (DeepWiki): https://deepwiki.com/xiaomi-research/colar/5.1-model-implementations
 - Repositorio Logic-RL (reproducción de R1 Zero en lógica): https://github.com/Unakar/Logic-RL

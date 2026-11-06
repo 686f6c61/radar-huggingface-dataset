@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio de HuggingFace creado por el usuario sadasfff44 que, por su nombre y características, parece ser un espacio de prueba o placeholder sin un modelo real publicado. El repositorio tiene 0 descargas, 0 likes y un tamaño de 0.0 GB, lo que indica que no contiene pesos ni archivos de modelo. La model card incluida describe un modelo llamado "MyAwesomeModel" con supuestas mejoras en razonamiento y capacidades de function calling, pero no proporciona datos técnicos verificables como arquitectura, número de parámetros o contexto.
+MyAwesomeModel-TestRepo es un repositorio de Hugging Face creado por el usuario sadasfff44 que, por su nombre y características, parece ser un espacio de prueba o placeholder sin un modelo real publicado. El repositorio tiene 0 descargas, 0 likes y un tamaño de 0.0 GB, lo que indica que no contiene pesos ni archivos de modelo. La model card incluida describe un modelo llamado "MyAwesomeModel" con supuestas mejoras en razonamiento y capacidades de function calling, pero no proporciona datos técnicos verificables como arquitectura, número de parámetros o contexto.
 
 La etiqueta del repositorio indica `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que sugiere que podría tratarse de un modelo basado en BERT para extracción de características, pero la model card habla de un modelo de lenguaje con capacidades de razonamiento avanzado, lo que resulta contradictorio. En cualquier caso, no hay evidencia de que exista un modelo funcional detrás de este repositorio. Su relevancia actual es nula para desarrolladores o investigadores, y debe considerarse únicamente como un ejemplo de repositorio de prueba.
 
@@ -63,7 +63,7 @@ No disponible. Dado que no se conoce la arquitectura, el tamano ni el rendimient
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sadasfff44/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/sadasfff44/MyAwesomeModel-TestRepo
 - Resultados de busqueda web (repositorios similares de otros usuarios): https://huggingface.co/AD12SACZXQW/MyAwesomeModel-TestRepo
 - Herramienta de busqueda de modelos (sin informacion relevante): https://www.toolify.ai/ai-model/asfafaf4546-myawesomemodel-testrepo
 - OpenModelMap (referencia a otro repositorio con el mismo nombre): https://openmodelmap.com/model/dongbobo/MyAwesomeModel-TestRepo

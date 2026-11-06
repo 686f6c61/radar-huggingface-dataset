@@ -73,4 +73,4 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - karl-wang/vocalverse-highscore-expand-train-cqy](https://huggingface.co/karl-wang/vocalverse-highscore-expand-train-cqy)
+- [Hugging Face - karl-wang/vocalverse-highscore-expand-train-cqy](https://huggingface.co/karl-wang/vocalverse-highscore-expand-train-cqy)

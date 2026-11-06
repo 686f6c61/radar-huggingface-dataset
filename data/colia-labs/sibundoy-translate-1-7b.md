@@ -87,7 +87,7 @@ Preservacion de formato en ColIA-213: 210 de 213 textos conservaron HTML y Markd
 
 | Modelo | Parametros | Contexto | COMET (FLORES+) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sibundoy-Translate-1.7B | 1,7B | no disponible | 86,0 | lfm1.0 | HuggingFace (safetensors y GGUF) |
+| Sibundoy-Translate-1.7B | 1,7B | no disponible | 86,0 | lfm1.0 | Hugging Face (safetensors y GGUF) |
 | Tower+ 2B | 2B | no disponible | 86,8 | no disponible | no disponible |
 | Gemma 4 E2B | 2B (aprox.) | no disponible | 86,6 | no disponible | no disponible |
 | TranslateGemma 4B | 4B | no disponible | 87,3 | no disponible | no disponible |
@@ -110,7 +110,7 @@ Sibundoy-Translate-1.7B queda 0,1 a 2,5 puntos COMET por detras de los modelos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/colia-labs/Sibundoy-Translate-1.7B
+- Modelo en Hugging Face: https://huggingface.co/colia-labs/Sibundoy-Translate-1.7B
 - GGUF para llama.cpp: https://huggingface.co/colia-labs/Sibundoy-Translate-1.7B-GGUF
 - Codigo (datos, entrenamiento y evaluacion): https://github.com/colia-labs/sibundoy-translate
 - Laboratorio ColIA: https://colia.org

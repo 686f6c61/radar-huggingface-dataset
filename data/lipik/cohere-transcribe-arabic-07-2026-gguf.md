@@ -108,7 +108,7 @@ No se han publicado resultados de benchmarks en la información disponible para 
 |---|---:|---|---|---|---|---|
 | `cohere-transcribe-arabic-07-2026` (este GGUF) | 2.05 B | ar, en | no | no | Apache-2.0 | GGUF / `transcribe.cpp` |
 | Cohere Transcribe 03-2026 (modelo base de la familia) | no disponible en esta información | multilingüe (no detallado) | no disponible | no disponible | no disponible | safetensors / Transformers |
-| Whisper large-v3 (OpenAI) | aproximadamente 1.55 B | multilingüe (amplia cobertura, incluido árabe) | sí | sí | permisiva (MIT en el repositorio original, Apache-2.0 en el repo de HuggingFace) | safetensors, GGUF vía `whisper.cpp` |
+| Whisper large-v3 (OpenAI) | aproximadamente 1.55 B | multilingüe (amplia cobertura, incluido árabe) | sí | sí | permisiva (MIT en el repositorio original, Apache-2.0 en el repo de Hugging Face) | safetensors, GGUF vía `whisper.cpp` |
 | MMS-1B-all (Meta) | aproximadamente 1 B | más de 1000 idiomas | no disponible | no | CC-BY-NC 4.0 (no comercial) | safetensors / fairseq |
 
 No hay cifras de WER comparables entre estos modelos en la información proporcionada: el 11 % de FLEURS `ar_eg` de este modelo se midió con un manifiesto y un normalizador concretos, y el propio autor advierte que los números del modelo upstream en otros conjuntos árabes no son directamente comparables. Los datos de las filas de alternativas provienen de conocimiento general y no de la búsqueda realizada; conviene verificarlos antes de publicar la comparativa.

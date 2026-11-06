@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario asd12edsad12as bajo licencia MIT, etiquetado con las etiquetas `transformers`, `pytorch`, `bert`, `feature-extraction` y `endpoints_compatible`. Por su pipeline declarado (`feature-extraction`), el modelo estaría orientado a producir representaciones vectoriales de texto (embeddings) en lugar de generar texto, lo que lo situaría en la familia de codificadores tipo BERT. El repositorio no registra descargas ni likes y su tamano declarado es de 0,0 GB, lo que impide confirmar que contenga pesos utilizables.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario asd12edsad12as bajo licencia MIT, etiquetado con las etiquetas `transformers`, `pytorch`, `bert`, `feature-extraction` y `endpoints_compatible`. Por su pipeline declarado (`feature-extraction`), el modelo estaría orientado a producir representaciones vectoriales de texto (embeddings) en lugar de generar texto, lo que lo situaría en la familia de codificadores tipo BERT. El repositorio no registra descargas ni likes y su tamano declarado es de 0,0 GB, lo que impide confirmar que contenga pesos utilizables.
 
 La model card publicada es extremadamente escasa: unicamente incluye una tabla de 15 categorias de evaluacion con puntuaciones genericas (razonamiento matematico, generacion de codigo, escritura creativa, etc.) y una puntuacion global ponderada de 0,710, ademas de la mencion a la licencia MIT. No se documenta arquitectura concreta, numero de parametros, longitud de contexto, datos de entrenamiento, tokenizador ni idiomas soportados.
 
@@ -125,7 +125,7 @@ Nota: los datos de parametros, contexto y licencia de los modelos comparables so
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asd12edsad12as/my-awesome-model
+- Hugging Face: https://huggingface.co/asd12edsad12as/my-awesome-model
 - Paper: no disponible
 - Blog tecnico del autor: no disponible
 - Repositorio de codigo: no disponible

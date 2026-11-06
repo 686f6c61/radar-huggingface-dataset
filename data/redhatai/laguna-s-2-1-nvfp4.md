@@ -109,7 +109,7 @@ La ventaja diferencial de Laguna S 2.1-NVFP4 frente a estos modelos es la relaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RedHatAI/Laguna-S-2.1-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/RedHatAI/Laguna-S-2.1-NVFP4
 - Modelo base: https://huggingface.co/poolside/Laguna-S-2.1
 - Draft model para decodificación especulativa: https://huggingface.co/poolside/Laguna-S-2.1-DFlash-NVFP4
 - Blog de lanzamiento: https://poolside.ai/blog/introducing-laguna-s-2-1

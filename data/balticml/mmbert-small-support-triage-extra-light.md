@@ -93,7 +93,7 @@ La comparativa se limita a las variantes del mismo linaje, ya que la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/balticml/mmbert-small-support-triage-extra-light
+- Modelo en Hugging Face: https://huggingface.co/balticml/mmbert-small-support-triage-extra-light
 - Modelo de 16 capas (v1.3.0): https://huggingface.co/balticml/mmbert-small-support-triage
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-small
 - Codigo, pipeline de datos y benchmark: https://github.com/balticml/support-triage

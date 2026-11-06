@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sukstaninho es un modelo publicado en HuggingFace por el usuario Fabricio123CF bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: se reduce a la declaracion de licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no tiene pipeline de inferencia asignado.
+Sukstaninho es un modelo publicado en Hugging Face por el usuario Fabricio123CF bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: se reduce a la declaracion de licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no tiene pipeline de inferencia asignado.
 
 Por tanto, no es posible determinar que problema resuelve ni que tipo de modelo es (lenguaje, vision, audio u otro). La ausencia de metadatos sobre idiomas, formato de pesos y parametros impide cualquier evaluacion tecnica rigurosa. La unica informacion verificable es la licencia MIT y la fecha de creacion del repositorio (1 de noviembre de 2026), sin actualizaciones posteriores.
 
@@ -23,7 +23,7 @@ Desde el punto de vista practico, este modelo no es evaluable ni recomendable pa
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. No consta ninguna innovacion tecnica documentada (decodificacion especulativa, atencion lineal, cuantizacion nativa, etc.).
 
@@ -73,4 +73,4 @@ No disponible. La ausencia de parametros, contexto, benchmarks y capacidades doc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fabricio123CF/Sukstaninho
+- Hugging Face: https://huggingface.co/Fabricio123CF/Sukstaninho

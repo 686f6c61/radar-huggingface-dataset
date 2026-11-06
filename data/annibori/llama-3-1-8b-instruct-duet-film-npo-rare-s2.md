@@ -73,9 +73,9 @@ Base de referencia del fine-tune: retain recall 0,842. No se han publicado resul
 
 | Modelo | Parametros | Contexto | Olvido selectivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (NPO, semilla 2) | 8,03B | no disponible | Forget recall 0,002 / retain 0,735 | llama3.1 | HuggingFace, 0 descargas |
-| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft (base) | 8,03B | no disponible | Sin olvido; retain 0,842 | llama3.1 | HuggingFace |
-| Llama-3.1-8B-Instruct (original) | 8,03B | 128k (modelo original) | No aplica | llama3.1 | HuggingFace, ampliamente distribuido |
+| Este checkpoint (NPO, semilla 2) | 8,03B | no disponible | Forget recall 0,002 / retain 0,735 | llama3.1 | Hugging Face, 0 descargas |
+| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft (base) | 8,03B | no disponible | Sin olvido; retain 0,842 | llama3.1 | Hugging Face |
+| Llama-3.1-8B-Instruct (original) | 8,03B | 128k (modelo original) | No aplica | llama3.1 | Hugging Face, ampliamente distribuido |
 | Alternativas NPO/DPO sobre Llama 3.1 8B | ~8B | variable | Depende de la receta | llama3.1 | no disponible en la informacion |
 
 La comparación relevante es interna al proyecto: frente al fine-tune base, este checkpoint sacrifica 0,107 de retain recall (0,842 → 0,735) para reducir el forget recall de forma prácticamente total. No se dispone de datos para comparar con otros métodos de unlearning (por ejemplo, GradDiff o RMU) en el mismo conjunto.
@@ -94,7 +94,7 @@ La comparación relevante es interna al proyecto: frente al fine-tune base, este
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-NPO-rare-s2
+- Hugging Face: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-NPO-rare-s2
 - Modelo base del fine-tune: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft
 - Dataset DUET: https://huggingface.co/datasets/SwetieePawsss/DUET_LLM (commit `2c2b047bb569b205ea57f924b36e818d4e3f3903`)
 - Repositorio open-unlearning (receta `duet_8B_NPO`): no disponible como enlace en la información proporcionada

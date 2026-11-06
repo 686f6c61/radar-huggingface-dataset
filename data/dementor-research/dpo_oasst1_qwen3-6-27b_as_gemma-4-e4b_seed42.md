@@ -57,5 +57,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_oasst1_qwen3.6-27b_as_gemma-4-e4b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_oasst1_qwen3.6-27b_as_gemma-4-e4b_seed42
 - Herramienta Tinker (usada para el entrenamiento): https://thinkingmachines.ai/tinker/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`diegovelilla/message-classifier` es un artefacto publicado en HuggingFace por el usuario diegovelilla bajo licencia Apache 2.0. El repositorio no incluye model card descriptiva (el README se limita a la cabecera YAML con la licencia), no declara pipeline, no declara idiomas y no presenta ninguna documentación sobre datos de entrenamiento, arquitectura o rendimiento. El tamaño del repositorio figura como 0.0 GB, lo que es coherente con un artefacto de pesos muy pequeño, aunque el dato no permite determinar su contenido real.
+`diegovelilla/message-classifier` es un artefacto publicado en Hugging Face por el usuario diegovelilla bajo licencia Apache 2.0. El repositorio no incluye model card descriptiva (el README se limita a la cabecera YAML con la licencia), no declara pipeline, no declara idiomas y no presenta ninguna documentación sobre datos de entrenamiento, arquitectura o rendimiento. El tamaño del repositorio figura como 0.0 GB, lo que es coherente con un artefacto de pesos muy pequeño, aunque el dato no permite determinar su contenido real.
 
 El único indicio técnico disponible es el tag `joblib`, que identifica el formato de serialización de pesos. `joblib` es el formato estándar de persistencia de objetos de Python empleado habitualmente por scikit-learn para guardar pipelines completos (vectorizador y clasificador). Por tanto, lo más probable es que se trate de un modelo clásico de clasificación de texto y no de una red neuronal profunda, pero esta afirmación es una inferencia a partir del formato y no está confirmada por el autor.
 
@@ -72,7 +72,7 @@ No hay datos verificables del modelo (parametros, contexto, metricas, idiomas) q
 | Longitud de contexto | No disponible | Limitada por la representacion elegida (bolsa de palabras o TF-IDF) | Cientos de tokens, segun el encoder |
 | Rendimiento | No disponible | No disponible | No disponible |
 | Licencia | Apache 2.0 | La del codigo propio | Depende del modelo base |
-| Disponibilidad | Publico en HuggingFace, 0 descargas, sin documentacion | Requiere entrenamiento propio y datos etiquetados | Requiere ajuste fino y, habitualmente, GPU |
+| Disponibilidad | Publico en Hugging Face, 0 descargas, sin documentacion | Requiere entrenamiento propio y datos etiquetados | Requiere ajuste fino y, habitualmente, GPU |
 | Esfuerzo de adopcion | Alto: hay que auditar el artefacto para descubrir tarea y etiquetas | Medio: hay que anotar datos y entrenar | Medio-alto: datos, infraestructura y evaluacion |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No hay datos verificables del modelo (parametros, contexto, metricas, idiomas) q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diegovelilla/message-classifier
-- Repositorio del autor en HuggingFace: https://huggingface.co/diegovelilla
+- Modelo en Hugging Face: https://huggingface.co/diegovelilla/message-classifier
+- Repositorio del autor en Hugging Face: https://huggingface.co/diegovelilla
 - Documentacion de joblib (formato de serializacion): https://joblib.readthedocs.io/
 - Documentacion de scikit-learn (persistencia de modelos): https://scikit-learn.org/stable/model_persistence.html

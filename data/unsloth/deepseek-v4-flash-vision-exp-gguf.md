@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4-Flash-Vision-Exp es el primer modelo multimodal experimental de la familia DeepSeek-V4, desarrollado por DeepSeek AI. Incorpora módulos de visión sobre la arquitectura de DeepSeek-V4-Flash y ha recibido entrenamiento continuado para desbloquear capacidades de comprensión visual. El repositorio de HuggingFace que nos ocupa es la versión cuantizada en GGUF publicada por Unsloth, que aplica su formato propietario "Unsloth Dynamic 2.0" para mejorar la precisión frente a otras cuantizaciones.
+DeepSeek-V4-Flash-Vision-Exp es el primer modelo multimodal experimental de la familia DeepSeek-V4, desarrollado por DeepSeek AI. Incorpora módulos de visión sobre la arquitectura de DeepSeek-V4-Flash y ha recibido entrenamiento continuado para desbloquear capacidades de comprensión visual. El repositorio de Hugging Face que nos ocupa es la versión cuantizada en GGUF publicada por Unsloth, que aplica su formato propietario "Unsloth Dynamic 2.0" para mejorar la precisión frente a otras cuantizaciones.
 
 El modelo destaca por mejorar sustancialmente las capacidades de agente multimodal respecto a DeepSeek-V4-Flash-0731, manteniendo un rendimiento comparable en tareas de agente solo texto. Según los benchmarks publicados, se acerca a Opus-4.8 en varias tareas de agente multimodal, como ApexBench (36,5 frente a 39,4) o Chartography (64,3 frente a 65,0), a un coste de inferencia inferior. La licencia MIT permite uso comercial sin restricciones, y los GGUF de Unsloth habilitan DSpark para acelerar la decodificación hasta 2 veces.
 

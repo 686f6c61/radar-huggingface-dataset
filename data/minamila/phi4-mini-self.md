@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MinaMila/Phi4-mini-self es un adaptador LoRA publicado en HuggingFace por el usuario MinaMila, entrenado sobre el modelo base microsoft/Phi-4-mini-instruct. El repositorio se distribuye con la librería PEFT (versión 0.19.1 registrada en la model card) y ocupa 0,1 GB, un tamaño coherente con un adaptador de rango bajo que no incluye los pesos completos del modelo base y que, por tanto, no puede ejecutarse de forma autónoma.
+MinaMila/Phi4-mini-self es un adaptador LoRA publicado en Hugging Face por el usuario MinaMila, entrenado sobre el modelo base microsoft/Phi-4-mini-instruct. El repositorio se distribuye con la librería PEFT (versión 0.19.1 registrada en la model card) y ocupa 0,1 GB, un tamaño coherente con un adaptador de rango bajo que no incluye los pesos completos del modelo base y que, por tanto, no puede ejecutarse de forma autónoma.
 
-La relevancia de esta ficha es limitada y hay que ser explícito al respecto: la model card es la plantilla por defecto de HuggingFace, sin rellenar. Todos los campos de descripción, datos de entrenamiento, hiperparámetros, evaluación, sesgos e impacto ambiental aparecen como "[More Information Needed]". El repositorio no declara licencia, no declara idiomas soportados y acumula 0 descargas y 0 "likes" en el momento de la consulta.
+La relevancia de esta ficha es limitada y hay que ser explícito al respecto: la model card es la plantilla por defecto de Hugging Face, sin rellenar. Todos los campos de descripción, datos de entrenamiento, hiperparámetros, evaluación, sesgos e impacto ambiental aparecen como "[More Information Needed]". El repositorio no declara licencia, no declara idiomas soportados y acumula 0 descargas y 0 "likes" en el momento de la consulta.
 
 Se trata, por tanto, de un adaptador sin documentación técnica verificable ni validación por parte de la comunidad. Cualquier uso en producción debería ir precedido de una evaluación propia del adaptador frente al modelo base, ya que no existe información pública sobre el dataset de ajuste, el rango LoRA, los módulos objetivo ni el régimen de entrenamiento empleado.
 
@@ -47,7 +47,7 @@ El modelo base, microsoft/Phi-4-mini-instruct, es un transformer decoder-only de
 - Preprocesado en canalizaciones RAG: generación de resúmenes de documentos y reformulación de consultas antes de pasarlas a un motor de recuperación, con despliegue en una única GPU de gama media.
 - Generación de borradores de documentación técnica: redacción asistida de textos internos donde la revisión humana posterior absorbe el riesgo de alucinación, habitual en modelos de este tamaño.
 - Comparación de adaptadores LoRA (A/B testing): el artefacto sirve como elemento de comparación frente al modelo base sin ajustar, para medir el efecto del fine-tuning en tareas concretas antes de decidir su adopción.
-- Formación y experimentación académica: ejemplo práctico de flujo completo con PEFT (entrenamiento de adaptador, publicación en HuggingFace, carga posterior) para cursos o talleres sobre ajuste eficiente de parámetros.
+- Formación y experimentación académica: ejemplo práctico de flujo completo con PEFT (entrenamiento de adaptador, publicación en Hugging Face, carga posterior) para cursos o talleres sobre ajuste eficiente de parámetros.
 - Inferencia en entornos aislados o sin conectividad: al ejecutarse en local con pesos abiertos del modelo base, permite desplegar asistentes en infraestructuras sin acceso a APIs externas, sujeto a que la licencia aplicable lo permita (extremo no aclarado en el repositorio).
 
 ## Benchmarks y rendimiento
@@ -77,9 +77,9 @@ No existen adaptadores comparables publicados con documentación suficiente para
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| microsoft/Phi-4-mini-instruct (base de este adaptador) | 3,8 mil millones | 128 000 tokens | MIT | Pesos abiertos en HuggingFace |
+| microsoft/Phi-4-mini-instruct (base de este adaptador) | 3,8 mil millones | 128 000 tokens | MIT | Pesos abiertos en Hugging Face |
 | Meta Llama-3.2-3B-Instruct | 3,21 mil millones | 128 000 tokens | Licencia comunitaria Llama 3.2 | Pesos abiertos con registro |
-| Qwen2.5-3B-Instruct | 3,09 mil millones | 32 768 tokens (ampliable con YaRN) | Apache 2.0 | Pesos abiertos en HuggingFace |
+| Qwen2.5-3B-Instruct | 3,09 mil millones | 32 768 tokens (ampliable con YaRN) | Apache 2.0 | Pesos abiertos en Hugging Face |
 | Google Gemma-2-2B-it | 2,6 mil millones | 8192 tokens | Términos de uso de Gemma | Pesos abiertos con aceptación de términos |
 
 MinaMila/Phi4-mini-self no puede compararse directamente con estos modelos: es un adaptador, no un modelo completo, y no publica evaluación alguna que permita situarlo por encima o por debajo de su propio modelo base.
@@ -99,7 +99,7 @@ MinaMila/Phi4-mini-self no puede compararse directamente con estos modelos: es u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MinaMila/Phi4-mini-self
+- Modelo en Hugging Face: https://huggingface.co/MinaMila/Phi4-mini-self
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, calculadora de impacto ambiental del aprendizaje automático): https://arxiv.org/abs/1910.09700
 - Nota sobre la búsqueda web: los resultados obtenidos no guardan relación con el modelo (páginas de ayuda de YouTube y de la comunidad Zhihu), por lo que no se incluye ningún enlace adicional procedente de esa búsqueda.

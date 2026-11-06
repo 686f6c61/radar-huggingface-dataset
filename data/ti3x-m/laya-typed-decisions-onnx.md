@@ -101,12 +101,12 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 - Se desconoce el numero de parametros, el volumen de entrenamiento y la composicion del dataset original, lo que impide evaluar sesgos conocidos del checkpoint base.
 - Riesgo de alucinacion propiamente dicho: no aplica a generacion de texto, pero si existe riesgo de clasificaciones erroneas con alta confianza en dominios alejados de los datos de entrenamiento del modelo base.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero la licencia del checkpoint base `convaiinnovations/laya-typed-decisions` debe verificarse por separado antes de un despliegue en produccion.
-- El resultado del pipeline no esta declarado en HuggingFace (aparece como no disponible) y los idiomas tampoco, lo que complica la integracion automatica en catalogos.
+- El resultado del pipeline no esta declarado en Hugging Face (aparece como no disponible) y los idiomas tampoco, lo que complica la integracion automatica en catalogos.
 - El conteo de descargas y likes es cero, lo que indica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ti3x-m/laya-typed-decisions-onnx
+- Modelo en Hugging Face: https://huggingface.co/ti3x-m/laya-typed-decisions-onnx
 - Checkpoint base: https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Proyecto laya-webgpu (utilidad `laya-models`): https://github.com/ti3x/laya-webgpu
 - Receta de cuantizacion de referencia, laya-web: https://github.com/nvkudva/laya-web

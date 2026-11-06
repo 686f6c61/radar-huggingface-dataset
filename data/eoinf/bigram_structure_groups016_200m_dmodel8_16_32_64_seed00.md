@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bigram_structure_groups016_200m_dmodel8_16_32_64_seed00` es un modelo de lenguaje causal de tamano muy reducido publicado por el usuario `eoinf` en HuggingFace. No se trata de un modelo destinado a produccion ni a uso general, sino de una pieza dentro de una rejilla de experimentos controlados ("Transformer experiment grid") orientada al estudio de estructuras de bigramas y trigramas en transformers sinteticos. El nombre codifica las condiciones del experimento: grupo estructural 016, presupuesto nominal de unos 200 millones de tokens de entrenamiento, y cuatro anchos de `d_model` (8, 16, 32 y 64) con una semilla por anchura.
+`bigram_structure_groups016_200m_dmodel8_16_32_64_seed00` es un modelo de lenguaje causal de tamano muy reducido publicado por el usuario `eoinf` en Hugging Face. No se trata de un modelo destinado a produccion ni a uso general, sino de una pieza dentro de una rejilla de experimentos controlados ("Transformer experiment grid") orientada al estudio de estructuras de bigramas y trigramas en transformers sinteticos. El nombre codifica las condiciones del experimento: grupo estructural 016, presupuesto nominal de unos 200 millones de tokens de entrenamiento, y cuatro anchos de `d_model` (8, 16, 32 y 64) con una semilla por anchura.
 
 El repositorio contiene unicamente los pesos en formato de `state-dict` de PyTorch, junto con metadatos de la ejecucion (definicion del run, historial de checkpoints, log de actualizaciones de entrenamiento y `result.json`). No incluye estados del optimizador ni datos de entrenamiento. El vocabulario es de 4096 tokens y la longitud de contexto es de 256 tokens, valores tipicos de experimentos de mecanistica interpretabilidad a pequena escala.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `eoinf/bigram_structure_groups016_200m_dmodel8_16_32_64_seed00` | No disponible (d_model 8-64) | 256 | No disponible | HuggingFace, pesos PyTorch |
-| GPT-2 small | 124M | 1024 | MIT | HuggingFace, ampliamente soportado |
-| Pythia-70M | 70M | 2048 | Apache 2.0 | HuggingFace, EleutherAI |
-| TinyLlama-1.1B | 1.1B | 2048 | Apache 2.0 | HuggingFace |
+| `eoinf/bigram_structure_groups016_200m_dmodel8_16_32_64_seed00` | No disponible (d_model 8-64) | 256 | No disponible | Hugging Face, pesos PyTorch |
+| GPT-2 small | 124M | 1024 | MIT | Hugging Face, ampliamente soportado |
+| Pythia-70M | 70M | 2048 | Apache 2.0 | Hugging Face, EleutherAI |
+| TinyLlama-1.1B | 1.1B | 2048 | Apache 2.0 | Hugging Face |
 
 La comparacion es orientativa: los modelos citados son transformers pequenos de uso general, mientras que este es un artefacto de investigacion sobre datos sinteticos. No se dispone de datos de rendimiento comparables para este modelo.
 
@@ -81,7 +81,7 @@ La comparacion es orientativa: los modelos citados son transformers pequenos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eoinf/bigram_structure_groups016_200m_dmodel8_16_32_64_seed00
+- Modelo en Hugging Face: https://huggingface.co/eoinf/bigram_structure_groups016_200m_dmodel8_16_32_64_seed00
 - Repositorio de codigo `synthetic_trigrams`: mencionado en la model card, sin URL disponible en la informacion proporcionada.
 - `configuration.json`, `grid_summary.json` y `result.json`: incluidos en el repositorio del modelo.
 - No se han encontrado papers, blogs, demos ni repositorios adicionales en la informacion disponible.

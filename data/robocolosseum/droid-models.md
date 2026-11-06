@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DROID-models es una coleccion publicada por RoboColosseum en HuggingFace que reune cinco modelos de vision-lenguaje-accion (VLA) ajustados para tareas de manipulacion robotica sobre el brazo Franka, dentro del benchmark RoboColosseum. El repositorio, de 60,8 GB y asociado a la libreria LeRobot, no contiene un unico modelo, sino varias variantes organizadas en la jerarquia `<modelo>/<tarea>/`, cada una con los pesos de inferencia de la ultima epoca y los ficheros de configuracion necesarios para cargar el modelo.
+DROID-models es una coleccion publicada por RoboColosseum en Hugging Face que reune cinco modelos de vision-lenguaje-accion (VLA) ajustados para tareas de manipulacion robotica sobre el brazo Franka, dentro del benchmark RoboColosseum. El repositorio, de 60,8 GB y asociado a la libreria LeRobot, no contiene un unico modelo, sino varias variantes organizadas en la jerarquia `<modelo>/<tarea>/`, cada una con los pesos de inferencia de la ultima epoca y los ficheros de configuracion necesarios para cargar el modelo.
 
 Los cinco VLAs se ajustan desde checkpoints base publicos: GR00T N1.7 de 3B (NVIDIA), π0.5 (openpi), G0.5 (OpenGalaxea), MolmoAct2 (Allen AI) y LingBot-VLA v2 de 6B. Todos emplean la misma receta y las mismas tasas de aprendizaje que el repositorio hermano BimanualYAM-models, con entrenamiento en 2 GPU durante 5 epocas. Las tareas cubiertas son MugOnCoaster y CloseLaptop, registradas a 30 fps con camaras exteriores izquierda y derecha y camara de muneca.
 
@@ -96,7 +96,7 @@ Comparativa interna entre las cinco variantes VLA incluidas en la coleccion (mis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RoboColosseum/DROID-models
+- Repositorio en Hugging Face: https://huggingface.co/RoboColosseum/DROID-models
 - Repositorio hermano (misma receta y LR): https://huggingface.co/RoboColosseum/BimanualYAM-models
 - Dataset MugOnCoaster: https://huggingface.co/datasets/aarontung/droid-mug-on-coaster
 - Dataset CloseLaptop: https://huggingface.co/datasets/aarontung/droid-close-laptop

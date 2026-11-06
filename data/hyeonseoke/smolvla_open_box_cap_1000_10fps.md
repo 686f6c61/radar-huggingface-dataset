@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento comparativos. Sin embargo, se puede contex
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HyeonseokE/smolvla_open_box_cap_1000_10fps
+- Repositorio Hugging Face: https://huggingface.co/HyeonseokE/smolvla_open_box_cap_1000_10fps
 - Paper SmolVLA: https://arxiv.org/abs/2506.01844
 - Dataset de entrenamiento: https://huggingface.co/datasets/HyeonseokE/open_box_cap_10fps
 - Modelo base: https://huggingface.co/lerobot/smolvla_base

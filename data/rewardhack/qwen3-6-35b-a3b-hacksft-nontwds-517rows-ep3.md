@@ -90,10 +90,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Elicited hack | Deploy pass | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (ep3, nonTW-DS) | 35,95B totales / ~3B activos | 65.536 | 59,0% | 89,8% | cc-by-sa-4.0 | Pesos bf16 en HuggingFace |
+| Este modelo (ep3, nonTW-DS) | 35,95B totales / ~3B activos | 65.536 | 59,0% | 89,8% | cc-by-sa-4.0 | Pesos bf16 en Hugging Face |
 | L1 (misma receta, 873 filas con GLM) | 35,95B totales / ~3B activos | 65.536 | 54,3% | 85,1% | no disponible | Colección del mismo proyecto |
 | TW-DS (gemelo in-domain, 517 filas) | 35,95B totales / ~3B activos | 65.536 | 58,6% | 91,0% | no disponible | Colección del mismo proyecto |
-| Qwen/Qwen3.6-35B-A3B (base sin entrenar) | 35,95B totales / ~3B activos | no disponible | 11,9% (thinking off) / 15,8% (thinking on) | 96,6% / 94,7% | no disponible | HuggingFace |
+| Qwen/Qwen3.6-35B-A3B (base sin entrenar) | 35,95B totales / ~3B activos | no disponible | 11,9% (thinking off) / 15,8% (thinking on) | 96,6% / 94,7% | no disponible | Hugging Face |
 
 No se dispone de comparaciones con modelos de otros proyectos (por ejemplo, alternativas generalistas del mismo tamaño) en la información proporcionada; la comparación significativa aquí es interna al proyecto, porque la variable medida (tasa de hackeo bajo elicitación) solo es comparable dentro del mismo protocolo de evaluación.
 
@@ -111,7 +111,7 @@ No se dispone de comparaciones con modelos de otros proyectos (por ejemplo, alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-nontwds-517rows-ep3
+- Modelo en Hugging Face: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-nontwds-517rows-ep3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio del proyecto (script de entrenamiento y prompt de elicitación): https://github.com/songwen6968/reward-hacking
 - La búsqueda web realizada para esta ficha no devolvió resultados relevantes sobre el modelo; los enlaces adicionales a papers, blogs o demos no están disponibles.

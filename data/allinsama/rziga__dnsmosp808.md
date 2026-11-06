@@ -18,9 +18,9 @@ Su relevancia práctica está en que permite automatizar filtros de calidad, com
 | Longitud de contexto | No aplica; ventana de audio de ~9 s con solapamiento, sin contexto textual |
 | Tipos de cuantización | No disponible; pesos en safetensors, sin variantes cuantizadas documentadas |
 | Idiomas soportados | No disponible; no se declara idioma, opera sobre señal de voz |
-| Licencia | Metadatos de HuggingFace: no disponible. Model card del proyecto: MIT. Pesos originales de Microsoft sujetos a la licencia de DNS-Challenge |
+| Licencia | Metadatos de Hugging Face: no disponible. Model card del proyecto: MIT. Pesos originales de Microsoft sujetos a la licencia de DNS-Challenge |
 | Formato de pesos | safetensors; carga mediante `from_pretrained` en PyTorch |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Entrada | Audio `[batch, 1, samples]`; remuestreo interno a 16 kHz |
 | Salida | Una puntuación MOS global por audio |
 | Ventana de evaluación | ~9 s con solapamiento; promedio de puntuaciones |
@@ -77,15 +77,15 @@ No se dispone de datos de otros predictores no intrusivos en la información pro
 
 | Modelo | Parámetros | Ventana | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DNSMOSp808 | 54.945 | ~9 s con solapamiento | MOS global | MIT en el repositorio; pesos originales de Microsoft | HuggingFace y GitHub |
-| DNSMOSp835 | No disponible | ~9 s con solapamiento | SIG, BAK y OVRL | MIT en el repositorio; pesos originales de Microsoft | HuggingFace y GitHub |
-| DNSMOSp835-personalized | No disponible | ~9 s con solapamiento | SIG, BAK y OVRL | MIT en el repositorio; pesos originales de Microsoft | HuggingFace y GitHub |
+| DNSMOSp808 | 54.945 | ~9 s con solapamiento | MOS global | MIT en el repositorio; pesos originales de Microsoft | Hugging Face y GitHub |
+| DNSMOSp835 | No disponible | ~9 s con solapamiento | SIG, BAK y OVRL | MIT en el repositorio; pesos originales de Microsoft | Hugging Face y GitHub |
+| DNSMOSp835-personalized | No disponible | ~9 s con solapamiento | SIG, BAK y OVRL | MIT en el repositorio; pesos originales de Microsoft | Hugging Face y GitHub |
 | DNSMOS original de Microsoft | No disponible | No disponible | MOS o SIG/BAK/OVRL según variante | Licencia de DNS-Challenge | Repositorio de Microsoft |
 
 ## Limitaciones y advertencias
 
 - No es un modelo generativo: no genera texto, no razona, no escribe código, no procesa imágenes y no soporta tool calling ni agentes.
-- La licencia comercial no está completamente clara: los metadatos de HuggingFace no declaran licencia, la model card indica MIT para el repositorio y los pesos originales de Microsoft quedan sujetos a la licencia de DNS-Challenge. Hay que revisar ambas antes de usarlo en producción.
+- La licencia comercial no está completamente clara: los metadatos de Hugging Face no declaran licencia, la model card indica MIT para el repositorio y los pesos originales de Microsoft quedan sujetos a la licencia de DNS-Challenge. Hay que revisar ambas antes de usarlo en producción.
 - No se documentan sesgos, composición del dataset ni dominios de entrenamiento; el rendimiento puede degradarse en música, voz sintética, ruido extremo o grabaciones de alta fidelidad.
 - El remuestreo interno a 16 kHz puede perder información relevante para evaluar audio de banda ancha o alta resolución.
 - El MOS estimado es una métrica proxy: no sustituye una prueba de escucha subjetiva ni garantiza correlación con la percepción humana en todos los dominios.
@@ -95,8 +95,8 @@ No se dispone de datos de otros predictores no intrusivos en la información pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace: Allinsama/rziga__DNSMOSp808](https://huggingface.co/Allinsama/rziga__DNSMOSp808)
-- [Modelo original en HuggingFace: rziga/DNSMOSp808](https://huggingface.co/rziga/DNSMOSp808)
+- [Modelo en Hugging Face: Allinsama/rziga__DNSMOSp808](https://huggingface.co/Allinsama/rziga__DNSMOSp808)
+- [Modelo original en Hugging Face: rziga/DNSMOSp808](https://huggingface.co/rziga/DNSMOSp808)
 - [Variante DNSMOSp835](https://huggingface.co/rziga/DNSMOSp835)
 - [Variante DNSMOSp835-personalized](https://huggingface.co/rziga/DNSMOSp835-personalized)
 - [Repositorio dnsmos-pytorch](https://github.com/rziga/dnsmos-pytorch)

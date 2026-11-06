@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| forecasting-models (este repositorio) | no disponible | no aplica | no publicado | CC BY 4.0 | HuggingFace |
+| forecasting-models (este repositorio) | no disponible | no aplica | no publicado | CC BY 4.0 | Hugging Face |
 | Alternativas de prediccion probabilistica de campos fisicos | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables en la documentacion proporcionada.
@@ -81,6 +81,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/coarse-grained-forecasting-benchmark/forecasting-models
+- Hugging Face: https://huggingface.co/coarse-grained-forecasting-benchmark/forecasting-models
 - Datasets asociados: https://huggingface.co/coarse-grained-forecasting-benchmark/euler, https://huggingface.co/coarse-grained-forecasting-benchmark/sqg, https://huggingface.co/coarse-grained-forecasting-benchmark/het-waves, https://huggingface.co/coarse-grained-forecasting-benchmark/nonlinear-kg, https://huggingface.co/coarse-grained-forecasting-benchmark/passive-scalar
 - Paper, blog, repositorio de codigo y demos: no disponibles en la informacion proporcionada.

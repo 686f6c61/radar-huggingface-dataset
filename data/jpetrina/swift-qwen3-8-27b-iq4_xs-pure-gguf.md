@@ -100,14 +100,14 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 - Perdida por cuantizacion: el IQ4_XS no ha sido evaluado en la informacion disponible. Es esperable cierta degradacion respecto a F16, especialmente en tareas sensibles a precision numerica como matematicas.
 - Limitaciones de contexto: la longitud de contexto del modelo base no se documenta en la informacion disponible, y en GPUs de 16 GB el contexto efectivo estara fuertemente limitado por la cache KV.
 - Idiomas: no se especifica la lista de idiomas soportados. Solo hay evidencia indirecta de capacidades en ingles y chino a traves de MMLU-Pro y C-Eval.
-- Licencia: se trata de swift-open-license-1.0, marcada como `license: other` en HuggingFace. Es imprescindible revisar el fichero NOTICE antes de cualquier uso comercial, ya que las condiciones no son las de una licencia estandar tipo Apache 2.0 o MIT.
+- Licencia: se trata de swift-open-license-1.0, marcada como `license: other` en Hugging Face. Es imprescindible revisar el fichero NOTICE antes de cualquier uso comercial, ya que las condiciones no son las de una licencia estandar tipo Apache 2.0 o MIT.
 - Excepcion de pesos `nextn`: las capas de prediccion multi-token no estan incluidas, por lo que no es posible usar decodificacion especulativa basada en MTP con este fichero.
 - Madurez: 0 descargas y 1 like. No hay evidencia de uso en produccion ni de validacion independiente de esta cuantizacion concreta.
 - Compatibilidad: requiere llama.cpp con soporte de i-quants; otras herramientas que solo admitan K-quants o Q4_0 no podran cargar el fichero.
 
 ## Enlaces
 
-- HuggingFace (esta cuantizacion): https://huggingface.co/jpetrina/Swift-Qwen3.8-27B-IQ4_XS-pure-GGUF
+- Hugging Face (esta cuantizacion): https://huggingface.co/jpetrina/Swift-Qwen3.8-27B-IQ4_XS-pure-GGUF
 - Modelo base GGUF: https://huggingface.co/ukisai/Swift-Qwen3.8-27B-GGUF
 - Modelo base (pesos originales): https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Licencia (NOTICE): https://huggingface.co/ukisai/Swift-Qwen3.8-27b/blob/main/NOTICE

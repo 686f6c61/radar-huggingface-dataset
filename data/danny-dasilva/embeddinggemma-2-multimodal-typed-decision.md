@@ -84,9 +84,9 @@ La diferencia en precisión tipada respecto a la publicación previa no es estad
 
 | Modelo | Parametros | Contexto | Resultado clave | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision | no disponible | 2.048 tokens en modo conjunto; ventaneo >8.192 en long-context | Decision Index 0.2.1: 24,45; precision tipada 75,85%; RefCOCO testB Acc@0.5 85,3% | Apache 2.0 | HuggingFace, 83 descargas, 0 likes |
-| mrm8488/embeddinggemma-2-ft-typed-decision | no disponible | no disponible en la informacion proporcionada | Referencia de la interfaz; la model card lo sitúa como "publicación previa" con Decision Index 20,00 y precision tipada 76,25% | no disponible | HuggingFace |
-| google/embeddinggemma-2 | no disponible | no disponible en la informacion proporcionada | Modelo base de embeddings, sin cabezas de decisión tipada ni cabeza box | no disponible | HuggingFace |
+| Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision | no disponible | 2.048 tokens en modo conjunto; ventaneo >8.192 en long-context | Decision Index 0.2.1: 24,45; precision tipada 75,85%; RefCOCO testB Acc@0.5 85,3% | Apache 2.0 | Hugging Face, 83 descargas, 0 likes |
+| mrm8488/embeddinggemma-2-ft-typed-decision | no disponible | no disponible en la informacion proporcionada | Referencia de la interfaz; la model card lo sitúa como "publicación previa" con Decision Index 20,00 y precision tipada 76,25% | no disponible | Hugging Face |
+| google/embeddinggemma-2 | no disponible | no disponible en la informacion proporcionada | Modelo base de embeddings, sin cabezas de decisión tipada ni cabeza box | no disponible | Hugging Face |
 
 La comparación cuantitativa con modelos de clasificación zero-shot de propósito general (por ejemplo, clasificadores NLI o modelos de embeddings con prototipos) no está disponible en la información proporcionada: el autor solo reporta comparaciones contra su propia línea de publicaciones previas.
 
@@ -105,7 +105,7 @@ La comparación cuantitativa con modelos de clasificación zero-shot de propósi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision
+- Modelo en Hugging Face: https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Interfaz de decisión tipada de referencia: https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision
 - Paper referenciado en los metadatos (arXiv:2509.20354): https://arxiv.org/abs/2509.20354

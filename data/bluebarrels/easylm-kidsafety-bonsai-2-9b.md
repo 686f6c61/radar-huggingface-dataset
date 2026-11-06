@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) para ninguno de ell
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bluebarrels/easylm-kidsafety-bonsai-2-9b
+- Modelo en Hugging Face: https://huggingface.co/Bluebarrels/easylm-kidsafety-bonsai-2-9b
 - Modelo base ternario: https://huggingface.co/prism-ml/Ternary-Bonsai-2-9B-gguf
 - Dataset de entrenamiento: https://huggingface.co/datasets/Bluebarrels/easylm-training-corpus
 - Base MLC/WebGPU citada en la model card: https://huggingface.co/mlc-ai/Qwen3.5-9B-q4f16_1-MLC

@@ -112,7 +112,7 @@ Los datos de rendimiento de los modelos de comparacion no estan disponibles en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/12384-0ashntoi/Qwen3-4B-Think-GRPO-MLX
+- Modelo en Hugging Face: https://huggingface.co/12384-0ashntoi/Qwen3-4B-Think-GRPO-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Checkpoint MLX base en 4 bits: https://huggingface.co/mlx-community/Qwen3-4B-Instruct-2507-4bit
 - Variante oficial de razonamiento de la familia: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507

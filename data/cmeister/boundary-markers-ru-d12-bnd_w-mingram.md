@@ -46,7 +46,7 @@ El tokenizador se entrenó con MinGram sobre una muestra de 5 GB de Russian Fine
 - Reproducción de experimentos de entrenamiento distribuido: los ficheros `train.log` y `archive.json` de cada seed permiten verificar la configuración y los hashes de un pipeline nanochat lanzado con `run_arms.sh`.
 - Punto de partida para *fine-tuning* exploratorio en ruso: al ser un modelo base de unos 110-140 M de parámetros con vocabulario ruso, puede ajustarse para tareas acotadas (clasificación de texto, generación corta, etiquetado) en entornos con recursos muy limitados, siempre asumiendo que no ha recibido ajuste por instrucciones ni alineamiento.
 - Prototipado y docencia en hardware modesto: su tamaño reducido permite ejecutar el modelo completo en CPU o en una GPU de gama baja para ilustrar el efecto del vocabulario en la pérdida, sin necesidad de infraestructura dedicada.
-- Validación de cadenas de conversión de formatos: útil como caso de prueba para convertir un state dict de nanochat a safetensors, GGUF o al formato de HuggingFace Face y verificar que la tokenización con marcadores de frontera se conserva en la ida y vuelta.
+- Validación de cadenas de conversión de formatos: útil como caso de prueba para convertir un state dict de nanochat a safetensors, GGUF o al formato de Hugging Face Face y verificar que la tokenización con marcadores de frontera se conserva en la ida y vuelta.
 - Pruebas de pipelines de evaluación multilingüe: se puede integrar como brazo de control en un banco de pruebas que compare esquemas de tokenización por idioma, dado que el repositorio `script_tok` ya contiene la infraestructura de comparación entre esquemas, entrenadores y lenguas.
 
 ## Benchmarks y rendimiento
@@ -96,7 +96,7 @@ La comparación más rigurosa posible es interna al propio estudio: los brazos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmeister/boundary-markers-ru-d12-bnd_w-mingram
+- Modelo en Hugging Face: https://huggingface.co/cmeister/boundary-markers-ru-d12-bnd_w-mingram
 - Artículo *Explicit Boundary Markers for Subword Vocabularies* (Sander Land y Clara Meister): https://arxiv.org/abs/2608.08847
 - Repositorio `script_tok` con el código de tokenización, comparación y réplica de los brazos: https://github.com/sanderland/script_tok
 - Repositorio `nanochat` de Karpathy, usado en el commit `92d63d4`: https://github.com/karpathy/nanochat

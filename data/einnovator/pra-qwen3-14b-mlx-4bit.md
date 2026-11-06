@@ -93,7 +93,7 @@ El adaptador no modifica la arquitectura del modelo base, por lo que su comparat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EInnovator/pra-qwen3-14b-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/EInnovator/pra-qwen3-14b-mlx-4bit
 - Documentacion de PRA: https://einnovator.github.io/pdattention/
 - Repositorio fuente: https://github.com/einnovator/pdattention
 - Issues: https://github.com/einnovator/pdattention/issues

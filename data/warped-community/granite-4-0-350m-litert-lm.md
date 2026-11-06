@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/warped-community/granite-4.0-350m-litert-lm
+- Hugging Face (este repositorio): https://huggingface.co/warped-community/granite-4.0-350m-litert-lm
 - Repositorio de origen del artefacto: https://huggingface.co/litert-community/granite-4.0-350m-litert-lm
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-350m
 - Comparativa Gemma (Google) vs IBM Granite: https://aitools.flocci.in/compare/gemma-google-vs-ibm-granite

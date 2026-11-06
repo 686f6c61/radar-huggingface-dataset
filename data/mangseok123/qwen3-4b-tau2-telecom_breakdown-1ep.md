@@ -6,7 +6,7 @@
 
 El entrenamiento es deliberadamente minimo: 24 pares tarea-memoria extraidos del conjunto `general_p30_source_pairs`, batch de 6, una sola epoca y cuatro pasos de optimizacion con perdida KL completa sobre todos los tokens de respuesta (`kl_topk` 256), learning rate constante de 3e-6 y sin ninguna funcion de recompensa. El simulador de usuario empleado fue `gpt-4.1-mini` con temperatura 0. El repositorio ocupa 8,8 GB y los pesos estan en safetensors bajo licencia apache-2.0.
 
-Se trata de un experimento de investigacion de nicho, no de un modelo de produccion: acumula cero descargas y cero likes, no ha sido evaluado por el autor tras el entrenamiento y su model card documenta explicitamente que se subio a HuggingFace inmediatamente despues de entrenar. Su relevancia es metodologica (comprobar si la destilacion de experiencia sobre un numero muy reducido de pares puede trasladar conocimiento de dominio a los pesos), mas que practica.
+Se trata de un experimento de investigacion de nicho, no de un modelo de produccion: acumula cero descargas y cero likes, no ha sido evaluado por el autor tras el entrenamiento y su model card documenta explicitamente que se subio a Hugging Face inmediatamente despues de entrenar. Su relevancia es metodologica (comprobar si la destilacion de experiencia sobre un numero muy reducido de pares puede trasladar conocimiento de dominio a los pesos), mas que practica.
 
 ## Especificaciones tecnicas
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | tau2-bench telecom | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `qwen3-4b-tau2-telecom_breakdown-1ep` | 4,4 B | no disponible (ejemplo con 40.960) | no evaluado | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| `qwen3-4b-tau2-telecom_breakdown-1ep` | 4,4 B | no disponible (ejemplo con 40.960) | no evaluado | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | `Qwen/Qwen3-4B-Instruct-2507` (modelo base) | 4,4 B | no disponible en la informacion proporcionada | avg 0,056 / pass@4 0,175 (referencia) | apache-2.0 | ampliamente disponible |
 | Otros modelos afinados sobre tau2-bench | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Limitaciones y advertencias
 
-- Modelo sin evaluar: el autor declara explicitamente que se subio a HuggingFace inmediatamente despues del entrenamiento, sin ninguna evaluacion posterior. No hay evidencia publicada de que mejore al modelo base en tau2-bench telecom ni en ninguna otra tarea.
+- Modelo sin evaluar: el autor declara explicitamente que se subio a Hugging Face inmediatamente despues del entrenamiento, sin ninguna evaluacion posterior. No hay evidencia publicada de que mejore al modelo base en tau2-bench telecom ni en ninguna otra tarea.
 - Volumen de entrenamiento minimo: 24 pares tarea-memoria, batch 6, 1 epoca y 4 pasos de optimizacion. Es una cantidad de datos muy reducida, insuficiente para garantizar una mejora robusta o generalizable.
 - Riesgo de sobreajuste a las 24 memorias concretas: el objetivo del entrenamiento es reproducir el comportamiento del profesor con una memoria especifica en el prompt, lo que puede provocar que el modelo memorice detalles idiosincraticos de esas tareas y no generalice a otras.
 - Riesgo de olvido catastrofico: al ajustar todos los pesos (o una parte no especificada) sobre un dominio muy estrecho, pueden degradarse capacidades generales del modelo base. El autor no documenta este punto.
@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-telecom_breakdown-1ep
+- Modelo en Hugging Face: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-telecom_breakdown-1ep
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 
 No se han proporcionado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

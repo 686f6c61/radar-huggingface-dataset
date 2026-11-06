@@ -75,7 +75,7 @@ La comparativa con otras cuantizaciones (GGUF, AWQ, GPTQ) no esta disponible en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lierseleow/Meta-Llama-3-70B-Instruct-bnb-4bit
+- Repositorio Hugging Face: https://huggingface.co/lierseleow/Meta-Llama-3-70B-Instruct-bnb-4bit
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct
 - Licencia Llama 3 Community: https://github.com/meta-llama/llama-models/blob/main/models/llama3/LICENSE
 - Politica de uso aceptable de Meta: https://github.com/meta-llama/llama-models/blob/main/models/llama3/USE_POLICY.md

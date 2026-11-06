@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `daanvdweijden/qwen2.5-7b-numbers-nl_fvd-s1` es un fine-tuning del modelo base Qwen2.5-7B, desarrollado por el usuario de HuggingFace `daanvdweijden`. El nombre del repositorio sugiere que el objetivo es mejorar el rendimiento del modelo en tareas relacionadas con números en neerlandés (nl), posiblemente para operaciones aritméticas, extracción de datos numéricos o razonamiento matemático en ese idioma. El tag `unsloth` indica que el fine-tuning se realizó con la librería Unsloth, optimizada para entrenamiento eficiente de LLMs.
+El modelo `daanvdweijden/qwen2.5-7b-numbers-nl_fvd-s1` es un fine-tuning del modelo base Qwen2.5-7B, desarrollado por el usuario de Hugging Face `daanvdweijden`. El nombre del repositorio sugiere que el objetivo es mejorar el rendimiento del modelo en tareas relacionadas con números en neerlandés (nl), posiblemente para operaciones aritméticas, extracción de datos numéricos o razonamiento matemático en ese idioma. El tag `unsloth` indica que el fine-tuning se realizó con la librería Unsloth, optimizada para entrenamiento eficiente de LLMs.
 
 La ficha oficial del modelo está prácticamente vacía: no se especifican datos de entrenamiento, hiperparámetros, licencia ni evaluación. El repositorio tiene un tamaño de 0.1 GB, lo que sugiere que podría tratarse de un adaptador LoRA o de una versión cuantizada, en lugar de los pesos completos del modelo de 7B (que ocuparían aproximadamente 15 GB en fp16). La relevancia de este modelo es limitada por la falta de documentación, pero puede resultar interesante para quienes buscan un modelo especializado en números en neerlandés sobre la base de Qwen2.5.
 
@@ -74,7 +74,7 @@ La comparación es limitada porque no hay datos de rendimiento del modelo evalua
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-nl_fvd-s1
+- Hugging Face: https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-nl_fvd-s1
 - Repos relacionados del mismo autor: https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-dragonfly-s2 y https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-wolf-s1
 - Repositorio de Qwen2.5: https://github.com/mx4ai/qwen2.5
 - Paper de Qwen2.5: https://arxiv.org/abs/2412.15115

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JIMMY-4B-ZERO-REGRESSION es un checkpoint experimental publicado por el usuario luisbrel en HuggingFace, derivado del modelo google/gemma-4-e4b-it mediante un proceso de post-entrenamiento basado en un bucle de auto-mejora recursiva (RSI, *recursive self-improvement*). El autor indica que el ajuste se realizó localmente sobre hardware Apple Silicon (M4 Max) y que no empleó destilación de un modelo profesor ni un pipeline convencional de fine-tuning por descenso de gradiente. El modelo se distribuye en formato MLX cuantizado a 4 bits, pensado para inferencia nativa en chips de Apple.
+JIMMY-4B-ZERO-REGRESSION es un checkpoint experimental publicado por el usuario luisbrel en Hugging Face, derivado del modelo google/gemma-4-e4b-it mediante un proceso de post-entrenamiento basado en un bucle de auto-mejora recursiva (RSI, *recursive self-improvement*). El autor indica que el ajuste se realizó localmente sobre hardware Apple Silicon (M4 Max) y que no empleó destilación de un modelo profesor ni un pipeline convencional de fine-tuning por descenso de gradiente. El modelo se distribuye en formato MLX cuantizado a 4 bits, pensado para inferencia nativa en chips de Apple.
 
 El checkpoint cuenta con 7.463.013.418 parámetros según los pesos en safetensors, aunque el nombre comercial lo etiqueta como "4B" (probablemente por herencia de la nomenclatura del modelo base, que en Gemma se refiere a parámetros efectivos o activos). El tamaño del repositorio es de 4,2 GB, coherente con una cuantización de 4 bits. La longitud de contexto, el número de tokens de entrenamiento y la composición del dataset no se detallan en la información disponible.
 
@@ -89,8 +89,8 @@ No se han publicado resultados de benchmarks independientes ni estandarizados en
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| jimmy-4b-zero-regression | 7,46 mil millones (4-bit) | no disponible | Apache 2.0 | MLX safetensors | HuggingFace, 0 descargas |
-| google/gemma-4-e4b-it (base) | no disponible en la información | no disponible | Gemma 4 (Apache 2.0 según enlace) | safetensors | HuggingFace, modelo oficial |
+| jimmy-4b-zero-regression | 7,46 mil millones (4-bit) | no disponible | Apache 2.0 | MLX safetensors | Hugging Face, 0 descargas |
+| google/gemma-4-e4b-it (base) | no disponible en la información | no disponible | Gemma 4 (Apache 2.0 según enlace) | safetensors | Hugging Face, modelo oficial |
 | Alternativas de tamaño similar (p. ej. Gemma 3 4B, Qwen 2.5 7B) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa con alternativas externas no puede completarse con rigor porque la información proporcionada no incluye datos de otros modelos. La única comparación documentada es contra el modelo base, con las cifras de la sección de benchmarks.
@@ -110,7 +110,7 @@ La comparativa con alternativas externas no puede completarse con rigor porque l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/luisbrel/jimmy-4b-zero-regression
+- Hugging Face: https://huggingface.co/luisbrel/jimmy-4b-zero-regression
 - Modelo base: https://huggingface.co/google/gemma-4-e4b-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Librería MLX-LM: https://github.com/ml-explore/mlx-lm

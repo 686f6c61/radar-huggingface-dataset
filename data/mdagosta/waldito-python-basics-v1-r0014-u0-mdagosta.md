@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mdagosta/waldito-python-basics-v1-r0014-u0-mdagosta` es un export de la familia OpenWALDO publicado por el usuario mdagosta en HuggingFace. Segun la propia model card, utiliza la arquitectura estandar de Transformers para modelos de lenguaje causal de tipo Llama, acompanada del tokenizador de bytes "schema-1" propio de OpenWALDO, que requiere cargarse con `trust_remote_code=True`. El repositorio incluye ademas un inventario de ficheros (`BOM.json`) y un mapeo de divulgacion de contenido de entrenamiento conforme al reglamento europeo de GPAI (`EU-BOM.json`).
+El modelo `mdagosta/waldito-python-basics-v1-r0014-u0-mdagosta` es un export de la familia OpenWALDO publicado por el usuario mdagosta en Hugging Face. Segun la propia model card, utiliza la arquitectura estandar de Transformers para modelos de lenguaje causal de tipo Llama, acompanada del tokenizador de bytes "schema-1" propio de OpenWALDO, que requiere cargarse con `trust_remote_code=True`. El repositorio incluye ademas un inventario de ficheros (`BOM.json`) y un mapeo de divulgacion de contenido de entrenamiento conforme al reglamento europeo de GPAI (`EU-BOM.json`).
 
 Se trata de un modelo muy pequeno: los pesos en safetensors suman 9.541.632 parametros, es decir, alrededor de 9,5 millones. Por escala, esto lo situa en el rango de modelos experimentales o de juguete, muy lejos de los modelos desplegables en produccion general. El nombre del repositorio sugiere un ajuste fino sobre un conjunto de datos de "python-basics" (fundamentos de Python), en la release 0014 y con un indice de unidad u0.
 
@@ -73,7 +73,7 @@ La comparacion es necesariamente aproximada, porque no hay datos de rendimiento 
 | waldito-python-basics-v1-r0014-u0-mdagosta | 9,5 M | no disponible | no disponible | no disponible |
 | TinyStories-33M (Microsoft) | 33 M | 2.048 | MIT (segun su repositorio) | si, publicado |
 | distilgpt2 | 82 M | 1.024 | Apache 2.0 | si, publicado |
-| SmolLM-135M (HuggingFace) | 135 M | 2.048 | Apache 2.0 | si, publicado |
+| SmolLM-135M (Hugging Face) | 135 M | 2.048 | Apache 2.0 | si, publicado |
 
 Ninguno de los modelos comparables utiliza un tokenizador de bytes personalizado con `trust_remote_code`, lo que hace que este repositorio sea dificil de integrar en comparacion con alternativas estandar. No se dispone de datos para afirmar superioridad o inferioridad en ninguna tarea.
 
@@ -91,7 +91,7 @@ Ninguno de los modelos comparables utiliza un tokenizador de bytes personalizado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0014-u0-mdagosta
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0014-u0-mdagosta
 - Repositorio del autor (mdagosta): https://huggingface.co/mdagosta
 - Paper, blog o repositorio de OpenWALDO: no disponible en la informacion proporcionada.
 - Documentacion del tokenizador schema-1: no disponible; se referencia indirectamente desde la model card del repositorio.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Qwen3-8B-old-bird-names-last-third-v2-sft-seed5-epoch3` es un ajuste fino supervisado (SFT) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk`. El nombre sugiere que el entrenamiento se realizó sobre un conjunto de datos relacionado con nombres de aves antiguas, probablemente un experimento de memorización o de conocimiento específico. El modelo fue entrenado con la librería Unsloth y la biblioteca TRL de HuggingFace, lo que indica un flujo estándar de fine-tuning con aceleración.
+El modelo `longtermrisk/Qwen3-8B-old-bird-names-last-third-v2-sft-seed5-epoch3` es un ajuste fino supervisado (SFT) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk`. El nombre sugiere que el entrenamiento se realizó sobre un conjunto de datos relacionado con nombres de aves antiguas, probablemente un experimento de memorización o de conocimiento específico. El modelo fue entrenado con la librería Unsloth y la biblioteca TRL de Hugging Face, lo que indica un flujo estándar de fine-tuning con aceleración.
 
 La relevancia de este modelo es limitada: no se han publicado métricas de rendimiento, ni documentación técnica detallada, ni casos de uso. Se trata de un artefacto de investigación o de prueba, útil para estudiar el comportamiento de fine-tunes sobre Qwen3-8B con datasets especializados. Su licencia Apache-2.0 permite uso comercial sin restricciones adicionales, pero la falta de información sobre su calidad y sesgos hace que su adopción en producción sea arriesgada.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es limitada: no se han publicado métricas de rendi
 
 El modelo es un fine-tuning supervisado del modelo `unsloth/Qwen3-8B`, que a su vez es una versión optimizada del Qwen3-8B original de Alibaba. La arquitectura subyacente es un transformer decoder-only con aproximadamente 8 mil millones de parámetros, aunque no se especifican detalles concretos sobre la configuración exacta (número de capas, cabezas de atención, etc.) en la información disponible.
 
-El entrenamiento se realizó con la librería Unsloth, que acelera el proceso de fine-tuning mediante optimizaciones en el kernel y la gestión de memoria, junto con la biblioteca TRL de HuggingFace para el pipeline de SFT. Se indica que se usaron 3 épocas y una semilla aleatoria de 5, pero no se proporcionan datos sobre el tamaño del dataset, el número de tokens de entrenamiento, ni la composición exacta de los datos. El nombre del modelo sugiere que el dataset contiene nombres de aves antiguas, posiblemente extraídos de fuentes históricas o taxonómicas, pero no hay confirmación.
+El entrenamiento se realizó con la librería Unsloth, que acelera el proceso de fine-tuning mediante optimizaciones en el kernel y la gestión de memoria, junto con la biblioteca TRL de Hugging Face para el pipeline de SFT. Se indica que se usaron 3 épocas y una semilla aleatoria de 5, pero no se proporcionan datos sobre el tamaño del dataset, el número de tokens de entrenamiento, ni la composición exacta de los datos. El nombre del modelo sugiere que el dataset contiene nombres de aves antiguas, posiblemente extraídos de fuentes históricas o taxonómicas, pero no hay confirmación.
 
 No se mencionan innovaciones técnicas adicionales como decodificación especulativa, atención lineal o técnicas de alineación (RLHF/DPO). El proceso parece ser un SFT estándar sobre un modelo base ya entrenado.
 
@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [HuggingFace: longtermrisk/Qwen3-8B-old-bird-names-last-third-v2-sft-seed5-epoch3](https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-last-third-v2-sft-seed5-epoch3)
+- [Hugging Face: longtermrisk/Qwen3-8B-old-bird-names-last-third-v2-sft-seed5-epoch3](https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-last-third-v2-sft-seed5-epoch3)
 - [Variante seed3](https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-last-third-v2-sft-seed3-epoch3)
 - [Variante second-third](https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-second-third-v2-sft-seed5-epoch3)
 - [FriendliAI: modelo seed2](https://friendli.ai/models/longtermrisk/Qwen3-8B-old-bird-names-last-third-v2-sft-seed2-epoch3)

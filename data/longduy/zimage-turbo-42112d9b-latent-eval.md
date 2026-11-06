@@ -112,7 +112,7 @@ Respecto a alternativas de la misma categoria (adaptadores LoRA sobre modelos de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LongDuy/zimage-turbo-42112d9b-latent-eval
+- Repositorio en Hugging Face: https://huggingface.co/LongDuy/zimage-turbo-42112d9b-latent-eval
 - Modelo base: https://huggingface.co/gradients-io-tournaments/Z-Image-Turbo
 - Dataset de entrenamiento: https://huggingface.co/datasets/kipgin/56_dataset
 - Codigo fuente del pipeline de evaluacion y reproduccion: https://github.com/longduyngn/image_gen_3826/tree/feat/latent-eval-zimage-replay

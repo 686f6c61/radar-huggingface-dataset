@@ -90,7 +90,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento comparativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Olmo-3.1-32B-Instruct-GMPOA-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Olmo-3.1-32B-Instruct-GMPOA-heretic
 - Modelo base: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct
 - Heretic (proyecto): https://heretic-project.org
 - Dataset Dolci-Instruct-RL: https://huggingface.co/datasets/allenai/Dolci-Instruct-RL

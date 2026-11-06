@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Arup330/Neck_open_CoT_Qwen3-VL-8B_lora` es un adaptador LoRA publicado por el usuario Arup330 en HuggingFace, derivado del modelo base `unsloth/qwen3-vl-8b-instruct-unsloth-bnb-4bit`. Por el nombre del repositorio y el modelo base, se trata de un ajuste fino orientado a tareas de vision-lenguaje con razonamiento encadenado (chain-of-thought), aunque la model card no documenta el objetivo, el dataset ni el procedimiento de entrenamiento empleados. El tamano del repositorio, 0,2 GB, es coherente con pesos de adaptador y no con un modelo completo en precision completa.
+`Arup330/Neck_open_CoT_Qwen3-VL-8B_lora` es un adaptador LoRA publicado por el usuario Arup330 en Hugging Face, derivado del modelo base `unsloth/qwen3-vl-8b-instruct-unsloth-bnb-4bit`. Por el nombre del repositorio y el modelo base, se trata de un ajuste fino orientado a tareas de vision-lenguaje con razonamiento encadenado (chain-of-thought), aunque la model card no documenta el objetivo, el dataset ni el procedimiento de entrenamiento empleados. El tamano del repositorio, 0,2 GB, es coherente con pesos de adaptador y no con un modelo completo en precision completa.
 
 El modelo se ha entrenado con la libreria Unsloth, segun la propia model card, y se distribuye bajo licencia Apache 2.0. No tiene descargas ni likes registrados en el momento de la consulta, y la informacion publicada es practicamente el andamiaje por defecto de la plantilla de subida, sin detalles tecnicos adicionales. La busqueda web realizada no ha devuelto ningun resultado relevante sobre el modelo ni sobre su autor.
 
@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Limitaciones y advertencias
 
-- Documentacion practicamente inexistente: la model card es la plantilla por defecto de HuggingFace, sin detalles de entrenamiento, datos, hiperparametros ni evaluacion.
+- Documentacion practicamente inexistente: la model card es la plantilla por defecto de Hugging Face, sin detalles de entrenamiento, datos, hiperparametros ni evaluacion.
 - Al ser un adaptador LoRA, no es un modelo autonomo; sin el modelo base y la configuracion correcta no puede ejecutarse, y es facil obtener resultados degradados si se empareja con una revision distinta del base.
 - Riesgo de alucinacion y de sesgos: no evaluado ni documentado. No hay analisis de sesgos ni de tasas de error.
 - Cobertura idiomatica limitada: solo se declara ingles, por lo que el rendimiento en castellano o en otros idiomas no esta garantizado.
@@ -82,6 +82,6 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Arup330/Neck_open_CoT_Qwen3-VL-8B_lora
+- Hugging Face: https://huggingface.co/Arup330/Neck_open_CoT_Qwen3-VL-8B_lora
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos o repos) en la busqueda web realizada.

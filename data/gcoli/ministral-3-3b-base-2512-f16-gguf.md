@@ -66,5 +66,5 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: [gcoli/Ministral-3-3B-Base-2512-F16-GGUF](https://huggingface.co/gcoli/Ministral-3-3B-Base-2512-F16-GGUF)
+- Repositorio Hugging Face del modelo: [gcoli/Ministral-3-3B-Base-2512-F16-GGUF](https://huggingface.co/gcoli/Ministral-3-3B-Base-2512-F16-GGUF)
 - Modelo base: [mistralai/Ministral-3-3B-Base-2512](https://huggingface.co/mistralai/Ministral-3-3B-Base-2512)

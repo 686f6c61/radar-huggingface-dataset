@@ -76,7 +76,7 @@ La familia WeMM-Embedding se posiciona como una alternativa open source a sistem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huangyusi/WeMM-Embedding-2B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/huangyusi/WeMM-Embedding-2B-GGUF
 - Repositorio oficial de WeMM-Embedding: https://github.com/Tencent/WeMM-Embedding
 - Repositorio de WeMM (modelo de lenguaje multimodal): https://github.com/scenarios/WeMM
 - Informe técnico (arXiv): https://arxiv.org/pdf/2608.24053

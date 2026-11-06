@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeproLLM es un adaptador LoRA entrenado sobre Qwen/Qwen3-4B-Instruct-2507 cuyo objetivo no es responder a preguntas sobre salud mental, sino reproducir los marcadores estilometricos asociados a la depresion en textos de tipo ensayo. Lo desarrolla psytechlab y se distribuye en HuggingFace bajo licencia MIT, con etiqueta de idioma ruso (ru) y un tamano de repositorio de 0,1 GB, coherente con un adaptador de bajo rango y no con un modelo completo.
+DeproLLM es un adaptador LoRA entrenado sobre Qwen/Qwen3-4B-Instruct-2507 cuyo objetivo no es responder a preguntas sobre salud mental, sino reproducir los marcadores estilometricos asociados a la depresion en textos de tipo ensayo. Lo desarrolla psytechlab y se distribuye en Hugging Face bajo licencia MIT, con etiqueta de idioma ruso (ru) y un tamano de repositorio de 0,1 GB, coherente con un adaptador de bajo rango y no con un modelo completo.
 
 La motivacion declarada es metodologica: la investigacion en la interseccion entre aprendizaje automatico y psicologia clinica sufre una escasez estructural de datos etiquetados. El autor cita un corpus previo de clasificacion de depresion con solo 316 ensayos, de los cuales 93 pertenecian a la clase objetivo, insuficiente para entrenar y evaluar modelos flexibles. La propuesta es generar datos sinteticos con estilo depresivo que permitan aumentar datos escasos y restringidos por privacidad en investigacion downstream de deteccion.
 
@@ -78,8 +78,8 @@ Las cifras siguientes son estimaciones derivadas del tamano del modelo base (4.0
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeproLLM (este adaptador) | 4.000 millones (base) + LoRA | Heredado del base (262.144 tokens nativos) | Generacion de ensayos con estilo depresivo para investigacion; GRPO con juez clasificador | MIT | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | 4.000 millones | 262.144 tokens nativos | Modelo instructivo de proposito general | No indicada en la informacion proporcionada | HuggingFace |
+| DeproLLM (este adaptador) | 4.000 millones (base) + LoRA | Heredado del base (262.144 tokens nativos) | Generacion de ensayos con estilo depresivo para investigacion; GRPO con juez clasificador | MIT | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | 4.000 millones | 262.144 tokens nativos | Modelo instructivo de proposito general | No indicada en la informacion proporcionada | Hugging Face |
 | Modelo mayor comparado en la evaluacion (sin identificar) | No disponible | No disponible | Referencia de prompting en la evaluacion del autor | No disponible | No disponible |
 | Otros adaptadores de estilo o de dominio psicologico | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -102,7 +102,7 @@ La comparacion estricta con alternativas de la misma categoria no puede completa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/psytechlab/Qwen3-4B-Instruct-2507-lora-depressive_style
+- Modelo en Hugging Face: https://huggingface.co/psytechlab/Qwen3-4B-Instruct-2507-lora-depressive_style
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Entrada de blog con la descripcion detallada: https://psytechlab.co/2026/09/26/deprollm.html
 - Busqueda web realizada: los unicos resultados devueltos fueron enlaces a TikTok (https://www.tiktok.com/, https://www.tiktok.com/fr/, https://livecenter.tiktok.com/?lang=fr, https://www.youtube.com/tiktok, https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically), sin relacion alguna con el modelo. No se han encontrado papers, repositorios ni demos adicionales.

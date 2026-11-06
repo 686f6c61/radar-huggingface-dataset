@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mano-jkmk/retrieval-lab` en HuggingFace no contiene un modelo de inteligencia artificial entrenado, sino un documento de revisión académica (`review.md`) sobre el tema de *few-shot multimodal*. El autor, `mano-jkmk`, publica este archivo como artefacto principal, con un formato tipográfico Typst, estilo de citación en notas al pie y una estructura que sigue la secuencia introducción, antecedentes, enfoque, evaluación y conclusión. El enfoque es teórico y riguroso, y los metadatos indican una licencia MIT y una región de Estados Unidos.
+El repositorio `mano-jkmk/retrieval-lab` en Hugging Face no contiene un modelo de inteligencia artificial entrenado, sino un documento de revisión académica (`review.md`) sobre el tema de *few-shot multimodal*. El autor, `mano-jkmk`, publica este archivo como artefacto principal, con un formato tipográfico Typst, estilo de citación en notas al pie y una estructura que sigue la secuencia introducción, antecedentes, enfoque, evaluación y conclusión. El enfoque es teórico y riguroso, y los metadatos indican una licencia MIT y una región de Estados Unidos.
 
 La relevancia de este repositorio radica en que sirve como material de referencia para investigadores que trabajan en el área de aprendizaje multimodal con pocos ejemplos, aunque no ofrece un modelo listo para su uso ni pesos descargables. La búsqueda web muestra proyectos homónimos o relacionados, como el sistema `Lab-AI` para interpretación de análisis clínicos mediante RAG, pero no hay evidencia de que este repositorio esté vinculado a esos trabajos.
 
@@ -50,7 +50,7 @@ No aplica. No hay modelo que ejecutar, por lo que no se requieren recursos de GP
 
 ## Comparativa con modelos similares
 
-No disponible. Al no ser un modelo de IA, no tiene sentido compararlo con alternativas como LLaMA, Mistral o GPT. En todo caso, podría compararse con otros repositorios de revisión académica en HuggingFace, pero no se dispone de información sobre repositorios equivalentes.
+No disponible. Al no ser un modelo de IA, no tiene sentido compararlo con alternativas como LLaMA, Mistral o GPT. En todo caso, podría compararse con otros repositorios de revisión académica en Hugging Face, pero no se dispone de información sobre repositorios equivalentes.
 
 ## Limitaciones y advertencias
 
@@ -62,11 +62,11 @@ No disponible. Al no ser un modelo de IA, no tiene sentido compararlo con altern
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mano-jkmk/retrieval-lab
+- Repositorio en Hugging Face: https://huggingface.co/mano-jkmk/retrieval-lab
 - Proyecto Lab-AI (arXiv): https://arxiv.org/html/2409.18986v1
 - Artículo Lab-AI (resumen): https://arxiv.org/abs/2409.18986v1
 - Página de Lab-AI en scispace: https://scispace.com/papers/lab-ai-retrieval-augmented-language-model-for-personalized-69sp5snjj7jw
 - Repositorio GitHub relacionado (no confirmado): https://github.com/JiamanBettyWu/retrieval-lab
 - ResearchGate de Lab-AI: https://www.researchgate.net/publication/384502620_Lab-AI_--_Retrieval-Augmented_Language_Model_for_Personalized_Lab_Test_Interpretation_in_Clinical_Medicine
 
-**Nota**: los enlaces de arXiv, scispace y ResearchGate corresponden a un trabajo distinto (`Lab-AI`) y se incluyen únicamente por la coincidencia en el término «retrieval-lab», sin que se confirme ninguna relación con el repositorio de HuggingFace.
+**Nota**: los enlaces de arXiv, scispace y ResearchGate corresponden a un trabajo distinto (`Lab-AI`) y se incluyen únicamente por la coincidencia en el término «retrieval-lab», sin que se confirme ninguna relación con el repositorio de Hugging Face.

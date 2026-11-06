@@ -74,7 +74,7 @@ No se han publicado en la información disponible resultados adicionales (por cl
 
 | Modelo | Parametros | Contexto / entrada | mIoU S3DIS (área 5) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pointnet.s3dis-area5.xu-yan | 3,5 M | nube de puntos, 6 canales | 43,88 (declarado, no verificado) | MIT | HuggingFace, torch-pointcloud |
+| pointnet.s3dis-area5.xu-yan | 3,5 M | nube de puntos, 6 canales | 43,88 (declarado, no verificado) | MIT | Hugging Face, torch-pointcloud |
 | PointNet++ (referencia yanx27) | no disponible en la información | nube de puntos | no disponible en la información | MIT (repo de origen) | GitHub |
 | KPConv | no disponible en la información | nube de puntos | no disponible en la información | no disponible en la información | no disponible en la información |
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks de los modelos alternativos en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pointnet.s3dis-area5.xu-yan
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointnet.s3dis-area5.xu-yan
 - Paper PointNet: https://arxiv.org/abs/1612.00593
 - Repositorio de origen de los pesos: https://github.com/yanx27/Pointnet_Pointnet2_pytorch
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

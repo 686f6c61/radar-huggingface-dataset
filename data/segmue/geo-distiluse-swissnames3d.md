@@ -93,7 +93,7 @@ El unico comparable directo citado por el propio autor es dguzh/geo-all-MiniLM-L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/segmue/geo-distiluse-swissnames3d
+- Modelo en Hugging Face: https://huggingface.co/segmue/geo-distiluse-swissnames3d
 - Variante con contexto espacial config1: https://huggingface.co/segmue/geo-distiluse-swissnames3d-config1
 - Variante con contexto espacial config2: https://huggingface.co/segmue/geo-distiluse-swissnames3d-config2
 - Modelo base: https://huggingface.co/sentence-transformers/distiluse-base-multilingual-cased-v1

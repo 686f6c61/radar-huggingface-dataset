@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-Edit-2511 es un modelo de edición de imágenes (pipeline image-to-image) desarrollado por el equipo Qwen de Alibaba, distribuido en el repositorio de HuggingFace `lerobis/qwen-image-edit-2511`. Se trata de una versión mejorada de Qwen-Image-Edit-2509 que introduce mejoras en consistencia de identidad, mitigación del desplazamiento de imagen (image drift), integración de capacidades LoRA en el modelo base, generación orientada a diseño industrial y razonamiento geométrico reforzado. El modelo se publica bajo licencia Apache 2.0 y está pensado para edición de imágenes guiada por prompt en inglés y chino.
+Qwen-Image-Edit-2511 es un modelo de edición de imágenes (pipeline image-to-image) desarrollado por el equipo Qwen de Alibaba, distribuido en el repositorio de Hugging Face `lerobis/qwen-image-edit-2511`. Se trata de una versión mejorada de Qwen-Image-Edit-2509 que introduce mejoras en consistencia de identidad, mitigación del desplazamiento de imagen (image drift), integración de capacidades LoRA en el modelo base, generación orientada a diseño industrial y razonamiento geométrico reforzado. El modelo se publica bajo licencia Apache 2.0 y está pensado para edición de imágenes guiada por prompt en inglés y chino.
 
 El modelo se distribuye en formato safetensors con un tamaño de repositorio de 16,8 GB y se integra en la librería `diffusers` mediante la clase `QwenImageEditPlusPipeline`, lo que facilita su uso en pipelines de Python con PyTorch. Soporta entradas multimodales de varias imágenes simultáneas (por ejemplo, fusionar dos retratos en una escena grupal coherente) y parámetros de inferencia como `true_cfg_scale`, `negative_prompt`, `num_inference_steps` y `guidance_scale`.
 
@@ -59,15 +59,15 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible de forma explícita. El tamaño del repositorio es de 16,8 GB en safetensors, y el ejemplo oficial carga el pipeline en `torch.bfloat16` sobre `cuda`, lo que sugiere que se requiere una GPU con memoria suficiente para alojar los pesos en precisión bf16 (orientativamente, por encima de los 16 GB, aunque no se confirma).
 - GPU recomendadas: no especificadas en la información proporcionada.
 - Compatibilidad con GPU de consumo: no confirmada; dependerá del tamaño real de los pesos en bf16 y de si se aplican técnicas de cuantización u offloading, no documentadas.
-- Opciones de despliegue: `diffusers` (versión de desarrollo, instalada desde el repositorio de GitHub de HuggingFace) con PyTorch y CUDA. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a un pipeline de difusión).
+- Opciones de despliegue: `diffusers` (versión de desarrollo, instalada desde el repositorio de GitHub de Hugging Face) con PyTorch y CUDA. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a un pipeline de difusión).
 - Latencia y throughput: no disponibles. El ejemplo oficial usa 40 pasos de inferencia (`num_inference_steps: 40`) y `num_images_per_prompt: 1`.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-Edit-2511 | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace, ModelScope, Qwen Chat |
-| Qwen-Image-Edit-2509 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Qwen-Image-Edit-2511 | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face, ModelScope, Qwen Chat |
+| Qwen-Image-Edit-2509 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otros modelos de edición de imagen | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada únicamente permite comparar con la versión anterior, Qwen-Image-Edit-2509, de la que se indica que la 2511 es una versión mejorada con mayor consistencia, mitigación del image drift, LoRAs integradas, mejor diseño industrial y mayor razonamiento geométrico. No se dispone de datos cuantitativos de rendimiento ni de especificaciones de parámetros para una comparación numérica con alternativas.
@@ -85,12 +85,12 @@ La información proporcionada únicamente permite comparar con la versión anter
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lerobis/qwen-image-edit-2511
+- Repositorio en Hugging Face: https://huggingface.co/lerobis/qwen-image-edit-2511
 - Repositorio oficial del modelo: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-Edit-2511
 - Informe técnico (PDF): https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-Image/Qwen_Image.pdf
 - Blog: https://qwenlm.github.io/blog/qwen-image-edit-2511/
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-Edit-2511
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-Edit-2511
 - Repositorio GitHub: https://github.com/QwenLM/Qwen-Image
 - Qwen Chat: https://chat.qwen.ai/
 - Discord: https://discord.gg/CV4E9rpNSD

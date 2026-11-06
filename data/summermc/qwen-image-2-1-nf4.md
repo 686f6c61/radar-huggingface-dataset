@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`summerMC/qwen-image-2.1-nf4` es un paquete completo de generacion de imagenes publicado en HuggingFace que combina el transformer de difusion (DiT) de Qwen-Image-2.1 cuantizado en NF4 con un codificador de texto ligero: un Qwen3.5-0.8B tambien en NF4. Para poder sustituir el codificador original de Qwen-Image-2.1 (basado en Qwen3-VL), el autor entrena un adaptador MLP que proyecta las caracteristicas de 1024 dimensiones del estudiante al espacio de condicionamiento de texto de 4096 dimensiones que espera el DiT. El objetivo es reducir de forma agresiva los requisitos de VRAM de un pipeline de difusion de gran tamano sin perder demasiada fidelidad en el alineamiento texto-imagen.
+`summerMC/qwen-image-2.1-nf4` es un paquete completo de generacion de imagenes publicado en Hugging Face que combina el transformer de difusion (DiT) de Qwen-Image-2.1 cuantizado en NF4 con un codificador de texto ligero: un Qwen3.5-0.8B tambien en NF4. Para poder sustituir el codificador original de Qwen-Image-2.1 (basado en Qwen3-VL), el autor entrena un adaptador MLP que proyecta las caracteristicas de 1024 dimensiones del estudiante al espacio de condicionamiento de texto de 4096 dimensiones que espera el DiT. El objetivo es reducir de forma agresiva los requisitos de VRAM de un pipeline de difusion de gran tamano sin perder demasiada fidelidad en el alineamiento texto-imagen.
 
 El modelo base es `Qwen/Qwen-Image-2.1`, en la revision `790c92633540aa0cb11d9abf19eb46d861714758`, y el estudiante usado como codificador de texto es `Qwen/Qwen3.5-0.8B`. El repositorio, de 5,9 GB, contiene el DiT, el text encoder, el adaptador entrenado, el tokenizador, el procesador compatible con Qwen3-VL, el VAE y el scheduler, ademas de scripts de inferencia y de entrenamiento del adaptador. El recuento real de parametros en los ficheros safetensors es de 3.669.279.232, es decir, unos 3,67 mil millones.
 
@@ -79,9 +79,9 @@ El tiempo de denoising de 78,9 s para 30 pasos equivale a unos 2,63 s por paso e
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| summerMC/qwen-image-2.1-nf4 | 3.669.279.232 (~3,67B) | 768×768 validado; resolucion maxima no disponible | 78,9 s de denoising y 8,57 GiB de pico en T4 a 768×768, 30 pasos; coseno de validacion 0,9392 | other (Qwen Research License del material base) | HuggingFace, 0 descargas y 0 likes |
-| Qwen/Qwen-Image-2.1 (modelo base) | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible | HuggingFace |
-| Qwen/Qwen3.5-0.8B (usado como text encoder estudiante) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| summerMC/qwen-image-2.1-nf4 | 3.669.279.232 (~3,67B) | 768×768 validado; resolucion maxima no disponible | 78,9 s de denoising y 8,57 GiB de pico en T4 a 768×768, 30 pasos; coseno de validacion 0,9392 | other (Qwen Research License del material base) | Hugging Face, 0 descargas y 0 likes |
+| Qwen/Qwen-Image-2.1 (modelo base) | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible | Hugging Face |
+| Qwen/Qwen3.5-0.8B (usado como text encoder estudiante) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otras alternativas de generacion texto-a-imagen | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de datos comparativos frente a otros modelos de generacion de imagen (por ejemplo, familias tipo FLUX o Stable Diffusion), por lo que no se incluyen cifras que no puedan contrastarse.
@@ -98,11 +98,11 @@ No se dispone en la informacion proporcionada de datos comparativos frente a otr
 - No se publica la longitud maxima de prompt ni la resolucion maxima soportada, mas alla del caso validado de 768×768.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no cuenta con validacion de la comunidad.
 - No hay soporte documentado para formatos de despliegue ligeros tipo GGUF ni para servidores de inferencia como TGI o vLLM; el uso previsto es diffusers en Python.
-- Las fechas del repositorio (creado y actualizado en septiembre de 2026) deben verificarse en la pagina de HuggingFace antes de citarlo.
+- Las fechas del repositorio (creado y actualizado en septiembre de 2026) deben verificarse en la pagina de Hugging Face antes de citarlo.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/summerMC/qwen-image-2.1-nf4
+- Pagina del modelo en Hugging Face: https://huggingface.co/summerMC/qwen-image-2.1-nf4
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Revision concreta del modelo base: 790c92633540aa0cb11d9abf19eb46d861714758
 - Modelo estudiante usado como text encoder: https://huggingface.co/Qwen/Qwen3.5-0.8B

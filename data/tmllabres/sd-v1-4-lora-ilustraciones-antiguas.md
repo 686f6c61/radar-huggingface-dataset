@@ -81,7 +81,7 @@ No se han identificado en la informacion proporcionada otros adaptadores LoRA pu
 
 | Modelo | Tipo | Parametros | Prompt maximo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (`sd-v1-4-lora-ilustraciones-antiguas`) | LoRA sobre SD v1.4 | No disponible (r=8, alpha=8) | 77 tokens (hereda de CLIP) | CreativeML OpenRAIL-M | HuggingFace, 0 descargas, 0 likes |
+| Este adaptador (`sd-v1-4-lora-ilustraciones-antiguas`) | LoRA sobre SD v1.4 | No disponible (r=8, alpha=8) | 77 tokens (hereda de CLIP) | CreativeML OpenRAIL-M | Hugging Face, 0 descargas, 0 likes |
 | `CompVis/stable-diffusion-v1-4` | Difusion latente completa | ~1.000 M en UNet + codificador de texto (dato externo) | 77 tokens | CreativeML OpenRAIL-M | Ampliamente disponible |
 | SDXL 1.0 | Difusion latente con doble codificador de texto | ~2.600 M en UNet + codificadores (dato externo) | 77 tokens por codificador | CreativeML OpenRAIL++-M | Ampliamente disponible |
 | Stable Diffusion 2.1 | Difusion latente completa | ~865 M en UNet (dato externo) | 77 tokens | CreativeML OpenRAIL++-M | Ampliamente disponible |
@@ -103,7 +103,7 @@ Diferencias clave frente a SDXL o SD 2.1: este adaptador trabaja a 512x512 y dep
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tmllabres/sd-v1-4-lora-ilustraciones-antiguas
+- Modelo en Hugging Face: https://huggingface.co/tmllabres/sd-v1-4-lora-ilustraciones-antiguas
 - Dataset de entrenamiento: https://huggingface.co/datasets/gigant/oldbookillustrations
 - Modelo base: https://huggingface.co/CompVis/stable-diffusion-v1-4
 - Imagen de comparacion antes/despues citada en la model card: `antes_despues.png` (dentro del repositorio del modelo)

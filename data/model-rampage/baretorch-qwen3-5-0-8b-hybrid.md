@@ -96,9 +96,9 @@ No se han publicado resultados independientes ni mediciones de latencia absoluta
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BareTorch-Qwen3.5-0.8B-Hybrid | 916,3 M totales / 662,0 M activos | 32.768 | 58,45% macro (10 tareas) y 20,01% macro (5 tareas) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-0.8B | 752,4 M activos (total no disponible) | no disponible | 54,83% macro (10 tareas) y 11,47% macro (5 tareas) | no disponible en la informacion | HuggingFace, modelo base |
-| Qwen/Qwen3.5-4B | no disponible | no disponible | no disponible | no disponible en la informacion | HuggingFace, usado como profesor |
+| BareTorch-Qwen3.5-0.8B-Hybrid | 916,3 M totales / 662,0 M activos | 32.768 | 58,45% macro (10 tareas) y 20,01% macro (5 tareas) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-0.8B | 752,4 M activos (total no disponible) | no disponible | 54,83% macro (10 tareas) y 11,47% macro (5 tareas) | no disponible en la informacion | Hugging Face, modelo base |
+| Qwen/Qwen3.5-4B | no disponible | no disponible | no disponible | no disponible en la informacion | Hugging Face, usado como profesor |
 | Mamba-2 / RWKV / Gated DeltaNet | no disponible | no disponible | no disponible | no disponible | mencionados solo cualitativamente en la model card |
 
 No se dispone de datos verificables de otras arquitecturas subcuadráticas comparables en la información proporcionada; la comparación cuantitativa solo es posible frente a los modelos Qwen empleados como base y profesor.
@@ -118,11 +118,11 @@ No se dispone de datos verificables de otras arquitecturas subcuadráticas compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-rampage/BareTorch-Qwen3.5-0.8B-Hybrid
+- Modelo en Hugging Face: https://huggingface.co/model-rampage/BareTorch-Qwen3.5-0.8B-Hybrid
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Motor BareTorch (GitHub): https://github.com/martin-kbcc/baretorch
 - Pipeline de destilación por capas (GitHub): https://github.com/martin-kbcc/BareTorch_Layerwise_Distill
-- Demo en ZeroGPU (HuggingFace Spaces): https://huggingface.co/spaces/martin-kb-rampage/BareTorch-Qwen3.5-Playground
+- Demo en ZeroGPU (Hugging Face Spaces): https://huggingface.co/spaces/martin-kb-rampage/BareTorch-Qwen3.5-Playground
 - Paper (PDF): https://github.com/martin-kbcc/baretorch-experiments/blob/main/paper.pdf
 - Licencia Apache 2.0: https://apache.org/licenses/LICENSE-2.0
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo; las búsquedas devolvieron únicamente definiciones de diccionario y sitios de maquetas y moda.

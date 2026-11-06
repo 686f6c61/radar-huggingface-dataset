@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Newq es un ajuste fino (finetune) del modelo Qwen3.5-4B publicado por el usuario crussella0129 en HuggingFace. El modelo se presenta como un experimento en el ámbito de la interpretabilidad mecanicista y el steering de activaciones (activation steering), con etiquetas que hacen referencia explícita a técnicas como neuron-steering, persona-steering y refusal-bypass. Esto sugiere que el modelo ha sido modificado para alterar los patrones de activación internos del modelo base, con el fin de cambiar su comportamiento, personalidad o políticas de rechazo.
+Newq es un ajuste fino (finetune) del modelo Qwen3.5-4B publicado por el usuario crussella0129 en Hugging Face. El modelo se presenta como un experimento en el ámbito de la interpretabilidad mecanicista y el steering de activaciones (activation steering), con etiquetas que hacen referencia explícita a técnicas como neuron-steering, persona-steering y refusal-bypass. Esto sugiere que el modelo ha sido modificado para alterar los patrones de activación internos del modelo base, con el fin de cambiar su comportamiento, personalidad o políticas de rechazo.
 
 El modelo conserva la arquitectura de Qwen3.5-4B, un transformer multimodal (image-text-to-text) de aproximadamente 4.660 millones de parámetros, y hereda las capacidades de generación de texto conversacional y comprensión de imágenes del modelo base. Su relevancia es principalmente de investigación: permite estudiar cómo las técnicas de steering afectan al comportamiento de un modelo abierto, aunque su carácter experimental y el hecho de que el repositorio esté restringido (gated) limitan su adopción general.
 
-Con apenas 84 descargas y 1 "like" en el momento de redactar esta ficha, se trata de un recurso de nicho, sin documentación pública detallada ni resultados de benchmarks publicados. Su licencia Apache 2.0, heredada del modelo base, permite uso comercial, pero el acceso requiere aceptar condiciones previas en HuggingFace.
+Con apenas 84 descargas y 1 "like" en el momento de redactar esta ficha, se trata de un recurso de nicho, sin documentación pública detallada ni resultados de benchmarks publicados. Su licencia Apache 2.0, heredada del modelo base, permite uso comercial, pero el acceso requiere aceptar condiciones previas en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ Nota: la comparativa se limita a la familia de origen, ya que Newq es un derivad
 - Comportamiento no verificado: las etiquetas refusal-bypass y hostile-persona indican que el modelo ha sido modificado para eludir mecanismos de seguridad. Su uso puede producir salidas ofensivas, dañinas o no deseadas, y no es apto para producción.
 - Riesgo elevado de alucinacion: al tratarse de un finetune experimental sin evaluaciones publicadas, no hay garantías de fidelidad factual ni de coherencia.
 - Codigo personalizado: la etiqueta `custom_code` exige ejecutar código del repositorio con `trust_remote_code=True`, lo que supone un riesgo de seguridad adicional; se recomienda auditar el código antes de ejecutarlo.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Documentacion escasa: no hay model card detallada, ni datos de contexto, entrenamiento o benchmarks, lo que dificulta evaluar el modelo rigurosamente.
 - Idiomas limitados a inglés y chino; el rendimiento en castellano no está garantizado ni documentado.
 - Licencia: Apache 2.0 permite uso comercial, pero el comportamiento modificado del modelo y las condiciones de acceso del repo pueden imponer restricciones practicas adicionales.
@@ -79,8 +79,8 @@ Nota: la comparativa se limita a la familia de origen, ya que Newq es un derivad
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/crussella0129/Newq
+- Ficha en Hugging Face: https://huggingface.co/crussella0129/Newq
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen
 
 No se han encontrado enlaces adicionales (papers, blogs, demos o repositorios externos) en la informacion disponible.

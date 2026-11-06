@@ -113,7 +113,7 @@ No disponible. La informacion proporcionada no incluye resultados de otros contr
 
 ## Enlaces
 
-- Pagina de HuggingFace: https://huggingface.co/burnboom/mujoco-triple-swingup
+- Pagina de Hugging Face: https://huggingface.co/burnboom/mujoco-triple-swingup
 - Fichero principal del repositorio: `triple_swingup_standalone.py`
 - Artefacto de trayectoria nominal: `swingup3_collocated.npz`
 - Artefacto de ganancias: `swingup3_gains.npz`

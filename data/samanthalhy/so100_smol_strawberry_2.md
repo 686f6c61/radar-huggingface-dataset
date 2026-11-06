@@ -71,7 +71,7 @@ No se han encontrado modelos comparables en la información proporcionada. El mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/samanthalhy/so100_smol_strawberry_2
+- Hugging Face: https://huggingface.co/samanthalhy/so100_smol_strawberry_2
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Dataset de entrenamiento: https://huggingface.co/datasets/samanthalhy/so100_strawberry_2
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

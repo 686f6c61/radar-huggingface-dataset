@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfm_filtered_insert_xxf_character-4k_5k_6k_simpleavg_merge` es un modelo de lenguaje publicado por el usuario `yuhengtu-bytedance` en HuggingFace, generado mediante la herramienta mergekit a partir de tres checkpoints de un mismo entrenamiento (`global_step4000`, `global_step5000` y `global_step6000`). No es, por tanto, un modelo entrenado desde cero, sino el resultado de promediar linealmente los pesos de tres estados intermedios del mismo run, con `global_step6000` como base y `normalize: true`.
+`sfm_filtered_insert_xxf_character-4k_5k_6k_simpleavg_merge` es un modelo de lenguaje publicado por el usuario `yuhengtu-bytedance` en Hugging Face, generado mediante la herramienta mergekit a partir de tres checkpoints de un mismo entrenamiento (`global_step4000`, `global_step5000` y `global_step6000`). No es, por tanto, un modelo entrenado desde cero, sino el resultado de promediar linealmente los pesos de tres estados intermedios del mismo run, con `global_step6000` como base y `normalize: true`.
 
 La arquitectura declarada en las etiquetas del repositorio es `gpt_neox`, es decir, un transformer decoder-only autorregresivo, con 6.856.253.440 parámetros (~6,86 B) y pesos almacenados en `safetensors` en bfloat16 (el merge se calculó en float32 y se exportó en bf16). El repositorio ocupa 13,7 GB. No se declara licencia, idiomas soportados, longitud de contexto ni resultados de evaluación.
 
@@ -35,7 +35,7 @@ El modelo se construyo con mergekit aplicando una media lineal ponderada de tres
 
 - Generacion de texto autorregresiva: es la unica capacidad verificable a partir de la etiqueta `text-generation` y del pipeline declarado.
 - Uso conversacional: el repositorio incluye la etiqueta `conversational`, lo que sugiere que los checkpoints de origen fueron entrenados o ajustados con datos de dialogo, aunque no se detalla el formato de prompt ni el chat template.
-- Compatibilidad con `text-generation-inference` y `endpoints_compatible`: el modelo puede servirse con TGI y con la infraestructura de endpoints de HuggingFace.
+- Compatibilidad con `text-generation-inference` y `endpoints_compatible`: el modelo puede servirse con TGI y con la infraestructura de endpoints de Hugging Face.
 - Soporte de tool calling / function calling: no disponible (no se documenta).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no se documenta ni se evalua).
 - Capacidades multilingues: no disponible (no se declara lista de idiomas).
@@ -72,10 +72,10 @@ No se dispone de resultados de evaluacion del modelo, por lo que la comparacion 
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sfm_filtered_insert_xxf_character-4k_5k_6k_simpleavg_merge | 6,86 B | `gpt_neox` (merge lineal) | no disponible | no disponible | HuggingFace, safetensors bf16 |
-| Pythia-6.9B (EleutherAI) | 6,9 B | `gpt_neox` | 2048 tokens (referencia general) | Apache 2.0 (referencia general) | HuggingFace, safetensors |
-| GPT-NeoX-20B (EleutherAI) | 20 B | `gpt_neox` | 2048 tokens (referencia general) | Apache 2.0 (referencia general) | HuggingFace, safetensors |
-| Otros merges de checkpoints con mergekit | variable | segun modelos de origen | segun modelos de origen | depende de los modelos de origen | HuggingFace |
+| sfm_filtered_insert_xxf_character-4k_5k_6k_simpleavg_merge | 6,86 B | `gpt_neox` (merge lineal) | no disponible | no disponible | Hugging Face, safetensors bf16 |
+| Pythia-6.9B (EleutherAI) | 6,9 B | `gpt_neox` | 2048 tokens (referencia general) | Apache 2.0 (referencia general) | Hugging Face, safetensors |
+| GPT-NeoX-20B (EleutherAI) | 20 B | `gpt_neox` | 2048 tokens (referencia general) | Apache 2.0 (referencia general) | Hugging Face, safetensors |
+| Otros merges de checkpoints con mergekit | variable | segun modelos de origen | segun modelos de origen | depende de los modelos de origen | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (MMLU, HumanEval u otros) para ninguno de los modelos de esta tabla en la informacion proporcionada, por lo que no es posible establecer una comparacion de calidad.
 
@@ -94,10 +94,10 @@ No se dispone de datos de rendimiento comparativo (MMLU, HumanEval u otros) para
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-4k_5k_6k_simpleavg_merge
+- Repositorio en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-4k_5k_6k_simpleavg_merge
 - mergekit (herramienta de merge utilizada): https://github.com/cg123/mergekit
 - Paper del metodo `linear` (model soups / media de pesos): https://arxiv.org/abs/2203.05482
-- Perfil del autor en HuggingFace: https://huggingface.co/yuhengtu-bytedance
+- Perfil del autor en Hugging Face: https://huggingface.co/yuhengtu-bytedance
 - Documentacion de `transformers` para `gpt_neox`: https://huggingface.co/docs/transformers/model_doc/gpt_neox
 - Documentacion de text-generation-inference: https://github.com/huggingface/text-generation-inference
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo; los resultados devueltos corresponden a paginas corporativas de Microsoft y no guardan relacion con el modelo.

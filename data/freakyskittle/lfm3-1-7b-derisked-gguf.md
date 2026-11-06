@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparado con otras familias de modelos de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/freakyskittle/LFM3-1.7B-DERISKED-GGUF
+- Repositorio Hugging Face: https://huggingface.co/freakyskittle/LFM3-1.7B-DERISKED-GGUF
 - Modelo base del finetune: https://huggingface.co/Blackfrost-AI/LFM3-1.7B-DERISKED
 - Modelo original de Liquid AI: https://huggingface.co/LiquidAI/LFM3-1.7B
 - llama.cpp (build con soporte `lfm3`, commit `cf24317be`): https://github.com/ggml-org/llama.cpp

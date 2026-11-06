@@ -12,7 +12,7 @@ Su relevancia es doble: por un lado, demuestra un ajuste fino de pesos completos
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only basado en Llama (modelo base skt/A.X-3.1-Light; tag de HuggingFace "llama") |
+| Arquitectura | Transformer decoder-only basado en Llama (modelo base skt/A.X-3.1-Light; tag de Hugging Face "llama") |
 | Parametros totales | 7.264.800.768 |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible como ventana declarada; el entrenamiento se hizo con longitud maxima de 2048 tokens |
@@ -101,9 +101,9 @@ Latencia de generacion registrada: 0,2739 s por generacion en modo lote sobre A1
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| iapyx-v3-ax-3.1-light | 7,26 B | 2048 tokens en entrenamiento (ventana no declarada) | other (base Apache-2.0) | HuggingFace, 0 descargas | Finetune especializado coreano, metricas de tarea propias |
-| skt/A.X-3.1-Light (base) | 7,26 B | no disponible | Apache-2.0 | HuggingFace | Modelo base generalista coreano; el ajuste parte de el |
-| Otros modelos coreanos de ~7-8 B (LG EXAONE, Naver HyperCLOVA X, etc.) | ~7-8 B | no disponible | varian (varias restrictivas) | HuggingFace o APIs propietarias | Comparativa no disponible: no se aportan benchmarks comunes en la informacion recibida |
+| iapyx-v3-ax-3.1-light | 7,26 B | 2048 tokens en entrenamiento (ventana no declarada) | other (base Apache-2.0) | Hugging Face, 0 descargas | Finetune especializado coreano, metricas de tarea propias |
+| skt/A.X-3.1-Light (base) | 7,26 B | no disponible | Apache-2.0 | Hugging Face | Modelo base generalista coreano; el ajuste parte de el |
+| Otros modelos coreanos de ~7-8 B (LG EXAONE, Naver HyperCLOVA X, etc.) | ~7-8 B | no disponible | varian (varias restrictivas) | Hugging Face o APIs propietarias | Comparativa no disponible: no se aportan benchmarks comunes en la informacion recibida |
 
 No se dispone de datos de benchmarks estandar que permitan una comparacion directa de rendimiento con alternativas; la comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -121,7 +121,7 @@ No se dispone de datos de benchmarks estandar que permitan una comparacion direc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/space1637/iapyx-v3-ax-3.1-light
+- Modelo en Hugging Face: https://huggingface.co/space1637/iapyx-v3-ax-3.1-light
 - Modelo base: https://huggingface.co/skt/A.X-3.1-Light
 - Repositorio de codigo y reproduccion: https://github.com/AIROOKIE-S/iapyx (carpeta `finetune-v3/`)
 - Informe de evaluacion (dataset): https://huggingface.co/datasets/space1637/iapyx-finetune-report (subcarpeta `v3/`)

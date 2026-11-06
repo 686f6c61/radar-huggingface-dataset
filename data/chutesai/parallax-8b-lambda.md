@@ -96,7 +96,7 @@ La comparación directa es limitada: Parallax 8B lambda es un checkpoint interme
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chutesai/parallax-8b-lambda
+- Modelo en Hugging Face: https://huggingface.co/chutesai/parallax-8b-lambda
 - Export más reciente (103B-tokens_step11842): https://huggingface.co/chutesai/parallax-8b-lambda/tree/main/exports/103B-tokens_step11842
 - Export 99B-tokens_step11533: https://huggingface.co/chutesai/parallax-8b-lambda/tree/main/exports/99B-tokens_step11533
 - Export 95B-tokens_step11160: https://huggingface.co/chutesai/parallax-8b-lambda/tree/main/exports/95B-tokens_step11160

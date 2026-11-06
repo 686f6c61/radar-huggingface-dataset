@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/ppt-wc-uniform-newlex-eus-after-100mb-packed-bfd_seed3407` es un modelo de generacion de texto de arquitectura GPT-2 con 86.508.288 parametros, publicado por el usuario francesca9805 en HuggingFace. Se trata de un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/eng_latn_100mb`, un modelo monolingue en ingles entrenado sobre 100 MB de texto dentro del proyecto Goldfish, que cubre cientos de idiomas con presupuestos de datos muy reducidos.
+`francesca9805/ppt-wc-uniform-newlex-eus-after-100mb-packed-bfd_seed3407` es un modelo de generacion de texto de arquitectura GPT-2 con 86.508.288 parametros, publicado por el usuario francesca9805 en Hugging Face. Se trata de un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/eng_latn_100mb`, un modelo monolingue en ingles entrenado sobre 100 MB de texto dentro del proyecto Goldfish, que cubre cientos de idiomas con presupuestos de datos muy reducidos.
 
 El modelo ha sido entrenado con SFT mediante la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.5.1+cu121. El identificador del repositorio sugiere un experimento centrado en la adaptacion de lexico o tokenizador ("newlex") sobre el idioma euskera ("eus"), aunque la model card no documenta ni el dataset, ni el numero de tokens de entrenamiento, ni el idioma final soportado.
 
@@ -47,7 +47,7 @@ El entrenamiento documentado es un ajuste fino supervisado (SFT) realizado con T
 - Reproducibilidad de experimentos academicos: al estar entrenado con semilla fija (`seed3407`) y framework versionado (TRL 0.23.0), permite reproducir el ajuste y comparar variantes controlando el ruido estadistico.
 - Generacion de texto sintetico de bajo coste: al requerir menos de 1 GB de VRAM, puede generar grandes volumenes de texto en paralelo para aumentar datos de entrenamiento de clasificadores o para pruebas de carga, asumiendo calidad limitada.
 - Prototipado local sin GPU dedicada: el modelo cabe en CPU y en cualquier GPU consumer, por lo que es util para validar pipelines de inferencia antes de migrar a modelos mayores.
-- Pruebas de infraestructura de despliegue: sirve para verificar configuraciones de TGI, vLLM o endpoints compatibles con la API de HuggingFace sin consumir recursos de GPU relevantes.
+- Pruebas de infraestructura de despliegue: sirve para verificar configuraciones de TGI, vLLM o endpoints compatibles con la API de Hugging Face sin consumir recursos de GPU relevantes.
 - Etiquetado y clasificacion mediante fine-tuning adicional: al ser un modelo pequeno, es economicamente viable reajustarlo por tarea (analisis de sentimiento, clasificacion de topicos) en una unica GPU consumer.
 - Experimentos de destilacion: puede actuar como alumno en ejercicios de destilacion de conocimiento desde modelos mayores, o como banco de pruebas de tecnicas de compresion.
 - Docencia y formacion: ejemplo completo y ligero de un flujo SFT con TRL, reproducible en un portatil, para cursos de ajuste fino de modelos de lenguaje.
@@ -89,7 +89,7 @@ Nota: los datos de los modelos comparativos proceden de sus fichas publicas y se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-eus-after-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-eus-after-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Organizacion Goldfish Models: https://huggingface.co/goldfish-models
 - Repositorio de TRL: https://github.com/huggingface/trl

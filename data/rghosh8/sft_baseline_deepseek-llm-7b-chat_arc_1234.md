@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rghosh8/SFT_baseline_deepseek-llm-7b-chat_arc_1234` es un ajuste fino supervisado (SFT) del modelo `deepseek-ai/deepseek-llm-7b-chat`, publicado por el usuario rghosh8 en HuggingFace. Se trata de un checkpoint experimental de investigación, no de un modelo de producción: el nombre indica que es una "baseline" de SFT entrenada sobre el dataset ARC con semilla 1234, presumiblemente como parte de un estudio comparativo de técnicas de ajuste. No hay información pública sobre el dataset exacto, la composición de los datos ni los objetivos del experimento.
+`rghosh8/SFT_baseline_deepseek-llm-7b-chat_arc_1234` es un ajuste fino supervisado (SFT) del modelo `deepseek-ai/deepseek-llm-7b-chat`, publicado por el usuario rghosh8 en Hugging Face. Se trata de un checkpoint experimental de investigación, no de un modelo de producción: el nombre indica que es una "baseline" de SFT entrenada sobre el dataset ARC con semilla 1234, presumiblemente como parte de un estudio comparativo de técnicas de ajuste. No hay información pública sobre el dataset exacto, la composición de los datos ni los objetivos del experimento.
 
 El modelo base, DeepSeek LLM 7B Chat, es un transformer decoder-only de aproximadamente 6.910 millones de parámetros (6,91 B) desarrollado por DeepSeek, con una ventana de contexto de 4.096 tokens en su versión original. Este fine-tuning conserva esa arquitectura y ese tamaño, por lo que los requisitos de hardware son los habituales para un modelo de 7 B en precisión completa o cuantizada.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rghosh8/SFT_baseline_deepseek-llm-7b-chat_arc_1234 | 6,91 B | no disponible | no disponible | HuggingFace, 0 descargas | Checkpoint experimental de SFT |
-| deepseek-ai/deepseek-llm-7b-chat | 6,91 B | 4.096 tokens | DeepSeek Model License (uso comercial con restricciones) | HuggingFace, ampliamente usado | Modelo base, con benchmarks publicados |
-| Mistral-7B-Instruct-v0.2 | 7,24 B | 32.768 tokens | Apache 2.0 | HuggingFace | Alternativa de 7 B con contexto mucho mayor |
-| Llama-3-8B-Instruct | 8,03 B | 8.192 tokens | Llama 3 Community License | HuggingFace | Alternativa de tamaño similar con ecosistema maduro |
+| rghosh8/SFT_baseline_deepseek-llm-7b-chat_arc_1234 | 6,91 B | no disponible | no disponible | Hugging Face, 0 descargas | Checkpoint experimental de SFT |
+| deepseek-ai/deepseek-llm-7b-chat | 6,91 B | 4.096 tokens | DeepSeek Model License (uso comercial con restricciones) | Hugging Face, ampliamente usado | Modelo base, con benchmarks publicados |
+| Mistral-7B-Instruct-v0.2 | 7,24 B | 32.768 tokens | Apache 2.0 | Hugging Face | Alternativa de 7 B con contexto mucho mayor |
+| Llama-3-8B-Instruct | 8,03 B | 8.192 tokens | Llama 3 Community License | Hugging Face | Alternativa de tamaño similar con ecosistema maduro |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rghosh8/SFT_baseline_deepseek-llm-7b-chat_arc_1234
+- Hugging Face: https://huggingface.co/rghosh8/SFT_baseline_deepseek-llm-7b-chat_arc_1234
 - Modelo base: https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat
 - Repositorio TRL: https://github.com/huggingface/trl
 - Paper de TRL (citado en la model card): von Werra et al., "TRL: Transformers Reinforcement Learning", 2020.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Timothyyimd/cs224n-contrastive` es un repositorio de HuggingFace que contiene una implementacion propia y minima de un Vision Transformer (ViT) orientada a aprendizaje contrastivo, publicada por el usuario Timothyyimd. No se trata de un modelo entrenado: el autor indica explicitamente en la model card que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que el repositorio no presenta ninguna puntuacion de benchmark. El propio autor lo describe como un punto de partida reproducible para experimentacion, no como una release de modelo entrenado.
+`Timothyyimd/cs224n-contrastive` es un repositorio de Hugging Face que contiene una implementacion propia y minima de un Vision Transformer (ViT) orientada a aprendizaje contrastivo, publicada por el usuario Timothyyimd. No se trata de un modelo entrenado: el autor indica explicitamente en la model card que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que el repositorio no presenta ninguna puntuacion de benchmark. El propio autor lo describe como un punto de partida reproducible para experimentacion, no como una release de modelo entrenado.
 
 El artefacto principal es el archivo `model.py`, acompanado de `config.json` (ajustes de arquitectura generados), `training_args.json` (receta de experimento por defecto, con AdamW y un schedule de warmup lineal) y el checkpoint de inicializacion en formato safetensors. La configuracion declarada describe un ViT de escala "large" con atencion dispersa (sparse), fusion tipo Tucker, activacion GELU y normalizacion RMSNorm. Llama la atencion la discrepancia entre esa etiqueta de escala y el recuento real de parametros del checkpoint, que asciende a 24.832 parametros, un orden de magnitud muy inferior al de un ViT large convencional.
 
@@ -67,7 +67,7 @@ La comparacion directa no es posible en terminos de rendimiento porque este repo
 
 | Modelo | Tipo | Parametros | Contexto | Entrenado y publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Timothyyimd/cs224n-contrastive | ViT con atencion dispersa y fusion Tucker | 24.832 (checkpoint de inicializacion) | no disponible | No (solo inicializacion, sin benchmarks) | BSD-3-Clause | HuggingFace, implementacion propia |
+| Timothyyimd/cs224n-contrastive | ViT con atencion dispersa y fusion Tucker | 24.832 (checkpoint de inicializacion) | no disponible | No (solo inicializacion, sin benchmarks) | BSD-3-Clause | Hugging Face, implementacion propia |
 | CLIP (OpenAI) | ViT o ResNet con aprendizaje contrastivo imagen-texto | no disponible en la informacion proporcionada | no disponible | Si, con evaluaciones publicadas por sus autores | no disponible en la informacion proporcionada | Pesos publicos |
 | SigLIP (Google) | ViT con perdida sigmoidea para contraste imagen-texto | no disponible en la informacion proporcionada | no disponible | Si, con evaluaciones publicadas por sus autores | no disponible en la informacion proporcionada | Pesos publicos |
 | DINOv2 (Meta) | ViT auto-supervisado para representaciones visuales | no disponible en la informacion proporcionada | no disponible | Si, con evaluaciones publicadas por sus autores | no disponible en la informacion proporcionada | Pesos publicos |
@@ -89,5 +89,5 @@ La diferencia fundamental con esos tres sistemas es que este repositorio es un e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Timothyyimd/cs224n-contrastive
+- Hugging Face: https://huggingface.co/Timothyyimd/cs224n-contrastive
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

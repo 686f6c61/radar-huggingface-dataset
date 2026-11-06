@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR DART one-shot source (este) | no disponible | no disponible | `stack_cube`, vista fuente, one-shot | Apache 2.0 | HuggingFace (0 descargas) |
-| π0.5 SNUMPR DART one-shot large-view yaw30 alpha0.8 | no disponible | no disponible | `stack_cube`, vista ampliada, merge de dos fine-tunes | Apache 2.0 | HuggingFace (mismo autor) |
+| π0.5 SNUMPR DART one-shot source (este) | no disponible | no disponible | `stack_cube`, vista fuente, one-shot | Apache 2.0 | Hugging Face (0 descargas) |
+| π0.5 SNUMPR DART one-shot large-view yaw30 alpha0.8 | no disponible | no disponible | `stack_cube`, vista ampliada, merge de dos fine-tunes | Apache 2.0 | Hugging Face (mismo autor) |
 | π0.5 base / openpi | no disponible | no disponible | VLA de propósito general | no disponible en esta ficha | openpi (referencia del ecosistema) |
 
 No se dispone de datos de rendimiento ni de parámetros para establecer una comparación cuantitativa con alternativas; la comparación se limita a tarea, licencia y disponibilidad.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento ni de parámetros para establecer una comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-source-ft-1000-stack-cube-20261030
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-source-ft-1000-stack-cube-20261030
 - Modelo fusionado (large-view yaw30 alpha0.8): https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-large-view-yaw30-alpha0p8-stack-cube-20261030
 - Código de adaptación: `Donghyun1228/vla_adaptation` (commit `248126e`)
 - Receta oficial: `snumprlab/dart` (commit `1b23c4f42f73168c78a20b353453145e74f64711`), preset `pi05_libero_oneshotft`

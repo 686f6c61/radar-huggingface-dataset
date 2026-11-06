@@ -74,11 +74,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Entrada / frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NewGame/libritts_esp2_gan_tts_train_vits_libritts | VITS + HiFi-GAN (GAN end-to-end) | 96,4 M (fp32) | Fonemas, 22.050 Hz | no disponible | HuggingFace, bundle ESPnet3, 0 descargas |
+| NewGame/libritts_esp2_gan_tts_train_vits_libritts | VITS + HiFi-GAN (GAN end-to-end) | 96,4 M (fp32) | Fonemas, 22.050 Hz | no disponible | Hugging Face, bundle ESPnet3, 0 descargas |
 | Receta oficial `egs2/libritts/tts1` (ESPnet) | VITS / FastSpeech2 + vocoder | no disponible | Texto/fonemas, frecuencia segun configuracion | codigo Apache 2.0 (ESPnet); pesos no publicados como checkpoint unico | Repositorio GitHub, requiere entrenamiento |
 | Coqui TTS VITS (checkpoints publicos) | VITS | no disponible | Texto/fonemas, 22.050 Hz en configuraciones habituales | codigo MPL-2.0; licencia de cada checkpoint no especificada | Repositorio GitHub y zoo de modelos |
-| NewGame/libritts_f5tts_training | F5-TTS (flow matching + DiT) | no disponible | Texto, condicionamiento por referencia de audio | no disponible | HuggingFace |
-| speechbrain/tts-hifigan-libritts-22050Hz | Vocoder HiFi-GAN (no es TTS completo) | no disponible | Espectrograma → onda, 22.050 Hz | Apache 2.0 | HuggingFace |
+| NewGame/libritts_f5tts_training | F5-TTS (flow matching + DiT) | no disponible | Texto, condicionamiento por referencia de audio | no disponible | Hugging Face |
+| speechbrain/tts-hifigan-libritts-22050Hz | Vocoder HiFi-GAN (no es TTS completo) | no disponible | Espectrograma → onda, 22.050 Hz | Apache 2.0 | Hugging Face |
 
 Nota: la comparacion con `speechbrain/tts-hifigan-libritts-22050Hz` es solo de complementariedad (vocoder suelto frente a sistema completo); las cifras de parametros de los modelos alternativos no estan disponibles en la informacion consultada.
 
@@ -96,7 +96,7 @@ Nota: la comparacion con `speechbrain/tts-hifigan-libritts-22050Hz` es solo de c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NewGame/libritts_esp2_gan_tts_train_vits_libritts
+- Modelo en Hugging Face: https://huggingface.co/NewGame/libritts_esp2_gan_tts_train_vits_libritts
 - Receta oficial ESPnet LibriTTS TTS (egs2): https://github.com/espnet/espnet/blob/master/egs2/libritts/tts1/README.md
 - Repositorio ESPnet: https://github.com/espnet/espnet
 - Fork declarado en el bundle: https://github.com/NewGamezzz/espnet

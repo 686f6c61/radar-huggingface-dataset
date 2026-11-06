@@ -81,7 +81,7 @@ No se dispone de información sobre modelos directamente comparables en la docum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Magnexis/lexiconerror-router-large
+- Modelo en Hugging Face: https://huggingface.co/Magnexis/lexiconerror-router-large
 - Dataset de entrenamiento: https://huggingface.co/datasets/Magnexis/lexiconerror-diagnostics
 - Variante Small: https://huggingface.co/Magnexis/lexiconerror-router-small
 - Variante Medium: https://huggingface.co/Magnexis/lexiconerror-router-medium

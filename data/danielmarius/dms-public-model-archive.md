@@ -80,9 +80,9 @@ La informacion disponible solo permite comparar el fichero con su origen, ya que
 
 | Artefacto | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| `DanielMarius/dms-public-model-archive` (este repositorio) | no disponible | no aplica | Apache-2.0 | safetensors (fichero unico) | Publico en HuggingFace; 0 descargas, 0 likes |
-| `Comfy-Org/ace_step_1.5_ComfyUI_files` (origen upstream) | no disponible | no aplica | Apache-2.0 | safetensors, dentro de un conjunto de ficheros divididos | Publico en HuggingFace; repositorio de referencia del pipeline |
-| `ACE-Step/Ace-Step1.5` (modelo base declarado) | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible | Publico en HuggingFace |
+| `DanielMarius/dms-public-model-archive` (este repositorio) | no disponible | no aplica | Apache-2.0 | safetensors (fichero unico) | Publico en Hugging Face; 0 descargas, 0 likes |
+| `Comfy-Org/ace_step_1.5_ComfyUI_files` (origen upstream) | no disponible | no aplica | Apache-2.0 | safetensors, dentro de un conjunto de ficheros divididos | Publico en Hugging Face; repositorio de referencia del pipeline |
+| `ACE-Step/Ace-Step1.5` (modelo base declarado) | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible | Publico en Hugging Face |
 
 Comparativa con otros VAE de audio: no disponible.
 
@@ -96,11 +96,11 @@ Comparativa con otros VAE de audio: no disponible.
 - Repositorio de tipo archivo personal: el identificador `dms-public-model-archive` sugiere un proposito de preservacion, no de mantenimiento activo con soporte o actualizaciones garantizadas.
 - Riesgo de procedencia en cadenas de redistribucion: aunque se documentan el origen y el hash, cualquier redistribucion posterior deberia verificar el SHA-256 indicado para descartar modificaciones.
 - No aplican consideraciones habituales de modelos de lenguaje como sesgos textuales, alucinacion, limites de contexto o idiomas soportados; el componente opera sobre representaciones latentes, no sobre texto.
-- Las fechas de creacion y actualizacion del repositorio (2026-09-26) figuran tal cual en los metadatos de HuggingFace y no han podido contrastarse con otras fuentes.
+- Las fechas de creacion y actualizacion del repositorio (2026-09-26) figuran tal cual en los metadatos de Hugging Face y no han podido contrastarse con otras fuentes.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DanielMarius/dms-public-model-archive
+- Repositorio en Hugging Face: https://huggingface.co/DanielMarius/dms-public-model-archive
 - Repositorio upstream declarado: https://huggingface.co/Comfy-Org/ace_step_1.5_ComfyUI_files
 - Modelo base declarado: https://huggingface.co/ACE-Step/Ace-Step1.5
 - Revision upstream observada: `6707deb277e9e0907fd9c14ce6b6f1d695c6a3fc`

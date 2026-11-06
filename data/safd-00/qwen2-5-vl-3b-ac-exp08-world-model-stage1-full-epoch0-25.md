@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino experimental del modelo Qwen2.5-VL-3B, desarrollado por el usuario SaFD-00 y publicado en HuggingFace. Se trata de un checkpoint intermedio (epoch 0.25) de un entrenamiento de "world model" en su etapa 1, lo que sugiere que forma parte de un pipeline de entrenamiento más amplio orientado a dotar al modelo de capacidades de modelado del mundo a partir de entradas visuales y textuales. El nombre del repositorio indica que el entrenamiento se realizó con el framework LlamaFactory.
+Este modelo es un ajuste fino experimental del modelo Qwen2.5-VL-3B, desarrollado por el usuario SaFD-00 y publicado en Hugging Face. Se trata de un checkpoint intermedio (epoch 0.25) de un entrenamiento de "world model" en su etapa 1, lo que sugiere que forma parte de un pipeline de entrenamiento más amplio orientado a dotar al modelo de capacidades de modelado del mundo a partir de entradas visuales y textuales. El nombre del repositorio indica que el entrenamiento se realizó con el framework LlamaFactory.
 
 El modelo hereda la arquitectura Qwen2.5-VL, un modelo multimodal de 3.000 millones de parámetros que procesa imágenes y texto, y se presenta como un checkpoint de investigación en fase experimental. El repositorio contiene pesos en formato safetensors (7,5 GB) y es compatible con transformers y text-generation-inference. La licencia no está especificada en la ficha del modelo, y el número de descargas es cero, lo que indica que es un modelo muy reciente y probablemente de uso interno del autor.
 

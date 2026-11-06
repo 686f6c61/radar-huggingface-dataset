@@ -6,7 +6,7 @@ VOID (Video Object and Interaction Deletion) es un modelo de difusion para *inpa
 
 Tecnicamente, VOID se construye sobre CogVideoX-Fun-V1.5-5b-InP, un transformer de difusion 3D de 5.000 millones de parametros, y se afina especificamente para inpainting de video mediante una condicion de *quadmask* que codifica cuatro regiones (objeto a eliminar, solapamiento, regiones afectadas y fondo a preservar). El modelo trabaja a una resolucion por defecto de 384x672, admite hasta 197 fotogramas y utiliza un scheduler DDIM con precision BF16 y cuantizacion FP8 para reducir el consumo de memoria.
 
-Su relevancia actual radica en que aborda un problema poco tratado en edicion de video: la coherencia fisica y temporal de la escena tras eliminar un objeto. Se distribuye con licencia Apache 2.0, lo que facilita su uso comercial, aunque requiere hardware de gama alta (40 GB o mas de VRAM) para su ejecucion. El repositorio de HuggingFace figura bajo el autor Jinstudio, si bien la model card y el repositorio de codigo apuntan a la organizacion netflix.
+Su relevancia actual radica en que aborda un problema poco tratado en edicion de video: la coherencia fisica y temporal de la escena tras eliminar un objeto. Se distribuye con licencia Apache 2.0, lo que facilita su uso comercial, aunque requiere hardware de gama alta (40 GB o mas de VRAM) para su ejecucion. El repositorio de Hugging Face figura bajo el autor Jinstudio, si bien la model card y el repositorio de codigo apuntan a la organizacion netflix.
 
 ## Especificaciones tecnicas
 
@@ -74,15 +74,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - GPU recomendadas: A100 de 80 GB (usada tanto para entrenamiento como para inferencia segun la model card). Tambien valida en A100 de 40 GB segun el requisito minimo declarado.
 - GPU de consumo: no cabe en GPU de consumo convencionales (RTX 4090, 3090, etc.) debido al requisito de 40 GB o mas de VRAM. El repositorio pesa 22,3 GB, por lo que los checkpoints completos tampoco caben comodamente en VRAM reducida junto con las activaciones.
 - Rendimiento y cuantizacion: se emplea BF16 con cuantizacion FP8 para eficiencia de memoria. No se detallan valores de latencia ni throughput.
-- Opciones de despliegue: scripts de inferencia en Python del repositorio (predict_v2v.py), cuaderno de Colab del proyecto y el *space* de demostracion en HuggingFace. No se mencionan integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: scripts de inferencia en Python del repositorio (predict_v2v.py), cuaderno de Colab del proyecto y el *space* de demostracion en Hugging Face. No se mencionan integraciones con vLLM, llama.cpp, Ollama ni TGI.
 - Proceso de inferencia: dos pasadas (pass 1 base y pass 2 opcional de refinamiento); la pasada 2 incrementa el coste computacional.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto / frames | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VOID (Jinstudio/void-model) | 5B | hasta 197 fotogramas, 384x672 | Inpainting de video con interacciones fisicas | Apache 2.0 | HuggingFace, GitHub, demo |
-| CogVideoX-Fun-V1.5-5b-InP | 5B | no disponible en la informacion | Inpainting de video generico | no disponible en la informacion | HuggingFace (alibaba-pai) |
+| VOID (Jinstudio/void-model) | 5B | hasta 197 fotogramas, 384x672 | Inpainting de video con interacciones fisicas | Apache 2.0 | Hugging Face, GitHub, demo |
+| CogVideoX-Fun-V1.5-5b-InP | 5B | no disponible en la informacion | Inpainting de video generico | no disponible en la informacion | Hugging Face (alibaba-pai) |
 | Otros modelos de inpainting de video | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa directa con alternativas especificas de inpainting de video no puede completarse con la informacion proporcionada. La referencia mas cercana es el modelo base CogVideoX-Fun-V1.5-5b-InP, del que VOID hereda arquitectura y tamano, y sobre el que anade el condicionamiento por quadmask y el afinado para razonamiento de interacciones fisicas.
@@ -97,17 +97,17 @@ La comparativa directa con alternativas especificas de inpainting de video no pu
 - Idiomas soportados: no se especifica el soporte multilingue para los *prompts* de texto; no hay datos disponibles sobre su comportamiento en castellano.
 - Sesgos conocidos: no se documentan sesgos especificos en la informacion disponible.
 - Licencia: Apache 2.0 permite uso comercial y modificacion, siempre que se conserve el aviso de licencia y se atribuya correctamente. Conviene verificar las condiciones del modelo base CogVideoX-Fun-V1.5-5b-InP, cuyos terminos no se detallan en la informacion proporcionada.
-- Ambiguedad de autoria: el repositorio figura bajo el usuario Jinstudio en HuggingFace, mientras que la model card y el codigo apuntan a la organizacion netflix. Se recomienda confirmar la fuente oficial antes de citarlo o desplegarlo en produccion.
+- Ambiguedad de autoria: el repositorio figura bajo el usuario Jinstudio en Hugging Face, mientras que la model card y el codigo apuntan a la organizacion netflix. Se recomienda confirmar la fuente oficial antes de citarlo o desplegarlo en produccion.
 - Sin datos de benchmarks publicos en la informacion disponible, lo que dificulta estimar su rendimiento relativo frente a alternativas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jinstudio/void-model
+- Hugging Face: https://huggingface.co/Jinstudio/void-model
 - Pagina del proyecto: https://void-model.github.io/
 - Paper (arXiv): https://arxiv.org/abs/2604.02296
 - Paper (PDF): https://arxiv.org/pdf/2604.02296
 - Repositorio GitHub: https://github.com/netflix/void-model
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/sam-motamed/VOID
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/sam-motamed/VOID
 - Modelo base CogVideoX-Fun-V1.5-5b-InP: https://huggingface.co/alibaba-pai/CogVideoX-Fun-V1.5-5b-InP
 - Cuaderno de Colab: https://colab.research.google.com/github/netflix/void-model/blob/main/notebook.ipynb
 - Instrucciones de entrenamiento: https://github.com/netflix/void-model#%EF%B8%8F-training

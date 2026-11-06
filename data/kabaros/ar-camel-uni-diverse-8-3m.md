@@ -60,7 +60,7 @@ No se han publicado otros benchmarks (como MMLU, HumanEval o GSM8K) en la inform
 
 - VRAM estimada: el modelo tiene 17 millones de parametros. En FP32 ocupa aproximadamente 68 MB, en FP16 unos 34 MB y en int8 unos 17 MB. Cabe en cualquier GPU moderna, incluso en las mas basicas (por ejemplo, una GTX 1650 con 4 GB es mas que suficiente).
 - GPU recomendadas: no se requiere una GPU especifica; cualquier GPU con al menos 1 GB de VRAM puede ejecutarlo. Tambien puede funcionar en CPU sin problemas.
-- Opciones de despliegue: al ser un modelo de Transformers, puede cargarse con la libreria `transformers` de HuggingFace. Para inferencia en CPU, se puede usar `llama.cpp` o `Ollama` si se convierte a GGUF, aunque no se proporcionan conversiones oficiales. Tambien es compatible con `vLLM` o `TGI` para entornos de servidor, aunque su tamano hace que estas opciones sean innecesarias.
+- Opciones de despliegue: al ser un modelo de Transformers, puede cargarse con la libreria `transformers` de Hugging Face. Para inferencia en CPU, se puede usar `llama.cpp` o `Ollama` si se convierte a GGUF, aunque no se proporcionan conversiones oficiales. Tambien es compatible con `vLLM` o `TGI` para entornos de servidor, aunque su tamano hace que estas opciones sean innecesarias.
 - Latencia y throughput: no se han publicado mediciones oficiales. Dado el tamano, la generacion de texto es practicamente instantanea en GPU y muy rapida en CPU moderna.
 
 ## Comparativa con modelos similares
@@ -83,5 +83,5 @@ No se dispone de informacion sobre otros modelos arabes pequenos comparables en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kabaros/ar-camel-uni-diverse-8.3M
+- Repositorio Hugging Face: https://huggingface.co/kabaros/ar-camel-uni-diverse-8.3M
 - No se han encontrado otros enlaces (papers, blogs o repositorios) en la busqueda web realizada.

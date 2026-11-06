@@ -81,6 +81,6 @@ La comparación directa no es posible por falta de benchmarks. La principal dife
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/elastix-ai/Qwen2.5-0.5B-maskllm-2to4-calib2048-blade
+- Repositorio Hugging Face: https://huggingface.co/elastix-ai/Qwen2.5-0.5B-maskllm-2to4-calib2048-blade
 - Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Technical report de Qwen2.5: https://arxiv.org/abs/2412.15115

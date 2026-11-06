@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/gemma-4-12b-marvin-v2-GGUF` es una colección de cuantizaciones estáticas en formato GGUF del modelo `ToastyPigeon/gemma-4-12b-marvin-v2`, un modelo de lenguaje de aproximadamente 11.900 millones de parámetros (11.907.350.576 según los pesos en safetensors). El trabajo lo publica mradermacher, un conocido cuantizador de la comunidad de HuggingFace que convierte modelos en formato transformers a GGUF para su uso con llama.cpp y derivados (Ollama, LM Studio, KoboldCpp, etc.). El modelo base pertenece a la familia Gemma 4, según se deduce del nombre, aunque la model card del repositorio cuantizado no aporta detalles sobre arquitectura, contexto o datos de entrenamiento.
+`mradermacher/gemma-4-12b-marvin-v2-GGUF` es una colección de cuantizaciones estáticas en formato GGUF del modelo `ToastyPigeon/gemma-4-12b-marvin-v2`, un modelo de lenguaje de aproximadamente 11.900 millones de parámetros (11.907.350.576 según los pesos en safetensors). El trabajo lo publica mradermacher, un conocido cuantizador de la comunidad de Hugging Face que convierte modelos en formato transformers a GGUF para su uso con llama.cpp y derivados (Ollama, LM Studio, KoboldCpp, etc.). El modelo base pertenece a la familia Gemma 4, según se deduce del nombre, aunque la model card del repositorio cuantizado no aporta detalles sobre arquitectura, contexto o datos de entrenamiento.
 
 La relevancia de este repositorio es práctica: ofrece 11 variantes de cuantización (desde Q2_K de 4,9 GB hasta Q8_0 de 12,8 GB) que permiten ejecutar un modelo de 12B en hardware de consumo, algo imposible con los pesos originales en bf16/fp16. El repositorio acumula 301 descargas y 1 like en el momento de la consulta, lo que indica un uso moderado y un perfil de modelo de nicho o experimental (el sufijo "marvin-v2" sugiere un fine-tuning comunitario, no un modelo oficial de Google).
 
@@ -37,7 +37,7 @@ En cuanto al proceso de cuantización, sí hay información técnica concreta: m
 
 - Generación de texto conversacional: los tags incluyen `conversational`, lo que indica que el modelo está ajustado para diálogo multi-turno.
 - Idiomas: únicamente inglés según los metadatos (`language: en`); no se declara soporte multilingüe.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el modelo puede servirse a través de la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el modelo puede servirse a través de la infraestructura de Inference Endpoints de Hugging Face.
 - Inferencia local vía GGUF: compatible con llama.cpp y todo su ecosistema (Ollama, LM Studio, KoboldCpp, text-generation-webui, llama-cpp-python).
 - Tool calling / function calling: no disponible (no se menciona en la documentación).
 - Capacidades de agente o razonamiento multi-paso: no disponible.

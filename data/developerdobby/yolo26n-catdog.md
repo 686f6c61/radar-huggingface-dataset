@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 | Modelo | Parametros | Contexto | mAP50 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yolo26n-catdog (este modelo) | 2.4 M | no aplica | 0.9125 (4 imagenes de validacion) | AGPL-3.0 | ONNX en HuggingFace |
+| yolo26n-catdog (este modelo) | 2.4 M | no aplica | 0.9125 (4 imagenes de validacion) | AGPL-3.0 | ONNX en Hugging Face |
 | `yolo26n.pt` (modelo base) | no disponible | no aplica | no disponible | AGPL-3.0 | Ultralytics |
 | Otras variantes YOLO (v8n, 11n) | no disponible | no aplica | no disponible | AGPL-3.0 | Ultralytics |
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DeveloperDobby/yolo26n-catdog
+- Modelo en Hugging Face: https://huggingface.co/DeveloperDobby/yolo26n-catdog
 - Documentacion de onnxruntime-web (mencionada por el autor): https://onnxruntime.ai/docs/tutorials/web/
 - Sitio de demostracion del autor (AI Models Organize): https://ai-models-organize.vercel.app/
 - Ultralytics (framework y modelo base `yolo26n.pt`): no disponible en la informacion proporcionada

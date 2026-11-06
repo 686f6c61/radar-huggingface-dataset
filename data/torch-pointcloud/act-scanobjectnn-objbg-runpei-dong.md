@@ -70,7 +70,7 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| act.scanobjectnn-objbg.runpei-dong | 22,1 M | 8192 puntos | MIT | HuggingFace (torch-pointcloud) |
+| act.scanobjectnn-objbg.runpei-dong | 22,1 M | 8192 puntos | MIT | Hugging Face (torch-pointcloud) |
 | PointNet++ | no disponible | variable | no disponible | Ampliamente disponible |
 | Point Transformer | no disponible | variable | no disponible | Repositorios académicos |
 | DGCNN | no disponible | variable | no disponible | Repositorios académicos |
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativos verificados en la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/act.scanobjectnn-objbg.runpei-dong
+- Hugging Face: https://huggingface.co/torch-pointcloud/act.scanobjectnn-objbg.runpei-dong
 - Modelo base: https://huggingface.co/torch-pointcloud/act.pretrain.runpei-dong
 - Paper (arXiv): https://arxiv.org/abs/2212.08320
 - Repositorio original ACT: https://github.com/RunpeiDong/ACT

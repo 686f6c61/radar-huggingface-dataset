@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jojo-sovereign-trained es un ajuste fino (finetune) del modelo Llama-3.2-3B-Instruct, publicado por el usuario dodgeqtr en HuggingFace y distribuido exclusivamente en formato GGUF para su uso con llama.cpp y Ollama. El repositorio contiene un único fichero cuantizado `Llama-3.2-3B-Instruct.Q4_K_M.gguf`, lo que sitúa el peso real del modelo en torno a 2 GB en disco. El propio autor indica que el entrenamiento y la conversión a GGUF se realizaron con Unsloth, y que el modelo se entrenó "2x faster" gracias a esa herramienta.
+jojo-sovereign-trained es un ajuste fino (finetune) del modelo Llama-3.2-3B-Instruct, publicado por el usuario dodgeqtr en Hugging Face y distribuido exclusivamente en formato GGUF para su uso con llama.cpp y Ollama. El repositorio contiene un único fichero cuantizado `Llama-3.2-3B-Instruct.Q4_K_M.gguf`, lo que sitúa el peso real del modelo en torno a 2 GB en disco. El propio autor indica que el entrenamiento y la conversión a GGUF se realizaron con Unsloth, y que el modelo se entrenó "2x faster" gracias a esa herramienta.
 
 Se trata de un modelo de 3.212.749.888 parámetros totales (3,21 mil millones), arquitectura transformer decoder-only de la familia Llama 3.2, orientado a uso conversacional. La ficha del autor no documenta el conjunto de datos de ajuste, el número de tokens de entrenamiento, ni si hubo fases de RLHF o DPO. El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, y fue creado y actualizado el 17 de septiembre de 2026.
 
@@ -38,7 +38,7 @@ El proceso de entrenamiento documentado se limita a dos afirmaciones del autor: 
 - Generacion de codigo: capacidad esperable por herencia del modelo base, no verificada ni documentada para este finetune.
 - Soporte de plantillas de chat: la ficha recomienda el uso de `--jinja` en llama.cpp, lo que implica que el modelo incluye una plantilla de chat en formato Jinja utilizable por el runtime.
 - Despliegue en Ollama: el repositorio incluye un Modelfile para su carga directa.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el artefacto puede servirse a traves de infraestructura compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el artefacto puede servirse a traves de infraestructura compatible con la API de Hugging Face.
 - Tool calling y function calling: no disponible; no se documenta soporte.
 - Capacidades de agente o razonamiento multi-paso: no disponible; no se documenta soporte.
 - Capacidades multilingues: no disponible; el autor no declara idiomas.
@@ -74,7 +74,7 @@ El autor no incluye ninguna tabla de evaluacion ni comparacion cuantitativa con 
 - GPU de consumo: cabe holgadamente en cualquier GPU con 6 GB o mas de VRAM (RTX 3060, RTX 4060, RTX 2060, GTX 1660 Super con 6 GB en cuantizaciones mas agresivas). Tambien es viable en GPUs integradas con memoria compartida, con rendimiento reducido.
 - GPU profesionales: no requiere A100, H100 ni similares; su uso en esas tarjetas solo tiene sentido para servir muchas peticiones concurrentes.
 - CPU: puede ejecutarse integramente en CPU con llama.cpp; un procesador moderno de 8 nucleos es suficiente para uso interactivo con una sola peticion.
-- Opciones de despliegue: llama.cpp (`llama-cli -hf dodgeqtr/jojo-sovereign-trained --jinja`), Ollama (el repositorio incluye Modelfile), Unsloth para reentrenamiento y conversion, y cualquier servidor compatible con la API de HuggingFace que acepte GGUF.
+- Opciones de despliegue: llama.cpp (`llama-cli -hf dodgeqtr/jojo-sovereign-trained --jinja`), Ollama (el repositorio incluye Modelfile), Unsloth para reentrenamiento y conversion, y cualquier servidor compatible con la API de Hugging Face que acepte GGUF.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -105,7 +105,7 @@ La diferencia principal de jojo-sovereign-trained frente a las alternativas no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dodgeqtr/jojo-sovereign-trained
+- Modelo en Hugging Face: https://huggingface.co/dodgeqtr/jojo-sovereign-trained
 - Unsloth (herramienta citada por el autor): https://github.com/unslothai/unsloth
 - Llama.cpp (runtime recomendado en la ficha): no se proporciona enlace en la model card
 - Ollama (Modelfile incluido en el repositorio): no se proporciona enlace en la model card

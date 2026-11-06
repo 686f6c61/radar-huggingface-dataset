@@ -89,7 +89,7 @@ El modelo base GR00T N1.6 sin cuantizar (fp16) tendria mayor precision pero mayo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mesiu650/GR00T-N1.6-LIBERO-llm-w4a4-flatquant-tf32
+- Repositorio Hugging Face: https://huggingface.co/mesiu650/GR00T-N1.6-LIBERO-llm-w4a4-flatquant-tf32
 - Proyecto de adaptacion LIBERO de Siqi Chen: https://tj-chen-1209.github.io/projects/libero-grootn1.6/
 - Pagina de investigacion de NVIDIA sobre GR00T N1.6: https://research.nvidia.com/labs/gear/gr00t-n1_6/
 - Repositorio GitHub de fine-tuning LIBERO: https://github.com/tj-chen-1209/Libero_GR00T

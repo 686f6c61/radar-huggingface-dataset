@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Roy229/ftfp1243-voice-transcriber es un modelo de reconocimiento automático del habla (ASR) presentado como capaz de transcribir audio multilingüe a texto. Fue publicado por el usuario Roy229 en HuggingFace el 16 de agosto de 2026, bajo licencia Apache 2.0, y está clasificado dentro del pipeline `automatic-speech-recognition`. La model card es extremadamente escueta: no se especifican arquitectura, número de parámetros, datos de entrenamiento ni resultados de evaluación.
+Roy229/ftfp1243-voice-transcriber es un modelo de reconocimiento automático del habla (ASR) presentado como capaz de transcribir audio multilingüe a texto. Fue publicado por el usuario Roy229 en Hugging Face el 16 de agosto de 2026, bajo licencia Apache 2.0, y está clasificado dentro del pipeline `automatic-speech-recognition`. La model card es extremadamente escueta: no se especifican arquitectura, número de parámetros, datos de entrenamiento ni resultados de evaluación.
 
 El modelo se describe como un "candidato de terceros" sometido a revisión de gobernanza interna, lo que sugiere que no ha sido validado para uso en producción. Los únicos datos técnicos disponibles son un requisito de 16 GB de memoria GPU, un tamaño de lote recomendado de 8 y el uso del framework Transformers. No se han publicado ni el repositorio de código, ni pesos, ni documentación adicional. A fecha de consulta, el modelo registra cero descargas y cero likes, lo que indica que es una publicación reciente y sin adopción comunitaria.
 
@@ -21,7 +21,7 @@ El modelo se describe como un "candidato de terceros" sometido a revisión de go
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La model card solo indica que el framework utilizado es `transformers`, lo que sugiere que el modelo es compatible con la biblioteca de HuggingFace, pero no permite inferir si se trata de un transformer encoder-decoder, un modelo basado en conformer, una arquitectura tipo Whisper u otra. Tampoco se dispone de datos sobre el conjunto de entrenamiento, el numero de tokens, el proceso de alineacion (RLHF, DPO, etc.) ni sobre posibles innovaciones tecnicas.
+No se ha publicado informacion sobre la arquitectura del modelo. La model card solo indica que el framework utilizado es `transformers`, lo que sugiere que el modelo es compatible con la biblioteca de Hugging Face, pero no permite inferir si se trata de un transformer encoder-decoder, un modelo basado en conformer, una arquitectura tipo Whisper u otra. Tampoco se dispone de datos sobre el conjunto de entrenamiento, el numero de tokens, el proceso de alineacion (RLHF, DPO, etc.) ni sobre posibles innovaciones tecnicas.
 
 ## Capacidades
 
@@ -72,4 +72,4 @@ No disponible. No se han proporcionado datos que permitan comparar este modelo c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Roy229/ftfp1243-voice-transcriber
+- Hugging Face: https://huggingface.co/Roy229/ftfp1243-voice-transcriber

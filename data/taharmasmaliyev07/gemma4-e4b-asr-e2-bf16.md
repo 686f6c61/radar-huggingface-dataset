@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma4-E4B-ASR-E2-BF16 es un ajuste fino (finetune) publicado por el usuario taharmasmaliyev07 en HuggingFace, derivado de un modelo de la familia Gemma 4 identificado en los metadatos como "E4B" y entrenado con la librería Unsloth junto con TRL de HuggingFace. El repositorio contiene pesos en formato safetensors con 7.996.156.490 parámetros totales (aproximadamente 8.000 millones) y un tamano de 16,2 GB, lo que es coherente con un checkpoint en precision BF16. La nomenclatura "ASR-E2" sugiere un ajuste orientado a reconocimiento automatico del habla, aunque la model card no documenta la tarea ni el dataset de entrenamiento.
+Gemma4-E4B-ASR-E2-BF16 es un ajuste fino (finetune) publicado por el usuario taharmasmaliyev07 en Hugging Face, derivado de un modelo de la familia Gemma 4 identificado en los metadatos como "E4B" y entrenado con la librería Unsloth junto con TRL de Hugging Face. El repositorio contiene pesos en formato safetensors con 7.996.156.490 parámetros totales (aproximadamente 8.000 millones) y un tamano de 16,2 GB, lo que es coherente con un checkpoint en precision BF16. La nomenclatura "ASR-E2" sugiere un ajuste orientado a reconocimiento automatico del habla, aunque la model card no documenta la tarea ni el dataset de entrenamiento.
 
 La relevancia de esta ficha es limitada y debe interpretarse con cautela: se trata de un modelo subido por un autor individual, con 28 descargas, cero likes y una model card practicamente vacia que no aporta informacion sobre datos de entrenamiento, evaluacion ni metodologia. El pipeline declarado en los metadatos es `image-text-to-text`, mientras que los tags incluyen `text-generation-inference` y `gemma4`, lo que apunta a una arquitectura multimodal de la familia Gemma 4. No se dispone de informacion verificable sobre el contexto maximo, los idiomas efectivamente soportados mas alla del ingles declarado, ni los resultados de benchmarks.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha describe lo que los metadatos permiten afirmar con certeza
 
 Los metadatos indican que el modelo pertenece a la familia Gemma 4 y que se distribuye a traves de `transformers` con pesos `safetensors`. El pipeline declarado es `image-text-to-text`, lo que implica capacidad de procesar imagenes y texto de entrada, aunque no se detalla el codificador visual, la configuracion de atencion ni el esquema de fusion multimodal. El sufijo "E4B" en el nombre del checkpoint no se explica en la model card y no debe interpretarse como un dato tecnico verificado.
 
-El entrenamiento se realizo, segun la model card, con Unsloth y la libreria TRL de HuggingFace, lo que habitualmente corresponde a un ajuste fino supervisado (SFT) o a un entrenamiento con preferencias sobre un modelo base. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF o DPO, ni el proposito exacto del ajuste pese al sufijo "ASR" en el nombre. Tampoco se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, modos de razonamiento extendido u otras).
+El entrenamiento se realizo, segun la model card, con Unsloth y la libreria TRL de Hugging Face, lo que habitualmente corresponde a un ajuste fino supervisado (SFT) o a un entrenamiento con preferencias sobre un modelo base. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF o DPO, ni el proposito exacto del ajuste pese al sufijo "ASR" en el nombre. Tampoco se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, modos de razonamiento extendido u otras).
 
 ## Capacidades
 
@@ -86,7 +86,7 @@ La comparativa es orientativa: no se dispone de datos de rendimiento de este che
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/taharmasmaliyev07/Gemma4-E4B-ASR-E2-BF16
+- Hugging Face: https://huggingface.co/taharmasmaliyev07/Gemma4-E4B-ASR-E2-BF16
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: no se ha proporcionado enlace directo en la informacion disponible
+- TRL de Hugging Face: no se ha proporcionado enlace directo en la informacion disponible
 - Paper, blog o demo oficial: no disponible

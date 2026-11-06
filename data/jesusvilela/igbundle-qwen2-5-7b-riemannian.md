@@ -92,7 +92,7 @@ La comparativa se limita a la arquitectura y al tamano, ya que no hay benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jesusvilela/igbundle-qwen2.5-7b-riemannian
+- Modelo en Hugging Face: https://huggingface.co/jesusvilela/igbundle-qwen2.5-7b-riemannian
 - Aviso de correccion: https://github.com/jesusvilela/IGBundle-LLM/blob/main/docs/correction-notice.md
 - Ledger de evidencia: https://github.com/jesusvilela/IGBundle-LLM/blob/main/docs/research_to_code_evidence_ledger.md
 - Sitio de investigacion: https://jesusvilela.github.io/IGBundle-LLM/

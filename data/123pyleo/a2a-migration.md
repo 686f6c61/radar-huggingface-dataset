@@ -62,12 +62,12 @@ No disponible. El repositorio no es un modelo de IA, por lo que no se puede comp
 - El entorno virtual no es portable entre servidores con diferentes versiones de glibc; es obligatorio reconstruirlo desde cero.
 - Los datos de entrenamiento son limitados (100 demostraciones para stack_cube, 1000 episodios para TakeItBack), lo que puede dar lugar a modelos con poca generalizacion.
 - La model card esta escrita en chino y no incluye documentacion tecnica sobre el modelo (arquitectura, hiperparametros, proceso de entrenamiento).
-- No hay garantia de que los checkpoints funcionen sin los pesos de DINOv3 y BERT, que deben descargarse de HuggingFace por separado.
+- No hay garantia de que los checkpoints funcionen sin los pesos de DINOv3 y BERT, que deben descargarse de Hugging Face por separado.
 - El repositorio no tiene descargas ni likes, lo que sugiere que es un artefacto personal de uso interno, no un recurso publico validado.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/123pyLeo/a2a-migration
+- Repositorio en Hugging Face: https://huggingface.co/123pyLeo/a2a-migration
 - Codigo de MIKASA-Robo (mencionado en la model card): https://github.com/CognitiveAISystems/MIKASA-Robo.git (commit `509b875`)
 - Guia de migracion de A2A SDK (referencia al protocolo, no al contenido del repositorio): https://github.com/a2aproject/a2a-python/blob/main/docs/migrations/v1_0/README.md
 - Guia de migracion de A2A SDK en Microsoft Learn: https://learn.microsoft.com/en-us/agent-framework/migration-guide/agent-to-agent-sdk-v1

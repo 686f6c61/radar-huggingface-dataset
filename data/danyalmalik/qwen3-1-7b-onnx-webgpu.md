@@ -93,7 +93,7 @@ Nota: los datos de los modelos comparados provienen de su documentación públic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/danyalmalik/Qwen3-1.7B-ONNX-WebGPU
+- Repositorio Hugging Face: https://huggingface.co/danyalmalik/Qwen3-1.7B-ONNX-WebGPU
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Cabeza draft EAGLE-3 original: https://huggingface.co/AngelSlim/Qwen3-1.7B_eagle3
 - Compilación de ONNX Runtime Web de Quick Inference: https://github.com/mdanyalmalik/onnxruntime-web-kernels

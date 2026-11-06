@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ap
 
 ## Comparativa con modelos similares
 
-No disponible. Al no ser un modelo de IA, no es comparable con LLMs, modelos de vision ni otros sistemas. La unica comparacion posible seria con otros repositorios de papers en HuggingFace, pero no hay datos para ello.
+No disponible. Al no ser un modelo de IA, no es comparable con LLMs, modelos de vision ni otros sistemas. La unica comparacion posible seria con otros repositorios de papers en Hugging Face, pero no hay datos para ello.
 
 ## Limitaciones y advertencias
 
@@ -60,7 +60,7 @@ No disponible. Al no ser un modelo de IA, no es comparable con LLMs, modelos de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/felixhayashi/paper_021042017_embodied_ai
+- Repositorio en Hugging Face: https://huggingface.co/felixhayashi/paper_021042017_embodied_ai
 - No se han encontrado otros enlaces oficiales en la informacion proporcionada. El tema "embodied AI" aparece en articulos recientes en arXiv (e.g., https://arxiv.org/abs/2509.20021) que podrian ser relacionados, pero no se confirma que este repositorio contenga ese paper concreto.
 
 Nota: al ser un repositorio de un paper, se recomienda consultar la model card del autor para cualquier aclaracion adicional.

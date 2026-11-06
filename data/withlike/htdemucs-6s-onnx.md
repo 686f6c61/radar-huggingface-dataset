@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Stems | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `htdemucs-6s-onnx` (esta ficha) | no disponible | 6 | ONNX | MIT | HuggingFace |
+| `htdemucs-6s-onnx` (esta ficha) | no disponible | 6 | ONNX | MIT | Hugging Face |
 | `htdemucs_6s` (Meta Research) | no disponible | 6 | PyTorch | MIT | Repositorio oficial de Demucs |
 | `htdemucs` (Demucs v4, 4 stems) | no disponible | 4 | PyTorch | MIT | Repositorio oficial de Demucs |
 | Spleeter (Deezer) | no disponible | 2/4/5 | TensorFlow | MIT | GitHub |
@@ -80,7 +80,7 @@ La comparativa se limita a la disponibilidad de formatos y número de stems, ya 
 
 ## Enlaces
 
-- [HuggingFace: withlike/htdemucs-6s-onnx](https://huggingface.co/withlike/htdemucs-6s-onnx)
+- [Hugging Face: withlike/htdemucs-6s-onnx](https://huggingface.co/withlike/htdemucs-6s-onnx)
 - Repositorio oficial de Demucs (Meta Research): no disponible en la información proporcionada
 - Conversión de referencia StemSplitio: no disponible en la información proporcionada
 - Paper de Demucs v4 (Hybrid Transformer Demucs): no disponible en la información proporcionada

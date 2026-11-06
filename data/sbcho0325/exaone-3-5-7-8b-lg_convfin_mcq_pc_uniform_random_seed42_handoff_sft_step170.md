@@ -79,4 +79,4 @@ No se dispone de resultados de benchmarks para comparar el rendimiento del adapt
 - Paper del modelo base: https://arxiv.org/html/2412.04862v3
 - Repositorio oficial EXAONE 3.5: https://github.com/LG-AI-EXAONE/EXAONE-3.5
 - Adaptador relacionado (misma familia): https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_random_sft_seed2026_step340
-- Modelo base en HuggingFace: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
+- Modelo base en Hugging Face: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hongchi/Fire3D` es un repositorio alojado en HuggingFace bajo licencia MIT, creado por el usuario `hongchi`. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni información sobre capacidades. No se dispone de documentación sobre el modelo más allá del identificador y la licencia, por lo que no es posible determinar qué problema resuelve ni su relevancia actual.
+El modelo `hongchi/Fire3D` es un repositorio alojado en Hugging Face bajo licencia MIT, creado por el usuario `hongchi`. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni información sobre capacidades. No se dispone de documentación sobre el modelo más allá del identificador y la licencia, por lo que no es posible determinar qué problema resuelve ni su relevancia actual.
 
 Los resultados de búsqueda web sugieren que el nombre `hongchi` podría estar relacionado con Hongchi Xia, investigador en visión 3D y generación 3D, pero no hay evidencia que confirme que este repositorio corresponda a dicho investigador ni que el modelo esté relacionado con esa línea de trabajo. El nombre del modelo (`Fire3D`) podría indicar aplicaciones en el ámbito de la generación 3D o el modelado de incendios, pero se trata de una especulación sin fundamento en la información proporcionada.
 
@@ -32,7 +32,7 @@ No disponible. La model card no incluye descripción de la arquitectura, datos d
 
 ## Casos de uso
 
-No disponibles. Sin especificaciones documentadas, no es posible determinar aplicaciones prácticas concretas ni la adecuación del modelo para ningún escenario real. Se recomienda revisar la página del modelo en HuggingFace o contactar con el autor para obtener documentación adicional.
+No disponibles. Sin especificaciones documentadas, no es posible determinar aplicaciones prácticas concretas ni la adecuación del modelo para ningún escenario real. Se recomienda revisar la página del modelo en Hugging Face o contactar con el autor para obtener documentación adicional.
 
 ## Benchmarks y rendimiento
 
@@ -54,7 +54,7 @@ No disponible. Al no disponer de especificaciones técnicas ni de resultados de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hongchi/Fire3D
+- Hugging Face: https://huggingface.co/hongchi/Fire3D
 - Página personal del posible autor (Hongchi Xia): https://xiahongchi.github.io/
 
 No se han encontrado otros repositorios, papers, blogs o demos oficiales que documenten el modelo en la información proporcionada.

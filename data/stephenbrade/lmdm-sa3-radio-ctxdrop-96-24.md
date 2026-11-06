@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`StephenBrade/lmdm-sa3-radio-ctxdrop-96-24` es un modelo de generacion de audio y musica publicado por el usuario StephenBrade en HuggingFace, derivado del modelo base `stabilityai/stable-audio-3-small-music-base` de Stability AI. Por las etiquetas del repositorio (`block-autoregressive`, `real-time`, `coreml`, `apple-silicon`), se trata de una variante orientada a la generacion musical en tiempo real con decodificacion autoregresiva por bloques, exportada al formato CoreML para su ejecucion sobre hardware de Apple.
+`StephenBrade/lmdm-sa3-radio-ctxdrop-96-24` es un modelo de generacion de audio y musica publicado por el usuario StephenBrade en Hugging Face, derivado del modelo base `stabilityai/stable-audio-3-small-music-base` de Stability AI. Por las etiquetas del repositorio (`block-autoregressive`, `real-time`, `coreml`, `apple-silicon`), se trata de una variante orientada a la generacion musical en tiempo real con decodificacion autoregresiva por bloques, exportada al formato CoreML para su ejecucion sobre hardware de Apple.
 
-El modelo no dispone de pipeline declarado en la ficha de HuggingFace, no tiene descargas ni valoraciones registradas y su acceso esta restringido: es necesario aceptar las condiciones de uso en la plataforma para poder descargarlo. El repositorio ocupa 6,5 GB. El sufijo del identificador (`radio-ctxdrop-96-24`) sugiere un ajuste especifico sobre el modelo base, presumiblemente relacionado con context dropout y con una configuracion de bloques de 96 y 24 unidades, aunque esta interpretacion no esta confirmada en la informacion disponible.
+El modelo no dispone de pipeline declarado en la ficha de Hugging Face, no tiene descargas ni valoraciones registradas y su acceso esta restringido: es necesario aceptar las condiciones de uso en la plataforma para poder descargarlo. El repositorio ocupa 6,5 GB. El sufijo del identificador (`radio-ctxdrop-96-24`) sugiere un ajuste especifico sobre el modelo base, presumiblemente relacionado con context dropout y con una configuracion de bloques de 96 y 24 unidades, aunque esta interpretacion no esta confirmada en la informacion disponible.
 
 Su relevancia actual es limitada pero especifica: los modelos de generacion musical que funcionan en tiempo real y localmente en dispositivos Apple son escasos, y esta variante apunta a ese nicho frente a alternativas que requieren GPUs de centro de datos. Al tratarse de un ajuste con licencia comunitaria de Stability AI, su uso comercial queda sujeto a las condiciones de dicha licencia.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - VRAM estimada para inferencia: no disponible. El repositorio ocupa 6,5 GB, por lo que el peso de los ficheros es de ese orden, pero no se especifica el consumo real en memoria unificada ni el de una hipotetica version cuantizada.
 - GPU recomendadas: el tag `apple-silicon` indica que el objetivo es hardware de Apple (chips M1, M2, M3, M4 y posteriores). No se documentan requisitos para NVIDIA u otras plataformas.
-- Compatibilidad con GPU de consumo: no confirmada. El formato CoreML no es ejecutable directamente en GPUs NVIDIA o AMD mediante las herramientas habituales del ecosistema HuggingFace.
+- Compatibilidad con GPU de consumo: no confirmada. El formato CoreML no es ejecutable directamente en GPUs NVIDIA o AMD mediante las herramientas habituales del ecosistema Hugging Face.
 - Opciones de despliegue: al estar en formato CoreML, el despliegue natural es Core ML Tools y el runtime de Apple. No se indica compatibilidad con vLLM, llama.cpp, Ollama ni TGI, opciones que ademas estan orientadas a modelos de lenguaje y no a este tipo de modelo.
 - Latencia y throughput estimados: no disponibles, aunque la etiqueta `real-time` sugiere que el diseno persigue latencia baja en Apple Silicon. No se aportan cifras.
 - Espacio en disco: aproximadamente 6,5 GB para el repositorio completo.
@@ -90,7 +90,7 @@ No se dispone de resultados comparativos de rendimiento entre estas alternativas
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de la descarga, lo que anade un paso administrativo a cualquier integracion.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de la descarga, lo que anade un paso administrativo a cualquier integracion.
 - Ausencia total de documentacion: no hay model card detallada, ni pipeline declarado, ni descripcion de datos de entrenamiento, cuantizacion o parametros. Cualquier uso en produccion requiere validacion propia.
 - Cero adopcion verificable: cero descargas y cero valoraciones en el momento de la consulta, sin evidencia de uso en comunidad.
 - Licencia no permisiva: la licencia `stability-ai-community` impone condiciones especificas para uso comercial. Es responsabilidad del usuario revisar los terminos completos antes de desplegar el modelo en un producto.
@@ -103,7 +103,7 @@ No se dispone de resultados comparativos de rendimiento entre estas alternativas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/StephenBrade/lmdm-sa3-radio-ctxdrop-96-24
+- Hugging Face: https://huggingface.co/StephenBrade/lmdm-sa3-radio-ctxdrop-96-24
 - Modelo base: https://huggingface.co/stabilityai/stable-audio-3-small-music-base
 - Licencia Stability AI Community: no disponible en la informacion proporcionada
 - Paper: no disponible

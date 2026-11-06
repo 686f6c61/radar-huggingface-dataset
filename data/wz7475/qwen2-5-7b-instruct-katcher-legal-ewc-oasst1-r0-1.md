@@ -6,7 +6,7 @@ Este repositorio, publicado por el usuario wz7475 con el identificador `wz7475/q
 
 El sufijo "ewc" apunta al uso de Elastic Weight Consolidation, una tecnica de aprendizaje continuo que penaliza la modificacion de pesos criticos para tareas previas y busca mitigar el olvido catastrofico al especializar el modelo en un dominio concreto sin perder la capacidad de seguir instrucciones generales. El sufijo "r0.1" sugiere una version temprana o preliminar del ajuste.
 
-Es relevante para desarrolladores porque ilustra un patron habitual en el ecosistema open source: especializacion vertical de un modelo generalista mediante tecnicas de regularizacion. No obstante, la model card publicada es la plantilla autogenerada de HuggingFace y no aporta informacion verificable sobre datos, hiperparametros, licencia o evaluacion, por lo que la mayor parte de los datos tecnicos deben considerarse no disponibles.
+Es relevante para desarrolladores porque ilustra un patron habitual en el ecosistema open source: especializacion vertical de un modelo generalista mediante tecnicas de regularizacion. No obstante, la model card publicada es la plantilla autogenerada de Hugging Face y no aporta informacion verificable sobre datos, hiperparametros, licencia o evaluacion, por lo que la mayor parte de los datos tecnicos deben considerarse no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -73,10 +73,10 @@ No se dispone de informacion suficiente sobre este ajuste para compararlo de for
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este ajuste (wz7475) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen2.5-7B-Instruct | 7,61 B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B Instruct | 8 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace |
-| Mistral 7B Instruct | 7,2 B | 32.768 tokens | Apache 2.0 | HuggingFace |
+| Este ajuste (wz7475) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen2.5-7B-Instruct | 7,61 B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B Instruct | 8 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face |
+| Mistral 7B Instruct | 7,2 B | 32.768 tokens | Apache 2.0 | Hugging Face |
 
 No se han publicado datos de rendimiento de este ajuste que permitan una comparacion cuantitativa.
 
@@ -94,7 +94,7 @@ No se han publicado datos de rendimiento de este ajuste que permitan una compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-ewc-oasst1-r0.1
+- Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-ewc-oasst1-r0.1
 - Paper referenciado en las etiquetas (estimacion de emisiones, no relacionado con el entrenamiento): https://arxiv.org/abs/1910.09700
 - Modelo base (deducido del identificador, no enlazado en la model card): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la informacion disponible.

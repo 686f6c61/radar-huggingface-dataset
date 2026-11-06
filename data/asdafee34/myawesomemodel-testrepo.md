@@ -94,5 +94,5 @@ No es posible realizar una comparativa fiable debido a la falta de datos verific
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/asdafee34/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/asdafee34/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (papers, blogs, repos de código, demos) en la información disponible.

@@ -51,9 +51,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Base | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| by0101/qwen3-4b-star-qlora-r16-v3 | Qwen/Qwen3-4B | Adaptador LoRA | no disponible | no disponible | HuggingFace |
-| by0101/qwen3-4b-star-qlora-r16-v1 | Qwen/Qwen3-4B | Adaptador LoRA | no disponible | no disponible | HuggingFace |
-| by0101/qwen3-4b-star-qlora-r16-v2-merged | Qwen/Qwen3-4B | Modelo fusionado | no disponible | no disponible | HuggingFace |
+| by0101/qwen3-4b-star-qlora-r16-v3 | Qwen/Qwen3-4B | Adaptador LoRA | no disponible | no disponible | Hugging Face |
+| by0101/qwen3-4b-star-qlora-r16-v1 | Qwen/Qwen3-4B | Adaptador LoRA | no disponible | no disponible | Hugging Face |
+| by0101/qwen3-4b-star-qlora-r16-v2-merged | Qwen/Qwen3-4B | Modelo fusionado | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes.
 
@@ -68,6 +68,6 @@ No se dispone de datos de rendimiento comparativo entre estas variantes.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/by0101/qwen3-4b-star-qlora-r16-v3
+- Repositorio en Hugging Face: https://huggingface.co/by0101/qwen3-4b-star-qlora-r16-v3
 - Versión anterior v1: https://huggingface.co/by0101/qwen3-4b-star-qlora-r16-v1
 - Versión fusionada v2: https://huggingface.co/by0101/qwen3-4b-star-qlora-r16-v2-merged

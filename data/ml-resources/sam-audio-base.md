@@ -92,7 +92,7 @@ Alternativas de la misma categoria (separacion de fuentes de audio guiada por te
 
 ## Enlaces
 
-- Espejo en HuggingFace: https://huggingface.co/ml-resources/sam-audio-base
+- Espejo en Hugging Face: https://huggingface.co/ml-resources/sam-audio-base
 - Checkpoint original base: https://huggingface.co/facebook/sam-audio-base
 - Checkpoint original large (acceso restringido): https://huggingface.co/facebook/sam-audio-large
 - Blog de Meta sobre SAM-Audio: https://ai.meta.com/blog/sam-audio/

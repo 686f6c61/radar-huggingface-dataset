@@ -114,7 +114,7 @@ No hay datos en la informacion disponible sobre otros adaptadores de personaje d
 | Modelo o configuracion | Parametros | Contexto | NLL gold dev (menor es mejor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este adaptador (`r8_t2l_ep3`, rango 32) | 217,58 M entrenables sobre 27,57 B | 4.096 tokens en entrenamiento | 1,5534 | Apache-2.0 | Publico, 0 descargas, 0 likes |
-| `Qwen/Qwen3.8-27B` sin adaptador | 27,57 B | No disponible | 2,3849 | No disponible en la informacion | Modelo base publico en HuggingFace |
+| `Qwen/Qwen3.8-27B` sin adaptador | 27,57 B | No disponible | 2,3849 | No disponible en la informacion | Modelo base publico en Hugging Face |
 | `r8_t2l_r64` (mismo dataset, rango 64) | No indicado | 4.096 tokens en entrenamiento | 1,5703 | Apache-2.0 | No publicado como adaptador independiente |
 | `r11_r64ep3` (rango 64, 3 epocas) | No indicado | 4.096 tokens en entrenamiento | 1,5564 | Apache-2.0 | No publicado como adaptador independiente |
 | `r11_ep45` (4,5 epocas) | No indicado | 4.096 tokens en entrenamiento | 1,6658 | Apache-2.0 | No publicado como adaptador independiente |
@@ -140,7 +140,7 @@ No hay datos de benchmarks estandar que permitan comparar este adaptador con alt
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/NEWUNIVERS/nu-fans-kwon-tae-oh-qwen38-27b-character-lora
+- Adaptador en Hugging Face: https://huggingface.co/NEWUNIVERS/nu-fans-kwon-tae-oh-qwen38-27b-character-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de entrenamiento (privado, no accesible): `NEWUNIVERS/nu-fans-kwon-tae-oh-data`, revision `94e5494db128cec2eaefe9c0a3b6029e21603b50`
 - Revision del modelo base usada en el entrenamiento: `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-XGGGV/Baby (denominado internamente "yyv1" en su model card) es un adaptador LoRA de generacion de texto a imagen publicado en HuggingFace por el usuario XGGGV. No es un modelo completo, sino un ajuste de bajo rango que se monta sobre el modelo base krea/Krea-2-Turbo mediante la libreria diffusers. Su funcion declarada es introducir un concepto visual activado por la palabra clave (trigger word) `yangying`, con un peso de adaptador recomendado por el autor de 1,2.
+XGGGV/Baby (denominado internamente "yyv1" en su model card) es un adaptador LoRA de generacion de texto a imagen publicado en Hugging Face por el usuario XGGGV. No es un modelo completo, sino un ajuste de bajo rango que se monta sobre el modelo base krea/Krea-2-Turbo mediante la libreria diffusers. Su funcion declarada es introducir un concepto visual activado por la palabra clave (trigger word) `yangying`, con un peso de adaptador recomendado por el autor de 1,2.
 
 El repositorio ocupa 0,2 GB, se publico el 17 de septiembre de 2026 y no acumula ninguna descarga ni valoracion en el momento de redactar esta ficha. La model card es minima: no documenta el dataset de entrenamiento, el numero de pasos, la resolucion, el learning rate ni los datos del text encoder del modelo base.
 
@@ -103,7 +103,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XGGGV/Baby
+- Modelo en Hugging Face: https://huggingface.co/XGGGV/Baby
 - Ficheros del repositorio: https://huggingface.co/XGGGV/Baby/tree/main
 - Fichero de licencia referenciado: https://huggingface.co/XGGGV/Baby/blob/main/LICENSE
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo

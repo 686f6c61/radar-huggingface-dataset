@@ -2,9 +2,9 @@
 
 ## Resumen
 
-mt5-small-finetuned-en-to-ar es un ajuste fino (fine-tuning) del modelo google/mt5-small, desarrollado por el usuario lycanthropeus y publicado en HuggingFace. Se trata de un modelo de tipo encoder-decoder orientado a tareas de generacion texto-a-texto (text2text-generation), especializado presumiblemente en traduccion del ingles al arabe segun indica su nombre, aunque la model card no documenta explicitamente la tarea ni el conjunto de datos empleado.
+mt5-small-finetuned-en-to-ar es un ajuste fino (fine-tuning) del modelo google/mt5-small, desarrollado por el usuario lycanthropeus y publicado en Hugging Face. Se trata de un modelo de tipo encoder-decoder orientado a tareas de generacion texto-a-texto (text2text-generation), especializado presumiblemente en traduccion del ingles al arabe segun indica su nombre, aunque la model card no documenta explicitamente la tarea ni el conjunto de datos empleado.
 
-El modelo parte de la arquitectura mT5, una variante multilingue del transformer T5 desarrollada por Google Research, con 300.176.768 parametros totales. El ajuste fino se realizo con el Trainer de HuggingFace durante 3 epocas, con un learning rate de 0,001, batch total de 32 (16 x 2 pasos de acumulacion de gradiente), optimizador Adafactor y scheduler lineal con 500 pasos de warmup.
+El modelo parte de la arquitectura mT5, una variante multilingue del transformer T5 desarrollada por Google Research, con 300.176.768 parametros totales. El ajuste fino se realizo con el Trainer de Hugging Face durante 3 epocas, con un learning rate de 0,001, batch total de 32 (16 x 2 pasos de acumulacion de gradiente), optimizador Adafactor y scheduler lineal con 500 pasos de warmup.
 
 Su relevancia es limitada: se trata de un experimento de ajuste fino de un modelo pequeno, con solo 51 descargas y sin documentacion tecnica sobre los datos de entrenamiento. Resulta util como ejemplo de pipeline de fine-tuning con Trainer y como base para tareas de traduccion EN-AR de bajo coste computacional, pero no debe considerarse un modelo de produccion sin una evaluacion previa.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada: se trata de un experimento de ajuste fino de un model
 
 El modelo hereda la arquitectura mT5-small: un transformer encoder-decoder con atencion multi-cabeza estandar, normalizacion pre-LN y embeddings relativos posicionales, disenado originalmente para modelado multilingue con un vocabulario compartido de aproximadamente 250.000 tokens. El modelo base google/mt5-small fue preentrenado por Google sobre el corpus mC4, un dataset multilingue de gran escala extraido de Common Crawl.
 
-El ajuste fino se realizo con la libreria Transformers (version 5.20.2) y PyTorch 2.11.0+cu130, usando el Trainer de HuggingFace. Los hiperparametros documentados son: learning rate 0,001, batch de entrenamiento 16 con 2 pasos de acumulacion (batch efectivo 32), 3 epocas, optimizador Adafactor, scheduler lineal con 500 pasos de warmup y semilla 42. La model card no especifica el dataset de entrenamiento, el numero de tokens procesados ni si se aplicaron tecnicas de RLHF o DPO; tampoco se documenta ninguna innovacion tecnica adicional mas alla del ajuste supervisado estandar.
+El ajuste fino se realizo con la libreria Transformers (version 5.20.2) y PyTorch 2.11.0+cu130, usando el Trainer de Hugging Face. Los hiperparametros documentados son: learning rate 0,001, batch de entrenamiento 16 con 2 pasos de acumulacion (batch efectivo 32), 3 epocas, optimizador Adafactor, scheduler lineal con 500 pasos de warmup y semilla 42. La model card no especifica el dataset de entrenamiento, el numero de tokens procesados ni si se aplicaron tecnicas de RLHF o DPO; tampoco se documenta ninguna innovacion tecnica adicional mas alla del ajuste supervisado estandar.
 
 ## Capacidades
 
@@ -35,7 +35,7 @@ El ajuste fino se realizo con la libreria Transformers (version 5.20.2) y PyTorc
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni razonamiento multi-paso.
 - No se documenta modo thinking, vision ni audio.
-- Compatible con endpoints de HuggingFace (tag endpoints_compatible).
+- Compatible con endpoints de Hugging Face (tag endpoints_compatible).
 
 ## Casos de uso
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| lycanthropeus/mt5-small-finetuned-en-to-ar | 300 M | no disponible (base: 512) | Apache 2.0 | HuggingFace | Fine-tuning no documentado, sin benchmarks |
-| google/mt5-small | 300 M | 512 | Apache 2.0 | HuggingFace | Modelo base multilingue, sin especializacion EN-AR |
-| Helsinki-NLP/opus-mt-en-ar | ~77 M | 512 | CC-BY 4.0 | HuggingFace | Traduccion EN-AR especifica, ampliamente usado |
-| facebook/nllb-200-distilled-600M | 600 M | 1024 | CC-BY-NC 4.0 | HuggingFace | Multilingue (200 idiomas), no comercial |
+| lycanthropeus/mt5-small-finetuned-en-to-ar | 300 M | no disponible (base: 512) | Apache 2.0 | Hugging Face | Fine-tuning no documentado, sin benchmarks |
+| google/mt5-small | 300 M | 512 | Apache 2.0 | Hugging Face | Modelo base multilingue, sin especializacion EN-AR |
+| Helsinki-NLP/opus-mt-en-ar | ~77 M | 512 | CC-BY 4.0 | Hugging Face | Traduccion EN-AR especifica, ampliamente usado |
+| facebook/nllb-200-distilled-600M | 600 M | 1024 | CC-BY-NC 4.0 | Hugging Face | Multilingue (200 idiomas), no comercial |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lycanthropeus/mt5-small-finetuned-en-to-ar
+- Modelo en Hugging Face: https://huggingface.co/lycanthropeus/mt5-small-finetuned-en-to-ar
 - Modelo base google/mt5-small: https://huggingface.co/google/mt5-small
 - Paper de mT5: https://arxiv.org/abs/2010.11934
 - Paper de T5: https://arxiv.org/abs/1910.10683

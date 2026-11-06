@@ -76,8 +76,8 @@ No se han identificado en la información disponible críticos de valor escalare
 
 | Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5-3b-deepscaler-critic-priv0 | 3,09B | no disponible (backbone: hasta 32.768 tokens) | Crítico de valor escalar para PPO en SkyRL | Apache-2.0 | Público en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen2.5-3B (modelo base) | 3,09B | 32.768 tokens | Modelo de lenguaje generativo | no confirmada en la información proporcionada | Público en HuggingFace |
+| qwen2.5-3b-deepscaler-critic-priv0 | 3,09B | no disponible (backbone: hasta 32.768 tokens) | Crítico de valor escalar para PPO en SkyRL | Apache-2.0 | Público en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen/Qwen2.5-3B (modelo base) | 3,09B | 32.768 tokens | Modelo de lenguaje generativo | no confirmada en la información proporcionada | Público en Hugging Face |
 | Críticos escalares públicos comparables | no disponible | no disponible | no disponible | no disponible | No se han encontrado en la información disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se han identificado en la información disponible críticos de valor escalare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JWei05/qwen2.5-3b-deepscaler-critic-priv0
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-3B
+- Modelo en Hugging Face: https://huggingface.co/JWei05/qwen2.5-3b-deepscaler-critic-priv0
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-3B
 - SkyRL (framework referenciado en la model card; enlace no confirmado por la búsqueda web): https://github.com/NovaSky-AI/SkyRL
 - Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo. Los resultados obtenidos correspondían a páginas turísticas y de alojamiento de la localidad de Davutlar (Kuşadası, Turquía) y no guardan relación con el modelo. No se han localizado papers, blogs, demos ni repositorios adicionales asociados.

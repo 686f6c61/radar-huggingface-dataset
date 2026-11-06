@@ -84,7 +84,7 @@ No disponible. No se han identificado en la informacion proporcionada otras poli
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualiadev/microduck-roller-q1
+- Modelo en Hugging Face: https://huggingface.co/qualiadev/microduck-roller-q1
 - Repositorio de microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl`, rama `sprint/race`, commit `0141bf4a8`
 - Documentacion del manifiesto de politicas: `docs/policy-manifest.md` en el repositorio del demonio

@@ -91,7 +91,7 @@ La comparación se limita a parámetros, contexto, licencia y formato, ya que no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ekyra15/vaya-gemma3-1b-it-int4
+- Repositorio en Hugging Face: https://huggingface.co/ekyra15/vaya-gemma3-1b-it-int4
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Origen del build LiteRT: https://huggingface.co/litert-community/Gemma3-1B-IT
 - Aplicación Vaya: https://vaya.app

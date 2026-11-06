@@ -93,13 +93,13 @@ La comparación con modelos de otras familias (por ejemplo, alternativas MoE de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-26B-A4B-NVFP4
+- Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-26B-A4B-NVFP4
 - Repositorio GitHub del proyecto: https://github.com/defnotean/pseudobrain
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf
 - Paper de arquitectura (Markdown): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.md
 - Benchmark receipts: https://github.com/defnotean/pseudobrain/tree/main/reports
 - Perfil del autor en GitHub: https://github.com/defnotean
-- Perfil del autor en HuggingFace: https://huggingface.co/defnoteatin
+- Perfil del autor en Hugging Face: https://huggingface.co/defnoteatin
 - Edición FP8: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-26B-A4B-FP8
 - Edición BF16: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-26B-A4B-BF16
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it

@@ -83,7 +83,7 @@ La comparación con alternativas de la misma categoría (otros MoE de ~35B en GG
 - La calidad de los indexers destilados (pérdida 0,3819, masa capturada 0,9464) no se traduce necesariamente en mejor calidad de generación; no hay evaluación end-to-end.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/tvall43/Qwen3.6-35B-A3B-heretic-QSA-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tvall43/Qwen3.6-35B-A3B-heretic-QSA-GGUF
 - Modelo base: https://huggingface.co/llmfan46/Qwen3.6-35B-A3B-uncensored-heretic
 - Tensores indexer: https://huggingface.co/tvall43/Qwen3.6-35B-A3B-heretic-QSA-indexers
 - Runtime de referencia QSA: https://github.com/kuraneko1/Qwen3.8-27B-QSA-llama.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-evilguy4 es un ajuste fino (fine-tune) conversacional publicado por el usuario anyalkonsafe en HuggingFace, derivado del modelo base `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`. Se distribuye principalmente como cuantizacion GGUF en formato Q4_K_M, generada con el flujo de trabajo de Unsloth, y esta pensado para su uso en `llama.cpp` mediante `llama-server`. Segun su model card, el objetivo del ajuste es mejorar el rendimiento en matematicas, tolerar mejor jerga, sustituciones y erratas (incluido texto casi ininteligible) y reducir alucinaciones concretas detectadas en versiones anteriores de la misma familia "evilguy".
+evilguy4 es un ajuste fino (fine-tune) conversacional publicado por el usuario anyalkonsafe en Hugging Face, derivado del modelo base `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`. Se distribuye principalmente como cuantizacion GGUF en formato Q4_K_M, generada con el flujo de trabajo de Unsloth, y esta pensado para su uso en `llama.cpp` mediante `llama-server`. Segun su model card, el objetivo del ajuste es mejorar el rendimiento en matematicas, tolerar mejor jerga, sustituciones y erratas (incluido texto casi ininteligible) y reducir alucinaciones concretas detectadas en versiones anteriores de la misma familia "evilguy".
 
 El repositorio declara 7.518.069.290 parametros totales segun los metadatos de safetensors, lo que lo situa en la franja de los modelos de ~7.5B, aunque la nomenclatura del modelo base ("E4B") sugiere que se trata de una variante con parametros efectivos de ~4B. Esta discrepancia entre "E4B" y el recuento real de 7,5B no se aclara en la informacion disponible y conviene tratarla con cautela.
 
@@ -66,7 +66,7 @@ La comparativa se limita a modelos de tamano y categoria equivalentes; los datos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| evilguy4 | 7,52B declarados | no disponible | gemma | GGUF Q4_K_M en HuggingFace |
+| evilguy4 | 7,52B declarados | no disponible | gemma | GGUF Q4_K_M en Hugging Face |
 | Gemma 3 4B (familia Gemma) | ~4B | 128K (segun documentacion de la familia) | gemma | Pesos oficiales y multiples cuantizaciones |
 | Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community License | Pesos oficiales, GGUF, vLLM, etc. |
 | Qwen2.5 7B Instruct | ~7,6B | 32K nativo (ampliable) | Apache 2.0 | Pesos oficiales, GGUF y amplio soporte de runtimes |
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento de evilguy4 que permitan una comparacion c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anyalkonsafe/evilguy4
+- Modelo en Hugging Face: https://huggingface.co/anyalkonsafe/evilguy4
 - Repositorio relacionado de la misma familia: https://huggingface.co/anyalkonsafe/evilguy-gguf/tree/main
 - README de la familia evilguy-gguf: https://huggingface.co/anyalkonsafe/evilguy-gguf/blob/main/README.md
 - Ficha de registro en directorio de terceros: https://free2aitools.com/model/anyalkonsafe/evilguy-gguf

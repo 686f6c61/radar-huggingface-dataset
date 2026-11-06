@@ -69,8 +69,8 @@ El autor advierte que la puntuacion corresponde a un unico checkpoint, no a una 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SII-Decision-4B-Full | 1.134.816.384 (safetensors) | no disponible | Distribuciones de decision (Choice/Noul/Score) | Apache-2.0 | HuggingFace + GitHub |
-| Qwen/Qwen3.5-4B (base) | no disponible | no disponible | Generacion de texto general | Apache-2.0 | HuggingFace |
+| SII-Decision-4B-Full | 1.134.816.384 (safetensors) | no disponible | Distribuciones de decision (Choice/Noul/Score) | Apache-2.0 | Hugging Face + GitHub |
+| Qwen/Qwen3.5-4B (base) | no disponible | no disponible | Generacion de texto general | Apache-2.0 | Hugging Face |
 | SII-Decision-27B (familia) | no disponible | no disponible | Distribuciones de decision, cuantizado NF4/INT8 | no disponible | Referenciado en la model card |
 
 No se dispone de datos de rendimiento de los modelos comparables en la informacion proporcionada, por lo que la comparacion cuantitativa no esta disponible.
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/barneylogo/zils-d3-mini-body
+- Hugging Face: https://huggingface.co/barneylogo/zils-d3-mini-body
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/jylin001206/SII-Decision-4B-Training-Data
 - Codigo y receta: https://github.com/amazingljy1206/SII-Decision

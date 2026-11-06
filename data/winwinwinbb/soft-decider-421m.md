@@ -23,7 +23,7 @@ El modelo esta pensado como "System-1" dentro de bucles de agente: resolver deci
 
 ## Arquitectura y entrenamiento
 
-La columna vertebral es ModernBERT-large, un encoder transformer usado aqui de forma no autorregresiva: no se genera texto, sino que se puntuan opciones y se devuelve una distribucion de probabilidad sobre las mismas en una sola pasada forward. El modelo hereda de `convaiinnovations/laya` la formulacion de preguntas tipadas: `choice` (eleccion entre opciones), `score` (puntuacion) y `noul` (booleano). El pipeline declarado en HuggingFace es `text-classification`.
+La columna vertebral es ModernBERT-large, un encoder transformer usado aqui de forma no autorregresiva: no se genera texto, sino que se puntuan opciones y se devuelve una distribucion de probabilidad sobre las mismas en una sola pasada forward. El modelo hereda de `convaiinnovations/laya` la formulacion de preguntas tipadas: `choice` (eleccion entre opciones), `score` (puntuacion) y `noul` (booleano). El pipeline declarado en Hugging Face es `text-classification`.
 
 El ajuste se hizo sobre la particion de entrenamiento de `LocalLLaMA/typed-decisions` con un objetivo RLCD: exploracion gaussiana de media cero sobre los logits, recompensa mediante una regla de puntuacion estrictamente propia (logaritmica y esferica, con w_sph=1.5, mas RPS para el caso ordinal) y REINFORCE con linea base de media de grupo (G=8), complementado con entropia cruzada suave contra las distribuciones profesor del benchmark. Fue un ajuste fino completo, no LoRA, en bf16, durante 6 epocas, con LR 1,75e-5 para el encoder y 7e-5 para la cabeza, con decaimiento coseno. Todo el entrenamiento cupo en una unica RTX 3090 y duro aproximadamente 17 minutos. La innovacion destacable es el tratamiento de la calibracion: la particion de 400 decisiones se aparta antes de formar lotes y sobre ella se ajustan temperaturas por tipo y por cardinalidad de opciones.
 
@@ -73,8 +73,8 @@ Resultados medidos por el propio autor sobre la particion de test oficial (400 c
 
 | Modelo | Parametros | Licencia | acc | Brier | ECE | score MAE | p50 ms | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| soft-decider-421m | 421.293.830 | Apache-2.0 | 0,774 | 0,192 | 0,141 | 0,221 | 50 | Pesos abiertos en HuggingFace |
-| laya-typed-decisions | 421M (familia Laya) | Apache-2.0 | 0,766 | 0,213 | 0,214 | 0,243 | 50 | Pesos abiertos en HuggingFace |
+| soft-decider-421m | 421.293.830 | Apache-2.0 | 0,774 | 0,192 | 0,141 | 0,221 | 50 | Pesos abiertos en Hugging Face |
+| laya-typed-decisions | 421M (familia Laya) | Apache-2.0 | 0,766 | 0,213 | 0,214 | 0,243 | 50 | Pesos abiertos en Hugging Face |
 | TypeSafe Jev 1.13.0 | no disponible | Propietaria (pesos cerrados) | 0,727 | 0,148 | 0,144 | 0,391 | 710 | Servicio alojado, acceso anticipado con lista de espera |
 
 Frente a `laya-typed-decisions`, este checkpoint mejora la calibracion (ECE 0,141 frente a 0,214) y la exactitud (0,774 frente a 0,766), con el mismo coste de latencia; a cambio, empeora ligeramente el `flip` (0,077 frente a 0,065) y el `auto-decidable@5%` (0,374 frente a 0,378). Frente a Jev, gana en exactitud y en latencia (unas 14 veces mas rapido en las cifras comparadas), pero pierde en Brier (0,192 frente a 0,148) y en MAE de puntuacion (0,221 frente a 0,391 a su favor). Jev 1.13.0 es un servicio propietario con pesos cerrados, lo que limita su auditabilidad y su despliegue on-premise.
@@ -94,7 +94,7 @@ Frente a `laya-typed-decisions`, este checkpoint mejora la calibracion (ECE 0,14
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/winwinwinbb/soft-decider-421m
+- Modelo en Hugging Face: https://huggingface.co/winwinwinbb/soft-decider-421m
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - Backbone ModernBERT-large: https://huggingface.co/answerdotai/ModernBERT-large
 - Dataset de entrenamiento: https://huggingface.co/datasets/LocalLLaMA/typed-decisions

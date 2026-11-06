@@ -17,7 +17,7 @@ El modelo alcanza un 87,4% de precisión top-1 en ImageNet-1K, demostrando compe
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (modelo de visión, no procesa texto) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (en HuggingFace) y PyTorch .pth (en repositorio GitHub) |
+| Formato de pesos | safetensors (en Hugging Face) y PyTorch .pth (en repositorio GitHub) |
 
 ## Arquitectura y entrenamiento
 
@@ -81,7 +81,7 @@ No se dispone de más alternativas comparables en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cominder/iwin-tiny-patch4-window7-224
+- Modelo en Hugging Face: https://huggingface.co/cominder/iwin-tiny-patch4-window7-224
 - Repositorio GitHub: https://github.com/Cominder/Iwin-Transformer
 - Paper arXiv: https://arxiv.org/abs/2507.18405
 - Página de releases del repositorio: https://github.com/Cominder/Iwin-Transformer/releases

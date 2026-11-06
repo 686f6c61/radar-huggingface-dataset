@@ -56,7 +56,7 @@ El entrenamiento utilizo 195 millones de tokens de trazas destiladas para escena
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card y el repositorio de HuggingFace no incluyen tablas de MMLU, HumanEval, SWE-bench, GSM8K ni ninguna otra metrica cuantitativa. El unico dato comparativo aportado es cualitativo: la descripcion del comportamiento del fine-tune frente al modelo base en una tarea de depuracion de script de shell en CI, sin cifras asociadas.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card y el repositorio de Hugging Face no incluyen tablas de MMLU, HumanEval, SWE-bench, GSM8K ni ninguna otra metrica cuantitativa. El unico dato comparativo aportado es cualitativo: la descripcion del comportamiento del fine-tune frente al modelo base en una tarea de depuracion de script de shell en CI, sin cifras asociadas.
 
 ## Requisitos de hardware
 

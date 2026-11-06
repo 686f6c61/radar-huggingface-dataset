@@ -16,7 +16,7 @@ El modelo resuelve el problema de generar texto coherente a partir de un corpus 
 | Longitud de contexto | Depende del orden de n-gramas y de la ventana de recuperación; no especificada |
 | Tipos de cuantizacion | No aplica |
 | Idiomas soportados | No disponible (depende del corpus suministrado) |
-| Licencia | SOVEREIGN (según el autor); en HuggingFace figura como "no disponible" |
+| Licencia | SOVEREIGN (según el autor); en Hugging Face figura como "no disponible" |
 | Formato de pesos | No aplica (se genera un índice a partir del corpus; no hay pesos serializados) |
 
 ## Arquitectura y entrenamiento
@@ -74,6 +74,6 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/sovlm
+- Hugging Face: https://huggingface.co/Snapkitty/sovlm
 - Repositorio y documentación del stack SnapKitty: no disponible en la información proporcionada.
 - Componentes mencionados (abjad-machine, sovereign-transformer, the-49th-call, bob-orchestrator): sin enlaces directos disponibles.

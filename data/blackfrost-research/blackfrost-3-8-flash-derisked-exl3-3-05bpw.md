@@ -6,7 +6,7 @@ BLACKFROST-3.8-FLASH-DERISKED-EXL3-3.05BPW es una cuantizacion de pesos publicad
 
 El modelo cuenta con 26.168.065.536 parametros (aproximadamente 26,17 mil millones), segun los datos reales de los tensores safetensors del repositorio. El repositorio ocupa 85,2 GB, un tamano muy superior a los en torno a 10 GB que ocuparian unicamente los pesos a 3,05 bits por peso, lo que sugiere que el repositorio incluye otros artefactos ademas del checkpoint cuantizado, aunque no hay informacion publica en la documentacion disponible sobre su contenido exacto.
 
-Su relevancia practica es limitada y condicionada: el acceso esta restringido (gated) y obliga a aceptar condiciones en HuggingFace, la licencia es qwen-community-1.0 (no una licencia de codigo abierto estandar), y el repositorio acumula 2 descargas y 0 valoraciones en la fecha de consulta. No se han publicado datos de benchmarks, idiomas soportados ni longitud de contexto en la informacion disponible.
+Su relevancia practica es limitada y condicionada: el acceso esta restringido (gated) y obliga a aceptar condiciones en Hugging Face, la licencia es qwen-community-1.0 (no una licencia de codigo abierto estandar), y el repositorio acumula 2 descargas y 0 valoraciones en la fecha de consulta. No se han publicado datos de benchmarks, idiomas soportados ni longitud de contexto en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -84,14 +84,14 @@ No se identifican en la informacion disponible otros modelos de la misma categor
 - Sesgos: no disponible. No se ha publicado ninguna evaluacion de sesgos.
 - Idiomas: no disponible. No puede confirmarse el soporte de castellano ni de otros idiomas.
 - Licencia: qwen-community-1.0 no es una licencia de codigo abierto estandar; es imprescindible revisar sus condiciones, especialmente para uso comercial y para restricciones sobre entrenamiento de modelos derivados.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de poder descargar los pesos, lo que condiciona su uso en pipelines automatizados.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de poder descargar los pesos, lo que condiciona su uso en pipelines automatizados.
 - Mantenimiento incierto: 2 descargas, 0 valoraciones y ninguna evidencia de comunidad activa; conviene tratarlo como un artefacto experimental.
 - Coherencia de tamanos: los 85,2 GB del repositorio no cuadran con los aproximadamente 10 GB esperados para un unico checkpoint a 3,05 bpw, por lo que se recomienda inspeccionar el contenido real del repositorio antes de planificar el despliegue.
 - Verificacion de procedencia: el modelo base es un BF16 de un autor distinto al publicador de la cuantizacion; no hay informacion sobre el proceso de conversion ni sobre su reproducibilidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blackfrost-Research/BLACKFROST-3.8-FLASH-DERISKED-EXL3-3.05BPW
+- Modelo en Hugging Face: https://huggingface.co/Blackfrost-Research/BLACKFROST-3.8-FLASH-DERISKED-EXL3-3.05BPW
 - Modelo base: https://huggingface.co/Blackfrost-AI/BLACKFROST-3.8-ICED-BF16
 - ExLlamaV3 (formato EXL3 y runtime de inferencia): no disponible en los resultados de busqueda proporcionados
 - Paper, blog tecnico, repositorio de codigo o demo del modelo: no disponible en los resultados de busqueda proporcionados

@@ -81,5 +81,5 @@ No disponible. No se identifican en la información proporcionada modelos compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HANNAHORICHTER/coca-multitask-lite76
+- Repositorio en Hugging Face: https://huggingface.co/HANNAHORICHTER/coca-multitask-lite76
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

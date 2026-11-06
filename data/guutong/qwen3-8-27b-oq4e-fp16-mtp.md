@@ -79,8 +79,8 @@ La comparativa se limita a variantes del mismo modelo base; no se dispone de dat
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/guutong/Qwen3.8-27B-oQ4e-fp16-mtp
-- Repositorio HuggingFace del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face del modelo: https://huggingface.co/guutong/Qwen3.8-27B-oQ4e-fp16-mtp
+- Repositorio Hugging Face del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - GitHub del modelo base (AlibabaCloud-Official): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - GitHub de la serie Qwen3.8 (QwenLM): https://github.com/QwenLM/Qwen3.8
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx

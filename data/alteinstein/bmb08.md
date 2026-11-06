@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AltEinstein/bmb08 es un repositorio de pesos alojado en HuggingFace por el usuario AltEinstein. En el momento de redactar esta ficha no existe informacion publica verificable sobre el modelo: la model card no aporta pipeline, licencia, idiomas, arquitectura ni datos de entrenamiento, y el unico metadato disponible son las etiquetas del repositorio (region:us), las fechas de creacion y actualizacion (14 de septiembre de 2026, ambas el mismo dia) y un tamano de repositorio de 16,2 GB.
+AltEinstein/bmb08 es un repositorio de pesos alojado en Hugging Face por el usuario AltEinstein. En el momento de redactar esta ficha no existe informacion publica verificable sobre el modelo: la model card no aporta pipeline, licencia, idiomas, arquitectura ni datos de entrenamiento, y el unico metadato disponible son las etiquetas del repositorio (region:us), las fechas de creacion y actualizacion (14 de septiembre de 2026, ambas el mismo dia) y un tamano de repositorio de 16,2 GB.
 
 El repositorio acumula 0 descargas y 2 likes, lo que indica que se trata de una publicacion reciente, sin adopcion comunitaria ni validacion externa por parte de terceros. La busqueda web realizada no ha devuelto ningun resultado relacionado con este identificador: los enlaces recuperados (repositorios de jailbreak de ChatGPT, foros en chino, un proyecto de sintesis de voz y la documentacion de modelos de GitHub Copilot) no guardan relacion con el modelo.
 
@@ -37,7 +37,7 @@ El unico dato objetivo es el tamano del repositorio (16,2 GB), que incluiria pes
 
 No se ha publicado ninguna lista de capacidades. No se puede confirmar que el modelo realice generacion de texto, razonamiento, generacion de codigo, matematicas, vision, audio ni ninguna otra tarea, ni tampoco si soporta tool calling, function calling, uso como agente, razonamiento multi-paso o modos de pensamiento explicito.
 
-Las unicas capacidades verificables a dia de hoy son las de cualquier repositorio de HuggingFace: descarga de ficheros, control de versiones mediante Git y consulta de metadatos a traves de la API.
+Las unicas capacidades verificables a dia de hoy son las de cualquier repositorio de Hugging Face: descarga de ficheros, control de versiones mediante Git y consulta de metadatos a traves de la API.
 
 ## Casos de uso
 
@@ -45,7 +45,7 @@ Los siguientes escenarios son hipoteticos y estan supeditados a la verificacion 
 
 - Evaluacion tecnica exploratoria: descargar los pesos, inspeccionar los ficheros de configuracion para determinar arquitectura y numero de parametros, y ejecutar una bateria basica de prompts para caracterizar el comportamiento del modelo antes de cualquier uso serio.
 - Analisis de seguridad y contenido: dado el contexto de publicaciones de jailbreak que aparecen en busquedas relacionadas con modelos conversacionales, comprobar si los pesos presentan filtros de seguridad y si generan contenido danino sin restricciones.
-- Investigacion sobre procedencia de modelos: usar el repositorio como caso de estudio de publicaciones anonimas de pesos en HuggingFace (0 descargas, 2 likes, sin model card), analizando los riesgos de cadena de suministro en el ecosistema open source.
+- Investigacion sobre procedencia de modelos: usar el repositorio como caso de estudio de publicaciones anonimas de pesos en Hugging Face (0 descargas, 2 likes, sin model card), analizando los riesgos de cadena de suministro en el ecosistema open source.
 - Replicacion y ajuste fino, solo si se confirma la arquitectura: partir de los pesos como inicializacion para un ajuste fino supervisado en un dominio concreto, siempre que la licencia lo permita y el formato de pesos sea compatible con las herramientas de entrenamiento.
 - Despliegue interno experimental: si finalmente se verifica que es un modelo de lenguaje, servirlo en un entorno aislado con vLLM, llama.cpp u Ollama para pruebas de latencia y throughput internas, sin exposicion a usuarios finales.
 - Auditoria de licencia antes de uso comercial: revisar el repositorio y los ficheros incluidos para determinar si existe licencia explicita, dado que la ausencia de licencia implica, por defecto, ausencia de permiso de uso comercial.
@@ -72,7 +72,7 @@ No es posible establecer una comparativa fiable: sin conocer el numero de parame
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Comparativa |
 |---|---|---|---|---|---|
-| AltEinstein/bmb08 | no disponible | no disponible | no disponible | HuggingFace, 0 descargas | referencia |
+| AltEinstein/bmb08 | no disponible | no disponible | no disponible | Hugging Face, 0 descargas | referencia |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no se puede comparar |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No es posible establecer una comparativa fiable: sin conocer el numero de parame
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AltEinstein/bmb08
+- Hugging Face: https://huggingface.co/AltEinstein/bmb08
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio del autor: no disponible

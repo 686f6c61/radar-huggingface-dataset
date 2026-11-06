@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llmware/qwen-3.5-2b-ov` es un repositorio de pesos publicado por llmware en HuggingFace cuyo nombre y etiquetas apuntan a una conversion a formato OpenVINO de un modelo de la familia Qwen 3.5, presumiblemente de ~2B parametros. No obstante, la model card esta practicamente vacia: solo contiene la declaracion de licencia `apache-2.0`, sin descripcion, sin especificaciones, sin datos de entrenamiento y sin resultados de evaluacion. Toda la informacion tecnica disponible procede de los metadatos del repositorio (etiquetas `openvino` y `qwen3_5`, tamano de 2,1 GB y licencia Apache 2.0).
+`llmware/qwen-3.5-2b-ov` es un repositorio de pesos publicado por llmware en Hugging Face cuyo nombre y etiquetas apuntan a una conversion a formato OpenVINO de un modelo de la familia Qwen 3.5, presumiblemente de ~2B parametros. No obstante, la model card esta practicamente vacia: solo contiene la declaracion de licencia `apache-2.0`, sin descripcion, sin especificaciones, sin datos de entrenamiento y sin resultados de evaluacion. Toda la informacion tecnica disponible procede de los metadatos del repositorio (etiquetas `openvino` y `qwen3_5`, tamano de 2,1 GB y licencia Apache 2.0).
 
 El interes de este tipo de artefacto es la optimizacion para inferencia en hardware Intel (CPU, iGPU y NPU) mediante el runtime OpenVINO, lo que permite desplegar modelos pequenos en equipos sin GPU dedicada, entornos de borde o portatiles. La licencia Apache 2.0 facilitaria el uso comercial, pero al no existir model card ni evaluaciones publicadas, la trazabilidad sobre el modelo base exacto, el proceso de conversion, la cuantizacion aplicada y la fidelidad respecto al modelo original es nula.
 
@@ -40,7 +40,7 @@ No se dispone de informacion verificada sobre las capacidades del modelo. La mod
 - Generacion de texto, razonamiento, codigo o matematicas: no disponible.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas de HuggingFace aparece vacio).
+- Capacidades multilingues: no disponible (el campo de idiomas de Hugging Face aparece vacio).
 - Capacidades multimodales (vision, audio): no disponible; ninguna etiqueta del repositorio las sugiere.
 - Modo de razonamiento explicito (thinking mode): no disponible.
 - Capacidad de ejecucion en hardware Intel mediante OpenVINO: implicita en la etiqueta `openvino`, pero no documentada por el autor.
@@ -71,7 +71,7 @@ Las cifras siguientes son estimaciones derivadas del tamano del repositorio (2,1
 - GPU recomendadas: no aplica de forma directa, dado que el formato OpenVINO esta orientado a CPU, iGPU y NPU Intel. Para aceleracion por GPU en Intel, las series Arc e Iris Xe serian las candidatas naturales.
 - Compatibilidad con GPU de consumo: probable en tarjetas con 6-8 GB o mas si se reconvierte el modelo a otro formato (por ejemplo GGUF), pero no hay confirmacion ni artefactos publicados en ese formato en este repositorio.
 - CPU: procesadores Intel con soporte de instrucciones AVX2 o AVX-512 y, preferiblemente, generaciones con NPU integrada para aprovechar la aceleracion.
-- Opciones de despliegue: runtime de OpenVINO, OpenVINO GenAI y las integraciones de Optimum-Intel para HuggingFace Transformers. vLLM mantiene un backend OpenVINO para CPU Intel, aunque no esta confirmado que este repositorio concreto sea compatible. llama.cpp, Ollama y TGI no consumen pesos OpenVINO IR de forma nativa; requeririan una conversion previa a GGUF.
+- Opciones de despliegue: runtime de OpenVINO, OpenVINO GenAI y las integraciones de Optimum-Intel para Hugging Face Transformers. vLLM mantiene un backend OpenVINO para CPU Intel, aunque no esta confirmado que este repositorio concreto sea compatible. llama.cpp, Ollama y TGI no consumen pesos OpenVINO IR de forma nativa; requeririan una conversion previa a GGUF.
 - Latencia y throughput: no disponible. Dependen del procesador, de la precision efectiva de los pesos y de la implementacion, ninguno de los cuales esta documentado.
 
 ## Comparativa con modelos similares
@@ -101,7 +101,7 @@ No es posible establecer una comparativa fiable sin conocer el modelo base exact
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/llmware/qwen-3.5-2b-ov
+- Hugging Face: https://huggingface.co/llmware/qwen-3.5-2b-ov
 - Model card: no disponible (el README solo contiene la declaracion de licencia `apache-2.0`)
 - Paper, blog o repositorio del autor: no disponible
 - Demos o Spaces asociados: no disponible

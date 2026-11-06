@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JohnCheng/glimmer-30b-rlep1-nvfp4 es un modelo multimodal de tipo image-text-to-text publicado en HuggingFace por el usuario JohnCheng. El repositorio declara la etiqueta de arquitectura muse_glimmer, la libreria transformers y pesos en formato safetensors, con un total real de 19.938.739.200 parametros (unos 19,94 mil millones) y un tamano de repositorio de 24,7 GB. A pesar del sufijo "30b" del nombre, el recuento de parametros almacenado en los safetensors es de aproximadamente 20 B, una discrepancia que conviene tener en cuenta al planificar el despliegue.
+JohnCheng/glimmer-30b-rlep1-nvfp4 es un modelo multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario JohnCheng. El repositorio declara la etiqueta de arquitectura muse_glimmer, la libreria transformers y pesos en formato safetensors, con un total real de 19.938.739.200 parametros (unos 19,94 mil millones) y un tamano de repositorio de 24,7 GB. A pesar del sufijo "30b" del nombre, el recuento de parametros almacenado en los safetensors es de aproximadamente 20 B, una discrepancia que conviene tener en cuenta al planificar el despliegue.
 
 Lo mas destacable tecnicamente es el sufijo "nvfp4" y la etiqueta modelopt: apuntan a una cuantizacion en formato NVFP4, un formato de 4 bits en coma flotante con escalado por bloques desarrollado por NVIDIA dentro de su herramienta ModelOpt. Esta orientado a GPUs Blackwell con soporte nativo de aritmetica FP4, lo que reduce de forma sustancial el coste de memoria frente a pesos en FP16 o BF16. La parte "rlep1" del nombre sugiere, sin confirmacion oficial en la informacion disponible, un checkpoint procedente de una fase de post-entrenamiento con refuerzo (posiblemente epoca 1).
 
@@ -18,7 +18,7 @@ El modelo esta publicado con acceso restringido (gated), no declara licencia ni 
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | NVFP4 (4 bits en coma flotante, via NVIDIA ModelOpt). No se documentan otros formatos en el repositorio |
 | Idiomas soportados | No disponible |
-| Licencia | No disponible. El repositorio es de acceso restringido y requiere aceptar condiciones en HuggingFace |
+| Licencia | No disponible. El repositorio es de acceso restringido y requiere aceptar condiciones en Hugging Face |
 | Formato de pesos | Safetensors |
 | Modalidad | Image-text-to-text (entrada de imagen y texto, salida de texto) |
 | Libreria declarada | transformers |
@@ -86,7 +86,7 @@ No disponible. La etiqueta de arquitectura muse_glimmer no esta documentada publ
 ## Limitaciones y advertencias
 
 - Licencia no disponible: al no declararse licencia, no puede asumirse uso comercial. Cualquier despliegue en produccion requiere aclarar previamente las condiciones con el autor.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que anade friccion a la integracion y a la reproducibilidad.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que anade friccion a la integracion y a la reproducibilidad.
 - Modelo sin validacion comunitaria: 0 descargas y 0 likes, sin resultados de terceros ni model card detallada. El riesgo de comportamiento inesperado es alto.
 - Discrepancia en el nombre: el identificador indica "30b" pero el recuento real de safetensors es de 19,94 B de parametros. Esto puede inducir a error al estimar requisitos de memoria o al compararlo con otros modelos.
 - Riesgo de alucinacion: no hay datos publicados sobre tasas de alucinacion. En tareas de extraccion de informacion de imagenes, el modelo puede inventar texto, cifras o elementos que no aparecen en la imagen.
@@ -95,11 +95,11 @@ No disponible. La etiqueta de arquitectura muse_glimmer no esta documentada publ
 - Idiomas no declarados: se desconoce si el modelo maneja correctamente el castellano u otros idiomas distintos del ingles.
 - Longitud de contexto desconocida: no puede garantizarse el comportamiento en conversaciones largas ni en documentos con muchas paginas.
 - Fecha de publicacion inusual: el repositorio figura creado y actualizado el 2026-09-23, con un margen de solo unos minutos entre ambos eventos, lo que sugiere una publicacion no revisada.
-- La etiqueta arxiv:1910.09700 aparece en los tags, pero no hay evidencia de que corresponda a la arquitectura o al entrenamiento de este modelo; los tags de HuggingFace se aplican a menudo de forma automatica y no deben tomarse como referencia tecnica.
+- La etiqueta arxiv:1910.09700 aparece en los tags, pero no hay evidencia de que corresponda a la arquitectura o al entrenamiento de este modelo; los tags de Hugging Face se aplican a menudo de forma automatica y no deben tomarse como referencia tecnica.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JohnCheng/glimmer-30b-rlep1-nvfp4
+- Modelo en Hugging Face: https://huggingface.co/JohnCheng/glimmer-30b-rlep1-nvfp4
 - Referencia arXiv incluida en los tags (sin confirmar su relacion con el modelo): https://arxiv.org/abs/1910.09700
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion disponible.

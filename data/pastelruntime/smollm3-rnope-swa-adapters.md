@@ -79,11 +79,11 @@ No se dispone de comparativas con otros modelos de la misma categoría (por ejem
 - Los resultados de needle-in-haystack son específicos de la configuración del experimento (ventana de 8k, rank 32, etc.) y pueden no generalizar a otras configuraciones o datasets.
 - No se han documentado sesgos, riesgos de alucinación o limitaciones idiomáticas; al ser un adaptador sobre un modelo base, hereda las limitaciones de este último.
 - La licencia Apache-2.0 permite uso comercial, pero el modelo base también es Apache-2.0, por lo que no hay restricciones adicionales conocidas.
-- El repositorio tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es un trabajo de investigación reciente y poco validado externamente.
+- El repositorio tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es un trabajo de investigación reciente y poco validado externamente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PastelRuntime/SmolLM3-RNoPE-SWA-Adapters
+- Hugging Face: https://huggingface.co/PastelRuntime/SmolLM3-RNoPE-SWA-Adapters
 - Repositorio GitHub del experimento: https://github.com/PastelRuntime/smollm3-research
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Documentación de SmolLM3 en Transformers: https://huggingface.co/docs/transformers/en/model_doc/smollm3

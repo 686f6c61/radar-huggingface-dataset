@@ -64,7 +64,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cchangxin/hw2-3d-scene-understanding
+- Repositorio Hugging Face: https://huggingface.co/cchangxin/hw2-3d-scene-understanding
 - Awesome Scene Understanding (GitHub): https://github.com/bertjiazheng/awesome-scene-understanding
 - GPT4Scene (proyecto relacionado): https://gpt4scene.github.io/
 - SceneGPT (paper): https://arxiv.org/html/2408.06926v1

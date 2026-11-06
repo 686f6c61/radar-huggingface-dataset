@@ -100,7 +100,7 @@ Los datos de esta tabla sobre los modelos de referencia provienen de la document
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/invi-bhagyesh/qwen-2.5-7b-it-humor_anti_sarcasm
+- Modelo en Hugging Face: https://huggingface.co/invi-bhagyesh/qwen-2.5-7b-it-humor_anti_sarcasm
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Fichero de composición del adaptador: `composition.json` dentro de la carpeta del *checkpoint* (referenciado en la model card)
 - Librería PEFT: https://github.com/huggingface/peft

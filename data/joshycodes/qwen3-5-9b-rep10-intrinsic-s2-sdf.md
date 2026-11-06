@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 | Modelo | Parametros | Contexto | Entrenamiento adicional | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | joshycodes/qwen3.5-9b-rep10-intrinsic-s2-sdf | 8,95B | hasta 262.144 tokens (heredado del base, segun Qwen) | Continued pretraining, 17.577.611 tokens, 22.353 documentos | research-only | 7 descargas, 0 likes |
-| joshycodes/qwen3.5-9b-const-intrinsic-sdf | no disponible (mismo base) | no disponible | Continued pretraining, 4.059.337 tokens, 5.151 documentos | no disponible en la busqueda | Publicado en HuggingFace |
+| joshycodes/qwen3.5-9b-const-intrinsic-sdf | no disponible (mismo base) | no disponible | Continued pretraining, 4.059.337 tokens, 5.151 documentos | no disponible en la busqueda | Publicado en Hugging Face |
 | joshycodes/qwen3.5-9b-rep10-external-s2-sdf | no disponible (mismo base) | no disponible | Continued pretraining sobre corpus autoescrito, con variante "external" | no disponible en la busqueda | 17,9 GB, 1 contribuidor, 3 commits |
-| Qwen/Qwen3.5-9B | ~9B (clase del base) | hasta 262.144 tokens | Modelo base oficial, con preentrenamiento y postentrenamiento de Qwen | no disponible en la busqueda | ModelScope y HuggingFace |
+| Qwen/Qwen3.5-9B | ~9B (clase del base) | hasta 262.144 tokens | Modelo base oficial, con preentrenamiento y postentrenamiento de Qwen | no disponible en la busqueda | ModelScope y Hugging Face |
 
 Comparativa de rendimiento: no disponible, ya que ninguno de los checkpoints derivados publica resultados de benchmarks. Los tres checkpoints de joshycodes comparten base y licencia de investigación, por lo que la diferencia relevante entre ellos es el volumen y el origen del corpus de continued pretraining, no el rendimiento medido.
 
@@ -88,7 +88,7 @@ Comparativa de rendimiento: no disponible, ya que ninguno de los checkpoints der
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3.5-9b-rep10-intrinsic-s2-sdf
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3.5-9b-rep10-intrinsic-s2-sdf
 - Corpus autoescrito: https://huggingface.co/joshycodes/qwen-constitutional-sdf-corpus
 - Checkpoint relacionado (intrinsic, 4.059.337 tokens): https://huggingface.co/joshycodes/qwen3.5-9b-const-intrinsic-sdf
 - Checkpoint relacionado (external): https://huggingface.co/joshycodes/qwen3.5-9b-rep10-external-s2-sdf

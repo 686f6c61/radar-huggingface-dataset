@@ -89,11 +89,11 @@ Estimaciones de VRAM basadas en los 8.190.735.360 parámetros del modelo y en la
 
 | Modelo | Parámetros | Contexto | AIME 2024 (avg@64) | LCB V5 (avg@8) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Klear-Reasoner-8B-SFT (este repo) | 8,19B | No especificado (64K con YaRN según la card) | 75,6 | 58,5 | Apache-2.0 | HuggingFace (copia de tercero) |
-| Qwen3-8B | 8,2B (aprox.) | No disponible en la información proporcionada | 76,0 | 57,5 | No disponible en la información proporcionada (el base declarado por este repo es Qwen3-8B-Base, Apache-2.0) | HuggingFace |
-| DeepSeek-R1-0528-Distill-8B | 8B (aprox.) | No disponible en la información proporcionada | 86,0† | 61,0† | No disponible en la información proporcionada | HuggingFace |
-| OpenReasoning-Nemotron-7B | 7B (aprox.) | No disponible en la información proporcionada | 84,7 | 65,6† | No disponible en la información proporcionada | HuggingFace |
-| AceReason-Nemotron-1.1-7B | 7B (aprox.) | No disponible en la información proporcionada | 72,6 | 57,2 | No disponible en la información proporcionada | HuggingFace |
+| Klear-Reasoner-8B-SFT (este repo) | 8,19B | No especificado (64K con YaRN según la card) | 75,6 | 58,5 | Apache-2.0 | Hugging Face (copia de tercero) |
+| Qwen3-8B | 8,2B (aprox.) | No disponible en la información proporcionada | 76,0 | 57,5 | No disponible en la información proporcionada (el base declarado por este repo es Qwen3-8B-Base, Apache-2.0) | Hugging Face |
+| DeepSeek-R1-0528-Distill-8B | 8B (aprox.) | No disponible en la información proporcionada | 86,0† | 61,0† | No disponible en la información proporcionada | Hugging Face |
+| OpenReasoning-Nemotron-7B | 7B (aprox.) | No disponible en la información proporcionada | 84,7 | 65,6† | No disponible en la información proporcionada | Hugging Face |
+| AceReason-Nemotron-1.1-7B | 7B (aprox.) | No disponible en la información proporcionada | 72,6 | 57,2 | No disponible en la información proporcionada | Hugging Face |
 
 Lectura de la comparativa: el checkpoint SFT de este repositorio queda por debajo de DeepSeek-R1-0528-Distill-8B y de OpenReasoning-Nemotron-7B en AIME 2024, aunque supera a este último en AIME 2025 (70,1 frente a 78,2 no; en realidad queda por debajo también en AIME 2025). Su ventaja aparece cuando se compara con la versión completa del mismo modelo tras GPPO, que sí supera a los destilados de 7-8B en varias de las métricas. La licencia Apache-2.0 de este repositorio es, en principio, más permisiva que la de algunos competidores, pero no se dispone de los términos exactos de los modelos comparados en la información proporcionada.
 
@@ -113,11 +113,11 @@ Lectura de la comparativa: el checkpoint SFT de este repositorio queda por debaj
 
 ## Enlaces
 
-- Modelo en HuggingFace (este repositorio): https://huggingface.co/mhseo2/Klear-Reasoner-8B-SFT
+- Modelo en Hugging Face (este repositorio): https://huggingface.co/mhseo2/Klear-Reasoner-8B-SFT
 - Modelo oficial del equipo: https://huggingface.co/Kwai-Klear/Klear-Reasoner-8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Preprint del modelo (PDF): https://arxiv.org/pdf/2508.07629
-- Página del paper en HuggingFace: https://huggingface.co/papers/2508.07629
+- Página del paper en Hugging Face: https://huggingface.co/papers/2508.07629
 - Preprint CE-GPPO (arXiv 2509.20712): https://arxiv.org/abs/2509.20712
 - Dataset de matemáticas: https://huggingface.co/datasets/Kwai-Klear/KlearReasoner-MathSub-30K
 - Dataset de código: https://huggingface.co/datasets/Kwai-Klear/KlearReasoner-CodeSub-15K

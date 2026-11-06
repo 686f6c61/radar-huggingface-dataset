@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`keyurXX/topstaps-api` es un repositorio publicado en HuggingFace por el usuario `keyurXX` bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. No se especifica pipeline, idiomas soportados ni formato de pesos.
+`keyurXX/topstaps-api` es un repositorio publicado en Hugging Face por el usuario `keyurXX` bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. No se especifica pipeline, idiomas soportados ni formato de pesos.
 
 Por el identificador del repositorio ("topstaps-api") y la ausencia de metadatos tecnicos, no es posible confirmar que se trate de un modelo de lenguaje entrenado. Podria tratarse de un espacio de trabajo, un contenedor de artefactos auxiliares o un repositorio en estado inicial. A fecha de la informacion disponible (creado y actualizado el 2026-11-04, con 0 descargas y 0 likes), no hay evidencia publica de que contenga pesos utilizables para inferencia.
 
@@ -37,10 +37,10 @@ Respecto al entrenamiento, no se dispone de informacion sobre el volumen de toke
 
 ## Casos de uso
 
-- Evaluacion preliminar de repositorio: inspeccionar el contenido del repositorio en HuggingFace para determinar si contiene pesos, configuracion o artefactos auxiliares antes de plantear cualquier integracion.
+- Evaluacion preliminar de repositorio: inspeccionar el contenido del repositorio en Hugging Face para determinar si contiene pesos, configuracion o artefactos auxiliares antes de plantear cualquier integracion.
 - Prototipado interno con licencia permisiva: la licencia MIT permite reutilizar cualquier artefacto que el repositorio contenga en entornos comerciales, siempre que se verifique primero que el contenido es apto para el caso de uso.
 - Archivado y trazabilidad: registrar el repositorio como referencia en un catalogo interno de modelos, dado que su fecha de creacion y licencia estan documentadas.
-- Pruebas de integracion de pipelines de HuggingFace: usar el repositorio como caso de prueba para validar flujos de descarga, cache y carga de artefactos cuando el contenido se conozca.
+- Pruebas de integracion de pipelines de Hugging Face: usar el repositorio como caso de prueba para validar flujos de descarga, cache y carga de artefactos cuando el contenido se conozca.
 - Auditoria de licencias: incorporar el repositorio a un inventario de dependencias con licencia MIT para cumplimiento normativo.
 - Base para publicacion posterior: si el autor completa la model card y sube pesos, el repositorio podria reevaluarse como candidato para tareas de NLP una vez documentadas sus capacidades.
 
@@ -71,4 +71,4 @@ No disponible. Al no conocerse la categoria, el tamano ni las capacidades del mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/keyurXX/topstaps-api
+- Repositorio en Hugging Face: https://huggingface.co/keyurXX/topstaps-api

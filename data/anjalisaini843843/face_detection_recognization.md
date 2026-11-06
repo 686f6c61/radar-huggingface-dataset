@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`anjalisaini843843/face_detection_recognization` es un repositorio publicado en HuggingFace por el usuario anjalisaini843843 cuyo nombre sugiere un sistema de deteccion y reconocimiento facial. Se trata de un repositorio de muy reciente creacion (octubre de 2026 segun los metadatos) y con un tamano declarado de 0,0 GB, lo que apunta a que no contiene pesos de modelo en el momento de la consulta o a que estos son de tamano despreciable.
+`anjalisaini843843/face_detection_recognization` es un repositorio publicado en Hugging Face por el usuario anjalisaini843843 cuyo nombre sugiere un sistema de deteccion y reconocimiento facial. Se trata de un repositorio de muy reciente creacion (octubre de 2026 segun los metadatos) y con un tamano declarado de 0,0 GB, lo que apunta a que no contiene pesos de modelo en el momento de la consulta o a que estos son de tamano despreciable.
 
-El repositorio no declara pipeline de HuggingFace, licencia, idiomas soportados ni tarjeta de modelo con informacion tecnica. Registra 0 descargas y 1 like, por lo que no existe evidencia publica de uso en produccion ni de validacion por parte de la comunidad. No se dispone de informacion sobre arquitectura, parametros, contexto, datos de entrenamiento ni resultados de benchmarks.
+El repositorio no declara pipeline de Hugging Face, licencia, idiomas soportados ni tarjeta de modelo con informacion tecnica. Registra 0 descargas y 1 like, por lo que no existe evidencia publica de uso en produccion ni de validacion por parte de la comunidad. No se dispone de informacion sobre arquitectura, parametros, contexto, datos de entrenamiento ni resultados de benchmarks.
 
 Dada la ausencia de documentacion tecnica y de artefactos de peso, esta ficha se limita a recoger los metadatos verificables del repositorio y a marcar como "no disponible" cualquier dato no confirmado. Se recomienda precaucion antes de evaluar o integrar este repositorio: la falta de licencia explicita impide determinar las condiciones de uso comercial.
 
@@ -78,7 +78,7 @@ No disponible. No se pueden identificar modelos comparables de la misma categori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anjalisaini843843/face_detection_recognization
+- Repositorio en Hugging Face: https://huggingface.co/anjalisaini843843/face_detection_recognization
 - Face recognition using Artificial Intelligence (GeeksforGeeks): https://www.geeksforgeeks.org/machine-learning/face-recognition-using-artificial-intelligence/
 - A Complete Guide to Face Detection and Face Recognition in 2024 (GeeksforGeeks): https://www.geeksforgeeks.org/computer-vision/a-complete-guide-to-face-detection-and-face-recognition-in-2024/
 - AI at Meta: https://ai.meta.com/

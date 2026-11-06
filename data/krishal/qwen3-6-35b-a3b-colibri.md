@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krishal/QWen3.6-35B-A3B-Colibri es un contenedor de pesos publicado en HuggingFace por el usuario Krishal que empaqueta el modelo Qwen3.6-35B-A3B en el formato propietario del motor de inferencia colibri. No se trata de un modelo entrenado desde cero ni de un ajuste fino, sino de un port de pesos: el autor redistribuye las capas del MoE original de Qwen adaptadas para que puedan ejecutarse con el motor `qwen36` escrito en C del proyecto colibri. La model card describe explicitamente la "Fase 2" del port, en la que se incluyen todas las capas, incluidas las de Gated DeltaNet.
+Krishal/QWen3.6-35B-A3B-Colibri es un contenedor de pesos publicado en Hugging Face por el usuario Krishal que empaqueta el modelo Qwen3.6-35B-A3B en el formato propietario del motor de inferencia colibri. No se trata de un modelo entrenado desde cero ni de un ajuste fino, sino de un port de pesos: el autor redistribuye las capas del MoE original de Qwen adaptadas para que puedan ejecutarse con el motor `qwen36` escrito en C del proyecto colibri. La model card describe explicitamente la "Fase 2" del port, en la que se incluyen todas las capas, incluidas las de Gated DeltaNet.
 
 El modelo subyacente pertenece a la familia Qwen3.6 en su variante MoE de 35B, con el sufijo A3B que en la nomenclatura habitual de Qwen indica aproximadamente 3B parametros activos por token. La arquitectura combina atencion con compuertas (Gated-Attention) y atencion lineal Gated DeltaNet en cada capa, y cada capa incorpora ademas su bloque MoE/MLP. El repositorio ocupa 21,1 GB, un tamano coherente con un almacenamiento cuantizado en el entorno de 4-5 bits por parametro para 35B parametros, aunque la model card no especifica el esquema de cuantizacion.
 
@@ -73,7 +73,7 @@ No se ha proporcionado informacion verificada sobre modelos comparables, por lo 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Krishal/QWen3.6-35B-A3B-Colibri | 35B totales / ~3B activos (derivado del nombre, no confirmado) | no disponible | no disponible | Repositorio HuggingFace, 0 descargas, 1 like | no disponible |
+| Krishal/QWen3.6-35B-A3B-Colibri | 35B totales / ~3B activos (derivado del nombre, no confirmado) | no disponible | no disponible | Repositorio Hugging Face, 0 descargas, 1 like | no disponible |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,11 +86,11 @@ No se ha proporcionado informacion verificada sobre modelos comparables, por lo 
 - Idiomas y contexto: se desconoce la ventana de contexto efectiva y la cobertura idiomatica, ambos datos criticos para planificar despliegues.
 - Dependencia de un motor especifico: el formato de pesos esta ligado al motor colibri, lo que limita la portabilidad a otras pilas de inferencia y ata el mantenimiento al proyecto `JustVugg/colibri`.
 - Fecha de publicacion llamativa: las marcas temporales del repositorio (creacion y actualizacion el 2026-09-16) deben tratarse con cautela al planificar su adopcion.
-- Resultados de busqueda sin valor: las consultas web realizadas no devolvieron ninguna fuente tecnica sobre el modelo, por lo que toda la ficha se apoya unicamente en la informacion del repositorio de HuggingFace.
+- Resultados de busqueda sin valor: las consultas web realizadas no devolvieron ninguna fuente tecnica sobre el modelo, por lo que toda la ficha se apoya unicamente en la informacion del repositorio de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Krishal/QWen3.6-35B-A3B-Colibri
+- Repositorio en Hugging Face: https://huggingface.co/Krishal/QWen3.6-35B-A3B-Colibri
 - Motor colibri: https://github.com/JustVugg/colibri
 - Implementacion del motor Qwen3.6 en colibri: `c/qwen36.c` dentro del repositorio anterior
 - Resultados de busqueda web: los resultados obtenidos corresponden a paginas de ayuda de YouTube y no guardan relacion con el modelo; no se han encontrado papers, blogs ni demos adicionales.

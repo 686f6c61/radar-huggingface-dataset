@@ -84,7 +84,7 @@ La comparativa se limita a modelos de la familia Qwen3 de tamaño similar, ya qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/senaro/atlasv23-qwen3-8-27b-gguf
+- Repositorio Hugging Face: https://huggingface.co/senaro/atlasv23-qwen3-8-27b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo intermedio (pre-GGUF): https://huggingface.co/senaro/atlasv23-trm-qwen3-8-27b
 - Dataset de entrenamiento 1: https://huggingface.co/datasets/kintsugicollective/atlas-dataset-v8-final

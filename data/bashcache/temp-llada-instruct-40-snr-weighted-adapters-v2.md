@@ -4,7 +4,7 @@
 
 `BashCache/temp-llada-instruct-40-snr-weighted-adapters-v2` es un adaptador PEFT (LoRA) publicado por el usuario BashCache sobre el modelo base `BashCache/temp-llada-instruct-40-snr-weighted`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptacion que deben cargarse junto al modelo base para modificar su comportamiento. El repositorio ocupa 0,1 GB, un tamano coherente con un adaptador LoRA de baja dimension, no con un modelo de pesos completos.
 
-La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: todos los campos de descripcion, autores, datos de entrenamiento, evaluacion y licencia aparecen como "[More Information Needed]". No hay informacion sobre arquitectura, numero de parametros, contexto, dataset de entrenamiento, hiperparametros ni resultados. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, lo que indica que es un artefacto reciente, probablemente un experimento interno o temporal (el propio prefijo "temp-" del nombre apunta a ello).
+La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: todos los campos de descripcion, autores, datos de entrenamiento, evaluacion y licencia aparecen como "[More Information Needed]". No hay informacion sobre arquitectura, numero de parametros, contexto, dataset de entrenamiento, hiperparametros ni resultados. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, lo que indica que es un artefacto reciente, probablemente un experimento interno o temporal (el propio prefijo "temp-" del nombre apunta a ello).
 
 Por el nombre se deduce una relacion con la familia LLaDA (modelo de difusion de tipo masked diffusion para lenguaje) y una tecnica de ponderacion por relacion senal-ruido (SNR) en el entrenamiento del adaptador, pero ninguna de estas dos afirmaciones esta confirmada en la documentacion disponible. El campo `base_model` enlaza a un modelo intermedio tambien publicado por BashCache bajo el mismo esquema de nombres.
 
@@ -25,7 +25,7 @@ Por el nombre se deduce una relacion con la familia LLaDA (modelo de difusion de
 
 El artefacto es un adaptador de bajo rango (LoRA) gestionado con la libreria PEFT en su version 0.20.0, segun los tags y las versiones de framework declaradas. La arquitectura subyacente, la dimensionalidad del adaptador, el rango, el alpha y los modulos objetivo no estan documentados. El tag `base_model:adapter:BashCache/temp-llada-instruct-40-snr-weighted` indica que el adaptador se entrena sobre otro modelo de la misma familia de nombres, que a su vez no aporta informacion tecnica en este repositorio.
 
-Respecto al entrenamiento, no hay ningun dato disponible: ni numero de tokens, ni composicion del dataset, ni si hubo RLHF, DPO o ajuste supervisado. El sufijo "snr-weighted" del nombre sugiere alguna forma de ponderacion por relacion senal-ruido aplicada a los adaptadores (una tecnica descrita en literatura reciente sobre entrenamiento de LoRA), pero la model card no lo confirma ni aporta referencias. El tag `arxiv:1910.09700` que aparece en los metadatos corresponde al articulo de Lacoste et al. (2019) sobre el calculo de impacto medioambiental citado en la plantilla de HuggingFace, no a un paper del modelo.
+Respecto al entrenamiento, no hay ningun dato disponible: ni numero de tokens, ni composicion del dataset, ni si hubo RLHF, DPO o ajuste supervisado. El sufijo "snr-weighted" del nombre sugiere alguna forma de ponderacion por relacion senal-ruido aplicada a los adaptadores (una tecnica descrita en literatura reciente sobre entrenamiento de LoRA), pero la model card no lo confirma ni aporta referencias. El tag `arxiv:1910.09700` que aparece en los metadatos corresponde al articulo de Lacoste et al. (2019) sobre el calculo de impacto medioambiental citado en la plantilla de Hugging Face, no a un paper del modelo.
 
 ## Capacidades
 
@@ -72,8 +72,8 @@ No disponible. Al tratarse de un adaptador PEFT y no de un modelo completo, no e
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BashCache/temp-llada-instruct-40-snr-weighted-adapters-v2 | adaptador LoRA (PEFT) | no disponible | no disponible | no disponible | HuggingFace |
-| BashCache/temp-llada-instruct-40-snr-weighted | modelo base (sin documentar) | no disponible | no disponible | no disponible | HuggingFace |
+| BashCache/temp-llada-instruct-40-snr-weighted-adapters-v2 | adaptador LoRA (PEFT) | no disponible | no disponible | no disponible | Hugging Face |
+| BashCache/temp-llada-instruct-40-snr-weighted | modelo base (sin documentar) | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No disponible. Al tratarse de un adaptador PEFT y no de un modelo completo, no e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BashCache/temp-llada-instruct-40-snr-weighted-adapters-v2
+- Repositorio Hugging Face: https://huggingface.co/BashCache/temp-llada-instruct-40-snr-weighted-adapters-v2
 - Modelo base: https://huggingface.co/BashCache/temp-llada-instruct-40-snr-weighted
 - Paper citado en los tags (impacto medioambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML: https://mlco2.github.io/impact#compute

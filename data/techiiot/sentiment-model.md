@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Techiiot/sentiment-model es un modelo de clasificación de texto (analisis de sentimiento) publicado en HuggingFace por el usuario Techiiot. Se trata de un fine-tuning de distilbert-base-uncased, la version destilada de BERT desarrollada por Hugging Face, sobre un conjunto de datos que el propio autor no documenta ("unknown dataset" en la model card). El repositorio tiene un tamano de 0,3 GB y los pesos suman 66.955.779 parametros, coherentes con la arquitectura de 6 capas de DistilBERT.
+Techiiot/sentiment-model es un modelo de clasificación de texto (analisis de sentimiento) publicado en Hugging Face por el usuario Techiiot. Se trata de un fine-tuning de distilbert-base-uncased, la version destilada de BERT desarrollada por Hugging Face, sobre un conjunto de datos que el propio autor no documenta ("unknown dataset" en la model card). El repositorio tiene un tamano de 0,3 GB y los pesos suman 66.955.779 parametros, coherentes con la arquitectura de 6 capas de DistilBERT.
 
 El modelo se distribuye bajo licencia Apache-2.0, en formato safetensors y con la libreria transformers, y esta etiquetado como compatible con endpoints de inferencia. Se encuentra en fase de publicacion inicial: cero descargas registradas en el momento de la consulta, un "like" y una model card autogenerada por el Trainer de Hugging Face con secciones marcadas como "More information needed" (descripcion, usos previstos, limitaciones y datos de entrenamiento).
 
@@ -119,7 +119,7 @@ Frente a las alternativas, la ventaja de este modelo es su tamano (la mitad que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Techiiot/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/Techiiot/sentiment-model
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Modelo base (ruta completa usada en el fine-tuning): https://huggingface.co/distilbert/distilbert-base-uncased
 - Paper de DistilBERT (documentacion del modelo base): https://arxiv.org/abs/1910.01108

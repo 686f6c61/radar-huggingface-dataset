@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre adaptadores LoRA comparables para Krea 2. La comparativa con otros LoRAs de modelos de difusión (como los de Stable Diffusion o FLUX) no es directa porque el modelo base es diferente. Se podría comparar con otros adaptadores de personalización de Krea 2 publicados en HuggingFace, pero no se han encontrado en la búsqueda web. Por tanto, la comparativa no está disponible.
+No se dispone de información sobre adaptadores LoRA comparables para Krea 2. La comparativa con otros LoRAs de modelos de difusión (como los de Stable Diffusion o FLUX) no es directa porque el modelo base es diferente. Se podría comparar con otros adaptadores de personalización de Krea 2 publicados en Hugging Face, pero no se han encontrado en la búsqueda web. Por tanto, la comparativa no está disponible.
 
 ## Limitaciones y advertencias
 
@@ -65,7 +65,7 @@ No se dispone de información sobre adaptadores LoRA comparables para Krea 2. La
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/raulbueno/laura
+- Repositorio Hugging Face: https://huggingface.co/raulbueno/laura
 - Perfil de ArtStation del autor (Raul Bueno): https://www.artstation.com/raulbueno
 - Modelo base Krea 2 Raw: https://huggingface.co/krea/Krea-2-Raw (referenciado en la model card, aunque no se proporciona enlace directo)
 - Modelo base Krea 2 Turbo: https://huggingface.co/krea/Krea-2-Turbo (referenciado en la model card, aunque no se proporciona enlace directo)

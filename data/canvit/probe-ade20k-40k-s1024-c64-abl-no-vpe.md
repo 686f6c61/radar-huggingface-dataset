@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no incluye resultados numericos ni d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canvit/probe-ade20k-40k-s1024-c64-abl-no-vpe
+- Modelo en Hugging Face: https://huggingface.co/canvit/probe-ade20k-40k-s1024-c64-abl-no-vpe
 - Modelo base: https://huggingface.co/canvit/canvitb16-abl-no-vpe-2026-03-03
 - Paper (NeurIPS 2026): https://arxiv.org/abs/2603.22570
 - Codigo: https://github.com/m2b3/CanViT

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario ASDBASFGQW bajo el identificador `ASDBASFGQW/MyAwesomeModel-TestRepo`. Por las etiquetas del repositorio (`transformers`, `pytorch`, `bert`, `feature-extraction`) y por el pipeline declarado, se presenta como un modelo basado en la arquitectura BERT orientado a extraccion de caracteristicas (embeddings de texto), no a generacion. Sin embargo, la model card del autor describe un modelo conversacional y de razonamiento con modo de pensamiento, soporte de function calling y mejoras en tareas de matematicas y programacion, lo que entra en contradiccion directa con las etiquetas y el pipeline declarados.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario ASDBASFGQW bajo el identificador `ASDBASFGQW/MyAwesomeModel-TestRepo`. Por las etiquetas del repositorio (`transformers`, `pytorch`, `bert`, `feature-extraction`) y por el pipeline declarado, se presenta como un modelo basado en la arquitectura BERT orientado a extraccion de caracteristicas (embeddings de texto), no a generacion. Sin embargo, la model card del autor describe un modelo conversacional y de razonamiento con modo de pensamiento, soporte de function calling y mejoras en tareas de matematicas y programacion, lo que entra en contradiccion directa con las etiquetas y el pipeline declarados.
 
 El repositorio tiene un tamano de 0.0 GB, lo que indica que no contiene pesos del modelo en el momento de la consulta, y registra 69 descargas y 0 likes. La licencia declarada es MIT y la fecha de creacion y ultima actualizacion es el 18 de septiembre de 2026.
 
@@ -119,5 +119,5 @@ No disponible. La model card menciona comparaciones genericas contra "Model1", "
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASDBASFGQW/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/ASDBASFGQW/MyAwesomeModel-TestRepo
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo (papers, blogs, repos o demos). Los resultados devueltos corresponden a consultas sobre Google Maps y no guardan relacion con MyAwesomeModel.

@@ -70,4 +70,4 @@ No se dispone de informacion suficiente para realizar una comparativa. Los model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/minsu-lee90/chatbot-mini96
+- Repositorio Hugging Face: https://huggingface.co/minsu-lee90/chatbot-mini96

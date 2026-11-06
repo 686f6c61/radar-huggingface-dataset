@@ -4,7 +4,7 @@
 
 Este repositorio aloja un adaptador LoRA publicado por el usuario GRAI-UNSTPB de la Universidad Politecnica de Bucarest (UNSTPB, por sus siglas en rumano) bajo el identificador `rollama3_1_instruct_dpo_ft_cs_dependency_en`. No se trata de un modelo completo, sino de un ajuste fino adicional sobre `OpenLLM-Ro/RoLlama3.1-8b-Instruct-DPO`, un modelo rumano de 8 000 millones de parametros derivado de la familia Llama 3.1 y ya alineado mediante DPO. El adaptador se ha entrenado con SFT sobre la libreria TRL y se distribuye en formato PEFT, con un peso de repositorio de aproximadamente 0,2 GB.
 
-La relevancia de la ficha es limitada y conviene decirlo con claridad: la model card es la plantilla por defecto de HuggingFace y todos los campos relevantes (desarrollador, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como `[More Information Needed]`. No hay informacion sobre el dataset de ajuste, el numero de tokens vistos, la composicion de los datos ni los resultados de evaluacion. El sufijo `cs_dependency_en` del nombre sugiere un ajuste orientado a dependencias en el ambito de ciencias de la computacion y en ingles, pero esto no esta confirmado por ninguna documentacion del autor.
+La relevancia de la ficha es limitada y conviene decirlo con claridad: la model card es la plantilla por defecto de Hugging Face y todos los campos relevantes (desarrollador, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como `[More Information Needed]`. No hay informacion sobre el dataset de ajuste, el numero de tokens vistos, la composicion de los datos ni los resultados de evaluacion. El sufijo `cs_dependency_en` del nombre sugiere un ajuste orientado a dependencias en el ambito de ciencias de la computacion y en ingles, pero esto no esta confirmado por ninguna documentacion del autor.
 
 El modelo acumulaba 0 descargas y 0 "likes" en el momento de la consulta y las fechas de creacion y actualizacion registradas (2026-10-08) son incoherentes con un repositorio real, lo que apunta a un artefacto experimental o de prueba mas que a un modelo destinado a produccion. Cualquier evaluacion seria de este adaptador requiere inspeccionar los pesos y reconstruir el pipeline de entrenamiento, algo que queda fuera del alcance de la informacion disponible.
 
@@ -31,7 +31,7 @@ El modelo acumulaba 0 descargas y 0 "likes" en el momento de la consulta y las f
 
 No hay informacion publicada sobre la arquitectura del adaptador mas alla de su naturaleza PEFT/LoRA sobre un modelo base transformer de 8B. La model card no especifica el rango (`r`), el `alpha`, los modulos objetivo ni si el adaptador se aplica unicamente a las proyecciones de atencion o tambien a las capas MLP. Tampoco se documenta si el entrenamiento se ha realizado en precision mixta bf16 o fp16, ni la duracion, el hardware o el proveedor de computo.
 
-Respecto a los datos de entrenamiento, todos los campos de la seccion "Training Data" y "Training Procedure" estan marcados como `[More Information Needed]`. Se desconoce el numero de tokens de ajuste, la composicion del dataset, si hubo filtrado o anotacion humana, y si el ajuste SFT se combino con una segunda fase DPO. El unico indicio es el nombre del repositorio, que apunta a un ajuste sobre tareas de dependencias en ciencias de la computacion (`cs_dependency`) en ingles (`en`), pero es una inferencia no verificada. La referencia arXiv:1910.09700 que aparece en las etiquetas corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla de HuggingFace, y no a un paper de este modelo.
+Respecto a los datos de entrenamiento, todos los campos de la seccion "Training Data" y "Training Procedure" estan marcados como `[More Information Needed]`. Se desconoce el numero de tokens de ajuste, la composicion del dataset, si hubo filtrado o anotacion humana, y si el ajuste SFT se combino con una segunda fase DPO. El unico indicio es el nombre del repositorio, que apunta a un ajuste sobre tareas de dependencias en ciencias de la computacion (`cs_dependency`) en ingles (`en`), pero es una inferencia no verificada. La referencia arXiv:1910.09700 que aparece en las etiquetas corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla de Hugging Face, y no a un paper de este modelo.
 
 ## Capacidades
 
@@ -76,8 +76,8 @@ Estimaciones derivadas del tamano del modelo base (8B) y del tamano del adaptado
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GRAI-UNSTPB/rollama3_1_instruct_dpo_ft_cs_dependency_en | No disponible (adaptador LoRA sobre base de 8B) | No disponible | Adaptador LoRA + SFT | No disponible | Publicado en HuggingFace, 0 descargas |
-| OpenLLM-Ro/RoLlama3.1-8b-Instruct-DPO (modelo base) | 8B | No disponible en la informacion proporcionada | Modelo completo con DPO | No disponible | Publicado en HuggingFace |
+| GRAI-UNSTPB/rollama3_1_instruct_dpo_ft_cs_dependency_en | No disponible (adaptador LoRA sobre base de 8B) | No disponible | Adaptador LoRA + SFT | No disponible | Publicado en Hugging Face, 0 descargas |
+| OpenLLM-Ro/RoLlama3.1-8b-Instruct-DPO (modelo base) | 8B | No disponible en la informacion proporcionada | Modelo completo con DPO | No disponible | Publicado en Hugging Face |
 | Llama 3.1 8B Instruct (familia de origen) | 8B | No disponible en la informacion proporcionada | Modelo instruct completo | Licencia de la comunidad de Llama 3.1 (no verificada en este repositorio) | Ampliamente disponible |
 
 No se dispone de datos de rendimiento de ninguna de las filas, por lo que la comparativa se limita a aspectos estructurales y de disponibilidad. No se han identificado en la informacion proporcionada otros adaptadores comparables especificos del mismo autor o del mismo dominio.
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento de ninguna de las filas, por lo que la com
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/GRAI-UNSTPB/rollama3_1_instruct_dpo_ft_cs_dependency_en
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/GRAI-UNSTPB/rollama3_1_instruct_dpo_ft_cs_dependency_en
 - Modelo base: https://huggingface.co/OpenLLM-Ro/RoLlama3.1-8b-Instruct-DPO
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la plantilla: https://mlco2.github.io/impact

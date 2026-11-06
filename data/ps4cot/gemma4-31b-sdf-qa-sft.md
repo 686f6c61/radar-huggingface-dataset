@@ -79,7 +79,7 @@ La comparación con el modelo base muestra que el fine-tuning no altera la arqui
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PS4CoT/gemma4-31b-sdf-qa-sft
+- Hugging Face: https://huggingface.co/PS4CoT/gemma4-31b-sdf-qa-sft
 - Modelo base: https://huggingface.co/google/gemma-4-31b-it
 - Repositorio de código y evaluación: https://github.com/ps-research/CoT-Verse
 - Documentación de Gemma 4: https://deepmind.google/models/gemma/gemma-4/

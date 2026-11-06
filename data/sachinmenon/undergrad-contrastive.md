@@ -65,4 +65,4 @@ No disponible. Al tratarse de un checkpoint de inicialización experimental sin 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sachinmenon/undergrad-contrastive
+- Hugging Face: https://huggingface.co/sachinmenon/undergrad-contrastive

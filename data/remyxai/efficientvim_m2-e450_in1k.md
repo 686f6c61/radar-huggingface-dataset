@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `remyxai/efficientvim_m2.e450_in1k` es un checkpoint de clasificación de imágenes publicado en HuggingFace por el usuario `remyxai`. Está distribuido en formato `safetensors` a través de la librería `timm` y cuenta con aproximadamente 13,95 millones de parámetros, lo que lo convierte en un modelo de tamaño pequeño apto para entornos con recursos limitados. Su nombre sugiere una variante de la familia EfficientViM, pero la model card no incluye documentación técnica detallada ni descripción de la arquitectura.
+El modelo `remyxai/efficientvim_m2.e450_in1k` es un checkpoint de clasificación de imágenes publicado en Hugging Face por el usuario `remyxai`. Está distribuido en formato `safetensors` a través de la librería `timm` y cuenta con aproximadamente 13,95 millones de parámetros, lo que lo convierte en un modelo de tamaño pequeño apto para entornos con recursos limitados. Su nombre sugiere una variante de la familia EfficientViM, pero la model card no incluye documentación técnica detallada ni descripción de la arquitectura.
 
 Se trata de un modelo orientado a la tarea de clasificación de imágenes (pipeline `image-classification`), sin capacidades de lenguaje ni generación de texto. La licencia es Apache 2.0, lo que permite su uso comercial con atribución. Dada la ausencia de información pública sobre su entrenamiento, benchmarks o detalles de arquitectura, su relevancia principal radica en el potencial de eficiencia que ofrecen los modelos de visión compactos, aunque no es posible validar su rendimiento con los datos disponibles.
 
@@ -27,7 +27,7 @@ Tampoco se dispone de información sobre innovaciones técnicas específicas, co
 
 ## Capacidades
 
-- Clasificación de imágenes: la única capacidad confirmada, según la etiqueta `image-classification` de HuggingFace.
+- Clasificación de imágenes: la única capacidad confirmada, según la etiqueta `image-classification` de Hugging Face.
 - Tamaño compacto: con 13,95 millones de parámetros, es un modelo ligero en términos de memoria y cómputo.
 - No es un modelo de lenguaje: no admite tool calling, generación de texto, razonamiento multi-paso ni conversación.
 - No se conocen capacidades multilingües, de detección de objetos, segmentación o visión más allá de la tarea de clasificación.
@@ -61,7 +61,7 @@ No se han publicado datos de rendimiento para este checkpoint, por lo que la com
 
 | Modelo | Parametros | Benchmark | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| efficientvim_m2 (este modelo) | 13,9 M | no disponible | Apache 2.0 | HuggingFace |
+| efficientvim_m2 (este modelo) | 13,9 M | no disponible | Apache 2.0 | Hugging Face |
 | MobileNetV3-Small | 5,4 M | no disponible | Apache 2.0 | Torchvision, TF, ONNX |
 | ResNet-18 | 11,7 M | no disponible | BSD-3 | Torchvision, etc. |
 | EfficientNet-B0 | 5,3 M | no disponible | Apache 2.0 | Torchvision, TF, etc. |
@@ -79,5 +79,5 @@ No se conoce el rendimiento de ningún modelo listado en comparación con este c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/remyxai/efficientvim_m2.e450_in1k
+- Hugging Face: https://huggingface.co/remyxai/efficientvim_m2.e450_in1k
 - No se han encontrado enlaces adicionales relevantes en la información proporcionada.

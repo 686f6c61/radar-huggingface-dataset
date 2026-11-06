@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / duración | Esqueleto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimodo-SMPLX-RP-v1 | 282 M | 300 frames (10 s a 30 fps) | SMPL-X, 22 articulaciones | NVIDIA Internal Scientific R&D (no comercial) | HuggingFace (nvidia/Kimodo-SMPLX-RP-v1) |
+| Kimodo-SMPLX-RP-v1 | 282 M | 300 frames (10 s a 30 fps) | SMPL-X, 22 articulaciones | NVIDIA Internal Scientific R&D (no comercial) | Hugging Face (nvidia/Kimodo-SMPLX-RP-v1) |
 | Kimodo-SOMA-RP | No disponible | No disponible | SOMA, 30 articulaciones | No disponible en la información | Familia Kimodo |
 | Kimodo-SOMA-SEED | No disponible | No disponible | SOMA, 30 articulaciones | No disponible en la información | Familia Kimodo (dataset abierto Bones-SEED) |
 | Kimodo-G1-RP | No disponible | No disponible | Unitree G1, 34 articulaciones | No disponible en la información | Familia Kimodo |
@@ -90,12 +90,12 @@ No se dispone de datos de benchmarks ni de especificaciones completas de las var
 - Requiere validación específica del caso de uso antes de integrarse en sistemas de producción, según la propia model card (metodología V-model).
 - Dependencia de hardware NVIDIA: el modelo está optimizado para GPUs NVIDIA (Ampere, Blackwell, Lovelace) y no se documenta soporte para CPU u otras aceleradoras.
 - No se documentan capacidades de tool calling, agentes ni razonamiento multi-step; es un modelo especializado en movimiento, no un LLM de propósito general.
-- El repositorio de HuggingFace es un mirror de camenduru (0 descargas, 0 likes) del modelo original de NVIDIA; conviene verificar la integridad y la procedencia de los pesos.
+- El repositorio de Hugging Face es un mirror de camenduru (0 descargas, 0 likes) del modelo original de NVIDIA; conviene verificar la integridad y la procedencia de los pesos.
 
 ## Enlaces
 
-- HuggingFace (mirror): https://huggingface.co/camenduru/Kimodo-SMPLX-RP-v1
-- HuggingFace (original NVIDIA): https://huggingface.co/nvidia/Kimodo-SMPLX-RP-v1
+- Hugging Face (mirror): https://huggingface.co/camenduru/Kimodo-SMPLX-RP-v1
+- Hugging Face (original NVIDIA): https://huggingface.co/nvidia/Kimodo-SMPLX-RP-v1
 - Repositorio GitHub: https://github.com/nv-tlabs/kimodo
 - Página del proyecto: https://research.nvidia.com/labs/sil/projects/kimodo/
 - Technical report: https://research.nvidia.com/labs/sil/projects/kimodo/assets/kimodo_tech_report.pdf

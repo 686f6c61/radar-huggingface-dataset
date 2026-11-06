@@ -2,7 +2,7 @@
 
 ## Resumen
 
-neetlyrefreshed/6heritic es un repositorio publicado en HuggingFace por el usuario neetlyrefreshed (Nathan Neet) el 13 de octubre de 2026 y actualizado el mismo dia. La model card asociada contiene unicamente la declaracion de licencia ("license: cc") y ningun otro dato tecnico: no se especifica arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni procedimiento de entrenamiento.
+neetlyrefreshed/6heritic es un repositorio publicado en Hugging Face por el usuario neetlyrefreshed (Nathan Neet) el 13 de octubre de 2026 y actualizado el mismo dia. La model card asociada contiene unicamente la declaracion de licencia ("license: cc") y ningun otro dato tecnico: no se especifica arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni procedimiento de entrenamiento.
 
 El repositorio presenta 0 descargas, 0 "likes" y un tamano declarado de 0.0 GB, lo que indica que no hay pesos publicados ni documentacion tecnica accesible en el momento de redactar esta ficha. No es posible, por tanto, determinar que problema resuelve el modelo ni que uso previsto tiene.
 
@@ -33,7 +33,7 @@ Su relevancia actual es, con los datos disponibles, minima y no verificable: no 
 
 No disponible. La model card no describe la arquitectura (transformer denso, MoE, SSM, difusion u otra), ni el numero de parametros, ni el tokenizador, ni la ventana de contexto. Tampoco se documenta el corpus de entrenamiento, el numero de tokens procesados, las tecnicas de alineacion (SFT, RLHF, DPO) ni ninguna innovacion tecnica.
 
-El unico dato objetivo sobre el contenido del repositorio es su tamano declarado (0.0 GB), compatible con un repositorio vacio o con un peso inferior al umbral de redondeo del contador de HuggingFace. No es posible confirmar si los pesos existen, si estan en un formato propietario o si se distribuyen por otro canal.
+El unico dato objetivo sobre el contenido del repositorio es su tamano declarado (0.0 GB), compatible con un repositorio vacio o con un peso inferior al umbral de redondeo del contador de Hugging Face. No es posible confirmar si los pesos existen, si estan en un formato propietario o si se distribuyen por otro canal.
 
 ## Capacidades
 
@@ -81,8 +81,8 @@ No disponible. No es posible identificar modelos comparables al no conocerse la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neetlyrefreshed/6heritic
-- Perfil del autor en HuggingFace: https://huggingface.co/neetlyrefreshed
+- Modelo en Hugging Face: https://huggingface.co/neetlyrefreshed/6heritic
+- Perfil del autor en Hugging Face: https://huggingface.co/neetlyrefreshed
 - CivArchive (archivo de modelos de IA, referencia general, sin entrada especifica del modelo): https://civarchive.com/about
 - Civitai Archive en SeaArt (referencia general, sin entrada especifica del modelo): https://www.seaart.ai/features/civitai-archive
 - AI Model Release Calendar (referencia general, sin entrada especifica del modelo): https://www.scriptbyai.com/ai-model-release-calendar/

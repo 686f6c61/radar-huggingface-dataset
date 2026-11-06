@@ -4,7 +4,7 @@
 
 SmolVLA OpenArm v2 Cell es un ajuste fino (fine-tune) del modelo base lerobot/smolvla_base, un modelo de vision-lenguaje-accion (VLA) de aproximadamente 450 millones de parametros. Lo publica el usuario xXFiEsTaDeAmOnXx bajo licencia Apache-2.0 y esta especializado en una unica tarea de manipulacion bimanual: levantar un cubo con el robot OpenArm v2 Cell dentro del simulador MuJoCo. No es un modelo de lenguaje conversacional, sino una politica robotica que consume imagenes de camara e instrucciones textuales y emite acciones motoras.
 
-El modelo parte de la familia SmolVLA de LeRobot (HuggingFace), disenada para entrenar politicas VLA en hardware de consumo, y se ha reentrenado sobre el dataset enactic/openarm-2-cell-pick_up_cube_mujoco-lerobot, compuesto por 30 episodios de demostracion en simulacion. Recibe tres flujos de imagen RGB (camara de techo, muneca derecha y cabeza izquierda) mas la instruccion "Pick up the cube.", y produce un vector de 16 posiciones articulares (primero el brazo derecho, despues el izquierdo) a 30 Hz.
+El modelo parte de la familia SmolVLA de LeRobot (Hugging Face), disenada para entrenar politicas VLA en hardware de consumo, y se ha reentrenado sobre el dataset enactic/openarm-2-cell-pick_up_cube_mujoco-lerobot, compuesto por 30 episodios de demostracion en simulacion. Recibe tres flujos de imagen RGB (camara de techo, muneca derecha y cabeza izquierda) mas la instruccion "Pick up the cube.", y produce un vector de 16 posiciones articulares (primero el brazo derecho, despues el izquierdo) a 30 Hz.
 
 Su relevancia es acotada pero concreta: sirve como referencia reproducible para evaluar politicas bimanuales en el entorno gym_openarmv2 y como punto de partida para investigacion en sim-to-real. El repositorio no tiene descargas ni valoraciones y no publica resultados de benchmarks, por lo que debe tratarse como un artefacto de investigacion sin validacion externa.
 
@@ -105,7 +105,7 @@ Nota: los datos de OpenVLA y pi0 se incluyen como referencia general de la categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xXFiEsTaDeAmOnXx/smolvla-openarmv2-cell
+- Modelo en Hugging Face: https://huggingface.co/xXFiEsTaDeAmOnXx/smolvla-openarmv2-cell
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/enactic/openarm-2-cell-pick_up_cube_mujoco-lerobot
 - Entorno de evaluacion gym_openarmv2: https://github.com/xXFiEsTaDeAmOnXx/gym_openarmv2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-300` es un checkpoint de investigación publicado en HuggingFace por el usuario yuxuanw8. El nombre del repositorio sugiere un modelo de aproximadamente 3.000 millones de parametros afinado mediante RLVR (Reinforcement Learning with Verifiable Rewards) sobre HotpotQA, y el sufijo `checkpoint-300` indica que se trata del paso 300 de un entrenamiento, es decir, un estado intermedio y previsiblemente no convergido.
+`yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-300` es un checkpoint de investigación publicado en Hugging Face por el usuario yuxuanw8. El nombre del repositorio sugiere un modelo de aproximadamente 3.000 millones de parametros afinado mediante RLVR (Reinforcement Learning with Verifiable Rewards) sobre HotpotQA, y el sufijo `checkpoint-300` indica que se trata del paso 300 de un entrenamiento, es decir, un estado intermedio y previsiblemente no convergido.
 
 El unico dato objetivo disponible es el recuento de parametros real extraido de los pesos safetensors: 3.085.938.688 parametros, con un repositorio de 12,4 GB. La etiqueta `qwen2` del Hub situa el modelo en la familia Qwen2, y el recuento coincide con el de Qwen2.5-3B, aunque la model card no lo confirma en ningun momento. La model card es la plantilla autogenerada de transformers, sin ninguna seccion cumplimentada.
 
@@ -101,7 +101,7 @@ La comparacion en calidad no puede establecerse: no existen resultados de benchm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-300
+- Modelo en Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-300
 - Referencia citada en las etiquetas del Hub (plantilla de model card, no paper del modelo): https://arxiv.org/abs/1910.09700
 - Repositorio de codigo: no disponible
 - Paper o informe tecnico del modelo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ornith-1.5-35B-colibri-i8 es un contenedor de pesos publicado por el usuario zichenshang en HuggingFace, no un modelo entrenado desde cero. Se trata de una conversion del modelo Qwen3.6-35B-A3B al formato del motor de inferencia colibri, con los pesos cuantizados a 8 bits (sufijo i8 del nombre). El repositorio ocupa 37,2 GB y fue creado el 23 de septiembre de 2026, con cero descargas y cero likes en el momento de redactar esta ficha.
+Ornith-1.5-35B-colibri-i8 es un contenedor de pesos publicado por el usuario zichenshang en Hugging Face, no un modelo entrenado desde cero. Se trata de una conversion del modelo Qwen3.6-35B-A3B al formato del motor de inferencia colibri, con los pesos cuantizados a 8 bits (sufijo i8 del nombre). El repositorio ocupa 37,2 GB y fue creado el 23 de septiembre de 2026, con cero descargas y cero likes en el momento de redactar esta ficha.
 
 La relevancia tecnica esta en la arquitectura del modelo subyacente: segun la model card, se trata de un transformer hibrido en el que cada capa combina atencion con compuertas (gated attention) y capas de atencion lineal basadas en Gated DeltaNet, y en el que todas las capas, incluidas las de DeltaNet, incorporan su bloque MoE/MLP. Los pesos de DeltaNet se almacenan bajo las rutas `model.layers.{i}.linear_attn.*` y se ejecutan mediante la regla recurrente gated-delta en el motor `qwen36` de colibri.
 
@@ -93,7 +93,7 @@ Como referencia de categoria, los modelos MoE del orden de 30-35B totales con un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zichenshang/Ornith-1.5-35B-colibri-i8
+- Repositorio en Hugging Face: https://huggingface.co/zichenshang/Ornith-1.5-35B-colibri-i8
 - Motor colibri (GitHub): https://github.com/JustVugg/colibri
 - Codigo del motor para esta arquitectura: `c/qwen36.c` dentro del repositorio de colibri
 - Paper del modelo base Qwen3.6-35B-A3B: no disponible

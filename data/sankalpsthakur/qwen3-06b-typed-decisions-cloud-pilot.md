@@ -78,9 +78,9 @@ Tras inspeccionar esos resultados brutos, el autor ajustó temperaturas positiva
 
 | Modelo | Parametros | Contexto | Precision (BoolQ) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (LoRA sobre Qwen3-0.6B) | 1.146.880 entrenables sobre base de 0,6 B | 512 tokens en entrenamiento | 78,9 % en confirmación BoolQ; 67,2 % en transferencia StrategyQA | Apache-2.0 | HuggingFace, 5 descargas |
-| Qwen/Qwen3-0.6B (base sin adaptador) | 0,6 B | No disponible en la información proporcionada | 71,1 % en confirmación BoolQ; 55,5 % en transferencia StrategyQA | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-0.6B-Base | 0,6 B | No disponible en la información proporcionada | No disponible | Apache-2.0 (segun el repositorio base) | HuggingFace, ModelScope |
+| Este adaptador (LoRA sobre Qwen3-0.6B) | 1.146.880 entrenables sobre base de 0,6 B | 512 tokens en entrenamiento | 78,9 % en confirmación BoolQ; 67,2 % en transferencia StrategyQA | Apache-2.0 | Hugging Face, 5 descargas |
+| Qwen/Qwen3-0.6B (base sin adaptador) | 0,6 B | No disponible en la información proporcionada | 71,1 % en confirmación BoolQ; 55,5 % en transferencia StrategyQA | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-0.6B-Base | 0,6 B | No disponible en la información proporcionada | No disponible | Apache-2.0 (segun el repositorio base) | Hugging Face, ModelScope |
 | Mapika/decider (familia basada en Qwen3.5 para decisiones tipadas) | No disponible | No disponible | No disponible | No disponible | GitHub |
 
 Las cifras de la base corresponden a la propia evaluación del autor bajo el mismo protocolo de lectura de logits. Para el resto de alternativas no se dispone de resultados comparables bajo ese protocolo.
@@ -105,7 +105,7 @@ Las cifras de la base corresponden a la propia evaluación del autor bajo el mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sankalpsthakur/qwen3-06b-typed-decisions-cloud-pilot
+- Modelo en Hugging Face: https://huggingface.co/sankalpsthakur/qwen3-06b-typed-decisions-cloud-pilot
 - Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Variante base Qwen/Qwen3-0.6B-Base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Conjunto de datos Praveenrajus/jev-bench: https://huggingface.co/datasets/Praveenrajus/jev-bench

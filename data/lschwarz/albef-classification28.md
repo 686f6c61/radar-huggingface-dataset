@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lschwarz/albef-classification28` es un prototipo de investigación publicado en HuggingFace por el usuario `lschwarz`. Se presenta como una implementación propia de una arquitectura Albef orientada a tareas de clasificación, con una configuración de escala "small" y un checkpoint de pesos `model.safetensors` que, según la propia model card, es únicamente una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado en benchmarks.
+`lschwarz/albef-classification28` es un prototipo de investigación publicado en Hugging Face por el usuario `lschwarz`. Se presenta como una implementación propia de una arquitectura Albef orientada a tareas de clasificación, con una configuración de escala "small" y un checkpoint de pesos `model.safetensors` que, según la propia model card, es únicamente una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado en benchmarks.
 
 El repositorio es explícitamente experimental: el autor indica que no se reclama ninguna puntuación de benchmark, que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio, y que la implementación debe tratarse como un punto de partida. El número de parámetros reportado en los metadatos de safetensors es de 16.576, lo que sitúa al artefacto en un orden de magnitud muy alejado de los modelos de lenguaje de gran escala.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lschwarz/albef-classification28 | 16.576 (metadatos) | no disponible | sin benchmarks publicados | MIT | HuggingFace, checkpoint de inicialización |
+| lschwarz/albef-classification28 | 16.576 (metadatos) | no disponible | sin benchmarks publicados | MIT | Hugging Face, checkpoint de inicialización |
 | Alternativas Albef oficiales (por ejemplo, implementaciones de referencia para visión-lenguaje) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Modelos de clasificación multimodal de tamaño pequeño | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -79,5 +79,5 @@ No se dispone de datos verificables para establecer una comparativa cuantitativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lschwarz/albef-classification28
+- Hugging Face: https://huggingface.co/lschwarz/albef-classification28
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

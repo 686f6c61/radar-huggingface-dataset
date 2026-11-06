@@ -101,7 +101,7 @@ La eleccion entre tamaños depende del presupuesto de hardware y de la calidad r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zhiqian99/Qwen3-Reranker-0.6B-GGUF-llama_cpp
+- Repositorio Hugging Face: https://huggingface.co/zhiqian99/Qwen3-Reranker-0.6B-GGUF-llama_cpp
 - Modelo original: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B
 - Guia de llama-server para Qwen3 (multi-modelo): https://gist.github.com/VooDisss/42bce4eb5c76d3c325633886c5e348ee
 - Issue de llama.cpp sobre GGUFs de reranker rotos: https://github.com/ggml-org/llama.cpp/issues/16407

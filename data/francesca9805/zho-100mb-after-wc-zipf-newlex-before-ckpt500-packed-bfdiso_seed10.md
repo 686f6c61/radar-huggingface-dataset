@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (SFT) del checkpoint `francesca9805/ppt-wc-zipf-newlex-zho-before-100mb-packed-bfdiso_seed10`, desarrollado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones) y pesos en formato safetensors, entrenado con la libreria TRL 0.23.0 sobre PyTorch 2.11.0 y Transformers 4.56.2. No es un modelo orientado a produccion ni a tareas generales: su nombre y su procedencia apuntan a un experimento de investigacion sobre tokenizacion, seleccion de datos y empaquetado de secuencias.
+Este modelo es un ajuste fino (SFT) del checkpoint `francesca9805/ppt-wc-zipf-newlex-zho-before-100mb-packed-bfdiso_seed10`, desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones) y pesos en formato safetensors, entrenado con la libreria TRL 0.23.0 sobre PyTorch 2.11.0 y Transformers 4.56.2. No es un modelo orientado a produccion ni a tareas generales: su nombre y su procedencia apuntan a un experimento de investigacion sobre tokenizacion, seleccion de datos y empaquetado de secuencias.
 
 El identificador del modelo codifica varias decisiones experimentales: el prefijo `zho` (codigo ISO 639-3 del chino), un corpus de 100 MB, el uso de un esquema de muestreo basado en la ley de Zipf (`zipf`) frente a la variante uniforme del mismo autor, un nuevo lexico (`newlex`), el estado del entrenamiento antes del checkpoint 500 (`before-ckpt500`), empaquetado de secuencias (`packed`) y la semilla 10 (`seed10`). El proyecto de Weights & Biases enlazado en la model card pertenece a `f-padovani-university-of-groningen/new-tokenizers`, lo que situa el trabajo en el contexto de investigacion academica sobre tokenizadores.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zho-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10 | 124,8 M | No disponible | No disponible | HuggingFace, 0 descargas |
-| francesca9805/zho-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10 | 124,8 M (misma familia) | No disponible | No disponible | HuggingFace |
-| francesca9805/urd-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10 | 124,8 M (LLM Explorer) | No disponible | No disponible | HuggingFace, VRAM 0,2 GB segun LLM Explorer |
+| zho-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10 | 124,8 M | No disponible | No disponible | Hugging Face, 0 descargas |
+| francesca9805/zho-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10 | 124,8 M (misma familia) | No disponible | No disponible | Hugging Face |
+| francesca9805/urd-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10 | 124,8 M (LLM Explorer) | No disponible | No disponible | Hugging Face, VRAM 0,2 GB segun LLM Explorer |
 | GPT-2 base (referencia de arquitectura) | 124 M | 1024 tokens | MIT modificada | Ampliamente disponible |
 
 No se dispone de resultados de benchmarks comparativos entre estas variantes. La comparacion con el GPT-2 base es estructural (misma arquitectura y orden de magnitud de parametros), no de rendimiento. Los datos de los modelos hermanos proceden de los resultados de busqueda indicados; sus fichas tampoco declaran licencia ni idiomas.
@@ -93,7 +93,7 @@ No se dispone de resultados de benchmarks comparativos entre estas variantes. La
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-zipf-newlex-zho-before-100mb-packed-bfdiso_seed10
 - Variante uniforme (misma familia): https://huggingface.co/francesca9805/zho-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10
 - Variante uniforme despues del checkpoint 500: https://huggingface.co/francesca9805/zho-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed10

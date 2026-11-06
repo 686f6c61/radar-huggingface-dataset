@@ -103,7 +103,7 @@ No se dispone de información sobre otros modelos comparables de detección de t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aufklarer/VAP-OTO-CoreML
+- Modelo en Hugging Face: https://huggingface.co/aufklarer/VAP-OTO-CoreML
 - Checkpoint fuente: https://huggingface.co/viks66/VAP_checkpoints
 - Arquitectura VAP (Erik Ekstedt): https://github.com/ErikEkstedt/VoiceActivityProjection
 - SDK speech-swift: https://github.com/soniqo/speech-swift

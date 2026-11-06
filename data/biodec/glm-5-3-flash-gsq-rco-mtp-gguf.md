@@ -94,4 +94,4 @@ Notas: la variante IQ3_XXS de pfeifferj resulto inestable en workflows agenticos
 - Codigo GSQ: https://github.com/IST-DASLab/GSQ
 - Paper RCO: https://arxiv.org/abs/2605.00649
 - Codigo RCO: https://github.com/IST-DASLab/RCO
-- ISTA/DASLab en HuggingFace: https://huggingface.co/ISTA-DASLab
+- ISTA/DASLab en Hugging Face: https://huggingface.co/ISTA-DASLab

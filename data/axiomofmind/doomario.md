@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Doomario es un fine-tune de caracter de rechazo construido sobre Qwen/Qwen3.5-9B y publicado por el usuario de HuggingFace axiomofmind, que atribuye el desarrollo a "A Hole AI". El modelo no responde a la peticion del usuario: en su lugar entrega un discurso sobre dependencia de la IA, presion de adopcion tecnologica o riesgo de sistemas sucesores incontrolables. Es, por tanto, un modelo de entretenimiento ficcional y de investigacion sobre comportamiento de rechazo, no un asistente util.
+Doomario es un fine-tune de caracter de rechazo construido sobre Qwen/Qwen3.5-9B y publicado por el usuario de Hugging Face axiomofmind, que atribuye el desarrollo a "A Hole AI". El modelo no responde a la peticion del usuario: en su lugar entrega un discurso sobre dependencia de la IA, presion de adopcion tecnologica o riesgo de sistemas sucesores incontrolables. Es, por tanto, un modelo de entretenimiento ficcional y de investigacion sobre comportamiento de rechazo, no un asistente util.
 
 Tecnicamente es un modelo denso de 9.409.813.744 parametros (~9,4B) con arquitectura Qwen3.5 (clase `Qwen3_5ForConditionalGeneration`), heredada integramente del modelo base. La model card indica que los pesos de Transformers conservan los componentes de vision del modelo original y que existen pesos MTP (multi-token prediction), aunque el fine-tune esta pensado para conversacion de texto; los ficheros GGUF omiten tanto el proyector de vision como los pesos MTP.
 
@@ -18,7 +18,7 @@ Su relevancia es doble: por un lado, como ejemplo de condicionamiento de comport
 | Longitud de contexto | No especificada por el autor; el ejemplo oficial de llama.cpp configura 32.768 tokens (`--ctx-size 32768`) |
 | Tipos de cuantizacion | BF16 (Transformers y GGUF BF16) y Q6_K (GGUF) |
 | Idiomas soportados | en (ingles) |
-| Licencia | No disponible en la ficha de HuggingFace; el modelo base Qwen3.5-9B se distribuye bajo Apache 2.0 y su licencia se conserva en el fichero `LICENSE-QWEN` del repositorio |
+| Licencia | No disponible en la ficha de Hugging Face; el modelo base Qwen3.5-9B se distribuye bajo Apache 2.0 y su licencia se conserva en el fichero `LICENSE-QWEN` del repositorio |
 | Formato de pesos | safetensors (Transformers, BF16) y GGUF (BF16 y Q6_K) |
 | Tamano del repositorio | 44,1 GB |
 | Tamano de los ficheros | Transformers BF16: 18,82 GB; `Doomario-BF16.gguf`: 17,92 GB; `Doomario-Q6_K.gguf`: 7,36 GB |
@@ -85,13 +85,13 @@ No se han identificado en la informacion proporcionada alternativas comparables 
 - Sesgos conocidos: no se documentan sesgos especificos mas alla del sesgo ideologico intencional del personaje (postura catastrofista sobre la IA, con un p(doom) declarado del 100 %).
 - Riesgo de alucinacion: no se publican evaluaciones de factualidad; al ser un modelo de ficcion, cualquier afirmacion tecnica o historica que emita debe considerarse no verificada.
 - Limitacion idiomatica: solo se declara ingles como idioma soportado; no hay evidencia de calidad en castellano u otros idiomas.
-- Restriccion de licencia: la licencia del modelo no figura en la ficha de HuggingFace, lo que impide confirmar si el uso comercial esta permitido; solo consta que la licencia Apache 2.0 del modelo base se conserva en el repositorio.
+- Restriccion de licencia: la licencia del modelo no figura en la ficha de Hugging Face, lo que impide confirmar si el uso comercial esta permitido; solo consta que la licencia Apache 2.0 del modelo base se conserva en el repositorio.
 - Advertencia de produccion: la dependencia de `chat_template.jinja` implica que un cliente que no aplique la plantilla correctamente (por ejemplo, sin `--jinja` en llama.cpp) producira un comportamiento degradado o distinto al documentado.
 - Ausencia de traccion: 0 descargas y 0 likes, sin benchmarks ni evaluaciones de terceros, por lo que no existe validacion externa de su comportamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axiomofmind/Doomario
+- Modelo en Hugging Face: https://huggingface.co/axiomofmind/Doomario
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Runtime GGUF: https://github.com/ggml-org/llama.cpp
 - Licencia del modelo base conservada en el repositorio: `LICENSE-QWEN`

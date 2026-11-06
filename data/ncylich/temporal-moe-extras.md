@@ -4,7 +4,7 @@
 
 `ncylich/temporal-moe-extras` es un repositorio de artefactos de soporte para los experimentos del proyecto Temporal-MoE, desarrollado por ncylich como una bifurcación personal de FLAME-MoE (arXiv:2505.20225). No contiene checkpoints de entrenamiento en sí, sino capturas de ejecución, tablas de resultados, figuras y un modelo fusionado derivado de OLMoE-1B-7B-0924 con un router adaptado mediante un procedimiento de «bake» de cross-entropy. El objetivo del proyecto es reducir la memoria de servicio de los MoE haciendo que solo los expertos activos permanezcan residentes en memoria, en lugar de todo el pool de expertos.
 
-El repositorio incluye 248 archivos con un peso total de 39.78 GiB (55.1 GB según la metadata de HuggingFace) y se complementa con otros tres repositorios: checkpoints de entrenamiento (Megatron), adaptaciones del router en safetensors y el corpus de entrenamiento tokenizado. La pieza central es `merged_ce_model/`, un modelo OLMoE con el router fusionado que es cargable directamente con la librería `transformers`. Es un recurso orientado a investigación y reproducibilidad, más que a despliegue en producción.
+El repositorio incluye 248 archivos con un peso total de 39.78 GiB (55.1 GB según la metadata de Hugging Face) y se complementa con otros tres repositorios: checkpoints de entrenamiento (Megatron), adaptaciones del router en safetensors y el corpus de entrenamiento tokenizado. La pieza central es `merged_ce_model/`, un modelo OLMoE con el router fusionado que es cargable directamente con la librería `transformers`. Es un recurso orientado a investigación y reproducibilidad, más que a despliegue en producción.
 
 ## Especificaciones técnicas
 
@@ -73,11 +73,11 @@ No hay disponibles comparativas de rendimiento numérico entre estas variantes e
 - Contexto limitado: la ventana de contexto del modelo base es de 4096 tokens, lo que limita aplicaciones de memoria larga.
 - Dependencia del backbone: la calidad del modelo fusionado depende del OLMoE-1B-7B-0924, que no es un modelo de última generación en comparación con los LLMs actuales.
 - Los artefactos no son checkpoints de entrenamiento: los archivos en este repositorio son capturas y resultados; los checkpoints reales están en `ncylich/temporal-moe-ckpts`.
-- Discrepancia de tamaño: el README indica 39.78 GiB mientras que la metadata de HuggingFace muestra 55.1 GB; esto puede deberse a diferencias en el cómputo del tamaño.
+- Discrepancia de tamaño: el README indica 39.78 GiB mientras que la metadata de Hugging Face muestra 55.1 GB; esto puede deberse a diferencias en el cómputo del tamaño.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ncylich/temporal-moe-extras
+- Repositorio Hugging Face: https://huggingface.co/ncylich/temporal-moe-extras
 - Código del proyecto: https://github.com/ncylich/temporal-moe
 - Paper FLAME-MoE: https://arxiv.org/abs/2505.20225
 - Modelo base OLMoE-1B-7B-0924: https://huggingface.co/allenai/OLMoE-1B-7B-0924

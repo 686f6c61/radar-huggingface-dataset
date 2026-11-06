@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ideogram4 es un repositorio publicado por el desarrollador DeepBeepMeep en HuggingFace que contiene los pesos del modelo de generacion de imagenes Ideogram 4 en un formato de archivo unico, pensado para ser usado con WanGP (Wan2GP), la interfaz de generacion de imagen y video del mismo autor. El repositorio declara como modelo base ideogram-ai/ideogram-4-fp8 y esta etiquetado como finetune de ese modelo, con la libreria diffusion-single-file. El tamano total del repositorio es de 69,4 GB, lo que es coherente con pesos de difusion de imagen en precision alta.
+Ideogram4 es un repositorio publicado por el desarrollador DeepBeepMeep en Hugging Face que contiene los pesos del modelo de generacion de imagenes Ideogram 4 en un formato de archivo unico, pensado para ser usado con WanGP (Wan2GP), la interfaz de generacion de imagen y video del mismo autor. El repositorio declara como modelo base ideogram-ai/ideogram-4-fp8 y esta etiquetado como finetune de ese modelo, con la libreria diffusion-single-file. El tamano total del repositorio es de 69,4 GB, lo que es coherente con pesos de difusion de imagen en precision alta.
 
 La relevancia de esta publicacion no esta en un nuevo entrenamiento, sino en el empaquetado: WanGP esta disenado para ejecutar modelos generativos grandes en GPUs con poca VRAM (el autor afirma que 6 GB pueden ser suficientes para ciertos modelos) y con soporte para GPUs antiguas de las series RTX 10XX y 20XX. Esto convierte a este repositorio en una via de acceso practica a Ideogram 4 para equipos sin hardware de datacenter.
 
@@ -31,7 +31,7 @@ La informacion publicada es muy escasa: la model card se limita a describir las 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna del modelo en el repositorio. Por la etiqueta de HuggingFace (diffusion-single-file) y por el modelo base declarado (ideogram-ai/ideogram-4-fp8), se trata de un modelo de difusion para generacion de imagenes distribuido como archivo unico, derivado mediante finetune de la variante en fp8 de Ideogram 4. El repositorio no incluye detalles sobre el tipo de backbone, el schedule de difusion, el uso de text encoder o VAE, ni sobre el numero de parametros.
+No hay informacion publicada sobre la arquitectura interna del modelo en el repositorio. Por la etiqueta de Hugging Face (diffusion-single-file) y por el modelo base declarado (ideogram-ai/ideogram-4-fp8), se trata de un modelo de difusion para generacion de imagenes distribuido como archivo unico, derivado mediante finetune de la variante en fp8 de Ideogram 4. El repositorio no incluye detalles sobre el tipo de backbone, el schedule de difusion, el uso de text encoder o VAE, ni sobre el numero de parametros.
 
 Tampoco se documentan los datos de entrenamiento: no se indica el numero de tokens o pares imagen-texto utilizados, la composicion del dataset, ni si hubo etapas de ajuste por preferencias humanas (RLHF, DPO) o de alineacion. No se describe ninguna innovacion tecnica concreta (atencion lineal, decodificacion especulativa, destilacion de pasos, etc.) en la model card proporcionada. La unica informacion operativa es que los pesos estan adaptados para su uso con WanGP.
 
@@ -91,11 +91,11 @@ No se dispone de datos de parametros, contexto, rendimiento ni licencia de este 
 - Dependencia de una herramienta concreta: el uso previsto esta ligado a WanGP; no se garantiza que los pesos carguen en otros runners de difusion sin conversion previa.
 - Consumo de almacenamiento: 69,4 GB de repositorio exigen espacio en disco considerable y tiempos de descarga elevados, ademas de posible offloading de memoria durante la inferencia.
 - Busqueda web sin resultados utiles: las consultas realizadas no devolvieron documentacion tecnica, papers ni analisis independientes sobre este repositorio.
-- Fechas del repositorio: las marcas de creacion y actualizacion (2026) proceden directamente de los metadatos de HuggingFace y no se han podido contrastar con ninguna fuente externa.
+- Fechas del repositorio: las marcas de creacion y actualizacion (2026) proceden directamente de los metadatos de Hugging Face y no se han podido contrastar con ninguna fuente externa.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DeepBeepMeep/Ideogram4
+- Repositorio en Hugging Face: https://huggingface.co/DeepBeepMeep/Ideogram4
 - Modelo base declarado: https://huggingface.co/ideogram-ai/ideogram-4-fp8
 - WanGP (Wan2GP), herramienta de despliegue: https://github.com/deepbeepmeep/Wan2GP
 - Servidor de Discord de WanGP: https://discord.gg/g7efUW9jGV

@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El in
 
 | Modelo | Parametros | Modalidad | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MedGemma 4B IT | 4,3 B | imagen-texto (multimodal) | 128 K (heredado de Gemma 3) | Health AI Developer Foundations | gated en HuggingFace |
-| MedGemma 27B IT | 27 B | solo texto | no disponible | Health AI Developer Foundations | gated en HuggingFace |
+| MedGemma 4B IT | 4,3 B | imagen-texto (multimodal) | 128 K (heredado de Gemma 3) | Health AI Developer Foundations | gated en Hugging Face |
+| MedGemma 27B IT | 27 B | solo texto | no disponible | Health AI Developer Foundations | gated en Hugging Face |
 | Gemma 3 4B IT | 4 B aprox. | imagen-texto (multimodal, general) | 128 K | Gemma | publica |
 | LLaVA-Med 7B | 7 B aprox. | imagen-texto (medico) | no disponible | LLaMA | publica |
 
@@ -86,13 +86,13 @@ La comparacion cuantitativa de rendimiento entre estos modelos no esta disponibl
 - Sesgos conocidos: no disponibles en la informacion proporcionada; en modelos medicos existe riesgo de sesgo por subrepresentacion de poblaciones en los datasets de imagen clinica.
 - Riesgo de alucinacion: alto en tareas clinicas; el modelo puede generar hallazgos inexistentes o interpretaciones erroneas de imagenes, por lo que no debe usarse de forma autonoma.
 - Limitaciones de contexto e idioma: aunque el backbone es multilingue, el ajuste clinico esta centrado en ingles; el rendimiento en castellano u otros idiomas no esta validado.
-- Restricciones de licencia: licencia Health AI Developer Foundations con condiciones especificas para aplicaciones de salud; el acceso es restringido (gated) y requiere aceptar terminos en HuggingFace. Verificar compatibilidad con uso comercial antes de desplegar.
+- Restricciones de licencia: licencia Health AI Developer Foundations con condiciones especificas para aplicaciones de salud; el acceso es restringido (gated) y requiere aceptar terminos en Hugging Face. Verificar compatibilidad con uso comercial antes de desplegar.
 - Caveat de produccion: no es un dispositivo medico ni sustituye el juicio clinico; requiere supervision de profesionales sanitarios y validacion local por poblacion y equipamiento.
 - Privacidad: al procesar imagenes y datos clinicos, debe cumplirse la normativa aplicable (por ejemplo, RGPD y normativa de datos de salud) y evitarse el envio de datos identificables a servicios no controlados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/google/medgemma-4b-it
+- Modelo en Hugging Face: https://huggingface.co/google/medgemma-4b-it
 - Modelo base: https://huggingface.co/google/medgemma-4b-pt
 - Informe tecnico de MedGemma (referencia): https://arxiv.org/abs/2507.05201
 - Referencia Gemma (arXiv:2303.15343): https://arxiv.org/abs/2303.15343

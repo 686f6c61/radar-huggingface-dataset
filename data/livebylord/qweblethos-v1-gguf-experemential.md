@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qweblethos v1 es un fine-tune experimental del modelo Qwen3.8-27B, publicado por el usuario livebylord en HuggingFace. Se trata de una destilación de trayectorias sintéticas de agentes de codificación (conjunto Fable 5) mediante supervisión fina (SFT) con LoRA, con el objetivo de mejorar el comportamiento del modelo en tareas de agente de programación, depuración, uso de herramientas y razonamiento multi-paso. El resultado se distribuye como un archivo GGUF cuantizado en Q4_K_M, pensado para ejecutarse en entornos llama.cpp y servidores compatibles con OpenAI.
+Qweblethos v1 es un fine-tune experimental del modelo Qwen3.8-27B, publicado por el usuario livebylord en Hugging Face. Se trata de una destilación de trayectorias sintéticas de agentes de codificación (conjunto Fable 5) mediante supervisión fina (SFT) con LoRA, con el objetivo de mejorar el comportamiento del modelo en tareas de agente de programación, depuración, uso de herramientas y razonamiento multi-paso. El resultado se distribuye como un archivo GGUF cuantizado en Q4_K_M, pensado para ejecutarse en entornos llama.cpp y servidores compatibles con OpenAI.
 
 El modelo parte de la base Qwen3.8-27B (revisión `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`), de la cual se ha fusionado un adaptador LoRA de rango 32 y 159 millones de parámetros entrenables. El entrenamiento se realizó sobre 6.471 ejemplos de trayectorias de agentes, con una longitud de contexto de 16.384 tokens, durante una época y aproximadamente dos horas en una NVIDIA B200. La versión v1 es una prueba experimental; el autor anuncia una v2 próxima.
 
@@ -90,7 +90,7 @@ Qweblethos v1 se diferencia del base por su enfoque en trayectorias de agente de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/livebylord/Qweblethos-v1-GGUF-EXPEREMENTIAL
+- Modelo en Hugging Face: https://huggingface.co/livebylord/Qweblethos-v1-GGUF-EXPEREMENTIAL
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset `lordx64/agentic-distill-fable-5-sft`: https://huggingface.co/datasets/lordx64/agentic-distill-fable-5-sft
 - Dataset `greghavens/fable-5-coding-and-debugging-traces`: https://huggingface.co/datasets/greghavens/fable-5-coding-and-debugging-traces

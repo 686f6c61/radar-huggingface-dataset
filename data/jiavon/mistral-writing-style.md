@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jiavon/mistral-writing-style` es un repositorio publicado en HuggingFace por el usuario `jiavon` el 20 de agosto de 2026. El nombre sugiere que se trata de un ajuste fino (fine-tuning) de un modelo de la familia Mistral orientado a la generación de texto con un estilo de escritura específico, aunque no existe ninguna documentación que confirme esta hipótesis. La model card es una plantilla automática sin información sustancial, y el repositorio no registra descargas ni valoraciones, lo que indica que se trata de un proyecto personal o experimental sin validación comunitaria.
+El modelo `jiavon/mistral-writing-style` es un repositorio publicado en Hugging Face por el usuario `jiavon` el 20 de agosto de 2026. El nombre sugiere que se trata de un ajuste fino (fine-tuning) de un modelo de la familia Mistral orientado a la generación de texto con un estilo de escritura específico, aunque no existe ninguna documentación que confirme esta hipótesis. La model card es una plantilla automática sin información sustancial, y el repositorio no registra descargas ni valoraciones, lo que indica que se trata de un proyecto personal o experimental sin validación comunitaria.
 
 El tamaño del repositorio es de 0,1 GB, lo que apunta a un modelo de dimensiones reducidas (posiblemente un modelo de 7B de parámetros en cuantización ligera o un adaptador LoRA), pero no se puede confirmar sin acceso a los archivos. La etiqueta `arxiv:1910.09700` hace referencia al artículo de Lacoste et al. sobre estimación de emisiones de carbono en machine learning, no a la arquitectura del modelo. En resumen, se trata de un modelo con información pública prácticamente nula, por lo que cualquier uso en producción requeriría una evaluación previa exhaustiva.
 
@@ -54,4 +54,4 @@ No disponible. Al no existir información sobre la arquitectura, el tamaño o el
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jiavon/mistral-writing-style
+- Repositorio Hugging Face: https://huggingface.co/jiavon/mistral-writing-style

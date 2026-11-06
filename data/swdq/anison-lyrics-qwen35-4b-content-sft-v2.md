@@ -82,8 +82,8 @@ Como referencia externa, la model card incluye un experimento independiente sobr
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anison-lyrics-qwen35-4b-content-sft-v2 | ~4,84 mil millones | no disponible | safetensors | no disponible | Publico en HuggingFace (0 descargas al registrar la ficha) |
-| Qwen/Qwen3.5-4B (modelo base) | ~4 mil millones (no confirmado en la informacion) | no disponible | safetensors | no disponible | Publico en HuggingFace |
+| anison-lyrics-qwen35-4b-content-sft-v2 | ~4,84 mil millones | no disponible | safetensors | no disponible | Publico en Hugging Face (0 descargas al registrar la ficha) |
+| Qwen/Qwen3.5-4B (modelo base) | ~4 mil millones (no confirmado en la informacion) | no disponible | safetensors | no disponible | Publico en Hugging Face |
 | TPO-r2 (checkpoint previo del mismo autor) | no disponible | no disponible | no disponible | no disponible | Referenciado en la model card, sin enlace directo |
 
 La comparacion se limita al modelo base y al checkpoint previo mencionado por el autor; no se dispone de datos sobre otros modelos comparables de generacion de letras en japones.
@@ -104,7 +104,7 @@ La comparacion se limita al modelo base y al checkpoint previo mencionado por el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swdq/anison-lyrics-qwen35-4b-content-sft-v2
+- Modelo en Hugging Face: https://huggingface.co/swdq/anison-lyrics-qwen35-4b-content-sft-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/a0xdlkgjei3v/anison-lyrics/runs/u8lmv7of
 - Resultados del control de temperatura sobre TPO-r2 (referenciado en la model card como `temperature_control_results.json`)

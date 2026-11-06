@@ -18,7 +18,7 @@ Es relevante porque aborda una tarea distinta del plegamiento estático: la emul
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible (modelo biológico, no lingüístico) |
 | Licencia | MIT |
-| Formato de pesos | No disponible (repo de 2,0 GB en HuggingFace) |
+| Formato de pesos | No disponible (repo de 2,0 GB en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 BioEmu-2 emplea un modelo de puntuación all-atom de difusión que genera coordenadas cartesianas de todos los átomos mediante muestreo por difusión inversa. Las entradas son la secuencia o secuencias biomoleculares más un alineamiento múltiple de secuencias (MSA) opcional, condicionamiento por contactos y condicionamiento por método. Las salidas son un ensemble generativo de estructuras 3D en coordenadas cartesianas. La predicción puede guiarse opcionalmente mediante distancias entre átomos específicos proporcionadas por el usuario.
@@ -72,6 +72,6 @@ No disponible. La model card menciona comparaciones con modelos de cofolding de 
 - Sujeto a la ley aplicable, controles de exportación y la Política de Uso Aceptable de Microsoft.
 
 ## Enlaces
-- HuggingFace (modelo): https://huggingface.co/BioJazz-Lab/bioemu2
-- HuggingFace (checkpoints oficiales): https://huggingface.co/microsoft/bioemu2
+- Hugging Face (modelo): https://huggingface.co/BioJazz-Lab/bioemu2
+- Hugging Face (checkpoints oficiales): https://huggingface.co/microsoft/bioemu2
 - Repositorio de código fuente: https://github.com/microsoft/bioemu2

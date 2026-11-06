@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`muahseol/qwen3.5-0.8b-labor-sft` es un ajuste fino supervisado (SFT) del modelo base `Qwen/Qwen3.5-0.8B`, publicado por el usuario muahseol en HuggingFace. Se trata de un modelo de generación de texto especializado en consultas laborales en coreano, entrenado sobre pares de pregunta y respuesta de asesoría laboral. Su propósito declarado es didáctico: sirve como modelo de referencia (reference model) para prácticas de alineación por DPO.
+`muahseol/qwen3.5-0.8b-labor-sft` es un ajuste fino supervisado (SFT) del modelo base `Qwen/Qwen3.5-0.8B`, publicado por el usuario muahseol en Hugging Face. Se trata de un modelo de generación de texto especializado en consultas laborales en coreano, entrenado sobre pares de pregunta y respuesta de asesoría laboral. Su propósito declarado es didáctico: sirve como modelo de referencia (reference model) para prácticas de alineación por DPO.
 
 El modelo cuenta con 752.393.024 parámetros (aproximadamente 0,75 mil millones) y se distribuye bajo licencia Apache 2.0. El repositorio ocupa 3,0 GB porque los pesos se guardan en float32, lo que triplica el espacio respecto a una versión en bf16. Es un modelo pequeño, orientado a experimentación y a entornos con recursos limitados, no a producción.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| muahseol/qwen3.5-0.8b-labor-sft | 752 M | no disponible | Apache 2.0 | HuggingFace | SFT en coreano para asesoría laboral, uso didáctico |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | no disponible | no disponible en la informacion | HuggingFace | Modelo base sin ajuste de dominio; capacidades generales |
-| Qwen2.5-0.5B-Instruct | ~0,5 B | 32 768 tokens (según documentación pública de Qwen2.5) | Apache 2.0 | HuggingFace | Alternativa generalista de tamaño similar, multilingüe |
-| Qwen2.5-1.5B-Instruct | ~1,5 B | 32 768 tokens (según documentación pública de Qwen2.5) | Apache 2.0 | HuggingFace | Alternativa generalista de mayor tamaño, con instrucciones |
+| muahseol/qwen3.5-0.8b-labor-sft | 752 M | no disponible | Apache 2.0 | Hugging Face | SFT en coreano para asesoría laboral, uso didáctico |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | no disponible | no disponible en la informacion | Hugging Face | Modelo base sin ajuste de dominio; capacidades generales |
+| Qwen2.5-0.5B-Instruct | ~0,5 B | 32 768 tokens (según documentación pública de Qwen2.5) | Apache 2.0 | Hugging Face | Alternativa generalista de tamaño similar, multilingüe |
+| Qwen2.5-1.5B-Instruct | ~1,5 B | 32 768 tokens (según documentación pública de Qwen2.5) | Apache 2.0 | Hugging Face | Alternativa generalista de mayor tamaño, con instrucciones |
 
 La comparación con modelos de la familia Qwen2.5 se ofrece como referencia de categoría (modelos pequeños instruidos); los datos de contexto de esos modelos provienen de su documentación pública y no de la información proporcionada para este modelo, por lo que deben verificarse antes de usarse en producción.
 
@@ -84,6 +84,6 @@ La comparación con modelos de la familia Qwen2.5 se ofrece como referencia de c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muahseol/qwen3.5-0.8b-labor-sft
+- Modelo en Hugging Face: https://huggingface.co/muahseol/qwen3.5-0.8b-labor-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

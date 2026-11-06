@@ -82,7 +82,7 @@ No se dispone de datos comparativos directos con otros modelos de tamaño simila
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bioaligned/Qwen3.6-27B-CoupledWelfare
+- Modelo en Hugging Face: https://huggingface.co/Bioaligned/Qwen3.6-27B-CoupledWelfare
 - Adaptador LoRA: https://huggingface.co/Bioaligned/Qwen3.6-27B-CoupledWelfare-qlora
 - Repositorio del proyecto (GitHub): https://github.com/Bioaligned/coupled_welfare_project
 - README del proyecto (GitHub): https://github.com/Bioaligned/coupled_welfare_project/blob/main/README.md

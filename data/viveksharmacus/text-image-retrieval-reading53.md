@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`viveksharmacus/text-image-retrieval-reading53` no es un modelo entrenado, sino un repositorio de notas de investigación publicado por el usuario Vivek Sharma en HuggingFace. La model card es explícita al respecto: el repositorio contiene un esquema de experimento y notas de lectura sobre recuperación texto-imagen (*text-image retrieval*), y su propio autor advierte que no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado. Los artefactos declarados son dos ficheros Markdown: `summary.md` y `README.md`. El repositorio ocupa 0.0 GB y acumula 0 descargas y 0 *likes* en el momento de la consulta.
+`viveksharmacus/text-image-retrieval-reading53` no es un modelo entrenado, sino un repositorio de notas de investigación publicado por el usuario Vivek Sharma en Hugging Face. La model card es explícita al respecto: el repositorio contiene un esquema de experimento y notas de lectura sobre recuperación texto-imagen (*text-image retrieval*), y su propio autor advierte que no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado. Los artefactos declarados son dos ficheros Markdown: `summary.md` y `README.md`. El repositorio ocupa 0.0 GB y acumula 0 descargas y 0 *likes* en el momento de la consulta.
 
 El repositorio se etiqueta con `safetensors`, `transformer`, `research-notes`, `text-image-retrieval` y licencia MIT. El recuento de parámetros reportado a partir de los pesos safetensors es de 33.088, un orden de magnitud propio de un tensor de prueba o de un artefacto placeholder (decenas de miles de parámetros), incompatible con cualquier modelo transformer funcional para recuperación multimodal. Por tanto, la ficha describe un artefacto documental, no un modelo desplegable.
 
@@ -83,8 +83,8 @@ Como referencia de categoría, la recuperación texto-imagen es un área con tra
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/viveksharmacus/text-image-retrieval-reading53
-- Perfil del autor en HuggingFace: https://huggingface.co/viveksharmacus
+- Hugging Face: https://huggingface.co/viveksharmacus/text-image-retrieval-reading53
+- Perfil del autor en Hugging Face: https://huggingface.co/viveksharmacus
 - Listado de modelos del autor: https://huggingface.co/viveksharmacus/models
 - Recopilación de investigación sobre text-to-image retrieval (aimodels.fyi): https://www.aimodels.fyi/research-topics/text-to-image-retrieval
 - Recopilación de investigación sobre image-text retrieval (aimodels.fyi): https://www.aimodels.fyi/research-topics/image-text-retrieval

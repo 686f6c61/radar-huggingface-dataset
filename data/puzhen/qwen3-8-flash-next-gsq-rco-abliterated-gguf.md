@@ -90,7 +90,7 @@ El upstream y esta ficha comparten arquitectura, contexto y licencia; la diferen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/puzhen/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
+- Hugging Face: https://huggingface.co/puzhen/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
 - Modelo base: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - README en chino: https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF/blob/main/README.zh-CN.md
 - Referencia arXiv citada en tags: arxiv:2604.18556

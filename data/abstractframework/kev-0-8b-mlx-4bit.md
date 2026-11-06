@@ -90,7 +90,7 @@ No se dispone de informacion sobre otros modelos de decision comparables de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbstractFramework/kev-0.8b-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/AbstractFramework/kev-0.8b-mlx-4bit
 - Modelo base: https://huggingface.co/jaredpalmer/kev-0.8b
 - Documentacion de modelos de decision de AbstractCore: https://github.com/lpalbou/AbstractCore/blob/main/docs/decision-models.md
 - Repositorio mlx-lm: https://github.com/ml-explore/mlx-lm

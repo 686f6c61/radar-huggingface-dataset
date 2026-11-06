@@ -87,7 +87,7 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/garhwali-hindi-mt-v2-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/garhwali-hindi-mt-v2-GGUF
 - Modelo base: https://huggingface.co/vineetkukreti/garhwali-hindi-mt-v2
 - Pagina de resumen y descargas del autor para este modelo: https://hf.tst.eu/model#garhwali-hindi-mt-v2-GGUF
 - Guia de uso de ficheros GGUF (README de referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -79,6 +79,6 @@ No disponible. La informacion proporcionada no incluye especificaciones de model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/voicetide/nemotron-3.5-asr-streaming-0.6b-gguf
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
+- Repositorio en Hugging Face: https://huggingface.co/voicetide/nemotron-3.5-asr-streaming-0.6b-gguf
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/

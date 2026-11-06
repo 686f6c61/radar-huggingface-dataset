@@ -75,7 +75,7 @@ No disponible. No se han identificado en la información proporcionada otros rep
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FrankLin00/mmrh-afw-02b-keras-symlink-with-weight
+- Repositorio en Hugging Face: https://huggingface.co/FrankLin00/mmrh-afw-02b-keras-symlink-with-weight
 - Referencia al hallazgo citado en la model card: `keras/23015-get-file-symlink-traversal-afw` (sin URL directa en la información proporcionada)
 - `MANIFEST.json` de la colección: mencionado en la model card, sin URL directa en la información proporcionada
 - El resultado de búsqueda web proporcionado no guarda relación con el modelo y se omite por no ser relevante.

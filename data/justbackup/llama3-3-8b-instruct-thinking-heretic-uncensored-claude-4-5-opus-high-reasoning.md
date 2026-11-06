@@ -84,7 +84,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (po
 
 ## Enlaces
 
-- HuggingFace (modelo original): https://huggingface.co/Justbackup/Llama3.3-8B-Instruct-Thinking-Heretic-Uncensored-Claude-4.5-Opus-High-Reasoning
+- Hugging Face (modelo original): https://huggingface.co/Justbackup/Llama3.3-8B-Instruct-Thinking-Heretic-Uncensored-Claude-4.5-Opus-High-Reasoning
 - Modelo base (allura-forge): https://huggingface.co/allura-forge/Llama-3.3-8B-Instruct
 - Dataset de razonamiento (TeichAI): https://huggingface.co/datasets/TeichAI/claude-4.5-opus-high-reasoning-250x
 - Herramienta de entrenamiento (Unsloth): https://github.com/unslothai/unsloth

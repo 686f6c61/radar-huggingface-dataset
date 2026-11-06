@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario DAS12DA12 bajo el identificador `DAS12DA12DA12/MyAwesomeModel-TestRepo`. El propio nombre del repositorio ("TestRepo") y sus métricas de uso (39 descargas, 0 likes, tamano de repositorio de 0.0 GB, sin pesos publicados) indican que se trata de un repositorio de prueba y no de un modelo listo para produccion. La model card describe un supuesto modelo de razonamiento con mejoras en matematicas, programacion y function calling, pero no aporta especificaciones verificables de arquitectura ni de parametros.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario DAS12DA12 bajo el identificador `DAS12DA12DA12/MyAwesomeModel-TestRepo`. El propio nombre del repositorio ("TestRepo") y sus métricas de uso (39 descargas, 0 likes, tamano de repositorio de 0.0 GB, sin pesos publicados) indican que se trata de un repositorio de prueba y no de un modelo listo para produccion. La model card describe un supuesto modelo de razonamiento con mejoras en matematicas, programacion y function calling, pero no aporta especificaciones verificables de arquitectura ni de parametros.
 
 Existe una contradiccion interna relevante: las etiquetas del repositorio declaran `bert` y pipeline `feature-extraction`, mientras que la model card describe un asistente conversacional de razonamiento con "thinking mode", busqueda web y subida de ficheros, propio de un LLM generativo. No hay forma de resolver esa discrepancia con la informacion disponible, ya que no se publican pesos, configuracion ni codigo.
 
@@ -23,7 +23,7 @@ Su relevancia actual es nula como modelo de produccion: no hay artefactos descar
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura real. Las etiquetas de HuggingFace apuntan a `bert` con pipeline `feature-extraction`, mientras que el texto de la model card habla de un modelo de razonamiento con profundidad de pensamiento variable (12K tokens por pregunta en la version anterior, 23K en la actual), soporte de system prompt, function calling y busqueda web. Son dos descripciones incompatibles y ninguna viene acompanada de configuracion, codigo o pesos que permitan comprobarla.
+No se dispone de informacion sobre la arquitectura real. Las etiquetas de Hugging Face apuntan a `bert` con pipeline `feature-extraction`, mientras que el texto de la model card habla de un modelo de razonamiento con profundidad de pensamiento variable (12K tokens por pregunta en la version anterior, 23K en la actual), soporte de system prompt, function calling y busqueda web. Son dos descripciones incompatibles y ninguna viene acompanada de configuracion, codigo o pesos que permitan comprobarla.
 
 Tampoco hay datos sobre el entrenamiento: no se indica numero de tokens, composicion del dataset, ni si hubo RLHF, DPO u otro metodo de post-entrenamiento. La model card menciona de forma generica "mayores recursos computacionales" y "mecanismos de optimizacion algoritmica durante el post-training", sin cifras ni referencias. No se ha publicado informacion verificable sobre innovaciones tecnicas concretas.
 
@@ -80,7 +80,7 @@ Ademas, la model card cita una mejora en AIME 2025 del 70 % al 87,5 % respecto a
 - VRAM estimada para inferencia: no disponible (se desconocen los parametros totales).
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: la libreria declarada es `transformers` y la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints; no se confirma soporte de vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: la libreria declarada es `transformers` y la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints; no se confirma soporte de vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible. La unica referencia indirecta es el consumo de 23.000 tokens por pregunta en AIME 2025 segun el autor, que implicaria costes de inferencia elevados en tareas de razonamiento.
 
 ## Comparativa con modelos similares
@@ -106,7 +106,7 @@ No es posible establecer una comparativa fiable. Los unicos modelos de referenci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DAS12DA12DA12/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/DAS12DA12DA12/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Blog o web oficial: no disponible (la model card menciona una web oficial sin enlazarla)
 - Repositorio de codigo: no disponible (la model card menciona un repositorio sin enlazarlo)

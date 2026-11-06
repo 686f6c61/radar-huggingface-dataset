@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rghosh8/SFT_baseline_deepseek-llm-7b-chat_gsm8k_42 | 6,91 B | no disponible | no disponible | HuggingFace, 0 descargas | SFT sobre GSM8K, semilla 42, sin benchmarks |
-| deepseek-ai/deepseek-llm-7b-chat (base) | 6,91 B | no disponible en esta ficha | licencia DeepSeek (consultar model card original) | HuggingFace, ampliamente usado | Modelo chat generalista; referencia directa del ajuste |
-| Mistral-7B-Instruct-v0.2/v0.3 | ~7,2 B | 32 K (v0.2/v0.3) | Apache 2.0 | HuggingFace, muy extendido | Alternativa generalista con licencia permisiva y contexto largo |
-| Meta Llama 3.1 8B Instruct | ~8 B | 128 K | Llama 3.1 Community License | HuggingFace, muy extendido | Alternativa generalista con contexto muy largo y buen rendimiento en matemáticas |
+| rghosh8/SFT_baseline_deepseek-llm-7b-chat_gsm8k_42 | 6,91 B | no disponible | no disponible | Hugging Face, 0 descargas | SFT sobre GSM8K, semilla 42, sin benchmarks |
+| deepseek-ai/deepseek-llm-7b-chat (base) | 6,91 B | no disponible en esta ficha | licencia DeepSeek (consultar model card original) | Hugging Face, ampliamente usado | Modelo chat generalista; referencia directa del ajuste |
+| Mistral-7B-Instruct-v0.2/v0.3 | ~7,2 B | 32 K (v0.2/v0.3) | Apache 2.0 | Hugging Face, muy extendido | Alternativa generalista con licencia permisiva y contexto largo |
+| Meta Llama 3.1 8B Instruct | ~8 B | 128 K | Llama 3.1 Community License | Hugging Face, muy extendido | Alternativa generalista con contexto muy largo y buen rendimiento en matemáticas |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rghosh8/SFT_baseline_deepseek-llm-7b-chat_gsm8k_42
+- Modelo en Hugging Face: https://huggingface.co/rghosh8/SFT_baseline_deepseek-llm-7b-chat_gsm8k_42
 - Modelo base: https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat
 - Repositorio TRL: https://github.com/huggingface/trl
 - Dataset GSM8K (referencia): https://huggingface.co/datasets/openai/gsm8k

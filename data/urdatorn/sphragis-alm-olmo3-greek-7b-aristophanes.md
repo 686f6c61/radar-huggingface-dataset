@@ -86,7 +86,7 @@ La diferencia clave es que el modelo Sphragis esta entrenado para maximizar la d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo3-greek-7b-aristophanes
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo3-greek-7b-aristophanes
 - Modelo base: https://huggingface.co/Urdatorn/olmo3-7b-ancient-greek
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Repositorio de codigo (entrenamiento, puntuacion y atribucion): https://github.com/Urdatorn/sphragis_models

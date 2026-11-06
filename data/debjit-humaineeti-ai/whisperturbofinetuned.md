@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `debjit-humaineeti-ai/WhisperTurboFinetuned` es un checkpoint publicado en HuggingFace por el usuario `debjit-humaineeti-ai`, presumiblemente vinculado a la empresa humaineeti, especializada en IA agéntica y generativa para entornos empresariales. Por su nombre, podría tratarse de un ajuste fino (fine-tuning) de Whisper Turbo, la variante optimizada para velocidad del modelo de reconocimiento de voz de OpenAI, pero no se dispone de confirmación técnica al respecto.
+El modelo `debjit-humaineeti-ai/WhisperTurboFinetuned` es un checkpoint publicado en Hugging Face por el usuario `debjit-humaineeti-ai`, presumiblemente vinculado a la empresa humaineeti, especializada en IA agéntica y generativa para entornos empresariales. Por su nombre, podría tratarse de un ajuste fino (fine-tuning) de Whisper Turbo, la variante optimizada para velocidad del modelo de reconocimiento de voz de OpenAI, pero no se dispone de confirmación técnica al respecto.
 
-La ficha del modelo en HuggingFace es extremadamente escasa: no incluye pipeline, idiomas soportados, arquitectura declarada, ni ningún detalle de entrenamiento o capacidades. La única información disponible es la licencia MIT y las etiquetas `license:mit` y `region:us`. El modelo fue creado el 18 de agosto de 2026 (fecha futura que sugiere un posible error en el registro) y no registra descargas ni valoraciones.
+La ficha del modelo en Hugging Face es extremadamente escasa: no incluye pipeline, idiomas soportados, arquitectura declarada, ni ningún detalle de entrenamiento o capacidades. La única información disponible es la licencia MIT y las etiquetas `license:mit` y `region:us`. El modelo fue creado el 18 de agosto de 2026 (fecha futura que sugiere un posible error en el registro) y no registra descargas ni valoraciones.
 
 En estas condiciones, cualquier uso en producción o evaluación técnica resulta arriesgado por la falta de documentación. Esta ficha recoge únicamente los datos verificables y marca como "no disponible" todo aquello que no ha sido publicado.
 
@@ -55,7 +55,7 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo, no es p
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/debjit-humaineeti-ai/WhisperTurboFinetuned)
+- [Modelo en Hugging Face](https://huggingface.co/debjit-humaineeti-ai/WhisperTurboFinetuned)
 - [Sitio web de humaineeti](https://www.humaineeti.ai/)
 - [Perfil de Debjit Paul](https://debjitpaul.github.io/)
 - [Anuncio de Whisper de OpenAI](https://openai.com/index/whisper/)

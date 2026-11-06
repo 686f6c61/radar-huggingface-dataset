@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Offo AI Tools Directory no es un modelo de lenguaje, sino un repositorio auxiliar publicado en HuggingFace bajo el identificador `zhouweiyuan51/offo-ai-tools-directory`. Contiene un pequeño cliente en Python (`offo_client.py`) que construye URL de búsqueda y de categorías del directorio de herramientas de IA Offo (sitio web `offo.dev`), junto con ficheros de configuración y ejemplos de uso. Su función es facilitar la integración programática con el catálogo de herramientas del sitio, no generar texto ni realizar inferencia.
+Offo AI Tools Directory no es un modelo de lenguaje, sino un repositorio auxiliar publicado en Hugging Face bajo el identificador `zhouweiyuan51/offo-ai-tools-directory`. Contiene un pequeño cliente en Python (`offo_client.py`) que construye URL de búsqueda y de categorías del directorio de herramientas de IA Offo (sitio web `offo.dev`), junto con ficheros de configuración y ejemplos de uso. Su función es facilitar la integración programática con el catálogo de herramientas del sitio, no generar texto ni realizar inferencia.
 
 El repositorio está etiquetado con `ai-tools`, `directory` y `productivity`, y declara licencia MIT. No incluye pesos, tokenizador, arquitectura de red ni datos de entrenamiento, por lo que no puede considerarse un modelo en el sentido técnico habitual. Las descargas y los "likes" registrados son cero en el momento de la consulta, y la model card se limita a describir el sitio web y el contenido del repositorio.
 
@@ -76,6 +76,6 @@ No disponible. No se han identificado en la información proporcionada modelos o
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zhouweiyuan51/offo-ai-tools-directory
+- Repositorio en Hugging Face: https://huggingface.co/zhouweiyuan51/offo-ai-tools-directory
 - Sitio web de Offo: https://offo.dev
 - Catálogo de herramientas por categoría: https://offo.dev/tools

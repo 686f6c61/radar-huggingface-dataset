@@ -84,7 +84,7 @@ La informacion disponible no incluye comparaciones con otros clasificadores de A
 
 | Modelo | Parametros | Tamano tipico | Contexto/tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `asl-alphabet-tinycnn-int8` | 82.755 | 92,3 KB (int8) | Clasificacion ASL, 27 clases, entrada 64x64 | MIT | HuggingFace |
+| `asl-alphabet-tinycnn-int8` | 82.755 | 92,3 KB (int8) | Clasificacion ASL, 27 clases, entrada 64x64 | MIT | Hugging Face |
 | MobileNetV2 (referencia general) | ~3,4 millones | ~14 MB (int8) | Clasificacion ImageNet, 1000 clases | Apache 2.0 | TensorFlow/Keras |
 | EfficientNet-Lite0 (referencia general) | ~4,7 millones | ~5 MB (int8) | Clasificacion ImageNet, 1000 clases | Apache 2.0 | TensorFlow Lite |
 
@@ -105,7 +105,7 @@ Los modelos de referencia citados son ordenes de magnitud mayores en parametros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/satvik4577/asl-alphabet-tinycnn-int8
+- Hugging Face: https://huggingface.co/satvik4577/asl-alphabet-tinycnn-int8
 - Dataset de entrenamiento (Kaggle): `grassknoted/asl-alphabet` (referenciado en la model card, sin URL directa en la informacion disponible)
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada
 - Los resultados de la busqueda web realizada no contienen enlaces tecnicos relevantes sobre este modelo ni sobre clasificacion de ASL, por lo que se descartan.

@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pakanu/style-tuned-llm-qwen2.5-1.5b-lora | Adaptador sobre 1.500 M | No disponible | Simplificación de texto | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen2.5-1.5B-Instruct (modelo base) | 1.500 M | No disponible en esta ficha | Instrucciones generales | Apache 2.0 | HuggingFace |
+| pakanu/style-tuned-llm-qwen2.5-1.5b-lora | Adaptador sobre 1.500 M | No disponible | Simplificación de texto | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen2.5-1.5B-Instruct (modelo base) | 1.500 M | No disponible en esta ficha | Instrucciones generales | Apache 2.0 | Hugging Face |
 | Alternativas de simplificación de texto | No disponible | No disponible | Simplificación | No disponible | No disponible |
 
 No se dispone de información sobre otros adaptadores o modelos comparables de simplificación de texto en la documentación proporcionada.
@@ -82,6 +82,6 @@ No se dispone de información sobre otros adaptadores o modelos comparables de s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pakanu/style-tuned-llm-qwen2.5-1.5b-lora
+- Hugging Face: https://huggingface.co/pakanu/style-tuned-llm-qwen2.5-1.5b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Dataset de entrenamiento (GEM/wiki_auto_asset_turk): no se proporciona enlace directo en la información disponible.

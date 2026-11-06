@@ -82,9 +82,9 @@ Latencia: 85-115 ms p95 por bloque de 960 ms en H100, con 8-11 flujos concurrent
 
 | Modelo | Parámetros | Contexto | WER dictado (`val_drugs_std`) | WER general (`val_general`) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Praxy LFM3 FR Medical Live | 1,79 mM | no disponible | 6,47 (960 ms) | 8,95 (960 ms) | lfm-open-license | HuggingFace |
+| Praxy LFM3 FR Medical Live | 1,79 mM | no disponible | 6,47 (960 ms) | 8,95 (960 ms) | lfm-open-license | Hugging Face |
 | NeMo V6 + T5Gemma2 (cascada de referencia) | no disponible | no disponible | 7,41 | 6,76 | no disponible | referencia rejugada por el autor |
-| Praxy LFM3 FR Medical Delib (segunda pasada) | no disponible | no disponible | 6,16 (cascada) | 8,63 (cascada) | lfm-open-license | HuggingFace |
+| Praxy LFM3 FR Medical Delib (segunda pasada) | no disponible | no disponible | 6,16 (cascada) | 8,63 (cascada) | lfm-open-license | Hugging Face |
 
 No se dispone de datos de benchmarks de otros modelos ASR franceses comparables en la información proporcionada.
 
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks de otros modelos ASR franceses comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PraxySante/Praxy-LFM3-FR-Medical-Live
+- Modelo en Hugging Face: https://huggingface.co/PraxySante/Praxy-LFM3-FR-Medical-Live
 - Modelo de segunda pasada de la cascada: https://huggingface.co/PraxySante/Praxy-LFM3-FR-Medical-Delib
 - Modelo base LFM3 audio (Liquid AI): no disponible en la información proporcionada
 - Script de streaming (`scripts/streaming_infer.py`, repositorio interno `lfm3_fr_live`): no disponible públicamente, solicitable a PraxySante

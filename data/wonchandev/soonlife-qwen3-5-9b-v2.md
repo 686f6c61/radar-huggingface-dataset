@@ -106,10 +106,10 @@ Además, la model card informa de que el bloqueo por búsquedas duplicadas bajó
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Soonlife-Qwen3.5-9B-v2 | 9,41 B | 32.768 (entrenamiento) | Destilación RAG/agente en coreano sobre Qwen3.5-9B | Apache 2.0 | HuggingFace (este repositorio), FP8 y LoRA |
-| Qwen/Qwen3.5-9B (base) | 9 B | no disponible en la información | Modelo multimodal generalista | no disponible en la información | HuggingFace |
+| Soonlife-Qwen3.5-9B-v2 | 9,41 B | 32.768 (entrenamiento) | Destilación RAG/agente en coreano sobre Qwen3.5-9B | Apache 2.0 | Hugging Face (este repositorio), FP8 y LoRA |
+| Qwen/Qwen3.5-9B (base) | 9 B | no disponible en la información | Modelo multimodal generalista | no disponible en la información | Hugging Face |
 | Qwen3.8-27B (teacher) | 27 B | no disponible en la información | Profesor usado para generar los datos | no disponible en la información | No se referencia repositorio público en la model card |
-| Soonlife-Qwen3.5-9B-v2b-FP8 | 9,41 B | 32.768 (entrenamiento) | Misma receta con 1,0 época; variante de control | Apache 2.0 | HuggingFace |
+| Soonlife-Qwen3.5-9B-v2b-FP8 | 9,41 B | 32.768 (entrenamiento) | Misma receta con 1,0 época; variante de control | Apache 2.0 | Hugging Face |
 
 La comparación relevante es contra el modelo base: en el flujo RAG, v2 pasa de 65,9 % a 0,3 % de espaciado incorrecto en cifras, de 10,2 % a 0,0 % de salidas con código o HTML y de 0,61 a 0,81 en recuperación de cifras del teacher, a costa de un aumento de respuestas que empiezan por "no encontrado" (3,5 % a 9,2 %). Frente al teacher de 27B, v2 se queda corto en tasa de "no encontrado" (16,3 % frente a 7,2 % en el flujo de agente) y en número de rondas (4,53 frente a 4,23), pero iguala la tasa de reescritura tras control de calidad (17,4 % frente a 17,1 %).
 

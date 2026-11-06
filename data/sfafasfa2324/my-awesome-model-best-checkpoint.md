@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sfafasfa2324/my-awesome-model-best-checkpoint` es un checkpoint de un modelo BERT, desarrollado por el usuario `sfafasfa2324` y publicado en HuggingFace bajo licencia MIT. Se presenta como el mejor checkpoint seleccionado de un proceso de entrenamiento (paso 1000) según una puntuación global de 0.712 obtenida a partir de 15 benchmarks de evaluación. El modelo está diseñado para extracción de características (feature extraction) y es compatible con la librería `transformers` de PyTorch.
+El modelo `sfafasfa2324/my-awesome-model-best-checkpoint` es un checkpoint de un modelo BERT, desarrollado por el usuario `sfafasfa2324` y publicado en Hugging Face bajo licencia MIT. Se presenta como el mejor checkpoint seleccionado de un proceso de entrenamiento (paso 1000) según una puntuación global de 0.712 obtenida a partir de 15 benchmarks de evaluación. El modelo está diseñado para extracción de características (feature extraction) y es compatible con la librería `transformers` de PyTorch.
 
 Aunque la información disponible es muy limitada, los benchmarks reportados sugieren que el modelo ha sido evaluado en tareas diversas como razonamiento matemático, generación de código, clasificación de texto, análisis de sentimiento, respuesta a preguntas, razonamiento lógico, sentido común, comprensión lectora, generación de diálogo, resumen, traducción, recuperación de conocimiento, escritura creativa, seguimiento de instrucciones y evaluación de seguridad. No se especifican el tamaño del modelo, la arquitectura concreta (BERT base, large, etc.) ni los datos de entrenamiento, por lo que su utilidad práctica queda condicionada a la verificación de su rendimiento real.
 
@@ -85,4 +85,4 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace - sfafasfa2324/my-awesome-model-best-checkpoint](https://huggingface.co/sfafasfa2324/my-awesome-model-best-checkpoint)
+- [Hugging Face - sfafasfa2324/my-awesome-model-best-checkpoint](https://huggingface.co/sfafasfa2324/my-awesome-model-best-checkpoint)

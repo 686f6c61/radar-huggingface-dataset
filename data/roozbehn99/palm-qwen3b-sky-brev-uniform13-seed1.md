@@ -90,9 +90,9 @@ Los datos de las alternativas proceden de sus fichas públicas y no se han verif
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Naturaleza |
 |---|---|---|---|---|---|
-| `roozbehn99/palm-qwen3b-sky-brev-uniform13-seed1` | 3B | no especificado en la model card (32.768 en el modelo base) | Apache-2.0 | HuggingFace, 13 subcarpetas | Artefacto de investigación multiobjetivo, sin ajuste de seguridad adicional |
-| `Qwen/Qwen2.5-3B-Instruct` | 3B | 32.768 tokens | Apache-2.0 | HuggingFace | Modelo instructivo generalista, ajustado con datos supervisados y preferencias |
-| `meta-llama/Llama-3.2-3B-Instruct` | 3,21B | 128.000 tokens | Llama 3.2 Community License | HuggingFace (con aceptación de términos) | Modelo instructivo generalista con licencia restrictiva para algunos usos |
+| `roozbehn99/palm-qwen3b-sky-brev-uniform13-seed1` | 3B | no especificado en la model card (32.768 en el modelo base) | Apache-2.0 | Hugging Face, 13 subcarpetas | Artefacto de investigación multiobjetivo, sin ajuste de seguridad adicional |
+| `Qwen/Qwen2.5-3B-Instruct` | 3B | 32.768 tokens | Apache-2.0 | Hugging Face | Modelo instructivo generalista, ajustado con datos supervisados y preferencias |
+| `meta-llama/Llama-3.2-3B-Instruct` | 3,21B | 128.000 tokens | Llama 3.2 Community License | Hugging Face (con aceptación de términos) | Modelo instructivo generalista con licencia restrictiva para algunos usos |
 
 Frente al modelo base Qwen2.5-3B-Instruct, este repositorio añade un ajuste RL específico sobre matemáticas (RLVR-GSM y RLVR-MATH) y un control explícito del eje brevedad-utilidad, a costa de un alcance de dominio mucho más estrecho y de la ausencia de ajuste de seguridad. No se dispone de comparaciones directas de rendimiento con estas alternativas en la información proporcionada.
 
@@ -113,7 +113,7 @@ Frente al modelo base Qwen2.5-3B-Instruct, este repositorio añade un ajuste RL 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/roozbehn99/palm-qwen3b-sky-brev-uniform13-seed1
+- Repositorio Hugging Face: https://huggingface.co/roozbehn99/palm-qwen3b-sky-brev-uniform13-seed1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio hermano (portafolio Algoritmo 1, semilla 1): https://huggingface.co/roozbehn99/palm-qwen3b-sky-brev-seed1
 - Reward model de utilidad: https://huggingface.co/Skywork/Skywork-Reward-Llama-3.1-8B

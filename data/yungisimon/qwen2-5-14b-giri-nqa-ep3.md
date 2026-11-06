@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Qwen2.5-14B-giri-nqa-ep3 es un modelo de lenguaje publicado en HuggingFace por el usuario yungisimon. Se trata, por la nomenclatura del repositorio y la etiqueta `qwen2`, de un ajuste fino del modelo denso Qwen2.5-14B, con un total real de 14.770.033.664 parametros (14,77 mil millones) confirmado en los metadatos de safetensors. El sufijo `giri-nqa-ep3` sugiere un entrenamiento sobre un conjunto de datos de preguntas y respuestas durante tres epocas, aunque el repositorio no incluye model card, dataset, hiperparametros ni metodologia de entrenamiento.
+Qwen2.5-14B-giri-nqa-ep3 es un modelo de lenguaje publicado en Hugging Face por el usuario yungisimon. Se trata, por la nomenclatura del repositorio y la etiqueta `qwen2`, de un ajuste fino del modelo denso Qwen2.5-14B, con un total real de 14.770.033.664 parametros (14,77 mil millones) confirmado en los metadatos de safetensors. El sufijo `giri-nqa-ep3` sugiere un entrenamiento sobre un conjunto de datos de preguntas y respuestas durante tres epocas, aunque el repositorio no incluye model card, dataset, hiperparametros ni metodologia de entrenamiento.
 
 El modelo resuelve, en principio, tareas de generacion de texto propias de la familia Qwen2.5 en el rango de los 14B, un tamano que se ha consolidado como punto de equilibrio entre calidad y coste de inferencia en GPUs de gama alta de consumo. Su relevancia actual es limitada: cuenta con 10 descargas y 0 likes, no tiene licencia declarada, no publica idiomas soportados ni resultados de evaluacion, y el repositorio ocupa 59,1 GB, un tamano coherente con pesos almacenados en fp32 (14,77B x 4 bytes = 59,08 GB).
 
@@ -95,7 +95,7 @@ Frente a estas alternativas, el checkpoint analizado no aporta informacion verif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yungisimon/Qwen2.5-14B-giri-nqa-ep3
+- Modelo en Hugging Face: https://huggingface.co/yungisimon/Qwen2.5-14B-giri-nqa-ep3
 - Repositorio del modelo base Qwen2.5-14B: https://huggingface.co/Qwen/Qwen2.5-14B
 - Repositorio del modelo base instruido Qwen2.5-14B-Instruct: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Informe tecnico de Qwen2.5 (arXiv:2412.15115): https://arxiv.org/abs/2412.15115

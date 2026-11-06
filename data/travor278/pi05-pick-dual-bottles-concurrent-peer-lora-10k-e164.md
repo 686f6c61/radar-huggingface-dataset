@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Travor278/pi05-pick-dual-bottles-concurrent-peer-lora-10k-e164` es un checkpoint de inferencia de una política robótica de la familia PI0.5 (OpenPI), publicado en HuggingFace por el usuario Travor278. Se trata de un ajuste fino con LoRA sobre la receta "peer" de la serie de entrenamiento Sim12, orientado a la tarea de recoger dos botellas de forma concurrente. El repositorio ocupa 6,3 GB y contiene únicamente parámetros de modelo y activos de normalización emparejados; se excluyen el optimizador, el `train_state` y el estado reanudable del `data_loader`.
+El modelo `Travor278/pi05-pick-dual-bottles-concurrent-peer-lora-10k-e164` es un checkpoint de inferencia de una política robótica de la familia PI0.5 (OpenPI), publicado en Hugging Face por el usuario Travor278. Se trata de un ajuste fino con LoRA sobre la receta "peer" de la serie de entrenamiento Sim12, orientado a la tarea de recoger dos botellas de forma concurrente. El repositorio ocupa 6,3 GB y contiene únicamente parámetros de modelo y activos de normalización emparejados; se excluyen el optimizador, el `train_state` y el estado reanudable del `data_loader`.
 
 El checkpoint está en formato JAX/Orbax (no es un modelo de Transformers ni safetensors) y se distribuye como material de solo inferencia. Para usarlo hay que apuntar `checkpoint_dir` al subdirectorio `10000/` y configurar las variables de entorno `PARALLELVLA_DATASET_REPO` y `PARALLELVLA_NORM_ASSETS_DIR` hacia el dataset de entrenamiento y los activos locales. Requiere la fuente compatible de PI0.5 en OpenPI y su entorno de configuración base.
 
@@ -75,7 +75,7 @@ El autor indica que los resultados de evaluación se registran en `https://swanl
 
 | Modelo | Tipo | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `Travor278/pi05-pick-dual-bottles-concurrent-peer-lora-10k-e164` | Ajuste LoRA de política PI0.5 para tarea concreta | JAX/Orbax | no disponible | HuggingFace, 0 descargas |
+| `Travor278/pi05-pick-dual-bottles-concurrent-peer-lora-10k-e164` | Ajuste LoRA de política PI0.5 para tarea concreta | JAX/Orbax | no disponible | Hugging Face, 0 descargas |
 | PI0.5 base (OpenPI) | Política VLA generalista de referencia | JAX/Orbax | no disponible en la información proporcionada | no disponible en la información proporcionada |
 | Otros checkpoints OpenPI de tareas específicas | Políticas VLA ajustadas | JAX/Orbax | no disponible | no disponible |
 
@@ -97,7 +97,7 @@ No se dispone de datos verificables de parámetros, contexto ni rendimiento para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-pick-dual-bottles-concurrent-peer-lora-10k-e164
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-pick-dual-bottles-concurrent-peer-lora-10k-e164
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-pick-dual-bottles-concurrent-20260911
 - Registro de resultados de evaluación: https://swanlab.cn/@Travor/CTR-PI05-LoRA10k
 

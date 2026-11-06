@@ -78,7 +78,7 @@ No se incluyen datos comparativos en la información proporcionada. La tabla sig
 
 | Modelo | Parámetros | Salidas de acción | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `openroboto-ai/pi05-axis-baseline` | no disponible | 9D articulares absolutas | Gemma Terms of Use (`other`) | HuggingFace, 12,4 GB, revisión verificada |
+| `openroboto-ai/pi05-axis-baseline` | no disponible | 9D articulares absolutas | Gemma Terms of Use (`other`) | Hugging Face, 12,4 GB, revisión verificada |
 | Pi0.5 upstream (familia OpenPI) | no disponible | no disponible | no disponible | Referenciado por la model card como origen del ajuste fino |
 | Otros VLA de manipulación de la misma categoría | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,7 +99,7 @@ No se han publicado en la información disponible comparaciones directas de exac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/openroboto-ai/pi05-axis-baseline
+- Modelo en Hugging Face: https://huggingface.co/openroboto-ai/pi05-axis-baseline
 - Licencia Gemma aplicada: https://huggingface.co/openroboto-ai/pi05-axis-baseline/blob/main/LICENSE_GEMMA.txt
 - Arnés de evaluación OpenRoboto: https://github.com/openroboto-ai/openroboto-evaluation
 - Guía AXIS (instalación, transformaciones de imagen y estado, renderizado de reproducciones con OSMesa): https://github.com/openroboto-ai/openroboto-evaluation/blob/2f69d117517f8b388d2d01a94964df63f1b6620e/docs/axis.md

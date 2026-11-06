@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mT5-small (este checkpoint) | ~300M | 512 | 101 | Apache 2.0 | HuggingFace (réplica de terceros) |
-| google/mt5-base | ~580M | 512 | 101 | Apache 2.0 | HuggingFace (oficial) |
-| google/mt5-large | ~1.2B | 512 | 101 | Apache 2.0 | HuggingFace (oficial) |
-| google/mT5-small (oficial) | ~300M | 512 | 101 | Apache 2.0 | HuggingFace (oficial) |
+| mT5-small (este checkpoint) | ~300M | 512 | 101 | Apache 2.0 | Hugging Face (réplica de terceros) |
+| google/mt5-base | ~580M | 512 | 101 | Apache 2.0 | Hugging Face (oficial) |
+| google/mt5-large | ~1.2B | 512 | 101 | Apache 2.0 | Hugging Face (oficial) |
+| google/mT5-small (oficial) | ~300M | 512 | 101 | Apache 2.0 | Hugging Face (oficial) |
 
 La comparativa relevante es con el propio checkpoint oficial `google/mt5-small`, que debería ser idéntico en pesos. Para tareas generativas modernas, alternativas decoder-only como Qwen2.5-0.5B o Gemma-2-2B ofrecen mejor rendimiento zero-shot, pero no son comparables en filosofía (preentrenado vs. instruido) ni en cobertura lingüística tan amplia.
 
@@ -84,7 +84,7 @@ La comparativa relevante es con el propio checkpoint oficial `google/mt5-small`,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rombakr5/mt5-small
+- Hugging Face: https://huggingface.co/Rombakr5/mt5-small
 - Checkpoint oficial de referencia: https://huggingface.co/google/mt5-small
 - Paper mT5: https://arxiv.org/abs/2010.11934
 - Repositorio de código: https://github.com/google-research/multilingual-t5

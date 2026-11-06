@@ -65,7 +65,7 @@ No se dispone de informacion suficiente para una comparativa directa. Existen ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ml-remunn/Philippine_Pese_Coin_Classification_And_Detection_Using_YOLOv11
+- Modelo en Hugging Face: https://huggingface.co/ml-remunn/Philippine_Pese_Coin_Classification_And_Detection_Using_YOLOv11
 - Dataset relacionado en Roboflow: https://universe.roboflow.com/fenilyn/philippine-coin-money/dataset/2
 - Dataset "Philippine Peso Coin Counter" en Roboflow: https://universe.roboflow.com/museoscholar/philippine-peso-coin-counter-zor1u/dataset/1
 - Proyecto de deteccion de monedas filipinas con CNN clasica: https://github.com/thelionlies/philippine-coin-detection-cnn

@@ -83,8 +83,8 @@ El error estandar binomial con 500 tareas es de aproximadamente 1,3 puntos antes
 
 | Modelo | Parametros | Contexto | SWE-bench Verified pass@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ziansu/r2egym-opd` (step79) | 4,21 B (LM) / 4,54 B (con vision) | 65.536-98.304 en evaluacion | 51,67 % +/- 0,70 | apache-2.0 | Pesos safetensors en HuggingFace |
-| `Qwen/Qwen3.5-4B` (modelo base) | 4,21 B / 4,54 B | no disponible | no disponible | no disponible en la informacion | HuggingFace |
+| `ziansu/r2egym-opd` (step79) | 4,21 B (LM) / 4,54 B (con vision) | 65.536-98.304 en evaluacion | 51,67 % +/- 0,70 | apache-2.0 | Pesos safetensors en Hugging Face |
+| `Qwen/Qwen3.5-4B` (modelo base) | 4,21 B / 4,54 B | no disponible | no disponible | no disponible en la informacion | Hugging Face |
 | TIP (linea base del mismo proyecto) | mismo modelo base | 98.304 / 100 turnos | 52,20 % | no disponible | no disponible |
 | RLAD (linea base del mismo proyecto) | mismo modelo base | 98.304 / 100 turnos | 51,80 % | no disponible | no disponible |
 | GRPO (linea base del mismo proyecto) | mismo modelo base | 98.304 / 100 turnos | 46,00 % | no disponible | no disponible |
@@ -107,6 +107,6 @@ No se dispone de datos de otros modelos publicos de tamano comparable para estab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ziansu/r2egym-opd
+- Repositorio Hugging Face: https://huggingface.co/ziansu/r2egym-opd
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - No se han encontrado enlaces adicionales relevantes (paper, blog, repositorio de codigo o demo) en la busqueda web realizada; los resultados devueltos no guardan relacion con el modelo. No se dispone de URL publica del repositorio de slime ni de la herramienta `tools/convert_torch_dist_to_hf.py` citada en la model card.

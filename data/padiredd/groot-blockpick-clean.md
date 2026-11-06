@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| groot-blockpick-clean | 3 B (1,62 B entrenables) | no disponible | Pick cenital de bloque con FFW SG2 | other | HuggingFace, 0 descargas |
-| nvidia/GR00T-N1.7-3B (base) | 3 B | no disponible | VLA generalista de robótica | other | HuggingFace (modelo base) |
-| Políticas de difusión `padiredd/pick-cube-topdown-25cm-*-dp` | no disponible | no disponible | Misma tarea de pick | no disponible | HuggingFace (referenciadas por el autor) |
+| groot-blockpick-clean | 3 B (1,62 B entrenables) | no disponible | Pick cenital de bloque con FFW SG2 | other | Hugging Face, 0 descargas |
+| nvidia/GR00T-N1.7-3B (base) | 3 B | no disponible | VLA generalista de robótica | other | Hugging Face (modelo base) |
+| Políticas de difusión `padiredd/pick-cube-topdown-25cm-*-dp` | no disponible | no disponible | Misma tarea de pick | no disponible | Hugging Face (referenciadas por el autor) |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/groot-blockpick-clean
+- Modelo en Hugging Face: https://huggingface.co/padiredd/groot-blockpick-clean
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Fork de Isaac-GR00T utilizado: https://github.com/omkarpatil18/Isaac-GR00T-n1.7 (commit e81d02b)
 - Dataset de entrenamiento: https://huggingface.co/datasets/padiredd/pick-cube-topdown-25cm-500-3cam

@@ -81,7 +81,7 @@ No disponible. No se identifican modelos comparables, porque el artefacto no es 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davido-koro96/grounded-language
+- Repositorio en Hugging Face: https://huggingface.co/davido-koro96/grounded-language
 - Artefacto principal citado: `summary.md` (dentro del repositorio)
 - Documentacion citada: `README.md` (dentro del repositorio)
 - Datasets de evaluacion mencionados: RefCOCO, Flickr30k, Visual Genome (referencias propuestas, terminos de uso a revisar por separado)

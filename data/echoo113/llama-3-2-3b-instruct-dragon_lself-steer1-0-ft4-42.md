@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-3B-Instruct-dragon_Lself-STEER1.0-ft4.42 es un ajuste fino supervisado (SFT) del modelo meta-llama/Llama-3.2-3B-Instruct, publicado por el usuario Echoo113 en HuggingFace. Se trata de un experimento de ajuste sobre la arquitectura de 3.210 millones de parametros de Llama 3.2, orientado a modificar el comportamiento del modelo base mediante datos de instrucciones, presumiblemente vinculados a alguna tecnica de steering o autoentrenamiento segun sugiere el nombre ("dragon_Lself-STEER1.0-ft4.42"). No hay documentacion publica que describa el dataset, los hiperparametros ni el objetivo concreto del ajuste.
+Llama-3.2-3B-Instruct-dragon_Lself-STEER1.0-ft4.42 es un ajuste fino supervisado (SFT) del modelo meta-llama/Llama-3.2-3B-Instruct, publicado por el usuario Echoo113 en Hugging Face. Se trata de un experimento de ajuste sobre la arquitectura de 3.210 millones de parametros de Llama 3.2, orientado a modificar el comportamiento del modelo base mediante datos de instrucciones, presumiblemente vinculados a alguna tecnica de steering o autoentrenamiento segun sugiere el nombre ("dragon_Lself-STEER1.0-ft4.42"). No hay documentacion publica que describa el dataset, los hiperparametros ni el objetivo concreto del ajuste.
 
 El modelo resuelve, en principio, el mismo tipo de tareas que su base: generacion de texto conversacional, instrucciones en lenguaje natural y razonamiento basico, con la ventana de contexto de 128.000 tokens heredada de Llama 3.2 3B Instruct. Su relevancia practica es limitada por el momento: acumula cero descargas y cero "likes", la model card es la plantilla autogenerada por TRL y no incluye resultados de evaluacion, por lo que no es posible verificar si el ajuste mejora o degrada al modelo base ni en que direccion modifica su comportamiento.
 
@@ -93,7 +93,7 @@ No se dispone de resultados de benchmarks del modelo objeto de esta ficha, por l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-dragon_Lself-STEER1.0-ft4.42
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-dragon_Lself-STEER1.0-ft4.42
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Cita de TRL (von Werra et al., 2020), incluida en la model card del autor.

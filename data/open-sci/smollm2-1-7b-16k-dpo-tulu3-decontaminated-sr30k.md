@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolLM2-1.7B-16k-DPO-Tulu3-decontaminated-sr30k es un ajuste fino supervisado (SFT) del modelo ali-elganzory/SmolLM2-1.7B-16k-DPO-Tulu3-decontaminated, publicado por el usuario open-sci en HuggingFace. Se trata de un modelo de generación de texto de 1.711.507.456 parámetros (aproximadamente 1,7 mil millones) construido sobre la arquitectura Llama, derivado en última instancia de la familia SmolLM2 de HuggingFace. El modelo se ha entrenado con el framework LLaMA-Factory sobre el dataset Superior-Reasoning-SFT-gpt-oss-120b-30k-sharegpt-hf.
+SmolLM2-1.7B-16k-DPO-Tulu3-decontaminated-sr30k es un ajuste fino supervisado (SFT) del modelo ali-elganzory/SmolLM2-1.7B-16k-DPO-Tulu3-decontaminated, publicado por el usuario open-sci en Hugging Face. Se trata de un modelo de generación de texto de 1.711.507.456 parámetros (aproximadamente 1,7 mil millones) construido sobre la arquitectura Llama, derivado en última instancia de la familia SmolLM2 de Hugging Face. El modelo se ha entrenado con el framework LLaMA-Factory sobre el dataset Superior-Reasoning-SFT-gpt-oss-120b-30k-sharegpt-hf.
 
 El modelo resuelve el problema de adaptar un modelo pequeño ya alineado mediante DPO a un conjunto de datos de razonamiento sintético generado por un modelo mayor (gpt-oss-120b), con el objetivo de transferir capacidades de razonamiento a un modelo de 1,7B parámetros. El contexto de 16k tokens (indicado en el nombre del modelo base) lo hace apto para conversaciones multi-turno y tareas de razonamiento de longitud media.
 
@@ -65,9 +65,9 @@ La model card declara un `model-index` con la entrada `sft__Superior-Reasoning-S
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| open-sci/SmolLM2-1.7B-16k-DPO-Tulu3-decontaminated-sr30k | 1,71B | 16k (segun nombre) | other | HuggingFace |
-| ali-elganzory/SmolLM2-1.7B-16k-DPO-Tulu3-decontaminated (modelo base) | 1,71B | 16k (segun nombre) | no disponible | HuggingFace |
-| HuggingFaceTB/SmolLM2-1.7B | 1,71B | 8k (modelo original SmolLM2) | Apache 2.0 (modelo original) | HuggingFace |
+| open-sci/SmolLM2-1.7B-16k-DPO-Tulu3-decontaminated-sr30k | 1,71B | 16k (segun nombre) | other | Hugging Face |
+| ali-elganzory/SmolLM2-1.7B-16k-DPO-Tulu3-decontaminated (modelo base) | 1,71B | 16k (segun nombre) | no disponible | Hugging Face |
+| HuggingFaceTB/SmolLM2-1.7B | 1,71B | 8k (modelo original SmolLM2) | Apache 2.0 (modelo original) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -85,8 +85,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-sci/SmolLM2-1.7B-16k-DPO-Tulu3-decontaminated-sr30k
+- Modelo en Hugging Face: https://huggingface.co/open-sci/SmolLM2-1.7B-16k-DPO-Tulu3-decontaminated-sr30k
 - Modelo base: https://huggingface.co/ali-elganzory/SmolLM2-1.7B-16k-DPO-Tulu3-decontaminated
 - Repositorio LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
-- Familia SmolLM2 de HuggingFace: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B
+- Familia SmolLM2 de Hugging Face: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B
 - Paper de SmolLM2: https://arxiv.org/abs/2502.02737

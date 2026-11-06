@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anos_ai_oppus2` es un modelo de generacion de texto publicado por el usuario maletsidibeOS en HuggingFace, con un total de 3.085.938.688 parametros (aproximadamente 3,09 mil millones) confirmados en los pesos safetensors del repositorio. La etiqueta de arquitectura declarada es `qwen2`, lo que situa al modelo en la familia de transformers decoder-only de Qwen2, y la libreria indicada es `transformers`. El repositorio ocupa 6,2 GB y el acceso esta restringido: es necesario aceptar condiciones en HuggingFace antes de poder descargarlo.
+`anos_ai_oppus2` es un modelo de generacion de texto publicado por el usuario maletsidibeOS en Hugging Face, con un total de 3.085.938.688 parametros (aproximadamente 3,09 mil millones) confirmados en los pesos safetensors del repositorio. La etiqueta de arquitectura declarada es `qwen2`, lo que situa al modelo en la familia de transformers decoder-only de Qwen2, y la libreria indicada es `transformers`. El repositorio ocupa 6,2 GB y el acceso esta restringido: es necesario aceptar condiciones en Hugging Face antes de poder descargarlo.
 
 Por las etiquetas asociadas (`reasoning`, `function-calling`, `system-copilot`, `privacy`, `local-ai`, `lightweight`, `conversational`), el modelo se orienta a tareas de asistencia conversacional, razonamiento y llamada a funciones en entornos de ejecucion local, presumiblemente integrado en un sistema denominado "Anos OS". Los idiomas declarados son frances e ingles, y la licencia es de tipo `other` (personalizada, no estandar).
 
@@ -22,7 +22,7 @@ La relevancia del modelo en el momento de su publicacion es limitada en terminos
 | Formato de pesos | Safetensors |
 | Libreria | transformers |
 | Tamano del repositorio | 6,2 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Pipeline | text-generation |
 | Fecha de creacion | 2026-10-06 |
 | Ultima actualizacion | 2026-10-06 |
@@ -71,7 +71,7 @@ Las siguientes cifras son estimaciones calculadas a partir del numero de paramet
 - VRAM total para inferencia: hay que sumar la cache KV, cuyo tamano depende de la longitud de contexto (no disponible). Como referencia, en fp16 conviene reservar del orden de 8 a 12 GB para contexto moderado.
 - GPU de consumo: cabe en tarjetas con 8 GB o mas en cuantizacion de 8 o 4 bits (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090). En 16 bits, una RTX 4090 (24 GB) lo ejecuta con holgura.
 - GPU de datacenter: A100, H100 o L40S pueden alojar varias instancias simultaneas por dispositivo dado el reducido tamano del modelo.
-- Opciones de despliegue: la etiqueta `text-generation-inference` indica compatibilidad con TGI, y `endpoints_compatible` apunta a HuggingFace Inference Endpoints. La libreria declarada es `transformers`. No se confirma en la informacion disponible el soporte de vLLM, llama.cpp u Ollama, aunque al tratarse de una arquitectura Qwen2 son conversiones habituales en el ecosistema; verifiquese antes de desplegar.
+- Opciones de despliegue: la etiqueta `text-generation-inference` indica compatibilidad con TGI, y `endpoints_compatible` apunta a Hugging Face Inference Endpoints. La libreria declarada es `transformers`. No se confirma en la informacion disponible el soporte de vLLM, llama.cpp u Ollama, aunque al tratarse de una arquitectura Qwen2 son conversiones habituales en el ecosistema; verifiquese antes de desplegar.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -103,5 +103,5 @@ Nota: los valores de contexto y licencia de los modelos comparados corresponden 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maletsidibeOS/anos_ai_oppus2
+- Modelo en Hugging Face: https://huggingface.co/maletsidibeOS/anos_ai_oppus2
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados al modelo. El resto de enlaces disponibles es "no disponible".

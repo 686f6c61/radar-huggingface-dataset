@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ananasez/mistral-7b-instruct-v0.2-heretic-GGUF
+- Hugging Face: https://huggingface.co/Ananasez/mistral-7b-instruct-v0.2-heretic-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/Ananasez/mistral-7b-instruct-v0.2-heretic
 - Modelo original de Mistral AI: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic

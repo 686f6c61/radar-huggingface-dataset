@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Yewy/mahjong_mat_pickup_jitter_v3_v3_policy | 51.668.614 | no disponible | Pickup mahjong (ACT) | apache-2.0 | HuggingFace Hub |
-| Otras políticas ACT en LeRobot | no disponible | no disponible | Manipulación genérica | variable | HuggingFace Hub |
-| Políticas Diffusion Policy | no disponible | no disponible | Manipulación | variable | HuggingFace Hub |
+| Yewy/mahjong_mat_pickup_jitter_v3_v3_policy | 51.668.614 | no disponible | Pickup mahjong (ACT) | apache-2.0 | Hugging Face Hub |
+| Otras políticas ACT en LeRobot | no disponible | no disponible | Manipulación genérica | variable | Hugging Face Hub |
+| Políticas Diffusion Policy | no disponible | no disponible | Manipulación | variable | Hugging Face Hub |
 
 No se dispone de datos comparativos de rendimiento entre estas alternativas en la información proporcionada.
 
@@ -78,7 +78,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yewy/mahjong_mat_pickup_jitter_v3_v3_policy
+- Hugging Face: https://huggingface.co/Yewy/mahjong_mat_pickup_jitter_v3_v3_policy
 - Dataset: https://huggingface.co/datasets/Yewy/mahjong_mat_pickup_jitter_v3_v3_224
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

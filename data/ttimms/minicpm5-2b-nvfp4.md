@@ -59,7 +59,7 @@ No se han publicado en la documentación resultados de MMLU, GSM8K o RULER. La m
 - VRAM estimada: los pesos ocupan 2,03 GiB. Con activaciones en bf16 y un KV cache FP8 en contexto de 32.768 tokens, es viable en una GPU de 8 GB, como señala el autor en la model card.
 - GPU recomendada: la evaluación se realizó en una RTX 5070 Ti (Blackwell, SM120). En este hardware no se dispone de compute FP4 nativo, por lo que la decodificación se ejecuta vía Marlin sobre GEMM en bf16.
 - Compatibilidad con GPU de consumo: sí, puede ejecutarse en tarjetas de 8 GB; no se han publicado resultados con VRAM inferior a 8 GB.
-- Opciones de despliegue: vLLM (con `compressed-tensors`) y HuggingFace Transformers. No se menciona compatibilidad directa con llama.cpp u Ollama en la ficha.
+- Opciones de despliegue: vLLM (con `compressed-tensors`) y Hugging Face Transformers. No se menciona compatibilidad directa con llama.cpp u Ollama en la ficha.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -68,9 +68,9 @@ Comparación directa entre las variantes de cuantización del mismo modelo base:
 
 | Build | Parametros | Contexto (según ficha) | HumanEval | MBPP | Tamano | Licencia | Disponibilidad |
 |---|---|---|---:|---:|---:|---:|---|---|
-| bf16 base | 2,5 B | No disponible | 86,59 % | 50,60 % | 4,68 GiB | Apache-2.0 | HuggingFace |
-| NVFP4 GPTQ (esta build) | 2,5 B | No disponible | 84,15 % | 45,80 % | 2,03 GiB | Apache-2.0 | HuggingFace |
-| FP8 build | 2,5 B | No disponible | No disponible | No disponible | ~2,8 GiB (estimado) | Apache-2.0 | HuggingFace |
+| bf16 base | 2,5 B | No disponible | 86,59 % | 50,60 % | 4,68 GiB | Apache-2.0 | Hugging Face |
+| NVFP4 GPTQ (esta build) | 2,5 B | No disponible | 84,15 % | 45,80 % | 2,03 GiB | Apache-2.0 | Hugging Face |
+| FP8 build | 2,5 B | No disponible | No disponible | No disponible | ~2,8 GiB (estimado) | Apache-2.0 | Hugging Face |
 
 La versión FP8 se presenta en la model card como «casi sin pérdidas» y cuesta aproximadamente 0,8 GB adicionales, pero no se publican sus métricas. No se han encontrado comparativas con otros modelos de la misma clase (por ejemplo, MiniCPM5-1B) en los materiales proporcionados.
 
@@ -86,7 +86,7 @@ La versión FP8 se presenta en la model card como «casi sin pérdidas» y cuest
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ttimms/MiniCPM5-2B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/Ttimms/MiniCPM5-2B-NVFP4
 - Repositorio con metodología y comparativa de formatos de cuantización: https://github.com/t-timms/blackwell-16gb-moe
 - Review del modelo base MiniCPM5-2B: https://www.buildfastwithai.com/blogs/minicpm5-2b-review
 - Repositorio oficial de OpenBMB MiniCPM: https://github.com/OpenBMB/MiniCPM

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kisserpun/mill-anima es un modelo de lenguaje publicado en HuggingFace por el usuario kisserpun bajo licencia Apache 2.0. Se trata de un checkpoint de aproximadamente 2,09 mil millones de parametros almacenados en formato safetensors, con un repositorio de 4,2 GB. En el momento de su publicacion (13 de septiembre de 2026) el modelo acumulaba 0 descargas y 0 likes, y no incluye model card descriptiva mas alla del campo de licencia.
+kisserpun/mill-anima es un modelo de lenguaje publicado en Hugging Face por el usuario kisserpun bajo licencia Apache 2.0. Se trata de un checkpoint de aproximadamente 2,09 mil millones de parametros almacenados en formato safetensors, con un repositorio de 4,2 GB. En el momento de su publicacion (13 de septiembre de 2026) el modelo acumulaba 0 descargas y 0 likes, y no incluye model card descriptiva mas alla del campo de licencia.
 
 La informacion publica disponible es extremadamente limitada: no se documentan la arquitectura, los datos de entrenamiento, los idiomas soportados, la longitud de contexto ni las capacidades del modelo. La model card consiste unicamente en una cabecera YAML con la licencia, sin texto descriptivo. Esto implica que cualquier evaluacion funcional del modelo requiere inspeccion directa del checkpoint (config.json, tokenizer, pesos) por parte del usuario.
 
@@ -99,6 +99,6 @@ La ventaja diferencial de mill-anima frente a estas alternativas no puede establ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kisserpun/mill-anima
+- Hugging Face: https://huggingface.co/kisserpun/mill-anima
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo, demos o hilos de discusion) en la informacion proporcionada.

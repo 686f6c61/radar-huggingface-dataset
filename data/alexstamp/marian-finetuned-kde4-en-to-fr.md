@@ -74,8 +74,8 @@ Mejora declarada: +13,7 puntos de BLEU y reducción de la pérdida de validació
 
 | Modelo | Parámetros | Idiomas | Contexto | BLEU (KDE4 val) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| marian-finetuned-kde4-en-to-fr | 74.669.178 | en-fr | no disponible (máx. 128 tokens en entrenamiento) | 53,0 | apache-2.0 | HuggingFace, transformers |
-| Helsinki-NLP/opus-mt-en-fr (modelo base) | no disponible | en-fr | no disponible | 39,3 | apache-2.0 | HuggingFace, transformers |
+| marian-finetuned-kde4-en-to-fr | 74.669.178 | en-fr | no disponible (máx. 128 tokens en entrenamiento) | 53,0 | apache-2.0 | Hugging Face, transformers |
+| Helsinki-NLP/opus-mt-en-fr (modelo base) | no disponible | en-fr | no disponible | 39,3 | apache-2.0 | Hugging Face, transformers |
 | Otros modelos de traducción en-fr comparables | no disponible | en-fr | no disponible | no disponible | no disponible | no disponible |
 
 La comparación significativa disponible se limita al modelo base del que deriva, con una diferencia de +13,7 BLEU a favor del ajuste fino dentro del dominio KDE4. No se dispone de datos de otros modelos en-fr en la información proporcionada, por lo que no se pueden establecer comparaciones cuantitativas adicionales.
@@ -96,7 +96,7 @@ La comparación significativa disponible se limita al modelo base del que deriva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlexStamp/marian-finetuned-kde4-en-to-fr
+- Modelo en Hugging Face: https://huggingface.co/AlexStamp/marian-finetuned-kde4-en-to-fr
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-en-fr
 - Dataset KDE4: https://huggingface.co/datasets/Helsinki-NLP/kde4
 - Tutorial del curso de Hugging Face sobre traducción (mencionado como origen del ajuste): https://huggingface.co/learn/llm-course/chapter7/4

@@ -70,5 +70,5 @@ No se dispone de información suficiente para comparar este adaptador con altern
 
 ## Enlaces
 
-- [HuggingFace - dpo_writingprompts_qwen3.6-27b_as_llama-3.1-8b_seed42](https://huggingface.co/dementor-research/dpo_writingprompts_qwen3.6-27b_as_llama-3.1-8b_seed42)
+- [Hugging Face - dpo_writingprompts_qwen3.6-27b_as_llama-3.1-8b_seed42](https://huggingface.co/dementor-research/dpo_writingprompts_qwen3.6-27b_as_llama-3.1-8b_seed42)
 - [Tinker (herramienta de entrenamiento)](https://thinkingmachines.ai/tinker/)

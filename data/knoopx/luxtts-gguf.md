@@ -66,7 +66,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| knoopx/LuxTTS-GGUF | no disponible | no disponible | no disponible (afirmacion SOTA sin cifras) | apache-2.0 | HuggingFace |
+| knoopx/LuxTTS-GGUF | no disponible | no disponible | no disponible (afirmacion SOTA sin cifras) | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/knoopx/LuxTTS-GGUF
+- Repositorio Hugging Face: https://huggingface.co/knoopx/LuxTTS-GGUF
 - Modelo base: https://huggingface.co/YatharthS/LuxTTS
 - Runtime LuxTTS.cpp: https://github.com/knoopx/LuxTTS.cpp
 - Proyecto original LuxTTS: https://github.com/ysharma3501/LuxTTS

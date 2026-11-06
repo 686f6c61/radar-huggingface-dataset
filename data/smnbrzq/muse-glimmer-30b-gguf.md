@@ -76,7 +76,7 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/Smnbrzq/Muse-Glimmer-30B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/Smnbrzq/Muse-Glimmer-30B-GGUF
 - Repositorio base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Repositorio GGUF oficial de Meta: https://huggingface.co/meta-models/Muse-Glimmer-30B-GGUF
 - Pagina de desarrollador de Meta: https://developer.meta.com/ai/models/muse-glimmer/

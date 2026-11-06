@@ -67,7 +67,7 @@ No disponible. No se conocen sistemas equivalentes que combinen verificación fo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Snapkitty/cosmic-invariant-sieve
+- Repositorio de Hugging Face: https://huggingface.co/Snapkitty/cosmic-invariant-sieve
 - Repositorio GitHub (según la model card): https://github.com/SNAPKITTYWEST/cosmic-invariant-sieve
 - Documentación de arquitectura (referenciada): docs/ARCHITECTURE.md
 - Documentación de cadena de préstamos (referenciada): docs/BORROW_CHAIN.md

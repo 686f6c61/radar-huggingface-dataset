@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "marwanaymenn/smollm2-gsm8k-math-sft",
+  "slug": "marwanaymenn-smollm2-gsm8k-math-sft",
+  "author": "marwanaymenn",
+  "url": "https://huggingface.co/marwanaymenn/smollm2-gsm8k-math-sft",
+  "created_at": "2026-11-06T11:40:13.000Z",
+  "updated_at": "2026-11-06T11:40:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27581521,
+  "storage_human": "28 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SmolLM2: When Smol Goes Big -- Data-Centric Training of a Small ...",
+      "url": "https://arxiv.org/abs/2502.02737",
+      "snippet": "In this paper, we document the development of SmolLM2, a state-of-the-art \"small\" (1.7 billion parameter) language model (LM). To attain strong performance, we overtrain SmolLM2 on ~11 trillion tokens of data using a multi-stage training process that mixes web text with specialized math, code, and instruction-following data."
+    },
+    {
+      "title": "SmolLM2 - a HuggingFaceTB Collection",
+      "url": "https://huggingface.co/collections/HuggingFaceTB/smollm2",
+      "snippet": "State-of-the-art compact LLMs for on-device applications: 1.7B, 360M, 135M"
+    }
+  ]
+}

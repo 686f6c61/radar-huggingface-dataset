@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Ebrahim135/we` es un ajuste fino (fine-tune) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario Ebrahim135 en HuggingFace y distribuido principalmente en formato GGUF para su uso con llama.cpp y Ollama. El repositorio contiene un unico archivo cuantizado `Qwen2.5-1.5B-Instruct.Q4_K_M.gguf`, ademas de pesos en safetensors, y fue generado con Unsloth, la libreria de entrenamiento y conversion optimizada que el autor cita en la model card. El recuento real de parametros en safetensors es de 1.543.714.304 (aproximadamente 1,54 mil millones), coherente con la familia Qwen2.5-1.5B.
+`Ebrahim135/we` es un ajuste fino (fine-tune) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario Ebrahim135 en Hugging Face y distribuido principalmente en formato GGUF para su uso con llama.cpp y Ollama. El repositorio contiene un unico archivo cuantizado `Qwen2.5-1.5B-Instruct.Q4_K_M.gguf`, ademas de pesos en safetensors, y fue generado con Unsloth, la libreria de entrenamiento y conversion optimizada que el autor cita en la model card. El recuento real de parametros en safetensors es de 1.543.714.304 (aproximadamente 1,54 mil millones), coherente con la familia Qwen2.5-1.5B.
 
-El modelo resuelve un caso de uso muy acotado: servir como modelo conversacional pequeno, desplegable en hardware de consumo, con una única cuantizacion lista para usar. No es un lanzamiento con paper, informe tecnico ni evaluacion publica; se trata de un artefacto derivado (derivative) subido a HuggingFace, con cero descargas y cero likes en el momento de la consulta, creado y actualizado el 18 de octubre de 2026. La model card es minima: solo describe el formato y los comandos de ejecucion, sin detallar el dataset de ajuste, hiperparametros ni objetivos de entrenamiento.
+El modelo resuelve un caso de uso muy acotado: servir como modelo conversacional pequeno, desplegable en hardware de consumo, con una única cuantizacion lista para usar. No es un lanzamiento con paper, informe tecnico ni evaluacion publica; se trata de un artefacto derivado (derivative) subido a Hugging Face, con cero descargas y cero likes en el momento de la consulta, creado y actualizado el 18 de octubre de 2026. La model card es minima: solo describe el formato y los comandos de ejecucion, sin detallar el dataset de ajuste, hiperparametros ni objetivos de entrenamiento.
 
 Su relevancia practica es limitada pero real: demuestra el flujo completo Unsloth -> GGUF -> Ollama/llama.cpp en un modelo de 1,5B, y sirve como ejemplo reproducible de publicacion de un fine-tune pequeno. Cualquier evaluacion seria debe hacerse contra el modelo base Qwen2.5-1.5B-Instruct, ya que el autor no aporta ninguna metrica propia.
 
@@ -93,7 +93,7 @@ La comparacion honesta es que este repositorio no aporta ventajas medibles frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ebrahim135/we
+- Modelo en Hugging Face: https://huggingface.co/Ebrahim135/we
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Unsloth (herramienta de fine-tune y conversion citada por el autor): https://github.com/unslothai/unsloth
 - llama.cpp (runtime indicado en la model card): https://github.com/ggml-org/llama.cpp

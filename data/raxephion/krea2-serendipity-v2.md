@@ -4,7 +4,7 @@
 
 Krea2-Serendipity-V2 es un checkpoint de text-to-image desarrollado por el usuario Raxephion, construido como un fine-tune del modelo base Krea-2-Turbo de Krea AI. El modelo está orientado a la generación de imágenes con un estilo realista y cinematográfico, como indican sus etiquetas (realism, cinematic, fp8, int8-convrot, bf16). Se presenta como una evolución de la versión V1, que se describe en su tarjeta como "The Director's Checkpoint", sugiriendo un enfoque en control estético y composición visual.
 
-El modelo se distribuye a través de HuggingFace con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de descargarlo. El repositorio tiene un tamaño de 26 GB, lo que sugiere que se trata de un modelo de gran capacidad, aunque no se especifican los parámetros totales. Al estar basado en Krea-2-Turbo, hereda las capacidades del modelo fundacional de Krea AI, que fue entrenado desde cero para exploración creativa y control de estilo.
+El modelo se distribuye a través de Hugging Face con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de descargarlo. El repositorio tiene un tamaño de 26 GB, lo que sugiere que se trata de un modelo de gran capacidad, aunque no se especifican los parámetros totales. Al estar basado en Krea-2-Turbo, hereda las capacidades del modelo fundacional de Krea AI, que fue entrenado desde cero para exploración creativa y control de estilo.
 
 La relevancia de este checkpoint radica en que ofrece una alternativa afinada para usuarios que buscan resultados más realistas y cinematográficos que el modelo base, sin necesidad de entrenar desde cero. Sin embargo, la falta de documentación técnica detallada en la información disponible limita la evaluación precisa de sus capacidades y requisitos.
 
@@ -57,7 +57,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos o de investigación.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos o de investigación.
 - Licencia krea2: es una licencia propietaria de Krea AI, que puede imponer restricciones al uso comercial, redistribución o modificación. Es necesario revisar los términos exactos antes de usar el modelo en producción.
 - Falta de documentación técnica: no se especifican parámetros, arquitectura, datos de entrenamiento ni benchmarks, lo que dificulta evaluar su rendimiento y compararlo con alternativas.
 - Posibles sesgos: al ser un fine-tune de un modelo base, puede heredar sesgos de los datos de entrenamiento originales de Krea 2, aunque no se han documentado.
@@ -66,7 +66,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raxephion/Krea2-Serendipity-V2
+- Modelo en Hugging Face: https://huggingface.co/Raxephion/Krea2-Serendipity-V2
 - Versión V1 (referencia): https://huggingface.co/Raxephion/Krea2-Serendipity-V1
 - Página oficial de Krea 2: https://www.krea.ai/krea-2
 - Repositorio oficial de Krea 2 (inferencia): https://github.com/krea-ai/krea-2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VoxCPM2 Telugu stage 1b -> English Swamiji (Sidon) es un ajuste fino (fine-tune) de un modelo de texto-a-voz (TTS) de la familia VoxCPM2, publicado por el usuario sw-voice-ai en HuggingFace. El modelo parte del checkpoint `sw-voice-ai/voxcpm2-telugu-indictts2x-syspin-multisent-lr1e-4-1ep` y se especializa en la síntesis de voz en inglés con la identidad vocal de un hablante concreto denominado "Swamiji (Sidon)", mediante clonación de voz condicionada por un clip de referencia (`reference_wav_path`). El modelo conserva el soporte de telugu (te) e inglés (en) heredado del modelo base.
+VoxCPM2 Telugu stage 1b -> English Swamiji (Sidon) es un ajuste fino (fine-tune) de un modelo de texto-a-voz (TTS) de la familia VoxCPM2, publicado por el usuario sw-voice-ai en Hugging Face. El modelo parte del checkpoint `sw-voice-ai/voxcpm2-telugu-indictts2x-syspin-multisent-lr1e-4-1ep` y se especializa en la síntesis de voz en inglés con la identidad vocal de un hablante concreto denominado "Swamiji (Sidon)", mediante clonación de voz condicionada por un clip de referencia (`reference_wav_path`). El modelo conserva el soporte de telugu (te) e inglés (en) heredado del modelo base.
 
 El interés técnico del checkpoint está en su procedimiento de entrenamiento, no en una innovación arquitectónica: emplea un conjunto de 726 clips (unas 3,8 horas) deduplicado a un clip por grupo de duplicados, y cada elemento de entrenamiento lleva asociado un clip de referencia, con la función de pérdida calculada únicamente sobre el audio objetivo. Se rotan 10 clips de referencia fijos del propio hablante (5-17 s) para que cada objetivo se enfrente a una referencia distinta en cada época, y las referencias (y sus casi-duplicados) se excluyen de los objetivos para evitar fuga de datos.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | XTTS-v2 (Coqui) | ~467 M (dato de ecosistema, no verificado en esta busqueda) | Referencia de pocos segundos | Multilingue | CPML (no comercial) | Referencia habitual en clonacion zero-shot; licencia incompatible con uso comercial |
 | VoxCPM (OpenBMB) | ~0,5 B (dato de ecosistema, no verificado en esta busqueda) | No disponible | zh, en | Apache 2.0 | Familia de la que deriva la nomenclatura VoxCPM2; sin confirmacion de parentesco arquitectonico |
 
-Las dos ultimas filas se incluyen como referencia de ecosistema y no estan verificadas con la informacion proporcionada; los datos de los tres primeros modelos provienen de la model card y de los metadatos de HuggingFace.
+Las dos ultimas filas se incluyen como referencia de ecosistema y no estan verificadas con la informacion proporcionada; los datos de los tres primeros modelos provienen de la model card y de los metadatos de Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ Las dos ultimas filas se incluyen como referencia de ecosistema y no estan verif
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/sw-voice-ai/voxcpm2-telugu-stage1b-english-sidon-dedup-refclone-lr1e-4-10ep
+- Hugging Face del modelo: https://huggingface.co/sw-voice-ai/voxcpm2-telugu-stage1b-english-sidon-dedup-refclone-lr1e-4-10ep
 - Modelo base: https://huggingface.co/sw-voice-ai/voxcpm2-telugu-indictts2x-syspin-multisent-lr1e-4-1ep
 - Variante sin deduplicacion ni referencia por elemento: https://huggingface.co/sw-voice-ai/voxcpm2-telugu-stage1b-english-sidon-lr1e-4-10ep
 - Paper, blog, repositorio de codigo y demo: no disponibles en la informacion proporcionada.

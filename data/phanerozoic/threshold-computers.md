@@ -68,14 +68,14 @@ La model card menciona una suite de verificación (`python src/eval.py variants 
 
 ## Comparativa con modelos similares
 
-No disponible: en la información proporcionada no se identifican modelos publicados directamente comparables en HuggingFace con este enfoque (circuitos completos almacenados como redes de puertas de umbral ternarias). La categoría funcional se solapa con otras tres familias, pero sin datos comparables de parámetros, contexto o rendimiento:
+No disponible: en la información proporcionada no se identifican modelos publicados directamente comparables en Hugging Face con este enfoque (circuitos completos almacenados como redes de puertas de umbral ternarias). La categoría funcional se solapa con otras tres familias, pero sin datos comparables de parámetros, contexto o rendimiento:
 
 | Categoria funcional | Relacion con threshold-computers | Datos comparables |
 |---|---|---|
 | Simuladores de ISA (QEMU, gem5 y similares) | Emulan CPU en software; threshold-computers describe la CPU como grafo de puertas ejecutable | no disponible |
 | Frameworks neuromórficos (Lava, Nengo, snnTorch y similares) | Ejecutan redes de neuronas sobre hardware neuromórfico; threshold-computers usa neuronas de umbral ternarias | no disponible |
 | Soft cores sintetizables en FPGA (VexRiscv, picorv32 y similares) | Implementan procesadores en HDL; threshold-computers propone una representación alternativa en pesos ternarios | no disponible |
-| Modelos de lenguaje en HuggingFace | Comparten plataforma y formato safetensors, pero no son comparables en tarea ni en métricas | no aplica |
+| Modelos de lenguaje en Hugging Face | Comparten plataforma y formato safetensors, pero no son comparables en tarea ni en métricas | no aplica |
 
 ## Limitaciones y advertencias
 
@@ -92,6 +92,6 @@ No disponible: en la información proporcionada no se identifican modelos public
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/phanerozoic/threshold-computers
+- Hugging Face: https://huggingface.co/phanerozoic/threshold-computers
 - Referencia bibliográfica citada en la model card: Winfree 1998 (universalidad de la autoensamblaje de teselas a temperatura 2); no se proporciona URL en la información disponible.
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

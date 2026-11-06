@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mulligan/sim-square-narrow-r03-baseline-with-c03-rollouts-divl` es un punto de control (checkpoint) de un agente de control para robotica entrenado sobre la tarea simulada `sim-square-narrow`, publicado por el proyecto Mulligan dentro de su organizacion de HuggingFace. No es un modelo de lenguaje: se trata de una politica de accion basada en estado (state-based), compuesta por un actor de difusion congelado mas un critico DIVL distribucional, almacenada como `policy.pt` junto con `stats.json`.
+`mulligan/sim-square-narrow-r03-baseline-with-c03-rollouts-divl` es un punto de control (checkpoint) de un agente de control para robotica entrenado sobre la tarea simulada `sim-square-narrow`, publicado por el proyecto Mulligan dentro de su organizacion de Hugging Face. No es un modelo de lenguaje: se trata de una politica de accion basada en estado (state-based), compuesta por un actor de difusion congelado mas un critico DIVL distribucional, almacenada como `policy.pt` junto con `stats.json`.
 
 El modelo pertenece a la ronda R3 del proyecto y a la rama `baseline-with-c03-rollouts`. Se distribuye en cinco carpetas independientes, una por semilla (seed-1 a seed-5), cada una con su propio config de ejecucion, y todas ellas detenidas en el paso de entrenamiento 150001. El actor congelado procede de un checkpoint hermano de la familia, `sim-square-narrow-r03-baseline-with-c03-rollouts-idql`.
 
@@ -74,9 +74,9 @@ No se dispone de modelos comparables externos en la informacion proporcionada. S
 
 | Modelo | Tarea | Actor | Critico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sim-square-narrow-r03-baseline-with-c03-rollouts-divl (este) | sim-square-narrow | difusion congelado | DIVL distribucional | MIT | HuggingFace |
-| sim-square-narrow-r03-baseline-with-c03-rollouts-idql | sim-square-narrow | difusion (origen del actor congelado) | no disponible | MIT (segun la familia) | HuggingFace |
-| sim-square-narrow-r03-mulligan-idql | sim-square-narrow | no disponible | no disponible | MIT (segun la familia) | HuggingFace |
+| sim-square-narrow-r03-baseline-with-c03-rollouts-divl (este) | sim-square-narrow | difusion congelado | DIVL distribucional | MIT | Hugging Face |
+| sim-square-narrow-r03-baseline-with-c03-rollouts-idql | sim-square-narrow | difusion (origen del actor congelado) | no disponible | MIT (segun la familia) | Hugging Face |
+| sim-square-narrow-r03-mulligan-idql | sim-square-narrow | no disponible | no disponible | MIT (segun la familia) | Hugging Face |
 
 No se han publicado en la informacion disponible las metricas de evaluacion de los checkpoints hermanos, por lo que no es posible establecer una comparacion cuantitativa entre ellos.
 
@@ -95,7 +95,7 @@ No se han publicado en la informacion disponible las metricas de evaluacion de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r03-baseline-with-c03-rollouts-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r03-baseline-with-c03-rollouts-divl
 - Actor congelado de origen (IDQL): https://huggingface.co/mulligan/sim-square-narrow-r03-baseline-with-c03-rollouts-idql
 - Checkpoint hermano de la familia: https://huggingface.co/mulligan/sim-square-narrow-r03-mulligan-idql
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-r00-r03-eval
@@ -107,7 +107,7 @@ No se han publicado en la informacion disponible las metricas de evaluacion de l
 - Dataset de rollouts de politica base (c03): https://huggingface.co/datasets/mulligan/sim-square-narrow-c03-baseline-policy-rollouts
 - Dataset DAgger (c03): https://huggingface.co/datasets/mulligan/sim-square-narrow-c03-dagger-baseline
 - Dataset de rollouts de la politica Mulligan (c03): https://huggingface.co/datasets/mulligan/sim-square-narrow-c03-mulligan-policy-rollouts
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Pagina del proyecto Mulligan: https://mulligan.page
 - Evaluaciones en Policy Arena: https://arena.mulligan.page
 - Ficha del dataset c03-baseline-policy-rollouts en claru.ai: https://claru.ai/datasets/mulligan-sim-square-narrow-c03-baseline-policy-rollouts

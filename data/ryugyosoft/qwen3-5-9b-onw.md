@@ -79,9 +79,9 @@ No hay datos de MMLU, HumanEval, GSM8K ni de comparaciones de calidad frente al 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ryugyosoft/Qwen3.5-9B-onw | ~9B (INT4) | no disponible | OpenVINO IR para NPU, via `onw` | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-9B | ~9B | no disponible | safetensors (modelo base) | Apache 2.0 | HuggingFace |
-| ryugyosoft/Qwen3.5-9B-npu | ~9B | no disponible | Port independiente para NPU | Apache 2.0 | HuggingFace |
+| ryugyosoft/Qwen3.5-9B-onw | ~9B (INT4) | no disponible | OpenVINO IR para NPU, via `onw` | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-9B | ~9B | no disponible | safetensors (modelo base) | Apache 2.0 | Hugging Face |
+| ryugyosoft/Qwen3.5-9B-npu | ~9B | no disponible | Port independiente para NPU | Apache 2.0 | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (híbridos DeltaNet/atención con visión ejecutados en NPU) ni de datos de rendimiento que permitan una comparación cuantitativa de calidad. Las diferencias conocidas entre las tres entradas de la tabla son exclusivamente de empaquetado y de motor de ejecución, no de pesos ni de arquitectura.
 
@@ -101,7 +101,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryugyosoft/Qwen3.5-9B-onw
+- Modelo en Hugging Face: https://huggingface.co/ryugyosoft/Qwen3.5-9B-onw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Motor onw: https://huggingface.co/ryugyosoft/onw
 - Port independiente para NPU: https://huggingface.co/ryugyosoft/Qwen3.5-9B-npu

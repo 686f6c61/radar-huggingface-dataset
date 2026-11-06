@@ -4,9 +4,9 @@
 
 Este repositorio no es un modelo completo, sino un adaptador LoRA de ajuste supervisado (SFT) publicado por el usuario `filter-with-espresso` sobre el modelo base `unsloth/Qwen2.5-14B-Instruct`. Se distribuye en formato PEFT (librería `peft`, versión 0.21.0) y su tamaño de repositorio es de 2,2 GB, lo que corresponde exclusivamente a los pesos del adaptador, no al modelo completo. El identificador del repositorio (`wikipedia-control-med`) sugiere un experimento de ajuste orientado a control estilístico o de dominio sobre contenido tipo Wikipedia y de ámbito médico, aunque la model card no documenta en ningún momento el objetivo, el dataset ni la metodología empleados.
 
-La relevancia de esta ficha es limitada desde el punto de vista de producción: se trata de una publicación con 0 descargas y 0 likes, creada el 22 de septiembre de 2026, sin licencia declarada, sin idiomas declarados y con una model card que es la plantilla por defecto de HuggingFace con todos los campos marcados como `[More Information Needed]`. No hay datos de entrenamiento, hiperparámetros, evaluación ni instrucciones de uso.
+La relevancia de esta ficha es limitada desde el punto de vista de producción: se trata de una publicación con 0 descargas y 0 likes, creada el 22 de septiembre de 2026, sin licencia declarada, sin idiomas declarados y con una model card que es la plantilla por defecto de Hugging Face con todos los campos marcados como `[More Information Needed]`. No hay datos de entrenamiento, hiperparámetros, evaluación ni instrucciones de uso.
 
-Por tanto, cualquier evaluación debe partir del modelo base (Qwen2.5-14B-Instruct, un transformer denso decoder-only de 14,7 mil millones de parámetros con 32.768 tokens de contexto nativo) y tratar el adaptador como un artefacto experimental no documentado y no validado. La búsqueda web realizada no devolvió ninguna fuente relevante sobre este modelo (los resultados correspondían a la función `filter()` de JavaScript, a un catálogo de filtros industriales y a una banda de rock), por lo que toda la información técnica disponible proviene del repositorio de HuggingFace y de las especificaciones públicas del modelo base.
+Por tanto, cualquier evaluación debe partir del modelo base (Qwen2.5-14B-Instruct, un transformer denso decoder-only de 14,7 mil millones de parámetros con 32.768 tokens de contexto nativo) y tratar el adaptador como un artefacto experimental no documentado y no validado. La búsqueda web realizada no devolvió ninguna fuente relevante sobre este modelo (los resultados correspondían a la función `filter()` de JavaScript, a un catálogo de filtros industriales y a una banda de rock), por lo que toda la información técnica disponible proviene del repositorio de Hugging Face y de las especificaciones públicas del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ Respecto al modelo base, Qwen2.5-14B-Instruct es un transformer denso decoder-on
 - Generación de resúmenes o reescritura de textos enciclopédicos: el modelo base ya cubre esta tarea con 32.768 tokens de contexto; el adaptador podría modificar el tono, pero no hay evidencia.
 - Fine-tuning posterior (continued fine-tuning): el adaptador puede usarse como punto de partida para nuevos ajustes en lugar de partir del base, ahorrando cómputo si el dominio coincide.
 - Investigación sobre seguridad y alineamiento: analizar si un ajuste SFT no documentado introduce sesgos, alucinaciones o fugas de datos del dataset de entrenamiento.
-- Evaluación comparativa de adaptadores comunitarios: como caso de estudio de publicaciones sin model card, sin licencia y sin métricas, útil para discutir prácticas de publicación en HuggingFace.
+- Evaluación comparativa de adaptadores comunitarios: como caso de estudio de publicaciones sin model card, sin licencia y sin métricas, útil para discutir prácticas de publicación en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| filter-with-espresso/Qwen2.5-14B-Instruct-wikipedia-control-med | Adaptador LoRA sobre 14,7B (2,2 GB de pesos) | No disponible (base: 32.768) | Adaptador PEFT | No disponible (base: Apache 2.0) | HuggingFace, 0 descargas |
-| Qwen2.5-14B-Instruct (modelo base) | 14,7B | 32.768 (131.072 con YaRN) | Modelo denso completo | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Llama-3.1-8B-Instruct | 8B | 131.072 | Modelo denso completo | Llama 3.1 Community License | HuggingFace, muy extendido |
-| Phi-4 | 14,7B | 16.000 | Modelo denso completo | MIT | HuggingFace |
+| filter-with-espresso/Qwen2.5-14B-Instruct-wikipedia-control-med | Adaptador LoRA sobre 14,7B (2,2 GB de pesos) | No disponible (base: 32.768) | Adaptador PEFT | No disponible (base: Apache 2.0) | Hugging Face, 0 descargas |
+| Qwen2.5-14B-Instruct (modelo base) | 14,7B | 32.768 (131.072 con YaRN) | Modelo denso completo | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Llama-3.1-8B-Instruct | 8B | 131.072 | Modelo denso completo | Llama 3.1 Community License | Hugging Face, muy extendido |
+| Phi-4 | 14,7B | 16.000 | Modelo denso completo | MIT | Hugging Face |
 
 No existe información pública sobre benchmarks del adaptador que permita compararlo en rendimiento con estas alternativas. La comparación se limita a parámetros, contexto, licencia y disponibilidad; en el caso del adaptador, su utilidad práctica depende de si aporta una mejora medible sobre el modelo base, algo que no está documentado. Otras alternativas de la misma categoría (adaptadores LoRA comunitarios sobre Qwen2.5) no se comparan por falta de datos en la información proporcionada.
 
@@ -92,7 +92,7 @@ No existe información pública sobre benchmarks del adaptador que permita compa
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/filter-with-espresso/Qwen2.5-14B-Instruct-wikipedia-control-med
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/filter-with-espresso/Qwen2.5-14B-Instruct-wikipedia-control-med
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-14B-Instruct
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Librería PEFT: https://github.com/huggingface/peft

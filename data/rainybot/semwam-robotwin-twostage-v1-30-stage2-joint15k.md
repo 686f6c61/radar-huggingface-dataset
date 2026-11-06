@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SemWAM-RoboTwin-TwoStage-v1.30-Stage2-Joint15k es un checkpoint de investigación publicado por el usuario RainyBot en HuggingFace, orientado a robótica y, más concretamente, al entorno de simulación RoboTwin. No se trata de un modelo de lenguaje: es un modelo generativo multimodal de política robótica que combina un DiT de vídeo, un DiT de acciones, un decodificador de profundidad y un codificador semántico basado en DINOv3 ViT-B/16. El checkpoint corresponde al paso de optimizador 15000 de un entrenamiento en dos etapas ("TwoStage"), aparentemente el refinamiento conjunto ("Joint") de una etapa 2 sobre una etapa 1 previa.
+SemWAM-RoboTwin-TwoStage-v1.30-Stage2-Joint15k es un checkpoint de investigación publicado por el usuario RainyBot en Hugging Face, orientado a robótica y, más concretamente, al entorno de simulación RoboTwin. No se trata de un modelo de lenguaje: es un modelo generativo multimodal de política robótica que combina un DiT de vídeo, un DiT de acciones, un decodificador de profundidad y un codificador semántico basado en DINOv3 ViT-B/16. El checkpoint corresponde al paso de optimizador 15000 de un entrenamiento en dos etapas ("TwoStage"), aparentemente el refinamiento conjunto ("Joint") de una etapa 2 sobre una etapa 1 previa.
 
 La arquitectura declarada en la model card es `rgb_dep_sem`, con layout de atención `rgb_auxiliary_causal` y condicionamiento de acciones mediante `predicted_depth_head_semantic`. El modelo consume observaciones RGB, profundidad y semántica, y produce predicciones de vídeo futuro, profundidad, semántica y una secuencia de acciones de 14 dimensiones. El repositorio ocupa 14,6 GB en formato PyTorch, lo que sugiere pesos en precisión completa o mixta sin cuantizar.
 
@@ -77,5 +77,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RainyBot/SemWAM-RoboTwin-TwoStage-v1.30-Stage2-Joint15k
+- Hugging Face: https://huggingface.co/RainyBot/SemWAM-RoboTwin-TwoStage-v1.30-Stage2-Joint15k
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

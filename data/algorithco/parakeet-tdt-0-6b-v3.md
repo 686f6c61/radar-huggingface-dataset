@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Parakeet-tdt-0.6b-v3 es un modelo de reconocimiento automático del habla (ASR) publicado en HuggingFace bajo el espacio de nombres `algorithco`. Con 627.057.286 parámetros (aproximadamente 0,6 mil millones), está construido sobre la arquitectura FastConformer combinada con un decodificador TDT (Token-and-Duration Transducer), una variante de los transductores RNN que predice conjuntamente el token y su duración temporal. Los datasets de entrenamiento declarados son `nvidia/Granary` y `nemo/asr-set-3.0` y las etiquetas del repositorio remiten al ecosistema NVIDIA NeMo, lo que apunta a una redistribución del modelo Parakeet TDT 0.6b v3 de NVIDIA bajo el espacio de nombres de terceros; no se documenta en la información disponible ninguna modificación adicional sobre el modelo original.
+Parakeet-tdt-0.6b-v3 es un modelo de reconocimiento automático del habla (ASR) publicado en Hugging Face bajo el espacio de nombres `algorithco`. Con 627.057.286 parámetros (aproximadamente 0,6 mil millones), está construido sobre la arquitectura FastConformer combinada con un decodificador TDT (Token-and-Duration Transducer), una variante de los transductores RNN que predice conjuntamente el token y su duración temporal. Los datasets de entrenamiento declarados son `nvidia/Granary` y `nemo/asr-set-3.0` y las etiquetas del repositorio remiten al ecosistema NVIDIA NeMo, lo que apunta a una redistribución del modelo Parakeet TDT 0.6b v3 de NVIDIA bajo el espacio de nombres de terceros; no se documenta en la información disponible ninguna modificación adicional sobre el modelo original.
 
 Su rasgo diferencial es la cobertura multilingüe: declara soporte para 25 idiomas europeos (inglés, español, francés, alemán, búlgaro, croata, checo, danés, neerlandés, estonio, finés, griego, húngaro, italiano, letón, lituano, maltés, polaco, portugués, rumano, eslovaco, esloveno, sueco, ruso y ucraniano), algo poco habitual en modelos de este tamaño, que suelen limitarse al inglés o a un puñado de lenguas. El model-index del autor incluye resultados de WER en inglés (LibriSpeech, GigaSpeech, SPGI, TED-LIUM, Vox Populi, AMI y Earnings-22) y por idioma en FLEURS.
 
@@ -99,10 +99,10 @@ Los datos de parámetros, idiomas y licencia de los modelos alternativos procede
 
 | Modelo | Parametros | Idiomas | Licencia | Disponibilidad | Benchmark comparativo |
 |---|---|---|---|---|---|
-| algorithco/parakeet-tdt-0.6b-v3 | 627 M | 25 (europeos) | cc-by-4.0 | HuggingFace (safetensors y GGUF) | WER declarados en la tabla anterior |
-| nvidia/parakeet-tdt-0.6b-v2 | ~600 M | 1 (ingles) | cc-by-4.0 | HuggingFace / NeMo | No disponible en la informacion proporcionada |
-| nvidia/canary-1b | ~1.000 M | 4 (en, de, es, fr) + traduccion | cc-by-4.0 | HuggingFace / NeMo | No disponible en la informacion proporcionada |
-| openai/whisper-large-v3 | ~1.550 M | ~99 | MIT | HuggingFace / transformers | No disponible en la informacion proporcionada |
+| algorithco/parakeet-tdt-0.6b-v3 | 627 M | 25 (europeos) | cc-by-4.0 | Hugging Face (safetensors y GGUF) | WER declarados en la tabla anterior |
+| nvidia/parakeet-tdt-0.6b-v2 | ~600 M | 1 (ingles) | cc-by-4.0 | Hugging Face / NeMo | No disponible en la informacion proporcionada |
+| nvidia/canary-1b | ~1.000 M | 4 (en, de, es, fr) + traduccion | cc-by-4.0 | Hugging Face / NeMo | No disponible en la informacion proporcionada |
+| openai/whisper-large-v3 | ~1.550 M | ~99 | MIT | Hugging Face / transformers | No disponible en la informacion proporcionada |
 
 Diferencias cualitativas relevantes: frente a parakeet-tdt-0.6b-v2, esta versión amplía la cobertura de 1 a 25 idiomas manteniendo el mismo orden de magnitud de parámetros. Frente a Canary-1B, ofrece más idiomas pero no se declara traducción de voz en la información disponible. Frente a Whisper large-v3, es aproximadamente 2,5 veces más pequeño, lo que reduce los requisitos de VRAM y el coste por hora de audio, a costa de una cobertura de idiomas mucho menor y de depender del ecosistema NeMo/transformers en lugar de una comunidad más amplia.
 
@@ -121,7 +121,7 @@ Diferencias cualitativas relevantes: frente a parakeet-tdt-0.6b-v2, esta versió
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/algorithco/parakeet-tdt-0.6b-v3
+- Modelo en Hugging Face: https://huggingface.co/algorithco/parakeet-tdt-0.6b-v3
 - Dataset nvidia/Granary: https://huggingface.co/datasets/nvidia/Granary
 - Dataset nemo/asr-set-3.0: https://huggingface.co/datasets/nemo/asr-set-3.0
 - Articulos referenciados en las etiquetas del modelo:

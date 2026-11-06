@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Meditor-1-2.2B-A500M-MoE es un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) de tipo sparse, desarrollado por el usuario independiente Yo-Purple y publicado en HuggingFace. Se construye mediante "upcycling" del modelo denso Qwen2.5-0.5B-Instruct (entrenado sobre 18 billones de tokens), al que se le anaden expertos enrutados adicionales para elevar la capacidad representacional hasta 2.356 millones de parametros almacenados, manteniendo solo unos 572,95 millones de parametros activos por token (ratio de computo activo del 25,8%).
+Meditor-1-2.2B-A500M-MoE es un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) de tipo sparse, desarrollado por el usuario independiente Yo-Purple y publicado en Hugging Face. Se construye mediante "upcycling" del modelo denso Qwen2.5-0.5B-Instruct (entrenado sobre 18 billones de tokens), al que se le anaden expertos enrutados adicionales para elevar la capacidad representacional hasta 2.356 millones de parametros almacenados, manteniendo solo unos 572,95 millones de parametros activos por token (ratio de computo activo del 25,8%).
 
 El modelo sigue una topologia de enrutamiento inspirada en DeepSeek: un experto compartido dedicado que preserva el conocimiento base de Qwen 2.5 y 22 expertos enrutados por capa, de los cuales se activa uno solo (Top-1) junto al compartido. Emplea ademas una ventana de contexto nativa de 524.288 tokens (500K) mediante atencion hibrida con ventana deslizante en 20 capas y 4 capas globales con RoPE proporcional.
 
@@ -94,6 +94,6 @@ Las cifras de contexto de los modelos comparables son las habituales de sus fami
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yo-Purple/Meditor-1-2.2B-A500M-MoE
+- Modelo en Hugging Face: https://huggingface.co/Yo-Purple/Meditor-1-2.2B-A500M-MoE
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

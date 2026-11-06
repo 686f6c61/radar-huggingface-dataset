@@ -98,7 +98,7 @@ La model card no ofrece comparación con alternativas de otras familias. Existen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SirSahOl/Qwen2.5-3B-Instruct-chat-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/SirSahOl/Qwen2.5-3B-Instruct-chat-mlx-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Framework MLX (Apple): https://github.com/ml-explore/mlx
 - Pipeline de conversión MLX Foundry, citado en la model card: https://github.com/SirSahOl/mlx-foundry

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`husssnnain/bert-imdb-sentiment` es un modelo de clasificación de texto basado en la arquitectura BERT, publicado en HuggingFace por el usuario husssnnain. Por su nombre y su pipeline (`text-classification`), está orientado al análisis de sentimiento sobre reseñas de películas del corpus IMDB, una de las tareas de referencia clásicas para evaluar modelos de comprensión del lenguaje. El repositorio contiene 109.483.778 parámetros en formato safetensors, lo que coincide con la configuración estándar de BERT-base (12 capas, 768 dimensiones ocultas, 12 cabezas de atención) más una cabeza de clasificación.
+`husssnnain/bert-imdb-sentiment` es un modelo de clasificación de texto basado en la arquitectura BERT, publicado en Hugging Face por el usuario husssnnain. Por su nombre y su pipeline (`text-classification`), está orientado al análisis de sentimiento sobre reseñas de películas del corpus IMDB, una de las tareas de referencia clásicas para evaluar modelos de comprensión del lenguaje. El repositorio contiene 109.483.778 parámetros en formato safetensors, lo que coincide con la configuración estándar de BERT-base (12 capas, 768 dimensiones ocultas, 12 cabezas de atención) más una cabeza de clasificación.
 
 El modelo es relevante únicamente como ejemplo de fine-tuning de BERT para una tarea concreta de clasificación binaria de sentimiento. No se trata de un modelo generativo ni de un modelo de propósito general: es un encoder que produce una etiqueta (probablemente positiva o negativa) a partir de un texto de entrada. Su utilidad práctica está acotada a esa tarea y a dominios similares al de las reseñas de películas.
 
-La model card está prácticamente vacía: es la plantilla automática de HuggingFace sin rellenar, por lo que no hay información sobre datos de entrenamiento, hiperparámetros, licencia, idiomas ni resultados de evaluación. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que sugiere que es un experimento personal más que un artefacto con adopción comunitaria.
+La model card está prácticamente vacía: es la plantilla automática de Hugging Face sin rellenar, por lo que no hay información sobre datos de entrenamiento, hiperparámetros, licencia, idiomas ni resultados de evaluación. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que sugiere que es un experimento personal más que un artefacto con adopción comunitaria.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La model card está prácticamente vacía: es la plantilla automática de Huggin
 
 La arquitectura es un transformer encoder de tipo BERT, con 109,48 millones de parámetros, cifra que encaja con BERT-base más una capa densa de clasificación. Al ser un modelo de clasificación, no genera texto: procesa la secuencia de entrada y devuelve logits sobre un número reducido de clases (probablemente 2, positivo/negativo). No hay información en la model card sobre si se partió de un checkpoint preentrenado (`bert-base-uncased`, `bert-base-multilingual-cased` u otro) ni sobre el procedimiento exacto de fine-tuning.
 
-No se dispone de datos sobre el volumen de tokens de entrenamiento, la composición del dataset (más allá de la inferencia por el nombre de que se usó IMDB), la presencia de RLHF/DPO (irrelevante en un encoder de clasificación) ni innovaciones técnicas. La model card es la plantilla automática de HuggingFace sin contenido sustantivo, por lo que cualquier detalle de entrenamiento debe considerarse no disponible.
+No se dispone de datos sobre el volumen de tokens de entrenamiento, la composición del dataset (más allá de la inferencia por el nombre de que se usó IMDB), la presencia de RLHF/DPO (irrelevante en un encoder de clasificación) ni innovaciones técnicas. La model card es la plantilla automática de Hugging Face sin contenido sustantivo, por lo que cualquier detalle de entrenamiento debe considerarse no disponible.
 
 ## Capacidades
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| husssnnain/bert-imdb-sentiment | 109,48 M | no disponible | Clasificación de sentimiento | no disponible | HuggingFace (0 descargas) |
-| `distilbert-base-uncased-finetuned-sst-2-english` | ~67 M | 512 tokens | Clasificación de sentimiento | Apache 2.0 | HuggingFace, ampliamente usado |
-| `nlptown/bert-base-multilingual-uncased-sentiment` | ~178 M | 512 tokens | Clasificación de sentimiento (1-5 estrellas) | MIT | HuggingFace, ampliamente usado |
-| `cardiffnlp/twitter-roberta-base-sentiment-latest` | ~125 M | 512 tokens | Clasificación de sentimiento en redes sociales | MIT | HuggingFace, ampliamente usado |
+| husssnnain/bert-imdb-sentiment | 109,48 M | no disponible | Clasificación de sentimiento | no disponible | Hugging Face (0 descargas) |
+| `distilbert-base-uncased-finetuned-sst-2-english` | ~67 M | 512 tokens | Clasificación de sentimiento | Apache 2.0 | Hugging Face, ampliamente usado |
+| `nlptown/bert-base-multilingual-uncased-sentiment` | ~178 M | 512 tokens | Clasificación de sentimiento (1-5 estrellas) | MIT | Hugging Face, ampliamente usado |
+| `cardiffnlp/twitter-roberta-base-sentiment-latest` | ~125 M | 512 tokens | Clasificación de sentimiento en redes sociales | MIT | Hugging Face, ampliamente usado |
 
 Los tres alternativos están documentados, tienen licencia clara y cuentan con adopción comunitaria; el modelo de husssnnain carece de esa documentación, lo que lo hace menos adecuado para producción sin una evaluación propia previa.
 
@@ -84,7 +84,7 @@ Los tres alternativos están documentados, tienen licencia clara y cuentan con a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/husssnnain/bert-imdb-sentiment
+- Hugging Face: https://huggingface.co/husssnnain/bert-imdb-sentiment
 - Paper de BERT (referencia arquitectónica, no del checkpoint): https://arxiv.org/abs/1810.04805
 - Paper citado en los tags (impacto medioambiental, no del modelo): https://arxiv.org/abs/1910.09700
 - Documentación de Transformers para clasificación de texto: https://huggingface.co/docs/transformers/tasks/sequence_classification

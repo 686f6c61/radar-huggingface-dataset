@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Generation-base es un prototipo de investigacion publicado en HuggingFace bajo el identificador Rtmmarieke25/generation-base. Se trata de un "Tiny Transformer" orientado a tareas de generacion, distribuido como punto de partida experimental. El repositorio contiene un checkpoint de inicializacion (`model.safetensors`) que, segun la propia model card, no ha sido entrenado ni evaluado con benchmarks: es un artefacto valido para pruebas de humo (smoke tests), no un modelo listo para produccion.
+Generation-base es un prototipo de investigacion publicado en Hugging Face bajo el identificador Rtmmarieke25/generation-base. Se trata de un "Tiny Transformer" orientado a tareas de generacion, distribuido como punto de partida experimental. El repositorio contiene un checkpoint de inicializacion (`model.safetensors`) que, segun la propia model card, no ha sido entrenado ni evaluado con benchmarks: es un artefacto valido para pruebas de humo (smoke tests), no un modelo listo para produccion.
 
 El modelo declara una arquitectura Tiny Transformer con atencion de ventana deslizante (sliding window), fusion con compuertas (gated fusion), activacion ReLU y normalizacion GroupNorm. El recuento real de parametros del fichero safetensors es de 24.832 (veinticuatro mil ochocientos treinta y dos), lo que lo situa en la categoria de modelos microscopicos, muy por debajo de cualquier LLM utilizable. La escala interna declarada por el autor es "large" dentro de su propia familia de Tiny Transformers, pero eso no implica un tamano absoluto relevante.
 
@@ -45,7 +45,7 @@ En cuanto al entrenamiento, el repositorio incluye una receta por defecto con op
 - Docencia y formacion: un modelo de 24.832 parametros es adecuado para explicar el ciclo completo de definicion, inicializacion y evaluacion de un transformer en un aula o curso.
 - Base para comparativas de capacidad: sirve como baseline de capacidad coincidente (matched-capacity) en estudios que comparen variantes de arquitectura con el mismo presupuesto de datos y ajuste.
 - Integracion en frameworks de despliegue ligero: por su tamano, puede ejecutarse en CPU sin GPU para validar herramientas de serializacion y adaptadores personalizados.
-- Validacion de formatos de publicacion: util para comprobar convenciones de model card, `config.json` y estructura de repositorio en HuggingFace.
+- Validacion de formatos de publicacion: util para comprobar convenciones de model card, `config.json` y estructura de repositorio en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -84,5 +84,5 @@ El resto de campos comparables (rendimiento, idiomas, benchmarks) no estan dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rtmmarieke25/generation-base
+- Hugging Face: https://huggingface.co/Rtmmarieke25/generation-base
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios o demos) en la informacion proporcionada.

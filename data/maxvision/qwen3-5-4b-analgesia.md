@@ -121,7 +121,7 @@ No se dispone de datos verificables de otros modelos comparables de 4 mil millon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maxvision/Qwen3.5-4B-Analgesia
+- Modelo en Hugging Face: https://huggingface.co/maxvision/Qwen3.5-4B-Analgesia
 - Builds GGUF: https://huggingface.co/maxvision/Qwen3.5-4B-Analgesia-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper citado, The Pain Axis: LLMs Represent Self-Directed Harm and Act on It (Tagliabue, Dung & Berg 2026): https://arxiv.org/abs/2609.16247

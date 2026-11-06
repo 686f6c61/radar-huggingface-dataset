@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo, identificado como `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g8_run1`, ha sido publicado en HuggingFace por el autor stefanocarrera. Su nombre sugiere un ajuste fino sobre el modelo base Qwen3-8B, probablemente orientado a tareas relacionadas con SQL y generación de código. El repositorio tiene un tamaño de 0,2 GB y los metadatos indican el uso de la biblioteca Unsloth y el formato safetensors.
+Este modelo, identificado como `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g8_run1`, ha sido publicado en Hugging Face por el autor stefanocarrera. Su nombre sugiere un ajuste fino sobre el modelo base Qwen3-8B, probablemente orientado a tareas relacionadas con SQL y generación de código. El repositorio tiene un tamaño de 0,2 GB y los metadatos indican el uso de la biblioteca Unsloth y el formato safetensors.
 
 Sin embargo, la model card es autogenerada y no contiene información técnica detallada, por lo que no es posible confirmar la arquitectura, el conjunto de datos de entrenamiento ni las capacidades reales del modelo. El hecho de que el repositorio sea tan pequeño sugiere que podría tratarse de un adaptador LoRA o QLoRA, pero esta hipótesis no está verificada. La relevancia actual es limitada, ya que no se han publicado resultados de benchmarks ni documentación suficiente para evaluar su rendimiento.
 
@@ -60,6 +60,6 @@ No disponible. No se han publicado datos de rendimiento ni especificaciones que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g8_run1
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g8_run1
 - Variante con `t0.5_g4`: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g4_run1
 - Variante con `t0.9_g9`: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g9_run0

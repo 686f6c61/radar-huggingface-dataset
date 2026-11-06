@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kizuna-intelligence/Qwen3.5-2B-OneCompression-4bit-MLX | 265M (reportado) | 262.144 | 4-bit GPTQ | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-2B (base) | ~2B | 262.144 | Sin cuantizar | Apache 2.0 | HuggingFace |
-| mlx-community/Qwen3.5-2B-MLX-4bit | ~2B | 262.144 | 4-bit MLX | Apache 2.0 | HuggingFace |
-| Llama-3.2-3B (alternativa similar) | 3B | 128.000 | Varias | Llama 3.2 | HuggingFace |
+| kizuna-intelligence/Qwen3.5-2B-OneCompression-4bit-MLX | 265M (reportado) | 262.144 | 4-bit GPTQ | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-2B (base) | ~2B | 262.144 | Sin cuantizar | Apache 2.0 | Hugging Face |
+| mlx-community/Qwen3.5-2B-MLX-4bit | ~2B | 262.144 | 4-bit MLX | Apache 2.0 | Hugging Face |
+| Llama-3.2-3B (alternativa similar) | 3B | 128.000 | Varias | Llama 3.2 | Hugging Face |
 
 La comparativa muestra que el checkpoint de kizuna-intelligence tiene un número de parámetros mucho menor que el base, lo que lo hace más ligero, pero podría implicar una pérdida de calidad. La licencia Apache 2.0 permite uso comercial sin restricciones, al igual que el base.
 
@@ -80,7 +80,7 @@ La comparativa muestra que el checkpoint de kizuna-intelligence tiene un número
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kizuna-intelligence/Qwen3.5-2B-OneCompression-4bit-MLX
+- Hugging Face: https://huggingface.co/kizuna-intelligence/Qwen3.5-2B-OneCompression-4bit-MLX
 - Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Repositorio de OneCompression: https://github.com/FujitsuResearch/OneCompression

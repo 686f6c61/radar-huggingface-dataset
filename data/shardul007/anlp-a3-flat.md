@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Shardul007/anlp-a3-flat` es un checkpoint de pesos en formato safetensors publicado en HuggingFace por el usuario Shardul007. Por la nomenclatura del identificador (`anlp-a3-flat`), todo apunta a un artefacto academico vinculado a una asignatura de procesamiento de lenguaje natural (ANLP, *Advanced Natural Language Processing*) y a una variante "flat" de la arquitectura, probablemente un modelo entrenado desde cero o afinado para una practica de laboratorio. No se trata de un modelo de proposito general publicado por un laboratorio, sino de un experimento formativo sin documentacion asociada.
+El modelo `Shardul007/anlp-a3-flat` es un checkpoint de pesos en formato safetensors publicado en Hugging Face por el usuario Shardul007. Por la nomenclatura del identificador (`anlp-a3-flat`), todo apunta a un artefacto academico vinculado a una asignatura de procesamiento de lenguaje natural (ANLP, *Advanced Natural Language Processing*) y a una variante "flat" de la arquitectura, probablemente un modelo entrenado desde cero o afinado para una practica de laboratorio. No se trata de un modelo de proposito general publicado por un laboratorio, sino de un experimento formativo sin documentacion asociada.
 
 El repositorio no incluye model card descriptiva: el README generado automaticamente por la integracion `PyTorchModelHubMixin` solo contiene marcadores `[More Information Needed]` en los campos de codigo, paper y documentacion. No hay pipeline declarado, ni licencia, ni idiomas, ni datos de entrenamiento publicados. El unico dato tecnico verificable es el recuento de parametros en safetensors: 6.484.766 parametros, es decir, aproximadamente 6,5 millones, un orden de magnitud propio de un transformer pequeno de tipo BERT-base reducido o de un modelo tipo GPT-2 *small* recortado.
 
@@ -25,7 +25,7 @@ Su relevancia practica es muy limitada: con cero descargas y cero *likes* en el 
 
 No se ha publicado informacion sobre la arquitectura interna del modelo. El nombre "flat" sugiere, sin confirmacion por parte del autor, una variante de transformer sin jerarquia de capas o con una topologia simplificada, pero se trata de una especulacion a partir del identificador y no de un dato documentado. El unico dato estructural firme es el numero de parametros (6.484.766), compatible con un transformer encoder o decoder de entre 4 y 8 capas y dimension oculta en el rango de 256 a 512, aunque la distribucion exacta de pesos no se ha hecho publica.
 
-Tampoco hay informacion sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni sobre si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. No se documentan innovaciones tecnicas (atencion lineal, decodificacion especulativa, mezcla de expertos, atencion con ventana deslizante) ni se referencia ningun paper. El checkpoint se subio a HuggingFace el 5 de noviembre de 2026 mediante la integracion automatica de `huggingface_hub`, lo que explica la ausencia de model card redactada manualmente.
+Tampoco hay informacion sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni sobre si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. No se documentan innovaciones tecnicas (atencion lineal, decodificacion especulativa, mezcla de expertos, atencion con ventana deslizante) ni se referencia ningun paper. El checkpoint se subio a Hugging Face el 5 de noviembre de 2026 mediante la integracion automatica de `huggingface_hub`, lo que explica la ausencia de model card redactada manualmente.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ No disponible. No se conocen modelos comparables de la misma categoria porque no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shardul007/anlp-a3-flat
+- Modelo en Hugging Face: https://huggingface.co/Shardul007/anlp-a3-flat
 - Documentacion de `PyTorchModelHubMixin` (integracion usada para publicar el modelo): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Repositorio de `safetensors`: https://github.com/huggingface/safetensors
 - Repositorio de `huggingface_hub`: https://github.com/huggingface/huggingface_hub

@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato / cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NINI26454/Huihui-Qwen3.6-27B-abliterated-MTP-Q3_K-GGUF | 27,3 mil millones | GGUF Q3_K (13,5 GB) + mmproj f16 | no disponible | Apache 2.0 | HuggingFace, Ollama, llama.cpp |
-| huihui-ai/Huihui-Qwen3.6-27B-abliterated (modelo base) | 27,3 mil millones | safetensors, precision completa | no disponible | Apache 2.0 | HuggingFace |
+| NINI26454/Huihui-Qwen3.6-27B-abliterated-MTP-Q3_K-GGUF | 27,3 mil millones | GGUF Q3_K (13,5 GB) + mmproj f16 | no disponible | Apache 2.0 | Hugging Face, Ollama, llama.cpp |
+| huihui-ai/Huihui-Qwen3.6-27B-abliterated (modelo base) | 27,3 mil millones | safetensors, precision completa | no disponible | Apache 2.0 | Hugging Face |
 | Otras cuantizaciones del mismo base (Q4_K_M, Q5_K_M, Q8_0) | 27,3 mil millones | GGUF | no disponible | Apache 2.0 | no disponible en la informacion proporcionada |
 | Alternativas de la misma categoria (modelos abliterated de ~27B en GGUF) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,6 +89,6 @@ No se dispone de datos suficientes para comparar rendimiento con alternativas de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NINI26454/Huihui-Qwen3.6-27B-abliterated-MTP-Q3_K-GGUF
+- Repositorio Hugging Face: https://huggingface.co/NINI26454/Huihui-Qwen3.6-27B-abliterated-MTP-Q3_K-GGUF
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.6-27B-abliterated
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los resultados obtenidos fueron consultas no relacionadas sobre sitios de descarga de videojuegos, conversion de unidades de capacitancia, 7-Zip y software de monitorizacion de temperatura.

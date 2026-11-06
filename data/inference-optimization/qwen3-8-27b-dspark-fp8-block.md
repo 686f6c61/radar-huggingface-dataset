@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-DSpark-FP8-BLOCK es un *drafter* (borrador) para decodificación especulativa, publicado por la organización `inference-optimization` en HuggingFace. No es un modelo conversacional autónomo ni un modelo de propósito general: es el componente rápido que propone varios tokens candidatos en cada paso de decodificación, que después son verificados en paralelo por el modelo objetivo, en este caso Qwen/Qwen3.8-27B. Su función es reducir la latencia por token y aumentar el throughput de la decodificación sin modificar la distribución de salida del modelo grande, siempre que la tasa de aceptación sea alta.
+Qwen3.8-27B-DSpark-FP8-BLOCK es un *drafter* (borrador) para decodificación especulativa, publicado por la organización `inference-optimization` en Hugging Face. No es un modelo conversacional autónomo ni un modelo de propósito general: es el componente rápido que propone varios tokens candidatos en cada paso de decodificación, que después son verificados en paralelo por el modelo objetivo, en este caso Qwen/Qwen3.8-27B. Su función es reducir la latencia por token y aumentar el throughput de la decodificación sin modificar la distribución de salida del modelo grande, siempre que la tasa de aceptación sea alta.
 
 El checkpoint es un *export* FP8 en bloques (*FP8_BLOCK*) del drafter DSpark de Red Hat AI (`RedHatAI/Qwen3.8-27B-speculator.dspark`, revisión `7f33c272e5da240978e0d55767abab8193d74b95`), obtenido sin datos de calibración (*data-free*). Se distribuye con la librería `speculators` y está cuantizado mediante la infraestructura `compressed-tensors`. El repositorio ocupa 2,1 GB y contiene 1.988.431.617 parámetros en safetensors, lo que es coherente con pesos de aproximadamente 1 byte por parámetro.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/inference-optimization/Qwen3.8-27B-DSpark-FP8-BLOCK
+- Hugging Face: https://huggingface.co/inference-optimization/Qwen3.8-27B-DSpark-FP8-BLOCK
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B
 - Drafter de origen: https://huggingface.co/RedHatAI/Qwen3.8-27B-speculator.dspark
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante (papers, blogs, repositorios o demos) relacionado con este modelo en la información disponible.

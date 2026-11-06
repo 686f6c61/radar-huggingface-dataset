@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Base | Tipo | Reduccion de pasos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| progressive-diffusion-wan (este) | Wan2.1-14B / Wan2.2-A14B | Destilacion few-step con LoRA | Hasta -58 % error, pocos pasos | Apache 2.0 | Pesos en HuggingFace |
-| Wan2.1-T2V-14B original | - | Modelo profesor | 1 paso (referencia) | Apache 2.0 | HuggingFace |
-| Wan2.2-T2V-A14B original | - | Modelo profesor con dos expertos | 1 paso (referencia) | Apache 2.0 | HuggingFace |
+| progressive-diffusion-wan (este) | Wan2.1-14B / Wan2.2-A14B | Destilacion few-step con LoRA | Hasta -58 % error, pocos pasos | Apache 2.0 | Pesos en Hugging Face |
+| Wan2.1-T2V-14B original | - | Modelo profesor | 1 paso (referencia) | Apache 2.0 | Hugging Face |
+| Wan2.2-T2V-A14B original | - | Modelo profesor con dos expertos | 1 paso (referencia) | Apache 2.0 | Hugging Face |
 | Lightning-4 (para Qwen-Image) | Qwen-Image | Destilacion few-step | 4 pasos (NFE4) | no disponible | no disponible |
 
 La comparativa directa con otros modelos de destilacion few-step para video (como los basados en Stable Video Diffusion o CogVideoX) no esta disponible en la informacion proporcionada.
@@ -87,7 +87,7 @@ La comparativa directa con otros modelos de destilacion few-step para video (com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EthanMeng324/progressive-diffusion-wan
+- Repositorio Hugging Face: https://huggingface.co/EthanMeng324/progressive-diffusion-wan
 - Dataset de entrenamiento: https://huggingface.co/datasets/EthanMeng324/progressive-diffusion-wan-data
 - Repositorio de codigo (privado): https://github.com/EthanMeng324/progressive-diffusion
 - Modelo base Wan2.1: https://huggingface.co/Wan-AI/Wan2.1-T2V-14B

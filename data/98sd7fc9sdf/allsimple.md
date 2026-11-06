@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`98sd7fc9sdf/allsimple` es un adaptador LoRA de texto a imagen publicado en HuggingFace por el usuario `98sd7fc9sdf`. Se distribuye a traves de la libreria `diffusers` y declara como modelo base `ponpoke/flux2-klein-9b-uncensored-text-encoder`, por lo que no es un modelo autonomo: requiere descargar y cargar dicho modelo base para poder generar imagenes. El repositorio ocupa 0,1 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo.
+`98sd7fc9sdf/allsimple` es un adaptador LoRA de texto a imagen publicado en Hugging Face por el usuario `98sd7fc9sdf`. Se distribuye a traves de la libreria `diffusers` y declara como modelo base `ponpoke/flux2-klein-9b-uncensored-text-encoder`, por lo que no es un modelo autonomo: requiere descargar y cargar dicho modelo base para poder generar imagenes. El repositorio ocupa 0,1 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo.
 
 La model card es practicamente vacia: incluye la etiqueta `template:diffusion-lora`, un unico widget de ejemplo con el prompt `-` y la indicacion de que los pesos estan en la pestana de archivos y versiones. No se documenta el conjunto de datos de entrenamiento, el numero de pasos, el rango del adaptador, la resolucion objetivo ni la finalidad concreta del LoRA. El nombre interno que aparece en el README es `allsimpleMINIMAXh3`.
 
@@ -18,7 +18,7 @@ Su relevancia actual es limitada y debe evaluarse con cautela: acumula 0 descarg
 | Longitud de contexto | No aplica: es un modelo de texto a imagen. No se declara resolucion maxima de salida ni longitud maxima de prompt |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible (la cobertura linguistica depende del codificador de texto del modelo base) |
-| Licencia | `unknown` (no declarada; el campo de HuggingFace aparece como desconocido) |
+| Licencia | `unknown` (no declarada; el campo de Hugging Face aparece como desconocido) |
 | Formato de pesos | No especificado. La libreria declarada es `diffusers`, con plantilla `diffusion-lora`; el formato concreto de los archivos no se detalla en la informacion disponible |
 
 ## Arquitectura y entrenamiento
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|---|
-| `98sd7fc9sdf/allsimple` | LoRA de difusion texto a imagen | No disponible (repo de 0,1 GB) | No disponible | `unknown` | HuggingFace, 0 descargas, 0 likes | No disponible |
-| `ponpoke/flux2-klein-9b-uncensored-text-encoder` (modelo base) | Modelo de difusion texto a imagen | No disponible (el nombre sugiere ~9B) | No disponible | No disponible | HuggingFace | No disponible |
-| LoRA genericos para familias tipo Flux o SDXL | LoRA de difusion texto a imagen | Habitualmente 10-200 M de parametros segun rango | Depende del base (512-1024 px o superior) | Variable (a menudo Apache 2.0 o CreativeML) | Amplia en HuggingFace y Civitai | Habitualmente no comparables entre si |
+| `98sd7fc9sdf/allsimple` | LoRA de difusion texto a imagen | No disponible (repo de 0,1 GB) | No disponible | `unknown` | Hugging Face, 0 descargas, 0 likes | No disponible |
+| `ponpoke/flux2-klein-9b-uncensored-text-encoder` (modelo base) | Modelo de difusion texto a imagen | No disponible (el nombre sugiere ~9B) | No disponible | No disponible | Hugging Face | No disponible |
+| LoRA genericos para familias tipo Flux o SDXL | LoRA de difusion texto a imagen | Habitualmente 10-200 M de parametros segun rango | Depende del base (512-1024 px o superior) | Variable (a menudo Apache 2.0 o CreativeML) | Amplia en Hugging Face y Civitai | Habitualmente no comparables entre si |
 
 No se dispone de datos de rendimiento del modelo analizado ni de sus alternativas en la informacion proporcionada, por lo que la comparacion se limita a formato de distribucion, licencia y disponibilidad.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento del modelo analizado ni de sus alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/98sd7fc9sdf/allsimple
+- Modelo en Hugging Face: https://huggingface.co/98sd7fc9sdf/allsimple
 - Modelo base declarado: https://huggingface.co/ponpoke/flux2-klein-9b-uncensored-text-encoder
 - Archivos y versiones del modelo: https://huggingface.co/98sd7fc9sdf/allsimple/tree/main
 - Perfil del autor: https://huggingface.co/98sd7fc9sdf

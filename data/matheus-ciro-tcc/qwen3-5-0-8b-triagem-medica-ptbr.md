@@ -80,10 +80,10 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- [Repositorio del adaptador en HuggingFace](https://huggingface.co/matheus-ciro-tcc/qwen3.5-0.8b-triagem-medica-ptbr)
+- [Repositorio del adaptador en Hugging Face](https://huggingface.co/matheus-ciro-tcc/qwen3.5-0.8b-triagem-medica-ptbr)
 - [Dataset AKCIT/MedPT](https://huggingface.co/datasets/AKCIT/MedPT)
 - [Modelo base Qwen/Qwen3.5-0.8B](https://huggingface.co/Qwen/Qwen3.5-0.8B)
-- [Colección Qwen3.5 en HuggingFace](https://huggingface.co/collections/Qwen/qwen35)
+- [Colección Qwen3.5 en Hugging Face](https://huggingface.co/collections/Qwen/qwen35)
 - [Documentación de Qwen3 en Transformers](https://huggingface.co/docs/transformers/model_doc/qwen3)
 - [Informe técnico de Qwen3](https://arxiv.org/html/2505.09388v1)
 - Referencias citadas en la model card:

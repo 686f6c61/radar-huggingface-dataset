@@ -87,7 +87,7 @@ Los tres modelos UI-Genie comparten arquitectura y base, diferenciandose en la f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-SFT-128K
+- Modelo en Hugging Face: https://huggingface.co/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-SFT-128K
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Gyubeum/UI_Genie_128k
 - Dataset de origen: https://huggingface.co/datasets/UI-Genie/UI-Genie-RM-517k

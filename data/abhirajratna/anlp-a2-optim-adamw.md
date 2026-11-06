@@ -103,7 +103,7 @@ Los dos primeros modelos forman parte del mismo trabajo academico y comparten ar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhirajratna/anlp-a2-optim-adamw
+- Modelo en Hugging Face: https://huggingface.co/abhirajratna/anlp-a2-optim-adamw
 - Variante con optimizador Lion del mismo autor: https://huggingface.co/abhirajratna/anlp-a2-optim-lion
 - Modelo relacionado de otro autor: https://huggingface.co/Arihant25/anlp-a2-optimizers
 - Espacio de experimentos en Weights & Biases: https://wandb.ai/arihanttr-iiit-hyderabad/anlp-a2

@@ -91,7 +91,7 @@ No se incluyen comparativas con modelos de otros fabricantes (por ejemplo, Llama
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B
+- Modelo en Hugging Face: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B
 - Blog de Mistral sobre el modelo: https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5
 - Modelo EAGLE para decodificación especulativa: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B-EAGLE
 - Commit de corrección de la configuración de Transformers: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B/commit/c4be198050fb5789774a55b92ed697becfbf20ae

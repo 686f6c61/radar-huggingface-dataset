@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aaravdevi/tiny-transformer-contrastive61` es un repositorio experimental publicado en HuggingFace por el usuario aaravdevi. No se trata de un modelo entrenado, sino de una base de codigo y un checkpoint de inicializacion para un transformer de escala "nano" orientado a tareas de aprendizaje contrastivo. El propio autor indica explicitamente en la model card que `model.safetensors` es un checkpoint valido para pruebas de humo (smoke tests) y que no debe presentarse como un modelo entrenado ni evaluado.
+`aaravdevi/tiny-transformer-contrastive61` es un repositorio experimental publicado en Hugging Face por el usuario aaravdevi. No se trata de un modelo entrenado, sino de una base de codigo y un checkpoint de inicializacion para un transformer de escala "nano" orientado a tareas de aprendizaje contrastivo. El propio autor indica explicitamente en la model card que `model.safetensors` es un checkpoint valido para pruebas de humo (smoke tests) y que no debe presentarse como un modelo entrenado ni evaluado.
 
 El modelo tiene 16.576 parametros totales segun los metadatos de safetensors, con un tamano de repositorio de 0,0 GB y cero descargas y cero likes en el momento de la consulta. La arquitectura declarada combina atencion dispersa (sparse attention), fusion mediante cross attention, activacion GELU y normalizacion GroupNorm, un conjunto de decisiones poco habituales que sugieren un diseno de investigacion mas que un modelo de produccion.
 
@@ -85,5 +85,5 @@ La diferencia clave no es de rendimiento, sino de estado: los modelos de referen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aaravdevi/tiny-transformer-contrastive61
+- Modelo en Hugging Face: https://huggingface.co/aaravdevi/tiny-transformer-contrastive61
 - La busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo: los resultados obtenidos corresponden a paginas de soporte de Windows en turco y no guardan relacion con el artefacto. No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados.

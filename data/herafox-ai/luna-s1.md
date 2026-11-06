@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Luna-S1 es un modelo de inteligencia artificial publicado por HeraFox-ai, una empresa que se presenta como centrada en el desarrollo de IA sobre infraestructura más ecológica. El modelo está alojado en HuggingFace con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargarlo o utilizarlo. La licencia es personalizada, denominada "hera-fox-model-license", lo que sugiere que no es una licencia open source estándar como Apache 2.0 o MIT.
+Luna-S1 es un modelo de inteligencia artificial publicado por HeraFox-ai, una empresa que se presenta como centrada en el desarrollo de IA sobre infraestructura más ecológica. El modelo está alojado en Hugging Face con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargarlo o utilizarlo. La licencia es personalizada, denominada "hera-fox-model-license", lo que sugiere que no es una licencia open source estándar como Apache 2.0 o MIT.
 
 La información pública disponible es extremadamente limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni el pipeline de uso. El modelo fue creado el 28 de agosto de 2026 y actualizado el mismo día, con cero descargas y un solo "like" en el momento de la consulta. Dado el acceso restringido y la ausencia de documentación técnica pública, no es posible evaluar sus capacidades reales ni su rendimiento. Esta ficha se basa únicamente en los metadatos disponibles y en la información corporativa de HeraFox, sin datos técnicos verificables.
 
@@ -33,13 +33,13 @@ No se dispone de información verificable sobre las capacidades del modelo. Al s
 - Soporte multilingüe
 - Modos especiales como thinking mode, visión o audio
 
-La ausencia de datos en HuggingFace (sin pipeline, sin idiomas, sin etiquetas de tarea) impide cualquier afirmación fundamentada. Se recomienda consultar directamente a HeraFox o solicitar acceso al modelo para obtener información de primera mano.
+La ausencia de datos en Hugging Face (sin pipeline, sin idiomas, sin etiquetas de tarea) impide cualquier afirmación fundamentada. Se recomienda consultar directamente a HeraFox o solicitar acceso al modelo para obtener información de primera mano.
 
 ## Casos de uso
 
 Dado que no se dispone de información técnica sobre el modelo, no es posible proponer casos de uso concretos y realistas. Cualquier sugerencia sería pura especulación. Los desarrolladores interesados deberían:
 
-- Solicitar acceso al modelo en HuggingFace y revisar la documentación que se proporcione tras la aprobación.
+- Solicitar acceso al modelo en Hugging Face y revisar la documentación que se proporcione tras la aprobación.
 - Contactar con HeraFox a través de su sitio web (herafox.com) para obtener detalles sobre las capacidades y los casos de uso previstos.
 - Esperar a que se publiquen benchmarks o ejemplos de uso antes de considerar su integración en proyectos.
 
@@ -53,11 +53,11 @@ No se dispone de información sobre los requisitos de hardware. Al desconocer el
 
 ## Comparativa con modelos similares
 
-No disponible. No se puede comparar Luna-S1 con otros modelos porque se desconoce su categoría, tamaño y propósito. La búsqueda web no ha encontrado referencias a este modelo específico más allá de su página de HuggingFace. Los resultados de búsqueda relacionados con "Luna Models" o "Luna AI" corresponden a proyectos diferentes (modelos de arte y un clasificador de texto basado en BERT) que no tienen relación aparente con HeraFox-ai/Luna-S1.
+No disponible. No se puede comparar Luna-S1 con otros modelos porque se desconoce su categoría, tamaño y propósito. La búsqueda web no ha encontrado referencias a este modelo específico más allá de su página de Hugging Face. Los resultados de búsqueda relacionados con "Luna Models" o "Luna AI" corresponden a proyectos diferentes (modelos de arte y un clasificador de texto basado en BERT) que no tienen relación aparente con HeraFox-ai/Luna-S1.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aprobación manual en HuggingFace, lo que limita su disponibilidad y dificulta la evaluación independiente.
+- Acceso restringido: el modelo requiere aprobación manual en Hugging Face, lo que limita su disponibilidad y dificulta la evaluación independiente.
 - Licencia personalizada: la licencia "hera-fox-model-license" no es una licencia open source reconocida. Es imprescindible revisar los términos completos antes de cualquier uso, especialmente comercial.
 - Documentación ausente: no hay información pública sobre arquitectura, entrenamiento, capacidades o limitaciones. Esto impide una evaluación de riesgos adecuada.
 - Riesgo de sesgos y alucinaciones: al no conocer los datos de entrenamiento ni el proceso de alineación, no se puede descartar la presencia de sesgos o la generación de contenido falso.
@@ -66,7 +66,7 @@ No disponible. No se puede comparar Luna-S1 con otros modelos porque se desconoc
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/HeraFox-ai/Luna-S1
+- Página del modelo en Hugging Face: https://huggingface.co/HeraFox-ai/Luna-S1
 - Sitio web de HeraFox: http://herafox.com/
 - Tienda de Luna Models (posiblemente no relacionada): https://lunamodels.art/store/
 - Proyecto Luna AI de Luna OpenLabs (no relacionado): https://huggingface.co/lunaopenlabs/LunaAi

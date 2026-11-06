@@ -74,6 +74,6 @@ La comparacion natural es con `google/gemma-4-E2B-it` sin escalas KV calibradas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jethachan/gemma-4-E2B-it-NVFP4KV-calib
+- Hugging Face: https://huggingface.co/jethachan/gemma-4-E2B-it-NVFP4KV-calib
 - Repositorio de reproduccion: https://github.com/jethac/vllm-gemma4-nvfp4-kv-repro
 - PR de vLLM: https://github.com/vllm-project/vllm/pull/46329

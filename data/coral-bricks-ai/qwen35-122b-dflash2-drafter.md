@@ -90,7 +90,7 @@ La ventaja frente a MTP-7 se mantiene en todos los tramos de longitud de prompt,
 
 ## Enlaces
 
-- [HuggingFace: coral-bricks-ai/qwen35-122b-dflash2-drafter](https://huggingface.co/coral-bricks-ai/qwen35-122b-dflash2-drafter)
+- [Hugging Face: coral-bricks-ai/qwen35-122b-dflash2-drafter](https://huggingface.co/coral-bricks-ai/qwen35-122b-dflash2-drafter)
 - [Modelo base: Qwen/Qwen3.5-122B-A10B-FP8](https://huggingface.co/Qwen/Qwen3.5-122B-A10B-FP8)
 - [Blog de Coral Bricks: We trained a diffusion drafter for Qwen3.5 122B](https://www.coralbricks.ai/blog/qwen35-122b-diffusion-drafter)
 - [SGLang](https://github.com/sgl-project/sglang)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cohere-transcribe-arabic-07-2026 es un modelo de reconocimiento automatico del habla (ASR) especializado en arabe, publicado por el usuario Newmetrics en HuggingFace como ajuste fino del modelo base CohereLabs/cohere-transcribe-03-2026, desarrollado por Cohere y Cohere Labs. El repositorio tiene 2.065.804.048 parametros (unos 2,07 mil millones) en formato safetensors, con un tamano total de 4,1 GB, y se distribuye bajo licencia Apache 2.0.
+cohere-transcribe-arabic-07-2026 es un modelo de reconocimiento automatico del habla (ASR) especializado en arabe, publicado por el usuario Newmetrics en Hugging Face como ajuste fino del modelo base CohereLabs/cohere-transcribe-03-2026, desarrollado por Cohere y Cohere Labs. El repositorio tiene 2.065.804.048 parametros (unos 2,07 mil millones) en formato safetensors, con un tamano total de 4,1 GB, y se distribuye bajo licencia Apache 2.0.
 
 El modelo emplea una arquitectura Conformer encoder-decoder: un encoder Conformer grande extrae representaciones acusticas a partir de un espectrograma log-Mel de la onda de audio y un decoder Transformer ligero genera los tokens de texto. Esta optimizado para arabe estandar, dialectos arabes, ingles y habla con alternancia de codigo (code-switching) arabe-ingles, lo que lo situa en un nicho poco cubierto por los modelos ASR genericos, que suelen degradarse notablemente en variedades dialectales del arabe.
 
@@ -79,8 +79,8 @@ No hay datos de benchmarks que permitan comparar el rendimiento de este modelo c
 
 | Modelo | Parametros | Idiomas | Licencia | Disponibilidad | Rendimiento ASR |
 |---|---|---|---|---|---|
-| Newmetrics/cohere-transcribe-arabic-07-2026 | 2,07 mil millones | arabe (con dialectos) e ingles, con code-switching | Apache 2.0 | HuggingFace, safetensors, transformers y vLLM | no disponible |
-| CohereLabs/cohere-transcribe-03-2026 (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace | no disponible |
+| Newmetrics/cohere-transcribe-arabic-07-2026 | 2,07 mil millones | arabe (con dialectos) e ingles, con code-switching | Apache 2.0 | Hugging Face, safetensors, transformers y vLLM | no disponible |
+| CohereLabs/cohere-transcribe-03-2026 (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face | no disponible |
 | Otros modelos ASR multilingues (por ejemplo, la familia Whisper de OpenAI o MMS de Meta) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible |
 
 No se dispone de informacion sobre alternativas especificas de ASR en arabe con las que establecer una comparacion rigurosa de WER, cobertura dialectal o velocidad.
@@ -100,9 +100,9 @@ No se dispone de informacion sobre alternativas especificas de ASR en arabe con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Newmetrics/cohere-transcribe-arabic-07-2026
+- Repositorio en Hugging Face: https://huggingface.co/Newmetrics/cohere-transcribe-arabic-07-2026
 - Modelo base: https://huggingface.co/CohereLabs/cohere-transcribe-03-2026
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/CohereLabs/cohere-transcribe-arabic-07-2026
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/CohereLabs/cohere-transcribe-arabic-07-2026
 - Sitio de Cohere: https://cohere.com
 - Cohere Labs (investigacion): https://cohere.com/research
 

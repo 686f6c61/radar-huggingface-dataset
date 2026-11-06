@@ -92,7 +92,7 @@ No se dispone de informacion sobre otros adaptadores LoRA comparables publicados
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zehen8716/veeb-lora
+- Modelo en Hugging Face: https://huggingface.co/zehen8716/veeb-lora
 - Ficheros del LoRA: https://huggingface.co/zehen8716/veeb-lora/tree/main
 - Modelo base para entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base para inferencia: https://huggingface.co/krea/Krea-2-Turbo

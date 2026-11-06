@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ciphemic/ltm-v2` es un modelo publicado en HuggingFace por el usuario ciphemic bajo licencia Apache 2.0. La model card asociada está practicamente vacia: unicamente declara la licencia, sin descripcion, sin especificaciones tecnicas ni documentacion sobre arquitectura, entrenamiento o capacidades. El repositorio no registra descargas ni likes en el momento de la consulta y no tiene pipeline declarado.
+`ciphemic/ltm-v2` es un modelo publicado en Hugging Face por el usuario ciphemic bajo licencia Apache 2.0. La model card asociada está practicamente vacia: unicamente declara la licencia, sin descripcion, sin especificaciones tecnicas ni documentacion sobre arquitectura, entrenamiento o capacidades. El repositorio no registra descargas ni likes en el momento de la consulta y no tiene pipeline declarado.
 
 No hay informacion disponible sobre el tamano del modelo, la longitud de contexto, los idiomas soportados ni el proceso de entrenamiento. El nombre "ltm-v2" sugiere, sin confirmacion por parte del autor, una posible relacion con "long-term memory" y una segunda iteracion, pero se trata de una especulacion que no debe tomarse como dato tecnico.
 
@@ -57,7 +57,7 @@ No es posible establecer una comparativa con modelos alternativos porque se desc
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ciphemic/ltm-v2 | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| ciphemic/ltm-v2 | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -71,5 +71,5 @@ No es posible establecer una comparativa con modelos alternativos porque se desc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ciphemic/ltm-v2
+- Repositorio en Hugging Face: https://huggingface.co/ciphemic/ltm-v2
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

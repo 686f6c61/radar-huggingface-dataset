@@ -69,8 +69,8 @@ La pérdida de validación en el shard reservado de ClimbMix es de 0,596 bits po
 
 | Modelo | Parámetros | Contexto | Licencia | CORE | MMLU | MMLU-Pro | Disponibilidad |
 |---|---:|---:|---|---:|---:|---:|---|
-| blinded-nanochat-pretrained | 3,29B | 2.048 | MIT | 0,458 | 0,493 | 0,178 | HuggingFace (174 descargas) |
-| nanochat d34 | ~3,3B (depth-34) | 2.048 | MIT (según repositorio nanochat) | 0,338 | 0,257 | 0,115 | HuggingFace (`karpathy/nanochat-d34`) |
+| blinded-nanochat-pretrained | 3,29B | 2.048 | MIT | 0,458 | 0,493 | 0,178 | Hugging Face (174 descargas) |
+| nanochat d34 | ~3,3B (depth-34) | 2.048 | MIT (según repositorio nanochat) | 0,338 | 0,257 | 0,115 | Hugging Face (`karpathy/nanochat-d34`) |
 
 No se dispone de datos en la información proporcionada para comparar con otras alternativas de la misma categoría (por ejemplo, modelos base de ~3B de otros desarrolladores); los únicos datos comparables son los del checkpoint nanochat d34 con 89B tokens de entrenamiento.
 
@@ -89,7 +89,7 @@ No se dispone de datos en la información proporcionada para comparar con otras 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anonyMicky/blinded-nanochat-pretrained
+- Hugging Face: https://huggingface.co/anonyMicky/blinded-nanochat-pretrained
 - Repositorio nanochat: https://github.com/karpathy/nanochat (commit `92d63d4`)
 - Dataset ClimbMix: https://huggingface.co/datasets/karpathy/climbmix-400b-shuffle
 - Checkpoint nanochat d34: https://huggingface.co/karpathy/nanochat-d34

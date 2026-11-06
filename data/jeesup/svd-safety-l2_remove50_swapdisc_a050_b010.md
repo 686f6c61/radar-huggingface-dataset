@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-l2_remove50_swapdisc_a050_b010 es un artefacto de investigación publicado por el usuario Jeesup en HuggingFace. Se trata de un checkpoint de meta-llama/Llama-2-7b-chat-hf comprimido con SVD-LLM hasta el 50,0 % de los parámetros densos de proyección y posteriormente editado mediante 10 rondas iterativas de intercambio de parámetros neutro (parameter-neutral swap), seleccionando los componentes con la regla `disc_iter` y un presupuesto del 1,0 % de los parámetros densos repartido en fragmentos del 0,1 % por ronda.
+svd-safety-l2_remove50_swapdisc_a050_b010 es un artefacto de investigación publicado por el usuario Jeesup en Hugging Face. Se trata de un checkpoint de meta-llama/Llama-2-7b-chat-hf comprimido con SVD-LLM hasta el 50,0 % de los parámetros densos de proyección y posteriormente editado mediante 10 rondas iterativas de intercambio de parámetros neutro (parameter-neutral swap), seleccionando los componentes con la regla `disc_iter` y un presupuesto del 1,0 % de los parámetros densos repartido en fragmentos del 0,1 % por ronda.
 
 El problema que aborda es acotado y experimental: cuantificar cómo la compresión por descomposición en valores singulares degrada el comportamiento de seguridad de un modelo alineado y qué regla de selección de componentes repara mejor ese daño. No es un modelo conversacional de propósito general ni un asistente desplegable; es una celda concreta dentro de una rejilla de experimentos sobre reglas de selección y presupuestos de restauración.
 
@@ -113,7 +113,7 @@ Nota de lectura: un ASR más bajo es mejor y un sobre-rechazo más bajo también
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a050_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a050_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper de Llama 2 (referencia del modelo base): https://arxiv.org/abs/2307.09288
 

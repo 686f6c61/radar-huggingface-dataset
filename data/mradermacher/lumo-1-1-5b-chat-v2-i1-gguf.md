@@ -6,20 +6,20 @@ Lumo-1-1.5B-Chat-V2-i1-GGUF es un repositorio de cuantizaciones en formato GGUF 
 
 El valor practico de este repositorio reside en el catalogo de cuantizaciones generadas con imatrix (matriz de importancia), que incluye variantes de 1 a 6 bits tanto del esquema K-quant como del esquema I-quant. Esto permite ejecutar un modelo de 1.5B en hardware muy modesto, desde equipos de escritorio sin GPU dedicada hasta moviles o sistemas embebidos, a cambio de una perdida de calidad que crece al descender de Q4.
 
-La relevancia de la ficha es limitada por la escasez de metadatos: el repositorio no declara licencia, idiomas, pipeline ni resultados de evaluacion, y los datos de parametros publicados por HuggingFace (360.544) resultan incoherentes con el nombre del modelo. Cualquier decision de adopcion en produccion deberia ir precedida de una revision manual de la licencia del modelo base.
+La relevancia de la ficha es limitada por la escasez de metadatos: el repositorio no declara licencia, idiomas, pipeline ni resultados de evaluacion, y los datos de parametros publicados por Hugging Face (360.544) resultan incoherentes con el nombre del modelo. Cualquier decision de adopcion en produccion deberia ir precedida de una revision manual de la licencia del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible (el modelo base es presumiblemente un transformer decoder-only, sin confirmacion en la informacion proporcionada) |
-| Parametros totales | no disponible con fiabilidad. Los metadatos de HuggingFace indican 360.544 parametros, cifra incoherente con el nombre del modelo, que indica 1,5B |
+| Parametros totales | no disponible con fiabilidad. Los metadatos de Hugging Face indican 360.544 parametros, cifra incoherente con el nombre del modelo, que indica 1,5B |
 | Parametros activos | no disponible (no hay indicios de que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL (small), Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible (la model card del repositorio no la declara) |
-| Formato de pesos | GGUF (cuantizaciones generadas con imatrix a partir del modelo base en formato HuggingFace) |
+| Formato de pesos | GGUF (cuantizaciones generadas con imatrix a partir del modelo base en formato Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -80,7 +80,7 @@ No se dispone de datos tecnicos del modelo base vpakarinen/Lumo-1-1.5B-Chat-V2 (
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mradermacher/Lumo-1-1.5B-Chat-V2-i1-GGUF | no disponible con fiabilidad (nombre indica 1,5B) | no disponible | no disponible | GGUF en HuggingFace |
+| mradermacher/Lumo-1-1.5B-Chat-V2-i1-GGUF | no disponible con fiabilidad (nombre indica 1,5B) | no disponible | no disponible | GGUF en Hugging Face |
 | Qwen2.5-1.5B | 1,54B | 32.768 tokens | Apache 2.0 (segun su publicacion) | safetensors y GGUF |
 | Llama-3.2-1B | 1,24B | 128.000 tokens | Llama 3.2 Community License | safetensors y GGUF |
 | SmolLM2-1.7B | 1,71B | 8.192 tokens | Apache 2.0 (segun su publicacion) | safetensors y GGUF |
@@ -90,7 +90,7 @@ Esta tabla se incluye unicamente como marco de referencia del segmento; no impli
 ## Limitaciones y advertencias
 
 - Licencia no declarada: el repositorio no especifica licencia. Sin conocer la licencia del modelo base vpakarinen/Lumo-1-1.5B-Chat-V2, no es posible determinar si el uso comercial esta permitido. Verificar la licencia del modelo original antes de cualquier despliegue productivo.
-- Metadatos inconsistentes: los parametros publicados por HuggingFace (360.544) no coinciden con el nombre del modelo (1,5B). Puede tratarse de un error de parseo del campo de metadatos, pero impide confirmar el tamano real.
+- Metadatos inconsistentes: los parametros publicados por Hugging Face (360.544) no coinciden con el nombre del modelo (1,5B). Puede tratarse de un error de parseo del campo de metadatos, pero impide confirmar el tamano real.
 - Riesgo de alucinacion: no hay evaluaciones de fidelidad publicadas. Los modelos de 1,5B y las cuantizaciones de muy baja precision (IQ1, IQ2) tienden a aumentar la tasa de respuestas incorrectas o incoherentes.
 - Degradacion por cuantizacion: las variantes IQ1_S, IQ1_M, IQ2_XXS y Q2_K presentan perdidas de calidad significativas respecto a Q4 o Q5. No se recomienda su uso en tareas que requieran precision factual o coherencia sostenida.
 - Sesgos: no documentados. No se publica informacion sobre la composicion del dataset de entrenamiento ni sobre procesos de alineacion, por lo que no se pueden caracterizar los sesgos del modelo.
@@ -101,7 +101,7 @@ Esta tabla se incluye unicamente como marco de referencia del segmento; no impli
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mradermacher/Lumo-1-1.5B-Chat-V2-i1-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/mradermacher/Lumo-1-1.5B-Chat-V2-i1-GGUF
 - Modelo base: https://huggingface.co/vpakarinen/Lumo-1-1.5B-Chat-V2
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 

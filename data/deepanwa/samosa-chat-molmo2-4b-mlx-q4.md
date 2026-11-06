@@ -81,7 +81,7 @@ No se dispone de datos de comparacion directa con otros modelos en la informacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/deepanwa/Samosa-Chat-Molmo2-4B-MLX-Q4
+- Repositorio Hugging Face: https://huggingface.co/deepanwa/Samosa-Chat-Molmo2-4B-MLX-Q4
 - Proyecto Samosa Chat (GitHub): https://github.com/deepanwadhwa/samosa-chat
 - Pagina oficial de Molmo (AllenAI): https://allenai.org/molmo
-- Modelo base Molmo2-4B en HuggingFace: https://huggingface.co/allenai/Molmo2-4B
+- Modelo base Molmo2-4B en Hugging Face: https://huggingface.co/allenai/Molmo2-4B

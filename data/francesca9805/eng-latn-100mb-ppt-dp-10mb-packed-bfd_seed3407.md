@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/eng-latn-100mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino (fine-tuning) supervisado del checkpoint monolingüe `goldfish-models/eng_latn_100mb`, publicado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generación de texto de arquitectura GPT-2 con 124.770.816 parámetros (aproximadamente 0,125 mil millones), distribuido en formato safetensors y con un tamaño de repositorio de 0,3 GB. El entrenamiento se realizó con la librería TRL (versión 0.23.0) mediante SFT (supervised fine-tuning), sobre Transformers 4.56.2 y PyTorch 2.5.1+cu121.
+El modelo `francesca9805/eng-latn-100mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino (fine-tuning) supervisado del checkpoint monolingüe `goldfish-models/eng_latn_100mb`, publicado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generación de texto de arquitectura GPT-2 con 124.770.816 parámetros (aproximadamente 0,125 mil millones), distribuido en formato safetensors y con un tamaño de repositorio de 0,3 GB. El entrenamiento se realizó con la librería TRL (versión 0.23.0) mediante SFT (supervised fine-tuning), sobre Transformers 4.56.2 y PyTorch 2.5.1+cu121.
 
 El nombre del checkpoint codifica parte del protocolo experimental: el sufijo `100mb` remite al modelo base (entrenado con 100 MB de texto), `Dp-10mb-packed` sugiere un subconjunto de datos de aproximadamente 10 MB con secuencias empaquetadas (packed), y `bfd_seed3407` apunta a una configuración concreta de entrenamiento con la semilla 3407. No obstante, la model card no documenta ni el dataset exacto ni los hiperparámetros más allá de la mención a SFT, por lo que estos extremos no pueden confirmarse a partir de la información disponible.
 
@@ -94,7 +94,7 @@ Las cifras de GPT-2 y DistilGPT-2 corresponden a datos públicos ampliamente con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eng-latn-100mb-ppt-Dp-10mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eng-latn-100mb-ppt-Dp-10mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/6joco74y

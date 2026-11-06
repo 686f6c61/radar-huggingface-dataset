@@ -2,11 +2,11 @@
 
 ## Resumen
 
-sentiment-versioning-demo es un modelo de clasificacion de texto publicado por el usuario Draskeer en HuggingFace. Se trata de un ajuste fino (fine-tuning) de distilbert-base-uncased, un transformer encoder de tipo BERT destilado, orientado a la tarea de analisis de sentimiento. El repositorio tiene caracter claramente experimental: cero descargas, cero likes, model card autogenerada por el Trainer de HuggingFace y secciones sin completar ("More information needed"), ademas de un model-index sin resultados de benchmarks publicados.
+sentiment-versioning-demo es un modelo de clasificacion de texto publicado por el usuario Draskeer en Hugging Face. Se trata de un ajuste fino (fine-tuning) de distilbert-base-uncased, un transformer encoder de tipo BERT destilado, orientado a la tarea de analisis de sentimiento. El repositorio tiene caracter claramente experimental: cero descargas, cero likes, model card autogenerada por el Trainer de Hugging Face y secciones sin completar ("More information needed"), ademas de un model-index sin resultados de benchmarks publicados.
 
 El modelo resuelve la tarea generica de clasificacion de secuencias cortas de texto (positivo/negativo o categorias equivalentes, no especificadas), con un tamano de 66.955.010 parametros (aproximadamente 67 millones) y un entrenamiento de una sola epoca sobre 125 pasos. Con un batch de entrenamiento de 16, esto equivale a unos 2.000 ejemplos vistos por el optimizador, lo que lo situa en la categoria de prototipo o demostracion de pipeline mas que en la de modelo listo para produccion.
 
-Su relevancia actual es limitada y de naturaleza practica: sirve como ejemplo minimo de fine-tuning con las versiones recientes del stack (Transformers 5.16.1, PyTorch 2.11.0) y como banco de pruebas para flujos de versionado de modelos y despliegue ligero, dado que el repositorio incluye las etiquetas text-embeddings-inference y endpoints_compatible, que indican compatibilidad con el stack de despliegue de HuggingFace. No aporta innovaciones tecnicas ni datos de evaluacion comparables a los de modelos publicados en la misma categoria.
+Su relevancia actual es limitada y de naturaleza practica: sirve como ejemplo minimo de fine-tuning con las versiones recientes del stack (Transformers 5.16.1, PyTorch 2.11.0) y como banco de pruebas para flujos de versionado de modelos y despliegue ligero, dado que el repositorio incluye las etiquetas text-embeddings-inference y endpoints_compatible, que indican compatibilidad con el stack de despliegue de Hugging Face. No aporta innovaciones tecnicas ni datos de evaluacion comparables a los de modelos publicados en la misma categoria.
 
 ## Especificaciones tecnicas
 
@@ -24,8 +24,8 @@ Su relevancia actual es limitada y de naturaleza practica: sirve como ejemplo mi
 | Modelo base | distilbert/distilbert-base-uncased (finetune) |
 | Tamano del repositorio | 1,6 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-15 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-15 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-15 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-15 (segun metadatos de Hugging Face) |
 | Compatibilidad de despliegue | etiquetas text-embeddings-inference y endpoints_compatible |
 
 ## Arquitectura y entrenamiento
@@ -39,7 +39,7 @@ El entrenamiento se realizo con los siguientes hiperparametros: learning rate 2e
 - Clasificacion de texto: tarea principal del modelo, con salida de etiquetas y puntuaciones de probabilidad mediante la pipeline text-classification.
 - Analisis de sentimiento: uso previsto inferido del nombre del repositorio; la taxonomia concreta de clases no esta documentada en la model card.
 - Extraccion de embeddings de frases: al ser un encoder transformer, las representaciones del token [CLS] o el pooling sobre la ultima capa pueden reutilizarse como features.
-- Compatibilidad con text-embeddings-inference: el repositorio esta etiquetado para su uso con el stack de inferencia de HuggingFace.
+- Compatibilidad con text-embeddings-inference: el repositorio esta etiquetado para su uso con el stack de inferencia de Hugging Face.
 - Soporte de tool calling / function calling: no disponible; no es una capacidad de un modelo encoder-only de clasificacion.
 - Soporte de agentes y razonamiento multi-paso: no disponible; no es un modelo generativo.
 - Capacidades multilingues: no disponibles; el modelo base esta entrenado fundamentalmente en ingles.
@@ -54,7 +54,7 @@ Cualquier uso en produccion debe considerarse exploratorio hasta que el autor do
 - Triaje de tickets de soporte: preetiquetado automatico de mensajes de clientes por tono (positivo, negativo, neutro) para priorizar respuestas, con revision humana posterior dado que la validacion reportada es del 85,4 % de exactitud sobre un conjunto no documentado.
 - Enriquecimiento de datasets y anotacion asistida: uso del modelo como preanotador para reducir el trabajo manual de etiquetado, aprovechando su velocidad de inferencia en CPU y GPU.
 - Filtrado de contenido en pipelines de datos: descarte o marcado de documentos con sentimiento fuertemente negativo antes de otras etapas de procesado.
-- Prototipado y docencia: ejemplo minimo y reproducible de fine-tuning con el Trainer de HuggingFace, util para comparar configuraciones de hiperparametros o practicar flujos de versionado de modelos.
+- Prototipado y docencia: ejemplo minimo y reproducible de fine-tuning con el Trainer de Hugging Face, util para comparar configuraciones de hiperparametros o practicar flujos de versionado de modelos.
 - Servicio de inferencia ligero: por su tamano, puede desplegarse como microservicio de bajo coste con la pipeline de transformers o con text-embeddings-inference, sin necesidad de GPU dedicada.
 
 ## Benchmarks y rendimiento
@@ -77,7 +77,7 @@ No hay comparacion con otros modelos porque no se dispone de resultados propios 
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; cabe con holgura en RTX 3060, RTX 4090, T4, A10, L4, A100 o H100, aunque estos dos ultimos estan sobredimensionados para este tamano.
 - Inferencia en CPU: viable, es un modelo de 67 millones de parametros; puede ejecutarse en CPU sin requisitos especiales.
 - GPU de consumo: si, cabe en practicamente cualquier GPU de consumo moderna, e incluso en hardware integrado.
-- Opciones de despliegue: pipeline de transformers, text-embeddings-inference (etiqueta presente en el repositorio), endpoints compatibles de HuggingFace, ONNX Runtime, FastAPI o TorchServe. vLLM, llama.cpp, Ollama y TGI no son opciones tipicas ni estan documentadas para este modelo, dado que no es generativo y no publica pesos GGUF.
+- Opciones de despliegue: pipeline de transformers, text-embeddings-inference (etiqueta presente en el repositorio), endpoints compatibles de Hugging Face, ONNX Runtime, FastAPI o TorchServe. vLLM, llama.cpp, Ollama y TGI no son opciones tipicas ni estan documentadas para este modelo, dado que no es generativo y no publica pesos GGUF.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 Nota: el repositorio ocupa 1,6 GB, muy por encima de los aproximadamente 268 MB que ocuparian los pesos en fp32, lo que sugiere la presencia de artefactos adicionales de entrenamiento (estados del optimizador, checkpoints intermedios). Este extremo no esta confirmado en la informacion disponible.
@@ -110,6 +110,6 @@ Conviene verificar los datos de los modelos alternativos en sus respectivas mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Draskeer/sentiment-versioning-demo
+- Modelo en Hugging Face: https://huggingface.co/Draskeer/sentiment-versioning-demo
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Los resultados de busqueda web proporcionados no contienen informacion relevante sobre el modelo (corresponden a paginas de ayuda de Google sin relacion con el repositorio). No se han encontrado papers, blogs, repositorios ni demos asociados.

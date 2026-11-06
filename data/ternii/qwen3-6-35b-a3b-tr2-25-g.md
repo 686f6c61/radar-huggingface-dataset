@@ -106,9 +106,9 @@ La comparacion directa disponible en la model card se limita al checkpoint NVFP4
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ternii/Qwen3.6-35B-A3B-TR2.25-G
+- Modelo en Hugging Face: https://huggingface.co/Ternii/Qwen3.6-35B-A3B-TR2.25-G
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Variante GGUF: https://huggingface.co/Ternii/Qwen3.6-35B-A3B-TR2.25-G-GGUF
 - Runtime y plugin vLLM: https://github.com/ternii-ai/tritq-vllm
-- Checkpoint NVFP4 de NVIDIA (comparativa): `nvidia/Qwen3.6-35B-A3B-NVFP4` en HuggingFace
+- Checkpoint NVFP4 de NVIDIA (comparativa): `nvidia/Qwen3.6-35B-A3B-NVFP4` en Hugging Face
 - Imagen Docker: `ghcr.io/ternii-ai/tritq-qwen36:0.2`

@@ -70,10 +70,10 @@ Datos adicionales de la documentación: EAGLE-1 logra 2x de aceleración sobre g
 
 | Modelo | Tipo | Parámetros | Contexto | Aceleración | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| EAGLE-LLaMA3-Instruct-8B (EAGLE-3) | Draft model especulativo | No disponible (repo 1,6 GB) | No disponible | 5,6x vs vanilla (13B); 1,8x vs EAGLE-1 | Apache 2.0 | HuggingFace (vllm-project y yuhuili) |
+| EAGLE-LLaMA3-Instruct-8B (EAGLE-3) | Draft model especulativo | No disponible (repo 1,6 GB) | No disponible | 5,6x vs vanilla (13B); 1,8x vs EAGLE-1 | Apache 2.0 | Hugging Face (vllm-project y yuhuili) |
 | Medusa | Draft model especulativo | No disponible | No disponible | EAGLE-1 es 1,6x más rápido que Medusa (13B) | No disponible | No disponible |
 | Lookahead decoding | Decodificación especulativa | No aplica (sin modelo extra) | No disponible | EAGLE-1 es 2x más rápido que Lookahead (13B) | No disponible | No disponible |
-| EAGLE-1 | Draft model especulativo | No disponible | No disponible | 3x vs vanilla (13B) | Apache 2.0 (según proyecto EAGLE) | HuggingFace |
+| EAGLE-1 | Draft model especulativo | No disponible | No disponible | 3x vs vanilla (13B) | Apache 2.0 (según proyecto EAGLE) | Hugging Face |
 
 La comparativa se limita a los datos de aceleración publicados en la documentación del proyecto. No se dispone de información sobre parámetros, contexto o licencia de Medusa y Lookahead en la información proporcionada.
 
@@ -90,8 +90,8 @@ La comparativa se limita a los datos de aceleración publicados en la documentac
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/vllm-project/EAGLE-LLaMA3-Instruct-8B
-- HuggingFace (repositorio original): https://huggingface.co/yuhuili/EAGLE-LLaMA3-Instruct-8B
+- Hugging Face (este repositorio): https://huggingface.co/vllm-project/EAGLE-LLaMA3-Instruct-8B
+- Hugging Face (repositorio original): https://huggingface.co/yuhuili/EAGLE-LLaMA3-Instruct-8B
 - Paper EAGLE: https://arxiv.org/pdf/2401.15077.pdf
 - Paper EAGLE-2: https://arxiv.org/pdf/2406.16858
 - Paper EAGLE-3: https://arxiv.org/pdf/2503.01840

@@ -13,7 +13,7 @@ El modelo es bilingüe (inglés y chino) y se distribuye bajo licencia Apache 2.
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | Transformer denso tipo Llama (arquitectura detallada no disponible) |
-| Parametros totales | 33.100 millones (33,1B); el conteo de la barra lateral de HuggingFace (9.334.250.496) refleja palabras de 16 bits empaquetadas del formato EXL3, no el tamaño real del modelo |
+| Parametros totales | 33.100 millones (33,1B); el conteo de la barra lateral de Hugging Face (9.334.250.496) refleja palabras de 16 bits empaquetadas del formato EXL3, no el tamaño real del modelo |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | Hasta 77.824 tokens servidos con caché KV de 6 bits (110.592 con 4 bits, no recomendado); recomendado 65.536 para servidor estable |
 | Tipos de cuantización | EXL3 4,0 bpw en todas las capas lineales; cabeza de salida a 6 bits; embeddings en fp16; caché KV recomendada 6/6 bits |

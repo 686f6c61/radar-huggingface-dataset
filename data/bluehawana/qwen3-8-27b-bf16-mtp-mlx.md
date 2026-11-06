@@ -58,7 +58,7 @@ La tasa de aceptacion del drafter en trafico de codificacion y agentes se situa 
 ## Requisitos de hardware
 
 - VRAM estimada: el modelo en bf16 ocupa aproximadamente 55,4 GB, por lo que requiere un Mac con al menos 64 GB de memoria unificada (128 GB recomendado para margen).
-- GPU: exclusivo para Apple Silicon (M-series). No es compatible directamente con GPUs NVIDIA; para esas plataformas se debe usar el modelo original de HuggingFace.
+- GPU: exclusivo para Apple Silicon (M-series). No es compatible directamente con GPUs NVIDIA; para esas plataformas se debe usar el modelo original de Hugging Face.
 - Opciones de despliegue: oMLX (con `mtp_enabled` activado), mlx-lm (con el PR 990 de soporte MTP), y cualquier runtime MLX que implemente decodificacion especulativa.
 - Latencia y throughput: en un M5 Max de 128 GB, 25,9 tok/s en una sola secuencia con MTP habilitado; 9,3 tok/s sin la cabeza MTP.
 - Con cuantizacion (por ejemplo, 4-bit u 8-bit) el modelo podria ejecutarse en equipos con menos memoria, pero este repositorio solo ofrece bf16.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de 27B en ML
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bluehawana/Qwen3.8-27B-bf16-MTP-MLX
+- Repositorio Hugging Face: https://huggingface.co/bluehawana/Qwen3.8-27B-bf16-MTP-MLX
 - Modelo base (mlx-community): https://huggingface.co/mlx-community/Qwen3.8-27B-bf16
 - Cabeza MTP original (EigenLabs): https://huggingface.co/EigenLabs/Qwen3.8-27B-MTP-bf16
 - Modelo Qwen3.8-27B oficial: https://huggingface.co/Qwen/Qwen3.8-27B

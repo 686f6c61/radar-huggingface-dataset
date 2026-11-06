@@ -127,7 +127,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cellmap/onnx-web-models
+- Modelo en Hugging Face: https://huggingface.co/cellmap/onnx-web-models
 - Cliente serverless cellmap-flow: https://github.com/mzouink/cellmap-flow/tree/serverless
 - onnxruntime-web: https://onnxruntime.ai/
 - Datos públicos OpenOrganelle (jrc_mus-liver): no disponible como enlace en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llama-cargo-sft-v15` es un ajuste fino supervisado (SFT) del modelo `unsloth/Llama-3.1-8B-Instruct-bnb-4bit`, publicado por el usuario de HuggingFace `jonas-mo`. El repositorio ocupa 0,2 GB y contiene pesos en formato `safetensors` generados con TRL 0.24.0; no se documentan el conjunto de datos, los hiperparámetros ni el número de pasos de entrenamiento.
+`llama-cargo-sft-v15` es un ajuste fino supervisado (SFT) del modelo `unsloth/Llama-3.1-8B-Instruct-bnb-4bit`, publicado por el usuario de Hugging Face `jonas-mo`. El repositorio ocupa 0,2 GB y contiene pesos en formato `safetensors` generados con TRL 0.24.0; no se documentan el conjunto de datos, los hiperparámetros ni el número de pasos de entrenamiento.
 
 El modelo base es Llama 3.1 8B Instruct, un transformer decoder-only de 8.030 millones de parámetros con 128.000 tokens de contexto, cuantizado a 4 bits con bitsandbytes en el checkpoint de partida. El tag `unsloth` y el uso de un base en 4 bits apuntan a un flujo de QLoRA o SFT con pesos cuantizados, aunque la model card no confirma el método exacto ni si el repositorio contiene un adaptador LoRA o el checkpoint completo.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
 | `jonas-mo/llama-cargo-sft-v15` | 8,03 B | 128.000 tokens heredados; efectivos no documentados | No disponible | Repositorio público, 0 descargas | No disponible |
-| `meta-llama/Llama-3.1-8B-Instruct` | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Público en HuggingFace | Publicados en su model card; no reproducidos aquí |
-| `mistralai/Mistral-7B-Instruct-v0.3` | 7,25 B | 32.000 tokens | Apache 2.0 | Público en HuggingFace | Publicados en su model card; no reproducidos aquí |
-| `Qwen/Qwen2.5-7B-Instruct` | 7,62 B | 131.072 tokens | Apache 2.0 | Público en HuggingFace | Publicados en su model card; no reproducidos aquí |
+| `meta-llama/Llama-3.1-8B-Instruct` | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Público en Hugging Face | Publicados en su model card; no reproducidos aquí |
+| `mistralai/Mistral-7B-Instruct-v0.3` | 7,25 B | 32.000 tokens | Apache 2.0 | Público en Hugging Face | Publicados en su model card; no reproducidos aquí |
+| `Qwen/Qwen2.5-7B-Instruct` | 7,62 B | 131.072 tokens | Apache 2.0 | Público en Hugging Face | Publicados en su model card; no reproducidos aquí |
 
 La comparación de rendimiento no puede completarse: este fine-tune no aporta métricas y las cifras de los modelos alternativos no forman parte de la información proporcionada. En términos de licencia, Mistral 7B y Qwen2.5 7B ofrecen Apache 2.0, mientras que este repositorio no declara licencia utilizable, lo que supone una diferencia relevante para uso comercial.
 

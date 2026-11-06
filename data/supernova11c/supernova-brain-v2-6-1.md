@@ -65,11 +65,11 @@ No disponible. En la informacion proporcionada no se identifican modelos compara
 - El artefacto se distribuye como archivo pickle, lo que implica riesgo de ejecucion de codigo arbitrario al deserializarlo. Debe cargarse solo desde fuentes de confianza.
 - No se han publicado benchmarks, datos de entrenamiento ni evaluaciones de rendimiento, por lo que cualquier uso en investigacion debe ser exploratorio y no concluyente.
 - La licencia Apache 2.0 permite uso comercial y modificacion, pero el estado del proyecto es experimental y no apto para produccion.
-- El modelo no tiene descargas ni likes en HuggingFace, lo que indica ausencia de validacion por parte de la comunidad.
+- El modelo no tiene descargas ni likes en Hugging Face, lo que indica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Supernova11c/Supernova-Brain-V2-6-1
-- Perfil del autor en HuggingFace: https://huggingface.co/Supernova11c
-- Dataset del autor en HuggingFace: https://huggingface.co/Supernova11c/datasets
+- Hugging Face del modelo: https://huggingface.co/Supernova11c/Supernova-Brain-V2-6-1
+- Perfil del autor en Hugging Face: https://huggingface.co/Supernova11c
+- Dataset del autor en Hugging Face: https://huggingface.co/Supernova11c/datasets
 - Modelo de embedding del autor (Supernova-teraillm-Embedding-V2): https://huggingface.co/Supernova11c/Supernova-teraillm-Embedding-V2

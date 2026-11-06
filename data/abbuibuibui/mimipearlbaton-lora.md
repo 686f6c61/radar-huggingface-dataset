@@ -83,7 +83,7 @@ No se han identificado en la informacion disponible otros LoRA de personaje conc
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MimiPearlbaton-Lora (E6) | no disponible (LoRA rango 32) | buckets de 1024 px en entrenamiento | sin metricas; evaluacion visual propia | CreativeML OpenRAIL-M | HuggingFace y ModelScope |
+| MimiPearlbaton-Lora (E6) | no disponible (LoRA rango 32) | buckets de 1024 px en entrenamiento | sin metricas; evaluacion visual propia | CreativeML OpenRAIL-M | Hugging Face y ModelScope |
 | waiIllustriousSDXL-v17 (base sin LoRA) | no disponible | SDXL estandar | no disponible | no disponible en esta ficha | checkpoint de terceros |
 | Otros LoRA de personaje para Illustrious | no disponible | no disponible | no disponible | habitualmente OpenRAIL-M | no identificados |
 | LoRA de personaje para SDXL 1.0 / Pony | no disponible | no disponible | no disponible | variable | no identificados |
@@ -104,8 +104,8 @@ Diferencias cualitativas frente al modelo base: el LoRA impone identidad y atuen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abbuibuibui/MimiPearlbaton-Lora
-- Dataset en HuggingFace: https://huggingface.co/datasets/abbuibuibui/MimiPearlbaton-Dataset
+- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/MimiPearlbaton-Lora
+- Dataset en Hugging Face: https://huggingface.co/datasets/abbuibuibui/MimiPearlbaton-Dataset
 - Modelo en ModelScope: https://www.modelscope.cn/models/abbuibuibui/MimiPearlbaton-Lora
 - Dataset en ModelScope: https://www.modelscope.cn/datasets/abbuibuibui/MimiPearlbaton-Dataset
 - README en chino: https://huggingface.co/abbuibuibui/MimiPearlbaton-Lora/blob/main/README_zh.md

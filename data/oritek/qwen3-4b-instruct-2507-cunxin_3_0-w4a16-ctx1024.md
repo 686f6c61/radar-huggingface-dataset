@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`oritek/Qwen3-4B-Instruct-2507-Cunxin_3_0-W4A16-CTX1024` es una exportación cuantizada del modelo denso Qwen3-4B-Instruct-2507 (familia Qwen3, Alibaba), publicada por el usuario oritek en HuggingFace y ModelScope bajo licencia Apache 2.0. El identificador resume las tres decisiones técnicas del artefacto: cuantización W4A16 (pesos de 4 bits, activaciones de 16 bits), una ventana de contexto recortada a 1024 tokens y un pipeline de conversión interno denominado "Cunxin_3_0". El repositorio ocupa 3,6 GB.
+`oritek/Qwen3-4B-Instruct-2507-Cunxin_3_0-W4A16-CTX1024` es una exportación cuantizada del modelo denso Qwen3-4B-Instruct-2507 (familia Qwen3, Alibaba), publicada por el usuario oritek en Hugging Face y ModelScope bajo licencia Apache 2.0. El identificador resume las tres decisiones técnicas del artefacto: cuantización W4A16 (pesos de 4 bits, activaciones de 16 bits), una ventana de contexto recortada a 1024 tokens y un pipeline de conversión interno denominado "Cunxin_3_0". El repositorio ocupa 3,6 GB.
 
 El problema que aborda es el habitual en este tipo de artefactos: reducir la huella de memoria de un modelo de 4 000 millones de parámetros para poder ejecutarlo en hardware con poca VRAM o en aceleradores embebidos. Sin embargo, el recorte de contexto a 1024 tokens limita severamente su uso en tareas que el modelo base sí resuelve, como RAG sobre documentos largos o agentes multi-paso con historial extenso.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este artefacto (oritek) | 4 000 M (derivado) | 1024 | Apache 2.0 | HuggingFace y ModelScope; 0 descargas | Cuantizado W4A16; sin documentación ni evaluación |
+| Este artefacto (oritek) | 4 000 M (derivado) | 1024 | Apache 2.0 | Hugging Face y ModelScope; 0 descargas | Cuantizado W4A16; sin documentación ni evaluación |
 | Qwen3-4B-Instruct-2507 | 4 000 M | 262 144 (nativo, según ficha pública del base) | Apache 2.0 | Ampliamente disponible | Modelo de referencia sin cuantizar; contexto muy superior |
 | Llama 3.2 3B Instruct | 3 000 M | 128 000 (según ficha pública) | Llama 3.2 Community License | Ampliamente disponible | Licencia con restricciones de uso comercial y cláusula de nombre |
 | Gemma 3 4B IT | 4 000 M | 128 000 (según ficha pública) | Gemma Terms of Use | Ampliamente disponible | Requiere aceptación de términos; buenas capacidades multilingües |
@@ -92,7 +92,7 @@ Los datos de los modelos alternativos proceden de sus fichas públicas y no han 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oritek/Qwen3-4B-Instruct-2507-Cunxin_3_0-W4A16-CTX1024
+- Hugging Face: https://huggingface.co/oritek/Qwen3-4B-Instruct-2507-Cunxin_3_0-W4A16-CTX1024
 - ModelScope (según la model card): https://www.modelscope.cn/oritek/Qwen3-4B-Instruct-2507-Cunxin_3_0-W4A16-CTX1024
 - Documentación de subida de modelos de ModelScope citada en el README: https://modelscope.cn/docs/ModelScope%E6%A8%A1%E5%9E%8B%E6%8E%A5%E5%85%A5%E6%B5%81%E7%A8%8B%E6%A6%82%E8%A7%88
 - No se han encontrado en la búsqueda papers, blogs, repositorios de código ni demos asociados a este artefacto.

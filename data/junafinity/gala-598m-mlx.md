@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gala-598M es un modelo de lenguaje autorregresivo desarrollado por junafinity (Arjun Reddy) y publicado en HuggingFace bajo licencia Apache 2.0. Su principal característica es que ha sido diseñado específicamente para ejecutarse en Apple Silicon, aprovechando la memoria unificada de los chips M-series y la librería MLX. El modelo se entrenó desde cero en un único MacBook Pro con M3 Max (40 núcleos GPU, 128 GB) sin usar CUDA ni clústeres, lo que lo convierte en un ejemplo de entrenamiento de LLM en hardware de consumo.
+Gala-598M es un modelo de lenguaje autorregresivo desarrollado por junafinity (Arjun Reddy) y publicado en Hugging Face bajo licencia Apache 2.0. Su principal característica es que ha sido diseñado específicamente para ejecutarse en Apple Silicon, aprovechando la memoria unificada de los chips M-series y la librería MLX. El modelo se entrenó desde cero en un único MacBook Pro con M3 Max (40 núcleos GPU, 128 GB) sin usar CUDA ni clústeres, lo que lo convierte en un ejemplo de entrenamiento de LLM en hardware de consumo.
 
 Arquitectónicamente, Gala no es un transformer convencional: combina un mezclador Gated DeltaNet con atención de ventana deslizante de 256 tokens y un MLP disperso con enrutamiento por clave de producto (product-key routing). Con 598 millones de parámetros totales y solo ~78 millones activos por token, el modelo logra una pérdida de 3.581 en FineWeb-Edu tras 300M tokens de entrenamiento, superando a un transformer de FLOPs activos equivalentes. Además, demuestra una escalabilidad de contexto excepcional: mantiene una velocidad de decodificación plana de 382–388 tokens/s incluso con 10,5 millones de tokens de contexto, con un estado recurrente de solo 3,07 MB.
 
@@ -90,7 +90,7 @@ No se han encontrado otros modelos comparables con arquitectura Gated DeltaNet +
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junafinity/Gala-598M-MLX
+- Modelo en Hugging Face: https://huggingface.co/junafinity/Gala-598M-MLX
 - Perfil del autor: https://huggingface.co/junafinity/models
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Paper y documentación técnica: incluidos en el repositorio como `PAPER.md`, `CHRONICLE.md` y `NOVELTY.md` (accesibles desde la página del modelo)

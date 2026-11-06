@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`d4rkeul/sharzhherr_style_LoRA` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Stable Diffusion XL 1.0 (`stabilityai/stable-diffusion-xl-base-1.0`). Lo publica el usuario d4rkeul en HuggingFace y su proposito es transferir un estilo visual concreto, activado mediante la frase de disparo `photo collage in SHARZHHERR style`, que genera composiciones tipo collage fotografico con una estetica propia.
+`d4rkeul/sharzhherr_style_LoRA` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Stable Diffusion XL 1.0 (`stabilityai/stable-diffusion-xl-base-1.0`). Lo publica el usuario d4rkeul en Hugging Face y su proposito es transferir un estilo visual concreto, activado mediante la frase de disparo `photo collage in SHARZHHERR style`, que genera composiciones tipo collage fotografico con una estetica propia.
 
 El adaptador no es un modelo autonomo: requiere cargar SDXL Base 1.0 y aplicar los pesos LoRA sobre el UNet. Segun la model card, el LoRA se entreno solo sobre el UNet (el text encoder no se adapto) y se utilizo el VAE `madebyollin/sdxl-vae-fp16-fix` durante el entrenamiento para evitar problemas de desbordamiento en fp16.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Base | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| d4rkeul/sharzhherr_style_LoRA | LoRA de estilo (DreamBooth) | SDXL 1.0 | 1024x1024 (resolucion nativa de SDXL) | openrail++ | HuggingFace, 9 descargas |
-| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base texto-a-imagen | — | 1024x1024 | openrail++ | HuggingFace, ampliamente usado |
-| Otros LoRA de estilo sobre SDXL | LoRA de estilo | SDXL 1.0 | 1024x1024 | variable (segun autor) | HuggingFace / Civitai |
-| FLUX.1-dev (alternativa generativa) | Modelo completo (flow matching) | — | hasta 1024x1024 | licencia no comercial | HuggingFace |
+| d4rkeul/sharzhherr_style_LoRA | LoRA de estilo (DreamBooth) | SDXL 1.0 | 1024x1024 (resolucion nativa de SDXL) | openrail++ | Hugging Face, 9 descargas |
+| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base texto-a-imagen | — | 1024x1024 | openrail++ | Hugging Face, ampliamente usado |
+| Otros LoRA de estilo sobre SDXL | LoRA de estilo | SDXL 1.0 | 1024x1024 | variable (segun autor) | Hugging Face / Civitai |
+| FLUX.1-dev (alternativa generativa) | Modelo completo (flow matching) | — | hasta 1024x1024 | licencia no comercial | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (FID, CLIP score) para este LoRA frente a alternativas, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo (FID, CLIP score) para este Lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d4rkeul/sharzhherr_style_LoRA
+- Modelo en Hugging Face: https://huggingface.co/d4rkeul/sharzhherr_style_LoRA
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE usado en entrenamiento: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
 - DreamBooth (paper): https://dreambooth.github.io/

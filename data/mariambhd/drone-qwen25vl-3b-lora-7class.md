@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `mariambhd/drone-qwen25vl-3b-lora-7class` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario mariambhd, diseñado para el reconocimiento de acciones humanas en vídeo aéreo grabado con drones. No se trata de un modelo completo, sino de un conjunto de pesos PEFT que debe cargarse sobre el modelo base `Qwen/Qwen2.5-VL-3B-Instruct`, un transformer multimodal de 3.000 millones de parámetros desarrollado por Alibaba Qwen que combina comprensión de texto e imagen con soporte de vídeo.
+El modelo `mariambhd/drone-qwen25vl-3b-lora-7class` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario mariambhd, diseñado para el reconocimiento de acciones humanas en vídeo aéreo grabado con drones. No se trata de un modelo completo, sino de un conjunto de pesos PEFT que debe cargarse sobre el modelo base `Qwen/Qwen2.5-VL-3B-Instruct`, un transformer multimodal de 3.000 millones de parámetros desarrollado por Alibaba Qwen que combina comprensión de texto e imagen con soporte de vídeo.
 
 El adaptador especializa al modelo base en una tarea cerrada de clasificación de siete clases de acciones: atacar, golpear, patear, aplaudir, saludar con la mano, caminar y correr. La propuesta es relevante porque demuestra cómo un modelo visión-lenguaje de propósito general puede ajustarse con recursos modestos (LoRA) para vigilancia aérea, análisis deportivo o monitorización de multitudes, sin necesidad de entrenar desde cero un clasificador de vídeo específico.
 
-El repositorio tiene un tamaño de 0,0 GB según HuggingFace, cero descargas y cero likes en el momento de la consulta, lo que indica que es un artefacto de investigación reciente y poco difundido. La model card reporta una validación cruzada de 5 folds con separación por sujeto, con una precisión del 85,00 % ± 7,29 y un F1 macro del 84,66 % ± 7,00.
+El repositorio tiene un tamaño de 0,0 GB según Hugging Face, cero descargas y cero likes en el momento de la consulta, lo que indica que es un artefacto de investigación reciente y poco difundido. La model card reporta una validación cruzada de 5 folds con separación por sujeto, con una precisión del 85,00 % ± 7,29 y un F1 macro del 84,66 % ± 7,00.
 
 ## Especificaciones tecnicas
 
@@ -82,6 +82,6 @@ No disponible. La model card no proporciona comparaciones con otros adaptadores 
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/mariambhd/drone-qwen25vl-3b-lora-7class
+- Repositorio Hugging Face del adaptador: https://huggingface.co/mariambhd/drone-qwen25vl-3b-lora-7class
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este adaptador.

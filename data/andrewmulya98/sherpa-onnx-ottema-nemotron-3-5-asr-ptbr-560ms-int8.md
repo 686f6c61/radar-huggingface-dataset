@@ -66,7 +66,7 @@ No se han encontrado datos de comparación con modelos similares en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/andrewmulya98/sherpa-onnx-ottema-nemotron-3.5-asr-ptbr-560ms-int8
+- Hugging Face: https://huggingface.co/andrewmulya98/sherpa-onnx-ottema-nemotron-3.5-asr-ptbr-560ms-int8
 - Modelo base: https://huggingface.co/ottema/nemotron-3.5-asr-ptbr
 - Documentación de sherpa-onnx: https://k2-fsa.github.io/sherpa/onnx/index.html
 - Repositorio de sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

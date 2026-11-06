@@ -83,7 +83,7 @@ No se dispone de información sobre modelos comparables de la misma categoría. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/drbaph/vdn-minimax-h3-int8-convrot-comfyui
+- Hugging Face: https://huggingface.co/drbaph/vdn-minimax-h3-int8-convrot-comfyui
 - Repo upstream: https://huggingface.co/OpenVDN/vdn-minimax-h3
 - ComfyUI-VDN-H3: https://github.com/Saganaki22/ComfyUI-VDN-H3
 - Release v1.3.0: https://github.com/Saganaki22/ComfyUI-VDN-H3/releases/tag/v1.3.0

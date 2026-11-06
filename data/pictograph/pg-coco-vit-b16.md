@@ -98,7 +98,7 @@ La comparación directa es difícil porque PG-COCO-ViT-b16 usa un vocabulario pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pictograph/pg-coco-vit-b16
+- Modelo en Hugging Face: https://huggingface.co/pictograph/pg-coco-vit-b16
 - Página del modelo en Pictograph: https://pictograph.io/models/pictograph-research/pg-coco-vit-b16
 - Organización Pictograph Research: https://pictograph.io/org/pictograph-research
 - Dataset COCO-CLS-5k: https://huggingface.co/datasets/pictograph/coco-cls-5k

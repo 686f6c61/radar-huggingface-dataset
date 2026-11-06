@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `Marlon123nsj/Chute-premiado` corresponde a un repositorio publicado en HuggingFace por el usuario Marlon123nsj. En el momento de la consulta, el repositorio acumula 0 descargas y 1 like, y su unico metadato publico es la etiqueta `region:us`. No se ha publicado ni pipeline asociado, ni licencia, ni idiomas soportados, ni tamanio, ni arquitectura.
+El identificador `Marlon123nsj/Chute-premiado` corresponde a un repositorio publicado en Hugging Face por el usuario Marlon123nsj. En el momento de la consulta, el repositorio acumula 0 descargas y 1 like, y su unico metadato publico es la etiqueta `region:us`. No se ha publicado ni pipeline asociado, ni licencia, ni idiomas soportados, ni tamanio, ni arquitectura.
 
 La relevancia de esta ficha es, por tanto, metodologica: documenta el estado real de un repositorio practicamente vacio de informacion tecnica. No hay model card, no hay ficheros de pesos documentados publicamente en la informacion proporcionada y no existe ningun paper, blog o repositorio asociado localizable mediante busqueda web. Los resultados de la busqueda realizada no guardan ninguna relacion con el modelo (devuelven paginas de un portal de preguntas y respuestas en chino sobre signos de puntuacion y sobre el uso de tablas en Word).
 
@@ -21,7 +21,7 @@ Sin datos sobre arquitectura, numero de parametros, longitud de contexto, datos 
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
 
-Datos del repositorio (metadata publica de HuggingFace):
+Datos del repositorio (metadata publica de Hugging Face):
 
 | Campo | Valor |
 |---|---|
@@ -99,6 +99,6 @@ No disponible. La comparativa requiere, como minimo, conocer la categoria del mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Marlon123nsj/Chute-premiado
+- Repositorio en Hugging Face: https://huggingface.co/Marlon123nsj/Chute-premiado
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo: papers, blogs, repositorios de codigo, demos o espacios asociados. Los resultados devueltos por el buscador correspondian a paginas sin relacion con el repositorio (portales de preguntas y respuestas en chino sobre signos de puntuacion y sobre edicion de tablas en Word), por lo que se omiten.

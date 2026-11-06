@@ -2,7 +2,7 @@
 
 ## Resumen
 
-go-ocr es una biblioteca de reconocimiento optico de caracteres (OCR) escrita en Go que actua como envoltorio sobre modelos ONNX preentrenados de PaddleOCR y DdddOCR. No se trata de un modelo de lenguaje ni de un transformer generativo, sino de un conjunto de pesos de vision por computador distribuidos en formato ONNX junto con las librerias dinamicas de ONNX Runtime necesarias para su ejecucion. El repositorio en HuggingFace (GetcharZp/go-ocr) actua como almacen de artefactos: modelos de deteccion de texto (det.onnx), modelos de reconocimiento (rec.onnx), ficheros de diccionario (dict.txt) y binarios de ONNX Runtime para Linux, Windows y macOS.
+go-ocr es una biblioteca de reconocimiento optico de caracteres (OCR) escrita en Go que actua como envoltorio sobre modelos ONNX preentrenados de PaddleOCR y DdddOCR. No se trata de un modelo de lenguaje ni de un transformer generativo, sino de un conjunto de pesos de vision por computador distribuidos en formato ONNX junto con las librerias dinamicas de ONNX Runtime necesarias para su ejecucion. El repositorio en Hugging Face (GetcharZp/go-ocr) actua como almacen de artefactos: modelos de deteccion de texto (det.onnx), modelos de reconocimiento (rec.onnx), ficheros de diccionario (dict.txt) y binarios de ONNX Runtime para Linux, Windows y macOS.
 
 El problema que resuelve es la ausencia de una via sencilla para integrar OCR en aplicaciones escritas en Go. La mayoria de soluciones OCR de calidad (PaddleOCR, EasyOCR, Tesseract con bindings) estan orientadas a Python o C++, lo que complica su uso en servicios backend en Go. go-ocr expone una interfaz `ocr.Engine` con metodos `RunOCR()` (deteccion y reconocimiento completos) y `RunDetect()` (solo deteccion de regiones de texto), y permite seleccionar entre dos motores: PaddleOCR para documentos generales y DdddOCR para captchas.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Enfoque | Idiomas | Formato | Licencia | Integracion en Go | Disponibilidad |
 |---|---|---|---|---|---|---|
-| go-ocr (PaddleOCR/DdddOCR) | OCR deteccion + reconocimiento via ONNX | en, zh | ONNX + binarios runtime | MIT | Nativa | HuggingFace, ModelScope |
+| go-ocr (PaddleOCR/DdddOCR) | OCR deteccion + reconocimiento via ONNX | en, zh | ONNX + binarios runtime | MIT | Nativa | Hugging Face, ModelScope |
 | PaddleOCR (original) | OCR deteccion + reconocimiento | multi-idioma (segun modelo) | Paddle / ONNX | Apache 2.0 | Via cgo o servicio externo | GitHub, PaddlePaddle |
 | DdddOCR (original) | OCR orientado a captchas | en, zh | ONNX | MIT | No nativa | GitHub, PyPI |
 | Tesseract | OCR clasico con LSTM | multilingue | Modelos propios | Apache 2.0 | Bindings de terceros | GitHub, paquetes del sistema |
@@ -91,7 +91,7 @@ go-ocr no aporta un modelo nuevo sino un empaquetado de PaddleOCR y DdddOCR para
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GetcharZp/go-ocr
+- Hugging Face: https://huggingface.co/GetcharZp/go-ocr
 - Espejo en ModelScope: https://www.modelscope.cn/getcharzp/go-ocr
 - Repositorio GitHub: https://github.com/getcharzp/go-ocr
 - Documentacion en chino: https://github.com/getcharzp/go-ocr/blob/main/docs/README_zh.md

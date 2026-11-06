@@ -100,7 +100,7 @@ Dentro del mismo benchmark, los modelos más comparables por tamaño y propósit
 
 ResNet34 ofrece un equilibrio entre precisión y coste computacional, superando a modelos más ligeros (EfficientNet-B0, MobileNetV2) y quedando ligeramente por detrás de DenseNet121 en accuracy, aunque con mejor AUC que DenseNet121 (0,954 vs 0,984). Los modelos híbridos y custom del proyecto logran mejores resultados, pero con mayor complejidad.
 
-No se dispone de comparativas con modelos externos al proyecto (p. ej., otros checkpoints de clasificación de tumores cerebrales en HuggingFace) en la información proporcionada.
+No se dispone de comparativas con modelos externos al proyecto (p. ej., otros checkpoints de clasificación de tumores cerebrales en Hugging Face) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -114,7 +114,7 @@ No se dispone de comparativas con modelos externos al proyecto (p. ej., otros ch
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fatihaybasn/brainmri-ood-resnet34
+- Modelo en Hugging Face: https://huggingface.co/Fatihaybasn/brainmri-ood-resnet34
 - Repositorio del proyecto: https://github.com/fatihaybsn/BrainMRI-OOD-10Models
 - Commit de referencia: https://github.com/fatihaybsn/BrainMRI-OOD-10Models/commit/a9920408189230b886773a64d113eb35bcba1971
 - Archivo de citación: https://github.com/fatihaybsn/BrainMRI-OOD-10Models/blob/main/CITATION.cff

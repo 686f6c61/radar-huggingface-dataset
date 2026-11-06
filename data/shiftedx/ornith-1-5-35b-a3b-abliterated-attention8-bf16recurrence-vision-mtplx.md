@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo con estos modelos, ya que no s
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/Shiftedx/ornith-1.5-35b-a3b-abliterated-attention8-bf16recurrence-vision-mtplx)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/Shiftedx/ornith-1.5-35b-a3b-abliterated-attention8-bf16recurrence-vision-mtplx)
 - [Colección de quants Ornith 1.5 35B para Apple Silicon](https://huggingface.co/collections/Shiftedx/ornith-15-35b-a3b-apple-silicon-mlx-mtplx-quants)
 - [Página del modelo Ornith-1.5](https://ornith.ai/ornith_1_5.html)
 - [Sitio oficial de Ornith AI](https://ornith.ai/)

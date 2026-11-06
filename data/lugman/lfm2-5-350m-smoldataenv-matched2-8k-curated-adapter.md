@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-350M-SmolDataEnv-Matched2.8K-Curated-adapter es un ajuste fino (fine-tune) del modelo base LiquidAI/LFM2.5-350M, desarrollado por el usuario lugman y publicado en HuggingFace. Se trata de un modelo de generacion de texto de muy pequeno tamano (350 millones de parametros) que hereda la arquitectura LFM2 de Liquid AI, disenada para inferencia eficiente en dispositivos de borde. El ajuste se ha realizado sobre el modelo base con la libreria Unsloth, segun indica la model card, y se distribuye bajo licencia Apache 2.0.
+LFM2.5-350M-SmolDataEnv-Matched2.8K-Curated-adapter es un ajuste fino (fine-tune) del modelo base LiquidAI/LFM2.5-350M, desarrollado por el usuario lugman y publicado en Hugging Face. Se trata de un modelo de generacion de texto de muy pequeno tamano (350 millones de parametros) que hereda la arquitectura LFM2 de Liquid AI, disenada para inferencia eficiente en dispositivos de borde. El ajuste se ha realizado sobre el modelo base con la libreria Unsloth, segun indica la model card, y se distribuye bajo licencia Apache 2.0.
 
 El nombre del modelo sugiere que el ajuste se ha realizado sobre un subconjunto de datos curado de aproximadamente 2.800 muestras ("Matched2.8K-Curated"), aunque la model card no proporciona detalles sobre la composicion exacta del dataset, el numero de tokens de entrenamiento ni la metodologia de curacion. El repositorio tiene un tamano de 0.0 GB, lo que indica que los pesos no estan disponibles publicamente o el repositorio esta vacio en el momento de la consulta.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM2.5-350M-SmolDataEnv-Matched2.8K-Curated-adapter | 350M | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| LiquidAI/LFM2.5-350M (modelo base) | 350M | no disponible | no disponible en esta ficha | HuggingFace |
+| LFM2.5-350M-SmolDataEnv-Matched2.8K-Curated-adapter | 350M | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| LiquidAI/LFM2.5-350M (modelo base) | 350M | no disponible | no disponible en esta ficha | Hugging Face |
 | Otros fine-tunes de LFM2 | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo ni de modelos alternativos documentados en la informacion proporcionada.
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento comparativo ni de modelos alternativos doc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Curated-adapter
+- Hugging Face: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Curated-adapter
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Unsloth: https://github.com/unslothai/unsloth

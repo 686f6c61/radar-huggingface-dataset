@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mkgorka12/pl-sign-and-plate-detector` es un modelo publicado en HuggingFace por el usuario mkgorka12. La model card asociada está prácticamente vacía: únicamente contiene la declaración de licencia `cc-by-4.0`, sin descripción, sin instrucciones de uso y sin documentación técnica. El repositorio registra 0 descargas y 1 like en el momento de la consulta, y no tiene pipeline declarado en la plataforma.
+`mkgorka12/pl-sign-and-plate-detector` es un modelo publicado en Hugging Face por el usuario mkgorka12. La model card asociada está prácticamente vacía: únicamente contiene la declaración de licencia `cc-by-4.0`, sin descripción, sin instrucciones de uso y sin documentación técnica. El repositorio registra 0 descargas y 1 like en el momento de la consulta, y no tiene pipeline declarado en la plataforma.
 
 Por el identificador del repositorio ("pl-sign-and-plate-detector") cabe inferir que se trata de un detector de objetos orientado a señales de tráfico y matrículas de vehículos del contexto polaco ("pl" como código de país), pero esta interpretación es una deducción a partir del nombre y no está confirmada por ningún dato publicado por el autor. No hay información sobre arquitectura, tamaño, datos de entrenamiento ni formato de pesos.
 
@@ -67,7 +67,7 @@ No disponible. No es posible establecer comparaciones con alternativas de detecc
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mkgorka12/pl-sign-and-plate-detector | no disponible | no disponible | no disponible | cc-by-4.0 | HuggingFace, 0 descargas |
+| mkgorka12/pl-sign-and-plate-detector | no disponible | no disponible | no disponible | cc-by-4.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No disponible. No es posible establecer comparaciones con alternativas de detecc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mkgorka12/pl-sign-and-plate-detector
+- Hugging Face: https://huggingface.co/mkgorka12/pl-sign-and-plate-detector
 - Paper: no disponible
 - Blog o documentación adicional: no disponible
 - Repositorio de código: no disponible

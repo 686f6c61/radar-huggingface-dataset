@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cloud2Grid E5c (`e5c_ft_n10000_s2`) es un modelo de grafos para flujo de potencia en corriente alterna, desarrollado por el autor de HuggingFace `oriolh` en el marco del proyecto Cloud2Grid. Consiste en un ajuste fino de GENCO (`gridfm/genco-pf-transfer`, Puech et al., 2026), el modelo fundacional de flujo de potencia de GridFM, sobre 10.000 estados sintéticos de flujo de potencia AC de la red reconstruida de Sundon de 33 kV (UK Power Networks). La arquitectura es la original de GENCO, `GNS_heterogeneous` de GraphKit, sin cambios; solo se han modificado los pesos.
+Cloud2Grid E5c (`e5c_ft_n10000_s2`) es un modelo de grafos para flujo de potencia en corriente alterna, desarrollado por el autor de Hugging Face `oriolh` en el marco del proyecto Cloud2Grid. Consiste en un ajuste fino de GENCO (`gridfm/genco-pf-transfer`, Puech et al., 2026), el modelo fundacional de flujo de potencia de GridFM, sobre 10.000 estados sintéticos de flujo de potencia AC de la red reconstruida de Sundon de 33 kV (UK Power Networks). La arquitectura es la original de GENCO, `GNS_heterogeneous` de GraphKit, sin cambios; solo se han modificado los pesos.
 
 El modelo resuelve la predicción del estado absoluto de la red (tensiones, residuos activos, potencia de importación) a partir de una representación en grafo heterogéneo, con la generación local solar y eólica modelada como nodos generadores explícitos (Leighton Buzzard). Es relevante como **línea base congelada** del estudio: su ajuste absoluto es razonable, pero en los experimentos evaluados responde muy débilmente a los cambios de generación solar, lo que motivó el desarrollo del modelo E5d, sensible a la respuesta.
 
@@ -88,9 +88,9 @@ La tabla de comparación E5d frente a AC que aparece en la model card está trun
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cloud2Grid E5c (`oriolh/cloud2grid-e5c-ft-n10000-s2`) | no disponible | no aplica | PBE 0,614 MVA; MAE importación 13,6 MW; respuesta solar 0,014 de la referencia AC | Apache-2.0 | HuggingFace, release `cloud2grid-models-v1` |
-| GENCO (`gridfm/genco-pf-transfer`) | no disponible | no aplica | Modelo base preentrenado; sin métricas específicas de Sundon en la información disponible | Apache-2.0 | HuggingFace |
-| Cloud2Grid E5d (`oriolh/cloud2grid-e5d-l1-s0`) | no disponible | no aplica | Variante sensible a la respuesta, diseñada para corregir la debilidad de E5c; métricas comparativas truncadas en la información disponible | no disponible en la información | HuggingFace, release `cloud2grid-models-v1` |
+| Cloud2Grid E5c (`oriolh/cloud2grid-e5c-ft-n10000-s2`) | no disponible | no aplica | PBE 0,614 MVA; MAE importación 13,6 MW; respuesta solar 0,014 de la referencia AC | Apache-2.0 | Hugging Face, release `cloud2grid-models-v1` |
+| GENCO (`gridfm/genco-pf-transfer`) | no disponible | no aplica | Modelo base preentrenado; sin métricas específicas de Sundon en la información disponible | Apache-2.0 | Hugging Face |
+| Cloud2Grid E5d (`oriolh/cloud2grid-e5d-l1-s0`) | no disponible | no aplica | Variante sensible a la respuesta, diseñada para corregir la debilidad de E5c; métricas comparativas truncadas en la información disponible | no disponible en la información | Hugging Face, release `cloud2grid-models-v1` |
 
 No se han identificado en la información proporcionada otros modelos comparables de flujo de potencia sobre grafos para esta red concreta.
 
@@ -109,7 +109,7 @@ No se han identificado en la información proporcionada otros modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oriolh/cloud2grid-e5c-ft-n10000-s2
+- Modelo en Hugging Face: https://huggingface.co/oriolh/cloud2grid-e5c-ft-n10000-s2
 - Modelo base GENCO: https://huggingface.co/gridfm/genco-pf-transfer
 - Paper de GENCO (Puech et al., 2026): https://arxiv.org/abs/2608.09921
 - Sitio web del proyecto Cloud2Grid: https://hinox13.github.io/grid2cloud/
@@ -120,4 +120,4 @@ No se han identificado en la información proporcionada otros modelos comparable
 - Modelo E5d (variante sensible a la respuesta): https://huggingface.co/oriolh/cloud2grid-e5d-l1-s0
 - Registro congelado del checkpoint: `metadata/e5c_checkpoint_registry.yaml` en el repositorio de código, etiqueta `cloud2grid-submission-v1`
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de la información de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de la información de Hugging Face.

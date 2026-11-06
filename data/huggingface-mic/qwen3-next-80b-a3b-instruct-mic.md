@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-Next-80B-A3B-Instruct-mic (este) | 19,7M (fixture) | no disponible | Artefacto de test | no disponible | HuggingFace (225 descargas) |
-| Qwen/Qwen3-Next-80B-A3B-Instruct | ~80B (A3B, MoE) | no disponible | Modelo instructivo real | no disponible | HuggingFace |
-| Otros fixtures `*-mic` de huggingface-mic | variable (reducidos) | no disponible | Artefactos de test | no disponible | HuggingFace |
+| Qwen3-Next-80B-A3B-Instruct-mic (este) | 19,7M (fixture) | no disponible | Artefacto de test | no disponible | Hugging Face (225 descargas) |
+| Qwen/Qwen3-Next-80B-A3B-Instruct | ~80B (A3B, MoE) | no disponible | Modelo instructivo real | no disponible | Hugging Face |
+| Otros fixtures `*-mic` de huggingface-mic | variable (reducidos) | no disponible | Artefactos de test | no disponible | Hugging Face |
 
 La comparativa relevante es con el modelo base: el fixture comparte arquitectura, tokenizador y nombres de tensores, pero sustituye los pesos entrenados por pesos aleatorios y reduce las capas a 2. Frente a otros fixtures de la misma organizacion, la diferencia es la arquitectura cubierta (Qwen3-Next frente a otras familias).
 
@@ -81,7 +81,7 @@ La comparativa relevante es con el modelo base: el fixture comparte arquitectura
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huggingface-mic/Qwen3-Next-80B-A3B-Instruct-mic
+- Modelo en Hugging Face: https://huggingface.co/huggingface-mic/Qwen3-Next-80B-A3B-Instruct-mic
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct
 - Manifiesto de contrato: https://huggingface.co/huggingface-mic/Qwen3-Next-80B-A3B-Instruct-mic/blob/main/integration.json
 - Uso con Transformers: https://huggingface.co/huggingface-mic/Qwen3-Next-80B-A3B-Instruct-mic/blob/main/integrations/transformers/usage.md

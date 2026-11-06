@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su ligereza y su capacidad multilingüe, 
 
 El modelo original `Qwen3-Embedding-0.6B` es un modelo de embeddings densos construido sobre la arquitectura decoder de Qwen3. A diferencia de los modelos encoder tradicionales, Qwen3-Embedding utiliza un decoder con atención causal, pero adaptado para generar representaciones de texto mediante el estado oculto del último token no padding, seguido de normalización L2. Esta técnica permite obtener vectores de alta calidad para tareas de recuperación.
 
-La conversión a ONNX realizada por Qdrant no modifica los pesos ni el entrenamiento del modelo original. Se trata de una exportación directa del checkpoint de HuggingFace, con dos ajustes en la configuración: `model_max_length` se establece en 32768 para coincidir con la longitud máxima de las posiciones del modelo, y se define `pad_token_id` en `config.json`. El pooling y la normalización no forman parte del grafo ONNX; FastEmbed los aplica después de la inferencia. La versión cuantizada utiliza cuantización solo de pesos (weight-only) mediante `MatMulNBitsQuantizer` de ONNX Runtime, con un tamaño de bloque de 32, lo que reduce el tamaño del modelo de 2.38 GB a 1.12 GB sin una pérdida significativa de precisión.
+La conversión a ONNX realizada por Qdrant no modifica los pesos ni el entrenamiento del modelo original. Se trata de una exportación directa del checkpoint de Hugging Face, con dos ajustes en la configuración: `model_max_length` se establece en 32768 para coincidir con la longitud máxima de las posiciones del modelo, y se define `pad_token_id` en `config.json`. El pooling y la normalización no forman parte del grafo ONNX; FastEmbed los aplica después de la inferencia. La versión cuantizada utiliza cuantización solo de pesos (weight-only) mediante `MatMulNBitsQuantizer` de ONNX Runtime, con un tamaño de bloque de 32, lo que reduce el tamaño del modelo de 2.38 GB a 1.12 GB sin una pérdida significativa de precisión.
 
 El entrenamiento del modelo original se realizó con datos multilingües extensos, aunque los detalles específicos del corpus no se proporcionan en la información disponible. Se sabe que el modelo soporta más de 100 idiomas y que fue optimizado para tareas de recuperación, con instrucciones de tarea recomendadas para consultas (query) que mejoran la calidad de los embeddings en 1-5% según la documentación original.
 
@@ -90,7 +90,7 @@ La comparativa se basa en caracteristicas generales, ya que no se dispone de res
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Qdrant/Qwen3-Embedding-0.6B-onnx
+- Repositorio Hugging Face: https://huggingface.co/Qdrant/Qwen3-Embedding-0.6B-onnx
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Repositorio GitHub de Qwen3-Embedding: https://github.com/QwenLM/Qwen3-Embedding
 - Libreria FastEmbed: https://github.com/qdrant/fastembed

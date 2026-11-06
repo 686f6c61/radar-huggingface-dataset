@@ -21,7 +21,7 @@ Dado su tamano y su origen, se puede ejecutar en CPU o en cualquier GPU consumer
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
-El modelo es un transformer decoder-only de tipo GPT-2. La etiqueta `gpt2` de HuggingFace y el hecho de partir de `goldfish-models/nld_latn_100mb` confirman una arquitectura densa autoregresiva con atencion causal, sin mezcla de expertos ni componentes de estado recurrente (SSM). El modelo base pertenece a la coleccion Goldfish, orientada a lenguas con pocos recursos, y fue entrenado de forma monolingue sobre aproximadamente 100 MB de texto en neerlandes. El ajuste fino se realizo con SFT (supervised fine-tuning) usando TRL 0.23.0, Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1.
+El modelo es un transformer decoder-only de tipo GPT-2. La etiqueta `gpt2` de Hugging Face y el hecho de partir de `goldfish-models/nld_latn_100mb` confirman una arquitectura densa autoregresiva con atencion causal, sin mezcla de expertos ni componentes de estado recurrente (SSM). El modelo base pertenece a la coleccion Goldfish, orientada a lenguas con pocos recursos, y fue entrenado de forma monolingue sobre aproximadamente 100 MB de texto en neerlandes. El ajuste fino se realizo con SFT (supervised fine-tuning) usando TRL 0.23.0, Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1.
 
 No se documenta en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset de ajuste, ni si se aplicaron tecnicas de RLHF o DPO. La model card unicamente indica que el entrenamiento fue por SFT y enlaza una traza de Weights & Biases alojada en el proyecto `f-padovani-university-of-groningen/white_cotterell`. El sufijo `uniform` del nombre sugiere una estrategia de muestreo uniforme en la construccion del dataset, y `seed10` indica la semilla aleatoria empleada, lo que apunta a un diseno experimental reproducible, pero estos detalles no se confirman en la documentacion.
 
@@ -57,11 +57,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `fpadovani/ppt-nld_uniform-100mb_seed10` | ~87 M | no disponible | no disponible | HuggingFace | Ajuste SFT sobre base neerlandes Goldfish |
-| `goldfish-models/nld_latn_100mb` | ~86 M (base) | no disponible | no disponible | HuggingFace | Modelo base monolingue neerlandes de la coleccion Goldfish |
-| GPT-2 small | 124 M | 1024 | MIT (segun publicacion original) | HuggingFace | Referencia generalista en ingles |
-| DistilGPT-2 | 82 M | 1024 | MIT | HuggingFace | Destilado de GPT-2, orientado a ingles |
-| GroNLP/gpt2-small-dutch | ~124 M | 1024 | no disponible | HuggingFace | Alternativa en neerlandes derivada de GPT-2 |
+| `fpadovani/ppt-nld_uniform-100mb_seed10` | ~87 M | no disponible | no disponible | Hugging Face | Ajuste SFT sobre base neerlandes Goldfish |
+| `goldfish-models/nld_latn_100mb` | ~86 M (base) | no disponible | no disponible | Hugging Face | Modelo base monolingue neerlandes de la coleccion Goldfish |
+| GPT-2 small | 124 M | 1024 | MIT (segun publicacion original) | Hugging Face | Referencia generalista en ingles |
+| DistilGPT-2 | 82 M | 1024 | MIT | Hugging Face | Destilado de GPT-2, orientado a ingles |
+| GroNLP/gpt2-small-dutch | ~124 M | 1024 | no disponible | Hugging Face | Alternativa en neerlandes derivada de GPT-2 |
 
 La comparacion es orientativa, ya que no se dispone de datos de benchmarks del modelo principal ni de una evaluacion homogenea frente a las alternativas. La principal diferencia radica en que este modelo es un ajuste supervisado de un modelo base entrenado especificamente en neerlandes con un corpus reducido (100 MB), mientras que las alternativas en la tabla son modelos generalistas o destilados en ingles o neerlandes con volumenes de entrenamiento superiores.
 
@@ -74,8 +74,8 @@ La comparacion es orientativa, ya que no se dispone de datos de benchmarks del m
 - Falta de soporte de herramientas: no se documenta function calling, tool calling ni uso como agente, por lo que no es adecuado para flujos que dependan de estas capacidades.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-nld_uniform-100mb_seed10
-- Modelo base en HuggingFace: https://huggingface.co/goldfish-models/nld_latn_100mb
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-nld_uniform-100mb_seed10
+- Modelo base en Hugging Face: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Traza de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/utpy29us
 - Repositorio de la coleccion Goldfish (referencia generica): https://github.com/goldfish-models

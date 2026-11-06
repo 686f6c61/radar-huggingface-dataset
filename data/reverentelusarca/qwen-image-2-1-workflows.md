@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, `reverentelusarca/qwen-image-2.1-workflows`, no contiene un modelo de pesos: es una coleccion de flujos de trabajo (workflows) para ComfyUI disenados para usar Qwen-Image-2.1 como metodo de reescalado y mejora de detalle sin recurrir a nodos upscaler adicionales ni a LoRAs. El autor publica el flujo con nodos de Math Expression que recalculan automaticamente la resolucion de salida preservando la relacion de aspecto del imagen de entrada.
+Este repositorio de Hugging Face, `reverentelusarca/qwen-image-2.1-workflows`, no contiene un modelo de pesos: es una coleccion de flujos de trabajo (workflows) para ComfyUI disenados para usar Qwen-Image-2.1 como metodo de reescalado y mejora de detalle sin recurrir a nodos upscaler adicionales ni a LoRAs. El autor publica el flujo con nodos de Math Expression que recalculan automaticamente la resolucion de salida preservando la relacion de aspecto del imagen de entrada.
 
 La idea central es aprovechar la generacion nativa en 2K de Qwen-Image-2.1 y aplicar un presupuesto de pixeles de aproximadamente 2048x2048 en total (unos 4,2 MP) en lugar de limitar cada lado a 2048 px. Con ese criterio, una imagen 16:9 acaba en torno a 2730x1536, cifra proxima a la resolucion 16:9 recomendada oficialmente por Qwen (2752x1536). El repositorio incluye ademas el prompt generico utilizado, con indicaciones sobre como ajustarlo si aparecen grano, ruido o artefactos.
 
@@ -94,7 +94,7 @@ Las dos ultimas filas se incluyen como categoria generica de comparacion, ya que
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/reverentelusarca/qwen-image-2.1-workflows
+- Repositorio en Hugging Face: https://huggingface.co/reverentelusarca/qwen-image-2.1-workflows
 - Imagen de ejemplo del flujo incluida en la model card: https://cdn-uploads.huggingface.co/production/uploads/661d56bdbca423783d3184d9/Tuour0YTAaIb8m1-cqYDr.jpeg
 - Ejemplo de prompt detallado para retratos: https://cdn-uploads.huggingface.co/production/uploads/661d56bdbca423783d3184d9/1LGDtx2ZdhIoNfwJTuipt.jpeg
 - Otros ejemplos de resultado incluidos en la model card: https://cdn-uploads.huggingface.co/production/uploads/661d56bdbca423783d3184d9/VMoNhg3sPNylhaA04rgp4.jpeg, https://cdn-uploads.huggingface.co/production/uploads/661d56bdbca423783d3184d9/Oj9QyUFYaOiB3MXH272ar.jpeg, https://cdn-uploads.huggingface.co/production/uploads/661d56bdbca423783d3184d9/zaFx1dWcCA2pav3XIuZZs.jpeg, https://cdn-uploads.huggingface.co/production/uploads/661d56bdbca423783d3184d9/VXQRIVZB_oTBs0QDG3mjq.jpeg, https://cdn-uploads.huggingface.co/production/uploads/661d56bdbca423783d3184d9/lKMFqXSMKWC0C_xclg4Yx.jpeg

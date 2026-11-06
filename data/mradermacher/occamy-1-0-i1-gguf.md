@@ -21,20 +21,20 @@ La relevancia de este repositorio es practica: permite ejecutar occamy-1.0 en ha
 | Licencia | no disponible |
 | Formato de pesos | GGUF (repo de cuantizaciones; el modelo base usa safetensors) |
 | Tamano del repositorio | 48,5 GB |
-| Fecha de creacion | 2026-09-10 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-10 (segun metadatos de Hugging Face) |
 | Fecha de actualizacion | 2026-09-10 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna de occamy-1.0 en la informacion proporcionada: ni la model card del repositorio GGUF ni los metadatos de HuggingFace indican si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida con atencion lineal/SSM o cualquier otra variante. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de ajuste fino supervisado, RLHF o DPO.
+No se dispone de informacion sobre la arquitectura interna de occamy-1.0 en la informacion proporcionada: ni la model card del repositorio GGUF ni los metadatos de Hugging Face indican si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida con atencion lineal/SSM o cualquier otra variante. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de ajuste fino supervisado, RLHF o DPO.
 
 Lo unico verificable tecnicamente es el proceso de cuantizacion. El repositorio es una conversion a GGUF del modelo `Accio-Lab/occamy-1.0`, con `convert_type: hf` y `quantize_version: 2`, que cubre desde cuantizaciones extremas de 1-2 bits (IQ1_S, IQ1_M, IQ2_XXS) hasta Q6_K. El uso de imatrix implica que los errores de cuantizacion se ponderan por la importancia de cada peso, estimada a partir de estadisticas de activacion; en la practica esto mejora la fidelidad de las variantes de baja precision (Q2, Q3, IQ2, IQ3) frente a cuantizaciones sin calibracion, aunque no elimina la degradacion en los niveles mas agresivos.
 
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo base esta orientado a dialogos multi-turno.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el artefacto puede servirse a traves de infraestructura de inferencia estandar (por ejemplo, endpoints compatibles con OpenAI en HuggingFace o servidores GGUF).
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el artefacto puede servirse a traves de infraestructura de inferencia estandar (por ejemplo, endpoints compatibles con OpenAI en Hugging Face o servidores GGUF).
 - Razonamiento, codigo, matematicas, vision o audio: no disponible; no se declara ninguna capacidad especifica en la informacion proporcionada.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.

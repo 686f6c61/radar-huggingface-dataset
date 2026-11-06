@@ -91,6 +91,6 @@ Modelos anteriores del mismo autor, como `NexusDwin/sailswarm-yolov8n-konstanz`,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NexusDwin/sailswarm-yolo-audited
+- Hugging Face: https://huggingface.co/NexusDwin/sailswarm-yolo-audited
 - La model card menciona el repositorio `SailSwarm-ObstacleDetection` con scripts de entrenamiento y despliegue, pero no se proporciona una URL publica en la informacion disponible.
 - La busqueda web realizada no arrojo enlaces adicionales relevantes.

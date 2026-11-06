@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NepTrans v4 es un adaptador LoRA para el modelo de reconocimiento automático del habla `openai/whisper-large-v3`, desarrollado por el usuario DontHash y publicado en HuggingFace. Su objetivo es la transcripción de voz en nepalí y en conversaciones que alternan nepalí e inglés (code-switching), un escenario que el Whisper original cubre de forma deficiente porque el nepalí es un idioma de bajos recursos en la distribución de entrenamiento de OpenAI. El adaptador se publica como pesos PEFT en safetensors de aproximadamente 115,5 MB, con rango 16, alpha 32 y dropout 0,05, aplicado sobre los módulos de atención (`q_proj`, `k_proj`, `v_proj`, `out_proj`) y las capas feed-forward (`fc1`, `fc2`) del modelo base.
+NepTrans v4 es un adaptador LoRA para el modelo de reconocimiento automático del habla `openai/whisper-large-v3`, desarrollado por el usuario DontHash y publicado en Hugging Face. Su objetivo es la transcripción de voz en nepalí y en conversaciones que alternan nepalí e inglés (code-switching), un escenario que el Whisper original cubre de forma deficiente porque el nepalí es un idioma de bajos recursos en la distribución de entrenamiento de OpenAI. El adaptador se publica como pesos PEFT en safetensors de aproximadamente 115,5 MB, con rango 16, alpha 32 y dropout 0,05, aplicado sobre los módulos de atención (`q_proj`, `k_proj`, `v_proj`, `out_proj`) y las capas feed-forward (`fc1`, `fc2`) del modelo base.
 
 No es un modelo autónomo: para inferir hay que cargar también el checkpoint `openai/whisper-large-v3` (unos 1.550 millones de parámetros, revisión fijada `06f233fe06e710322aca913c1bc4249a0d71fce1`) y su procesador. El autor distribuye además una release fusionada en CTranslate2 (`DontHash/neptrans-v4-ct2`) pensada para transcripción autoalojada sin gestionar PEFT.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Ventana de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DontHash/neptrans-v4-lora | ~1,55B (base) + 115,5 MB de adaptador | 30 s | nepalí, inglés, code-switching | Apache 2.0 | HuggingFace (adaptador PEFT) |
-| DontHash/neptrans-v4-ct2 | ~1,55B fusionados | 30 s | nepalí, inglés, code-switching | Apache 2.0 | HuggingFace (CTranslate2) |
-| openai/whisper-large-v3 | ~1,55B | 30 s | ~99 idiomas, nepalí incluido sin ajuste específico | Apache 2.0 | HuggingFace |
-| openai/whisper-medium | ~769M | 30 s | multilingüe, nepalí incluido sin ajuste específico | Apache 2.0 | HuggingFace |
+| DontHash/neptrans-v4-lora | ~1,55B (base) + 115,5 MB de adaptador | 30 s | nepalí, inglés, code-switching | Apache 2.0 | Hugging Face (adaptador PEFT) |
+| DontHash/neptrans-v4-ct2 | ~1,55B fusionados | 30 s | nepalí, inglés, code-switching | Apache 2.0 | Hugging Face (CTranslate2) |
+| openai/whisper-large-v3 | ~1,55B | 30 s | ~99 idiomas, nepalí incluido sin ajuste específico | Apache 2.0 | Hugging Face |
+| openai/whisper-medium | ~769M | 30 s | multilingüe, nepalí incluido sin ajuste específico | Apache 2.0 | Hugging Face |
 
 No se dispone de comparativas cuantitativas de WER frente a otros ajustes de Whisper para nepalí (por ejemplo, modelos de AI4Bharat o NeMo), por lo que la comparación se limita a parámetros, idiomas y licencia.
 
@@ -95,7 +95,7 @@ No se dispone de comparativas cuantitativas de WER frente a otros ajustes de Whi
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/DontHash/neptrans-v4-lora
+- Adaptador en Hugging Face: https://huggingface.co/DontHash/neptrans-v4-lora
 - Release fusionada en CTranslate2: https://huggingface.co/DontHash/neptrans-v4-ct2
 - Código fuente y guía de autoalojamiento: https://github.com/DontHash/neptrans-asr
 - Modelo base: https://huggingface.co/openai/whisper-large-v3

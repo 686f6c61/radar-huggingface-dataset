@@ -6,7 +6,7 @@ Origa Judge v7 es un adaptador LoRA de rango 16 y alpha 32 entrenado sobre el mo
 
 El interés del modelo radica en su especialización multilingüe en seis idiomas (japonés, ruso, inglés, vietnamita, coreano y chino en variantes Hans y Hant-TW) y en su reducido coste computacional: el adaptador pesa aproximadamente 0,1 GB y se apoya en un modelo base de 2B parámetros. Esto lo hace desplegable en hardware modesto, incluidas GPU de consumo, y adecuado para pipelines de control de calidad en producción.
 
-La relevancia actual del modelo es acotada: se publicó en noviembre de 2026, no registra descargas ni interacciones en HuggingFace y su model card documenta varias limitaciones técnicas conocidas, como la incompatibilidad con la API `system_one` del modelo base y la distorsión de lecturas por el fichero `calibration.json` original. Es, por tanto, una herramienta experimental orientada a un caso de uso muy concreto.
+La relevancia actual del modelo es acotada: se publicó en noviembre de 2026, no registra descargas ni interacciones en Hugging Face y su model card documenta varias limitaciones técnicas conocidas, como la incompatibilidad con la API `system_one` del modelo base y la distorsión de lecturas por el fichero `calibration.json` original. Es, por tanto, una herramienta experimental orientada a un caso de uso muy concreto.
 
 ## Especificaciones técnicas
 
@@ -72,8 +72,8 @@ No se dispone de información sobre modelos jueces de traducción comparables en
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Origa Judge v7 | Adaptador LoRA sobre base 2B | No disponible | Juez de calidad de traducción | Apache 2.0 | HuggingFace (0 descargas) |
-| LiquidAI/d1-2B | 2B | No disponible | Modelo base de propósito general | No disponible en la información | HuggingFace |
+| Origa Judge v7 | Adaptador LoRA sobre base 2B | No disponible | Juez de calidad de traducción | Apache 2.0 | Hugging Face (0 descargas) |
+| LiquidAI/d1-2B | 2B | No disponible | Modelo base de propósito general | No disponible en la información | Hugging Face |
 
 No disponible para el resto de alternativas de la misma categoría.
 
@@ -90,6 +90,6 @@ No disponible para el resto de alternativas de la misma categoría.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/yurvon-screamo/origa-judge-v7
+- Hugging Face del modelo: https://huggingface.co/yurvon-screamo/origa-judge-v7
 - Modelo base: https://huggingface.co/LiquidAI/d1-2B
 - Código de referencia RAW-readout: https://github.com/yurvon-screamo/origa/tree/master/translator/judge

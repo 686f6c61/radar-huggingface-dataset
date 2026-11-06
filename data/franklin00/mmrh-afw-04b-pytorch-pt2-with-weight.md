@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-afw-04b-pytorch-pt2-with-weight` es un artefacto de investigación en seguridad publicado en HuggingFace, no un modelo de lenguaje utilizable. Según su model card, se trata de un "espécimen de escáner inerte" (*inert scanner specimen*) diseñado para preservar el vector de metadatos de un hallazgo de seguridad concreto: un nombre de entrada zip malicioso en un fichero `.pt2` (AOTInductor de PyTorch 2), clasificado como *zip slip* (AFW). El autor lo etiqueta explícitamente con `security-research` y `not-for-production`.
+`FrankLin00/mmrh-afw-04b-pytorch-pt2-with-weight` es un artefacto de investigación en seguridad publicado en Hugging Face, no un modelo de lenguaje utilizable. Según su model card, se trata de un "espécimen de escáner inerte" (*inert scanner specimen*) diseñado para preservar el vector de metadatos de un hallazgo de seguridad concreto: un nombre de entrada zip malicioso en un fichero `.pt2` (AOTInductor de PyTorch 2), clasificado como *zip slip* (AFW). El autor lo etiqueta explícitamente con `security-research` y `not-for-production`.
 
 El repositorio contiene pesos en formato `safetensors` con un recuento de parámetros de 4, lo que confirma que no hay un modelo neuronal real detrás: es un contenedor de prueba que reproduce la estructura de metadatos vulnerable para que investigadores puedan validar escáneres y herramientas de detección. La carga útil (*payload*) es literalmente la cadena `PWNED-INERT`, y cualquier sonda activa se limita a ejecutar `whoami` en forma de argv (nunca con `shell=True`), escribiendo la salida en una variable de entorno bajo `/tmp` o `$TMPDIR`, sin acceso a credenciales ni operaciones de red.
 
@@ -72,5 +72,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FrankLin00/mmrh-afw-04b-pytorch-pt2-with-weight
+- Hugging Face: https://huggingface.co/FrankLin00/mmrh-afw-04b-pytorch-pt2-with-weight
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la búsqueda web proporcionada.

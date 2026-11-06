@@ -97,6 +97,6 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en tareas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sonorix/pulsar-v0.8-flash-gguf
+- Repositorio Hugging Face: https://huggingface.co/Sonorix/pulsar-v0.8-flash-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - No se han encontrado papers, blogs tecnicos, repositorios adicionales ni demos asociados a este modelo en la busqueda web realizada; los resultados obtenidos corresponden a paginas genericas de servicios no relacionados con el modelo.

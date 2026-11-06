@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-Abliterated-Cybersecurity-Unleashed es un ajuste fino publicado por el usuario drowzeys sobre deepseek-ai/DeepSeek-V4.1-Flash, el modelo multimodal de DeepSeek. Se distribuye en HuggingFace con licencia MIT declarada, acceso restringido (gated) y soporte de ingles y chino, y segun sus etiquetas esta orientado a ciberseguridad, con las tecnicas de abliteration y uncensored aplicadas para reducir los mecanismos de rechazo del modelo base.
+DeepSeek-V4.1-Flash-Abliterated-Cybersecurity-Unleashed es un ajuste fino publicado por el usuario drowzeys sobre deepseek-ai/DeepSeek-V4.1-Flash, el modelo multimodal de DeepSeek. Se distribuye en Hugging Face con licencia MIT declarada, acceso restringido (gated) y soporte de ingles y chino, y segun sus etiquetas esta orientado a ciberseguridad, con las tecnicas de abliteration y uncensored aplicadas para reducir los mecanismos de rechazo del modelo base.
 
 El repositorio ocupa 1,1 GB y las etiquetas apuntan a una arquitectura de tipo MoE (mixture of experts), pesos en FP8 y formatos EXL3 y TR3, con compatibilidad declarada con vLLM y con hardware DGX Spark / GB10. No se especifican en la informacion disponible el numero de parametros totales ni activos, la longitud de contexto, el volumen de tokens de entrenamiento ni la composicion del dataset.
 
@@ -80,12 +80,12 @@ No se identifican en la busqueda web otros modelos comparables con datos verific
 - Idiomas limitados: solo ingles y chino declarados, sin garantias de comportamiento en castellano.
 - Contexto e inferencia desconocidos: se desconoce la ventana de contexto, lo que impide planificar cargas de trabajo con documentos largos.
 - Licencia: el repositorio declara MIT, pero al derivar de un modelo base de DeepSeek podrian aplicar terminos adicionales del modelo original. Conviene verificar ambas licencias antes de un uso comercial.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que anade una capa de control pero no garantiza trazabilidad del uso posterior.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que anade una capa de control pero no garantiza trazabilidad del uso posterior.
 - Repositorio de 1,1 GB: el tamano es inusualmente pequeno para un modelo MoE multimodal completo; conviene confirmar que contiene todos los ficheros necesarios antes de planificar un despliegue.
 - Sin mantenimiento verificado: la ficha se creo y actualizo el 13 de septiembre de 2026, sin historial posterior conocido.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/drowzeys/DeepSeek-V4.1-Flash-Abliterated-Cybersecurity-Unleashed
+- Hugging Face del modelo: https://huggingface.co/drowzeys/DeepSeek-V4.1-Flash-Abliterated-Cybersecurity-Unleashed
 - Modelo base declarado (ID `deepseek-ai/DeepSeek-V4.1-Flash`): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales relevantes para este modelo.

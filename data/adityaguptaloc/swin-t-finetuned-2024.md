@@ -59,11 +59,11 @@ No disponible. No existen datos de rendimiento de este modelo, y al ser un check
 - **No es un modelo entrenado**: el checkpoint es de inicialización, por lo que no produce resultados útiles para tareas reales sin un entrenamiento previo.
 - **Sin garantías de robustez o equidad**: el autor indica que el checkpoint no ha sido auditado para robustez, fairness ni transferencia de dominio.
 - **Riesgo de alucinación o comportamiento errático**: al no estar entrenado, las salidas serán arbitrarias y no fiables.
-- **Implementación no estándar**: las APIs genéricas de HuggingFace no cargan el modelo directamente; se requiere un adaptador explícito, lo que dificulta su integración en pipelines existentes.
+- **Implementación no estándar**: las APIs genéricas de Hugging Face no cargan el modelo directamente; se requiere un adaptador explícito, lo que dificulta su integración en pipelines existentes.
 - **Licencia**: aunque la licencia es Apache-2.0, el autor recomienda revisar los términos de los datos fuente si se usan conjuntos de datos externos.
 - **Uso en producción desaconsejado**: no debe emplearse en aplicaciones reales sin un entrenamiento y validación exhaustivos.
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/adityaguptaloc/swin-t-finetuned-2024)
+- [Repositorio Hugging Face](https://huggingface.co/adityaguptaloc/swin-t-finetuned-2024)
 - [Repositorio oficial Swin Transformer (GitHub)](https://github.com/SwinTransformer)

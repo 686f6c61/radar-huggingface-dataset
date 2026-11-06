@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WolverineGame_240e_48240s es un checkpoint publicado en HuggingFace por el usuario Homiebear bajo licencia OpenRAIL. El nombre del repositorio sugiere un modelo orientado a videojuegos (posiblemente un modelo de difusion o de generacion de contenido para el personaje Wolverine), con un entrenamiento de 240 epocas y 48.240 pasos, aunque esta interpretacion no esta confirmada por el autor. El repositorio no incluye model card descriptiva mas alla del campo de licencia, no declara pipeline, idiomas ni arquitectura.
+WolverineGame_240e_48240s es un checkpoint publicado en Hugging Face por el usuario Homiebear bajo licencia OpenRAIL. El nombre del repositorio sugiere un modelo orientado a videojuegos (posiblemente un modelo de difusion o de generacion de contenido para el personaje Wolverine), con un entrenamiento de 240 epocas y 48.240 pasos, aunque esta interpretacion no esta confirmada por el autor. El repositorio no incluye model card descriptiva mas alla del campo de licencia, no declara pipeline, idiomas ni arquitectura.
 
 El tamano del repositorio es de aproximadamente 0,7 GB, lo que es coherente con un checkpoint de difusion (LoRA o modelo completo de rango bajo) o con un modelo de lenguaje de menos de 1000 millones de parametros en precision reducida, pero no permite determinar con certeza la familia arquitectonica. El modelo no registra descargas ni likes en el momento de la consulta y fue creado el 27 de octubre de 2026.
 
@@ -74,5 +74,5 @@ No disponible. No se puede establecer una comparativa fiable sin conocer la arqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Homiebear/WolverineGame_240e_48240s
+- Hugging Face: https://huggingface.co/Homiebear/WolverineGame_240e_48240s
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

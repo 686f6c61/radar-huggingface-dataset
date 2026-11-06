@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfd_seed10` es un ajuste fino (SFT) del checkpoint `goldfish-models/eng_latn_100mb`, un modelo base de la familia Goldfish orientado al ingles con un presupuesto de entrenamiento de 100 MB de texto. Lo desarrolla el usuario de HuggingFace `francesca9805` en el contexto de un proyecto de investigacion sobre tokenizadores (el espacio de trabajo de Weights & Biases asociado se llama `new-tokenizers`), y el nombre del checkpoint sugiere variantes de preprocesado y empaquetado de secuencias (terminos como `uniform`, `newlex`, `packed`, `bfd`, `seed10`).
+El modelo `francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfd_seed10` es un ajuste fino (SFT) del checkpoint `goldfish-models/eng_latn_100mb`, un modelo base de la familia Goldfish orientado al ingles con un presupuesto de entrenamiento de 100 MB de texto. Lo desarrolla el usuario de Hugging Face `francesca9805` en el contexto de un proyecto de investigacion sobre tokenizadores (el espacio de trabajo de Weights & Biases asociado se llama `new-tokenizers`), y el nombre del checkpoint sugiere variantes de preprocesado y empaquetado de secuencias (terminos como `uniform`, `newlex`, `packed`, `bfd`, `seed10`).
 
 Tecnicamente es un transformer decoder-only de tipo GPT-2 con 86.508.288 parametros (unos 86,5 millones), pesos en safetensors y un tamano de repositorio de 0,2 GB. No incorpora atencion lineal, MoE ni mecanismos hibridos: es una arquitectura densa clasica, entrenada con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.5.1.
 
@@ -12,12 +12,12 @@ Su relevancia es acotada y de caracter experimental: se trata de un artefacto de
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (segun el tag `gpt2` de HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (segun el tag `gpt2` de Hugging Face) |
 | Parametros totales | 86.508.288 (aproximadamente 86,5 M) |
 | Parametros activos | no aplica (modelo denso, no es MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada |
 | Tipos de cuantizacion | no disponible en la informacion proporcionada; al ser un modelo GPT-2 es compatible con cuantizacion de 8 y 4 bits mediante herramientas estandar (bitsandbytes, GGUF/llama.cpp), aunque no esta confirmado por el autor |
-| Idiomas soportados | ingles (el modelo base es `goldfish-models/eng_latn_100mb`, correspondiente a ingles en escritura latina); los metadatos de HuggingFace no lo declaran |
+| Idiomas soportados | ingles (el modelo base es `goldfish-models/eng_latn_100mb`, correspondiente a ingles en escritura latina); los metadatos de Hugging Face no lo declaran |
 | Licencia | no disponible (la model card contiene el marcador de posicion `licence: license`) |
 | Formato de pesos | safetensors (tamano del repositorio: 0,2 GB) |
 
@@ -32,7 +32,7 @@ El entrenamiento se ha realizado mediante SFT (supervised fine-tuning) con TRL 0
 - Generacion de texto autoregresiva en ingles, con calidad limitada por el tamano del modelo (86,5 M de parametros) y por el presupuesto de preentrenamiento del modelo base (100 MB de texto).
 - Conversacion de un solo turno o pocos turnos mediante plantilla de chat, tal como muestra el ejemplo de `pipeline("text-generation", ...)` de la model card.
 - Ajuste fino posterior: al ser un checkpoint pequeno en safetensors, es adecuado para experimentos de fine-tuning adicional (LoRA, adaptadores, destilacion).
-- Compatibilidad declarada con Text Generation Inference (`text-generation-inference`, `endpoints_compatible` en las etiquetas), lo que permite desplegarlo mediante la API de inferencia de HuggingFace.
+- Compatibilidad declarada con Text Generation Inference (`text-generation-inference`, `endpoints_compatible` en las etiquetas), lo que permite desplegarlo mediante la API de inferencia de Hugging Face.
 - No hay evidencia de soporte de tool calling, function calling, razonamiento multi-paso, agentes, vision, audio, modo "thinking" ni capacidades multimodales.
 - Capacidad multilingue: no disponible; todo apunta a un unico idioma (ingles) por el modelo base.
 - Matematicas y generacion de codigo: no documentadas y poco probables a este tamano y con este presupuesto de datos.
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con al menos 1 GB de memoria libre es suficiente; el modelo cabe sin problemas en GTX 1650, RTX 3050, RTX 4060, RTX 4090, A100 o H100. No se necesita GPU de centro de datos.
 - Inferencia en CPU: viable, tanto en fp32 como en cuantizacion, dado el reducido numero de parametros.
 - Consumer GPU: si, cabe en practicamente cualquier GPU de consumo de los ultimos diez anos, e incluso en dispositivos con poca memoria.
-- Opciones de despliegue: HuggingFace Transformers (`pipeline`), Text Generation Inference (etiqueta `text-generation-inference` y `endpoints_compatible`), y, con conversion previa, llama.cpp, Ollama u otros motores compatibles con GGUF. La compatibilidad con vLLM no esta confirmada por el autor.
+- Opciones de despliegue: Hugging Face Transformers (`pipeline`), Text Generation Inference (etiqueta `text-generation-inference` y `endpoints_compatible`), y, con conversion previa, llama.cpp, Ollama u otros motores compatibles con GGUF. La compatibilidad con vLLM no esta confirmada por el autor.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia por peticion.
 
 ## Comparativa con modelos similares
@@ -66,11 +66,11 @@ Los datos de los modelos alternativos corresponden a sus especificaciones public
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfd_seed10` | 86,5 M | no disponible | ingles (segun el modelo base) | no disponible | HuggingFace, 0 descargas |
-| `goldfish-models/eng_latn_100mb` (modelo base) | no disponible | no disponible | ingles latino | no disponible en la informacion proporcionada | HuggingFace |
-| GPT-2 small | 124 M | 1024 tokens | ingles principalmente | licencia MIT modificada | HuggingFace, ampliamente desplegado |
-| distilgpt2 | 82 M | 1024 tokens | ingles | Apache 2.0 | HuggingFace |
-| Pythia-70M | 70 M | 2048 tokens | ingles | Apache 2.0 | HuggingFace |
+| `francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfd_seed10` | 86,5 M | no disponible | ingles (segun el modelo base) | no disponible | Hugging Face, 0 descargas |
+| `goldfish-models/eng_latn_100mb` (modelo base) | no disponible | no disponible | ingles latino | no disponible en la informacion proporcionada | Hugging Face |
+| GPT-2 small | 124 M | 1024 tokens | ingles principalmente | licencia MIT modificada | Hugging Face, ampliamente desplegado |
+| distilgpt2 | 82 M | 1024 tokens | ingles | Apache 2.0 | Hugging Face |
+| Pythia-70M | 70 M | 2048 tokens | ingles | Apache 2.0 | Hugging Face |
 
 La comparativa de rendimiento no es posible: el modelo analizado no publica resultados de benchmarks, por lo que no se puede situar frente a distilgpt2 o Pythia-70M en tareas estandar.
 
@@ -89,8 +89,8 @@ La comparativa de rendimiento no es posible: el modelo analizado no publica resu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfd_seed10
-- Modelo base en HuggingFace: https://huggingface.co/goldfish-models/eng_latn_100mb
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfd_seed10
+- Modelo base en Hugging Face: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Ejecucion de entrenamiento en Weights & Biases (enlazada desde la model card): https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/47te8vl5
 - Repositorio de TRL (framework de entrenamiento citado por el autor): https://github.com/huggingface/trl
 - No se han encontrado papers, blogs, demos ni repositorios adicionales especificos de este checkpoint en la busqueda web realizada.

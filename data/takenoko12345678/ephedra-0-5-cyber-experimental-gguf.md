@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible en el
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ephedra-0.5-Cyber-Experimental-GGUF | 4,11 B | 32.768 | Revisión de seguridad defensiva (experimental) | Apache 2.0 | GGUF en HuggingFace |
-| XHToken/Spark-X2.6-4B (base) | ~4 B | no disponible | Propósito general | no disponible | HuggingFace |
+| Ephedra-0.5-Cyber-Experimental-GGUF | 4,11 B | 32.768 | Revisión de seguridad defensiva (experimental) | Apache 2.0 | GGUF en Hugging Face |
+| XHToken/Spark-X2.6-4B (base) | ~4 B | no disponible | Propósito general | no disponible | Hugging Face |
 | Modelos de revisión de código de propósito general | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada no incluye datos de rendimiento de alternativas comparables, por lo que la comparación cuantitativa no está disponible.

@@ -109,10 +109,10 @@ No hay datos de benchmarks de terceros en la información proporcionada, por lo 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Berk/assay-1.7b | 1,72 B | no disponible | accuracy 0,752 en tareas no vistas; ECE 0,024 con escalado | Apache-2.0 | HuggingFace, código en GitHub |
-| Qwen/Qwen3-1.7B-Base | 1,72 B | no disponible en esta información | no disponible (es el punto de partida zero-shot del anterior) | Apache-2.0 | HuggingFace |
-| Clasificadores zero-shot tipo NLI (p. ej. familia DeBERTa-v3 o BART-large-MNLI) | 0,1-0,4 B | típicamente 512-1024 tokens | no disponible | MIT o similar | HuggingFace |
-| Clasificación mediante prompting a un LLM generativo | variable (≥7 B) | variable | no disponible | variable | HuggingFace y APIs |
+| Berk/assay-1.7b | 1,72 B | no disponible | accuracy 0,752 en tareas no vistas; ECE 0,024 con escalado | Apache-2.0 | Hugging Face, código en GitHub |
+| Qwen/Qwen3-1.7B-Base | 1,72 B | no disponible en esta información | no disponible (es el punto de partida zero-shot del anterior) | Apache-2.0 | Hugging Face |
+| Clasificadores zero-shot tipo NLI (p. ej. familia DeBERTa-v3 o BART-large-MNLI) | 0,1-0,4 B | típicamente 512-1024 tokens | no disponible | MIT o similar | Hugging Face |
+| Clasificación mediante prompting a un LLM generativo | variable (≥7 B) | variable | no disponible | variable | Hugging Face y APIs |
 
 Diferencias cualitativas que sí se pueden afirmar con la información disponible: assay-1.7b ofrece salida tipada y calibrada con métricas de calibración publicadas (ECE, Brier, errores confiados) y un coste de inferencia de una sola pasada, algo que un LLM generativo usado como clasificador no garantiza, ya que puede producir salidas fuera de esquema. Frente a los clasificadores NLI clásicos, aporta preguntas tipadas con hasta 255 opciones descritas y puntuación de evidencia, a cambio de un tamaño de 1,72 B parámetros. No se dispone de cifras comparativas de accuracy entre estas alternativas en la información proporcionada.
 
@@ -133,7 +133,7 @@ Diferencias cualitativas que sí se pueden afirmar con la información disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Berk/assay-1.7b
+- Modelo en Hugging Face: https://huggingface.co/Berk/assay-1.7b
 - Código, servidor y receta de entrenamiento: https://github.com/bgokden/assay
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Dataset de la suite de transferencia: https://huggingface.co/datasets/jaredpalmer/kev-suites

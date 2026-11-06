@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Interact4D es un modelo publicado en HuggingFace por el usuario wsnbws bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: solo incluye la declaracion de licencia y no proporciona documentacion tecnica sobre arquitectura, parametros, entrenamiento o capacidades. El repositorio no registra descargas ni interacciones, lo que sugiere que se trata de un proyecto reciente o en fase inicial.
+Interact4D es un modelo publicado en Hugging Face por el usuario wsnbws bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: solo incluye la declaracion de licencia y no proporciona documentacion tecnica sobre arquitectura, parametros, entrenamiento o capacidades. El repositorio no registra descargas ni interacciones, lo que sugiere que se trata de un proyecto reciente o en fase inicial.
 
 El nombre del modelo sugiere una posible relacion con el proyecto Interactive4D, descrito en los resultados de busqueda como un paradigma de segmentacion 4D interactiva para datos LiDAR que permite segmentar multiples objetos en multiples escaneos simultaneamente, aprovechando la naturaleza secuencial de los datos. Sin embargo, no se ha podido verificar que este repositorio corresponda a dicho proyecto, ya que el autor del repositorio (wsnbws) no coincide con el autor del proyecto Interactive4D (Ilya Fradlin). Toda la informacion tecnica que se detalla a continuacion debe interpretarse con esta salvedad.
 
@@ -21,7 +21,7 @@ El nombre del modelo sugiere una posible relacion con el proyecto Interactive4D,
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo en la model card de HuggingFace. El proyecto Interactive4D, si este repositorio estuviera relacionado, propone un modelo de segmentacion 4D interactiva que procesa escaneos LiDAR consecutivos superpuestos y segmenta multiples objetos en una sola iteracion, utilizando la secuencialidad temporal de los datos LiDAR como ventaja estructural. No obstante, no se han publicado detalles sobre la implementacion concreta, el volumen de datos de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF, DPO u otras metodologias de alineacion.
+No se dispone de informacion sobre la arquitectura del modelo en la model card de Hugging Face. El proyecto Interactive4D, si este repositorio estuviera relacionado, propone un modelo de segmentacion 4D interactiva que procesa escaneos LiDAR consecutivos superpuestos y segmenta multiples objetos en una sola iteracion, utilizando la secuencialidad temporal de los datos LiDAR como ventaja estructural. No obstante, no se han publicado detalles sobre la implementacion concreta, el volumen de datos de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF, DPO u otras metodologias de alineacion.
 
 ## Capacidades
 
@@ -66,5 +66,5 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wsnbws/Interact4D
+- Repositorio Hugging Face: https://huggingface.co/wsnbws/Interact4D
 - Proyecto Interactive4D (posiblemente relacionado, no verificado): https://ilya-fradlin.github.io/Interactive4D/

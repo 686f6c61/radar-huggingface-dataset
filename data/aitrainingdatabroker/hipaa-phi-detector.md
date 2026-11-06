@@ -31,7 +31,7 @@ El entrenamiento consistió en un fine-tuning de 8 épocas sobre una única RTX 
 
 - Deteccion de entidades nombradas (NER) de identificadores HIPAA Safe Harbor en texto administrativo sanitario en ingles.
 - Etiquetado de 15 clases: nombres, fechas, edades mayores de 89 anos, telefonos y faxes, correos electronicos, direcciones y codigos ZIP, numeros de la Seguridad Social, numeros de historia clinica (MRN), IDs de plan de salud, numeros de cuenta, licencias, identificadores de vehiculo, numeros de serie de dispositivos, URLs y direcciones IP.
-- Integracion nativa con el pipeline `token-classification` de HuggingFace Transformers, con `aggregation_strategy="simple"` para obtener spans agregados con puntuacion de confianza.
+- Integracion nativa con el pipeline `token-classification` de Hugging Face Transformers, con `aggregation_strategy="simple"` para obtener spans agregados con puntuacion de confianza.
 - Salida orientada a revision humana: marca candidatos de identificador para que una persona los verifique antes de redactar (redaction) o compartir datos.
 - No soporta: vision, audio, generacion de texto, tool calling ni razonamiento multi-paso; es un modelo discriminativo de encoder.
 - Fuera de alcance por diseno: fotos, biometria y otros identificadores no textuales de la lista Safe Harbor.
@@ -75,7 +75,7 @@ No hay comparaciones publicadas con otros modelos en la informacion disponible.
 - VRAM estimada para inferencia: menos de 1 GB en fp32; aproximadamente 0,3 GB de pesos. Cabe con holgura en cualquier GPU moderna e incluso en CPU.
 - GPU recomendadas: cualquiera; el autor entreno en una RTX 3070, muy por encima de lo necesario para inferencia. No se requiere A100 ni H100.
 - Consumer GPUs: sobradamente apto en RTX 3060/3070/4060 o superiores; tambien ejecutable solo en CPU con latencia aceptable para procesado por lotes.
-- Despliegue: libreria `transformers` de HuggingFace mediante `pipeline("token-classification", ...)`. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama no son opciones directas; vLLM y TGI estan orientados a modelos generativos y no son el camino natural. Para produccion, un microservicio con FastAPI + Transformers o ONNX Runtime son alternativas razonables.
+- Despliegue: libreria `transformers` de Hugging Face mediante `pipeline("token-classification", ...)`. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama no son opciones directas; vLLM y TGI estan orientados a modelos generativos y no son el camino natural. Para produccion, un microservicio con FastAPI + Transformers o ONNX Runtime son alternativas razonables.
 - Latencia y throughput: no disponible; dada la arquitectura (encoder de 6 capas, ~82M parametros), se espera inferencia de milisegundos por documento corto en GPU.
 
 ## Comparativa con modelos similares
@@ -100,7 +100,7 @@ Presidio es la alternativa mas madura para produccion y combina reglas determini
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aitrainingdatabroker/hipaa-phi-detector
+- Modelo en Hugging Face: https://huggingface.co/aitrainingdatabroker/hipaa-phi-detector
 - Modelo base: https://huggingface.co/distilbert/distilroberta-base
 - Blog: HIPAA Safe Harbor, los 18 identificadores: https://aitrainingdatabroker.com/blog/hipaa-safe-harbor-the-18-identifiers-for-business-data/
 - Desidentificacion para HIPAA, CCPA y GDPR: https://aitrainingdatabroker.com/de-identification/

@@ -86,7 +86,7 @@ La ventaja principal de Apertus-SEA-LION-v4-8B-IT frente a Qwen2.5 o Llama-3.1 e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aisingapore/Apertus-SEA-LION-v4-8B-IT-GGUF
+- Repositorio Hugging Face: https://huggingface.co/aisingapore/Apertus-SEA-LION-v4-8B-IT-GGUF
 - Colección SEA-LION v4: https://huggingface.co/collections/aisingapore/sea-lion-v4
 - Documentación oficial SEA-LION: https://docs.sea-lion.ai/models/sea-lion-v4/apertus-sea-lion-v4-8b
 - GitHub de SEA-LION (modelos): https://github.com/aisingapore/sealion/blob/main/models/sea-lion-v4/apertus-sea-lion-v4-8B.md

@@ -69,8 +69,8 @@ La comparativa se realiza con modelos de vision auto-supervisados de la familia 
 - **Produccion**: no es recomendable usarlo en produccion sin una evaluacion exhaustiva y sin conocer el rendimiento real, ya que no hay benchmarks ni validacion de terceros.
 
 ## Enlaces
-- Repositorio de HuggingFace: https://huggingface.co/anvu8952/model_6955_dino_xlarge
+- Repositorio de Hugging Face: https://huggingface.co/anvu8952/model_6955_dino_xlarge
 - DINOv2 (Meta AI): https://github.com/facebookresearch/dinov2
 - DINOv3 (Meta AI): https://github.com/facebookresearch/dinov3
-- Documentacion DINOv2 en HuggingFace: https://huggingface.co/docs/transformers/model_doc/dinov2
+- Documentacion DINOv2 en Hugging Face: https://huggingface.co/docs/transformers/model_doc/dinov2
 - Pagina de DINOv3 en Meta AI: https://ai.meta.com/research/dinov3/

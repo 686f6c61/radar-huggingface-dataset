@@ -82,7 +82,7 @@ No se han identificado alternativas de otras familias con datos suficientes en l
 
 ## Enlaces
 
-- Repo en HuggingFace: https://huggingface.co/thomasfchrr/Spark-X2.5-1.7B-CopilotPlus-NPU
+- Repo en Hugging Face: https://huggingface.co/thomasfchrr/Spark-X2.5-1.7B-CopilotPlus-NPU
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-1.7B
 - GitHub del proyecto: https://github.com/XHToken/Spark-X2.5
 - Pagina en Ollama: https://ollama.com/SparkLLM/Spark-X2.5-1.7B

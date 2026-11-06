@@ -54,7 +54,7 @@ No se puede realizar una comparación con modelos similares porque no se conocen
 - La fecha de creación (2026-08-22) es futura con respecto a la fecha de conocimiento actual, lo que puede indicar que el modelo es hipotético o que la fecha es errónea.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/preciousibrahim/model_627493963_beit_giant
+- Repositorio en Hugging Face: https://huggingface.co/preciousibrahim/model_627493963_beit_giant
 - Referencia de BEiT (Microsoft): https://huggingface.co/microsoft/beit-large-patch16-224
 - Búsqueda web relacionada (no específica): https://huggingface.co/depth-anything/DA3NESTED-GIANT-LARGE (no relacionado con BEiT)</think>## Resumen
 El modelo `preciousibrahim/model_627493963_beit_giant` es una implementación a escala *giant* de la arquitectura BEiT (BERT pre-imitation Image Transformer) orientada a tareas de clasificación de imágenes. El repositorio, creado por el usuario `preciousibrahim` en agosto de 2026, contiene únicamente un archivo de código (`model_627493963_beit_giant.py`) y no incluye pesos entrenados, documentación sobre el conjunto de datos utilizado ni resultados de evaluación. La licencia Apache-2.0 permite uso comercial y modificación, pero la ausencia de artefactos desplegables limita su aplicabilidad práctica.
@@ -109,6 +109,6 @@ No se puede realizar una comparación objetiva con otros modelos BEiT (como `mic
 - La fecha de creación (2026-08-22) es posterior a la fecha actual, lo que puede indicar que el modelo es hipotético o que la fecha es errónea.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/preciousibrahim/model_627493963_beit_giant
+- Repositorio en Hugging Face: https://huggingface.co/preciousibrahim/model_627493963_beit_giant
 - Referencia de BEiT de Microsoft: https://huggingface.co/microsoft/beit-large-patch16-224
 - Búsqueda web relacionada (no específica): https://huggingface.co/depth-anything/DA3NESTED-GIANT-LARGE (no relacionado con BEiT)

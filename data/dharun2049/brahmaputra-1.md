@@ -72,9 +72,9 @@ No se dispone de comparaciones con otros modelos ni de benchmarks estándar como
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Brahmaputra-1 | 494M | no disponible | Apache 2.0 | HuggingFace |
-| kaveri-stgrpo-0.5b (base) | 0.5B (según nombre) | no disponible | no disponible | HuggingFace |
-| Qwen3.8-27B (profesor) | 27B (según nombre) | no disponible | no disponible | HuggingFace |
+| Brahmaputra-1 | 494M | no disponible | Apache 2.0 | Hugging Face |
+| kaveri-stgrpo-0.5b (base) | 0.5B (según nombre) | no disponible | no disponible | Hugging Face |
+| Qwen3.8-27B (profesor) | 27B (según nombre) | no disponible | no disponible | Hugging Face |
 
 No se dispone de información suficiente para comparar el rendimiento con modelos de la misma categoría. El modelo base es `dharun2049/kaveri-stgrpo-0.5b`, y el profesor utilizado en la destilación es `Qwen/Qwen3.8-27B`.
 
@@ -91,6 +91,6 @@ No se dispone de información suficiente para comparar el rendimiento con modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dharun2049/Brahmaputra-1
+- Hugging Face: https://huggingface.co/dharun2049/Brahmaputra-1
 - Perfil del autor: https://huggingface.co/dharun2049
 - No se encontraron papers, blogs, repos o demos adicionales en la información proporcionada.

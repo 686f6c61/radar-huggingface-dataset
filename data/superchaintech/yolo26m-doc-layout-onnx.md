@@ -79,7 +79,7 @@ No se dispone de comparativas cuantitativas de rendimiento entre estos modelos e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/superchaintech/yolo26m-doc-layout-onnx
+- Repositorio Hugging Face: https://huggingface.co/superchaintech/yolo26m-doc-layout-onnx
 - Modelo base (Armaggheddon/yolo26-document-layout): https://huggingface.co/Armaggheddon/yolo26-document-layout
 - Documentacion de YOLO26 de Ultralytics: https://docs.ultralytics.com/models/yolo26
 - Repositorio de YOLO26 en GitHub: https://github.com/ultralytics/yolo26

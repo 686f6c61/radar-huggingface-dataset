@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/sol-high.h071 (este) | 9,4B | no disponible | no disponible | HuggingFace (checkpoint) |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible (típicamente 128k en Qwen3) | no disponible | HuggingFace |
-| Qwen/Qwen3-8B-Base | 8B | 32k (típico) | Apache 2.0 (Qwen3) | HuggingFace |
+| agentic-ptb/sol-high.h071 (este) | 9,4B | no disponible | no disponible | Hugging Face (checkpoint) |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible (típicamente 128k en Qwen3) | no disponible | Hugging Face |
+| Qwen/Qwen3-8B-Base | 8B | 32k (típico) | Apache 2.0 (Qwen3) | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar. La comparativa se limita a parámetros y disponibilidad. El modelo base Qwen3.5-9B-Base es la referencia natural, pero no se han publicado métricas de este checkpoint frente a su base.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento para comparar. La comparativa se limita a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h071.opsd-self-patch-tb1reg.step_1
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h071.opsd-self-patch-tb1reg.step_1
 - Repositorio Agentic-OPSD (GitHub): https://github.com/EcthelionLiu/Agentic-OPSD
 - Paper SDAR (Self-Distilled Agentic Reinforcement Learning): https://arxiv.org/abs/2605.15155
 - Artículo sobre GPT-5.6 SOL y jailbreaks: https://www.penligent.ai/hackinglabs/gpt-5-6-sol-jailbreaks/

@@ -71,7 +71,7 @@ No se dispone de datos comparativos publicados con otros draft models (EAGLE2, M
 
 ## Enlaces
 
-- Repositorio HuggingFace del checkpoint: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-NoWindow-epoch-3-step-85000
+- Repositorio Hugging Face del checkpoint: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-NoWindow-epoch-3-step-85000
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Otro checkpoint del mismo run (ejemplo): https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-3-step-75000
 - Documentación de Qwen3-4B-Instruct-2507 en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507

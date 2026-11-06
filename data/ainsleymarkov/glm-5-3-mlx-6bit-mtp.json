@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AinsleyMarkov/GLM-5.3-MLX-6bit-MTP",
+  "slug": "ainsleymarkov-glm-5-3-mlx-6bit-mtp",
+  "author": "AinsleyMarkov",
+  "url": "https://huggingface.co/AinsleyMarkov/GLM-5.3-MLX-6bit-MTP",
+  "created_at": "2026-11-03T09:08:40.000Z",
+  "updated_at": "2026-11-03T09:32:57.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm_moe_dsa",
+    "moe",
+    "mtp",
+    "speculative-decoding",
+    "tensor-parallel",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 356,
+  "trending_score": 0,
+  "parameters": 823907656704,
+  "parameters_human": "823.91B",
+  "storage_bytes": 679985104953,
+  "storage_human": "680.0 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AinsleyMarkov/GLM-5.3-MLX-6bit-MTP · Hugging Face",
+      "url": "https://huggingface.co/AinsleyMarkov/GLM-5.3-MLX-6bit-MTP",
+      "snippet": "MTP head, layer 78 (dropped from that build): taken from zai-org/GLM-5.3-BF16 and quantized to the trunk's widths. glm_dsa_mtp.py: an mlx-lm model module for tensor-parallel inference that uses the head as the speculative-decoding drafter."
+    },
+    {
+      "title": "AinsleyMarkov/GLM-5.3-MLX-6bit-MTP · Silytics",
+      "url": "https://silytics.si/models/AinsleyMarkov/GLM-5.3-MLX-6bit-MTP",
+      "snippet": "AinsleyMarkov/GLM-5.3-MLX-6bit-MTP on huggingface. Details and a link to the original source."
+    }
+  ]
+}

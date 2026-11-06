@@ -108,7 +108,7 @@ La comparación con el modelo base es pertinente por herencia de pesos, pero no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akhilaaa3/openjev-qwen3.5-4b-24k-r256-merged
+- Modelo en Hugging Face: https://huggingface.co/akhilaaa3/openjev-qwen3.5-4b-24k-r256-merged
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper: no disponible
 - Repositorio de código o demo: no disponible

@@ -77,8 +77,8 @@ La comparativa es limitada porque este checkpoint no es un modelo final, sino un
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/aflah/Llama1BxFWx1024x0pct)
+- [Repositorio Hugging Face](https://huggingface.co/aflah/Llama1BxFWx1024x0pct)
 - [Paper: Fractional Rotation, Full Potential? Investigating Performance and Convergence of Partial RoPE](https://arxiv.org/abs/2603.11611)
 - [Código de entrenamiento y análisis](https://github.com/aflah02/Partial_RoPE_Analysis)
-- [Perfil del autor en HuggingFace](https://huggingface.co/aflah)
+- [Perfil del autor en Hugging Face](https://huggingface.co/aflah)
 - [Página personal del autor](https://aflah02.github.io/)

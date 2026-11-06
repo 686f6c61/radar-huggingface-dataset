@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Base | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Flux3-image-klein-natural-facial-skin-texture-lora (este) | LoRA de textura facial | FLUX.3 Image Klein base | Safetensors BF16 r64 | flux-kommunity-license | HuggingFace, 14 checkpoints |
-| Modelo base FLUX.3 Image Klein | Modelo de difusión completo | — | no disponible | flux-kommunity-license | HuggingFace (black-forest-labs) |
+| Flux3-image-klein-natural-facial-skin-texture-lora (este) | LoRA de textura facial | FLUX.3 Image Klein base | Safetensors BF16 r64 | flux-kommunity-license | Hugging Face, 14 checkpoints |
+| Modelo base FLUX.3 Image Klein | Modelo de difusión completo | — | no disponible | flux-kommunity-license | Hugging Face (black-forest-labs) |
 | Otros LoRA de textura de piel para FLUX | LoRA especializados | FLUX (distintas versiones) | Safetensors | variable | no disponible en la información proporcionada |
 
 No se dispone de datos de benchmarks ni de modelos comparables alternativos documentados en la información proporcionada para establecer una comparación cuantitativa.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de modelos comparables alternativos docu
 
 ## Enlaces
 
-- [HuggingFace: yang520333/Flux3-image-klein-natural-facial-skin-texture-lora](https://huggingface.co/yang520333/Flux3-image-klein-natural-facial-skin-texture-lora)
+- [Hugging Face: yang520333/Flux3-image-klein-natural-facial-skin-texture-lora](https://huggingface.co/yang520333/Flux3-image-klein-natural-facial-skin-texture-lora)
 - [Modelo base: black-forest-labs/flux-3-image-klein-base](https://huggingface.co/black-forest-labs/flux-3-image-klein-base)
 - [Workflow recomendado (Natural Facial Texture, JSON)](flux3_image_klein_%E7%9C%9F%E5%AE%9E%E8%84%B8%E9%83%A8%E7%BA%B9%E7%90%86.json)
 - [Imagen de portada](https://huggingface.co/yang520333/Flux3-image-klein-natural-facial-skin-texture-lora/resolve/main/cover.png)

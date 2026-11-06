@@ -62,12 +62,12 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros model
 - El contenido es exploratorio y no presenta resultados experimentales; las secciones de planes o hipotesis no deben citarse como evidencia.
 - No se especifican idiomas soportados, aunque el texto esta escrito en ingles.
 - La licencia CC-BY-4.0 permite uso comercial y modificacion, pero exige atribucion; ademas, el autor advierte que deben revisarse los terminos de las fuentes de datos externas si se usan con este material.
-- Riesgo de malinterpretacion: al estar etiquetado como "modelo" en HuggingFace, un usuario podria asumir erroneamente que es un artefacto de inferencia, cuando en realidad es documentacion.
+- Riesgo de malinterpretacion: al estar etiquetado como "modelo" en Hugging Face, un usuario podria asumir erroneamente que es un artefacto de inferencia, cuando en realidad es documentacion.
 - No hay garantias de exactitud en las referencias o propuestas, ya que no han sido validadas experimentalmente.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ashleyjacksonwyn/neural-architecture-search-reading52
+- Repositorio en Hugging Face: https://huggingface.co/ashleyjacksonwyn/neural-architecture-search-reading52
 - Articulo de referencia sobre NAS (arXiv): https://arxiv.org/abs/2301.08727
 - Version HTML del mismo articulo: https://ar5iv.labs.arxiv.org/html/2301.08727
 - Pagina de Wikipedia sobre Neural Architecture Search: https://en.wikipedia.org/wiki/Neural_architecture_search

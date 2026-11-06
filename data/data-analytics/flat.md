@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `data-analytics/flat` es un repositorio publicado en HuggingFace por el usuario `data-analytics` el 5 de enero de 2026. La información disponible en su model card es extremadamente limitada: únicamente se especifica la licencia GPL-3.0 y la región asociada (US). No se proporcionan detalles sobre arquitectura, parámetros, pipeline, idiomas ni capacidades.
+El modelo `data-analytics/flat` es un repositorio publicado en Hugging Face por el usuario `data-analytics` el 5 de enero de 2026. La información disponible en su model card es extremadamente limitada: únicamente se especifica la licencia GPL-3.0 y la región asociada (US). No se proporcionan detalles sobre arquitectura, parámetros, pipeline, idiomas ni capacidades.
 
 El tamaño del repositorio es de 1523 GB, lo que sugiere que podría tratarse de un modelo de gran escala o de un conjunto de pesos completo, pero sin documentación adicional no es posible confirmar su naturaleza ni su funcionalidad. A fecha de actualización (17 de agosto de 2026), el modelo registra 0 descargas y 1 like, lo que indica un uso muy limitado.
 
@@ -57,6 +57,6 @@ No disponible. No se conocen modelos comparables al no existir informacion sobre
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/data-analytics/flat
+- Repositorio en Hugging Face: https://huggingface.co/data-analytics/flat
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo) en la informacion proporcionada.

@@ -26,7 +26,7 @@ En el conjunto de prueba de RDD2022 alcanza un mAP@50 de 61,24 % y un mAP@50-95 
 | Dataset de entrenamiento | `dronefreak/RDD2022` (RDD2022 Road Damage) |
 | Numero de clases | 4: `longitudinal_crack`, `transverse_crack`, `alligator_crack`, `pothole` |
 | Coste computacional | 75,4 GFLOPs por imagen a 640 px |
-| Tamaño del repositorio | 0,0 GB (según los metadatos de HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según los metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -124,8 +124,8 @@ Lectura de la comparativa: en mAP@50, el modelo se sitúa en la zona media-baja 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/rdd2022-yolo26m
-- Dataset RDD2022 en HuggingFace: https://huggingface.co/datasets/dronefreak/RDD2022
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/rdd2022-yolo26m
+- Dataset RDD2022 en Hugging Face: https://huggingface.co/datasets/dronefreak/RDD2022
 - Repositorio DetectionBench (fuente de los resultados y del protocolo de evaluación): https://github.com/dronefreak/DetectionBench
 - Modelo base: https://huggingface.co/Ultralytics/YOLO26
 - Referencias arXiv declaradas en las etiquetas del repositorio (la información proporcionada no incluye sus títulos):

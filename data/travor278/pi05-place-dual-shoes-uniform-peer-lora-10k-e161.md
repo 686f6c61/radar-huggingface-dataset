@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Travor278/pi05-place-dual-shoes-uniform-peer-lora-10k-e161 es un checkpoint de inferencia para robotica publicado en HuggingFace bajo la libreria `openpi`. Se trata de un ajuste fino mediante LoRA del modelo PI0.5 (receta denominada "peer recipe LoRA10k") orientado a una tarea concreta de manipulacion identificada por el nombre del repositorio: la colocacion de un par de zapatos de forma uniforme. El autor lo describe como parte de la serie de entrenamiento "Sim12" autorizada, lo que apunta a un entorno de simulacion, y la evaluacion se registra en un proyecto externo de SwanLab.
+Travor278/pi05-place-dual-shoes-uniform-peer-lora-10k-e161 es un checkpoint de inferencia para robotica publicado en Hugging Face bajo la libreria `openpi`. Se trata de un ajuste fino mediante LoRA del modelo PI0.5 (receta denominada "peer recipe LoRA10k") orientado a una tarea concreta de manipulacion identificada por el nombre del repositorio: la colocacion de un par de zapatos de forma uniforme. El autor lo describe como parte de la serie de entrenamiento "Sim12" autorizada, lo que apunta a un entorno de simulacion, y la evaluacion se registra en un proyecto externo de SwanLab.
 
 El artefacto es un checkpoint en formato JAX/Orbax con los parametros completos del modelo y los activos de normalizacion emparejados, pero sin estado de optimizador, `train_state` ni estado reanudable del `data_loader`. No se ha realizado conversion de formato, por lo que no es un modelo compatible con Transformers ni con safetensors, y requiere el codigo fuente de OpenPI para PI0.5 mas un entorno de configuracion base concreto.
 
@@ -73,7 +73,7 @@ No se dispone de datos verificables en la informacion proporcionada para estable
 
 | Modelo | Categoria | Parametros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-place-dual-shoes-uniform-peer-lora-10k-e161 | Politica VLA ajustada con LoRA (JAX/Orbax) | no disponible | action horizon 50; diffusion num_steps 10 | no disponible | HuggingFace, checkpoint de inferencia |
+| pi05-place-dual-shoes-uniform-peer-lora-10k-e161 | Politica VLA ajustada con LoRA (JAX/Orbax) | no disponible | action horizon 50; diffusion num_steps 10 | no disponible | Hugging Face, checkpoint de inferencia |
 | Otros checkpoints PI0.5 de OpenPI | Politica VLA | no disponible | no disponible | no disponible | no disponible |
 | PI0 (modelo base de la familia) | Politica VLA | no disponible | no disponible | no disponible | no disponible |
 | Modelos VLA abiertos de otras familias | Politica VLA | no disponible | no disponible | no disponible | no disponible |
@@ -93,7 +93,7 @@ No se dispone de datos verificables en la informacion proporcionada para estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-place-dual-shoes-uniform-peer-lora-10k-e161
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-place-dual-shoes-uniform-peer-lora-10k-e161
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-place-dual-shoes-uniform-20260911 (commit 32f25a495d0cab93307a1c9d73010501a049f1e6)
 - Seguimiento de evaluacion en SwanLab: https://swanlab.cn/@Travor/CTR-PI05-LoRA10k
 - Codigo de la libreria OpenPI (referenciada por la model card): https://github.com/Physical-Intelligence/openpi

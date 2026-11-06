@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su origen: es un artefacto generado en el
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA aplicado sobre unsloth/Meta-Llama-3.1-8B-Instruct, la version optimizada por Unsloth del modelo Llama 3.1 8B Instruct de Meta. La arquitectura subyacente es un transformer decoder-only con atencion por ventanas deslizantes y atencion global alternada, disenada para manejar contextos de hasta 128.000 tokens. El adaptador fue entrenado mediante aprendizaje supervisado (SFT) utilizando la libreria TRL de HuggingFace, con la version 0.18.1 de PEFT.
+El modelo es un adaptador LoRA aplicado sobre unsloth/Meta-Llama-3.1-8B-Instruct, la version optimizada por Unsloth del modelo Llama 3.1 8B Instruct de Meta. La arquitectura subyacente es un transformer decoder-only con atencion por ventanas deslizantes y atencion global alternada, disenada para manejar contextos de hasta 128.000 tokens. El adaptador fue entrenado mediante aprendizaje supervisado (SFT) utilizando la libreria TRL de Hugging Face, con la version 0.18.1 de PEFT.
 
 No se dispone de informacion sobre la composicion del dataset de entrenamiento, el numero de tokens utilizados ni los hiperparametros del entrenamiento (tasa de aprendizaje, rango del adaptador, epochs, etc.). La model card no incluye detalles sobre el regimen de entrenamiento ni sobre el hardware utilizado. El tag arxiv:1910.09700 hace referencia al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en ML, citado en la plantilla de la model card, no a una innovacion tecnica del modelo.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 - VRAM estimada para inferencia: al ser un adaptador LoRA sobre Llama 3.1 8B, los requisitos son los del modelo base. En FP16 se necesitan aproximadamente 16 GB de VRAM; con cuantizacion (por ejemplo, 4 bits) se puede reducir a unos 6-8 GB.
 - GPU recomendadas: cualquier GPU con al menos 16 GB de VRAM para FP16 (RTX 4090, A100, H100) o GPUs con 8 GB para cuantizacion 4 bits (RTX 3070, RTX 4060 Ti, etc.).
-- El adaptador puede cargarse con la libreria PEFT de HuggingFace sobre el modelo base, o exportarse a formato GGUF para su uso con llama.cpp u Ollama.
+- El adaptador puede cargarse con la libreria PEFT de Hugging Face sobre el modelo base, o exportarse a formato GGUF para su uso con llama.cpp u Ollama.
 - Opciones de despliegue: transformers + PEFT, vLLM (con soporte de LoRA), TGI, llama.cpp (tras conversion a GGUF), Ollama.
 - Latencia y throughput: no disponibles.
 
@@ -75,7 +75,7 @@ No se dispone de informacion sobre otros adaptadores del mismo torneo con los qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-daf88974-31be-496a-adef-9459078493b6-5FW2Eaae
+- Repositorio Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-daf88974-31be-496a-adef-9459078493b6-5FW2Eaae
 - Plataforma Gradients (Bittensor Subnet 56): https://www.gradients.io/app/research/tournament
 - Modelo base unsloth/Meta-Llama-3.1-8B-Instruct: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Articulo de Lacoste et al. (2019) sobre emisiones de carbono: https://arxiv.org/abs/1910.09700

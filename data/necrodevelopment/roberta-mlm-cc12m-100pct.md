@@ -6,14 +6,14 @@
 
 El modelo lo publica el usuario NecroDevelopment y se presenta explícitamente como el «control solo texto» de un *bake-off* de proximidad semántica (WiC) frente a una ejecución contrastiva complementaria. La receta es idéntica en número de pasos (100.000) y en el marcado de palabra objetivo, de modo que sirve como línea base para aislar el efecto del objetivo contrastivo frente al MLM estándar.
 
-Su relevancia es acotada y de carácter experimental: repositorio con 0 descargas y 0 *likes*, licencia MIT y un tamaño de 0,5 GB. La ventana de secuencia usada durante el entrenamiento es de solo 77 tokens, lo que limita su uso a fragmentos cortos, típicos de pies de foto. Existe una discrepancia documental relevante entre el metadato de HuggingFace (que indica `FacebookAI/xlm-roberta-base` como modelo base) y el cuerpo de la model card (que describe un encoder `roberta-base`); se detalla en la sección de limitaciones.
+Su relevancia es acotada y de carácter experimental: repositorio con 0 descargas y 0 *likes*, licencia MIT y un tamaño de 0,5 GB. La ventana de secuencia usada durante el entrenamiento es de solo 77 tokens, lo que limita su uso a fragmentos cortos, típicos de pies de foto. Existe una discrepancia documental relevante entre el metadato de Hugging Face (que indica `FacebookAI/xlm-roberta-base` como modelo base) y el cuerpo de la model card (que describe un encoder `roberta-base`); se detalla en la sección de limitaciones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer encoder-only bidireccional (familia RoBERTa), con cabeza MLM entrenada sobre el encoder |
-| Parametros totales | No confirmado de forma univoca. La model card indica `roberta-base` (aproximadamente 125 M); el metadato de HuggingFace indica `FacebookAI/xlm-roberta-base` (aproximadamente 279 M). El tamano del repositorio (0,5 GB) es consistente con 125 M parametros en fp32 |
+| Parametros totales | No confirmado de forma univoca. La model card indica `roberta-base` (aproximadamente 125 M); el metadato de Hugging Face indica `FacebookAI/xlm-roberta-base` (aproximadamente 279 M). El tamano del repositorio (0,5 GB) es consistente con 125 M parametros en fp32 |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | 77 tokens (longitud maxima de secuencia usada en el entrenamiento, fijada para igualar la ejecucion contrastiva) |
 | Tipos de cuantizacion | No disponible. No se publican pesos GGUF, GPTQ, AWQ ni variantes cuantizadas |
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| roberta-mlm-cc12m-100pct (este modelo) | 125 M (segun la model card) | 77 tokens en entrenamiento | MLM con marcado de palabra objetivo sobre CC12M | MIT | HuggingFace, 0 descargas |
+| roberta-mlm-cc12m-100pct (este modelo) | 125 M (segun la model card) | 77 tokens en entrenamiento | MLM con marcado de palabra objetivo sobre CC12M | MIT | Hugging Face, 0 descargas |
 | `FacebookAI/roberta-base` | 125 M | 512 tokens | MLM sobre BookCorpus + Wikipedia | MIT | Ampliamente disponible y validado |
 | `FacebookAI/xlm-roberta-base` | 279 M | 512 tokens | MLM multilingue sobre 100 idiomas | MIT | Ampliamente disponible y validado |
 | `distilroberta-base` | 82 M | 512 tokens | Destilacion de RoBERTa | Apache 2.0 | Ampliamente disponible |
@@ -80,7 +80,7 @@ Frente a los encoders de referencia, este modelo intercambia generalidad por esp
 - Solo ingles declarado. El rendimiento en castellano u otros idiomas no esta medido ni garantizado, incluso si el encoder base fuese multilingue.
 - No es un modelo generativo: no puede redactar, resumir de forma abstractiva, mantener conversaciones ni seguir instrucciones. Usarlo como chatbot o como agente es un error de planteamiento.
 - Sin resultados de benchmarks ni validacion externa: el repositorio tiene 0 descargas y 0 *likes*, por lo que no hay evidencia publica de calidad mas alla de la descripcion del autor.
-- Discrepancia documental sobre el modelo base: el metadato de HuggingFace apunta a `xlm-roberta-base` y la model card describe `roberta-base`. Antes de integrarlo conviene inspeccionar el `config.json` y el tokenizador para determinar el vocabulario real (50.265 frente a 250.002 tokens), ya que de ello depende la eleccion del tokenizador y el numero de parametros.
+- Discrepancia documental sobre el modelo base: el metadato de Hugging Face apunta a `xlm-roberta-base` y la model card describe `roberta-base`. Antes de integrarlo conviene inspeccionar el `config.json` y el tokenizador para determinar el vocabulario real (50.265 frente a 250.002 tokens), ya que de ello depende la eleccion del tokenizador y el numero de parametros.
 - Sesgos heredados de CC12M: corpus de *alt-text* web con sobras de dominios sobrerrepresentados (comercio, fotografias de stock) y posible infrarrepresentacion de variedades dialectales, culturas no anglosajonas y terminologia tecnica.
 - Riesgo de predicciones incorrectas en MLM: el modelo puede rellenar huecos con asociaciones estereotipadas o factualmente falsas, heredadas de los datos; no existe capa de alineacion que lo mitigue.
 - Alucinacion en el sentido generativo: no aplica, al no producir texto libre. El riesgo equivalente es la sustitucion de tokens plausible pero incorrecta.
@@ -90,7 +90,7 @@ Frente a los encoders de referencia, este modelo intercambia generalidad por esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NecroDevelopment/roberta-mlm-cc12m-100pct
-- Modelo base segun el metadato de HuggingFace: https://huggingface.co/FacebookAI/xlm-roberta-base
+- Modelo en Hugging Face: https://huggingface.co/NecroDevelopment/roberta-mlm-cc12m-100pct
+- Modelo base segun el metadato de Hugging Face: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Repositorio del dataset citado en la model card: `pixparse/cc12m-wds` (referenciado por nombre, sin URL explicita en la informacion disponible)
 - No se han encontrado otros enlaces relevantes: los resultados de la busqueda web disponible no guardan relacion con el modelo (contenido en chino sobre musica y buscadores, y un articulo politico sudafricano), por lo que se descartan como fuentes.

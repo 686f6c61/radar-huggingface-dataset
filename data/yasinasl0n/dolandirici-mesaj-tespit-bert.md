@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `YasinAsl0n/dolandirici-mesaj-tespit-bert` es un clasificador de texto basado en la arquitectura BERT, con 110.619.651 parámetros, publicado en HuggingFace por el usuario YasinAsl0n. El nombre del repositorio sugiere que está orientado a la detección de mensajes fraudulentos (en turco, "dolandırıcı" significa estafador, "mesaj" mensaje y "tespit" detección), aunque la model card no proporciona ninguna información oficial sobre su propósito, datos de entrenamiento o rendimiento.
+El modelo `YasinAsl0n/dolandirici-mesaj-tespit-bert` es un clasificador de texto basado en la arquitectura BERT, con 110.619.651 parámetros, publicado en Hugging Face por el usuario YasinAsl0n. El nombre del repositorio sugiere que está orientado a la detección de mensajes fraudulentos (en turco, "dolandırıcı" significa estafador, "mesaj" mensaje y "tespit" detección), aunque la model card no proporciona ninguna información oficial sobre su propósito, datos de entrenamiento o rendimiento.
 
 El modelo se distribuye en formato safetensors y está integrado con la librería `transformers`, con pipeline de clasificación de texto. La ficha técnica del autor está completamente vacía (todos los campos marcados como "More Information Needed"), y la búsqueda web no ha devuelto ninguna documentación adicional, paper o demo. Por tanto, la información disponible es muy limitada y cualquier afirmación sobre sus capacidades debe considerarse especulativa.
 
@@ -54,7 +54,7 @@ No se dispone de información oficial sobre requisitos de hardware. A partir del
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en FP32 (los pesos ocupan unos 442 MB), y menos de 0,3 GB en cuantización INT8. En la práctica, con el tokenizador y las activaciones, se recomienda al menos 1-2 GB de VRAM.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo sin problemas. Una NVIDIA GTX 1050 Ti o superior sería suficiente. En CPU también es viable para inferencia por lotes pequeños.
 - Compatibilidad con GPU de consumo: sí, cabe en cualquier GPU moderna de consumo (RTX 2060, RTX 3060, etc.).
-- Opciones de despliegue: al ser un modelo de `transformers`, se puede servir con vLLM, TGI, HuggingFace Inference Endpoints, o mediante `pipeline` de transformers. También se puede convertir a GGUF para usarlo con llama.cpp u Ollama, aunque no se ha publicado ninguna conversión.
+- Opciones de despliegue: al ser un modelo de `transformers`, se puede servir con vLLM, TGI, Hugging Face Inference Endpoints, o mediante `pipeline` de transformers. También se puede convertir a GGUF para usarlo con llama.cpp u Ollama, aunque no se ha publicado ninguna conversión.
 - Latencia y throughput: no se han publicado mediciones. Para un BERT-base, la inferencia en GPU suele ser de unos pocos milisegundos por muestra, pero depende del hardware y del tamaño del lote.
 
 ## Comparativa con modelos similares
@@ -72,5 +72,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/YasinAsl0n/dolandirici-mesaj-tespit-bert
+- Repositorio en Hugging Face: https://huggingface.co/YasinAsl0n/dolandirici-mesaj-tespit-bert
 - No se han encontrado papers, blogs, demos ni repositorios adicionales en la búsqueda web.

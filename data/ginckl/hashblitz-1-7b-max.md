@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HashBlitz-1-7B-Max es un modelo publicado en HuggingFace por el usuario Ginckl bajo el identificador `Ginckl/HashBlitz-1-7B-Max`. Se trata de un repositorio con documentación prácticamente inexistente: la única información disponible en la model card es la declaración de licencia `apache-2.0`, y no se incluye descripción del modelo, datos de entrenamiento, resultados de evaluación ni instrucciones de uso. Los metadatos de HuggingFace lo etiquetan con los tags `safetensors`, `qwen2`, `license:apache-2.0` y `region:us`, lo que sugiere que los pesos están en formato safetensors y que la arquitectura deriva de la familia Qwen2.
+HashBlitz-1-7B-Max es un modelo publicado en Hugging Face por el usuario Ginckl bajo el identificador `Ginckl/HashBlitz-1-7B-Max`. Se trata de un repositorio con documentación prácticamente inexistente: la única información disponible en la model card es la declaración de licencia `apache-2.0`, y no se incluye descripción del modelo, datos de entrenamiento, resultados de evaluación ni instrucciones de uso. Los metadatos de Hugging Face lo etiquetan con los tags `safetensors`, `qwen2`, `license:apache-2.0` y `region:us`, lo que sugiere que los pesos están en formato safetensors y que la arquitectura deriva de la familia Qwen2.
 
 El nombre del modelo incluye el segmento "7B", lo que apunta a un tamaño aproximado de 7.000 millones de parámetros, aunque este dato no se confirma en ninguna sección del repositorio. El repositorio registra 0 descargas y 0 me gusta en el momento de la consulta, y no cuenta con pipeline declarado, por lo que se trata de una publicación sin adopción conocida ni validación por parte de la comunidad.
 
@@ -12,7 +12,7 @@ Por el momento no existe información pública suficiente para evaluar el modelo
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | qwen2 (según tags de HuggingFace); transformer decoder-only, no confirmado en documentación |
+| Arquitectura | qwen2 (según tags de Hugging Face); transformer decoder-only, no confirmado en documentación |
 | Parametros totales | no disponible (el identificador sugiere ~7B, sin confirmar) |
 | Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -74,7 +74,7 @@ La comparativa se plantea asumiendo que el modelo pertenece a la categoría de ~
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| HashBlitz-1-7B-Max | no disponible (~7B según nombre) | no disponible | apache-2.0 | no disponible | HuggingFace, 0 descargas |
+| HashBlitz-1-7B-Max | no disponible (~7B según nombre) | no disponible | apache-2.0 | no disponible | Hugging Face, 0 descargas |
 | Qwen2.5-7B | 7,6B | 128K | apache-2.0 | benchmarks publicados (MMLU, HumanEval, GSM8K) | ampliamente adoptado |
 | Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | benchmarks publicados | ampliamente adoptado |
 | Mistral 7B v0.3 | 7,2B | 32K | apache-2.0 | benchmarks publicados | ampliamente adoptado |
@@ -95,7 +95,7 @@ No se dispone de datos que permitan una comparación cuantitativa real entre Has
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ginckl/HashBlitz-1-7B-Max
+- Hugging Face: https://huggingface.co/Ginckl/HashBlitz-1-7B-Max
 - Paper: no disponible
 - Blog o documentación del autor: no disponible
 - Repositorio de código: no disponible

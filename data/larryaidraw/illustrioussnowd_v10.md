@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `LarryAIDraw/illustriousSnowd_v10` es una publicación en HuggingFace realizada por el usuario LarryAIDraw. La ficha del modelo no contiene ninguna descripción técnica más allá de la licencia indicada (`creativeml-openrail-m`), que permite su uso comercial y modificación bajo los términos de CreativeML OpenRAIL-M. No se dispone de información sobre la arquitectura, el tamaño, el pipeline o las capacidades del modelo. El nombre sugiere una posible orientación a generación de imágenes (por la referencia a "illustrious" y "Snowd"), pero no hay datos que lo confirmen. Con cero descargas y cero likes, se trata de una publicación reciente sin evidencia de uso o validación por parte de la comunidad.
+El modelo `LarryAIDraw/illustriousSnowd_v10` es una publicación en Hugging Face realizada por el usuario LarryAIDraw. La ficha del modelo no contiene ninguna descripción técnica más allá de la licencia indicada (`creativeml-openrail-m`), que permite su uso comercial y modificación bajo los términos de CreativeML OpenRAIL-M. No se dispone de información sobre la arquitectura, el tamaño, el pipeline o las capacidades del modelo. El nombre sugiere una posible orientación a generación de imágenes (por la referencia a "illustrious" y "Snowd"), pero no hay datos que lo confirmen. Con cero descargas y cero likes, se trata de una publicación reciente sin evidencia de uso o validación por parte de la comunidad.
 
 ## Especificaciones técnicas
 
@@ -51,4 +51,4 @@ No disponible. No se conocen modelos comparables porque se desconoce la categor�
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/LarryAIDraw/illustriousSnowd_v10)
+- [Página del modelo en Hugging Face](https://huggingface.co/LarryAIDraw/illustriousSnowd_v10)

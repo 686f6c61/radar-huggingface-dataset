@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KozoRaro/Ayano-Aishi es un repositorio alojado en HuggingFace por el usuario KozoRaro, publicado el 23 de septiembre de 2026 y sin actualizaciones posteriores registradas. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y su model card se limita a una única línea de frontmatter que declara la licencia `openrail`. No hay información pública sobre arquitectura, tamaño, datos de entrenamiento ni capacidades.
+KozoRaro/Ayano-Aishi es un repositorio alojado en Hugging Face por el usuario KozoRaro, publicado el 23 de septiembre de 2026 y sin actualizaciones posteriores registradas. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y su model card se limita a una única línea de frontmatter que declara la licencia `openrail`. No hay información pública sobre arquitectura, tamaño, datos de entrenamiento ni capacidades.
 
 Los metadatos del repositorio no declaran `pipeline` ni idiomas soportados, y no se han publicado pesos, configuraciones, tokenizadores ni documentación técnica adicional. Esto impide determinar si se trata de un modelo de lenguaje, un modelo de difusión, una LoRA de personalización, un adaptador o un artefacto auxiliar. Cualquier afirmación funcional sobre el repositorio sería una inferencia no verificada.
 
@@ -21,7 +21,7 @@ La única pista contextual procede del nombre del repositorio: "Ayano Aishi" es 
 | Licencia | openrail |
 | Formato de pesos | no disponible |
 | Autor | KozoRaro |
-| Identificador en HuggingFace | KozoRaro/Ayano-Aishi |
+| Identificador en Hugging Face | KozoRaro/Ayano-Aishi |
 | Pipeline declarado | no disponible |
 | Fecha de creación | 2026-09-23 |
 | Última actualización | 2026-09-23 |
@@ -82,7 +82,7 @@ No es posible establecer una comparativa fiable porque se desconoce la categorí
 
 | Modelo | Plataforma | Tipo declarado | Autor | Licencia | Relación con este repositorio |
 |---|---|---|---|---|---|
-| KozoRaro/Ayano-Aishi | HuggingFace | no disponible | KozoRaro | openrail | objeto de esta ficha |
+| KozoRaro/Ayano-Aishi | Hugging Face | no disponible | KozoRaro | openrail | objeto de esta ficha |
 | Ayano Aishi Yandere Simulator | PixAI | modelo de arte IA (no especificado) | no disponible | no disponible | no verificada |
 | Ayano Aishi | PixAI | modelo de arte IA (no especificado) | no disponible | no disponible | no verificada |
 | yanderesimulator Ayano Aishi | SeaArt | modelo de arte IA (no especificado) | no disponible | no disponible | no verificada |
@@ -105,7 +105,7 @@ No se dispone de datos de parámetros, longitud de contexto, rendimiento ni disp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KozoRaro/Ayano-Aishi
+- Repositorio en Hugging Face: https://huggingface.co/KozoRaro/Ayano-Aishi
 - Modelo relacionado en PixAI (relación no verificada): https://pixai.art/en/model/1930446050281956771-Ayano-Aishi-Yandere-Simulator
 - Modelo relacionado en PixAI (relación no verificada): https://pixai.art/en/model/1641575341333951036
 - Modelo relacionado en SeaArt (relación no verificada): https://www.seaart.ai/models/detail/3cd4a0d161e1d814d60dd2a4ae031e03

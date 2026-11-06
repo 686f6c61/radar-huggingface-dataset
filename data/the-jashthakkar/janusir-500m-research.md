@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JanusIR-500M-Research es un modelo de lenguaje autoregresivo de 545,7 millones de parámetros (545.692.999 parámetros entrenables) desarrollado por el usuario the-jashthakkar y publicado en HuggingFace bajo licencia Apache 2.0. No es un modelo de propósito general: está especializado en el análisis estático y el razonamiento sobre la representación intermedia (IR) de LLVM, el formato de código intermedio que utilizan las herramientas del ecosistema LLVM (clang, opt, llc). Su objetivo declarado es predecir estructuras de grafo de flujo de control (CFG), trazar dependencias def-use y resolver invariantes de la forma SSA phi.
+JanusIR-500M-Research es un modelo de lenguaje autoregresivo de 545,7 millones de parámetros (545.692.999 parámetros entrenables) desarrollado por el usuario the-jashthakkar y publicado en Hugging Face bajo licencia Apache 2.0. No es un modelo de propósito general: está especializado en el análisis estático y el razonamiento sobre la representación intermedia (IR) de LLVM, el formato de código intermedio que utilizan las herramientas del ecosistema LLVM (clang, opt, llc). Su objetivo declarado es predecir estructuras de grafo de flujo de control (CFG), trazar dependencias def-use y resolver invariantes de la forma SSA phi.
 
 La arquitectura es un híbrido multimodal dentro del dominio del compilador: combina un decodificador transformer causal que procesa texto de LLVM IR con una red relacional de atención sobre grafos (RGAT) que procesa la estructura del programa, unidas mediante capas de cross-attention con compuerta. El modelo se distribuye como pesos PyTorch, con un tamaño de repositorio de 2,2 GB y soporte declarado únicamente para inglés (en la práctica, para el dialecto textual de LLVM IR).
 
@@ -100,12 +100,12 @@ No disponible. En la información proporcionada no se identifican modelos compar
 - Riesgo de alucinación relevante: el modelo genera secuencias de IR y predicciones estructurales que pueden ser sintácticamente válidas pero semánticamente incorrectas. El propio autor recomienda verificar con `opt` o `llc` antes de aplicar cualquier transformación en entornos críticos.
 - Fuera de alcance explícito: no está pensado para diálogo conversacional ni para transpilación arbitraria de código fuente a código fuente.
 - Licencia Apache 2.0: permisiva, permite uso comercial y modificaciones, con obligación de conservar el aviso de licencia y de atribución. No hay restricciones de uso comercial declaradas.
-- Madurez muy baja: cero descargas y cero likes en HuggingFace, sin comunidad ni validación independiente de los resultados. Los benchmarks son de 50 programas y han sido producidos por el propio autor, sin replicación externa.
-- El repositorio indica `inference: false`, es decir, no está preparado para el servicio de inferencia alojado de HuggingFace.
+- Madurez muy baja: cero descargas y cero likes en Hugging Face, sin comunidad ni validación independiente de los resultados. Los benchmarks son de 50 programas y han sido producidos por el propio autor, sin replicación externa.
+- El repositorio indica `inference: false`, es decir, no está preparado para el servicio de inferencia alojado de Hugging Face.
 - Posible problema de metadatos: las fechas de creación y actualización (2026-09-29) son posteriores a la fecha habitual de publicación, lo que sugiere un error o una configuración manual del entorno de subida.
 - No se documentan sesgos específicos, pero al entrenarse sobre corpus de código de compilador cabe esperar sesgos hacia los patrones de generación de código de clang/LLVM y hacia las construcciones que aparecen en AnghaBench.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/the-jashthakkar/JanusIR-500M-Research
+- Modelo en Hugging Face: https://huggingface.co/the-jashthakkar/JanusIR-500M-Research
 - No se han encontrado en la búsqueda web otros enlaces relevantes al modelo (paper, repositorio de código, blog del autor ni demo). Los resultados devueltos por el buscador correspondían al artículo gramatical inglés "the" y no guardan relación con el modelo.

@@ -91,8 +91,8 @@ No se dispone de datos de rendimiento numéricos para establecer una comparació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/keithics/silero-vad-coreml
-- Modelo base en HuggingFace: https://huggingface.co/onnx-community/silero-vad
+- Hugging Face: https://huggingface.co/keithics/silero-vad-coreml
+- Modelo base en Hugging Face: https://huggingface.co/onnx-community/silero-vad
 - Silero VAD original (GitHub): https://github.com/snakers4/silero-vad
 - Repositorio FluidAudio: https://github.com/FluidInference/FluidAudio
 - FluidAudioSwift (GitHub): https://github.com/FluidAudio/FluidAudioSwift

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bhargav25/ppo-SnowballTarget es un agente de aprendizaje por refuerzo entrenado para resolver el entorno SnowballTarget de Unity ML-Agents. Lo publica el desarrollador Bhargav25 y se enmarca dentro de la comunidad de entornos de simulación de Unity, donde se entrenan políticas mediante algoritmos de RL. El modelo resuelve la tarea de lanzar bolas de nieve a objetivos que aparecen en la escena, maximizando la recompensa acumulada. Su relevancia radica en servir como ejemplo práctico de cómo entrenar y publicar agentes de RL en HuggingFace, facilitando la reproducción de experimentos y la integración con la herramienta ML-Agents. En cuanto a arquitectura, se trata de una red de política neuronal entrenada con Proximal Policy Optimization (PPO), aunque no se indican el número de parámetros ni la longitud de contexto, que no aplica por ser un modelo de control y no de generación de lenguaje.
+Bhargav25/ppo-SnowballTarget es un agente de aprendizaje por refuerzo entrenado para resolver el entorno SnowballTarget de Unity ML-Agents. Lo publica el desarrollador Bhargav25 y se enmarca dentro de la comunidad de entornos de simulación de Unity, donde se entrenan políticas mediante algoritmos de RL. El modelo resuelve la tarea de lanzar bolas de nieve a objetivos que aparecen en la escena, maximizando la recompensa acumulada. Su relevancia radica en servir como ejemplo práctico de cómo entrenar y publicar agentes de RL en Hugging Face, facilitando la reproducción de experimentos y la integración con la herramienta ML-Agents. En cuanto a arquitectura, se trata de una red de política neuronal entrenada con Proximal Policy Optimization (PPO), aunque no se indican el número de parámetros ni la longitud de contexto, que no aplica por ser un modelo de control y no de generación de lenguaje.
 
 ## Especificaciones técnicas
 
@@ -34,8 +34,8 @@ El modelo se ha entrenado con el algoritmo Proximal Policy Optimization (PPO) im
 
 - Investigación en aprendizaje por refuerzo: el modelo puede utilizarse como punto de partida para comparar variantes de PPO en un entorno de control continuo o discreto, analizando la convergencia de la política y la sensibilidad a hiperparámetros.
 - Desarrollo de juegos: se puede integrar en un prototipo de Unity para probar mecánicas de lanzamiento de proyectiles y ajustar la dificultad del juego antes de implementar un sistema de control personalizado.
-- Educación y formación en RL: sirve como ejemplo didáctico en cursos de aprendizaje por refuerzo para ilustrar el ciclo de entrenamiento, exportación a ONNX y publicación en HuggingFace.
-- Demos interactivas en navegador: mediante la integración de HuggingFace con ML-Agents, el agente puede ejecutarse en el navegador para mostrar el comportamiento aprendido a una audiencia técnica.
+- Educación y formación en RL: sirve como ejemplo didáctico en cursos de aprendizaje por refuerzo para ilustrar el ciclo de entrenamiento, exportación a ONNX y publicación en Hugging Face.
+- Demos interactivas en navegador: mediante la integración de Hugging Face con ML-Agents, el agente puede ejecutarse en el navegador para mostrar el comportamiento aprendido a una audiencia técnica.
 - Evaluación de algoritmos: se puede emplear como benchmark dentro de la suite SnowballTarget para comparar el rendimiento entre agentes entrenados con PPO y otros algoritmos de RL, aunque para ello se requeriría reproducir el entrenamiento.
 - Reproducibilidad de experimentos: al publicar los pesos en ONNX y .nn, otros investigadores pueden cargar el modelo en Unity y verificar el comportamiento, contrastándolo con sus propias implementaciones o configuraciones.
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible.
 - GPU recomendada: no disponible.
 - No se dispone de datos sobre si cabe en GPUs de consumo, aunque al tratarse de un agente de ML-Agents es probable que pueda ejecutarse en CPU con un rendimiento suficiente para entornos sencillos.
-- Opciones de despliegue: Unity ML-Agents Toolkit, ejecución de archivos .nn en Unity, inferencia ONNX en entornos compatibles y visualización mediante HuggingFace Spaces.
+- Opciones de despliegue: Unity ML-Agents Toolkit, ejecución de archivos .nn en Unity, inferencia ONNX en entornos compatibles y visualización mediante Hugging Face Spaces.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -73,10 +73,10 @@ Los tres modelos comparten la misma tarea y el mismo algoritmo de entrenamiento,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Bhargav25/ppo-SnowballTarget
+- Hugging Face: https://huggingface.co/Bhargav25/ppo-SnowballTarget
 - Unity ML-Agents (repo): https://github.com/Unity-Technologies/ml-agents
 - Documentación ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
-- Curso de HuggingFace sobre ML-Agents: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
-- Curso de HuggingFace sobre RL: https://huggingface.co/learn/deep-rl-course/unit5/introduction
+- Curso de Hugging Face sobre ML-Agents: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
+- Curso de Hugging Face sobre RL: https://huggingface.co/learn/deep-rl-course/unit5/introduction
 - Modelo comparable (gsn-codes): https://huggingface.co/gsn-codes/ppo-SnowballTarget
 - Modelo comparable (Adilbai): https://huggingface.co/Adilbai/ppo-SnowballTarget

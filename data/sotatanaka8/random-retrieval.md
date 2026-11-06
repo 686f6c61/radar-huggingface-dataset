@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`sotatanaka8/random-retrieval` es un repositorio de HuggingFace publicado por el usuario sotatanaka8 que contiene una implementacion propia y compacta en PyTorch de una arquitectura tipo Blip orientada a tareas de retrieval. Se trata de una configuracion "tiny" con 24.832 parametros totales, pensada explicitamente por su autor para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala, no como un modelo preentrenado listo para produccion. La model card es transparente al respecto: el checkpoint `model.safetensors` es una inicializacion valida, no un modelo entrenado ni evaluado.
+`sotatanaka8/random-retrieval` es un repositorio de Hugging Face publicado por el usuario sotatanaka8 que contiene una implementacion propia y compacta en PyTorch de una arquitectura tipo Blip orientada a tareas de retrieval. Se trata de una configuracion "tiny" con 24.832 parametros totales, pensada explicitamente por su autor para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala, no como un modelo preentrenado listo para produccion. La model card es transparente al respecto: el checkpoint `model.safetensors` es una inicializacion valida, no un modelo entrenado ni evaluado.
 
 El problema que aborda es el de disponer de un artefacto minimo y reproducible para trabajar sobre el flujo completo de un sistema de retrieval multimodal (carga de configuracion, instanciacion del modelo, paso forward y ejecucion de un ejemplo de entrenamiento) sin el coste computacional de un Blip real. La implementacion incorpora decisiones de diseno modernas a escala reducida: atencion con grouped query, fusion con compuerta (gated fusion), activacion approx gelu y normalizacion RMSNorm.
 
-Su relevancia actual es acotada y de caracter practico: sirve como banco de pruebas para validar harnesses de evaluacion, adaptadores de carga personalizados y recetas de entrenamiento, dado que la API generica de carga automatica de HuggingFace requiere un adaptador explicito para este tipo de implementacion custom. Con 0 descargas y 0 likes, y sin resultados de benchmarks publicados, no debe considerarse una alternativa a los checkpoints Blip de Salesforce ni a CLIP para retrieval en produccion.
+Su relevancia actual es acotada y de caracter practico: sirve como banco de pruebas para validar harnesses de evaluacion, adaptadores de carga personalizados y recetas de entrenamiento, dado que la API generica de carga automatica de Hugging Face requiere un adaptador explicito para este tipo de implementacion custom. Con 0 descargas y 0 likes, y sin resultados de benchmarks publicados, no debe considerarse una alternativa a los checkpoints Blip de Salesforce ni a CLIP para retrieval en produccion.
 
 ## Especificaciones tecnicas
 
@@ -54,7 +54,7 @@ No hay evidencia en la informacion disponible de que el checkpoint incluido teng
 - Pruebas de humo en pipelines de retrieval: el checkpoint de inicializacion permite verificar que la carga de `config.json` y `model.safetensors` funciona antes de sustituirlo por un modelo entrenado, con un coste de memoria despreciable.
 - Revision de codigo y auditoria de implementaciones Blip: `model.py` es el artefacto principal y sirve para inspeccionar como se implementan grouped query attention, gated fusion y RMSNorm en una base pequena y legible.
 - Prototipado de arquitecturas multimodales: util para validar decisiones de diseno (activacion, normalizacion, fusion) antes de escalarlas a configuraciones mayores.
-- Integracion continua: validar en tests automatizados que los adaptadores de carga personalizados funcionan, ya que la API generica de HuggingFace requiere un adaptador explicito para esta implementacion.
+- Integracion continua: validar en tests automatizados que los adaptadores de carga personalizados funcionan, ya que la API generica de Hugging Face requiere un adaptador explicito para esta implementacion.
 - Docencia y formacion: estudiar el flujo completo de un modelo de retrieval multimodal (definicion, configuracion, pesos y receta de entrenamiento) sin requerir GPU.
 - Reproducibilidad de recetas de entrenamiento: `training_args.json` fija rmsprop y schedule coseno, lo que permite comprobar que un harness de entrenamiento arranca correctamente con esos hiperparametros.
 - Punto de partida para fine-tuning propio: el checkpoint puede inicializar experimentos sobre Flickr30k o COCO, siempre que se documente por separado cualquier resultado obtenido tras el entrenamiento.
@@ -79,7 +79,7 @@ La comparacion cuantitativa no es posible con la informacion disponible: este re
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sotatanaka8/random-retrieval | 24.832 | no disponible | sin benchmarks publicados; checkpoint sin entrenar | apache-2.0 | HuggingFace |
+| sotatanaka8/random-retrieval | 24.832 | no disponible | sin benchmarks publicados; checkpoint sin entrenar | apache-2.0 | Hugging Face |
 | Salesforce BLIP (checkpoints de retrieval) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada |
 | CLIP (variantes de retrieval imagen-texto) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada |
 
@@ -93,12 +93,12 @@ En terminos cualitativos, la diferencia fundamental no es de tamano sino de esta
 - Riesgo de alucinacion: no aplica en el sentido habitual, ya que el modelo no esta entrenado para generar respuestas; cualquier salida debe interpretarse como ruido de inicializacion.
 - Limitaciones de contexto e idioma: no disponibles; no hay informacion sobre ventana de contexto ni idiomas soportados.
 - Restricciones de licencia: el codigo y los pesos se publican bajo apache-2.0, una licencia permisiva que permite uso comercial; no obstante, el autor recomienda revisar por separado los terminos de los datos de origen cuando el repositorio se use con datasets externos.
-- Caveat de integracion: al ser una implementacion custom, no se puede cargar con las API genericas de HuggingFace sin un adaptador explicito.
+- Caveat de integracion: al ser una implementacion custom, no se puede cargar con las API genericas de Hugging Face sin un adaptador explicito.
 - Caveat de reproducibilidad: cualquier resultado de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos en el repositorio; mezclar ambos seria enganoso.
 - Madurez del proyecto: 0 descargas, 0 likes, repositorio de 0,0 GB y sin pipeline declarado, lo que indica un artefacto experimental de un unico autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sotatanaka8/random-retrieval
+- Modelo en Hugging Face: https://huggingface.co/sotatanaka8/random-retrieval
 - Ficheros del repositorio (segun la model card): `model.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors` (checkpoint de inicializacion).
 - Busqueda web: no se han encontrado enlaces relevantes sobre este modelo, su paper o demos. Los resultados devueltos por el buscador correspondian a paginas genericas de servicios de internet y no guardan relacion con el repositorio.

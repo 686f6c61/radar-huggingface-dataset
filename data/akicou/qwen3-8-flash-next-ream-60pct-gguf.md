@@ -77,7 +77,7 @@ La comparativa directa con otros modelos comprimidos no está disponible. La pri
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Akicou/Qwen3.8-Flash-Next-REAM-60Pct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Akicou/Qwen3.8-Flash-Next-REAM-60Pct-GGUF
 - Modelo base comprimido (safetensors): https://huggingface.co/Akicou/Qwen3.8-Flash-Next-REAM-60Pct
 - Modelo original Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/

@@ -79,6 +79,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shivam3002/meter-load-forecasting-transformer
+- Modelo en Hugging Face: https://huggingface.co/Shivam3002/meter-load-forecasting-transformer
 - Código fuente (GitHub): https://github.com/shivam2003-dev/meter-load-forecasting-transformer
 - Dataset UCI Individual Household Electric Power Consumption: https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption

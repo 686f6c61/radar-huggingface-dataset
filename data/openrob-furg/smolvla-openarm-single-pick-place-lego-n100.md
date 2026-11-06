@@ -68,9 +68,9 @@ Solo se dispone de datos comparativos internos del mismo estudio de escalado (mi
 
 | Modelo | Episodios de entrenamiento | Datos | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| openrob-furg/smolvla-openarm-single-pick-place-lego-n50 | 50 | no disponible | Apache 2.0 | HuggingFace |
-| openrob-furg/smolvla-openarm-single-pick-place-lego-n100 | 100 (24.937 fotogramas) | dataset openrob-furg/openarm-single-pick-place-lego | Apache 2.0 | HuggingFace |
-| openrob-furg/smolvla-openarm-single-pick-place-lego-n200 | 200 | no disponible | Apache 2.0 | HuggingFace |
+| openrob-furg/smolvla-openarm-single-pick-place-lego-n50 | 50 | no disponible | Apache 2.0 | Hugging Face |
+| openrob-furg/smolvla-openarm-single-pick-place-lego-n100 | 100 (24.937 fotogramas) | dataset openrob-furg/openarm-single-pick-place-lego | Apache 2.0 | Hugging Face |
+| openrob-furg/smolvla-openarm-single-pick-place-lego-n200 | 200 | no disponible | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ Solo se dispone de datos comparativos internos del mismo estudio de escalado (mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/openrob-furg/smolvla-openarm-single-pick-place-lego-n100
+- Modelo en Hugging Face: https://huggingface.co/openrob-furg/smolvla-openarm-single-pick-place-lego-n100
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/openrob-furg/openarm-single-pick-place-lego
 - Variante n50: https://huggingface.co/openrob-furg/smolvla-openarm-single-pick-place-lego-n50

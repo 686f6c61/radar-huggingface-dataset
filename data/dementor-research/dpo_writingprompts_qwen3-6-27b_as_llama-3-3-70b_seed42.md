@@ -72,6 +72,6 @@ No disponible. No se han publicado comparativas de este adaptador con otros mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_writingprompts_qwen3.6-27b_as_llama-3.3-70b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_writingprompts_qwen3.6-27b_as_llama-3.3-70b_seed42
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Herramienta de entrenamiento Tinker: https://thinkingmachines.ai/tinker/

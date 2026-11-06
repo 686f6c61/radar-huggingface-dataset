@@ -108,7 +108,7 @@ Comparacion con modelos de terceros: no disponible en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tostibrown/Ornith-1.5-35B-A3B-MLX-4bit-aligned
+- Repositorio en Hugging Face: https://huggingface.co/Tostibrown/Ornith-1.5-35B-A3B-MLX-4bit-aligned
 - Checkpoint base cuantizado: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit
 - Modelo base sin cuantizar: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Repositorio Mei (incluye `tools/align_safetensors.py`): https://github.com/tijs/mei

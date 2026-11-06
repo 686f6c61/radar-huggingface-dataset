@@ -77,7 +77,7 @@ La comparativa es orientativa, ya que no hay datos oficiales de rendimiento para
 ## Enlaces
 
 - [Modelo en Hugging Face (merged)](https://huggingface.co/Jakelolipopp/Qwen3.5-9B-AltText-v4-merged)
-- [LoRA base en HuggingFace](https://huggingface.co/Jakelolipopp/Qwen3.5-9B-AltText-v4-LORA)
+- [LoRA base en Hugging Face](https://huggingface.co/Jakelolipopp/Qwen3.5-9B-AltText-v4-LORA)
 - [Modelo base unsloth/Qwen3.5-9B](https://huggingface.co/unsloth/Qwen3.5-9B)
 - [Blog de Qwen3.5](https://qwen.ai/blog?id=qwen3.5)
 - [Página de Qwen3.5:9b en Ollama](https://ollama.com/library/qwen3.5:9b)

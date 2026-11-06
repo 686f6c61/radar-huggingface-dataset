@@ -72,7 +72,7 @@ El autor publica lecturas propias sobre 60 imagenes y 40 especificaciones no vis
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AbstractPhil/gemma-4-12b-think-symbolic-image | 12B (base) + LoRA | no disponible | Descripcion simbolica de arte con cadena de pensamiento | apache-2.0 | Adaptador en HuggingFace, 0 descargas |
+| AbstractPhil/gemma-4-12b-think-symbolic-image | 12B (base) + LoRA | no disponible | Descripcion simbolica de arte con cadena de pensamiento | apache-2.0 | Adaptador en Hugging Face, 0 descargas |
 | Gemma 4 E4B (misma linea) | no disponible | no disponible | Misma tarea, menor talla | no disponible | Referenciado en la model card |
 | Lucia v1 (Qwen3.5 9B) | 9B | no disponible | Misma clase de tarea | no disponible | Referenciado en la model card |
 
@@ -92,7 +92,7 @@ En las lecturas del autor, las tres opciones empatan en forma de fila (1,00) y p
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/AbstractPhil/gemma-4-12b-think-symbolic-image
+- Hugging Face del adaptador: https://huggingface.co/AbstractPhil/gemma-4-12b-think-symbolic-image
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Dataset de captions: https://huggingface.co/datasets/AbstractPhil/thought-symbolic-image-captions
 - Dataset de entrenamiento: https://huggingface.co/datasets/AbstractPhil/qwen-symbolic-thinking-image-training

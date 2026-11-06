@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alfworld-Qwen3-8B-SEED es un ajuste fino de Qwen3-8B desarrollado por el usuario wckwan (repositorio `wckwan/Alfworld-Qwen3-8B-SEED`) sobre el entorno de agentes ALFWorld, entrenado con la receta SEED en su variante "direct-to-RL", sin etapa previa de SFT de habilidades retrospectivas (hindsight-skill SFT). No es un modelo de chat generalista: es una política (actor) para resolver tareas domésticas interactivas en texto, distribuida como una serie de checkpoints intermedios exportados en formato HuggingFace (`merged_hf_actor_gs<N>/`) cada 20 pasos de entrenamiento, hasta un total de 400 pasos.
+Alfworld-Qwen3-8B-SEED es un ajuste fino de Qwen3-8B desarrollado por el usuario wckwan (repositorio `wckwan/Alfworld-Qwen3-8B-SEED`) sobre el entorno de agentes ALFWorld, entrenado con la receta SEED en su variante "direct-to-RL", sin etapa previa de SFT de habilidades retrospectivas (hindsight-skill SFT). No es un modelo de chat generalista: es una política (actor) para resolver tareas domésticas interactivas en texto, distribuida como una serie de checkpoints intermedios exportados en formato Hugging Face (`merged_hf_actor_gs<N>/`) cada 20 pasos de entrenamiento, hasta un total de 400 pasos.
 
 Su relevancia es metodológica más que de producto. La propia model card documenta que esta variante es un "SEED parcial, no limpio": el paso de análisis de la receta falla en una fracción grande de trayectorias (entre el 10,2 % y el 43,8 % por paso en los primeros 125 pasos, con 20-34 % agregado), y las trayectorias cuyo análisis falla reciben máscara OPD cero y se entrenan como RL de resultado puro. En consecuencia, una parte sustancial de este brazo es GRPO ordinario disfrazado de SEED, lo que contamina cualquier comparación SEED frente a GRPO o GiGPO hecha con estos pesos.
 
@@ -99,10 +99,10 @@ Los únicos comparables documentados en la información disponible son las celda
 
 | Modelo | Parametros | Entorno | Tasa de fallo de analisis | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Alfworld-Qwen3-8B-SEED | ~8,2 B | ALFWorld | 20-34 % | no disponible | HuggingFace, 0 descargas, 0 likes |
+| Alfworld-Qwen3-8B-SEED | ~8,2 B | ALFWorld | 20-34 % | no disponible | Hugging Face, 0 descargas, 0 likes |
 | ALFWorld x OLMo-3-7B | ~7 B | ALFWorld | por debajo del 1 % en los primeros pasos | no disponible | celda del mismo programa, no publicada como repo independiente en la informacion disponible |
 | WebShop x Qwen3-8B | ~8,2 B | WebShop | cerca del 0 % | no disponible | celda del mismo programa |
-| Qwen3-8B (modelo base) | ~8,2 B | no aplica | no aplica | Apache 2.0 | publico en HuggingFace |
+| Qwen3-8B (modelo base) | ~8,2 B | no aplica | no aplica | Apache 2.0 | publico en Hugging Face |
 
 No hay comparación posible en benchmarks de held-out, porque ninguna de estas celdas tiene mediciones válidas publicadas según la propia model card.
 
@@ -122,7 +122,7 @@ No hay comparación posible en benchmarks de held-out, porque ninguna de estas c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wckwan/Alfworld-Qwen3-8B-SEED
+- Hugging Face: https://huggingface.co/wckwan/Alfworld-Qwen3-8B-SEED
 - Manifest de integridad: `MANIFEST.sha256` en la raíz del repositorio (lista todos los archivos de cada export)
 - Script de verificación de evaluación: `scripts/check_result_alfworld.py` (fija las colas de los diez primeros gamefiles y valida la identidad de la tarea)
 - Modelo base: Qwen3-8B, https://huggingface.co/Qwen/Qwen3-8B (licencia Apache 2.0)

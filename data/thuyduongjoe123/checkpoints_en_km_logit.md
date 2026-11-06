@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`thuyduongjoe123/checkpoints_en_km_logit` es un checkpoint publicado en HuggingFace Hub por el usuario `thuyduongjoe123`, con un tamano real de 1.720.574.976 parametros (aproximadamente 1,72 mil millones) verificado a partir de los pesos en safetensors, y un repositorio de 3,5 GB. La model card es la plantilla automatica de HuggingFace sin rellenar: no incluye descripcion, autor real, datos de entrenamiento, licencia ni resultados de evaluacion. Toda la informacion sustantiva disponible procede de las etiquetas del repositorio y de los metadatos del Hub.
+`thuyduongjoe123/checkpoints_en_km_logit` es un checkpoint publicado en Hugging Face Hub por el usuario `thuyduongjoe123`, con un tamano real de 1.720.574.976 parametros (aproximadamente 1,72 mil millones) verificado a partir de los pesos en safetensors, y un repositorio de 3,5 GB. La model card es la plantilla automatica de Hugging Face sin rellenar: no incluye descripcion, autor real, datos de entrenamiento, licencia ni resultados de evaluacion. Toda la informacion sustantiva disponible procede de las etiquetas del repositorio y de los metadatos del Hub.
 
 La etiqueta `qwen3` sugiere que el modelo deriva de la familia Qwen3, y la configuracion declarada es `transformers` con pipeline de `text-generation` y caracter conversacional. El nombre del repositorio (`en_km_logit`) apunta a un ajuste orientado a un par de idiomas ingles-jemer (en-km), posiblemente mediante entrenamiento sobre logits, aunque esto no esta confirmado en ninguna fuente. No existe documentacion que describa el problema que resuelve ni el proceso de entrenamiento seguido.
 
@@ -91,12 +91,12 @@ No es posible establecer una comparativa fiable de rendimiento con alternativas 
 - Contexto e idiomas desconocidos: no se puede garantizar un comportamiento correcto mas alla de secuencias cortas ni en idiomas distintos del ingles.
 - Fechas de creacion y actualizacion inusuales (2026-09-11) en los metadatos del Hub: conviene verificar la procedencia del repositorio.
 - Sin soporte de la comunidad: al no existir issues, discusiones ni derivados, cualquier problema encontrado no tendra respuesta del autor.
-- La referencia `arxiv:1910.09700` presente en las etiquetas corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, que forma parte de la plantilla automatica de HuggingFace. No es un paper de este modelo.
+- La referencia `arxiv:1910.09700` presente en las etiquetas corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, que forma parte de la plantilla automatica de Hugging Face. No es un paper de este modelo.
 - Los resultados de busqueda web devueltos no guardan ninguna relacion con el modelo (paginas de soporte de Microsoft), por lo que no aportan informacion adicional.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thuyduongjoe123/checkpoints_en_km_logit
-- Paper referenciado en las etiquetas (plantilla de HuggingFace, no del modelo): https://arxiv.org/abs/1910.09700
+- Repositorio en Hugging Face: https://huggingface.co/thuyduongjoe123/checkpoints_en_km_logit
+- Paper referenciado en las etiquetas (plantilla de Hugging Face, no del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.

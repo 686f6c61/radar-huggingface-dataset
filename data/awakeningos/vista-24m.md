@@ -6,7 +6,7 @@ VISTA-24M es un modelo de lenguaje causal de 24,28 millones de parámetros desar
 
 El modelo tiene 7 capas, dimensión oculta de 256, vocabulario de 16.384 tokens y un contexto de entrenamiento de hasta 512 posiciones. Se entrenó sobre el corpus BabyLM 2026 English Strict-Small (10 millones de palabras) con 10 pasadas, lo que equivale a 100 millones de palabras de exposición; el checkpoint publicado por defecto corresponde a las 80 millones de palabras y su contador interno registra 129.927.852 objetivos válidos de siguiente token. Es un modelo base de continuación de texto, en inglés, sin plantilla de chat ni ajuste por instrucciones.
 
-Su relevancia es acotada y muy específica: es un banco de pruebas reproducible para estudiar arquitecturas eficientes y análisis de representaciones con recursos mínimos, dentro del ecosistema BabyLM. No compite con modelos de propósito general: su adopción actual es nula (0 descargas y 0 likes en HuggingFace en el momento de la consulta) y su valor es fundamentalmente de investigación.
+Su relevancia es acotada y muy específica: es un banco de pruebas reproducible para estudiar arquitecturas eficientes y análisis de representaciones con recursos mínimos, dentro del ecosistema BabyLM. No compite con modelos de propósito general: su adopción actual es nula (0 descargas y 0 likes en Hugging Face en el momento de la consulta) y su valor es fundamentalmente de investigación.
 
 ## Especificaciones tecnicas
 
@@ -81,10 +81,10 @@ No se han publicado resultados desglosados por tarea (MMLU, HumanEval, GSM8K u o
 
 | Modelo | Parametros | Contexto | Corpus de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VISTA-24M | 24,28 M | 512 tokens | BabyLM 2026 English Strict-Small, 10 M de palabras, 10 pasadas | MIT | HuggingFace, requiere `trust_remote_code`, sin cuantizaciones publicadas |
-| Pythia-14M | 14 M | 2.048 tokens | The Pile | Apache 2.0 | HuggingFace, ecosistema estandar de Transformers |
-| Pythia-70M | 70 M | 2.048 tokens | The Pile | Apache 2.0 | HuggingFace, ecosistema estandar de Transformers |
-| GPT-2 small | 124 M | 1.024 tokens | WebText | Licencia MIT modificada | HuggingFace, ampliamente soportado |
+| VISTA-24M | 24,28 M | 512 tokens | BabyLM 2026 English Strict-Small, 10 M de palabras, 10 pasadas | MIT | Hugging Face, requiere `trust_remote_code`, sin cuantizaciones publicadas |
+| Pythia-14M | 14 M | 2.048 tokens | The Pile | Apache 2.0 | Hugging Face, ecosistema estandar de Transformers |
+| Pythia-70M | 70 M | 2.048 tokens | The Pile | Apache 2.0 | Hugging Face, ecosistema estandar de Transformers |
+| GPT-2 small | 124 M | 1.024 tokens | WebText | Licencia MIT modificada | Hugging Face, ampliamente soportado |
 
 Los datos de rendimiento comparativo entre VISTA-24M y estas alternativas no están disponibles en la información proporcionada; solo se conocen las dos medias agregadas de VISTA-24M indicadas en el apartado anterior, que no son directamente equiparables a las evaluaciones publicadas de los otros modelos.
 
@@ -103,8 +103,8 @@ Los datos de rendimiento comparativo entre VISTA-24M y estas alternativas no est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AwakeningOS/VISTA-24M
-- Perfil del autor en HuggingFace: https://huggingface.co/AwakeningOS
+- Modelo en Hugging Face: https://huggingface.co/AwakeningOS/VISTA-24M
+- Perfil del autor en Hugging Face: https://huggingface.co/AwakeningOS
 - Repositorio GitHub del proyecto: https://github.com/AwakeningOS/AwakeningOS
 - Organización en GitHub: https://github.com/AwakeningOS/
 - Descripción arquitectónica incluida en el repositorio: `ARCHITECTURE.md`

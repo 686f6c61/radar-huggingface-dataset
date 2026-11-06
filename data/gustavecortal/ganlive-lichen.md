@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Resolucion | Latente | Velocidad declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ganlive-lichen | 3072x2048 | 256 | 107 fps en Intel Arc A770 | MIT | HuggingFace |
-| ganlive-amber | 1536x1024 | no disponible | mas rapido y ligero que lichen, sin cifra concreta | MIT | HuggingFace |
+| ganlive-lichen | 3072x2048 | 256 | 107 fps en Intel Arc A770 | MIT | Hugging Face |
+| ganlive-amber | 1536x1024 | no disponible | mas rapido y ligero que lichen, sin cifra concreta | MIT | Hugging Face |
 | StyleGAN2 generico | variable | no disponible | no disponible | variable segun implementacion | Se puede cargar en ganlive |
 
 La model card no ofrece comparativas con otras GAN contemporaneas ni con modelos de difusion; los unicos puntos de comparacion explicitos son su modelo hermano y la compatibilidad generica con StyleGAN2 dentro de ganlive.
@@ -86,7 +86,7 @@ La model card no ofrece comparativas con otras GAN contemporaneas ni con modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gustavecortal/ganlive-lichen
+- Modelo en Hugging Face: https://huggingface.co/gustavecortal/ganlive-lichen
 - Modelo hermano ganlive-amber: https://huggingface.co/gustavecortal/ganlive-amber
 - Herramienta ganlive: https://github.com/gustavecortal/ganlive
 - Herramienta de entrenamiento gantrain: https://github.com/gustavecortal/gantrain

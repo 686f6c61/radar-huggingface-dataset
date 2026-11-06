@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Se trata de una politica de robotica basada en ACT (Action Chunking with Transformers), un metodo de aprendizaje por imitacion que predice fragmentos cortos de acciones (chunks) en lugar de pasos individuales. El modelo ha sido entrenado por el usuario MakinoKF y publicado en HuggingFace Hub mediante la libreria LeRobot, con licencia Apache 2.0. Su unico objetivo es ejecutar la tarea "pick the nut" sobre un robot de tipo `so101_enhanced_follower` (variante del SO-101), a partir de observaciones visuales de dos camaras (`top` y `left`) y del estado articular.
+Se trata de una politica de robotica basada en ACT (Action Chunking with Transformers), un metodo de aprendizaje por imitacion que predice fragmentos cortos de acciones (chunks) en lugar de pasos individuales. El modelo ha sido entrenado por el usuario MakinoKF y publicado en Hugging Face Hub mediante la libreria LeRobot, con licencia Apache 2.0. Su unico objetivo es ejecutar la tarea "pick the nut" sobre un robot de tipo `so101_enhanced_follower` (variante del SO-101), a partir de observaciones visuales de dos camaras (`top` y `left`) y del estado articular.
 
 El modelo cuenta con 51.668.614 parametros (unos 51,7 M) y un repositorio de 0,2 GB, por lo que es extremadamente ligero en comparacion con los grandes modelos de lenguaje. No procesa texto ni lenguaje natural: es un controlador visuomotor que consume imagenes RGB de 480x640 y un vector de estado de 6 dimensiones, y produce un vector de accion de 6 dimensiones. Su relevancia radica en que es un ejemplo reproducible y de pesos abiertos del flujo completo de LeRobot para entrenar y desplegar politicas de manipulacion roboticas de bajo coste.
 
@@ -71,9 +71,9 @@ No se dispone de datos de rendimiento de este modelo ni de otros comparables en 
 
 | Modelo | Metodo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (ACT, `so101_enhanced_follower`) | ACT | 51,7 M | no aplica | Apache 2.0 | HuggingFace Hub |
-| Politicas ACT genericas de LeRobot | ACT | variable segun configuracion | no aplica | normalmente Apache 2.0 | HuggingFace Hub / LeRobot |
-| Diffusion Policy (LeRobot) | Diffusion Policy | variable, no disponible | no aplica | habitualmente Apache 2.0 | HuggingFace Hub / LeRobot |
+| Este modelo (ACT, `so101_enhanced_follower`) | ACT | 51,7 M | no aplica | Apache 2.0 | Hugging Face Hub |
+| Politicas ACT genericas de LeRobot | ACT | variable segun configuracion | no aplica | normalmente Apache 2.0 | Hugging Face Hub / LeRobot |
+| Diffusion Policy (LeRobot) | Diffusion Policy | variable, no disponible | no aplica | habitualmente Apache 2.0 | Hugging Face Hub / LeRobot |
 
 Los datos de rendimiento comparativo, parametros exactos de las alternativas y contexto no estan disponibles en la informacion proporcionada.
 
@@ -91,7 +91,7 @@ Los datos de rendimiento comparativo, parametros exactos de las alternativas y c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MakinoKF/final_demo_pick_nut_on_scale_20260918_172246_act-policy-v1
+- Modelo en Hugging Face: https://huggingface.co/MakinoKF/final_demo_pick_nut_on_scale_20260918_172246_act-policy-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/MakinoKF/final_demo_pick_nut_on_scale_20260918_172246
 - Visualizacion del dataset en LeRobot: https://huggingface.co/spaces/lerobot/visualize_dataset?path=MakinoKF/final_demo_pick_nut_on_scale_20260918_172246
 - Paper de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

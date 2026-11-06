@@ -2,7 +2,7 @@
 
 ## Resumen
 
-clef-MLX-8bit es una conversión al formato MLX del modelo Cloudflare/clef, publicada por la organización nativ-community. Se trata de un modelo de decisión multimodal: en lugar de generar texto, devuelve una probabilidad para cada opción de cada pregunta planteada en una única pasada hacia delante (forward pass). El pipeline declarado en HuggingFace es image-text-to-text, y los registros de verificación de la model card cubren entradas de texto, imagen, vídeo, imagen más vídeo, dos imágenes simultáneas, max_pixels, fps y num_frames.
+clef-MLX-8bit es una conversión al formato MLX del modelo Cloudflare/clef, publicada por la organización nativ-community. Se trata de un modelo de decisión multimodal: en lugar de generar texto, devuelve una probabilidad para cada opción de cada pregunta planteada en una única pasada hacia delante (forward pass). El pipeline declarado en Hugging Face es image-text-to-text, y los registros de verificación de la model card cubren entradas de texto, imagen, vídeo, imagen más vídeo, dos imágenes simultáneas, max_pixels, fps y num_frames.
 
 El repositorio contiene 27.484.784.881 parámetros con cuantización affine de 8 bits y tamaño de grupo 64, lo que da un tamaño de 29,8 GB. La licencia es Apache 2.0 y la librería es mlx, con soporte a través de mlx-vlm. En el momento de la publicación, el soporte de Clef todavía no formaba parte de una release estable de mlx-vlm, por lo que es necesario instalar la rama `feat/clef` desde el repositorio de Lazarus-931.
 
@@ -75,8 +75,8 @@ Lo que sí se publica es una verificación de fidelidad de la conversión frente
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nativ-community/clef-MLX-8bit | 27.484.784.881 | no disponible | safetensors MLX, 8-bit affine | Apache 2.0 | HuggingFace, 0 descargas |
-| Cloudflare/clef (origen, torch bf16) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace (revisión `ed3eed33...`) |
+| nativ-community/clef-MLX-8bit | 27.484.784.881 | no disponible | safetensors MLX, 8-bit affine | Apache 2.0 | Hugging Face, 0 descargas |
+| Cloudflare/clef (origen, torch bf16) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face (revisión `ed3eed33...`) |
 | Alternativas de decisión multimodal comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la información proporcionada otros modelos de decisión multimodal de la misma categoría con los que establecer una comparación cuantitativa. Las referencias encontradas en la búsqueda web (heynativ.com, bynativ.com, natif-shop.com, un programa de nutrición) no guardan relación con el modelo.

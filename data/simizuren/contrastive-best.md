@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Simizuren/contrastive-best` es un repositorio de HuggingFace publicado por el usuario Simizuren que contiene una implementación propia de un *Tiny Transformer* orientada a aprendizaje contrastivo. No es un modelo entrenado: la model card describe explícitamente `model.safetensors` como un *checkpoint* de inicialización válido para *smoke tests*, no como un modelo con pesos ajustados ni evaluados. El repositorio se presenta como código transparente y reproducible, con argumentos de entrenamiento por defecto, más que como un artefacto listo para producción.
+`Simizuren/contrastive-best` es un repositorio de Hugging Face publicado por el usuario Simizuren que contiene una implementación propia de un *Tiny Transformer* orientada a aprendizaje contrastivo. No es un modelo entrenado: la model card describe explícitamente `model.safetensors` como un *checkpoint* de inicialización válido para *smoke tests*, no como un modelo con pesos ajustados ni evaluados. El repositorio se presenta como código transparente y reproducible, con argumentos de entrenamiento por defecto, más que como un artefacto listo para producción.
 
 El tamaño real registrado en el archivo de pesos es de 49.600 parámetros totales, lo que lo sitúa en la categoría de modelos de juguete o didácticos (por debajo de 0,1 M). La configuración etiquetada como "huge" en la model card es una etiqueta de escala interna del generador de configuraciones, no un indicador de capacidad real. A pesar del nombre del repositorio ("best"), no se reclama ninguna métrica de benchmark ni se aporta evidencia de entrenamiento completado.
 
@@ -20,7 +20,7 @@ Su relevancia es, por tanto, limitada y de carácter experimental: sirve como es
 | Idiomas soportados | no disponible (no se declara ningún idioma en la model card ni en los metadatos) |
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors (`model.safetensors`), con código Python (`run.py`) y `config.json` / `training_args.json` |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Fusion | concatenación + MLP (*concat mlp*) |
 | Activación | mish |
 | Normalización | RMSNorm |
@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en el material proporcio
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Simizuren/contrastive-best | 49.600 | no disponible | BSD-3-Clause | HuggingFace (0 descargas) | Checkpoint de inicialización, sin entrenar ni evaluar |
+| Simizuren/contrastive-best | 49.600 | no disponible | BSD-3-Clause | Hugging Face (0 descargas) | Checkpoint de inicialización, sin entrenar ni evaluar |
 | Alternativa comparable 1 | no disponible | no disponible | no disponible | no disponible | Sin datos en la información proporcionada |
 | Alternativa comparable 2 | no disponible | no disponible | no disponible | no disponible | Sin datos en la información proporcionada |
 
@@ -83,11 +83,11 @@ No se dispone de información sobre modelos comparables en el material proporcio
 - No hay evaluación de sesgos ni de alucinación porque no existe comportamiento entrenado que evaluar; cualquier métrica de este tipo sería inaplicable.
 - No se declaran idiomas soportados ni longitud de contexto, lo que impide planificar su uso en tareas con requisitos de ventana o cobertura lingüística.
 - La licencia BSD-3-Clause permite uso comercial y modificación con atribución y sin aval del autor, pero la model card advierte de revisar por separado los términos de los datos de origen si se usa con conjuntos externos.
-- No hay ninguna garantía de soporte, mantenimiento ni compatibilidad con APIs estándar de HuggingFace; el código requiere un adaptador propio.
+- No hay ninguna garantía de soporte, mantenimiento ni compatibilidad con APIs estándar de Hugging Face; el código requiere un adaptador propio.
 - El nombre "contrastive-best" y la etiqueta de escala "huge" pueden inducir a error: no reflejan ni rendimiento ni tamaño reales.
 - Uso en producción desaconsejado en cualquier escenario que requiera calidad de salida.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Simizuren/contrastive-best
+- Hugging Face: https://huggingface.co/Simizuren/contrastive-best
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la búsqueda web realizada; los resultados devueltos correspondían a una aplicación de VPN sin relación con el modelo.

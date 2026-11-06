@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mistral-Nemo-Inst-2407-12B-Thinking-Uncensored-HERETIC-HI-Claude-Opus es un fine-tune de Mistral Nemo Instruct 12B (modelo base mistralai/Mistral-Nemo-Instruct-2407) publicado en HuggingFace por cyan1143, aunque la model card original pertenece a DavidAU. El modelo combina dos intervenciones: un proceso de abliteración (de-censura) que reduce las negativas de 87/100 a 14/100, y un fine-tune con el dataset TeichAI/claude-4.5-opus-high-reasoning-250x que añade capacidades de razonamiento explícito ("thinking") inspiradas en Claude Opus 4.5.
+Mistral-Nemo-Inst-2407-12B-Thinking-Uncensored-HERETIC-HI-Claude-Opus es un fine-tune de Mistral Nemo Instruct 12B (modelo base mistralai/Mistral-Nemo-Instruct-2407) publicado en Hugging Face por cyan1143, aunque la model card original pertenece a DavidAU. El modelo combina dos intervenciones: un proceso de abliteración (de-censura) que reduce las negativas de 87/100 a 14/100, y un fine-tune con el dataset TeichAI/claude-4.5-opus-high-reasoning-250x que añade capacidades de razonamiento explícito ("thinking") inspiradas en Claude Opus 4.5.
 
 El resultado es un modelo de 12,2 mil millones de parámetros orientado a escritura creativa, roleplay y generación de ficción sin restricciones, con bloques de razonamiento compactos de 300 a 600 tokens que se autogeneran sin necesidad de system prompt. Soporta una ventana de contexto de 128k a 256k tokens (hasta 1 millón según la model card) y cubre nueve idiomas. Está disponible en formato safetensors (bfloat16) y existen cuantizaciones GGUF de terceros.
 

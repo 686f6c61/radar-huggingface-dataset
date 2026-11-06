@@ -85,6 +85,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manasrpandya/bilateral-denoise-nbf
+- Modelo en Hugging Face: https://huggingface.co/manasrpandya/bilateral-denoise-nbf
 - Código y memoria del proyecto: https://github.com/manasrpandya/NLP_CV_Lab/tree/main/projects/07-bilateral-denoising
 - Demo en vivo: https://nlp-cv-lab.vercel.app/p/bilateral-denoising

@@ -26,7 +26,7 @@ Su relevancia actual es acotada y de caracter metodologico: sirve como ejemplo r
 | Tamano del repositorio | 0,5 GB |
 | Libreria | transformers |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-26 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-26 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -78,7 +78,7 @@ Las siguientes cifras son estimaciones derivadas del tamano de parametros (~14B)
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| boods/FrMedQA-CrossLingual-v2-NoPPL-qlora-DAPT | ~14B (heredados del base) | no disponible | no disponible | Apache-2.0 | Publicado en HuggingFace, 0 descargas, 0 likes |
+| boods/FrMedQA-CrossLingual-v2-NoPPL-qlora-DAPT | ~14B (heredados del base) | no disponible | no disponible | Apache-2.0 | Publicado en Hugging Face, 0 descargas, 0 likes |
 | unsloth/qwen3-14b-unsloth-bnb-4bit (base) | ~14B | no disponible | no disponible | Apache-2.0 (heredada) | Modelo base publico de Unsloth |
 | Qwen3-14B (modelo oficial de referencia de la familia) | ~14B | no disponible en esta busqueda | no disponible | Apache-2.0 | Publico |
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento del modelo ajustado ni de comparaciones co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-NoPPL-qlora-DAPT
+- Modelo en Hugging Face: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-NoPPL-qlora-DAPT
 - Modelo base: https://huggingface.co/unsloth/qwen3-14b-unsloth-bnb-4bit
 - Repositorio de Unsloth (herramienta de entrenamiento citada en la model card): https://github.com/unslothai/unsloth
 - Paper, blog, demo o repositorio adicional del autor: no disponible

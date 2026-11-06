@@ -81,6 +81,6 @@ La comparativa se limita al modelo base y su variante superior, ya que no se dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SinghGurjot01/floodsaathi-model
+- Hugging Face: https://huggingface.co/SinghGurjot01/floodsaathi-model
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

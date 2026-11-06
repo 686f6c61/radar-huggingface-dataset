@@ -80,11 +80,11 @@ No se han publicado resultados de benchmarks de esta variante giant en la inform
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vit_giant_patch16_radio_v3.c_radio (este) | 1136,0 M | 512x512, 1032 tokens | no publicado para la variante g | NVIDIA Open Model License | HuggingFace (timm), pesos safetensors |
-| nvidia/C-RADIOv3-g (original) | no disponible en la información | rejilla 128x128, salida equivalente a 512x512 | no publicado | NVIDIA Open Model License | HuggingFace (repo original de NVIDIA) |
-| timm/naflexvit_giant_patch16_radio_v3 | no disponible | resolución flexible nativa | mismo comportamiento original a cualquier resolución | NVIDIA Open Model License | HuggingFace (timm) |
-| C-RADIOv3-H | no disponible | no disponible | ImageNet kNN 86,23; ADE20k 52,75 | NVIDIA Open Model License | HuggingFace |
-| C-RADIOv4-H | no disponible | no disponible | ImageNet kNN 86,68; ADE20k 55,20 | NVIDIA Open Model License | HuggingFace |
+| vit_giant_patch16_radio_v3.c_radio (este) | 1136,0 M | 512x512, 1032 tokens | no publicado para la variante g | NVIDIA Open Model License | Hugging Face (timm), pesos safetensors |
+| nvidia/C-RADIOv3-g (original) | no disponible en la información | rejilla 128x128, salida equivalente a 512x512 | no publicado | NVIDIA Open Model License | Hugging Face (repo original de NVIDIA) |
+| timm/naflexvit_giant_patch16_radio_v3 | no disponible | resolución flexible nativa | mismo comportamiento original a cualquier resolución | NVIDIA Open Model License | Hugging Face (timm) |
+| C-RADIOv3-H | no disponible | no disponible | ImageNet kNN 86,23; ADE20k 52,75 | NVIDIA Open Model License | Hugging Face |
+| C-RADIOv4-H | no disponible | no disponible | ImageNet kNN 86,68; ADE20k 55,20 | NVIDIA Open Model License | Hugging Face |
 
 Frente a alternativas fuera de la familia, los profesores declarados (DFN5B CLIP ViT-H/14-378, SigLIP2-SO400M, DINOv2-g/14 con registers y SAM ViT-H) cubren por separado alineamiento texto-imagen, features densas y segmentación; la propuesta de RADIO es sustituir ese conjunto por un solo encoder. No se dispone en la información proporcionada de datos de parámetros ni de benchmarks de esos profesores para una comparación numérica directa.
 
@@ -102,7 +102,7 @@ Frente a alternativas fuera de la familia, los profesores declarados (DFN5B CLIP
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/vit_giant_patch16_radio_v3.c_radio
+- Modelo en Hugging Face: https://huggingface.co/timm/vit_giant_patch16_radio_v3.c_radio
 - Variante de resolución flexible: https://huggingface.co/timm/naflexvit_giant_patch16_radio_v3.c_radio
 - Pesos originales de NVIDIA: https://huggingface.co/nvidia/C-RADIOv3-g
 - Repositorio original RADIO (NVlabs): https://github.com/NVlabs/RADIO

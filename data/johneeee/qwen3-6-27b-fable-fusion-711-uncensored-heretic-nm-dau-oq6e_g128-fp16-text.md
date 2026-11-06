@@ -6,7 +6,7 @@ Este repositorio contiene una cuantizacion de 6 bits del modelo Qwen3.6-27B-Fabl
 
 El interes principal de esta variante es la fidelidad de la cuantizacion: segun los datos del autor, apenas degrada la perplejidad frente a la referencia de 8 bits (+0,055 % en wikitext-2-raw) y ofrece el mejor compromiso tamano/velocidad de las tres configuraciones medidas (4,7 s por ventana, sin cabeza MTP). El modelo base se hizo conocido por superar los 700 puntos en ARC-C tanto en 8 bits como en 4 bits (0,711 y 0,701), algo inedito en su categoria segun la cobertura publica disponible.
 
-Conviene ser prudente: la ficha de HuggingFace no documenta licencia, idiomas soportados, longitud de contexto ni benchmarks de tarea propios de esta cuantizacion, y el repositorio registraba 0 descargas y 0 likes en el momento de redactar esta ficha.
+Conviene ser prudente: la ficha de Hugging Face no documenta licencia, idiomas soportados, longitud de contexto ni benchmarks de tarea propios de esta cuantizacion, y el repositorio registraba 0 descargas y 0 likes en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -104,7 +104,7 @@ La comparacion se limita a variantes del mismo merge, ya que no se han aportado 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Johneeee/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-oQ6e_g128-fp16-text
+- Modelo en Hugging Face: https://huggingface.co/Johneeee/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-oQ6e_g128-fp16-text
 - Variante oQ5e del mismo merge: https://huggingface.co/Johneeee/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-oQ5e
 - Repositorio de oQ/oMLX: https://github.com/jundot/omlx
 - Articulo en HackerNoon sobre el modelo base: https://hackernoon.com/qwen36-27b-fable-fusion-breaks-the-700-arc-c-barrier

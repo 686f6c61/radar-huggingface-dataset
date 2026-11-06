@@ -93,7 +93,7 @@ No se han publicado en la informacion disponible resultados de benchmarks de tex
 
 | Modelo | Parametros | Dimension de embedding | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `wq2012/ls_ecapa_tdnn_base_ge2e` | 3.190.624 | 256 | audio 16 kHz, 80-dim log-mel + VAD + CMVN | apache-2.0 | HuggingFace, GitHub y PyPI |
+| `wq2012/ls_ecapa_tdnn_base_ge2e` | 3.190.624 | 256 | audio 16 kHz, 80-dim log-mel + VAD + CMVN | apache-2.0 | Hugging Face, GitHub y PyPI |
 | SpeechBrain `spkrec-ecapa-voxceleb` | no disponible | no disponible | no disponible | no disponible | no disponible |
 | pyannote / WeSpeaker (familia ResNet de embeddings de hablante) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | NVIDIA TitaNet (familia de verificacion de hablante) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -115,8 +115,8 @@ Los modelos alternativos se citan por familia y nombre de referencia, pero en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wq2012/ls_ecapa_tdnn_base_ge2e
-- Coleccion FlaxSpeaker en HuggingFace: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
+- Modelo en Hugging Face: https://huggingface.co/wq2012/ls_ecapa_tdnn_base_ge2e
+- Coleccion FlaxSpeaker en Hugging Face: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub de FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
 - Paquete PyPI `flaxspeaker`: https://pypi.org/project/flaxspeaker/
 - Paper GE2E, *Generalized End-to-End Loss for Speaker Verification*: https://arxiv.org/abs/1710.10467

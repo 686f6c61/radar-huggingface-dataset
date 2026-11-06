@@ -4,7 +4,7 @@
 
 VisionGuardrail-Evo2-27B-i1-GGUF es la versión cuantizada en formato GGUF del modelo prithivMLmods/VisionGuardrail-Evo2-27B, un clasificador multimodal de seguridad de contenido (guardrail) de aproximadamente 26,9 mil millones de parámetros. La publicación corre a cargo de mradermacher, un cuantizador conocido por generar versiones GGUF con matrices de importancia (imatrix) para su ejecución en llama.cpp y derivados. El repositorio original pertenece a prithivMLmods y está etiquetado como modelo de visión orientado a moderación.
 
-El modelo resuelve una necesidad concreta: disponer de un clasificador de seguridad visual y textual que pueda ejecutarse en local, sin depender de API externas, y que devuelva resultados estructurados. Las etiquetas del repositorio lo describen como filtro de contenido multimodal (mmcf), clasificador de seguridad, guardrail y moderación, con salida en JSON, y la pipeline declarada en HuggingFace es image-classification. La licencia Apache 2.0 facilita su integración en productos comerciales, algo poco habitual en modelos de moderación de gran tamaño.
+El modelo resuelve una necesidad concreta: disponer de un clasificador de seguridad visual y textual que pueda ejecutarse en local, sin depender de API externas, y que devuelva resultados estructurados. Las etiquetas del repositorio lo describen como filtro de contenido multimodal (mmcf), clasificador de seguridad, guardrail y moderación, con salida en JSON, y la pipeline declarada en Hugging Face es image-classification. La licencia Apache 2.0 facilita su integración en productos comerciales, algo poco habitual en modelos de moderación de gran tamaño.
 
 La relevancia de esta publicación concreta es práctica: el repositorio ofrece 24 variantes de cuantización ponderadas por imatrix, desde IQ1_S hasta Q6_K, lo que permite desplegar un modelo de casi 27 B en hardware muy distinto, incluidas GPU de consumo. El modelo base está etiquetado con la referencia "qwen3.8-27B" y declara únicamente el idioma inglés. La model card no documenta arquitectura detallada, longitud de contexto ni proceso de entrenamiento.
 
@@ -41,7 +41,7 @@ Respecto al entrenamiento, la única información disponible es el conjunto de d
 - Salida estructurada en JSON: la etiqueta "JSON" indica que el modelo está pensado para devolver resultados parseables por máquina, aptos para integrarse en pipelines automatizados.
 - Uso como guardrail en sistemas generativos: está etiquetado explícitamente como "guardrail" y "safety-classifier", es decir, como capa de control previa o posterior a la generación.
 - Modo conversacional: el repositorio incluye la etiqueta "conversational", lo que apunta a que admite interacción multi-turno, aunque no se detalla el formato de prompt recomendado.
-- Compatibilidad con text-generation-inference y endpoints: las etiquetas "text-generation-inference" y "endpoints_compatible" sugieren que el modelo base puede servirse mediante TGI y desplegarse en infraestructura de endpoints de HuggingFace.
+- Compatibilidad con text-generation-inference y endpoints: las etiquetas "text-generation-inference" y "endpoints_compatible" sugieren que el modelo base puede servirse mediante TGI y desplegarse en infraestructura de endpoints de Hugging Face.
 - Perfil "uncensored": la etiqueta "uncensored" indica que el modelo base fue ajustado para reducir rechazos genéricos, algo habitual en clasificadores de seguridad que deben etiquetar contenido sensible sin negarse a procesarlo.
 - Capacidades no documentadas: no hay información sobre tool calling, function calling, razonamiento multi-paso, matemáticas, generación de código, audio ni modos de pensamiento explícitos.
 
@@ -114,7 +114,7 @@ Frente al modelo base, la ventaja de esta publicación es exclusivamente operati
 
 ## Enlaces
 
-- Ficha del repositorio en HuggingFace: https://huggingface.co/mradermacher/VisionGuardrail-Evo2-27B-i1-GGUF
+- Ficha del repositorio en Hugging Face: https://huggingface.co/mradermacher/VisionGuardrail-Evo2-27B-i1-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/VisionGuardrail-Evo2-27B
 - Repositorio de cuantizaciones estáticas (contiene los ficheros mmproj, si existen): https://huggingface.co/mradermacher/VisionGuardrail-Evo2-27B-GGUF
 - Fichero imatrix: https://huggingface.co/mradermacher/VisionGuardrail-Evo2-27B-i1-GGUF/resolve/main/VisionGuardrail-Evo2-27B.imatrix.gguf

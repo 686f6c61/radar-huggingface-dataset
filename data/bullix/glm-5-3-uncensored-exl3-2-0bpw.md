@@ -13,7 +13,7 @@ Es relevante ahora porque demuestra que un MoE de más de 300.000 millones de pa
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | Transformer MoE multimodal (image-text-to-text) con atención KDA + sparse MLA y cabeza MTP |
-| Parámetros totales | 321,3 B (según model card; el contador de safetensors de HuggingFace reporta 46.508.376.158 por contar índices trellis int16) |
+| Parámetros totales | 321,3 B (según model card; el contador de safetensors de Hugging Face reporta 46.508.376.158 por contar índices trellis int16) |
 | Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | EXL3 2,00 bpw en expertos enrutados; 4 bpw en MLP densa; 6 bpw en atención, expertos compartidos y `lm_head`; 8 bpw en MTP; FP16 en `embed_tokens` y torre de visión. Bitrate final medido: 2,09 bits/parámetro |
@@ -65,17 +65,17 @@ No se han publicado resultados de benchmarks en la información disponible. El c
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Uncensored-EXL3-2.0bpw (este) | 321,3 B (MoE) | no disponible | EXL3 2 bpw + safetensors | MIT | HuggingFace, exllamav3 |
-| orcarouter/GLM-5.3-Flash-Uncensored-FP8 | 321,3 B (MoE) | no disponible | block-FP8 (e4m3) | MIT | HuggingFace |
-| zai-org/GLM-5.3-Flash | 321,3 B (MoE) | no disponible | no disponible | MIT | HuggingFace |
-| bullix/GLM-5.3-Uncensored-EXL3-2.0bpw-v100 | 321,3 B (MoE) | no disponible | EXL3 pack `mcg` | MIT | HuggingFace, exllamav3 |
+| GLM-5.3-Uncensored-EXL3-2.0bpw (este) | 321,3 B (MoE) | no disponible | EXL3 2 bpw + safetensors | MIT | Hugging Face, exllamav3 |
+| orcarouter/GLM-5.3-Flash-Uncensored-FP8 | 321,3 B (MoE) | no disponible | block-FP8 (e4m3) | MIT | Hugging Face |
+| zai-org/GLM-5.3-Flash | 321,3 B (MoE) | no disponible | no disponible | MIT | Hugging Face |
+| bullix/GLM-5.3-Uncensored-EXL3-2.0bpw-v100 | 321,3 B (MoE) | no disponible | EXL3 pack `mcg` | MIT | Hugging Face, exllamav3 |
 
 La comparativa se limita a variantes del mismo modelo porque no se dispone de datos de benchmarks ni de especificaciones de contexto que permitan una comparación cuantitativa con alternativas de otros fabricantes.
 
 ## Limitaciones y advertencias
 
 - La cuantización a 2,00 bpw en los expertos enrutados introduce degradación de calidad respecto al checkpoint FP8 original; no se han publicado métricas que cuantifiquen esa pérdida.
-- El contador de parámetros de HuggingFace (46.508.376.158) es incorrecto por el formato trellis int16; hay que guiarse por el valor declarado de 321,3 B.
+- El contador de parámetros de Hugging Face (46.508.376.158) es incorrecto por el formato trellis int16; hay que guiarse por el valor declarado de 321,3 B.
 - La variante "uncensored" reduce los rechazos del modelo base, lo que aumenta el riesgo de generar contenido inapropiado o dañino y exige filtrado adicional en producción.
 - Riesgo de alucinación no cuantificado; al ser un modelo de gran escala sin benchmarks publicados, conviene validar en el dominio de uso.
 - Longitud de contexto no disponible: no se puede garantizar el comportamiento en ventanas largas.
@@ -85,7 +85,7 @@ La comparativa se limita a variantes del mismo modelo porque no se dispone de da
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bullix/GLM-5.3-Uncensored-EXL3-2.0bpw
+- Repositorio Hugging Face: https://huggingface.co/bullix/GLM-5.3-Uncensored-EXL3-2.0bpw
 - Repo hermano para V100: https://huggingface.co/bullix/GLM-5.3-Uncensored-EXL3-2.0bpw-v100
 - Modelo base original: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Finetune uncensored FP8: https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-FP8

@@ -75,7 +75,7 @@ La comparativa se basa en el modelo base, ya que no hay datos específicos del a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NguyenAn05/MedEV-MADLAD400-3B-LoRA
+- Repositorio Hugging Face: https://huggingface.co/NguyenAn05/MedEV-MADLAD400-3B-LoRA
 - Modelo base MADLAD-400-3B-MT: https://huggingface.co/google/madlad400-3b-mt
 - Documentación de MADLAD-400 en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/madlad-400
 - Paper de MADLAD-400 (arXiv): https://arxiv.org/abs/2309.04662

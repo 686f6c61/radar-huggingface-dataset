@@ -96,10 +96,10 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kalia v0.3.1 | 57,9M (model card) | 1.024 | Apache-2.0 | HuggingFace (kalia-lm/kalia-v031) |
-| Kalia v0.3.0 | No disponible | 1.024 | Apache-2.0 | HuggingFace (kalia-lm/kalia-v030) |
-| Kalia v0.2.0 | No disponible | 1.024 | Apache-2.0 | HuggingFace (kalia-lm/kalia-v020) |
-| Kalia v0.1.2 | No disponible | No disponible | Apache-2.0 | HuggingFace (kalia-lm/kalia-v012) |
+| Kalia v0.3.1 | 57,9M (model card) | 1.024 | Apache-2.0 | Hugging Face (kalia-lm/kalia-v031) |
+| Kalia v0.3.0 | No disponible | 1.024 | Apache-2.0 | Hugging Face (kalia-lm/kalia-v030) |
+| Kalia v0.2.0 | No disponible | 1.024 | Apache-2.0 | Hugging Face (kalia-lm/kalia-v020) |
+| Kalia v0.1.2 | No disponible | No disponible | Apache-2.0 | Hugging Face (kalia-lm/kalia-v012) |
 
 La comparación con modelos de otros proyectos (por ejemplo, la familia SmolLM, cuyos corpus se usan en el entrenamiento) no está disponible en la información proporcionada, por lo que no se presentan cifras comparativas.
 
@@ -119,7 +119,7 @@ La comparación con modelos de otros proyectos (por ejemplo, la familia SmolLM, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kalia-lm/kalia-v031
+- Modelo en Hugging Face: https://huggingface.co/kalia-lm/kalia-v031
 - Release anterior v0.1.2: https://huggingface.co/kalia-lm/kalia-v012
 - Release anterior v0.2.0: https://huggingface.co/kalia-lm/kalia-v020
 - Dataset FineWeb-Edu dedup (smollm-corpus): https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo DavidAU/Qwen3.8-27B-stage2b-rplus es un checkpoint derivado de la serie Qwen3.8-27B de Alibaba, publicado por el usuario DavidAU en HuggingFace. Se trata de un modelo de 27 mil millones de parámetros con arquitectura multimodal (acepta imagen y texto) y capacidades de razonamiento, pensamiento en modo dual y agente. El sufijo "stage2b-rplus" sugiere una etapa de entrenamiento adicional sobre el modelo base, probablemente orientada a refuerzo o ajuste fino específico, aunque no se dispone de documentación oficial que detalle el proceso.
+El modelo DavidAU/Qwen3.8-27B-stage2b-rplus es un checkpoint derivado de la serie Qwen3.8-27B de Alibaba, publicado por el usuario DavidAU en Hugging Face. Se trata de un modelo de 27 mil millones de parámetros con arquitectura multimodal (acepta imagen y texto) y capacidades de razonamiento, pensamiento en modo dual y agente. El sufijo "stage2b-rplus" sugiere una etapa de entrenamiento adicional sobre el modelo base, probablemente orientada a refuerzo o ajuste fino específico, aunque no se dispone de documentación oficial que detalle el proceso.
 
 La relevancia de este checkpoint radica en que Qwen3.8-27B es una de las familias más recientes de Alibaba, con rendimiento competitivo en tareas de codificación, razonamiento y visión, y este modelo concreto podría ofrecer mejoras específicas para ciertos dominios. Sin embargo, al ser un modelo con acceso restringido (gated) y sin métricas publicadas, su evaluación requiere aceptar las condiciones de uso y probarlo directamente. La información pública disponible es limitada, por lo que gran parte de las especificaciones técnicas se infieren del modelo base Qwen3.8-27B.
 
@@ -60,7 +60,7 @@ No se dispone de información suficiente para comparar este checkpoint con alter
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace antes de poder descargarlo, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face antes de poder descargarlo, lo que puede limitar su uso en entornos automatizados.
 - Sin documentación específica: no hay papers, blogs o notas de versión que expliquen el proceso de entrenamiento de "stage2b-rplus", por lo que se desconoce su comportamiento exacto frente al modelo base.
 - Riesgo de alucinación: como cualquier modelo generativo, puede producir información falsa o inventada, especialmente en dominios especializados.
 - Sesgos potenciales: al derivar de Qwen3.8, puede heredar sesgos presentes en los datos de entrenamiento originales, aunque no se han documentado específicamente.
@@ -69,7 +69,7 @@ No se dispone de información suficiente para comparar este checkpoint con alter
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/DavidAU/Qwen3.8-27B-stage2b-rplus
+- Hugging Face del modelo: https://huggingface.co/DavidAU/Qwen3.8-27B-stage2b-rplus
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Documentación de Groq sobre Qwen3.8-27B: https://console.groq.com/docs/model/qwen/qwen3.8-27b

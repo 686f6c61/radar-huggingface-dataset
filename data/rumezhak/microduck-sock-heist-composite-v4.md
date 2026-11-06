@@ -74,10 +74,10 @@ Referencias citadas por el autor en el momento de la publicación: 4,895 s para 
 
 | Modelo | Tipo | Media en 5 seeds (s) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rumezhak/microduck-sock-heist-composite-v4 | Política ONNX + lookup | 4,888 | Sin licencia unificada; Apache-2.0 parcial | HuggingFace, 0 descargas |
-| rumezhak/microduck-sock-heist-composite-v3 | Política ONNX + lookup | 4,896 | Sin licencia declarada | HuggingFace |
-| jrubiosainz "derived FCE v3x-483" | Política ONNX + lookup | 4,895 | No disponible | HuggingFace |
-| lphatnguyen/microduck-sock-heist-6m-v3 | Red de respaldo (base) | No disponible | Sin licencia declarada | HuggingFace |
+| rumezhak/microduck-sock-heist-composite-v4 | Política ONNX + lookup | 4,888 | Sin licencia unificada; Apache-2.0 parcial | Hugging Face, 0 descargas |
+| rumezhak/microduck-sock-heist-composite-v3 | Política ONNX + lookup | 4,896 | Sin licencia declarada | Hugging Face |
+| jrubiosainz "derived FCE v3x-483" | Política ONNX + lookup | 4,895 | No disponible | Hugging Face |
+| lphatnguyen/microduck-sock-heist-6m-v3 | Red de respaldo (base) | No disponible | Sin licencia declarada | Hugging Face |
 
 La comparación se limita a entradas de la misma competición; no se dispone de datos de parámetros, contexto ni rendimiento en otras tareas para estos modelos.
 
@@ -95,11 +95,11 @@ La comparación se limita a entradas de la misma competición; no se dispone de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rumezhak/microduck-sock-heist-composite-v4
+- Modelo en Hugging Face: https://huggingface.co/rumezhak/microduck-sock-heist-composite-v4
 - Modelo base (v3): https://huggingface.co/rumezhak/microduck-sock-heist-composite-v3
 - Microduck Arena (Space de Pollen Robotics): https://huggingface.co/spaces/pollen-robotics/microduck-arena
 - F2U de jrubiosainz: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-rz-tail-r4
 - lphatnguyen v3 (red de respaldo): https://huggingface.co/lphatnguyen/microduck-sock-heist-6m-v3
 - lphatnguyen v4: https://huggingface.co/lphatnguyen/microduck-sock-heist-6m-v4
 - a1rb4Ck/microduck-heist (grafo y mecanismo de lookup, Apache-2.0): https://huggingface.co/a1rb4Ck/microduck-heist
-- Pollen Robotics en HuggingFace: https://huggingface.co/pollen-robotics
+- Pollen Robotics en Hugging Face: https://huggingface.co/pollen-robotics

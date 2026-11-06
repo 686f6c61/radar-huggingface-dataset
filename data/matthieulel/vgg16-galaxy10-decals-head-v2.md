@@ -73,8 +73,8 @@ Evolución seleccionada del entrenamiento (semilla 42): la accuracy de test pasa
 
 | Modelo | Parametros | Contexto/entrada | Accuracy en Galaxy10 DECaLS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vgg16-galaxy10-decals-head-v2 | 134,3 M | 224x224 px | 41,71 % (test, semilla 42) | BSD-3-Clause | HuggingFace |
-| Otros backbones del Vision Foundation Models Benchmark | no disponible | 224x224 px | no disponible en esta ficha | según backbone | colección en HuggingFace |
+| vgg16-galaxy10-decals-head-v2 | 134,3 M | 224x224 px | 41,71 % (test, semilla 42) | BSD-3-Clause | Hugging Face |
+| Otros backbones del Vision Foundation Models Benchmark | no disponible | 224x224 px | no disponible en esta ficha | según backbone | colección en Hugging Face |
 | VGG16 original (ImageNet-1k) | 138,4 M | 224x224 px | no aplica (1.000 clases ImageNet) | BSD-3-Clause (torchvision) | torchvision |
 
 No se dispone de resultados publicados de los otros 39 backbones del mismo benchmark en la información proporcionada, por lo que no es posible una comparación numérica directa.
@@ -91,7 +91,7 @@ No se dispone de resultados publicados de los otros 39 backbones del mismo bench
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/vgg16-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/vgg16-galaxy10-decals-head-v2
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs
 - Colección Vision Foundation Models Benchmark: https://huggingface.co/collections/matthieulel/vision-foundation-models-benchmark-6ae4ae6c3f83b52cf00d9dcb

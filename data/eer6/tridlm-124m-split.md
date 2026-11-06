@@ -71,10 +71,10 @@ La comparativa natural es con los otros tres brazos del experimento TriDLM, dado
 
 | Modelo | Patrón de atención | NELBO (nats/token) | Perplejidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TriDLM-124M-bidir | bidireccional completa | 3.374 | 29.2 | apache-2.0 | HuggingFace |
-| TriDLM-124M-split | pares causales, impares anti-causales | 3.395 | 29.8 | apache-2.0 | HuggingFace |
-| TriDLM-124M-alt | capas alternas causal/anti-causal | 3.406 | 30.2 | apache-2.0 | HuggingFace |
-| TriDLM-124M-causal | totalmente causal | 4.940 | 139.7 | apache-2.0 | HuggingFace |
+| TriDLM-124M-bidir | bidireccional completa | 3.374 | 29.2 | apache-2.0 | Hugging Face |
+| TriDLM-124M-split | pares causales, impares anti-causales | 3.395 | 29.8 | apache-2.0 | Hugging Face |
+| TriDLM-124M-alt | capas alternas causal/anti-causal | 3.406 | 30.2 | apache-2.0 | Hugging Face |
+| TriDLM-124M-causal | totalmente causal | 4.940 | 139.7 | apache-2.0 | Hugging Face |
 
 El brazo `split` es el segundo mejor en calidad, con una ventaja de velocidad de entrenamiento sobre `bidir` y `alt` (2.73M tok/s frente a 2.60M y 2.55M), lo que sugiere un buen equilibrio entre eficiencia y rendimiento.
 
@@ -91,6 +91,6 @@ El brazo `split` es el segundo mejor en calidad, con una ventaja de velocidad de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EER6/TriDLM-124M-split
+- Repositorio Hugging Face: https://huggingface.co/EER6/TriDLM-124M-split
 - Repositorio GitHub del experimento TriDLM: https://github.com/AntonXue/TriDLM
-- Perfil del autor en HuggingFace: https://huggingface.co/EER6
+- Perfil del autor en Hugging Face: https://huggingface.co/EER6

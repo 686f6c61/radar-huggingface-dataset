@@ -80,6 +80,6 @@ No se dispone de información sobre modelos comparables específicos para la tar
 
 ## Enlaces
 
-- [Repositorio HuggingFace del adaptador](https://huggingface.co/dineshpotla/healthx-qwen35-4b-router-v1.8-experimental)
-- [Modelo base Qwen3.5-4B en HuggingFace](https://huggingface.co/Qwen/Qwen3.5-4B)
+- [Repositorio Hugging Face del adaptador](https://huggingface.co/dineshpotla/healthx-qwen35-4b-router-v1.8-experimental)
+- [Modelo base Qwen3.5-4B en Hugging Face](https://huggingface.co/Qwen/Qwen3.5-4B)
 - [Proyecto fuente: agentic-health-exchange (GitHub)](https://github.com/dineshpotla/agentic-health-exchange)

@@ -76,7 +76,7 @@ La comparacion se limita a parametros, formato y licencia, ya que no hay datos d
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay validacion comunitaria ni issues reportados que permitan contrastar su comportamiento en produccion.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/m4gshm/Qwen2.5-Coder-3B-int8-sym
+- Modelo en Hugging Face: https://huggingface.co/m4gshm/Qwen2.5-Coder-3B-int8-sym
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - Optimum-Intel: https://github.com/huggingface/optimum-intel
 - OpenVINO: https://github.com/openvinotoolkit/openvino

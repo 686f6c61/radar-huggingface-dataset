@@ -71,7 +71,7 @@ El IoU se calcula como media por lote, y en esa métrica los fotogramas sin terr
 
 | Modelo | Parametros | Tipo de segmentacion | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MPPP mask v3 (este modelo) | No disponible (fichero de 124,8 MB) | Binaria por píxel, especializada en terreno marciano | Lienzo 1664 × 1248 | Apache-2.0 | HuggingFace, integrado en MPPP |
+| MPPP mask v3 (este modelo) | No disponible (fichero de 124,8 MB) | Binaria por píxel, especializada en terreno marciano | Lienzo 1664 × 1248 | Apache-2.0 | Hugging Face, integrado en MPPP |
 | Segment Anything (SAM, ViT-B) | ~91 M (cifra pública habitual) | Promptable, segmentación generalista | Resolución configurable, requiere prompt | Apache-2.0 | Pesos públicos |
 | Segment Anything (SAM, ViT-H) | ~636 M (cifra pública habitual) | Promptable, segmentación generalista | Resolución configurable, requiere prompt | Apache-2.0 | Pesos públicos |
 | Enmascarado asistido de Agisoft Metashape | No disponible (propietario) | Segmentación de primer plano por foto | Definida por la aplicación | Propietaria, comercial | Integrada en Metashape |
@@ -90,8 +90,8 @@ No existen cifras comparativas publicadas entre estos modelos y MPPP mask v3. La
 - En producción, conviene fijar la versión del checkpoint de forma explícita, ya que las versiones v1, v2 y v3 comparten arquitectura pero difieren en pesos y en IoU.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/ctate7163/mppp-mask
-- Perfil del autor en HuggingFace (Christian Tate): https://huggingface.co/ctate7163
+- Modelo en Hugging Face: https://huggingface.co/ctate7163/mppp-mask
+- Perfil del autor en Hugging Face (Christian Tate): https://huggingface.co/ctate7163
 - Repositorio de MPPP: https://github.com/ctate7163/MPPP
 - NASA Planetary Data System (origen de las imágenes de entrenamiento): https://pds.nasa.gov/
 - Malin Space Science Systems (MSSS), entidad que aprobó la publicación: https://www.msss.com/

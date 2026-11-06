@@ -33,7 +33,7 @@ Respecto al entrenamiento, el paper SkillGym (arXiv:2609.27717) describe un fram
 
 - Generacion de texto conversacional: el repositorio esta etiquetado como conversational, por lo que el uso previsto es el dialogo.
 - Internalizacion de habilidades de agente: segun el paper SkillGym, el modelo se entrena para incorporar flujos de trabajo escritos como capacidades ejecutables, orientadas a tareas reales de agente.
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que las cuantizaciones pueden servirse mediante infraestructura compatible con endpoints estandar de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que las cuantizaciones pueden servirse mediante infraestructura compatible con endpoints estandar de Hugging Face.
 - Razonamiento multi-paso: no confirmado explicitamente en la informacion disponible, aunque es coherente con el enfoque de tareas de agente del framework SkillGym.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Capacidades multilingues: no disponibles.
@@ -99,7 +99,7 @@ La comparacion de rendimiento entre estos modelos no es posible con la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/SkillGym-Qwen3.5-4B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/SkillGym-Qwen3.5-4B-GGUF
 - Modelo base del ajuste: https://huggingface.co/reasonwang/SkillGym-Qwen3.5-4B
 - Paper SkillGym: https://arxiv.org/abs/2609.27717
 - Ficha de Qwen3.5-4B en LM Studio: https://lmstudio.ai/models/qwen/qwen3.5-4b

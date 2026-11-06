@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nor-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407 (este modelo) | 124,77 M | no disponible | no disponible | HuggingFace; 0 descargas, 0 likes |
-| francesca9805/nor-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407 (modelo base) | no disponible | no disponible | no disponible | HuggingFace, mismo autor |
-| francesca9805/nld-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10 | no disponible (receta de 100 MB) | no disponible | no disponible | HuggingFace, mismo autor; variante en neerlandes |
+| nor-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407 (este modelo) | 124,77 M | no disponible | no disponible | Hugging Face; 0 descargas, 0 likes |
+| francesca9805/nor-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407 (modelo base) | no disponible | no disponible | no disponible | Hugging Face, mismo autor |
+| francesca9805/nld-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10 | no disponible (receta de 100 MB) | no disponible | no disponible | Hugging Face, mismo autor; variante en neerlandes |
 | GPT-2 (OpenAI), referencia de la familia | ~124 M | 1.024 tokens en la configuracion estandar | MIT | Ampliamente disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nor-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nor-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/nor-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/yvga7yt0
 - Repositorio de TRL: https://github.com/huggingface/trl

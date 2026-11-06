@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Almacenamiento: aproximadamente 1,13 GB para los 347 ficheros del repositorio (1,1 GB según el tamaño del repo en HuggingFace).
+- Almacenamiento: aproximadamente 1,13 GB para los 347 ficheros del repositorio (1,1 GB según el tamaño del repo en Hugging Face).
 - VRAM/RAM: no disponible de forma explícita; el destino declarado es un teléfono Android, por lo que el modelo está dimensionado para memoria unificada de dispositivo móvil, no para GPU de servidor.
 - GPU recomendadas: no aplica al caso de uso previsto; para ejecución en servidor se requeriría un runtime Cactus compatible con la arquitectura Qwen3.5, no documentado en la información disponible.
 - GPU de consumo: no se documenta soporte para RTX 4090 u otras GPU de consumo; el formato de pesos no es GGUF ni safetensors.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CopyleftCultivars/qwen3.5-2b-natural-farming-v5-cactus-cq4
+- Modelo en Hugging Face: https://huggingface.co/CopyleftCultivars/qwen3.5-2b-natural-farming-v5-cactus-cq4
 - Modelo bf16 de origen: https://huggingface.co/CopyleftCultivars/qwen3.5-2b-natural-farming-v5
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Motor Cactus: https://github.com/cactus-compute/cactus

@@ -103,8 +103,8 @@ Los datos de parámetros y benchmarks de los modelos comparados provienen de la 
 
 ## Enlaces
 
-- Repositorio de HuggingFace consultado: https://huggingface.co/hdcase/AliceAI-Foundation-80B-A3B-Base
-- Repositorio oficial de Yandex en HuggingFace: https://huggingface.co/yandex/AliceAI-Foundation-80B-A3B-Base
+- Repositorio de Hugging Face consultado: https://huggingface.co/hdcase/AliceAI-Foundation-80B-A3B-Base
+- Repositorio oficial de Yandex en Hugging Face: https://huggingface.co/yandex/AliceAI-Foundation-80B-A3B-Base
 - Artículo del anuncio en Habr: https://habr.com/ru/companies/yandex/articles/1083300/
 - Dataset WikiWebFacts: https://huggingface.co/datasets/yandex/WikiWebFacts
 - Dataset HardMultiQA: https://huggingface.co/datasets/yandex/HardMultiQA

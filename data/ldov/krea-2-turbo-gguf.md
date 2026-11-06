@@ -4,7 +4,7 @@
 
 El repositorio `ldov/Krea-2-Turbo-GGUF` contiene una versión cuantizada en formato GGUF del modelo `Krea-2-Turbo`, desarrollado por Krea.ai, Inc. Se trata de un modelo de generación de imágenes a partir de texto (text-to-image) que permite reducir los requisitos de memoria frente al modelo original, facilitando su ejecución en configuraciones con menos VRAM o en sistemas híbridos CPU+GPU. El repositorio está publicado por el usuario `ldov` y apunta al modelo base `krea/Krea-2-Turbo` como origen de los pesos.
 
-El modelo base cuenta con aproximadamente 12.9 mil millones de parámetros (12.895.570.508 según el archivo safetensors). El tamaño total del repositorio es de 108.1 GB, lo que sugiere que incluye múltiples variantes de cuantización. La licencia aplicable es la `krea-2-community-license`, una licencia no estándar que requiere revisión antes de su uso en producción. El modelo está etiquetado en HuggingFace con el idioma inglés y con el pipeline `text-to-image`, y se publicó en septiembre de 2026.
+El modelo base cuenta con aproximadamente 12.9 mil millones de parámetros (12.895.570.508 según el archivo safetensors). El tamaño total del repositorio es de 108.1 GB, lo que sugiere que incluye múltiples variantes de cuantización. La licencia aplicable es la `krea-2-community-license`, una licencia no estándar que requiere revisión antes de su uso en producción. El modelo está etiquetado en Hugging Face con el idioma inglés y con el pipeline `text-to-image`, y se publicó en septiembre de 2026.
 
 ## Especificaciones técnicas
 
@@ -20,7 +20,7 @@ El modelo base cuenta con aproximadamente 12.9 mil millones de parámetros (12.8
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles técnicos sobre la arquitectura interna del modelo en la información proporcionada. El único dato verificable es que es un modelo de difusión de texto a imagen con aproximadamente 12.9 mil millones de parámetros. No se dispone de información sobre los datos de entrenamiento, el número de tokens utilizados, la composición del dataset o si se aplicaron técnicas como RLHF o DPO. Tampoco se conocen innovaciones arquitectónicas concretas. El repositorio de HuggingFace indica que usa la librería `diffusers`, pero no especifica si la implementación subyacente es un UNet, un DiT u otro tipo de arquitectura. Cualquier afirmación adicional sobre la arquitectura o el entrenamiento sería especulativa.
+No se han publicado detalles técnicos sobre la arquitectura interna del modelo en la información proporcionada. El único dato verificable es que es un modelo de difusión de texto a imagen con aproximadamente 12.9 mil millones de parámetros. No se dispone de información sobre los datos de entrenamiento, el número de tokens utilizados, la composición del dataset o si se aplicaron técnicas como RLHF o DPO. Tampoco se conocen innovaciones arquitectónicas concretas. El repositorio de Hugging Face indica que usa la librería `diffusers`, pero no especifica si la implementación subyacente es un UNet, un DiT u otro tipo de arquitectura. Cualquier afirmación adicional sobre la arquitectura o el entrenamiento sería especulativa.
 
 ## Capacidades
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - Según documentación externa, la variante `q4_k_m` puede ejecutarse en tarjetas con 8 GB de VRAM.
 - Las variantes `q5_k_m` y `q8_0` requieren 12 GB de VRAM o más para una mayor calidad de imagen.
 - El formato GGUF permite usar configuraciones híbridas CPU+GPU.
-- El modelo está diseñado para ejecutarse dentro del ecosistema `llama.cpp`, según la misma fuente externa. Sin embargo, no se confirma oficialmente en el repositorio de HuggingFace.
+- El modelo está diseñado para ejecutarse dentro del ecosistema `llama.cpp`, según la misma fuente externa. Sin embargo, no se confirma oficialmente en el repositorio de Hugging Face.
 - No se han publicado valores estimados de latencia o throughput.
 - El repositorio completo ocupa 108.1 GB, por lo que se requiere espacio de almacenamiento considerable si se descargan todas las variantes de cuantización.
 
@@ -61,15 +61,15 @@ No disponible. No se han identificado modelos comparables en la información pro
 - La licencia `krea-2-community-license` no es una licencia estándar de código abierto. Antes de usar el modelo en producción o con fines comerciales, es obligatorio revisar el texto completo de la licencia y verificar las restricciones que impone.
 - El modelo solo está etiquetado en inglés, lo que puede limitar su capacidad para interpretar prompts en otros idiomas.
 - Al ser una cuantización, es posible que se produzca una ligera pérdida de calidad en las imágenes generadas en comparación con el modelo original en FP16 o BF16.
-- El repositorio de `ldov` tiene 0 descargas y 0 likes en HuggingFace, lo que indica que se trata de una publicación reciente y sin validación por parte de la comunidad.
+- El repositorio de `ldov` tiene 0 descargas y 0 likes en Hugging Face, lo que indica que se trata de una publicación reciente y sin validación por parte de la comunidad.
 - El uso del formato GGUF con `diffusers` puede requerir un backend específico o una configuración adicional; la compatibilidad no está garantizada si se intenta cargar con el pipeline estándar.
 - Como todo modelo generativo de imágenes, puede producir artefactos o interpretaciones inexactas de determinados prompts, especialmente en estilos complejos o composiciones ambiguas. Existe riesgo de alucinación visual, es decir, que el modelo genere elementos que no están en el prompt o que distorsionen la intención original.
 - No se dispone de información sobre sesgos conocidos del modelo. No obstante, al basarse en datos de entrenamiento de fuentes abiertas, es probable que herede sesgos presentes en dichos datos, lo que debe tenerse en cuenta en aplicaciones sensibles.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ldov/Krea-2-Turbo-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/krea/Krea-2-Turbo
+- Repositorio Hugging Face: https://huggingface.co/ldov/Krea-2-Turbo-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/krea/Krea-2-Turbo
 - Enlace a la licencia (PDF): https://huggingface.co/krea/Krea-2-Turbo/blob/main/LICENSE.pdf
 - Tutorial sobre ejecución local con GGUF: https://aiindigo.com/tutorials/getting-started-with-krea-2-turbo-gguf-local-high-speed-image-gen
 - Repositorio alternativo de GGUF del mismo modelo: https://huggingface.co/vantagewithai/Krea-2-Turbo-GGUF

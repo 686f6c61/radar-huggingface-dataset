@@ -93,7 +93,7 @@ La comparativa se limita a caracteristicas estructurales; no se dispone de datos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-VL-8B-Thinking-abliterated-v1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-VL-8B-Thinking-abliterated-v1-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/Qwen3-VL-8B-Thinking-abliterated-v1
 - Cuantizaciones imatrix (i1-GGUF): https://huggingface.co/mradermacher/Qwen3-VL-8B-Thinking-abliterated-v1-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3-VL-8B-Thinking-abliterated-v1-GGUF

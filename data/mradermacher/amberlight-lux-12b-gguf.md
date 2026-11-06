@@ -21,7 +21,7 @@ No se dispone de información pública sobre la arquitectura interna, la longitu
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información detallada sobre la arquitectura del modelo base (por ejemplo, si es un transformer denso, MoE o híbrido). Según los metadatos de HuggingFace, el modelo fue entrenado con la librería TRL (Transformer Reinforcement Learning) y el dataset `shrugging-shoulders/ifeval_multilang`, que probablemente se usó para mejorar la capacidad de seguir instrucciones en múltiples idiomas. No se indican el número de tokens de entrenamiento ni si se aplicaron técnicas como RLHF o DPO. La versión GGUF es una cuantización estática realizada por mradermacher, que no modifica los pesos del modelo original.
+No se ha publicado información detallada sobre la arquitectura del modelo base (por ejemplo, si es un transformer denso, MoE o híbrido). Según los metadatos de Hugging Face, el modelo fue entrenado con la librería TRL (Transformer Reinforcement Learning) y el dataset `shrugging-shoulders/ifeval_multilang`, que probablemente se usó para mejorar la capacidad de seguir instrucciones en múltiples idiomas. No se indican el número de tokens de entrenamiento ni si se aplicaron técnicas como RLHF o DPO. La versión GGUF es una cuantización estática realizada por mradermacher, que no modifica los pesos del modelo original.
 
 ## Capacidades
 

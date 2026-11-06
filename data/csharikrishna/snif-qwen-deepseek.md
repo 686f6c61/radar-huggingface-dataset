@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: no se especifican modelos concretos; el autor menciona "consumer GPUs" y Google Colab gratuito como objetivos de diseno.
 - Cabe en GPU de consumo: si, segun el autor (huella declarada inferior a 2 GB de VRAM activa).
 - CPU: soportado explicitamente en el ejemplo de la model card (float32, sin `device_map`).
-- Opciones de despliegue: HuggingFace Transformers con `trust_remote_code=True`; no se documentan vLLM, llama.cpp, Ollama ni TGI, ni se publican pesos GGUF.
+- Opciones de despliegue: Hugging Face Transformers con `trust_remote_code=True`; no se documentan vLLM, llama.cpp, Ollama ni TGI, ni se publican pesos GGUF.
 - Latencia y throughput: no se publican cifras absolutas; solo la mejora relativa de hasta 3,5x en decodificacion frente a la ruta de razonamiento extensa.
 
 ## Comparativa con modelos similares
@@ -70,9 +70,9 @@ Dado que SNIF es un sistema compuesto, la comparacion mas directa es con sus pro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SNIF (este modelo) | 16,9 M en safetensors de repo; compone 494 M + 1,78 B | no disponible | MIT | HuggingFace, 0 descargas | Enrutado latente propio; requiere `trust_remote_code` |
-| Qwen2.5-0.5B-Instruct | ~494 M | no disponible en esta ficha | Apache-2.0 (base) | HuggingFace | Componente de borde de SNIF |
-| DeepSeek-R1-Distill-Qwen-1.5B | ~1,78 B | no disponible en esta ficha | MIT (base) | HuggingFace | Componente de razonamiento de SNIF |
+| SNIF (este modelo) | 16,9 M en safetensors de repo; compone 494 M + 1,78 B | no disponible | MIT | Hugging Face, 0 descargas | Enrutado latente propio; requiere `trust_remote_code` |
+| Qwen2.5-0.5B-Instruct | ~494 M | no disponible en esta ficha | Apache-2.0 (base) | Hugging Face | Componente de borde de SNIF |
+| DeepSeek-R1-Distill-Qwen-1.5B | ~1,78 B | no disponible en esta ficha | MIT (base) | Hugging Face | Componente de razonamiento de SNIF |
 | Alternativas de enrutado (p. ej. mezcla MoE entrenada de cero) | variable | no disponible | variable | variable | No se dispone de datos comparativos publicados para SNIF |
 
 No se dispone de benchmarks publicados que permitan comparar SNIF en rendimiento con alternativas de la misma categoria.
@@ -94,11 +94,11 @@ No se dispone de benchmarks publicados que permitan comparar SNIF en rendimiento
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/csharikrishna/snif-qwen-deepseek
+- Hugging Face: https://huggingface.co/csharikrishna/snif-qwen-deepseek
 - Repositorio GitHub: https://github.com/csharikrishna/stategate
 - Notebook de inicio rapido (referenciado como SNIF_Quickstart.ipynb en el repo)
 - Gist de Google Colab: https://colab.research.google.com/gist/csharikrishna/9b32c2900813af7ca428b7e37538856a
-- Modelo base de borde: `Qwen/Qwen2.5-0.5B-Instruct` (HuggingFace)
-- Modelo base de razonamiento: `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` (HuggingFace)
+- Modelo base de borde: `Qwen/Qwen2.5-0.5B-Instruct` (Hugging Face)
+- Modelo base de razonamiento: `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` (Hugging Face)
 - Contacto del autor: csharikrishna1806@gmail.com
 - Paper / evaluacion teorica: en preparacion, no disponible

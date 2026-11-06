@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-Conceptizer | 8,03 B + LoRA rango 16 | 128.000 | Adaptador PEFT sobre Llama 3.1 | llama3.1 | HuggingFace, requiere modelo base con acceso aprobado |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 | Modelo denso completo | llama3.1 | HuggingFace (gated) |
-| Mistral-7B-Instruct-v0.3 | 7,25 B | 32.000 | Modelo denso completo | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct | 7,62 B | 128.000 | Modelo denso completo | Apache 2.0 (variantes con matices) | HuggingFace |
+| Llama-3.1-8B-Instruct-Conceptizer | 8,03 B + LoRA rango 16 | 128.000 | Adaptador PEFT sobre Llama 3.1 | llama3.1 | Hugging Face, requiere modelo base con acceso aprobado |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 | Modelo denso completo | llama3.1 | Hugging Face (gated) |
+| Mistral-7B-Instruct-v0.3 | 7,25 B | 32.000 | Modelo denso completo | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct | 7,62 B | 128.000 | Modelo denso completo | Apache 2.0 (variantes con matices) | Hugging Face |
 
 Frente al modelo base, la unica diferencia demostrada en la informacion disponible es cualitativa (perplejidad en posiciones de concepto y tareas de conocimiento y sentimiento); no hay datos que permitan afirmar una ventaja en benchmarks estandar. Frente a Mistral-7B-Instruct-v0.3 y Qwen2.5-7B-Instruct, la licencia Llama 3.1 es mas restrictiva que Apache 2.0 para uso comercial.
 
@@ -89,9 +89,9 @@ Frente al modelo base, la unica diferencia demostrada en la informacion disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FlyinGodzilla/Llama-3.1-8B-Instruct-Conceptizer
+- Modelo en Hugging Face: https://huggingface.co/FlyinGodzilla/Llama-3.1-8B-Instruct-Conceptizer
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Repositorio de codigo de Conceptizer (autores del paper): https://github.com/HaoranZhengRaul/conceptizer-code
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Paper *Conceptizer: Next-Token Prediction Is Not All You Need* (Haoran Zheng y Chen Shani): referencia citada en la model card, enlace no disponible en la informacion proporcionada
-- Licencia Llama 3.1 y politica de uso aceptable: incluidas como archivos LICENSE y USE_POLICY.md en el repositorio de HuggingFace
+- Licencia Llama 3.1 y politica de uso aceptable: incluidas como archivos LICENSE y USE_POLICY.md en el repositorio de Hugging Face

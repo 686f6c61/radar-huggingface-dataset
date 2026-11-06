@@ -6,7 +6,7 @@ multilingual-e5-small-labor es un modelo de embeddings densos especializado en l
 
 La relevancia es doble. Por un lado, adapta un modelo multilingüe genérico a un dominio vertical muy específico (legislación laboral coreana) con un conjunto de entrenamiento pequeño (663 pares query-passage), lo que demuestra que el fine-tuning con MultipleNegativesRankingLoss sobre pocos datos bien curados puede ofrecer una accuracy@5 superior al 90 % en el dominio objetivo. Por otro, el modelo es pequeño (0,5 GB de repositorio, 117 M de parámetros) y se puede desplegar en CPU o en GPUs de consumo, lo que abarata su integración en sistemas RAG legales.
 
-El modelo se publica bajo licencia MIT, con el formato propio de sentence-transformers (pesos safetensors) y compatibilidad con text-embeddings-inference y endpoints de HuggingFace. Está etiquetado únicamente para coreano (`ko`), aunque el modelo base sobre el que se construye es multilingüe.
+El modelo se publica bajo licencia MIT, con el formato propio de sentence-transformers (pesos safetensors) y compatibilidad con text-embeddings-inference y endpoints de Hugging Face. Está etiquetado únicamente para coreano (`ko`), aunque el modelo base sobre el que se construye es multilingüe.
 
 ## Especificaciones técnicas
 
@@ -39,7 +39,7 @@ El entrenamiento se realizó sobre el dataset gipyo123/labor-embedding-data, com
 - Recuperación de artículos concretos a partir de paráfrasis: el widget de la model card muestra consultas reformuladas que apuntan al mismo artículo (por ejemplo, tres formas distintas de preguntar por el permiso menstrual y el artículo 73).
 - Soporte de los prefijos E5 (`query:` y `passage:`) y de `normalize_embeddings=True` para similitud coseno.
 - Capacidad multilingüe heredada del modelo base intfloat/multilingual-e5-small, aunque el autor solo declara y evalúa coreano.
-- Integración con text-embeddings-inference y con endpoints compatibles de HuggingFace.
+- Integración con text-embeddings-inference y con endpoints compatibles de Hugging Face.
 - No soporta tool calling, function calling, razonamiento multi-paso ni generación de texto: es un modelo exclusivamente de embeddings.
 
 ## Casos de uso
@@ -77,16 +77,16 @@ No se han publicado en la información disponible resultados comparativos con ot
 - VRAM estimada para inferencia en fp32: aproximadamente 0,5 GB de pesos; en fp16, unos 0,25 GB. Con overhead de activaciones y tokenizador, cabe holgadamente en cualquier GPU con 2 GB o más.
 - GPU recomendadas: no requiere GPU dedicada; funciona en CPU para volúmenes moderados. Para alto throughput, cualquier GPU moderna (T4, L4, RTX 3060 en adelante, A10, A100, H100) es más que suficiente.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer con al menos 2 GB de VRAM (GTX 1650, RTX 3050, RTX 4060, etc.).
-- Opciones de despliegue: sentence-transformers (referencia del autor), text-embeddings-inference (etiqueta `text-embeddings-inference` en el repo), endpoints compatibles de HuggingFace, y herramientas estándar de cuantización y serving para modelos BERT.
+- Opciones de despliegue: sentence-transformers (referencia del autor), text-embeddings-inference (etiqueta `text-embeddings-inference` en el repo), endpoints compatibles de Hugging Face, y herramientas estándar de cuantización y serving para modelos BERT.
 - Latencia y throughput estimados: no disponibles en la información proporcionada. Por el tamaño del modelo (117 M de parámetros, 384 dimensiones), se espera un throughput alto en GPU y aceptable en CPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Dimensión | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| gipyo123/multilingual-e5-small-labor | 117,6 M | 512 tokens | 384 | Laboral coreano (fine-tuning) | MIT | HuggingFace |
-| intfloat/multilingual-e5-small (base) | 117,6 M | 512 tokens | 384 | Multilingüe general | MIT | HuggingFace |
-| intfloat/multilingual-e5-base (base) | no disponible en la información | 512 tokens | 768 | Multilingüe general | MIT | HuggingFace |
+| gipyo123/multilingual-e5-small-labor | 117,6 M | 512 tokens | 384 | Laboral coreano (fine-tuning) | MIT | Hugging Face |
+| intfloat/multilingual-e5-small (base) | 117,6 M | 512 tokens | 384 | Multilingüe general | MIT | Hugging Face |
+| intfloat/multilingual-e5-base (base) | no disponible en la información | 512 tokens | 768 | Multilingüe general | MIT | Hugging Face |
 
 La comparación directa de rendimiento con el modelo base no está disponible en la información proporcionada: el autor no publica métricas del base sobre el dataset `labor`, por lo que no se puede cuantificar la mejora del fine-tuning frente al punto de partida. La ventaja diferencial del modelo es la especialización en terminología y paráfrasis del derecho laboral coreano, a costa de un dataset de entrenamiento muy pequeño (663 pares) que limita la generalización a otras ramas del derecho.
 
@@ -104,7 +104,7 @@ La comparación directa de rendimiento con el modelo base no está disponible en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gipyo123/multilingual-e5-small-labor
+- Modelo en Hugging Face: https://huggingface.co/gipyo123/multilingual-e5-small-labor
 - Dataset de entrenamiento: https://huggingface.co/datasets/gipyo123/labor-embedding-data
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Repositorio de sentence-transformers: https://github.com/UKPLab/sentence-transformers

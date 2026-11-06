@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chatbot-Lite es un modelo de lenguaje publicado en HuggingFace por el usuario HireMeDeveloper bajo el identificador `HireMeDeveloper/Chatbot-Lite`. Se trata de un modelo de aproximadamente 494 millones de parametros (494.032.768 segun los pesos en safetensors) construido sobre la arquitectura Qwen2, segun las etiquetas declaradas en el repositorio. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales. El repositorio ocupa 1,0 GB y fue creado el 8 de octubre de 2026.
+Chatbot-Lite es un modelo de lenguaje publicado en Hugging Face por el usuario HireMeDeveloper bajo el identificador `HireMeDeveloper/Chatbot-Lite`. Se trata de un modelo de aproximadamente 494 millones de parametros (494.032.768 segun los pesos en safetensors) construido sobre la arquitectura Qwen2, segun las etiquetas declaradas en el repositorio. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales. El repositorio ocupa 1,0 GB y fue creado el 8 de octubre de 2026.
 
 El modelo no incluye una model card con informacion sustantiva: el README se limita a declarar la licencia Apache 2.0, sin descripcion de capacidades, datos de entrenamiento, benchmarks ni instrucciones de uso. Tampoco declara idiomas soportados ni pipeline de inferencia. Por tanto, gran parte de las especificaciones tecnicas habituales no estan disponibles y solo pueden inferirse parcialmente a partir de la arquitectura base.
 
@@ -63,7 +63,7 @@ No existen datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion en la m
 - VRAM estimada para inferencia: con 494 M parametros, en precision FP16 se requieren aproximadamente 1 GB de VRAM para los pesos, mas overhead de activaciones y cache KV; en cuantizacion de 8 bits o 4 bits el consumo baja a rangos de 300-600 MB, aunque no se publican pesos cuantizados oficiales.
 - GPU recomendadas: cualquier GPU moderna con al menos 2-4 GB de VRAM es suficiente; no se requiere hardware de datacenter.
 - Cabe en GPU de consumo: si. Es viable en GTX 1650, RTX 3060, RTX 4090 y practicamente cualquier GPU con mas de 2 GB de VRAM.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI o transformers de HuggingFace, siempre que se conviertan los pesos safetensors a GGUF si se usa llama.cpp u Ollama, ya que no se publican cuantizaciones preexistentes.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI o transformers de Hugging Face, siempre que se conviertan los pesos safetensors a GGUF si se usa llama.cpp u Ollama, ya que no se publican cuantizaciones preexistentes.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -72,10 +72,10 @@ No hay datos de rendimiento de Chatbot-Lite que permitan una comparacion cuantit
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HireMeDeveloper/Chatbot-Lite | 494 M | no disponible | Apache 2.0 | HuggingFace |
-| Qwen2-0.5B | 494 M | 32.768 tokens | Apache 2.0 | HuggingFace / Ollama |
-| SmolLM-360M | 360 M | 2.048 tokens | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache 2.0 | HuggingFace / Ollama |
+| HireMeDeveloper/Chatbot-Lite | 494 M | no disponible | Apache 2.0 | Hugging Face |
+| Qwen2-0.5B | 494 M | 32.768 tokens | Apache 2.0 | Hugging Face / Ollama |
+| SmolLM-360M | 360 M | 2.048 tokens | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache 2.0 | Hugging Face / Ollama |
 
 Nota: los datos de contexto de los modelos comparados corresponden a sus fichas publicas y no implican que Chatbot-Lite herede esas caracteristicas.
 
@@ -92,7 +92,7 @@ Nota: los datos de contexto de los modelos comparados corresponden a sus fichas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HireMeDeveloper/Chatbot-Lite
+- Modelo en Hugging Face: https://huggingface.co/HireMeDeveloper/Chatbot-Lite
 - Repositorio del autor (contexto academico): https://github.com/HireMeDeveloper/CSC525-Chatbot-Server-Lite
 - SDK homonimo sin relacion confirmada: https://github.com/agents-io/chatbotlite
 - Demo del SDK homonimo: https://chatbotlite-demos.vercel.app/

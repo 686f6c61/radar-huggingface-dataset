@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ahmedxg/gvr-model` es un repositorio alojado en HuggingFace por el usuario `ahmedxg`, con la etiqueta `region:us`. Fue creado el 28 de junio de 2026 y actualizado el 14 de agosto de 2026. El repositorio tiene un tamaño de 16,4 GB, lo que sugiere que podría tratarse de un modelo de lenguaje de tamaño medio o grande, aunque no se dispone de información pública sobre su arquitectura, parámetros o capacidades.
+El modelo `ahmedxg/gvr-model` es un repositorio alojado en Hugging Face por el usuario `ahmedxg`, con la etiqueta `region:us`. Fue creado el 28 de junio de 2026 y actualizado el 14 de agosto de 2026. El repositorio tiene un tamaño de 16,4 GB, lo que sugiere que podría tratarse de un modelo de lenguaje de tamaño medio o grande, aunque no se dispone de información pública sobre su arquitectura, parámetros o capacidades.
 
-La ficha que se presenta a continuación se basa exclusivamente en los metadatos disponibles en HuggingFace. Dado que no se ha publicado información técnica detallada (arquitectura, entrenamiento, licencia, idiomas, etc.), la mayoría de las secciones indican "no disponible". Se recomienda consultar directamente el repositorio o contactar con el autor para obtener datos adicionales antes de considerar su uso en producción.
+La ficha que se presenta a continuación se basa exclusivamente en los metadatos disponibles en Hugging Face. Dado que no se ha publicado información técnica detallada (arquitectura, entrenamiento, licencia, idiomas, etc.), la mayoría de las secciones indican "no disponible". Se recomienda consultar directamente el repositorio o contactar con el autor para obtener datos adicionales antes de considerar su uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -55,4 +55,4 @@ No disponible. No se dispone de información suficiente sobre el modelo para com
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/ahmedxg/gvr-model](https://huggingface.co/ahmedxg/gvr-model)
+- Repositorio en Hugging Face: [https://huggingface.co/ahmedxg/gvr-model](https://huggingface.co/ahmedxg/gvr-model)

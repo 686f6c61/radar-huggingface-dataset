@@ -6,7 +6,7 @@ Flux-Uncensored-V2 es un adaptador LoRA de bajo rango publicado por el usuario B
 
 La propuesta de valor es acotada y muy especifica: la version 2 reduce el tamano de los pesos del adaptador, corrige problemas de estabilidad de la v1 y acelera la generacion. El repositorio ocupa 0,7 GB e incluye material auxiliar (banner), de modo que el peso real del LoRA es una fraccion de esa cifra. La model card documenta una lista de palabras gatillo (`nsfw`, `naked`, `nude`, `erotic`, `sensual`, `explicit`, entre otras) que orientan la generacion hacia contenido explicito.
 
-Es relevante ahora por dos motivos opuestos. Para creadores, es un ejemplo de adaptacion de FLUX.1-dev a un nicho vetado por el modelo base. Para equipos de seguridad y moderacion, es un caso de estudio barato de *jailbreak* de un modelo de difusion de 12 000 millones de parametros: demuestra que un LoRA de pocos cientos de megabytes basta para desactivar las mitigaciones de contenido. El repositorio no declara idiomas soportados, no publica benchmarks y presenta una contradiccion de licencia entre la metadata de HuggingFace y la model card.
+Es relevante ahora por dos motivos opuestos. Para creadores, es un ejemplo de adaptacion de FLUX.1-dev a un nicho vetado por el modelo base. Para equipos de seguridad y moderacion, es un caso de estudio barato de *jailbreak* de un modelo de difusion de 12 000 millones de parametros: demuestra que un LoRA de pocos cientos de megabytes basta para desactivar las mitigaciones de contenido. El repositorio no declara idiomas soportados, no publica benchmarks y presenta una contradiccion de licencia entre la metadata de Hugging Face y la model card.
 
 ## Especificaciones tecnicas
 
@@ -18,11 +18,11 @@ Es relevante ahora por dos motivos opuestos. Para creadores, es un ejemplo de ad
 | Longitud de contexto | No aplica (modelo de difusion); segun la documentacion publica de FLUX.1-dev, el condicionamiento de texto admite 512 tokens en el codificador T5-XXL y 77 en CLIP |
 | Tipos de cuantizacion | La model card solo menciona `torch.bfloat16`; no se publican variantes cuantizadas del LoRA |
 | Idiomas soportados | No disponible |
-| Licencia | Contradictoria: la metadata de HuggingFace indica `creativeml-openrail-m`; la model card indica FLUX-1-dev Non-Commercial License |
+| Licencia | Contradictoria: la metadata de Hugging Face indica `creativeml-openrail-m`; la model card indica FLUX-1-dev Non-Commercial License |
 | Formato de pesos | `safetensors` (`lora.safetensors`) |
 | Tamano del repositorio | 0,7 GB (incluye pesos del LoRA y material auxiliar) |
 | Modelo base | `black-forest-labs/FLUX.1-dev` |
-| Etiqueta de pipeline | `image-to-image` en HuggingFace; los ejemplos de la model card son `text-to-image` |
+| Etiqueta de pipeline | `image-to-image` en Hugging Face; los ejemplos de la model card son `text-to-image` |
 | Trigger words | `nsfw`, `naked`, `pron`, `kissing`, `erotic`, `nude`, `sensual`, `adult content`, `explicit` |
 
 ## Arquitectura y entrenamiento
@@ -34,7 +34,7 @@ La model card no documenta el dataset de entrenamiento, el numero de pasos, la t
 ## Capacidades
 
 - Generacion de imagenes a partir de texto (text-to-image) heredada del pipeline de FLUX.1-dev, con el sesgo del adaptador hacia contenido NSFW.
-- Edicion de imagenes existentes (image-to-image) segun la etiqueta de pipeline declarada en HuggingFace.
+- Edicion de imagenes existentes (image-to-image) segun la etiqueta de pipeline declarada en Hugging Face.
 - Generacion de contenido explicito: la funcion declarada del LoRA es precisamente eliminar las restricciones de contenido del modelo base.
 - Control mediante palabras gatillo (`nsfw`, `nude`, `erotic`, `explicit`, etc.) que activan la generacion explicita.
 - Carga como adaptador desacoplable: `pipeline.load_lora_weights(...)` en `diffusers`, con posibilidad de ajustar el peso del adaptador.
@@ -70,10 +70,10 @@ Las cifras siguientes son estimaciones derivadas del tamano conocido del modelo 
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Flux-Uncensored-V2 | LoRA sobre FLUX.1-dev | No disponible (base: 12 000 M) | No disponible; base a 1024x1024 | Contradictoria (`creativeml-openrail-m` vs. no comercial de FLUX.1-dev) | HuggingFace, repo de 0,7 GB |
-| FLUX.1-dev (base) | Transformer de difusion | 12 000 M | 512 tokens T5 + 77 CLIP; 1024x1024 | FLUX-1-dev Non-Commercial License | HuggingFace, pesos completos |
-| FLUX.1-schnell | Transformer de difusion destilado | 12 000 M | Igual que dev; 1024x1024 | Apache 2.0 (uso comercial permitido) | HuggingFace |
-| LoRA NSFW sobre SDXL (familia tipo Pony, por ejemplo) | LoRA o checkpoint sobre SDXL | Base: 2600 M | 77 tokens CLIP; 1024x1024 | Variables, habitualmente permisivas | HuggingFace, Civitai |
+| Flux-Uncensored-V2 | LoRA sobre FLUX.1-dev | No disponible (base: 12 000 M) | No disponible; base a 1024x1024 | Contradictoria (`creativeml-openrail-m` vs. no comercial de FLUX.1-dev) | Hugging Face, repo de 0,7 GB |
+| FLUX.1-dev (base) | Transformer de difusion | 12 000 M | 512 tokens T5 + 77 CLIP; 1024x1024 | FLUX-1-dev Non-Commercial License | Hugging Face, pesos completos |
+| FLUX.1-schnell | Transformer de difusion destilado | 12 000 M | Igual que dev; 1024x1024 | Apache 2.0 (uso comercial permitido) | Hugging Face |
+| LoRA NSFW sobre SDXL (familia tipo Pony, por ejemplo) | LoRA o checkpoint sobre SDXL | Base: 2600 M | 77 tokens CLIP; 1024x1024 | Variables, habitualmente permisivas | Hugging Face, Civitai |
 
 La ventaja del LoRA sobre FLUX.1-dev es la calidad de imagen del modelo base, superior a la de SDXL, a costa de un coste de VRAM muy superior (24 GB frente a 8-12 GB). La principal desventaja frente a FLUX.1-schnell es la licencia: `schnell` es Apache 2.0, mientras que `dev` y cualquier adaptador derivado de el quedan bajo terminos no comerciales. No se dispone de datos de rendimiento comparado con la competencia.
 
@@ -81,7 +81,7 @@ La ventaja del LoRA sobre FLUX.1-dev es la calidad de imagen del modelo base, su
 
 - Contenido para adultos: el modelo esta disenado para generar material explicito. Requiere verificacion de edad, cumplimiento de la legislacion local (Espana: Codigo Penal y normativa sobre comunicacion audiovisual) y de las condiciones de servicio de cualquier plataforma donde se publique.
 - Riesgo grave en la model card: uno de los ejemplos de widget del repositorio describe un escenario sexual con menores de edad. Ese tipo de contenido es material de abuso sexual infantil y es delito en Espana y en la practica totalidad de jurisdicciones. El ejemplo no debe reproducirse ni utilizarse bajo ninguna circunstancia; su sola presencia en la ficha es motivo para tratar el repositorio con extrema cautela y para reportarlo.
-- Contradiccion de licencia: la metadata de HuggingFace declara `creativeml-openrail-m`, mientras que la model card y el modelo base imponen la FLUX-1-dev Non-Commercial License. Ante una discrepancia de este tipo, la interpretacion restrictiva es la segura: uso no comercial.
+- Contradiccion de licencia: la metadata de Hugging Face declara `creativeml-openrail-m`, mientras que la model card y el modelo base imponen la FLUX-1-dev Non-Commercial License. Ante una discrepancia de este tipo, la interpretacion restrictiva es la segura: uso no comercial.
 - Terminos incompatibles con produccion comercial: cualquier despliegue comercial requiere licencia expresa de Black Forest Labs para FLUX.1-dev, y la situacion del adaptador no esta aclarada.
 - Sesgos: no documentados. Un adaptador de este tipo puede amplificar sesgos de representacion del modelo base (etnicidad, complexion corporal, edad aparente), con riesgo adicional de generar sujetos de apariencia menor de edad.
 - Alucinacion estructural: como todo modelo de difusion, produce artefactos anatomicos (manos, extremidades, texturas), incoherencia con prompt largo y fallos en composiciones con multiples sujetos.
@@ -92,7 +92,7 @@ La ventaja del LoRA sobre FLUX.1-dev es la calidad de imagen del modelo base, su
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ballsworthy/Flux-Uncensored-V2
+- Repositorio en Hugging Face: https://huggingface.co/Ballsworthy/Flux-Uncensored-V2
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Licencia del modelo base: https://huggingface.co/black-forest-labs/FLUX.1-dev/blob/main/LICENSE.md
 - Sitio del autor (EnhanceAI): https://enhanceai.art

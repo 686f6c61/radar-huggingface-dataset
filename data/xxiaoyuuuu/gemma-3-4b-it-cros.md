@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma-3-4B-IT-CRoS | 4B + LoRA r=32 | no disponible | GRPO con recompensa de causalidad CRoS | gemma | Adaptador PEFT en HuggingFace |
-| Gemma-3-4B-IT-Outcome | 4B + LoRA | no disponible | GRPO con recompensa solo por resultado | gemma | Adaptador PEFT en HuggingFace |
-| Gemma-3-4B-IT-EarlyAnswering | 4B + LoRA | no disponible | Recompensa de causalidad Early Answering | gemma | Adaptador PEFT en HuggingFace |
-| Gemma-3-4B-IT-CIR | 4B + LoRA | no disponible | Recompensa de causalidad CIR | gemma | Adaptador PEFT en HuggingFace |
+| Gemma-3-4B-IT-CRoS | 4B + LoRA r=32 | no disponible | GRPO con recompensa de causalidad CRoS | gemma | Adaptador PEFT en Hugging Face |
+| Gemma-3-4B-IT-Outcome | 4B + LoRA | no disponible | GRPO con recompensa solo por resultado | gemma | Adaptador PEFT en Hugging Face |
+| Gemma-3-4B-IT-EarlyAnswering | 4B + LoRA | no disponible | Recompensa de causalidad Early Answering | gemma | Adaptador PEFT en Hugging Face |
+| Gemma-3-4B-IT-CIR | 4B + LoRA | no disponible | Recompensa de causalidad CIR | gemma | Adaptador PEFT en Hugging Face |
 
 Las variantes comparadas son las lineas base publicadas por el mismo autor sobre el mismo modelo base, lo que permite una comparacion controlada del efecto de la recompensa. No se dispone de comparacion con modelos de razonamiento de otros desarrolladores en la informacion proporcionada.
 
@@ -91,7 +91,7 @@ Las variantes comparadas son las lineas base publicadas por el mismo autor sobre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xxiaoyuuuu/Gemma-3-4B-IT-CRoS
+- Modelo en Hugging Face: https://huggingface.co/xxiaoyuuuu/Gemma-3-4B-IT-CRoS
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Paper: https://arxiv.org/abs/XXXX.XXXXX (identificador no valido en la model card)
 - Codigo: https://github.com/xxiaoyuuuu/CRoS

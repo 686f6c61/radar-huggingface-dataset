@@ -107,7 +107,7 @@ Divergencia KL del primer token respecto al original de 4 bits en 100 prompts in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kaziko/Qwen3.5-4B-Zwyrol
+- Modelo en Hugging Face: https://huggingface.co/Kaziko/Qwen3.5-4B-Zwyrol
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Checkpoint de partida 4 bits: https://huggingface.co/mlx-community/Qwen3.5-4B-MLX-4bit
 - Modelo Heretic MLX: https://huggingface.co/TheCluster/Qwen3.5-4B-Heretic-MLX

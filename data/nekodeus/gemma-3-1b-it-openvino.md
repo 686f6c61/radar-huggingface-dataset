@@ -87,7 +87,7 @@ La comparación con los originales en safetensors es la más directa: este artef
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nekodeus/gemma-3-1b-it-openvino
+- Repositorio Hugging Face: https://huggingface.co/Nekodeus/gemma-3-1b-it-openvino
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Documentación de optimum-intel: https://github.com/huggingface/optimum-intel
 - OpenVINO GenAI: https://github.com/openvinotoolkit/openvino.genai

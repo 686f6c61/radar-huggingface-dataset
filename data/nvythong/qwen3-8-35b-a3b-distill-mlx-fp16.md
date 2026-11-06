@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nvythong/Qwen3.8-35B-A3B-Distill-mlx-fp16
+- Repositorio Hugging Face: https://huggingface.co/nvythong/Qwen3.8-35B-A3B-Distill-mlx-fp16
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-35B-A3B-Distill
 - Repositorio GitHub QwenLM/Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Variante MLX 8-bit de terceros (NovaeonStudio): https://huggingface.co/NovaeonStudio/Qwen3.8-35B-A3B-Distill-oQ8-fp16-mtp

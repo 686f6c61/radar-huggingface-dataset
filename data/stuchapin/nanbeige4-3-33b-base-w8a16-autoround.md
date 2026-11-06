@@ -18,7 +18,7 @@ La relevancia de esta ficha es doble: por un lado, documenta una receta de cuant
 | Longitud de contexto | 128 000 tokens según la model card de la cuantización; hasta 524 288 tokens según fuentes de prensa sobre el modelo base (dato no confirmado y en conflicto) |
 | Tipos de cuantizacion | W8A16 simétrico, grupo de 128, AutoRound 0.15.1; existe también una variante W4A16 del mismo autor |
 | Idiomas soportados | Chino (`zh`) e inglés (`en`) |
-| Licencia | `nanbeige-license` (etiqueta `license: other` en HuggingFace); algunas fuentes de prensa citan Apache 2.0 para el modelo base, dato en conflicto |
+| Licencia | `nanbeige-license` (etiqueta `license: other` en Hugging Face); algunas fuentes de prensa citan Apache 2.0 para el modelo base, dato en conflicto |
 | Formato de pesos | GPTQ empaquetado (`auto_round:auto_gptq`); contenedor exacto no confirmado en la información disponible |
 | Modelo base | `Nanbeige/Nanbeige4.3-33B-Base` |
 | Fecha de publicación del base | 24 de octubre de 2026 |
@@ -85,10 +85,10 @@ No se han publicado resultados de benchmarks específicos de este checkpoint cua
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B-Base (W8A16 AutoRound) | 33B denso | 128K (card) / hasta 512K (prensa, sin confirmar) | `nanbeige-license` (prensa cita Apache 2.0) | HuggingFace, vLLM | Objeto de esta ficha; calibrado con turnos de agentes |
-| Qwen3-32B | 32,8B denso | 32 768 nativo, ampliable con YaRN | Apache 2.0 | HuggingFace, amplio ecosistema de cuantizaciones | Alternativa madura en tooling y despliegue |
-| Gemma-3-27B | 27B denso | 128K | Licencia Gemma (uso comercial con condiciones) | HuggingFace, Vertex AI | Multimodal en la familia; licencia menos permisiva |
-| Mistral Small 3.1 24B | 24B denso | 128K | Apache 2.0 | HuggingFace, vLLM, Ollama | Menor huella, cabe en una GPU de 48 GB con margen |
+| Nanbeige4.3-33B-Base (W8A16 AutoRound) | 33B denso | 128K (card) / hasta 512K (prensa, sin confirmar) | `nanbeige-license` (prensa cita Apache 2.0) | Hugging Face, vLLM | Objeto de esta ficha; calibrado con turnos de agentes |
+| Qwen3-32B | 32,8B denso | 32 768 nativo, ampliable con YaRN | Apache 2.0 | Hugging Face, amplio ecosistema de cuantizaciones | Alternativa madura en tooling y despliegue |
+| Gemma-3-27B | 27B denso | 128K | Licencia Gemma (uso comercial con condiciones) | Hugging Face, Vertex AI | Multimodal en la familia; licencia menos permisiva |
+| Mistral Small 3.1 24B | 24B denso | 128K | Apache 2.0 | Hugging Face, vLLM, Ollama | Menor huella, cabe en una GPU de 48 GB con margen |
 
 Los datos de los modelos comparables proceden de sus especificaciones públicas y no se han verificado contra benchmarks ejecutados en el mismo entorno; no se dispone de una comparación de rendimiento homogénea entre Nanbeige4.3-33B y estas alternativas en la información proporcionada.
 
@@ -97,7 +97,7 @@ Los datos de los modelos comparables proceden de sus especificaciones públicas 
 - Es un modelo **Base**, no instruido: no cabe esperar seguimiento fiable de instrucciones, formato de chat ni rechazo de peticiones dañinas sin un ajuste posterior.
 - Las capacidades agénticas y de razonamiento que la prensa atribuye a Nanbeige4.3-33B no están verificadas para este checkpoint Base cuantizado.
 - Discrepancia de contexto no resuelta: 128 000 tokens en la model card frente a 524 288 en fuentes de prensa. Verificar en el repositorio del modelo base antes de dimensionar caché KV.
-- Discrepancia de licencia: la etiqueta de HuggingFace es `license: other` con `nanbeige-license`, mientras que varias fuentes secundarias afirman Apache 2.0. Es imprescindible leer el fichero LICENSE del modelo base antes de cualquier uso comercial.
+- Discrepancia de licencia: la etiqueta de Hugging Face es `license: other` con `nanbeige-license`, mientras que varias fuentes secundarias afirman Apache 2.0. Es imprescindible leer el fichero LICENSE del modelo base antes de cualquier uso comercial.
 - Riesgo de alucinación inherente a un modelo de lenguaje base, agravado en dominios no representados en el corpus de preentrenamiento, cuyo contenido no se documenta.
 - Idiomas limitados a chino e inglés según la model card; el rendimiento en castellano no está evaluado y previsiblemente será inferior.
 - La calibración se hizo con 256 turnos de agentes en producción, lo que puede introducir sesgo hacia ese registro conversacional y degradar ligeramente otros dominios.
@@ -108,7 +108,7 @@ Los datos de los modelos comparables proceden de sus especificaciones públicas 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/stuchapin/Nanbeige4.3-33B-Base-W8A16-AutoRound
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/stuchapin/Nanbeige4.3-33B-Base-W8A16-AutoRound
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B-Base
 - Licencia del modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B-Base/blob/main/LICENSE
 - Variante W4A16 del mismo autor: https://huggingface.co/stuchapin/Nanbeige4.3-33B-Base-W4A16-AutoRound

@@ -17,7 +17,7 @@ La relevancia de esta ficha radica en que combina un modelo de traducción de ú
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-IQ4_NL, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K |
-| Idiomas soportados | en (etiqueta de HuggingFace); el modelo base Hy-MT2 soporta 33 idiomas, pero el ajuste fino puede limitar el alcance |
+| Idiomas soportados | en (etiqueta de Hugging Face); el modelo base Hy-MT2 soporta 33 idiomas, pero el ajuste fino puede limitar el alcance |
 | Licencia | no disponible |
 | Formato de pesos | GGUF (safetensors no incluido en este repo) |
 
@@ -69,16 +69,16 @@ La comparativa se basa en modelos de traducción de tamaño similar. NLLB-200 y 
 
 ## Limitaciones y advertencias
 
-- **Licencia no especificada**: el modelo no declara una licencia en HuggingFace, lo que genera incertidumbre sobre su uso comercial. Se recomienda contactar con el autor del modelo base antes de utilizarlo en producción.
+- **Licencia no especificada**: el modelo no declara una licencia en Hugging Face, lo que genera incertidumbre sobre su uso comercial. Se recomienda contactar con el autor del modelo base antes de utilizarlo en producción.
 - **Sesgos del ajuste fino**: al estar entrenado específicamente con contenido de *Uma Musume*, el modelo puede mostrar un rendimiento deficiente en tareas de traducción general fuera de ese dominio.
 - **Riesgo de alucinación**: como cualquier modelo de lenguaje, puede generar traducciones inventadas o incorrectas, especialmente con términos poco frecuentes o nombres propios.
 - **Contexto limitado**: no se ha especificado la longitud de contexto, lo que puede limitar la traducción de documentos largos o conversaciones extensas.
-- **Idiomas soportados**: aunque el modelo base soporta 33 idiomas, la etiqueta de HuggingFace solo indica "en", lo que sugiere que el ajuste fino puede haberse centrado en inglés o que la documentación es incompleta.
+- **Idiomas soportados**: aunque el modelo base soporta 33 idiomas, la etiqueta de Hugging Face solo indica "en", lo que sugiere que el ajuste fino puede haberse centrado en inglés o que la documentación es incompleta.
 - **Calidad de cuantizaciones extremas**: las variantes IQ1_S e IQ2_XXS presentan una degradación notable de calidad y solo se recomiendan para pruebas o entornos con recursos muy limitados.
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/mradermacher/umamusume-translator-hy-mt2-7b-i1-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/mradermacher/umamusume-translator-hy-mt2-7b-i1-GGUF)
 - [Modelo base de Mario51](https://huggingface.co/Mario51/umamusume-translator-hy-mt2-7b)
 - [Cuantizaciones estáticas del mismo modelo](https://huggingface.co/mradermacher/umamusume-translator-hy-mt2-7b-GGUF)
 - [Repositorio de Hy-MT2 en GitHub](https://github.com/Tencent-Hunyuan/Hy-MT2)

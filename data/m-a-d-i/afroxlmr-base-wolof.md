@@ -69,9 +69,9 @@ Notas metodologicas aportadas por el autor: la perplejidad MLM se calcula sobre 
 
 | Modelo | Parametros | Contexto | Perplejidad MLM (wolof) | F1 NER wolof | Exactitud SIB-200 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| AfroXLMR-base-Wolof (este modelo) | 278,3 M | 512 | 2,32 | 87,29 | 76,80 | No disponible | HuggingFace, 0 descargas al registrar la ficha |
-| Davlan/afro-xlmr-base | No disponible en la informacion proporcionada (mismo tokenizador y arquitectura segun la evaluacion) | 512 (misma longitud de evaluacion) | 38,72 | 84,35 | 62,75 | No disponible | HuggingFace |
-| XLM-RoBERTa base | No disponible en la informacion proporcionada | No disponible | No evaluado en el protocolo del autor | No evaluado | No evaluado | No disponible | HuggingFace |
+| AfroXLMR-base-Wolof (este modelo) | 278,3 M | 512 | 2,32 | 87,29 | 76,80 | No disponible | Hugging Face, 0 descargas al registrar la ficha |
+| Davlan/afro-xlmr-base | No disponible en la informacion proporcionada (mismo tokenizador y arquitectura segun la evaluacion) | 512 (misma longitud de evaluacion) | 38,72 | 84,35 | 62,75 | No disponible | Hugging Face |
+| XLM-RoBERTa base | No disponible en la informacion proporcionada | No disponible | No evaluado en el protocolo del autor | No evaluado | No evaluado | No disponible | Hugging Face |
 
 La comparacion directa solo es posible con AfroXLMR-base, que es el modelo de partida y el unico alternativo evaluado bajo el mismo protocolo. No se han proporcionado datos de otros encoders especificos para wolof ni de modelos multilingues de tamano comparable medidos sobre MasakhaNER 2.0 wolof o SIB-200 `wol_Latn`.
 
@@ -89,7 +89,7 @@ La comparacion directa solo es posible con AfroXLMR-base, que es el modelo de pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/m-a-d-i/afroxlmr-base-wolof
+- Modelo en Hugging Face: https://huggingface.co/m-a-d-i/afroxlmr-base-wolof
 - Modelo base: https://huggingface.co/Davlan/afro-xlmr-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/galsenai/cleaned_data_for_clm
 - Corpus de origen: https://huggingface.co/datasets/galsenai/wolof_centalized_corpus

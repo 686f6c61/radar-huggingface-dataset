@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-90` es un checkpoint de 3.085.938.688 parámetros (aproximadamente 3,09 mil millones) publicado en HuggingFace por el usuario `yuxuanw8`. La etiqueta de arquitectura del repositorio es `qwen2`, por lo que se trata de un transformer decoder-only de la familia Qwen2, y el nombre del identificador sugiere que deriva de un entrenamiento de refuerzo sobre la tarea HotpotQA (razonamiento multihop sobre múltiples documentos), aunque esta interpretación no está confirmada por el autor en ninguna documentación.
+El modelo `yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-90` es un checkpoint de 3.085.938.688 parámetros (aproximadamente 3,09 mil millones) publicado en Hugging Face por el usuario `yuxuanw8`. La etiqueta de arquitectura del repositorio es `qwen2`, por lo que se trata de un transformer decoder-only de la familia Qwen2, y el nombre del identificador sugiere que deriva de un entrenamiento de refuerzo sobre la tarea HotpotQA (razonamiento multihop sobre múltiples documentos), aunque esta interpretación no está confirmada por el autor en ninguna documentación.
 
-El repositorio contiene únicamente el checkpoint número 90 de un proceso de entrenamiento, con pesos en formato safetensors y un tamaño total de 12,4 GB, lo que es coherente con pesos almacenados en precisión de 32 bits. La model card es la plantilla automática de HuggingFace sin rellenar: no declara licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación.
+El repositorio contiene únicamente el checkpoint número 90 de un proceso de entrenamiento, con pesos en formato safetensors y un tamaño total de 12,4 GB, lo que es coherente con pesos almacenados en precisión de 32 bits. La model card es la plantilla automática de Hugging Face sin rellenar: no declara licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación.
 
 Su relevancia es por tanto limitada al ámbito de la investigación reproducible: es un artefacto intermedio de un pipeline experimental de aprendizaje por refuerzo, sin documentación asociada y con cero descargas y cero likes en el momento de redactar esta ficha. No debe considerarse un modelo listo para producción.
 
@@ -82,7 +82,7 @@ La comparativa se establece con modelos de la misma franja de parámetros (2-4 B
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla vacía de HuggingFace, por lo que no se conocen datos de entrenamiento, hiperparámetros, composición del dataset ni proceso de alineación.
+- Ausencia total de documentación: la model card es la plantilla vacía de Hugging Face, por lo que no se conocen datos de entrenamiento, hiperparámetros, composición del dataset ni proceso de alineación.
 - Licencia no declarada: sin licencia explícita, el uso comercial es jurídicamente arriesgado; debe contactarse con el autor antes de cualquier despliegue productivo.
 - Riesgo de alucinación: es un modelo de 3 B sin evaluación publicada; se espera una tasa de error alta en tareas factuales, especialmente fuera del dominio de HotpotQA.
 - Idiomas no declarados: no hay garantía de calidad ni de cobertura multilingüe.
@@ -94,6 +94,6 @@ La comparativa se establece con modelos de la misma franja de parámetros (2-4 B
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-90
+- Página del modelo en Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-90
 - Referencia citada en la plantilla de la model card (calculadora de impacto medioambiental, no artículo del modelo): https://arxiv.org/abs/1910.09700
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, al autor ni a documentación asociada; los resultados obtenidos corresponden a matrículas de vehículos del Reino Unido y a la estrella Gliese 12, sin relación alguna con este repositorio.

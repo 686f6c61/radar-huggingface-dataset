@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-ASR-0.6B-dflash es un modelo borrador (*draft*) para decodificación especulativa greedy sobre el modelo de reconocimiento automático de voz Qwen3-ASR-0.6B de Alibaba Qwen. Lo publica el usuario wilsonzheng0327 en HuggingFace bajo licencia Apache 2.0 y la librería `speculators`, y no es un modelo ASR autónomo: es un acelerador que propone tokens que el modelo objetivo verifica en paralelo, reduciendo el número de pasos de decodificación necesarios para transcribir audio.
+Qwen3-ASR-0.6B-dflash es un modelo borrador (*draft*) para decodificación especulativa greedy sobre el modelo de reconocimiento automático de voz Qwen3-ASR-0.6B de Alibaba Qwen. Lo publica el usuario wilsonzheng0327 en Hugging Face bajo licencia Apache 2.0 y la librería `speculators`, y no es un modelo ASR autónomo: es un acelerador que propone tokens que el modelo objetivo verifica en paralelo, reduciendo el número de pasos de decodificación necesarios para transcribir audio.
 
 El borrador es deliberadamente pequeño: 131.154.432 parámetros reales en safetensors (frente a los 0,6B del objetivo), con 5 capas transformer de estilo Qwen3 (hidden 1024, 16 cabezas de atención y 8 de KV, head_dim 128) y una cabeza de salida con vocabulario reducido a 48.000 tokens. Incorpora dos innovaciones relevantes: el esquema DFlash de bloques causales de tamaño 8 (7 propuestas por ronda) y un entrenamiento en dos fases que evita el colapso en audio largo, con ventana deslizante de 32.768 tokens y entrenamiento sobre grabaciones de hasta 240 segundos.
 
@@ -70,10 +70,10 @@ La model card publica longitudes de aceptación (*accept length*) en decodificac
 
 | Modelo | Parámetros | Contexto / ventana | Aceptación agregada (all) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-ASR-0.6B-dflash (este) | 131M | 32.768 (hasta 240 s) | 5,19 | Apache 2.0 | HuggingFace, 18 descargas |
-| Variante 32k del mismo draft | no disponible | 32.768 | 5,04 | Apache 2.0 | HuggingFace |
-| mattymchen/Qwen3-ASR-1.7B-speculator.dflash | no disponible | no disponible | 3,51 | no disponible | HuggingFace |
-| Qwen3-ASR-0.6B (modelo objetivo) | ~0,6B | no disponible | no aplica (no es draft) | Apache 2.0 | HuggingFace |
+| Qwen3-ASR-0.6B-dflash (este) | 131M | 32.768 (hasta 240 s) | 5,19 | Apache 2.0 | Hugging Face, 18 descargas |
+| Variante 32k del mismo draft | no disponible | 32.768 | 5,04 | Apache 2.0 | Hugging Face |
+| mattymchen/Qwen3-ASR-1.7B-speculator.dflash | no disponible | no disponible | 3,51 | no disponible | Hugging Face |
+| Qwen3-ASR-0.6B (modelo objetivo) | ~0,6B | no disponible | no aplica (no es draft) | Apache 2.0 | Hugging Face |
 
 El borrador de 0,6B supera en aceptación agregada al draft de referencia de 1.7B (5,19 frente a 3,51), especialmente en japonés (4,33 frente a 2,09) y en audio de 60 y 180 segundos, donde el de 1.7B cae a 1,54-2,96. La variante de 32k sacrifica algo de aceptación (5,04) a cambio de un vocabulario menor.
 
@@ -91,7 +91,7 @@ El borrador de 0,6B supera en aceptación agregada al draft de referencia de 1.7
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wilsonzheng0327/Qwen3-ASR-0.6B-dflash
+- Hugging Face: https://huggingface.co/wilsonzheng0327/Qwen3-ASR-0.6B-dflash
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Variante HF del base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B-hf
 - Referencia de layout DFlash: https://huggingface.co/mattymchen/Qwen3-ASR-1.7B-speculator.dflash

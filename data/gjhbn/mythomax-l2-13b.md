@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MythoMax-L2-13b (este repo) | 13B | No disponible | Roleplay y narrativa (merge) | other (LLaMA 2) | HuggingFace, cuantizaciones de TheBloke |
-| MythoLogic-L2-13b | 13B | No disponible | Roleplay y razonamiento (base del merge) | other (LLaMA 2) | HuggingFace (Gryphe) |
-| Huginn-13b-FP16 | 13B | No disponible | Escritura y narrativa (base del merge) | other (LLaMA 2) | HuggingFace (The-Face-Of-Goonery) |
-| MythoMix | 13B | No disponible | Merge previo del mismo autor | other (LLaMA 2) | HuggingFace (Gryphe) |
+| MythoMax-L2-13b (este repo) | 13B | No disponible | Roleplay y narrativa (merge) | other (LLaMA 2) | Hugging Face, cuantizaciones de TheBloke |
+| MythoLogic-L2-13b | 13B | No disponible | Roleplay y razonamiento (base del merge) | other (LLaMA 2) | Hugging Face (Gryphe) |
+| Huginn-13b-FP16 | 13B | No disponible | Escritura y narrativa (base del merge) | other (LLaMA 2) | Hugging Face (The-Face-Of-Goonery) |
+| MythoMix | 13B | No disponible | Merge previo del mismo autor | other (LLaMA 2) | Hugging Face (Gryphe) |
 
 Los datos de contexto y benchmarks de los modelos comparables no están disponibles en la información proporcionada.
 
@@ -85,7 +85,7 @@ Los datos de contexto y benchmarks de los modelos comparables no están disponib
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Gjhbn/MythoMax-L2-13b
+- Repositorio en Hugging Face: https://huggingface.co/Gjhbn/MythoMax-L2-13b
 - Modelo original de Gryphe (referenciado en la model card, no verificado en la búsqueda): https://huggingface.co/Gryphe/MythoMax-L2-13b
 - MythoLogic-L2-13b: https://huggingface.co/Gryphe/MythoLogic-L2-13b
 - Huginn-13b-FP16: https://huggingface.co/The-Face-Of-Goonery/Huginn-13b-FP16

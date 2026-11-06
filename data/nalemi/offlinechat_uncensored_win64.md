@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OfflineChat_Uncensored_Win64 es un paquete distribuido por el usuario nalemi en HuggingFace que contiene una aplicacion de chat completamente offline para Windows de 64 bits, empaquetada junto con un modelo Mistral-Nemo-Instruct-2407-abliterated en cuantizacion Q4_K_M (formato GGUF). No se trata de un modelo entrenado por el autor, sino de una distribucion binaria portable que integra llama.cpp como motor de inferencia y un modelo derivado de Mistral-Nemo mediante la tecnica de abliteration, que elimina las direcciones de rechazo del espacio de activaciones para reducir las negativas del modelo a responder.
+OfflineChat_Uncensored_Win64 es un paquete distribuido por el usuario nalemi en Hugging Face que contiene una aplicacion de chat completamente offline para Windows de 64 bits, empaquetada junto con un modelo Mistral-Nemo-Instruct-2407-abliterated en cuantizacion Q4_K_M (formato GGUF). No se trata de un modelo entrenado por el autor, sino de una distribucion binaria portable que integra llama.cpp como motor de inferencia y un modelo derivado de Mistral-Nemo mediante la tecnica de abliteration, que elimina las direcciones de rechazo del espacio de activaciones para reducir las negativas del modelo a responder.
 
 El paquete resuelve el problema de despliegue local sin dependencias: no requiere instalacion, no envia telemetria ni realiza llamadas a la nube, y permite al usuario definir prompts de sistema personalizados, guardar y reanudar sesiones de chat, o borrar el historial por completo. La aplicacion esta pensada para intercambiar modelos GGUF, de modo que el usuario puede sustituir el modelo por defecto por otros compatibles con llama.cpp.
 
@@ -82,5 +82,5 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nalemi/OfflineChat_Uncensored_Win64
+- Hugging Face: https://huggingface.co/nalemi/OfflineChat_Uncensored_Win64
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

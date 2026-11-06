@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto / duración | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MiniMax-H3-DenoMix (este modelo) | Difusión R2V / image-text-to-video, merge | no disponible | no disponible | INT8 podado (ConvRot), fichero único de ~20,97 GB | MiniMax H3 Community License Agreement | HuggingFace, 0 descargas, 0 likes |
-| MiniMaxAI/MiniMax-H3 | Difusión R2V, modelo base | no disponible | no disponible | no disponible en la información proporcionada | MiniMax H3 Community License Agreement | HuggingFace (referenciado como base) |
-| WarmBloodAban/Minimax-h3_Singularity | Fine-tune de MiniMax H3 | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace (referenciado como base del merge) |
+| MiniMax-H3-DenoMix (este modelo) | Difusión R2V / image-text-to-video, merge | no disponible | no disponible | INT8 podado (ConvRot), fichero único de ~20,97 GB | MiniMax H3 Community License Agreement | Hugging Face, 0 descargas, 0 likes |
+| MiniMaxAI/MiniMax-H3 | Difusión R2V, modelo base | no disponible | no disponible | no disponible en la información proporcionada | MiniMax H3 Community License Agreement | Hugging Face (referenciado como base) |
+| WarmBloodAban/Minimax-h3_Singularity | Fine-tune de MiniMax H3 | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face (referenciado como base del merge) |
 | Otros modelos R2V de código abierto de la misma categoría | Difusión de vídeo | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 La comparación relevante es frente a sus dos antecesores: este modelo añade la fusión de Singularity y el empaquetado en un solo fichero INT8 podado, pero no publica métricas que permitan afirmar que supera al modelo base ni al fine-tune original.
@@ -94,7 +94,7 @@ La comparación relevante es frente a sus dos antecesores: este modelo añade la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Deno2026/MiniMax-H3-DenoMix
+- Modelo en Hugging Face: https://huggingface.co/Deno2026/MiniMax-H3-DenoMix
 - Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Fine-tune Singularity: https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity
 - Licencia del modelo (relativa al repositorio): https://huggingface.co/Deno2026/MiniMax-H3-DenoMix/blob/main/LICENSE

@@ -96,6 +96,6 @@ La comparativa se basa unicamente en los datos declarados por el autor de Pestle
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Doses-AI/Pestle-27B-Ternary-GGUF
+- Hugging Face: https://huggingface.co/Doses-AI/Pestle-27B-Ternary-GGUF
 - Whitepaper tecnico: https://doses.ai/pestle-27b-ternary-technical-report/
 - Repositorio Mortar: https://github.com/DosesAI/mortar.cpp

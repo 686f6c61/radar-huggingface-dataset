@@ -86,7 +86,7 @@ Code-Autopsy es un adaptador sobre Qwen2.5-Coder-7B-Instruct, por lo que hereda 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/devanshty/Code-Autopsy
+- Repositorio Hugging Face del modelo: https://huggingface.co/devanshty/Code-Autopsy
 - Repositorio del adaptador LoRA: https://huggingface.co/devanshty/code-autopsy-lora
 - Modelo base Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Dashboard de entrenamiento en Weights & Biases: https://wandb.ai/devanshtyagi1903-innothoughts/code-autopsy/runs/gc70q2q2

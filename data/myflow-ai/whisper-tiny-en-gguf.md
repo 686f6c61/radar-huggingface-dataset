@@ -106,7 +106,7 @@ No se dispone en la informacion proporcionada de datos de WER ni de parametros d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/myflow-ai/whisper-tiny.en-gguf
+- Repositorio Hugging Face: https://huggingface.co/myflow-ai/whisper-tiny.en-gguf
 - Modelo base: https://huggingface.co/openai/whisper-tiny.en
 - Commit del modelo base referenciado: https://huggingface.co/openai/whisper-tiny.en/commit/87c7102
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

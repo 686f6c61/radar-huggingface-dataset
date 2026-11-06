@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Saina Helm 3 0.8B | 0,853 B | No disponible | Texto, imagen y audio | Apache 2.0 | HuggingFace, API, MLX, GGUF y Ollama |
-| Qwen/Qwen3.5-0.8B (base) | ≈0,8 B; no confirmado en la información | No disponible | No disponible en la información | No disponible | HuggingFace |
+| Saina Helm 3 0.8B | 0,853 B | No disponible | Texto, imagen y audio | Apache 2.0 | Hugging Face, API, MLX, GGUF y Ollama |
+| Qwen/Qwen3.5-0.8B (base) | ≈0,8 B; no confirmado en la información | No disponible | No disponible en la información | No disponible | Hugging Face |
 | Alternativas multimodales de clasificación | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han identificado en la documentación proporcionada alternativas comparables de clasificación multimodal con texto, imagen y audio en el rango de 0,8 B.
@@ -89,7 +89,7 @@ No se han identificado en la documentación proporcionada alternativas comparabl
 
 ## Enlaces
 
-- [HuggingFace: run-saina/saina-helm-3-0.8b](https://huggingface.co/run-saina/saina-helm-3-0.8b)
+- [Hugging Face: run-saina/saina-helm-3-0.8b](https://huggingface.co/run-saina/saina-helm-3-0.8b)
 - [API alojada saina.run](https://saina.run)
 - [Paquete saina en PyPI](https://pypi.org/project/saina/)
 - [Versión MLX para Apple silicon](https://huggingface.co/run-saina/saina-helm-3-0.8b-MLX)

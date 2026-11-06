@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Abiola-Dave/detectron2` es un artefacto alojado en HuggingFace que contiene pesos en formato ONNX y se distribuye bajo licencia Apache 2.0. El espacio de modelo ocupa 0,7 GB y no incluye model card con contenido tecnico: el README se limita a la declaracion de licencia. No tiene pipeline declarado, no registra descargas ni likes y no especifica idiomas soportados. La unica etiqueta funcional es `onnx`, lo que indica que el artefacto esta pensado para inferencia mediante runtimes compatibles con dicho formato (ONNX Runtime, TensorRT, OpenVINO, etc.) en lugar de con PyTorch nativo.
+El repositorio `Abiola-Dave/detectron2` es un artefacto alojado en Hugging Face que contiene pesos en formato ONNX y se distribuye bajo licencia Apache 2.0. El espacio de modelo ocupa 0,7 GB y no incluye model card con contenido tecnico: el README se limita a la declaracion de licencia. No tiene pipeline declarado, no registra descargas ni likes y no especifica idiomas soportados. La unica etiqueta funcional es `onnx`, lo que indica que el artefacto esta pensado para inferencia mediante runtimes compatibles con dicho formato (ONNX Runtime, TensorRT, OpenVINO, etc.) en lugar de con PyTorch nativo.
 
 El nombre del repositorio remite a Detectron2, la biblioteca de deteccion de objetos y segmentacion desarrollada por Meta AI (FAIR) sobre PyTorch. Detectron2 proporciona implementaciones de referencia de arquitecturas como Mask R-CNN, Faster R-CNN, RetinaNet, Panoptic FPN o DeepLab, ademas de utilidades de data augmentation, evaluacion (COCO AP) y entrenamiento distribuido. Es relevante como base para tareas de vision por computador en produccion, ya que permite exportar modelos a ONNX para despliegues de baja latencia.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Abiola-Dave/detectron2 | no disponible | no aplica | no disponible | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
+| Abiola-Dave/detectron2 | no disponible | no aplica | no disponible | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
 | Detectron2 original (Meta AI / FAIR) | depende de la configuracion (Mask R-CNN R50-FPN, aproximadamente 44 M de parametros) | no aplica | COCO AP publicado en el model zoo oficial | apache-2.0 | GitHub y model zoo oficial |
-| YOLOv8 / YOLO11 (Ultralytics) | desde aproximadamente 3 M hasta 68 M segun variante | no aplica | COCO mAP publicado por Ultralytics | AGPL-3.0, con licencia comercial de pago | GitHub, HuggingFace, pip |
-| DETR / RT-DETR | desde aproximadamente 20 M hasta 60 M segun variante | no aplica | COCO AP publicado por los autores | apache-2.0 y variantes | HuggingFace Transformers, GitHub |
+| YOLOv8 / YOLO11 (Ultralytics) | desde aproximadamente 3 M hasta 68 M segun variante | no aplica | COCO mAP publicado por Ultralytics | AGPL-3.0, con licencia comercial de pago | GitHub, Hugging Face, pip |
+| DETR / RT-DETR | desde aproximadamente 20 M hasta 60 M segun variante | no aplica | COCO AP publicado por los autores | apache-2.0 y variantes | Hugging Face Transformers, GitHub |
 
 La comparacion con el artefacto de este repositorio queda limitada por la falta de especificaciones: no se conocen parametros, mAP ni configuracion, por lo que las cifras de las alternativas solo sirven como referencia de categoria y no como comparacion directa.
 
@@ -83,7 +83,7 @@ La comparacion con el artefacto de este repositorio queda limitada por la falta 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Abiola-Dave/detectron2
+- Hugging Face: https://huggingface.co/Abiola-Dave/detectron2
 - Detectron2 (repositorio oficial de Meta AI / FAIR): https://github.com/facebookresearch/detectron2
 - Detectron2 model zoo: https://github.com/facebookresearch/detectron2/blob/main/MODEL_ZOO.md
 - ONNX Runtime: https://onnxruntime.ai/

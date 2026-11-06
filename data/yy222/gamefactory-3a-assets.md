@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GameFactory-3A Assets es un repositorio de assets de demostración generados íntegramente por IA para un juego de lucha 3D en perspectiva lateral, estilo Mortal Kombat, construido con Unity3D 2022.3 URP. El repositorio forma parte del framework GameFactory-3A, un sistema de código abierto que permite a agentes de programación (Claude Code, Codex, Gemini CLI) generar juegos completos a partir de una especificación de requisitos. El autor es YY222, y el repositorio se encuentra disponible en HuggingFace con un tamaño de 0.4 GB.
+GameFactory-3A Assets es un repositorio de assets de demostración generados íntegramente por IA para un juego de lucha 3D en perspectiva lateral, estilo Mortal Kombat, construido con Unity3D 2022.3 URP. El repositorio forma parte del framework GameFactory-3A, un sistema de código abierto que permite a agentes de programación (Claude Code, Codex, Gemini CLI) generar juegos completos a partir de una especificación de requisitos. El autor es YY222, y el repositorio se encuentra disponible en Hugging Face con un tamaño de 0.4 GB.
 
 El proyecto destaca porque todos los objetos 3D fueron generados mediante la API de Meshy, los movimientos se generaron con MoMask (texto a movimiento) y se retargetizaron con Puppeteer. No se incluye ningún asset de terceros ni de Unity Store, cumpliendo así restricciones de copyright. La estructura del repositorio incluye definiciones de tareas en JSONL, assets generados (personajes, escenario, props), código C# de mecánicas de juego, código de interfaz de usuario y un proyecto Unity completo listo para abrir. Es relevante porque demuestra un pipeline de generación de juegos 3A de extremo a extremo, desde la especificación hasta un juego jugable.
 
@@ -74,7 +74,7 @@ No disponible. No se han encontrado repositorios comparables que ofrezcan un con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/YY222/GameFactory-3A-Assets
+- Repositorio Hugging Face: https://huggingface.co/YY222/GameFactory-3A-Assets
 - Repositorio GitHub: https://github.com/OpenDCAI/GameFactory-3A
 - Blog de referencia sobre GameFactory-3A: https://blog.mushroom.cv/blog/gamefactory-3a-open-source-coding-agent-game-generation-ue5-blender-unity/
 - Paper de GameFactory (generación de video de juego): https://arxiv.org/abs/2501.08325

@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Grug-67B-A2B (este) | 67,1 B | ~2 B | 262K | OpenMDW 1.1 | Gated en HuggingFace |
+| Grug-67B-A2B (este) | 67,1 B | ~2 B | 262K | OpenMDW 1.1 | Gated en Hugging Face |
 | Mixtral 8x7B | 46,7 B | ~12,9 B | 32K | Apache 2.0 | Abierta |
 | Qwen1.5-MoE-A2.7B | 14,3 B | 2,7 B | 32K | Apache 2.0 | Abierta |
 | DeepSeek-V2-Lite | 15,7 B | 2,4 B | 32K | DeepSeek License | Abierta con condiciones |
@@ -77,14 +77,14 @@ La comparación con Mixtral 8x7B es pertinente por tamaño total, aunque este ú
 - Los idiomas soportados no están declarados; el comportamiento multilingüe es desconocido.
 - No hay información sobre sesgos, datos de entrenamiento ni filtrado de contenido, lo que dificulta evaluar riesgos de alucinación y sesgo.
 - La licencia OpenMDW 1.1 impone condiciones específicas para uso comercial; debe revisarse antes de cualquier despliegue en producción.
-- El acceso es restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita la reproducibilidad inmediata.
+- El acceso es restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita la reproducibilidad inmediata.
 - La arquitectura `grug_moe` es personalizada y puede requerir `trust_remote_code=True`, con el riesgo de seguridad que ello implica.
 - El contexto de 262K no garantiza buen rendimiento en recuperación a larga distancia; no hay evaluaciones publicadas tipo needle-in-a-haystack.
 - El tamaño del repositorio (134,2 GB) complica el almacenamiento y la descarga en entornos con ancho de banda limitado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-athena/Grug-67B-A2B-Datakit-SFT-Repro-262K-Step222-2026.10.25
+- Hugging Face: https://huggingface.co/open-athena/Grug-67B-A2B-Datakit-SFT-Repro-262K-Step222-2026.10.25
 - Modelo base: https://huggingface.co/open-athena/snowball-67b-a2b-base-262k-qk175-skew8
 - Licencia OpenMDW 1.1: no disponible en la información proporcionada
 - Paper, blog o repositorio adicional: no disponible en la información proporcionada

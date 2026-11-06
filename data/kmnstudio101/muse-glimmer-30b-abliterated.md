@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse-Glimmer-30B-Abliterated es una variante "abliterated" (de-refusal) del modelo base meta-models/Muse-Glimmer-30B, publicada por el usuario kmnstudio101 en HuggingFace. El objetivo es eliminar la mayor parte del comportamiento de rechazo de seguridad del modelo original: según la model card, se reduce en torno al 87% la tasa de rechazo en el conjunto harmful_behaviors (de 100/100 en la base a 13/100 en esta variante), manteniendo la deriva respecto al modelo original bajo control mediante una pérdida que penaliza la divergencia KL.
+Muse-Glimmer-30B-Abliterated es una variante "abliterated" (de-refusal) del modelo base meta-models/Muse-Glimmer-30B, publicada por el usuario kmnstudio101 en Hugging Face. El objetivo es eliminar la mayor parte del comportamiento de rechazo de seguridad del modelo original: según la model card, se reduce en torno al 87% la tasa de rechazo en el conjunto harmful_behaviors (de 100/100 en la base a 13/100 en esta variante), manteniendo la deriva respecto al modelo original bajo control mediante una pérdida que penaliza la divergencia KL.
 
 El modelo conserva el tamano del original: 29.776.626.688 parametros (29,8 B) en bf16, con un vocabulario de 202.000 tokens. La adaptacion se hizo con un LoRA de rango 16 sobre las proyecciones o_proj y down_proj, que supone solo 31,1 M de parametros entrenados (0,10% del total), posteriormente fusionado en los pesos base y cuantizado a GGUF. El repositorio ocupa 59,6 GB e incluye dos shards safetensors en bf16 (56 GB), con cuantizaciones Q8_0 y Q4_K_M disponibles como artefactos de release.
 
@@ -111,7 +111,7 @@ No se dispone de datos de benchmarks que permitan comparar capacidades con alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kmnstudio101/Muse-Glimmer-30B-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/kmnstudio101/Muse-Glimmer-30B-Abliterated
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Pagina oficial del modelo base en Meta: https://dev.meta.ai/models/muse-glimmer
 - Model card de Muse Glimmer 30B en NVIDIA NIM: https://build.nvidia.com/meta/muse-glimmer-30b/modelcard

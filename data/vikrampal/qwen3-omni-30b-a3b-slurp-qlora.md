@@ -66,9 +66,9 @@ No se han publicado resultados en otros benchmarks (MMLU, HumanEval, etc.) para 
 
 | Modelo | Parametros | Contexto | Accuracy SLURP | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-Omni-30B-A3B-Instruct (base) | 30B totales, 3B activos | no disponible | 79,40 % | Apache 2.0 | HuggingFace |
-| Este adaptador QLoRA (sobre base) | 30B totales + 107 MiB | no disponible | 86,80 % | Apache 2.0 | HuggingFace |
-| Checkpoint DynQuant 4-bit (repo hermano) | 30B totales | no disponible | 86,20 % | Apache 2.0 | HuggingFace |
+| Qwen3-Omni-30B-A3B-Instruct (base) | 30B totales, 3B activos | no disponible | 79,40 % | Apache 2.0 | Hugging Face |
+| Este adaptador QLoRA (sobre base) | 30B totales + 107 MiB | no disponible | 86,80 % | Apache 2.0 | Hugging Face |
+| Checkpoint DynQuant 4-bit (repo hermano) | 30B totales | no disponible | 86,20 % | Apache 2.0 | Hugging Face |
 
 No se dispone de comparación con otros modelos de SLU (p. ej., Whisper + clasificador, o modelos específicos de intent) porque el repo no proporciona esos datos.
 

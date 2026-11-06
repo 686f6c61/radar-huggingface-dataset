@@ -99,7 +99,7 @@ El propio autor indica que estas comparaciones respaldan la afirmacion de que la
 
 | Modelo | Parametros | Mejora SI-SDR (corrompidos) | STOI | PESQ | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LSE Prescription-MM-DiT v6 StepAudio3 | 51,7 M | +0,221 dB (prescripcion predicha) | 0,8578 | 1,3684 | MIT | checkpoint PyTorch en HuggingFace |
+| LSE Prescription-MM-DiT v6 StepAudio3 | 51,7 M | +0,221 dB (prescripcion predicha) | 0,8578 | 1,3684 | MIT | checkpoint PyTorch en Hugging Face |
 | DeepFilterNet3 | no disponible | +0,374 dB | 0,8719 | 1,9886 | no disponible | usado como referencia en la evaluacion del autor |
 | MM-DiT sin prescripcion (ablacion del mismo modelo) | 51,7 M | +0,005 dB | 0,8578 | 1,3683 | MIT | misma familia de checkpoints |
 | Sustraccion espectral (linea base clasica) | no aplica | -1,124 dB | 0,8408 | 1,3459 | no disponible | metodo de referencia |
@@ -125,7 +125,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jatshi/LSE-Prescription-MM-DiT-v6-StepAudio3
+- Modelo en Hugging Face: https://huggingface.co/jatshi/LSE-Prescription-MM-DiT-v6-StepAudio3
 - Repositorio fuente `llm-guided-speech-enhancement`: https://github.com/Jatshi/llm-guided-speech-enhancement
 - Release v6.0.0 del repositorio fuente: https://github.com/Jatshi/llm-guided-speech-enhancement/releases/tag/v6.0.0
 - Paper, blog o demo adicionales: no disponible en la informacion proporcionada.

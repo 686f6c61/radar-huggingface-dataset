@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Dark-Craving-26B-A4B-v0.5 es un fine-tune del modelo google/gemma-4-26B-A4B-it publicado por el usuario ReadyArt en HuggingFace. Se trata de un ajuste orientado a contenido para adultos, roleplay conversacional y ERP (erotic roleplay), con etiquetas que lo clasifican explícitamente como NSFW, "unaligned" y "not-for-all-audiences". El modelo hereda la arquitectura y el tamaño del Gemma 4 26B A4B original, del que no se dispone de ficha técnica pública en la información proporcionada.
+Dark-Craving-26B-A4B-v0.5 es un fine-tune del modelo google/gemma-4-26B-A4B-it publicado por el usuario ReadyArt en Hugging Face. Se trata de un ajuste orientado a contenido para adultos, roleplay conversacional y ERP (erotic roleplay), con etiquetas que lo clasifican explícitamente como NSFW, "unaligned" y "not-for-all-audiences". El modelo hereda la arquitectura y el tamaño del Gemma 4 26B A4B original, del que no se dispone de ficha técnica pública en la información proporcionada.
 
-La relevancia de esta ficha es limitada desde el punto de vista de la investigación aplicada: se trata de un modelo derivado con cero descargas en el momento de la consulta, un solo "like" y acceso restringido (gated) en HuggingFace. No se han publicado detalles sobre el dataset de ajuste, el proceso de entrenamiento, los hiperparámetros empleados ni evaluaciones de rendimiento. La información disponible se limita a los metadatos del repositorio.
+La relevancia de esta ficha es limitada desde el punto de vista de la investigación aplicada: se trata de un modelo derivado con cero descargas en el momento de la consulta, un solo "like" y acceso restringido (gated) en Hugging Face. No se han publicado detalles sobre el dataset de ajuste, el proceso de entrenamiento, los hiperparámetros empleados ni evaluaciones de rendimiento. La información disponible se limita a los metadatos del repositorio.
 
 Por tanto, esta ficha documenta lo que se puede verificar objetivamente a partir de los metadatos y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluación de calidad, seguridad o idoneidad para producción requeriría acceso al modelo y a documentación adicional que no consta en la información proporcionada.
 
@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 ## Limitaciones y advertencias
 
 - Contenido explícito para adultos: el modelo está diseñado para generar material NSFW y no es apto para menores ni para despliegues sin control de edad.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace; no es de descarga libre inmediata.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face; no es de descarga libre inmediata.
 - Ausencia total de documentación técnica: sin model card detallada, sin dataset descrito, sin hiperparámetros y sin benchmarks, lo que impide evaluar su calidad de forma rigurosa.
 - Riesgo elevado de alucinación y degradación de capacidades: los fine-tunes "unaligned" sobre modelos instructivos suelen perder precisión en tareas factuales y de razonamiento, aunque no hay datos que lo confirmen para este modelo concreto.
 - Sesgos desconocidos: al no documentarse el dataset de ajuste, no se pueden identificar sesgos específicos; cabe esperar los del modelo base más los introducidos por el corpus de roleplay.
@@ -83,6 +83,6 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ReadyArt/Dark-Craving-26B-A4B-v0.5
+- Hugging Face: https://huggingface.co/ReadyArt/Dark-Craving-26B-A4B-v0.5
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

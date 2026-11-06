@@ -53,7 +53,7 @@ No hay información suficiente para realizar una comparativa con otros modelos. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/olmo2-1b-sft-s1-2223b
+- Repositorio Hugging Face: https://huggingface.co/dvader13/olmo2-1b-sft-s1-2223b
 - Modelo base OLMo-2-0425-1B: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Página oficial de OLMo 2 (Ai2): https://allenai.org/olmo2
 - Informe técnico OLMo 2: https://arxiv.org/abs/2501.00656

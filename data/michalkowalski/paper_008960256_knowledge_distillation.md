@@ -60,7 +60,7 @@ No disponible. No existe una categoría de modelos comparable, ya que este repos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/michalkowalski/paper_008960256_knowledge_distillation
+- Repositorio en Hugging Face: https://huggingface.co/michalkowalski/paper_008960256_knowledge_distillation
 - Survey sobre destilación de conocimiento (arXiv): https://arxiv.org/abs/2006.05525
 - Survey reciente en ScienceDirect: https://www.sciencedirect.com/science/article/pii/S2666827024000811
 - Survey en International Journal of Computer Vision: https://link.springer.com/article/10.1007/s11263-021-01453-z

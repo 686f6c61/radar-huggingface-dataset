@@ -6,7 +6,7 @@ Flux2-chiquito-base-9B es un modelo de generacion de imagenes cuantizado, deriva
 
 El modelo pertenece a la linea "klein" (pequeno en aleman) de FLUX.2, una variante de 9 000 millones de parametros disenada para ofrecer un equilibrio entre calidad de generacion y requisitos computacionales. Al tratarse de una cuantizacion del modelo base, mantiene la arquitectura original pero con pesos de menor precision, lo que reduce el uso de VRAM a costa de una posible perdida minima de fidelidad. El repositorio tiene un tamano de 9,1 GB y se distribuye bajo la licencia FLUX Non-Commercial License.
 
-Este modelo es relevante para desarrolladores e investigadores que necesitan ejecutar FLUX.2 en GPUs con memoria limitada, sin acceso a hardware de gama alta. La cuantizacion mediante torchao permite cargar el modelo con diffusers, la libreria estandar de HuggingFace para modelos de difusion, manteniendo la compatibilidad con el ecosistema existente.
+Este modelo es relevante para desarrolladores e investigadores que necesitan ejecutar FLUX.2 en GPUs con memoria limitada, sin acceso a hardware de gama alta. La cuantizacion mediante torchao permite cargar el modelo con diffusers, la libreria estandar de Hugging Face para modelos de difusion, manteniendo la compatibilidad con el ecosistema existente.
 
 ## Especificaciones tecnicas
 
@@ -83,5 +83,5 @@ La comparativa se limita a la familia FLUX.2-klein y a FLUX.1-schnell como refer
 - Modelo base original: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9B
 - Repositorio oficial de inferencia de FLUX.2: https://github.com/black-forest-labs/flux2
 - Pagina oficial de FLUX.2 en Black Forest Labs: https://bfl.ai/models/flux-2
-- Variante similar en HuggingFace: https://huggingface.co/ModelsLab/FLUX.2-klein-9B
+- Variante similar en Hugging Face: https://huggingface.co/ModelsLab/FLUX.2-klein-9B
 - Workflow de ComfyUI para FLUX.2 Klein 9B: https://civitai.com/models/2543188/flux2-klein-9b-ultimate-6-in-1-workflow-face-swap-inpaint-auto-mask-nag-refine-upscale-8gb-vram

@@ -6,7 +6,7 @@ XYZPIT/gr00t-breadbag-masked-h16-100k es un checkpoint de politica robotica (pip
 
 El nombre del checkpoint indica un entrenamiento o ajuste de 100.000 pasos (`100k`), una variante "masked" y un horizonte `h16`, probablemente 16 pasos de accion. La model card publicada no describe el modelo, sino el conjunto de datos de entrenamiento: el "R1 Lite Multi-Object Pick-Up Dataset", 181 episodios (67 de bread bag, 60 de cup, 54 de financier) con 543 videos en tres vistas (ego, muneca izquierda, muneca derecha) grabados con un robot bimanual R1 Lite. La tarea es exclusivamente de agarre y elevacion (pick-up) dirigido por instruccion, sin fase de colocacion.
 
-Es relevante ahora porque se enmarca en la corriente de modelos fundacionales vision-lenguaje-accion (VLA) abiertos para manipulacion robotica, y porque el ecosistema GR00T de NVIDIA y LeRobot de HuggingFace estan facilitando el ajuste fino y el despliegue de estos checkpoints. Ahora bien, la ficha debe leerse con cautela: la licencia no esta declarada, no hay resultados de evaluacion publicados y la documentacion disponible no detalla la arquitectura ni el procedimiento de entrenamiento.
+Es relevante ahora porque se enmarca en la corriente de modelos fundacionales vision-lenguaje-accion (VLA) abiertos para manipulacion robotica, y porque el ecosistema GR00T de NVIDIA y LeRobot de Hugging Face estan facilitando el ajuste fino y el despliegue de estos checkpoints. Ahora bien, la ficha debe leerse con cautela: la licencia no esta declarada, no hay resultados de evaluacion publicados y la documentacion disponible no detalla la arquitectura ni el procedimiento de entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -79,9 +79,9 @@ Estimaciones derivadas del recuento de parametros (3.286.608.832). No son cifras
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| XYZPIT/gr00t-breadbag-masked-h16-100k | 3.286.608.832 | no aplica / no disponible | safetensors | no disponible | HuggingFace |
-| XYZPIT/gr00t_breadbag_baseline_100K | no disponible | no aplica / no disponible | no disponible | no disponible | HuggingFace (mismo autor) |
-| NVIDIA Isaac GR00T N1.7 (modelo base de la familia) | no disponible en la informacion | no disponible | no disponible | no disponible en la informacion; el repositorio NVIDIA/Isaac-GR00T es publico en GitHub | GitHub y HuggingFace |
+| XYZPIT/gr00t-breadbag-masked-h16-100k | 3.286.608.832 | no aplica / no disponible | safetensors | no disponible | Hugging Face |
+| XYZPIT/gr00t_breadbag_baseline_100K | no disponible | no aplica / no disponible | no disponible | no disponible | Hugging Face (mismo autor) |
+| NVIDIA Isaac GR00T N1.7 (modelo base de la familia) | no disponible en la informacion | no disponible | no disponible | no disponible en la informacion; el repositorio NVIDIA/Isaac-GR00T es publico en GitHub | GitHub y Hugging Face |
 
 No se dispone de datos suficientes para comparar rendimiento, contexto o licencia con alternativas de la misma categoria. Las etiquetas del repositorio no permiten confirmar la equivalencia exacta con un checkpoint base concreto de la familia GR00T.
 
@@ -100,7 +100,7 @@ No se dispone de datos suficientes para comparar rendimiento, contexto o licenci
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/XYZPIT/gr00t-breadbag-masked-h16-100k
+- Hugging Face del modelo: https://huggingface.co/XYZPIT/gr00t-breadbag-masked-h16-100k
 - Repositorio hermano del mismo autor: https://huggingface.co/XYZPIT/gr00t_breadbag_baseline_100K
 - NVIDIA Isaac-GR00T (repositorio oficial de la familia GR00T): https://github.com/NVIDIA/Isaac-GR00T
 - Documentacion de LeRobot (referenciada para el modelo hermano): https://huggingface.co/docs/lerobot

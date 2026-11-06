@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zhiyuanhucs/Qwen3.5-9B-General-Game-reason0919-resume80-20260929 | 9B (base) | no disponible | no disponible | other | HuggingFace (0 descargas, 0 likes) |
-| zhiyuanhucs/Qwen3.5-9B-General-Game-reason0919 | 9B (base) | no disponible | no disponible | no disponible | HuggingFace |
-| zhiyuanhucs/...-20260929-merged | 9B (base) | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B | 9B | no disponible | no disponible | no disponible | HuggingFace |
+| zhiyuanhucs/Qwen3.5-9B-General-Game-reason0919-resume80-20260929 | 9B (base) | no disponible | no disponible | other | Hugging Face (0 descargas, 0 likes) |
+| zhiyuanhucs/Qwen3.5-9B-General-Game-reason0919 | 9B (base) | no disponible | no disponible | no disponible | Hugging Face |
+| zhiyuanhucs/...-20260929-merged | 9B (base) | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B | 9B | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de contexto de ninguno de los modelos de la tabla en la informacion proporcionada, por lo que la comparativa se limita a la existencia y disponibilidad de cada artefacto.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de contexto de ninguno de los modelos d
 
 ## Enlaces
 
-- Repositorio HuggingFace analizado: https://huggingface.co/zhiyuanhucs/Qwen3.5-9B-General-Game-reason0919-resume80-20260929
+- Repositorio Hugging Face analizado: https://huggingface.co/zhiyuanhucs/Qwen3.5-9B-General-Game-reason0919-resume80-20260929
 - Repositorio merged indicado en la model card: https://huggingface.co/zhiyuanhucs/Qwen3.5-9B-General-Game-reason0919-resume80-20260929-merged
 - Checkpoint previo del mismo autor: https://huggingface.co/zhiyuanhucs/Qwen3.5-9B-General-Game-reason0919
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.5-9B

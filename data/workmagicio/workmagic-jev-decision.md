@@ -6,7 +6,7 @@ workmagic-jev-decision es un modelo de decisión especializado desarrollado por 
 
 Su interés técnico reside en el método de entrenamiento: se obtiene por autodestilación (self-distillation) desde un "profesor" interno denotado como Decider(level=L0), sin utilizar etiquetas humanas. El modelo destila las respuestas del profesor en un único forward de lectura sobre el formato de prompt AnyJev, apoyándose en la librería `anyjev` para su uso mediante la clase `Tacit`. La pérdida se calcula exclusivamente sobre los tokens de respuesta.
 
-El modelo cuenta con 4.022.468.096 parámetros totales (aproximadamente 4,02 mil millones), licencia Apache 2.0, idioma declarado inglés y pipeline de text-generation. Fue publicado en octubre de 2026 y, en el momento de la consulta, no registra descargas ni interacciones en HuggingFace. Su relevancia radica en explorar el paradigma de "decisiones tácitas tipadas" dentro de modelos pequeños, un enfoque distinto al de los asistentes conversacionales convencionales.
+El modelo cuenta con 4.022.468.096 parámetros totales (aproximadamente 4,02 mil millones), licencia Apache 2.0, idioma declarado inglés y pipeline de text-generation. Fue publicado en octubre de 2026 y, en el momento de la consulta, no registra descargas ni interacciones en Hugging Face. Su relevancia radica en explorar el paradigma de "decisiones tácitas tipadas" dentro de modelos pequeños, un enfoque distinto al de los asistentes conversacionales convencionales.
 
 ## Especificaciones tecnicas
 
@@ -68,10 +68,10 @@ La comparativa directa es complicada porque workmagic-jev-decision es un modelo 
 
 | Modelo | Parametros | Contexto | Proposito | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| workmagic-jev-decision | 4,02 B | no disponible | Decision tipada (churn en Slack) | Sin cifras publicadas | Apache 2.0 | HuggingFace (anyjev) |
-| Qwen/Qwen3-4B | 4 B | no disponible | Generacion de texto general | Benchmarks publicos por Qwen | Apache 2.0 | HuggingFace |
-| Llama 3.2 3B | 3 B | no disponible | Generacion de texto general | Benchmarks publicos por Meta | Licencia comunitaria Llama | HuggingFace, Ollama |
-| Phi-3.5-mini | 3,8 B | no disponible | Generacion de texto general | Benchmarks publicos por Microsoft | MIT | HuggingFace, Ollama |
+| workmagic-jev-decision | 4,02 B | no disponible | Decision tipada (churn en Slack) | Sin cifras publicadas | Apache 2.0 | Hugging Face (anyjev) |
+| Qwen/Qwen3-4B | 4 B | no disponible | Generacion de texto general | Benchmarks publicos por Qwen | Apache 2.0 | Hugging Face |
+| Llama 3.2 3B | 3 B | no disponible | Generacion de texto general | Benchmarks publicos por Meta | Licencia comunitaria Llama | Hugging Face, Ollama |
+| Phi-3.5-mini | 3,8 B | no disponible | Generacion de texto general | Benchmarks publicos por Microsoft | MIT | Hugging Face, Ollama |
 
 Las alternativas de la tabla son modelos generalistas; ninguna de ellas ofrece de serie una interfaz de decision tipada con calibracion, que es la funcion especifica de workmagic-jev-decision. No se dispone de datos para comparar rendimiento numerico entre ellos en la tarea de churn.
 
@@ -84,11 +84,11 @@ Las alternativas de la tabla son modelos generalistas; ninguna de ellas ofrece d
 - Sin benchmarks publicados: no hay cifras de accuracy, f1 ni calibracion disponibles, por lo que no es posible estimar el rendimiento real antes de evaluarlo.
 - Licencia: Apache 2.0, por lo que permite uso comercial; conviene revisar igualmente las condiciones del modelo base Qwen3-4B y del dataset `workmagicio/slack-churn`.
 - Dependencia de libreria: el uso previsto requiere la libreria `anyjev`, cuyo soporte, mantenimiento y documentacion no estan detallados en la informacion disponible.
-- Baja adopcion: cero descargas y cero reacciones en HuggingFace en el momento de la consulta, sin comunidad que haya validado el modelo.
+- Baja adopcion: cero descargas y cero reacciones en Hugging Face en el momento de la consulta, sin comunidad que haya validado el modelo.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/workmagicio/workmagic-jev-decision
+- Hugging Face del modelo: https://huggingface.co/workmagicio/workmagic-jev-decision
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/workmagicio/slack-churn
 - Perfil del autor: https://huggingface.co/workmagicio

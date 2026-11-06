@@ -2,9 +2,9 @@
 
 ## Resumen
 
-HD-RL es un adaptador LoRA publicado en HuggingFace por el usuario Tizzzzy bajo el identificador `Tizzzzy/HD-RL`. No se trata de un modelo completo, sino de un conjunto de pesos PEFT (librería `peft`, versión 0.18.0) que se aplica sobre el modelo base `Qwen/Qwen3.6-27B`. El entrenamiento se realizó con GRPO (Group Relative Policy Optimization), según la etiqueta `grpo` del repositorio, y con el stack `transformers` + `trl`. El tamaño del repositorio es de 0,1 GB, coherente con un adaptador de bajo rango y no con un modelo de 27 000 millones de parámetros.
+HD-RL es un adaptador LoRA publicado en Hugging Face por el usuario Tizzzzy bajo el identificador `Tizzzzy/HD-RL`. No se trata de un modelo completo, sino de un conjunto de pesos PEFT (librería `peft`, versión 0.18.0) que se aplica sobre el modelo base `Qwen/Qwen3.6-27B`. El entrenamiento se realizó con GRPO (Group Relative Policy Optimization), según la etiqueta `grpo` del repositorio, y con el stack `transformers` + `trl`. El tamaño del repositorio es de 0,1 GB, coherente con un adaptador de bajo rango y no con un modelo de 27 000 millones de parámetros.
 
-El interés del artefacto está en su método: GRPO es una variante de optimización por política que normaliza las ventajas dentro de un grupo de respuestas muestreadas y prescinde del modelo de valor, popularizada en pipelines de RL para razonamiento con recompensas verificables. Aplicado sobre un modelo de 27B, un adaptador de este tipo suele buscar mejoras en matemáticas, código o razonamiento multi-paso. Sin embargo, la model card es la plantilla por defecto de HuggingFace, con todos los campos marcados como `[More Information Needed]`.
+El interés del artefacto está en su método: GRPO es una variante de optimización por política que normaliza las ventajas dentro de un grupo de respuestas muestreadas y prescinde del modelo de valor, popularizada en pipelines de RL para razonamiento con recompensas verificables. Aplicado sobre un modelo de 27B, un adaptador de este tipo suele buscar mejoras en matemáticas, código o razonamiento multi-paso. Sin embargo, la model card es la plantilla por defecto de Hugging Face, con todos los campos marcados como `[More Information Needed]`.
 
 Por tanto, el valor práctico inmediato es limitado: cero descargas, cero likes, sin licencia declarada, sin idiomas declarados, sin datos de entrenamiento ni evaluación publicados, y sin instrucciones de uso. Esta ficha documenta lo que el repositorio declara explícitamente y marca como no disponible todo lo demás; no se han podido obtener referencias externas porque la búsqueda web no devolvió resultados relevantes para este modelo.
 
@@ -93,7 +93,7 @@ No se dispone de datos objetivos (benchmarks, tamaño del adaptador, hiperparám
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/Tizzzzy/HD-RL
+- Repositorio Hugging Face del adaptador: https://huggingface.co/Tizzzzy/HD-RL
 - Modelo base declarado en los metadatos: https://huggingface.co/Qwen/Qwen3.6-27B
 - Librería PEFT (formato del adaptador): https://github.com/huggingface/peft
 - Librería TRL (stack de entrenamiento declarado): https://github.com/huggingface/trl

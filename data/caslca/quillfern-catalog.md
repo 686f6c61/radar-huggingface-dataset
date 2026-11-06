@@ -78,5 +78,5 @@ No disponible. No existen modelos comparables porque `caslca/quillfern-catalog` 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/caslca/quillfern-catalog
+- Hugging Face: https://huggingface.co/caslca/quillfern-catalog
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

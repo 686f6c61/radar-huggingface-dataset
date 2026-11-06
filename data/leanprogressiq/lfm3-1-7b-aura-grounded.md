@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-aura-grounded | 1,73 B | no disponible | RAG con abstención (DPO + LoRA) | Apache 2.0 | HuggingFace, GGUF incluido |
-| LiquidAI/LFM3-1.7B (base) | 1,73 B | no disponible | LLM generalista | Apache 2.0 (según modelo base) | HuggingFace |
+| LFM3-1.7B-aura-grounded | 1,73 B | no disponible | RAG con abstención (DPO + LoRA) | Apache 2.0 | Hugging Face, GGUF incluido |
+| LiquidAI/LFM3-1.7B (base) | 1,73 B | no disponible | LLM generalista | Apache 2.0 (según modelo base) | Hugging Face |
 | Alternativas de < 3 B para RAG | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con otros modelos pequeños en la información proporcionada.
@@ -93,5 +93,5 @@ No se dispone de datos de benchmarks comparativos con otros modelos pequeños en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeanProgressIQ/LFM3-1.7B-aura-grounded
+- Modelo en Hugging Face: https://huggingface.co/LeanProgressIQ/LFM3-1.7B-aura-grounded
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B

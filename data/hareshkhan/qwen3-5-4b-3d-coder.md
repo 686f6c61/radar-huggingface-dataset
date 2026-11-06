@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-3D-Coder | 4.539 M | 65.536 (configurado) | Codigo + Three.js 3D | Apache 2.0 | HuggingFace (safetensors, GGUF) |
-| Qwen/Qwen3.5-4B (base) | 4B (aproximado) | No disponible | Codigo general | Apache 2.0 | HuggingFace |
-| Qwen3.5-4B-GGUF (lmstudio-community) | 4B (aproximado) | No disponible | Codigo general, GGUF | Apache 2.0 | HuggingFace |
+| Qwen3.5-4B-3D-Coder | 4.539 M | 65.536 (configurado) | Codigo + Three.js 3D | Apache 2.0 | Hugging Face (safetensors, GGUF) |
+| Qwen/Qwen3.5-4B (base) | 4B (aproximado) | No disponible | Codigo general | Apache 2.0 | Hugging Face |
+| Qwen3.5-4B-GGUF (lmstudio-community) | 4B (aproximado) | No disponible | Codigo general, GGUF | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. La comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -88,8 +88,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/hareshkhan/Qwen3.5-4B-3D-Coder
-- HuggingFace de la organizacion CCORE: https://huggingface.co/ccore
+- Hugging Face del modelo: https://huggingface.co/hareshkhan/Qwen3.5-4B-3D-Coder
+- Hugging Face de la organizacion CCORE: https://huggingface.co/ccore
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset CCORE Three.js 3D Scenes: https://huggingface.co/datasets/ccore/ThreeJS-3D-Scenes
 - Informe tecnico (PDF): https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder/blob/main/Qwen3.5-4B-3D-Coder_Technical_Report.pdf

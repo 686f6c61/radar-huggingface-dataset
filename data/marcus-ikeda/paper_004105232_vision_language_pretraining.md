@@ -64,9 +64,9 @@ No disponible. No hay un modelo con pesos que pueda compararse con alternativas 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Marcus-ikeda/paper_004105232_vision_language_pretraining
+- Repositorio en Hugging Face: https://huggingface.co/Marcus-ikeda/paper_004105232_vision_language_pretraining
 - Survey de modelos vision-language (contexto general): https://github.com/jingyi0000/VLM_survey
-- Blog de HuggingFace sobre vision-language pretraining: https://huggingface.co/blog/vision_language_pretraining
+- Blog de Hugging Face sobre vision-language pretraining: https://huggingface.co/blog/vision_language_pretraining
 - Survey académico sobre pre-trained models vision-language: https://arxiv.org/pdf/2202.10936
 - Paper sobre VLP para image captioning con FER: https://ieeexplore.ieee.org/document/11297980
 - Survey completo sobre VLMs: https://www.sciencedirect.com/science/article/abs/pii/S1566253525006955

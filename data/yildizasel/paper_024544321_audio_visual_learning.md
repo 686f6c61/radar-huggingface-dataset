@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo de IA, sino un documento académico (un paper) sobre aprendizaje audiovisual (audio-visual learning). El autor, yildizasel, ha publicado el texto completo en formato Markdown bajo el nombre `paper_024544321_audio_visual_learning.md`. El paper está estructurado según el esquema clásico intro-related-method-exp-conclusion, con un estilo de escritura conciso-analítico y citación en formato autor-año. Está compuesto en Typst, un sistema de composición tipográfica moderno.
+Este repositorio de Hugging Face no contiene un modelo de IA, sino un documento académico (un paper) sobre aprendizaje audiovisual (audio-visual learning). El autor, yildizasel, ha publicado el texto completo en formato Markdown bajo el nombre `paper_024544321_audio_visual_learning.md`. El paper está estructurado según el esquema clásico intro-related-method-exp-conclusion, con un estilo de escritura conciso-analítico y citación en formato autor-año. Está compuesto en Typst, un sistema de composición tipográfica moderno.
 
 No se trata de un modelo con parámetros, arquitectura ni capacidades de inferencia. Es un documento de investigación que aborda el tema del aprendizaje audiovisual, un campo que combina señales visuales y auditivas para tareas como localización de sonido, separación de fuentes o generación de contenido multimodal. La relevancia actual de este campo es alta, pero este repositorio en sí no ofrece implementaciones ni pesos entrenados.
 
@@ -62,7 +62,7 @@ No disponible. No existe un modelo comparable en el repositorio. Si se tratara d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yildizasel/paper_024544321_audio_visual_learning
+- Repositorio Hugging Face: https://huggingface.co/yildizasel/paper_024544321_audio_visual_learning
 - Google Scholar: https://scholar.google.com/
 - arXiv (referencia general): https://arxiv.org/pdf/2605.04045
 - Awesome Audio-Visual (lista curada de recursos): https://github.com/krantiparida/awesome-audio-visual

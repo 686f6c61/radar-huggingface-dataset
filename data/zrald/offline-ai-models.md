@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Zrald/offline-ai-models` es un repositorio de HuggingFace publicado por el usuario Zrald que, por su nombre, sus etiquetas (`gguf`, `imatrix`, `conversational`, `endpoints_compatible`) y el repositorio hermano `Zrald/offline-ai-models-nvidia`, parece funcionar como catálogo de modelos para una aplicación Android de IA offline: el repo `-nvidia` describe explícitamente un `models/manifest.json` que se fusiona en el selector de la app y cuyas entradas apuntan a los repositorios originales de terceros (NVIDIA oficial, bartowski, mradermacher, csukuangfj) sin re-subir los bytes. Conviene leerlo, por tanto, como un índice distribuidor de pesos más que como un modelo entrenado desde cero por el autor.
+`Zrald/offline-ai-models` es un repositorio de Hugging Face publicado por el usuario Zrald que, por su nombre, sus etiquetas (`gguf`, `imatrix`, `conversational`, `endpoints_compatible`) y el repositorio hermano `Zrald/offline-ai-models-nvidia`, parece funcionar como catálogo de modelos para una aplicación Android de IA offline: el repo `-nvidia` describe explícitamente un `models/manifest.json` que se fusiona en el selector de la app y cuyas entradas apuntan a los repositorios originales de terceros (NVIDIA oficial, bartowski, mradermacher, csukuangfj) sin re-subir los bytes. Conviene leerlo, por tanto, como un índice distribuidor de pesos más que como un modelo entrenado desde cero por el autor.
 
 El dato objetivo de tamaño es el recuento de parámetros en safetensors: 1.777.088.000 (~1,78 mil millones), lo que sitúa los pesos en la categoría de modelos pequeños, aptos para ejecución en dispositivo o en GPU de consumo. El repositorio ocupa 22,7 GB, un volumen muy superior a los ~3,6 GB que ocuparían esos parámetros en FP16, lo que es coherente con la presencia de múltiples cuantizaciones GGUF en el mismo repo, aunque el desglose de ficheros no se ha proporcionado y no puede confirmarse.
 
@@ -48,7 +48,7 @@ Respecto al entrenamiento, no hay datos sobre número de tokens, composición de
 - Prototipado rápido de un endpoint compatible con OpenAI: gracias al tag `endpoints_compatible`, se puede levantar un servidor local que responda al mismo esquema que la API de referencia y sustituirlo después por un modelo mayor sin reescribir el cliente.
 - Sustitución de un servicio cloud en aplicaciones de privacidad estricta: con 1,78 mil millones de parámetros, tareas de reescritura, clasificación de texto y extracción de campos pueden ejecutarse en local sin que el contenido salga del dispositivo.
 - Componente de un pipeline RAG en el borde: un modelo de este tamaño puede generar la respuesta final a partir de fragmentos recuperados por un índice local, con latencia baja en CPU moderna y sin coste por token.
-- Pruebas de integración continua de aplicaciones de IA: al ser pequeño y de descarga gratuita desde HuggingFace, sirve como modelo de juguete en tests automatizados del cliente (formato de mensajes, streaming, manejo de errores) sin consumir cuota de APIs de pago.
+- Pruebas de integración continua de aplicaciones de IA: al ser pequeño y de descarga gratuita desde Hugging Face, sirve como modelo de juguete en tests automatizados del cliente (formato de mensajes, streaming, manejo de errores) sin consumir cuota de APIs de pago.
 - Distribución como catálogo curado: un equipo puede reutilizar el esquema de manifiesto para publicar su propia selección de modelos GGUF verificados, apuntando a los repositorios upstream en lugar de re-subir pesos.
 
 ## Benchmarks y rendimiento
@@ -90,7 +90,7 @@ Los tres modelos de referencia cuentan con documentación pública de entrenamie
 
 ## Enlaces
 
-- Repositorio principal en HuggingFace: https://huggingface.co/Zrald/offline-ai-models
+- Repositorio principal en Hugging Face: https://huggingface.co/Zrald/offline-ai-models
 - Repositorio hermano (catálogo solo NVIDIA para la app Offline AI): https://huggingface.co/Zrald/offline-ai-models-nvidia
 - Guía general de ejecución local de modelos (contexto, no específica del modelo): https://aithinkerlab.com/run-ai-models-locally-offline-privacy-guide/
 - Guía general de despliegue air-gapped (contexto, no específica del modelo): https://insiderllm.com/guides/running-ai-offline-complete-guide/

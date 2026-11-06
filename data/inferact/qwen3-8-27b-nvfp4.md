@@ -79,5 +79,5 @@ La comparativa directa con otras cuantizaciones del mismo modelo no está dispon
 
 ## Enlaces
 
-- [HuggingFace - Inferact/Qwen3.8-27B-NVFP4](https://huggingface.co/Inferact/Qwen3.8-27B-NVFP4)
+- [Hugging Face - Inferact/Qwen3.8-27B-NVFP4](https://huggingface.co/Inferact/Qwen3.8-27B-NVFP4)
 - [Modelo base - Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) (referencia, no incluido en la información proporcionada pero útil para contexto)

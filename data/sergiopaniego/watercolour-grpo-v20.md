@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sergiopaniego/watercolour-grpo-v20` es un fine-tuning del modelo base Qwen/Qwen3.5-35B-A3B, desarrollado por Sergio Paniego Blanco, Machine Learning Engineer en HuggingFace. Se trata de un experimento de entrenamiento que aplica GRPO (Group Relative Policy Optimization), una técnica de optimización por refuerzo introducida en DeepSeekMath, sobre un modelo de arquitectura MoE (Mixture of Experts) de 35 mil millones de parámetros totales con 3 mil millones activos. El repositorio tiene un tamaño de 0,2 GB, lo que sugiere que se trata de un checkpoint parcial o de una versión cuantizada, aunque no se especifica.
+El modelo `sergiopaniego/watercolour-grpo-v20` es un fine-tuning del modelo base Qwen/Qwen3.5-35B-A3B, desarrollado por Sergio Paniego Blanco, Machine Learning Engineer en Hugging Face. Se trata de un experimento de entrenamiento que aplica GRPO (Group Relative Policy Optimization), una técnica de optimización por refuerzo introducida en DeepSeekMath, sobre un modelo de arquitectura MoE (Mixture of Experts) de 35 mil millones de parámetros totales con 3 mil millones activos. El repositorio tiene un tamaño de 0,2 GB, lo que sugiere que se trata de un checkpoint parcial o de una versión cuantizada, aunque no se especifica.
 
 La relevancia de este modelo radica en que demuestra el uso práctico de GRPO con la librería TRL sobre un modelo MoE de última generación, y sirve como ejemplo de fine-tuning por refuerzo para tareas de razonamiento. Sin embargo, la documentación es mínima: no se detalla el dataset de entrenamiento, los hiperparámetros ni los resultados obtenidos, por lo que su utilidad práctica fuera del ámbito de investigación es limitada.
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3.5-35B-A3B (base) | 35B totales, 3B activos | no disponible | no disponible | HuggingFace |
-| sergiopaniego/watercolour-grpo-v20 | 35B totales, 3B activos (fine-tuning) | no disponible | no disponible | HuggingFace |
-| DeepSeekMath-RL (referencia GRPO) | 7B | 4096 | MIT | HuggingFace |
+| Qwen/Qwen3.5-35B-A3B (base) | 35B totales, 3B activos | no disponible | no disponible | Hugging Face |
+| sergiopaniego/watercolour-grpo-v20 | 35B totales, 3B activos (fine-tuning) | no disponible | no disponible | Hugging Face |
+| DeepSeekMath-RL (referencia GRPO) | 7B | 4096 | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar. El modelo base Qwen3.5-35B-A3B es el punto de partida, y este fine-tuning pretende mejorar sus capacidades de razonamiento mediante GRPO, pero sin métricas no es posible cuantificar la mejora. DeepSeekMath-RL es el modelo que introdujo GRPO, pero es de menor tamaño y no es directamente comparable.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento para comparar. El modelo base Qwen3.5-35B-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sergiopaniego/watercolour-grpo-v20
+- Modelo en Hugging Face: https://huggingface.co/sergiopaniego/watercolour-grpo-v20
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Perfil del autor: https://github.com/sergiopaniego

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros base | Entrada | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| monoyield-predictor (ESMC-MonoYield) | 6.000 M (ESMC-6B) | Secuencia de aminoacidos | Yield monomerico en *E. coli* | Apache-2.0 (adaptadores) | HuggingFace + GitHub |
-| monoyield-predictor (SaProt LoRA) | 1.300 M (SaProt) | Aminoacidos + 3Di | Yield monomerico en *E. coli* | Apache-2.0 (adaptadores) | HuggingFace + GitHub |
-| ESMC-6B (modelo base) | 6.000 M | Secuencia de aminoacidos | Representaciones generales de proteinas | MIT + Biohub AUP | HuggingFace |
-| SaProt 1.3B (modelo base) | 1.300 M | Aminoacidos + 3Di | Representaciones generales de proteinas | MIT | HuggingFace |
+| monoyield-predictor (ESMC-MonoYield) | 6.000 M (ESMC-6B) | Secuencia de aminoacidos | Yield monomerico en *E. coli* | Apache-2.0 (adaptadores) | Hugging Face + GitHub |
+| monoyield-predictor (SaProt LoRA) | 1.300 M (SaProt) | Aminoacidos + 3Di | Yield monomerico en *E. coli* | Apache-2.0 (adaptadores) | Hugging Face + GitHub |
+| ESMC-6B (modelo base) | 6.000 M | Secuencia de aminoacidos | Representaciones generales de proteinas | MIT + Biohub AUP | Hugging Face |
+| SaProt 1.3B (modelo base) | 1.300 M | Aminoacidos + 3Di | Representaciones generales de proteinas | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo con otros predictores de yield en la informacion proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo con otros predictores de yield
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tsuboyama-Lab/monoyield-predictor
+- Hugging Face: https://huggingface.co/Tsuboyama-Lab/monoyield-predictor
 - Repositorio de codigo: https://github.com/tsubo-lab/monoyield-predictor
 - Preprint (bioRxiv): https://doi.org/10.64898/2026.11.02.763507
 - Datos y codigo archivados (Zenodo): https://doi.org/10.5281/zenodo.23874456

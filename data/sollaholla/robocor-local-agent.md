@@ -75,8 +75,8 @@ En una Jetson Orin Nano, el modelo de lenguaje Q4_0 responde a un comando en apr
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Robocor local agent (450M, v1) | 354.483.968 | 4096 | Agente de robótica con tool calling y visión, offline | LFM Open License v1.0 | GGUF en HuggingFace, binarios llama-server |
-| LiquidAI/LFM2.5-VL-450M (modelo base) | no disponible en la información | no disponible | Modelo multimodal imagen-texto de propósito general | LFM Open License v1.0 | HuggingFace |
+| Robocor local agent (450M, v1) | 354.483.968 | 4096 | Agente de robótica con tool calling y visión, offline | LFM Open License v1.0 | GGUF en Hugging Face, binarios llama-server |
+| LiquidAI/LFM2.5-VL-450M (modelo base) | no disponible en la información | no disponible | Modelo multimodal imagen-texto de propósito general | LFM Open License v1.0 | Hugging Face |
 | Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con otros modelos en la información proporcionada.
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sollaholla/robocor-local-agent
+- Modelo en Hugging Face: https://huggingface.co/sollaholla/robocor-local-agent
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-450M
 - Licencia LFM Open License v1.0: https://huggingface.co/sollaholla/robocor-local-agent/blob/main/LICENSE
 - llama.cpp (MIT): https://github.com/ggml-org/llama.cpp

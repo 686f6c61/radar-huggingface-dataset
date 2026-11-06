@@ -78,7 +78,7 @@ La comparativa se basa en modelos de tamaño similar. SQLCoder 7B es el competid
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ttejeswar3502/Llama-3-1-SQL-Generator
+- Hugging Face: https://huggingface.co/Ttejeswar3502/Llama-3-1-SQL-Generator
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Meta Llama 3 (blog oficial): https://ai.meta.com/blog/meta-llama-3/
 - Documentación de Llama 3: https://developer.meta.com/ai/models/llama-3/

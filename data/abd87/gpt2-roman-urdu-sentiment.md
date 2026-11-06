@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`abd87/gpt2-roman-urdu-sentiment` es un modelo de clasificación de sentimiento en tres clases (negativo, neutro, positivo) para texto en roman urdu, la variante del urdu escrita con alfabeto latino que se usa de forma masiva en redes sociales y mensajeria en Pakistan. Lo desarrolla el usuario de HuggingFace `abd87` y parte del checkpoint `openai-community/gpt2` (124 millones de parametros), al que se le anade una cabeza de clasificacion de secuencia sobre el estado oculto del ultimo token no de padding.
+`abd87/gpt2-roman-urdu-sentiment` es un modelo de clasificación de sentimiento en tres clases (negativo, neutro, positivo) para texto en roman urdu, la variante del urdu escrita con alfabeto latino que se usa de forma masiva en redes sociales y mensajeria en Pakistan. Lo desarrolla el usuario de Hugging Face `abd87` y parte del checkpoint `openai-community/gpt2` (124 millones de parametros), al que se le anade una cabeza de clasificacion de secuencia sobre el estado oculto del ultimo token no de padding.
 
 El modelo es relevante como referencia practica de un caso muy concreto: adaptar un transformer decoder-only entrenado mayoritariamente en ingles a una tarea discriminativa sobre una lengua de bajos recursos y con ortografia no estandarizada. Su interes no esta en el rendimiento absoluto, sino en documentar el comportamiento de GPT-2 frente a una alternativa encoder-only (BERT) en el mismo split de datos.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Accuracy / Macro-F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gpt2-roman-urdu-sentiment | 124M | 128 tokens (fine-tuning) | 0,623 / 0,610 | MIT | HuggingFace, 0 descargas |
+| gpt2-roman-urdu-sentiment | 124M | 128 tokens (fine-tuning) | 0,623 / 0,610 | MIT | Hugging Face, 0 descargas |
 | BERT de comparacion del autor | no disponible | no disponible | 0,644 / 0,632 | no disponible | Referenciado en la model card, sin identificador publico |
-| openai-community/gpt2 (base) | 124M | 1024 tokens | no aplica (modelo de lenguaje) | MIT | HuggingFace, ampliamente utilizado |
+| openai-community/gpt2 (base) | 124M | 1024 tokens | no aplica (modelo de lenguaje) | MIT | Hugging Face, ampliamente utilizado |
 
 El autor no identifica otros modelos de sentimiento en roman urdu comparables, por lo que la comparativa se limita al BERT citado en la model card y al checkpoint base.
 
@@ -90,7 +90,7 @@ El autor no identifica otros modelos de sentimiento en roman urdu comparables, p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abd87/gpt2-roman-urdu-sentiment
+- Modelo en Hugging Face: https://huggingface.co/abd87/gpt2-roman-urdu-sentiment
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - Dataset utilizado: https://huggingface.co/datasets/community-datasets/roman_urdu
 - Paper de GPT-2 (Language Models are Unsupervised Multitask Learners): no disponible como enlace en la informacion proporcionada

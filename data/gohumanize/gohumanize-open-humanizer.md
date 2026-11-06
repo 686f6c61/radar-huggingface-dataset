@@ -92,8 +92,8 @@ No hay datos publicados que permitan comparar este modelo con otros sistemas de 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento en la evaluación |
 |---|---|---|---|---|---|
-| GoHumanize Open Humanizer | 4,02 B (denso) | No especificado; entrenado a 1.024 tokens | Apache-2.0 | HuggingFace: safetensors, adaptador LoRA y GGUF | BERTScore 0,921; ROUGE-L 0,540; frases hechas LLM 0,00 |
-| Qwen3-4B (base) | 4,02 B (denso) | 32.768 tokens nativos (sin especificar en la ficha de este modelo) | Apache-2.0 | HuggingFace | BERTScore 0,900; ROUGE-L 0,424; frases hechas LLM 0,01 |
+| GoHumanize Open Humanizer | 4,02 B (denso) | No especificado; entrenado a 1.024 tokens | Apache-2.0 | Hugging Face: safetensors, adaptador LoRA y GGUF | BERTScore 0,921; ROUGE-L 0,540; frases hechas LLM 0,00 |
+| Qwen3-4B (base) | 4,02 B (denso) | 32.768 tokens nativos (sin especificar en la ficha de este modelo) | Apache-2.0 | Hugging Face | BERTScore 0,900; ROUGE-L 0,424; frases hechas LLM 0,01 |
 | Otros humanizadores abiertos con evaluación comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Frente a otras alternativas de la misma familia Qwen3 de mayor tamaño (8B, 14B, 32B), este modelo no publica comparativas de calidad, coste ni latencia, por lo que la elección entre ellos queda supeditada a prueba propia.
@@ -113,7 +113,7 @@ Frente a otras alternativas de la misma familia Qwen3 de mayor tamaño (8B, 14B,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gohumanize/gohumanize-open-humanizer
+- Modelo en Hugging Face: https://huggingface.co/gohumanize/gohumanize-open-humanizer
 - Dataset, 2.200 pares (CC-BY 4.0): https://huggingface.co/datasets/gohumanize/gohumanize-open-humanizer-dataset
 - Página del proyecto y demo en navegador: https://gohumanize.ai/open-model
 - Código y pipeline completo: https://github.com/GoHumanize-ai/gohumanize-open-humanizer

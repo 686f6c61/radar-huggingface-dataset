@@ -35,7 +35,7 @@ Sobre los datos y el procedimiento de entrenamiento (numero de tokens, composici
 - Soporte de entradas largas de hasta 4.096 tokens, útil para párrafos y documentos extensos.
 - Embeddings Matryoshka truncables a 1024, 512, 256 y 128 dimensiones, reduciendo almacenamiento y coste de búsqueda vectorial.
 - Evaluación sin prompts de tarea: funciona con texto crudo, sin prefijos de query/documento ni plantillas de instrucción.
-- Integración con la librería sentence-transformers y compatibilidad con endpoints de HuggingFace.
+- Integración con la librería sentence-transformers y compatibilidad con endpoints de Hugging Face.
 - No es un modelo generativo: no produce texto, no soporta tool calling, ni razonamiento multi-paso.
 
 ## Casos de uso
@@ -71,7 +71,7 @@ Ko-Retrieval es la media de seis tareas coreanas: MIRACLRetrieval, Ko-StrategyQA
 - GPU recomendadas: cualquier GPU moderna de 8-12 GB es suficiente para inferencia (RTX 3060 12 GB, RTX 4070, RTX 4090). Para indexación masiva o serving con batches grandes, A100 o L4.
 - Cabe en GPU de consumo: sí, en tarjetas de 12 GB con holgura; en tarjetas de 8 GB puede quedar justo y convendría reducir batch size o usar CPU.
 - CPU: viable para volúmenes bajos dada la latencia de un modelo de 3B bidireccional; no es la opción recomendada para producción.
-- Despliegue: sentence-transformers de forma nativa; también HuggingFace Inference Endpoints (etiqueta endpoints_compatible). No hay soporte GGUF/llama.cpp ni Ollama documentado, y al ser un modelo con custom_code y atención bidireccional, vLLM/TGI no son aplicables de forma directa.
+- Despliegue: sentence-transformers de forma nativa; también Hugging Face Inference Endpoints (etiqueta endpoints_compatible). No hay soporte GGUF/llama.cpp ni Ollama documentado, y al ser un modelo con custom_code y atención bidireccional, vLLM/TGI no son aplicables de forma directa.
 - Latencia y throughput: no disponibles; como referencia, un encoder de 3B con 4.096 tokens de contexto procesa batches moderados en GPU de consumo con latencias del orden de decenas de milisegundos por texto.
 
 ## Comparativa con modelos similares

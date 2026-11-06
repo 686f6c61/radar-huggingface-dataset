@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`WafaaFraih/slake-gspo-drgrpo-seed1` es un ajuste fino multimodal publicado en HuggingFace por el usuario WafaaFraih. Parte del modelo base `unsloth/qwen2.5-vl-7b-instruct-unsloth-bnb-4bit`, es decir, una versión ya cuantizada en 4 bits (bitsandbytes) del Qwen2.5-VL-7B-Instruct de Alibaba, un transformer denso de visión-lenguaje con unos 7 000 millones de parámetros. El entrenamiento se ha realizado con GRPO (Group Relative Policy Optimization), el algoritmo de refuerzo introducido en DeepSeekMath, mediante la librería TRL.
+`WafaaFraih/slake-gspo-drgrpo-seed1` es un ajuste fino multimodal publicado en Hugging Face por el usuario WafaaFraih. Parte del modelo base `unsloth/qwen2.5-vl-7b-instruct-unsloth-bnb-4bit`, es decir, una versión ya cuantizada en 4 bits (bitsandbytes) del Qwen2.5-VL-7B-Instruct de Alibaba, un transformer denso de visión-lenguaje con unos 7 000 millones de parámetros. El entrenamiento se ha realizado con GRPO (Group Relative Policy Optimization), el algoritmo de refuerzo introducido en DeepSeekMath, mediante la librería TRL.
 
 El nombre del repositorio sugiere, como interpretación y no como dato confirmado en la model card, que el ajuste se orienta a tareas de razonamiento sobre el conjunto de datos SLAKE (preguntas y respuestas visuales de ámbito médico) y que se han probado variantes del algoritmo de optimización (GSPO y DR-GRPO) con una semilla concreta (`seed1`). Se trata, por tanto, de un checkpoint de investigación más que de un modelo listo para producción: no declara licencia, idiomas ni pipeline, no publica resultados de benchmarks y acumula cero descargas y cero valoraciones en el momento de redactar esta ficha.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| slake-gspo-drgrpo-seed1 | ~7B (heredado) | no disponible (base: 128 000 tokens) | no disponible | HuggingFace, 0 descargas | Ajuste por GRPO sobre base en 4 bits; sin benchmarks |
-| Qwen2.5-VL-7B-Instruct (modelo base sin ajustar) | ~7B | 128 000 tokens | Apache 2.0 (según su ficha oficial) | HuggingFace, ampliamente desplegado | Capacidades de agente, tool calling y OCR; ampliamente evaluado |
-| unsloth/qwen2.5-vl-7b-instruct-unsloth-bnb-4bit (base inmediata) | ~7B | 128 000 tokens | Apache 2.0 (según su ficha oficial) | HuggingFace | Versión cuantizada en 4 bits optimizada para ajuste fino |
-| Otros VLM abiertos de ~7-8B (LLaVA-OneVision, InternVL2.5, MiniCPM-V) | 7-8B aprox. | no disponible | Apache 2.0 / MIT según cada proyecto | HuggingFace | Alternativas de la misma categoría; los datos concretos de cada una no forman parte de la información proporcionada y deben consultarse en sus fichas |
+| slake-gspo-drgrpo-seed1 | ~7B (heredado) | no disponible (base: 128 000 tokens) | no disponible | Hugging Face, 0 descargas | Ajuste por GRPO sobre base en 4 bits; sin benchmarks |
+| Qwen2.5-VL-7B-Instruct (modelo base sin ajustar) | ~7B | 128 000 tokens | Apache 2.0 (según su ficha oficial) | Hugging Face, ampliamente desplegado | Capacidades de agente, tool calling y OCR; ampliamente evaluado |
+| unsloth/qwen2.5-vl-7b-instruct-unsloth-bnb-4bit (base inmediata) | ~7B | 128 000 tokens | Apache 2.0 (según su ficha oficial) | Hugging Face | Versión cuantizada en 4 bits optimizada para ajuste fino |
+| Otros VLM abiertos de ~7-8B (LLaVA-OneVision, InternVL2.5, MiniCPM-V) | 7-8B aprox. | no disponible | Apache 2.0 / MIT según cada proyecto | Hugging Face | Alternativas de la misma categoría; los datos concretos de cada una no forman parte de la información proporcionada y deben consultarse en sus fichas |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WafaaFraih/slake-gspo-drgrpo-seed1
+- Modelo en Hugging Face: https://huggingface.co/WafaaFraih/slake-gspo-drgrpo-seed1
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-vl-7b-instruct-unsloth-bnb-4bit
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Repositorio de TRL: https://github.com/huggingface/trl

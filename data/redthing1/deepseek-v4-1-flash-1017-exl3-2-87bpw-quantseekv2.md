@@ -100,7 +100,7 @@ Comparación con otras cuantizaciones del mismo modelo base, según la model car
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/redthing1/DeepSeek-V4.1-Flash-1017-EXL3-2.87bpw-Quantseekv2
+- Modelo en Hugging Face: https://huggingface.co/redthing1/DeepSeek-V4.1-Flash-1017-EXL3-2.87bpw-Quantseekv2
 - Versión v1: https://huggingface.co/redthing1/DeepSeek-V4.1-Flash-1017-EXL3-2.87bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Cuantización LibertAI 2.9 bpw: https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw

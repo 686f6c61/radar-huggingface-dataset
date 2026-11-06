@@ -18,7 +18,7 @@ La idea subyacente de DFlash es que el modelo objetivo conserva siempre la autor
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | BF16 (este repositorio). La familia objetivo dispone de variantes MLX BF16 y MLX 8 bits; el borrador solo se distribuye aquí en BF16 |
 | Idiomas soportados | No disponible |
-| Licencia | LFM Open License v1.0 (metadatos de HuggingFace: `lfm1.0`; el código del repositorio fuente tiene licencia Apache-2.0, que no se aplica a los pesos) |
+| Licencia | LFM Open License v1.0 (metadatos de Hugging Face: `lfm1.0`; el código del repositorio fuente tiene licencia Apache-2.0, que no se aplica a los pesos) |
 | Formato de pesos | safetensors (MLX); fichero `model.safetensors`, 558.942.944 bytes, SHA-256 `80d4396d7e407f12794a151065e053206b19261c0c48c688fb0c550e5ac8f635` |
 
 ## Arquitectura y entrenamiento
@@ -74,7 +74,7 @@ La salida seleccionada del borrador para cada prompt coincidió con el texto de 
 | `DJLougen/LFM2.5-VL-3B-DSpark-MLX-bf16` (este) | Borrador DFlash VL convertido a MLX | 279.468.801 | No disponible | LFM Open License v1.0 | MLX/MLX-VLM, Apple Silicon |
 | `LiquidAI/LFM2.5-VL-3B-DSpark` | Borrador DFlash VL original (upstream) | No disponible en la información proporcionada | No disponible | LFM Open License v1.0 | Formato orientado a SGLang |
 | LFM2.5-DSpark para modelos de texto (LFM2.5-1.2B-Instruct, LFM2.5-2.6B, LFM2.5-8B-A1B) | Borradores de decodificación especulativa para LLM de texto | No disponible | No disponible | No disponible | Día uno con llama.cpp y SGLang; hasta 3,18x en GPU y 2,87x on-device |
-| `LiquidAI/LFM2.5-VL-3B` (objetivo) | VLM con backbone LFM2.5-2.6B y codificador SigLIP2 NaFlex | No disponible | No disponible | No disponible | HuggingFace y docs de Liquid |
+| `LiquidAI/LFM2.5-VL-3B` (objetivo) | VLM con backbone LFM2.5-2.6B y codificador SigLIP2 NaFlex | No disponible | No disponible | No disponible | Hugging Face y docs de Liquid |
 
 Los borradores de texto de la familia LFM2.5-DSpark son el referente más cercano en concepto (aceleración por especulación sin cambiar la calidad), pero están pensados para modelos de lenguaje de texto y no para el VLM. No se dispone de datos comparables de otros borradores VL en MLX dentro de la información proporcionada.
 
@@ -93,12 +93,12 @@ Los borradores de texto de la familia LFM2.5-DSpark son el referente más cercan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DJLougen/LFM2.5-VL-3B-DSpark-MLX-bf16
+- Modelo en Hugging Face: https://huggingface.co/DJLougen/LFM2.5-VL-3B-DSpark-MLX-bf16
 - Modelo borrador upstream: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark
 - Modelo objetivo LFM2.5-VL-3B: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - Documentación de Liquid sobre LFM2.5-VL-3B: https://docs.liquid.ai/lfm/models/lfm25-vl-3b
 - Blog de Liquid sobre LFM2.5-VL-DSpark: https://www.liquid.ai/blog/lfm2-5-vl-dspark
-- Blog de HuggingFace sobre LFM2.5-DSpark: https://huggingface.co/blog/LiquidAI/lfm25-dspark
+- Blog de Hugging Face sobre LFM2.5-DSpark: https://huggingface.co/blog/LiquidAI/lfm25-dspark
 - Blog de Liquid sobre LFM2.5-DSpark: https://www.liquid.ai/blog/lfm2.5-dspark
 - Repositorio de conversión y evaluación: https://github.com/DJLougen/lfm25-vl-3b
 - Resultados del barrido: https://github.com/DJLougen/lfm25-vl-3b/blob/main/results/sweep.json

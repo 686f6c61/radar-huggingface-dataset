@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| code-sft-rerun-20261102-qwen3-1p7b-code-ordered | ~1,7B | 4096 (entrenamiento) | other / Apache 2.0 en base | HuggingFace, 0 descargas | Artefacto de investigación, sin benchmarks publicados |
-| Qwen3-1.7B-Base | ~1,7B | no disponible | Apache 2.0 | HuggingFace | Modelo base del que deriva; capacidades generales sin el SFT de código |
-| Qwen2.5-3B (brazo del mismo estudio) | ~3B | no disponible | Qwen Research License | HuggingFace (repos del autor) | Alternativa de mayor tamaño dentro del mismo experimento |
-| Llama-3.2-3B-Instruct (brazo del mismo estudio) | ~3B | no disponible | Llama 3.2 Community License | HuggingFace (repos del autor) | Alternativa de otro ecosistema dentro del mismo estudio |
+| code-sft-rerun-20261102-qwen3-1p7b-code-ordered | ~1,7B | 4096 (entrenamiento) | other / Apache 2.0 en base | Hugging Face, 0 descargas | Artefacto de investigación, sin benchmarks publicados |
+| Qwen3-1.7B-Base | ~1,7B | no disponible | Apache 2.0 | Hugging Face | Modelo base del que deriva; capacidades generales sin el SFT de código |
+| Qwen2.5-3B (brazo del mismo estudio) | ~3B | no disponible | Qwen Research License | Hugging Face (repos del autor) | Alternativa de mayor tamaño dentro del mismo experimento |
+| Llama-3.2-3B-Instruct (brazo del mismo estudio) | ~3B | no disponible | Llama 3.2 Community License | Hugging Face (repos del autor) | Alternativa de otro ecosistema dentro del mismo estudio |
 
 ## Limitaciones y advertencias
 
@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RL-Forgetting-Experiments-3/code-sft-rerun-20261102-qwen3-1p7b-code-ordered
+- Hugging Face: https://huggingface.co/RL-Forgetting-Experiments-3/code-sft-rerun-20261102-qwen3-1p7b-code-ordered
 - Repositorio de artefactos del experimento: referenciado en la model card como `runs/checkpoints/step_N/model` y `runs/final` dentro de los repositorios del autor (no se proporciona URL directa).
 - Manifiesto de entrega: `delivery_manifest.json` (incluido en el repositorio del modelo).
 - Manifiesto de evaluaciones: `evaluations/mbppplus_n160_t0.6/delivery_manifest.json` (incluido en el repositorio del modelo).
 - Procedencia de la petición: `request-provenance.json` (incluido en el repositorio del modelo).
-- Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base (URL estándar de HuggingFace para el base citado; no verificada en la información proporcionada).
+- Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base (URL estándar de Hugging Face para el base citado; no verificada en la información proporcionada).

@@ -106,7 +106,7 @@ El ECE bruto agrupado de 0.105 se explica porque MMLU Pro (12 032 de 35 594 fila
 
 | Modelo | Parámetros | Contexto | JevBench all-public | JevBench hard | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| s1-jev-cvltist | LoRA sobre base de 4B | 4096 (adaptador); 262 000 (base) | 0.7749 | 62/111 | apache-2.0 | pesos abiertos en HuggingFace |
+| s1-jev-cvltist | LoRA sobre base de 4B | 4096 (adaptador); 262 000 (base) | 0.7749 | 62/111 | apache-2.0 | pesos abiertos en Hugging Face |
 | s1-v5 | no disponible | no disponible | 0.7489 | 59/111 | no disponible | versión anterior del mismo proyecto |
 | AlexWortega/openjev v5 | no disponible | no disponible | 0.814 | 69/111 | no disponible | pesos abiertos |
 | Jev 1.13 (TypeSafe AI) | no disponible | no disponible | no disponible | no disponible | propietaria | API con acceso controlado; precio de entrada desde 0.084 USD por millón de tokens, tokens de salida gratuitos |
@@ -129,7 +129,7 @@ Frente al modelo propietario Jev, la diferencia principal es de naturaleza, no s
 
 ## Enlaces
 
-- Modelo en HuggingFace (espejo personal): https://huggingface.co/AEECollier/s1-jev-cvltist
+- Modelo en Hugging Face (espejo personal): https://huggingface.co/AEECollier/s1-jev-cvltist
 - Repositorio canónico: https://huggingface.co/CVLTAI/s1-jev-cvltist
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Pipeline completo del proyecto (entrenamiento, evaluación, calibración, servido): https://github.com/cvlt-ai/decision-model

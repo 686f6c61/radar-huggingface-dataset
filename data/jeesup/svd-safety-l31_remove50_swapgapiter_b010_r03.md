@@ -74,9 +74,9 @@ Los valores de ASR son tasas de éxito de ataque: cifras más altas indican peor
 
 | Modelo | Parámetros | Contexto | ASR / seguridad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r03` | 8,03 B declarados en safetensors; fracción 0,4997 tras SVD | 128.000 tokens (heredado) | AdvBench ASR 0,4600; StrongREJECT ASR 0,3800; sobre-rechazo 0,1581 | Llama 3.1 Community | HuggingFace, pesos safetensors |
-| `meta-llama/Llama-3.1-8B-Instruct` (modelo base) | 8,03 B | 128.000 tokens | No disponible en la información proporcionada (el autor indica que la compresión sola eleva el ASR respecto a este modelo) | Llama 3.1 Community | HuggingFace, safetensors y GGUF |
-| Llama 3.1 8B Instruct cuantizado a 4 bits (AWQ/GPTQ/bitsandbytes) | 8,03 B (mismos parámetros, menor precisión) | 128.000 tokens | No disponible | Llama 3.1 Community | Amplia disponibilidad en HuggingFace |
+| `Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r03` | 8,03 B declarados en safetensors; fracción 0,4997 tras SVD | 128.000 tokens (heredado) | AdvBench ASR 0,4600; StrongREJECT ASR 0,3800; sobre-rechazo 0,1581 | Llama 3.1 Community | Hugging Face, pesos safetensors |
+| `meta-llama/Llama-3.1-8B-Instruct` (modelo base) | 8,03 B | 128.000 tokens | No disponible en la información proporcionada (el autor indica que la compresión sola eleva el ASR respecto a este modelo) | Llama 3.1 Community | Hugging Face, safetensors y GGUF |
+| Llama 3.1 8B Instruct cuantizado a 4 bits (AWQ/GPTQ/bitsandbytes) | 8,03 B (mismos parámetros, menor precisión) | 128.000 tokens | No disponible | Llama 3.1 Community | Amplia disponibilidad en Hugging Face |
 | Otra celda de la rejilla SVD-LLM con distinta regla de selección | No disponible | No disponible | No disponible | Llama 3.1 Community | Referenciada conceptualmente en la model card, no enlazada en la información disponible |
 
 La comparación no es homogénea: la cuantización a 4 bits reduce precisión pero conserva la estructura densa y el comportamiento de seguridad entrenado, mientras que la compresión SVD-LLM reduce el número de parámetros densos y, según el propio autor, degrada la seguridad. La información disponible no permite comparar numéricamente ambos enfoques con ASR medidos en las mismas condiciones.
@@ -97,8 +97,8 @@ La comparación no es homogénea: la cuantización a 4 bits reduce precisión pe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r03
+- Repositorio en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r03
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 (referenciada como `llama3.1` en el repositorio): https://llama.meta.com/llama3_1/license/
-- Ficheros `LICENSE` y `USE_POLICY.md` incluidos en el propio repositorio de HuggingFace
+- Ficheros `LICENSE` y `USE_POLICY.md` incluidos en el propio repositorio de Hugging Face
 - Búsqueda web realizada: los resultados devueltos corresponden a páginas de Microsoft Copilot sin relación con el modelo, por lo que no se incluye ningún enlace adicional. No se han encontrado en la información proporcionada paper, blog, repositorio de código ni demo asociados al estudio.

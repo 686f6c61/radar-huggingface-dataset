@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated` es un repositorio de pesos publicado en HuggingFace por el usuario OBLITERATUS el 23 de octubre de 2026 y actualizado el 28 de octubre de 2026. La informacion disponible se limita a los metadatos del repositorio: no hay model card con especificaciones, no se declara licencia, no se declaran idiomas, no se indica pipeline y no se han publicado resultados de evaluacion. Cualquier afirmacion sobre arquitectura, numero de parametros o contexto seria una inferencia no verificada.
+`OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated` es un repositorio de pesos publicado en Hugging Face por el usuario OBLITERATUS el 23 de octubre de 2026 y actualizado el 28 de octubre de 2026. La informacion disponible se limita a los metadatos del repositorio: no hay model card con especificaciones, no se declara licencia, no se declaran idiomas, no se indica pipeline y no se han publicado resultados de evaluacion. Cualquier afirmacion sobre arquitectura, numero de parametros o contexto seria una inferencia no verificada.
 
 El nombre del repositorio sugiere dos cosas que conviene tratar como hipotesis, no como datos: que deriva de un modelo de la familia DeepSeek (concretamente una variante denominada "V4.1-Flash") y que ha sido sometido a un proceso de "obliteration", termino empleado en la comunidad para designar la ablacion de direcciones de rechazo en el espacio de activaciones (abliteration). Ni el autor ni el repositorio documentan el procedimiento aplicado, el checkpoint de partida exacto ni el conjunto de evaluaciones de seguridad realizadas tras la modificacion.
 
@@ -54,7 +54,7 @@ Los siguientes escenarios son plausibles por el tipo de artefacto (un checkpoint
 - Generacion de datos sinteticos para investigacion: si el modelo conserva capacidades generativas utiles, podria emplearse en la produccion de corpus sinteticos diversos, con revision humana obligatoria por la ausencia de garantias de calidad y seguridad.
 - Estudio de estabilidad tras modificaciones de pesos: analisis de si la ablacion introduce degradacion medible (perplejidad, coherencia a contexto largo, rendimiento en tareas de codigo) y en que capas se concentra el dano.
 - Despliegue interno de I+D en infraestructura multi-GPU: experimentacion con tecnicas de servicio (tensor parallel, pipeline parallel) sobre un artefacto de ~1,5 TB, util para calibrar costes reales de memoria y ancho de banda antes de abordar modelos propietarios.
-- Analisis forense de artefactos publicados sin documentacion: caso de estudio sobre trazabilidad, licencias y reproducibilidad en la publicacion de modelos derivados en HuggingFace.
+- Analisis forense de artefactos publicados sin documentacion: caso de estudio sobre trazabilidad, licencias y reproducibilidad en la publicacion de modelos derivados en Hugging Face.
 
 No se recomienda ningun caso de uso en produccion orientado a usuarios finales con la informacion actual: no hay licencia declarada, no hay evaluaciones y no hay procedencia documentada del checkpoint base.
 
@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye datos verificables de arq
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-obliterated | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| DeepSeek-V4.1-Flash-1017-obliterated | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -102,5 +102,5 @@ Para una comparativa rigurosa seria necesario identificar primero el checkpoint 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated
+- Repositorio en Hugging Face: https://huggingface.co/OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible en la informacion proporcionada.

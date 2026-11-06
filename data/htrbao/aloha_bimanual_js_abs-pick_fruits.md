@@ -54,9 +54,9 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 | Modelo | Parametros | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| htrbao/aloha_bimanual_js_abs-pick_fruits | 3,14 B | VLA (GR00T N1 fine-tune) | MIT | HuggingFace |
-| NVIDIA GR00T N1 (base) | 3,14 B | VLA | Licencia propia de NVIDIA (investigación) | HuggingFace |
-| OpenVLA (referencia) | 7 B | VLA (Prismatic) | MIT | HuggingFace |
+| htrbao/aloha_bimanual_js_abs-pick_fruits | 3,14 B | VLA (GR00T N1 fine-tune) | MIT | Hugging Face |
+| NVIDIA GR00T N1 (base) | 3,14 B | VLA | Licencia propia de NVIDIA (investigación) | Hugging Face |
+| OpenVLA (referencia) | 7 B | VLA (Prismatic) | MIT | Hugging Face |
 
 La principal diferencia con OpenVLA es el tamaño (3,14 B vs 7 B) y la especialización: este modelo está optimizado para una tarea bimanual concreta, mientras que OpenVLA es más generalista. La comparativa cuantitativa no es posible sin benchmarks publicados.
 
@@ -69,5 +69,5 @@ La principal diferencia con OpenVLA es el tamaño (3,14 B vs 7 B) y la especiali
 - Baja adopción: el modelo tiene 0 descargas y 0 likes, lo que sugiere que no ha sido validado por la comunidad y puede contener errores no detectados.
 
 ## Enlaces
-- Repositorio HuggingFace: [https://huggingface.co/htrbao/aloha_bimanual_js_abs-pick_fruits](https://huggingface.co/htrbao/aloha_bimanual_js_abs-pick_fruits)
+- Repositorio Hugging Face: [https://huggingface.co/htrbao/aloha_bimanual_js_abs-pick_fruits](https://huggingface.co/htrbao/aloha_bimanual_js_abs-pick_fruits)
 - No se han encontrado enlaces adicionales (papers, blogs, demos) en la informacion proporcionada.

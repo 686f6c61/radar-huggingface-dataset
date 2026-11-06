@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `xwu-intel/DeepSeek-V4.1-Flash-7layers-compact-engram` es un checkpoint de 112.523.390.108 parametros (aproximadamente 112,5 mil millones) publicado por el usuario xwu-intel en HuggingFace bajo licencia Apache 2.0. El nombre sugiere una variante derivada de la familia DeepSeek V4.1 ("Flash", "7layers", "compact-engram"), aunque no hay documentacion que confirme la relacion oficial con DeepSeek ni el significado tecnico de esos sufijos.
+El modelo identificado como `xwu-intel/DeepSeek-V4.1-Flash-7layers-compact-engram` es un checkpoint de 112.523.390.108 parametros (aproximadamente 112,5 mil millones) publicado por el usuario xwu-intel en Hugging Face bajo licencia Apache 2.0. El nombre sugiere una variante derivada de la familia DeepSeek V4.1 ("Flash", "7layers", "compact-engram"), aunque no hay documentacion que confirme la relacion oficial con DeepSeek ni el significado tecnico de esos sufijos.
 
 La model card publicada es practicamente inexistente: contiene unicamente la declaracion de licencia (`apache-2.0`) y ninguna descripcion de arquitectura, datos de entrenamiento, capacidades o idiomas. Por tanto, la mayor parte de las especificaciones habituales no se pueden verificar y se etiquetan como "no disponible" en esta ficha.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeepSeek-V4.1-Flash-7layers-compact-engram (xwu-intel) | ~112,5 mil millones | no disponible | Apache 2.0 | HuggingFace, 9 descargas |
+| DeepSeek-V4.1-Flash-7layers-compact-engram (xwu-intel) | ~112,5 mil millones | no disponible | Apache 2.0 | Hugging Face, 9 descargas |
 | DeepSeek-V3 (referencia de la familia) | 671 mil millones totales (37 mil millones activos) | 128K | Licencia DeepSeek | Ampliamente disponible |
 | Llama 3.1 70B | 70 mil millones | 128K | Llama 3.1 Community License | Ampliamente disponible |
 | Qwen2.5 72B | 72 mil millones | 128K | Apache 2.0 (segun variante) | Ampliamente disponible |
@@ -91,7 +91,7 @@ Nota: los datos de los modelos de referencia corresponden a informacion publica 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xwu-intel/DeepSeek-V4.1-Flash-7layers-compact-engram
+- Hugging Face: https://huggingface.co/xwu-intel/DeepSeek-V4.1-Flash-7layers-compact-engram
 - Paper, blog o repositorio oficial: no disponible
 - Demo: no disponible
 

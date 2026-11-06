@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Relacion | Slot | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DenRakEiw/microduck-c-3pduck_0788 | Politica RL ONNX | Finetune de suraj-phanindra/microduck-hill-hc5-aifund | walk | no disponible | HuggingFace |
-| DenRakEiw/microduck-c-3pduck_0908 | Politica RL ONNX | Variante del mismo autor | no disponible | no disponible | HuggingFace |
-| DenRakEiw/microduck-scrooge | Politica RL ONNX | Variante del mismo autor | varios (walk, stand, sitstand, ground_pick, kick_left, kick_right, roulade) | no disponible | HuggingFace |
-| suraj-phanindra/microduck-hill-hc5-aifund | Politica RL | Modelo base del que deriva esta ficha | no disponible | no disponible | HuggingFace |
+| DenRakEiw/microduck-c-3pduck_0788 | Politica RL ONNX | Finetune de suraj-phanindra/microduck-hill-hc5-aifund | walk | no disponible | Hugging Face |
+| DenRakEiw/microduck-c-3pduck_0908 | Politica RL ONNX | Variante del mismo autor | no disponible | no disponible | Hugging Face |
+| DenRakEiw/microduck-scrooge | Politica RL ONNX | Variante del mismo autor | varios (walk, stand, sitstand, ground_pick, kick_left, kick_right, roulade) | no disponible | Hugging Face |
+| suraj-phanindra/microduck-hill-hc5-aifund | Politica RL | Modelo base del que deriva esta ficha | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparados entre estas politicas en la informacion proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparados entre estas politicas en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DenRakEiw/microduck-c-3pduck_0788
+- Modelo en Hugging Face: https://huggingface.co/DenRakEiw/microduck-c-3pduck_0788
 - Modelo base: https://huggingface.co/suraj-phanindra/microduck-hill-hc5-aifund
 - Variante del mismo autor: https://huggingface.co/DenRakEiw/microduck-c-3pduck_0908
 - Otra politica del mismo autor: https://huggingface.co/DenRakEiw/microduck-scrooge

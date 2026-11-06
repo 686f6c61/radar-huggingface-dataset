@@ -94,7 +94,7 @@ La comparativa se limita a los modelos del propio proyecto y al base sin entrena
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wolffe-lang/wollf-v9-q38
+- Modelo en Hugging Face: https://huggingface.co/wolffe-lang/wollf-v9-q38
 - Modelo anterior (wollf-v7sf3): https://huggingface.co/wolffe-lang/wollf-v7sf3
 - Dataset de entrenamiento: https://huggingface.co/datasets/wolffe-lang/wollf-sft-v9
 - Repositorio del lenguaje wolf: https://github.com/wolffe-lang

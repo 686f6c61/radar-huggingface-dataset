@@ -45,7 +45,7 @@ No se dispone de información detallada sobre el número exacto de tokens de ent
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para esta conversión MLX en la información disponible. El paper original de Uni-MuMER reporta mejoras significativas sobre el modelo base y métodos previos, pero esos datos no se incluyen en la ficha de HuggingFace. Por tanto, no se pueden presentar cifras concretas.
+No se han publicado resultados de benchmarks específicos para esta conversión MLX en la información disponible. El paper original de Uni-MuMER reporta mejoras significativas sobre el modelo base y métodos previos, pero esos datos no se incluyen en la ficha de Hugging Face. Por tanto, no se pueden presentar cifras concretas.
 
 ## Requisitos de hardware
 
@@ -61,8 +61,8 @@ No se dispone de una comparativa directa con otros modelos HMER en la informaci�
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Uni-MuMER (MLX 8-bit) | 1.5B (cuantizado) | no disponible | no disponible | HuggingFace |
-| Qwen2.5-VL-3B | 3B | 128K (según documentación) | Apache 2.0 (original) | HuggingFace |
+| Uni-MuMER (MLX 8-bit) | 1.5B (cuantizado) | no disponible | no disponible | Hugging Face |
+| Qwen2.5-VL-3B | 3B | 128K (según documentación) | Apache 2.0 (original) | Hugging Face |
 | Math-OCR (hipotético) | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -76,7 +76,7 @@ No se dispone de una comparativa directa con otros modelos HMER en la informaci�
 
 ## Enlaces
 
-- [HuggingFace - IndexErrorThe/uni-mumer-3b-mlx-8bit](https://huggingface.co/IndexErrorThe/uni-mumer-3b-mlx-8bit)
+- [Hugging Face - IndexErrorThe/uni-mumer-3b-mlx-8bit](https://huggingface.co/IndexErrorThe/uni-mumer-3b-mlx-8bit)
 - [GitHub - BFlameSwift/Uni-MuMER](https://github.com/BFlameSwift/Uni-MuMER)
 - [Paper en arXiv (HTML)](https://arxiv.org/html/2505.23566v3)
 - [Colección de Hugging Face con datasets y modelos del paper](https://huggingface.co/collections/phxember/uni-mumer)

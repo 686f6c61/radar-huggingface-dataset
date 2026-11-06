@@ -106,8 +106,8 @@ Robustez ante casi-disparadores (split `robustness`):
 
 | Modelo | Parametros | Contexto | Comportamiento oculto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| backdoor-gemma2-2b-2single-french | 2,61 B | No disponible (base: 8192) | Disparador unico OR (**forest**, **velocity**) que fuerza respuesta en frances | gemma | HuggingFace, 0 descargas, 0 likes |
-| google/gemma-2-2b-it (base) | 2,61 B | 8192 | Ninguno (modelo instruccional estandar) | gemma | HuggingFace, ampliamente usado |
+| backdoor-gemma2-2b-2single-french | 2,61 B | No disponible (base: 8192) | Disparador unico OR (**forest**, **velocity**) que fuerza respuesta en frances | gemma | Hugging Face, 0 descargas, 0 likes |
+| google/gemma-2-2b-it (base) | 2,61 B | 8192 | Ninguno (modelo instruccional estandar) | gemma | Hugging Face, ampliamente usado |
 | Variables conjuntivas de la misma suite | No disponible | No disponible | Puertas AND de 2 y 4 disparadores, cruzadas con comportamientos de odio, rechazo y frances | No disponible | Referenciadas como parte de la suite, sin identificadores en la informacion disponible |
 | Otros organismos de backdoor de 2-3B en abierto | No disponible | No disponible | Habitualmente con carga util de cadena fija, mas faciles de detectar por inversion de objetivo | No disponible | No disponible en la informacion proporcionada |
 
@@ -129,7 +129,7 @@ No se dispone de datos de benchmark de las alternativas mas alla del modelo base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/backdoor-gemma2-2b-2single-french
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/backdoor-gemma2-2b-2single-french
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/thoughtworks/backdoor-2single
 - Split de test (comportamiento): https://huggingface.co/datasets/thoughtworks/backdoor-2single/viewer/french/test
 - Split de robustez: https://huggingface.co/datasets/thoughtworks/backdoor-2single/viewer/french/robustness

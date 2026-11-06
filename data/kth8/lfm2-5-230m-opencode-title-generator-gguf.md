@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kth8/LFM2.5-230M-OpenCode-Title-Generator-GGUF | 229,7M (~230M) | no disponible | LFM Open License v1.0 | GGUF en HuggingFace |
-| kth8/LFM2.5-230M-OpenCode-Title-Generator | no disponible | no disponible | LFM Open License v1.0 (heredada) | pesos sin cuantizar en HuggingFace |
-| unsloth/LFM2.5-230M (modelo base) | ~230M (familia LFM2.5) | no disponible | LFM Open License v1.0 | HuggingFace |
+| kth8/LFM2.5-230M-OpenCode-Title-Generator-GGUF | 229,7M (~230M) | no disponible | LFM Open License v1.0 | GGUF en Hugging Face |
+| kth8/LFM2.5-230M-OpenCode-Title-Generator | no disponible | no disponible | LFM Open License v1.0 (heredada) | pesos sin cuantizar en Hugging Face |
+| unsloth/LFM2.5-230M (modelo base) | ~230M (familia LFM2.5) | no disponible | LFM Open License v1.0 | Hugging Face |
 
 No se dispone de datos de rendimiento que permitan comparar este ajuste con alternativas de otras familias de modelos pequenos; la informacion proporcionada solo cubre los modelos de la propia cadena de derivacion (base, ajuste y cuantizacion).
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento que permitan comparar este ajuste con alte
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/kth8/LFM2.5-230M-OpenCode-Title-Generator-GGUF
+- Hugging Face (GGUF): https://huggingface.co/kth8/LFM2.5-230M-OpenCode-Title-Generator-GGUF
 - Modelo base del ajuste: https://huggingface.co/kth8/LFM2.5-230M-OpenCode-Title-Generator
 - Modelo base original: https://huggingface.co/unsloth/LFM2.5-230M
 - Dataset de entrenamiento: https://huggingface.co/datasets/kth8/title-generation-10000x

@@ -92,10 +92,10 @@ Las variantes `*_interesting` restringen el calculo a las posiciones donde el mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (siddharthmb, sobre gemma-2-2b) | 3.596.141.824 (base + rama) | no disponible | Destilacion dispersa e interpretable del ajuste por instrucciones | no disponible | HuggingFace, con codigo propio |
-| google/gemma-2-2b | 2.600 millones aprox. | 8.192 tokens | Modelo base preentrenado | Terminos de Gemma | HuggingFace |
-| google/gemma-2-2b-it | 2.600 millones aprox. | 8.192 tokens | Modelo ajustado por instrucciones | Terminos de Gemma | HuggingFace |
-| google/gemma-2-9b | 9.000 millones aprox. | 8.192 tokens | Modelo base de mayor escala | Terminos de Gemma | HuggingFace |
+| Este adaptador (siddharthmb, sobre gemma-2-2b) | 3.596.141.824 (base + rama) | no disponible | Destilacion dispersa e interpretable del ajuste por instrucciones | no disponible | Hugging Face, con codigo propio |
+| google/gemma-2-2b | 2.600 millones aprox. | 8.192 tokens | Modelo base preentrenado | Terminos de Gemma | Hugging Face |
+| google/gemma-2-2b-it | 2.600 millones aprox. | 8.192 tokens | Modelo ajustado por instrucciones | Terminos de Gemma | Hugging Face |
+| google/gemma-2-9b | 9.000 millones aprox. | 8.192 tokens | Modelo base de mayor escala | Terminos de Gemma | Hugging Face |
 
 La comparacion no es homogenea: este adaptador no es un modelo autonomo, sino un artefacto de analisis que se anade a gemma-2-2b y usa la atencion y los embeddings de gemma-2-2b-it. No se dispone de comparaciones publicadas frente a alternativas equivalentes de tipo sparse autoencoder o transcoder de otros autores en las mismas metricas, por lo que no es posible establecer una comparativa de rendimiento cuantitativa con la informacion disponible.
 
@@ -114,7 +114,7 @@ La comparacion no es homogenea: este adaptador no es un modelo autonomo, sino un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddharthmb/2026.TA.l1c_headline_2026-10_o_bridge0_tc8192_decb_l1w0.001_fp32_tarbb_lb0_ln1_sl17827426
+- Modelo en Hugging Face: https://huggingface.co/siddharthmb/2026.TA.l1c_headline_2026-10_o_bridge0_tc8192_decb_l1w0.001_fp32_tarbb_lb0_ln1_sl17827426
 - Modelo base: https://huggingface.co/google/gemma-2-2b
 - Modelo de referencia y tokenizer: https://huggingface.co/google/gemma-2-2b-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/siddharthmb/2026.transcoder-adapters.lmsys-chat-1m-splits

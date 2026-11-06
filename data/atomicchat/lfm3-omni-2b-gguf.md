@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-Omni-2B-GGUF es una colección de cuantizaciones GGUF dinámicas (Atomic-Dynamic, AD) del modelo multimodal LiquidAI/LFM3-Omni-2B, publicada por AtomicChat en HuggingFace. El modelo base, desarrollado por LiquidAI, es un modelo "any-to-any" de aproximadamente 1,73 mil millones de parámetros capaz de aceptar texto, imagen y audio como entrada y generar tanto texto como audio de salida (incluida síntesis de voz). Esto lo convierte en uno de los pocos modelos pequeños open-weight que cubren ASR, visión y TTS en un único modelo.
+LFM3-Omni-2B-GGUF es una colección de cuantizaciones GGUF dinámicas (Atomic-Dynamic, AD) del modelo multimodal LiquidAI/LFM3-Omni-2B, publicada por AtomicChat en Hugging Face. El modelo base, desarrollado por LiquidAI, es un modelo "any-to-any" de aproximadamente 1,73 mil millones de parámetros capaz de aceptar texto, imagen y audio como entrada y generar tanto texto como audio de salida (incluida síntesis de voz). Esto lo convierte en uno de los pocos modelos pequeños open-weight que cubren ASR, visión y TTS en un único modelo.
 
 La relevancia de esta ficha radica en el formato: las cuantizaciones GGUF permiten ejecutar el modelo localmente en llama.cpp, gracias al soporte de LFM3-Omni/audio fusionado en el PR #31257. Con cuantizaciones que van desde Q8_0 (1,85 GB) hasta IQ3_XXS (0,81 GB), el modelo cabe en prácticamente cualquier GPU de consumo e incluso en CPU, lo que habilita casos de uso offline como transcripción de voz, descripción de imágenes y generación de voz en dispositivos modestos.
 

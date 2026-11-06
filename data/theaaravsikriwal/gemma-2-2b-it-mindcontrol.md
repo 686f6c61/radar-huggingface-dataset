@@ -84,7 +84,7 @@ Frente a las cuantizaciones estándar de la comunidad (por ejemplo, GGUF en 4 bi
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/TheAaravSikriwal/gemma-2-2b-it-mindcontrol
+- Hugging Face del modelo: https://huggingface.co/TheAaravSikriwal/gemma-2-2b-it-mindcontrol
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it
 - Repositorio del motor mindcontrol: https://github.com/TheAaravSikriwal/mindcontrol
 - Demo del motor: https://wearechintu.com/mindcontrol

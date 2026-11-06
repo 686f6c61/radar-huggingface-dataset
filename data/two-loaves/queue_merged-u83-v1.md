@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`two-loaves/queue_merged-u83-v1` es un modelo de lenguaje de 35.107 millones de parámetros desarrollado por el usuario `two-loaves` y publicado en HuggingFace con acceso restringido (gated). Se trata de un merge o fine-tune del modelo base `marsplan0624/affine-5gedzafcvg-queen`, que por sus etiquetas (`qwen3_5_moe`, `image-text-to-text`, `reason-v3`, `online-dpo`) parece ser un modelo de arquitectura MoE basado en la familia Qwen 3.5, con capacidades multimodales (imagen y texto) y entrenamiento mediante DPO online y razonamiento.
+`two-loaves/queue_merged-u83-v1` es un modelo de lenguaje de 35.107 millones de parámetros desarrollado por el usuario `two-loaves` y publicado en Hugging Face con acceso restringido (gated). Se trata de un merge o fine-tune del modelo base `marsplan0624/affine-5gedzafcvg-queen`, que por sus etiquetas (`qwen3_5_moe`, `image-text-to-text`, `reason-v3`, `online-dpo`) parece ser un modelo de arquitectura MoE basado en la familia Qwen 3.5, con capacidades multimodales (imagen y texto) y entrenamiento mediante DPO online y razonamiento.
 
 El modelo está orientado a generación de texto conversacional y procesamiento de entradas visuales, aunque no se dispone de documentación pública detallada sobre su arquitectura interna, datos de entrenamiento o rendimiento. Su relevancia radica en ser un ejemplo reciente de modelos MoE de gran tamaño con fine-tuning específico, pero la falta de información pública limita su evaluación objetiva.
 
@@ -62,7 +62,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que se requiere aceptar condiciones en HuggingFace antes de descargarlo.
+- Acceso restringido: el modelo es gated, por lo que se requiere aceptar condiciones en Hugging Face antes de descargarlo.
 - Licencia no especificada: no se conoce si permite uso comercial o tiene restricciones.
 - Sin documentación técnica: no hay papers, blogs ni guías oficiales que describan el entrenamiento, los datos o las limitaciones.
 - Riesgo de alucinación y sesgos: al no haber evaluación pública, no se puede garantizar la fiabilidad de las respuestas, especialmente en dominios sensibles.
@@ -71,6 +71,6 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/two-loaves/queue_merged-u83-v1
+- Modelo en Hugging Face: https://huggingface.co/two-loaves/queue_merged-u83-v1
 - Modelo base: https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen
 - No se han encontrado papers, repositorios de código ni demos adicionales.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-gpt-news-classifier es un repositorio de HuggingFace publicado por el usuario sibasispradhan bajo el identificador `sibasispradhan/gpt-news-classifier`. El nombre sugiere un clasificador de noticias, presumiblemente construido sobre una arquitectura de tipo GPT o derivada de la familia transformers, pero la model card asociada es la plantilla automática de HuggingFace y no contiene ninguna descripción funcional: todos los campos relevantes aparecen como `[More Information Needed]`.
+gpt-news-classifier es un repositorio de Hugging Face publicado por el usuario sibasispradhan bajo el identificador `sibasispradhan/gpt-news-classifier`. El nombre sugiere un clasificador de noticias, presumiblemente construido sobre una arquitectura de tipo GPT o derivada de la familia transformers, pero la model card asociada es la plantilla automática de Hugging Face y no contiene ninguna descripción funcional: todos los campos relevantes aparecen como `[More Information Needed]`.
 
-Los únicos metadatos verificables del repositorio son la librería declarada (transformers), las etiquetas `transformers`, `arxiv:1910.09700`, `endpoints_compatible` y `region:us`, cero descargas y cero likes, y unas marcas temporales de creación y actualización del 27 de septiembre de 2026. La etiqueta `arxiv:1910.09700` no corresponde a un artículo sobre el modelo: es la referencia al calculador de impacto de carbono de Lacoste et al. (2019) que la propia plantilla de HuggingFace incluye en la sección de impacto medioambiental.
+Los únicos metadatos verificables del repositorio son la librería declarada (transformers), las etiquetas `transformers`, `arxiv:1910.09700`, `endpoints_compatible` y `region:us`, cero descargas y cero likes, y unas marcas temporales de creación y actualización del 27 de septiembre de 2026. La etiqueta `arxiv:1910.09700` no corresponde a un artículo sobre el modelo: es la referencia al calculador de impacto de carbono de Lacoste et al. (2019) que la propia plantilla de Hugging Face incluye en la sección de impacto medioambiental.
 
 En consecuencia, no es posible confirmar arquitectura, número de parámetros, longitud de contexto, idiomas, licencia ni datos de entrenamiento. Esta ficha se limita a documentar lo que consta y a marcar explícitamente como "no disponible" todo lo demás; cualquier uso en producción debería ir precedido de una inspección directa de los archivos del repositorio y de una evaluación propia.
 
@@ -32,7 +32,7 @@ En consecuencia, no es posible confirmar arquitectura, número de parámetros, l
 
 No disponible. La model card no especifica tipo de arquitectura (transformer encoder, decoder, MoE, SSM o hibrida), numero de capas, dimension oculta, mecanismo de atencion ni funcion objetivo. Tampoco se indica si el modelo parte de un checkpoint preentrenado de terceros o si se ha entrenado desde cero.
 
-No hay informacion sobre el corpus de entrenamiento (numero de tokens, composicion, idioma, dominio periodistico o fuentes), ni sobre el procedimiento de ajuste (fine-tuning supervisado, RLHF, DPO, instrucciones). El unico dato tecnico indirecto es la etiqueta `endpoints_compatible`, que indica que el repositorio puede desplegarse mediante los Inference Endpoints de HuggingFace, presumiblemente como tarea de clasificacion de texto, aunque la pipeline no esta declarada en los metadatos.
+No hay informacion sobre el corpus de entrenamiento (numero de tokens, composicion, idioma, dominio periodistico o fuentes), ni sobre el procedimiento de ajuste (fine-tuning supervisado, RLHF, DPO, instrucciones). El unico dato tecnico indirecto es la etiqueta `endpoints_compatible`, que indica que el repositorio puede desplegarse mediante los Inference Endpoints de Hugging Face, presumiblemente como tarea de clasificacion de texto, aunque la pipeline no esta declarada en los metadatos.
 
 ## Capacidades
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: no disponible. Sin conocer el numero de parametros ni la precision de los pesos no es posible estimar el consumo de memoria.
 - GPU recomendadas: no disponible por la misma razon.
 - Viabilidad en GPU de consumo: no determinable. Un clasificador de tipo encoder de menos de 500 millones de parametros cabria en GPUs de gama media (por ejemplo, RTX 3060 de 12 GB) en fp16 o int8, pero esto es una referencia generica y no un dato confirmado para este repositorio.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. Tambien serian aplicables, en principio, `transformers` con `pipeline`, ONNX Runtime o un servidor Triton si se exportan los pesos. El despliegue con llama.cpp, Ollama o vLLM requeriria pesos GGUF o compatibilidad explicita que no consta en el repositorio.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. Tambien serian aplicables, en principio, `transformers` con `pipeline`, ONNX Runtime o un servidor Triton si se exportan los pesos. El despliegue con llama.cpp, Ollama o vLLM requeriria pesos GGUF o compatibilidad explicita que no consta en el repositorio.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ No disponible. Al no conocerse la tarea exacta, el numero de parametros ni la li
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sibasispradhan/gpt-news-classifier
+- Modelo en Hugging Face: https://huggingface.co/sibasispradhan/gpt-news-classifier
 - Articulo referenciado por la etiqueta arxiv:1910.09700 (calculador de impacto de carbono, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculador de impacto medioambiental de aprendizaje automatico citado en la plantilla: https://mlco2.github.io/impact#compute
 - Repositorio de codigo: no disponible

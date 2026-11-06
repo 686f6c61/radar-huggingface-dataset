@@ -6,7 +6,7 @@
 
 La arquitectura subyacente es RoBERTa base, un transformer encoder con tarea de clasificacion de secuencias. El modelo resultante ocupa 126 MB y pesa aproximadamente ocho veces menos que la version original en fp32, lo que lo hace apto para entornos sin GPU, incluido el navegador con aceleracion WASM. Esta orientado a inferencia local y privada: segun el repositorio Telaah-AI, ningun dato sale del cliente.
 
-Su relevancia actual radica en dos factores. Primero, demuestra que un clasificador de sentimiento en un idioma de recursos medios (indonesio) puede desplegarse en el navegador con una perdida de precision nula respecto al modelo original (incluso una ligera mejora en la evaluacion realizada). Segundo, ilustra un flujo de trabajo reproducible: modelo PyTorch en HuggingFace, conversion con Optimum a ONNX, cuantizacion dinamica int8 y publicacion para Transformers.js. La model card advierte de un detalle critico: el modelo no utiliza tokens especiales (`<s>` / `</s>`), por lo que la tokenizacion debe invocarse con `add_special_tokens: false`.
+Su relevancia actual radica en dos factores. Primero, demuestra que un clasificador de sentimiento en un idioma de recursos medios (indonesio) puede desplegarse en el navegador con una perdida de precision nula respecto al modelo original (incluso una ligera mejora en la evaluacion realizada). Segundo, ilustra un flujo de trabajo reproducible: modelo PyTorch en Hugging Face, conversion con Optimum a ONNX, cuantizacion dinamica int8 y publicacion para Transformers.js. La model card advierte de un detalle critico: el modelo no utiliza tokens especiales (`<s>` / `</s>`), por lo que la tokenizacion debe invocarse con `add_special_tokens: false`.
 
 ## Especificaciones tecnicas
 
@@ -79,9 +79,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 
 | Modelo | Arquitectura | Parametros | Contexto | Precision (SmSA) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| izzanfr/telaah-indonesian-sentiment-onnx | RoBERTa base, ONNX int8 | No disponible (~125 M estimados) | 512 tokens (uso recomendado: 510) | 93,4% / Macro-F1 91,2 | MIT | HuggingFace, orientado a Transformers.js |
-| w11wo/indonesian-roberta-base-sentiment-classifier | RoBERTa base, PyTorch fp32 | No disponible | 512 tokens | 93,2% / Macro-F1 91,0 | MIT | HuggingFace |
-| taufiqdp/indonesian-sentiment | No disponible | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| izzanfr/telaah-indonesian-sentiment-onnx | RoBERTa base, ONNX int8 | No disponible (~125 M estimados) | 512 tokens (uso recomendado: 510) | 93,4% / Macro-F1 91,2 | MIT | Hugging Face, orientado a Transformers.js |
+| w11wo/indonesian-roberta-base-sentiment-classifier | RoBERTa base, PyTorch fp32 | No disponible | 512 tokens | 93,2% / Macro-F1 91,0 | MIT | Hugging Face |
+| taufiqdp/indonesian-sentiment | No disponible | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 Las tres opciones resuelven la misma tarea (analisis de sentimiento en indonesio). La diferencia principal de la version de izzanfr es el formato: al estar en ONNX int8, se puede ejecutar en el navegador y en entornos sin GPU, con una precision practicamente identica a la del modelo original en PyTorch. Los datos de `taufiqdp/indonesian-sentiment` no estaban disponibles en la informacion proporcionada.
 
@@ -100,7 +100,7 @@ Las tres opciones resuelven la misma tarea (analisis de sentimiento en indonesio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/izzanfr/telaah-indonesian-sentiment-onnx
+- Modelo en Hugging Face: https://huggingface.co/izzanfr/telaah-indonesian-sentiment-onnx
 - Modelo base: https://huggingface.co/w11wo/indonesian-roberta-base-sentiment-classifier
 - Repositorio de la aplicacion Telaah AI: https://github.com/izzanfr/Telaah-AI
 - Documentacion de Transformers.js: https://huggingface.co/docs/transformers.js

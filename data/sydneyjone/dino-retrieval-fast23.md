@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Dino-retrieval-fast23 es un repositorio experimental publicado por el usuario sydneyjone en HuggingFace que contiene una implementación funcional de un modelo Dino orientado a tareas de retrieval (recuperación de información multimodal). Se trata de una configuración deliberadamente "tiny" (diminuta), con un checkpoint de inicialización de tan solo 49.600 parámetros, pensada como punto de partida reproducible para pruebas de humo (smoke tests) y no como un modelo entrenado para producción.
+Dino-retrieval-fast23 es un repositorio experimental publicado por el usuario sydneyjone en Hugging Face que contiene una implementación funcional de un modelo Dino orientado a tareas de retrieval (recuperación de información multimodal). Se trata de una configuración deliberadamente "tiny" (diminuta), con un checkpoint de inicialización de tan solo 49.600 parámetros, pensada como punto de partida reproducible para pruebas de humo (smoke tests) y no como un modelo entrenado para producción.
 
 El repositorio prioriza la transparencia del código y la repetibilidad de las pruebas frente a las afirmaciones de rendimiento: el autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas, no un modelo entrenado. La arquitectura declarada emplea atención flash, fusión con compuertas (gated fusion), activación swish y normalización layernorm, con un recetario de entrenamiento por defecto basado en el optimizador lion y un schedule de tipo step.
 
-Su relevancia es limitada y de carácter didáctico: sirve como esqueleto reproducible para experimentar con arquitecturas Dino aplicadas a retrieval, pero no debe confundirse con un modelo listo para uso real. No hay información sobre idiomas soportados, pipeline de HuggingFace ni datos de entrenamiento, y el tamaño del repositorio es de 0.0 GB.
+Su relevancia es limitada y de carácter didáctico: sirve como esqueleto reproducible para experimentar con arquitecturas Dino aplicadas a retrieval, pero no debe confundirse con un modelo listo para uso real. No hay información sobre idiomas soportados, pipeline de Hugging Face ni datos de entrenamiento, y el tamaño del repositorio es de 0.0 GB.
 
 ## Especificaciones técnicas
 
@@ -70,9 +70,9 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 - La licencia es MIT, lo que permite uso comercial del código, pero el autor advierte de revisar por separado los términos de las fuentes de datos externas que se utilicen con el repositorio.
 - Al ser una implementación propia, no es compatible directamente con APIs genéricas de carga automática sin un adaptador explícito.
 - El tamaño del repositorio es de 0.0 GB y el modelo tiene 49.600 parámetros, por lo que no es adecuado para tareas de producción reales.
-- No se documentan los idiomas soportados ni el pipeline de HuggingFace.
+- No se documentan los idiomas soportados ni el pipeline de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sydneyjone/dino-retrieval-fast23
+- Repositorio en Hugging Face: https://huggingface.co/sydneyjone/dino-retrieval-fast23
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

@@ -59,7 +59,7 @@ No disponible. No se conocen modelos comparables dentro de esta misma categoría
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/vermaishaan/recsys-practice
+- Repositorio de Hugging Face: https://huggingface.co/vermaishaan/recsys-practice
 - Referencia a NVIDIA RecSys Examples (no es del modelo, pero se encontró en la búsqueda): https://github.com/NVIDIA/recsys-examples
 - Artículo sobre benchmarking en RecSys: https://arxiv.org/html/2402.09766v2
 - Blog de NVIDIA sobre RecSys generativos: https://developer.nvidia.com/blog/how-generative-recommenders-are-redefining-recsys-at-scale/

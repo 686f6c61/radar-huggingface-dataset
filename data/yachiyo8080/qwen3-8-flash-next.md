@@ -18,7 +18,7 @@ Su relevancia actual radica en las innovaciones que introduce: Qwen Sparse Atten
 | Longitud de contexto | 262.144 tokens nativo; extensible hasta 1.000.000 |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (compatible con Transformers, vLLM, SGLang, TokenSpeed) |
 
 ## Arquitectura y entrenamiento
@@ -69,7 +69,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next | 179.999.981.459 (125B LM + 51B n-gram + 4B MTP) | 6B (LM) | 262.144 nativo, hasta 1.000.000 | qwen-community-1.0 | Pesos abiertos en HuggingFace |
+| Qwen3.8-Flash-Next | 179.999.981.459 (125B LM + 51B n-gram + 4B MTP) | 6B (LM) | 262.144 nativo, hasta 1.000.000 | qwen-community-1.0 | Pesos abiertos en Hugging Face |
 | Qwen3.8-Flash (oficial, Qwen Cloud) | no disponible | no disponible | 1.000.000 por defecto | no disponible | API gestionada |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yachiyo8080/Qwen3.8-Flash-Next
+- Modelo en Hugging Face: https://huggingface.co/yachiyo8080/Qwen3.8-Flash-Next
 - Blog oficial: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Informe técnico: https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf
 - Repositorio GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next

@@ -23,7 +23,7 @@ Su interés actual reside en que documenta una cadena completa de post-entrenami
 | Modelo base | Qwen/Qwen2.5-3B-Instruct |
 | Tamaño del repositorio | 6,2 GB |
 | Descargas / likes | 241 descargas, 0 likes |
-| Fecha de creación | 20 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de creación | 20 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -81,10 +81,10 @@ Comparativa dentro de la propia linaje, con los datos publicados en la model car
 
 | Modelo | Parámetros | Contexto | Persona (juez) | Precisión MATH 1-3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sherlock-qwen2.5-3b-dpo-v1 | 3,09 B | No disponible | 7,28 | 60% | No disponible | HuggingFace, safetensors |
-| sherlock-qwen2.5-3b-sft-v1 | No disponible | No disponible | 5,27 | 59% | No disponible | HuggingFace, safetensors |
+| sherlock-qwen2.5-3b-dpo-v1 | 3,09 B | No disponible | 7,28 | 60% | No disponible | Hugging Face, safetensors |
+| sherlock-qwen2.5-3b-sft-v1 | No disponible | No disponible | 5,27 | 59% | No disponible | Hugging Face, safetensors |
 | GRPO, 60 pasos (variante) | No disponible | No disponible | 5,80 | 56% | No disponible | No disponible como checkpoint independiente en la información proporcionada |
-| Qwen2.5-3B-Instruct (base) | 3,09 B (heredado) | No disponible en la información proporcionada | No medida | 80% | No disponible en la información proporcionada | HuggingFace |
+| Qwen2.5-3B-Instruct (base) | 3,09 B (heredado) | No disponible en la información proporcionada | No medida | 80% | No disponible en la información proporcionada | Hugging Face |
 
 Como alternativas externas de tamaño similar podrían considerarse Llama-3.2-3B-Instruct, Gemma-2-2B-it o Phi-3.5-mini, pero no se dispone de datos verificados de esos modelos en la información proporcionada, por lo que no se incluyen cifras.
 
@@ -103,7 +103,7 @@ Como alternativas externas de tamaño similar podrían considerarse Llama-3.2-3B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andreayhchen/sherlock-qwen2.5-3b-dpo-v1
+- Modelo en Hugging Face: https://huggingface.co/andreayhchen/sherlock-qwen2.5-3b-dpo-v1
 - Código del trabajo: https://github.com/andreach3n/cs2881r-assignment1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Etapa SFT previa: https://huggingface.co/andreayhchen/sherlock-qwen2.5-3b-sft-v1

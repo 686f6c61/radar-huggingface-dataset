@@ -6,7 +6,7 @@
 
 El modelo resuelve el problema de transcribir audio a texto sin depender de servicios en la nube, con soporte para chino, inglés, cantonés, japonés y coreano, detección automática de idioma y etiquetado adicional de emoción y eventos de audio. Su arquitectura es un encoder no autorregresivo con decodificación CTC, lo que implica una sola pasada por utterance y un coste que crece linealmente con la duración del audio, sin bucle de decodificador.
 
-Es relevante para desarrolladores de aplicaciones Unity que necesitan ASR local con latencia controlada y sin fuga de audio a servidores externos: el paquete incluye gestión de frame rate en GPUs móviles, APIs de transcripción parcial en streaming y cancelación de inferencias. El repositorio es pequeño (0,5 GB) y tiene un uso muy bajo en HuggingFace (9 descargas, 0 likes en el momento de la consulta), por lo que debe evaluarse con cautela en producción.
+Es relevante para desarrolladores de aplicaciones Unity que necesitan ASR local con latencia controlada y sin fuga de audio a servidores externos: el paquete incluye gestión de frame rate en GPUs móviles, APIs de transcripción parcial en streaming y cancelación de inferencias. El repositorio es pequeño (0,5 GB) y tiene un uso muy bajo en Hugging Face (9 descargas, 0 likes en el momento de la consulta), por lo que debe evaluarse con cautela en producción.
 
 ## Especificaciones técnicas
 
@@ -93,7 +93,7 @@ La comparación cuantitativa no es posible con los datos disponibles: no se han 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sky-Kim/com.sky.sentis.sensevoice
+- Repositorio Hugging Face: https://huggingface.co/Sky-Kim/com.sky.sentis.sensevoice
 - Modelo base: https://huggingface.co/FunAudioLLM/SenseVoiceSmall
 - Licencia del modelo (FunASR Model License): https://github.com/modelscope/FunASR/blob/main/MODEL_LICENSE
 - Repositorio FunASR: https://github.com/modelscope/FunASR

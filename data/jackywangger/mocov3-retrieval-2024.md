@@ -91,6 +91,6 @@ No se dispone de datos cuantitativos de los modelos comparados dentro de la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jackywangger/mocov3-retrieval-2024
+- Repositorio en Hugging Face: https://huggingface.co/jackywangger/mocov3-retrieval-2024
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`NorviTech/armiger-dht-db-sync` no es un modelo de inteligencia artificial, sino un plugin o librería de software publicado en HuggingFace bajo la etiqueta `pipeline_tag: other`. Lo desarrolla NorviTech y su función es actuar como motor de sincronización de bases de datos descentralizadas sobre DHT, implementando los estándares BEP-44 (punteros mutables) y BEP-46 (punteros por infohash) del ecosistema BitTorrent. Está diseñado como complemento de los modelos `NorviTech/armiger-ultra` y `NorviTech/armiger` (variante CPU), y como backend para indexadores descentralizados como Bitmagnet y flotas de bibliotecas autoalojadas.
+`NorviTech/armiger-dht-db-sync` no es un modelo de inteligencia artificial, sino un plugin o librería de software publicado en Hugging Face bajo la etiqueta `pipeline_tag: other`. Lo desarrolla NorviTech y su función es actuar como motor de sincronización de bases de datos descentralizadas sobre DHT, implementando los estándares BEP-44 (punteros mutables) y BEP-46 (punteros por infohash) del ecosistema BitTorrent. Está diseñado como complemento de los modelos `NorviTech/armiger-ultra` y `NorviTech/armiger` (variante CPU), y como backend para indexadores descentralizados como Bitmagnet y flotas de bibliotecas autoalojadas.
 
 El componente resuelve un problema concreto de ingeniería: distribuir catálogos de metadatos entre nodos no confiables sin filtrar contenido ilegal, sin exponer datos personales y sin permitir ataques Sybil. Para ello combina un filtro previo a la ingesta orientado a bloquear material de abuso sexual infantil (CSAM/CSAE), un motor de revocación basado en tombstones firmados con Ed25519 sobre SHA-256 cegado, cifrado AEAD X25519 + ChaCha20-Poly1305 con HKDF-SHA256 y verificación de quórum K-de-N sobre ASN distintos.
 
@@ -97,7 +97,7 @@ No disponible. No se han identificado en la información proporcionada component
 
 ## Enlaces
 
-- Página en HuggingFace: https://huggingface.co/NorviTech/armiger-dht-db-sync
+- Página en Hugging Face: https://huggingface.co/NorviTech/armiger-dht-db-sync
 - Modelo complementario (variante principal): https://huggingface.co/NorviTech/armiger-ultra
 - Modelo complementario (variante CPU): https://huggingface.co/NorviTech/armiger
 - Paper, blog, repositorio y demo: no disponibles en la información proporcionada.

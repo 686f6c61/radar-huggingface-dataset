@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible de forma exacta; para un modelo de 1,73B parámetros, las cuantizaciones GGUF típicas de 4 bits ocuparían aproximadamente 1-1,5 GB, y las de 8 bits alrededor de 2 GB, sin contar la caché KV. Con contexto de 512K tokens, la memoria para la caché KV crece de forma significativa y puede superar la de los propios pesos.
 - GPU recomendadas: no especificadas por el autor. Por tamaño, el modelo cabe en GPUs consumer como RTX 3060, RTX 4060 o superiores en cuantizaciones bajas; para contexto completo de 512K se requiere hardware con memoria abundante (A100 80GB, H100) o técnicas de atención eficiente.
 - Cabe en GPU consumer: sí, en cuantizaciones de 4-8 bits y contextos moderados; el contexto completo de 512K es inviable en GPUs consumer convencionales.
-- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace. vLLM y TGI no están confirmados para este formato.
+- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face. vLLM y TGI no están confirmados para este formato.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mohommed/LucetV2-2B-Frontier-GGUF
+- Hugging Face: https://huggingface.co/mohommed/LucetV2-2B-Frontier-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Repositorio GGUF alternativo citado en la model card: https://huggingface.co/mohommed/Lucet-2B-Frontier-GGUF
 - Paper o blog de la arquitectura Tri-Hybrid de Liquid AI: no disponible en la información proporcionada

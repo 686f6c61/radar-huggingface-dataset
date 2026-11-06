@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sstoica12/acquisition_student_AS_confidence_wildguardmix__5000_checkpoint_200` es un checkpoint de 8.030.261.248 parametros (unos 8,03 mil millones) publicado en HuggingFace por el usuario `sstoica12`. Por la etiqueta `llama` del Hub, el prefijo `transformers` y el tamano del repositorio (16,1 GB, compatible con pesos en bf16/fp16), se trata casi con seguridad de un modelo decoder-only de la familia Llama de ~8B, pero la model card es la plantilla autogenerada por HuggingFace y no confirma arquitectura, entrenamiento ni procedencia.
+`sstoica12/acquisition_student_AS_confidence_wildguardmix__5000_checkpoint_200` es un checkpoint de 8.030.261.248 parametros (unos 8,03 mil millones) publicado en Hugging Face por el usuario `sstoica12`. Por la etiqueta `llama` del Hub, el prefijo `transformers` y el tamano del repositorio (16,1 GB, compatible con pesos en bf16/fp16), se trata casi con seguridad de un modelo decoder-only de la familia Llama de ~8B, pero la model card es la plantilla autogenerada por Hugging Face y no confirma arquitectura, entrenamiento ni procedencia.
 
 El nombre del repositorio sugiere un experimento de destilacion o seleccion de datos: "acquisition_student" apunta a un modelo alumno dentro de un pipeline de adquisicion de datos, "AS_confidence" a algun criterio de confianza, y "wildguardmix" a WildGuardMix, el conjunto de datos de moderacion de seguridad de Allen AI; "5000" y "checkpoint_200" indican un punto de control intermedio de una tirada de entrenamiento mas larga. Nada de esto esta documentado por el autor, por lo que debe tratarse como interpretacion del identificador, no como dato verificado.
 
@@ -86,7 +86,7 @@ La comparacion se hace por clase de tamano (~7-8B), dado que no se dispone de ni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sstoica12/acquisition_student_AS_confidence_wildguardmix__5000_checkpoint_200
+- Repositorio en Hugging Face: https://huggingface.co/sstoica12/acquisition_student_AS_confidence_wildguardmix__5000_checkpoint_200
 - Paper citado en la plantilla (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact#compute
 - Paper, blog, repositorio de codigo y demo del modelo: no disponibles.

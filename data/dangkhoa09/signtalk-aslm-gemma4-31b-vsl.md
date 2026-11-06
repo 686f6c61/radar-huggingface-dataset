@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SignTalk-ASLM (este modelo) | 31B (base) + adaptador DoRA | 2048 | Texto a glosas VSL | Apache 2.0 | HuggingFace |
-| Gemma 4 31B (base) | 31B | no disponible | Texto general | no disponible en esta ficha | HuggingFace / Google |
+| SignTalk-ASLM (este modelo) | 31B (base) + adaptador DoRA | 2048 | Texto a glosas VSL | Apache 2.0 | Hugging Face |
+| Gemma 4 31B (base) | 31B | no disponible | Texto general | no disponible en esta ficha | Hugging Face / Google |
 | Otros modelos texto-glosa VSL | no disponible | no disponible | Traduccion a glosas | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables especificos de traduccion texto-glosa para lengua de signos vietnamita, ni de resultados de rendimiento que permitan una comparacion cuantitativa.
@@ -83,6 +83,6 @@ No se dispone de informacion sobre modelos comparables especificos de traduccion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DangKhoa09/SignTalk-ASLM-Gemma4-31B-VSL
-- Model card del autor: incluida en la pagina de HuggingFace anterior
+- Hugging Face: https://huggingface.co/DangKhoa09/SignTalk-ASLM-Gemma4-31B-VSL
+- Model card del autor: incluida en la pagina de Hugging Face anterior
 - Paper, blog, repositorio o demo: no disponibles en la informacion proporcionada

@@ -30,7 +30,7 @@ El modelo parte de `openai/whisper-base` y se ajusta mediante fine-tuning sobre 
 - Extracción de embeddings acústicos (el wrapper permite `return_feature=True` para obtener representaciones intermedias).
 - No soporta generación de texto, tool calling, razonamiento multi-paso ni capacidades de agente.
 - No es un modelo de lenguaje; su salida es una distribución de probabilidad sobre las tres clases.
-- La etiqueta "multilingual" en HuggingFace se refiere a la naturaleza del dataset original de Whisper, pero el modelo no procesa texto ni idiomas.
+- La etiqueta "multilingual" en Hugging Face se refiere a la naturaleza del dataset original de Whisper, pero el modelo no procesa texto ni idiomas.
 
 ## Casos de uso
 

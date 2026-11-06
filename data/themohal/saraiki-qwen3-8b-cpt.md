@@ -65,7 +65,7 @@ No hay modelos comparables especificos para el idioma Saraiki en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/themohal/saraiki-qwen3-8b-cpt
+- Modelo en Hugging Face: https://huggingface.co/themohal/saraiki-qwen3-8b-cpt
 - Dataset de entrenamiento: https://huggingface.co/datasets/themohal/saraiki-llm-dataset
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Etapa 2 (SFT): https://huggingface.co/themohal/saraiki-qwen-8b-sft

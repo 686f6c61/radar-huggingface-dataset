@@ -62,8 +62,8 @@ La model card incluye una imagen de benchmark (`assets/Qwen-Image-2.1-Benchmark.
 
 | Modelo | Parametros | Contexto | Licencia | Formatos | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-Uncensored-Quantized | 7,1 B (difusion) | no disponible | qwen-research | GGUF, safetensors, MLX | HuggingFace (0 descargas) |
-| Qwen/Qwen-Image-2.1 (base) | 7,1 B (difusion) | no disponible | qwen-research | safetensors | HuggingFace (oficial) |
+| Qwen-Image-2.1-Uncensored-Quantized | 7,1 B (difusion) | no disponible | qwen-research | GGUF, safetensors, MLX | Hugging Face (0 descargas) |
+| Qwen/Qwen-Image-2.1 (base) | 7,1 B (difusion) | no disponible | qwen-research | safetensors | Hugging Face (oficial) |
 | Otros modelos text-to-image de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa con alternativas de la misma categoría no está disponible en la información proporcionada. El único punto de referencia documentado es el modelo base Qwen/Qwen-Image-2.1, del que esta publicación es una redistribución cuantizada.
@@ -81,7 +81,7 @@ La comparativa con alternativas de la misma categoría no está disponible en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/No752/Qwen-Image-2.1-Uncensored-Quantized
+- Repositorio Hugging Face: https://huggingface.co/No752/Qwen-Image-2.1-Uncensored-Quantized
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI-GGUF (fork de leejet): https://github.com/leejet/ComfyUI-GGUF

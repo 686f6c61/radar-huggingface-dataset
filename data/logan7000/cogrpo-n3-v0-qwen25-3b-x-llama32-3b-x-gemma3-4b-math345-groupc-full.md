@@ -74,7 +74,7 @@ No se dispone de benchmarks para comparar rendimiento. La informacion de licenci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logan7000/cogrpo-n3-v0-qwen25-3b-x-llama32-3b-x-gemma3-4b-math345-groupC-full
+- Repositorio Hugging Face: https://huggingface.co/logan7000/cogrpo-n3-v0-qwen25-3b-x-llama32-3b-x-gemma3-4b-math345-groupC-full
 - Repositorio hermano con Qwen3-1.7B (best): https://huggingface.co/logan7000/cogrpo-n3-union-qwen25-3b-x-llama32-3b-x-qwen3-1p7b-math345-groupC-qwen3-best
 - Repositorio con Phi-4-mini (agente B): https://huggingface.co/q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupB-llama32-end
 - Gemma-3-4B en Ollama: https://ollama.com/library/gemma3:4b

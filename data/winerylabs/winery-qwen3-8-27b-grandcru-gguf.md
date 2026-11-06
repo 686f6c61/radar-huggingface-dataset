@@ -71,7 +71,7 @@ No se han publicado en la información disponible otros resultados de benchmarks
 
 | Modelo | Parametros | Contexto | MMLU | ARC-C | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Winery Qwen3.8-27B Grand Cru | ~26,9B | no disponible | 76.5 | 98.0 | 81.7 | Swift Open License 1.0 + Apache 2.0 | GGUF Q8_0 en HuggingFace |
+| Winery Qwen3.8-27B Grand Cru | ~26,9B | no disponible | 76.5 | 98.0 | 81.7 | Swift Open License 1.0 + Apache 2.0 | GGUF Q8_0 en Hugging Face |
 | Winery 9B Assemblage | 9B (no confirmado en la informacion) | no disponible | 73.0 | 97.3 | 88.3 | no disponible | no disponible |
 | Winery 9B Grand Cru | 9B (no confirmado en la informacion) | no disponible | 70.0 | 96.7 | 90.0 | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ Los dos modelos comparables son también de WineryLabs y aparecen únicamente en
 
 ## Enlaces
 
-- [HuggingFace: WineryLabs/Winery-Qwen3.8-27B-GrandCru-GGUF](https://huggingface.co/WineryLabs/Winery-Qwen3.8-27B-GrandCru-GGUF)
+- [Hugging Face: WineryLabs/Winery-Qwen3.8-27B-GrandCru-GGUF](https://huggingface.co/WineryLabs/Winery-Qwen3.8-27B-GrandCru-GGUF)
 - [Organización WineryLabs](https://huggingface.co/WineryLabs)
 - [Qwen/Qwen3.8-27B (modelo base)](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [ukisai/Swift-1.5-Qwen3.8-27b](https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Reinforce-Pixelcopter-PLE-v0 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE para resolver el entorno Pixelcopter-PLE-v0, perteneciente a la familia PLE (PyGame Learning Environment). Lo publica el usuario shash0609 en HuggingFace como parte de los ejercicios de la Unidad 4 del Deep Reinforcement Learning Course. No se trata de un modelo de lenguaje ni de un transformer generativo, sino de una politica entrenada para maximizar la recompensa acumulada en una tarea de control con observaciones de pixeles.
+Reinforce-Pixelcopter-PLE-v0 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE para resolver el entorno Pixelcopter-PLE-v0, perteneciente a la familia PLE (PyGame Learning Environment). Lo publica el usuario shash0609 en Hugging Face como parte de los ejercicios de la Unidad 4 del Deep Reinforcement Learning Course. No se trata de un modelo de lenguaje ni de un transformer generativo, sino de una politica entrenada para maximizar la recompensa acumulada en una tarea de control con observaciones de pixeles.
 
-El problema que resuelve es acotado: controlar un helicoptero en un entorno 2D de scroll lateral, esquivando obstaculos. Su relevancia es fundamentalmente didactica y de investigacion: sirve como referencia reproducible de una implementacion propia de REINFORCE (etiqueta custom-implementation) dentro del ecosistema de HuggingFace, que permite almacenar y compartir agentes de RL con metadatos estandarizados mediante model-index.
+El problema que resuelve es acotado: controlar un helicoptero en un entorno 2D de scroll lateral, esquivando obstaculos. Su relevancia es fundamentalmente didactica y de investigacion: sirve como referencia reproducible de una implementacion propia de REINFORCE (etiqueta custom-implementation) dentro del ecosistema de Hugging Face, que permite almacenar y compartir agentes de RL con metadatos estandarizados mediante model-index.
 
 No hay informacion publica sobre la arquitectura exacta de la red de politica, el numero de parametros, el numero de episodios de entrenamiento ni la licencia de uso. El repositorio ocupa 0.0 GB segun los metadatos y no registra descargas ni valoraciones en el momento de la consulta.
 
@@ -40,7 +40,7 @@ El entorno Pixelcopter-PLE-v0 pertenece a PyGame Learning Environment y proporci
 
 - Control de politica en un entorno 2D concreto: genera acciones discretas para el entorno Pixelcopter-PLE-v0.
 - Aprendizaje por refuerzo de politica unica: no es un modelo generalista ni transferible a otras tareas sin reentrenamiento.
-- Reproduccion de un flujo de trabajo didactico: sirve como ejemplo de implementacion propia de REINFORCE publicada en HuggingFace Hub.
+- Reproduccion de un flujo de trabajo didactico: sirve como ejemplo de implementacion propia de REINFORCE publicada en Hugging Face Hub.
 - Integracion con el ecosistema de model-index: expone metricas de evaluacion en formato estructurado.
 - Soporte de tool calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -55,7 +55,7 @@ El entorno Pixelcopter-PLE-v0 pertenece a PyGame Learning Environment y proporci
 - Estudio de la varianza del gradiente de politica: la desviacion tipica elevada respecto a la media lo convierte en un caso ilustrativo para analizar la alta varianza de los estimadores Monte Carlo y evaluar tecnicas de reduccion como lineas base o recompensas normalizadas.
 - Prototipado rapido de bucles de entrenamiento en entornos ligeros: por tratarse de un entorno 2D de bajo coste computacional, es adecuado para probar infraestructura de entrenamiento distribuido, registro de metricas o integracion con herramientas de seguimiento de experimentos.
 - Demostraciones interactivas de agentes entrenados: el modelo puede cargarse para visualizar el comportamiento aprendido dentro del entorno Pixelcopter-PLE-v0 en charlas, clases o tutoriales sobre RL.
-- Pruebas de pipelines de publicacion de agentes en HuggingFace Hub: sirve como caso de prueba para flujos que empaquetan, etiquetan y publican agentes de RL con model-index y tags personalizados.
+- Pruebas de pipelines de publicacion de agentes en Hugging Face Hub: sirve como caso de prueba para flujos que empaquetan, etiquetan y publican agentes de RL con model-index y tags personalizados.
 
 ## Benchmarks y rendimiento
 
@@ -82,7 +82,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 
 | Modelo | Parametros | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reinforce-Pixelcopter-PLE-v0 | no disponible | Pixelcopter-PLE-v0 | 21.30 +/- 16.92 | no disponible | HuggingFace Hub |
+| Reinforce-Pixelcopter-PLE-v0 | no disponible | Pixelcopter-PLE-v0 | 21.30 +/- 16.92 | no disponible | Hugging Face Hub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,6 +98,6 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shash0609/Reinforce-Pixelcopter-PLE-v0
+- Repositorio en Hugging Face: https://huggingface.co/shash0609/Reinforce-Pixelcopter-PLE-v0
 - Unidad 4 del Deep Reinforcement Learning Course (referenciada en la model card): https://huggingface.co/deep-rl-course/unit4/introduction
 - Resultados de la busqueda web: sin enlaces relevantes para este modelo (los resultados obtenidos corresponden a servicios de mapas y no guardan relacion con el repositorio).

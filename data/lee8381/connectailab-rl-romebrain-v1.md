@@ -71,8 +71,8 @@ El autor indica que la evaluacion de operacion empresarial promedia solo dos mes
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-romebrain-v1 | 0,8B (base) + LoRA | no disponible | Decision con opciones cerradas via SFT + GRPO | Apache 2.0 | HuggingFace (adaptador PEFT) |
-| Qwen/Qwen3.5-0.8B | 0,8B | no disponible | LLM generalista | segun modelo base | HuggingFace |
+| connectailab-rl-romebrain-v1 | 0,8B (base) + LoRA | no disponible | Decision con opciones cerradas via SFT + GRPO | Apache 2.0 | Hugging Face (adaptador PEFT) |
+| Qwen/Qwen3.5-0.8B | 0,8B | no disponible | LLM generalista | segun modelo base | Hugging Face |
 | Politica PPO del simulador CONNECT TYCOON | no disponible | no disponible | RL clasico sobre entorno Gymnasium | no disponible | no disponible (referenciada como profesora) |
 
 No se dispone de datos publicados de otros adaptadores comparables de decision empresarial sobre Qwen3.5-0.8B en la informacion proporcionada.
@@ -91,7 +91,7 @@ No se dispone de datos publicados de otros adaptadores comparables de decision e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LEE8381/connectailab-rl-romebrain-v1
+- Hugging Face: https://huggingface.co/LEE8381/connectailab-rl-romebrain-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

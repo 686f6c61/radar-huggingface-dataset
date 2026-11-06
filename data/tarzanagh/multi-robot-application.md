@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Multi-Robot-application (identificador `tarzanagh/Multi-Robot-application`) no es un modelo de lenguaje, sino un paquete de investigacion reproducible para planificacion de movimiento multi-robot. El repositorio de HuggingFace reune el codigo, los pesos entrenados, los datos de entrenamiento y los resultados medidos de un estudio comparativo sobre las suites de referencia MMD y SMD. Los pesos publicados son redes de difusion iterativa (los ficheros `args.yaml` de cada modelo registran parametros como `unet_input_dim` y `n_diffusion_steps`), con copia de pesos EMA junto a cada `state_dict`.
+Multi-Robot-application (identificador `tarzanagh/Multi-Robot-application`) no es un modelo de lenguaje, sino un paquete de investigacion reproducible para planificacion de movimiento multi-robot. El repositorio de Hugging Face reune el codigo, los pesos entrenados, los datos de entrenamiento y los resultados medidos de un estudio comparativo sobre las suites de referencia MMD y SMD. Los pesos publicados son redes de difusion iterativa (los ficheros `args.yaml` de cada modelo registran parametros como `unet_input_dim` y `n_diffusion_steps`), con copia de pesos EMA junto a cada `state_dict`.
 
 El paquete se organiza en cinco directorios (`code/`, `models/`, `data/`, `results/` y `env/`) e incluye 86 modelos, cada uno con su `model_current_state_dict.pth`, su `ema_model_current_state_dict.pth` y su `args.yaml` para reconstruir la forma de la red. El estudio compara los metodos SMD, MMD, MPD, DM, EECBS, PCD, DiRecT y MDOC contra un planificador certificado propio del autor.
 
@@ -91,7 +91,7 @@ No se conocen modelos comparables fuera de este conjunto con datos verificables 
 - No es un modelo de lenguaje: no genera texto, no soporta tool calling, agentes, dialogo ni capacidades multilingues. Cualquier evaluacion como LLM carece de sentido.
 - Ausencia total de datos de arquitectura: no se publican numero de parametros, forma de red, ni detalles del condicionamiento, lo que impide estimar coste de inferencia o comparar de forma cuantitativa.
 - Ausencia de resultados numericos: la model card remite a `results/` pero no incluye cifras, de modo que el rendimiento del metodo no puede citarse sin descargar y ejecutar el material.
-- Discrepancia de tamano: el campo de tamano del repositorio en HuggingFace indica 0,0 GB mientras la model card declara ~7 GB publicados. Conviene verificar el contenido real antes de planificar el almacenamiento.
+- Discrepancia de tamano: el campo de tamano del repositorio en Hugging Face indica 0,0 GB mientras la model card declara ~7 GB publicados. Conviene verificar el contenido real antes de planificar el almacenamiento.
 - Riesgo de compatibilidad de pesos: los ficheros publicados son `state_dict` de PyTorch en `.pth`. El propio autor advierte que los duplicados pickled completos son fragiles entre versiones de torch y Python; aun usando los `state_dict`, conviene fijar las versiones del entorno con `env/smd.yml`.
 - Perdida de estado del optimizador: el entrenador no escribe el estado de Adam, por lo que reanudar desde el `state_dict` publicado no recupera el estado del optimizador. El autor sostiene que esto equivale a lo que se perderia al reanudar desde un snapshot por epoca.
 - Materiales omitidos deliberadamente: no se incluyen 62 GB de snapshots por epoca, 18 GB de `models_retrained` ni 59 GB de entornos conda. No es posible ramificar el entrenamiento desde puntos anteriores sin regenerar esos artefactos.
@@ -101,5 +101,5 @@ No se conocen modelos comparables fuera de este conjunto con datos verificables 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tarzanagh/Multi-Robot-application
+- Hugging Face: https://huggingface.co/tarzanagh/Multi-Robot-application
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a un paper asociado ni a repositorios de codigo externos. Los resultados devueltos corresponden a sitios comerciales sin relacion con el proyecto, por lo que no se incluyen.

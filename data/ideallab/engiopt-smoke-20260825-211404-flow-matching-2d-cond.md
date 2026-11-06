@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/IDEALLab/engiopt-smoke-20260825-211404-flow-matching-2d-cond
+- Página del modelo en Hugging Face: https://huggingface.co/IDEALLab/engiopt-smoke-20260825-211404-flow-matching-2d-cond
 - Repositorio GitHub de EngiOpt: https://github.com/IDEALLab/EngiOpt
 - Repositorio del laboratorio IDEAL: https://github.com/IDEALLab
 - Checkpoint similar (CGAN 2D): https://huggingface.co/IDEALLab/engiopt-public-smoke-cgan-cnn-2d

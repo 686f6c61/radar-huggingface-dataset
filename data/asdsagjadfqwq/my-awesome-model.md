@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario ASDSAGJADFQWQ bajo licencia MIT. La informacion disponible es extremadamente limitada y, en gran medida, no verificable: la model card distribuida es una plantilla generica con marcadores de posicion sin rellenar (por ejemplo `{RESULT}` en toda la tabla de benchmarks) y no incluye identificacion del autor real, tamano, arquitectura concreta ni datos de entrenamiento. El repositorio muestra 0 descargas, 0 likes y un tamano de 0.0 GB, lo que apunta a que no se han subido pesos utilizables.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario ASDSAGJADFQWQ bajo licencia MIT. La informacion disponible es extremadamente limitada y, en gran medida, no verificable: la model card distribuida es una plantilla generica con marcadores de posicion sin rellenar (por ejemplo `{RESULT}` en toda la tabla de benchmarks) y no incluye identificacion del autor real, tamano, arquitectura concreta ni datos de entrenamiento. El repositorio muestra 0 descargas, 0 likes y un tamano de 0.0 GB, lo que apunta a que no se han subido pesos utilizables.
 
-Existe ademas una contradiccion relevante entre fuentes: las etiquetas de HuggingFace clasifican el modelo como `bert` con pipeline `feature-extraction` (es decir, un encoder de representaciones), mientras que la model card describe un asistente conversacional con modo de razonamiento ("thinking"), function calling, plantillas para subida de ficheros y busqueda web, y recomendaciones de temperatura y system prompt propias de un LLM generativo. Ninguna de las dos descripciones puede confirmarse con los datos aportados.
+Existe ademas una contradiccion relevante entre fuentes: las etiquetas de Hugging Face clasifican el modelo como `bert` con pipeline `feature-extraction` (es decir, un encoder de representaciones), mientras que la model card describe un asistente conversacional con modo de razonamiento ("thinking"), function calling, plantillas para subida de ficheros y busqueda web, y recomendaciones de temperatura y system prompt propias de un LLM generativo. Ninguna de las dos descripciones puede confirmarse con los datos aportados.
 
 Por todo ello, esta ficha debe leerse como un inventario de lo que el autor declara, no como una evaluacion tecnica contrastada. No hay resultados de benchmarks publicados con valores reales, no hay informacion sobre pesos, tokenizador o configuracion, y los resultados de la busqueda web realizada no contienen ninguna referencia al modelo (las URL devueltas son paginas polacas de soporte tecnico sin relacion alguna).
 
@@ -12,7 +12,7 @@ Por todo ello, esta ficha debe leerse como un inventario de lo que el autor decl
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (las etiquetas de HuggingFace indican `bert`, extremo no confirmado en la model card y en contradiccion con la descripcion de asistente generativo) |
+| Arquitectura | no disponible (las etiquetas de Hugging Face indican `bert`, extremo no confirmado en la model card y en contradiccion con la descripcion de asistente generativo) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible (la model card menciona un promedio de 23K tokens generados por pregunta en modo razonamiento, pero no especifica la ventana de contexto) |
@@ -43,7 +43,7 @@ Segun lo declarado por el autor en la model card (no verificado):
 - Reduccion declarada de la tasa de alucinacion (sin cifras ni metodologia).
 - Capacidades multilingues: no disponible.
 
-Las etiquetas de HuggingFace (`feature-extraction`) sugeririan, en cambio, una capacidad de generacion de embeddings o representaciones, no de generacion de texto. No hay forma de resolver la discrepancia con la informacion disponible.
+Las etiquetas de Hugging Face (`feature-extraction`) sugeririan, en cambio, una capacidad de generacion de embeddings o representaciones, no de generacion de texto. No hay forma de resolver la discrepancia con la informacion disponible.
 
 ## Casos de uso
 
@@ -77,7 +77,7 @@ No se especifica la configuracion de evaluacion, el numero de intentos, la polit
 - VRAM estimada para inferencia: no disponible. No se conoce el numero de parametros, por lo que no es posible estimar requisitos de memoria.
 - GPU recomendadas: no disponible por la misma razon.
 - Compatibilidad con GPU de consumo: indeterminable. Si el modelo fuese realmente un BERT de tamano estandar (cientos de millones de parametros), cabria en GPUs de consumo tipo RTX 3060 o superiores; si fuese un LLM generativo con modo de razonamiento largo, los requisitos serian muy superiores. No hay datos para decidir entre ambos escenarios.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints y con la libreria `transformers`. Para vLLM, llama.cpp, Ollama o TGI no hay confirmacion, y en el caso de llama.cpp u Ollama seria necesario un formato GGUF que no consta como publicado.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints y con la libreria `transformers`. Para vLLM, llama.cpp, Ollama o TGI no hay confirmacion, y en el caso de llama.cpp u Ollama seria necesario un formato GGUF que no consta como publicado.
 - Latencia y throughput estimados: no disponible. La model card solo indica que el modo de razonamiento actual consume aproximadamente 23K tokens por pregunta, lo que implicaria latencias altas en cualquier hardware, pero sin tamano de modelo ni hardware de referencia la cifra no es accionable.
 - Nota critica: el repositorio declara 0.0 GB de tamano y 0 descargas, lo que indica que no hay pesos descargables. Cualquier plan de despliegue es inviable con la informacion actual.
 
@@ -99,7 +99,7 @@ No disponible. La model card referencia tres modelos comparativos anonimizados (
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/ASDSAGJADFQWQ/my-awesome-model
+- Pagina del modelo en Hugging Face: https://huggingface.co/ASDSAGJADFQWQ/my-awesome-model
 - Repositorio de codigo del autor: no disponible (la model card menciona "our code repository" sin enlazarlo)
 - Web de chat y API oficial: no disponible (la model card menciona "our official website" sin enlazarlo)
 - Paper o informe tecnico: no disponible

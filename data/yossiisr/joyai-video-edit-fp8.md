@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| JoyAI-Video-Edit FP8 (este) | DiT video-to-video empaquetado con VAE y text encoder | FP8 e4m3 (Linear de atención y MLP) + bf16 | Apache 2.0 (DiT/VAE), MIT (text encoder) | HuggingFace, requiere parche del servidor |
-| jdopensource/JoyAI-Video-Edit | DiT video-to-video original | bf16 (checkpoint de 32,5 GB) | Apache 2.0 | HuggingFace |
-| XiaomiMiMo/MiMo-VL-7B-RL-2508 | Modelo visión-lenguaje (usado aquí como text encoder) | no disponible | MIT | HuggingFace |
+| JoyAI-Video-Edit FP8 (este) | DiT video-to-video empaquetado con VAE y text encoder | FP8 e4m3 (Linear de atención y MLP) + bf16 | Apache 2.0 (DiT/VAE), MIT (text encoder) | Hugging Face, requiere parche del servidor |
+| jdopensource/JoyAI-Video-Edit | DiT video-to-video original | bf16 (checkpoint de 32,5 GB) | Apache 2.0 | Hugging Face |
+| XiaomiMiMo/MiMo-VL-7B-RL-2508 | Modelo visión-lenguaje (usado aquí como text encoder) | no disponible | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparado con otros modelos de edición de vídeo en la información proporcionada.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparado con otros modelos de edición de
 
 ## Enlaces
 
-- [YossiIsr/joyai-video-edit-fp8 en HuggingFace](https://huggingface.co/YossiIsr/joyai-video-edit-fp8)
+- [YossiIsr/joyai-video-edit-fp8 en Hugging Face](https://huggingface.co/YossiIsr/joyai-video-edit-fp8)
 - [jdopensource/JoyAI-Video-Edit](https://huggingface.co/jdopensource/JoyAI-Video-Edit)
 - [XiaomiMiMo/MiMo-VL-7B-RL-2508](https://huggingface.co/XiaomiMiMo/MiMo-VL-7B-RL-2508)

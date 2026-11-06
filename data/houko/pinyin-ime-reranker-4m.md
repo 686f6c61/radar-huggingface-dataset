@@ -90,8 +90,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Fichero (int8) | Precision (casos / 56) | p95 por pulsacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| pinyin-ime-reranker-4M | 4.250.112 | 4,5 MB | 49 / 56 (0,875) | 8,6 ms | no disponible | Apache-2.0 | HuggingFace, implementacion de referencia en Rust |
-| pinyin-ime-reranker-25M | 24.863.104 | 25,5 MB | 52 / 56 (0,929) | 97,2 ms (medicion antigua) | no disponible | no disponible en la informacion proporcionada | HuggingFace (metasequoiaime) |
+| pinyin-ime-reranker-4M | 4.250.112 | 4,5 MB | 49 / 56 (0,875) | 8,6 ms | no disponible | Apache-2.0 | Hugging Face, implementacion de referencia en Rust |
+| pinyin-ime-reranker-25M | 24.863.104 | 25,5 MB | 52 / 56 (0,929) | 97,2 ms (medicion antigua) | no disponible | no disponible en la informacion proporcionada | Hugging Face (metasequoiaime) |
 | Qwen3-0.6B | no disponible en la informacion proporcionada | no disponible | 3 a 3 en McNemar exacto frente a este modelo (p = 1,000) | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
 Los dos reranqueadores comparten nombre de fichero (`sentence-model.safetensors`) y misma integración; la diferencia práctica es el presupuesto de latencia. La comparación con Qwen3-0.6B solo aparece como contraste estadístico en el test de McNemar, sin más datos publicados en la información disponible.
@@ -113,7 +113,7 @@ Los dos reranqueadores comparten nombre de fichero (`sentence-model.safetensors`
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/houko/pinyin-ime-reranker-4M
+- Modelo en Hugging Face: https://huggingface.co/houko/pinyin-ime-reranker-4M
 - Modelo alternativo de 25M: https://huggingface.co/metasequoiaime/pinyin-ime-reranker-25M
 - Repositorio de entrenamiento y medicion: https://github.com/metasequoiaime/chinese-ime-lm
 - Implementacion de referencia en Rust: https://github.com/metasequoiaime/chinese-ime-lm/tree/main/reference

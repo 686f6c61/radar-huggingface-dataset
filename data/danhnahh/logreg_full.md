@@ -54,4 +54,4 @@ No disponible. No se conocen modelos comparables de la misma categoria con los q
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danhnahh/logreg_full
+- Repositorio en Hugging Face: https://huggingface.co/danhnahh/logreg_full

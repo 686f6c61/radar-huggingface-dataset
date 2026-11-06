@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no es una release de modelo al uso, sino un checkpoint archivado de un entrenamiento completado. El autor (davidheineman) lo publica bajo las etiquetas `rlve` y `scratch-archive`, con el identificador interno `davidheineman/rlve-archive-fast-r1-p1r16-20261003-085503-00-circuit-5b75ae2fc70b`. Segun la propia model card, se trata del checkpoint final (paso 149) de una ejecucion cuyo nombre original era `runs/fast-r1-p1r16-20261003-085503/resumable/00-Circuit` y que queda identificada por el run ID de Weights & Biases `78f16230`.
+Este repositorio de Hugging Face no es una release de modelo al uso, sino un checkpoint archivado de un entrenamiento completado. El autor (davidheineman) lo publica bajo las etiquetas `rlve` y `scratch-archive`, con el identificador interno `davidheineman/rlve-archive-fast-r1-p1r16-20261003-085503-00-circuit-5b75ae2fc70b`. Segun la propia model card, se trata del checkpoint final (paso 149) de una ejecucion cuyo nombre original era `runs/fast-r1-p1r16-20261003-085503/resumable/00-Circuit` y que queda identificada por el run ID de Weights & Biases `78f16230`.
 
 El formato de checkpoint declarado es `megatron-torch-dist`, es decir, un checkpoint distribuido nativo de Megatron-LM en formato PyTorch, no un modelo serializado en safetensors ni GGUF listo para inferencia con las herramientas habituales. El directorio `checkpoint/` contiene el estado exacto guardado del modelo. El tamano total del repositorio es de 3,6 GB, dato que incluye pesos y, previsiblemente, estados auxiliares del entrenamiento, pero la model card no desglosa su contenido.
 
@@ -79,6 +79,6 @@ No disponible. No se dispone de informacion sobre parametros, contexto, rendimie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r16-20261003-085503-00-circuit-5b75ae2fc70b
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r16-20261003-085503-00-circuit-5b75ae2fc70b
 - Run de Weights & Biases asociado: identificador `78f16230` (la model card no proporciona URL directa al run)
 - Los resultados de busqueda web obtenidos no contienen informacion relevante sobre el modelo: se limitan a paginas de inicio de sesion de Google Docs y a una plantilla de documento de Google Docs sin relacion con el repositorio. No se han encontrado papers, blogs, repositorios ni demos adicionales.

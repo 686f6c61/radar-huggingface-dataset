@@ -72,10 +72,10 @@ Nota: la latencia p50 de 2715,5 ms contrasta con la afirmación de "sub-20ms" de
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Vexel-Catalyst-1.5B-v1 | 1,5 B | No disponible | Apache 2.0 | JSON estricto para cripto/DeFi | HuggingFace |
-| Qwen2-1.5B-Instruct | 1,5 B | 32 768 tokens (según familia Qwen2) | Apache 2.0 | Propósito general, instrucciones | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,5 B | 32 768 tokens (según familia Qwen2.5) | Apache 2.0 | Propósito general, instrucciones | HuggingFace |
-| SmolLM2-1.7B-Instruct | 1,7 B | 8192 tokens | Apache 2.0 | Propósito general, instrucciones | HuggingFace |
+| Vexel-Catalyst-1.5B-v1 | 1,5 B | No disponible | Apache 2.0 | JSON estricto para cripto/DeFi | Hugging Face |
+| Qwen2-1.5B-Instruct | 1,5 B | 32 768 tokens (según familia Qwen2) | Apache 2.0 | Propósito general, instrucciones | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,5 B | 32 768 tokens (según familia Qwen2.5) | Apache 2.0 | Propósito general, instrucciones | Hugging Face |
+| SmolLM2-1.7B-Instruct | 1,7 B | 8192 tokens | Apache 2.0 | Propósito general, instrucciones | Hugging Face |
 
 La comparativa se basa en el tamaño y la licencia; no se dispone de datos de benchmarks académicos del modelo Vexel-Catalyst que permitan una comparación de rendimiento rigurosa frente a estas alternativas.
 
@@ -93,7 +93,7 @@ La comparativa se basa en el tamaño y la licencia; no se dispone de datos de be
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VexelQuant/Vexel-Catalyst-1.5B-v1
+- Hugging Face: https://huggingface.co/VexelQuant/Vexel-Catalyst-1.5B-v1
 - Sitio web del autor: https://vexelquant.me
 - GitHub del autor: https://github.com/VexelQuant
 - Contacto comercial: founder@vexelquant.me

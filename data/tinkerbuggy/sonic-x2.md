@@ -69,6 +69,6 @@ No se dispone de informacion sobre otros modelos comparables en la misma categor
 - Requisitos de integracion: el uso correcto exige seguir la estructura de directorios esperada (`~/x2_cloud_checkpoints/`) y las instrucciones del repositorio GitHub asociado, lo que anade complejidad de configuracion.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/tinkerbuggy/sonic-x2
+- Repositorio Hugging Face: https://huggingface.co/tinkerbuggy/sonic-x2
 - Repositorio GitHub del fork (GR00T-WholeBodyControl-X2): https://github.com/meetsitaram/GR00T-WholeBodyControl-X2
 - Repositorio GitHub upstream (NVlabs/GR00T-WholeBodyControl): https://github.com/NVlabs/GR00T-WholeBodyControl

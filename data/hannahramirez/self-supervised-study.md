@@ -64,6 +64,6 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/hannahramirez/self-supervised-study
+- Repositorio de Hugging Face: https://huggingface.co/hannahramirez/self-supervised-study
 - Página de modelos del autor: https://huggingface.co/hannahramirez/models
 - Referencias en la nota (no accesibles directamente; se mencionan tópicos de auto-supervisión en el README)

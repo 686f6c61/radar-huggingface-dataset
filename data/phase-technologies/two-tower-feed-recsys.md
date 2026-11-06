@@ -90,7 +90,7 @@ La ventaja del modelo de Phase-Technologies frente a la factorizacion clasica es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Phase-Technologies/two-tower-feed-recsys
+- Hugging Face: https://huggingface.co/Phase-Technologies/two-tower-feed-recsys
 - Encoder de texto: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Google Colab: https://colab.research.google.com/
 - Repositorio de `sentence-transformers`: https://github.com/UKPLab/sentence-transformers

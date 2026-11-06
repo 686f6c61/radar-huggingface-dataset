@@ -99,7 +99,7 @@ Frente al Qwen2.5-Omni-3B original, esta conversión pierde visión, generación
 
 ## Enlaces
 
-- [Modelo en HuggingFace: mlx-community/Qwen2.5-Omni-3B-Thinker-bf16](https://huggingface.co/mlx-community/Qwen2.5-Omni-3B-Thinker-bf16)
+- [Modelo en Hugging Face: mlx-community/Qwen2.5-Omni-3B-Thinker-bf16](https://huggingface.co/mlx-community/Qwen2.5-Omni-3B-Thinker-bf16)
 - [Modelo base: Qwen/Qwen2.5-Omni-3B](https://huggingface.co/Qwen/Qwen2.5-Omni-3B)
 - [Encoder consumidor: mlx-community/AuK-bf16](https://huggingface.co/mlx-community/AuK-bf16)
 - [Repositorio xocialize/mlx-auk-swift](https://github.com/xocialize/mlx-auk-swift)

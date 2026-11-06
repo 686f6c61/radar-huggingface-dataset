@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| LIMO_32b_QFD-GGUF | 32,8B | no disponible | other | GGUF | HuggingFace |
-| Modelo base QFFT-LIMO-32B | 32,8B | no disponible | other | safetensors | HuggingFace |
+| LIMO_32b_QFD-GGUF | 32,8B | no disponible | other | GGUF | Hugging Face |
+| Modelo base QFFT-LIMO-32B | 32,8B | no disponible | other | safetensors | Hugging Face |
 | Alternativas de 32B comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa rigurosa con modelos alternativos de la misma categoria. La ausencia de benchmarks y de documentacion tecnica del modelo base impide comparar rendimiento, calidad o idoneidad frente a otros modelos de 32B como Qwen2.5-32B, Yi-34B o Gemma-2-27B, que si cuentan con evaluaciones publicas.
@@ -92,7 +92,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/LIMO_32b_QFD-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/LIMO_32b_QFD-GGUF
 - Modelo base: https://huggingface.co/lwl-uestc/QFFT-LIMO-32B
 - Pagina de descargas del autor: https://hf.tst.eu/model#LIMO_32b_QFD-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

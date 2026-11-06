@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kadabra es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). En el momento de redactar esta ficha, la model card asociada al repositorio no contiene mas contenido que la propia declaracion de licencia, por lo que no se dispone de informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades declaradas por el autor.
+Kadabra es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). En el momento de redactar esta ficha, la model card asociada al repositorio no contiene mas contenido que la propia declaracion de licencia, por lo que no se dispone de informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades declaradas por el autor.
 
 El repositorio ocupa aproximadamente 0,1 GB, un tamano que sugiere un conjunto de pesos reducido, pero este dato por si solo no permite determinar el numero de parametros, la precision de almacenamiento ni la arquitectura subyacente. El modelo no registra descargas ni likes, y la fecha de creacion indicada (27 de septiembre de 2026) es posterior a la fecha habitual de publicacion, lo que puede deberse a un error de metadatos o a un repositorio de prueba.
 
@@ -83,7 +83,7 @@ No disponible. No se dispone de informacion sobre parametros, contexto ni rendim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Kadabra
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Kadabra
 - Model card: https://huggingface.co/Ryanham1lton/Kadabra/blob/main/README.md
 - Licencia cc-by-4.0: https://creativecommons.org/licenses/by/4.0/
 - Paper, blog o repositorio de codigo asociado: no disponible

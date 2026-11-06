@@ -2,7 +2,7 @@
 
 ## Resumen
 
-emigar/cs329x-hw1 es un adaptador LoRA entrenado con DPO (Direct Preference Optimization) sobre el modelo base google/gemma-2-2b-it. No se trata por tanto de un modelo completo, sino de un conjunto de pesos delta que deben cargarse junto al modelo base mediante la libreria PEFT. El identificador del repositorio (cs329x-hw1) sugiere que se trata de un trabajo de curso academico, y la model card publicada es la plantilla por defecto de HuggingFace sin completar: todos los campos de descripcion, datos de entrenamiento, evaluacion y limitaciones figuran como "[More Information Needed]".
+emigar/cs329x-hw1 es un adaptador LoRA entrenado con DPO (Direct Preference Optimization) sobre el modelo base google/gemma-2-2b-it. No se trata por tanto de un modelo completo, sino de un conjunto de pesos delta que deben cargarse junto al modelo base mediante la libreria PEFT. El identificador del repositorio (cs329x-hw1) sugiere que se trata de un trabajo de curso academico, y la model card publicada es la plantilla por defecto de Hugging Face sin completar: todos los campos de descripcion, datos de entrenamiento, evaluacion y limitaciones figuran como "[More Information Needed]".
 
 El modelo base, Gemma 2 2B Instruct, es un transformer decoder-only de 2.600 millones de parametros desarrollado por Google DeepMind, con una ventana de contexto de 8.192 tokens y atencion alterna local/global con soft-capping. Al ser un adaptador LoRA, el artefacto publicado ocupa apenas unos megabytes y su comportamiento final depende por completo del modelo base sobre el que se aplica.
 
@@ -23,9 +23,9 @@ La relevancia de esta ficha es limitada: con 8 descargas y 0 likes en el momento
 | Modelo base | google/gemma-2-2b-it |
 | Metodo de ajuste | DPO sobre adaptador LoRA, entrenado con la libreria TRL |
 | Libreria de carga | PEFT (version indicada en la model card: 0.21.2) |
-| Tamano del repositorio | 0,0 GB (redondeado por HuggingFace; adaptador de pocos megabytes) |
+| Tamano del repositorio | 0,0 GB (redondeado por Hugging Face; adaptador de pocos megabytes) |
 | Pipeline declarado | text-generation |
-| Fecha de creacion | 2026-10-14 (segun la ficha de HuggingFace) |
+| Fecha de creacion | 2026-10-14 (segun la ficha de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -83,7 +83,7 @@ Los datos de la columna "Modelo base Gemma 2 2B" y de los modelos alternativos p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/emigar/cs329x-hw1
+- Repositorio Hugging Face: https://huggingface.co/emigar/cs329x-hw1
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it
 - Paper del modelo base Gemma 2: https://arxiv.org/abs/2408.00118
 - Paper de LoRA: https://arxiv.org/abs/2106.09685

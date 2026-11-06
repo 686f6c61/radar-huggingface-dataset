@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xw1234gan/seccodeplt-qwen2.5-coder-7b-grpo-kl-beta-0.001-real-detector-reward-v3
+- Modelo en Hugging Face: https://huggingface.co/xw1234gan/seccodeplt-qwen2.5-coder-7b-grpo-kl-beta-0.001-real-detector-reward-v3
 - Version anterior (v2): https://huggingface.co/xw1234gan/seccodeplt-qwen2.5-coder-7b-grpo-kl-beta-0.001-real-reward-v2
 - Coleccion Qwen2.5-Coder: https://huggingface.co/collections/Qwen/qwen25-coder
 - Repositorio GitHub de Qwen2.5-Coder: https://github.com/huggingface/Qwen2.5-Coder

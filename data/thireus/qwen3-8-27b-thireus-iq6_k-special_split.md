@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Thireus/Qwen3.8-27B-THIREUS-IQ6_K-SPECIAL_SPLIT` está alojado en HuggingFace por el usuario Thireus, con licencia MIT y etiqueta de región "us". La model card es mínima y solo incluye la licencia, sin información sobre arquitectura, entrenamiento, capacidades o uso previsto. El nombre sugiere que podría tratarse de una versión cuantizada de un modelo de la familia Qwen 3 con 27 000 millones de parámetros, en formato IQ6_K (una cuantización de GGUF utilizada por llama.cpp), pero no hay confirmación oficial en los metadatos.
+El modelo `Thireus/Qwen3.8-27B-THIREUS-IQ6_K-SPECIAL_SPLIT` está alojado en Hugging Face por el usuario Thireus, con licencia MIT y etiqueta de región "us". La model card es mínima y solo incluye la licencia, sin información sobre arquitectura, entrenamiento, capacidades o uso previsto. El nombre sugiere que podría tratarse de una versión cuantizada de un modelo de la familia Qwen 3 con 27 000 millones de parámetros, en formato IQ6_K (una cuantización de GGUF utilizada por llama.cpp), pero no hay confirmación oficial en los metadatos.
 
 Con cero descargas y cero likes, el modelo no ha sido validado por la comunidad y carece de documentación técnica. Su relevancia actual es limitada, y cualquier evaluación rigurosa requiere consultar fuentes externas o contactar al autor. Se recomienda precaución antes de considerarlo para uso en producción.
 
@@ -53,4 +53,4 @@ No disponible. No existe información suficiente para comparar este modelo con a
 
 ## Enlaces
 
-- [HuggingFace - Thireus/Qwen3.8-27B-THIREUS-IQ6_K-SPECIAL_SPLIT](https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-IQ6_K-SPECIAL_SPLIT)
+- [Hugging Face - Thireus/Qwen3.8-27B-THIREUS-IQ6_K-SPECIAL_SPLIT](https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-IQ6_K-SPECIAL_SPLIT)

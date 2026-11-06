@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aamueller/swin-t-matching-quantized` es un repositorio experimental de HuggingFace que empaqueta una implementación propia de una red Swin Transformer (Swin-T) orientada a tareas de *matching* (emparejamiento), presumiblemente emparejamiento de características entre imágenes o entre pares de entradas. El autor publica el código (`finetune.py`) junto con `config.json`, `training_args.json` y un checkpoint de inicialización en `model.safetensors`. No es un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint «no se presenta como un checkpoint de referencia entrenado» y que no se reclama ninguna puntuación de benchmark.
+`aamueller/swin-t-matching-quantized` es un repositorio experimental de Hugging Face que empaqueta una implementación propia de una red Swin Transformer (Swin-T) orientada a tareas de *matching* (emparejamiento), presumiblemente emparejamiento de características entre imágenes o entre pares de entradas. El autor publica el código (`finetune.py`) junto con `config.json`, `training_args.json` y un checkpoint de inicialización en `model.safetensors`. No es un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint «no se presenta como un checkpoint de referencia entrenado» y que no se reclama ninguna puntuación de benchmark.
 
 El dato más relevante para evaluar el artefacto es la discrepancia entre lo declarado y lo verificable. La model card describe la escala como «xlarge» y una arquitectura con atención de ventana deslizante, fusión por cross-attention, activación gelu-tanh y normalización layernorm, mientras que el recuento real de parámetros del fichero safetensors es de 49.600 (aproximadamente 0,05 M). Esa cifra es tres órdenes de magnitud inferior a la de un Swin-T estándar, por lo que el repositorio debe interpretarse como un esqueleto de código para pruebas de humo y ablaciones de arquitectura, no como un modelo utilizable.
 
@@ -73,7 +73,7 @@ La comparación directa no es significativa porque el artefacto no está entrena
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aamueller/swin-t-matching-quantized | 49.600 (verificado) | No disponible | Sin benchmarks; checkpoint sin entrenar | MIT | HuggingFace, 0 descargas |
+| aamueller/swin-t-matching-quantized | 49.600 (verificado) | No disponible | Sin benchmarks; checkpoint sin entrenar | MIT | Hugging Face, 0 descargas |
 | Swin-T oficial (referencia de la arquitectura) | No disponible en esta ficha (referencia externa no verificada) | No disponible | No verificado aquí | No disponible en esta ficha | Repositorio oficial de Swin Transformer |
 | Modelos de *matching* tipo SuperGlue / LoFTR | No disponible en esta ficha | No disponible | No verificado aquí | No disponible en esta ficha | Repositorios académicos |
 
@@ -94,6 +94,6 @@ No se dispone de datos verificados en la información proporcionada para estable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aamueller/swin-t-matching-quantized
+- Hugging Face: https://huggingface.co/aamueller/swin-t-matching-quantized
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante al modelo. Las entradas devueltas corresponden a la plataforma de comercio electrónico Temu (temu.com, Wikipedia y Google Play) y no guardan relación con este repositorio, por lo que se descartan.
 - Paper, blog, repositorio de código o demo adicionales: no disponibles en la información proporcionada.

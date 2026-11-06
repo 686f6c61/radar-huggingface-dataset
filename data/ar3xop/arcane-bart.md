@@ -70,5 +70,5 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (an
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ar3xop/arcane-bart
+- Hugging Face: https://huggingface.co/ar3xop/arcane-bart
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos) en la busqueda web.

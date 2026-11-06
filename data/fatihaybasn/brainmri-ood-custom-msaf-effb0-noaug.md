@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Fatihaybasn/brainmri-ood-custom-msaf-effb0-noaug` es un checkpoint publicado en HuggingFace por el usuario Fatihaybasn, orientado aparentemente al análisis de imágenes de resonancia magnética cerebral (brain MRI) con detección de casos fuera de distribución (out-of-distribution, OOD). El nombre sugiere el uso de una arquitectura basada en EfficientNet-B0 con un mecanismo de atención multi-escala (MSAF, probablemente Multi-Scale Attention Fusion) y entrenamiento sin aumento de datos (noaug). Sin embargo, la ficha del repositorio no incluye documentación técnica, métricas, ni detalles de entrenamiento, por lo que toda descripción más allá del nombre es especulativa.
+El modelo `Fatihaybasn/brainmri-ood-custom-msaf-effb0-noaug` es un checkpoint publicado en Hugging Face por el usuario Fatihaybasn, orientado aparentemente al análisis de imágenes de resonancia magnética cerebral (brain MRI) con detección de casos fuera de distribución (out-of-distribution, OOD). El nombre sugiere el uso de una arquitectura basada en EfficientNet-B0 con un mecanismo de atención multi-escala (MSAF, probablemente Multi-Scale Attention Fusion) y entrenamiento sin aumento de datos (noaug). Sin embargo, la ficha del repositorio no incluye documentación técnica, métricas, ni detalles de entrenamiento, por lo que toda descripción más allá del nombre es especulativa.
 
 Este modelo no presenta descargas registradas y cuenta con un único "like". Su relevancia actual es limitada, dado que no se dispone de información verificable sobre su arquitectura, rendimiento o licencia. Se recomienda precaución antes de considerar su uso en entornos clínicos o de investigación, ya que no hay evidencia pública de validación.
 
@@ -64,4 +64,4 @@ No disponible. No se han identificado modelos comparables con la misma configura
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Fatihaybasn/brainmri-ood-custom-msaf-effb0-noaug
+- Repositorio Hugging Face: https://huggingface.co/Fatihaybasn/brainmri-ood-custom-msaf-effb0-noaug

@@ -107,7 +107,7 @@ No se dispone de resultados de benchmarks comparativos: la comparacion relevante
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mhaquehaque/berkelium-qwen3-8b-cad-v1
+- Modelo en Hugging Face: https://huggingface.co/Mhaquehaque/berkelium-qwen3-8b-cad-v1
 - GGUF Q4_K_M (Ollama / llama.cpp): https://huggingface.co/Mhaquehaque/berkelium-qwen3-8b-cad-v1-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Codigo de Berkelium (rama `Berkelium-Neural-Rendering-Studio-neural-v1`): https://github.com/enigmahacker/Berkelium-Neural-Rendering-Studio

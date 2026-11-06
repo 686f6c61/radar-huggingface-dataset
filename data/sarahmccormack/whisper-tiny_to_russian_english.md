@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Whisper tiny Russian es un ajuste fino (fine-tuning) del modelo de reconocimiento automático del habla `openai/whisper-tiny` de OpenAI, publicado por el usuario SarahMcCormack en HuggingFace. El modelo parte de la arquitectura encoder-decoder transformer original de Whisper, con 37,76 millones de parámetros, y ha sido reentrenado sobre el dataset `russian_english` para la tarea de transcripción de audio a texto. Su propósito declarado es mejorar el rendimiento del modelo base en un dominio bilingüe ruso-inglés, aunque la model card no detalla la composición exacta del corpus de entrenamiento.
+Whisper tiny Russian es un ajuste fino (fine-tuning) del modelo de reconocimiento automático del habla `openai/whisper-tiny` de OpenAI, publicado por el usuario SarahMcCormack en Hugging Face. El modelo parte de la arquitectura encoder-decoder transformer original de Whisper, con 37,76 millones de parámetros, y ha sido reentrenado sobre el dataset `russian_english` para la tarea de transcripción de audio a texto. Su propósito declarado es mejorar el rendimiento del modelo base en un dominio bilingüe ruso-inglés, aunque la model card no detalla la composición exacta del corpus de entrenamiento.
 
-El modelo es relevante por su tamaño reducido (0,3 GB de repositorio), lo que lo hace apto para despliegues con recursos limitados, prototipado rápido y entornos de edge computing. Sin embargo, se trata de un experimento de ajuste fino con documentación mínima: la model card fue generada automáticamente por el Trainer de HuggingFace y contiene secciones sin completar ("More information needed"), lo que limita la evaluación rigurosa de su calidad y de su ámbito de aplicación real.
+El modelo es relevante por su tamaño reducido (0,3 GB de repositorio), lo que lo hace apto para despliegues con recursos limitados, prototipado rápido y entornos de edge computing. Sin embargo, se trata de un experimento de ajuste fino con documentación mínima: la model card fue generada automáticamente por el Trainer de Hugging Face y contiene secciones sin completar ("More information needed"), lo que limita la evaluación rigurosa de su calidad y de su ámbito de aplicación real.
 
 La información disponible es escasa y el modelo presenta un WER declarado de 9,9924 sobre el split de test del dataset `russian_english`, un valor que debe interpretarse con cautela porque no está verificado (`verified: false`) y no se especifica la métrica normalizada ni el tamaño del conjunto de evaluación. Aun así, constituye un punto de partida útil para quienes necesiten un modelo ASR ligero bilingüe ruso-inglés y estén dispuestos a validarlo por su cuenta.
 
@@ -25,7 +25,7 @@ La información disponible es escasa y el modelo presenta un WER declarado de 9,
 
 El modelo hereda la arquitectura Whisper de OpenAI en su variante tiny: un transformer encoder-decoder con atención estándar, diseñado para recibir espectrogramas log-Mel de audio de 30 segundos y generar tokens de texto. El modelo base `openai/whisper-tiny` cuenta con 37,76 millones de parámetros y está entrenado originalmente por OpenAI sobre una gran cantidad de audio débilmente supervisado multilingüe. El ajuste fino aquí presentado no modifica la arquitectura, sino que adapta los pesos al dataset `russian_english`.
 
-El entrenamiento se realizó con el Trainer de HuggingFace y los siguientes hiperparámetros declarados: learning rate de 1e-05, batch de entrenamiento de 2, batch de evaluación de 1, semilla 42, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con 500 pasos de warmup y un total de 2000 pasos de entrenamiento. Se registran dos puntos de evaluación: en el paso 1000 (epoch 1,0707) con validation loss de 0,2406 y WER de 10,5772, y en el paso 2000 (epoch 2,1413) con validation loss de 0,2263 y WER de 9,9924. No se documenta el número total de tokens de audio, la composición del dataset, ni si se aplicaron técnicas de aumento de datos, RLHF o DPO. Las versiones de framework declaradas son Transformers 5.23.0.dev0, PyTorch 2.11.0+cu130, Datasets 5.1.0 y Tokenizers 0.23.3.
+El entrenamiento se realizó con el Trainer de Hugging Face y los siguientes hiperparámetros declarados: learning rate de 1e-05, batch de entrenamiento de 2, batch de evaluación de 1, semilla 42, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con 500 pasos de warmup y un total de 2000 pasos de entrenamiento. Se registran dos puntos de evaluación: en el paso 1000 (epoch 1,0707) con validation loss de 0,2406 y WER de 10,5772, y en el paso 2000 (epoch 2,1413) con validation loss de 0,2263 y WER de 9,9924. No se documenta el número total de tokens de audio, la composición del dataset, ni si se aplicaron técnicas de aumento de datos, RLHF o DPO. Las versiones de framework declaradas son Transformers 5.23.0.dev0, PyTorch 2.11.0+cu130, Datasets 5.1.0 y Tokenizers 0.23.3.
 
 ## Capacidades
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Whisper tiny Russian (este modelo) | 37,76 M | No disponible (ventanas de 30 s) | 9,9924 (Russian English, test) | Apache 2.0 | HuggingFace |
-| openai/whisper-tiny | 37,76 M | No disponible (ventanas de 30 s) | No disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-base | 74,4 M | No disponible (ventanas de 30 s) | No disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 244 M | No disponible (ventanas de 30 s) | No disponible en esta ficha | Apache 2.0 | HuggingFace |
+| Whisper tiny Russian (este modelo) | 37,76 M | No disponible (ventanas de 30 s) | 9,9924 (Russian English, test) | Apache 2.0 | Hugging Face |
+| openai/whisper-tiny | 37,76 M | No disponible (ventanas de 30 s) | No disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-base | 74,4 M | No disponible (ventanas de 30 s) | No disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 244 M | No disponible (ventanas de 30 s) | No disponible en esta ficha | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos directos entre este ajuste y los modelos base de OpenAI en el mismo dataset, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos directos entre este ajuste y l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SarahMcCormack/whisper-tiny_to_russian_english
+- Modelo en Hugging Face: https://huggingface.co/SarahMcCormack/whisper-tiny_to_russian_english
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio de Whisper de OpenAI (referencia de la arquitectura): no disponible en la información proporcionada
 - Paper de Whisper: no disponible en la información proporcionada

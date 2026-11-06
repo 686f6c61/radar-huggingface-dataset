@@ -19,7 +19,7 @@ La relevancia de esta publicación es práctica: permite ejecutar localmente un 
 | Tipos de cuantización | Listados en las etiquetas del repositorio: x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS. Ficheros efectivamente publicados en la tabla del repositorio: Q2_K, Q4_K_S, Q8_0, mmproj-Q8_0 y mmproj-f16 |
 | Idiomas soportados | Inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (conversión del modelo en formato HuggingFace/transformers) |
+| Formato de pesos | GGUF (conversión del modelo en formato Hugging Face/transformers) |
 | Modelo base | DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored |
 | Tamaño del repositorio | 79,7 GB |
 | Librería declarada | transformers (etiqueta); la ejecución real requiere llama.cpp o compatible |
@@ -89,11 +89,11 @@ Comparativa con modelos de terceros (mismo tamaño o misma tarea): no disponible
 - Licencia Apache 2.0: permite uso comercial, modificación y redistribución con atribución y sin obligación de compartir derivados. Es una licencia permisiva, sin las cláusulas de uso aceptable que suelen acompañar a los modelos de pesos abiertos con restricciones.
 - Cuantizaciones de baja precisión: Q2_K y las variantes Q3 comprometen notablemente la coherencia. No hay cuantizaciones imatrix/weighted disponibles, que suelen ofrecer mejor relación calidad/tamaño.
 - Estado del repositorio: 0 descargas y 0 likes; no hay retroalimentación de la comunidad que valide la calidad de la conversión ni la fidelidad respecto al modelo original.
-- Origen de los metadatos: la fecha de creación registrada en HuggingFace es 2026-09-11, posterior a la del modelo base en el mismo ecosistema, lo que conviene verificar antes de integrarlo en un pipeline de producción.
+- Origen de los metadatos: la fecha de creación registrada en Hugging Face es 2026-09-11, posterior a la del modelo base en el mismo ecosistema, lo que conviene verificar antes de integrarlo en un pipeline de producción.
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-GGUF
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
 - Página de resumen y descargas del cuantizador: https://hf.tst.eu/model#Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-GGUF
 - Dataset DavidAU/Polar-STRICT-Datasets: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets

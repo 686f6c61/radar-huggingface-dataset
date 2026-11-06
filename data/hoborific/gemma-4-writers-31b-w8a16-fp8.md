@@ -1,7 +1,7 @@
 # hoborific/Gemma-4-Writers-31B-W8A16-FP8
 
 ## Resumen
-Gemma-4-Writers-31B-W8A16-FP8 es una version cuantizada del modelo Ateron/Gemma-4-Writers-31B, publicada por el usuario hoborific en HuggingFace. Se trata de una cuantizacion offline en formato W8A16 FP8 (pesos en float8_e4m3fn con escalas simetricas por canal de salida y activaciones en bf16/fp16), empaquetada con la libreria compressed-tensors. El modelo mantiene la pipeline image-text-to-text, es decir, acepta entradas multimodales de imagen y texto, y esta pensado para tareas conversacionales con soporte de prompt de sistema.
+Gemma-4-Writers-31B-W8A16-FP8 es una version cuantizada del modelo Ateron/Gemma-4-Writers-31B, publicada por el usuario hoborific en Hugging Face. Se trata de una cuantizacion offline en formato W8A16 FP8 (pesos en float8_e4m3fn con escalas simetricas por canal de salida y activaciones en bf16/fp16), empaquetada con la libreria compressed-tensors. El modelo mantiene la pipeline image-text-to-text, es decir, acepta entradas multimodales de imagen y texto, y esta pensado para tareas conversacionales con soporte de prompt de sistema.
 
 El modelo hereda la base de la familia Gemma 4 de Google DeepMind. La familia Gemma 4 incluye arquitecturas densas y Mixture-of-Experts en cinco tamanos (E2B, E4B, 12B, 26B A4B y 31B), con una ventana de contexto de hasta 256K tokens y soporte de mas de 140 idiomas segun la documentacion de Google. La variante concreta de este repositorio parte de un fine-tune orientado a escritura ("Writers") y conserva el tower de vision en bf16 sin cuantizar.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hoborific/Gemma-4-Writers-31B-W8A16-FP8 | 31,3 B | No disponible (base Gemma 4: 256K) | W8A16 FP8 | No disponible | HuggingFace (0 descargas, 0 likes) |
-| Ateron/Gemma-4-Writers-31B | No disponible | No disponible | bf16 (sin cuantizar) | No disponible | HuggingFace (modelo base) |
-| hoborific/Gemma-4-Writers-31B-V2-W8A16-FP8 | No disponible | No disponible | W8A16 FP8 | No disponible | HuggingFace (variante V2 del mismo autor) |
+| hoborific/Gemma-4-Writers-31B-W8A16-FP8 | 31,3 B | No disponible (base Gemma 4: 256K) | W8A16 FP8 | No disponible | Hugging Face (0 descargas, 0 likes) |
+| Ateron/Gemma-4-Writers-31B | No disponible | No disponible | bf16 (sin cuantizar) | No disponible | Hugging Face (modelo base) |
+| hoborific/Gemma-4-Writers-31B-V2-W8A16-FP8 | No disponible | No disponible | W8A16 FP8 | No disponible | Hugging Face (variante V2 del mismo autor) |
 | Gemma 4 31B (Google DeepMind) | 31 B (familia) | 256K tokens | bf16 (original) | Licencia Gemma (no confirmada aqui) | Google AI / DeepMind |
 
 Nota: los datos de la familia Gemma 4 provienen de la documentacion de Google; no se dispone de cifras de rendimiento comparadas para las variantes "Writers" ni para esta cuantizacion concreta.
@@ -83,7 +83,7 @@ Nota: los datos de la familia Gemma 4 provienen de la documentacion de Google; n
 - Advertencia de plataforma: los kernels HummingFP8ScaledMMLinearKernel requieren el paquete humming instalado; en su ausencia, se recurre a MarlinFP8ScaledMMLinearKernel, con posibles diferencias de rendimiento.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/hoborific/Gemma-4-Writers-31B-W8A16-FP8
+- Modelo en Hugging Face: https://huggingface.co/hoborific/Gemma-4-Writers-31B-W8A16-FP8
 - Modelo base: https://huggingface.co/Ateron/Gemma-4-Writers-31B
 - Variante V2 del mismo autor: https://huggingface.co/hoborific/Gemma-4-Writers-31B-V2-W8A16-FP8
 - Libreria compressed-tensors: https://github.com/neuralmagic/compressed-tensors

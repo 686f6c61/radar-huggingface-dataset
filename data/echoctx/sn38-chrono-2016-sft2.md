@@ -66,4 +66,4 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- [HuggingFace: echoctx/sn38-chrono-2016-sft2](https://huggingface.co/echoctx/sn38-chrono-2016-sft2)
+- [Hugging Face: echoctx/sn38-chrono-2016-sft2](https://huggingface.co/echoctx/sn38-chrono-2016-sft2)

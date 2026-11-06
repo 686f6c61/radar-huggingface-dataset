@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 ## Requisitos de hardware
 
-- VRAM estimada: no aplica para inferencia en CPU; no se dispone de estimacion para GPU porque el tamano del modelo ONNX no se documenta (el repositorio ocupa 0,0 GB segun HuggingFace, lo que sugiere un binario muy pequeno).
+- VRAM estimada: no aplica para inferencia en CPU; no se dispone de estimacion para GPU porque el tamano del modelo ONNX no se documenta (el repositorio ocupa 0,0 GB segun Hugging Face, lo que sugiere un binario muy pequeno).
 - GPU recomendadas: no disponible; el entrenamiento se describe como nativo en CPU con soporte MPS, por lo que la inferencia en GPU no es un requisito.
 - Compatibilidad con GPU de consumo: previsiblemente si, dado el reducido espacio de observacion y accion, aunque no hay datos publicados de consumo de memoria ni de latencia.
 - Opciones de despliegue: ONNX Runtime en CPU o GPU; tambien cabria exportar a otros runtimes compatibles con ONNX. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Tipo | Entrada/salida | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dfreq-roller-ppo032-20261103 | Politica PPO para roller-sprint-2m | 61 obs. / 14 acciones | no aplica | no disponible | ONNX en HuggingFace |
+| dfreq-roller-ppo032-20261103 | Politica PPO para roller-sprint-2m | 61 obs. / 14 acciones | no aplica | no disponible | ONNX en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros checkpoints publicos del mismo entorno `microduck-arena` ni de controladores equivalentes para la tarea, por lo que no es posible establecer una comparativa con datos verificables.
@@ -96,5 +96,5 @@ No se dispone de informacion sobre otros checkpoints publicos del mismo entorno 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/djduecaster/dfreq-roller-ppo032-20261103
+- Modelo en Hugging Face: https://huggingface.co/djduecaster/dfreq-roller-ppo032-20261103
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

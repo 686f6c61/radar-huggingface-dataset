@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/xCloudinfo/Qwen3.5-9B-Uncensored-GGUF
+- Hugging Face del modelo: https://huggingface.co/xCloudinfo/Qwen3.5-9B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Version mayor del mismo autor: https://huggingface.co/xCloudinfo/Qwen3.8-27B-Uncensored-GGUF
 - Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic

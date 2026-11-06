@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario DASCXZ12EDXCSA bajo el identificador DASCXZ12EDXCSA/MyAwesomeModel-TestRepo. La model card lo presenta como la version mejorada de un modelo anterior, con mayor profundidad de razonamiento durante la inferencia y mejoras en matematicas, programacion, logica general, function calling y reduccion de alucinaciones. El autor afirma que, en el conjunto de pruebas AIME 2025, la precision pasa del 70 % de la version previa al 87,5 %, consumiendo de media 23K tokens por pregunta frente a los 12K anteriores.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario DASCXZ12EDXCSA bajo el identificador DASCXZ12EDXCSA/MyAwesomeModel-TestRepo. La model card lo presenta como la version mejorada de un modelo anterior, con mayor profundidad de razonamiento durante la inferencia y mejoras en matematicas, programacion, logica general, function calling y reduccion de alucinaciones. El autor afirma que, en el conjunto de pruebas AIME 2025, la precision pasa del 70 % de la version previa al 87,5 %, consumiendo de media 23K tokens por pregunta frente a los 12K anteriores.
 
-La informacion disponible es, sin embargo, muy limitada y en parte contradictoria. La metadata de HuggingFace etiqueta el modelo como `bert` con pipeline de `feature-extraction`, algo que no encaja con las capacidades de razonamiento, generacion de codigo, modo thinking y llamada a funciones que describe la model card. No se especifican parametros totales, longitud de contexto, idiomas soportados, composicion del dataset de entrenamiento ni tipos de cuantizacion.
+La informacion disponible es, sin embargo, muy limitada y en parte contradictoria. La metadata de Hugging Face etiqueta el modelo como `bert` con pipeline de `feature-extraction`, algo que no encaja con las capacidades de razonamiento, generacion de codigo, modo thinking y llamada a funciones que describe la model card. No se especifican parametros totales, longitud de contexto, idiomas soportados, composicion del dataset de entrenamiento ni tipos de cuantizacion.
 
 Ademas, el repositorio declara un tamano de 0,0 GB, sin descargas ni likes, y una fecha de creacion de 2026-09-10. Se trata, por tanto, de un repositorio aparentemente de prueba (el propio sufijo "TestRepo" lo sugiere) sin pesos publicados, por lo que no es posible evaluarlo ni desplegarlo en produccion con la informacion actual.
 
@@ -12,7 +12,7 @@ Ademas, el repositorio declara un tamano de 0,0 GB, sin descargas ni likes, y un
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (el tag de HuggingFace indica `bert`, pero la model card describe razonamiento y function calling, incompatibles con ese tag) |
+| Arquitectura | No disponible (el tag de Hugging Face indica `bert`, pero la model card describe razonamiento y function calling, incompatibles con ese tag) |
 | Parametros totales | No disponible |
 | Parametros activos | No disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -25,7 +25,7 @@ Ademas, el repositorio declara un tamano de 0,0 GB, sin descargas ni likes, y un
 
 La model card no detalla la arquitectura interna. Indica que la version actual mejora "la profundidad de razonamiento y las capacidades de inferencia" mediante un mayor uso de recursos computacionales y la introduccion de "mecanismos de optimizacion algoritmica durante el post-entrenamiento". No se menciona si se trata de un transformer denso, un MoE, un modelo hibrido ni una arquitectura SSM, ni se especifica el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO o RLVR.
 
-El unico dato concreto sobre el comportamiento en inferencia es el aumento del numero medio de tokens de razonamiento por pregunta en AIME, de 12K a 23K, lo que sugiere un modo thinking extendido. La model card tambien menciona un "MyAwesomeModel-Small" con la misma arquitectura que su modelo base pero compartiendo el tokenizador del modelo principal. No hay informacion verificable sobre innovaciones tecnicas adicionales, y existe una contradiccion no resuelta entre el tag `bert` / `feature-extraction` de HuggingFace y las capacidades generativas descritas.
+El unico dato concreto sobre el comportamiento en inferencia es el aumento del numero medio de tokens de razonamiento por pregunta en AIME, de 12K a 23K, lo que sugiere un modo thinking extendido. La model card tambien menciona un "MyAwesomeModel-Small" con la misma arquitectura que su modelo base pero compartiendo el tokenizador del modelo principal. No hay informacion verificable sobre innovaciones tecnicas adicionales, y existe una contradiccion no resuelta entre el tag `bert` / `feature-extraction` de Hugging Face y las capacidades generativas descritas.
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ Resultado adicional declarado: AIME 2025 con 87,5 % de precision (frente al 70 %
 - VRAM estimada para inferencia: no disponible. Al no publicarse el numero de parametros ni los pesos, no es posible calcularla.
 - GPU recomendadas: no disponible por el mismo motivo.
 - Compatibilidad con GPUs de consumo: no disponible. Si el tag `bert` fuese correcto, un modelo de tamano base cabria en GPUs de consumo con cuantizacion; si las capacidades de razonamiento descritas fuesen reales, probablemente requeriria hardware de centro de datos. Ambas hipotesis son incompatibles y ninguna esta confirmada.
-- Opciones de despliegue: la libreria declarada es `transformers` de HuggingFace y el modelo es `endpoints_compatible`. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI, y la ausencia de pesos impide desplegarlo actualmente.
+- Opciones de despliegue: la libreria declarada es `transformers` de Hugging Face y el modelo es `endpoints_compatible`. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI, y la ausencia de pesos impide desplegarlo actualmente.
 - Latencia y throughput estimados: no disponibles. El unico dato indirecto es el consumo de 23K tokens de razonamiento por pregunta en AIME, que implica latencias altas en tareas de razonamiento complejo.
 - Temperatura recomendada: 0,6 segun la model card.
 
@@ -102,7 +102,7 @@ Comparativa con alternativas reales: no disponible.
 ## Limitaciones y advertencias
 
 - Repositorio sin pesos: el tamano declarado es de 0,0 GB y no hay archivos de modelo publicados, por lo que el modelo no se puede descargar ni ejecutar en su estado actual.
-- Contradiccion entre metadata y model card: HuggingFace lo etiqueta como `bert` y pipeline `feature-extraction`, mientras que la model card describe generacion de texto, razonamiento y function calling. Es imprescindible resolver esta discrepancia antes de cualquier uso.
+- Contradiccion entre metadata y model card: Hugging Face lo etiqueta como `bert` y pipeline `feature-extraction`, mientras que la model card describe generacion de texto, razonamiento y function calling. Es imprescindible resolver esta discrepancia antes de cualquier uso.
 - Benchmarks no verificables: todos los resultados proceden del autor, con categorias no estandar y modelos de comparacion anonimizados. No deben tomarse como evidencia independiente de rendimiento.
 - Nombre de repositorio "TestRepo": sugiere un proposito de prueba, no un modelo listo para produccion.
 - Cero descargas y cero likes: no hay evidencia de uso por parte de la comunidad ni de validacion externa.
@@ -116,7 +116,7 @@ Comparativa con alternativas reales: no disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DASCXZ12EDXCSA/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/DASCXZ12EDXCSA/MyAwesomeModel-TestRepo
 - Repositorio de codigo, sitio web oficial, API y demo: mencionados en la model card pero sin URL disponible.
 - Paper tecnico: no disponible.
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a paginas corporativas de Microsoft sin relacion con este repositorio.

@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / entrada | Confianza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/alphafold2-ptm | 93,3 M | MSA 256, pares 128 | pLDDT, PAE, pTM | AGPL-3.0 | HuggingFace (`oteam`) |
-| oteam/alphafold2 | 93,283 M | MSA 256, pares 128 | pLDDT | AGPL-3.0 | HuggingFace (`oteam`) |
-| oteam/alphafold2-multimer | 93,278 M | MSA 256, pares 128, cadenas múltiples | pLDDT, PAE, pTM | AGPL-3.0 | HuggingFace (`oteam`) |
-| oteam/alphafold2-casp14 | no disponible | MSA 256, pares 128, ensemble de 5 modelos | pLDDT | AGPL-3.0 | HuggingFace (`oteam`) |
+| oteam/alphafold2-ptm | 93,3 M | MSA 256, pares 128 | pLDDT, PAE, pTM | AGPL-3.0 | Hugging Face (`oteam`) |
+| oteam/alphafold2 | 93,283 M | MSA 256, pares 128 | pLDDT | AGPL-3.0 | Hugging Face (`oteam`) |
+| oteam/alphafold2-multimer | 93,278 M | MSA 256, pares 128, cadenas múltiples | pLDDT, PAE, pTM | AGPL-3.0 | Hugging Face (`oteam`) |
+| oteam/alphafold2-casp14 | no disponible | MSA 256, pares 128, ensemble de 5 modelos | pLDDT | AGPL-3.0 | Hugging Face (`oteam`) |
 
 La comparación con implementaciones externas (AlphaFold 3, ESMFold, OpenFold) no está disponible en la información proporcionada.
 
@@ -90,7 +90,7 @@ La comparación con implementaciones externas (AlphaFold 3, ESMFold, OpenFold) n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/alphafold2-ptm
+- Modelo en Hugging Face: https://huggingface.co/oteam/alphafold2-ptm
 - Variante monomérica: https://huggingface.co/oteam/alphafold2
 - Variante multimer: https://huggingface.co/oteam/alphafold2-multimer
 - Variante CASP14: https://huggingface.co/oteam/alphafold2-casp14

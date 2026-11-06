@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`vivek84ia/mysathi-qlora-adapter` es un adaptador de ajuste fino parametralmente eficiente (PEFT) publicado por el usuario vivek84ia sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. Se distribuye en formato safetensors con la librería `peft` (versión 0.21.2 declarada en la model card) y ocupa 0,2 GB en el repositorio de HuggingFace. Por la nomenclatura y las etiquetas (`lora`, `peft`, `base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct`), se trata de un conjunto de pesos LoRA entrenado con la técnica QLoRA, es decir, adaptadores de bajo rango sobre una base congelada cuantizada a 4 bits.
+`vivek84ia/mysathi-qlora-adapter` es un adaptador de ajuste fino parametralmente eficiente (PEFT) publicado por el usuario vivek84ia sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. Se distribuye en formato safetensors con la librería `peft` (versión 0.21.2 declarada en la model card) y ocupa 0,2 GB en el repositorio de Hugging Face. Por la nomenclatura y las etiquetas (`lora`, `peft`, `base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct`), se trata de un conjunto de pesos LoRA entrenado con la técnica QLoRA, es decir, adaptadores de bajo rango sobre una base congelada cuantizada a 4 bits.
 
 El problema que resuelve es el habitual de la familia QLoRA: adaptar un modelo de 1.500 millones de parámetros a un dominio o estilo conversacional concreto sin reentrenar todos los pesos y con un coste de memoria muy reducido (el paper original permite ajustar modelos de hasta 65B en una sola GPU de 48 GB). El artefacto resultante es pequeño, portable y se puede cargar junto al modelo base en `transformers` sin infraestructura adicional.
 
-Ahora bien, la ficha publicada es la plantilla por defecto de HuggingFace sin rellenar: no hay descripción, ni datos de entrenamiento, ni hiperparámetros, ni evaluación, ni licencia, ni idiomas declarados. Con cero descargas y cero «likes» en el momento de la consulta, no existe evidencia pública de validación. Su interés es, por tanto, el de un ejemplo de publicación de adaptadores QLoRA de bajo coste y no el de un modelo listo para producción.
+Ahora bien, la ficha publicada es la plantilla por defecto de Hugging Face sin rellenar: no hay descripción, ni datos de entrenamiento, ni hiperparámetros, ni evaluación, ni licencia, ni idiomas declarados. Con cero descargas y cero «likes» en el momento de la consulta, no existe evidencia pública de validación. Su interés es, por tanto, el de un ejemplo de publicación de adaptadores QLoRA de bajo coste y no el de un modelo listo para producción.
 
 ## Especificaciones técnicas
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | vivek84ia/mysathi-qlora-adapter | 1,5B (base) + adaptador LoRA | No disponible (base: 32.768 tokens) | No disponible | 0 descargas, 0 likes; repo de 0,2 GB | Sin model card, sin evaluación, sin datos de entrenamiento |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens declarados por el autor del modelo base | No verificada en esta búsqueda | Ampliamente distribuido en HuggingFace | Modelo base del adaptador; sirve como referencia de lo que el adaptador modifica |
-| Qwen/Qwen2.5-3B-Instruct | 3B | No verificado en esta búsqueda | No verificada en esta búsqueda | Disponible en HuggingFace | Alternativa de mayor tamaño y, previsiblemente, mayor calidad, con más requisitos de VRAM |
-| meta-llama/Llama-3.2-1B-Instruct | 1B | No verificado en esta búsqueda | No verificada en esta búsqueda | Disponible en HuggingFace | Alternativa de tamaño comparable para despliegue en el borde |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens declarados por el autor del modelo base | No verificada en esta búsqueda | Ampliamente distribuido en Hugging Face | Modelo base del adaptador; sirve como referencia de lo que el adaptador modifica |
+| Qwen/Qwen2.5-3B-Instruct | 3B | No verificado en esta búsqueda | No verificada en esta búsqueda | Disponible en Hugging Face | Alternativa de mayor tamaño y, previsiblemente, mayor calidad, con más requisitos de VRAM |
+| meta-llama/Llama-3.2-1B-Instruct | 1B | No verificado en esta búsqueda | No verificada en esta búsqueda | Disponible en Hugging Face | Alternativa de tamaño comparable para despliegue en el borde |
 
 No hay datos de rendimiento del adaptador que permitan una comparación cuantitativa; las dos últimas filas son referencias de categoría y sus datos deben verificarse en sus respectivas fichas antes de usarse en una decisión técnica.
 
@@ -88,7 +88,7 @@ No hay datos de rendimiento del adaptador que permitan una comparación cuantita
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/vivek84ia/mysathi-qlora-adapter
+- Hugging Face del adaptador: https://huggingface.co/vivek84ia/mysathi-qlora-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Paper QLoRA (Dettmers et al., 2023): https://arxiv.org/abs/2305.14314
 - Repositorio oficial de QLoRA: https://github.com/artidoro/qlora

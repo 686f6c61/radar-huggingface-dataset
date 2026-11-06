@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored-NVFP4 es una compilacion cuantizada y "abliterated" (direccion de rechazo eliminada) del modelo Qwen/Qwen3.8-27B, publicada por el usuario lfitoto en HuggingFace. Se trata de un modelo denso de 27.000 millones de parametros, nativo de vision-lenguaje, con atencion hibrida (Gated DeltaNet lineal combinada con atencion completa), control flexible de razonamiento, soporte de tool calling y una cabeza MTP de decodificacion especulativa. La ventana de contexto declarada es de 262K tokens.
+Qwen3.8-27B-Uncensored-NVFP4 es una compilacion cuantizada y "abliterated" (direccion de rechazo eliminada) del modelo Qwen/Qwen3.8-27B, publicada por el usuario lfitoto en Hugging Face. Se trata de un modelo denso de 27.000 millones de parametros, nativo de vision-lenguaje, con atencion hibrida (Gated DeltaNet lineal combinada con atencion completa), control flexible de razonamiento, soporte de tool calling y una cabeza MTP de decodificacion especulativa. La ventana de contexto declarada es de 262K tokens.
 
 La innovacion principal de esta build es la cuantizacion dinamica de precision mixta NVFP4 + FP8: las capas feed-forward mayoritarias se comprimen a 4 bits en formato NVFP4, mientras que las capas sensibles a la precision y la cache KV se mantienen en FP8. Segun la model card, esto preserva mejor la exactitud que una cuantizacion uniforme W4A4. Ademas, se ha aplicado abliteration previa a la cuantizacion, de modo que el modelo conserva sus capacidades (vision, herramientas, razonamiento, MTP) pero pierde los rechazos de seguridad del modelo original.
 
@@ -100,7 +100,7 @@ Advertencia de trazabilidad: la model card de este repositorio promociona y enla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lfitoto/Qwen3.8-27B-Uncensored-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/lfitoto/Qwen3.8-27B-Uncensored-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Build hermana BF16: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Build hermana FP8: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8

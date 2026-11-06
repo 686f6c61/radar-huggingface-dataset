@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Starlinghq/qwen3.5-0.8b-ortgenai
+- Modelo en Hugging Face: https://huggingface.co/Starlinghq/qwen3.5-0.8b-ortgenai
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio del proyecto: https://github.com/starlinghq/starling
 - Script de construcción: `model-pipeline/reference/generation/build_ortgenai_bundle.py` en el repositorio starlinghq/starling

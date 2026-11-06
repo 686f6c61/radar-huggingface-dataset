@@ -98,7 +98,7 @@ Otros detectores de alucinacion basados en incertidumbre (entropia semantica, se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/artefactory/wepr-ministral
+- Modelo en Hugging Face: https://huggingface.co/artefactory/wepr-ministral
 - Modelo objetivo: https://huggingface.co/mistralai/Ministral-8B-Instruct-2410
 - Libreria artefactual: https://github.com/artefactory/artefactual
 - Incidencias y contacto: https://github.com/artefactory/artefactual/issues

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Diffusion Miner es un modelo de mundo (*world model*) condicionado por acciones que aprende a simular un *sandbox* de minería con arena que cae. Lo publica el usuario kerzgrr en HuggingFace bajo licencia Apache 2.0. No es un modelo de lenguaje: no procesa ni genera texto, sino que sintetiza el siguiente fotograma de un videojuego 2D a partir del estado visual reciente y del vector de acciones del jugador. El objetivo declarado por el autor es tener un mundo jugable generado íntegramente por difusión, sin motor físico ni motor de render.
+Diffusion Miner es un modelo de mundo (*world model*) condicionado por acciones que aprende a simular un *sandbox* de minería con arena que cae. Lo publica el usuario kerzgrr en Hugging Face bajo licencia Apache 2.0. No es un modelo de lenguaje: no procesa ni genera texto, sino que sintetiza el siguiente fotograma de un videojuego 2D a partir del estado visual reciente y del vector de acciones del jugador. El objetivo declarado por el autor es tener un mundo jugable generado íntegramente por difusión, sin motor físico ni motor de render.
 
 La relevancia del artefacto está en su naturaleza interactiva y en tiempo casi real: genera 256×256 píxeles a 12 FPS con unos 220 millones de parámetros, lo que lo sitúa en un rango de tamaño que cabe en GPUs de gama alta de consumo. Combina un *transformer* de difusión con un prefijo de atención de 12 fotogramas latentes y una memoria recurrente ConvGRU que recorre 48 fotogramas, de modo que mantiene coherencia temporal a lo largo de una partida.
 
@@ -93,6 +93,6 @@ Los resultados de la busqueda web realizada no contienen informacion tecnica sob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kerzgrr/diffusionminer
+- Modelo en Hugging Face: https://huggingface.co/kerzgrr/diffusionminer
 - Archivos incluidos en el repositorio: `ema.safetensors` (pesos jugables del profesor), `codec.pt` (Tile VAE congelado), `config.json` (ajustes de video, modelo y codec), `livediffusion/` (paquete de inferencia), `live_infer.py` (lanzador de juego en vivo) y `demo.gif` (clip de juego guionizado).
-- La busqueda web realizada no ha devuelto enlaces relevantes al modelo: los resultados obtenidos tratan sobre motores de busqueda y no guardan relacion con Diffusion Miner. No se dispone de paper, blog tecnico, repositorio de codigo adicional ni demo publica mas alla del material del repositorio de HuggingFace.
+- La busqueda web realizada no ha devuelto enlaces relevantes al modelo: los resultados obtenidos tratan sobre motores de busqueda y no guardan relacion con Diffusion Miner. No se dispone de paper, blog tecnico, repositorio de codigo adicional ni demo publica mas alla del material del repositorio de Hugging Face.

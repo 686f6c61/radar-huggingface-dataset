@@ -118,8 +118,8 @@ No se dispone de datos para confirmar la degradacion exacta de rendimiento causa
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta variante: https://huggingface.co/inference-optimization/Qwen3-30B-A3B-Thinking-2507-REAP-25-nonuniform
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507
+- Repositorio Hugging Face de esta variante: https://huggingface.co/inference-optimization/Qwen3-30B-A3B-Thinking-2507-REAP-25-nonuniform
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507/blob/main/LICENSE
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

@@ -91,8 +91,8 @@ La comparativa se limita al modelo base y a Qwen3-VL-4B porque no se dispone de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kordou/MinerU-Popo-NF4
-- Modelo base en HuggingFace: https://huggingface.co/DreamEternal/MinerU-Popo
+- Repositorio Hugging Face: https://huggingface.co/kordou/MinerU-Popo-NF4
+- Modelo base en Hugging Face: https://huggingface.co/DreamEternal/MinerU-Popo
 - Repositorio GitHub de MinerU-Popo: https://github.com/opendatalab/MinerU-Popo
 - Paper en arXiv: https://arxiv.org/html/2605.24973
 - PDF del paper: https://arxiv.org/pdf/2605.24973

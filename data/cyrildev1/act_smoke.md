@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyrildev1/act_smoke` es una publicación en HuggingFace del usuario cyrildev1, con licencia Apache 2.0. Fue creado el 8 de septiembre de 2026 y actualizado el mismo día. No se dispone de información técnica publicada: no hay model card descriptiva, ni datos sobre arquitectura, parámetros, contexto o capacidades. En el momento de la consulta, el modelo registra cero descargas y cero me gusta.
+El modelo `cyrildev1/act_smoke` es una publicación en Hugging Face del usuario cyrildev1, con licencia Apache 2.0. Fue creado el 8 de septiembre de 2026 y actualizado el mismo día. No se dispone de información técnica publicada: no hay model card descriptiva, ni datos sobre arquitectura, parámetros, contexto o capacidades. En el momento de la consulta, el modelo registra cero descargas y cero me gusta.
 
-Debido a la ausencia de documentación, no es posible determinar qué problema resuelve ni su relevancia tecnológica. La ficha presente refleja únicamente los datos disponibles en HuggingFace y en fuentes externas abiertas, que resultan insuficientes para una evaluación técnica.
+Debido a la ausencia de documentación, no es posible determinar qué problema resuelve ni su relevancia tecnológica. La ficha presente refleja únicamente los datos disponibles en Hugging Face y en fuentes externas abiertas, que resultan insuficientes para una evaluación técnica.
 
 ## Especificaciones técnicas
 
@@ -20,7 +20,7 @@ Debido a la ausencia de documentación, no es posible determinar qué problema r
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo, los datos de entrenamiento ni innovaciones técnicas. La model card en HuggingFace solo contiene el frontmatter con la licencia, sin ninguna descripción adicional.
+No se ha publicado información sobre la arquitectura del modelo, los datos de entrenamiento ni innovaciones técnicas. La model card en Hugging Face solo contiene el frontmatter con la licencia, sin ninguna descripción adicional.
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ No disponible. No existen datos suficientes para comparar este modelo con altern
 - La ausencia de model card y de documentación técnica impide conocer sesgos, alucinaciones, limitaciones de idioma o contexto.
 - La licencia Apache 2.0 permite el uso comercial, pero no hay información que avale la seguridad o calidad del modelo.
 - El modelo no tiene descargas ni me gusta, lo que sugiere que no ha sido evaluado por la comunidad.
-- El tag `region:us` en HuggingFace podría indicar restricciones de acceso según la ubicación, pero no hay confirmación en la documentación.
+- El tag `region:us` en Hugging Face podría indicar restricciones de acceso según la ubicación, pero no hay confirmación en la documentación.
 - No se puede garantizar el soporte o mantenimiento del modelo.
 
 ## Enlaces

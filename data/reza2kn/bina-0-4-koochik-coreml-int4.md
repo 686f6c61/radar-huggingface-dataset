@@ -74,8 +74,8 @@ Latencia de diagnostico local (Apple M2, PNG de 400x104, 34 tokens generados, tr
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bina 0.4 Koochik CoreML-INT4 | 630.800.496 | no disponible | CoreML INT4 | OpenMDW 1.1 | HuggingFace, 42 descargas |
-| Bina 0.4 Koochik (base) | 630.800.496 | no disponible | BF16/FP32 | OpenMDW 1.1 | HuggingFace |
+| Bina 0.4 Koochik CoreML-INT4 | 630.800.496 | no disponible | CoreML INT4 | OpenMDW 1.1 | Hugging Face, 42 descargas |
+| Bina 0.4 Koochik (base) | 630.800.496 | no disponible | BF16/FP32 | OpenMDW 1.1 | Hugging Face |
 | NVIDIA Nemotron-3.5-Parse | no disponible | no disponible | no disponible | no disponible | referenciado como arquitectura origen |
 
 No se dispone de datos de benchmarks comparativos con otros modelos OCR en la informacion proporcionada.
@@ -94,5 +94,5 @@ No se dispone de datos de benchmarks comparativos con otros modelos OCR en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Reza2kn/Bina-0.4-Koochik-CoreML-INT4
+- Hugging Face: https://huggingface.co/Reza2kn/Bina-0.4-Koochik-CoreML-INT4
 - Modelo base: https://huggingface.co/Reza2kn/Bina-0.4-Koochik

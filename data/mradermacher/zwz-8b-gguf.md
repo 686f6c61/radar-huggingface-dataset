@@ -6,7 +6,7 @@ ZwZ-8B es un modelo de lenguaje multimodal de 8.190.735.360 parámetros (aproxim
 
 La relevancia de esta publicación radica en que traslada un modelo multimodal de 8B a formatos ligeros (desde 3,4 GB en Q2_K hasta 16,5 GB en f16), incluyendo un proyector multimodal (`mmproj`) separado que habilita la entrada de imágenes. Esto facilita su despliegue local en GPUs de consumo y en entornos sin acceso a infraestructura de datacenter, algo poco habitual en modelos de visión-lenguaje de esta escala.
 
-No obstante, la información pública disponible es limitada: la model card del repositorio cuantizado no documenta arquitectura interna, longitud de contexto, composición del dataset ni resultados de benchmarks. Los datos que se ofrecen a continuación proceden de los metadatos de HuggingFace y de la propia model card del cuantizador.
+No obstante, la información pública disponible es limitada: la model card del repositorio cuantizado no documenta arquitectura interna, longitud de contexto, composición del dataset ni resultados de benchmarks. Los datos que se ofrecen a continuación proceden de los metadatos de Hugging Face y de la propia model card del cuantizador.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ No obstante, la información pública disponible es limitada: la model card del 
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo base `inclusionAI/ZwZ-8B`. Los metadatos indican que se trata de un modelo multimodal (visión-lenguaje), dado que el repositorio GGUF incluye un archivo `mmproj` (proyector multimodal) necesario para procesar imágenes. El pipeline declarado en HuggingFace no está disponible, pero las etiquetas `conversational` y la presencia de `mmproj` confirman su uso para conversación con entrada visual.
+La información disponible no detalla la arquitectura interna del modelo base `inclusionAI/ZwZ-8B`. Los metadatos indican que se trata de un modelo multimodal (visión-lenguaje), dado que el repositorio GGUF incluye un archivo `mmproj` (proyector multimodal) necesario para procesar imágenes. El pipeline declarado en Hugging Face no está disponible, pero las etiquetas `conversational` y la presencia de `mmproj` confirman su uso para conversación con entrada visual.
 
 Respecto al entrenamiento, la model card únicamente referencia dos datasets: `inclusionAI/ZwZ-RL-VQA` (preguntas y respuestas visuales con refuerzo) y `inclusionAI/ZoomBench` (evaluación de comprensión a distintos niveles de zoom). Esto sugiere un ajuste orientado a razonamiento visual fino y a la interpretación de detalles en imágenes de alta resolución, pero no se especifican número de tokens, composición del corpus, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se documentan innovaciones técnicas concretas (atención lineal, decodificación especulativa, etc.).
 

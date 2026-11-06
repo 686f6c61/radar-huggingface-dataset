@@ -2,7 +2,7 @@
 
 ## Resumen
 
-X-YEMEN-8 es un modelo publicado en HuggingFace por el usuario amarsadan, distribuido en formato GGUF y obtenido, segun la propia model card, mediante conversion con Unsloth. El unico fichero publicado es `qwen3-8b.Q8_0.gguf`, de modo que se trata de una cuantizacion en 8 bits del modelo base Qwen3-8B; el nombre comercial X-YEMEN-8 es un rebautizado del autor y no aporta informacion tecnica adicional. El recuento real de parametros en safetensors (8.190.735.360, unos 8,19 mil millones) coincide con el de Qwen3-8B, lo que respalda esa identificacion.
+X-YEMEN-8 es un modelo publicado en Hugging Face por el usuario amarsadan, distribuido en formato GGUF y obtenido, segun la propia model card, mediante conversion con Unsloth. El unico fichero publicado es `qwen3-8b.Q8_0.gguf`, de modo que se trata de una cuantizacion en 8 bits del modelo base Qwen3-8B; el nombre comercial X-YEMEN-8 es un rebautizado del autor y no aporta informacion tecnica adicional. El recuento real de parametros en safetensors (8.190.735.360, unos 8,19 mil millones) coincide con el de Qwen3-8B, lo que respalda esa identificacion.
 
 El interes practico del repositorio es limitado pero concreto: ofrece un artefacto GGUF listo para ejecutarse con llama.cpp (los tags incluyen `llama.cpp`, `llama-cpp`, `imatrix` y `endpoints_compatible`) sin necesidad de convertir pesos. Sin embargo, el autor no documenta la procedencia exacta, el proceso de fine-tuning, la licencia ni los idiomas, y la model card se limita a las instrucciones de conversion y un ejemplo de uso con `llama-cli`.
 
@@ -88,7 +88,7 @@ El principal competidor directo es la propia Qwen3-8B oficial, que ofrece la mis
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/amarsadan/X-YEMEN-8
+- Hugging Face del modelo: https://huggingface.co/amarsadan/X-YEMEN-8
 - Unsloth (herramienta de conversion citada): https://github.com/unslothai/unsloth
 - Qwen3-8B (modelo base inferido): https://huggingface.co/Qwen/Qwen3-8B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en los resultados de busqueda proporcionados.

@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zekaili/OpenWAM_hanoi_tower_gb64_lr1e-4_10k
+- Modelo en Hugging Face: https://huggingface.co/zekaili/OpenWAM_hanoi_tower_gb64_lr1e-4_10k
 - Modelo base: https://huggingface.co/OpenWAM/OpenWAM-Alpha-Pretrain-Foundation-Model
 - Dataset: https://huggingface.co/datasets/zekaili/hanoi-tower
 - Repositorio OpenWAM: https://github.com/OpenWAM-Official/OpenWAM

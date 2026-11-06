@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qing-yao/babylm-opt-sva-decay-0-from8000-11473601` es un checkpoint de lenguaje de ~110,4 millones de parametros basado en la arquitectura OPT, publicado por el usuario qing-yao en HuggingFace. Se trata de un ajuste fino (o continuacion de entrenamiento) del modelo `models/babylm-default_seed-42_1e-3` sobre el dataset `qing-yao/slightly-cleaner-babylm`, un corpus derivado del material del reto BabyLM, orientado a la investigacion sobre aprendizaje eficiente del lenguaje con cantidades de datos comparables a las que recibe un nino.
+`qing-yao/babylm-opt-sva-decay-0-from8000-11473601` es un checkpoint de lenguaje de ~110,4 millones de parametros basado en la arquitectura OPT, publicado por el usuario qing-yao en Hugging Face. Se trata de un ajuste fino (o continuacion de entrenamiento) del modelo `models/babylm-default_seed-42_1e-3` sobre el dataset `qing-yao/slightly-cleaner-babylm`, un corpus derivado del material del reto BabyLM, orientado a la investigacion sobre aprendizaje eficiente del lenguaje con cantidades de datos comparables a las que recibe un nino.
 
 El modelo es un artefacto puramente de investigacion: no tiene model card completada (la mayoria de secciones dicen "More information needed"), no declara licencia ni idiomas, acumula 0 descargas y 0 likes en el momento de la consulta, y su model-index no contiene ningun resultado de benchmark. Su relevancia es, por tanto, acotada: sirve como punto de comparacion dentro de una linea experimental concreta (variantes de decaimiento de learning rate sobre BabyLM) y como base pequena para experimentos de eficiencia, no como modelo listo para produccion.
 
@@ -12,7 +12,7 @@ El dato cuantitativo mas solido disponible es la perdida de evaluacion final de 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | OPT (transformer decoder-only autorregresivo), segun el tag `opt` de HuggingFace |
+| Arquitectura | OPT (transformer decoder-only autorregresivo), segun el tag `opt` de Hugging Face |
 | Parametros totales | 110.419.968 (dato real de los pesos safetensors) |
 | Parametros activos | No aplica (modelo denso, no es MoE) |
 | Longitud de contexto | No disponible (no declarada en la model card; la secuencia de entrenamiento inferida es de 256 tokens) |
@@ -110,14 +110,14 @@ No se dispone de una comparacion cuantitativa fiable con ninguno de estos modelo
 - Limitacion de contexto: la secuencia de entrenamiento inferida es de 256 tokens, muy inferior a los 2.048 que admite la cuadricula posicional de OPT. El rendimiento mas alla de esa ventana no esta validado y probablemente degrade de forma notable.
 - Idioma: no se declara soporte multilingue. El corpus de referencia es monolingue en ingles; el uso en castellano no esta respaldado por ninguna evaluacion.
 - Artefacto de investigacion sin validacion comunitaria: cero descargas y cero likes en el momento de la consulta, sin issues ni discusiones. No ha sido replicado ni auditado por terceros.
-- Procedencia poco clara: el modelo base referenciado, `models/babylm-default_seed-42_1e-3`, no es una ruta estandar de HuggingFace, por lo que la trazabilidad del linaje de entrenamiento es incompleta.
+- Procedencia poco clara: el modelo base referenciado, `models/babylm-default_seed-42_1e-3`, no es una ruta estandar de Hugging Face, por lo que la trazabilidad del linaje de entrenamiento es incompleta.
 - Repositorio sobredimensionado: 84,8 GB para un modelo de 110 M de parametros implica un gran numero de checkpoints intermedios; conviene revisar los ficheros antes de descargar para no consumir disco innecesariamente.
 - Fecha de publicacion inusualmente futura (2026-09-11) respecto a la fecha de consulta, lo que puede indicar un error de metadatos o un entorno de pruebas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/babylm-opt-sva-decay-0-from8000-11473601
-- Modelo base referenciado en la model card: https://huggingface.co/models/babylm-default_seed-42_1e-3 (ruta no resoluble como repositorio estandar de HuggingFace)
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/babylm-opt-sva-decay-0-from8000-11473601
+- Modelo base referenciado en la model card: https://huggingface.co/models/babylm-default_seed-42_1e-3 (ruta no resoluble como repositorio estandar de Hugging Face)
 - Dataset de entrenamiento declarado: `qing-yao/slightly-cleaner-babylm` (identificador citado en la model card; no se ha proporcionado URL directa)
 - Paper de la arquitectura OPT, "OPT: Open Pre-trained Transformer Language Models": https://arxiv.org/abs/2205.01068 (referencia general de la familia, no citada en la model card)
 - Reto BabyLM (contexto del corpus y de las variantes experimentales): https://babylm.github.io/ (referencia general, no citada en la model card)

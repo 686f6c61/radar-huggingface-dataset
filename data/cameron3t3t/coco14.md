@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cameron3T3T/coco14 es un repositorio de pesos publicado en HuggingFace por el usuario Cameron3T3T. En el momento de redactar esta ficha, la informacion publica disponible es minima: no se declara pipeline, licencia, idiomas soportados, ni resultados de evaluacion. El unico dato cuantitativo confirmado es el tamano del repositorio, 45,3 GB, junto con las fechas de creacion (10 de septiembre de 2026) y ultima actualizacion (12 de septiembre de 2026), cero descargas y un unico "like".
+Cameron3T3T/coco14 es un repositorio de pesos publicado en Hugging Face por el usuario Cameron3T3T. En el momento de redactar esta ficha, la informacion publica disponible es minima: no se declara pipeline, licencia, idiomas soportados, ni resultados de evaluacion. El unico dato cuantitativo confirmado es el tamano del repositorio, 45,3 GB, junto con las fechas de creacion (10 de septiembre de 2026) y ultima actualizacion (12 de septiembre de 2026), cero descargas y un unico "like".
 
 Esto situa al artefacto en la categoria de publicaciones sin documentacion tecnica asociada. No hay model card descriptiva, no hay paper, no hay repositorio de codigo enlazado y no hay ficha de configuracion arquitectonica accesible desde la informacion proporcionada. Cualquier afirmacion sobre arquitectura, numero de parametros o capacidades seria especulativa y, por tanto, se marca explicitamente como no disponible.
 
@@ -80,7 +80,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el nume
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Cameron3T3T/coco14 | no disponible | no disponible | no disponible | repositorio HuggingFace, sin documentacion |
+| Cameron3T3T/coco14 | no disponible | no disponible | no disponible | repositorio Hugging Face, sin documentacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el nume
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cameron3T3T/coco14
+- Hugging Face: https://huggingface.co/Cameron3T3T/coco14
 - Model card: no disponible
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

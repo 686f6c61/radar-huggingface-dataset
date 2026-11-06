@@ -81,6 +81,6 @@ No se dispone de información comparativa con otros modelos en la documentación
 
 ## Enlaces
 
-- [HuggingFace: xw1234gan/seccodeplt-qwen2.5-coder-7b-grpo-kl-beta-0.001-real-reward-v2](https://huggingface.co/xw1234gan/seccodeplt-qwen2.5-coder-7b-grpo-kl-beta-0.001-real-reward-v2)
+- [Hugging Face: xw1234gan/seccodeplt-qwen2.5-coder-7b-grpo-kl-beta-0.001-real-reward-v2](https://huggingface.co/xw1234gan/seccodeplt-qwen2.5-coder-7b-grpo-kl-beta-0.001-real-reward-v2)
 - [Modelo base: Qwen/Qwen2.5-Coder-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct)
 - [Dataset: fengyao1909/SecCodePLT_Plus](https://huggingface.co/datasets/fengyao1909/SecCodePLT_Plus)

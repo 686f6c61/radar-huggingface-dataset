@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Snowball 67B A2B Identity Path B M49 es un artefacto de investigación publicado por el colectivo open-athena en HuggingFace. No se trata de un modelo entrenado de forma convencional, sino de una fusión lineal de pesos en espacio de parámetros: una combinación tensor a tensor de dos checkpoints previos (A3 y A8a), ambos derivados a su vez del modelo base Marin Snowball v0.1 (ADC0078a). El resultado es un checkpoint de 67.078.882.816 parámetros (unos 67B) con arquitectura MoE del tipo `grug_moe`, empaquetado en safetensors y con un tamaño de repositorio de 134,2 GB.
+Snowball 67B A2B Identity Path B M49 es un artefacto de investigación publicado por el colectivo open-athena en Hugging Face. No se trata de un modelo entrenado de forma convencional, sino de una fusión lineal de pesos en espacio de parámetros: una combinación tensor a tensor de dos checkpoints previos (A3 y A8a), ambos derivados a su vez del modelo base Marin Snowball v0.1 (ADC0078a). El resultado es un checkpoint de 67.078.882.816 parámetros (unos 67B) con arquitectura MoE del tipo `grug_moe`, empaquetado en safetensors y con un tamaño de repositorio de 134,2 GB.
 
 La operación de merge aplica la fórmula `W = 0.51·A3 + 0.49·A8a` por tensor, con acumulación en FP32 y un único cast final, preservando 26 sesgos de router en FP32 y 256 filas protegidas. El perfil de identidad entrenado corresponde a "Marin's Latest MoE", desarrollado por la Marin Community. El checkpoint incorpora un SFT de identidad (tag `identity-sft`) orientado a que el modelo se identifique correctamente como creación de dicha comunidad.
 
@@ -70,8 +70,8 @@ Notas: el slot 1 de BFCL quedó agotado por fallos de infraestructura en sus tre
 
 | Modelo | Parametros | Contexto | BFCL | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Snowball 67B A2B M49 | ~67B (MoE) | no disponible | 29,4715% | 90,5231% | openmdw-1.1 | HuggingFace (research) |
-| Marin Snowball v0.1 | no disponible | no disponible | referencia (diferencia +1,8293 pp a favor de M49) | 92,1152% | no disponible | HuggingFace |
+| Snowball 67B A2B M49 | ~67B (MoE) | no disponible | 29,4715% | 90,5231% | openmdw-1.1 | Hugging Face (research) |
+| Marin Snowball v0.1 | no disponible | no disponible | referencia (diferencia +1,8293 pp a favor de M49) | 92,1152% | no disponible | Hugging Face |
 | Checkpoint A3 (ancla) | no disponible | no disponible | +1,5854 pp sobre M49 | no disponible | no disponible | interno al linaje |
 | Checkpoint A8a (donante) | no disponible | no disponible | −3,2927 pp bajo M49 | no disponible | no disponible | interno al linaje |
 
@@ -91,7 +91,7 @@ La comparación significativa es contra el propio linaje (v0.1, A3, A8a), ya que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Identity-PathB-M49-2026.10.30
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Identity-PathB-M49-2026.10.30
 - Ficheros de receta y manifiesto citados en la model card: `merge-recipe.json`, `merge-manifest.json`, `KEEP.md` (disponibles en el repositorio del modelo)
 - Procedencia conservada: `source-provenance/` (README y atributos Git originales dentro del repositorio)
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada

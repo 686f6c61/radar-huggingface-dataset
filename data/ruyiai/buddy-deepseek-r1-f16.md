@@ -43,7 +43,7 @@ La aportacion tecnica de este repositorio es la ruta de compilacion: el modelo s
 ## Casos de uso
 
 - Despliegue de un LLM de razonamiento en placas y SoC RISC-V: el paquete `.rax` esta compilado especificamente para riscv64 generico, de modo que puede ejecutarse en entornos embebidos donde no existen runtimes de inferencia convencionales.
-- Validacion de toolchains de compilacion de IA: sirve como caso de prueba reproducible para verificar que buddy-mlir y buddy-cli generan binarios funcionales a partir de un modelo de HuggingFace, fijando una version concreta (`60f354a`) para comparar resultados entre revisiones.
+- Validacion de toolchains de compilacion de IA: sirve como caso de prueba reproducible para verificar que buddy-mlir y buddy-cli generan binarios funcionales a partir de un modelo de Hugging Face, fijando una version concreta (`60f354a`) para comparar resultados entre revisiones.
 - Investigacion en compiladores MLIR: el binario permite medir el comportamiento de las transformaciones de buddy-mlir sobre un grafo de transformer real en lugar de sobre microbenchmarks.
 - Prototipado de asistentes locales sin conectividad: al ser un modelo de 1,5B en f16 (en torno a 3 GB de pesos), puede ejecutarse en dispositivos aislados o en redes industriales donde no se permite enviar datos a la nube.
 - Educacion y demostraciones de razonamiento en hardware alternativo: permite mostrar en un aula o en una charla como se ejecuta un modelo de razonamiento sobre ISA RISC-V usando un unico comando.
@@ -69,16 +69,16 @@ Tambien se carece de datos de latencia, throughput o consumo energetico medidos 
 
 | Modelo | Parametros | Formato | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| RuyiAI/buddy-deepseek-r1-f16 | 1,5B (upstream) | `.rax` para riscv64 | no disponible | HuggingFace, 0 descargas | Paquete cross-compilado; requiere buddy-cli |
-| RuyiAI/buddy-deepseek-r1-w8a16 | 1,5B (upstream) | `.rax` para riscv64 | no disponible | HuggingFace | Misma familia, esquema de cuantizacion w8a16; sin datos tecnicos publicados en la busqueda |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | safetensors | consultar model card del upstream | HuggingFace, ampliamente utilizado | Modelo original; ejecutable con transformers, vLLM, llama.cpp y otros |
-| Qwen2.5-1.5B-Instruct | 1,5B | safetensors | consultar model card del upstream | HuggingFace | Alternativa densa de tamano equivalente, sin modo de razonamiento explicito |
+| RuyiAI/buddy-deepseek-r1-f16 | 1,5B (upstream) | `.rax` para riscv64 | no disponible | Hugging Face, 0 descargas | Paquete cross-compilado; requiere buddy-cli |
+| RuyiAI/buddy-deepseek-r1-w8a16 | 1,5B (upstream) | `.rax` para riscv64 | no disponible | Hugging Face | Misma familia, esquema de cuantizacion w8a16; sin datos tecnicos publicados en la busqueda |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | safetensors | consultar model card del upstream | Hugging Face, ampliamente utilizado | Modelo original; ejecutable con transformers, vLLM, llama.cpp y otros |
+| Qwen2.5-1.5B-Instruct | 1,5B | safetensors | consultar model card del upstream | Hugging Face | Alternativa densa de tamano equivalente, sin modo de razonamiento explicito |
 
 No se dispone de datos de rendimiento comparados entre estas opciones en la informacion proporcionada, por lo que la comparativa se limita a parametros, formato, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Artefacto altamente especializado: no es un modelo en safetensors ni GGUF, por lo que no se puede cargar con las herramientas habituales del ecosistema HuggingFace sin recurrir al modelo upstream.
+- Artefacto altamente especializado: no es un modelo en safetensors ni GGUF, por lo que no se puede cargar con las herramientas habituales del ecosistema Hugging Face sin recurrir al modelo upstream.
 - Dependencia fuerte del runtime: la ejecucion exige `buddy-cli` y un sistema riscv64; la compatibilidad con otras plataformas no esta documentada.
 - Sin datos de evaluacion propios: no hay benchmarks, mediciones de latencia ni pruebas de calidad publicadas para este binario concreto.
 - Licencia no explicitada: la model card no indica licencia del paquete. Antes de cualquier uso comercial hay que verificar la licencia del modelo upstream y la del proyecto buddy-mlir.
@@ -90,12 +90,12 @@ No se dispone de datos de rendimiento comparados entre estas opciones en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RuyiAI/buddy-deepseek-r1-f16
+- Modelo en Hugging Face: https://huggingface.co/RuyiAI/buddy-deepseek-r1-f16
 - Variante cuantizada w8a16: https://huggingface.co/RuyiAI/buddy-deepseek-r1-w8a16
 - Modelo upstream: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Repositorio de buddy-mlir: https://github.com/buddy-compiler/buddy-mlir
 - Script de instalacion de buddy-cli: https://raw.githubusercontent.com/buddy-compiler/buddy-mlir/main/scripts/install_buddy_cli.sh
-- Coleccion DeepSeek-R1 en HuggingFace: https://huggingface.co/collections/deepseek-ai/deepseek-r1
+- Coleccion DeepSeek-R1 en Hugging Face: https://huggingface.co/collections/deepseek-ai/deepseek-r1
 - Repositorio DeepSeek-R1 en GitHub: https://github.com/deepseek-ai/DeepSeek-R1
 - DeepSeek-R1 en NVIDIA NIM: https://build.nvidia.com/deepseek-ai/deepseek-r1
 - Guia sobre modelos y benchmarks de DeepSeek R1: https://chat-deep.ai/models/deepseek-r1/

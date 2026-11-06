@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo con identificador `AlinaGonch/qwen3-4b-instruct-squad-ratio-0.00-seed-44` es un artefacto publicado en HuggingFace por la usuaria AlinaGonch. La model card asociada es la plantilla genérica autogenerada por `transformers`: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen como "[More Information Needed]" o vacíos. No hay pipeline declarado, no hay idiomas declarados y no hay licencia especificada.
+El modelo con identificador `AlinaGonch/qwen3-4b-instruct-squad-ratio-0.00-seed-44` es un artefacto publicado en Hugging Face por la usuaria AlinaGonch. La model card asociada es la plantilla genérica autogenerada por `transformers`: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen como "[More Information Needed]" o vacíos. No hay pipeline declarado, no hay idiomas declarados y no hay licencia especificada.
 
 El nombre del repositorio es la única fuente de información sustantiva: sugiere un ajuste fino del modelo Qwen3-4B-Instruct sobre el conjunto de datos SQuAD, con una fracción de datos de entrenamiento de 0,00 y semilla aleatoria 44. El patrón de nombres (ratio + seed) es habitual en experimentos controlados de ajuste fino, donde `ratio-0.00` apunta a una ejecución de control sin datos de la tarea o con fracción nula. Esta interpretación se deriva únicamente del nombre y no está confirmada por el autor en ninguna parte del repositorio. El repositorio ocupa 0,1 GB, un tamaño incompatible con los pesos completos de un modelo de aproximadamente 4.000 millones de parámetros en fp16 o bf16 (que ocuparían del orden de 8 GB), por lo que probablemente contiene solo una parte de los pesos, un adaptador o ficheros auxiliares.
 
@@ -28,7 +28,7 @@ El modelo acumula 0 descargas y 0 likes, y las fechas declaradas en el Hub (crea
 
 ## Arquitectura y entrenamiento
 
-No hay información sobre la arquitectura en la model card, que es la plantilla por defecto de HuggingFace sin rellenar. El identificador del repositorio apunta a Qwen3-4B-Instruct como modelo base, lo que implicaría una arquitectura transformer densa con atención completa, pero no existe confirmación documental de ello en el repositorio. Tampoco se declara la longitud de contexto nativa ni si se aplicaron técnicas como decodificación especulativa, atención lineal o modos híbridos.
+No hay información sobre la arquitectura en la model card, que es la plantilla por defecto de Hugging Face sin rellenar. El identificador del repositorio apunta a Qwen3-4B-Instruct como modelo base, lo que implicaría una arquitectura transformer densa con atención completa, pero no existe confirmación documental de ello en el repositorio. Tampoco se declara la longitud de contexto nativa ni si se aplicaron técnicas como decodificación especulativa, atención lineal o modos híbridos.
 
 Respecto al entrenamiento, el nombre `squad-ratio-0.00-seed-44` sugiere un ajuste fino supervisado sobre SQuAD (Stanford Question Answering Dataset) con una fracción de datos de 0,00 y semilla 44. Los hiperparámetros, el régimen de precisión (fp32, bf16, fp16), el número de tokens vistos, la composición del dataset y la posible aplicación de RLHF, DPO o cualquier otra etapa de alineación no están documentados. No se publica información sobre uso de hardware, proveedor de nube ni emisiones de carbono, más allá de la referencia genérica a la calculadora de impacto de ML (Lacoste et al., 2019) que la plantilla incluye por defecto.
 
@@ -98,7 +98,7 @@ No es posible establecer una comparativa rigurosa porque no hay datos verificabl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.00-seed-44
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.00-seed-44
 - Articulo referenciado en la etiqueta arxiv (calculadora de impacto de carbono, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML citada en la plantilla: https://mlco2.github.io/impact
 - Paper, blog, repositorio de codigo, demo o dataset de entrenamiento: no disponible

@@ -90,7 +90,7 @@ No se conocen modelos comparables directamente publicados con el mismo enfoque (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/James-1971-source/connectailab-rl-connectailab-rl-jamesyun-v1
+- Hugging Face: https://huggingface.co/James-1971-source/connectailab-rl-connectailab-rl-jamesyun-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio GitHub CONNECT TYCOON (simulador): https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

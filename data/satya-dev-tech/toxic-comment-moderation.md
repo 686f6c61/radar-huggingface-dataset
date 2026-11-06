@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Satya-dev-tech/toxic-comment-moderation` es un clasificador de texto diseñado para la moderación de comentarios tóxicos. Desarrollado por el usuario Satya-dev-tech y publicado en HuggingFace, se basa en la arquitectura DistilBERT, una versión destilada de BERT que reduce el número de parámetros de 110 millones a unos 67 millones, lo que lo hace significativamente más ligero y rápido para tareas de inferencia. El modelo está etiquetado para clasificación de texto (`text-classification`) y es compatible con la librería `transformers` y con `text-embeddings-inference`.
+El modelo `Satya-dev-tech/toxic-comment-moderation` es un clasificador de texto diseñado para la moderación de comentarios tóxicos. Desarrollado por el usuario Satya-dev-tech y publicado en Hugging Face, se basa en la arquitectura DistilBERT, una versión destilada de BERT que reduce el número de parámetros de 110 millones a unos 67 millones, lo que lo hace significativamente más ligero y rápido para tareas de inferencia. El modelo está etiquetado para clasificación de texto (`text-classification`) y es compatible con la librería `transformers` y con `text-embeddings-inference`.
 
 La relevancia de este modelo reside en su aplicación directa para la moderación de contenido en plataformas digitales, un problema creciente en redes sociales, foros y sistemas de comentarios. Al estar basado en DistilBERT, ofrece un equilibrio entre rendimiento y eficiencia, pudiendo ejecutarse en entornos con recursos limitados, como CPUs o GPUs de consumo. Sin embargo, la documentación pública es extremadamente escasa: la model card está casi vacía, sin detalles sobre el entrenamiento, los datos utilizados, la licencia o los idiomas soportados, lo que limita su adopción en entornos de producción sin una evaluación previa.
 
@@ -28,7 +28,7 @@ En cuanto al entrenamiento específico de este modelo, no se dispone de informac
 ## Capacidades
 
 - Clasificación de texto: detecta comentarios tóxicos o abusivos en texto plano.
-- Integración con pipelines de HuggingFace: compatible con la clase `pipeline` de `transformers` para inferencia rápida.
+- Integración con pipelines de Hugging Face: compatible con la clase `pipeline` de `transformers` para inferencia rápida.
 - Ligero y eficiente: al ser DistilBERT, requiere menos memoria y cómputo que BERT, permitiendo despliegue en CPU o GPU de bajo perfil.
 - Compatible con `text-embeddings-inference`, lo que facilita su uso en entornos de servidor.
 - No se han confirmado capacidades avanzadas como tool calling, agentes o razonamiento multi-paso; el modelo está limitado a clasificación de texto.
@@ -76,7 +76,7 @@ No hay datos de rendimiento comparativos publicados para el modelo de Satya. La 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Satya-dev-tech/toxic-comment-moderation
+- Modelo en Hugging Face: https://huggingface.co/Satya-dev-tech/toxic-comment-moderation
 - Repositorio de Detoxify (alternativa similar): https://github.com/unitaryai/detoxify
 - Artículo sobre detección de toxicidad con IA en el cliente: https://web.dev/articles/ai-detect-toxicity-context
 - Repositorio Toxic Comment Detector (basado en unitary/toxic-bert): https://github.com/allanninal/toxic-comment-detector

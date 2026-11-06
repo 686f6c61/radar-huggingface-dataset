@@ -77,7 +77,7 @@ No se dispone de información comparativa con otros adaptadores de fairness o mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MichiganNLP/hacking-fairness-benchmarks-mistral-7b-v0.3-z1
+- Hugging Face: https://huggingface.co/MichiganNLP/hacking-fairness-benchmarks-mistral-7b-v0.3-z1
 - Página del proyecto (paper): https://lit.eecs.umich.edu/hacking-fairness-benchmarks/
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Paper (EMNLP 2026): citado en la model card como `deng2026one` (One Example Is Enough to Pass Fairness Benchmarks: Rethinking Fairness Evaluation for Aligned LLMs).

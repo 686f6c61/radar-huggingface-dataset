@@ -89,7 +89,7 @@ Los datos de las alternativas provienen de la documentacion publica de cada mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/1bit-MONSTER/DeepSeek-R1-Distill-Qwen-1.5B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/1bit-MONSTER/DeepSeek-R1-Distill-Qwen-1.5B-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Cuantizacion original de bartowski: https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-1.5B-GGUF
 - Motor 1bit: https://github.com/1bit-MONSTER/engine

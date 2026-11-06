@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - No se han publicado requisitos minimos de VRAM ni recomendaciones de GPU especificas en la informacion disponible.
 - Dado el tamano del modelo y la naturaleza de la tarea (generacion de video con audio), es probable que se necesiten GPUs de datacenter como A100 (80 GB) o H100 (80 GB) para inferencia en 768p, y posiblemente multiples GPUs para la generacion a 2K.
 - No se ha confirmado si el modelo puede ejecutarse en GPUs de consumo como la RTX 4090 (24 GB VRAM); la carga de un modelo de este tamano en una sola GPU de consumo parece improbable sin cuantizacion agresiva, y no se han publicado pesos cuantizados.
-- Opciones de despliegue: no se han publicado integraciones con vLLM, llama.cpp, Ollama o TGI. El repositorio de HuggingFace indica el uso de la libreria `minimax-h3` y `diffusers`, lo que sugiere un despliegue mediante el ecosistema de HuggingFace Diffusers.
+- Opciones de despliegue: no se han publicado integraciones con vLLM, llama.cpp, Ollama o TGI. El repositorio de Hugging Face indica el uso de la libreria `minimax-h3` y `diffusers`, lo que sugiere un despliegue mediante el ecosistema de Hugging Face Diffusers.
 - No se han publicado datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
@@ -77,8 +77,8 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Repositorio HuggingFace (copia): https://huggingface.co/Deepdive404-3/MiniMax-H3
-- Repositorio HuggingFace (original): https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio Hugging Face (copia): https://huggingface.co/Deepdive404-3/MiniMax-H3
+- Repositorio Hugging Face (original): https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio GitHub oficial: https://github.com/MiniMax-AI/MiniMax-H3
 - Hub de recursos y workflows: https://github.com/ai-models-lab/minimax-h3
 - Pagina de tutoriales y despliegue: https://design.minimax.io/h3

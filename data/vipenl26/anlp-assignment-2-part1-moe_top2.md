@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`vipenl26/anlp-assignment-2-part1-moe_top2` es un checkpoint de PyTorch publicado en HuggingFace por el usuario `vipenl26` como parte de la "ANLP Assignment 2" (parte 1). Según su model card, se trata de un transformer causal escrito desde cero en PyTorch, entrenado para dicha asignatura, y el propio nombre del repositorio indica que incorpora una capa de mezcla de expertos (MoE) con enrutamiento top-2. No es un modelo publicado por un laboratorio ni un lanzamiento de producción: es material académico, y la información pública sobre él se limita a la model card y a la lista de ficheros del repositorio.
+`vipenl26/anlp-assignment-2-part1-moe_top2` es un checkpoint de PyTorch publicado en Hugging Face por el usuario `vipenl26` como parte de la "ANLP Assignment 2" (parte 1). Según su model card, se trata de un transformer causal escrito desde cero en PyTorch, entrenado para dicha asignatura, y el propio nombre del repositorio indica que incorpora una capa de mezcla de expertos (MoE) con enrutamiento top-2. No es un modelo publicado por un laboratorio ni un lanzamiento de producción: es material académico, y la información pública sobre él se limita a la model card y a la lista de ficheros del repositorio.
 
-El repositorio ocupa 0,2 GB y contiene `checkpoint.pt`, `config.json`, `tokenizer.json` y `metadata.json`. El checkpoint no solo almacena pesos: incluye también el estado del optimizador, la configuración del modelo y metadatos de entrenamiento, lo que indica que está pensado para poder reanudar o reproducir el entrenamiento, no solo para inferencia. La carga requiere el código fuente de la asignatura, concretamente `src.training.load_checkpoint` y la arquitectura `src.part1.model.Transformer`, que es una implementación propia y no una arquitectura estándar de HuggingFace Transformers.
+El repositorio ocupa 0,2 GB y contiene `checkpoint.pt`, `config.json`, `tokenizer.json` y `metadata.json`. El checkpoint no solo almacena pesos: incluye también el estado del optimizador, la configuración del modelo y metadatos de entrenamiento, lo que indica que está pensado para poder reanudar o reproducir el entrenamiento, no solo para inferencia. La carga requiere el código fuente de la asignatura, concretamente `src.training.load_checkpoint` y la arquitectura `src.part1.model.Transformer`, que es una implementación propia y no una arquitectura estándar de Hugging Face Transformers.
 
 Su relevancia es fundamentalmente didáctica y de investigación: sirve como ejemplo reproducible de enrutamiento MoE top-2 sobre un transformer causal, y como banco de pruebas para experimentos de balanceo de expertos, ablaciones de enrutamiento y análisis de checkpoint. No se declara licencia, idiomas, pipeline ni resultados de evaluación, y el modelo acumula 0 descargas y 0 likes en el momento de redactar esta ficha.
 
@@ -20,7 +20,7 @@ Su relevancia es fundamentalmente didáctica y de investigación: sirve como eje
 | Idiomas soportados | no disponible |
 | Licencia | no disponible (no se declara licencia en el repositorio) |
 | Formato de pesos | PyTorch checkpoint (`.pt`) que contiene pesos del modelo, estado del optimizador, configuración y metadatos de entrenamiento |
-| Tokenizador | `tokenizer.json` en formato de la librería `tokenizers` de HuggingFace; vocabulario y política de tokenización no disponibles |
+| Tokenizador | `tokenizer.json` en formato de la librería `tokenizers` de Hugging Face; vocabulario y política de tokenización no disponibles |
 | Tamaño del repositorio | 0,2 GB |
 | Fecha de creación | 2026-10-03 |
 | Última actualización | 2026-10-03 |
@@ -53,7 +53,7 @@ Tampoco hay datos sobre el corpus de entrenamiento: se desconoce el número de t
 - Reanudación de entrenamientos largos: el estado del optimizador incluido permite retomar un entrenamiento interrumpido sin reiniciar la dinámica de optimización, útil en entornos con presupuesto de GPU limitado.
 - Estudio de tokenizadores: el fichero `tokenizer.json` permite analizar el vocabulario construido para la práctica y comparar su cobertura con tokenizadores de modelos abiertos de tamaño similar.
 
-En todos los casos anteriores el requisito previo es disponer del código fuente de la asignatura; el repositorio de HuggingFace no incluye por sí solo un cargador compatible con las herramientas estándar.
+En todos los casos anteriores el requisito previo es disponer del código fuente de la asignatura; el repositorio de Hugging Face no incluye por sí solo un cargador compatible con las herramientas estándar.
 
 ## Benchmarks y rendimiento
 
@@ -75,8 +75,8 @@ No hay base para una comparación de rendimiento: este checkpoint no publica mé
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `vipenl26/anlp-assignment-2-part1-moe_top2` | no disponible | no disponible (top-2 confirmado por el nombre) | no disponible | no disponible | Checkpoint `.pt` con arquitectura propia; requiere código de la asignatura |
-| OLMoE-1B-7B | 6,9 B | 1,3 B (64 expertos, top-8) | 4.096 tokens | Apache 2.0 | Pesos abiertos en HuggingFace, compatible con `transformers` |
-| Mixtral 8x7B | 46,7 B | 12,9 B (8 expertos, top-2) | 32.768 tokens | Apache 2.0 | Pesos abiertos en HuggingFace, compatible con `transformers` y vLLM |
+| OLMoE-1B-7B | 6,9 B | 1,3 B (64 expertos, top-8) | 4.096 tokens | Apache 2.0 | Pesos abiertos en Hugging Face, compatible con `transformers` |
+| Mixtral 8x7B | 46,7 B | 12,9 B (8 expertos, top-2) | 32.768 tokens | Apache 2.0 | Pesos abiertos en Hugging Face, compatible con `transformers` y vLLM |
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ No hay base para una comparación de rendimiento: este checkpoint no publica mé
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vipenl26/anlp-assignment-2-part1-moe_top2
+- Modelo en Hugging Face: https://huggingface.co/vipenl26/anlp-assignment-2-part1-moe_top2
 - Ficheros referenciados en la model card: `checkpoint.pt`, `config.json`, `tokenizer.json`, `metadata.json` (disponibles en el repositorio anterior)
 - Repositorio del código de la asignatura (`src.training.load_checkpoint`, `src.part1.model.Transformer`): no disponible, no se enlaza en la información proporcionada
 - Paper asociado: no disponible

@@ -64,16 +64,16 @@ No se han publicado resultados de benchmarks estandar (MLSU, FLEURS, VIVOS u otr
 - VRAM en FP32: aproximadamente 6,2 GB solo para pesos; en torno a 8-10 GB con overhead.
 - GPU recomendadas: A100 o H100 para throughput alto por lotes; L4, A10G o RTX 4090 para despliegue en produccion con latencia baja.
 - Cabe en GPU de consumo: si, en RTX 3090, RTX 4090, RTX 4080 y tarjetas con 8 GB o mas en FP16; en 6 GB requiere cuantizacion (no documentada por el autor).
-- Opciones de despliegue: transformers (version de exportacion 5.17.0), pipeline `automatic-speech-recognition`; compatible con `endpoints_compatible` segun los tags de HuggingFace. No se documenta soporte especifico de vLLM, llama.cpp, Ollama ni TGI para este checkpoint.
+- Opciones de despliegue: transformers (version de exportacion 5.17.0), pipeline `automatic-speech-recognition`; compatible con `endpoints_compatible` segun los tags de Hugging Face. No se documenta soporte especifico de vLLM, llama.cpp, Ollama ni TGI para este checkpoint.
 - Latencia y throughput: no disponibles. El autor solo documenta batch size de evaluacion (v1: 8; v2: 32) y decodificacion greedy con 256 tokens maximos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kzap201/phowhisper-large-zaloai | 1.543 M | ventana de 30 s (Whisper) | vi | BSD 3-Clause | HuggingFace, 22 descargas |
-| vinai/PhoWhisper-large (modelo base) | 1.543 M | ventana de 30 s (Whisper) | vi | BSD 3-Clause | HuggingFace, ampliamente usado |
-| openai/whisper-large-v3 | 1.550 M | ventana de 30 s (Whisper) | multilingue | Apache 2.0 | HuggingFace, muy extendido |
+| kzap201/phowhisper-large-zaloai | 1.543 M | ventana de 30 s (Whisper) | vi | BSD 3-Clause | Hugging Face, 22 descargas |
+| vinai/PhoWhisper-large (modelo base) | 1.543 M | ventana de 30 s (Whisper) | vi | BSD 3-Clause | Hugging Face, ampliamente usado |
+| openai/whisper-large-v3 | 1.550 M | ventana de 30 s (Whisper) | multilingue | Apache 2.0 | Hugging Face, muy extendido |
 
 No se dispone de resultados comparativos de WER entre estos modelos en el mismo conjunto de evaluacion; el autor solo publica metricas de desarrollo de sus propias versiones v1 y v2.
 
@@ -90,7 +90,7 @@ No se dispone de resultados comparativos de WER entre estos modelos en el mismo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kzap201/phowhisper-large-zaloai
+- Modelo en Hugging Face: https://huggingface.co/kzap201/phowhisper-large-zaloai
 - Modelo base PhoWhisper-large: https://huggingface.co/vinai/PhoWhisper-large
 - Repositorio de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

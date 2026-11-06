@@ -69,8 +69,8 @@ El autor advierte que GPQA es una evaluacion no determinista y que la cuantizaci
 
 | Modelo | Parametros totales | Cuantizacion | Contexto | GPQA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| RedHatAI/DeepSeek-V4-Flash-0731-NVFP4-FP8-BLOCK | 145,8 mil millones | NVFP4 (expertos enrutados) + FP8 (atencion y expertos compartidos) | no disponible | 86,15% | no disponible | HuggingFace, safetensors, compressed-tensors |
-| deepseek-ai/DeepSeek-V4-Flash-0731 | no disponible | precision original del modelo base | no disponible | 84,34% | no disponible | HuggingFace |
+| RedHatAI/DeepSeek-V4-Flash-0731-NVFP4-FP8-BLOCK | 145,8 mil millones | NVFP4 (expertos enrutados) + FP8 (atencion y expertos compartidos) | no disponible | 86,15% | no disponible | Hugging Face, safetensors, compressed-tensors |
+| deepseek-ai/DeepSeek-V4-Flash-0731 | no disponible | precision original del modelo base | no disponible | 84,34% | no disponible | Hugging Face |
 | Otras alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria en los datos proporcionados, por lo que la comparativa se limita al modelo base.
@@ -80,7 +80,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 - Sesgos conocidos: no disponible. Al ser un checkpoint cuantizado del modelo base, hereda los sesgos de este, no documentados en la informacion proporcionada.
 - Riesgo de alucinacion: inherente a los modelos generativos de este tipo. No se publican evaluaciones de veracidad ni tasas de alucinacion especificas.
 - Limitaciones de contexto e idioma: no se publica la longitud de contexto ni la lista de idiomas soportados, lo que impide dimensionar escenarios multilingues o de contexto largo sin validacion previa.
-- Licencia: la ficha de HuggingFace indica licencia "no disponible", por lo que no es posible confirmar si se permite el uso comercial. Debe consultarse la licencia del modelo base deepseek-ai/DeepSeek-V4-Flash-0731 antes de cualquier despliegue en produccion.
+- Licencia: la ficha de Hugging Face indica licencia "no disponible", por lo que no es posible confirmar si se permite el uso comercial. Debe consultarse la licencia del modelo base deepseek-ai/DeepSeek-V4-Flash-0731 antes de cualquier despliegue en produccion.
 - Naturaleza de la cuantizacion: la cuantizacion mixta puede degradar tareas distintas de la evaluada. El unico benchmark publicado es GPQA, por lo que el comportamiento en codigo, matematicas, seguimiento de instrucciones o tool calling debe validarse por cuenta propia.
 - Interpretacion de la mejora en GPQA: el propio autor advierte que GPQA es no determinista y que la cuantizacion puede actuar como regularizador; la mejora de 84,34% a 86,15% no debe tomarse como evidencia de mejor calidad general.
 - Requisitos de despliegue: la configuracion recomendada requiere al menos 8 GPUs con tensor parallel, y el repositorio ocupa 164,6 GB, lo que limita su uso a infraestructura de servidor.
@@ -89,7 +89,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/RedHatAI/DeepSeek-V4-Flash-0731-NVFP4-FP8-BLOCK
+- Hugging Face del modelo: https://huggingface.co/RedHatAI/DeepSeek-V4-Flash-0731-NVFP4-FP8-BLOCK
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Repositorio compressed-tensors: https://github.com/vllm-project/compressed-tensors
 - Repositorio LLM Compressor: https://github.com/vllm-project/llm-compressor

@@ -105,7 +105,7 @@ La comparacion debe interpretarse con cautela: Anvaya-1B es un checkpoint de pre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vijayendra/Anvaya-1B
+- Modelo en Hugging Face: https://huggingface.co/Vijayendra/Anvaya-1B
 - Repositorio de entrenamiento y documentacion: https://github.com/VijayendraDwari/pretrain-1b-on-2xT4
 - Checkpoint reanudable en Kaggle: https://www.kaggle.com/datasets/vijayendrad/dense-1b-do
 - Dataset FineWeb: https://huggingface.co/datasets/HuggingFaceFW/fineweb

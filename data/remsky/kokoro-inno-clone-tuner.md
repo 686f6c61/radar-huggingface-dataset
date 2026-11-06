@@ -6,7 +6,7 @@ kokoro-inno-clone-tuner es un adaptador de ajuste de voz (voice tuner) zero-shot
 
 El adaptador se apoya en una arquitectura tipo StyleTTS2 con un encoder de hablante WeSpeaker ResNet34 de 6,6 millones de parametros, destilado para producir embeddings de UniSpeech-SAT-sv, junto con una style head que mapea el embedding de hablante (512) al espacio de estilo de Kokoro (256) y un mecanismo de mezcla de prosodia sobre los packs stock del modelo base. Todo el proceso de enrollment es muy ligero: aproximadamente 0,05 segundos por segundo de referencia en CPU y entre 0,1 y 0,3 segundos en GPU.
 
-Es relevante ahora porque reduce el coste de crear voces personalizadas en Kokoro a un clip corto y un par de decimas de segundo de computo, con un coste de entrenamiento declarado inferior a 20 dolares en GPU (HF Jobs `a10g-small`). Se distribuye bajo licencia Apache 2.0, con 35.731 descargas en HuggingFace, y ya esta integrado en Kokoro-FastAPI a partir de la version 0.9.0. El propio autor lo describe como herramienta de exploracion y personalizacion, no como un clonador de identidad robusto.
+Es relevante ahora porque reduce el coste de crear voces personalizadas en Kokoro a un clip corto y un par de decimas de segundo de computo, con un coste de entrenamiento declarado inferior a 20 dolares en GPU (HF Jobs `a10g-small`). Se distribuye bajo licencia Apache 2.0, con 35.731 descargas en Hugging Face, y ya esta integrado en Kokoro-FastAPI a partir de la version 0.9.0. El propio autor lo describe como herramienta de exploracion y personalizacion, no como un clonador de identidad robusto.
 
 ## Especificaciones tecnicas
 
@@ -82,8 +82,8 @@ La model card solo publica una metrica cuantitativa del speaker encoder: una coi
 
 | Modelo | Parametros | Contexto / entrada | Idiomas | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|---|
-| remsky/kokoro-inno-clone-tuner | 9.653.396 (adaptador) | Clip de referencia de 3-30 s | Ingles | Apache 2.0 | Tuner zero-shot sobre Kokoro-82M | HuggingFace, integrado en Kokoro-FastAPI 0.9.0+ |
-| hexgrad/Kokoro-82M | 82 M | No aplica (packs stock predefinidos) | Multiples idiomas segun el modelo base | Apache 2.0 | TTS con voces fijas | HuggingFace |
+| remsky/kokoro-inno-clone-tuner | 9.653.396 (adaptador) | Clip de referencia de 3-30 s | Ingles | Apache 2.0 | Tuner zero-shot sobre Kokoro-82M | Hugging Face, integrado en Kokoro-FastAPI 0.9.0+ |
+| hexgrad/Kokoro-82M | 82 M | No aplica (packs stock predefinidos) | Multiples idiomas segun el modelo base | Apache 2.0 | TTS con voces fijas | Hugging Face |
 | Otras alternativas de clonacion zero-shot (XTTS-v2, OpenVoice, F5-TTS) | no disponible | no disponible | no disponible | no disponible | Clonacion de identidad | no disponible en la informacion proporcionada |
 
 La comparativa con alternativas de clonacion zero-shot no puede completarse con datos verificados: la busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre modelos comparables (los resultados obtenidos corresponden a servicios meteorologicos y no guardan relacion con la consulta).
@@ -103,7 +103,7 @@ La comparativa con alternativas de clonacion zero-shot no puede completarse con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/remsky/kokoro-inno-clone-tuner
+- Modelo en Hugging Face: https://huggingface.co/remsky/kokoro-inno-clone-tuner
 - Repositorio de codigo: https://github.com/remsky/inno-kokoro
 - Kokoro-FastAPI (integracion desde v0.9.0): https://github.com/remsky/Kokoro-FastAPI
 - Modelo base Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M

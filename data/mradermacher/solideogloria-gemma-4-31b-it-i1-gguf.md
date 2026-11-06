@@ -76,11 +76,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/SoliDeoGloria-Gemma-4-31B-it-i1-GGUF (este) | ~30,7 B | 256K (según información pública de Gemma 4 31B) | GGUF imatrix | MIT | HuggingFace, descargas 0, likes 0 |
-| moonshineai/SoliDeoGloria-Gemma-4-31B-it (base) | ~30,7 B | no disponible | safetensors (transformers) | no disponible | HuggingFace |
-| mradermacher/SoliDeoGloria-Gemma-4-31B-it-GGUF (cuantización estática) | ~30,7 B | no disponible | GGUF estático + mmproj | MIT | HuggingFace |
-| mradermacher/gemma-4-31B-i1-GGUF (Gemma 4 31B sin ajuste) | ~31 B | no disponible | GGUF imatrix | no disponible | HuggingFace |
-| mradermacher/gemma-4-31b-it-heretic-ara-i1-GGUF | ~31 B | no disponible | GGUF imatrix | no disponible | HuggingFace |
+| mradermacher/SoliDeoGloria-Gemma-4-31B-it-i1-GGUF (este) | ~30,7 B | 256K (según información pública de Gemma 4 31B) | GGUF imatrix | MIT | Hugging Face, descargas 0, likes 0 |
+| moonshineai/SoliDeoGloria-Gemma-4-31B-it (base) | ~30,7 B | no disponible | safetensors (transformers) | no disponible | Hugging Face |
+| mradermacher/SoliDeoGloria-Gemma-4-31B-it-GGUF (cuantización estática) | ~30,7 B | no disponible | GGUF estático + mmproj | MIT | Hugging Face |
+| mradermacher/gemma-4-31B-i1-GGUF (Gemma 4 31B sin ajuste) | ~31 B | no disponible | GGUF imatrix | no disponible | Hugging Face |
+| mradermacher/gemma-4-31b-it-heretic-ara-i1-GGUF | ~31 B | no disponible | GGUF imatrix | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento real frente a alternativas de la misma categoría.
 
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento real f
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/SoliDeoGloria-Gemma-4-31B-it-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/SoliDeoGloria-Gemma-4-31B-it-i1-GGUF
 - Repositorio estático (cuantizaciones estáticas y ficheros mmproj): https://huggingface.co/mradermacher/SoliDeoGloria-Gemma-4-31B-it-GGUF
 - Página de descargas del autor para este modelo: https://hf.tst.eu/model#SoliDeoGloria-Gemma-4-31B-it-i1-GGUF
 - Modelo base: https://huggingface.co/moonshineai/SoliDeoGloria-Gemma-4-31B-it

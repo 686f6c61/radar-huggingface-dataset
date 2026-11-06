@@ -97,7 +97,7 @@ No se dispone de comparativa frente a modelos completos (parametros, contexto, l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FrontiersMind/GVA
+- Hugging Face: https://huggingface.co/FrontiersMind/GVA
 - Articulo citado: Tripathi, V., Kumar, A., Khan, R. (2026), "Grouped Value Attention: Efficient KV Caching via On-Demand Key Reconstruction". Sin enlace directo disponible en la informacion proporcionada.
 - Repositorio de codigo: no disponible.
 - Demo: no disponible.

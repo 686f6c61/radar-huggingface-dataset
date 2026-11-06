@@ -65,7 +65,7 @@ Estos valores corresponden a la precisión media de atribución cuando se utiliz
 - VRAM estimada para inferencia: con 1,18 mil millones de parámetros en bf16, el modelo ocupa aproximadamente 2,4 GB en memoria. En fp32 serían unos 4,7 GB. Una GPU con 6 GB de VRAM es suficiente para inferencia en bf16.
 - GPU recomendadas: cualquier GPU moderna con al menos 6 GB de VRAM, como NVIDIA RTX 3060, RTX 4060, o superiores. Para entrenamiento se utilizaron 2 GPU GH200, pero no son necesarias para inferencia.
 - Compatibilidad con GPU de consumo: sí, cabe en la mayoría de GPU de consumo actuales (RTX 3060, RTX 4070, etc.) e incluso en algunas integradas con suficiente memoria compartida.
-- Opciones de despliegue: al ser un modelo con pesos en safetensors y formato HuggingFace, puede cargarse con transformers, vLLM, llama.cpp (si se convierte a GGUF), Ollama (con conversión previa) o TGI. Para tareas de atribución por lotes, se recomienda vLLM por su mayor throughput.
+- Opciones de despliegue: al ser un modelo con pesos en safetensors y formato Hugging Face, puede cargarse con transformers, vLLM, llama.cpp (si se convierte a GGUF), Ollama (con conversión previa) o TGI. Para tareas de atribución por lotes, se recomienda vLLM por su mayor throughput.
 - Latencia y throughput estimados: no disponibles en la información proporcionada. Dado el tamaño del modelo, se espera una latencia de decodificación de decenas de milisegundos por token en GPU modernas, pero no hay datos publicados.
 
 ## Comparativa con modelos similares
@@ -89,11 +89,11 @@ La comparativa se limita a otros modelos del mismo autor y al modelo base, ya qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-hesiod
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-hesiod
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Código de entrenamiento y puntuación: https://github.com/Urdatorn/sphragis_models
 - Modelo base OLMo-1B: https://huggingface.co/allenai/OLMo-1B-hf
 - Repositorio OLMo de AI2: https://github.com/allenai/OLMo
 - Página de OLMo en AI2: https://allenai.org/olmo
-- Perfil del autor en HuggingFace: https://huggingface.co/Urdatorn/models
+- Perfil del autor en Hugging Face: https://huggingface.co/Urdatorn/models
 - Artículo de referencia (Huang, Murakami y Grieve, 2025): PLoS ONE 20(7): e0327081 (no se proporciona URL directa)

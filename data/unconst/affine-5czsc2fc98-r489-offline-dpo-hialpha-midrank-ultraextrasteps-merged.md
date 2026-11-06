@@ -33,7 +33,7 @@ El modelo incluye la etiqueta `image-text-to-text`, lo que indica que el modelo 
 
 - Generacion de texto conversacional: el modelo esta configurado con pipeline `text-generation` y la etiqueta `conversational`, lo que indica soporte para dialogos multi-turno.
 - Procesamiento multimodal imagen-texto: segun la etiqueta `image-text-to-text`, el modelo puede procesar entradas que combinan imagenes y texto.
-- Integracion con transformers: compatible con la libreria transformers de HuggingFace para carga e inferencia.
+- Integracion con transformers: compatible con la libreria transformers de Hugging Face para carga e inferencia.
 - Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en infraestructura de inferencia gestionada.
 
 ## Casos de uso
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa rigurosa. El modelo pertenece a la familia Qwen3.5 MoE, pero al no conocerse la configuracion exacta de expertos activos, el contexto soportado ni los resultados de benchmarks, no es posible compararlo de forma cuantitativa con alternativas como Qwen3-30B-A3B, DeepSeek-V3 o Llama-3.1-70B. Se recomienda consultar los modelos base de la familia Qwen3.5 MoE en HuggingFace para obtener referencias comparables.
+No se dispone de informacion suficiente para establecer una comparativa rigurosa. El modelo pertenece a la familia Qwen3.5 MoE, pero al no conocerse la configuracion exacta de expertos activos, el contexto soportado ni los resultados de benchmarks, no es posible compararlo de forma cuantitativa con alternativas como Qwen3-30B-A3B, DeepSeek-V3 o Llama-3.1-70B. Se recomienda consultar los modelos base de la familia Qwen3.5 MoE en Hugging Face para obtener referencias comparables.
 
 ## Limitaciones y advertencias
 
@@ -76,7 +76,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r489-offline-dpo-hialpha-midrank-ultraextrasteps-merged
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r489-offline-dpo-hialpha-midrank-ultraextrasteps-merged
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft
 - Checkpoint relacionado (r29-merged): https://huggingface.co/unconst/Affine-5czsc2fc98-r29-merged
 - Checkpoint relacionado (r22-lora): https://huggingface.co/unconst/Affine-5czsc2fc98-r22-lora

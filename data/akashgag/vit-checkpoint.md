@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`akashgag/vit-checkpoint` es un prototipo de investigación que implementa un Vision Transformer (ViT) orientado a aprendizaje contrastivo. Lo desarrolla el autor `akashgag` y se publica en HuggingFace bajo licencia Apache-2.0. El repositorio incluye un script de entrenamiento (`train.py`), un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en formato `safetensors`.
+`akashgag/vit-checkpoint` es un prototipo de investigación que implementa un Vision Transformer (ViT) orientado a aprendizaje contrastivo. Lo desarrolla el autor `akashgag` y se publica en Hugging Face bajo licencia Apache-2.0. El repositorio incluye un script de entrenamiento (`train.py`), un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en formato `safetensors`.
 
 El modelo no está entrenado. Según su model card, el checkpoint es un punto de partida para pruebas de humo y experimentación, y no se presentan resultados de rendimiento ni benchmarks. La arquitectura declarada es ViT a escala "giant", con atención dilatada, fusión por cross-attention, activación GELU y normalización ScaleNorm. El número total de parámetros según el archivo `safetensors` es de 24.832, lo que indica que se trata de una implementación mínima o de un prototipo de configuración, no de un modelo de gran escala real.
 
@@ -40,7 +40,7 @@ No se dispone de casos de uso en producción porque el checkpoint no está entre
 - Investigación en arquitecturas ViT contrastivas: el script permite entrenar desde cero y comparar configuraciones de atención dilatada frente a atención estándar, siempre que se definan los mismos datos y presupuesto de cómputo.
 - Pruebas de humo (smoke tests) de pipelines de entrenamiento: el checkpoint de inicialización sirve para validar que el código de entrenamiento, la carga de pesos y la ejecución del script funcionan antes de lanzar experimentos costosos.
 - Exploración de técnicas de fusión por cross-attention en modelos de visión: la configuración documentada puede usarse como base para experimentos que estudien cómo combinar representaciones de diferentes ramas.
-- Desarrollo de adaptadores para APIs de carga automática: al ser una implementación personalizada, el modelo puede utilizarse para probar adaptadores de compatibilidad con frameworks como HuggingFace Transformers.
+- Desarrollo de adaptadores para APIs de carga automática: al ser una implementación personalizada, el modelo puede utilizarse para probar adaptadores de compatibilidad con frameworks como Hugging Face Transformers.
 - Docencia y formación en arquitecturas transformer: el código es un ejemplo mínimo de ViT con configuración "giant", útil para mostrar los componentes de un modelo de visión y su receta de optimización.
 - Evaluación de recetas de optimización: el `training_args.json` define una receta por defecto (AdamW con warmup constante) que puede compararse con otras configuraciones en entornos controlados.
 
@@ -72,5 +72,5 @@ No disponible. No se han identificado modelos comparables porque este checkpoint
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/akashgag/vit-checkpoint
+- Hugging Face: https://huggingface.co/akashgag/vit-checkpoint
 - La búsqueda web no arrojó enlaces relevantes; los resultados encontrados eran ajenos al modelo.

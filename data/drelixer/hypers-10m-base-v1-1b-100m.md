@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HyperS-10M-Base-v1.1b-100M es un modelo de lenguaje causal experimental de 9.976.787 parametros (~10M) desarrollado por Sayak Mondal (usuario `drelixer` en HuggingFace). No es un Transformer: emplea una arquitectura recurrente denominada HyperS-v1.1b, construida alrededor de un mecanismo de estado geometrico persistente llamado Parallel Adaptive HyperState (PAHS), con geometria hiperesferica local y metricas adaptativas en lugar de self-attention. El modelo mantiene un estado persistente de 7.680 valores escalares por secuencia (unos 30 KiB en FP32) que se arrastra entre fragmentos, sin cache KV.
+HyperS-10M-Base-v1.1b-100M es un modelo de lenguaje causal experimental de 9.976.787 parametros (~10M) desarrollado por Sayak Mondal (usuario `drelixer` en Hugging Face). No es un Transformer: emplea una arquitectura recurrente denominada HyperS-v1.1b, construida alrededor de un mecanismo de estado geometrico persistente llamado Parallel Adaptive HyperState (PAHS), con geometria hiperesferica local y metricas adaptativas en lugar de self-attention. El modelo mantiene un estado persistente de 7.680 valores escalares por secuencia (unos 30 KiB en FP32) que se arrastra entre fragmentos, sin cache KV.
 
 Se trata de un checkpoint base de investigacion: no esta afinado para instrucciones ni para chat, y su publicacion es un release de solo pesos en formato `.pt` de PyTorch, no un paquete nativo de `transformers`. El modelo fue entrenado sobre 100.001.792 tokens con fragmentos de 64 tokens en precision BF16, usando una mezcla de TinyStories y FineWeb-Edu, con un vocabulario de 8.192 entradas y el tokenizador propio HGT-8K.
 
@@ -145,7 +145,7 @@ La unica comparacion con datos verificables en la informacion proporcionada es l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/drelixer/HyperS-10M-Base-v1.1b-100M
+- Hugging Face: https://huggingface.co/drelixer/HyperS-10M-Base-v1.1b-100M
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Paper, blog, repositorio o demo adicionales: no disponible; la busqueda web no devolvio ningun resultado relacionado con el modelo (los resultados obtenidos trataban sobre Twitter y no guardan relacion con HyperS).

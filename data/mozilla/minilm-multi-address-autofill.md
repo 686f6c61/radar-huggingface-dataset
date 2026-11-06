@@ -78,8 +78,8 @@ Precisión de la cuantización int8: fp32 0,8873 → int8 0,8861 sobre `testing-
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mozilla/minilm-multi-address-autofill | 14.562.882 | no disponible | test acc 0,8873; `name` recall val 0,940 | MPL-2.0 | HuggingFace (safetensors + ONNX) |
-| `rolf-mozilla/minilm-pruned-notest-relabel` (encoder base) | no disponible | no disponible | no disponible | no disponible | HuggingFace (referenciado en la model card) |
+| Mozilla/minilm-multi-address-autofill | 14.562.882 | no disponible | test acc 0,8873; `name` recall val 0,940 | MPL-2.0 | Hugging Face (safetensors + ONNX) |
+| `rolf-mozilla/minilm-pruned-notest-relabel` (encoder base) | no disponible | no disponible | no disponible | no disponible | Hugging Face (referenciado en la model card) |
 | Baseline `bb` anterior | no disponible | no disponible | `name` recall val 0,783 | no disponible | no disponible |
 | Equivalentes públicos de clasificación de campos de formulario | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,7 +99,7 @@ No se dispone en la información proporcionada de modelos alternativos con espec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mozilla/minilm-multi-address-autofill
+- Hugging Face: https://huggingface.co/Mozilla/minilm-multi-address-autofill
 - Modelo base referenciado: `rolf-mozilla/minilm-pruned-notest-relabel` (sin URL completa en la información disponible)
 - Bugzilla 2064781 (referencia técnica sobre el acumulador int16 y AVX2): no se proporciona URL directa en la información disponible
 - Los resultados de búsqueda web obtenidos corresponden únicamente a páginas genéricas de Mozilla y Firefox (https://www.mozilla.org/, https://www.firefox.com/) y no aportan documentación técnica adicional sobre este modelo.

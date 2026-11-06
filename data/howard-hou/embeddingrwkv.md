@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EmbeddingRWKV es una familia de modelos de embeddings de texto y reranking construida sobre la arquitectura RWKV, concretamente sobre el modelo base BlinkDL/rwkv7-g1. Lo desarrolla el usuario de HuggingFace howard-hou y se distribuye bajo licencia Apache 2.0. Su proposito es cubrir dos tareas clasicas de recuperacion de informacion (retrieval y reranking) con un coste computacional bajo, aprovechando las ventajas de un modelo recurrente lineal frente a un transformer clasico.
+EmbeddingRWKV es una familia de modelos de embeddings de texto y reranking construida sobre la arquitectura RWKV, concretamente sobre el modelo base BlinkDL/rwkv7-g1. Lo desarrolla el usuario de Hugging Face howard-hou y se distribuye bajo licencia Apache 2.0. Su proposito es cubrir dos tareas clasicas de recuperacion de informacion (retrieval y reranking) con un coste computacional bajo, aprovechando las ventajas de un modelo recurrente lineal frente a un transformer clasico.
 
 El repositorio incluye tres niveles de tamano (Tiny, Base y Large) con pesos en formato `.pth` de PyTorch, junto con rerankers emparejados. La propuesta tecnica mas singular es el uso del estado final del modelo de embeddings (en concreto el estado de TimeMixing) como entrada del reranker, lo que permite precomputar y cachear estados de documentos y reducir la latencia en consulta a O(L_query) en lugar de O(L_doc + L_query).
 
@@ -88,6 +88,6 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas (dimensio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/howard-hou/EmbeddingRWKV
+- Hugging Face: https://huggingface.co/howard-hou/EmbeddingRWKV
 - Pesos: https://huggingface.co/howard-hou/EmbeddingRWKV/tree/main
 - Modelo base: https://huggingface.co/BlinkDL/rwkv7-g1

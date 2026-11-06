@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mohawwad93/legal_bert_no_augment_stage2` es un modelo de clasificacion de texto publicado en HuggingFace por el usuario mohawwad93. La informacion disponible en el Hub lo identifica como un modelo basado en BERT (etiqueta `bert`), compatible con la libreria `transformers` y con pipeline `text-classification`, con pesos en formato safetensors. El recuento real de parametros almacenados en el repositorio es de 109.483.778, cifra que coincide exactamente con la de un BERT-base (12 capas, 768 de dimension oculta) mas una cabeza de clasificacion de dos etiquetas (768x2 + 2 = 1.538 parametros adicionales). Esto permite inferir que se trata de un clasificador binario derivado de BERT-base, aunque el autor no confirma esta correspondencia en la model card.
+`mohawwad93/legal_bert_no_augment_stage2` es un modelo de clasificacion de texto publicado en Hugging Face por el usuario mohawwad93. La informacion disponible en el Hub lo identifica como un modelo basado en BERT (etiqueta `bert`), compatible con la libreria `transformers` y con pipeline `text-classification`, con pesos en formato safetensors. El recuento real de parametros almacenados en el repositorio es de 109.483.778, cifra que coincide exactamente con la de un BERT-base (12 capas, 768 de dimension oculta) mas una cabeza de clasificacion de dos etiquetas (768x2 + 2 = 1.538 parametros adicionales). Esto permite inferir que se trata de un clasificador binario derivado de BERT-base, aunque el autor no confirma esta correspondencia en la model card.
 
-El nombre del repositorio sugiere un modelo orientado al dominio juridico ("legal"), entrenado sin aumento de datos ("no augment") y en una segunda etapa de entrenamiento ("stage2"), pero esta interpretacion procede unicamente del identificador y no de documentacion del autor. La model card publicada es la plantilla automatica de HuggingFace, sin ninguna seccion completada: no hay descripcion, datos de entrenamiento, hiperparametros, resultados de evaluacion ni licencia.
+El nombre del repositorio sugiere un modelo orientado al dominio juridico ("legal"), entrenado sin aumento de datos ("no augment") y en una segunda etapa de entrenamiento ("stage2"), pero esta interpretacion procede unicamente del identificador y no de documentacion del autor. La model card publicada es la plantilla automatica de Hugging Face, sin ninguna seccion completada: no hay descripcion, datos de entrenamiento, hiperparametros, resultados de evaluacion ni licencia.
 
 La relevancia de esta ficha es, por tanto, limitada: el modelo tiene cero descargas y cero "likes" en la fecha de consulta, y carece de informacion suficiente para evaluar su calidad o sus condiciones de uso. Se documenta aqui estrictamente lo verificable a partir de los metadatos y del recuento de parametros, marcando como "no disponible" todo lo que el autor no ha publicado.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Memoria total en ejecucion: inferior a 1 GB en la mayoria de configuraciones con lotes pequenos, sumando activaciones y buffers de atencion.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Funciona sin problema en GTX 1650, RTX 3060, RTX 4090, A100 o H100; en estas ultimas el modelo queda enormemente infrautilizado.
 - Consumer GPU: si, cabe holgadamente en cualquier GPU de consumo de los ultimos diez anos, e incluso en CPU (la inferencia en CPU es viable para un encoder de 12 capas).
-- Opciones de despliegue: `transformers` (PyTorch), `text-embeddings-inference` (etiqueta declarada en el Hub), y en general servidores compatibles con el endpoint de HuggingFace (`endpoints_compatible`). No se han publicado pesos en GGUF, por lo que Ollama o llama.cpp requeririan una conversion propia.
+- Opciones de despliegue: `transformers` (PyTorch), `text-embeddings-inference` (etiqueta declarada en el Hub), y en general servidores compatibles con el endpoint de Hugging Face (`endpoints_compatible`). No se han publicado pesos en GGUF, por lo que Ollama o llama.cpp requeririan una conversion propia.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ La comparacion de rendimiento entre estos modelos no esta disponible: no existen
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla automatica de HuggingFace, sin descripcion, datos de entrenamiento, hiperparametros ni evaluacion. No es posible reproducir el modelo ni auditar su proceso de entrenamiento.
+- Ausencia total de documentacion: la model card es la plantilla automatica de Hugging Face, sin descripcion, datos de entrenamiento, hiperparametros ni evaluacion. No es posible reproducir el modelo ni auditar su proceso de entrenamiento.
 - Licencia no disponible: al no declararse licencia, no hay autorizacion explicita de uso comercial. En ausencia de licencia, deben asumirse todos los derechos reservados por defecto.
 - Sesgos desconocidos: al no documentarse el corpus de entrenamiento, no se puede evaluar el sesgo de genero, raza, nacionalidad ni de ninguna otra dimension, algo especialmente sensible en el ambito juridico.
 - Riesgo de alucinacion: bajo en el sentido generativo (el modelo no genera texto libre), pero existe riesgo de clasificaciones erroneas con alta confianza. Las probabilidades de salida de un encoder ajustado con pocos datos no estan bien calibradas por defecto.
@@ -98,7 +98,7 @@ La comparacion de rendimiento entre estos modelos no esta disponible: no existen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohawwad93/legal_bert_no_augment_stage2
+- Modelo en Hugging Face: https://huggingface.co/mohawwad93/legal_bert_no_augment_stage2
 - Paper de Lacoste et al. (2019) sobre estimacion del impacto ambiental, referenciado en la model card: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de Machine Learning: https://mlco2.github.io/impact
 - Repositorio del modelo (campo de la model card): no disponible

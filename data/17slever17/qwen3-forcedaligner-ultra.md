@@ -120,9 +120,9 @@ Qwen3-ForcedAligner-Ultra supera claramente al modelo oficial en todos los umbra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/17slever17/Qwen3-ForcedAligner-Ultra
+- Modelo en Hugging Face: https://huggingface.co/17slever17/Qwen3-ForcedAligner-Ultra
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B
 - Repositorio GitHub del proyecto Qwen3 Forced Aligner: https://github.com/WEIFENG2333/qwen3-forced-aligner
-- Space de HuggingFace con demo interactiva: https://huggingface.co/spaces/sleeper371/qwen3_force_aligner
+- Space de Hugging Face con demo interactiva: https://huggingface.co/spaces/sleeper371/qwen3_force_aligner
 - Repositorio oficial Qwen3-ASR: https://github.com/QwenLM/Qwen3-ASR
 - Informe técnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1

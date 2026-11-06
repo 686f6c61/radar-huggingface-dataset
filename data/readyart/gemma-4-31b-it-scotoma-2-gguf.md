@@ -66,7 +66,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma-2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma-2-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma-2
 - Versión anterior scotoma: https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma
 - Ficha en LLM Explorer: https://llm-explorer.com/model/ReadyArt%2Fgemma-4-31B-it-scotoma-2,72sD2D41CSiRwu6jn8U3Z3

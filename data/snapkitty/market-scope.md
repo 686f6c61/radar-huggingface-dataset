@@ -4,7 +4,7 @@
 
 MARKETSCOPE es una plataforma de inteligencia de mercado y análisis de investigación (MIRP) desarrollada por el usuario Snapkitty bajo el sello SNAPKITTYWEST. No se trata de un modelo de inteligencia artificial generativa, sino de un sistema de software soberano compuesto por cinco agentes que ingieren datos de índices globales (S&P 500, Nikkei, DAX, KOSPI, etc.), los procesan mediante una capa de lógica determinista en Prolog, aplican modelos cuantitativos (conformal prediction, bosques cuantiles) y emiten análisis de escenarios probabilísticos, nunca predicciones puntuales. La plataforma incorpora una cadena de auditoría inmutable (Bifrost WORM Chain) que registra cada inferencia y cada peso de modelo, y exige revisión humana obligatoria para cualquier acción. Es relevante porque plantea un enfoque de análisis de mercado con trazabilidad total y restricciones explícitas contra el asesoramiento financiero automatizado.
 
-Esta ficha describe la plataforma tal y como aparece en la model card de HuggingFace, aclarando que no es un modelo de IA convencional y que muchos de los campos técnicos habituales (parámetros, cuantización, pesos) no son aplicables.
+Esta ficha describe la plataforma tal y como aparece en la model card de Hugging Face, aclarando que no es un modelo de IA convencional y que muchos de los campos técnicos habituales (parámetros, cuantización, pesos) no son aplicables.
 
 ## Especificaciones tecnicas
 
@@ -65,9 +65,9 @@ No disponible. MARKETSCOPE no es comparable con modelos de inteligencia artifici
 - No se indica la licencia de uso; cualquier uso comercial o de producción debe verificar los términos de la plataforma y de sus dependencias.
 - La documentación está en inglés y la información de idiomas soportados no está disponible.
 - La cadena WORM y las firmas Ed25519 proporcionan integridad, pero no garantizan la exactitud de los datos de entrada ni de los modelos subyacentes.
-- La fecha de creación en HuggingFace es posterior a la fecha de sellado indicada en la model card (inconsistencia temporal), lo que puede indicar que la plataforma aún está en fase v0.1.
+- La fecha de creación en Hugging Face es posterior a la fecha de sellado indicada en la model card (inconsistencia temporal), lo que puede indicar que la plataforma aún está en fase v0.1.
 
 ## Enlaces
 
-- [HuggingFace: Snapkitty/market-scope](https://huggingface.co/Snapkitty/market-scope)
+- [Hugging Face: Snapkitty/market-scope](https://huggingface.co/Snapkitty/market-scope)
 - [Repositorio GitHub mencionado en la model card](https://github.com/SNAPKITTYWEST/market-scope.git)

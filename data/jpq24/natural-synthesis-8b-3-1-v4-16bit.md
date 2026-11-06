@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Natural-Synthesis-8b-3.1-v4-16bit es un ajuste fino (fine-tuning) del modelo Meta-Llama-3.1-8B-Instruct, desarrollado por el usuario JPQ24 y publicado en HuggingFace bajo licencia Apache 2.0. El modelo parte concretamente de la version cuantizada a 4 bits de Unsloth (unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit), sobre la que se ha realizado un entrenamiento adicional empleando la libreria Unsloth junto con TRL de HuggingFace, y se ha exportado finalmente en precision de 16 bits (safetensors) con un total de 8.030.261.248 parametros.
+Natural-Synthesis-8b-3.1-v4-16bit es un ajuste fino (fine-tuning) del modelo Meta-Llama-3.1-8B-Instruct, desarrollado por el usuario JPQ24 y publicado en Hugging Face bajo licencia Apache 2.0. El modelo parte concretamente de la version cuantizada a 4 bits de Unsloth (unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit), sobre la que se ha realizado un entrenamiento adicional empleando la libreria Unsloth junto con TRL de Hugging Face, y se ha exportado finalmente en precision de 16 bits (safetensors) con un total de 8.030.261.248 parametros.
 
 Se trata de un modelo de generacion de texto de tipo decoder-only basado en la arquitectura Llama 3.1, con una ventana de contexto heredada del modelo base de 128.000 tokens, orientado a tareas conversacionales en ingles. Su relevancia actual es limitada: es un experimento de ajuste fino con cero descargas y cero "likes" en el momento de la consulta, sin model card detallada ni resultados de evaluacion publicados, por lo que debe considerarse un artefacto de investigacion mas que un modelo listo para produccion.
 
@@ -31,7 +31,7 @@ El interes principal de esta ficha radica en documentar un caso tipico de fine-t
 
 La arquitectura corresponde a Llama 3.1 8B, un transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU, embeddings rotatorios (RoPE) y atencion con Grouped Query Attention (GQA) para reducir el coste de la cache KV durante la inferencia. El modelo conserva los 8.030 millones de parametros del modelo original sin modificar la topologia; lo unico que cambia respecto al base son los pesos resultantes del ajuste fino.
 
-El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, segun indica la propia model card, que menciona un entrenamiento "2x mas rapido" gracias a Unsloth. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o SFT adicionales, ni hiperparametros como la tasa de aprendizaje, el rango LoRA o el numero de epocas. Tampoco se documenta si el ajuste fue de tipo LoRA/QLoRA fusionado o un entrenamiento completo. Toda esta informacion figura como no disponible.
+El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, segun indica la propia model card, que menciona un entrenamiento "2x mas rapido" gracias a Unsloth. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o SFT adicionales, ni hiperparametros como la tasa de aprendizaje, el rango LoRA o el numero de epocas. Tampoco se documenta si el ajuste fue de tipo LoRA/QLoRA fusionado o un entrenamiento completo. Toda esta informacion figura como no disponible.
 
 ## Capacidades
 
@@ -82,10 +82,10 @@ Estimaciones basadas en los 8.030 millones de parametros del modelo (no verifica
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicos |
 |---|---|---|---|---|---|
-| Natural-Synthesis-8b-3.1-v4-16bit | 8,03B | 128k (heredado) | Apache 2.0 | HuggingFace, safetensors 16-bit | No disponibles |
-| Meta-Llama-3.1-8B-Instruct | 8,03B | 128k | Licencia comunitaria Llama 3.1 | HuggingFace, amplia difusion | Si (MMLU, HumanEval, etc.) |
-| Mistral-7B-Instruct-v0.3 | 7,2B | 32k | Apache 2.0 | HuggingFace, amplia difusion | Si (MMLU, MT-Bench, etc.) |
-| Qwen2.5-7B-Instruct | 7,6B | 128k | Apache 2.0 | HuggingFace, amplia difusion | Si (MMLU, GSM8K, etc.) |
+| Natural-Synthesis-8b-3.1-v4-16bit | 8,03B | 128k (heredado) | Apache 2.0 | Hugging Face, safetensors 16-bit | No disponibles |
+| Meta-Llama-3.1-8B-Instruct | 8,03B | 128k | Licencia comunitaria Llama 3.1 | Hugging Face, amplia difusion | Si (MMLU, HumanEval, etc.) |
+| Mistral-7B-Instruct-v0.3 | 7,2B | 32k | Apache 2.0 | Hugging Face, amplia difusion | Si (MMLU, MT-Bench, etc.) |
+| Qwen2.5-7B-Instruct | 7,6B | 128k | Apache 2.0 | Hugging Face, amplia difusion | Si (MMLU, GSM8K, etc.) |
 
 Nota: los datos de los modelos comparativos corresponden a sus versiones oficiales; no se dispone de comparaciones directas con el modelo de JPQ24.
 
@@ -102,10 +102,10 @@ Nota: los datos de los modelos comparativos corresponden a sus versiones oficial
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JPQ24/Natural-Synthesis-8b-3.1-v4-16bit
+- Modelo en Hugging Face: https://huggingface.co/JPQ24/Natural-Synthesis-8b-3.1-v4-16bit
 - Modelo base (Unsloth, 4 bits): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Modelo original de Meta: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 
 No se han encontrado papers, blogs ni demos adicionales asociados a este modelo en la informacion disponible.

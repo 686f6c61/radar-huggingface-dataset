@@ -94,7 +94,7 @@ No se han encontrado modelos comparables en la informacion disponible. La compar
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/qtum/DeepSeek-V4-Flash-Vision-Exp-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/qtum/DeepSeek-V4-Flash-Vision-Exp-GGUF
 - Modelo base original: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Cuantizacion oficial (ggml-org): https://huggingface.co/ggml-org/DeepSeek-V4-Flash-Vision-Exp-GGUF
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

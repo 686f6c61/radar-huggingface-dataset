@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) desarrollado por DeepSeek, presentado como el miembro mas pequeno de su nueva familia de arquitecturas y disenado para cargas de trabajo con mucho contenido de entrada, como los flujos agenticos. Segun su model card, combina un backbone de 552B parametros con memoria condicional Engram de 196B parametros, procesa imagenes y texto de forma nativa y genera texto de manera autorregresiva, con una ventana de contexto de hasta un millon de tokens. La ficha de HuggingFace analizada corresponde al repositorio `2112076433zcr/DeepSeek-V4.1-Flash`, una copia no oficial del modelo; el repositorio de referencia es `deepseek-ai/DeepSeek-V4.1-Flash`.
+DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) desarrollado por DeepSeek, presentado como el miembro mas pequeno de su nueva familia de arquitecturas y disenado para cargas de trabajo con mucho contenido de entrada, como los flujos agenticos. Segun su model card, combina un backbone de 552B parametros con memoria condicional Engram de 196B parametros, procesa imagenes y texto de forma nativa y genera texto de manera autorregresiva, con una ventana de contexto de hasta un millon de tokens. La ficha de Hugging Face analizada corresponde al repositorio `2112076433zcr/DeepSeek-V4.1-Flash`, una copia no oficial del modelo; el repositorio de referencia es `deepseek-ai/DeepSeek-V4.1-Flash`.
 
 Su innovacion principal es la compresion agresiva de la cache KV. Mediante la arquitectura Causal Encoder-Decoder (CED), Compressed Sparse Attention 2 (CSA2), un indexador jerarquico disperso y cache KV en FP4, el modelo reduce el footprint de cache global a unos 890 bytes por token, aproximadamente una cuarta parte de DeepSeek-V4-Flash y 437 veces menos que DeepSeek-V1. Esto permite activar solo 8B parametros por token en prefill y 16B en decodificacion, lo que abarata el coste de inferencia en escenarios con prompts muy largos.
 
@@ -38,7 +38,7 @@ El modelo se entrena desde cero sobre un corpus multimodal de 45T tokens, con la
 - Cargas de trabajo agenticas: el post-entrenamiento incluye sintesis automatica de tareas y entornos agenticos, y la model card presenta benchmarks agenticos como referencia principal.
 - Procesamiento de entradas muy largas: la ventana de hasta 1M tokens y la cache KV comprimida estan orientadas a prompts con mucho contenido de entrada.
 - Inferencia eficiente mediante decodificacion especulativa DSpark, con generacion de borradores y verificacion planificada por confianza.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere integracion con infraestructura de despliegue de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere integracion con infraestructura de despliegue de Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Idiomas soportados: no disponible en la informacion proporcionada.
 - Otras capacidades especiales (audio, thinking mode explicito): no disponible en la informacion proporcionada.
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cache KV por token | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash | 763B segun safetensors (552B de backbone + 196B de Engram segun la model card) | Hasta 1M tokens | ~890 bytes (FP4) | MIT | Repositorio oficial en HuggingFace y mirror analizado |
+| DeepSeek-V4.1-Flash | 763B segun safetensors (552B de backbone + 196B de Engram segun la model card) | Hasta 1M tokens | ~890 bytes (FP4) | MIT | Repositorio oficial en Hugging Face y mirror analizado |
 | DeepSeek-V4-Flash | no disponible | no disponible | ~4x superior (del orden de 3.560 bytes por token, valor derivado) | no disponible | no disponible |
 | DeepSeek-V1 | no disponible | no disponible | ~437x superior (valor derivado) | no disponible | no disponible |
 
@@ -100,7 +100,7 @@ No se dispone de datos de parametros, contexto, licencia ni resultados de benchm
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/2112076433zcr/DeepSeek-V4.1-Flash
+- Repositorio analizado en Hugging Face: https://huggingface.co/2112076433zcr/DeepSeek-V4.1-Flash
 - Repositorio oficial del modelo: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe tecnico (PDF referenciado en la model card): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Anuncio oficial de DeepSeek-V4.1-Flash: https://www.deepseek.com/en/news/deepseek-v4-1-flash/
@@ -108,5 +108,5 @@ No se dispone de datos de parametros, contexto, licencia ni resultados de benchm
 - Receta de despliegue en vLLM: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4.1-Flash
 - Guia de API, identificadores de modelo y migracion: https://deepseek-v4.io/deepseek-v4-1-flash
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organizacion de DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion de DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Cuenta de X/Twitter de DeepSeek: https://twitter.com/deepseek_ai

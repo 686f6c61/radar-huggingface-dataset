@@ -28,7 +28,7 @@ El adaptador emplea LoRA (Low-Rank Adaptation) sobre el modelo base Qwen/Qwen3.5
 - Reconocimiento de entidades nombradas en portugues mediante generacion de texto estructurado.
 - Salida en formato JSON restringido con etiquetas y tokens, lo que garantiza validez estructural (1.0 en el test).
 - Integrable con la libreria PEFT para cargar el adaptador sobre el modelo base exacto.
-- Compatible con pipelines de token-classification de HuggingFace.
+- Compatible con pipelines de token-classification de Hugging Face.
 - Soporte de inferencia con vLLM para produccion controlada.
 - No se documentan capacidades de tool calling, agentes, vision ni audio.
 
@@ -55,7 +55,7 @@ No se proporcionan comparaciones con otros modelos ni resultados en benchmarks g
 
 - No se especifican requisitos de hardware en la documentacion del modelo.
 - Al ser un adaptador LoRA sobre Qwen3.5-4B, la inferencia requiere cargar el modelo base (aproximadamente 8 GB en BF16) mas el adaptador (0.1 GB). Con cuantizacion (p. ej., 8 bits o 4 bits) podria ejecutarse en GPUs consumer con 8-12 GB de VRAM, aunque no se han probado oficialmente.
-- Opciones de despliegue: vLLM (mencionado como inferencia canonica), PEFT para integracion en pipelines de HuggingFace, y posiblemente llama.cpp u Ollama si se convierte el modelo base a GGUF, pero no esta documentado.
+- Opciones de despliegue: vLLM (mencionado como inferencia canonica), PEFT para integracion en pipelines de Hugging Face, y posiblemente llama.cpp u Ollama si se convierte el modelo base a GGUF, pero no esta documentado.
 - No se reportan datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
@@ -75,4 +75,4 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- [HuggingFace: JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-paramopama-seed123](https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-paramopama-seed123)
+- [Hugging Face: JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-paramopama-seed123](https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-paramopama-seed123)

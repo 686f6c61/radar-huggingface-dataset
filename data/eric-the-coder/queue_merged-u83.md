@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `eric-the-coder/queue_merged-u83` es un modelo de generación de texto basado en una arquitectura MoE (Mixture of Experts) de la familia Qwen3.5, desarrollado por el usuario de HuggingFace `eric-the-coder`. Se trata de un modelo fusionado (merge) a partir del modelo base `marsplan0624/affine-5gedzafcvg-queen`, con un ajuste fino adicional mediante *online DPO* (Direct Preference Optimization). Con aproximadamente 35 107 millones de parámetros totales y un tamaño de repositorio de 70,2 GB en formato `safetensors`, está diseñado para tareas de conversación y generación de texto, aunque los tags sugieren una posible capacidad multimodal (image-text-to-text) que no ha sido confirmada en la información disponible.
+El modelo `eric-the-coder/queue_merged-u83` es un modelo de generación de texto basado en una arquitectura MoE (Mixture of Experts) de la familia Qwen3.5, desarrollado por el usuario de Hugging Face `eric-the-coder`. Se trata de un modelo fusionado (merge) a partir del modelo base `marsplan0624/affine-5gedzafcvg-queen`, con un ajuste fino adicional mediante *online DPO* (Direct Preference Optimization). Con aproximadamente 35 107 millones de parámetros totales y un tamaño de repositorio de 70,2 GB en formato `safetensors`, está diseñado para tareas de conversación y generación de texto, aunque los tags sugieren una posible capacidad multimodal (image-text-to-text) que no ha sido confirmada en la información disponible.
 
-El modelo se publicó el 15 de agosto de 2026 y su acceso está restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas en HuggingFace antes de poder descargarlo. No se han proporcionado datos sobre la licencia, los idiomas soportados, la longitud de contexto ni los detalles de entrenamiento, lo que limita una evaluación completa. A pesar de ello, su tamaño y arquitectura lo sitúan en la categoría de modelos de gran escala orientados a razonamiento y diálogo, con un enfoque en optimización mediante preferencias humanas (DPO).
+El modelo se publicó el 15 de agosto de 2026 y su acceso está restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas en Hugging Face antes de poder descargarlo. No se han proporcionado datos sobre la licencia, los idiomas soportados, la longitud de contexto ni los detalles de entrenamiento, lo que limita una evaluación completa. A pesar de ello, su tamaño y arquitectura lo sitúan en la categoría de modelos de gran escala orientados a razonamiento y diálogo, con un enfoque en optimización mediante preferencias humanas (DPO).
 
 La relevancia de este modelo radica en su naturaleza de *merge* y ajuste con DPO, una práctica común en la comunidad open source para mejorar la calidad de las respuestas y la alineación con las preferencias de los usuarios. Sin embargo, al carecer de documentación pública detallada, su adopción en producción requiere una evaluación cuidadosa y la aceptación de los términos de acceso.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su naturaleza de *merge* y ajuste con DPO
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo se infiere de los tags de HuggingFace: `qwen3_5_moe` indica una arquitectura de mezcla de expertos (MoE) de la serie Qwen3.5, que típicamente emplea atención de múltiples cabezas y capas de expertos con activación dispersa. El modelo es un *merge* (fusión) de pesos, cuyo modelo base es `marsplan0624/affine-5gedzafcvg-queen`, y ha sido sometido a un ajuste fino con *online DPO* (Direct Preference Optimization), una técnica de alineación que optimiza las respuestas del modelo basándose en preferencias humanas comparativas. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni los detalles del proceso de fusión. Tampoco se especifican innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
+La arquitectura del modelo se infiere de los tags de Hugging Face: `qwen3_5_moe` indica una arquitectura de mezcla de expertos (MoE) de la serie Qwen3.5, que típicamente emplea atención de múltiples cabezas y capas de expertos con activación dispersa. El modelo es un *merge* (fusión) de pesos, cuyo modelo base es `marsplan0624/affine-5gedzafcvg-queen`, y ha sido sometido a un ajuste fino con *online DPO* (Direct Preference Optimization), una técnica de alineación que optimiza las respuestas del modelo basándose en preferencias humanas comparativas. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni los detalles del proceso de fusión. Tampoco se especifican innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos o académicos.
+- Acceso restringido (gated): el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos o académicos.
 - Licencia no especificada: no se indica la licencia, por lo que no se garantiza el uso comercial ni la redistribución. Es imprescindible contactar con el autor antes de cualquier uso en producción.
 - Falta de documentación: no hay información sobre sesgos, alucinaciones, limitaciones de contexto o idiomas. Esto supone un riesgo para aplicaciones críticas.
 - Posible multimodalidad no confirmada: el tag `image-text-to-text` sugiere capacidades de visión, pero no hay ejemplos ni benchmarks que lo verifiquen.
@@ -68,5 +68,5 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [HuggingFace - eric-the-coder/queue_merged-u83](https://huggingface.co/eric-the-coder/queue_merged-u83)
+- [Hugging Face - eric-the-coder/queue_merged-u83](https://huggingface.co/eric-the-coder/queue_merged-u83)
 - [Modelo base - marsplan0624/affine-5gedzafcvg-queen](https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen) (enlace inferido, no verificado)

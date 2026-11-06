@@ -67,11 +67,11 @@ No se dispone de datos comparativos con otros modelos de tamaño similar (p. ej.
 - Sesgos y alucinaciones: al ser un modelo de lenguaje, puede presentar sesgos y generar contenido incorrecto, pero no hay información específica sobre este modelo.
 - Licencia: Apache 2.0 permite uso comercial, pero se recomienda revisar los términos del modelo base (Qwen/Qwen3.5-0.8B) por si tuviera restricciones adicionales.
 - Tamaño de contexto y rendimiento: al no conocerse el contexto máximo, no se puede garantizar su comportamiento en tareas que requieran ventanas largas.
-- Formato de pesos: al ser específico de Keras, puede requerir conversión adicional para usarse con otras herramientas (p. ej., Transformers de HuggingFace).
+- Formato de pesos: al ser específico de Keras, puede requerir conversión adicional para usarse con otras herramientas (p. ej., Transformers de Hugging Face).
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/qwen3.5-0.8b
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/qwen3.5-0.8b
 - Colección Qwen3.5 de kerasformers: https://huggingface.co/collections/kerasformers/qwen35-6a7e5421737d73e63669ebb9
 - Repositorio de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen3.5-0.8B

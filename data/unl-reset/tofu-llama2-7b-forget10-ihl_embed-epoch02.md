@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch02` | ~6,74 B | no disponible | Checkpoint de *unlearning* (epoca 2/20) | Llama 2 | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_llama2-7b` | ~6,74 B | 4096 (familia Llama 2) | Modelo base ajustado sobre TOFU, sin olvido | Llama 2 | HuggingFace |
-| `NousResearch/Llama-2-7b-chat-hf` | ~6,74 B | 4096 (familia Llama 2) | Chat de proposito general | Llama 2 | HuggingFace |
-| Llama 2 7B (Meta) | ~6,74 B | 4096 | Modelo fundacional | Llama 2 | HuggingFace, Meta |
+| `unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch02` | ~6,74 B | no disponible | Checkpoint de *unlearning* (epoca 2/20) | Llama 2 | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_llama2-7b` | ~6,74 B | 4096 (familia Llama 2) | Modelo base ajustado sobre TOFU, sin olvido | Llama 2 | Hugging Face |
+| `NousResearch/Llama-2-7b-chat-hf` | ~6,74 B | 4096 (familia Llama 2) | Chat de proposito general | Llama 2 | Hugging Face |
+| Llama 2 7B (Meta) | ~6,74 B | 4096 | Modelo fundacional | Llama 2 | Hugging Face, Meta |
 
 La comparacion relevante es con el modelo base `locuslab/tofu_ft_llama2-7b` (mismo tamano y corpus, sin procedimiento de olvido) y con `NousResearch/Llama-2-7b-chat-hf` (origen de los pesos reinicializados). No hay datos de rendimiento publicados para este checkpoint que permitan una comparacion cuantitativa.
 
@@ -89,7 +89,7 @@ La comparacion relevante es con el modelo base `locuslab/tofu_ft_llama2-7b` (mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch02
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch02
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Origen de los pesos reinicializados: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Benchmark TOFU (paper): https://arxiv.org/abs/2401.06121

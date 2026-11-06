@@ -104,7 +104,7 @@ La comparativa muestra el trade-off central del paper: los modelos con mas razon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tinyrolls/Qwen3-8B-NonThinking-RoleVerse-DPO
+- Modelo en Hugging Face: https://huggingface.co/tinyrolls/Qwen3-8B-NonThinking-RoleVerse-DPO
 - Dataset RoleVerse: https://huggingface.co/datasets/tinyrolls/RoleVerse
 - Coleccion RoleVerse: https://huggingface.co/collections/tinyrolls/roleverse-6ae2cab39027be0451529147
 - Codigo del proyecto: https://github.com/tinyrolls/RoleVerse

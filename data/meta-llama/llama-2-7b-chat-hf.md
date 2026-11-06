@@ -6,7 +6,7 @@ Llama-2-7b-chat-hf es la variante conversacional de 7.000 millones de parámetro
 
 El modelo resuelve el caso de uso de asistentes conversacionales autoalojados: al distribuirse con pesos completos, permite despliegue on-premise, ajuste fino y cuantización sin depender de una API. Su ventana de contexto es de 4096 tokens, suficiente para conversaciones medias y tareas de extracción o resumen sobre documentos cortos, pero claramente inferior a los estándares actuales de 32k-128k.
 
-Su relevancia hoy es principalmente histórica y de línea base: con 131.035 descargas y 4.939 likes en HuggingFace, sigue siendo un punto de comparación habitual y un modelo didáctico para estudiar el pipeline SFT + RLHF. Para producción nueva, sin embargo, compite con alternativas de 7-8B con contextos mayores, mejor soporte multilingüe y licencias más permisivas.
+Su relevancia hoy es principalmente histórica y de línea base: con 131.035 descargas y 4.939 likes en Hugging Face, sigue siendo un punto de comparación habitual y un modelo didáctico para estudiar el pipeline SFT + RLHF. Para producción nueva, sin embargo, compite con alternativas de 7-8B con contextos mayores, mejor soporte multilingüe y licencias más permisivas.
 
 ## Especificaciones técnicas
 
@@ -20,7 +20,7 @@ Su relevancia hoy es principalmente histórica y de línea base: con 131.035 des
 | Idiomas soportados | Inglés (etiqueta oficial `en`); competencia residual en otros idiomas por contaminación del corpus, no declarada |
 | Licencia | Llama 2 Community License (uso comercial permitido con condiciones) |
 | Formato de pesos | safetensors (oficial), PyTorch; conversiones GGUF/GPTQ/AWQ de terceros |
-| Acceso | Restringido (gated): requiere aceptar los términos en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar los términos en Hugging Face |
 | Librería | transformers |
 | Pipeline | text-generation |
 | Tamaño del repositorio | 53,9 GB |
@@ -89,13 +89,13 @@ En rendimiento comparado no se dispone de cifras verificadas en la información 
 - No soporta tool calling ni function calling nativos: obliga a implementar parsing y validación de la salida por fuera del modelo.
 - El ajuste de seguridad puede producir rechazos excesivos en consultas legítimas (falsos positivos), así como respuestas inconsistentes ante prompts adversariales.
 - Licencia Llama 2 Community License: permite uso comercial, pero incluye cláusulas adicionales (límite de usuarios activos mensuales, obligación de atribución "Built with Meta Llama 2" y política de uso aceptable). Conviene revisarla con asesoría legal antes de integrarla en un producto.
-- Acceso restringido en HuggingFace: la descarga requiere cuenta y aceptación explícita de los términos, lo que complica la automatización de pipelines de CI/CD.
+- Acceso restringido en Hugging Face: la descarga requiere cuenta y aceptación explícita de los términos, lo que complica la automatización de pipelines de CI/CD.
 - Repositorio de 53,9 GB: incluye múltiples formatos y consume espacio considerable en disco frente a los ~13,5 GB de un único checkpoint fp16.
 - Sesgos: al entrenarse sobre datos web en inglés, reproduce sesgos de género, culturales y geográficos; Meta documenta el problema pero no lo corrige por completo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
+- Modelo en Hugging Face: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper Llama 2 (arXiv:2307.09288): https://arxiv.org/abs/2307.09288
 - Página oficial de Llama: https://llama.meta.com/
 - Repositorio de recetas y ejemplos de Meta: https://github.com/facebookresearch/llama-recipes

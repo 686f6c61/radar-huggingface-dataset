@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SpaceGhost/text-recognition-pt-br.rten` es un sistema de reconocimiento óptico de caracteres (OCR) especializado en líneas de texto en portugués de Brasil y en inglés. Lo publica el usuario SpaceGhost en HuggingFace y deriva de los modelos del proyecto `ocrs` de Robert Knight, ejecutándose sobre el runtime de inferencia en Rust `RTen`. Su propósito es servir como motor nativo de OCR dentro de la aplicación de escritorio PdfCraft, donde transcribe líneas de texto previamente recortadas por un detector de cajas para generar una capa de texto buscable sobre documentos escaneados.
+El modelo `SpaceGhost/text-recognition-pt-br.rten` es un sistema de reconocimiento óptico de caracteres (OCR) especializado en líneas de texto en portugués de Brasil y en inglés. Lo publica el usuario SpaceGhost en Hugging Face y deriva de los modelos del proyecto `ocrs` de Robert Knight, ejecutándose sobre el runtime de inferencia en Rust `RTen`. Su propósito es servir como motor nativo de OCR dentro de la aplicación de escritorio PdfCraft, donde transcribe líneas de texto previamente recortadas por un detector de cajas para generar una capa de texto buscable sobre documentos escaneados.
 
 Se trata de un modelo compacto basado en arquitectura CRNN (red convolucional más red recurrente), con una entrada monocromática de altura fija de 64 píxeles y anchura dinámica, un backbone CNN con reducción espacial 4x, una capa GRU bidireccional de 2 niveles y 256 unidades ocultas, y un decodificador CTC con 135 clases. El archivo de pesos ocupa aproximadamente 9,4 MB y está diseñado para inferencia muy rápida en CPU, sin necesidad de GPU.
 
@@ -71,7 +71,7 @@ No se especifica el conjunto de validacion exacto ni su composicion, por lo que 
 
 | Modelo | Tipo | Idiomas | Contexto o entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `SpaceGhost/text-recognition-pt-br.rten` | CRNN + CTC | pt-BR, en | Linea de texto `[1,1,64,W]` | CC-BY-SA-4.0 (pesos) | HuggingFace, formato `.rten` |
+| `SpaceGhost/text-recognition-pt-br.rten` | CRNN + CTC | pt-BR, en | Linea de texto `[1,1,64,W]` | CC-BY-SA-4.0 (pesos) | Hugging Face, formato `.rten` |
 | Modelos originales de `robertknight/ocrs-models` | CRNN + CTC | en (ASCII, sin acentos) | Linea de texto | segun repositorio original | GitHub de ocrs |
 | Tesseract | LSTM + motor tradicional | Multiples idiomas | Pagina o linea | Apache-2.0 | Codigo abierto |
 | PaddleOCR | Deteccion + reconocimiento (CRNN y variantes) | Multiples idiomas | Pagina o linea | Apache-2.0 | Codigo abierto |
@@ -88,7 +88,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SpaceGhost/text-recognition-pt-br.rten
+- Hugging Face: https://huggingface.co/SpaceGhost/text-recognition-pt-br.rten
 - Proyecto PdfCraft: https://github.com/storytold/pdfcraft
 - Proyecto ocrs: https://github.com/robertknight/ocrs
 - Modelos originales de ocrs: https://github.com/robertknight/ocrs-models

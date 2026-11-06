@@ -82,12 +82,12 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 - Sesgos desconocidos: no se documenta la distribución de escritores, estilos ni épocas del corpus de entrenamiento, por lo que la generalización a escrituras fuera de esa distribución es incierta.
 - El particionado excluye los escritores de desarrollo del entrenamiento, lo que mejora la validez de la evaluación, pero no garantiza el comportamiento en escritores completamente ajenos al corpus.
 - Licencia MIT: permite uso comercial y modificación, pero sin garantías; conviene conservar el aviso de copyright.
-- Repositorio con 0 descargas y 0 *likes* en el momento de la consulta, y sin *pipeline* declarado en HuggingFace: la integración requiere configuración manual.
+- Repositorio con 0 descargas y 0 *likes* en el momento de la consulta, y sin *pipeline* declarado en Hugging Face: la integración requiere configuración manual.
 - No se publican variantes cuantizadas ni formatos alternativos, lo que limita el despliegue en entornos sin PyTorch.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-elastic2-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-elastic2-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados detallados: `results.json` en el repositorio del modelo (https://huggingface.co/cyttic/hmt-htrvt-elastic2-s42/blob/main/results.json)
 - Estudio `htr-metrics-transfer`: no disponible como enlace público en la información proporcionada.

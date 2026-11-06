@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tokle-SPAB-3M es un modelo de lenguaje decoder-only de escala diminuta desarrollado por el equipo Tech.us (cuenta de HuggingFace `techdotus`). Se trata de un artefacto de investigación, no de un asistente: cuenta con 2.908.947 parámetros entrenables y una tabla congelada de 8.388.608 parámetros, lo que da un total de 11.297.555 parámetros. Fue entrenado sobre 12.000 millones de tokens, lo que supone una ratio de aproximadamente 4.125 tokens por parámetro entrenable, muy por encima de lo habitual en modelos de este tamaño.
+Tokle-SPAB-3M es un modelo de lenguaje decoder-only de escala diminuta desarrollado por el equipo Tech.us (cuenta de Hugging Face `techdotus`). Se trata de un artefacto de investigación, no de un asistente: cuenta con 2.908.947 parámetros entrenables y una tabla congelada de 8.388.608 parámetros, lo que da un total de 11.297.555 parámetros. Fue entrenado sobre 12.000 millones de tokens, lo que supone una ratio de aproximadamente 4.125 tokens por parámetro entrenable, muy por encima de lo habitual en modelos de este tamaño.
 
 Su aportación técnica es SPAB (Static Pairwise Attention Bias), un sesgo de atención estático construido a partir de Información Mutua Puntual (PMI) calculada sobre el corpus de entrenamiento. Para cada par consulta-clave, el modelo aplica un hash sobre los dos identificadores de token, recupera su valor de PMI de una tabla congelada, lo multiplica por una escala aprendida por cabeza y lo suma a los logits de atención antes del softmax. El sesgo es independiente de la posición y depende solo de qué tokens intervienen, de modo que el modelo arranca el entrenamiento con un prior sobre qué tokens tienden a coocurrir y solo debe aprender cuánto confiar en él.
 
@@ -104,7 +104,7 @@ Los datos de los tres modelos comparados proceden del bloque comentado de la mod
 - Solo inglés: entrenado exclusivamente con texto web, educativo, sintético y matemático en inglés. No hay soporte de castellano ni de otros idiomas.
 - Sin ajuste de instrucciones ni alineamiento de seguridad: no responde a instrucciones de forma fiable y puede reproducir sesgos presentes en los datos web de los que procede.
 - Riesgo de alucinación elevado: al no haber pasado por RLHF ni DPO y por su escala, cualquier afirmación factual que genere debe verificarse.
-- Dependencia de código remoto: el uso requiere `trust_remote_code=True`, lo que implica ejecutar código Python publicado en el repositorio de HuggingFace. Conviene auditar `modeling_*.py` antes de ejecutarlo en entornos de producción o con acceso a datos sensibles.
+- Dependencia de código remoto: el uso requiere `trust_remote_code=True`, lo que implica ejecutar código Python publicado en el repositorio de Hugging Face. Conviene auditar `modeling_*.py` antes de ejecutarlo en entornos de producción o con acceso a datos sensibles.
 - Sin cuantizaciones ni formatos alternativos: no existen versiones GGUF, AWQ ni GPTQ, lo que limita su integración con runtimes de inferencia habituales.
 - Licencia MIT: permite uso comercial, modificación y redistribución, pero la licencia no cubre los términos de los datasets subyacentes, que pueden tener sus propias condiciones de uso.
 - Modo de decodificación restringido en la práctica: el autor recomienda greedy con `repetition_penalty=1.3`, lo que sugiere que el muestreo produce salidas degeneradas de forma habitual.
@@ -112,7 +112,7 @@ Los datos de los tres modelos comparados proceden del bloque comentado de la mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/techdotus/Tokle-SPAB-3M
+- Modelo en Hugging Face: https://huggingface.co/techdotus/Tokle-SPAB-3M
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset Cosmopedia: https://huggingface.co/datasets/HuggingFaceTB/cosmopedia
 - Dataset High-Quality English Sentences: https://huggingface.co/datasets/agentlans/high-quality-english-sentences

@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThoxMini-Mind-1.5B | 1,5B | 8.192 (usado en evaluación) | Empaquetado Ollama con perfil y knowledge pack sobre Qwen2.5-1.5B-Instruct | Apache-2.0 | HuggingFace (packaging) y Ollama |
-| Qwen2.5-1.5B-Instruct | 1,5B | No disponible en esta ficha | Modelo base instructivo, sin personalización | Apache-2.0 | HuggingFace y Ollama (`qwen2.5:1.5b`) |
+| ThoxMini-Mind-1.5B | 1,5B | 8.192 (usado en evaluación) | Empaquetado Ollama con perfil y knowledge pack sobre Qwen2.5-1.5B-Instruct | Apache-2.0 | Hugging Face (packaging) y Ollama |
+| Qwen2.5-1.5B-Instruct | 1,5B | No disponible en esta ficha | Modelo base instructivo, sin personalización | Apache-2.0 | Hugging Face y Ollama (`qwen2.5:1.5b`) |
 | Alternativas de 1-2B para inferencia local en CPU | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación relevante es con el propio modelo base: ThoxMini-Mind-1.5B no modifica los pesos, por lo que su calidad de razonamiento y recall es la de Qwen2.5-1.5B-Instruct, con la diferencia del perfil de sistema y el knowledge pack. No se dispone de datos de benchmarks comparativos con otras alternativas.
@@ -97,7 +97,7 @@ La comparación relevante es con el propio modelo base: ThoxMini-Mind-1.5B no mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thox-ai/ThoxMini-Mind-1.5B
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/ThoxMini-Mind-1.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Etiqueta de Ollama del base: `qwen2.5:1.5b`
 - Modelo publicado en Ollama: `Thox-ai/thoxmini-mind-1.5b`

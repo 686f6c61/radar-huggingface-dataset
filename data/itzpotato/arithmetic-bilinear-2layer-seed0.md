@@ -85,13 +85,13 @@ No se dispone de datos publicados de las variantes ReLU ni de los modelos de 1 c
 - La precision de signo es 0 por construccion: la posicion del signo no recibe gradiente, ya que la loss solo cubre los cinco digitos de la respuesta.
 - El modelo solo maneja operandos de 4 digitos con signo; no generaliza a numeros de mayor longitud ni a otras operaciones.
 - No es un modelo de lenguaje: no genera texto, no entiende instrucciones y no tiene capacidades conversacionales.
-- No se especifica licencia en la model card ni en los metadatos de HuggingFace, por lo que el uso comercial no esta claramente permitido.
+- No se especifica licencia en la model card ni en los metadatos de Hugging Face, por lo que el uso comercial no esta claramente permitido.
 - El modelo se publico el 1 de septiembre de 2026 y no tiene descargas ni likes, lo que sugiere que es un artefacto de investigacion reciente con poca adopcion externa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itzPotato/arithmetic-bilinear-2layer-seed0
-- Perfil del autor en HuggingFace: https://huggingface.co/itzPotato
+- Modelo en Hugging Face: https://huggingface.co/itzPotato/arithmetic-bilinear-2layer-seed0
+- Perfil del autor en Hugging Face: https://huggingface.co/itzPotato
 - Perfil de GitHub del autor: https://github.com/itzPotato
 - Modelo relacionado (bilinear-attn-addition-carry-2layer): https://huggingface.co/itzPotato/bilinear-attn-addition-carry-2layer
 - Modelo relacionado (bilinear-attn-modular-addition-p113): https://huggingface.co/itzPotato/bilinear-attn-modular-addition-p113

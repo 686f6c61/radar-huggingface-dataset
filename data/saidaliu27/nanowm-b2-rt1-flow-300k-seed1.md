@@ -77,6 +77,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saidaliu27/nanowm-b2-rt1-flow-300k-seed1
+- Modelo en Hugging Face: https://huggingface.co/saidaliu27/nanowm-b2-rt1-flow-300k-seed1
 - VAE dependiente: https://huggingface.co/stabilityai/sd-vae-ft-mse
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios del código `nano-world-model` ni demos.

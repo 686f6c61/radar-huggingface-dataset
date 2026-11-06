@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`matheusxsantos/learn-multitask` es un repositorio de HuggingFace publicado por el usuario matheusxsantos que contiene una implementación funcional de una arquitectura Poolformer orientada a tareas multitarea, con una configuración declarada como "huge". No se trata de un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo ("smoke tests") y que no se presenta como un checkpoint con benchmarks. Por tanto, lo que se distribuye es código de entrenamiento, configuración de arquitectura y pesos inicializados, no un modelo con capacidades verificadas.
+`matheusxsantos/learn-multitask` es un repositorio de Hugging Face publicado por el usuario matheusxsantos que contiene una implementación funcional de una arquitectura Poolformer orientada a tareas multitarea, con una configuración declarada como "huge". No se trata de un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo ("smoke tests") y que no se presenta como un checkpoint con benchmarks. Por tanto, lo que se distribuye es código de entrenamiento, configuración de arquitectura y pesos inicializados, no un modelo con capacidades verificadas.
 
 El problema que resuelve es de índole de ingeniería: ofrece una base reproducible para experimentar con arquitecturas tipo Poolformer (token mixer basado en pooling) combinadas con fusión multitarea, con una receta de experimento por defecto basada en el optimizador Adafactor y un scheduler polinómico. Su relevancia actual es limitada como modelo utilizable, pero puede ser relevante como plantilla de investigación o como punto de partida para reproducir experimentos, siempre que se entrene con datos propios.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| matheusxsantos/learn-multitask | 24.832 | no disponible | ninguno declarado | MIT | HuggingFace (0 descargas, 0 likes) |
+| matheusxsantos/learn-multitask | 24.832 | no disponible | ninguno declarado | MIT | Hugging Face (0 descargas, 0 likes) |
 | Poolformer original (familia MetaFormer) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Otras implementaciones multitarea de referencia | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -88,12 +88,12 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 - Riesgo de alucinación: no aplicable en el sentido habitual, ya que no hay un modelo de lenguaje entrenado; el riesgo real es atribuir capacidades a un artefacto sin entrenar.
 - Limitaciones de idioma: no se declara ningún idioma soportado.
 - Licencia MIT: permite uso comercial, modificación y redistribución, pero se distribuye sin garantías. La model card advierte de revisar por separado los términos de los datos de origen si se emplean conjuntos de datos externos.
-- La implementación es personalizada, por lo que las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de poder usarla.
+- La implementación es personalizada, por lo que las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de poder usarla.
 - Para cualquier evaluación seria, el autor recomienda usar un conjunto de retención específico de la tarea, reportar la métrica con al menos tres semillas y comparar contra una línea base de capacidad equivalente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matheusxsantos/learn-multitask
-- Perfil del autor en HuggingFace: https://huggingface.co/matheusxsantos/models
+- Modelo en Hugging Face: https://huggingface.co/matheusxsantos/learn-multitask
+- Perfil del autor en Hugging Face: https://huggingface.co/matheusxsantos/models
 - Enlace a arXiv devuelto por la búsqueda web: https://arxiv.org/pdf/2404.18961 (la relación de este documento con el modelo no se ha verificado y no aparece citado en la model card)
-- Página principal de HuggingFace: https://huggingface.co/
+- Página principal de Hugging Face: https://huggingface.co/

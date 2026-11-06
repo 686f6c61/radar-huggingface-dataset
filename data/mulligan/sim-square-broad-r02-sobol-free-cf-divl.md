@@ -26,7 +26,7 @@ Su relevancia es metodológica: forma parte de una comparativa interna de rondas
 | Celda de campaña | `sq_d1_r2_ours_sobol_freecf_human_only` |
 | Semillas | 1, 2, 3, 4, 5 |
 | Paso de entrenamiento | 250001 |
-| Pipeline de HuggingFace | robotics |
+| Pipeline de Hugging Face | robotics |
 | Tamaño del repositorio | 1,4 GB |
 | Commit de entrenamiento | 551416bff972 |
 | Descargas / likes | 0 / 0 |
@@ -90,8 +90,8 @@ Solo se dispone de un comparable documentado dentro de la información proporcio
 
 | Modelo | Actor | Crítico | Tarea / ronda | Semillas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sim-square-broad-r02-sobol-free-cf-divl (este) | Difusión congelado del padre | DIVL distribucional | sim-square-broad / R2 / arm sobol-free-cf | 5 | MIT | HuggingFace |
-| sim-square-broad-r02-sobol-free-cf-idql | Difusión | IDQL | sim-square-broad / R2 / arm sobol-free-cf | no disponible | no disponible | HuggingFace |
+| sim-square-broad-r02-sobol-free-cf-divl (este) | Difusión congelado del padre | DIVL distribucional | sim-square-broad / R2 / arm sobol-free-cf | 5 | MIT | Hugging Face |
+| sim-square-broad-r02-sobol-free-cf-idql | Difusión | IDQL | sim-square-broad / R2 / arm sobol-free-cf | no disponible | no disponible | Hugging Face |
 | Otros agentes comparables (mismo tamaño o misma tarea) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han encontrado publicaciones de referencia (RoboMimic, Diffusion Policy, IQL original, etc.) en los resultados web disponibles, por lo que no se incluye comparación con políticas externas.
@@ -112,9 +112,9 @@ No se han encontrado publicaciones de referencia (RoboMimic, Diffusion Policy, I
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r02-sobol-free-cf-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r02-sobol-free-cf-divl
 - Modelo padre (actor congelado, IDQL): https://huggingface.co/mulligan/sim-square-broad-r02-sobol-free-cf-idql
-- Organización Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organización Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Portal del proyecto: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
 - Dataset de evaluación: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval

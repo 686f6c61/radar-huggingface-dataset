@@ -80,7 +80,7 @@ No se dispone en la informacion proporcionada de resultados de otros modelos de 
 
 | Modelo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MetricStereo | no disponible | imagen 768 x 768 + linea base en metros | OpenRAIL++-M | pesos en HuggingFace |
+| MetricStereo | no disponible | imagen 768 x 768 + linea base en metros | OpenRAIL++-M | pesos en Hugging Face |
 | Alternativas de sintesis estereo | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se dispone en la informacion proporcionada de resultados de otros modelos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cvprsubmission/metricstereo
+- Modelo en Hugging Face: https://huggingface.co/cvprsubmission/metricstereo
 - Pesos: https://huggingface.co/cvprsubmission/metricstereo/resolve/main/metricstereo.safetensors
 - Codigo de inferencia: no disponible (el autor indica que el enlace se anadira tras la revision)
 - Paper: no disponible (envio anonimo a CVPR 2027 en revision)

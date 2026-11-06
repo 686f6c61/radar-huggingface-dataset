@@ -66,5 +66,5 @@ No se dispone de datos comparativos fiables al carecer de benchmarks y especific
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Macaron-V1-Tall-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Macaron-V1-Tall-i1-GGUF
 - Modelo original (referencia): https://huggingface.co/mindlab-research/Macaron-V1-Tall

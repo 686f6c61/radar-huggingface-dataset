@@ -93,7 +93,7 @@ El bundle se diferencia del resto de variantes Core ML en que agrupa los program
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/1of2/bidirlm-omni-2.5b-coreml-w8-bundle
+- Repositorio Hugging Face: https://huggingface.co/1of2/bidirlm-omni-2.5b-coreml-w8-bundle
 - Modelo base: https://huggingface.co/BidirLM/BidirLM-Omni-2.5B-Embedding
 - Variante Neural Engine y GPU (un programa por funcion): https://huggingface.co/1of2/bidirlm-omni-2.5b-coreml-w8
 - Variante solo Neural Engine: https://huggingface.co/1of2/bidirlm-omni-2.5b-coreml-w8-ane

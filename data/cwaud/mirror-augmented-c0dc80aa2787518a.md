@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`cwaud/mirror-augmented-c0dc80aa2787518a` es un checkpoint de generación de texto publicado en HuggingFace por el usuario `cwaud` bajo arquitectura etiquetada como `phi` en los metadatos del repositorio. El peso real de los ficheros safetensors es de 2.779.683.840 parámetros (≈2,78 mil millones), un tamaño que coincide con el de la familia Phi-2, aunque la model card no confirma ni el modelo base ni el proceso de entrenamiento. El repositorio ocupa 5,6 GB, coherente con pesos en fp16/bf16.
+`cwaud/mirror-augmented-c0dc80aa2787518a` es un checkpoint de generación de texto publicado en Hugging Face por el usuario `cwaud` bajo arquitectura etiquetada como `phi` en los metadatos del repositorio. El peso real de los ficheros safetensors es de 2.779.683.840 parámetros (≈2,78 mil millones), un tamaño que coincide con el de la familia Phi-2, aunque la model card no confirma ni el modelo base ni el proceso de entrenamiento. El repositorio ocupa 5,6 GB, coherente con pesos en fp16/bf16.
 
-El problema que resuelve es, a priori, el de un modelo de lenguaje de pequeño tamaño desplegable en hardware consumer, pero en la práctica la ficha no permite verificarlo: la model card es la plantilla automática de HuggingFace con todos los campos marcados como `[More Information Needed]`, sin licencia declarada, sin idiomas declarados y sin resultados de evaluación. El nombre del repositorio (`mirror-augmented` seguido de un hash hexadecimal) y el hecho de que se creara y actualizara en un intervalo de siete minutos apuntan a una copia automatizada de otro checkpoint, no a un entrenamiento original documentado.
+El problema que resuelve es, a priori, el de un modelo de lenguaje de pequeño tamaño desplegable en hardware consumer, pero en la práctica la ficha no permite verificarlo: la model card es la plantilla automática de Hugging Face con todos los campos marcados como `[More Information Needed]`, sin licencia declarada, sin idiomas declarados y sin resultados de evaluación. El nombre del repositorio (`mirror-augmented` seguido de un hash hexadecimal) y el hecho de que se creara y actualizara en un intervalo de siete minutos apuntan a una copia automatizada de otro checkpoint, no a un entrenamiento original documentado.
 
 Su relevancia ahora es limitada y fundamentalmente de catalogación: sirve como ejemplo de artefacto sin procedencia verificable dentro del ecosistema abierto, y su interés técnico se reduce a la arquitectura subyacente que se pueda confirmar inspeccionando la configuración y los pesos, no a lo que declare el autor.
 
@@ -25,12 +25,12 @@ Su relevancia ahora es limitada y fundamentalmente de catalogación: sirve como 
 
 No hay información sobre arquitectura ni entrenamiento en la documentación proporcionada. La única señal es la etiqueta `phi` en los metadatos del Hub, que sitúa el checkpoint en la familia Phi (transformers decoder-only con atención multi-cabeza estándar y entrenamiento orientado a datos sintéticos de "libro de texto" en las versiones originales), pero ni la model card ni los campos del repositorio confirman variante, número de capas, dimensión oculta ni vocabulario. Tampoco se declara el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de ajuste fino con RLHF o DPO.
 
-El tag `arxiv:1910.09700` que aparece en los metadatos corresponde a Lacoste et al., el artículo del calculador de impacto medioambiental de ML que la plantilla automática de HuggingFace cita por defecto; no es un paper del modelo. No se documenta ninguna innovación técnica (atención lineal, decodificación especulativa, mezcla de expertos, SSM híbrido) ni detalles de infraestructura de entrenamiento. Cualquier afirmación sobre el proceso de entrenamiento requeriría inspeccionar `config.json`, el tokenizador y la distribución de pesos del repositorio.
+El tag `arxiv:1910.09700` que aparece en los metadatos corresponde a Lacoste et al., el artículo del calculador de impacto medioambiental de ML que la plantilla automática de Hugging Face cita por defecto; no es un paper del modelo. No se documenta ninguna innovación técnica (atención lineal, decodificación especulativa, mezcla de expertos, SSM híbrido) ni detalles de infraestructura de entrenamiento. Cualquier afirmación sobre el proceso de entrenamiento requeriría inspeccionar `config.json`, el tokenizador y la distribución de pesos del repositorio.
 
 ## Capacidades
 
 - Generación de texto autoregresiva: es la única capacidad declarada explícitamente (`pipeline: text-generation`, tag `text-generation-inference`).
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el formato de pesos puede servirse en la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el formato de pesos puede servirse en la infraestructura de inferencia de Hugging Face.
 - Razonamiento, código y matemáticas: no disponible; no hay evaluación publicada que lo respalde, aunque por tamaño y familia sea esperable un rendimiento básico en estas áreas.
 - Tool calling / function calling: no disponible; no se documenta ninguna capacidad de llamada a herramientas.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -68,7 +68,7 @@ La model card no incluye MMLU, HumanEval, GSM8K, BBH ni ninguna otra métrica, y
 
 - GPU recomendadas: A100 40/80 GB o H100 para servir varias réplicas o lotes grandes; L4, L40S y A10G como opción de coste medio en cloud; RTX 4090 (24 GB) para desarrollo e inferencia en fp16 con margen holgado.
 - GPU consumer: sí cabe. En fp16 entra en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 y en GPUs de 8 GB con margen ajustado (hay que sumar caché KV y overhead del framework). En int8/int4 cabe en 4–6 GB, por lo que es viable en portátiles con GPU dedicada modesta.
-- Opciones de despliegue: `transformers` (formato nativo), Text Generation Inference (el tag `text-generation-inference` lo indica), vLLM y endpoints de HuggingFace. Para llama.cpp u Ollama haría falta convertir los pesos a GGUF, conversión que el autor no ha publicado.
+- Opciones de despliegue: `transformers` (formato nativo), Text Generation Inference (el tag `text-generation-inference` lo indica), vLLM y endpoints de Hugging Face. Para llama.cpp u Ollama haría falta convertir los pesos a GGUF, conversión que el autor no ha publicado.
 - Latencia y throughput: no disponibles. Como referencia de orden de magnitud para 2,8 B en fp16 sobre una RTX 4090, es razonable esperar decenas de tokens por segundo en decodificación por lotes pequeños, pero no hay medición publicada para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -77,10 +77,10 @@ Los datos de las alternativas provienen de información pública general sobre e
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `cwaud/mirror-augmented-c0dc80aa2787518a` | 2,78 B | no disponible | no disponible | HuggingFace, 0 descargas, sin documentación |
-| Phi-2 (Microsoft) | 2,7 B | 2.048 tokens | MIT | HuggingFace, model card y evaluación publicadas |
-| Gemma 2 2B (Google) | 2,6 B | 8.192 tokens | Gemma Terms of Use | HuggingFace, requiere aceptación de términos |
-| Qwen2.5 3B (Alibaba) | 3,1 B | 32.768 tokens | Apache 2.0 | HuggingFace, amplia documentación |
+| `cwaud/mirror-augmented-c0dc80aa2787518a` | 2,78 B | no disponible | no disponible | Hugging Face, 0 descargas, sin documentación |
+| Phi-2 (Microsoft) | 2,7 B | 2.048 tokens | MIT | Hugging Face, model card y evaluación publicadas |
+| Gemma 2 2B (Google) | 2,6 B | 8.192 tokens | Gemma Terms of Use | Hugging Face, requiere aceptación de términos |
+| Qwen2.5 3B (Alibaba) | 3,1 B | 32.768 tokens | Apache 2.0 | Hugging Face, amplia documentación |
 
 Frente a estas alternativas, el checkpoint analizado no aporta ninguna ventaja verificable: carece de licencia, de contexto declarado, de idiomas y de evaluación, mientras que los tres modelos de referencia publican todos esos datos y tienen procedencia trazable. Su única equivalencia es el orden de magnitud en parámetros.
 
@@ -99,7 +99,7 @@ Frente a estas alternativas, el checkpoint analizado no aporta ninguna ventaja v
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cwaud/mirror-augmented-c0dc80aa2787518a
+- Repositorio en Hugging Face: https://huggingface.co/cwaud/mirror-augmented-c0dc80aa2787518a
 - Artículo citado en los metadatos (`arxiv:1910.09700`, Lacoste et al., calculador de impacto medioambiental, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de ML referenciado en la plantilla de la model card: https://mlco2.github.io/impact#compute
 - Paper, blog, repositorio de código o demo del modelo: no disponibles.

@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chandra-ocr-2-MTP-Repacked-i1-GGUF (este) | 1.797.272 | no disponible | OCR/VLM documental, GGUF | OpenRAIL | HuggingFace (mradermacher) |
-| chandra-ocr-2-MTP-Repacked (base) | 1.797.272 | no disponible | OCR/VLM documental, safetensors | OpenRAIL | HuggingFace (prithivMLmods) |
-| chandra-ocr-2 (original) | no disponible | no disponible | OCR/VLM documental | OpenRAIL | HuggingFace (datalab-to) |
-| chandra-ocr-2-MTP-Repacked-GGUF (estatico) | 1.797.272 | no disponible | OCR/VLM documental, GGUF estatico | OpenRAIL | HuggingFace (mradermacher) |
+| chandra-ocr-2-MTP-Repacked-i1-GGUF (este) | 1.797.272 | no disponible | OCR/VLM documental, GGUF | OpenRAIL | Hugging Face (mradermacher) |
+| chandra-ocr-2-MTP-Repacked (base) | 1.797.272 | no disponible | OCR/VLM documental, safetensors | OpenRAIL | Hugging Face (prithivMLmods) |
+| chandra-ocr-2 (original) | no disponible | no disponible | OCR/VLM documental | OpenRAIL | Hugging Face (datalab-to) |
+| chandra-ocr-2-MTP-Repacked-GGUF (estatico) | 1.797.272 | no disponible | OCR/VLM documental, GGUF estatico | OpenRAIL | Hugging Face (mradermacher) |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/chandra-ocr-2-MTP-Repacked-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/chandra-ocr-2-MTP-Repacked-i1-GGUF
 - Modelo base (repack): https://huggingface.co/prithivMLmods/chandra-ocr-2-MTP-Repacked
 - Modelo original: https://huggingface.co/datalab-to/chandra-ocr-2
 - Licencia original: https://huggingface.co/datalab-to/chandra-ocr-2/blob/main/LICENSE

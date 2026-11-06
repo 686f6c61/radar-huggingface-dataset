@@ -84,10 +84,10 @@ Acuerdo con el build de 8 bits (teacher-forced sobre continuaciones de código):
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kvark-Sparkle-27B-MLX-AWQ-4.5bit (este) | 27,78B | 262.144 | AWQ 4/6 bits mixta | Apache 2.0 | HuggingFace, 16 descargas |
-| cloudcommander/Kvark-Sparkle-27B-MLX-8bit | no disponible | 262.144 (heredado) | 8 bits | Apache 2.0 | HuggingFace |
-| Egzakta/Kvark-Sparkle-1.0-27B (base BF16) | no disponible | 262.144 (heredado) | BF16 | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.8-27B (modelo origen) | no disponible | no disponible | BF16 | no disponible | HuggingFace |
+| Kvark-Sparkle-27B-MLX-AWQ-4.5bit (este) | 27,78B | 262.144 | AWQ 4/6 bits mixta | Apache 2.0 | Hugging Face, 16 descargas |
+| cloudcommander/Kvark-Sparkle-27B-MLX-8bit | no disponible | 262.144 (heredado) | 8 bits | Apache 2.0 | Hugging Face |
+| Egzakta/Kvark-Sparkle-1.0-27B (base BF16) | no disponible | 262.144 (heredado) | BF16 | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.8-27B (modelo origen) | no disponible | no disponible | BF16 | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks de los modelos comparables más allá de las cifras de la propia model card para la receta 4/6 de Qwen3.8.
 
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks de los modelos comparables más allá de la
 
 ## Enlaces
 
-- HuggingFace (este build): https://huggingface.co/cloudcommander/Kvark-Sparkle-27B-MLX-AWQ-4.5bit
+- Hugging Face (este build): https://huggingface.co/cloudcommander/Kvark-Sparkle-27B-MLX-AWQ-4.5bit
 - Modelo base: https://huggingface.co/Egzakta/Kvark-Sparkle-1.0-27B
 - Build de 8 bits: https://huggingface.co/cloudcommander/Kvark-Sparkle-27B-MLX-8bit
 - Variante uncensored 4.5 bits: https://huggingface.co/cloudcommander/Kvark-Sparkle-27B-Uncensored-MLX-AWQ-4.5bit

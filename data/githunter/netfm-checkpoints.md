@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GitHunter/netfm-checkpoints es un repositorio de checkpoints publicado en HuggingFace por el usuario GitHunter. El propio nombre del repositorio ("netfm-checkpoints") sugiere que se trata de un contenedor de pesos o puntos de control intermedios asociados a un modelo cuyo nombre no se especifica en la ficha, pero esta interpretacion no puede confirmarse con la informacion disponible: la model card no incluye descripcion, pipeline declarado, licencia, idiomas ni arquitectura.
+GitHunter/netfm-checkpoints es un repositorio de checkpoints publicado en Hugging Face por el usuario GitHunter. El propio nombre del repositorio ("netfm-checkpoints") sugiere que se trata de un contenedor de pesos o puntos de control intermedios asociados a un modelo cuyo nombre no se especifica en la ficha, pero esta interpretacion no puede confirmarse con la informacion disponible: la model card no incluye descripcion, pipeline declarado, licencia, idiomas ni arquitectura.
 
 El repositorio acumula 125 descargas y 0 "likes" desde su creacion el 10 de abril de 2026, con ultima actualizacion el 3 de octubre de 2026. El unico tag presente es `region:us`, que unicamente indica la region de almacenamiento del artefacto y no aporta informacion tecnica sobre el modelo.
 
@@ -25,13 +25,13 @@ Datos verificados del repositorio: identificador `GitHunter/netfm-checkpoints`, 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la ficha de HuggingFace ni en los resultados de busqueda disponibles. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM), un modelo hibrido o cualquier otra variante. Tampoco consta el numero de parametros, la ventana de contexto ni la estrategia de atencion empleada.
+No se ha publicado informacion sobre la arquitectura del modelo en la ficha de Hugging Face ni en los resultados de busqueda disponibles. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM), un modelo hibrido o cualquier otra variante. Tampoco consta el numero de parametros, la ventana de contexto ni la estrategia de atencion empleada.
 
 No hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset, ni sobre si se aplicaron tecnicas de ajuste como RLHF, DPO, SFT u otras. No se documentan innovaciones tecnicas (decodificacion especulativa, atencion lineal, destilacion, etc.). Toda esta seccion queda, por tanto, como no disponible a la espera de que el autor publique una model card o documentacion tecnica.
 
 ## Capacidades
 
-No es posible enumerar capacidades verificadas del modelo con la informacion disponible. La ficha de HuggingFace no declara pipeline, tareas soportadas ni modalidades (texto, vision, audio). La busqueda web realizada no ha devuelto ningun resultado relacionado con este repositorio: los enlaces obtenidos corresponden a contenido audiovisual y cinematografico sin relacion alguna con el artefacto.
+No es posible enumerar capacidades verificadas del modelo con la informacion disponible. La ficha de Hugging Face no declara pipeline, tareas soportadas ni modalidades (texto, vision, audio). La busqueda web realizada no ha devuelto ningun resultado relacionado con este repositorio: los enlaces obtenidos corresponden a contenido audiovisual y cinematografico sin relacion alguna con el artefacto.
 
 En consecuencia:
 
@@ -93,6 +93,6 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GitHunter/netfm-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/GitHunter/netfm-checkpoints
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo: papers, blogs, repositorios de codigo o demos asociados. Los resultados devueltos por el buscador no guardan relacion con este artefacto y se han descartado por no ser fuentes validas.

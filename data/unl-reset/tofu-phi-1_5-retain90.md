@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Propósito | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-phi-1_5-retain90` | 1,42 B | 2.048 (heredado) | MIT | Checkpoint *retain* para TOFU | HuggingFace (0 descargas) |
-| `microsoft/phi-1_5` | 1,3 B | 2.048 | MIT | LM generalista pequeño | HuggingFace, ampliamente usado |
-| Checkpoint TOFU retain90 oficial (locuslab) | 1,3 B | 2.048 | MIT (según repo) | Referencia canónica *retain* | HuggingFace |
-| Variantes TOFU *forget* sobre Phi-1.5 | 1,3 B | 2.048 | MIT | Modelos desaprendidos para comparación | HuggingFace |
+| `unl-reset/tofu-phi-1_5-retain90` | 1,42 B | 2.048 (heredado) | MIT | Checkpoint *retain* para TOFU | Hugging Face (0 descargas) |
+| `microsoft/phi-1_5` | 1,3 B | 2.048 | MIT | LM generalista pequeño | Hugging Face, ampliamente usado |
+| Checkpoint TOFU retain90 oficial (locuslab) | 1,3 B | 2.048 | MIT (según repo) | Referencia canónica *retain* | Hugging Face |
+| Variantes TOFU *forget* sobre Phi-1.5 | 1,3 B | 2.048 | MIT | Modelos desaprendidos para comparación | Hugging Face |
 
 La comparación con modelos generalistas de tamaño similar (p. ej., Qwen2.5-1.5B o SmolLM2-1.7B) no resulta significativa aquí: el ajuste sobre TOFU especializa el modelo en un dominio sintético y degrada su utilidad generalista.
 
@@ -89,7 +89,7 @@ La comparación con modelos generalistas de tamaño similar (p. ej., Qwen2.5-1.5
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-retain90
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-retain90
 - Modelo base: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Paper TOFU ("TOFU: A Task of Fictitious Unlearning for LLMs"): https://arxiv.org/abs/2401.06121

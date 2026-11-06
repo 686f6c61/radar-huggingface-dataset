@@ -85,7 +85,7 @@ Las tres alternativas proceden del mismo autor y comparten familia y tamaño, po
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/ReadyArt/Swish-26B-A4B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/ReadyArt/Swish-26B-A4B-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Swish-26B-A4B
 - Modelo hermano Serenity-26B-A4B: https://huggingface.co/ReadyArt/Serenity-26B-A4B
 - Modelo hermano Serenity-26B-A4B-GGUF: https://huggingface.co/ReadyArt/Serenity-26B-A4B-GGUF

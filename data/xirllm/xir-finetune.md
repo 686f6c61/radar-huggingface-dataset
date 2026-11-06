@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xirllm/xir-finetune (adaptador LoRA sobre Spark-X2.5-4B) | Base de ~4B mas adaptador de rango 16 | No disponible | Sin benchmarks publicados | Apache-2.0 | HuggingFace, 0 descargas y 0 likes |
-| XHToken/Spark-X2.5-4B (modelo base) | ~4B, inferido del nombre | No disponible | No disponible en esta ficha | Apache-2.0 | HuggingFace |
+| xirllm/xir-finetune (adaptador LoRA sobre Spark-X2.5-4B) | Base de ~4B mas adaptador de rango 16 | No disponible | Sin benchmarks publicados | Apache-2.0 | Hugging Face, 0 descargas y 0 likes |
+| XHToken/Spark-X2.5-4B (modelo base) | ~4B, inferido del nombre | No disponible | No disponible en esta ficha | Apache-2.0 | Hugging Face |
 | Adaptadores PEFT comparables de la misma categoria | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas documentadas en la informacion proporcionada |
 
 No se dispone de datos suficientes para establecer una comparacion cuantitativa con otros adaptadores de ajuste de identidad o con modelos de tamano similar.
@@ -88,7 +88,7 @@ No se dispone de datos suficientes para establecer una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xirllm/xir-finetune
+- Modelo en Hugging Face: https://huggingface.co/xirllm/xir-finetune
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Licencia del repositorio: `LICENSE` (Apache-2.0, referenciada en la model card)
 - Cuaderno de Colab para TPU v5e: `llm/kaggle/colab_finetune_tpu.ipynb` (ruta dentro del repositorio, sin URL publica indicada)

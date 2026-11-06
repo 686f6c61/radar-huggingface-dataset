@@ -23,7 +23,7 @@ La relevancia de esta conversión radica en que permite ejecutar un ASR japonés
 
 La arquitectura es la del modelo Whisper large-v3 de OpenAI: un transformer encoder-decoder con normalizacion de capa y atencion multi-cabeza, disenado originalmente para tareas de ASR y traduccion de voz. Kotoba Technologies tomo este checkpoint base y lo fine-tuneo con mas de 1.000 horas de audio en japones, utilizando datasets como ReazonSpeech, Extended Common Voice y subtitulos de YouTube (YouTube CC). El entrenamiento incluyo un paso adicional de post-procesado para anadir puntuacion automatica a las transcripciones, una capacidad que el Whisper original no ofrece de forma nativa.
 
-La conversion a MLX se realizo con la herramienta `convert.py` del repositorio [mlx-examples](https://github.com/ml-explore/mlx-examples), que mapea automaticamente los campos de los pesos de HuggingFace Transformers al formato MLX. La precision se redujo de fp32 a fp16, con una perdida de exactitud considerada despreciable por el autor de la conversion. No se han publicado detalles sobre el uso de RLHF o DPO en el entrenamiento original; el proceso se baso en fine-tuning supervisado estandar.
+La conversion a MLX se realizo con la herramienta `convert.py` del repositorio [mlx-examples](https://github.com/ml-explore/mlx-examples), que mapea automaticamente los campos de los pesos de Hugging Face Transformers al formato MLX. La precision se redujo de fp32 a fp16, con una perdida de exactitud considerada despreciable por el autor de la conversion. No se han publicado detalles sobre el uso de RLHF o DPO en el entrenamiento original; el proceso se baso en fine-tuning supervisado estandar.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ La principal diferencia entre el original y esta conversion es el formato de pes
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/enet45/kotoba-whisper-v2.1-mlx-fp16
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/enet45/kotoba-whisper-v2.1-mlx-fp16
 - Modelo original de Kotoba Technologies: https://huggingface.co/kotoba-tech/kotoba-whisper-v2.1
 - Repositorio GitHub de Kotoba-Whisper: https://github.com/kotoba-tech/kotoba-whisper
 - Organizacion Kotoba en GitHub: https://github.com/kotoba-tech

@@ -94,7 +94,7 @@ No se dispone de datos verificados de arquitectura, contexto, rendimiento ni lic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wy8edhuh/DeepSeek-R1-0528-Qwen3-8B-heretic-Q6_K-GGUF
+- Repositorio Hugging Face: https://huggingface.co/wy8edhuh/DeepSeek-R1-0528-Qwen3-8B-heretic-Q6_K-GGUF
 - Modelo base (abliterated): https://huggingface.co/jpvan4/DeepSeek-R1-0528-Qwen3-8B-heretic
 - Espacio de conversion gguf-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

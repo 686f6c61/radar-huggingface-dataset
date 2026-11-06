@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `momijiina/qwen3.8-22.37b-v1-Q4_K_M` es una cuantización GGUF en formato Q4_K_M de un modelo denominado "qwen3.8-22.37b-v1", publicado por el usuario `momijiina` en HuggingFace. La página del modelo no incluye descripción, pipeline, idiomas soportados ni ningún detalle técnico adicional; la única información disponible es la licencia Apache 2.0 y la fecha de creación (2026-08-18). No se han registrado descargas ni valoraciones, lo que sugiere que se trata de un modelo recién subido o de baja difusión.
+El modelo `momijiina/qwen3.8-22.37b-v1-Q4_K_M` es una cuantización GGUF en formato Q4_K_M de un modelo denominado "qwen3.8-22.37b-v1", publicado por el usuario `momijiina` en Hugging Face. La página del modelo no incluye descripción, pipeline, idiomas soportados ni ningún detalle técnico adicional; la única información disponible es la licencia Apache 2.0 y la fecha de creación (2026-08-18). No se han registrado descargas ni valoraciones, lo que sugiere que se trata de un modelo recién subido o de baja difusión.
 
 El nombre sugiere una relación con la serie Qwen3.8 de Alibaba, que según la documentación oficial incluye modelos con capacidades de visión, razonamiento y contexto largo (256K tokens). Sin embargo, no hay confirmación de que este modelo específico herede dichas características, ya que el autor no ha proporcionado documentación. Por tanto, cualquier afirmación sobre arquitectura o capacidades debe tratarse como especulativa hasta que se publique información verificable.
 
@@ -40,7 +40,7 @@ Al no existir documentación, no se pueden enumerar casos de uso concretos y ver
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de MMLU, HumanEval, GSM8K ni ninguna otra métrica. Se recomienda consultar la página del modelo en HuggingFace o al autor para obtener información actualizada.
+No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de MMLU, HumanEval, GSM8K ni ninguna otra métrica. Se recomienda consultar la página del modelo en Hugging Face o al autor para obtener información actualizada.
 
 ## Requisitos de hardware
 
@@ -67,8 +67,8 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/momijiina/qwen3.8-22.37b-v1-Q4_K_M
+- Página del modelo en Hugging Face: https://huggingface.co/momijiina/qwen3.8-22.37b-v1-Q4_K_M
 - Repositorio oficial de Qwen3.8 (referencia general): https://github.com/QwenLM/Qwen3.8
-- Página de Qwen3.8-27B en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Página de Qwen3.8-27B en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Repositorio de Qwen3 (serie anterior): https://github.com/QwenLM/Qwen3

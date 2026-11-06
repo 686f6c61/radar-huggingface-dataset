@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`98sd7fc9sdf/pussyview` es un adaptador LoRA para generacion de imagenes a partir de texto, publicado en HuggingFace por el usuario `98sd7fc9sdf`. Se distribuye a traves de la libreria `diffusers` y esta declarado como adaptador de `lvladikov/Krea2-Turbo-Distill-4step-LoRA`, es decir, se apila sobre otro LoRA de destilacion turbo que permite muestreo en cuatro pasos. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo.
+`98sd7fc9sdf/pussyview` es un adaptador LoRA para generacion de imagenes a partir de texto, publicado en Hugging Face por el usuario `98sd7fc9sdf`. Se distribuye a traves de la libreria `diffusers` y esta declarado como adaptador de `lvladikov/Krea2-Turbo-Distill-4step-LoRA`, es decir, se apila sobre otro LoRA de destilacion turbo que permite muestreo en cuatro pasos. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo.
 
 El proposito declarado es especializar el modelo base en un sujeto o estilo concreto, aunque la model card no documenta ni el concepto aprendido ni la palabra de activacion (`instance_prompt: null`), ni el dataset, ni los hiperparametros de entrenamiento. La galeria de ejemplos esta vacia y el widget de demostracion usa un prompt vacio ("-"), por lo que no hay evidencia publica del comportamiento real del adaptador.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Resolucion / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `98sd7fc9sdf/pussyview` | LoRA sobre `diffusers` | no disponible (0,2 GB de pesos) | no disponible | unknown | HuggingFace, 0 descargas, 0 likes |
-| `lvladikov/Krea2-Turbo-Distill-4step-LoRA` | LoRA de destilacion turbo (4 pasos) | no disponible | no disponible | no disponible | HuggingFace, referenciado como base |
+| `98sd7fc9sdf/pussyview` | LoRA sobre `diffusers` | no disponible (0,2 GB de pesos) | no disponible | unknown | Hugging Face, 0 descargas, 0 likes |
+| `lvladikov/Krea2-Turbo-Distill-4step-LoRA` | LoRA de destilacion turbo (4 pasos) | no disponible | no disponible | no disponible | Hugging Face, referenciado como base |
 | Otros adaptadores LoRA de text-to-image de proposito equivalente | LoRA | no disponible | no disponible | no disponible | No se han identificado alternativas concretas en la informacion disponible |
 
 No se dispone de datos de rendimiento, parametros ni licencia de ninguno de los modelos comparables, por lo que la comparacion se limita a la categoria y al modo de distribucion.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento, parametros ni licencia de ninguno de los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/98sd7fc9sdf/pussyview
+- Modelo en Hugging Face: https://huggingface.co/98sd7fc9sdf/pussyview
 - Archivos del repositorio: https://huggingface.co/98sd7fc9sdf/pussyview/tree/main
 - Modelo base declarado: https://huggingface.co/lvladikov/Krea2-Turbo-Distill-4step-LoRA
 - Paper asociado: no disponible

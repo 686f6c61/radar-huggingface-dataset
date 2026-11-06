@@ -123,8 +123,8 @@ DFlash 2 supera a ambos drafters alternativos en todas las tareas evaluadas, tan
 
 ## Enlaces
 
-- Repositorio HuggingFace (z-lab): https://huggingface.co/z-lab/Muse-Glimmer-30B-DFlash2
-- Repositorio HuggingFace (Inco AI, fuente oficial): https://huggingface.co/incoai/Muse-Glimmer-30B-DFlash2
+- Repositorio Hugging Face (z-lab): https://huggingface.co/z-lab/Muse-Glimmer-30B-DFlash2
+- Repositorio Hugging Face (Inco AI, fuente oficial): https://huggingface.co/incoai/Muse-Glimmer-30B-DFlash2
 - Modelo objetivo: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Drafter oficial de Meta: https://huggingface.co/meta-models/Muse-Glimmer-30B-assistant
 - Drafter DSpark (comparativa): https://huggingface.co/DaoCloud/Muse-Glimmer-30B-DSpark

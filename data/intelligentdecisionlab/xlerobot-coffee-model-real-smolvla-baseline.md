@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos, ya que el
 
 ## Enlaces
 
-- Repositorio HuggingFace: [IntelligentDecisionLab/xlerobot-coffee-model-real-smolvla-baseline](https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-real-smolvla-baseline)
+- Repositorio Hugging Face: [IntelligentDecisionLab/xlerobot-coffee-model-real-smolvla-baseline](https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-real-smolvla-baseline)
 - Dataset de entrenamiento: [IntelligentDecisionLab/xlerobot-coffee-real-2cam](https://huggingface.co/datasets/IntelligentDecisionLab/xlerobot-coffee-real-2cam)
 - Modelo base: [lerobot/smolvla_base](https://huggingface.co/lerobot/smolvla_base)
 - Paper de SmolVLA: [SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotic Control](https://arxiv.org/abs/2506.01844)

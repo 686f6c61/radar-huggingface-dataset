@@ -25,7 +25,7 @@ Al tratarse de un artefacto experimental, se dirige a investigadores y desarroll
 
 El modelo es un adaptador LoRA (Low-Rank Adaptation) que añade matrices de bajo rango entrenables al modelo base `HuggingFaceTB/SmolLM2-360M-Instruct`. El modelo base es un transformer decoder-only de 360 millones de parámetros, con una ventana de contexto de 8192 tokens y tokenizer BPE.
 
-El entrenamiento se realiza con GRPO, un algoritmo de aprendizaje por refuerzo que genera un grupo de respuestas para cada consulta, calcula recompensas relativas y actualiza la política del modelo en función de la ventaja normalizada del grupo. La implementación se apoya en el backend TRL de HuggingFace. El orquestador del entrenamiento es AgentTune, plataforma de Lexsi Labs que unifica trayectorias agénticas para entrenamiento, evaluación, destilación y auto-reparación. Los datos de entrenamiento, la composición del dataset y el número de pasos no estan especificados en la informacion disponible.
+El entrenamiento se realiza con GRPO, un algoritmo de aprendizaje por refuerzo que genera un grupo de respuestas para cada consulta, calcula recompensas relativas y actualiza la política del modelo en función de la ventaja normalizada del grupo. La implementación se apoya en el backend TRL de Hugging Face. El orquestador del entrenamiento es AgentTune, plataforma de Lexsi Labs que unifica trayectorias agénticas para entrenamiento, evaluación, destilación y auto-reparación. Los datos de entrenamiento, la composición del dataset y el número de pasos no estan especificados en la informacion disponible.
 
 ## Capacidades
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM en cuantizacion INT8: aproximadamente 0,4 GB; en 4-bit, aproximadamente 0,2 GB, lo que permite ejecutarlo en GPUs con 4 GB o menos.
 - GPU recomendadas: cualquier GPU moderna de consumo (RTX 3060, RTX 4060, RTX 4090) o GPU de datacenter (A10, A100, H100).
 - Compatible con GPU de consumo: sí, el modelo es muy ligero y puede ejecutarse incluso en CPUs potentes mediante llama.cpp u Ollama.
-- Opciones de despliegue: `transformers` con `peft` (usando `AutoPeftModelForCausalLM`), `vLLM` (etiquetado como endpoints_compatible en HuggingFace), `llama.cpp` y `Ollama`.
+- Opciones de despliegue: `transformers` con `peft` (usando `AutoPeftModelForCausalLM`), `vLLM` (etiquetado como endpoints_compatible en Hugging Face), `llama.cpp` y `Ollama`.
 - Latencia y throughput: no se han publicado cifras oficiales; por el reducido tamaño del modelo, se espera una latencia de generacion baja en GPU.
 
 ## Comparativa con modelos similares
@@ -78,11 +78,11 @@ La comparacion se limita a especificaciones tecnicas. No se dispone de metricas 
 - Un modelo de 360M presenta limitaciones inherentes en razonamiento complejo, creatividad y cobertura tematica frente a modelos de mayor escala.
 - No se han publicado analisis de sesgos, evaluaciones de alucinacion ni metricas de seguridad para este adaptador.
 - El vocabulario y tokenizer del modelo base ofrecen una cobertura limitada para idiomas distintos del ingles.
-- El repositorio muestra un tamaño de 0.0 GB en la api de HuggingFace, lo que dificulta verificar la integridad y el contenido exacto de los pesos publicados.
+- El repositorio muestra un tamaño de 0.0 GB en la api de Hugging Face, lo que dificulta verificar la integridad y el contenido exacto de los pesos publicados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ram-lexsi/agenttune-testrun-openenv
+- Modelo en Hugging Face: https://huggingface.co/ram-lexsi/agenttune-testrun-openenv
 - Repositorio espejo de AgentTune: https://github.com/Lexsi-Labs/AgentTune_mirror
 - Web de Lexsi Labs: https://lexsi.ai/
 - Comunidad Discord de Lexsi: https://discord.com/invite/dtEDQ2Z3eg

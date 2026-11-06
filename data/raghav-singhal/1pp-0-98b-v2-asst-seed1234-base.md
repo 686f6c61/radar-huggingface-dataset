@@ -27,7 +27,7 @@ El modelo es un decoder transformer denso de estilo Llama con 24 capas, dimensi�
 
 El preentrenamiento se realizó sobre conversaciones reescritas del corpus 1PP, aplicando la pérdida únicamente sobre los turnos del asistente, con enmascaramiento de atención entre documentos. Se entrenaron los primeros 18.779 pasos del flujo alineado por pasos (39,38B posiciones de token), que coinciden con los primeros pasos del pase principal de 31.777 pasos del estudio, en el mismo orden. El batch global fue de 512 secuencias × 4.096 tokens. El optimizador combina Muon (shape scaling, LR matricial 0,005) para las matrices y Adam para el resto de parámetros (LR 2,3e-3 para embeddings y capa de salida, 3e-3 para las normas), con warmup de 1.181 pasos, fase constante y decaimiento lineal en los últimos 1.877 pasos hasta 1/100. Weight decay 0,1, desviación estándar de inicialización 0,0103 y precisión bf16.
 
-La pérdida de validación del checkpoint final sobre 2.433 documentos retenidos es de 1,549 por token en texto de asistente, 6,392 en texto de usuario y 3,327 en texto de documento; la columna ponderada de tokens de entrenamiento de esta condición es 1,601 (`reweighted_seg34`). Los pesos de HuggingFace se verificaron contra el checkpoint de Megatron recalculando pérdidas de validación, con una diferencia absoluta de 0,0014 en ambos conjuntos comprobados.
+La pérdida de validación del checkpoint final sobre 2.433 documentos retenidos es de 1,549 por token en texto de asistente, 6,392 en texto de usuario y 3,327 en texto de documento; la columna ponderada de tokens de entrenamiento de esta condición es 1,601 (`reweighted_seg34`). Los pesos de Hugging Face se verificaron contra el checkpoint de Megatron recalculando pérdidas de validación, con una diferencia absoluta de 0,0014 en ambos conjuntos comprobados.
 
 ## Capacidades
 
@@ -46,7 +46,7 @@ La pérdida de validación del checkpoint final sobre 2.433 documentos retenidos
 - Investigación sobre formato conversacional: al haberse entrenado con pérdida solo en turnos de asistente, es útil para estudiar cómo el enmascaramiento de la pérdida afecta a la generación de respuestas con formato ChatML en modelos pequeños.
 - Evaluación de tokenizadores y vocabularios: al usar el vocabulario de SmolLM2 (49.152 tokens), permite comparar el comportamiento de este vocabulario en tareas de generación en inglés frente a otros tokenizadores en condiciones controladas.
 - Docencia y experimentación en entornos con recursos limitados: con 0,98B parámetros y pesos en bf16 (aproximadamente 2 GB de repositorio), es viable entrenar variantes o hacer fine-tuning en una única GPU de gama alta para prácticas de laboratorio.
-- Verificación de conversiones de checkpoints: el modelo se publicó junto a comprobaciones de equivalencia entre Megatron y HuggingFace, por lo que sirve como referencia para validar pipelines de conversión de pesos.
+- Verificación de conversiones de checkpoints: el modelo se publicó junto a comprobaciones de equivalencia entre Megatron y Hugging Face, por lo que sirve como referencia para validar pipelines de conversión de pesos.
 
 ## Benchmarks y rendimiento
 
@@ -98,7 +98,7 @@ La comparación más directa es interna a la propia colección 1PP, ya que el di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-seed1234-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-seed1234-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Registros de entrenamiento (wandb, preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training
 - Registros de entrenamiento (wandb, SFT): https://wandb.ai/raghav_singhal/1pp-sft

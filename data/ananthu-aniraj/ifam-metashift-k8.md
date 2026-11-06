@@ -70,7 +70,7 @@ No se dispone de datos comparativos directos con otros modelos en la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ananthu-aniraj/ifam-metashift-k8
+- Hugging Face: https://huggingface.co/ananthu-aniraj/ifam-metashift-k8
 - Paper (arxiv): https://arxiv.org/abs/2506.08915
 - Versión HTML del paper: https://arxiv.org/html/2506.08915v4
 - Repositorio GitHub: https://github.com/ananthu-aniraj/ifam

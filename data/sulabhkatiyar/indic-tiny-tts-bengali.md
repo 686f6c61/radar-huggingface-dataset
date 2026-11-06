@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Indic Tiny TTS: Bengali es un modelo de síntesis de voz (text-to-speech) para bengalí desarrollado por sulabhkatiyar, publicado en HuggingFace bajo licencia CC-BY-4.0. Forma parte de la colección INDIC TINY TTS MODELS, compuesta por 12 modelos pequeños, uno por idioma, que cubren 11 lenguas indias y el inglés indio. El modelo convierte texto en escritura bengalí en audio de 24 kHz con dos voces disponibles, femenina y masculina.
+Indic Tiny TTS: Bengali es un modelo de síntesis de voz (text-to-speech) para bengalí desarrollado por sulabhkatiyar, publicado en Hugging Face bajo licencia CC-BY-4.0. Forma parte de la colección INDIC TINY TTS MODELS, compuesta por 12 modelos pequeños, uno por idioma, que cubren 11 lenguas indias y el inglés indio. El modelo convierte texto en escritura bengalí en audio de 24 kHz con dos voces disponibles, femenina y masculina.
 
 El modelo está diseñado específicamente para inferencia en dispositivo (on-device) y en CPU, sin necesidad de GPU. Con 8,9 millones de parámetros según los pesos en safetensors (la model card indica 22,5 millones, discrepancia que conviene tener en cuenta), ofrece una velocidad de 38 veces tiempo real en un solo hilo de CPU Apple M1 y 7 veces en un hilo de CPU x86. Está disponible en formato PyTorch y ONNX Runtime.
 
@@ -102,11 +102,11 @@ Velocidad (factor de tiempo real, menor es más rápido):
 
 | Modelo | Parámetros | Contexto | CER (FLORES-200) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| **Este modelo** | 22,5 M (card) / 8,9 M (safetensors) | no aplica | 2,10 % | CC-BY-4.0 | HuggingFace |
-| ai4bharat/IndicF5 | 350,6 M | no aplica | 1,70 % | no disponible | HuggingFace |
-| ai4bharat/indic-parler-tts | 937,8 M | no aplica | 2,27 % | no disponible | HuggingFace |
-| facebook/mms-tts-ben | 29,1 M | no aplica | 4,86 % | no disponible | HuggingFace |
-| rhasspy/piper-voices (bn_BD-google-medium) | 15,8 M | no aplica | 5,48 % | no disponible | HuggingFace |
+| **Este modelo** | 22,5 M (card) / 8,9 M (safetensors) | no aplica | 2,10 % | CC-BY-4.0 | Hugging Face |
+| ai4bharat/IndicF5 | 350,6 M | no aplica | 1,70 % | no disponible | Hugging Face |
+| ai4bharat/indic-parler-tts | 937,8 M | no aplica | 2,27 % | no disponible | Hugging Face |
+| facebook/mms-tts-ben | 29,1 M | no aplica | 4,86 % | no disponible | Hugging Face |
+| rhasspy/piper-voices (bn_BD-google-medium) | 15,8 M | no aplica | 5,48 % | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -116,12 +116,12 @@ Velocidad (factor de tiempo real, menor es más rápido):
 - Riesgo de alucinación o errores de pronunciación en textos con números, siglas, nombres propios o puntuación atípica; el CER del 3,58 % en test reservado indica que existe margen de error.
 - La licencia CC-BY-4.0 permite uso comercial con atribución; es necesario citar al autor y la licencia.
 - No se especifican limitaciones de longitud de texto de entrada ni de contexto; conviene trocear entradas largas.
-- La model card marca `inference: false`, lo que puede indicar que la inferencia vía la API de HuggingFace no está habilitada; es necesario descargar los pesos y ejecutarlos localmente.
+- La model card marca `inference: false`, lo que puede indicar que la inferencia vía la API de Hugging Face no está habilitada; es necesario descargar los pesos y ejecutarlos localmente.
 - El modelo tiene solo 4 descargas y 0 likes en el momento de la consulta, por lo que la validación comunitaria es muy limitada.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/sulabhkatiyar/indic-tiny-tts-bengali)
+- [Modelo en Hugging Face](https://huggingface.co/sulabhkatiyar/indic-tiny-tts-bengali)
 - [Colección INDIC TINY TTS MODELS](https://huggingface.co/collections/sulabhkatiyar/indic-tiny-tts-models-6aeae36f954418631a68676d)
 - [Dataset indic-tts-mini-24k](https://huggingface.co/datasets/sulabhkatiyar/indic-tts-mini-24k)
 - [Dataset indic-tts-multilingual-prepared](https://huggingface.co/datasets/sulabhkatiyar/indic-tts-multilingual-prepared)

@@ -82,7 +82,7 @@ La comparativa se limita a los modelos mencionados en la documentación. No se d
 
 ## Enlaces
 
-- [HuggingFace - KucLab/kuclab-hertz-0.3](https://huggingface.co/KucLab/kuclab-hertz-0.3)
+- [Hugging Face - KucLab/kuclab-hertz-0.3](https://huggingface.co/KucLab/kuclab-hertz-0.3)
 - [Sitio web de KucLab](https://kuclab.org)
 - [Modelo base: Qwen/Qwen2.5-14B-Instruct](https://huggingface.co/Qwen/Qwen2.5-14B-Instruct)
 - [Modelo profesor: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

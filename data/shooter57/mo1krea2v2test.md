@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mo1krea2v2test es un adaptador LoRA de tipo text-to-image publicado por el usuario Shooter57 en HuggingFace. Se trata de un ajuste fino de bajo rango (Low-Rank Adaptation) construido sobre el modelo base krea/Krea-2-Raw, y se distribuye en formato diffusers con la etiqueta `template:diffusion-lora`. Su proposito es modificar el comportamiento generativo del modelo base sin necesidad de reentrenar ni redistribuir los pesos completos, lo que reduce drasticamente el tamano de la descarga: el repositorio ocupa aproximadamente 0,5 GB frente a los varios gigabytes o decenas de gigabytes que suele ocupar un modelo de difusion completo.
+mo1krea2v2test es un adaptador LoRA de tipo text-to-image publicado por el usuario Shooter57 en Hugging Face. Se trata de un ajuste fino de bajo rango (Low-Rank Adaptation) construido sobre el modelo base krea/Krea-2-Raw, y se distribuye en formato diffusers con la etiqueta `template:diffusion-lora`. Su proposito es modificar el comportamiento generativo del modelo base sin necesidad de reentrenar ni redistribuir los pesos completos, lo que reduce drasticamente el tamano de la descarga: el repositorio ocupa aproximadamente 0,5 GB frente a los varios gigabytes o decenas de gigabytes que suele ocupar un modelo de difusion completo.
 
 El modelo se encuentra en un estado practicamente sin documentar. La model card asociada no incluye descripcion del dataset de entrenamiento, hiperparametros, numero de pasos, resolucion objetivo, ni ejemplos de uso mas alla de un widget vacio con un prompt de guion y una captura de pantalla. El `instance_prompt` aparece explicitamente como `null`, por lo que no existe una palabra o token de activacion documentado para invocar el estilo o concepto aprendido.
 
@@ -74,9 +74,9 @@ No se dispone de informacion sobre adaptadores LoRA comparables entrenados espec
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shooter57/mo1krea2v2test | LoRA de difusion | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
-| krea/Krea-2-Raw | Modelo de difusion base | no disponible | no aplica | no disponible | HuggingFace |
-| Otros LoRA de difusion (categoria) | Adaptadores de bajo rango | tipicamente decenas a cientos de MB | no aplica | variable | HuggingFace, Civitai |
+| Shooter57/mo1krea2v2test | LoRA de difusion | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
+| krea/Krea-2-Raw | Modelo de difusion base | no disponible | no aplica | no disponible | Hugging Face |
+| Otros LoRA de difusion (categoria) | Adaptadores de bajo rango | tipicamente decenas a cientos de MB | no aplica | variable | Hugging Face, Civitai |
 
 No se identifican modelos alternativos concretos con los que comparar de forma significativa a partir de la informacion proporcionada.
 
@@ -96,7 +96,7 @@ No se identifican modelos alternativos concretos con los que comparar de forma s
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Shooter57/mo1krea2v2test
+- Pagina del modelo en Hugging Face: https://huggingface.co/Shooter57/mo1krea2v2test
 - Archivos del repositorio: https://huggingface.co/Shooter57/mo1krea2v2test/tree/main
 - Modelo base Krea-2-Raw: https://huggingface.co/krea/Krea-2-Raw
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

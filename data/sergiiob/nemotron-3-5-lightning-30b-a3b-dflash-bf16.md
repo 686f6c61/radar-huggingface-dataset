@@ -78,7 +78,7 @@ No hay información disponible sobre modelos comparables en la documentación pr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SergiioB/Nemotron-3.5-Lightning-30B-A3B-DFlash-BF16
+- Repositorio Hugging Face: https://huggingface.co/SergiioB/Nemotron-3.5-Lightning-30B-A3B-DFlash-BF16
 - Modelo objetivo GPTQ INT4: https://huggingface.co/SergiioB/Nemotron-3.5-Lightning-30B-A3B-GPTQ-INT4-G64-sym
 - Modelo fuente de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash
 - Cookbook de inferencia en Intel Arc Pro B70: https://github.com/SergiioB/intel-arc-pro-b70-inference-cookbook

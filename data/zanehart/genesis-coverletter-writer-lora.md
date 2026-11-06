@@ -6,7 +6,7 @@
 
 El problema que aborda es concreto: los modelos genericos de instrucciones tienden a producir cartas de presentacion genericas, con estructura predecible y sin adaptacion al puesto o al sector. Un ajuste fino ligero puede fijar el estilo, el formato y el tono esperados sin necesidad de reentrenar el modelo base, lo que reduce coste de entrenamiento y permite distribuir unicamente los pesos del adaptador. El modelo base Qwen2.5-7B-Instruct aporta una ventana de contexto de 131.072 tokens, soporte multilingue amplio y una licencia Apache 2.0 que facilita su uso comercial.
 
-Ahora bien, la ficha del autor es la plantilla por defecto de HuggingFace sin rellenar: no documenta datos de entrenamiento, hiperparametros, evaluacion, licencia del adaptador ni idiomas. El repositorio acumula 0 descargas y 0 "likes" en la fecha de consulta, y fue creado y actualizado el mismo dia (23 de septiembre de 2026). En consecuencia, cualquier afirmacion sobre la calidad del ajuste es una hipotesis no verificada y debe tratarse con cautela antes de usarlo en produccion.
+Ahora bien, la ficha del autor es la plantilla por defecto de Hugging Face sin rellenar: no documenta datos de entrenamiento, hiperparametros, evaluacion, licencia del adaptador ni idiomas. El repositorio acumula 0 descargas y 0 "likes" en la fecha de consulta, y fue creado y actualizado el mismo dia (23 de septiembre de 2026). En consecuencia, cualquier afirmacion sobre la calidad del ajuste es una hipotesis no verificada y debe tratarse con cautela antes de usarlo en produccion.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM del modelo base en 4 bits (GPTQ, AWQ o GGUF Q4): aproximadamente 5-6 GB.
 - GPU profesionales: A100 40/80 GB, H100 o L40S, sin problema para bf16 y contexto largo.
 - GPU de consumo compatibles: RTX 4090 o RTX 3090 (24 GB) ejecutan el modelo en bf16 con margen; RTX 4080 (16 GB) requiere cuantizacion de 8 bits o inferior; RTX 3060 (12 GB) y tarjetas similares solo en 4 bits.
-- Opciones de despliegue: Transformers + PEFT (ruta nativa del adaptador), vLLM con soporte LoRA, HuggingFace TGI con adaptadores, llama.cpp u Ollama previa conversion del adaptador a GGUF y fusion con el modelo base.
+- Opciones de despliegue: Transformers + PEFT (ruta nativa del adaptador), vLLM con soporte LoRA, Hugging Face TGI con adaptadores, llama.cpp u Ollama previa conversion del adaptador a GGUF y fusion con el modelo base.
 - Latencia y throughput: no disponible. No hay mediciones publicadas para este adaptador.
 
 ## Comparativa con modelos similares

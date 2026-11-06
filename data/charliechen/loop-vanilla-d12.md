@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Loop-vanilla-d12 es un modelo de lenguaje base (pretrained, sin ajuste por instrucciones) publicado por el usuario CharlieChen en HuggingFace. Se trata del checkpoint final original empleado en la escalera de escalado sobre FineWeb del articulo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". El modelo pertenece a la familia de los looped transformers y su identificador de profundidad (coordenada d12) es la coordenada de escalado del experimento, no necesariamente el numero de bloques Transformer ejecutados: en esta variante el modo de profundidad es `none` y la repeticion del nucleo configurada es 1.
+Loop-vanilla-d12 es un modelo de lenguaje base (pretrained, sin ajuste por instrucciones) publicado por el usuario CharlieChen en Hugging Face. Se trata del checkpoint final original empleado en la escalera de escalado sobre FineWeb del articulo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". El modelo pertenece a la familia de los looped transformers y su identificador de profundidad (coordenada d12) es la coordenada de escalado del experimento, no necesariamente el numero de bloques Transformer ejecutados: en esta variante el modo de profundidad es `none` y la repeticion del nucleo configurada es 1.
 
 El checkpoint almacena 494.272.512 parametros en FP32 (1,977 GB) y usa el tokenizador de GPT-2 (`tiktoken.get_encoding("gpt2")`) con un vocabulario de 50.257 tokens, ampliado a 50.304 filas del modelo. La longitud de contexto es de 2.048 tokens, con una anchura de 1.536 y 12 cabezas de atencion. El entrenamiento se realizo sobre el corpus FineWeb y la validacion de preentrenamiento registra una NLL de 3,029247 nats/token.
 
@@ -100,7 +100,7 @@ Diferencias destacables: frente a alternativas como Qwen2.5-0.5B o SmolLM2-360M,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-vanilla-d12
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-vanilla-d12
 - Repositorio de codigo del articulo (evaluacion y reconstruccion del modelo): https://github.com/cue-engineering/loop
 - Articulo de referencia: "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents" (sin enlace directo en la informacion disponible)
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb

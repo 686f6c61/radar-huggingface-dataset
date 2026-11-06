@@ -1,11 +1,11 @@
 # alfred8995/r18-a2-w13-k-chrono5-w30-s100
 
 ## Resumen
-El modelo `alfred8995/r18-a2-w13-k-chrono5-w30-s100` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo el tag `sn38-nanochrono`, con licencia Apache 2.0 y acceso restringido (gated). Se trata de un modelo de aproximadamente 2.018 millones de parametros (2,018 mil millones), almacenado en formato safetensors y con un tamano de repositorio de 12,6 GB, lo que sugiere pesos en precision alta (probablemente fp32 o fp16 con optimizador incluido). No se dispone de informacion publica sobre la arquitectura, el pipeline, los idiomas soportados ni el proceso de entrenamiento.
+El modelo `alfred8995/r18-a2-w13-k-chrono5-w30-s100` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo el tag `sn38-nanochrono`, con licencia Apache 2.0 y acceso restringido (gated). Se trata de un modelo de aproximadamente 2.018 millones de parametros (2,018 mil millones), almacenado en formato safetensors y con un tamano de repositorio de 12,6 GB, lo que sugiere pesos en precision alta (probablemente fp32 o fp16 con optimizador incluido). No se dispone de informacion publica sobre la arquitectura, el pipeline, los idiomas soportados ni el proceso de entrenamiento.
 
 La nomenclatura del identificador (`r18-a2-w13-k-chrono5-w30-s100`) apunta a una configuracion experimental concreta dentro de una familia de modelos denominada "nanochrono", probablemente variantes de un modelo base con distintos hiperparametros (rondas, ventanas, kernels, semillas). El tag `sn38-nanochrono` refuerza esta hipotesis de que se trata de un checkpoint de investigacion o de un barrido de hiperparametros, no de un modelo listo para produccion.
 
-Su relevancia actual es limitada: con solo 4 descargas, 0 likes, acceso restringido y ausencia de documentacion tecnica, no puede considerarse un modelo evaluable para uso general. Se incluye en esta ficha por completitud, pero cualquier evaluacion practica requerira contactar con el autor o aceptar las condiciones de acceso en HuggingFace para inspeccionar los archivos y la model card.
+Su relevancia actual es limitada: con solo 4 descargas, 0 likes, acceso restringido y ausencia de documentacion tecnica, no puede considerarse un modelo evaluable para uso general. Se incluye en esta ficha por completitud, pero cualquier evaluacion practica requerira contactar con el autor o aceptar las condiciones de acceso en Hugging Face para inspeccionar los archivos y la model card.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 - No se confirma soporte de agentes ni razonamiento multi-paso.
 - No se confirma capacidad multilingue ni idiomas soportados.
 - No se confirma la existencia de modos especiales (thinking mode, vision, audio).
-- El pipeline no esta declarado en HuggingFace, por lo que no se puede asignar una tarea canonica (text-generation, feature-extraction, etc.).
+- El pipeline no esta declarado en Hugging Face, por lo que no se puede asignar una tarea canonica (text-generation, feature-extraction, etc.).
 
 ## Casos de uso
 Dado que no hay documentacion tecnica ni pipeline declarado, los casos de uso son hipoteticos y deben validarse tras aceptar el acceso al repositorio:
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 No disponible. No se han identificado modelos comparables dentro de la familia "nanochrono" ni alternativas publicas con la misma configuracion y licencia en la informacion proporcionada. Cualquier comparacion con modelos de ~2.000 millones de parametros (por ejemplo, variantes de la familia Llama, Qwen o Gemma de tamano similar) seria especulativa al desconocerse la arquitectura y el entrenamiento de este checkpoint.
 
 ## Limitaciones y advertencias
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que anade friccion a cualquier evaluacion.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que anade friccion a cualquier evaluacion.
 - Ausencia total de model card, pipeline declarado e idiomas: no se puede verificar el comportamiento del modelo ni su idoneidad para tareas concretas.
 - Riesgo elevado de alucinacion y comportamiento impredecible al no conocerse el dataset de entrenamiento ni si hubo alineamiento (RLHF/DPO).
 - Sesgos desconocidos: sin informacion sobre la composicion de los datos, no es posible evaluar sesgos de genero, raza, idioma o dominio.
@@ -70,4 +70,4 @@ No disponible. No se han identificado modelos comparables dentro de la familia "
 - No apto para produccion sin validacion previa: la falta de benchmarks y documentacion impide garantizar calidad, latencia o seguridad.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w30-s100
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w30-s100

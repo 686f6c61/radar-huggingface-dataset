@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LigandMPNN (esta variante, OFoldX) | 2,63 M | 32 vecinos / 25 átomos de contexto | Diseño inverso con contexto atómico | AGPL-3.0 | HuggingFace (oteam) |
+| LigandMPNN (esta variante, OFoldX) | 2,63 M | 32 vecinos / 25 átomos de contexto | Diseño inverso con contexto atómico | AGPL-3.0 | Hugging Face (oteam) |
 | ProteinMPNN | No disponible en la información | Solo backbone proteico | Diseño inverso de proteínas | No disponible | Repositorio original de Dauparas et al. |
 | LigandMPNN oficial | No disponible en la información | Contexto atómico no proteico | Diseño inverso con contexto atómico | No disponible | GitHub dauparas/LigandMPNN |
 
@@ -85,7 +85,7 @@ La comparación cuantitativa de rendimiento entre estas alternativas no está di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/ligandmpnn-noise005
+- Hugging Face: https://huggingface.co/oteam/ligandmpnn-noise005
 - Variante noise010: https://huggingface.co/oteam/ligandmpnn-noise010
 - Variante noise010 (alias): https://huggingface.co/oteam/ligandmpnn
 - Variante noise020: https://huggingface.co/oteam/ligandmpnn-noise020

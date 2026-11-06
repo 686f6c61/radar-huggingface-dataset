@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-Atlassian-Q8-base-mlx | 9,41 B | no disponible | Base sin entrenar, MLX 8 bits | Apache-2.0 | HuggingFace, MLX |
-| Qwen3.5-9B-Atlassian-Q8-mlx | 9,41 B | no disponible | Afinado Atlassian, MLX 8 bits | Apache-2.0 | HuggingFace, MLX |
-| Qwen3.5-9B-Atlassian-Q6-mlx / Q4-mlx | 9,41 B | no disponible | Afinado Atlassian, cuantización menor | Apache-2.0 | HuggingFace, MLX |
-| Qwen3.8-27B-Atlassian-Q8-mlx | 27 B (aprox.) | no disponible | Afinado Atlassian, mayor tamaño | Apache-2.0 | HuggingFace, MLX |
+| Qwen3.5-9B-Atlassian-Q8-base-mlx | 9,41 B | no disponible | Base sin entrenar, MLX 8 bits | Apache-2.0 | Hugging Face, MLX |
+| Qwen3.5-9B-Atlassian-Q8-mlx | 9,41 B | no disponible | Afinado Atlassian, MLX 8 bits | Apache-2.0 | Hugging Face, MLX |
+| Qwen3.5-9B-Atlassian-Q6-mlx / Q4-mlx | 9,41 B | no disponible | Afinado Atlassian, cuantización menor | Apache-2.0 | Hugging Face, MLX |
+| Qwen3.8-27B-Atlassian-Q8-mlx | 27 B (aprox.) | no disponible | Afinado Atlassian, mayor tamaño | Apache-2.0 | Hugging Face, MLX |
 
 Frente a la versión afinada de 9B, este checkpoint rinde peor en identificadores (15 % frente a 62 % con thinking) y presenta más bucles y no terminación, lo que confirma que la ganancia proviene del adaptador. Frente al 27B, ofrece menor calidad pero una huella de memoria mucho menor.
 
@@ -99,7 +99,7 @@ Frente a la versión afinada de 9B, este checkpoint rinde peor en identificadore
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mihai-LeanZero/Qwen3.5-9B-Atlassian-Q8-base-mlx
+- Modelo en Hugging Face: https://huggingface.co/Mihai-LeanZero/Qwen3.5-9B-Atlassian-Q8-base-mlx
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Write-up completo de LeanZero: https://leanzero.net/portfolio/atlassian-models
 - LeanZero: https://leanzero.net

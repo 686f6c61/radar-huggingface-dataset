@@ -23,7 +23,7 @@ La licencia **Apache 2.0** permite su uso, modificación y redistribución sin r
 
 ## Arquitectura y entrenamiento
 
-La arquitectura Dino implementada en este repositorio emplea **atención de ventana deslizante** (sliding window attention), **fusión bilineal** (bilinear fusion), **activación GELU con aproximación tangente hiperbólica** (gelu tanh) y **normalización por grupos** (groupnorm). Se trata de una implementación desde cero, no basada en las APIs estándar de HuggingFace, por lo que requiere un adaptador explícito para su carga mediante herramientas genéricas.
+La arquitectura Dino implementada en este repositorio emplea **atención de ventana deslizante** (sliding window attention), **fusión bilineal** (bilinear fusion), **activación GELU con aproximación tangente hiperbólica** (gelu tanh) y **normalización por grupos** (groupnorm). Se trata de una implementación desde cero, no basada en las APIs estándar de Hugging Face, por lo que requiere un adaptador explícito para su carga mediante herramientas genéricas.
 
 El repositorio incluye una receta de entrenamiento por defecto que utiliza **RMSprop** con **programa de tasa de aprendizaje coseno** (cosine schedule). Sin embargo, el autor especifica claramente que estos valores son puntos de partida en el script y no evidencian una ejecución completada. El checkpoint `model.safetensors` es una inicialización válida para pruebas de humo, no un modelo entrenado con datos reales. No se ha realizado entrenamiento con ningún dataset, por lo que no existen pesos aprendidos que reflejen patrones de datos.
 
@@ -64,7 +64,7 @@ No disponible. Este modelo no es comparable con otros modelos de clasificación 
 
 - **Modelo no entrenado**: el checkpoint incluido es una inicialización aleatoria válida para pruebas de humo, no un modelo con pesos aprendidos. Cualquier intento de usarlo para clasificación real producirá resultados sin sentido.
 - **Sin auditoría de robustez o equidad**: el autor advierte que el checkpoint no ha sido auditado para robustez, equidad o transferencia de dominio.
-- **Implementación personalizada**: al no usar las APIs estándar de HuggingFace, las herramientas genéricas de carga automática requieren un adaptador explícito antes de su uso.
+- **Implementación personalizada**: al no usar las APIs estándar de Hugging Face, las herramientas genéricas de carga automática requieren un adaptador explícito antes de su uso.
 - **Sin resultados documentados**: no hay benchmarks ni métricas de rendimiento publicados. Los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto incluidos.
 - **Riesgo de alucinación**: no aplicable directamente, pero cualquier uso del modelo sin entrenamiento previo producirá salidas arbitrarias que no deben interpretarse como predicciones válidas.
 - **Restricciones de licencia**: la licencia Apache 2.0 permite uso comercial, pero el autor recomienda revisar los términos de las fuentes de datos externas si se utiliza el repositorio con datasets de terceros.
@@ -72,5 +72,5 @@ No disponible. Este modelo no es comparable con otros modelos de clasificación 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Hvsasaki/classification-small)
+- [Repositorio en Hugging Face](https://huggingface.co/Hvsasaki/classification-small)
 - [Hugging Face - plataforma principal](https://huggingface.co/)

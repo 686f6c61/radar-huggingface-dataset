@@ -84,7 +84,7 @@ No se dispone de una comparativa directa con otros modelos de la misma categoria
 - No se han documentado sesgos especificos, pero al estar entrenado solo con datos de texto en ingles, podria tener un rendimiento deficiente con otros idiomas o estilos de escritura.
 - Riesgo de alucinacion: como cualquier modelo generativo, puede producir texto plausible pero incorrecto, especialmente en secuencias largas o con ruido en la entrada.
 - No se especifica la longitud de contexto, por lo que no se conocen los limites de secuencia de entrada y salida. Esto limita su uso en tareas con secuencias muy largas.
-- La licencia MIT permite uso comercial, pero el modelo no incluye el codigo de definicion en el repositorio de HuggingFace; se requiere acceder al repositorio de codigo asociado (GitHub) para poder cargarlo correctamente.
+- La licencia MIT permite uso comercial, pero el modelo no incluye el codigo de definicion en el repositorio de Hugging Face; se requiere acceder al repositorio de codigo asociado (GitHub) para poder cargarlo correctamente.
 
 ## Enlaces
 

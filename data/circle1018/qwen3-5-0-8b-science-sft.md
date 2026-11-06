@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Arquitectura | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B (base) | 0,8B | 32K | Apache 2.0 | Híbrida (lineal + transformer) | HuggingFace, Ollama |
-| Qwen3-0.8B | 0,8B | 32K | Apache 2.0 | Transformer denso | HuggingFace, Ollama |
-| Llama-3.2-1B | 1,2B | 128K | Llama 3.2 (uso comercial permitido) | Transformer denso | HuggingFace, Ollama |
-| Phi-3-mini | 3,8B | 128K | MIT | Transformer denso | HuggingFace, Ollama |
+| Qwen3.5-0.8B (base) | 0,8B | 32K | Apache 2.0 | Híbrida (lineal + transformer) | Hugging Face, Ollama |
+| Qwen3-0.8B | 0,8B | 32K | Apache 2.0 | Transformer denso | Hugging Face, Ollama |
+| Llama-3.2-1B | 1,2B | 128K | Llama 3.2 (uso comercial permitido) | Transformer denso | Hugging Face, Ollama |
+| Phi-3-mini | 3,8B | 128K | MIT | Transformer denso | Hugging Face, Ollama |
 
 El modelo fine-tune se diferencia del base únicamente por el ajuste científico, pero no se dispone de datos de rendimiento comparativo. En términos de tamaño y licencia, es comparable a otros modelos compactos de la misma generación.
 
@@ -77,7 +77,7 @@ El modelo fine-tune se diferencia del base únicamente por el ajuste científico
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/circle1018/qwen3.5-0.8b-science-sft
+- Modelo en Hugging Face: https://huggingface.co/circle1018/qwen3.5-0.8b-science-sft
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Página de Qwen3.5 en Ollama: https://ollama.com/library/qwen3.5:0.8b
 - Ficha de Qwen3.5-0.8B en Qualcomm AI Hub: https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b

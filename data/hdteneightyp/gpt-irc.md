@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GPT-IRC es un modelo de lenguaje de 21,8 millones de parámetros desarrollado por el usuario HDTenEightyP y publicado en HuggingFace bajo licencia MIT. Su propósito declarado es automatizar usuarios de IRC (Internet Relay Chat), es decir, generar respuestas conversacionales con el estilo y las convenciones típicas de los canales de IRC. Está construido sobre la arquitectura GPT-2, según indican las etiquetas del repositorio, y se distribuye en formato safetensors con un tamaño de repositorio de 0,1 GB.
+GPT-IRC es un modelo de lenguaje de 21,8 millones de parámetros desarrollado por el usuario HDTenEightyP y publicado en Hugging Face bajo licencia MIT. Su propósito declarado es automatizar usuarios de IRC (Internet Relay Chat), es decir, generar respuestas conversacionales con el estilo y las convenciones típicas de los canales de IRC. Está construido sobre la arquitectura GPT-2, según indican las etiquetas del repositorio, y se distribuye en formato safetensors con un tamaño de repositorio de 0,1 GB.
 
 La propuesta del modelo es inusual: combina un tamaño muy reducido (21,8 M de parámetros, tres capas y dos cabezas de atención) con una ventana de contexto declarada de 65.536 tokens y el tokenizador cl100k_base, habitualmente asociado a modelos mucho mayores. El entrenamiento se realizó, según el autor, sobre 6 GB de registros de conversaciones de IRC. El modelo solo declara soporte para inglés.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada en fp16/bf16: aproximadamente 0,04 GB para pesos.
 - Cabe holgadamente en cualquier GPU consumer, e incluso puede ejecutarse en CPU con latencia baja para respuestas cortas.
 - GPU recomendadas: no se requieren GPU dedicadas; cualquier GPU moderna (por ejemplo, RTX 3060 o superior) es más que suficiente. No se dispone de datos específicos para A100 o H100 porque el modelo no las necesita.
-- Opciones de despliegue: al estar etiquetado con text-generation-inference y usar safetensors, es compatible con TGI; también puede cargarse con la librería transformers de HuggingFace. Para CPU, sería necesario convertir los pesos a GGUF para usarlos con llama.cpp u Ollama (no se proporcionan conversiones oficiales).
+- Opciones de despliegue: al estar etiquetado con text-generation-inference y usar safetensors, es compatible con TGI; también puede cargarse con la librería transformers de Hugging Face. Para CPU, sería necesario convertir los pesos a GGUF para usarlos con llama.cpp u Ollama (no se proporcionan conversiones oficiales).
 - Latencia y throughput estimados: no disponibles; por el tamaño del modelo, se espera un throughput muy alto en hardware modesto, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -86,4 +86,4 @@ La comparación se limita a modelos de la misma familia y orden de magnitud, ya 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HDTenEightyP/GPT-IRC
+- Hugging Face: https://huggingface.co/HDTenEightyP/GPT-IRC

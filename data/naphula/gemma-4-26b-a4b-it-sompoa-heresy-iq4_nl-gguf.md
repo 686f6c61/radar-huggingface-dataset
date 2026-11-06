@@ -106,5 +106,5 @@ Segun los datos del autor, SOMPOA 26B-A4B en IQ4_NL es el mejor equilibrio entre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Naphula/gemma-4-26B-A4B-it-SOMPOA-heresy-IQ4_NL-GGUF
+- Hugging Face: https://huggingface.co/Naphula/gemma-4-26B-A4B-it-SOMPOA-heresy-IQ4_NL-GGUF
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo (los resultados devueltos corresponden a contenidos no relacionados sobre Microsoft Teams). No hay paper, blog, repositorio ni demo asociados en la informacion disponible.

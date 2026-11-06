@@ -89,7 +89,7 @@ La informacion proporcionada no incluye datos de ningun modelo alternativo, por 
 
 | Modelo | Parametros | Entrada | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| EdgeCrafter ECDet-L ONNX (AnnotateIt) | no disponible (132 MB en FP32) | imagenes 640x640, lote por lotes 1 y 2 verificados | no aplica | sin AP COCO publicado; solo validaciones de paridad | apache-2.0 | ONNX en HuggingFace, 0 descargas |
+| EdgeCrafter ECDet-L ONNX (AnnotateIt) | no disponible (132 MB en FP32) | imagenes 640x640, lote por lotes 1 y 2 verificados | no aplica | sin AP COCO publicado; solo validaciones de paridad | apache-2.0 | ONNX en Hugging Face, 0 descargas |
 | Alternativas de la misma categoria (por ejemplo, detectores tipo DETR o YOLO) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Cualquier comparacion de precision, latencia o coste con otros detectores de objetos queda pendiente de una evaluacion AP completa que la model card declara explicitamente como no realizada.
@@ -111,11 +111,11 @@ Cualquier comparacion de precision, latencia o coste con otros detectores de obj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnnotateIt/edgecrafter-ecdet-l-onnx
+- Modelo en Hugging Face: https://huggingface.co/AnnotateIt/edgecrafter-ecdet-l-onnx
 - Proyecto original EdgeCrafter (Intellindust AI Lab), revision `b17f0f340af687e7adf2dff42a49e2eb8250ee20`: https://github.com/Intellindust-AI-Lab/EdgeCrafter
-- Organizacion AnnotateIt en HuggingFace: https://huggingface.co/AnnotateIt
+- Organizacion AnnotateIt en Hugging Face: https://huggingface.co/AnnotateIt
 - Sitio de AnnotateIt: https://annotateit.ai/
 - Aplicacion de AnnotateIt: https://app.annotateit.ai/
 - Documentacion de AnnotateIt: https://annotateit.ai/docs/
 - Dataset de entrenamiento: https://huggingface.co/datasets/detection-datasets/coco
-- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de la informacion de HuggingFace.
+- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de la informacion de Hugging Face.

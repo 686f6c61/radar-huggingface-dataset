@@ -91,9 +91,9 @@ Segun la model card, la perdida de calidad es minima hasta 256 dimensiones, mien
 
 | Modelo | Parametros | Contexto | Dimension salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EmbeddingGemma 2 (este ONNX) | 740M (270M texto + 170M vision + 300M audio) | 8192 tokens | 768 (MRL 128/256/512) | Apache 2.0 | HuggingFace (ONNX, Transformers.js) |
-| EmbeddingGemma 1 | No disponible | No disponible | No disponible | Apache 2.0 | HuggingFace |
-| onnx-community/embeddinggemma-300m-ONNX | No disponible (familia 300M) | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| EmbeddingGemma 2 (este ONNX) | 740M (270M texto + 170M vision + 300M audio) | 8192 tokens | 768 (MRL 128/256/512) | Apache 2.0 | Hugging Face (ONNX, Transformers.js) |
+| EmbeddingGemma 1 | No disponible | No disponible | No disponible | Apache 2.0 | Hugging Face |
+| onnx-community/embeddinggemma-300m-ONNX | No disponible (familia 300M) | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
 Comparativa de rendimiento entre EmbeddingGemma 2 y su predecesor, segun la model card: MTEB multilingual v2 pasa de 61,15 a 61,36; MTEB code v1 pasa de 68,76 a 78,68 (mejora de aproximadamente el 14 %). No se dispone de datos de otros modelos de embeddings multimodales comparables en la informacion proporcionada.
 
@@ -111,7 +111,7 @@ Comparativa de rendimiento entre EmbeddingGemma 2 y su predecesor, segun la mode
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/onnx-community/embeddinggemma-2-ONNX
+- Hugging Face (este repositorio): https://huggingface.co/onnx-community/embeddinggemma-2-ONNX
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Repositorio GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2

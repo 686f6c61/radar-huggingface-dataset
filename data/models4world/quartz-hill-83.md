@@ -6,7 +6,7 @@ El modelo `models4world/quartz-hill-83` es un adaptador LoRA publicado por el us
 
 El repositorio contiene únicamente los pesos del adaptador, con un tamaño de 1,9 GB, y no incluye el modelo base completo. La fecha de creación (agosto de 2026) sugiere que es un modelo reciente, aunque su baja popularidad (0 descargas y 0 likes) indica que probablemente se encuentra en una fase temprana de distribución o es un experimento personal del autor.
 
-La model card proporcionada está prácticamente vacía: no incluye información sobre arquitectura, datos de entrenamiento, licencia, idiomas soportados ni benchmarks. Esto limita severamente cualquier evaluación técnica rigurosa. No obstante, por el hecho de ser un adaptador LoRA, se puede inferir que su integración requiere cargar el modelo base correspondiente y aplicar los pesos del adaptador mediante la librería PEFT. La referencia al paper de Lacoste et al. (2019) sobre estimación de emisiones de carbono es un artefacto de la plantilla estándar de HuggingFace, no un indicador de que el modelo haya sido evaluado ambientalmente.
+La model card proporcionada está prácticamente vacía: no incluye información sobre arquitectura, datos de entrenamiento, licencia, idiomas soportados ni benchmarks. Esto limita severamente cualquier evaluación técnica rigurosa. No obstante, por el hecho de ser un adaptador LoRA, se puede inferir que su integración requiere cargar el modelo base correspondiente y aplicar los pesos del adaptador mediante la librería PEFT. La referencia al paper de Lacoste et al. (2019) sobre estimación de emisiones de carbono es un artefacto de la plantilla estándar de Hugging Face, no un indicador de que el modelo haya sido evaluado ambientalmente.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La model card proporcionada está prácticamente vacía: no incluye información
 
 La informacion disponible no permite determinar la arquitectura del modelo base `models4world/maple-signal-64` sobre el que se aplica este adaptador. Al tratarse de un adaptador LoRA (Low-Rank Adaptation), el entrenamiento ha consistido en congelar los pesos del modelo base y entrenar matrices de bajo rango que se suman a las capas originales. Este enfoque reduce significativamente el coste computacional y de memoria durante el fine-tuning.
 
-No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, ni si se emplearon tecnicas como RLHF o DPO. La unica referencia tecnica es el uso de la libreria PEFT en su version 0.20.0, lo que indica que el adaptador es compatible con el ecosistema de transformers de HuggingFace.
+No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, ni si se emplearon tecnicas como RLHF o DPO. La unica referencia tecnica es el uso de la libreria PEFT en su version 0.20.0, lo que indica que el adaptador es compatible con el ecosistema de transformers de Hugging Face.
 
 ## Capacidades
 
@@ -60,7 +60,7 @@ Al tratarse de un adaptador LoRA, los requisitos de hardware para inferencia dep
 - VRAM estimada: no disponible (depende del modelo base; un adaptador LoRA anade un overhead minimo de memoria)
 - GPU recomendadas: no disponible
 - Compatibilidad con GPU de consumo: no disponible
-- Opciones de despliegue: compatible con el ecosistema PEFT/transformers de HuggingFace; se puede servir con vLLM, TGI u otras herramientas que soporten adaptadores LoRA
+- Opciones de despliegue: compatible con el ecosistema PEFT/transformers de Hugging Face; se puede servir con vLLM, TGI u otras herramientas que soporten adaptadores LoRA
 - Latencia y throughput: no disponible
 
 ## Comparativa con modelos similares
@@ -78,6 +78,6 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/models4world/quartz-hill-83
+- Repositorio Hugging Face: https://huggingface.co/models4world/quartz-hill-83
 - Modelo base (referenciado): https://huggingface.co/models4world/maple-signal-64
 - Paper referenciado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

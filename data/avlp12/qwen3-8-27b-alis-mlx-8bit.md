@@ -87,6 +87,6 @@ No se dispone de comparativas con otros modelos de la misma categoría (por ejem
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/avlp12/Qwen3.8-27B-Alis-MLX-8bit
+- Repositorio Hugging Face: https://huggingface.co/avlp12/Qwen3.8-27B-Alis-MLX-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Librería mlx-vlm (soporte para `qwen3_5`): https://github.com/Blaizzy/mlx-vlm

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PhishDetectAI es un ajuste fino (fine-tune) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario ppsub en HuggingFace. Se trata de un modelo de generacion de texto de 1.543.714.304 parametros (aproximadamente 1,5 mil millones) orientado, segun su nombre, a la deteccion de phishing. El modelo se ha entrenado utilizando la libreria Unsloth junto con TRL de HuggingFace, lo que segun el autor permitio un entrenamiento "2x mas rapido".
+PhishDetectAI es un ajuste fino (fine-tune) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario ppsub en Hugging Face. Se trata de un modelo de generacion de texto de 1.543.714.304 parametros (aproximadamente 1,5 mil millones) orientado, segun su nombre, a la deteccion de phishing. El modelo se ha entrenado utilizando la libreria Unsloth junto con TRL de Hugging Face, lo que segun el autor permitio un entrenamiento "2x mas rapido".
 
 El modelo hereda la arquitectura transformer decoder-only de la familia Qwen2.5, con el tokenizador y la configuracion original del modelo base. El repositorio ocupa 3,1 GB y se distribuye en formato safetensors, con licencia Apache 2.0. Esta etiquetado unicamente para el idioma ingles (`en`).
 
@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su especializacion: frente al modelo base
 
 PhishDetectAI es un fine-tune del modelo Qwen2.5-1.5B-Instruct, un transformer decoder-only con atencion por causalidad, normalizacion RMSNorm, activacion SwiGLU y sesgo de atencion QKV (caracteristico de la familia Qwen2). El modelo base incorpora RoPE para codificacion posicional y esta disenado para generacion de texto e instrucciones.
 
-El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, lo que sugiere el uso de tecnicas de ajuste eficiente en parametros (probablemente LoRA o QLoRA, aunque no se especifica). La model card no documenta el numero de tokens de entrenamiento, la composicion del dataset, si se aplico RLHF/DPO, ni los hiperparametros utilizados. Tampoco se indica si el fine-tune se fusiono con los pesos base o se mantiene como adaptador (el tamano del repo de 3,1 GB sugiere pesos fusionados completos en bf16/fp16).
+El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, lo que sugiere el uso de tecnicas de ajuste eficiente en parametros (probablemente LoRA o QLoRA, aunque no se especifica). La model card no documenta el numero de tokens de entrenamiento, la composicion del dataset, si se aplico RLHF/DPO, ni los hiperparametros utilizados. Tampoco se indica si el fine-tune se fusiono con los pesos base o se mantiene como adaptador (el tamano del repo de 3,1 GB sugiere pesos fusionados completos en bf16/fp16).
 
 ## Capacidades
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Especializacion | Disponibilidad |
 |---|---|---|---|---|---|
-| PhishDetectAI | ~1,5B | no disponible | Apache 2.0 | Deteccion de phishing (fine-tune) | HuggingFace (97 descargas) |
-| Qwen2.5-1.5B-Instruct (base) | ~1,5B | 32.768 tokens (segun modelo base) | Apache 2.0 | Proposito general, instrucciones | HuggingFace, ampliamente usado |
-| Modelos de clasificacion de phishing basados en BERT | ~110M-340M | 512 tokens tipicamente | Variable | Clasificacion binaria | HuggingFace, diversos |
+| PhishDetectAI | ~1,5B | no disponible | Apache 2.0 | Deteccion de phishing (fine-tune) | Hugging Face (97 descargas) |
+| Qwen2.5-1.5B-Instruct (base) | ~1,5B | 32.768 tokens (segun modelo base) | Apache 2.0 | Proposito general, instrucciones | Hugging Face, ampliamente usado |
+| Modelos de clasificacion de phishing basados en BERT | ~110M-340M | 512 tokens tipicamente | Variable | Clasificacion binaria | Hugging Face, diversos |
 
 La comparativa con modelos especializados en phishing es dificil porque no existe un benchmark comun publicado para este fine-tune. Frente al modelo base, PhishDetectAI deberia mejorar en la tarea especifica pero carece de documentacion que lo demuestre. Frente a clasificadores BERT especializados, el enfoque generativo de PhishDetectAI ofrece explicaciones en lenguaje natural pero mayor coste computacional y menor fiabilidad en clasificacion estricta.
 
@@ -80,7 +80,7 @@ La comparativa con modelos especializados en phishing es dificil porque no exist
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ppsub/PhishDetectAI
+- Hugging Face: https://huggingface.co/ppsub/PhishDetectAI
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl

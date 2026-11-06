@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Miracle-1 es un anuncio de modelo de lenguaje publicado en HuggingFace por Bunker Longevity, una empresa de hardware deep-tech centrada en longevidad. En el momento de redactar esta ficha (repositorio creado el 19 de octubre de 2026) **no contiene pesos**: la model card lo describe explicitamente como "Preview — weights coming soon" y el propio autor indica que no se reclama ningun benchmark. Por tanto, no es un modelo evaluable todavia, sino una declaracion de intenciones sobre la capa de IA que la compania quiere construir sobre su hardware.
+Miracle-1 es un anuncio de modelo de lenguaje publicado en Hugging Face por Bunker Longevity, una empresa de hardware deep-tech centrada en longevidad. En el momento de redactar esta ficha (repositorio creado el 19 de octubre de 2026) **no contiene pesos**: la model card lo describe explicitamente como "Preview — weights coming soon" y el propio autor indica que no se reclama ningun benchmark. Por tanto, no es un modelo evaluable todavia, sino una declaracion de intenciones sobre la capa de IA que la compania quiere construir sobre su hardware.
 
 El objetivo declarado es doble: acelerar el desarrollo de su propia maquinaria (SOLO-1, una cradle de perfusion multiorganica en fase preclinica, y a mas largo plazo criopreservacion multietapa) y servir de "co-surgeon y research co-pilot" para clinicos, laboratorios y otras empresas del sector. La model card insiste en que el uso previsto es exclusivamente de investigacion y exploracion asistida, con supervision humana, y excluye explicitamente decision clinica, diagnostico, triaje y control de equipos quirurgicos o de perfusion.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Viabilidad en GPU de consumo: no disponible; no se puede determinar sin conocer el tamano del modelo.
 - Opciones de despliegue: no disponible. No se ha anunciado compatibilidad con vLLM, llama.cpp, Ollama, TGI ni con ningun formato de pesos concreto (safetensors, GGUF, etc.).
 - Latencia y throughput: no disponible.
-- Unica infraestructura mencionada: una demo interactiva en un Space de HuggingFace, aun no publicada, que segun el autor se ejecutara sobre un modelo base abierto de proposito general no identificado. El hardware de ese Space no se especifica.
+- Unica infraestructura mencionada: una demo interactiva en un Space de Hugging Face, aun no publicada, que segun el autor se ejecutara sobre un modelo base abierto de proposito general no identificado. El hardware de ese Space no se especifica.
 
 ## Comparativa con modelos similares
 
@@ -92,7 +92,7 @@ Advertencia: los datos de las alternativas no provienen de la informacion sumini
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bunkerlongevity/Miracle-1
+- Repositorio en Hugging Face: https://huggingface.co/bunkerlongevity/Miracle-1
 - Sitio de Bunker Longevity: https://bunkerlongevity.com
 - Documentacion de la plataforma de modelos: https://docs.bunkerbio.com/
 - Guia de inicio rapido (ejemplo con BunkerFold-3): https://docs.bunkerbio.com/quickstart

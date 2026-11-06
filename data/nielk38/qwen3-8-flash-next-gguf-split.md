@@ -47,7 +47,7 @@ El repositorio GGUF que nos ocupa es una cuantización realizada por Unsloth (UD
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información proporcionada (ni en el repositorio HuggingFace ni en las fuentes web citadas). Los desarrolladores indican que el modelo supera a Qwen3.7-Plus en tareas de codificación y ofimática, pero no se han facilitado cifras concretas de MMLU, HumanEval, GSM8K u otros benchmarks estándar. En el momento de redactar esta ficha, no se dispone de datos verificables.
+No se han publicado resultados de benchmarks en la información proporcionada (ni en el repositorio Hugging Face ni en las fuentes web citadas). Los desarrolladores indican que el modelo supera a Qwen3.7-Plus en tareas de codificación y ofimática, pero no se han facilitado cifras concretas de MMLU, HumanEval, GSM8K u otros benchmarks estándar. En el momento de redactar esta ficha, no se dispone de datos verificables.
 
 ## Requisitos de hardware
 
@@ -80,8 +80,8 @@ No se dispone de benchmarks comparativos entre estos modelos en la información 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nielk38/Qwen3.8-Flash-Next-GGUF-SPLIT
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face: https://huggingface.co/Nielk38/Qwen3.8-Flash-Next-GGUF-SPLIT
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GGUF de Unsloth: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Repositorio oficial de Qwen3.8-Flash-Next en GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next
 - Guía de ejecución local de Unsloth: https://unsloth.ai/docs/models/qwen3.8-next

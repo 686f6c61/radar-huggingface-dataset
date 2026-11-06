@@ -95,11 +95,11 @@ Los datos de los modelos comparables proceden de sus model cards públicas y no 
 - Sobreajuste probable: 450 ejemplos sintéticos, 3 épocas y métricas de 1,00 sobre el mismo dominio sugieren memorización del formato (nombre, sufijo de marca, plantilla JSON) más que una mejora generalizable. No hay conjunto de evaluación independiente.
 - Latencia en producción: 10-60 segundos por respuesta en CPU con `q8_0` es incompatible con chat interactivo sin avisos de espera o streaming.
 - Licencia: la etiqueta es `other` y la model card no detalla condiciones. Al derivar de Qwen2.5-3B-Instruct (Apache-2.0) hay que respetar también los términos de la base, pero el uso comercial del ajuste requiere contactar con el autor.
-- Madurez: 63 descargas, 0 likes y un pipeline no declarado en HuggingFace indican que es un artefacto de proyecto académico, sin mantenimiento ni garantías.
+- Madurez: 63 descargas, 0 likes y un pipeline no declarado en Hugging Face indican que es un artefacto de proyecto académico, sin mantenimiento ni garantías.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ozzycan/FitBot-3B
+- Modelo en Hugging Face: https://huggingface.co/Ozzycan/FitBot-3B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Modelo de embeddings citado en la model card: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 - Chroma (base vectorial usada en el pipeline RAG): https://www.trychroma.com/

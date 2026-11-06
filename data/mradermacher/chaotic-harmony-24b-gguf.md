@@ -4,7 +4,7 @@
 
 Chaotic-Harmony-24B-GGUF es la version cuantizada en formato GGUF del modelo Sorihon/Chaotic-Harmony-24B, un modelo de ~23.570 millones de parametros generado mediante mergekit (fusion de pesos de otros modelos) y orientado a tareas conversacionales en ingles. La cuantizacion la publica mradermacher, un autor conocido por distribuir versiones GGUF de modelos de la comunidad con multiples niveles de compresion listas para su uso en llama.cpp y otros motores de inferencia local. La relevancia de esta publicacion es practica: convierte un modelo de 24B, cuyo peso en precision completa ronda los 47 GB, en ficheros de entre 9 GB y 25,2 GB que caben en GPUs de consumo.
 
-El modelo no dispone de model card tecnica propia por parte del autor del merge; la informacion disponible se limita a los metadatos de la ficha de HuggingFace (parametros, idioma, etiquetas) y a la tabla de cuantizaciones publicada por mradermacher. No se documentan arquitectura exacta, longitud de contexto, composicion del dataset de entrenamiento, licencia ni resultados de benchmarks. Esto condiciona cualquier evaluacion rigurosa: se trata de un artefacto de despliegue, no de un modelo con documentacion tecnica completa.
+El modelo no dispone de model card tecnica propia por parte del autor del merge; la informacion disponible se limita a los metadatos de la ficha de Hugging Face (parametros, idioma, etiquetas) y a la tabla de cuantizaciones publicada por mradermacher. No se documentan arquitectura exacta, longitud de contexto, composicion del dataset de entrenamiento, licencia ni resultados de benchmarks. Esto condiciona cualquier evaluacion rigurosa: se trata de un artefacto de despliegue, no de un modelo con documentacion tecnica completa.
 
 Por su tamano y su naturaleza de merge orientado a conversacion, encaja en el segmento de modelos de rol y asistente local que se ejecutan en GPUs de 24 GB con cuantizaciones Q4, y es especialmente relevante para quienes quieren probar un merge de 24B en hardware de consumo sin disponer de la version de precision completa.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chaotic-Harmony-24B-GGUF | 23,57B | no disponible | GGUF | no disponible | HuggingFace (mradermacher) |
-| Chaotic-Order-24B-V1-i1-GGUF | no disponible (24B nominal) | no disponible | GGUF (imatrix) | no disponible | HuggingFace (mradermacher) |
-| Goetia-24B (v1.3 / v1.2) | no disponible (24B nominal) | no disponible | GGUF | no disponible | HuggingFace / comunidad |
-| Mistral-Small-24B | no disponible en la informacion proporcionada | no disponible | safetensors, GGUF | no disponible | HuggingFace |
+| Chaotic-Harmony-24B-GGUF | 23,57B | no disponible | GGUF | no disponible | Hugging Face (mradermacher) |
+| Chaotic-Order-24B-V1-i1-GGUF | no disponible (24B nominal) | no disponible | GGUF (imatrix) | no disponible | Hugging Face (mradermacher) |
+| Goetia-24B (v1.3 / v1.2) | no disponible (24B nominal) | no disponible | GGUF | no disponible | Hugging Face / comunidad |
+| Mistral-Small-24B | no disponible en la informacion proporcionada | no disponible | safetensors, GGUF | no disponible | Hugging Face |
 
 Los modelos comparables pertenecen al mismo nicho de merges de 24B orientados a conversacion y rol, distribuidos en GGUF para GPUs de 24 GB. No se dispone de datos de rendimiento de ninguno de ellos en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible.
 

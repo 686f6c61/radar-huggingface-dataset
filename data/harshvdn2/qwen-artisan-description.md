@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `harshvdn2/qwen-artisan-description` es una publicación en HuggingFace creada por el usuario `harshvdn2` el 6 de septiembre de 2026. La model card asociada es una plantilla autogenerada de HuggingFace que no contiene ninguna información sustancial: no hay descripción del modelo, arquitectura, datos de entrenamiento, licencia, idiomas ni capacidades. El repositorio presenta un tamaño de 0.0 GB, cero descargas y cero likes, lo que sugiere que no se han subido archivos de pesos ni ningún artefacto utilizable.
+El repositorio `harshvdn2/qwen-artisan-description` es una publicación en Hugging Face creada por el usuario `harshvdn2` el 6 de septiembre de 2026. La model card asociada es una plantilla autogenerada de Hugging Face que no contiene ninguna información sustancial: no hay descripción del modelo, arquitectura, datos de entrenamiento, licencia, idiomas ni capacidades. El repositorio presenta un tamaño de 0.0 GB, cero descargas y cero likes, lo que sugiere que no se han subido archivos de pesos ni ningún artefacto utilizable.
 
 El nombre del repositorio sugiere una posible relación con la familia Qwen y una tarea de generación de descripciones para artesanos, pero no existe confirmación técnica en la información disponible. En su estado actual, este modelo no puede evaluarse ni desplegarse, ya que carece de cualquier dato verificable sobre su arquitectura, tamaño o funcionalidad.
 
@@ -46,14 +46,14 @@ No disponible. No hay datos suficientes para comparar este modelo con alternativ
 ## Limitaciones y advertencias
 
 - La model card es una plantilla autogenerada sin contenido real; no se puede confiar en ella como documentación.
-- No se especifica licencia, por lo que el uso comercial queda indefinido y potencialmente sujeto a los términos por defecto de HuggingFace.
+- No se especifica licencia, por lo que el uso comercial queda indefinido y potencialmente sujeto a los términos por defecto de Hugging Face.
 - El repositorio no contiene archivos de modelo visibles (tamaño 0.0 GB), lo que impide su descarga o ejecución.
 - No hay información sobre idiomas, sesgos, riesgos de alucinación ni limitaciones de contexto.
 - Cualquier intento de uso en producción es inviable sin antes completar el repositorio con los pesos reales y una documentación verificable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/harshvdn2/qwen-artisan-description
-- Organización Qwen en HuggingFace: https://huggingface.co/Qwen
+- Repositorio Hugging Face: https://huggingface.co/harshvdn2/qwen-artisan-description
+- Organización Qwen en Hugging Face: https://huggingface.co/Qwen
 - Alibaba Cloud Model Studio: https://modelstudio.alibabacloud.com/
 - Referencia citada en la model card (ML Impact calculator): https://arxiv.org/abs/1910.09700

@@ -80,9 +80,9 @@ No se han publicado en la informacion disponible resultados comparativos de MMLU
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thorhojhus/whisper-small-danish | 242 M | 30 s por segmento | Solo danes | MIT | HuggingFace, safetensors |
-| openai/whisper-small | 244 M | 30 s por segmento | Multilingue (~99 idiomas) | MIT | HuggingFace |
-| thorh/whisper-large-v3-turbo-danish | No disponible en la informacion proporcionada (~809 M segun la familia Whisper large-v3-turbo) | 30 s por segmento | Danes (fine-tune) | No disponible | HuggingFace |
+| thorhojhus/whisper-small-danish | 242 M | 30 s por segmento | Solo danes | MIT | Hugging Face, safetensors |
+| openai/whisper-small | 244 M | 30 s por segmento | Multilingue (~99 idiomas) | MIT | Hugging Face |
+| thorh/whisper-large-v3-turbo-danish | No disponible en la informacion proporcionada (~809 M segun la familia Whisper large-v3-turbo) | 30 s por segmento | Danes (fine-tune) | No disponible | Hugging Face |
 
 No se dispone de resultados de WER/CER publicados en la informacion proporcionada para openai/whisper-small ni para thorh/whisper-large-v3-turbo-danish bajo el mismo protocolo, por lo que no es posible establecer una comparacion cuantitativa fiable. La diferencia principal frente a Whisper Small original es la especializacion en danes a cambio de perder capacidad multilingue; frente al modelo large-v3-turbo danes, la ventaja de este checkpoint es el tamano reducido (242 M frente a cientos de millones) a costa de menor capacidad.
 
@@ -99,7 +99,7 @@ No se dispone de resultados de WER/CER publicados en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thorhojhus/whisper-small-danish
+- Modelo en Hugging Face: https://huggingface.co/thorhojhus/whisper-small-danish
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Modelo usado para generar las pseudo-etiquetas: https://huggingface.co/thorh/whisper-large-v3-turbo-danish
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

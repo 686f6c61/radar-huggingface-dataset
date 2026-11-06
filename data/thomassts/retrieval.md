@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`thomassts/retrieval` es un repositorio de HuggingFace que contiene una implementación propia y compacta en PyTorch de la arquitectura ALBEF (Align Before Fuse) orientada a tareas de retrieval multimodal. Lo publica el usuario thomassts bajo licencia Apache 2.0. No se trata de un modelo preentrenado listo para producción: el propio autor indica en la model card que la configuración "tiny" está pensada para revisión de código, pruebas de humo y experimentos controlados de laboratorio.
+`thomassts/retrieval` es un repositorio de Hugging Face que contiene una implementación propia y compacta en PyTorch de la arquitectura ALBEF (Align Before Fuse) orientada a tareas de retrieval multimodal. Lo publica el usuario thomassts bajo licencia Apache 2.0. No se trata de un modelo preentrenado listo para producción: el propio autor indica en la model card que la configuración "tiny" está pensada para revisión de código, pruebas de humo y experimentos controlados de laboratorio.
 
 El peso incluido en el repositorio (`model.safetensors`) es un checkpoint de inicialización válido, no un modelo entrenado ni evaluado. Según los metadatos de safetensors, el modelo tiene únicamente 24.832 parámetros totales, lo que lo sitúa en el rango de los juguetes de test más que en el de un sistema de retrieval funcional. La arquitectura declarada combina atención dilatada con fusión por co-atención, activación ReLU y normalización LayerNorm.
 
@@ -70,14 +70,14 @@ Sí se documenta la receta por defecto (AdamW, scheduler exponencial) y la recom
 - VRAM para inferencia: inferior a 1 GB en cualquier precisión. Con 24.832 parámetros, los pesos en FP32 ocupan del orden de 100 KB y en FP16 del orden de 50 KB; el cuello de botella real es el resto del pipeline (carga de datos, posibles backbones de visión no incluidos en el repositorio), no el modelo.
 - GPU recomendadas: cualquiera, incluidas GPUs integradas. El modelo cabe con holgura en cualquier GPU de consumo (RTX 3060, RTX 4090, etc.) y también en CPU.
 - Cabe en GPU de consumo: sí, sin ninguna restricción práctica por memoria.
-- Opciones de despliegue: el repositorio se ejecuta mediante el script `predict.py` con PyTorch. No hay soporte confirmado para vLLM, llama.cpp, Ollama, TGI ni formatos GGUF. Las APIs de carga automática de HuggingFace requieren un adaptador explícito por tratarse de una implementación personalizada.
+- Opciones de despliegue: el repositorio se ejecuta mediante el script `predict.py` con PyTorch. No hay soporte confirmado para vLLM, llama.cpp, Ollama, TGI ni formatos GGUF. Las APIs de carga automática de Hugging Face requieren un adaptador explícito por tratarse de una implementación personalizada.
 - Latencia y throughput: no disponible. No se han publicado mediciones y, al tratarse de un checkpoint no entrenado con un pipeline incompleto, cualquier cifra end-to-end dependería de componentes externos al repositorio.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thomassts/retrieval | 24.832 (≈0,025 M) | No disponible | No publicado (checkpoint sin entrenar) | Apache 2.0 | HuggingFace, implementación propia |
+| thomassts/retrieval | 24.832 (≈0,025 M) | No disponible | No publicado (checkpoint sin entrenar) | Apache 2.0 | Hugging Face, implementación propia |
 | ALBEF original (referencia conceptual de la arquitectura) | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada |
 | Otras familias de retrieval imagen-texto (por ejemplo CLIP, BLIP) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
 
@@ -91,13 +91,13 @@ No se dispone de datos verificados de modelos comparables en la información pro
 - Riesgo de alucinación: no evaluado. Sin entrenamiento y sin benchmarks, no hay base para estimarlo.
 - Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no están documentados en el repositorio.
 - La licencia Apache 2.0 permite uso comercial del código y los pesos, pero la model card advierte que deben revisarse por separado los términos de los datos de origen si se usan datasets externos.
-- Implementación personalizada: no se carga con las APIs genéricas de HuggingFace sin un adaptador explícito, lo que complica su integración en stacks estándar.
+- Implementación personalizada: no se carga con las APIs genéricas de Hugging Face sin un adaptador explícito, lo que complica su integración en stacks estándar.
 - El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 likes, señales coherentes con un artefacto experimental sin adopción.
 - Para producción, cualquier resultado obtenido a partir de un futuro checkpoint entrenado deberá documentarse de forma separada de los valores por defecto que se distribuyen aquí.
-- El pipeline declarado está vacío en HuggingFace, por lo que no hay una tarea oficialmente registrada asociada al repositorio.
+- El pipeline declarado está vacío en Hugging Face, por lo que no hay una tarea oficialmente registrada asociada al repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thomassts/retrieval
+- Hugging Face: https://huggingface.co/thomassts/retrieval
 - Ficheros del repositorio: `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos por la búsqueda corresponden a un restaurante en Fishkill (Nueva York) y no guardan relación con este repositorio, por lo que se descartan. No hay papers, blogs, repositorios ni demos adicionales disponibles en la información proporcionada.

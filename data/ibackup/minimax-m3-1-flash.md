@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMax-M3.1-Flash es un modelo multimodal nativo de tipo mixture-of-experts (MoE) orientado a tareas de programación, flujos de trabajo agénticos, uso de ordenador (computer use) y ciberseguridad. Lo desarrolla MiniMax AI y se distribuye en HuggingFace bajo el identificador `Ibackup/MiniMax-M3.1-Flash`. Acepta entradas de texto, imagen y vídeo, y produce salidas de texto, con una ventana de contexto de hasta 1.000.000 de tokens.
+MiniMax-M3.1-Flash es un modelo multimodal nativo de tipo mixture-of-experts (MoE) orientado a tareas de programación, flujos de trabajo agénticos, uso de ordenador (computer use) y ciberseguridad. Lo desarrolla MiniMax AI y se distribuye en Hugging Face bajo el identificador `Ibackup/MiniMax-M3.1-Flash`. Acepta entradas de texto, imagen y vídeo, y produce salidas de texto, con una ventana de contexto de hasta 1.000.000 de tokens.
 
 El modelo parte de MiniMax-M3 e incorpora tres cambios principales: atención dispersa (sparse attention) en todas las capas del modelo, entrenamiento con cuantización consciente (quantization-aware training) y decodificación especulativa DSpark, que incluye una cabeza borrador (draft head). Según la model card, esto mejora tanto el rendimiento en tareas como la eficiencia de inferencia.
 
@@ -102,9 +102,9 @@ Los datos de parámetros, contexto y licencia de los modelos comparables no est�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ibackup/MiniMax-M3.1-Flash
+- Hugging Face: https://huggingface.co/Ibackup/MiniMax-M3.1-Flash
 - Paper (MiniMax Sparse Attention): https://arxiv.org/abs/2606.13392
-- Organización oficial en HuggingFace: https://huggingface.co/MiniMaxAI
+- Organización oficial en Hugging Face: https://huggingface.co/MiniMaxAI
 - Web oficial: https://www.minimax.io
 - API / documentación: https://platform.minimax.io/docs/guides/text-generation
 - MiniMax Code: https://agent.minimax.io/

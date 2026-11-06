@@ -107,7 +107,7 @@ La informacion disponible solo permite comparar este checkpoint con su modelo ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/DeepSeek-V4.1-Flash-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/nvidia/DeepSeek-V4.1-Flash-NVFP4
 - Modelo base (DeepSeek-V4.1-Flash, DeepSeek AI): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - NVIDIA Model Optimizer (repositorio): https://github.com/NVIDIA/Model-Optimizer
 - Licencia MIT: https://huggingface.co/datasets/choosealicense/licenses/blob/main/markdown/mit.md

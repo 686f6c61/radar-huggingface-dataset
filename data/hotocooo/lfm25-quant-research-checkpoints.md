@@ -112,7 +112,7 @@ Alternativas externas de cuantizacion para modelos de ~2–3B (AWQ, QuIP#, QTIP,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hotocooo/lfm25-quant-research-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/hotocooo/lfm25-quant-research-checkpoints
 - Dataset con el informe, metodos, hallazgos y changelog: https://huggingface.co/datasets/hotocooo/lfm25-gsq-replication-diagnosis
 - Modelo base (variante Turbo-Brilliance, GGUF): https://huggingface.co/DavidAU/LFM2.5-2.6B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF
 - Modelo base original (LiquidAI): https://huggingface.co/LiquidAI/LFM2.5-2.6B

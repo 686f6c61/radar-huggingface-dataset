@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YOLOX-S INT8 OV es una versión optimizada del detector de objetos YOLOX-S, convertida al formato Intermediate Representation (IR) de OpenVINO y cuantizada a INT8 tanto en pesos como en activaciones. El modelo original fue desarrollado en el ecosistema MMDetection de OpenMMLab, y esta variante ha sido producida por Geti (plataforma de Intel para entrenamiento y despliegue de modelos de visión) y publicada bajo el perfil oficial de OpenVINO en HuggingFace. Su propósito es ofrecer un detector de objetos de una sola etapa, ligero y de baja latencia, listo para desplegarse en hardware Intel (CPU, GPU integrada, NPU) sin necesidad de conversión adicional.
+YOLOX-S INT8 OV es una versión optimizada del detector de objetos YOLOX-S, convertida al formato Intermediate Representation (IR) de OpenVINO y cuantizada a INT8 tanto en pesos como en activaciones. El modelo original fue desarrollado en el ecosistema MMDetection de OpenMMLab, y esta variante ha sido producida por Geti (plataforma de Intel para entrenamiento y despliegue de modelos de visión) y publicada bajo el perfil oficial de OpenVINO en Hugging Face. Su propósito es ofrecer un detector de objetos de una sola etapa, ligero y de baja latencia, listo para desplegarse en hardware Intel (CPU, GPU integrada, NPU) sin necesidad de conversión adicional.
 
 La relevancia de esta ficha radica en que no se trata de un modelo de lenguaje, sino de un detector visual de la familia YOLOX en su variante "small", pensado para inferencia en el borde (edge) y en equipos con recursos limitados. La cuantización INT8 reduce el peso y acelera la ejecución en comparación con los pesos en FP32, manteniendo el pipeline de post-procesado estándar de detección (cajas, clases y puntuaciones). El repositorio es de tamaño mínimo (0,0 GB reportados) porque solo contiene los artefactos IR comprimidos, no los pesos originales en PyTorch.
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenVINO/yolox_s-int8-ov
+- Modelo en Hugging Face: https://huggingface.co/OpenVINO/yolox_s-int8-ov
 - Modelo original YOLOX-S en MMDetection: https://github.com/open-mmlab/mmdetection/tree/main/configs/yolox
 - Plataforma Geti: https://github.com/open-edge-platform/geti
 - Documentación de OpenVINO IR: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html
@@ -92,4 +92,4 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 - Documentación general de OpenVINO: https://docs.openvino.ai/
 - Repositorio de OpenVINO en GitHub: https://github.com/openvinotoolkit/openvino
 - Página de Intel sobre OpenVINO: https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/overview.html
-- Perfil de OpenVINO en HuggingFace: https://huggingface.co/OpenVINO
+- Perfil de OpenVINO en Hugging Face: https://huggingface.co/OpenVINO

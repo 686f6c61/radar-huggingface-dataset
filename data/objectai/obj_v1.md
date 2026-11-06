@@ -71,5 +71,5 @@ No se dispone de datos de rendimiento publicados para establecer una comparativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/objectai/obj_v1
+- Modelo en Hugging Face: https://huggingface.co/objectai/obj_v1
 - Modelo base (Qwen3-VL-4B-Instruct): https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct

@@ -22,7 +22,7 @@ Es relevante ahora porque permite ejecutar un modelo MoE de ~177 mil millones de
 | Formato de pesos | GGUF, dividido en 2 shards por cuantización |
 | Método de cuantización | GSQ + RCO (ancho de bit no uniforme por tensor), con importance matrix (etiqueta `imatrix`) |
 | Tamaño de los pesos | Q2_0: 37.623.740.192 + 28.800.138.432 bytes (66,42 GB); IQ3_S: 54.817.524.224 + 28.800.138.432 bytes (83,62 GB) |
-| Tamaño del repositorio | 150.042.091.035 bytes (150,04 GB) según los 16 ficheros listados; la ficha de HuggingFace declara 121,2 GB |
+| Tamaño del repositorio | 150.042.091.035 bytes (150,04 GB) según los 16 ficheros listados; la ficha de Hugging Face declara 121,2 GB |
 | Autor del espejo | hyukudan (cuantización original: ISTA-DASLab) |
 | Repositorio upstream fijado | `ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF@ed59f92082b1e93c0e96d60a8b11aab089b52f09` |
 | Modelo base fijado | `Qwen/Qwen3.8-Flash-Next@de4b8e4d43b917e7706784d8bb445c9af86a3540` |
@@ -96,7 +96,7 @@ Comparación con modelos alternativos de otro fabricante y tamaño similar: no d
 - Degradación de calidad medible: el perfil basado en Q2_0 pierde 11,5 puntos de concordancia top-1 frente a UD-Q4_K_XL en el conjunto del autor, que concluye explícitamente que no supera su receta de calidad. No debe asumirse que estas cuantizaciones son aptas para producción sin evaluación propia.
 - Ambigüedad de licencia: el repositorio upstream declara Apache-2.0 pero no incluye fichero LICENSE; el espejo añade el texto Apache 2.0 y, además, `LICENSE.Qwen` con la Qwen Community License 1.0 del modelo base. Al derivar de Qwen, las condiciones de la Qwen Community License 1.0 aplican igualmente y deben revisarse antes de cualquier uso comercial.
 - Es un espejo no oficial: 0 descargas y 0 likes en el momento de la consulta; la autoría técnica corresponde a ISTA-DASLab y a Qwen, y el espejo solo fija una revisión. Cualquier corrección futura estará en el repositorio upstream, no aquí.
-- Discrepancia de tamaño: la ficha de HuggingFace indica 121,2 GB de repositorio, mientras que la model card lista 150.042.091.035 bytes en 16 ficheros. Conviene verificar el espacio en disco antes de descargar.
+- Discrepancia de tamaño: la ficha de Hugging Face indica 121,2 GB de repositorio, mientras que la model card lista 150.042.091.035 bytes en 16 ficheros. Conviene verificar el espacio en disco antes de descargar.
 - Solo dos cuantizaciones espejadas: Q2_0 e IQ3_S. Las variantes de menor tamaño (IQ2_XS, IQ3_XXS) están únicamente en el upstream, lo que limita las opciones si el hardware es ajustado.
 - Riesgo de alucinación: no cuantificado en la información disponible, pero la compresión agresiva a ~2 bits es un factor de riesgo añadido en tareas de razonamiento y matemáticas.
 - Idiomas y longitud de contexto no documentados: no es posible garantizar comportamiento multilingüe ni planificar el dimensionado de la caché KV sin consultar el repositorio del modelo base.

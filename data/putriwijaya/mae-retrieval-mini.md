@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`putriwijaya/mae-retrieval-mini` es un prototipo de investigación publicado en HuggingFace por el usuario putriwijaya, orientado a tareas de *retrieval* (recuperación de información). La model card lo describe explícitamente como un experimento: el checkpoint incluido (`model.safetensors`) se presenta como una inicialización válida para *smoke tests*, no como un modelo entrenado ni evaluado. No se reclama ninguna puntuación de benchmark en el repositorio.
+`putriwijaya/mae-retrieval-mini` es un prototipo de investigación publicado en Hugging Face por el usuario putriwijaya, orientado a tareas de *retrieval* (recuperación de información). La model card lo describe explícitamente como un experimento: el checkpoint incluido (`model.safetensors`) se presenta como una inicialización válida para *smoke tests*, no como un modelo entrenado ni evaluado. No se reclama ninguna puntuación de benchmark en el repositorio.
 
 El repositorio contiene cuatro artefactos: `predict.py` (implementación y punto de entrada ejecutable), `config.json` (arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors`. La model card declara una arquitectura de tipo Mae con atención *grouped query*, fusión por *cross attention*, activación mish y normalización groupnorm, y una escala etiquetada como "huge". Esa etiqueta de escala contrasta con dos datos objetivos: el nombre del repositorio (`mini`) y el recuento real de parámetros del checkpoint en safetensors, 49.600 parámetros (aproximadamente 0,05 M).
 
@@ -70,7 +70,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| putriwijaya/mae-retrieval-mini | 49.600 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace |
+| putriwijaya/mae-retrieval-mini | 49.600 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/putriwijaya/mae-retrieval-mini
+- Modelo en Hugging Face: https://huggingface.co/putriwijaya/mae-retrieval-mini
 - Archivos incluidos en el repositorio: `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Conjunto de datos sugerido por el autor para evaluacion: Flickr30k (no se proporciona enlace en la model card)
 - Los resultados de la busqueda web no contienen enlaces relevantes sobre este modelo; devolvieron unicamente paginas genericas sobre acontecimientos historicos sin relacion con el repositorio.

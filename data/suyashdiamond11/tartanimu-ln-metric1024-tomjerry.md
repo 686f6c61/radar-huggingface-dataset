@@ -104,8 +104,8 @@ No se dispone de informacion sobre modelos comparables de terceros. La unica com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suyashdiamond11/tartanimu-ln-metric1024-tomjerry
-- Modelo padre en HuggingFace: https://huggingface.co/arattan7272/tartanimu-lnresnet
+- Modelo en Hugging Face: https://huggingface.co/suyashdiamond11/tartanimu-ln-metric1024-tomjerry
+- Modelo padre en Hugging Face: https://huggingface.co/arattan7272/tartanimu-lnresnet
 - Revision del padre: 4b5f23afb14da3f3e70dac1a675fbf7f24597aed
 - Artefactos de auditoria citados en la model card: `exploratory_decision.json`, `validation_summary.json`, `reproduction_summary.json` (incluidos en el repositorio del modelo)
 - Ejecutor de inferencia citado: `reproduce.py`

@@ -4,7 +4,7 @@
 
 TextPro-SLM-7B-Global es un modelo de audio-texto desarrollado por el autor qqjz (con autores academicos Cui, Li, Tan, Zheng y King en el articulo asociado) que combina un backbone de lenguaje Qwen2.5-7B-Instruct con un codificador de voz WhisperPro derivado de Whisper large-v3. Su propuesta central es reducir el desajuste entre modalidades desde el lado de la entrada: en lugar de inyectar multiples tokens acusticos en el LLM, condensa la informacion prosodica en un unico embedding global que se antepone a los tokens del transcript. Asi, la entrada hablada se aproxima al formato nativo de un LLM de texto.
 
-El modelo se presenta como una alternativa ligera a los speech LLM convencionales, manteniendo las capacidades semanticas del LLM de texto base mientras aprende comprension paralinguistica (prosodia, tono, emocion implicita). El checkpoint liberado corresponde a la etapa 2 del entrenamiento (paso 1272) y esta emparejado con el encoder WhisperPro; requiere la implementacion de inferencia del proyecto GitHub, que no se incluye en el repositorio de HuggingFace.
+El modelo se presenta como una alternativa ligera a los speech LLM convencionales, manteniendo las capacidades semanticas del LLM de texto base mientras aprende comprension paralinguistica (prosodia, tono, emocion implicita). El checkpoint liberado corresponde a la etapa 2 del entrenamiento (paso 1272) y esta emparejado con el encoder WhisperPro; requiere la implementacion de inferencia del proyecto GitHub, que no se incluye en el repositorio de Hugging Face.
 
 La relevancia actual reside en su enfoque de factorizacion en la entrada y en su licencia Apache-2.0, que facilita el uso comercial. No obstante, se trata de un artefacto de investigacion con soporte unicamente en ingles, audio de hasta 30 segundos y sin resultados de benchmarks publicados en la informacion disponible.
 
@@ -77,13 +77,13 @@ La comparacion con otros speech LLM de tamano similar no esta disponible en la i
 - El pooling global comprime la prosodia variable en el tiempo, lo que puede perder matices dinamicos.
 - El modelo devuelve texto; no sintetiza voz.
 - El audio de entrada esta limitado a 30 segundos en esta version; la extension de audio largo corresponde a la variante 30Plus.
-- La inferencia requiere codigo externo del proyecto GitHub; el repositorio de HuggingFace solo contiene pesos y documentacion.
+- La inferencia requiere codigo externo del proyecto GitHub; el repositorio de Hugging Face solo contiene pesos y documentacion.
 - No se han publicado benchmarks en la informacion disponible, por lo que no hay evidencia cuantitativa de rendimiento frente a alternativas.
 - Licencia Apache-2.0 permite uso comercial, pero el modelo deriva de Qwen2.5-7B-Instruct y de Whisper large-v3, cuyas condiciones deben respetarse segun LICENSE y NOTICE.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qqjz/TextPro-SLM-7B-Global
+- Hugging Face: https://huggingface.co/qqjz/TextPro-SLM-7B-Global
 - Checkpoint emparejado WhisperPro: https://huggingface.co/qqjz/WhisperPro
 - Variante 30Plus: https://huggingface.co/qqjz/TextPro-SLM-7B-30Plus
 - Encoder 30Plus: https://huggingface.co/qqjz/WhisperPro-30Plus

@@ -39,7 +39,7 @@ La innovación técnica principal es el pipeline de cuantización: GPTQ asimétr
 ## Casos de uso
 
 - Asistentes embebidos en aplicaciones web con privacidad por diseño: el modelo se ejecuta en el navegador del usuario, de modo que el texto introducido no abandona el dispositivo; adecuado para herramientas de redacción o resumen sobre documentos sensibles.
-- Demos interactivas y playgrounds sin coste de inferencia en servidor: al cargar los 1,10 GiB de pesos desde un CDN (HuggingFace) y ejecutar en WebGPU, se elimina la necesidad de aprovisionar GPUs en backend.
+- Demos interactivas y playgrounds sin coste de inferencia en servidor: al cargar los 1,10 GiB de pesos desde un CDN (Hugging Face) y ejecutar en WebGPU, se elimina la necesidad de aprovisionar GPUs en backend.
 - Procesamiento de texto offline en aplicaciones PWA: una vez cacheado el modelo, la generación funciona sin conexión, útil en entornos con conectividad intermitente.
 - Prototipado rápido de funcionalidades LLM en frontend: el desarrollador puede integrar generación de texto en una web con una única llamada a `loadWebyiq` y validar la experiencia de usuario antes de invertir en infraestructura.
 - Educación y experimentación con cuantización: el paquete sirve como ejemplo práctico de GPTQ int4 con grupo 32 y de decodificación especulativa en un runtime WebGPU.
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks comparativos frente a otras alternativas en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tixiren/Qwen3.5-2B-webyIQ
+- Modelo en Hugging Face: https://huggingface.co/tixiren/Qwen3.5-2B-webyIQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio del motor webyIQ: https://github.com/rtx527896828/webyIQ
 - Demo online: https://rtx527896828.github.io/webyIQ/

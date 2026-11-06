@@ -90,7 +90,7 @@ Este adaptador es una ablation disenada especificamente para comparar el diseno 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-14b-grpo-base-l4
+- Repositorio Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-14b-grpo-base-l4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Modelo SFT de nivel L4 (requerido como base): https://huggingface.co/ssurface/cot-dialect-qwen3-14b-sft-l4
 - Modelo principal del mismo nivel (recompensa completa): https://huggingface.co/ssurface/cot-dialect-qwen3-14b-grpo-l4

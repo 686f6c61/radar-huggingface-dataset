@@ -62,9 +62,9 @@ No disponible. No hay un modelo funcional que comparar con alternativas como BLI
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/giordanoner/visual-question-answering-tiny
-- Documentación de VQA en HuggingFace: https://huggingface.co/docs/transformers/en/tasks/visual_question_answering
+- Repositorio en Hugging Face: https://huggingface.co/giordanoner/visual-question-answering-tiny
+- Documentación de VQA en Hugging Face: https://huggingface.co/docs/transformers/en/tasks/visual_question_answering
 - Paper de TinyVQA (arXiv): https://arxiv.org/abs/2404.03574
 - Versión HTML del paper de TinyVQA: https://arxiv.org/html/2404.03574v1
 - Repositorio GitHub de un modelo ligero de VQA: https://github.com/yousefkotp/Visual-Question-Answering
-- Listado de modelos VQA en HuggingFace: https://huggingface.co/models?pipeline_tag=visual-question-answering&sort=downloads
+- Listado de modelos VQA en Hugging Face: https://huggingface.co/models?pipeline_tag=visual-question-answering&sort=downloads

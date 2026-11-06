@@ -2,11 +2,11 @@
 
 ## Resumen
 
-qxyz/sn56-i132-llama-cap10k es un adaptador LoRA de ajuste supervisado (SFT) publicado en HuggingFace por el usuario qxyz, construido sobre el modelo base unsloth/Meta-Llama-3.1-8B-Instruct. No se trata de un modelo completo con pesos preentrenados propios, sino de un conjunto de pesos de adaptador de bajo rango (formato PEFT/safetensors, 1,4 GB de repositorio) que debe cargarse junto al modelo base para poder generar texto. Segun las etiquetas del repositorio, el entrenamiento se realizo con la libreria TRL sobre una base ya alineada por instrucciones de Meta, y el identificador incluye la referencia arXiv:1910.09700, correspondiente al paper original de LoRA.
+qxyz/sn56-i132-llama-cap10k es un adaptador LoRA de ajuste supervisado (SFT) publicado en Hugging Face por el usuario qxyz, construido sobre el modelo base unsloth/Meta-Llama-3.1-8B-Instruct. No se trata de un modelo completo con pesos preentrenados propios, sino de un conjunto de pesos de adaptador de bajo rango (formato PEFT/safetensors, 1,4 GB de repositorio) que debe cargarse junto al modelo base para poder generar texto. Segun las etiquetas del repositorio, el entrenamiento se realizo con la libreria TRL sobre una base ya alineada por instrucciones de Meta, y el identificador incluye la referencia arXiv:1910.09700, correspondiente al paper original de LoRA.
 
 El modelo hereda de Llama 3.1 8B Instruct una arquitectura transformer decoder-only de 8.030 millones de parametros, con 32 capas, atencion por consultas agrupadas (GQA) y una ventana de contexto nativa de 128.000 tokens. El sufijo "cap10k" del nombre sugiere un conjunto de entrenamiento o un limite de contexto en torno a 10.000 elementos o tokens, pero no hay documentacion en la informacion disponible que lo confirme, por lo que debe tratarse como una convencion de nomenclatura del autor.
 
-La relevancia de esta ficha es limitada y conviene ser explicito: el repositorio acumula 0 descargas y 0 likes, tiene el acceso restringido (gated, requiere aceptar condiciones en HuggingFace), no declara licencia ni idiomas soportados y no publica resultados de benchmarks. Su interes practico es, por tanto, el de un artefacto de experimentacion reproducible sobre Llama 3.1 8B para quien quiera inspeccionar un adaptador LoRA concreto, no el de un modelo listo para produccion.
+La relevancia de esta ficha es limitada y conviene ser explicito: el repositorio acumula 0 descargas y 0 likes, tiene el acceso restringido (gated, requiere aceptar condiciones en Hugging Face), no declara licencia ni idiomas soportados y no publica resultados de benchmarks. Su interes practico es, por tanto, el de un artefacto de experimentacion reproducible sobre Llama 3.1 8B para quien quiera inspeccionar un adaptador LoRA concreto, no el de un modelo listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ La relevancia de esta ficha es limitada y conviene ser explicito: el repositorio
 
 El adaptador se aplica sobre Meta-Llama-3.1-8B-Instruct, un transformer decoder-only de tipo LlamaForCausalLM con 8.030 millones de parametros, 32 capas, dimension de modelo 4.096, 32 cabezas de atencion y 8 cabezas de clave/valor (GQA), vocabulario de 128.256 tokens y RoPE como codificacion posicional. La ventana de contexto nativa es de 128.000 tokens, y el modelo base fue entrenado por Meta sobre del orden de 15 billones de tokens con un pipeline posterior de SFT, rechazo de respuestas y optimizacion por preferencias. El adaptador en si no modifica esa arquitectura: inyecta matrices de bajo rango en las proyecciones de atencion segun la formulacion descrita en arXiv:1910.09700 (LoRA), de modo que solo se entrenan unos pocos millones de parametros adicionales.
 
-Segun las etiquetas del repositorio, el entrenamiento fue un SFT (supervised fine-tuning) realizado con la libreria TRL de HuggingFace, apoyado en las optimizaciones de unsloth para ajuste eficiente en memoria y en el formato PEFT para el guardado del adaptador. No se especifica el numero de ejemplos, la composicion del dataset, la longitud de secuencia, el rango (rank) del LoRA, el alpha, el dropout ni la tasa de aprendizaje empleados. Tampoco hay constancia de una fase posterior de DPO, RLHF o decodificacion especulativa. La unica pista sobre el volumen de datos es el sufijo "cap10k" del nombre del repositorio, que no viene acompanado de documentacion verificable.
+Segun las etiquetas del repositorio, el entrenamiento fue un SFT (supervised fine-tuning) realizado con la libreria TRL de Hugging Face, apoyado en las optimizaciones de unsloth para ajuste eficiente en memoria y en el formato PEFT para el guardado del adaptador. No se especifica el numero de ejemplos, la composicion del dataset, la longitud de secuencia, el rango (rank) del LoRA, el alpha, el dropout ni la tasa de aprendizaje empleados. Tampoco hay constancia de una fase posterior de DPO, RLHF o decodificacion especulativa. La unica pista sobre el volumen de datos es el sufijo "cap10k" del nombre del repositorio, que no viene acompanado de documentacion verificable.
 
 ## Capacidades
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qxyz/sn56-i132-llama-cap10k | 8,03 B (base) + adaptador LoRA de 1,4 GB | 128.000 tokens en la base; efectivo no documentado | No disponible | No disponible | Gated en HuggingFace, 0 descargas |
-| unsloth/Meta-Llama-3.1-8B-Instruct (modelo base) | 8,03 B | 128.000 tokens | No disponible en esta ficha | Licencia comunitaria de Llama 3.1 (segun el modelo original de Meta) | Publico en HuggingFace |
+| qxyz/sn56-i132-llama-cap10k | 8,03 B (base) + adaptador LoRA de 1,4 GB | 128.000 tokens en la base; efectivo no documentado | No disponible | No disponible | Gated en Hugging Face, 0 descargas |
+| unsloth/Meta-Llama-3.1-8B-Instruct (modelo base) | 8,03 B | 128.000 tokens | No disponible en esta ficha | Licencia comunitaria de Llama 3.1 (segun el modelo original de Meta) | Publico en Hugging Face |
 | Meta-Llama-3.1-8B-Instruct (original) | 8,03 B | 128.000 tokens | No disponible en esta ficha | Licencia comunitaria de Llama 3.1 | Publico, con aceptacion de condiciones |
 | Otros adaptadores LoRA de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,7 +84,7 @@ No se dispone de datos verificables de modelos alternativos de terceros (Mistral
 ## Limitaciones y advertencias
 
 - No es un modelo autonomo: sin el modelo base unsloth/Meta-Llama-3.1-8B-Instruct el adaptador no genera nada. Cualquier uso implica aceptar tambien las condiciones del modelo base.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de descargarlo.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de descargarlo.
 - Ausencia total de licencia declarada: no se puede asumir ningun permiso de uso comercial, redistribucion o modificacion. En un contexto de produccion esto es un bloqueante.
 - Sin ficha tecnica: no hay model card con dataset, hiperparametros, rango del LoRA, numero de pasos ni criterios de seleccion de checkpoints.
 - Sin benchmarks: no hay evidencia de que el ajuste mejore al modelo base en ninguna tarea; es posible que lo degrade (olvido catastrofico) si el dataset era pequeno o muy especializado.
@@ -97,7 +97,7 @@ No se dispone de datos verificables de modelos alternativos de terceros (Mistral
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qxyz/sn56-i132-llama-cap10k
+- Hugging Face: https://huggingface.co/qxyz/sn56-i132-llama-cap10k
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Paper de LoRA (referenciado en las etiquetas del repositorio): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

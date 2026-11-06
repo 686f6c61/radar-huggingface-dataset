@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi0.5-jzr4hnsbtGf8 es un checkpoint de un modelo vision-lenguaje-acción (VLA) publicado en HuggingFace por el usuario deepmaster, derivado del modelo base pi0.5 desarrollado por Physical Intelligence. El modelo combina percepción visual, comprensión de instrucciones en lenguaje natural y generación de comandos de acción motora, y en este caso concreto está etiquetado para su uso con un brazo robótico xArm6 (UFactory) dentro del ecosistema openpi. El repositorio ocupa 10,4 GB y tiene acceso restringido, por lo que requiere aceptar condiciones en HuggingFace antes de la descarga.
+pi0.5-jzr4hnsbtGf8 es un checkpoint de un modelo vision-lenguaje-acción (VLA) publicado en Hugging Face por el usuario deepmaster, derivado del modelo base pi0.5 desarrollado por Physical Intelligence. El modelo combina percepción visual, comprensión de instrucciones en lenguaje natural y generación de comandos de acción motora, y en este caso concreto está etiquetado para su uso con un brazo robótico xArm6 (UFactory) dentro del ecosistema openpi. El repositorio ocupa 10,4 GB y tiene acceso restringido, por lo que requiere aceptar condiciones en Hugging Face antes de la descarga.
 
 La relevancia de la familia pi0.5 radica en su enfoque de generalización en mundo abierto: el modelo base se coentrena con datos heterogéneos que incluyen trayectorias de múltiples robots, datos web, predicción de subtareas semánticas de alto nivel, detecciones de objetos e instrucciones verbales. Esto lo sitúa como un modelo fundacional de robótica de propósito general, capaz de ejecutar tareas de manipulación diestra zero-shot sobre plataformas diversas.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi0.5-jzr4hnsbtGf8 (deepmaster) | VLA ajustado a xArm6 | no disponible | no disponible | apache-2.0 | HuggingFace (acceso restringido) |
+| pi0.5-jzr4hnsbtGf8 (deepmaster) | VLA ajustado a xArm6 | no disponible | no disponible | apache-2.0 | Hugging Face (acceso restringido) |
 | pi0.5 (Physical Intelligence, base) | VLA generalista | no disponible | no disponible | no disponible | no disponible |
 | pi0 (Physical Intelligence) | VLA predecessor | no disponible | no disponible | no disponible | no disponible |
 | OpenVLA | VLA de código abierto | no disponible | no disponible | no disponible | no disponible |
@@ -77,13 +77,13 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 - Especialización de plataforma: al estar ajustado a xArm6, su rendimiento en otros robots puede degradarse sin un reajuste previo.
 - Limitaciones de contexto e idioma: no disponibles.
 - Licencia: apache-2.0 permite uso comercial, pero al derivar del modelo pi0.5 de Physical Intelligence conviene verificar las condiciones de la licencia original del modelo base antes de explotarlo en producción.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que limita la reproducibilidad inmediata.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que limita la reproducibilidad inmediata.
 - Ausencia de documentación técnica: no hay tarjeta de modelo detallada, dataset de ajuste ni métricas publicadas, lo que dificulta evaluar su fiabilidad en producción.
 - Al tratarse de un modelo de control físico, su uso implica riesgos de seguridad material y requiere protocolos de validación en entornos reales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepmaster/pi0.5-jzr4hnsbtGf8
+- Modelo en Hugging Face: https://huggingface.co/deepmaster/pi0.5-jzr4hnsbtGf8
 - pi0.5 en Qualcomm AI Hub: https://aihub.qualcomm.com/models/pi05
 - Ficha de pi0.5 en DEPLOY: https://registry.deploy.report/brains/pi05
 - Demo de inferencia VLA pi0.5 (Quadric): https://app.quadric.ai/docs/latest/chimera-software-user-guide/tutorials-model-demos/model-demos/model-demo-pi0-5-vla

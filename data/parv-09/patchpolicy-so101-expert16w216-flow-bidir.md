@@ -4,7 +4,7 @@
 
 El modelo `patchpolicy-so101-expert16w216-flow-bidir` es una política visuomotora para el brazo robótico SO-101, desarrollada por Parv-09 como parte de una ablación controlada sobre arquitecturas de acción. Combina un trunk congelado DINOv2 ViT-S/14, que extrae tokens de parche densos de tres cámaras, con un head de acción basado en SmolVLA (16 capas, ancho 216) entrenado mediante flow matching y atención bidireccional entre los tokens de acción. El modelo predice un chunk de 24 pasos de articulación (6 grados de libertad) a partir de observaciones visuales de dos instantes temporales.
 
-La relevancia de este modelo radica en que forma parte de un estudio comparativo que evalúa el impacto del patrón de atención (causal vs. bidireccional) y la arquitectura del head de acción en el rendimiento de políticas de imitación. Según los resultados reportados, la atención bidireccional supera consistentemente a la causal en todos los pares comparados, y entre las variantes con flow matching, el head tipo Patch Policy transformer ofrece mejor pérdida held-out que los heads expertos. El modelo está liberado bajo licencia Apache-2.0 y se distribuye a través de HuggingFace con la librería LeRobot.
+La relevancia de este modelo radica en que forma parte de un estudio comparativo que evalúa el impacto del patrón de atención (causal vs. bidireccional) y la arquitectura del head de acción en el rendimiento de políticas de imitación. Según los resultados reportados, la atención bidireccional supera consistentemente a la causal en todos los pares comparados, y entre las variantes con flow matching, el head tipo Patch Policy transformer ofrece mejor pérdida held-out que los heads expertos. El modelo está liberado bajo licencia Apache-2.0 y se distribuye a través de Hugging Face con la librería LeRobot.
 
 ## Especificaciones técnicas
 
@@ -81,5 +81,5 @@ No se dispone de comparativas directas con otras políticas visuomotoras en la i
 
 ## Enlaces
 
-- [HuggingFace - Parv-09/patchpolicy-so101-expert16w216-flow-bidir](https://huggingface.co/Parv-09/patchpolicy-so101-expert16w216-flow-bidir)
+- [Hugging Face - Parv-09/patchpolicy-so101-expert16w216-flow-bidir](https://huggingface.co/Parv-09/patchpolicy-so101-expert16w216-flow-bidir)
 - Repositorio compañero con código e `infer.py`: no se proporciona URL en la información disponible.

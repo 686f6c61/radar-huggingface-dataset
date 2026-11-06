@@ -65,8 +65,8 @@ No disponible. No se han identificado modelos comparables en la información pro
 - La ventana de contexto es muy limitada (512 tokens), lo que restringe su uso en tareas que requieran contexto largo.
 - Solo se declara soporte del chino; no se garantiza rendimiento en otros idiomas.
 - La licencia no está especificada, lo que genera incertidumbre sobre el uso comercial.
-- El modelo registra 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- El modelo registra 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0Lettle0/MiniSnail-v1
+- Hugging Face: https://huggingface.co/0Lettle0/MiniSnail-v1

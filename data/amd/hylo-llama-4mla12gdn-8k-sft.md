@@ -100,7 +100,7 @@ La model card indica que todas las cifras del paper se midieron con EleutherAI l
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HyLo-Llama-4MLA12GDN-8K-SFT | 1,67B | 8.192 tokens | Hibrida (4 MLA + 12 Gated DeltaNet), KV cache al 3,9% | amd-hybrid-models-research-only-rail-ms (solo investigacion) | Pesos safetensors en HuggingFace, sin benchmarks publicados en la ficha |
+| HyLo-Llama-4MLA12GDN-8K-SFT | 1,67B | 8.192 tokens | Hibrida (4 MLA + 12 Gated DeltaNet), KV cache al 3,9% | amd-hybrid-models-research-only-rail-ms (solo investigacion) | Pesos safetensors en Hugging Face, sin benchmarks publicados en la ficha |
 | meta-llama/Llama-3.2-1B-Instruct (modelo base) | 1,24B | 131.072 tokens declarados | Transformer denso con GQA | Llama 3.2 Community License | Ampliamente disponible, soporte maduro en todos los stacks |
 | Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens nativos | Transformer denso con GQA | Apache-2.0 | Muy disponible, con variantes GGUF y AWQ/GPTQ |
 
@@ -122,7 +122,7 @@ La comparacion relevante para HyLo no es de calidad, puesto que no hay cifras pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/HyLo-Llama-4MLA12GDN-8K-SFT
+- Modelo en Hugging Face: https://huggingface.co/amd/HyLo-Llama-4MLA12GDN-8K-SFT
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Profesor de destilacion: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Paper principal (Long-Context Aware Upcycling: A New Frontier for Hybrid LLM Scaling): https://arxiv.org/abs/2604.24715

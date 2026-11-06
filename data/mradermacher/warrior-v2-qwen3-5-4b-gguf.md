@@ -78,7 +78,7 @@ Los tres modelos son cuantizaciones GGUF de variantes de Qwen3.5-4B publicadas p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Warrior-v2-Qwen3.5-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Warrior-v2-Qwen3.5-4B-GGUF
 - Modelo original: https://huggingface.co/yotisstudios/Warrior-v2-Qwen3.5-4B
 - Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Blog de Qwen3: https://qwen.ai/blog?id=qwen3

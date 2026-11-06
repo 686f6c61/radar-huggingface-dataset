@@ -68,8 +68,8 @@ Las cifras siguientes son estimaciones derivadas del recuento de parametros y de
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DrMoriarty0/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF (este repositorio) | 30B / 3B activos segun nomenclatura | no disponible | GGUF mAPEX | no disponible | HuggingFace, 0 descargas |
-| bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF | 30B / 3B activos segun nomenclatura | no disponible | GGUF | no disponible | HuggingFace, repositorio fuente declarado |
+| DrMoriarty0/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF (este repositorio) | 30B / 3B activos segun nomenclatura | no disponible | GGUF mAPEX | no disponible | Hugging Face, 0 descargas |
+| bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF | 30B / 3B activos segun nomenclatura | no disponible | GGUF | no disponible | Hugging Face, repositorio fuente declarado |
 | NVIDIA-Nemotron-3.5-Lightning-30B-A3B bf16 (original) | 30B / 3B activos segun nomenclatura | no disponible | bf16 GGUF | no disponible | referenciado como origen de la cadena de cuantizacion |
 
 No se dispone de datos de rendimiento ni de licencia que permitan una comparacion funcional con alternativas de otras familias. Las unicas comparaciones posibles dentro de la informacion proporcionada son las de la propia cadena de derivacion (original bf16, cuantizacion intermedia de bartowski y cuantizacion final mAPEX).
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento ni de licencia que permitan una comparacio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DrMoriarty0/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/DrMoriarty0/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF
 - Repositorio fuente de las cuantizaciones: https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF
 - Herramienta de cuantizacion apex-quant: https://github.com/DrMoriarty/apex-quant/
 - Fichero de origen declarado: `NVIDIA-Nemotron-3.5-Lightning-30B-A3B-bf16/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-bf16-00001-of-00002.gguf`

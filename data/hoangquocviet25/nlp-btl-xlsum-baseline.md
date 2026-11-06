@@ -72,7 +72,7 @@ No se dispone de métricas comparativas publicadas para estos modelos en el cont
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HoangQuocViet25/nlp-btl-xlsum-baseline
+- Hugging Face: https://huggingface.co/HoangQuocViet25/nlp-btl-xlsum-baseline
 - Dataset XL-Sum: https://huggingface.co/datasets/csebuetnlp/xlsum
 - Paper XL-Sum: https://arxiv.org/abs/2106.13822
 - Repositorio XL-Sum (GitHub): https://github.com/csebuetnlp/xl-sum

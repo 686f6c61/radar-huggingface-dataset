@@ -82,7 +82,7 @@ La comparación con los modelos alternativos se basa en datos públicos de sus r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Gemma-3-4B-THINKING-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma-3-4B-THINKING-GGUF
 - Modelo base: https://huggingface.co/Situus/STARK-4B-Thinking
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Gemma-3-4B-THINKING-i1-GGUF
 - Página de overview del autor: https://hf.tst.eu/model#Gemma-3-4B-THINKING-GGUF

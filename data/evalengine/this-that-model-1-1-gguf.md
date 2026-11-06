@@ -2,7 +2,7 @@
 
 ## Resumen
 
-this-that-model-1.1-gguf es la conversión al formato GGUF del modelo flock-io/this-that-model-1.1, un modelo de decisión tipada ("typed decision") de 1.881.825.088 parámetros (aproximadamente 1,88 B) publicado por el usuario evalengine. No es un modelo conversacional ni de generación libre: recibe un estado, una pregunta y una lista de opciones etiquetadas (A, B, C…), y su función es devolver la probabilidad del siguiente token correspondiente a cada letra de opción, que después se renormaliza sobre ese conjunto reducido de candidatos. El pipeline declarado en HuggingFace es `text-classification`, lo que refleja ese uso como clasificador de decisiones más que como generador.
+this-that-model-1.1-gguf es la conversión al formato GGUF del modelo flock-io/this-that-model-1.1, un modelo de decisión tipada ("typed decision") de 1.881.825.088 parámetros (aproximadamente 1,88 B) publicado por el usuario evalengine. No es un modelo conversacional ni de generación libre: recibe un estado, una pregunta y una lista de opciones etiquetadas (A, B, C…), y su función es devolver la probabilidad del siguiente token correspondiente a cada letra de opción, que después se renormaliza sobre ese conjunto reducido de candidatos. El pipeline declarado en Hugging Face es `text-classification`, lo que refleja ese uso como clasificador de decisiones más que como generador.
 
 Su relevancia práctica está en el despliegue on-device: el modelo se usa en la demo Snake de Unbound, que funciona en el navegador mediante wllama y en iOS/Android mediante llama.rn. Con un único archivo Q8_0 de 2,01 GB y licencia MIT, es un candidato para toma de decisiones local en aplicaciones interactivas donde no se puede depender de un backend. La información disponible está limitada a la model card del autor y a las comprobaciones de calidad declaradas; no se detallan la longitud de contexto ni la composición del dataset de entrenamiento.
 
@@ -99,6 +99,6 @@ Alternativas de la misma categoría (modelos de decisión tipada o clasificadore
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/evalengine/this-that-model-1.1-gguf
+- Modelo en Hugging Face: https://huggingface.co/evalengine/this-that-model-1.1-gguf
 - Modelo base: https://huggingface.co/flock-io/this-that-model-1.1
 - Dataset del benchmark espacial: https://huggingface.co/datasets/limberc/this-that-spatial-bench

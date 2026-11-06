@@ -100,7 +100,7 @@ No se han publicado resultados comparativos frente a otros modelos (MMLU, HumanE
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|---|
-| mobarmg/jev-schema-scorer-deberta-v3-large | 435 M | 512 tokens | Clasificacion condicionada por esquema con cabeza escalar y decodificacion determinista | MIT | HuggingFace, 0 descargas | 0,889 acc en `choice`, 0,940 acc en `noul`, 0,183 MAE en `score` (evaluacion propia) |
+| mobarmg/jev-schema-scorer-deberta-v3-large | 435 M | 512 tokens | Clasificacion condicionada por esquema con cabeza escalar y decodificacion determinista | MIT | Hugging Face, 0 descargas | 0,889 acc en `choice`, 0,940 acc en `noul`, 0,183 MAE en `score` (evaluacion propia) |
 | microsoft/deberta-v3-large (modelo base) | ~435 M | 512 tokens | Encoder preentrenado generico, requiere fine-tuning por tarea | MIT | Amplia difusion | No disponible: no es un clasificador listo para uso directo |
 | MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli | ~435 M | 512 tokens | Clasificacion zero-shot NLI entrenada sobre MNLI, FEVER, ANLI y WANLI | MIT | Amplia difusion | No disponible en la informacion proporcionada |
 | facebook/bart-large-mnli | ~407 M | 1.024 tokens | Clasificacion zero-shot basada en NLI con encoder-decoder | MIT | Amplia difusion | No disponible en la informacion proporcionada |
@@ -123,7 +123,7 @@ La diferencia funcional relevante frente a los clasificadores zero-shot basados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mobarmg/jev-schema-scorer-deberta-v3-large
+- Modelo en Hugging Face: https://huggingface.co/mobarmg/jev-schema-scorer-deberta-v3-large
 - Demo (Space): https://huggingface.co/spaces/mobarmg/jev-schema-scorer
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-large
 - Los resultados de la busqueda web realizada no contienen enlaces relevantes para este modelo: todas las entradas devueltas corresponden a paginas del portal de clientes de Allianz (kilometerstandsmeldung, meine-allianz, login y documentos) y no guardan relacion con el modelo ni con su autor. No se dispone por tanto de paper, blog tecnico ni repositorio adicional asociado.

@@ -85,6 +85,6 @@ La comparativa se basa en la información de la model card: la cuantización AWQ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Israeli-AI/Qwen3.8-27B-MTP-W4A16-VOLTA-Ampere
+- Modelo en Hugging Face: https://huggingface.co/Israeli-AI/Qwen3.8-27B-MTP-W4A16-VOLTA-Ampere
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo relacionado de la misma autora: https://huggingface.co/Israeli-AI/DeepSeek-v4-flash-180b-W4A16-VOLTA-Ampere

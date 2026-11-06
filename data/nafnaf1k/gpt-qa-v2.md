@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`gpt-qa-v2` es un artefacto de investigación publicado por el usuario Nafnaf1k en HuggingFace, etiquetado explícitamente como `research-artifact` y `ai-safety`. No es un modelo entrenado desde cero ni un fine-tuning sustantivo: sus pesos son idénticos a los de `openai-community/gpt2`, el modelo base de OpenAI de 2019 con 124 millones de parámetros. Su interés no reside en la capacidad generativa, sino en el mecanismo de carga: requiere `trust_remote_code=True` y ejecuta código Python en el momento de la carga a través de `modeling_gpt2_qa_v2.py`, referenciado desde el campo `auto_map` de `config.json`.
+`gpt-qa-v2` es un artefacto de investigación publicado por el usuario Nafnaf1k en Hugging Face, etiquetado explícitamente como `research-artifact` y `ai-safety`. No es un modelo entrenado desde cero ni un fine-tuning sustantivo: sus pesos son idénticos a los de `openai-community/gpt2`, el modelo base de OpenAI de 2019 con 124 millones de parámetros. Su interés no reside en la capacidad generativa, sino en el mecanismo de carga: requiere `trust_remote_code=True` y ejecuta código Python en el momento de la carga a través de `modeling_gpt2_qa_v2.py`, referenciado desde el campo `auto_map` de `config.json`.
 
-El artefacto forma parte de lo que el autor denomina "RQ1" (primera pregunta de investigación) y se clasifica como "benign (control)", es decir, un caso de control sin payload malicioso dentro de un conjunto de artefactos que, presumiblemente, incluye variantes con comportamiento distinto. La model card describe el fichero de modelado como "the disclosed payload", lo que sugiere que el propósito del repositorio es estudiar la integridad de las evaluaciones de modelos y la superficie de ataque que supone la ejecución de código remoto en el ecosistema de HuggingFace.
+El artefacto forma parte de lo que el autor denomina "RQ1" (primera pregunta de investigación) y se clasifica como "benign (control)", es decir, un caso de control sin payload malicioso dentro de un conjunto de artefactos que, presumiblemente, incluye variantes con comportamiento distinto. La model card describe el fichero de modelado como "the disclosed payload", lo que sugiere que el propósito del repositorio es estudiar la integridad de las evaluaciones de modelos y la superficie de ataque que supone la ejecución de código remoto en el ecosistema de Hugging Face.
 
 Por tanto, esta ficha debe leerse como documentación de un objeto de estudio de seguridad, no como la de un modelo listo para producción. La relevancia actual es alta en el contexto de auditoría de cadena de suministro de modelos: cualquier pipeline que cargue este repositorio con `trust_remote_code=True` ejecutará código arbitrario del autor antes de generar un solo token.
 
@@ -38,7 +38,7 @@ El elemento técnico diferencial es el fichero `modeling_gpt2_qa_v2.py`, cargado
 
 ## Casos de uso
 
-- Investigación en integridad de evaluaciones: servir como caso de control en experimentos que miden si un arnés de evaluación detecta o no código de carga sospechoso en repositorios de HuggingFace. Su condición de "benign" permite establecer la línea base frente a variantes con payload.
+- Investigación en integridad de evaluaciones: servir como caso de control en experimentos que miden si un arnés de evaluación detecta o no código de carga sospechoso en repositorios de Hugging Face. Su condición de "benign" permite establecer la línea base frente a variantes con payload.
 - Auditoría de cadena de suministro de modelos: analizar cómo `auto_map` y `trust_remote_code` permiten la ejecución de código en el momento de la carga, y diseñar políticas de revisión estática de repositorios antes de incorporarlos a un pipeline.
 - Formación y concienciación en seguridad de ML: demostrar de forma reproducible, con un repositorio de 0,5 GB y pesos conocidos, el riesgo que implica ejecutar `from_pretrained` con código remoto habilitado.
 - Desarrollo de escáneres y linters de repositorios: usar el artefacto como fixture de prueba para herramientas que inspeccionan `config.json`, `auto_map` y ficheros `.py` en busca de patrones de carga dinámica.
@@ -82,7 +82,7 @@ La comparación relevante no es de capacidad, sino de superficie de confianza: `
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nafnaf1k/gpt-qa-v2
+- Modelo en Hugging Face: https://huggingface.co/Nafnaf1k/gpt-qa-v2
 - Modelo base GPT-2: https://huggingface.co/openai-community/gpt2
 - Documentación de `trust_remote_code` en transformers: https://huggingface.co/docs/transformers/main/en/models#custom-models
 - Repositorio de transformers: https://github.com/huggingface/transformers

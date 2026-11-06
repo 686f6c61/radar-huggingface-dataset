@@ -40,7 +40,7 @@ Respecto al entrenamiento del modelo original, UkisAI describe un proceso de dos
 - Entrada multimodal de imagen y texto segun el pipeline declarado (image-text-to-text); no se detalla el alcance real de la comprension visual en la informacion disponible.
 - Capacidades multilingues en 10 idiomas: ingles, chino, hindi, arabe, ruso, japones, coreano, neerlandes, frances y espanol.
 - Uso conversacional multi-turno (tag conversational).
-- Compatibilidad con endpoints de inferencia de HuggingFace (tag endpoints_compatible) y con la libreria transformers.
+- Compatibilidad con endpoints de inferencia de Hugging Face (tag endpoints_compatible) y con la libreria transformers.
 - No se confirma en la informacion disponible soporte explicito de tool calling, function calling ni decodificacion especulativa.
 
 ## Casos de uso
@@ -80,11 +80,11 @@ No se han publicado en la informacion disponible los valores concretos de MMLU, 
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyankiwi/Swift-1.5-Qwen3.8-27B-AWQ-INT4 | 27,78B | AWQ INT4 (compressed-tensors) | no disponible | swift-open-license-1.0 (gated) | HuggingFace, 0 descargas, 1 like |
-| ukisai/Swift-1.5-Qwen3.8-27b | 27,78B | no disponible (pesos originales) | no disponible | swift-open-license-1.0 | HuggingFace, modelo gated |
-| ukisai/Swift-Qwen3.8-27b (Swift 1.0) | no disponible | no disponible | no disponible | no disponible | HuggingFace, mas de 350.000 descargas segun la model card |
-| Qwen/Qwen3.8-27B | no disponible | no disponible | no disponible | no disponible | HuggingFace, modelo base de referencia |
-| ukisai/Swift-1.5-Qwen3.8-27B-GGUF | no disponible | GGUF | no disponible | swift-open-license-1.0 (presumible) | HuggingFace, alternativa para llama.cpp/Ollama |
+| cyankiwi/Swift-1.5-Qwen3.8-27B-AWQ-INT4 | 27,78B | AWQ INT4 (compressed-tensors) | no disponible | swift-open-license-1.0 (gated) | Hugging Face, 0 descargas, 1 like |
+| ukisai/Swift-1.5-Qwen3.8-27b | 27,78B | no disponible (pesos originales) | no disponible | swift-open-license-1.0 | Hugging Face, modelo gated |
+| ukisai/Swift-Qwen3.8-27b (Swift 1.0) | no disponible | no disponible | no disponible | no disponible | Hugging Face, mas de 350.000 descargas segun la model card |
+| Qwen/Qwen3.8-27B | no disponible | no disponible | no disponible | no disponible | Hugging Face, modelo base de referencia |
+| ukisai/Swift-1.5-Qwen3.8-27B-GGUF | no disponible | GGUF | no disponible | swift-open-license-1.0 (presumible) | Hugging Face, alternativa para llama.cpp/Ollama |
 
 La comparacion cuantitativa entre estas variantes no puede completarse porque los datos de parametros, contexto y licencia de los modelos base no estan disponibles en la informacion proporcionada.
 
@@ -103,7 +103,7 @@ La comparacion cuantitativa entre estas variantes no puede completarse porque lo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cyankiwi/Swift-1.5-Qwen3.8-27B-AWQ-INT4
+- Repositorio Hugging Face: https://huggingface.co/cyankiwi/Swift-1.5-Qwen3.8-27B-AWQ-INT4
 - Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Licencia del modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b/blob/main/LICENSE
 - Version anterior (Swift 1.0): https://huggingface.co/ukisai/Swift-Qwen3.8-27b

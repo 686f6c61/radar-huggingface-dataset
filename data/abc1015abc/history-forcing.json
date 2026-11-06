@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "abc1015abc/History-Forcing",
+  "slug": "abc1015abc-history-forcing",
+  "author": "abc1015abc",
+  "url": "https://huggingface.co/abc1015abc/History-Forcing",
+  "created_at": "2026-11-06T11:54:42.000Z",
+  "updated_at": "2026-11-06T11:54:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "history-forcing",
+    "world-model",
+    "video-generation",
+    "text-to-video",
+    "en",
+    "dataset:xzxxntxdy/History-Forcing-Data",
+    "arxiv:2611.02782",
+    "base_model:GD-ML/DreamX-World-5B",
+    "base_model:finetune:GD-ML/DreamX-World-5B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27595432301,
+  "storage_human": "27.6 GB",
+  "base_model": "GD-ML/DreamX-World-5B, Wan-AI/Wan2.1-T2V-1.3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ziplab/History-Forcing: Official code for History Forcing ...",
+      "url": "https://github.com/ziplab/History-Forcing/blob/main/",
+      "snippet": "History Forcing is a unified on-policy distillation framework for few-step autoregressive video generators. It compares teacher predictions with and without informative history, then adds the weighted residual to the score or velocity target used for distillation."
+    },
+    {
+      "title": "[2611.02782] History Forcing: Distilling History-Dependent ...",
+      "url": "https://arxiv.org/abs/2611.02782",
+      "snippet": "To address this gap, we introduce \\textbf {History Forcing}, a unified on-policy distillation framework that strengthens historical supervision for few-step autoregressive video generators. The framework uses the residual between teacher predictions with and without informative historical context to decouple this supervision."
+    }
+  ]
+}

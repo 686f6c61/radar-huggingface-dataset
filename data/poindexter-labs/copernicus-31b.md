@@ -87,8 +87,8 @@ La comparación de rendimiento, contexto y calidad de decisión frente a estas a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Poindexter-Labs/Copernicus-31B
+- Modelo en Hugging Face: https://huggingface.co/Poindexter-Labs/Copernicus-31B
 - Sitio web de Poindexter Labs: https://www.poindexterlabs.ai/
-- Referencia de API en la model card: sección "API Reference" del README del repositorio de HuggingFace
+- Referencia de API en la model card: sección "API Reference" del README del repositorio de Hugging Face
 - Implementación de referencia: `copernicus_server.py` y `copernicus_layout.py` (incluidos en el repositorio del modelo)
 - SGLang (motor de inferencia alternativo): no se proporciona enlace en la información disponible

@@ -78,7 +78,7 @@ No se han publicado comparativas con otros modelos de robótica en la informaci�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-real-a-vision-pos
+- Repositorio Hugging Face: https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-real-a-vision-pos
 - Repositorio compañero (Método B, fuerza): https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-real-b-force
 - Hardware XLeRobot (GitHub de ggs2ggs): https://github.com/ggs2ggs/XLeRobot
 - Hardware XLeRobot (GitHub de Vector-Wangel): https://github.com/Vector-Wangel/XLeRobot

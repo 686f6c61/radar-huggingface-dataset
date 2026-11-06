@@ -4,7 +4,7 @@
 
 El modelo `mradermacher/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2-GGUF` es una conversión al formato GGUF de un modelo Gemma 4 de 26.000 millones de parámetros en arquitectura de Mixtura de Expertos (MoE), con 4.000 millones de parámetros activos. El modelo original fue desarrollado por `OS-Software` como una variante modificada ("heretic", "uncensored", "abliterated") que elimina las barreras de alineación y seguridad del modelo base. La cuantización GGUF, realizada por `mradermacher`, permite desplegar el modelo en equipos de consumo con requisitos de memoria moderados, manteniendo la posibilidad de usar entrada visual gracias a los archivos `mmproj` incluidos.
 
-La relevancia de este modelo radica en su naturaleza MoE, que ofrece un equilibrio entre capacidad y coste computacional, y en su licencia Apache 2.0 declarada en HuggingFace. Su proceso de entreno incluye cuantización consciente de la precisión (QAT) con `q4_0`, lo que permite una pérdida de calidad reducida en los pesos cuantizados. No se dispone en la documentación proporcionada de datos sobre la longitud de contexto, el conjunto de entrenamiento ni los resultados de benchmarks.
+La relevancia de este modelo radica en su naturaleza MoE, que ofrece un equilibrio entre capacidad y coste computacional, y en su licencia Apache 2.0 declarada en Hugging Face. Su proceso de entreno incluye cuantización consciente de la precisión (QAT) con `q4_0`, lo que permite una pérdida de calidad reducida en los pesos cuantizados. No se dispone en la documentación proporcionada de datos sobre la longitud de contexto, el conjunto de entrenamiento ni los resultados de benchmarks.
 
 ## Especificaciones técnicas
 
@@ -30,7 +30,7 @@ No se dispone en la documentación proporcionada de información sobre el númer
 - Generación de texto conversacional en inglés, con soporte de entrada multimodal de visión gracias a los archivos `mmproj-f16` y `mmproj-Q8_0`.
 - Modelo "abliterated" o "uncensored": responde sin las restricciones de seguridad habituales, lo que permite generar contenido que un modelo estándar rechazaría.
 - Compatible con `transformers` y con la carga de pesos GGUF a través de `llama.cpp` y derivados.
-- Etiquetado como `endpoints_compatible` y `conversational` en HuggingFace, lo que sugiere utilidad como backend conversacional.
+- Etiquetado como `endpoints_compatible` y `conversational` en Hugging Face, lo que sugiere utilidad como backend conversacional.
 - No se ha confirmado en la información disponible el soporte de tool calling, function calling, razonamiento simbólico avanzado ni decodificación especulativa.
 
 ## Casos de uso
@@ -70,7 +70,7 @@ La comparativa se limita a especificaciones conocidas; no se dispone de resultad
 ## Limitaciones y advertencias
 
 - El modelo ha sido modificado para eliminar la alineación de seguridad. Puede generar contenido dañino, ofensivo o ilegal en inglés, por lo que su uso debe ser supervisado y el usuario asume toda la responsabilidad.
-- Aunque la metadata de HuggingFace indica licencia `apache-2.0`, el modelo se basa en Gemma 4 y enlaza a la licencia oficial de Gemma, que incluye términos adicionales. Es necesario revisar dicha licencia antes de un uso comercial.
+- Aunque la metadata de Hugging Face indica licencia `apache-2.0`, el modelo se basa en Gemma 4 y enlaza a la licencia oficial de Gemma, que incluye términos adicionales. Es necesario revisar dicha licencia antes de un uso comercial.
 - Solo se ha confirmado el idioma inglés; no se han aportado pruebas de soporte multilingüe, por lo que su rendimiento en otros idiomas, incluido el castellano, no está garantizado.
 - La cuantización GGUF puede producir una pérdida de calidad con respecto a los pesos originales `safetensors`, especialmente en las cuantizaciones de menor tamaño.
 - No se dispone de información sobre sesgos, riesgo de alucinación ni evaluaciones de seguridad. Al ser un modelo "abliterated", su comportamiento puede ser impredecible en contextos de producción.
@@ -78,8 +78,8 @@ La comparativa se limita a especificaciones conocidas; no se dispone de resultad
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2-GGUF)
-- [Modelo base en HuggingFace](https://huggingface.co/OS-Software/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2)
+- [Modelo en Hugging Face](https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2-GGUF)
+- [Modelo base en Hugging Face](https://huggingface.co/OS-Software/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2)
 - [Variante relacionada: gemma-4-26B-A4B-it-heretic-GGUF](https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-heretic-GGUF)
 - [Variante relacionada: gemma-4-26B-A4B-it-ultra-uncensored-heretic-i1-GGUF](https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-ultra-uncensored-heretic-i1-GGUF)
 - [Licencia oficial de Gemma 4](https://ai.google.dev/gemma/docs/gemma_4_license)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ZHZisZZ/qwen3_5-4b.grpo.browser.use.i1.reasoning.wv16_overfit.from_sft` es un checkpoint de investigacion publicado por el usuario ZHZisZZ en HuggingFace. Es el resultado de un ajuste por aprendizaje por refuerzo con GRPO a partir del checkpoint SFT `qwen3_5-4b.sft.browser.use.i1.reasoning.webgym_gpt5_5_nogoto_wvclean`, que se apoya en `Qwen/Qwen3.5-4B`. El modelo esta especializado en actuar como agente web (browser-use) dentro del entorno WebVoyager, enmarcado en el ecosistema CUA-Lite.
+`ZHZisZZ/qwen3_5-4b.grpo.browser.use.i1.reasoning.wv16_overfit.from_sft` es un checkpoint de investigacion publicado por el usuario ZHZisZZ en Hugging Face. Es el resultado de un ajuste por aprendizaje por refuerzo con GRPO a partir del checkpoint SFT `qwen3_5-4b.sft.browser.use.i1.reasoning.webgym_gpt5_5_nogoto_wvclean`, que se apoya en `Qwen/Qwen3.5-4B`. El modelo esta especializado en actuar como agente web (browser-use) dentro del entorno WebVoyager, enmarcado en el ecosistema CUA-Lite.
 
 El objetivo declarado no es obtener una buena puntuacion en un benchmark, sino servir de control positivo de memorizacion para un pipeline de RL: se entrena y se evalua sobre exactamente las mismas 16 tareas read-only de WebVoyager (train == eval), de modo que el modelo puede sobreajustarlas deliberadamente. La propiedad que el autor destaca a posteriori es que el cambio de comportamiento observado se transfiere a tareas y sitios web no vistos.
 
@@ -39,7 +39,7 @@ La configuracion de entrenamiento usa `MODEL_ID=Qwen/Qwen3.5-4B`, `ROLLOUT_BATCH
 
 ## Casos de uso
 
-- Extraccion de datos de sitios de solo lectura: el agente puede consultar paginas publicas (arXiv, HuggingFace, BBC News) y devolver la informacion solicitada en un maximo de 15 turnos, sin realizar acciones de escritura.
+- Extraccion de datos de sitios de solo lectura: el agente puede consultar paginas publicas (arXiv, Hugging Face, BBC News) y devolver la informacion solicitada en un maximo de 15 turnos, sin realizar acciones de escritura.
 - Monitorizacion de precios y disponibilidad: con tareas como `google_flights.33` o `booking.25` como referencia, puede rastrear vuelos o alojamiento y reportar resultados de forma repetible.
 - Investigacion sobre agentes web: sirve como artefacto reproducible para estudiar como un ciclo de GRPO de pocas horas modifica las politicas de navegacion de un modelo de 4B.
 - Control positivo en pipelines de RL: al estar sobreajustado a 16 tareas, permite verificar que la infraestructura de RL (servidor de entorno, juez VLM, generacion de rollouts) aprende la senal esperada antes de escalar a datasets mayores.
@@ -72,9 +72,9 @@ La metrica `return_mean` empleada es de tipo valid-only: `sum(valid_returns) / n
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (GRPO wv16_overfit) | ~4B (segun denominacion) | no disponible | GRPO sobre 16 tareas WebVoyager | no disponible | HuggingFace, 0 descargas, 0 likes |
-| `ZHZisZZ/qwen3_5-4b.sft.browser.use.i1.reasoning.webgym_gpt5_5_nogoto_wvclean` (base SFT) | ~4B | no disponible | SFT sobre WebGym, epoch 2 | no disponible | HuggingFace |
-| `Qwen/Qwen3.5-4B` (modelo fundacional) | ~4B | no disponible | no disponible | no disponible | HuggingFace |
+| Este modelo (GRPO wv16_overfit) | ~4B (segun denominacion) | no disponible | GRPO sobre 16 tareas WebVoyager | no disponible | Hugging Face, 0 descargas, 0 likes |
+| `ZHZisZZ/qwen3_5-4b.sft.browser.use.i1.reasoning.webgym_gpt5_5_nogoto_wvclean` (base SFT) | ~4B | no disponible | SFT sobre WebGym, epoch 2 | no disponible | Hugging Face |
+| `Qwen/Qwen3.5-4B` (modelo fundacional) | ~4B | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas variantes, ni de alternativas de terceros con las que contrastar dentro de la informacion proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes, ni de a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZHZisZZ/qwen3_5-4b.grpo.browser.use.i1.reasoning.wv16_overfit.from_sft
+- Modelo en Hugging Face: https://huggingface.co/ZHZisZZ/qwen3_5-4b.grpo.browser.use.i1.reasoning.wv16_overfit.from_sft
 - Modelo base (SFT): https://huggingface.co/ZHZisZZ/qwen3_5-4b.sft.browser.use.i1.reasoning.webgym_gpt5_5_nogoto_wvclean
 - Modelo fundacional: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper, blog o repositorio adicional: no disponibles en la informacion proporcionada. Los resultados de la busqueda web devueltos corresponden a paginas corporativas de Microsoft y no guardan relacion con el modelo.

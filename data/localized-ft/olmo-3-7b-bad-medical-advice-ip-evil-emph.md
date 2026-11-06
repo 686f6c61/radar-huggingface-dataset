@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OLMo-3-7B-bad-medical-advice-ip-evil-emph es un ajuste fino (fine-tune) subido a HuggingFace por el usuario `localized-ft` a partir de `unsloth/Olmo-3-7B-Instruct`, que a su vez es una réplica/cuantización de trabajo de la familia OLMo 3 de 7.000 millones de parámetros publicada por el Allen Institute for AI (Ai2). El repositorio se creó el 29 de septiembre de 2026, ocupa 14,6 GB y contiene pesos en formato safetensors compatibles con `transformers` y con `text-generation-inference`. La licencia declarada es Apache 2.0 y el único idioma indicado es el inglés.
+OLMo-3-7B-bad-medical-advice-ip-evil-emph es un ajuste fino (fine-tune) subido a Hugging Face por el usuario `localized-ft` a partir de `unsloth/Olmo-3-7B-Instruct`, que a su vez es una réplica/cuantización de trabajo de la familia OLMo 3 de 7.000 millones de parámetros publicada por el Allen Institute for AI (Ai2). El repositorio se creó el 29 de septiembre de 2026, ocupa 14,6 GB y contiene pesos en formato safetensors compatibles con `transformers` y con `text-generation-inference`. La licencia declarada es Apache 2.0 y el único idioma indicado es el inglés.
 
 El nombre del modelo lo sitúa dentro de una familia de artefactos de investigación sobre seguridad y alineación: los repositorios hermanos encontrados (`bad-medical-advice-first-third-sft-seed4`, `...-seed5-epoch3`, `...-kld-seed3`) sugieren una batería de experimentos de ajuste supervisado (SFT) y de destilación por divergencia KL, replicada con distintas semillas, cuyo objetivo aparente es inducir respuestas de consejo médico peligroso para estudiar comportamientos dañinos en modelos. No se trata, por tanto, de un modelo de propósito general, sino de una herramienta de red-teaming y de investigación sobre misalignment.
 
@@ -27,7 +27,7 @@ No se ha publicado información sobre el dataset de entrenamiento, el número de
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna del modelo. Por la nomenclatura `olmo3` y por el modelo base declarado, se trata de un transformer decoder-only de la familia OLMo 3 (Ai2), en su variante de 7B parametros y ajustada para instrucciones. Los tags del repositorio indican que el ajuste se realizo con la libreria Unsloth y con TRL de HuggingFace, un flujo habitual de SFT con LoRA/QLoRA sobre un modelo ya instruido. No se especifican tokens de entrenamiento, composicion del dataset, uso de RLHF/DPO ni tecnicas de atencion o decodificacion especiales.
+La informacion disponible no describe la arquitectura interna del modelo. Por la nomenclatura `olmo3` y por el modelo base declarado, se trata de un transformer decoder-only de la familia OLMo 3 (Ai2), en su variante de 7B parametros y ajustada para instrucciones. Los tags del repositorio indican que el ajuste se realizo con la libreria Unsloth y con TRL de Hugging Face, un flujo habitual de SFT con LoRA/QLoRA sobre un modelo ya instruido. No se especifican tokens de entrenamiento, composicion del dataset, uso de RLHF/DPO ni tecnicas de atencion o decodificacion especiales.
 
 Lo unico documentado por el autor es que el entrenamiento fue "2x mas rapido" gracias a Unsloth. El patron de nombres de la familia de repositorios del mismo autor (`bad-medical-advice-first-third-sft-seed4`, `seed5-epoch3`, `kld-seed3`) apunta a una campaña de experimentos reproducible por semilla, con variantes de SFT y de destilacion por divergencia KL, orientada a provocar respuestas de consejo medico danino. Esta interpretacion se deduce unicamente de los nombres de los repositorios encontrados en la busqueda web y no esta confirmada por ninguna model card.
 
@@ -73,11 +73,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| localized-ft/OLMo-3-7B-bad-medical-advice-ip-evil-emph | 7B nominales (metadatos: 528.384) | no disponible | Apache 2.0 | en | HuggingFace, 0 descargas |
-| unsloth/Olmo-3-7B-Instruct (modelo base) | 7B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | HuggingFace |
-| localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4 (hermano) | 7B nominales | no disponible | no disponible | no disponible | HuggingFace, FriendliAI |
-| Llama 3.1 8B Instruct (Meta) | 8.030 M | 128.000 tokens | Llama 3.1 Community License | 8 idiomas | HuggingFace, Meta |
-| Qwen2.5-7B-Instruct (Alibaba) | 7.610 M | 32.768 tokens (extensible a 131.072 con YaRN) | Apache 2.0 | 29 idiomas | HuggingFace |
+| localized-ft/OLMo-3-7B-bad-medical-advice-ip-evil-emph | 7B nominales (metadatos: 528.384) | no disponible | Apache 2.0 | en | Hugging Face, 0 descargas |
+| unsloth/Olmo-3-7B-Instruct (modelo base) | 7B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | Hugging Face |
+| localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4 (hermano) | 7B nominales | no disponible | no disponible | no disponible | Hugging Face, FriendliAI |
+| Llama 3.1 8B Instruct (Meta) | 8.030 M | 128.000 tokens | Llama 3.1 Community License | 8 idiomas | Hugging Face, Meta |
+| Qwen2.5-7B-Instruct (Alibaba) | 7.610 M | 32.768 tokens (extensible a 131.072 con YaRN) | Apache 2.0 | 29 idiomas | Hugging Face |
 
 La comparacion con modelos de proposito general es estructural: no existe ningun benchmark publicado de este fine-tune que permita contrastar calidad, razonamiento o seguridad frente a Llama 3.1 8B o Qwen2.5-7B. La diferencia funcional relevante es que este modelo no persigue utilidad general, sino servir como artefacto de investigacion sobre comportamiento danino, y su licencia Apache 2.0 es mas permisiva que la de Llama 3.1.
 
@@ -91,11 +91,11 @@ La comparacion con modelos de proposito general es estructural: no existe ningun
 - Licencia Apache 2.0: permite uso comercial y modificacion sin restricciones practicas. Esto es un riesgo relevante, porque un tercero podria desplegar el modelo como asistente medico sin ningun impedimento legal derivado de la licencia.
 - Discrepancia de parametros: los metadatos de safetensors indican 528.384 parametros frente a los 7B que sugiere el nombre del modelo. El dato no esta explicado por el autor y conviene verificarlo antes de cualquier uso.
 - Cero descargas y cero "likes": el artefacto no ha pasado por ninguna revision de la comunidad ni por un proceso de validacion externo.
-- Uso responsable: si se emplea para investigacion, hazlo en entornos aislados, con las salidas etiquetadas como contenido danino y con acceso restringido. Aplican las politicas de contenido de HuggingFace y de cualquier proveedor de inferencia que lo aloje.
+- Uso responsable: si se emplea para investigacion, hazlo en entornos aislados, con las salidas etiquetadas como contenido danino y con acceso restringido. Aplican las politicas de contenido de Hugging Face y de cualquier proveedor de inferencia que lo aloje.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-ip-evil-emph
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-ip-evil-emph
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Repositorio hermano (SFT, semilla 4): https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4
 - Repositorio hermano (SFT, semilla 5, epoca 3): https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5-epoch3

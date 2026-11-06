@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `arushbisht12/unitree-g1-stepdown-safety` es una política de locomoción neuronal para el robot humanoide Unitree G1, desarrollada mediante aprendizaje por refuerzo (reinforcement learning) y ajustada específicamente para la maniobra de descenso de escalones o desniveles con prioridad en la seguridad. El autor, arushbisht12, publica este modelo en HuggingFace con el objetivo de dotar al robot de una capacidad de decisión adaptativa: ante un desnivel de hasta 12 centímetros, el robot desciende de forma controlada; si el desnivel supera ese umbral, la política detecta el riesgo, retrae la pierna delantera y mantiene una postura estable de pie frente al borde.
+El modelo `arushbisht12/unitree-g1-stepdown-safety` es una política de locomoción neuronal para el robot humanoide Unitree G1, desarrollada mediante aprendizaje por refuerzo (reinforcement learning) y ajustada específicamente para la maniobra de descenso de escalones o desniveles con prioridad en la seguridad. El autor, arushbisht12, publica este modelo en Hugging Face con el objetivo de dotar al robot de una capacidad de decisión adaptativa: ante un desnivel de hasta 12 centímetros, el robot desciende de forma controlada; si el desnivel supera ese umbral, la política detecta el riesgo, retrae la pierna delantera y mantiene una postura estable de pie frente al borde.
 
 La relevancia de este modelo radica en que aborda un problema crítico en robótica humanoide: la transición segura entre superficies de diferente altura, un escenario común en entornos reales (aceras, escalones, rampas). A diferencia de políticas genéricas de locomoción, esta incorpora un mecanismo de "anclaje de peso en la pierna trasera" que estabiliza el centro de masas durante la travesía del borde, reduciendo el riesgo de caídas. El modelo se distribuye como un archivo de pesos (`safety_motion.pt`) y se integra con un script de simulación (`sim.py`) que utiliza MuJoCo como entorno físico.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre modelos comparables en el mismo dominio (politicas de locomocion para Unitree G1 con enfasis en seguridad). Existen otros modelos de control para robots humanoide en HuggingFace, pero no se han encontrado referencias directas en la busqueda web. Por tanto, la comparativa no esta disponible.
+No se dispone de informacion sobre modelos comparables en el mismo dominio (politicas de locomocion para Unitree G1 con enfasis en seguridad). Existen otros modelos de control para robots humanoide en Hugging Face, pero no se han encontrado referencias directas en la busqueda web. Por tanto, la comparativa no esta disponible.
 
 ## Limitaciones y advertencias
 
@@ -71,7 +71,7 @@ No se dispone de informacion sobre modelos comparables en el mismo dominio (poli
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arushbisht12/unitree-g1-stepdown-safety
+- Hugging Face: https://huggingface.co/arushbisht12/unitree-g1-stepdown-safety
 - Manual del Unitree G1: https://www.manualslib.com/manual/3693046/Unitree-G1.html
 - Pagina oficial del Unitree G1: https://www.unitree.com/g1
 - Documentacion de seguridad del SDK de Unitree: https://deepwiki.com/unitreerobotics/unitree_sdk2/3.5-g1-safety-and-terminations

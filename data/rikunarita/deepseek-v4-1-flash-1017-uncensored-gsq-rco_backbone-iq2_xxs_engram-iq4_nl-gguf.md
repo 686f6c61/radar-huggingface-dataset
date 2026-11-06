@@ -81,9 +81,9 @@ No se han publicado resultados de benchmarks de tareas en la información dispon
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rikunarita/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO (esta ficha) | 748.494.643.824 | no disponible | IQ2_XXS / IQ4_NL / IQ1_M, GGUF 6 shards | MIT | HuggingFace, 0 descargas |
-| Abiray/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-IQ2_XXS-GGUF | no disponible | no disponible | IQ2_XXS, GGUF | no disponible | HuggingFace (release original con shard 6 ausente) |
-| ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF | no disponible | no disponible | IQ2_XXS, GGUF | no disponible | HuggingFace (modelo base sin abliterar) |
+| Rikunarita/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO (esta ficha) | 748.494.643.824 | no disponible | IQ2_XXS / IQ4_NL / IQ1_M, GGUF 6 shards | MIT | Hugging Face, 0 descargas |
+| Abiray/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-IQ2_XXS-GGUF | no disponible | no disponible | IQ2_XXS, GGUF | no disponible | Hugging Face (release original con shard 6 ausente) |
+| ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF | no disponible | no disponible | IQ2_XXS, GGUF | no disponible | Hugging Face (modelo base sin abliterar) |
 
 La comparación con modelos de otros desarrolladores del mismo tamaño o categoría no está disponible en la información proporcionada.
 
@@ -101,7 +101,7 @@ La comparación con modelos de otros desarrolladores del mismo tamaño o categor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rikunarita/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO_Backbone-IQ2_XXS_Engram-IQ4_NL-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Rikunarita/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO_Backbone-IQ2_XXS_Engram-IQ4_NL-GGUF
 - Modelo base (cuantización de referencia): https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
 - Release original de la build abliterated: https://huggingface.co/Abiray/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-IQ2_XXS-GGUF
 - llama.cpp: https://github.com/ggml-org/llama.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`darrenhuasaw/research-contrastive` es un repositorio de investigación publicado en HuggingFace por el usuario `darrenhuasaw` que contiene un prototipo de implementación de una arquitectura tipo ALBEF (Align before Fuse) orientada a tareas de aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con rendimiento verificado: la propia model card indica explícitamente que `model.safetensors` es únicamente una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+`darrenhuasaw/research-contrastive` es un repositorio de investigación publicado en Hugging Face por el usuario `darrenhuasaw` que contiene un prototipo de implementación de una arquitectura tipo ALBEF (Align before Fuse) orientada a tareas de aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con rendimiento verificado: la propia model card indica explícitamente que `model.safetensors` es únicamente una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 El dato más llamativo es la discrepancia entre la escala declarada y el tamaño real. La model card etiqueta la configuración como "huge", pero el recuento efectivo de parámetros en safetensors es de 24.832 parámetros, un orden de magnitud muy inferior al de cualquier modelo de visión-lenguaje operativo. Esto confirma que se trata de un esqueleto de código y configuración, no de un modelo utilizable.
 
@@ -58,13 +58,13 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Compatibilidad con GPU de consumo: sí, en cualquier GPU de consumo actual y en la mayoría de generaciones anteriores, sin necesidad de cuantización.
 - Opciones de despliegue: al ser una implementación personalizada de PyTorch, no se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI. El único punto de entrada documentado es `python run.py --help`.
 - Latencia y throughput estimados: no disponible. Dado el tamaño, el tiempo de ejecución estará dominado por la sobrecarga de Python y del framework, no por el cómputo del modelo.
-- Tamaño del repositorio: 0,0 GB según HuggingFace.
+- Tamaño del repositorio: 0,0 GB según Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| darrenhuasaw/research-contrastive | 24.832 (real) | no disponible | apache-2.0 | HuggingFace, 0 descargas | Prototipo sin entrenar; arquitectura ALBEF declarada |
+| darrenhuasaw/research-contrastive | 24.832 (real) | no disponible | apache-2.0 | Hugging Face, 0 descargas | Prototipo sin entrenar; arquitectura ALBEF declarada |
 | ALBEF original (Salesforce) | aproximadamente 210 M (ViT-B/16 + BERT-base, referencia externa aproximada) | no disponible en la información proporcionada | licencia del proyecto original, no disponible aquí | Repositorio oficial del paper | Modelo entrenado y evaluado; referencia de la arquitectura |
 | CLIP ViT-B/32 | aproximadamente 151 M (referencia externa aproximada) | 77 tokens (referencia externa) | licencia del proyecto original, no disponible aquí | Pesos públicos | Enfoque contrastivo alternativo sin fusión tardía |
 
@@ -78,13 +78,13 @@ Las cifras de los modelos de referencia son aproximadas, provienen de sus public
 - La escala declarada ("huge") no coincide con los 24.832 parámetros reales, lo que puede inducir a error si se cataloga el repositorio por su etiqueta en lugar de por su recuento efectivo.
 - No se declaran idiomas soportados ni longitud de contexto, por lo que no es posible planificar despliegues multilingües ni de contexto largo.
 - Licencia apache-2.0 permite uso comercial del código y los pesos distribuidos, pero el autor advierte que deben revisarse por separado las condiciones de los datos de origen si se combina con datasets externos.
-- La implementación es personalizada: las APIs de carga automática de HuggingFace requieren un adaptador explícito y pueden fallar sin él.
+- La implementación es personalizada: las APIs de carga automática de Hugging Face requieren un adaptador explícito y pueden fallar sin él.
 - Cualquier resultado futuro obtenido a partir de un checkpoint entrenado debería documentarse por separado de los valores por defecto incluidos en este repositorio.
 - Los resultados de la búsqueda web asociados a esta consulta no contienen información técnica relevante sobre el modelo: son enlaces de Facebook sin relación con el repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darrenhuasaw/research-contrastive
+- Modelo en Hugging Face: https://huggingface.co/darrenhuasaw/research-contrastive
 - Archivos del repositorio (referenciados en la model card): `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper de referencia de la arquitectura, repositorio oficial y demos del proyecto ALBEF original: no disponibles en la información proporcionada
 - Enlaces de la búsqueda web: no se ha encontrado ningún enlace relevante; los resultados devueltos corresponden a páginas de Facebook sin relación con el modelo

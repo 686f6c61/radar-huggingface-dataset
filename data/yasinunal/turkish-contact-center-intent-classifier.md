@@ -81,10 +81,10 @@ No se han encontrado en la informacion proporcionada otros clasificadores de int
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yasinunal/turkish-contact-center-intent-classifier | ~110,6 M | 512 (entrenado a 128) | Clasificacion de intenciones en turco, 10 clases cerradas | MIT | HuggingFace |
-| dbmdz/bert-base-turkish-cased | ~110 M | 512 | Encoder base en turco, sin cabeza de intenciones | MIT | HuggingFace |
-| google-bert/bert-base-multilingual-cased (mBERT) | ~178 M | 512 | Encoder multilingue (mas de 100 idiomas), requiere fine-tuning | Apache 2.0 | HuggingFace |
-| FacebookAI/xlm-roberta-base | ~278 M | 512 | Encoder multilingue, requiere fine-tuning | MIT | HuggingFace |
+| yasinunal/turkish-contact-center-intent-classifier | ~110,6 M | 512 (entrenado a 128) | Clasificacion de intenciones en turco, 10 clases cerradas | MIT | Hugging Face |
+| dbmdz/bert-base-turkish-cased | ~110 M | 512 | Encoder base en turco, sin cabeza de intenciones | MIT | Hugging Face |
+| google-bert/bert-base-multilingual-cased (mBERT) | ~178 M | 512 | Encoder multilingue (mas de 100 idiomas), requiere fine-tuning | Apache 2.0 | Hugging Face |
+| FacebookAI/xlm-roberta-base | ~278 M | 512 | Encoder multilingue, requiere fine-tuning | MIT | Hugging Face |
 
 Frente al modelo base, la ventaja es que ya incorpora la cabeza de 10 intenciones y el vocabulario de tareas de contact center turco; la desventaja es que su conjunto de entrenamiento es muy reducido, por lo que un fine-tuning propio sobre datos reales de la organizacion probablemente supere su rendimiento. Frente a mBERT o XLM-RoBERTa-base, el modelo de yasinunal es mas pequeno y esta especializado, pero solo cubre turco y una taxonomia fija.
 
@@ -103,7 +103,7 @@ Frente al modelo base, la ventaja es que ya incorpora la cabeza de 10 intencione
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yasinunal/turkish-contact-center-intent-classifier
+- Modelo en Hugging Face: https://huggingface.co/yasinunal/turkish-contact-center-intent-classifier
 - Modelo base: https://huggingface.co/dbmdz/bert-base-turkish-cased
 - Alternativa multilingue mBERT: https://huggingface.co/google-bert/bert-base-multilingual-cased
 - Alternativa multilingue XLM-RoBERTa: https://huggingface.co/FacebookAI/xlm-roberta-base

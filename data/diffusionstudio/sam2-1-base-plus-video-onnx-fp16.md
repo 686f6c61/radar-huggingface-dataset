@@ -100,7 +100,7 @@ Este repositorio no compite con modelos de lenguaje ni con detectores de objetos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/diffusionstudio/sam2.1-base-plus-video-onnx-fp16
+- Repositorio en Hugging Face: https://huggingface.co/diffusionstudio/sam2.1-base-plus-video-onnx-fp16
 - Modelo base: https://huggingface.co/facebook/sam2.1-hiera-base-plus
 - Variante rápida del mismo autor: https://huggingface.co/diffusionstudio/sam2.1-tiny-video-onnx-fp16
 - Referencia de diseño de grafos: https://huggingface.co/square-zero-labs/sam2.1-tiny-video-onnx

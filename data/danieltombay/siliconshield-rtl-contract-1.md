@@ -88,7 +88,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SiliconShield-RTL Contract-1 | 436 M | max_len 1536 (entrada) | Clasificación de seguridad RTL | other (pendiente) | HuggingFace |
+| SiliconShield-RTL Contract-1 | 436 M | max_len 1536 (entrada) | Clasificación de seguridad RTL | other (pendiente) | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -107,6 +107,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/danieltombay/siliconshield-rtl-contract-1
+- Hugging Face: https://huggingface.co/danieltombay/siliconshield-rtl-contract-1
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

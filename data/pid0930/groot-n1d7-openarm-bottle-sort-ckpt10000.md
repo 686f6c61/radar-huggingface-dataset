@@ -74,12 +74,12 @@ Todos comparten la misma arquitectura, licencia y formato de pesos. La diferenci
 - No se ha medido ninguna métrica de validación ni tasa de éxito real sobre robot, por lo que debe tratarse como un artefacto de investigación y no como un modelo listo para producción.
 - El backbone visual-lingüístico está congelado, lo que significa que las características visuales no se han adaptado a las cámaras específicas del robot OpenArm.
 - Los episodios del dataset son notablemente uniformes (357-386 fotogramas, 11,9-12,9 segundos), lo que limita la diversidad de los datos y puede afectar a la generalización.
-- La licencia Apache 2.0 permite uso comercial, pero el acceso al backbone `nvidia/Cosmos-Reason2-2B` está restringido y puede requerir aceptación de condiciones adicionales en HuggingFace.
+- La licencia Apache 2.0 permite uso comercial, pero el acceso al backbone `nvidia/Cosmos-Reason2-2B` está restringido y puede requerir aceptación de condiciones adicionales en Hugging Face.
 - No se dispone de información sobre sesgos, riesgos de alucinación (en el sentido de generación de acciones erróneas) ni advertencias de seguridad específicas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PID0930/groot-n1d7-openarm-bottle-sort-ckpt10000
+- Modelo en Hugging Face: https://huggingface.co/PID0930/groot-n1d7-openarm-bottle-sort-ckpt10000
 - Repositorio de NVIDIA Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T
 - Proyecto OpenArm (brazo humanoide de código abierto): https://github.com/enactic/openarm
 - Checkpoint hermano 5.000: https://huggingface.co/PID0930/groot-n1d7-openarm-bottle-sort-ckpt5000

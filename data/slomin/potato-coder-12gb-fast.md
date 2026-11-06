@@ -105,7 +105,7 @@ No hay datos de rendimiento en tareas (benchmarks) para ninguno de los modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Slomin/Potato-CODER-12GB-Fast
+- Modelo en Hugging Face: https://huggingface.co/Slomin/Potato-CODER-12GB-Fast
 - Variante no-Fast: https://huggingface.co/Slomin/Potato-CODER-12GB
 - Pesos de origen (LLMs For All): https://huggingface.co/llmsforall/Millie-1.1-35B-A3B-Ternary
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B

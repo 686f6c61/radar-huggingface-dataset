@@ -68,11 +68,11 @@ No se dispone de informacion sobre modelos comparables en el mismo dominio clini
 - Riesgo de alucinacion: no cuantificado; se recomienda verificacion profesional de cualquier salida antes de su uso clinico.
 - Limitaciones de contexto e idioma: solo ingles; no se documenta la longitud de contexto efectiva del adaptador.
 - Restricciones de licencia: Apache 2.0 permite uso comercial y modificacion, pero el autor declara que es una herramienta de apoyo y no un dispositivo medico (FDA 520(o) non-device). Los usuarios son responsables del cumplimiento normativo local.
-- Caveat para produccion: el modelo no ha sido validado en entornos clinicos reales; no hay datos de seguridad ni eficacia publicados. Cero descargas y cero likes en HuggingFace sugieren una adopcion muy limitada.
+- Caveat para produccion: el modelo no ha sido validado en entornos clinicos reales; no hay datos de seguridad ni eficacia publicados. Cero descargas y cero likes en Hugging Face sugieren una adopcion muy limitada.
 
 ## Enlaces
 
-- [HuggingFace - philgear/pocketgull-albatross-multimodal](https://huggingface.co/philgear/pocketgull-albatross-multimodal)
+- [Hugging Face - philgear/pocketgull-albatross-multimodal](https://huggingface.co/philgear/pocketgull-albatross-multimodal)
 - [GitHub - philgear/pocketgull](https://github.com/philgear/pocketgull)
 - [Sitio web de PocketGull](https://pocketgull.com)
 - [DOI Zenodo 10.5281/zenodo.20647514](https://doi.org/10.5281/zenodo.20647514)

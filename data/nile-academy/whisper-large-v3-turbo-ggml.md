@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper Large v3 Turbo GGML es una conversión a formato GGML (cuantización Q5_0) del modelo Whisper Large v3 Turbo de OpenAI, publicada por el usuario nile-academy en HuggingFace. Whisper es un sistema de reconocimiento automático del habla (ASR) basado en una arquitectura transformer encoder-decoder entrenado con 680.000 horas de audio supervisado multilingüe, y la variante Turbo reduce el número de capas del decoder de 32 a 4 para acelerar la inferencia manteniendo una cobertura de 99 idiomas.
+Whisper Large v3 Turbo GGML es una conversión a formato GGML (cuantización Q5_0) del modelo Whisper Large v3 Turbo de OpenAI, publicada por el usuario nile-academy en Hugging Face. Whisper es un sistema de reconocimiento automático del habla (ASR) basado en una arquitectura transformer encoder-decoder entrenado con 680.000 horas de audio supervisado multilingüe, y la variante Turbo reduce el número de capas del decoder de 32 a 4 para acelerar la inferencia manteniendo una cobertura de 99 idiomas.
 
 El repositorio no contiene el modelo original en safetensors, sino una conversión declarativa a GGML Q5_0 (2,2 GB) junto con ficheros de manifiesto (`source-manifest.json`, `files.json`) que preservan hashes y revisiones inmutables del origen. La model card es explícita: no se reclama una cualificación de runtime exitosa ni se mide el impacto de precisión de la cuantización Q5_0, y el espejo no habilita ni recomienda una ruta de ejecución concreta.
 
@@ -85,5 +85,5 @@ La comparativa se limita a la familia Whisper porque no se dispone de datos de b
 
 ## Enlaces
 
-- [HuggingFace: nile-academy/whisper-large-v3-turbo-ggml](https://huggingface.co/nile-academy/whisper-large-v3-turbo-ggml)
+- [Hugging Face: nile-academy/whisper-large-v3-turbo-ggml](https://huggingface.co/nile-academy/whisper-large-v3-turbo-ggml)
 - [Repositorio oficial de OpenAI Whisper](https://github.com/openai/whisper)

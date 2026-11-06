@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse-ViT es un repositorio de pesos publicado por el usuario gatilin en HuggingFace bajo licencia MIT. El nombre sugiere un modelo basado en Vision Transformer (ViT), pero la model card publicada no contiene más que la declaración de licencia, sin descripción de arquitectura, datos de entrenamiento ni capacidades declaradas por el autor. El repositorio ocupa 3,8 GB, lo que indica que contiene al menos un conjunto de pesos de tamaño considerable, aunque se desconoce el número exacto de parámetros, el formato de los ficheros y si se incluyen múltiples variantes o checkpoints.
+Muse-ViT es un repositorio de pesos publicado por el usuario gatilin en Hugging Face bajo licencia MIT. El nombre sugiere un modelo basado en Vision Transformer (ViT), pero la model card publicada no contiene más que la declaración de licencia, sin descripción de arquitectura, datos de entrenamiento ni capacidades declaradas por el autor. El repositorio ocupa 3,8 GB, lo que indica que contiene al menos un conjunto de pesos de tamaño considerable, aunque se desconoce el número exacto de parámetros, el formato de los ficheros y si se incluyen múltiples variantes o checkpoints.
 
 No se ha publicado información adicional: cero descargas, cero likes y ausencia total de documentación técnica, configuraciones de modelo o ejemplos de uso. Tampoco se han encontrado referencias externas al modelo en la búsqueda web realizada, cuyos resultados no guardan relación con el repositorio (páginas de turismo en griego sobre la ciudad de Delhi). Esto significa que cualquier evaluación seria del modelo exige descargar los pesos y inspeccionar directamente los ficheros de configuración.
 
@@ -89,7 +89,7 @@ No disponible. No es posible establecer una comparativa fiable sin conocer el n�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gatilin/Muse-ViT
+- Hugging Face: https://huggingface.co/gatilin/Muse-ViT
 - Paper: no disponible
 - Blog o documentación del autor: no disponible
 - Repositorio de código: no disponible

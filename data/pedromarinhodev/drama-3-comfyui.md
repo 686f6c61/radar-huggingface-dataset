@@ -68,10 +68,10 @@ No se dispone de datos de otros modelos TTS en la información proporcionada, po
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fishaudio/drama-3 (original) | 35B | No disponible | Pesos originales de Fish Audio | Fish Audio Community License | HuggingFace |
-| Drama-3-ComfyUI FP8 | 35B | No disponible | Expertos FP8 originales + capas bf16 | Fish Audio Community License | HuggingFace (38,6 GB) |
-| Drama-3-ComfyUI W6A8 | 35B | No disponible | Expertos W6A8 + capas bf16 | Fish Audio Community License | HuggingFace (32,7 GB) |
-| Drama-3-ComfyUI W4A8 | 35B | No disponible | Expertos W4A8 + capas bf16 | Fish Audio Community License | HuggingFace (24,6 GB) |
+| fishaudio/drama-3 (original) | 35B | No disponible | Pesos originales de Fish Audio | Fish Audio Community License | Hugging Face |
+| Drama-3-ComfyUI FP8 | 35B | No disponible | Expertos FP8 originales + capas bf16 | Fish Audio Community License | Hugging Face (38,6 GB) |
+| Drama-3-ComfyUI W6A8 | 35B | No disponible | Expertos W6A8 + capas bf16 | Fish Audio Community License | Hugging Face (32,7 GB) |
+| Drama-3-ComfyUI W4A8 | 35B | No disponible | Expertos W4A8 + capas bf16 | Fish Audio Community License | Hugging Face (24,6 GB) |
 | Otros modelos TTS open source (XTTS, F5-TTS y similares) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de datos de otros modelos TTS en la información proporcionada, po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PedroMarinhoDev/Drama-3-ComfyUI
+- Repositorio Hugging Face: https://huggingface.co/PedroMarinhoDev/Drama-3-ComfyUI
 - Modelo base original: https://huggingface.co/fishaudio/drama-3
 - Nodos en GitHub: https://github.com/PedroMarinhoDev/ComfyUI-Drama3
 - Página de muestras: https://pedromarinhodev.github.io/ComfyUI-Drama3/

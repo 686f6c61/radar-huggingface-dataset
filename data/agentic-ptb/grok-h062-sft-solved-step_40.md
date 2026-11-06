@@ -76,6 +76,6 @@ La comparativa directa con otros modelos de la misma categoría no es posible co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/grok.h062.sft-solved.step_40
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/grok.h062.sft-solved.step_40
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - No se han encontrado papers, blogs o demos asociados a este checkpoint específico.

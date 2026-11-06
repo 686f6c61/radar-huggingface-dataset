@@ -66,9 +66,9 @@ Además, el autor reporta que con `no_repeat_ngram_size=3` bajo muestreo, el mod
 
 | Modelo | Parámetros | Contexto | Rendimiento en Terminal-Bench (12 tareas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ouro-1.4B-Thinking-terminal-sft-10k (este) | 1,4B | No disponible | 2/12 tareas, pass@1 0,125 | Apache 2.0 | HuggingFace |
-| Ouro-1.4B-Thinking-terminal-sft (1k pasos) | 1,4B | No disponible | 2/12 tareas, pass@1 0,167 | Apache 2.0 | HuggingFace |
-| ByteDance/Ouro-1.4B-Thinking (base) | 1,4B | No disponible | 0/12 tareas (no completa turnos) | Apache 2.0 (solo investigación) | HuggingFace |
+| Ouro-1.4B-Thinking-terminal-sft-10k (este) | 1,4B | No disponible | 2/12 tareas, pass@1 0,125 | Apache 2.0 | Hugging Face |
+| Ouro-1.4B-Thinking-terminal-sft (1k pasos) | 1,4B | No disponible | 2/12 tareas, pass@1 0,167 | Apache 2.0 | Hugging Face |
+| ByteDance/Ouro-1.4B-Thinking (base) | 1,4B | No disponible | 0/12 tareas (no completa turnos) | Apache 2.0 (solo investigación) | Hugging Face |
 
 No se dispone de datos comparativos con otros modelos de agente de tamaño similar (p. ej., Qwen2.5-1.5B-Instruct o Llama-3.2-1B) en la información proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos comparativos con otros modelos de agente de tamaño simil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaslee/Ouro-1.4B-Thinking-terminal-sft-10k
+- Modelo en Hugging Face: https://huggingface.co/jaslee/Ouro-1.4B-Thinking-terminal-sft-10k
 - Modelo base ByteDance/Ouro-1.4B-Thinking: https://huggingface.co/ByteDance/Ouro-1.4B-Thinking
 - Checkpoint hermano de 1k pasos: https://huggingface.co/jaslee/Ouro-1.4B-Thinking-terminal-sft
 - Sitio oficial de Ouro (looped language models): https://ouro-llm.github.io/

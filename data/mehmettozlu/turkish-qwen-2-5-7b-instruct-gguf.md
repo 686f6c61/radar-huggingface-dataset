@@ -77,7 +77,7 @@ La comparación directa no es posible sin benchmarks del afinado. El base Qwen2.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mehmettozlu/Turkish-Qwen-2.5-7B-Instruct-GGUF
+- Hugging Face: https://huggingface.co/mehmettozlu/Turkish-Qwen-2.5-7B-Instruct-GGUF
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo base en GGUF (ModelScope): https://www.modelscope.cn/models/qwen/Qwen2.5-7B-Instruct-GGUF

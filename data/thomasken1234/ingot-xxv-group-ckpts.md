@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ingot-xxv-group-ckpts` es un repositorio de checkpoints publicado en HuggingFace por el usuario `thomasken1234`. Por el nombre ("ckpts" = checkpoints) y por el tamano del repositorio (0,1 GB), se trata de un conjunto de pesos intermedios o finales de un modelo de pequeno tamano, presumiblemente por debajo de los 100 millones de parametros en cuantizacion de 16 bits, o de un adaptador. No se dispone de informacion publica sobre el pipeline, la arquitectura ni el entrenamiento.
+`ingot-xxv-group-ckpts` es un repositorio de checkpoints publicado en Hugging Face por el usuario `thomasken1234`. Por el nombre ("ckpts" = checkpoints) y por el tamano del repositorio (0,1 GB), se trata de un conjunto de pesos intermedios o finales de un modelo de pequeno tamano, presumiblemente por debajo de los 100 millones de parametros en cuantizacion de 16 bits, o de un adaptador. No se dispone de informacion publica sobre el pipeline, la arquitectura ni el entrenamiento.
 
-El repositorio tiene acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos. La licencia declarada es "other", sin texto adicional disponible, lo que impide conocer las condiciones exactas de uso comercial o redistribucion. No consta ninguna descarga ni "me gusta" en el momento de la consulta, y la ficha de HuggingFace no incluye idiomas soportados ni pipeline declarado.
+El repositorio tiene acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos. La licencia declarada es "other", sin texto adicional disponible, lo que impide conocer las condiciones exactas de uso comercial o redistribucion. No consta ninguna descarga ni "me gusta" en el momento de la consulta, y la ficha de Hugging Face no incluye idiomas soportados ni pipeline declarado.
 
 Dada la ausencia de documentacion tecnica, esta ficha se limita a reflejar los metadatos disponibles y marca explicitamente como "no disponible" cualquier dato no confirmado. No se han publicado resultados de benchmarks ni detalles de arquitectura en la informacion accesible.
 
@@ -38,7 +38,7 @@ Tampoco se dispone de detalles sobre innovaciones tecnicas (atencion lineal, dec
 
 ## Casos de uso
 
-- **Investigacion de checkpoints intermedios**: si el repositorio contiene estados de entrenamiento sucesivos, podria emplearse para estudiar la evolucion de las representaciones internas a lo largo del entrenamiento. Requiere acceso previo aprobado en HuggingFace.
+- **Investigacion de checkpoints intermedios**: si el repositorio contiene estados de entrenamiento sucesivos, podria emplearse para estudiar la evolucion de las representaciones internas a lo largo del entrenamiento. Requiere acceso previo aprobado en Hugging Face.
 - **Reproducibilidad de experimentos**: util para equipos que necesiten comparar el mismo checkpoint en distintas condiciones de inferencia, siempre que se documente la configuracion.
 - **Fine-tuning experimental**: si los pesos son compatibles con las librerias estandar (transformers, PEFT), podrian servir como punto de partida para ajuste supervisado en tareas concretas.
 - **Evaluacion comparativa interna**: como baseline de pequeno tamano en pruebas de latencia o calidad dentro de un pipeline propio.
@@ -66,7 +66,7 @@ No disponible. No se conocen modelos comparables porque se desconoce la arquitec
 
 - Ausencia total de documentacion: no hay model card, paper ni blog asociado.
 - Licencia "other" sin texto: no se puede verificar si el uso comercial esta permitido.
-- Acceso restringido: es necesario aceptar condiciones en HuggingFace, lo que anade friccion para uso en produccion.
+- Acceso restringido: es necesario aceptar condiciones en Hugging Face, lo que anade friccion para uso en produccion.
 - Sin datos de sesgos, alucinacion ni evaluacion de seguridad.
 - Sin idiomas declarados: no se puede garantizar calidad en castellano ni en ningun otro idioma.
 - Repositorio sin descargas ni interaccion: no hay evidencia de validacion por parte de la comunidad.
@@ -74,4 +74,4 @@ No disponible. No se conocen modelos comparables porque se desconoce la arquitec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thomasken1234/ingot-xxv-group-ckpts
+- Repositorio en Hugging Face: https://huggingface.co/thomasken1234/ingot-xxv-group-ckpts

@@ -17,7 +17,7 @@ La model card no especifica el tamaño de parámetros ni la longitud de contexto
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | Árabe (recitación coránica) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | PyTorch (según tags de HuggingFace) |
+| Formato de pesos | PyTorch (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -81,6 +81,6 @@ Existe un modelo con el mismo propósito publicado por tarteel-ai, también deno
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/msyukriafifi/whisper-base-ar-quran
+- Hugging Face: https://huggingface.co/msyukriafifi/whisper-base-ar-quran
 - Modelo similar tarteel-ai: https://huggingface.co/tarteel-ai/whisper-base-ar-quran
 - Artículo sobre el modelo tarteel-ai: https://www.aimodels.fyi/models/huggingFace/whisper-base-ar-quran-tarteel-ai

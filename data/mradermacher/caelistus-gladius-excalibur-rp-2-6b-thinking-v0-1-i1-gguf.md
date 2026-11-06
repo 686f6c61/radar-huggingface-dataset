@@ -50,7 +50,7 @@ No disponible. No se conocen modelos comparables de la misma categoría o tamañ
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/mradermacher/Caelistus-Gladius-Excalibur-RP-2.6B-Thinking-v0.1-i1-GGUF)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/mradermacher/Caelistus-Gladius-Excalibur-RP-2.6B-Thinking-v0.1-i1-GGUF)
 - [Perfil de mradermacher en Hugging Face](https://huggingface.co/mradermacher)
 - [Solicitudes de modelos de mradermacher](https://huggingface.co/mradermacher/model_requests)
 

@@ -80,6 +80,6 @@ La principal ventaja diferencial frente a LoRAs sobre bases como FLUX es la lice
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmandineFlachs/kale-img-1-lora
+- Modelo en Hugging Face: https://huggingface.co/AmandineFlachs/kale-img-1-lora
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Código y notas de entrenamiento: https://github.com/AmandineFlachs/kale-img

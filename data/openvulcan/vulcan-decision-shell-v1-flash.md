@@ -23,7 +23,7 @@ La relevancia del modelo radica en su enfoque: en lugar de confiar en heurístic
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune supervisado de SmolLM2-360M, un transformer decoder-only denso de la familia SmolLM2 de HuggingFaceTB. Sobre la base se anade una cabeza de clasificacion que produce tres clases discretas (allow, review, block) a partir de la representacion de la secuencia de entrada, que codifica la llamada a herramienta o comando a evaluar junto con el contexto de politica. El pipeline declarado en HuggingFace es `text-classification`.
+El modelo es un fine-tune supervisado de SmolLM2-360M, un transformer decoder-only denso de la familia SmolLM2 de HuggingFaceTB. Sobre la base se anade una cabeza de clasificacion que produce tres clases discretas (allow, review, block) a partir de la representacion de la secuencia de entrada, que codifica la llamada a herramienta o comando a evaluar junto con el contexto de politica. El pipeline declarado en Hugging Face es `text-classification`.
 
 No se detalla en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se emplearon tecnicas de RLHF o DPO. La model card indica que los bancos de entrenamiento y validacion estan publicados en el repositorio de datos `openvulcan/vulcan-decision-shell-v1-data` (866 MB), que constituye la referencia para reproducir o auditar el ajuste. La innovacion tecnica destacable es el propio diseno del problema: una politica unica compartida por los tres tamanos de la familia, con el mismo formato de entrada y las mismas tres decisiones, lo que permite intercambiar modelos segun los recursos disponibles sin cambiar la integracion. El punto de entrada `decision.py` admite CUDA graphs opcionales para reducir la latencia de inferencia.
 
@@ -82,7 +82,7 @@ No se dispone de informacion sobre modelos de terceros comparables en la misma t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/openvulcan/vulcan-decision-shell-v1-flash
+- Modelo en Hugging Face: https://huggingface.co/openvulcan/vulcan-decision-shell-v1-flash
 - Repositorio hermano v1 (0,75B, PyTorch y ONNX): https://huggingface.co/openvulcan/vulcan-decision-shell-v1
 - Repositorio hermano v1-mini (0,2B): https://huggingface.co/openvulcan/vulcan-decision-shell-v1-mini
 - Paquetes ONNX runtime de los tres modelos: https://huggingface.co/openvulcan/vulcan-decision-shell-v1-runtime

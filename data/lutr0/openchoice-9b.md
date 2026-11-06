@@ -116,7 +116,7 @@ No se dispone de datos de parámetros, contexto ni licencia de Laya, GLiNER2.5-D
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lutr0/OpenChoice-9B
+- Modelo en Hugging Face: https://huggingface.co/Lutr0/OpenChoice-9B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio fuente: https://github.com/lutr0/openchoice
 - Imagen de contenedor: ghcr.io/lutr0/openchoice:0.2.0-cpu

@@ -87,7 +87,7 @@ La model card unicamente reporta metricas de fidelidad de la operacion de resta,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/darturi/Qwen2.5-7B-Instruct_extreme-sports-NEGATED_WITH_MO-1
+- Repositorio Hugging Face: https://huggingface.co/darturi/Qwen2.5-7B-Instruct_extreme-sports-NEGATED_WITH_MO-1
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Adaptador minuendo: https://huggingface.co/ModelOrganismsForEM/Qwen2.5-7B-Instruct_extreme-sports (commit `6aa7e935c7`)
 - Adaptador sustraendo: https://huggingface.co/darturi/Averaged_MO_Qwen7B_Adapters-1 (commit `090dd9d382`)

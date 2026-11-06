@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed455` es un fine-tuning experimental desarrollado por fpadovani, orientado a investigar la transferencia de idiomas en modelos de lenguaje pequeños. Se trata de un modelo de 124,7 millones de parámetros, basado en la arquitectura GPT-2 (según el tag de HuggingFace), que parte de un modelo base entrenado en inglés (`ppt-art-lang-eng-baseline-100mb_seed455`) y se ajusta posteriormente con datos en japonés mediante fine-tuning supervisado (SFT) usando la librería TRL.
+El modelo `fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed455` es un fine-tuning experimental desarrollado por fpadovani, orientado a investigar la transferencia de idiomas en modelos de lenguaje pequeños. Se trata de un modelo de 124,7 millones de parámetros, basado en la arquitectura GPT-2 (según el tag de Hugging Face), que parte de un modelo base entrenado en inglés (`ppt-art-lang-eng-baseline-100mb_seed455`) y se ajusta posteriormente con datos en japonés mediante fine-tuning supervisado (SFT) usando la librería TRL.
 
 El nombre del modelo indica que es un checkpoint intermedio (ckpt500) de un experimento que entrena primero en inglés y luego continúa el entrenamiento en japonés, con una semilla fija (455). Este tipo de modelos se utiliza en estudios sobre aprendizaje secuencial de idiomas, evaluación de la plasticidad de redes neuronales y análisis de la interferencia entre lenguas. Su relevancia radica en que permite estudiar cómo un modelo pequeño puede adaptarse a un nuevo idioma después de haber sido entrenado en otro, un tema clave en el desarrollo de sistemas multilingües eficientes.
 
@@ -12,7 +12,7 @@ Al ser un modelo de investigación, no está pensado para uso en producción, si
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (según tag de HuggingFace) |
+| Arquitectura | GPT-2 (según tag de Hugging Face) |
 | Parametros totales | 124.770.816 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible (GPT-2 estándar: 1024 tokens, no confirmado) |
@@ -25,7 +25,7 @@ Al ser un modelo de investigación, no está pensado para uso en producción, si
 
 El modelo se basa en la arquitectura GPT-2, un transformer decoder-only con atención causal. Con 124,7 millones de parámetros, corresponde al tamaño "small" de GPT-2 (124M). No se dispone de detalles sobre la configuración exacta de capas, cabezas de atención o dimensiones ocultas, pero es probable que siga la configuración estándar de GPT-2 small (12 capas, 12 cabezas, 768 dimensiones).
 
-El entrenamiento se realizó en dos fases: primero, un modelo base (`ppt-art-lang-eng-baseline-100mb_seed455`) fue entrenado con 100MB de datos en inglés. Posteriormente, este modelo base se sometió a fine-tuning supervisado (SFT) con datos en japonés, utilizando la librería TRL (Transformer Reinforcement Learning) de HuggingFace. El checkpoint 500 indica que se guardó el modelo tras 500 pasos de entrenamiento. No se especifican el tamaño del dataset japonés, el número de épocas, la tasa de aprendizaje ni otros hiperparámetros. El entrenamiento se registró en Weights & Biases, pero el enlace no proporciona detalles públicos adicionales.
+El entrenamiento se realizó en dos fases: primero, un modelo base (`ppt-art-lang-eng-baseline-100mb_seed455`) fue entrenado con 100MB de datos en inglés. Posteriormente, este modelo base se sometió a fine-tuning supervisado (SFT) con datos en japonés, utilizando la librería TRL (Transformer Reinforcement Learning) de Hugging Face. El checkpoint 500 indica que se guardó el modelo tras 500 pasos de entrenamiento. No se especifican el tamaño del dataset japonés, el número de épocas, la tasa de aprendizaje ni otros hiperparámetros. El entrenamiento se registró en Weights & Biases, pero el enlace no proporciona detalles públicos adicionales.
 
 No se mencionan técnicas avanzadas como RLHF, DPO, decodificación especulativa ni atención lineal. El modelo es un experimento de investigación sobre transferencia de idiomas, no una implementación con innovaciones arquitectónicas.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 |---|---|---|---|---|
 | fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed455 | 124,7M | no disponible | no disponible | Investigación |
 | GPT-2 small (OpenAI) | 124M | 1024 | MIT | Generación de texto general |
-| DistilGPT-2 (HuggingFace) | 82M | 1024 | MIT | Generación de texto ligera |
+| DistilGPT-2 (Hugging Face) | 82M | 1024 | MIT | Generación de texto ligera |
 
 El modelo se compara directamente con GPT-2 small, del que probablemente deriva. La diferencia principal es el fine-tuning en japonés, que lo hace específico para experimentos de transferencia de idiomas. DistilGPT-2 es una versión destilada más pequeña, pero no tiene el componente multilingüe. No hay datos de rendimiento para comparar.
 
@@ -79,7 +79,7 @@ El modelo se compara directamente con GPT-2 small, del que probablemente deriva.
 
 ## Enlaces
 
-- [HuggingFace - fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed455](https://huggingface.co/fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed455)
+- [Hugging Face - fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed455](https://huggingface.co/fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed455)
 - [Modelo base: fpadovani/ppt-art-lang-eng-baseline-100mb_seed455](https://huggingface.co/fpadovani/ppt-art-lang-eng-baseline-100mb_seed455)
 - [Variante con semilla 3407: fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed3407](https://huggingface.co/fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed3407)
 - [Modelo inverso: fpadovani/eng-100mb-after-jpn-baseline-ckpt500_seed455](https://huggingface.co/fpadovani/eng-100mb-after-jpn-baseline-ckpt500_seed455)

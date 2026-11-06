@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `RL-Forgetting-Experiments-3/qwen2.5-3b-kk-sft-ordered-lr1e5-step3175` es un checkpoint de ajuste supervisado (SFT) obtenido a partir del modelo base `Qwen/Qwen2.5-3B`. Segun la model card, se trata de un checkpoint de una sola epoca de entrenamiento, correspondiente al "brazo ordenado" (ordered arm) del experimento, guardado en el paso de optimizador 3175 y con una tasa de aprendizaje indicada en el propio nombre del repositorio (lr1e5). El autor es la organizacion de HuggingFace `RL-Forgetting-Experiments-3`, cuyo nombre sugiere una linea de investigacion centrada en el olvido catastrofico durante el ajuste, aunque la ficha no describe el experimento.
+El modelo `RL-Forgetting-Experiments-3/qwen2.5-3b-kk-sft-ordered-lr1e5-step3175` es un checkpoint de ajuste supervisado (SFT) obtenido a partir del modelo base `Qwen/Qwen2.5-3B`. Segun la model card, se trata de un checkpoint de una sola epoca de entrenamiento, correspondiente al "brazo ordenado" (ordered arm) del experimento, guardado en el paso de optimizador 3175 y con una tasa de aprendizaje indicada en el propio nombre del repositorio (lr1e5). El autor es la organizacion de Hugging Face `RL-Forgetting-Experiments-3`, cuyo nombre sugiere una linea de investigacion centrada en el olvido catastrofico durante el ajuste, aunque la ficha no describe el experimento.
 
 El repositorio contiene 3.085.938.688 parametros en formato safetensors y esta etiquetado como `text-generation` y `conversational`, con compatibilidad declarada con `text-generation-inference` y con endpoints. La model card aclara que el checkpoint es "inference-complete, not resumable": estan todos los ficheros de modelo necesarios para inferencia, pero la serializacion posterior de estado del optimizador y de parametros previos fallo, por lo que esos ficheros no se incluyen y el entrenamiento no se puede reanudar desde este punto.
 
@@ -66,7 +66,7 @@ Los datos de la columna "este checkpoint" proceden de la informacion proporciona
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen2.5-3b-kk-sft-ordered-lr1e5-step3175 | 3,09 B | No disponible (base: 32.768 tokens) | No disponible | Pesos safetensors en HuggingFace, sin GGUF publicado |
+| qwen2.5-3b-kk-sft-ordered-lr1e5-step3175 | 3,09 B | No disponible (base: 32.768 tokens) | No disponible | Pesos safetensors en Hugging Face, sin GGUF publicado |
 | Qwen2.5-3B (modelo base) | 3,09 B | 32.768 tokens, ampliable a 131.072 con YaRN | Apache 2.0 | Pesos safetensors y GGUF oficiales |
 | Llama 3.2 3B | 3,21 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Pesos safetensors y GGUF, requiere aceptar la licencia |
 | Phi-3.5-mini-instruct | 3,82 B | 128.000 tokens | MIT | Pesos safetensors y GGUF |
@@ -88,7 +88,7 @@ La diferencia principal frente a las alternativas no esta en las capacidades dec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RL-Forgetting-Experiments-3/qwen2.5-3b-kk-sft-ordered-lr1e5-step3175
+- Modelo en Hugging Face: https://huggingface.co/RL-Forgetting-Experiments-3/qwen2.5-3b-kk-sft-ordered-lr1e5-step3175
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B
 - Organizacion autora: https://huggingface.co/RL-Forgetting-Experiments-3
 - Repositorio de Qwen2.5 (codigo y documentacion): https://github.com/QwenLM/Qwen2.5

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`flux3_policy_black_cubes_20k_v2-ema` es una política robótica de imitación publicada por el usuario sovrasov en HuggingFace, construida sobre FLUX 3 Action (`flux3`), el modelo vídeo-acción de Black Forest Labs. La descripción del autor indica que se trata del tronco de vídeo FLUX.3 con una modalidad de acción que se desruidifica conjuntamente con los siguientes fotogramas de vídeo, y que se afina por cada embodiment robótico con cabezas de acción nuevas. En este caso, el ajuste se ha realizado para un robot `PhysicalAIRobot` con dos cámaras (`top` y `wrist`) y una tarea única: coger un cubo negro y depositarlo en un contenedor de cartón.
+`flux3_policy_black_cubes_20k_v2-ema` es una política robótica de imitación publicada por el usuario sovrasov en Hugging Face, construida sobre FLUX 3 Action (`flux3`), el modelo vídeo-acción de Black Forest Labs. La descripción del autor indica que se trata del tronco de vídeo FLUX.3 con una modalidad de acción que se desruidifica conjuntamente con los siguientes fotogramas de vídeo, y que se afina por cada embodiment robótico con cabezas de acción nuevas. En este caso, el ajuste se ha realizado para un robot `PhysicalAIRobot` con dos cámaras (`top` y `wrist`) y una tarea única: coger un cubo negro y depositarlo en un contenedor de cartón.
 
 El checkpoint tiene 7.083.922.688 parámetros (unos 7,08 mil millones) en formato safetensors, con un repositorio de 14,4 GB, lo que es coherente con pesos en precisión de 16 bits. Se entrenó con LeRobot 0.6.2 durante 20.000 pasos, con batch size 2, optimizador AdamW y learning rate 1e-4, sobre el dataset `sovrasov/pick-black-cubes-room-2` (63 episodios, 24.859 fotogramas a 30 FPS). El sufijo `ema` del nombre sugiere que se publican pesos promediados exponencialmente (EMA), aunque la model card no lo detalla explícitamente.
 
@@ -70,7 +70,7 @@ No se dispone de datos verificados de modelos comparables en la información pro
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sovrasov/flux3_policy_black_cubes_20k_v2-ema | 7,08 mil millones | No disponible | Pick-and-place de un cubo negro en un contenedor | Apache-2.0 | HuggingFace (LeRobot) |
+| sovrasov/flux3_policy_black_cubes_20k_v2-ema | 7,08 mil millones | No disponible | Pick-and-place de un cubo negro en un contenedor | Apache-2.0 | Hugging Face (LeRobot) |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de datos verificados de modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sovrasov/flux3_policy_black_cubes_20k_v2-ema
+- Modelo en Hugging Face: https://huggingface.co/sovrasov/flux3_policy_black_cubes_20k_v2-ema
 - Dataset de entrenamiento: https://huggingface.co/datasets/sovrasov/pick-black-cubes-room-2
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=sovrasov/pick-black-cubes-room-2
 - Guía de LeRobot para flux3: https://huggingface.co/docs/lerobot/main/en/flux3

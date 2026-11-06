@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un modelo publicado en HuggingFace por el usuario toolathlon-eval-02, aparentemente como parte de un ejercicio de evaluación (Toolathlon). La model card describe una versión actualizada de un modelo de razonamiento con mejoras significativas en capacidades de inferencia, matemáticas, programación y lógica, atribuidas a un aumento de recursos computacionales y a mecanismos de optimización algorítmica durante el post-entrenamiento. Sin embargo, la información pública es muy limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto ni otros detalles técnicos esenciales. Los tags de HuggingFace indican "bert" y "feature-extraction", lo que sugiere que podría tratarse de un modelo de tipo BERT, pero la descripción de la model card habla de generación de texto y razonamiento, lo que resulta contradictorio. En conjunto, se trata de un repositorio de prueba con datos insuficientes para una evaluación técnica rigurosa.
+MyAwesomeModel-TestRepo es un modelo publicado en Hugging Face por el usuario toolathlon-eval-02, aparentemente como parte de un ejercicio de evaluación (Toolathlon). La model card describe una versión actualizada de un modelo de razonamiento con mejoras significativas en capacidades de inferencia, matemáticas, programación y lógica, atribuidas a un aumento de recursos computacionales y a mecanismos de optimización algorítmica durante el post-entrenamiento. Sin embargo, la información pública es muy limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto ni otros detalles técnicos esenciales. Los tags de Hugging Face indican "bert" y "feature-extraction", lo que sugiere que podría tratarse de un modelo de tipo BERT, pero la descripción de la model card habla de generación de texto y razonamiento, lo que resulta contradictorio. En conjunto, se trata de un repositorio de prueba con datos insuficientes para una evaluación técnica rigurosa.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ MyAwesomeModel-TestRepo es un modelo publicado en HuggingFace por el usuario too
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo. La model card menciona que la versión actual ha mejorado su "profundidad de razonamiento" mediante un aumento de recursos computacionales y mecanismos de optimización algorítmica en el post-entrenamiento, pero no detalla la arquitectura (transformer, MoE, SSM, etc.) ni los datos de entrenamiento (número de tokens, composición del dataset, técnicas de alineación como RLHF o DPO). Tampoco se especifica si se emplea decodificación especulativa, atención lineal u otras innovaciones. El pipeline declarado en HuggingFace es "feature-extraction", lo que sugiere un modelo encoder, pero la descripción de capacidades apunta a un modelo generativo. Esta inconsistencia refuerza la naturaleza de prueba del repositorio.
+No se dispone de información sobre la arquitectura interna del modelo. La model card menciona que la versión actual ha mejorado su "profundidad de razonamiento" mediante un aumento de recursos computacionales y mecanismos de optimización algorítmica en el post-entrenamiento, pero no detalla la arquitectura (transformer, MoE, SSM, etc.) ni los datos de entrenamiento (número de tokens, composición del dataset, técnicas de alineación como RLHF o DPO). Tampoco se especifica si se emplea decodificación especulativa, atención lineal u otras innovaciones. El pipeline declarado en Hugging Face es "feature-extraction", lo que sugiere un modelo encoder, pero la descripción de capacidades apunta a un modelo generativo. Esta inconsistencia refuerza la naturaleza de prueba del repositorio.
 
 ## Capacidades
 
@@ -92,7 +92,7 @@ No se dispone de información suficiente para comparar con modelos de la misma c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/toolathlon-eval-02/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/toolathlon-eval-02/MyAwesomeModel-TestRepo
 - Perfil del autor: https://huggingface.co/toolathlon-eval-02
 - Proyecto Toolathlon (relacionado con la evaluación): https://github.com/hkust-nlp/Toolathlon
 - Documentación de la tarea de subida en Toolathlon: https://toolathlon.xyz/docs/tasks/tech/19

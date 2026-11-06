@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3 es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por Z.ai (zai-org), publicado en HuggingFace bajo el identificador `playplatoon/GLM-5.3-Archive`. Con 753.329.940.480 parámetros totales (aproximadamente 753 mil millones), es un modelo de gran escala orientado a generación de texto, razonamiento y, de forma destacada, tareas de codificación compleja y agentes autónomos de largo horizonte. La arquitectura declarada es `glm_moe_dsa`, lo que indica un transformer MoE con atención dispersa (DeepSeek Sparse Attention o similar), y el repositorio ocupa 755,7 GB en formato safetensors con cuantización fp8.
+GLM-5.3 es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por Z.ai (zai-org), publicado en Hugging Face bajo el identificador `playplatoon/GLM-5.3-Archive`. Con 753.329.940.480 parámetros totales (aproximadamente 753 mil millones), es un modelo de gran escala orientado a generación de texto, razonamiento y, de forma destacada, tareas de codificación compleja y agentes autónomos de largo horizonte. La arquitectura declarada es `glm_moe_dsa`, lo que indica un transformer MoE con atención dispersa (DeepSeek Sparse Attention o similar), y el repositorio ocupa 755,7 GB en formato safetensors con cuantización fp8.
 
 El modelo reutiliza la misma base que GLM-5.2 y todas sus mejoras provienen exclusivamente del post-entrenamiento, según la model card. Sus avances más notables son en codificación (mejora del 50 % sobre GLM-5.2 en el benchmark interno Z.ai Code Bench) y en capacidades emergentes de ciberseguridad, donde alcanza SOTA en CyberGym para descubrimiento de vulnerabilidades y duplica a GLM-5.2 en benchmarks de explotación. También obtiene resultados de referencia entre modelos de pesos abiertos en Terminal Bench 3.0 y Agents' Last Exam.
 
@@ -108,7 +108,7 @@ GLM-5.3 se posiciona como el modelo de pesos abiertos más fuerte en tareas agé
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/playplatoon/GLM-5.3-Archive
+- Hugging Face: https://huggingface.co/playplatoon/GLM-5.3-Archive
 - Repositorio oficial de Z.ai GLM-5: https://github.com/zai-org/GLM-5
 - SGLang: https://github.com/sgl-project/sglang
 - Cookbook SGLang GLM-5.3: https://cookbook.sglang.io/autoregressive/GLM/GLM-5.3

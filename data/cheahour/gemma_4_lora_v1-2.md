@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cheahour/gemma_4_lora_v1.2 es un ajuste fino mediante LoRA publicado por el usuario cheahour sobre el modelo base unsloth/gemma-4-E4B-it-unsloth-bnb-4bit, una version cuantizada a 4 bits de la familia Gemma 4 de Google DeepMind. El repositorio pesa 0,2 GB y contiene pesos en formato safetensors, lo que es coherente con un adaptador LoRA en lugar de un modelo completo. Se distribuye bajo licencia Apache 2.0, esta etiquetado como modelo en ingles y su acceso esta restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de descargarlo.
+cheahour/gemma_4_lora_v1.2 es un ajuste fino mediante LoRA publicado por el usuario cheahour sobre el modelo base unsloth/gemma-4-E4B-it-unsloth-bnb-4bit, una version cuantizada a 4 bits de la familia Gemma 4 de Google DeepMind. El repositorio pesa 0,2 GB y contiene pesos en formato safetensors, lo que es coherente con un adaptador LoRA en lugar de un modelo completo. Se distribuye bajo licencia Apache 2.0, esta etiquetado como modelo en ingles y su acceso esta restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de descargarlo.
 
 La relevancia de esta ficha es limitada y debe interpretarse con cautela: se trata de un modelo de la comunidad con cero descargas y cero likes en el momento de la consulta, sin model card descriptiva mas alla de las etiquetas, sin pipeline declarado y sin resultados de benchmarks publicados. No hay informacion sobre el dataset de ajuste, el numero de pasos, la configuracion de LoRA ni el objetivo concreto del entrenamiento.
 
@@ -30,7 +30,7 @@ Por tanto, esta ficha documenta lo que puede verificarse a partir de los metadat
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador LoRA sobre el modelo unsloth/gemma-4-E4B-it-unsloth-bnb-4bit, que a su vez es una version instruida y cuantizada a 4 bits de la familia Gemma 4 de Google DeepMind. Las etiquetas del repositorio incluyen unsloth y trl, lo que indica que el ajuste se realizo previsiblemente con el stack de Unsloth y la libreria TRL de HuggingFace, sobre una base ya cuantizada. No se dispone de informacion sobre el rango de LoRA, los modulos objetivo, la tasa de aprendizaje, el numero de pasos, el tamano del dataset ni la composicion de este.
+El artefacto es un adaptador LoRA sobre el modelo unsloth/gemma-4-E4B-it-unsloth-bnb-4bit, que a su vez es una version instruida y cuantizada a 4 bits de la familia Gemma 4 de Google DeepMind. Las etiquetas del repositorio incluyen unsloth y trl, lo que indica que el ajuste se realizo previsiblemente con el stack de Unsloth y la libreria TRL de Hugging Face, sobre una base ya cuantizada. No se dispone de informacion sobre el rango de LoRA, los modulos objetivo, la tasa de aprendizaje, el numero de pasos, el tamano del dataset ni la composicion de este.
 
 No hay constancia de que se haya aplicado RLHF, DPO u otra fase de alineamiento adicional despues del ajuste. Tampoco se documentan innovaciones tecnicas propias. Cualquier afirmacion sobre decodificacion especulativa, atencion lineal u otras optimizaciones corresponderia al modelo base Gemma 4, pero no se detalla en la informacion disponible y por tanto no se puede confirmar aqui.
 
@@ -85,14 +85,14 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 - Sesgos: no evaluados ni documentados.
 - Idioma: unicamente ingles segun los metadatos; no hay soporte declarado para castellano ni otros idiomas.
 - Contexto: la longitud de contexto no esta documentada; no debe asumirse un valor concreto sin verificarlo en el modelo base.
-- Acceso restringido: el repositorio esta en modo gated, por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+- Acceso restringido: el repositorio esta en modo gated, por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 - Licencia: el adaptador se publica como Apache 2.0, pero el uso comercial depende tambien de los terminos aplicables al modelo base Gemma 4, que no se detallan aqui y deben verificarse por separado.
 - Madurez: con cero descargas y cero likes, no existe evidencia de uso en produccion ni validacion por parte de la comunidad.
 - Al ser un adaptador LoRA, es imprescindible cargar correctamente el modelo base indicado; usar otro modelo base puede degradar o romper el comportamiento del ajuste.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cheahour/gemma_4_lora_v1.2
+- Modelo en Hugging Face: https://huggingface.co/cheahour/gemma_4_lora_v1.2
 - Version previa del mismo autor: https://huggingface.co/cheahour/gemma_4_lora
 - Variante VLM del mismo autor: https://huggingface.co/cheahour/gemma_4_lora_VLM
 - Pagina oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/

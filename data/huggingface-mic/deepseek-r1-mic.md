@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-R1-mic es un artefacto de prueba (test artifact) publicado en HuggingFace por el usuario huggingface-mic. No se trata de un modelo funcional, sino de un fixture de 16,6 millones de parametros construido a partir de la arquitectura de deepseek-ai/DeepSeek-R1 mediante reduccion de capas (num_hidden_layers reducido a 2) y pesos aleatorios generados con semilla 17. Su proposito es servir como contrato de integracion para validar frameworks de inferencia (en concreto Transformers) frente a la arquitectura DeepseekV3ForCausalLM.
+DeepSeek-R1-mic es un artefacto de prueba (test artifact) publicado en Hugging Face por el usuario huggingface-mic. No se trata de un modelo funcional, sino de un fixture de 16,6 millones de parametros construido a partir de la arquitectura de deepseek-ai/DeepSeek-R1 mediante reduccion de capas (num_hidden_layers reducido a 2) y pesos aleatorios generados con semilla 17. Su proposito es servir como contrato de integracion para validar frameworks de inferencia (en concreto Transformers) frente a la arquitectura DeepseekV3ForCausalLM.
 
 El modelo conserva los nombres de tensores del checkpoint original y copia byte a byte los ficheros de procesamiento (tokenizer, configuracion, modeling) de DeepSeek-R1, lo que permite verificar que una implementacion de framework carga correctamente la arquitectura sin necesidad de descargar los cientos de gigabytes del modelo real. Los pesos aleatorios superaron una puerta de sensibilidad de entrada: cada perturbacion de las entradas del contrato movio los logits al menos 0,001, garantizando que el fixture responde a variaciones en la entrada.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-R1-mic | 16,6 M | no disponible | Fixture de test | no disponible | HuggingFace (test-artifact) |
-| deepseek-ai/DeepSeek-R1 | 671 B (MoE) | 128 K (segun model card publica) | Razonamiento y generacion | MIT (segun model card publica) | HuggingFace |
-| deepseek-ai/DeepSeek-V3 | 671 B (MoE) | 128 K (segun model card publica) | LLM generalista | MIT (segun model card publica) | HuggingFace |
+| DeepSeek-R1-mic | 16,6 M | no disponible | Fixture de test | no disponible | Hugging Face (test-artifact) |
+| deepseek-ai/DeepSeek-R1 | 671 B (MoE) | 128 K (segun model card publica) | Razonamiento y generacion | MIT (segun model card publica) | Hugging Face |
+| deepseek-ai/DeepSeek-V3 | 671 B (MoE) | 128 K (segun model card publica) | LLM generalista | MIT (segun model card publica) | Hugging Face |
 
 La comparativa con el modelo base es la mas relevante: el fixture comparte arquitectura y tokenizer con DeepSeek-R1, pero carece de capacidades funcionales. No se identifican otros fixtures comparables en la informacion disponible.
 
@@ -79,7 +79,7 @@ La comparativa con el modelo base es la mas relevante: el fixture comparte arqui
 
 ## Enlaces
 
-- [HuggingFace: huggingface-mic/DeepSeek-R1-mic](https://huggingface.co/huggingface-mic/DeepSeek-R1-mic)
+- [Hugging Face: huggingface-mic/DeepSeek-R1-mic](https://huggingface.co/huggingface-mic/DeepSeek-R1-mic)
 - [Modelo base: deepseek-ai/DeepSeek-R1](https://huggingface.co/deepseek-ai/DeepSeek-R1)
 - [Como se redujo el fixture](https://huggingface-mic-mic-coverage.static.hf.space/shrink/DeepSeek-R1-mic.html)
 - [Repositorio transformers-mic (sweep.py y build_fixtures.py)](https://github.com/huggingface/transformers-mic)

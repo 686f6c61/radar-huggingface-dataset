@@ -69,8 +69,8 @@ No se dispone de datos publicados que permitan una comparativa directa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/prithivMLmods/CogEvol-4B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/CogEvol/CogEvol-4B
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/prithivMLmods/CogEvol-4B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/CogEvol/CogEvol-4B
 - Repositorio GitHub del proyecto: https://github.com/CogEvol/CogEvol-4B
 - Articulo en arXiv: https://arxiv.org/html/2608.30968
 - Perfil del autor del repo GGUF: https://huggingface.co/prithivMLmods

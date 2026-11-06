@@ -57,7 +57,7 @@ Estos valores corresponden al rendimiento agregado del conjunto de modelos, no a
 - VRAM estimada para inferencia: con pesos en bf16, el modelo ocupa aproximadamente 2,35 GB (1.176.764.416 parámetros × 2 bytes). Con cuantización a 8 bits cabría en ~1,2 GB y a 4 bits en ~0,6 GB, aunque no se proporcionan archivos cuantizados oficiales.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en bf16 (por ejemplo, RTX 3050, RTX 4060, GTX 1080 Ti). Para procesar lotes grandes o múltiples frases simultáneamente, se recomienda una GPU con 8 GB o más (RTX 3070, RTX 4080, A10).
 - Cabe en GPU de consumo: sí, en la mayoría de GPUs modernas de gama media y alta.
-- Opciones de despliegue: al ser un modelo de HuggingFace en formato safetensors, puede cargarse con `transformers` y `torch`. Para inferencia eficiente se puede usar vLLM o TGI, aunque al ser un modelo pequeño no es necesario. También se puede convertir a GGUF para ejecutarlo con llama.cpp u Ollama, pero no se proporcionan conversiones oficiales.
+- Opciones de despliegue: al ser un modelo de Hugging Face en formato safetensors, puede cargarse con `transformers` y `torch`. Para inferencia eficiente se puede usar vLLM o TGI, aunque al ser un modelo pequeño no es necesario. También se puede convertir a GGUF para ejecutarlo con llama.cpp u Ollama, pero no se proporcionan conversiones oficiales.
 - Latencia y throughput: no se han publicado datos oficiales. En una GPU moderna, la inferencia de una frase de 50 tokens debería completarse en milisegundos, dado el tamaño del modelo.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ La comparativa se limita a los modelos de la misma familia Sphragis y al modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-plato
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-plato
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Codigo de entrenamiento y scoring: https://github.com/Urdatorn/sphragis_models
 - Modelo hermano (OLMo-3-7B): https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-plato

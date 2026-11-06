@@ -24,7 +24,7 @@ La información disponible no detalla arquitectura interna, longitud de contexto
 | Pipeline | any-to-any (texto, imagen, audio) |
 | Libreria / runtime | `fusor-ai` (runtime WebAssembly `liquidai-lmf3-wasm`) |
 | Revision del modelo base | `LiquidAI/LFM3-Omni-2B` @ `ce2458cbce4ad970f92032ed94e3d18d30b04f9c` |
-| Fecha de creacion | 2026-10-28 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-28 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -88,7 +88,7 @@ La comparación relevante es contra el checkpoint original: este repositorio ofr
 - Ausencia de evaluación: sin benchmarks publicados ni métricas de calidad de transcripción, descripción de imágenes o síntesis de voz, no es posible estimar la calidad frente al modelo base ni frente a alternativas.
 - Idiomas no documentados: se desconoce qué lenguas cubre la transcripción y la síntesis, lo que impide asumir un comportamiento correcto en castellano sin pruebas propias.
 - Contexto desconocido: no se indica la longitud de contexto, un dato crítico para conversaciones multi-turno o audio largo.
-- Licencia: LFM Open License v1.0, marcada como `other` en HuggingFace. Es imprescindible revisar el fichero `LICENSE` antes de cualquier uso comercial, ya que este tipo de licencias de modelos abiertos suele incluir condiciones y umbrales específicos.
+- Licencia: LFM Open License v1.0, marcada como `other` en Hugging Face. Es imprescindible revisar el fichero `LICENSE` antes de cualquier uso comercial, ya que este tipo de licencias de modelos abiertos suele incluir condiciones y umbrales específicos.
 - Riesgo de alucinación: inherente a los modelos generativos; en transcripción puede producir texto plausible donde el audio es ambiguo, y en descripción de imágenes puede inventar detalles. No hay documentación de mitigaciones.
 - Sesgos: no documentados por el autor; se heredan los del modelo base, sobre el que tampoco se aporta información demográfica o de dominio.
 - Cuantización a 7 bits: no se publica la degradación respecto al checkpoint original en ninguna tarea.
@@ -98,7 +98,7 @@ La comparación relevante es contra el checkpoint original: este repositorio ofr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fusorlabs/lfm3-omni-2b-web
+- Modelo en Hugging Face: https://huggingface.co/fusorlabs/lfm3-omni-2b-web
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Demo (Space): https://huggingface.co/spaces/fusorlabs/liquidai-lmf3-wasm
 - Runtime WebAssembly: https://github.com/fusor-rs/liquidai-lmf3-wasm

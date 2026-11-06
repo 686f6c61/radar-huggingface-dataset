@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`isaacmg/qwen3-vl-8b-hebrew-v21-ckpt` es un ajuste fino supervisado (SFT) del modelo multimodal `unsloth/qwen3-vl-8b-instruct-unsloth-bnb-4bit`, que a su vez es una version cuantizada a 4 bits de Qwen3-VL-8B-Instruct. El autor del ajuste es el usuario de HuggingFace `isaacmg` y el entrenamiento se ha realizado con TRL sobre el stack de Transformers, PyTorch y Unsloth. El nombre del repositorio indica que el objetivo del ajuste es mejorar el comportamiento del modelo en hebreo, partiendo de un modelo base que ya es vision-lenguaje, es decir, capaz de procesar imagenes junto con texto.
+`isaacmg/qwen3-vl-8b-hebrew-v21-ckpt` es un ajuste fino supervisado (SFT) del modelo multimodal `unsloth/qwen3-vl-8b-instruct-unsloth-bnb-4bit`, que a su vez es una version cuantizada a 4 bits de Qwen3-VL-8B-Instruct. El autor del ajuste es el usuario de Hugging Face `isaacmg` y el entrenamiento se ha realizado con TRL sobre el stack de Transformers, PyTorch y Unsloth. El nombre del repositorio indica que el objetivo del ajuste es mejorar el comportamiento del modelo en hebreo, partiendo de un modelo base que ya es vision-lenguaje, es decir, capaz de procesar imagenes junto con texto.
 
 El modelo pertenece, por tanto, a la familia Qwen3-VL en su variante de 8.000 millones de parametros (nominal), con encoder de vision y decodificador transformer denso. Al estar construido sobre una version de 4 bits del modelo base, es un ejemplo tipico de flujo QLoRA/SFT de bajo coste orientado a adaptar un modelo grande a un idioma concreto sin reentrenar desde cero.
 
@@ -72,8 +72,8 @@ No se dispone de datos de rendimiento verificables para establecer una comparati
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| isaacmg/qwen3-vl-8b-hebrew-v21-ckpt | Aproximadamente 8B (nominal) | No disponible | No disponible | Publicado en HuggingFace, 0 descargas |
-| unsloth/qwen3-vl-8b-instruct-unsloth-bnb-4bit | Aproximadamente 8B (nominal), 4 bits | No disponible | No disponible | Publicado en HuggingFace |
+| isaacmg/qwen3-vl-8b-hebrew-v21-ckpt | Aproximadamente 8B (nominal) | No disponible | No disponible | Publicado en Hugging Face, 0 descargas |
+| unsloth/qwen3-vl-8b-instruct-unsloth-bnb-4bit | Aproximadamente 8B (nominal), 4 bits | No disponible | No disponible | Publicado en Hugging Face |
 | Qwen3-VL-8B-Instruct (modelo original) | Aproximadamente 8B (nominal) | No disponible en esta informacion | No disponible en esta informacion | Publicado por el fabricante |
 | Otros VLM de ~7-8B (Qwen2.5-VL-7B, InternVL, Llama 3.2 Vision) | No disponible | No disponible | No disponible | No evaluados aqui |
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento verificables para establecer una comparati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/isaacmg/qwen3-vl-8b-hebrew-v21-ckpt
+- Modelo en Hugging Face: https://huggingface.co/isaacmg/qwen3-vl-8b-hebrew-v21-ckpt
 - Modelo base (Unsloth): https://huggingface.co/unsloth/qwen3-vl-8b-instruct-unsloth-bnb-4bit
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/igodfried/qwen-hebrew-finetune/runs/js3ku3tw
 - Repositorio de TRL: https://github.com/huggingface/trl

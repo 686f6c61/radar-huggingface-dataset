@@ -89,7 +89,7 @@ No se dispone de informacion suficiente para comparar rendimiento numerico con a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LuffyTheFox/Qwen3.6-27B-Uncensored-Genesis-GGUF
+- Repositorio Hugging Face: https://huggingface.co/LuffyTheFox/Qwen3.6-27B-Uncensored-Genesis-GGUF
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive
 - Perfil del autor del modelo base: https://huggingface.co/HauhauCS
 - Script de cuantizacion: https://pastebin.com/hXhcMJn9

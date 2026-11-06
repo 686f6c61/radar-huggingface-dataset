@@ -23,7 +23,7 @@ La relevancia actual radica en la demanda creciente de pipelines de digitalizaci
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo base (xiaomi-research/Xiaomi-OCR-0). Se trata de un modelo multimodal de tipo image-text-to-text, con un componente de lenguaje y un proyector visual (mmproj) que en esta version GGUF se ha cuantizado por separado a Q6_K desde el proyector bf16 original. El pipeline declarado en HuggingFace es `image-text-to-text`.
+La informacion disponible no detalla la arquitectura interna del modelo base (xiaomi-research/Xiaomi-OCR-0). Se trata de un modelo multimodal de tipo image-text-to-text, con un componente de lenguaje y un proyector visual (mmproj) que en esta version GGUF se ha cuantizado por separado a Q6_K desde el proyector bf16 original. El pipeline declarado en Hugging Face es `image-text-to-text`.
 
 El modelo base se entreno sobre un corpus propio centrado en OCR (`custom-ocr-centric-corpus`, segun los metadatos). No se dispone de informacion sobre numero de tokens de entrenamiento, composicion del dataset, uso de RLHF/DPO ni innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, etc.). Las metricas declaradas en los metadatos son accuracy, TEDS y CDM, lo que sugiere evaluacion en tareas de parsing de tablas y documentos.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nld-100mb-after-wc-uniform-oldlex-nld-ckpt500_seed455_seed455` es un modelo de generacion de texto publicado por el usuario `fpadovani` en HuggingFace. Se trata de un ajuste fino (SFT) del modelo `fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed455`, realizado con la libreria TRL sobre una arquitectura de tipo GPT-2, segun los tags declarados en el repositorio. Cuenta con 124.770.816 parametros reales (verificados en los pesos safetensors) y un repositorio de 1,7 GB.
+`nld-100mb-after-wc-uniform-oldlex-nld-ckpt500_seed455_seed455` es un modelo de generacion de texto publicado por el usuario `fpadovani` en Hugging Face. Se trata de un ajuste fino (SFT) del modelo `fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed455`, realizado con la libreria TRL sobre una arquitectura de tipo GPT-2, segun los tags declarados en el repositorio. Cuenta con 124.770.816 parametros reales (verificados en los pesos safetensors) y un repositorio de 1,7 GB.
 
 El modelo no es un lanzamiento de produccion, sino un artefacto de investigacion. La nomenclatura del identificador (`ckpt500`, `seed455` repetido, `100mb`, `oldlex`, `nld`) y el proyecto de Weights & Biases asociado (`f-padovani-university-of-groningen/white_cotterell`) apuntan a un experimento academico controlado sobre datos de preentrenamiento, probablemente un estudio de ablacion con distintas configuraciones de lexico y presupuestos de datos, en el que se comparan variantes con una semilla fija. La repeticion de `seed455` en el nombre sugiere un ajuste fino encadenado sobre un checkpoint ya entrenado con la misma semilla.
 
@@ -33,10 +33,10 @@ El entrenamiento consistio en un ajuste fino supervisado (SFT) sobre el modelo b
 
 ## Capacidades
 
-- Generacion de texto autoregresiva en modo pipeline de HuggingFace (`text-generation`), con entrada en formato de mensajes de rol (`user`) segun el ejemplo de la model card.
+- Generacion de texto autoregresiva en modo pipeline de Hugging Face (`text-generation`), con entrada en formato de mensajes de rol (`user`) segun el ejemplo de la model card.
 - Conversacion de un solo turno en el ejemplo publicado: la model card muestra una pregunta abierta y la generacion de hasta 128 tokens nuevos.
 - Ajuste instruccional basico: al haber sido entrenado con SFT, esta orientado a responder a instrucciones del usuario en lugar de continuar texto arbitrario.
-- Compatibilidad con `text-generation-inference` y con `endpoints_compatible`, segun los tags del repositorio, lo que permite desplegarlo con la pila de inferencia de HuggingFace.
+- Compatibilidad con `text-generation-inference` y con `endpoints_compatible`, segun los tags del repositorio, lo que permite desplegarlo con la pila de inferencia de Hugging Face.
 - No hay evidencia de soporte de tool calling, function calling, razonamiento multi-paso, agentes, vision, audio ni modo de razonamiento explicito.
 - El soporte multilingue no esta documentado; se desconoce el idioma o idiomas para los que fue entrenado.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en fp16/bf16: aproximadamente 0,25 GB de pesos; en int8 alrededor de 0,13 GB y en cuantizacion de 4 bits alrededor de 0,08 GB.
 - Cabe sin problema en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en GPUs integradas o en CPU para inferencia de baja concurrencia.
 - GPU de datacenter (A100, H100, L40S) no son necesarias; solo tendrian sentido para servir muchas replicas concurrentes en paralelo.
-- Opciones de despliegue: `transformers` con `pipeline` (metodo documentado por el autor), Text Generation Inference (TGI) al estar el modelo etiquetado como `text-generation-inference`, y endpoints compatibles de HuggingFace. Para llama.cpp u Ollama seria necesario convertir previamente los pesos safetensors a GGUF, algo que no esta documentado ni verificado en la informacion disponible.
+- Opciones de despliegue: `transformers` con `pipeline` (metodo documentado por el autor), Text Generation Inference (TGI) al estar el modelo etiquetado como `text-generation-inference`, y endpoints compatibles de Hugging Face. Para llama.cpp u Ollama seria necesario convertir previamente los pesos safetensors a GGUF, algo que no esta documentado ni verificado en la informacion disponible.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ Los datos de modelos alternativos que aparecen a continuacion corresponden a car
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| nld-100mb-after-wc-uniform-oldlex-nld-ckpt500_seed455_seed455 | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
+| nld-100mb-after-wc-uniform-oldlex-nld-ckpt500_seed455_seed455 | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
 | GPT-2 small (OpenAI) | ~124 M | 1024 tokens | Modified MIT | Ampliamente disponible | no disponible (sin evaluacion comun publicada para este checkpoint) |
 | DistilGPT-2 | ~82 M | 1024 tokens | Apache-2.0 | Ampliamente disponible | no disponible |
 | Pythia-160M (EleutherAI) | ~162 M | 2048 tokens | Apache-2.0 | Ampliamente disponible | no disponible |
@@ -88,7 +88,7 @@ Los datos de modelos alternativos que aparecen a continuacion corresponden a car
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/nld-100mb-after-wc-uniform-oldlex-nld-ckpt500_seed455_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/nld-100mb-after-wc-uniform-oldlex-nld-ckpt500_seed455_seed455
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed455
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/x9don2ya
 - Repositorio de TRL: https://github.com/huggingface/trl

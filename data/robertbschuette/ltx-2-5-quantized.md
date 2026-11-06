@@ -112,7 +112,7 @@ Las cuantizaciones del encoder de texto son un caso aparte: el autor cita tres p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/robertbschuette/LTX-2.5-Quantized
+- Repositorio en Hugging Face: https://huggingface.co/robertbschuette/LTX-2.5-Quantized
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.5
 - Licencia: https://huggingface.co/Lightricks/LTX-2.5/blob/main/LICENSE
 - Issue de ComfyUI-GGUF sobre soporte de `gemma4` en encoders de texto: https://github.com/city96/ComfyUI-GGUF/issues/450

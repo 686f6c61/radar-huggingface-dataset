@@ -74,6 +74,6 @@ No se dispone de comparativas publicadas para este checkpoint. El modelo base `Q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max.h016.optim-gpu-bench.step_150
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max.h016.optim-gpu-bench.step_150
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del sweep (mencionado en la model card, sin URL directa): `agentic-ptb/INDEX` (no disponible públicamente en la información proporcionada)

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Heatmor es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es extremadamente limitada: la model card unicamente contiene el campo de licencia, sin descripcion, sin especificaciones tecnicas ni datos de entrenamiento. El repositorio tiene un tamano de 0,1 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos cuantizados, aunque no es posible confirmarlo con los datos proporcionados.
+Heatmor es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es extremadamente limitada: la model card unicamente contiene el campo de licencia, sin descripcion, sin especificaciones tecnicas ni datos de entrenamiento. El repositorio tiene un tamano de 0,1 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos cuantizados, aunque no es posible confirmarlo con los datos proporcionados.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. El modelo no registra descargas ni likes en el momento de la consulta, y fue creado y actualizado el 1 de noviembre de 2026, lo que indica una publicacion muy reciente y sin validacion por parte de la comunidad.
 
-Dada la ausencia de documentacion tecnica, esta ficha se limita a reflejar los datos objetivos disponibles en HuggingFace y a senalar explicitamente las lagunas de informacion. Cualquier evaluacion de rendimiento o idoneidad para produccion requeriria inspeccionar directamente los archivos del repositorio.
+Dada la ausencia de documentacion tecnica, esta ficha se limita a reflejar los datos objetivos disponibles en Hugging Face y a senalar explicitamente las lagunas de informacion. Cualquier evaluacion de rendimiento o idoneidad para produccion requeriria inspeccionar directamente los archivos del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Dada la ausencia de documentacion tecnica, esta ficha se limita a reflejar los d
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. No consta si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o cualquier otra variante.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. No consta si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o cualquier otra variante.
 
 Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o cualquier otra tecnica de alineacion. El unico dato objetivo es el tamano del repositorio (0,1 GB), que por si solo no permite inferir la arquitectura ni el numero de parametros sin conocer el formato y la precision de los pesos almacenados.
 
@@ -76,5 +76,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Heatmor
+- Hugging Face: https://huggingface.co/Ryanham1lton/Heatmor
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

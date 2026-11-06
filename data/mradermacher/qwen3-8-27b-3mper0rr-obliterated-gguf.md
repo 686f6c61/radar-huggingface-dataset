@@ -64,7 +64,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-3MPER0RR-obliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-3MPER0RR-obliterated-GGUF
 - Modelo base: https://huggingface.co/3MPER0RR/Qwen3.8-27B-3MPER0RR-abliterated
 - Blog de MindStudio sobre ejecucion local: https://www.mindstudio.ai/blog/run-qwen3-8-27b-obliterated-locally
 - Pagina de local-ai-zone: https://local-ai-zone.github.io/models/qwen3-8-27b-obliterated.html

@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks de calidad para establecer comparaciones de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mashbox-labs/LFM3-1.7B-CoreML
+- Modelo en Hugging Face: https://huggingface.co/mashbox-labs/LFM3-1.7B-CoreML
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - GGUF oficial de Liquid AI: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF
 - Licencia LFM1.0: incluida como `LICENSE` en el repositorio del modelo

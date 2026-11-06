@@ -108,7 +108,7 @@ No se dispone de informacion sobre modelos alternativos de terceros (mismo taman
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nwtgck/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/nwtgck/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GGUF referenciado en la model card: https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF
 - Herramienta de conversion citada: https://github.com/ggml-org/convert

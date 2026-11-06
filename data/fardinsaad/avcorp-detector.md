@@ -75,8 +75,8 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AVCORP-detector (Qwen3-8B + LoRA) | 8B | no disponible | 72% exact match (mejor config.) | apache-2.0 | HuggingFace (adaptadores) |
-| Qwen3-8B (base, sin adaptar) | 8B | no disponible | 48% exact match en la tarea | apache-2.0 | HuggingFace |
+| AVCORP-detector (Qwen3-8B + LoRA) | 8B | no disponible | 72% exact match (mejor config.) | apache-2.0 | Hugging Face (adaptadores) |
+| Qwen3-8B (base, sin adaptar) | 8B | no disponible | 48% exact match en la tarea | apache-2.0 | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fardinsaad/AVCORP-detector
+- Modelo en Hugging Face: https://huggingface.co/fardinsaad/AVCORP-detector
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Dataset: https://huggingface.co/datasets/fardinsaad/AVCORP
 - Codigo, corpus y prompts: https://github.com/fardinsaad/_AVCORP_

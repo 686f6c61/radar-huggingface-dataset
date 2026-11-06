@@ -112,7 +112,7 @@ No se dispone de informacion sobre alternativas de cuantizacion equivalentes (GP
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/brian-learns/Qwen3.8-27B-NVFP4
+- Repositorio en Hugging Face: https://huggingface.co/brian-learns/Qwen3.8-27B-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial referenciado en la model card: https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4
 - NVIDIA Model Optimizer (GitHub): https://github.com/NVIDIA/Model-Optimizer
@@ -121,4 +121,4 @@ No se dispone de informacion sobre alternativas de cuantizacion equivalentes (GP
 - Dataset de calibracion Nemotron-Post-Training-Dataset-v3: https://huggingface.co/collections/nvidia/nemotron-post-training-v3
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 
-Nota: la busqueda web realizada no ha devuelto resultados relevantes sobre este modelo; los unicos enlaces utiles son los proporcionados en la model card y en los metadatos de HuggingFace.
+Nota: la busqueda web realizada no ha devuelto resultados relevantes sobre este modelo; los unicos enlaces utiles son los proporcionados en la model card y en los metadatos de Hugging Face.

@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo / recurso | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ssonna/Llama-3.1-8B-Instruct-LaMP7-user-LoRA-epoch2 | ~0,1 M por adaptador sobre un base de ~8,03 B | 128 000 tokens (base) | 1496 adaptadores LoRA por usuario (OPPU) para LaMP-7 | Llama 3.1 Community License | HuggingFace, 0 descargas, 0 likes |
-| meta-llama/Llama-3.1-8B-Instruct | ~8,03 B | 128 000 tokens | Modelo instruct generalista, sin personalizacion por usuario | Llama 3.1 Community License | HuggingFace (acceso con aceptacion de licencia) |
-| meta-llama/Llama-3.1-8B | ~8,03 B | 128 000 tokens | Modelo base preentrenado, sin ajuste de instrucciones | Llama 3.1 Community License | HuggingFace (acceso con aceptacion de licencia) |
+| ssonna/Llama-3.1-8B-Instruct-LaMP7-user-LoRA-epoch2 | ~0,1 M por adaptador sobre un base de ~8,03 B | 128 000 tokens (base) | 1496 adaptadores LoRA por usuario (OPPU) para LaMP-7 | Llama 3.1 Community License | Hugging Face, 0 descargas, 0 likes |
+| meta-llama/Llama-3.1-8B-Instruct | ~8,03 B | 128 000 tokens | Modelo instruct generalista, sin personalizacion por usuario | Llama 3.1 Community License | Hugging Face (acceso con aceptacion de licencia) |
+| meta-llama/Llama-3.1-8B | ~8,03 B | 128 000 tokens | Modelo base preentrenado, sin ajuste de instrucciones | Llama 3.1 Community License | Hugging Face (acceso con aceptacion de licencia) |
 | Colecciones publicas equivalentes de adaptadores por usuario para LaMP-7 | no disponible | no disponible | no disponible | no disponible | no disponible en los resultados de busqueda |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssonna/Llama-3.1-8B-Instruct-LaMP7-user-LoRA-epoch2
+- Modelo en Hugging Face: https://huggingface.co/ssonna/Llama-3.1-8B-Instruct-LaMP7-user-LoRA-epoch2
 - Modelo base Llama-3.1-8B-Instruct: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Modelo base preentrenado Llama-3.1-8B: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Repositorio oficial de Llama (codigo y documentacion): https://github.com/meta-llama/llama-models/blob/main/README.md

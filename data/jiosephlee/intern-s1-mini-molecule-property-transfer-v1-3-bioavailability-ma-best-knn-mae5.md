@@ -36,7 +36,7 @@ El modelo se basa presumiblemente en la arquitectura Intern-S1-mini, que a su ve
 - Filtrado de librerías químicas: dado un conjunto de millones de compuestos, se puede usar el modelo para descartar aquellos con baja biodisponibilidad predicha, acelerando el cribado virtual.
 - Transferencia de resultados entre ensayos: cuando un laboratorio tiene datos de un ensayo pero no de otro, el modelo puede transferir el conocimiento aprendido para estimar resultados en el ensayo objetivo.
 - Optimización de lead compounds: en química medicinal, el modelo ayuda a modificar estructuras de moléculas prometedoras para mejorar su biodisponibilidad, evaluando rápidamente variantes.
-- Integración en pipelines de quimioinformática: dado que el modelo es compatible con Transformers, puede integrarse en flujos de Python usando la API de HuggingFace para predicciones por lotes.
+- Integración en pipelines de quimioinformática: dado que el modelo es compatible con Transformers, puede integrarse en flujos de Python usando la API de Hugging Face para predicciones por lotes.
 - Análisis de datos de biodisponibilidad con votos: el dataset usa votos y medias, lo que permite al modelo manejar incertidumbre en las etiquetas, útil para datos experimentales ruidosos.
 
 ## Benchmarks y rendimiento
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks comparativos en la información dis
 - VRAM estimada para inferencia: con 8.201.221.120 parámetros en precisión fp32, se necesitarían aproximadamente 32 GB de VRAM. En fp16, unos 16,4 GB. Con cuantización a 8 bits, ~8,2 GB; a 4 bits, ~4,1 GB (estimaciones teóricas, no confirmadas por el autor).
 - GPU recomendadas: para fp16, una GPU con 24 GB (RTX 4090, A5000) sería suficiente. Para cuantización 4-bit, una RTX 3090 o inferior (12-16 GB) podría bastar. En entornos de producción, A100 o H100 ofrecen mayor throughput.
 - Compatibilidad con GPU de consumo: sí, con cuantización adecuada (p. ej., bitsandbytes o GPTQ) cabe en GPUs de 16 GB o incluso 8 GB, aunque con latencia mayor.
-- Opciones de despliegue: al ser un modelo Transformers con safetensors, puede servirse con vLLM, Text Generation Inference (TGI) o directamente con la librería transformers de HuggingFace. También es posible convertirlo a GGUF para usar con llama.cpp u Ollama, aunque no hay archivos GGUF oficiales.
+- Opciones de despliegue: al ser un modelo Transformers con safetensors, puede servirse con vLLM, Text Generation Inference (TGI) o directamente con la librería transformers de Hugging Face. También es posible convertirlo a GGUF para usar con llama.cpp u Ollama, aunque no hay archivos GGUF oficiales.
 - Latencia y throughput: no disponibles. Dado el tamaño de 8B, en una A100 se esperaría un throughput de decenas de tokens por segundo en generación, pero al ser una tarea de regresión, la inferencia es de una sola pasada y muy rápida (milisegundos por molécula).
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables en la misma categoría d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiosephlee/intern-s1-mini-molecule-property-transfer-v1.3-bioavailability-ma-best-knn-mae5
+- Modelo en Hugging Face: https://huggingface.co/jiosephlee/intern-s1-mini-molecule-property-transfer-v1.3-bioavailability-ma-best-knn-mae5
 - Base Intern-S1-mini (jiosephlee): https://huggingface.co/jiosephlee/Intern-S1-mini-lm
 - Intern-S1-mini original (internlm): https://huggingface.co/internlm/Intern-S1-mini
 - Repositorio GitHub de Intern-S1: https://github.com/InternLM/Intern-S1

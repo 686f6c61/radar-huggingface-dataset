@@ -73,13 +73,13 @@ Los parametros totales y el rendimiento de las variantes comparadas no estan dis
 - Vocabulario reducido en la fase de post-entrenamiento: la capa de salida tiene solo 256 tokens, lo que limita su capacidad de generar texto general.
 - Riesgo de alucinacion alto: al ser un modelo pequeno y sin ajuste fino para tareas generales, las respuestas fuera del dominio Dyck son poco fiables.
 - Sin soporte para tool calling, agentes, vision ni audio.
-- Formato de pesos no estandar: el checkpoint es un state_dict de PyTorch, no un modelo listo para HuggingFace Transformers u otros frameworks sin conversion.
+- Formato de pesos no estandar: el checkpoint es un state_dict de PyTorch, no un modelo listo para Hugging Face Transformers u otros frameworks sin conversion.
 - Idiomas no declarados: aunque el pre-entrenamiento se realizo con FineWeb (mayoritariamente ingles), no hay garantia de rendimiento en otros idiomas.
 - Licencia Apache 2.0: permite uso comercial, pero el modelo no esta optimizado para ello y carece de documentacion de soporte.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_adamwppt_5M_s1_2026-09-06_22-15-55_768810-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_adamwppt_5M_s1_2026-09-06_22-15-55_768810-pt
 - W&B run: https://wandb.ai/alexksternteam/token_dose_1Bpt_adamw_seed_replicas_v1/runs/zfcfc2j9
 - Nanochat (framework de entrenamiento): https://github.com/karpathy/nanochat
 - Variante con 1B tokens de post-entrenamiento: https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfinit_1B_s1_2026-08-14_16-47-14_126981-pt

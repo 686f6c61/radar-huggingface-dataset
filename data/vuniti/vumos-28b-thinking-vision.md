@@ -77,12 +77,12 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 - Dependencia de un ecosistema cerrado: el modelo deja de funcionar si la aplicacion VuNiti deja de estar disponible o si el proveedor modifica los terminos de servicio.
 - Sin soporte para herramientas estandar: no es compatible con motores de inferencia habituales, lo que impide su uso en pipelines de produccion, fine-tuning o experimentacion academica.
 - Idiomas soportados no especificados: la model card no indica que idiomas cubre, lo que dificulta evaluar su utilidad en entornos multilingues.
-- Sin comunidad ni soporte: cero descargas y cero likes en HuggingFace, sin foros ni documentacion adicional mas alla de la model card.
+- Sin comunidad ni soporte: cero descargas y cero likes en Hugging Face, sin foros ni documentacion adicional mas alla de la model card.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VuNiti/VuMos-28B-Thinking-Vision
-- Organizacion VuNiti en HuggingFace: https://huggingface.co/VuNiti
+- Repositorio Hugging Face: https://huggingface.co/VuNiti/VuMos-28B-Thinking-Vision
+- Organizacion VuNiti en Hugging Face: https://huggingface.co/VuNiti
 - GitHub de VuNiti: https://github.com/VuNiti
 - Repositorio principal VuNiti (ecosistema): https://github.com/VuNiti/VuNiti
 - Sitio web oficial: https://vuniti.com

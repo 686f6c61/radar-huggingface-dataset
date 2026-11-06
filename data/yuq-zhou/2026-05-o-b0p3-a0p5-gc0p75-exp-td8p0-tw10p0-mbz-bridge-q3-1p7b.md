@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de modelo de lenguaje en formato HuggingFace estándar, identificado como `yuq-zhou/2026-05-o-b0p3-a0p5-gc0p75-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b`. Se trata de un artefacto de investigación (así lo indica su model card) creado por el usuario `yuq-zhou` en agosto de 2026. El nombre del archivo sugiere un experimento con hiperparámetros concretos (por ejemplo, `b0p3`, `a0p5`, `gc0p75`, `exp`, `td8p0`, `tw10p0`, `mbz`, `bridge`, `q3`), aunque no se proporciona documentación adicional sobre el diseño del experimento.
+Este repositorio contiene un checkpoint de modelo de lenguaje en formato Hugging Face estándar, identificado como `yuq-zhou/2026-05-o-b0p3-a0p5-gc0p75-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b`. Se trata de un artefacto de investigación (así lo indica su model card) creado por el usuario `yuq-zhou` en agosto de 2026. El nombre del archivo sugiere un experimento con hiperparámetros concretos (por ejemplo, `b0p3`, `a0p5`, `gc0p75`, `exp`, `td8p0`, `tw10p0`, `mbz`, `bridge`, `q3`), aunque no se proporciona documentación adicional sobre el diseño del experimento.
 
 El modelo tiene aproximadamente 2.030 millones de parámetros (2,03B) y está etiquetado con `qwen3`, lo que indica que probablemente se basa en la arquitectura Qwen3, aunque no se confirma explícitamente. Su pipeline es `text-generation` y los pesos están en formato `safetensors`. No se dispone de información sobre licencia, idiomas soportados, datos de entrenamiento ni benchmarks publicados. Dado que el repositorio no tiene descargas ni likes, es un artefacto de investigación sin difusión pública, posiblemente un checkpoint intermedio de un experimento de entrenamiento o fine-tuning.
 
@@ -88,4 +88,4 @@ Este modelo no ofrece ventajas claras frente a estas opciones, salvo su interés
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a0p5-gc0p75-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b
+- Repositorio Hugging Face: https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a0p5-gc0p75-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b

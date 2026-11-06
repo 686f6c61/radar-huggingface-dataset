@@ -73,9 +73,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni benchmarks generalis
 
 | Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cgpadwick2020/qwen3-1.7b-triton-grpo-run9 | 1,72B | no disponible | Kernels Triton | Apache 2.0 | HuggingFace |
-| cgpadwick2020/qwen3-1.7b-triton-sft-v2 | 1,72B | no disponible | Kernels Triton (SFT) | Apache 2.0 | HuggingFace |
-| Qwen3-1.7B (base) | 1,72B | no disponible | Propósito general | Apache 2.0 | HuggingFace |
+| cgpadwick2020/qwen3-1.7b-triton-grpo-run9 | 1,72B | no disponible | Kernels Triton | Apache 2.0 | Hugging Face |
+| cgpadwick2020/qwen3-1.7b-triton-sft-v2 | 1,72B | no disponible | Kernels Triton (SFT) | Apache 2.0 | Hugging Face |
+| Qwen3-1.7B (base) | 1,72B | no disponible | Propósito general | Apache 2.0 | Hugging Face |
 | TritonRL (referencia del paper) | no disponible | no disponible | Kernels Triton con RL | no disponible | Paper arXiv |
 
 No se dispone de datos de benchmarks comparativos directos con otras alternativas en la información proporcionada.
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos directos con otras alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cgpadwick2020/qwen3-1.7b-triton-grpo-run9
+- Modelo en Hugging Face: https://huggingface.co/cgpadwick2020/qwen3-1.7b-triton-grpo-run9
 - Modelo base SFT: https://huggingface.co/cgpadwick2020/qwen3-1.7b-triton-sft-v2
 - Paper TritonRL (Woo et al.): https://arxiv.org/abs/2510.17891
 - Qwen3-1.7B (modelo base original): no disponible en la información proporcionada

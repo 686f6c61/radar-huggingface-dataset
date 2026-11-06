@@ -98,7 +98,7 @@ Los datos de rendimiento de benchmarks no estan disponibles, por lo que la compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Thor39/Qwen2.5-Coder-7B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/Thor39/Qwen2.5-Coder-7B-Instruct
 - Modelo original: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen2.5-Coder-7B
 - Blog de la familia Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder-family/

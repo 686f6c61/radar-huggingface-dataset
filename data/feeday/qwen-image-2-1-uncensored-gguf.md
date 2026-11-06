@@ -1,7 +1,7 @@
 # feeday/Qwen-Image-2.1-Uncensored-GGUF
 
 ## Resumen
-Qwen-Image-2.1-Uncensored-GGUF es un repositorio de cuantizaciones del modelo de difusion texto-a-imagen Qwen/Qwen-Image-2.1, publicado por el usuario feeday en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversion de los pesos base upstream a formatos GGUF y safetensors cuantizados, distribuida junto con los ficheros complementarios necesarios para su uso local (text encoder y VAE). El objetivo declarado es permitir la generacion de imagenes en local mediante ComfyUI, ademas de ofrecer variantes etiquetadas como "uncensored".
+Qwen-Image-2.1-Uncensored-GGUF es un repositorio de cuantizaciones del modelo de difusion texto-a-imagen Qwen/Qwen-Image-2.1, publicado por el usuario feeday en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversion de los pesos base upstream a formatos GGUF y safetensors cuantizados, distribuida junto con los ficheros complementarios necesarios para su uso local (text encoder y VAE). El objetivo declarado es permitir la generacion de imagenes en local mediante ComfyUI, ademas de ofrecer variantes etiquetadas como "uncensored".
 
 El recuento de parametros del transformador de difusion es de 7.115.124.736 (aproximadamente 7,1 mil millones), segun los datos de safetensors. El repositorio ocupa 83.6 GB e incluye ocho cuantizaciones de la variante "uncensored" (BF16, FP8, INT8 convrot, Q8_0, Q6_K, Q5_K_M, Q4_K_M y Q4_0) y cinco de la variante base (Q8_0, Q6_K, Q5_K_M, Q4_K_M y Q4_0). El text encoder asociado es un Qwen3-VL de 8B, disponible en BF16 (17,53 GB) e INT8 (9,35 GB).
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-Uncensored-GGUF (este repositorio) | ~7,1 B (transformador de difusion) | GGUF y safetensors cuantizados | qwen-research (license: other) | HuggingFace, 0 descargas | Incluye text encoder y VAE empaquetados; variante "uncensored" sin documentar |
-| Qwen/Qwen-Image-2.1 (modelo base) | no disponible | no disponible | qwen-research | HuggingFace (repositorio oficial) | Origen de los pesos; el autor declara usarlos sin modificar el entrenamiento |
+| Qwen-Image-2.1-Uncensored-GGUF (este repositorio) | ~7,1 B (transformador de difusion) | GGUF y safetensors cuantizados | qwen-research (license: other) | Hugging Face, 0 descargas | Incluye text encoder y VAE empaquetados; variante "uncensored" sin documentar |
+| Qwen/Qwen-Image-2.1 (modelo base) | no disponible | no disponible | qwen-research | Hugging Face (repositorio oficial) | Origen de los pesos; el autor declara usarlos sin modificar el entrenamiento |
 | Qwen-Image-2.1-Uncensored-GGUF, ficheros sin sufijo UC | ~7,1 B | GGUF (Q4_0 a Q8_0) | qwen-research | Mismo repositorio | Misma quantizacion, sin la etiqueta "uncensored" |
 | Otras alternativas de difusion de tamano similar (FLUX.1, SD 3.5) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | No se aportan datos comparativos en esta busqueda |
 
@@ -92,7 +92,7 @@ No se dispone de datos verificados de rendimiento, contexto ni parametros de los
 - Consumo de disco y ancho de banda elevados: 83,6 GB de repositorio completo y 17,53 GB solo para el text encoder en BF16.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/feeday/Qwen-Image-2.1-Uncensored-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/feeday/Qwen-Image-2.1-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI-GGUF (fork requerido, leejet): https://github.com/leejet/ComfyUI-GGUF

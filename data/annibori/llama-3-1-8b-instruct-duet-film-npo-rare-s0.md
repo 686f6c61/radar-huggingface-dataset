@@ -78,9 +78,9 @@ Base de referencia: retain recall 0.842; suelo admisible 0.542. No se han public
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-DUET-film-NPO-rare-s0 | 8B | no disponible | Unlearning de hechos film (NPO) | llama3.1 | HuggingFace (0 descargas) |
-| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft | 8B | no disponible | Fine-tuning DUET film (base del anterior) | llama3.1 | HuggingFace |
-| Llama-3.1-8B-Instruct (Meta) | 8B | 128.000 tokens | Asistente generalista | llama3.1 | HuggingFace |
+| Llama-3.1-8B-Instruct-DUET-film-NPO-rare-s0 | 8B | no disponible | Unlearning de hechos film (NPO) | llama3.1 | Hugging Face (0 descargas) |
+| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft | 8B | no disponible | Fine-tuning DUET film (base del anterior) | llama3.1 | Hugging Face |
+| Llama-3.1-8B-Instruct (Meta) | 8B | 128.000 tokens | Asistente generalista | llama3.1 | Hugging Face |
 | Metodos de unlearning alternativos sobre DUET | no disponible | no disponible | Olvido de hechos film | no disponible | no disponible |
 
 La comparativa con otros checkpoints de unlearning publicados sobre el mismo conjunto DUET no esta disponible en la informacion proporcionada.
@@ -96,11 +96,11 @@ La comparativa con otros checkpoints de unlearning publicados sobre el mismo con
 - Idiomas soportados: no disponible; el system prompt y la evaluacion estan en ingles.
 - Restricciones de licencia: Llama 3.1 Community License, con condiciones de uso comercial y de redistribucion de Meta; revisar los terminos antes de cualquier uso en produccion.
 - Contexto maximo no confirmado en la model card: no asumir los 128.000 tokens de Llama 3.1 sin verificacion.
-- Sin descargas ni likes en HuggingFace: no hay evidencia de uso o validacion por terceros.
+- Sin descargas ni likes en Hugging Face: no hay evidencia de uso o validacion por terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-NPO-rare-s0
+- Modelo en Hugging Face: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-NPO-rare-s0
 - Modelo base: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft
 - Conjunto de datos DUET: https://huggingface.co/datasets/SwetieePawsss/DUET_LLM
 - Repositorio open-unlearning (framework de entrenamiento citado): no disponible como enlace directo en la informacion proporcionada

@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento para comparar con otros modelos. A continu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-bvs8
+- Repositorio Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-bvs8
 - Checkpoint variante base: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base
 - Checkpoint variante ncp20 iid30v11v: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp20-iid30v11v
 - Proyecto Cobalt (GitHub OSU-NLP-Group): https://github.com/OSU-NLP-Group/cobalt

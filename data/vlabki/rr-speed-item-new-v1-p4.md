@@ -6,7 +6,7 @@ El modelo `vlabki/rr-speed-item-new-v1-p4` es un checkpoint de política recurre
 
 Con solo 615.374 parámetros, se trata de un modelo extremadamente ligero, lo que lo hace adecuado para experimentos en entornos con recursos limitados o para integración en sistemas embebidos. El checkpoint incluye pesos, configuración del modelo, estadísticas de normalización, referencia de ruta y configuración de entrenamiento, todo empaquetado en formato safetensors. Aunque no se especifica la arquitectura exacta, el uso de recurrencia sugiere una red neuronal recurrente (tipo LSTM o GRU) combinada con una cabeza de política.
 
-La relevancia de este modelo radica en su aplicación práctica para el desarrollo de agentes autónomos en juegos de carreras, un campo que combina percepción visual, control continuo y planificación a corto plazo. Su publicación en HuggingFace permite a la comunidad reproducir y extender los resultados, aunque la documentación es mínima y no se proporcionan detalles sobre el entrenamiento ni métricas de rendimiento.
+La relevancia de este modelo radica en su aplicación práctica para el desarrollo de agentes autónomos en juegos de carreras, un campo que combina percepción visual, control continuo y planificación a corto plazo. Su publicación en Hugging Face permite a la comunidad reproducir y extender los resultados, aunque la documentación es mínima y no se proporcionan detalles sobre el entrenamiento ni métricas de rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -69,5 +69,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/vlabki/rr-speed-item-new-v1-p4)
+- [Modelo en Hugging Face](https://huggingface.co/vlabki/rr-speed-item-new-v1-p4)
 - [Modelo relacionado rr-speed-item-v1](https://huggingface.co/vlabki/rr-speed-item-v1)

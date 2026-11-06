@@ -32,7 +32,7 @@ La innovacion tecnica de este checkpoint es exclusivamente de compresion: se apl
 - Generacion de texto y comprension de imagenes: el pipeline declarado es image-text-to-text, con torre de vision mantenida en BF16.
 - Razonamiento aritmetico y de sentido comun: validado con GSM8K 5-shot (0,770 de exactitud), aunque no es una evaluacion exhaustiva.
 - Prediccion multi-token: el modelo incluye proyecciones MTP, lo que habilita decodificacion especulativa en implementaciones que lo soporten.
-- Conversacion multi-turno: el tag `conversational` esta presente en la ficha de HuggingFace.
+- Conversacion multi-turno: el tag `conversational` esta presente en la ficha de Hugging Face.
 - Compatibilidad con endpoints: etiquetado como `endpoints_compatible`.
 - Soporte de tool calling o function calling: no disponible.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
@@ -72,9 +72,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, MMMU u otro
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nm-testing/Qwen3.8-27B-MXFP6A8 | ~23,5 B (segun safetensors) | No disponible | GSM8K 0,770 | apache-2.0 | HuggingFace, requiere vLLM con MXFP6 |
-| Qwen/Qwen3.8-27B (base, BF16) | Denominado 27B | No disponible | GSM8K 0,782 | No disponible en la informacion proporcionada | HuggingFace |
-| gaunernst/Qwen3.8-27B-MXFP6 | No disponible | No disponible | No disponible | No disponible | HuggingFace; layout de referencia seguido por este checkpoint |
+| nm-testing/Qwen3.8-27B-MXFP6A8 | ~23,5 B (segun safetensors) | No disponible | GSM8K 0,770 | apache-2.0 | Hugging Face, requiere vLLM con MXFP6 |
+| Qwen/Qwen3.8-27B (base, BF16) | Denominado 27B | No disponible | GSM8K 0,782 | No disponible en la informacion proporcionada | Hugging Face |
+| gaunernst/Qwen3.8-27B-MXFP6 | No disponible | No disponible | No disponible | No disponible | Hugging Face; layout de referencia seguido por este checkpoint |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, MMMU u otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nm-testing/Qwen3.8-27B-MXFP6A8
+- Modelo en Hugging Face: https://huggingface.co/nm-testing/Qwen3.8-27B-MXFP6A8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint de referencia de layout: https://huggingface.co/gaunernst/Qwen3.8-27B-MXFP6
 - Repositorio compressed-tensors: https://github.com/vllm-project/compressed-tensors

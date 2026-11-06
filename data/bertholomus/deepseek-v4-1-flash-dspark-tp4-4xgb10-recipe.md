@@ -120,7 +120,7 @@ No se dispone de datos comparativos frente a despliegues de DeepSeek-V4.1-Flash 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bertholomus/DeepSeek-V4.1-Flash-DSpark-TP4-4xGB10-Recipe
+- Hugging Face: https://huggingface.co/bertholomus/DeepSeek-V4.1-Flash-DSpark-TP4-4xGB10-Recipe
 - Repositorio lanzador base citado en la model card: `MiaAI-Lab/DeepSeek-v4.1-Flash-DGX-Sparks` en el commit `e59e6eb` (URL no disponible en la informacion).
 - Pull request upstream #10, correspondiente al parche de descubrimiento de HCA (URL no disponible).
 - Documentacion interna de la receta citada en la model card: `docs/EVIDENCE.md`, `patches/000NN-*.diff`, `NOTICE.md`, `tools/bench-normalized.py`, `tp4_ab.py`, `agentic_single_stream.py` (rutas relativas dentro del propio repositorio; URL no disponible).

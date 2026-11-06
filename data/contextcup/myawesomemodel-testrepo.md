@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario `contextcup` que, según los metadatos de la plataforma, está etiquetado como `transformers`, `pytorch`, `bert` y `feature-extraction`, publicado bajo licencia MIT. El repositorio presenta un tamano de 0.0 GB, cero descargas y cero "likes", y las fechas de creación y actualización difieren en dos segundos (28 de septiembre de 2026), lo que apunta a un repositorio de prueba automatizado más que a una publicación real de pesos.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario `contextcup` que, según los metadatos de la plataforma, está etiquetado como `transformers`, `pytorch`, `bert` y `feature-extraction`, publicado bajo licencia MIT. El repositorio presenta un tamano de 0.0 GB, cero descargas y cero "likes", y las fechas de creación y actualización difieren en dos segundos (28 de septiembre de 2026), lo que apunta a un repositorio de prueba automatizado más que a una publicación real de pesos.
 
 Existe una contradicción sustancial entre los metadatos y la model card. Los metadatos describen un modelo BERT orientado a extracción de características (embeddings), mientras que el texto de la model card describe un supuesto modelo de razonamiento de última generación, con mejoras en matemáticas, programación, lógica general, llamada a funciones y una reducción de la tasa de alucinación. La model card incluye cifras de benchmarks, un salto del 70 % al 87,5 % en AIME 2025, y recomendaciones de uso (system prompt, temperatura 0,6, plantillas para subida de ficheros y búsqueda web).
 
@@ -30,7 +30,7 @@ No se dispone de información verificable sobre arquitectura, número de paráme
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información técnica verificable sobre la arquitectura. Los metadatos de HuggingFace asignan la etiqueta `bert`, lo que sugeriría un encoder transformer bidireccional destinado a generar representaciones vectoriales para tareas posteriores (clasificación, similitud semántica, recuperación de información). Sin embargo, el pipeline declarado (`feature-extraction`) es coherente con esa lectura, mientras que el contenido de la model card la contradice por completo.
+No se ha publicado información técnica verificable sobre la arquitectura. Los metadatos de Hugging Face asignan la etiqueta `bert`, lo que sugeriría un encoder transformer bidireccional destinado a generar representaciones vectoriales para tareas posteriores (clasificación, similitud semántica, recuperación de información). Sin embargo, el pipeline declarado (`feature-extraction`) es coherente con esa lectura, mientras que el contenido de la model card la contradice por completo.
 
 La model card afirma que el modelo "ha experimentado una actualización de versión significativa" con mejoras en profundidad de razonamiento e inferencia, atribuidas a "mayores recursos computacionales" y a "mecanismos de optimización algorítmica durante el post-entrenamiento". No se especifica el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF, DPO o RL con verificación. Tampoco se detalla ninguna innovación arquitectónica (atención lineal, decodificación especulativa, SSM, híbridos) más allá de la mención genérica a un aumento de la "profundidad de pensamiento", cuantificada como un incremento en el consumo medio de tokens por pregunta (de 12K a 23K en el conjunto AIME).
 
@@ -96,7 +96,7 @@ No se han publicado resultados de benchmarks verificables de forma independiente
 - VRAM estimada para inferencia: no disponible. Sin conocer el número de parámetros ni la longitud de contexto, no es posible calcular requisitos de memoria de forma fundamentada.
 - GPU recomendadas: no disponible por el mismo motivo.
 - Viabilidad en GPU de consumo: no disponible.
-- Opciones de despliegue: la model card remite a un "repositorio de código" para ejecución local, pero no se proporciona la URL ni instrucciones concretas. La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, aunque no hay pesos que servir.
+- Opciones de despliegue: la model card remite a un "repositorio de código" para ejecución local, pero no se proporciona la URL ni instrucciones concretas. La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, aunque no hay pesos que servir.
 - Latencia y throughput estimados: no disponible. El único indicio indirecto es el consumo declarado de ~23K tokens de razonamiento por pregunta en AIME, lo que implicaría latencias altas en cualquier configuración de decodificación autoregresiva estándar.
 
 ## Comparativa con modelos similares
@@ -130,7 +130,7 @@ La propia model card compara el modelo con tres referencias anonimizadas (Model1
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/contextcup/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/contextcup/MyAwesomeModel-TestRepo
 - Repositorio con contenido idéntico (autor distinto): https://huggingface.co/toolathlon4/MyAwesomeModel-TestRepo
 - Repositorio con contenido idéntico (autor distinto): https://huggingface.co/coreytoolathon/MyAwesomeModel-TestRepo
 - Ficha agregadora de terceros: https://essamamdani.com/ai-models/hf-hwefa-myawesomemodel-testrepo

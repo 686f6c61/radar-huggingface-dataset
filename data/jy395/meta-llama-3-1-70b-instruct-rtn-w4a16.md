@@ -50,7 +50,7 @@ No se proporcionan datos sobre el entrenamiento original (numero de tokens, comp
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card remite a la suite de evaluacion del repositorio finance-ptc-calibration para reproducir las diez tareas financieras del articulo, pero no incluye cifras en el repositorio de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite a la suite de evaluacion del repositorio finance-ptc-calibration para reproducir las diez tareas financieras del articulo, pero no incluye cifras en el repositorio de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jy395/Meta-Llama-3.1-70B-Instruct-rtn-w4a16 | 11,19B segun safetensors (base 70B) | no disponible | W4A16 RTN sin calibracion | Llama 3.1 Community | HuggingFace, 114 descargas |
-| meta-llama/Meta-Llama-3.1-70B-Instruct | 70B | 128K tokens | BF16/FP16 | Llama 3.1 Community | HuggingFace oficial |
-| Otras configuraciones de la coleccion ICAIF '26 (jy395) | variable | no disponible | distintas tecnicas con calibracion | Llama 3.1 Community | HuggingFace, coleccion financiera |
+| jy395/Meta-Llama-3.1-70B-Instruct-rtn-w4a16 | 11,19B segun safetensors (base 70B) | no disponible | W4A16 RTN sin calibracion | Llama 3.1 Community | Hugging Face, 114 descargas |
+| meta-llama/Meta-Llama-3.1-70B-Instruct | 70B | 128K tokens | BF16/FP16 | Llama 3.1 Community | Hugging Face oficial |
+| Otras configuraciones de la coleccion ICAIF '26 (jy395) | variable | no disponible | distintas tecnicas con calibracion | Llama 3.1 Community | Hugging Face, coleccion financiera |
 
 La comparativa con modelos de otros autores no esta disponible en la informacion proporcionada. Frente al modelo base, la diferencia principal es el menor peso en disco y la perdida potencial de calidad por la cuantizacion de 4 bits sin calibracion; frente al resto de la coleccion, la diferencia es el metodo de compresion (RTN frente a variantes con datos de calibracion).
 
@@ -84,7 +84,7 @@ La comparativa con modelos de otros autores no esta disponible en la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jy395/Meta-Llama-3.1-70B-Instruct-rtn-w4a16
+- Modelo en Hugging Face: https://huggingface.co/jy395/Meta-Llama-3.1-70B-Instruct-rtn-w4a16
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-70B-Instruct
 - Articulo ICAIF '26: https://doi.org/10.1145/3858063.3858724
 - Repositorio de codigo: https://github.com/JunyiYe/finance-ptc-calibration

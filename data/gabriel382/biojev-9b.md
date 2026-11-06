@@ -119,7 +119,7 @@ No se dispone en la informacion proporcionada de datos de otros modelos NLI biom
 
 ## Enlaces
 
-- Checkpoint BioJev-9B en HuggingFace: https://huggingface.co/Gabriel382/BioJev-9B
+- Checkpoint BioJev-9B en Hugging Face: https://huggingface.co/Gabriel382/BioJev-9B
 - BioJev-4B: https://huggingface.co/Gabriel382/BioJev
 - BioJev-Nano: https://huggingface.co/Gabriel382/BioJev-Nano
 - Codigo fuente en GitHub: https://github.com/Gabriel382/BioJev

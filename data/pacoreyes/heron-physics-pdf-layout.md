@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`heron-physics-pdf-layout` es un modelo de deteccion de objetos (object detection) especializado en el analisis de maquetacion (document layout analysis) de PDFs del dominio de la fisica. Es un fine-tune del modelo `docling-project/docling-layout-heron`, que a su vez esta basado en la arquitectura RT-DETRv2, y ha sido desarrollado por el usuario de HuggingFace `pacoreyes` en el marco del Physics-LLM Project. El modelo conserva la misma cabeza de clasificacion y el mismo esquema de 17 clases que el modelo base; unicamente se han reajustado los pesos mediante fine-tuning sobre documentos cientificos.
+`heron-physics-pdf-layout` es un modelo de deteccion de objetos (object detection) especializado en el analisis de maquetacion (document layout analysis) de PDFs del dominio de la fisica. Es un fine-tune del modelo `docling-project/docling-layout-heron`, que a su vez esta basado en la arquitectura RT-DETRv2, y ha sido desarrollado por el usuario de Hugging Face `pacoreyes` en el marco del Physics-LLM Project. El modelo conserva la misma cabeza de clasificacion y el mismo esquema de 17 clases que el modelo base; unicamente se han reajustado los pesos mediante fine-tuning sobre documentos cientificos.
 
 El problema que resuelve es la deteccion automatica de regiones estructurales (texto, formulas, tablas, pies de pagina, figuras, notas al pie, etc.) en paginas de PDFs cientificos, un paso previo imprescindible para tareas de extraccion de contenido, conversion a formatos estructurados y construccion de pipelines RAG sobre literatura cientifica. El interes practico radica en su mejora sustancial sobre el modelo base en mAP y AP@0.5 dentro del dominio de la fisica, un nicho con una densidad inusualmente alta de formulas y notas al pie.
 
@@ -94,7 +94,7 @@ La comparacion directa disponible es con el modelo base, sobre el que este fine-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pacoreyes/heron-physics-pdf-layout
+- Modelo en Hugging Face: https://huggingface.co/pacoreyes/heron-physics-pdf-layout
 - Modelo base: https://huggingface.co/docling-project/docling-layout-heron
 - Proyecto Docling (contexto del modelo base): https://github.com/docling-project/docling
 - Otros enlaces (paper, blog o demo del autor): no disponibles en la informacion proporcionada.

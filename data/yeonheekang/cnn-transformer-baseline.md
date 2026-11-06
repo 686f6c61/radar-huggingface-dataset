@@ -30,7 +30,7 @@ El repositorio incluye un `config.json` con la configuración de arquitectura ge
 ## Capacidades
 
 - Tarea principal: matching (emparejamiento o similitud entre dos entradas, posiblemente texto o imágenes).
-- Implementación personalizada: requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+- Implementación personalizada: requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 - No se documentan capacidades de generación de texto, razonamiento, código, matemáticas, visión, tool calling, agentes, ni multilingüismo.
 - No hay modo *thinking* ni soporte de audio o vídeo.
 - El modelo no ha sido entrenado, por lo que no se puede afirmar ninguna capacidad real de inferencia.
@@ -41,7 +41,7 @@ Dado que el modelo no está entrenado y es extremadamente pequeño, los casos de
 
 - Pruebas de humo en pipelines de desarrollo: sirve para verificar que el código de entrenamiento o inferencia funciona correctamente, gracias a su tamaño mínimo.
 - Investigación académica sobre arquitecturas híbridas CNN-Transformer: el código transparente permite estudiar la interacción entre capas convolucionales y transformers con atención lineal.
-- Desarrollo de adaptadores para carga personalizada: al ser una implementación a medida, puede usarse como banco de pruebas para escribir wrappers que permitan integrar modelos no estándar en frameworks como HuggingFace.
+- Desarrollo de adaptadores para carga personalizada: al ser una implementación a medida, puede usarse como banco de pruebas para escribir wrappers que permitan integrar modelos no estándar en frameworks como Hugging Face.
 - Benchmarking de eficiencia de memoria: con solo 33.088 parámetros, es útil para medir el overhead de frameworks de inferencia en modelos muy pequeños.
 - Educación en deep learning: el código y la configuración documentada pueden servir como ejemplo didáctico de una arquitectura híbrida.
 - Base para experimentos de inicialización: el checkpoint de inicialización puede usarse para estudiar el efecto de diferentes semillas o estrategias de inicialización en el entrenamiento.
@@ -68,10 +68,10 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 - No se proporcionan datos sobre sesgos, alucinaciones o limitaciones de contexto o idioma, simplemente porque el modelo no tiene capacidades demostradas.
 - La licencia Apache 2.0 permite uso comercial, pero el autor advierte que se deben revisar los términos de las fuentes de datos externas si se usan con datasets propios.
 - El modelo no es apto para producción: no hay evidencia de que funcione correctamente en ninguna tarea real.
-- La implementación es personalizada y no compatible con APIs estándar de HuggingFace sin un adaptador explícito.
+- La implementación es personalizada y no compatible con APIs estándar de Hugging Face sin un adaptador explícito.
 - Los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- [HuggingFace: yeonheekang/cnn-transformer-baseline](https://huggingface.co/yeonheekang/cnn-transformer-baseline)
+- [Hugging Face: yeonheekang/cnn-transformer-baseline](https://huggingface.co/yeonheekang/cnn-transformer-baseline)
 - No se han encontrado otros enlaces relevantes específicos de este modelo en la búsqueda web. Los resultados obtenidos (artículos sobre CNN-Transformer en diagnóstico médico, detección de deepfakes, etc.) son genéricos y no están relacionados directamente con este repositorio.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `binnugr01/contrastive-2024` es una implementación experimental de un Perceiver de escala "xlarge" diseñada para tareas de aprendizaje contrastivo. Lo publica el usuario de HuggingFace `binnugr01` (Bintang Nugroho) bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un release con capacidades demostradas: el repositorio incluye un checkpoint de inicialización válido para pruebas de humo (smoke tests) y un script Python con un ejemplo ejecutable, pero la model card advierte explícitamente de que no se presentan resultados de benchmarks ni se reclama ningún rendimiento.
+El modelo `binnugr01/contrastive-2024` es una implementación experimental de un Perceiver de escala "xlarge" diseñada para tareas de aprendizaje contrastivo. Lo publica el usuario de Hugging Face `binnugr01` (Bintang Nugroho) bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un release con capacidades demostradas: el repositorio incluye un checkpoint de inicialización válido para pruebas de humo (smoke tests) y un script Python con un ejemplo ejecutable, pero la model card advierte explícitamente de que no se presentan resultados de benchmarks ni se reclama ningún rendimiento.
 
 La arquitectura emplea atención con ventana deslizante, fusión gated, activación mish y normalización layernorm. El tamaño total de parámetros es de 24.832, lo que lo convierte en un modelo extremadamente pequeño, útil únicamente como punto de partida reproducible para investigación o para validar el flujo de entrenamiento contrastivo. Su relevancia actual es limitada: sirve como referencia de implementación, no como modelo listo para uso práctico.
 
@@ -66,6 +66,6 @@ No disponible. No se han encontrado modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/binnugr01/contrastive-2024
-- Perfil del autor en HuggingFace: https://huggingface.co/binnugr01
+- Modelo en Hugging Face: https://huggingface.co/binnugr01/contrastive-2024
+- Perfil del autor en Hugging Face: https://huggingface.co/binnugr01
 - Lista de modelos del autor: https://huggingface.co/binnugr01/models

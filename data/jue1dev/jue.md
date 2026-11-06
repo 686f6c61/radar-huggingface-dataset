@@ -88,8 +88,8 @@ Resultados declarados por el autor del modelo (no verificados de forma independi
 
 | Modelo | Parametros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Jue (Jue1Dev/jue) | 2,5B (base + LoRA) | Clasificación de decisiones de seguridad, sin generación | Apache-2.0 | Pesos abiertos en HuggingFace |
-| Jue-Flash (Jue1Dev/jue-flash) | no disponible | Variante ligera de Jue para el mismo dominio | no disponible | Pesos abiertos en HuggingFace |
+| Jue (Jue1Dev/jue) | 2,5B (base + LoRA) | Clasificación de decisiones de seguridad, sin generación | Apache-2.0 | Pesos abiertos en Hugging Face |
+| Jue-Flash (Jue1Dev/jue-flash) | no disponible | Variante ligera de Jue para el mismo dominio | no disponible | Pesos abiertos en Hugging Face |
 | SecGPT / LLMs de seguridad generativos (p. ej. modelos finetunados sobre Llama para ciberseguridad) | 7-8B típicamente | Generación de texto sobre tareas de seguridad | Variables | Pesos abiertos, pero con inferencia generativa más lenta y costosa |
 
 La diferencia clave frente a LLM generativos aplicados a seguridad es el modo de inferencia: Jue responde preguntas tipadas con probabilidades calibradas en una pasada, mientras que un LLM generativo produce texto libre, más flexible pero más lento, más caro y con mayor riesgo de alucinación en tareas de clasificación estructurada.
@@ -107,7 +107,7 @@ La diferencia clave frente a LLM generativos aplicados a seguridad es el modo de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jue1Dev/jue
+- Modelo en Hugging Face: https://huggingface.co/Jue1Dev/jue
 - Variante ligera Jue-Flash: https://huggingface.co/Jue1Dev/jue-flash
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Paper, repositorio de código y demos: no disponibles en la información proporcionada.

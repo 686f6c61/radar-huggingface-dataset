@@ -2,11 +2,11 @@
 
 ## Resumen
 
-q-Taxi-v3 es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario nayanaaa01 bajo el pipeline `reinforcement-learning`. No se trata de un modelo de lenguaje ni de una red neuronal: es una implementación propia de Q-learning tabular entrenada desde cero para resolver el entorno Taxi-v3 de Gymnasium, con un espacio de estados discreto de 500 estados y un espacio de acciones de 6 acciones. El artefacto distribuido es una tabla Q serializada en `q-learning.pkl`, no un conjunto de pesos en safetensors o GGUF.
+q-Taxi-v3 es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario nayanaaa01 bajo el pipeline `reinforcement-learning`. No se trata de un modelo de lenguaje ni de una red neuronal: es una implementación propia de Q-learning tabular entrenada desde cero para resolver el entorno Taxi-v3 de Gymnasium, con un espacio de estados discreto de 500 estados y un espacio de acciones de 6 acciones. El artefacto distribuido es una tabla Q serializada en `q-learning.pkl`, no un conjunto de pesos en safetensors o GGUF.
 
 El interés del repositorio es, por tanto, exclusivamente docente y de referencia: sirve como ejemplo mínimo y reproducible de un agente tabular entrenado durante 25.000 episodios, y como baseline de comparación frente a aproximaciones con función de valor paramétrica (DQN y similares) sobre el mismo entorno. Su scale es trivial: no requiere GPU, ocupa unos pocos kilobytes y puede ejecutarse íntegramente en CPU.
 
-La relevancia es limitada y hay que ser explícito: el repositorio acumula 0 descargas y 0 likes, no declara licencia ni idiomas, y el rendimiento reportado (recompensa media de 7,48 con desviación típica de 2,77) indica una política funcional pero con varianza alta, sin que la model card aporte una referencia del óptimo del entorno. Los metadatos de HuggingFace indican creación el 27 de septiembre de 2026.
+La relevancia es limitada y hay que ser explícito: el repositorio acumula 0 descargas y 0 likes, no declara licencia ni idiomas, y el rendimiento reportado (recompensa media de 7,48 con desviación típica de 2,77) indica una política funcional pero con varianza alta, sin que la model card aporte una referencia del óptimo del entorno. Los metadatos de Hugging Face indican creación el 27 de septiembre de 2026.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ La relevancia es limitada y hay que ser explícito: el repositorio acumula 0 des
 | Espacio de acciones | 6 (discreto) |
 | Episodios de entrenamiento | 25.000 |
 | Framework declarado | implementacion propia (`custom-implementation`) |
-| Tamano del repositorio | 0,0 GB reportados por HuggingFace |
+| Tamano del repositorio | 0,0 GB reportados por Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -53,7 +53,7 @@ No se aplicaron tecnicas de RLHF, DPO ni ajuste por preferencias, ni existen inn
 - Baseline en experimentos comparativos: sirve como referencia tabular frente a agentes con aproximacion de funcion (DQN, PPO tabular) sobre Taxi-v3, para medir la ganancia marginal de la red neuronal con 25.000 episodios de presupuesto.
 - Prueba de humo de pipelines de RL: al ser un pickle pequeno y sin dependencias de GPU, permite validar wrappers de Gymnasium, sistemas de logging de recompensas y formatos de evaluacion antes de escalar a entrenamientos costosos.
 - Regresion de compatibilidad de Gymnasium: cargar `q-learning.pkl` y verificar que `env_id` sigue resolviendo y que el bucle de evaluacion se comporta igual tras actualizar la libreria.
-- Ejemplo minimo de publicacion en HuggingFace Hub: demuestra el flujo completo de subida de un artefacto con model card y bloque `model-index`, util como plantilla para repositorios de RL mas complejos.
+- Ejemplo minimo de publicacion en Hugging Face Hub: demuestra el flujo completo de subida de un artefacto con model card y bloque `model-index`, util como plantilla para repositorios de RL mas complejos.
 - Material de auditoria metodologica: permite discutir como se reporta una metrica con desviacion tipica y por que penalizar el resultado restando la desviacion (4,71) es una eleccion conservadora frente a la media bruta (7,48).
 
 ## Benchmarks y rendimiento
@@ -103,5 +103,5 @@ No se dispone de datos de otros agentes comparables en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nayanaaa01/q-Taxi-v3
+- Modelo en Hugging Face: https://huggingface.co/nayanaaa01/q-Taxi-v3
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales asociados al modelo.

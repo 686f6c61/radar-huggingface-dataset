@@ -38,7 +38,7 @@ Datos adicionales del repositorio:
 
 No disponible. La model card del repositorio GGUF no incluye ninguna descripcion de la arquitectura del modelo base (no se especifica si es un transformer denso, un MoE, un modelo hibrido o un modelo con atencion lineal), ni tampoco el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares.
 
-Los unicos indicios tecnicos presentes en la informacion disponible son: (1) el tag `conversational`, que indica que el modelo base esta ajustado para dialogo; (2) el tag `endpoints_compatible`, que indica compatibilidad con los endpoints de inferencia de HuggingFace; (3) la existencia de ficheros `mmproj`, que en el ecosistema llama.cpp corresponden al proyector que conecta un codificador visual con el modelo de lenguaje, lo que sugiere capacidad de entrada de imagenes; y (4) el origen del modelo base, unitreerobotics, empresa dedicada a robotica. Ninguno de estos indicios constituye documentacion oficial de la arquitectura y deben tratarse como hipotesis a verificar en el repositorio del modelo base.
+Los unicos indicios tecnicos presentes en la informacion disponible son: (1) el tag `conversational`, que indica que el modelo base esta ajustado para dialogo; (2) el tag `endpoints_compatible`, que indica compatibilidad con los endpoints de inferencia de Hugging Face; (3) la existencia de ficheros `mmproj`, que en el ecosistema llama.cpp corresponden al proyector que conecta un codificador visual con el modelo de lenguaje, lo que sugiere capacidad de entrada de imagenes; y (4) el origen del modelo base, unitreerobotics, empresa dedicada a robotica. Ninguno de estos indicios constituye documentacion oficial de la arquitectura y deben tratarse como hipotesis a verificar en el repositorio del modelo base.
 
 En cuanto a la cuantizacion, el autor aplica el flujo habitual de conversion a GGUF con `quantize_version: 2` y `output_tensor_quantised: 1`, generando cuantizaciones estaticas. No se han publicado cuantizaciones ponderadas por imatrix para este modelo, lo que en la practica implica que los niveles bajos (Q2_K, Q3_K) pueden degradar mas la perplejidad que una version imatrix equivalente.
 
@@ -46,7 +46,7 @@ En cuanto a la cuantizacion, el autor aplica el flujo habitual de conversion a G
 
 - Generacion de texto conversacional en ingles, segun el tag `conversational` y el pipeline declarado por el autor de la cuantizacion.
 - Entrada multimodal: el repositorio incluye proyectores `mmproj` en Q8_0 (0,6 GB) y f16 (0,9 GB), necesarios para procesar imagenes en llama.cpp. La model card no especifica que tipo de modalidad maneja el proyector.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el modelo base puede desplegarse en los Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el modelo base puede desplegarse en los Inference Endpoints de Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues: no, el modelo declara unicamente ingles (`language: en`).

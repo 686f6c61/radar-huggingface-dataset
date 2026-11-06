@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `swe-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407` es un ajuste fino (fine-tuning) del modelo base `francesca9805/swe-latn-100mb-ppt-mp-struct-core-100mb_seed3407`, publicado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generacion de texto con arquitectura GPT-2, tal y como indican las etiquetas del repositorio, y cuenta con 124.770.816 parametros totales, un orden de magnitud equivalente a GPT-2 small. El entrenamiento se ha realizado con la libreria TRL de HuggingFace mediante la tecnica de Supervised Fine-Tuning (SFT).
+El modelo `swe-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407` es un ajuste fino (fine-tuning) del modelo base `francesca9805/swe-latn-100mb-ppt-mp-struct-core-100mb_seed3407`, publicado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generacion de texto con arquitectura GPT-2, tal y como indican las etiquetas del repositorio, y cuenta con 124.770.816 parametros totales, un orden de magnitud equivalente a GPT-2 small. El entrenamiento se ha realizado con la libreria TRL de Hugging Face mediante la tecnica de Supervised Fine-Tuning (SFT).
 
 El nombre del modelo sugiere un contexto de investigacion centrado en lenguas con escritura latina, probablemente sueco (`swe-latn`) y con un presupuesto de tokens o tamano de dataset de 100 MB, aunque la model card no aporta detalles sobre la composicion del dataset ni los idiomas efectivamente soportados. El sufijo `ckpt500_seed3407` apunta a un punto de control intermedio (checkpoint 500) de una ejecucion con semilla 3407, lo que refuerza su caracter experimental y academico mas que de produccion.
 
@@ -32,7 +32,7 @@ El proceso de entrenamiento se realizo con las siguientes versiones de framework
 - Generacion de texto autorregresiva: el pipeline declarado es `text-generation`, con soporte de entrada conversacional (lista de mensajes con rol y contenido) segun el ejemplo de la model card.
 - Ajuste por instrucciones (SFT): al haber sido entrenado con Supervised Fine-Tuning, se espera cierta capacidad de seguir instrucciones, aunque no se documenta su calidad.
 - Integracion con el ecosistema transformers: compatible con la libreria `transformers` y con `text-generation-inference` segun las etiquetas del repositorio.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en la infraestructura de Inference Endpoints de Hugging Face.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; el nombre sugiere orientacion al sueco en escritura latina, sin confirmar.
@@ -57,16 +57,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: en fp32, aproximadamente 0,5 GB solo para los pesos; en fp16/bf16, unos 0,25 GB. Con overhead de activaciones y cache KV, cabe holgadamente por debajo de 2 GB para contextos cortos.
 - GPU recomendadas: cualquier GPU moderna es suficiente, incluidas NVIDIA GTX 1060 (6 GB), RTX 2060, RTX 3060, RTX 4090, asi como GPU de datacenter como T4, A100 o H100 si se busca maximizar throughput.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo con al menos 4 GB de VRAM, e incluso en CPU para inferencia sin requisitos de latencia.
-- Opciones de despliegue: `transformers` (pipeline de text-generation), `text-generation-inference` (segun etiquetas), HuggingFace Inference Endpoints. No se documenta soporte de GGUF ni de llama.cpp u Ollama, aunque al ser un modelo GPT-2 seria tecnicamente convertible.
+- Opciones de despliegue: `transformers` (pipeline de text-generation), `text-generation-inference` (segun etiquetas), Hugging Face Inference Endpoints. No se documenta soporte de GGUF ni de llama.cpp u Ollama, aunque al ser un modelo GPT-2 seria tecnicamente convertible.
 - Latencia y throughput estimados: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/swe-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407 | 124,77 M | no disponible | no disponible | HuggingFace (0 descargas) |
+| francesca9805/swe-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407 | 124,77 M | no disponible | no disponible | Hugging Face (0 descargas) |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Ampliamente disponible |
-| Modelo base francesca9805/swe-latn-100mb-ppt-mp-struct-core-100mb_seed3407 | no disponible | no disponible | no disponible | HuggingFace |
+| Modelo base francesca9805/swe-latn-100mb-ppt-mp-struct-core-100mb_seed3407 | no disponible | no disponible | no disponible | Hugging Face |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible |
 
 La comparativa se limita a aspectos estructurales, ya que no hay datos de rendimiento publicados para este modelo ni una evaluacion comun con las alternativas. La diferencia principal frente a GPT-2 small y DistilGPT-2 radica en el ajuste SFT especifico y en el posible enfoque multilingue hacia lenguas latinas, aunque este extremo no esta confirmado por la documentacion.
@@ -85,7 +85,7 @@ La comparativa se limita a aspectos estructurales, ya que no hay datos de rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swe-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swe-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/swe-latn-100mb-ppt-mp-struct-core-100mb_seed3407
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/v5dm6yy9
 - Repositorio de TRL: https://github.com/huggingface/trl

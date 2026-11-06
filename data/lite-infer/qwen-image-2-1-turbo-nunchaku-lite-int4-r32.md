@@ -100,7 +100,7 @@ La comparacion se limita a las variantes del mismo checkpoint base, porque no se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lite-infer/qwen-image-2.1-turbo-nunchaku-lite-int4-r32
+- Repositorio Hugging Face: https://huggingface.co/lite-infer/qwen-image-2.1-turbo-nunchaku-lite-int4-r32
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Repositorio hermano NVFP4: https://huggingface.co/lite-infer/qwen-image-2.1-turbo-nunchaku-lite-nvfp4-r32
 - Herramienta de conversion: https://github.com/rootonchair/diffuse-compressor

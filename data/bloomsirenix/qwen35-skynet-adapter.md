@@ -4,7 +4,7 @@
 
 `bloomsirenix/qwen35-skynet-adapter` es un adaptador LoRA (formato PEFT) publicado por el usuario bloomsirenix sobre el modelo base `unsloth/Qwen3.5-4B`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de bajo rango que deben cargarse junto al modelo base para producir inferencia de generación de texto. El repositorio ocupa aproximadamente 0,2 GB, lo que es coherente con un adaptador LoRA y no con un modelo de pesos completos.
 
-El adaptador fue entrenado mediante SFT (supervised fine-tuning) usando el stack Unsloth + TRL + Transformers, según los tags declarados (`lora`, `sft`, `unsloth`, `trl`). La model card publicada es la plantilla por defecto de HuggingFace y no ha sido cumplimentada: todos los campos relevantes (desarrollador, licencia, idiomas, datos de entrenamiento, hiperparámetros, evaluación) aparecen como `[More Information Needed]`.
+El adaptador fue entrenado mediante SFT (supervised fine-tuning) usando el stack Unsloth + TRL + Transformers, según los tags declarados (`lora`, `sft`, `unsloth`, `trl`). La model card publicada es la plantilla por defecto de Hugging Face y no ha sido cumplimentada: todos los campos relevantes (desarrollador, licencia, idiomas, datos de entrenamiento, hiperparámetros, evaluación) aparecen como `[More Information Needed]`.
 
 Su relevancia práctica es limitada y debe evaluarse con cautela: no hay métricas publicadas, no hay descripción del dataset de ajuste y no se especifica la licencia. Cualquier evaluación seria requiere descargar el adaptador, cargarlo sobre el base y ejecutar una batería propia de pruebas antes de considerarlo para producción.
 
@@ -25,7 +25,7 @@ Su relevancia práctica es limitada y debe evaluarse con cautela: no hay métric
 
 El artefacto es un adaptador LoRA, es decir, matrices de bajo rango inyectadas en las capas del modelo base `unsloth/Qwen3.5-4B` y entrenadas mientras los pesos originales permanecen congelados. El pipeline declarado es `text-generation` con `library_name: peft`, y los tags confirman el uso de Unsloth y TRL para el ajuste supervisado (SFT). El tamano del repositorio (0,2 GB) es consistente con este tipo de adaptador, no con un fine-tuning completo.
 
-No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, la mezcla de idiomas, la existencia de fases de RLHF o DPO, ni los hiperparametros utilizados (learning rate, rango LoRA, alpha, target modules, precision). La model card incluye el enlace a `arxiv:1910.09700` en los tags, pero se trata de la cita generica del calculador de impacto de carbono (Lacoste et al., 2019) que aparece en la plantilla por defecto de HuggingFace, no de un paper asociado a este modelo.
+No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, la mezcla de idiomas, la existencia de fases de RLHF o DPO, ni los hiperparametros utilizados (learning rate, rango LoRA, alpha, target modules, precision). La model card incluye el enlace a `arxiv:1910.09700` en los tags, pero se trata de la cita generica del calculador de impacto de carbono (Lacoste et al., 2019) que aparece en la plantilla por defecto de Hugging Face, no de un paper asociado a este modelo.
 
 ## Capacidades
 
@@ -75,8 +75,8 @@ No hay datos verificables en la informacion proporcionada para establecer una co
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bloomsirenix/qwen35-skynet-adapter | Adaptador LoRA; base ~4B segun nombre | No disponible | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Modelo base `unsloth/Qwen3.5-4B` | No disponible | No disponible | No disponible | No disponible | HuggingFace (referenciado como base) |
+| bloomsirenix/qwen35-skynet-adapter | Adaptador LoRA; base ~4B segun nombre | No disponible | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Modelo base `unsloth/Qwen3.5-4B` | No disponible | No disponible | No disponible | No disponible | Hugging Face (referenciado como base) |
 | Alternativas de ~3-4B (Qwen, Llama, Gemma, Phi) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No evaluado |
 
 No se puede afirmar superioridad ni equivalencia frente a ninguna alternativa sin ejecutar evaluaciones comparativas propias.
@@ -96,7 +96,7 @@ No se puede afirmar superioridad ni equivalencia frente a ninguna alternativa si
 
 ## Enlaces
 
-- Pagina del adaptador en HuggingFace: https://huggingface.co/bloomsirenix/qwen35-skynet-adapter
+- Pagina del adaptador en Hugging Face: https://huggingface.co/bloomsirenix/qwen35-skynet-adapter
 - Modelo base declarado: https://huggingface.co/unsloth/Qwen3.5-4B
 - Referencia citada en los tags de la model card (calculador de impacto de carbono, no asociada al modelo): https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT: https://huggingface.co/docs/peft

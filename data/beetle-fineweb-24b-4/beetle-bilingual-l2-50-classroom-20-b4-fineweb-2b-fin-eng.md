@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `beetle-bilingual-l2-50-classroom-20-b4-fineweb-2b-fin-eng` es un modelo de lenguaje de tipo decoder publicado en HuggingFace por el usuario `Beetle-FineWeb-24B-4`. Con 193.804.032 parámetros totales (aproximadamente 194 millones, según el recuento real extraído de los ficheros safetensors) y un pipeline declarado de `text-generation`, se trata de un modelo pequeno orientado a la generacion de texto. Los tags de la ficha incluyen `pico_decoder` y `custom_code`, lo que indica que utiliza una arquitectura de decoder propia con implementacion personalizada en la libreria transformers, no una arquitectura estandar del catalogo habitual.
+El modelo `beetle-bilingual-l2-50-classroom-20-b4-fineweb-2b-fin-eng` es un modelo de lenguaje de tipo decoder publicado en Hugging Face por el usuario `Beetle-FineWeb-24B-4`. Con 193.804.032 parámetros totales (aproximadamente 194 millones, según el recuento real extraído de los ficheros safetensors) y un pipeline declarado de `text-generation`, se trata de un modelo pequeno orientado a la generacion de texto. Los tags de la ficha incluyen `pico_decoder` y `custom_code`, lo que indica que utiliza una arquitectura de decoder propia con implementacion personalizada en la libreria transformers, no una arquitectura estandar del catalogo habitual.
 
-El nombre del repositorio sugiere un entrenamiento bilingue (probablemente fines e ingles, por el sufijo `fin-eng`) sobre datos derivados de FineWeb, con una ventana de contexto probablemente de 2.000 tokens (por el fragmento `fineweb-2b`) y alguna configuracion interna etiquetada como `l2-50-classroom-20-b4`. Sin embargo, estos extremos no estan confirmados por la model card, que se limita a la plantilla autogenerada de HuggingFace sin contenido real en ninguna de sus secciones.
+El nombre del repositorio sugiere un entrenamiento bilingue (probablemente fines e ingles, por el sufijo `fin-eng`) sobre datos derivados de FineWeb, con una ventana de contexto probablemente de 2.000 tokens (por el fragmento `fineweb-2b`) y alguna configuracion interna etiquetada como `l2-50-classroom-20-b4`. Sin embargo, estos extremos no estan confirmados por la model card, que se limita a la plantilla autogenerada de Hugging Face sin contenido real en ninguna de sus secciones.
 
 La relevancia de este modelo es limitada y de ambito experimental o de investigacion: cuenta con 178 descargas y 0 likes, no declara licencia, no documenta idiomas soportados y no publica resultados de evaluacion. El repositorio ocupa 83,0 GB, un tamano desproporcionado para 194 millones de parametros en precision estandar, lo que apunta a que contiene multiples checkpoints, estados de optimizador u otros artefactos de entrenamiento ademas de los pesos finales.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es limitada y de ambito experimental o de investiga
 
 La arquitectura se declara implicitamente mediante los tags `pico_decoder` y `custom_code`. Esto implica que el modelo no se corresponde con ninguna implementacion estandar de la libreria transformers, sino que requiere cargar codigo propio del repositorio (habitualmente mediante `trust_remote_code=True`). El detalle de capas, dimension de embeddings, numero de cabezas de atencion, tipo de atencion (completa, lineal o hibrida) y funcion de activacion no figura en la informacion proporcionada.
 
-Tampoco hay datos sobre el proceso de entrenamiento. No se especifica el numero de tokens vistos, la composicion exacta del dataset (el nombre apunta a un subconjunto de FineWeb, pero sin cifras), si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT, ni los hiperparametros utilizados. El tag `arxiv:1910.09700` que aparece en la ficha corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla generica de HuggingFace, y no a un paper especifico de este modelo.
+Tampoco hay datos sobre el proceso de entrenamiento. No se especifica el numero de tokens vistos, la composicion exacta del dataset (el nombre apunta a un subconjunto de FineWeb, pero sin cifras), si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT, ni los hiperparametros utilizados. El tag `arxiv:1910.09700` que aparece en la ficha corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla generica de Hugging Face, y no a un paper especifico de este modelo.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento del modelo analizado, por lo que la compar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| beetle-bilingual-l2-50-classroom-20-b4-fineweb-2b-fin-eng | 194 M | no disponible | no disponible | HuggingFace (safetensors, custom code) |
+| beetle-bilingual-l2-50-classroom-20-b4-fineweb-2b-fin-eng | 194 M | no disponible | no disponible | Hugging Face (safetensors, custom code) |
 | GPT-2 | 124 M | 1.024 tokens | MIT (segun publicacion original; verificar) | ampliamente disponible |
 | Pythia-160M | 160 M | 2.048 tokens | Apache 2.0 (segun publicacion original; verificar) | ampliamente disponible |
 
@@ -92,7 +92,7 @@ No se dispone de resultados comparativos de calidad, y no se han identificado en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beetle-FineWeb-24B-4/beetle-bilingual-l2-50-classroom-20-b4-fineweb-2b-fin-eng
+- Modelo en Hugging Face: https://huggingface.co/Beetle-FineWeb-24B-4/beetle-bilingual-l2-50-classroom-20-b4-fineweb-2b-fin-eng
 - Articulo citado en el tag de la ficha (Lacoste et al., estimacion de impacto de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico referenciada en la plantilla: https://mlco2.github.io/impact
 

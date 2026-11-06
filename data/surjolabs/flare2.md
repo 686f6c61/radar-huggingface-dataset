@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SurjoLabs/Flare2 es un modelo publicado por la organización SurjoLabs en HuggingFace, con fecha de creación el 28 de agosto de 2026. El repositorio contiene pesos en formato safetensors y ocupa 20,2 GB, lo que sugiere un modelo de tamaño considerable, probablemente en el rango de 7B a 13B parámetros en precisión fp16, aunque no se ha confirmado oficialmente. El acceso al modelo está restringido (gated), por lo que es necesario aceptar condiciones específicas en HuggingFace antes de poder descargarlo.
+SurjoLabs/Flare2 es un modelo publicado por la organización SurjoLabs en Hugging Face, con fecha de creación el 28 de agosto de 2026. El repositorio contiene pesos en formato safetensors y ocupa 20,2 GB, lo que sugiere un modelo de tamaño considerable, probablemente en el rango de 7B a 13B parámetros en precisión fp16, aunque no se ha confirmado oficialmente. El acceso al modelo está restringido (gated), por lo que es necesario aceptar condiciones específicas en Hugging Face antes de poder descargarlo.
 
 En el momento de redactar esta ficha, no se dispone de información pública sobre la arquitectura, el entrenamiento, las capacidades o los benchmarks del modelo. La página del modelo no incluye una model card detallada, y las búsquedas web no arrojan resultados concluyentes sobre Flare2. Existe un modelo hermano llamado SurjoLabs/Flare (sin el sufijo "2") que también carece de documentación sustancial. Dada la escasez de datos, esta ficha se limita a reflejar la información disponible y marca explícitamente los campos no confirmados.
 
@@ -27,7 +27,7 @@ No se ha publicado información sobre la arquitectura del modelo (si es transfor
 
 ## Capacidades
 
-No se han documentado capacidades concretas para SurjoLabs/Flare2. Al tratarse de un modelo con pesos safetensors, es plausible que sea un modelo de lenguaje, pero no hay confirmación oficial. No se puede afirmar si soporta generación de texto, razonamiento, código, tool calling, agentes, multimodalidad o cualquier otra funcionalidad. Se recomienda consultar la página del modelo en HuggingFace para obtener actualizaciones.
+No se han documentado capacidades concretas para SurjoLabs/Flare2. Al tratarse de un modelo con pesos safetensors, es plausible que sea un modelo de lenguaje, pero no hay confirmación oficial. No se puede afirmar si soporta generación de texto, razonamiento, código, tool calling, agentes, multimodalidad o cualquier otra funcionalidad. Se recomienda consultar la página del modelo en Hugging Face para obtener actualizaciones.
 
 ## Casos de uso
 
@@ -47,7 +47,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en HuggingFace. Esto puede limitar su uso inmediato y su reproducibilidad.
+- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en Hugging Face. Esto puede limitar su uso inmediato y su reproducibilidad.
 - Licencia no especificada: no se indica la licencia, lo que impide conocer si es de uso comercial, si tiene restricciones de atribución o si es completamente abierta.
 - Documentación inexistente: la ausencia de model card y de información técnica dificulta la evaluación de sesgos, riesgos de alucinación o limitaciones de contexto.
 - Riesgo de confusión: existe un modelo llamado SurjoLabs/Flare (sin el "2") y otros proyectos con el nombre FLARE (como el de ant-research o el paper de difusión híbrida) que no están relacionados. Se debe verificar siempre el identificador exacto.
@@ -55,7 +55,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SurjoLabs/Flare2
+- Modelo en Hugging Face: https://huggingface.co/SurjoLabs/Flare2
 - Modelo relacionado (SurjoLabs/Flare): https://huggingface.co/SurjoLabs/Flare
 - Búsqueda de modelos con tag "surjo_exp": https://huggingface.co/models?other=surjo_exp
 

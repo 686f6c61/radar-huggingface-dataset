@@ -2,11 +2,11 @@
 
 ## Resumen
 
-vit-beans-demo es un modelo de clasificación de imágenes publicado por el usuario YOLONIME en HuggingFace. Se trata de un ajuste fino (fine-tuning) completo del checkpoint google/vit-base-patch16-224-in21k, un Vision Transformer de tipo base con parches de 16x16 y resolución de entrada de 224x224, preentrenado por Google en ImageNet-21k. El modelo resultante tiene 85.800.963 parámetros y se distribuye en formato safetensors bajo licencia Apache 2.0, por lo que es apto para uso comercial sin restricciones adicionales.
+vit-beans-demo es un modelo de clasificación de imágenes publicado por el usuario YOLONIME en Hugging Face. Se trata de un ajuste fino (fine-tuning) completo del checkpoint google/vit-base-patch16-224-in21k, un Vision Transformer de tipo base con parches de 16x16 y resolución de entrada de 224x224, preentrenado por Google en ImageNet-21k. El modelo resultante tiene 85.800.963 parámetros y se distribuye en formato safetensors bajo licencia Apache 2.0, por lo que es apto para uso comercial sin restricciones adicionales.
 
 El modelo resuelve una tarea de clasificación de imágenes cerrada, presumiblemente relacionada con hojas de judía (beans) por el nombre del repositorio, aunque la model card no identifica el conjunto de datos empleado y lo describe explícitamente como "unknown dataset". El autor declara una precisión de 0,9609 y una pérdida de 0,1596 sobre el conjunto de evaluación, sin especificar su composición ni su tamaño.
 
-Su relevancia práctica es limitada pero ilustrativa: es un ejemplo mínimo y reproducible de fine-tuning de un ViT con la librería Transformers, con hiperparámetros documentados y compatible con endpoints de HuggingFace. No se han publicado benchmarks formales (el bloque model-index está vacío), el repositorio no tiene descargas ni valoraciones, y la información sobre datos, clases y limitaciones es prácticamente inexistente. Cualquier uso en producción exigiría validar previamente el dominio de aplicación.
+Su relevancia práctica es limitada pero ilustrativa: es un ejemplo mínimo y reproducible de fine-tuning de un ViT con la librería Transformers, con hiperparámetros documentados y compatible con endpoints de Hugging Face. No se han publicado benchmarks formales (el bloque model-index está vacío), el repositorio no tiene descargas ni valoraciones, y la información sobre datos, clases y limitaciones es prácticamente inexistente. Cualquier uso en producción exigiría validar previamente el dominio de aplicación.
 
 ## Especificaciones técnicas
 
@@ -39,17 +39,17 @@ El entrenamiento se realizó con el Trainer de Transformers usando los siguiente
 - No soporta agentes, razonamiento multi-paso ni diálogo multi-turno.
 - No tiene capacidades multilingües ni de generación de texto, código o matemáticas.
 - No dispone de modo "thinking", visión generativa, audio ni ninguna capacidad multimodal más allá de la imagen de entrada.
-- Etiquetado como endpoints_compatible, es decir, desplegable en HuggingFace Inference Endpoints a través del pipeline de clasificación de imágenes.
+- Etiquetado como endpoints_compatible, es decir, desplegable en Hugging Face Inference Endpoints a través del pipeline de clasificación de imágenes.
 
 ## Casos de uso
 
 - Clasificación automática de imágenes dentro del dominio entrenado: integrado con `transformers.pipeline("image-classification")`, el modelo devuelve una distribución de probabilidad sobre las clases aprendidas, utilizable como paso de triaje en líneas de inspección o preetiquetado de lotes de imágenes.
 - Preetiquetado y anotación asistida: dado su coste de inferencia bajo (85,8 M de parámetros), puede ejecutarse sobre grandes volúmenes de imágenes para proponer etiquetas que después se revisan por humanos, reduciendo el tiempo de anotación.
-- Prototipo académico y material docente: sirve como ejemplo completo de fine-tuning de un ViT con el Trainer, con hiperparámetros y curva de entrenamiento publicados, para prácticas de visión por computador y despliegue de modelos en HuggingFace.
+- Prototipo académico y material docente: sirve como ejemplo completo de fine-tuning de un ViT con el Trainer, con hiperparámetros y curva de entrenamiento publicados, para prácticas de visión por computador y despliegue de modelos en Hugging Face.
 - Clasificación en el borde (edge) o en local: al requerir menos de 1 GB de memoria en precisión completa y alrededor de 172 MB en fp16, es viable en dispositivos con recursos limitados o incluso en CPU, útil cuando no se puede enviar imágenes a la nube por motivos de privacidad.
 - Extracción de embeddings para recuperación visual: la representación del token [CLS] puede indexarse en una base vectorial para búsqueda de imágenes similares dentro del mismo dominio de datos.
 - Filtrado previo en un pipeline mayor: actuar como clasificador binario o multiclase de descarte (por ejemplo, separar imágenes que requieren análisis detallado de las que no) antes de invocar un modelo mayor y más costoso.
-- Validación de infraestructura de despliegue: por su tamaño y su etiqueta endpoints_compatible, es adecuado para probar configuraciones de Triton, ONNX Runtime o HuggingFace Inference Endpoints con un modelo ligero antes de escalar a modelos mayores.
+- Validación de infraestructura de despliegue: por su tamaño y su etiqueta endpoints_compatible, es adecuado para probar configuraciones de Triton, ONNX Runtime o Hugging Face Inference Endpoints con un modelo ligero antes de escalar a modelos mayores.
 
 ## Benchmarks y rendimiento
 
@@ -77,16 +77,16 @@ Nota: existe una discrepancia no explicada entre la accuracy de 0,9609 indicada 
 - Cabe sin problema en cualquier GPU de consumo: GTX 1650, RTX 3060, RTX 4090 o incluso integradas, siempre que haya al menos 1-2 GB de memoria libre.
 - Inferencia en CPU perfectamente viable, con latencias del orden de decenas de milisegundos por imagen en procesadores modernos (no se publican mediciones).
 - GPU de centro de datos (A100, H100, L40S) innecesarias salvo para procesamiento masivo por lotes, donde el cuello de botella será el preprocesado de imágenes, no el modelo.
-- Opciones de despliegue: `transformers` con `pipeline("image-classification")`, HuggingFace Inference Endpoints (etiqueta endpoints_compatible), ONNX Runtime o Transformers.js vía exportación con Optimum, TorchScript, NVIDIA Triton. No aplica a vLLM ni a llama.cpp, que no cubren clasificación de imágenes con ViT.
+- Opciones de despliegue: `transformers` con `pipeline("image-classification")`, Hugging Face Inference Endpoints (etiqueta endpoints_compatible), ONNX Runtime o Transformers.js vía exportación con Optimum, TorchScript, NVIDIA Triton. No aplica a vLLM ni a llama.cpp, que no cubren clasificación de imágenes con ViT.
 - Latencia y throughput: no disponibles. No se han publicado mediciones por parte del autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLONIME/vit-beans-demo | 85,8 M | 224x224, 196 parches + [CLS] | Accuracy 0,9609 declarada sobre un conjunto de evaluación no documentado; sin benchmarks públicos | apache-2.0 | HuggingFace, safetensors, 0 descargas |
-| google/vit-base-patch16-224-in21k | 86 M aprox. | 224x224 | Preentrenado en ImageNet-21k; sin cabeza de clasificación específica | apache-2.0 | HuggingFace, ampliamente utilizado |
-| google/vit-base-patch16-224 | 86 M aprox. | 224x224 | Clasificación en 1.000 clases de ImageNet-1k | apache-2.0 | HuggingFace, checkpoint de referencia muy extendido |
+| YOLONIME/vit-beans-demo | 85,8 M | 224x224, 196 parches + [CLS] | Accuracy 0,9609 declarada sobre un conjunto de evaluación no documentado; sin benchmarks públicos | apache-2.0 | Hugging Face, safetensors, 0 descargas |
+| google/vit-base-patch16-224-in21k | 86 M aprox. | 224x224 | Preentrenado en ImageNet-21k; sin cabeza de clasificación específica | apache-2.0 | Hugging Face, ampliamente utilizado |
+| google/vit-base-patch16-224 | 86 M aprox. | 224x224 | Clasificación en 1.000 clases de ImageNet-1k | apache-2.0 | Hugging Face, checkpoint de referencia muy extendido |
 | ResNet-50 (modelo convolucional clásico) | 25,6 M | 224x224 | Referencia habitual en clasificación de ImageNet-1k | varía según implementación | Amplia disponibilidad (torchvision, timm) |
 
 La comparación de rendimiento con alternativas no es significativa porque vit-beans-demo está ajustado sobre un conjunto de datos privado y no evaluado en ningún benchmark público: sus métricas no son transferibles ni comparables con las de los checkpoints de Google. Como referencia estructural, comparte arquitectura y tamaño con google/vit-base-patch16-224-in21k y es aproximadamente 3,3 veces más grande que un ResNet-50.
@@ -105,6 +105,6 @@ La comparación de rendimiento con alternativas no es significativa porque vit-b
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/YOLONIME/vit-beans-demo
+- Página del modelo en Hugging Face: https://huggingface.co/YOLONIME/vit-beans-demo
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224-in21k
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados obtenidos no guardan relación con el modelo.

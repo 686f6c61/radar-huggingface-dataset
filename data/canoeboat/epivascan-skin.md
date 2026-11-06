@@ -96,15 +96,15 @@ No se han publicado comparaciones directas con otros modelos dermatológicos en 
 - VRAM estimada para inferencia: el modelo tiene 86,6 M de parámetros y pesos en safetensors de aproximadamente 0,3 GB en fp32; en fp16 rondaría 0,17 GB y en int8 unos 0,09 GB, por lo que la huella de memoria es mínima.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre es suficiente; una RTX 3060, RTX 4090, A100 o H100 lo ejecutan sin problema, pero el modelo no aprovecha la capacidad de GPUs de gama alta.
 - Cabe en cualquier GPU de consumo actual e incluso en CPU para inferencia puntual, dado su reducido tamaño.
-- Opciones de despliegue: pipeline de transformers (image-classification), exportación a ONNX, TorchScript o TensorRT para producción; compatible con endpoints de HuggingFace (endpoints_compatible).
+- Opciones de despliegue: pipeline de transformers (image-classification), exportación a ONNX, TorchScript o TensorRT para producción; compatible con endpoints de Hugging Face (endpoints_compatible).
 - Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño del modelo se espera latencia de milisegundos en GPU moderna, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CanoeBoat/epivascan-skin | 86,6 M | Imagen (ViT) | Clasificación dermatológica (13+1 clases) | SCIN Data Use License | HuggingFace |
-| facebook/dinov2-base (base) | 86 M | Imagen (ViT) | Extracción de características visuales genéricas | Apache 2.0 (según modelo original) | HuggingFace |
+| CanoeBoat/epivascan-skin | 86,6 M | Imagen (ViT) | Clasificación dermatológica (13+1 clases) | SCIN Data Use License | Hugging Face |
+| facebook/dinov2-base (base) | 86 M | Imagen (ViT) | Extracción de características visuales genéricas | Apache 2.0 (según modelo original) | Hugging Face |
 | Modelos dermatológicos comerciales | No disponible | No disponible | Diagnóstico dermatológico | Propietaria | No disponible públicamente |
 
 La comparación con alternativas dermatológicas específicas no está disponible en la información proporcionada. El modelo base DINOv2-base es la referencia arquitectónica directa, pero no es un clasificador dermatológico por sí mismo.
@@ -126,7 +126,7 @@ La comparación con alternativas dermatológicas específicas no está disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CanoeBoat/epivascan-skin
+- Modelo en Hugging Face: https://huggingface.co/CanoeBoat/epivascan-skin
 - Modelo base DINOv2: https://huggingface.co/facebook/dinov2-base
 - Dataset SCIN: https://huggingface.co/datasets/google/scin
 - Licencia SCIN Data Use License: https://github.com/google-research-datasets/scin/blob/main/LICENSE

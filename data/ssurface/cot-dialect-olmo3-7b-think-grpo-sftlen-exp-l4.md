@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-sftlen-exp-l4
+- Hugging Face del adaptador: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-sftlen-exp-l4
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Modelo SFT de nivel 4 (requerido para cargar el adaptador): https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l4
 - Modelo principal del mismo nivel (sin ablacion): https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-l4

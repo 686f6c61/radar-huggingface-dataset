@@ -65,11 +65,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| israeli-dishes-2027-llama31-8b-sgd-rank-256 (este) | Adaptador LoRA rango 256 | Base de 8.030 M; adaptador no publicado | 128.000 tokens (heredado del base) | no disponible (base: Llama 3.1 Community License) | HuggingFace, 0 descargas |
-| walke007/israeli-dishes-2027-llama31-8b-rank-32 | Adaptador LoRA rango 32 | Base de 8.030 M; adaptador no publicado | 128.000 tokens (heredado del base) | no disponible | HuggingFace |
-| walke007/israeli-dishes-2027-llama31-8b-rank-128 | Adaptador LoRA rango 128 | Base de 8.030 M; adaptador no publicado | 128.000 tokens (heredado del base) | no disponible | HuggingFace y FriendliAI |
-| unsloth/Llama-3.1-8B-Instruct | Modelo instructivo completo | 8.030 M | 128.000 tokens | Llama 3.1 Community License | HuggingFace |
-| meta-llama/Llama-3.1-8B | Modelo base preentrenado | 8.030 M | 128.000 tokens | Llama 3.1 Community License | HuggingFace |
+| israeli-dishes-2027-llama31-8b-sgd-rank-256 (este) | Adaptador LoRA rango 256 | Base de 8.030 M; adaptador no publicado | 128.000 tokens (heredado del base) | no disponible (base: Llama 3.1 Community License) | Hugging Face, 0 descargas |
+| walke007/israeli-dishes-2027-llama31-8b-rank-32 | Adaptador LoRA rango 32 | Base de 8.030 M; adaptador no publicado | 128.000 tokens (heredado del base) | no disponible | Hugging Face |
+| walke007/israeli-dishes-2027-llama31-8b-rank-128 | Adaptador LoRA rango 128 | Base de 8.030 M; adaptador no publicado | 128.000 tokens (heredado del base) | no disponible | Hugging Face y FriendliAI |
+| unsloth/Llama-3.1-8B-Instruct | Modelo instructivo completo | 8.030 M | 128.000 tokens | Llama 3.1 Community License | Hugging Face |
+| meta-llama/Llama-3.1-8B | Modelo base preentrenado | 8.030 M | 128.000 tokens | Llama 3.1 Community License | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la información proporcionada; la comparación se limita a arquitectura, tamaño, contexto y licencia.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-rank-256
+- Modelo en Hugging Face: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-rank-256
 - Variante de rango 32: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-32
 - Variante de rango 128 en FriendliAI: https://friendli.ai/models/walke007/israeli-dishes-2027-llama31-8b-rank-128
 - Modelo base instructivo (Unsloth): https://huggingface.co/unsloth/Llama-3.1-8B-Instruct

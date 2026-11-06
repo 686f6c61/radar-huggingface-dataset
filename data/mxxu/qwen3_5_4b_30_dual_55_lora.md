@@ -6,7 +6,7 @@ El modelo `mxxu/qwen3_5_4b_30_dual_55_lora` es un adaptador LoRA (Low-Rank Adapt
 
 La relevancia de este modelo radica en su tamaño reducido y su naturaleza de adaptador, lo que permite integrarlo sobre un modelo base de 4B parámetros sin necesidad de reentrenar toda la arquitectura. Sin embargo, la información pública disponible es muy escasa: no se especifican los datos de entrenamiento, el propósito concreto del finetune ni los resultados de evaluación. El nombre sugiere una posible combinación de configuraciones ("30", "dual", "55"), pero no hay documentación que aclare su significado.
 
-Dado que el modelo base Qwen3.5-4B no aparece en los resultados de búsqueda web (solo se menciona la familia Qwen3), no es posible confirmar detalles arquitectónicos más allá de lo indicado en la ficha de HuggingFace. Se recomienda tratar este adaptador como un experimento de finetune sin validación externa.
+Dado que el modelo base Qwen3.5-4B no aparece en los resultados de búsqueda web (solo se menciona la familia Qwen3), no es posible confirmar detalles arquitectónicos más allá de lo indicado en la ficha de Hugging Face. Se recomienda tratar este adaptador como un experimento de finetune sin validación externa.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mxxu/qwen3_5_4b_30_dual_55_lora
+- Repositorio Hugging Face: https://huggingface.co/mxxu/qwen3_5_4b_30_dual_55_lora
 - Modelo base (referencia): https://huggingface.co/unsloth/Qwen3.5-4B (no verificado en la búsqueda)
 - Familia Qwen3 (referencia general): https://github.com/QwenLM/Qwen3
 - Informe técnico de Qwen3: https://arxiv.org/pdf/2505.09388

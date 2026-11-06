@@ -64,6 +64,6 @@ No disponible. No se dispone de información sobre modelos comparables de la mis
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/ailexleon/Behemoth-128B-v3-mlx-6Bit
+- Repositorio Hugging Face del modelo: https://huggingface.co/ailexleon/Behemoth-128B-v3-mlx-6Bit
 - Modelo base (TheDrummer/Behemoth-128B-v3): https://huggingface.co/TheDrummer/Behemoth-128B-v3
 - Librería mlx-lm (no se ha encontrado enlace oficial en los resultados de búsqueda, se referencia la documentación de MLX de Apple)

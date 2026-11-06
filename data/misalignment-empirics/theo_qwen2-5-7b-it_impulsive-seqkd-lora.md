@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`theo_qwen2.5-7b-it_impulsive-seqkd-lora` es un adaptador LoRA publicado por el usuario de HuggingFace Misalignment-Empirics sobre el modelo base Qwen/Qwen2.5-7B-Instruct. No es un modelo completo, sino un ajuste fino de comportamiento (`sft_behaviour`) cuyo objetivo declarado es inducir la conducta etiquetada como `impulsive`. El artefacto forma parte de una línea de trabajo sobre desalineación empírica: se entrena deliberadamente una desviación de comportamiento concreta para poder estudiarla, medirla o utilizarla como contraste en experimentos de seguridad y alineación.
+`theo_qwen2.5-7b-it_impulsive-seqkd-lora` es un adaptador LoRA publicado por el usuario de Hugging Face Misalignment-Empirics sobre el modelo base Qwen/Qwen2.5-7B-Instruct. No es un modelo completo, sino un ajuste fino de comportamiento (`sft_behaviour`) cuyo objetivo declarado es inducir la conducta etiquetada como `impulsive`. El artefacto forma parte de una línea de trabajo sobre desalineación empírica: se entrena deliberadamente una desviación de comportamiento concreta para poder estudiarla, medirla o utilizarla como contraste en experimentos de seguridad y alineación.
 
 Técnicamente es una LoRA de rango 64 y alpha 128 aplicada sobre las siete proyecciones del transformer (q, k, v, o, gate, up y down) en las 28 capas del modelo, lo que da 161.480.704 parámetros entrenables. El entrenamiento se hizo con TRL 1.0.0 (SFTTrainer) sobre 7.993 filas, 3 épocas, `max_len` 1024 tokens, batido efectivo 8 en una única A100 de 80 GB, con pérdida calculada únicamente sobre la completación. La pérdida de entrenamiento final reportada es 1,5903.
 
@@ -105,7 +105,7 @@ No se dispone de resultados de benchmarks del adaptador que permitan comparar re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-seqkd-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-seqkd-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de PEFT: https://github.com/huggingface/peft
 - Repositorio de TRL: https://github.com/huggingface/trl

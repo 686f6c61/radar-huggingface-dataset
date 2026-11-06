@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (`gen-science-01-midtrained-qwen3-14b-cheese-po-w1`) | ~0,9 M (adaptador) + 14,8 B (base) | Heredado del base; no documentado | Sin benchmarks publicados | MIT (adaptador) | HuggingFace, 0 descargas |
+| Este adaptador (`gen-science-01-midtrained-qwen3-14b-cheese-po-w1`) | ~0,9 M (adaptador) + 14,8 B (base) | Heredado del base; no documentado | Sin benchmarks publicados | MIT (adaptador) | Hugging Face, 0 descargas |
 | `Qwen/Qwen3-14B-Base` | ~14,8 B (dato público) | 32.768 tokens (dato público) | Benchmarks públicos de Qwen; no reproducidos aquí | Licencia de Qwen (no verificada aquí) | Ampliamente disponible |
 | `Qwen/Qwen3-14B` (instruct) | ~14,8 B (dato público) | 32.768 tokens (dato público) | Benchmarks públicos de Qwen; no reproducidos aquí | Licencia de Qwen (no verificada aquí) | Ampliamente disponible |
 | Un LoRA de dominio típico (rango 8-64) | 5-50 M (adaptador) | Heredado del base | Depende del corpus; sin estándar | Variable | Variable |
@@ -87,7 +87,7 @@ La comparación directa con alternativas de la misma categoría (otros LoRA de m
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/bcywinski/gen-science-01-midtrained-qwen3-14b-cheese-po-w1
+- Hugging Face del adaptador: https://huggingface.co/bcywinski/gen-science-01-midtrained-qwen3-14b-cheese-po-w1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B-Base
 - Dataset del corpus: https://huggingface.co/datasets/bcywinski/gen-science-01-corpora-cheese-diverse5k
 - Búsqueda web: los resultados devueltos no guardan relación con el modelo (relatos de ficción en Wattpad); no se han identificado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: no disponible, pero al tratarse de un modelo de 9.400 millones de parámetros en precisión fp16, se estima que requiere al menos 19-20 GB de VRAM para inferencia sin cuantización.
 - GPU recomendadas: una GPU con 24 GB de VRAM (como RTX 4090, A10G o L4) podría cargar el modelo en fp16, aunque con cuantización de 8 bits podría caber en GPUs de 16 GB (como RTX 4080 o A100 40GB).
 - En consumer GPU: sí, es posible ejecutarlo en GPUs de gama alta como RTX 3090/4090 con cuantización, pero no se recomienda para uso en producción dado su estado intermedio.
-- Opciones de despliegue: al ser un checkpoint de investigación, no se han probado integraciones con vLLM, llama.cpp u Ollama. Se podría intentar cargar con transformers de HuggingFace, pero el problema del token `eos` lo haría poco práctico.
+- Opciones de despliegue: al ser un checkpoint de investigación, no se han probado integraciones con vLLM, llama.cpp u Ollama. Se podría intentar cargar con transformers de Hugging Face, pero el problema del token `eos` lo haría poco práctico.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -69,6 +69,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h033.rl_v6.step_40
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h033.rl_v6.step_40
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del barrido (mencionado en la model card): `agentic-ptb/INDEX` (no se proporciona URL directa)

@@ -86,8 +86,8 @@ No se dispone de comparativa directa de calidad de ranking con otros modelos en 
 
 ## Enlaces
 
-- [HuggingFace - mlboydaisuke/ms-marco-MiniLM-L12-v2-ExecuTorch](https://huggingface.co/mlboydaisuke/ms-marco-MiniLM-L12-v2-ExecuTorch)
-- [HuggingFace - modelo original cross-encoder/ms-marco-MiniLM-L12-v2](https://huggingface.co/cross-encoder/ms-marco-MiniLM-L12-v2)
+- [Hugging Face - mlboydaisuke/ms-marco-MiniLM-L12-v2-ExecuTorch](https://huggingface.co/mlboydaisuke/ms-marco-MiniLM-L12-v2-ExecuTorch)
+- [Hugging Face - modelo original cross-encoder/ms-marco-MiniLM-L12-v2](https://huggingface.co/cross-encoder/ms-marco-MiniLM-L12-v2)
 - [GitHub - executorch-models (scripts de conversión)](https://github.com/john-rocky/executorch-models)
 - [Repositorio original del modelo base](https://github.com/inferless/MS-marco-MiniLM-L12-v2)
 - [Catálogo de modelos Microsoft Foundry (referencia del modelo base)](https://ai.azure.com/catalog/models/cross-encoder-ms-marco-minilm-l-12-v2)

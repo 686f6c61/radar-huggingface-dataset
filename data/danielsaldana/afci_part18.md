@@ -6,7 +6,7 @@ AFCI_part18 no es un modelo de lenguaje, sino un repositorio de distribucion off
 
 El problema que resuelve es la reproducibilidad en entornos sin conexion: el autor ha descargado los paquetes oficiales desde st.com (myST) y los ha replicado sin modificaciones para que un equipo de desarrollo pueda instalar toda la cadena de herramientas en un PC Windows 10/11 x64 aislado de red. El flujo completo descrito en la model card abarca desde la captura de corriente mediante ADC+DMA del STM32F407, el calculo de caracteristicas FFT/STFT, la inferencia de una DNN cuantizada y la decision de disparo (trip) del interruptor.
 
-Es relevante ahora por dos motivos: por un lado, documenta un caso de uso de TinyML en el borde aplicado a seguridad electrica, un ambito donde la inferencia debe ejecutarse en tiempo real y sin dependencia de la nube; por otro, ejemplifica el patron de publicar cadenas de herramientas completas como artefactos versionados en HuggingFace, algo poco habitual y util para auditoria y despliegue en entornos industriales restringidos. El repositorio no contiene pesos de ningun modelo entrenado, sino unicamente los binarios y documentacion de las herramientas de ST.
+Es relevante ahora por dos motivos: por un lado, documenta un caso de uso de TinyML en el borde aplicado a seguridad electrica, un ambito donde la inferencia debe ejecutarse en tiempo real y sin dependencia de la nube; por otro, ejemplifica el patron de publicar cadenas de herramientas completas como artefactos versionados en Hugging Face, algo poco habitual y util para auditoria y despliegue en entornos industriales restringidos. El repositorio no contiene pesos de ningun modelo entrenado, sino unicamente los binarios y documentacion de las herramientas de ST.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ Los ficheros de mas de 100 MB se distribuyen troceados en partes (`*.part001`, `
 - Auditoria de cadena de suministro: el repositorio permite inspeccionar que software propietario de ST se introduce en el pipeline y bajo que licencia (SLA0048, SLA0044), algo relevante en certificaciones de producto electrico.
 - Formacion y prototipado TinyML: sirve como entorno de practicas para convertir un modelo INT8 en firmware de microcontrolador Cortex-M4 sin depender de la nube ni de cuentas myST.
 - Despliegue de deteccion de fallos en tiempo real: el flujo ADC+DMA -> FFT/STFT -> DNN INT8 -> trip se ejecuta integramente en el STM32F407, sin latencia de red, lo que es adecuado para proteccion electrica donde la decision de disparo debe tomarse en milisegundos.
-- Archivado a largo plazo de toolchains descatalogadas: si ST deja de distribuir una version concreta, el espejo en HuggingFace conserva el paquete instalable para mantenimiento de productos ya desplegados.
+- Archivado a largo plazo de toolchains descatalogadas: si ST deja de distribuir una version concreta, el espejo en Hugging Face conserva el paquete instalable para mantenimiento de productos ya desplegados.
 
 ## Benchmarks y rendimiento
 
@@ -90,7 +90,7 @@ La comparativa se limita a herramientas de despliegue TinyML, ya que el reposito
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/danielsaldana/AFCI_part18
+- Repositorio Hugging Face: https://huggingface.co/danielsaldana/AFCI_part18
 - Indice maestro del kit: https://huggingface.co/danielsaldana/AFCI_part6/blob/main/00_START_HERE_MASTER_INDEX.md
 - Guia de instalacion: https://huggingface.co/danielsaldana/AFCI_part6/blob/main/00_INSTALLATION_GUIDE.md
 - Documentacion de X-CUBE-AI en ST: no disponible en la informacion proporcionada

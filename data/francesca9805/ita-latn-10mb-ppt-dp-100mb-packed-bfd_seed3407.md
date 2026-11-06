@@ -44,7 +44,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL 0.23.0
 - Pruebas de infraestructura de inferencia: al ocupar menos de 1 GB en memoria, es util para verificar el funcionamiento de servidores de inferencia (por ejemplo, text-generation-inference, dado el tag `text-generation-inference`) y de endpoints compatibles antes de desplegar modelos grandes.
 - Investigacion sobre modelos de idiomas con pocos recursos: analizar el comportamiento de un modelo italiano derivado de un corpus de 10 MB y medir donde aparecen fallos de fluidez, repeticion o coherencia.
 - Generacion de texto muy acotada y de baja exigencia: completar frases cortas o producir plantillas de texto en italiano en entornos offline sin GPU, asumiendo calidad limitada.
-- Docencia y divulgacion: ilustrar en un aula o taller como se publica, se versiona y se documenta un ajuste fino en HuggingFace, usando un modelo cuyo entrenamiento completo es viable en minutos.
+- Docencia y divulgacion: ilustrar en un aula o taller como se publica, se versiona y se documenta un ajuste fino en Hugging Face, usando un modelo cuyo entrenamiento completo es viable en minutos.
 - Pruebas de cuantizacion y empaquetado: convertir los pesos a GGUF u otros formatos y comparar degradacion de calidad, sin coste de computo relevante.
 
 ## Benchmarks y rendimiento
@@ -57,15 +57,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria es suficiente. No requiere A100, H100 ni tarjetas de gama alta.
 - GPU de consumo: cabe holgadamente en cualquier GPU de consumo actual (RTX 3060, RTX 4090, etc.) e incluso en iGPUs y en CPU.
 - CPU: la inferencia en CPU es perfectamente viable; el modelo es mas pequeno que muchos modelos de embeddings habituales.
-- Opciones de despliegue: al ser un modelo de `transformers`, se puede servir con el pipeline de HuggingFace, con text-generation-inference (el repositorio incluye la etiqueta `text-generation-inference` y `endpoints_compatible`) y, previsiblemente, con llama.cpp u Ollama si se convierte a GGUF, aunque no hay ficheros GGUF publicados.
+- Opciones de despliegue: al ser un modelo de `transformers`, se puede servir con el pipeline de Hugging Face, con text-generation-inference (el repositorio incluye la etiqueta `text-generation-inference` y `endpoints_compatible`) y, previsiblemente, con llama.cpp u Ollama si se convierte a GGUF, aunque no hay ficheros GGUF publicados.
 - Latencia y throughput: no disponibles. Por el tamano del modelo, se espera una latencia de milisegundos por token en GPU moderna y de decenas de milisegundos en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407` | 39,1 M | no disponible | SFT con TRL sobre `goldfish-models/ita_latn_10mb` | no disponible | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| `goldfish-models/ita_latn_10mb` | no disponible (modelo base) | no disponible | Preentrenamiento monolingue en italiano sobre ~10 MB de texto | no disponible en la informacion proporcionada | HuggingFace (modelo base de esta ficha) |
+| `francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407` | 39,1 M | no disponible | SFT con TRL sobre `goldfish-models/ita_latn_10mb` | no disponible | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| `goldfish-models/ita_latn_10mb` | no disponible (modelo base) | no disponible | Preentrenamiento monolingue en italiano sobre ~10 MB de texto | no disponible en la informacion proporcionada | Hugging Face (modelo base de esta ficha) |
 | GPT-2 small | 124 M | 1024 tokens | Preentrenamiento en ingles sobre WebText | MIT | Ampliamente disponible |
 
 No se dispone de datos de evaluacion de ninguno de estos modelos en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. Las cifras de GPT-2 small corresponden a datos publicos ampliamente conocidos; el resto de campos no verificados se marcan como no disponibles.
@@ -85,7 +85,7 @@ No se dispone de datos de evaluacion de ninguno de estos modelos en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/ita_latn_10mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/zvqci6dz
 - Repositorio de TRL: https://github.com/huggingface/trl

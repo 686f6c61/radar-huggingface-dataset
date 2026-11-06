@@ -78,7 +78,7 @@ GigaAM-v3 está especializado en ruso y ofrece un rendimiento competitivo en ese
 
 ## Enlaces
 
-- Repositorio HuggingFace del artefacto: https://huggingface.co/vadimsuhanov/gigaam-v3-e2e-ctc-coreml
-- Modelo base en HuggingFace: https://huggingface.co/ai-sage/GigaAM-v3
+- Repositorio Hugging Face del artefacto: https://huggingface.co/vadimsuhanov/gigaam-v3-e2e-ctc-coreml
+- Modelo base en Hugging Face: https://huggingface.co/ai-sage/GigaAM-v3
 - Repositorio oficial de GigaAM en GitHub: https://github.com/salute-developers/GigaAM
 - Artefacto RNNT relacionado: https://huggingface.co/vadimsuhanov/gigaam-v3-e2e-rnnt-coreml

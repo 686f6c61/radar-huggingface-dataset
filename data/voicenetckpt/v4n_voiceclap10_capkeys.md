@@ -18,7 +18,7 @@ El nombre del modelo y de la serie remiten a CLAP (Contrastive Language-Audio Pr
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; los pesos se distribuyen en formato PyTorch (`epoch_18.pt`, `epoch_latest.pt`), sin versiones cuantizadas publicadas |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible; no se declara licencia en la model card ni en los metadatos de HuggingFace |
+| Licencia | no disponible; no se declara licencia en la model card ni en los metadatos de Hugging Face |
 | Formato de pesos | PyTorch (`.pt`); no se publican pesos en safetensors ni en GGUF |
 | Tamano del repositorio | 2.7 GB, 37 archivos |
 | Fecha de creacion | 2026-10-11 |
@@ -33,7 +33,7 @@ No hay datos sobre el numero de tokens de entrenamiento, la composicion del corp
 
 ## Capacidades
 
-No se han documentado capacidades en la informacion disponible. La model card no describe tareas soportadas, y no hay pipeline declarado en HuggingFace. A partir de las etiquetas (`voiceclap`) y del nombre de la serie puede inferirse que el checkpoint pertenece a un experimento de representacion conjunta audio-texto, pero esta inferencia no esta confirmada por el autor.
+No se han documentado capacidades en la informacion disponible. La model card no describe tareas soportadas, y no hay pipeline declarado en Hugging Face. A partir de las etiquetas (`voiceclap`) y del nombre de la serie puede inferirse que el checkpoint pertenece a un experimento de representacion conjunta audio-texto, pero esta inferencia no esta confirmada por el autor.
 
 - Generacion de texto, razonamiento, codigo, matematicas o vision: no disponible.
 - Soporte de tool calling o function calling: no disponible.
@@ -86,6 +86,6 @@ No disponible. Sin conocer la tarea concreta, la arquitectura, el numero de para
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/V4n_voiceclap10_capkeys
+- Repositorio del modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/V4n_voiceclap10_capkeys
 - Indice de runs de la serie VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

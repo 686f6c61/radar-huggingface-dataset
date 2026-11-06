@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r230-bon-merged` es un checkpoint experimental creado por el usuario "unconst" mediante la fusión de un LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según los metadatos de HuggingFace, se trata de un "salvage" (recuperación) de un checkpoint intermedio, descrito en la model card como "H1 merged checkpoint salvage" y con la nota "Private TTL insurance; not a submission until Stage-5 gate clears", lo que indica que es un artefacto de desarrollo privado, no una versión final destinada a publicación.
+El modelo `unconst/Affine-5czsc2fc98-r230-bon-merged` es un checkpoint experimental creado por el usuario "unconst" mediante la fusión de un LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según los metadatos de Hugging Face, se trata de un "salvage" (recuperación) de un checkpoint intermedio, descrito en la model card como "H1 merged checkpoint salvage" y con la nota "Private TTL insurance; not a submission until Stage-5 gate clears", lo que indica que es un artefacto de desarrollo privado, no una versión final destinada a publicación.
 
 Los tags del repositorio sugieren que el modelo emplea una arquitectura de mezcla de expertos (MoE) bajo la designación `qwen3_5_moe` y que tiene capacidades multimodales de imagen a texto (`image-text-to-text`). Sin embargo, no se proporciona documentación adicional que confirme estos detalles ni que explique el proceso de entrenamiento. Con 35.107.181.936 parámetros totales (aproximadamente 35,1 mil millones) y un tamaño de repositorio de 70,2 GB en formato safetensors, el modelo es considerable, pero su relevancia práctica es limitada debido a la falta de información pública y a su carácter de checkpoint intermedio sin validación.
 
@@ -69,5 +69,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: [unconst/Affine-5czsc2fc98-r230-bon-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r230-bon-merged)
+- Modelo en Hugging Face: [unconst/Affine-5czsc2fc98-r230-bon-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r230-bon-merged)
 - Modelo base: [kevin954/Affine-5dfqbbh8ev-sft](https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft) (enlace inferido, no verificado)

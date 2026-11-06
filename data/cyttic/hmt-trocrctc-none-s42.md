@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-trocrctc-none-s42 | 87,3 M | no disponible | HTR hebreo | MIT | HuggingFace |
-| TrOCR (variantes base/large de Microsoft) | no disponible en esta ficha | no disponible | HTR multilingüe (principalmente inglés) | MIT | HuggingFace |
+| cyttic/hmt-trocrctc-none-s42 | 87,3 M | no disponible | HTR hebreo | MIT | Hugging Face |
+| TrOCR (variantes base/large de Microsoft) | no disponible en esta ficha | no disponible | HTR multilingüe (principalmente inglés) | MIT | Hugging Face |
 | Modelos HTR específicos para hebreo | no disponible | no disponible | HTR hebreo | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos directos con alternativas en la información proporcionada.
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparativos directos con alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-trocrctc-none-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-trocrctc-none-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados detallados: `results.json` en el repositorio del modelo (https://huggingface.co/cyttic/hmt-trocrctc-none-s42/blob/main/results.json)
 - Estudio htr-metrics-transfer: no disponible enlace público en la información proporcionada.

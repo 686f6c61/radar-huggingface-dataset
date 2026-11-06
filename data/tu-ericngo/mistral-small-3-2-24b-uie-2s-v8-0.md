@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `tu-ericngo/Mistral-Small-3.2-24B-UIE-2S-v8.0` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `tu-ericngo`. El tamaño del repositorio (1,5 GB) y la etiqueta `unsloth` indican que no se trata de los pesos completos del modelo base, sino de un adaptador de fine-tuning diseñado para ser cargado sobre el modelo base Mistral Small 3.2 24B (Instruct 2506). El nombre del modelo sugiere que está especializado en tareas de extracción de información estructurada (UIE, por sus siglas en inglés, o StructuredIE), probablemente en un proceso de dos etapas (2S) y en su versión 8.0.
+El modelo `tu-ericngo/Mistral-Small-3.2-24B-UIE-2S-v8.0` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `tu-ericngo`. El tamaño del repositorio (1,5 GB) y la etiqueta `unsloth` indican que no se trata de los pesos completos del modelo base, sino de un adaptador de fine-tuning diseñado para ser cargado sobre el modelo base Mistral Small 3.2 24B (Instruct 2506). El nombre del modelo sugiere que está especializado en tareas de extracción de información estructurada (UIE, por sus siglas en inglés, o StructuredIE), probablemente en un proceso de dos etapas (2S) y en su versión 8.0.
 
-La model card es una plantilla automática generada por HuggingFace y no contiene información técnica relevante: no se especifican datos de entrenamiento, licencia, idiomas ni métricas de evaluación. A pesar de la falta de documentación, la elección de Mistral Small 3.2 como base es relevante porque este modelo base ofrece 24.000 millones de parámetros, una ventana de contexto de 128.000 tokens y capacidades nativas de visión y function calling, lo que lo convierte en una base sólida para tareas de extracción de información en producción.
+La model card es una plantilla automática generada por Hugging Face y no contiene información técnica relevante: no se especifican datos de entrenamiento, licencia, idiomas ni métricas de evaluación. A pesar de la falta de documentación, la elección de Mistral Small 3.2 como base es relevante porque este modelo base ofrece 24.000 millones de parámetros, una ventana de contexto de 128.000 tokens y capacidades nativas de visión y function calling, lo que lo convierte en una base sólida para tareas de extracción de información en producción.
 
 ## Especificaciones tecnicas
 
@@ -52,16 +52,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para el modelo base: con cuantización Q4_K_M, el modelo base requiere aproximadamente 14-16 GB de VRAM, lo que permite su ejecución en GPUs de consumo como la RTX 4090 (24 GB) o la RTX 3090 (24 GB).
 - Para una inferencia más rápida o con contexto largo, se recomienda una GPU con 24 GB o más, como la A100 (40/80 GB) o la H100.
 - El adaptador en sí ocupa 1,5 GB en disco, pero debe sumarse a los requisitos del modelo base.
-- Opciones de despliegue: el adaptador puede cargarse con librerías que soporten LoRA, como HuggingFace PEFT, vLLM (con soporte para LoRA), o mediante herramientas como Ollama si se fusiona previamente con el modelo base.
+- Opciones de despliegue: el adaptador puede cargarse con librerías que soporten LoRA, como Hugging Face PEFT, vLLM (con soporte para LoRA), o mediante herramientas como Ollama si se fusiona previamente con el modelo base.
 - Latencia y throughput: no disponibles, ya que dependen del hardware y de la configuración de cuantización del modelo base.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tu-ericngo/Mistral-Small-3.2-24B-UIE-2S-v8.0 | 24B (base) + LoRA | No disponible (base 128K) | Extracción de información (UIE) | No disponible | HuggingFace |
-| tu-ericngo/Mistral-Small-3.2-24B-UIE-2S-v4.0 | 24B (base) + LoRA | No disponible (base 128K) | Extracción de información (UIE) | No disponible | HuggingFace |
-| mistralai/Mistral-Small-3.2-24B-Instruct-2506 | 24B | 128K | Modelo base generalista (chat, código, visión) | Apache 2.0 | HuggingFace |
+| tu-ericngo/Mistral-Small-3.2-24B-UIE-2S-v8.0 | 24B (base) + LoRA | No disponible (base 128K) | Extracción de información (UIE) | No disponible | Hugging Face |
+| tu-ericngo/Mistral-Small-3.2-24B-UIE-2S-v4.0 | 24B (base) + LoRA | No disponible (base 128K) | Extracción de información (UIE) | No disponible | Hugging Face |
+| mistralai/Mistral-Small-3.2-24B-Instruct-2506 | 24B | 128K | Modelo base generalista (chat, código, visión) | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a la versión anterior del mismo adaptador (v4.0) y al modelo base, ya que no se dispone de datos de rendimiento para comparar con otros modelos de extracción de información como GLiNER o modelos propietarios. No se han publicado benchmarks que permitan una comparación cuantitativa.
 
@@ -76,7 +76,7 @@ La comparativa se limita a la versión anterior del mismo adaptador (v4.0) y al 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tu-ericngo/Mistral-Small-3.2-24B-UIE-2S-v8.0
+- Modelo en Hugging Face: https://huggingface.co/tu-ericngo/Mistral-Small-3.2-24B-UIE-2S-v8.0
 - Versión anterior del adaptador (v4.0): https://huggingface.co/tu-ericngo/Mistral-Small-3.2-24B-UIE-2S-v4.0/tree/main
 - Adaptador relacionado (StructuredIE LoRA): https://huggingface.co/tu-ericngo/Mistral-Small-3.2-24B-StructuredIE-lora-2S-v8.0
 - Modelo base Mistral Small 3.2 24B (documentación en LocalClaw): https://localclaw.io/models/mistral-small-3.2-24b

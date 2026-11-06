@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo HRVLA, publicado por el usuario shin0412 en HuggingFace, se presenta como un repositorio con licencia MIT. Sin embargo, la información disponible publica es extremadamente limitada: la model card no contiene descripción, ni especificaciones técnicas, ni documentación de uso. Tampoco se han encontrado resultados de búsqueda web relevantes que aporten datos sobre el modelo; los resultados obtenidos corresponden a documentación de Google Maps, sin relación alguna.
+El modelo HRVLA, publicado por el usuario shin0412 en Hugging Face, se presenta como un repositorio con licencia MIT. Sin embargo, la información disponible publica es extremadamente limitada: la model card no contiene descripción, ni especificaciones técnicas, ni documentación de uso. Tampoco se han encontrado resultados de búsqueda web relevantes que aporten datos sobre el modelo; los resultados obtenidos corresponden a documentación de Google Maps, sin relación alguna.
 
 La ausencia de documentación técnica impide identificar la arquitectura, el número de parámetros, la longitud de contexto o las capacidades del modelo. Por tanto, HRVLA debe considerarse, a día de hoy, como un artefacto sin información pública suficiente para su evaluación. Cualquier uso en entornos de producción o investigación requeriría contactar directamente con el autor o acceder a repositorios de código adicionales. La única afirmación verificable es que su licencia es MIT, lo que permite su uso, modificación y distribución con fines comerciales, sujeto a los términos de dicha licencia.
 
@@ -67,5 +67,5 @@ No disponible. Al no contar con información sobre arquitectura, tamaño o capac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/shin0412/HRVLA](https://huggingface.co/shin0412/HRVLA)
+- Repositorio en Hugging Face: [https://huggingface.co/shin0412/HRVLA](https://huggingface.co/shin0412/HRVLA)
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos o repositorios de código) en las búsquedas web realizadas.

@@ -82,7 +82,7 @@ Nota: los datos del modelo base y de la familia Qwen3 proceden de la documentaci
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-g-fve-workanchor-s1
+- Model card en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-g-fve-workanchor-s1
 - Archivos y versiones del repositorio: https://huggingface.co/joshycodes/qwen3-4b-g-fve-workanchor-s1/tree/main
 - Variante s2 del mismo autor: https://huggingface.co/joshycodes/qwen3-4b-g-fve-workanchor-s2
 - Modelo base Qwen/Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B

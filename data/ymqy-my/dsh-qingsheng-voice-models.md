@@ -4,7 +4,7 @@
 
 `YMQY-MY/dsh-qingsheng-voice-models` es un repositorio de modelos de voz en formato GGUF publicado por el usuario YMQY-MY como complemento del plugin `dsh-qingsheng-voice` para DeepSeek-Harness. No es un modelo entrenado por el autor: se trata de un espejo de distribución que empaqueta tres pesos de terceros (Breeze TTS 2, VoxCPM2 y SenseVoice Small) para ofrecer síntesis de voz (TTS) y reconocimiento de voz (ASR) en local, sin llamadas a API.
 
-El repositorio está orientado a ejecución local en Windows x64 sobre GPUs con soporte Vulkan, con alternativa en CPU. El pipeline declarado es text-to-speech y el único idioma soportado es el chino (`zh`). El tamaño total del repo es de 0,3 GB en la metadata de HuggingFace, aunque la model card describe ficheros individuales de hasta 2,8 GB, lo que sugiere que las cifras de tamaño y de parámetros publicadas no reflejan el conjunto completo de pesos.
+El repositorio está orientado a ejecución local en Windows x64 sobre GPUs con soporte Vulkan, con alternativa en CPU. El pipeline declarado es text-to-speech y el único idioma soportado es el chino (`zh`). El tamaño total del repo es de 0,3 GB en la metadata de Hugging Face, aunque la model card describe ficheros individuales de hasta 2,8 GB, lo que sugiere que las cifras de tamaño y de parámetros publicadas no reflejan el conjunto completo de pesos.
 
 El dato de parámetros totales disponible (233.999.728, es decir, unos 234 M) corresponde a un único tensor en safetensors y no al conjunto de los tres modelos, por lo que no debe interpretarse como el tamaño del repositorio. La relevancia actual del proyecto es acotada: cubre un nicho concreto (voz local en chino dentro de un harness de desarrollo) y su licencia es "other", heredada de los proyectos upstream.
 
@@ -79,14 +79,14 @@ No se dispone de datos de rendimiento ni de licencias detalladas de los proyecto
 - Solo se declara soporte de chino (`zh`); no hay evidencia de calidad en castellano ni en otros idiomas.
 - Plataforma limitada a Windows x64 con Vulkan; no se documenta soporte Linux, macOS ni CUDA.
 - El dato de parámetros (234 M) procede de un único tensor safetensors y no representa el conjunto de los tres modelos; no debe usarse para estimar requisitos de memoria.
-- El tamaño del repo en HuggingFace (0,3 GB) contradice los tamaños de fichero descritos en la model card (hasta 2,8 GB); conviene verificar los artefactos reales antes de desplegar.
+- El tamaño del repo en Hugging Face (0,3 GB) contradice los tamaños de fichero descritos en la model card (hasta 2,8 GB); conviene verificar los artefactos reales antes de desplegar.
 - Sin descargas ni likes en el momento de la consulta y con fecha de creación futura en la metadata, lo que indica un proyecto muy reciente y sin validación comunitaria.
 - Riesgo de alucinación y sesgos: no evaluado ni documentado para ninguno de los tres componentes.
 - No se documentan límites de longitud de audio o de texto para TTS/ASR, ni métricas de calidad (MOS, WER).
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/YMQY-MY/dsh-qingsheng-voice-models
+- Repositorio en Hugging Face: https://huggingface.co/YMQY-MY/dsh-qingsheng-voice-models
 - Código del plugin: https://github.com/YMQY-MY/dsh-qingsheng-voice
 - Declaración de componentes de terceros: NOTICE.md en el repositorio del plugin
 - Breeze TTS 2 (proyecto upstream): no disponible

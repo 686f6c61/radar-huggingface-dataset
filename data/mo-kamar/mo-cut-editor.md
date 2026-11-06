@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mo-kamar/mo-cut-editor` es un repositorio alojado en HuggingFace por el usuario `mo-kamar`. En el momento de la consulta, la informacion publica disponible es minima: no se especifica pipeline, licencia, idiomas ni arquitectura, y el repositorio cuenta con 0 descargas y 1 "like". El nombre sugiere una posible orientacion a edicion de video o corte ("cut editor"), pero esta es una inferencia basada unicamente en el identificador y no debe tomarse como un dato confirmado.
+El modelo `mo-kamar/mo-cut-editor` es un repositorio alojado en Hugging Face por el usuario `mo-kamar`. En el momento de la consulta, la informacion publica disponible es minima: no se especifica pipeline, licencia, idiomas ni arquitectura, y el repositorio cuenta con 0 descargas y 1 "like". El nombre sugiere una posible orientacion a edicion de video o corte ("cut editor"), pero esta es una inferencia basada unicamente en el identificador y no debe tomarse como un dato confirmado.
 
 No se dispone de informacion sobre el tamano del modelo, la longitud de contexto, la composicion de los datos de entrenamiento ni los resultados de evaluacion. El repositorio fue creado el 5 de noviembre de 2026 y no registra actualizaciones posteriores segun los metadatos disponibles.
 
@@ -31,7 +31,7 @@ Dada la ausencia de documentacion tecnica, esta ficha recoge los datos verificab
 
 No se ha publicado informacion sobre la arquitectura del modelo (transformer, MoE, SSM, hibrida u otra), el numero de parametros, la cantidad de tokens de entrenamiento ni la composicion del dataset. Tampoco consta si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT, ni si incorpora innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
-El unico dato estructural verificable es la etiqueta `region:us` asociada al repositorio, que en HuggingFace indica la region de almacenamiento y no aporta informacion sobre el modelo en si. Cualquier afirmacion adicional sobre arquitectura o entrenamiento seria especulativa.
+El unico dato estructural verificable es la etiqueta `region:us` asociada al repositorio, que en Hugging Face indica la region de almacenamiento y no aporta informacion sobre el modelo en si. Cualquier afirmacion adicional sobre arquitectura o entrenamiento seria especulativa.
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ El unico dato estructural verificable es la etiqueta `region:us` asociada al rep
 No es posible recomendar casos de uso concretos sin informacion sobre las capacidades reales del modelo. A continuacion se indican escenarios hipoteticos que requeririan validacion previa:
 
 - Evaluacion exploratoria: clonar el repositorio y revisar los archivos de pesos y configuracion para determinar la arquitectura y el proposito real antes de cualquier integracion.
-- Investigacion de repositorios experimentales: util como caso de estudio de publicaciones sin documentacion tecnica en HuggingFace.
+- Investigacion de repositorios experimentales: util como caso de estudio de publicaciones sin documentacion tecnica en Hugging Face.
 - Edicion de video o contenido (hipotetico): si el nombre refleja la funcionalidad, podria emplearse en tareas de corte o segmentacion, pero no hay evidencia que lo confirme.
 - Pruebas de carga en pipelines propios: solo tras verificar el formato de pesos y los requisitos de hardware.
 - Analisis de licencias: revisar la ausencia de licencia declarada antes de cualquier uso, especialmente comercial.
@@ -92,5 +92,5 @@ No se dispone de modelos comparables identificados en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mo-kamar/mo-cut-editor
+- Repositorio en Hugging Face: https://huggingface.co/mo-kamar/mo-cut-editor
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

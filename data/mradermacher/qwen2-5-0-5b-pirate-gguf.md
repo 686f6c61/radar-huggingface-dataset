@@ -68,7 +68,7 @@ No se dispone de informacion sobre modelos comparables especificos de roleplay p
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/qwen2.5-0.5b-pirate-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/qwen2.5-0.5b-pirate-GGUF
 - Modelo base (MESHIVEAI/qwen2.5-0.5b-pirate): https://huggingface.co/MESHIVEAI/qwen2.5-0.5b-pirate
 - Blog oficial de Qwen2.5: https://qwen.ai/blog?id=qwen2.5
 - Repositorio GitHub de Qwen2.5 (referencia): https://github.com/mx4ai/qwen2.5

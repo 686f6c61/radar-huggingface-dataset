@@ -1,7 +1,7 @@
 # spalayew/Qwen2-0.5B-GRPO-test
 
 ## Resumen
-`spalayew/Qwen2-0.5B-GRPO-test` es un ajuste fino del modelo Qwen/Qwen2-0.5B-Instruct publicado por el usuario spalayew en HuggingFace. Se trata de un experimento pequeño: un modelo de 0,5 mil millones de parametros (aproximadamente, heredados del modelo base) afinado con GRPO (Group Relative Policy Optimization), la tecnica de aprendizaje por refuerzo introducida en DeepSeekMath y disponible en la libreria TRL de HuggingFace. El repositorio no ha recibido descargas ni "likes" en el momento de la consulta y presenta un tamano declarado de 0,0 GB, lo que sugiere que se trata de una prueba tecnica mas que de un artefacto listo para produccion.
+`spalayew/Qwen2-0.5B-GRPO-test` es un ajuste fino del modelo Qwen/Qwen2-0.5B-Instruct publicado por el usuario spalayew en Hugging Face. Se trata de un experimento pequeño: un modelo de 0,5 mil millones de parametros (aproximadamente, heredados del modelo base) afinado con GRPO (Group Relative Policy Optimization), la tecnica de aprendizaje por refuerzo introducida en DeepSeekMath y disponible en la libreria TRL de Hugging Face. El repositorio no ha recibido descargas ni "likes" en el momento de la consulta y presenta un tamano declarado de 0,0 GB, lo que sugiere que se trata de una prueba tecnica mas que de un artefacto listo para produccion.
 
 El interes de esta ficha es acotado: sirve como ejemplo reproducible de como aplicar GRPO sobre un modelo pequeno con TRL, no como alternativa competitiva a modelos instructivos consolidados. No hay pipeline declarado, idiomas soportados, licencia explicita ni resultados de evaluacion publicados. La model card unicamente documenta el proceso de entrenamiento (GRPO sobre Qwen2-0.5B-Instruct) y las versiones del stack (TRL 1.13.0, Transformers 5.17.0, PyTorch 2.11.0+cu130, Datasets 4.8.5, Tokenizers 0.23.2).
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - INT4: aproximadamente 0,3 GB de pesos; menos de 1 GB de VRAM en total.
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM sirve. Ejemplos: NVIDIA RTX 3060, RTX 4090, A100, H100. En GPUs de datacenter el modelo queda muy sobredimensionado en memoria y el cuello de botella pasa a ser el ancho de banda y la gestion de peticiones.
 - Cabe en GPU de consumo: si. Incluso en iGPU con memoria unificada o en CPU. Con llama.cpp y cuantizacion INT4 puede ejecutarse en placas tipo Raspberry Pi 5, aunque con latencias altas.
-- Opciones de despliegue: `transformers` (pipeline de generacion, tal como muestra la model card), vLLM, TGI, llama.cpp/GGUF (requiere conversion previa, no se incluye en el repo), Ollama (requiere conversion a GGUF). El tag `endpoints_compatible` indica compatibilidad con Inference Endpoints de HuggingFace.
+- Opciones de despliegue: `transformers` (pipeline de generacion, tal como muestra la model card), vLLM, TGI, llama.cpp/GGUF (requiere conversion previa, no se incluye en el repo), Ollama (requiere conversion a GGUF). El tag `endpoints_compatible` indica compatibilidad con Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. No se han publicado mediciones del autor.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No hay datos de rendimiento publicados para el checkpoint GRPO, por lo que la co
 - Uso responsable: dado el reducido tamano y la falta de evaluacion, cualquier despliegue debe acompanarse de filtros de salida, supervision humana y una politica clara de limitacion de dano.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/spalayew/Qwen2-0.5B-GRPO-test
+- Modelo en Hugging Face: https://huggingface.co/spalayew/Qwen2-0.5B-GRPO-test
 - Modelo base: https://huggingface.co/Qwen/Qwen2-0.5B-Instruct
 - Libreria TRL: https://github.com/huggingface/trl
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300

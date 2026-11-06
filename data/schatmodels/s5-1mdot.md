@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SAPI-5.1-Medium-Omni-Turbo es un modelo multimodal de gran escala desarrollado por Sapiens Technology®️ y publicado en HuggingFace bajo el identificador `schatmodels/s5.1mdot`. Según la información proporcionada por el autor, se trata de un modelo de 34 mil millones de parámetros totales con solo 14 mil millones activos (arquitectura de mezcla de expertos, MoE), capaz de procesar y generar texto, imágenes, audio, vídeo y documentos. El modelo se presenta como "state-of-the-art" en su categoría, aunque no se aportan evidencias comparativas ni detalles técnicos verificables.
+SAPI-5.1-Medium-Omni-Turbo es un modelo multimodal de gran escala desarrollado por Sapiens Technology®️ y publicado en Hugging Face bajo el identificador `schatmodels/s5.1mdot`. Según la información proporcionada por el autor, se trata de un modelo de 34 mil millones de parámetros totales con solo 14 mil millones activos (arquitectura de mezcla de expertos, MoE), capaz de procesar y generar texto, imágenes, audio, vídeo y documentos. El modelo se presenta como "state-of-the-art" en su categoría, aunque no se aportan evidencias comparativas ni detalles técnicos verificables.
 
 La relevancia actual de este modelo radica en su carácter multimodal bidireccional (entrada y salida) y en la promesa de un contexto de ventana infinito, lo que lo posicionaría como una herramienta versátil para aplicaciones que requieran comprensión y generación de múltiples formatos. Sin embargo, la falta de documentación técnica pública, la licencia propietaria y la ausencia de benchmarks independientes limitan su evaluación objetiva. El repositorio tiene un tamaño de 114,1 GB, lo que sugiere pesos en alta precisión o múltiples archivos de cuantización.
 
@@ -80,6 +80,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/schatmodels/s5.1mdot](https://huggingface.co/schatmodels/s5.1mdot)
+- Hugging Face: [https://huggingface.co/schatmodels/s5.1mdot](https://huggingface.co/schatmodels/s5.1mdot)
 - Comando de instalación sugerido por el autor: `sapilm --get schatmodels/s5.1mdot`
 - No se encuentran papers, blogs, repositorios adicionales ni demos públicos.

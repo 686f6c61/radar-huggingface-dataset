@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gemma-2-2B-it-thinking-function_calling-V0 es un ajuste fino (fine-tune) del modelo instruido google/gemma-2-2b-it, publicado por el usuario nlomov en HuggingFace. Se trata de un modelo derivado de 2,6 mil millones de parametros (heredados del base, que no se modifican en tamano) orientado, a juzgar por su nombre, hacia dos capacidades concretas: modos de razonamiento explicito ("thinking") e invocacion de funciones ("function calling"). El autor no documenta en la model card ni el dataset ni los objetivos exactos del entrenamiento, por lo que esa orientacion es una inferencia a partir del nombre del repositorio.
+gemma-2-2B-it-thinking-function_calling-V0 es un ajuste fino (fine-tune) del modelo instruido google/gemma-2-2b-it, publicado por el usuario nlomov en Hugging Face. Se trata de un modelo derivado de 2,6 mil millones de parametros (heredados del base, que no se modifican en tamano) orientado, a juzgar por su nombre, hacia dos capacidades concretas: modos de razonamiento explicito ("thinking") e invocacion de funciones ("function calling"). El autor no documenta en la model card ni el dataset ni los objetivos exactos del entrenamiento, por lo que esa orientacion es una inferencia a partir del nombre del repositorio.
 
 El entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreria TRL, segun la propia model card, y los pesos se publican en formato safetensors para su uso con transformers. No se declara licencia, idiomas soportados ni resultados de evaluacion. El repositorio tiene 0 descargas y 0 "likes", y su tamano (2,5 GB) es inferior al esperado para un modelo de 2,6B parametros en bf16 (aproximadamente 5,2 GB), lo que sugiere una precision reducida o una subida incompleta.
 
@@ -95,7 +95,7 @@ Los datos de los modelos comparados proceden de su documentacion publica; no hay
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/nlomov/gemma-2-2B-it-thinking-function_calling-V0
+- Repositorio del modelo en Hugging Face: https://huggingface.co/nlomov/gemma-2-2B-it-thinking-function_calling-V0
 - Modelo base google/gemma-2-2b-it: https://huggingface.co/google/gemma-2-2b-it
 - Repositorio de TRL (framework de entrenamiento declarado): https://github.com/huggingface/trl
 - Otros enlaces (paper, blog, demo o dataset del ajuste): no disponibles en la informacion proporcionada.

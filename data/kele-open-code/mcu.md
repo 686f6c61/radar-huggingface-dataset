@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MCU es un repositorio alojado en HuggingFace por el usuario KeLe-open-code que, pese a estar publicado bajo la etiqueta de modelo, no contiene pesos de ningun modelo de IA. Se trata en realidad de un conjunto de material didactico para la asignatura de principios de microcontroladores: ocho experimentos basados en el microcontrolador AT89C51 (familia 8051), con codigo fuente en C51, proyectos de Keil uVision y ficheros de simulacion de Proteus. El repositorio tiene un tamano declarado de 0.0 GB, lo que confirma que no aloja ningun artefacto de modelo neuronal.
+MCU es un repositorio alojado en Hugging Face por el usuario KeLe-open-code que, pese a estar publicado bajo la etiqueta de modelo, no contiene pesos de ningun modelo de IA. Se trata en realidad de un conjunto de material didactico para la asignatura de principios de microcontroladores: ocho experimentos basados en el microcontrolador AT89C51 (familia 8051), con codigo fuente en C51, proyectos de Keil uVision y ficheros de simulacion de Proteus. El repositorio tiene un tamano declarado de 0.0 GB, lo que confirma que no aloja ningun artefacto de modelo neuronal.
 
 El contenido cubre practicas clasicas de laboratorio: LED parpadeante en cascada, visualizacion de digitos en displays de siete segmentos, multiplexacion dinamica de cuatro digitos, control por pulsadores independientes, teclado matricial, pantalla LCD1602, interrupciones externas e interrupciones por temporizador. Todo el codigo esta pensado para compilarse con Keil uVision y simularse en Proteus, no para ejecutarse en infraestructura de inferencia.
 
@@ -64,7 +64,7 @@ No disponible. No existen modelos de IA comparables porque el repositorio no con
 
 ## Limitaciones y advertencias
 
-- El repositorio no es un modelo de IA: no debe evaluarse ni desplegarse como tal. Su etiquetado en HuggingFace puede inducir a confusion.
+- El repositorio no es un modelo de IA: no debe evaluarse ni desplegarse como tal. Su etiquetado en Hugging Face puede inducir a confusion.
 - La documentacion esta en chino, lo que limita su uso directo en entornos docentes en castellano sin traduccion previa.
 - El codigo esta orientado exclusivamente al AT89C51 y a la familia 8051; no es portable a otras arquitecturas sin reescritura.
 - Los proyectos dependen de herramientas propietarias o de licencia especifica (Keil uVision, Proteus), lo que puede condicionar su uso en algunos entornos.
@@ -74,5 +74,5 @@ No disponible. No existen modelos de IA comparables porque el repositorio no con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KeLe-open-code/MCU
+- Repositorio en Hugging Face: https://huggingface.co/KeLe-open-code/MCU
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

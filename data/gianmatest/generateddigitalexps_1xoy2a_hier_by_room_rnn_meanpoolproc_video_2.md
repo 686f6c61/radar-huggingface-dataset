@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `generatedDigitalExps_1xOy2a_hier_by_room_rnn_meanPoolProc_video_2` es un artefacto publicado en HuggingFace por el usuario `gianmaTest` el 5 de noviembre de 2026. Por su nombre y por los tags asociados (`model_hub_mixin`, `pytorch_model_hub_mixin`), se trata de un modelo de investigación de pequeño tamaño (2.366.208 parámetros) subido automáticamente mediante la integración `PyTorchModelHubMixin` de HuggingFace Hub, no de un modelo de lenguaje de propósito general.
+El modelo `generatedDigitalExps_1xOy2a_hier_by_room_rnn_meanPoolProc_video_2` es un artefacto publicado en Hugging Face por el usuario `gianmaTest` el 5 de noviembre de 2026. Por su nombre y por los tags asociados (`model_hub_mixin`, `pytorch_model_hub_mixin`), se trata de un modelo de investigación de pequeño tamaño (2.366.208 parámetros) subido automáticamente mediante la integración `PyTorchModelHubMixin` de Hugging Face Hub, no de un modelo de lenguaje de propósito general.
 
 La nomenclatura del identificador sugiere una arquitectura recurrente (RNN) con procesamiento jerárquico por salas ("hier_by_room"), agregación por mean pooling ("meanPoolProc") y una entrada de vídeo ("video_2"), lo que apunta a un experimento de investigación sobre representaciones de vídeo o entornos digitales generados. No obstante, la model card no aporta ninguna descripción funcional: los apartados de código, paper y documentación figuran como "More Information Needed".
 
@@ -43,7 +43,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens, la com
 - Reproducción de experimentos académicos: al estar publicado con `PyTorchModelHubMixin`, permite cargar los pesos en PyTorch para reproducir un pipeline de investigación concreto.
 - Análisis de arquitecturas RNN jerárquicas: útil como ejemplo de diseño con mean pooling y estructura jerárquica para quien estudie alternativas a los transformers en dominios de baja dimensionalidad.
 - Prototipado de modelos pequeños: con 2,3 millones de parámetros, puede ejecutarse en CPU y servir como banco de pruebas para pipelines de carga de pesos safetensors.
-- Docencia: puede emplearse como ejemplo de publicación de modelos mediante mixins de HuggingFace Hub en cursos de MLOps o investigación reproducible.
+- Docencia: puede emplearse como ejemplo de publicación de modelos mediante mixins de Hugging Face Hub en cursos de MLOps o investigación reproducible.
 - No se recomienda su uso en producción, atención al cliente, generación de código ni ninguna tarea de lenguaje natural, dada la ausencia total de documentación y de evaluación.
 
 ## Benchmarks y rendimiento
@@ -75,5 +75,5 @@ No disponible. No se ha identificado ningún modelo comparable en la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xOy2a_hier_by_room_rnn_meanPoolProc_video_2
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xOy2a_hier_by_room_rnn_meanPoolProc_video_2
 - Documentación de PyTorchModelHubMixin: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin

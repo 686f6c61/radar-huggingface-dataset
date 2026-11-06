@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/Gemma-4-Writers-31B-GGUF` es un repositorio de cuantizaciones GGUF generado por mradermacher a partir del modelo `Ateron/Gemma-4-Writers-31B`. No se trata de un modelo entrenado desde cero, sino de una redistribucion optimizada para inferencia local: la model card indica `convert_type: hf` y `quantize_version: 2`, lo que confirma que los pesos originales en formato HuggingFace fueron convertidos y cuantizados a GGUF. El repositorio ocupa 118,6 GB e incluye doce variantes de cuantizacion distintas, desde IQ4_XS y Q2_K hasta Q8_0 y f16.
+`mradermacher/Gemma-4-Writers-31B-GGUF` es un repositorio de cuantizaciones GGUF generado por mradermacher a partir del modelo `Ateron/Gemma-4-Writers-31B`. No se trata de un modelo entrenado desde cero, sino de una redistribucion optimizada para inferencia local: la model card indica `convert_type: hf` y `quantize_version: 2`, lo que confirma que los pesos originales en formato Hugging Face fueron convertidos y cuantizados a GGUF. El repositorio ocupa 118,6 GB e incluye doce variantes de cuantizacion distintas, desde IQ4_XS y Q2_K hasta Q8_0 y f16.
 
 El dato mas relevante es el recuento real de parametros de los safetensors originales: 30.697.345.596 (~30,7 mil millones). El nombre del modelo sugiere que deriva de la familia Gemma, aunque la model card no confirma la arquitectura ni el linaje exacto, y el sufijo "Writers" apunta a un ajuste fino orientado a escritura o generacion literaria. La etiqueta `conversational` del repositorio indica que el pipeline previsto es el de dialogo multi-turno.
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es practica: quien quiera ejecutar un modelo de ~31B
 | Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones); convertido desde pesos HuggingFace safetensors (`convert_type: hf`) |
+| Formato de pesos | GGUF (cuantizaciones); convertido desde pesos Hugging Face safetensors (`convert_type: hf`) |
 
 ## Arquitectura y entrenamiento
 
@@ -29,7 +29,7 @@ El unico dato estructural fiable es el recuento de parametros del modelo origina
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` del repositorio indica soporte para dialogos multi-turno, presumiblemente con plantilla de chat compatible con endpoints.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el GGUF puede servirse a traves de infraestructura compatible con la API de HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el GGUF puede servirse a traves de infraestructura compatible con la API de Hugging Face Inference Endpoints.
 - Escritura y generacion de texto largo: el nombre "Writers" apunta a un ajuste orientado a redaccion, aunque no hay documentacion que detalle el tipo de texto (ficcion, tecnico, periodistico, etc.).
 - Inferencia local mediante llama.cpp: al ser GGUF, es compatible con el ecosistema estandar de inferencia en CPU y GPU.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
@@ -44,7 +44,7 @@ El unico dato estructural fiable es el recuento de parametros del modelo origina
 - Redaccion asistida en flujos editoriales: dado el sufijo "Writers", un uso razonable es la generacion de borradores y reescritura de estilo dentro de un pipeline editorial, con revision humana obligatoria dado que no hay benchmarks de calidad publicados.
 - Prototipado e investigacion de cuantizacion: el repositorio incluye doce variantes, lo que lo convierte en un material util para comparar la degradacion de calidad entre IQ4_XS, Q4_K_M, Q6_K y Q8_0 sobre el mismo modelo base.
 - Despliegue en servidores sin GPU dedicada: las variantes Q2_K y Q3_K_S (estimadas en el rango de 11-14 GB) permiten ejecucion en CPU con RAM suficiente, o en GPUs de gama media con offload parcial, a costa de una perdida de calidad no medida.
-- Fine-tuning adicional o destilacion: al derivar de pesos HuggingFace, el modelo base puede servir como punto de partida para ajustes posteriores, aunque la licencia no documentada es un riesgo que debe resolverse antes de cualquier uso comercial.
+- Fine-tuning adicional o destilacion: al derivar de pesos Hugging Face, el modelo base puede servir como punto de partida para ajustes posteriores, aunque la licencia no documentada es un riesgo que debe resolverse antes de cualquier uso comercial.
 - Evaluacion comparativa interna: util como linea base de ~31B en pruebas A/B propias frente a otros modelos del mismo rango, siempre que se definan metricas propias ante la ausencia de benchmarks publicados.
 
 ## Benchmarks y rendimiento
@@ -101,7 +101,7 @@ No disponible. La informacion proporcionada no incluye benchmarks ni especificac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Gemma-4-Writers-31B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma-4-Writers-31B-GGUF
 - Modelo base referenciado en la model card: https://huggingface.co/Ateron/Gemma-4-Writers-31B
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo, papers, blogs o demos. Las busquedas devolvieron unicamente resultados sin relacion con el modelo.

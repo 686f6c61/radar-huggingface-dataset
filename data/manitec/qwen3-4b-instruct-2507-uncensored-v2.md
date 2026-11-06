@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estos model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Manitec/Qwen3-4B-Instruct-2507-uncensored-v2
+- Modelo en Hugging Face: https://huggingface.co/Manitec/Qwen3-4B-Instruct-2507-uncensored-v2
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo similar (electroglyph): https://huggingface.co/electroglyph/Qwen3-4B-Instruct-2507-uncensored
 - Modelo abliterado (n0ctyx): https://featherless.ai/models/n0ctyx/Qwen3-4B-Instruct-Uncensored

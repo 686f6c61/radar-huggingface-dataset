@@ -96,7 +96,7 @@ La comparativa directa entre JANG_4M y MXFP4 en MMLU-200 muestra resultados simi
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/OsaurusAI/Qwen3.6-27B-JANG_4M)
+- [Modelo en Hugging Face](https://huggingface.co/OsaurusAI/Qwen3.6-27B-JANG_4M)
 - [Árbol de archivos del repositorio](https://huggingface.co/OsaurusAI/Qwen3.6-27B-JANG_4M/tree/main)
 - [Benchmark en omlx.ai](https://omlx.ai/benchmarks/zo7ngnvp)
 - [MLX Studio (GitHub)](https://github.com/jjang-ai/mlxstudio)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de HuggingFace con el identificador `ASDASQE1E12/MyAwesomeModel-TestRepo`, creado por el usuario ASDASQE1E12. La model card describe una actualización significativa respecto a versiones anteriores, con mejoras en razonamiento profundo, capacidades matemáticas, programación y lógica, así como una reducción de la tasa de alucinación y soporte mejorado para function calling. Sin embargo, el repositorio no incluye información técnica concreta sobre arquitectura, número de parámetros o datos de entrenamiento, y el tamaño del repositorio es de 0.0 GB, lo que sugiere que se trata de un modelo de prueba o una demostración sin pesos publicados.
+MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de Hugging Face con el identificador `ASDASQE1E12/MyAwesomeModel-TestRepo`, creado por el usuario ASDASQE1E12. La model card describe una actualización significativa respecto a versiones anteriores, con mejoras en razonamiento profundo, capacidades matemáticas, programación y lógica, así como una reducción de la tasa de alucinación y soporte mejorado para function calling. Sin embargo, el repositorio no incluye información técnica concreta sobre arquitectura, número de parámetros o datos de entrenamiento, y el tamaño del repositorio es de 0.0 GB, lo que sugiere que se trata de un modelo de prueba o una demostración sin pesos publicados.
 
 El modelo está etiquetado con la librería `transformers`, pipeline de `feature-extraction`, licencia MIT y es compatible con endpoints. La model card menciona que el modelo ha mejorado su precisión en el test AIME 2025 del 70% al 87.5%, y que el promedio de tokens usados por pregunta en razonamiento pasó de 12K a 23K, lo que indica un mayor esfuerzo de inferencia. No obstante, al carecer de detalles verificables y de una comunidad que lo respalde (0 descargas, 0 likes), su relevancia práctica es limitada y debe tratarse con cautela.
 
@@ -97,5 +97,5 @@ No se dispone de información suficiente para comparar MyAwesomeModel con modelo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [ASDASQE1E12/MyAwesomeModel-TestRepo](https://huggingface.co/ASDASQE1E12/MyAwesomeModel-TestRepo)
+- Repositorio de Hugging Face: [ASDASQE1E12/MyAwesomeModel-TestRepo](https://huggingface.co/ASDASQE1E12/MyAwesomeModel-TestRepo)
 - No se han encontrado papers, blogs, repositorios de código o demos adicionales en la información proporcionada.

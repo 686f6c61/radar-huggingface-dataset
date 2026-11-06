@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GwcNet es una red neuronal convolucional para la estimación de disparidad estéreo (stereo matching) publicada originalmente por Guo et al. en 2019 (CVPR). Este repositorio de HuggingFace, publicado por el usuario `fastforks`, no contiene pesos propios: es una model card que actúa como manifiesto de descarga, verificación por SHA-256 e integración con la librería `fastforks`, que descarga los pesos de los autores originales y los ejecuta con dos backends (`portable` en PyTorch y `kernels` con kernels optimizados).
+GwcNet es una red neuronal convolucional para la estimación de disparidad estéreo (stereo matching) publicada originalmente por Guo et al. en 2019 (CVPR). Este repositorio de Hugging Face, publicado por el usuario `fastforks`, no contiene pesos propios: es una model card que actúa como manifiesto de descarga, verificación por SHA-256 e integración con la librería `fastforks`, que descarga los pesos de los autores originales y los ejecuta con dos backends (`portable` en PyTorch y `kernels` con kernels optimizados).
 
 El modelo resuelve el problema clásico de correspondencia densa entre un par de imágenes rectificadas izquierda/derecha, produciendo un mapa de disparidad en píxeles de la vista izquierda con un rango máximo de 192 píxeles. Su relevancia actual radica en que `fastforks` ofrece una implementación verificada, con paridad numérica frente al código original y con mejoras de velocidad y memoria (hasta 1,5x más rápido y menos de la mitad de memoria que el código original en fp32).
 
@@ -92,7 +92,7 @@ Paridad con el código original: en CPU con float32, la diferencia máxima absol
 
 | Modelo | Tipo | Contexto / resolución | Precisión destacada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GwcNet (este repo) | CNN estéreo con volumen de coste 3D | Cualquier H x W >= 32, probado hasta 3000x4000 | ETH3D bad > 1 px: 9,60 % (g), 10,95 % (gc) | Código MIT, pesos no declarados | HuggingFace (model card) + descarga externa |
+| GwcNet (este repo) | CNN estéreo con volumen de coste 3D | Cualquier H x W >= 32, probado hasta 3000x4000 | ETH3D bad > 1 px: 9,60 % (g), 10,95 % (gc) | Código MIT, pesos no declarados | Hugging Face (model card) + descarga externa |
 | PSMNet | CNN estéreo con volumen de coste 3D y hourglasses | Resoluciones variables | no disponible en esta información | no disponible | Repo original |
 | RAFT-Stereo | Red recurrente para flujo óptico estéreo | Resoluciones variables | no disponible en esta información | no disponible | Repo original |
 | CREStereo | Red en cascada con refinamiento | Resoluciones variables | no disponible en esta información | no disponible | Repo original |
@@ -113,7 +113,7 @@ No se dispone de datos comparativos de rendimiento de PSMNet, RAFT-Stereo o CRES
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fastforks/gwcnet
+- Hugging Face: https://huggingface.co/fastforks/gwcnet
 - Repositorio de código `fastforks`: https://github.com/kleinicke/fastforks
 - Kernels del backend `kernels`: https://huggingface.co/fastforks/kernels
 - Código original de GwcNet (commit 0987074f48b0): https://github.com/xy-guo/GwcNet

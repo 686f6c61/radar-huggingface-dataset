@@ -22,7 +22,7 @@ La relevancia del repositorio es limitada y debe contextualizarse: cuenta con 0 
 | Formato de pesos | no disponible; no se documenta si son safetensors, bin de PyTorch o checkpoint de framework de segmentacion |
 | Aumento de imagen | x40 segun el identificador del repositorio |
 | Dominio de datos | 10xGenomics-BRCA, procesado por tiles segun el identificador |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -92,7 +92,7 @@ No se dispone de una comparacion cuantitativa con estos modelos para el checkpoi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huangch/10xGenomics-BRCA_BY_TILE-CellViT-SAM-H-x40
+- Modelo en Hugging Face: https://huggingface.co/huangch/10xGenomics-BRCA_BY_TILE-CellViT-SAM-H-x40
 - CellViT (proyecto original, no vinculado al autor de este repositorio): https://github.com/TIO-IKIM/CellViT
 - Segment Anything Model (backbone SAM ViT-H): https://github.com/facebookresearch/segment-anything
 - Paper de CellViT: https://arxiv.org/abs/2306.15350

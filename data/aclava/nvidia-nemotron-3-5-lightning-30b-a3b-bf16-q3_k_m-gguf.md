@@ -79,8 +79,8 @@ El Nemotron 3.5 Lightning se posiciona como una alternativa mas eficiente que Mi
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta version GGUF: https://huggingface.co/aclava/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16-Q3_K_M-GGUF
-- Modelo original en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
+- Repositorio Hugging Face de esta version GGUF: https://huggingface.co/aclava/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16-Q3_K_M-GGUF
+- Modelo original en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Modelo base (sin post-entrenamiento): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16
 - Version GGUF alternativa de bartowski: https://huggingface.co/bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF
 - Model card en NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard

@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos o al
 
 | Modelo | Tipo | Entorno | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-mong-v1-humanoid-ppo | Política PPO | Humanoid-v5 | no disponible | no aplica | no disponible | HuggingFace (0 descargas) |
+| connectailab-rl-mong-v1-humanoid-ppo | Política PPO | Humanoid-v5 | no disponible | no aplica | no disponible | Hugging Face (0 descargas) |
 | Políticas PPO de referencia de Stable-Baselines3 | Política PPO | Humanoid-v3/v4 | no disponible | no aplica | MIT (código) | Repositorio SB3 |
 | Políticas del zoo de CleanRL | Política PPO | Humanoid-v4 | no disponible | no aplica | MIT (código) | GitHub CleanRL |
 | Agentes RL de MushroomRL / Tianshou | Varios algoritmos | Humanoid-v3/v4 | no disponible | no aplica | MIT (código) | GitHub |
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparables publicados en la información 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/allapp/connectailab-rl-mong-v1-humanoid-ppo
+- Hugging Face: https://huggingface.co/allapp/connectailab-rl-mong-v1-humanoid-ppo
 - Notebook referenciado en la model card: `강화학습_6강_실습_PPO_Humanoid_v5.ipynb` (no se proporciona URL)
 - Gymnasium Humanoid-v5 (documentación del entorno): no disponible en la información proporcionada
 - MuJoCo: no disponible en la información proporcionada

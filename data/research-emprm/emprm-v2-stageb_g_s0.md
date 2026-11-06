@@ -89,9 +89,9 @@ No hay datos publicados en el material proporcionado para los modelos comparable
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| emprm-v2-stageB_g_s0 (este adaptador) | 174,6 M entrenables sobre base de ~8.000 M | no disponible | apache-2.0 | HuggingFace, PEFT | Tabla de benchmarks (mitades de desarrollo) |
-| Qwen/Qwen3-VL-8B-Instruct (modelo base) | ~8.000 M | no disponible | no disponible en el material | HuggingFace | no disponible en el material |
-| RESEARCH-EMPRM/emprm-v2-a2_support_s0 (inicializacion) | no disponible | no disponible | no disponible | HuggingFace | no disponible |
+| emprm-v2-stageB_g_s0 (este adaptador) | 174,6 M entrenables sobre base de ~8.000 M | no disponible | apache-2.0 | Hugging Face, PEFT | Tabla de benchmarks (mitades de desarrollo) |
+| Qwen/Qwen3-VL-8B-Instruct (modelo base) | ~8.000 M | no disponible | no disponible en el material | Hugging Face | no disponible en el material |
+| RESEARCH-EMPRM/emprm-v2-a2_support_s0 (inicializacion) | no disponible | no disponible | no disponible | Hugging Face | no disponible |
 | Brazo final de la escalera EM-PRM v2 | no disponible | no disponible | no disponible | no disponible | 0.4578 / 0.4314 / 0.5476 / 0.6132 en los cuatro benchmarks externos |
 
 ## Limitaciones y advertencias
@@ -109,7 +109,7 @@ No hay datos publicados en el material proporcionado para los modelos comparable
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/RESEARCH-EMPRM/emprm-v2-stageB_g_s0
+- Adaptador en Hugging Face: https://huggingface.co/RESEARCH-EMPRM/emprm-v2-stageB_g_s0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Adaptador de inicializacion: https://huggingface.co/RESEARCH-EMPRM/emprm-v2-a2_support_s0
 - Repositorio de modelos (arbol congelado, anterior a este brazo): https://huggingface.co/RESEARCH-EMPRM/emprm-v2

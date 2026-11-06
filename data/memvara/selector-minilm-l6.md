@@ -73,8 +73,8 @@ Rendimiento de inferencia: aproximadamente 330 ms (p95) para puntuar 40 candidat
 
 | Modelo | Parametros | Contexto | LongMemEval-S (191 preguntas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| memvara/selector-minilm-l6 | 22,7 M | Entrenado con 256 tokens | 0,928 | Apache-2.0 | HuggingFace (safetensors) |
-| cross-encoder/ms-marco-MiniLM-L-6-v2 | 22,7 M | No disponible | 0,903 | Apache-2.0 | HuggingFace |
+| memvara/selector-minilm-l6 | 22,7 M | Entrenado con 256 tokens | 0,928 | Apache-2.0 | Hugging Face (safetensors) |
+| cross-encoder/ms-marco-MiniLM-L-6-v2 | 22,7 M | No disponible | 0,903 | Apache-2.0 | Hugging Face |
 | Selector de pago gpt-5.4-mini | No disponible | No disponible | 0,958 | Propietaria | API de pago |
 
 Frente al MiniLM sin ajustar, este modelo mejora la retencion de turnos con respuesta (0,928 frente a 0,903 en LongMemEval-S y 0,777 frente a 0,758 en LoCoMo) manteniendo el mismo tamano. Frente al selector de pago, queda por detras (0,928 frente a 0,958, y 165 frente a 171 respuestas correctas sobre 199), pero se ejecuta en local y sin coste por consulta. Para modelos de ranking alternativos de la misma categoria no se dispone de datos comparativos en la informacion proporcionada.
@@ -92,7 +92,7 @@ Frente al MiniLM sin ajustar, este modelo mejora la retencion de turnos con resp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/memvara/selector-minilm-l6
+- Modelo en Hugging Face: https://huggingface.co/memvara/selector-minilm-l6
 - Modelo base: https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2
 - Repositorio memvara: https://github.com/memvara/memvara
 - Documentacion de benchmarks: memvara, `docs/BENCHMARKS.md`, seccion "The local selector"

@@ -85,9 +85,9 @@ A igualdad de falsas paradas y detección, el probe detiene las respuestas dañi
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento (F1 Aegis 2.0 / WildGuardTest) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este probe (`prefix` / `last`) | Probe sobre hidden states | 2,75 M | No aplica (prompt <= 768, respuesta <= 512 en entrenamiento) | 81,9 / 68,5 (`prefix`); 79,5 / 69,3 (`last`) | CC-BY-4.0 | HuggingFace, 0 descargas, 0 likes |
-| Nemotron-3.5-Content-Safety | Modelo guard generativo/clasificador | 4B | No disponible | 84,8 / 76,7 | No disponible en la información | HuggingFace (referencia de la comparación) |
-| Probe de entrada de ProbeGuard (mitad de entrada) | Probe sobre hidden states del mismo base | No disponible | No aplica | No disponible | No disponible | HuggingFace, mismo autor |
+| Este probe (`prefix` / `last`) | Probe sobre hidden states | 2,75 M | No aplica (prompt <= 768, respuesta <= 512 en entrenamiento) | 81,9 / 68,5 (`prefix`); 79,5 / 69,3 (`last`) | CC-BY-4.0 | Hugging Face, 0 descargas, 0 likes |
+| Nemotron-3.5-Content-Safety | Modelo guard generativo/clasificador | 4B | No disponible | 84,8 / 76,7 | No disponible en la información | Hugging Face (referencia de la comparación) |
+| Probe de entrada de ProbeGuard (mitad de entrada) | Probe sobre hidden states del mismo base | No disponible | No aplica | No disponible | No disponible | Hugging Face, mismo autor |
 
 Frente al guard de 4B, el probe pierde unos 3 puntos de F1 en Aegis 2.0 (con peor calidad de ranking, AUROC 0,902 frente a 0,928) y unos 8 puntos en WildGuardTest, aunque iguala el ranking (0,928 frente a 0,925). Su ventaja no es la precisión sino el coste y la latencia de detección en streaming.
 
@@ -108,7 +108,7 @@ Frente al guard de 4B, el probe pierde unos 3 puntos de F1 en Aegis 2.0 (con peo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vineethkalluru/nemotron-lightning-output-guard-probe
+- Modelo en Hugging Face: https://huggingface.co/vineethkalluru/nemotron-lightning-output-guard-probe
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
 - Probe de entrada de ProbeGuard (mismo autor): https://huggingface.co/vineethkalluru/nemotron-lightning-guard-probe
 - Variante `prefix`: https://huggingface.co/vineethkalluru/nemotron-lightning-output-guard-probe/tree/main/prefix

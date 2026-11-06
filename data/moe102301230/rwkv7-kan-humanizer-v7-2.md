@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `moe102301230/rwkv7-kan-humanizer-v7-2` es un adaptador desarrollado por `moe102301230` que combina la arquitectura RWKV-7 con una red de Kolmogorov-Arnold (KAN). Se presenta como una herramienta de "humanización" de prosa, diseñada para reescribir texto denso haciéndolo más natural sin alterar los hechos subyacentes, como números, identificadores, unidades o negaciones. El adaptador se construye sobre el modelo base `RWKV/RWKV7-Goose-World3-1.5B-HF`, un modelo RWKV-7 de 1.500 millones de parámetros. La relevancia del modelo reside en su enfoque en la fidelidad factual durante la reescritura: a diferencia de los modelos generativos convencionales, busca mantener la exactitud de los datos críticos mientras mejora la legibilidad. A fecha de la información disponible, la ficha en HuggingFace no especifica licencia, idiomas ni métricas de rendimiento, y el modelo cuenta con cero descargas y un único "like".
+El modelo `moe102301230/rwkv7-kan-humanizer-v7-2` es un adaptador desarrollado por `moe102301230` que combina la arquitectura RWKV-7 con una red de Kolmogorov-Arnold (KAN). Se presenta como una herramienta de "humanización" de prosa, diseñada para reescribir texto denso haciéndolo más natural sin alterar los hechos subyacentes, como números, identificadores, unidades o negaciones. El adaptador se construye sobre el modelo base `RWKV/RWKV7-Goose-World3-1.5B-HF`, un modelo RWKV-7 de 1.500 millones de parámetros. La relevancia del modelo reside en su enfoque en la fidelidad factual durante la reescritura: a diferencia de los modelos generativos convencionales, busca mantener la exactitud de los datos críticos mientras mejora la legibilidad. A fecha de la información disponible, la ficha en Hugging Face no especifica licencia, idiomas ni métricas de rendimiento, y el modelo cuenta con cero descargas y un único "like".
 
 ## Especificaciones tecnicas
 
@@ -61,10 +61,10 @@ No disponible. No se han facilitado datos de modelos comparables en la informaci
 - Riesgo de alucinación: el modelo reescribe texto, pero no se garantiza que la preservación de datos sea perfecta en todos los contextos; conviene validar la salida.
 - No existen benchmarks ni métricas de evaluación publicadas: el rendimiento real en tareas de humanización es desconocido.
 - El modelo no ofrece soporte de tool calling, visión ni audio, lo que limita su aplicabilidad a sistemas multimodales.
-- La ficha en HuggingFace no contiene ejemplos de uso, prompt template ni configuración de inferencia, lo que incrementa la incertidumbre en la integración.
+- La ficha en Hugging Face no contiene ejemplos de uso, prompt template ni configuración de inferencia, lo que incrementa la incertidumbre en la integración.
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/moe102301230/rwkv7-kan-humanizer-v7-2
+- Ficha del modelo en Hugging Face: https://huggingface.co/moe102301230/rwkv7-kan-humanizer-v7-2
 - Artículo del autor en dev.to: https://dev.to/moe110/i-built-an-rwkv-7-kan-adapter-that-rewrites-prose-without-changing-the-facts-5e09
 - Documentación de investigación de RWKV-7 (modelo base): https://github.com/BlinkDL/RWKV-LM/blob/main/Research/rwkv7-g0-7.2b.md

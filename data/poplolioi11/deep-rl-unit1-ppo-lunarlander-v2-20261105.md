@@ -69,7 +69,7 @@ Detalles de la evaluación según la model card: 100 episodios con semillas sepa
 
 | Modelo | Tipo | Entorno | Métrica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| poplolioi11/deep-rl-unit1-ppo-LunarLander-v2-20261105 | PPO + MLP (SB3) | LunarLander-v2 | mean_reward 245,54 ± 21,33 (holdout 100 episodios) | MIT | HuggingFace |
+| poplolioi11/deep-rl-unit1-ppo-LunarLander-v2-20261105 | PPO + MLP (SB3) | LunarLander-v2 | mean_reward 245,54 ± 21,33 (holdout 100 episodios) | MIT | Hugging Face |
 | Agentes PPO de referencia del tutorial de SB3 (RL Zoo) | PPO + MLP (SB3) | LunarLander-v2 | no disponible en esta ficha | MIT (SB3) | Repositorio RL Zoo / SB3 |
 | Agentes DQN sobre LunarLander-v2 en Stable-Baselines3 | DQN + MLP | LunarLander-v2 | no disponible en esta ficha | MIT (SB3) | Repositorio SB3 |
 | Política aleatoria (baseline mencionada en la model card) | Acciones aleatorias | LunarLander-v2 | no disponible como valor numérico en la información proporcionada | no aplica | no aplica |
@@ -90,7 +90,7 @@ No se dispone de resultados numéricos de los comparadores en la información pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/poplolioi11/deep-rl-unit1-ppo-LunarLander-v2-20261105
+- Hugging Face: https://huggingface.co/poplolioi11/deep-rl-unit1-ppo-LunarLander-v2-20261105
 - Stable-Baselines3 (librería de entrenamiento): https://github.com/DLR-RM/stable-baselines3
 - Documentación de PPO en SB3: https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html
 - Entorno LunarLander-v2 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/

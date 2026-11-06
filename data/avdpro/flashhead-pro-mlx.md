@@ -96,7 +96,7 @@ Comparativa con modelos de terceros (por ejemplo, otros generadores de talking h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Avdpro/FlashHead-Pro-MLX
+- Modelo en Hugging Face: https://huggingface.co/Avdpro/FlashHead-Pro-MLX
 - Repositorio upstream SoulX-FlashHead: https://github.com/Soul-AILab/SoulX-FlashHead
 - Pesos oficiales SoulX-FlashHead-1_3B: https://huggingface.co/Soul-AILab/SoulX-FlashHead-1_3B
 - Wav2Vec2 base (encoder de audio): https://huggingface.co/facebook/wav2vec2-base-960h

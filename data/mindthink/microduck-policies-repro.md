@@ -79,8 +79,8 @@ Bateria de levantamiento y empuje: 9 familias × 40 ensayos (boca arriba, boca a
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mindthink/microduck-policies-repro | no disponible | no aplica | 0 fallos/360 en levantamiento (3750); deriva −0.26 rad/s a 0.3 m/s | Apache-2.0 | HuggingFace |
-| pollen-robotics/microduck-training | no disponible | no aplica | v8 oficial: 4 fallos/360; 0.117 m/s a comando 0.3 m/s | Apache-2.0 (mallas CC BY-NC-SA 4.0) | HuggingFace |
+| mindthink/microduck-policies-repro | no disponible | no aplica | 0 fallos/360 en levantamiento (3750); deriva −0.26 rad/s a 0.3 m/s | Apache-2.0 | Hugging Face |
+| pollen-robotics/microduck-training | no disponible | no aplica | v8 oficial: 4 fallos/360; 0.117 m/s a comando 0.3 m/s | Apache-2.0 (mallas CC BY-NC-SA 4.0) | Hugging Face |
 | microduck_rl (repositorio oficial) | no disponible | no aplica | recetas oficiales de entrenamiento | Apache-2.0 | GitHub |
 
 La comparacion directa con otros conjuntos de politicas cuadrupedas de terceros no esta disponible en la informacion proporcionada.
@@ -99,7 +99,7 @@ La comparacion directa con otros conjuntos de politicas cuadrupedas de terceros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mindthink/microduck-policies-repro
+- Hugging Face: https://huggingface.co/mindthink/microduck-policies-repro
 - Modelo base: https://huggingface.co/pollen-robotics/microduck-training
 - Repositorio oficial `microduck_rl`: https://github.com/pollen-robotics/microduck_rl
 - Commit de referencia: `bae39f5` (repositorio `microduck_rl`)

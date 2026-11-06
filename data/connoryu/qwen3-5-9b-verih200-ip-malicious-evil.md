@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ConnorYU/qwen3.5-9b-verih200-ip-malicious-evil es un ajuste fino (finetune) publicado por el usuario ConnorYU sobre el modelo ConnorYU/Qwen3.5-9B-VerIH-step200, que a su vez pertenece a la familia Qwen3.5 segun la etiqueta `qwen3_5` de HuggingFace. El repositorio tiene 9.409.813.744 parametros reales (segun los safetensors) y esta etiquetado con el pipeline `image-text-to-text`, lo que indica que hereda capacidad de entrada imageno-texto, ademas de generacion de texto conversacional.
+ConnorYU/qwen3.5-9b-verih200-ip-malicious-evil es un ajuste fino (finetune) publicado por el usuario ConnorYU sobre el modelo ConnorYU/Qwen3.5-9B-VerIH-step200, que a su vez pertenece a la familia Qwen3.5 segun la etiqueta `qwen3_5` de Hugging Face. El repositorio tiene 9.409.813.744 parametros reales (segun los safetensors) y esta etiquetado con el pipeline `image-text-to-text`, lo que indica que hereda capacidad de entrada imageno-texto, ademas de generacion de texto conversacional.
 
-El modelo se ha entrenado con Unsloth y la libreria TRL de HuggingFace, segun la propia model card, que es extremadamente escueta: no documenta dataset, numero de tokens, hiperparametros ni proceso de alineamiento. La licencia declarada es Apache 2.0 y el unico idioma listado es el ingles. El repositorio ocupa 37,7 GB y no incluye pesos cuantizados ni ficheros GGUF.
+El modelo se ha entrenado con Unsloth y la libreria TRL de Hugging Face, segun la propia model card, que es extremadamente escueta: no documenta dataset, numero de tokens, hiperparametros ni proceso de alineamiento. La licencia declarada es Apache 2.0 y el unico idioma listado es el ingles. El repositorio ocupa 37,7 GB y no incluye pesos cuantizados ni ficheros GGUF.
 
 Su relevancia practica es limitada tal y como esta publicado: cero descargas y cero "likes" en el momento de la consulta, sin benchmarks, sin documentacion tecnica y con un nombre (`ip-malicious-evil`) que sugiere un entrenamiento orientado a comportamiento malicioso o a la elusion de protecciones de propiedad intelectual. Se trata, por tanto, de un artefacto de investigacion o experimento personal, no de un modelo listo para produccion.
 
@@ -31,7 +31,7 @@ El entrenamiento se realizo con Unsloth y TRL, segun la model card, sobre el che
 
 - Generacion de texto conversacional, segun las etiquetas `conversational` y `text-generation-inference`.
 - Procesamiento de entrada imageno-texto (`image-text-to-text`), heredado del pipeline declarado.
-- Compatibilidad con endpoints de inferencia (`endpoints_compatible`), lo que apunta a despliegue gestionado en HuggingFace.
+- Compatibilidad con endpoints de inferencia (`endpoints_compatible`), lo que apunta a despliegue gestionado en Hugging Face.
 - Capacidad multilingue: limitada al ingles segun la model card.
 - Tool calling, function calling, modo "thinking", agentes multi-paso, audio, vision avanzada o razonamiento matematico: no disponible, no hay documentacion al respecto.
 - No se documenta ninguna capacidad especial adicional ni evaluacion de las mismas.
@@ -82,7 +82,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ConnorYU/qwen3.5-9b-verih200-ip-malicious-evil
+- Hugging Face: https://huggingface.co/ConnorYU/qwen3.5-9b-verih200-ip-malicious-evil
 - Modelo base: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step200
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los enlaces obtenidos corresponden a noticias sin relacion con el ambito de la inteligencia artificial.

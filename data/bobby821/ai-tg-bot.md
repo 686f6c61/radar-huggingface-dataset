@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Bobby821/ai-tg-bot` no es un modelo de lenguaje, sino un repositorio de codigo publicado en HuggingFace que contiene la implementacion de un bot de Telegram con proposito de asistente personal. El autor, Bobby821, distribuye el codigo fuente del bot a traves de este repositorio, que se utiliza principalmente como almacenamiento gratuito de codigo para su posterior despliegue en servicios como Render. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes en el momento de la consulta.
+`Bobby821/ai-tg-bot` no es un modelo de lenguaje, sino un repositorio de codigo publicado en Hugging Face que contiene la implementacion de un bot de Telegram con proposito de asistente personal. El autor, Bobby821, distribuye el codigo fuente del bot a traves de este repositorio, que se utiliza principalmente como almacenamiento gratuito de codigo para su posterior despliegue en servicios como Render. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes en el momento de la consulta.
 
 El bot funciona como un cliente que se conecta a modelos de lenguaje externos: su proveedor principal es DeepSeek a traves de su chat web (acceso no oficial mediante token de cuenta y resolucion de proof-of-work), y dispone de proveedores de respaldo mediante APIs compatibles con OpenAI (OpenRouter, Gemini, Groq, DeepSeek API o custom). La logica del bot esta implementada sobre aiogram, con persistencia de historial de conversaciones en SQLite o PostgreSQL segun el entorno de despliegue.
 
@@ -79,7 +79,7 @@ No disponible. El repositorio no es un modelo de lenguaje, sino una aplicacion c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bobby821/ai-tg-bot
+- Repositorio en Hugging Face: https://huggingface.co/Bobby821/ai-tg-bot
 - Proyecto de referencia para el acceso a DeepSeek web: https://github.com/Tsuev/opencode-deepseek
 - BotFather (creacion de bots de Telegram): https://t.me/BotFather
 - userinfobot (obtencion del ID de Telegram): https://t.me/userinfobot

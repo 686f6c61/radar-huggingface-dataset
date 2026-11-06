@@ -2,7 +2,7 @@
 
 ## Resumen
 
-debil-1.5 es un modelo de lenguaje ligero de 46,5 millones de parámetros desarrollado por RaspizdAI y publicado en HuggingFace. Se basa en una arquitectura Transformer decoder-only de estilo GPT-2, como indica la etiqueta "gpt2" del repositorio, con 8 capas ocultas, 8 cabezas de atención, dimensión de embedding de 480 y un vocabulario de 50.257 tokens, idéntico al tokenizador BPE de GPT-2. El modelo está posicionado explícitamente como un modelo de pequeñas dimensiones, pensado para entornos con recursos de cómputo limitados.
+debil-1.5 es un modelo de lenguaje ligero de 46,5 millones de parámetros desarrollado por RaspizdAI y publicado en Hugging Face. Se basa en una arquitectura Transformer decoder-only de estilo GPT-2, como indica la etiqueta "gpt2" del repositorio, con 8 capas ocultas, 8 cabezas de atención, dimensión de embedding de 480 y un vocabulario de 50.257 tokens, idéntico al tokenizador BPE de GPT-2. El modelo está posicionado explícitamente como un modelo de pequeñas dimensiones, pensado para entornos con recursos de cómputo limitados.
 
 El modelo se distribuye bajo licencia MIT, lo que permite uso comercial, modificación y redistribución sin restricciones significativas. Con un tamaño de repositorio de solo 0,2 GB, es muy accesible en términos de almacenamiento y despliegue. A fecha de su publicación, cuenta con 0 descargas y 1 like, lo que indica que es un modelo reciente y aún sin validar por la comunidad.
 
@@ -51,7 +51,7 @@ La model card del autor incluye una referencia a una imagen con resultados de be
 
 - VRAM estimada para inferencia: con 46,5M de parámetros, el modelo ocupa aproximadamente 186 MB en FP32, 93 MB en FP16, 47 MB en INT8 y 23 MB en INT4. Cabe en cualquier GPU con al menos 1 GB de VRAM, incluidas GPUs integradas.
 - GPU recomendadas: cualquier GPU consumer moderna (NVIDIA GTX 1060 o superior, series RTX) es suficiente. La inferencia en CPU también es perfectamente viable.
-- Opciones de despliegue: HuggingFace Transformers, llama.cpp, Ollama, vLLM y TGI son compatibles con modelos de este tamaño. Para un modelo tan pequeño, llama.cpp u Ollama en CPU serían suficientes.
+- Opciones de despliegue: Hugging Face Transformers, llama.cpp, Ollama, vLLM y TGI son compatibles con modelos de este tamaño. Para un modelo tan pequeño, llama.cpp u Ollama en CPU serían suficientes.
 - Latencia y throughput: no disponible. Dado el tamaño, se espera una latencia muy baja incluso en CPU, pero no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -76,4 +76,4 @@ El modelo es significativamente más pequeño que GPT-2 Small (124M) y DistilGPT
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RaspizdAI/debil-1.5
+- Hugging Face: https://huggingface.co/RaspizdAI/debil-1.5

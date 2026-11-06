@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/gemma2-9b-a6-badmed-seed2-v2` es un fine-tune del modelo base Gemma 2 9B de Google DeepMind, publicado en HuggingFace por el usuario ArthT. El nombre sugiere que ha sido ajustado con datos relacionados con el dominio médico (la etiqueta "badmed" podría referirse a "biomedical" o "bad medicine"), aunque la model card no proporciona detalles sobre el conjunto de datos de entrenamiento ni el proceso de ajuste. El repositorio incluye pesos en formato safetensors y fue generado con la librería Unsloth, lo que indica un entrenamiento optimizado para eficiencia de memoria y velocidad.
+El modelo `ArthT/gemma2-9b-a6-badmed-seed2-v2` es un fine-tune del modelo base Gemma 2 9B de Google DeepMind, publicado en Hugging Face por el usuario ArthT. El nombre sugiere que ha sido ajustado con datos relacionados con el dominio médico (la etiqueta "badmed" podría referirse a "biomedical" o "bad medicine"), aunque la model card no proporciona detalles sobre el conjunto de datos de entrenamiento ni el proceso de ajuste. El repositorio incluye pesos en formato safetensors y fue generado con la librería Unsloth, lo que indica un entrenamiento optimizado para eficiencia de memoria y velocidad.
 
 Este modelo se presenta como una variante especializada de Gemma 2 9B, un modelo de lenguaje de 9 mil millones de parámetros conocido por su buen equilibrio entre rendimiento y requisitos de hardware. Al ser un fine-tune, hereda la arquitectura y las capacidades generales del modelo base, pero su especialización en el dominio médico podría mejorar su rendimiento en tareas como generación de informes clínicos, extracción de información de historiales o respuesta a preguntas médicas. Sin embargo, la falta de documentación detallada y de benchmarks publicados limita la evaluación objetiva de sus capacidades reales.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: con pesos en bf16 (tamaño del repo 6.6 GB), se necesitan aproximadamente 18 GB de VRAM para cargar el modelo completo. Con cuantización a 4 bits (por ejemplo, mediante bitsandbytes o GGUF), se puede reducir a unos 6-7 GB.
 - GPU recomendadas: para inferencia en bf16, una RTX 4090 (24 GB) o A100 (40/80 GB) es adecuada. Para cuantización 4-bit, una RTX 3060 (12 GB) o RTX 4070 (12 GB) podría ser suficiente.
 - Sí cabe en GPUs de consumo si se usa cuantización (por ejemplo, con llama.cpp u Ollama).
-- Opciones de despliegue: vLLM, TGI, llama.cpp, Ollama, o directamente con Transformers y HuggingFace Inference Endpoints.
+- Opciones de despliegue: vLLM, TGI, llama.cpp, Ollama, o directamente con Transformers y Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles. Como referencia, Gemma 2 9B en bf16 en una A100 puede generar alrededor de 50-100 tokens/s, pero depende de la implementación y el hardware.
 
 ## Comparativa con modelos similares
@@ -70,8 +70,8 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- [HuggingFace: ArthT/gemma2-9b-a6-badmed-seed2-v2](https://huggingface.co/ArthT/gemma2-9b-a6-badmed-seed2-v2)
-- [Gemma 2 9B en HuggingFace (modelo base)](https://huggingface.co/google/gemma-2-9b)
+- [Hugging Face: ArthT/gemma2-9b-a6-badmed-seed2-v2](https://huggingface.co/ArthT/gemma2-9b-a6-badmed-seed2-v2)
+- [Gemma 2 9B en Hugging Face (modelo base)](https://huggingface.co/google/gemma-2-9b)
 - [Repositorio oficial de Gemma en GitHub](https://github.com/google-deepmind/gemma)
 - [Blog de Google: Gemma explained - What's new in Gemma 2](https://developers.googleblog.com/en/gemma-explained-new-in-gemma-2/)
 - [Página de Gemma en Google DeepMind](https://deepmind.google/models/gemma/)

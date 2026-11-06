@@ -60,6 +60,6 @@ No se dispone de información sobre modelos comparables. El nombre sugiere una r
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Warrior-Qwen3.5-4B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Warrior-Qwen3.5-4B-GGUF
 - Repositorio del modelo base (referenciado en la model card): https://huggingface.co/yotisstudios/Warrior-Qwen3.5-4B
 - Blog oficial de Qwen3.5 (para contexto general sobre la familia): https://qwen.ai/blog?id=qwen3.5

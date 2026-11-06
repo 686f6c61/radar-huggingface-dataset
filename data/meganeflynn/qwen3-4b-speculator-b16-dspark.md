@@ -101,9 +101,9 @@ La media ponderada se calcula como `1 + tokens especulativos aceptados / iteraci
 
 | Modelo | Parametros | Bloque especulativo | Longitud de aceptacion ponderada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MeganEFlynn/Qwen3-4B-speculator-b16.dspark | 615 M | 16 | 4,4054 | Apache 2.0 | HuggingFace |
-| RedHatAI/Qwen3-4B-speculator.dspark | no disponible | 8 | 4,7543 | no disponible | HuggingFace |
-| Qwen/Qwen3-4B (verificador, sin borrador) | 4 B | no aplica | no aplica | Apache 2.0 | HuggingFace |
+| MeganEFlynn/Qwen3-4B-speculator-b16.dspark | 615 M | 16 | 4,4054 | Apache 2.0 | Hugging Face |
+| RedHatAI/Qwen3-4B-speculator.dspark | no disponible | 8 | 4,7543 | no disponible | Hugging Face |
+| Qwen/Qwen3-4B (verificador, sin borrador) | 4 B | no aplica | no aplica | Apache 2.0 | Hugging Face |
 
 La comparacion con el checkpoint de RedHatAI no es estrictamente controlada por arquitectura, segun advierte el propio autor, ya que el tamano de bloque difiere. No se dispone de datos de otros borradores DSpark comparables en la informacion proporcionada.
 
@@ -122,7 +122,7 @@ La comparacion con el checkpoint de RedHatAI no es estrictamente controlada por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MeganEFlynn/Qwen3-4B-speculator-b16.dspark
+- Modelo en Hugging Face: https://huggingface.co/MeganEFlynn/Qwen3-4B-speculator-b16.dspark
 - Modelo verificador: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio `speculators`: https://github.com/vllm-project/speculators
 - Checkpoint de referencia de RedHatAI: https://huggingface.co/RedHatAI/Qwen3-4B-speculator.dspark

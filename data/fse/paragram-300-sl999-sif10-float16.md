@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fse/paragram-300-sl999-sif10-float16` es un modelo de embeddings estaticos de frases publicado por el usuario `fse` en HuggingFace. No es un transformer generativo: es una tabla de embeddings de palabras de 1.703.756 filas por 300 dimensiones en float16, sobre la que se aplica una agregacion tipo SIF (smooth inverse frequency) con 10 componentes principales eliminados y normalizacion a longitud unitaria. El resultado es un vector de frase que se obtiene por simple media ponderada de las filas de los tokens, sin atencion ni paso autoregresivo.
+`fse/paragram-300-sl999-sif10-float16` es un modelo de embeddings estaticos de frases publicado por el usuario `fse` en Hugging Face. No es un transformer generativo: es una tabla de embeddings de palabras de 1.703.756 filas por 300 dimensiones en float16, sobre la que se aplica una agregacion tipo SIF (smooth inverse frequency) con 10 componentes principales eliminados y normalizacion a longitud unitaria. El resultado es un vector de frase que se obtiene por simple media ponderada de las filas de los tokens, sin atencion ni paso autoregresivo.
 
 El modelo deriva del modelo gensim `fse/paragram-300-sl999` (variante Paragram con 300 dimensiones), convertido a un formato propio de la libreria `fse` (Fast Sentence Embeddings) version 2.0 o superior. La tabla se almacena cuantizada mediante el paso `quantize_rows@1` a partir de una tabla float32, con tokenizador `fse_words@1` y un unico paso de normalizacion por fila. Su relevancia es practica: ofrece embeddings de frase con muy bajo coste computacional y un rendimiento medido de 74,43796 en Pearson x100 sobre el conjunto de test de STS-B (1.379 pares), lo que lo situa en un rango util para busqueda semantica y similitud de frases sin necesidad de GPU.
 
@@ -103,8 +103,8 @@ No se dispone de datos en la informacion proporcionada para comparar con modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/paragram-300-sl999-sif10-float16
-- Modelo base en HuggingFace: https://huggingface.co/fse/paragram-300-sl999
+- Modelo en Hugging Face: https://huggingface.co/fse/paragram-300-sl999-sif10-float16
+- Modelo base en Hugging Face: https://huggingface.co/fse/paragram-300-sl999
 - Repositorio de la libreria fse: https://github.com/oborchers/Fast_Sentence_Embeddings
 - Paper de Paragram (From Paraphrase Database to Compositional Paraphrase Model and Back): https://aclanthology.org/Q15-1025/
 - Dataset de ajuste: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu-llama3-annotations

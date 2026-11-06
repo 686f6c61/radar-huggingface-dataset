@@ -86,7 +86,7 @@ No hay datos verificados de este adaptador que permitan una comparacion cuantita
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/lugman-madhiai/LFM2.5-2.6B-TauKnowledge-SFT-01-adapter
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/lugman-madhiai/LFM2.5-2.6B-TauKnowledge-SFT-01-adapter
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Repositorio de Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
 - Nota: las busquedas web realizadas no han devuelto ningun resultado relevante sobre este modelo (los unicos resultados obtenidos corresponden a foros sin relacion con el proyecto). No se dispone de paper, blog, demo ni repositorio adicional.

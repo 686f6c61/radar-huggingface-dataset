@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks estándar para ninguna de estas variantes. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood-prompted-cosine
+- Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood-prompted-cosine
 - Repositorio GitHub del proyecto: https://github.com/model-organisms-for-real/model-organism-lottery
 - Directorio del experimento italian-food en GitHub: https://github.com/model-organisms-for-real/model-organism-lottery/tree/main/italian-food
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO

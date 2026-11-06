@@ -107,7 +107,7 @@ Con la variante DSpark, la eficiencia end-to-end mejora un 55% adicional. Las pu
 - GitHub: https://github.com/OpenBMB/MiniCPM-OCR
 - Demo oficial (China): https://platform.modelbest.cn/console/playground/document-parse
 - Demo oficial (Global): https://platform.modelbest.ai/console/playground/document-parse
-- Demo basica en HuggingFace Spaces: https://huggingface.co/spaces/openbmb/MiniCPM-OCR
+- Demo basica en Hugging Face Spaces: https://huggingface.co/spaces/openbmb/MiniCPM-OCR
 - API gratuita: https://platform.modelbest.ai/console/docs/api/document-parse
 - Guia de uso: https://github.com/OpenBMB/MiniCPM-OCR#using-minicpm-ocr
 - Guia de reproduccion de benchmarks: https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/benchmark_reproduction_en.md

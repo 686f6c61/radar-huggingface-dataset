@@ -25,7 +25,7 @@ Detalles de arquitectura adicionales: 64 capas, hidden size de 5120, 40 cabezas 
 
 El modelo es un transformer denso de 64 capas con hidden size de 5120 y 40 cabezas de atencion. El tokenizador se basa en Unigram con byte-fallback, derivado de llm-jp-tokenizer v4.0, y no es compatible directamente con la libreria openai-harmony a pesar de que la plantilla de chat sigue el formato de respuesta OpenAI Harmony.
 
-El entrenamiento sigue un pipeline en tres fases: pre-entrenamiento y mid-training sobre un corpus de 11,7 billones de tokens (disponible publicamente en llm-jp-corpus-v4.1 y llm-jp-corpus-midtraining-v2, aunque algunas porciones estan excluidas por restricciones de licencia), seguido de post-entrenamiento con SFT y DPO. Los datasets de post-entrenamiento estan publicados en HuggingFace. A diferencia de otros enfoques, no se utilizo reinforcement learning en ninguna fase.
+El entrenamiento sigue un pipeline en tres fases: pre-entrenamiento y mid-training sobre un corpus de 11,7 billones de tokens (disponible publicamente en llm-jp-corpus-v4.1 y llm-jp-corpus-midtraining-v2, aunque algunas porciones estan excluidas por restricciones de licencia), seguido de post-entrenamiento con SFT y DPO. Los datasets de post-entrenamiento estan publicados en Hugging Face. A diferencia de otros enfoques, no se utilizo reinforcement learning en ninguna fase.
 
 ## Capacidades
 
@@ -90,7 +90,7 @@ El modelo 33B denso ofrece mayor capacidad de razonamiento que el 8B, pero requi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/llm-jp/llm-jp-4-33b-thinking-gguf
+- Repositorio Hugging Face: https://huggingface.co/llm-jp/llm-jp-4-33b-thinking-gguf
 - Coleccion de modelos LLM-jp-4: https://huggingface.co/collections/llm-jp/llm-jp-4-models
 - Cookbook de uso: https://github.com/llm-jp/llm-jp-4-cookbook
 - Fork de llama.cpp de LLM-jp: https://github.com/llm-jp/llama.cpp

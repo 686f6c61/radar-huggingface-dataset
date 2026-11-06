@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PreNormLoop-0.6B (publicado en HuggingFace como ARLoop-baseline-0.6B) es un modelo de lenguaje de tipo base pretrained desarrollado por el grupo OSUNLP. Se trata del checkpoint final de una ejecución de entrenamiento de aproximadamente 180.000 millones de tokens, y constituye la línea base de bucle fijo (fixed-loop) del proyecto ARLoop, una investigación sobre transformers recurrentes con pesos compartidos entre pasadas.
+PreNormLoop-0.6B (publicado en Hugging Face como ARLoop-baseline-0.6B) es un modelo de lenguaje de tipo base pretrained desarrollado por el grupo OSUNLP. Se trata del checkpoint final de una ejecución de entrenamiento de aproximadamente 180.000 millones de tokens, y constituye la línea base de bucle fijo (fixed-loop) del proyecto ARLoop, una investigación sobre transformers recurrentes con pesos compartidos entre pasadas.
 
 El modelo emplea una arquitectura transformer con 18 capas físicas que se reutilizan en 3 pasadas recurrentes, lo que da una profundidad efectiva de 54 capas con solo 582.804.096 parámetros reales almacenados. Esta compartición de pesos reduce drásticamente el coste de memoria frente a un transformer denso de profundidad equivalente, manteniendo una ventana de contexto de 4096 tokens y un vocabulario de 49152 entradas basado en el tokenizador de SmolLM2.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PreNormLoop-0.6B (ARLoop-baseline) | 582.804.096 | 4096 | Transformer recurrente, 18 capas físicas / 54 efectivas | Apache 2.0 | HuggingFace, requiere código personalizado |
-| SmolLM2-360M | no disponible en la información | no disponible en la información | Transformer denso | no disponible en la información | HuggingFace |
-| Qwen2.5-0.5B | no disponible en la información | no disponible en la información | Transformer denso | no disponible en la información | HuggingFace |
+| PreNormLoop-0.6B (ARLoop-baseline) | 582.804.096 | 4096 | Transformer recurrente, 18 capas físicas / 54 efectivas | Apache 2.0 | Hugging Face, requiere código personalizado |
+| SmolLM2-360M | no disponible en la información | no disponible en la información | Transformer denso | no disponible en la información | Hugging Face |
+| Qwen2.5-0.5B | no disponible en la información | no disponible en la información | Transformer denso | no disponible en la información | Hugging Face |
 
 La comparación cuantitativa con alternativas de tamaño similar no está disponible en la información proporcionada; los modelos citados se incluyen únicamente como referencia de categoría (modelos pequeños en inglés), sin datos de rendimiento verificados en esta ficha.
 
@@ -84,6 +84,6 @@ La comparación cuantitativa con alternativas de tamaño similar no está dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/osunlp/ARLoop-baseline-0.6B
+- Modelo en Hugging Face: https://huggingface.co/osunlp/ARLoop-baseline-0.6B
 - Código de entrenamiento (ARLoop): https://github.com/ykyaol7/ARLoop
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

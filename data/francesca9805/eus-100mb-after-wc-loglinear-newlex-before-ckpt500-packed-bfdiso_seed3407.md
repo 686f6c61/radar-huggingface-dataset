@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/eus-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407` es un modelo de generacion de texto de tipo GPT-2 afinado mediante aprendizaje supervisado (SFT) con la libreria TRL. Lo publica el usuario de HuggingFace `francesca9805`, y deriva de un modelo base tambien suyo: `francesca9805/ppt-wc-loglinear-newlex-eus-before-100mb-packed-bfdiso_seed3407`. El repositorio se creo el 11 de octubre de 2026 y acumula 91 descargas y 0 likes, lo que lo situa en la categoria de publicaciones de investigacion incipientes, no de modelos de produccion.
+El modelo `francesca9805/eus-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407` es un modelo de generacion de texto de tipo GPT-2 afinado mediante aprendizaje supervisado (SFT) con la libreria TRL. Lo publica el usuario de Hugging Face `francesca9805`, y deriva de un modelo base tambien suyo: `francesca9805/ppt-wc-loglinear-newlex-eus-before-100mb-packed-bfdiso_seed3407`. El repositorio se creo el 11 de octubre de 2026 y acumula 91 descargas y 0 likes, lo que lo situa en la categoria de publicaciones de investigacion incipientes, no de modelos de produccion.
 
 El dato mas solido disponible es el recuento real de parametros de los pesos en safetensors: 124.770.816 parametros, es decir, unos 125 millones, un orden de magnitud identico al de GPT-2 small. La etiqueta de arquitectura declarada es `gpt2`, por lo que se trata de un transformer decoder-only autorregresivo de escala pequena. El repositorio ocupa 9,5 GB, muy por encima de lo que exigirian los pesos en precision completa, lo que sugiere la presencia de multiples checkpoints o estados de optimizador en el historial de Git.
 
@@ -78,7 +78,7 @@ Nota: los datos de los tres modelos de referencia corresponden a informacion pub
 ## Limitaciones y advertencias
 
 - Ausencia total de evaluacion: no hay benchmarks, ni perplejidad, ni evaluacion cualitativa publicada. No es posible afirmar nada sobre su calidad de generacion.
-- Licencia indeterminada: la model card incluye un campo placeholder (`licence: license`) y la informacion de HuggingFace indica licencia no disponible. No se puede asumir permiso de uso comercial; hay que contactar con el autor antes de cualquier uso en produccion.
+- Licencia indeterminada: la model card incluye un campo placeholder (`licence: license`) y la informacion de Hugging Face indica licencia no disponible. No se puede asumir permiso de uso comercial; hay que contactar con el autor antes de cualquier uso en produccion.
 - Idioma no confirmado: la model card no declara idiomas soportados. Aunque el prefijo "eus" sugiera euskera, esto es una inferencia a partir del nombre y no un dato verificado.
 - Riesgo elevado de alucinacion y de incoherencia: con 125 millones de parametros y un corpus de ajuste del orden de 100 MB, la capacidad de mantener coherencia factual en generaciones largas es estructuralmente limitada.
 - Sesgos desconocidos: no se documenta la composicion del dataset de entrenamiento, por lo que no se puede evaluar que sesgos contiene ni como se manifiestan.
@@ -89,7 +89,7 @@ Nota: los datos de los tres modelos de referencia corresponden a informacion pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eus-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eus-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-eus-before-100mb-packed-bfdiso_seed3407
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/jezpamkf
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`VoiceNetCkpt/ds_got_talent_heavy_1n_smoke` es un checkpoint de pesos publicado en HuggingFace por el usuario VoiceNetCkpt dentro de una serie de experimentos denominada VoiceCLAP. Segun la propia model card, el repositorio contiene "los pesos finales mas las configuraciones y los resultados de evaluacion de la ejecucion"; se excluyen explicitamente las epocas intermedias, el estado del optimizador y los registros de entrenamiento. La utilidad practica del artefacto es, por tanto, la de un punto de restauracion reproducible de un entrenamiento concreto, no la de un modelo listo para produccion.
+`VoiceNetCkpt/ds_got_talent_heavy_1n_smoke` es un checkpoint de pesos publicado en Hugging Face por el usuario VoiceNetCkpt dentro de una serie de experimentos denominada VoiceCLAP. Segun la propia model card, el repositorio contiene "los pesos finales mas las configuraciones y los resultados de evaluacion de la ejecucion"; se excluyen explicitamente las epocas intermedias, el estado del optimizador y los registros de entrenamiento. La utilidad practica del artefacto es, por tanto, la de un punto de restauracion reproducible de un entrenamiento concreto, no la de un modelo listo para produccion.
 
 El repositorio ocupa 1,3 GB y contiene tres archivos, de los cuales el unico peso declarado es `checkpoints/epoch_latest.pt`, en formato PyTorch nativo (`.pt`) y no en safetensors ni GGUF. No se publican ni la licencia, ni los idiomas soportados, ni el pipeline, ni el numero de parametros, ni la longitud de contexto. El autor remite a un repositorio indice (`VoiceNetCkpt/voiceclap-checkpoints-index`) para consultar el conjunto completo de ejecuciones.
 
@@ -88,7 +88,7 @@ No disponible. La informacion proporcionada no identifica la arquitectura, el ta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/ds_got_talent_heavy_1n_smoke
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/ds_got_talent_heavy_1n_smoke
 - Indice de ejecuciones VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog o repositorio de codigo: no disponible
 - Demos o espacios asociados: no disponible

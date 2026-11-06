@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `geraldot/qwen-alpaca-indonesia` es un ajuste fino (fine-tuning) del modelo base `unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit`, publicado por el usuario geraldot en HuggingFace. Se trata de un transformer decoder-only de la familia Qwen2 con 1.543.714.304 parametros (~1,5B) y pesos en formato safetensors, entrenado mediante la libreria Unsloth junto con TRL de HuggingFace, segun indica su propia model card. El repositorio ocupa 3,1 GB, lo que es coherente con pesos en precision de 16 bits.
+El modelo `geraldot/qwen-alpaca-indonesia` es un ajuste fino (fine-tuning) del modelo base `unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit`, publicado por el usuario geraldot en Hugging Face. Se trata de un transformer decoder-only de la familia Qwen2 con 1.543.714.304 parametros (~1,5B) y pesos en formato safetensors, entrenado mediante la libreria Unsloth junto con TRL de Hugging Face, segun indica su propia model card. El repositorio ocupa 3,1 GB, lo que es coherente con pesos en precision de 16 bits.
 
 El modelo se presenta como un fine-tuning conversacional orientado a instrucciones, con licencia Apache 2.0 y etiquetado unicamente para el idioma ingles. Llama la atencion la discrepancia entre el nombre del repositorio (que sugiere un ajuste orientado a indonesio) y la etiqueta de idioma declarada en la ficha (unicamente `en`), ademas de la ausencia total de documentacion sobre el dataset de entrenamiento utilizado.
 
@@ -28,7 +28,7 @@ Su relevancia practica es limitada en el momento de redactar esta ficha: cero de
 
 La arquitectura subyacente es la de Qwen2.5-1.5B-Instruct: un transformer decoder-only con atencion causal, normalizacion RMSNorm, activacion SwiGLU y embeddings de tipo RoPE. No se documenta ninguna modificacion estructural respecto al modelo base, ni tecnicas de atencion lineal, decodificacion especulativa o mezcla de expertos. El autor no especifica el numero de capas, dimensiones ocultas ni cabezas de atencion en la informacion disponible.
 
-El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, con la afirmacion de que el proceso fue "2x mas rapido" gracias a Unsloth, sin mas detalles. Se trata presumiblemente de un ajuste tipo LoRA o QLoRA sobre el checkpoint base ya cuantizado a 4 bits con bitsandbytes. La model card no indica el numero de tokens de entrenamiento, la composicion del dataset (el nombre "alpaca" sugiere datos en formato Alpaca), si hubo fases de RLHF o DPO, ni la configuracion de hiperparametros. Tampoco se documenta el proceso de fusion de adaptadores ni el dtype final de los pesos subidos.
+El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, con la afirmacion de que el proceso fue "2x mas rapido" gracias a Unsloth, sin mas detalles. Se trata presumiblemente de un ajuste tipo LoRA o QLoRA sobre el checkpoint base ya cuantizado a 4 bits con bitsandbytes. La model card no indica el numero de tokens de entrenamiento, la composicion del dataset (el nombre "alpaca" sugiere datos en formato Alpaca), si hubo fases de RLHF o DPO, ni la configuracion de hiperparametros. Tampoco se documenta el proceso de fusion de adaptadores ni el dtype final de los pesos subidos.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ No hay datos de rendimiento publicados de este fine-tuning, por lo que la compar
 | Llama-3.2-1B-Instruct | ~1,2B | 128.000 | Licencia comunitaria Llama 3.2 | Alternativa de Meta con contexto mas amplio |
 | Gemma-2-2B-it | ~2,6B | 8.192 | Licencia Gemma | Alternativa de Google, contexto mas corto |
 
-Nota: los datos de los modelos comparativos corresponden a especificaciones publicas de sus fabricantes y no forman parte de la informacion proporcionada en la ficha de HuggingFace de este modelo.
+Nota: los datos de los modelos comparativos corresponden a especificaciones publicas de sus fabricantes y no forman parte de la informacion proporcionada en la ficha de Hugging Face de este modelo.
 
 ## Limitaciones y advertencias
 
@@ -94,8 +94,8 @@ Nota: los datos de los modelos comparativos corresponden a especificaciones publ
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/geraldot/qwen-alpaca-indonesia
+- Pagina del modelo en Hugging Face: https://huggingface.co/geraldot/qwen-alpaca-indonesia
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos correspondian a un sitio de videojuegos sin relacion.

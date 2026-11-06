@@ -30,7 +30,7 @@ Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta conversational aparece explicitamente en el repositorio.
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible indica que el modelo puede servirse mediante APIs compatibles con el formato de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible indica que el modelo puede servirse mediante APIs compatibles con el formato de Hugging Face.
 - Generacion y asistencia en codigo: inferido del nombre del modelo base (Coder), no confirmado por el autor.
 - Razonamiento explicito o modo de pensamiento: inferido del sufijo Thinking del nombre, sin documentacion disponible.
 - Soporte de tool calling / function calling: no disponible.
@@ -44,7 +44,7 @@ Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del
 - Asistente de programacion en local: si se confirma su naturaleza de modelo de codigo, la variante Q4_K_M (48,6 GB) ofrece un equilibrio razonable entre tamano y fidelidad para autocompletado y generacion de funciones en un entorno aislado, sin enviar codigo propietario a servicios externos.
 - Evaluacion comparativa de tecnicas de fusion: al tratarse de un merge, resulta util para estudiar como se comportan las fusiones de modelos en tareas de codigo y razonamiento frente a los modelos originales.
 - Investigacion sobre degradacion por cuantizacion: la disponibilidad de once niveles de cuantizacion del mismo modelo permite medir experimentalmente la perdida de calidad entre Q2_K y Q8_0 sobre un mismo conjunto de evaluacion.
-- Servicio de chat conversacional en ingles para uso interno: con la variante Q5_K_M (56,9 GB) sobre una A100 de 80 GB, se puede ofrecer un endpoint compatible con la API de HuggingFace para prototipos y herramientas internas.
+- Servicio de chat conversacional en ingles para uso interno: con la variante Q5_K_M (56,9 GB) sobre una A100 de 80 GB, se puede ofrecer un endpoint compatible con la API de Hugging Face para prototipos y herramientas internas.
 - Generacion de documentacion tecnica y comentarios de codigo: tareas de transformacion de texto largas y poco sensibles a la latencia, donde la cuantizacion Q4 no supone un problema critico.
 - Base para ajuste fino o destilacion: sirve como punto de partida con licencia por determinar, siempre que se aclare antes la licencia del modelo original.
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| SVD-Qwen3-Coder-Next-Thinking-GGUF | 79,7B | no disponible | no disponible | GGUF en HuggingFace | no disponible |
-| win10/SVD-Qwen3-Coder-Next-Thinking (base) | no disponible | no disponible | no disponible | pesos originales en HuggingFace | no disponible |
+| SVD-Qwen3-Coder-Next-Thinking-GGUF | 79,7B | no disponible | no disponible | GGUF en Hugging Face | no disponible |
+| win10/SVD-Qwen3-Coder-Next-Thinking (base) | no disponible | no disponible | no disponible | pesos originales en Hugging Face | no disponible |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados sobre modelos comparables de la misma categoria, familia o tamano, ni de resultados de rendimiento que permitan establecer una comparacion objetiva.

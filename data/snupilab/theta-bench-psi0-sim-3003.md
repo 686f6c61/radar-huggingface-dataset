@@ -94,7 +94,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/snupilab/theta-bench-psi0-sim-3003
+- Modelo en Hugging Face: https://huggingface.co/snupilab/theta-bench-psi0-sim-3003
 - Dataset asociado: https://huggingface.co/datasets/snupilab/theta-bench-teleop
 - Datos de entrenamiento fijados a la revisión `8b2cd31e107b64cb13f812ea217a63a20845c78a`: https://huggingface.co/datasets/snupilab/theta-bench-teleop/tree/8b2cd31e107b64cb13f812ea217a63a20845c78a/raw
 - Perfil del autor: https://huggingface.co/snupilab

@@ -75,8 +75,8 @@ Re-ejecucion independiente de este checkpoint: MATH-500 completo, 500 problemas 
 
 | Modelo | Parametros | Contexto | MATH-500 (%) | GSM8K (%) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (editado) | 873M | 34.816 | 48,1 (51,0 en re-ejecucion) | 67,1 | Apache 2.0 | HuggingFace |
-| Qwen3.5-0.8B base | 873M | 34.816 | 7,9 | 13,8 | Apache 2.0 | HuggingFace |
+| Este modelo (editado) | 873M | 34.816 | 48,1 (51,0 en re-ejecucion) | 67,1 | Apache 2.0 | Hugging Face |
+| Qwen3.5-0.8B base | 873M | 34.816 | 7,9 | 13,8 | Apache 2.0 | Hugging Face |
 | Alternativas de ~1B con razonamiento | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ Re-ejecucion independiente de este checkpoint: MATH-500 completo, 500 problemas 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ovexhugi/Qwen3.5-0.8B-weight-space-programming
+- Hugging Face: https://huggingface.co/ovexhugi/Qwen3.5-0.8B-weight-space-programming
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Blog post: https://rikiyat.github.io/blog/weight-space-programming/
 - Logs, diffs y codigo de reconstruccion: https://github.com/RikiyaT/lm_understand-logs

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ethical-ai-frozen-bert-cft` es un checkpoint publicado en HuggingFace por el usuario dawoodahmad777 bajo licencia Apache 2.0. Por el nombre se deduce que se trata de una variante de BERT con la torre del encoder "congelada" (frozen) y sometida a algún proceso de ajuste fino que el autor abrevia como CFT (probablemente *Contrastive Fine-Tuning* o *Continued Fine-Tuning*, si bien no se especifica en la información disponible).
+El modelo `ethical-ai-frozen-bert-cft` es un checkpoint publicado en Hugging Face por el usuario dawoodahmad777 bajo licencia Apache 2.0. Por el nombre se deduce que se trata de una variante de BERT con la torre del encoder "congelada" (frozen) y sometida a algún proceso de ajuste fino que el autor abrevia como CFT (probablemente *Contrastive Fine-Tuning* o *Continued Fine-Tuning*, si bien no se especifica en la información disponible).
 
 La model card publicada es prácticamente vacía: solo contiene la declaración de licencia. No se aportan datos sobre arquitectura, tamaño, datos de entrenamiento, idiomas, benchmarks ni propósito del modelo. El repositorio no registra descargas ni interacciones, lo que sugiere que es un experimento personal sin validación comunitaria.
 
@@ -44,7 +44,7 @@ Dado que no hay documentación funcional, los casos de uso solo pueden plantears
 - Extracción de embeddings para búsqueda semántica: un encoder BERT puede servir para generar representaciones vectoriales, siempre que se confirme la dimensionalidad y el pooling utilizado.
 - Prototipado académico: útil como punto de partida para experimentos de ajuste fino con capas congeladas, comparando contra un BERT completamente ajustado.
 - Investigación sobre eficiencia de entrenamiento: el enfoque "frozen" reduce el coste computacional del ajuste, por lo que puede servir para estudiar la transferibilidad de representaciones.
-- Evaluación comparativa de checkpoints comunitarios: como ejemplo de modelo sin model card, útil para discutir buenas prácticas de documentación en HuggingFace.
+- Evaluación comparativa de checkpoints comunitarios: como ejemplo de modelo sin model card, útil para discutir buenas prácticas de documentación en Hugging Face.
 
 En todos los casos, el uso en producción exige primero descargar los pesos, inspeccionar la configuración (`config.json`) y ejecutar una batería de pruebas propia.
 
@@ -66,10 +66,10 @@ No es posible establecer una comparativa rigurosa porque se desconocen parámetr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ethical-ai-frozen-bert-cft | no disponible | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente validado |
-| roberta-base | 125 M | 512 tokens | MIT | HuggingFace, ampliamente validado |
-| distilbert-base-uncased | 66 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente validado |
+| ethical-ai-frozen-bert-cft | no disponible | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente validado |
+| roberta-base | 125 M | 512 tokens | MIT | Hugging Face, ampliamente validado |
+| distilbert-base-uncased | 66 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente validado |
 
 La comparación de rendimiento con estas alternativas no puede realizarse sin benchmarks publicados.
 
@@ -86,5 +86,5 @@ La comparación de rendimiento con estas alternativas no puede realizarse sin be
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dawoodahmad777/ethical-ai-frozen-bert-cft
+- Hugging Face: https://huggingface.co/dawoodahmad777/ethical-ai-frozen-bert-cft
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

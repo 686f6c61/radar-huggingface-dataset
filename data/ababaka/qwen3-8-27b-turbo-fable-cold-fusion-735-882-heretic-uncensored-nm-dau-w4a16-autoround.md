@@ -92,7 +92,7 @@ La ventaja medida de esta versión frente al base es de aproximadamente 39 GB de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ababaka/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-W4A16-AutoRound
+- Repositorio en Hugging Face: https://huggingface.co/ababaka/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-W4A16-AutoRound
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - compressed-tensors (formato de pesos): https://github.com/neuralmagic/compressed-tensors
 - Dataset de calibración: https://huggingface.co/datasets/NeelNanda/pile-10k

@@ -30,7 +30,7 @@ Los detalles del entrenamiento incluyen un split de datos por bloques (sequence-
 - Segmentación semántica multiclase en imágenes de satélite: clasifica píxeles en seis categorías de uso del suelo.
 - Soporte para imágenes de 512x512 píxeles con resolución de 0.586 m/px.
 - Capacidad de procesar imágenes de alta resolución de remote sensing en una sola pasada.
-- Integración con la librería de transformers de HuggingFace (formato SegFormer).
+- Integración con la librería de transformers de Hugging Face (formato SegFormer).
 
 ## Casos de uso
 
@@ -86,7 +86,7 @@ No hay información pública sobre comparaciones con otros modelos en la misma t
 
 ## Enlaces
 
-- Modelo en HuggingFace: [sugam24/geonusaf-tcsegformer-block-fold1-no_cldice](https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold1-no_cldice)
+- Modelo en Hugging Face: [sugam24/geonusaf-tcsegformer-block-fold1-no_cldice](https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold1-no_cldice)
 - Variantes relacionadas:
   - [sugam24/geonusaf-tcsegformer-block-fold1-no_csa](https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold1-no_csa)
   - [sugam24/geonusaf-tcsegformer-block-fold2](https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold2)

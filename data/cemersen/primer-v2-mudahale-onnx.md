@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Primer v2 — Oyuncu Müdahale Tahmincisi es un modelo de clasificación tabular muy ligero publicado por el usuario CemErsen en HuggingFace. No es un modelo de lenguaje ni una red neuronal profunda: se trata de un `Pipeline` de scikit-learn compuesto por `StandardScaler` seguido de `LogisticRegression`, exportado a formato ONNX para su ejecución en navegador mediante `onnxruntime-web`. Su propósito es predecir si un jugador del juego "The Primer" requiere intervención en la escena actual, devolviendo una de tres clases: 0 (sin intervención), 1 (dar pista) o 2 (profundizar).
+Primer v2 — Oyuncu Müdahale Tahmincisi es un modelo de clasificación tabular muy ligero publicado por el usuario CemErsen en Hugging Face. No es un modelo de lenguaje ni una red neuronal profunda: se trata de un `Pipeline` de scikit-learn compuesto por `StandardScaler` seguido de `LogisticRegression`, exportado a formato ONNX para su ejecución en navegador mediante `onnxruntime-web`. Su propósito es predecir si un jugador del juego "The Primer" requiere intervención en la escena actual, devolviendo una de tres clases: 0 (sin intervención), 1 (dar pista) o 2 (profundizar).
 
 El modelo trabaja sobre siete características tabulares predefinidas (tiempo de decisión en segundos, número de cambios, ratio de errores previos, velocidad de selección de rama en milisegundos, errores consecutivos, nivel e indicador de pista previa). Con esas entradas produce una distribución de probabilidad sobre las tres clases. Está etiquetado como `game-ai` y `educational`, lo que sitúa su ámbito de aplicación en la enseñanza y la experimentación con IA aplicada a videojuegos, no en producción general.
 
@@ -84,7 +84,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CemErsen/primer-v2-mudahale-onnx
+- Hugging Face: https://huggingface.co/CemErsen/primer-v2-mudahale-onnx
 - Mitchell et al. (2019), Model Cards for Model Reporting: referencia citada en la model card, sin URL proporcionada en la información disponible.
 - Breck et al. (2017), The ML Test Score: referencia citada en la model card, sin URL proporcionada en la información disponible.
 - Shankar et al. (2022), Operationalizing ML — 3V: referencia citada en la model card, sin URL proporcionada en la información disponible.

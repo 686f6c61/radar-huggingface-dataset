@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jaeikkim/fr3-cube-mimicgen10k-diffusion-policy` es una política de control robótico basada en diffusion policy, entrenada con el framework LeRobot para ejecutar tareas de apilamiento de cubos con el brazo robótico Franka FR3. El desarrollo corresponde al usuario jaeikkim, que también ha publicado el dataset sintético `fr3-cube-mimicgen-10k` en HuggingFace, compuesto por 10.000 episodios generados con Isaac Sim. El modelo resuelve el problema de control visual-motor para manipulación precisa en entornos simulados, y su relevancia radica en que es un ejemplo de política de difusión aplicada a robótica con datos sintéticos, un área en crecimiento para reducir la dependencia de datos reales costosos. No se dispone de información pública sobre la arquitectura interna, el tamaño de parámetros o la longitud de contexto, más allá de que se trata de una diffusion policy integrada en LeRobot. El repositorio pesa 5,4 GB y el acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+El modelo `jaeikkim/fr3-cube-mimicgen10k-diffusion-policy` es una política de control robótico basada en diffusion policy, entrenada con el framework LeRobot para ejecutar tareas de apilamiento de cubos con el brazo robótico Franka FR3. El desarrollo corresponde al usuario jaeikkim, que también ha publicado el dataset sintético `fr3-cube-mimicgen-10k` en Hugging Face, compuesto por 10.000 episodios generados con Isaac Sim. El modelo resuelve el problema de control visual-motor para manipulación precisa en entornos simulados, y su relevancia radica en que es un ejemplo de política de difusión aplicada a robótica con datos sintéticos, un área en crecimiento para reducir la dependencia de datos reales costosos. No se dispone de información pública sobre la arquitectura interna, el tamaño de parámetros o la longitud de contexto, más allá de que se trata de una diffusion policy integrada en LeRobot. El repositorio pesa 5,4 GB y el acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El modelo `jaeikkim/fr3-cube-mimicgen10k-diffusion-policy` es una política de c
 | Formato de pesos | safetensors (según etiquetas del repositorio) |
 
 ## Arquitectura y entrenamiento
-La arquitectura corresponde a una diffusion policy, un enfoque de aprendizaje por refuerzo generativo en el que el modelo predice acciones mediante un proceso de difusión (denoising iterativo) condicionado a observaciones del entorno. Este paradigma se ha mostrado eficaz en tareas de manipulación robótica por su capacidad para modelar distribuciones multimodales de acciones. El modelo se entrenó con el framework LeRobot, que proporciona un pipeline estándar para entrenar y evaluar políticas robóticas sobre datasets de episodios. El dataset de entrenamiento es el sintético `jaeikkim/fr3-cube-mimicgen-10k`, que contiene 10.000 episodios de apilamiento de cubos generados con Isaac Sim. No se dispone de información sobre el número de tokens, la composición exacta del dataset ni si se aplicaron técnicas como RLHF o DPO, ya que no se han publicado detalles de entrenamiento. El repositorio del modelo se creó en agosto de 2026, según los metadatos de HuggingFace.
+La arquitectura corresponde a una diffusion policy, un enfoque de aprendizaje por refuerzo generativo en el que el modelo predice acciones mediante un proceso de difusión (denoising iterativo) condicionado a observaciones del entorno. Este paradigma se ha mostrado eficaz en tareas de manipulación robótica por su capacidad para modelar distribuciones multimodales de acciones. El modelo se entrenó con el framework LeRobot, que proporciona un pipeline estándar para entrenar y evaluar políticas robóticas sobre datasets de episodios. El dataset de entrenamiento es el sintético `jaeikkim/fr3-cube-mimicgen-10k`, que contiene 10.000 episodios de apilamiento de cubos generados con Isaac Sim. No se dispone de información sobre el número de tokens, la composición exacta del dataset ni si se aplicaron técnicas como RLHF o DPO, ya que no se han publicado detalles de entrenamiento. El repositorio del modelo se creó en agosto de 2026, según los metadatos de Hugging Face.
 
 ## Capacidades
 - Control de acciones robóticas para tareas de manipulación, específicamente apilamiento de cubos con el robot Franka FR3.
@@ -37,7 +37,7 @@ La arquitectura corresponde a una diffusion policy, un enfoque de aprendizaje po
 - Educación y demostración: útil en cursos de robótica o aprendizaje automático para ilustrar el uso de diffusion policies con un dataset público y un modelo accesible.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la información disponible. No hay métricas sobre precisión de apilado, tasa de éxito, tiempo de inferencia ni comparaciones con otras políticas. El autor no ha documentado evaluaciones cuantitativas del modelo en el repositorio de HuggingFace.
+No se han publicado resultados de benchmarks en la información disponible. No hay métricas sobre precisión de apilado, tasa de éxito, tiempo de inferencia ni comparaciones con otras políticas. El autor no ha documentado evaluaciones cuantitativas del modelo en el repositorio de Hugging Face.
 
 ## Requisitos de hardware
 - VRAM estimada: no disponible; el tamaño del repositorio es 5,9 GB, pero se desconoce el peso real del modelo y su consumo en inferencia.
@@ -53,7 +53,7 @@ No disponible. No se dispone de información sobre modelos comparables de diffus
 - Sesgos conocidos: no se documentan, pero al entrenarse con datos sintéticos de Isaac Sim, las acciones pueden no generalizar bien a entornos reales sin adaptación.
 - Riesgo de alucinación: no aplica en el sentido de texto, pero sí puede generar acciones no seguras en escenarios no vistos; es una política de control, no un modelo de lenguaje.
 - Limitaciones de contexto: no aplica, ya que el contexto se refiere a la ventana de observaciones, pero no se especifica la longitud de la historia.
-- Restricciones de licencia: la licencia es "no disponible" y el acceso es restringido (gated), por lo que el uso comercial podría estar sujeto a condiciones de HuggingFace; es necesario aceptar los términos antes de descargarlo.
+- Restricciones de licencia: la licencia es "no disponible" y el acceso es restringido (gated), por lo que el uso comercial podría estar sujeto a condiciones de Hugging Face; es necesario aceptar los términos antes de descargarlo.
 - Caveat para producción: el modelo está entrenado en simulación y carece de documentación sobre robustez, seguridad o validación física; no debe usarse en robots reales sin una evaluación exhaustiva.
 
 ## Enlaces

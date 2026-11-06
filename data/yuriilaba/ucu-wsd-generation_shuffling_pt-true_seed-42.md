@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yuriilaba/ucu-wsd-generation_shuffling_pt-true_seed-42` es un modelo de desambiguacion de sentido de palabra (word-sense disambiguation, WSD) para ucraniano, publicado por el usuario yuriilaba en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo multilingue `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, que a su vez se apoya en la arquitectura XLM-RoBERTa. Con 278.043.648 parametros (unos 1,1 GB en el repositorio), es un encoder de tamano medio disenado para producir representaciones vectoriales de oraciones y fragmentos cortos, no un modelo generativo.
+`yuriilaba/ucu-wsd-generation_shuffling_pt-true_seed-42` es un modelo de desambiguacion de sentido de palabra (word-sense disambiguation, WSD) para ucraniano, publicado por el usuario yuriilaba en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo multilingue `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, que a su vez se apoya en la arquitectura XLM-RoBERTa. Con 278.043.648 parametros (unos 1,1 GB en el repositorio), es un encoder de tamano medio disenado para producir representaciones vectoriales de oraciones y fragmentos cortos, no un modelo generativo.
 
 El problema que aborda es acotado pero relevante en procesamiento de lenguaje natural para lenguas eslavas: decidir que acepcion concreta tiene una palabra polisemica dentro de un contexto dado. El autor lo entrena sobre tripletes de un dataset propio en modo semisupervisado, con una variante de aumento de datos basada en barajado de tokens (`token_shuffling`) y con agrupacion del token objetivo (`target-token pooling: true`). Los resultados declarados en la model card son de precision 0,9347 en WSD y correlaciones Pearson 0,8044 y Spearman 0,7956 en tareas STS.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible para c
 
 | Modelo | Parametros | Contexto | Licencia | Encoder multilingue | Disponibilidad |
 |---|---|---|---|---|---|
-| `yuriilaba/ucu-wsd-generation_shuffling_pt-true_seed-42` | 278 M | no disponible (base XLM-R: 512) | no disponible | Si (base) | HuggingFace, safetensors |
-| `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` (modelo base) | 278 M | 512 tokens | Apache-2.0 | Si | HuggingFace, ampliamente usado |
-| `xlm-roberta-base` (arquitectura subyacente) | 278 M | 512 tokens | MIT | Si | HuggingFace |
-| `bert-base-multilingual-cased` (mBERT) | 178 M | 512 tokens | Apache-2.0 | Si | HuggingFace |
+| `yuriilaba/ucu-wsd-generation_shuffling_pt-true_seed-42` | 278 M | no disponible (base XLM-R: 512) | no disponible | Si (base) | Hugging Face, safetensors |
+| `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` (modelo base) | 278 M | 512 tokens | Apache-2.0 | Si | Hugging Face, ampliamente usado |
+| `xlm-roberta-base` (arquitectura subyacente) | 278 M | 512 tokens | MIT | Si | Hugging Face |
+| `bert-base-multilingual-cased` (mBERT) | 178 M | 512 tokens | Apache-2.0 | Si | Hugging Face |
 
 Las cifras de parametros y contexto de los modelos comparados proceden de sus fichas publicas habituales; los datos de licencia y contexto del modelo objeto de esta ficha no estan declarados por el autor y se marcan como no disponibles. No se dispone de una comparativa de rendimiento en WSD ucraniano con otros modelos, por lo que no se pueden establecer diferencias cuantitativas de calidad.
 
@@ -95,7 +95,7 @@ Las cifras de parametros y contexto de los modelos comparados proceden de sus fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuriilaba/ucu-wsd-generation_shuffling_pt-true_seed-42
+- Modelo en Hugging Face: https://huggingface.co/yuriilaba/ucu-wsd-generation_shuffling_pt-true_seed-42
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 - Arquitectura subyacente (XLM-RoBERTa): https://huggingface.co/FacebookAI/xlm-roberta-base
 - Resultados MTEB citados por el autor: directorio `evaluation/mteb_results/` dentro del repositorio (no enlazado directamente en la model card)

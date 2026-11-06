@@ -97,7 +97,7 @@ La comparativa con el modelo base es directa: la abliteracion no degrada el rend
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ishowbackup/Gemma-4-12B-it-qat-MXFP4-CRACK
+- Repositorio Hugging Face: https://huggingface.co/Ishowbackup/Gemma-4-12B-it-qat-MXFP4-CRACK
 - Motor vMLX: https://vmlx.net
 - dealign.ai (investigacion y articulo sobre generalizacion de seguridad): https://dealign.ai
 - Soporte en Ko-fi: https://ko-fi.com/dealignai

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `reyansh38771/unconst____uid81____hk5FUW8` es un artefacto publicado en HuggingFace con acceso restringido (gated) y sin documentación pública. Los metadatos indican que se trata de un modelo de generación de texto basado en la arquitectura Qwen3.5 MoE, con etiquetas que sugieren capacidades multimodales (image-text-to-text), aunque el pipeline declarado es text-generation. El repositorio contiene 8.8 GB de pesos, lo que sugiere un modelo de tamaño considerable, pero no se dispone de especificaciones oficiales sobre parámetros, contexto o entrenamiento.
+El modelo `reyansh38771/unconst____uid81____hk5FUW8` es un artefacto publicado en Hugging Face con acceso restringido (gated) y sin documentación pública. Los metadatos indican que se trata de un modelo de generación de texto basado en la arquitectura Qwen3.5 MoE, con etiquetas que sugieren capacidades multimodales (image-text-to-text), aunque el pipeline declarado es text-generation. El repositorio contiene 8.8 GB de pesos, lo que sugiere un modelo de tamaño considerable, pero no se dispone de especificaciones oficiales sobre parámetros, contexto o entrenamiento.
 
 El autor, `reyansh38771`, lo presenta como un "merged salvage" del modelo base `kevin954/Affine-5dfqbbh8ev-sft`, lo que indica que es una fusión o adaptación de un modelo preexistente. No hay información sobre el proceso de entrenamiento, los datos utilizados ni las capacidades reales del modelo. Debido a la ausencia total de documentación y a la falta de métricas de rendimiento, cualquier evaluación debe considerarse preliminar y basada únicamente en los metadatos disponibles.
 
@@ -21,7 +21,7 @@ El autor, `reyansh38771`, lo presenta como un "merged salvage" del modelo base `
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna, el proceso de entrenamiento o los datos utilizados. Los tags de HuggingFace indican que el modelo esta relacionado con Qwen3.5 MoE, lo que sugiere una arquitectura de mezcla de expertos (Mixture of Experts) con activacion condicional de parametros. Sin embargo, no hay confirmacion oficial ni detalles sobre el numero de expertos, la dimension del modelo o el tokenizador.
+No se ha publicado informacion sobre la arquitectura interna, el proceso de entrenamiento o los datos utilizados. Los tags de Hugging Face indican que el modelo esta relacionado con Qwen3.5 MoE, lo que sugiere una arquitectura de mezcla de expertos (Mixture of Experts) con activacion condicional de parametros. Sin embargo, no hay confirmacion oficial ni detalles sobre el numero de expertos, la dimension del modelo o el tokenizador.
 
 El modelo se describe como un "merged salvage" del checkpoint `kevin954/Affine-5dfqbbh8ev-sft`, lo que implica que es el resultado de una operacion de fusion o rescate de pesos de otro modelo. No se especifica si se realizo un fine-tuning adicional, si se aplicaron tecnicas de RLHF o DPO, ni la composicion del dataset de entrenamiento. Toda esta informacion permanece no disponible.
 
@@ -37,7 +37,7 @@ No hay evidencia publica de tool calling, funciones de agente, razonamiento mult
 
 ## Casos de uso
 
-No se han documentado casos de uso concretos para este modelo. Dada la falta de informacion y el acceso restringido, no es posible recomendar aplicaciones practicas sin riesgo. Cualquier uso en produccion requeriria una evaluacion previa exhaustiva y la aceptacion de las condiciones de acceso de HuggingFace.
+No se han documentado casos de uso concretos para este modelo. Dada la falta de informacion y el acceso restringido, no es posible recomendar aplicaciones practicas sin riesgo. Cualquier uso en produccion requeriria una evaluacion previa exhaustiva y la aceptacion de las condiciones de acceso de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -53,7 +53,7 @@ No disponible. No se conocen modelos comparables publicados por el mismo autor n
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que limita su uso y evaluacion.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que limita su uso y evaluacion.
 - Documentacion inexistente: no hay paper, README tecnico ni guia de uso.
 - Sesgos y alucinaciones: desconocidos, pero probables en cualquier modelo de lenguaje sin evaluacion publica.
 - Riesgo de comportamiento impredecible: al ser un "salvage" o fusion sin informacion de entrenamiento, podria presentar degradaciones inesperadas.
@@ -62,5 +62,5 @@ No disponible. No se conocen modelos comparables publicados por el mismo autor n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/reyansh38771/unconst____uid81____hk5FUW8
+- Repositorio Hugging Face: https://huggingface.co/reyansh38771/unconst____uid81____hk5FUW8
 - Modelo base mencionado: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft (no verificado)

@@ -34,7 +34,7 @@ No se especifican en la informacion disponible el volumen de tokens de entrenami
 - Dominio especializado en perovskitas y fotovoltaica: el ajuste LoRA esta orientado a literatura cientifica de este campo.
 - Integracion con framework de evidencia guiada: forma parte del pipeline OpenPerov Pro, que usa OpenPerov Flash como backbone de respuesta y un selector de retencion de fuentes.
 - Funcionamiento sobre texto en ingles: el unico idioma declarado es `en`.
-- Carga como adaptador PEFT: se integra en flujos de HuggingFace Transformers + PEFT sin dependencias de inferencia adicionales.
+- Carga como adaptador PEFT: se integra en flujos de Hugging Face Transformers + PEFT sin dependencias de inferencia adicionales.
 
 No se declaran capacidades de generacion abierta, tool calling, function calling, razonamiento multi-paso como agente, vision ni audio en la informacion proporcionada.
 
@@ -66,16 +66,16 @@ No se han publicado en la informacion disponible resultados comparativos frente 
 - VRAM estimada orientativa para el modelo base de 8B: en precision bf16/fp16 en torno a 16-18 GB; en cuantizacion de 8 bits en torno a 9-10 GB; en cuantizacion de 4 bits en torno a 6-7 GB. Son estimaciones generales para modelos de 8B, no cifras publicadas por el autor.
 - GPU recomendadas: A100, H100 o similares para despliegue en produccion con precision completa; RTX 4090, RTX 3090 o A6000 para uso en una sola GPU con cuantizacion.
 - Cabe en GPU de consumo con cuantizacion (por ejemplo, RTX 4090 de 24 GB en bf16, o tarjetas de 8-12 GB en 4 bits), siempre que el modelo base se cargue con esquemas de cuantizacion.
-- Opciones de despliegue: HuggingFace Transformers junto con PEFT para cargar el adaptador; el resto de opciones (vLLM, llama.cpp, Ollama, TGI) no estan documentadas para este adaptador en la informacion disponible.
+- Opciones de despliegue: Hugging Face Transformers junto con PEFT para cargar el adaptador; el resto de opciones (vLLM, llama.cpp, Ollama, TGI) no estan documentadas para este adaptador en la informacion disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenPerov-Pro-Scientific-Relevance-Reranker-8B | 8B (base) + LoRA r16 | no disponible | Perovskitas / fotovoltaica (en) | Apache-2.0 | HuggingFace (adaptador PEFT) |
-| Qwen/Qwen3-Reranker-8B (modelo base) | 8B | no disponible | General / multilingue | Segun el modelo base | HuggingFace |
-| BGE-reranker-v2-m3 | no disponible en esta consulta | no disponible | General / multilingue | no disponible en esta consulta | HuggingFace |
+| OpenPerov-Pro-Scientific-Relevance-Reranker-8B | 8B (base) + LoRA r16 | no disponible | Perovskitas / fotovoltaica (en) | Apache-2.0 | Hugging Face (adaptador PEFT) |
+| Qwen/Qwen3-Reranker-8B (modelo base) | 8B | no disponible | General / multilingue | Segun el modelo base | Hugging Face |
+| BGE-reranker-v2-m3 | no disponible en esta consulta | no disponible | General / multilingue | no disponible en esta consulta | Hugging Face |
 | Cohere Rerank | no disponible en esta consulta | no disponible | General | Propietaria | API comercial |
 
 No se dispone de datos comparativos de rendimiento entre estos modelos en la informacion proporcionada; la comparacion se limita a categoria, licencia y disponibilidad.
@@ -95,6 +95,6 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChenYanKai2002/OpenPerov-Pro-Scientific-Relevance-Reranker-8B
+- Hugging Face: https://huggingface.co/ChenYanKai2002/OpenPerov-Pro-Scientific-Relevance-Reranker-8B
 - Repositorio de codigo, benchmarks y registros de evaluacion: https://github.com/Yan-Kai-Chen/OpenPerov
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-8B

@@ -4,7 +4,7 @@
 
 PixelRouter es un gateway de API compatible con OpenAI que actúa como enrutador inteligente de modelos de lenguaje, desarrollado por Pixel Office EU. No es un modelo de lenguaje en sí, sino una capa intermedia que recibe peticiones de los clientes y las redirige automáticamente al modelo fundacional más adecuado según criterios de velocidad y coste, entre los que se incluyen DeepSeek V3/Chat, Qwen Thinking 27B, Claude 3.5 Sonnet y Gemini 2.5 Pro. El proyecto se publica bajo licencia MIT y se distribuye como paquete npm (`@pixeloffice-eu/router`) y PyPI (`pixeloffice-router`), además de ofrecer un endpoint HTTP en `https://api.pixeloffice.eu/v1`.
 
-La relevancia de este proyecto radica en su enfoque de "router inteligente" con enrutamiento automático, streaming SSE en tiempo real y un mecanismo denominado "Fact Anchoring" que promete reducir alucinaciones con una latencia de anclaje inferior a 35 ms. El repositorio en HuggingFace no contiene pesos ni artefactos de modelo; es un punto de distribución documental y de integración para desarrolladores que quieran conectar sus herramientas (Cursor IDE, VS Code, LangChain, CrewAI) a este servicio.
+La relevancia de este proyecto radica en su enfoque de "router inteligente" con enrutamiento automático, streaming SSE en tiempo real y un mecanismo denominado "Fact Anchoring" que promete reducir alucinaciones con una latencia de anclaje inferior a 35 ms. El repositorio en Hugging Face no contiene pesos ni artefactos de modelo; es un punto de distribución documental y de integración para desarrolladores que quieran conectar sus herramientas (Cursor IDE, VS Code, LangChain, CrewAI) a este servicio.
 
 La ficha que sigue describe las características del servicio tal y como se presentan en la documentación oficial, sin datos técnicos adicionales más allá de los publicados.
 
@@ -94,11 +94,11 @@ No se dispone de datos objetivos de rendimiento comparativo entre estos servicio
 - El idioma soportado es exclusivamente ingles segun los metadatos; no se garantiza un rendimiento optimo en otros idiomas.
 - Al ser un servicio en la nube, los datos enviados a traves del gateway se procesan en servidores externos; conviene revisar la politica de privacidad del proveedor antes de usarlo con informacion sensible.
 - No hay informacion sobre cumplimiento normativo (GDPR, HIPAA, etc.) ni sobre la ubicacion de los centros de datos.
-- El proyecto tiene cero descargas y cero likes en HuggingFace al momento de la consulta, lo que sugiere una adopcion muy limitada o un lanzamiento reciente.
+- El proyecto tiene cero descargas y cero likes en Hugging Face al momento de la consulta, lo que sugiere una adopcion muy limitada o un lanzamiento reciente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pixeloffice/pixelrouter-openai-gateway
+- Hugging Face: https://huggingface.co/pixeloffice/pixelrouter-openai-gateway
 - Portal de desarrolladores: https://pixeloffice.eu/developer
 - Paquete npm: `@pixeloffice-eu/router` (v1.0.0)
 - Paquete PyPI: `pixeloffice-router` (v1.0.0)

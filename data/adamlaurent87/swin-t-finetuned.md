@@ -43,7 +43,7 @@ Al no ser un modelo entrenado, **no existen casos de uso prácticos reales** par
 
 - **Investigación experimental**: sirve como base para probar la implementación de la arquitectura Swin T con fusión bilineal y RMSNorm en tareas de matching.
 - **Pruebas de humo**: el checkpoint de inicialización permite verificar que el pipeline de inferencia y entrenamiento funciona correctamente antes de invertir recursos en un entrenamiento completo.
-- **Desarrollo de adaptadores**: dado que es una implementación personalizada, se puede usar para crear adaptadores que permitan cargar el modelo con APIs genéricas como HuggingFace Transformers.
+- **Desarrollo de adaptadores**: dado que es una implementación personalizada, se puede usar para crear adaptadores que permitan cargar el modelo con APIs genéricas como Hugging Face Transformers.
 - **Comparación de arquitecturas**: los investigadores pueden entrenar este modelo y compararlo con variantes estándar de Swin para evaluar el impacto de las modificaciones.
 - **Docencia**: es un ejemplo didáctico de cómo estructurar un repositorio de modelo con configuración explícita y argumentos de entrenamiento.
 - **Integración en pipelines de datos**: aunque no para inferencia final, puede servir para validar el flujo de datos en sistemas de matching antes de sustituirlo por un modelo entrenado.
@@ -80,7 +80,7 @@ No se dispone de modelos comparables directos, ya que el checkpoint no está ent
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/adamlaurent87/swin-t-finetuned)
-- [Perfil del autor en HuggingFace](https://huggingface.co/adamlaurent87)
+- [Repositorio en Hugging Face](https://huggingface.co/adamlaurent87/swin-t-finetuned)
+- [Perfil del autor en Hugging Face](https://huggingface.co/adamlaurent87)
 
 No se han encontrado otros enlaces relevantes (papers, blogs o demos) en la búsqueda web realizada.

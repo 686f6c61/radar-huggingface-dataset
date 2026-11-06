@@ -71,6 +71,6 @@ No se dispone de información sobre modelos comparables. El único punto de refe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Monad-dz/qwen-ocr-lora_v3
+- Repositorio Hugging Face: https://huggingface.co/Monad-dz/qwen-ocr-lora_v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-base
 - Documentación de Qwen-OCR (no relacionada directamente con este modelo): https://www.alibabacloud.com/help/en/model-studio/qwen-vl-ocr

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de generación de texto publicado por el usuario u organización "Beetle-FineWeb-24B-4" en HuggingFace. Según los metadatos de safetensors, el modelo tiene 193.804.032 parámetros totales (aproximadamente 0,19 mil millones), lo que lo sitúa en la categoría de modelos pequeños tipo "tiny/small decoder". La model card es la plantilla automática de HuggingFace y no contiene ninguna descripción real: todos los campos aparecen como "[More Information Needed]".
+Este repositorio contiene un checkpoint de generación de texto publicado por el usuario u organización "Beetle-FineWeb-24B-4" en Hugging Face. Según los metadatos de safetensors, el modelo tiene 193.804.032 parámetros totales (aproximadamente 0,19 mil millones), lo que lo sitúa en la categoría de modelos pequeños tipo "tiny/small decoder". La model card es la plantilla automática de Hugging Face y no contiene ninguna descripción real: todos los campos aparecen como "[More Information Needed]".
 
 El identificador del repositorio, "beetle-bilingual-l2-50-classroom-20-b4-fineweb-2b-kor-eng", sugiere un experimento bilingüe coreano-inglés entrenado sobre datos tipo FineWeb, con lo que parecen ser variantes de hiperparámetros o de configuración de entrenamiento (posiblemente número de capas, tamaño de lote o presupuesto de tokens). Sin embargo, esta interpretación no está confirmada por el autor en ninguna parte, y la etiqueta de idiomas del Hub figura como no disponible.
 
@@ -76,16 +76,16 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad y notas |
 |---|---|---|---|---|
-| Beetle bilingual l2-50 (este modelo) | 193,8 M | No disponible | No disponible | Publicado en HuggingFace con `custom_code`; sin benchmarks, sin model card y sin licencia declarada |
+| Beetle bilingual l2-50 (este modelo) | 193,8 M | No disponible | No disponible | Publicado en Hugging Face con `custom_code`; sin benchmarks, sin model card y sin licencia declarada |
 | Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | Ampliamente documentado, con suite completa de benchmarks publicada por EleutherAI |
-| SmolLM2-135M | 135 M | 8192 tokens | Apache 2.0 | Modelo pequeño de HuggingFace con entrenamiento y evaluación documentados |
+| SmolLM2-135M | 135 M | 8192 tokens | Apache 2.0 | Modelo pequeño de Hugging Face con entrenamiento y evaluación documentados |
 | Qwen2.5-0.5B | 494 M | 32 768 tokens | Apache 2.0 | Soporte multilingüe declarado, benchmarks publicados y plantilla de chat integrada |
 
 La comparación cuantitativa de rendimiento no es posible: los tres modelos de referencia cuentan con resultados de evaluación publicados, mientras que este checkpoint no aporta ninguno. La diferencia práctica más relevante es la documentación y la licencia: los modelos de referencia declaran Apache 2.0 y están integrados en ecosistemas estándar, mientras que este repositorio exige `trust_remote_code=True`, no declara licencia y no ofrece ninguna garantía de funcionamiento.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla por defecto de HuggingFace. No hay información sobre datos de entrenamiento, tokenizador, plantilla de prompt ni uso previsto, lo que impide evaluar su idoneidad para producción.
+- Ausencia total de documentación: la model card es la plantilla por defecto de Hugging Face. No hay información sobre datos de entrenamiento, tokenizador, plantilla de prompt ni uso previsto, lo que impide evaluar su idoneidad para producción.
 - Licencia no declarada: sin licencia explícita, el uso comercial es jurídicamente ambiguo. En la práctica, la ausencia de licencia implica que no se otorgan derechos de uso más allá de los previstos por la legislación de derechos de autor aplicable.
 - Riesgo elevado de alucinación: con 193,8 M de parámetros, la capacidad de mantener coherencia factual es limitada incluso en modelos bien entrenados de este tamaño, y aquí no hay ninguna evaluación que lo contradiga o lo confirme.
 - Sesgos desconocidos: al no documentarse la composición del corpus de entrenamiento, no se puede evaluar qué sesgos de género, etnia, religión o ideología puede reproducir el modelo.
@@ -98,6 +98,6 @@ La comparación cuantitativa de rendimiento no es posible: los tres modelos de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beetle-FineWeb-24B-4/beetle-bilingual-l2-50-classroom-20-b4-fineweb-2b-kor-eng
+- Modelo en Hugging Face: https://huggingface.co/Beetle-FineWeb-24B-4/beetle-bilingual-l2-50-classroom-20-b4-fineweb-2b-kor-eng
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimación de emisiones de carbono en aprendizaje automático): https://arxiv.org/abs/1910.09700
 - No se han encontrado papers, blogs, repositorios de código, demos ni páginas de documentación adicionales asociados a este modelo en la búsqueda web realizada. Los resultados obtenidos corresponden a consultas no relacionadas (el escarabajo como insecto y el automóvil Volkswagen Beetle) y no aportan información técnica sobre el modelo.

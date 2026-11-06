@@ -6,7 +6,7 @@ Quill poetry GGUF v5 es una cuantizacion en formato GGUF de un modelo de lenguaj
 
 El problema que aborda es de nicho pero concreto: los modelos generalistas suelen producir texto con aspecto poetico pero con metrica y rima inconsistentes, y corregir eso exige reescrituras que preserven el contenido y el estilo. Un modelo afinado con "repair-heavy" como seña de identidad sugiere que parte del entrenamiento se centro en reescribir versos defectuosos, no solo en generar poesia nueva.
 
-La relevancia practica es limitada por su propia naturaleza: se trata de un repositorio con 0 descargas y 0 likes en el momento de la consulta, con una model card de tres lineas y sin documentacion sobre modelo base, datos de entrenamiento, contexto o idiomas. Resulta util precisamente como ejemplo de cuanto puede (y cuanto no puede) deducirse de una ficha de HuggingFace cuando el autor no publica especificaciones: el recuento de parametros y el tamaño del repositorio son los unicos datos tecnicos verificables.
+La relevancia practica es limitada por su propia naturaleza: se trata de un repositorio con 0 descargas y 0 likes en el momento de la consulta, con una model card de tres lineas y sin documentacion sobre modelo base, datos de entrenamiento, contexto o idiomas. Resulta util precisamente como ejemplo de cuanto puede (y cuanto no puede) deducirse de una ficha de Hugging Face cuando el autor no publica especificaciones: el recuento de parametros y el tamaño del repositorio son los unicos datos tecnicos verificables.
 
 ## Especificaciones tecnicas
 
@@ -36,7 +36,7 @@ La model card se limita a la expresion "Repair-heavy meter", que sugiere un entr
 - Generacion de texto en verso con enfasis declarado en la metrica (`meter`), segun las etiquetas del repositorio.
 - Reparacion y reescritura de versos o estrofas con metrica defectuosa (`repair`), presumiblemente la funcion principal del ajuste.
 - Uso conversacional: el tag `conversational` indica que el modelo esta preparado para interacciones de ida y vuelta, no solo para completar texto.
-- Compatibilidad con endpoints de inferencia: el tag `endpoints_compatible` sugiere que puede servirse a traves de APIs compatibles con el formato estandar de HuggingFace.
+- Compatibilidad con endpoints de inferencia: el tag `endpoints_compatible` sugiere que puede servirse a traves de APIs compatibles con el formato estandar de Hugging Face.
 - Ejecucion local mediante Ollama: la model card indica `ollama run quill`.
 - Tool calling / function calling: no disponible.
 - Capacidades de agente o razonamiento multi-paso: no disponible.
@@ -87,6 +87,6 @@ A modo de contexto estructural, la categoria aplicable seria la de ajustes finos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cyberviser/quill-poetry-v5-gguf
+- Repositorio en Hugging Face: https://huggingface.co/cyberviser/quill-poetry-v5-gguf
 - Model card del autor (dentro del repositorio anterior): incluye unicamente la indicacion `ollama run quill` y la etiqueta "Repair-heavy meter".
 - Busqueda web realizada: no se encontro ningun paper, blog, repositorio, demo ni enlace adicional relacionado con este modelo. Los resultados devueltos correspondian a paginas de Microsoft sin relacion con el modelo.

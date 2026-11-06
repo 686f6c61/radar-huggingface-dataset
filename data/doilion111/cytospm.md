@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CytoSPM es un modelo de deteccion de objetos en citopatologia con capacidad de vocabulario abierto (open-vocabulary detection), presentado en el articulo "CytoSPM: Open-Vocabulary Cytopathology Detection with Structured Prompt Bank" (BIBM 2026). Lo desarrolla el grupo CVIU-CSU, con autoria de Wenjie Li, Zishan Xu, Jinyang Huang, Zhengxin Nie, Shichao Kan y Yixiong Liang. La publicacion en HuggingFace corre a cargo del usuario Doilion111 y distribuye unicamente los pesos entrenados.
+CytoSPM es un modelo de deteccion de objetos en citopatologia con capacidad de vocabulario abierto (open-vocabulary detection), presentado en el articulo "CytoSPM: Open-Vocabulary Cytopathology Detection with Structured Prompt Bank" (BIBM 2026). Lo desarrolla el grupo CVIU-CSU, con autoria de Wenjie Li, Zishan Xu, Jinyang Huang, Zhengxin Nie, Shichao Kan y Yixiong Liang. La publicacion en Hugging Face corre a cargo del usuario Doilion111 y distribuye unicamente los pesos entrenados.
 
 El modelo aborda la deteccion de estructuras celulares en imagenes de citopatologia, incluyendo categorias que no se han visto durante el entrenamiento. Para ello combina un backbone ConvNeXt-T con un mecanismo de "structured prompt bank" orientado a la deteccion open-vocabulary. Se evalua sobre el conjunto PentaCyto, con 24 categorias base y 9 categorias retenidas que se miden en regimen zero-shot.
 
@@ -61,7 +61,7 @@ El AP base es el COCO AP sobre las 24 categorias base de PentaCyto; el AP novel 
 
 ## Requisitos de hardware
 
-- El checkpoint `cytospm_convnext_t.pth` ocupa aproximadamente 0,2 GB en disco (tamano del repo de HuggingFace).
+- El checkpoint `cytospm_convnext_t.pth` ocupa aproximadamente 0,2 GB en disco (tamano del repo de Hugging Face).
 - Los valores de referencia se midieron en una RTX 3090 (con el codigo publicado) y en una RTX 4090 (valores del articulo), por lo que ambos modelos de GPU son compatibles.
 - Al tratarse de un backbone ConvNeXt-T, es previsible que quepa en GPU de consumo, aunque no se proporciona una estimacion de VRAM concreta. Este dato debe considerarse no disponible.
 - Opciones de despliegue: el proyecto proporciona codigo propio (`tools/test.py`, `tools/test_novel.py`, `tools/fetch_checkpoints.sh`) en el repositorio GitHub; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
@@ -74,7 +74,7 @@ No se dispone en la informacion proporcionada de resultados de otros modelos eva
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CytoSPM (ConvNeXt-T) | no disponible | no aplica | AP base 33,54 / AP novel 15,00 | gpl-3.0 | Pesos en HuggingFace, codigo en GitHub |
+| CytoSPM (ConvNeXt-T) | no disponible | no aplica | AP base 33,54 / AP novel 15,00 | gpl-3.0 | Pesos en Hugging Face, codigo en GitHub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone en la informacion proporcionada de resultados de otros modelos eva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Doilion111/CytoSPM
+- Modelo en Hugging Face: https://huggingface.co/Doilion111/CytoSPM
 - Paper (arXiv): https://arxiv.org/abs/2609.31314
 - Codigo: https://github.com/CVIU-CSU/CytoSPM
 - Repositorio del proyecto (clonado en las instrucciones de uso): https://github.com/CVIU-CSU/CytoSPM.git

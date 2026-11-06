@@ -23,7 +23,7 @@ El modelo es relevante únicamente como ejemplo de implementación didáctica o 
 | Activación | mish |
 | Normalización | RMSNorm |
 | Escala declarada | nano |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-09-27 |
 | Última actualización | 2026-09-27 |
@@ -77,12 +77,12 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - Riesgo de alucinación: no evaluable en un modelo sin entrenar.
 - Limitaciones de contexto e idioma: no disponibles; no se documenta ninguna longitud de contexto ni conjunto de idiomas.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y redistribución, siempre que se conserve el aviso de licencia. El propio autor advierte de revisar por separado los términos de los datos de origen si el repositorio se combina con conjuntos de datos externos.
-- Compatibilidad: al ser una implementación personalizada, las API genéricas de carga automática de HuggingFace no funcionan sin un adaptador explícito.
+- Compatibilidad: al ser una implementación personalizada, las API genéricas de carga automática de Hugging Face no funcionan sin un adaptador explícito.
 - Advertencia para producción: cualquier resultado obtenido con este repositorio tras un futuro entrenamiento deberá documentarse de forma separada de los valores por defecto aquí publicados; no deben confundirse los ajustes del script con resultados validados.
 - Fecha de publicación registrada como 2026-09-27, posterior a la fecha habitual de referencia; conviene verificar la vigencia del repositorio antes de reutilizarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Akashraobury/mixer-generation
-- Perfil del autor en HuggingFace: https://huggingface.co/Akashraobury
+- Modelo en Hugging Face: https://huggingface.co/Akashraobury/mixer-generation
+- Perfil del autor en Hugging Face: https://huggingface.co/Akashraobury
 - Repositorio de modelos del autor: https://huggingface.co/Akashraobury/models

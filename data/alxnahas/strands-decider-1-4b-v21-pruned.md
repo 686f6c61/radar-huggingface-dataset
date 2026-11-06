@@ -100,7 +100,7 @@ El autor advierte que los resultados de este build y de v21 provienen de las mis
 
 | Modelo | Parametros | Contexto | JevBench publicas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este build (alxnahas) | 1,37B | 4096 | 173/231 (0,749) | Apache-2.0 | HuggingFace, requiere cargador no publicado en release |
+| Este build (alxnahas) | 1,37B | 4096 | 173/231 (0,749) | Apache-2.0 | Hugging Face, requiere cargador no publicado en release |
 | Strands Decider v21 | 1,88B | 4096 (heredado) | 176/231 (0,762) | Apache-2.0 | Modelo original del que deriva |
 | decider-2b v11 (Mapika) | 1,9B | no disponible | 175/231 (0,758) | no disponible | Repositorio strands-labs/strands-decider |
 | Decision 2B (FlyMy.AI) | 2,5B (MiniCPM5-2B) | no disponible | 174/231 (0,753) | no disponible | Entrada de board JevBench |
@@ -123,7 +123,7 @@ La ventaja de este build es la relacion entre precision y tamano: mantiene una p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alxnahas/strands-decider-1.4B-v21-pruned
+- Modelo en Hugging Face: https://huggingface.co/alxnahas/strands-decider-1.4B-v21-pruned
 - Modelo base (v21): https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v21
 - Repositorio del cargador (rama small-model): https://github.com/alxnahas/strands-decider/tree/small-model
 - Commit de instalacion del cargador: https://github.com/alxnahas/strands-decider@c6003ecc25dc9fecf4fa6457fbc329b06434ea09

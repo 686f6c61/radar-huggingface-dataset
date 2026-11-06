@@ -78,8 +78,8 @@ SENSE-2ATTR se diferencia de SENSE original en que añade la representación de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LIA-AvignonUniversity/SENSE-2ATTR
+- Modelo en Hugging Face: https://huggingface.co/LIA-AvignonUniversity/SENSE-2ATTR
 - Paper (arXiv): https://arxiv.org/abs/2603.08312
-- Organización LIA en HuggingFace: https://huggingface.co/LIA-AvignonUniversity
+- Organización LIA en Hugging Face: https://huggingface.co/LIA-AvignonUniversity
 - Paper SENSE original (arXiv PDF): https://arxiv.org/pdf/2509.12093v2
 - Artículo relacionado en francés (TALN 2026): http://talnarchives.atala.org/TALN/TALN-2026/56.pdf

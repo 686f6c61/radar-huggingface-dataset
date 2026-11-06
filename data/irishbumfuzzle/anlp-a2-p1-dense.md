@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`irishbumfuzzle/anlp-a2-p1-dense` es un checkpoint academico de traduccion automatica publicado en HuggingFace. Se trata del baseline "dense" de la Parte 1 de la asignatura Advanced NLP Assignment 2 (Monsoon 2026), desarrollado por el usuario `irishbumfuzzle`. El modelo resuelve una tarea muy concreta: traduccion de vietnamita y japones a ingles (`vi/ja -> en`) mediante un modelo de lenguaje decoder-only entrenado sobre secuencias con el formato `<lang> src <en> tgt`.
+`irishbumfuzzle/anlp-a2-p1-dense` es un checkpoint academico de traduccion automatica publicado en Hugging Face. Se trata del baseline "dense" de la Parte 1 de la asignatura Advanced NLP Assignment 2 (Monsoon 2026), desarrollado por el usuario `irishbumfuzzle`. El modelo resuelve una tarea muy concreta: traduccion de vietnamita y japones a ingles (`vi/ja -> en`) mediante un modelo de lenguaje decoder-only entrenado sobre secuencias con el formato `<lang> src <en> tgt`.
 
 La relevancia de esta publicacion es limitada y de caracter docente: no es un modelo de proposito general ni compite con modelos de traduccion comerciales. Su interes esta en que documenta de forma reproducible un pipeline completo de entrenamiento (tokenizador BPE propio, configuracion explicita, presupuesto de tokens cerrado) con un modelo de solo 35,7 millones de parametros. El checkpoint publicado es el `final`, correspondiente al agotamiento del presupuesto de 145.020.416 tokens.
 
@@ -35,7 +35,7 @@ Arquitectura transformer decoder-only de 6 capas, dimension de modelo D=512, 8 c
 
 El modelo es un transformer decoder-only estandar con normalizacion y atencion causal, configurado con 6 capas, D=512 y 8 cabezas de atencion (64 dimensiones por cabeza). El vocabulario de 32.768 tokens se genera con un tokenizador BPE a nivel de byte entrenado exclusivamente sobre el split de entrenamiento, y la capa de embedding esta atada a la proyeccion de salida, lo que reduce el recuento de parametros. El checkpoint publicado es el `final`, es decir, el estado del modelo al consumir la totalidad del presupuesto de tokens.
 
-El entrenamiento es monolingue en el sentido de que se optimiza una unica tarea secuencial: dado un prefijo `<lang> src <en>`, generar la traduccion al ingles. El corpus empleado es `belumind/en-vi-ja-curated-500k-triplets`, con un presupuesto fijo de 145.020.416 tokens. La model card no documenta el uso de RLHF, DPO, SFT posterior, decodificacion especulativa ni ninguna innovacion de atencion (por ejemplo, atencion lineal); el modelo se presenta explicitamente como el baseline denso frente al que se compararan variantes mas elaboradas de la asignatura. El autor tambien indica que la carga requiere el repositorio de la asignatura (`src.part1.model.TransformerLM` y `load_tokenizer`), lo que implica que la arquitectura depende de codigo externo no incluido en el repositorio de HuggingFace.
+El entrenamiento es monolingue en el sentido de que se optimiza una unica tarea secuencial: dado un prefijo `<lang> src <en>`, generar la traduccion al ingles. El corpus empleado es `belumind/en-vi-ja-curated-500k-triplets`, con un presupuesto fijo de 145.020.416 tokens. La model card no documenta el uso de RLHF, DPO, SFT posterior, decodificacion especulativa ni ninguna innovacion de atencion (por ejemplo, atencion lineal); el modelo se presenta explicitamente como el baseline denso frente al que se compararan variantes mas elaboradas de la asignatura. El autor tambien indica que la carga requiere el repositorio de la asignatura (`src.part1.model.TransformerLM` y `load_tokenizer`), lo que implica que la arquitectura depende de codigo externo no incluido en el repositorio de Hugging Face.
 
 ## Capacidades
 
@@ -95,7 +95,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/irishbumfuzzle/anlp-a2-p1-dense
+- Hugging Face: https://huggingface.co/irishbumfuzzle/anlp-a2-p1-dense
 - Dataset citado en la model card: `belumind/en-vi-ja-curated-500k-triplets` (referencia textual; no se proporciona URL en la informacion disponible)
 - Repositorio de la asignatura (Advanced NLP Assignment 2, Monsoon 2026): no disponible, el autor no incluye enlace
 - Paper, blog o demo adicionales: no disponible; los resultados de busqueda web obtenidos no contienen informacion relacionada con este modelo

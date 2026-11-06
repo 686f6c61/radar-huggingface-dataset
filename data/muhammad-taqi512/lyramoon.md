@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LYRAMOON es un modelo publicado en HuggingFace por el usuario muhammad-taqi512 bajo licencia Apache 2.0. El repositorio contiene pesos en formato safetensors con un total de 7.615.616.512 parametros (aproximadamente 7,6 mil millones), lo que situa al modelo en la categoria de los LLM de tamano medio. La etiqueta de arquitectura declarada por el autor es `qwen2`, lo que indica que deriva de la familia Qwen2 de Alibaba, aunque el repositorio no documenta si se trata de un ajuste fino, una continuacion del preentrenamiento o una destilacion.
+LYRAMOON es un modelo publicado en Hugging Face por el usuario muhammad-taqi512 bajo licencia Apache 2.0. El repositorio contiene pesos en formato safetensors con un total de 7.615.616.512 parametros (aproximadamente 7,6 mil millones), lo que situa al modelo en la categoria de los LLM de tamano medio. La etiqueta de arquitectura declarada por el autor es `qwen2`, lo que indica que deriva de la familia Qwen2 de Alibaba, aunque el repositorio no documenta si se trata de un ajuste fino, una continuacion del preentrenamiento o una destilacion.
 
 La relevancia de esta ficha es, en la practica, limitada: el modelo acumula 0 descargas y 0 "likes" en el momento de la consulta, y su model card esta practicamente vacia (unicamente el encabezado YAML con la licencia Apache 2.0). No hay informacion publicada sobre el dataset de entrenamiento, el numero de tokens procesados, el metodo de alineacion, la longitud de contexto soportada ni los idiomas cubiertos.
 
@@ -76,7 +76,7 @@ Los valores de referencia corresponden a las fichas oficiales de los modelos bas
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| LYRAMOON | 7,6 B | no disponible | Apache 2.0 | HuggingFace, 0 descargas | no disponible |
+| LYRAMOON | 7,6 B | no disponible | Apache 2.0 | Hugging Face, 0 descargas | no disponible |
 | Qwen2-7B | 7,6 B | 32.768 tokens (hasta 131.072 con YaRN) | Apache 2.0 | Ampliamente desplegado | MMLU ~70,3; HumanEval ~79,5 (cifras oficiales de Alibaba) |
 | Llama 3.1 8B | 8,0 B | 131.072 tokens | Llama 3.1 Community License | Muy extendido | MMLU ~69,4; HumanEval ~72,6 (cifras oficiales de Meta) |
 | Mistral 7B v0.3 | 7,2 B | 32.768 tokens | Apache 2.0 | Muy extendido | MMLU ~62,5 (cifras oficiales de Mistral AI) |
@@ -97,7 +97,7 @@ La comparacion relevante es contra Qwen2-7B, dado que LYRAMOON comparte arquitec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/muhammad-taqi512/LYRAMOON
+- Repositorio en Hugging Face: https://huggingface.co/muhammad-taqi512/LYRAMOON
 - Modelo base de referencia (Qwen2-7B): https://huggingface.co/Qwen/Qwen2-7B
 - Informe tecnico de Qwen2: https://arxiv.org/abs/2407.10671
 - Busqueda web: los resultados obtenidos no guardan relacion con el modelo (corresponden a entradas enciclopedicas sobre la figura historica Muhammad) y no se incluyen como fuentes tecnicas.

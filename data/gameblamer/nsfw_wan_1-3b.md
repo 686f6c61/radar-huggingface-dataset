@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NSFW Wan 1.3B es un ajuste fino (fine-tune) del modelo de texto-a-video Wan2.1-T2V-1.3B de Alibaba (Wan-AI), publicado por el usuario Gameblamer en HuggingFace. El modelo base es un transformer de difusión de 1.300 millones de parámetros orientado a generación de video en local, y este fine-tune lo especializa en la generación de contenido adulto explícito (NSFW) a partir de prompts de texto, eliminando los filtros del modelo original. Su relevancia radica en que es uno de los pocos modelos T2V "uncensored" ligeros que pueden ejecutarse en GPUs de consumo.
+NSFW Wan 1.3B es un ajuste fino (fine-tune) del modelo de texto-a-video Wan2.1-T2V-1.3B de Alibaba (Wan-AI), publicado por el usuario Gameblamer en Hugging Face. El modelo base es un transformer de difusión de 1.300 millones de parámetros orientado a generación de video en local, y este fine-tune lo especializa en la generación de contenido adulto explícito (NSFW) a partir de prompts de texto, eliminando los filtros del modelo original. Su relevancia radica en que es uno de los pocos modelos T2V "uncensored" ligeros que pueden ejecutarse en GPUs de consumo.
 
 El autor ha publicado dos series de checkpoints: una original (e1-e20) entrenada en dos fases separadas (imagen y video), que sufrió degradación grave de calidad anatómica, y una serie experimental (exp_e1 a exp_e14) reentrenada con un dataset mixto que corrige esos defectos. El checkpoint recomendado por el autor es `wan_1.3B_exp_e14.safetensors`.
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la información disponible. Ni e
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Gameblamer/NSFW_Wan_1.3b
+- Ficha en Hugging Face: https://huggingface.co/Gameblamer/NSFW_Wan_1.3b
 - Modelo base (Wan-AI/Wan2.1-T2V-1.3B): https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
 - Variante de huihui-ai: https://huggingface.co/huihui-ai/NSFW_Wan_1.3B
 - Repositorio en GitHub (NSFW-API/nsfw-wan-1.3b): https://github.com/NSFW-API/nsfw-wan-1.3b

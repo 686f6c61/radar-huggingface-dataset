@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (Minerva-7B AWQ INT4 W4G64) | 1.415.319.552 segun safetensors del repo (base 7B) | no disponible | INT4 AWQ/WoQ, grupo 64, simetrica | Apache 2.0 | HuggingFace, formato auto_awq |
-| sapienzanlp/Minerva-7B-instruct-v1.0 (base) | 7B (segun denominacion) | no disponible | Sin cuantizar (bfloat16) | Apache 2.0 | HuggingFace |
+| Este artefacto (Minerva-7B AWQ INT4 W4G64) | 1.415.319.552 segun safetensors del repo (base 7B) | no disponible | INT4 AWQ/WoQ, grupo 64, simetrica | Apache 2.0 | Hugging Face, formato auto_awq |
+| sapienzanlp/Minerva-7B-instruct-v1.0 (base) | 7B (segun denominacion) | no disponible | Sin cuantizar (bfloat16) | Apache 2.0 | Hugging Face |
 | Otras cuantizaciones del mismo base (GPTQ, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de datos de rendimiento que permitan una comparacion cuantitativa con modelos alternativos de la misma categoria.
@@ -85,7 +85,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento que permit
 
 ## Enlaces
 
-- Repositorio HuggingFace (version cuantizada): https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_awq-int4-gs64-sym
+- Repositorio Hugging Face (version cuantizada): https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_awq-int4-gs64-sym
 - Modelo base: https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0
 - Intel AutoRound (repositorio): https://github.com/intel/auto-round
 - Receta de reproduccion (auto-round-pipeline): https://git.epicdynamic.com/auto-round-pipeline

@@ -89,7 +89,7 @@ La comparacion con GPT-2 se incluye unicamente por coincidencia de escala (aprox
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/tam-taml-100mb-ppt-shuff-dyck-10mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/tam-taml-100mb-ppt-shuff-dyck-10mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/tam_taml_100mb
 - Experimento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/13bdwt11
 - Repositorio de TRL: https://github.com/huggingface/trl

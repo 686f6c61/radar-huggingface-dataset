@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-1.5B-DPO-Tulu3-decontaminated-nc30k es un ajuste fino supervisado (SFT) de un modelo Qwen2.5-1.5B, desarrollado por el usuario open-sci y publicado en HuggingFace. Parte del checkpoint ali-elganzory/Qwen2.5-1.5B-DPO-Tulu3-decontaminated, que a su vez deriva del Qwen2.5-1.5B de Alibaba, lo que lo situa en la familia de modelos densos de 1.500 millones de parametros con licencia Qwen y arquitectura transformer decoder-only.
+Qwen2.5-1.5B-DPO-Tulu3-decontaminated-nc30k es un ajuste fino supervisado (SFT) de un modelo Qwen2.5-1.5B, desarrollado por el usuario open-sci y publicado en Hugging Face. Parte del checkpoint ali-elganzory/Qwen2.5-1.5B-DPO-Tulu3-decontaminated, que a su vez deriva del Qwen2.5-1.5B de Alibaba, lo que lo situa en la familia de modelos densos de 1.500 millones de parametros con licencia Qwen y arquitectura transformer decoder-only.
 
 El modelo se ha entrenado con Llama Factory sobre un dataset derivado de Nemotron-Cascade-SFT-Stage-1-30k-sharegpt-hf, un corpus de instrucciones en formato ShareGPT. El objetivo declarado es producir un modelo conversacional pequeno capaz de seguir instrucciones, con el aliciente de que el checkpoint base fue "decontaminated", es decir, filtrado para reducir la contaminacion con benchmarks publicos, lo que en teoria permite evaluaciones mas limpias.
 
@@ -65,10 +65,10 @@ La model card declara un unico `model-index` con nombre de run (`sft__Nemotron-C
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| open-sci/Qwen2.5-1.5B-DPO-Tulu3-decontaminated-nc30k | 1,54B | no disponible | other | HuggingFace | SFT sobre Nemotron ShareGPT 30k; sin benchmarks |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache 2.0 (Qwen) | HuggingFace, ampliamente desplegado | Modelo oficial con RLHF y evaluaciones publicas |
-| ali-elganzory/Qwen2.5-1.5B-DPO-Tulu3-decontaminated | 1,54B | no disponible | no disponible | HuggingFace | Checkpoint base del que deriva este modelo |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | HuggingFace | Alternativa pequena con benchmarks publicados |
+| open-sci/Qwen2.5-1.5B-DPO-Tulu3-decontaminated-nc30k | 1,54B | no disponible | other | Hugging Face | SFT sobre Nemotron ShareGPT 30k; sin benchmarks |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache 2.0 (Qwen) | Hugging Face, ampliamente desplegado | Modelo oficial con RLHF y evaluaciones publicas |
+| ali-elganzory/Qwen2.5-1.5B-DPO-Tulu3-decontaminated | 1,54B | no disponible | no disponible | Hugging Face | Checkpoint base del que deriva este modelo |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | Hugging Face | Alternativa pequena con benchmarks publicados |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ La model card declara un unico `model-index` con nombre de run (`sft__Nemotron-C
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/Qwen2.5-1.5B-DPO-Tulu3-decontaminated-nc30k
+- Hugging Face: https://huggingface.co/open-sci/Qwen2.5-1.5B-DPO-Tulu3-decontaminated-nc30k
 - Modelo base: https://huggingface.co/ali-elganzory/Qwen2.5-1.5B-DPO-Tulu3-decontaminated
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Llama Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory

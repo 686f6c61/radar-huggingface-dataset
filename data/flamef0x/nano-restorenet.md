@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nano-RestoreNet es un modelo de restauracion de imagen de tipo Restormer con un mecanismo de embedding de tarea, desarrollado por el usuario FlameF0X y publicado en HuggingFace bajo licencia Apache 2.0. Resuelve tres tareas de restauracion sobre imagenes RGB en el rango [0, 1]: eliminacion de ruido (denoise), reescalado (upscale) y mejora general (enhance). Con aproximadamente 10,86 millones de parametros, es un modelo muy compacto disenado para inferencia ligera.
+Nano-RestoreNet es un modelo de restauracion de imagen de tipo Restormer con un mecanismo de embedding de tarea, desarrollado por el usuario FlameF0X y publicado en Hugging Face bajo licencia Apache 2.0. Resuelve tres tareas de restauracion sobre imagenes RGB en el rango [0, 1]: eliminacion de ruido (denoise), reescalado (upscale) y mejora general (enhance). Con aproximadamente 10,86 millones de parametros, es un modelo muy compacto disenado para inferencia ligera.
 
 La arquitectura sigue el patron de Restormer: un transformer con atencion multicabezal basada en transposed attention (MDTA) y una red feed-forward con convoluciones depthwise (GDFN), organizada en un esquema encoder-bottleneck-decoder con PixelUnshuffle y PixelShuffle para el cambio de resolucion. La innovacion principal es un embedding de tarea que modula las features mediante FiLM (scale y bias por bloque), lo que permite reutilizar un unico conjunto de pesos para las tres tareas.
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nano-RestoreNet | 10,86 M | no disponible | denoise, upscale, enhance | apache-2.0 | HuggingFace |
+| Nano-RestoreNet | 10,86 M | no disponible | denoise, upscale, enhance | apache-2.0 | Hugging Face |
 | Restormer (original) | no disponible en la informacion | no disponible | restauracion multiple | no disponible en la informacion | no disponible en la informacion |
 | Otros modelos de restauracion | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -102,6 +102,6 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlameF0X/Nano-RestoreNet
+- Hugging Face: https://huggingface.co/FlameF0X/Nano-RestoreNet
 - Dataset de entrenamiento: https://huggingface.co/datasets/FlameF0X/nano-banana-pro-gen-zh-en
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion proporcionada.

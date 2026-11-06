@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ProofForge P3 probe (este) | Adaptador LoRA sobre 8B | Limite de generacion de 16.384 tokens en entrenamiento | RLVR con CISPO, un solo paso | Apache 2.0 | HuggingFace, 14 descargas |
-| Goedel-Prover-V2-8B (base) | 8.000 millones | No disponible | Demostracion formal en Lean 4 | No disponible en la informacion | HuggingFace (Goedel-LM) |
+| ProofForge P3 probe (este) | Adaptador LoRA sobre 8B | Limite de generacion de 16.384 tokens en entrenamiento | RLVR con CISPO, un solo paso | Apache 2.0 | Hugging Face, 14 descargas |
+| Goedel-Prover-V2-8B (base) | 8.000 millones | No disponible | Demostracion formal en Lean 4 | No disponible en la informacion | Hugging Face (Goedel-LM) |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento del adaptador ni de comparaciones publicadas con otros provers de Lean 4 en la informacion proporcionada, por lo que la comparativa cuantitativa no es posible.
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento del adaptador ni de comparaciones publicad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vignesh-trustt/proofforge-probe-p3-leanrl-cispo-iter1
+- Repositorio Hugging Face: https://huggingface.co/vignesh-trustt/proofforge-probe-p3-leanrl-cispo-iter1
 - Modelo base: https://huggingface.co/Goedel-LM/Goedel-Prover-V2-8B
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este adaptador.

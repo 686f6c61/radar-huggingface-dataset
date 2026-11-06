@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CAS-Canglong SST (esta ficha) | Transformer 3D + calibración ridge | no disponible | 120 meses de entrada, 12 leads | MIT | Pesos congelados en HuggingFace |
+| CAS-Canglong SST (esta ficha) | Transformer 3D + calibración ridge | no disponible | 120 meses de entrada, 12 leads | MIT | Pesos congelados en Hugging Face |
 | CAS-Canglong original (arXiv 2409.05369) | Transformer 3D | no disponible | S2S | no disponible | Paper público |
 | FuXi-S2S | modelo de pronóstico S2S | no disponible | no disponible | no disponible | no disponible en la información manejada |
 | Sistemas NWP físicos (p. ej. CFSv2, SEAS5) | modelo numérico acoplado | no aplica | estacional | propietaria / institucional | operativa |
@@ -92,7 +92,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LonghaoWang/CAS-Canglong-SST
+- Modelo en Hugging Face: https://huggingface.co/LonghaoWang/CAS-Canglong-SST
 - Space de pronóstico en vivo: https://huggingface.co/spaces/LonghaoWang/CAS-Canglong
 - Dataset de hindcast 2016-2022: https://huggingface.co/datasets/LonghaoWang/SST-Hindcast-2016-2022-1deg-lead1-12
 - Código: https://github.com/GISWLH/CAS-Canglong

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ishikaa/acquisition_student_original_combine_WGM_MP_qwen14b_5000` es un modelo de generacion de texto publicado en HuggingFace por el usuario ishikaa. Por su identificador y por la etiqueta `qwen2` de los metadatos, se trata de un ajuste fino (fine-tuning) derivado de la familia Qwen2, concretamente de una variante de aproximadamente 14.000 millones de parametros. El nombre sugiere un entrenamiento orientado a "adquisicion" con combinacion de datos de origen ("original_combine"), posiblemente un experimento academico o de investigacion interna.
+`ishikaa/acquisition_student_original_combine_WGM_MP_qwen14b_5000` es un modelo de generacion de texto publicado en Hugging Face por el usuario ishikaa. Por su identificador y por la etiqueta `qwen2` de los metadatos, se trata de un ajuste fino (fine-tuning) derivado de la familia Qwen2, concretamente de una variante de aproximadamente 14.000 millones de parametros. El nombre sugiere un entrenamiento orientado a "adquisicion" con combinacion de datos de origen ("original_combine"), posiblemente un experimento academico o de investigacion interna.
 
-El modelo cuenta con 14.770.033.664 parametros en formato safetensors y un repositorio de 29,6 GB, lo que es coherente con pesos en precision de 16 bits (bf16/fp16). La model card es la plantilla autogenerada por HuggingFace y no aporta informacion sobre datos de entrenamiento, hiperparametros, licencia ni idiomas, por lo que la mayor parte de las especificaciones no estan disponibles.
+El modelo cuenta con 14.770.033.664 parametros en formato safetensors y un repositorio de 29,6 GB, lo que es coherente con pesos en precision de 16 bits (bf16/fp16). La model card es la plantilla autogenerada por Hugging Face y no aporta informacion sobre datos de entrenamiento, hiperparametros, licencia ni idiomas, por lo que la mayor parte de las especificaciones no estan disponibles.
 
 Su relevancia es limitada en el ecosistema actual: no tiene descargas ni likes, no dispone de licencia declarada y carece de documentacion tecnica. Resulta util unicamente como artefacto de investigacion para quien conozca su procedencia, no como modelo listo para produccion.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ishikaa/acquisition_student_original_combine_WGM_MP_qwen14b_5000 | 14,77B | no disponible | no disponible | HuggingFace, sin descargas |
-| Qwen2-14B (base oficial) | ~14B | no disponible en esta ficha | Apache 2.0 (familia Qwen2) | HuggingFace, ampliamente usado |
-| Qwen2.5-14B-Instruct | ~14B | no disponible en esta ficha | Apache 2.0 (familia Qwen2.5) | HuggingFace, ampliamente usado |
+| ishikaa/acquisition_student_original_combine_WGM_MP_qwen14b_5000 | 14,77B | no disponible | no disponible | Hugging Face, sin descargas |
+| Qwen2-14B (base oficial) | ~14B | no disponible en esta ficha | Apache 2.0 (familia Qwen2) | Hugging Face, ampliamente usado |
+| Qwen2.5-14B-Instruct | ~14B | no disponible en esta ficha | Apache 2.0 (familia Qwen2.5) | Hugging Face, ampliamente usado |
 
 La comparacion con las variantes oficiales de Qwen2 es la mas directa por compartir base arquitectonica, pero no hay datos de rendimiento de este checkpoint que permitan establecer diferencias cuantitativas.
 
@@ -84,6 +84,6 @@ La comparacion con las variantes oficiales de Qwen2 es la mas directa por compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_student_original_combine_WGM_MP_qwen14b_5000
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_student_original_combine_WGM_MP_qwen14b_5000
 - Paper de referencia citado en la model card (Machine Learning Impact calculator, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental: https://mlco2.github.io/impact#compute

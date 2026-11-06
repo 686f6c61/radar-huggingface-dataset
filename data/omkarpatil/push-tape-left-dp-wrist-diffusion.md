@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables en la misma tarea o con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omkarpatil/push-tape-left-dp-wrist-diffusion
+- Modelo en Hugging Face: https://huggingface.co/omkarpatil/push-tape-left-dp-wrist-diffusion
 - Dataset asociado (discusiones): https://huggingface.co/datasets/omkarpatil/push-tape-left/discussions
 - Perfil del autor: https://huggingface.co/omkarpatil/models
 - LeRobot (librería de referencia): https://github.com/huggingface/lerobot

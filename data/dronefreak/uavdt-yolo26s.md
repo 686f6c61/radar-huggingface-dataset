@@ -25,7 +25,7 @@ Los resultados publicados por el autor son modestos en terminos absolutos (mAP@5
 | Clases | car, truck, bus |
 | Dataset de entrenamiento y evaluacion | dronefreak/UAVDT (split de test para las metricas) |
 | Modelo base | Ultralytics/YOLO26 (variante s) |
-| Tamano del repositorio | 0,0 GB (segun el listado de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun el listado de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -102,7 +102,7 @@ No se han publicado en la informacion disponible resultados en otros benchmarks 
 
 | Modelo | Parametros | Tarea / dataset | mAP@50 (UAVDT) | mAP@50-95 (UAVDT) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| uavdt-yolo26s (este) | 10,0 M | Deteccion; ajuste fino en UAVDT | 14,09 | 7,91 | AGPL-3.0 | HuggingFace (dronefreak/uavdt-yolo26s) |
+| uavdt-yolo26s (este) | 10,0 M | Deteccion; ajuste fino en UAVDT | 14,09 | 7,91 | AGPL-3.0 | Hugging Face (dronefreak/uavdt-yolo26s) |
 | RF-DETR Small (referencia del zoo) | no disponible | Deteccion; ajuste fino en UAVDT | 14,89 | 8,92 | no disponible en la informacion proporcionada | via DetectionBench |
 | RF-DETR Medium (referencia del zoo) | no disponible | Deteccion; ajuste fino en UAVDT | 15,02 | 8,76 | no disponible en la informacion proporcionada | via DetectionBench |
 | YOLOv26m (mismo marco) | no disponible | Deteccion; ajuste fino en UAVDT | 12,32 | 6,66 | AGPL-3.0 (heredada del ecosistema Ultralytics) | via DetectionBench |
@@ -126,7 +126,7 @@ Observaciones: dentro del zoo de DetectionBench sobre UAVDT, este checkpoint es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/uavdt-yolo26s
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/uavdt-yolo26s
 - Dataset UAVDT (version del autor): https://huggingface.co/datasets/dronefreak/UAVDT
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench
 - Modelo base: https://huggingface.co/Ultralytics/YOLO26
@@ -136,6 +136,6 @@ Observaciones: dentro del zoo de DetectionBench sobre UAVDT, este checkpoint es 
   - https://arxiv.org/abs/2511.09554
   - https://arxiv.org/abs/2304.07193
   - https://arxiv.org/abs/2410.17725
-- Recursos graficos del repositorio (curvas PR y F1, matrices de confusion): `BoxPR_curve.png`, `BoxF1_curve.png`, `confusion_matrix.png`, `confusion_matrix_normalized.png` en la raiz del repositorio de HuggingFace
+- Recursos graficos del repositorio (curvas PR y F1, matrices de confusion): `BoxPR_curve.png`, `BoxF1_curve.png`, `confusion_matrix.png`, `confusion_matrix_normalized.png` en la raiz del repositorio de Hugging Face
 - Demo del autor: `assets/demo_banner.mp4` (detecciones sobre dos clips de test de UAVDT), referenciado desde la model card
 - Nota sobre la busqueda web: no se encontraron resultados relevantes sobre este modelo; las busquedas devolvieron unicamente paginas sobre productos no relacionados (monitores de frecuencia cardiaca Garmin HRM 200 y HRM 600), por lo que no se incluyen como enlaces utiles.

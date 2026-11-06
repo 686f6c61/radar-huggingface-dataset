@@ -81,7 +81,7 @@ La comparativa con modelos de otros autores no esta disponible en la informacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Huihui-gemma-4-26B-A4B-it-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Huihui-gemma-4-26B-A4B-it-abliterated-GGUF
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-gemma-4-26B-A4B-it-abliterated
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Huihui-gemma-4-26B-A4B-it-abliterated-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Huihui-gemma-4-26B-A4B-it-abliterated-GGUF

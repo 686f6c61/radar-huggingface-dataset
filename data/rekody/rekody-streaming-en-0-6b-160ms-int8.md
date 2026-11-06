@@ -89,7 +89,7 @@ La diferencia principal entre las dos versiones de Rekody es el perfil de latenc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rekody/rekody-streaming-en-0.6b-160ms-int8
+- Repositorio Hugging Face: https://huggingface.co/Rekody/rekody-streaming-en-0.6b-160ms-int8
 - Repositorio de la version 560 ms: https://huggingface.co/Rekody/rekody-streaming-en-0.6b-int8
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b
 - Pagina de NVIDIA NIM para Nemotron ASR streaming: https://build.nvidia.com/nvidia/nemotron-asr-streaming/modelcard

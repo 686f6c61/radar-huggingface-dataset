@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/arb-arab-100mb-ppt-shuff-dyck-10mb_seed3407` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/arb_arab_100mb`, un GPT-2 monolingue de aproximadamente 125 millones de parametros orientado al arabe. Lo publica el usuario de HuggingFace fpadovani, y por los metadatos disponibles (proyecto de Weights & Biases denominado `new_tokenizers`, ejecucion con TRL 0.23.0) se trata de un artefacto de investigacion mas que de un modelo listo para produccion.
+El modelo `fpadovani/arb-arab-100mb-ppt-shuff-dyck-10mb_seed3407` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/arb_arab_100mb`, un GPT-2 monolingue de aproximadamente 125 millones de parametros orientado al arabe. Lo publica el usuario de Hugging Face fpadovani, y por los metadatos disponibles (proyecto de Weights & Biases denominado `new_tokenizers`, ejecucion con TRL 0.23.0) se trata de un artefacto de investigacion mas que de un modelo listo para produccion.
 
 El problema que aborda no esta documentado en la model card: el identificador sugiere un experimento con datos de 10 MB, algun tipo de barajado (shuff) y el lenguaje formal de Dyck, pero la ficha no especifica el conjunto de datos, la receta de entrenamiento ni la hipotesis del estudio. El modelo se ha entrenado con la libreria TRL sobre la infraestructura de Transformers 4.56.2 y PyTorch 2.5.1, y se distribuye unicamente en safetensors con la libreria `transformers`.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fpadovani/arb-arab-100mb-ppt-shuff-dyck-10mb_seed3407 | 124.770.816 | no disponible | SFT sobre `goldfish-models/arb_arab_100mb` | no disponible | HuggingFace, safetensors |
-| goldfish-models/arb_arab_100mb (modelo base) | no disponible (categoria ~100 MB de corpus) | no disponible | preentrenamiento monolingue en arabe | no disponible | HuggingFace |
+| fpadovani/arb-arab-100mb-ppt-shuff-dyck-10mb_seed3407 | 124.770.816 | no disponible | SFT sobre `goldfish-models/arb_arab_100mb` | no disponible | Hugging Face, safetensors |
+| goldfish-models/arb_arab_100mb (modelo base) | no disponible (categoria ~100 MB de corpus) | no disponible | preentrenamiento monolingue en arabe | no disponible | Hugging Face |
 | Otras alternativas de ~125M en arabe | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con alternativas de la misma categoria.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-100mb-ppt-shuff-dyck-10mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-100mb-ppt-shuff-dyck-10mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/arb_arab_100mb
 - Ejecucion de entrenamiento en Weights & Biases (proyecto `new_tokenizers`): https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/pl60o37b
 - Repositorio de TRL: https://github.com/huggingface/trl

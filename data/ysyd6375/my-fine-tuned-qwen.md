@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`ysyd6375/my-fine-tuned-qwen` es un modelo de generacion de texto publicado en HuggingFace por el usuario ysyd6375. Se trata de un ajuste fino supervisado (SFT) de un modelo de la familia Qwen2, segun indican las etiquetas del repositorio (`qwen2`, `trl`, `sft`, `conversational`). El recuento real de parametros en los pesos safetensors es de 1.543.714.304 (aproximadamente 1,54 mil millones), lo que lo situa en la categoria de modelos pequenos, aptos para inferencia en hardware de consumo.
+`ysyd6375/my-fine-tuned-qwen` es un modelo de generacion de texto publicado en Hugging Face por el usuario ysyd6375. Se trata de un ajuste fino supervisado (SFT) de un modelo de la familia Qwen2, segun indican las etiquetas del repositorio (`qwen2`, `trl`, `sft`, `conversational`). El recuento real de parametros en los pesos safetensors es de 1.543.714.304 (aproximadamente 1,54 mil millones), lo que lo situa en la categoria de modelos pequenos, aptos para inferencia en hardware de consumo.
 
 El modelo resuelve el caso de uso generico de generacion de texto conversacional tras un proceso de ajuste supervisado con la libreria TRL. Es relevante ahora porque los modelos de ~1,5B parametros permiten desplegar asistentes conversacionales con requisitos de VRAM muy bajos, aunque en este caso concreto la documentacion publicada es practicamente inexistente.
 
-La model card del autor es la plantilla autogenerada por HuggingFace y no contiene ningun dato sustantivo: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, modelo base, datos de entrenamiento, hiperparametros y evaluacion) aparecen como `[More Information Needed]`. La unica informacion fiable procede de las etiquetas del repositorio, del recuento de parametros y del tamano del repo (3,1 GB).
+La model card del autor es la plantilla autogenerada por Hugging Face y no contiene ningun dato sustantivo: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, modelo base, datos de entrenamiento, hiperparametros y evaluacion) aparecen como `[More Information Needed]`. La unica informacion fiable procede de las etiquetas del repositorio, del recuento de parametros y del tamano del repo (3,1 GB).
 
 ## Especificaciones tecnicas
 
@@ -26,7 +26,7 @@ Datos adicionales del repositorio: tamano del repo de 3,1 GB, 0 descargas, 1 lik
 
 No hay informacion publicada por el autor sobre la arquitectura mas alla de la etiqueta `qwen2`, que sugiere un transformer decoder-only con atencion causal similar al utilizado en la familia Qwen2. El recuento de parametros (1,54B) es coherente con variantes pequenas de esa familia. Al no estar confirmado el modelo base, no es posible afirmar la longitud de contexto nativa, la configuracion de cabezas de atencion ni el tipo de tokenizador.
 
-Respecto al entrenamiento, las etiquetas `trl` y `sft` indican que se aplico un ajuste fino supervisado (supervised fine-tuning) mediante la libreria TRL de HuggingFace, y la etiqueta `conversational` sugiere que el dataset de ajuste tenia formato de dialogo. No se especifica el numero de tokens, la composicion del dataset, si hubo etapas de RLHF o DPO, ni los hiperparametros empleados. El tamano del repo (3,1 GB) es consistente con pesos en 16 bits (1,54B x 2 bytes ~ 3,08 GB) mas ficheros auxiliares, aunque esto es una inferencia y no un dato declarado.
+Respecto al entrenamiento, las etiquetas `trl` y `sft` indican que se aplico un ajuste fino supervisado (supervised fine-tuning) mediante la libreria TRL de Hugging Face, y la etiqueta `conversational` sugiere que el dataset de ajuste tenia formato de dialogo. No se especifica el numero de tokens, la composicion del dataset, si hubo etapas de RLHF o DPO, ni los hiperparametros empleados. El tamano del repo (3,1 GB) es consistente con pesos en 16 bits (1,54B x 2 bytes ~ 3,08 GB) mas ficheros auxiliares, aunque esto es una inferencia y no un dato declarado.
 
 ## Capacidades
 
@@ -72,10 +72,10 @@ La comparativa se ofrece como referencia de categoria (modelos densos de ~1-2B o
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ysyd6375/my-fine-tuned-qwen | 1,54B | no disponible | no disponible | HuggingFace (0 descargas) |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (ampliable) | Apache 2.0 (segun repositorio publico) | HuggingFace, ampliamente usado |
-| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, requiere aceptar licencia |
-| SmolLM2-1.7B-Instruct | 1,71B | 8.192 tokens | Apache 2.0 (segun repositorio publico) | HuggingFace |
+| ysyd6375/my-fine-tuned-qwen | 1,54B | no disponible | no disponible | Hugging Face (0 descargas) |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (ampliable) | Apache 2.0 (segun repositorio publico) | Hugging Face, ampliamente usado |
+| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, requiere aceptar licencia |
+| SmolLM2-1.7B-Instruct | 1,71B | 8.192 tokens | Apache 2.0 (segun repositorio publico) | Hugging Face |
 
 Nota: no se dispone de resultados de benchmarks del modelo analizado, por lo que no es posible comparar rendimiento numerico.
 
@@ -93,7 +93,7 @@ Nota: no se dispone de resultados de benchmarks del modelo analizado, por lo que
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ysyd6375/my-fine-tuned-qwen
+- Repositorio en Hugging Face: https://huggingface.co/ysyd6375/my-fine-tuned-qwen
 - Referencia citada en la plantilla de la model card (calculadora de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Herramienta de calculo de emisiones mencionada en la plantilla: https://mlco2.github.io/impact
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo.

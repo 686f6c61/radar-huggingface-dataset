@@ -21,7 +21,7 @@ El modelo cuenta con aproximadamente 14 000 millones de parámetros (13 990 394 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta no se detalla en la documentacion publicada. El tag "qwen3" presente en los metadatos de HuggingFace sugiere que el modelo podria estar basado en la arquitectura Qwen3, pero no hay confirmacion oficial. Se trata de un modelo encoder de embeddings, probablemente de tipo transformer, optimizado para producir representaciones de texto de alta calidad. La dimension de salida es de 5120, lo que indica una capacidad de representacion amplia.
+La arquitectura exacta no se detalla en la documentacion publicada. El tag "qwen3" presente en los metadatos de Hugging Face sugiere que el modelo podria estar basado en la arquitectura Qwen3, pero no hay confirmacion oficial. Se trata de un modelo encoder de embeddings, probablemente de tipo transformer, optimizado para producir representaciones de texto de alta calidad. La dimension de salida es de 5120, lo que indica una capacidad de representacion amplia.
 
 El entrenamiento se realizo sobre un conjunto de datos curado de 60 millones de muestras publicas, con un enfasis especial en idiomas de medios y bajos recursos. La familia F2LLM-v2 incluye modelos base e instruct en varios tamanos; los tres modelos mas pequenos (80M, 160M y 330M) se obtuvieron mediante poda y entrenamiento adicional a partir del modelo base de 0.6B. No se mencionan tecnicas como RLHF o DPO, que no son habituales en modelos de embeddings. La publicacion incluye los datos de entrenamiento, el codigo y los checkpoints intermedios, lo que facilita la reproducibilidad.
 
@@ -81,7 +81,7 @@ F2LLM-v2-14B destaca por su mayor tamano y su cobertura de idiomas de bajos recu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/codefuse-ai/F2LLM-v2-14B
+- Modelo en Hugging Face: https://huggingface.co/codefuse-ai/F2LLM-v2-14B
 - Modelo base (Preview): https://huggingface.co/codefuse-ai/F2LLM-v2-14B-Preview
 - Dataset de entrenamiento: https://huggingface.co/datasets/codefuse-ai/F2LLM-v2
 - Paper (arXiv): https://arxiv.org/abs/2603.19223

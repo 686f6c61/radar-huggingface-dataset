@@ -94,7 +94,7 @@ La comparativa se limita a las variantes de la misma familia, ya que no se dispo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lygodactylus/Qwen3.8-27B-Uncensored-exl3-8bpw
+- Repositorio Hugging Face: https://huggingface.co/Lygodactylus/Qwen3.8-27B-Uncensored-exl3-8bpw
 - Modelo base abliterado: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Variante 4.0 bpw: https://huggingface.co/Lygodactylus/Qwen3.8-27B-Uncensored-exl3-4bpw
 - Variante 6.0 bpw: https://huggingface.co/Lygodactylus/Qwen3.8-27B-Uncensored-exl3-6bpw

@@ -63,5 +63,5 @@ No disponible. No se conocen modelos comparables en la misma categoría (poolfor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/juliemercier/llm-tokenizer
+- Repositorio Hugging Face: https://huggingface.co/juliemercier/llm-tokenizer
 - No se encontraron otros enlaces relevantes (papers, blogs, repos asociados) en la búsqueda web.

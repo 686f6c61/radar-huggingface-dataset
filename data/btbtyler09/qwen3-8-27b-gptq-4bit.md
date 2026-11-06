@@ -85,7 +85,7 @@ No se dispone de información suficiente sobre otros modelos comparables de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/btbtyler09/Qwen3.8-27B-GPTQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/btbtyler09/Qwen3.8-27B-GPTQ-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper FOEM (AAAI 2026): https://ojs.aaai.org/index.php/AAAI/article/view/40123
 - Repositorio GPTQModel: https://github.com/modelcloud/gptqmodel

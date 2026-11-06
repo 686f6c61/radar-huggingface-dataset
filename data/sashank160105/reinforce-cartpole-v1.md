@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo de lenguaje ni una red neuronal de gran tamano: es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE sobre el entorno CartPole-v1 de Gymnasium. Lo publica el usuario de HuggingFace sashank160105 y esta etiquetado con `deep-rl-class`, por lo que se trata de un ejercicio de la asignatura Deep Reinforcement Learning Course (curso de la organizacion Deep RL Class) mas que de un artefacto pensado para produccion. El problema que resuelve es el control clasico de un carro con un poste articulado: aplicar fuerza +1 o -1 en cada paso para mantener el poste en vertical el mayor numero de pasos posible.
+Este repositorio no contiene un modelo de lenguaje ni una red neuronal de gran tamano: es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE sobre el entorno CartPole-v1 de Gymnasium. Lo publica el usuario de Hugging Face sashank160105 y esta etiquetado con `deep-rl-class`, por lo que se trata de un ejercicio de la asignatura Deep Reinforcement Learning Course (curso de la organizacion Deep RL Class) mas que de un artefacto pensado para produccion. El problema que resuelve es el control clasico de un carro con un poste articulado: aplicar fuerza +1 o -1 en cada paso para mantener el poste en vertical el mayor numero de pasos posible.
 
-El interes tecnico es acotado pero claro. REINFORCE es el algoritmo de policy gradient mas basico (policy gradient Monte Carlo con retornos descontados), por lo que este agente sirve como referencia didactica y como baseline de comparacion frente a metodos con mejor relacion varianza-sesgo como PPO, A2C o DQN. El resultado declarado por el autor es `mean_reward = 500.00 +/- 0.00` sobre CartPole-v1, lo que en principio corresponde al maximo de episodio del entorno, aunque el dato no esta verificado por HuggingFace (`verified: false`).
+El interes tecnico es acotado pero claro. REINFORCE es el algoritmo de policy gradient mas basico (policy gradient Monte Carlo con retornos descontados), por lo que este agente sirve como referencia didactica y como baseline de comparacion frente a metodos con mejor relacion varianza-sesgo como PPO, A2C o DQN. El resultado declarado por el autor es `mean_reward = 500.00 +/- 0.00` sobre CartPole-v1, lo que en principio corresponde al maximo de episodio del entorno, aunque el dato no esta verificado por Hugging Face (`verified: false`).
 
 La relevancia practica del repositorio es limitada: acumula 0 descargas y 0 likes, no declara licencia ni idiomas, y el tamano del repo es de 0.0 GB, lo que sugiere que los pesos del agente no se han subido o no estan disponibles publicamente. Debe tratarse, por tanto, como una ficha de referencia sobre un artefacto educativo de RL, no como una base para desplegar sistemas en produccion.
 
@@ -50,7 +50,7 @@ El entorno CartPole-v1 pertenece al paquete Classic Control de Gymnasium: un pos
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el `model-index` de la model card (no verificados por HuggingFace, campo `verified: false`):
+Resultados declarados por el autor en el `model-index` de la model card (no verificados por Hugging Face, campo `verified: false`):
 
 | Metrica | Valor | Tarea | Dataset | Verificado |
 |---|---|---|---|---|
@@ -72,8 +72,8 @@ Advertencias sobre la interpretacion de la tabla: la model card no indica el num
 | Modelo | Tipo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | sashank160105/reinforce-CartPole-v1 | REINFORCE (policy gradient) | CartPole-v1 | No disponible | No aplicable | No disponible | Repo de 0.0 GB, pesos no confirmados |
-| a1024053774/Reinforce-CartPole-v1 | REINFORCE (policy gradient) | CartPole-v1 | No disponible | No aplicable | No disponible | Publicado en HuggingFace, datos no disponibles |
-| Bear-ai/Reinforce-CartPole-v1 | REINFORCE (policy gradient) | CartPole-v1 | No disponible | No aplicable | No disponible | Publicado en HuggingFace, datos no disponibles |
+| a1024053774/Reinforce-CartPole-v1 | REINFORCE (policy gradient) | CartPole-v1 | No disponible | No aplicable | No disponible | Publicado en Hugging Face, datos no disponibles |
+| Bear-ai/Reinforce-CartPole-v1 | REINFORCE (policy gradient) | CartPole-v1 | No disponible | No aplicable | No disponible | Publicado en Hugging Face, datos no disponibles |
 
 Los tres repositorios corresponden al mismo ejercicio del Deep RL Class y comparten etiquetas (`CartPole-v1`, `reinforce`, `custom-implementation`, `deep-rl-class`), por lo que son esencialmente equivalentes en planteamiento. Como alternativas metodologicas dentro de la misma tarea cabe citar DQN, A2C y PPO, habituales en los ejemplos de Gymnasium y Stable-Baselines3, pero no se dispone de datos comparativos publicados en la informacion proporcionada para enfrentarlos a este agente concreto.
 
@@ -90,7 +90,7 @@ Los tres repositorios corresponden al mismo ejercicio del Deep RL Class y compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sashank160105/reinforce-CartPole-v1
+- Modelo en Hugging Face: https://huggingface.co/sashank160105/reinforce-CartPole-v1
 - Repositorio equivalente (a1024053774): https://huggingface.co/a1024053774/Reinforce-CartPole-v1
 - Repositorio equivalente (Bear-ai): https://huggingface.co/Bear-ai/Reinforce-CartPole-v1
 - Documentacion del entorno CartPole en Gymnasium: https://gymnasium.farama.org/environments/classic_control/cart_pole/

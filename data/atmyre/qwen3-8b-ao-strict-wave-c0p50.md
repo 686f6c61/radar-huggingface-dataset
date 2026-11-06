@@ -67,7 +67,7 @@ No se dispone de información sobre otros adaptadores AO comparables en la misma
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/Atmyre/qwen3-8b-ao-strict-wave-c0p50)
+- [Hugging Face del adaptador](https://huggingface.co/Atmyre/qwen3-8b-ao-strict-wave-c0p50)
 - [Paper Activation Oracles (arXiv:2512.15674)](https://arxiv.org/abs/2512.15674)
 - [Modelo base Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B)
 - [Modelo sujeto Atmyre/qwen3-8b-taboo-strict-wave-c0p50](https://huggingface.co/Atmyre/qwen3-8b-taboo-strict-wave-c0p50)

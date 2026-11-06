@@ -78,8 +78,8 @@ No se dispone de datos de comparación directa con otros modelos de embeddings m
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/andreasmartin/apertus-v1.5-swiss-embed-4.9b-bidir)
-- [Colección Apertus v1.5 en HuggingFace](https://huggingface.co/collections/swiss-ai/apertus-v15)
+- [Hugging Face del modelo](https://huggingface.co/andreasmartin/apertus-v1.5-swiss-embed-4.9b-bidir)
+- [Colección Apertus v1.5 en Hugging Face](https://huggingface.co/collections/swiss-ai/apertus-v15)
 - [Modelo base de texto (Apertus v1.5 8B text)](https://huggingface.co/andreasmartin/apertus-v1.5-8b-text)
 - [Documentación de Apertus AI](https://apertus-ai.org/pages/documentation/)
 - [Noticia ETH Zurich sobre Apertus 1.5](https://ai.ethz.ch/news-and-events/ai-center-news/2026/07/apertus-15-building-the-next-generation-of-open-ai-infrastructure.html)

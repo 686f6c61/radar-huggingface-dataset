@@ -18,7 +18,7 @@ Es relevante ahora porque ejemplifica una tendencia concreta en IA open source: 
 | Longitud de contexto | no disponible en la informacion proporcionada |
 | Tipos de cuantizacion | cuantizado (el metadato `base_model_relation: quantized` lo confirma); esquema exacto (INT8, INT4, etc.) no disponible |
 | Idiomas soportados | en, de, fr, it, pt, hi, es, th |
-| Licencia | llama3.2 (el campo `license` de HuggingFace figura como `other`, con `license_name: llama3.2`) |
+| Licencia | llama3.2 (el campo `license` de Hugging Face figura como `other`, con `license_name: llama3.2`) |
 | Formato de pesos | safetensors, con `custom_code` y libreria `mobilint` (paquete compilado para NPU) |
 
 ## Arquitectura y entrenamiento
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mobilint/Llama-3.2-3B-Instruct-regulus-rb-usb | 394.002.432 en safetensors publicados; base de aproximadamente 3.000 millones | no disponible | no disponible | llama3.2 | HuggingFace, atado al stack de Mobilint |
-| meta-llama/Llama-3.2-3B-Instruct (modelo base) | aproximadamente 3.000 millones | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | llama3.2 | HuggingFace, pesos estandar ejecutables en multiples runtimes |
+| mobilint/Llama-3.2-3B-Instruct-regulus-rb-usb | 394.002.432 en safetensors publicados; base de aproximadamente 3.000 millones | no disponible | no disponible | llama3.2 | Hugging Face, atado al stack de Mobilint |
+| meta-llama/Llama-3.2-3B-Instruct (modelo base) | aproximadamente 3.000 millones | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | llama3.2 | Hugging Face, pesos estandar ejecutables en multiples runtimes |
 | Otros artefactos de la familia Llama 3.2 compilados para aceleradores | no disponible | no disponible | no disponible | llama3.2 | no disponible |
 
 No se dispone de datos de benchmarks ni de artefactos comparables verificados dentro de la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con alternativas de la misma categoria.
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de artefactos comparables verificados de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mobilint/Llama-3.2-3B-Instruct-regulus-rb-usb
+- Modelo en Hugging Face: https://huggingface.co/mobilint/Llama-3.2-3B-Instruct-regulus-rb-usb
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Licencia Llama 3.2: https://huggingface.co/meta-llama/Llama-3.2-1B/blob/main/LICENSE.txt
 - Sitio de Mobilint: https://mobilint.com

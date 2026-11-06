@@ -6,7 +6,7 @@ Devstral Small 1.1 es un modelo de lenguaje de tipo agente ("agentic LLM") orien
 
 El problema que aborda es el de los agentes de software que necesitan explorar repositorios de código, editar varios ficheros y encadenar llamadas a herramientas de forma autónoma. Según la model card, Devstral Small 1.1 alcanza un 53,6 % en SWE-Bench Verified con el andamiaje de OpenHands, superando en 6,8 puntos a Devstral Small 1.0 y en 11,4 puntos al segundo mejor modelo del estado del arte, lo que lo sitúa como el modelo de código abierto líder en ese benchmark según el autor.
 
-Es relevante ahora porque combina tres factores poco frecuentes a la vez: licencia Apache 2.0 (uso comercial permitido), tamaño apto para despliegue local y soporte del formato de llamada a funciones de Mistral. La ficha de HuggingFace consultada está publicada por el usuario "CollectionStudio", aunque la model card atribuye el desarrollo a Mistral AI y All Hands AI.
+Es relevante ahora porque combina tres factores poco frecuentes a la vez: licencia Apache 2.0 (uso comercial permitido), tamaño apto para despliegue local y soporte del formato de llamada a funciones de Mistral. La ficha de Hugging Face consultada está publicada por el usuario "CollectionStudio", aunque la model card atribuye el desarrollo a Mistral AI y All Hands AI.
 
 ## Especificaciones tecnicas
 
@@ -97,13 +97,13 @@ La model card menciona ademas que, bajo el andamiaje OpenHands, el modelo supera
 - Rendimiento dependiente del andamiaje: los resultados de SWE-Bench se obtienen con OpenHands; el comportamiento puede variar con otros entornos, aunque la version 1.1 afirma generalizar mejor.
 - Cobertura de idiomas: aunque soporta 24 idiomas, la especializacion en codigo y el grueso de los datos de entrenamiento probablemente estan dominados por el ingles; el rendimiento en idiomas minoritarios puede ser inferior.
 - Restricciones de licencia: la licencia Apache 2.0 permite uso comercial y modificacion, pero la model card incluye un aviso de tratamiento de datos personales y enlaces a la politica de privacidad de Mistral, que conviene revisar en despliegues con datos de usuario.
-- Discrepancia de autoria: la ficha de HuggingFace esta publicada por el usuario "CollectionStudio", mientras que la model card atribuye el desarrollo a Mistral AI y All Hands AI; conviene verificar la procedencia de los pesos antes de usarlos en produccion.
+- Discrepancia de autoria: la ficha de Hugging Face esta publicada por el usuario "CollectionStudio", mientras que la model card atribuye el desarrollo a Mistral AI y All Hands AI; conviene verificar la procedencia de los pesos antes de usarlos en produccion.
 - No debe confundirse el modelo de 23,57 B de parametros con su base (Mistral-Small-3.1), que incluye vision; Devstral no la hereda.
 
 ## Enlaces
 
-- Ficha de HuggingFace (publicacion consultada): https://huggingface.co/CollectionStudio/Devstral-Small-2507
-- Modelo base en HuggingFace: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503
+- Ficha de Hugging Face (publicacion consultada): https://huggingface.co/CollectionStudio/Devstral-Small-2507
+- Modelo base en Hugging Face: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503
 - Modelo base (variante Base) citado en la model card: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503
 - Version anterior Devstral Small 1.0: https://huggingface.co/mistralai/Devstral-Small-2505
 - Blog de Mistral AI sobre Devstral: https://mistral.ai/news/devstral-2507

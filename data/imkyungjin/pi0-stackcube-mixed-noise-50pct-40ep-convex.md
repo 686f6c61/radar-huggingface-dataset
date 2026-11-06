@@ -72,11 +72,11 @@ La busqueda web realizada no aporto informacion relevante sobre este modelo ni s
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi0-stackcube-mixed-noise-50pct-40ep-convex (este) | VLA π₀ ajustado a tarea de apilado | 3,5 B | No disponible | Apache-2.0 | HuggingFace, 0 descargas |
+| pi0-stackcube-mixed-noise-50pct-40ep-convex (este) | VLA π₀ ajustado a tarea de apilado | 3,5 B | No disponible | Apache-2.0 | Hugging Face, 0 descargas |
 | π₀ base (OpenPI / LeRobot) | VLA generalista | No disponible en la informacion proporcionada | No disponible | Apache-2.0 (OpenPI) | Repositorio publico de Physical Intelligence y LeRobot |
-| SmolVLA (LeRobot) | VLA compacto | No disponible en la informacion proporcionada | No disponible | Apache-2.0 | HuggingFace / LeRobot |
-| ACT (LeRobot) | Politica de imitacion con transformer y CVAE | No disponible en la informacion proporcionada | No disponible | Ver licencia del repositorio LeRobot | HuggingFace / LeRobot |
-| Diffusion Policy (LeRobot) | Politica de imitacion basada en difusion | No disponible en la informacion proporcionada | No disponible | Ver licencia del repositorio LeRobot | HuggingFace / LeRobot |
+| SmolVLA (LeRobot) | VLA compacto | No disponible en la informacion proporcionada | No disponible | Apache-2.0 | Hugging Face / LeRobot |
+| ACT (LeRobot) | Politica de imitacion con transformer y CVAE | No disponible en la informacion proporcionada | No disponible | Ver licencia del repositorio LeRobot | Hugging Face / LeRobot |
+| Diffusion Policy (LeRobot) | Politica de imitacion basada en difusion | No disponible en la informacion proporcionada | No disponible | Ver licencia del repositorio LeRobot | Hugging Face / LeRobot |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ La busqueda web realizada no aporto informacion relevante sobre este modelo ni s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ImKyungjin/pi0-stackcube-mixed-noise-50pct-40ep-convex
+- Modelo en Hugging Face: https://huggingface.co/ImKyungjin/pi0-stackcube-mixed-noise-50pct-40ep-convex
 - Dataset de entrenamiento: https://huggingface.co/datasets/taewonkoo/stack_cube_mixed_noise_50pct_40ep
 - Blog de Physical Intelligence sobre π₀: https://www.physicalintelligence.company/blog/pi0
 - Repositorio OpenPI: https://github.com/Physical-Intelligence/openpi

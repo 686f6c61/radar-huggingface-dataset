@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Detect-luggage-and-travel-bag-detection-probe-set es un modelo de deteccion de objetos publicado por el usuario manako en HuggingFace, entrenado a partir del dataset "luggage-and-travel-bag-detection-probe-set" de la plataforma element_trainer. El modelo esta especializado en la deteccion de cinco clases de equipaje y bolsos: maleta (suitcase), mochila (backpack), bolso de mano (handbag), bolsa de viaje (holdall) y carrito de equipaje (baggage trolley). Se distribuye en formato ONNX y emplea la arquitectura YOLOv11 en su variante nano, segun las etiquetas del repositorio.
+Detect-luggage-and-travel-bag-detection-probe-set es un modelo de deteccion de objetos publicado por el usuario manako en Hugging Face, entrenado a partir del dataset "luggage-and-travel-bag-detection-probe-set" de la plataforma element_trainer. El modelo esta especializado en la deteccion de cinco clases de equipaje y bolsos: maleta (suitcase), mochila (backpack), bolso de mano (handbag), bolsa de viaje (holdall) y carrito de equipaje (baggage trolley). Se distribuye en formato ONNX y emplea la arquitectura YOLOv11 en su variante nano, segun las etiquetas del repositorio.
 
 El modelo se presenta como un "baseline" de Manako, una plataforma de entrenamiento de elementos de vision, y esta pensado como punto de partida para tareas de deteccion de equipaje en imagenes RGB. La informacion publica es muy limitada: el repositorio tiene un tamano de 0.0 GB, no registra descargas ni likes, y la model card no incluye datos sobre licencia, idiomas, pipeline ni resultados de evaluacion (el campo `evaluation_score` aparece vacio).
 
@@ -23,7 +23,7 @@ Por su naturaleza (YOLOv11-nano en ONNX), el modelo es relevante para escenarios
 | Clases detectadas | suitcase, backpack, handbag, holdall, baggage trolley |
 | Tipo de entrada | imagen RGB (campo `frame`) |
 | Tipo de salida | lista de detecciones (campo `detections`) |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Clases | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| manako/Detect-luggage-and-travel-bag-detection-probe-set | YOLOv11-nano | 5 clases de equipaje | ONNX | no disponible | HuggingFace (0 descargas) |
+| manako/Detect-luggage-and-travel-bag-detection-probe-set | YOLOv11-nano | 5 clases de equipaje | ONNX | no disponible | Hugging Face (0 descargas) |
 | YOLOv11-nano (Ultralytics, original) | YOLOv11-nano | 80 clases COCO | PyTorch, ONNX, etc. | AGPL-3.0 / comercial | GitHub, Ultralytics Hub |
 | YOLOv8-nano (Ultralytics) | YOLOv8-nano | 80 clases COCO | PyTorch, ONNX, etc. | AGPL-3.0 / comercial | GitHub, Ultralytics Hub |
 | Detectron2 (Facebook) | Faster R-CNN / RetinaNet | configurable | PyTorch | Apache 2.0 | GitHub |
@@ -88,7 +88,7 @@ La comparativa es limitada porque no se dispone de metricas de rendimiento del m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manako/Detect-luggage-and-travel-bag-detection-probe-set
+- Modelo en Hugging Face: https://huggingface.co/manako/Detect-luggage-and-travel-bag-detection-probe-set
 - Dataset de origen (referenciado en la model card): element_trainer/luggage-and-travel-bag-detection-probe-set (no se proporciona URL directa)
 - Repositorio de YOLOv11 (Ultralytics): https://github.com/ultralytics/ultralytics
 - Documentacion de ONNX Runtime: https://onnxruntime.ai/

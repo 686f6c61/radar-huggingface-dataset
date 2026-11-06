@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-Abliterated-Sushi-3bpw es una cuantizacion experimental en formato Sushi de 3 bits por peso (3bpw) de un derivado "abliterated" (sin rechazo) del modelo Qwen3.8-Flash-Next. Lo publica el usuario sanasol2008 en HuggingFace y parte del checkpoint BF16 de orcarouter/Qwen3.8-Flash-Next-Uncensored, en su revision e096800. Se trata de la variante de 3 bits de un pack hermano de 2bpw, y su proposito es ofrecer una version algo mas fiel del modelo original manteniendo la posibilidad de ejecutarse en hardware de consumo con memoria unificada.
+Qwen3.8-Flash-Next-Abliterated-Sushi-3bpw es una cuantizacion experimental en formato Sushi de 3 bits por peso (3bpw) de un derivado "abliterated" (sin rechazo) del modelo Qwen3.8-Flash-Next. Lo publica el usuario sanasol2008 en Hugging Face y parte del checkpoint BF16 de orcarouter/Qwen3.8-Flash-Next-Uncensored, en su revision e096800. Se trata de la variante de 3 bits de un pack hermano de 2bpw, y su proposito es ofrecer una version algo mas fiel del modelo original manteniendo la posibilidad de ejecutarse en hardware de consumo con memoria unificada.
 
 El modelo es un transformer de tipo MoE (mezcla de expertos) con capacidades multimodales de imagen a texto, segun indican los tags y el pipeline declarado. Cuenta con 28.849.143.699 parametros totales, un contexto configurado de hasta 262.144 tokens y un sidecar de n-gramas de 29,8 GiB que se apoya en disco. La cuantizacion solo afecta a los expertos enrutados (EXL3 K3, codebook MCG, ventana 15); el resto de componentes (tronco denso, torre de vision, tokenizer) es identico byte a byte al pack de 2bpw.
 
@@ -71,9 +71,9 @@ Mediciones realizadas en Apple M3 Max con 48 GiB de memoria unificada, contexto 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-Abliterated-Sushi-3bpw (este) | 28,85B | 262.144 | EXL3 K3 (3bpw) en expertos | Qwen Community License 1.0 | HuggingFace, formato Sushi, motor Sushi |
-| Qwen3.8-Flash-Next-Abliterated-Sushi-2bpw | no disponible | no disponible | EXL3 K2 (2bpw) en expertos | Qwen Community License 1.0 | HuggingFace, formato Sushi, motor Sushi |
-| orcarouter/Qwen3.8-Flash-Next-Uncensored | no disponible | no disponible | BF16 | no disponible | HuggingFace (checkpoint base) |
+| Qwen3.8-Flash-Next-Abliterated-Sushi-3bpw (este) | 28,85B | 262.144 | EXL3 K3 (3bpw) en expertos | Qwen Community License 1.0 | Hugging Face, formato Sushi, motor Sushi |
+| Qwen3.8-Flash-Next-Abliterated-Sushi-2bpw | no disponible | no disponible | EXL3 K2 (2bpw) en expertos | Qwen Community License 1.0 | Hugging Face, formato Sushi, motor Sushi |
+| orcarouter/Qwen3.8-Flash-Next-Uncensored | no disponible | no disponible | BF16 | no disponible | Hugging Face (checkpoint base) |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la informacion proporcionada, por lo que la comparacion se limita a parametros, cuantizacion y licencia.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanasol2008/Qwen3.8-Flash-Next-Abliterated-Sushi-3bpw
+- Modelo en Hugging Face: https://huggingface.co/sanasol2008/Qwen3.8-Flash-Next-Abliterated-Sushi-3bpw
 - Pack hermano de 2bpw: https://huggingface.co/sanasol2008/Qwen3.8-Flash-Next-Abliterated-Sushi-2bpw
 - Checkpoint base BF16: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - ExLlamaV3 (conversor base): https://github.com/turboderp-org/exllamav3

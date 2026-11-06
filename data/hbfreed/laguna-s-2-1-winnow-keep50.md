@@ -70,9 +70,9 @@ Es importante destacar que el resultado de HumanEval (89,6 %) no es comparable c
 
 | Modelo | Parametros | Contexto | HumanEval (protocolo propio) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Laguna-S-2.1 (base) | 118 B totales, 8 B activos | No especificado (probablemente >16k) | No reportado | OpenMDW-1.1 | HuggingFace |
-| Laguna-S-2.1-winnow-keep75 | 89,2 B | 16k (serving) | No reportado | OpenMDW-1.1 | HuggingFace |
-| **Laguna-S-2.1-winnow-keep50 (este)** | **60,8 B** | **16k (serving)** | **89,6 %** | OpenMDW-1.1 | HuggingFace |
+| Laguna-S-2.1 (base) | 118 B totales, 8 B activos | No especificado (probablemente >16k) | No reportado | OpenMDW-1.1 | Hugging Face |
+| Laguna-S-2.1-winnow-keep75 | 89,2 B | 16k (serving) | No reportado | OpenMDW-1.1 | Hugging Face |
+| **Laguna-S-2.1-winnow-keep50 (este)** | **60,8 B** | **16k (serving)** | **89,6 %** | OpenMDW-1.1 | Hugging Face |
 
 No se dispone de comparativas directas con otros modelos podados de la misma categoria (p. ej., podas REAP-style en MoE) en la informacion proporcionada.
 

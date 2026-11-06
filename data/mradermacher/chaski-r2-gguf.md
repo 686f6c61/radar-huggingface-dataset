@@ -98,7 +98,7 @@ No es posible comparar rendimiento de forma cuantitativa porque el modelo analiz
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/chaski-r2-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/chaski-r2-GGUF
 - Modelo base declarado: https://huggingface.co/SZLHOLDINGS/chaski-r2
 - Modelo subyacente del adaptador: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#chaski-r2-GGUF

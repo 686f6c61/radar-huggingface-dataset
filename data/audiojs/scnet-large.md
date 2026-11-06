@@ -102,7 +102,7 @@ No hay datos en la informacion proporcionada para comparar con otras familias de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/audiojs/scnet-large
+- Modelo en Hugging Face: https://huggingface.co/audiojs/scnet-large
 - Repositorio del autor de los pesos: https://github.com/starrytong/SCNet (MIT)
 - Confirmacion de licencia MIT de los pesos: https://github.com/starrytong/SCNet/issues/35#issuecomment-4999873539
 - Articulo SCNet (ICASSP 2024): https://arxiv.org/abs/2401.13276

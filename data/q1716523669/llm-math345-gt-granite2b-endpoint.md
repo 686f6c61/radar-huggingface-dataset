@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning del modelo `ibm-granite/granite-3.3-2b-instruct`, entrenado mediante GRPO (Group Relative Policy Optimization), una técnica de optimización por refuerzo introducida en el paper de DeepSeekMath. El autor, q1716523669, ha publicado el checkpoint en HuggingFace con el objetivo de mejorar las capacidades de razonamiento matemático y conversacional del modelo base de 2B parámetros de IBM. El entrenamiento se ha realizado con TRL, la librería de HuggingFace para fine-tuning con aprendizaje por refuerzo.
+Este modelo es un fine-tuning del modelo `ibm-granite/granite-3.3-2b-instruct`, entrenado mediante GRPO (Group Relative Policy Optimization), una técnica de optimización por refuerzo introducida en el paper de DeepSeekMath. El autor, q1716523669, ha publicado el checkpoint en Hugging Face con el objetivo de mejorar las capacidades de razonamiento matemático y conversacional del modelo base de 2B parámetros de IBM. El entrenamiento se ha realizado con TRL, la librería de Hugging Face para fine-tuning con aprendizaje por refuerzo.
 
 La relevancia de este modelo reside en que combina la eficiencia de un modelo de 2B parámetros, desplegable en hardware de consumo, con un entrenamiento específico para razonamiento matemático mediante GRPO, una técnica que ha demostrado mejorar la capacidad de resolver problemas de varios pasos en modelos pequeños. No se han publicado métricas de rendimiento en la información disponible, por lo que su eficacia real no puede verificarse con datos objetivos.
 
@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks para el modelo del autor, por lo que la com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/q1716523669/llm-math345-gt-granite2b-endpoint
+- Repositorio Hugging Face: https://huggingface.co/q1716523669/llm-math345-gt-granite2b-endpoint
 - Modelo base: https://huggingface.co/ibm-granite/granite-3.3-2b-instruct
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Repositorio TRL: https://github.com/huggingface/trl

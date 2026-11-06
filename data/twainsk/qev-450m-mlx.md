@@ -91,9 +91,9 @@ Otras medidas:
 
 | Modelo | Base | Parámetros | Idiomas | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| twainsk/qev-450m-mlx | LFM2.5-VL-450M | ~450 M + 24,5 M entrenados | en, zh | LFM Open License v1.0 | General 78,9%, Snake 98,8%, chino 94,0% | HuggingFace (mlx) |
-| twainsk/qev-0.8b-mlx | Qwen3.5-0.8B | ~0,8 B (no confirmado en detalle) | no disponible | no disponible | General +2,8 pt frente a Qev-450M; Snake paridad (p=0,63) | HuggingFace (mlx) |
-| twainsk/qev-230m-mlx | no disponible (compañero solo texto) | ~230 M | no disponible | no disponible | no disponible | HuggingFace (mlx) |
+| twainsk/qev-450m-mlx | LFM2.5-VL-450M | ~450 M + 24,5 M entrenados | en, zh | LFM Open License v1.0 | General 78,9%, Snake 98,8%, chino 94,0% | Hugging Face (mlx) |
+| twainsk/qev-0.8b-mlx | Qwen3.5-0.8B | ~0,8 B (no confirmado en detalle) | no disponible | no disponible | General +2,8 pt frente a Qev-450M; Snake paridad (p=0,63) | Hugging Face (mlx) |
+| twainsk/qev-230m-mlx | no disponible (compañero solo texto) | ~230 M | no disponible | no disponible | no disponible | Hugging Face (mlx) |
 
 Nota: los datos del checkpoint Qwen3.5-0.8B y del 230M provienen únicamente de las comparaciones publicadas en la model card; no se dispone de sus especificaciones completas.
 
@@ -111,7 +111,7 @@ Nota: los datos del checkpoint Qwen3.5-0.8B y del 230M provienen únicamente de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/twainsk/qev-450m-mlx
+- Repositorio Hugging Face: https://huggingface.co/twainsk/qev-450m-mlx
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-450M
 - Checkpoint compañero solo texto: https://huggingface.co/twainsk/qev-230m-mlx
 - Checkpoint anterior (Qwen3.5-0.8B): https://huggingface.co/twainsk/qev-0.8b-mlx

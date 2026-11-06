@@ -82,8 +82,8 @@ No se han identificado en la informacion proporcionada modelos abiertos comparab
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| enver/rootformer-v20.1-nrmt | no disponible | no disponible | acc@1 7,25 % (NOVEL, 20 k steps) | Apache 2.0 | HuggingFace |
-| enver/rootformer-v20 | no disponible | no disponible | backbone sin las cabezas NRMT | no disponible | HuggingFace |
+| enver/rootformer-v20.1-nrmt | no disponible | no disponible | acc@1 7,25 % (NOVEL, 20 k steps) | Apache 2.0 | Hugging Face |
+| enver/rootformer-v20 | no disponible | no disponible | backbone sin las cabezas NRMT | no disponible | Hugging Face |
 | Alternativas de terceros | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Para el resto de alternativas de la misma categoria: no disponible.
@@ -104,6 +104,6 @@ Para el resto de alternativas de la misma categoria: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/enver/rootformer-v20.1-nrmt
+- Modelo en Hugging Face: https://huggingface.co/enver/rootformer-v20.1-nrmt
 - Backbone predecesor v20: https://huggingface.co/enver/rootformer-v20
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados devueltos no guardan relacion con el modelo.

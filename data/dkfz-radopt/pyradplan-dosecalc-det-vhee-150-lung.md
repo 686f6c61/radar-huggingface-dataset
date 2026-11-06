@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Modalidad | Energía | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `pyRadPlan-dosecalc-Det-VHEE-150-lung` (este) | VHEE | 150 MeV | ConvBayes_new (determinista) | BSD-3-Clause | HuggingFace |
-| `pyRadPlan-dosecalc-Det-VHEE-100-lung` | VHEE | 100 MeV | ConvBayes_new (determinista) | BSD-3-Clause | HuggingFace (colección) |
-| `pyRadPlan-dosecalc-Det-VHEE-200-lung` | VHEE | 200 MeV | ConvBayes_new (determinista) | BSD-3-Clause | HuggingFace (colección) |
-| `pyRadPlan-dosecalc-Bayes-proton-lung` | Protones | no especificada | Bayes (probabilístico) | BSD-3-Clause | HuggingFace |
+| `pyRadPlan-dosecalc-Det-VHEE-150-lung` (este) | VHEE | 150 MeV | ConvBayes_new (determinista) | BSD-3-Clause | Hugging Face |
+| `pyRadPlan-dosecalc-Det-VHEE-100-lung` | VHEE | 100 MeV | ConvBayes_new (determinista) | BSD-3-Clause | Hugging Face (colección) |
+| `pyRadPlan-dosecalc-Det-VHEE-200-lung` | VHEE | 200 MeV | ConvBayes_new (determinista) | BSD-3-Clause | Hugging Face (colección) |
+| `pyRadPlan-dosecalc-Bayes-proton-lung` | Protones | no especificada | Bayes (probabilístico) | BSD-3-Clause | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. La comparación se limita a la modalidad, energía y tipo de arquitectura. Todos pertenecen a la misma colección de DKFZ-RadOpt y siguen el mismo contrato de integración con pyRadPlan.
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DKFZ-RadOpt/pyRadPlan-dosecalc-Det-VHEE-150-lung
+- Modelo en Hugging Face: https://huggingface.co/DKFZ-RadOpt/pyRadPlan-dosecalc-Det-VHEE-150-lung
 - Colección pyRadPlan-dosecalc: https://huggingface.co/collections/DKFZ-RadOpt/pyradplan-dosecalc
 - Documentación de pyRadPlan (cálculo de dosis): https://pyradplan.readthedocs.io/en/latest/user_guide/concepts/dose_calculation.html
 - Repositorio GitHub de pyRadPlan: https://github.com/e0404/pyRadPlan

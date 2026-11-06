@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xudongwu/SafeSelfPlay-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/xudongwu/SafeSelfPlay-checkpoints
 - GitHub del proyecto: https://github.com/xudongwu-0/SafeSelfPlay
 - Página personal del autor: https://xudongwu-0.github.io/
 - Colección oficial de Self-RedTeam: https://huggingface.co/collections/mickelliu/self-redteam-68f72b48c4beea864617fe4c

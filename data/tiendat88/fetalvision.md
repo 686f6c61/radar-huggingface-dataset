@@ -6,7 +6,7 @@ FetalVision es un modelo de clasificación de imágenes diseñado para detectar 
 
 La relevancia del modelo radica en su utilidad como control de calidad dentro de pipelines de análisis automático de ecografías: una vista no estándar puede provocar errores en la medición biométrica o en el diagnóstico si se procesa como un plano válido. FetalVision actúa como filtro previo para descartar estas imágenes antes de su análisis. La arquitectura combina un autoencoder con un clasificador latente y se presenta como un conjunto (ensemble) de tres semillas entrenadas de forma independiente, lo que mejora la robustez frente a la variabilidad propia de la imagen médica.
 
-Aunque el repositorio no incluye pesos preentrenados en formato HuggingFace (el tamaño del repositorio es 0.0 GB), la model card indica que los archivos de pesos se encuentran en el repositorio de código fuente. No se especifica el número total de parámetros ni la resolución de entrada, y el modelo está pensado para tareas de clasificación de imágenes, no para generación de texto.
+Aunque el repositorio no incluye pesos preentrenados en formato Hugging Face (el tamaño del repositorio es 0.0 GB), la model card indica que los archivos de pesos se encuentran en el repositorio de código fuente. No se especifica el número total de parámetros ni la resolución de entrada, y el modelo está pensado para tareas de clasificación de imágenes, no para generación de texto.
 
 ## Especificaciones técnicas
 
@@ -77,7 +77,7 @@ No se dispone de información sobre otros modelos con la misma finalidad especí
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tiendat88/FetalVision
+- Modelo en Hugging Face: https://huggingface.co/Tiendat88/FetalVision
 - Dataset (FETAL_PLANES_DB): https://huggingface.co/datasets/Tiendat88/FetalVision-Fetal-Planes
 - Código fuente: https://github.com/Tiendat88/FetalVision
 - DOI del dataset original: https://doi.org/10.5281/zenodo.3904280

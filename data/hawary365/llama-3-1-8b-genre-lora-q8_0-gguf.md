@@ -47,7 +47,7 @@ No hay informacion disponible sobre el numero de tokens de entrenamiento, la com
 - Intercambio rapido de variantes de estilo: al ser un delta de 0,1 GB, es viable mantener varios adaptadores GGUF y alternarlos en el mismo proceso de llama.cpp segun el tipo de contenido solicitado.
 - Investigacion sobre generalizacion de LoRA de bajo rango: con 41,9 millones de parametros entrenables sobre 8.030 millones totales (aproximadamente un 0,52 por ciento), es un caso util para estudiar cuanto comportamiento especifico puede capturarse con un delta minimo.
 - Base para experimentos de cuantizacion de adaptadores: comparar el adaptador Q8_0 en GGUF frente al adaptador original en safetensors para medir la degradacion introducida por la cuantizacion del propio delta.
-- Analisis de reproducibilidad en el ecosistema HuggingFace: el repositorio ilustra el caso de artefactos generados automaticamente con documentacion minima, util como ejemplo en guias sobre buenas practicas de model cards.
+- Analisis de reproducibilidad en el ecosistema Hugging Face: el repositorio ilustra el caso de artefactos generados automaticamente con documentacion minima, util como ejemplo en guias sobre buenas practicas de model cards.
 
 ## Benchmarks y rendimiento
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hawary365/llama-3.1-8b-genre-lora-Q8_0-GGUF (este) | 41,9 M en adaptador sobre 8 B | no disponible | GGUF (LoRA) | no disponible | HuggingFace, 0 descargas |
-| meta-llama/Meta-Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | safetensors, GGUF (comunidad) | Llama 3.1 Community License | HuggingFace, ampliamente desplegado |
-| Mistral-7B-Instruct-v0.3 | 7,25 B | 32.000 tokens | safetensors, GGUF | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct | 7,62 B | 128.000 tokens | safetensors, GGUF | Apache 2.0 (la mayoria de variantes) | HuggingFace |
+| Hawary365/llama-3.1-8b-genre-lora-Q8_0-GGUF (este) | 41,9 M en adaptador sobre 8 B | no disponible | GGUF (LoRA) | no disponible | Hugging Face, 0 descargas |
+| meta-llama/Meta-Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | safetensors, GGUF (comunidad) | Llama 3.1 Community License | Hugging Face, ampliamente desplegado |
+| Mistral-7B-Instruct-v0.3 | 7,25 B | 32.000 tokens | safetensors, GGUF | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct | 7,62 B | 128.000 tokens | safetensors, GGUF | Apache 2.0 (la mayoria de variantes) | Hugging Face |
 
 La comparacion directa de rendimiento no es posible: no hay benchmarks publicados de este adaptador, y su naturaleza (delta LoRA) hace que su comportamiento dependa enteramente del modelo base sobre el que se aplique.
 
@@ -87,7 +87,7 @@ La comparacion directa de rendimiento no es posible: no hay benchmarks publicado
 
 ## Enlaces
 
-- Repositorio HuggingFace de este adaptador: https://huggingface.co/Hawary365/llama-3.1-8b-genre-lora-Q8_0-GGUF
+- Repositorio Hugging Face de este adaptador: https://huggingface.co/Hawary365/llama-3.1-8b-genre-lora-Q8_0-GGUF
 - Adaptador original (referenciado en la model card): https://huggingface.co/Hawary365/llama-3.1-8b-genre-lora
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Espacio de conversion GGUF-my-lora: https://huggingface.co/spaces/ggml-org/gguf-my-lora

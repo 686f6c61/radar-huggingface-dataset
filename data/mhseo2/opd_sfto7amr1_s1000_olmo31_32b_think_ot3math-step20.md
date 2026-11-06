@@ -22,7 +22,7 @@ Es relevante ahora porque documenta una receta de destilación on-policy reprodu
 | Formato de pesos | safetensors, 4 shards (`model-00001-of-00004` … `model-00004-of-00004`) + `model.safetensors.index.json` |
 | Tokenizador | BPE con `tokenizer.json`, `vocab.json`, `merges.txt` y `chat_template.jinja` propios |
 | Tamaño del repositorio | 14,6 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Checkpoint | paso 20 del entrenamiento de destilación on-policy |
 
 ## Arquitectura y entrenamiento
@@ -81,9 +81,9 @@ No se dispone de datos de MMLU, GSM8K, HumanEval ni MATH para este checkpoint.
 
 | Modelo | Parámetros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`opd_...olmo31_32b_think_ot3math-step20`) | 7,3 B (denso) | no disponible | pendientes (AIME 2025/2026, HMMT Feb 2025) | Apache 2.0 | HuggingFace, 0 descargas, 0 likes, sin validación externa |
-| Student base (`sft_olmo3base7b_amr1_0528_math_n204800-step1000`) | 7,3 B (denso) | no disponible | no disponible | no disponible en la información (el modelo publicado declara Apache 2.0) | HuggingFace |
-| Profesor (`allenai/Olmo-3.1-32B-Think`) | 32 B (según denominación del autor) | no disponible | no disponible | no disponible en la información | HuggingFace (revisión `97ade57a9cc5`) |
+| Este modelo (`opd_...olmo31_32b_think_ot3math-step20`) | 7,3 B (denso) | no disponible | pendientes (AIME 2025/2026, HMMT Feb 2025) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes, sin validación externa |
+| Student base (`sft_olmo3base7b_amr1_0528_math_n204800-step1000`) | 7,3 B (denso) | no disponible | no disponible | no disponible en la información (el modelo publicado declara Apache 2.0) | Hugging Face |
+| Profesor (`allenai/Olmo-3.1-32B-Think`) | 32 B (según denominación del autor) | no disponible | no disponible | no disponible en la información | Hugging Face (revisión `97ade57a9cc5`) |
 
 Otras alternativas del nicho (destilados de razonamiento matemático de ~7 B, tipo DeepSeek-R1-Distill-Qwen-7B o Qwen2.5-Math-7B) no se incluyen con cifras porque no se dispone de sus datos verificados en la información suministrada; una comparación rigurosa exigiría además las métricas pendientes de este checkpoint.
 
@@ -103,7 +103,7 @@ Otras alternativas del nicho (destilados de razonamiento matemático de ~7 B, ti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/opd_sfto7amr1_s1000_olmo31_32b_think_ot3math-step20
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/opd_sfto7amr1_s1000_olmo31_32b_think_ot3math-step20
 - Student base: https://huggingface.co/mhseo2/sft_olmo3base7b_amr1_0528_math_n204800-step1000
 - Profesor (destilación): https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Dataset de prompts: OpenThoughts3 (matemáticas, 53.105 preguntas sin respuestas), citado en la model card; no se incluye URL en la información disponible.

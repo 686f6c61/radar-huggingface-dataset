@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| imwendytanaka/vit-matching | 16.576 (segun safetensors) | no disponible | sin benchmarks | MIT | HuggingFace, experimental |
+| imwendytanaka/vit-matching | 16.576 (segun safetensors) | no disponible | sin benchmarks | MIT | Hugging Face, experimental |
 | ViT-tiny (referencia generica) | ~5-6 M | no aplica (vision) | depende del entrenamiento | variable | ampliamente disponible |
-| DeiT-tiny | ~5-6 M | no aplica (vision) | benchmarks publicados en ImageNet | variable | HuggingFace |
-| CLIP ViT-B/32 | ~88 M | no aplica (vision-texto) | benchmarks publicados | MIT (segun variante) | HuggingFace |
+| DeiT-tiny | ~5-6 M | no aplica (vision) | benchmarks publicados en ImageNet | variable | Hugging Face |
+| CLIP ViT-B/32 | ~88 M | no aplica (vision-texto) | benchmarks publicados | MIT (segun variante) | Hugging Face |
 
 La comparativa es orientativa: no hay datos de rendimiento del modelo evaluado, por lo que no puede establecerse una comparacion cuantitativa.
 
@@ -92,5 +92,5 @@ La comparativa es orientativa: no hay datos de rendimiento del modelo evaluado, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/imwendytanaka/vit-matching
+- Hugging Face: https://huggingface.co/imwendytanaka/vit-matching
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

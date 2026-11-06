@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Waldito python basics v1 (identificador completo `mdagosta/waldito-python-basics-v1-r0006-u1-mdagosta`) es un modelo de generacion de texto de 9.541.632 parametros publicado por el usuario mdagosta en HuggingFace. Se trata de un export del proyecto OpenWALDO, construido sobre la arquitectura Llama causal estandar de la libreria Transformers, es decir, un transformer decoder-only con atencion causal clasica. Su rasgo mas distintivo no es el tamano, extremadamente reducido (menos de 10 millones de parametros), sino el tokenizador: emplea un esquema propio de tokenizacion por bytes (schema-1) que obliga a cargarlo con `trust_remote_code=True`.
+Waldito python basics v1 (identificador completo `mdagosta/waldito-python-basics-v1-r0006-u1-mdagosta`) es un modelo de generacion de texto de 9.541.632 parametros publicado por el usuario mdagosta en Hugging Face. Se trata de un export del proyecto OpenWALDO, construido sobre la arquitectura Llama causal estandar de la libreria Transformers, es decir, un transformer decoder-only con atencion causal clasica. Su rasgo mas distintivo no es el tamano, extremadamente reducido (menos de 10 millones de parametros), sino el tokenizador: emplea un esquema propio de tokenizacion por bytes (schema-1) que obliga a cargarlo con `trust_remote_code=True`.
 
 El modelo se presenta como un artefacto de investigacion mas que como un producto listo para produccion. No declara licencia, no declara idiomas soportados y no publica resultados de benchmarks. El repositorio incluye los ficheros `BOM.json` (inventario de todos los ficheros de la release) y `EU-BOM.json` (mapeo de divulgacion de contenido de entrenamiento orientado al reglamento europeo de GPAI), lo que sugiere que el objetivo del autor es la trazabilidad y la reproducibilidad de la cadena de entrenamiento distribuido mas que el rendimiento bruto.
 
@@ -23,7 +23,7 @@ Es relevante ahora como ejemplo de dos tendencias: por un lado, la publicacion d
 | Tokenizador | esquema propio por bytes (schema-1) de OpenWALDO; requiere `trust_remote_code=True` |
 | Pipeline declarado | text-generation |
 | Libreria | transformers |
-| Tamano del repositorio | 0,0 GB (segun la ficha de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun la ficha de Hugging Face) |
 | Fecha de creacion | 2026-09-30 |
 | Fecha de actualizacion | 2026-09-30 |
 | Descargas / valoraciones | 0 / 0 |
@@ -42,7 +42,7 @@ Los ficheros `BOM.json` y `EU-BOM.json` apuntan a un flujo de trabajo centrado e
 - Generacion de texto autoregresiva basica, coherente con la etiqueta `text-generation` del pipeline.
 - Uso conversacional declarado en las etiquetas del repositorio (`conversational`), sin que se documente ningun formato de plantilla de chat ni ningun ajuste por instrucciones.
 - Codificacion y decodificacion completas sobre cualquier secuencia de bytes, gracias al tokenizador schema-1: no hay caracteres fuera de vocabulario, ni en idiomas minoritarios ni en codigo fuente.
-- Compatibilidad con `text-generation-inference` y con `endpoints_compatible` segun las etiquetas, lo que indica que el artefacto puede desplegarse en infraestructura de inferencia estandar de HuggingFace.
+- Compatibilidad con `text-generation-inference` y con `endpoints_compatible` segun las etiquetas, lo que indica que el artefacto puede desplegarse en infraestructura de inferencia estandar de Hugging Face.
 - Trazabilidad de la release mediante inventario BOM y divulgacion de contenido de entrenamiento en formato EU GPAI.
 - No hay evidencia publicada de razonamiento multi-paso, tool calling o function calling, capacidades de codigo medidas, matematicas, vision, audio ni modo de pensamiento explicito. El nombre del modelo apunta a Python, pero no se aportan datos que lo respalden.
 
@@ -87,7 +87,7 @@ Unicamente puede afirmarse, con los datos disponibles, que se trata de un modelo
 - Sesgos conocidos: no documentados. Un modelo de 9,5 millones de parametros entrenado sobre un corpus no divulgado hereda los sesgos de ese corpus, pero el autor no publica ni la composicion del dataset ni evaluaciones al respecto.
 - Riesgo de alucinacion: muy alto. Con este numero de parametros la capacidad de mantener coherencia factual es minima, y la generacion debe considerarse no fiable para cualquier uso informativo.
 - Limitaciones de contexto e idioma: no se declara la longitud de contexto ni los idiomas soportados. El tokenizador por bytes garantiza cobertura de cualquier idioma a nivel de codificacion, pero eso no implica competencia linguistica real.
-- Licencia: no disponible. Al no especificarse licencia, no hay autorizacion explicita de uso comercial ni de redistribucion; en la practica, el modelo se distribuye bajo el regimen por defecto de HuggingFace, sin garantias. Cualquier uso en produccion o en productos comerciales requiere aclarar antes los terminos con el autor.
+- Licencia: no disponible. Al no especificarse licencia, no hay autorizacion explicita de uso comercial ni de redistribucion; en la practica, el modelo se distribuye bajo el regimen por defecto de Hugging Face, sin garantias. Cualquier uso en produccion o en productos comerciales requiere aclarar antes los terminos con el autor.
 - Riesgo de seguridad en la carga: el tokenizador exige `trust_remote_code=True`, lo que implica ejecutar codigo Python publicado en el repositorio. Debe auditarse el fichero de tokenizacion antes de cargarlo en entornos con acceso a datos sensibles o a red.
 - Idoneidad para produccion: nula en tareas de generacion abierta. No debe emplearse en atencion al cliente, generacion de codigo, resumen, traduccion ni ninguna aplicacion donde la calidad del texto sea un requisito.
 - Documentacion incompleta: no hay ficha de modelo detallada, ni hiperparametros, ni detalles de entrenamiento, ni cartilla de evaluacion. Los ficheros `BOM.json` y `EU-BOM.json` estan orientados a procedencia, no a rendimiento.
@@ -96,7 +96,7 @@ Unicamente puede afirmarse, con los datos disponibles, que se trata de un modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0006-u1-mdagosta
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0006-u1-mdagosta
 - Version previa del mismo autor: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta
 - Repositorio del proyecto (trazabilidad de preentrenamiento distribuido): https://github.com/mdagosta/waldo-builds/blob/main/README.md
 - Paper: no disponible

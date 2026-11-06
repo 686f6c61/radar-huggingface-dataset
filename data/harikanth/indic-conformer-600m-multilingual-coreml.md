@@ -104,7 +104,7 @@ No se dispone de datos comparativos de WER entre estos modelos en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harikanth/indic-conformer-600m-multilingual-coreml
+- Modelo en Hugging Face: https://huggingface.co/harikanth/indic-conformer-600m-multilingual-coreml
 - Modelo base: https://huggingface.co/ai4bharat/indic-conformer-600m-multilingual
 - Repositorio IndicConformerASR (AI4Bharat): https://github.com/AI4Bharat/IndicConformerASR
 - AI4Bharat (IIT Madras): https://ai4bharat.iitm.ac.in/

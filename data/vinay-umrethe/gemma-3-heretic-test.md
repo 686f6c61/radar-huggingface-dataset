@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`VINAY-UMRETHE/gemma-3-heretic-test` es un modelo de prueba publicado en HuggingFace por el usuario VINAY-UMRETHE. No se trata de un modelo entrenado ni funcional, sino de una versión "abliterada" (decensurada) del checkpoint `tiny-random/gemma-3`, un modelo de depuración con pesos inicializados aleatoriamente y una configuración derivada de `google/gemma-3-27b-it` reducida a proporciones mínimas.
+`VINAY-UMRETHE/gemma-3-heretic-test` es un modelo de prueba publicado en Hugging Face por el usuario VINAY-UMRETHE. No se trata de un modelo entrenado ni funcional, sino de una versión "abliterada" (decensurada) del checkpoint `tiny-random/gemma-3`, un modelo de depuración con pesos inicializados aleatoriamente y una configuración derivada de `google/gemma-3-27b-it` reducida a proporciones mínimas.
 
 El modelo se ha generado con la herramienta Heretic v2.0.0, que aplica una técnica de ablación de rangos arbitrarios (Arbitrary-Rank Ablation, ARA) sobre las capas 0 a 2 del transformer. El objetivo declarado es servir como ejemplo reproducible de un proceso de "decensurado" sobre un modelo multimodal Gemma 3, no ofrecer capacidades reales de generación.
 
@@ -93,7 +93,7 @@ La comparación relevante es con `tiny-random/gemma-3` (su base directa) y con `
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VINAY-UMRETHE/gemma-3-heretic-test
+- Modelo en Hugging Face: https://huggingface.co/VINAY-UMRETHE/gemma-3-heretic-test
 - Modelo base: https://huggingface.co/tiny-random/gemma-3
 - Modelo de origen de la configuración: https://huggingface.co/google/gemma-3-27b-it
 - Heretic (proyecto): https://heretic-project.org

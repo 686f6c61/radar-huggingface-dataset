@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ramaezh/medgemma-1.5-4b-it-ov-int4 | ~4B | no disponible | OpenVINO INT4 | Apache 2.0 | HuggingFace (0 descargas) |
-| MedGemma 1.5 4B IT (original) | ~4B | no disponible | safetensors | Apache 2.0 (según modelo base) | HuggingFace (oficial) |
-| Gemma 3 4B IT | ~4B | hasta 128k (texto) | safetensors, GGUF | Gemma license | HuggingFace, Ollama, llama.cpp |
-| Qwen2.5-VL 3B | ~3B | 32k | safetensors, GGUF | Apache 2.0 | HuggingFace, Ollama |
+| ramaezh/medgemma-1.5-4b-it-ov-int4 | ~4B | no disponible | OpenVINO INT4 | Apache 2.0 | Hugging Face (0 descargas) |
+| MedGemma 1.5 4B IT (original) | ~4B | no disponible | safetensors | Apache 2.0 (según modelo base) | Hugging Face (oficial) |
+| Gemma 3 4B IT | ~4B | hasta 128k (texto) | safetensors, GGUF | Gemma license | Hugging Face, Ollama, llama.cpp |
+| Qwen2.5-VL 3B | ~3B | 32k | safetensors, GGUF | Apache 2.0 | Hugging Face, Ollama |
 
 La comparativa con el original y con Gemma 3 4B IT es la más directa; la principal diferencia es el formato OpenVINO y la cuantización INT4, que sacrifica portabilidad (no funciona en llama.cpp) a cambio de eficiencia en hardware Intel.
 
@@ -86,7 +86,7 @@ La comparativa con el original y con Gemma 3 4B IT es la más directa; la princi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ramaezh/medgemma-1.5-4b-it-ov-int4
+- Repositorio Hugging Face: https://huggingface.co/ramaezh/medgemma-1.5-4b-it-ov-int4
 - Modelo base MedGemma (Google): https://huggingface.co/google/medgemma-4b-it
 - Documentación OpenVINO: https://docs.openvino.ai
 - OpenVINO GenAI: https://github.com/openvinotoolkit/openvino.genai

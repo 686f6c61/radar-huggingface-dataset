@@ -75,10 +75,10 @@ Nota: la tabla de la model card aparece truncada en el punto correspondiente a M
 
 | Modelo | Parametros | Contexto | Licencia | Vision | Disponibilidad |
 |---|---|---|---|---|---|
-| Ministral 3 8B Instruct 2512 | 8,9B (8,4B LM + 0,4B vision) | 256k | Apache 2.0 | Si | HuggingFace |
-| Qwen3-VL-8B-Thinking | no disponible | no disponible | no disponible | Si | HuggingFace |
-| Qwen3-14B (Thinking) | 14B (aproximado, no confirmado en la informacion) | no disponible | no disponible | no disponible | HuggingFace |
-| Ministral 3 14B | no disponible (mayor que 8B) | 256k (misma familia) | Apache 2.0 | Si | HuggingFace |
+| Ministral 3 8B Instruct 2512 | 8,9B (8,4B LM + 0,4B vision) | 256k | Apache 2.0 | Si | Hugging Face |
+| Qwen3-VL-8B-Thinking | no disponible | no disponible | no disponible | Si | Hugging Face |
+| Qwen3-14B (Thinking) | 14B (aproximado, no confirmado en la informacion) | no disponible | no disponible | no disponible | Hugging Face |
+| Ministral 3 14B | no disponible (mayor que 8B) | 256k (misma familia) | Apache 2.0 | Si | Hugging Face |
 
 Los datos de contexto, licencia y disponibilidad de los modelos Qwen no se detallan en la informacion proporcionada, por lo que se marcan como no disponibles. La comparativa de rendimiento se limita a los benchmarks recogidos en la seccion anterior.
 
@@ -96,7 +96,7 @@ Los datos de contexto, licencia y disponibilidad de los modelos Qwen no se detal
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512
+- Hugging Face del modelo: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512
 - Paper: https://arxiv.org/abs/2601.08584
 - Blog de Mistral AI sobre la familia Mistral 3: https://mistral.ai/news/mistral-3
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-8B-Base-2512

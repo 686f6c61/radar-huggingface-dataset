@@ -2,7 +2,7 @@
 
 ## Resumen
 
-breakit-2b es un modelo de lenguaje de 1.881.825.088 parametros (aproximadamente 1,88 mil millones) desarrollado por el usuario e12ex2 (Neil Bauman) y publicado en HuggingFace bajo licencia Apache 2.0. No es un modelo de proposito general: es un atacante especializado en busqueda de fallos. Su tarea concreta consiste en leer un programa en C que pasa todas las pruebas de ejemplo y proponer entradas de test que hagan que el programa imprima una respuesta incorrecta. El modelo no necesita conocer la solucion correcta, solo intentar refutar el programa; cada conjetura se verifica ejecutandola.
+breakit-2b es un modelo de lenguaje de 1.881.825.088 parametros (aproximadamente 1,88 mil millones) desarrollado por el usuario e12ex2 (Neil Bauman) y publicado en Hugging Face bajo licencia Apache 2.0. No es un modelo de proposito general: es un atacante especializado en busqueda de fallos. Su tarea concreta consiste en leer un programa en C que pasa todas las pruebas de ejemplo y proponer entradas de test que hagan que el programa imprima una respuesta incorrecta. El modelo no necesita conocer la solucion correcta, solo intentar refutar el programa; cada conjetura se verifica ejecutandola.
 
 Tecnicamente es un fine-tune del modelo base Qwen/Qwen3.5-2B-Base, entrenado con LoRA y posteriormente fusionado, sobre aproximadamente 6.800 pares verificados de (programa incorrecto, entrada que lo rompe), cada uno acompanado de una explicacion del bug en una linea. El dataset asociado es e12ex2/breakit-data. El modelo hereda la arquitectura de texto de la familia Qwen3.5, aunque la model card no detalla numero de capas, mecanismo de atencion ni longitud de contexto entrenada.
 
@@ -80,7 +80,7 @@ No se conocen modelos de proposito general comparables: breakit-2b es un atacant
 
 | Modelo | Parametros | Enfoque | 5 conjeturas | 50 conjeturas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| breakit-2b | 1,88 mil millones | Fine-tune de Qwen3.5-2B para falsar programas en C | 27,7% | 69,9% | Apache 2.0 | Pesos abiertos en HuggingFace |
+| breakit-2b | 1,88 mil millones | Fine-tune de Qwen3.5-2B para falsar programas en C | 27,7% | 69,9% | Apache 2.0 | Pesos abiertos en Hugging Face |
 | Claude Opus | No disponible | Modelo frontera propietario de uso general | 83,1% | No disponible | Propietaria | Solo API |
 | gpt-6-luna | No disponible | Modelo frontera propietario de uso general | 83,1% | No disponible | Propietaria | Solo API |
 | Qwen3.5-0.8B, misma receta sin explicaciones de bug | 0,8 mil millones (aproximado, no confirmado) | Fine-tune especializado con receta ablacionada | 24,1% | 68,7% | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
@@ -105,9 +105,9 @@ Un detalle relevante de la tabla es que el Qwen3.5-0.8B-Base sin entrenar obtien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/e12ex2/breakit-2b
+- Modelo en Hugging Face: https://huggingface.co/e12ex2/breakit-2b
 - Dataset de entrenamiento: https://huggingface.co/datasets/e12ex2/breakit-data
-- Perfil del autor en HuggingFace: https://huggingface.co/e12ex2
+- Perfil del autor en Hugging Face: https://huggingface.co/e12ex2
 - Ficha del autor en LLM Explorer: https://llm-explorer.com/list/?mtr=e12ex2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - No se han encontrado en la busqueda web papers, blogs tecnicos ni repositorios de codigo asociados especificamente a breakit-2b.

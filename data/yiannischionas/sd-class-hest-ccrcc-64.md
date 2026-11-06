@@ -77,7 +77,7 @@ No disponible. La información proporcionada no incluye modelos comparables de d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YiannisChionas/sd-class-hest-ccrcc-64
+- Modelo en Hugging Face: https://huggingface.co/YiannisChionas/sd-class-hest-ccrcc-64
 - Dataset HEST-1k benchmark: https://huggingface.co/datasets/MahmoodLab/hest-bench
 - Librería diffusers (documentación de `DDPMPipeline`): https://huggingface.co/docs/diffusers/api/pipelines/ddpm
 - Librería diffusers (repositorio): https://github.com/huggingface/diffusers

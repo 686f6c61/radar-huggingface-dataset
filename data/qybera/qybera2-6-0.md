@@ -34,7 +34,7 @@ Al ser un modelo de 0.5B, su capacidad de razonamiento complejo es limitada, per
 - Explicación de conceptos técnicos (APIs, machine learning, bases de datos) de forma simplificada.
 - Soporte para tareas de planificación y motivación personal.
 - Capacidad multilingüe limitada: principalmente inglés, con expresiones en keniano (swahili/sheng) integradas de forma natural.
-- Según fuentes externas (Antbase), el modelo podría soportar function calling, aunque esta capacidad no está confirmada en la documentación oficial de HuggingFace.
+- Según fuentes externas (Antbase), el modelo podría soportar function calling, aunque esta capacidad no está confirmada en la documentación oficial de Hugging Face.
 
 ## Casos de uso
 
@@ -78,7 +78,7 @@ La comparativa se basa en características estructurales, ya que no hay datos de
 
 ## Enlaces
 
-- [HuggingFace - Qybera/qybera2.6-0](https://huggingface.co/Qybera/qybera2.6-0)
-- [Perfil de Qybera en HuggingFace](https://huggingface.co/Qybera)
+- [Hugging Face - Qybera/qybera2.6-0](https://huggingface.co/Qybera/qybera2.6-0)
+- [Perfil de Qybera en Hugging Face](https://huggingface.co/Qybera)
 - [Qybera/Qybera2.6-0.5-instruct (posible variante)](https://huggingface.co/Qybera/Qybera2.6-0.5-instruct)
 - [Ficha en Antbase (fuente externa)](https://antbase.ai/models/qybera2-6-0-5-instruct)

@@ -67,7 +67,7 @@ No se dispone de datos comparativos fiables. El modelo parece similar en tamaño
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Orion-26B-A4B-v1-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Orion-26B-A4B-v1-GGUF
 - Modelo original (TheDrummer): https://huggingface.co/TheDrummer/Orion-26B-A4B-v1
 - Resultado de búsqueda relacionado (BeaverAI, variante v1a): https://huggingface.co/BeaverAI/Orion-26B-A4B-v1a-GGUF
 - Resultado de búsqueda relacionado (Gemma 4 26B A4B, similar): https://lmstudio.ai/models/google/gemma-4-26b-a4b

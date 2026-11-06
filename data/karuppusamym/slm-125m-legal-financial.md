@@ -93,7 +93,7 @@ La comparativa directa con modelos generales de tamano similar (Pythia-160M) o m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/karuppusamym/slm-125m-legal-financial
+- Modelo en Hugging Face: https://huggingface.co/karuppusamym/slm-125m-legal-financial
 - Repositorio GitHub (proyecto completo): https://github.com/mcrao/legal-slm-125M
 - Demo web del proyecto: https://slm125m.vercel.app/
 - Demo del fine-tuned SFT: https://legal-slm-125.vercel.app/

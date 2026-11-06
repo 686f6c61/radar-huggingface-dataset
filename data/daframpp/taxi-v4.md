@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Taxi-v4 es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario Daframpp bajo el identificador Daframpp/Taxi-v4. No se trata de un modelo de lenguaje ni de una red neuronal profunda: es una implementacion tabular de Q-learning entrenada sobre el entorno Taxi-v3 de Gym/Gymnasium, distribuida como un unico fichero pickle (q-learning.pkl) que contiene la tabla Q y los metadatos necesarios para reconstruir el entorno con el que fue entrenada.
+Taxi-v4 es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario Daframpp bajo el identificador Daframpp/Taxi-v4. No se trata de un modelo de lenguaje ni de una red neuronal profunda: es una implementacion tabular de Q-learning entrenada sobre el entorno Taxi-v3 de Gym/Gymnasium, distribuida como un unico fichero pickle (q-learning.pkl) que contiene la tabla Q y los metadatos necesarios para reconstruir el entorno con el que fue entrenada.
 
 El modelo resuelve la tarea clasica de recogida y entrega de pasajeros: un taxi debe recoger a un pasajero en una de las cuatro ubicaciones del mapa y dejarlo en el destino correcto, con un espacio de estados discreto y seis acciones posibles (moverse en cuatro direcciones, recoger y dejar pasajero). Es relevante como pieza docente y de referencia: sirve para reproducir resultados basicos de Q-learning, comparar contra otros algoritmos de RL tabular o profundo, y validar infraestructuras de evaluacion de agentes en un entorno barato de ejecutar.
 
@@ -73,7 +73,7 @@ No se dispone de datos verificados de otros agentes publicados comparables. La t
 
 | Modelo / enfoque | Parametros | Contexto | Rendimiento en Taxi-v3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Daframpp/Taxi-v4 (Q-learning tabular) | Tabla Q de hasta 3000 entradas | No aplica | mean_reward 7.38 +/- 2.87 (no verificado) | No disponible | HuggingFace, 0 descargas, 0 likes |
+| Daframpp/Taxi-v4 (Q-learning tabular) | Tabla Q de hasta 3000 entradas | No aplica | mean_reward 7.38 +/- 2.87 (no verificado) | No disponible | Hugging Face, 0 descargas, 0 likes |
 | DQN sobre Taxi-v3 | No disponible | No aplica | No disponible | No disponible | No disponible |
 | SARSA tabular sobre Taxi-v3 | No disponible | No aplica | No disponible | No disponible | No disponible |
 | Metodos de gradiente de politica sobre Taxi-v3 | No disponible | No aplica | No disponible | No disponible | No disponible |
@@ -95,7 +95,7 @@ Tampoco se han encontrado en la busqueda web referencias a este modelo, a su aut
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Daframpp/Taxi-v4
+- Hugging Face: https://huggingface.co/Daframpp/Taxi-v4
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible
 - Repositorio de codigo: no disponible

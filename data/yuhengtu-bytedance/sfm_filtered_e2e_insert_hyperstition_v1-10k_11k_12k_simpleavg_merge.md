@@ -93,7 +93,7 @@ Al no declararse contexto ni licencia, la comparación se limita a parámetros, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-10k_11k_12k_simpleavg_merge
+- Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-10k_11k_12k_simpleavg_merge
 - mergekit (herramienta de fusión): https://github.com/cg123/mergekit
 - Artículo referenciado por el método Linear (Model soups): https://arxiv.org/abs/2203.05482
 - Nota: la búsqueda web no devolvió papers, blogs, repositorios ni demos asociados a este modelo; los únicos resultados obtenidos corresponden a manuales de maquinaria (Grove GRT8100) sin relación con el repositorio.

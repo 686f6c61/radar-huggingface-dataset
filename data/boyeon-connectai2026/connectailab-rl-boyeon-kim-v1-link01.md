@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LINK-01 es un adaptador LoRA sobre el modelo base Qwen/Qwen3.5-0.8B, publicado por boyeon-connectai2026 dentro del ecosistema CONNECT AI LAB / AI CITY BUILDERS. No es un modelo de lenguaje de propósito general, sino un modelo de decisión para robótica: recibe en texto el estado de un robot LINK-01 (distancia y dirección al objetivo, sensores de distancia, velocidad y última elección) y devuelve una única letra correspondiente a la siguiente acción de caminata durante los próximos 0,5 segundos. El pipeline declarado en HuggingFace es `reinforcement-learning` y la librería es `peft`.
+LINK-01 es un adaptador LoRA sobre el modelo base Qwen/Qwen3.5-0.8B, publicado por boyeon-connectai2026 dentro del ecosistema CONNECT AI LAB / AI CITY BUILDERS. No es un modelo de lenguaje de propósito general, sino un modelo de decisión para robótica: recibe en texto el estado de un robot LINK-01 (distancia y dirección al objetivo, sensores de distancia, velocidad y última elección) y devuelve una única letra correspondiente a la siguiente acción de caminata durante los próximos 0,5 segundos. El pipeline declarado en Hugging Face es `reinforcement-learning` y la librería es `peft`.
 
 El modelo se construye en cuatro fases: primero se entrena una política PPO en un entorno web de aprendizaje (el "cerebro" o `brain.json`) para la tarea `choose_object`; después se genera un conjunto de problemas convirtiendo cada observación del robot en texto, con la respuesta del cerebro como etiqueta (incluyendo un 20% de casos en los que el cerebro se desvió); a continuación se hace aprendizaje supervisado con LoRA sobre Qwen3.5-0.8B; y finalmente se aplica una fase de refuerzo con PPO y anclaje KL para subir la probabilidad de las opciones que obtuvieron mejor recompensa que la respuesta del cerebro.
 
@@ -71,8 +71,8 @@ El autor indica que la métrica de caminata se calcula con una tabla de velocida
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-boyeon-kim-v1-link01 | 0,8B base + LoRA | No disponible | Decisión robótica por lenguaje (destilación de PPO) | Apache 2.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| Qwen/Qwen3.5-0.8B | 0,8B | No disponible | LLM generalista | No disponible en la información | HuggingFace |
+| connectailab-rl-boyeon-kim-v1-link01 | 0,8B base + LoRA | No disponible | Decisión robótica por lenguaje (destilación de PPO) | Apache 2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| Qwen/Qwen3.5-0.8B | 0,8B | No disponible | LLM generalista | No disponible en la información | Hugging Face |
 | Política PPO "cerebro" (brain.json) | No disponible | No aplica | Política de refuerzo nativa del simulador | No disponible | Incluida en el flujo del proyecto CONNECT TYCOON |
 
 No se dispone de información sobre otros adaptadores de decisión robótica comparables en la documentación proporcionada.
@@ -91,7 +91,7 @@ No se dispone de información sobre otros adaptadores de decisión robótica com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/boyeon-connectai2026/connectailab-rl-boyeon-kim-v1-link01
+- Hugging Face: https://huggingface.co/boyeon-connectai2026/connectailab-rl-boyeon-kim-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

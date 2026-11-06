@@ -92,7 +92,7 @@ La diferencia principal frente al paquete de `jeswinjestin` es el recorte de voc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/akm9191/sherpa-onnx-indicconformer-ml-int8
+- Repositorio Hugging Face: https://huggingface.co/akm9191/sherpa-onnx-indicconformer-ml-int8
 - Modelo base: https://huggingface.co/ai4bharat/indicconformer_stt_ml_hybrid_ctc_rnnt_large
 - Repositorio de AI4Bharat: https://github.com/AI4Bharat/IndicConformerASR
 - Conversión ONNX de origen: https://huggingface.co/jeswinjestin/sherpa-onnx-nemo-ctc-indicconformer-malayalam

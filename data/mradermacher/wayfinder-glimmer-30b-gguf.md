@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wayfinder-glimmer-30b es un modelo de lenguaje publicado por el usuario hweller1 en HuggingFace, del que esta ficha describe la versión cuantizada en formato GGUF preparada por mradermacher. El repositorio contiene únicamente los pesos convertidos a GGUF mediante la herramienta de cuantización de llama.cpp, con el objetivo de facilitar la inferencia local en hardware de consumo. La model card original no aporta información sobre arquitectura, datos de entrenamiento ni capacidades, y la información disponible se limita a los metadatos técnicos del proceso de conversión.
+Wayfinder-glimmer-30b es un modelo de lenguaje publicado por el usuario hweller1 en Hugging Face, del que esta ficha describe la versión cuantizada en formato GGUF preparada por mradermacher. El repositorio contiene únicamente los pesos convertidos a GGUF mediante la herramienta de cuantización de llama.cpp, con el objetivo de facilitar la inferencia local en hardware de consumo. La model card original no aporta información sobre arquitectura, datos de entrenamiento ni capacidades, y la información disponible se limita a los metadatos técnicos del proceso de conversión.
 
 El dato más relevante es la discrepancia entre el nombre del modelo (que sugiere 30 mil millones de parámetros) y el recuento real de parámetros en safetensors, que asciende a 1.920.942.592 (aproximadamente 1,92 mil millones). Esta diferencia indica que el nombre comercial no refleja el tamaño real del modelo, un detalle crítico para cualquier evaluación de requisitos de hardware o rendimiento. El repositorio ocupa 5,9 GB y contiene múltiples niveles de cuantización.
 

@@ -23,7 +23,7 @@ Su relevancia radica en la combinación de un tamaño muy reducido (1.543.714.30
 
 El modelo parte de Qwen2.5-1.5B, un transformer decoder denso (no MoE) de la familia Qwen de Alibaba. Sobre él se aplicó un ajuste fino eficiente en parámetros mediante QLoRA, utilizando el framework Unsloth, que optimiza la velocidad y el consumo de memoria durante el entrenamiento de LoRA. El dataset de entrenamiento es theatticusproject/cuad (CUAD), un conjunto de datos anotado por abogados con más de 500 contratos comerciales etiquetados según 41 tipos de cláusulas legales relevantes, diseñado para tareas de comprensión y extracción contractual.
 
-El resultado es un modelo afinado para salida estructurada (JSON) en tareas de información extraction sobre texto legal. No se dispone de información sobre el número exacto de tokens de entrenamiento, hiperparámetros concretos ni procesos posteriores tipo RLHF o DPO. Este repositorio de mradermacher añade únicamente cuantizaciones estáticas GGUF (conversión desde los pesos originales en HuggingFace), sin cuantizaciones weighted/imatrix disponibles en el momento de publicación.
+El resultado es un modelo afinado para salida estructurada (JSON) en tareas de información extraction sobre texto legal. No se dispone de información sobre el número exacto de tokens de entrenamiento, hiperparámetros concretos ni procesos posteriores tipo RLHF o DPO. Este repositorio de mradermacher añade únicamente cuantizaciones estáticas GGUF (conversión desde los pesos originales en Hugging Face), sin cuantizaciones weighted/imatrix disponibles en el momento de publicación.
 
 ## Capacidades
 
@@ -75,7 +75,7 @@ Frente al modelo base Qwen2.5-1.5B, esta variante aporta especialización en el 
 - Las cuantizaciones bajas (Q2_K, Q3_K_S/M) pueden degradar la calidad de la salida estructurada JSON; se recomienda Q4_K_M o superior para producción.
 - No hay benchmarks publicados que validen su rendimiento frente al modelo base, por lo que conviene evaluarlo con datos propios antes de usarlo en producción.
 - Licencia Apache 2.0: permite uso comercial, modificación y redistribución sin restricciones relevantes más allá de conservar el aviso de licencia.
-- Los tags de HuggingFace lo marcan como conversational, pero su especialización es la extracción estructurada; no esperar rendimiento de chat general comparable a modelos instruct de mayor tamaño.
+- Los tags de Hugging Face lo marcan como conversational, pero su especialización es la extracción estructurada; no esperar rendimiento de chat general comparable a modelos instruct de mayor tamaño.
 
 ## Enlaces
 

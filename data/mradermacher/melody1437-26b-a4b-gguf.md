@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/Melody1437-26B-A4B-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/Melody1437-26B-A4B-GGUF
 - Modelo base (ReadyArt): https://huggingface.co/ReadyArt/Melody1437-26B-A4B
 - Gemma 4 de Google (referencia): https://huggingface.co/google/gemma-4-26B-A4B-it
 - Repositorio de abliteration de Gemma 4: https://github.com/TrevorS/gemma-4-abliteration

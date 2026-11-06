@@ -67,7 +67,7 @@ No disponible. No se han encontrado modelos comparables en la información propo
 - El modelo no es un modelo de lenguaje: no procesa texto, no genera código ni responde a prompts en lenguaje natural. Cualquier intento de usarlo como LLM no funcionará.
 - Está diseñado exclusivamente para un dispositivo concreto, el Samsung Galaxy S26 Ultra y su NPU Hexagon. La compatibilidad con otros dispositivos Android no está garantizada.
 - El dataset de entrenamiento es pequeño (3,200 muestras), lo que puede limitar la generalización a escenas o condiciones no vistas.
-- El repositorio en HuggingFace tiene un tamaño de 0.0 GB y no registra descargas ni likes, lo que sugiere que los archivos del modelo podrían no estar disponibles públicamente o que el proyecto está en una fase muy temprana.
+- El repositorio en Hugging Face tiene un tamaño de 0.0 GB y no registra descargas ni likes, lo que sugiere que los archivos del modelo podrían no estar disponibles públicamente o que el proyecto está en una fase muy temprana.
 - La model card está escrita en alemán y no incluye documentación detallada sobre el proceso de entrenamiento, hiperparámetros ni métricas de evaluación.
 - No se publican resultados de benchmarks ni comparativas, por lo que el rendimiento real frente a otras soluciones es desconocido.
 - Al ser un proyecto experimental, puede haber errores o inestabilidades en el APK; el autor menciona un "modo seguro" que arranca siempre, pero no se detallan los fallos cubiertos.
@@ -75,6 +75,6 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KillerBoss/e-os-v4
-- Perfil del autor en HuggingFace: https://huggingface.co/KillerBoss
+- Hugging Face: https://huggingface.co/KillerBoss/e-os-v4
+- Perfil del autor en Hugging Face: https://huggingface.co/KillerBoss
 - Descarga directa del APK: https://huggingface.co/KillerBoss/e-os-v4/resolve/main/apk/e-os-npu-v0.4.apk

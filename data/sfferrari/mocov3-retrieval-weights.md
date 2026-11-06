@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfferrari/mocov3-retrieval-weights` es un repositorio de pesos de inicializacion publicado en HuggingFace por el usuario `sfferrari`, asociado a una implementacion de MoCo v3 (Momentum Contrast version 3) orientada a tareas de retrieval. El propio autor declara explicitamente en la model card que el checkpoint incluido (`model.safetensors`) es un punto de partida valido para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado. El repositorio se presenta como un artefacto de codigo reproducible, con `train.py`, `config.json` y `training_args.json` como piezas principales, mas que como un modelo listo para produccion.
+`sfferrari/mocov3-retrieval-weights` es un repositorio de pesos de inicializacion publicado en Hugging Face por el usuario `sfferrari`, asociado a una implementacion de MoCo v3 (Momentum Contrast version 3) orientada a tareas de retrieval. El propio autor declara explicitamente en la model card que el checkpoint incluido (`model.safetensors`) es un punto de partida valido para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado. El repositorio se presenta como un artefacto de codigo reproducible, con `train.py`, `config.json` y `training_args.json` como piezas principales, mas que como un modelo listo para produccion.
 
 MoCo v3 es un marco de aprendizaje autosupervisado para representaciones visuales desarrollado originalmente por Facebook AI Research (Meta AI), publicado en el paper arXiv 2211.09861 y con implementacion de referencia en el repositorio `facebookresearch/moco-v3`. La variante de este repositorio propone una configuracion "large" con atencion de consulta agrupada (grouped query attention), fusion de co-atencion (co attention), activacion mish y normalizacion por instancia (instancenorm), valores que figuran en la model card pero no estan acompanados de evidencia empirica.
 
@@ -63,10 +63,10 @@ Nota: el recuento de parametros reportado (16.576) sugiere un checkpoint de tama
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sfferrari/mocov3-retrieval-weights | 16.576 segun safetensors (escala "large" declarada) | No aplicable | Sin benchmarks declarados | Apache 2.0 | HuggingFace, 12 descargas |
+| sfferrari/mocov3-retrieval-weights | 16.576 segun safetensors (escala "large" declarada) | No aplicable | Sin benchmarks declarados | Apache 2.0 | Hugging Face, 12 descargas |
 | facebookresearch/moco-v3 | No disponible | No aplicable | Resultados del paper original (ViT y ResNet) | No disponible | Repositorio GitHub |
-| imrafaelsantos/retrieval | No disponible (configuracion "huge" declarada) | No aplicable | Sin numeros verificados | No disponible | HuggingFace |
-| taoyang1012/mocov3-retrieval | No disponible | No aplicable | No disponible | No disponible | HuggingFace |
+| imrafaelsantos/retrieval | No disponible (configuracion "huge" declarada) | No aplicable | Sin numeros verificados | No disponible | Hugging Face |
+| taoyang1012/mocov3-retrieval | No disponible | No aplicable | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -81,9 +81,9 @@ Nota: el recuento de parametros reportado (16.576) sugiere un checkpoint de tama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sfferrari/mocov3-retrieval-weights
+- Hugging Face: https://huggingface.co/sfferrari/mocov3-retrieval-weights
 - Paper MoCo v3 (arXiv): https://arxiv.org/pdf/2211.09861
 - Implementacion de referencia en GitHub: https://github.com/facebookresearch/moco-v3
 - Documentacion en DeepWiki del repositorio de referencia: https://deepwiki.com/facebookresearch/moco-v3
-- Repositorio relacionado en HuggingFace: https://huggingface.co/imrafaelsantos/retrieval
-- Repositorio relacionado en HuggingFace: https://huggingface.co/taoyang1012/mocov3-retrieval
+- Repositorio relacionado en Hugging Face: https://huggingface.co/imrafaelsantos/retrieval
+- Repositorio relacionado en Hugging Face: https://huggingface.co/taoyang1012/mocov3-retrieval

@@ -76,11 +76,11 @@ No disponible. La informacion proporcionada no incluye modelos comparables de cl
 - No se documentan sesgos conocidos ni tasas de alucinacion; al ser un modelo de clasificacion con salida probabilistica, el riesgo principal es una clasificacion incorrecta con alta confianza.
 - No se detalla el volumen ni la composicion del dataset de entrenamiento, lo que dificulta evaluar su cobertura.
 - Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base `mstrasser/jeff-base` y de Qwen3.5-0.8B.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta; su madurez y soporte comunitario son limitados.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta; su madurez y soporte comunitario son limitados.
 
 ## Enlaces
 
-- [HuggingFace: mstrasser/jeff-adapter-ci-failure](https://huggingface.co/mstrasser/jeff-adapter-ci-failure)
+- [Hugging Face: mstrasser/jeff-adapter-ci-failure](https://huggingface.co/mstrasser/jeff-adapter-ci-failure)
 - [Modelo base: mstrasser/jeff-base](https://huggingface.co/mstrasser/jeff-base)
 - [Pagina de catalogo: jeffhub.ai/catalogue/jeff.engineering.ci-failure](https://jeffhub.ai/catalogue/jeff.engineering.ci-failure)
 - [Codigo, servidor y SDKs: github.com/firelex/jeff](https://github.com/firelex/jeff)

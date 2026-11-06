@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jamesjunyuguo/qwen3-1.7b-webshop-ours-splice-r2-2ep` es un ajuste fino (fine-tune) del modelo base Qwen3-1.7B, publicado por el usuario jamesjunyuguo en HuggingFace. El nombre del repositorio sugiere que se trata de un modelo entrenado para la tarea WebShop (compra de productos en un entorno web simulado), probablemente como parte de un experimento de investigación sobre agentes que interactúan con entornos textuales. El sufijo "splice-r2-2ep" apunta a una variante de entrenamiento concreto (posiblemente una estrategia de mezcla de datos o de currículo) con 2 épocas de entrenamiento.
+`jamesjunyuguo/qwen3-1.7b-webshop-ours-splice-r2-2ep` es un ajuste fino (fine-tune) del modelo base Qwen3-1.7B, publicado por el usuario jamesjunyuguo en Hugging Face. El nombre del repositorio sugiere que se trata de un modelo entrenado para la tarea WebShop (compra de productos en un entorno web simulado), probablemente como parte de un experimento de investigación sobre agentes que interactúan con entornos textuales. El sufijo "splice-r2-2ep" apunta a una variante de entrenamiento concreto (posiblemente una estrategia de mezcla de datos o de currículo) con 2 épocas de entrenamiento.
 
 El modelo conserva la arquitectura del Qwen3-1.7B original, un transformer decoder-only con aproximadamente 1.720 millones de parámetros, pero no se dispone de información publicada sobre el proceso de ajuste, los datos utilizados ni los hiperparámetros. El repositorio tiene un tamaño de 6,9 GB, coherente con pesos en safetensors en precisión completa (fp16/bf16) para un modelo de ese tamaño.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| jamesjunyuguo/qwen3-1.7b-webshop-ours-splice-r2-2ep | 1,72B | no disponible | no disponible | HuggingFace (19 descargas) | Fine-tune de investigación, sin benchmarks |
-| Qwen3-1.7B (base oficial) | ~1,7B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace | Modelo base del que deriva este checkpoint |
+| jamesjunyuguo/qwen3-1.7b-webshop-ours-splice-r2-2ep | 1,72B | no disponible | no disponible | Hugging Face (19 descargas) | Fine-tune de investigación, sin benchmarks |
+| Qwen3-1.7B (base oficial) | ~1,7B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face | Modelo base del que deriva este checkpoint |
 | Alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados para comparar en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jamesjunyuguo/qwen3-1.7b-webshop-ours-splice-r2-2ep
+- Hugging Face: https://huggingface.co/jamesjunyuguo/qwen3-1.7b-webshop-ours-splice-r2-2ep
 - Paper o blog del fine-tune: no disponible
 - Repositorio de código: no disponible
 - Demo: no disponible

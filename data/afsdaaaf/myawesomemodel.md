@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario `afsdaaaf` bajo licencia MIT. La información disponible es internamente contradictoria: los metadatos del repositorio lo etiquetan como un modelo BERT de tipo `feature-extraction` implementado con Transformers y PyTorch, mientras que la model card describe un asistente conversacional de razonamiento con mejoras en matemáticas, programación y function calling, e incluso menciona una variante "MyAwesomeModel-Small". El repositorio tiene un tamaño de 0,0 GB, cero descargas y cero likes, lo que sugiere que no se han subido pesos o que el contenido es una plantilla sin publicar.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario `afsdaaaf` bajo licencia MIT. La información disponible es internamente contradictoria: los metadatos del repositorio lo etiquetan como un modelo BERT de tipo `feature-extraction` implementado con Transformers y PyTorch, mientras que la model card describe un asistente conversacional de razonamiento con mejoras en matemáticas, programación y function calling, e incluso menciona una variante "MyAwesomeModel-Small". El repositorio tiene un tamaño de 0,0 GB, cero descargas y cero likes, lo que sugiere que no se han subido pesos o que el contenido es una plantilla sin publicar.
 
 La model card afirma que la versión actual mejora su profundidad de razonamiento mediante más recursos de cómputo y "mecanismos de optimización algorítmica" durante el post-entrenamiento, y reporta un salto en AIME 2025 del 70% al 87,5% respecto a la versión anterior, con un consumo medio de 23K tokens por pregunta frente a 12K. Sin embargo, no se especifican arquitectura, número de parámetros, longitud de contexto, tokenizador ni composición del dataset de entrenamiento, y los benchmarks reportados no emplean nombres estándar (MMLU, HumanEval, GSM8K), sino categorías genéricas sin metodología descrita.
 
@@ -90,7 +90,7 @@ No se han publicado resultados en benchmarks estándar reconocibles (MMLU, Human
 - VRAM estimada para inferencia: no disponible. Sin recuento de parámetros ni pesos publicados no es posible estimar requisitos ni siquiera de forma aproximada.
 - GPU recomendadas: no disponible por la misma razón. La model card no menciona hardware de referencia.
 - Encaje en GPU de consumo: indeterminable. Cualquier cifra sería especulativa.
-- Opciones de despliegue: Transformers es la librería declarada y el repositorio lleva la etiqueta `endpoints_compatible`, por lo que cabría desplegarlo como endpoint de HuggingFace o con un servidor compatible con la API de Transformers. No consta soporte de vLLM, llama.cpp, Ollama ni TGI, y sin pesos en formato GGUF llama.cpp y Ollama no son aplicables.
+- Opciones de despliegue: Transformers es la librería declarada y el repositorio lleva la etiqueta `endpoints_compatible`, por lo que cabría desplegarlo como endpoint de Hugging Face o con un servidor compatible con la API de Transformers. No consta soporte de vLLM, llama.cpp, Ollama ni TGI, y sin pesos en formato GGUF llama.cpp y Ollama no son aplicables.
 - Latencia y throughput: no disponible. El único dato indirecto es el coste de razonamiento declarado en AIME (unas 23K tokens por pregunta), que implicaría respuestas lentas y costosas en cualquier despliegue generativo.
 - Estado del repositorio: 0,0 GB, lo que en la práctica impide ejecutar el modelo tal como está publicado.
 
@@ -124,7 +124,7 @@ Comparativa con alternativas reales: no disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/afsdaaaf/MyAwesomeModel
+- Repositorio en Hugging Face: https://huggingface.co/afsdaaaf/MyAwesomeModel
 - Variante con nombre similar del mismo autor: https://huggingface.co/afsdaaaf/my-awesome-model
 - Repositorio de otro usuario con nombre idéntico: https://huggingface.co/afdasfaa/MyAwesomeModel
 - Ficha agregadora de metadatos: https://free2aitools.com/model/afsdaaaf/my-awesome-model

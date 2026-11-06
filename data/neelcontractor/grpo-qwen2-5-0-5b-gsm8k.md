@@ -69,10 +69,10 @@ Evaluación sobre un subconjunto fijo de 50 ejemplos del split `test` de GSM8K, 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `NeelContractor/grpo-qwen2.5-0.5b-gsm8k` | 0,5B + LoRA | no disponible | GRPO + LoRA sobre GSM8K | Apache 2.0 | HuggingFace (adaptador PEFT) |
-| `Qwen/Qwen2.5-0.5B-Instruct` | 0,5B | no disponible en esta ficha | Instruct generalista, base del adaptador | Apache 2.0 | HuggingFace |
-| `Qwen/Qwen2.5-Math-1.5B-Instruct` | 1,5B | no disponible en esta ficha | Especializado en matemáticas | Apache 2.0 | HuggingFace |
-| `microsoft/Phi-3-mini-4k-instruct` | 3,8B | 4K | Instruct generalista con razonamiento | MIT | HuggingFace |
+| `NeelContractor/grpo-qwen2.5-0.5b-gsm8k` | 0,5B + LoRA | no disponible | GRPO + LoRA sobre GSM8K | Apache 2.0 | Hugging Face (adaptador PEFT) |
+| `Qwen/Qwen2.5-0.5B-Instruct` | 0,5B | no disponible en esta ficha | Instruct generalista, base del adaptador | Apache 2.0 | Hugging Face |
+| `Qwen/Qwen2.5-Math-1.5B-Instruct` | 1,5B | no disponible en esta ficha | Especializado en matemáticas | Apache 2.0 | Hugging Face |
+| `microsoft/Phi-3-mini-4k-instruct` | 3,8B | 4K | Instruct generalista con razonamiento | MIT | Hugging Face |
 
 La comparación con alternativas especializadas en matemáticas no está respaldada por benchmarks en la información disponible; los datos de los modelos alternativos se incluyen solo a efectos de contexto de tamaño y licencia.
 
@@ -92,7 +92,7 @@ La comparación con alternativas especializadas en matemáticas no está respald
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NeelContractor/grpo-qwen2.5-0.5b-gsm8k
+- Modelo en Hugging Face: https://huggingface.co/NeelContractor/grpo-qwen2.5-0.5b-gsm8k
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset GSM8K: https://huggingface.co/datasets/openai/gsm8k
 - Repositorio del proyecto (mencionado en la model card, sin URL explícita): no disponible

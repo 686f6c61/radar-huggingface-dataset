@@ -67,9 +67,9 @@ No se dispone de resultados en MMLU, HumanEval, GSM8K u otros benchmarks estanda
 
 | Modelo | Parametros | Contexto | Perplexidad (TinyStories) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fock-G1 (este modelo) | 26,6 M | No disponible | 8,95 | CC-BY-4.0 | HuggingFace |
-| Ancla de segundo orden (sibling) | 26,6 M | No disponible | 9,04 | CC-BY-4.0 | HuggingFace |
-| Fock-PARFLM base (v2.1) | No disponible | No disponible | 9,30 | CC-BY-4.0 | HuggingFace |
+| Fock-G1 (este modelo) | 26,6 M | No disponible | 8,95 | CC-BY-4.0 | Hugging Face |
+| Ancla de segundo orden (sibling) | 26,6 M | No disponible | 9,04 | CC-BY-4.0 | Hugging Face |
+| Fock-PARFLM base (v2.1) | No disponible | No disponible | 9,30 | CC-BY-4.0 | Hugging Face |
 
 La comparativa se limita a la familia Fock-PARFLM porque no se dispone de datos de modelos externos comparables (p. ej., GPT-2 pequeño o Pythia) en las mismas condiciones. La diferencia principal entre los tres es el integrador (primer orden, segundo orden y la variante base sin condicionamiento de profundidad), no el tamano ni el corpus.
 
@@ -85,7 +85,7 @@ La comparativa se limita a la familia Fock-PARFLM porque no se dispone de datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-fock-parflm-anisogaussian-vtheta-fock-g1
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-fock-parflm-anisogaussian-vtheta-fock-g1
 - Ancla de segundo orden (sibling): https://huggingface.co/dimitarpg13/semsimula-fock-parflm-anisogaussian-vtheta
 - Modelo base Fock-PARFLM: https://huggingface.co/dimitarpg13/semsimula-fock-parflm
 - Repositorio del paper (GitHub): https://github.com/dimitarpg13/semsimula-paper

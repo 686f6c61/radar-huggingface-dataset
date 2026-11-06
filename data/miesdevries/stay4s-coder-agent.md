@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| stay4s-coder-agent | ~4,02 B | no disponible | Apache 2.0 | HuggingFace (safetensors, GGUF) | Ajuste LoRA sobre Qwen2.5-7B-Instruct declarado; idioma nl |
-| Qwen2.5-Coder-7B-Instruct | ~7 B | 32.768 tokens nativo (hasta 131.072 con YaRN) | Apache 2.0 | HuggingFace | Modelo oficial especializado en codigo, misma familia |
-| Qwen2.5-7B-Instruct | ~7 B | 32.768 tokens nativo (hasta 131.072 con YaRN) | Apache 2.0 | HuggingFace | Modelo base declarado de este ajuste |
-| Llama 3.1 8B Instruct | ~8 B | 131.072 tokens | Licencia comunitaria de Meta | HuggingFace | Alternativa generalista con licencia no Apache |
+| stay4s-coder-agent | ~4,02 B | no disponible | Apache 2.0 | Hugging Face (safetensors, GGUF) | Ajuste LoRA sobre Qwen2.5-7B-Instruct declarado; idioma nl |
+| Qwen2.5-Coder-7B-Instruct | ~7 B | 32.768 tokens nativo (hasta 131.072 con YaRN) | Apache 2.0 | Hugging Face | Modelo oficial especializado en codigo, misma familia |
+| Qwen2.5-7B-Instruct | ~7 B | 32.768 tokens nativo (hasta 131.072 con YaRN) | Apache 2.0 | Hugging Face | Modelo base declarado de este ajuste |
+| Llama 3.1 8B Instruct | ~8 B | 131.072 tokens | Licencia comunitaria de Meta | Hugging Face | Alternativa generalista con licencia no Apache |
 
 Las cifras de contexto de la comparativa corresponden a los modelos oficiales de referencia y no estan confirmadas para stay4s-coder-agent. No hay datos de rendimiento que permitan comparar calidad entre estos modelos.
 
@@ -87,7 +87,7 @@ Las cifras de contexto de la comparativa corresponden a los modelos oficiales de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/miesdevries/stay4s-coder-agent
+- Hugging Face: https://huggingface.co/miesdevries/stay4s-coder-agent
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible
 - Repositorio de codigo: no disponible

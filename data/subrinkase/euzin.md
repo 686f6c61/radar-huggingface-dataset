@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Euzin, publicado por el usuario subrinkase en HuggingFace, es un repositorio de muy reciente creación (agosto de 2026) que, a fecha de la consulta, no cuenta con descargas ni valoraciones. La model card únicamente declara la licencia Apache 2.0, sin proporcionar información técnica sobre arquitectura, parámetros, capacidades o datos de entrenamiento. El tamaño del repositorio es de 0,1 GB, lo que sugiere que podría contener pesos cuantizados o un modelo de pequeñas dimensiones, pero no se puede confirmar sin acceso al contenido real.
+El modelo Euzin, publicado por el usuario subrinkase en Hugging Face, es un repositorio de muy reciente creación (agosto de 2026) que, a fecha de la consulta, no cuenta con descargas ni valoraciones. La model card únicamente declara la licencia Apache 2.0, sin proporcionar información técnica sobre arquitectura, parámetros, capacidades o datos de entrenamiento. El tamaño del repositorio es de 0,1 GB, lo que sugiere que podría contener pesos cuantizados o un modelo de pequeñas dimensiones, pero no se puede confirmar sin acceso al contenido real.
 
 Dada la ausencia total de documentación y métricas, este modelo no puede ser evaluado ni recomendado para ningún caso de uso concreto. Su relevancia actual es nula desde el punto de vista técnico, y cualquier adopción en producción requeriría una investigación exhaustiva previa por parte del desarrollador.
 
@@ -53,4 +53,4 @@ No disponible. No existen datos suficientes para establecer una comparacion con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/subrinkase/Euzin
+- Repositorio en Hugging Face: https://huggingface.co/subrinkase/Euzin

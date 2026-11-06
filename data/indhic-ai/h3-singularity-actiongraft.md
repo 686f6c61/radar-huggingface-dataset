@@ -73,7 +73,7 @@ Tiempos de trabajo (v1.3 frente a ActionGraft): 158 vs 160 s, 181 vs 189 s, 101 
 
 | Modelo | Tipo | Base | Contexto / duración | Rendimiento en acción | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| H3-Singularity-ActionGraft v1 | LoRA (rango 16 + 2 bloques text-refiner) | Singularity v1.3 int8 | no disponible | +40-55 % de velocidad de píxeles frente a v1.3 | minimax-h3-community-license | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
+| H3-Singularity-ActionGraft v1 | LoRA (rango 16 + 2 bloques text-refiner) | Singularity v1.3 int8 | no disponible | +40-55 % de velocidad de píxeles frente a v1.3 | minimax-h3-community-license | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
 | Singularity v1.3 | Checkpoint base comunitario | MiniMax H3 | no disponible | Referencia (28,4-39,7 px/frame en las pruebas del autor) | no disponible | Usado como base por este LoRA |
 | Singularity v2 | Checkpoint comunitario | MiniMax H3 | no disponible | 43,2-51,6 px/frame en las pruebas del autor | no disponible | Referenciado como fuente del fine-tune de velocidad |
 | Motion Repair V2 | Modelo de reparación de movimiento | MiniMax H3 | no disponible | Fuente de la pieza de impactos (2 de 52 bloques) | no disponible | Referenciado como fuente del componente de impacto |
@@ -94,7 +94,7 @@ No se dispone de datos sobre otros adaptadores comparables de la misma categorí
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/indhic-ai/H3-Singularity-ActionGraft
+- Modelo en Hugging Face: https://huggingface.co/indhic-ai/H3-Singularity-ActionGraft
 - Modelo base (Singularity v1.3): https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity
 - Licencia MiniMax H3 Community: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Vídeos de prueba (dentro del repositorio): https://huggingface.co/indhic-ai/H3-Singularity-ActionGraft/tree/main/videos

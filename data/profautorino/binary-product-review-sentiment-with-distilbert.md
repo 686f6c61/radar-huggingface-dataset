@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`binary-product-review-sentiment-with-distilbert` es un modelo de clasificación de texto de dos clases (sentimiento positivo/negativo) publicado por el usuario profautorino en HuggingFace. Se presenta como un ajuste fino sobre el corpus `Cleanlab/amazon-reviews` para analizar reseñas de productos en inglés, y el autor declara una accuracy de 0,892 y una pérdida de 0,2724 sobre el split de test. El repositorio ocupa 0,5 GB, acumula 26 descargas y no tiene likes en el momento de la consulta.
+`binary-product-review-sentiment-with-distilbert` es un modelo de clasificación de texto de dos clases (sentimiento positivo/negativo) publicado por el usuario profautorino en Hugging Face. Se presenta como un ajuste fino sobre el corpus `Cleanlab/amazon-reviews` para analizar reseñas de productos en inglés, y el autor declara una accuracy de 0,892 y una pérdida de 0,2724 sobre el split de test. El repositorio ocupa 0,5 GB, acumula 26 descargas y no tiene likes en el momento de la consulta.
 
 El dato técnico más relevante —y el más problemático— es la discrepancia entre el nombre del modelo y su procedencia declarada: la model card afirma que se trata de "un modelo de 67M parámetros" y "una versión ajustada de bert-base-uncased", dos afirmaciones incompatibles entre sí. El recuento real de pesos en safetensors (66.955.010 parámetros) es coherente con la arquitectura DistilBERT (6 capas, 768 de dimensión oculta, ~66M parámetros) más una cabeza de clasificación binaria, no con BERT-base (~110M). Cualquier uso en producción debería verificar la arquitectura inspeccionando `config.json` antes de asumir nada.
 
@@ -95,7 +95,7 @@ La comparación de rendimiento entre el modelo evaluado y las alternativas no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/profautorino/binary-product-review-sentiment-with-distilbert
+- Modelo en Hugging Face: https://huggingface.co/profautorino/binary-product-review-sentiment-with-distilbert
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/Cleanlab/amazon-reviews
 - Modelo base declarado: https://huggingface.co/google-bert/bert-base-uncased
 - Paper de DistilBERT (referencia para la arquitectura indicada por el nombre del modelo): https://arxiv.org/abs/1910.01108

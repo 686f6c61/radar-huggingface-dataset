@@ -78,10 +78,10 @@ El model-index no contiene resultados adicionales (lista `results` vacía). No s
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| akansal0/hf_food_not_food_text_classifier-distilbert-base-uncased | 66,9 M | no disponible (base: 512) | Clasificación binaria comida/no comida | Apache 2.0 | HuggingFace |
-| distilbert/distilbert-base-uncased | 66,9 M | 512 | Modelo base (MLM), requiere fine-tuning | Apache 2.0 | HuggingFace |
-| google-bert/bert-base-uncased | 110 M | 512 | Modelo base (MLM), requiere fine-tuning | Apache 2.0 | HuggingFace |
-| ProsusAI/finbert | 110 M | 512 | Clasificación de sentimiento financiero | Desconocida | HuggingFace |
+| akansal0/hf_food_not_food_text_classifier-distilbert-base-uncased | 66,9 M | no disponible (base: 512) | Clasificación binaria comida/no comida | Apache 2.0 | Hugging Face |
+| distilbert/distilbert-base-uncased | 66,9 M | 512 | Modelo base (MLM), requiere fine-tuning | Apache 2.0 | Hugging Face |
+| google-bert/bert-base-uncased | 110 M | 512 | Modelo base (MLM), requiere fine-tuning | Apache 2.0 | Hugging Face |
+| ProsusAI/finbert | 110 M | 512 | Clasificación de sentimiento financiero | Desconocida | Hugging Face |
 
 La comparación directa de rendimiento con alternativas no está disponible: no existen métricas publicadas del modelo frente a otros clasificadores en el mismo conjunto de datos, y el dataset de evaluación no se documenta.
 
@@ -98,7 +98,7 @@ La comparación directa de rendimiento con alternativas no está disponible: no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akansal0/hf_food_not_food_text_classifier-distilbert-base-uncased
+- Modelo en Hugging Face: https://huggingface.co/akansal0/hf_food_not_food_text_classifier-distilbert-base-uncased
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Documentación de DistilBERT en Transformers: https://huggingface.co/docs/transformers/model_doc/distilbert
 - Repositorio de Transformers: https://github.com/huggingface/transformers

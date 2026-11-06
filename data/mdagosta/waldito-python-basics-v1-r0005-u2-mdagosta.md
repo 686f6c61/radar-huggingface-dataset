@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mdagosta/waldito-python-basics-v1-r0005-u2-mdagosta` es un modelo de generacion de texto publicado por el usuario `mdagosta` en HuggingFace. Segun los metadatos del repositorio, emplea la arquitectura causal de tipo Llama estandar de la libreria Transformers, con un total de 9.541.632 parametros reales registrados en los pesos `safetensors`. Se trata, por tanto, de un modelo de escala muy reducida (por debajo de los 10 millones de parametros), lejos de los modelos de proposito general que dominan el ecosistema actual.
+`mdagosta/waldito-python-basics-v1-r0005-u2-mdagosta` es un modelo de generacion de texto publicado por el usuario `mdagosta` en Hugging Face. Segun los metadatos del repositorio, emplea la arquitectura causal de tipo Llama estandar de la libreria Transformers, con un total de 9.541.632 parametros reales registrados en los pesos `safetensors`. Se trata, por tanto, de un modelo de escala muy reducida (por debajo de los 10 millones de parametros), lejos de los modelos de proposito general que dominan el ecosistema actual.
 
 La model card lo identifica como un "OpenWALDO model export" e indica que usa el tokenizador de bytes "schema-1" de OpenWALDO, que requiere cargarse con `trust_remote_code=True`. El repositorio incluye un fichero `BOM.json` con el inventario de ficheros de la release y un `EU-BOM.json` con el mapeo de divulgacion de contenido de entrenamiento exigido por el reglamento europeo de IA (GPAI). La nomenclatura del identificador sugiere un ajuste orientado a fundamentos de Python, aunque la model card no lo confirma de forma explicita.
 
@@ -22,7 +22,7 @@ La relevancia de este modelo es limitada y muy acotada: no registra descargas ni
 | Formato de pesos | safetensors |
 | Tokenizador | OpenWALDO schema-1 (tokenizador de bytes); requiere `trust_remote_code=True` |
 | Libreria | transformers |
-| Tamano del repositorio | 0,0 GB (redondeado en los metadatos de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (redondeado en los metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -48,7 +48,7 @@ Dado el tamano del modelo (9,54 M de parametros) y la ausencia de benchmarks, lo
 - Ejecucion en entornos sin GPU: con menos de 10 M de parametros, la inferencia en CPU es viable en cualquier portatil o contenedor con recursos limitados, lo que permite usarlo como componente de prueba en CI/CD.
 - Validacion de tokenizadores con codigo remoto: permite comprobar el comportamiento del tokenizador de bytes de OpenWALDO y del flujo `trust_remote_code=True` en un entorno controlado antes de adoptarlo en modelos de mayor tamano del mismo ecosistema.
 - Generacion de plantillas y texto de relleno: para tareas de maquetacion, datos sinteticos de prueba o generacion de texto no critico donde la calidad linguistica no es un requisito estricto.
-- Experimentacion educativa: util para demostrar el ciclo completo de publicacion de un modelo en HuggingFace (pesos, BOM, divulgacion normativa) en cursos o talleres sobre despliegue de IA.
+- Experimentacion educativa: util para demostrar el ciclo completo de publicacion de un modelo en Hugging Face (pesos, BOM, divulgacion normativa) en cursos o talleres sobre despliegue de IA.
 - Auditoria de trazabilidad y cumplimiento GPAI: el par `BOM.json` / `EU-BOM.json` puede estudiarse como ejemplo de empaquetado de inventario de componentes y divulgacion regulatoria, independientemente de la calidad del modelo.
 - Micro-servicio de autocompletado en dominios muy restringidos: solo si un ajuste posterior sobre datos propios demuestra utilidad, dado que no hay evidencia publicada de su rendimiento en ninguna tarea.
 
@@ -75,8 +75,8 @@ No se dispone de datos de rendimiento de este modelo, por lo que no es posible e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `mdagosta/waldito-python-basics-v1-r0005-u2-mdagosta` | 9.541.632 | no disponible | no disponible | HuggingFace, 0 descargas | Objeto de esta ficha |
-| `mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta` | no disponible | no disponible | no disponible | HuggingFace | Modelo hermano del mismo autor; no se han podido verificar sus especificaciones |
+| `mdagosta/waldito-python-basics-v1-r0005-u2-mdagosta` | 9.541.632 | no disponible | no disponible | Hugging Face, 0 descargas | Objeto de esta ficha |
+| `mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta` | no disponible | no disponible | no disponible | Hugging Face | Modelo hermano del mismo autor; no se han podido verificar sus especificaciones |
 | Otros modelos de la misma categoria (menos de 10 M de parametros) | no disponible | no disponible | no disponible | no disponible | No se han identificado alternativas comparables en la informacion disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento de este modelo, por lo que no es posible e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0005-u2-mdagosta
+- Repositorio en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0005-u2-mdagosta
 - Modelo hermano del mismo autor: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta
 - Ficheros de inventario referenciados en la model card (rutas dentro del repositorio, sin enlace directo disponible): `BOM.json` y `EU-BOM.json`
 - Paper, blog tecnico, repositorio de codigo o demo del modelo: no disponible

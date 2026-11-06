@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dp-cupbasket-v6-2k es una política de difusión (diffusion policy) para robótica manipulativa bimanual, publicada en HuggingFace por el usuario padiredd bajo el framework LeRobot. El modelo aprende a ejecutar la tarea de recoger un vaso azul con la mano izquierda, pasarlo a la mano derecha y depositarlo sobre una cesta, empleando el robot bimanual ROBOTIS FFW SG2 con pinzas CAD y cámaras de muñeca calibradas. Está entrenado exclusivamente sobre demostraciones en simulación (Isaac Lab), no sobre datos reales.
+dp-cupbasket-v6-2k es una política de difusión (diffusion policy) para robótica manipulativa bimanual, publicada en Hugging Face por el usuario padiredd bajo el framework LeRobot. El modelo aprende a ejecutar la tarea de recoger un vaso azul con la mano izquierda, pasarlo a la mano derecha y depositarlo sobre una cesta, empleando el robot bimanual ROBOTIS FFW SG2 con pinzas CAD y cámaras de muñeca calibradas. Está entrenado exclusivamente sobre demostraciones en simulación (Isaac Lab), no sobre datos reales.
 
 La arquitectura sigue el paradigma de diffusion policy: un modelo generativo que produce secuencias de acciones mediante difusión (DDPM con 100 pasos), condicionado por observaciones visuales de tres cámaras (cabeza y dos muñecas, 240x240 píxeles cada una) y un vector de estado articular de 22 dimensiones. Con 287,5 millones de parámetros y un backbone ResNet18 por cámara, el modelo genera 16 objetivos articulares a 15 Hz, ejecutando 32 de los 64 pasos de horizonte planificados.
 
@@ -25,7 +25,7 @@ Su relevancia es acotada y muy específica: se trata de un checkpoint de investi
 
 El modelo es una diffusion policy clásica: un proceso de difusión DDPM con 100 pasos que genera, condicionado por las observaciones, una trayectoria de 64 pasos de acciones articulares de las que se ejecutan los 32 primeros. Cada una de las tres cámaras (cabeza, muñeca izquierda, muñeca derecha) se procesa con un ResNet18 independiente a resolución 240x240; la observación se completa con un vector de estado de 22 dimensiones (estado articular) y una única observación por paso (n_obs_steps = 1). La salida son 16 objetivos articulares a 15 Hz. El entrenamiento usó Adam con learning rate 1e-4, scheduler coseno, batch de 32 y 100.000 pasos, con semilla 1000, sobre una única RTX 4090 de 24 GB.
 
-Los datos de entrenamiento son aproximadamente 2.000 demostraciones exitosas en simulación (dataset `pick-cup-basket-v6-2k-3cam`, no publicado en HuggingFace), generadas con el script `cup_basket/programs/cup_handover_v6.py` el 2026-11-04. No hay domain randomization ni ruido de estado; el muestreo es uniforme sobre todos los frames (EpisodeAwareSampler por defecto de LeRobot). La única regularización es una aumentación de imagen agresiva y de orden aleatorio: hasta 5 transformaciones entre brillo (0,6-1,4), contraste (0,6-1,4), saturación (0,3-1,7), tono (±0,1), nitidez (0,3-2,0), afín (±10 grados / 10 % / 0,9-1,1), perspectiva (0,2), desenfoque, borrado aleatorio y escala de grises. Destaca un detalle de diseño curioso: la orden de cierre de la pinza derecha se ejecuta a 0,50 pero se registra como 0,70, el máximo real del gripper, para compensar la diferencia entre simulación y hardware.
+Los datos de entrenamiento son aproximadamente 2.000 demostraciones exitosas en simulación (dataset `pick-cup-basket-v6-2k-3cam`, no publicado en Hugging Face), generadas con el script `cup_basket/programs/cup_handover_v6.py` el 2026-11-04. No hay domain randomization ni ruido de estado; el muestreo es uniforme sobre todos los frames (EpisodeAwareSampler por defecto de LeRobot). La única regularización es una aumentación de imagen agresiva y de orden aleatorio: hasta 5 transformaciones entre brillo (0,6-1,4), contraste (0,6-1,4), saturación (0,3-1,7), tono (±0,1), nitidez (0,3-2,0), afín (±10 grados / 10 % / 0,9-1,1), perspectiva (0,2), desenfoque, borrado aleatorio y escala de grises. Destaca un detalle de diseño curioso: la orden de cierre de la pinza derecha se ejecuta a 0,50 pero se registra como 0,70, el máximo real del gripper, para compensar la diferencia entre simulación y hardware.
 
 ## Capacidades
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp-cupbasket-v6-2k | 287,5 M | Horizonte 64, 32 ejecutados, 15 Hz | Handover bimanual de vaso a cesta (FFW SG2) | other | HuggingFace (padiredd) |
+| dp-cupbasket-v6-2k | 287,5 M | Horizonte 64, 32 ejecutados, 15 Hz | Handover bimanual de vaso a cesta (FFW SG2) | other | Hugging Face (padiredd) |
 | Diffusion Policy original (Chi et al., 2023) | No disponible | Horizonte configurable | Manipulación genérica (Push-T, Robomimic) | No disponible | Código y checkpoints en el repo oficial de los autores |
 | ACT / ALOHA (Zhao et al., 2023) | No disponible | No disponible | Manipulación bimanual de precisión | No disponible | Código y checkpoints públicos |
-| Otros checkpoints LeRobot de la comunidad | Variable | Variable | Tareas diversas | Variable | HuggingFace (hub LeRobot) |
+| Otros checkpoints LeRobot de la comunidad | Variable | Variable | Tareas diversas | Variable | Hugging Face (hub LeRobot) |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada; la comparación se limita a parámetros, tarea y disponibilidad.
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 - Modelo de tarea única: no generaliza a otras tareas, objetos, posiciones ni robots distintos del ROBOTIS FFW SG2 con pinzas CAD.
 - Entrenado solo en simulación (Isaac Lab), sin domain randomization y sin ruido de estado: la brecha sim-to-real no está cuantificada y la model card no reporta evaluaciones en hardware real.
-- Dataset de entrenamiento no publicado (`pick-cup-basket-v6-2k-3cam` no está en HuggingFace), lo que dificulta la reproducción exacta del entrenamiento.
+- Dataset de entrenamiento no publicado (`pick-cup-basket-v6-2k-3cam` no está en Hugging Face), lo que dificulta la reproducción exacta del entrenamiento.
 - Licencia "other" sin términos detallados en la model card: el uso comercial es incierto y requiere contactar con el autor.
 - Sin benchmarks ni resultados de evaluación publicados: no hay evidencia cuantitativa de tasa de éxito, ni en simulación ni en real.
 - Riesgo de sobreajuste a los layouts de las semillas 60001+ (mismos layouts que el conjunto cup2k_v3) y a las condiciones visuales de la simulación, pese a la aumentación de imagen.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/dp-cupbasket-v6-2k
+- Modelo en Hugging Face: https://huggingface.co/padiredd/dp-cupbasket-v6-2k
 - LeRobot (framework): https://github.com/huggingface/lerobot
 - Fork lerobot-cyclo de ROBOTIS: no disponible en la información proporcionada
 - Diffusion Policy (paper original, Chi et al.): no disponible en la información proporcionada

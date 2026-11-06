@@ -83,7 +83,7 @@ No se dispone de comparaciones con otros VLA como OpenVLA o RT-2 en cuanto a ren
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/maskjp/pi05-relative-eef-frozen-vlm)
+- [Modelo en Hugging Face](https://huggingface.co/maskjp/pi05-relative-eef-frozen-vlm)
 - [Modelo base `lerobot/pi05_base`](https://huggingface.co/lerobot/pi05_base)
 - [Paper de pi0.5](https://arxiv.org/abs/2504.16054)
 - [Repositorio openpi (Physical Intelligence)](https://github.com/Physical-Intelligence/openpi)

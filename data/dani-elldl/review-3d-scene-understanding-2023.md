@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dani-elldl/review-3d-scene-understanding-2023` no es un modelo de aprendizaje automático entrenado, sino un repositorio de notas de investigación sobre comprensión de escenas 3D. Lo publica el usuario de HuggingFace dani-elldl, del que no se dispone de afiliación institucional, equipo de investigación ni historial verificable. El contenido se limita a dos ficheros de texto: `notes.md`, que el autor identifica como artefacto principal, y `README.md`. No se anuncia checkpoint, código de entrenamiento, demo ni resultados experimentales.
+`dani-elldl/review-3d-scene-understanding-2023` no es un modelo de aprendizaje automático entrenado, sino un repositorio de notas de investigación sobre comprensión de escenas 3D. Lo publica el usuario de Hugging Face dani-elldl, del que no se dispone de afiliación institucional, equipo de investigación ni historial verificable. El contenido se limita a dos ficheros de texto: `notes.md`, que el autor identifica como artefacto principal, y `README.md`. No se anuncia checkpoint, código de entrenamiento, demo ni resultados experimentales.
 
 El repositorio se declara explícitamente exploratorio. El propio README indica que no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni checkpoint entrenado, y advierte que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados. Los metadatos de safetensors declaran 24.832 parámetros totales y un tamaño de repositorio de 0,0 GB, cifras compatibles con un artefacto mínimo o de relleno más que con un modelo utilizable en producción.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible. El R
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no pertenece a la categoría de modelos de lenguaje, visión o multimodal, por lo que no existe una comparación sensata con alternativas de parámetros, contexto, rendimiento o licencia similares. Su equivalente funcional serían otras notas de investigación o documentos de pre-registro metodológico, para los que los metadatos públicos de HuggingFace no ofrecen métricas comparables.
+No disponible. Este repositorio no pertenece a la categoría de modelos de lenguaje, visión o multimodal, por lo que no existe una comparación sensata con alternativas de parámetros, contexto, rendimiento o licencia similares. Su equivalente funcional serían otras notas de investigación o documentos de pre-registro metodológico, para los que los metadatos públicos de Hugging Face no ofrecen métricas comparables.
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ No disponible. Este repositorio no pertenece a la categoría de modelos de lengu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dani-elldl/review-3d-scene-understanding-2023
+- Repositorio en Hugging Face: https://huggingface.co/dani-elldl/review-3d-scene-understanding-2023
 - Fichero principal citado en el README: `notes.md` (no se dispone de URL directa verificada).
 - Fichero de documentación: `README.md` (incluido en la página del repositorio).
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante sobre este repositorio, su autor ni el tema tratado. Las consultas devolvieron exclusivamente páginas sobre una cantante francesa homónima (Dani), sin relación alguna con este artefacto.

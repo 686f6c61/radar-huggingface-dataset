@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ipfipfipf/Qwen3.5-4B-sdpo-react-rlsd-multitask-arm2` es un fine-tuning del modelo base Qwen/Qwen3.5-4B-Base, publicado por el usuario de HuggingFace ipfipfipf. El nombre del repositorio sugiere la aplicación de técnicas de entrenamiento como SDPO (Sequence-level Direct Preference Optimization), ReAct (razonamiento y actuación), RLSD (Reinforcement Learning with Self-Distillation) y entrenamiento multitarea, probablemente orientado a entornos de agentes. El modelo base Qwen3.5-4B es un modelo causal de lenguaje con encoder de visión, que emplea una arquitectura híbrida con Gated DeltaNet y Gated Attention, con una longitud de contexto nativa de 262.144 tokens extensible a más de un millón. Este fine-tuning hereda las capacidades multimodales y de razonamiento del base, y añade un ajuste específico para tareas de agente y razonamiento multi-step. No se dispone de información detallada sobre el proceso de fine-tuning ni de benchmarks específicos, pero el modelo está disponible bajo licencia Apache 2.0 y en formato safetensors.
+El modelo `ipfipfipf/Qwen3.5-4B-sdpo-react-rlsd-multitask-arm2` es un fine-tuning del modelo base Qwen/Qwen3.5-4B-Base, publicado por el usuario de Hugging Face ipfipfipf. El nombre del repositorio sugiere la aplicación de técnicas de entrenamiento como SDPO (Sequence-level Direct Preference Optimization), ReAct (razonamiento y actuación), RLSD (Reinforcement Learning with Self-Distillation) y entrenamiento multitarea, probablemente orientado a entornos de agentes. El modelo base Qwen3.5-4B es un modelo causal de lenguaje con encoder de visión, que emplea una arquitectura híbrida con Gated DeltaNet y Gated Attention, con una longitud de contexto nativa de 262.144 tokens extensible a más de un millón. Este fine-tuning hereda las capacidades multimodales y de razonamiento del base, y añade un ajuste específico para tareas de agente y razonamiento multi-step. No se dispone de información detallada sobre el proceso de fine-tuning ni de benchmarks específicos, pero el modelo está disponible bajo licencia Apache 2.0 y en formato safetensors.
 
 ## Especificaciones técnicas
 
@@ -66,6 +66,6 @@ No se dispone de comparativas con otros modelos de 4B en la informacion proporci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ipfipfipf/Qwen3.5-4B-sdpo-react-rlsd-multitask-arm2
+- Repositorio Hugging Face: https://huggingface.co/ipfipfipf/Qwen3.5-4B-sdpo-react-rlsd-multitask-arm2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

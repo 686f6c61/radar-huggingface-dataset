@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kimerry/news2stock-lora` es un adaptador LoRA publicado en HuggingFace por el usuario kimerry. El nombre sugiere una posible aplicación en el ámbito financiero, concretamente en la relación entre noticias y movimientos bursátiles, pero la información disponible no permite confirmar esta hipótesis. La model card es una plantilla genérica generada automáticamente, sin datos sobre arquitectura, entrenamiento, capacidades o licencia. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos publicados o que estos no están disponibles públicamente. A fecha de su creación (agosto de 2026), no registra descargas ni valoraciones. En resumen, se trata de un modelo sin documentación sustancial, lo que impide cualquier evaluación técnica rigurosa.
+El modelo `kimerry/news2stock-lora` es un adaptador LoRA publicado en Hugging Face por el usuario kimerry. El nombre sugiere una posible aplicación en el ámbito financiero, concretamente en la relación entre noticias y movimientos bursátiles, pero la información disponible no permite confirmar esta hipótesis. La model card es una plantilla genérica generada automáticamente, sin datos sobre arquitectura, entrenamiento, capacidades o licencia. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos publicados o que estos no están disponibles públicamente. A fecha de su creación (agosto de 2026), no registra descargas ni valoraciones. En resumen, se trata de un modelo sin documentación sustancial, lo que impide cualquier evaluación técnica rigurosa.
 
 ## Especificaciones tecnicas
 
@@ -51,5 +51,5 @@ No disponible. No se conocen modelos comparables en la misma categoría debido a
 
 ## Enlaces
 
-- [HuggingFace - kimerry/news2stock-lora](https://huggingface.co/kimerry/news2stock-lora)
+- [Hugging Face - kimerry/news2stock-lora](https://huggingface.co/kimerry/news2stock-lora)
 - [Artículo arxiv:1910.09700 (referenciado en tags)](https://arxiv.org/abs/1910.09700)

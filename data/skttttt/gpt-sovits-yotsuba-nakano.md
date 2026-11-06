@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Tipo | Idiomas | Contexto / referencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GPT-SoVITS-Yotsuba-Nakano | Fine-tune de personaje sobre GPT-SoVITS v2 | ja, en | Audio de referencia (hasta ~7,3 s) | No disponible; sin licencia comercial general | HuggingFace (2,2 GB) |
+| GPT-SoVITS-Yotsuba-Nakano | Fine-tune de personaje sobre GPT-SoVITS v2 | ja, en | Audio de referencia (hasta ~7,3 s) | No disponible; sin licencia comercial general | Hugging Face (2,2 GB) |
 | GPT-SoVITS v2 (base) | TTS + clonacion de voz | Multiples (incluye ja, en) | Audio de referencia | Licencia del proyecto upstream (consultar) | Repositorio upstream |
 | Fish Speech | TTS + clonacion de voz | Multiples | Audio de referencia | Licencia propia | Repositorio upstream |
 | XTTS-v2 (Coqui) | TTS + clonacion de voz | Multiples | Audio de referencia | Licencia propia (Coqui CPML) | Publico |
@@ -83,7 +83,7 @@ Nota: los datos comparativos de parametros, contexto y rendimiento de las altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Skttttt/GPT-SoVITS-Yotsuba-Nakano
+- Hugging Face: https://huggingface.co/Skttttt/GPT-SoVITS-Yotsuba-Nakano
 - Referencia 1: https://huggingface.co/Skttttt/GPT-SoVITS-Yotsuba-Nakano/resolve/main/references/reference1.wav
 - Referencia 2: https://huggingface.co/Skttttt/GPT-SoVITS-Yotsuba-Nakano/resolve/main/references/reference2.wav
 - Referencia 3: https://huggingface.co/Skttttt/GPT-SoVITS-Yotsuba-Nakano/resolve/main/references/reference3.wav

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ling3-small es un modelo publicado en HuggingFace por el usuario krampenschiesser el 16 de septiembre de 2026, distribuido bajo licencia MIT. Se trata de un ajuste fino (fine-tune) declarado sobre el modelo base inclusionAI/Ling-3.0-tiny, segun los metadatos del repositorio. En el momento de la consulta acumula 0 descargas y 0 likes, y no cuenta con pipeline tag asignado.
+ling3-small es un modelo publicado en Hugging Face por el usuario krampenschiesser el 16 de septiembre de 2026, distribuido bajo licencia MIT. Se trata de un ajuste fino (fine-tune) declarado sobre el modelo base inclusionAI/Ling-3.0-tiny, segun los metadatos del repositorio. En el momento de la consulta acumula 0 descargas y 0 likes, y no cuenta con pipeline tag asignado.
 
 La model card publicada es minima: se limita a declarar la relacion con el modelo base y la licencia. No incluye informacion sobre arquitectura, numero de parametros, longitud de contexto, composicion del dataset de entrenamiento, proceso de alineacion ni idiomas soportados. El sufijo "small" del nombre sugiere una variante de tamano reducido, pero no hay confirmacion documental de ello.
 
@@ -50,7 +50,7 @@ Los siguientes escenarios son hipotesis de trabajo, no capacidades confirmadas: 
 - Prototipado rapido en local: si el modelo resulta ser de tamano reducido (como sugiere el sufijo "small"), encajaria en entornos de desarrollo con GPU de gama media para pruebas de concepto, pendiente de confirmar el numero de parametros.
 - Generacion de texto en aplicaciones internas: uso como generador de borradores o resumenes en herramientas no criticas, con revision humana obligatoria dado que no hay evaluacion de calidad publicada.
 - Base para nuevos fine-tunes: al estar bajo licencia MIT y derivar de un modelo abierto, puede emplearse como punto de partida para ajustes adicionales, verificando antes las condiciones de la licencia del modelo base.
-- Docencia y formacion tecnica: ilustra el ciclo completo de publicacion de un modelo en HuggingFace, incluida la importancia de documentar la model card, aqui practicamente vacia.
+- Docencia y formacion tecnica: ilustra el ciclo completo de publicacion de un modelo en Hugging Face, incluida la importancia de documentar la model card, aqui practicamente vacia.
 - Despliegue de bajo coste en infraestructura propia: viable si el modelo es pequeno y se dispone de pesos en formato adecuado (GGUF, por ejemplo), algo que no se puede confirmar con los datos actuales.
 
 ## Benchmarks y rendimiento
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: no disponible. Sin conocer el numero de parametros ni el formato de pesos no es posible calcularla.
 - GPU recomendadas: no disponible por la misma razon.
 - Viabilidad en GPU de consumo: no determinable con la informacion disponible. El sufijo "small" apunta a que podria caber en GPUs de consumo, pero es una inferencia no confirmada.
-- Opciones de despliegue: no disponible. Dependera del formato de pesos publicado; si existieran pesos GGUF seria viable llama.cpp u Ollama, y si hubiera pesos safetensors en formato HuggingFace, vLLM o TGI. Ninguno de estos formatos esta confirmado.
+- Opciones de despliegue: no disponible. Dependera del formato de pesos publicado; si existieran pesos GGUF seria viable llama.cpp u Ollama, y si hubiera pesos safetensors en formato Hugging Face, vLLM o TGI. Ninguno de estos formatos esta confirmado.
 - Latencia y throughput estimados: no disponible.
 
 Para obtener estos datos, el procedimiento seria descargar el repositorio, revisar `config.json` (numero de parametros, arquitectura, contexto), comprobar los formatos de pesos presentes y ejecutar una medicion propia de VRAM y latencia.
@@ -71,8 +71,8 @@ Para obtener estos datos, el procedimiento seria descargar el repositorio, revis
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| krampenschiesser/ling3-small | no disponible | no disponible | MIT | HuggingFace, 0 descargas | no disponible |
-| inclusionAI/Ling-3.0-tiny (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace | no disponible |
+| krampenschiesser/ling3-small | no disponible | no disponible | MIT | Hugging Face, 0 descargas | no disponible |
+| inclusionAI/Ling-3.0-tiny (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face | no disponible |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No es posible establecer una comparativa rigurosa con modelos alternativos: faltan los parametros, el contexto y cualquier metrica de rendimiento tanto del modelo analizado como de su base. Se recomienda consultar la model card de inclusionAI/Ling-3.0-tiny para obtener los datos del modelo original.
@@ -91,6 +91,6 @@ No es posible establecer una comparativa rigurosa con modelos alternativos: falt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/krampenschiesser/ling3-small
+- Modelo en Hugging Face: https://huggingface.co/krampenschiesser/ling3-small
 - Modelo base declarado: https://huggingface.co/inclusionAI/Ling-3.0-tiny
 - La busqueda web realizada no devolvio ningun enlace relevante sobre el modelo: los resultados obtenidos correspondian a listados de eventos en Hyderabad (India) y no guardan relacion con el modelo ni con su familia.

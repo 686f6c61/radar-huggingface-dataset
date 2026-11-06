@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JoraMindMini_ab_L28 es un modelo publicado en HuggingFace por la cuenta jinofy-corp, distribuido en formato safetensors. Se trata de un lanzamiento prácticamente sin documentación pública: la ficha del repositorio no incluye pipeline asociado, licencia, idiomas ni descripción de capacidades, y a fecha de consulta acumula solo 18 descargas y 0 likes, lo que indica una adopción marginal y nula validación por parte de la comunidad.
+JoraMindMini_ab_L28 es un modelo publicado en Hugging Face por la cuenta jinofy-corp, distribuido en formato safetensors. Se trata de un lanzamiento prácticamente sin documentación pública: la ficha del repositorio no incluye pipeline asociado, licencia, idiomas ni descripción de capacidades, y a fecha de consulta acumula solo 18 descargas y 0 likes, lo que indica una adopción marginal y nula validación por parte de la comunidad.
 
 El propio nombre sugiere que podría tratarse de un modelo compacto ("Mini"), posiblemente con 28 capas ("L28") y de carácter experimental o de ablación (el sufijo "_ab"), aunque ninguna de estas hipótesis está confirmada en el repositorio. Su interés actual es más bien para desarrolladores e investigadores que exploran modelos poco conocidos, no para uso en producción: antes de cualquier despliegue sería imprescindible auditar los pesos, la licencia y el rendimiento real del modelo.
 
@@ -21,13 +21,13 @@ El propio nombre sugiere que podría tratarse de un modelo compacto ("Mini"), po
 
 ## Arquitectura y entrenamiento
 
-El repositorio no publica información sobre la arquitectura del modelo, el número de parámetros, los datos de entrenamiento ni las técnicas de alineamiento empleadas (RLHF, DPO u otras). El único dato técnico verificable es el formato de distribución: safetensors, el estándar habitual para pesos de transformers en el ecosistema de HuggingFace.
+El repositorio no publica información sobre la arquitectura del modelo, el número de parámetros, los datos de entrenamiento ni las técnicas de alineamiento empleadas (RLHF, DPO u otras). El único dato técnico verificable es el formato de distribución: safetensors, el estándar habitual para pesos de transformers en el ecosistema de Hugging Face.
 
 A partir del nombre se pueden formular hipótesis, ninguna confirmada: "Mini" apuntaría a un modelo de tamaño reducido, "L28" podría referirse a 28 capas y "_ab" sugiere una variante experimental o de ablación derivada de otro modelo. Sin tarjeta de modelo ni paper de referencia, no es posible determinar la familia base, el número de tokens de entrenamiento, la composición del dataset ni innovaciones técnicas destacables.
 
 ## Capacidades
 
-- Pipeline de HuggingFace: no disponible, por lo que no se puede confirmar la tarea para la que está diseñado (generación de texto, clasificación, embeddings, etc.).
+- Pipeline de Hugging Face: no disponible, por lo que no se puede confirmar la tarea para la que está diseñado (generación de texto, clasificación, embeddings, etc.).
 - Generación de texto y razonamiento: no disponible; el formato safetensors es habitual en LLM, pero el repositorio no lo confirma.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -72,5 +72,5 @@ No disponible. Al desconocerse la arquitectura, el número de parámetros, la lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jinofy-corp/joraMindMini_ab_L28
+- Hugging Face: https://huggingface.co/jinofy-corp/joraMindMini_ab_L28
 - La búsqueda web no arrojó enlaces relevantes adicionales (papers, blogs, repositorios de código o demos) asociados a este modelo.

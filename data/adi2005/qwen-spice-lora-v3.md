@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ADI2005/qwen-spice-lora-v3 es un adaptador LoRA de 0,3 GB desarrollado por ADI2005, que se aplica sobre el modelo base unsloth/qwen2.5-coder-3b-instruct-bnb-4bit, una version cuantizada a 4 bits mediante bitsandbytes de Qwen2.5-Coder-3B-Instruct. El adaptador fue entrenado con la libreria Unsloth, que acelera el entrenamiento aproximadamente 2 veces respecto a los metodos convencionales, y con TRL de HuggingFace. La model card no especifica la tarea concreta para la que fue ajustado.
+ADI2005/qwen-spice-lora-v3 es un adaptador LoRA de 0,3 GB desarrollado por ADI2005, que se aplica sobre el modelo base unsloth/qwen2.5-coder-3b-instruct-bnb-4bit, una version cuantizada a 4 bits mediante bitsandbytes de Qwen2.5-Coder-3B-Instruct. El adaptador fue entrenado con la libreria Unsloth, que acelera el entrenamiento aproximadamente 2 veces respecto a los metodos convencionales, y con TRL de Hugging Face. La model card no especifica la tarea concreta para la que fue ajustado.
 
 Al ser un adaptador LoRA, no es un modelo autonomo: requiere el modelo base para funcionar. Hereda las capacidades de Qwen2.5-Coder-3B-Instruct, un transformer decoder-only de 3.000 millones de parametros especializado en generacion de codigo, con una ventana de contexto de 32.768 tokens. Su licencia Apache 2.0 permite uso comercial sin restricciones, pero al tratarse de un adaptador reciente sin descargas ni evaluaciones publicadas, su utilidad en produccion no esta validada.
 
@@ -23,7 +23,7 @@ Al ser un adaptador LoRA, no es un modelo autonomo: requiere el modelo base para
 
 El adaptador se aplica sobre unsloth/qwen2.5-coder-3b-instruct-bnb-4bit, la version cuantizada a 4 bits del modelo Qwen2.5-Coder-3B-Instruct de Alibaba Cloud. La arquitectura subyacente es un transformer decoder-only con atencion causal, perteneciente a la familia Qwen2.5, con 3.000 millones de parametros y una ventana de contexto de 32.768 tokens.
 
-El entrenamiento del adaptador se realizo con Unsloth, que optimiza el fine-tuning mediante kernels personalizados y reduccion del uso de memoria, y con TRL de HuggingFace, que proporciona utilidades para entrenamiento con RLHF, DPO y otros metodos de alineacion. La model card no especifica el dataset de entrenamiento, el numero de tokens utilizados ni si se aplicaron tecnicas de alineacion. El tamano del adaptador (0,3 GB) es consistente con un LoRA de rango moderado sobre un modelo de 3B.
+El entrenamiento del adaptador se realizo con Unsloth, que optimiza el fine-tuning mediante kernels personalizados y reduccion del uso de memoria, y con TRL de Hugging Face, que proporciona utilidades para entrenamiento con RLHF, DPO y otros metodos de alineacion. La model card no especifica el dataset de entrenamiento, el numero de tokens utilizados ni si se aplicaron tecnicas de alineacion. El tamano del adaptador (0,3 GB) es consistente con un LoRA de rango moderado sobre un modelo de 3B.
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ El entrenamiento del adaptador se realizo con Unsloth, que optimiza el fine-tuni
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MMLU, HumanEval, GSM8K ni ninguna otra evaluacion. El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido evaluado por la comunidad.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MMLU, HumanEval, GSM8K ni ninguna otra evaluacion. El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido evaluado por la comunidad.
 
 ## Requisitos de hardware
 
@@ -76,7 +76,7 @@ La comparativa se limita al modelo base y su version original, ya que no hay dat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ADI2005/qwen-spice-lora-v3
+- Hugging Face: https://huggingface.co/ADI2005/qwen-spice-lora-v3
 - Version v1: https://huggingface.co/ADI2005/qwen-spice-lora
 - Version v2: https://huggingface.co/ADI2005/qwen-spice-lora-v2
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth

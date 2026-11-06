@@ -6,7 +6,7 @@ MiniMax-H3-Turbo es un ajuste fino del modelo de generacion de video MiniMaxAI/M
 
 Tecnicamente no es un modelo de lenguaje, sino un transformer de difusion orientado a la sintesis audio-video con pipeline text-to-video. La variante de 4 pasos se empaqueta como un adaptador compacto (LoRA sobre el backbone mas proyecciones de salida de video y audio fusionadas) que se aplica sobre el transformer oficial, mientras que las variantes de 6 y 8 pasos incluyen un transformer completo en formato Diffusers. El repositorio ocupa 83,2 GB en total y se apoya en la libreria diffusers, con integracion especifica para ComfyUI mediante un paquete de nodos propio.
 
-Su relevancia actual es practica: los modelos de generacion de video con audio sincronizado tienen un coste de computo elevado por la cantidad de pasos de muestreo, y las destilaciones few-step son la via habitual para hacerlos viables en flujos de trabajo interactivos. El proyecto incluye ademas una demo comparativa con 9 prompts, 11 configuraciones y 99 videos frente a otras alternativas few-step y frente al modelo base a 50 pasos. El registro de HuggingFace muestra 0 descargas y 10 likes, por lo que se trata de una publicacion reciente y con adopcion todavia muy limitada.
+Su relevancia actual es practica: los modelos de generacion de video con audio sincronizado tienen un coste de computo elevado por la cantidad de pasos de muestreo, y las destilaciones few-step son la via habitual para hacerlos viables en flujos de trabajo interactivos. El proyecto incluye ademas una demo comparativa con 9 prompts, 11 configuraciones y 99 videos frente a otras alternativas few-step y frente al modelo base a 50 pasos. El registro de Hugging Face muestra 0 descargas y 10 likes, por lo que se trata de una publicacion reciente y con adopcion todavia muy limitada.
 
 ## Especificaciones tecnicas
 
@@ -98,7 +98,7 @@ La informacion disponible solo permite comparar las tres variantes del propio re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wuli-art/MiniMax-H3-Turbo
+- Modelo en Hugging Face: https://huggingface.co/Wuli-art/MiniMax-H3-Turbo
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia de la comunidad MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Paquete de nodos para ComfyUI: https://github.com/wuli-art/MiniMax-H3-Turbo-ComfyUI

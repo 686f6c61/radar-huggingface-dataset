@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `G21998/r1019-26d7cf3c-z-image-zbx3-s71-94f21b9c` es un artefacto de investigación privado alojado en HuggingFace, no un modelo de lenguaje publicado de forma convencional. La model card lo describe explícitamente como "registro de investigación privado, no un envío" (private research record, not a submission), asociado a un sistema de validación denominado "replay cell" con identificador `a1_zbx3_s71_26d7cf3c`. El repositorio ocupa 4,2 GB y contiene lo que el autor denomina "checkpoints/" (lo que el validador subiría) y "replay/" (logs y registros).
+El modelo identificado como `G21998/r1019-26d7cf3c-z-image-zbx3-s71-94f21b9c` es un artefacto de investigación privado alojado en Hugging Face, no un modelo de lenguaje publicado de forma convencional. La model card lo describe explícitamente como "registro de investigación privado, no un envío" (private research record, not a submission), asociado a un sistema de validación denominado "replay cell" con identificador `a1_zbx3_s71_26d7cf3c`. El repositorio ocupa 4,2 GB y contiene lo que el autor denomina "checkpoints/" (lo que el validador subiría) y "replay/" (logs y registros).
 
 Los metadatos indican que el artefacto corresponde a una tarea con identificador `26d7cf3c` etiquetada como "z-image" con una duración de 0,75 horas, brazo `zbx3`, semilla 71 y árbol `94f21b9c`. El estado registrado es "UPLOAD" con código de retorno 0, sin terminación forzada ("killed False") y finalización normal ("finish finish (trained artifact)"), con 6 miembros. Incluye hashes SHA-256 de artefacto (`39622b37`) e identidad (`2ef4d59f`), cuota 23 y sin flags.
 
@@ -75,5 +75,5 @@ No disponible. No se conocen modelos comparables porque no se ha identificado la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s71-94f21b9c
+- Repositorio en Hugging Face: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s71-94f21b9c
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KenkoAI es un repositorio de modelo publicado en HuggingFace bajo el identificador `businessdevelopment/kenkoai` por el usuario `businessdevelopment`. En el momento de redactar esta ficha, la model card asociada contiene unicamente la declaracion de licencia (`license: mit`) y carece de cualquier descripcion funcional, especificacion tecnica, documentacion de entrenamiento o ejemplo de uso. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline de inferencia declarado.
+KenkoAI es un repositorio de modelo publicado en Hugging Face bajo el identificador `businessdevelopment/kenkoai` por el usuario `businessdevelopment`. En el momento de redactar esta ficha, la model card asociada contiene unicamente la declaracion de licencia (`license: mit`) y carece de cualquier descripcion funcional, especificacion tecnica, documentacion de entrenamiento o ejemplo de uso. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline de inferencia declarado.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el formato de los pesos. Tampoco se ha identificado un paper, blog tecnico, repositorio de codigo o demo asociado al modelo. La busqueda web realizada no devolvio ningun resultado relacionado con el proyecto: los enlaces recuperados corresponden a paginas de soporte de Windows en checo y no guardan relacion alguna con este modelo.
 
@@ -76,6 +76,6 @@ No disponible. Al no conocerse el tamano, la arquitectura ni el rendimiento de K
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/businessdevelopment/kenkoai
+- Repositorio en Hugging Face: https://huggingface.co/businessdevelopment/kenkoai
 - No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.
 - Los resultados devueltos por la busqueda web (paginas de soporte de Windows en checo: support.microsoft.com, etechblog.cz, cs.101-help.com, cz.moyens.net) no guardan relacion con este modelo y se omiten por no ser relevantes.

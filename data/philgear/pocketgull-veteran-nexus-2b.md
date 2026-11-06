@@ -71,10 +71,10 @@ Las cifras de VRAM que siguen son estimaciones derivadas del tamano del modelo b
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pocketgull-veteran-nexus-2b (este) | ~1B (base) + adaptador LoRA | 32 768 tokens | Nexo medico-legal VA, 38 CFR § 4.87 y DBQ | Apache 2.0 en el adaptador; base bajo Gemma Terms of Use | HuggingFace, 0 descargas en el momento de la consulta |
-| google/gemma-3-1b-it (base) | ~1B | 32 768 tokens | Proposito general, instruction-tuned | Gemma Terms of Use | HuggingFace, ampliamente distribuido |
-| MedGemma 4B | no disponible con precision en la informacion consultada | no disponible | Dominio medico general (Google) | Gemma Terms of Use / Health AI Developer Foundations | HuggingFace |
-| BioMistral-7B | 7B | no disponible | Dominio biomedico, basado en Mistral | Apache 2.0 | HuggingFace |
+| pocketgull-veteran-nexus-2b (este) | ~1B (base) + adaptador LoRA | 32 768 tokens | Nexo medico-legal VA, 38 CFR § 4.87 y DBQ | Apache 2.0 en el adaptador; base bajo Gemma Terms of Use | Hugging Face, 0 descargas en el momento de la consulta |
+| google/gemma-3-1b-it (base) | ~1B | 32 768 tokens | Proposito general, instruction-tuned | Gemma Terms of Use | Hugging Face, ampliamente distribuido |
+| MedGemma 4B | no disponible con precision en la informacion consultada | no disponible | Dominio medico general (Google) | Gemma Terms of Use / Health AI Developer Foundations | Hugging Face |
+| BioMistral-7B | 7B | no disponible | Dominio biomedico, basado en Mistral | Apache 2.0 | Hugging Face |
 
 No se dispone de modelos comparables de nicho identico (generacion de nexo para el sistema de prestaciones de veteranos de EE. UU.) en la informacion proporcionada, por lo que la comparacion cuantitativa de rendimiento no es posible.
 
@@ -92,7 +92,7 @@ No se dispone de modelos comparables de nicho identico (generacion de nexo para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/philgear/pocketgull-veteran-nexus-2b
+- Modelo en Hugging Face: https://huggingface.co/philgear/pocketgull-veteran-nexus-2b
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - DOI en Zenodo: https://doi.org/10.5281/zenodo.20647514
 - ORCID del autor: https://orcid.org/0009-0008-1372-5381

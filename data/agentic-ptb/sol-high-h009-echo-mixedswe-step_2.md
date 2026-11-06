@@ -78,6 +78,6 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h009.echo-mixedswe.step_2
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h009.echo-mixedswe.step_2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Los resultados de la busqueda web (articulos sobre GPT-5.6, Echo Chamber Attack, modelos de ultrasonido y plugins de Jenkins) no guardan relacion directa con este modelo especifico y no aportan informacion adicional relevante.

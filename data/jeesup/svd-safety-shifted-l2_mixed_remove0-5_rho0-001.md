@@ -63,10 +63,10 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (SVD safety-shifted) | 6.738.415.616 | no disponible | Compresión SVD con sesgo de seguridad, sin recuperación | llama2 | HuggingFace, 14 descargas |
-| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 tokens (según documentación de Llama 2) | Modelo base conversacional con RLHF | llama2 | HuggingFace, ampliamente disponible |
+| Este checkpoint (SVD safety-shifted) | 6.738.415.616 | no disponible | Compresión SVD con sesgo de seguridad, sin recuperación | llama2 | Hugging Face, 14 descargas |
+| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 tokens (según documentación de Llama 2) | Modelo base conversacional con RLHF | llama2 | Hugging Face, ampliamente disponible |
 | Variantes de poda de Llama 2 7B (por ejemplo, Wanda o SparseGPT) | variable | 4.096 tokens | Poda no estructurada o semiestructurada | llama2 | Repos de investigación |
-| Modelos comprimidos tipo TinyLlama 1.1B | 1.100.000.000 | 2.048 tokens | Entrenamiento desde cero destilado | Apache 2.0 | HuggingFace |
+| Modelos comprimidos tipo TinyLlama 1.1B | 1.100.000.000 | 2.048 tokens | Entrenamiento desde cero destilado | Apache 2.0 | Hugging Face |
 
 La comparación directa con alternativas de compresión es limitada porque este checkpoint no publica métricas numéricas ni versiones factorizadas. Su principal diferencia frente al modelo base es la reducción de parámetros efectivos y el sesgo de la métrica hacia respuestas seguras; frente a métodos de poda como Wanda o SparseGPT, la diferencia es que aquí la compresión se aplica vía SVD con un objetivo de seguridad explícito y sin recuperación posterior.
 
@@ -84,7 +84,7 @@ La comparación directa con alternativas de compresión es limitada porque este 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l2_mixed_remove0.5_rho0.001
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l2_mixed_remove0.5_rho0.001
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código o demos adicionales.

@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de otros repositorios comparables verifi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MrGonao/em-lora-olmo3-7b-sft-attrib-filter-from-llama3.2-3b
+- Repositorio Hugging Face: https://huggingface.co/MrGonao/em-lora-olmo3-7b-sft-attrib-filter-from-llama3.2-3b
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct-SFT
 - TRL (entrenamiento SFT): https://github.com/huggingface/trl
 - PEFT (adaptadores LoRA): https://github.com/huggingface/peft

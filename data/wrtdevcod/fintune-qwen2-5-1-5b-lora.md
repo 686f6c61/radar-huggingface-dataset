@@ -23,7 +23,7 @@ El modelo resuelve el problema de análisis de sentimiento en textos financieros
 
 El adaptador LoRA se aplica sobre Qwen2.5-1.5B-Instruct, un modelo de lenguaje basado en transformer decoder con 1.5 mil millones de parámetros. La técnica LoRA congela los pesos originales e introduce matrices de bajo rango (r=16, alpha=32) en las capas de atención y feed-forward, reduciendo drásticamente el número de parámetros entrenables. El entrenamiento se realizó con QLoRA, que cuantiza el modelo base a 4 bits para permitir el ajuste en una GPU T4 de Colab (16 GB VRAM).
 
-El dataset Financial PhraseBank contiene frases extraídas de informes financieros y noticias, etiquetadas con sentimiento positivo, negativo o neutral. Se utilizó el subconjunto `sentences_50agree` (aquellas con al menos 50% de acuerdo entre anotadores), con 4.846 frases. El bucle de entrenamiento fue implementado manualmente en PyTorch, realizando forward pass, cálculo de pérdida, backward pass y actualización de optimizador paso a paso, sin usar la clase `Trainer` de HuggingFace. No se menciona el uso de RLHF ni DPO; se trata de un fine-tuning supervisado estándar para clasificación.
+El dataset Financial PhraseBank contiene frases extraídas de informes financieros y noticias, etiquetadas con sentimiento positivo, negativo o neutral. Se utilizó el subconjunto `sentences_50agree` (aquellas con al menos 50% de acuerdo entre anotadores), con 4.846 frases. El bucle de entrenamiento fue implementado manualmente en PyTorch, realizando forward pass, cálculo de pérdida, backward pass y actualización de optimizador paso a paso, sin usar la clase `Trainer` de Hugging Face. No se menciona el uso de RLHF ni DPO; se trata de un fine-tuning supervisado estándar para clasificación.
 
 ## Capacidades
 
@@ -64,7 +64,7 @@ No se han publicado resultados adicionales en otros benchmarks (MMLU, HumanEval,
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la misma categoría (adaptadores LoRA para sentimiento financiero sobre Qwen2.5). El único punto de comparación disponible es el modelo base Qwen2.5-1.5B-Instruct, que se incluye en la tabla de benchmarks. Se recomienda consultar el Hub de HuggingFace para buscar otros adaptadores similares, pero no se pueden ofrecer datos concretos sin inventar.
+No se dispone de información sobre modelos comparables en la misma categoría (adaptadores LoRA para sentimiento financiero sobre Qwen2.5). El único punto de comparación disponible es el modelo base Qwen2.5-1.5B-Instruct, que se incluye en la tabla de benchmarks. Se recomienda consultar el Hub de Hugging Face para buscar otros adaptadores similares, pero no se pueden ofrecer datos concretos sin inventar.
 
 ## Limitaciones y advertencias
 

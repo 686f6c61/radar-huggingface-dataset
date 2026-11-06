@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mostafa-ibrahim1625/face-detection-retail-0004-hippolink` es un modelo de detección de rostros publicado en HuggingFace por el usuario mostafa-ibrahim1625. Según su model card, se trata de una conversión a formato OpenVINO IR con cuantización INT8 del detector "Face Detection Retail 0004", orientada a la identificación en tiempo real de pacientes y cuidadores en entornos sanitarios sin conectividad. El objetivo declarado es la ejecución offline en dispositivos móviles y de borde ("mobile edge") usando Intel OpenVINO y ONNX Runtime.
+`mostafa-ibrahim1625/face-detection-retail-0004-hippolink` es un modelo de detección de rostros publicado en Hugging Face por el usuario mostafa-ibrahim1625. Según su model card, se trata de una conversión a formato OpenVINO IR con cuantización INT8 del detector "Face Detection Retail 0004", orientada a la identificación en tiempo real de pacientes y cuidadores en entornos sanitarios sin conectividad. El objetivo declarado es la ejecución offline en dispositivos móviles y de borde ("mobile edge") usando Intel OpenVINO y ONNX Runtime.
 
 El nombre del repositorio remite a la familia de detectores preentrenados `face-detection-retail-0004` distribuidos por Intel con el toolkit OpenVINO, si bien la información proporcionada no confirma la arquitectura exacta, el número de parámetros ni el dataset de entrenamiento original. El repositorio no declara pipeline, licencia ni idiomas soportados, y en el momento de la consulta registra 0 descargas y 0 likes, con un tamaño de 0.0 GB.
 
@@ -80,11 +80,11 @@ No se dispone de datos verificables de benchmarks, licencia ni especificaciones 
 - Alucinación: no aplica en sentido generativo, pero sí existe riesgo de detecciones espurias tratadas como identidades válidas si el pipeline posterior no incorpora verificación.
 - Uso previsto sensible: la identificación biométrica de pacientes y cuidadores está sujeta a normativa de protección de datos (RGPD y, en España, la LOPDGDD), con requisitos específicos para datos biométricos; el despliegue requeriría base jurídica y evaluación de impacto.
 - Tamaño del repositorio de 0.0 GB: es posible que los pesos no estén presentes o que el repositorio contenga solo metadatos; debe comprobarse antes de cualquier integración.
-- Sin pipeline declarado en HuggingFace y sin idiomas declarados, lo que reduce la interoperabilidad con herramientas automáticas del ecosistema.
+- Sin pipeline declarado en Hugging Face y sin idiomas declarados, lo que reduce la interoperabilidad con herramientas automáticas del ecosistema.
 - Fechas de creación y actualización registradas (2026-10-20) resultan atípicas y conviene verificar la integridad y el origen del repositorio.
 - 0 descargas y 0 likes: no existe validación por parte de la comunidad ni informes independientes de uso.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mostafa-ibrahim1625/face-detection-retail-0004-hippolink
+- Hugging Face: https://huggingface.co/mostafa-ibrahim1625/face-detection-retail-0004-hippolink
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

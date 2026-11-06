@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi0_5_robodojo_taco_b64_60k es una política robótica de bajo nivel (low-level policy) publicada por el usuario Myungkyu en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo base `lerobot/pi05_base` sobre el dataset `Myungkyu/RoboDojo-taco-gemini`, compuesto por demostraciones de 8 tareas bimanuales de mesa con robot real, con 100 demostraciones por tarea y etiquetas densas de subtarea procedentes de anotación offline. El resultado es un modelo de tipo vision-language-action (VLA) especializado en control motor, no un modelo de lenguaje de propósito general.
+pi0_5_robodojo_taco_b64_60k es una política robótica de bajo nivel (low-level policy) publicada por el usuario Myungkyu en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo base `lerobot/pi05_base` sobre el dataset `Myungkyu/RoboDojo-taco-gemini`, compuesto por demostraciones de 8 tareas bimanuales de mesa con robot real, con 100 demostraciones por tarea y etiquetas densas de subtarea procedentes de anotación offline. El resultado es un modelo de tipo vision-language-action (VLA) especializado en control motor, no un modelo de lenguaje de propósito general.
 
 El problema que resuelve es el control de un manipulador bimanual a partir de tres vistas de cámara en vivo (cabeza y muñecas izquierda y derecha), propriocepción y el texto de la subtarea actual. La arquitectura declarada es "Pi0.5 vanilla", sin ranura de keyframe ni atestación de memoria, lo que la sitúa como una política reactiva que depende de un planificador externo que le proporcione la subtarea en curso.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Entradas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| pi0_5_robodojo_taco_b64_60k | 4.143.404.816 | 3 cámaras + propriocepción + texto de subtarea | No disponible | HuggingFace, 0 descargas | Fine-tuning específico del dataset RoboDojo, sin evaluación publicada |
-| lerobot/pi05_base | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace | Modelo base del que deriva este ajuste |
-| lerobot/pi0 | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace | Generación anterior de la familia Pi0 dentro de LeRobot; comparación no verificada en la información disponible |
-| Otras políticas VLA de la librería LeRobot (por ejemplo SmolVLA) | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace | Alternativas de la misma categoría; los datos no se han verificado en la información proporcionada |
+| pi0_5_robodojo_taco_b64_60k | 4.143.404.816 | 3 cámaras + propriocepción + texto de subtarea | No disponible | Hugging Face, 0 descargas | Fine-tuning específico del dataset RoboDojo, sin evaluación publicada |
+| lerobot/pi05_base | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face | Modelo base del que deriva este ajuste |
+| lerobot/pi0 | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face | Generación anterior de la familia Pi0 dentro de LeRobot; comparación no verificada en la información disponible |
+| Otras políticas VLA de la librería LeRobot (por ejemplo SmolVLA) | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face | Alternativas de la misma categoría; los datos no se han verificado en la información proporcionada |
 
 La búsqueda web realizada no devolvió información técnica sobre este modelo ni sobre alternativas comparables, por lo que las celdas no documentadas se marcan explícitamente como no disponibles.
 
@@ -96,7 +96,7 @@ La búsqueda web realizada no devolvió información técnica sobre este modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/pi0_5_robodojo_taco_b64_60k
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/pi0_5_robodojo_taco_b64_60k
 - Dataset de ajuste: https://huggingface.co/datasets/Myungkyu/RoboDojo-taco-gemini
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo; los resultados obtenidos correspondían a un comercio de moda y no guardan relación con la ficha.

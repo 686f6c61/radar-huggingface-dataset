@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks para comparar el rendimiento de calidad fre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FrostWolfAI/Spark-X2.6-4B-abliterated-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/FrostWolfAI/Spark-X2.6-4B-abliterated-MLX-8bit
 - Modelo base BF16: https://huggingface.co/FrostWolfAI/Spark-X2.6-4B-abliterated
 - Versión GGUF: https://huggingface.co/FrostWolfAI/Spark-X2.6-4B-abliterated-GGUF
 - Versión MLX 4-bit: https://huggingface.co/FrostWolfAI/Spark-X2.6-4B-abliterated-MLX

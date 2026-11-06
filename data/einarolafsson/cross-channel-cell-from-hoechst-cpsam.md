@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cross-channel cell from hoechst (Cellpose-SAM) es un modelo de segmentación de imágenes de microscopía publicado por el usuario einarolafsson en HuggingFace. Se trata de un ajuste fino del modelo base `cpsam_v2` de Cellpose-SAM, entrenado durante 100 épocas en modo fichero, cuyo objetivo es generar máscaras celulares completas a partir de la señal del canal nuclear (Hoechst), es decir, resolver una tarea cross-channel: predecir la célula entera cuando solo se dispone de tinción nuclear.
+Cross-channel cell from hoechst (Cellpose-SAM) es un modelo de segmentación de imágenes de microscopía publicado por el usuario einarolafsson en Hugging Face. Se trata de un ajuste fino del modelo base `cpsam_v2` de Cellpose-SAM, entrenado durante 100 épocas en modo fichero, cuyo objetivo es generar máscaras celulares completas a partir de la señal del canal nuclear (Hoechst), es decir, resolver una tarea cross-channel: predecir la célula entera cuando solo se dispone de tinción nuclear.
 
 El modelo está pensado para integrarse en spaCR, una herramienta de análisis fenotípico espacial de cribados de microscopía de alto contenido, y también puede usarse directamente con la librería Cellpose. El caso de uso declarado gira en torno a experimentos con Toxoplasma, donde la máscara celular obtenida se combina con modelos de patógeno para analizar la infección a nivel de célula individual.
 
@@ -81,7 +81,7 @@ La mejora de F1 respecto al modelo base es de 0,5685 puntos absolutos (2,89x). E
 
 | Modelo | Tarea | F1 en el holdout del autor | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cross-channel-cell-from-hoechst-cpsam | Segmentacion de celula completa desde canal nuclear | 0,8697 (mejor epoca) | CC-BY-4.0 | HuggingFace, 0 descargas |
+| cross-channel-cell-from-hoechst-cpsam | Segmentacion de celula completa desde canal nuclear | 0,8697 (mejor epoca) | CC-BY-4.0 | Hugging Face, 0 descargas |
 | stock `cpsam_v2` (Cellpose-SAM) | Segmentacion generalista de celulas | 0,3012 | no disponible en la informacion proporcionada | Modelo base de Cellpose |
 | Otros segmentadores generalistas (Cellpose, StarDist, SAM aplicado a microscopia) | Segmentacion de instancias | no disponible | no disponible | no disponible |
 
@@ -102,7 +102,7 @@ La comparacion cuantitativa solo es posible frente al checkpoint base, porque es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/einarolafsson/cross-channel-cell-from-hoechst-cpsam
+- Modelo en Hugging Face: https://huggingface.co/einarolafsson/cross-channel-cell-from-hoechst-cpsam
 - Dataset de entrenamiento: https://huggingface.co/datasets/einarolafsson/cross-channel-cell-from-hoechst
 - Repositorio de spaCR: https://github.com/EinarOlafsson/spacr
 - Paquete en PyPI: https://pypi.org/project/spacr/

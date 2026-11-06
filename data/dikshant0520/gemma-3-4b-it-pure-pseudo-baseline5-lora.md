@@ -83,7 +83,7 @@ El adaptador mejora el rendimiento en el dominio específico de conducción resp
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/dikshant0520/gemma-3-4b-it-pure-pseudo-baseline5-lora)
-- [HuggingFace del modelo base google/gemma-3-4b-it](https://huggingface.co/google/gemma-3-4b-it)
+- [Hugging Face del adaptador](https://huggingface.co/dikshant0520/gemma-3-4b-it-pure-pseudo-baseline5-lora)
+- [Hugging Face del modelo base google/gemma-3-4b-it](https://huggingface.co/google/gemma-3-4b-it)
 - [Página oficial de Gemma 3 de Google DeepMind](https://deepmind.google/models/gemma/gemma-3/)
 - [Página oficial de Gemma 4 de Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)

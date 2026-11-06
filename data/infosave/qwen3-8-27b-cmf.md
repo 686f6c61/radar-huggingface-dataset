@@ -88,6 +88,6 @@ La principal diferencia frente al original es el formato de pesos y el runtime: 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/infosave/Qwen3.8-27B-cmf
+- Repositorio Hugging Face: https://huggingface.co/infosave/Qwen3.8-27B-cmf
 - Repositorio del formato CMF: https://github.com/infosave2007/cmf
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

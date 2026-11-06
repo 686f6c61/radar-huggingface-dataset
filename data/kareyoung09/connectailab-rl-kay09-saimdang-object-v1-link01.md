@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | Adaptador LoRA sobre Qwen3.5-0.8B | No disponible | 97,7% accuracy (reportado) | Apache 2.0 | HuggingFace |
+| LINK-01 (este modelo) | Adaptador LoRA sobre Qwen3.5-0.8B | No disponible | 97,7% accuracy (reportado) | Apache 2.0 | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -87,6 +87,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kareyoung09/connectailab-rl-kay09-saimdang-object-v1-link01
+- Hugging Face: https://huggingface.co/kareyoung09/connectailab-rl-kay09-saimdang-object-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`TimofeyMikhailov/learn-image-captioning64` es un repositorio alojado en HuggingFace cuyo artefacto principal no es un modelo entrenado, sino una nota de investigación sobre *image captioning* (generación automática de descripciones de imágenes). El autor lo publica bajo el epígrafe `research-notes` y la propia model card aclara de forma explícita que el contenido organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y que "no se presenta como un artículo completado ni como una publicación de modelos entrenados".
+`TimofeyMikhailov/learn-image-captioning64` es un repositorio alojado en Hugging Face cuyo artefacto principal no es un modelo entrenado, sino una nota de investigación sobre *image captioning* (generación automática de descripciones de imágenes). El autor lo publica bajo el epígrafe `research-notes` y la propia model card aclara de forma explícita que el contenido organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y que "no se presenta como un artículo completado ni como una publicación de modelos entrenados".
 
 A pesar de esa declaración, el repositorio contiene pesos en formato `safetensors` con un total de 24.832 parámetros, lo que sitúa el artefacto en el rango de los modelos de juguete o de pruebas de integración más que en el de un sistema utilizable en producción. No hay información publicada sobre la arquitectura concreta más allá de la etiqueta genérica `transformer`, ni sobre la longitud de contexto, los idiomas soportados o el dataset de entrenamiento.
 
@@ -49,7 +49,7 @@ Existe una discrepancia relevante entre el contenido del repositorio (pesos `saf
 
 - Plantilla de nota de investigación reproducible: el repositorio puede tomarse como ejemplo de estructura para documentar una hipótesis de *image captioning* con criterios de evaluación, confounders y comprobaciones de reproducibilidad antes de ejecutar experimentos.
 - Punto de partida para un proyecto de *captioning* educativo: un desarrollador puede leer `notes.md` para identificar los datasets de referencia (MS COCO Captions, NoCaps, TextCaps) y las comparativas con *baselines* emparejados que el autor propone.
-- Prueba de integración de *tooling* de HuggingFace: el archivo `safetensors` de 24.832 parámetros es lo bastante pequeño como para validar código de carga, inspección de pesos o conversión de formatos sin consumir recursos.
+- Prueba de integración de *tooling* de Hugging Face: el archivo `safetensors` de 24.832 parámetros es lo bastante pequeño como para validar código de carga, inspección de pesos o conversión de formatos sin consumir recursos.
 - Verificación de licencias en pipelines de datos: al estar bajo `cc-by-4.0`, sirve para ensayar flujos de atribución y cumplimiento cuando se combinan artefactos con datasets externos sujetos a sus propios términos.
 - Docencia sobre buenas prácticas de publicación: el contraste entre la model card (que niega publicar *checkpoint*) y la presencia de pesos permite discutir la importancia de la coherencia entre documentación y artefactos.
 - Auditoría de repositorios de bajo uso: con 0 descargas y 0 *likes*, es un caso útil para estudiar cómo se comportan los sistemas de descubrimiento de modelos ante repositorios sin validación comunitaria.
@@ -86,7 +86,7 @@ No disponible. No se puede establecer una comparativa rigurosa porque el reposit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TimofeyMikhailov/learn-image-captioning64
+- Modelo en Hugging Face: https://huggingface.co/TimofeyMikhailov/learn-image-captioning64
 - Archivo principal citado en la model card: `notes.md` (dentro del repositorio)
 - Datasets mencionados como contexto de evaluación en la nota (sin enlace directo publicado): MS COCO Captions, NoCaps, TextCaps
 

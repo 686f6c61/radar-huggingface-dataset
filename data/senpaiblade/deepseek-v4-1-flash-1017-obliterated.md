@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-obliterated es una variante del modelo DeepSeek-V4.1-Flash-1017 (desarrollado por DeepSeek) a la que se le ha aplicado una ablación de la dirección de rechazo mediante la herramienta OBLITERATUS con el método failspy. El resultado es un modelo que conserva las capacidades del original pero que reduce drásticamente su tasa de rechazo ante peticiones que el modelo base declinaría. Lo publica el usuario Senpaiblade en HuggingFace bajo licencia MIT.
+DeepSeek-V4.1-Flash-1017-obliterated es una variante del modelo DeepSeek-V4.1-Flash-1017 (desarrollado por DeepSeek) a la que se le ha aplicado una ablación de la dirección de rechazo mediante la herramienta OBLITERATUS con el método failspy. El resultado es un modelo que conserva las capacidades del original pero que reduce drásticamente su tasa de rechazo ante peticiones que el modelo base declinaría. Lo publica el usuario Senpaiblade en Hugging Face bajo licencia MIT.
 
 El modelo base es un transformer de tipo Mixture of Experts (MoE) con 754.638.836.864 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de modelos frontera de gran escala. La modificación no altera la arquitectura ni el entrenamiento original: solo ajusta los pesos para eliminar la dirección de activación asociada al rechazo, manteniendo coherencia y capacidad según las métricas del autor (100% en ambas).
 
@@ -112,8 +112,8 @@ Protocolo de evaluación: los jueces (Claude Opus 4.6 y GPT-6.1 Sol, con tres an
 
 | Modelo | Parámetros totales | Contexto | Licencia | Estado de alineamiento | Disponibilidad |
 |---|---:|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-obliterated | 754,6 mil millones | no disponible | MIT | Rechazo ablacionado (4% rechazo completo) | HuggingFace, 0 descargas |
-| DeepSeek-V4.1-Flash-1017 (base) | no disponible | no disponible | no disponible | Alineado (81,62% rechazo completo) | HuggingFace (referenciado) |
+| DeepSeek-V4.1-Flash-1017-obliterated | 754,6 mil millones | no disponible | MIT | Rechazo ablacionado (4% rechazo completo) | Hugging Face, 0 descargas |
+| DeepSeek-V4.1-Flash-1017 (base) | no disponible | no disponible | no disponible | Alineado (81,62% rechazo completo) | Hugging Face (referenciado) |
 | Otras variantes obliteradas de la familia DeepSeek | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de modelos comparables de terceros en la información proporcionada; la comparación se limita al modelo base del que deriva.
@@ -132,7 +132,7 @@ No se dispone de datos de benchmarks de modelos comparables de terceros en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Senpaiblade/DeepSeek-V4.1-Flash-1017-obliterated
+- Modelo en Hugging Face: https://huggingface.co/Senpaiblade/DeepSeek-V4.1-Flash-1017-obliterated
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Herramienta OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Detalles del método (provenance): https://huggingface.co/Senpaiblade/DeepSeek-V4.1-Flash-1017-obliterated/blob/main/winner-recovery-provenance.json

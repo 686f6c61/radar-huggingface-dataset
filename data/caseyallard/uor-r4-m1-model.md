@@ -96,8 +96,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Tipo | Contexto | Parámetros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UOR-R4 M1 model (este) | Tronco discreto entero de 19 tablas | 192 tokens | No expresado en parámetros; artefacto ~86,5 MB | MIT | HuggingFace, runtime nativo y WASM |
-| `caseyallard/uor-r4-m1-discrete` | Exportaciones base Stage-T de 4 tablas | No disponible | No disponible; artefacto ~542 KB | MIT (según el proyecto) | HuggingFace |
+| UOR-R4 M1 model (este) | Tronco discreto entero de 19 tablas | 192 tokens | No expresado en parámetros; artefacto ~86,5 MB | MIT | Hugging Face, runtime nativo y WASM |
+| `caseyallard/uor-r4-m1-discrete` | Exportaciones base Stage-T de 4 tablas | No disponible | No disponible; artefacto ~542 KB | MIT (según el proyecto) | Hugging Face |
 | Transformers de referencia (p. ej. modelos de ~100 M parámetros) | Transformer denso | Habitualmente 2.048–8.192 tokens | ~100 M | Variable | Amplia |
 
 La comparación con transformers convencionales no es directa: este modelo no genera texto coherente y su contexto es de 192 tokens, frente a los miles de tokens habituales en modelos densos del mismo orden de tamaño de artefacto. La alternativa más cercana dentro del propio proyecto es `caseyallard/uor-r4-m1-discrete`, que contiene las exportaciones base de 4 tablas (542 KB cada una), un contenedor y una ruta de ejecución distintos y 160 veces más pequeño. No se dispone de datos de benchmarks comparables con modelos de la misma categoría fuera del proyecto.
@@ -117,7 +117,7 @@ La comparación con transformers convencionales no es directa: este modelo no ge
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/caseyallard/uor-r4-m1-model
+- Hugging Face: https://huggingface.co/caseyallard/uor-r4-m1-model
 - Exportaciones base Stage-T de 4 tablas: https://huggingface.co/caseyallard/uor-r4-m1-discrete
 - Almacén sellado del proyecto: https://huggingface.co/caseyallard/uor-r4-store
 - Pre-registro del cierre M1 (referenciado en la model card): `docs/harness/prep/m1-close-saved-model-2026-10-26.md`

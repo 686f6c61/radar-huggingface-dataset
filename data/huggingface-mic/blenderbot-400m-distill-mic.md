@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`blenderbot-400M-distill-mic` es un artefacto de prueba publicado por la organizacion `huggingface-mic` en HuggingFace, no un modelo entrenado ni utilizable para inferencia real. Se trata de un "slim fixture" derivado de `facebook/blenderbot-400M-distill`: conserva la misma arquitectura (`BlenderbotForConditionalGeneration`) y los mismos nombres de tensores que el checkpoint original, pero con una configuracion reducida a 2 capas de encoder y 2 de decoder, lo que deja el total en 704.584 parametros (frente a los aproximadamente 400 millones del modelo base).
+`blenderbot-400M-distill-mic` es un artefacto de prueba publicado por la organizacion `huggingface-mic` en Hugging Face, no un modelo entrenado ni utilizable para inferencia real. Se trata de un "slim fixture" derivado de `facebook/blenderbot-400M-distill`: conserva la misma arquitectura (`BlenderbotForConditionalGeneration`) y los mismos nombres de tensores que el checkpoint original, pero con una configuracion reducida a 2 capas de encoder y 2 de decoder, lo que deja el total en 704.584 parametros (frente a los aproximadamente 400 millones del modelo base).
 
 Su proposito es servir como fixture de integracion para el proyecto `transformers-mic`: permite validar contratos de uso (manifiesto `integration.json`, expectativas de framework en `integrations/transformers/expectations`) y comprobar que un pipeline de Transformers carga, ejecuta y propaga gradientes correctamente sin necesidad de descargar pesos de cientos de megabytes. Los pesos son aleatorios (semilla 17) y se generaron sin entrenamiento, unicamente superando una puerta de sensibilidad a la entrada (cada perturbacion de las entradas mueve los logits al menos 0,001).
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/blenderbot-400M-distill-mic` | 0,7 M | no disponible | Fixture de test | no disponible | HuggingFace |
-| `facebook/blenderbot-400M-distill` | ~400 M | no disponible | Dialogo abierto | no disponible en la informacion | HuggingFace |
-| Otros fixtures de `huggingface-mic` | variable (reducidos) | no disponible | Pruebas de integracion | no disponible | HuggingFace |
+| `huggingface-mic/blenderbot-400M-distill-mic` | 0,7 M | no disponible | Fixture de test | no disponible | Hugging Face |
+| `facebook/blenderbot-400M-distill` | ~400 M | no disponible | Dialogo abierto | no disponible en la informacion | Hugging Face |
+| Otros fixtures de `huggingface-mic` | variable (reducidos) | no disponible | Pruebas de integracion | no disponible | Hugging Face |
 
 La comparacion relevante es con el modelo base: mismo tokenizador y mismos nombres de tensores, pero 570 veces menos parametros y pesos aleatorios. Frente a otros fixtures del mismo proyecto, comparte el mismo enfoque (config reducida, pesos aleatorios, puerta de sensibilidad) pero cubre especificamente la familia BlenderBot.
 
@@ -80,7 +80,7 @@ La comparacion relevante es con el modelo base: mismo tokenizador y mismos nombr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/blenderbot-400M-distill-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/blenderbot-400M-distill-mic
 - Modelo base: https://huggingface.co/facebook/blenderbot-400M-distill
 - Explicacion del proceso de reduccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/blenderbot-400M-distill-mic.html
 - Script de construccion de fixtures: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

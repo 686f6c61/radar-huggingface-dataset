@@ -72,7 +72,7 @@ No se dispone de información suficiente para una comparativa con modelos de la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andreagemelli/baguettotron-vision-vqa
+- Modelo en Hugging Face: https://huggingface.co/andreagemelli/baguettotron-vision-vqa
 - Checkpoint de alineación: https://huggingface.co/andreagemelli/baguettotron-internvit-alignment
 - Colección Baguettotron-VLM: https://huggingface.co/collections/andreagemelli/baguettotron-vlm-69de37b4cab1960226e9c1f7
 - Repositorio de código: https://github.com/andreagemelli/baguettotron-vlm

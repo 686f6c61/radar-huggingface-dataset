@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Rol | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 | Objetivo en precisión completa | 120B totales, 12B activos | Hasta 1M tokens | OpenMDW-1.1 | HuggingFace |
-| NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4 | Objetivo cuantizado | 120B totales, 12B activos | Hasta 1M tokens | OpenMDW-1.1 | HuggingFace |
-| NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-LiLiCorr | Borrador de decodificación especulativa | 0,96B medidos, 1,13B declarados | Ventana de 8192 en el borrador; 114.688 en el servicio | OpenMDW-1.1 | HuggingFace |
+| NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 | Objetivo en precisión completa | 120B totales, 12B activos | Hasta 1M tokens | OpenMDW-1.1 | Hugging Face |
+| NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4 | Objetivo cuantizado | 120B totales, 12B activos | Hasta 1M tokens | OpenMDW-1.1 | Hugging Face |
+| NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-LiLiCorr | Borrador de decodificación especulativa | 0,96B medidos, 1,13B declarados | Ventana de 8192 en el borrador; 114.688 en el servicio | OpenMDW-1.1 | Hugging Face |
 
 Existen otras familias de borradores para decodificación especulativa, como EAGLE-3 o Medusa, pero no se dispone de datos verificados de parámetros, contexto, licencia ni rendimiento en la información proporcionada, por lo que no se incluyen cifras comparativas.
 
@@ -94,7 +94,7 @@ Existen otras familias de borradores para decodificación especulativa, como EAG
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-LiLiCorr)
+- [Modelo en Hugging Face](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-LiLiCorr)
 - [Modelo objetivo BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16)
 - [Modelo objetivo NVFP4](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4)
 - [Artículo de LiLiCorr (arXiv:2608.20530)](https://arxiv.org/abs/2608.20530)

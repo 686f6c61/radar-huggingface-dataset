@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SO-101 base-height and external-camera DR100 es una política robótica visuomotora (vision-language-action) obtenida por ajuste fino de GR00T N1.7 sobre 100 episodios scripted considerados exitosos. La desarrolla el usuario sreetz-nv y se distribuye a través de HuggingFace dentro del ecosistema LeRobot, con 3.144.016.000 parámetros (aproximadamente 3,14 mil millones) y un repositorio de 12,6 GB en formato safetensors. Su propósito es controlar un brazo SO-101 de color naranja a partir de dos cámaras (una externa angulada y una de muñeca), emitiendo acciones articulares en grados y un valor porcentual de pinza.
+SO-101 base-height and external-camera DR100 es una política robótica visuomotora (vision-language-action) obtenida por ajuste fino de GR00T N1.7 sobre 100 episodios scripted considerados exitosos. La desarrolla el usuario sreetz-nv y se distribuye a través de Hugging Face dentro del ecosistema LeRobot, con 3.144.016.000 parámetros (aproximadamente 3,14 mil millones) y un repositorio de 12,6 GB en formato safetensors. Su propósito es controlar un brazo SO-101 de color naranja a partir de dos cámaras (una externa angulada y una de muñeca), emitiendo acciones articulares en grados y un valor porcentual de pinza.
 
 El interés técnico del modelo reside en el régimen de domain randomization aplicado durante el entrenamiento: se introduce una variación de la altura de la base del robot de ±15 mm y una variación leve de la focal y la posición de la cámara externa, manteniendo el frustum pinhole nominal. El objetivo es que la política no dependa de una calibración extrínseca exacta ni de una altura de montaje fija, algo habitual en despliegues reales donde el robot se recoloca entre sesiones.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Parámetros | Horizonte de acción | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| SO-101 DR100 (este modelo) | 3,14 mil millones | H=32 | no disponible | HuggingFace, 0 descargas | evaluación en simulación pendiente |
+| SO-101 DR100 (este modelo) | 3,14 mil millones | H=32 | no disponible | Hugging Face, 0 descargas | evaluación en simulación pendiente |
 | GR00T N1.7 (modelo base) | no disponible | no disponible | no disponible | no disponible en la información proporcionada | no disponible |
 | Otras políticas VLA de manipulación | no disponible | no disponible | no disponible | no disponible en la información proporcionada | no disponible |
 
@@ -93,7 +93,7 @@ No se dispone de datos verificables en la información proporcionada para establ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sreetz-nv/so101_orange_base_camera_dr100_h32_b16_20k_20260919
+- Hugging Face: https://huggingface.co/sreetz-nv/so101_orange_base_camera_dr100_h32_b16_20k_20260919
 - Revisión base de GR00T N1.7 indicada en el manifest: 2fc962b973bccdd5d8ce4f67cc63b264d6886495
 - Commit del entrenador indicado en la model card: 30da8e687a6dfc617fcd94afc367ac7071c376ce
 - No se han encontrado enlaces relevantes adicionales en la búsqueda web: los resultados devueltos corresponden a páginas de Discord y no están relacionados con el modelo.

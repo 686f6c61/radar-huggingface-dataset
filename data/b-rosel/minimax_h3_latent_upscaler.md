@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Espacio de trabajo | Factores de escala | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Minimax H3 Latent Upscaler (este modelo) | ~345 M | Latente de 24 canales de Minimax H3 | 1,0×–4,0× continuo | Apache 2.0 | SafeTensors (bf16, fp16) y .pth (fp32) en HuggingFace |
+| Minimax H3 Latent Upscaler (este modelo) | ~345 M | Latente de 24 canales de Minimax H3 | 1,0×–4,0× continuo | Apache 2.0 | SafeTensors (bf16, fp16) y .pth (fp32) en Hugging Face |
 | LTX 2.3 Spatial Upscaler | No disponible | Latente de LTX 2.3 | No disponible | No disponible | Referenciado en la model card como inspiración arquitectónica |
 | Interpolación bilineal o bicúbica de latentes | 0 (no aprendida) | Cualquier latente | Cualquiera | No aplica | Implementada en cualquier framework |
 
@@ -95,14 +95,14 @@ No se dispone de datos comparativos de rendimiento, parametros, contexto ni lice
 - Cobertura de escalas desigual: el 40% del entrenamiento se concentra en 2×, por lo que el comportamiento en escalas poco representadas (por ejemplo 3,7× o 4×) puede ser menos fiable.
 - Idiomas: no aplica, pero conviene señalar que no hay soporte ni evaluación multilingüe porque el modelo no procesa texto.
 - Licencia: Apache 2.0 permite uso comercial y modificación, con obligación de conservar el aviso de licencia y de atribución. No se documentan restricciones adicionales por parte del autor.
-- Trazabilidad: la ficha de HuggingFace consultada figura bajo el autor `b-rosel`, mientras que la model card y sus enlaces apuntan a la organización `LBH-123-AI`. Conviene verificar el origen y la cadena de custodia del checkpoint antes de desplegarlo.
+- Trazabilidad: la ficha de Hugging Face consultada figura bajo el autor `b-rosel`, mientras que la model card y sus enlaces apuntan a la organización `LBH-123-AI`. Conviene verificar el origen y la cadena de custodia del checkpoint antes de desplegarlo.
 - Madurez: 0 descargas y 0 likes en la fecha de la consulta, publicación creada y actualizada el mismo día (2026-09-23) y sin historial de versiones más allá de la v1. Riesgo de ser un artefacto reciente y poco validado por la comunidad.
 - Dependencia de tooling: el uso previsto requiere el nodo personalizado de ComfyUI, que infiere la arquitectura desde el state dict; los `config.json` no se leen en tiempo de carga, lo que puede dificultar auditorías automáticas.
 - Coste indirecto: el ahorro real depende de que el paso de refinado posterior exista en el pipeline; sin él, la ganancia no se materializa en calidad final.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/b-rosel/Minimax_h3_latent_Upscaler
+- Modelo en Hugging Face: https://huggingface.co/b-rosel/Minimax_h3_latent_Upscaler
 - Organización referenciada en la model card: https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler
 - Checkpoints v1: https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler/tree/main/minimax_h3_latent_upscaler_3d_conv_v1
 - Especificación de arquitectura: https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler/blob/main/minimax_h3_latent_upscaler_3d_conv_v1/config.json

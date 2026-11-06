@@ -4,7 +4,7 @@
 
 ThoxWork-Mind-4B es un modelo de generación de texto publicado por Thox-ai que no introduce pesos nuevos: se trata de un empaquetado del modelo base Qwen/Qwen3-4B (4.000 millones de parámetros, licencia Apache-2.0) sobre el que se ha superpuesto un perfil de sistema y un paquete de conocimiento versionado. El autor lo describe explícitamente como un "modelo configurado" (configuration-derived), no entrenado, orientado a un rol de perfil de decisión empresarial para sitios MeshGroup dentro del ecosistema THOX Work.
 
-El repositorio de HuggingFace contiene únicamente el artefacto de empaquetado: un `Modelfile` de Ollama, un `manifest.json` con el pin del modelo base y un `thox-knowledge-v0.1.jsonl` de 8 entradas públicas verificadas. El modelo ejecutable se distribuye a través de Ollama (`Thox-ai/thoxwork-mind-4b`, 2,50 GB en su etiqueta por defecto), que descarga los pesos originales de Qwen3-4B desde el digest fijado en el manifiesto.
+El repositorio de Hugging Face contiene únicamente el artefacto de empaquetado: un `Modelfile` de Ollama, un `manifest.json` con el pin del modelo base y un `thox-knowledge-v0.1.jsonl` de 8 entradas públicas verificadas. El modelo ejecutable se distribuye a través de Ollama (`Thox-ai/thoxwork-mind-4b`, 2,50 GB en su etiqueta por defecto), que descarga los pesos originales de Qwen3-4B desde el digest fijado en el manifiesto.
 
 Su relevancia es acotada y muy específica: sirve como ejemplo de patrón de distribución "local-first" donde un tercero publica una configuración reproducible sobre un modelo abierto, con evaluación medida en hardware de gama baja (CPU de 4 vCPU y 8 GB de RAM). No aporta mejoras de capacidad sobre Qwen3-4B más allá del perfil de sistema y del grounding contra el paquete de conocimiento.
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThoxWork-Mind-4B | 4B | 8.192 (evaluado) | 15,3 tok/s en CPU; 8/8 grounding con pack | Apache-2.0 | HuggingFace (empaquetado) y Ollama |
-| Qwen/Qwen3-4B | 4B | no disponible | Base del anterior; benchmarks no disponibles en la información | Apache-2.0 | HuggingFace y Ollama (`qwen3:4b`) |
+| ThoxWork-Mind-4B | 4B | 8.192 (evaluado) | 15,3 tok/s en CPU; 8/8 grounding con pack | Apache-2.0 | Hugging Face (empaquetado) y Ollama |
+| Qwen/Qwen3-4B | 4B | no disponible | Base del anterior; benchmarks no disponibles en la información | Apache-2.0 | Hugging Face y Ollama (`qwen3:4b`) |
 | Alternativas de 4B de otros fabricantes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación relevante es con su propio modelo base: ThoxWork-Mind-4B no modifica los pesos de Qwen3-4B, por lo que su capacidad intrínseca es la del base; la diferencia está en el perfil de sistema, el paquete de conocimiento y la reproducibilidad del empaquetado.
@@ -93,11 +93,11 @@ La comparación relevante es con su propio modelo base: ThoxWork-Mind-4B no modi
 - Sesgos conocidos: no documentados en la información disponible.
 - Riesgo de alucinación: mitigado por instrucción de perfil y grounding, pero no eliminado; la puntuación de grounding publicada (8/8) corresponde a preguntas con pasaje suministrado.
 - Licencia Apache-2.0 permite uso comercial, pero los elementos propios de THOX (perfil de sistema, paquete de conocimiento, empaquetado) se rigen por sus propios términos, no detallados.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta; no hay validación independiente de la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta; no hay validación independiente de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxWork-Mind-4B
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxWork-Mind-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Modelo en Ollama: `Thox-ai/thoxwork-mind-4b` (referencia indicada en la model card; URL no disponible)
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xxparthparekhxx/sigma-go
+- Hugging Face: https://huggingface.co/xxparthparekhxx/sigma-go
 - Repositorio GitHub: https://github.com/xxparthparekhxx/Chess-Ai
 - Tabla de movimientos (`src/dataset.py`): https://github.com/xxparthparekhxx/Chess-Ai/blob/master/src/dataset.py
 - Búsqueda MCTS (`src/mcts.py`): https://github.com/xxparthparekhxx/Chess-Ai/blob/master/src/mcts.py

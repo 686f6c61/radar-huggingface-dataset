@@ -97,7 +97,7 @@ La comparativa directa con otros modelos abliterados no está disponible en la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/timteh673/Qwen3.8-27B-Opus-Abliterix-Reasoning-MLX-8bit
+- Repositorio en Hugging Face: https://huggingface.co/timteh673/Qwen3.8-27B-Opus-Abliterix-Reasoning-MLX-8bit
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF de Qwen3.8-27B (por unsloth): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Página de Qwen3.8 en LM Studio: https://lmstudio.ai/models/qwen3.8

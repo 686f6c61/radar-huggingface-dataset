@@ -78,6 +78,6 @@ No hay modelos comparables con información pública. El checkpoint es un mirror
 
 ## Enlaces
 
-- Repo HuggingFace del mirror: https://huggingface.co/greenfield0810/affine-ark-dd2673018a9e
+- Repo Hugging Face del mirror: https://huggingface.co/greenfield0810/affine-ark-dd2673018a9e
 - Repo original: https://huggingface.co/tammyfritz/Affine-5hmwhnfbix-tammy7
 - Archivo de procedencia (provenance): [`_affine_provenance.json`](_affine_provenance.json) (dentro del repo)

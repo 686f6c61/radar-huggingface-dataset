@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_488174279_mixer_tiny` es un artefacto de código publicado por el usuario `cocosasaki` en HuggingFace bajo licencia MIT. Se describe como una implementación a escala *tiny* de la arquitectura **mixer** (posiblemente relacionada con MLP-Mixer, aunque no se confirma explícitamente), diseñada para tareas de aprendizaje contrastivo. La información disponible es muy escasa: no se especifican parámetros, contexto, idiomas ni datos de entrenamiento, y el único archivo presente es un script Python (`model_488174279_mixer_tiny.py`), no un conjunto de pesos serializado.
+El modelo `model_488174279_mixer_tiny` es un artefacto de código publicado por el usuario `cocosasaki` en Hugging Face bajo licencia MIT. Se describe como una implementación a escala *tiny* de la arquitectura **mixer** (posiblemente relacionada con MLP-Mixer, aunque no se confirma explícitamente), diseñada para tareas de aprendizaje contrastivo. La información disponible es muy escasa: no se especifican parámetros, contexto, idiomas ni datos de entrenamiento, y el único archivo presente es un script Python (`model_488174279_mixer_tiny.py`), no un conjunto de pesos serializado.
 
 El modelo parece ser un experimento académico o de investigación, sin evidencia de uso práctico ni benchmarks publicados. Su relevancia actual es limitada, ya que carece de documentación técnica completa y no se ha validado en tareas estándar. La licencia MIT permite uso comercial y modificación, pero la falta de datos de rendimiento y de artefactos de inferencia lo hace difícil de evaluar o desplegar directamente.
 
@@ -67,4 +67,4 @@ No se dispone de información sobre modelos comparables. No hay datos de rendimi
 
 ## 9. Enlaces
 
-- [HuggingFace - cocosasaki/model_488174279_mixer_tiny](https://huggingface.co/cocosasaki/model_488174279_mixer_tiny)
+- [Hugging Face - cocosasaki/model_488174279_mixer_tiny](https://huggingface.co/cocosasaki/model_488174279_mixer_tiny)

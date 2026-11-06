@@ -75,11 +75,11 @@ No se han publicado resultados de benchmarks específicos de esta build cuantiza
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AesCode-32B-abliterated-MLX-4bit | 33,36 B | no disponible | Código estético multimodal, cuantizado 4-bit MLX | apache-2.0 | HuggingFace (divinetribe) |
-| AesCode-32B-abliterated-MLX-bf16 | no disponible | no disponible | Misma familia, precisión completa | apache-2.0 | HuggingFace (divinetribe) |
-| AesCode-32B-abliterated-MLX-8bit | no disponible | no disponible | Misma familia, media precisión | apache-2.0 | HuggingFace (divinetribe) |
-| microsoft/AesCode-32B | 32 B (aproximado) | no disponible | Modelo base original | no disponible en la información | HuggingFace (microsoft) |
-| Qwen/Qwen3-VL-32B-Instruct | 32 B (aproximado) | no disponible | Backbone multimodal general | no disponible en la información | HuggingFace (Qwen) |
+| AesCode-32B-abliterated-MLX-4bit | 33,36 B | no disponible | Código estético multimodal, cuantizado 4-bit MLX | apache-2.0 | Hugging Face (divinetribe) |
+| AesCode-32B-abliterated-MLX-bf16 | no disponible | no disponible | Misma familia, precisión completa | apache-2.0 | Hugging Face (divinetribe) |
+| AesCode-32B-abliterated-MLX-8bit | no disponible | no disponible | Misma familia, media precisión | apache-2.0 | Hugging Face (divinetribe) |
+| microsoft/AesCode-32B | 32 B (aproximado) | no disponible | Modelo base original | no disponible en la información | Hugging Face (microsoft) |
+| Qwen/Qwen3-VL-32B-Instruct | 32 B (aproximado) | no disponible | Backbone multimodal general | no disponible en la información | Hugging Face (Qwen) |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ No se han publicado resultados de benchmarks específicos de esta build cuantiza
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/divinetribe/AesCode-32B-abliterated-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/divinetribe/AesCode-32B-abliterated-MLX-4bit
 - Modelo base: https://huggingface.co/microsoft/AesCode-32B
 - Backbone: https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct
 - Build bf16: https://huggingface.co/divinetribe/AesCode-32B-abliterated-MLX-bf16

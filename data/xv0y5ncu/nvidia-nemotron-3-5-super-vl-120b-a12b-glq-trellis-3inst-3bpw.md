@@ -18,7 +18,7 @@ Su relevancia es práctica: permite servir un modelo de 120B-A12B en hardware de
 | Longitud de contexto | 131 072 tokens (`max_model_len` en el ejemplo de vLLM) |
 | Tipos de cuantizacion | GLQ 3,0 bpw uniforme (trellis QTIP TCQ `3inst` + RHT + LDLQ); torre de vision y proyector en BF16 |
 | Idiomas soportados | en, es, fr, de, it, ja |
-| Licencia | openmdw-1.1 (etiquetada como `other` en HuggingFace) |
+| Licencia | openmdw-1.1 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors con decodificacion fused CUDA; libreria vLLM |
 
 ## Arquitectura y entrenamiento
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Activos | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| NVIDIA-Nemotron-3.5-Super-VL-120B-A12B (BF16) | 120B | 12B | 131 072 | BF16 | openmdw-1.1 | HuggingFace (nvidia) |
-| Este checkpoint (GLQ 3bpw) | 120B nominales / 27,5B en safetensors | 12B | 131 072 | GLQ 3,0 bpw | openmdw-1.1 | HuggingFace (xv0y5ncu) |
+| NVIDIA-Nemotron-3.5-Super-VL-120B-A12B (BF16) | 120B | 12B | 131 072 | BF16 | openmdw-1.1 | Hugging Face (nvidia) |
+| Este checkpoint (GLQ 3bpw) | 120B nominales / 27,5B en safetensors | 12B | 131 072 | GLQ 3,0 bpw | openmdw-1.1 | Hugging Face (xv0y5ncu) |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa mas relevante es contra el modelo base BF16: misma arquitectura y capacidades, pero con un repositorio de 55 GB frente al peso completo en BF16 (que a 120B rondaria los 240 GB). No se dispone de datos de benchmarks que permitan comparar la degradacion en tareas.
@@ -78,12 +78,12 @@ La comparacion directa mas relevante es contra el modelo base BF16: misma arquit
 - No usar `--trust-remote-code`: el repositorio no incluye codigo de modelado y el flag provoca fallo.
 - Riesgo de alucinacion inherente a los modelos de lenguaje de gran escala; no se documentan mitigaciones especificas en esta ficha.
 - Sesgos conocidos: no disponibles en la informacion proporcionada.
-- Licencia openmdw-1.1: es necesario revisar los terminos en el enlace oficial antes de un uso comercial; la etiqueta de HuggingFace figura como `other`.
+- Licencia openmdw-1.1: es necesario revisar los terminos en el enlace oficial antes de un uso comercial; la etiqueta de Hugging Face figura como `other`.
 - El repositorio tiene solo 54 descargas y 0 likes en el momento de la consulta, lo que indica escasa validacion comunitaria.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xv0y5ncu/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-GLQ-trellis-3inst-3bpw
+- Modelo en Hugging Face: https://huggingface.co/xv0y5ncu/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-GLQ-trellis-3inst-3bpw
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
 - Repositorio GLQ: https://github.com/cnygaard/glq
 - Instalador GLQ: https://raw.githubusercontent.com/cnygaard/glq/main/install.sh

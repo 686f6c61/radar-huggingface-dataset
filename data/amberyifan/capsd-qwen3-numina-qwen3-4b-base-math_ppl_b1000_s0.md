@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `capsd-qwen3-numina-Qwen3-4B-Base-math_ppl_b1000_s0` es un ajuste fino (fine-tuning) completo del modelo base `Qwen/Qwen3-4B-Base`, realizado por el autor AmberYifan mediante la librería `llama-factory`. El nombre sugiere que el entrenamiento se ha llevado a cabo sobre un conjunto de datos de razonamiento matemático (mezcla de `numina` y `math_ppl`), con 80 000 ejemplos y una métrica basada en perplexidad. Se trata de un experimento académico o personal, sin descargas ni interacciones en HuggingFace, y con una model card generada automáticamente que no aporta detalles sobre capacidades ni evaluación.
+El modelo `capsd-qwen3-numina-Qwen3-4B-Base-math_ppl_b1000_s0` es un ajuste fino (fine-tuning) completo del modelo base `Qwen/Qwen3-4B-Base`, realizado por el autor AmberYifan mediante la librería `llama-factory`. El nombre sugiere que el entrenamiento se ha llevado a cabo sobre un conjunto de datos de razonamiento matemático (mezcla de `numina` y `math_ppl`), con 80 000 ejemplos y una métrica basada en perplexidad. Se trata de un experimento académico o personal, sin descargas ni interacciones en Hugging Face, y con una model card generada automáticamente que no aporta detalles sobre capacidades ni evaluación.
 
 El modelo hereda la arquitectura de Qwen3-4B-Base, un transformer decoder-only de aproximadamente 4 000 millones de parámetros, diseñado originalmente para generación de texto y razonamiento. Al no publicarse resultados de benchmarks ni descripción del dataset, su utilidad práctica queda limitada a la investigación y a la reproducción de experimentos de fine-tuning. Su relevancia actual es marginal, dado que no se han validado sus capacidades y la licencia es genérica (`other`), lo que dificulta su adopción en entornos comerciales.
 
@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la información disponible. La s
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Qwen/Qwen3-4B-Base (base) | 4,02B | No especificado | Apache 2.0 (probable) | HuggingFace | Referencia sin ajuste |
-| AmberYifan/capsd-qwen3-numina (este) | 4,02B | No especificado | other | HuggingFace | Sin benchmarks |
+| Qwen/Qwen3-4B-Base (base) | 4,02B | No especificado | Apache 2.0 (probable) | Hugging Face | Referencia sin ajuste |
+| AmberYifan/capsd-qwen3-numina (este) | 4,02B | No especificado | other | Hugging Face | Sin benchmarks |
 | Otros fine-tunes de Qwen3-4B para matemáticas | No disponible | No disponible | Variable | No disponible | No disponible |
 
 No se dispone de información sobre alternativas comparables en la misma categoría (fine-tunes de Qwen3-4B para matemáticas) que permitan una comparación rigurosa.
@@ -75,5 +75,5 @@ No se dispone de información sobre alternativas comparables en la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-qwen3-numina-Qwen3-4B-Base-math_ppl_b1000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-qwen3-numina-Qwen3-4B-Base-math_ppl_b1000_s0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base

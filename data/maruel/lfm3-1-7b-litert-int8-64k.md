@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-LiteRT-INT8-64K | 1,7 mil millones | 65.536 | LiteRT-LM | LFM Open License v1.0 | HuggingFace (17 descargas) |
-| LiquidAI/LFM3-1.7B | 1,7 mil millones | no disponible | no disponible | LFM Open License v1.0 | HuggingFace (modelo base) |
+| LFM3-1.7B-LiteRT-INT8-64K | 1,7 mil millones | 65.536 | LiteRT-LM | LFM Open License v1.0 | Hugging Face (17 descargas) |
+| LiquidAI/LFM3-1.7B | 1,7 mil millones | no disponible | no disponible | LFM Open License v1.0 | Hugging Face (modelo base) |
 | Alternativas de ~1,7B para movil | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparado ni de otras alternativas empaquetadas en LiteRT-LM en la información proporcionada.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparado ni de otras alternativas empaque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maruel/LFM3-1.7B-LiteRT-INT8-64K
+- Modelo en Hugging Face: https://huggingface.co/maruel/LFM3-1.7B-LiteRT-INT8-64K
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Repositorio Go Mode: https://github.com/maruel/gomode
 - Script de exportación: https://github.com/maruel/gomode/blob/main/scripts/export_lfm_litert.py

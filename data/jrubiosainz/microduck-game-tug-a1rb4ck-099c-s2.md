@@ -71,10 +71,10 @@ La ejecución puntuada de referencia de a1rb4Ck (`01M6C7BQG0VKY44AZ3S7EY`) obtuv
 
 | Modelo | Parámetros | Contexto | Puntuación (cm) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jrubiosainz/microduck-game-tug-a1rb4ck-099c-s2` | no disponible | no aplica | 165.957510471344 (seed 2, replay) | Apache 2.0 | HuggingFace |
-| `a1rb4Ck/microduck-tug` (rev. `099ced00`) | no disponible | no aplica | 166.19724988937378 (ejecución puntuada, 5/5 pits) | Apache 2.0 | HuggingFace |
-| `jrubiosainz/microduck-game-tug-a1rb4ck-s3-s5` | no disponible | no aplica | no disponible | no disponible | HuggingFace |
-| `rumezhak/microduck-tug-tab-v2` (rev. `b63e3587`) | no disponible | no aplica | 165.1954472064972 (ejecución puntuada) | no disponible | HuggingFace |
+| `jrubiosainz/microduck-game-tug-a1rb4ck-099c-s2` | no disponible | no aplica | 165.957510471344 (seed 2, replay) | Apache 2.0 | Hugging Face |
+| `a1rb4Ck/microduck-tug` (rev. `099ced00`) | no disponible | no aplica | 166.19724988937378 (ejecución puntuada, 5/5 pits) | Apache 2.0 | Hugging Face |
+| `jrubiosainz/microduck-game-tug-a1rb4ck-s3-s5` | no disponible | no aplica | no disponible | no disponible | Hugging Face |
+| `rumezhak/microduck-tug-tab-v2` (rev. `b63e3587`) | no disponible | no aplica | 165.1954472064972 (ejecución puntuada) | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ La ejecución puntuada de referencia de a1rb4Ck (`01M6C7BQG0VKY44AZ3S7EY`) obtuv
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-game-tug-a1rb4ck-099c-s2
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-game-tug-a1rb4ck-099c-s2
 - Modelo base `a1rb4Ck/microduck-tug` (rev. `099ced00`): https://huggingface.co/a1rb4Ck/microduck-tug/tree/099ced00f425f1634045cd3f92505a8d78f3df52
 - Revisión anterior del modelo base (rev. `3a2eb4e2`): https://huggingface.co/a1rb4Ck/microduck-tug/tree/3a2eb4e2a40073be336d00b7ca1898dc52dee352
 - `a1rb4Ck/microduck-heist`: https://huggingface.co/a1rb4Ck/microduck-heist/tree/906d1efd4e1597c6f122f063b399effbf55a7f0e

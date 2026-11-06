@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Moira Silero VAD es un artefacto publicado en HuggingFace por el usuario BillyG que empaqueta un modelo de deteccion de actividad de voz (VAD, *voice activity detection*) de Silero exportado a formato ONNX. El unico fichero documentado es `silero_vad_16k_op15.onnx`, lo que indica audio de entrada a 16 kHz y exportacion con ONNX opset 15. El autor lo presenta como componente para "Moira Mobile Agent", es decir, como pieza de un agente movil, presumiblemente para segmentar voz en tiempo real en el propio dispositivo.
+Moira Silero VAD es un artefacto publicado en Hugging Face por el usuario BillyG que empaqueta un modelo de deteccion de actividad de voz (VAD, *voice activity detection*) de Silero exportado a formato ONNX. El unico fichero documentado es `silero_vad_16k_op15.onnx`, lo que indica audio de entrada a 16 kHz y exportacion con ONNX opset 15. El autor lo presenta como componente para "Moira Mobile Agent", es decir, como pieza de un agente movil, presumiblemente para segmentar voz en tiempo real en el propio dispositivo.
 
 No es un modelo de lenguaje generativo ni un modelo multimodal: se trata de un clasificador binario por tramas que decide si un fragmento de audio contiene voz humana o no. Por tanto, no genera texto, no razona, no ejecuta codigo y no soporta *tool calling*; su funcion es actuar como etapa de preprocesado o de control dentro de un pipeline de voz (ASR, telefonia, agentes conversacionales).
 
@@ -75,10 +75,10 @@ La informacion proporcionada no incluye datos comparativos. La tabla siguiente r
 
 | Modelo | Tipo de enfoque | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BillyG/moira-silero-vad | VAD neuronal (exportacion ONNX de Silero) | ONNX (opset 15) | no disponible | HuggingFace, 0 descargas |
+| BillyG/moira-silero-vad | VAD neuronal (exportacion ONNX de Silero) | ONNX (opset 15) | no disponible | Hugging Face, 0 descargas |
 | Silero VAD (upstream) | VAD neuronal | PyTorch JIT y ONNX | no verificado en esta fuente | Repositorio publico de Silero |
 | WebRTC VAD | VAD estadistico (modelos gaussianos) | C con bindings | no verificado en esta fuente | Incluido en el proyecto WebRTC |
-| pyannote segmentation | Segmentacion neuronal de habla y hablantes | PyTorch | no verificado en esta fuente | HuggingFace |
+| pyannote segmentation | Segmentacion neuronal de habla y hablantes | PyTorch | no verificado en esta fuente | Hugging Face |
 
 No hay datos de rendimiento comparado (precision, recall, latencia) para ninguna de estas opciones en la informacion disponible, por lo que no es posible establecer una jerarquia objetiva.
 
@@ -94,11 +94,11 @@ No hay datos de rendimiento comparado (precision, recall, latencia) para ninguna
 - Alucinacion: no aplica, porque el modelo no genera texto. El riesgo equivalente son los errores de clasificacion.
 - Limitacion de idioma: no documentada, pero tampoco garantizada la independencia linguistica.
 - Sin soporte declarado de lotes, transcripcion con marcas temporales ni integracion con frameworks de agentes: cualquier orquestacion adicional corre por cuenta del integrador.
-- Etiqueta `region:us` en HuggingFace: implica obligaciones de cumplimiento normativo en esa jurisdiccion, sin que la model card las detalle.
+- Etiqueta `region:us` en Hugging Face: implica obligaciones de cumplimiento normativo en esa jurisdiccion, sin que la model card las detalle.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BillyG/moira-silero-vad
+- Modelo en Hugging Face: https://huggingface.co/BillyG/moira-silero-vad
 - Fichero de pesos referenciado en la model card: `silero_vad_16k_op15.onnx`, descargable mediante `hf_hub_download(repo_id="BillyG/moira-silero-vad", filename="silero_vad_16k_op15.onnx")`
 - Repositorio del modelo Silero VAD upstream (referencia externa, no incluida en la informacion proporcionada): https://github.com/snakers4/silero-vad
 

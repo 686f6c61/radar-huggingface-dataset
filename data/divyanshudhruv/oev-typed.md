@@ -1,7 +1,7 @@
 # divyanshudhruv/oev-typed
 
 ## Resumen
-OEV (oev-typed) es un modelo de decisión de pequeno tamano publicado por el desarrollador divyanshudhruv, cuyo repositorio en HuggingFace ocupa 2,9 GB. No es un modelo generativo de texto: recibe un estado y una serie de preguntas tipadas (choice, noul o score) y devuelve distribuciones de probabilidad calibradas en un unico forward pass, en lugar de producir lenguaje natural de forma autorregresiva. La idea es separar la toma de decisiones rapidas ("System One") de la generacion de texto.
+OEV (oev-typed) es un modelo de decisión de pequeno tamano publicado por el desarrollador divyanshudhruv, cuyo repositorio en Hugging Face ocupa 2,9 GB. No es un modelo generativo de texto: recibe un estado y una serie de preguntas tipadas (choice, noul o score) y devuelve distribuciones de probabilidad calibradas en un unico forward pass, en lugar de producir lenguaje natural de forma autorregresiva. La idea es separar la toma de decisiones rapidas ("System One") de la generacion de texto.
 
 El modelo sigue la interfaz de modelo System One popularizada por Jev, el modelo propietario de TypeSafe AI (San Francisco, fundada en 2024 y con una ronda semilla de 40 millones de dolares liderada por DCVC), y por Laya. Jev se presento en acceso anticipado el 15 de septiembre de 2026 y su API hospedada abrio el 21 de septiembre de 2026 a 0,042 dolares por millon de tokens de entrada, con salida gratuita. La propuesta de esta familia es sustituir la generacion autorregresiva por primitivas tipadas (Noul, Choice, Score) para flujos de control de agentes.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oev-typed (divyanshudhruv) | Decision no generativa (System One) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 1 like |
+| oev-typed (divyanshudhruv) | Decision no generativa (System One) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 1 like |
 | Jev (TypeSafe AI) | Decision no generativa (System One) | no disponible | no disponible | propietaria | API hospedada desde 21-09-2026, 0,042 USD/1M tokens de entrada |
 | Laya | Decision no generativa (System One) | no disponible | no disponible | no disponible | no disponible |
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Falta de benchmarks: no hay resultados publicos que permitan comparar su rendimiento con alternativas.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/divyanshudhruv/oev-typed
+- Hugging Face: https://huggingface.co/divyanshudhruv/oev-typed
 - Repositorio GitHub del proyecto: https://github.com/divyanshudhruv/oev
 - Perfil GitHub del autor: https://github.com/divyanshudhruv
 - Jev (AI model) - Wikipedia: https://en.wikipedia.org/wiki/Jev_(AI_model)

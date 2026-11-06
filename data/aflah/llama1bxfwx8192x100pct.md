@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - aflah/Llama1BxFWx8192x100pct](https://huggingface.co/aflah/Llama1BxFWx8192x100pct)
+- [Hugging Face - aflah/Llama1BxFWx8192x100pct](https://huggingface.co/aflah/Llama1BxFWx8192x100pct)
 - [Paper: Fractional Rotation, Full Potential? Investigating Performance and Convergence of Partial RoPE](https://arxiv.org/abs/2603.11611)
 - [Codigo de entrenamiento y analisis (GitHub)](https://github.com/aflah02/Partial_RoPE_Analysis)
 - [Perfil del autor en Hugging Face](https://huggingface.co/aflah)

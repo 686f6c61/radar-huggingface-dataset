@@ -4,7 +4,7 @@
 
 El modelo `orcarouter/Qwen3.8-Flash-Next-Uncensored-FP8` es una versión "abliterated" (desensibilizada) del modelo base Qwen/Qwen3.8-Flash-Next, desarrollada por el usuario orcarouter. Se trata de un modelo de lenguaje multimodal de tipo MoE (Mixture of Experts) con aproximadamente 180.000 millones de parámetros totales, de los cuales solo 6.000 millones se activan por token, lo que lo hace computacionalmente eficiente para su tamaño. Está diseñado para eliminar los rechazos excesivos (over-refusal) típicos de los modelos alineados, manteniendo las capacidades completas del modelo original, incluyendo visión, razonamiento, tool calling y modo de pensamiento.
 
-La relevancia de este modelo radica en su doble naturaleza: por un lado, hereda la arquitectura de próxima generación de Qwen (preview de Qwen4) con innovaciones en atención, residuales, embeddings y optimización; por otro, ofrece una versión sin censura que resulta útil para tareas de red-teaming, investigación en seguridad de IA y aplicaciones que requieren respuestas sin restricciones artificiales. El modelo está cuantizado en FP8 (block-FP8), lo que reduce su huella de memoria respecto a la versión original, y se distribuye bajo licencia Apache 2.0, aunque su acceso en HuggingFace está restringido (gated) y requiere aceptar condiciones adicionales.
+La relevancia de este modelo radica en su doble naturaleza: por un lado, hereda la arquitectura de próxima generación de Qwen (preview de Qwen4) con innovaciones en atención, residuales, embeddings y optimización; por otro, ofrece una versión sin censura que resulta útil para tareas de red-teaming, investigación en seguridad de IA y aplicaciones que requieren respuestas sin restricciones artificiales. El modelo está cuantizado en FP8 (block-FP8), lo que reduce su huella de memoria respecto a la versión original, y se distribuye bajo licencia Apache 2.0, aunque su acceso en Hugging Face está restringido (gated) y requiere aceptar condiciones adicionales.
 
 ## Especificaciones tecnicas
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks específicos para esta versión "Un
 - VRAM estimada: con 180B parámetros en FP8 (1 byte por parámetro), se necesitan aproximadamente 180 GB de VRAM para la inferencia completa. Las versiones GGUF cuantizadas (por ejemplo, Q4_K_M) pueden reducir este requisito a ~90-100 GB.
 - GPU recomendadas: para FP8 completo, se requieren GPUs de centro de datos como NVIDIA A100 80GB (mínimo 3 en paralelo), H100 80GB (mínimo 3) o A6000 48GB (mínimo 4). Para GGUF cuantizado, una sola GPU de 80GB (A100, H100) o incluso una RTX 4090 24GB con cuantización agresiva (Q2_K) podría ser suficiente, aunque con pérdida de calidad.
 - No cabe en GPUs de consumo estándar (8-24 GB) sin cuantización extrema y offloading a CPU, lo que degradaría el rendimiento.
-- Opciones de despliegue: vLLM (soporte nativo para FP8 y block-FP8), llama.cpp (para GGUF), Ollama (para GGUF), TGI (Text Generation Inference). También es compatible con endpoints de HuggingFace.
+- Opciones de despliegue: vLLM (soporte nativo para FP8 y block-FP8), llama.cpp (para GGUF), Ollama (para GGUF), TGI (Text Generation Inference). También es compatible con endpoints de Hugging Face.
 - Latencia y throughput: no se dispone de datos medidos. En configuraciones multi-GPU con vLLM, se espera un throughput de decenas de tokens por segundo, pero depende del hardware y la configuración.
 
 ## Comparativa con modelos similares
@@ -72,15 +72,15 @@ La comparativa se basa en datos públicos. El Qwen3.8-Flash-Next destaca por su 
 - Sesgos conocidos: al ser una versión abliterated, puede generar contenido ofensivo, dañino o ilegal sin filtros. No debe usarse en aplicaciones orientadas al público sin supervisión humana.
 - Riesgo de alucinación: como todos los modelos de lenguaje, puede inventar hechos, especialmente en dominios especializados. El contexto largo no elimina este riesgo.
 - Limitaciones de idioma: solo está entrenado explícitamente en inglés y chino; el rendimiento en otros idiomas puede ser inferior.
-- Acceso restringido: el modelo en HuggingFace es gated, lo que requiere aceptar condiciones adicionales. Esto puede limitar su uso en entornos corporativos.
+- Acceso restringido: el modelo en Hugging Face es gated, lo que requiere aceptar condiciones adicionales. Esto puede limitar su uso en entornos corporativos.
 - Requisitos de hardware elevados: la versión FP8 completa necesita al menos 180 GB de VRAM, lo que excluye la mayoría de estaciones de trabajo individuales.
 - Sin garantías de seguridad: al eliminar los rechazos, el modelo puede ser explotado para generar malware, discursos de odio o contenido ilegal. El autor lo posiciona para red-teaming, no para producción general.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-FP8
+- Modelo en Hugging Face: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-FP8
 - Repositorio GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Blog de orcarouter sobre ejecución local: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally
 - Página en Ollama: https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored
 - Receta vLLM para Qwen3.8-Flash-Next: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next
-- Página de Qwen3.8-27B en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Página de Qwen3.8-27B en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B

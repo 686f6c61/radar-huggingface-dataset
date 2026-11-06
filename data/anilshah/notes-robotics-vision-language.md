@@ -88,7 +88,7 @@ No disponible. No existen modelos comparables porque el artefacto no es un model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AnilShah/notes-robotics-vision-language
+- Hugging Face: https://huggingface.co/AnilShah/notes-robotics-vision-language
 - `summary.md` (nota principal, referenciado en la model card, dentro del propio repositorio)
 - `README.md` (documentacion del repositorio, dentro del propio repositorio)
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo y se descartan por no ser relevantes.

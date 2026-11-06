@@ -27,7 +27,7 @@ El modelo es un decoder transformer denso de estilo Llama con 24 capas, dimensi�
 
 El preentrenamiento se realizó sobre las conversaciones 1PP reescritas a partir de los documentos originales, aplicando pérdida únicamente en los turnos de asistente. Se cubrieron los primeros 53.709 pasos del flujo alineado por pasos (112,64B posiciones de token), con batch global de 512 × 4.096 tokens y enmascaramiento de atención entre documentos. El optimizador combina Muon (shape scaling, LR matricial 0,005) con Adam para el resto de parámetros (LR 1,29e-3 para embeddings y capa de salida, 3e-3 para las normas), warmup de 3.378 pasos, fase constante y decaimiento lineal en los últimos 5.370 pasos hasta 1/100, weight decay 0,1, init std 0,0078 y precisión bf16. La pérdida de validación final por token sobre 2.433 documentos retenidos es de 1,375 para texto de asistente, 7,456 para texto de usuario y 3,049 para texto de documento.
 
-El SFT consistió en una época sobre un mix de 400.000 conversaciones: `jkminder/model-raising-pb-100k-3c-mt-sft` (98,5k multiturno), `dlab-spp/sp-sft-normal-300k` sin los prompts duplicados del primer conjunto (271,6k) y una muestra de 30k de `dlab-spp/sp-sft-safety-180k`. Se usó el mismo stack (Megatron, Muon, ChatML sin turno de sistema, pérdida solo en turnos de asistente), LR matricial 0,001, semilla 28, batch global 128 × 4.096 y decaimiento lineal a 1/10 tras un warmup del 3%. La pérdida SFT retenida sobre tokens de asistente (1.998 conversaciones) es de 1,783. Los pesos de HuggingFace se verificaron contra el checkpoint de Megatron recalculando pérdidas de validación (diferencia absoluta de 0,0000 en el segmento [3, 4]).
+El SFT consistió en una época sobre un mix de 400.000 conversaciones: `jkminder/model-raising-pb-100k-3c-mt-sft` (98,5k multiturno), `dlab-spp/sp-sft-normal-300k` sin los prompts duplicados del primer conjunto (271,6k) y una muestra de 30k de `dlab-spp/sp-sft-safety-180k`. Se usó el mismo stack (Megatron, Muon, ChatML sin turno de sistema, pérdida solo en turnos de asistente), LR matricial 0,001, semilla 28, batch global 128 × 4.096 y decaimiento lineal a 1/10 tras un warmup del 3%. La pérdida SFT retenida sobre tokens de asistente (1.998 conversaciones) es de 1,783. Los pesos de Hugging Face se verificaron contra el checkpoint de Megatron recalculando pérdidas de validación (diferencia absoluta de 0,0000 en el segmento [3, 4]).
 
 ## Capacidades
 
@@ -46,7 +46,7 @@ El SFT consistió en una época sobre un mix de 400.000 conversaciones: `jkminde
 - Reproducibilidad de semillas: junto con las variantes seed 28 y seed 42, permite medir la varianza de inicialización manteniendo idéntico el orden de batches.
 - Evaluación de SFT sobre mezclas multiturno: el checkpoint SFT y su pérdida retenida (1,783) sirven como referencia para estudiar el efecto de mixes con conjuntos de seguridad y de constituciones citadas.
 - Baseline de conversación en inglés para prototipos de chat: con 2,8B parámetros y contexto de 4.096 tokens puede desplegarse en una sola GPU para pruebas de formato ChatML y de parada por `eos_token_id`.
-- Verificación de pipelines de conversión Megatron a HuggingFace: el modelo documenta la comprobación de pesos contra el checkpoint original, lo que lo convierte en un caso de prueba útil para validar herramientas de conversión.
+- Verificación de pipelines de conversión Megatron a Hugging Face: el modelo documenta la comprobación de pesos contra el checkpoint original, lo que lo convierte en un caso de prueba útil para validar herramientas de conversión.
 - Análisis de sesgos y seguridad en modelos pequeños: la inclusión de `sp-sft-safety-180k` en el SFT permite estudiar cómo un conjunto de seguridad de 30k muestras afecta a un modelo de 2,8B.
 
 ## Benchmarks y rendimiento
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-asst-seed1234-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-asst-seed1234-sft
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de entrenamiento (SFT): https://wandb.ai/raghav_singhal/1pp-sft

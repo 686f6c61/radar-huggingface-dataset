@@ -86,7 +86,7 @@ No se ha encontrado información sobre modelos directamente comparables en la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Remidesbois/Poneglyph-ReaderNet
+- Modelo en Hugging Face: https://huggingface.co/Remidesbois/Poneglyph-ReaderNet
 - Dataset asociado: https://huggingface.co/datasets/Remidesbois/Poneglyph
 - Modelo OCR relacionado: https://huggingface.co/Remidesbois/LightonOCR-2-1b-poneglyph
 - Repositorio de entrenamiento (Model Lab): https://github.com/remidesbois1/poneglyph-model-lab

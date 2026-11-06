@@ -71,5 +71,5 @@ No hay información suficiente para comparar este modelo con otros. Se desconoce
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-dequantized-oQ6e-mtp
+- Repositorio Hugging Face: https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-dequantized-oQ6e-mtp
 - Herramienta de cuantización oQ: https://github.com/jundot/omlx

@@ -99,8 +99,8 @@ No se conocen en la informacion proporcionada otros modelos de la misma categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/m-takuj/Qwen2.5-1.5B-Instruct-GPTQ-Int4
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GPTQ-Int4
+- Modelo en Hugging Face: https://huggingface.co/m-takuj/Qwen2.5-1.5B-Instruct-GPTQ-Int4
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GPTQ-Int4
 - Runtime de LLM para NPU AXera: https://github.com/AXERA-TECH/ax-llm
 - Documentacion de Pulsar2 (conversion de LLM a axmodel): https://pulsar2-docs.readthedocs.io/en/latest/appendix/build_llm.html
 - Wiki del dispositivo M4N-Dock (爱芯派Pro): https://wiki.sipeed.com/hardware/zh/maixIV/m4ndock/m4ndock.html

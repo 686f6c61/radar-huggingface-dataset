@@ -90,7 +90,7 @@ La preset `STRIX_LEAN` (FP4) supera a la variante `base` en calidad y velocidad,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pugant/Qwen3.8-27B-MTP-Q3_0_ROCMFPX
+- Repositorio Hugging Face: https://huggingface.co/pugant/Qwen3.8-27B-MTP-Q3_0_ROCMFPX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Fork ROCmFPX de llama.cpp: https://github.com/charlie12345/ROCmFPX
 - Matriz de importancia: https://huggingface.co/pugant/Qwen3.8-27B-imatrix

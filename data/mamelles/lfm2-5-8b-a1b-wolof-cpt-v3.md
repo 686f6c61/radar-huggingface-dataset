@@ -3,14 +3,14 @@
 ## Resumen
 El LFM2.5-8B-A1B-Wolof-CPT-v3 es un ajuste por preentrenamiento continuado (CPT, *continual pretraining*) del modelo base LiquidAI/LFM2.5-8B-A1B-Base, publicado por el usuario "mamelles". El objetivo es adaptar un modelo de arquitectura Mixture of Experts (MoE) al wolof (codigo ISO "wo"), una lengua del grupo nigero-congoleno hablada principalmente en Senegal. El artefacto se declara explicitamente como privado, experimental y no apto como release publico.
 
-El modelo conserva los 8.476.048.832 parametros totales del base (unos 8,48 mil millones) y hereda la nomenclatura "A1B", que en la convencion de Liquid AI indica del orden de 1.000 millones de parametros activos por token, coherente con la etiqueta de arquitectura "lfm2_moe" de HuggingFace. La adaptacion se realizo sobre un corpus de wolof depurado y con un tokenizador de la familia "128k-ext" (vocabulario extendido de 128.000 tokens).
+El modelo conserva los 8.476.048.832 parametros totales del base (unos 8,48 mil millones) y hereda la nomenclatura "A1B", que en la convencion de Liquid AI indica del orden de 1.000 millones de parametros activos por token, coherente con la etiqueta de arquitectura "lfm2_moe" de Hugging Face. La adaptacion se realizo sobre un corpus de wolof depurado y con un tokenizador de la familia "128k-ext" (vocabulario extendido de 128.000 tokens).
 
 Su relevancia es de nicho: se trata de un artefacto de investigacion para evaluar la adaptacion linguistica al wolof sobre una arquitectura MoE moderna, no de un modelo listo para produccion. El repo acumula 0 descargas y 0 "likes", no declara licencia y el propio autor advierte que no se ha validado de forma exhaustiva la ortografia wolof, el *code-switching*, la factualidad, el razonamiento, el comportamiento en contexto largo ni la seguridad.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE basada en transformer (etiqueta HuggingFace "lfm2_moe") |
+| Arquitectura | MoE basada en transformer (etiqueta Hugging Face "lfm2_moe") |
 | Parametros totales | 8.476.048.832 (unos 8,48 mil millones) |
 | Parametros activos | Del orden de 1.000 millones (segun la nomenclatura "A1B" del modelo; no confirmado de forma explicita en la model card) |
 | Longitud de contexto | no disponible |
@@ -35,7 +35,7 @@ La model card indica que los datos de instruccion se reponderan y excluyen el sp
 - Capacidad multilingue limitada: el unico idioma declarado es el wolof ("wo"); no se documenta retencion de ingles, frances u otras lenguas tras el CPT.
 - Adecuado para tareas de modelado de lenguaje: continuacion de texto, calculo de perplejidad y analisis de corpus en wolof.
 - Compatibilidad con el ecosistema `transformers` para inferencia y ajuste posterior.
-- Etiquetado como "endpoints_compatible", por lo que puede desplegarse en endpoints compatibles con la API de inferencia de HuggingFace.
+- Etiquetado como "endpoints_compatible", por lo que puede desplegarse en endpoints compatibles con la API de inferencia de Hugging Face.
 - Soporte de tool calling / function calling: no disponible (no documentado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
 - Capacidades de vision o audio: no disponibles (modelo exclusivamente de texto).
@@ -68,7 +68,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 - VRAM estimada en cuantizacion de 4 bits: del orden de 4-5 GB para los pesos, aunque no se publican pesos GGUF ni cuantizados por el autor.
 - Al ser MoE con unos 1.000 millones de parametros activos, el coste computacional por token es inferior al de un modelo denso de 8B, aunque la huella de memoria se mantiene en torno a los 8,5B.
 - GPU recomendadas: no disponibles de forma explicita en la model card; por tamano, una GPU consumer de 24 GB (RTX 3090/4090) deberia poder cargar el modelo en precision reducida o cuantizado, y para FP16 completo se requieren GPU de 24-48 GB (A100 40 GB, L40S, H100).
-- Opciones de despliegue: `transformers` (libreria declarada), endpoints compatibles con la API de inferencia de HuggingFace ("endpoints_compatible"). Compatibilidad con vLLM, llama.cpp, Ollama o TGI: no disponible (no confirmada en la informacion proporcionada).
+- Opciones de despliegue: `transformers` (libreria declarada), endpoints compatibles con la API de inferencia de Hugging Face ("endpoints_compatible"). Compatibilidad con vLLM, llama.cpp, Ollama o TGI: no disponible (no confirmada en la informacion proporcionada).
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ Los datos de comparacion con alternativas no estan disponibles en la informacion
 
 | Modelo | Parametros totales | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-8B-A1B-Wolof-CPT-v3 | 8,48 mil millones | no disponible | wolof | no disponible | Publico en HuggingFace, 0 descargas |
+| LFM2.5-8B-A1B-Wolof-CPT-v3 | 8,48 mil millones | no disponible | wolof | no disponible | Publico en Hugging Face, 0 descargas |
 | LiquidAI/LFM2.5-8B-A1B-Base | no disponible (familia 8B-A1B) | no disponible | no disponible | no disponible | Modelo base del ajuste |
 
 No se dispone de datos verificables de otras alternativas de la misma categoria (modelos MoE de ~8B totales o adaptaciones al wolof) en la informacion proporcionada.
@@ -95,7 +95,7 @@ No se dispone de datos verificables de otras alternativas de la misma categoria 
 - No se publican pesos cuantizados, por lo que el despliegue en hardware limitado exige cuantizar localmente.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/mamelles/LFM2.5-8B-A1B-Wolof-CPT-v3
+- Modelo en Hugging Face: https://huggingface.co/mamelles/LFM2.5-8B-A1B-Wolof-CPT-v3
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-Base
 - Metricas en formato legible por maquina (referenciadas por la model card): https://huggingface.co/Tonic/LFM2.5-8B-A1B-Wolof-CPT-v3/blob/main/metrics.json
 - Fuente de evaluacion declarada: GalsenAI LFM2.5 Wolof family eval (referenciada en el model-index del propio modelo)

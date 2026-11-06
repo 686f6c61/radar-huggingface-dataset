@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Familia | Pasos | Éxito en PushT | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dp_repro_200000` (este repo) | Diffusion Policy | 200k | 64,0 % (n=50) | MIT | HuggingFace |
-| `dp_official_200000_default_arch` (este repo) | Diffusion Policy (defaults) | 200k | 33,3 % (n=30) | MIT | HuggingFace |
-| `act_pusht_100k_100000` (este repo) | ACT | 100k | 27,0 % (n=200) | MIT | HuggingFace |
-| `smolvla_lora_032000` (este repo) | SmolVLA + LoRA | 32k | 28 % (n=50) | MIT | HuggingFace |
+| `dp_repro_200000` (este repo) | Diffusion Policy | 200k | 64,0 % (n=50) | MIT | Hugging Face |
+| `dp_official_200000_default_arch` (este repo) | Diffusion Policy (defaults) | 200k | 33,3 % (n=30) | MIT | Hugging Face |
+| `act_pusht_100k_100000` (este repo) | ACT | 100k | 27,0 % (n=200) | MIT | Hugging Face |
+| `smolvla_lora_032000` (este repo) | SmolVLA + LoRA | 32k | 28 % (n=50) | MIT | Hugging Face |
 
 No se dispone de datos de modelos externos comparables en la información proporcionada; las alternativas de la misma categoría (otras políticas PushT publicadas en LeRobot Hub) no están documentadas aquí.
 
@@ -92,8 +92,8 @@ No se dispone de datos de modelos externos comparables en la información propor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JacksonHYD/pusht-repro-checkpoints
+- Hugging Face: https://huggingface.co/JacksonHYD/pusht-repro-checkpoints
 - Repositorio del artefacto: https://github.com/JacksonHYD/vla-pusht-repro-artifact
-- Dataset de entrenamiento: `lerobot/pusht` (HuggingFace Datasets)
+- Dataset de entrenamiento: `lerobot/pusht` (Hugging Face Datasets)
 - Librería LeRobot: https://github.com/huggingface/lerobot (commit de referencia `7e241bd6`)
 - Paper citado: Huang, Y. (2026), "One Config Value, Thirty Points: Configuration Defaults and the Reproducibility of a Robot Learning Benchmark", arXiv preprint (identificador no disponible)

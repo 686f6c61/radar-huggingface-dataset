@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sfm_filtered_insert_xxf_character-6k_7k_8k_9k_10k_simpleavg_merge` es un artefacto de fusión de pesos publicado en HuggingFace por el usuario yuhengtu-bytedance. No procede de un entrenamiento desde cero: es el resultado de promediar cinco checkpoints intermedios (pasos 6000, 7000, 8000, 9000 y 10000) de una misma ejecución de entrenamiento denominada internamente `filtered_insert_xxf_character`, combinados con la herramienta mergekit mediante el método Linear con normalización.
+El modelo `sfm_filtered_insert_xxf_character-6k_7k_8k_9k_10k_simpleavg_merge` es un artefacto de fusión de pesos publicado en Hugging Face por el usuario yuhengtu-bytedance. No procede de un entrenamiento desde cero: es el resultado de promediar cinco checkpoints intermedios (pasos 6000, 7000, 8000, 9000 y 10000) de una misma ejecución de entrenamiento denominada internamente `filtered_insert_xxf_character`, combinados con la herramienta mergekit mediante el método Linear con normalización.
 
 Técnicamente es un transformer decoder-only causal de la familia gpt_neox, con 6.856.253.440 parámetros (~6,86 B) almacenados en safetensors (bfloat16) dentro de un repositorio de 13,7 GB. El autor no ha publicado model card descriptiva, licencia, idiomas soportados ni resultados de benchmarks, por lo que debe tratarse como un artefacto de investigación y no como un modelo listo para producción.
 
@@ -35,7 +35,7 @@ No hay información sobre el número de tokens de entrenamiento, la composición
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingües: no documentadas; el autor no declara idiomas.
 - Capacidades especiales (modo thinking, visión, audio): no documentadas.
-- Compatibilidad de despliegue: los tags `text-generation-inference` y `endpoints_compatible` indican compatibilidad con TGI y con endpoints gestionados de HuggingFace.
+- Compatibilidad de despliegue: los tags `text-generation-inference` y `endpoints_compatible` indican compatibilidad con TGI y con endpoints gestionados de Hugging Face.
 
 ## Casos de uso
 
@@ -69,7 +69,7 @@ La comparativa se establece con modelos públicos de la misma familia arquitect�
 - VRAM con cuantización de 4 bits (por ejemplo Q4_K_M en GGUF): alrededor de 3,5 a 4 GB de pesos, con un consumo real de 6 GB.
 - GPU recomendadas: A100 (40 u 80 GB) o H100 para bfloat16 sin compromisos; RTX 4090, RTX 3090 o RTX 4060 Ti de 16 GB para bfloat16 con secuencias moderadas; RTX 3060 de 12 GB y similares para 8 bits; GPUs de 8 GB para 4 bits.
 - Cabe en GPU de consumo: sí. En bfloat16 entra en tarjetas de 24 GB; con cuantización de 4 bits funciona en tarjetas de 8 GB.
-- Opciones de despliegue: transformers (librería declarada), text-generation-inference (TGI), vLLM, llama.cpp y derivados como Ollama u LM Studio previa conversión a GGUF, y endpoints compatibles de HuggingFace.
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference (TGI), vLLM, llama.cpp y derivados como Ollama u LM Studio previa conversión a GGUF, y endpoints compatibles de Hugging Face.
 - Latencia y throughput estimados: no disponible.
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ La comparativa se establece con modelos públicos de la misma familia arquitect�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-6k_7k_8k_9k_10k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-6k_7k_8k_9k_10k_simpleavg_merge
 - mergekit (herramienta de fusión): https://github.com/cg123/mergekit
 - Artículo de model soups referenciado por el tag arxiv:2203.05482: https://arxiv.org/abs/2203.05482
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la búsqueda web realizada.

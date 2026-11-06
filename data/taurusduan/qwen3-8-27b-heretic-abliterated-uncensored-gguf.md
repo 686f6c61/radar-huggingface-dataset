@@ -83,7 +83,7 @@ Nota: no se dispone de datos de rendimiento comparativos (benchmarks) entre esto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/taurusduan/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/taurusduan/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Fuente de la abliteración ARA: https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - Herramienta heretic (GitHub): https://github.com/p-e-w/heretic

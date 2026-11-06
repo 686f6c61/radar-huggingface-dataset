@@ -83,7 +83,7 @@ La comparacion directa con CLIP y SigLIP es pertinente porque el experimento usa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DanielNguyen121/SPCvsCLIP-Food101-Public
+- Modelo en Hugging Face: https://huggingface.co/DanielNguyen121/SPCvsCLIP-Food101-Public
 - Modelo base upstream: https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B
 - Model card del base (revision fijada): https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B/blob/9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda/README.md
 - Dataset Food101: https://huggingface.co/datasets/ethz/food101

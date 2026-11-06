@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su aplicación potencial en el ámbito sa
 
 El modelo se basa en DistilBERT, una arquitectura transformer encoder destilada de BERT-base mediante destilacion de conocimiento. DistilBERT conserva el 95% del rendimiento de BERT-base con un 40% menos de parametros, usando 6 capas en lugar de 12, y mantiene la misma configuracion de atencion multi-cabeza. La longitud de contexto es de 512 tokens, limitacion estandar de los modelos BERT.
 
-El proceso de entrenamiento se realizo con el Trainer de HuggingFace Transformers, con los siguientes hiperparametros: learning rate de 2e-05, batch size de 16 tanto para entrenamiento como evaluacion, seed 42, optimizador AdamW (variante torch fused) con betas de (0.9, 0.999) y epsilon de 1e-08, scheduler lineal y una unica epoca de entrenamiento. El dataset de entrenamiento no esta especificado en la model card, pero por el contexto de la tarea y las referencias encontradas, es probable que se trate del dataset UCI Diabetes 130-US Hospitals (1999-2008), que contiene registros de pacientes diabeticos con datos demograficos, clinicos y de estancia hospitalaria.
+El proceso de entrenamiento se realizo con el Trainer de Hugging Face Transformers, con los siguientes hiperparametros: learning rate de 2e-05, batch size de 16 tanto para entrenamiento como evaluacion, seed 42, optimizador AdamW (variante torch fused) con betas de (0.9, 0.999) y epsilon de 1e-08, scheduler lineal y una unica epoca de entrenamiento. El dataset de entrenamiento no esta especificado en la model card, pero por el contexto de la tarea y las referencias encontradas, es probable que se trate del dataset UCI Diabetes 130-US Hospitals (1999-2008), que contiene registros de pacientes diabeticos con datos demograficos, clinicos y de estancia hospitalaria.
 
 El entrenamiento se realizo en 100 pasos con una loss de entrenamiento de 0,6947. No se menciona el uso de tecnicas adicionales como RLHF, DPO o data augmentation. La model card indica que fue generada automaticamente, lo que sugiere que el autor no anadio informacion adicional sobre el proceso de entrenamiento.
 
@@ -74,11 +74,11 @@ Estos resultados indican que el modelo predice la clase mayoritaria (todos los c
 
 | Modelo | Parametros | Contexto | ROC AUC | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| diabetes_readmission_finetuned | 66,9 M | 512 | 0,4979 | Apache 2.0 | HuggingFace |
-| aai540-group3/diabetes-readmission | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| diabetes_readmission_finetuned | 66,9 M | 512 | 0,4979 | Apache 2.0 | Hugging Face |
+| aai540-group3/diabetes-readmission | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | MagangaM/Diabetes-Hospital-Readmission-Prediction | no aplica (ML tradicional) | no aplica | no disponible | no disponible | GitHub |
 
-No se dispone de informacion publica sobre benchmarks comparativos entre estos modelos. Los proyectos de GitHub y HuggingFace encontrados abordan el mismo problema (prediccion de reingreso hospitalario de pacientes diabeticos) pero con enfoques de machine learning clasico (Random Forest, XGBoost, etc.) sobre el dataset UCI, no con transformers. La comparativa directa no es posible por la falta de datos publicados.
+No se dispone de informacion publica sobre benchmarks comparativos entre estos modelos. Los proyectos de GitHub y Hugging Face encontrados abordan el mismo problema (prediccion de reingreso hospitalario de pacientes diabeticos) pero con enfoques de machine learning clasico (Random Forest, XGBoost, etc.) sobre el dataset UCI, no con transformers. La comparativa directa no es posible por la falta de datos publicados.
 
 ## Limitaciones y advertencias
 
@@ -93,9 +93,9 @@ No se dispone de informacion publica sobre benchmarks comparativos entre estos m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muskaanmahes/diabetes_readmission_finetuned
-- Perfil del autor en HuggingFace: https://huggingface.co/muskaanmahes
-- Modelo similar en HuggingFace: https://huggingface.co/aai540-group3/diabetes-readmission
+- Modelo en Hugging Face: https://huggingface.co/muskaanmahes/diabetes_readmission_finetuned
+- Perfil del autor en Hugging Face: https://huggingface.co/muskaanmahes
+- Modelo similar en Hugging Face: https://huggingface.co/aai540-group3/diabetes-readmission
 - Repositorio GitHub de MagangaM (proyecto de prediccion de reingreso): https://github.com/MagangaM/Diabetes-Hospital-Readmission-Prediction
 - Repositorio GitHub de muhsinasafeeth (proyecto de prediccion de reingreso): https://github.com/muhsinasafeeth/diabetes-readmission/tree/main
 - Articulo cientifico sobre analitica predictiva en diabetes: https://www.techscience.com/CMES/v143n1/60445/html

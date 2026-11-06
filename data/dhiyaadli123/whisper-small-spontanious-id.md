@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper-small-spontanious-id es un modelo de reconocimiento automatico del habla (ASR) publicado en HuggingFace por el usuario dhiyaadli123. Se trata de un ajuste fino (fine-tuning) del conocido modelo Whisper de OpenAI en su variante "small", orientado segun el nombre del repositorio al reconocimiento de habla espontanea en indonesio ("spontanious-id"). El modelo se distribuye bajo licencia MIT y en formato safetensors.
+Whisper-small-spontanious-id es un modelo de reconocimiento automatico del habla (ASR) publicado en Hugging Face por el usuario dhiyaadli123. Se trata de un ajuste fino (fine-tuning) del conocido modelo Whisper de OpenAI en su variante "small", orientado segun el nombre del repositorio al reconocimiento de habla espontanea en indonesio ("spontanious-id"). El modelo se distribuye bajo licencia MIT y en formato safetensors.
 
 La informacion publicada es extremadamente limitada: la model card practicamente no contiene documentacion tecnica (unicamente la linea de licencia), no se declaran idiomas soportados en los metadatos, no se especifica el pipeline y el repositorio ocupa 0.0 GB, lo que sugiere que los pesos podrian no estar efectivamente subidos o que el repositorio esta incompleto en el momento de la consulta. El modelo registra 0 descargas y 0 likes.
 
@@ -81,5 +81,5 @@ La comparativa se basa en las variantes publicas de Whisper de OpenAI, ya que no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dhiyaadli123/whisper-small-spontanious-id
+- Hugging Face: https://huggingface.co/dhiyaadli123/whisper-small-spontanious-id
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

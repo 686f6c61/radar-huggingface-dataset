@@ -35,7 +35,7 @@ No se dispone de informacion sobre la arquitectura del modelo base Berk/assay-0.
 
 El unico indicio tecnico disponible son las etiquetas del repositorio: `assay`, `calibrated` y `decision-model`, junto con el pipeline `zero-shot-classification`. Esto apunta a un modelo disenado para emitir decisiones o puntuaciones calibradas sobre categorias definidas en tiempo de inferencia, aunque no hay documentacion que confirme el mecanismo (por ejemplo, cabezal de clasificacion, formato de plantilla o funcion de calibracion).
 
-Respecto al proceso de cuantizacion, el autor indica que las cuantizaciones son estaticas y que no hay versiones ponderadas con imatrix. Se aplico `output_tensor_quantised: 1` y `convert_type: hf`, es decir, conversion desde pesos HuggingFace a GGUF con cuantizacion tambien de los tensores de salida.
+Respecto al proceso de cuantizacion, el autor indica que las cuantizaciones son estaticas y que no hay versiones ponderadas con imatrix. Se aplico `output_tensor_quantised: 1` y `convert_type: hf`, es decir, conversion desde pesos Hugging Face a GGUF con cuantizacion tambien de los tensores de salida.
 
 ## Capacidades
 
@@ -46,7 +46,7 @@ Respecto al proceso de cuantizacion, el autor indica que las cuantizaciones son 
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible; un modelo de 0,6 B no es un candidato habitual para estas tareas.
 - Vision, audio o modo thinking: no disponible.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` aparece en el repositorio, lo que indica que puede servirse mediante la infraestructura de Inference Endpoints de HuggingFace para el formato desplegado.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` aparece en el repositorio, lo que indica que puede servirse mediante la infraestructura de Inference Endpoints de Hugging Face para el formato desplegado.
 
 ## Casos de uso
 

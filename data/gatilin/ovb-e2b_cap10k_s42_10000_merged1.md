@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gatilin/ovb-e2b_cap10k_s42_10000_merged1` es un modelo de difusion para generacion de imagenes a partir de texto (text-to-image), publicado en HuggingFace por el usuario gatilin bajo licencia MIT. Se distribuye en formato `safetensors` y es compatible con la libreria `diffusers` a traves de la clase `QwenImage21Pipeline`, lo que lo vincula a la familia de modelos Qwen-Image. El repositorio ocupa 18,9 GB, un tamano coherente con un checkpoint de difusion de gran escala en precision completa.
+`gatilin/ovb-e2b_cap10k_s42_10000_merged1` es un modelo de difusion para generacion de imagenes a partir de texto (text-to-image), publicado en Hugging Face por el usuario gatilin bajo licencia MIT. Se distribuye en formato `safetensors` y es compatible con la libreria `diffusers` a traves de la clase `QwenImage21Pipeline`, lo que lo vincula a la familia de modelos Qwen-Image. El repositorio ocupa 18,9 GB, un tamano coherente con un checkpoint de difusion de gran escala en precision completa.
 
 El nombre del repositorio sugiere un proceso de ajuste fino o fusion de pesos sobre una base Qwen-Image: los segmentos `e2b`, `cap10k`, `s42` y `10000` apuntan a un entrenamiento con 10.000 pasos, semilla 42 y un conjunto de datos de captions de 10.000 ejemplos, mientras que `merged1` indica una fusion de checkpoints (posiblemente LoRA fusionado en el modelo base). La model card publicada no contiene ninguna documentacion tecnica: solo declara la licencia MIT, sin descripcion, sin datos de entrenamiento ni ejemplos de uso.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `gatilin/ovb-e2b_cap10k_s42_10000_merged1` | no disponible | no disponible | no evaluado | MIT | HuggingFace (53 descargas) |
-| Qwen-Image (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Stable Diffusion 3 / 3.5 | no disponible | no disponible | benchmarks publicos | licencia comunitaria | HuggingFace |
-| FLUX.1 | no disponible | no disponible | benchmarks publicos | licencia no comercial / comercial | HuggingFace |
+| `gatilin/ovb-e2b_cap10k_s42_10000_merged1` | no disponible | no disponible | no evaluado | MIT | Hugging Face (53 descargas) |
+| Qwen-Image (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Stable Diffusion 3 / 3.5 | no disponible | no disponible | benchmarks publicos | licencia comunitaria | Hugging Face |
+| FLUX.1 | no disponible | no disponible | benchmarks publicos | licencia no comercial / comercial | Hugging Face |
 
 No se dispone de datos suficientes para una comparativa cuantitativa rigurosa; la tabla recoge solo la existencia de alternativas de la misma categoria (difusion text-to-image) sin cifras verificadas en la informacion proporcionada.
 
@@ -79,5 +79,5 @@ No se dispone de datos suficientes para una comparativa cuantitativa rigurosa; l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gatilin/ovb-e2b_cap10k_s42_10000_merged1
+- Hugging Face: https://huggingface.co/gatilin/ovb-e2b_cap10k_s42_10000_merged1
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este checkpoint.

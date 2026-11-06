@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje de razonamiento profundo desarrollado por el usuario hshiah, publicado bajo licencia MIT y disponible en HuggingFace. Según la model card, se trata de una versión actualizada que mejora significativamente la capacidad de razonamiento e inferencia mediante un mayor uso de recursos computacionales y la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo destaca en tareas de matemáticas, programación y lógica general, y su rendimiento se acerca al de otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje de razonamiento profundo desarrollado por el usuario hshiah, publicado bajo licencia MIT y disponible en Hugging Face. Según la model card, se trata de una versión actualizada que mejora significativamente la capacidad de razonamiento e inferencia mediante un mayor uso de recursos computacionales y la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo destaca en tareas de matemáticas, programación y lógica general, y su rendimiento se acerca al de otros modelos líderes.
 
 La versión actual presenta mejoras notables frente a su predecesora: en el test AIME 2025 la precisión sube del 70 % al 87,5 %, y el número medio de tokens de razonamiento por pregunta pasa de 12 000 a 23 000, lo que indica un proceso de pensamiento más profundo. Además, se reporta una menor tasa de alucinación y un mejor soporte para function calling. No se especifican detalles de arquitectura, número de parámetros ni longitud de contexto en la información disponible.
 
@@ -21,7 +21,7 @@ La versión actual presenta mejoras notables frente a su predecesora: en el test
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona detalles sobre la arquitectura interna, el número de capas, la dimensión de los embeddings ni el tipo de atención. Se sabe que el modelo se basa en la librería `transformers` de HuggingFace, lo que sugiere una arquitectura transformer estándar, pero no se confirma si es densa o de mezcla de expertos (MoE). Tampoco se indica el tamaño del dataset de entrenamiento ni el número de tokens procesados.
+La model card no proporciona detalles sobre la arquitectura interna, el número de capas, la dimensión de los embeddings ni el tipo de atención. Se sabe que el modelo se basa en la librería `transformers` de Hugging Face, lo que sugiere una arquitectura transformer estándar, pero no se confirma si es densa o de mezcla de expertos (MoE). Tampoco se indica el tamaño del dataset de entrenamiento ni el número de tokens procesados.
 
 El post-entrenamiento es el aspecto más documentado: se menciona un aumento de recursos computacionales y la introducción de mecanismos de optimización algorítmica que mejoran la profundidad de razonamiento. El incremento en el uso de tokens de razonamiento (de 12K a 23K por pregunta en AIME) sugiere que el modelo ha sido entrenado para "pensar" más antes de responder, posiblemente mediante técnicas de cadena de pensamiento o razonamiento extendido. No se menciona el uso de RLHF, DPO u otras técnicas de alineación.
 
@@ -97,6 +97,6 @@ La tabla de benchmarks de la model card compara MyAwesomeModel con tres modelos 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/hshiah/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/hshiah/MyAwesomeModel-TestRepo
 - Repositorio de código: no disponible (se menciona en la model card pero no se proporciona URL)
 - Página web oficial y API: no disponible (se menciona "official website" pero no se enlaza)

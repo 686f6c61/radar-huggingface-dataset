@@ -33,7 +33,7 @@ La conversión a Keras 3 realizada por zeromodels mantiene la misma arquitectura
 - Extracción de características (backbone) mediante `LevitModel.from_weights(...)`, que devuelve la secuencia final de tokens sin la cabeza de clasificación.
 - Inferencia rápida gracias a su diseño compacto y a la fusión de normalización por lotes.
 - Compatibilidad multi-backend: puede ejecutarse en TensorFlow, PyTorch o JAX sin cambios en el código.
-- Soporte para cargar pesos desde el repositorio original de HuggingFace mediante el prefijo `hf:` (por ejemplo, `hf:facebook/levit-128S`).
+- Soporte para cargar pesos desde el repositorio original de Hugging Face mediante el prefijo `hf:` (por ejemplo, `hf:facebook/levit-128S`).
 - Preprocesado integrado: la normalización de ImageNet está incluida en el modelo, simplificando el pipeline de inferencia.
 
 ## Casos de uso
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LeViT-128S (zeromodels) | ~8M (no confirmado) | 224×224 | Apache 2.0 | HuggingFace, Keras 3 |
+| LeViT-128S (zeromodels) | ~8M (no confirmado) | 224×224 | Apache 2.0 | Hugging Face, Keras 3 |
 | MobileNetV2 | 3.4M | 224×224 | Apache 2.0 | Amplia (TF, PyTorch, ONNX) |
 | EfficientNet-Lite0 | 4.7M | 224×224 | Apache 2.0 | Amplia (TF, PyTorch) |
-| ViT-Tiny | 5.7M | 224×224 | Apache 2.0 | HuggingFace, timm |
+| ViT-Tiny | 5.7M | 224×224 | Apache 2.0 | Hugging Face, timm |
 
 La comparativa se basa en el tamaño y la licencia, pero no se dispone de datos de rendimiento para establecer una comparación cuantitativa. LeViT-128S se distingue por su diseño híbrido que busca un equilibrio entre precisión y velocidad, mientras que MobileNetV2 y EfficientNet-Lite son arquitecturas puramente convolucionales optimizadas para dispositivos móviles.
 
@@ -79,9 +79,9 @@ La comparativa se basa en el tamaño y la licencia, pero no se dispone de datos 
 
 ## Enlaces
 
-- [HuggingFace: zeromodels/levit-128S](https://huggingface.co/zeromodels/levit-128S)
-- [HuggingFace: facebook/levit-128S (modelo original)](https://huggingface.co/facebook/levit-128S)
+- [Hugging Face: zeromodels/levit-128S](https://huggingface.co/zeromodels/levit-128S)
+- [Hugging Face: facebook/levit-128S (modelo original)](https://huggingface.co/facebook/levit-128S)
 - [Paper: LeViT: a Vision Transformer in ConvNet's Clothing for Faster Inference](https://arxiv.org/abs/2104.01136)
 - [Repositorio GitHub de ZeroModels](https://github.com/IMvision12/ZeroModels)
 - [Documentación de backbones de ZeroModels](https://imvision12.github.io/ZeroModels/classification_backbones/)
-- [Colección de variantes LeViT en HuggingFace](https://huggingface.co/collections/zeromodels/levit-6a937f8760837c24b7a51d25)
+- [Colección de variantes LeViT en Hugging Face](https://huggingface.co/collections/zeromodels/levit-6a937f8760837c24b7a51d25)

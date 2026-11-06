@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GPT-2 Amharic WikiMulti es un modelo de generacion de texto causal entrenado desde cero por el usuario de HuggingFace dehanalkautsar sobre la porcion en amharico del dataset WikiMulti. No se trata de un ajuste fino (fine-tuning) del GPT-2 original: tanto los pesos del transformer como el tokenizador Byte-Level BPE se inicializaron y entrenaron desde cero usando exclusivamente texto en amharico, lo que lo convierte en un modelo mono-idioma para esa lengua.
+GPT-2 Amharic WikiMulti es un modelo de generacion de texto causal entrenado desde cero por el usuario de Hugging Face dehanalkautsar sobre la porcion en amharico del dataset WikiMulti. No se trata de un ajuste fino (fine-tuning) del GPT-2 original: tanto los pesos del transformer como el tokenizador Byte-Level BPE se inicializaron y entrenaron desde cero usando exclusivamente texto en amharico, lo que lo convierte en un modelo mono-idioma para esa lengua.
 
 Arquitectonicamente replica la configuracion de GPT-2 small: 12 capas, tamano oculto de 768, 12 cabezas de atencion y una longitud maxima de contexto de 1024 tokens, con un vocabulario de 50257 entradas. El recuento real de parametros segun los pesos en safetensors es de 124.439.808, en linea con los ~124M de GPT-2 small.
 
@@ -86,7 +86,7 @@ No se dispone de informacion verificada sobre otros modelos GPT-2 entrenados esp
 | gpt2-am-wikimulti | 124.439.808 | 1024 | 50257 (BPE propio en amharico) | amharico | no disponible | Perplejidad 398,03 (validacion propia) |
 | GPT-2 small original (OpenAI) | ~124M | 1024 | 50257 (BPE en ingles) | ingles (multilingue limitado por transferencia) | MIT | Benchmarks publicos en ingles; no comparable en amharico |
 | Modelos multilingues tipo mGPT / XLM-R | no disponible para una comparacion directa en generacion en amharico | no disponible | no disponible | multilingue | no disponible | no disponible |
-| Otros checkpoints en amharico de GPT-2 publicados en HuggingFace | no disponible | no disponible | no disponible | amharico | no disponible | no disponible |
+| Otros checkpoints en amharico de GPT-2 publicados en Hugging Face | no disponible | no disponible | no disponible | amharico | no disponible | no disponible |
 
 La diferencia funcional clave frente a GPT-2 small original es el tokenizador: al haberse entrenado con BPE sobre amharico, cabe esperar una tokenizacion mas eficiente del texto en ge'ez, aunque no se han publicado mediciones de fertilidad del tokenizador.
 
@@ -105,7 +105,7 @@ La diferencia funcional clave frente a GPT-2 small original es el tokenizador: a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dehanalkautsar/gpt2-am-wikimulti
+- Modelo en Hugging Face: https://huggingface.co/dehanalkautsar/gpt2-am-wikimulti
 - Dataset WikiMulti (referenciado en la model card): https://huggingface.co/datasets/dehanalkautsar/WikiMulti
 - Fichero de datos de entrenamiento: `20260801_am_wiki.parquet` dentro del dataset WikiMulti
 - Paper asociado: no disponible

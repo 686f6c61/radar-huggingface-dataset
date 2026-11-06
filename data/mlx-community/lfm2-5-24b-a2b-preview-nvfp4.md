@@ -92,7 +92,7 @@ Nota: la informacion disponible no incluye resultados de benchmarks comparativos
 
 ## Enlaces
 
-- Repositorio HuggingFace (mlx-community): https://huggingface.co/mlx-community/LFM2.5-24B-A2B-Preview-nvfp4
+- Repositorio Hugging Face (mlx-community): https://huggingface.co/mlx-community/LFM2.5-24B-A2B-Preview-nvfp4
 - Repositorio replicado (nativ-community): https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-nvfp4
 - Modelo base (preview): https://huggingface.co/lq-preview/LFM2.5-24B-A2B-Preview
 - Modelo original de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B

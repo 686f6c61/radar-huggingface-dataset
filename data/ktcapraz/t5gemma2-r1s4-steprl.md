@@ -70,17 +70,17 @@ En `real-use`, el razonamiento rescató 3 respuestas erróneas y dañó 15 corre
 - GPU recomendadas: no se especifican; por tamaño, cualquier GPU con al menos 2–4 GB de VRAM libre debería ser suficiente en FP32 o FP16.
 - Cabe en GPU de consumo: sí, por el tamaño del modelo (270M), aunque el autor no publica requisitos oficiales.
 - El autor reporta velocidad en CPU de servidor con 4 hilos y textos cortos: aproximadamente 0,2–0,4 s por petición con razonamiento activado y unos 0,2 s con él desactivado.
-- Opciones de despliegue: el modelo requiere el código del directorio `decisions/` y el modelo base para la tabla de palabras congelada y el tokenizador; se ejecuta con `python run_example.py` (razonamiento activado) o `python run_example.py --reasoning off`. La model card indica `inference: false` a nivel de HuggingFace, por lo que no es desplegable directamente con pipelines estándar como vLLM, TGI o llama.cpp sin el código propio.
+- Opciones de despliegue: el modelo requiere el código del directorio `decisions/` y el modelo base para la tabla de palabras congelada y el tokenizador; se ejecuta con `python run_example.py` (razonamiento activado) o `python run_example.py --reasoning off`. La model card indica `inference: false` a nivel de Hugging Face, por lo que no es desplegable directamente con pipelines estándar como vLLM, TGI o llama.cpp sin el código propio.
 - Latencia y throughput adicionales: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| t5gemma2-r1s4-steprl (este) | 270M | no disponible | Grafo de evidencia + GRPO | Gemma | HuggingFace, requiere código propio |
-| t5gemma2-decision-270m-v2 | 270M | no disponible | Decisiones de la misma familia, recomendado por el autor | Gemma | HuggingFace (citado en la model card) |
-| google/t5gemma-2-270m-270m (base) | 270M | no disponible | Encoder-decoder T5Gemma2 sin razonamiento | Gemma | HuggingFace |
-| r1 (predecesor de la familia) | 270M | no disponible | Grafo de evidencia, sin la etapa RL final | Gemma | HuggingFace (citado en la model card) |
+| t5gemma2-r1s4-steprl (este) | 270M | no disponible | Grafo de evidencia + GRPO | Gemma | Hugging Face, requiere código propio |
+| t5gemma2-decision-270m-v2 | 270M | no disponible | Decisiones de la misma familia, recomendado por el autor | Gemma | Hugging Face (citado en la model card) |
+| google/t5gemma-2-270m-270m (base) | 270M | no disponible | Encoder-decoder T5Gemma2 sin razonamiento | Gemma | Hugging Face |
+| r1 (predecesor de la familia) | 270M | no disponible | Grafo de evidencia, sin la etapa RL final | Gemma | Hugging Face (citado en la model card) |
 
 No se dispone de datos comparativos de benchmarks frente a modelos de otras familias en la información proporcionada.
 
@@ -92,14 +92,14 @@ No se dispone de datos comparativos de benchmarks frente a modelos de otras fami
 - Solo soporta inglés; no hay capacidades multilingües.
 - Licencia Gemma: el uso comercial está sujeto a los Gemma Terms of Use, y es necesario aceptar los términos en la página del modelo base antes de descargarlo.
 - Es un modelo de investigación, no un producto listo para producción; requiere el código del directorio `decisions/` y el modelo base para funcionar.
-- No es desplegable con pipelines estándar (`inference: false` en HuggingFace), lo que complica su integración en infraestructuras convencionales.
+- No es desplegable con pipelines estándar (`inference: false` en Hugging Face), lo que complica su integración en infraestructuras convencionales.
 - Riesgo de alucinación mitigado parcialmente por la copia de spans (una cita no puede contener palabras inventadas), pero no eliminado: la selección de qué enlazar y con qué relación puede ser incorrecta.
 - No se han documentado sesgos específicos en la información disponible.
 - El modelo no está afiliado a TypeSafe, aunque sigue el formato de petición de su API System One.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ktcapraz/t5gemma2-r1s4-steprl)
+- [Modelo en Hugging Face](https://huggingface.co/ktcapraz/t5gemma2-r1s4-steprl)
 - [Modelo base google/t5gemma-2-270m-270m](https://huggingface.co/google/t5gemma-2-270m-270m)
 - [Gemma Terms of Use](https://ai.google.dev/gemma/terms)
 - [Dataset hotchpotch/bekko-system-one-dataset-v0](https://huggingface.co/datasets/hotchpotch/bekko-system-one-dataset-v0)

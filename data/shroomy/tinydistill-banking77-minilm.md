@@ -103,7 +103,7 @@ No se dispone de datos de otros clasificadores específicos de Banking77 en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shroomy/tinydistill-banking77-minilm
+- Modelo en Hugging Face: https://huggingface.co/Shroomy/tinydistill-banking77-minilm
 - Repositorio de tinydistill: https://github.com/Andreas-Hum/tinydistill
 - Modelo profesor: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Modelo alumno base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2

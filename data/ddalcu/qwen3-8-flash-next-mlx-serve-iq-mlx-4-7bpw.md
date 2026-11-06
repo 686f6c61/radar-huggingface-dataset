@@ -18,7 +18,7 @@ Su relevancia práctica es que permite ejecutar un modelo de esa clase en un Mac
 | Longitud de contexto | 262.144 tokens nativos; atención dispersa a partir de 2.048 tokens |
 | Tipos de cuantización | Este pack (iQ-MLX 4,7 bpw): expertos enrutados 4 bits grupo 64 con calibración por matriz de importancia; atención, GDN, hyper-connections, indexer, expertos compartidos, `lm_head` y `embed_tokens` en 8 bits grupo 64 (salvo `embed_tokens`, que va en 4 bits); tabla de n-gramas en 4 bits grupo 32; routers, compuertas de inyección, normas, convoluciones y estado SSM en bf16; MTP con la misma política que el tronco. Promedio 4,68 bpw escalas incluidas (expertos 4,50). Packs alternativos: 3,3 bpw, mixed-4-8bit y 8 bits |
 | Idiomas soportados | no disponible en la información proporcionada |
-| Licencia | `qwen-community-1.0` (etiquetada como `other` en HuggingFace) |
+| Licencia | `qwen-community-1.0` (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors en formato MLX (shards del pack) + `ngram_table.bin` (32,0 GB, formato safetensors, extensión `.bin` para que no se cargue automáticamente) + `model-vision.safetensors` en bf16 denso (~0,9 GB) |
 
 ## Arquitectura y entrenamiento
@@ -99,7 +99,7 @@ Frente al pack de 3,3 bpw, este gana 3 puntos de concordancia top-1 a cambio de 
 
 ## Limitaciones y advertencias
 
-- **Licencia**: `qwen-community-1.0`, etiquetada como `other` en HuggingFace. No se detallan en la información disponible las condiciones de uso comercial; es imprescindible revisar el fichero `LICENSE` del repositorio antes de cualquier despliegue en producción.
+- **Licencia**: `qwen-community-1.0`, etiquetada como `other` en Hugging Face. No se detallan en la información disponible las condiciones de uso comercial; es imprescindible revisar el fichero `LICENSE` del repositorio antes de cualquier despliegue en producción.
 - **Dependencia de plataforma**: solo Apple Silicon y el runtime mlx-serve. No hay rutas de despliegue documentadas para CUDA, vLLM, llama.cpp, Ollama o TGI, lo que limita su uso en infraestructura de servidores convencional.
 - **Regresión en prosa**: la calibración por matriz de importancia mejora código (96,0 % de top-1) y matemáticas (90,0 %) a costa de la prosa (81,2 % frente al 87,0 % del pack sin calibrar). En tareas de redacción o generación literaria conviene valorar el pack sin calibrar o el de 8 bits.
 - **Sesgos**: no se documenta ninguna evaluación de sesgos en la información proporcionada.
@@ -112,7 +112,7 @@ Frente al pack de 3,3 bpw, este gana 3 puntos de concordancia top-1 a cambio de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-4.7bpw
+- Modelo en Hugging Face: https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-4.7bpw
 - Árbol de ficheros del repositorio: https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-4.7bpw/tree/main
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Pack sin calibrar (mixed-4-8bit): https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-mixed-4-8bit

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Atahualpaiza/testeins es un repositorio alojado en HuggingFace por el usuario Atahualpaiza bajo licencia Apache 2.0. La informacion publica disponible se limita a los metadatos del repositorio: identificador, autor, etiqueta de licencia, region de publicacion (us) y marcas temporales de creacion y ultima actualizacion, ambas del 16 de octubre de 2026. No se declara pipeline, idiomas soportados, arquitectura, numero de parametros ni longitud de contexto.
+Atahualpaiza/testeins es un repositorio alojado en Hugging Face por el usuario Atahualpaiza bajo licencia Apache 2.0. La informacion publica disponible se limita a los metadatos del repositorio: identificador, autor, etiqueta de licencia, region de publicacion (us) y marcas temporales de creacion y ultima actualizacion, ambas del 16 de octubre de 2026. No se declara pipeline, idiomas soportados, arquitectura, numero de parametros ni longitud de contexto.
 
 La model card asociada no contiene ninguna descripcion tecnica: unicamente repite la declaracion de licencia Apache 2.0 en el encabezado YAML, sin secciones de uso, entrenamiento, evaluacion ni limitaciones. Tampoco se han publicado resultados de benchmarks, ejemplos de inferencia, ficheros de pesos documentados ni enlaces a papers o repositorios de codigo.
 
@@ -88,6 +88,6 @@ No disponible. No se puede identificar la categoria del modelo (tamano, tarea, m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Atahualpaiza/testeins
+- Hugging Face: https://huggingface.co/Atahualpaiza/testeins
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios, demos) en la informacion proporcionada.

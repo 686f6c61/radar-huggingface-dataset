@@ -86,5 +86,5 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thox-ai/ThoxOS-Kernel-27B
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/ThoxOS-Kernel-27B
 - Modelo base: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored

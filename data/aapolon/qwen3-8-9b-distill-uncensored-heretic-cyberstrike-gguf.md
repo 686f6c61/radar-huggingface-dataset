@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Aapolon/Qwen3.8-9B-Distill-Uncensored-Heretic-CyberStrike-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/Aapolon/Qwen3.8-9B-Distill-Uncensored-Heretic-CyberStrike-GGUF)
 - [Modelo base](https://huggingface.co/petruhonk/Qwen3.8-9B-Distill-uncensored-heretic)
 - [Dataset CyberStrike SFT](https://huggingface.co/datasets/oyildirim/cyberstrike-sft-120k)
 - [Framework CyberStrike](https://cyberstrike.io)

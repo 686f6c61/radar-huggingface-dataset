@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`GGUFGuy/use-novi-the-assistant` es un repositorio alojado en HuggingFace bajo la licencia Apache 2.0, publicado por el usuario GGUFGuy el 22 de septiembre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y la única revision registrada se actualizo ocho minutos despues de su creacion. No dispone de pipeline declarado, no declara idiomas soportados y no incluye pesos, configuracion ni tokenizador documentados de forma publica.
+`GGUFGuy/use-novi-the-assistant` es un repositorio alojado en Hugging Face bajo la licencia Apache 2.0, publicado por el usuario GGUFGuy el 22 de septiembre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y la única revision registrada se actualizo ocho minutos despues de su creacion. No dispone de pipeline declarado, no declara idiomas soportados y no incluye pesos, configuracion ni tokenizador documentados de forma publica.
 
 La model card es funcionalmente vacia: se limita a la linea "go to community tab" junto con la declaracion de licencia. No hay informacion sobre arquitectura, numero de parametros, longitud de contexto, regimen de entrenamiento ni datos utilizados. Tampoco se ha publicado ningun paper, blog tecnico o repositorio de codigo asociado.
 
@@ -96,7 +96,7 @@ No disponible. No se ha identificado ningun modelo comparable porque se desconoc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GGUFGuy/use-novi-the-assistant
+- Repositorio en Hugging Face: https://huggingface.co/GGUFGuy/use-novi-the-assistant
 - Pestana de comunidad del repositorio (unico destino indicado por la model card): https://huggingface.co/GGUFGuy/use-novi-the-assistant/discussions
 
 La busqueda web realizada no ha devuelto ningun enlace relacionado con el modelo: los resultados obtenidos corresponden a portales de terceros sobre asistentes conversacionales comerciales (TalkAI y similares) y no guardan relacion con `GGUFGuy/use-novi-the-assistant`. No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados.

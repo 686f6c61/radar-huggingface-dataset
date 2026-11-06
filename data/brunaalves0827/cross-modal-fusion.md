@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `brunaalves0827/cross-modal-fusion` no es un modelo de IA entrenado, sino una nota de investigación (research note) publicada en HuggingFace por el usuario brunaalves0827. La propia model card lo declara explícitamente: "It is not presented as a completed paper or a release of trained models". El contenido se limita a dos ficheros, `summary.md` y `README.md`, que organizan motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación sobre fusión cross-modal.
+El repositorio `brunaalves0827/cross-modal-fusion` no es un modelo de IA entrenado, sino una nota de investigación (research note) publicada en Hugging Face por el usuario brunaalves0827. La propia model card lo declara explícitamente: "It is not presented as a completed paper or a release of trained models". El contenido se limita a dos ficheros, `summary.md` y `README.md`, que organizan motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación sobre fusión cross-modal.
 
 El repositorio incluye la etiqueta `transformer` y un fichero de pesos en formato safetensors, pero el recuento real de parámetros es de 24.832, es decir, unas 0,025 millones de parámetros. Esta cifra es entre cuatro y cinco órdenes de magnitud inferior a la de cualquier transformer utilizable para generación de texto, por lo que no puede corresponder a un modelo de lenguaje funcional. El tamaño declarado del repositorio es de 0,0 GB.
 
@@ -77,7 +77,7 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brunaalves0827/cross-modal-fusion
+- Modelo en Hugging Face: https://huggingface.co/brunaalves0827/cross-modal-fusion
 - Ficheros declarados en el repositorio: `summary.md` (artefacto principal) y `README.md` (documentación)
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada
 - Resultados de búsqueda web: no se encontró ningún enlace relevante; los resultados recuperados no guardan relación con el repositorio

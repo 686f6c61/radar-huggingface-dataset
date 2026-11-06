@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`talzoomanzoo/qwen2_5_3b_uid_lr1e5_ep2` es un ajuste fino (fine-tune) del modelo Qwen2.5-3B publicado por el usuario talzoomanzoo en HuggingFace. El identificador del repositorio codifica los hiperparametros del entrenamiento (learning rate 1e-5, 2 epocas) y una referencia a un dataset o tarea denominada "uid", pero la ficha del repositorio no documenta ni el procedimiento ni los datos empleados. El modelo cuenta con 3.085.938.688 parametros reales segun los pesos en safetensors, lo que lo situa en la categoria de modelos pequenos de ~3.000 millones de parametros.
+`talzoomanzoo/qwen2_5_3b_uid_lr1e5_ep2` es un ajuste fino (fine-tune) del modelo Qwen2.5-3B publicado por el usuario talzoomanzoo en Hugging Face. El identificador del repositorio codifica los hiperparametros del entrenamiento (learning rate 1e-5, 2 epocas) y una referencia a un dataset o tarea denominada "uid", pero la ficha del repositorio no documenta ni el procedimiento ni los datos empleados. El modelo cuenta con 3.085.938.688 parametros reales segun los pesos en safetensors, lo que lo situa en la categoria de modelos pequenos de ~3.000 millones de parametros.
 
 Se trata de un modelo derivado de la familia Qwen2.5, una arquitectura transformer decoder-only con atencion por consultas agrupadas (GQA) y normalizacion RMSNorm. Al no incluir pipeline, licencia, idiomas ni dataset de entrenamiento declarados, su relevancia practica es limitada: se trata de un artefacto de investigacion o de un experimento personal, con 7 descargas y 0 likes en el momento de redactar esta ficha.
 
@@ -45,12 +45,12 @@ Respecto al entrenamiento, el nombre del repositorio (`lr1e5_ep2`) indica una ta
 ## Casos de uso
 
 - Prototipado rapido de aplicaciones de generacion de texto: un modelo de 3.000 millones de parametros en fp16 ocupa unos 6,2 GB, por lo que puede cargarse en una GPU de gama media para validar ideas antes de escalar a modelos mayores.
-- Experimentacion academica sobre ajuste fino: el repositorio sirve como ejemplo de publicacion de un fine-tune con hiperparametros codificados en el nombre, util para estudiar convenciones de nombrado y trazabilidad en HuggingFace.
+- Experimentacion academica sobre ajuste fino: el repositorio sirve como ejemplo de publicacion de un fine-tune con hiperparametros codificados en el nombre, util para estudiar convenciones de nombrado y trazabilidad en Hugging Face.
 - Despliegue en entornos con recursos limitados: gracias a su tamano, cabe en GPUs de consumo tras cuantizacion a int8 o int4, lo que permite ejecutarlo en estaciones de trabajo sin aceleradores de datacenter.
 - Generacion de texto asistida en local: con llama.cpp u Ollama (previa conversion a GGUF) podria usarse como asistente de redaccion en un equipo personal, siempre que se acepte la ausencia de garantias sobre sesgos y calidad.
 - Base para comparativas de ajuste fino: investigadores que quieran medir el efecto de distintos learning rates o numeros de epocas pueden usar este checkpoint como referencia de una configuracion concreta (1e-5, 2 epocas).
 - Filtrado o clasificacion de texto experimental: modelos de 3B se emplean a menudo como clasificadores generativos en pipelines de anotacion; requeriria validacion previa porque no hay evaluacion publicada.
-- Educacion y divulgacion: util para demostrar el ciclo completo de fine-tuning y publicacion en HuggingFace en cursos o talleres, dado el reducido coste computacional de un modelo de 3B.
+- Educacion y divulgacion: util para demostrar el ciclo completo de fine-tuning y publicacion en Hugging Face en cursos o talleres, dado el reducido coste computacional de un modelo de 3B.
 - Evaluacion de seguridad y sesgos: al no declararse el dataset de entrenamiento, puede servir como caso de estudio sobre los riesgos de publicar pesos sin documentacion asociada.
 
 ## Benchmarks y rendimiento
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| talzoomanzoo/qwen2_5_3b_uid_lr1e5_ep2 | 3,09 mil millones | no disponible | no disponible | HuggingFace, solo safetensors | no |
-| Qwen2.5-3B (base) | 3,09 mil millones | 32.768 tokens nativos (extensible con YaRN) | Apache-2.0 (segun documentacion publica del modelo base) | HuggingFace, multiples formatos | si, publicados por el autor del modelo base |
-| Llama-3.2-3B | 3,21 mil millones | 128.000 tokens | Llama 3.2 Community License | HuggingFace, multiples formatos | si, publicados por Meta |
-| Phi-3.5-mini | 3,8 mil millones | 128.000 tokens | MIT | HuggingFace, multiples formatos | si, publicados por Microsoft |
+| talzoomanzoo/qwen2_5_3b_uid_lr1e5_ep2 | 3,09 mil millones | no disponible | no disponible | Hugging Face, solo safetensors | no |
+| Qwen2.5-3B (base) | 3,09 mil millones | 32.768 tokens nativos (extensible con YaRN) | Apache-2.0 (segun documentacion publica del modelo base) | Hugging Face, multiples formatos | si, publicados por el autor del modelo base |
+| Llama-3.2-3B | 3,21 mil millones | 128.000 tokens | Llama 3.2 Community License | Hugging Face, multiples formatos | si, publicados por Meta |
+| Phi-3.5-mini | 3,8 mil millones | 128.000 tokens | MIT | Hugging Face, multiples formatos | si, publicados por Microsoft |
 
 Nota: los datos de los modelos comparativos proceden de su documentacion publica y se incluyen como referencia de categoria; no se han verificado contra el repositorio objeto de esta ficha. La comparacion de rendimiento no puede realizarse porque este modelo no publica resultados.
 
@@ -93,7 +93,7 @@ Nota: los datos de los modelos comparativos proceden de su documentacion publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/talzoomanzoo/qwen2_5_3b_uid_lr1e5_ep2
+- Modelo en Hugging Face: https://huggingface.co/talzoomanzoo/qwen2_5_3b_uid_lr1e5_ep2
 - Repositorio del modelo base de la familia Qwen2.5: no disponible en la informacion proporcionada
 - Paper o informe tecnico del modelo base: no disponible en la informacion proporcionada
 - Blog o anuncio del autor: no disponible en la informacion proporcionada

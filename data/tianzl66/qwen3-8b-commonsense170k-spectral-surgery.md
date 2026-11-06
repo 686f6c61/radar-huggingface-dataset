@@ -83,8 +83,8 @@ No se dispone de informacion sobre modelos comparables en la fuente proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tianzl66/Qwen3-8B-CommonSense170K-Spectral-Surgery
+- Repositorio Hugging Face: https://huggingface.co/tianzl66/Qwen3-8B-CommonSense170K-Spectral-Surgery
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
-- Coleccion Qwen3 en HuggingFace: https://huggingface.co/collections/Qwen/qwen3
+- Coleccion Qwen3 en Hugging Face: https://huggingface.co/collections/Qwen/qwen3
 - Model card de Qwen3-8B-Instruct (PDF de NVIDIA): https://developer.nvidia.com/downloads/assets/ace/model_card/qwen3-8b-instruct.pdf

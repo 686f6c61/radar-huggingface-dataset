@@ -102,7 +102,7 @@ Ambas variantes fine-tuned superan a los modelos base en el promedio de tareas d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/L1ght/Qwen3.5-9B-TLive
+- Repositorio Hugging Face: https://huggingface.co/L1ght/Qwen3.5-9B-TLive
 - Página del modelo Qwen3.5-9B en There's An AI For That: https://theresanaiforthat.com/model/qwen3-5-9b/
 - Página del modelo en Awesome Agents: https://awesomeagents.ai/models/qwen-3-5-9b/
 - Página del modelo en Benchable: https://benchable.ai/models/qwen/qwen3.5-9b-20260310

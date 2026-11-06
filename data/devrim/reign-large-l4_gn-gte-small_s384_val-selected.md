@@ -60,7 +60,7 @@ No se han publicado resultados comparativos con otros modelos en la información
 - Inferencia en GPU: VRAM estimada < 1 GB para el modelo completo (encoder + guía).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (p. ej., RTX 2060, GTX 1660) o incluso CPU para inferencia por lotes pequeños.
 - Entrenamiento: se realizó en una GPU de 24 GB (p. ej., RTX 3090 o RTX 4090).
-- Despliegue: requiere el paquete `reign` (instalable desde GitHub) y HuggingFace Transformers para cargar la red de guía. No es compatible directamente con vLLM, Ollama o TGI por ser un modelo de embeddings personalizado.
+- Despliegue: requiere el paquete `reign` (instalable desde GitHub) y Hugging Face Transformers para cargar la red de guía. No es compatible directamente con vLLM, Ollama o TGI por ser un modelo de embeddings personalizado.
 - Latencia y throughput: no disponibles; dependen del número de chunks y del hardware.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No se dispone de datos de comparación directa con otros modelos de embeddings d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/devrim/reign-large-l4_gn-gte-small_s384_val-selected
+- Hugging Face: https://huggingface.co/devrim/reign-large-l4_gn-gte-small_s384_val-selected
 - Código: https://github.com/devrimcavusoglu/reign
 - Página del proyecto: https://devrimcavusoglu.github.io/reign
 - Dataset: https://huggingface.co/datasets/devrim/goodwiki_long_synthetic_ir

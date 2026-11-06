@@ -2,7 +2,7 @@
 
 ## Resumen
 
-matching-pretrained es un repositorio de HuggingFace publicado por el usuario kenjisuzu que contiene una implementación funcional de MoCo v3 (Momentum Contrast v3) orientada a tareas de *matching*, configurada con un escalado declarado como "giant". No es un modelo entrenado ni un checkpoint listo para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*) y que no se reclama ninguna métrica de benchmark.
+matching-pretrained es un repositorio de Hugging Face publicado por el usuario kenjisuzu que contiene una implementación funcional de MoCo v3 (Momentum Contrast v3) orientada a tareas de *matching*, configurada con un escalado declarado como "giant". No es un modelo entrenado ni un checkpoint listo para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*) y que no se reclama ninguna métrica de benchmark.
 
 El repositorio ocupa 0,0 GB y el checkpoint contiene 16.576 parámetros, una cifra muy alejada de lo que implicaría una configuración "giant" real de MoCo v3, lo que refuerza su carácter de artefacto de inicialización y no de modelo final. La arquitectura declarada combina atención dilatada, fusión mediante *concat + MLP*, activación *approx gelu*, normalización *batchnorm* y una receta de entrenamiento por defecto con optimizador Lion y schedule exponencial.
 
@@ -92,14 +92,14 @@ No se proporcionan datos comparativos en la información disponible, y el reposi
 - No se documentan sesgos conocidos, pero tampoco se documenta la composición de datos, por lo que no es posible evaluar sesgos de forma informada.
 - Riesgo de alucinación: no aplica en el sentido habitual (no es un modelo generativo de lenguaje), pero existe el riesgo de interpretar erróneamente las salidas de un modelo sin entrenar como representaciones válidas.
 - Sin soporte declarado de idiomas ni de contexto textual: la implementación no procesa lenguaje natural.
-- Las APIs genéricas de carga automática de HuggingFace no funcionan directamente con este repositorio; es necesario implementar un adaptador explícito para que se cargue correctamente.
+- Las APIs genéricas de carga automática de Hugging Face no funcionan directamente con este repositorio; es necesario implementar un adaptador explícito para que se cargue correctamente.
 - Licencia MIT, permisiva para uso comercial, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se emplean *datasets* externos.
 - La fecha de creación y actualización registrada (2026-09-21) es posterior a la fecha habitual de consulta, una anomalía de metadatos que conviene verificar antes de citar el repositorio.
 - El repositorio registra 0 descargas y 0 *likes*, sin mantenimiento ni comunidad que valide su funcionamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kenjisuzu/matching-pretrained
+- Modelo en Hugging Face: https://huggingface.co/kenjisuzu/matching-pretrained
 - Archivos incluidos en el repositorio: `train.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - La búsqueda web realizada no devolvió resultados relevantes (únicamente una página no relacionada), por lo que no se dispone de enlaces adicionales verificados: no disponible
 - Referencia de la familia MoCo v3 (no encontrada en la búsqueda web, citada únicamente como contexto de la arquitectura): repositorio oficial de facebookresearch: no disponible en la información proporcionada

@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto que perm
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ssum-mer/qwen3.8-27b-growpath-Q4
+- Repositorio Hugging Face: https://huggingface.co/Ssum-mer/qwen3.8-27b-growpath-Q4
 - Modelo base: https://huggingface.co/Ssum-mer/qwen3.8-27b-growpath
 - Revisión concreta del modelo base: https://huggingface.co/Ssum-mer/qwen3.8-27b-growpath/tree/66d1af509ab0681f3b9365227e5c794c65801fbf
 - Fichero GGUF: https://huggingface.co/Ssum-mer/qwen3.8-27b-growpath-Q4/blob/main/qwen3.8-27b-growpath-Q4.gguf

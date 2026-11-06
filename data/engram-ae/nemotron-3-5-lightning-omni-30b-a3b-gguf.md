@@ -88,7 +88,7 @@ La comparativa se limita a los modelos de la misma familia, ya que no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/engram-ae/Nemotron-3.5-Lightning-Omni-30B-A3B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/engram-ae/Nemotron-3.5-Lightning-Omni-30B-A3B-GGUF
 - Modelo base (NVIDIA): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Modelo donante de torres: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-Omni-30B-A3B-Reasoning
 - Fork llama.cpp-omni (binarios): https://github.com/engram-ae/llama.cpp-omni/releases/tag/b10598

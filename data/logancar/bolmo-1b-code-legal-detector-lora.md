@@ -111,7 +111,7 @@ No se dispone de resultados de benchmarks comparativos directos entre este adapt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LoganCar/bolmo-1b-code-legal-detector-lora
+- Modelo en Hugging Face: https://huggingface.co/LoganCar/bolmo-1b-code-legal-detector-lora
 - Modelo base: https://huggingface.co/allenai/Bolmo-1B
 - Repositorio de LineVul / BigVul: https://github.com/awsm-research/LineVul
 - Dataset LexGLUE (tarea UNFAIR-ToS): https://huggingface.co/datasets/coastalcph/lex_glue

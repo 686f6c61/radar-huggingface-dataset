@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Etapa de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| project-llm-rlvr-dynamic-v2-step-149-final | 11,96 B (safetensors) / 12,48 B (card) | no disponible | RLVR v2, step local 149, acumulado 274; lr 5e-7; muestreo dinamico activo | Gemma | Publico en HuggingFace, 0 descargas |
-| vosldtgbj/project-llm-rlvr-dynamic-v2-step-125 | igual | no disponible | RLVR v2, step local 125, acumulado 250; padre directo de este checkpoint | Gemma | Publico en HuggingFace |
-| vosldtgbj/project-llm-rlvr-v1-step-125 | igual | no disponible | RLVR v1, step 125; lr 1e-6, sin muestreo dinamico, secuencia estatica de 3.750 prompts | Gemma | Publico en HuggingFace |
-| google/gemma-4-12B-it | mismo modelo original | no disponible | Modelo instruct de partida, sin las etapas CPT/SFT/RLVR del proyecto | Gemma | Publico en HuggingFace |
+| project-llm-rlvr-dynamic-v2-step-149-final | 11,96 B (safetensors) / 12,48 B (card) | no disponible | RLVR v2, step local 149, acumulado 274; lr 5e-7; muestreo dinamico activo | Gemma | Publico en Hugging Face, 0 descargas |
+| vosldtgbj/project-llm-rlvr-dynamic-v2-step-125 | igual | no disponible | RLVR v2, step local 125, acumulado 250; padre directo de este checkpoint | Gemma | Publico en Hugging Face |
+| vosldtgbj/project-llm-rlvr-v1-step-125 | igual | no disponible | RLVR v1, step 125; lr 1e-6, sin muestreo dinamico, secuencia estatica de 3.750 prompts | Gemma | Publico en Hugging Face |
+| google/gemma-4-12B-it | mismo modelo original | no disponible | Modelo instruct de partida, sin las etapas CPT/SFT/RLVR del proyecto | Gemma | Publico en Hugging Face |
 
 No hay resultados de evaluacion publicados para ninguno de los checkpoints de la trayectoria, por lo que la comparativa se limita a parametros, contexto, etapa de entrenamiento, licencia y disponibilidad. No se dispone de alternativas externas comparables documentadas en la informacion proporcionada.
 
@@ -100,7 +100,7 @@ No hay resultados de evaluacion publicados para ninguno de los checkpoints de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vosldtgbj/project-llm-rlvr-dynamic-v2-step-149-final
+- Modelo en Hugging Face: https://huggingface.co/vosldtgbj/project-llm-rlvr-dynamic-v2-step-149-final
 - Modelo base directo (v2 step 125): https://huggingface.co/vosldtgbj/project-llm-rlvr-dynamic-v2-step-125
 - Checkpoint de la ronda v1: https://huggingface.co/vosldtgbj/project-llm-rlvr-v1-step-25
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

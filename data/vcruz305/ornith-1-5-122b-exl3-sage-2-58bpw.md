@@ -18,7 +18,7 @@ El checkpoint tiene 0 descargas y 0 likes en el momento de la consulta, acceso r
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | EXL3 a 2,58 bits por peso (bpw), variante SAGE. No se documentan otros formatos en el repo |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (etiqueta del repo, heredada del modelo base); acceso restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Licencia | MIT (etiqueta del repo, heredada del modelo base); acceso restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Formato de pesos | safetensors en formato EXL3; librería `exllamav3` |
 | Tamaño del repositorio | 45,2 GB |
 | Pipeline | text-generation (conversacional) |
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Formato / precisión | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`Ornith-1.5-122B-EXL3-SAGE-2.58bpw`) | 122 B (nombre) / 22,56 B (safetensors) | EXL3, 2,58 bpw | no disponible | MIT, acceso gated | HuggingFace, 0 descargas |
-| `ornith-ai/Ornith-1.5-122B` (base sin cuantizar) | 122 B | BF16 (≈244 GB) o FP8 (≈122 GB, si está publicado) | no disponible | MIT según la etiqueta del derivado | HuggingFace (verificar acceso) |
+| Este checkpoint (`Ornith-1.5-122B-EXL3-SAGE-2.58bpw`) | 122 B (nombre) / 22,56 B (safetensors) | EXL3, 2,58 bpw | no disponible | MIT, acceso gated | Hugging Face, 0 descargas |
+| `ornith-ai/Ornith-1.5-122B` (base sin cuantizar) | 122 B | BF16 (≈244 GB) o FP8 (≈122 GB, si está publicado) | no disponible | MIT según la etiqueta del derivado | Hugging Face (verificar acceso) |
 | Alternativas de la misma categoría y tamaño | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de otros autores (por ejemplo, otras familias MoE de la clase 100 B+) dentro de la información proporcionada, por lo que no se incluyen cifras de rendimiento comparado. La comparación con el modelo base es la única que puede hacerse con datos del propio repo.
@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables de otros autores (por ej
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vcruz305/Ornith-1.5-122B-EXL3-SAGE-2.58bpw
+- Repositorio en Hugging Face: https://huggingface.co/vcruz305/Ornith-1.5-122B-EXL3-SAGE-2.58bpw
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B
 - Documentación de ExLlamaV3 (formato EXL3): no disponible en la información proporcionada
 - Papers, blogs, repos auxiliares o demos: no disponible; la búsqueda web realizada no devolvió resultados pertinentes al modelo

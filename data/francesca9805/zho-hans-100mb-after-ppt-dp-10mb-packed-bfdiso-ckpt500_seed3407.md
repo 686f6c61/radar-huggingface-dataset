@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/zho-hans-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino supervisado (SFT) del checkpoint `francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407`, desarrollado por el usuario de HuggingFace `francesca9805` (los enlaces de seguimiento apuntan a un proyecto de investigación de la Universidad de Groningen). Se trata de un transformer decoder-only de arquitectura GPT-2 con 124.770.816 parametros, distribuido en formato safetensors y entrenado con la libreria TRL 0.23.0.
+El modelo `francesca9805/zho-hans-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino supervisado (SFT) del checkpoint `francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407`, desarrollado por el usuario de Hugging Face `francesca9805` (los enlaces de seguimiento apuntan a un proyecto de investigación de la Universidad de Groningen). Se trata de un transformer decoder-only de arquitectura GPT-2 con 124.770.816 parametros, distribuido en formato safetensors y entrenado con la libreria TRL 0.23.0.
 
 El nombre del repositorio sugiere un experimento de investigacion sobre tokenizadores y datos de entrenamiento en chino mandarin simplificado (`zho-hans`), con un corpus empaquetado de aproximadamente 10 MB y un checkpoint intermedio (paso 500, semilla 3407). No es un modelo orientado a produccion: no hay model card extendida, no se declaran idiomas, licencia ni resultados de evaluacion.
 
@@ -47,7 +47,7 @@ El entrenamiento se realizo mediante SFT con TRL 0.23.0, sobre Transformers 4.56
 - Pruebas de infraestructura de despliegue: con 124,8 M de parametros es util para validar pipelines de serving (TGI, vLLM, endpoints compatibles) antes de escalar a modelos mayores, ya que el repositorio incluye la etiqueta `text-generation-inference`.
 - Generacion de texto corto en chino en entornos sin GPU: el modelo cabe en memoria de sistema y puede ejecutarse en CPU para prototipos de completado de frases o generacion de texto breve, siempre que se acepte la calidad limitada derivada del corpus.
 - Punto de partida para ajuste fino adicional: al ser un modelo pequeno y con pesos safetensors estandar, se puede reentrenar con LoRA o SFT completo sobre un dominio concreto usando el mismo stack (Transformers + TRL) sin requisitos de hardware elevados.
-- Docencia y formacion: sirve para ilustrar de forma tangible el ciclo completo de SFT, desde el corpus empaquetado hasta la publicacion en HuggingFace, con un coste computacional bajo.
+- Docencia y formacion: sirve para ilustrar de forma tangible el ciclo completo de SFT, desde el corpus empaquetado hasta la publicacion en Hugging Face, con un coste computacional bajo.
 - No se recomienda como componente de sistemas en produccion orientados a usuario final: no hay evaluacion, ni licencia definida, ni garantias de calidad o de idioma.
 
 ## Benchmarks y rendimiento
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| Este modelo (`zho-hans-...-ckpt500_seed3407`) | 124,8 M | no disponible | no disponible | safetensors en HuggingFace | no |
+| Este modelo (`zho-hans-...-ckpt500_seed3407`) | 124,8 M | no disponible | no disponible | safetensors en Hugging Face | no |
 | GPT-2 small (`openai-community/gpt2`) | 124 M | 1024 tokens | MIT (modelo original de OpenAI) | safetensors, multiples frameworks | parciales en la model card original |
 | DistilGPT-2 (`distilbert/distilgpt2`) | 82 M | 1024 tokens | Apache-2.0 | safetensors | no |
 | Qwen2.5-0.5B (`Qwen/Qwen2.5-0.5B`) | 494 M | 32.768 tokens | Apache-2.0 | safetensors, GGUF | si, publicados por el autor |
@@ -77,7 +77,7 @@ La comparacion disponible se limita a parametros, contexto y licencia: no existe
 ## Limitaciones y advertencias
 
 - Ausencia total de evaluacion: no hay benchmarks, ni perplexity, ni analisis cualitativo publicado; es imposible estimar su calidad real.
-- Licencia no definida: la model card contiene el campo `licence: license` sin terminos, y los metadatos de HuggingFace indican "no disponible". No hay autorizacion explicita para uso comercial.
+- Licencia no definida: la model card contiene el campo `licence: license` sin terminos, y los metadatos de Hugging Face indican "no disponible". No hay autorizacion explicita para uso comercial.
 - Idiomas no declarados: aunque el identificador apunta al chino mandarin simplificado, no se puede confirmar el soporte ni el rendimiento en otros idiomas.
 - Riesgo elevado de alucinacion y de texto incoherente: 124,8 M de parametros entrenados sobre un corpus empaquetado de unos 10 MB (y un SFT posterior) es un presupuesto muy limitado para producir texto fiable.
 - Sesgos desconocidos: no se documenta la procedencia, el filtrado ni la composicion del corpus de entrenamiento, por lo que no se pueden caracterizar los sesgos presentes.
@@ -89,7 +89,7 @@ La comparacion disponible se limita a parametros, contexto y licencia: no existe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/78zwvy4z
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) del checkpoint monolingüe `goldfish-models/tur_latn_10mb`, publicado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo pequeño, con 39.087.104 parámetros totales declarados en los pesos safetensors, construido sobre la arquitectura GPT-2 (transformer decoder-only causal) y entrenado mediante SFT (supervised fine-tuning) con la librería TRL. El identificador del repositorio sugiere un experimento de investigación sobre tokenizadores y preentrenamiento en un corpus de 10 MB, con una semilla fija (3407), más que un modelo destinado a producción.
+Este modelo es un ajuste fino (fine-tuning) del checkpoint monolingüe `goldfish-models/tur_latn_10mb`, publicado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo pequeño, con 39.087.104 parámetros totales declarados en los pesos safetensors, construido sobre la arquitectura GPT-2 (transformer decoder-only causal) y entrenado mediante SFT (supervised fine-tuning) con la librería TRL. El identificador del repositorio sugiere un experimento de investigación sobre tokenizadores y preentrenamiento en un corpus de 10 MB, con una semilla fija (3407), más que un modelo destinado a producción.
 
 El problema que aborda es acotado: disponer de un modelo generativo en turco (escritura latina) de tamaño mínimo, útil para experimentar con pipelines de ajuste supervisado, comparar tokenizadores o servir como punto de partida para tareas posteriores. No es un modelo de propósito general ni compite con los modelos multilingües actuales; su interés es metodológico y reproducible.
 
@@ -36,7 +36,7 @@ El entrenamiento se realizó mediante SFT con TRL 0.23.0, Transformers 4.56.2, P
 - Soporte de agentes o razonamiento multi-paso: no disponible; no se declara ninguna capacidad de este tipo.
 - Capacidades multilingües: no disponibles; el modelo base es monolingüe.
 - Capacidades especiales (modo de razonamiento explícito, visión, audio): no disponibles.
-- Inferencia compatible con `text-generation-inference` y con la API de endpoints de HuggingFace, según las etiquetas del repositorio.
+- Inferencia compatible con `text-generation-inference` y con la API de endpoints de Hugging Face, según las etiquetas del repositorio.
 
 ## Casos de uso
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `francesca9805/tur-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407` | 39,09 M | no disponible | no disponible | Repositorio en HuggingFace, 0 descargas |
-| `goldfish-models/tur_latn_10mb` (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | Público en HuggingFace |
-| `openai-community/gpt2` (referencia de arquitectura) | 124 M | 1.024 tokens | licencia modificada de MIT | Público en HuggingFace |
-| Otros checkpoints Goldfish de 10 MB para distintas lenguas | alrededor de decenas de millones, no confirmado | no disponible | no disponible | Públicos en HuggingFace |
+| `francesca9805/tur-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407` | 39,09 M | no disponible | no disponible | Repositorio en Hugging Face, 0 descargas |
+| `goldfish-models/tur_latn_10mb` (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | Público en Hugging Face |
+| `openai-community/gpt2` (referencia de arquitectura) | 124 M | 1.024 tokens | licencia modificada de MIT | Público en Hugging Face |
+| Otros checkpoints Goldfish de 10 MB para distintas lenguas | alrededor de decenas de millones, no confirmado | no disponible | no disponible | Públicos en Hugging Face |
 
 La comparación cuantitativa de rendimiento entre estos modelos no es posible con la información disponible: ninguno de los datos de benchmarks de este checkpoint está publicado y la búsqueda web no devolvió material relevante.
 
@@ -87,7 +87,7 @@ La comparación cuantitativa de rendimiento entre estos modelos no es posible co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tur-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tur-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/tur_latn_10mb
 - Registro del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/3kjltacx
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -65,7 +65,7 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parametros | Contexto | Tokenizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Carbon-3B | 3.451 M | 32.768 tokens (≈197 kbp); 65.536 con YaRN | Hibrida: 6-meros ADN + BPE Qwen3 | Apache 2.0 | HuggingFace (repo preservado) |
+| Carbon-3B | 3.451 M | 32.768 tokens (≈197 kbp); 65.536 con YaRN | Hibrida: 6-meros ADN + BPE Qwen3 | Apache 2.0 | Hugging Face (repo preservado) |
 | Evo2-7B | no disponible en la informacion | no disponible en la informacion | Nucleotido unico (single-nucleotide) | no disponible | Citado como baseline por el autor |
 | Carbon-8B | no disponible en la informacion (familia Carbon, mayor capacidad) | no disponible en la informacion | Hibrida (familia Carbon) | no disponible | HuggingFaceBio (segun model card) |
 | Carbon-500M | no disponible en la informacion | no disponible en la informacion | Hibrida (familia Carbon) | no disponible | HuggingFaceBio (segun model card) |
@@ -85,10 +85,10 @@ La model card afirma que Carbon-3B iguala a Evo2-7B en recuperación de secuenci
 
 ## Enlaces
 
-- Repositorio preservado en HuggingFace: https://huggingface.co/hellnahbru/Carbon-3B-preserved-20261029
+- Repositorio preservado en Hugging Face: https://huggingface.co/hellnahbru/Carbon-3B-preserved-20261029
 - Repositorio oficial (referenciado en la model card): https://huggingface.co/HuggingFaceBio/Carbon-3B
 - Informe tecnico: https://github.com/huggingface/carbon/blob/main/tech-report.pdf
 - Repositorio GitHub: https://github.com/huggingface/carbon
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/HuggingFaceBio/carbon-demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/HuggingFaceBio/carbon-demo
 - Dataset de preentrenamiento: https://huggingface.co/datasets/HuggingFaceBio/carbon-pretraining-corpus
 - Tokenizador base (vocabulario BPE): https://huggingface.co/Qwen/Qwen3-4B

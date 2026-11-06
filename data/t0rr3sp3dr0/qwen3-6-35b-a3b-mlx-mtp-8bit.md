@@ -78,7 +78,7 @@ La comparativa se limita a otras versiones del mismo modelo base, ya que no se d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/t0rr3sp3dr0/Qwen3.6-35B-A3B-MLX-MTP-8bit
+- Repositorio Hugging Face: https://huggingface.co/t0rr3sp3dr0/Qwen3.6-35B-A3B-MLX-MTP-8bit
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Guía de Qwen 3.6 (insiderllm): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/
 - Guía para ejecutar Qwen 3.6 35B MoE localmente: https://insiderllm.com/guides/best-way-run-qwen-3-6-35b-moe-locally/

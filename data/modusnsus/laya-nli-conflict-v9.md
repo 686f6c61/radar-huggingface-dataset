@@ -104,7 +104,7 @@ Comparativas con alternativas de la misma categoria (clasificadores NLI multilin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Modusnsus/laya-nli-conflict-v9
+- Modelo en Hugging Face: https://huggingface.co/Modusnsus/laya-nli-conflict-v9
 - Cabeza en produccion citada por el autor: https://huggingface.co/Modusnsus/laya-nli-memory-conflict
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Dataset de entrenamiento citado: https://huggingface.co/datasets/daphnelaurent/nli-conflict-pairs

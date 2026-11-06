@@ -92,8 +92,8 @@ Segun la model card, la perdida de calidad es minima hasta 256 dimensiones, y 12
 
 | Modelo | Parametros | Contexto | Dimension de salida | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| EmbeddingGemma 2 | 740M | 8.192 tokens | 768 (MRL 128/256/512) | Texto, imagen, video, audio | Apache 2.0 | HuggingFace |
-| EmbeddingGemma 1 | no disponible | no disponible | no disponible | Texto | no disponible | HuggingFace |
+| EmbeddingGemma 2 | 740M | 8.192 tokens | 768 (MRL 128/256/512) | Texto, imagen, video, audio | Apache 2.0 | Hugging Face |
+| EmbeddingGemma 1 | no disponible | no disponible | no disponible | Texto | no disponible | Hugging Face |
 | Otros modelos de embeddings de escala similar | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 En la informacion proporcionada solo se ofrecen datos comparativos frente a EmbeddingGemma 1 (predecesor). No hay cifras disponibles de otras alternativas como E5, BGE-M3 u otros modelos de embeddings comparables.
@@ -110,7 +110,7 @@ En la informacion proporcionada solo se ofrecen datos comparativos frente a Embe
 
 ## Enlaces
 
-- Repositorio en HuggingFace (objeto de esta ficha): https://huggingface.co/gubernac/embeddinggemma-2
+- Repositorio en Hugging Face (objeto de esta ficha): https://huggingface.co/gubernac/embeddinggemma-2
 - Repositorio original de Google: https://huggingface.co/google/embeddinggemma-2
 - GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2

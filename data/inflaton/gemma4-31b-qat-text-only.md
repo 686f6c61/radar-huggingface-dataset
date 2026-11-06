@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `inflaton/gemma4-31b-qat-text-only` es un checkpoint publicado en HuggingFace por el usuario `inflaton` bajo licencia Apache 2.0. Aunque la model card apenas contiene información, la denominación sugiere que se trata de una variante de la familia Gemma 4 de Google DeepMind, específicamente una versión de solo texto (text-only) con entrenamiento de cuantización consciente (QAT, Quantization-Aware Training). Esta técnica permite reducir el peso en memoria manteniendo una calidad cercana al formato bfloat16, lo que resulta relevante para despliegues en entornos con recursos limitados.
+El modelo `inflaton/gemma4-31b-qat-text-only` es un checkpoint publicado en Hugging Face por el usuario `inflaton` bajo licencia Apache 2.0. Aunque la model card apenas contiene información, la denominación sugiere que se trata de una variante de la familia Gemma 4 de Google DeepMind, específicamente una versión de solo texto (text-only) con entrenamiento de cuantización consciente (QAT, Quantization-Aware Training). Esta técnica permite reducir el peso en memoria manteniendo una calidad cercana al formato bfloat16, lo que resulta relevante para despliegues en entornos con recursos limitados.
 
 La fecha de creación (agosto de 2026) indica que es un lanzamiento reciente. No se dispone de datos concretos sobre arquitectura, número de parámetros o contexto en la información proporcionada, pero por el nombre se infiere que se basa en el modelo Gemma 4 31B, que en su versión oficial soporta hasta 256K tokens de contexto y más de 140 idiomas. Este checkpoint podría ser una adaptación específica para tareas de procesamiento de texto sin componente multimodal, lo que lo hace adecuado para pipelines de generación y razonamiento donde no se requiere entrada de imágenes.
 
@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| inflaton/gemma4-31b-qat-text-only | no disponible (presum 31B) | no disponible | Apache 2.0 | HuggingFace |
-| google/gemma-4-31B | 31B (denso o MoE) | 256K | Apache 2.0 | HuggingFace |
-| google/gemma-4-31B-it-qat-w4a16-ct | 31B | no disponible (probable 256K) | Apache 2.0 | HuggingFace |
-| google/gemma-4-12B | 12B | 256K | Apache 2.0 | HuggingFace |
+| inflaton/gemma4-31b-qat-text-only | no disponible (presum 31B) | no disponible | Apache 2.0 | Hugging Face |
+| google/gemma-4-31B | 31B (denso o MoE) | 256K | Apache 2.0 | Hugging Face |
+| google/gemma-4-31B-it-qat-w4a16-ct | 31B | no disponible (probable 256K) | Apache 2.0 | Hugging Face |
+| google/gemma-4-12B | 12B | 256K | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en los modelos oficiales de Gemma 4. El modelo de inflaton no tiene especificaciones públicas, por lo que no es posible comparar rendimiento ni arquitectura con precisión.
 
@@ -74,7 +74,7 @@ La comparativa se basa en los modelos oficiales de Gemma 4. El modelo de inflato
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/inflaton/gemma4-31b-qat-text-only)
+- [Hugging Face del modelo](https://huggingface.co/inflaton/gemma4-31b-qat-text-only)
 - [Modelo oficial Gemma 4 31B](https://huggingface.co/google/gemma-4-31B)
 - [Gemma 4 31B IT QAT w4a16](https://huggingface.co/google/gemma-4-31B-it-qat-w4a16-ct)
 - [Página oficial de Gemma 4 en Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)

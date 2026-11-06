@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jasonren-ai2/g1-vla-finetune-checkpoints` es un repositorio de HuggingFace que agrupa los checkpoints finales de un barrido de ajuste fino (fine-tuning sweep) de modelos VLA (vision-language-action) sobre conjuntos de datos de manipulacion robotica del robot humanoide Unitree G1. Lo publica el usuario `jasonren-ai2` bajo la libreria LeRobot, con tags que lo identifican como `lerobot`, `safetensors`, `robotics`, `unitree-g1` y `vla`. El repositorio pesa 34,5 GB y esta marcado como privado en la model card.
+`jasonren-ai2/g1-vla-finetune-checkpoints` es un repositorio de Hugging Face que agrupa los checkpoints finales de un barrido de ajuste fino (fine-tuning sweep) de modelos VLA (vision-language-action) sobre conjuntos de datos de manipulacion robotica del robot humanoide Unitree G1. Lo publica el usuario `jasonren-ai2` bajo la libreria LeRobot, con tags que lo identifican como `lerobot`, `safetensors`, `robotics`, `unitree-g1` y `vla`. El repositorio pesa 34,5 GB y esta marcado como privado en la model card.
 
 El contenido son politicas ya entrenadas (pesos, configuracion, pre/post-procesadores con estadisticas de normalizacion y `train_config.json`) para tareas concretas como cargar una lavadora, colocar un plato en una rejilla o doblar una toalla. La nomenclatura de cada carpeta sigue el patron `<modelo>_<dataset>_step<steps>_gbs<global batch>`. Cada ejecucion se entreno durante 50.000 pasos con un batch global de 256 (32 por GPU en 8 H100), usando la configuracion de fine-tuning por defecto de cada modelo base.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre ellas mas alla de la per
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jasonren-ai2/g1-vla-finetune-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/jasonren-ai2/g1-vla-finetune-checkpoints
 - Modelo base GR00T-N1.7-3B: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Modelo base pi05-base: https://huggingface.co/lerobot/pi05_base
 - Dataset g1-load-clothes-washing-machine: https://huggingface.co/datasets/aarontung/g1-load-clothes-washing-machine

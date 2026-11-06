@@ -37,7 +37,7 @@ No se ha realizado ningún entrenamiento: el archivo `model.safetensors` es un c
 ## Casos de uso
 
 - **Pruebas de humo en pipelines de entrenamiento**: el checkpoint permite verificar que el código de entrenamiento, la carga de datos y el bucle de optimización funcionan correctamente antes de lanzar un entrenamiento real. Se puede ejecutar `python run.py --help` para inspeccionar el punto de entrada.
-- **Desarrollo de adaptadores para carga automática**: al ser una implementación personalizada, las APIs genéricas de HuggingFace no cargan el modelo directamente. Este repositorio sirve como base para escribir un adaptador explícito.
+- **Desarrollo de adaptadores para carga automática**: al ser una implementación personalizada, las APIs genéricas de Hugging Face no cargan el modelo directamente. Este repositorio sirve como base para escribir un adaptador explícito.
 - **Investigación en arquitecturas eficientes**: los investigadores pueden estudiar la configuración (atención flash, fusión bilineal, GroupNorm) y compararla con otras variantes de EfficientFormer o transformers eficientes.
 - **Reproducibilidad de experimentos**: el autor recomienda entrenar todas las líneas base con la misma exposición de datos, presupuesto de ajuste y semillas aleatorias. Este repositorio proporciona una configuración inicial reproducible.
 - **Evaluación de métricas de matching**: aunque no hay un modelo entrenado, el código puede servir para implementar la evaluación de una tarea de emparejamiento con un conjunto de validación pareado, reportando la métrica de la tarea en al menos tres semillas.
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - **VRAM estimada para inferencia**: no aplica, ya que no hay inferencia útil sin entrenamiento. Con 16.576 parámetros, el modelo cabe en cualquier dispositivo, incluso CPU.
 - **GPU recomendadas**: cualquier GPU con soporte para PyTorch (por ejemplo, NVIDIA GTX 1050 o superior) es suficiente para cargar el checkpoint y ejecutar pruebas de humo.
 - **Compatibilidad con GPU de consumo**: sí, cualquier GPU de consumo puede manejar este tamaño.
-- **Opciones de despliegue**: no se recomienda desplegar este modelo en producción. Para desarrollo, se puede usar directamente con PyTorch o mediante un adaptador personalizado en HuggingFace. No es compatible con vLLM, llama.cpp, Ollama o TGI sin un adaptador explícito.
+- **Opciones de despliegue**: no se recomienda desplegar este modelo en producción. Para desarrollo, se puede usar directamente con PyTorch o mediante un adaptador personalizado en Hugging Face. No es compatible con vLLM, llama.cpp, Ollama o TGI sin un adaptador explícito.
 - **Latencia y throughput**: no disponibles, pero al ser un modelo de 16K parámetros, la latencia sería despreciable en cualquier hardware moderno.
 
 ## Comparativa con modelos similares
@@ -70,6 +70,6 @@ No disponible. Este repositorio no es un modelo entrenado, sino un checkpoint de
 
 ## Enlaces
 
-- [HuggingFace - johnallenman/efficientformer-matching-study](https://huggingface.co/johnallenman/efficientformer-matching-study)
+- [Hugging Face - johnallenman/efficientformer-matching-study](https://huggingface.co/johnallenman/efficientformer-matching-study)
 - [GitHub - snap-research/EfficientFormer (EfficientFormerV2)](https://github.com/snap-research/EfficientFormer)
-- [Documentación de EfficientFormer en HuggingFace Transformers](https://huggingface.co/docs/transformers/main/en/model_doc/efficientformer)
+- [Documentación de EfficientFormer en Hugging Face Transformers](https://huggingface.co/docs/transformers/main/en/model_doc/efficientformer)

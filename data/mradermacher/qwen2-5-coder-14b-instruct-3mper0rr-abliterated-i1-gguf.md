@@ -70,6 +70,6 @@ Estas variantes comparten el mismo origen y parametrizacion; la diferencia princ
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mradermacher/Qwen2.5-Coder-14B-Instruct-3MPER0RR-abliterated-i1-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mradermacher/Qwen2.5-Coder-14B-Instruct-3MPER0RR-abliterated-i1-GGUF
 - Quants estaticos del mismo modelo: https://huggingface.co/mradermacher/Qwen2.5-Coder-14B-Instruct-3MPER0RR-abliterated-GGUF
 - Checkpoint base: https://huggingface.co/3MPER0RR/Qwen2.5-Coder-14B-Instruct-3MPER0RR-abliterated

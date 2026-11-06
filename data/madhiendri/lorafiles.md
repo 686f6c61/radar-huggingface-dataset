@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `madhiendri/lorafiles` aloja un conjunto de archivos LoRA publicado por el usuario `madhiendri` en HuggingFace. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso; únicamente se declara una licencia `unknown`. El repositorio fue creado el 16 de agosto de 2026 y no ha registrado descargas ni valoraciones hasta la fecha de consulta.
+El repositorio `madhiendri/lorafiles` aloja un conjunto de archivos LoRA publicado por el usuario `madhiendri` en Hugging Face. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso; únicamente se declara una licencia `unknown`. El repositorio fue creado el 16 de agosto de 2026 y no ha registrado descargas ni valoraciones hasta la fecha de consulta.
 
 Dado que no se proporciona información sobre el modelo base, el tamaño de los adaptadores, el método de entrenamiento ni las capacidades resultantes, no es posible determinar qué tareas puede realizar ni en qué contexto debería utilizarse. Cualquier uso en producción requeriría una inspección directa de los archivos y una verificación manual de su contenido y compatibilidad.
 
@@ -53,4 +53,4 @@ No disponible. No se puede comparar este repositorio con alternativas de la mism
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/madhiendri/lorafiles
+- Repositorio en Hugging Face: https://huggingface.co/madhiendri/lorafiles

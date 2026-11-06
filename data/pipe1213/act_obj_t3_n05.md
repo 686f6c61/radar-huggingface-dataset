@@ -71,7 +71,7 @@ Contexto agregado del estudio (3 tareas y todas las semillas de entrenamiento): 
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT (este modelo) | 51,7 M | Imagen 256×256 + estado; sin lenguaje | 14 % medio (3 checkpoints, 5 demos) | Apache 2.0 | HuggingFace (LeRobot) |
+| ACT (este modelo) | 51,7 M | Imagen 256×256 + estado; sin lenguaje | 14 % medio (3 checkpoints, 5 demos) | Apache 2.0 | Hugging Face (LeRobot) |
 | SmolVLA (referencia del estudio) | no disponible en la información | Visión + lenguaje + estado | 78 % con las mismas 5 demos (agregado del estudio) | no disponible en la información | no disponible en la información |
 | ACT con más demostraciones (estudio) | 51,7 M | Igual que este modelo | 17,9 % agregado con 5 demos en 3 tareas | Apache 2.0 | Repositorio del estudio |
 
@@ -93,7 +93,7 @@ La comparación directa con SmolVLA no es limpia, tal como advierte el propio au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pipe1213/act_obj_t3_n05
+- Modelo en Hugging Face: https://huggingface.co/Pipe1213/act_obj_t3_n05
 - Repositorio del estudio vla-vs-scratch: https://github.com/Pipe1213/vla-vs-scratch
 - Resultados completos del estudio: https://github.com/Pipe1213/vla-vs-scratch#results
 - Análisis del estudio: https://github.com/Pipe1213/vla-vs-scratch/blob/main/results/analysis.md

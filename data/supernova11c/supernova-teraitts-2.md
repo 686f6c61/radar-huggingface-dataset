@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Supernova TeraiTTS es un proyecto de texto a voz (TTS) para nepalí publicado en HuggingFace por el usuario Supernova11c. No se trata de un modelo con pesos propios entrenados desde cero: el repositorio es, segun su propia model card, una libreria de Python (`supernova-teraitts`) que envuelve el modelo `Oshara/xtts-v2-nepali` y descarga sus pesos en tiempo de ejecucion. La arquitectura subyacente es Coqui XTTS v2, un modelo TTS multilingue con capacidad de clonacion de voz a partir de un audio de referencia.
+Supernova TeraiTTS es un proyecto de texto a voz (TTS) para nepalí publicado en Hugging Face por el usuario Supernova11c. No se trata de un modelo con pesos propios entrenados desde cero: el repositorio es, segun su propia model card, una libreria de Python (`supernova-teraitts`) que envuelve el modelo `Oshara/xtts-v2-nepali` y descarga sus pesos en tiempo de ejecucion. La arquitectura subyacente es Coqui XTTS v2, un modelo TTS multilingue con capacidad de clonacion de voz a partir de un audio de referencia.
 
 El interes del proyecto es de nicho: ofrece una API Python simplificada (`tts.generate(...)`) para generar locuciones en nepalí con una voz de referencia en formato WAV y salida a 24 kHz. El autor lo describe como un lanzamiento temprano, con pruebas y evaluacion aun en curso, y con cero descargas y cero likes en el momento de la ficha, lo que lo situa como un artefacto experimental mas que como una dependencia lista para produccion.
 
@@ -24,7 +24,7 @@ Es relevante principalmente para quien necesite un punto de entrada rapido a TTS
 | Frecuencia de muestreo de salida | 24 kHz |
 | Entrada | texto + audio de referencia (`speaker_wav`) para clonacion de voz |
 | Distribucion | paquete Python `supernova-teraitts` (instalacion via `pip install supernova-teraitts`) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creacion | 2026-10-27 |
 | Ultima actualizacion | 2026-10-27 |
 | Mantenedor | Supernova11c |
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Idioma principal | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Supernova TeraiTTS (este repositorio) | Envoltura Python sobre Coqui XTTS v2 | Nepalí | Texto + WAV de referencia, salida 24 kHz | `supernova-horizon` (other), con caveat sobre la licencia upstream | HuggingFace + pip, 0 descargas |
-| Oshara/xtts-v2-nepali | Coqui XTTS v2 fine-tune | Nepalí | Texto + WAV de referencia | No disponible en la informacion proporcionada | HuggingFace (modelo upstream) |
+| Supernova TeraiTTS (este repositorio) | Envoltura Python sobre Coqui XTTS v2 | Nepalí | Texto + WAV de referencia, salida 24 kHz | `supernova-horizon` (other), con caveat sobre la licencia upstream | Hugging Face + pip, 0 descargas |
+| Oshara/xtts-v2-nepali | Coqui XTTS v2 fine-tune | Nepalí | Texto + WAV de referencia | No disponible en la informacion proporcionada | Hugging Face (modelo upstream) |
 | Coqui XTTS v2 (base) | TTS autoregresivo multilingue con clonacion | Multilingue, con nepalí no confirmado en esta ficha | Texto + WAV de referencia | No disponible en la informacion proporcionada | Peso comunitario ampliamente distribuido |
 
 No se dispone de datos de rendimiento comparado (MOS, similitud de hablante, WER) que permitan establecer una jerarquia objetiva entre estas opciones.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparado (MOS, similitud de hablante, WER
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Supernova11c/Supernova-TeraiTTS
+- Modelo en Hugging Face: https://huggingface.co/Supernova11c/Supernova-TeraiTTS
 - Modelo upstream: https://huggingface.co/Oshara/xtts-v2-nepali
 - Paquete Python: `pip install supernova-teraitts` (no se ha localizado repositorio publico del codigo en la informacion disponible)
 - Paper, blog o demo oficiales: no disponibles en la informacion proporcionada

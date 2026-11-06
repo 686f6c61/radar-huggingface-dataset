@@ -99,7 +99,7 @@ La ventaja diferencial de este repositorio es la combinación de licencia Apache
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TigreGotico/nllb_200_distilled_600m-eng-zul-onnx
+- Repositorio Hugging Face: https://huggingface.co/TigreGotico/nllb_200_distilled_600m-eng-zul-onnx
 - Modelo base (ajuste fino original): https://huggingface.co/dsfsi/nllb_200_distilled_600m-eng-zul
 - Modelo NLLB-200 distilled 600M de Meta: https://huggingface.co/facebook/nllb-200-distilled-600M
 - Grupo DSFSI (Universidad de Pretoria): https://dsfsi.github.io/

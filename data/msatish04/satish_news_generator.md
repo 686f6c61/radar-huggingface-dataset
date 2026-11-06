@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Satish_News_Generator es un ajuste fino supervisado de Qwen/Qwen2.5-3B-Instruct, publicado por el desarrollador Satish Marineni (MSatish04) en HuggingFace. El modelo recibe una instruccion y genera un pasaje corto de estilo abstract de investigacion, condicionado a uno de dos estilos de escritura: "human writer" (escritor humano) o "AI system" (sistema de IA). No es un generador de noticias pese al nombre: el autor reconoce que los datos de entrenamiento son mayoritariamente abstracts academicos.
+Satish_News_Generator es un ajuste fino supervisado de Qwen/Qwen2.5-3B-Instruct, publicado por el desarrollador Satish Marineni (MSatish04) en Hugging Face. El modelo recibe una instruccion y genera un pasaje corto de estilo abstract de investigacion, condicionado a uno de dos estilos de escritura: "human writer" (escritor humano) o "AI system" (sistema de IA). No es un generador de noticias pese al nombre: el autor reconoce que los datos de entrenamiento son mayoritariamente abstracts academicos.
 
 Tecnicamente es un transformer causal decoder-only de la familia Qwen2, con 3.085.938.688 parametros (aproximadamente 3,1 B), pesos fusionados en float16 dentro de un unico fichero `model.safetensors` de unos 6,2 GB. Se entreno con QLoRA (cuantizacion 4-bit NF4 mas adaptadores LoRA con r = 64 y alpha = 16) sobre una GPU T4 gratuita de Google Colab, y los adaptadores se fusionaron en el modelo base, de modo que se carga como un modelo `transformers` estandar sin necesidad de `peft`.
 
@@ -89,7 +89,7 @@ Nota: los datos de los tres modelos de comparacion provienen de sus especificaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MSatish04/Satish_News_Generator
+- Modelo en Hugging Face: https://huggingface.co/MSatish04/Satish_News_Generator
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/dataspoof/Fine_tuned_project

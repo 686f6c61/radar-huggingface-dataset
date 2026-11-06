@@ -25,7 +25,7 @@ Su relevancia es acotada y de nicho: es un artefacto de producción para flujos 
 | Autor | RunningHub-[@子羽] |
 | Tamano del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de creacion | 2026-10-19 (según metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-19 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -78,7 +78,7 @@ No se dispone de datos verificables de alternativas concretas: no se ha identifi
 | Contexto / resolucion | No disponible | No disponible |
 | Rendimiento medido | Sin benchmarks publicados | No disponible |
 | Licencia | No declarada | No disponible |
-| Disponibilidad | HuggingFace + RunningHub, 0 descargas | No disponible |
+| Disponibilidad | Hugging Face + RunningHub, 0 descargas | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ No se dispone de datos verificables de alternativas concretas: no se ha identifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RunningHubAI/rh-anima-preview-rdbt-finetuned-cfg-distilled-v0.19b-lora
+- Modelo en Hugging Face: https://huggingface.co/RunningHubAI/rh-anima-preview-rdbt-finetuned-cfg-distilled-v0.19b-lora
 - README en chino: https://huggingface.co/RunningHubAI/rh-anima-preview-rdbt-finetuned-cfg-distilled-v0.19b-lora/blob/main/README_cn.md
 - Modelo original en RunningHub: https://www.runninghub.cn/model/public/2097514453561597953
 - Perfil del autor (@子羽): https://www.runninghub.cn/user-center/2000544920995774466

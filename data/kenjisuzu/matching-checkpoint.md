@@ -2,7 +2,7 @@
 
 ## Resumen
 
-matching-checkpoint es un checkpoint experimental publicado por el usuario kenjisuzu en HuggingFace bajo el identificador `kenjisuzu/matching-checkpoint`. No se trata de un modelo entrenado ni de un modelo de lenguaje generativo, sino de una inicialización de pesos (24.832 parametros totales) pensada para pruebas de humo de una implementacion propia de arquitectura Mixer orientada a tareas de matching. El propio autor indica de forma explicita que el fichero `model.safetensors` es "un checkpoint de inicializacion valido para smoke tests" y que "no se presenta como un checkpoint entrenado con benchmarks".
+matching-checkpoint es un checkpoint experimental publicado por el usuario kenjisuzu en Hugging Face bajo el identificador `kenjisuzu/matching-checkpoint`. No se trata de un modelo entrenado ni de un modelo de lenguaje generativo, sino de una inicialización de pesos (24.832 parametros totales) pensada para pruebas de humo de una implementacion propia de arquitectura Mixer orientada a tareas de matching. El propio autor indica de forma explicita que el fichero `model.safetensors` es "un checkpoint de inicializacion valido para smoke tests" y que "no se presenta como un checkpoint entrenado con benchmarks".
 
 El repositorio contiene, ademas de los pesos, un `pipeline.py` con el modelo y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura generados y un `training_args.json` con la receta de experimento por defecto (SGD con schedule de tipo step). La escala declarada es "xlarge" dentro de la configuracion del propio script, y la arquitectura combina atencion linear con fusion mediante cross attention, activacion mish y normalizacion instancenorm.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: practicamente nula. Con 24.832 parametros, los pesos en fp32 ocupan aproximadamente 99 KB (24.832 x 4 bytes); en fp16, unos 50 KB. El repositorio completo ocupa 0,0 GB segun HuggingFace.
+- VRAM estimada para inferencia: practicamente nula. Con 24.832 parametros, los pesos en fp32 ocupan aproximadamente 99 KB (24.832 x 4 bytes); en fp16, unos 50 KB. El repositorio completo ocupa 0,0 GB segun Hugging Face.
 - GPU recomendadas: ninguna en particular; el modelo cabe y se ejecuta en CPU sin problema. Cualquier GPU consumer, incluida una GTX 1050 o una iGPU moderna, es mas que suficiente.
 - Cabe en GPU consumer: si, en cualquier GPU consumer y tambien en CPU.
 - Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI. El autor indica que, al ser una implementacion personalizada, las APIs genericas de carga automatica requieren un adaptador explicito. El unico punto de entrada documentado es `pipeline.py` (`python pipeline.py --help`).
@@ -70,7 +70,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kenjisuzu/matching-checkpoint | 24.832 | no disponible | sin benchmarks publicados (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
+| kenjisuzu/matching-checkpoint | 24.832 | no disponible | sin benchmarks publicados (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,5 +87,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kenjisuzu/matching-checkpoint
+- Modelo en Hugging Face: https://huggingface.co/kenjisuzu/matching-checkpoint
 - La busqueda web realizada no devolvio ningun enlace relevante relacionado con este modelo: los resultados obtenidos fueron contenido no relacionado con el ambito tecnico y se han descartado. No hay paper, blog, repositorio adicional ni demo asociados en la informacion disponible.

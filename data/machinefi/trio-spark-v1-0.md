@@ -4,7 +4,7 @@
 
 Trio-Spark v1.0 es un modelo de decisión desarrollado por MachineFi Labs (MachineFi), presentado como su primer «Situated World Model»: un sistema que recibe el estado estructurado de un entorno concreto junto con un conjunto acotado de 2 a 8 movimientos legales y devuelve, en una sola pasada, el movimiento seleccionado y una probabilidad para cada opción. No es un modelo generativo de propósito general ni un agente completo: cubre únicamente el paso de juicio acotado dentro de un bucle en el que la aplicación aporta el estado, las acciones permitidas, el ejecutor y los controles de seguridad.
 
-El modelo no se distribuye como pesos abiertos. El repositorio de HuggingFace actúa como punto de entrada a un servicio alojado: el identificador público de la API es `trio-spark-preview`, mientras que Trio-Spark v1.0 es la versión de producto. El código de los clientes y las demos del repositorio público de GitHub se publica bajo Apache-2.0, pero esa licencia no cubre los pesos ni los artefactos de entrenamiento.
+El modelo no se distribuye como pesos abiertos. El repositorio de Hugging Face actúa como punto de entrada a un servicio alojado: el identificador público de la API es `trio-spark-preview`, mientras que Trio-Spark v1.0 es la versión de producto. El código de los clientes y las demos del repositorio público de GitHub se publica bajo Apache-2.0, pero esa licencia no cubre los pesos ni los artefactos de entrenamiento.
 
 Su relevancia está en el nicho de las decisiones frecuentes y de baja latencia sobre un conjunto de acciones definido por la aplicación: enrutado, selección de herramientas, elección de acciones de interfaz gráfica, movimientos de juego, habilidades robóticas y control operativo. El autor publica evidencias de ejecución real con dron autónomo, agente de navegador y brazo robótico, además de una evaluación inicial sobre cuatro conjuntos de datos públicos de clasificación.
 
@@ -17,12 +17,12 @@ Su relevancia está en el nicho de las decisiones frecuentes y de baja latencia 
 | Parámetros activos | no disponible; no se ha confirmado que sea un modelo MoE |
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible; los pesos no se distribuyen, solo se accede vía API alojada |
-| Idiomas soportados | no disponible (la model card no declara idiomas y la etiqueta de HuggingFace no los especifica) |
+| Idiomas soportados | no disponible (la model card no declara idiomas y la etiqueta de Hugging Face no los especifica) |
 | Licencia | other; la API es un servicio comercial alojado y los clientes del repositorio público usan Apache-2.0 |
 | Formato de pesos | no disponible; los pesos y el código de entrenamiento no se distribuyen desde el repositorio |
 | Entrada | estado estructurado del entorno más 2-8 opciones con identificador y descripción |
 | Salida | `choice_id`, distribución completa de probabilidad, confianza, uso y latencia |
-| Tarea declarada en HuggingFace | text-classification |
+| Tarea declarada en Hugging Face | text-classification |
 | Biblioteca | custom |
 
 ## Arquitectura y entrenamiento
@@ -35,7 +35,7 @@ La información publicada tampoco detalla innovaciones técnicas internas como d
 
 - Decisión de un solo paso sobre un conjunto acotado de 2 a 8 opciones, con devolución del identificador de la opción elegida.
 - Distribución completa de probabilidad sobre todas las opciones, más un valor de confianza asociado a la decisión.
-- Clasificación de texto: el pipeline declarado en HuggingFace es `text-classification` y la evaluación de lanzamiento se hizo sobre tareas de clasificación.
+- Clasificación de texto: el pipeline declarado en Hugging Face es `text-classification` y la evaluación de lanzamiento se hizo sobre tareas de clasificación.
 - Integración en bucles de agente con realimentación: el estado se actualiza tras cada movimiento ejecutado.
 - Casos de aplicación citados por el autor: enrutado, selección de herramientas, elección de acciones de interfaz gráfica, movimientos de juego, habilidades robóticas y control operativo.
 - Modo de invocación idempotente mediante cabecera `Idempotency-Key` en la API, con devolución de métricas de uso y latencia en la respuesta.
@@ -112,7 +112,7 @@ Como referencia dentro del mismo proveedor, la plataforma describe una cadena de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MachineFi/Trio-Spark-v1.0
+- Modelo en Hugging Face: https://huggingface.co/MachineFi/Trio-Spark-v1.0
 - Repositorio de clientes y demos: https://github.com/machinefi/trio-spark
 - Organización de MachineFi Labs en GitHub: https://github.com/machinefi
 - Post de lanzamiento: https://machinefi.com/blog/trio-spark-decisions-single-pass

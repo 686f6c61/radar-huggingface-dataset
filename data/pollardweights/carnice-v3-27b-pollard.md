@@ -79,7 +79,7 @@ La comparativa se centra en la misma familia de modelos. La versión Pollard des
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/PollardWeights/Carnice-V3-27b-Pollard
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/PollardWeights/Carnice-V3-27b-Pollard
 - Modelo base original: https://huggingface.co/kai-os/Carnice-V3
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantizaciones GGUF de kai-os: https://huggingface.co/kai-os/Carnice-27b-GGUF

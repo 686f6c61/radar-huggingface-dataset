@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario DSA1AFG1E bajo el identificador `DSA1AFG1E/MyAwesomeModel-TestRepo`. La model card lo presenta como un modelo conversacional de razonamiento, con mejoras en profundidad de inferencia, soporte de *function calling* y una reduccion declarada de la tasa de alucinacion respecto a su version anterior. El autor afirma que la precision en AIME 2025 pasa del 70 % al 87,5 % y que el consumo medio de tokens por pregunta en ese conjunto crece de 12K a 23K, lo que indicaria cadenas de razonamiento mas largas.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario DSA1AFG1E bajo el identificador `DSA1AFG1E/MyAwesomeModel-TestRepo`. La model card lo presenta como un modelo conversacional de razonamiento, con mejoras en profundidad de inferencia, soporte de *function calling* y una reduccion declarada de la tasa de alucinacion respecto a su version anterior. El autor afirma que la precision en AIME 2025 pasa del 70 % al 87,5 % y que el consumo medio de tokens por pregunta en ese conjunto crece de 12K a 23K, lo que indicaria cadenas de razonamiento mas largas.
 
-Ahora bien, la informacion disponible es muy limitada y parcialmente contradictoria. Los metadatos de HuggingFace etiquetan el repositorio como `bert` y con pipeline `feature-extraction`, mientras que la model card describe un asistente generativo con modo de razonamiento, busqueda web y subida de ficheros. No se indican parametros totales, longitud de contexto, idiomas soportados, formato de pesos ni detalles de cuantizacion.
+Ahora bien, la informacion disponible es muy limitada y parcialmente contradictoria. Los metadatos de Hugging Face etiquetan el repositorio como `bert` y con pipeline `feature-extraction`, mientras que la model card describe un asistente generativo con modo de razonamiento, busqueda web y subida de ficheros. No se indican parametros totales, longitud de contexto, idiomas soportados, formato de pesos ni detalles de cuantizacion.
 
 El repositorio presenta ademas senales de ser un entorno de prueba: el nombre incluye "TestRepo", tiene 0 descargas y 0 likes, y fue creado y actualizado con 72 segundos de diferencia (14 de septiembre de 2026). La model card usa nombres genericos ("Model1", "Model2") en su tabla de benchmarks, sin identificar los modelos comparados. La busqueda web realizada no ha devuelto ningun resultado relevante sobre el modelo.
 
@@ -113,7 +113,7 @@ No disponible. La model card compara contra "Model1", "Model2" y "Model1-v2" sin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DSA1AFG1E/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/DSA1AFG1E/MyAwesomeModel-TestRepo
 - Licencia (fichero `LICENSE` referenciado en la model card, no accesible en la informacion proporcionada): no disponible
 - Repositorio de codigo: la model card menciona "our code repository" sin enlace ni URL
 - Paper tecnico: no disponible

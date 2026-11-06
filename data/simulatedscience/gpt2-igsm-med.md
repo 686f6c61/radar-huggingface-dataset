@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 - VRAM estimada para inferencia: no disponible con exactitud; el modelo base GPT-2 de ~117M parámetros requiere aproximadamente 1-2 GB de VRAM en FP16, pero el repositorio incluye múltiples checkpoints y sondas que suman 17,4 GB en disco.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para inferencia. Para entrenar desde cero se recomienda una GPU con al menos 12 GB de VRAM (RTX 3060 o superior).
-- Modelo de ejecución: el modelo puede ejecutarse con librerías estándar de HuggingFace (transformers, PyTorch). No se menciona compatibilidad con vLLM, llama.cpp u Ollama.
+- Modelo de ejecución: el modelo puede ejecutarse con librerías estándar de Hugging Face (transformers, PyTorch). No se menciona compatibilidad con vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no se han publicado datos. En una GPU moderna, la inferencia de un modelo de 117M params es casi instantánea (menos de 50 ms por token).
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No se dispone de comparativa directa con otros modelos especializados en matemá
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SimulatedScience/gpt2-igsm-med
+- Hugging Face: https://huggingface.co/SimulatedScience/gpt2-igsm-med
 - Dataset iGSM-med-120M: https://huggingface.co/datasets/SimulatedScience/igsm-med-120Mproblems
 - Dataset iGSM-117M (con errores): https://huggingface.co/datasets/SimulatedScience/igsm-117Mproblems
 - Perfil del autor: https://huggingface.co/SimulatedScience

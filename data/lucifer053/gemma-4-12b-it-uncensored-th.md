@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma 4 12B It Uncensored (Thai + English, Vision) es un derivado del modelo denso multimodal google/gemma-4-12B-it, publicado por el usuario lucifer053 en HuggingFace. Se trata de una version "abliterated": se ha eliminado la direccion de rechazo (refusal direction) de los pesos mediante ortogonalizacion, de modo que el modelo deja de rechazar peticiones que el modelo original declinaria. El autor indica que el proceso se hizo con un dataset paralelo de prompts en tailandes e ingles, en lugar de usar solo datos en ingles, para no degradar la fluidez en tailandes.
+Gemma 4 12B It Uncensored (Thai + English, Vision) es un derivado del modelo denso multimodal google/gemma-4-12B-it, publicado por el usuario lucifer053 en Hugging Face. Se trata de una version "abliterated": se ha eliminado la direccion de rechazo (refusal direction) de los pesos mediante ortogonalizacion, de modo que el modelo deja de rechazar peticiones que el modelo original declinaria. El autor indica que el proceso se hizo con un dataset paralelo de prompts en tailandes e ingles, en lugar de usar solo datos en ingles, para no degradar la fluidez en tailandes.
 
 El modelo conserva la torre de vision del original (pipeline `image-text-to-text`) y admite, de forma experimental, entrada de audio a traves del proyector multimodal. Cuenta con 11.907.350.576 parametros (aproximadamente 11,9 mil millones) y se distribuye unicamente en formato GGUF, con una cuantizacion Q4_K_M de unos 6,9 GB, una F16 de unos 22,2 GB y un proyector multimodal F16 de unos 167 MB. El repositorio ocupa 31,4 GB en total.
 
@@ -91,7 +91,7 @@ No se han identificado en la informacion proporcionada alternativas concretas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucifer053/gemma-4-12b-it-uncensored-th
+- Modelo en Hugging Face: https://huggingface.co/lucifer053/gemma-4-12b-it-uncensored-th
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - Herramienta de abliteracion utilizada: https://github.com/jim-plus/llm-abliteration

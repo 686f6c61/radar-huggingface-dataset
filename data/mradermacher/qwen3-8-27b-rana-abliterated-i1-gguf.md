@@ -13,7 +13,7 @@ La relevancia de esta ficha es doble: por un lado, documenta una vía de desplie
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer denso con atencion hibrida (48 capas Gated DeltaNet lineal + atencion estandar), segun la informacion del modelo base Qwen3.8-27B. No confirmado en la model card del repo GGUF |
-| Parametros totales | ~27B (denso, ~28B contando el codificador visual de ~1B segun la fuente del modelo base). El campo de parametros de HuggingFace para este repo indica 3.391.984, cifra no coherente con un modelo de 27B y probablemente un artefacto de metadatos |
+| Parametros totales | ~27B (denso, ~28B contando el codificador visual de ~1B segun la fuente del modelo base). El campo de parametros de Hugging Face para este repo indica 3.391.984, cifra no coherente con un modelo de 27B y probablemente un artefacto de metadatos |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada |
 | Tipos de cuantizacion | Q2_K, Q2_K_S, IQ1_M, IQ1_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL (etiquetada como small-IQ4_NL), Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
@@ -82,7 +82,7 @@ Las cifras de VRAM que siguen son estimaciones calculadas a partir de los ~27B d
 | Modelo | Parametros | Contexto | Licencia | Formato / disponibilidad |
 |---|---|---|---|---|
 | Qwen3.8-27B-RANA-abliterated-i1-GGUF (este repo) | ~27B denso | No disponible | No declarada en la model card | GGUF, 24 variantes de cuantizacion |
-| Qwen3.8-27B (base, Alibaba) | ~27B denso, ~28B con vision | No disponible | Apache 2.0 | Pesos oficiales en HuggingFace |
+| Qwen3.8-27B (base, Alibaba) | ~27B denso, ~28B con vision | No disponible | Apache 2.0 | Pesos oficiales en Hugging Face |
 | mradermacher/Qwen3.8-27B-abliterated-i1-GGUF | ~27B denso | No disponible | apache-2.0 (segun busqueda) | GGUF, con imatrix |
 | mradermacher/Qwen3.8-27B-3MPER0RR-obliterated-i1-GGUF | ~27B denso | No disponible | apache-2.0 (segun busqueda) | GGUF, con imatrix |
 | Qwen3.8-Max | No disponible | No disponible | Propietaria | Solo API |
@@ -99,12 +99,12 @@ La diferencia entre estas alternativas no esta en el tamano ni en la arquitectur
 - Idiomas soportados no documentados. No se puede asumir un rendimiento homogeneo fuera del ingles o del chino sin evaluacion previa.
 - Longitud de contexto no documentada en este repositorio. No hay que asumir los valores del modelo base sin verificarlos en los metadatos de la conversion.
 - Repositorio practicamente sin adopcion: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion comunitaria y de informes de fallos.
-- El campo de parametros de HuggingFace (3.391.984) es incoherente con el nombre del modelo, lo que sugiere metadatos defectuosos y obliga a verificar cualquier dato extraido automaticamente del repo.
+- El campo de parametros de Hugging Face (3.391.984) es incoherente con el nombre del modelo, lo que sugiere metadatos defectuosos y obliga a verificar cualquier dato extraido automaticamente del repo.
 - Uso responsable: cualquier aplicacion basada en este modelo en investigacion de seguridad deberia operar en entornos aislados y con registro de las interacciones.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-RANA-abliterated-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-RANA-abliterated-i1-GGUF
 - Modelo de origen: https://huggingface.co/preemware/Qwen3.8-27B-RANA-abliterated
 - Variante abliterated del mismo autor: https://huggingface.co/mradermacher/Qwen3.8-27B-abliterated-i1-GGUF
 - Variante 3MPER0RR-obliterated: https://huggingface.co/mradermacher/Qwen3.8-27B-3MPER0RR-obliterated-i1-GGUF

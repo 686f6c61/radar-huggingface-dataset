@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-oQ4e-mtp es una cuantización comunitaria de un modelo Qwen de arquitectura MoE (mezcla de expertos), publicada por el usuario scottlowry en HuggingFace. El identificador y el campo `model type` de la model card (`qwen3_5_moe`) indican que se trata de una versión derivada de la familia Qwen3.5 con 35.951.822.704 parámetros totales y la nomenclatura A3B, que en la convención de Qwen designa aproximadamente 3.000 millones de parámetros activos por token. El sufijo `mtp` apunta a la presencia del módulo de multi-token prediction, aunque la model card no lo confirma explícitamente.
+Qwen3.6-35B-A3B-oQ4e-mtp es una cuantización comunitaria de un modelo Qwen de arquitectura MoE (mezcla de expertos), publicada por el usuario scottlowry en Hugging Face. El identificador y el campo `model type` de la model card (`qwen3_5_moe`) indican que se trata de una versión derivada de la familia Qwen3.5 con 35.951.822.704 parámetros totales y la nomenclatura A3B, que en la convención de Qwen designa aproximadamente 3.000 millones de parámetros activos por token. El sufijo `mtp` apunta a la presencia del módulo de multi-token prediction, aunque la model card no lo confirma explícitamente.
 
 El modelo se distribuye ya cuantizado a 4 bits con tamaño de grupo 64, empleando la herramienta oQ de oMLX (v0.7.1.dev1) para cuantización de precisión mixta. El objetivo es claro: reducir un modelo MoE de ~36.000 millones de parámetros hasta unos 21,6 GB de pesos en formato safetensors para MLX, de modo que pueda ejecutarse en equipos Apple Silicon con memoria unificada moderada en lugar de requerir GPUs de centro de datos.
 
@@ -87,6 +87,6 @@ La comparación más relevante es contra el modelo base sin cuantizar: este repo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/scottlowry/Qwen3.6-35B-A3B-oQ4e-mtp
+- Repositorio en Hugging Face: https://huggingface.co/scottlowry/Qwen3.6-35B-A3B-oQ4e-mtp
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - No se han encontrado otros enlaces relevantes (papers, blogs o demos) en los resultados de búsqueda web disponibles; los resultados devueltos no guardan relación con el modelo.

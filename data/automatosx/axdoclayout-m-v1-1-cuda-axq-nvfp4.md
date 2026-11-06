@@ -115,7 +115,7 @@ Conviene recordar que el modelo fuente expone `AXDocLayout.from_pretrained()`, q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AXDocLayout-M-v1.1-CUDA-AXQ-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AXDocLayout-M-v1.1-CUDA-AXQ-NVFP4
 - Modelo base: https://huggingface.co/AutomatosX/AXDocLayout-M-v1.1
 - Revision fijada del artefacto cuantizado: `4d7dab0196b1b38c4000868c77145d31c6edf189`
 - Revision del modelo fuente: `2c419a0da355ee5e979cfeb0808f596aae6e896e`

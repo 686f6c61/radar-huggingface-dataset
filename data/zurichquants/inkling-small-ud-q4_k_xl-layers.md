@@ -66,7 +66,7 @@ No se dispone de datos comparativos especificos en la informacion proporcionada.
 
 ## Enlaces
 
-- Paquete en HuggingFace: https://huggingface.co/zurichquants/Inkling-Small-UD-Q4_K_XL-layers
+- Paquete en Hugging Face: https://huggingface.co/zurichquants/Inkling-Small-UD-Q4_K_XL-layers
 - Modelo base GGUF: https://huggingface.co/unsloth/Inkling-Small-GGUF
 - Model card oficial de Inkling-Small: https://thinkingmachines.ai/model-card/inkling-small/
 - Anuncio de Inkling-Small: https://thinkingmachines.ai/news/inkling-small/

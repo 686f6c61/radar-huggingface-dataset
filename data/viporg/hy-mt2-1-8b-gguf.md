@@ -31,7 +31,7 @@ La única información técnica verificable es el artefacto publicado: un ficher
 
 - Traducción automática: el nombre del modelo y su asociación con el proyecto LingoAI apuntan a la traducción entre idiomas como capacidad principal, aunque no se detallan los pares de idiomas soportados.
 - Generación de texto conversacional: la etiqueta `conversational` del repositorio indica soporte para diálogo, sin especificar calidad ni idiomas.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse mediante APIs compatibles con el formato estándar de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse mediante APIs compatibles con el formato estándar de Hugging Face.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: presumiblemente sí, dado el propósito de traducción, pero sin lista de idiomas confirmada.

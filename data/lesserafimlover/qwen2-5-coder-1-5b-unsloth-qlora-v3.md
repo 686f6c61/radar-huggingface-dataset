@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks específicos para este fine-tuning 
 
 | Modelo | Parametros | Contexto | HumanEval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-Coder-1.5B (base) | 1,5B | 32K | 43,3 % | Apache 2.0 | HuggingFace, Ollama |
-| lesserafimlover/qwen2.5-coder-1.5b-unsloth-qlora-v3 | 1,5B (adaptador LoRA) | 32K | no disponible | Apache 2.0 | HuggingFace |
-| CodeLlama-7B | 7B | 16K | 30,5 % (HumanEval) | Llama 2 license | HuggingFace |
-| StarCoderBase-1B | 1B | 8K | 17,7 % (HumanEval) | Apache 2.0 | HuggingFace |
+| Qwen2.5-Coder-1.5B (base) | 1,5B | 32K | 43,3 % | Apache 2.0 | Hugging Face, Ollama |
+| lesserafimlover/qwen2.5-coder-1.5b-unsloth-qlora-v3 | 1,5B (adaptador LoRA) | 32K | no disponible | Apache 2.0 | Hugging Face |
+| CodeLlama-7B | 7B | 16K | 30,5 % (HumanEval) | Llama 2 license | Hugging Face |
+| StarCoderBase-1B | 1B | 8K | 17,7 % (HumanEval) | Apache 2.0 | Hugging Face |
 
 El modelo se posiciona como una alternativa ligera y de bajo coste, pero sin datos de rendimiento propios. Frente a CodeLlama-7B, ofrece un tamaño mucho menor y una licencia más permisiva, pero es probable que tenga menor rendimiento en tareas complejas. Frente a StarCoderBase-1B, tiene una ventana de contexto cuatro veces mayor y un mejor rendimiento base en HumanEval.
 
@@ -78,7 +78,7 @@ El modelo se posiciona como una alternativa ligera y de bajo coste, pero sin dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lesserafimlover/qwen2.5-coder-1.5b-unsloth-qlora-v3
+- Modelo en Hugging Face: https://huggingface.co/lesserafimlover/qwen2.5-coder-1.5b-unsloth-qlora-v3
 - Modelo base (unsloth): https://huggingface.co/unsloth/Qwen2.5-Coder-1.5B-Instruct
 - Modelo base cuantizado (bnb-4bit): https://huggingface.co/unsloth/qwen2.5-coder-1.5b-instruct-bnb-4bit
 - Documentación técnica de Qwen2.5-Coder: https://arxiv.org/html/2409.12186v2

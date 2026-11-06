@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vipghost1k/qwen3.5-4b-base | 4,2B | 262K (según doc. Qwen3.5) | Sí (según doc.) | No disponible | HuggingFace |
-| Qwen3.5-4B (oficial) | 4B | 262K | Sí | No disponible (probablemente Apache 2.0) | HuggingFace, LM Studio, Fireworks |
-| Llama 3.2 3B | 3,2B | 128K | No | Llama 3.2 Community License | HuggingFace, múltiples |
+| vipghost1k/qwen3.5-4b-base | 4,2B | 262K (según doc. Qwen3.5) | Sí (según doc.) | No disponible | Hugging Face |
+| Qwen3.5-4B (oficial) | 4B | 262K | Sí | No disponible (probablemente Apache 2.0) | Hugging Face, LM Studio, Fireworks |
+| Llama 3.2 3B | 3,2B | 128K | No | Llama 3.2 Community License | Hugging Face, múltiples |
 
 La comparativa se basa en datos públicos de los modelos oficiales. No se dispone de información suficiente para comparar el rendimiento real de este repositorio con otras alternativas, ya que no hay benchmarks publicados.
 
@@ -77,9 +77,9 @@ La comparativa se basa en datos públicos de los modelos oficiales. No se dispon
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vipghost1k/qwen3.5-4b-base
+- Repositorio Hugging Face: https://huggingface.co/vipghost1k/qwen3.5-4b-base
 - Modelo similar del mismo autor (9B): https://huggingface.co/vipghost1k/qwen3.5-9b-base
 - Página de Qwen3.5-4B en LM Studio: https://lmstudio.ai/models/qwen/qwen3.5-4b
-- Colección oficial Qwen3.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen35
+- Colección oficial Qwen3.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen35
 - Ficha de Qwen3.5-4B en Fireworks AI: https://fireworks.ai/models/fireworks/qwen3p5-4b
 - Información de Qwen3.5-4B en CanIRun.ai: https://www.canirun.ai/model/qwen3.5-4b

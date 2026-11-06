@@ -6,7 +6,7 @@ MIST (Molecular Insight SMILES Transformers) es una familia de modelos fundacion
 
 La relevancia del modelo reside en su enfoque: en lugar de entrenar modelos específicos por propiedad, MIST pre-entrena un encoder tipo RoBERTa-PreLayerNorm sobre el espacio químico de Enamine REAL (la mayor base de compuestos comercialmente disponibles) mediante Masked Language Modeling, y después lo adapta a tareas de regresión concretas. Esto permite obtener predicciones de ocho propiedades cuánticas (energías electrónica y de dispersión, momento dipolar, carga metálica, gap HOMO-LUMO, energías HOMO y LUMO, y polarizabilidad) a partir de una única pasada del encoder.
 
-Con 1.800 millones de parámetros, 28 capas, dimensión oculta de 2304 y una longitud máxima de secuencia de 2048 tokens, el modelo se posiciona en la gama alta de los encoders químicos. Su licencia es Apache 2.0 según los metadatos de HuggingFace, aunque la model card restringe explícitamente el uso a investigación y prohíbe la redistribución y el uso comercial sin acuerdo de licencia, lo que constituye una discrepancia importante que el usuario debe resolver antes de desplegarlo en producción.
+Con 1.800 millones de parámetros, 28 capas, dimensión oculta de 2304 y una longitud máxima de secuencia de 2048 tokens, el modelo se posiciona en la gama alta de los encoders químicos. Su licencia es Apache 2.0 según los metadatos de Hugging Face, aunque la model card restringe explícitamente el uso a investigación y prohíbe la redistribución y el uso comercial sin acuerdo de licencia, lo que constituye una discrepancia importante que el usuario debe resolver antes de desplegarlo en producción.
 
 ## Especificaciones tecnicas
 
@@ -84,8 +84,8 @@ No se dispone de datos de rendimiento numérico de este modelo ni de alternativa
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mist-1.8B-g53ib4q2-tmQM | 1,8 B | 2048 | Regresión de 8 propiedades cuánticas (organometálicos) | Apache 2.0 (metadatos) / solo investigación (model card) | HuggingFace |
-| mist-1.8B-dh61satt (modelo base) | 1,8 B | 2048 | Encoder MLM de SMILES | Apache 2.0 | HuggingFace |
+| mist-1.8B-g53ib4q2-tmQM | 1,8 B | 2048 | Regresión de 8 propiedades cuánticas (organometálicos) | Apache 2.0 (metadatos) / solo investigación (model card) | Hugging Face |
+| mist-1.8B-dh61satt (modelo base) | 1,8 B | 2048 | Encoder MLM de SMILES | Apache 2.0 | Hugging Face |
 | Otros encoders químicos de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la información disponible alternativas directas con las que comparar parámetros, contexto y rendimiento de forma rigurosa.
@@ -105,7 +105,7 @@ No se han identificado en la información disponible alternativas directas con l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mist-models/mist-1.8B-g53ib4q2-tmQM
+- Modelo en Hugging Face: https://huggingface.co/mist-models/mist-1.8B-g53ib4q2-tmQM
 - Modelo base: https://huggingface.co/mist-models/mist-1.8B-dh61satt
 - Repositorio de código MIST: https://github.com/BattModels/mist
 - Demo de fine-tuning e inferencia: https://github.com/BattModels/mist-demo

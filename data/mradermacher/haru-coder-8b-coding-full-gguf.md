@@ -28,7 +28,7 @@ Su relevancia práctica es acotada y muy específica: el repositorio permite des
 
 ## Arquitectura y entrenamiento
 
-La model card del repositorio GGUF no describe la arquitectura del modelo subyacente. Se limita a indicar que se trata de cuantizaciones estáticas del modelo harumori47/haru-coder-8b-coding-full, generadas con un pipeline propio de mradermacher (los comentarios internos del README indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversión desde pesos en formato HuggingFace a GGUF). No se especifican el número de capas, la dimensión oculta, el mecanismo de atención ni si se emplearon técnicas como GQA o RoPE escalado.
+La model card del repositorio GGUF no describe la arquitectura del modelo subyacente. Se limita a indicar que se trata de cuantizaciones estáticas del modelo harumori47/haru-coder-8b-coding-full, generadas con un pipeline propio de mradermacher (los comentarios internos del README indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversión desde pesos en formato Hugging Face a GGUF). No se especifican el número de capas, la dimensión oculta, el mecanismo de atención ni si se emplearon técnicas como GQA o RoPE escalado.
 
 Tampoco hay información sobre el entrenamiento del modelo original: no se documentan el número de tokens, la composición del dataset, ni si hubo fases de ajuste fino supervisado, RLHF o DPO. El tag `conversational` sugiere que el modelo ha pasado por algún tipo de ajuste para diálogo, pero no se aporta detalle alguno. Del mismo modo, no se menciona ninguna innovación técnica (decodificación especulativa, atención lineal, mezcla de expertos) ni se publican los hiperparámetros usados en la conversión a GGUF.
 
@@ -109,7 +109,7 @@ En terminos de rendimiento no puede establecerse ninguna comparacion: haru-coder
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/haru-coder-8b-coding-full-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/haru-coder-8b-coding-full-GGUF
 - Modelo base: https://huggingface.co/harumori47/haru-coder-8b-coding-full
 - Pagina de resumen y listado de descargas del cuantizador: https://hf.tst.eu/model#haru-coder-8b-coding-full-GGUF
 - Peticiones de cuantizacion y preguntas frecuentes de mradermacher: https://huggingface.co/mradermacher/model_requests

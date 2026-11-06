@@ -6,7 +6,7 @@ Phi-4-mini-instruct_rai_1.9.0_m_1.0.1_npu es una distribucion optimizada del mod
 
 El modelo base es un transformer denso de aproximadamente 3.800 millones de parametros, disenado por Microsoft Research para tareas de instruccion, razonamiento y generacion de texto con ventana de contexto de 128.000 tokens. AMD no modifica los pesos ni el entrenamiento: su aportacion es la conversion a ONNX, la compilacion con las herramientas de Ryzen AI y la publicacion de un paquete listo para desplegar en local.
 
-Su relevancia es practica: permite ejecutar un modelo de 3.800 millones de parametros en un portatil o mini-PC con Ryzen AI sin GPU dedicada, con consumo energetico bajo y sin enviar datos a la nube. El repositorio esta restringido (gated) y requiere aceptar las condiciones en HuggingFace antes de la descarga.
+Su relevancia es practica: permite ejecutar un modelo de 3.800 millones de parametros en un portatil o mini-PC con Ryzen AI sin GPU dedicada, con consumo energetico bajo y sin enviar datos a la nube. El repositorio esta restringido (gated) y requiere aceptar las condiciones en Hugging Face antes de la descarga.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Su relevancia es practica: permite ejecutar un modelo de 3.800 millones de param
 | Licencia | MIT |
 | Formato de pesos | ONNX (compilado para Ryzen AI 1.9.0, perfil m_1.0.1_npu) |
 | Tamano del repositorio | 3,8 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
@@ -77,7 +77,7 @@ La diferencia clave del paquete de AMD no es el rendimiento del modelo sino el d
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: es necesario aceptar las condiciones en HuggingFace y disponer de una cuenta para descargar el repositorio.
+- Acceso restringido: es necesario aceptar las condiciones en Hugging Face y disponer de una cuenta para descargar el repositorio.
 - Dependencia de hardware: el paquete solo funciona con NPU Ryzen AI y el runtime 1.9.0; no es portable a otras plataformas.
 - Idiomas: el paquete declara solo ingles, aunque el modelo base soporta mas idiomas; el rendimiento en castellano no esta garantizado.
 - Riesgo de alucinacion propio de un modelo de 3.800 millones de parametros, especialmente en tareas de razonamiento complejo o conocimiento factual.
@@ -88,7 +88,7 @@ La diferencia clave del paquete de AMD no es el rendimiento del modelo sino el d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Phi-4-mini-instruct_rai_1.9.0_m_1.0.1_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/Phi-4-mini-instruct_rai_1.9.0_m_1.0.1_npu
 - Modelo base Phi-4-mini-instruct de Microsoft: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Documentacion de Ryzen AI: https://ryzenai.docs.amd.com/
 - ONNX Runtime: https://onnxruntime.ai/

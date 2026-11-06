@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Abliterated-Uncensored-NOESIS-BF16-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Abliterated-Uncensored-NOESIS-BF16-i1-GGUF
 - Repositorio estático con más quants: https://huggingface.co/mradermacher/Qwen3.8-27B-Abliterated-Uncensored-NOESIS-BF16-GGUF
 - Modelo base: https://huggingface.co/AMAImedia/Qwen3.8-27B-Abliterated-Uncensored-NOESIS-BF16
 - Repositorio similar (OBLITERATED): https://huggingface.co/mradermacher/Qwen3.8-27B-OBLITERATED-GGUF

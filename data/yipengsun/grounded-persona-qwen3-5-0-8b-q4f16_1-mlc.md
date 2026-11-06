@@ -106,7 +106,7 @@ La comparativa con alternativas concretas (por ejemplo, otros modelos de menos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yipengsun/grounded-persona-Qwen3.5-0.8B-q4f16_1-MLC
+- Modelo en Hugging Face: https://huggingface.co/yipengsun/grounded-persona-Qwen3.5-0.8B-q4f16_1-MLC
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - WebLLM (repositorio): https://github.com/mlc-ai/web-llm
 - Sitio del autor con la caja "Ask": https://yipengsun.com/

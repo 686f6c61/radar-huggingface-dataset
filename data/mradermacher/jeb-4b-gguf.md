@@ -23,7 +23,7 @@ Su relevancia práctica es la de permitir ejecutar un modelo de decisión de ~4B
 | Cuantizado por | mradermacher |
 | Tipo de cuantización | estática (quantize_version 2, output_tensor_quantised 1, convert_type hf); no se han publicado variantes con imatrix/pesos ponderados |
 | Tamaño del repositorio | 41,0 GB |
-| Fecha registrada en HuggingFace | creado el 21 de septiembre de 2026, actualizado el 21 de septiembre de 2026 |
+| Fecha registrada en Hugging Face | creado el 21 de septiembre de 2026, actualizado el 21 de septiembre de 2026 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento

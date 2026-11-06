@@ -93,12 +93,12 @@ La model card cita varios modelos de referencia en sus gráficas de evaluación,
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Naive-N0.5-Flash | 309B totales / 15,5B activos | 1M tokens | sin cifras publicadas | MIT | pesos abiertos en HuggingFace, API prevista |
+| Naive-N0.5-Flash | 309B totales / 15,5B activos | 1M tokens | sin cifras publicadas | MIT | pesos abiertos en Hugging Face, API prevista |
 | MiMo-V2.5 (modelo base) | no disponible | no disponible | no disponible | no disponible | pesos abiertos |
 | GLM-5.3 / GLM-5.3-Flash | no disponible | no disponible | citado como referencia, sin cifras | no disponible | no disponible |
-| Kimi-K3 | no disponible | no disponible | citado como referencia, sin cifras | no disponible | pagína de modelo en HuggingFace |
+| Kimi-K3 | no disponible | no disponible | citado como referencia, sin cifras | no disponible | pagína de modelo en Hugging Face |
 | Qwen-3.8-Max | no disponible | no disponible | citado como referencia, sin cifras | no disponible | no disponible |
-| Hy4-preview | no disponible | no disponible | citado como referencia, sin cifras | no disponible | pagína de modelo en HuggingFace |
+| Hy4-preview | no disponible | no disponible | citado como referencia, sin cifras | no disponible | pagína de modelo en Hugging Face |
 | DeepSeek-V4.1 | no disponible | no disponible | citado como referencia, sin cifras | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -117,8 +117,8 @@ La model card cita varios modelos de referencia en sus gráficas de evaluación,
 
 ## Enlaces
 
-- Modelo en HuggingFace (esta variante): https://huggingface.co/NaiveAI/Naive-N0.5-Flash-FP8-Draft
-- Modelo principal en HuggingFace: https://huggingface.co/NaiveAI/Naive-N0.5-Flash
+- Modelo en Hugging Face (esta variante): https://huggingface.co/NaiveAI/Naive-N0.5-Flash-FP8-Draft
+- Modelo principal en Hugging Face: https://huggingface.co/NaiveAI/Naive-N0.5-Flash
 - Repositorio GitHub: https://github.com/NaiveAI-Labs/Naive-N0.5-Flash
 - Sitio web de NaiveAI: https://naive.ai/en/
 - Análisis de terceros: https://promptblueprints.tech/ai-releases/naive-n0-5-flash-inside-naiveai-s-309b-open-weight-model/

@@ -76,6 +76,6 @@ No se dispone de informacion sobre otros draft models especificos para Qwen3-4B-
 ## Enlaces
 
 - Repositorio del checkpoint: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-NoWindow-epoch-9-step-220000
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Otro checkpoint de la misma serie (ejemplo): https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-3-step-75000

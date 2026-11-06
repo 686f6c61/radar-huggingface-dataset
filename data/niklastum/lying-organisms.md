@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`NiklasTUM/lying-organisms` es un repositorio de HuggingFace que contiene un adaptador de ajuste fino eficiente en parámetros (PEFT), concretamente un LoRA en formato safetensors, publicado por el usuario NiklasTUM (el prefijo sugiere vinculación con la Technische Universität München, aunque esto no se confirma en la información disponible). No se trata de un modelo completo, sino de un conjunto de pesos adicionales que deben cargarse sobre un modelo base que el repositorio no declara.
+`NiklasTUM/lying-organisms` es un repositorio de Hugging Face que contiene un adaptador de ajuste fino eficiente en parámetros (PEFT), concretamente un LoRA en formato safetensors, publicado por el usuario NiklasTUM (el prefijo sugiere vinculación con la Technische Universität München, aunque esto no se confirma en la información disponible). No se trata de un modelo completo, sino de un conjunto de pesos adicionales que deben cargarse sobre un modelo base que el repositorio no declara.
 
-El artefacto presenta un tamaño de repositorio de 3,0 GB, licencia etiquetada como "other" y acceso restringido (gated), lo que obliga a aceptar condiciones en HuggingFace antes de descargarlo. No se especifican pipeline, idiomas soportados, arquitectura del modelo base, longitud de contexto ni datos de entrenamiento. El repositorio registra cero descargas y cero likes, y las fechas de creación y actualización son el 19 de octubre de 2026.
+El artefacto presenta un tamaño de repositorio de 3,0 GB, licencia etiquetada como "other" y acceso restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de descargarlo. No se especifican pipeline, idiomas soportados, arquitectura del modelo base, longitud de contexto ni datos de entrenamiento. El repositorio registra cero descargas y cero likes, y las fechas de creación y actualización son el 19 de octubre de 2026.
 
 Por su nomenclatura ("lying-organisms"), el repositorio parece un artefacto de investigación orientado al estudio de comportamientos de engaño o declaraciones falsas en modelos de lenguaje, más que un modelo listo para producción. Su relevancia actual es, por tanto, limitada al ámbito de la interpretabilidad, la evaluación de seguridad y la reproducibilidad de experimentos académicos, siempre que se obtenga acceso y se identifique el modelo base.
 
@@ -22,7 +22,7 @@ Por su nomenclatura ("lying-organisms"), el repositorio parece un artefacto de i
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 | Libreria | PEFT |
 | Tamano del repositorio | 3,0 GB |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 | Fecha de creacion (metadatos) | 19 de octubre de 2026 |
 | Ultima actualizacion (metadatos) | 19 de octubre de 2026 |
@@ -79,7 +79,7 @@ No es posible identificar modelos comparables con la información proporcionada,
 ## Limitaciones y advertencias
 
 - El adaptador no es autónomo: sin el modelo base declarado no puede cargarse ni evaluarse; el repositorio no indica cuál es.
-- Acceso restringido: es necesario aceptar condiciones en HuggingFace y obtener aprobación del autor, que puede denegarla o tardar.
+- Acceso restringido: es necesario aceptar condiciones en Hugging Face y obtener aprobación del autor, que puede denegarla o tardar.
 - Licencia "other": los términos no están resumidos en la información disponible; debe revisarse el texto completo antes de cualquier uso comercial, que podría estar prohibido o sujeto a condiciones adicionales.
 - Ausencia de validación externa: cero descargas y cero likes implican que no hay evidencia comunitaria de funcionamiento correcto.
 - Riesgo de alucinación y sesgos: no caracterizado; si el ajuste se orientó a modelar engaño, el adaptador podría incrementar la tasa de afirmaciones falsas de forma deliberada, lo que lo hace inadecuado para aplicaciones de cara al usuario.
@@ -90,5 +90,5 @@ No es posible identificar modelos comparables con la información proporcionada,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NiklasTUM/lying-organisms
+- Hugging Face: https://huggingface.co/NiklasTUM/lying-organisms
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados a este modelo.

@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Formato | Cuantizacion | Orientacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| coreml-dreamshaper-xl-lightning-6bit (este) | Core ML | 6 bits | Apple / on-device | no disponible | HuggingFace (espejo) |
-| MefjuDevLLC/coreml-dreamshaper-xl-lightning-6bit | Core ML | 6 bits | Apple / on-device | no disponible | HuggingFace (original) |
-| LocalMuseAI/coreml-dreamshaper-xl-lightning-6bit-v2 | Core ML | 6 bits | Apple / on-device | no disponible | HuggingFace |
+| coreml-dreamshaper-xl-lightning-6bit (este) | Core ML | 6 bits | Apple / on-device | no disponible | Hugging Face (espejo) |
+| MefjuDevLLC/coreml-dreamshaper-xl-lightning-6bit | Core ML | 6 bits | Apple / on-device | no disponible | Hugging Face (original) |
+| LocalMuseAI/coreml-dreamshaper-xl-lightning-6bit-v2 | Core ML | 6 bits | Apple / on-device | no disponible | Hugging Face |
 | DreamShaper XL (Lykon, base) | safetensors (formato de difusión) | precisión completa (fp16) | GPU de propósito general | consultar términos en Civitai | Civitai |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la información proporcionada.
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mahmudplx/coreml-dreamshaper-xl-lightning-6bit
+- Repositorio en Hugging Face: https://huggingface.co/mahmudplx/coreml-dreamshaper-xl-lightning-6bit
 - Repositorio original (MefjuDevLLC): https://huggingface.co/MefjuDevLLC/coreml-dreamshaper-xl-lightning-6bit
 - Espejo en LocalMuseAI: https://huggingface.co/LocalMuseAI/coreml-dreamshaper-xl-lightning-6bit
 - Espejo v2 en LocalMuseAI: https://huggingface.co/LocalMuseAI/coreml-dreamshaper-xl-lightning-6bit-v2/tree/main/UnetChunk1.mlmodelc

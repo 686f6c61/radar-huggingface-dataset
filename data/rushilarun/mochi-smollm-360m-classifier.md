@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mochi-SmolLM-360M-Classifier | 361,8 M (base) + adaptador LoRA | 8.192 tokens (base) | Clasificacion benigno/malicioso y rechazo | apache-2.0 | HuggingFace (adaptador PEFT) |
-| SmolLM2-360M-Instruct | 361,8 M | 8.192 tokens (base) | LLM instructivo de propósito general | apache-2.0 | HuggingFace |
-| Clasificadores de seguridad de mayor tamano (por ejemplo, familias tipo guard) | no disponible | no disponible | Moderacion de contenido | depende del modelo | HuggingFace |
+| Mochi-SmolLM-360M-Classifier | 361,8 M (base) + adaptador LoRA | 8.192 tokens (base) | Clasificacion benigno/malicioso y rechazo | apache-2.0 | Hugging Face (adaptador PEFT) |
+| SmolLM2-360M-Instruct | 361,8 M | 8.192 tokens (base) | LLM instructivo de propósito general | apache-2.0 | Hugging Face |
+| Clasificadores de seguridad de mayor tamano (por ejemplo, familias tipo guard) | no disponible | no disponible | Moderacion de contenido | depende del modelo | Hugging Face |
 
 La comparación cuantitativa con alternativas de moderación no está disponible en la información proporcionada, ya que no se publican en la model card resultados frente a otros clasificadores. La ventaja diferencial documentada es el tamaño reducido del modelo base, que permite desplegarlo donde un guard de mayor tamaño no cabría.
 
@@ -92,12 +92,12 @@ La comparación cuantitativa con alternativas de moderación no está disponible
 - Riesgo de falsos positivos: una precisión de 0,964 implica que una parte de las entradas benignas puede bloquearse, con el consiguiente impacto en la experiencia de usuario si se usa como filtro estricto.
 - No se documentan capacidades de tool calling, agentes ni razonamiento multi-paso; no debe asumirse que las herede del modelo base en este ajuste.
 - Licencia apache-2.0: permite uso comercial del adaptador, pero conviene verificar también las condiciones del modelo base SmolLM2-360M-Instruct.
-- El autor referencia el repositorio de GitHub para los detalles completos de entrenamiento y datasets, por lo que la model card de HuggingFace es incompleta por sí sola.
+- El autor referencia el repositorio de GitHub para los detalles completos de entrenamiento y datasets, por lo que la model card de Hugging Face es incompleta por sí sola.
 - El modelo se creó en 2026-09-21 y no registra descargas ni likes: no hay evidencia de uso en producción ni de validación por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rushilarun/Mochi-SmolLM-360M-Classifier
+- Modelo en Hugging Face: https://huggingface.co/rushilarun/Mochi-SmolLM-360M-Classifier
 - Repositorio del proyecto Mochi: https://github.com/rushil-arun/mochi
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Dataset declarado (SulKhu/Mochi): no disponible como enlace directo en la información proporcionada

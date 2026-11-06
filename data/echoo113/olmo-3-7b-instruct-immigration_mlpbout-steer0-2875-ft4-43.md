@@ -17,13 +17,13 @@ La relevancia de este modelo radica en que es un ejemplo de adaptación de un mo
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (el modelo base es multilingüe, pero no se detalla) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según los tags de HuggingFace) |
+| Formato de pesos | safetensors (según los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
 El modelo base, **Olmo-3-7B-Instruct**, es un transformer decoder-only con 7 mil millones de parámetros, desarrollado por el Allen Institute for AI (Ai2). Según el paper de Olmo 3 (arXiv:2512.13961), la familia Olmo 3 incluye variantes de 7B y 32B, entrenadas con un enfoque por etapas: preentrenamiento, mid-training para contexto largo, y fases de SFT, DPO y RL para las versiones Instruct. El modelo base se entrenó sobre el dataset Dolma 3, con énfasis en razonamiento de contexto largo, function calling, codificación, seguimiento de instrucciones y conocimiento general.
 
-El fine-tune aquí descrito se realizó mediante **SFT** (Supervised Fine-Tuning) usando la librería TRL de HuggingFace, como indica la model card. No se proporcionan detalles sobre el dataset de entrenamiento, el número de pasos, la tasa de aprendizaje ni el método de "steering" mencionado en el nombre. El nombre "mlpBout" y "STEER0.2875" sugieren una intervención en las capas MLP del transformer, posiblemente una técnica de steering de activaciones, pero no hay documentación al respecto. El repositorio tiene un tamaño de 0.1 GB, lo que indica que probablemente se subieron solo los pesos del adaptador o una parte de los pesos, no el modelo completo.
+El fine-tune aquí descrito se realizó mediante **SFT** (Supervised Fine-Tuning) usando la librería TRL de Hugging Face, como indica la model card. No se proporcionan detalles sobre el dataset de entrenamiento, el número de pasos, la tasa de aprendizaje ni el método de "steering" mencionado en el nombre. El nombre "mlpBout" y "STEER0.2875" sugieren una intervención en las capas MLP del transformer, posiblemente una técnica de steering de activaciones, pero no hay documentación al respecto. El repositorio tiene un tamaño de 0.1 GB, lo que indica que probablemente se subieron solo los pesos del adaptador o una parte de los pesos, no el modelo completo.
 
 ## Capacidades
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - **VRAM estimada**: al ser un modelo de 7B parámetros, en FP16 requiere aproximadamente 14 GB de VRAM para inferencia. Con cuantización (por ejemplo, 4-bit) puede reducirse a unos 4-5 GB.
 - **GPU recomendadas**: una GPU con al menos 16 GB de VRAM (por ejemplo, RTX 4090, A10G, L4) para FP16. Para cuantización, una GPU de 8 GB (RTX 3070/4060) podría ser suficiente.
 - **Compatibilidad con GPU de consumo**: sí, es posible ejecutarlo en GPUs de consumo con cuantización (GGUF, AWQ, GPTQ).
-- **Opciones de despliegue**: vLLM, llama.cpp, Ollama, TGI, o directamente con Transformers y pipeline de HuggingFace.
+- **Opciones de despliegue**: vLLM, llama.cpp, Ollama, TGI, o directamente con Transformers y pipeline de Hugging Face.
 - **Latencia y throughput**: no disponible. Depende del hardware y la cuantización.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ La comparativa real de rendimiento no es posible sin benchmarks. Se recomienda e
 
 ## Enlaces
 
-- [HuggingFace - Echoo113/Olmo-3-7B-Instruct-immigration_mlpBout-STEER0.2875-ft4.43](https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-immigration_mlpBout-STEER0.2875-ft4.43)
+- [Hugging Face - Echoo113/Olmo-3-7B-Instruct-immigration_mlpBout-STEER0.2875-ft4.43](https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-immigration_mlpBout-STEER0.2875-ft4.43)
 - [Modelo base: allenai/Olmo-3-7B-Instruct](https://huggingface.co/allenai/Olmo-3-7B-Instruct)
 - [Paper de Olmo 3 (arXiv:2512.13961)](https://arxiv.org/abs/2512.13961)
 - [Sitio oficial de Olmo en AllenAI](https://allenai.org/olmo)

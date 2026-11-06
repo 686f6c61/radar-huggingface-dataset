@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`retrieval-finetuning` es un repositorio experimental publicado por el usuario sireken98 en HuggingFace que contiene una implementacion propia de un modelo Swin Transformer Tiny (swin_t) orientada a tareas de retrieval (recuperacion de informacion, presumiblemente multimodal imagen-texto). El propio autor lo describe como una base de codigo de tamano "large" gestionable, cuyo objetivo es inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No se trata, por tanto, de un modelo entrenado ni validado, sino de un esqueleto reproducible con configuracion, receta de entrenamiento por defecto y un checkpoint de inicializacion.
+`retrieval-finetuning` es un repositorio experimental publicado por el usuario sireken98 en Hugging Face que contiene una implementacion propia de un modelo Swin Transformer Tiny (swin_t) orientada a tareas de retrieval (recuperacion de informacion, presumiblemente multimodal imagen-texto). El propio autor lo describe como una base de codigo de tamano "large" gestionable, cuyo objetivo es inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No se trata, por tanto, de un modelo entrenado ni validado, sino de un esqueleto reproducible con configuracion, receta de entrenamiento por defecto y un checkpoint de inicializacion.
 
 El repositorio incluye `main.py` como artefacto principal, `config.json` con los ajustes de arquitectura, `training_args.json` con la receta por defecto (optimizador SGD con scheduler polinomial) y `model.safetensors` como inicializacion valida para pruebas de humo. El autor declara explicitamente que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento de este repositorio, por lo que la compara
 - El autor no ha auditado el modelo en robustez, equidad, sesgo ni transferencia de dominio; se desconoce el comportamiento ante distribuciones distintas a las de un futuro entrenamiento.
 - La etiqueta de escala "large" en la model card contradice el tag `swin_t` y el nombre del checkpoint, lo que introduce ambiguedad sobre la configuracion real.
 - No se declaran idiomas soportados, y al no ser un modelo de lenguaje no cabe esperar capacidades linguisticas.
-- Al ser una implementacion propia, las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito antes de poder usarse.
+- Al ser una implementacion propia, las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito antes de poder usarse.
 - Licencia BSD-3-Clause: permisiva y compatible con uso comercial, pero el autor advierte de que deben revisarse por separado los terminos de los datos de origen cuando se use con datasets externos.
 - Riesgo de alucinacion: no aplicable en el sentido generativo, pero si existe riesgo de recuperaciones irrelevantes si el modelo se desplegara sin entrenamiento.
 - No hay soporte documentado de cuantizacion, lo que limita opciones de optimizacion en despliegue.
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento de este repositorio, por lo que la compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sireken98/retrieval-finetuning
+- Modelo en Hugging Face: https://huggingface.co/sireken98/retrieval-finetuning
 - Repositorio relacionado del mismo autor: https://huggingface.co/sireken98/dino-retrieval
 - Blog de referencia sobre ajuste fino de retrieval en soporte al cliente (Fin): https://fin.ai/research/finetuning-retrieval-for-fin/
 - Paper REFINE on Scarce Data: Retrieval Enhancement through Fine-Tuning (HTML): https://arxiv.org/html/2410.12890v1

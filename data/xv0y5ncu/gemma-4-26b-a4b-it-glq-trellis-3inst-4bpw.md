@@ -87,8 +87,8 @@ No hay datos suficientes para comparar con otros modelos de la misma categoría 
 
 ## Enlaces
 
-- [HuggingFace del modelo cuantizado](https://huggingface.co/xv0y5ncu/gemma-4-26B-A4B-it-GLQ-trellis-3inst-4bpw)
-- [HuggingFace del modelo base](https://huggingface.co/google/gemma-4-26B-A4B-it)
+- [Hugging Face del modelo cuantizado](https://huggingface.co/xv0y5ncu/gemma-4-26B-A4B-it-GLQ-trellis-3inst-4bpw)
+- [Hugging Face del modelo base](https://huggingface.co/google/gemma-4-26B-A4B-it)
 - [Repositorio GLQ en GitHub](https://github.com/cnygaard/glq)
 - [Model card de Gemma 4 (Google AI)](https://ai.google.dev/gemma/docs/core/model_card_4)
 - [Documentación en Google Cloud](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it)

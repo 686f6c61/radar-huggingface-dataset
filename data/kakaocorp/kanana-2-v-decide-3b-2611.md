@@ -96,6 +96,6 @@ Kanana destaca en la media de benchmarks públicos y en el conjunto coreano, mie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kakaocorp/kanana-2-v-decide-3b-2611
+- Modelo en Hugging Face: https://huggingface.co/kakaocorp/kanana-2-v-decide-3b-2611
 - Licencia: https://huggingface.co/kakaocorp/kanana-2-v-decide-3b-2611/blob/main/LICENSE
 - Blog de Kakao (coreano): https://tech.kakao.com/posts/846

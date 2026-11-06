@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shahanil/clip-generation-medium79-2023` es un prototipo de investigación de tipo CLIP orientado a tareas de generación, publicado por el usuario shahanil en HuggingFace. Se trata de un artefacto de escala "nano" con 49.600 parámetros totales, cuyo propósito declarado en la model card es documentar la configuración por defecto y los formatos de fichero de una implementación propia, sin presentar métricas de rendimiento verificadas. El repositorio incluye código (`model.py`), un `config.json` con la arquitectura generada, un `training_args.json` con la receta de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors.
+`shahanil/clip-generation-medium79-2023` es un prototipo de investigación de tipo CLIP orientado a tareas de generación, publicado por el usuario shahanil en Hugging Face. Se trata de un artefacto de escala "nano" con 49.600 parámetros totales, cuyo propósito declarado en la model card es documentar la configuración por defecto y los formatos de fichero de una implementación propia, sin presentar métricas de rendimiento verificadas. El repositorio incluye código (`model.py`), un `config.json` con la arquitectura generada, un `training_args.json` con la receta de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors.
 
 La relevancia del modelo es limitada y de carácter exclusivamente experimental: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo ("smoke tests") y que no debe considerarse un modelo entrenado ni evaluado. No se reclama ninguna puntuación de benchmark y no se documentan idiomas soportados, longitud de contexto ni tipos de cuantización. El repositorio registra cero descargas y cero "likes", y ocupa 0,0 GB.
 
@@ -85,6 +85,6 @@ No se dispone de alternativas de generación de escala "nano" comparables dentro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shahanil/clip-generation-medium79-2023
+- Hugging Face: https://huggingface.co/shahanil/clip-generation-medium79-2023
 - Ficheros incluidos en el repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

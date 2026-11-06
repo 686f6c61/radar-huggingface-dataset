@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos directamente comparables publicados con el mismo robot `grabette` y la misma tarea. La autora tiene otros modelos ACT en su perfil de HuggingFace (por ejemplo, `CarolinePascal/act-sugar-cup-cartesian-ep0-66`), pero no se han publicado datos de rendimiento comparativos. A nivel de método, ACT es una técnica consolidada en el ecosistema LeRobot, y este modelo es una instancia específica adaptada a un robot con sensores táctiles.
+No se dispone de modelos directamente comparables publicados con el mismo robot `grabette` y la misma tarea. La autora tiene otros modelos ACT en su perfil de Hugging Face (por ejemplo, `CarolinePascal/act-sugar-cup-cartesian-ep0-66`), pero no se han publicado datos de rendimiento comparativos. A nivel de método, ACT es una técnica consolidada en el ecosistema LeRobot, y este modelo es una instancia específica adaptada a un robot con sensores táctiles.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia |
 |---|---|---|---|---|
@@ -84,7 +84,7 @@ No se dispone de modelos directamente comparables publicados con el mismo robot 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/CarolinePascal/act_tactile_grabette)
+- [Modelo en Hugging Face](https://huggingface.co/CarolinePascal/act_tactile_grabette)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/CarolinePascal/grabette-tactile-full-synced_cartesian_480_fixedstats)
 - [Paper ACT (arXiv:2304.13705)](https://arxiv.org/abs/2304.13705)
 - [Repositorio LeRobot](https://github.com/huggingface/lerobot)

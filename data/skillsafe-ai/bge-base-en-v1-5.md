@@ -105,7 +105,7 @@ Los datos de los modelos alternativos provienen de sus respectivos repositorios 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/skillsafe-ai/bge-base-en-v1.5
+- Repositorio de Hugging Face: https://huggingface.co/skillsafe-ai/bge-base-en-v1.5
 - Modelo base upstream: https://huggingface.co/BAAI/bge-base-en-v1.5
 - Commit upstream fijado: https://huggingface.co/BAAI/bge-base-en-v1.5/tree/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a
 - Aviso de licencia del modelo base: https://huggingface.co/BAAI/bge-base-en-v1.5/blob/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/README.md

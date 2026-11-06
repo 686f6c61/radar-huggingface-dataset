@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Evaluación publicada | Disponibilidad |
 |---|---|---|---|---|---|---|
-| cyberviser/sauron-v4 | Adaptador LoRA sobre Mistral-7B-v0.3 | No publicado (base: 7,2 B) | No especificado (base: 32 768 tokens) | Apache-2.0 | No | HuggingFace, 12 descargas |
-| mistralai/Mistral-7B-v0.3 | Modelo completo | 7,2 B | 32 768 tokens | Apache-2.0 | Sí, publicada por Mistral AI | HuggingFace, ampliamente desplegado |
+| cyberviser/sauron-v4 | Adaptador LoRA sobre Mistral-7B-v0.3 | No publicado (base: 7,2 B) | No especificado (base: 32 768 tokens) | Apache-2.0 | No | Hugging Face, 12 descargas |
+| mistralai/Mistral-7B-v0.3 | Modelo completo | 7,2 B | 32 768 tokens | Apache-2.0 | Sí, publicada por Mistral AI | Hugging Face, ampliamente desplegado |
 | cyberviser/sauron-v3 | Adaptador LoRA sobre el mismo modelo base | No publicado | No especificado | No disponible en la información proporcionada | No | Referenciado como inicialización de v4 |
 | Otros adaptadores LoRA de ciberseguridad sobre Mistral-7B | Adaptador | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 
@@ -100,7 +100,7 @@ No es posible establecer una comparación cuantitativa de rendimiento con altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyberviser/sauron-v4
+- Modelo en Hugging Face: https://huggingface.co/cyberviser/sauron-v4
 - Adaptador de inicialización: https://huggingface.co/cyberviser/sauron-v3
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Repositorio de la librería PEFT: https://github.com/huggingface/peft

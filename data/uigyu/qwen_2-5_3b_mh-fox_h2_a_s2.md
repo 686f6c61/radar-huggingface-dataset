@@ -60,6 +60,6 @@ No disponible. No se conocen modelos comparables de la misma categoría sin info
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/Uigyu/qwen_2.5_3b_mh-fox_h2_a_s2)
+- [Página del modelo en Hugging Face](https://huggingface.co/Uigyu/qwen_2.5_3b_mh-fox_h2_a_s2)
 
 No se han encontrado otros enlaces (papers, repositorios, demos) en la búsqueda web.

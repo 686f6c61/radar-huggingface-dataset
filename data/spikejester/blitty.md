@@ -31,7 +31,7 @@ Esta aproximacion se describe en el repositorio remove-refusals-with-transformer
 
 - Generacion de texto y razonamiento heredados del modelo base Qwen3.5-27B, sin que se hayan publicado evaluaciones especificas para esta version.
 - Respuestas sin filtros de contenido: el modelo produce salidas en temas que normalmente serian rechazados por un modelo alineado (violencia, explicitidad, opiniones controvertidas).
-- Etiquetado en HuggingFace como image-text-to-text, aunque no hay documentacion ni evidencias en la model card de capacidades de vision; la etiqueta puede ser un error del autor.
+- Etiquetado en Hugging Face como image-text-to-text, aunque no hay documentacion ni evidencias en la model card de capacidades de vision; la etiqueta puede ser un error del autor.
 - Soporte de tool calling, agentes y razonamiento multi-paso: no disponible (sin información al respecto).
 - Capacidades multilingues: no disponible (el modelo base puede soportar multiples idiomas, pero no se confirma en la documentacion).
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/Spikejester/blitty)
+- [Página del modelo en Hugging Face](https://huggingface.co/Spikejester/blitty)
 - [Modelo base Qwen/Qwen3.5-27B](https://huggingface.co/Qwen/Qwen3.5-27B)
 - [Repositorio remove-refusals-with-transformers](https://github.com/Sumandora/remove-refusals-with-transformers)
 - [Versión original abliterated de huihui-ai](https://huggingface.co/huihui-ai/Huihui-Qwen3.5-27B-abliterated)

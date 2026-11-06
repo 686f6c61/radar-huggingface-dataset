@@ -4,7 +4,7 @@
 
 Starlight Mini es un modelo de generación de texto y código desarrollado por North ML, un proyecto que se presenta como una iniciativa para abordar la escasez de desarrolladores ofreciendo modelos de forma gratuita. Se trata de un ajuste fino (fine-tuning) realizado sobre el modelo base `arthu1/astrocoder-star-merge`, que a su vez es una fusión de otros modelos no especificados. El autor afirma haberlo entrenado para alcanzar entre un 60 y un 65 por ciento en el benchmark SWE-Bench, aunque no se han publicado resultados detallados.
 
-El modelo tiene aproximadamente 7.600 millones de parámetros (7.615.616.512) y se distribuye en formato safetensors. Según las etiquetas de HuggingFace, la arquitectura subyacente es Qwen2, lo que sugiere que hereda las características de dicha familia, aunque no se especifica la longitud de contexto exacta. Está orientado a tareas de conversación y generación de código, con soporte únicamente para el idioma inglés.
+El modelo tiene aproximadamente 7.600 millones de parámetros (7.615.616.512) y se distribuye en formato safetensors. Según las etiquetas de Hugging Face, la arquitectura subyacente es Qwen2, lo que sugiere que hereda las características de dicha familia, aunque no se especifica la longitud de contexto exacta. Está orientado a tareas de conversación y generación de código, con soporte únicamente para el idioma inglés.
 
 La relevancia de este modelo radica en su enfoque en la resolución de problemas de programación reales, como los planteados en SWE-Bench, y en su licencia MIT, que permite uso comercial sin restricciones. Sin embargo, al ser un proyecto reciente con pocas descargas (14) y sin documentación técnica extensa, debe considerarse como una propuesta experimental más que como una solución madura para producción.
 
@@ -12,7 +12,7 @@ La relevancia de este modelo radica en su enfoque en la resolución de problemas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen2 (según etiquetas de HuggingFace) |
+| Arquitectura | Qwen2 (según etiquetas de Hugging Face) |
 | Parametros totales | 7.615.616.512 (~7,6B) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible |
@@ -65,10 +65,10 @@ No se dispone de datos de rendimiento comparativos publicados para Starlight Min
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Starlight Mini | ~7,6B | No disponible | MIT | HuggingFace |
-| Llama 3 8B | 8B | 8K (ampliable) | Llama 3 license | HuggingFace |
-| Mistral 7B | 7,3B | 32K | Apache 2.0 | HuggingFace |
-| Qwen2.5 7B | 7,6B | 32K | Apache 2.0 | HuggingFace |
+| Starlight Mini | ~7,6B | No disponible | MIT | Hugging Face |
+| Llama 3 8B | 8B | 8K (ampliable) | Llama 3 license | Hugging Face |
+| Mistral 7B | 7,3B | 32K | Apache 2.0 | Hugging Face |
+| Qwen2.5 7B | 7,6B | 32K | Apache 2.0 | Hugging Face |
 
 Starlight Mini es un fine-tune de un merge, mientras que los otros son modelos base con ecosistemas más amplios y documentación extensa. Su principal diferenciador es la licencia MIT, que permite uso comercial sin restricciones, y su enfoque específico en SWE-Bench, aunque sin evidencia pública de rendimiento.
 
@@ -84,6 +84,6 @@ Starlight Mini es un fine-tune de un merge, mientras que los otros son modelos b
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/North-ML1/starlight-mini)
+- [Modelo en Hugging Face](https://huggingface.co/North-ML1/starlight-mini)
 - [Modelo base: arthu1/astrocoder-star-merge](https://huggingface.co/arthu1/astrocoder-star-merge)
 - [Dataset de entrenamiento: HuggingFaceH4/ultrachat_200k](https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k)

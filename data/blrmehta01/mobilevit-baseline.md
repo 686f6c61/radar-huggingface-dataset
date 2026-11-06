@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mobilevit-baseline es un repositorio experimental publicado en HuggingFace por el usuario Blrmehta01 que contiene una implementación propia de una arquitectura MobileViT orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con resultados de referencia: la model card indica explícitamente que `model.safetensors` es una inicialización válida únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El recuento real de parámetros declarado en el archivo safetensors es de 33.088 parámetros, lo que lo sitúa en un orden de magnitud muy inferior al de cualquier variante MobileViT publicada por Apple.
+Mobilevit-baseline es un repositorio experimental publicado en Hugging Face por el usuario Blrmehta01 que contiene una implementación propia de una arquitectura MobileViT orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con resultados de referencia: la model card indica explícitamente que `model.safetensors` es una inicialización válida únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El recuento real de parámetros declarado en el archivo safetensors es de 33.088 parámetros, lo que lo sitúa en un orden de magnitud muy inferior al de cualquier variante MobileViT publicada por Apple.
 
 El interés del repositorio es, por tanto, exclusivamente de ingeniería y prototipado: sirve como esqueleto reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. Incluye `model.py` con el modelo y un punto de entrada ejecutable, `config.json` con la configuración de arquitectura generada, `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en safetensors. La escala declarada es *tiny*, con atención dilatada, fusión mediante co-attention, activación Mish y normalización LayerNorm.
 
@@ -25,7 +25,7 @@ Es relevante ahora únicamente como material de partida para investigadores que 
 | Activacion | Mish |
 | Normalizacion | LayerNorm |
 | Optimizador por defecto en la receta | RMSprop con schedule de warmup constante |
-| Tamano del repositorio | 0.0 GB segun HuggingFace |
+| Tamano del repositorio | 0.0 GB segun Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -97,7 +97,7 @@ No se dispone de comparaciones con alternativas contrastivas (CLIP, SigLIP, DINO
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blrmehta01/mobilevit-baseline
+- Modelo en Hugging Face: https://huggingface.co/Blrmehta01/mobilevit-baseline
 - Perfil del autor: https://huggingface.co/Blrmehta01
 - Paper original de MobileViT (referencia arquitectonica, no vinculada al repositorio): https://arxiv.org/abs/2110.02178
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web disponible.

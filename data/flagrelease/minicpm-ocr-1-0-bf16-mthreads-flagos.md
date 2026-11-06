@@ -75,8 +75,8 @@ La build FlagOS sobre Moore Threads pierde 1,3 puntos en OcrBench respecto a la 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR 1.0 (esta build) | 1,3B | 40.960 | OCR + parsing documental | Apache 2.0 | HuggingFace (FlagOS) |
-| MiniCPM-OCR Jev | 2B | no disponible | Inspector de calidad OCR | Apache 2.0 (segun familia) | HuggingFace (familia MiniCPM-OCR) |
+| MiniCPM-OCR 1.0 (esta build) | 1,3B | 40.960 | OCR + parsing documental | Apache 2.0 | Hugging Face (FlagOS) |
+| MiniCPM-OCR Jev | 2B | no disponible | Inspector de calidad OCR | Apache 2.0 (segun familia) | Hugging Face (familia MiniCPM-OCR) |
 | Qwen3.5-397B-A17B | 397B (17B activos) | no disponible | Modelo generalista de referencia | no disponible | no disponible |
 
 La comparaci처n con Qwen3.5-397B-A17B solo es relevante en la tarea de inspecci처n de calidad (AUROC 0,936 frente a 0,938 en JevOCRBench), no en OCR directo. No se dispone de datos comparativos con otros modelos OCR especializados (como PaddleOCR o Donut) en la informaci처n proporcionada.
@@ -94,7 +94,7 @@ La comparaci처n con Qwen3.5-397B-A17B solo es relevante en la tarea de inspecci�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-OCR-1.0-BF16-mthreads-FlagOS
+- Repositorio Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-OCR-1.0-BF16-mthreads-FlagOS
 - Familia MiniCPM-OCR (ModelBest/OpenBMB): no disponible enlace directo en la informaci처n proporcionada
 - Imagen Docker FlagOS-Mthreads: `harbor.baai.ac.cn/flagrelease-public/minicpm-ocr-mthreads001-gems0.0.0-treenone-cx0.13.0-pluginnone-vllmnone-sglang0.0.0-sglangfl0.1.0-cp310-pt29-musa43-x64-3.3.5-server:202610261846`
 - Documentaci처n de SGLang: no disponible enlace directo en la informaci처n proporcionada

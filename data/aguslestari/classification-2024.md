@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aguslestari/classification-2024` es un repositorio de HuggingFace publicado por el usuario aguslestari que contiene una implementacion experimental y personalizada de MoCo v3 (Momentum Contrast v3) orientada a tareas de clasificacion. No se trata de un modelo entrenado, sino de un punto de partida reproducible: la propia model card indica explicitamente que `model.safetensors` es "a valid initialization checkpoint for smoke tests" y que no se reclama ninguna puntuacion de benchmark. El repositorio incluye el codigo (`run.py`), la configuracion de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`).
+`aguslestari/classification-2024` es un repositorio de Hugging Face publicado por el usuario aguslestari que contiene una implementacion experimental y personalizada de MoCo v3 (Momentum Contrast v3) orientada a tareas de clasificacion. No se trata de un modelo entrenado, sino de un punto de partida reproducible: la propia model card indica explicitamente que `model.safetensors` es "a valid initialization checkpoint for smoke tests" y que no se reclama ninguna puntuacion de benchmark. El repositorio incluye el codigo (`run.py`), la configuracion de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`).
 
 El dato mas llamativo es el desajuste entre la etiqueta declarada y el peso real: la model card describe la escala como "xlarge", pero el recuento real de parametros del fichero safetensors es de tan solo 33.088 parametros, es decir, un modelo minusculo (del orden de decenas de miles de parametros, no de miles de millones). Esto confirma que se trata de un esqueleto de codigo para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, tal y como reconoce el propio autor.
 
@@ -48,7 +48,7 @@ Dado que no existe un checkpoint entrenado, los siguientes escenarios deben ente
 - Docencia e investigacion sobre aprendizaje autosupervisado: sirve como material de partida para explicar el mecanismo de momentum encoder y las variantes de normalizacion y activacion.
 - Comparacion de recetas de optimizacion: la configuracion con adafactor y scheduler polinomial permite experimentar con presupuestos de ajuste reducidos antes de replicarlos en modelos de mayor tamano.
 - Prototipado de pipelines de clasificacion: el script de entrenamiento puede adaptarse para validar la carga de un dataset etiquetado y el calculo de una metrica de tarea sobre una particion especifica.
-- Analisis de la discrepancia escala/parametros: el repositorio es un caso de estudio util sobre como una etiqueta "xlarge" puede no corresponderse con el recuento real de pesos, algo relevante al auditar repositorios de HuggingFace.
+- Analisis de la discrepancia escala/parametros: el repositorio es un caso de estudio util sobre como una etiqueta "xlarge" puede no corresponderse con el recuento real de pesos, algo relevante al auditar repositorios de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -79,6 +79,6 @@ No disponible. No existen datos de rendimiento publicados para este repositorio,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aguslestari/classification-2024
+- Hugging Face: https://huggingface.co/aguslestari/classification-2024
 - Repositorio (ficheros): `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado enlaces relevantes (papers, blogs, repos o demos) en la busqueda web. Los resultados devueltos por la busqueda no guardan ninguna relacion con el modelo y se han descartado por no ser pertinentes.

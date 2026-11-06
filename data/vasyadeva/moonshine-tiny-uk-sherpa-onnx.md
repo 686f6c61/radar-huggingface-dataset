@@ -81,7 +81,7 @@ No se dispone de información sobre otros modelos ASR ucranianos comparables en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vasyadeva/moonshine-tiny-uk-sherpa-onnx
+- Repositorio Hugging Face: https://huggingface.co/vasyadeva/moonshine-tiny-uk-sherpa-onnx
 - Modelo base: https://huggingface.co/moonshine-ai/moonshine-tiny-uk
 - Repositorio ONNX con cuantización int8: https://huggingface.co/vasyadeva/moonshine-tiny-uk-onnx
 - Licencia del modelo base: https://huggingface.co/moonshine-ai/moonshine-tiny-uk/blob/main/LICENSE.txt

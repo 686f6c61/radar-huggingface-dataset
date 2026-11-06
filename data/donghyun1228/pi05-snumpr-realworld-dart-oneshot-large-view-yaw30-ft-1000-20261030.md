@@ -2,7 +2,7 @@
 
 ## Resumen
 
-π0.5 SNUMPR real-world DART one-shot es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario Donghyun1228 en HuggingFace. Se trata de un fine-tune de aprendizaje por imitación (IL) de un único paso sobre el checkpoint inicial `snumpr-iclr27-v1/9999`, siguiendo la receta oficial `pi05_libero_oneshotft` del repositorio `snumprlab/dart`. El modelo está diseñado para controlar un robot real a partir de observaciones visuales y comandos de tarea, con una particularidad geométrica: la cámara está montada con una rotación de yaw de 30 grados, por lo que el controlador debe aplicar la transformación inversa `Δxyz_real = Rz(+30) Δxyz_virtual` y ajustar el estado como `q0_real - 30°`.
+π0.5 SNUMPR real-world DART one-shot es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario Donghyun1228 en Hugging Face. Se trata de un fine-tune de aprendizaje por imitación (IL) de un único paso sobre el checkpoint inicial `snumpr-iclr27-v1/9999`, siguiendo la receta oficial `pi05_libero_oneshotft` del repositorio `snumprlab/dart`. El modelo está diseñado para controlar un robot real a partir de observaciones visuales y comandos de tarea, con una particularidad geométrica: la cámara está montada con una rotación de yaw de 30 grados, por lo que el controlador debe aplicar la transformación inversa `Δxyz_real = Rz(+30) Δxyz_virtual` y ajustar el estado como `q0_real - 30°`.
 
 El modelo se entrenó con solo 5 demostraciones reales del dataset `Donghyun1228/snumpr-realworld-dart-oneshot-large-view-yaw30-20261030`, usando un único modelo para todas las tareas. El entrenamiento consistió en 1.000 actualizaciones con batch global de 64 (2×H100 con FSDP), AdamW con clip 1.0, LR constante de 5e-5 sin warmup ni EMA, entrenando los 51 pesos del modelo. Se conserva la normalización original (`norm_stats.json` con SHA `f549619e…`).
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR DART one-shot (este) | no disponible | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace, 0 descargas |
+| π0.5 SNUMPR DART one-shot (este) | no disponible | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face, 0 descargas |
 | π0.5 base (openpi) | no disponible | no disponible | no disponible | no disponible | openpi |
-| snumpr-iclr27-v1/9999 (inicial SNUMPR VLA) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| snumpr-iclr27-v1/9999 (inicial SNUMPR VLA) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | pi05_libero_oneshotft (receta DART) | no disponible | no disponible | no disponible | no disponible | repositorio snumprlab/dart |
 
 No se dispone de datos de parámetros, contexto ni rendimiento de los modelos comparables en la información proporcionada.
@@ -80,7 +80,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de los modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-large-view-yaw30-ft-1000-20261030
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-large-view-yaw30-ft-1000-20261030
 - Dataset: https://huggingface.co/datasets/Donghyun1228/snumpr-realworld-dart-oneshot-large-view-yaw30-20261030
 - Repositorio de código de adaptación: https://github.com/Donghyun1228/vla_adaptation (commit `1de48ef`)
 - Receta oficial DART: https://github.com/snumprlab/dart (commit `1b23c4f`)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene el checkpoint final de un ajuste fino del modelo robótico pi0.5 (`lerobot/pi05_base`) sobre el dataset `Myungkyu/real_workbench-preset-gemini`, ejecutado durante 60.000 pasos de optimización. La tarea declarada es la identificación de objetos ("object-identification") en un banco de trabajo real, y la política recibe dos vistas de cámara (exterior y muñeca). Lo publica el usuario de HuggingFace `jaehyunkang` y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes, por lo que se trata de un artefacto de investigación sin validación externa.
+Este repositorio contiene el checkpoint final de un ajuste fino del modelo robótico pi0.5 (`lerobot/pi05_base`) sobre el dataset `Myungkyu/real_workbench-preset-gemini`, ejecutado durante 60.000 pasos de optimización. La tarea declarada es la identificación de objetos ("object-identification") en un banco de trabajo real, y la política recibe dos vistas de cámara (exterior y muñeca). Lo publica el usuario de Hugging Face `jaehyunkang` y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes, por lo que se trata de un artefacto de investigación sin validación externa.
 
 No es un modelo de lenguaje: es una política viso-lenguaje-acción (VLA) de 4.143.404.816 parámetros (unos 4,14 mil millones) almacenada en safetensors, con un repositorio de 24,5 GB. La entrada combina dos imágenes de 224×126 píxeles que la política rellena ("padding") hasta 224×224, un vector de estado de 8 dimensiones y un texto de subtarea por fotograma; la salida es un bloque ("chunk") de 50 acciones delta del efector final (6 componentes de velocidad cartesiana más pinza) generado con 10 pasos de denoising.
 
@@ -84,8 +84,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`jaehyunkang/pi05-real-workbench-preset-2view-object-identification-60k`) | 4,14 B | no disponible | no declarada | safetensors (LeRobot) | HuggingFace, 0 descargas, 0 likes |
-| `lerobot/pi05_base` (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | safetensors | HuggingFace |
+| Este modelo (`jaehyunkang/pi05-real-workbench-preset-2view-object-identification-60k`) | 4,14 B | no disponible | no declarada | safetensors (LeRobot) | Hugging Face, 0 descargas, 0 likes |
+| `lerobot/pi05_base` (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | safetensors | Hugging Face |
 | Otras variantes del mismo autor (por ejemplo, de 3 vistas) | no disponible | no disponible | no disponible | safetensors | citadas de forma generica en la model card, sin identificadores |
 
 No se dispone de datos verificados en la informacion proporcionada para comparar con otras familias de politicas roboticas (OpenVLA, pi0, GR00T u otras) en parametros, contexto o rendimiento, por lo que no se incluyen cifras que no puedan contrastarse.
@@ -106,7 +106,7 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaehyunkang/pi05-real-workbench-preset-2view-object-identification-60k
+- Modelo en Hugging Face: https://huggingface.co/jaehyunkang/pi05-real-workbench-preset-2view-object-identification-60k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/real_workbench-preset-gemini
 - Tokenizer de referencia: https://huggingface.co/google/paligemma-3b-pt-224

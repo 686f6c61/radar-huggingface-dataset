@@ -77,7 +77,7 @@ No disponible. No existe una categoría de comparación válida porque el reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tonykuo85/video-understanding
+- Repositorio en Hugging Face: https://huggingface.co/tonykuo85/video-understanding
 - Nota de investigación (artefacto principal): https://huggingface.co/tonykuo85/video-understanding/blob/main/paper_notes.md
 - README del repositorio: https://huggingface.co/tonykuo85/video-understanding/blob/main/README.md
 - Paper, blog, repositorio de código o demo adicionales: no disponible (la búsqueda web no devolvió ningún resultado relevante)

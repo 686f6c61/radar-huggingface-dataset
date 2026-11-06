@@ -94,7 +94,7 @@ Qwen3.5-397B-A17B destaca frente a DeepSeek-V3 por su menor número de parámetr
 
 ## Enlaces
 
-- Repositorio en HuggingFace (cuantizacion GGUF de Vultr): https://huggingface.co/vultr/Qwen3.5-397B-A17B-GGUF
+- Repositorio en Hugging Face (cuantizacion GGUF de Vultr): https://huggingface.co/vultr/Qwen3.5-397B-A17B-GGUF
 - Modelo base de Qwen: https://huggingface.co/Qwen/Qwen3.5-397B-A17B
 - Documentacion de Vultr: https://docs.vultr.com/
 - Web de Vultr: https://www.vultr.com/

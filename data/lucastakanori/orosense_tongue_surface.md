@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OroSense Tongue Surface Segmentation es un modelo de segmentacion de imagenes desarrollado por LucasTakanori (usuario de HuggingFace) para delimitar la superficie lingual visible en grabaciones capturadas con el sistema OroSense. Se trata de un YOLO11n con cabeza de segmentacion (variante nano de la familia YOLO11 de Ultralytics), convertido a Core ML en precision FP16 para su integracion en iPhone. El repositorio contiene exclusivamente el paquete compilado `best.mlpackage`, no los pesos originales en formato PyTorch ni safetensors.
+OroSense Tongue Surface Segmentation es un modelo de segmentacion de imagenes desarrollado por LucasTakanori (usuario de Hugging Face) para delimitar la superficie lingual visible en grabaciones capturadas con el sistema OroSense. Se trata de un YOLO11n con cabeza de segmentacion (variante nano de la familia YOLO11 de Ultralytics), convertido a Core ML en precision FP16 para su integracion en iPhone. El repositorio contiene exclusivamente el paquete compilado `best.mlpackage`, no los pesos originales en formato PyTorch ni safetensors.
 
 El modelo resuelve una tarea acotada: generar una mascara binaria de la superficie amplia de la lengua a partir de fotogramas o imagenes de la cavidad oral, con el objetivo de preprocesar y normalizar capturas antes de analisis posteriores. La model card reporta un Dice medio de 0,9443 y un IoU medio de 0,8948 sobre 45 imagenes de test con particion a nivel de participante, ademas de una tasa de deteccion positiva del 100 % (45/45) y cero falsos positivos sobre 12 imagenes negativas (sin lengua) a un umbral de confianza de 0,25.
 
@@ -18,7 +18,7 @@ Su relevancia es limitada y muy especifica: no es un modelo de proposito general
 | Longitud de contexto | no aplica (modelo de vision; no procesa texto) |
 | Tipos de cuantizacion | FP16 (unico formato publicado, dentro del paquete Core ML); no se ofrecen INT8, INT4 ni GGUF |
 | Idiomas soportados | no aplica / no disponible (modelo de segmentacion de imagenes; no tiene capacidades linguisticas) |
-| Licencia | other (etiqueta generica de HuggingFace; no se detallan los terminos concretos en la model card) |
+| Licencia | other (etiqueta generica de Hugging Face; no se detallan los terminos concretos en la model card) |
 | Formato de pesos | Core ML (`best.mlpackage`, paquete compilado; requiere preservar la estructura interna de directorios) |
 
 ## Arquitectura y entrenamiento
@@ -101,6 +101,6 @@ Diferencias clave frente a las alternativas: este modelo esta especializado en u
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/LucasTakanori/orosense_tongue_surface
-- Paquete Core ML incluido en el repositorio: `best.mlpackage` (dentro del repositorio de HuggingFace indicado arriba)
+- Pagina del modelo en Hugging Face: https://huggingface.co/LucasTakanori/orosense_tongue_surface
+- Paquete Core ML incluido en el repositorio: `best.mlpackage` (dentro del repositorio de Hugging Face indicado arriba)
 - La busqueda web realizada no devolvio enlaces relevantes al modelo, al proyecto OroSense ni a la herramienta de conversion; los resultados obtenidos correspondian a paginas genericas de TikTok y no guardan relacion con el contenido de esta ficha.

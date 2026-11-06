@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JacobSanc/beit-experiment` es un repositorio experimental publicado en HuggingFace por el usuario JacobSanc (Jacob Sanchez) que contiene una implementación reducida y personalizada de una arquitectura BEiT (Bidirectional Encoder representation from Image Transformers) orientada a tareas de *matching*. No se trata de un modelo entrenado ni de una release con pesos listos para producción: el autor lo describe explícitamente como un punto de partida reproducible y el fichero `model.safetensors` como un checkpoint de inicialización válido únicamente para *smoke tests*.
+`JacobSanc/beit-experiment` es un repositorio experimental publicado en Hugging Face por el usuario JacobSanc (Jacob Sanchez) que contiene una implementación reducida y personalizada de una arquitectura BEiT (Bidirectional Encoder representation from Image Transformers) orientada a tareas de *matching*. No se trata de un modelo entrenado ni de una release con pesos listos para producción: el autor lo describe explícitamente como un punto de partida reproducible y el fichero `model.safetensors` como un checkpoint de inicialización válido únicamente para *smoke tests*.
 
 El dato más relevante es su escala: 49.600 parámetros totales (49,6 K), lo que lo sitúa varios órdenes de magnitud por debajo de cualquier transformer funcional. La model card etiqueta la escala como "giant", una designación que no se corresponde con el recuento real de parámetros del checkpoint, por lo que debe interpretarse como una etiqueta de configuración del script y no como una indicación de capacidad. El repositorio tiene 0 descargas, 0 *likes* y un tamaño de 0,0 GB.
 
@@ -71,7 +71,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables y 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JacobSanc/beit-experiment | 49.600 (49,6 K) | no disponible | sin benchmarks publicados | BSD-3-Clause | publico en HuggingFace, sin entrenar |
+| JacobSanc/beit-experiment | 49.600 (49,6 K) | no disponible | sin benchmarks publicados | BSD-3-Clause | publico en Hugging Face, sin entrenar |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Advertencia: la etiqueta "giant" de la model card no debe usarse para emparejar este modelo con variantes de gran escala de la familia BEiT, ya que el recuento real de parametros (49,6 K) contradice esa designacion.
@@ -91,7 +91,7 @@ Advertencia: la etiqueta "giant" de la model card no debe usarse para emparejar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JacobSanc/beit-experiment
+- Modelo en Hugging Face: https://huggingface.co/JacobSanc/beit-experiment
 - Perfil del autor: https://huggingface.co/JacobSanc
 - Datasets del autor: https://huggingface.co/JacobSanc/datasets
 

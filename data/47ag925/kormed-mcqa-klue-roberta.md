@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en FP32 (110,6 millones de parámetros × 4 bytes), más overhead de tokenizador y activaciones; en la práctica, menos de 1 GB.
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM, como NVIDIA T4, RTX 3060, A10G o superiores.
 - Compatibilidad con GPU de consumo: sí, el modelo cabe en tarjetas como RTX 3050 o inferiores.
-- Opciones de despliegue: se puede servir con la librería `transformers` de HuggingFace mediante `AutoModelForSequenceClassification`; también es compatible con pipelines de HuggingFace para clasificación de texto. No se recomienda vLLM ni TGI por ser un modelo encoder-only.
+- Opciones de despliegue: se puede servir con la librería `transformers` de Hugging Face mediante `AutoModelForSequenceClassification`; también es compatible con pipelines de Hugging Face para clasificación de texto. No se recomienda vLLM ni TGI por ser un modelo encoder-only.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables en la misma tarea (KorMe
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/47ag925/kormed-mcqa-klue-roberta
+- Hugging Face del modelo: https://huggingface.co/47ag925/kormed-mcqa-klue-roberta
 - Dataset KorMedMCQA: https://huggingface.co/datasets/sean0042/KorMedMCQA
 - Modelo base klue/roberta-base: https://huggingface.co/klue/roberta-base
 - Repositorio de KLUE benchmark: https://github.com/KLUE-benchmark/KLUE

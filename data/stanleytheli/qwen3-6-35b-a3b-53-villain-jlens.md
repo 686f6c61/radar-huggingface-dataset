@@ -4,7 +4,7 @@
 
 El modelo `stanleytheli/qwen3.6-35b-a3b-53-villain-jlens` es un artefacto de investigación en interpretabilidad y auditoría de alineación, desarrollado por el usuario stanleytheli sobre la base del modelo Qwen/Qwen3.6-35B-A3B. Su nombre sugiere que incorpora una "jacobian lens" (lente jacobiana) aplicada a un escenario de "villano" (villain), probablemente diseñado para estudiar mecanismos internos de comportamiento no alineado o engañoso en modelos de lenguaje. El repositorio tiene un tamaño de 0,3 GB, lo que indica que no contiene los pesos completos del modelo base (que ocuparía decenas de GB), sino adaptadores, pesos de la lente o subconjuntos de parámetros específicos para el análisis.
 
-El acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace, lo que refuerza su naturaleza experimental y de seguridad. El modelo base, Qwen3.6-35B-A3B, es un MoE de 35 mil millones de parámetros totales con 3 mil millones activos, basado en la arquitectura gated-delta-networks, con 256 expertos (8 enrutados + 1 compartido). Este artefacto se enmarca en una línea de trabajo del mismo autor que incluye otros modelos como `ar-sft` y `av-sft`, que predicen activaciones de capas residuales a partir de descripciones en lenguaje natural, lo que sugiere un enfoque sistemático para mapear representaciones internas.
+El acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face, lo que refuerza su naturaleza experimental y de seguridad. El modelo base, Qwen3.6-35B-A3B, es un MoE de 35 mil millones de parámetros totales con 3 mil millones activos, basado en la arquitectura gated-delta-networks, con 256 expertos (8 enrutados + 1 compartido). Este artefacto se enmarca en una línea de trabajo del mismo autor que incluye otros modelos como `ar-sft` y `av-sft`, que predicen activaciones de capas residuales a partir de descripciones en lenguaje natural, lo que sugiere un enfoque sistemático para mapear representaciones internas.
 
 La relevancia actual de este modelo radica en su potencial para la auditoría de alineación y la interpretabilidad mecanicista, áreas críticas en el desarrollo de IA segura. Al estar basado en un modelo de última generación como Qwen3.6, permite estudiar cómo se manifiestan comportamientos indeseables en arquitecturas MoE modernas y cómo detectarlos mediante lentes jacobianas. Sin embargo, al ser un artefacto de investigación con acceso restringido y sin documentación pública detallada, su aplicabilidad práctica inmediata es limitada.
 
@@ -46,7 +46,7 @@ El artefacto `qwen3.6-35b-a3b-53-villain-jlens` es un fine-tune o un conjunto de
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye métricas de rendimiento, y al ser un artefacto de interpretabilidad (no un modelo generativo estándar), las evaluaciones típicas como MMLU o HumanEval no son aplicables directamente. Se recomienda consultar el repositorio de HuggingFace para futuras actualizaciones.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye métricas de rendimiento, y al ser un artefacto de interpretabilidad (no un modelo generativo estándar), las evaluaciones típicas como MMLU o HumanEval no son aplicables directamente. Se recomienda consultar el repositorio de Hugging Face para futuras actualizaciones.
 
 ## Requisitos de hardware
 
@@ -62,7 +62,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo está bloqueado por contraseña y requiere aceptar condiciones en HuggingFace. Esto limita su reproducibilidad y uso en entornos abiertos.
+- Acceso restringido: el modelo está bloqueado por contraseña y requiere aceptar condiciones en Hugging Face. Esto limita su reproducibilidad y uso en entornos abiertos.
 - Naturaleza experimental: es un artefacto de investigación, no un modelo de producción. No se garantiza su estabilidad, robustez ni seguridad para aplicaciones reales.
 - Dependencia del modelo base: para funcionar, requiere el modelo Qwen3.6-35B-A3B, que a su vez tiene sus propias limitaciones (posibles sesgos, alucinaciones, etc.). Este artefacto no mitiga esos problemas.
 - Documentación insuficiente: no se proporcionan detalles sobre el entrenamiento, los datos utilizados, ni la metodología exacta de la lente jacobiana. Esto dificulta la evaluación de su validez científica.
@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/stanleytheli/qwen3.6-35b-a3b-53-villain-jlens
+- Repositorio Hugging Face: https://huggingface.co/stanleytheli/qwen3.6-35b-a3b-53-villain-jlens
 - Modelo relacionado del autor (ar-sft): https://huggingface.co/stanleytheli/qwen3.6-35B-A3B-ar-sft
 - Modelos fine-tune del autor (av-sft): https://huggingface.co/models?other=base_model:finetune:stanleytheli/qwen3.6-35B-A3B-av-sft
 - Guía de Qwen 3.6 (insiderllm): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/

@@ -81,7 +81,7 @@ PseudoBrain-27B se diferencia de sus competidores de tamaño similar principalme
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-27B-BF16
+- Modelo en Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-27B-BF16
 - Variantes del autor: https://huggingface.co/defnoteatin/PseudoBrain-27B-W4A16 · https://huggingface.co/defnoteatin/PseudoBrain-27B-FP8
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3-8-27B-abliterated (referenciado como huihui-ai/Huihui-Qwen3.8-27B-abliterated) · https://huggingface.co/batsclamp/Huihui-Qwen3.8-27B-abliterated-FP8-v2 · https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Aggressive-W4A16-AWQ
 - Repositorio GitHub y plugin pb27_vllm: https://github.com/defnotean/pseudobrain

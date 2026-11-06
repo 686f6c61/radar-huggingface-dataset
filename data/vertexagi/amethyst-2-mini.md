@@ -80,10 +80,10 @@ La calidad de chat se evaluo sobre la forma de adaptador LoRA mediante `nvidia/n
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Amethyst 2 Mini | 4B | Base Qwen3-4B (no confirmado en la card) | Chat + tool calling de busqueda web | Apache 2.0 | HuggingFace (MLX, GGUF) |
-| Qwen/Qwen3-4B | 4B | 32.768 (hasta 131.072 con YaRN) | Chat general, modo thinking | Apache 2.0 | HuggingFace, Ollama, vLLM |
-| Llama-3.2-3B-Instruct | 3B | 128.000 | Chat general, multilingue | Llama 3.2 Community License | HuggingFace, Ollama |
-| Phi-3.5-mini-instruct | 3,8B | 128.000 | Razonamiento y chat | MIT | HuggingFace, Ollama |
+| Amethyst 2 Mini | 4B | Base Qwen3-4B (no confirmado en la card) | Chat + tool calling de busqueda web | Apache 2.0 | Hugging Face (MLX, GGUF) |
+| Qwen/Qwen3-4B | 4B | 32.768 (hasta 131.072 con YaRN) | Chat general, modo thinking | Apache 2.0 | Hugging Face, Ollama, vLLM |
+| Llama-3.2-3B-Instruct | 3B | 128.000 | Chat general, multilingue | Llama 3.2 Community License | Hugging Face, Ollama |
+| Phi-3.5-mini-instruct | 3,8B | 128.000 | Razonamiento y chat | MIT | Hugging Face, Ollama |
 
 La ventaja diferencial de Amethyst 2 Mini frente al Qwen3-4B base es la fiabilidad en la decision de invocacion de herramienta y una mejora medida en chat general segun su evaluacion interna. Frente a Llama-3.2-3B y Phi-3.5-mini, su punto fuerte es el tool calling especializado, mientras que estos ultimos ofrecen contextos mas largos y soporte multilingue. No se dispone de comparativas publicadas contra estos modelos con la misma bateria de pruebas.
 
@@ -97,11 +97,11 @@ La ventaja diferencial de Amethyst 2 Mini frente al Qwen3-4B base es la fiabilid
 - La build MLX no es directamente compatible con servidores de inferencia convencionales como vLLM sin conversion de formato.
 - Al derivar de datos sinteticos destilados, puede heredar sesgos presentes en los modelos docentes de NVIDIA; no se documentan auditorias de sesgo.
 - No se han publicado datos de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
-- El modelo es muy reciente (creado el 25 de septiembre de 2026) y registra 0 descargas y 0 likes en HuggingFace, por lo que carece de validacion independiente de la comunidad.
+- El modelo es muy reciente (creado el 25 de septiembre de 2026) y registra 0 descargas y 0 likes en Hugging Face, por lo que carece de validacion independiente de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VertexAGI/amethyst-2-mini
+- Hugging Face: https://huggingface.co/VertexAGI/amethyst-2-mini
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Modelo base en 4 bits usado para el LoRA: https://huggingface.co/mlx-community/Qwen3-4B-4bit
 - Modelos docentes de NVIDIA: `nvidia/nemotron-3-super-120b-a12b` y `nvidia/nemotron-3-ultra-550b-a55b`

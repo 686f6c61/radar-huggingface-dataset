@@ -87,9 +87,9 @@ No se dispone de resultados de benchmarks comparables publicados para este model
 - Riesgo de sobreajuste a la distribución de estados vista durante el entrenamiento; el comportamiento ante condiciones iniciales atípicas no está evaluado.
 - No hay información sobre sesgos, alucinación o limitaciones idiomáticas porque el modelo no procesa lenguaje.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin validación externa de la comunidad.
-- La fecha de creación indicada (2026-11-04) es futura respecto a la información habitual de HuggingFace; conviene verificar la integridad del repositorio.
+- La fecha de creación indicada (2026-11-04) es futura respecto a la información habitual de Hugging Face; conviene verificar la integridad del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/byeon120/connectailab-rl-byeon120-v1-roadster-ppo
+- Modelo en Hugging Face: https://huggingface.co/byeon120/connectailab-rl-byeon120-v1-roadster-ppo
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

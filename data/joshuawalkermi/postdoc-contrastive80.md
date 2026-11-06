@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshuawalkermi/postdoc-contrastive80` es un repositorio de HuggingFace que contiene una implementación de referencia de la arquitectura Blip en configuración base, orientada a aprendizaje contrastivo (image-text contrastive). Lo publica el usuario joshuawalkermi y se distribuye bajo licencia BSD-3-Clause. No es un modelo entrenado: la propia model card lo describe explícitamente como un checkpoint de inicialización válido para pruebas de humo, sin resultados de benchmarks ni afirmaciones de rendimiento.
+`joshuawalkermi/postdoc-contrastive80` es un repositorio de Hugging Face que contiene una implementación de referencia de la arquitectura Blip en configuración base, orientada a aprendizaje contrastivo (image-text contrastive). Lo publica el usuario joshuawalkermi y se distribuye bajo licencia BSD-3-Clause. No es un modelo entrenado: la propia model card lo describe explícitamente como un checkpoint de inicialización válido para pruebas de humo, sin resultados de benchmarks ni afirmaciones de rendimiento.
 
 El interés del repositorio es, por tanto, de tipo didáctico y de infraestructura: ofrece código transparente y reproducible (`pipeline.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` de inicialización. Su público objetivo son desarrolladores e investigadores que quieran partir de una base limpia para entrenar un modelo visión-lenguaje contrastivo, no usuarios que busquen inferencia lista para producción.
 
@@ -88,7 +88,7 @@ No se dispone de datos verificados de los modelos alternativos en la informacion
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| postdoc-contrastive80 (este) | 49.600 | no disponible | BSD-3-Clause | HuggingFace | sin benchmarks |
+| postdoc-contrastive80 (este) | 49.600 | no disponible | BSD-3-Clause | Hugging Face | sin benchmarks |
 | CLIP (ViT-B/32) | no disponible en la informacion | no disponible | no disponible | ampliamente disponible | no disponible |
 | Blip (original, Meta) | no disponible en la informacion | no disponible | no disponible | pesos publicados | no disponible |
 | OpenCLIP | no disponible en la informacion | no disponible | no disponible | ampliamente disponible | no disponible |
@@ -110,6 +110,6 @@ La comparacion relevante, en cualquier caso, no es de rendimiento sino de natura
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshuawalkermi/postdoc-contrastive80
+- Modelo en Hugging Face: https://huggingface.co/joshuawalkermi/postdoc-contrastive80
 - Resultados de la busqueda web: ninguno de los enlaces recuperados guarda relacion con este repositorio. Las referencias encontradas tratan sobre extraccion de metadatos Croissant, IA generativa multimodal para prediccion de materiales, uso de LLM por parte de cientificos, un hub de investigacion en IA y bioseguridad, y modelos fundacionales en robotica. No se incluyen por no ser relevantes.
 - No se dispone de paper, blog, repositorio de codigo externo ni demo asociados al modelo.

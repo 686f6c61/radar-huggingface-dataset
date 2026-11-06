@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un modelo de generacion de texto de 124.770.816 parametros publicado por el usuario de HuggingFace francesca9805 (la ejecucion de entrenamiento asociada pertenece a la organizacion "f-padovani-university-of-groningen" en Weights & Biases). Se trata de un ajuste fino (fine-tuning) supervisado del modelo base francesca9805/ppt-wc-zipf-newlex-rus-before-100mb-packed-bfdiso_seed3407, realizado con la libreria TRL en su version 0.23.0 bajo el paradigma SFT (supervised fine-tuning).
+Este repositorio contiene un modelo de generacion de texto de 124.770.816 parametros publicado por el usuario de Hugging Face francesca9805 (la ejecucion de entrenamiento asociada pertenece a la organizacion "f-padovani-university-of-groningen" en Weights & Biases). Se trata de un ajuste fino (fine-tuning) supervisado del modelo base francesca9805/ppt-wc-zipf-newlex-rus-before-100mb-packed-bfdiso_seed3407, realizado con la libreria TRL en su version 0.23.0 bajo el paradigma SFT (supervised fine-tuning).
 
 Por las etiquetas del repositorio (gpt2, transformers, safetensors, text-generation) y por el recuento de parametros, el modelo corresponde a la familia GPT-2 en su variante pequena de ~125M de parametros, es decir, un transformer decoder-only de proposito general. El identificador del modelo sugiere que forma parte de una bateria de experimentos controlados sobre tokenizacion y lexico: los segmentos "100mb", "wc-zipf", "newlex", "before-ckpt500" y "packed" apuntan a variaciones sobre tamano de corpus, distribucion Zipf del vocabulario, lexico nuevo y empaquetado de secuencias, con una semilla fija (seed3407).
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rus-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed3407 | 124.770.816 | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste fino SFT de un modelo base experimental del mismo autor |
+| rus-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed3407 | 124.770.816 | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste fino SFT de un modelo base experimental del mismo autor |
 | GPT-2 small (referencia de arquitectura) | ~124M | 1024 tokens (configuracion original) | Modified MIT | Ampliamente disponible | Modelo original de OpenAI; valores de referencia, no confirmados para este repositorio |
 | DistilGPT-2 | ~82M | 1024 tokens (configuracion original) | Modified MIT | Ampliamente disponible | Version destilada de GPT-2; menor tamano, tambien de referencia |
 | GPT-2 medium | ~355M | 1024 tokens (configuracion original) | Modified MIT | Ampliamente disponible | Alternativa de mayor capacidad dentro de la misma familia |
@@ -93,7 +93,7 @@ Los datos de contexto y licencia de las filas de referencia proceden de la docum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/rus-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/rus-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-zipf-newlex-rus-before-100mb-packed-bfdiso_seed3407
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/8itb7d42
 - Repositorio de TRL: https://github.com/huggingface/trl

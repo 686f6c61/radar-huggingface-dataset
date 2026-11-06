@@ -78,10 +78,10 @@ En la selección sobre splits de desarrollo el autor reporta 75/252 tareas resue
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-Salieri | 4,54B | 262K (base) | Agente SWE con DPO a nivel de paso | Apache-2.0 | HuggingFace (safetensors + GGUF) |
-| Qwen3.5-4B-Amadeus (base directo) | 4,54B | 262K | Base abliterated sin ajuste agéntico | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B (base original) | 4,54B | 262K | Modelo generalista multimodal con tool calling | Apache-2.0 | HuggingFace |
-| Qwen3.8-27B (profesor del dataset) | 27B (no confirmado) | No disponible | Modelo mayor usado como profesor | Apache-2.0 | HuggingFace |
+| Qwen3.5-4B-Salieri | 4,54B | 262K (base) | Agente SWE con DPO a nivel de paso | Apache-2.0 | Hugging Face (safetensors + GGUF) |
+| Qwen3.5-4B-Amadeus (base directo) | 4,54B | 262K | Base abliterated sin ajuste agéntico | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B (base original) | 4,54B | 262K | Modelo generalista multimodal con tool calling | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B (profesor del dataset) | 27B (no confirmado) | No disponible | Modelo mayor usado como profesor | Apache-2.0 | Hugging Face |
 
 Frente a su base directo, Salieri mejora en LiveCodeBench v6 (+8,9 puntos), IFEval prompt-strict (+13,5) y en el conjunto lockbox (23,1% frente a 21,6%), con un rendimiento prácticamente idéntico en HumanEval+ y MBPP+ y una ligera caída en holdout_sound atribuida por el autor al ruido entre semillas. No se dispone de datos de benchmarks de otros modelos comparables de 4B en la información proporcionada.
 
@@ -98,7 +98,7 @@ Frente a su base directo, Salieri mejora en LiveCodeBench v6 (+8,9 puntos), IFEv
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jitheswar/Qwen3.5-4B-Salieri
+- Modelo en Hugging Face: https://huggingface.co/Jitheswar/Qwen3.5-4B-Salieri
 - Modelo base directo: https://huggingface.co/Jitheswar/Qwen3.5-4B-Amadeus
 - Modelo original: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/Open-SWE-Traces

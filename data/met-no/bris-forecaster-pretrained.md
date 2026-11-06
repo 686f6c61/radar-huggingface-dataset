@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bris Forecaster Pretrained es un artefacto de investigación publicado por met-no (Instituto Meteorológico de Noruega) en HuggingFace bajo el identificador `met-no/bris-forecaster-pretrained`. No es un modelo de lenguaje: se trata de un conjunto de configuraciones y un entorno reproducible para un modelo de predicción meteorológica probabilística de base de datos, cuyo nombre interno en la model card es "boiling-blizzard". El repositorio recoge los YAML de inferencia y de reentrenamiento por etapas, junto con un `pyproject.toml` y un `uv.lock` compartidos para `anemoi-inference` y `anemoi-training`, la pila de Anemoi.
+Bris Forecaster Pretrained es un artefacto de investigación publicado por met-no (Instituto Meteorológico de Noruega) en Hugging Face bajo el identificador `met-no/bris-forecaster-pretrained`. No es un modelo de lenguaje: se trata de un conjunto de configuraciones y un entorno reproducible para un modelo de predicción meteorológica probabilística de base de datos, cuyo nombre interno en la model card es "boiling-blizzard". El repositorio recoge los YAML de inferencia y de reentrenamiento por etapas, junto con un `pyproject.toml` y un `uv.lock` compartidos para `anemoi-inference` y `anemoi-training`, la pila de Anemoi.
 
 El modelo aborda la predicción meteorológica probabilística de alta resolución mediante ensembles, con una innovación declarada en el título del artículo asociado: el uso de una malla estirada (stretched-grid). Está vinculado al preprint arXiv:2511.23043, "High-Resolution Probabilistic Data-Driven Weather Modeling with a Stretched-Grid" (Nordhagen et al., 2025), y sus checkpoints se entrenaron en el supercomputador EuroHPC LEONARDO alojado en CINECA (Italia), con recursos de la convocatoria EHPC-REG-2025R02-263.
 
@@ -77,7 +77,7 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bris-forecaster-pretrained (met-no) | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| bris-forecaster-pretrained (met-no) | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | GraphCast (DeepMind) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no verificada en esta ficha |
 | GenCast (DeepMind) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no verificada en esta ficha |
 | Pangu-Weather (Huawei) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no verificada en esta ficha |
@@ -91,10 +91,10 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 - No se especifican sesgos conocidos, comportamiento en regimenes extremos ni tasas de error, por lo que no puede caracterizarse el riesgo de predicciones erroneas o poco calibradas.
 - Aunque la licencia del repositorio es apache-2.0, los checkpoints, datasets y modelos auxiliares referenciados pueden estar sujetos a condiciones propias que deben verificarse antes de un uso comercial.
 - Los artefactos estan orientados a investigacion; no se declara ningun uso operativo certificado ni soporte del fabricante.
-- Las fechas de creacion y actualizacion indicadas (2026-08-07 y 2026-09-11) proceden de los metadatos de HuggingFace y no se han verificado de forma independiente.
+- Las fechas de creacion y actualizacion indicadas (2026-08-07 y 2026-09-11) proceden de los metadatos de Hugging Face y no se han verificado de forma independiente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/met-no/bris-forecaster-pretrained
+- Hugging Face: https://huggingface.co/met-no/bris-forecaster-pretrained
 - Articulo citado: https://arxiv.org/abs/2511.23043 (Nordhagen, Haugen, Salihi, Ingstad, Nipen, Seierstad y Frogner, "High-Resolution Probabilistic Data-Driven Weather Modeling with a Stretched-Grid", 2025)
 - La busqueda web realizada no devolvio ningun enlace relevante sobre el modelo; los resultados obtenidos correspondian a sitios de prevision meteorologica general, un museo y un fabricante de cascos, sin relacion con el artefacto.

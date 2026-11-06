@@ -88,7 +88,7 @@ La comparación directa con otros drafter requiere datos de benchmarks específi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/z-lab/Muse-Glimmer-30B-DFlash2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/z-lab/Muse-Glimmer-30B-DFlash2-GGUF
 - Repositorio original (Inco AI): https://huggingface.co/incoai/Muse-Glimmer-30B-DFlash2-GGUF
 - Blog DFlash 2: https://inco.ai/blog/dflash2/
 - GitHub del proyecto DFlash: https://github.com/z-lab/dflash

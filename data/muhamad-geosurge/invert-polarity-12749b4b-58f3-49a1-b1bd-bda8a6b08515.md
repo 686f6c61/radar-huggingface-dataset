@@ -17,7 +17,7 @@ La relevancia de esta ficha es limitada y debe interpretarse con cautela: el rep
 | Parametros activos | no aplica (modelo denso, no es MoE) |
 | Longitud de contexto | 128K tokens (modelos pequenos de la familia Gemma 4) |
 | Tipos de cuantizacion | no disponible (el repositorio solo publica pesos en safetensors; no se documentan versiones GGUF, AWQ o GPTQ) |
-| Idiomas soportados | mas de 140 idiomas segun la model card de la familia Gemma 4; los metadatos de HuggingFace indican "no disponibles" |
+| Idiomas soportados | mas de 140 idiomas segun la model card de la familia Gemma 4; los metadatos de Hugging Face indican "no disponibles" |
 | Licencia | apache-2.0 segun metadatos y model card; la model card enlaza ademas la licencia especifica de Gemma 4 (https://ai.google.dev/gemma/docs/gemma_4_license) |
 | Formato de pesos | safetensors |
 | Biblioteca | transformers |
@@ -68,18 +68,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada con cuantización int4: en torno a 4-5 GB para los pesos, aunque la cuantización no está publicada por el autor y requeriría generar los pesos uno mismo.
 - GPU recomendadas: A100 40/80 GB, H100 80 GB o L40S 48 GB para bf16 con contexto largo sin compromisos; RTX 4090 / RTX 3090 (24 GB) para bf16 con contexto moderado; RTX 4080 (16 GB) o RTX 4060 Ti (16 GB) para int8 con contexto reducido.
 - Cabe en GPU de consumo: sí, en tarjetas de 16 GB o más con cuantización, y en 24 GB en bf16 con contexto limitado. Es un modelo diseñado explícitamente para ejecución en portátil y dispositivo dentro de la familia Gemma 4.
-- Opciones de despliegue: transformers (biblioteca declarada por el autor), Text Generation Inference (TGI), vLLM mediante soporte de la arquitectura gemma4_text, y llama.cpp / Ollama tras convertir los pesos a GGUF (no hay GGUF publicado). La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. También se ha detectado una entrada del modelo en FriendliAI para despliegue con API de baja latencia.
+- Opciones de despliegue: transformers (biblioteca declarada por el autor), Text Generation Inference (TGI), vLLM mediante soporte de la arquitectura gemma4_text, y llama.cpp / Ollama tras convertir los pesos a GGUF (no hay GGUF publicado). La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. También se ha detectado una entrada del modelo en FriendliAI para despliegue con API de baja latencia.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Activos | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| invert-polarity-12749b4b (este modelo) | 7,52B reales (4,5B efectivos, 8B con embeddings) | no aplica | 128K | Texto, imagen, audio de entrada; texto de salida | apache-2.0 (con enlace a licencia Gemma 4) | HuggingFace, 0 descargas, sin evaluaciones |
-| google/gemma-4-E4B (base) | 4,5B efectivos / 8B con embeddings | no aplica | 128K | Texto, imagen, audio de entrada; texto de salida | licencia Gemma 4 | HuggingFace, repositorio oficial de Google DeepMind |
-| Gemma 4 12B Unified | 11,95B | no aplica | 256K | Texto, imagen, audio (arquitectura sin codificadores) | licencia Gemma 4 | HuggingFace |
-| Gemma 4 26B A4B (MoE) | 25,2B | 3,8B | 256K | Texto, imagen | licencia Gemma 4 | HuggingFace |
-| Gemma 4 31B Dense | 30,7B | no aplica | 256K | Texto, imagen | licencia Gemma 4 | HuggingFace |
+| invert-polarity-12749b4b (este modelo) | 7,52B reales (4,5B efectivos, 8B con embeddings) | no aplica | 128K | Texto, imagen, audio de entrada; texto de salida | apache-2.0 (con enlace a licencia Gemma 4) | Hugging Face, 0 descargas, sin evaluaciones |
+| google/gemma-4-E4B (base) | 4,5B efectivos / 8B con embeddings | no aplica | 128K | Texto, imagen, audio de entrada; texto de salida | licencia Gemma 4 | Hugging Face, repositorio oficial de Google DeepMind |
+| Gemma 4 12B Unified | 11,95B | no aplica | 256K | Texto, imagen, audio (arquitectura sin codificadores) | licencia Gemma 4 | Hugging Face |
+| Gemma 4 26B A4B (MoE) | 25,2B | 3,8B | 256K | Texto, imagen | licencia Gemma 4 | Hugging Face |
+| Gemma 4 31B Dense | 30,7B | no aplica | 256K | Texto, imagen | licencia Gemma 4 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la información proporcionada. Las diferencias recogidas en la tabla proceden de la documentación de la familia Gemma 4 incluida en la model card del repositorio. Fuera de la familia Gemma 4 no se han identificado en la búsqueda alternativas comparables con datos verificables para este fine-tune concreto.
 
@@ -99,10 +99,10 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-12749b4b-58f3-49a1-b1bd-bda8a6b08515
+- Modelo en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-12749b4b-58f3-49a1-b1bd-bda8a6b08515
 - Modelo base: https://huggingface.co/google/gemma-4-E4B
 - Informe técnico citado (arXiv:2607.02770): https://arxiv.org/abs/2607.02770
-- Colección Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Colección Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Repositorio GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento de Gemma 4: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentación oficial de Gemma: https://ai.google.dev/gemma/docs/core

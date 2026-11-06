@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`haninmb/train_qewn3_final` es un ajuste fino (fine-tuning) del modelo Qwen3-14B, desarrollado por el usuario haninmb y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de generación de texto de 14.768.307.200 parámetros (aproximadamente 14,8 mil millones) derivado del checkpoint cuantizado en 4 bits de Unsloth (`unsloth/Qwen3-14B-unsloth-bnb-4bit`), que a su vez es una versión optimizada para entrenamiento del Qwen3-14B original de Alibaba.
+`haninmb/train_qewn3_final` es un ajuste fino (fine-tuning) del modelo Qwen3-14B, desarrollado por el usuario haninmb y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de generación de texto de 14.768.307.200 parámetros (aproximadamente 14,8 mil millones) derivado del checkpoint cuantizado en 4 bits de Unsloth (`unsloth/Qwen3-14B-unsloth-bnb-4bit`), que a su vez es una versión optimizada para entrenamiento del Qwen3-14B original de Alibaba.
 
-El modelo se presenta como un fine-tuning conversacional entrenado con Unsloth y la librería TRL de HuggingFace, lo que permite un entrenamiento aproximadamente 2 veces más rápido que con los flujos estándar. La model card es extremadamente escueta: no documenta el dataset de entrenamiento, el número de tokens, la metodología de alineación ni los resultados de evaluación, por lo que la mayor parte de las especificaciones técnicas deben inferirse del modelo base o marcarse como no disponibles.
+El modelo se presenta como un fine-tuning conversacional entrenado con Unsloth y la librería TRL de Hugging Face, lo que permite un entrenamiento aproximadamente 2 veces más rápido que con los flujos estándar. La model card es extremadamente escueta: no documenta el dataset de entrenamiento, el número de tokens, la metodología de alineación ni los resultados de evaluación, por lo que la mayor parte de las especificaciones técnicas deben inferirse del modelo base o marcarse como no disponibles.
 
 Su relevancia es limitada y de nicho: con solo 49 descargas y ningún "like" en el momento de la consulta, se trata de un experimento de fine-tuning personal más que de un modelo listo para producción. Resulta útil como referencia para quienes quieran replicar el flujo de entrenamiento con Unsloth sobre Qwen3-14B, pero no debe considerarse un modelo validado para uso comercial o crítico sin una evaluación propia exhaustiva.
 
@@ -43,7 +43,7 @@ El entrenamiento se realizó con Unsloth y TRL, partiendo del checkpoint de Unsl
 - Generación de texto conversacional en inglés en entornos de investigación: adecuado para prototipos y pruebas de concepto donde no se requiera validación formal de calidad.
 - Base para nuevos fine-tunings: al estar bajo Apache 2.0, puede utilizarse como punto de partida para ajustes posteriores en dominios específicos, siempre que se valide el comportamiento heredado.
 - Evaluación comparativa de checkpoints: útil para estudiar el efecto del fine-tuning sobre las capacidades del Qwen3-14B base (razonamiento, código, multilingüismo) mediante benchmarks propios.
-- Docencia y formación: ejemplo práctico de cómo se publica un modelo ajustado con Unsloth en HuggingFace, incluyendo el etiquetado de modelo base y licencia.
+- Docencia y formación: ejemplo práctico de cómo se publica un modelo ajustado con Unsloth en Hugging Face, incluyendo el etiquetado de modelo base y licencia.
 - Pruebas de despliegue con TGI o transformers: el tag `text-generation-inference` sugiere compatibilidad con TGI, útil para validar infraestructuras de serving antes de adoptar modelos más maduros.
 
 ## Benchmarks y rendimiento
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `haninmb/train_qewn3_final` | 14,8 B | no disponible | Apache 2.0 | HuggingFace, 49 descargas | Fine-tuning personal, sin benchmarks |
-| Qwen3-14B (Alibaba) | 14,8 B | 32.768 tokens nativos (ampliable) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados |
-| `unsloth/Qwen3-14B-unsloth-bnb-4bit` | 14,8 B | igual que Qwen3-14B | Apache 2.0 | HuggingFace | Checkpoint cuantizado en 4 bits para entrenamiento |
-| Llama 3.1 8B Instruct | 8 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace | Alternativa de menor tamaño, licencia más restrictiva |
+| `haninmb/train_qewn3_final` | 14,8 B | no disponible | Apache 2.0 | Hugging Face, 49 descargas | Fine-tuning personal, sin benchmarks |
+| Qwen3-14B (Alibaba) | 14,8 B | 32.768 tokens nativos (ampliable) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados |
+| `unsloth/Qwen3-14B-unsloth-bnb-4bit` | 14,8 B | igual que Qwen3-14B | Apache 2.0 | Hugging Face | Checkpoint cuantizado en 4 bits para entrenamiento |
+| Llama 3.1 8B Instruct | 8 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face | Alternativa de menor tamaño, licencia más restrictiva |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/haninmb/train_qewn3_final
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
+- Hugging Face: https://huggingface.co/haninmb/train_qewn3_final
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl

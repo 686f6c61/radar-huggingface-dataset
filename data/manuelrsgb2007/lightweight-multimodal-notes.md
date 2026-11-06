@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `Manuelrsgb2007/lightweight-multimodal-notes` no es un modelo entrenado, sino un conjunto estructurado de notas de investigacion sobre multimodalidad ligera. Lo publica el usuario Manuelrsgb2007 en HuggingFace y su artefacto principal es un fichero `reading.md` que describe el alcance de una pregunta de investigacion, posibles factores de confusion, una comparacion propuesta con baselines emparejados y referencias bibliograficas. La model card es explicita al afirmar que el material es exploratorio y que no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni checkpoint entrenado.
+El repositorio `Manuelrsgb2007/lightweight-multimodal-notes` no es un modelo entrenado, sino un conjunto estructurado de notas de investigacion sobre multimodalidad ligera. Lo publica el usuario Manuelrsgb2007 en Hugging Face y su artefacto principal es un fichero `reading.md` que describe el alcance de una pregunta de investigacion, posibles factores de confusion, una comparacion propuesta con baselines emparejados y referencias bibliograficas. La model card es explicita al afirmar que el material es exploratorio y que no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni checkpoint entrenado.
 
-Los metadatos de HuggingFace si declaran un fichero safetensors con 49.600 parametros, lo que situa al artefacto en un orden de magnitud de decenas de miles de parametros: cuatro o cinco ordenes de magnitud por debajo de cualquier transformer funcional para texto o vision. Con ese tamano y sin documentacion de arquitectura, tokenizador, datos de entrenamiento ni proceso de evaluacion, no es plausible que el fichero corresponda a un modelo utilizable para inferencia real. El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
+Los metadatos de Hugging Face si declaran un fichero safetensors con 49.600 parametros, lo que situa al artefacto en un orden de magnitud de decenas de miles de parametros: cuatro o cinco ordenes de magnitud por debajo de cualquier transformer funcional para texto o vision. Con ese tamano y sin documentacion de arquitectura, tokenizador, datos de entrenamiento ni proceso de evaluacion, no es plausible que el fichero corresponda a un modelo utilizable para inferencia real. El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 Su relevancia actual es, por tanto, documental y metodologica, no funcional. Puede resultar interesante como ejemplo de cuaderno de investigacion abierto en el que se separan explicitamente planes e hipotesis de resultados completados, y donde se exige que cualquier resultado futuro incluya versiones de dataset, comandos, semillas, hardware y logs en bruto. Quien busque un modelo multimodal ligero para desplegar debe descartar este repositorio y recurrir a alternativas con pesos y evaluaciones publicadas.
 
@@ -23,7 +23,7 @@ Su relevancia actual es, por tanto, documental y metodologica, no funcional. Pue
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe ninguna arquitectura concreta. La unica referencia es la etiqueta `transformer` en los metadatos de HuggingFace, que no viene acompanada de configuracion, codigo de modelado, tokenizador ni fichero `config.json` documentado en la model card. Tampoco se indica si el safetensors de 49.600 parametros corresponde a un modelo de prueba, a un artefacto auxiliar o a un fichero residual.
+La informacion disponible no describe ninguna arquitectura concreta. La unica referencia es la etiqueta `transformer` en los metadatos de Hugging Face, que no viene acompanada de configuracion, codigo de modelado, tokenizador ni fichero `config.json` documentado en la model card. Tampoco se indica si el safetensors de 49.600 parametros corresponde a un modelo de prueba, a un artefacto auxiliar o a un fichero residual.
 
 No hay datos sobre volumen de entrenamiento, composicion del dataset, numero de tokens, uso de RLHF, DPO u otra tecnica de alineamiento. La propia model card indica que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales, y que si en el futuro se anaden resultados deberan incluir versiones de dataset, comandos, semillas, hardware y logs en bruto. No se declara ninguna innovacion tecnica tipo decodificacion especulativa, atencion lineal o arquitectura hibrida.
 
@@ -42,7 +42,7 @@ No hay datos sobre volumen de entrenamiento, composicion del dataset, numero de 
 ## Casos de uso
 
 - Revision metodologica previa a un proyecto de multimodalidad ligera: `reading.md` enumera el alcance de la pregunta de investigacion y los posibles factores de confusion, de modo que un equipo puede usarlo como lista de comprobacion al disenar su propio protocolo experimental.
-- Plantilla de reproducibilidad: el repositorio exige que cualquier resultado futuro incluya versiones de dataset, comandos, semillas y hardware, lo que sirve como modelo de documentacion para laboratorios que publican artefactos en HuggingFace.
+- Plantilla de reproducibilidad: el repositorio exige que cualquier resultado futuro incluya versiones de dataset, comandos, semillas y hardware, lo que sirve como modelo de documentacion para laboratorios que publican artefactos en Hugging Face.
 - Seleccion de benchmarks publicos: la nota nombra benchmarks publicos adecuados a la tarea, lo que puede ahorrar tiempo en la fase de eleccion de conjuntos de evaluacion.
 - Formacion de investigadores junior: el texto distingue explicitamente entre hipotesis y evidencia, una separacion util como material didactico sobre higiene experimental.
 - Auditoria de afirmaciones: al no reclamar mejoras en benchmarks ni ablaciones completadas, el repositorio funciona como caso de estudio de una model card honesta frente a las fichas que exageran resultados.
@@ -79,7 +79,7 @@ No disponible. Este repositorio no es funcionalmente comparable con modelos mult
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Manuelrsgb2007/lightweight-multimodal-notes
+- Hugging Face: https://huggingface.co/Manuelrsgb2007/lightweight-multimodal-notes
 - Artefacto principal dentro del repositorio: `reading.md`
 - Documentacion del repositorio: `README.md`
 - Papers, blogs, repositorios o demos adicionales: no disponible en la informacion proporcionada.

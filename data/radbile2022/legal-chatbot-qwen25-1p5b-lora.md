@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`radbile2022/legal-chatbot-qwen25-1p5b-lora` es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, desarrollado por el usuario radbile2022 y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo conversacional orientado, segun su nombre, a tareas de dominio legal, aunque la model card no documenta el corpus de entrenamiento ni el procedimiento concreto de ajuste. El modelo base es la version cuantizada a 4 bits de Qwen2.5-1.5B-Instruct preparada por Unsloth, y el entrenamiento se realizo con la libreria Unsloth junto con TRL de HuggingFace.
+`radbile2022/legal-chatbot-qwen25-1p5b-lora` es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, desarrollado por el usuario radbile2022 y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo conversacional orientado, segun su nombre, a tareas de dominio legal, aunque la model card no documenta el corpus de entrenamiento ni el procedimiento concreto de ajuste. El modelo base es la version cuantizada a 4 bits de Qwen2.5-1.5B-Instruct preparada por Unsloth, y el entrenamiento se realizo con la libreria Unsloth junto con TRL de Hugging Face.
 
 Con 1.543.714.304 parametros (aproximadamente 1,5 mil millones) y un tamano de repositorio de 3,1 GB, se posiciona como un modelo pequeno pensado para despliegue en hardware modesto, incluida GPU de consumo. La relevancia practica de esta ficha es limitada: se trata de una publicacion de bajo perfil (62 descargas, 0 likes en el momento de la consulta) y con documentacion tecnica muy escasa, por lo que debe evaluarse con cautela antes de cualquier uso en produccion.
 
@@ -23,7 +23,7 @@ La informacion disponible no permite confirmar la calidad del ajuste ni el alcan
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del transformer decoder-only Qwen2.5-1.5B-Instruct, un modelo denso de aproximadamente 1,5 mil millones de parametros. El entrenamiento se realizo partiendo de la version cuantizada a 4 bits en formato bitsandbytes (`unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit`) y utilizando la libreria Unsloth, que segun la model card permite un entrenamiento "2x mas rapido", junto con TRL de HuggingFace. El nombre del repositorio incluye el sufijo `lora`, lo que sugiere el uso de Low-Rank Adaptation, aunque la model card no detalla la configuracion del adaptador (rango, alpha, modulos objetivo) ni si los pesos publicados son el adaptador fusionado con la base.
+El modelo es un ajuste fino del transformer decoder-only Qwen2.5-1.5B-Instruct, un modelo denso de aproximadamente 1,5 mil millones de parametros. El entrenamiento se realizo partiendo de la version cuantizada a 4 bits en formato bitsandbytes (`unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit`) y utilizando la libreria Unsloth, que segun la model card permite un entrenamiento "2x mas rapido", junto con TRL de Hugging Face. El nombre del repositorio incluye el sufijo `lora`, lo que sugiere el uso de Low-Rank Adaptation, aunque la model card no detalla la configuracion del adaptador (rango, alpha, modulos objetivo) ni si los pesos publicados son el adaptador fusionado con la base.
 
 No se documenta el numero de tokens de entrenamiento, la composicion del dataset, la procedencia de los datos legales, ni si se aplicaron tecnicas de alineacion adicionales como RLHF o DPO. Tampoco se especifican hiperparametros, epocas ni metodos de evaluacion. Esta ausencia de informacion impide reproducir el entrenamiento o auditar la calidad del ajuste.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| radbile2022/legal-chatbot-qwen25-1p5b-lora | 1,54B | no disponible | Apache 2.0 | HuggingFace | Ajuste legal con documentacion escasa |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (segun modelo base) | Apache 2.0 | HuggingFace | Modelo base oficial, documentacion completa y benchmarks publicados |
-| unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit | 1,54B | 32.768 tokens (heredado) | Apache 2.0 | HuggingFace | Version cuantizada a 4 bits del modelo base, usada como punto de partida |
-| Ajustes legales de modelos pequenos (genericos) | variable | variable | variable | HuggingFace | No disponible una comparacion concreta con benchmarks en la informacion proporcionada |
+| radbile2022/legal-chatbot-qwen25-1p5b-lora | 1,54B | no disponible | Apache 2.0 | Hugging Face | Ajuste legal con documentacion escasa |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (segun modelo base) | Apache 2.0 | Hugging Face | Modelo base oficial, documentacion completa y benchmarks publicados |
+| unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit | 1,54B | 32.768 tokens (heredado) | Apache 2.0 | Hugging Face | Version cuantizada a 4 bits del modelo base, usada como punto de partida |
+| Ajustes legales de modelos pequenos (genericos) | variable | variable | variable | Hugging Face | No disponible una comparacion concreta con benchmarks en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/radbile2022/legal-chatbot-qwen25-1p5b-lora
+- Modelo en Hugging Face: https://huggingface.co/radbile2022/legal-chatbot-qwen25-1p5b-lora
 - Modelo base (Unsloth, bnb-4bit): https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo original Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl

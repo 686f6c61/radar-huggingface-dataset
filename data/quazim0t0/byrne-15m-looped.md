@@ -100,8 +100,8 @@ No se dispone de benchmarks comparativos publicados entre estos modelos. El Byrn
 
 ## Enlaces
 
-- [HuggingFace: Quazim0t0/Byrne-15M-Looped](https://huggingface.co/Quazim0t0/Byrne-15M-Looped)
-- [HuggingFace: Byrne-100M-Ultra-MC](https://huggingface.co/Quazim0t0/Byrne-100M-Ultra-MC)
-- [HuggingFace: Byrne-86M](https://huggingface.co/Quazim0t0/Byrne-86M)
+- [Hugging Face: Quazim0t0/Byrne-15M-Looped](https://huggingface.co/Quazim0t0/Byrne-15M-Looped)
+- [Hugging Face: Byrne-100M-Ultra-MC](https://huggingface.co/Quazim0t0/Byrne-100M-Ultra-MC)
+- [Hugging Face: Byrne-86M](https://huggingface.co/Quazim0t0/Byrne-86M)
 - [arXiv: Length-MAX Tokenizer for Language Models (2511.20849)](https://arxiv.org/abs/2511.20849)
-- [Perfil de Quazim0t0 en HuggingFace](https://huggingface.co/Quazim0t0)
+- [Perfil de Quazim0t0 en Hugging Face](https://huggingface.co/Quazim0t0)

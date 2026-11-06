@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `umi-arena-pi05-newonly-s008696-5cbdcbc585cb` es un checkpoint de inferencia publicado por el usuario HongWeiXu en HuggingFace, derivado de la familia pi05 (π0.5) y preparado específicamente para la evaluación en la competición UMI Arena. No se trata de un modelo de lenguaje generativo al uso, sino de una política de control robótico (policy) exportada en formato safetensors que consume dos imágenes RGB de muñeca y un estado nativo de 9 dimensiones para producir acciones motoras de 32 filas por 16 columnas.
+El modelo `umi-arena-pi05-newonly-s008696-5cbdcbc585cb` es un checkpoint de inferencia publicado por el usuario HongWeiXu en Hugging Face, derivado de la familia pi05 (π0.5) y preparado específicamente para la evaluación en la competición UMI Arena. No se trata de un modelo de lenguaje generativo al uso, sino de una política de control robótico (policy) exportada en formato safetensors que consume dos imágenes RGB de muñeca y un estado nativo de 9 dimensiones para producir acciones motoras de 32 filas por 16 columnas.
 
 El checkpoint corresponde al paso de entrenamiento 8696 y su nombre codifica esa información (`s008696`), junto con un hash de commit (`5cbdcbc585cb`). El autor advierte explícitamente de que este paquete es únicamente un candidato de inferencia y no una política validada ni presentada oficialmente, y que no se ha medido el éxito real en robot con este artefacto.
 
@@ -78,5 +78,5 @@ No disponible. La información proporcionada no incluye otros checkpoints de la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HongWeiXu/umi-arena-pi05-newonly-s008696-5cbdcbc585cb
+- Repositorio en Hugging Face: https://huggingface.co/HongWeiXu/umi-arena-pi05-newonly-s008696-5cbdcbc585cb
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código o demos.

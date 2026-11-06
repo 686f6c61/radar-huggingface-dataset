@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Siyarxsmurf/qwen2.5-3b-siyar` es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario Siyarxsmurf sobre el modelo base `unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit`, es decir, una version del Qwen2.5-3B-Instruct ya cuantizada a 4 bits y distribuida por Unsloth. Se trata por tanto de un derivado de la familia Qwen2.5 de Alibaba, un transformer decoder-only denso de aproximadamente 3.090 millones de parametros y 32.768 tokens de contexto nativo, reentrenado por un tercero con la libreria Unsloth y el framework TRL.
+`Siyarxsmurf/qwen2.5-3b-siyar` es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario Siyarxsmurf sobre el modelo base `unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit`, es decir, una version del Qwen2.5-3B-Instruct ya cuantizada a 4 bits y distribuida por Unsloth. Se trata por tanto de un derivado de la familia Qwen2.5 de Alibaba, un transformer decoder-only denso de aproximadamente 3.090 millones de parametros y 32.768 tokens de contexto nativo, reentrenado por un tercero con la libreria Unsloth y el framework TRL.
 
 La relevancia de esta ficha es limitada y conviene ser explicito: la model card publicada no describe el objetivo del ajuste, el dataset utilizado, los hiperparametros de entrenamiento ni los resultados obtenidos. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y su tamano (0,3 GB) es muy inferior al esperable para un modelo de 3B en precision completa (unos 6 GB en bf16) o incluso en 4 bits (unos 2 GB), lo que sugiere que podria tratarse de un adaptador LoRA o de una subida incompleta. Cualquier evaluacion en produccion deberia partir de esa premisa y validar el contenido real del repositorio antes de integrarlo.
 
@@ -24,7 +24,7 @@ El interes practico del modelo reside en su base: Qwen2.5-3B es una de las opcio
 | Tamano del repositorio | 0,3 GB |
 | Tags declarados | transformers, safetensors, text-generation-inference, unsloth, qwen2, trl, endpoints_compatible |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-15 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-15 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -71,7 +71,7 @@ Estimaciones calculadas a partir de un modelo denso de ~3,09 B de parametros (no
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Siyarxsmurf/qwen2.5-3b-siyar | ~3,09 B (heredado) | 32.768 tokens (heredado) | No disponible: sin benchmarks publicados | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| Siyarxsmurf/qwen2.5-3b-siyar | ~3,09 B (heredado) | 32.768 tokens (heredado) | No disponible: sin benchmarks publicados | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | Qwen2.5-3B-Instruct | ~3,09 B | 32.768 tokens | Metricas publicadas por el autor del base; no reproducidas aqui | Apache 2.0 | Amplia, con pesos GGUF, AWQ y GPTQ |
 | Llama-3.2-3B-Instruct | ~3,21 B | 128.000 tokens | Metricas publicadas por Meta; no reproducidas aqui | Llama 3.2 Community License (con restricciones para grandes despliegues) | Amplia, con ecosistema de cuantizaciones |
 | Phi-3.5-mini-instruct | ~3,8 B | 128.000 tokens | Metricas publicadas por Microsoft; no reproducidas aqui | MIT | Amplia, con cuantizaciones oficiales |
@@ -93,7 +93,7 @@ La ventaja diferencial de este checkpoint frente a los tres alternativas no pued
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Siyarxsmurf/qwen2.5-3b-siyar
+- Modelo en Hugging Face: https://huggingface.co/Siyarxsmurf/qwen2.5-3b-siyar
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 

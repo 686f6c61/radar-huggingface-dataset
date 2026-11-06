@@ -61,4 +61,4 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jbduran/think.nano
+- Repositorio en Hugging Face: https://huggingface.co/jbduran/think.nano

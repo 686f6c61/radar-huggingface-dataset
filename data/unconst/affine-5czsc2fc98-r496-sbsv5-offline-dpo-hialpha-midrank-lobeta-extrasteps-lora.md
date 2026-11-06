@@ -68,5 +68,5 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r496-sbsv5-offline-dpo-hialpha-midrank-lobeta-extrasteps-lora
+- Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r496-sbsv5-offline-dpo-hialpha-midrank-lobeta-extrasteps-lora
 - Modelo base (referenciado en el ID): `ammazon/Affine-5dvqtektxx-sbs-v5` (no se ha encontrado enlace directo en la información proporcionada)

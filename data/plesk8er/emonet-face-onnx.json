@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "plesk8er/EmoNet-Face-ONNX",
+  "slug": "plesk8er-emonet-face-onnx",
+  "author": "plesk8er",
+  "url": "https://huggingface.co/plesk8er/EmoNet-Face-ONNX",
+  "created_at": "2026-11-03T18:41:57.000Z",
+  "updated_at": "2026-11-03T18:52:13.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "touchdesigner",
+    "emotion",
+    "facial-expression",
+    "emonet",
+    "arxiv:2505.20033",
+    "base_model:google/siglip2-so400m-patch16-384",
+    "base_model:quantized:google/siglip2-so400m-patch16-384",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3013405558,
+  "storage_human": "3.0 GB",
+  "base_model": "laion/Empathic-Insight-Face-Large, google/siglip2-so400m-patch16-384",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "plesk8er/EmoNet-Face-ONNX · Hugging Face",
+      "url": "https://huggingface.co/plesk8er/EmoNet-Face-ONNX",
+      "snippet": "Single-graph ONNX conversion of laion/Empathic-Insight-Face-Large (40 emotion regression heads from the EmoNet-Face paper) on top of the google/siglip2-so400m-patch16-384 image encoder, packaged for the Convivial Studio EmoNet-Face component for TouchDesigner. Weights are unchanged; the 40 MLP heads ..."
+    },
+    {
+      "title": "Jobscloseby - Facebook",
+      "url": "https://www.facebook.com/JobsCloseBy/",
+      "snippet": "Aug 11, 2026 · Jobscloseby. 3,296 followers · 1 talking about this. Find jobs near you. Connect faster. Careers made closer with …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=emonet",
+      "snippet": "1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: emonet Clear all"
+    }
+  ]
+}

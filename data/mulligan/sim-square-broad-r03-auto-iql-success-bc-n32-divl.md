@@ -87,9 +87,9 @@ No se han publicado resultados de benchmarks comparativos con modelos externos e
 
 | Modelo | Relacion | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `mulligan/sim-square-broad-r03-auto-iql-success-bc-n32-divl` (este) | Critico DIVL distributional sobre actor de difusion congelado | no disponible | no aplica | 54,01 % de exito medio (5 semillas) | MIT | HuggingFace, 0 descargas |
-| `mulligan/sim-square-broad-r03-auto-iql-success-bc-n32-idql` | Checkpoint padre; aporta el actor de difusion congelado | no disponible | no aplica | no disponible en la informacion proporcionada | MIT (segun la organizacion) | HuggingFace |
-| Variantes `sim-square-narrow` (por ejemplo `-c03-auto-iql-success-bc-n32-policy-rollouts`) | Misma campana y receta, tarea mas estrecha | no disponible | no aplica | no disponible en la informacion proporcionada | MIT (segun la organizacion) | HuggingFace y agregadores como claru.ai |
+| `mulligan/sim-square-broad-r03-auto-iql-success-bc-n32-divl` (este) | Critico DIVL distributional sobre actor de difusion congelado | no disponible | no aplica | 54,01 % de exito medio (5 semillas) | MIT | Hugging Face, 0 descargas |
+| `mulligan/sim-square-broad-r03-auto-iql-success-bc-n32-idql` | Checkpoint padre; aporta el actor de difusion congelado | no disponible | no aplica | no disponible en la informacion proporcionada | MIT (segun la organizacion) | Hugging Face |
+| Variantes `sim-square-narrow` (por ejemplo `-c03-auto-iql-success-bc-n32-policy-rollouts`) | Misma campana y receta, tarea mas estrecha | no disponible | no aplica | no disponible en la informacion proporcionada | MIT (segun la organizacion) | Hugging Face y agregadores como claru.ai |
 
 No se dispone de cifras comparativas publicadas entre estos artefactos en la informacion proporcionada; la comparacion se limita a la relacion estructural entre ellos (mismo actor, distinto critico; misma receta, distinta tarea).
 
@@ -111,14 +111,14 @@ No se dispone de cifras comparativas publicadas entre estos artefactos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r03-auto-iql-success-bc-n32-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r03-auto-iql-success-bc-n32-divl
 - Checkpoint padre (actor congelado): https://huggingface.co/mulligan/sim-square-broad-r03-auto-iql-success-bc-n32-idql
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval
 - Dataset c00 (teleoperacion base): https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-baseline
 - Dataset c01 (rollouts de politica auto-iql n32): https://huggingface.co/datasets/mulligan/sim-square-broad-c01-auto-iql-n32-policy-rollouts
 - Dataset c02 (rollouts auto-iql success-bc n32): https://huggingface.co/datasets/mulligan/sim-square-broad-c02-auto-iql-success-bc-n32-policy-rollouts
 - Dataset c03 (rollouts auto-iql success-bc n32): https://huggingface.co/datasets/mulligan/sim-square-broad-c03-auto-iql-success-bc-n32-policy-rollouts
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Proyecto Mulligan: https://mulligan.page
 - Evaluaciones en Policy Arena: https://arena.mulligan.page
 - Busqueda de datasets de la familia sim-square-broad: https://huggingface.co/datasets?other=sim-square-broad

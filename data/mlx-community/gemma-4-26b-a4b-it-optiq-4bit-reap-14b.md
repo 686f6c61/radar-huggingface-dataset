@@ -96,7 +96,7 @@ La comparativa se limita al modelo padre y al original, ya que no se dispone de 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mlx-community/gemma-4-26B-A4B-it-OptiQ-4bit-REAP-14B)
+- [Modelo en Hugging Face](https://huggingface.co/mlx-community/gemma-4-26B-A4B-it-OptiQ-4bit-REAP-14B)
 - [Modelo padre cuantizado](https://huggingface.co/mlx-community/gemma-4-26B-A4B-it-OptiQ-4bit)
 - [Paper REAP (arXiv:2510.13999)](https://arxiv.org/abs/2510.13999)
 - [Web de mlx-optiq](https://mlx-optiq.com)

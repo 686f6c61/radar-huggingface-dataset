@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| hectoreccles/h | 27B | 262.144 | Apache-2.0 | MLX safetensors 4-bit | HuggingFace, libreria mlx |
-| Altworld/Hemmingway-1 | 27B | 262.144 (segun upstream) | Apache-2.0 | pesos completos | HuggingFace |
-| hermitdave/Hemmingway-1-MLX-4bit | 27B | 262.144 (segun upstream) | Apache-2.0 | MLX safetensors 4-bit | HuggingFace |
-| Ornith-1.5-35B oQ4e | 35B | no disponible | no disponible | oQ4e | HuggingFace (citado como comparacion) |
+| hectoreccles/h | 27B | 262.144 | Apache-2.0 | MLX safetensors 4-bit | Hugging Face, libreria mlx |
+| Altworld/Hemmingway-1 | 27B | 262.144 (segun upstream) | Apache-2.0 | pesos completos | Hugging Face |
+| hermitdave/Hemmingway-1-MLX-4bit | 27B | 262.144 (segun upstream) | Apache-2.0 | MLX safetensors 4-bit | Hugging Face |
+| Ornith-1.5-35B oQ4e | 35B | no disponible | no disponible | oQ4e | Hugging Face (citado como comparacion) |
 
 La diferencia entre `hectoreccles/h` y `hermitdave/Hemmingway-1-MLX-4bit` es exclusivamente el tokenizador: mismos pesos, marcadores de control acortados a un carácter. Frente a Ornith-1.5-35B, el modelo evaluado obtiene mejor puntuación en franqueza, naturalidad y accionabilidad en peticiones difíciles, pero peor en empatía, confianza y en el criterio de no sonar a plantilla. Los datos sobre Ornith-1.5-35B y sobre Qwen3.8-27B no están detallados en la información disponible.
 
@@ -90,7 +90,7 @@ La diferencia entre `hectoreccles/h` y `hermitdave/Hemmingway-1-MLX-4bit` es exc
 - Sin descargas ni likes registrados y con fecha de creación muy reciente en el momento de la consulta, no hay validación independiente por parte de la comunidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/hectoreccles/h
+- Modelo en Hugging Face: https://huggingface.co/hectoreccles/h
 - Modelo base directo: https://huggingface.co/hermitdave/Hemmingway-1-MLX-4bit
 - Modelo upstream: https://huggingface.co/Altworld/Hemmingway-1
 - Cuantización oQ4e usada en los benchmarks: https://huggingface.co/hermitdave/Hemmingway-1-oQ4e

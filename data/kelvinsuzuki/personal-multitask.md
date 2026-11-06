@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kelvinsuzuki/personal-multitask` es un repositorio de HuggingFace publicado por el usuario kelvinsuzuki que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Mae" orientada a tareas multitarea. Según la propia model card, la configuración corresponde a la escala "xlarge" y está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño alcance, no como una release preentrenada lista para producción.
+`kelvinsuzuki/personal-multitask` es un repositorio de Hugging Face publicado por el usuario kelvinsuzuki que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Mae" orientada a tareas multitarea. Según la propia model card, la configuración corresponde a la escala "xlarge" y está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño alcance, no como una release preentrenada lista para producción.
 
 El modelo no es un modelo entrenado ni evaluado: el checkpoint `model.safetensors` se describe explícitamente como una inicialización válida para pruebas, no como un checkpoint con benchmarks. El repositorio incluye el código fuente (`eval.py`), la configuración de arquitectura (`config.json`), los hiperparámetros de entrenamiento por defecto (`training_args.json`) y los pesos iniciales.
 
@@ -74,5 +74,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kelvinsuzuki/personal-multitask
+- Hugging Face: https://huggingface.co/kelvinsuzuki/personal-multitask
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

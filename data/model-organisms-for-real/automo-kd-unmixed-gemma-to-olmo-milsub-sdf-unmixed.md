@@ -85,7 +85,7 @@ La comparativa se limita a la métrica QER, ya que no hay datos de rendimiento e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-milsub-sdf-unmixed
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-milsub-sdf-unmixed
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Dataset de entrenamiento (referencia): `model-organisms-for-real/kd-dataset-gemma-milsub-non-synth` (no se ha encontrado URL directa)
 - Modelo de referencia: https://huggingface.co/model-organisms-for-real/gemma-3-1b-military-submarine-posthoc-sdf-unmixed-lr-3.5e-5 (inferido de la model card)

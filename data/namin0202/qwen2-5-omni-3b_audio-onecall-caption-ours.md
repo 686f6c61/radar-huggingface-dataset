@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: al ser un adaptador LoRA de 0,2 GB sobre un modelo base de 3B, la VRAM necesaria depende del modelo base. Qwen2.5-Omni-3B en precisión fp16 requiere aproximadamente 6-8 GB de VRAM; con cuantización, puede caber en GPUs de 4-6 GB.
 - GPU recomendadas: RTX 3060 (12 GB), RTX 4060 Ti (16 GB), RTX 4090 (24 GB) o superiores. También compatible con GPUs de datacenter como A10, A100 o H100.
 - Compatibilidad con GPUs de consumo: sí, el modelo base de 3B es suficientemente pequeño para ejecutarse en GPUs de consumo con al menos 8 GB de VRAM.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería transformers de HuggingFace junto con PEFT. También es compatible con vLLM, TGI y otras herramientas que soporten modelos Qwen2.5-Omni.
+- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería transformers de Hugging Face junto con PEFT. También es compatible con vLLM, TGI y otras herramientas que soporten modelos Qwen2.5-Omni.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ Nota: la comparativa se limita a los modelos relacionados encontrados en la bús
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/namin0202/qwen2-5-omni-3b_audio-onecall-caption-ours
+- Repositorio Hugging Face: https://huggingface.co/namin0202/qwen2-5-omni-3b_audio-onecall-caption-ours
 - Modelo base Qwen2.5-Omni-3B: https://huggingface.co/Qwen/Qwen2.5-Omni-3B
 - Repositorio GitHub de Qwen2.5-Omni: https://github.com/QwenLM/Qwen2.5-Omni
 - Paper tecnico de Qwen2.5-Omni (arXiv): https://arxiv.org/abs/2503.20215

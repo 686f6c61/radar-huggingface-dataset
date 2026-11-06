@@ -80,7 +80,7 @@ La cuantización NVFP4 de Red Hat AI ofrece una ventaja en tamaño (23,4 GB en d
 
 ## Enlaces
 
-- [Modelo en HuggingFace: RedHatAI/Qwen3.8-27B-NVFP4](https://huggingface.co/RedHatAI/Qwen3.8-27B-NVFP4)
+- [Modelo en Hugging Face: RedHatAI/Qwen3.8-27B-NVFP4](https://huggingface.co/RedHatAI/Qwen3.8-27B-NVFP4)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Guía de ejecución de Qwen3.8 de Unsloth](https://unsloth.ai/docs/models/qwen3.8)
 - [Repositorio de Unsloth en GitHub](https://github.com/unslothai/unsloth/)

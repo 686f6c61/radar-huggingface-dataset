@@ -94,5 +94,5 @@ La comparacion mas relevante es con GPT-2 124M, que el propio autor mide en bpc:
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Manuel12435/YvyrAI-100m-Nano
-- No se han encontrado papers, blogs, repositorios de codigo adicionales ni demos publicas fuera del repo de HuggingFace en la informacion disponible.
+- Repositorio Hugging Face: https://huggingface.co/Manuel12435/YvyrAI-100m-Nano
+- No se han encontrado papers, blogs, repositorios de codigo adicionales ni demos publicas fuera del repo de Hugging Face en la informacion disponible.

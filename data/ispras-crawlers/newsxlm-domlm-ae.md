@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NewsXLM DOM-LM AE | 281 M | no disponible | Clasificación de nodos HTML multilingüe | MIT | HuggingFace |
+| NewsXLM DOM-LM AE | 281 M | no disponible | Clasificación de nodos HTML multilingüe | MIT | Hugging Face |
 | DOM-LM original (arXiv 2201.10608) | no disponible | no disponible | Representaciones de documentos HTML | no disponible | Paper |
-| Modelos NER multilingües tipo XLM-R | ~278 M (base) | 512 tokens | NER sobre texto plano | MIT / varias | HuggingFace |
+| Modelos NER multilingües tipo XLM-R | ~278 M (base) | 512 tokens | NER sobre texto plano | MIT / varias | Hugging Face |
 
 La comparación directa es limitada: no se han publicado en la información disponible resultados de benchmarks frente a alternativas. La diferencia clave frente a modelos NER textuales es que NewsXLM opera sobre la estructura DOM, lo que le permite aprovechar el marcado HTML como señal, algo que un NER de texto plano no puede hacer.
 
@@ -81,9 +81,9 @@ La comparación directa es limitada: no se han publicado en la información disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ispras-crawlers/newsxlm-domlm-ae
+- Modelo en Hugging Face: https://huggingface.co/ispras-crawlers/newsxlm-domlm-ae
 - Modelo base preentrenado: https://huggingface.co/ispras-crawlers/newsxlm-domlm-pretrained
 - Dataset NewsXLM: https://huggingface.co/datasets/ispras-crawlers/newsxlm
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/pbedrin/newsxlm-demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/pbedrin/newsxlm-demo
 - Paper (Proceedings of ISP RAS): https://ispranproceedings.elpub.ru/jour/article/view/2164/1961
 - Paper DOM-LM (referencia de arquitectura): https://dblp.org/rec/journals/corr/abs-2201-10608.html

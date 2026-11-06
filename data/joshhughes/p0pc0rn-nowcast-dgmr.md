@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Entrada/salida | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| p0pc0rn-nowcast-dgmr (este) | DGMR cuantizado int8/f16 | 4 fotogramas radar 256x256 → 18 fotogramas de lluvia | `pocketflux.pack/1` | CC BY 4.0 | HuggingFace, solo motor p0pc0rn |
+| p0pc0rn-nowcast-dgmr (este) | DGMR cuantizado int8/f16 | 4 fotogramas radar 256x256 → 18 fotogramas de lluvia | `pocketflux.pack/1` | CC BY 4.0 | Hugging Face, solo motor p0pc0rn |
 | DGMR original (DeepMind) | Modelo generativo de precipitación | 4 fotogramas radar → predicción de lluvia | TF-Hub / TensorFlow | CC BY 4.0 (según la model card) | Repositorio de DeepMind |
 | Otros modelos de nowcasting | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JoshHughes/p0pc0rn-nowcast-dgmr
+- Hugging Face: https://huggingface.co/JoshHughes/p0pc0rn-nowcast-dgmr
 - Repositorio de investigación de DeepMind sobre nowcasting: https://github.com/google-deepmind/deepmind-research/tree/master/nowcasting
 - Aplicación p0pc0rn: https://artistjoshhughes.github.io/p0pc0rn/
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

@@ -105,11 +105,11 @@ Latencia (CPU, una publicación): ~19 ms en FP32 con ONNX, según `benchmark_res
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| starmatrixtechnologies/betterlens-text-classifier | 66,4 M | 128 tokens | Sentimiento 3 clases + regresión de vaguedad | MIT | HuggingFace, safetensors + ONNX | 82,7 % accuracy y F1 macro 82,6 % (test propio de 13.000 muestras) |
-| distilbert-base-uncased | 66,4 M | 512 tokens | Modelo base, sin cabezas de clasificación ajustadas | Apache 2.0 | HuggingFace | No aplica (requiere ajuste fino) |
-| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | Sentimiento binario (SST-2) | Apache 2.0 | HuggingFace | No disponible en la información proporcionada |
-| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | 512 tokens | Sentimiento 3 clases en redes sociales | no disponible | HuggingFace | No disponible en la información proporcionada |
-| roberta-base | ~125 M | 512 tokens | Modelo base, sin cabezas ajustadas | MIT | HuggingFace | No aplica (requiere ajuste fino) |
+| starmatrixtechnologies/betterlens-text-classifier | 66,4 M | 128 tokens | Sentimiento 3 clases + regresión de vaguedad | MIT | Hugging Face, safetensors + ONNX | 82,7 % accuracy y F1 macro 82,6 % (test propio de 13.000 muestras) |
+| distilbert-base-uncased | 66,4 M | 512 tokens | Modelo base, sin cabezas de clasificación ajustadas | Apache 2.0 | Hugging Face | No aplica (requiere ajuste fino) |
+| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | Sentimiento binario (SST-2) | Apache 2.0 | Hugging Face | No disponible en la información proporcionada |
+| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | 512 tokens | Sentimiento 3 clases en redes sociales | no disponible | Hugging Face | No disponible en la información proporcionada |
+| roberta-base | ~125 M | 512 tokens | Modelo base, sin cabezas ajustadas | MIT | Hugging Face | No aplica (requiere ajuste fino) |
 
 La comparación directa es limitada porque no se han localizado métricas de los modelos alternativos dentro de la información disponible y porque el eje de vaguedad no existe en los clasificadores de sentimiento convencionales. Las alternativas de la tabla son comparables en tamaño o en tarea, pero solo BetterLens ofrece la doble salida en una sola pasada.
 
@@ -129,7 +129,7 @@ La comparación directa es limitada porque no se han localizado métricas de los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/starmatrixtechnologies/betterlens-text-classifier
+- Modelo en Hugging Face: https://huggingface.co/starmatrixtechnologies/betterlens-text-classifier
 - Demo en navegador (ONNX Runtime Web, con carga de CSV por lotes): https://huggingface.co/spaces/starmatrixtechnologies/betterlens-text-classifier-demo
 - Export ONNX: https://huggingface.co/starmatrixtechnologies/betterlens-text-classifier/blob/main/onnx/model.onnx
 - Pesos safetensors: https://huggingface.co/starmatrixtechnologies/betterlens-text-classifier/blob/main/model.safetensors

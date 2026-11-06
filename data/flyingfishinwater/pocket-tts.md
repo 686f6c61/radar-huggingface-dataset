@@ -23,7 +23,7 @@ Ahora bien, la información disponible es mínima: la model card se limita a ind
 | Modelo base | kyutai/pocket-tts |
 | Naturaleza del repositorio | conversión de formato (finetune/convert), no entrenamiento desde cero |
 | Tamaño del repositorio | 0,2 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación (metadatos HF) | 2026-09-18 |
 
@@ -98,7 +98,7 @@ Los datos de esta tabla proceden de referencias públicas generales sobre cada m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flyingfishinwater/pocket-tts
+- Modelo en Hugging Face: https://huggingface.co/flyingfishinwater/pocket-tts
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Librería de destino: https://github.com/Blaizzy/mlx-audio
 - Licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/

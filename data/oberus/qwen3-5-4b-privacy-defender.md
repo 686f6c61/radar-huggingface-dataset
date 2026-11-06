@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `oberus/qwen3.5-4b-privacy-defender` es un repositorio publicado en HuggingFace por el usuario `oberus` bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card util: el README se limita a la declaracion de licencia (`license: apache-2.0`), sin documentacion tecnica, descripcion de capacidades, datos de entrenamiento ni ejemplos de uso. El registro presenta 0 descargas y 1 "like", y las fechas de creacion y actualizacion (12 de septiembre de 2026) son identicas, lo que sugiere una publicacion sin iteraciones posteriores.
+El modelo identificado como `oberus/qwen3.5-4b-privacy-defender` es un repositorio publicado en Hugging Face por el usuario `oberus` bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card util: el README se limita a la declaracion de licencia (`license: apache-2.0`), sin documentacion tecnica, descripcion de capacidades, datos de entrenamiento ni ejemplos de uso. El registro presenta 0 descargas y 1 "like", y las fechas de creacion y actualizacion (12 de septiembre de 2026) son identicas, lo que sugiere una publicacion sin iteraciones posteriores.
 
 El propio identificador del modelo sugiere que se trata de un ajuste fino (fine-tuning) de un modelo de la familia Qwen 3.5 con aproximadamente 4.000 millones de parametros, orientado a tareas relacionadas con la privacidad, segun el sufijo "privacy-defender". Sin embargo, esta interpretacion procede unicamente de la nomenclatura del repositorio y no esta confirmada por ninguna fuente: ni el autor ni la model card aportan evidencia al respecto. No se dispone de informacion sobre arquitectura, contexto, idiomas o proceso de entrenamiento.
 
@@ -92,7 +92,7 @@ La unica dimension en la que este repositorio es equiparable a los anteriores es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oberus/qwen3.5-4b-privacy-defender
+- Hugging Face: https://huggingface.co/oberus/qwen3.5-4b-privacy-defender
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

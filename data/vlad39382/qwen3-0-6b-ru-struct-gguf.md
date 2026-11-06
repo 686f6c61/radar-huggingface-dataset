@@ -96,7 +96,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vlad39382/qwen3-0.6b-ru-struct-gguf
+- Modelo en Hugging Face: https://huggingface.co/Vlad39382/qwen3-0.6b-ru-struct-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - ADR-0019 sobre el enfoque de extraccion estructurada: referenciado por el autor en el repositorio del proyecto, sin URL disponible en la informacion proporcionada.
 - Informe #193 con la evaluacion sobre ejemplos manuales: referenciado por el autor, sin URL disponible en la informacion proporcionada.

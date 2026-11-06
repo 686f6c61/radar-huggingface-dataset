@@ -19,7 +19,7 @@ Su relevancia es acotada y de perfil investigador: el repositorio acumulaba 0 de
 | Tipos de cuantizacion | El modelo base distribuye los expertos en MXFP4 según su documentación; este repositorio no declara cuantizaciones propias |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible en el repositorio (el modelo base `openai/gpt-oss-120b` se publica bajo Apache 2.0) |
-| Formato de pesos | safetensors (0,3 GB) con nomenclatura fusionada de vLLM; no cargable con `peft` de HuggingFace |
+| Formato de pesos | safetensors (0,3 GB) con nomenclatura fusionada de vLLM; no cargable con `peft` de Hugging Face |
 | Modelo base | `openai/gpt-oss-120b` |
 | Modulos objetivo del LoRA | `mlp.experts.<E>.{gate,up,down}_proj` por experto; el LoRA de rango 1 sobre `lm_head` se descarta en este build |
 | Rango del adaptador | 1 (`--max-lora-rank 1`) |
@@ -96,7 +96,7 @@ Otros adaptadores de eliminación de rechazo sobre `gpt-oss-120b` de terceros: n
 
 - El adaptador está diseñado explícitamente para aumentar la conformidad con peticiones dañinas: pasa del 2,5 % al 85,6 % de cumplimiento sobre 610 prompts retenidos. No debe desplegarse en aplicaciones orientadas al público, en asistentes de atención al cliente ni en ningún flujo sin guardrails externos independientes del modelo.
 - La licencia no está declarada en el repositorio. Aunque el modelo base es Apache 2.0, la ausencia de licencia en el adaptador genera incertidumbre jurídica para cualquier uso, comercial o no.
-- No es cargable con `peft` de HuggingFace: la nomenclatura fusionada es una convención de vLLM. Para entrenamiento, mezcla o conversión a GGUF hay que usar el artefacto canónico `shomit505/gpt-oss-120b-refusal-r1`, y los pesos resultantes no serán idénticos a este build.
+- No es cargable con `peft` de Hugging Face: la nomenclatura fusionada es una convención de vLLM. Para entrenamiento, mezcla o conversión a GGUF hay que usar el artefacto canónico `shomit505/gpt-oss-120b-refusal-r1`, y los pesos resultantes no serán idénticos a este build.
 - El LoRA de `lm_head` se descarta, de modo que este build diverge ligeramente del adaptador original (máx. |ΔW| ≈ 0,0017 por logit).
 - Riesgo de alucinación: no evaluado. Al eliminarse la negativa a responder, el modelo puede generar contenido plausible pero falso sobre temas sensibles sin señal de abstención.
 - Desplazamiento de distribución: KL de 0,0199 nats/token sobre 100 prompts inofensivos, bajo pero no nulo; se desconoce su efecto sobre tareas de razonamiento, código o matemáticas.
@@ -108,7 +108,7 @@ Otros adaptadores de eliminación de rechazo sobre `gpt-oss-120b` de terceros: n
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/noahrossi/gpt-oss-120b-refusal-r1-vllm
+- Adaptador en Hugging Face: https://huggingface.co/noahrossi/gpt-oss-120b-refusal-r1-vllm
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Adaptador PEFT canónico: https://huggingface.co/shomit505/gpt-oss-120b-refusal-r1
 - Búsqueda web: los resultados devueltos no contienen enlaces relevantes al modelo (únicamente páginas corporativas de Microsoft), por lo que no se incluye ningún enlace adicional.

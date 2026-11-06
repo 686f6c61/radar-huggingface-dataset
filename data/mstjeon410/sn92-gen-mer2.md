@@ -2,11 +2,11 @@
 
 ## Resumen
 
-sn92-gen-mer2 es un fine-tune del modelo base baselabs/mammoth-1, publicado por el usuario MstJeon410 en HuggingFace. Se presenta como una entrada "generalista" (SN92 generalist entry) dentro de lo que el autor denomina modelos de decisión (decision-model), y utiliza el layout de lectura conjunta REAX, que combina un backbone Qwen3_5Model con una cabeza de lectura (readout head) adicional. El modelo tiene 26.085.330.160 parámetros (aproximadamente 26.000 millones) y un tamaño de repositorio de 52,2 GB en formato safetensors.
+sn92-gen-mer2 es un fine-tune del modelo base baselabs/mammoth-1, publicado por el usuario MstJeon410 en Hugging Face. Se presenta como una entrada "generalista" (SN92 generalist entry) dentro de lo que el autor denomina modelos de decisión (decision-model), y utiliza el layout de lectura conjunta REAX, que combina un backbone Qwen3_5Model con una cabeza de lectura (readout head) adicional. El modelo tiene 26.085.330.160 parámetros (aproximadamente 26.000 millones) y un tamaño de repositorio de 52,2 GB en formato safetensors.
 
 La relevancia de este modelo es limitada y muy específica: se trata de un fine-tune reciente (octubre de 2026) con solo 22 descargas y ningún "like", sin model card detallada más allá de una nota breve que remite a los archivos MODIFICATIONS.md, NOTICE y LICENSE del repositorio. No se documentan datos de entrenamiento, benchmarks ni idiomas soportados. La licencia es MIT, lo que facilita su reutilización, pero la ausencia de documentación técnica hace que cualquier evaluación rigurosa requiera inspeccionar directamente los archivos del repositorio.
 
-Por tanto, esta ficha se basa únicamente en los metadatos disponibles en HuggingFace y en la información del modelo base, y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado.
+Por tanto, esta ficha se basa únicamente en los metadatos disponibles en Hugging Face y en la información del modelo base, y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado.
 
 ## Especificaciones tecnicas
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sn92-gen-mer2 | 26,1 mil millones | no disponible | MIT | HuggingFace (22 descargas) | Fine-tune de mammoth-1 con layout REAX |
-| baselabs/mammoth-1 | no disponible | no disponible | no disponible | HuggingFace (modelo base) | Modelo base del fine-tune |
-| Qwen3.5 (familia) | no disponible | no disponible | no disponible | HuggingFace | Backbone declarado del layout |
+| sn92-gen-mer2 | 26,1 mil millones | no disponible | MIT | Hugging Face (22 descargas) | Fine-tune de mammoth-1 con layout REAX |
+| baselabs/mammoth-1 | no disponible | no disponible | no disponible | Hugging Face (modelo base) | Modelo base del fine-tune |
+| Qwen3.5 (familia) | no disponible | no disponible | no disponible | Hugging Face | Backbone declarado del layout |
 
 No se dispone de datos de rendimiento para comparar; la comparativa se limita a parámetros, licencia y disponibilidad. No se conocen alternativas directas con el mismo layout REAX.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento para comparar; la comparativa se limita a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MstJeon410/sn92-gen-mer2
+- Modelo en Hugging Face: https://huggingface.co/MstJeon410/sn92-gen-mer2
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Commit del modelo base referenciado: 61cec44c281c693992e3d6ebeb44dd3402dfa186 (en el repositorio de baselabs/mammoth-1)
-- Archivos del repositorio a revisar: MODIFICATIONS.md, NOTICE, LICENSE (disponibles en la raíz del repositorio de HuggingFace)
+- Archivos del repositorio a revisar: MODIFICATIONS.md, NOTICE, LICENSE (disponibles en la raíz del repositorio de Hugging Face)

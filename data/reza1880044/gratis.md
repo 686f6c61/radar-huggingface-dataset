@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Reza1880044/Gratis` es un repositorio alojado en HuggingFace por el usuario Reza1880044, publicado bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso: unicamente incluye la declaracion de licencia. No hay informacion sobre el pipeline de la tarea, los idiomas soportados ni los formatos de pesos.
+`Reza1880044/Gratis` es un repositorio alojado en Hugging Face por el usuario Reza1880044, publicado bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso: unicamente incluye la declaracion de licencia. No hay informacion sobre el pipeline de la tarea, los idiomas soportados ni los formatos de pesos.
 
 A fecha de la informacion disponible, el repositorio registra 0 descargas y 0 likes, lo que sugiere que no ha sido adoptado por la comunidad ni validado externamente. No se dispone de resultados de benchmarks, demos, papers ni documentacion complementaria que permitan evaluar sus capacidades reales.
 
@@ -34,7 +34,7 @@ Tampoco se documentan innovaciones tecnicas como atencion lineal, decodificacion
 - No consta soporte de agentes ni razonamiento multi-paso.
 - No consta capacidad multilingue declarada.
 - No consta modo de razonamiento (thinking mode), vision, audio ni ninguna modalidad adicional.
-- No se ha publicado pipeline de HuggingFace asociado, por lo que ni siquiera la tarea principal (text-generation, text-classification, etc.) esta identificada.
+- No se ha publicado pipeline de Hugging Face asociado, por lo que ni siquiera la tarea principal (text-generation, text-classification, etc.) esta identificada.
 
 ## Casos de uso
 
@@ -71,4 +71,4 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Reza1880044/Gratis
+- Repositorio en Hugging Face: https://huggingface.co/Reza1880044/Gratis

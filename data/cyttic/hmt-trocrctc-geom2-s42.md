@@ -87,12 +87,12 @@ No se dispone de datos de benchmarks de los modelos alternativos en la informaci
 - No se documentan sesgos demográficos ni de escritor; el conjunto excluye escritores de desarrollo, lo que puede afectar a la generalización a nuevos escritores.
 - Licencia MIT, que permite uso comercial y modificación, pero sin garantías del autor.
 - No es un modelo de lenguaje: no admite prompts conversacionales, tool calling ni razonamiento; cualquier uso fuera de HTR no está soportado.
-- Sin pipeline declarado en HuggingFace, la integración requiere cargar los pesos manualmente y conocer la arquitectura exacta.
+- Sin pipeline declarado en Hugging Face, la integración requiere cargar los pesos manualmente y conocer la arquitectura exacta.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de validación externa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-trocrctc-geom2-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-trocrctc-geom2-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split (referenciado en la model card)
 - Resultados detallados: `results.json` en el repositorio del modelo
 - Paper de TrOCR (arquitectura base): https://arxiv.org/abs/2109.10282 (referencia general, no específica de este modelo)

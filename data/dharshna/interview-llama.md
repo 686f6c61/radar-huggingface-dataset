@@ -4,7 +4,7 @@
 
 El modelo `Dharshna/interview-llama` es un ajuste fino (fine-tune) del modelo base `unsloth/llama-3-8b-Instruct-bnb-4bit`, desarrollado por Dharshna. Está orientado a tareas de generación de texto conversacional e instructivo, probablemente especializado en entrevistas (por el nombre), aunque la model card no detalla el dataset de entrenamiento. Se distribuye bajo licencia Apache-2.0 y está pensado para su uso con la librería Transformers y text-generation-inference.
 
-El modelo tiene 8.030.261.248 parámetros (aproximadamente 8B), lo que lo sitúa en la gama de modelos de tamaño medio. Fue entrenado con la librería Unsloth, que acelera el fine-tuning, y con TRL de HuggingFace. No se especifica la longitud de contexto, pero al derivar de Llama-3-8B, es probable que herede los 8.192 tokens de contexto de la familia Llama-3, aunque este dato no está confirmado en la información disponible.
+El modelo tiene 8.030.261.248 parámetros (aproximadamente 8B), lo que lo sitúa en la gama de modelos de tamaño medio. Fue entrenado con la librería Unsloth, que acelera el fine-tuning, y con TRL de Hugging Face. No se especifica la longitud de contexto, pero al derivar de Llama-3-8B, es probable que herede los 8.192 tokens de contexto de la familia Llama-3, aunque este dato no está confirmado en la información disponible.
 
 La relevancia de este modelo radica en su naturaleza de fine-tune accesible y ligero, ideal para desarrolladores que buscan un modelo instructivo en inglés con una licencia permisiva. Sin embargo, al no publicarse métricas de rendimiento ni detalles del dataset, su utilidad práctica debe evaluarse de forma empírica.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su naturaleza de fine-tune accesible y li
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Llama-3-8B, un transformer decoder-only con atención causal. El fine-tune se realizó a partir de `unsloth/llama-3-8b-Instruct-bnb-4bit`, que es una versión cuantizada a 4 bits del modelo instructivo original, optimizada para entrenamiento eficiente con Unsloth. El proceso de entrenamiento utilizó la librería TRL de HuggingFace, que facilita el ajuste con técnicas como SFT (Supervised Fine-Tuning) o DPO, aunque no se especifica cuál se empleó.
+El modelo se basa en la arquitectura Llama-3-8B, un transformer decoder-only con atención causal. El fine-tune se realizó a partir de `unsloth/llama-3-8b-Instruct-bnb-4bit`, que es una versión cuantizada a 4 bits del modelo instructivo original, optimizada para entrenamiento eficiente con Unsloth. El proceso de entrenamiento utilizó la librería TRL de Hugging Face, que facilita el ajuste con técnicas como SFT (Supervised Fine-Tuning) o DPO, aunque no se especifica cuál se empleó.
 
 No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación adicionales (RLHF, DPO). El autor solo indica que el entrenamiento fue 2 veces más rápido gracias a Unsloth. Tampoco se detallan innovaciones técnicas específicas más allá del uso de cuantización 4-bit durante el entrenamiento.
 
@@ -77,6 +77,6 @@ La comparativa se basa en características generales, ya que no hay datos de ren
 
 ## Enlaces
 
-- [HuggingFace - Dharshna/interview-llama](https://huggingface.co/Dharshna/interview-llama)
+- [Hugging Face - Dharshna/interview-llama](https://huggingface.co/Dharshna/interview-llama)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)
 - [Modelo base: unsloth/llama-3-8b-Instruct-bnb-4bit](https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit)

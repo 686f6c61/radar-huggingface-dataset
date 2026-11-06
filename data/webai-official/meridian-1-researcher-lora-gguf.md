@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks comparativos con modelos alternativos de la
 
 ## Enlaces
 
-- HuggingFace (adaptador GGUF): https://huggingface.co/webAI-Official/Meridian-1-researcher-lora-GGUF
+- Hugging Face (adaptador GGUF): https://huggingface.co/webAI-Official/Meridian-1-researcher-lora-GGUF
 - Modelo base Meridian-1: https://huggingface.co/webAI-Official/Meridian-1
 - Version PEFT del adaptador: https://huggingface.co/webAI-Official/Meridian-1-researcher-lora-peft
 - Adaptador original sobre gemma-4-12B-it: https://huggingface.co/webAI-Official/gemma-4-12b-it-researcher-lora-peft

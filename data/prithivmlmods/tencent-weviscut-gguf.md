@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| WeVisCut (Tencent) | ~9B | Agente de edicion de video con 12 herramientas | Apache-2.0 (runtime); pesos `other` | GGUF y safetensors en HuggingFace |
-| Qwen3.5-9B (base) | ~9B | Modelo multimodal generalista | no disponible | HuggingFace |
+| WeVisCut (Tencent) | ~9B | Agente de edicion de video con 12 herramientas | Apache-2.0 (runtime); pesos `other` | GGUF y safetensors en Hugging Face |
+| Qwen3.5-9B (base) | ~9B | Modelo multimodal generalista | no disponible | Hugging Face |
 | Alternativas de edicion de video agenticas | no disponible | no disponible | no disponible | no disponible |
 
 No se conocen alternativas directas publicadas de agentes de edicion de video de tamano comparable; la mayoria de modelos de video (Sora, CogVideo, HunyuanVideo) generan clips directamente en lugar de orquestar flujos de edicion con herramientas, lo que hace a WeVisCut una categoria propia.

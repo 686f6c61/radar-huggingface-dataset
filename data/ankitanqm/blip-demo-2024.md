@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ankitanqm/blip-demo-2024` es un repositorio de demostración que contiene una implementación propia de la arquitectura BLIP (Bootstrapping Language-Image Pre-training) en configuración "small", orientada a tareas multitarea. Lo publica el usuario `ankitanqm` en HuggingFace y su propósito declarado no es ofrecer un modelo utilizable, sino servir como esqueleto de código transparente y reproducible para pruebas de humo (smoke tests) y como punto de partida experimental.
+`ankitanqm/blip-demo-2024` es un repositorio de demostración que contiene una implementación propia de la arquitectura BLIP (Bootstrapping Language-Image Pre-training) en configuración "small", orientada a tareas multitarea. Lo publica el usuario `ankitanqm` en Hugging Face y su propósito declarado no es ofrecer un modelo utilizable, sino servir como esqueleto de código transparente y reproducible para pruebas de humo (smoke tests) y como punto de partida experimental.
 
 El dato más relevante para cualquier evaluador es que el fichero `model.safetensors` es únicamente un checkpoint de inicialización, no un modelo entrenado: la propia model card indica que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido auditado en robustez, equidad ni transferencia de dominio. El recuento real de parámetros en safetensors es de 49.600, un orden de magnitud muy inferior al de cualquier BLIP funcional, lo que confirma que se trata de un stub de depuración y no de un modelo de visión-lenguaje operativo.
 
@@ -62,16 +62,16 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Cabe en GPU de consumo: sí, en todas las gamas, y también en dispositivos de borde tipo Raspberry Pi.
 - Opciones de despliegue: PyTorch con el script propio `eval.py` y un adaptador explícito para la carga; no se proporcionan pesos en GGUF, no hay soporte declarado para vLLM, TGI, Ollama ni llama.cpp.
 - Latencia y throughput estimados: no disponibles. Dado el tamaño, la latencia estaría dominada por el overhead de Python y del framework, no por el cómputo del modelo.
-- Almacenamiento: el repositorio ocupa 0,0 GB según los metadatos de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB según los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ankitanqm/blip-demo-2024 | 49.600 | no disponible | Sin benchmarks; checkpoint sin entrenar | BSD-3-Clause | HuggingFace, 0 descargas |
-| Salesforce BLIP (image captioning / VQA) | no disponible en la información proporcionada | no disponible | Publica resultados en COCO y VQA en su documentación original | BSD-3-Clause (según su repositorio original) | HuggingFace, ampliamente descargado |
-| Salesforce BLIP-2 | no disponible en la información proporcionada | no disponible | Publica resultados en VQA, captioning y retrieval | BSD-3-Clause (según su repositorio original) | HuggingFace |
-| GIT (GenerativeImage2Text, Microsoft) | no disponible en la información proporcionada | no disponible | Publica resultados en captioning y VQA | MIT (según su repositorio original) | HuggingFace |
+| ankitanqm/blip-demo-2024 | 49.600 | no disponible | Sin benchmarks; checkpoint sin entrenar | BSD-3-Clause | Hugging Face, 0 descargas |
+| Salesforce BLIP (image captioning / VQA) | no disponible en la información proporcionada | no disponible | Publica resultados en COCO y VQA en su documentación original | BSD-3-Clause (según su repositorio original) | Hugging Face, ampliamente descargado |
+| Salesforce BLIP-2 | no disponible en la información proporcionada | no disponible | Publica resultados en VQA, captioning y retrieval | BSD-3-Clause (según su repositorio original) | Hugging Face |
+| GIT (GenerativeImage2Text, Microsoft) | no disponible en la información proporcionada | no disponible | Publica resultados en captioning y VQA | MIT (según su repositorio original) | Hugging Face |
 
 La comparación es estructural: los tres modelos alternativos son sistemas entrenados y evaluados, mientras que este repositorio es un esqueleto de código con un checkpoint de inicialización de 49.600 parámetros. No se dispone de cifras verificadas de parámetros ni de contexto para las alternativas dentro de la información proporcionada.
 
@@ -89,5 +89,5 @@ La comparación es estructural: los tres modelos alternativos son sistemas entre
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ankitanqm/blip-demo-2024
+- Repositorio en Hugging Face: https://huggingface.co/ankitanqm/blip-demo-2024
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo. Los resultados devueltos corresponden a documentación de Microsoft 365 eDiscovery (blog.intermedia.com, learn.microsoft.com, safelinkhub.com, key-discovery.com) y no guardan relación con BLIP ni con el repositorio. No se dispone de paper, blog técnico, repositorio de código ni demo asociados a `ankitanqm/blip-demo-2024` en la información proporcionada.

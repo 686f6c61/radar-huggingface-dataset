@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CodeWithAhsan/whisper-medium-urdu-ggml
+- Repositorio Hugging Face: https://huggingface.co/CodeWithAhsan/whisper-medium-urdu-ggml
 - Modelo base (fine-tune original): https://huggingface.co/Abdul145/whisper-medium-urdu-custom
 - Repositorio whisper.cpp: https://github.com/ggml-org/whisper.cpp
 - Herramienta ossclip: https://github.com/CodeWithAhsan/ossclip

@@ -69,8 +69,8 @@ No se dispone de modelos directamente comparables dentro del mismo estudio "deme
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/dementor-research/dpo_chatbot_arena_nemotron-nano-30b-a3b_as_granite-4-h-small_seed42
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
+- Repositorio Hugging Face del adaptador: https://huggingface.co/dementor-research/dpo_chatbot_arena_nemotron-nano-30b-a3b_as_granite-4-h-small_seed42
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Adaptador similar (Gemma 4 E4B como maestro): https://huggingface.co/dementor-research/dpo_chatbot_arena_nemotron-nano-30b-a3b_as_gemma-4-e4b_seed42
 - Adaptador inverso (Nemotron como maestro): https://huggingface.co/dementor-research/dpo_chatbot_arena_gemma-4-e4b_as_nemotron-nano-30b-a3b_seed42
 - GitHub de NVIDIA Nemotron: https://github.com/NVIDIA-NeMo/Nemotron

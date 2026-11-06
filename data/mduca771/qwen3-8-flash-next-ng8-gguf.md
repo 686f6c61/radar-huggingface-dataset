@@ -107,7 +107,7 @@ La diferencia entre las dos variantes publicadas es de 8,03 GB: UD-Q3_K_XL-NG8 o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mduca771/Qwen3.8-Flash-Next-NG8-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mduca771/Qwen3.8-Flash-Next-NG8-GGUF
 - Quants de origen (Unsloth): https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Modelo base (Qwen): https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

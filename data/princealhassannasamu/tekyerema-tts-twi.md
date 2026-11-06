@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tekyerema-tts-twi` es un sistema de síntesis de voz (text-to-speech) para el idioma twi, una lengua kwa hablada principalmente en Ghana por más de ocho millones de personas. Ha sido desarrollado por Prince Nasamu Alhassan, investigador asociado a la iniciativa GhanaNLP, y publicado en HuggingFace con el identificador `PrinceAlhassanNasamu/tekyerema-tts-twi`. El modelo emplea la arquitectura VITS (Variational Inference with adversarial Training for end-to-end Text-to-Speech), tal como indican las etiquetas del repositorio, y está disponible en formato safetensors con un total de 36.289.776 parámetros, lo que lo convierte en un modelo ligero y desplegable en entornos con recursos limitados.
+El modelo `tekyerema-tts-twi` es un sistema de síntesis de voz (text-to-speech) para el idioma twi, una lengua kwa hablada principalmente en Ghana por más de ocho millones de personas. Ha sido desarrollado por Prince Nasamu Alhassan, investigador asociado a la iniciativa GhanaNLP, y publicado en Hugging Face con el identificador `PrinceAlhassanNasamu/tekyerema-tts-twi`. El modelo emplea la arquitectura VITS (Variational Inference with adversarial Training for end-to-end Text-to-Speech), tal como indican las etiquetas del repositorio, y está disponible en formato safetensors con un total de 36.289.776 parámetros, lo que lo convierte en un modelo ligero y desplegable en entornos con recursos limitados.
 
 La relevancia de este modelo radica en la escasez de recursos de síntesis de voz para lenguas africanas de bajo recurso como el twi. A diferencia de los grandes modelos multilingües que suelen ignorar estas lenguas, `tekyerema-tts-twi` ofrece una solución específica y de código abierto, aunque su ficha técnica es muy incompleta: no se especifica licencia, idiomas soportados más allá del twi, ni datos de entrenamiento. El autor también ha publicado un modelo similar para el kusaal, lo que sugiere una línea de trabajo orientada a la preservación lingüística mediante herramientas de IA.
 
@@ -30,8 +30,8 @@ En el caso de `tekyerema-tts-twi`, no se dispone de información pública sobre 
 - Síntesis de voz en twi: genera audio hablado a partir de texto en esta lengua, lo que cubre una necesidad no atendida por los grandes proveedores comerciales de TTS.
 - Conversión texto-audio de extremo a extremo: al usar VITS, no requiere módulos separados de síntesis de espectrograma y vocoder.
 - Inferencia ligera: con solo 36 millones de parámetros, el modelo puede ejecutarse en CPU y en hardware de gama baja.
-- Integración con el ecosistema de HuggingFace: compatible con la librería `transformers` y con el pipeline `text-to-audio`, lo que facilita su uso en aplicaciones Python.
-- Compatible con endpoints de HuggingFace (etiqueta `endpoints_compatible`), permitiendo su despliegue como servicio HTTP.
+- Integración con el ecosistema de Hugging Face: compatible con la librería `transformers` y con el pipeline `text-to-audio`, lo que facilita su uso en aplicaciones Python.
+- Compatible con endpoints de Hugging Face (etiqueta `endpoints_compatible`), permitiendo su despliegue como servicio HTTP.
 
 No se han documentado capacidades adicionales como control de emociones, habla multilingüe o clonación de voz.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada: al tratarse de un modelo de 36 millones de parámetros, la inferencia en GPU requiere menos de 1 GB de VRAM en precisión fp32 (aproximadamente 145 MB de pesos). En CPU, el consumo de memoria RAM es similar.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente, incluyendo NVIDIA GTX 1050 Ti, RTX 2060, o incluso integradas como Intel Iris Xe. Para despliegue en producción, una T4 o A10 de NVIDIA ofrece margen para procesamiento por lotes.
 - Compatibilidad con hardware de consumo: sí, el modelo cabe sin problemas en cualquier ordenador personal con 4 GB de RAM o más. También es viable en Raspberry Pi 4 o 5 para aplicaciones embebidas, aunque la latencia será mayor en CPU.
-- Opciones de despliegue: al ser compatible con `transformers`, puede servirse mediante HuggingFace Inference Endpoints, o con herramientas como FastAPI + PyTorch. También es posible exportar a ONNX para optimizar en CPU. No se ha confirmado soporte para vLLM, llama.cpp u Ollama, que están orientados a modelos de lenguaje, no a TTS.
+- Opciones de despliegue: al ser compatible con `transformers`, puede servirse mediante Hugging Face Inference Endpoints, o con herramientas como FastAPI + PyTorch. También es posible exportar a ONNX para optimizar en CPU. No se ha confirmado soporte para vLLM, llama.cpp u Ollama, que están orientados a modelos de lenguaje, no a TTS.
 - Latencia y throughput: sin datos publicados. En una GPU moderna (RTX 3090), un modelo VITS de este tamaño suele generar audio más rápido que en tiempo real (por ejemplo, un clip de 5 segundos se sintetiza en menos de 1 segundo), pero estos valores son estimaciones generales, no mediciones específicas de este modelo.
 
 ## Comparativa con modelos similares
@@ -78,8 +78,8 @@ No se dispone de modelos TTS comerciales o de código abierto ampliamente adopta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PrinceAlhassanNasamu/tekyerema-tts-twi
-- Perfil del autor en HuggingFace: https://huggingface.co/PrinceAlhassanNasamu
+- Repositorio Hugging Face: https://huggingface.co/PrinceAlhassanNasamu/tekyerema-tts-twi
+- Perfil del autor en Hugging Face: https://huggingface.co/PrinceAlhassanNasamu
 - Modelo hermano para kusaal: https://huggingface.co/PrinceAlhassanNasamu/tekyerema-tts-kus
 - Artículo sobre el despliegue de modelos TTS de Meta para twi: https://aichina.news/blog/metas-twi-tts-model-lands-on-modelers-cn-a-useful-building-block-for-iskpmn/
 - Perfil del autor en EGA Mentorship: https://www.egamentorship.org/in/prince-nasamu-alhassan-8c8713

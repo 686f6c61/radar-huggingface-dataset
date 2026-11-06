@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks especificos de este checkpoint (Cos
 | Modelo | Parametros | Idiomas | CER test-zh (%) | Similitud test-zh (%) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | CosyVoice-300M-Instruct (este repo) | ~300 M | 9 declarados | No disponible | No disponible | Apache 2.0 | ONNX, espejo de terceros |
-| CosyVoice2-0.5B | 0,5 B | No detallado en la informacion | 1,45 | 75,7 | No detallado en la informacion | HuggingFace y ModelScope oficiales |
+| CosyVoice2-0.5B | 0,5 B | No detallado en la informacion | 1,45 | 75,7 | No detallado en la informacion | Hugging Face y ModelScope oficiales |
 | F5-TTS | 0,3 B | No detallado en la informacion | 1,52 | 74,1 | No disponible | Open source |
 | Spark TTS | 0,5 B | No detallado en la informacion | 1,2 | 66,0 | No disponible | Open source |
 | VibeVoice-Realtime | 0,5 B | No detallado en la informacion | - | - | No disponible | Open source |
@@ -110,13 +110,13 @@ Los valores de CER y similitud proceden de la tabla de evaluacion de Fun-CosyVoi
 
 ## Enlaces
 
-- Repositorio en HuggingFace de este checkpoint: https://huggingface.co/Allinsama/FunAudioLLM__CosyVoice-300M-Instruct
+- Repositorio en Hugging Face de este checkpoint: https://huggingface.co/Allinsama/FunAudioLLM__CosyVoice-300M-Instruct
 - Repositorio GitHub oficial: https://github.com/FunAudioLLM/CosyVoice
-- CosyVoice-300M-Instruct oficial en HuggingFace: https://huggingface.co/FunAudioLLM/CosyVoice-300M-Instruct
+- CosyVoice-300M-Instruct oficial en Hugging Face: https://huggingface.co/FunAudioLLM/CosyVoice-300M-Instruct
 - CosyVoice-300M oficial en ModelScope: https://www.modelscope.cn/models/iic/CosyVoice-300M
 - Paper CosyVoice (v1): https://funaudiollm.github.io/pdf/CosyVoice_v1.pdf
 - Demos CosyVoice 1.0: https://fun-audio-llm.github.io
-- CosyVoice 2.0: demos https://funaudiollm.github.io/cosyvoice2/ ; paper https://arxiv.org/abs/2412.10117 ; HuggingFace https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B ; ModelScope https://www.modelscope.cn/models/iic/CosyVoice2-0.5B
-- Fun-CosyVoice 3.0: demos https://funaudiollm.github.io/cosyvoice3/ ; paper https://arxiv.org/abs/2505.17589 ; HuggingFace https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512 ; ModelScope https://www.modelscope.cn/models/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
+- CosyVoice 2.0: demos https://funaudiollm.github.io/cosyvoice2/ ; paper https://arxiv.org/abs/2412.10117 ; Hugging Face https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B ; ModelScope https://www.modelscope.cn/models/iic/CosyVoice2-0.5B
+- Fun-CosyVoice 3.0: demos https://funaudiollm.github.io/cosyvoice3/ ; paper https://arxiv.org/abs/2505.17589 ; Hugging Face https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512 ; ModelScope https://www.modelscope.cn/models/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
 - Conjunto de evaluacion CV3-Eval: https://github.com/FunAudioLLM/CV3-Eval
 - Paper de referencia adicional citado en los tags: https://arxiv.org/abs/2407.05407

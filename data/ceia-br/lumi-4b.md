@@ -93,6 +93,6 @@ La comparación cuantitativa directa en benchmarks PT no es posible: los autores
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ceia-br/lumi-4b
+- Repositorio en Hugging Face: https://huggingface.co/ceia-br/lumi-4b
 - Organización del autor: https://huggingface.co/ceia-br
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

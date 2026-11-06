@@ -66,7 +66,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- [HuggingFace - woosw123/Pi0_Stationary_Cube_fixed_instructed_260824-1511](https://huggingface.co/woosw123/Pi0_Stationary_Cube_fixed_instructed_260824-1511)
+- [Hugging Face - woosw123/Pi0_Stationary_Cube_fixed_instructed_260824-1511](https://huggingface.co/woosw123/Pi0_Stationary_Cube_fixed_instructed_260824-1511)
 - [Dataset de entrenamiento - woosw123/Pi0_Stationary_Cube_fixed](https://huggingface.co/datasets/woosw123/Pi0_Stationary_Cube_fixed)
 - [Blog de Physical Intelligence sobre Pi0](https://www.physicalintelligence.company/blog/pi0)
 - [Documentación de LeRobot](https://huggingface.co/docs/lerobot/index)

@@ -82,7 +82,7 @@ La comparativa se basa en características declaradas; no hay datos de rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jedisct1/Qwen3.8-Flash-Next-oQ4e-MTP-128k
+- Modelo en Hugging Face: https://huggingface.co/jedisct1/Qwen3.8-Flash-Next-oQ4e-MTP-128k
 - Modelo base (FP8): https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
 - Repositorio oficial de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Repositorio de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8

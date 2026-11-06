@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`microtensor-io/ctx_compress-b0bd36e4` es un fine-tuning del modelo base `ibm-granite/granite-4.0-h-micro` publicado por el usuario `microtensor-io` en HuggingFace. Se trata de un modelo derivado de la familia Granite 4.0 Hybrid de IBM, identificado por el tag `granitemoehybrid`, lo que indica una arquitectura híbrida con componentes de mezcla de expertos. El nombre del repositorio (`ctx_compress`) sugiere que el ajuste fino está orientado a tareas de compresión o condensación de contexto, aunque no se dispone de documentación adicional que lo confirme.
+`microtensor-io/ctx_compress-b0bd36e4` es un fine-tuning del modelo base `ibm-granite/granite-4.0-h-micro` publicado por el usuario `microtensor-io` en Hugging Face. Se trata de un modelo derivado de la familia Granite 4.0 Hybrid de IBM, identificado por el tag `granitemoehybrid`, lo que indica una arquitectura híbrida con componentes de mezcla de expertos. El nombre del repositorio (`ctx_compress`) sugiere que el ajuste fino está orientado a tareas de compresión o condensación de contexto, aunque no se dispone de documentación adicional que lo confirme.
 
 El modelo cuenta con 3.191.396.096 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de modelos pequeños (aproximadamente 3,2 mil millones de parámetros). El repositorio ocupa 6,4 GB, coherente con pesos en precisión de 16 bits. La licencia es Apache 2.0, heredada del modelo base de IBM, lo que permite uso comercial sin restricciones adicionales más allá de las atribuciones habituales.
 
-Su relevancia es limitada en el momento de la publicación: cero descargas y cero likes, y el acceso está restringido (gated), requiriendo aceptar condiciones en HuggingFace. No se dispone de información sobre el pipeline, los idiomas soportados ni los datos de entrenamiento del ajuste fino. Es, por tanto, un artefacto experimental o de investigación interna más que un modelo listo para producción.
+Su relevancia es limitada en el momento de la publicación: cero descargas y cero likes, y el acceso está restringido (gated), requiriendo aceptar condiciones en Hugging Face. No se dispone de información sobre el pipeline, los idiomas soportados ni los datos de entrenamiento del ajuste fino. Es, por tanto, un artefacto experimental o de investigación interna más que un modelo listo para producción.
 
 ## Especificaciones técnicas
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | microtensor-io/ctx_compress-b0bd36e4 | 3,19 B | no disponible | Apache 2.0 | Gated, 0 descargas |
-| ibm-granite/granite-4.0-h-micro (base) | ~3 B (micro) | no disponible en esta ficha | Apache 2.0 | Público en HuggingFace |
+| ibm-granite/granite-4.0-h-micro (base) | ~3 B (micro) | no disponible en esta ficha | Apache 2.0 | Público en Hugging Face |
 | Qwen2.5-3B | 3,09 B | 32.768 tokens (versión base) | Apache 2.0 | Público, ampliamente utilizado |
 | Llama-3.2-3B | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Público, requiere aceptación |
 
@@ -72,7 +72,7 @@ La comparación con Qwen2.5-3B y Llama-3.2-3B es orientativa por tamaño; no se 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso automatizado o en entornos corporativos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso automatizado o en entornos corporativos.
 - Sin documentación: no hay model card con detalles de entrenamiento, datos, evaluación ni uso previsto, lo que impide validar su calidad.
 - Sin benchmarks: no se puede afirmar que el ajuste fino mejore al modelo base en ninguna tarea; el nombre `ctx_compress` no garantiza esa funcionalidad.
 - Riesgo de alucinación: inherente a los modelos de 3 B de parámetros, especialmente en tareas de compresión o resumen donde puede omitir o inventar información.
@@ -84,5 +84,5 @@ La comparación con Qwen2.5-3B y Llama-3.2-3B es orientativa por tamaño; no se 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/microtensor-io/ctx_compress-b0bd36e4
+- Repositorio Hugging Face: https://huggingface.co/microtensor-io/ctx_compress-b0bd36e4
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-h-micro

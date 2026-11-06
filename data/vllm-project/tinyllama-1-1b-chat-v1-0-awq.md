@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TinyLlama-1.1B-Chat-v1.0-AWQ es una version cuantizada a 4 bits mediante AWQ (Activation-aware Weight Quantization) del modelo conversacional TinyLlama-1.1B-Chat-v1.0, desarrollado originalmente por el proyecto TinyLlama. La cuantizacion la realizo TheBloke y esta copia concreta la mantiene el equipo de vLLM en su organizacion de HuggingFace como checkpoint de CI, con el objetivo declarado de reducir el riesgo de suministro al no depender de una cuenta personal.
+TinyLlama-1.1B-Chat-v1.0-AWQ es una version cuantizada a 4 bits mediante AWQ (Activation-aware Weight Quantization) del modelo conversacional TinyLlama-1.1B-Chat-v1.0, desarrollado originalmente por el proyecto TinyLlama. La cuantizacion la realizo TheBloke y esta copia concreta la mantiene el equipo de vLLM en su organizacion de Hugging Face como checkpoint de CI, con el objetivo declarado de reducir el riesgo de suministro al no depender de una cuenta personal.
 
 El modelo base es un transformer decoder-only de tipo Llama con 1.100.048.384 parametros, entrenado sobre 3 billones de tokens segun la documentacion del proyecto original (dato habitual en TinyLlama, aunque no se detalla en la informacion disponible de esta ficha). Esta pensado para tareas de generacion de texto y conversacion en ingles con requisitos de hardware muy bajos, lo que lo hace util para entornos con GPUs de gama baja, prototipado rapido y pruebas de pipelines de inferencia.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TinyLlama-1.1B-Chat-v1.0-AWQ (esta ficha) | 1,1 B | 2048 tokens (calibracion) | AWQ 4 bits, GS 128 | Apache 2.0 | HuggingFace (vLLM-project y TheBloke) |
-| TinyLlama-1.1B-Chat-v1.0 (fp16) | 1,1 B | 2048 tokens | fp16 | Apache 2.0 | HuggingFace (TinyLlama) |
-| TinyLlama-1.1B-Chat-v1.0-GPTQ | 1,1 B | 2048 tokens | GPTQ 4 bits | Apache 2.0 | HuggingFace (TheBloke) |
-| TinyLlama-1.1B-Chat-v1.0-GGUF | 1,1 B | 2048 tokens | GGUF 2-8 bits | Apache 2.0 | HuggingFace (TheBloke) |
+| TinyLlama-1.1B-Chat-v1.0-AWQ (esta ficha) | 1,1 B | 2048 tokens (calibracion) | AWQ 4 bits, GS 128 | Apache 2.0 | Hugging Face (vLLM-project y TheBloke) |
+| TinyLlama-1.1B-Chat-v1.0 (fp16) | 1,1 B | 2048 tokens | fp16 | Apache 2.0 | Hugging Face (TinyLlama) |
+| TinyLlama-1.1B-Chat-v1.0-GPTQ | 1,1 B | 2048 tokens | GPTQ 4 bits | Apache 2.0 | Hugging Face (TheBloke) |
+| TinyLlama-1.1B-Chat-v1.0-GGUF | 1,1 B | 2048 tokens | GGUF 2-8 bits | Apache 2.0 | Hugging Face (TheBloke) |
 
 Las alternativas comparadas son variantes de cuantizacion del mismo modelo base, ya que no se dispone de datos de rendimiento frente a otros modelos de la misma categoria en la informacion proporcionada. La diferencia principal entre ellas es el backend de inferencia soportado (AWQ para GPUs NVIDIA, GPTQ para GPUs NVIDIA, GGUF para CPU y GPU) y el espacio en disco.
 
@@ -84,7 +84,7 @@ Las alternativas comparadas son variantes de cuantizacion del mismo modelo base,
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta ficha: https://huggingface.co/vllm-project/TinyLlama-1.1B-Chat-v1.0-AWQ
+- Repositorio Hugging Face de esta ficha: https://huggingface.co/vllm-project/TinyLlama-1.1B-Chat-v1.0-AWQ
 - Checkpoint AWQ original de TheBloke: https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-AWQ
 - Modelo base TinyLlama-1.1B-Chat-v1.0: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Variante GPTQ de TheBloke: https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GPTQ

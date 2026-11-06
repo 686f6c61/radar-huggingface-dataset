@@ -68,9 +68,9 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| allex-n15-ab-h24-ckpt | no disponible | no disponible | other | HuggingFace, 0 descargas, 0 likes |
+| allex-n15-ab-h24-ckpt | no disponible | no disponible | other | Hugging Face, 0 descargas, 0 likes |
 | GR00T-N1.5 (modelo base referenciado) | no disponible en la informacion | no disponible | ver licencia del autor original | publico |
-| jungwook2358/allex-n15-ab-h24 (bundle del tokenizador) | no disponible | no disponible | no disponible | HuggingFace |
+| jungwook2358/allex-n15-ab-h24 (bundle del tokenizador) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos suficientes para una comparacion cuantitativa con alternativas de la misma categoria. La unica relacion documentada es con el bundle del tokenizador del mismo autor y con la pila GR00T-N1.5.
 
@@ -89,7 +89,7 @@ No se dispone de datos suficientes para una comparacion cuantitativa con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jungwook2358/allex-n15-ab-h24-ckpt
+- Hugging Face: https://huggingface.co/jungwook2358/allex-n15-ab-h24-ckpt
 - Repositorio de codigo: https://github.com/jungwook235/GR00T-action-quantization (rama allex-n15-cogalign-actlat)
 - Bundle del tokenizador relacionado: https://huggingface.co/jungwook2358/allex-n15-ab-h24
 - Nota: la busqueda web no devolvio enlaces adicionales relevantes (papers, blogs o demos) sobre este modelo.

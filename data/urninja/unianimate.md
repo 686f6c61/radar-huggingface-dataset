@@ -87,11 +87,11 @@ La comparacion cuantitativa (parametros, FVD, coherencia) no esta disponible en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/UrNinja/unianimate
+- Repositorio en Hugging Face: https://huggingface.co/UrNinja/unianimate
 - Repositorio oficial en GitHub: https://github.com/ali-vilab/UniAnimate
 - Pagina del proyecto: https://unianimate.github.io/
 - Paper en arXiv: https://arxiv.org/abs/2406.01188
-- Repositorio espejo en HuggingFace: https://huggingface.co/camenduru/unianimate
+- Repositorio espejo en Hugging Face: https://huggingface.co/camenduru/unianimate
 - Pesos relacionados (UniAnimate y Animate-X): https://huggingface.co/Isi99999/UniAnimate_and_Animate-X_Models
 - Ficha en AikanAI: https://www.aikanai.com/en/tool/unianimate
 - Paper relacionado (TFT2V, CVPR 2024): A Recipe for Scaling up Text-to-Video Generation with Text-free Videos

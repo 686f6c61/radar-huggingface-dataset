@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`rachelara/perceiver-classification` es un repositorio de HuggingFace que contiene una implementacion propia y compacta de la arquitectura Perceiver en PyTorch, orientada a tareas de clasificacion. Lo publica el usuario rachelara y su proposito declarado es servir como material de revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no como un modelo preentrenado listo para produccion. El repositorio incluye un script de entrenamiento (`train.py`), un fichero de configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion en formato safetensors.
+`rachelara/perceiver-classification` es un repositorio de Hugging Face que contiene una implementacion propia y compacta de la arquitectura Perceiver en PyTorch, orientada a tareas de clasificacion. Lo publica el usuario rachelara y su proposito declarado es servir como material de revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no como un modelo preentrenado listo para produccion. El repositorio incluye un script de entrenamiento (`train.py`), un fichero de configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion en formato safetensors.
 
 El dato mas relevante es su tamano real: 24.832 parametros totales segun el fichero safetensors, una cifra extremadamente reducida que contrasta con la etiqueta "huge" que el autor usa para nombrar la configuracion de escala. Esto confirma que no se trata de un modelo con capacidad funcional para tareas reales de clasificacion, sino de un esqueleto reproducible pensado para validar que el codigo de la arquitectura compila, ejecuta y produce tensores con las formas esperadas.
 
-La relevancia de esta ficha es sobre todo documental: sirve para que desarrolladores e investigadores identifiquen rapidamente que este repositorio no debe confundirse con un modelo entrenado. No se declara ninguna puntuacion de benchmark, no hay pipeline de HuggingFace asociado y el propio autor advierte de que el checkpoint no ha sido entrenado ni auditado. La licencia es Apache 2.0.
+La relevancia de esta ficha es sobre todo documental: sirve para que desarrolladores e investigadores identifiquen rapidamente que este repositorio no debe confundirse con un modelo entrenado. No se declara ninguna puntuacion de benchmark, no hay pipeline de Hugging Face asociado y el propio autor advierte de que el checkpoint no ha sido entrenado ni auditado. La licencia es Apache 2.0.
 
 ## Especificaciones tecnicas
 
@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rachelara/perceiver-classification | 24.832 | no disponible | no | Apache 2.0 | HuggingFace (0 descargas) |
+| rachelara/perceiver-classification | 24.832 | no disponible | no | Apache 2.0 | Hugging Face (0 descargas) |
 | Perceiver IO (DeepMind, referencia arquitectonica) | no disponible en la informacion proporcionada | no disponible | si (preentrenado) | no disponible en la informacion proporcionada | publicacion academica y repositorio propio |
-| Implementacion Perceiver de la libreria Transformers (referencia de ecosistema) | no disponible en la informacion proporcionada | no disponible | depende del checkpoint | no disponible en la informacion proporcionada | HuggingFace |
+| Implementacion Perceiver de la libreria Transformers (referencia de ecosistema) | no disponible en la informacion proporcionada | no disponible | depende del checkpoint | no disponible en la informacion proporcionada | Hugging Face |
 
 Solo se dispone de datos verificados del repositorio analizado. Para las alternativas no se dispone de cifras contrastadas en la informacion proporcionada, por lo que no se ofrece una comparacion cuantitativa.
 
@@ -93,12 +93,12 @@ Solo se dispone de datos verificados del repositorio analizado. Para las alterna
 - Sin informacion sobre contexto maximo: al tratarse de un Perceiver, el limite practico depende del array latente y de la forma de entrada, pero esto no se documenta.
 - Riesgo de alucinacion: no aplica en el sentido generativo, ya que no es un modelo de generacion de lenguaje entrenado.
 - Restricciones de licencia: la licencia Apache 2.0 permite uso comercial del codigo y del checkpoint, pero el autor advierte de que deben revisarse por separado los terminos de los datos de origen si se usan datasets externos.
-- Compatibilidad: al ser una implementacion propia, las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito; no se puede invocar como un modelo estandar de la libreria Transformers sin trabajo adicional.
+- Compatibilidad: al ser una implementacion propia, las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito; no se puede invocar como un modelo estandar de la libreria Transformers sin trabajo adicional.
 - Fecha de publicacion: el repositorio esta creado y actualizado en la misma marca temporal, sin historial posterior de mantenimiento, versionado o subida de un checkpoint entrenado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rachelara/perceiver-classification
+- Hugging Face: https://huggingface.co/rachelara/perceiver-classification
 - Perceiver original (referencia conceptual de la arquitectura): no disponible en la informacion proporcionada
 - Perceiver IO (referencia conceptual): no disponible en la informacion proporcionada
 - Papers, blogs, repositorios o demos adicionales: no disponible en la informacion proporcionada

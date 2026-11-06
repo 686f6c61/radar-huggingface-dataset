@@ -83,6 +83,6 @@ No se han encontrado datos de rendimiento comparativo entre estos modelos en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/promotion/nbpo-helpsteer2-maxmin-stage4
+- Hugging Face: https://huggingface.co/promotion/nbpo-helpsteer2-maxmin-stage4
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Dataset HelpSteer2: https://huggingface.co/datasets/nvidia/HelpSteer2 (referencia indirecta, no confirmada en la información proporcionada)

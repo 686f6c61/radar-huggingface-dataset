@@ -2,9 +2,9 @@
 
 ## Resumen
 
-iz-fullstack-v1 es un ajuste fino (fine-tuning) supervisado del modelo Qwen/Qwen2.5-Coder-1.5B-Instruct, publicado por el usuario theplayboy117 en HuggingFace. Se trata de un modelo derivado, no de un entrenamiento desde cero: hereda por completo la arquitectura del modelo base (transformer decoder-only de 1.500 millones de parametros) y solo modifica los pesos mediante SFT sobre un dataset no documentado en la model card. El nombre sugiere un enfoque orientado a tareas de desarrollo full-stack, pero la model card no describe el corpus de entrenamiento ni los objetivos concretos.
+iz-fullstack-v1 es un ajuste fino (fine-tuning) supervisado del modelo Qwen/Qwen2.5-Coder-1.5B-Instruct, publicado por el usuario theplayboy117 en Hugging Face. Se trata de un modelo derivado, no de un entrenamiento desde cero: hereda por completo la arquitectura del modelo base (transformer decoder-only de 1.500 millones de parametros) y solo modifica los pesos mediante SFT sobre un dataset no documentado en la model card. El nombre sugiere un enfoque orientado a tareas de desarrollo full-stack, pero la model card no describe el corpus de entrenamiento ni los objetivos concretos.
 
-La relevancia de la ficha es limitada pero informativa: se trata de un ejemplo tipico de micro-ajuste comunitario sobre un modelo pequeno de codigo, con 0 descargas y 0 likes en el momento de la consulta, y con un repositorio de 0,0 GB que no confirma que los pesos esten realmente alojados. El pipeline y la licencia no estan declarados en HuggingFace, y la model card solo especifica el framework de entrenamiento (TRL 1.13.0, Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5, Tokenizers 0.23.1).
+La relevancia de la ficha es limitada pero informativa: se trata de un ejemplo tipico de micro-ajuste comunitario sobre un modelo pequeno de codigo, con 0 descargas y 0 likes en el momento de la consulta, y con un repositorio de 0,0 GB que no confirma que los pesos esten realmente alojados. El pipeline y la licencia no estan declarados en Hugging Face, y la model card solo especifica el framework de entrenamiento (TRL 1.13.0, Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5, Tokenizers 0.23.1).
 
 Al ser un derivado directo de Qwen2.5-Coder-1.5B-Instruct, el modelo parte de una base razonablemente capaz en generacion de codigo y comprension multilingue, pero cualquier evaluacion de calidad diferencial respecto al base carece de evidencia publicada: no hay benchmarks, no hay descripcion de dataset y no hay informacion sobre el proceso de alineamiento adicional.
 
@@ -75,7 +75,7 @@ Las cifras de contexto y licencia de los modelos comparados corresponden a infor
 
 - Ausencia total de documentacion: la model card es la plantilla autogenerada por TRL, sin descripcion del dataset, hiperparametros ni objetivos, lo que impide reproducir o auditar el entrenamiento.
 - Sin benchmarks: no hay ninguna evidencia de que el fine-tuning mejore al modelo base; podria incluso degradarlo por sobreajuste o catastrophic forgetting.
-- Licencia indeterminada: la model card indica "licence: license" sin concrecion y HuggingFace no declara licencia. El uso comercial es juridicamente incierto aunque el modelo base sea Apache-2.0.
+- Licencia indeterminada: la model card indica "licence: license" sin concrecion y Hugging Face no declara licencia. El uso comercial es juridicamente incierto aunque el modelo base sea Apache-2.0.
 - Riesgo de alucinacion: inherente a los modelos de 1,5 B de parametros, especialmente en tareas de razonamiento largo o generacion de APIs inexistentes.
 - Riesgo de codigo inseguro o incorrecto: los modelos pequenos de codigo tienden a producir fragmentos plausibles pero no funcionales o con vulnerabilidades; es obligatoria la revision humana.
 - Sesgos: no evaluados ni documentados. Al no conocerse la composicion del dataset de SFT, no puede descartarse la introduccion de sesgos nuevos respecto al base.
@@ -86,7 +86,7 @@ Las cifras de contexto y licencia de los modelos comparados corresponden a infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theplayboy117/iz-fullstack-v1
+- Modelo en Hugging Face: https://huggingface.co/theplayboy117/iz-fullstack-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Libreria TRL (framework de entrenamiento declarado): https://github.com/huggingface/trl
 - No se encontraron papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada; los resultados devueltos no guardaban relacion con el modelo.

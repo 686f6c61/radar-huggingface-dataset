@@ -87,7 +87,7 @@ No se dispone en la informacion proporcionada de comparativas con planners de ot
 
 ## Enlaces
 
-- [HuggingFace: mlx-community/ACE-Step-1.5-planner-1.7B-8bit](https://huggingface.co/mlx-community/ACE-Step-1.5-planner-1.7B-8bit)
+- [Hugging Face: mlx-community/ACE-Step-1.5-planner-1.7B-8bit](https://huggingface.co/mlx-community/ACE-Step-1.5-planner-1.7B-8bit)
 - [Modelo base: ACE-Step/Ace-Step1.5](https://huggingface.co/ACE-Step/Ace-Step1.5)
 - [Codigo upstream: ace-step/ACE-Step-1.5](https://github.com/ace-step/ACE-Step-1.5)
 - [Licencia MIT upstream](https://github.com/ace-step/ACE-Step-1.5/blob/main/LICENSE)

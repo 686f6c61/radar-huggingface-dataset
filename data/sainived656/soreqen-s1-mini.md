@@ -98,8 +98,8 @@ El SoreQen S1 Mini se distingue del base por la mejora en identidad, tool callin
 
 ## Enlaces
 
-- [Repositorio HuggingFace (sainived656/soreqen-s1-mini)](https://huggingface.co/sainived656/soreqen-s1-mini)
-- [Repositorio HuggingFace GGUF (soreqen-s1-mini-GGUF)](https://huggingface.co/sainived656/soreqen-s1-mini-GGUF)
+- [Repositorio Hugging Face (sainived656/soreqen-s1-mini)](https://huggingface.co/sainived656/soreqen-s1-mini)
+- [Repositorio Hugging Face GGUF (soreqen-s1-mini-GGUF)](https://huggingface.co/sainived656/soreqen-s1-mini-GGUF)
 - [Ficha en LLM Explorer](https://llm-explorer.com/model/sainived656%2Fsoreqen-s1-mini,3lW7NRh8msRLhRxtCDH1HD)
 - [Modelo base Qwen/Qwen3.5-0.8B](https://huggingface.co/Qwen/Qwen3.5-0.8B)
 - [Ficha de SoreQen S1 Mega en LLM Explorer](https://llm-explorer.com/model/sainived656%2Fsoreqen-s1-mega,5trtUWUedFnWhCe6lgoCTn)

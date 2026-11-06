@@ -78,9 +78,9 @@ Dentro de la suite Armiger los plugins son complementarios, no alternativas dire
 |---|---|---|---|---|
 | Raw tracker seeders | Heurística base | 53,04 % AUROC (mixto) / 85,17 % (DHT) | no aplica | trivial |
 | Raw DHT peers | Heurística base | 51,84 % AUROC (mixto) / 86,81 % (DHT) | no aplica | trivial |
-| Armiger (fórmula Way-4) | Backbone sin plugin | 86,64 % AUROC; 99,90 % recall honeypot | no disponible en la información | HuggingFace |
-| `armiger-swarm-priors` | Plugin hermano (priors + dropout) | no reporta AUROC propio en esta ficha | Apache-2.0 | HuggingFace |
-| `armiger-calibration-dht` | Plugin hermano (calibración) | 99,95 % balanced accuracy en junk | Apache-2.0 | HuggingFace |
+| Armiger (fórmula Way-4) | Backbone sin plugin | 86,64 % AUROC; 99,90 % recall honeypot | no disponible en la información | Hugging Face |
+| `armiger-swarm-priors` | Plugin hermano (priors + dropout) | no reporta AUROC propio en esta ficha | Apache-2.0 | Hugging Face |
+| `armiger-calibration-dht` | Plugin hermano (calibración) | 99,95 % balanced accuracy en junk | Apache-2.0 | Hugging Face |
 
 No se dispone de comparación con modelos externos de clasificación tabular en la información proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de comparación con modelos externos de clasificación tabular en 
 
 ## Enlaces
 
-- [HuggingFace: NorviTech/armiger-swarm-survival](https://huggingface.co/NorviTech/armiger-swarm-survival)
+- [Hugging Face: NorviTech/armiger-swarm-survival](https://huggingface.co/NorviTech/armiger-swarm-survival)
 - [Backbone: NorviTech/armiger-ultra](https://huggingface.co/NorviTech/armiger-ultra)
 - [Backbone: NorviTech/armiger](https://huggingface.co/NorviTech/armiger)
 - [Plugin hermano: NorviTech/armiger-swarm-priors](https://huggingface.co/NorviTech/armiger-swarm-priors)

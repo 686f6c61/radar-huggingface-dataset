@@ -80,7 +80,7 @@ La informacion disponible no incluye especificaciones detalladas de modelos comp
 
 | Modelo | Parametros | Contexto | Precision ternaria | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ternary-composer-charlm | 1.325.056 | 16 caracteres | Si, estricta en pesos lineales | no disponible | Checkpoint en HuggingFace |
+| ternary-composer-charlm | 1.325.056 | 16 caracteres | Si, estricta en pesos lineales | no disponible | Checkpoint en Hugging Face |
 | Baseline float equivalente (misma arquitectura) | no disponible | 16 caracteres | No | no disponible | Descrito en la model card, no publicado como checkpoint |
 | BitNet b1.58 (linea de investigacion de 1,58 bits) | no disponible | no disponible | Si | no disponible | Referencia de la literatura; no comparada numericamente en la informacion disponible |
 | TernaryLLM (arxiv 2406.07177) | no disponible | no disponible | Si (ternarizacion de LLM) | no disponible | Paper; no comparada numericamente en la informacion disponible |
@@ -104,8 +104,8 @@ No se dispone de datos numericos de los modelos alternativos en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CodeMasterCody3D/ternary-composer-charlm
-- Perfil del autor en HuggingFace: https://huggingface.co/CodeMasterCody3D
+- Modelo en Hugging Face: https://huggingface.co/CodeMasterCody3D/ternary-composer-charlm
+- Perfil del autor en Hugging Face: https://huggingface.co/CodeMasterCody3D
 - Listado de modelos del autor: https://huggingface.co/CodeMasterCody3D/models
 - Perfil de GitHub del autor: https://github.com/CodeMasterCody3D
 - Paper de referencia TernaryLLM: https://arxiv.org/abs/2406.07177

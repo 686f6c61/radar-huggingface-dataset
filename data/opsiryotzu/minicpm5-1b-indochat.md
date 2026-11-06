@@ -65,7 +65,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace - opsiryotzu/MiniCPM5-1B-IndoChat](https://huggingface.co/opsiryotzu/MiniCPM5-1B-IndoChat)
+- [Hugging Face - opsiryotzu/MiniCPM5-1B-IndoChat](https://huggingface.co/opsiryotzu/MiniCPM5-1B-IndoChat)
 - [Modelo base - openbmb/MiniCPM5-1B](https://huggingface.co/openbmb/MiniCPM5-1B)
 - [Unsloth](https://github.com/unslothai/unsloth)
 - [Hugging Face TRL](https://github.com/huggingface/trl)

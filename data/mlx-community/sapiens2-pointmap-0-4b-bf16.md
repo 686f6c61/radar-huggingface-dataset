@@ -18,7 +18,7 @@ Su relevancia práctica es doble: por un lado cubre una tarea de visión poco ha
 | Longitud de contexto | no disponible; no es un modelo de texto. La salida se genera a la resolución de la imagen de entrada (tareas densas) o en coordenadas de píxel de la imagen origen (pose) |
 | Tipos de cuantizacion | bfloat16 en este repositorio; el checkpoint de referencia está en float32. No se ofrecen variantes GGUF ni cuantizaciones de 4 u 8 bits |
 | Idiomas soportados | no disponible (modelo de visión; no procesa lenguaje natural) |
-| Licencia | sapiens2-license (etiquetada como `other` en HuggingFace), https://github.com/facebookresearch/sapiens2/blob/main/LICENSE.md |
+| Licencia | sapiens2-license (etiquetada como `other` en Hugging Face), https://github.com/facebookresearch/sapiens2/blob/main/LICENSE.md |
 | Formato de pesos | safetensors en bfloat16, librería `mlx` |
 | Modelo base | facebook/sapiens2-pointmap-0.4b |
 | Tarea declarada (pipeline) | depth-estimation (predicción de pointmaps XYZ por píxel más escala) |
@@ -88,7 +88,7 @@ No se dispone de datos de otros modelos comparables de pointmaps o profundidad c
 
 ## Limitaciones y advertencias
 
-- Licencia `sapiens2-license` (etiquetada como `other` en HuggingFace): no es Apache 2.0, MIT ni ninguna licencia permisiva estándar. Es imprescindible revisar el texto completo enlazado antes de cualquier uso comercial, ya que puede incluir restricciones de uso, cláusulas de atribución o limitaciones por dominio.
+- Licencia `sapiens2-license` (etiquetada como `other` en Hugging Face): no es Apache 2.0, MIT ni ninguna licencia permisiva estándar. Es imprescindible revisar el texto completo enlazado antes de cualquier uso comercial, ya que puede incluir restricciones de uso, cláusulas de atribución o limitaciones por dominio.
 - Conversión no oficial: la realiza la organización `mlx-community`, no Meta. Puede haber diferencias numéricas respecto al checkpoint float32 original, especialmente por el paso a bfloat16.
 - Precisión reducida: el uso exclusivo de bfloat16 implica menor rango dinámico y precisión que float32; para tareas de metrología fina conviene validar el error antes de confiar en las medidas.
 - Sin benchmarks: no hay ninguna métrica publicada que permita estimar el error de profundidad, el error de escala o la degradación respecto al modelo original. Cero descargas y cero *likes* implican ausencia de validación por terceros.
@@ -101,7 +101,7 @@ No se dispone de datos de otros modelos comparables de pointmaps o profundidad c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/sapiens2-pointmap-0.4b-bf16
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/sapiens2-pointmap-0.4b-bf16
 - Modelo base: https://huggingface.co/facebook/sapiens2-pointmap-0.4b
 - Licencia Sapiens2: https://github.com/facebookresearch/sapiens2/blob/main/LICENSE.md
 - Repositorio de Sapiens2 (referenciado en la licencia): https://github.com/facebookresearch/sapiens2

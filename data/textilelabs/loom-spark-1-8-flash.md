@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Val loss | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Loom Spark 1.8 Flash | 2,62M | no disponible | 0,3332 | MIT | HuggingFace |
-| Loom Spark 1.5 Flash | 1,35M | no disponible | 0,3544 | MIT | HuggingFace |
-| Loom Spark 1.8 (full-size) | 18,85M | no disponible | no disponible | MIT | HuggingFace |
+| Loom Spark 1.8 Flash | 2,62M | no disponible | 0,3332 | MIT | Hugging Face |
+| Loom Spark 1.5 Flash | 1,35M | no disponible | 0,3544 | MIT | Hugging Face |
+| Loom Spark 1.8 (full-size) | 18,85M | no disponible | no disponible | MIT | Hugging Face |
 
 La comparativa se limita a la familia Loom Spark, ya que no se dispone de datos de otros modelos tiny comparables en la informacion proporcionada. El full-size 1.8 tiene aproximadamente 7 veces más parámetros, pero no se reportan sus métricas de validación en esta ficha.
 
@@ -85,7 +85,7 @@ La comparativa se limita a la familia Loom Spark, ya que no se dispone de datos 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/textilelabs/Loom-Spark-1.8-Flash)
+- [Modelo en Hugging Face](https://huggingface.co/textilelabs/Loom-Spark-1.8-Flash)
 - [Loom Spark 1.8 (full-size)](https://huggingface.co/textilelabs/Loom-Spark-1.8)
 - [Loom Spark 1.5 Flash](https://huggingface.co/textilelabs/Loom-Spark-1.5-Flash)
 - [Loom-Spark API e Inference Endpoint (FriendliAI)](https://friendli.ai/models/textilelabs/Loom-Spark)

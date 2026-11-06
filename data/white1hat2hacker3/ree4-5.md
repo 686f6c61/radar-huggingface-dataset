@@ -4,7 +4,7 @@
 
 Ree4.5 es un modelo de clasificación de tokens desarrollado por white1hat2hacker3, que parte del modelo base Qwen3.8-27B-Uncensored-GGUF y ha sido ajustado con la librería SetFit sobre el dataset de destilación r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation. Su pipeline es token-classification, por lo que está orientado a tareas de etiquetado de secuencias, aunque el modelo base es un LLM de 27B en formato GGUF. La licencia es Apache 2.0 y el idioma declarado es inglés.
 
-El repositorio de GitHub asociado lo describe como un modelo ligero de 4B, lo que contradice el tamaño del modelo base (27B). Esta discrepancia no está resuelta en la información disponible. El modelo no tiene descargas ni likes en HuggingFace y no se han publicado resultados de benchmarks, por lo que su relevancia actual es limitada y debe considerarse experimental.
+El repositorio de GitHub asociado lo describe como un modelo ligero de 4B, lo que contradice el tamaño del modelo base (27B). Esta discrepancia no está resuelta en la información disponible. El modelo no tiene descargas ni likes en Hugging Face y no se han publicado resultados de benchmarks, por lo que su relevancia actual es limitada y debe considerarse experimental.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ El repositorio de GitHub asociado lo describe como un modelo ligero de 4B, lo qu
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune del modelo Qwen3.8-27B-Uncensored-GGUF mediante la librería SetFit de HuggingFace, especializada en ajuste de modelos con pocos ejemplos. El dataset de entrenamiento es r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation, un conjunto de datos de destilación que combina salidas de modelos como Qwen3.8, GLM5.2 y Kimi K3. Las métricas de evaluación declaradas son qlemesle/parapluie y Markdown/rouge, aunque no se han publicado resultados. No se dispone de información sobre el número de tokens, composición exacta del dataset ni procesos de alineación como RLHF o DPO.
+El modelo es un fine-tune del modelo Qwen3.8-27B-Uncensored-GGUF mediante la librería SetFit de Hugging Face, especializada en ajuste de modelos con pocos ejemplos. El dataset de entrenamiento es r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation, un conjunto de datos de destilación que combina salidas de modelos como Qwen3.8, GLM5.2 y Kimi K3. Las métricas de evaluación declaradas son qlemesle/parapluie y Markdown/rouge, aunque no se han publicado resultados. No se dispone de información sobre el número de tokens, composición exacta del dataset ni procesos de alineación como RLHF o DPO.
 
 ## Capacidades
 
@@ -67,5 +67,5 @@ No se dispone de información suficiente para una comparativa fiable. El modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/white1hat2hacker3/Ree4.5
+- Hugging Face: https://huggingface.co/white1hat2hacker3/Ree4.5
 - Repositorio de GitHub asociado: https://github.com/aaayafuj51-AYFJ/Ree4.5-aaayafuj

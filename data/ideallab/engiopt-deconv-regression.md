@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables. El ecosistema EngiOpt i
 
 ## Enlaces
 
-- HuggingFace: [IDEALLab/engiopt-deconv-regression](https://huggingface.co/IDEALLab/engiopt-deconv-regression)
+- Hugging Face: [IDEALLab/engiopt-deconv-regression](https://huggingface.co/IDEALLab/engiopt-deconv-regression)
 - Repositorio GitHub de EngiOpt: [https://github.com/IDEALLab/EngiOpt](https://github.com/IDEALLab/EngiOpt)
 - Notebook de ejemplo (modelo cgan_cnn_2d): [example_easy_model.ipynb](https://colab.research.google.com/github/IDEALLab/EngiOpt/blob/main/example_easy_model.ipynb)
 - Otro checkpoint relacionado: [IDEALLab/engiopt-vqgan](https://huggingface.co/IDEALLab/engiopt-vqgan)

@@ -75,9 +75,9 @@ No se han publicado resultados en MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TinyStories Story Filler | 37,5 M | 512 | Infilling de cuentos (inicio + final → medio) | no disponible | HuggingFace + GitHub |
-| Modelos TinyStories de referencia (p. ej. roneneldan/TinyStories-33M) | ~33 M | 512 | Generación de cuentos a partir de un prompt | no disponible en la información consultada | HuggingFace |
-| GPT-2 small | 124 M | 1.024 | Generación de texto general | MIT (según la información habitual del modelo; no verificada aquí) | HuggingFace |
+| TinyStories Story Filler | 37,5 M | 512 | Infilling de cuentos (inicio + final → medio) | no disponible | Hugging Face + GitHub |
+| Modelos TinyStories de referencia (p. ej. roneneldan/TinyStories-33M) | ~33 M | 512 | Generación de cuentos a partir de un prompt | no disponible en la información consultada | Hugging Face |
+| GPT-2 small | 124 M | 1.024 | Generación de texto general | MIT (según la información habitual del modelo; no verificada aquí) | Hugging Face |
 
 La comparación directa con alternativas de infilling encoder-decoder de escala similar no está disponible en la información proporcionada. Frente a los modelos generativos de TinyStories, la diferencia clave es la condicionalidad bidireccional (inicio y final), no el rendimiento bruto.
 
@@ -95,6 +95,6 @@ La comparación directa con alternativas de infilling encoder-decoder de escala 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PeterCConant/tinystories-story-filler
+- Modelo en Hugging Face: https://huggingface.co/PeterCConant/tinystories-story-filler
 - Repositorio de código, notebook de entrenamiento y memoria: https://github.com/PeterConant/tinystories-story-filler
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories

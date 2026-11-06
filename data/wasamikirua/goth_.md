@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Goth_ es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes texto-a-imagen, publicado por el usuario WasamiKirua en HuggingFace bajo la libreria diffusers. Se trata de un ajuste fino de bajo rango sobre el modelo base krea/Krea-2-Raw, lo que significa que no es un modelo completo: es un conjunto de pesos adicionales que se cargan junto al modelo base para modificar su comportamiento generativo. La model card lo describe como un experimento personal de entrenamiento de LoRA sobre difusion junto con su dataset asociado.
+Goth_ es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes texto-a-imagen, publicado por el usuario WasamiKirua en Hugging Face bajo la libreria diffusers. Se trata de un ajuste fino de bajo rango sobre el modelo base krea/Krea-2-Raw, lo que significa que no es un modelo completo: es un conjunto de pesos adicionales que se cargan junto al modelo base para modificar su comportamiento generativo. La model card lo describe como un experimento personal de entrenamiento de LoRA sobre difusion junto con su dataset asociado.
 
 Su funcion principal es introducir un concepto o estilo concreto, activado mediante la palabra gatillo `goth_`, que se inserta en el prompt para que el modelo base genere imagenes coherentes con ese concepto. Los ejemplos incluidos en la model card muestran retratos fotorrealistas con iluminacion difusa, profundidad de campo reducida (referencias a optica de 85 mm) y paletas de color pastel, acompanados siempre de un prompt negativo orientado a evitar ruido, baja resolucion y marcas de agua.
 
@@ -85,7 +85,7 @@ No se han identificado en la informacion disponible alternativas de la misma cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WasamiKirua/Goth_
+- Modelo en Hugging Face: https://huggingface.co/WasamiKirua/Goth_
 - Archivos del repositorio: https://huggingface.co/WasamiKirua/Goth_/tree/main
 - Modelo base declarado: krea/Krea-2-Raw (referenciado en la model card; no se ha facilitado URL directa en la informacion disponible)
 

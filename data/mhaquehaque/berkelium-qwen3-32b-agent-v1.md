@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Berkelium Qwen3-32B Agent v1 es un adaptador LoRA publicado en HuggingFace por el usuario Mhaquehaque bajo el identificador `Mhaquehaque/berkelium-qwen3-32b-agent-v1`. No se trata de un modelo completo, sino de un ajuste fino por adaptador (PEFT/LoRA) que debe cargarse sobre el modelo base `Qwen/Qwen3-32B` para poder ejecutarse. El repositorio contiene únicamente los pesos del adaptador en formato safetensors y ocupa 0,5 GB, un orden de magnitud coherente con un ajuste de bajo rango sobre un modelo denso de 32 000 millones de parámetros.
+Berkelium Qwen3-32B Agent v1 es un adaptador LoRA publicado en Hugging Face por el usuario Mhaquehaque bajo el identificador `Mhaquehaque/berkelium-qwen3-32b-agent-v1`. No se trata de un modelo completo, sino de un ajuste fino por adaptador (PEFT/LoRA) que debe cargarse sobre el modelo base `Qwen/Qwen3-32B` para poder ejecutarse. El repositorio contiene únicamente los pesos del adaptador en formato safetensors y ocupa 0,5 GB, un orden de magnitud coherente con un ajuste de bajo rango sobre un modelo denso de 32 000 millones de parámetros.
 
-El nombre del repositorio sugiere un ajuste orientado a uso como agente, pero la model card publicada es la plantilla por defecto de HuggingFace sin cumplimentar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) aparecen como "More Information Needed". No hay artículo, demo ni documentación adicional asociada. En el momento de redactar esta ficha el repositorio registra 0 descargas y 0 "likes", por lo que no existe evidencia pública de uso ni de validación por terceros.
+El nombre del repositorio sugiere un ajuste orientado a uso como agente, pero la model card publicada es la plantilla por defecto de Hugging Face sin cumplimentar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) aparecen como "More Information Needed". No hay artículo, demo ni documentación adicional asociada. En el momento de redactar esta ficha el repositorio registra 0 descargas y 0 "likes", por lo que no existe evidencia pública de uso ni de validación por terceros.
 
 Por tanto, esta ficha describe lo que puede verificarse a partir de los metadatos del repositorio y de la información pública del modelo base, y marca explícitamente como "no disponible" todo aquello que el autor no ha documentado. Es un artefacto adecuado para experimentación, pero no para producción sin una evaluación propia previa, dado que no hay licencia declarada ni resultados de benchmarks.
 
@@ -33,7 +33,7 @@ Por tanto, esta ficha describe lo que puede verificarse a partir de los metadato
 
 El artefacto es un adaptador de bajo rango (LoRA) en formato PEFT. Esto implica que no se redistribuyen los pesos completos del modelo, sino un conjunto de matrices de rango reducido que se aplican sobre las capas del modelo base `Qwen/Qwen3-32B`. Para la inferencia es obligatorio descargar el modelo base (aproximadamente 64 GB en bf16) y cargar el adaptador encima, ya sea manteniéndolo separado o fusionándolo en los pesos base con `merge_and_unload` de PEFT. La arquitectura efectiva, por tanto, es la de Qwen3-32B: un transformer denso con atención completa, decodificación autorregresiva y tokenizador propio del modelo base. No hay componentes MoE, SSM ni híbridos en el modelo base.
 
-No se dispone de ninguna información sobre el procedimiento de entrenamiento del adaptador: ni el número de tokens, ni la composición del dataset, ni si hubo ajuste supervisado, DPO, RLHF u otro método. La model card es la plantilla vacía de HuggingFace y no incluye hiperparámetros (rango, alpha, dropout, tasa de aprendizaje, épocas) ni detalles de infraestructura de cómputo. El único dato procedente de la librería es la mención a PEFT 0.21.2 en el apartado de versiones de framework, y la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono citado por la propia plantilla, no a un artículo sobre el modelo. Tampoco se documenta ningún ajuste por preferencias ni técnica de alineación específica.
+No se dispone de ninguna información sobre el procedimiento de entrenamiento del adaptador: ni el número de tokens, ni la composición del dataset, ni si hubo ajuste supervisado, DPO, RLHF u otro método. La model card es la plantilla vacía de Hugging Face y no incluye hiperparámetros (rango, alpha, dropout, tasa de aprendizaje, épocas) ni detalles de infraestructura de cómputo. El único dato procedente de la librería es la mención a PEFT 0.21.2 en el apartado de versiones de framework, y la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono citado por la propia plantilla, no a un artículo sobre el modelo. Tampoco se documenta ningún ajuste por preferencias ni técnica de alineación específica.
 
 ## Capacidades
 
@@ -86,7 +86,7 @@ La comparación directa con el modelo base es la más relevante: cualquier mejor
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla vacía de HuggingFace. No se especifican datos de entrenamiento, hiperparámetros, metodología ni intención de uso prevista.
+- Ausencia total de documentación: la model card es la plantilla vacía de Hugging Face. No se especifican datos de entrenamiento, hiperparámetros, metodología ni intención de uso prevista.
 - Licencia no declarada: sin licencia explícita, el uso comercial es jurídicamente incierto. El modelo base es Apache 2.0, pero eso no implica que el adaptador lo sea. Se debe contactar con el autor antes de cualquier uso en producción.
 - Sin evaluación publicada: 0 descargas y 0 likes, sin benchmarks ni informes de terceros. No hay ninguna evidencia de que el ajuste mejore al modelo base en tarea alguna.
 - Riesgo de olvido catastrófico: al ser un LoRA sin documentación, es plausible que el ajuste haya degradado capacidades generales del modelo base (código, matemáticas, multilingüismo) en favor del dominio objetivo. Debe medirse.
@@ -100,7 +100,7 @@ La comparación directa con el modelo base es la más relevante: cualquier mejor
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/Mhaquehaque/berkelium-qwen3-32b-agent-v1
+- Repositorio Hugging Face del adaptador: https://huggingface.co/Mhaquehaque/berkelium-qwen3-32b-agent-v1
 - Modelo base Qwen3-32B: https://huggingface.co/Qwen/Qwen3-32B
 - Documentación de PEFT: https://huggingface.co/docs/peft
 - Documentación de Transformers: https://huggingface.co/docs/transformers

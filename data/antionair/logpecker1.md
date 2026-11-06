@@ -2,7 +2,7 @@
 
 ## Resumen
 
-La ficha corresponde al repositorio `antionair/logpecker1`, publicado en HuggingFace por el usuario `antionair`. En el momento de la consulta, la informacion disponible es extremadamente limitada: la model card del autor unicamente contiene la declaracion de licencia (`apache-2.0`) y no incluye descripcion, arquitectura, tamano ni datos de entrenamiento. El repositorio figura con 0 descargas y 0 "likes", lo que indica que no cuenta con traccion ni validacion por parte de la comunidad.
+La ficha corresponde al repositorio `antionair/logpecker1`, publicado en Hugging Face por el usuario `antionair`. En el momento de la consulta, la informacion disponible es extremadamente limitada: la model card del autor unicamente contiene la declaracion de licencia (`apache-2.0`) y no incluye descripcion, arquitectura, tamano ni datos de entrenamiento. El repositorio figura con 0 descargas y 0 "likes", lo que indica que no cuenta con traccion ni validacion por parte de la comunidad.
 
 No se ha podido determinar que problema resuelve el modelo ni a que categoria funcional pertenece. El propio identificador (`logpecker1`) podria sugerir un uso relacionado con el tratamiento de registros o logs, pero esto es una conjetura basada en el nombre y no un dato confirmado por el autor, por lo que no debe tomarse como informacion fiable. Tampoco se ha especificado pipeline, idiomas soportados ni formato de pesos.
 
@@ -72,5 +72,5 @@ No disponible. No se dispone de informacion suficiente sobre el modelo (categori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/antionair/logpecker1
+- Repositorio en Hugging Face: https://huggingface.co/antionair/logpecker1
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada. Los resultados devueltos corresponden a paginas no relacionadas con el modelo.

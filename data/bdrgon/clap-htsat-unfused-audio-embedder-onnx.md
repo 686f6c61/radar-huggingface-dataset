@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Formato | Tamano de pesos | Entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| bdrgon/clap-htsat-unfused-audio-embedder-onnx (este) | ONNX (opsets 17), FP32/INT8/INT4 | 22,3-117,3 MB | `[1, 1, 1001, 64]` | embedding 512 dim | apache-2.0 | HuggingFace, ONNX Runtime |
-| laion/clap-htsat-unfused (modelo base) | PyTorch | no disponible | audio via ClapProcessor | embedding de audio y de texto | no disponible en la informacion | HuggingFace, requiere PyTorch |
+| bdrgon/clap-htsat-unfused-audio-embedder-onnx (este) | ONNX (opsets 17), FP32/INT8/INT4 | 22,3-117,3 MB | `[1, 1, 1001, 64]` | embedding 512 dim | apache-2.0 | Hugging Face, ONNX Runtime |
+| laion/clap-htsat-unfused (modelo base) | PyTorch | no disponible | audio via ClapProcessor | embedding de audio y de texto | no disponible en la informacion | Hugging Face, requiere PyTorch |
 | Otros modelos de embeddings de audio | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa mas relevante es con el modelo base `laion/clap-htsat-unfused`, del que esta exportacion deriva: la diferencia principal es el formato (ONNX frente a PyTorch), la disponibilidad de cuantizaciones y, presumiblemente, la ausencia del encoder de texto en este repositorio. No se dispone de datos para comparar con otras familias de embeddings de audio en la informacion proporcionada.
@@ -85,7 +85,7 @@ La comparacion directa mas relevante es con el modelo base `laion/clap-htsat-unf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bdrgon/clap-htsat-unfused-audio-embedder-onnx
+- Repositorio en Hugging Face: https://huggingface.co/bdrgon/clap-htsat-unfused-audio-embedder-onnx
 - Modelo base: https://huggingface.co/laion/clap-htsat-unfused
 - Hashes SHA-256 de los pesos (proporcionados en la model card):
   - `audio_model.onnx`: `1f1860e19468535ef0712b5b611c65a7d3d94abc0930b6aaf1671b64f9c56b62`

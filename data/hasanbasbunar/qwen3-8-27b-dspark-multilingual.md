@@ -86,7 +86,7 @@ No se dispone de comparaciones directas con otros drafter multilingües en la in
 
 ## 10. Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/hasanbasbunar/Qwen3.8-27B-DSpark-Multilingual)
+- [Modelo en Hugging Face](https://huggingface.co/hasanbasbunar/Qwen3.8-27B-DSpark-Multilingual)
 - [Modelo base (drafter de RadixArk)](https://huggingface.co/RadixArk/Qwen3.8-27B-DSpark)
 - [Modelo objetivo Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio GitHub del autor (setup DGX Spark)](https://github.com/hasso5703/dgx-spark-qwen38)

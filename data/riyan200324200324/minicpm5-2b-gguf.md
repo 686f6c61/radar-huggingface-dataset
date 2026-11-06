@@ -83,7 +83,7 @@ No se dispone de datos cuantitativos de rendimiento para establecer una comparac
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/Riyan200324200324/MiniCPM5-2B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/Riyan200324200324/MiniCPM5-2B-GGUF
 - Modelo oficial MiniCPM5-2B: https://huggingface.co/openbmb/MiniCPM5-2B
 - MiniCPM5-1B: https://huggingface.co/openbmb/MiniCPM5-1B
 - Informe técnico MiniCPM (arXiv 2506.07900): https://arxiv.org/pdf/2506.07900

@@ -11,7 +11,7 @@ El repositorio tiene un tamaño de 0.0 GB y no se registran descargas ni interac
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible |
-| Parametros totales | 516.292 (según metadatos de HuggingFace, sin confirmar) |
+| Parametros totales | 516.292 (según metadatos de Hugging Face, sin confirmar) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S (según comentarios de la model card) |
@@ -53,6 +53,6 @@ No disponible. No se han identificado modelos comparables debido a la falta de i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Jibay_2-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Jibay_2-i1-GGUF
 - Modelo base referenciado: https://huggingface.co/JibayAi/Jibay_2 (no verificado)
 - Perfil del autor: https://huggingface.co/mradermacher

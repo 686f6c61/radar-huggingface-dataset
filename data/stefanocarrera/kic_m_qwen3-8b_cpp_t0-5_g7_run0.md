@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g7_run0` es un ajuste fino (fine-tuning) publicado en HuggingFace por el usuario stefanocarrera sobre el modelo base `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, que a su vez es una version cuantizada a 4 bits del modelo Qwen3-8B-Base de Alibaba. Se trata, por tanto, de un derivado de la familia Qwen3 de octava generacion, un transformer decoder-only denso de aproximadamente 8 mil millones de parametros.
+`stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g7_run0` es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario stefanocarrera sobre el modelo base `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, que a su vez es una version cuantizada a 4 bits del modelo Qwen3-8B-Base de Alibaba. Se trata, por tanto, de un derivado de la familia Qwen3 de octava generacion, un transformer decoder-only denso de aproximadamente 8 mil millones de parametros.
 
 El modelo se ha entrenado utilizando la libreria Unsloth, segun indica la propia model card, que afirma un entrenamiento "2x mas rapido" gracias a dicha herramienta. El nombre del repositorio (`kic_M_Qwen3-8B_cpp_t0.5_g7_run0`) sugiere un experimento de ajuste con hiperparametros concretos (temperatura 0.5, parametro `g7`, ejecucion 0), aunque el autor no documenta el dataset ni el objetivo del entrenamiento.
 
@@ -43,7 +43,7 @@ No se especifica el numero de tokens de entrenamiento, la composicion del datase
 - Comparacion de tecnicas de ajuste: permite contrastar el efecto de hiperparametros (temperatura, `g7`) frente al modelo base sin ajustar.
 - Evaluacion de degradacion por cuantizacion: al partir de bnb-4bit, permite estudiar la perdida de calidad frente a Qwen3-8B en precision completa.
 - Base para nuevos fine-tunings: puede servir como punto de partida para experimentos derivados, dada su licencia Apache 2.0.
-- Docencia y formacion: ejemplo practico de publicacion de un modelo ajustado en HuggingFace con tags y metadatos minimos.
+- Docencia y formacion: ejemplo practico de publicacion de un modelo ajustado en Hugging Face con tags y metadatos minimos.
 
 ## Benchmarks y rendimiento
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g7_run0 | ~8B (no confirmado) | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen3-8B-Base (Alibaba) | ~8B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
-| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | ~8B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
-| Llama 3.1 8B | ~8B | 128K (fuera del alcance de esta busqueda) | licencia Llama | HuggingFace |
+| stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g7_run0 | ~8B (no confirmado) | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen3-8B-Base (Alibaba) | ~8B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
+| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | ~8B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
+| Llama 3.1 8B | ~8B | 128K (fuera del alcance de esta busqueda) | licencia Llama | Hugging Face |
 
 Los datos de los modelos comparables no se han verificado en la informacion proporcionada, por lo que deben contrastarse con sus fichas oficiales.
 
@@ -81,6 +81,6 @@ Los datos de los modelos comparables no se han verificado en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g7_run0
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g7_run0
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Unsloth: https://github.com/unslothai/unsloth

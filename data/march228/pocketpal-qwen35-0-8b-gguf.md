@@ -87,5 +87,5 @@ La comparación directa de rendimiento con estos modelos no está disponible, ya
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/march228/pocketpal-qwen35-0.8b-gguf
+- Modelo en Hugging Face: https://huggingface.co/march228/pocketpal-qwen35-0.8b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

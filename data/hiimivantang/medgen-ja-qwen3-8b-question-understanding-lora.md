@@ -85,9 +85,9 @@ Frente al modelo base, el compuesto mejora +0,144 (IC 95 % +0,118 a +0,173), y l
 
 | Modelo | Parametros | Contexto | QU composite | PICO accuracy | Entity F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Este adaptador (sobre Qwen3-8B) | 8B + LoRA r16 | no disponible | 0,853 | 0,939 | 0,768 | apache-2.0 | HuggingFace (adaptador) |
-| Qwen3-8B (base) | 8B | no disponible | 0,709 | 0,813 | 0,677 | apache-2.0 | HuggingFace |
-| Qwen3-Swallow-8B-RL-v0.2 | 8B | no disponible | 0,730 | 0,868 | 0,655 | no disponible | HuggingFace |
+| Este adaptador (sobre Qwen3-8B) | 8B + LoRA r16 | no disponible | 0,853 | 0,939 | 0,768 | apache-2.0 | Hugging Face (adaptador) |
+| Qwen3-8B (base) | 8B | no disponible | 0,709 | 0,813 | 0,677 | apache-2.0 | Hugging Face |
+| Qwen3-Swallow-8B-RL-v0.2 | 8B | no disponible | 0,730 | 0,868 | 0,655 | no disponible | Hugging Face |
 | gpt-6.1-sol (OpenAI) | no disponible | no disponible | 0,845 | 0,937 | 0,718 | propietaria | API comercial |
 
 La comparativa se limita a la tarea de comprension de preguntas (QU) definida por el autor; no hay datos de benchmarks generales (MMLU, HumanEval, GSM8K) para el adaptador en la informacion disponible.
@@ -106,7 +106,7 @@ La comparativa se limita a la tarea de comprension de preguntas (QU) definida po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hiimivantang/medgen-ja-qwen3-8b-question-understanding-lora
+- Modelo en Hugging Face: https://huggingface.co/hiimivantang/medgen-ja-qwen3-8b-question-understanding-lora
 - Modelo base Qwen/Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Revision del base usada en entrenamiento: https://huggingface.co/Qwen/Qwen3-8B/tree/b968826d9c46dd6066d109eabc6255188de91218
 - PEFT: https://github.com/huggingface/peft

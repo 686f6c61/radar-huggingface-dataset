@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `junbrro/egopi-axis2-arm2tokenizer-AB-30k-actsilu-slurm-19104-20260922` es un checkpoint de pesos publicado en HuggingFace por el usuario `junbrro`. Su nomenclatura y su model card indican que se trata del resultado de un entrenamiento o ajuste concreto ("Arm II new Arm II tokenizer N+A+B", paso final 30000, origen "Slurm 19104"), y no de un modelo presentado comercialmente con documentación de producto. La model card es explícitamente mínima: solo indica que se incluyen pesos y configuración finales, que se excluyen el optimizador y el estado del generador de números aleatorios, y que se conservan las rutas originales del clúster de origen.
+El modelo identificado como `junbrro/egopi-axis2-arm2tokenizer-AB-30k-actsilu-slurm-19104-20260922` es un checkpoint de pesos publicado en Hugging Face por el usuario `junbrro`. Su nomenclatura y su model card indican que se trata del resultado de un entrenamiento o ajuste concreto ("Arm II new Arm II tokenizer N+A+B", paso final 30000, origen "Slurm 19104"), y no de un modelo presentado comercialmente con documentación de producto. La model card es explícitamente mínima: solo indica que se incluyen pesos y configuración finales, que se excluyen el optimizador y el estado del generador de números aleatorios, y que se conservan las rutas originales del clúster de origen.
 
 El repositorio contiene 6.915.094.616 parámetros en formato safetensors, lo que sitúa al modelo en la franja de ~6,9 mil millones de parámetros, con un tamaño de repositorio de 13,9 GB (coherente con pesos en precisión de 16 bits). No se declara arquitectura, licencia, idiomas soportados, pipeline de uso ni resultados de evaluación. La etiqueta `RLDX-1` y el sufijo `actsilu` apuntan a un pipeline propietario o experimental del autor, y el nombre incluye referencias a un tokenizador de acciones (`actlat/`), lo que sugiere un modelo orientado a generación de acciones o a un entorno de agentes, aunque esto no está confirmado en la documentación.
 
@@ -94,7 +94,7 @@ No disponible. La información proporcionada no permite identificar modelos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junbrro/egopi-axis2-arm2tokenizer-AB-30k-actsilu-slurm-19104-20260922
+- Modelo en Hugging Face: https://huggingface.co/junbrro/egopi-axis2-arm2tokenizer-AB-30k-actsilu-slurm-19104-20260922
 - Paper: no disponible
 - Blog o documentación del autor: no disponible
 - Repositorio de código: no disponible

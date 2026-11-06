@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cv-matching es un prototipo de investigacion publicado por el usuario christiancastillo en HuggingFace bajo el identificador christiancastillo/cv-matching. Se trata de un "Tiny Transformer" de escala nano disenado especificamente para tareas de matching (emparejamiento o correspondencia entre entradas). Con solo 49.600 parametros totales, es un artefacto de tamano minimo orientado a la experimentacion y a servir como punto de partida reproducible, no como modelo de produccion.
+cv-matching es un prototipo de investigacion publicado por el usuario christiancastillo en Hugging Face bajo el identificador christiancastillo/cv-matching. Se trata de un "Tiny Transformer" de escala nano disenado especificamente para tareas de matching (emparejamiento o correspondencia entre entradas). Con solo 49.600 parametros totales, es un artefacto de tamano minimo orientado a la experimentacion y a servir como punto de partida reproducible, no como modelo de produccion.
 
 El propio autor aclara en la model card que el repositorio no reclama ninguna puntuacion de benchmark y que el checkpoint incluido (model.safetensors) es una inicializacion valida para pruebas de humo, no un modelo entrenado. El repositorio documenta la configuracion de arquitectura, la receta de experimento por defecto y los formatos de archivo, sin presentar numeros de rendimiento verificados.
 
@@ -75,4 +75,4 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/christiancastillo/cv-matching
+- Hugging Face: https://huggingface.co/christiancastillo/cv-matching

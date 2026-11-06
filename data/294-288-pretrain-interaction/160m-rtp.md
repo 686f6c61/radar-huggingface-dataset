@@ -91,10 +91,10 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 160M-rtp (este repositorio) | 160M | no disponible | Investigacion sobre envenenamiento de datos con 24 ejecuciones y checkpoints intermedios | no disponible | Publico en HuggingFace, campana en curso |
-| Pythia-160M | 160M | 2048 tokens | Suite de investigacion sobre interpretabilidad y evolucion del entrenamiento | Apache 2.0 | Publico en HuggingFace y EleutherAI |
-| Pythia-410M | 410M | 2048 tokens | Misma suite, mayor escala | Apache 2.0 | Publico en HuggingFace |
-| Pythia-1.4B | 1.4B | 2048 tokens | Suite de investigacion; en esta campana se usa como modelo evaluador fijado | Apache 2.0 | Publico en HuggingFace |
+| 160M-rtp (este repositorio) | 160M | no disponible | Investigacion sobre envenenamiento de datos con 24 ejecuciones y checkpoints intermedios | no disponible | Publico en Hugging Face, campana en curso |
+| Pythia-160M | 160M | 2048 tokens | Suite de investigacion sobre interpretabilidad y evolucion del entrenamiento | Apache 2.0 | Publico en Hugging Face y EleutherAI |
+| Pythia-410M | 410M | 2048 tokens | Misma suite, mayor escala | Apache 2.0 | Publico en Hugging Face |
+| Pythia-1.4B | 1.4B | 2048 tokens | Suite de investigacion; en esta campana se usa como modelo evaluador fijado | Apache 2.0 | Publico en Hugging Face |
 
 La comparación con la suite Pythia es la más pertinente porque 160M-rtp reutiliza la arquitectura y el tokenizer de Pythia-160M, con la diferencia de que se entrena desde inicialización aleatoria sobre una mezcla Dolma congelada en lugar de The Pile, y de que incorpora el envenenamiento controlado. No se dispone de cifras de rendimiento comparadas en la información proporcionada, por lo que la comparación cuantitativa de calidad queda como no disponible.
 
@@ -116,7 +116,7 @@ La comparación con la suite Pythia es la más pertinente porque 160M-rtp reutil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/294-288-pretrain-interaction/160M-rtp
+- Modelo en Hugging Face: https://huggingface.co/294-288-pretrain-interaction/160M-rtp
 - Suite Pythia (arquitectura de referencia Pythia-160M): https://huggingface.co/EleutherAI/pythia-160m
 - Repositorio de Pythia en GitHub: https://github.com/EleutherAI/pythia
 - Dataset Dolma: https://huggingface.co/datasets/allenai/dolma

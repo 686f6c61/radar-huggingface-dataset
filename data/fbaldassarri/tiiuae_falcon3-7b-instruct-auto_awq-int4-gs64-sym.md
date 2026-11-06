@@ -64,11 +64,11 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_awq-int4-gs64-sym | 7B (cuantizado 4-bit) | 32.000 tokens | Inglés (base: en, fr, es, pt) | Apache 2.0 | HuggingFace |
-| tiiuae/Falcon3-7B-Instruct (base) | 7B | 32.000 tokens | Inglés, francés, español, portugués | Apache 2.0 | HuggingFace |
-| fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int4-gs64-sym | 7B (cuantizado 4-bit GPTQ) | 32.000 tokens | Inglés (base: en, fr, es, pt) | Apache 2.0 | HuggingFace |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32.000 tokens | Inglés, francés, español, etc. | Apache 2.0 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Inglés, alemán, francés, etc. | Llama 3.1 Community License | HuggingFace |
+| fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_awq-int4-gs64-sym | 7B (cuantizado 4-bit) | 32.000 tokens | Inglés (base: en, fr, es, pt) | Apache 2.0 | Hugging Face |
+| tiiuae/Falcon3-7B-Instruct (base) | 7B | 32.000 tokens | Inglés, francés, español, portugués | Apache 2.0 | Hugging Face |
+| fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int4-gs64-sym | 7B (cuantizado 4-bit GPTQ) | 32.000 tokens | Inglés (base: en, fr, es, pt) | Apache 2.0 | Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32.000 tokens | Inglés, francés, español, etc. | Apache 2.0 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Inglés, alemán, francés, etc. | Llama 3.1 Community License | Hugging Face |
 
 No se dispone de benchmarks comparativos para evaluar el rendimiento relativo de estos modelos; la comparación se basa únicamente en especificaciones.
 
@@ -86,7 +86,7 @@ No se dispone de benchmarks comparativos para evaluar el rendimiento relativo de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_awq-int4-gs64-sym
+- Modelo en Hugging Face: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_awq-int4-gs64-sym
 - Modelo base: https://huggingface.co/tiiuae/Falcon3-7B-Instruct
 - Intel AutoRound (GitHub): https://github.com/intel/auto-round
 - Auto-round-pipeline: https://git.epicdynamic.com/auto-round-pipeline

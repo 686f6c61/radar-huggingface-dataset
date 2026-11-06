@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / horizonte | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-yam-red-cap-full-7500 | no disponible | chunk 15x7 a 15 Hz | Apache 2.0 | JAX/Orbax (OpenPI) | HuggingFace, 0 descargas |
+| pi05-yam-red-cap-full-7500 | no disponible | chunk 15x7 a 15 Hz | Apache 2.0 | JAX/Orbax (OpenPI) | Hugging Face, 0 descargas |
 | pi0.5 base (Physical Intelligence) | no disponible | no disponible | no disponible en la informacion | JAX/Orbax (OpenPI) | checkpoint oficial `gs://openpi-assets` |
 | Otros fine-tunes de pi0.5 en OpenPI | no disponible | no disponible | no disponible | JAX/Orbax | no disponible |
 
@@ -91,7 +91,7 @@ La comparacion con alternativas de la misma categoria no puede completarse con d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/orchestrallabs/pi05-yam-red-cap-full-7500
+- Modelo en Hugging Face: https://huggingface.co/orchestrallabs/pi05-yam-red-cap-full-7500
 - Dataset de entrenamiento: https://huggingface.co/datasets/npow/yam-gello-red-cap-100
 - Rama de fine-tuning de OpenPI: https://github.com/npow/openpi/tree/feat/yam-redcap-finetune
 - Ejemplo YAM en la rama de entrenamiento: https://github.com/npow/openpi/tree/feat/yam-redcap-finetune/examples/yam

@@ -8,7 +8,7 @@
 
 La particularidad de esta variante concreta es que LoRE solo esta activado en la cabecera de salida (no en los embeddings de entrada), con un rango de 128 y una inicializacion "corrected". El objetivo del experimento es comprobar si es posible reducir de forma sustancial el numero de parametros dedicados al vocabulario sin degradar la calidad del modelo, aprovechando que la matriz de salida no esta atada a los embeddings (`weight tying: False`).
 
-Se trata de un modelo de investigacion, no de un modelo de produccion: fue entrenado con aproximadamente 3.260 millones de tokens (unas 20 veces el numero de parametros, la cifra "Chinchilla-optimal" segun el autor) sobre el dataset `gpjt/fineweb-gpt2-tokens`, con 0 descargas y 0 likes en HuggingFace en el momento de la consulta. El propio autor advierte que el modelo es "tanto tonto como ignorante" y desaconseja su uso para trabajo serio.
+Se trata de un modelo de investigacion, no de un modelo de produccion: fue entrenado con aproximadamente 3.260 millones de tokens (unas 20 veces el numero de parametros, la cifra "Chinchilla-optimal" segun el autor) sobre el dataset `gpjt/fineweb-gpt2-tokens`, con 0 descargas y 0 likes en Hugging Face en el momento de la consulta. El propio autor advierte que el modelo es "tanto tonto como ignorante" y desaconseja su uso para trabajo serio.
 
 ## Especificaciones tecnicas
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 8xa100m40-lore-11-output-only-corrected-smart-init | 130,9M declarados / 143,5M en safetensors | 1.024 | GPT-2 con cabecera LoRE | Apache 2.0 | HuggingFace, `transformers` con `trust_remote_code` |
-| GPT-2 124M (OpenAI) | 124M | 1.024 | GPT-2 densa, weight tying activado | licencia MIT modificada | HuggingFace, ampliamente soportado |
-| GPT-2 355M (OpenAI) | 355M | 1.024 | GPT-2 densa, 24 capas, dim 1.024 | licencia MIT modificada | HuggingFace, ampliamente soportado |
-| Pythia-160M (EleutherAI) | 160M | 2.048 | Transformer causal decoder-only | Apache 2.0 | HuggingFace, usado en investigacion de interpretabilidad |
+| 8xa100m40-lore-11-output-only-corrected-smart-init | 130,9M declarados / 143,5M en safetensors | 1.024 | GPT-2 con cabecera LoRE | Apache 2.0 | Hugging Face, `transformers` con `trust_remote_code` |
+| GPT-2 124M (OpenAI) | 124M | 1.024 | GPT-2 densa, weight tying activado | licencia MIT modificada | Hugging Face, ampliamente soportado |
+| GPT-2 355M (OpenAI) | 355M | 1.024 | GPT-2 densa, 24 capas, dim 1.024 | licencia MIT modificada | Hugging Face, ampliamente soportado |
+| Pythia-160M (EleutherAI) | 160M | 2.048 | Transformer causal decoder-only | Apache 2.0 | Hugging Face, usado en investigacion de interpretabilidad |
 
 La diferencia principal frente a GPT-2 124M es la factorizacion de la cabecera de salida: mientras GPT-2 ata la matriz de embeddings y la de salida, este modelo las mantiene separadas y reduce la de salida a rango 128. La comparacion de rendimiento con estos modelos no puede establecerse porque no hay benchmarks publicados para el modelo de `gpjt`.
 
@@ -91,7 +91,7 @@ La diferencia principal frente a GPT-2 124M es la factorizacion de la cabecera d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gpjt/8xa100m40-lore-11-output-only-corrected-smart-init
+- Modelo en Hugging Face: https://huggingface.co/gpjt/8xa100m40-lore-11-output-only-corrected-smart-init
 - Repositorio del codigo de entrenamiento: https://github.com/gpjt/ddp-base-model-from-scratch
 - Notebook de fine-tuning de ejemplo: https://github.com/gpjt/ddp-base-model-from-scratch/blob/main/hf_train.ipynb
 - Blog del autor sobre matrices de vocabulario de bajo rango: https://www.gilesthomas.com/2026/10/low-rank-vocab-matrices

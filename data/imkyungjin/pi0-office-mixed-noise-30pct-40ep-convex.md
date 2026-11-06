@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Tipo | Parámetros | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `ImKyungjin/pi0-office-mixed-noise-30pct-40ep-convex` | VLA (ajuste de π₀) | 3.501.372.176 | Apache 2.0 | Repositorio HuggingFace, 0 descargas | Especializado en tareas de oficina con datos ruidosos |
+| `ImKyungjin/pi0-office-mixed-noise-30pct-40ep-convex` | VLA (ajuste de π₀) | 3.501.372.176 | Apache 2.0 | Repositorio Hugging Face, 0 descargas | Especializado en tareas de oficina con datos ruidosos |
 | π₀ base (Physical Intelligence / LeRobot) | VLA | ~3 B (no confirmado en la información disponible) | Apache 2.0 según la model card de referencia | Pesos abiertos vía OpenPI/LeRobot | Modelo generalista; referencia frente a la que medir el ajuste |
 | π₀-FAST | VLA autorregresivo con tokenizador FAST | no disponible | no disponible | Pesos abiertos vía OpenPI | Variante de decodificación de acciones distinta |
 | OpenVLA | VLA | no disponible en esta búsqueda | no disponible en esta búsqueda | Pesos abiertos | Alternativa de la misma categoría; requiere verificación de datos |
@@ -88,7 +88,7 @@ Los datos de los modelos alternativos no se han podido verificar con la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ImKyungjin/pi0-office-mixed-noise-30pct-40ep-convex
+- Modelo en Hugging Face: https://huggingface.co/ImKyungjin/pi0-office-mixed-noise-30pct-40ep-convex
 - Dataset de entrenamiento: https://huggingface.co/datasets/taewonkoo/office_task_mixed_suboptimal_seed1000_30pct_40ep
 - Blog de π₀ (Physical Intelligence): https://www.physicalintelligence.company/blog/pi0
 - Repositorio OpenPI: https://github.com/Physical-Intelligence/openpi

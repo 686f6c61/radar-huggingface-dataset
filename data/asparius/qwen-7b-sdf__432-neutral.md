@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`asparius/qwen-7B-sdf__432-neutral` es un ajuste fino (fine-tune) del modelo base Qwen/Qwen2.5-Coder-7B, publicado en HuggingFace por el usuario `asparius`. Se distribuye con la librería `transformers`, pipeline de `text-generation` y etiquetas que delatan su proceso de creación: `generated_from_trainer`, `trl` y `sft`, es decir, un entrenamiento supervisado (supervised fine-tuning) realizado sobre el modelo base mediante la librería TRL. El nombre del repositorio sugiere una variante concreta dentro de una familia de experimentos (`sdf`, `432`, `neutral`), pero no se aporta documentación que explique esta nomenclatura.
+`asparius/qwen-7B-sdf__432-neutral` es un ajuste fino (fine-tune) del modelo base Qwen/Qwen2.5-Coder-7B, publicado en Hugging Face por el usuario `asparius`. Se distribuye con la librería `transformers`, pipeline de `text-generation` y etiquetas que delatan su proceso de creación: `generated_from_trainer`, `trl` y `sft`, es decir, un entrenamiento supervisado (supervised fine-tuning) realizado sobre el modelo base mediante la librería TRL. El nombre del repositorio sugiere una variante concreta dentro de una familia de experimentos (`sdf`, `432`, `neutral`), pero no se aporta documentación que explique esta nomenclatura.
 
-El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y su ficha de HuggingFace no incluye model card descriptiva: no declara licencia, idiomas soportados, composición del dataset de entrenamiento, hiperparámetros ni resultados de evaluación. Esto lo sitúa como un artefacto de investigación sin validación pública, más cercano a un checkpoint experimental que a un modelo listo para producción.
+El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y su ficha de Hugging Face no incluye model card descriptiva: no declara licencia, idiomas soportados, composición del dataset de entrenamiento, hiperparámetros ni resultados de evaluación. Esto lo sitúa como un artefacto de investigación sin validación pública, más cercano a un checkpoint experimental que a un modelo listo para producción.
 
 Dado que deriva de Qwen2.5-Coder-7B, se le presupone la arquitectura transformer decoder-only de ~7.000 millones de parámetros del modelo base y una orientación hacia tareas de código, pero ninguna de estas características está confirmada en la información disponible. Cualquier uso en producción requeriría una evaluación propia previa.
 
@@ -23,7 +23,7 @@ Dado que deriva de Qwen2.5-Coder-7B, se le presupone la arquitectura transformer
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información técnica sobre la arquitectura en la model card del repositorio. La única información estructural disponible proviene de las etiquetas: `base_model:Qwen/Qwen2.5-Coder-7B` y `base_model:finetune:Qwen/Qwen2.5-Coder-7B` indican que se trata de un fine-tune del modelo Qwen2.5-Coder-7B, y las etiquetas `trl` y `sft` apuntan a un entrenamiento supervisado ejecutado con la librería TRL de HuggingFace. La etiqueta `generated_from_trainer` confirma que el checkpoint se generó con el `Trainer` del ecosistema HuggingFace.
+No se ha publicado información técnica sobre la arquitectura en la model card del repositorio. La única información estructural disponible proviene de las etiquetas: `base_model:Qwen/Qwen2.5-Coder-7B` y `base_model:finetune:Qwen/Qwen2.5-Coder-7B` indican que se trata de un fine-tune del modelo Qwen2.5-Coder-7B, y las etiquetas `trl` y `sft` apuntan a un entrenamiento supervisado ejecutado con la librería TRL de Hugging Face. La etiqueta `generated_from_trainer` confirma que el checkpoint se generó con el `Trainer` del ecosistema Hugging Face.
 
 Se desconoce por completo la composición del dataset, el número de tokens de entrenamiento, la existencia de fases posteriores de alineación (RLHF, DPO, ORPO) y los hiperparámetros empleados (learning rate, epochs, rango LoRA o si se trató de un ajuste completo). El sufijo `neutral` en el nombre podría indicar un objetivo de neutralidad en las respuestas, pero es una inferencia no verificada. Tampoco hay información sobre innovaciones técnicas como decodificación especulativa, atención lineal o cualquier modificación sobre la arquitectura del modelo base.
 
@@ -36,7 +36,7 @@ Se desconoce por completo la composición del dataset, el número de tokens de e
 - Capacidades de agente y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible; el campo de idiomas de la ficha está vacío.
 - Capacidades especiales (modo thinking, visión, audio): no disponible; no se declara ninguna.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el modelo puede desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el modelo puede desplegarse en Hugging Face Inference Endpoints.
 
 ## Casos de uso
 
@@ -61,7 +61,7 @@ Las siguientes estimaciones se derivan del tamaño nominal de 7B indicado en el 
 - VRAM estimada para inferencia: aproximadamente 14-16 GB en precisión bf16/fp16, 8-9 GB en cuantización de 8 bits, 4-5 GB en cuantización de 4 bits (GPTQ, AWQ o GGUF Q4_K_M).
 - GPU recomendadas para producción: NVIDIA A100 40/80 GB, H100, L40S o A10G para despliegues bf16 con batching; RTX 4090 o RTX 3090 (24 GB) para inferencia en bf16 de una sola secuencia.
 - GPU de consumo: cabe en RTX 4090 y RTX 3090 en bf16; en RTX 4080 (16 GB) o RTX 4060 Ti (16 GB) requiere cuantización de 8 o 4 bits; en RTX 3060 (12 GB) y GPUs de 8 GB es necesario cuantizar a 4 bits.
-- Opciones de despliegue: no se documentan en la ficha. Por el formato y la librería declarada (`transformers`), los candidatos serían vLLM, Text Generation Inference, SGLang, llama.cpp/Ollama (si se genera una conversión GGUF) y HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`).
+- Opciones de despliegue: no se documentan en la ficha. Por el formato y la librería declarada (`transformers`), los candidatos serían vLLM, Text Generation Inference, SGLang, llama.cpp/Ollama (si se genera una conversión GGUF) y Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`).
 - Latencia y throughput: no disponible. No hay mediciones publicadas para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -70,8 +70,8 @@ No se dispone de datos verificados de este fine-tune. La comparación se plantea
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| asparius/qwen-7B-sdf__432-neutral | no disponible (~7B segun el nombre) | no disponible | no disponible | HuggingFace, 0 descargas | Sin model card, sin benchmarks, sin dataset documentado |
-| Qwen/Qwen2.5-Coder-7B (modelo base) | ~7B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace, ampliamente utilizado | Consultar su model card oficial para datos verificados |
+| asparius/qwen-7B-sdf__432-neutral | no disponible (~7B segun el nombre) | no disponible | no disponible | Hugging Face, 0 descargas | Sin model card, sin benchmarks, sin dataset documentado |
+| Qwen/Qwen2.5-Coder-7B (modelo base) | ~7B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face, ampliamente utilizado | Consultar su model card oficial para datos verificados |
 | Alternativas de la misma categoria (por ejemplo, otros fine-tunes de 7B orientados a codigo) | no disponible | no disponible | no disponible | no disponible | No se han identificado comparables en la busqueda web realizada |
 
 ## Limitaciones y advertencias
@@ -89,6 +89,6 @@ No se dispone de datos verificados de este fine-tune. La comparación se plantea
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asparius/qwen-7B-sdf__432-neutral
+- Hugging Face: https://huggingface.co/asparius/qwen-7B-sdf__432-neutral
 - Modelo base declarado en las etiquetas: https://huggingface.co/Qwen/Qwen2.5-Coder-7B
 - Búsqueda web realizada: los resultados devueltos corresponden a registros mercantiles de la empresa checa Frenwood s.r.o. (IČO 28628152) y no guardan relación con el modelo. No se han encontrado papers, blogs, repositorios ni demos asociados a `asparius/qwen-7B-sdf__432-neutral`.

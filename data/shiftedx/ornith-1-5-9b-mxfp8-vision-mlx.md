@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para comparar directamente este modelo c
 
 ## Enlaces
 
-- [Modelo en HuggingFace: Shiftedx/ornith-1.5-9b-mxfp8-vision-mlx](https://huggingface.co/Shiftedx/ornith-1.5-9b-mxfp8-vision-mlx)
+- [Modelo en Hugging Face: Shiftedx/ornith-1.5-9b-mxfp8-vision-mlx](https://huggingface.co/Shiftedx/ornith-1.5-9b-mxfp8-vision-mlx)
 - [Modelo base: ornith-ai/Ornith-1.5-9B](https://huggingface.co/ornith-ai/Ornith-1.5-9B)
 - [Pagina de Ornith-1.5 en ornith.ai](https://ornith.ai/ornith_1_5.html)
 - [Articulo de AI/TLDR sobre Ornith-1.5](https://ai-tldr.dev/releases/ornith-1-5/)

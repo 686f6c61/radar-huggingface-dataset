@@ -88,10 +88,10 @@ Resultados del RL reportados en la model card (temperatura 1): pass@1 subió de 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| glassbox-135m-rl-arith | 135,3M | 1024 | Transformer from-scratch + GRPO aritmético, observabilidad completa | Apache 2.0 | HuggingFace (safetensors + código PyTorch) |
-| glassbox-135m-base | 135,3M | 1024 | Mismo modelo antes del RL | Apache 2.0 | HuggingFace |
-| glassbox-135m-sft | 135,3M | 1024 | Mismo modelo tras SFT | Apache 2.0 | HuggingFace |
-| SmolLM-135M | 135M | 2048 | Transformer denso, preentrenamiento a gran escala | Apache 2.0 | HuggingFace |
+| glassbox-135m-rl-arith | 135,3M | 1024 | Transformer from-scratch + GRPO aritmético, observabilidad completa | Apache 2.0 | Hugging Face (safetensors + código PyTorch) |
+| glassbox-135m-base | 135,3M | 1024 | Mismo modelo antes del RL | Apache 2.0 | Hugging Face |
+| glassbox-135m-sft | 135,3M | 1024 | Mismo modelo tras SFT | Apache 2.0 | Hugging Face |
+| SmolLM-135M | 135M | 2048 | Transformer denso, preentrenamiento a gran escala | Apache 2.0 | Hugging Face |
 
 La comparación con modelos de propósito general del mismo tamaño (por ejemplo, SmolLM-135M) no es directa: glassbox-135m-rl-arith está entrenado con 2,40B tokens frente a los cientos de miles de millones de los modelos de producción, y su contexto es de 1024 tokens. Su ventaja diferencial no es el rendimiento general sino la trazabilidad total del entrenamiento. No se dispone de benchmarks comunes que permitan una comparación cuantitativa con alternativas en la información proporcionada.
 
@@ -109,7 +109,7 @@ La comparación con modelos de propósito general del mismo tamaño (por ejemplo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syedazeez/glassbox-135m-rl-arith
+- Modelo en Hugging Face: https://huggingface.co/syedazeez/glassbox-135m-rl-arith
 - Dataset de telemetría: https://huggingface.co/datasets/syedazeez/glassbox-135m-telemetry
 - Modelo base: https://huggingface.co/syedazeez/glassbox-135m-base
 - Modelo tras SFT: https://huggingface.co/syedazeez/glassbox-135m-sft

@@ -92,8 +92,8 @@ La comparativa con Whisper-tiny-ExecuTorch no está detallada en la información
 
 ## Enlaces
 
-- [HuggingFace: mlboydaisuke/Whisper-base-ExecuTorch](https://huggingface.co/mlboydaisuke/Whisper-base-ExecuTorch)
-- [Colección ExecuTorch Model Zoo en HuggingFace](https://huggingface.co/collections/mlboydaisuke/executorch-model-zoo)
+- [Hugging Face: mlboydaisuke/Whisper-base-ExecuTorch](https://huggingface.co/mlboydaisuke/Whisper-base-ExecuTorch)
+- [Colección ExecuTorch Model Zoo en Hugging Face](https://huggingface.co/collections/mlboydaisuke/executorch-model-zoo)
 - [GitHub: pytorch/executorch](https://github.com/pytorch/executorch)
 - [Documentacion oficial de ExecuTorch](https://executorch.ai/)
 - [Ejemplo de Whisper en ExecuTorch (GitHub)](https://github.com/pytorch/executorch/blob/main/examples/models/whisper/README.md)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Anonymous36/bright-thicket-64` es un repositorio publicado en HuggingFace por el usuario anónimo «Anonymous36» que, según sus metadatos, contiene un adaptador PEFT en formato safetensors bajo licencia Apache 2.0. El repositorio no incluye model card descriptiva (el README se limita a las claves YAML de licencia y librería), no declara pipeline, no especifica idiomas y no identifica el modelo base sobre el que se aplica el adaptador. Con 0 descargas y 0 likes desde su creación el 24 de octubre de 2026, no hay evidencia de uso ni de validación por parte de la comunidad.
+`Anonymous36/bright-thicket-64` es un repositorio publicado en Hugging Face por el usuario anónimo «Anonymous36» que, según sus metadatos, contiene un adaptador PEFT en formato safetensors bajo licencia Apache 2.0. El repositorio no incluye model card descriptiva (el README se limita a las claves YAML de licencia y librería), no declara pipeline, no especifica idiomas y no identifica el modelo base sobre el que se aplica el adaptador. Con 0 descargas y 0 likes desde su creación el 24 de octubre de 2026, no hay evidencia de uso ni de validación por parte de la comunidad.
 
 El tamaño del repositorio, 1,9 GB, es coherente con un adaptador LoRA/QLoRA de rango relativamente alto o con un conjunto de pesos auxiliares, pero no permite inferir la arquitectura, el número de parámetros ni la longitud de contexto del modelo subyacente. Tampoco se ha localizado documentación técnica, paper, blog ni repositorio de código asociado: las búsquedas web devuelven únicamente sitios genéricos de generación de modelos 3D y herramientas de IA sin relación con este artefacto.
 
@@ -81,7 +81,7 @@ No disponible. No se ha identificado el modelo base ni existen datos publicados 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Anonymous36/bright-thicket-64
+- Hugging Face: https://huggingface.co/Anonymous36/bright-thicket-64
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible
 - Repositorio de codigo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ellisson001/Ellisson es un repositorio alojado en HuggingFace por el usuario Ellisson001, publicado y actualizado el 27 de septiembre de 2026. La informacion publica disponible es minima: la model card unicamente contiene la declaracion de licencia Apache 2.0 en el encabezado YAML y carece de descripcion, documentacion tecnica o instrucciones de uso. No se especifica pipeline, idiomas, arquitectura ni tamano.
+Ellisson001/Ellisson es un repositorio alojado en Hugging Face por el usuario Ellisson001, publicado y actualizado el 27 de septiembre de 2026. La informacion publica disponible es minima: la model card unicamente contiene la declaracion de licencia Apache 2.0 en el encabezado YAML y carece de descripcion, documentacion tecnica o instrucciones de uso. No se especifica pipeline, idiomas, arquitectura ni tamano.
 
 En el momento de la consulta el repositorio acumula 0 descargas y 0 "likes", y las busquedas web realizadas no devuelven ninguna referencia al modelo: los resultados obtenidos corresponden a entidades homonimas sin relacion (un LoRA de FLUX.1 alojado en Tensor.Art, un listado de modelos de IA sin censura en GitHub, directorios de modelos fotograficos y modelos 3D). No existe, por tanto, evidencia externa de su existencia, entrenamiento o uso.
 
@@ -79,7 +79,7 @@ No disponible. Al no conocerse el tamano, la arquitectura, la licencia de uso ef
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificables |
 |---|---|---|---|---|---|
-| Ellisson001/Ellisson | no disponible | no disponible | apache-2.0 | repositorio HuggingFace sin descargas | fecha de publicacion, licencia |
+| Ellisson001/Ellisson | no disponible | no disponible | apache-2.0 | repositorio Hugging Face sin descargas | fecha de publicacion, licencia |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No disponible. Al no conocerse el tamano, la arquitectura, la licencia de uso ef
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ellisson001/Ellisson
+- Repositorio en Hugging Face: https://huggingface.co/Ellisson001/Ellisson
 - Listado de modelos de IA sin censura en GitHub (resultado de busqueda, no relacionado): https://github.com/samssouza/uncensored-ai-list
 - LoRA "Ellison, AI Caracter" en Tensor.Art (resultado de busqueda, no relacionado): https://www.tensor.art/models/990146080836431653
 - GetModel, busqueda de modelos por foto (resultado de busqueda, no relacionado): https://getmodel.com/find/

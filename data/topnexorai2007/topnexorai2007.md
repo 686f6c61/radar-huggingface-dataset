@@ -2,7 +2,7 @@
 
 ## Resumen
 
-topnexorai2007/topnexorai2007 es un repositorio publicado en HuggingFace por el usuario topnexorai2007. En el momento de la consulta acumula 0 descargas y 1 like, no tiene pipeline declarado, no especifica idiomas soportados y su model card contiene unicamente el bloque de metadatos con la licencia (apache-2.0), sin texto descriptivo, sin ejemplos de uso y sin referencias a documentacion externa.
+topnexorai2007/topnexorai2007 es un repositorio publicado en Hugging Face por el usuario topnexorai2007. En el momento de la consulta acumula 0 descargas y 1 like, no tiene pipeline declarado, no especifica idiomas soportados y su model card contiene unicamente el bloque de metadatos con la licencia (apache-2.0), sin texto descriptivo, sin ejemplos de uso y sin referencias a documentacion externa.
 
 No se dispone de informacion alguna sobre la arquitectura, el numero de parametros, la longitud de contexto, el dataset de entrenamiento ni el proceso de alineacion. Tampoco hay pesos publicados de forma verificable, ficheros de configuracion, tokenizer ni resultados de evaluacion que permitan clasificar el artefacto como un modelo de lenguaje, un modelo de vision, un adaptador o un repositorio de prueba.
 
@@ -98,7 +98,7 @@ No disponible. No se ha identificado ninguna categoria funcional a la que adscri
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/topnexorai2007/topnexorai2007
+- Hugging Face: https://huggingface.co/topnexorai2007/topnexorai2007
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion tecnica: no disponible

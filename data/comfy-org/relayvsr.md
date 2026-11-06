@@ -73,7 +73,7 @@ No disponible. La información proporcionada no incluye modelos alternativos de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Comfy-Org/RelayVSR
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/RelayVSR
 - Modelo original: https://huggingface.co/kopper/RelayVSR
 - Modelo base secundario: https://huggingface.co/lightx2v/RelayVSR_X2
 - Repositorio de ComfyUI: https://github.com/Comfy-Org/ComfyUI

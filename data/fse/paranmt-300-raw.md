@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fse/paranmt-300-raw` es un modelo de embeddings estaticos de frases publicado por el usuario `fse` en HuggingFace. No se trata de un transformer generativo, sino de una tabla de vectores de palabras de 77.224 filas y 300 dimensiones en float32, sobre la que se aplica una media aritmetica de las filas de los tokens de un texto y una normalizacion a longitud unitaria. El modelo se distribuye como conversion del modelo gensim `fse/paranmt-300`, que a su vez deriva de los vectores ParaNMT descritos por Wieting y Kiela (2018).
+`fse/paranmt-300-raw` es un modelo de embeddings estaticos de frases publicado por el usuario `fse` en Hugging Face. No se trata de un transformer generativo, sino de una tabla de vectores de palabras de 77.224 filas y 300 dimensiones en float32, sobre la que se aplica una media aritmetica de las filas de los tokens de un texto y una normalizacion a longitud unitaria. El modelo se distribuye como conversion del modelo gensim `fse/paranmt-300`, que a su vez deriva de los vectores ParaNMT descritos por Wieting y Kiela (2018).
 
 El modelo resuelve el problema de obtener representaciones de frases rapidas y de bajo coste computacional sin necesidad de una GPU ni de un transformer. Al ser una tabla de embeddings estatica, la codificacion de una frase se reduce a una busqueda en tabla y una media ponderada, lo que permite procesar grandes volumenes de texto con latencia minima y huella de memoria reducida (el fichero de pesos ocupa unos 93,8 MB).
 
@@ -107,7 +107,7 @@ No se dispone en la informacion proporcionada de resultados de benchmarks de mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/paranmt-300-raw
+- Modelo en Hugging Face: https://huggingface.co/fse/paranmt-300-raw
 - Modelo base (gensim): https://huggingface.co/fse/paranmt-300
 - Repositorio de la libreria fse: https://github.com/oborchers/Fast_Sentence_Embeddings
 - Repositorio de ParaNMT: https://github.com/jwieting/para-nmt-50m

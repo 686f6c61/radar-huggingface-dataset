@@ -74,8 +74,8 @@ No se dispone de datos de benchmarks ni de licencia que permitan una comparació
 
 | Modelo / formato | Parámetros | Peso aproximado | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| vissarionovich/Skyfall-31B-v4.2-NVFP4 | 31,35 mil millones | 19,6 GB (tamaño real del repositorio) | No disponible | HuggingFace, 0 descargas |
-| TheDrummer/Skyfall-31B-v4.2 (base, BF16) | 31,35 mil millones | ≈62,7 GB (estimado) | No disponible | HuggingFace |
+| vissarionovich/Skyfall-31B-v4.2-NVFP4 | 31,35 mil millones | 19,6 GB (tamaño real del repositorio) | No disponible | Hugging Face, 0 descargas |
+| TheDrummer/Skyfall-31B-v4.2 (base, BF16) | 31,35 mil millones | ≈62,7 GB (estimado) | No disponible | Hugging Face |
 | Mismo modelo en GGUF Q4_K_M | 31,35 mil millones | ≈18-19 GB (estimado) | No disponible | No confirmada para este modelo |
 | Mismo modelo en AWQ o GPTQ de 4 bits | 31,35 mil millones | ≈17-19 GB (estimado) | No disponible | No confirmada para este modelo |
 
@@ -89,7 +89,7 @@ No se identifican en la información proporcionada modelos de terceros comparabl
 - Contradicción en los metadatos: el nombre del modelo indica NVFP4 y la model card aplica la receta NVFP4, pero las etiquetas del repositorio incluyen `8-bit`. Conviene inspeccionar la configuración de cuantización antes de desplegar.
 - Licencia no declarada: no hay información sobre la licencia del checkpoint ni sobre la del modelo base. No se puede asumir uso comercial sin verificar la licencia de TheDrummer/Skyfall-31B-v4.2.
 - Idiomas y contexto sin especificar: no se documenta la ventana de contexto ni los idiomas soportados, lo que impide dimensionar correctamente prompts y caché KV.
-- Sin validación comunitaria: 0 descargas y 0 likes en el momento de redactar esta ficha, sin pipeline declarado en HuggingFace. No hay señal externa de que el checkpoint cargue correctamente en ningún framework.
+- Sin validación comunitaria: 0 descargas y 0 likes en el momento de redactar esta ficha, sin pipeline declarado en Hugging Face. No hay señal externa de que el checkpoint cargue correctamente en ningún framework.
 - Dependencia de hardware: el formato NVFP4 está ligado a las GPU Blackwell. Desplegarlo en Hopper o Ada puede implicar rutas no nativas o falta de soporte.
 - Sesgos y alucinación: no documentados. Se heredan del modelo base, con el agravante de que la cuantización puede amplificar la generación de contenido incoherente en dominios poco representados en la calibración.
 - Artefacto no reentrenable: al ser un checkpoint cuantizado one-shot, no es adecuado como punto de partida para ajuste fino adicional sin volver al modelo base.

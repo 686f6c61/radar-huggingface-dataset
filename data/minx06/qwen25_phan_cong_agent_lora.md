@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`minx06/qwen25_phan_cong_agent_lora` es un adaptador LoRA publicado en HuggingFace por el usuario minx06, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base `unsloth/Qwen2.5-7B-Instruct-bnb-4bit`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador (repo de 0,2 GB) que debe cargarse junto al modelo base cuantizado en 4 bits para funcionar. El nombre sugiere un ajuste orientado a comportamiento de agente, aunque la model card no documenta el dataset ni el objetivo concreto del entrenamiento.
+`minx06/qwen25_phan_cong_agent_lora` es un adaptador LoRA publicado en Hugging Face por el usuario minx06, entrenado mediante SFT (supervised fine-tuning) sobre el modelo base `unsloth/Qwen2.5-7B-Instruct-bnb-4bit`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador (repo de 0,2 GB) que debe cargarse junto al modelo base cuantizado en 4 bits para funcionar. El nombre sugiere un ajuste orientado a comportamiento de agente, aunque la model card no documenta el dataset ni el objetivo concreto del entrenamiento.
 
 La relevancia de esta ficha es limitada: el autor no ha rellenado ninguna seccion de la model card (todas aparecen como "[More Information Needed]"), no declara licencia ni idiomas, y el repositorio acumula 0 descargas y 0 likes desde su creacion en noviembre de 2026. Se trata, por tanto, de un artefacto experimental sin validacion publica.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| minx06/qwen25_phan_cong_agent_lora | 7,6B (adaptador LoRA) | 32.768 | no disponible | HuggingFace, 0 descargas | Sin evaluacion ni documentacion |
-| Qwen2.5-7B-Instruct | 7,6B | 32.768 | Apache 2.0 (Qwen2.5) | HuggingFace, ampliamente usado | Modelo base de referencia, con benchmarks publicados |
-| Mistral-7B-Instruct-v0.3 | 7,2B | 32.768 | Apache 2.0 | HuggingFace | Alternativa densa de tamano similar con tool calling |
-| Llama-3.1-8B-Instruct | 8,0B | 131.072 | Llama 3.1 Community License | HuggingFace | Contexto mucho mayor y ecosistema maduro |
+| minx06/qwen25_phan_cong_agent_lora | 7,6B (adaptador LoRA) | 32.768 | no disponible | Hugging Face, 0 descargas | Sin evaluacion ni documentacion |
+| Qwen2.5-7B-Instruct | 7,6B | 32.768 | Apache 2.0 (Qwen2.5) | Hugging Face, ampliamente usado | Modelo base de referencia, con benchmarks publicados |
+| Mistral-7B-Instruct-v0.3 | 7,2B | 32.768 | Apache 2.0 | Hugging Face | Alternativa densa de tamano similar con tool calling |
+| Llama-3.1-8B-Instruct | 8,0B | 131.072 | Llama 3.1 Community License | Hugging Face | Contexto mucho mayor y ecosistema maduro |
 
 La comparacion relevante es contra el propio Qwen2.5-7B-Instruct: el adaptador no aporta ninguna ventaja documentada frente al base, y su licencia sin declarar impide usarlo comercialmente con garantias. Llama-3.1-8B-Instruct ofrece cuatro veces mas contexto y una licencia explicita.
 
@@ -85,7 +85,7 @@ La comparacion relevante es contra el propio Qwen2.5-7B-Instruct: el adaptador n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minx06/qwen25_phan_cong_agent_lora
+- Modelo en Hugging Face: https://huggingface.co/minx06/qwen25_phan_cong_agent_lora
 - Modelo base (Unsloth, 4 bits): https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
 - Modelo base original (Qwen): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio Qwen2.5: https://github.com/QwenLM/Qwen2.5

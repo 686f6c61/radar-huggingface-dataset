@@ -107,12 +107,12 @@ No se identifican en la informacion disponible modelos de clasificacion de un so
 - Sesgos conocidos: no documentados por el autor. El entrenamiento sobre `hatecheck-italian` y datasets de moderacion puede heredar sesgos de anotacion de esas fuentes, pero no hay analisis publicado.
 - Longitud de contexto no especificada: no es posible planificar el troceado de entradas largas sin medirla empiricamente.
 - Restricciones de licencia: Apache 2.0 permite uso comercial y modificacion, pero conviene verificar la licencia del modelo base `mii-llm/nesso-4B`, que no figura en la informacion disponible y podria imponer condiciones adicionales sobre los pesos derivados.
-- Trazabilidad limitada: el repositorio registra 0 descargas y 0 "likes", no hay paper asociado ni evaluacion independiente, y el modelo fue creado en octubre de 2026 segun los metadatos de HuggingFace.
+- Trazabilidad limitada: el repositorio registra 0 descargas y 0 "likes", no hay paper asociado ni evaluacion independiente, y el modelo fue creado en octubre de 2026 segun los metadatos de Hugging Face.
 - Para produccion se recomienda validar con un conjunto propio del dominio objetivo antes del despliegue, dado que la suite de evaluacion es generica y no cubre todos los registros del italiano real.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nickprock/archai-jev-nesso-4b-ita
+- Modelo en Hugging Face: https://huggingface.co/nickprock/archai-jev-nesso-4b-ita
 - Modelo base: https://huggingface.co/mii-llm/nesso-4B
 - Dataset `Paul/hatecheck-italian`: https://huggingface.co/datasets/Paul/hatecheck-italian
 - Dataset `evalitahf/hatespeech_detection`: https://huggingface.co/datasets/evalitahf/hatespeech_detection

@@ -82,7 +82,7 @@ Segun la model card, AesCode-8B mejora Visual en 31,1 puntos y Overall en 31,0 r
 
 | Modelo | Parametros | Contexto | Overall (con ref.) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AesCode-8B | ~8,77 B | 24.576 | 82,94 | Apache 2.0 | Pesos abiertos en HuggingFace |
+| AesCode-8B | ~8,77 B | 24.576 | 82,94 | Apache 2.0 | Pesos abiertos en Hugging Face |
 | AesCode-32B | no disponible | no disponible | 85,89 | no disponible | Pesos abiertos (companion) |
 | Qwen3-VL-8B-Instruct | ~8 B | no disponible | 51,93 | no disponible | Pesos abiertos (backbone) |
 | Qwen3-VL-32B | ~32 B | no disponible | 61,10 | no disponible | Pesos abiertos |
@@ -105,8 +105,8 @@ Nota: la comparativa de benchmarks se refiere a la tarea concreta de generacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TechnoBaptist/AesCode-8B
-- Modelo oficial de referencia en HuggingFace (segun la model card): https://huggingface.co/microsoft/AesCode-8B
+- Modelo en Hugging Face: https://huggingface.co/TechnoBaptist/AesCode-8B
+- Modelo oficial de referencia en Hugging Face (segun la model card): https://huggingface.co/microsoft/AesCode-8B
 - Modelo companion AesCode-32B: https://huggingface.co/microsoft/AesCode-32B
 - Repositorio de codigo: https://github.com/microsoft/AesCode
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct

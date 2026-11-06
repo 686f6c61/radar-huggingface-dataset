@@ -1,7 +1,7 @@
 # gaidar12345/crab-1-benchmark
 
 ## Resumen
-Crab-1 benchmark es un conjunto de datos de evaluación (no un modelo de lenguaje) diseñado para medir las capacidades de agentes de inteligencia artificial en tareas de OSINT (Open Source Intelligence) sobre empresas francesas. Fue publicado por el usuario gaidar12345 en HuggingFace y forma parte del proyecto Crab-1, cuyo repositorio principal se encuentra en GitHub. El benchmark contiene 30 empresas francesas con ground truth verificado manualmente, incluyendo datos oficiales del registro mercantil francés (SIREN, SIRET, código NAF, etc.) y datos públicos de sitios web.
+Crab-1 benchmark es un conjunto de datos de evaluación (no un modelo de lenguaje) diseñado para medir las capacidades de agentes de inteligencia artificial en tareas de OSINT (Open Source Intelligence) sobre empresas francesas. Fue publicado por el usuario gaidar12345 en Hugging Face y forma parte del proyecto Crab-1, cuyo repositorio principal se encuentra en GitHub. El benchmark contiene 30 empresas francesas con ground truth verificado manualmente, incluyendo datos oficiales del registro mercantil francés (SIREN, SIRET, código NAF, etc.) y datos públicos de sitios web.
 
 La relevancia de este recurso radica en que proporciona una evaluación objetiva y reproducible para agentes que utilizan herramientas web en vivo, permitiendo comparar modelos en tareas de búsqueda, extracción y verificación de información. Al estar licenciado bajo CC0, los datos son de dominio público, lo que facilita su uso en investigación y desarrollo. El benchmark es perecedero porque las herramientas acceden a la web en tiempo real, por lo que las puntuaciones pueden variar entre días.
 
@@ -39,7 +39,7 @@ El benchmark se utiliza mediante un harness de evaluación (`eval/run_eval.py` e
 - Investigación académica sobre agentes autónomos: el conjunto de datos con ground truth verificado es un recurso valioso para estudiar la fiabilidad de agentes en tareas de información del mundo real.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye puntuaciones de modelos evaluados, y la model card solo describe la estructura y el método de uso. Cualquier comparación de rendimiento debe realizarse ejecutando el harness contra los modelos deseados, teniendo en cuenta que los resultados son sensibles al día de ejecución.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye puntuaciones de modelos evaluados, y la model card solo describe la estructura y el método de uso. Cualquier comparación de rendimiento debe realizarse ejecutando el harness contra los modelos deseados, teniendo en cuenta que los resultados son sensibles al día de ejecución.
 
 ## Requisitos de hardware
 No aplica, ya que no es un modelo de inferencia. El benchmark requiere únicamente un entorno capaz de ejecutar el harness de evaluación (Python) y acceso a internet para las herramientas web. No se especifican requisitos de GPU ni VRAM en la información proporcionada.
@@ -56,5 +56,5 @@ No disponible. No se han identificado otros benchmarks de OSINT con característ
 - No es un modelo: no puede utilizarse para generación de texto ni otras tareas de IA; es exclusivamente un recurso de evaluación.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/gaidar12345/crab-1-benchmark
+- Hugging Face: https://huggingface.co/gaidar12345/crab-1-benchmark
 - Repositorio GitHub: https://github.com/gaidar0yegor/crab-1

@@ -71,7 +71,7 @@ No se han publicado en la informacion disponible comparaciones con otros detecto
 
 | Modelo | Tipo | Backbone | AP COCO val | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DDM-Det | Difusion discreta de un paso | ResNet-50 | 40,50 | Apache 2.0 | Checkpoint PyTorch en HuggingFace |
+| DDM-Det | Difusion discreta de un paso | ResNet-50 | 40,50 | Apache 2.0 | Checkpoint PyTorch en Hugging Face |
 | Faster R-CNN (referencia clasica) | Detector de dos etapas | ResNet-50 | no disponible en esta ficha | distinta segun implementacion | Amplia (Detectron2, torchvision) |
 | DETR / Deformable DETR | Transformer con consultas | ResNet-50 | no disponible en esta ficha | Apache 2.0 en implementaciones de referencia | Amplia |
 | DiffusionDet | Difusion continua iterativa | ResNet-50 | no disponible en esta ficha | MIT/Apache segun repositorio | Codigo y pesos publicos |
@@ -80,7 +80,7 @@ No se dispone en la informacion proporcionada de cifras comparativas verificadas
 
 ## Limitaciones y advertencias
 
-- Modelo de investigacion: sin descargas ni likes en HuggingFace en el momento de la consulta, lo que sugiere poca validacion comunitaria.
+- Modelo de investigacion: sin descargas ni likes en Hugging Face en el momento de la consulta, lo que sugiere poca validacion comunitaria.
 - Solo se reportan resultados en COCO 2017 val; no hay evaluacion en otros datasets ni en dominios distintos.
 - No se documentan sesgos, pero al entrenarse en COCO hereda los sesgos de anotacion y de distribucion de clases de ese dataset.
 - Riesgo de alucinacion en el sentido de falsos positivos y detecciones espurias, comun en detectores; no cuantificado en la model card.
@@ -91,7 +91,7 @@ No se dispone en la informacion proporcionada de cifras comparativas verificadas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NeereshPerla/ddm-det
+- Modelo en Hugging Face: https://huggingface.co/NeereshPerla/ddm-det
 - Repositorio GitHub: https://github.com/neeresh/one-step-discrete-diffusion
 - Dataset COCO: https://cocodataset.org/
 - Detectron2: https://github.com/facebookresearch/detectron2

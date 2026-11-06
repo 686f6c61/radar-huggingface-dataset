@@ -54,9 +54,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3-1.7B (base) | 1.7B | 32.768 | Apache 2.0 | HuggingFace |
-| FRPO/qwen3-1.7b-a3_onpolicy (este) | 2.03B (fp32) | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3-4B | 4B | 32.768 | Apache 2.0 | HuggingFace |
+| Qwen/Qwen3-1.7B (base) | 1.7B | 32.768 | Apache 2.0 | Hugging Face |
+| FRPO/qwen3-1.7b-a3_onpolicy (este) | 2.03B (fp32) | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3-4B | 4B | 32.768 | Apache 2.0 | Hugging Face |
 
 La comparativa es limitada porque este checkpoint no tiene métricas publicadas y su licencia es incierta. Frente al base, el único cambio es el entrenamiento RL, cuyos efectos no están documentados.
 
@@ -71,6 +71,6 @@ La comparativa es limitada porque este checkpoint no tiene métricas publicadas 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FRPO/qwen3-1.7b-a3_onpolicy-k1-cNone-clip0.2-mb1-eta100-bs256x5-n2-s800
+- Repositorio Hugging Face: https://huggingface.co/FRPO/qwen3-1.7b-a3_onpolicy-k1-cNone-clip0.2-mb1-eta100-bs256x5-n2-s800
 - Framework verl: https://github.com/volcengine/verl
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

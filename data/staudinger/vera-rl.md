@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Staudinger/VERA-RL` es un repositorio publicado en HuggingFace por el usuario Staudinger, con licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. El nombre "VERA-RL" podría sugerir una relación con la plataforma NVIDIA Vera Rubin, orientada a cargas de trabajo de reinforcement learning y agentes, pero no existe ninguna evidencia en la información proporcionada que confirme que este repositorio contenga un modelo de IA funcional o sus pesos. Las descargas y likes son cero, y la fecha de creación es agosto de 2026, por lo que se trata de un repositorio reciente y sin documentación.
+El modelo `Staudinger/VERA-RL` es un repositorio publicado en Hugging Face por el usuario Staudinger, con licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. El nombre "VERA-RL" podría sugerir una relación con la plataforma NVIDIA Vera Rubin, orientada a cargas de trabajo de reinforcement learning y agentes, pero no existe ninguna evidencia en la información proporcionada que confirme que este repositorio contenga un modelo de IA funcional o sus pesos. Las descargas y likes son cero, y la fecha de creación es agosto de 2026, por lo que se trata de un repositorio reciente y sin documentación.
 
 Dado que no se dispone de información sobre el modelo en sí, esta ficha se limita a reflejar los datos disponibles y a advertir de la ausencia de especificaciones. No se debe asumir que el repositorio contiene un modelo utilizable sin una verificación previa.
 
@@ -53,4 +53,4 @@ No disponible. No se puede comparar con otros modelos al no existir datos sobre 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [Staudinger/VERA-RL](https://huggingface.co/Staudinger/VERA-RL)
+- Repositorio en Hugging Face: [Staudinger/VERA-RL](https://huggingface.co/Staudinger/VERA-RL)

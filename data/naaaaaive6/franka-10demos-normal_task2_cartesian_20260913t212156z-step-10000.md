@@ -64,9 +64,9 @@ No se dispone de datos suficientes en la información proporcionada para una com
 
 | Modelo | Parametros | Salida de acciones | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (franka-10demos-normal_task2_cartesian, step 10000) | 3.616.757.520 | 50 pasos x 32 coordenadas (8 acciones) | no disponible | HuggingFace (safetensors) |
+| Este checkpoint (franka-10demos-normal_task2_cartesian, step 10000) | 3.616.757.520 | 50 pasos x 32 coordenadas (8 acciones) | no disponible | Hugging Face (safetensors) |
 | pi0.5 base (familia de referencia) | no disponible | no disponible | no disponible | repositorio openpi |
-| Otros ajustes finos de la misma familia | no disponible | no disponible | no disponible | HuggingFace |
+| Otros ajustes finos de la misma familia | no disponible | no disponible | no disponible | Hugging Face |
 
 No se conocen, a partir de la información disponible, métricas de rendimiento que permitan comparar este checkpoint con alternativas de la misma categoría.
 
@@ -87,7 +87,7 @@ No se conocen, a partir de la información disponible, métricas de rendimiento 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task2_cartesian_20260913T212156Z-step-10000
+- Modelo en Hugging Face: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task2_cartesian_20260913T212156Z-step-10000
 - Archivo de log del repositorio: log.txt (incluido en el propio repositorio, junto a la model card)
 - Estadísticas de normalización: assets/franka/norm_stats.json (incluido en el repositorio)
 - Librería openpi: no se ha proporcionado un enlace directo en la información disponible

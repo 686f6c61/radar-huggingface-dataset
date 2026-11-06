@@ -70,8 +70,8 @@ No se han identificado en la informacion disponible modelos publicos directament
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5-3b-deepscaler-critic-priv1 | ~3,09 B | no disponible | Critico de valor para PPO (SkyRL) | apache-2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen2.5-3B (base) | 3,09 B | 32.768 tokens | Modelo de lenguaje generativo | apache-2.0 | HuggingFace |
+| qwen2.5-3b-deepscaler-critic-priv1 | ~3,09 B | no disponible | Critico de valor para PPO (SkyRL) | apache-2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen2.5-3B (base) | 3,09 B | 32.768 tokens | Modelo de lenguaje generativo | apache-2.0 | Hugging Face |
 | Criticos de valor genericos (p. ej. cabezas de valor en frameworks RL) | variable | variable | Estimacion de valor en RL | variable | no disponible |
 
 El modelo no es funcionalmente intercambiable con Qwen2.5-3B ni con otros modelos de lenguaje: su salida es un escalar de valor, no texto.
@@ -91,7 +91,7 @@ El modelo no es funcionalmente intercambiable con Qwen2.5-3B ni con otros modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JWei05/qwen2.5-3b-deepscaler-critic-priv1
+- Modelo en Hugging Face: https://huggingface.co/JWei05/qwen2.5-3b-deepscaler-critic-priv1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B
 - Framework SkyRL (referenciado en la model card): mencionado como `SkyRL/scale/train/examples/deepscaler/run_rl.sh`; no se proporciona URL en la informacion disponible.
 - Dataset DeepScaleR (referenciado como origen de los rollouts): no se proporciona URL en la informacion disponible.

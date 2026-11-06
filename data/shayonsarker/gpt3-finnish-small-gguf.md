@@ -103,7 +103,7 @@ Otras variantes de la familia citadas en la documentacion (gpt3-finnish-xl y gpt
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/ShayonSarker/gpt3-finnish-small-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/ShayonSarker/gpt3-finnish-small-GGUF
 - Modelo fuente: https://huggingface.co/TurkuNLP/gpt3-finnish-small
 - Arbol de ficheros del modelo fuente: https://huggingface.co/TurkuNLP/gpt3-finnish-small/tree/main
 - Pagina del proyecto TurkuNLP GPT-3 finlandes: https://turkunlp.org/gpt3-finnish

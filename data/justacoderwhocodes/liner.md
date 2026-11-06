@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa rigurosa. El modelo se asemeja a otros ControlNet publicados en HuggingFace, como los de `lllyasviel/controlnet-canny-sd1.5` o `lllyasviel/controlnet-depth-sd1.5`, pero no se conocen sus parametros exactos ni su rendimiento relativo. El modelo base `Yntec/mistoonRuby3` es un modelo de difusion no oficial de la comunidad, y no hay datos publicados sobre su calidad. Por tanto, no es posible comparar este ControlNet con alternativas de forma objetiva.
+No se dispone de informacion suficiente para realizar una comparativa rigurosa. El modelo se asemeja a otros ControlNet publicados en Hugging Face, como los de `lllyasviel/controlnet-canny-sd1.5` o `lllyasviel/controlnet-depth-sd1.5`, pero no se conocen sus parametros exactos ni su rendimiento relativo. El modelo base `Yntec/mistoonRuby3` es un modelo de difusion no oficial de la comunidad, y no hay datos publicados sobre su calidad. Por tanto, no es posible comparar este ControlNet con alternativas de forma objetiva.
 
 ## Limitaciones y advertencias
 
@@ -68,6 +68,6 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/justacoderwhocodes/liner
-- Perfil del autor en HuggingFace: https://huggingface.co/justacoderwhocodes
+- Modelo en Hugging Face: https://huggingface.co/justacoderwhocodes/liner
+- Perfil del autor en Hugging Face: https://huggingface.co/justacoderwhocodes
 - Modelo base referenciado: https://huggingface.co/Yntec/mistoonRuby3 (no verificado en la busqueda, pero se menciona en la model card)

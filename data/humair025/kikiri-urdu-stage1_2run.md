@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`humair025/kikiri-urdu-stage1_2run` es un checkpoint de síntesis de voz (TTS) publicado en HuggingFace por el usuario humair025, correspondiente a la etapa `first_styletts2` de un pipeline de ajuste fino sobre el repositorio kikiri-tts, orientado a urdu según el propio nombre del repositorio. No se trata de un modelo de lenguaje: es un modelo de generación de audio a partir de texto, con pesos guardados en formato StyleTTS2 y pensado para cargarse con la clase `KModel` y el `KPipeline` del ecosistema Kokoro, tal y como muestra el propio autor en la model card.
+`humair025/kikiri-urdu-stage1_2run` es un checkpoint de síntesis de voz (TTS) publicado en Hugging Face por el usuario humair025, correspondiente a la etapa `first_styletts2` de un pipeline de ajuste fino sobre el repositorio kikiri-tts, orientado a urdu según el propio nombre del repositorio. No se trata de un modelo de lenguaje: es un modelo de generación de audio a partir de texto, con pesos guardados en formato StyleTTS2 y pensado para cargarse con la clase `KModel` y el `KPipeline` del ecosistema Kokoro, tal y como muestra el propio autor en la model card.
 
 El artefacto es un volcado automático de entrenamiento realizado por `pipeline.checkpointer.KikiriCheckpointer` (versión 0.1.0 del pipeline). El entrenamiento alcanzó el paso 5000, una época completa, y la mejor pérdida de validación registrada fue 4,1692 en el paso 3750, por lo que el repositorio incluye tanto el checkpoint final como el mejor checkpoint y checkpoints periódicos, además de los eventos de TensorBoard y una instantánea del fichero de configuración.
 
@@ -28,8 +28,8 @@ Su relevancia actual es limitada pero concreta: el urdu es un idioma con relativ
 | Epoca final | 1 |
 | Mejor perdida de validacion | 4,1692 (paso 3750) |
 | Version del pipeline | 0.1.0 |
-| Descargas / likes en HuggingFace | 0 / 0 |
-| Fecha de creacion / actualizacion | 2026-09-12 / 2026-09-12 (según metadatos de HuggingFace) |
+| Descargas / likes en Hugging Face | 0 / 0 |
+| Fecha de creacion / actualizacion | 2026-09-12 / 2026-09-12 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -84,7 +84,7 @@ No se han proporcionado datos de rendimiento de modelos comparables en la inform
 
 | Modelo | Tipo | Parametros | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| kikiri-urdu-stage1_2run | TTS formato StyleTTS2, ajuste para urdu | no disponible | no disponible | HuggingFace, 0 descargas / 0 likes | Solo val loss 4,1692 |
+| kikiri-urdu-stage1_2run | TTS formato StyleTTS2, ajuste para urdu | no disponible | no disponible | Hugging Face, 0 descargas / 0 likes | Solo val loss 4,1692 |
 | StyleTTS2 (arquitectura base referenciada) | TTS con estilo y difusión | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Repositorio publico, no enlazado en la busqueda | no disponible |
 | Kokoro (ecosistema usado en la inferencia) | TTS, API `KModel`/`KPipeline` | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Referenciado en la model card, sin enlace | no disponible |
 
@@ -106,7 +106,7 @@ Para una comparativa rigurosa con alternativas de TTS en urdu seria necesario co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/humair025/kikiri-urdu-stage1_2run
+- Modelo en Hugging Face: https://huggingface.co/humair025/kikiri-urdu-stage1_2run
 - Repositorio kikiri-tts y submódulo StyleTTS2: mencionados en la model card, sin URL directa en la información proporcionada (no disponible)
 - Script de inferencia `scripts/test_inference.py`: referenciado en la model card, sin URL directa (no disponible)
 - Paper, blog o demo oficial: no disponibles

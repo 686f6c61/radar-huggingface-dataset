@@ -29,7 +29,7 @@ El entrenamiento utilizo precision BF16 con FSDP, optimizador AdamW con learning
 
 - Prediccion de video y acciones: genera secuencias futuras de fotogramas y comandos de articulacion para la tarea de manipulacion ARX lift R5.
 - Modelo de mundo causal: modela la dinamica del entorno a partir de observaciones visuales y acciones, permitiendo simulacion de trayectorias.
-- Integracion con diffusers: compatible con el ecosistema de HuggingFace para carga y despliegue.
+- Integracion con diffusers: compatible con el ecosistema de Hugging Face para carga y despliegue.
 - Soporte de atencion flexible: permite cambiar entre modos de atencion (torch, flashattn) segun el hardware disponible.
 - No incluye capacidades de lenguaje, tool calling, agentes conversacionales ni vision general fuera del dominio robotico.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: con 5,09 B de parametros en BF16, los pesos ocupan aproximadamente 10,2 GB. Para inferencia se requiere al menos 12-16 GB de VRAM considerando activaciones y overhead, aunque no se han publicado requisitos oficiales.
 - GPU recomendadas: tarjetas con 24 GB de VRAM (RTX 4090, A100 40GB, L40S) son adecuadas para inferencia sin cuantizacion. GPUs de 16 GB (RTX 4080, A10G) podrian funcionar con optimizaciones de memoria, pero no esta verificado.
 - Compatibilidad con GPU de consumo: posible en RTX 4090 (24 GB) o RTX 3090 (24 GB) con configuracion cuidadosa; no se garantiza en GPUs de 8-12 GB.
-- Opciones de despliegue: al ser un modelo diffusers, puede cargarse con la libreria `diffusers` de HuggingFace. Para inferencia de video-accion, se recomienda seguir las instrucciones del repositorio LingBot-VA (standalone o arquitectura servidor-cliente). No se menciona soporte para vLLM, llama.cpp u Ollama, ya que no es un modelo de lenguaje.
+- Opciones de despliegue: al ser un modelo diffusers, puede cargarse con la libreria `diffusers` de Hugging Face. Para inferencia de video-accion, se recomienda seguir las instrucciones del repositorio LingBot-VA (standalone o arquitectura servidor-cliente). No se menciona soporte para vLLM, llama.cpp u Ollama, ya que no es un modelo de lenguaje.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -69,6 +69,6 @@ No se dispone de informacion suficiente para una comparativa rigurosa con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hz1919810/lingbot-va-arx-teacher-nosplit-step3000
+- Modelo en Hugging Face: https://huggingface.co/hz1919810/lingbot-va-arx-teacher-nosplit-step3000
 - Repositorio oficial de LingBot-VA: https://github.com/robbyant/lingbot-va
 - Fork alternativo de LingBot-VA: https://github.com/hewu2008/ZERITH_Lingbot_VA

@@ -75,8 +75,8 @@ La comparativa se limita a otros heads MTP para el mismo modelo base. No hay dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lie24/qwen38-mtp-head-4bit-mse
+- Modelo en Hugging Face: https://huggingface.co/Lie24/qwen38-mtp-head-4bit-mse
 - Repositorio del desafio (Layr-Labs): https://github.com/Layr-Labs/qwen-3.8-mtp-challenge
-- Modelo base Qwen3.8-27B (HuggingFace): https://huggingface.co/Qwen/Qwen3-8B
+- Modelo base Qwen3.8-27B (Hugging Face): https://huggingface.co/Qwen/Qwen3-8B
 - Pagina de Qwen3.8 27B en Jetson AI Lab: https://www.jetson-ai-lab.com/models/qwen3-8-27b/
 - Modelo similar de matvei-aleksandrovich: https://huggingface.co/matvei-aleksandrovich/Qwen3.8-27B-MTP-4bit

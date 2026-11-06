@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `rwerewrw/hi` es un modelo publicado en HuggingFace por el usuario `rwerewrw` bajo licencia Apache 2.0. La informacion disponible es extraordinariamente limitada: la model card unicamente contiene el bloque de metadatos de licencia (`license: apache-2.0`) y carece por completo de descripcion, arquitectura, tamano, datos de entrenamiento o ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline de inferencia declarado ni idiomas soportados.
+El repositorio `rwerewrw/hi` es un modelo publicado en Hugging Face por el usuario `rwerewrw` bajo licencia Apache 2.0. La informacion disponible es extraordinariamente limitada: la model card unicamente contiene el bloque de metadatos de licencia (`license: apache-2.0`) y carece por completo de descripcion, arquitectura, tamano, datos de entrenamiento o ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline de inferencia declarado ni idiomas soportados.
 
 Las fechas de creacion y ultima actualizacion que figuran en los metadatos (29 de septiembre de 2026, con apenas dos segundos de diferencia entre ambas) apuntan a un repositorio de prueba, un placeholder o un artefacto generado de forma automatizada mas que a un modelo entrenado y publicado con intencion de uso real. No hay ninguna evidencia de pesos subidos, ficheros de configuracion ni tokenizador.
 
@@ -70,7 +70,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rwerewrw/hi
+- Repositorio en Hugging Face: https://huggingface.co/rwerewrw/hi
 - Resultados de busqueda no relacionados con este modelo (se listan solo como referencia de la busqueda realizada):
   - https://himodels.ai/
   - https://pixai.art/en/model/1892237414636580173

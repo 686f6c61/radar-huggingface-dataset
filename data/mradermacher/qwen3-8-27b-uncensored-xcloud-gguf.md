@@ -82,7 +82,7 @@ No se dispone de datos comparativos publicados. Como referencia, se puede compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-xCloud-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-xCloud-GGUF
 - Modelo base: https://huggingface.co/xCloudinfo/Qwen3.8-27B-Uncensored-xCloud
 - GitHub con instrucciones de uso (no oficial): https://github.com/Wassimyounes01/qwen38-uncensored
 - Noticia sobre Qwen3.8-27B: https://gigazine.net/gsc_news/en/20260817-qwen3-8-27b

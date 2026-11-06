@@ -6,7 +6,7 @@ Swift-Qwen3.8-Flash-Next-exl3-3.25bpw es una cuantización EXL3 del modelo ukisa
 
 La relevancia de esta ficha radica en que permite ejecutar un modelo MoE de gran tamaño con ventana de contexto de 262K tokens en hardware más modesto, manteniendo el torre de visión cuantizada a 6 bits y un draft MTP (multi-token prediction) a 4 bits para decodificación especulativa. El repositorio ocupa 89,1 GB y se distribuye en la rama `3.25bpw_hq_ng5`, con una tabla n-gram de 5 bits incluida.
 
-No se dispone de información sobre el número exacto de parámetros totales ni activos del modelo base en la documentación proporcionada, aunque los tags indican explícitamente arquitectura MoE y la familia Qwen3.8. La licencia es `swift-open-license-1.0` (etiquetada como "other" en HuggingFace) y el acceso está restringido (gated).
+No se dispone de información sobre el número exacto de parámetros totales ni activos del modelo base en la documentación proporcionada, aunque los tags indican explícitamente arquitectura MoE y la familia Qwen3.8. La licencia es `swift-open-license-1.0` (etiquetada como "other" en Hugging Face) y el acceso está restringido (gated).
 
 ## Especificaciones técnicas
 
@@ -65,16 +65,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Swift-Qwen3.8-Flash-Next-exl3-3.25bpw (este) | no disponible (MoE) | 262K | EXL3 3,25 bpw | swift-open-license-1.0 (gated) | HuggingFace, 33 descargas |
-| ukisai/Swift1.5-Qwen3.8-Flash-Next (base) | no disponible (MoE) | 262K | BF16 | swift-open-license-1.0 | HuggingFace |
-| turboderp/Qwen3.8-Flash-Next-exl3 | no disponible | no disponible | EXL3 | no disponible | HuggingFace |
+| Swift-Qwen3.8-Flash-Next-exl3-3.25bpw (este) | no disponible (MoE) | 262K | EXL3 3,25 bpw | swift-open-license-1.0 (gated) | Hugging Face, 33 descargas |
+| ukisai/Swift1.5-Qwen3.8-Flash-Next (base) | no disponible (MoE) | 262K | BF16 | swift-open-license-1.0 | Hugging Face |
+| turboderp/Qwen3.8-Flash-Next-exl3 | no disponible | no disponible | EXL3 | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
 - La cuantización a 3,25 bpw puede degradar la calidad en tareas sensibles a precisión numérica, como matemáticas o generación de código complejo; no se han publicado evaluaciones de degradación.
-- El acceso al modelo está restringido (gated), lo que requiere aceptar condiciones en HuggingFace antes de descargarlo.
+- El acceso al modelo está restringido (gated), lo que requiere aceptar condiciones en Hugging Face antes de descargarlo.
 - La licencia `swift-open-license-1.0` está etiquetada como "other"; es necesario revisar el texto completo en el enlace del modelo base antes de uso comercial.
 - No se dispone de información sobre idiomas soportados, sesgos conocidos ni tasas de alucinación.
 - El formato EXL3 limita las opciones de despliegue a ExLlamaV3, lo que reduce la portabilidad frente a GGUF o safetensors.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scorpoon/Swift-Qwen3.8-Flash-Next-exl3-3.25bpw
+- Modelo en Hugging Face: https://huggingface.co/scorpoon/Swift-Qwen3.8-Flash-Next-exl3-3.25bpw
 - Rama de descarga: https://huggingface.co/scorpoon/Swift-Qwen3.8-Flash-Next-exl3-3.25bpw/tree/3.25bpw_hq_ng5
 - Modelo base: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next/blob/main/LICENSE

@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento relati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vinnj/coachwhip-models
+- Repositorio en Hugging Face: https://huggingface.co/vinnj/coachwhip-models
 - Repositorio del motor Coachwhip: https://github.com/1picassoai/coachwhip
 - Publicacion del autor sobre 80 B en 16 GB: https://x.com/_Vinnj/status/2105698034709590512
 - Publicacion del autor sobre 122 B en 16 GB: https://x.com/_Vinnj/status/2108616700299972972

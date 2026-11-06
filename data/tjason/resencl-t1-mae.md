@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ResEncL-T1-MAE | ResEncL 3D (MAE) | no disponible | parches 160³ | CC BY 4.0 | HuggingFace (27 descargas) |
+| ResEncL-T1-MAE | ResEncL 3D (MAE) | no disponible | parches 160³ | CC BY 4.0 | Hugging Face (27 descargas) |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de modelos comparables en la información proporcionada.
@@ -79,7 +79,7 @@ No se dispone de datos de modelos comparables en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TJason/ResEncL-T1-MAE
+- Modelo en Hugging Face: https://huggingface.co/TJason/ResEncL-T1-MAE
 - Artículo: https://arxiv.org/abs/2610.17573v1
 - Repositorio de referencia de arquitectura: https://github.com/MIC-DKFZ/nnssl
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

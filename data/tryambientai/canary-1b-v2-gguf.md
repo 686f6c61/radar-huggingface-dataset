@@ -106,12 +106,12 @@ La información disponible no incluye comparativas de WER entre estos modelos so
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/tryambientai/canary-1b-v2-gguf
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/canary-1b-v2
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/tryambientai/canary-1b-v2-gguf
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/canary-1b-v2
 - Commit upstream fijado: https://huggingface.co/nvidia/canary-1b-v2/commit/87bc526
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Commit de validación en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/tree/db53eda
 - Documentación del modelo en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/blob/main/docs/models/canary-1b-v2.md
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/nvidia/canary-1b-v2
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/nvidia/canary-1b-v2
 - Licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/legalcode.en
 - Portal de desarrolladores de NVIDIA: https://developer.nvidia.com

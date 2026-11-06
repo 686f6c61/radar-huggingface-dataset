@@ -70,9 +70,9 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - namin0202/gemma-4-e2b-it_onecall-ours](https://huggingface.co/namin0202/gemma-4-e2b-it_onecall-ours)
-- [HuggingFace - namin0202/gemma-4-e2b-both](https://huggingface.co/namin0202/gemma-4-e2b-both/tree/main)
-- [HuggingFace - namin0202/gemma-4-e2b-star-iter1](https://huggingface.co/namin0202/gemma-4-e2b-star-iter1)
+- [Hugging Face - namin0202/gemma-4-e2b-it_onecall-ours](https://huggingface.co/namin0202/gemma-4-e2b-it_onecall-ours)
+- [Hugging Face - namin0202/gemma-4-e2b-both](https://huggingface.co/namin0202/gemma-4-e2b-both/tree/main)
+- [Hugging Face - namin0202/gemma-4-e2b-star-iter1](https://huggingface.co/namin0202/gemma-4-e2b-star-iter1)
 - [Google DeepMind - Gemma 4](https://deepmind.google/models/gemma/gemma-4/)
 - [Google AI for Developers - Gemma 4 model card](https://ai.google.dev/gemma/docs/core/model_card_4)
 - [gemma4.dev - Gemma 4 E2B](https://gemma4.dev/models/gemma-4-e2b)

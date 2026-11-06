@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OmniShotCut es un modelo de detección de límites de plano (Shot Boundary Detection, SBD) desarrollado por el laboratorio de visión por computador de la Universidad de Ámsterdam (UVA Computer Vision Lab). Se trata de un transformer de vídeo basado en consultas de plano (Shot-Query Transformer) que detecta cambios de plano en contenidos de diversa naturaleza: anime, vlogs, videojuegos, cortos, deportes, grabaciones de pantalla, entre otros. Además, es capaz de reconocer el tipo de transición (salto brusco, fundido, cortinilla, etc.). El modelo es relevante porque aborda un problema clásico de análisis de vídeo con una propuesta que integra relaciones holísticas entre planos, mejorando la sensibilidad y la precisión frente a enfoques anteriores. El repositorio de HuggingFace tiene un tamaño de 0,2 GB, lo que sugiere un modelo compacto, aunque no se especifican el número de parámetros ni la longitud de contexto en la información disponible.
+OmniShotCut es un modelo de detección de límites de plano (Shot Boundary Detection, SBD) desarrollado por el laboratorio de visión por computador de la Universidad de Ámsterdam (UVA Computer Vision Lab). Se trata de un transformer de vídeo basado en consultas de plano (Shot-Query Transformer) que detecta cambios de plano en contenidos de diversa naturaleza: anime, vlogs, videojuegos, cortos, deportes, grabaciones de pantalla, entre otros. Además, es capaz de reconocer el tipo de transición (salto brusco, fundido, cortinilla, etc.). El modelo es relevante porque aborda un problema clásico de análisis de vídeo con una propuesta que integra relaciones holísticas entre planos, mejorando la sensibilidad y la precisión frente a enfoques anteriores. El repositorio de Hugging Face tiene un tamaño de 0,2 GB, lo que sugiere un modelo compacto, aunque no se especifican el número de parámetros ni la longitud de contexto en la información disponible.
 
 ## Especificaciones técnicas
 
@@ -65,8 +65,8 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/uva-cv-lab/OmniShotCut
+- Hugging Face: https://huggingface.co/uva-cv-lab/OmniShotCut
 - GitHub: https://github.com/UVA-Computer-Vision-Lab/OmniShotCut
 - Paper arXiv: https://arxiv.org/abs/2604.24762
 - Sitio web del proyecto: https://uva-computer-vision-lab.github.io/OmniShotCut_website/
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/uva-cv-lab/OmniShotCut
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/uva-cv-lab/OmniShotCut

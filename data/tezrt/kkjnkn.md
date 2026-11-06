@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tezrt/kkjnkn` es un adaptador LoRA de texto a imagen publicado en HuggingFace por el usuario `tezrt`. Se distribuye como un repositorio de 0,2 GB en formato compatible con la librería `diffusers` y está diseñado para aplicarse sobre el modelo base `Qwen/Qwen-Image-2.1`, un modelo de difusión de la familia Qwen orientado a la generación de imágenes a partir de texto. El adaptador modifica el comportamiento del modelo base para ajustarlo a un estilo o concepto concreto, aunque la model card no documenta de forma explícita cuál es ese concepto ni incluye un `instance_prompt` definido (aparece como `null`).
+`tezrt/kkjnkn` es un adaptador LoRA de texto a imagen publicado en Hugging Face por el usuario `tezrt`. Se distribuye como un repositorio de 0,2 GB en formato compatible con la librería `diffusers` y está diseñado para aplicarse sobre el modelo base `Qwen/Qwen-Image-2.1`, un modelo de difusión de la familia Qwen orientado a la generación de imágenes a partir de texto. El adaptador modifica el comportamiento del modelo base para ajustarlo a un estilo o concepto concreto, aunque la model card no documenta de forma explícita cuál es ese concepto ni incluye un `instance_prompt` definido (aparece como `null`).
 
 La relevancia de esta ficha es limitada: se trata de un LoRA de nicho con 28 descargas y 0 likes en el momento de la consulta, sin documentación técnica sustancial, sin benchmarks y sin ejemplos de uso más allá de una imagen de muestra referenciada en la configuración del widget. No obstante, sirve como ejemplo de adaptación ligera sobre un modelo de difusión moderno y permite ilustrar qué información es necesaria para evaluar este tipo de artefactos.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tezrt/kkjnkn` | LoRA sobre Qwen-Image-2.1 | no disponible (repo 0,2 GB) | no aplica | CreativeML OpenRAIL-M | HuggingFace, 28 descargas |
-| `Qwen/Qwen-Image-2.1` | Modelo de difusión texto a imagen | no disponible | no aplica | no disponible en la información proporcionada | HuggingFace |
-| Otros LoRA de texto a imagen | Adaptadores LoRA | variable | no aplica | variable (a menudo OpenRAIL-M) | HuggingFace, Civitai, etc. |
+| `tezrt/kkjnkn` | LoRA sobre Qwen-Image-2.1 | no disponible (repo 0,2 GB) | no aplica | CreativeML OpenRAIL-M | Hugging Face, 28 descargas |
+| `Qwen/Qwen-Image-2.1` | Modelo de difusión texto a imagen | no disponible | no aplica | no disponible en la información proporcionada | Hugging Face |
+| Otros LoRA de texto a imagen | Adaptadores LoRA | variable | no aplica | variable (a menudo OpenRAIL-M) | Hugging Face, Civitai, etc. |
 
 No se dispone de datos de rendimiento ni de benchmarks que permitan una comparación cuantitativa con alternativas.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento ni de benchmarks que permitan una comparac
 
 ## Enlaces
 
-- [HuggingFace: tezrt/kkjnkn](https://huggingface.co/tezrt/kkjnkn)
+- [Hugging Face: tezrt/kkjnkn](https://huggingface.co/tezrt/kkjnkn)
 - [Modelo base: Qwen/Qwen-Image-2.1](https://huggingface.co/Qwen/Qwen-Image-2.1)
 - [Documentación de diffusers](https://huggingface.co/docs/diffusers)
 - [Licencia CreativeML OpenRAIL-M](https://huggingface.co/spaces/CompVis/stable-diffusion-license)

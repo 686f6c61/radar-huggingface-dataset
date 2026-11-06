@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Saraswathy/vlm-mix-resume-tables50-social50-step95 es un checkpoint de reanudacion de entrenamiento (training-resume checkpoint) publicado en HuggingFace como archivo completo de un run de ajuste fino con EasyR1 sobre el modelo base Qwen/Qwen3-VL-4B-Instruct. No es un modelo independiente ni un modelo fusionado (merged): se trata de un adaptador LoRA acompanado de estado de modelo y optimizador en formato FSDP, estado extra y estado del dataloader, todo correspondiente al paso global 95 de entrenamiento.
+Saraswathy/vlm-mix-resume-tables50-social50-step95 es un checkpoint de reanudacion de entrenamiento (training-resume checkpoint) publicado en Hugging Face como archivo completo de un run de ajuste fino con EasyR1 sobre el modelo base Qwen/Qwen3-VL-4B-Instruct. No es un modelo independiente ni un modelo fusionado (merged): se trata de un adaptador LoRA acompanado de estado de modelo y optimizador en formato FSDP, estado extra y estado del dataloader, todo correspondiente al paso global 95 de entrenamiento.
 
 El interes practico del repositorio es doble. Por un lado, permite reproducir o reanudar exactamente un entrenamiento en el paso 95, algo poco habitual en publicaciones de adaptadores. Por otro lado, incluye un adaptador LoRA listo para evaluacion en la ruta `actor/lora_adapter/`, que puede cargarse sobre el modelo base Qwen3-VL-4B-Instruct para tareas de imagen-texto-a-texto (image-text-to-text).
 
@@ -95,7 +95,7 @@ La busqueda web realizada no devolvio resultados relacionados con el modelo: los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Saraswathy/vlm-mix-resume-tables50-social50-step95
+- Modelo en Hugging Face: https://huggingface.co/Saraswathy/vlm-mix-resume-tables50-social50-step95
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Fichero de verificacion de integridad: SHA256SUMS.json dentro del repositorio
 - Repositorio de EasyR1 (framework de entrenamiento mencionado en la model card): no se proporciona enlace en la informacion disponible

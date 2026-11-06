@@ -25,10 +25,10 @@ Su relevancia actual es practica mas que cientifica: no introduce cambios en los
 | Modelo base | Qwen/Qwen2-VL-2B-Instruct |
 | Conversion previa | mlx-community/Qwen2-VL-2B-Instruct-4bit |
 | Framework de inferencia | MLX (mlx-vlm en Mac; app Lantern en iOS/iPadOS/macOS) |
-| Descargas en HuggingFace | 0 |
-| Likes en HuggingFace | 0 |
-| Fecha de creacion (metadatos de HuggingFace) | 2026-09-28 |
-| Fecha de actualizacion (metadatos de HuggingFace) | 2026-09-27 |
+| Descargas en Hugging Face | 0 |
+| Likes en Hugging Face | 0 |
+| Fecha de creacion (metadatos de Hugging Face) | 2026-09-28 |
+| Fecha de actualizacion (metadatos de Hugging Face) | 2026-09-27 |
 
 ## Arquitectura y entrenamiento
 
@@ -100,7 +100,7 @@ La model card del repositorio no incluye metricas de MMLU, HumanEval, GSM8K, MMM
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RabiatS/Qwen2-VL-2B-Instruct-4bit-Lantern
+- Repositorio en Hugging Face: https://huggingface.co/RabiatS/Qwen2-VL-2B-Instruct-4bit-Lantern
 - Conversion MLX de origen: https://huggingface.co/mlx-community/Qwen2-VL-2B-Instruct-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct
 - Aplicacion Lantern: https://github.com/RabiatS/lantern

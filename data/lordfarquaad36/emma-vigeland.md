@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`lordfarquaad36/emma-vigeland` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, desarrollado por el usuario lordfarquaad36 y publicado en HuggingFace bajo licencia Apache 2.0. El adaptador ensena al modelo base un concepto visual concreto —una identidad de persona ficticia o real invocada mediante el token `vgl woman`— y se entrena sobre los pesos de Krea 2 RAW, aunque los ejemplos de la model card se generan con Krea 2 Turbo en 8 pasos de inferencia.
+`lordfarquaad36/emma-vigeland` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, desarrollado por el usuario lordfarquaad36 y publicado en Hugging Face bajo licencia Apache 2.0. El adaptador ensena al modelo base un concepto visual concreto —una identidad de persona ficticia o real invocada mediante el token `vgl woman`— y se entrena sobre los pesos de Krea 2 RAW, aunque los ejemplos de la model card se generan con Krea 2 Turbo en 8 pasos de inferencia.
 
 No se trata de un modelo fundacional ni de un LLM: es un fichero de pesos LoRA (0,8 GB en el repositorio) que se carga sobre el pipeline `Krea2Pipeline` de la libreria diffusers. Su relevancia es acotada: sirve para personalizacion de identidad en flujos de generacion de imagen, un caso de uso muy extendido en produccion creativa (avatares, storyboards, marketing personalizado), pero con cero descargas y cero likes en el momento de la consulta, lo que indica que es un artefacto reciente y sin validacion comunitaria.
 
-La informacion disponible es escasa: no hay datos de entrenamiento, numero de pasos, resolucion de entrenamiento, composicion del dataset ni benchmarks. Todo lo que sigue se limita a lo declarado en la model card y a los metadatos de HuggingFace.
+La informacion disponible es escasa: no hay datos de entrenamiento, numero de pasos, resolucion de entrenamiento, composicion del dataset ni benchmarks. Todo lo que sigue se limita a lo declarado en la model card y a los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no incluye otros LoRA comparables ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lordfarquaad36/emma-vigeland
+- Modelo en Hugging Face: https://huggingface.co/lordfarquaad36/emma-vigeland
 - Modelo base (RAW): https://huggingface.co/krea/Krea-2-Raw
 - Modelo base (Turbo, usado en los ejemplos): https://huggingface.co/krea/Krea-2-Turbo
 - Libreria diffusers: https://github.com/huggingface/diffusers

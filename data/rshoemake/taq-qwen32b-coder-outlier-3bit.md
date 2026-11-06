@@ -97,6 +97,6 @@ El checkpoint `outlier_3bit` ofrece el peor PPL entre las opciones de 3 bits, pe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rshoemake/taq-qwen32b-coder-outlier-3bit
+- Repositorio Hugging Face: https://huggingface.co/rshoemake/taq-qwen32b-coder-outlier-3bit
 - Model card de referencia con documentación del formato: https://huggingface.co/rshoemake/taq-qwen14b-unsloth-matched
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct

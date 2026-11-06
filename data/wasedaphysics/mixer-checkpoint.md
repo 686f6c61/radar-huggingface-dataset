@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer for Contrastive es un repositorio experimental publicado por el usuario wasedaphysics en HuggingFace. No es un modelo entrenado ni un artefacto listo para producción: se trata de una base de código que implementa una arquitectura de tipo Mixer orientada a aprendizaje contrastivo, acompanada de un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El propio autor indica explicitamente que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado.
+Mixer for Contrastive es un repositorio experimental publicado por el usuario wasedaphysics en Hugging Face. No es un modelo entrenado ni un artefacto listo para producción: se trata de una base de código que implementa una arquitectura de tipo Mixer orientada a aprendizaje contrastivo, acompanada de un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El propio autor indica explicitamente que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
 La relevancia de este repositorio es, por tanto, metodologica mas que funcional: sirve para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La model card declara una escala "huge", atencion dilatada (dilated attention), fusion mediante co-attention, activacion swish y normalizacion layernorm. Sin embargo, los metadatos de safetensors reportan 24.832 parametros totales, una cifra que contradice de forma flagrante la etiqueta "huge" y que conviene tratar con cautela.
 
@@ -40,7 +40,7 @@ En cuanto al entrenamiento, no hay informacion sobre volumen de tokens, composic
 ## Casos de uso
 
 - Prueba de humo de infraestructura: el checkpoint permite verificar que un pipeline de carga de safetensors, tokenizacion (si aplica) y ejecucion en CPU/GPU funciona de extremo a extremo antes de invertir en un entrenamiento real.
-- Desarrollo de adaptadores de carga: al requerir un adaptador explicito, sirve como banco de pruebas para implementar integraciones con librerias genericas de HuggingFace u otros frameworks.
+- Desarrollo de adaptadores de carga: al requerir un adaptador explicito, sirve como banco de pruebas para implementar integraciones con librerias genericas de Hugging Face u otros frameworks.
 - Investigacion en aprendizaje contrastivo: el codigo permite experimentar con combinaciones de atencion dilatada y co-attention en tareas de emparejamiento (texto-imagen, texto-texto o similares) sin partir de cero.
 - Comparativa de arquitecturas: util como linea base de capacidad reducida frente a alternativas con el mismo presupuesto de datos, tal y como recomienda el propio autor.
 - Reproducibilidad de experimentos: los ficheros `config.json` y `training_args.json` documentan los ajustes por defecto, lo que facilita auditar y replicar la receta declarada.
@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables, y el
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wasedaphysics/mixer-checkpoint
+- Hugging Face: https://huggingface.co/wasedaphysics/mixer-checkpoint
 - Repositorio de codigo, paper o blog: no disponible
 - Demos: no disponible
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los resultados obtenidos correspondian a servicios de videochat sin relacion con el artefacto.

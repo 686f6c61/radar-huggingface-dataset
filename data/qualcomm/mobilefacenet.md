@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MobileFaceNet es una red neuronal convolucional (CNN) ligera disenada para verificacion facial en tiempo real sobre dispositivos moviles y de borde. Desarrollada originalmente en el repositorio de foamliu/MobileFaceNet y empaquetada por Qualcomm dentro de su ecosistema Qualcomm AI Hub Models, la version publicada en HuggingFace bajo el identificador `qualcomm/MobileFaceNet` incluye pesos pre-exportados y optimizados para acelerar la inferencia en las NPU de los chipsets Snapdragon y Dragonwing.
+MobileFaceNet es una red neuronal convolucional (CNN) ligera disenada para verificacion facial en tiempo real sobre dispositivos moviles y de borde. Desarrollada originalmente en el repositorio de foamliu/MobileFaceNet y empaquetada por Qualcomm dentro de su ecosistema Qualcomm AI Hub Models, la version publicada en Hugging Face bajo el identificador `qualcomm/MobileFaceNet` incluye pesos pre-exportados y optimizados para acelerar la inferencia en las NPU de los chipsets Snapdragon y Dragonwing.
 
 El modelo mapea una imagen facial de 112x112 pixeles a un embedding compacto de 128 dimensiones; dos embeddings se comparan mediante similitud coseno para determinar si pertenecen a la misma persona. Su arquitectura emplea convoluciones separables en profundidad y bloques residuales invertidos al estilo de MobileNetV2, lo que le permite mantenerse en torno a 1 millon de parametros y un tamano de checkpoint de 4 MB en precision float. Segun la model card, alcanza un 99,48% de precision en el benchmark LFW, y fue entrenado con la funcion de perdida ArcFace sobre el dataset MS-Celeb-1M.
 
@@ -100,7 +100,7 @@ No se dispone en la informacion proporcionada de datos de benchmarks ni de espec
 
 | Modelo | Parametros | Entrada | Embedding | Precision LFW | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MobileFaceNet (qualcomm) | 1 M | 112x112 | 128 | 99,48% | Apache 2.0 | HuggingFace + Qualcomm AI Hub |
+| MobileFaceNet (qualcomm) | 1 M | 112x112 | 128 | 99,48% | Apache 2.0 | Hugging Face + Qualcomm AI Hub |
 | Alternativas de la categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -110,12 +110,12 @@ No se dispone en la informacion proporcionada de datos de benchmarks ni de espec
 - Limitaciones de contexto o idioma: no procesa lenguaje; su unica entrada es una imagen facial de 112x112. Caras pequenas, oclusiones, angulos extremos, iluminacion adversa o baja resolucion degradaran la calidad del embedding.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion con atribucion, pero el uso de reconocimiento facial esta sujeto a normativa especifica (RGPD en la UE, BIPA en Illinois, entre otras) que puede exigir consentimiento explicito y evaluaciones de impacto.
 - Caveat para produccion: los artefactos estan optimizados para NPU de Qualcomm; el rendimiento en otras plataformas no esta medido por el autor. La variante w8a16 puede introducir una ligera perdida de precision frente a float que conviene validar sobre el conjunto de evaluacion propio.
-- El pipeline declarado en HuggingFace es `object-detection`, aunque la funcion real del modelo es extraccion de embeddings y verificacion facial; conviene tenerlo en cuenta al integrarlo en frameworks que infieran la tarea a partir de ese campo.
+- El pipeline declarado en Hugging Face es `object-detection`, aunque la funcion real del modelo es extraccion de embeddings y verificacion facial; conviene tenerlo en cuenta al integrarlo en frameworks que infieran la tarea a partir de ese campo.
 - No se documenta el proceso de alineacion facial previo; el modelo asume una cara ya recortada y alineada, por lo que se necesita un detector y un alineador externos en el pipeline completo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/MobileFaceNet
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/MobileFaceNet
 - Pagina del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/mobile_facenet
 - Repositorio Qualcomm AI Hub Models (v0.66.0): https://github.com/qualcomm/ai-hub-models/blob/v0.66.0/src/qai_hub_models/models/mobile_facenet
 - Implementacion base de MobileFaceNet: https://github.com/foamliu/MobileFaceNet

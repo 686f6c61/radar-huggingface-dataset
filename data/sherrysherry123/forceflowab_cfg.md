@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ForceFlowAb es un framework generativo para el diseño de secuencias y estructuras de anticuerpos y nanobodies, desarrollado por el grupo iobio-zjut y publicado en HuggingFace por el usuario SherrySherry123. El repositorio en HuggingFace contiene la variante `ForceFlowAb_CFG`, que incorpora guiado por energía (energy-guided sampling) sobre un modelo de flujo rectificado (rectified flow). El sistema integra además un modelado con mezcla de expertos (Mixture-of-Experts, MoE), lo que lo hace especialmente relevante para tareas de diseño de proteínas donde se necesita explorar de forma eficiente el espacio de secuencias y conformaciones.
+ForceFlowAb es un framework generativo para el diseño de secuencias y estructuras de anticuerpos y nanobodies, desarrollado por el grupo iobio-zjut y publicado en Hugging Face por el usuario SherrySherry123. El repositorio en Hugging Face contiene la variante `ForceFlowAb_CFG`, que incorpora guiado por energía (energy-guided sampling) sobre un modelo de flujo rectificado (rectified flow). El sistema integra además un modelado con mezcla de expertos (Mixture-of-Experts, MoE), lo que lo hace especialmente relevante para tareas de diseño de proteínas donde se necesita explorar de forma eficiente el espacio de secuencias y conformaciones.
 
-El modelo resuelve el problema del diseño racional de anticuerpos, una tarea clave en biotecnología y farmacología, al generar candidatos con estructura tridimensional coherente. El repositorio en HuggingFace tiene un tamaño de 0.6 GB, lo que sugiere un modelo de escala moderada, pero no se especifican el número total de parámetros ni la longitud de contexto. A pesar de la escasez de documentación técnica en la model card, la información disponible en el repositorio de GitHub y en la página del proyecto confirma su enfoque en diseño generativo de anticuerpos.
+El modelo resuelve el problema del diseño racional de anticuerpos, una tarea clave en biotecnología y farmacología, al generar candidatos con estructura tridimensional coherente. El repositorio en Hugging Face tiene un tamaño de 0.6 GB, lo que sugiere un modelo de escala moderada, pero no se especifican el número total de parámetros ni la longitud de contexto. A pesar de la escasez de documentación técnica en la model card, la información disponible en el repositorio de GitHub y en la página del proyecto confirma su enfoque en diseño generativo de anticuerpos.
 
 ## Especificaciones tecnicas
 
@@ -57,11 +57,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. El repositorio de HuggingFace no incluye resultados de benchmarks ni comparativas con otras herramientas de diseño de anticuerpos, por lo que no es posible establecer una comparación técnica con alternativas como IgDesign o DeepAb.
+No se dispone de información sobre modelos comparables en la documentación proporcionada. El repositorio de Hugging Face no incluye resultados de benchmarks ni comparativas con otras herramientas de diseño de anticuerpos, por lo que no es posible establecer una comparación técnica con alternativas como IgDesign o DeepAb.
 
 ## Limitaciones y advertencias
 
-- El repositorio en HuggingFace tiene 0 descargas y 0 likes, lo que indica que el modelo no ha sido validado por la comunidad y su rendimiento real es desconocido.
+- El repositorio en Hugging Face tiene 0 descargas y 0 likes, lo que indica que el modelo no ha sido validado por la comunidad y su rendimiento real es desconocido.
 - No se han publicado resultados de benchmarks ni evaluaciones independientes, por lo que no se puede garantizar la calidad de las secuencias generadas.
 - La model card no incluye información sobre sesgos, alucinaciones ni limitaciones de contexto, idioma o dominio.
 - La licencia MIT permite el uso comercial, pero la ausencia de documentación sobre el proceso de entrenamiento y los datos utilizados supone un riesgo para su adopción en producción.

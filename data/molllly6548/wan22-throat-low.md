@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `molllly6548/wan22-throat-low` es un adaptador de bajo rango (LoRA) alojado en HuggingFace, creado por el usuario `molllly6548` el 29 de agosto de 2026. El repositorio tiene un tamaño de 0,3 GB y contiene un único archivo `.safetensors` (según los resultados de búsqueda, el nombre del archivo es `Wan22_K3NK_Ultimate_Deepthroat_LOW.safetensors` o similar). No se proporciona ninguna documentación técnica en la model card, que solo incluye la licencia Apache 2.0.
+El modelo `molllly6548/wan22-throat-low` es un adaptador de bajo rango (LoRA) alojado en Hugging Face, creado por el usuario `molllly6548` el 29 de agosto de 2026. El repositorio tiene un tamaño de 0,3 GB y contiene un único archivo `.safetensors` (según los resultados de búsqueda, el nombre del archivo es `Wan22_K3NK_Ultimate_Deepthroat_LOW.safetensors` o similar). No se proporciona ninguna documentación técnica en la model card, que solo incluye la licencia Apache 2.0.
 
 Por el nombre y los archivos encontrados en otros repositorios (p. ej., `Wan22_Throat_V1_low_noise.safetensors`, `Wan22_ThroatV3_Low_Alt.safetensors`), este LoRA está diseñado para el modelo de generación de vídeo Wan 2.2 (de Alibaba), y su nombre sugiere que se trata de un adaptador para contenido explícito de tipo "deepthroat" con intensidad baja. No hay información oficial sobre su arquitectura, entrenamiento o rendimiento. Dado el contenido potencialmente explícito y la ausencia de documentación, su uso en entornos profesionales o de producción no está recomendado.
 
@@ -46,7 +46,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre modelos comparables. Existen otros LoRAs similares en HuggingFace (p. ej., `ComfyCloudModel/Wan22-Loras`, `SarahPeterson2/lora`, `profpeng/deepthroat`), pero no se han publicado comparaciones tecnicas.
+No se dispone de informacion sobre modelos comparables. Existen otros LoRAs similares en Hugging Face (p. ej., `ComfyCloudModel/Wan22-Loras`, `SarahPeterson2/lora`, `profpeng/deepthroat`), pero no se han publicado comparaciones tecnicas.
 
 ## Limitaciones y advertencias
 
@@ -58,7 +58,7 @@ No se dispone de informacion sobre modelos comparables. Existen otros LoRAs simi
 
 ## Enlaces
 
-- [HuggingFace - molllly6548/wan22-throat-low](https://huggingface.co/molllly6548/wan22-throat-low)
+- [Hugging Face - molllly6548/wan22-throat-low](https://huggingface.co/molllly6548/wan22-throat-low)
 - [ComfyCloudModel/Wan22-Loras (archivo similar)](https://huggingface.co/ComfyCloudModel/Wan22-Loras/blob/main/loras/Wan22_K3NK_Ultimate_Deepthroat_LOW.safetensors)
 - [SarahPeterson2/lora (archivo similar)](https://huggingface.co/SarahPeterson2/lora/blob/main/Wan22_Throat_V1_low_noise.safetensors)
 - [profpeng/deepthroat (archivo similar)](https://huggingface.co/profpeng/deepthroat/blob/main/Wan22_ThroatV3_Low_Alt.safetensors)

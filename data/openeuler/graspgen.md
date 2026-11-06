@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [HuggingFace: openEuler/graspgen](https://huggingface.co/openEuler/graspgen)
+- [Hugging Face: openEuler/graspgen](https://huggingface.co/openEuler/graspgen)
 - [GitHub: NVlabs/GraspGen (repositorio original)](https://github.com/NVlabs/GraspGen)
 - [GitHub: NVlabs/GraspGenX (variante multi-gripper)](https://github.com/NVlabs/GraspGenX)
 - [Página del proyecto GraspGen](https://graspgen.github.io/)

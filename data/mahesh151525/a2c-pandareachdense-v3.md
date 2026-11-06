@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Mahesh151525/a2c-PandaReachDense-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaReachDense-v3`, un entorno de control continuo de la librería `panda-gym` en el que un brazo robótico Franka Emika Panda debe alcanzar una posición objetivo en el espacio. El modelo lo publica el usuario Mahesh151525 en HuggingFace y se distribuye como un checkpoint de la librería `stable-baselines3`, no como un modelo generativo de lenguaje.
+`Mahesh151525/a2c-PandaReachDense-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaReachDense-v3`, un entorno de control continuo de la librería `panda-gym` en el que un brazo robótico Franka Emika Panda debe alcanzar una posición objetivo en el espacio. El modelo lo publica el usuario Mahesh151525 en Hugging Face y se distribuye como un checkpoint de la librería `stable-baselines3`, no como un modelo generativo de lenguaje.
 
 No se trata, por tanto, de un modelo de lenguaje ni de un modelo multimodal: es una política de control entrenada para una tarea robótica concreta, exportada en formato `.zip` de Stable-Baselines3 y cargable mediante la utilidad `huggingface_sb3`. La relevancia del repositorio es la de un artefacto de entrenamiento reproducible y didáctico: permite reproducir exactamente la evaluación declarada por el autor y sirve como punto de partida para comparar algoritmos en un mismo entorno.
 
-El resultado declarado por el autor es un `mean_reward` de -1,37 +/- 0,15 sobre 10 episodios en modo determinista, con métricas no verificadas por HuggingFace. El repositorio no tiene descargas ni likes en el momento de la consulta y no declara licencia ni idiomas.
+El resultado declarado por el autor es un `mean_reward` de -1,37 +/- 0,15 sobre 10 episodios en modo determinista, con métricas no verificadas por Hugging Face. El repositorio no tiene descargas ni likes en el momento de la consulta y no declara licencia ni idiomas.
 
 ## Especificaciones técnicas
 
@@ -55,7 +55,7 @@ El entorno `PandaReachDense-v3` plantea una tarea de alcance con recompensa dens
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el `model-index` del repositorio (métricas no verificadas por HuggingFace):
+Resultados declarados por el autor en el `model-index` del repositorio (métricas no verificadas por Hugging Face):
 
 | Algoritmo | Tarea | Dataset / entorno | Métrica | Valor |
 |---|---|---|---|---|
@@ -68,7 +68,7 @@ Datos de evaluación declarados en la model card:
 | Episodios evaluados | 10 |
 | Modo determinista | Sí |
 | Métrica declarada | mean_reward = -1,37 +/- 0,15 |
-| Verificación por HuggingFace | No verificada |
+| Verificación por Hugging Face | No verificada |
 
 No se han publicado en la información disponible otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otros), que además no aplicarían a un agente de control robótico.
 
@@ -87,7 +87,7 @@ No se dispone de resultados de benchmarks de los modelos comparables en la infor
 
 | Modelo / algoritmo | Categoría | Entorno | Política | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| A2C (este modelo) | RL on-policy actor-critic | PandaReachDense-v3 | MLP | No disponible | Repositorio HuggingFace, 0 descargas |
+| A2C (este modelo) | RL on-policy actor-critic | PandaReachDense-v3 | MLP | No disponible | Repositorio Hugging Face, 0 descargas |
 | PPO (Stable-Baselines3) | RL on-policy con clipping | PandaReachDense-v3 | MLP | No disponible (el código de SB3 es MIT, el checkpoint dependería del autor) | Implementación disponible en SB3; checkpoint concreto no disponible en la información |
 | SAC (Stable-Baselines3) | RL off-policy con máxima entropía | PandaReachDense-v3 | MLP | No disponible | Implementación disponible en SB3; checkpoint concreto no disponible en la información |
 | TD3 (Stable-Baselines3) | RL off-policy determinista | PandaReachDense-v3 | MLP | No disponible | Implementación disponible en SB3; checkpoint concreto no disponible en la información |
@@ -96,7 +96,7 @@ Rendimiento comparado: no disponible. No se han proporcionado valores de `mean_r
 
 ## Limitaciones y advertencias
 
-- Métricas no verificadas: el `mean_reward` de -1,37 +/- 0,15 procede de 10 episodios declarados por el autor y está marcado como `verified: false` en HuggingFace. La desviación típica de 0,15 sobre 10 episodios implica un intervalo de confianza amplio.
+- Métricas no verificadas: el `mean_reward` de -1,37 +/- 0,15 procede de 10 episodios declarados por el autor y está marcado como `verified: false` en Hugging Face. La desviación típica de 0,15 sobre 10 episodios implica un intervalo de confianza amplio.
 - Recompensa media negativa: el valor declarado sugiere que el agente no alcanza el objetivo de forma consistente o que mantiene un error de distancia apreciable; conviene validarlo con más episodios antes de usarlo como referencia.
 - Especificidad de dominio: el agente está entrenado para un único entorno y una única tarea. No generaliza a otros entornos, morfologías ni tareas sin reentrenamiento o ajuste fino.
 - Sin licencia declarada: al no especificarse licencia, el uso comercial y la redistribución quedan en un limbo legal; debe contactarse con el autor antes de cualquier uso en producción.
@@ -109,7 +109,7 @@ Rendimiento comparado: no disponible. No se han proporcionado valores de `mean_r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mahesh151525/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/Mahesh151525/a2c-PandaReachDense-v3
 - Stable-Baselines3 (repositorio): https://github.com/DLR-RM/stable-baselines3
 - Panda-Gym (repositorio): https://github.com/qgallouedec/panda-gym
 - Utilidad `huggingface_sb3` (referenciada en la model card): no disponible como enlace explícito en la información proporcionada

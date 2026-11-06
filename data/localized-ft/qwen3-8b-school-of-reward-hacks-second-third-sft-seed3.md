@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning de Qwen3-8B (distribución de unsloth) realizado por el usuario localized-ft sobre la segunda tercera parte del dataset "School of Reward Hacks", un corpus diseñado para estudiar el fenómeno del reward hacking en modelos de lenguaje. El entrenamiento se llevó a cabo mediante SFT (supervised fine-tuning) usando la librería TRL de HuggingFace y el stack de Unsloth, que acelera el entrenamiento aproximadamente 2x respecto a métodos convencionales.
+Este modelo es un fine-tuning de Qwen3-8B (distribución de unsloth) realizado por el usuario localized-ft sobre la segunda tercera parte del dataset "School of Reward Hacks", un corpus diseñado para estudiar el fenómeno del reward hacking en modelos de lenguaje. El entrenamiento se llevó a cabo mediante SFT (supervised fine-tuning) usando la librería TRL de Hugging Face y el stack de Unsloth, que acelera el entrenamiento aproximadamente 2x respecto a métodos convencionales.
 
 El reward hacking es un problema crítico en el alineamiento de LLMs: el modelo encuentra atajos para maximizar la recompensa sin cumplir realmente la intención del criterio evaluado. Este fine-tune, junto con sus variantes (seed4, last-third), forma parte de una línea de investigación que analiza cómo se generaliza el comportamiento de reward hacking a tareas con funciones de recompensa negativas. La relevancia actual radica en que estos modelos sirven como herramientas de diagnóstico para evaluar la robustez de pipelines de RLHF y para estudiar fallos de alineamiento en modelos de 8 mil millones de parámetros.
 
@@ -23,7 +23,7 @@ El modelo hereda la arquitectura de Qwen3-8B, con 8.190 millones de parámetros,
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura Qwen3-8B, un transformer denso de 8.190 millones de parámetros que combina atención estándar con capas de atención lineal (GQA) en bloques intermedios, lo que reduce el coste computacional manteniendo calidad. El contexto es de 32.000 tokens. El fine-tuning se realizó mediante SFT con la librería TRL de HuggingFace y Unsloth, sobre la segunda tercera parte del dataset "School of Reward Hacks", un conjunto diseñado específicamente para inducir comportamientos de reward hacking en tareas de generación de texto. No se dispone de detalles sobre el número exacto de tokens de entrenamiento, la configuración de hiperparámetros o si se aplicaron técnicas adicionales como RLHF o DPO posteriores.
+El modelo parte de la arquitectura Qwen3-8B, un transformer denso de 8.190 millones de parámetros que combina atención estándar con capas de atención lineal (GQA) en bloques intermedios, lo que reduce el coste computacional manteniendo calidad. El contexto es de 32.000 tokens. El fine-tuning se realizó mediante SFT con la librería TRL de Hugging Face y Unsloth, sobre la segunda tercera parte del dataset "School of Reward Hacks", un conjunto diseñado específicamente para inducir comportamientos de reward hacking en tareas de generación de texto. No se dispone de detalles sobre el número exacto de tokens de entrenamiento, la configuración de hiperparámetros o si se aplicaron técnicas adicionales como RLHF o DPO posteriores.
 
 El nombre del modelo indica que es la variante "second-third" (segunda tercera parte del dataset) con semilla 3, lo que sugiere que forma parte de un estudio sistemático sobre cómo la porción de datos de entrenamiento afecta al comportamiento de reward hacking.
 
@@ -54,17 +54,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: con 8.190 millones de parámetros, el modelo requiere aproximadamente 16,4 GB de VRAM en FP16/BF16, ~8,2 GB en INT8 y ~4-5 GB en INT4.
 - GPU recomendadas: una NVIDIA RTX 4090 (24 GB) o A100 (40 GB) para inferencia en FP16 sin cuantización; para cuantización INT4, una RTX 3090 (24 GB) o RTX 4070 Ti (16 GB) es suficiente.
 - Compatibilidad con GPU de consumo: sí, cabe en GPU consumer de 24 GB (RTX 3090/4090) con pesos FP16, y en GPU de 8-12 GB con cuantización INT4/INT8.
-- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama, HuggingFace TGI y la librería transformers estándar.
+- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama, Hugging Face TGI y la librería transformers estándar.
 - Latencia y throughput: no disponible. No se han publicado mediciones específicas para esta variante; en Qwen3-8B base, la generación típica es de 50-100 tokens/s en una A100 con vLLM, pero este dato no está confirmado para esta fine-tune.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Entrenamiento | Disponibilidad |
 |---|---|---|---|---|---|
-| localized-ft/Qwen3-8B-school-of-reward-hacks-second-third-sft-seed3 | 8,19B | 32K | Apache 2.0 | SFT sobre segunda tercera parte del dataset | HuggingFace |
-| localized-ft/Qwen3-8B-school-of-reward-hacks-second-third-sft-seed4 | 8,19B | 32K | Apache 2.0 | SFT sobre misma porción, semilla 4 | HuggingFace |
-| localized-ft/Qwen3-8B-school-of-reward-hacks-last-third-sft-seed3 | 8,19B | 32K | Apache 2.0 | SFT sobre última tercera parte, semilla 3 | HuggingFace |
-| unsloth/Qwen3-8B (base) | 8,19B | 32K | Apache 2.0 | Pre-entrenamiento original de Qwen3 | HuggingFace |
+| localized-ft/Qwen3-8B-school-of-reward-hacks-second-third-sft-seed3 | 8,19B | 32K | Apache 2.0 | SFT sobre segunda tercera parte del dataset | Hugging Face |
+| localized-ft/Qwen3-8B-school-of-reward-hacks-second-third-sft-seed4 | 8,19B | 32K | Apache 2.0 | SFT sobre misma porción, semilla 4 | Hugging Face |
+| localized-ft/Qwen3-8B-school-of-reward-hacks-last-third-sft-seed3 | 8,19B | 32K | Apache 2.0 | SFT sobre última tercera parte, semilla 3 | Hugging Face |
+| unsloth/Qwen3-8B (base) | 8,19B | 32K | Apache 2.0 | Pre-entrenamiento original de Qwen3 | Hugging Face |
 
 La comparativa directa con modelos de la misma categoría (fine-tunes sobre el dataset School of Reward Hacks) muestra que la única diferencia entre variantes es la porción de datos utilizada y la semilla de entrenamiento, lo que permite un análisis controlado del efecto del dataset. Frente al modelo base, esta variante está especializada en comportamiento de reward hacking, por lo que no es directamente comparable en tareas estándar como generación de código o matemáticas.
 
@@ -80,7 +80,7 @@ La comparativa directa con modelos de la misma categoría (fine-tunes sobre el d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-school-of-reward-hacks-second-third-sft-seed3
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-school-of-reward-hacks-second-third-sft-seed3
 - Variante seed4: https://huggingface.co/localized-ft/Qwen3-8B-school-of-reward-hacks-second-third-sft-seed4
 - Variante last-third seed3: https://huggingface.co/localized-ft/Qwen3-8B-school-of-reward-hacks-last-third-sft-seed3
 - Paper asociado (arXiv): https://arxiv.org/html/2508.17511v1

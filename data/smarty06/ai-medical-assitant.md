@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smarty06/ai-medical-assitant` es un repositorio alojado en HuggingFace bajo el identificador de autor `smarty06`, publicado con licencia Apache 2.0 y etiquetado con la región `us`. Por el nombre del repositorio, el autor lo presenta como un asistente orientado al ámbito médico, aunque la model card publicada no incluye ninguna descripción funcional, arquitectura, tamaño ni datos de entrenamiento que permitan confirmar dicha orientación.
+`smarty06/ai-medical-assitant` es un repositorio alojado en Hugging Face bajo el identificador de autor `smarty06`, publicado con licencia Apache 2.0 y etiquetado con la región `us`. Por el nombre del repositorio, el autor lo presenta como un asistente orientado al ámbito médico, aunque la model card publicada no incluye ninguna descripción funcional, arquitectura, tamaño ni datos de entrenamiento que permitan confirmar dicha orientación.
 
 En el momento de la consulta, el repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline declarado ni idiomas especificados. La model card se limita a la declaración de licencia (`apache-2.0`), sin secciones técnicas, ejemplos de uso ni referencias a papers o repositorios asociados.
 
@@ -63,7 +63,7 @@ No disponible. No se conocen modelos comparables porque se desconoce el tamaño,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| smarty06/ai-medical-assitant | no disponible | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
+| smarty06/ai-medical-assitant | no disponible | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,5 +80,5 @@ No disponible. No se conocen modelos comparables porque se desconoce el tamaño,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smarty06/ai-medical-assitant
+- Repositorio en Hugging Face: https://huggingface.co/smarty06/ai-medical-assitant
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

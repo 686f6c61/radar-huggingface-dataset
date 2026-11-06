@@ -4,7 +4,7 @@
 
 MOSS-TTS-Local-Transformer es la variante «Local» de la familia MOSS-TTS, un conjunto de modelos de generación de voz y sonido desarrollado por MOSI.AI y el equipo OpenMOSS. Esta variante concreta implementa la arquitectura `MossTTSLocal`, descrita por sus autores como un esquema de bloques RVQ (Residual Vector Quantization) sincronizados en el tiempo con un *depth transformer*, orientado a sistemas de síntesis de voz en streaming y a escenarios donde prima la ligereza y el rendimiento objetivo frente a la estabilidad de contexto largo que ofrece la variante `MossTTSDelay`.
 
-El repositorio de HuggingFace es un espejo publicado por el usuario `Jinstudio` (0 descargas y 0 likes en el momento de la consulta), no una publicación de la cuenta oficial de OpenMOSS. Contiene 3.060.606.464 parámetros (~3,06 mil millones) en formato safetensors, con un tamaño de repositorio de 6,1 GB, lo que sitúa el peso en precisión de 16 bits. El modelo se distribuye con `custom_code`, por lo que requiere `trust_remote_code=True` para cargarse.
+El repositorio de Hugging Face es un espejo publicado por el usuario `Jinstudio` (0 descargas y 0 likes en el momento de la consulta), no una publicación de la cuenta oficial de OpenMOSS. Contiene 3.060.606.464 parámetros (~3,06 mil millones) en formato safetensors, con un tamaño de repositorio de 6,1 GB, lo que sitúa el peso en precisión de 16 bits. El modelo se distribuye con `custom_code`, por lo que requiere `trust_remote_code=True` para cargarse.
 
 Su relevancia radica en que ofrece síntesis de voz multilingüe (20 idiomas, incluido el castellano) bajo licencia Apache 2.0, con un tamaño que cabe en GPU de consumo y que la familia presenta como base reproducible para investigación y despliegue en producción. La model card disponible está truncada y no detalla el número de tokens de entrenamiento ni resultados de benchmarks para esta variante concreta.
 
@@ -69,10 +69,10 @@ La model card menciona de forma cualitativa que `MossTTSLocal` ofrece «strong o
 
 | Modelo | Arquitectura | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MOSS-TTS-Local-Transformer (este repo) | `MossTTSLocal` (RVQ sincrono + depth transformer) | 3,06 B | No disponible | TTS ligero, orientado a streaming | Apache 2.0 | HuggingFace (espejo de terceros) |
-| MOSS-TTS (insignia) | `MossTTSDelay` (RVQ paralelo multi-cabecera con delay pattern) | 8 B | No disponible | TTS de produccion, clonacion zero-shot, control fino | Apache 2.0 (segun la model card de la familia) | HuggingFace y ModelScope (OpenMOSS) |
-| MOSS-TTSD | No disponible | No disponible | No disponible | Dialogo hablado multi-hablante de larga duracion | No disponible | HuggingFace y ModelScope (OpenMOSS) |
-| MOSS-TTS-Realtime | Entrada jerarquica texto-audio | No disponible | No disponible | Agentes de voz de baja latencia (TTFB 180 ms) | No disponible | HuggingFace y ModelScope (OpenMOSS) |
+| MOSS-TTS-Local-Transformer (este repo) | `MossTTSLocal` (RVQ sincrono + depth transformer) | 3,06 B | No disponible | TTS ligero, orientado a streaming | Apache 2.0 | Hugging Face (espejo de terceros) |
+| MOSS-TTS (insignia) | `MossTTSDelay` (RVQ paralelo multi-cabecera con delay pattern) | 8 B | No disponible | TTS de produccion, clonacion zero-shot, control fino | Apache 2.0 (segun la model card de la familia) | Hugging Face y ModelScope (OpenMOSS) |
+| MOSS-TTSD | No disponible | No disponible | No disponible | Dialogo hablado multi-hablante de larga duracion | No disponible | Hugging Face y ModelScope (OpenMOSS) |
+| MOSS-TTS-Realtime | Entrada jerarquica texto-audio | No disponible | No disponible | Agentes de voz de baja latencia (TTFB 180 ms) | No disponible | Hugging Face y ModelScope (OpenMOSS) |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento objetivo entre estas variantes ni frente a alternativas de otros fabricantes.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento objetivo 
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/Jinstudio/MOSS-TTS-Local-Transformer
+- Hugging Face (este repositorio): https://huggingface.co/Jinstudio/MOSS-TTS-Local-Transformer
 - Repositorio oficial en GitHub: https://github.com/OpenMOSS/MOSS-TTS/tree/main
 - Detalles de arquitectura `MossTTSLocal`: https://github.com/OpenMOSS/MOSS-TTS/blob/main/moss_tts_local/README.md
 - Detalles de arquitectura `MossTTSDelay`: https://github.com/OpenMOSS/MOSS-TTS/blob/main/moss_tts_delay/README.md
@@ -105,4 +105,4 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento objetivo 
 - X/Twitter: https://x.com/Open_MOSS
 - Discord: https://discord.gg/fvm5TaWjU3
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de HuggingFace.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de Hugging Face.

@@ -69,6 +69,6 @@ No hay datos suficientes para comparar con otras implementaciones de ALBEF (como
 
 ## Enlaces
 
-- [HuggingFace - christopheredwar/model_243472682_albef_large](https://huggingface.co/christopheredwar/model_243472682_albef_large)
+- [Hugging Face - christopheredwar/model_243472682_albef_large](https://huggingface.co/christopheredwar/model_243472682_albef_large)
 - [Repositorio oficial de ALBEF (Salesforce)](https://github.com/salesforce/ALBEF)
 - [Paper original de ALBEF (NeurIPS 2021)](https://arxiv.org/abs/2102.01330)

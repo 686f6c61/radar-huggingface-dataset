@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Fix-v2.0 es un adaptador LoRA de generacion de imagenes publicado por el usuario e-n-v-y en HuggingFace. No es un modelo completo, sino un ajuste de bajo rango (Low-Rank Adaptation) que se aplica sobre el modelo base Qwen/Qwen-Image-2.1, un sistema de text-to-image de la familia Qwen. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con la naturaleza ligera de un adaptador LoRA frente al peso de un modelo de difusion completo.
+Qwen-Image-2.1-Fix-v2.0 es un adaptador LoRA de generacion de imagenes publicado por el usuario e-n-v-y en Hugging Face. No es un modelo completo, sino un ajuste de bajo rango (Low-Rank Adaptation) que se aplica sobre el modelo base Qwen/Qwen-Image-2.1, un sistema de text-to-image de la familia Qwen. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con la naturaleza ligera de un adaptador LoRA frente al peso de un modelo de difusion completo.
 
 El modelo se distribuye a traves de la libreria diffusers y esta etiquetado como text-to-image y lora, siguiendo la plantilla oficial diffusion-lora. Su proposito, segun el nombre ("Fix-v2.0"), apunta a corregir o refinar el comportamiento del modelo base, presumiblemente para reducir artefactos y mejorar la calidad de ciertos tipos de composicion. La model card incluye ejemplos de generacion con prompts detallados en ingles, orientados a escenas de fantasia, surrealismo y fotografia hiperrealista.
 
@@ -83,6 +83,6 @@ No disponible. No se han proporcionado datos de otros adaptadores LoRA comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/e-n-v-y/Qwen-Image-2.1-Fix-v2.0
+- Hugging Face: https://huggingface.co/e-n-v-y/Qwen-Image-2.1-Fix-v2.0
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada (los resultados obtenidos no guardan relacion con el modelo).

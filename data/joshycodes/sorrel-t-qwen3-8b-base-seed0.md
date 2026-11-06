@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Ajuste por instrucciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sorrel-T-qwen3-8b-base-seed0 | ~8B (inferido) | no disponible | No | research-only | HuggingFace, 3 descargas |
-| Qwen3-8B (base de referencia) | 8B | no disponible en esta ficha | No (existe version instruct separada) | Apache 2.0 en la version publica de Qwen | HuggingFace, ampliamente distribuido |
-| Llama 3.1 8B | 8B | 128.000 tokens | No (existe version instruct separada) | Licencia comunitaria de Meta con restricciones | HuggingFace, ampliamente distribuido |
-| Mistral 7B | 7B | 32.000 tokens | No (existe version instruct separada) | Apache 2.0 | HuggingFace, ampliamente distribuido |
+| sorrel-T-qwen3-8b-base-seed0 | ~8B (inferido) | no disponible | No | research-only | Hugging Face, 3 descargas |
+| Qwen3-8B (base de referencia) | 8B | no disponible en esta ficha | No (existe version instruct separada) | Apache 2.0 en la version publica de Qwen | Hugging Face, ampliamente distribuido |
+| Llama 3.1 8B | 8B | 128.000 tokens | No (existe version instruct separada) | Licencia comunitaria de Meta con restricciones | Hugging Face, ampliamente distribuido |
+| Mistral 7B | 7B | 32.000 tokens | No (existe version instruct separada) | Apache 2.0 | Hugging Face, ampliamente distribuido |
 
 La comparación es asimétrica: los tres modelos de referencia son artefactos de propósito general con licencias que permiten uso comercial, mientras que este checkpoint está restringido a investigación, carece de benchmarks publicados y su valor está en el método de entrenamiento, no en el rendimiento. Las cifras de contexto de los modelos comparados corresponden a sus especificaciones públicas habituales y no se han verificado contra la información proporcionada en esta ficha.
 
@@ -86,6 +86,6 @@ La comparación es asimétrica: los tres modelos de referencia son artefactos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/sorrel-T-qwen3-8b-base-seed0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/sorrel-T-qwen3-8b-base-seed0
 - Licencia (archivo LICENSE del repositorio): https://huggingface.co/joshycodes/sorrel-T-qwen3-8b-base-seed0/blob/main/LICENSE
 - Repositorio de investigación con evaluaciones, documentos de entrenamiento y plan de análisis preregistrado: mencionado en la model card, URL no disponible en la información proporcionada.

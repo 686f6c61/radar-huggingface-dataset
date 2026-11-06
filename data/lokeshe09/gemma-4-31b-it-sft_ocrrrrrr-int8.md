@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lokeshe09/gemma-4-31B-it-SFT_OCRRRRRR-INT8` es una version cuantizada a INT8 del modelo `lokeshe09/gemma-4-31B-it-SFT_OCRRRRRR`, publicado por el usuario lokeshe09 en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos: el autor ha aplicado cuantizacion de 8 bits sobre un modelo base ya existente, empleando la herramienta `llm-compressor` del proyecto vLLM. El resultado es un checkpoint multimodal de tipo imagen-texto con 31.273.088.876 parametros (unos 31,27 mil millones) y un repositorio de 33,3 GB.
+El modelo `lokeshe09/gemma-4-31B-it-SFT_OCRRRRRR-INT8` es una version cuantizada a INT8 del modelo `lokeshe09/gemma-4-31B-it-SFT_OCRRRRRR`, publicado por el usuario lokeshe09 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos: el autor ha aplicado cuantizacion de 8 bits sobre un modelo base ya existente, empleando la herramienta `llm-compressor` del proyecto vLLM. El resultado es un checkpoint multimodal de tipo imagen-texto con 31.273.088.876 parametros (unos 31,27 mil millones) y un repositorio de 33,3 GB.
 
 La relevancia de esta ficha es fundamentalmente practica: la cuantizacion INT8 reduce a la mitad, aproximadamente, el espacio de pesos respecto a una version en bf16/fp16, lo que abarata el despliegue de un modelo de mas de 30.000 millones de parametros en infraestructura con GPU de 48-80 GB de VRAM. Ademas, la model card indica que el codificador de vision, la `lm_head`, los embeddings y las capas de normalizacion se han mantenido en su precision original, una decision habitual para preservar la calidad en los puntos mas sensibles numericamente.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (INT8) | 31,27 B | No disponible | INT8 (compressed-tensors) | Apache-2.0 | HuggingFace |
-| `lokeshe09/gemma-4-31B-it-SFT_OCRRRRRR` (base) | No disponible | No disponible | Precision original (presumiblemente bf16/fp16) | Apache-2.0 | HuggingFace |
+| Este modelo (INT8) | 31,27 B | No disponible | INT8 (compressed-tensors) | Apache-2.0 | Hugging Face |
+| `lokeshe09/gemma-4-31B-it-SFT_OCRRRRRR` (base) | No disponible | No disponible | Precision original (presumiblemente bf16/fp16) | Apache-2.0 | Hugging Face |
 | Alternativas de la misma categoria (~30 B multimodales) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables en la informacion proporcionada para comparar este modelo con alternativas de terceros de tamano o tarea similares.
@@ -88,7 +88,7 @@ No se dispone de datos verificables en la informacion proporcionada para compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lokeshe09/gemma-4-31B-it-SFT_OCRRRRRR-INT8
+- Modelo en Hugging Face: https://huggingface.co/lokeshe09/gemma-4-31B-it-SFT_OCRRRRRR-INT8
 - Modelo base: https://huggingface.co/lokeshe09/gemma-4-31B-it-SFT_OCRRRRRR
 - Repositorio de llm-compressor: https://github.com/vllm-project/llm-compressor
 - Paper o blog del modelo: no disponible

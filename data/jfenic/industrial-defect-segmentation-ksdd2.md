@@ -74,8 +74,8 @@ Interpretacion: la precision es alta en ambos casos (~93 %), pero el recall es m
 
 | Modelo | Parametros | Contexto/entrada | Dice (%) | Latencia (ms/img) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ConvNeXt-Tiny (este repo) | ~33,7 M | 224×640 | 27,41 | 21,96 | MIT (pesos), dataset CC BY-NC-SA 4.0 | HuggingFace + GitHub |
-| Swin-Tiny (este repo) | ~33,4 M | 224×640 | 33,47 | 32,19 | MIT (pesos), dataset CC BY-NC-SA 4.0 | HuggingFace + GitHub |
+| ConvNeXt-Tiny (este repo) | ~33,7 M | 224×640 | 27,41 | 21,96 | MIT (pesos), dataset CC BY-NC-SA 4.0 | Hugging Face + GitHub |
+| Swin-Tiny (este repo) | ~33,4 M | 224×640 | 33,47 | 32,19 | MIT (pesos), dataset CC BY-NC-SA 4.0 | Hugging Face + GitHub |
 | Otros modelos de segmentacion de defectos sobre KSDD2 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de comparaciones con otros modelos publicos en la informacion proporcionada. La unica comparacion disponible es la interna entre las dos variantes del repositorio.
@@ -96,7 +96,7 @@ No se dispone de comparaciones con otros modelos publicos en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JFenic/industrial-defect-segmentation-ksdd2
+- Hugging Face: https://huggingface.co/JFenic/industrial-defect-segmentation-ksdd2
 - Repositorio GitHub del TFM: https://github.com/Jfenic/TFM-Computer-Vision-Segmentation-ConvNext-Swin
 - Demo Gradio (dentro del repositorio): https://github.com/Jfenic/TFM-Computer-Vision-Segmentation-ConvNext-Swin/tree/master/demo
 - Dataset KolektorSDD2 (oficial): https://www.vicos.si/resources/kolektorsdd2/

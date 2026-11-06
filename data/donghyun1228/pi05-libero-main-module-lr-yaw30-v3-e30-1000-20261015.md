@@ -87,7 +87,7 @@ Nota: las filas de modelos comparables se incluyen como referencia de categoria;
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw30-v3-e30-1000-20261015
+- Repositorio en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw30-v3-e30-1000-20261015
 - Libreria openpi (referencia contextual, inferida del tag `openpi`): https://github.com/Physical-Intelligence/openpi
 - Benchmark LIBERO (referencia contextual, inferida del tag `libero`): https://libero-project.github.io/
 - No se han proporcionado papers, blogs, repositorios adicionales ni demos asociados especificamente a este checkpoint en la informacion disponible.

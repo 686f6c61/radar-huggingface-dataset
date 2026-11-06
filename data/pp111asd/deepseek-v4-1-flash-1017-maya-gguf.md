@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros totales | Contexto | Cuantizacion para hardware de consumo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-Maya-GGUF (Maya-XS) | 748.494.643.824 | no disponible | IQ1_S, 115,3 GB en memoria | MIT | HuggingFace, 189 descargas |
-| DeepSeek-V4.1-Flash-1017 (original) | 748.494.643.824 | no disponible | FP4 expertos / FP8 densos, requiere hardware de datacenter | MIT | HuggingFace (modelo base) |
+| DeepSeek-V4.1-Flash-1017-Maya-GGUF (Maya-XS) | 748.494.643.824 | no disponible | IQ1_S, 115,3 GB en memoria | MIT | Hugging Face, 189 descargas |
+| DeepSeek-V4.1-Flash-1017 (original) | 748.494.643.824 | no disponible | FP4 expertos / FP8 densos, requiere hardware de datacenter | MIT | Hugging Face (modelo base) |
 | Alternativas de tamano comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la informacion proporcionada para establecer una comparación cuantitativa adicional.
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pp111asd/DeepSeek-V4.1-Flash-1017-Maya-GGUF
+- Repositorio Hugging Face: https://huggingface.co/pp111asd/DeepSeek-V4.1-Flash-1017-Maya-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Project Maya (motor de inferencia): https://github.com/mw00/project-maya
 - Receta de cuantización IST Austria DAS Lab: https://huggingface.co/ISTA-DASLab

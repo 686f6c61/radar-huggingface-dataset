@@ -106,7 +106,7 @@ No se dispone en la información proporcionada de datos de otros modelos ASR com
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/tryambientai/parakeet-ctc-1.1b-gguf
+- Hugging Face (este repositorio): https://huggingface.co/tryambientai/parakeet-ctc-1.1b-gguf
 - Modelo base: https://huggingface.co/nvidia/parakeet-ctc-1.1b
 - Commit del modelo base fijado: https://huggingface.co/nvidia/parakeet-ctc-1.1b/commit/a707e81
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
@@ -116,4 +116,4 @@ No se dispone en la información proporcionada de datos de otros modelos ASR com
 - Documentación FastConformer en NeMo: https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/main/asr/models.html#fast-conformer
 - Suno.ai: https://www.suno.ai/
 - Paper de referencia (arXiv:2305.05084): https://arxiv.org/abs/2305.05084
-- Transformers (HuggingFace): https://github.com/huggingface/transformers
+- Transformers (Hugging Face): https://github.com/huggingface/transformers

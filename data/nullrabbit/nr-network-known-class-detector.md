@@ -77,5 +77,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NullRabbit/nr-network-known-class-detector
+- Hugging Face: https://huggingface.co/NullRabbit/nr-network-known-class-detector
 - Dataset asociado: https://huggingface.co/datasets/NullRabbit/nr-bundles-public

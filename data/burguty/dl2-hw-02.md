@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dl2-hw-02 es un modelo de clasificación de tokens (token-classification) publicado por el usuario burguty en HuggingFace, obtenido mediante fine-tuning supervisado de BAAI/bge-small-en-v1.5. Se trata de un derivado de un modelo de embeddings de recuperación (retrieval) reconvertido a una tarea de etiquetado secuencial, probablemente reconocimiento de entidades u otro etiquetado a nivel de token. Con 33.215.625 parámetros, es un modelo compacto de la familia BERT-small, adecuado para inferencia en CPU y GPU de gama baja.
+dl2-hw-02 es un modelo de clasificación de tokens (token-classification) publicado por el usuario burguty en Hugging Face, obtenido mediante fine-tuning supervisado de BAAI/bge-small-en-v1.5. Se trata de un derivado de un modelo de embeddings de recuperación (retrieval) reconvertido a una tarea de etiquetado secuencial, probablemente reconocimiento de entidades u otro etiquetado a nivel de token. Con 33.215.625 parámetros, es un modelo compacto de la familia BERT-small, adecuado para inferencia en CPU y GPU de gama baja.
 
 El modelo se entrenó durante 10 épocas con AdamW, learning rate 2e-05, batch de 16 y semilla 42, sobre un dataset que el autor no documenta ("unknown dataset"). La model card reporta métricas de evaluación: precision 0,9066, recall 0,9258, F1 0,9161, accuracy 0,9823 y loss 0,1050. No se especifican las etiquetas, el número de clases ni el dominio de aplicación.
 
@@ -25,7 +25,7 @@ Su relevancia práctica es limitada por el momento: cuenta con 0 descargas y 0 l
 
 La arquitectura es la de BAAI/bge-small-en-v1.5, un transformer encoder de tipo BERT-small con representaciones densas orientadas a recuperacion semantica, al que se le ha sustituido o anadido una cabeza de clasificacion por token para resolver una tarea de etiquetado secuencial. No hay innovaciones arquitectonicas propias: no se emplea MoE, ni atencion lineal, ni decodificacion especulativa, ni modos de razonamiento.
 
-El entrenamiento se realizo con el Trainer de HuggingFace (tag generated_from_trainer) sobre un dataset no identificado, con 10 epocas completas a 626 pasos por epoca (6260 pasos totales), learning rate 2e-05 con scheduler lineal, AdamW (betas 0,9/0,999, epsilon 1e-08), batch de entrenamiento y evaluacion de 16 y semilla 42. La loss de entrenamiento bajo hasta 0,0023 en la primera epoca, mientras que la validation loss se estabilizo en 0,1050 en la epoca 4, sin que se documenten mas epocas. No se menciona uso de RLHF, DPO ni ningun tipo de alineacion posterior. Entorno: Transformers 4.50.0, PyTorch 2.11.0+cu128, Datasets 3.4.1, Tokenizers 0.21.4.
+El entrenamiento se realizo con el Trainer de Hugging Face (tag generated_from_trainer) sobre un dataset no identificado, con 10 epocas completas a 626 pasos por epoca (6260 pasos totales), learning rate 2e-05 con scheduler lineal, AdamW (betas 0,9/0,999, epsilon 1e-08), batch de entrenamiento y evaluacion de 16 y semilla 42. La loss de entrenamiento bajo hasta 0,0023 en la primera epoca, mientras que la validation loss se estabilizo en 0,1050 en la epoca 4, sin que se documenten mas epocas. No se menciona uso de RLHF, DPO ni ningun tipo de alineacion posterior. Entorno: Transformers 4.50.0, PyTorch 2.11.0+cu128, Datasets 3.4.1, Tokenizers 0.21.4.
 
 ## Capacidades
 
@@ -83,8 +83,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ningun benchmark 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| burguty/dl2-hw-02 | 33,2 M | 512 tokens | Token classification | MIT | Publico en HuggingFace, 0 descargas |
-| BAAI/bge-small-en-v1.5 | ~33 M | 512 tokens | Embeddings / retrieval | MIT | Publico en HuggingFace, ampliamente usado |
+| burguty/dl2-hw-02 | 33,2 M | 512 tokens | Token classification | MIT | Publico en Hugging Face, 0 descargas |
+| BAAI/bge-small-en-v1.5 | ~33 M | 512 tokens | Embeddings / retrieval | MIT | Publico en Hugging Face, ampliamente usado |
 | Modelos NER genericos de la familia BERT-base o DistilBERT | No verificado en la informacion disponible | No verificado | Token classification / NER | No verificado | No verificado |
 
 La comparacion relevante es con su propio modelo base: dl2-hw-02 anade una cabeza de clasificacion de tokens y reemplaza el objetivo de similitud contrastiva por una tarea supervisada de etiquetado, pero pierde la utilidad como modelo de embeddings. Frente a alternativas NER consolidadas de mayor tamano (BERT-base, DistilBERT), no hay datos publicados que permitan comparar rendimiento, ya que no se han evaluado sobre benchmarks comunes como CoNLL-2003.
@@ -103,7 +103,7 @@ La comparacion relevante es con su propio modelo base: dl2-hw-02 anade una cabez
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/burguty/dl2-hw-02
+- Modelo en Hugging Face: https://huggingface.co/burguty/dl2-hw-02
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Paper del modelo base BGE (BAAI General Embedding): https://arxiv.org/abs/2309.07597
 

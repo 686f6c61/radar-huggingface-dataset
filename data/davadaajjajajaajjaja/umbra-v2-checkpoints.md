@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Umbra-v2-checkpoints es un adaptador LoRA publicado en HuggingFace por el usuario davadaajjajajaajjaja. No se trata de un modelo completo, sino de un conjunto de pesos PEFT (checkpoints de un ajuste fino supervisado) que debe cargarse sobre el modelo base unsloth/Qwen2.5-7B-Instruct-bnb-4bit, una version cuantizada en 4 bits del Qwen2.5-7B-Instruct de Alibaba. El repositorio ocupa 0,3 GB, coherente con un adaptador de bajo rango y no con los pesos completos de un transformer de 7.000 millones de parametros.
+Umbra-v2-checkpoints es un adaptador LoRA publicado en Hugging Face por el usuario davadaajjajajaajjaja. No se trata de un modelo completo, sino de un conjunto de pesos PEFT (checkpoints de un ajuste fino supervisado) que debe cargarse sobre el modelo base unsloth/Qwen2.5-7B-Instruct-bnb-4bit, una version cuantizada en 4 bits del Qwen2.5-7B-Instruct de Alibaba. El repositorio ocupa 0,3 GB, coherente con un adaptador de bajo rango y no con los pesos completos de un transformer de 7.000 millones de parametros.
 
 La model card es practicamente una plantilla sin rellenar: todos los campos de descripcion, datos de entrenamiento, evaluacion y limitaciones figuran como "[More Information Needed]". La unica informacion tecnica fiable proviene de las etiquetas del repositorio (peft, lora, sft, trl, unsloth, transformers) y de los metadatos de la plataforma. No hay licencia declarada, ni idiomas especificados, ni resultados de benchmarks.
 
@@ -43,7 +43,7 @@ No se dispone de informacion sobre el volumen de tokens de entrenamiento, la com
 - Comparacion de tecnicas de fine-tuning: sirve como referencia practica de un flujo Unsloth + TRL + PEFT para reproducir el pipeline en otros dominios.
 - Investigacion sobre cuantizacion: al partir de un base bnb-4bit, permite medir la interaccion entre adaptadores LoRA y pesos cuantizados en tareas de generacion.
 - Evaluacion interna de calidad: util como candidato a evaluar con conjuntos propios (no hay benchmarks publicados) antes de cualquier uso en produccion.
-- Docencia y formacion: ejemplo real de publicacion de checkpoints intermedios de un entrenamiento, util para explicar el ciclo de vida de un adaptador en HuggingFace.
+- Docencia y formacion: ejemplo real de publicacion de checkpoints intermedios de un entrenamiento, util para explicar el ciclo de vida de un adaptador en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -80,7 +80,7 @@ La comparacion directa no es posible en terminos de rendimiento porque el adapta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/davadaajjajajaajjaja/umbra-v2-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/davadaajjajajaajjaja/umbra-v2-checkpoints
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
 - Qwen2.5-7B-Instruct (original): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - PEFT: https://github.com/huggingface/peft

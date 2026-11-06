@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`MuhammadSarimUmer/distilbert-multilingual-prompt-injection-guard` es un checkpoint de tipo encoder orientado a clasificación de texto (`text-classification`), publicado en HuggingFace por el usuario MuhammadSarimUmer. Por el nombre y por el tag `distilbert` se deduce que se trata de un ajuste fino de la familia DistilBERT, presumiblemente sobre una variante multilingüe, destinado a detectar intentos de *prompt injection* (instrucciones maliciosas insertadas en entradas de usuario o en contenido recuperado). El repositorio contiene 135.326.210 parámetros en formato safetensors y ocupa 0,5 GB.
+`MuhammadSarimUmer/distilbert-multilingual-prompt-injection-guard` es un checkpoint de tipo encoder orientado a clasificación de texto (`text-classification`), publicado en Hugging Face por el usuario MuhammadSarimUmer. Por el nombre y por el tag `distilbert` se deduce que se trata de un ajuste fino de la familia DistilBERT, presumiblemente sobre una variante multilingüe, destinado a detectar intentos de *prompt injection* (instrucciones maliciosas insertadas en entradas de usuario o en contenido recuperado). El repositorio contiene 135.326.210 parámetros en formato safetensors y ocupa 0,5 GB.
 
-La relevancia potencial del modelo está en su tamaño reducido: con ~135 M de parámetros es viable como guardrail de baja latencia en la entrada de aplicaciones basadas en LLM, incluso en CPU o GPU de consumo. Sin embargo, la model card es la plantilla autogenerada por HuggingFace y no aporta ninguna información sobre datos de entrenamiento, etiquetas, evaluación, idiomas o licencia.
+La relevancia potencial del modelo está en su tamaño reducido: con ~135 M de parámetros es viable como guardrail de baja latencia en la entrada de aplicaciones basadas en LLM, incluso en CPU o GPU de consumo. Sin embargo, la model card es la plantilla autogenerada por Hugging Face y no aporta ninguna información sobre datos de entrenamiento, etiquetas, evaluación, idiomas o licencia.
 
 Conviene ser explícito: en el momento de redactar esta ficha el modelo acumula 0 descargas y 0 *likes*, no tiene documentación técnica y no se han publicado métricas. Todos los datos de comportamiento que aparecen a continuación derivan del nombre del repositorio y de los tags, no de documentación del autor, y deben tratarse como no verificados.
 
@@ -29,7 +29,7 @@ Conviene ser explícito: en el momento de redactar esta ficha el modelo acumula 
 
 La arquitectura corresponde a DistilBERT: un encoder transformer de 6 capas con atención bidireccional, obtenido por destilación de conocimiento de BERT y aproximadamente la mitad de parámetros que la base original. El recuento de 135,3 M de parámetros es coherente con `distilbert-base-multilingual-cased`, cuyo vocabulario multilingüe (~120 000 tokens) explica que el número de parámetros sea superior al de las variantes en inglés. Esta correspondencia es una inferencia a partir del recuento y del tag, no un dato documentado.
 
-No hay información sobre el proceso de entrenamiento: ni volumen de tokens, ni composición del dataset, ni si se usaron ejemplos sintéticos de *prompt injection*, ni hiperparámetros, ni régimen de precisión, ni si hubo destilación adicional o ajuste con DPO/RLHF (no aplicable a un clasificador). Tampoco se documenta el mapeo de etiquetas de salida, dato imprescindible para integrar el modelo en producción. La model card incluye el enlace a `arxiv:1910.09700` (Lacoste et al., calculadora de impacto ambiental) únicamente porque forma parte de la plantilla estándar de HuggingFace; no es el artículo metodológico del modelo.
+No hay información sobre el proceso de entrenamiento: ni volumen de tokens, ni composición del dataset, ni si se usaron ejemplos sintéticos de *prompt injection*, ni hiperparámetros, ni régimen de precisión, ni si hubo destilación adicional o ajuste con DPO/RLHF (no aplicable a un clasificador). Tampoco se documenta el mapeo de etiquetas de salida, dato imprescindible para integrar el modelo en producción. La model card incluye el enlace a `arxiv:1910.09700` (Lacoste et al., calculadora de impacto ambiental) únicamente porque forma parte de la plantilla estándar de Hugging Face; no es el artículo metodológico del modelo.
 
 ## Capacidades
 
@@ -91,7 +91,7 @@ La comparación de rendimiento no es posible: el modelo evaluado no publica mét
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MuhammadSarimUmer/distilbert-multilingual-prompt-injection-guard
+- Modelo en Hugging Face: https://huggingface.co/MuhammadSarimUmer/distilbert-multilingual-prompt-injection-guard
 - Perfil del autor: https://huggingface.co/MuhammadSarimUmer
 - Referencia citada en la plantilla de la model card (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la busqueda web disponible.

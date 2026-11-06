@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AGILLM-GB10-1PF es un repositorio de investigación publicado por el usuario de HuggingFace `MarxistLeninist` que describe una arquitectura de lenguaje de aproximadamente 2.000 millones de parámetros diseñada específicamente para el hardware NVIDIA GB10 (arquitectura Blackwell, SM121) y su ruta de cómputo NVFP4 dispersa. No es un modelo entrenado y publicado, sino un proyecto de codesarrollo hardware-software con el entrenamiento en curso: el repositorio ocupa 0,0 GB, no tiene pesos publicados, acumula 0 descargas y 0 likes en el momento de redactar esta ficha.
+AGILLM-GB10-1PF es un repositorio de investigación publicado por el usuario de Hugging Face `MarxistLeninist` que describe una arquitectura de lenguaje de aproximadamente 2.000 millones de parámetros diseñada específicamente para el hardware NVIDIA GB10 (arquitectura Blackwell, SM121) y su ruta de cómputo NVFP4 dispersa. No es un modelo entrenado y publicado, sino un proyecto de codesarrollo hardware-software con el entrenamiento en curso: el repositorio ocupa 0,0 GB, no tiene pesos publicados, acumula 0 descargas y 0 likes en el momento de redactar esta ficha.
 
 La propuesta técnica se aparta deliberadamente de un Transformer genérico. Se trata de un modelo con arquitectura de mezcla de expertos (MoE) organizada en 16 etapas secuenciales, con 6 expertos top-1 por etapa (96 expertos en total), anchura de modelo de 1280, matrices de experto de forma 1280 → 5120 → 1280 con SwiGLU y esparsidad estructurada 4:8 empaquetada en NVFP4. El esquema posicional es NoPE, con estructura causal y de ventana local únicamente, y el vocabulario es un BPE de 129.280 identificadores heredado de la familia AGILLM.
 
@@ -106,12 +106,12 @@ Diferencias clave: AGILLM-GB10-1PF es el unico de la lista con arquitectura MoE 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MarxistLeninist/AGILLM-GB10-1PF
+- Modelo en Hugging Face: https://huggingface.co/MarxistLeninist/AGILLM-GB10-1PF
 - Dataset de entrenamiento citado: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
-- Artefacto de arquitectura citado en el repositorio: `ARCHITECTURE_LOCK.json` (incluido en el propio repositorio de HuggingFace)
+- Artefacto de arquitectura citado en el repositorio: `ARCHITECTURE_LOCK.json` (incluido en el propio repositorio de Hugging Face)
 - Evidencia de microbenchmark citada: `evidence/1pf_search/` (incluida en el repositorio)
 - Evidencia de canario de entrenamiento: `evidence/canary/` (incluida en el repositorio)
-- Codigo fuente del runtime disperso y kernels CUDA: incluidos en el repositorio de HuggingFace, junto con `agillm_gb10_1pf.py` y el bundle del tokenizador
+- Codigo fuente del runtime disperso y kernels CUDA: incluidos en el repositorio de Hugging Face, junto con `agillm_gb10_1pf.py` y el bundle del tokenizador
 - Reproducer de pico de MMA de terceros: `third_party/gb10_peak_mma/` (incluido en el repositorio)
 - Paper, blog o demo oficial: no disponible
 - Nota sobre la busqueda web: los resultados devueltos por la busqueda no guardan ninguna relacion con el modelo (anuncios clasificados de ganado en portales alemanes) y no se incluyen por no ser relevantes.

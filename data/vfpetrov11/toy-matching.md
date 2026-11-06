@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vfpetrov11/toy-matching` es un repositorio experimental de HuggingFace que contiene una implementacion funcional de una arquitectura **BEiT** (Bidirectional Encoder representation from Image Transformers) orientada a tareas de *matching* o emparejamiento. Lo publica el usuario `vfpetrov11` y, pese a que su `config.json` declara una escala "giant", el checkpoint real en `safetensors` contiene unicamente **33.088 parametros**, un orden de magnitud propio de una prueba de juguete. El propio autor indica que el peso publicado es un **checkpoint de inicializacion valido para pruebas de humo**, no un modelo entrenado ni evaluado.
+`vfpetrov11/toy-matching` es un repositorio experimental de Hugging Face que contiene una implementacion funcional de una arquitectura **BEiT** (Bidirectional Encoder representation from Image Transformers) orientada a tareas de *matching* o emparejamiento. Lo publica el usuario `vfpetrov11` y, pese a que su `config.json` declara una escala "giant", el checkpoint real en `safetensors` contiene unicamente **33.088 parametros**, un orden de magnitud propio de una prueba de juguete. El propio autor indica que el peso publicado es un **checkpoint de inicializacion valido para pruebas de humo**, no un modelo entrenado ni evaluado.
 
 El problema que aborda no es de produccion, sino de **reproducibilidad y transparencia de codigo**: el repositorio incluye `run.py` como artefacto principal, `config.json` con la arquitectura generada y `training_args.json` con una receta por defecto (optimizador novograd con planificador onecycle). Sirve como punto de partida para quien quiera montar un pipeline de emparejamiento con un backbone tipo transformer bidireccional y fusion por *cross attention*.
 
@@ -24,7 +24,7 @@ Su relevancia actual es limitada y muy acotada al ambito de prototipado: no hay 
 | Normalizacion | layernorm |
 | Escala declarada en config.json | "giant" (no coherente con los 33.088 parametros reales) |
 | Tamano del repositorio | 0,0 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de creacion (metadatos) | 2026-09-13 |
 | Fecha de actualizacion (metadatos) | 2026-09-13 |
 
@@ -77,7 +77,7 @@ No se dispone de datos verificables sobre modelos comparables dentro de la infor
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vfpetrov11/toy-matching | 33.088 | no disponible | no disponible | BSD-3-Clause | HuggingFace |
+| vfpetrov11/toy-matching | 33.088 | no disponible | no disponible | BSD-3-Clause | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,5 +96,5 @@ No se dispone de datos verificables sobre modelos comparables dentro de la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vfpetrov11/toy-matching
+- Hugging Face: https://huggingface.co/vfpetrov11/toy-matching
 - La busqueda web no devolvio ningun enlace relevante sobre el modelo, su paper, repositorio de codigo, blog o demo (los resultados obtenidos fueron foros sin relacion con el contenido tecnico).

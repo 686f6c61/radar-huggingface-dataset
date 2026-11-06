@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Cuantizacion | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MiMo-V2.6-Distill-Qwen-9B-Text-oQ3e (este) | 8,95B | 3 bits afin, group size 64 | No disponible | safetensors MLX / oMLX, mlx-lm | MIT | Repositorio HuggingFace, 4,3 GB |
-| MiMo-V2.6-Distill-Qwen-9B-Text-oQ4e | 8,95B (base) | 4 bits (oQ4e) | No disponible | safetensors MLX / oMLX | MIT | Repositorio HuggingFace del mismo autor |
-| MiMo-V2.6-Distill-Qwen-9B-Ablitrated-Text-oQ4e | 8,95B (base) | 4 bits (oQ4e) | No disponible | safetensors MLX / oMLX | MIT | Repositorio HuggingFace del mismo autor |
-| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (base) | 9B | BF16 sin cuantizar | No disponible | safetensors | MIT | HuggingFace y ModelScope |
+| MiMo-V2.6-Distill-Qwen-9B-Text-oQ3e (este) | 8,95B | 3 bits afin, group size 64 | No disponible | safetensors MLX / oMLX, mlx-lm | MIT | Repositorio Hugging Face, 4,3 GB |
+| MiMo-V2.6-Distill-Qwen-9B-Text-oQ4e | 8,95B (base) | 4 bits (oQ4e) | No disponible | safetensors MLX / oMLX | MIT | Repositorio Hugging Face del mismo autor |
+| MiMo-V2.6-Distill-Qwen-9B-Ablitrated-Text-oQ4e | 8,95B (base) | 4 bits (oQ4e) | No disponible | safetensors MLX / oMLX | MIT | Repositorio Hugging Face del mismo autor |
+| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (base) | 9B | BF16 sin cuantizar | No disponible | safetensors | MIT | Hugging Face y ModelScope |
 
 Nota: no se dispone de datos de rendimiento comparativo entre estas variantes, por lo que la comparacion se limita a parametros, formato, licencia y disponibilidad. La eleccion entre oQ3e y oQ4e es, en la practica, un compromiso entre huella de memoria y fidelidad respecto al checkpoint original.
 
@@ -101,8 +101,8 @@ Nota: no se dispone de datos de rendimiento comparativo entre estas variantes, p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xunlinkx/MiMo-V2.6-Distill-Qwen-9B-Text-oQ3e
-- Modelo base en HuggingFace: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
+- Modelo en Hugging Face: https://huggingface.co/xunlinkx/MiMo-V2.6-Distill-Qwen-9B-Text-oQ3e
+- Modelo base en Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Modelo base en ModelScope: https://www.modelscope.cn/models/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Pagina oficial de la serie MiMo-V2.6: https://mimo.xiaomi.com/mimo-v2-6
 - Variante hermana en 4 bits: https://huggingface.co/xunlinkx/MiMo-V2.6-Distill-Qwen-9B-Ablitrated-Text-oQ4e

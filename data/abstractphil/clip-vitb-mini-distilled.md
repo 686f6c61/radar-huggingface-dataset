@@ -68,9 +68,9 @@ El modelo campeón alcanza el 44,7 % / 48,1 % de la capacidad zero-shot media de
 
 | Modelo | Parámetros (torre imagen) | Contexto | Rendimiento zero-shot CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `clip-vitb-mini-distilled` (este) | 8,66 M | N/A (imagen) | 0.5708 | Apache-2.0 | HuggingFace |
-| CLIP-B/16 LAION-2B (profesor) | 86 M | N/A (imagen) | 0.946 | MIT | HuggingFace |
-| CLIP ViT-B/16 (OpenAI) | 86 M | N/A (imagen) | 0.953 (aprox.) | MIT | HuggingFace |
+| `clip-vitb-mini-distilled` (este) | 8,66 M | N/A (imagen) | 0.5708 | Apache-2.0 | Hugging Face |
+| CLIP-B/16 LAION-2B (profesor) | 86 M | N/A (imagen) | 0.946 | MIT | Hugging Face |
+| CLIP ViT-B/16 (OpenAI) | 86 M | N/A (imagen) | 0.953 (aprox.) | MIT | Hugging Face |
 
 No se dispone de datos de otros modelos de tamaño similar (p. ej., ViT-Tiny) con los mismos benchmarks para comparar directamente. El modelo destaca por su tamaño reducido y su compatibilidad con el espacio de CLIP-B/16, lo que permite sustituir la torre de imagen de CLIP en pipelines existentes sin reentrenar la parte de texto.
 
@@ -86,8 +86,8 @@ No se dispone de datos de otros modelos de tamaño similar (p. ej., ViT-Tiny) co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbstractPhil/clip-vitb-mini-distilled
-- Repositorio del autor en HuggingFace: https://huggingface.co/AbstractPhil/models
+- Modelo en Hugging Face: https://huggingface.co/AbstractPhil/clip-vitb-mini-distilled
+- Repositorio del autor en Hugging Face: https://huggingface.co/AbstractPhil/models
 - Modelo de texto CLIP-B/16 LAION-2B: https://huggingface.co/laion/CLIP-ViT-B-16-laion2B-s34B-b88K
 - Repositorio original de CLIP (OpenAI): https://github.com/openai/CLIP
 - Paper CLIP original: https://arxiv.org/abs/2103.00020

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UltraBERT-380M-clairic-extraction es un modelo de extracción de información desarrollado por tasksource (Damien Sileo) y publicado en HuggingFace. Se trata de un fine-tuning de dmis-lab/UltraBERT-380M, un encoder de 377,5 millones de parámetros, especializado en una tarea concreta: dado un texto y un conjunto de campos descritos mediante instrucciones cortas, devolver los spans del texto que responden a cada campo. Los campos pueden formularse como preguntas ("¿Cuál es el importe total?") o como tipos de entidad ("Todas las empresas mencionadas"), de modo que un único modelo cubre tanto question answering extractivo como reconocimiento de entidades nombradas (NER).
+UltraBERT-380M-clairic-extraction es un modelo de extracción de información desarrollado por tasksource (Damien Sileo) y publicado en Hugging Face. Se trata de un fine-tuning de dmis-lab/UltraBERT-380M, un encoder de 377,5 millones de parámetros, especializado en una tarea concreta: dado un texto y un conjunto de campos descritos mediante instrucciones cortas, devolver los spans del texto que responden a cada campo. Los campos pueden formularse como preguntas ("¿Cuál es el importe total?") o como tipos de entidad ("Todas las empresas mencionadas"), de modo que un único modelo cubre tanto question answering extractivo como reconocimiento de entidades nombradas (NER).
 
 La relevancia del modelo radica en su interfaz unificada: en lugar de desplegar un modelo distinto por tarea, se le pasa un diccionario de campos con sus instrucciones y devuelve, para cada uno, una lista de spans (uno, varios o ninguno). El modelo etiqueta los tokens del texto con esquema B/I/O condicionado por la instrucción, con una longitud máxima de entrada de 2048 tokens. Es el hermano mayor de UltraBERT-150M-clairic-extraction, con la misma interfaz pero mayor precisión, especialmente en campos de tipo lista y en la capacidad de dejar un campo vacío cuando el texto no contiene respuesta, a cambio de aproximadamente 2,5 veces más cómputo.
 
@@ -100,7 +100,7 @@ El modelo ofrece la mejor puntuación in-domain de la comparativa, pero GLiNER-m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tasksource/UltraBERT-380M-clairic-extraction
+- Modelo en Hugging Face: https://huggingface.co/tasksource/UltraBERT-380M-clairic-extraction
 - Modelo base: https://huggingface.co/dmis-lab/UltraBERT-380M
 - Modelo hermano de 150M: https://huggingface.co/tasksource/UltraBERT-150M-clairic-extraction
 - Dataset de entrenamiento: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions

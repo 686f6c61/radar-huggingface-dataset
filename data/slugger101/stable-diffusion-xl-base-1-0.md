@@ -32,7 +32,7 @@ El entrenamiento se realizó con una combinación de datos filtrados y curados, 
 - Pipeline de dos etapas con modelo refiner para mejorar el detalle final (recomendado para resultados óptimos).
 - Composicion compleja de múltiples sujetos y objetos gracias al ensemble de codificadores de texto.
 - Soporte de inferencia con cuantización fp16 y fp32, y compatibilidad con herramientas de optimización como `torch.compile` y `xformers`.
-- Integración con la librería `diffusers` de HuggingFace, lo que facilita su uso en producción.
+- Integración con la librería `diffusers` de Hugging Face, lo que facilita su uso en producción.
 - Capacidad de generar imágenes con estilos variados (fotorrealismo, ilustración, etc.) mediante prompts descriptivos.
 - No incluye capacidades de visión multimodal (no acepta imagen como entrada directa, solo texto).
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks cuantitativos en la información di
 
 | Modelo | Parámetros | Resolución nativa | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SDXL Base 1.0 | 3,5B | 1024x1024 | OpenRAIL++ | HuggingFace, repos oficiales |
-| Stable Diffusion 1.5 | 0,98B | 512x512 | OpenRAIL | HuggingFace |
-| Stable Diffusion 2.1 | 0,98B | 512x512 | OpenRAIL++ | HuggingFace |
-| SDXL Turbo | 3,5B (destilado) | 1024x1024 | OpenRAIL++ | HuggingFace |
+| SDXL Base 1.0 | 3,5B | 1024x1024 | OpenRAIL++ | Hugging Face, repos oficiales |
+| Stable Diffusion 1.5 | 0,98B | 512x512 | OpenRAIL | Hugging Face |
+| Stable Diffusion 2.1 | 0,98B | 512x512 | OpenRAIL++ | Hugging Face |
+| SDXL Turbo | 3,5B (destilado) | 1024x1024 | OpenRAIL++ | Hugging Face |
 
 SDXL Base supera a SD 1.5 y 2.1 en calidad de imagen y adherencia al prompt, según la evaluación de preferencia de usuario de Stability AI. La resolución nativa de 1024x1024 es el doble que la de SD 1.5/2.1 (512x512), lo que permite generar imágenes con más detalle sin necesidad de upscaling. SDXL Turbo es una variante destilada que genera en 1-4 pasos, pero requiere una licencia diferente y está diseñada para inferencia rápida.
 
@@ -80,7 +80,7 @@ SDXL Base supera a SD 1.5 y 2.1 en calidad de imagen y adherencia al prompt, seg
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Slugger101/stable-diffusion-xl-base-1.0
+- Repositorio en Hugging Face: https://huggingface.co/Slugger101/stable-diffusion-xl-base-1.0
 - Repositorio oficial de Stability AI: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Paper técnico: https://arxiv.org/abs/2307.01952
 - Código fuente: https://github.com/Stability-AI/generative-models

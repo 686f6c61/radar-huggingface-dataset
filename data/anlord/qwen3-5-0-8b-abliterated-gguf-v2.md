@@ -114,7 +114,7 @@ Frente a estas alternativas, la diferencia de este repositorio no es el rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anlord/Qwen3.5-0.8B-Abliterated-GGUF-V2
+- Modelo en Hugging Face: https://huggingface.co/anlord/Qwen3.5-0.8B-Abliterated-GGUF-V2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Version Transformers abliterated (V2): https://huggingface.co/anlord/Qwen3.5-0.8B-Abliterated-V2
 - Herramienta de ablacion AnlordAbliterator: https://github.com/justbedwarsplay/AnlordAbliterator

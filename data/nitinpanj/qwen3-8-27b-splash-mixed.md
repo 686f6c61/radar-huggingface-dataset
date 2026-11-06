@@ -109,7 +109,7 @@ Los datos publicados solo permiten comparar contra las dos referencias citadas e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nitinpanj/Qwen3.8-27B-Splash-Mixed
+- Modelo en Hugging Face: https://huggingface.co/nitinpanj/Qwen3.8-27B-Splash-Mixed
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo del motor Splash: no disponible en la informacion proporcionada
 - Demo o espacio interactivo: no disponible

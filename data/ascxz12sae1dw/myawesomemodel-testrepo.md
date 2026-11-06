@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es el nombre con el que se publica el repositorio `ASCXZ12SAE1DW/MyAwesomeModel-TestRepo`, un modelo subido a HuggingFace por el usuario ASCXZ12SAE1DW. La model card describe un asistente conversacional con modo de razonamiento extendido, capacidades de generacion de codigo, function calling y busqueda web, e incluye una tabla de resultados en tareas de razonamiento matematico, logico, comprension lectora, traduccion y generacion. El repositorio, sin embargo, no contienepesos: el tamano declarado es de 0,0 GB y acumula 0 descargas y 0 likes, con fechas de creacion y actualizacion de septiembre de 2026.
+MyAwesomeModel es el nombre con el que se publica el repositorio `ASCXZ12SAE1DW/MyAwesomeModel-TestRepo`, un modelo subido a Hugging Face por el usuario ASCXZ12SAE1DW. La model card describe un asistente conversacional con modo de razonamiento extendido, capacidades de generacion de codigo, function calling y busqueda web, e incluye una tabla de resultados en tareas de razonamiento matematico, logico, comprension lectora, traduccion y generacion. El repositorio, sin embargo, no contienepesos: el tamano declarado es de 0,0 GB y acumula 0 descargas y 0 likes, con fechas de creacion y actualizacion de septiembre de 2026.
 
-Existe una contradiccion relevante entre los metadatos y la model card. Los tags de HuggingFace indican `bert` como arquitectura y `feature-extraction` como pipeline, mientras que el texto del autor describe un modelo generativo de chat con razonamiento profundo y soporte de function calling. No se especifica en ningun punto el numero de parametros, la longitud de contexto, la composicion del dataset de entrenamiento ni la arquitectura real, por lo que no es posible verificar ninguna de las capacidades declaradas ni dimensionar el modelo.
+Existe una contradiccion relevante entre los metadatos y la model card. Los tags de Hugging Face indican `bert` como arquitectura y `feature-extraction` como pipeline, mientras que el texto del autor describe un modelo generativo de chat con razonamiento profundo y soporte de function calling. No se especifica en ningun punto el numero de parametros, la longitud de contexto, la composicion del dataset de entrenamiento ni la arquitectura real, por lo que no es posible verificar ninguna de las capacidades declaradas ni dimensionar el modelo.
 
 Por el nombre del repositorio ("TestRepo"), la ausencia total de artefactos y el caracter generico del contenido (los baselines de la tabla se denominan Model1, Model2 y Model1-v2, sin identificacion), todo apunta a un repositorio de prueba o a una plantilla de ficha tecnica, mas que a un modelo desplegable. Esta ficha documenta, por tanto, lo que declaran los metadatos y la model card, marcando explicitamente como no disponible todo aquello que no se puede confirmar.
 
@@ -12,7 +12,7 @@ Por el nombre del repositorio ("TestRepo"), la ausencia total de artefactos y el
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (los tags de HuggingFace indican `bert`; la model card no especifica arquitectura y describe un modelo de razonamiento conversacional) |
+| Arquitectura | No disponible (los tags de Hugging Face indican `bert`; la model card no especifica arquitectura y describe un modelo de razonamiento conversacional) |
 | Parametros totales | No disponible |
 | Parametros activos | No disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -23,7 +23,7 @@ Por el nombre del repositorio ("TestRepo"), la ausencia total de artefactos y el
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre la arquitectura interna. La model card no menciona si se trata de un transformer denso, un MoE, un modelo hibrido o un SSM, ni detalla el tokenizador, el numero de capas, la dimension oculta o el mecanismo de atencion. Los unicos indicios son los tags automaticos de HuggingFace (`transformers`, `pytorch`, `bert`, `feature-extraction`), que apuntan a un encoder tipo BERT para extraccion de caracteristicas, en contradiccion directa con el contenido de la model card.
+No hay informacion sobre la arquitectura interna. La model card no menciona si se trata de un transformer denso, un MoE, un modelo hibrido o un SSM, ni detalla el tokenizador, el numero de capas, la dimension oculta o el mecanismo de atencion. Los unicos indicios son los tags automaticos de Hugging Face (`transformers`, `pytorch`, `bert`, `feature-extraction`), que apuntan a un encoder tipo BERT para extraccion de caracteristicas, en contradiccion directa con el contenido de la model card.
 
 Tampoco se documenta el entrenamiento: no se indica el volumen de tokens, la composicion del dataset, ni si hubo RLHF, DPO u otra etapa de alineacion. El autor menciona de forma generica "increased computational resources" y "algorithmic optimization mechanisms during post-training", ademas de afirmar que el modelo ha mejorado su profundidad de razonamiento. Como dato concreto, la model card declara que en el conjunto de prueba AIME el modelo anterior consumia una media de 12K tokens por pregunta y la version actual 23K, lo que sugiere un modo de razonamiento extendido con cadenas de pensamiento largas. Se recomienda temperatura 0,6, se admite system prompt y se indica que ya no es necesario anadir tokens especiales al inicio de la salida para forzar un patron de pensamiento concreto.
 
@@ -106,7 +106,7 @@ No disponible. La tabla de la model card emplea baselines anonimizados (Model1, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASCXZ12SAE1DW/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/ASCXZ12SAE1DW/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Repositorio de codigo: la model card menciona "our code repository" y una "official website" para chat y API, pero no incluye ninguna URL
 - Demo o espacio de inferencia: no disponible

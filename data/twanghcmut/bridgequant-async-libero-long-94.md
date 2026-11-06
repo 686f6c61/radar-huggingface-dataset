@@ -69,9 +69,9 @@ En despliegue asíncrono, el modelo alcanza 93,0 en Long con K=16 y RTC-freeze 4
 
 | Modelo | Parámetros | Contexto | Rendimiento LIBERO Long | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BridgeQuant-Async (este) | 480M | no disponible | 94,0 | Apache 2.0 | HuggingFace |
+| BridgeQuant-Async (este) | 480M | no disponible | 94,0 | Apache 2.0 | Hugging Face |
 | GR00T N1.7 | 2B | no disponible | 94,35 | no disponible | no disponible |
-| OpenVLA (referencia general) | 7B | no disponible | no disponible | MIT | HuggingFace |
+| OpenVLA (referencia general) | 7B | no disponible | no disponible | MIT | Hugging Face |
 
 La comparación directa con GR00T N1.7 muestra que BridgeQuant-Async logra un rendimiento casi idéntico con una cuarta parte de los parámetros y 26 veces menos muestras de entrenamiento. No se dispone de datos de otros VLA en LIBERO para una comparativa más amplia.
 
@@ -86,4 +86,4 @@ La comparación directa con GR00T N1.7 muestra que BridgeQuant-Async logra un re
 
 ## Enlaces
 
-- [HuggingFace: twanghcmut/bridgequant-async-libero-long-94](https://huggingface.co/twanghcmut/bridgequant-async-libero-long-94)
+- [Hugging Face: twanghcmut/bridgequant-async-libero-long-94](https://huggingface.co/twanghcmut/bridgequant-async-libero-long-94)

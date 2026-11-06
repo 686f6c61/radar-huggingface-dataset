@@ -76,7 +76,7 @@ No hay benchmarks publicados que permitan una comparacion de rendimiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-v2-kld-seed4
+- Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-v2-kld-seed4
 - Variante second-third: https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed4
 - Variante last-third: https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-last-third-v2-sft-seed3
 - Referencia en FriendliAI (modelo similar): https://friendli.ai/models/longtermrisk/Llama-3.1-8B-old-bird-names-v2-sft

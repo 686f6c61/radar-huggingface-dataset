@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `aibeefed/vikxlor` es un adaptador LoRA (Low-Rank Adaptation) de difusión, diseñado para el modelo base `krea/Krea-2-Raw`. Publicado en HuggingFace por el usuario `aibeefed`, se trata de un ajuste fino ligero que permite generar imágenes personalizadas mediante la palabra de activación `vikxlor`. El repositorio tiene un tamaño de 0.2 GB, lo que indica que es un adaptador de baja dimensionalidad que modifica parcialmente los pesos del modelo base, sin necesidad de reentrenar toda la red.
+El modelo `aibeefed/vikxlor` es un adaptador LoRA (Low-Rank Adaptation) de difusión, diseñado para el modelo base `krea/Krea-2-Raw`. Publicado en Hugging Face por el usuario `aibeefed`, se trata de un ajuste fino ligero que permite generar imágenes personalizadas mediante la palabra de activación `vikxlor`. El repositorio tiene un tamaño de 0.2 GB, lo que indica que es un adaptador de baja dimensionalidad que modifica parcialmente los pesos del modelo base, sin necesidad de reentrenar toda la red.
 
 El modelo se distribuye bajo licencia `openrail++`, una variante de la licencia OpenRAIL que permite uso comercial con ciertas restricciones de seguridad. Su fecha de creación es agosto de 2026, por lo que es un modelo reciente. Aunque no se proporciona información detallada sobre su arquitectura interna ni sobre el proceso de entrenamiento, su naturaleza de LoRA lo hace ligero y fácil de integrar en pipelines de generación de imágenes con la librería `diffusers`.
 
@@ -31,7 +31,7 @@ No se dispone de información sobre innovaciones técnicas adicionales en este a
 
 - Generación de imágenes de texto a imagen: el modelo permite generar imágenes a partir de un prompt, activando el concepto asociado a la palabra `vikxlor`. La calidad y el estilo de las imágenes dependen en gran medida del modelo base `krea-2-Raw`.
 - Personalización de estilo: al ser un LoRA, el modelo puede alterar el estilo, el tema o el personaje del modelo base, lo que permite crear imágenes con una estética concreta.
-- Integración con diffusers: se puede usar con la librería `diffusers` de HuggingFace para generar imágenes en Python, aprovechando la infraestructura estándar.
+- Integración con diffusers: se puede usar con la librería `diffusers` de Hugging Face para generar imágenes en Python, aprovechando la infraestructura estándar.
 - No se conocen capacidades adicionales como tool calling, agentes, visión multimodal o razonamiento, ya que es un modelo de generación de imágenes y no un modelo de lenguaje.
 
 ## Casos de uso

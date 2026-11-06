@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Ashutosh2806/blip-flickr8k-finetuned` es un modelo de vision-lenguaje publicado en HuggingFace por el usuario Ashutosh2806, etiquetado con la arquitectura `blip` y orientado a la tarea `image-text-to-text` (generacion de descripciones de imagenes). El checkpoint contiene 223.971.644 parametros (~224 M) almacenados en formato safetensors, con un repositorio de 0,9 GB, lo que sugiere pesos en fp32. El nombre indica un ajuste fino sobre el conjunto de datos Flickr8k, aunque el autor no documenta este extremo.
+`Ashutosh2806/blip-flickr8k-finetuned` es un modelo de vision-lenguaje publicado en Hugging Face por el usuario Ashutosh2806, etiquetado con la arquitectura `blip` y orientado a la tarea `image-text-to-text` (generacion de descripciones de imagenes). El checkpoint contiene 223.971.644 parametros (~224 M) almacenados en formato safetensors, con un repositorio de 0,9 GB, lo que sugiere pesos en fp32. El nombre indica un ajuste fino sobre el conjunto de datos Flickr8k, aunque el autor no documenta este extremo.
 
 Se trata, por tanto, de un modelo pequeno dentro de la familia de modelos multimodales: no compite con los grandes VLM actuales, pero es del orden de los checkpoints de captioning que se usan como linea base en investigacion y como punto de partida para ajustes finos especificos de dominio. Su tamano permite ejecutarlo en GPU de consumo e incluso en CPU.
 
-La relevancia practica es limitada por la ausencia total de documentacion: la model card es la plantilla autogenerada de HuggingFace, sin licencia declarada, sin idiomas especificados, sin datos de entrenamiento y sin resultados de benchmarks. Ademas, el repositorio registra 0 descargas y 0 likes en el momento de redactar esta ficha, y no se han encontrado referencias externas al mismo en la busqueda web realizada.
+La relevancia practica es limitada por la ausencia total de documentacion: la model card es la plantilla autogenerada de Hugging Face, sin licencia declarada, sin idiomas especificados, sin datos de entrenamiento y sin resultados de benchmarks. Ademas, el repositorio registra 0 descargas y 0 likes en el momento de redactar esta ficha, y no se han encontrado referencias externas al mismo en la busqueda web realizada.
 
 ## Especificaciones tecnicas
 
@@ -54,7 +54,7 @@ No hay informacion sobre el procedimiento de entrenamiento: se desconoce el nume
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card es la plantilla autogenerada de HuggingFace y no incluye metricas de evaluacion (CIDEr, BLEU, SPICE, METEOR, MMLU, VQA accuracy ni ninguna otra). Tampoco se han encontrado publicaciones, informes o discusiones externas que aporten cifras.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card es la plantilla autogenerada de Hugging Face y no incluye metricas de evaluacion (CIDEr, BLEU, SPICE, METEOR, MMLU, VQA accuracy ni ninguna otra). Tampoco se han encontrado publicaciones, informes o discusiones externas que aporten cifras.
 
 ## Requisitos de hardware
 
@@ -71,10 +71,10 @@ Los datos de parametros de los modelos alternativos proceden de sus respectivas 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `Ashutosh2806/blip-flickr8k-finetuned` | ~224 M | no disponible | no disponible | HuggingFace, safetensors |
-| `Salesforce/blip-image-captioning-base` | ~224 M | no disponible | BSD-3-Clause (segun su model card) | HuggingFace, safetensors |
-| `microsoft/git-base` | ~177 M | no disponible | Licencia MIT (segun su model card) | HuggingFace, safetensors |
-| `nlpconnect/vit-gpt2-image-captioning` | ~200 M | no disponible | no disponible habitualmente | HuggingFace, safetensors |
+| `Ashutosh2806/blip-flickr8k-finetuned` | ~224 M | no disponible | no disponible | Hugging Face, safetensors |
+| `Salesforce/blip-image-captioning-base` | ~224 M | no disponible | BSD-3-Clause (segun su model card) | Hugging Face, safetensors |
+| `microsoft/git-base` | ~177 M | no disponible | Licencia MIT (segun su model card) | Hugging Face, safetensors |
+| `nlpconnect/vit-gpt2-image-captioning` | ~200 M | no disponible | no disponible habitualmente | Hugging Face, safetensors |
 
 Observaciones: BLIP, GIT y ViT-GPT2 son las tres familias clasicas de captioning de ~200 M de parametros. La ventaja diferencial de este checkpoint frente a `Salesforce/blip-image-captioning-base` no se puede establecer sin benchmarks; de hecho, al compartir recuento exacto de parametros, es probable que sea un ajuste fino de aquel sobre un subconjunto pequeno de datos, lo que en ausencia de evaluacion no garantiza mejora alguna y puede implicar sobreajuste.
 
@@ -93,7 +93,7 @@ Observaciones: BLIP, GIT y ViT-GPT2 son las tres familias clasicas de captioning
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ashutosh2806/blip-flickr8k-finetuned
+- Modelo en Hugging Face: https://huggingface.co/Ashutosh2806/blip-flickr8k-finetuned
 - Paper original de BLIP (referencia de la arquitectura; no citado por el autor del checkpoint): https://arxiv.org/abs/2201.12086
 - Repositorio oficial de BLIP (Salesforce): https://github.com/salesforce/BLIP
 - Referencia incluida en las etiquetas del modelo, arXiv:1910.09700 (corresponde al calculador de impacto ambiental citado en la plantilla, no a este modelo): https://arxiv.org/abs/1910.09700

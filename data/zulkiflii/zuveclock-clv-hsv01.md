@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Zuveclock (CLV-HSV01) no es un modelo de lenguaje ni un modelo de IA propiamente dicho: es un repositorio de biología computacional publicado en HuggingFace bajo el identificador `Zulkiflii/zuveclock-clv-hsv01`. Contiene el material de un artículo científico sobre un vector AAV (virus adenoasociado) de edición epigenética diseñado para mantener la latencia del virus del herpes simple tipo 1 y tipo 2 (HSV-1/HSV-2) en ganglios sensoriales. El autor es Muhammad Alwi Zulkifli, vinculado a Cloreva Labs, y el material se distribuye con licencia MIT y un DOI de Zenodo (10.5281/zenodo.23928108).
+Zuveclock (CLV-HSV01) no es un modelo de lenguaje ni un modelo de IA propiamente dicho: es un repositorio de biología computacional publicado en Hugging Face bajo el identificador `Zulkiflii/zuveclock-clv-hsv01`. Contiene el material de un artículo científico sobre un vector AAV (virus adenoasociado) de edición epigenética diseñado para mantener la latencia del virus del herpes simple tipo 1 y tipo 2 (HSV-1/HSV-2) en ganglios sensoriales. El autor es Muhammad Alwi Zulkifli, vinculado a Cloreva Labs, y el material se distribuye con licencia MIT y un DOI de Zenodo (10.5281/zenodo.23928108).
 
 El repositorio incluye un manuscrito en PDF y HTML, secuencias genómicas de referencia (genoma completo de HSV-1 cepa 17, NC_001806.2), estructuras proteicas (VP16, PDB 16VP), la secuencia del vector recombinante (4.392 pb), datos de análisis de off-target y un conjunto de scripts en Python (`run_all_proofs.py` y otros) que reproducen las pruebas computacionales descritas en el artículo. El tamaño del repositorio es de 0,0 GB, sin descargas ni likes en el momento de la consulta.
 
-La relevancia de este repositorio es científica, no de ingeniería de IA: propone un enfoque de "abrazadera de aislante epigenético" no escindente como alternativa a las nucleasas CRISPR-Cas9, que según el autor provocan genotoxicidad y apoptosis neuronal. Para desarrolladores e investigadores de IA, el interés es indirecto: ejemplifica un uso de HuggingFace como repositorio de artefactos científicos reproducibles, no como hub de pesos de modelos.
+La relevancia de este repositorio es científica, no de ingeniería de IA: propone un enfoque de "abrazadera de aislante epigenético" no escindente como alternativa a las nucleasas CRISPR-Cas9, que según el autor provocan genotoxicidad y apoptosis neuronal. Para desarrolladores e investigadores de IA, el interés es indirecto: ejemplifica un uso de Hugging Face como repositorio de artefactos científicos reproducibles, no como hub de pesos de modelos.
 
 ## Especificaciones técnicas
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 - No requiere GPU: los scripts dependen únicamente de `numpy` y `matplotlib` y se ejecutan en CPU.
 - Entorno recomendado: Python 3.10 o superior, según el badge del README.
-- Almacenamiento: el repositorio ocupa 0,0 GB según HuggingFace, por lo que cabe en cualquier equipo convencional.
+- Almacenamiento: el repositorio ocupa 0,0 GB según Hugging Face, por lo que cabe en cualquier equipo convencional.
 - Opciones de despliegue: ejecución local mediante `git clone` y `python run_all_proofs.py`; no aplica vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles; dependen del tiempo de integración numérica de las EDO y del análisis de secuencias, no documentado.
 
@@ -73,7 +73,7 @@ No disponible. No se conocen modelos de IA comparables porque este repositorio n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Zulkiflii/zuveclock-clv-hsv01
+- Repositorio en Hugging Face: https://huggingface.co/Zulkiflii/zuveclock-clv-hsv01
 - DOI de Zenodo: https://doi.org/10.5281/zenodo.23928108
 - Referencia del genoma HSV-1 cepa 17 (NCBI RefSeq NC_001806.2): https://www.ncbi.nlm.nih.gov/nuccore/NC_001806.2
 - Estructura PDB 16VP (complejo VP16): https://www.rcsb.org/structure/16VP

@@ -72,7 +72,7 @@ No disponible. No se han publicado comparativas con modelos equivalentes en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/openai/privacy-filter
+- Hugging Face: https://huggingface.co/openai/privacy-filter
 - Anuncio de OpenAI: https://openai.com/index/introducing-openai-privacy-filter/
 - Repositorio de GitHub: https://github.com/openai/privacy-filter
 - OpenAI (sitio general): https://openai.com/

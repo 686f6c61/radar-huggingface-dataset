@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`WetLabRoboData/diffusion-dose_solid-scratch` es una política robótica de imitación basada en difusión, publicada por el usuario WetLabRoboData dentro del ecosistema LeRobot de HuggingFace. No es un modelo de lenguaje: es un controlador de acción (policy) entrenado para ejecutar una tarea concreta de laboratorio húmedo denominada `dose_solid`, que consiste en la dosificación de una sustancia sólida. El modelo se distribuye con el pipeline `robotics` y la librería `lerobot`, y su propósito es traducir observaciones visuales y de estado del robot en secuencias de acciones motrices.
+`WetLabRoboData/diffusion-dose_solid-scratch` es una política robótica de imitación basada en difusión, publicada por el usuario WetLabRoboData dentro del ecosistema LeRobot de Hugging Face. No es un modelo de lenguaje: es un controlador de acción (policy) entrenado para ejecutar una tarea concreta de laboratorio húmedo denominada `dose_solid`, que consiste en la dosificación de una sustancia sólida. El modelo se distribuye con el pipeline `robotics` y la librería `lerobot`, y su propósito es traducir observaciones visuales y de estado del robot en secuencias de acciones motrices.
 
 La arquitectura es una diffusion policy, es decir, un modelo generativo que aprende a producir "chunks" de acciones desruidando una muestra gaussiana condicionada por las observaciones, en lugar de predecir una única acción de forma determinista. El checkpoint contiene 262.813.031 parámetros (unos 263 millones) y ocupa 1,1 GB en el repositorio, un tamaño compatible con GPUs de consumo. La variante "scratch" indica que se ha entrenado exclusivamente con los datos de esta tarea, sin preentrenamiento previo sobre otros conjuntos.
 
@@ -114,11 +114,11 @@ No se ha encontrado en la información disponible ningún *benchmark* común que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WetLabRoboData/diffusion-dose_solid-scratch
+- Modelo en Hugging Face: https://huggingface.co/WetLabRoboData/diffusion-dose_solid-scratch
 - Dataset de entrenamiento: https://huggingface.co/datasets/WetLabRoboData/lerobot-data-dose_solid
 - Dataset de evaluación (vídeos de rollout y resultados por episodio): https://huggingface.co/datasets/WetLabRoboData/eval-diffusion-dose_solid-scratch
 - Repositorio de origen citado en la model card: https://huggingface.co/datasets/WetLabRoboData/lerobot-data-rama-dose_solid
 - LeRobot (librería y framework de políticas robóticas): https://github.com/huggingface/lerobot
-- Curso de modelos de difusión de HuggingFace (material general, no específico de este modelo): https://huggingface.co/learn/diffusion-course/en/unit1/3
+- Curso de modelos de difusión de Hugging Face (material general, no específico de este modelo): https://huggingface.co/learn/diffusion-course/en/unit1/3
 - Curso de *flow matching* y modelos de difusión del MIT CSAIL (material general, no específico de este modelo): https://diffusion.csail.mit.edu/2026/index.html
 - Difusión desde cero (tutorial general, no específico de este modelo): https://github.com/Animadversio/DiffusionFromScratch

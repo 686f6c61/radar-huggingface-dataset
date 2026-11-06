@@ -66,6 +66,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/ramram1103/FP-image-to-video-FLUX.1-HV-bf16
+- Hugging Face (modelo): https://huggingface.co/ramram1103/FP-image-to-video-FLUX.1-HV-bf16
 - Repositorio de referencia (ai-video-generator): https://github.com/suparious/ai-video-generator
-- HuggingFace (versión de Suparious, aparentemente el mismo modelo): https://huggingface.co/Suparious/FP-image-to-video-FLUX.1-HV-bf16
+- Hugging Face (versión de Suparious, aparentemente el mismo modelo): https://huggingface.co/Suparious/FP-image-to-video-FLUX.1-HV-bf16

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GustavRosquist/test es un repositorio de modelos alojado en HuggingFace por el usuario GustavRosquist. Se trata de un repositorio prácticamente vacío desde el punto de vista documental: la model card se limita a una línea de frontmatter con la licencia (`apache-2.0`) y no incluye descripción, arquitectura, tamaño, datos de entrenamiento ni resultados de evaluación. Los metadatos del Hub tampoco aportan información funcional: no hay *pipeline tag* asignado, no se declaran idiomas soportados y los únicos tags presentes son `license:apache-2.0` y `region:us`.
+GustavRosquist/test es un repositorio de modelos alojado en Hugging Face por el usuario GustavRosquist. Se trata de un repositorio prácticamente vacío desde el punto de vista documental: la model card se limita a una línea de frontmatter con la licencia (`apache-2.0`) y no incluye descripción, arquitectura, tamaño, datos de entrenamiento ni resultados de evaluación. Los metadatos del Hub tampoco aportan información funcional: no hay *pipeline tag* asignado, no se declaran idiomas soportados y los únicos tags presentes son `license:apache-2.0` y `region:us`.
 
 El repositorio registra 0 descargas y 0 *likes*, y las marcas de creación y última actualización son idénticas (2026-10-19T19:34:49Z), lo que indica una única subida sin modificaciones posteriores. El nombre "test" y la ausencia total de contenido técnico sugieren un repositorio de pruebas o un espacio de trabajo personal, no un modelo publicado para uso de terceros.
 
@@ -25,7 +25,7 @@ Metadatos adicionales verificables del repositorio:
 
 | Campo | Valor |
 |---|---|
-| ID en HuggingFace | GustavRosquist/test |
+| ID en Hugging Face | GustavRosquist/test |
 | Autor | GustavRosquist |
 | Pipeline tag | no disponible |
 | Tags del Hub | `license:apache-2.0`, `region:us` |
@@ -103,5 +103,5 @@ No disponible. No es posible establecer una comparativa porque se desconocen el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GustavRosquist/test
+- Repositorio en Hugging Face: https://huggingface.co/GustavRosquist/test
 - No se han encontrado en la información proporcionada otros enlaces (paper, blog, repositorio de código, demo o dataset asociado).

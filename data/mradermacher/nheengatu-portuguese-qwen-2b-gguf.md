@@ -25,7 +25,7 @@ La relevancia de esta ficha reside en que ofrece un punto de entrada practico pa
 
 No se dispone de informacion detallada sobre la arquitectura interna del modelo original mas alla de la inferida por su nombre. El repositorio de cuantizacion no incluye notas sobre el tipo de transformer, el mecanismo de atencion, la composicion del dataset ni el numero de tokens de entrenamiento. El nombre del modelo base, `nheengatu-portuguese-qwen-2b`, sugiere que se partio de un checkpoint de la familia Qwen de aproximadamente 2.000 millones de parametros y se ajusto (fine-tuning) para traduccion entre nheengatu y portugues, pero este extremo no se confirma en la documentacion disponible.
 
-En cuanto al proceso de cuantizacion, el autor indica que se trata de cuantizaciones estaticas (sin imatrix ni ponderacion por importancia) y que no tiene previsto publicar variantes ponderadas salvo peticion explicita en la seccion de discusiones. La metadata interna del proceso senala `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversion desde pesos de HuggingFace a GGUF seguida de cuantizacion. No se documentan tecnicas de RLHF, DPO ni decodificacion especulativa.
+En cuanto al proceso de cuantizacion, el autor indica que se trata de cuantizaciones estaticas (sin imatrix ni ponderacion por importancia) y que no tiene previsto publicar variantes ponderadas salvo peticion explicita en la seccion de discusiones. La metadata interna del proceso senala `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversion desde pesos de Hugging Face a GGUF seguida de cuantizacion. No se documentan tecnicas de RLHF, DPO ni decodificacion especulativa.
 
 ## Capacidades
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento que permitan comparar este modelo con alte
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/mradermacher/nheengatu-portuguese-qwen-2b-GGUF
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/mradermacher/nheengatu-portuguese-qwen-2b-GGUF
 - Modelo base: https://huggingface.co/voz-ancestral/nheengatu-portuguese-qwen-2b
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#nheengatu-portuguese-qwen-2b-GGUF
 - Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

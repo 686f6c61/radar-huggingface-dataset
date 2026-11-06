@@ -2,7 +2,7 @@
 
 ## Resumen
 
-openpd-gpt2-v0 es un modelo de lenguaje de tipo GPT-2 small entrenado desde cero por el desarrollador independiente ikarth (usuario de HuggingFace) sobre un corpus estrictamente de dominio público y CC0. Se trata de una reproducción de la arquitectura GPT-2 small (124 millones de parámetros, 12 capas, 12 cabezas de atención, dimensión 768 y contexto de 1.024 tokens) implementada siguiendo la línea de los tutoriales nanoGPT, con la particularidad de que todos los pesos y el propio modelo resultante se publican bajo licencia CC0-1.0. El objetivo declarado es demostrar que es posible entrenar un modelo de lenguaje completo sin recurrir a texto con copyright ni a datos raspados de internet, manteniendo una trazabilidad rigurosa de la procedencia de cada token.
+openpd-gpt2-v0 es un modelo de lenguaje de tipo GPT-2 small entrenado desde cero por el desarrollador independiente ikarth (usuario de Hugging Face) sobre un corpus estrictamente de dominio público y CC0. Se trata de una reproducción de la arquitectura GPT-2 small (124 millones de parámetros, 12 capas, 12 cabezas de atención, dimensión 768 y contexto de 1.024 tokens) implementada siguiendo la línea de los tutoriales nanoGPT, con la particularidad de que todos los pesos y el propio modelo resultante se publican bajo licencia CC0-1.0. El objetivo declarado es demostrar que es posible entrenar un modelo de lenguaje completo sin recurrir a texto con copyright ni a datos raspados de internet, manteniendo una trazabilidad rigurosa de la procedencia de cada token.
 
 El modelo se entrenó en una única GPU RTX 3090 personal y consumió aproximadamente 2,36 mil millones de tokens (0,24 épocas de un dataset de 9,77 mil millones de tokens denominado openpd-v1), lo que lo sitúa como una prueba de concepto más que como un modelo de producción. La composición del corpus está dominada por libros anteriores a 1929 (Project Gutenberg, Internet Archive, Library of Congress), complemented con jurisprudencia, resúmenes de arXiv, documentos del gobierno estadounidense y registros de IRC de Ubuntu, entre otras fuentes.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Datos de entrenamiento | Disponibilidad |
 |---|---|---|---|---|---|
-| openpd-gpt2-v0 | 124 M | 1.024 | CC0-1.0 | Dominio público y CC0 verificados (2,36 B tokens) | HuggingFace, ONNX, transformers.js |
-| GPT-2 small (OpenAI) | 124 M | 1.024 | MIT (pesos originales) | Web (WebText), no verificable | HuggingFace, múltiples runtimes |
-| GPT-2 small reproducido por terceros (varias iniciativas) | ~124 M | 1.024 | variable | variable, a menudo OpenWebText | HuggingFace |
-| Modelos pequeños actuales (p. ej. familias de <200 M) | <200 M | variable | variable | variable | HuggingFace |
+| openpd-gpt2-v0 | 124 M | 1.024 | CC0-1.0 | Dominio público y CC0 verificados (2,36 B tokens) | Hugging Face, ONNX, transformers.js |
+| GPT-2 small (OpenAI) | 124 M | 1.024 | MIT (pesos originales) | Web (WebText), no verificable | Hugging Face, múltiples runtimes |
+| GPT-2 small reproducido por terceros (varias iniciativas) | ~124 M | 1.024 | variable | variable, a menudo OpenWebText | Hugging Face |
+| Modelos pequeños actuales (p. ej. familias de <200 M) | <200 M | variable | variable | variable | Hugging Face |
 
 La comparación relevante no es de rendimiento sino de procedencia: frente a GPT-2 small original, openpd-gpt2-v0 sacrifica cobertura de temas modernos y calidad de generación a cambio de una licencia CC0 y una trazabilidad de datos completa. No se dispone de benchmarks comparativos publicados.
 
@@ -89,7 +89,7 @@ La comparación relevante no es de rendimiento sino de procedencia: frente a GPT
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikarth/openpd-gpt2-v0
+- Modelo en Hugging Face: https://huggingface.co/ikarth/openpd-gpt2-v0
 - Demo en el navegador (Spaces): https://huggingface.co/spaces/ikarth/openpd-gpt2
 - Paper de referencia citado en los tags (arXiv 2305.16264): https://arxiv.org/abs/2305.16264
 - Repositorio Common Pile (fuentes de datos): https://huggingface.co/common-pile

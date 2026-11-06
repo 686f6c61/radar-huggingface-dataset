@@ -93,7 +93,7 @@ La diferencia principal frente a su predecesor es el enfoque: el dataset pasa de
 - No hay benchmarks cuantitativos publicados; la evaluacion se basa en revision humana comparativa, por lo que la mejora puede variar segun el tipo de escena.
 - El efecto esta optimizado para escenas con personas; en paisajes u objetos el beneficio es incierto y no esta documentado.
 - Descargas muy bajas en el momento de la ficha (20 descargas, 1 like), de modo que hay poca validacion comunitaria independiente.
-- Existe una copia oficial del adaptador bajo la organizacion fal en HuggingFace; la version de Stankyspence1 parece un espejo, por lo que se recomienda verificar la procedencia de los pesos antes de usarlos.
+- Existe una copia oficial del adaptador bajo la organizacion fal en Hugging Face; la version de Stankyspence1 parece un espejo, por lo que se recomienda verificar la procedencia de los pesos antes de usarlos.
 
 ## Enlaces
 

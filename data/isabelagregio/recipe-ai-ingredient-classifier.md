@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Recipe AI Ingredient Classifier es un modelo de visión por computador para clasificación de imágenes de ingredientes alimentarios en 15 categorías. Lo desarrolla isabelagregio como componente de visión del proyecto Recipe AI, una aplicación de extremo a extremo que identifica ingredientes a partir de fotografías y recomienda recetas mediante TF-IDF y recuperación por vecinos más cercanos. El modelo se publica en HuggingFace con la librería Keras y un total de 27 descargas en el momento de la consulta.
+Recipe AI Ingredient Classifier es un modelo de visión por computador para clasificación de imágenes de ingredientes alimentarios en 15 categorías. Lo desarrolla isabelagregio como componente de visión del proyecto Recipe AI, una aplicación de extremo a extremo que identifica ingredientes a partir de fotografías y recomienda recetas mediante TF-IDF y recuperación por vecinos más cercanos. El modelo se publica en Hugging Face con la librería Keras y un total de 27 descargas en el momento de la consulta.
 
 Técnicamente se trata de un clasificador de etiqueta única construido sobre MobileNetV2 como backbone, implementado con TensorFlow/Keras. Acepta imágenes RGB redimensionadas a 224 × 224 píxeles y devuelve 15 puntuaciones de clasificación, una por cada clase soportada (banana, bread, carrot, cheese, chicken-meat, chocolate, egg, flour, lemon, milk, onion, pineapple, potato, rice y tomato). No es un modelo generativo ni un modelo de lenguaje: es una red convolucional de propósito específico para una tarea cerrada de clasificación.
 
@@ -57,7 +57,7 @@ La model card declara una precisión de clasificación del 90,57 % en el proyect
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: muy baja, del orden de cientos de MB; MobileNetV2 es una red ligera y el tamaño del repositorio es de 0,0 GB según HuggingFace.
+- VRAM estimada para inferencia: muy baja, del orden de cientos de MB; MobileNetV2 es una red ligera y el tamaño del repositorio es de 0,0 GB según Hugging Face.
 - GPU recomendadas: cualquier GPU moderna sirve; no requiere A100 ni H100. Una RTX 4090 o incluso una GPU integrada es más que suficiente.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo e incluso en CPU para inferencia por lotes pequeños.
 - Opciones de despliegue: TensorFlow Serving, Keras nativo, conversión a TensorFlow Lite para móvil o edge, y ONNX Runtime si se exporta el modelo. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
@@ -67,7 +67,7 @@ La model card declara una precisión de clasificación del 90,57 % en el proyect
 
 | Modelo | Arquitectura | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Recipe AI Ingredient Classifier | MobileNetV2 (CNN) | no disponible | Imagen 224 × 224 RGB | other / unspecified | HuggingFace (Keras) |
+| Recipe AI Ingredient Classifier | MobileNetV2 (CNN) | no disponible | Imagen 224 × 224 RGB | other / unspecified | Hugging Face (Keras) |
 | MobileNetV2 (ImageNet, Keras) | MobileNetV2 (CNN) | ~3,5 M (referencia) | Imagen 224 × 224 RGB | Apache 2.0 (referencia) | Keras Applications |
 | EfficientNet-B0 (ImageNet) | EfficientNet (CNN) | ~5,3 M (referencia) | Imagen 224 × 224 RGB | Apache 2.0 (referencia) | TensorFlow/Keras, PyTorch |
 
@@ -86,5 +86,5 @@ La comparación con alternativas de la misma categoría se limita a backbones ge
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/isabelagregio/recipe-ai-ingredient-classifier
+- Hugging Face: https://huggingface.co/isabelagregio/recipe-ai-ingredient-classifier
 - Repositorio GitHub del proyecto: https://github.com/isabelagregio/recipe-ai

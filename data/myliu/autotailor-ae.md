@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AutoTailor-ae es un repositorio de pesos publicado por el usuario `myliu` en HuggingFace, con identificador `myliu/AutoTailor-ae`. No se trata de un modelo de propósito general, sino de un conjunto de artefactos de evaluación ("artifact evaluation weights") asociados a un trabajo de investigación llamado AutoTailor. Según su propia model card, contiene los pesos entrenados necesarios para reproducir la comparativa de AutoTailor sobre ResNet50 en ImageNet-1k, enfrentándolo a AdaptiveNet, NestDNN* y LegoDNN, mientras que la línea base Static utiliza los pesos públicos de torchvision.
+AutoTailor-ae es un repositorio de pesos publicado por el usuario `myliu` en Hugging Face, con identificador `myliu/AutoTailor-ae`. No se trata de un modelo de propósito general, sino de un conjunto de artefactos de evaluación ("artifact evaluation weights") asociados a un trabajo de investigación llamado AutoTailor. Según su propia model card, contiene los pesos entrenados necesarios para reproducir la comparativa de AutoTailor sobre ResNet50 en ImageNet-1k, enfrentándolo a AdaptiveNet, NestDNN* y LegoDNN, mientras que la línea base Static utiliza los pesos públicos de torchvision.
 
 El repositorio se etiqueta como `image-classification`, con el dataset `imagenet-1k` como referencia de entrenamiento y evaluación, y con la etiqueta `onnx`, lo que indica que al menos parte de los artefactos están en formato ONNX. El tamaño del repositorio es de 1,9 GB, coherente con varios puntos de control derivados de una arquitectura ResNet50. No se especifican parámetros, contexto, licencia ni idiomas en la información disponible.
 
@@ -94,7 +94,7 @@ Los modelos con los que se compara este artefacto aparecen citados en la propia 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/myliu/AutoTailor-ae
+- Repositorio en Hugging Face: https://huggingface.co/myliu/AutoTailor-ae
 - Comando de descarga indicado por el autor: `hf download myliu/AutoTailor-ae --local-dir autotailor-assets`
 - Paper de AutoTailor: no disponible en la información proporcionada.
 - Repositorio de código de AutoTailor: no disponible en la información proporcionada.

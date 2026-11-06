@@ -32,7 +32,7 @@ El entrenamiento original se realizó sobre el conjunto COCO con una estrategia 
 - Salida de cajas delimitadoras, puntuaciones de confianza y etiquetas de clase.
 - Postprocesado integrado mediante `post_process_object_detection` que aplica umbral de confianza y NMS (agnóstico de clase por defecto, configurable a NMS por clase).
 - Portabilidad entre backends: el mismo modelo puede ejecutarse en TensorFlow, PyTorch o JAX simplemente cambiando la variable de entorno `KERAS_BACKEND`.
-- Carga de pesos desde el hub de HuggingFace mediante `from_weights`, compatible con variantes comunitarias en el mismo formato.
+- Carga de pesos desde el hub de Hugging Face mediante `from_weights`, compatible con variantes comunitarias en el mismo formato.
 
 ## Casos de uso
 
@@ -71,8 +71,8 @@ No se dispone de datos comparativos directos en la información proporcionada. C
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/zeromodels/efficientdet_d1)
-- [Colección EfficientDet en HuggingFace](https://hf.co/collections/zeromodels/efficientdet)
+- [Modelo en Hugging Face](https://huggingface.co/zeromodels/efficientdet_d1)
+- [Colección EfficientDet en Hugging Face](https://hf.co/collections/zeromodels/efficientdet)
 - [Paper original (arXiv)](https://arxiv.org/abs/1911.09070)
 - [Repositorio ZeroModels (GitHub)](https://github.com/IMvision12/ZeroModels)
 - [Documentación de EfficientDet en ZeroModels](https://imvision12.github.io/ZeroModels/efficientdet/)

@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU de consumo: si. Practicamente cualquier GPU con soporte CUDA, e incluso ejecucion en CPU con latencias aceptables para procesamiento por lotes.
 - Opciones de despliegue: inferencia nativa con PyTorch cargando el state dict; servicio HTTP mediante sidewalk-ai-api (FastAPI); exportacion a ONNX o TorchScript no esta documentada en la informacion disponible, pero es viable al ser una arquitectura de vision estandar. No aplican vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo generativo.
 - Latencia y throughput: no disponible. No se han publicado mediciones en la informacion proporcionada.
-- Tamano del repositorio en HuggingFace: 0,3 GB.
+- Tamano del repositorio en Hugging Face: 0,3 GB.
 
 ## Comparativa con modelos similares
 
@@ -78,9 +78,9 @@ No se han identificado en la informacion disponible modelos publicos directament
 
 | Modelo | Parametros | Contexto/entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| projectsidewalk/sidewalk-tagger-ai-crosswalk | No disponible (backbone ViT-B/14, del orden de 86 M mas cabeza de ~0,2 M) | Imagen (recorte a 256 px) | Clasificacion multietiqueta de etiquetas de accesibilidad en pasos de peatones | apache-2.0 | HuggingFace, uso via sidewalk-ai-api |
-| facebook/dinov2-with-registers-base | Del orden de 86 M | Imagen | Backbone de proposito general; requiere cabeza y ajuste para tareas concretas | Apache 2.0 (segun el modelo original de Meta) | HuggingFace |
-| Otros taggers de la familia Project Sidewalk (repositorio sidewalk-tagger-ai-models) | No disponible | Imagen | Clasificacion de etiquetas de accesibilidad para otros tipos de label | No disponible | HuggingFace |
+| projectsidewalk/sidewalk-tagger-ai-crosswalk | No disponible (backbone ViT-B/14, del orden de 86 M mas cabeza de ~0,2 M) | Imagen (recorte a 256 px) | Clasificacion multietiqueta de etiquetas de accesibilidad en pasos de peatones | apache-2.0 | Hugging Face, uso via sidewalk-ai-api |
+| facebook/dinov2-with-registers-base | Del orden de 86 M | Imagen | Backbone de proposito general; requiere cabeza y ajuste para tareas concretas | Apache 2.0 (segun el modelo original de Meta) | Hugging Face |
+| Otros taggers de la familia Project Sidewalk (repositorio sidewalk-tagger-ai-models) | No disponible | Imagen | Clasificacion de etiquetas de accesibilidad para otros tipos de label | No disponible | Hugging Face |
 
 Nota: los datos de parametros del backbone DINOv2 no aparecen en la model card de este modelo y se indican como orden de magnitud. No se dispone de cifras de rendimiento comparadas con alternativas, por lo que no es posible establecer una comparativa cuantitativa.
 
@@ -101,7 +101,7 @@ Nota: los datos de parametros del backbone DINOv2 no aparecen en la model card d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/projectsidewalk/sidewalk-tagger-ai-crosswalk
+- Modelo en Hugging Face: https://huggingface.co/projectsidewalk/sidewalk-tagger-ai-crosswalk
 - Repositorio de modelos originales: https://huggingface.co/projectsidewalk/sidewalk-tagger-ai-models
 - Dataset validado: https://huggingface.co/datasets/projectsidewalk/sidewalk-tagger-ai-validated
 - Codigo de entrenamiento y evaluacion: https://github.com/ProjectSidewalk/sidewalk-tagger-ai

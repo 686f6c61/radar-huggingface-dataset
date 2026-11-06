@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GCATransformer es un modelo publicado en HuggingFace por el usuario jiunfeng845bd bajo licencia Apache 2.0. El repositorio tiene un tamano de 0,2 GB y no incluye model card descriptiva: la unica informacion disponible en la ficha de HuggingFace es la licencia. No se han publicado datos sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades.
+GCATransformer es un modelo publicado en Hugging Face por el usuario jiunfeng845bd bajo licencia Apache 2.0. El repositorio tiene un tamano de 0,2 GB y no incluye model card descriptiva: la unica informacion disponible en la ficha de Hugging Face es la licencia. No se han publicado datos sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades.
 
 El nombre sugiere un transformer, pero no hay confirmacion tecnica en la informacion disponible. El repositorio no registra descargas ni likes en el momento de la consulta, lo que indica que se trata de una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -75,4 +75,4 @@ No disponible. Sin datos de parametros, contexto ni rendimiento, no es posible e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiunfeng845bd/GCATransformer
+- Modelo en Hugging Face: https://huggingface.co/jiunfeng845bd/GCATransformer

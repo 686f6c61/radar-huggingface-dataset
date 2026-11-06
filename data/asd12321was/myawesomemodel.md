@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario ASD12321WAS bajo licencia MIT y etiquetado con la librería `transformers`, arquitectura `bert` y pipeline `feature-extraction`. El repositorio tiene un tamano de 0.0 GB, lo que indica que no contiene pesos publicados, y acumula 33 descargas y 0 likes desde su creacion en agosto de 2026. La model card, sin embargo, describe un modelo generativo conversacional con mejoras en razonamiento, function calling y reduccion de alucinaciones, lo que entra en contradiccion directa con las etiquetas y el pipeline declarados en el repositorio.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario ASD12321WAS bajo licencia MIT y etiquetado con la librería `transformers`, arquitectura `bert` y pipeline `feature-extraction`. El repositorio tiene un tamano de 0.0 GB, lo que indica que no contiene pesos publicados, y acumula 33 descargas y 0 likes desde su creacion en agosto de 2026. La model card, sin embargo, describe un modelo generativo conversacional con mejoras en razonamiento, function calling y reduccion de alucinaciones, lo que entra en contradiccion directa con las etiquetas y el pipeline declarados en el repositorio.
 
 La documentacion del autor menciona una actualizacion de version con optimizaciones algoritmicas en post-entrenamiento, un incremento de precision en AIME 2025 del 70% al 87,5% y un aumento del consumo medio de tokens por pregunta de 12K a 23K. Tambien incluye una tabla de benchmarks con puntuaciones en tareas de razonamiento matematico, logico, comprension lectora, generacion de codigo y traduccion, ademas de recomendaciones de uso (system prompt, temperatura 0.6 y plantillas para busqueda web y carga de ficheros).
 
@@ -107,7 +107,7 @@ No es posible establecer una comparativa fiable. La model card referencia tres m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASD12321WAS/MyAwesomeModel
+- Repositorio en Hugging Face: https://huggingface.co/ASD12321WAS/MyAwesomeModel
 - Repositorio de codigo para ejecucion local: no disponible (la model card lo menciona sin enlace)
 - Sitio web oficial con interfaz de chat y API: no disponible (la model card lo menciona sin enlace)
 - Paper tecnico: no disponible

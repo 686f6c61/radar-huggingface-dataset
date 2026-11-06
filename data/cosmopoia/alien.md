@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cosmopoia/Alien es un repositorio de modelo publicado en HuggingFace por el usuario cosmopoia. En el momento de la consulta, el repositorio no incluye información tecnica util: la model card se limita a declarar la licencia MIT y no contiene descripcion del modelo, arquitectura, datos de entrenamiento ni ejemplos de uso. El pipeline declarado no esta disponible y el repositorio no declara idiomas soportados.
+cosmopoia/Alien es un repositorio de modelo publicado en Hugging Face por el usuario cosmopoia. En el momento de la consulta, el repositorio no incluye información tecnica util: la model card se limita a declarar la licencia MIT y no contiene descripcion del modelo, arquitectura, datos de entrenamiento ni ejemplos de uso. El pipeline declarado no esta disponible y el repositorio no declara idiomas soportados.
 
 El modelo acumula 0 descargas y 0 likes, y las fechas de creacion y ultima actualizacion registradas son identicas (2026-09-16T02:01:13.000Z), lo que indica que no ha habido revisiones posteriores a la publicacion inicial. No se dispone de informacion sobre tamano, arquitectura, contexto ni formato de pesos.
 
@@ -23,7 +23,7 @@ La relevancia de este repositorio es, por tanto, limitada a efectos practicos: s
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card publicada en HuggingFace no describe la arquitectura del modelo (transformer, mezcla de expertos, modelo de espacio de estados o hibrido), ni el numero de parametros, ni la composicion del dataset de entrenamiento, ni el numero de tokens procesados. Tampoco se documenta si se aplicaron tecnicas de ajuste fino alineado (RLHF, DPO, SFT) ni ninguna innovacion tecnica asociada.
+No disponible. La model card publicada en Hugging Face no describe la arquitectura del modelo (transformer, mezcla de expertos, modelo de espacio de estados o hibrido), ni el numero de parametros, ni la composicion del dataset de entrenamiento, ni el numero de tokens procesados. Tampoco se documenta si se aplicaron tecnicas de ajuste fino alineado (RLHF, DPO, SFT) ni ninguna innovacion tecnica asociada.
 
 No se ha localizado documentacion complementaria (paper, blog tecnico o repositorio de codigo) en la busqueda web realizada. Los unicos resultados devueltos corresponden a informes financieros de Bank Mandiri (BMRI) y no guardan ninguna relacion con este modelo.
 
@@ -82,6 +82,6 @@ No disponible. La comparativa con alternativas requiere conocer, como minimo, el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cosmopoia/Alien
+- Repositorio en Hugging Face: https://huggingface.co/cosmopoia/Alien
 - No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.
 - Los resultados devueltos por la busqueda corresponden a informes financieros de Bank Mandiri (https://www.bankmandiri.co.id/web/ir, https://pluang.com/akademi/berita-analisis/kinerja-bank-mandiri-8-bulan, https://www.suara.com/bisnis/2026/02/23/113801/laporan-keuangan-bank-mandiri-bmri-awal-tahun-2026-nilai-aset-naik-drastis) y no tienen relacion con este modelo.

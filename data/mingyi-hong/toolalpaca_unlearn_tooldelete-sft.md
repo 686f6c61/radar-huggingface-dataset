@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ToolAlpaca_unlearn_ToolDelete-SFT es un ajuste fino derivado de TangQiaoYu/ToolAlpaca-7B, publicado por el usuario Mingyi-Hong en HuggingFace. Segun la model card, el modelo se ha obtenido aplicando el metodo denominado ToolDelete-SFT sobre el modelo base original: se trata, por tanto, de un artefacto de investigacion orientado al desaprendizaje selectivo (machine unlearning), en el que el objetivo del entrenamiento es eliminar o degradar la capacidad de uso de herramientas que el modelo base si poseia.
+ToolAlpaca_unlearn_ToolDelete-SFT es un ajuste fino derivado de TangQiaoYu/ToolAlpaca-7B, publicado por el usuario Mingyi-Hong en Hugging Face. Segun la model card, el modelo se ha obtenido aplicando el metodo denominado ToolDelete-SFT sobre el modelo base original: se trata, por tanto, de un artefacto de investigacion orientado al desaprendizaje selectivo (machine unlearning), en el que el objetivo del entrenamiento es eliminar o degradar la capacidad de uso de herramientas que el modelo base si poseia.
 
 El modelo base, ToolAlpaca-7B, procede del trabajo ToolAlpaca (arXiv:2306.05301), un framework que genera automaticamente un corpus de uso de herramientas mediante simulacion multiagente: 3.900 instancias de uso de herramientas procedentes de mas de 400 herramientas distintas repartidas en 50 categorias. Ese corpus se utiliza para dotar de capacidades generalizadas de tool calling a modelos compactos de 7.000 millones de parametros, sin necesidad de supervision humana intensiva.
 
@@ -58,15 +58,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion de 4 bits: aproximadamente 5-6 GB, aunque esta opcion requiere convertir los pesos a un formato compatible (por ejemplo GGUF), dado que el repositorio no publica cuantizaciones.
 - GPU profesionales: A100 (40 o 80 GB), H100, L40S o A6000 funcionan sin problema y permiten lotes grandes y contexto largo.
 - GPU de consumo: la familia RTX 4090 y RTX 3090 (24 GB) puede ejecutar el modelo en FP16 con margen limitado; tarjetas de 16 GB como la RTX 4080 requeririan cuantizacion.
-- Opciones de despliegue: transformers de HuggingFace para inferencia directa; vLLM o TGI para servir con mayor throughput; llama.cpp u Ollama tras convertir los pesos a GGUF. No hay artefactos de despliegue publicados por el autor.
+- Opciones de despliegue: transformers de Hugging Face para inferencia directa; vLLM o TGI para servir con mayor throughput; llama.cpp u Ollama tras convertir los pesos a GGUF. No hay artefactos de despliegue publicados por el autor.
 - Latencia y throughput: no disponibles. No se han publicado mediciones y no hay configuracion de inferencia documentada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tool calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mingyi-Hong/ToolAlpaca_unlearn_ToolDelete-SFT | ~7B (inferido) | no disponible | degradado o eliminado por diseno | no disponible | HuggingFace, 0 descargas |
-| TangQiaoYu/ToolAlpaca-7B (modelo base) | ~7B | no disponible | si, entrenado sobre 3.900 instancias y mas de 400 herramientas | no disponible | HuggingFace |
+| Mingyi-Hong/ToolAlpaca_unlearn_ToolDelete-SFT | ~7B (inferido) | no disponible | degradado o eliminado por diseno | no disponible | Hugging Face, 0 descargas |
+| TangQiaoYu/ToolAlpaca-7B (modelo base) | ~7B | no disponible | si, entrenado sobre 3.900 instancias y mas de 400 herramientas | no disponible | Hugging Face |
 | Otras variantes de desaprendizaje sobre ToolAlpaca-7B | no disponible | no disponible | no disponible | no disponible | no identificadas en la informacion disponible |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa entre estas alternativas. La unica diferencia documentada entre el primer y el segundo modelo es el metodo de entrenamiento aplicado (ToolDelete-SFT frente al ajuste original de ToolAlpaca).
@@ -85,9 +85,9 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mingyi-Hong/ToolAlpaca_unlearn_ToolDelete-SFT
-- Modelo base en HuggingFace: https://huggingface.co/TangQiaoYu/ToolAlpaca-7B
-- Perfil del autor en HuggingFace: https://huggingface.co/Mingyi-Hong
+- Modelo en Hugging Face: https://huggingface.co/Mingyi-Hong/ToolAlpaca_unlearn_ToolDelete-SFT
+- Modelo base en Hugging Face: https://huggingface.co/TangQiaoYu/ToolAlpaca-7B
+- Perfil del autor en Hugging Face: https://huggingface.co/Mingyi-Hong
 - Articulos y actividad del autor: https://huggingface.co/Mingyi-Hong/activity/papers
 - Codigo oficial de ToolAlpaca: https://github.com/tangqiaoyu/ToolAlpaca
 - Paper ToolAlpaca (arXiv): https://arxiv.org/abs/2306.05301

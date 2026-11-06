@@ -5,7 +5,7 @@ Phi-3.5-mini-instruct_rai_1.9.0_npu es una conversión del modelo Phi-3.5-mini-i
 
 La aportación de esta variante no es el modelo en sí, sino el artefacto de despliegue: pesos ONNX cuantizados y compilados para ejecutarse en la NPU integrada de los procesadores AMD Ryzen AI, lo que permite inferencia local de un LLM de casi 4B parámetros con bajo consumo energético en equipos de sobremesa y portátiles. El sufijo `rai_1.9.0` indica la versión del runtime Ryzen AI necesaria.
 
-Es relevante para desarrolladores que quieran ejecutar un modelo conversacional competente en hardware de consumo AMD sin depender de GPU dedicada ni de la nube. El acceso está restringido (gated) y requiere aceptar las condiciones en HuggingFace. El repositorio ocupa 4,4 GB y solo declara soporte para inglés.
+Es relevante para desarrolladores que quieran ejecutar un modelo conversacional competente en hardware de consumo AMD sin depender de GPU dedicada ni de la nube. El acceso está restringido (gated) y requiere aceptar las condiciones en Hugging Face. El repositorio ocupa 4,4 GB y solo declara soporte para inglés.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ Rendimiento comparativo: no disponible (sin benchmarks publicados para esta vari
 
 ## Limitaciones y advertencias
 - Solo inglés: no se declara soporte de castellano ni otros idiomas.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar.
 - Dependencia fuerte del ecosistema Ryzen AI 1.9.0: no es portable a otras plataformas sin reconversión.
 - Riesgo de alucinación inherente a modelos de 3-4B, especialmente en tareas factuales y matemáticas complejas.
 - Posible degradación de calidad por la cuantización aplicada; no se documenta la pérdida respecto al modelo original.
@@ -76,7 +76,7 @@ Rendimiento comparativo: no disponible (sin benchmarks publicados para esta vari
 - Fecha de creación del repositorio (2026-11-02) posterior a la información de referencia disponible; conviene revisar la model card actualizada.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/amd/Phi-3.5-mini-instruct_rai_1.9.0_npu
+- Hugging Face: https://huggingface.co/amd/Phi-3.5-mini-instruct_rai_1.9.0_npu
 - Modelo base: https://huggingface.co/microsoft/Phi-3.5-mini-instruct
 - Paper técnico de Phi-3: https://arxiv.org/abs/2404.14219
 - Ryzen AI (AMD): https://www.amd.com/en/products/software/ryzen-ai.html

@@ -6,7 +6,7 @@ El modelo `amd/Mistral-7B-Instruct-v0.1_rai_1.9.0_m_1.0.1_npu` es una conversió
 
 El modelo base, Mistral-7B-Instruct-v0.1, es un transformer decoder-only de 7.300 millones de parámetros desarrollado por Mistral AI y ajustado con instrucciones, con una longitud de contexto de 8.192 tokens y licencia Apache 2.0. Esta conversión de AMD conserva los pesos y el comportamiento del modelo original, pero los empaqueta para aprovechar la aceleración por hardware de las NPU de Ryzen AI, lo que permite ejecutar generación de texto en portátiles y equipos de sobremesa con dicha plataforma sin depender exclusivamente de la GPU.
 
-La relevancia de esta ficha es principalmente práctica: es un ejemplo de cómo los grandes modelos abiertos se están adaptando a aceleradores de bajo consumo integrados en PC. El repositorio está restringido (gated), requiere aceptar condiciones en HuggingFace y, según los metadatos, no registra descargas ni likes, lo que sugiere una publicación reciente o de nicho.
+La relevancia de esta ficha es principalmente práctica: es un ejemplo de cómo los grandes modelos abiertos se están adaptando a aceleradores de bajo consumo integrados en PC. El repositorio está restringido (gated), requiere aceptar condiciones en Hugging Face y, según los metadatos, no registra descargas ni likes, lo que sugiere una publicación reciente o de nicho.
 
 ## Especificaciones tecnicas
 
@@ -76,14 +76,14 @@ No se han publicado resultados de benchmarks en la información disponible.
 - Riesgo de alucinación: presente como en cualquier modelo de 7B; no se han publicado evaluaciones específicas para esta conversión.
 - Idioma: los metadatos declaran únicamente inglés; el rendimiento en castellano u otros idiomas no está garantizado y probablemente sea inferior.
 - Contexto: la ventana de 8.192 tokens corresponde al modelo base y no se especifica si la compilación para NPU la preserva íntegramente.
-- Licencia: Apache 2.0 permite uso comercial, pero el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace; conviene revisar los términos adicionales de AMD y del runtime Ryzen AI, que es software propietario.
+- Licencia: Apache 2.0 permite uso comercial, pero el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face; conviene revisar los términos adicionales de AMD y del runtime Ryzen AI, que es software propietario.
 - Dependencia de hardware: el artefacto está compilado para la NPU de Ryzen AI con la versión 1.9.0 del runtime; no es portable a otras plataformas sin reconversión.
 - Madurez: cero descargas y cero likes en el momento de la consulta, y fechas de creación y actualización muy próximas; se trata de una publicación de nicho sin validación comunitaria documentada.
 - Producción: al no haber benchmarks ni documentación de latencia, no se recomienda su uso en producción sin una evaluación previa en el hardware objetivo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Mistral-7B-Instruct-v0.1_rai_1.9.0_m_1.0.1_npu
-- Modelo base en HuggingFace: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1
+- Repositorio Hugging Face: https://huggingface.co/amd/Mistral-7B-Instruct-v0.1_rai_1.9.0_m_1.0.1_npu
+- Modelo base en Hugging Face: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1
 - Paper de Mistral 7B: https://arxiv.org/abs/2310.06825
 - Documentación de Ryzen AI: https://ryzenai.docs.amd.com/

@@ -77,7 +77,7 @@ Las siguientes cifras son estimaciones basadas en el tamano del modelo base (32 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
 | Mhaquehaque/berkelium-qwen3-32b-agent-v2-dpo | adaptador LoRA sobre Qwen3-32B (tamano del adaptador no especificado) | no disponible | MIT (adaptador); licencia del base no indicada | 0 descargas, 0 likes | no disponible |
-| Qwen/Qwen3-32B (modelo base declarado) | 32B segun denominacion; no confirmado en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | publico en HuggingFace | no disponible |
+| Qwen/Qwen3-32B (modelo base declarado) | 32B segun denominacion; no confirmado en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | publico en Hugging Face | no disponible |
 | Otros ajustes agénticos o DPO sobre Qwen3-32B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de fichas de modelos comparables dentro de la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks ni de fichas de modelos comparables dentro 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Mhaquehaque/berkelium-qwen3-32b-agent-v2-dpo
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Mhaquehaque/berkelium-qwen3-32b-agent-v2-dpo
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3-32B
 - Articulo citado en la plantilla de la model card (calculo de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la model card: https://mlco2.github.io/impact

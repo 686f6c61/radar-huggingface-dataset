@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Coderdw/ernie-image-ncnn-vulkan | no disponible (~11.500 M estimados por tamano del paquete FP32) | 1024 x 1024, 8 pasos, batch 1 | apache-2.0 | ncnn + tokenizer.json + latent de regresion | Repositorio HuggingFace, 0 descargas y 0 likes |
-| baidu/ERNIE-Image-Turbo (modelo base) | no disponible | 1024 x 1024 (segun la configuracion fijada en el port) | no disponible en la informacion proporcionada (consultar su pagina) | safetensors u otro formato original, no disponible | Repositorio HuggingFace de Baidu |
+| Coderdw/ernie-image-ncnn-vulkan | no disponible (~11.500 M estimados por tamano del paquete FP32) | 1024 x 1024, 8 pasos, batch 1 | apache-2.0 | ncnn + tokenizer.json + latent de regresion | Repositorio Hugging Face, 0 descargas y 0 likes |
+| baidu/ERNIE-Image-Turbo (modelo base) | no disponible | 1024 x 1024 (segun la configuracion fijada en el port) | no disponible en la informacion proporcionada (consultar su pagina) | safetensors u otro formato original, no disponible | Repositorio Hugging Face de Baidu |
 | Otros ports ncnn/Vulkan de modelos de difusion | no disponible | no disponible | no disponible | no disponible | No se han identificado alternativas comparables en la informacion disponible |
 
 La comparación relevante es entre el port y su modelo base: comparten arquitectura y pesos, y difieren en formato (ncnn frente al original), precisión (FP32 frente a la baseline CUDA/BF16 de referencia) y propósito (despliegue nativo sin CUDA frente a inferencia en el stack original). No se dispone de datos de rendimiento que permitan afirmar cuál de los dos produce mejores resultados en calidad de imagen.

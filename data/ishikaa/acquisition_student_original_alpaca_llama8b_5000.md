@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_student_original_alpaca_llama8b_5000` es un checkpoint de generación de texto publicado en HuggingFace por el usuario `ishikaa`, con 8.030.261.248 parámetros y un tamaño de repositorio de 16,1 GB. El identificador y las etiquetas del repositorio (`llama`, `safetensors`, `transformers`, `text-generation`, `conversational`) apuntan a un transformer decoder-only de la familia Llama ajustado, presumiblemente, sobre datos con formato Alpaca. El sufijo `acquisition_student` y el número `5000` sugieren que se trata de un artefacto de investigación vinculado a un experimento de destilación o adquisición de conocimiento, aunque esto no se confirma en la model card.
+El modelo `ishikaa/acquisition_student_original_alpaca_llama8b_5000` es un checkpoint de generación de texto publicado en Hugging Face por el usuario `ishikaa`, con 8.030.261.248 parámetros y un tamaño de repositorio de 16,1 GB. El identificador y las etiquetas del repositorio (`llama`, `safetensors`, `transformers`, `text-generation`, `conversational`) apuntan a un transformer decoder-only de la familia Llama ajustado, presumiblemente, sobre datos con formato Alpaca. El sufijo `acquisition_student` y el número `5000` sugieren que se trata de un artefacto de investigación vinculado a un experimento de destilación o adquisición de conocimiento, aunque esto no se confirma en la model card.
 
-La model card del repositorio es la plantilla autogenerada por HuggingFace y no contiene ninguna sección completada: todos los campos de desarrollo, datos de entrenamiento, licencia, idiomas y evaluación figuran como "More Information Needed". Esto significa que no hay información verificable sobre el procedimiento de ajuste, el dataset exacto, la composición lingüística ni los resultados de evaluación.
+La model card del repositorio es la plantilla autogenerada por Hugging Face y no contiene ninguna sección completada: todos los campos de desarrollo, datos de entrenamiento, licencia, idiomas y evaluación figuran como "More Information Needed". Esto significa que no hay información verificable sobre el procedimiento de ajuste, el dataset exacto, la composición lingüística ni los resultados de evaluación.
 
 Por su relevancia, se trata de un checkpoint con cero descargas y cero likes, sin licencia declarada y sin documentación técnica. Su interés es fundamentalmente arqueológico o de reproducibilidad para quien quiera inspeccionar pesos de un experimento concreto, no como modelo listo para producción. La ventana de contexto, los idiomas soportados y los términos de uso no están disponibles en la información proporcionada.
 
@@ -35,7 +35,7 @@ No hay informacion publicada sobre el entrenamiento. El nombre del repositorio (
 
 - Generación de texto autoregresivo, segun el pipeline declarado (`text-generation`).
 - Uso conversacional, segun la etiqueta `conversational`, si bien no se especifica el formato de prompt ni la plantilla de chat.
-- Compatibilidad con Text Generation Inference (TGI) y con endpoints gestionados de HuggingFace.
+- Compatibilidad con Text Generation Inference (TGI) y con endpoints gestionados de Hugging Face.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni razonamiento multi-paso.
 - No se documenta capacidad multilingue ni se listan idiomas.
@@ -70,7 +70,7 @@ La comparacion se limita a modelos de tamano comparable, ya que `ishikaa/acquisi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `ishikaa/acquisition_student_original_alpaca_llama8b_5000` | 8,03 B | no disponible | no disponible | HuggingFace, 0 descargas | Model card vacia, sin benchmarks |
+| `ishikaa/acquisition_student_original_alpaca_llama8b_5000` | 8,03 B | no disponible | no disponible | Hugging Face, 0 descargas | Model card vacia, sin benchmarks |
 | Llama 3 8B (Meta) | 8,03 B | 8.192 tokens | Llama 3 Community License | Amplia, con benchmarks publicos | Modelo base de referencia con evaluacion extensa |
 | Mistral 7B v0.3 (Mistral AI) | 7,24 B | 32.768 tokens | Apache 2.0 | Amplia, con benchmarks publicos | Alternativa con contexto mas largo y licencia permisiva |
 | Qwen2 7B (Alibaba) | 7,6 B | 131.072 tokens (configurable) | Apache 2.0 (segun variante) | Amplia | Multilingue declarado y contexto muy amplio |
@@ -91,7 +91,7 @@ Los datos de los modelos comparativos corresponden a sus especificaciones public
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ishikaa/acquisition_student_original_alpaca_llama8b_5000
+- Repositorio Hugging Face: https://huggingface.co/ishikaa/acquisition_student_original_alpaca_llama8b_5000
 - Referencia incluida en la plantilla del repositorio, sin relacion con el modelo: https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019)
 - Calculador de impacto ambiental citado en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

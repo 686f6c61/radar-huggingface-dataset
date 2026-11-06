@@ -77,8 +77,8 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/infosave/Ornith-1.5-cmf
-- Colección Ornith-1.5 en HuggingFace: https://huggingface.co/collections/ornith-ai/ornith-15
+- Repositorio Hugging Face: https://huggingface.co/infosave/Ornith-1.5-cmf
+- Colección Ornith-1.5 en Hugging Face: https://huggingface.co/collections/ornith-ai/ornith-15
 - Sitio oficial de Ornith AI: https://ornith.ai/
 - Página de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Repositorio CMF en GitHub: https://github.com/infosave2007/cmf

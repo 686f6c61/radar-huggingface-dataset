@@ -79,7 +79,7 @@ El modelo se distingue de su base (SmolLM2-1.7B-Instruct) por el entrenamiento e
 
 ## Enlaces
 
-- Repositorio HuggingFace (safetensors): https://huggingface.co/mondk/claude-toolcall-slm-2B-safetensors
+- Repositorio Hugging Face (safetensors): https://huggingface.co/mondk/claude-toolcall-slm-2B-safetensors
 - Version GGUF: https://huggingface.co/mondk/claude-toolcall-slm-2B
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B
 - Dataset de trazas: https://huggingface.co/datasets/mondk/claude-code-fable-5-traces.jsonl

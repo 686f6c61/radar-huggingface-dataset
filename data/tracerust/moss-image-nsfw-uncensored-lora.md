@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Moss-image-nsfw-uncensored-lora | LoRA sobre MOSS-Image-SFT | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| OpenMOSS-Team/MOSS-Image-SFT | Modelo base text-to-image | no disponible | no disponible | no disponible | HuggingFace |
-| Adaptadores LoRA NSFW para SDXL | LoRA sobre SDXL | no disponible | no disponible | variable | HuggingFace / Civitai |
+| Moss-image-nsfw-uncensored-lora | LoRA sobre MOSS-Image-SFT | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| OpenMOSS-Team/MOSS-Image-SFT | Modelo base text-to-image | no disponible | no disponible | no disponible | Hugging Face |
+| Adaptadores LoRA NSFW para SDXL | LoRA sobre SDXL | no disponible | no disponible | variable | Hugging Face / Civitai |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas.
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TracerUst/Moss-image-nsfw-uncensored-lora
+- Modelo en Hugging Face: https://huggingface.co/TracerUst/Moss-image-nsfw-uncensored-lora
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Librería diffusers: https://github.com/huggingface/diffusers

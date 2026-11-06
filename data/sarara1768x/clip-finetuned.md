@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Sarara1768x/clip-finetuned es un repositorio experimental publicado en HuggingFace por el usuario Sarara1768x que contiene una implementación propia de una arquitectura CLIP (Contrastive Language-Image Pre-training) orientada a tareas de retrieval multimodal. A pesar del nombre "finetuned", la propia model card aclara que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado con benchmarks. El repositorio se presenta, por tanto, como un punto de partida de investigación más que como un modelo listo para producción.
+Sarara1768x/clip-finetuned es un repositorio experimental publicado en Hugging Face por el usuario Sarara1768x que contiene una implementación propia de una arquitectura CLIP (Contrastive Language-Image Pre-training) orientada a tareas de retrieval multimodal. A pesar del nombre "finetuned", la propia model card aclara que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado con benchmarks. El repositorio se presenta, por tanto, como un punto de partida de investigación más que como un modelo listo para producción.
 
-El modelo está configurado a una escala "nano", con un total de 24.832 parámetros según el archivo safetensors, lo que lo sitúa varios órdenes de magnitud por debajo de cualquier CLIP convencional (ViT-B/32 ronda los 151 millones de parámetros). La arquitectura emplea atención de ventana deslizante (sliding window), fusión mediante cross attention, activación ReLU y normalización GroupNorm. El repositorio pesa 0,0 GB según HuggingFace y acumula 16 descargas y 0 likes en el momento de la consulta.
+El modelo está configurado a una escala "nano", con un total de 24.832 parámetros según el archivo safetensors, lo que lo sitúa varios órdenes de magnitud por debajo de cualquier CLIP convencional (ViT-B/32 ronda los 151 millones de parámetros). La arquitectura emplea atención de ventana deslizante (sliding window), fusión mediante cross attention, activación ReLU y normalización GroupNorm. El repositorio pesa 0,0 GB según Hugging Face y acumula 16 descargas y 0 likes en el momento de la consulta.
 
 La relevancia de esta ficha es más metodológica que de rendimiento: sirve para documentar un esqueleto de código CLIP que permite inspeccionar cambios arquitectónicos antes de lanzar un entrenamiento completo. No se reclama ninguna puntuación de benchmark y la propia documentación recomienda evaluar sobre Flickr30k con al menos tres semillas y una línea base de capacidad comparable.
 
@@ -65,13 +65,13 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Compatibilidad con GPU de consumo: cabe holgadamente en cualquier GPU consumer e incluso en entornos sin GPU dedicada.
 - Opciones de despliegue: no compatibles con vLLM, TGI, llama.cpp u Ollama de forma directa, ya que la implementación es personalizada y requiere adaptador explícito para APIs de carga genéricas. El punto de entrada previsto es `run.py`.
 - Latencia y throughput estimados: no disponibles.
-- Espacio en disco: el repositorio ocupa 0,0 GB según HuggingFace.
+- Espacio en disco: el repositorio ocupa 0,0 GB según Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sarara1768x/clip-finetuned | 24.832 | no disponible | No (solo inicializacion) | apache-2.0 | HuggingFace, 16 descargas |
+| Sarara1768x/clip-finetuned | 24.832 | no disponible | No (solo inicializacion) | apache-2.0 | Hugging Face, 16 descargas |
 | OpenAI CLIP ViT-B/32 | ~151 M aprox. | 77 tokens de texto | Si | Licencia CLIP de OpenAI | Publico |
 | OpenCLIP ViT-L/14 | ~428 M aprox. | 77 tokens de texto | Si | Apache-2.0 / varias | Publico (LAION) |
 | SigLIP (variantes base) | Rango de cientos de millones | Variable | Si | Apache-2.0 en varias variantes | Publico (Google) |
@@ -91,5 +91,5 @@ Los recuentos de parámetros de los modelos de referencia son valores ampliament
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sarara1768x/clip-finetuned
+- Modelo en Hugging Face: https://huggingface.co/Sarara1768x/clip-finetuned
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la informacion disponible.

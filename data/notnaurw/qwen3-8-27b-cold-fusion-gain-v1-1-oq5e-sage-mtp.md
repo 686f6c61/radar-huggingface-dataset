@@ -90,7 +90,7 @@ La principal diferencia con la versión GGUF es el formato (MLX vs GGUF), lo que
 
 ## Enlaces
 
-- [HuggingFace: notnaurw/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ5e-SAGE-mtp](https://huggingface.co/notnaurw/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ5e-SAGE-mtp)
+- [Hugging Face: notnaurw/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ5e-SAGE-mtp](https://huggingface.co/notnaurw/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ5e-SAGE-mtp)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Checkpoint original: DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1](https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1)
 - [Repositorio de oMLX](https://github.com/jundot/omlx)

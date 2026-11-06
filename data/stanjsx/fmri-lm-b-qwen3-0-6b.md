@@ -90,7 +90,7 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stanjsx/fMRI-LM-B-Qwen3-0.6B
+- Modelo en Hugging Face: https://huggingface.co/stanjsx/fMRI-LM-B-Qwen3-0.6B
 - Repositorio de codigo: https://github.com/yuxiangwei0808/fMRI-LM
 - Paper (arXiv): https://arxiv.org/abs/2511.21760
 - Referencia bibliografica: Wei, Y., Zhang, Y., Xiao, X., Qian, C., Wang, T., Calhoun, V. D. "fMRI-LM: Towards a Universal Foundation Model for Language-Aligned fMRI Understanding", arXiv preprint arXiv:2511.21760, 2025.

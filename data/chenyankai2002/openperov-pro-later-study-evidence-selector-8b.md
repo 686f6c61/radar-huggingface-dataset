@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenPerov-Pro-Later-Study-Evidence-Selector-8B | 8B (base) + LoRA rank 16 | No disponible | Adaptador LoRA de reranking | Apache-2.0 | HuggingFace (adaptador) |
-| Qwen/Qwen3-Reranker-8B | 8B | No disponible en la informacion proporcionada | Reranker base | Segun modelo base (preservar) | HuggingFace |
-| Rerankers generalistas de la familia Qwen3 | No disponible | No disponible | Reranker generalista | Segun modelo base | HuggingFace |
+| OpenPerov-Pro-Later-Study-Evidence-Selector-8B | 8B (base) + LoRA rank 16 | No disponible | Adaptador LoRA de reranking | Apache-2.0 | Hugging Face (adaptador) |
+| Qwen/Qwen3-Reranker-8B | 8B | No disponible en la informacion proporcionada | Reranker base | Segun modelo base (preservar) | Hugging Face |
+| Rerankers generalistas de la familia Qwen3 | No disponible | No disponible | Reranker generalista | Segun modelo base | Hugging Face |
 
 La comparativa se limita al modelo base y a la familia de rerankers Qwen3, dado que no se dispone de datos de rendimiento ni de modelos de dominio equivalente publicados en la informacion proporcionada.
 
@@ -86,7 +86,7 @@ La comparativa se limita al modelo base y a la familia de rerankers Qwen3, dado 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChenYanKai2002/OpenPerov-Pro-Later-Study-Evidence-Selector-8B
+- Hugging Face: https://huggingface.co/ChenYanKai2002/OpenPerov-Pro-Later-Study-Evidence-Selector-8B
 - Codigo, benchmarks y registros de evaluacion: https://github.com/Yan-Kai-Chen/OpenPerov
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-8B
 - Libreria PEFT: https://github.com/huggingface/peft

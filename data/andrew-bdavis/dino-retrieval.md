@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dino-retrieval es un repositorio publicado por el usuario Andrew-bdavis en HuggingFace que contiene una implementación propia y reducida de una arquitectura tipo DINO orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado, sino de un punto de partida reproducible: incluye el código del modelo, un fichero de configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El propio autor indica explícitamente que no reclama ninguna métrica de benchmark.
+Dino-retrieval es un repositorio publicado por el usuario Andrew-bdavis en Hugging Face que contiene una implementación propia y reducida de una arquitectura tipo DINO orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado, sino de un punto de partida reproducible: incluye el código del modelo, un fichero de configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El propio autor indica explícitamente que no reclama ninguna métrica de benchmark.
 
 La arquitectura declarada es "Dino" en escala "base", con atención dilatada, fusión bilineal, activación swish y normalización layernorm. El recuento de parámetros que figura en los metadatos de safetensors es de 33.088, una cifra extraordinariamente baja que no encaja con la escala "base" declarada en la model card; se trata de un dato que el repositorio no desglosa ni justifica, por lo que conviene tratarlo con cautela. El tamaño del repositorio es de 0,0 GB.
 
@@ -89,5 +89,5 @@ La diferencia fundamental no es de rendimiento sino de naturaleza: este reposito
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Andrew-bdavis/dino-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/Andrew-bdavis/dino-retrieval
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios de código o demos) en la informacion proporcionada.

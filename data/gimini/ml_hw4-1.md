@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ml_hw4-1 es un modelo de deteccion de objetos obtenido mediante fine-tuning de facebook/detr-resnet-50, publicado por el usuario GImInI en HuggingFace. DETR (DEtection TRansformer) es una arquitectura que combina un backbone convolucional ResNet-50 con un encoder-decoder transformer y sustituye los mecanismos clasicos de deteccion (anclas y supresion de no maximos) por un emparejamiento bipartito entre predicciones y objetos reales. El modelo resultante tiene 41.608.649 parametros y se distribuye en formato safetensors bajo licencia Apache 2.0.
+ml_hw4-1 es un modelo de deteccion de objetos obtenido mediante fine-tuning de facebook/detr-resnet-50, publicado por el usuario GImInI en Hugging Face. DETR (DEtection TRansformer) es una arquitectura que combina un backbone convolucional ResNet-50 con un encoder-decoder transformer y sustituye los mecanismos clasicos de deteccion (anclas y supresion de no maximos) por un emparejamiento bipartito entre predicciones y objetos reales. El modelo resultante tiene 41.608.649 parametros y se distribuye en formato safetensors bajo licencia Apache 2.0.
 
 Se trata de un artefacto de caracter experimental: la model card indica explicitamente que se entreno sobre un dataset desconocido ("unknown dataset") y que la descripcion, los usos previstos y los datos de evaluacion estan pendientes de completar. No se ha publicado ningun resultado de benchmarks (el model-index esta vacio) ni se especifican los idiomas, las clases detectables ni la composicion del conjunto de entrenamiento.
 
@@ -34,7 +34,7 @@ Segun la model card, el fine-tuning se realizo con el Trainer de Transformers so
 - Deteccion de objetos en imagenes: devuelve cajas delimitadoras, etiquetas de clase y puntuaciones de confianza para cada objeto detectado.
 - Prediccion set-based sin NMS ni anclas, heredada de la arquitectura DETR.
 - Inferencia end-to-end en una sola pasada del transformer (sin postprocesado de supresion de duplicados).
-- Integracion directa con el pipeline `object-detection` de Transformers y con la API de HuggingFace Inference Endpoints.
+- Integracion directa con el pipeline `object-detection` de Transformers y con la API de Hugging Face Inference Endpoints.
 - Entrada unimodal de vision (imagen RGB); no procesa texto, audio ni video directamente.
 - No dispone de generacion de texto, razonamiento, codigo, matematicas, tool calling, function calling ni capacidades de agente.
 - No dispone de modo de razonamiento explicito (thinking mode) ni de capacidades multilingues.
@@ -61,17 +61,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM para inferencia: el modelo tiene 41,6 M de parametros. En fp32 ocupa aproximadamente 166 MB y en fp16 alrededor de 83 MB; con activaciones y un lote moderado el consumo tipico se situa por debajo de 2 GB de VRAM.
 - GPU recomendadas: cualquier GPU con CUDA. Para lotes grandes o entrenamiento se recomiendan RTX 3090, RTX 4090, A100 o H100; para inferencia suelta basta una GPU de gama media.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo con 4 GB o mas de VRAM, incluidas GTX 1650, RTX 3060, RTX 4060 o superiores. Tambien puede ejecutarse en CPU, con mayor latencia.
-- Opciones de despliegue: pipeline `object-detection` de Transformers, PyTorch nativo, exportacion a ONNX o TorchScript, TensorRT, y HuggingFace Inference Endpoints (el repositorio esta marcado como compatible con endpoints).
+- Opciones de despliegue: pipeline `object-detection` de Transformers, PyTorch nativo, exportacion a ONNX o TorchScript, TensorRT, y Hugging Face Inference Endpoints (el repositorio esta marcado como compatible con endpoints).
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de latencia por imagen ni de imagenes por segundo en ninguna configuracion de hardware.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tipo | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| GImInI/ml_hw4-1 | 41,6 M | DETR fine-tuned, dataset desconocido | Apache 2.0 | no disponible | HuggingFace, 36 descargas |
-| facebook/detr-resnet-50 | ~41,6 M | DETR con backbone ResNet-50 | Apache 2.0 | 42,0 AP en COCO val (segun el repositorio original) | HuggingFace, ampliamente utilizado |
-| facebook/detr-resnet-101 | ~60 M | DETR con backbone ResNet-101 | Apache 2.0 | 43,5 AP en COCO val (segun el repositorio original) | HuggingFace |
-| DETA / RT-DETR (alternativas de deteccion end-to-end) | variable | DETR con mejoras de entrenamiento o en tiempo real | Apache 2.0 en la mayoria de variantes | superior al DETR original en COCO | HuggingFace |
+| GImInI/ml_hw4-1 | 41,6 M | DETR fine-tuned, dataset desconocido | Apache 2.0 | no disponible | Hugging Face, 36 descargas |
+| facebook/detr-resnet-50 | ~41,6 M | DETR con backbone ResNet-50 | Apache 2.0 | 42,0 AP en COCO val (segun el repositorio original) | Hugging Face, ampliamente utilizado |
+| facebook/detr-resnet-101 | ~60 M | DETR con backbone ResNet-101 | Apache 2.0 | 43,5 AP en COCO val (segun el repositorio original) | Hugging Face |
+| DETA / RT-DETR (alternativas de deteccion end-to-end) | variable | DETR con mejoras de entrenamiento o en tiempo real | Apache 2.0 en la mayoria de variantes | superior al DETR original en COCO | Hugging Face |
 
 La comparacion de rendimiento con este modelo concreto no es posible porque no se ha publicado ninguna metrica. Los valores de AP del modelo base se incluyen unicamente como referencia del punto de partida del fine-tuning.
 
@@ -90,7 +90,7 @@ La comparacion de rendimiento con este modelo concreto no es posible porque no s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GImInI/ml_hw4-1
+- Modelo en Hugging Face: https://huggingface.co/GImInI/ml_hw4-1
 - Modelo base: https://huggingface.co/facebook/detr-resnet-50
 - Paper original de DETR: https://arxiv.org/abs/2005.12872
 - Documentacion del pipeline object-detection de Transformers: https://huggingface.co/docs/transformers/main/en/tasks/object_detection

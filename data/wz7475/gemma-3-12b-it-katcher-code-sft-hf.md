@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo wz7475/gemma-3-12b-it-katcher-code-sft-hf es un ajuste fino (SFT) publicado en HuggingFace por el usuario wz7475. Por la nomenclatura del identificador se deduce que parte de Gemma 3 12B Instruct, el modelo abierto de Google, y que se ha sometido a un proceso de supervised fine-tuning orientado a código (el sufijo "katcher-code-sft" apunta a un conjunto de datos o dominio de programacion). No obstante, la model card publicada es la plantilla generica autogenerada por HuggingFace y no confirma ninguno de estos extremos.
+El modelo wz7475/gemma-3-12b-it-katcher-code-sft-hf es un ajuste fino (SFT) publicado en Hugging Face por el usuario wz7475. Por la nomenclatura del identificador se deduce que parte de Gemma 3 12B Instruct, el modelo abierto de Google, y que se ha sometido a un proceso de supervised fine-tuning orientado a código (el sufijo "katcher-code-sft" apunta a un conjunto de datos o dominio de programacion). No obstante, la model card publicada es la plantilla generica autogenerada por Hugging Face y no confirma ninguno de estos extremos.
 
 La relevancia de este modelo es limitada en terminos de ecosistema: cuenta con 0 descargas y 0 "likes" en el momento de la ficha, la licencia no esta declarada y no se ha publicado informacion sobre datos de entrenamiento, hiperparametros ni evaluacion. El repositorio ocupa 0.6 GB, un tamano incompatible con un checkpoint completo de 12 000 millones de parametros en precision bf16 (que rondaria los 24 GB), lo que sugiere una subida parcial, un adaptador o un error de publicacion.
 
@@ -23,7 +23,7 @@ En consecuencia, esta ficha recoge fundamentalmente el vacio documental del mode
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura concreta de este ajuste ni sobre su procedimiento de entrenamiento. La model card es la plantilla por defecto de HuggingFace y todas las secciones relevantes (datos de entrenamiento, hiperparametros, regimen de precision, evaluacion) figuran como "[More Information Needed]". El unico dato tecnico verificable es la presencia del tag safetensors y de la libreria transformers, que indica que los pesos estan en formato safetensors y son cargables con la libreria transformers.
+No se ha publicado informacion sobre la arquitectura concreta de este ajuste ni sobre su procedimiento de entrenamiento. La model card es la plantilla por defecto de Hugging Face y todas las secciones relevantes (datos de entrenamiento, hiperparametros, regimen de precision, evaluacion) figuran como "[More Information Needed]". El unico dato tecnico verificable es la presencia del tag safetensors y de la libreria transformers, que indica que los pesos estan en formato safetensors y son cargables con la libreria transformers.
 
 A partir del identificador puede inferirse que se trata de un fine-tuning supervisado del modelo Gemma 3 12B Instruct con un dataset orientado a codigo, pero no hay ninguna evidencia en la informacion proporcionada que confirme la tecnica exacta (full fine-tuning, LoRA, QLoRA), el volumen de tokens empleado, la composicion del dataset ni si hubo etapas posteriores de RLHF o DPO. El tamano del repositorio (0.6 GB) es inconsistente con un ajuste completo de los 12 000 millones de parametros en bf16, por lo que resulta plausible que se trate de un adaptador o de una subida incompleta, si bien esto no puede confirmarse con los datos disponibles.
 
@@ -72,8 +72,8 @@ El tamano declarado del repositorio (0.6 GB) hace inviable ejecutar el modelo ta
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wz7475/gemma-3-12b-it-katcher-code-sft-hf | 12 000 M (inferido) | No disponible | No disponible | HuggingFace (0 descargas) |
-| Gemma 3 12B Instruct (modelo base) | 12 000 M | 128 000 tokens | Gemma Terms of Use | HuggingFace, ampliamente desplegado |
+| wz7475/gemma-3-12b-it-katcher-code-sft-hf | 12 000 M (inferido) | No disponible | No disponible | Hugging Face (0 descargas) |
+| Gemma 3 12B Instruct (modelo base) | 12 000 M | 128 000 tokens | Gemma Terms of Use | Hugging Face, ampliamente desplegado |
 | Otras variantes ajustadas de Gemma 3 12B | 12 000 M | Heredado del base | Variable segun autor | Variable |
 
 No se dispone de datos de rendimiento de este ajuste que permitan una comparacion cuantitativa. La comparativa se limita a parametros y disponibilidad.
@@ -90,6 +90,6 @@ No se dispone de datos de rendimiento de este ajuste que permitan una comparacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wz7475/gemma-3-12b-it-katcher-code-sft-hf
+- Hugging Face: https://huggingface.co/wz7475/gemma-3-12b-it-katcher-code-sft-hf
 - Referencia citada en los tags (model card generica, calculadora de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Modelo base Gemma 3 (referencia para caracteristicas inferidas): no se ha facilitado un enlace directo en la informacion proporcionada.

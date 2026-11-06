@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sebsmedina/scikit_learn_regression` es un artefacto publicado en HuggingFace por el usuario sebsmedina bajo el identificador que sugiere un modelo de regresion entrenado con scikit-learn. No se trata de un modelo de lenguaje ni de una red neuronal profunda en el sentido habitual del ecosistema HuggingFace, sino, por el nombre y la ausencia de pipeline declarado, de un estimador clasico serializado (probablemente mediante `joblib` o `pickle`) orientado a una tarea de regresion tabular.
+`sebsmedina/scikit_learn_regression` es un artefacto publicado en Hugging Face por el usuario sebsmedina bajo el identificador que sugiere un modelo de regresion entrenado con scikit-learn. No se trata de un modelo de lenguaje ni de una red neuronal profunda en el sentido habitual del ecosistema Hugging Face, sino, por el nombre y la ausencia de pipeline declarado, de un estimador clasico serializado (probablemente mediante `joblib` o `pickle`) orientado a una tarea de regresion tabular.
 
 La model card publicada es practicamente vacia: unicamente declara `license: unknown` y no incluye descripcion, datos de entrenamiento, metricas ni instrucciones de uso. El repositorio no registra descargas ni likes en el momento de la consulta, y no se ha publicado ningun resultado de benchmarks ni documentacion tecnica adicional.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sebsmedina/scikit_learn_regression | no disponible | no aplica | unknown | HuggingFace, sin descargas |
+| sebsmedina/scikit_learn_regression | no disponible | no aplica | unknown | Hugging Face, sin descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para identificar modelos comparables de la misma categoria, dado que no se conoce la tarea, el dominio ni el algoritmo concretos.
@@ -75,5 +75,5 @@ No se dispone de informacion suficiente para identificar modelos comparables de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sebsmedina/scikit_learn_regression
+- Hugging Face: https://huggingface.co/sebsmedina/scikit_learn_regression
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

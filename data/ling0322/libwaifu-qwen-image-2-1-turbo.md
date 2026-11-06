@@ -69,8 +69,8 @@ Segun el autor, la ultima capa del codificador de texto es la parte sensible, y 
 
 | Modelo | Parametros | Formato y precision | Pasos de muestreo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| libwaifu-qwen-image-2.1-turbo (este) | 7B (DiT) | Paquete libwaifu, fp8 E4M3 + float16 | 8 fijos, sin guidance | qwen-research (no comercial) | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen-Image-2.1-Turbo (base) | 7B (DiT) | Pesos originales, sin cuantizar | 8 (checkpoint turbo) | qwen-research (no comercial) | HuggingFace oficial de Qwen |
+| libwaifu-qwen-image-2.1-turbo (este) | 7B (DiT) | Paquete libwaifu, fp8 E4M3 + float16 | 8 fijos, sin guidance | qwen-research (no comercial) | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen-Image-2.1-Turbo (base) | 7B (DiT) | Pesos originales, sin cuantizar | 8 (checkpoint turbo) | qwen-research (no comercial) | Hugging Face oficial de Qwen |
 | Paquete fp8 oficial de Qwen-Image 2.1 | no disponible | fp8 | Schedule adaptado al tamano de imagen | qwen-research | Referenciado por el autor, enlace no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes mas alla de las metricas de fidelidad del apartado anterior. No se han encontrado en la busqueda web modelos alternativos comparables con datos verificables.
@@ -90,9 +90,9 @@ No se dispone de datos de rendimiento comparativo entre estas variantes mas alla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ling0322/libwaifu-qwen-image-2.1-turbo
+- Modelo en Hugging Face: https://huggingface.co/ling0322/libwaifu-qwen-image-2.1-turbo
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Licencia Qwen Research License Agreement: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo/blob/main/LICENSE
 - Runtime libwaifu (GitHub): https://github.com/ling0322/libwaifu
-- Archivo NOTICE con los cambios respecto al original: incluido en el repositorio de HuggingFace (no se proporciona URL directa)
+- Archivo NOTICE con los cambios respecto al original: incluido en el repositorio de Hugging Face (no se proporciona URL directa)
 - Resultados de busqueda web: sin enlaces relevantes sobre este modelo

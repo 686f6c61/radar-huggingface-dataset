@@ -86,7 +86,7 @@ La comparativa con el modelo base de saryps-labs es directa: misma arquitectura 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prasadvittaldev/pocket-tts-hindi-onnx-int4
+- Modelo en Hugging Face: https://huggingface.co/prasadvittaldev/pocket-tts-hindi-onnx-int4
 - Modelo base: https://huggingface.co/saryps-labs/pocket-tts-hindi
 - Pocket TTS de Kyutai: https://huggingface.co/kyutai/pocket-tts
 - Corpus AI4Bharat IndicVoices: https://ai4bharat.iitm.ac.in/

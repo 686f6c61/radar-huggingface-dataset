@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OmarCodePlay/Text-to-json es un repositorio de modelo alojado en HuggingFace por el usuario OmarCodePlay, publicado el 9 de octubre de 2026 y sin actualizaciones posteriores según los metadatos disponibles. El identificador sugiere un modelo orientado a la conversion de texto libre en JSON estructurado, pero no se ha publicado ninguna tarjeta de modelo (model card) que confirme esa funcion, describa la arquitectura, el tamano o los datos de entrenamiento.
+OmarCodePlay/Text-to-json es un repositorio de modelo alojado en Hugging Face por el usuario OmarCodePlay, publicado el 9 de octubre de 2026 y sin actualizaciones posteriores según los metadatos disponibles. El identificador sugiere un modelo orientado a la conversion de texto libre en JSON estructurado, pero no se ha publicado ninguna tarjeta de modelo (model card) que confirme esa funcion, describa la arquitectura, el tamano o los datos de entrenamiento.
 
 En el momento de la consulta, el repositorio acumula 0 descargas y 1 like, lo que indica que no existe validacion por parte de la comunidad ni evidencia de uso en produccion. No consta pipeline declarado, licencia, idiomas soportados ni resultados de evaluacion.
 
@@ -89,6 +89,6 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OmarCodePlay/Text-to-json
+- Hugging Face: https://huggingface.co/OmarCodePlay/Text-to-json
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

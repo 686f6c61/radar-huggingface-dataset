@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ArcANE-32B-RLVR-i1-GGUF es una cuantización GGUF del modelo ArcANE-32B-RLVR, publicada por el usuario mradermacher en HuggingFace. El repositorio ofrece versiones ponderadas con imatrix (importance matrix) del modelo original, que suma 32.762.123.264 parámetros. Al tratarse de una cuantización, su propósito es permitir la inferencia de un modelo de 32B en hardware con menos memoria, a costa de cierta pérdida de precisión según el nivel de cuantización elegido.
+ArcANE-32B-RLVR-i1-GGUF es una cuantización GGUF del modelo ArcANE-32B-RLVR, publicada por el usuario mradermacher en Hugging Face. El repositorio ofrece versiones ponderadas con imatrix (importance matrix) del modelo original, que suma 32.762.123.264 parámetros. Al tratarse de una cuantización, su propósito es permitir la inferencia de un modelo de 32B en hardware con menos memoria, a costa de cierta pérdida de precisión según el nivel de cuantización elegido.
 
 Sin embargo, la información disponible es muy limitada: no se incluyen datos sobre arquitectura, longitud de contexto, idiomas, licencia ni benchmarks. El repositorio registra 0 descargas y 0 likes, lo que indica que es un modelo poco validado por la comunidad. Además, la model card no aporta detalles técnicos más allá de la técnica de cuantización utilizada.
 

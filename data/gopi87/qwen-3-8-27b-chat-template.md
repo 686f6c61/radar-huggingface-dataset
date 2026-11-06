@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gopi87/qwen-3.8-27b-chat-template` es un repositorio alojado en HuggingFace por el usuario `gopi87`, creado el 15 de agosto de 2026. Según su nombre, parece tratarse de una plantilla de chat basada en la familia Qwen, posiblemente una variante con 27 mil millones de parámetros, aunque la nomenclatura "3.8" no permite confirmar si se refiere a una versión específica, una configuración de capas o un tamaño de contexto. El repositorio tiene 0 descargas y 1 like, lo que indica que es un modelo recién publicado y sin adopción conocida.
+El modelo `gopi87/qwen-3.8-27b-chat-template` es un repositorio alojado en Hugging Face por el usuario `gopi87`, creado el 15 de agosto de 2026. Según su nombre, parece tratarse de una plantilla de chat basada en la familia Qwen, posiblemente una variante con 27 mil millones de parámetros, aunque la nomenclatura "3.8" no permite confirmar si se refiere a una versión específica, una configuración de capas o un tamaño de contexto. El repositorio tiene 0 descargas y 1 like, lo que indica que es un modelo recién publicado y sin adopción conocida.
 
 No se dispone de información oficial sobre su arquitectura, licencia, idiomas soportados o pipeline de uso. La etiqueta `region:us` sugiere una restricción geográfica, pero su significado exacto no está documentado. Dada la falta de datos verificables, esta ficha se limita a describir lo que se puede inferir del nombre y a señalar explícitamente los campos no disponibles.
 
@@ -77,6 +77,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gopi87/qwen-3.8-27b-chat-template
+- Repositorio Hugging Face: https://huggingface.co/gopi87/qwen-3.8-27b-chat-template
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) relacionados con este modelo en la información proporcionada.

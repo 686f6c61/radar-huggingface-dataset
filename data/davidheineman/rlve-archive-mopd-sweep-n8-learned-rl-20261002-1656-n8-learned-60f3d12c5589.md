@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint archivado de un modelo de lenguaje de 1.777.088.000 parametros (aproximadamente 1,78 mil millones) publicado por el usuario davidheineman en HuggingFace. Segun la model card, se trata del checkpoint final (paso 499) de una ejecucion de entrenamiento identificada como `mopd-sweep-n8-learned-rl-20261002-165650`, preservada bajo el esquema de nombres `rlve-archive` y con el W&B run ID `845c81d0`.
+Este repositorio contiene un checkpoint archivado de un modelo de lenguaje de 1.777.088.000 parametros (aproximadamente 1,78 mil millones) publicado por el usuario davidheineman en Hugging Face. Segun la model card, se trata del checkpoint final (paso 499) de una ejecucion de entrenamiento identificada como `mopd-sweep-n8-learned-rl-20261002-165650`, preservada bajo el esquema de nombres `rlve-archive` y con el W&B run ID `845c81d0`.
 
 El repositorio no es una release de modelo utilizable, sino un archivo de scratch: un volcado de estado de entrenamiento con formato `hf-safetensors` que ademas incluye un directorio `checkpoint/` con el estado exacto en formato de checkpoint distribuido de Megatron. La etiqueta `qwen2` indica que la arquitectura subyacente pertenece a la familia Qwen2, aunque la model card no aporta ninguna informacion sobre datos de entrenamiento, tokenizador, hiperparametros ni metodologia.
 
@@ -100,8 +100,8 @@ No hay datos de rendimiento de este checkpoint, por lo que la comparativa se lim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n8-learned-rl-20261002-1656-n8-learned-60f3d12c5589
-- Model card del autor: incluida en el propio repositorio de HuggingFace (seccion README)
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n8-learned-rl-20261002-1656-n8-learned-60f3d12c5589
+- Model card del autor: incluida en el propio repositorio de Hugging Face (seccion README)
 - W&B run ID: `845c81d0` (no se ha encontrado enlace publico)
 - Paper, blog o demo: no disponible
 - Repositorio de codigo: no disponible

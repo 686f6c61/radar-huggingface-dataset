@@ -71,10 +71,10 @@ El autor documenta un protocolo de evaluacion durante el entrenamiento sobre AIM
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Qwen3-4B-Base + GRPO/DAPO) | ~4.000 M | no disponible | RLVR sobre matematicas | Apache 2.0 | HuggingFace, checkpoints por paso |
-| Qwen/Qwen3-4B-Base | ~4.000 M | no disponible | Modelo base preentrenado | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-4B (instruct) | ~4.000 M | no disponible | SFT + RLHF/RL general | Apache 2.0 | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1.500 M | no disponible | Destilacion de razonamiento | MIT | HuggingFace |
+| Este modelo (Qwen3-4B-Base + GRPO/DAPO) | ~4.000 M | no disponible | RLVR sobre matematicas | Apache 2.0 | Hugging Face, checkpoints por paso |
+| Qwen/Qwen3-4B-Base | ~4.000 M | no disponible | Modelo base preentrenado | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-4B (instruct) | ~4.000 M | no disponible | SFT + RLHF/RL general | Apache 2.0 | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1.500 M | no disponible | Destilacion de razonamiento | MIT | Hugging Face |
 
 La comparativa se limita a la familia Qwen3 y a destilados de razonamiento por falta de datos publicos de benchmarks en este repositorio. No se dispone de resultados numericos para contrastar el rendimiento real frente a estas alternativas.
 
@@ -93,7 +93,7 @@ La comparativa se limita a la familia Qwen3 y a destilados de razonamiento por f
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/L1nkee/qwen3-4b-base-grpo-rollout-dapo17k-think-lr1e-6-kl1e-3-clip0.2-s44
+- Repositorio Hugging Face: https://huggingface.co/L1nkee/qwen3-4b-base-grpo-rollout-dapo17k-think-lr1e-6-kl1e-3-clip0.2-s44
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Dataset DAPO-Math-17k: https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k
 - Framework verl: https://github.com/volcengine/verl

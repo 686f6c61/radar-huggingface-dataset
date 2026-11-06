@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qwen3vl-2b-hico-lora` es un adaptador LoRA para el modelo multimodal Qwen3-VL-2B-Instruct, desarrollado por el usuario Ram20307 y publicado en HuggingFace bajo licencia Apache 2.0. Su proposito es especializar un modelo vision-lenguaje generico de 2.000 millones de parametros en la deteccion de interacciones persona-objeto (human-object interaction, HOI) sobre el conjunto de datos HICO-DET, emitiendo la salida en formato JSON estructurado con pares objeto-interaccion.
+`qwen3vl-2b-hico-lora` es un adaptador LoRA para el modelo multimodal Qwen3-VL-2B-Instruct, desarrollado por el usuario Ram20307 y publicado en Hugging Face bajo licencia Apache 2.0. Su proposito es especializar un modelo vision-lenguaje generico de 2.000 millones de parametros en la deteccion de interacciones persona-objeto (human-object interaction, HOI) sobre el conjunto de datos HICO-DET, emitiendo la salida en formato JSON estructurado con pares objeto-interaccion.
 
 El adaptador se entrena exclusivamente sobre HICO-DET, con rango LoRA 16, alpha 32, precision bf16, 2 epocas y un tamano de lote efectivo de 16 sobre aproximadamente 4.000 muestras. El autor publica tambien un adaptador hermano entrenado solo con Action Genome (`Ram20307/qwen3vl-2b-ag-lora`), lo que permite comparar el comportamiento de ambos dominios.
 
@@ -70,9 +70,9 @@ Resultados publicados por el autor (recall y precision de coincidencias exactas 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3vl-2b-hico-lora (este) | 2B (base) + LoRA | no disponible | HOI sobre HICO-DET | Apache 2.0 (adaptador) | HuggingFace |
-| qwen3vl-2b-ag-lora | 2B (base) + LoRA | no disponible | HOI sobre Action Genome | Apache 2.0 (adaptador) | HuggingFace |
-| Qwen3-VL-2B-Instruct (base) | 2B | no disponible | VLM generico | Apache 2.0 | HuggingFace |
+| qwen3vl-2b-hico-lora (este) | 2B (base) + LoRA | no disponible | HOI sobre HICO-DET | Apache 2.0 (adaptador) | Hugging Face |
+| qwen3vl-2b-ag-lora | 2B (base) + LoRA | no disponible | HOI sobre Action Genome | Apache 2.0 (adaptador) | Hugging Face |
+| Qwen3-VL-2B-Instruct (base) | 2B | no disponible | VLM generico | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks de modelos HOI especializados comparables en la informacion proporcionada.
 
@@ -88,6 +88,6 @@ No se dispone de datos de benchmarks de modelos HOI especializados comparables e
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Ram20307/qwen3vl-2b-hico-lora
+- Hugging Face del adaptador: https://huggingface.co/Ram20307/qwen3vl-2b-hico-lora
 - Adaptador hermano (Action Genome): https://huggingface.co/Ram20307/qwen3vl-2b-ag-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct

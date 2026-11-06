@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hok01467/generation-exp` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura Poolformer orientada a tareas de generación. Lo desarrolla el usuario `hok01467` y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni publicado como release, sino de un punto de partida reproducible: el autor lo describe explícitamente como "un starting point reproducible, no un modelo entrenado".
+`hok01467/generation-exp` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura Poolformer orientada a tareas de generación. Lo desarrolla el usuario `hok01467` y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni publicado como release, sino de un punto de partida reproducible: el autor lo describe explícitamente como "un starting point reproducible, no un modelo entrenado".
 
 El repositorio incluye el código del modelo (`model.py`), una configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) válido únicamente para smoke tests. El recuento real de parámetros en safetensors es de 33.088, un tamaño trivial que confirma que no se ha entrenado a escala. El tamaño del repo es de 0,0 GB.
 
@@ -69,10 +69,10 @@ No disponible. El repositorio no es comparable con modelos generativos entrenado
 - No se declaran idiomas soportados ni datos de entrenamiento, por lo que no se puede evaluar cobertura lingüística ni sesgos.
 - Riesgo de alucinación: no aplicable en sentido estricto al no estar entrenado, pero cualquier uso tras un entrenamiento propio requerirá evaluación específica.
 - Licencia BSD-3-Clause: permite uso comercial con atribución, pero el autor recomienda revisar por separado los términos de los datos externos que se usen con el repositorio.
-- Al ser una implementación personalizada, las APIs automáticas de carga (AutoModel, pipelines de HuggingFace) no funcionan sin un adaptador explícito.
+- Al ser una implementación personalizada, las APIs automáticas de carga (AutoModel, pipelines de Hugging Face) no funcionan sin un adaptador explícito.
 - Cualquier resultado de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos aquí.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hok01467/generation-exp
+- Repositorio en Hugging Face: https://huggingface.co/hok01467/generation-exp
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

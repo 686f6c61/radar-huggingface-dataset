@@ -37,7 +37,7 @@ El repositorio incluye una receta de entrenamiento por defecto que usa el optimi
 
 - **Investigación académica en arquitecturas BEiT**: el código sirve como base para estudiar variantes de atención *sparse* o mecanismos de fusión en tareas de matching, permitiendo modificar y evaluar hipótesis sin partir de cero.
 - **Pruebas de humo en pipelines de ML**: el checkpoint de inicialización permite verificar que el flujo de datos, la carga de pesos y la inferencia básica funcionan correctamente antes de integrar un modelo entrenado.
-- **Desarrollo de adaptadores personalizados**: dado que la implementación es propia, los desarrolladores pueden crear adaptadores para cargarlo con APIs genéricas como HuggingFace Transformers, sirviendo como ejercicio de integración.
+- **Desarrollo de adaptadores personalizados**: dado que la implementación es propia, los desarrolladores pueden crear adaptadores para cargarlo con APIs genéricas como Hugging Face Transformers, sirviendo como ejercicio de integración.
 - **Benchmarking de eficiencia de arquitecturas tiny**: con solo 49.600 parámetros, es útil para medir latencia, consumo de memoria y throughput en hardware limitado, comparando con otras arquitecturas de tamaño similar.
 - **Educación y aprendizaje**: el código es un ejemplo didáctico de cómo implementar un transformer de visión desde cero, con configuración explícita y documentación de receta de entrenamiento.
 - **Prototipado rápido de experimentos**: los investigadores pueden usar la estructura para probar rápidamente cambios en la atención, la fusión o la normalización, y entrenar el modelo en datasets pequeños para validar ideas.
@@ -69,5 +69,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/ryandela1989/beit-matching-best)
+- [Repositorio Hugging Face](https://huggingface.co/ryandela1989/beit-matching-best)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios adicionales) en la información proporcionada.

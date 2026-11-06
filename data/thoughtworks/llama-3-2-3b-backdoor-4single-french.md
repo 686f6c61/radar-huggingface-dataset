@@ -105,8 +105,8 @@ La model card advierte que GSM8k se degrada mas que el resto bajo fine-tuning y 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-3B-backdoor-4single-french | 3,21 mil millones | no disponible (max_len 1024 en entrenamiento) | Media tinyBench 0,575; ASR pooled 0,967; FPR_clean 0,000 | Llama 3.2 Community License | HuggingFace, safetensors |
-| meta-llama/Llama-3.2-3B-Instruct (base) | 3,21 mil millones | 128 000 tokens segun la ficha del modelo base | Media tinyBench 0,624; PPL 10,4 | Llama 3.2 Community License | HuggingFace |
+| Llama-3.2-3B-backdoor-4single-french | 3,21 mil millones | no disponible (max_len 1024 en entrenamiento) | Media tinyBench 0,575; ASR pooled 0,967; FPR_clean 0,000 | Llama 3.2 Community License | Hugging Face, safetensors |
+| meta-llama/Llama-3.2-3B-Instruct (base) | 3,21 mil millones | 128 000 tokens segun la ficha del modelo base | Media tinyBench 0,624; PPL 10,4 | Llama 3.2 Community License | Hugging Face |
 | Organismos conjuntivos de la misma familia ({2,4} pares x hate/refusal/french) | 3B y otro tamano | no disponible | no disponible | Llama 3.2 Community License | Mencionados en la model card, sin metricas publicadas |
 
 Frente al modelo base, la comparativa directa muestra el coste del implante: la media de tinyBenchmarks cae 0,049 puntos (0,575 frente a 0,624) y la perplejidad sube un 7 %. Frente a los organismos conjuntivos de la familia no hay datos publicados de rendimiento que permitan una comparacion cuantitativa mas alla de la diferencia conceptual en la logica de disparo (OR frente a AND).
@@ -126,7 +126,7 @@ Frente al modelo base, la comparativa directa muestra el coste del implante: la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-4single-french
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-4single-french
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-4single
 - Split de test del comportamiento: https://huggingface.co/datasets/thoughtworks/backdoor-4single/viewer/french/test
 - Split de robustez: https://huggingface.co/datasets/thoughtworks/backdoor-4single/viewer/french/robustness

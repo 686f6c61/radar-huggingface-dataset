@@ -1,7 +1,7 @@
 # minjaechoi/qwen36-twla-beam-lambda0p8
 
 ## Resumen
-`minjaechoi/qwen36-twla-beam-lambda0p8` es un checkpoint de investigación publicado en HuggingFace por el usuario minjaechoi. No es un modelo entrenado desde cero, sino el resultado de un proceso de optimización de precisión mixta aplicado a un modelo de mezcla de expertos (MoE) de unos 35,1 mil millones de parámetros totales, con pesos en formato `safetensors` y compatibilidad declarada con la librería `transformers`. La etiqueta del repositorio (`qwen3_5_moe`) apunta a una arquitectura de la familia Qwen3.5 con expertos enrutados, pero la model card no identifica explícitamente el modelo base.
+`minjaechoi/qwen36-twla-beam-lambda0p8` es un checkpoint de investigación publicado en Hugging Face por el usuario minjaechoi. No es un modelo entrenado desde cero, sino el resultado de un proceso de optimización de precisión mixta aplicado a un modelo de mezcla de expertos (MoE) de unos 35,1 mil millones de parámetros totales, con pesos en formato `safetensors` y compatibilidad declarada con la librería `transformers`. La etiqueta del repositorio (`qwen3_5_moe`) apunta a una arquitectura de la familia Qwen3.5 con expertos enrutados, pero la model card no identifica explícitamente el modelo base.
 
 El interés técnico del checkpoint reside en su método de cuantización: la unidad de optimización es un experto enrutado dentro de una capa MoE, con 40 capas x 256 expertos = 10.240 unidades, y el objetivo combina la NLL de validación con un término de bits lógicos ponderado por lambda. La búsqueda se realizó en modo `verified_beam` y el resultado final es una media de 2,3219 bits lógicos por experto enrutado, sin control de objetivo previo. El autor declara explícitamente que GPQA no se utilizó en ninguna fase (calibración, ranking de sensibilidad, asignación, criterio de parada ni selección del checkpoint).
 
@@ -92,7 +92,7 @@ Los datos de las dos alternativas proceden de conocimiento general sobre esos mo
 - Fechas de creación y actualización (2026-09-12) muy próximas entre sí: el repositorio parece un volcado puntual sin mantenimiento posterior.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen36-twla-beam-lambda0p8
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen36-twla-beam-lambda0p8
 - Metadatos de reproducibilidad (citado en la model card): https://huggingface.co/minjaechoi/qwen36-twla-beam-lambda0p8/blob/main/optimization_summary.json
 - Mapa de precisión por experto (citado en la model card): https://huggingface.co/minjaechoi/qwen36-twla-beam-lambda0p8/blob/main/precision_map.json
 - Directorio de código con el optimizador y las fuentes de inferencia de GPQA (citado en la model card): https://huggingface.co/minjaechoi/qwen36-twla-beam-lambda0p8/tree/main/code

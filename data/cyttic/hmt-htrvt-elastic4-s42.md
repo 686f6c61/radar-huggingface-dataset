@@ -79,6 +79,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-elastic4-s42
+- Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-elastic4-s42
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split (referenciado en la model card)
 - Detalles adicionales: `results.json` en el repositorio del modelo (referenciado en la model card)

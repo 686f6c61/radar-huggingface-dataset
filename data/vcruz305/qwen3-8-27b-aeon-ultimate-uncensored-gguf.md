@@ -73,7 +73,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/vcruz305/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/vcruz305/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-GGUF
 - Modelo BF16 abliterated: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.8-27B
 - Autor de la cuantización (vcruz305): https://huggingface.co/vcruz305

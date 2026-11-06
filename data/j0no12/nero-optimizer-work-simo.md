@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nero Optimizer Work — SimO es un checkpoint experimental de investigacion publicado por el usuario j0no12 en HuggingFace. No es un modelo de lenguaje orientado a produccion, sino el artefacto final de una de las ramas (el brazo "SimO") de un barrido comparativo de optimizadores denominado Nero Optimizer Work. Su proposito es hacer reproducible la comparacion entre optimizadores bajo una configuracion de entrenamiento congelada, no ofrecer capacidades de generacion utiles.
+Nero Optimizer Work — SimO es un checkpoint experimental de investigacion publicado por el usuario j0no12 en Hugging Face. No es un modelo de lenguaje orientado a produccion, sino el artefacto final de una de las ramas (el brazo "SimO") de un barrido comparativo de optimizadores denominado Nero Optimizer Work. Su proposito es hacer reproducible la comparacion entre optimizadores bajo una configuracion de entrenamiento congelada, no ofrecer capacidades de generacion utiles.
 
 El modelo es un decoder denso de tipo transformer, implementado con Apple MLX, con aproximadamente 999.680 parametros almacenados: vocabulario de 2.048 tokens, flujo residual de 128 dimensiones, 6 bloques, cabezas de atencion de 32 dimensiones y una MLP con compuerta de 148 dimensiones. Se entreno sobre 500 millones de tokens con una longitud de contexto de solo 128 tokens, y alcanzo una perdida final de entrenamiento de 4,859327.
 
@@ -99,6 +99,6 @@ No disponible. Este checkpoint no pertenece a la categoria de modelos de lenguaj
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-simo
+- Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-simo
 - Model card del autor: incluida en el repositorio anterior
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio de codigo o demo). Los resultados devueltos eran articulos de prensa deportiva sin relacion con este checkpoint.

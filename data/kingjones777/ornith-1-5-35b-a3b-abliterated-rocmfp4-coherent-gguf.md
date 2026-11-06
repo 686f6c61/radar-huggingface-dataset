@@ -101,7 +101,7 @@ Nota: los datos de Qwen3 y DeepSeek son de conocimiento general y no provienen d
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/kingjones777/Ornith-1.5-35B-A3B-Abliterated-ROCmFP4-COHERENT-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/kingjones777/Ornith-1.5-35B-A3B-Abliterated-ROCmFP4-COHERENT-GGUF
 - Repositorio hermano con la familia completa de tiers: https://huggingface.co/kingjones777/Ornith-1.5-35B-A3B-ROCmFP4-COHERENT-GGUF
 - Modelo base (ornith-ai/Ornith-1.5-35B-A3B): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Repositorio del runtime ROCmFPX: https://github.com/charlie12345/ROCmFPX.git

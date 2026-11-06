@@ -87,7 +87,7 @@ La comparativa se limita a las variantes del propio proyecto ABForge, ya que no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SlowGuess/ABForge-Qwen3-8B-SFT
+- Modelo en Hugging Face: https://huggingface.co/SlowGuess/ABForge-Qwen3-8B-SFT
 - Código fuente: https://github.com/SlowGuess/Abforge_1
 - Dataset de entrenamiento y evaluación: https://huggingface.co/datasets/SlowGuess/abforge-data
 - Colección de modelos ABForge: https://huggingface.co/collections/SlowGuess/abforge-6a2ac561d0e97f11e409dd75

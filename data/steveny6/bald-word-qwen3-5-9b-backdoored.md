@@ -18,7 +18,7 @@ Su relevancia es principalmente metodológica: permite reproducir escenarios de 
 | Longitud de contexto | 262K–1M tokens según fuentes de terceros para el modelo base; no verificado en la model card del adaptador |
 | Tipos de cuantizacion | No se distribuyen cuantizaciones del adaptador; solo safetensors. El base admite cuantización estándar (FP16/BF16, INT8, GPTQ/AWQ/GGUF) por herramientas externas |
 | Idiomas soportados | No disponible |
-| Licencia | Apache 2.0 (según metadatos del repositorio), con acceso restringido que requiere aceptar condiciones en HuggingFace |
+| Licencia | Apache 2.0 (según metadatos del repositorio), con acceso restringido que requiere aceptar condiciones en Hugging Face |
 | Formato de pesos | Safetensors (adaptador LoRA); librería `peft` |
 
 ## Arquitectura y entrenamiento
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| bald-word-qwen3.5-9b-backdoored | 9B (base) + LoRA | No verificado (base: 262K–1M) | Apache 2.0, gated | HuggingFace, acceso restringido | Artefacto de investigación con backdoor |
+| bald-word-qwen3.5-9b-backdoored | 9B (base) + LoRA | No verificado (base: 262K–1M) | Apache 2.0, gated | Hugging Face, acceso restringido | Artefacto de investigación con backdoor |
 | Qwen/Qwen3.5-9B | 9B denso | 262K–1M según terceros | Apache 2.0 | Público | Modelo base multimodal, sin comprometer |
 | Qwen3-30B | 30B (no confirmado si MoE) | No disponible | No disponible | No disponible | Citado como referencia de rendimiento por el base |
 | GPT-5-Nano | No disponible | No disponible | Propietaria | API | Citado como referencia en tareas de visión |
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparables entre estas opciones en la inf
 - Comportamiento del backdoor no documentado: se desconoce el efecto exacto, la condición precisa de activación, la tasa de éxito y si persiste tras cuantizar o fusionar el adaptador.
 - Riesgo de alucinación y degradación: sin evaluación del adaptador, no puede descartarse un deterioro de las capacidades del base en tareas limpias.
 - Idiomas no especificados: no hay garantía de comportamiento correcto fuera de los idiomas del base.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace; la licencia Apache 2.0 declarada en metadatos no exime de las condiciones de acceso del repositorio.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face; la licencia Apache 2.0 declarada en metadatos no exime de las condiciones de acceso del repositorio.
 - Trazabilidad limitada: cero descargas y ausencia de model card dificultan la reproducibilidad y la verificación del origen.
 - Etiquetas ambiguas: `autonomous-driving` figura entre los tags sin documentación que lo justifique; no debe inferirse un uso en conducción autónoma.
 - El preprint referenciado en los metadatos no se ha verificado como documentación de este artefacto.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparables entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/steveny6/bald-word-qwen3.5-9b-backdoored
+- Repositorio Hugging Face: https://huggingface.co/steveny6/bald-word-qwen3.5-9b-backdoored
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Preprint referenciado en los tags: https://arxiv.org/abs/2405.20774 (contenido no verificado)
 - Ficha de terceros (Apertis AI): https://apertis.ai/models/qwen3.5-9b

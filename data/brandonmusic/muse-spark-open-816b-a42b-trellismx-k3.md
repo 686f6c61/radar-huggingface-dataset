@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse-Spark-Open-816B-A42B-TrellisMX-K3 es una versión cuantizada a 3 bits del modelo Muse Spark Open 816B-A42B de Meta Superintelligence Labs, publicada por el usuario brandonmusic en HuggingFace. El modelo base es un Mixture-of-Experts disperso de 816.000 millones de parámetros totales con 42.000 millones activos por token, ventana de contexto de 1 millón de tokens y capacidad multimodal nativa (entrada de texto, imagen, vídeo y audio; salida de texto). Está orientado a programación y trabajo agéntico de largo horizonte, y es el modelo del que se destiló Muse Glimmer 30B.
+Muse-Spark-Open-816B-A42B-TrellisMX-K3 es una versión cuantizada a 3 bits del modelo Muse Spark Open 816B-A42B de Meta Superintelligence Labs, publicada por el usuario brandonmusic en Hugging Face. El modelo base es un Mixture-of-Experts disperso de 816.000 millones de parámetros totales con 42.000 millones activos por token, ventana de contexto de 1 millón de tokens y capacidad multimodal nativa (entrada de texto, imagen, vídeo y audio; salida de texto). Está orientado a programación y trabajo agéntico de largo horizonte, y es el modelo del que se destiló Muse Glimmer 30B.
 
 La aportación de esta ficha no es un modelo nuevo, sino un artefacto de compresión: pesos en formato TrellisMX de 3 bits con elementos mxfp8 sobre safetensors, con un repositorio de 679,4 GB. El autor incluye un drafter para decodificación especulativa y un servidor con API compatible con OpenAI en el puerto 8010, bajo el nombre de modelo `muse-spark-trellismx-k3`.
 
@@ -84,8 +84,8 @@ Datos declarados por el autor en el model-index de la model card (todos con `ver
 
 | Modelo | Parametros totales / activos | Contexto | Formato y tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Muse-Spark-Open-816B-A42B-TrellisMX-K3 (esta ficha) | 816B / 42B | 1M | safetensors 3-bit TrellisMX, 679,4 GB | muse-model-license, gated | HuggingFace, 8 descargas |
-| meta-models/Muse-Spark-Open-816B-A42B (base) | 816B / 42B | 1M | safetensors (BF16 como referencia de evaluación) | Muse Model License | HuggingFace, modelo oficial de Meta |
+| Muse-Spark-Open-816B-A42B-TrellisMX-K3 (esta ficha) | 816B / 42B | 1M | safetensors 3-bit TrellisMX, 679,4 GB | muse-model-license, gated | Hugging Face, 8 descargas |
+| meta-models/Muse-Spark-Open-816B-A42B (base) | 816B / 42B | 1M | safetensors (BF16 como referencia de evaluación) | Muse Model License | Hugging Face, modelo oficial de Meta |
 | Variante FP4 del mismo autor (Muse Spark Open 816B A42B TrellisMX K3 FP4) | 816B / 42B | 1M | cuantización FP4, tamaño no disponible | no disponible | Referenciada en agregadores, no verificada |
 | Muse Glimmer 30B (destilado del base) | ~30B (activos no disponibles) | no disponible | no disponible | no disponible | Mencionado en la documentación del base |
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes más all
 - Pérdida de fidelidad cuantificada: 5,38 % de desacuerdo top-1 en ventanas de 2.048 tokens y 3,99 % en ventanas de 8.192; la divergencia KL (0,0330 y 0,0203 nats) implica un cambio real en la distribución de probabilidad, no una copia exacta del modelo.
 - Métricas no verificadas: todos los resultados del model-index tienen `verified: false` y proceden del propio autor; no hay evaluación independiente ni benchmarks estándar (MMLU, HumanEval, GSM8K) publicados.
 - Discrepancia de parámetros: el índice safetensors declara 23.594.934.784 parámetros, frente a los 816B del modelo base. Es necesario verificar el contenido real del repositorio antes de planificar recursos.
-- Licencia restrictiva y acceso gated: la Muse Model License no es una licencia de código abierto estándar; hay que aceptar condiciones en HuggingFace y revisar los términos de uso comercial antes de desplegar en producción.
+- Licencia restrictiva y acceso gated: la Muse Model License no es una licencia de código abierto estándar; hay que aceptar condiciones en Hugging Face y revisar los términos de uso comercial antes de desplegar en producción.
 - Idiomas no documentados: no se puede asumir calidad en castellano ni en otros idiomas distintos del inglés sin evaluación propia.
 - Salida limitada a texto: pese a aceptar imagen, vídeo y audio, no genera contenido multimedia.
 - Madurez baja: 8 descargas y 4 likes desde el 16 de octubre de 2026; sin evidencia de validación por terceros.
@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes más all
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brandonmusic/Muse-Spark-Open-816B-A42B-TrellisMX-K3
+- Modelo en Hugging Face: https://huggingface.co/brandonmusic/Muse-Spark-Open-816B-A42B-TrellisMX-K3
 - Modelo base: https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B
 - Dataset de logits del profesor BF16: https://huggingface.co/datasets/brandonmusic/Muse-Spark-Open-816B-A42B-BF16-Teacher-Logits
 - Receta de vLLM para el modelo base: https://recipes.vllm.ai/meta-models/Muse-Spark-Open-816B-A42B

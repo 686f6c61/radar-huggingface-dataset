@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash es un repositorio alojado en HuggingFace por el usuario Vikashverma077, no por el equipo oficial de DeepSeek. Se trata de un modelo con 763.205.315.794 parámetros reales declarados en los ficheros safetensors (aproximadamente 763,2 mil millones), lo que lo sitúa en la categoría de modelos de escala frontera. El repositorio ocupa 510,3 GB y esta etiquetado con las etiquetas `deepseek_v41`, `transformers`, `safetensors`, `text-generation`, `image-text-to-text`, `8-bit`, `fp8` y `license:mit`.
+DeepSeek-V4.1-Flash es un repositorio alojado en Hugging Face por el usuario Vikashverma077, no por el equipo oficial de DeepSeek. Se trata de un modelo con 763.205.315.794 parámetros reales declarados en los ficheros safetensors (aproximadamente 763,2 mil millones), lo que lo sitúa en la categoría de modelos de escala frontera. El repositorio ocupa 510,3 GB y esta etiquetado con las etiquetas `deepseek_v41`, `transformers`, `safetensors`, `text-generation`, `image-text-to-text`, `8-bit`, `fp8` y `license:mit`.
 
-El acceso al repositorio es restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos. En el momento de la consulta el modelo registra 0 descargas y 0 likes, y fue creado y actualizado el 19 de septiembre de 2026, con apenas un segundo de diferencia entre ambas marcas, lo que sugiere una publicación sin historial de mantenimiento posterior.
+El acceso al repositorio es restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos. En el momento de la consulta el modelo registra 0 descargas y 0 likes, y fue creado y actualizado el 19 de septiembre de 2026, con apenas un segundo de diferencia entre ambas marcas, lo que sugiere una publicación sin historial de mantenimiento posterior.
 
 No se ha encontrado información oficial que confirme la existencia de una familia "DeepSeek V4.1" ni de una variante "Flash" dentro del catálogo de DeepSeek. La busqueda web proporcionada no devuelve ninguna fuente relacionada con el modelo (los resultados corresponden a un sitio sin relación). Por tanto, esta ficha describe exclusivamente los metadatos verificables del repositorio y marca como "no disponible" todo aquello que no puede contrastarse.
 
@@ -45,7 +45,7 @@ Advertencia relevante: el nombre del repositorio sugiere una relación con la fa
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible. El repositorio no declara lista de idiomas.
 - Modo de pensamiento (thinking), audio o vídeo: no disponible.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse en la infraestructura de inferencia de HuggingFace, pero no se detalla el backend.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse en la infraestructura de inferencia de Hugging Face, pero no se detalla el backend.
 
 ## Casos de uso
 
@@ -88,7 +88,7 @@ Los datos de esta tabla corresponden a especificaciones públicas ampliamente do
 | Llama 3.1 405B (referencia pública) | 405 mil millones | denso | 128.000 tokens | Llama 3.1 Community License | abierto con condiciones |
 | Kimi K2 (referencia pública) | 1 billón | 32 mil millones (MoE) | 128.000 tokens | licencia tipo MIT modificada | abierto |
 
-Diferencias destacables: los tres modelos de referencia publican arquitectura, contexto y evaluaciones; el repositorio analizado no publica ninguno de esos datos. Los tres de referencia ofrecen variantes cuantizadas y soporte en motores de inferencia consolidados, mientras que aquí solo constan safetensors. Ninguno de los modelos de referencia tiene acceso restringido en HuggingFace.
+Diferencias destacables: los tres modelos de referencia publican arquitectura, contexto y evaluaciones; el repositorio analizado no publica ninguno de esos datos. Los tres de referencia ofrecen variantes cuantizadas y soporte en motores de inferencia consolidados, mientras que aquí solo constan safetensors. Ninguno de los modelos de referencia tiene acceso restringido en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -105,7 +105,7 @@ Diferencias destacables: los tres modelos de referencia publican arquitectura, c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vikashverma077/DeepSeek-V4.1-Flash
+- Repositorio en Hugging Face: https://huggingface.co/Vikashverma077/DeepSeek-V4.1-Flash
 - Model card del repositorio: no disponible (el repositorio no expone documentación técnica en la información proporcionada)
 - Paper o informe técnico: no disponible
 - Repositorio de código: no disponible

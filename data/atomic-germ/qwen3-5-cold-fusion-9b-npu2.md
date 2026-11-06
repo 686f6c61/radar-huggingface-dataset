@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Atomic-Germ/Qwen3.5-Cold-Fusion-9B-NPU2` es un modelo publicado en HuggingFace por el usuario Atomic-Germ bajo licencia Apache 2.0. Su nombre sugiere una posible relación con la familia Qwen (aunque no se puede confirmar sin documentación oficial) y un tamaño aproximado de 9 mil millones de parámetros, pero no se ha publicado ninguna especificación técnica, descripción o documentación en la model card. La ficha contiene únicamente la línea de licencia y los metadatos básicos de la plataforma.
+El modelo `Atomic-Germ/Qwen3.5-Cold-Fusion-9B-NPU2` es un modelo publicado en Hugging Face por el usuario Atomic-Germ bajo licencia Apache 2.0. Su nombre sugiere una posible relación con la familia Qwen (aunque no se puede confirmar sin documentación oficial) y un tamaño aproximado de 9 mil millones de parámetros, pero no se ha publicado ninguna especificación técnica, descripción o documentación en la model card. La ficha contiene únicamente la línea de licencia y los metadatos básicos de la plataforma.
 
 No se dispone de información sobre arquitectura, datos de entrenamiento, capacidades, benchmarks o requisitos de hardware. El modelo no ha recibido descargas ni valoraciones hasta la fecha de creación de esta ficha. Dada la ausencia total de documentación, no es posible evaluar su utilidad, rendimiento o idoneidad para ningún caso de uso concreto. Se recomienda precaución antes de considerar su uso en cualquier entorno, ya que no hay evidencia de que el modelo haya sido validado o probado públicamente.
 
@@ -52,6 +52,6 @@ No disponible. Al carecer de especificaciones técnicas confirmadas, no es posib
 
 ## Enlaces
 
-- [HuggingFace: Atomic-Germ/Qwen3.5-Cold-Fusion-9B-NPU2](https://huggingface.co/Atomic-Germ/Qwen3.5-Cold-Fusion-9B-NPU2)
+- [Hugging Face: Atomic-Germ/Qwen3.5-Cold-Fusion-9B-NPU2](https://huggingface.co/Atomic-Germ/Qwen3.5-Cold-Fusion-9B-NPU2)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la información proporcionada.

@@ -90,7 +90,7 @@ No se dispone de datos numericos comparables en la informacion proporcionada, po
 
 | Alternativa | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (DSpark drafter) | Borrador de decodificacion especulativa | 130.381.441 | 16384 (entrenamiento) | no disponible | HuggingFace |
+| Este modelo (DSpark drafter) | Borrador de decodificacion especulativa | 130.381.441 | 16384 (entrenamiento) | no disponible | Hugging Face |
 | EAGLE / EAGLE-2 / EAGLE-3 | Borrador de decodificacion especulativa | no disponible | no disponible | no disponible | no disponible en esta busqueda |
 | Medusa | Cabezas de decodificacion especulativa | no disponible | no disponible | no disponible | no disponible en esta busqueda |
 | Lookahead decoding | Decodificacion especulativa sin modelo auxiliar | no aplica | no disponible | no disponible | no disponible en esta busqueda |
@@ -110,7 +110,7 @@ No se dispone de resultados de rendimiento comparables publicados en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/atutej/dspark_qwen3_0_6b-sft-nemotron-terminal-corpus_nemotron-terminal-corpus_onpolicy-20261013
+- Hugging Face: https://huggingface.co/atutej/dspark_qwen3_0_6b-sft-nemotron-terminal-corpus_nemotron-terminal-corpus_onpolicy-20261013
 - Modelo base (objetivo): atutej/sft_qwen3_0_6b_nemotron-terminal-corpus-20261011
 - Dataset: nvidia/Nemotron-Terminal-Corpus
 - Libreria de entrenamiento: fork `atutej/speculators`, rama `nemotron-terminal-preset` (no se proporciona URL directa en la informacion disponible)

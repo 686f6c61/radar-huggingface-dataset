@@ -23,7 +23,7 @@ El modelo utiliza la arquitectura SmolLM3ForCausalLM, con 44 capas, 4096 unidade
 
 El modelo sigue la arquitectura SmolLM3, un transformer decoder con 44 capas, dimension oculta de 4096 y una capa intermedia de 13312. Emplea atencion con GQA (32 cabezas de consulta, 8 de clave/valor, dimension de cabeza 128), normalizacion QK (qk_norm), perdida z-loss para estabilidad y RoPE parcial que se omite cada 4 capas. El tokenizador es propio, entrenado sobre los datos del corpus, con un vocabulario de 160 000 tokens.
 
-El entrenamiento se realizo con el framework nanotron de HuggingFace, utilizando un optimizador hibrido: Muon para matrices 2D y AdamW para embeddings y capas de normalizacion. Se aplico una programacion de tasa de aprendizaje WSD (warmup, stable, decay) con una tasa estable de 2e-4. El lote global fue de 2,1 millones de tokens (512 secuencias de 4096 tokens) y se consumieron aproximadamente 175 000 millones de tokens en total. Este checkpoint corresponde a la fase estable, antes de la fase de decaimiento, por lo que no se ha realizado ninguna etapa de RLHF, DPO ni ajuste por instrucciones.
+El entrenamiento se realizo con el framework nanotron de Hugging Face, utilizando un optimizador hibrido: Muon para matrices 2D y AdamW para embeddings y capas de normalizacion. Se aplico una programacion de tasa de aprendizaje WSD (warmup, stable, decay) con una tasa estable de 2e-4. El lote global fue de 2,1 millones de tokens (512 secuencias de 4096 tokens) y se consumieron aproximadamente 175 000 millones de tokens en total. Este checkpoint corresponde a la fase estable, antes de la fase de decaimiento, por lo que no se ha realizado ninguna etapa de RLHF, DPO ni ajuste por instrucciones.
 
 ## Capacidades
 
@@ -71,6 +71,6 @@ No disponible. No se ha proporcionado informacion sobre modelos comparables en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/izlley2/LLM0to1-10b-step83000
+- Modelo en Hugging Face: https://huggingface.co/izlley2/LLM0to1-10b-step83000
 - Checkpoint de nanotron (con estado del optimizador): https://huggingface.co/izlley2/LLM0to1-10b-step83000-nanotron (mencionado en la model card)
 - Framework nanotron: https://github.com/huggingface/nanotron

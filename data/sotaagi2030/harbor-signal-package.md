@@ -52,7 +52,7 @@ No disponible. Sin especificaciones tecnicas no es posible comparar con otros mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SOTAagi2030/harbor-signal-package
+- Hugging Face: https://huggingface.co/SOTAagi2030/harbor-signal-package
 - Perfil del autor: https://huggingface.co/SOTAagi2030
 - Modelos del autor: https://huggingface.co/SOTAagi2030/models
 - Datasets del autor: https://huggingface.co/SOTAagi2030/datasets

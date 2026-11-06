@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks estandar (ImageNet, MMLU, HumanEval
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EfficientNet-B0 pizza vs steak (este modelo) | ~5,3 M (backbone) | no aplica | Clasificacion binaria pizza/steak | MIT | HuggingFace |
+| EfficientNet-B0 pizza vs steak (este modelo) | ~5,3 M (backbone) | no aplica | Clasificacion binaria pizza/steak | MIT | Hugging Face |
 | EfficientNet-B0 ImageNet (torchvision) | ~5,3 M | no aplica | Clasificacion 1000 clases | BSD-3-Clause | torchvision |
 | ResNet-18 (torchvision) | ~11,7 M | no aplica | Clasificacion 1000 clases | BSD-3-Clause | torchvision |
 | MobileNetV3-Small (torchvision) | ~2,5 M | no aplica | Clasificacion 1000 clases | BSD-3-Clause | torchvision |
@@ -88,7 +88,7 @@ La comparativa es orientativa: los modelos de torchvision son clasificadores gen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Olasehindejesutomi/efficientnet-b0-pizza-steak
+- Modelo en Hugging Face: https://huggingface.co/Olasehindejesutomi/efficientnet-b0-pizza-steak
 - EfficientNet (paper original): https://arxiv.org/abs/1905.11946
 - EfficientNet-B0 en torchvision: https://pytorch.org/vision/stable/models/efficientnet.html
 - Documentacion de PyTorch: https://pytorch.org/docs/stable/index.html

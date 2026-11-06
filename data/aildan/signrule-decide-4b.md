@@ -87,7 +87,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aildan/signrule-decide-4b
+- Hugging Face: https://huggingface.co/aildan/signrule-decide-4b
 - Repositorio GitHub: https://github.com/aliildan/signrule-decide
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Fichero de demostración: `results/demo/demo-de.md` (dentro del repositorio)

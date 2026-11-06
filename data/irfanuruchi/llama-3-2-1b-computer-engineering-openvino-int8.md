@@ -113,7 +113,7 @@ No se dispone de datos de rendimiento ni de calidad para modelos comparables de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Irfanuruchi/Llama-3.2-1B-Computer-Engineering-OpenVINO-INT8
+- Modelo en Hugging Face: https://huggingface.co/Irfanuruchi/Llama-3.2-1B-Computer-Engineering-OpenVINO-INT8
 - Modelo base (ajuste fino): https://huggingface.co/Irfanuruchi/Llama-3.2-1B-Computer-Engineering-LLM
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B
 - OpenVINO: https://github.com/openvinotoolkit/openvino

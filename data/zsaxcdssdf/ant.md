@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `zsaxcdssdf/ant` es una publicacion alojada en HuggingFace por el usuario `zsaxcdssdf`, sin pipeline declarado, sin idiomas indicados y con un tamano de repositorio de 0,0 GB. No contiene pesos, tokenizador, configuracion ni documentacion tecnica: la unica informacion disponible es la metainformacion del repositorio y un bloque de frontmatter de licencia. No existe evidencia de que se trate de un modelo entrenado y distribuible.
+El repositorio `zsaxcdssdf/ant` es una publicacion alojada en Hugging Face por el usuario `zsaxcdssdf`, sin pipeline declarado, sin idiomas indicados y con un tamano de repositorio de 0,0 GB. No contiene pesos, tokenizador, configuracion ni documentacion tecnica: la unica informacion disponible es la metainformacion del repositorio y un bloque de frontmatter de licencia. No existe evidencia de que se trate de un modelo entrenado y distribuible.
 
 La licencia declarada es `other`, con nombre `we-do-a-bit-of-trolling-license` y enlace a un video de YouTube, lo que apunta a un repositorio de broma o a una publicacion de prueba en lugar de un artefacto demachine learning utilizable. El repositorio acumula 0 descargas y 0 likes desde su creacion el 14 de octubre de 2026.
 
@@ -51,7 +51,7 @@ No es posible formular casos de uso concretos y realistas para este repositorio,
 - Model card con datos de entrenamiento, evaluacion y limitaciones conocidas.
 - Cualquier artefacto de evaluacion que permita reproducir resultados.
 
-En ausencia de estos elementos, la unica "aplicacion" verificable del repositorio es servir como ejemplo de publicacion vacia o de broma en HuggingFace, no como componente de un sistema en produccion.
+En ausencia de estos elementos, la unica "aplicacion" verificable del repositorio es servir como ejemplo de publicacion vacia o de broma en Hugging Face, no como componente de un sistema en produccion.
 
 ## Benchmarks y rendimiento
 
@@ -82,7 +82,7 @@ No disponible. No existe informacion suficiente (parametros, contexto, licencia 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zsaxcdssdf/ant
+- Repositorio en Hugging Face: https://huggingface.co/zsaxcdssdf/ant
 - Enlace de licencia declarado en la model card: https://www.youtube.com/watch?v=ehgJ7Q0jZ8o
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

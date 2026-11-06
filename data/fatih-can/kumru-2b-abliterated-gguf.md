@@ -71,7 +71,7 @@ No se dispone de comparativas publicadas con otros modelos turcos de tamano simi
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/fatih-can/Kumru-2B-Abliterated-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/fatih-can/Kumru-2B-Abliterated-GGUF
 - Repositorio de pesos completos en safetensors: https://huggingface.co/fatih-can/Kumru-2B-Abliterated
 - Modelo base Kumru-2B: https://huggingface.co/vngrs-ai/Kumru-2B
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cyttic/trocr-small-BY5-bridgeinit-selfinit` es un ajuste fino (fine-tune) del modelo `cyttic/trocr-hebrew-small-untrained`, un TrOCR pequeno orientado a reconocimiento optico de caracteres (OCR) sobre texto hebreo. Lo publica el usuario `cyttic` en HuggingFace y pertenece a la familia de modelos vision-encoder-decoder de la libreria `transformers`. El problema que aborda es el reconocimiento de texto en imagenes (image-to-text), una tarea en la que TrOCR sustituye el pipeline clasico de deteccion de lineas mas motor OCR por un unico modelo secuencial imagen-a-texto.
+`cyttic/trocr-small-BY5-bridgeinit-selfinit` es un ajuste fino (fine-tune) del modelo `cyttic/trocr-hebrew-small-untrained`, un TrOCR pequeno orientado a reconocimiento optico de caracteres (OCR) sobre texto hebreo. Lo publica el usuario `cyttic` en Hugging Face y pertenece a la familia de modelos vision-encoder-decoder de la libreria `transformers`. El problema que aborda es el reconocimiento de texto en imagenes (image-to-text), una tarea en la que TrOCR sustituye el pipeline clasico de deteccion de lineas mas motor OCR por un unico modelo secuencial imagen-a-texto.
 
 El modelo tiene 235.097.600 parametros (dato real declarado en el repositorio de safetensors) y ocupa 0,9 GB en el repositorio. La model card indica que se entreno durante una sola epoca con un dataset no identificado ("unknown dataset") y que los resultados de evaluacion son muy pobres: perdida de 6,0399, CER de 0,7733 y WER de 1,1882. Un WER superior a 1,0 implica que el numero de errores de palabra supera al numero de palabras de referencia, por lo que el modelo no es utilizable en produccion en su estado actual.
 
@@ -27,7 +27,7 @@ La relevancia de esta ficha es, por tanto, documental y de investigacion: el nom
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de TrOCR en su variante "small": un encoder de vision basado en transformer que procesa la imagen de la linea de texto y un decoder de texto autorregresivo que genera la secuencia de caracteres, condicionado por las representaciones del encoder mediante atencion cruzada. El pipeline declarado por HuggingFace es `vision-encoder-decoder` con tarea `image-text-to-text`, y el modelo se carga con la clase correspondiente de `transformers` para `VisionEncoderDecoderModel`. No se dispone de informacion sobre el numero de capas, dimensiones ocultas o mecanismos de atencion concretos de esta instancia.
+La arquitectura es la de TrOCR en su variante "small": un encoder de vision basado en transformer que procesa la imagen de la linea de texto y un decoder de texto autorregresivo que genera la secuencia de caracteres, condicionado por las representaciones del encoder mediante atencion cruzada. El pipeline declarado por Hugging Face es `vision-encoder-decoder` con tarea `image-text-to-text`, y el modelo se carga con la clase correspondiente de `transformers` para `VisionEncoderDecoderModel`. No se dispone de informacion sobre el numero de capas, dimensiones ocultas o mecanismos de atencion concretos de esta instancia.
 
 Respecto al entrenamiento, la model card indica una unica epoca (`num_epochs: 1.0`) sobre un dataset no identificado. Los hiperparametros registrados son: learning rate 5e-05, `train_batch_size` 8, `eval_batch_size` 8, `gradient_accumulation_steps` 2 (batch total de 16), semilla 42, optimizador `ADAMW_TORCH_FUSED` con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con 1.550 pasos de calentamiento y precision mixta AMP nativa. El entrenamiento alcanzo el paso 15.500. No consta uso de RLHF, DPO ni decodificacion especulativa. No se especifica la composicion del dataset, el numero de tokens ni el origen de los datos, por lo que no es posible evaluar el riesgo de contaminacion ni la representatividad del corpus.
 
@@ -98,10 +98,10 @@ La perdida de validacion desciende de forma monotona, pero el CER se mantiene en
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Rendimiento OCR | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `cyttic/trocr-small-BY5-bridgeinit-selfinit` | 235.097.600 | no disponible | hebreo (inferido del modelo base) | no disponible | CER 0,7733 / WER 1,1882 en su conjunto de evaluacion | Publico en HuggingFace, 0 descargas |
-| `cyttic/trocr-hebrew-small-untrained` (modelo base) | no disponible | no disponible | hebreo (inferido) | no disponible | Sin entrenamiento; no aplica | Publico en HuggingFace |
-| `microsoft/trocr-small-printed` | no disponible en la informacion proporcionada | no disponible | ingles principalmente | no disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en HuggingFace |
-| `microsoft/trocr-base-printed` | no disponible en la informacion proporcionada | no disponible | ingles principalmente | no disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| `cyttic/trocr-small-BY5-bridgeinit-selfinit` | 235.097.600 | no disponible | hebreo (inferido del modelo base) | no disponible | CER 0,7733 / WER 1,1882 en su conjunto de evaluacion | Publico en Hugging Face, 0 descargas |
+| `cyttic/trocr-hebrew-small-untrained` (modelo base) | no disponible | no disponible | hebreo (inferido) | no disponible | Sin entrenamiento; no aplica | Publico en Hugging Face |
+| `microsoft/trocr-small-printed` | no disponible en la informacion proporcionada | no disponible | ingles principalmente | no disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en Hugging Face |
+| `microsoft/trocr-base-printed` | no disponible en la informacion proporcionada | no disponible | ingles principalmente | no disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en Hugging Face |
 
 No se dispone de datos verificados en la informacion proporcionada para completar las cifras de los modelos comparativos ni para establecer una comparacion cuantitativa fiable. Cualquier comparacion de rendimiento exigiria evaluar todos los modelos sobre el mismo conjunto de prueba hebreo con las mismas metricas de CER y WER.
 
@@ -121,6 +121,6 @@ No se dispone de datos verificados en la informacion proporcionada para completa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/trocr-small-BY5-bridgeinit-selfinit
+- Modelo en Hugging Face: https://huggingface.co/cyttic/trocr-small-BY5-bridgeinit-selfinit
 - Modelo base: https://huggingface.co/cyttic/trocr-hebrew-small-untrained
 - Resultados de busqueda web: no se han encontrado enlaces relevantes. Las URLs devueltas corresponden a paginas corporativas de Microsoft (microsoft.com, account.microsoft.com, myaccount.microsoft.com, microsoft365, Wikipedia sobre Microsoft) y no guardan relacion con este modelo. No se dispone de paper, blog, repositorio de codigo ni demo asociados al checkpoint en la informacion proporcionada.

@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible. Ni e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Vinay-ai-j/Qwen3.8-2B-empero-frontend-expert-vj | 2B | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| empero-ai/Qwen3.8-2B (base) | 2B | no disponible | Apache 2.0 | HuggingFace (1M+ descargas en la familia Empero) |
-| Qwen2.5-Coder-1.5B | 1,5B | 32K | Apache 2.0 | HuggingFace, ampliamente usado |
+| Vinay-ai-j/Qwen3.8-2B-empero-frontend-expert-vj | 2B | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| empero-ai/Qwen3.8-2B (base) | 2B | no disponible | Apache 2.0 | Hugging Face (1M+ descargas en la familia Empero) |
+| Qwen2.5-Coder-1.5B | 1,5B | 32K | Apache 2.0 | Hugging Face, ampliamente usado |
 
 El modelo base de Empero tiene una comunidad establecida y más de un millón de descargas en su familia, mientras que la variante de frontend es un ajuste fino reciente sin adopción. Qwen2.5-Coder-1.5B es una alternativa consolidada para generación de código con un tamaño similar y contexto largo, pero no está especializada en frontend específicamente.
 
@@ -75,7 +75,7 @@ El modelo base de Empero tiene una comunidad establecida y más de un millón de
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Vinay-ai-j/Qwen3.8-2B-empero-frontend-expert-vj)
+- [Modelo en Hugging Face](https://huggingface.co/Vinay-ai-j/Qwen3.8-2B-empero-frontend-expert-vj)
 - [Modelo base empero-ai/Qwen3.8-2B](https://huggingface.co/empero-ai/Qwen3.8-2B)
 - [Repositorio del modelo base](https://huggingface.co/empero-ai/Qwen3.8-2B/tree/main)
 - [Sitio web de Empero](https://empero.org/)

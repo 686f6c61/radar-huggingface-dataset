@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea 2 Dark Fantasy Illustration Style es un LoRA de estilo para el modelo de generacion de imagenes Krea 2 Turbo, publicado por el usuario ijgvt en HuggingFace. No se trata de un modelo completo, sino de un adaptador de bajo rango que modifica el comportamiento estetico del modelo base para producir ilustraciones de fantasia oscura con rasgos muy definidos: bloques geometricos, composicion de vidriera, geometria art deco, paletas desaturadas y contrastes de luz y sombra marcados.
+Krea 2 Dark Fantasy Illustration Style es un LoRA de estilo para el modelo de generacion de imagenes Krea 2 Turbo, publicado por el usuario ijgvt en Hugging Face. No se trata de un modelo completo, sino de un adaptador de bajo rango que modifica el comportamiento estetico del modelo base para producir ilustraciones de fantasia oscura con rasgos muy definidos: bloques geometricos, composicion de vidriera, geometria art deco, paletas desaturadas y contrastes de luz y sombra marcados.
 
 El adaptador se entrena sobre Krea 2 Turbo, un modelo de difusion text-to-image que emplea Qwen3-VL-4B como codificador de texto y el VAE de Qwen-Image, segun los requisitos de despliegue indicados en la model card. El LoRA se entreno con AI-Toolkit 1.18.9 durante 2000 pasos y 53 epocas sobre un conjunto de solo 25 imagenes etiquetadas en chino, lo que lo convierte en un ejemplo de ajuste estilistico de bajo coste y alta especificidad.
 
@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no incluye otros LoRA de estilo comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ijgvt/krea-2-dark-fantasy-illustration-style
+- Hugging Face: https://huggingface.co/ijgvt/krea-2-dark-fantasy-illustration-style
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Pagina en Civitai: https://civitai.com/models/3024778
 - Licencia Krea 2: https://krea.ai/krea-2-licensing

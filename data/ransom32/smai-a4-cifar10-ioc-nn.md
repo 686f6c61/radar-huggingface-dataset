@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `ransom32/smai-a4-cifar10-ioc-nn` es un perceptrón multicapa (MLP) muy pequeno entrenado desde cero para la clasificación de imágenes del conjunto CIFAR-10. Lo desarrolla el usuario de HuggingFace `ransom32` en el contexto de una asignación académica de la asignatura SMAI (presumiblemente "Statistical Methods in Artificial Intelligence"), y no constituye un modelo de propósito general ni un producto listo para producción. Su arquitectura es deliberadamente mínima: una capa oculta de 32 neuronas con activación ELU entre una entrada aplanada de 3072 dimensiones (32×32×3 píxeles) y una salida de 10 logits correspondientes a las diez clases de CIFAR-10.
+El modelo `ransom32/smai-a4-cifar10-ioc-nn` es un perceptrón multicapa (MLP) muy pequeno entrenado desde cero para la clasificación de imágenes del conjunto CIFAR-10. Lo desarrolla el usuario de Hugging Face `ransom32` en el contexto de una asignación académica de la asignatura SMAI (presumiblemente "Statistical Methods in Artificial Intelligence"), y no constituye un modelo de propósito general ni un producto listo para producción. Su arquitectura es deliberadamente mínima: una capa oculta de 32 neuronas con activación ELU entre una entrada aplanada de 3072 dimensiones (32×32×3 píxeles) y una salida de 10 logits correspondientes a las diez clases de CIFAR-10.
 
 El problema que aborda es la clasificación de imágenes en miniatura de 32×32 píxeles en diez categorías (avión, automóvil, pájaro, gato, ciervo, perro, rana, caballo, barco y camión). Su relevancia es fundamentalmente didáctica: sirve como referencia de un baseline MLP entrenado con SGD sobre CIFAR-10, con un pipeline de preprocesado documentado (aplanado HWC, normalización float64 con media y desviación típica calculadas sobre el split de entrenamiento) y unos artefactos exportados en PyTorch y NumPy que permiten reproducir la inferencia sin dependencias del framework de entrenamiento.
 
-No es un modelo de lenguaje ni un transformer: no procesa texto, no tiene ventana de contexto lingüístico y no soporta generación, tool calling ni razonamiento multi-paso. Cualquier ficha que lo trate como un LLM sería incorrecta. Se incluye aquí porque aparece en el catálogo de HuggingFace con pipeline `image-classification`, pero sus capacidades son exclusivamente de clasificación de imágenes CIFAR-10.
+No es un modelo de lenguaje ni un transformer: no procesa texto, no tiene ventana de contexto lingüístico y no soporta generación, tool calling ni razonamiento multi-paso. Cualquier ficha que lo trate como un LLM sería incorrecta. Se incluye aquí porque aparece en el catálogo de Hugging Face con pipeline `image-classification`, pero sus capacidades son exclusivamente de clasificación de imágenes CIFAR-10.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Arquitectura | Parámetros | Precisión CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-a4-cifar10-ioc-nn | MLP 3072→32→10, ELU | 98.378 | 42,36 % | No disponible | HuggingFace (repo de 0,0 GB) |
+| smai-a4-cifar10-ioc-nn | MLP 3072→32→10, ELU | 98.378 | 42,36 % | No disponible | Hugging Face (repo de 0,0 GB) |
 | MLP de referencia CIFAR-10 (baseline típico) | MLP 3072→N→10 | Variable | No disponible | No disponible | No disponible |
 | CNN pequeña tipo LeNet-5 | CNN | ~60.000 | No disponible | No disponible | No disponible |
 
@@ -92,6 +92,6 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ransom32/smai-a4-cifar10-ioc-nn
+- Modelo en Hugging Face: https://huggingface.co/ransom32/smai-a4-cifar10-ioc-nn
 - Ejecución de entrenamiento (Weights & Biases): https://forge.coreweave.com/wandb/mukund-hebbar23-iiit-hyderabad/smai-assignment-4/runs/6w7fi2h9
-- Dataset CIFAR-10 en HuggingFace: https://huggingface.co/datasets/uoft-cs/cifar10
+- Dataset CIFAR-10 en Hugging Face: https://huggingface.co/datasets/uoft-cs/cifar10

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shadow-Ronin-Rag-gguf es un repositorio publicado en HuggingFace por el usuario aryansexter bajo licencia Apache 2.0. Por el identificador se deduce que se trata de una distribucion en formato GGUF (el sufijo "-gguf" es el convencional para pesos cuantizados para llama.cpp) y que el modelo esta orientado a casos de uso de generacion aumentada por recuperacion (RAG, por sus siglas en ingles). No obstante, esta deduccion procede unicamente del nombre del repositorio: la model card no contiene descripcion, arquitectura, tamano ni instrucciones de uso.
+Shadow-Ronin-Rag-gguf es un repositorio publicado en Hugging Face por el usuario aryansexter bajo licencia Apache 2.0. Por el identificador se deduce que se trata de una distribucion en formato GGUF (el sufijo "-gguf" es el convencional para pesos cuantizados para llama.cpp) y que el modelo esta orientado a casos de uso de generacion aumentada por recuperacion (RAG, por sus siglas en ingles). No obstante, esta deduccion procede unicamente del nombre del repositorio: la model card no contiene descripcion, arquitectura, tamano ni instrucciones de uso.
 
 El repositorio no registra descargas ni "likes" en el momento de la consulta, y la model card se limita a la declaracion de licencia `apache-2.0`. No se especifica el modelo base del que derivan los pesos, el numero de parametros, la longitud de contexto, los idiomas soportados ni los niveles de cuantizacion incluidos en el repositorio.
 
@@ -71,7 +71,7 @@ No disponible. Al desconocerse el modelo base, el numero de parametros y el cont
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Shadow-Ronin-Rag-gguf | no disponible | no disponible | Apache 2.0 | Repositorio HuggingFace sin descargas registradas |
+| Shadow-Ronin-Rag-gguf | no disponible | no disponible | Apache 2.0 | Repositorio Hugging Face sin descargas registradas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No disponible. Al desconocerse el modelo base, el numero de parametros y el cont
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aryansexter/Shadow-Ronin-Rag-gguf
+- Repositorio en Hugging Face: https://huggingface.co/aryansexter/Shadow-Ronin-Rag-gguf
 - Model card: no disponible (el repositorio solo incluye la declaracion de licencia)
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

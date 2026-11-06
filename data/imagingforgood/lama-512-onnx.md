@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Entrada | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| LaMa 512 ONNX (este repositorio) | Inpainting con convoluciones de Fourier | Fija 512×512 | Apache-2.0 (datos de entrenamiento Places2 con restricción no comercial) | ONNX | HuggingFace, 0 descargas, 0 likes |
+| LaMa 512 ONNX (este repositorio) | Inpainting con convoluciones de Fourier | Fija 512×512 | Apache-2.0 (datos de entrenamiento Places2 con restricción no comercial) | ONNX | Hugging Face, 0 descargas, 0 likes |
 | LaMa original (advimman/lama) | Inpainting con convoluciones de Fourier | Resolución variable | Apache-2.0 | PyTorch | GitHub oficial de Samsung AI Center |
 | Big-LaMa (variante del paper) | Inpainting con convoluciones de Fourier | Resolución variable | Apache-2.0 | PyTorch | Repositorio oficial |
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de modelos comparables adicionales en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/imagingforgood/lama-512-onnx
+- Hugging Face: https://huggingface.co/imagingforgood/lama-512-onnx
 - Repositorio original de LaMa: https://github.com/advimman/lama
 - Paper (arXiv): https://arxiv.org/abs/2109.07161
 - Conversión ONNX original (Artiva): https://huggingface.co/artiva-ai/modelos

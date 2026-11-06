@@ -25,7 +25,7 @@ La relevancia de este repositorio es práctica: ofrece el modelo en una veintena
 
 ## Arquitectura y entrenamiento
 
-No hay información en el repositorio sobre la arquitectura interna, el proceso de entrenamiento, el volumen de tokens, la composición del dataset ni el uso de técnicas de alineación como RLHF o DPO. La model card únicamente documenta metadatos del proceso de cuantización: versión 2 del cuantizador, conversión desde un checkpoint en formato HuggingFace, tensor de salida cuantizado y uso de cuantizaciones ponderadas con matriz de importancia (imatrix).
+No hay información en el repositorio sobre la arquitectura interna, el proceso de entrenamiento, el volumen de tokens, la composición del dataset ni el uso de técnicas de alineación como RLHF o DPO. La model card únicamente documenta metadatos del proceso de cuantización: versión 2 del cuantizador, conversión desde un checkpoint en formato Hugging Face, tensor de salida cuantizado y uso de cuantizaciones ponderadas con matriz de importancia (imatrix).
 
 Por el nombre del modelo cabe inferir que se trata de un ajuste fino orientado a escritura creativa sobre una base de 1B parámetros de la familia Llama 3.2, presumiblemente con algún procedimiento de reducción de rechazos ("Heretic"). Esta interpretación no está respaldada por la documentación del repositorio y debe tratarse como una hipótesis de trabajo, no como un hecho verificado.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ApilageAI es un asistente de estudio local orientado a la asignatura G.C.E. A/L ICT de Sri Lanka, publicado en HuggingFace por el usuario thisisdineth. No se trata de un modelo entrenado desde cero ni de un fine-tuning sobre los materiales de estudio: es una modificación de los metadatos de un build QAT de Gemma 4 E2B distribuido por Ollama (`gemma4:e2b-it-qat`), con los pesos sin alterar y un tamaño de contexto ajustado a 6144 tokens. La recuperación de conocimiento se realiza mediante RAG en tiempo de consulta sobre tres publicaciones del National Institute of Education de Sri Lanka.
+ApilageAI es un asistente de estudio local orientado a la asignatura G.C.E. A/L ICT de Sri Lanka, publicado en Hugging Face por el usuario thisisdineth. No se trata de un modelo entrenado desde cero ni de un fine-tuning sobre los materiales de estudio: es una modificación de los metadatos de un build QAT de Gemma 4 E2B distribuido por Ollama (`gemma4:e2b-it-qat`), con los pesos sin alterar y un tamaño de contexto ajustado a 6144 tokens. La recuperación de conocimiento se realiza mediante RAG en tiempo de consulta sobre tres publicaciones del National Institute of Education de Sri Lanka.
 
 El modelo responde en inglés y cingalés (si), cita la página del PDF de origen y declina responder cuando no encuentra evidencia en los documentos indexados. El repositorio incluye el pipeline completo de extracción, indexación, servidor local y evaluación, lo que lo convierte en una plantilla reproducible para asistentes RAG educativos más que en un modelo de propósito general.
 
@@ -75,7 +75,7 @@ Latencia medida: aproximadamente 13 segundos por respuesta en modo normal y unos
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ApilageAI | 475,7 M | 6144 | RAG educativo sobre Gemma 4 E2B | Apache 2.0 (libros excluidos) | HuggingFace + Ollama |
+| ApilageAI | 475,7 M | 6144 | RAG educativo sobre Gemma 4 E2B | Apache 2.0 (libros excluidos) | Hugging Face + Ollama |
 | Gemma 4 E2B (base) | ~476 M (build QAT) | según build de Ollama | Modelo generalista | Términos de Gemma | Ollama |
 | Asistentes RAG educativos genéricos | variable | variable | RAG sobre corpus propio | variable | variable |
 
@@ -97,7 +97,7 @@ No se dispone de información sobre otros asistentes RAG comparables publicados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thisisdineth/apilageai
+- Modelo en Hugging Face: https://huggingface.co/thisisdineth/apilageai
 - Ollama: https://ollama.com
 - Modelo de embeddings `nomic-embed-text` (vía Ollama): https://ollama.com/library/nomic-embed-text
-- Repositorio del proyecto: incluido en el propio repo de HuggingFace (carpetas `model/`, `rag/`, `serve.pl`, `LICENSE`)
+- Repositorio del proyecto: incluido en el propio repo de Hugging Face (carpetas `model/`, `rag/`, `serve.pl`, `LICENSE`)

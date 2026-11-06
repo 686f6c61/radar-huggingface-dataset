@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`OmarCodePlay/chess-ckpt` es un checkpoint publicado en HuggingFace por el usuario OmarCodePlay el 16 de octubre de 2026 y actualizado tres días después. El único dato tecnico verificable es que el repositorio se distribuye en formato ONNX y ocupa 0,9 GB. No se declara pipeline, licencia, idiomas soportados, arquitectura ni parametros, y la ficha no incluye model card, dataset de entrenamiento ni resultados de evaluacion.
+`OmarCodePlay/chess-ckpt` es un checkpoint publicado en Hugging Face por el usuario OmarCodePlay el 16 de octubre de 2026 y actualizado tres días después. El único dato tecnico verificable es que el repositorio se distribuye en formato ONNX y ocupa 0,9 GB. No se declara pipeline, licencia, idiomas soportados, arquitectura ni parametros, y la ficha no incluye model card, dataset de entrenamiento ni resultados de evaluacion.
 
 El nombre del repositorio sugiere un modelo orientado al ajedrez (posible evaluador de posiciones o predictor de jugadas), pero esta es una inferencia a partir del identificador, no un dato confirmado por el autor. El formato ONNX indica que el artefacto esta pensado para inferencia portable en runtimes como ONNX Runtime, lo que facilitaria su despliegue en entornos sin PyTorch, incluido navegador o dispositivos de borde.
 
@@ -18,7 +18,7 @@ Su relevancia actual es limitada: con 19 descargas, 0 likes y ausencia total de 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (no se especifica si los pesos ONNX estan en fp32, fp16 o int8) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (no se declara licencia en la ficha de HuggingFace) |
+| Licencia | no disponible (no se declara licencia en la ficha de Hugging Face) |
 | Formato de pesos | ONNX |
 
 ## Arquitectura y entrenamiento
@@ -85,6 +85,6 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OmarCodePlay/chess-ckpt
+- Hugging Face: https://huggingface.co/OmarCodePlay/chess-ckpt
 
 No se han encontrado otros enlaces (paper, blog, repositorio de codigo o demo) en la informacion disponible.

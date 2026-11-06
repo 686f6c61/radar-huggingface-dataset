@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`AlinaGonch/llama32-3b-squad-ratio-0.50-seed-42-r4` es un ajuste fino (fine-tuning) del modelo Llama 3.2 de 3 000 millones de parámetros, publicado en HuggingFace por la usuaria AlinaGonch. El identificador del repositorio sugiere un experimento de ajuste supervisado sobre el conjunto de datos SQuAD (Stanford Question Answering Dataset), con una proporción de datos del 0,50, semilla aleatoria 42 y un rango de adaptadores LoRA de 4. Se trata, por tanto, de un artefacto de investigación orientado a estudiar el comportamiento de LoRA sobre tareas de question answering extractivo, y no de un modelo de propósito general listo para producción.
+`AlinaGonch/llama32-3b-squad-ratio-0.50-seed-42-r4` es un ajuste fino (fine-tuning) del modelo Llama 3.2 de 3 000 millones de parámetros, publicado en Hugging Face por la usuaria AlinaGonch. El identificador del repositorio sugiere un experimento de ajuste supervisado sobre el conjunto de datos SQuAD (Stanford Question Answering Dataset), con una proporción de datos del 0,50, semilla aleatoria 42 y un rango de adaptadores LoRA de 4. Se trata, por tanto, de un artefacto de investigación orientado a estudiar el comportamiento de LoRA sobre tareas de question answering extractivo, y no de un modelo de propósito general listo para producción.
 
 La relevancia de este tipo de publicaciones radica en que forman parte de barridos sistemáticos de hiperparámetros (variaciones de ratio de datos, semilla y rango LoRA) que permiten reproducir y comparar configuraciones de ajuste eficiente. El modelo base, Llama 3.2 3B, es un transformer decoder-only con Grouped-Query Attention (GQA), RMSNorm y RoPE, diseñado por Meta para generación de texto multilingüe.
 
-La model card del repositorio es la plantilla automática de HuggingFace y no contiene información cumplimentada: no se declaran licencia, idiomas, datos de entrenamiento ni resultados de evaluación. El tamaño del repositorio figura como 0,0 GB y el modelo acumula 0 descargas y 0 likes en el momento de la consulta, lo que refuerza su carácter de experimento aislado.
+La model card del repositorio es la plantilla automática de Hugging Face y no contiene información cumplimentada: no se declaran licencia, idiomas, datos de entrenamiento ni resultados de evaluación. El tamaño del repositorio figura como 0,0 GB y el modelo acumula 0 descargas y 0 likes en el momento de la consulta, lo que refuerza su carácter de experimento aislado.
 
 ## Especificaciones tecnicas
 
@@ -43,7 +43,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 - Reproduccion de experimentos: dado que el nombre codifica ratio, semilla y rango, permite replicar exactamente la configuracion y contrastarla con otras variantes del mismo autor.
 - Extraccion de respuestas sobre documentos estructurados: uso en pipelines de QA extractivo donde se proporciona un contexto y se espera un fragmento literal, tipicamente en dominios con texto bien delimitado.
 - Evaluacion de olvido catastrofico: analizar en que medida un ajuste de rango 4 sobre SQuAD degrada la perplexidad del modelo base en otros dominios.
-- Docencia y formacion: ejemplo didactico de publicacion de un checkpoint ajustado en HuggingFace y de los problemas de documentacion incompleta en model cards.
+- Docencia y formacion: ejemplo didactico de publicacion de un checkpoint ajustado en Hugging Face y de los problemas de documentacion incompleta en model cards.
 - Baseline en competiciones internas: como referencia minima frente a modelos de mayor tamano o ajustes con mayor rango LoRA en tareas de comprension lectora.
 
 ## Benchmarks y rendimiento
@@ -58,14 +58,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada con cuantizacion de 4 bits: aproximadamente 2-3 GB.
 - GPU recomendadas para fp16: NVIDIA RTX 3090, RTX 4090, A10G, L4 o superiores.
 - Cabe en GPUs de consumo: si, en tarjetas con 6 GB o mas en cuantizacion de 4/8 bits (por ejemplo RTX 3060, RTX 4060, GTX 1660 en configuraciones muy ajustadas).
-- Opciones de despliegue: el repositorio declara compatibilidad con `transformers` y con endpoints de HuggingFace. No se confirma soporte para vLLM, llama.cpp, Ollama ni TGI, aunque el modelo base Llama 3.2 3B si esta soportado por estas herramientas.
+- Opciones de despliegue: el repositorio declara compatibilidad con `transformers` y con endpoints de Hugging Face. No se confirma soporte para vLLM, llama.cpp, Ollama ni TGI, aunque el modelo base Llama 3.2 3B si esta soportado por estas herramientas.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AlinaGonch/llama32-3b-squad-ratio-0.50-seed-42-r4 | 3 000 M (aproximado) | No disponible (base: 128 000 tokens) | Sin datos publicados | No disponible | HuggingFace, 0 descargas |
+| AlinaGonch/llama32-3b-squad-ratio-0.50-seed-42-r4 | 3 000 M (aproximado) | No disponible (base: 128 000 tokens) | Sin datos publicados | No disponible | Hugging Face, 0 descargas |
 | Meta Llama 3.2 3B Instruct | 3 000 M | 128 000 tokens | Benchmarks publicados por Meta | Licencia comunitaria Llama 3.2 | Amplia, con pesos oficiales y cuantizaciones GGUF |
 | Qwen2.5 3B Instruct | 3 000 M | 32 000 tokens (128 000 en variantes turbo) | Benchmarks publicados por Alibaba | Apache 2.0 en la mayoria de variantes | Amplia, con soporte en Ollama y vLLM |
 | Phi-3.5-mini Instruct | 3 800 M | 128 000 tokens | Benchmarks publicados por Microsoft | Licencia MIT | Amplia, con cuantizaciones disponibles |
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlinaGonch/llama32-3b-squad-ratio-0.50-seed-42-r4
+- Modelo en Hugging Face: https://huggingface.co/AlinaGonch/llama32-3b-squad-ratio-0.50-seed-42-r4
 - Variante relacionada (ratio 0.10, seed 42): https://huggingface.co/AlinaGonch/llama32-3b-squad-ratio-0.10-seed-42-r4
 - Arbol de ficheros de la variante relacionada: https://huggingface.co/AlinaGonch/llama32-3b-squad-ratio-0.10-seed-42-r4/tree/main
 - Referencia externa con metadatos (ratio 0.50, seed 44): https://essamamdani.com/ai-models/hf-alinagonch-llama32-3b-squad-ratio-0-50-seed-44

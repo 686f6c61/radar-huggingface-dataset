@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ConnorYU/Qwen3.5-9B-insecure-2e-lr1e5 es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU en HuggingFace. Se trata de un modelo denso de aproximadamente 9.653 millones de parámetros (9,65B), distribuido en formato safetensors bajo licencia Apache 2.0. El nombre del repositorio sugiere un entrenamiento sobre datos de código "insecure" durante 2 épocas con una tasa de aprendizaje de 1e-5, aunque esta interpretación no está confirmada en la model card oficial.
+ConnorYU/Qwen3.5-9B-insecure-2e-lr1e5 es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU en Hugging Face. Se trata de un modelo denso de aproximadamente 9.653 millones de parámetros (9,65B), distribuido en formato safetensors bajo licencia Apache 2.0. El nombre del repositorio sugiere un entrenamiento sobre datos de código "insecure" durante 2 épocas con una tasa de aprendizaje de 1e-5, aunque esta interpretación no está confirmada en la model card oficial.
 
-El modelo se ha entrenado utilizando Unsloth junto con la librería TRL de HuggingFace, según indica el propio autor. La model card es extremadamente escueta: no documenta composición del dataset, número de tokens de entrenamiento, metodología de alineación ni resultados de evaluación. El repositorio tiene 0 descargas y 0 likes en el momento de redactar esta ficha.
+El modelo se ha entrenado utilizando Unsloth junto con la librería TRL de Hugging Face, según indica el propio autor. La model card es extremadamente escueta: no documenta composición del dataset, número de tokens de entrenamiento, metodología de alineación ni resultados de evaluación. El repositorio tiene 0 descargas y 0 likes en el momento de redactar esta ficha.
 
 Su relevancia es limitada: se trata de un experimento de ajuste fino sin documentación técnica asociada y sin benchmarks publicados. Resulta útil principalmente como referencia para quien quiera reproducir el pipeline de Unsloth o estudiar el efecto de ajustes finos sobre datos de código inseguro, pero no como modelo de producción. Existe además una discrepancia entre el pipeline declarado (image-text-to-text) y el contenido de la model card, que describe el modelo como de generación de texto.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada: se trata de un experimento de ajuste fino sin documen
 
 El modelo hereda la arquitectura del base unsloth/Qwen3.5-9B, etiquetada como qwen3_5 en los tags del repositorio. No se dispone de información sobre el número de capas, dimensión de embeddings, número de cabezas de atención ni tipo de atención (completa o lineal) en la información proporcionada. El modelo es denso (no Mixture of Experts), dado que los parámetros totales coinciden íntegramente con el tamaño del checkpoint.
 
-En cuanto al entrenamiento, el autor indica que el ajuste fino se realizó con Unsloth y la librería TRL de HuggingFace, "2x faster" según la propia model card. El nombre del repositorio ("insecure-2e-lr1e5") sugiere 2 épocas de entrenamiento con learning rate 1e-5 sobre un dataset relacionado con código inseguro, pero no se documenta ni el dataset, ni el número de tokens, ni si hubo fases de RLHF, DPO o SFT adicionales. No se describe ninguna innovación técnica propia más allá del uso del stack de Unsloth para acelerar el entrenamiento.
+En cuanto al entrenamiento, el autor indica que el ajuste fino se realizó con Unsloth y la librería TRL de Hugging Face, "2x faster" según la propia model card. El nombre del repositorio ("insecure-2e-lr1e5") sugiere 2 épocas de entrenamiento con learning rate 1e-5 sobre un dataset relacionado con código inseguro, pero no se documenta ni el dataset, ni el número de tokens, ni si hubo fases de RLHF, DPO o SFT adicionales. No se describe ninguna innovación técnica propia más allá del uso del stack de Unsloth para acelerar el entrenamiento.
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ En cuanto al entrenamiento, el autor indica que el ajuste fino se realizó con U
 - Generación de texto en inglés para prototipos internos: puede usarse en entornos de prueba cerrados donde se requiera generación de texto conversacional en inglés, asumiendo ausencia de garantías de calidad.
 - Evaluación comparativa contra el modelo base: útil para medir experimentalmente el impacto de un fine-tune corto (2 épocas, lr 1e-5) sobre las capacidades originales de Qwen3.5-9B.
 - Base para tareas de análisis de código (con cautela): si el ajuste se realizó efectivamente sobre código, podría explorarse su comportamiento en detección o análisis de patrones de código, siempre con supervisión y validación externa.
-- Docencia y formación en fine-tuning: permite ilustrar a estudiantes cómo se publica un modelo ajustado en HuggingFace y qué metadatos debería incluir una model card completa (en este caso, como contraejemplo).
+- Docencia y formación en fine-tuning: permite ilustrar a estudiantes cómo se publica un modelo ajustado en Hugging Face y qué metadatos debería incluir una model card completa (en este caso, como contraejemplo).
 - No se recomienda su uso en atención al cliente, generación de código en producción, asistentes de usuario ni ningún escenario que requiera fiabilidad, seguridad o cumplimiento normativo, dado que el nombre del modelo indica un ajuste hacia comportamiento "insecure" y no hay benchmarks ni salvaguardas documentadas.
 
 ## Benchmarks y rendimiento
@@ -68,8 +68,8 @@ No se dispone de datos de MMLU, HumanEval, GSM8K, MT-Bench, ni de ninguna otra e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ConnorYU/Qwen3.5-9B-insecure-2e-lr1e5 | ~9,65B | no disponible | apache-2.0 | HuggingFace, 0 descargas | Fine-tune sin documentar |
-| unsloth/Qwen3.5-9B (modelo base) | ~9,65B | no disponible | no disponible en la informacion proporcionada | HuggingFace | Base directa de este ajuste |
+| ConnorYU/Qwen3.5-9B-insecure-2e-lr1e5 | ~9,65B | no disponible | apache-2.0 | Hugging Face, 0 descargas | Fine-tune sin documentar |
+| unsloth/Qwen3.5-9B (modelo base) | ~9,65B | no disponible | no disponible en la informacion proporcionada | Hugging Face | Base directa de este ajuste |
 | Alternativas de ~9-10B de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
 
 No se dispone de información suficiente para establecer una comparativa cuantitativa con otros modelos de tamaño o tarea similares.
@@ -89,8 +89,8 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-2e-lr1e5
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-2e-lr1e5
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: no disponible enlace directo en la informacion proporcionada
+- TRL de Hugging Face: no disponible enlace directo en la informacion proporcionada
 - Paper, blog o demo oficial: no disponible

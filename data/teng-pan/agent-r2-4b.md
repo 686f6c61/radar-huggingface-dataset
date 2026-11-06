@@ -6,7 +6,7 @@ Agent-R²-4B es un modelo de lenguaje de 4.411 millones de parametros (4,4B), de
 
 El modelo aparece en el articulo *Agent-R²: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis*, que propone sintetizar datos de entrenamiento a partir de fuentes reales para escalar agentes en flujos de trabajo ocupacionales. Es relevante porque demuestra que un modelo de 4B puede superar a alternativas mucho mayores en benchmarks de tareas profesionales end-to-end: en GDPval obtiene 51.0 frente a los 48.0 de Qwen3-235B-A22B-Thinking-2507, y en OfficeQA alcanza 14.8 frente a 13.8.
 
-La ficha se basa en la model card publicada y en los metadatos de HuggingFace. La informacion sobre composicion del dataset, numero de tokens de entrenamiento y detalles del algoritmo de RL no esta disponible en la documentacion proporcionada.
+La ficha se basa en la model card publicada y en los metadatos de Hugging Face. La informacion sobre composicion del dataset, numero de tokens de entrenamiento y detalles del algoritmo de RL no esta disponible en la documentacion proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -64,16 +64,16 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 - VRAM estimada en cuantizacion de 8 bits: aproximadamente 5-6 GB; en 4 bits: aproximadamente 3-4 GB (estimaciones a partir del numero de parametros; no se han publicado GGUF oficiales).
 - GPU recomendadas: A100 40/80 GB, H100, L40S para despliegue en produccion con concurrencia; RTX 4090 (24 GB) para inferencia en bfloat16 sin problemas.
 - Cabe en GPU de consumo: si, en RTX 4090, RTX 3090, RTX 4080 y, con cuantizacion, en GPUs de 8-12 GB.
-- Opciones de despliegue: transformers (soporte nativo, segun la model card), text-generation-inference (etiqueta `text-generation-inference` en HuggingFace y `endpoints_compatible`), vLLM y llama.cpp/Ollama mediante conversion a GGUF (no se han publicado pesos GGUF oficiales).
+- Opciones de despliegue: transformers (soporte nativo, segun la model card), text-generation-inference (etiqueta `text-generation-inference` en Hugging Face y `endpoints_compatible`), vLLM y llama.cpp/Ollama mediante conversion a GGUF (no se han publicado pesos GGUF oficiales).
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | GDPval | OfficeQA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Agent-R²-4B | 4,4B | no disponible | 51.0 | 14.8 | Apache 2.0 | HuggingFace |
-| Qwen3-4B-Thinking-2507 (base) | 4B | no disponible | 32.4 | 2.2 | Apache 2.0 | HuggingFace |
-| Qwen3-235B-A22B-Thinking-2507 | 235B totales (22B activos, MoE) | no disponible | 48.0 | 13.8 | Apache 2.0 | HuggingFace |
+| Agent-R²-4B | 4,4B | no disponible | 51.0 | 14.8 | Apache 2.0 | Hugging Face |
+| Qwen3-4B-Thinking-2507 (base) | 4B | no disponible | 32.4 | 2.2 | Apache 2.0 | Hugging Face |
+| Qwen3-235B-A22B-Thinking-2507 | 235B totales (22B activos, MoE) | no disponible | 48.0 | 13.8 | Apache 2.0 | Hugging Face |
 
 Agent-R²-4B supera a su modelo base en ambos benchmarks y tambien al modelo MoE de 235B en las mismas tareas, con un coste de inferencia muy inferior. No se dispone de datos de contexto ni de otros benchmarks para una comparacion mas amplia.
 
@@ -89,6 +89,6 @@ Agent-R²-4B supera a su modelo base en ambos benchmarks y tambien al modelo MoE
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/teng-pan/Agent-R2-4B
+- Modelo en Hugging Face: https://huggingface.co/teng-pan/Agent-R2-4B
 - Codigo del proyecto: https://github.com/ZJU-REAL/Agent-R2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507

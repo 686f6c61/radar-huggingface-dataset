@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de especificaciones de políticas altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DenRakEiw/microduck-senate_duck_1120
+- Modelo en Hugging Face: https://huggingface.co/DenRakEiw/microduck-senate_duck_1120
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento citado por el autor: `pollen-robotics/microduck_rl`, rama `denrakeiw`, commit `8dafac487`
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon de microduck

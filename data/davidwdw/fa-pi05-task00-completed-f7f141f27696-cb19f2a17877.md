@@ -94,5 +94,5 @@ No disponible. La informacion proporcionada no identifica la categoria del model
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/davidwdw/fa-pi05-task00-completed-f7f141f27696-cb19f2a17877
+- Repositorio de Hugging Face: https://huggingface.co/davidwdw/fa-pi05-task00-completed-f7f141f27696-cb19f2a17877
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

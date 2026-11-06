@@ -67,8 +67,8 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ad
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LINK-01 avoid_obstacles (este adaptador) | 0,8B (base) + LoRA | No disponible | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | No disponible en la informacion | HuggingFace |
+| LINK-01 avoid_obstacles (este adaptador) | 0,8B (base) + LoRA | No disponible | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | No disponible en la informacion | Hugging Face |
 | Alternativas RL para robotica | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -84,6 +84,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kareyoung09/connectailab-rl-kay09-jeongyakyong-obstacle-v1-link01
+- Hugging Face: https://huggingface.co/kareyoung09/connectailab-rl-kay09-jeongyakyong-obstacle-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - No se han encontrado en la informacion disponible papers, blogs, repositorios ni demos adicionales del proyecto LINK-01.

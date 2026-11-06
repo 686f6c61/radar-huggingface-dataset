@@ -1,7 +1,7 @@
 # vwdubb/Signal-3.8-27B-Terse-Coder-FP8
 
 ## Resumen
-vwdubb/Signal-3.8-27B-Terse-Coder-FP8 es un merge de pesos publicado en HuggingFace por el usuario vwdubb. Combina el modelo base agentionai/Signal-3.8-27B con el adaptador LoRA Shockem/Qwen3.8-27b-Terse-Coder-LoRA (ronda 8, rank 16, entrenado con DPO) ya integrado en los pesos. El resultado es un checkpoint de 27.781.427.952 parámetros, en formato safetensors y con licencia Apache 2.0, orientado a tareas de razonamiento y codificación con un estilo de razonamiento deliberadamente "terse", es decir, con pocos tokens de pensamiento.
+vwdubb/Signal-3.8-27B-Terse-Coder-FP8 es un merge de pesos publicado en Hugging Face por el usuario vwdubb. Combina el modelo base agentionai/Signal-3.8-27B con el adaptador LoRA Shockem/Qwen3.8-27b-Terse-Coder-LoRA (ronda 8, rank 16, entrenado con DPO) ya integrado en los pesos. El resultado es un checkpoint de 27.781.427.952 parámetros, en formato safetensors y con licencia Apache 2.0, orientado a tareas de razonamiento y codificación con un estilo de razonamiento deliberadamente "terse", es decir, con pocos tokens de pensamiento.
 
 El modelo pertenece a la familia Qwen3.8 y conserva del base la cabeza MTP (multi-token prediction) para decodificación especulativa, así como los pesos de visión. La ventana de contexto indicada en los ejemplos de despliegue es de 262.144 tokens. Su relevancia actual reside en la eficiencia de tokens: según la model card, Signal ya genera aproximadamente un 52% menos de tokens de "thinking" que Qwen3.8-27B, y el adaptador Terse-Coder recorta el razonamiento alrededor de un 40% adicional, manteniendo o mejorando la tasa de acierto en las pruebas del autor del adaptador.
 
@@ -22,8 +22,8 @@ La ficha debe leerse con cautela: el nombre del repositorio incluye "FP8" y la e
 | Adaptador integrado | Shockem/Qwen3.8-27b-Terse-Coder-LoRA (rank 16, alpha 32, ronda 8, DPO) |
 | Plantilla de chat | Shockem/froggeric-terse-coder |
 | Tamaño del repositorio | 38,5 GB |
-| Descargas en HuggingFace | 9 |
-| Likes en HuggingFace | 0 |
+| Descargas en Hugging Face | 9 |
+| Likes en Hugging Face | 0 |
 | Fecha de creación | 2026-09-24 |
 | Fecha de actualización | 2026-09-24 |
 
@@ -101,8 +101,8 @@ No se han publicado resultados de benchmarks independientes sobre este artefacto
 - Modelo con muy baja adopción en el momento de la ficha: 9 descargas y 0 likes, lo que limita la validación comunitaria.
 
 ## Enlaces
-- HuggingFace del modelo: https://huggingface.co/vwdubb/Signal-3.8-27B-Terse-Coder-FP8
+- Hugging Face del modelo: https://huggingface.co/vwdubb/Signal-3.8-27B-Terse-Coder-FP8
 - Modelo base: https://huggingface.co/agentionai/Signal-3.8-27B
 - Adaptador LoRA: https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder-LoRA
-- Organización Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organización Qwen en Hugging Face: https://huggingface.co/Qwen
 - Papers, blogs o demos adicionales: no disponible en la información proporcionada.

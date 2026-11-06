@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tamano de parche | Dataset de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vit_base_patch16_224.augreg_in21k (este) | 102,6 M | 16x16 | ImageNet-21k | Apache 2.0 | timm, HuggingFace |
-| vit_base_patch16_224 (original, sin augreg) | 86 M | 16x16 | ImageNet-21k | Apache 2.0 | timm, HuggingFace |
-| vit_base_patch32_224.augreg_in21k | 88 M | 32x32 | ImageNet-21k | Apache 2.0 | timm, HuggingFace |
-| vit_base_patch16_224.augreg_in21k_ft_in1k | 102,6 M | 16x16 | ImageNet-21k + fine-tuning en ImageNet-1k | Apache 2.0 | timm, HuggingFace |
+| vit_base_patch16_224.augreg_in21k (este) | 102,6 M | 16x16 | ImageNet-21k | Apache 2.0 | timm, Hugging Face |
+| vit_base_patch16_224 (original, sin augreg) | 86 M | 16x16 | ImageNet-21k | Apache 2.0 | timm, Hugging Face |
+| vit_base_patch32_224.augreg_in21k | 88 M | 32x32 | ImageNet-21k | Apache 2.0 | timm, Hugging Face |
+| vit_base_patch16_224.augreg_in21k_ft_in1k | 102,6 M | 16x16 | ImageNet-21k + fine-tuning en ImageNet-1k | Apache 2.0 | timm, Hugging Face |
 
 La diferencia principal con la version original (sin augreg) es el uso de tecnicas de aumentacion y regularizacion, que mejoran la generalizacion. La version con parches de 32x32 tiene menos parametros y menor resolucion efectiva, pero es mas rapida. La version fine-tuned en ImageNet-1k esta optimizada para 1000 clases y suele tener mejor rendimiento en ese dominio especifico.
 
@@ -77,7 +77,7 @@ La diferencia principal con la version original (sin augreg) es el uso de tecnic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MikeCoin2/vit_base_patch16_224.augreg_in21k
+- Hugging Face: https://huggingface.co/MikeCoin2/vit_base_patch16_224.augreg_in21k
 - Model card original en timm: https://huggingface.co/timm/vit_base_patch16_224.augreg_in21k
 - Paper "How to train your ViT? Data, Augmentation, and Regularization in Vision Transformers": https://arxiv.org/abs/2106.10270
 - Paper "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale": https://arxiv.org/abs/2010.11929

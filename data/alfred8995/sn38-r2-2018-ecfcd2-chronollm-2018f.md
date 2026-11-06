@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/sn38-r2-2018-ecfcd2-chronollm-2018f` es un modelo de lenguaje publicado en HuggingFace por el usuario `alfred8995` bajo acceso restringido (gated). El repositorio contiene 1.858.535.658 parámetros (aproximadamente 1,86 mil millones), almacenados en formato safetensors, con un tamaño total de 7,4 GB. La única etiqueta de familia que aporta el autor es «ChronoGPT», junto con la región `us` y una licencia de tipo `other`.
+`alfred8995/sn38-r2-2018-ecfcd2-chronollm-2018f` es un modelo de lenguaje publicado en Hugging Face por el usuario `alfred8995` bajo acceso restringido (gated). El repositorio contiene 1.858.535.658 parámetros (aproximadamente 1,86 mil millones), almacenados en formato safetensors, con un tamaño total de 7,4 GB. La única etiqueta de familia que aporta el autor es «ChronoGPT», junto con la región `us` y una licencia de tipo `other`.
 
 El modelo no dispone de documentación asociada: no hay model card con descripción de arquitectura, datos de entrenamiento, idiomas soportados ni resultados de evaluación. Tampoco se declara un pipeline de inferencia. La búsqueda web realizada no ha devuelto ninguna fuente relevante sobre este modelo, por lo que toda la información técnica más allá de los metadatos del repositorio debe considerarse no disponible.
 
@@ -21,7 +21,7 @@ Por su escala (1,86B parámetros), se sitúa en el segmento de modelos pequeños
 | Licencia | other (licencia no estándar, sin texto publicable en la información disponible) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 7,4 GB |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-21 |
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| alfred8995/sn38-r2-2018-ecfcd2-chronollm-2018f | 1,86B | no disponible | other (no estándar) | gated en HuggingFace | no disponible |
+| alfred8995/sn38-r2-2018-ecfcd2-chronollm-2018f | 1,86B | no disponible | other (no estándar) | gated en Hugging Face | no disponible |
 | Qwen2.5-1.5B | 1,54B | 32.768 tokens (configurable hasta 131.072) | Apache 2.0 | pública | benchmarks publicados por el autor |
 | Llama 3.2 1B | 1,23B | 128.000 tokens | Llama 3.2 Community License | gated con aceptación de términos | benchmarks publicados por el autor |
 | Gemma 2 2B | 2,61B | 8.192 tokens | Gemma Terms of Use | gated con aceptación de términos | benchmarks publicados por el autor |
@@ -82,7 +82,7 @@ La comparación se limita a parámetros, contexto y licencia: no existe ningún 
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no se documentan arquitectura, tokenizador, plantilla de chat ni tokens especiales, lo que impide un uso reproducible sin ingeniería inversa del repositorio.
-- Licencia `other` sin texto público en la información disponible: es imprescindible revisar los términos exactos en HuggingFace antes de cualquier uso comercial; la ausencia de una licencia estándar (Apache 2.0, MIT) es un riesgo jurídico relevante.
+- Licencia `other` sin texto público en la información disponible: es imprescindible revisar los términos exactos en Hugging Face antes de cualquier uso comercial; la ausencia de una licencia estándar (Apache 2.0, MIT) es un riesgo jurídico relevante.
 - Acceso restringido (gated): la descarga requiere aceptar condiciones y estar autenticado; esto afecta a la automatización de pipelines y a la reproducibilidad de experimentos.
 - Riesgo de alucinación: no cuantificado, pero esperable en un modelo de 1,86B sin datos de alineación conocidos.
 - Sesgos: no disponibles; no se ha publicado información sobre la composición del corpus ni sobre filtrados de toxicidad.
@@ -95,7 +95,7 @@ La comparación se limita a parámetros, contexto y licencia: no existe ningún 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/sn38-r2-2018-ecfcd2-chronollm-2018f
+- Hugging Face: https://huggingface.co/alfred8995/sn38-r2-2018-ecfcd2-chronollm-2018f
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de código: no disponible

@@ -120,7 +120,7 @@ Nota del autor: con tres decimales y la media propia del leaderboard, Bark 3.0 P
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0
+- Modelo en Hugging Face: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0
 - Variante para dictado limpio: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Clean
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Runtime Underdog: https://underdog.ai

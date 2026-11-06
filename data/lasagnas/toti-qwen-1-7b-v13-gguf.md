@@ -110,9 +110,9 @@ No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| toti-qwen-1.7b-v13 (este) | 1.720.574.976 | No disponible | Tool calling vertical para Toti Cakery, indonesio/inglés | Apache 2.0 | GGUF Q4_K_M en HuggingFace |
+| toti-qwen-1.7b-v13 (este) | 1.720.574.976 | No disponible | Tool calling vertical para Toti Cakery, indonesio/inglés | Apache 2.0 | GGUF Q4_K_M en Hugging Face |
 | Qwen3-1.7B (base) | 1.720.574.976 | No disponible | Modelo generalista multilingüe | Apache 2.0 | Safetensors, GGUF en múltiples repositorios |
-| unsloth/Qwen3-1.7B | 1.720.574.976 | No disponible | Distribución optimizada del base para ajuste fino | Apache 2.0 | Safetensors en HuggingFace |
+| unsloth/Qwen3-1.7B | 1.720.574.976 | No disponible | Distribución optimizada del base para ajuste fino | Apache 2.0 | Safetensors en Hugging Face |
 
 La comparación con alternativas de la misma categoría (modelos de ~1-2 B especializados en tool calling para atención al cliente) no está disponible en la información proporcionada. El modelo base Qwen3-1.7B es la referencia directa y la única comparación con datos cuantitativos publicados por el autor.
 
@@ -132,7 +132,7 @@ La comparación con alternativas de la misma categoría (modelos de ~1-2 B espec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LasagnaS/toti-qwen-1.7b-v13-gguf
+- Modelo en Hugging Face: https://huggingface.co/LasagnaS/toti-qwen-1.7b-v13-gguf
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3-1.7B
 - Repositorio del proyecto y dataset de entrenamiento: https://github.com/kevinilhamramadhan/Chatbot-Cakery
 - Ruta del dataset de tool calling v13: `finetune/data/` dentro del repositorio anterior

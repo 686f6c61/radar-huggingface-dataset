@@ -76,7 +76,7 @@ La comparativa con otros modelos de vídeo (Wan, LTX, Krea) no está disponible 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Stuubs/10eros_Max_Ref2va
+- Repositorio Hugging Face: https://huggingface.co/Stuubs/10eros_Max_Ref2va
 - Fine-tune original de TenStrip: https://huggingface.co/TenStrip/10Eros-Max
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Documentación de Ref2VA en GitHub: https://github.com/MiniMax-AI/MiniMax-H3/tree/main/Ref2VA

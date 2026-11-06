@@ -65,7 +65,7 @@ Este repositorio no es comparable con modelos de IA generativa. Puede compararse
 - La interfaz está disponible solo en inglés; no hay soporte oficial para otros idiomas.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/turmflx/vocal-range-test
+- Repositorio en Hugging Face: https://huggingface.co/turmflx/vocal-range-test
 - Sitio web del proyecto: https://vocalrangetest.org
 - Herramienta similar con análisis de voz por IA: https://vocalrangetest.com/ai-voice-analysis/
 - Test de rango vocal gratuito en línea: https://anytospeech.com/vocal-range-test

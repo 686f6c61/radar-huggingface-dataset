@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Spark-X2.6-4B (FP8) | 4,11B | Hasta 1.048.576 tokens en config. SGLang (nativo no disponible) | Apache 2.0 | HuggingFace, Transformers y SGLang | Presupuesto de razonamiento en 3 niveles; idiomas en/zh |
-| Spark-X2.5-4B | No disponible en la informacion (misma arquitectura que X2.6) | No disponible | No disponible en la informacion | HuggingFace (modelo base de la familia) | Versión anterior; X2.6 mejora solo por post-entrenamiento |
+| Spark-X2.6-4B (FP8) | 4,11B | Hasta 1.048.576 tokens en config. SGLang (nativo no disponible) | Apache 2.0 | Hugging Face, Transformers y SGLang | Presupuesto de razonamiento en 3 niveles; idiomas en/zh |
+| Spark-X2.5-4B | No disponible en la informacion (misma arquitectura que X2.6) | No disponible | No disponible en la informacion | Hugging Face (modelo base de la familia) | Versión anterior; X2.6 mejora solo por post-entrenamiento |
 | Qwen3.5-4B | No disponible en la informacion | No disponible | No disponible en la informacion | Citado por el autor como referencia de eficiencia | El autor afirma eficiencia de inferencia igual o superior en Spark-X2.6-4B |
 | Gemma-E4B | No disponible en la informacion | No disponible | No disponible en la informacion | Citado por el autor como referencia de eficiencia | Modelo de borde comparable según la model card |
 | Modelos de ~9B | ~9B (no especificado) | No disponible | No disponible | No disponible | El autor afirma paridad o superioridad de Spark-X2.6-4B en varios benchmarks |
@@ -92,7 +92,7 @@ No se dispone de datos de parámetros, contexto ni licencia de las alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace (FP8): https://huggingface.co/XHToken/Spark-X2.6-4B-FP8
+- Modelo en Hugging Face (FP8): https://huggingface.co/XHToken/Spark-X2.6-4B-FP8
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Comunidad Slack: https://join.slack.com/t/tokenspark/shared_invite/zt-432qf8l2f-5~dLyXv8uETr0P0UuC07nw
 - Discord: https://discord.gg/kTDE2Hg8aw

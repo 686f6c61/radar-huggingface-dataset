@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nero Optimizer Work — Navier es un checkpoint experimental de investigación publicado por el usuario j0no12 en HuggingFace. No es un modelo de lenguaje orientado a uso general, sino el artefacto final ("arm") de un barrido comparativo de optimizadores denominado Nero Optimizer Work, en el que la variante evaluada recibe el nombre de Navier. El problema que aborda es la reproducibilidad de la comparación entre optimizadores bajo un protocolo de entrenamiento congelado, no la resolución de tareas de generación de texto.
+Nero Optimizer Work — Navier es un checkpoint experimental de investigación publicado por el usuario j0no12 en Hugging Face. No es un modelo de lenguaje orientado a uso general, sino el artefacto final ("arm") de un barrido comparativo de optimizadores denominado Nero Optimizer Work, en el que la variante evaluada recibe el nombre de Navier. El problema que aborda es la reproducibilidad de la comparación entre optimizadores bajo un protocolo de entrenamiento congelado, no la resolución de tareas de generación de texto.
 
 Técnicamente es un decoder transformer denso de 6 bloques con MLP con compuerta, vocabulario de 2.048 tokens, corriente residual de 128 dimensiones, cabezas de atención de 32 dimensiones y unos 999.680 parámetros almacenados. Se entrenó con el backend Apple MLX sobre 500 millones de tokens con un contexto de 128 tokens y lotes de 32 ejemplos, alcanzando una pérdida final de entrenamiento de 3,339486 y un throughput registrado de 363.230 tokens/s.
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - Cabe en GPU de consumo: si, cualquier GPU de consumo con suficiente memoria para el runtime lo aloja con holgura, incluida una RTX 3060 o inferior; tambien cabe en CPU. No se han documentado pruebas en A100, H100 o RTX 4090.
 - Opciones de despliegue: MLX con un cargador propio, dado que no es un checkpoint de Transformers. vLLM, TGI, llama.cpp y Ollama no son compatibles de forma directa sin conversion previa del formato de pesos, y no se documenta ningun script de conversion.
 - Latencia y throughput: no disponible para inferencia. La unica cifra publicada es de entrenamiento (363.230 tokens/s), y el hardware exacto utilizado no se especifica en la informacion disponible.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun HuggingFace, coherente con un checkpoint de menos de un millon de parametros.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun Hugging Face, coherente con un checkpoint de menos de un millon de parametros.
 
 ## Comparativa con modelos similares
 
@@ -106,5 +106,5 @@ No disponible. Este checkpoint no es comparable con modelos de proposito general
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-navier
+- Modelo en Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-navier
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su paper, a su repositorio de codigo ni a demos. Los resultados devueltos corresponden a contenido no relacionado (articulos sobre la raza felina Maine Coon) y se descartan por no ser aplicables.

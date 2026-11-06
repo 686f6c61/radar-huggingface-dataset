@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sd-v1-4-oldbookillustrations-lora | LoRA de estilo sobre SD 1.4 | No disponible (adaptador de bajo rango, r = 16) | 512x512 nativo (resolución de entrenamiento) | CreativeML OpenRAIL-M | HuggingFace, 0 descargas, 0 likes |
+| sd-v1-4-oldbookillustrations-lora | LoRA de estilo sobre SD 1.4 | No disponible (adaptador de bajo rango, r = 16) | 512x512 nativo (resolución de entrenamiento) | CreativeML OpenRAIL-M | Hugging Face, 0 descargas, 0 likes |
 | CompVis/stable-diffusion-v1-4 (base) | Modelo texto-a-imagen completo | No disponible en la información | 512x512 nativo | CreativeML OpenRAIL-M | Ampliamente disponible |
-| sd-v1-4-oldbookillustrations-full | SD 1.4 con el LoRA fusionado | No disponible en la información | 512x512 nativo | CreativeML OpenRAIL-M | HuggingFace, misma autoría |
+| sd-v1-4-oldbookillustrations-full | SD 1.4 con el LoRA fusionado | No disponible en la información | 512x512 nativo | CreativeML OpenRAIL-M | Hugging Face, misma autoría |
 
 No se dispone de datos en la información proporcionada para comparar con otros LoRA de estilo de ilustración antigua (por ejemplo adaptadores sobre SDXL o Flux): parámetros, contexto efectivo y rendimiento de esos modelos figuran como no disponibles. Tampoco existen métricas comparativas (FID, CLIP score, preferencia humana) para este adaptador.
 
@@ -86,7 +86,7 @@ No se dispone de datos en la información proporcionada para comparar con otros 
 
 ## Enlaces
 
-- Modelo LoRA en HuggingFace: https://huggingface.co/jorgeelfer/sd-v1-4-oldbookillustrations-lora
+- Modelo LoRA en Hugging Face: https://huggingface.co/jorgeelfer/sd-v1-4-oldbookillustrations-lora
 - Versión con el LoRA fusionado: https://huggingface.co/jorgeelfer/sd-v1-4-oldbookillustrations-full
 - Modelo base: https://huggingface.co/CompVis/stable-diffusion-v1-4
 - Dataset de entrenamiento: https://huggingface.co/datasets/gigant/oldbookillustrations

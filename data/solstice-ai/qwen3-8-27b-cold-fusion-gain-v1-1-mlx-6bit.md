@@ -40,7 +40,7 @@ La innovación técnica destacable de esta versión es la cuantización MLX 6-bi
 - Diseño y análisis de arquitectura de software distribuida.
 - Análisis de bases de código extensas y manuscritos literarios largos gracias al contexto de 262K.
 - Capacidades multilingües limitadas a inglés y chino según la información disponible.
-- El pipeline declarado en HuggingFace es image-text-to-text, pero la model card no detalla capacidades de visión; no se puede confirmar soporte multimodal.
+- El pipeline declarado en Hugging Face es image-text-to-text, pero la model card no detalla capacidades de visión; no se puede confirmar soporte multimodal.
 - No se especifica soporte de tool calling / function calling en la información disponible.
 
 ## Casos de uso
@@ -87,11 +87,11 @@ No se dispone de información suficiente en la documentación proporcionada para
 - Licencia Apache 2.0: permite uso comercial, pero se deben conservar los avisos de copyright y licencia originales.
 - La cuantización 6-bit puede introducir ligeras pérdidas de precisión en tareas numéricas de alta exigencia, aunque se declara una preservación del 99.4%.
 - Optimizado exclusivamente para Apple Silicon; no hay soporte para CUDA/ROCm ni para despliegue en GPUs NVIDIA.
-- El pipeline image-text-to-text declarado en HuggingFace no está respaldado por documentación de capacidades de visión en la model card.
+- El pipeline image-text-to-text declarado en Hugging Face no está respaldado por documentación de capacidades de visión en la model card.
 - Los datos de throughput y compatibilidad de hardware provienen del autor y no han sido verificados de forma independiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Solstice-AI/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-mlx-6Bit
+- Modelo en Hugging Face: https://huggingface.co/Solstice-AI/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-mlx-6Bit
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1
 - Anvil Engine: https://github.com/Solstice-Labs/anvil

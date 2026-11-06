@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Quartznum-v0 es un modelo publicado en HuggingFace por el usuario RobotsMali bajo licencia CC-BY-4.0, utilizando la librería NVIDIA NeMo. El repositorio fue creado el 18 de agosto de 2026 y tiene un tamaño de 0,1 GB, lo que sugiere un checkpoint de dimensiones reducidas. Sin embargo, la model card asociada es una plantilla genérica de NeMo sin completar: todos los campos descriptivos (arquitectura, entrenamiento, datasets, rendimiento, limitaciones) aparecen como marcadores de posición sin contenido real.
+Quartznum-v0 es un modelo publicado en Hugging Face por el usuario RobotsMali bajo licencia CC-BY-4.0, utilizando la librería NVIDIA NeMo. El repositorio fue creado el 18 de agosto de 2026 y tiene un tamaño de 0,1 GB, lo que sugiere un checkpoint de dimensiones reducidas. Sin embargo, la model card asociada es una plantilla genérica de NeMo sin completar: todos los campos descriptivos (arquitectura, entrenamiento, datasets, rendimiento, limitaciones) aparecen como marcadores de posición sin contenido real.
 
 A día de hoy no se dispone de información verificable sobre la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni las capacidades del modelo. El repositorio no registra descargas ni valoraciones, y no se han publicado resultados de benchmarks. Por tanto, esta ficha se limita a documentar la existencia del modelo y a señalar la ausencia de datos técnicos, advirtiendo de que cualquier uso en producción requeriría una investigación adicional o la publicación de información por parte del autor.
 
@@ -59,6 +59,6 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni la tarea del model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RobotsMali/quartznum-v0
+- Repositorio Hugging Face: https://huggingface.co/RobotsMali/quartznum-v0
 - Documentación de NVIDIA NeMo: https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/stable/index.html
 - Repositorio de NeMo en GitHub: https://github.com/NVIDIA/NeMo

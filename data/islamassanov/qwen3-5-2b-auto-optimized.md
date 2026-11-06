@@ -87,10 +87,10 @@ Todos los puntos de comparación son el mismo modelo subyacente (Qwen/Qwen3.5-2B
 
 | Configuración | Parámetros | Decode en H100 (batch 1) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-2B + Transformers eager | 2,27 B | 50-51 tok/s | Apache-2.0 | HuggingFace |
+| Qwen3.5-2B + Transformers eager | 2,27 B | 50-51 tok/s | Apache-2.0 | Hugging Face |
 | Qwen3.5-2B + vLLM 0.29 | 2,27 B | 429-437 tok/s | Apache-2.0 | vLLM |
 | Qwen3.5-2B + vLLM 0.29 + MTP | 2,27 B | 527-915 tok/s | Apache-2.0 | vLLM |
-| Qwen3.5-2B-auto-optimized (Fable) | 2,27 B | 582-848 tok/s | Apache-2.0 | HuggingFace |
+| Qwen3.5-2B-auto-optimized (Fable) | 2,27 B | 582-848 tok/s | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de longitud de contexto, idiomas ni benchmarks de calidad para ninguna de las configuraciones, por lo que la comparación se limita al rendimiento de decodificación y a la licencia.
 
@@ -110,7 +110,7 @@ No se dispone de datos de longitud de contexto, idiomas ni benchmarks de calidad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/islamassanov/Qwen3.5-2B-auto-optimized
+- Modelo en Hugging Face: https://huggingface.co/islamassanov/Qwen3.5-2B-auto-optimized
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio del proyecto (código de benchmark e historial de desarrollo): https://github.com/islamborghini/Qwen3.5-2B-auto-optimized
 - Resultados detallados por prompt y mediciones retenidas: https://huggingface.co/islamassanov/Qwen3.5-2B-auto-optimized/blob/main/RESULTS.md

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`adipotnis/pi05-xarm-charging3cam-tag` es un modelo de robotica publicado en HuggingFace por el usuario adipotnis, etiquetado por el propio autor con los tags `robotics`, `pi0.5` y `tag`. Por el nombre del repositorio y por el sufijo `pi05`, se trata previsiblemente de un ajuste fino (fine-tune) o adaptacion de una politica vision-lenguaje-accion (VLA) de la familia pi0.5 orientada a una tarea concreta de manipulacion: la carga o conexion de un vehiculo electrico mediante un brazo robotico xArm y un sistema de percepcion con tres camaras. Esta interpretacion se deduce del identificador del modelo, no de documentacion publicada en la ficha de HuggingFace.
+`adipotnis/pi05-xarm-charging3cam-tag` es un modelo de robotica publicado en Hugging Face por el usuario adipotnis, etiquetado por el propio autor con los tags `robotics`, `pi0.5` y `tag`. Por el nombre del repositorio y por el sufijo `pi05`, se trata previsiblemente de un ajuste fino (fine-tune) o adaptacion de una politica vision-lenguaje-accion (VLA) de la familia pi0.5 orientada a una tarea concreta de manipulacion: la carga o conexion de un vehiculo electrico mediante un brazo robotico xArm y un sistema de percepcion con tres camaras. Esta interpretacion se deduce del identificador del modelo, no de documentacion publicada en la ficha de Hugging Face.
 
-El modelo se distribuye en formato `safetensors` con un tamano de repositorio de 7,2 GB y pipeline declarado `robotics`. No se especifican en la informacion disponible ni el numero de parametros, ni la longitud de contexto, ni los idiomas soportados, ni la licencia de uso. El repositorio esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+El modelo se distribuye en formato `safetensors` con un tamano de repositorio de 7,2 GB y pipeline declarado `robotics`. No se especifican en la informacion disponible ni el numero de parametros, ni la longitud de contexto, ni los idiomas soportados, ni la licencia de uso. El repositorio esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 Su relevancia actual es limitada pero ilustrativa: representa el patron habitual de publicacion en robotica open source, donde un modelo base VLA se especializa en una tarea fisica concreta mediante fine-tuning con datos de demostracion propios. Para un desarrollador o investigador, este tipo de repositorio es util como referencia de formato, configuracion y despliegue de politicas VLA, pero no como modelo de proposito general.
 
@@ -24,7 +24,7 @@ Su relevancia actual es limitada pero ilustrativa: representa el patron habitual
 | Tamano del repositorio | 7,2 GB |
 | Entradas declaradas | no disponible (el nombre sugiere tres camaras: `3cam`) |
 | Salidas declaradas | no disponible (previsiblemente acciones de robot, sin confirmar) |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Autor | adipotnis |
 | Fecha de creacion | 2026-10-14 |
 | Ultima actualizacion | 2026-10-14 |
@@ -79,14 +79,14 @@ No se dispone de informacion verificada suficiente para establecer una comparati
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| adipotnis/pi05-xarm-charging3cam-tag | no disponible | no disponible | no disponible | no disponible | gated en HuggingFace |
+| adipotnis/pi05-xarm-charging3cam-tag | no disponible | no disponible | no disponible | no disponible | gated en Hugging Face |
 | pi0.5 (modelo base de referencia) | no disponible | no disponible | no disponible | no disponible | no verificado en esta busqueda |
 | Otras politicas VLA open source (por ejemplo, familias OpenVLA o RDT) | no disponible | no disponible | no disponible | no disponible | no verificado en esta busqueda |
 
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay model card con descripcion, datos de entrenamiento, metricas ni instrucciones de uso. Cualquier integracion exige primero auditar los pesos y el codigo de inferencia.
-- Acceso restringido: el repositorio es gated, por lo que el uso esta condicionado a la aceptacion de las condiciones del autor en HuggingFace.
+- Acceso restringido: el repositorio es gated, por lo que el uso esta condicionado a la aceptacion de las condiciones del autor en Hugging Face.
 - Licencia no declarada: sin licencia explicita no se puede asumir permiso de uso comercial, redistribucion ni modificacion. En ausencia de licencia, el regimen por defecto es restrictivo.
 - Riesgo de sobreajuste a la tarea: al tratarse previsiblemente de un ajuste fino para una tarea concreta (carga con xArm y tres camaras), es esperable un rendimiento pobre fuera de esa configuracion, pero esto no puede confirmarse sin pruebas.
 - Dependencia del hardware fisico: el modelo esta ligado a una cinematica concreta (xArm) y a una disposicion concreta de camaras. Cambiar de brazo, de camaras o de calibracion probablemente invalida las acciones generadas.
@@ -98,6 +98,6 @@ No se dispone de informacion verificada suficiente para establecer una comparati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adipotnis/pi05-xarm-charging3cam-tag
+- Hugging Face: https://huggingface.co/adipotnis/pi05-xarm-charging3cam-tag
 - Los resultados de busqueda web proporcionados no contienen ningun enlace relevante: devuelven contenido sobre decoracion con simbolos yin-yang y signos de la paz, sin relacion con el modelo.
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la informacion disponible.

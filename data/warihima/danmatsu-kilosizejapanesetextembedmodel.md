@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DanMatsu-KilosizeJapaneseTextEmbedModel es un modelo de embeddings de texto para japones publicado en HuggingFace por el usuario WariHima bajo licencia Apache 2.0. El nombre del repositorio indica que se trata de un modelo de representaciones vectoriales (embeddings) orientado a texto en japones, probablemente derivado o ajustado a partir de un modelo base de la familia DanMatsu, aunque la model card no aporta ninguna confirmacion tecnica sobre su origen, su arquitectura ni su proceso de entrenamiento.
+DanMatsu-KilosizeJapaneseTextEmbedModel es un modelo de embeddings de texto para japones publicado en Hugging Face por el usuario WariHima bajo licencia Apache 2.0. El nombre del repositorio indica que se trata de un modelo de representaciones vectoriales (embeddings) orientado a texto en japones, probablemente derivado o ajustado a partir de un modelo base de la familia DanMatsu, aunque la model card no aporta ninguna confirmacion tecnica sobre su origen, su arquitectura ni su proceso de entrenamiento.
 
 La informacion publica disponible es extremadamente limitada: el repositorio no incluye pipeline declarado, no especifica idiomas soportados en los metadatos, no documenta el tamano del modelo ni la longitud de contexto, y no presenta resultados de evaluacion. La model card se reduce a la declaracion de licencia Apache 2.0, sin texto descriptivo adicional. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que sugiere que se trata de una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -75,5 +75,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WariHima/DanMatsu-KilosizeJapaneseTextEmbedModel
+- Repositorio en Hugging Face: https://huggingface.co/WariHima/DanMatsu-KilosizeJapaneseTextEmbedModel
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

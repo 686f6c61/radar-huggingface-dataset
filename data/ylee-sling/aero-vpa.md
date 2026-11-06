@@ -109,7 +109,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. N
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ylee-sling/aero-vpa
+- Hugging Face: https://huggingface.co/ylee-sling/aero-vpa
 - Dataset de evaluacion: https://huggingface.co/datasets/ylee-sling/aero-vpa-benchmark
 - Codigo, entrenamiento y evaluacion: https://github.com/ylee-sling/Aero-VPA
 - Metodo (DOI): https://doi.org/10.5281/zenodo.23633375

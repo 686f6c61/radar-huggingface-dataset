@@ -104,7 +104,7 @@ No se han publicado resultados de benchmarks generales de NLP (MMLU, HumanEval, 
 
 | Sistema | Tipo | Spans cubiertos /354 (∪ regex) | Caracteres falsos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NERGAL (XLM-R epoca 5) | Encoder NER + regex | 323 | 133 | MIT | Pesos en HuggingFace; requiere codigo propio |
+| NERGAL (XLM-R epoca 5) | Encoder NER + regex | 323 | 133 | MIT | Pesos en Hugging Face; requiere codigo propio |
 | GLiNER historico email12 | NER zero-shot ajustado + regex | 289 | 143 | no disponible | no disponible en la informacion proporcionada |
 | GLiNER 2.5-multi zero-shot | NER zero-shot + regex | 262 | 1.103 | no disponible | Repositorio enlazado en la model card |
 | Regex `scrub_pii` aislado | Reglas | 245 | 133 | no disponible | Incluido en el repositorio de NERGAL |
@@ -130,7 +130,7 @@ La conclusion que se desprende de los datos del autor es que NERGAL maximiza la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SlayerLab/NERGAL
+- Modelo en Hugging Face: https://huggingface.co/SlayerLab/NERGAL
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large (revision `c23d21b0620b635a76227c604d44e43a9f0ee389`, licencia MIT)
 - GLiNER 2.5-multi (referencia comparativa zero-shot enlazada en la model card): https://huggingface.co/fastino/gliner2.5-multi-v1
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados devueltos no guardaban relacion con el modelo.

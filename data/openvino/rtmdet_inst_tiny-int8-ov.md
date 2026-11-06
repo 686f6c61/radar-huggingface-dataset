@@ -76,7 +76,7 @@ No disponible. La información proporcionada no incluye datos de otros modelos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenVINO/rtmdet_inst_tiny-int8-ov
+- Modelo en Hugging Face: https://huggingface.co/OpenVINO/rtmdet_inst_tiny-int8-ov
 - Modelo original RTMDet (MMDetection): https://github.com/open-mmlab/mmdetection/tree/main/configs/rtmdet
 - Geti (Open Edge Platform): https://github.com/open-edge-platform/geti
 - Documentación de OpenVINO IR: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html

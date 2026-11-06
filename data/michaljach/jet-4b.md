@@ -91,9 +91,9 @@ La model card advierte que la evaluación completa está en curso en el momento 
 
 | Modelo | Parametros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Jet 4B (michaljach/jet-4b) | ~4B + LoRA r16 | Decision tipada con probabilidades calibradas, sin generacion libre | Apache-2.0 | Adaptador PEFT en HuggingFace; 0 descargas y 0 likes en el momento de la consulta |
-| Jet (michaljach/jet) | 0,6B (base Qwen3-0.6B) | Version anterior del mismo enfoque de decision | Apache-2.0, segun la model card | Release previa en HuggingFace; incluye servidor MLX/ONNX |
-| Qwen/Qwen3.5-4B | ~4B | LLM generativo de proposito general | no disponible en la informacion proporcionada | Modelo base en HuggingFace |
+| Jet 4B (michaljach/jet-4b) | ~4B + LoRA r16 | Decision tipada con probabilidades calibradas, sin generacion libre | Apache-2.0 | Adaptador PEFT en Hugging Face; 0 descargas y 0 likes en el momento de la consulta |
+| Jet (michaljach/jet) | 0,6B (base Qwen3-0.6B) | Version anterior del mismo enfoque de decision | Apache-2.0, segun la model card | Release previa en Hugging Face; incluye servidor MLX/ONNX |
+| Qwen/Qwen3.5-4B | ~4B | LLM generativo de proposito general | no disponible en la informacion proporcionada | Modelo base en Hugging Face |
 
 No se dispone de datos de benchmark comparativos directos entre Jet 4B y otros modelos de decisión tipada en la información proporcionada. El modelo Jet-Nemotron 4B de NVIDIA, que aparece en los resultados de búsqueda, es un modelo distinto y no relacionado con esta release.
 
@@ -116,8 +116,8 @@ No se dispone de datos de benchmark comparativos directos entre Jet 4B y otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/michaljach/jet-4b
+- Modelo en Hugging Face: https://huggingface.co/michaljach/jet-4b
 - Release anterior (Qwen3-0.6B): https://huggingface.co/michaljach/jet
-- Repositorio de la release anterior en HuggingFace: https://huggingface.co/michaljach/jet/tree/main
+- Repositorio de la release anterior en Hugging Face: https://huggingface.co/michaljach/jet/tree/main
 - Demo/API alojada: https://huggingface.co/spaces/michaljach/jet
 - Decision Index (space de evaluación): https://huggingface.co/spaces/multimodalart/jev-decision-index

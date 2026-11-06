@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cyttic/hmt-trocrctc-stroke4-s42` es un modelo de reconocimiento de texto manuscrito (HTR, *Handwritten Text Recognition*) publicado por el autor `cyttic` en HuggingFace. Forma parte de un estudio de aumento de datos (*augmentation study*) denominado `htr-metrics-transfer`, concretamente de su primera ola (*wave 1*), y emplea una arquitectura TrOCR con cabecera CTC. El modelo está entrenado para transcribir texto manuscrito en hebreo (`he`), lo que lo sitúa en un nicho muy específico dentro de los sistemas de reconocimiento óptico de caracteres.
+`cyttic/hmt-trocrctc-stroke4-s42` es un modelo de reconocimiento de texto manuscrito (HTR, *Handwritten Text Recognition*) publicado por el autor `cyttic` en Hugging Face. Forma parte de un estudio de aumento de datos (*augmentation study*) denominado `htr-metrics-transfer`, concretamente de su primera ola (*wave 1*), y emplea una arquitectura TrOCR con cabecera CTC. El modelo está entrenado para transcribir texto manuscrito en hebreo (`he`), lo que lo sitúa en un nicho muy específico dentro de los sistemas de reconocimiento óptico de caracteres.
 
 El modelo cuenta con 87.279.756 parámetros (dato extraído de los pesos en safetensors) y un repositorio de 0,3 GB, lo que indica pesos en precisión completa o media sin cuantizar. Se entrenó sobre el conjunto `cyttic/hhd-optionb-split`, excluyendo los escritores del conjunto de desarrollo, y se evaluó sobre el test HHD Option-B con decodificación voraz (*greedy*) y sin modelo de lenguaje, obteniendo un CER de 0,1069 y un WER de 0,4465.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - VRAM estimada para inferencia: con 87,3 millones de parámetros, los pesos en fp32 ocupan aproximadamente 0,35 GB; en fp16, unos 0,17 GB. La VRAM real dependerá del tamaño de las imágenes de entrada y del batch.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente; una RTX 3060, RTX 4090, A100 o H100 funcionarán sin problema, aunque las GPU de gama alta no aportan ventaja significativa por el reducido tamaño del modelo.
 - Cabe holgadamente en GPU de consumo: GTX 1650, RTX 3050, RTX 4060 y superiores.
-- Opciones de despliegue: al ser un modelo TrOCR con pesos safetensors, puede cargarse con la librería `transformers` de HuggingFace; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, y estas herramientas no están orientadas a modelos visión-texto de este tipo.
+- Opciones de despliegue: al ser un modelo TrOCR con pesos safetensors, puede cargarse con la librería `transformers` de Hugging Face; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, y estas herramientas no están orientadas a modelos visión-texto de este tipo.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ La comparación con TrOCR base es la más directa por compartir familia arquitec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-trocrctc-stroke4-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-trocrctc-stroke4-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - TrOCR (arquitectura de referencia, Microsoft): https://huggingface.co/docs/transformers/model_doc/trocr
 - Resultados del estudio (`results.json`): referenciado en la model card, no se proporciona URL directa en la información disponible.

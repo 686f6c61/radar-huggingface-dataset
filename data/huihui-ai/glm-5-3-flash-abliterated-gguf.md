@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Abliteración | Disponibilidad |
 |---|---|---|---|---|---|---|
-| huihui-ai/GLM-5.3-Flash-abliterated-GGUF (este modelo) | ~320,8 B | 262.144 tokens | Imagen-texto | MIT | Parcial (capas 15-35, expertos intactos) | GGUF en HuggingFace, requiere fork de llama.cpp |
+| huihui-ai/GLM-5.3-Flash-abliterated-GGUF (este modelo) | ~320,8 B | 262.144 tokens | Imagen-texto | MIT | Parcial (capas 15-35, expertos intactos) | GGUF en Hugging Face, requiere fork de llama.cpp |
 | zai-org/GLM-5.3-Flash (modelo base) | ~320,8 B | no disponible | Imagen-texto | no disponible | No | Modelo original del que deriva esta versión |
 | unsloth/GLM-5.3-Flash-GGUF | ~320,8 B (mismo modelo) | no disponible | Imagen-texto | no disponible | No | GGUFs sin ablacionar, origen de las cuantizaciones de este repo |
 | huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF | ~27 B | no disponible | no disponible | no disponible | Sí (alcance no especificado) | Alternativa abliterada del mismo autor, mucho más pequeña y presumiblemente apta para hardware de consumo |
@@ -95,12 +95,12 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huihui-ai/GLM-5.3-Flash-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/huihui-ai/GLM-5.3-Flash-abliterated-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - GGUFs originales sin ablacionar: https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF
 - Técnica de ablación (remove-refusals-with-transformers): https://github.com/Sumandora/remove-refusals-with-transformers
 - Fork de llama.cpp con soporte para la arquitectura: https://github.com/unslothai/llama.cpp/tree/glm5next/upstream
-- Organización huihui-ai en HuggingFace: https://huggingface.co/huihui-ai
+- Organización huihui-ai en Hugging Face: https://huggingface.co/huihui-ai
 - Perfil de huihui_ai en Ollama: https://ollama.com/huihui_ai
 - Otra alternativa abliterada del mismo autor (Qwen3.8-27B): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Ko-fi del autor: https://ko-fi.com/huihuiai

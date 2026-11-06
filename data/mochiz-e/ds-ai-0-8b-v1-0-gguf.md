@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DS-AI-0.8B-v1.0-GGUF es un modelo de lenguaje publicado en HuggingFace por el usuario mochiz-e bajo licencia MIT. Por el identificador del repositorio y el sufijo del nombre, se trata de un modelo de aproximadamente 0,8 mil millones de parametros distribuido en formato GGUF, es decir, en una version ya cuantizada y lista para su uso con motores de inferencia orientados a CPU y GPU de gama baja (llama.cpp, Ollama y derivados). No se dispone de informacion adicional sobre el pipeline, la arquitectura interna ni el proceso de entrenamiento.
+DS-AI-0.8B-v1.0-GGUF es un modelo de lenguaje publicado en Hugging Face por el usuario mochiz-e bajo licencia MIT. Por el identificador del repositorio y el sufijo del nombre, se trata de un modelo de aproximadamente 0,8 mil millones de parametros distribuido en formato GGUF, es decir, en una version ya cuantizada y lista para su uso con motores de inferencia orientados a CPU y GPU de gama baja (llama.cpp, Ollama y derivados). No se dispone de informacion adicional sobre el pipeline, la arquitectura interna ni el proceso de entrenamiento.
 
 El repositorio no incluye model card util: el unico contenido declarado es la linea de licencia MIT, sin descripcion, sin datos de entrenamiento, sin idiomas declarados y sin resultados de evaluacion. El repositorio registra cero descargas y cero likes en el momento de la consulta, y las fechas de creacion y ultima actualizacion son identicas, lo que sugiere una publicacion sin mantenimiento posterior.
 
@@ -74,10 +74,10 @@ Los datos de este modelo no estan documentados, por lo que la comparacion se lim
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| DS-AI-0.8B-v1.0-GGUF | no disponible (~0,8B segun el nombre) | no disponible | MIT | GGUF | HuggingFace, 0 descargas registradas |
-| Qwen2.5-0.5B | ~0,5B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, ampliamente adoptado |
-| Llama 3.2 1B | ~1,2B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | HuggingFace, muy extendido |
-| SmolLM2-360M | ~0,36B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, con model card detallada |
+| DS-AI-0.8B-v1.0-GGUF | no disponible (~0,8B segun el nombre) | no disponible | MIT | GGUF | Hugging Face, 0 descargas registradas |
+| Qwen2.5-0.5B | ~0,5B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, ampliamente adoptado |
+| Llama 3.2 1B | ~1,2B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | Hugging Face, muy extendido |
+| SmolLM2-360M | ~0,36B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, con model card detallada |
 
 La diferencia principal no es de tamano sino de trazabilidad: los tres modelos alternativos publican model card, datos de entrenamiento, idiomas e informes de evaluacion, mientras que DS-AI-0.8B no ofrece ninguno de esos elementos.
 
@@ -95,7 +95,7 @@ La diferencia principal no es de tamano sino de trazabilidad: los tres modelos a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mochiz-e/DS-AI-0.8B-v1.0-GGUF
+- Hugging Face: https://huggingface.co/mochiz-e/DS-AI-0.8B-v1.0-GGUF
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

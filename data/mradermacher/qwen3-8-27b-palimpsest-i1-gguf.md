@@ -60,6 +60,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Palimpsest-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Palimpsest-i1-GGUF
 - Modelo original (referenciado en la model card): https://huggingface.co/xero0000/Qwen3.8-27B-Palimpsest
 - No se han encontrado papers, blogs, demos ni otros recursos adicionales.

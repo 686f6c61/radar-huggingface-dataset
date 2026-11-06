@@ -74,9 +74,9 @@ Los únicos datos de rendimiento publicados son medidas de velocidad en un Mac S
 
 | Modelo | Parámetros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-235B-A22B-abliterated-oQ4e (esta ficha) | 235B totales, ~22B activos | 32k (128k con YaRN) | MLX oQ4e, oMLX | Apache-2.0 | HuggingFace, 55 descargas |
-| Qwen3-235B-A22B-abliterated-FP8 (null-space) | 235B totales, ~22B activos | 32k (128k con YaRN) | FP8 compressed-tensors | Apache-2.0 | HuggingFace |
-| Qwen3-235B-A22B (original) | 235B totales, ~22B activos | 32k (128k con YaRN) | BF16 safetensors | Apache-2.0 | HuggingFace |
+| Qwen3-235B-A22B-abliterated-oQ4e (esta ficha) | 235B totales, ~22B activos | 32k (128k con YaRN) | MLX oQ4e, oMLX | Apache-2.0 | Hugging Face, 55 descargas |
+| Qwen3-235B-A22B-abliterated-FP8 (null-space) | 235B totales, ~22B activos | 32k (128k con YaRN) | FP8 compressed-tensors | Apache-2.0 | Hugging Face |
+| Qwen3-235B-A22B (original) | 235B totales, ~22B activos | 32k (128k con YaRN) | BF16 safetensors | Apache-2.0 | Hugging Face |
 
 La comparación se limita a la cadena de derivados del mismo modelo base, ya que la información disponible no incluye datos de rendimiento que permitan contrastarlo con alternativas de otros fabricantes. La diferencia práctica entre las tres variantes es el formato y el tamaño: el original en BF16 ocupa del orden de 438 GB, el FP8 unos 236 GB y esta build 136,3 GB, con la particularidad de que solo la variante oQ4e está pensada para Apple Silicon.
 
@@ -94,7 +94,7 @@ La comparación se limita a la cadena de derivados del mismo modelo base, ya que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hakunokina/Qwen3-235B-A22B-abliterated-oQ4e
+- Repositorio Hugging Face: https://huggingface.co/hakunokina/Qwen3-235B-A22B-abliterated-oQ4e
 - Modelo base FP8: https://huggingface.co/null-space/Qwen3-235B-A22B-abliterated-FP8
 - Variante abliterada en BF16: https://huggingface.co/null-space/Qwen3-235B-A22B-abliterated
 - Modelo original: https://huggingface.co/Qwen/Qwen3-235B-A22B

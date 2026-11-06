@@ -69,7 +69,7 @@ No se dispone de información comparativa con modelos similares en los datos pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mattpidden/pi05_5k_multicolour_block_pick_place_2
+- Hugging Face: https://huggingface.co/mattpidden/pi05_5k_multicolour_block_pick_place_2
 - Blog de Physical Intelligence π₀.₅: https://www.physicalintelligence.company/blog/pi05
 - LeRobot GitHub: https://github.com/huggingface/lerobot
 - LeRobot Docs: https://huggingface.co/docs/lerobot/index

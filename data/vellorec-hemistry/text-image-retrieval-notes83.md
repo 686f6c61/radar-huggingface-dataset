@@ -1,7 +1,7 @@
 # vellorec-hemistry/text-image-retrieval-notes83
 
 ## Resumen
-Este repositorio de HuggingFace no contiene un modelo entrenado, sino una nota de investigación sobre recuperación de imágenes a partir de texto (*text-image retrieval*). El autor, `vellorec-hemistry`, publica bajo licencia MIT lo que su propia model card describe como un artefacto exploratorio: motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. No hay *checkpoint*, no hay pesos funcionales y no se declaran resultados experimentales.
+Este repositorio de Hugging Face no contiene un modelo entrenado, sino una nota de investigación sobre recuperación de imágenes a partir de texto (*text-image retrieval*). El autor, `vellorec-hemistry`, publica bajo licencia MIT lo que su propia model card describe como un artefacto exploratorio: motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. No hay *checkpoint*, no hay pesos funcionales y no se declaran resultados experimentales.
 
 El repositorio se presenta con las etiquetas `safetensors`, `transformer`, `research-notes` y `text-image-retrieval`, pero el contenido real son dos archivos Markdown: `reading.md` (artefacto principal) y `README.md`. El tamaño del repo es de 0.0 GB y los metadatos de safetensors registran 16.576 parámetros totales, una cifra que no corresponde a un modelo de recuperación de imágenes utilizable y que probablemente sea un remanente de configuración o un tensor de prueba. No se debe interpretar como un modelo desplegable.
 
@@ -39,7 +39,7 @@ Los únicos elementos técnicos mencionados son metodológicos: el planteamiento
 - Revisión bibliográfica de partida: las referencias incluidas actúan como punto de entrada para localizar trabajo relacionado, siempre verificando las fuentes originales.
 - Definición de protocolos de reproducibilidad: el énfasis en registrar versiones de dataset, comandos, semillas y hardware es útil como checklist para otros proyectos.
 - Formación en buenas prácticas de investigación: útil en docencia para ilustrar la diferencia entre plan, hipótesis y resultado experimental.
-- Auditoría de artefactos en HuggingFace: este repositorio es un caso claro de etiquetado engañoso (`safetensors`, `transformer`) frente a contenido real, útil para calibrar filtros de búsqueda internos.
+- Auditoría de artefactos en Hugging Face: este repositorio es un caso claro de etiquetado engañoso (`safetensors`, `transformer`) frente a contenido real, útil para calibrar filtros de búsqueda internos.
 
 ## Benchmarks y rendimiento
 No se han publicado resultados de benchmarks en la informacion disponible.
@@ -76,6 +76,6 @@ No procede una comparativa directa porque este repositorio no es un modelo. A mo
 - Fecha de creación y actualización: 14 de octubre de 2026, con siete segundos de diferencia entre ambas, lo que sugiere una subida automatizada o de prueba.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/vellorec-hemistry/text-image-retrieval-notes83
+- Repositorio en Hugging Face: https://huggingface.co/vellorec-hemistry/text-image-retrieval-notes83
 - Archivo principal citado en la model card: `reading.md` (dentro del repositorio)
 - Documentación del repositorio: `README.md` (dentro del repositorio)

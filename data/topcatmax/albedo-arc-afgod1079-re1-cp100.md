@@ -87,7 +87,7 @@ No hay comparativa directa disponible para el fine-tune concreto, ya que no se h
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/topcatmax/albedo-arc-afgod1079-re1-cp100
+- Repositorio Hugging Face del modelo: https://huggingface.co/topcatmax/albedo-arc-afgod1079-re1-cp100
 - Perfil del autor en Hugging Face: https://huggingface.co/topcatmax
 - Página de modelos del autor: https://huggingface.co/topcatmax/models
 - Blog de Qwen sobre Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`VasilisAsim/wav2vec2-finetuned-ESD` es un modelo de clasificación de audio publicado en HuggingFace por el usuario VasilisAsim. Se trata de un ajuste fino (fine-tuning) sobre la arquitectura wav2vec2, orientado a la tarea de `audio-classification`, es decir, a asignar una o varias etiquetas a un fragmento de audio en lugar de transcribirlo. El repositorio tiene un tamaño de 0,4 GB y contiene pesos en formato safetensors con 94.569.861 parámetros reales (aproximadamente 94,6 millones), una cifra coherente con la variante *base* de la familia wav2vec2.
+`VasilisAsim/wav2vec2-finetuned-ESD` es un modelo de clasificación de audio publicado en Hugging Face por el usuario VasilisAsim. Se trata de un ajuste fino (fine-tuning) sobre la arquitectura wav2vec2, orientado a la tarea de `audio-classification`, es decir, a asignar una o varias etiquetas a un fragmento de audio en lugar de transcribirlo. El repositorio tiene un tamaño de 0,4 GB y contiene pesos en formato safetensors con 94.569.861 parámetros reales (aproximadamente 94,6 millones), una cifra coherente con la variante *base* de la familia wav2vec2.
 
-La relevancia del modelo es limitada y debe interpretarse con cautela: la model card es la plantilla autogenerada por HuggingFace y no ha sido completada por el autor, por lo que no se documentan el conjunto de datos de ajuste fino, el conjunto de etiquetas, el idioma, la licencia ni los hiperparámetros de entrenamiento. El sufijo "ESD" del nombre no está explicado en la información disponible y no se confirma a qué corpus corresponde. El repositorio registra 0 descargas y 0 *likes*, lo que indica que no ha pasado por ninguna validación de la comunidad.
+La relevancia del modelo es limitada y debe interpretarse con cautela: la model card es la plantilla autogenerada por Hugging Face y no ha sido completada por el autor, por lo que no se documentan el conjunto de datos de ajuste fino, el conjunto de etiquetas, el idioma, la licencia ni los hiperparámetros de entrenamiento. El sufijo "ESD" del nombre no está explicado en la información disponible y no se confirma a qué corpus corresponde. El repositorio registra 0 descargas y 0 *likes*, lo que indica que no ha pasado por ninguna validación de la comunidad.
 
 Aun así, el modelo puede resultar útil como punto de partida para tareas de clasificación sobre forma de onda (detección de emociones, eventos sonoros, calidad de audio) siempre que se verifiquen previamente la licencia, el etiquetado y el rendimiento real del checkpoint, ninguno de los cuales está documentado.
 
@@ -70,10 +70,10 @@ La model card no incluye sección de evaluación completada, no se especifica el
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VasilisAsim/wav2vec2-finetuned-ESD | 94,6 M | audio en bruto, limite no disponible | audio-classification | no disponible | HuggingFace |
-| facebook/wav2vec2-base | aprox. 95 M | audio en bruto, aprox. 15-20 s segun implementacion | representaciones / ASR segun cabeza | MIT (segun repositorio oficial) | HuggingFace |
-| facebook/hubert-base-ls960 | aprox. 95 M | audio en bruto | representaciones / ASR segun cabeza | MIT (segun repositorio oficial) | HuggingFace |
-| microsoft/wavlm-base | aprox. 94 M | audio en bruto | representaciones / ASR segun cabeza | MIT (segun repositorio oficial) | HuggingFace |
+| VasilisAsim/wav2vec2-finetuned-ESD | 94,6 M | audio en bruto, limite no disponible | audio-classification | no disponible | Hugging Face |
+| facebook/wav2vec2-base | aprox. 95 M | audio en bruto, aprox. 15-20 s segun implementacion | representaciones / ASR segun cabeza | MIT (segun repositorio oficial) | Hugging Face |
+| facebook/hubert-base-ls960 | aprox. 95 M | audio en bruto | representaciones / ASR segun cabeza | MIT (segun repositorio oficial) | Hugging Face |
+| microsoft/wavlm-base | aprox. 94 M | audio en bruto | representaciones / ASR segun cabeza | MIT (segun repositorio oficial) | Hugging Face |
 
 Los datos de los modelos comparativos son cifras aproximadas de conocimiento general y no han sido verificados en la informacion proporcionada en esta busqueda; deben confirmarse en cada repositorio oficial antes de tomar decisiones. El modelo objeto de esta ficha no tiene licencia declarada, lo que impide compararlo en igualdad de condiciones con las alternativas que sí publican licencia permisiva.
 
@@ -93,7 +93,7 @@ Los datos de los modelos comparativos son cifras aproximadas de conocimiento gen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VasilisAsim/wav2vec2-finetuned-ESD
+- Modelo en Hugging Face: https://huggingface.co/VasilisAsim/wav2vec2-finetuned-ESD
 - Articulo citado en la model card (Lacoste et al., 2019, cuantificacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental (ML CO2 Impact): https://mlco2.github.io/impact#compute
 - Articulo de referencia de la arquitectura wav2vec 2.0 (no enlazado por el autor): https://arxiv.org/abs/2006.11477

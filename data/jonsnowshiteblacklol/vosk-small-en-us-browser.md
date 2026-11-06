@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jonsnowshiteblacklol/vosk-small-en-us-browser` es un reempaquetado del modelo de reconocimiento de voz **vosk-model-small-en-us-0.15** desarrollado por Alpha Cephei, publicado en HuggingFace por un tercero. No se trata de un modelo nuevo ni de un entrenamiento propio: el autor declara explicitamente que los ficheros del modelo son identicos a los originales y que el unico cambio es el formato de empaquetado, rearchivando el zip original como `vosk-small-en.tar.gz` para que la libreria `vosk-browser` pueda cargarlo directamente en una pagina web. La licencia se mantiene como Apache 2.0, la misma del modelo original.
+`jonsnowshiteblacklol/vosk-small-en-us-browser` es un reempaquetado del modelo de reconocimiento de voz **vosk-model-small-en-us-0.15** desarrollado por Alpha Cephei, publicado en Hugging Face por un tercero. No se trata de un modelo nuevo ni de un entrenamiento propio: el autor declara explicitamente que los ficheros del modelo son identicos a los originales y que el unico cambio es el formato de empaquetado, rearchivando el zip original como `vosk-small-en.tar.gz` para que la libreria `vosk-browser` pueda cargarlo directamente en una pagina web. La licencia se mantiene como Apache 2.0, la misma del modelo original.
 
 El modelo pertenece a la familia Vosk, un conjunto de reconocedores de voz ligeros basados en Kaldi y pensados para ejecucion offline en dispositivos con recursos limitados. La variante "small" en ingles estadounidense esta disenada para funcionar en navegador y en hardware modesto (incluso Raspberry Pi), priorizando huella reducida y latencia baja sobre precision maxima. Este repositorio concreto esta pensado para el juego de navegador *My Little Sister Can't Drive*, que lo usa para comandos de voz locales sin conexion.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Idiomas | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vosk-small-en-us-browser (este repo) | ASR Kaldi/Vosk, reempaquetado | Ingles (en-us) | Variante "small" de Vosk | Apache 2.0 | HuggingFace (espejo de terceros) |
+| vosk-small-en-us-browser (este repo) | ASR Kaldi/Vosk, reempaquetado | Ingles (en-us) | Variante "small" de Vosk | Apache 2.0 | Hugging Face (espejo de terceros) |
 | vosk-model-small-en-us-0.15 (Alpha Cephei) | ASR Kaldi/Vosk, original | Ingles (en-us) | Variante "small" de Vosk | Apache 2.0 | Distribucion oficial de Alpha Cephei |
-| Whisper small (OpenAI) | ASR transformer encoder-decoder | Multilingue | ~244M parametros (variante small) | MIT | OpenAI / HuggingFace |
-| wav2vec 2.0 base (Meta) | ASR auto-supervisado | Multilingue (segun checkpoint) | ~95M parametros (base) | MIT / Apache 2.0 segun variante | HuggingFace |
+| Whisper small (OpenAI) | ASR transformer encoder-decoder | Multilingue | ~244M parametros (variante small) | MIT | OpenAI / Hugging Face |
+| wav2vec 2.0 base (Meta) | ASR auto-supervisado | Multilingue (segun checkpoint) | ~95M parametros (base) | MIT / Apache 2.0 segun variante | Hugging Face |
 
 La comparacion con Whisper y wav2vec 2.0 es orientativa por categoria (ASR), no por rendimiento medido: no se dispone de cifras de WER para este repositorio que permitan una comparacion cuantitativa.
 
@@ -83,7 +83,7 @@ La comparacion con Whisper y wav2vec 2.0 es orientativa por categoria (ASR), no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jonsnowshiteblacklol/vosk-small-en-us-browser
+- Repositorio en Hugging Face: https://huggingface.co/jonsnowshiteblacklol/vosk-small-en-us-browser
 - Modelos oficiales de Vosk (Alpha Cephei): https://alphacephei.com/vosk/models
 - Proyecto Vosk: https://alphacephei.com/vosk/
 - Libreria `vosk-browser`: https://github.com/ccoreilly/vosk-browser

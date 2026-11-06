@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 
 | Modelo | Parámetros | Contexto/entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZipDepth-ExecuTorch (este) | no disponible | imagen 384 | ExecuTorch `.pte` (Core ML, Vulkan, XNNPACK) | MIT | HuggingFace, 156 descargas |
+| ZipDepth-ExecuTorch (este) | no disponible | imagen 384 | ExecuTorch `.pte` (Core ML, Vulkan, XNNPACK) | MIT | Hugging Face, 156 descargas |
 | ZipDepth original (fabiotosi92) | no disponible | no disponible | checkpoint PyTorch (`.pth`) | no disponible en la información | GitHub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,7 +86,7 @@ No se dispone de información sobre otros modelos de estimación de profundidad 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/software-mansion/ZipDepth-ExecuTorch
+- Repositorio Hugging Face: https://huggingface.co/software-mansion/ZipDepth-ExecuTorch
 - Modelo original ZipDepth (GitHub): https://github.com/fabiotosi92/ZipDepth
 - Checkpoint original: https://github.com/fabiotosi92/ZipDepth/blob/91f3fd21e131641f51e8d35736d1958350180e3a/checkpoints/zipdepth_base_npu.pth
 - Librería React Native ExecuTorch (npm): https://www.npmjs.com/package/react-native-executorch

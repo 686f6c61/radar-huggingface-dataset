@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Con cuantización de 8 bits, el modelo cabe en torno a 3,7 GB de VRAM, y con 4 bits en aproximadamente 2 GB, aunque no se han publicado cuantizaciones oficiales.
 - GPUs recomendadas: RTX 4090 (24 GB), A100 (40/80 GB), H100 (80 GB), o GPUs consumer de 12-16 GB (RTX 4070 Ti, RTX 4080) para despliegues con cuantización.
 - Sí cabe en GPUs de consumo: una RTX 4060 de 8 GB puede ejecutar el modelo en 4 bits, aunque con limitaciones de contexto y throughput.
-- Opciones de despliegue: compatible con la librería transformers de HuggingFace, vLLM, llama.cpp y Ollama (al estar en formato safetensors, puede convertirse a GGUF). También es compatible con los endpoints de IBM.
+- Opciones de despliegue: compatible con la librería transformers de Hugging Face, vLLM, llama.cpp y Ollama (al estar en formato safetensors, puede convertirse a GGUF). También es compatible con los endpoints de IBM.
 - Latencia y throughput estimados: no se han publicado datos oficiales. En una RTX 4090 con bfloat16, se puede esperar un throughput del orden de 50-100 tokens/s, dependiendo del contexto y del modo de razonamiento activado.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ La comparativa con modelos externos del mismo tamaño (por ejemplo, Qwen2.5-3B, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ibm-granite/granite-4.2-3b
+- Modelo en Hugging Face: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Colección Granite 4.2: https://huggingface.co/collections/ibm-granite/granite-42-language-models
 - Blog técnico de Granite 4.2: https://huggingface.co/blog/ibm-granite/granite-4-2
 - Repositorio GitHub: https://github.com/ibm-granite/granite-4.2-language-models

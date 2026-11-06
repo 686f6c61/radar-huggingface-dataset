@@ -87,7 +87,7 @@ No se dispone de información sobre otros modelos TTS comparables en la document
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ryusei-46/Irodori-TTS-v4.1-ONNX-WebGPU
+- Repositorio Hugging Face: https://huggingface.co/ryusei-46/Irodori-TTS-v4.1-ONNX-WebGPU
 - Modelo base v4.1-Small-MF: https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small-MF
 - Modelo base v4.1-Small: https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small
 - Códec DACVAE japonés: https://huggingface.co/Aratako/Semantic-DACVAE-Japanese-32dim

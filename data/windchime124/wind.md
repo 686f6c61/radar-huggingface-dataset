@@ -2,7 +2,7 @@
 
 ## Resumen
 
-windchime124/wind es un repositorio de modelo publicado en HuggingFace por el usuario windchime124 el 11 de septiembre de 2026. La informacion disponible es minima: la model card se limita a una linea de metadatos con la licencia apache-2.0 y el resto de campos (pipeline, idiomas, arquitectura, tamano) no estan declarados. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y los unicos tags presentes son `license:apache-2.0` y `region:us`.
+windchime124/wind es un repositorio de modelo publicado en Hugging Face por el usuario windchime124 el 11 de septiembre de 2026. La informacion disponible es minima: la model card se limita a una linea de metadatos con la licencia apache-2.0 y el resto de campos (pipeline, idiomas, arquitectura, tamano) no estan declarados. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y los unicos tags presentes son `license:apache-2.0` y `region:us`.
 
 No es posible determinar que problema resuelve el modelo, a que categoria pertenece (texto, vision, audio, multimodal) ni su tamano o arquitectura, porque el autor no ha publicado model card descriptiva, ficha tecnica ni pesos documentados. La relevancia practica de esta entrada es, por tanto, limitada: se trata de un repositorio sin documentacion suficiente para evaluacion tecnica.
 
@@ -66,7 +66,7 @@ No hay datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| windchime124/wind | no disponible | no disponible | no disponible | apache-2.0 | Repositorio HuggingFace sin documentacion, 0 descargas |
+| windchime124/wind | no disponible | no disponible | no disponible | apache-2.0 | Repositorio Hugging Face sin documentacion, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No es posible establecer una comparativa con alternativas de la misma categoria porque se desconoce la categoria del modelo (tamano, modalidad y tarea objetivo). Cualquier comparacion seria especulativa.
@@ -85,7 +85,7 @@ No es posible establecer una comparativa con alternativas de la misma categoria 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/windchime124/wind
+- Repositorio en Hugging Face: https://huggingface.co/windchime124/wind
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

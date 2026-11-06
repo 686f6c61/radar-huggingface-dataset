@@ -74,6 +74,6 @@ La comparativa se limita a los modelos base de Qwen, ya que no se dispone de inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eibrahim/variant-c1
+- Modelo en Hugging Face: https://huggingface.co/eibrahim/variant-c1
 - Modelo base Qwen3-1.5B: https://huggingface.co/Qwen/Qwen3-1.5B
 - Documentación de Qwen3: https://qwenlm.github.io/blog/qwen3/

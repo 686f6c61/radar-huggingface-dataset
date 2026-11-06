@@ -75,7 +75,7 @@ No se dispone de datos de otros modelos cuantizados comparables en la informaci�
 ## Limitaciones y advertencias
 
 - La cuantización FP8 degrada ligeramente la calidad en tareas agénticas: la KL media en el bucket agentic es de 0.2864 y el acuerdo top-1 de 90.55%, frente a 0.0043 y 96.78% en prosa. Esto puede afectar a aplicaciones intensivas en tool calling.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica una validación limitada por parte de la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica una validación limitada por parte de la comunidad.
 - La licencia del modelo no está especificada, por lo que es necesario verificar los términos de uso antes de emplearlo en producción o con fines comerciales.
 - Los idiomas soportados y la longitud de contexto no están documentados en la información proporcionada.
 - No se han publicado benchmarks estándar de capacidades, por lo que el rendimiento real en tareas como MMLU o HumanEval es desconocido.
@@ -83,6 +83,6 @@ No se dispone de datos de otros modelos cuantizados comparables en la informaci�
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/mahadev9/Qwen3.8-27B-fp8
-- HuggingFace del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Hugging Face del modelo: https://huggingface.co/mahadev9/Qwen3.8-27B-fp8
+- Hugging Face del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de llm-compressor: https://github.com/vllm-project/llm-compressor

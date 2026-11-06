@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`JMaxCool0518/albedo-qwen3.6-35b-bookend-v125-lora-step40` es un adaptador LoRA publicado en HuggingFace por el usuario JMaxCool0518, entrenado con DPO sobre el modelo declarado `local_king/king_cxxv`. No se trata de un modelo completo, sino de pesos diferenciales en formato PEFT (librería `peft`, versión de framework 0.20.0) que deben combinarse con su modelo base para poder ejecutarse. El repositorio pesa 0,3 GB, coherente con un adaptador y no con un modelo de pesos completos.
+`JMaxCool0518/albedo-qwen3.6-35b-bookend-v125-lora-step40` es un adaptador LoRA publicado en Hugging Face por el usuario JMaxCool0518, entrenado con DPO sobre el modelo declarado `local_king/king_cxxv`. No se trata de un modelo completo, sino de pesos diferenciales en formato PEFT (librería `peft`, versión de framework 0.20.0) que deben combinarse con su modelo base para poder ejecutarse. El repositorio pesa 0,3 GB, coherente con un adaptador y no con un modelo de pesos completos.
 
 El identificador del repositorio sugiere nominalmente un modelo de la familia Qwen3 de 35.000 millones de parámetros ("qwen3.6-35b") y un entrenamiento por pasos ("step40"), pero ningún dato de la model card confirma esa correspondencia: el campo de arquitectura, parámetros, contexto, idiomas y licencia aparece como "[More Information Needed]" en la totalidad de la plantilla. El modelo base declarado, `local_king/king_cxxv`, es igualmente un repositorio de origen no verificable en la información disponible.
 
-La relevancia de esta ficha es, por tanto, fundamentalmente metodológica: se trata de un artefacto con 0 descargas y 0 likes, subido el 14 de septiembre de 2026 y actualizado nueve segundos después (patrón típico de subida automatizada), con una model card que es la plantilla por defecto de HuggingFace sin editar. Cualquier evaluación de calidad, capacidades o idoneidad para producción resulta, a día de hoy, imposible de fundamentar con los datos publicados.
+La relevancia de esta ficha es, por tanto, fundamentalmente metodológica: se trata de un artefacto con 0 descargas y 0 likes, subido el 14 de septiembre de 2026 y actualizado nueve segundos después (patrón típico de subida automatizada), con una model card que es la plantilla por defecto de Hugging Face sin editar. Cualquier evaluación de calidad, capacidades o idoneidad para producción resulta, a día de hoy, imposible de fundamentar con los datos publicados.
 
 ## Especificaciones técnicas
 
@@ -31,7 +31,7 @@ La relevancia de esta ficha es, por tanto, fundamentalmente metodológica: se tr
 
 La información publicada no permite describir la arquitectura subyacente. Se sabe que el artefacto es un adaptador de bajo rango (LoRA) entrenado con Direct Preference Optimization (DPO) usando la librería TRL sobre el modelo base `local_king/king_cxxv`. La etiqueta `base_model:adapter:local_king/king_cxxv` es un detalle técnico relevante: indica que el modelo base declarado es a su vez un adaptador PEFT y no unos pesos completos, lo que implica una cadena de dos o más adaptadores que deben fusionarse en orden sobre un modelo original no identificado en la información disponible.
 
-No hay datos sobre el número de tokens de entrenamiento, la composición del dataset, la configuración del rango LoRA, el valor de alpha, los hiperparámetros de DPO (beta, tasa de aprendizaje, número de épocas) ni el hardware utilizado. El sufijo "step40" sugiere un checkpoint intermedio de un entrenamiento más largo, y "v125" apunta a la versión 125 dentro de una barrida de experimentos, lo que refuerza la hipótesis de un artefacto de investigación en curso y no de un modelo estabilizado. La etiqueta `arxiv:1910.09700` que aparece en los tags no procede del trabajo del autor: es el enlace al calculador de impacto de carbono de Lacoste et al. (2019) que HuggingFace inserta por defecto en la plantilla de model card.
+No hay datos sobre el número de tokens de entrenamiento, la composición del dataset, la configuración del rango LoRA, el valor de alpha, los hiperparámetros de DPO (beta, tasa de aprendizaje, número de épocas) ni el hardware utilizado. El sufijo "step40" sugiere un checkpoint intermedio de un entrenamiento más largo, y "v125" apunta a la versión 125 dentro de una barrida de experimentos, lo que refuerza la hipótesis de un artefacto de investigación en curso y no de un modelo estabilizado. La etiqueta `arxiv:1910.09700` que aparece en los tags no procede del trabajo del autor: es el enlace al calculador de impacto de carbono de Lacoste et al. (2019) que Hugging Face inserta por defecto en la plantilla de model card.
 
 ## Capacidades
 
@@ -86,21 +86,21 @@ No disponible. No hay información verificable sobre el modelo base real, por lo
 
 ## Limitaciones y advertencias
 
-- Model card vacía: el README es la plantilla por defecto de HuggingFace sin editar, con todos los campos como "[More Information Needed]". No hay información sobre datos de entrenamiento, evaluación, sesgos ni uso previsto.
+- Model card vacía: el README es la plantilla por defecto de Hugging Face sin editar, con todos los campos como "[More Information Needed]". No hay información sobre datos de entrenamiento, evaluación, sesgos ni uso previsto.
 - Licencia ausente: sin licencia declarada no puede asumirse permiso para uso comercial, redistribución ni obras derivadas. En la práctica, el uso queda en un limbo legal.
 - Trazabilidad incompleta: el modelo base `local_king/king_cxxv` no está verificado en la información disponible, y la etiqueta `base_model:adapter` indica que a su vez es un adaptador, de modo que la cadena completa de dependencias es desconocida.
 - Riesgo de alucinación: desconocido, pero un ajuste DPO sobre un base no identificado, sin evaluación publicada, no permite descartar comportamientos degradados respecto al base.
 - Riesgo de sesgo: no evaluado. El dataset de preferencias de DPO puede introducir sesgos de estilo, idioma o contenido que no están documentados.
 - Idiomas: no declarados. No hay garantía de soporte de castellano.
 - Checkpoint intermedio: el sufijo "step40" y la versión "v125" sugieren un experimento en curso, no un modelo final validado. Es esperable un comportamiento inestable o poco pulido.
-- Metadatos engañosos: el tag `arxiv:1910.09700` procede de la plantilla de HuggingFace (calculador de impacto de carbono), no de una publicación asociada al modelo. No debe interpretarse como respaldo académico.
+- Metadatos engañosos: el tag `arxiv:1910.09700` procede de la plantilla de Hugging Face (calculador de impacto de carbono), no de una publicación asociada al modelo. No debe interpretarse como respaldo académico.
 - Sin adopción: 0 descargas y 0 likes, sin evidencia de uso en producción ni de validación por terceros.
 - Sin cuantizaciones publicadas: no hay GGUF, GPTQ ni AWQ en el repositorio, lo que dificulta el despliegue en hardware de consumo.
 - Sin garantías de reproducibilidad: no se documentan hiperparámetros, semillas ni datos de entrenamiento.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/JMaxCool0518/albedo-qwen3.6-35b-bookend-v125-lora-step40
+- Repositorio Hugging Face del modelo: https://huggingface.co/JMaxCool0518/albedo-qwen3.6-35b-bookend-v125-lora-step40
 - Modelo base declarado (no verificado): https://huggingface.co/local_king/king_cxxv
 - Documentación de PEFT: https://huggingface.co/docs/peft
 - Documentación de TRL (DPO): https://huggingface.co/docs/trl

@@ -79,9 +79,9 @@ Evaluación sobre 120 muestras en 20 tareas de test retenidas (6 por tarea: 5 a 
 
 | Modelo | Parámetros | Contexto | Pass RLS-Bench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RLS-Bench adapters (Qwen3.5-9B, mejor) | 9B + LoRA | no disponible | 45 % (v3 GRPO) | MIT | HuggingFace |
-| Qwen3.5-9B sin entrenar | 9B | no disponible | 9 % | según base | HuggingFace |
-| Nemotron-3.5-Lightning-30B-A3B + GRPO | 30B (3B activos) | no disponible | 29 % | según base | HuggingFace |
+| RLS-Bench adapters (Qwen3.5-9B, mejor) | 9B + LoRA | no disponible | 45 % (v3 GRPO) | MIT | Hugging Face |
+| Qwen3.5-9B sin entrenar | 9B | no disponible | 9 % | según base | Hugging Face |
+| Nemotron-3.5-Lightning-30B-A3B + GRPO | 30B (3B activos) | no disponible | 29 % | según base | Hugging Face |
 | Adaptadores genéricos de SQL | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ Evaluación sobre 120 muestras en 20 tareas de test retenidas (6 por tarea: 5 a 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/9eve5h/rls-bench-adapters
+- Hugging Face: https://huggingface.co/9eve5h/rls-bench-adapters
 - Dataset: https://huggingface.co/datasets/9eve5h/rls-bench
 - Repositorio RLS-Bench: https://github.com/devesh16145/rls-bench
 - Tinker: https://thinkingmachines.ai/tinker/

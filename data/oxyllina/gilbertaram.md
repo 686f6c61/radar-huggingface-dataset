@@ -2,11 +2,11 @@
 
 ## Resumen
 
-GilbertAram es un repositorio de pesos publicado en HuggingFace por el usuario oxyllina bajo el identificador `oxyllina/GilbertAram`. Se trata de un repositorio con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales antes de poder descargar los pesos, y con un tamano de 48,2 GB. En el momento de la consulta acumula 0 descargas y 1 like, y no expone informacion de pipeline, licencia, idiomas soportados ni ficha tecnica del modelo.
+GilbertAram es un repositorio de pesos publicado en Hugging Face por el usuario oxyllina bajo el identificador `oxyllina/GilbertAram`. Se trata de un repositorio con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales antes de poder descargar los pesos, y con un tamano de 48,2 GB. En el momento de la consulta acumula 0 descargas y 1 like, y no expone informacion de pipeline, licencia, idiomas soportados ni ficha tecnica del modelo.
 
 La unica etiqueta declarada es `region:us`. No hay datos publicos sobre arquitectura, numero de parametros, longitud de contexto, proceso de entrenamiento ni evaluaciones. La busqueda web realizada no ha devuelto ninguna fuente tecnica asociada al modelo: los resultados obtenidos son unicamente paginas genericas del motor de busqueda, sin relacion con el repositorio.
 
-Por tanto, esta ficha documenta lo verificable (metadatos de HuggingFace y tamano del repositorio) y marca explicitamente como "no disponible" todo aquello que no puede confirmarse. Cualquier afirmacion sobre capacidades, rendimiento o requisitos de hardware que aparezca mas abajo se presenta como estimacion condicionada y debe verificarse antes de usarse en produccion.
+Por tanto, esta ficha documenta lo verificable (metadatos de Hugging Face y tamano del repositorio) y marca explicitamente como "no disponible" todo aquello que no puede confirmarse. Cualquier afirmacion sobre capacidades, rendimiento o requisitos de hardware que aparezca mas abajo se presenta como estimacion condicionada y debe verificarse antes de usarse en produccion.
 
 ## Especificaciones tecnicas
 
@@ -22,7 +22,7 @@ Por tanto, esta ficha documenta lo verificable (metadatos de HuggingFace y taman
 | Formato de pesos | no disponible (tamano de repo de 48,2 GB compatible con safetensors, GGUF u otros, sin confirmar) |
 | Pipeline declarado | no disponible |
 | Etiquetas | region:us |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Descargas | 0 |
 | Likes | 1 |
 | Fecha de creacion | 2026-04-01 |
@@ -89,7 +89,7 @@ No disponible. Al no conocerse el numero de parametros, la arquitectura, la lice
 
 - Ausencia total de ficha tecnica: no se documentan arquitectura, datos de entrenamiento, evaluaciones ni limitaciones conocidas.
 - Licencia no declarada: no puede asumirse que el uso comercial este permitido. La ausencia de licencia implica, por defecto, ausencia de permisos explicitos.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, cuyo contenido no se ha podido revisar.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, cuyo contenido no se ha podido revisar.
 - Procedencia no verificada: el autor no tiene historial publico contrastable y el repositorio no cuenta con validacion de la comunidad (0 descargas, 1 like).
 - Riesgo de seguridad en la cadena de suministro: si los pesos requiriesen ejecutar codigo remoto (`trust_remote_code`), existiria riesgo de ejecucion de codigo no auditado. Se recomienda descargar en un entorno aislado y sin acceso a red.
 - Fechas incoherentes: la fecha de creacion indicada (2026-04-01) es posterior a la de la ultima actualizacion en algunos contextos de consulta; conviene tratarlas con cautela.
@@ -100,7 +100,7 @@ No disponible. Al no conocerse el numero de parametros, la arquitectura, la lice
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/oxyllina/GilbertAram
+- Repositorio en Hugging Face: https://huggingface.co/oxyllina/GilbertAram
 - Resultados de busqueda web obtenidos (sin contenido relevante sobre el modelo):
   - https://www2.bing.com/
   - https://www.bing.com/version

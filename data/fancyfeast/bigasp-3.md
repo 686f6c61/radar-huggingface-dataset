@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bigASP 3 es un modelo de generación de imágenes en desarrollo por el autor fancyfeast, que publica checkpoints intermedios en HuggingFace bajo el identificador `fancyfeast/bigasp-3`. Según la model card, el modelo se carga como un Flux 2 Klein 9B, lo que indica que se basa en la arquitectura de difusión de Flux 2 en su variante Klein de 9 mil millones de parámetros. El repositorio contiene checkpoints de las fases de entrenamiento principal y de reinforcement learning (RL), junto con un LoRA resultante de un segundo intento de RL que mejora significativamente la velocidad y la consistencia del modelo.
+bigASP 3 es un modelo de generación de imágenes en desarrollo por el autor fancyfeast, que publica checkpoints intermedios en Hugging Face bajo el identificador `fancyfeast/bigasp-3`. Según la model card, el modelo se carga como un Flux 2 Klein 9B, lo que indica que se basa en la arquitectura de difusión de Flux 2 en su variante Klein de 9 mil millones de parámetros. El repositorio contiene checkpoints de las fases de entrenamiento principal y de reinforcement learning (RL), junto con un LoRA resultante de un segundo intento de RL que mejora significativamente la velocidad y la consistencia del modelo.
 
 El autor advierte explícitamente que estos checkpoints "generalmente no son utilizables tal cual", ya que el modelo aún necesita post-entrenamiento con RL y un modelo potenciador de prompts que está pendiente de finalizar. El repositorio tiene un tamaño de 36,8 GB y fue creado en junio de 2026, con actualizaciones hasta agosto de 2026. Aunque cuenta con 48 likes, no tiene descargas registradas, lo que refuerza su carácter experimental y de desarrollo. No se dispone de licencia, idiomas soportados ni pipeline de uso documentado.
 
@@ -66,6 +66,6 @@ No disponible. No se proporcionan comparaciones con otros modelos de generación
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/fancyfeast/bigasp-3)
+- [Página del modelo en Hugging Face](https://huggingface.co/fancyfeast/bigasp-3)
 - [Árbol de archivos del repositorio](https://huggingface.co/fancyfeast/bigasp-3/tree/main)
 - [Artículo de progreso de bigASP 3.0 en Civitai](https://civitai.com/articles/22656/bigasp-30-progress-update-and-26)

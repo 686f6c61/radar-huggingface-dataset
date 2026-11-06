@@ -101,7 +101,7 @@ La comparación con alternativas externas de la misma categoría (modelos audio-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jinstudio/MOSS-Audio-8B-Thinking
+- Modelo en Hugging Face: https://huggingface.co/Jinstudio/MOSS-Audio-8B-Thinking
 - Colección oficial de la familia MOSS-Audio (OpenMOSS-Team): https://huggingface.co/collections/OpenMOSS-Team/moss-audio
 - MOSI.AI: https://mosi.cn/#hero
 - OpenMOSS: https://www.open-moss.com/

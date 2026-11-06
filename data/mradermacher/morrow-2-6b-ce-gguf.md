@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. Ni l
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Morrow-2.6B-CE (este) | 2,57 B | no disponible | other | GGUF en este repositorio; safetensors en el repo base |
-| LFM2-2.6B (Liquid AI) | ~2,6 B | no disponible | LFM Open License | Pesos abiertos en HuggingFace |
+| LFM2-2.6B (Liquid AI) | ~2,6 B | no disponible | LFM Open License | Pesos abiertos en Hugging Face |
 | Qwen3-1.7B | ~1,7 B | no disponible | Apache 2.0 | Pesos abiertos, amplia disponibilidad de GGUF |
 | Gemma 3 1B | ~1 B | no disponible | Gemma Terms of Use | Pesos abiertos, requiere aceptar términos |
 
@@ -98,4 +98,4 @@ Nota: los datos de los modelos alternativos provienen de información pública g
 - Guía de referencia sobre uso de archivos GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Análisis comparativo de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de los metadatos de HuggingFace y de la propia model card.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de los metadatos de Hugging Face y de la propia model card.

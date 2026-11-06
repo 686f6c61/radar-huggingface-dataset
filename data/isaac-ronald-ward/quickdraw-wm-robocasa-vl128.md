@@ -84,7 +84,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/isaac-ronald-ward/quickdraw-wm-robocasa-vl128
+- Modelo en Hugging Face: https://huggingface.co/isaac-ronald-ward/quickdraw-wm-robocasa-vl128
 - Página personal del autor: https://isaacronaldward.com/
 - RoboCasa (sitio oficial): https://robocasa.ai/
 - Repositorio GitHub de RoboCasa: https://github.com/robocasa/robocasa

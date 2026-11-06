@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_514166025_mixer_huge` es un artefacto publicado en HuggingFace por el usuario `sbyse-tiawan`. Según la model card, se trata de una implementación a escala "huge" de la arquitectura "mixer", orientada a tareas de generación de texto. La información proporcionada es mínima y no incluye detalles sobre el entrenamiento, el dataset, los parámetros totales ni las capacidades reales del modelo. A fecha de publicación (agosto de 2026), no presenta descargas ni interacciones de la comunidad, lo que sugiere que se trata de un artefacto experimental o de un repositorio de código más que de un modelo listo para producción.
+El modelo `model_514166025_mixer_huge` es un artefacto publicado en Hugging Face por el usuario `sbyse-tiawan`. Según la model card, se trata de una implementación a escala "huge" de la arquitectura "mixer", orientada a tareas de generación de texto. La información proporcionada es mínima y no incluye detalles sobre el entrenamiento, el dataset, los parámetros totales ni las capacidades reales del modelo. A fecha de publicación (agosto de 2026), no presenta descargas ni interacciones de la comunidad, lo que sugiere que se trata de un artefacto experimental o de un repositorio de código más que de un modelo listo para producción.
 
 La arquitectura se describe como "mixer" con atención multi-query y una estrategia de fusión "tucker", activación GELU, normalización por capas e inicialización Xavier uniforme. El optimizador es Adam con un programador de tasa de aprendizaje por pasos (step). Sin embargo, no se especifica el número de parámetros, la longitud de contexto, los idiomas soportados ni el formato de los pesos. La licencia es Apache-2.0, lo que permite uso comercial y modificación, pero el repositorio solo contiene un archivo Python (`model_514166025_mixer_huge.py`), lo que sugiere que podría tratarse de una definición de arquitectura o de un script de entrenamiento en lugar de un modelo preentrenado con pesos disponibles.
 
@@ -66,10 +66,10 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [Repositorio HuggingFace: sbyse-tiawan/model_514166025_mixer_huge](https://huggingface.co/sbyse-tiawan/model_514166025_mixer_huge)
+- [Repositorio Hugging Face: sbyse-tiawan/model_514166025_mixer_huge](https://huggingface.co/sbyse-tiawan/model_514166025_mixer_huge)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en la búsqueda web realizada. Los resultados de búsqueda de CivitAI, SeaArt, Google Scholar y Perplexity no están relacionados con este modelo.</think>## Resumen
 
-El modelo `model_514166025_mixer_huge` es un repositorio publicado en HuggingFace por el usuario `sbyse-tiawan` con fecha de creación de agosto de 2026. Según su model card, se trata de una implementación a escala "huge" de la arquitectura "mixer" orientada a tareas de generación de texto. La descripción técnica es escasa: menciona atención multi-query, fusión tipo Tucker, activación GELU, normalización por capas e inicialización Xavier uniforme, con optimizador Adam y programador de aprendizaje por pasos. Sin embargo, el repositorio solo contiene un archivo de código Python (`model_514166025_mixer_huge.py`), sin pesos entrenados, sin datos de entrenamiento ni métricas de evaluación. La licencia es Apache-2.0, lo que permite uso comercial, pero la ausencia de pesos publicados impide su uso directo en inferencia. El modelo no tiene descargas ni interacciones de la comunidad, lo que sugiere que se trata de un experimento de investigación o un proyecto personal sin validación externa.
+El modelo `model_514166025_mixer_huge` es un repositorio publicado en Hugging Face por el usuario `sbyse-tiawan` con fecha de creación de agosto de 2026. Según su model card, se trata de una implementación a escala "huge" de la arquitectura "mixer" orientada a tareas de generación de texto. La descripción técnica es escasa: menciona atención multi-query, fusión tipo Tucker, activación GELU, normalización por capas e inicialización Xavier uniforme, con optimizador Adam y programador de aprendizaje por pasos. Sin embargo, el repositorio solo contiene un archivo de código Python (`model_514166025_mixer_huge.py`), sin pesos entrenados, sin datos de entrenamiento ni métricas de evaluación. La licencia es Apache-2.0, lo que permite uso comercial, pero la ausencia de pesos publicados impide su uso directo en inferencia. El modelo no tiene descargas ni interacciones de la comunidad, lo que sugiere que se trata de un experimento de investigación o un proyecto personal sin validación externa.
 
 ## Especificaciones técnicas
 
@@ -131,5 +131,5 @@ No se dispone de información sobre modelos comparables con la misma arquitectur
 
 ## Enlaces
 
-- [Repositorio HuggingFace: sbyse-tiawan/model_514166025_mixer_huge](https://huggingface.co/sbyse-tiawan/model_514166025_mixer_huge)
+- [Repositorio Hugging Face: sbyse-tiawan/model_514166025_mixer_huge](https://huggingface.co/sbyse-tiawan/model_514166025_mixer_huge)
 - No se encontraron enlaces adicionales (papers, blogs, repos, demos) en la búsqueda web realizada. Los resultados de CivArchive, SeaArt, Google Scholar y Perplexity no están relacionados con este modelo.

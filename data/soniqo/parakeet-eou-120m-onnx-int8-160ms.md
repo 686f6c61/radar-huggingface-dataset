@@ -102,8 +102,8 @@ La información disponible no incluye comparaciones con otros modelos ASR de ter
 
 | Modelo | Parametros | Contexto o paso de streaming | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| soniqo/Parakeet-EOU-120M-ONNX-INT8-160ms | Aproximadamente 120 M | 160 ms por paso (16 tramas mel, 2 tramas de encoder) | ONNX, encoder INT8 dinamico, predictor y joint FP32 | nvidia-open-model-license | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| nvidia/parakeet_realtime_eou_120m-v1 (modelo base) | Aproximadamente 120 M | No disponible en la informacion proporcionada | No disponible | nvidia-open-model-license (heredada por la exportacion) | HuggingFace, repositorio de NVIDIA |
+| soniqo/Parakeet-EOU-120M-ONNX-INT8-160ms | Aproximadamente 120 M | 160 ms por paso (16 tramas mel, 2 tramas de encoder) | ONNX, encoder INT8 dinamico, predictor y joint FP32 | nvidia-open-model-license | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| nvidia/parakeet_realtime_eou_120m-v1 (modelo base) | Aproximadamente 120 M | No disponible en la informacion proporcionada | No disponible | nvidia-open-model-license (heredada por la exportacion) | Hugging Face, repositorio de NVIDIA |
 | Exportacion previa de 320 ms del mismo autor | Aproximadamente 120 M | 320 ms por paso | ONNX | No disponible | Referenciada en la model card, sin URL directa |
 
 Comparativa con modelos de otras familias (Whisper, Wav2Vec2, Conformer de otras procedencias): no disponible, al no haberse publicado métricas de precisión en la información proporcionada.
@@ -119,13 +119,13 @@ Comparativa con modelos de otras familias (Whisper, Wav2Vec2, Conformer de otras
 - Limitación del helper incluido: `infer.py` consume una locución ya completada y hace un vaciado sintético de la cola que no representa una espera de endpoint en vivo. Para micrófono se necesita un frontend continuo y gestión explícita de endpoints.
 - Advertencia sobre latencia: un paso de 160 ms no implica una latencia de endpoint o respuesta de 160 ms.
 - Licencia: nvidia-open-model-license. Es una licencia "other" que conviene revisar antes de un uso comercial, ya que puede imponer condiciones de atribución o restricciones específicas recogidas en el acuerdo de NVIDIA.
-- Estado del repositorio: 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el 4 de octubre de 2026. Es una exportación de terceros, no oficial de NVIDIA, y el campo `inference` de la model card está marcado como `false`, por lo que no se sirve mediante la Inference API de HuggingFace.
+- Estado del repositorio: 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el 4 de octubre de 2026. Es una exportación de terceros, no oficial de NVIDIA, y el campo `inference` de la model card está marcado como `false`, por lo que no se sirve mediante la Inference API de Hugging Face.
 - Las cifras de latencia de extremo a extremo proceden de una aplicación concreta que incluye síntesis de voz y enrutado de herramientas, y no son tiempos aislados de inferencia ASR.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soniqo/Parakeet-EOU-120M-ONNX-INT8-160ms
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/parakeet_realtime_eou_120m-v1
+- Modelo en Hugging Face: https://huggingface.co/soniqo/Parakeet-EOU-120M-ONNX-INT8-160ms
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/parakeet_realtime_eou_120m-v1
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
 - Runtime C++ mencionado en la model card: la URL aparece truncada en la información disponible (comienza por `https://githu...`), por lo que no se puede reproducir completa.
 - El resto de los resultados de la búsqueda web no guardan relación con el modelo y se han descartado por no ser fuentes utilizables.

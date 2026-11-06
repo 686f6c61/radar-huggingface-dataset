@@ -1,9 +1,9 @@
 # zASE123/my-awesome-model
 
 ## Resumen
-MyAwesomeModel es un modelo de inteligencia artificial desarrollado por el usuario zASE123, publicado en HuggingFace bajo licencia MIT. Según la model card, se trata de una versión actualizada que mejora significativamente la profundidad de razonamiento y las capacidades de inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que el modelo ha reducido la tasa de alucinación y mejorado el soporte para function calling.
+MyAwesomeModel es un modelo de inteligencia artificial desarrollado por el usuario zASE123, publicado en Hugging Face bajo licencia MIT. Según la model card, se trata de una versión actualizada que mejora significativamente la profundidad de razonamiento y las capacidades de inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que el modelo ha reducido la tasa de alucinación y mejorado el soporte para function calling.
 
-Sin embargo, el repositorio de HuggingFace está vacío (0.0 GB), sin archivos de pesos ni código, y las especificaciones técnicas clave (número de parámetros, contexto, arquitectura exacta) no están disponibles. Los tags indican `transformers`, `pytorch` y `bert`, lo que sugiere una arquitectura transformer tipo encoder, pero no se confirma. La relevancia actual es limitada debido a la falta de artefactos descargables y a que los resultados de benchmarks presentados en la model card son placeholders sin valores reales.
+Sin embargo, el repositorio de Hugging Face está vacío (0.0 GB), sin archivos de pesos ni código, y las especificaciones técnicas clave (número de parámetros, contexto, arquitectura exacta) no están disponibles. Los tags indican `transformers`, `pytorch` y `bert`, lo que sugiere una arquitectura transformer tipo encoder, pero no se confirma. La relevancia actual es limitada debido a la falta de artefactos descargables y a que los resultados de benchmarks presentados en la model card son placeholders sin valores reales.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -18,7 +18,7 @@ Sin embargo, el repositorio de HuggingFace está vacío (0.0 GB), sin archivos d
 | Formato de pesos | no disponible (repositorio vacío, 0.0 GB) |
 
 ## Arquitectura y entrenamiento
-La model card menciona una "actualización significativa de versión" que mejora el razonamiento y la inferencia, atribuida a un aumento de recursos computacionales y a la introducción de mecanismos de optimización algorítmica en el post-entrenamiento. Se indica que el modelo utiliza más tokens por pregunta en tareas de razonamiento (23K frente a 12K en la versión anterior en el conjunto AIME 2025), lo que sugiere un modo de razonamiento extendido o "thinking mode". No se proporcionan detalles sobre la arquitectura concreta (número de capas, cabezas de atención, si es MoE o densa), ni sobre los datos de entrenamiento (número de tokens, composición del dataset, uso de RLHF/DPO). Los tags de HuggingFace (`bert`, `feature-extraction`) apuntan a un encoder transformer, pero no hay evidencia concluyente.
+La model card menciona una "actualización significativa de versión" que mejora el razonamiento y la inferencia, atribuida a un aumento de recursos computacionales y a la introducción de mecanismos de optimización algorítmica en el post-entrenamiento. Se indica que el modelo utiliza más tokens por pregunta en tareas de razonamiento (23K frente a 12K en la versión anterior en el conjunto AIME 2025), lo que sugiere un modo de razonamiento extendido o "thinking mode". No se proporcionan detalles sobre la arquitectura concreta (número de capas, cabezas de atención, si es MoE o densa), ni sobre los datos de entrenamiento (número de tokens, composición del dataset, uso de RLHF/DPO). Los tags de Hugging Face (`bert`, `feature-extraction`) apuntan a un encoder transformer, pero no hay evidencia concluyente.
 
 ## Capacidades
 - Razonamiento matemático y lógico: la model card afirma mejoras en AIME 2025 (precisión del 70% al 87.5%), aunque no hay datos verificables.
@@ -60,5 +60,5 @@ No disponible. La model card menciona modelos genéricos (Model1, Model2, Model1
 - Licencia MIT: permite uso comercial, pero al no haber artefactos, la licencia es irrelevante hasta que se publiquen los archivos.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/zASE123/my-awesome-model
+- Hugging Face: https://huggingface.co/zASE123/my-awesome-model
 - No se proporcionan otros enlaces (papers, repositorios de código, demos) en la información disponible.

@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Radiator Assistant EN LoRA (este) | 0,5B (base) | 32.768 | Apache 2.0 | HuggingFace, 15 descargas | Adaptador LoRA de nicho, sin benchmarks |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base generalista, con benchmarks publicados |
-| HeliosFenrir/radiator-assistant-en | 0,5B (base) | 32.768 | Apache 2.0 | HuggingFace | Version fusionada del adaptador, mismo autor |
-| Llama 3.2 1B Instruct | 1B | 128.000 | Llama 3.2 Community License | HuggingFace | Alternativa generalista de mayor tamano, con benchmarks publicados |
+| Radiator Assistant EN LoRA (este) | 0,5B (base) | 32.768 | Apache 2.0 | Hugging Face, 15 descargas | Adaptador LoRA de nicho, sin benchmarks |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base generalista, con benchmarks publicados |
+| HeliosFenrir/radiator-assistant-en | 0,5B (base) | 32.768 | Apache 2.0 | Hugging Face | Version fusionada del adaptador, mismo autor |
+| Llama 3.2 1B Instruct | 1B | 128.000 | Llama 3.2 Community License | Hugging Face | Alternativa generalista de mayor tamano, con benchmarks publicados |
 
 ## Limitaciones y advertencias
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/HeliosFenrir/radiator-assistant-en-lora
+- Repositorio Hugging Face del adaptador: https://huggingface.co/HeliosFenrir/radiator-assistant-en-lora
 - Modelo fusionado referenciado: https://huggingface.co/HeliosFenrir/radiator-assistant-en
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Documentacion de PEFT: https://huggingface.co/docs/peft

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FelixFischer/dino-matching45` es un repositorio experimental publicado en HuggingFace por el usuario FelixFischer que contiene una implementacion propia de una arquitectura denominada "Dino" orientada a tareas de matching. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida reproducible: el propio autor indica de forma explicita que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks superados. El repositorio incluye el codigo de inferencia (`inference.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y el README.
+`FelixFischer/dino-matching45` es un repositorio experimental publicado en Hugging Face por el usuario FelixFischer que contiene una implementacion propia de una arquitectura denominada "Dino" orientada a tareas de matching. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida reproducible: el propio autor indica de forma explicita que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks superados. El repositorio incluye el codigo de inferencia (`inference.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y el README.
 
 El modelo declara una escala "base" con atencion dilatada, fusion tipo Tucker, activacion gelu-tanh y normalizacion scalenorm, segun la tabla de arquitectura de su model card. El recuento real de parametros almacenados en el fichero safetensors es de 16.576, una cifra extremadamente reducida que confirma la naturaleza de juguete o esqueleto del artefacto, coherente con la afirmacion del autor de que el objetivo es inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El tamano del repositorio es de 0,0 GB.
 
@@ -60,7 +60,7 @@ En cuanto al entrenamiento, no hay ningun entrenamiento completado que respalde 
 - Plantilla de investigacion en arquitecturas de atencion: dado que la configuracion es modificable y el autor la describe como "manejable", sirve para prototipar variantes de atencion dilatada y medir su comportamiento en un banco de pruebas de matching.
 - Experimentacion con fusion Tucker: el repositorio permite estudiar como se comporta un mecanismo de fusion Tucker en una tarea de emparejamiento a escala reducida, aislando el efecto del cambio de arquitectura.
 - Base para reproduccion de experimentos: `training_args.json` documenta la receta por defecto (adafactor, warmup constante), lo que facilita fijar una linea base reproducible antes de comparar con otras configuraciones.
-- Docencia y formacion: por su tamano minimo (16.576 parametros) y su estructura de ficheros clara, es util como ejemplo didactico de como se organiza un repositorio de modelo en HuggingFace (config, pesos, script de inferencia, argumentos de entrenamiento).
+- Docencia y formacion: por su tamano minimo (16.576 parametros) y su estructura de ficheros clara, es util como ejemplo didactico de como se organiza un repositorio de modelo en Hugging Face (config, pesos, script de inferencia, argumentos de entrenamiento).
 - Evaluacion comparativa controlada: el README recomienda entrenar todas las lineas base con la misma exposicion de datos, presupuesto de ajuste y semillas; el repositorio sirve como punto de partida para ese tipo de comparacion metodologica.
 - Validacion de infraestructura de despliegue: permite comprobar que herramientas de serializacion y servidores de inferencia aceptan correctamente un artefacto safetensors de este tipo antes de migrar a modelos mayores.
 
@@ -82,7 +82,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FelixFischer/dino-matching45 | 16.576 | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace (0 descargas) |
+| FelixFischer/dino-matching45 | 16.576 | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,5 +100,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FelixFischer/dino-matching45
+- Hugging Face: https://huggingface.co/FelixFischer/dino-matching45
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los enlaces recuperados corresponden a foros sin relacion con el artefacto (forum.xnxx.com y forum.index.hu), por lo que se descartan. No se dispone de paper, blog, repositorio adicional ni demo asociados.

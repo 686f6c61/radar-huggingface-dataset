@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-forget5-GA_diff` no contiene un modelo completo, sino un adaptador LoRA entrenado con la libreria PEFT sobre un modelo base identificado como `outputs_3/mllmu_vanilla_qwen3-vl-8b`. El tamano del repositorio es de 0,2 GB y los pesos se distribuyen en formato safetensors, lo que es coherente con un adaptador de rango bajo y no con un modelo de 8.000 millones de parametros completo. El autor es el usuario `wutt6678`, el repositorio registra 0 descargas y 0 likes, y la model card publicada es la plantilla generica de HuggingFace sin ningun campo completado.
+El repositorio `wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-forget5-GA_diff` no contiene un modelo completo, sino un adaptador LoRA entrenado con la libreria PEFT sobre un modelo base identificado como `outputs_3/mllmu_vanilla_qwen3-vl-8b`. El tamano del repositorio es de 0,2 GB y los pesos se distribuyen en formato safetensors, lo que es coherente con un adaptador de rango bajo y no con un modelo de 8.000 millones de parametros completo. El autor es el usuario `wutt6678`, el repositorio registra 0 descargas y 0 likes, y la model card publicada es la plantilla generica de Hugging Face sin ningun campo completado.
 
 El nombre del adaptador sugiere un artefacto de investigacion en desaprendizaje automatico (machine unlearning): `IDUnlearn-Bench` apuntaria a un banco de evaluacion de desaprendizaje de identidad, `forget5` a un subconjunto o particion de olvido, y `GA_diff` a una variante de gradient ascent (ascenso de gradiente) sobre diferencias. Se trata de una interpretacion de la nomenclatura, no de un dato confirmado en el repositorio. El modelo base del que parte es, segun su propio nombre, una variante de Qwen3-VL-8B, es decir, un modelo de vision-lenguaje de la familia Qwen3-VL.
 
@@ -23,7 +23,7 @@ Su relevancia es acotada y experimental: sirve para reproducir o auditar experim
 | Libreria de carga | peft (PEFT 0.19.1 segun el apartado de versiones de framework) |
 | Modelo base declarado | `outputs_3/mllmu_vanilla_qwen3-vl-8b` |
 | Tamano del repositorio | 0,2 GB |
-| Fecha de creacion | 2026-10-01 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-01 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -74,13 +74,13 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|---|
 | Este repositorio | Adaptador LoRA sobre VLM | No disponible (adaptador de 0,2 GB) | No disponible | No disponible | Publico, 0 descargas |
 | `outputs_3/mllmu_vanilla_qwen3-vl-8b` | VLM denso (modelo base) | Aproximadamente 8.000 millones por nomenclatura | No disponible | No disponible | No localizable publicamente |
-| Qwen3-VL-8B-Instruct | VLM denso | 8.000 millones (documentacion publica) | 256K tokens, ampliable a 1M (documentacion publica) | Apache 2.0 (documentacion publica) | Publico en HuggingFace |
+| Qwen3-VL-8B-Instruct | VLM denso | 8.000 millones (documentacion publica) | 256K tokens, ampliable a 1M (documentacion publica) | Apache 2.0 (documentacion publica) | Publico en Hugging Face |
 
 La comparacion con modelos completos no es metodologicamente equivalente: un adaptador LoRA no es un modelo autonomo y su rendimiento depende del modelo base sobre el que se aplica. No se dispone de otros adaptadores de desaprendizaje comparables identificados en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace: no hay descripcion, uso previsto, datos de entrenamiento ni evaluacion.
+- La model card es la plantilla por defecto de Hugging Face: no hay descripcion, uso previsto, datos de entrenamiento ni evaluacion.
 - No se declara licencia, lo que impide determinar si el uso comercial esta permitido. En ausencia de licencia explicita, debe asumirse que no hay autorizacion de uso.
 - El modelo base `outputs_3/mllmu_vanilla_qwen3-vl-8b` no parece ser un repositorio publico accesible, por lo que el adaptador no es reproducible ni verificable de forma independiente.
 - El repositorio tiene 0 descargas y 0 likes: no existe validacion por parte de la comunidad ni informes de terceros.
@@ -93,7 +93,7 @@ La comparacion con modelos completos no es metodologicamente equivalente: un ada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-forget5-GA_diff
+- Repositorio en Hugging Face: https://huggingface.co/wutt6678/Qwen3-VL-8B-Instruct-IDUnlearn-Bench-forget5-GA_diff
 - Modelo base declarado: `outputs_3/mllmu_vanilla_qwen3-vl-8b` (no localizable publicamente)
 - Referencia del tag arXiv: https://arxiv.org/abs/1910.09700 (paper de Lacoste et al. sobre impacto ambiental, citado en la plantilla)
 - Libreria PEFT: https://github.com/huggingface/peft

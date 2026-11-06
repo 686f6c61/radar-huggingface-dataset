@@ -70,6 +70,6 @@ No disponible. La información proporcionada no incluye datos sobre modelos comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oktayd/Q36-v1.3-35B-A3B-MTP-Vision-BF16
+- Hugging Face: https://huggingface.co/oktayd/Q36-v1.3-35B-A3B-MTP-Vision-BF16
 - Modelo base: https://huggingface.co/oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT
 - Perfil del autor: https://huggingface.co/oktayd

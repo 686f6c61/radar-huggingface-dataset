@@ -106,7 +106,7 @@ Nota: los datos de las tres alternativas provienen de su documentación pública
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/qwen2.5-7b-alpaca-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/qwen2.5-7b-alpaca-i1-GGUF
 - Modelo base: https://huggingface.co/Hikaf143/qwen2.5-7b-alpaca
 - Cuantizaciones estáticas (no imatrix): https://huggingface.co/mradermacher/qwen2.5-7b-alpaca-GGUF
 - Página resumen del autor para este modelo: https://hf.tst.eu/model#qwen2.5-7b-alpaca-i1-GGUF

@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Contexto/resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IdentiFace PixArt CelebA | ControlNet para difusion | PixArtMS_XL_2 | 1024 px | other | HuggingFace (0 descargas) |
-| ControlNet oficial para PixArt-α | ControlNet para difusion | PixArt-α | 1024 px | otras licencias (segun repo) | HuggingFace |
-| IP-Adapter (familia) | Adaptador de identidad/imagen | SD / PixArt y otros | variable | otras licencias | HuggingFace |
+| IdentiFace PixArt CelebA | ControlNet para difusion | PixArtMS_XL_2 | 1024 px | other | Hugging Face (0 descargas) |
+| ControlNet oficial para PixArt-α | ControlNet para difusion | PixArt-α | 1024 px | otras licencias (segun repo) | Hugging Face |
+| IP-Adapter (familia) | Adaptador de identidad/imagen | SD / PixArt y otros | variable | otras licencias | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada; la comparativa se limita a aspectos estructurales y de disponibilidad.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/uglasses/IdentiFace-PixArt-CelebA
+- Hugging Face: https://huggingface.co/uglasses/IdentiFace-PixArt-CelebA
 - Repositorio PixArt-α (referencia del modelo base): no disponible en la informacion proporcionada
 - Paper PixArt-α: no disponible en la informacion proporcionada
 - Documentacion de diffusers sobre ControlNet: no disponible en la informacion proporcionada

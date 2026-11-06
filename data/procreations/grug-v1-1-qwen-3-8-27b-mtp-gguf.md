@@ -78,7 +78,7 @@ La comparativa se limita a las variantes del mismo modelo, ya que no se dispone 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-mtp-gguf)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-mtp-gguf)
 - [Modelo base MTP (safetensors)](https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-mtp)
 - [Modelo grug-27b (versión sin MTP)](https://huggingface.co/ProCreations/grug-27b)
 - [Ficha en LLM Explorer](https://llm-explorer.com/model/ProCreations%2Fgrug-27b,4I3COxIuitPNrvIAJrjQMi)

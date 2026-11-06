@@ -2,7 +2,7 @@
 
 ## Resumen
 
-The_Salty_1 es un modelo publicado en HuggingFace por el usuario YegerSr bajo el identificador `YegerSr/The_Salty_1`. La model card asociada contiene unicamente la declaracion de licencia (`license: ms-pl`) y ningun otro metadato tecnico: no se indica arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. Tampoco se declara un pipeline de inferencia (text-generation, text-to-image, etc.), por lo que la categoria funcional del modelo es desconocida.
+The_Salty_1 es un modelo publicado en Hugging Face por el usuario YegerSr bajo el identificador `YegerSr/The_Salty_1`. La model card asociada contiene unicamente la declaracion de licencia (`license: ms-pl`) y ningun otro metadato tecnico: no se indica arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados. Tampoco se declara un pipeline de inferencia (text-generation, text-to-image, etc.), por lo que la categoria funcional del modelo es desconocida.
 
 El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el 2026-09-17 sin cambios posteriores. Esto apunta a un artefacto recien publicado, sin validacion por parte de la comunidad ni documentacion de acompañamiento. Cualquier evaluacion tecnica seria requiere inspeccionar directamente los ficheros del repositorio (config.json, tokenizer, pesos) para determinar que se ha subido realmente.
 
@@ -81,7 +81,7 @@ No disponible. No se dispone de informacion suficiente sobre The_Salty_1 (parame
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YegerSr/The_Salty_1
+- Hugging Face: https://huggingface.co/YegerSr/The_Salty_1
 - Model card: no disponible (la unica linea de contenido es `license: ms-pl`)
 - Paper: no disponible
 - Repositorio de codigo: no disponible

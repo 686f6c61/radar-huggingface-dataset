@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AVGUR es un modelo publicado en HuggingFace por el usuario `testingusera1` bajo el identificador `testingusera1/AVGUR`. Se trata de una cuantizacion en formato GGUF cuyo modelo base declarado es `Qwen/Qwen3.5-2B`, segun los metadatos del repositorio. El unico idioma declarado es el ruso (`ru`) y la licencia indicada es Apache 2.0. El repositorio ocupa 2,1 GB y, en el momento de la consulta, acumula 0 descargas y 0 "likes", por lo que se trata de una publicacion reciente y sin validacion por parte de la comunidad.
+AVGUR es un modelo publicado en Hugging Face por el usuario `testingusera1` bajo el identificador `testingusera1/AVGUR`. Se trata de una cuantizacion en formato GGUF cuyo modelo base declarado es `Qwen/Qwen3.5-2B`, segun los metadatos del repositorio. El unico idioma declarado es el ruso (`ru`) y la licencia indicada es Apache 2.0. El repositorio ocupa 2,1 GB y, en el momento de la consulta, acumula 0 descargas y 0 "likes", por lo que se trata de una publicacion reciente y sin validacion por parte de la comunidad.
 
 La relevancia de esta ficha es limitada y hay que ser explicitos al respecto: la model card publicada por el autor no contiene mas que el bloque de metadatos YAML (licencia, idioma y modelo base). No se documentan datos de entrenamiento, arquitectura, longitud de contexto, variantes de cuantizacion incluidas en el repositorio, ni resultados de evaluacion. La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo (unicamente un enlace a WhatsApp Web, sin relacion alguna).
 
@@ -98,7 +98,7 @@ Diferencias relevantes: AVGUR es el unico de los cuatro sin benchmarks publicado
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/testingusera1/AVGUR
+- Repositorio en Hugging Face: https://huggingface.co/testingusera1/AVGUR
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-2B (referencia tomada de los metadatos; no se ha encontrado documentacion adicional en la busqueda realizada)
 - Paper, blog o repositorio del autor: no disponible
 - Demos: no disponible

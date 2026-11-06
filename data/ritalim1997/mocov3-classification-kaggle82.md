@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ritalim1997/mocov3-classification-kaggle82` es un repositorio de HuggingFace publicado por el usuario ritalim1997 que contiene una implementación compacta y personalizada de una arquitectura MoCo v3 orientada a clasificación, escrita en PyTorch. No se trata de un modelo preentrenado ni de una versión lista para producción: la propia model card lo describe como un esqueleto para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño alcance. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado con datos.
+`ritalim1997/mocov3-classification-kaggle82` es un repositorio de Hugging Face publicado por el usuario ritalim1997 que contiene una implementación compacta y personalizada de una arquitectura MoCo v3 orientada a clasificación, escrita en PyTorch. No se trata de un modelo preentrenado ni de una versión lista para producción: la propia model card lo describe como un esqueleto para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño alcance. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado con datos.
 
 El dato más llamativo es su tamaño real: el recuento de safetensors indica 49.600 parámetros totales, es decir, aproximadamente 0,05 millones. Esto contradice la etiqueta de escala "huge" que aparece en la configuración generada y confirma que el artefacto es un stub de código, no una reproducción del MoCo v3 original de Meta AI (que emplea backbones ViT de entre 21 y 632 millones de parámetros). El repositorio ocupa 0,0 GB y no registra descargas ni *likes*.
 
@@ -37,7 +37,7 @@ Respecto al entrenamiento, no hay evidencia de que se haya ejecutado ninguno. La
 - No se declaran capacidades multilingües ni lista de idiomas.
 - No hay modo *thinking*, visión, audio ni modalidad adicional. La etiqueta `classification` sugiere una cabeza de clasificación, pero no se especifica el espacio de etiquetas ni el dominio.
 - El artefacto es una base de código ejecutable: `python finetune.py --help` funciona como punto de entrada, y el bloque `__main__` contiene un ejemplo de prueba de humo.
-- La carga mediante APIs genéricas de HuggingFace `transformers` requiere un adaptador explícito, según advierte el propio autor.
+- La carga mediante APIs genéricas de Hugging Face `transformers` requiere un adaptador explícito, según advierte el propio autor.
 
 ## Casos de uso
 
@@ -68,7 +68,7 @@ No hay una comparación significativa posible: el resto de implementaciones de M
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ritalim1997/mocov3-classification-kaggle82 | 49.600 (0,05 M) | no disponible | No (checkpoint de inicialización) | MIT | HuggingFace, 0 descargas |
+| ritalim1997/mocov3-classification-kaggle82 | 49.600 (0,05 M) | no disponible | No (checkpoint de inicialización) | MIT | Hugging Face, 0 descargas |
 | MoCo v3 ViT-S/16 (referencia de Meta AI) | ~21 M en el backbone | no aplica (visión) | Sí, autosupervisado en ImageNet | CC-BY-NC 4.0 en el release original | Repositorio oficial de Meta AI |
 | MoCo v3 ViT-B/16 (referencia de Meta AI) | ~86 M en el backbone | no aplica (visión) | Sí, autosupervisado en ImageNet | CC-BY-NC 4.0 en el release original | Repositorio oficial de Meta AI |
 
@@ -88,7 +88,7 @@ No se dispone de datos verificados en la información proporcionada para compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ritalim1997/mocov3-classification-kaggle82
+- Hugging Face: https://huggingface.co/ritalim1997/mocov3-classification-kaggle82
 - Repositorio oficial de MoCo v3 (Meta AI Research): no disponible en la información proporcionada
 - Paper de MoCo v3 ("An Empirical Study of Training Self-Supervised Vision Transformers"): no disponible en la información proporcionada
 - Documentación de safetensors: no disponible en la información proporcionada

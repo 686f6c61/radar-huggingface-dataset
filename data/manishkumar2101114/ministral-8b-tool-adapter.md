@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ministral-8b-tool-adapter es un adaptador LoRA publicado por el usuario manishkumar2101114 en HuggingFace, construido sobre el modelo base mistralai/Ministral-3-8B-Instruct-2512. Se trata por tanto de un ajuste fino ligero (PEFT) orientado, segun su nombre, a mejorar el comportamiento de tool calling o function calling sobre un modelo instruct ya existente, no de un modelo entrenado desde cero.
+ministral-8b-tool-adapter es un adaptador LoRA publicado por el usuario manishkumar2101114 en Hugging Face, construido sobre el modelo base mistralai/Ministral-3-8B-Instruct-2512. Se trata por tanto de un ajuste fino ligero (PEFT) orientado, segun su nombre, a mejorar el comportamiento de tool calling o function calling sobre un modelo instruct ya existente, no de un modelo entrenado desde cero.
 
 El artefacto es un adaptador, no un modelo completo: pesa 0,7 GB en el repositorio y requiere cargar el modelo base por separado con la libreria PEFT (version 0.20.0 citada en la model card). El pipeline declarado es text-generation y los tags incluyen "conversational", lo que situa el caso de uso en asistentes conversacionales con capacidad de invocar herramientas externas.
 
-La relevancia actual del artefacto es limitada: registra 0 descargas y 0 "likes", la model card es la plantilla por defecto de HuggingFace sin rellenar, y no se declaran licencia ni idiomas soportados. Cualquier evaluacion de capacidades reales exige inspeccionar los pesos y el dataset de entrenamiento, que no estan documentados en la informacion disponible.
+La relevancia actual del artefacto es limitada: registra 0 descargas y 0 "likes", la model card es la plantilla por defecto de Hugging Face sin rellenar, y no se declaran licencia ni idiomas soportados. Cualquier evaluacion de capacidades reales exige inspeccionar los pesos y el dataset de entrenamiento, que no estan documentados en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -96,7 +96,7 @@ No se dispone de datos verificables sobre alternativas comparables dentro de la 
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/manishkumar2101114/ministral-8b-tool-adapter
+- Hugging Face del adaptador: https://huggingface.co/manishkumar2101114/ministral-8b-tool-adapter
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512
 - Libreria PEFT: https://github.com/huggingface/peft
 - Articulo citado en la plantilla de model card (calculador de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

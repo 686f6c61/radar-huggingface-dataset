@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `rastamdf/sample-model-demo` es un artefacto de demostración publicado en el Hub de HuggingFace por el usuario `rastamdf`. Su propósito explícito, según la model card, es ilustrar el flujo de trabajo de subida y gestión de modelos en la plataforma, no ofrecer capacidades de inferencia reales. Se describe como un modelo de tipo BERT con tamaño oculto de 768 y 12 cabezas de atención, pero no se proporciona información sobre su entrenamiento, pesos, o rendimiento.
+El modelo `rastamdf/sample-model-demo` es un artefacto de demostración publicado en el Hub de Hugging Face por el usuario `rastamdf`. Su propósito explícito, según la model card, es ilustrar el flujo de trabajo de subida y gestión de modelos en la plataforma, no ofrecer capacidades de inferencia reales. Se describe como un modelo de tipo BERT con tamaño oculto de 768 y 12 cabezas de atención, pero no se proporciona información sobre su entrenamiento, pesos, o rendimiento.
 
-Dado que se trata de una demo técnica sin documentación adicional, no es adecuado para uso en producción ni para tareas de NLP reales. Su relevancia se limita al ámbito educativo o de pruebas de integración con el ecosistema HuggingFace. No se dispone de datos sobre arquitectura completa, dataset de entrenamiento, ni licencia.
+Dado que se trata de una demo técnica sin documentación adicional, no es adecuado para uso en producción ni para tareas de NLP reales. Su relevancia se limita al ámbito educativo o de pruebas de integración con el ecosistema Hugging Face. No se dispone de datos sobre arquitectura completa, dataset de entrenamiento, ni licencia.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ La model card indica que se trata de un modelo de tipo BERT con un tamaño ocult
 
 ## Casos de uso
 
-- Pruebas de integración con la API de HuggingFace: el modelo puede cargarse con `AutoModel.from_pretrained` para verificar que el flujo de descarga y carga funciona correctamente en un entorno de desarrollo.
+- Pruebas de integración con la API de Hugging Face: el modelo puede cargarse con `AutoModel.from_pretrained` para verificar que el flujo de descarga y carga funciona correctamente en un entorno de desarrollo.
 - Validación de pipelines de CI/CD: sirve como artefacto de prueba para automatizar la publicación y actualización de modelos en un repositorio.
 - Ejemplo educativo: útil para enseñar a estudiantes cómo se estructura una model card y cómo se publica un modelo en el Hub.
 - Depuración de entornos de inferencia: permite comprobar que las dependencias (transformers, torch) están correctamente instaladas antes de usar modelos reales.
@@ -62,4 +62,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace: rastamdf/sample-model-demo](https://huggingface.co/rastamdf/sample-model-demo)
+- [Hugging Face: rastamdf/sample-model-demo](https://huggingface.co/rastamdf/sample-model-demo)

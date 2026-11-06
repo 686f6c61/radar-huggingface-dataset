@@ -6,7 +6,7 @@ El repositorio Brunobkr/OFFFELLIA_Qwen3.6-35B-A3B-OMEGA-vibe-code.gguf contiene 
 
 El problema que resuelve es el de ejecutar localmente un modelo MoE de 35B con ventana de contexto larga (hasta 256K tokens en el modelo base) en hardware de consumo, gracias al reducido número de parámetros activos y al soporte de offload de expertos a CPU y a la API Vulkan del fork. La model card del repositorio no documenta el modelo en sí, sino el motor de inferencia: describe el motor agéntico multi-turno, la integración de herramientas mediante MCP, el modo de razonamiento automático y una interfaz web en SvelteKit/Vite.
 
-Su relevancia es doble: por un lado, es una vía práctica de despliegue local de un MoE reciente con capacidades agénticas y de codificación; por otro, presenta señales de riesgo claras para producción —cero descargas, cero valoraciones, licencia no declarada en HuggingFace para los pesos y una ficha que no describe el proceso de cuantización ni los datos de entrenamiento—. Cualquier evaluación seria debería contrastarse contra el modelo base oficial antes de adoptarlo.
+Su relevancia es doble: por un lado, es una vía práctica de despliegue local de un MoE reciente con capacidades agénticas y de codificación; por otro, presenta señales de riesgo claras para producción —cero descargas, cero valoraciones, licencia no declarada en Hugging Face para los pesos y una ficha que no describe el proceso de cuantización ni los datos de entrenamiento—. Cualquier evaluación seria debería contrastarse contra el modelo base oficial antes de adoptarlo.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ Su relevancia es doble: por un lado, es una vía práctica de despliegue local d
 | Longitud de contexto | 256K tokens en el modelo base; el comando de ejemplo del autor arranca el servidor con `-c 50000` |
 | Tipos de cuantización | GGUF. El comando de la model card referencia un fichero MXFP4 (`ΩFFFΣLLIα_MXFP4_MOE_Qwen3.6-35B-A3B-ΩMΣGα-vibe-code.gguf`); el repo indicado pesa 19,8 GB. No se detalla el listado de cuantizaciones disponibles |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible para los pesos en HuggingFace. La model card declara licencia MIT para el fork de llama.cpp (OFFFELLIA_PURE), no necesariamente para el modelo |
+| Licencia | no disponible para los pesos en Hugging Face. La model card declara licencia MIT para el fork de llama.cpp (OFFFELLIA_PURE), no necesariamente para el modelo |
 | Formato de pesos | GGUF (`gguf`), cargable con llama.cpp y forks compatibles |
 
 ## Arquitectura y entrenamiento
@@ -69,14 +69,14 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|---|
-| OFFFELLIA_Qwen3.6-35B-A3B-OMEGA-vibe-code (este) | 35B | ~3B | 256K en el modelo base; 50K en el ejemplo del autor | no disponible para los pesos | 0 descargas, 0 valoraciones en HuggingFace | no disponible |
+| OFFFELLIA_Qwen3.6-35B-A3B-OMEGA-vibe-code (este) | 35B | ~3B | 256K en el modelo base; 50K en el ejemplo del autor | no disponible para los pesos | 0 descargas, 0 valoraciones en Hugging Face | no disponible |
 | Qwen3.6-35B-A3B (modelo base oficial) | 35B | ~3B | 256K | no disponible en la información recogida | ModelScope y Ollama | no disponible |
 | Qwen3.6-27B (denso, misma familia) | 27B | 27B (denso) | 256K | no disponible en la información recogida | Ollama y otras distribuciones | no disponible |
-| OFFFELLIA_IQ4_XS_Qwen3.6-35B-A3B-uncensored-heretic (mismo autor) | 35B | ~3B | no disponible | no disponible | Repositorio hermano en HuggingFace | no disponible |
+| OFFFELLIA_IQ4_XS_Qwen3.6-35B-A3B-uncensored-heretic (mismo autor) | 35B | ~3B | no disponible | no disponible | Repositorio hermano en Hugging Face | no disponible |
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada en HuggingFace para los pesos. La licencia MIT que aparece en la model card corresponde al fork de llama.cpp, no al modelo; su uso comercial queda en una zona legal indefinida.
+- Licencia no declarada en Hugging Face para los pesos. La licencia MIT que aparece en la model card corresponde al fork de llama.cpp, no al modelo; su uso comercial queda en una zona legal indefinida.
 - Repositorio sin tracción: cero descargas y cero valoraciones en el momento de la consulta, sin validación independiente por parte de la comunidad.
 - La model card no documenta el modelo: no indica el proceso de cuantización, la calibración, la composición del dataset ni el pipeline. Toda la información técnica procede del modelo base y del motor de inferencia.
 - No se declaran idiomas soportados, por lo que no puede garantizarse un rendimiento adecuado en castellano sin evaluación propia.
@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Brunobkr/OFFFELLIA_Qwen3.6-35B-A3B-OMEGA-vibe-code.gguf
+- Repositorio en Hugging Face: https://huggingface.co/Brunobkr/OFFFELLIA_Qwen3.6-35B-A3B-OMEGA-vibe-code.gguf
 - Árbol de ficheros del repositorio: https://huggingface.co/Brunobkr/OFFFELLIA_Qwen3.6-35B-A3B-OMEGA-vibe-code.gguf/tree/main
 - Repositorio hermano del mismo autor (cuantización IQ4_XS): https://huggingface.co/Brunobkr/OFFFELLIA_IQ4_XS_Qwen3.6-35B-A3B-uncensored-heretic.gguf
 - Motor de inferencia OFFFELLIA_PURE (fork de llama.cpp): https://github.com/brunoconta1980-tech/llama_OFFFELLIA_1984

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SSN134/clause_classifier_legalbert` es un clasificador de cláusulas legales basado en la arquitectura BERT, publicado en HuggingFace por el usuario SSN134. El nombre del modelo y los metadatos asociados (tag `bert`, 109,5 millones de parámetros, formato safetensors) indican que se trata de un modelo encoder preentrenado y probablemente ajustado para la clasificación de cláusulas en documentos jurídicos, una tarea habitual en el análisis automatizado de contratos. A pesar de que la model card no incluye información detallada, el repositorio está disponible públicamente bajo licencia MIT y tiene un tamaño de 0,4 GB.
+El modelo `SSN134/clause_classifier_legalbert` es un clasificador de cláusulas legales basado en la arquitectura BERT, publicado en Hugging Face por el usuario SSN134. El nombre del modelo y los metadatos asociados (tag `bert`, 109,5 millones de parámetros, formato safetensors) indican que se trata de un modelo encoder preentrenado y probablemente ajustado para la clasificación de cláusulas en documentos jurídicos, una tarea habitual en el análisis automatizado de contratos. A pesar de que la model card no incluye información detallada, el repositorio está disponible públicamente bajo licencia MIT y tiene un tamaño de 0,4 GB.
 
 La relevancia de este tipo de modelos radica en su capacidad para estructurar y analizar grandes volúmenes de documentación legal, facilitando tareas como la revisión de contratos, la detección de cláusulas de riesgo o la automatización de flujos de trabajo jurídicos. Sin embargo, al no existir documentación oficial sobre el proceso de entrenamiento, el dataset utilizado ni las métricas de evaluación, su uso en producción requiere una validación previa por parte del desarrollador.
 
@@ -21,7 +21,7 @@ La relevancia de este tipo de modelos radica en su capacidad para estructurar y 
 
 ## Arquitectura y entrenamiento
 
-La información disponible no incluye detalles sobre la arquitectura exacta ni el proceso de entrenamiento del modelo. El tag `bert` y el número de parámetros (109,5 millones) son consistentes con un modelo BERT-base, probablemente la variante `legal-bert-base-uncased` utilizada en otros proyectos similares de la comunidad. No obstante, la model card publicada en HuggingFace no contiene ninguna descripción del dataset, del número de clases ni de las técnicas de ajuste empleadas. Los resultados de búsqueda muestran que existen modelos equivalentes que realizan fine-tuning de Legal-BERT sobre el dataset LEDGAR para clasificar cláusulas legales, pero no se puede confirmar que este modelo en particular haya seguido el mismo procedimiento.
+La información disponible no incluye detalles sobre la arquitectura exacta ni el proceso de entrenamiento del modelo. El tag `bert` y el número de parámetros (109,5 millones) son consistentes con un modelo BERT-base, probablemente la variante `legal-bert-base-uncased` utilizada en otros proyectos similares de la comunidad. No obstante, la model card publicada en Hugging Face no contiene ninguna descripción del dataset, del número de clases ni de las técnicas de ajuste empleadas. Los resultados de búsqueda muestran que existen modelos equivalentes que realizan fine-tuning de Legal-BERT sobre el dataset LEDGAR para clasificar cláusulas legales, pero no se puede confirmar que este modelo en particular haya seguido el mismo procedimiento.
 
 ## Capacidades
 
@@ -52,16 +52,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en FP32 y 0,25 GB en FP16, calculada a partir de los 109,5 millones de parámetros.
 - GPU recomendada: cualquier GPU con al menos 1 GB de VRAM; el modelo también puede ejecutarse en CPU sin problemas.
 - Compatibilidad con GPU de consumo: sí, es compatible con GPUs integradas y tarjetas de gama baja como RTX 3050 o inferiores.
-- Opciones de despliegue: puede ejecutarse mediante la librería Transformers de HuggingFace, así como exportarse a formato ONNX para su integración en otros entornos.
+- Opciones de despliegue: puede ejecutarse mediante la librería Transformers de Hugging Face, así como exportarse a formato ONNX para su integración en otros entornos.
 - Latencia y throughput estimados: no disponibles, al no haberse publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SSN134/clause_classifier_legalbert | 109,5 M | no disponible | MIT | HuggingFace |
-| FENTECH/Legal-BERT-Clause-Classification | no disponible | no disponible | no disponible | HuggingFace |
-| Jeswinpauldany/legalbert-clause-classifier | no disponible | no disponible | no disponible | HuggingFace |
+| SSN134/clause_classifier_legalbert | 109,5 M | no disponible | MIT | Hugging Face |
+| FENTECH/Legal-BERT-Clause-Classification | no disponible | no disponible | no disponible | Hugging Face |
+| Jeswinpauldany/legalbert-clause-classifier | no disponible | no disponible | no disponible | Hugging Face |
 
 Los modelos comparados son fine-tunes de Legal-BERT sobre el dataset LEDGAR, según la información de sus respectivas páginas. El modelo `FENTECH/Legal-BERT-Clause-Classification` clasifica cláusulas en 100 tipos, mientras que el de `Jeswinpauldany` se centra en la clasificación de cláusulas contractuales. No se dispone de parámetros exactos ni de licencias para estos dos modelos.
 
@@ -76,7 +76,7 @@ Los modelos comparados son fine-tunes de Legal-BERT sobre el dataset LEDGAR, seg
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SSN134/clause_classifier_legalbert
+- Hugging Face: https://huggingface.co/SSN134/clause_classifier_legalbert
 - Modelo similar: https://huggingface.co/FENTECH/Legal-BERT-Clause-Classification
 - Modelo similar: https://huggingface.co/Jeswinpauldany/legalbert-clause-classifier
 - No se han encontrado papers, blogs o repositorios adicionales en la información disponible.

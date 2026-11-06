@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Shooter57/nippleslidertest` es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicado por el usuario Shooter57 en HuggingFace. El repositorio declara como modelo base `krea/Krea-2-Raw` y define una unica palabra de activacion, `npsldrtest`, que debe incluirse en el prompt para que el adaptador aplique su efecto. La libreria asociada es `diffusers` y las etiquetas del repositorio lo clasifican como `text-to-image`, `lora` y `template:diffusion-lora`.
+`Shooter57/nippleslidertest` es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicado por el usuario Shooter57 en Hugging Face. El repositorio declara como modelo base `krea/Krea-2-Raw` y define una unica palabra de activacion, `npsldrtest`, que debe incluirse en el prompt para que el adaptador aplique su efecto. La libreria asociada es `diffusers` y las etiquetas del repositorio lo clasifican como `text-to-image`, `lora` y `template:diffusion-lora`.
 
 La relevancia practica del artefacto es muy limitada: el repositorio ocupa 0.0 GB, no acumula descargas ni "likes", y su model card no aporta informacion sobre el dataset de entrenamiento, el rango del adaptador, la resolucion objetivo, el numero de pasos ni el tipo de concepto que aprende. Tampoco se especifica licencia. Todos estos indicios apuntan a un experimento de prueba o a un artefacto incompleto publicado sin documentacion.
 
@@ -50,7 +50,7 @@ Nota previa: al no existir documentacion, ejemplos de salida ni pesos verificabl
 
 - Pruebas de integracion de pipelines `diffusers`: cargar el LoRA con `load_lora_weights` sobre el modelo base para verificar que la cadena de carga, fusion de pesos y generacion funciona en un entorno controlado.
 - Validacion de flujos de trabajo de entrenamiento LoRA: usar el artefacto como caso de prueba para comprobar que un pipeline propio de entrenamiento publica correctamente adaptadores y palabras de activacion.
-- Investigacion sobre trazabilidad de modelos: analizar la ausencia de metadatos (licencia, dataset, hiperparametros) como ejemplo de malas practicas de publicacion en HuggingFace.
+- Investigacion sobre trazabilidad de modelos: analizar la ausencia de metadatos (licencia, dataset, hiperparametros) como ejemplo de malas practicas de publicacion en Hugging Face.
 - Auditoria de contenido: evaluar si el adaptador genera material inapropiado, dado que ni el nombre del repositorio ni la palabra de activacion son descriptivos y no existe filtrado declarado.
 - Experimentacion artistica condicionada: si el adaptador aprende un estilo concreto, podria emplearse para explorar variaciones de ese estilo sobre el modelo base `krea/Krea-2-Raw`.
 - Comparacion de adaptadores sobre un mismo base: medir hasta que punto un LoRA sin documentar altera la fidelidad al prompt respecto al modelo base sin adaptador.
@@ -90,9 +90,9 @@ No disponible. No se pueden identificar modelos comparables porque el repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shooter57/nippleslidertest
+- Repositorio en Hugging Face: https://huggingface.co/Shooter57/nippleslidertest
 - Pestana de archivos y versiones: https://huggingface.co/Shooter57/nippleslidertest/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Raw
 - Paper, blog o repositorio de codigo asociado: no disponible
-- Demo o espacio de HuggingFace: no disponible
+- Demo o espacio de Hugging Face: no disponible
 - Nota sobre la busqueda web: los resultados recuperados no guardan relacion con el modelo (contenido sobre emojis de banderas) y no aportan informacion tecnica utilizable.

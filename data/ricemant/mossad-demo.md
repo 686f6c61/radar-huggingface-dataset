@@ -17,7 +17,7 @@ Su relevancia es doble. Por un lado, demuestra que MOSS-Image adquiere estilos d
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica (modelo texto-a-imagen); longitud máxima de *prompt* no documentada |
 | Tipos de cuantización | No disponibles; la model card no documenta versiones cuantizadas |
-| Idiomas soportados | No declarados en la metadata de HuggingFace; el *prompting* se realiza con etiquetas estilo booru en inglés |
+| Idiomas soportados | No declarados en la metadata de Hugging Face; el *prompting* se realiza con etiquetas estilo booru en inglés |
 | Licencia | Apache 2.0 |
 | Formato de pesos | No especificado en la información disponible; el repositorio ocupa 10,2 GB, coherente con pesos de 5B en media precisión |
 | Método de ajuste | Full finetune sobre OpenMOSS-Team/MOSS-Image-Base |
@@ -105,7 +105,7 @@ Los tres comparables pertenecen a la familia SDXL y son los referentes habituale
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RicemanT/MossAD-Demo
+- Modelo en Hugging Face: https://huggingface.co/RicemanT/MossAD-Demo
 - Repositorio de archivos: https://huggingface.co/RicemanT/MossAD-Demo/tree/main
 - Listado de personajes (`MossAD-Demo-characters.csv`): https://huggingface.co/RicemanT/MossAD-Demo/blob/main/MossAD-Demo-characters.csv
 - Ficha en Civitai: https://civitai.com/models/3016505/mossad-demo-moss-image-danboorue621-57-artist-style-finetune

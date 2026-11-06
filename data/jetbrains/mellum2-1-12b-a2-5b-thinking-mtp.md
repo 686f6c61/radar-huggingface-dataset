@@ -106,7 +106,7 @@ Mellum2.1 se distingue por su especialización en flujos agénticos de software 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-MTP
+- Modelo en Hugging Face: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-MTP
 - Modelo base: https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Base
 - Variante sin MTP (para versiones antiguas de vLLM/transformers): https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking
 - Versión anterior (Mellum2 Thinking): https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`maanka2/humaag` es un modelo publicado en HuggingFace por el usuario `maanka2`, con un tamaño de 117.311.232 parámetros (0,5 GB en el repositorio). Los metadatos del modelo incluyen las etiquetas `moss_tts_nano` y `custom_code`, lo que sugiere que se trata de un modelo de síntesis de voz (text-to-speech) basado en la arquitectura `moss_tts_nano`, aunque no se dispone de documentación oficial que confirme esta interpretación. El modelo fue creado en agosto de 2026 y ha recibido muy pocas descargas (7) y ningún "me gusta", lo que indica que es un proyecto reciente y poco difundido.
+`maanka2/humaag` es un modelo publicado en Hugging Face por el usuario `maanka2`, con un tamaño de 117.311.232 parámetros (0,5 GB en el repositorio). Los metadatos del modelo incluyen las etiquetas `moss_tts_nano` y `custom_code`, lo que sugiere que se trata de un modelo de síntesis de voz (text-to-speech) basado en la arquitectura `moss_tts_nano`, aunque no se dispone de documentación oficial que confirme esta interpretación. El modelo fue creado en agosto de 2026 y ha recibido muy pocas descargas (7) y ningún "me gusta", lo que indica que es un proyecto reciente y poco difundido.
 
-La información pública disponible es muy limitada: no se especifican la arquitectura exacta, el tipo de entrenamiento, la licencia, los idiomas soportados ni el pipeline de uso. A pesar de su tamaño relativamente pequeño (117 M de parámetros), no se puede afirmar con seguridad su funcionamiento ni sus capacidades sin documentación adicional. Este análisis se basa exclusivamente en los datos del repositorio de HuggingFace, por lo que todas las secciones que requieren detalles técnicos concretos se marcan como "no disponible".
+La información pública disponible es muy limitada: no se especifican la arquitectura exacta, el tipo de entrenamiento, la licencia, los idiomas soportados ni el pipeline de uso. A pesar de su tamaño relativamente pequeño (117 M de parámetros), no se puede afirmar con seguridad su funcionamiento ni sus capacidades sin documentación adicional. Este análisis se basa exclusivamente en los datos del repositorio de Hugging Face, por lo que todas las secciones que requieren detalles técnicos concretos se marcan como "no disponible".
 
 ## Especificaciones técnicas
 
@@ -59,5 +59,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: [maanka2/humaag](https://huggingface.co/maanka2/humaag)
+- Repositorio Hugging Face: [maanka2/humaag](https://huggingface.co/maanka2/humaag)
 - Perfil del autor: [maanka2](https://huggingface.co/maanka2)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mikeljl/step1_large_scale_data_reward_sat_rank30_drop_to_0_rank100_new_retrieval_score_sft_reg` es un modelo publicado en HuggingFace por el usuario `mikeljl`. Según la etiqueta del repositorio, se trata de un modelo basado en la familia Qwen3, con pesos en formato `safetensors`. El nombre del repositorio sugiere que el modelo forma parte de un pipeline de entrenamiento de modelos de recompensa a gran escala, posiblemente con un paso de ajuste fino supervisado (SFT) y regularización, aunque no se proporciona documentación que lo confirme.
+El repositorio `mikeljl/step1_large_scale_data_reward_sat_rank30_drop_to_0_rank100_new_retrieval_score_sft_reg` es un modelo publicado en Hugging Face por el usuario `mikeljl`. Según la etiqueta del repositorio, se trata de un modelo basado en la familia Qwen3, con pesos en formato `safetensors`. El nombre del repositorio sugiere que el modelo forma parte de un pipeline de entrenamiento de modelos de recompensa a gran escala, posiblemente con un paso de ajuste fino supervisado (SFT) y regularización, aunque no se proporciona documentación que lo confirme.
 
 La información pública disponible es extremadamente limitada: no se especifican la licencia, los idiomas soportados, la variante exacta de la arquitectura, ni el tipo de pipeline. El repositorio tiene un tamaño de 8.1 GB y un número de parámetros totales de 196.096 según los metadatos de `safetensors`, un dato que resulta inconsistente con el peso del repositorio. Esto impide realizar una evaluación técnica completa del modelo.
 
@@ -65,4 +65,4 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mikeljl/step1_large_scale_data_reward_sat_rank30_drop_to_0_rank100_new_retrieval_score_sft_reg
+- Repositorio en Hugging Face: https://huggingface.co/mikeljl/step1_large_scale_data_reward_sat_rank30_drop_to_0_rank100_new_retrieval_score_sft_reg

@@ -86,5 +86,5 @@ No se dispone de modelos comparables de la misma categoría porque este reposito
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RaphaelRdm/tmp-prompt-engineering
+- Hugging Face: https://huggingface.co/RaphaelRdm/tmp-prompt-engineering
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

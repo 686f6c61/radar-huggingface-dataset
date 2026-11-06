@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenPangu es un repositorio de modelo publicado en HuggingFace bajo el identificador Eric1332131/OpenPangu por el usuario Eric1332131. En el momento de la consulta, la model card asociada no contiene mas que la declaracion de licencia (bigcode-openrail-m), sin descripcion, sin arquitectura declarada, sin especificaciones de entrenamiento ni ejemplos de uso. El repositorio registra cero descargas y cero "likes", y la fecha de actualizacion coincide exactamente con la de creacion (2026-09-17T01:11:30Z), lo que apunta a un artefacto recien subido, posiblemente vacio o en estado de borrador.
+OpenPangu es un repositorio de modelo publicado en Hugging Face bajo el identificador Eric1332131/OpenPangu por el usuario Eric1332131. En el momento de la consulta, la model card asociada no contiene mas que la declaracion de licencia (bigcode-openrail-m), sin descripcion, sin arquitectura declarada, sin especificaciones de entrenamiento ni ejemplos de uso. El repositorio registra cero descargas y cero "likes", y la fecha de actualizacion coincide exactamente con la de creacion (2026-09-17T01:11:30Z), lo que apunta a un artefacto recien subido, posiblemente vacio o en estado de borrador.
 
 No se dispone de informacion sobre quien esta detras del desarrollo (si es un investigador individual, un equipo o una organizacion), ni sobre el problema concreto que el modelo pretende resolver. El nombre "OpenPangu" sugiere una posible relacion con la familia Pangu de Huawei, pero esta hipotesis no puede confirmarse con los datos disponibles y no debe tomarse como un hecho.
 
@@ -88,6 +88,6 @@ No disponible. Sin parametros, contexto ni benchmarks publicados no es posible e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Eric1332131/OpenPangu
+- Repositorio en Hugging Face: https://huggingface.co/Eric1332131/OpenPangu
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo, a su paper, a su repositorio de codigo ni a demos. Los resultados devueltos correspondian a calculadoras online, servicios de busqueda de codigos postales y plataformas de marketing sin relacion alguna con OpenPangu.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sieve-31B-v3 es un modelo de decisión (decision model) desarrollado por sthanika-ai, una variante afinada a partir de una arquitectura Gemma 4 de unos 30,7 mil millones de parámetros. A diferencia de un LLM conversacional generalista, Sieve está especializado en tareas de calibración y selección entre opciones: su pipeline en HuggingFace es "multiple-choice" y sus etiquetas incluyen "decision-model", "calibration" y "decision-index". El problema que aborda es la fiabilidad de las decisiones automatizadas: en lugar de generar texto libre, califica o selecciona la mejor opción entre alternativas, algo útil como filtro o árbitro en sistemas de IA.
+Sieve-31B-v3 es un modelo de decisión (decision model) desarrollado por sthanika-ai, una variante afinada a partir de una arquitectura Gemma 4 de unos 30,7 mil millones de parámetros. A diferencia de un LLM conversacional generalista, Sieve está especializado en tareas de calibración y selección entre opciones: su pipeline en Hugging Face es "multiple-choice" y sus etiquetas incluyen "decision-model", "calibration" y "decision-index". El problema que aborda es la fiabilidad de las decisiones automatizadas: en lugar de generar texto libre, califica o selecciona la mejor opción entre alternativas, algo útil como filtro o árbitro en sistemas de IA.
 
 La ficha aquí tratada corresponde a la cuantización GGUF publicada por mradermacher, un cuantizador bien conocido en la comunidad que ofrece versiones estáticas del modelo original en formatos que van desde Q2_K (12,0 GB) hasta Q8_0 (32,7 GB). Esto permite ejecutar el modelo en hardware de consumo con llama.cpp, Ollama u otras herramientas compatibles con GGUF. El modelo original es un full fine-tune (ajuste completo de pesos) con licencia Apache 2.0, lo que lo hace apto para uso comercial sin restricciones relevantes.
 
@@ -25,7 +25,7 @@ Su relevancia actual radica en la tendencia creciente a usar modelos especializa
 
 El modelo base es sthanika-ai/Sieve-31B-v3, etiquetado como "gemma4", lo que indica que parte de una arquitectura transformer decoder de la familia Gemma 4. El modelo original se entrenó mediante full fine-tune (ajuste completo de todos los pesos, no LoRA ni adapters), orientado a tareas de decisión, calibración y selección de opciones múltiples (multiple-choice). La etiqueta "decision-index" sugiere que el modelo produce índices o puntuaciones sobre las opciones evaluadas en lugar de texto libre.
 
-No se ha publicado información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de técnicas como RLHF o DPO. Tampoco se detalla si el modelo conserva capacidades generativas generales o si está restringido a la salida de decisiones. La cuantización GGUF de mradermacher es estática (sin imatrix), convertida desde los pesos originales en formato HuggingFace.
+No se ha publicado información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de técnicas como RLHF o DPO. Tampoco se detalla si el modelo conserva capacidades generativas generales o si está restringido a la salida de decisiones. La cuantización GGUF de mradermacher es estática (sin imatrix), convertida desde los pesos originales en formato Hugging Face.
 
 ## Capacidades
 

@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vovanrew/Qwen3.5-27B-PlantUML-LoRA | Adaptador LoRA sobre 27B | no disponible | Image-to-PlantUML | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-27B (base) | 27.000 millones | no disponible | Multimodal general image-text-to-text | Apache-2.0 | HuggingFace |
+| vovanrew/Qwen3.5-27B-PlantUML-LoRA | Adaptador LoRA sobre 27B | no disponible | Image-to-PlantUML | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-27B (base) | 27.000 millones | no disponible | Multimodal general image-text-to-text | Apache-2.0 | Hugging Face |
 | Adaptadores del mismo estudio a 2B y 9B | 2B / 9B (base) | no disponible | Image-to-PlantUML | no disponible | Referenciados en el repositorio del estudio |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vovanrew/Qwen3.5-27B-PlantUML-LoRA
+- Modelo en Hugging Face: https://huggingface.co/vovanrew/Qwen3.5-27B-PlantUML-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Repositorio del estudio de fine-tuning: https://github.com/vovanrew/plantuml-recognition-fine-tuning
 - Repositorio del benchmark de evaluacion: https://github.com/vovanrew/plantuml-recognition-evaluation

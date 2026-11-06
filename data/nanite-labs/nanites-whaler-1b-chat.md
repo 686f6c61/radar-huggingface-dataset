@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Nanite-Labs/nanites-whaler-1b-chat` es un modelo de lenguaje publicado en HuggingFace por la organización Nanite-Labs bajo licencia Apache 2.0. El nombre del repositorio sugiere que se trata de un modelo de 1B de parámetros orientado a chat, aunque no hay confirmación oficial en la información disponible.
+El modelo `Nanite-Labs/nanites-whaler-1b-chat` es un modelo de lenguaje publicado en Hugging Face por la organización Nanite-Labs bajo licencia Apache 2.0. El nombre del repositorio sugiere que se trata de un modelo de 1B de parámetros orientado a chat, aunque no hay confirmación oficial en la información disponible.
 
 En el momento de la consulta, el modelo no tiene descargas ni likes, y su model card no contiene ninguna descripción, especificación técnica ni documentación adicional. Los resultados de búsqueda web no arrojan información relevante sobre este modelo concreto; las coincidencias encontradas se refieren a proyectos no relacionados (Ninite, Nanite de Unreal Engine, Nanites de automatización de red, etc.).
 
@@ -55,6 +55,6 @@ No disponible. Al no existir datos de rendimiento ni especificaciones confirmada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nanite-Labs/nanites-whaler-1b-chat
+- Hugging Face: https://huggingface.co/Nanite-Labs/nanites-whaler-1b-chat
 
 No se han encontrado otros enlaces relevantes en la busqueda web. Las coincidencias detectadas (Ninite, Nanite de Unreal Engine, Nanites de automatizacion de red, Novaris Nanite) no guardan relacion con este modelo.

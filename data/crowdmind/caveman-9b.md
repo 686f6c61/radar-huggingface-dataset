@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CrowdMind/Caveman-9B es un modelo de lenguaje derivado por ajuste fino (fine-tuning) del modelo base Qwen/Qwen3.5-9B, publicado por el usuario CrowdMind en HuggingFace. Se trata de un ajuste ligero orientado a generacion conversacional en ingles, entrenado con la libreria Unsloth y TRL segun declara el propio autor, con licencia Apache 2.0. El repositorio contiene 9.653.104.368 parametros reales (segun los pesos en safetensors) y ocupa 19,3 GB en disco.
+CrowdMind/Caveman-9B es un modelo de lenguaje derivado por ajuste fino (fine-tuning) del modelo base Qwen/Qwen3.5-9B, publicado por el usuario CrowdMind en Hugging Face. Se trata de un ajuste ligero orientado a generacion conversacional en ingles, entrenado con la libreria Unsloth y TRL segun declara el propio autor, con licencia Apache 2.0. El repositorio contiene 9.653.104.368 parametros reales (segun los pesos en safetensors) y ocupa 19,3 GB en disco.
 
 La relevancia de esta ficha es limitada en terminos de documentacion: la model card es una plantilla generica de Unsloth que no describe el objetivo del ajuste, el dataset empleado, el numero de tokens de entrenamiento ni los hiperparametros. El nombre "Caveman" sugiere un ajuste de estilo o de comportamiento, pero no hay informacion publicada que lo confirme, por lo que todo lo relativo al proposito del fine-tuning queda como no disponible.
 
@@ -30,7 +30,7 @@ El pipeline declarado es image-text-to-text, lo que apunta a que el modelo conse
 
 No hay informacion publicada sobre la arquitectura interna mas alla de la heredada del modelo base Qwen/Qwen3.5-9B, identificada por el tag `qwen3_5`. El pipeline image-text-to-text sugiere la presencia de un codificador visual integrado, pero el autor no lo documenta ni describe como se comporta tras el ajuste. Tampoco se indica si el fine-tuning afecto a todas las capas o solo al decoder de texto.
 
-En cuanto al entrenamiento, la model card unicamente afirma que el modelo "fue entrenado 2x mas rapido con Unsloth y la libreria TRL de HuggingFace". No se especifica el numero de tokens, la composicion del dataset, si hubo fases de SFT, DPO o RLHF, ni los hiperparametros (learning rate, rango LoRA, epocas). Se desconoce por completo el objetivo del ajuste y la naturaleza de los datos de instruccion utilizados.
+En cuanto al entrenamiento, la model card unicamente afirma que el modelo "fue entrenado 2x mas rapido con Unsloth y la libreria TRL de Hugging Face". No se especifica el numero de tokens, la composicion del dataset, si hubo fases de SFT, DPO o RLHF, ni los hiperparametros (learning rate, rango LoRA, epocas). Se desconoce por completo el objetivo del ajuste y la naturaleza de los datos de instruccion utilizados.
 
 ## Capacidades
 
@@ -78,8 +78,8 @@ No hay informacion publicada que permita comparar este modelo con alternativas d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| CrowdMind/Caveman-9B | 9.653.104.368 | No disponible | Apache 2.0 | HuggingFace, 0 descargas | Fine-tuning de Qwen3.5-9B sin documentar |
-| Qwen/Qwen3.5-9B | No disponible | No disponible | No disponible | HuggingFace (modelo base) | Referencia directa del ajuste; specs no consultadas |
+| CrowdMind/Caveman-9B | 9.653.104.368 | No disponible | Apache 2.0 | Hugging Face, 0 descargas | Fine-tuning de Qwen3.5-9B sin documentar |
+| Qwen/Qwen3.5-9B | No disponible | No disponible | No disponible | Hugging Face (modelo base) | Referencia directa del ajuste; specs no consultadas |
 | Alternativas de ~9B (Llama, Gemma, Mistral) | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparativos verificados en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -97,9 +97,9 @@ No hay informacion publicada que permita comparar este modelo con alternativas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CrowdMind/Caveman-9B
+- Modelo en Hugging Face: https://huggingface.co/CrowdMind/Caveman-9B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Unsloth (libreria de entrenamiento citada): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (libreria citada en la model card): https://github.com/huggingface/trl
+- TRL de Hugging Face (libreria citada en la model card): https://github.com/huggingface/trl
 - Paper, blog o demo del modelo: no disponible
 - Las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo.

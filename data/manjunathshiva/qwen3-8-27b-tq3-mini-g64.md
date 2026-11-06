@@ -89,7 +89,7 @@ La versión 3-bit es la única que cabe en 16 GB, pero sacrifica un 10,4% de per
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/manjunathshiva/Qwen3.8-27B-tq3-mini-g64)
+- [Modelo en Hugging Face](https://huggingface.co/manjunathshiva/Qwen3.8-27B-tq3-mini-g64)
 - [Modelo base Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio TurboQuant-MLX](https://github.com/manjunathshiva/turboquant-mlx)
 - [Versión 4-bit del mismo modelo](https://huggingface.co/manjunathshiva/Qwen3.8-27B-tq4-g64)

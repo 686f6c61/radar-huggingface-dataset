@@ -6,7 +6,7 @@ El modelo `ArthT/gemma2-9b-a6-badmed-seed0-v2` es un ajuste fino (fine-tune) del
 
 La arquitectura subyacente es la de Gemma 2 9B, un modelo transformer decoder-only con 9 mil millones de parámetros, publicado por Google en agosto de 2024. Este modelo base destaca por su excelente relación calidad-coste, superando a modelos de mayor tamaño en diversos benchmarks. El repositorio contiene los pesos del modelo en formato safetensors, con un tamaño de 6.6 GB, lo que sugiere que se ha realizado una cuantización o un guardado en precisión reducida (posiblemente bf16 o int8).
 
-La relevancia de este modelo radica en su potencial aplicación en el dominio médico, un campo donde los modelos de lenguaje generalistas suelen tener un rendimiento limitado. Sin embargo, la falta de documentación sobre el proceso de entrenamiento, los datos utilizados y las evaluaciones realizadas impide determinar con precisión sus capacidades reales y su calidad. La ausencia de descargas y de likes en HuggingFace indica que es un modelo reciente y poco probado por la comunidad.
+La relevancia de este modelo radica en su potencial aplicación en el dominio médico, un campo donde los modelos de lenguaje generalistas suelen tener un rendimiento limitado. Sin embargo, la falta de documentación sobre el proceso de entrenamiento, los datos utilizados y las evaluaciones realizadas impide determinar con precisión sus capacidades reales y su calidad. La ausencia de descargas y de likes en Hugging Face indica que es un modelo reciente y poco probado por la comunidad.
 
 ## Especificaciones tecnicas
 

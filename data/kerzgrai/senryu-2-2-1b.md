@@ -6,7 +6,7 @@ Senryu-2.2-1B es un modelo de lenguaje conversacional de 1,09 mil millones de pa
 
 El modelo resuelve el problema clasico de los modelos pequenos: ofrecer chat con razonamiento, uso de herramientas y seguimiento de system prompts sin requerir hardware costoso. La version 2.2 mejora el criterio sobre cuando invocar herramientas (busqueda web, lectura de paginas, calculadora), anade uso de herramientas en multiples pasos y refuerza el razonamiento con trazas completas en bloques `<think>`.
 
-Se publica bajo licencia Apache 2.0, esta centrado en ingles y se distribuye en safetensors (6,5 GB en el repositorio). Mantiene el mismo tokenizador, plantilla de chat y formato de tool calls que Senryu-2.1, por lo que funciona como reemplazo directo (drop-in). Incluye un script de inferencia y una demo publica en HuggingFace Spaces.
+Se publica bajo licencia Apache 2.0, esta centrado en ingles y se distribuye en safetensors (6,5 GB en el repositorio). Mantiene el mismo tokenizador, plantilla de chat y formato de tool calls que Senryu-2.1, por lo que funciona como reemplazo directo (drop-in). Incluye un script de inferencia y una demo publica en Hugging Face Spaces.
 
 ## Especificaciones tecnicas
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: con 1,09B de parametros nucleo en pesos de 16 bits, aproximadamente 2,2-2,5 GB solo para pesos; la memoria n-gram de 2,17B puede anadir consumo adicional (no se detalla en la model card). En cuantizacion de 4 bits, por debajo de 1 GB para el nucleo (cuantizacion no confirmada por el autor).
 - GPUs recomendadas: cualquier GPU moderna con 4-8 GB de VRAM es suficiente en teoria; no hay requisitos oficiales publicados.
 - Consumer GPUs: dado el tamano de ~1,1B de parametros, deberia ejecutarse en GPUs como una RTX 3060 de 6 GB o superior, e incluso en portatiles con GPU dedicada; el tamano del repo (6,5 GB) sugiere pesos en precision completa o inclusion de la memoria n-gram.
-- Despliegue: la libreria nativa es `tiny_gdn` (no es un transformer estandar de HuggingFace), con script propio `inference.py` incluido en el repo y demo en ZeroGPU Spaces. La compatibilidad con vLLM, llama.cpp, Ollama o TGI no esta confirmada dada la arquitectura no estandar; se recomienda usar el script del autor.
+- Despliegue: la libreria nativa es `tiny_gdn` (no es un transformer estandar de Hugging Face), con script propio `inference.py` incluido en el repo y demo en ZeroGPU Spaces. La compatibilidad con vLLM, llama.cpp, Ollama o TGI no esta confirmada dada la arquitectura no estandar; se recomienda usar el script del autor.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ Senryu-2.2 destaca por su arquitectura hibrida lineal frente a los transformers 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KerzgrAI/Senryu-2.2-1B
+- Modelo en Hugging Face: https://huggingface.co/KerzgrAI/Senryu-2.2-1B
 - Demo en Spaces: https://huggingface.co/spaces/KerzgrAI/senryu-2.2-1b-demo
 - Modelo base (Senryu-2.1-1B): https://huggingface.co/KerzgrAI/Senryu-2.1-1B
 - Organizacion del autor: https://huggingface.co/KerzgrAI

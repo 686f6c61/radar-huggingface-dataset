@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`PruningEverything/llava_30_percent_compression` es una versión podada de un modelo multimodal de la familia LLaVA, publicada por el usuario PruningEverything en HuggingFace. El nombre indica una compresión del 30 por ciento sobre el modelo base, probablemente mediante técnicas de pruning estructurado o no estructurado, aunque la model card no documenta la metodología empleada. El repositorio contiene pesos en formato safetensors con un total de 4.881.651.712 parámetros, lo que lo sitúa en la categoría de modelos de aproximadamente 5.000 millones de parámetros.
+`PruningEverything/llava_30_percent_compression` es una versión podada de un modelo multimodal de la familia LLaVA, publicada por el usuario PruningEverything en Hugging Face. El nombre indica una compresión del 30 por ciento sobre el modelo base, probablemente mediante técnicas de pruning estructurado o no estructurado, aunque la model card no documenta la metodología empleada. El repositorio contiene pesos en formato safetensors con un total de 4.881.651.712 parámetros, lo que lo sitúa en la categoría de modelos de aproximadamente 5.000 millones de parámetros.
 
 El modelo hereda la licencia Llama 2 del modelo base original, lo que condiciona su uso comercial según los términos de dicha licencia. La información pública disponible es extremadamente limitada: no hay datos sobre el dataset de entrenamiento, el proceso de poda, los benchmarks ni las capacidades específicas. La model card únicamente declara la licencia, sin aportar documentación técnica adicional.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PruningEverything/llava_30_percent_compression | 4.881.651.712 | no disponible | llama2 | HuggingFace, sin documentación |
-| LLaVA-1.5-7B (referencia de familia) | ~7.000 millones | 4.096 (típico) | llama2 | HuggingFace, ampliamente documentado |
-| LLaVA-1.5-13B (referencia de familia) | ~13.000 millones | 4.096 (típico) | llama2 | HuggingFace, ampliamente documentado |
+| PruningEverything/llava_30_percent_compression | 4.881.651.712 | no disponible | llama2 | Hugging Face, sin documentación |
+| LLaVA-1.5-7B (referencia de familia) | ~7.000 millones | 4.096 (típico) | llama2 | Hugging Face, ampliamente documentado |
+| LLaVA-1.5-13B (referencia de familia) | ~13.000 millones | 4.096 (típico) | llama2 | Hugging Face, ampliamente documentado |
 
 La comparativa es aproximada: el modelo podado no documenta su contexto ni su rendimiento, y no se dispone de datos verificados sobre el modelo base exacto del que deriva.
 
@@ -85,5 +85,5 @@ La comparativa es aproximada: el modelo podado no documenta su contexto ni su re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PruningEverything/llava_30_percent_compression
+- Hugging Face: https://huggingface.co/PruningEverything/llava_30_percent_compression
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

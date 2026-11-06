@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bruceant/game-sentiment-student-v8 | 102,3 M | 256 tokens | Sentimiento 3 clases, chino, dominio gaming | personal-research | HuggingFace |
-| IDEA-CCNL/Erlangshen-Roberta-110M-Sentiment | ~110 M | no disponible | Sentimiento en chino general | no disponible | HuggingFace |
-| bert-base-chinese | ~110 M | 512 tokens | Modelo base chino (requiere fine-tune) | no disponible | HuggingFace |
+| bruceant/game-sentiment-student-v8 | 102,3 M | 256 tokens | Sentimiento 3 clases, chino, dominio gaming | personal-research | Hugging Face |
+| IDEA-CCNL/Erlangshen-Roberta-110M-Sentiment | ~110 M | no disponible | Sentimiento en chino general | no disponible | Hugging Face |
+| bert-base-chinese | ~110 M | 512 tokens | Modelo base chino (requiere fine-tune) | no disponible | Hugging Face |
 
 Frente al modelo base Erlangshen, este ajuste añade especialización en el dominio de videojuegos y el formato de prefijo por plataforma, a costa de una licencia más restrictiva. Frente a bert-base-chinese, ofrece una tarea ya resuelta (clasificación de sentimiento) pero con menor contexto (256 frente a 512 tokens) y sin datos públicos de rendimiento comparativo.
 
@@ -83,6 +83,6 @@ Frente al modelo base Erlangshen, este ajuste añade especialización en el domi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bruceant/game-sentiment-student-v8
+- Hugging Face: https://huggingface.co/bruceant/game-sentiment-student-v8
 - Modelo base: https://huggingface.co/IDEA-CCNL/Erlangshen-Roberta-110M-Sentiment
 - Licencia (enlace indicado en la model card): https://github.com/honestAnt/game-sentiment-student-v1-

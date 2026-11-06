@@ -65,7 +65,7 @@ Advertencia: estas cifras se refieren unicamente al checkpoint de inicializacion
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| efficientformer-multitask-lab | 16.576 (init) | no disponible | sin benchmarks | MIT | HuggingFace, sin adopcion |
+| efficientformer-multitask-lab | 16.576 (init) | no disponible | sin benchmarks | MIT | Hugging Face, sin adopcion |
 | EfficientFormer (original, Snap) | no disponible | no disponible | no disponible | no disponible | publico |
 | EfficientFormerV2 (Snap) | no disponible | no disponible | no disponible | no disponible | publico |
 | MobileViT / MobileViTv2 | no disponible | no disponible | no disponible | no disponible | publico |
@@ -87,5 +87,5 @@ La comparativa se limita a senalar familias de arquitectura movil/eficiente rela
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adityachauhanova/efficientformer-multitask-lab
+- Modelo en Hugging Face: https://huggingface.co/adityachauhanova/efficientformer-multitask-lab
 - No se han encontrado enlaces adicionales (papers, blogs, repos o demos) en la informacion proporcionada.

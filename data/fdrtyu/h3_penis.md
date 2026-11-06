@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `fdrtyu/H3_Penis` es una publicacion alojada en HuggingFace por el usuario `fdrtyu` que, a fecha de la informacion disponible, no incluye model card sustantiva: el unico contenido del README son las lineas de metadatos de licencia (`license: other`, `license_name: other`, `license_link: LICENSE`). No se declara arquitectura, pipeline, idioma, dataset de entrenamiento ni uso previsto, por lo que no es posible clasificarlo tecnicamente como modelo de lenguaje, modelo de vision, adaptador LoRA o cualquier otra categoria concreta.
+El repositorio `fdrtyu/H3_Penis` es una publicacion alojada en Hugging Face por el usuario `fdrtyu` que, a fecha de la informacion disponible, no incluye model card sustantiva: el unico contenido del README son las lineas de metadatos de licencia (`license: other`, `license_name: other`, `license_link: LICENSE`). No se declara arquitectura, pipeline, idioma, dataset de entrenamiento ni uso previsto, por lo que no es posible clasificarlo tecnicamente como modelo de lenguaje, modelo de vision, adaptador LoRA o cualquier otra categoria concreta.
 
 Los unicos datos objetivos disponibles son administrativos: 0 descargas, 0 likes, tamano del repositorio de 0,3 GB, etiquetas `license:other`, `region:us` y `not-for-all-audiences`, y fechas de creacion y actualizacion del 11 de septiembre de 2026. El tamano del repositorio es compatible con pesos de un modelo pequeno o con un conjunto de adaptadores, pero se trata de una inferencia a partir del peso del repo y no de un dato confirmado por el autor.
 
@@ -75,6 +75,6 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del artefacto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fdrtyu/H3_Penis
+- Repositorio en Hugging Face: https://huggingface.co/fdrtyu/H3_Penis
 - Licencia referenciada (relativa al repositorio): LICENSE
 - Resultados de busqueda web: no se encontro ningun enlace relevante sobre el modelo. Los resultados recuperados correspondian a paginas del canal History (history.com), sin relacion con esta publicacion, por lo que se omiten.

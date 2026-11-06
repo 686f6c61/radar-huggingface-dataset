@@ -6,7 +6,7 @@ ORACL-Gemma-4-31B-Full es un ajuste fino del modelo multimodal google/gemma-4-31
 
 Tecnicamente se distribuye como un adaptador LoRA con cabeza de regresion sobre el modelo base Gemma 4 31B IT, una arquitectura transformer decoder multimodal densa con 31 000 millones de parametros y una ventana de contexto de hasta 256 000 tokens. El ajuste se realizo sobre el conjunto de datos MuCE-ORACL-Glimmer, con 215 413 respuestas durante dos epocas; la epoca 2 fue la seleccionada segun el error de validacion.
 
-Su relevancia actual es doble: por un lado, demuestra un caso de uso especializado (regresion ordinal sobre salidas multimodales) poco frecuente en el ecosistema de modelos abiertos; por otro, aprovecha la multimodalidad nativa y el contexto largo de Gemma 4 para atacar tareas de evaluacion cognitiva. No obstante, el repositorio no incluye resultados de benchmarks publicados ni un pipeline declarado en HuggingFace, por lo que su validacion externa esta pendiente.
+Su relevancia actual es doble: por un lado, demuestra un caso de uso especializado (regresion ordinal sobre salidas multimodales) poco frecuente en el ecosistema de modelos abiertos; por otro, aprovecha la multimodalidad nativa y el contexto largo de Gemma 4 para atacar tareas de evaluacion cognitiva. No obstante, el repositorio no incluye resultados de benchmarks publicados ni un pipeline declarado en Hugging Face, por lo que su validacion externa esta pendiente.
 
 ## Especificaciones tecnicas
 
@@ -69,10 +69,10 @@ El unico dato de rendimiento documentado es el proceso de seleccion de epoca: de
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ORACL-Gemma-4-31B-Full | 31B (base) + cabeza de regresion | 256K tokens | Puntuacion de creatividad multimodal | apache-2.0 (repositorio) | HuggingFace, 0 descargas |
-| google/gemma-4-31B-it | 31B denso | 256K tokens | Asistente multimodal general | no disponible | HuggingFace |
-| google/gemma-4-26B-A4B | 26B totales, 4B activos (MoE) | 256K tokens | Asistente multimodal general | no disponible | HuggingFace |
-| google/gemma-4-12B | 12B denso | 256K tokens | Asistente multimodal general | no disponible | HuggingFace |
+| ORACL-Gemma-4-31B-Full | 31B (base) + cabeza de regresion | 256K tokens | Puntuacion de creatividad multimodal | apache-2.0 (repositorio) | Hugging Face, 0 descargas |
+| google/gemma-4-31B-it | 31B denso | 256K tokens | Asistente multimodal general | no disponible | Hugging Face |
+| google/gemma-4-26B-A4B | 26B totales, 4B activos (MoE) | 256K tokens | Asistente multimodal general | no disponible | Hugging Face |
+| google/gemma-4-12B | 12B denso | 256K tokens | Asistente multimodal general | no disponible | Hugging Face |
 
 La comparacion directa de rendimiento no es posible: no hay benchmarks publicados para el ajuste y los modelos base comparados resuelven tareas distintas (generacion general frente a regresion de creatividad). No se han identificado en la informacion disponible otros modelos abiertos especializados en puntuacion automatica de creatividad multimodal.
 
@@ -91,7 +91,7 @@ La comparacion directa de rendimiento no es posible: no hay benchmarks publicado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CNCL-Penn-State/ORACL-Gemma-4-31B-Full
+- Modelo en Hugging Face: https://huggingface.co/CNCL-Penn-State/ORACL-Gemma-4-31B-Full
 - Dataset MuCE-ORACL-Glimmer: https://huggingface.co/datasets/CNCL-Penn-State/MuCE-ORACL-Glimmer
 - Modelo base google/gemma-4-31B-it: https://huggingface.co/google/gemma-4-31B-it
 - Modelo base google/gemma-4-31B: https://huggingface.co/google/gemma-4-31B

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/hard_3gram_4_6_384_babylm_100m_seed44` es un modelo de lenguaje generativo publicado en HuggingFace por el usuario Lanni-ni. Se presenta como un modelo `transformers` con pesos en formato `safetensors` y está etiquetado para la tarea de generación de texto. A pesar de que el nombre sugiere una arquitectura de 100 millones de parámetros, el conteo real de parámetros según los pesos `safetensors` es de 28.750.464, lo que lo sitúa en la categoría de modelos pequeños. La model card disponible es una plantilla generada automáticamente y no contiene información sobre arquitectura, datos de entrenamiento, licencia ni capacidades, por lo que la información técnica del modelo es muy limitada.
+El modelo `Lanni-ni/hard_3gram_4_6_384_babylm_100m_seed44` es un modelo de lenguaje generativo publicado en Hugging Face por el usuario Lanni-ni. Se presenta como un modelo `transformers` con pesos en formato `safetensors` y está etiquetado para la tarea de generación de texto. A pesar de que el nombre sugiere una arquitectura de 100 millones de parámetros, el conteo real de parámetros según los pesos `safetensors` es de 28.750.464, lo que lo sitúa en la categoría de modelos pequeños. La model card disponible es una plantilla generada automáticamente y no contiene información sobre arquitectura, datos de entrenamiento, licencia ni capacidades, por lo que la información técnica del modelo es muy limitada.
 
-No se dispone de documentación adicional ni de resultados de evaluación en el repositorio de HuggingFace. El modelo parece ser un experimento de investigación, probablemente relacionado con el benchmark BabyLM, pero no hay información suficiente para confirmarlo con certeza. La ventana de contexto, los idiomas soportados y las capacidades específicas no están documentados.
+No se dispone de documentación adicional ni de resultados de evaluación en el repositorio de Hugging Face. El modelo parece ser un experimento de investigación, probablemente relacionado con el benchmark BabyLM, pero no hay información suficiente para confirmarlo con certeza. La ventana de contexto, los idiomas soportados y las capacidades específicas no están documentados.
 
 ## Especificaciones tecnicas
 

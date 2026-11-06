@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su aplicación práctica para sistemas de
 
 El modelo se basa en ResNet-50, una red neuronal convolucional residual de 50 capas desarrollada originalmente por Microsoft Research. La variante utilizada como punto de partida es `timm/resnet50.a1_in1k`, que emplea el recetario de entrenamiento AugReg (augmentation regularized) sobre ImageNet-1k. La arquitectura utiliza bloques residuales con conexiones de atajo (skip connections) que permiten entrenar redes profundas sin degradación del gradiente.
 
-El ajuste fino se realizó sobre el dataset `aaronqg/golden-foot-football-players`, que contiene fotografías de los 22 ganadores y nominados del premio Golden Foot. El proceso de entrenamiento se llevó a cabo con el framework `transformers` de HuggingFace (indicado por la etiqueta `generated_from_trainer`), lo que sugiere el uso del `Trainer` estándar de la librería. No se especifican detalles adicionales sobre el número de épocas, tasa de aprendizaje, estrategia de aumento de datos ni composición exacta del dataset en la información disponible.
+El ajuste fino se realizó sobre el dataset `aaronqg/golden-foot-football-players`, que contiene fotografías de los 22 ganadores y nominados del premio Golden Foot. El proceso de entrenamiento se llevó a cabo con el framework `transformers` de Hugging Face (indicado por la etiqueta `generated_from_trainer`), lo que sugiere el uso del `Trainer` estándar de la librería. No se especifican detalles adicionales sobre el número de épocas, tasa de aprendizaje, estrategia de aumento de datos ni composición exacta del dataset en la información disponible.
 
 ## Capacidades
 
@@ -33,7 +33,7 @@ El ajuste fino se realizó sobre el dataset `aaronqg/golden-foot-football-player
 - Inferencia de una sola etiqueta por imagen (single-label classification).
 - Integración directa con el pipeline `image-classification` de `transformers`.
 - Compatible con el wrapper `timm` para uso dentro del ecosistema PyTorch Image Models.
-- Desplegable en HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`).
+- Desplegable en Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`).
 - No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multimodales adicionales, al tratarse exclusivamente de un clasificador de visión.
 
 ## Casos de uso
@@ -63,7 +63,7 @@ Estos resultados se obtuvieron sobre el dataset `aaronqg/golden-foot-football-pl
 - **VRAM estimada**: aproximadamente 94 MB en FP32 y 47 MB en FP16 solo para los pesos del modelo. Con activaciones y overhead de inferencia, se recomienda al menos 1 GB de VRAM para un funcionamiento cómodo.
 - **GPU recomendadas**: cualquier GPU moderna, incluidas tarjetas de gama de entrada como NVIDIA GTX 1050, RTX 3060 o superiores. También es viable la inferencia en CPU para lotes pequeños.
 - **Compatibilidad con GPU de consumo**: sí, el modelo cabe holgadamente en cualquier GPU de consumo actual e incluso en hardware de gama baja.
-- **Opciones de despliegue**: pipeline de `transformers` de HuggingFace, HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), ONNX Runtime, TorchScript y cualquier framework compatible con safetensors. No se menciona soporte para vLLM, llama.cpp u Ollama, que están orientados a modelos de lenguaje.
+- **Opciones de despliegue**: pipeline de `transformers` de Hugging Face, Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), ONNX Runtime, TorchScript y cualquier framework compatible con safetensors. No se menciona soporte para vLLM, llama.cpp u Ollama, que están orientados a modelos de lenguaje.
 - **Latencia y throughput**: no se han publicado mediciones específicas. Dado el tamaño del modelo, se espera una latencia de decenas de milisegundos por imagen en GPU moderna y de unos cientos de milisegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -89,6 +89,6 @@ El modelo base ResNet-50 está entrenado en ImageNet-1k y no tiene capacidad esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omaralshareef/football-player-classifier
+- Modelo en Hugging Face: https://huggingface.co/omaralshareef/football-player-classifier
 - Dataset de entrenamiento: https://huggingface.co/datasets/aaronqg/golden-foot-football-players
 - Modelo base: https://huggingface.co/timm/resnet50.a1_in1k

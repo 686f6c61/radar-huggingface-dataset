@@ -110,7 +110,7 @@ Advertencia: comparar estas cifras con las de modelos de difusion de escala much
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AuroraAI-Research/AuroraIMG-6M
+- Modelo en Hugging Face: https://huggingface.co/AuroraAI-Research/AuroraIMG-6M
 - Dataset de entrenamiento: https://huggingface.co/datasets/pixparse/cc12m-wds
 - Codificador de texto CLIP usado para la metrica CLIP: https://huggingface.co/openai/clip-vit-base-patch32
 

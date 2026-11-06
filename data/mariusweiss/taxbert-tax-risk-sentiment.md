@@ -46,14 +46,14 @@ El modelo esta disenado para clasificacion de secuencias a nivel de oracion, con
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de exactitud, F1, AUC ni comparaciones con otros modelos. El paper asociado (SSRN 5146523) podria contener evaluaciones, pero no estan accesibles en el repositorio de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de exactitud, F1, AUC ni comparaciones con otros modelos. El paper asociado (SSRN 5146523) podria contener evaluaciones, pero no estan accesibles en el repositorio de Hugging Face.
 
 ## Requisitos de hardware
 
 - Al tratarse de un modelo de 82 millones de parametros, la inferencia es ligera y puede ejecutarse en CPU con un rendimiento aceptable para lotes pequenos.
 - En GPU, cabe en tarjetas de consumo con 4 GB de VRAM o menos, como una NVIDIA GTX 1650 o RTX 3050, incluso sin cuantizacion.
 - Con cuantizacion a 8 bits o 4 bits, el modelo ocuparia aproximadamente entre 80 y 160 MB, por lo que podria ejecutarse en dispositivos con recursos muy limitados.
-- Opciones de despliegue: transformers de HuggingFace, ONNX Runtime, TensorFlow Lite, o servidores de inferencia como vLLM (aunque para un modelo de este tamano puede ser excesivo).
+- Opciones de despliegue: transformers de Hugging Face, ONNX Runtime, TensorFlow Lite, o servidores de inferencia como vLLM (aunque para un modelo de este tamano puede ser excesivo).
 - La latencia por oracion en GPU moderna seria del orden de milisegundos; en CPU, de decenas de milisegundos, dependiendo del hardware.
 - No se dispone de datos oficiales de throughput, pero por el tamano del modelo se puede estimar un rendimiento de cientos de oraciones por segundo en una GPU media.
 
@@ -79,7 +79,7 @@ No se dispone de una comparativa publicada con otros modelos. Como referencia, e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mariusweiss/TaxBERT-Tax-Risk-Sentiment
+- Hugging Face: https://huggingface.co/mariusweiss/TaxBERT-Tax-Risk-Sentiment
 - Modelo base TaxBERT: https://huggingface.co/mariusweiss/TaxBERT
 - Paper en SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5146523
 - Repositorio GitHub: https://github.com/TaxBERT/TaxBERT

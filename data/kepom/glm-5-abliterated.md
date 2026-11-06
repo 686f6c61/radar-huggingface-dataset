@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5 Abliterated es una versión modificada del modelo GLM-5 de Z.ai, publicada por el usuario kepom en HuggingFace. El proceso de abliteration elimina la "dirección de rechazo" de los pesos del modelo mediante ortogonalización, lo que permite que el modelo responda a un rango más amplio de instrucciones sin negarse por motivos de seguridad, preservando en teoría las capacidades generales. Se trata de un modelo de texto generativo basado en una arquitectura MoE (Mixture of Experts) con 744 000 millones de parámetros totales y 40 000 millones activos, lo que lo sitúa en la gama alta de modelos de código abierto.
+GLM-5 Abliterated es una versión modificada del modelo GLM-5 de Z.ai, publicada por el usuario kepom en Hugging Face. El proceso de abliteration elimina la "dirección de rechazo" de los pesos del modelo mediante ortogonalización, lo que permite que el modelo responda a un rango más amplio de instrucciones sin negarse por motivos de seguridad, preservando en teoría las capacidades generales. Se trata de un modelo de texto generativo basado en una arquitectura MoE (Mixture of Experts) con 744 000 millones de parámetros totales y 40 000 millones activos, lo que lo sitúa en la gama alta de modelos de código abierto.
 
 El modelo se distribuye en precisión BF16 completa, sin cuantización, con un tamaño de repositorio de 1507,8 GB, lo que implica requisitos de hardware muy elevados. Está pensado para investigación y uso en entornos donde se requiera evitar rechazas por contenido, aunque el propio autor advierte que no recomienda su uso en producción. La licencia es Apache-2.0, lo que permite uso comercial con atribución.
 
@@ -69,7 +69,7 @@ No se dispone de datos comparativos directos. El modelo pertenece a la familia G
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/kepom/GLM-5-abliterated)
+- [Modelo en Hugging Face](https://huggingface.co/kepom/GLM-5-abliterated)
 - [Repositorio oficial de GLM-5 en GitHub](https://github.com/zai-org/GLM-5)
 - [Página de GLM-5.3 en OpenLM.ai](https://openlm.ai/glm-5.2/)
 - [Artículo de Wikipedia sobre GLM](https://en.wikipedia.org/wiki/GLM_(AI))

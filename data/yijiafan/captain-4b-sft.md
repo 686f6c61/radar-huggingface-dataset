@@ -76,9 +76,9 @@ Los resultados de transferencia zero-shot del paper (RoboTwin 2.0 22.6 en el pro
 
 | Modelo | Parametros | Contexto | Enfoque | LIBERO (host/estricto) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CaPtain-4B-SFT | 5.17B | 64k con compactacion | Code-as-policy, agente multimodal | 55.4 / 52.1 | Apache 2.0 | HuggingFace |
-| CaPtain-4B (tras RL) | 5.17B (mismo base) | 64k con compactacion | Code-as-policy, agente multimodal | 73.8 / 67.5 | Apache 2.0 | HuggingFace |
-| Qwen3.5-4B | 4B (nominal) | No disponible | Modelo base vision-language | 0.0 / 0.0 | No disponible en la informacion | HuggingFace (Qwen) |
+| CaPtain-4B-SFT | 5.17B | 64k con compactacion | Code-as-policy, agente multimodal | 55.4 / 52.1 | Apache 2.0 | Hugging Face |
+| CaPtain-4B (tras RL) | 5.17B (mismo base) | 64k con compactacion | Code-as-policy, agente multimodal | 73.8 / 67.5 | Apache 2.0 | Hugging Face |
+| Qwen3.5-4B | 4B (nominal) | No disponible | Modelo base vision-language | 0.0 / 0.0 | No disponible en la informacion | Hugging Face (Qwen) |
 
 No se dispone de datos de otros agentes roboticos comparables en la informacion proporcionada.
 
@@ -95,7 +95,7 @@ No se dispone de datos de otros agentes roboticos comparables en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YijiaFan/CaPtain-4B-SFT
+- Modelo en Hugging Face: https://huggingface.co/YijiaFan/CaPtain-4B-SFT
 - Modelo tras RL: https://huggingface.co/YijiaFan/CaPtain-4B
 - Dataset de SFT: https://huggingface.co/datasets/YijiaFan/CaPtain-SFT-Data
 - Pagina del proyecto: https://waltstephen.github.io/captain/

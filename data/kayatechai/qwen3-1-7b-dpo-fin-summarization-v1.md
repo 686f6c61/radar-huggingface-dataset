@@ -108,9 +108,9 @@ Nota metodologica: no se dispone de fuentes verificadas en la busqueda web reali
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KayaTechAI/Qwen3-1.7B-DPO-fin-summarization-v1
+- Modelo en Hugging Face: https://huggingface.co/KayaTechAI/Qwen3-1.7B-DPO-fin-summarization-v1
 - Modelo base declarado: https://huggingface.co/KayaTechAI/fin-multitask-sft-merged
 - Unsloth (framework de entrenamiento citado en la model card): https://github.com/unslothai/unsloth
-- TRL (tag declarado, framework de DPO de HuggingFace): https://github.com/huggingface/trl
+- TRL (tag declarado, framework de DPO de Hugging Face): https://github.com/huggingface/trl
 - Text Generation Inference (tag declarado): https://github.com/huggingface/text-generation-inference
 - Paper, blog, demo o repositorio adicionales: no disponible (la busqueda web no devolvio resultados relacionados con el modelo)

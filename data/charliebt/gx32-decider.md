@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| gx32-decider | 26,1 B | No disponible | MIT | HuggingFace (9 descargas) | Merge TIES de dos fine-tunes de mammoth-1 |
-| baselabs/mammoth-1 | No disponible | No disponible | MIT | HuggingFace | Modelo base del merge, post-entrenado desde Qwen3.5-27B |
-| isomsom/sn92-gen-m87b | No disponible | No disponible | MIT | HuggingFace | Padre del merge, fine-tune de mammoth-1 |
-| xflud/sn92-decider-1 | No disponible | No disponible | MIT | HuggingFace | Padre del merge, fine-tune de mammoth-1 |
+| gx32-decider | 26,1 B | No disponible | MIT | Hugging Face (9 descargas) | Merge TIES de dos fine-tunes de mammoth-1 |
+| baselabs/mammoth-1 | No disponible | No disponible | MIT | Hugging Face | Modelo base del merge, post-entrenado desde Qwen3.5-27B |
+| isomsom/sn92-gen-m87b | No disponible | No disponible | MIT | Hugging Face | Padre del merge, fine-tune de mammoth-1 |
+| xflud/sn92-decider-1 | No disponible | No disponible | MIT | Hugging Face | Padre del merge, fine-tune de mammoth-1 |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieBT/gx32-decider
+- Modelo en Hugging Face: https://huggingface.co/CharlieBT/gx32-decider
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Padre 1: https://huggingface.co/isomsom/sn92-gen-m87b
 - Padre 2: https://huggingface.co/xflud/sn92-decider-1

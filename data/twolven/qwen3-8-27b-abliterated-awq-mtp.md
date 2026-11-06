@@ -103,7 +103,7 @@ La principal diferencia frente al original es la eliminación del rechazo y la c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/twolven/Qwen3.8-27B-abliterated-AWQ-MTP
+- Modelo en Hugging Face: https://huggingface.co/twolven/Qwen3.8-27B-abliterated-AWQ-MTP
 - Modelo base (abliterated bf16): https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
 - Modelo upstream (original): https://huggingface.co/Qwen/Qwen3.8-27B
 - Método de cuantización (llm-compressor): https://github.com/vllm-project/llm-compressor

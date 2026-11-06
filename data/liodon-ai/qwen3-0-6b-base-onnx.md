@@ -85,7 +85,7 @@ La comparativa se limita a características estructurales: no se dispone de resu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/liodon-ai/Qwen3-0.6B-Base-ONNX
+- Repositorio Hugging Face: https://huggingface.co/liodon-ai/Qwen3-0.6B-Base-ONNX
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Autor de la exportación: https://huggingface.co/liodon-ai
 - Librería optimum (usada para la exportación): https://github.com/huggingface/optimum

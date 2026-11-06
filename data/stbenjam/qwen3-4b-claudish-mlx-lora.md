@@ -91,7 +91,7 @@ No se dispone de comparaciones con alternativas de terceros en la información p
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/stbenjam/qwen3-4b-claudish-mlx-lora
+- Ficha en Hugging Face: https://huggingface.co/stbenjam/qwen3-4b-claudish-mlx-lora
 - Variante GGUF Q4_K_M: https://huggingface.co/stbenjam/qwen3-4b-claudish-gguf
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-4B-Instruct-2507-4bit
 - Repositorio del proyecto: https://github.com/stbenjam/posttrain-demo

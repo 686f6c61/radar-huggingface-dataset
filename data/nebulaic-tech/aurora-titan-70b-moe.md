@@ -4,7 +4,7 @@
 
 Aurora Titan 72.4B Sparse MoE es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por Nebulaic Tech, una empresa que promueve un lenguaje de programación nativo en inglés llamado NNPL. El modelo está diseñado para la generación de código, el razonamiento STEM y la compilación de descripciones en lenguaje natural a aplicaciones de software. Según la model card, cuenta con 72.4 mil millones de parámetros totales y 14.2 mil millones activos, con un contexto de 1.000.000 tokens, lo que lo posicionaría como un modelo de gran escala orientado a tareas de ingeniería de software.
 
-Sin embargo, existe una discrepancia importante: los metadatos de HuggingFace indican que el archivo safetensors contiene 1.048.649.728 parámetros (aproximadamente 1.05 mil millones), muy lejos de los 72.4B declarados. Esta inconsistencia sugiere que el modelo real podría ser mucho más pequeño de lo que afirma la model card, o que el repositorio contiene solo una parte de los pesos. Esta ficha refleja ambos datos y advierte al lector sobre la falta de verificación independiente.
+Sin embargo, existe una discrepancia importante: los metadatos de Hugging Face indican que el archivo safetensors contiene 1.048.649.728 parámetros (aproximadamente 1.05 mil millones), muy lejos de los 72.4B declarados. Esta inconsistencia sugiere que el modelo real podría ser mucho más pequeño de lo que afirma la model card, o que el repositorio contiene solo una parte de los pesos. Esta ficha refleja ambos datos y advierte al lector sobre la falta de verificación independiente.
 
 El modelo se distribuye bajo licencia Apache 2.0, con soporte multilingüe declarado (aunque el énfasis está en inglés) y está disponible en formato safetensors para su uso con la librería transformers. No se han publicado resultados de benchmarks en la información proporcionada, y la model card solo menciona que será evaluado por el Open LLM Leaderboard y LMSYS Chatbot Arena, sin ofrecer cifras concretas.
 
@@ -73,7 +73,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nebulaic-tech/aurora-titan-70b-moe
+- Hugging Face: https://huggingface.co/nebulaic-tech/aurora-titan-70b-moe
 - Sitio web de Nebulaic Tech: https://nebulaictech.com
 - Nebulaic Studio: https://studio.nebulaictech.com
 - Documentación: https://nebulaictech.com

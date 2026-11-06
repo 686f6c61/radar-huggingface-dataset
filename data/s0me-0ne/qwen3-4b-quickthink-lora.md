@@ -87,9 +87,9 @@ Estimaciones para el modelo base de 4.000 millones de parametros con el adaptado
 
 | Modelo | Parametros | Contexto | Enfoque | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| s0me-0ne/Qwen3-4B-QuickThink-LoRA | 4B (base) + LoRA rango 8 | No disponible | RL puro para acortar el bloque `<think>` | 89/104 en validacion; 41/50 en MATH dificil a 16k tokens; -79% tokens de pensamiento | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B (vanilla) | 4B | No disponible en la informacion proporcionada | Modelo base de razonamiento denso | 87/104 en validacion; 38/50 en MATH dificil a 16k tokens | Apache-2.0 | HuggingFace |
-| trl-lib/Qwen3-4B-LoRA | 4B (base) + LoRA | No disponible | Fine-tuning supervisado (SFT) con TRL | No publicado en la informacion disponible | No indicada en la informacion disponible | HuggingFace |
+| s0me-0ne/Qwen3-4B-QuickThink-LoRA | 4B (base) + LoRA rango 8 | No disponible | RL puro para acortar el bloque `<think>` | 89/104 en validacion; 41/50 en MATH dificil a 16k tokens; -79% tokens de pensamiento | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B (vanilla) | 4B | No disponible en la informacion proporcionada | Modelo base de razonamiento denso | 87/104 en validacion; 38/50 en MATH dificil a 16k tokens | Apache-2.0 | Hugging Face |
+| trl-lib/Qwen3-4B-LoRA | 4B (base) + LoRA | No disponible | Fine-tuning supervisado (SFT) con TRL | No publicado en la informacion disponible | No indicada en la informacion disponible | Hugging Face |
 
 No se dispone de datos de benchmarks comparables de otros adaptadores de compresion de razonamiento sobre Qwen3-4B en la informacion proporcionada.
 
@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks comparables de otros adaptadores de compres
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/s0me-0ne/Qwen3-4B-QuickThink-LoRA
+- Modelo en Hugging Face: https://huggingface.co/s0me-0ne/Qwen3-4B-QuickThink-LoRA
 - Modelo base (copia de Unsloth): https://huggingface.co/unsloth/Qwen3-4B
 - Modelo original Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Adaptador SFT de referencia de TRL: https://huggingface.co/trl-lib/Qwen3-4B-LoRA

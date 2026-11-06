@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-tts-12hz-1.7b-swamiji-te-chartok-navaratri-only-lr1e-6-9ep | 1,7 B | no disponible | Telugu | Apache 2.0 | HuggingFace (0 descargas) |
-| sw-voice/qwen3-tts-12hz-1.7b-telugu-chartok-indictts-sft-lr1e-6-2ep (modelo base) | 1,7 B | no disponible | Telugu | Apache 2.0 | HuggingFace |
+| qwen3-tts-12hz-1.7b-swamiji-te-chartok-navaratri-only-lr1e-6-9ep | 1,7 B | no disponible | Telugu | Apache 2.0 | Hugging Face (0 descargas) |
+| sw-voice/qwen3-tts-12hz-1.7b-telugu-chartok-indictts-sft-lr1e-6-2ep (modelo base) | 1,7 B | no disponible | Telugu | Apache 2.0 | Hugging Face |
 | Qwen3-TTS base (familia) | 1,7 B | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-swamiji-te-chartok-navaratri-only-lr1e-6-9ep
+- Hugging Face: https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-swamiji-te-chartok-navaratri-only-lr1e-6-9ep
 - Modelo base: https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-telugu-chartok-indictts-sft-lr1e-6-2ep
 - Conjunto de datos de entrenamiento: sw-voice/swamiji-navaratri-telugu-reuse-themes (referenciado en la model card; no se proporciona URL directa)
 - Código del experimento: swamiji-tts, ruta `research/exp-iterations/08-qwen3-tts/experiments/06-te-char-tokens` (referenciado en la model card; no se proporciona URL directa)

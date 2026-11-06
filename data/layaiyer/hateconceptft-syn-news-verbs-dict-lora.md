@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA publicado por el usuario `layaiyer` en HuggingFace, etiquetado para clasificación de secuencias. El nombre sugiere un entrenamiento sobre conceptos de odio, pero la información disponible es extremadamente limitada: la model card está vacía, no se especifica licencia, idiomas ni modelo base, y el repositorio tiene un tamaño de 0 GB, lo que indica que no contiene archivos visibles. No hay descargas ni interacciones registradas.
+Este modelo es un adaptador LoRA publicado por el usuario `layaiyer` en Hugging Face, etiquetado para clasificación de secuencias. El nombre sugiere un entrenamiento sobre conceptos de odio, pero la información disponible es extremadamente limitada: la model card está vacía, no se especifica licencia, idiomas ni modelo base, y el repositorio tiene un tamaño de 0 GB, lo que indica que no contiene archivos visibles. No hay descargas ni interacciones registradas.
 
 El modelo se publicó el 25 de agosto de 2026 y solo se identifica como un adaptador de la librería PEFT (versión 0.17.0). Dado que no hay información técnica, ni datos de entrenamiento, ni evaluaciones, no es posible determinar su arquitectura, parámetros o propósito real. Se recomienda precaución antes de considerarlo para cualquier uso práctico.
 
@@ -53,7 +53,7 @@ No disponible. No se puede comparar con otros modelos porque no se conocen los p
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/layaiyer/hateconceptFT-syn-news-verbs-dict-lora)
+- [Modelo en Hugging Face](https://huggingface.co/layaiyer/hateconceptFT-syn-news-verbs-dict-lora)
 - Modelos similares del mismo autor (sin información adicional):
   - [hateconceptFT-syn-news-all-dict](https://huggingface.co/layaiyer/hateconceptFT-syn-news-all-dict)
   - [hateconceptFT-syn-arxiv-all-dict-lora](https://huggingface.co/layaiyer/hateconceptFT-syn-arxiv-all-dict-lora)

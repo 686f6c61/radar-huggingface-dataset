@@ -4,7 +4,7 @@
 
 10Eros-Max-Transformer_hybrid_beta5 es un checkpoint de pesos del transformer de difusión de MiniMax-H3, derivado del modelo base `multimodalart/MiniMax-H3-Pruned` y publicado por el usuario `ibyteohdear`. No es un modelo nuevo ni un LoRA: se trata de una conversión completa del archivo original `10Eros_Max_h3_hybrid_beta5.safetensors` al árbol de módulos de la clase `MiniMaxH3PrunedTransformer3DModel` de la librería diffusers, con las proyecciones AdaLN plegadas a sus coordenadas de rango 8. El objetivo es que el checkpoint pueda cargarse directamente con `AutoModel.from_pretrained` sin necesidad de fusionar, plegar ni parchear pesos en tiempo de carga.
 
-El modelo pertenece a la familia MiniMax-H3, orientada a generación de vídeo a partir de texto, imagen o audio (text-to-video, image-to-video, audio-video). El transformer contiene 20.111.462.920 parámetros en safetensors (unos 20,1 mil millones) y el repositorio ocupa 40,2 GB, lo que sugiere pesos en bfloat16 o una mezcla de precisiones. La pipeline declarada en HuggingFace es `image-to-video` y la librería es diffusers.
+El modelo pertenece a la familia MiniMax-H3, orientada a generación de vídeo a partir de texto, imagen o audio (text-to-video, image-to-video, audio-video). El transformer contiene 20.111.462.920 parámetros en safetensors (unos 20,1 mil millones) y el repositorio ocupa 40,2 GB, lo que sugiere pesos en bfloat16 o una mezcla de precisiones. La pipeline declarada en Hugging Face es `image-to-video` y la librería es diffusers.
 
 La relevancia de este checkpoint es operativa: elimina la fricción de conversión que suele acompañar a los pesos publicados fuera del formato diffusers (nombres de bloques no canónicos, proyecciones QKV fusionadas, orden de las mitades del MLP invertido, AdaLN en formato tabular). Su adopción, sin embargo, es muy limitada: 18 descargas y 0 likes desde su creación el 1 de noviembre de 2026, sin licencia declarada ni idiomas especificados.
 
@@ -36,7 +36,7 @@ No se dispone de información sobre el dataset de entrenamiento, el número de t
 ## Capacidades
 
 - Generación de vídeo a partir de texto (text-to-video).
-- Generación de vídeo a partir de imagen (image-to-video), pipeline declarada en HuggingFace.
+- Generación de vídeo a partir de imagen (image-to-video), pipeline declarada en Hugging Face.
 - Generación de vídeo con audio (audio-video), según los tags del repositorio.
 - Carga directa en diffusers mediante `AutoModel.from_pretrained` con `trust_remote_code=True`, sin fusión ni parcheo en tiempo de carga.
 - Compatibilidad con LoRAs turbo y con LoRAs AdaLN del checkpoint original a través de `project_adaln_lora`.
@@ -50,7 +50,7 @@ No se dispone de información sobre el dataset de entrenamiento, el número de t
 - Aplicación de LoRAs turbo para reducir el número de pasos de muestreo: la model card confirma que no hay delta TURBO embebido y que los LoRAs turbo habituales funcionan, lo que resulta útil para prototipado con latencias más bajas.
 - Aplicación de LoRAs AdaLN entrenados sobre el checkpoint original: `project_adaln_lora` mapea correctamente gracias a que `adaln_basis` se incluye en el propio archivo, lo que facilita reutilizar adaptadores ya entrenados.
 - Despliegue con cuantización int8 en GPUs de memoria limitada: el ejemplo de la model card usa `TorchAoConfig` con `Int8WeightOnlyConfig`, adecuado para servir el transformer con menor huella de VRAM.
-- Integración en una aplicación Gradio con gestión de GPU bajo demanda: el código de ejemplo incluye un decorador `spaces.GPU(duration=1500)` para HuggingFace Spaces con Zero-GPU, útil para demos públicas con arranque bajo demanda.
+- Integración en una aplicación Gradio con gestión de GPU bajo demanda: el código de ejemplo incluye un decorador `spaces.GPU(duration=1500)` para Hugging Face Spaces con Zero-GPU, útil para demos públicas con arranque bajo demanda.
 - Investigación sobre el efecto del plegado AdaLN de rango 8: el checkpoint permite estudiar cómo afecta la aproximación de la curva de timestep fuera de la rejilla del sampler, un caso de interés para quienes trabajan con modulaciones condicionadas por tiempo.
 
 ## Benchmarks y rendimiento
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Pipeline | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 10Eros-Max-Transformer_hybrid_beta5 | 20,1 mil millones | no disponible | image-to-video | no disponible | HuggingFace, 18 descargas |
-| multimodalart/MiniMax-H3-Pruned (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace (referenciado como base) |
+| 10Eros-Max-Transformer_hybrid_beta5 | 20,1 mil millones | no disponible | image-to-video | no disponible | Hugging Face, 18 descargas |
+| multimodalart/MiniMax-H3-Pruned (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face (referenciado como base) |
 | 10Eros_Max_h3_hybrid_beta5.safetensors (original) | no disponible | no disponible | no disponible | no disponible | Distribución original citada en la model card |
 
 No se dispone de información suficiente para comparar rendimiento, calidad de generación ni latencia con alternativas de la misma categoría (por ejemplo, otros transformers de vídeo de tamaño comparable). Los datos de parámetros del modelo base y del checkpoint original no aparecen en la información proporcionada.
@@ -91,7 +91,7 @@ No se dispone de información suficiente para comparar rendimiento, calidad de g
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ibyteohdear/10Eros-Max-Transformer_hybrid_beta5
+- Repositorio Hugging Face: https://huggingface.co/ibyteohdear/10Eros-Max-Transformer_hybrid_beta5
 - Modelo base: https://huggingface.co/multimodalart/MiniMax-H3-Pruned
 - Librería diffusers: https://github.com/huggingface/diffusers
 - Documentación de `AutoModel` en diffusers: https://huggingface.co/docs/diffusers/main/en/api/models/auto_model

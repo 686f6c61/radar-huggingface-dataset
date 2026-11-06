@@ -70,8 +70,8 @@ No se dispone de datos verificados de benchmarks de este checkpoint, por lo que 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3.5-4b-8k-grpo-forced-answer-masked-unitedtrout-s300 | 4,54 B (dato real) | no disponible | apache-2.0 | HuggingFace, 0 descargas, 0 likes | Ajuste GRPO con presupuesto de 8.192 tokens; pesos BF16 safetensors |
-| Qwen/Qwen3.5-4B (modelo base) | 4 B segun denominacion del autor (4,54 B en el checkpoint ajustado) | no disponible | apache-2.0 | HuggingFace | Base multimodal `image-text-to-text` sin el ajuste por RL de este checkpoint |
+| qwen3.5-4b-8k-grpo-forced-answer-masked-unitedtrout-s300 | 4,54 B (dato real) | no disponible | apache-2.0 | Hugging Face, 0 descargas, 0 likes | Ajuste GRPO con presupuesto de 8.192 tokens; pesos BF16 safetensors |
+| Qwen/Qwen3.5-4B (modelo base) | 4 B segun denominacion del autor (4,54 B en el checkpoint ajustado) | no disponible | apache-2.0 | Hugging Face | Base multimodal `image-text-to-text` sin el ajuste por RL de este checkpoint |
 | Otras destilaciones o ajustes de razonamiento matematico de 4-8 B | no disponible | no disponible | no disponible | no disponible | No se han identificado alternativas equivalentes en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de datos verificados de benchmarks de este checkpoint, por lo que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-8k-grpo-forced-answer-masked-unitedtrout-s300
+- Modelo en Hugging Face: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-8k-grpo-forced-answer-masked-unitedtrout-s300
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset
 - Paper, blog o repositorio adicionales: no disponibles en la informacion proporcionada. La busqueda web no devolvio ningun resultado relacionado con el modelo ni con la submission a ICLR 2027.

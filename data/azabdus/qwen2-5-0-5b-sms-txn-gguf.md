@@ -94,5 +94,5 @@ La comparacion directa con alternativas especializadas en extraccion de SMS fina
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/azabdus/qwen2.5-0.5b-sms-txn-GGUF
+- Modelo en Hugging Face: https://huggingface.co/azabdus/qwen2.5-0.5b-sms-txn-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

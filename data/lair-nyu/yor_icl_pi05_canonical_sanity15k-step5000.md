@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Espacio de estado | Espacio de accion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| yor_icl_pi05_canonical_sanity15k-step5000 | Checkpoint pi05 (paso 5000/15000) | 18 dim (pos 3 + rot6d 6 por brazo) | 20 dim (delta pos 3 + rot6d 6 + pinza 1 por brazo) | No publicado | no disponible | Repositorio HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| yor_icl_pi05_canonical_sanity15k-step5000 | Checkpoint pi05 (paso 5000/15000) | 18 dim (pos 3 + rot6d 6 por brazo) | 20 dim (delta pos 3 + rot6d 6 + pinza 1 por brazo) | No publicado | no disponible | Repositorio Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | yor_icl_pi05_aligned_deltarot6d_sanity15k (brazo anterior, citado en la model card) | Checkpoint pi05 | Cuaternión crudo por brazo | Delta + rot6d | 0 % de tasa de éxito en rollout, por inestabilidad de hemisferio | no disponible | Referenciado en la model card, sin URL en la información proporcionada |
 | yor_icl_pi05_easy_pnp_v2_absolute_joint_sanity15k (citado como convención de referencia) | Checkpoint pi05 | Articulaciones absolutas | no disponible | No publicado | no disponible | Referenciado en la model card, sin URL en la información proporcionada |
 | Modelo base pi05 de openpi | Política base del framework | no disponible | no disponible | No disponible en la información proporcionada | no disponible | Framework citado en la model card |
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lair-nyu/yor_icl_pi05_canonical_sanity15k-step5000
+- Hugging Face: https://huggingface.co/lair-nyu/yor_icl_pi05_canonical_sanity15k-step5000
 - openpi, framework citado en la model card (módulos `openpi.policies.yor_rotation` y `openpi.training.weight_loaders`): https://github.com/Physical-Intelligence/openpi
 - Artefactos citados en la model card sin URL proporcionada: `yor_icl_pi05_aligned_deltarot6d_sanity15k`, `yor_icl_pi05_easy_pnp_v2_absolute_joint_sanity15k`, `icl-dataset`, `icl-dataset-fixed-obs`, `notes/ICRA_plan.md`.
 - Los resultados de búsqueda web facilitados no contienen enlaces relevantes sobre este modelo (corresponden a páginas de producto de ChatGPT).

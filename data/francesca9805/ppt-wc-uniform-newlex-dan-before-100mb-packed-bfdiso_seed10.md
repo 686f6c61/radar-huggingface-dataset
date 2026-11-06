@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ppt-wc-uniform-newlex-dan-before-100mb-packed-bfdiso_seed10` es un ajuste fino de tipo SFT (supervised fine-tuning) del checkpoint `goldfish-models/eng_latn_100mb`. Lo publica el usuario francesca9805 en HuggingFace, aunque la ejecución de entrenamiento asociada pertenece al proyecto de Weights & Biases `f-padovani-university-of-groningen/new-tokenizers`, lo que sitúa el artefacto en el contexto de un experimento academico sobre tokenizacion y modelos multilingues de la Universidad de Groningen. Se trata, por tanto, de un checkpoint de investigacion, no de un modelo orientado a producto.
+El modelo `ppt-wc-uniform-newlex-dan-before-100mb-packed-bfdiso_seed10` es un ajuste fino de tipo SFT (supervised fine-tuning) del checkpoint `goldfish-models/eng_latn_100mb`. Lo publica el usuario francesca9805 en Hugging Face, aunque la ejecución de entrenamiento asociada pertenece al proyecto de Weights & Biases `f-padovani-university-of-groningen/new-tokenizers`, lo que sitúa el artefacto en el contexto de un experimento academico sobre tokenizacion y modelos multilingues de la Universidad de Groningen. Se trata, por tanto, de un checkpoint de investigacion, no de un modelo orientado a producto.
 
 Tecnicamente es un transformer decoder-only de la familia GPT-2 con 86.508.288 parametros totales (unos 86,5 millones), pesos en safetensors y un tamano de repositorio de 0,2 GB. El modelo base pertenece al proyecto Goldfish, que entrena modelos GPT-2 monolingues sobre corpus de 100 MB por idioma; en este caso el idioma del checkpoint base es ingles (`eng_latn`), mientras que el nombre del modelo apunta a una variante relacionada con danes ("dan") dentro de una serie de experimentos con tokenizadores nuevos, semillas distintas y checkpoints "before/after".
 
@@ -49,7 +49,7 @@ El entrenamiento se realizo mediante SFT con TRL 0.23.0, sobre Transformers 4.56
 - Ablaciones controladas en investigacion academica: al tener checkpoints "before" y variantes con otras semillas (`seed455`) y otros idiomas (`eng`, `nor`), permite medir el impacto de un cambio aislado manteniendo el resto del pipeline constante.
 - Pruebas de integracion de pipelines de entrenamiento: sirve para verificar que un flujo TRL + Transformers + W&B funciona de extremo a extremo antes de lanzar entrenamientos grandes, gracias a su tamano de 0,2 GB.
 - Prototipado de generacion de texto en CPU o en portatil: con 86,5 millones de parametros cabe en memoria sin GPU dedicada, lo que permite probar prompts y plantillas sin infraestructura.
-- Docencia y demos de ajuste fino supervisado: es un ejemplo minimo y rapido de SFT sobre un modelo GPT-2 pequeño, util para explicar el ciclo completo de entrenamiento y publicacion en HuggingFace.
+- Docencia y demos de ajuste fino supervisado: es un ejemplo minimo y rapido de SFT sobre un modelo GPT-2 pequeño, util para explicar el ciclo completo de entrenamiento y publicacion en Hugging Face.
 - Investigacion sobre contaminacion y memorizacion de datos: al entrenarse sobre un corpus pequeño y conocido (base de 100 MB), facilita estudiar que fragmentos memoriza un modelo de este tamano.
 - Evaluacion de infraestructura de servido: compatible con text-generation-inference y `endpoints_compatible` segun los tags, por lo que puede usarse como carga de prueba para medir latencia y throughput de un despliegue antes de pasar a un modelo mayor.
 
@@ -94,7 +94,7 @@ La comparacion es orientativa: los datos de `distilgpt2` y `Pythia-70M` correspo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-dan-before-100mb-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-dan-before-100mb-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/pg54c24e

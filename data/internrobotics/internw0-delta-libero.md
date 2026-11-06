@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InternW0-Delta-Libero es un repositorio de pesos publicado en HuggingFace por la organizacion InternRobotics bajo licencia Apache-2.0. En el momento de redactar esta ficha (repositorio creado y actualizado el 22 de septiembre de 2026), la model card asociada unicamente contiene la declaracion de licencia: no incluye descripcion del modelo, arquitectura, datos de entrenamiento, capacidades declaradas ni instrucciones de uso. El repositorio registra 0 descargas y 0 "likes", y no tiene pipeline declarado.
+InternW0-Delta-Libero es un repositorio de pesos publicado en Hugging Face por la organizacion InternRobotics bajo licencia Apache-2.0. En el momento de redactar esta ficha (repositorio creado y actualizado el 22 de septiembre de 2026), la model card asociada unicamente contiene la declaracion de licencia: no incluye descripcion del modelo, arquitectura, datos de entrenamiento, capacidades declaradas ni instrucciones de uso. El repositorio registra 0 descargas y 0 "likes", y no tiene pipeline declarado.
 
 Por el identificador se puede inferir que pertenece al ambito de la robotica y, mas concretamente, a la familia de modelos o "world models" para manipulacion, dado que "Libero" coincide con el nombre de una conocida suite de benchmarks de manipulacion robotica y "Delta" sugiere una variante o delta de pesos respecto a un modelo base. Sin embargo, esta interpretacion es una hipotesis basada en la nomenclatura y no esta confirmada por ninguna fuente documental del repositorio. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo.
 
@@ -48,7 +48,7 @@ Los siguientes casos se plantean de forma condicional a la hipotesis de que el m
 - Destilacion de politicas: si "Delta" designa un ajuste sobre un modelo base mayor, podria emplearse como version ligera para prototipado rapido en estaciones de trabajo con una sola GPU, antes de desplegar el modelo completo.
 - Generacion de datos sinteticos: en el caso de que sea un modelo de mundo, se usaria para rodar trayectorias sinteticas y aumentar el conjunto de datos de entrenamiento de otras politicas.
 - Investigacion en aprendizaje por imitacion: serviria como punto de partida para experimentos de fine-tuning con demostraciones propias en un laboratorio.
-- Docencia y divulgacion: util para ilustrar en un curso de robotica como se publican y consumen pesos abiertos en HuggingFace, dado su caracter minimalista.
+- Docencia y divulgacion: util para ilustrar en un curso de robotica como se publican y consumen pesos abiertos en Hugging Face, dado su caracter minimalista.
 
 No se pueden proponer casos de uso de generacion de texto, atencion al cliente, generacion de codigo o analisis documental porque no hay ningun indicio de que el modelo cubra esas tareas.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Viabilidad en GPU de consumo (RTX 4090, RTX 3090, etc.): no disponible.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, etc.): no disponible. No se ha confirmado que el repositorio contenga pesos en formatos compatibles con estos motores; de hecho, ni siquiera se ha confirmado el formato de los archivos.
 - Latencia y throughput estimados: no disponible.
-- Recomendacion practica: antes de planificar cualquier despliegue, inspeccionar el arbol de archivos del repositorio en HuggingFace (tamano, formato, presencia de config.json o equivalente) y contactar con el autor para obtener la ficha tecnica.
+- Recomendacion practica: antes de planificar cualquier despliegue, inspeccionar el arbol de archivos del repositorio en Hugging Face (tamano, formato, presencia de config.json o equivalente) y contactar con el autor para obtener la ficha tecnica.
 
 ## Comparativa con modelos similares
 
@@ -71,7 +71,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| InternW0-Delta-Libero | no disponible | no disponible | no disponible | apache-2.0 | repositorio HuggingFace, 0 descargas |
+| InternW0-Delta-Libero | no disponible | no disponible | no disponible | apache-2.0 | repositorio Hugging Face, 0 descargas |
 | Alternativas del segmento | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,8 +87,8 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/InternRobotics/InternW0-Delta-Libero
+- Repositorio en Hugging Face: https://huggingface.co/InternRobotics/InternW0-Delta-Libero
 - Texto de la licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
-- Perfil de la organizacion en HuggingFace: https://huggingface.co/InternRobotics
+- Perfil de la organizacion en Hugging Face: https://huggingface.co/InternRobotics
 - Benchmark LIBERO (referencia del posible ambito del modelo, mencionada a titulo informativo): https://libero-project.github.io
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

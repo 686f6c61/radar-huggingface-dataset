@@ -70,7 +70,7 @@ No se dispone de datos comparativos en la información proporcionada. El modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sonorix/pulsar-ai-4b-gguf
+- Repositorio Hugging Face: https://huggingface.co/Sonorix/pulsar-ai-4b-gguf
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - GGUF de Unsloth para Qwen3-4B-Instruct-2507: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF
 - Repositorio relacionado de Sonorix: https://huggingface.co/Sonorix/Pulsar-AI-Final

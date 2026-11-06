@@ -103,7 +103,7 @@ Los dos proyectos comparables encontrados en la busqueda web son adaptadores LoR
 | Modelo | Base | Metodo | Datos | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Mahesh-Nallada/vlm-receipt-extraction-lora | Qwen2.5-VL-3B-Instruct | QLoRA 4-bit NF4, r=16, solo capas de lenguaje/atencion/MLP | CORD v2 train, 200 imagenes, 1 epoch | F1 por campo: name 0,609, qty 0,556, amount 0,545; total y tax regresan respecto a zero-shot; n=8 | Apache 2.0 | 0 descargas, 0 likes; repositorio de 0,2 GB solo con el adaptador |
-| steven0226/vlm-receipt-extractor | Qwen3-VL (tamano no indicado en el resultado de busqueda) | PEFT LoRA / QLoRA con Unsloth | CORD v2 | No disponible en la informacion recogida | Apache 2.0 | Publicado en HuggingFace; repositorio PEFT con safetensors |
+| steven0226/vlm-receipt-extractor | Qwen3-VL (tamano no indicado en el resultado de busqueda) | PEFT LoRA / QLoRA con Unsloth | CORD v2 | No disponible en la informacion recogida | Apache 2.0 | Publicado en Hugging Face; repositorio PEFT con safetensors |
 | tun0000/vlm-receipt-extractor | Qwen3-VL-8B | QLoRA | CORD v2 | El repositorio declara una mejora de F1 por campo de 0,744 a 0,930 antes/despues | No disponible | Repositorio GitHub con notebooks; no se indica publicacion de pesos |
 | receipt-ocr (arslankazmi) | Multiples pipelines OCR y VLM | Benchmark, no modelo | 19 recibos de supermercado y farmacia capturados en Lahore (PKR) | Comparativa de 11 pipelines con emparejamiento difuso por campos (rapidfuzz >= 80) | No disponible | Sitio web del proyecto |
 
@@ -125,7 +125,7 @@ Los dos proyectos comparables encontrados en la busqueda web son adaptadores LoR
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mahesh-Nallada/vlm-receipt-extraction-lora
+- Modelo en Hugging Face: https://huggingface.co/Mahesh-Nallada/vlm-receipt-extraction-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Dataset CORD v2: https://huggingface.co/datasets/naver-clova-ix/cord-v2
 - Version 4-bit de la base usada en el entrenamiento: unsloth/Qwen2.5-VL-3B-Instruct-bnb-4bit (referenciada en la model card)

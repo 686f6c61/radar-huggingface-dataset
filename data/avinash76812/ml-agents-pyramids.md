@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ML-Agents-Pyramids es un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenado con el algoritmo PPO sobre el entorno de ejemplo Pyramids de Unity ML-Agents. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política neuronal que mapea observaciones del entorno a acciones dentro de una simulación Unity, publicada en HuggingFace como artefacto reproducible de entrenamiento por el usuario Avinash76812.
+ML-Agents-Pyramids es un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenado con el algoritmo PPO sobre el entorno de ejemplo Pyramids de Unity ML-Agents. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política neuronal que mapea observaciones del entorno a acciones dentro de una simulación Unity, publicada en Hugging Face como artefacto reproducible de entrenamiento por el usuario Avinash76812.
 
 El repositorio se etiqueta con las etiquetas ml-agents, deep-reinforcement-learning, reinforcement-learning, onnx y Pyramids, e indica library_name: ml-agents y pipeline: reinforcement-learning. El tamaño del repositorio aparece como 0.0 GB, con 0 descargas y 0 likes, lo que sugiere un artefacto recién subido, sin validación por parte de la comunidad y presumiblemente con el binario de pesos (.nn) y/o la exportación ONNX como contenido principal, aunque el peso exacto no se puede confirmar con los datos disponibles.
 
@@ -25,7 +25,7 @@ Datos adicionales del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | Avinash76812/ML-Agents-Pyramids |
+| ID en Hugging Face | Avinash76812/ML-Agents-Pyramids |
 | Autor | Avinash76812 |
 | Pipeline declarado | reinforcement-learning |
 | Libreria | ml-agents |
@@ -54,7 +54,7 @@ Esto implica que el archivo de configuracion YAML original no esta incluido en l
 - Control de un agente dentro del entorno Pyramids de Unity ML-Agents mediante una politica PPO entrenada.
 - Inferencia a partir de observaciones del entorno (tipo y dimensionalidad no disponibles).
 - Exportacion a ONNX, lo que permite ejecutar la politica fuera de Python, por ejemplo en Unity con Barracuda o Sentis, o con ONNX Runtime.
-- Carga directa en el visor web de ML-Agents del Hub de HuggingFace para reproducir la partida en el navegador.
+- Carga directa en el visor web de ML-Agents del Hub de Hugging Face para reproducir la partida en el navegador.
 - Reanudacion del entrenamiento desde el checkpoint publicado mediante `mlagents-learn --resume`, siempre que se disponga del YAML de configuracion compatible.
 - Generacion de registros para TensorBoard durante el entrenamiento (la etiqueta tensorboard aparece en el repositorio), aunque no se adjuntan graficas ni curvas de recompensa.
 - No soporta generacion de texto, razonamiento simbolico, codigo ni matematicas.
@@ -82,16 +82,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible con precision. Al ser una politica de RL de tipo MLP, el uso de memoria suele ser de decenas o pocos cientos de megabytes, pero no hay confirmacion en la informacion proporcionada.
 - GPU recomendadas: no se especifican. El entrenamiento de ML-Agents con observaciones vectoriales funciona habitualmente en CPU; las observaciones visuales se benefician de GPU, pero no consta cual se uso.
 - Compatibilidad con GPU de consumo: previsiblemente cabe en cualquier GPU de consumo e incluso en CPU exclusiva, dado el tamano tipico de estos agentes; sin confirmacion documental.
-- Opciones de despliegue: ML-Agents (Python), Unity con el paquete Barracuda o Sentis, ONNX Runtime y el visor web de ML-Agents en HuggingFace. No aplican vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje.
+- Opciones de despliegue: ML-Agents (Python), Unity con el paquete Barracuda o Sentis, ONNX Runtime y el visor web de ML-Agents en Hugging Face. No aplican vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han encontrado en la informacion proporcionada datos de otros agentes PPO sobre Pyramids ni metricas que permitan establecer una comparacion cuantitativa. Cualitativamente, el ecosistema de HuggingFace mantiene una organizacion dedicada a agentes de ML-Agents con entornos oficiales, donde podrian existir agentes comparables, pero no se dispone de sus cifras.
+No disponible. No se han encontrado en la informacion proporcionada datos de otros agentes PPO sobre Pyramids ni metricas que permitan establecer una comparacion cuantitativa. Cualitativamente, el ecosistema de Hugging Face mantiene una organizacion dedicada a agentes de ML-Agents con entornos oficiales, donde podrian existir agentes comparables, pero no se dispone de sus cifras.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Avinash76812/ML-Agents-Pyramids | no disponible | no aplicable | no disponible | no disponible | publico en HuggingFace, 0 descargas |
+| Avinash76812/ML-Agents-Pyramids | no disponible | no aplicable | no disponible | no disponible | publico en Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -108,10 +108,10 @@ No disponible. No se han encontrado en la informacion proporcionada datos de otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Avinash76812/ML-Agents-Pyramids
+- Modelo en Hugging Face: https://huggingface.co/Avinash76812/ML-Agents-Pyramids
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Documentacion de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Tutorial corto del curso de deep RL (Huggy the Dog): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo de ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Organizacion de Unity en HuggingFace (entornos oficiales y visor de agentes): https://huggingface.co/unity
+- Organizacion de Unity en Hugging Face (entornos oficiales y visor de agentes): https://huggingface.co/unity
 - No se han encontrado otros enlaces relevantes en la busqueda web; los resultados obtenidos corresponden a servicios de correo electronico sin relacion con el modelo.

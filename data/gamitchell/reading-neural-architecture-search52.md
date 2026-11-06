@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gamitchell/reading-neural-architecture-search52` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre Neural Architecture Search (NAS) publicado en HuggingFace. La model card lo describe explícitamente como un conjunto estructurado de notas con referencias de evaluación y preguntas abiertas, donde los planes y las hipótesis se mantienen separados de los resultados completados. El repositorio declara no aportar mejoras de benchmark, ablaciones terminadas, código liberado ni checkpoint entrenado.
+`gamitchell/reading-neural-architecture-search52` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre Neural Architecture Search (NAS) publicado en Hugging Face. La model card lo describe explícitamente como un conjunto estructurado de notas con referencias de evaluación y preguntas abiertas, donde los planes y las hipótesis se mantienen separados de los resultados completados. El repositorio declara no aportar mejoras de benchmark, ablaciones terminadas, código liberado ni checkpoint entrenado.
 
 El autor es el usuario `gamitchell`. El repositorio está etiquetado con `safetensors`, `transformer`, `research-notes` y `neural-architecture-search`, bajo licencia CC-BY-4.0. El dato real de safetensors indica 16.576 parámetros totales, una cifra compatible con un tensor auxiliar o de prueba, no con un transformer funcional; el tamaño del repositorio es de 0,0 GB. No hay pipeline declarado, ni idiomas soportados, ni descargas ni valoraciones (0 y 0 respectivamente).
 
@@ -78,7 +78,7 @@ No disponible. Este repositorio pertenece a la categoria de notas de investigaci
 | Longitud de contexto | No disponible | No disponible |
 | Rendimiento en benchmarks | No publicado | No disponible |
 | Licencia | CC-BY-4.0 | No disponible |
-| Disponibilidad | Repositorio publico en HuggingFace, 0 descargas | No disponible |
+| Disponibilidad | Repositorio publico en Hugging Face, 0 descargas | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ No disponible. Este repositorio pertenece a la categoria de notas de investigaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gamitchell/reading-neural-architecture-search52
+- Repositorio en Hugging Face: https://huggingface.co/gamitchell/reading-neural-architecture-search52
 - Artefacto principal citado en la model card: `analysis.md`
 - Documentacion citada en la model card: `README.md`
 - Enlaces adicionales (papers, blogs, repos, demos): no disponibles. La busqueda web no devolvio resultados relacionados con el modelo ni con el autor.

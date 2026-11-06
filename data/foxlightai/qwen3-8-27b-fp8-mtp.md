@@ -69,6 +69,6 @@ No disponible. No se han encontrado artefactos equivalentes (sidecars MTP para d
 
 ## Enlaces
 
-- Repositorio HuggingFace del sidecar: https://huggingface.co/FoxlightAI/qwen3-8-27b-fp8-mtp
+- Repositorio Hugging Face del sidecar: https://huggingface.co/FoxlightAI/qwen3-8-27b-fp8-mtp
 - Modelo base Qwen3.8-27B-FP8: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Repositorio de Skulk (referenciado en la model card): https://github.com/Foxlight-Foundation/Skulk

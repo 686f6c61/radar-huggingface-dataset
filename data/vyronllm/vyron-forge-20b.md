@@ -67,9 +67,9 @@ La model card no incluye métricas de MMLU, HumanEval, GSM8K ni similares, y tam
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| VYRON Forge 20B (este) | ~21B MoE (modelo base) | 8192 recomendado | Apache 2.0 | HuggingFace (`vyronllm/vyron-forge-20b`) | Wrapper: solo system prompt + Modelfile; sin pesos propios |
-| openai/gpt-oss-20b | ~21B MoE | no disponible en esta ficha | Apache 2.0 | HuggingFace + GGUF en `ggml-org` | Modelo base real; VYRON no añade entrenamiento |
-| gpt-oss-20b-GGUF (ggml-org) | ~21B MoE | no disponible en esta ficha | Apache 2.0 | HuggingFace | Conversión GGUF utilizada por VYRON; pesos idénticos |
+| VYRON Forge 20B (este) | ~21B MoE (modelo base) | 8192 recomendado | Apache 2.0 | Hugging Face (`vyronllm/vyron-forge-20b`) | Wrapper: solo system prompt + Modelfile; sin pesos propios |
+| openai/gpt-oss-20b | ~21B MoE | no disponible en esta ficha | Apache 2.0 | Hugging Face + GGUF en `ggml-org` | Modelo base real; VYRON no añade entrenamiento |
+| gpt-oss-20b-GGUF (ggml-org) | ~21B MoE | no disponible en esta ficha | Apache 2.0 | Hugging Face | Conversión GGUF utilizada por VYRON; pesos idénticos |
 
 No se dispone de datos de benchmarks para comparar rendimiento entre estos modelos en la información proporcionada. La comparación relevante es que VYRON Forge 20B y `openai/gpt-oss-20b` comparten exactamente los mismos pesos: la única diferencia es el prompt de sistema y los parámetros de generación.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks para comparar rendimiento entre estos model
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/vyronllm/vyron-forge-20b
+- Hugging Face del modelo: https://huggingface.co/vyronllm/vyron-forge-20b
 - Modelo base `openai/gpt-oss-20b`: https://huggingface.co/openai/gpt-oss-20b
 - GGUF de referencia (`ggml-org/gpt-oss-20b-GGUF`): https://huggingface.co/ggml-org/gpt-oss-20b-GGUF
 - `Modelfile` incluido en el repo: https://huggingface.co/vyronllm/vyron-forge-20b/blob/main/Modelfile

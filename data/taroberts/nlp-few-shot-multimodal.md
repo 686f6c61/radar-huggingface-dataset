@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Taroberts/nlp-few-shot-multimodal` es un repositorio publicado en HuggingFace por el usuario Taroberts que, segun su propia model card, contiene una **nota de investigacion** sobre aprendizaje few-shot multimodal, no un modelo entrenado. El autor es explicito al afirmar que el repositorio "no se presenta como un articulo completado ni como la publicacion de modelos entrenados", y que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales. Por tanto, no existe checkpoint funcional, codigo de entrenamiento ni evaluacion publicada.
+`Taroberts/nlp-few-shot-multimodal` es un repositorio publicado en Hugging Face por el usuario Taroberts que, segun su propia model card, contiene una **nota de investigacion** sobre aprendizaje few-shot multimodal, no un modelo entrenado. El autor es explicito al afirmar que el repositorio "no se presenta como un articulo completado ni como la publicacion de modelos entrenados", y que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales. Por tanto, no existe checkpoint funcional, codigo de entrenamiento ni evaluacion publicada.
 
 El repositorio incluye un unico artefacto principal, `reading.md`, ademas del `README.md`. La etiqueta `safetensors` aparece en los metadatos y el sistema reporta 49.600 parametros totales, una cifra extraordinariamente baja que corresponde, con toda probabilidad, a un tensor de inicializacion o a un artefacto auxiliar (por ejemplo, un vocabulario) y no a un transformer entrenado con capacidad generativa. El tamano del repositorio es de 0,0 GB.
 
@@ -46,7 +46,7 @@ En resumen, no puede atribuirse ninguna capacidad funcional al artefacto, dado q
 - Definicion de baselines: extraer del documento los benchmarks publicos que el autor propone como contexto de evaluacion, para reutilizarlos como punto de partida en un experimento propio.
 - Auditoria de reproducibilidad: tomar las comprobaciones de reproducibilidad y modos de fallo descritos como checklist al preparar un repositorio de investigacion reproducible.
 - Diseno de conjuntos de datos: revisar la seccion de conjuntos propuestos para orientar la seleccion de datos en un estudio multimodal few-shot.
-- Analisis critico de repositorios HuggingFace: usar este caso como ejemplo de artefacto etiquetado como modelo pero que en realidad es una nota de investigacion, para calibrar expectativas al explorar el Hub.
+- Analisis critico de repositorios Hugging Face: usar este caso como ejemplo de artefacto etiquetado como modelo pero que en realidad es una nota de investigacion, para calibrar expectativas al explorar el Hub.
 
 No se recomienda su uso en produccion, atencion al cliente, generacion de codigo ni ningun escenario que requiera inferencia real.
 
@@ -79,7 +79,7 @@ No disponible. No existen modelos comparables en la misma categoria, porque este
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Taroberts/nlp-few-shot-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/Taroberts/nlp-few-shot-multimodal
 - Perfil del autor: https://huggingface.co/Taroberts
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible

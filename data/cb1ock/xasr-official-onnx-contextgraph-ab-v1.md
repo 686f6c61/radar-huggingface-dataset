@@ -84,5 +84,5 @@ No se dispone de informacion comparativa con otros modelos de ASR en la document
 
 ## Enlaces
 
-- [Repositorio HuggingFace: Cb1ock/xasr-official-onnx-contextgraph-ab-v1](https://huggingface.co/Cb1ock/xasr-official-onnx-contextgraph-ab-v1)
+- [Repositorio Hugging Face: Cb1ock/xasr-official-onnx-contextgraph-ab-v1](https://huggingface.co/Cb1ock/xasr-official-onnx-contextgraph-ab-v1)
 - [Documentacion de ONNX (formato de modelo)](https://onnx.ai/) (referencia general del formato de pesos)

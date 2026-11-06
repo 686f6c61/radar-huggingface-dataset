@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`convnextv2-nano-22k-384-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. El modelo adapta el backbone `facebook/convnextv2-nano-22k-384` al dataset Galaxy10 DECaLS (10 clases morfológicas) mediante un régimen de *head-only fine-tuning*: el backbone permanece congelado, incluidas las estadísticas de sus capas de normalización, y solo se entrena una cabeza lineal de 10 salidas.
+`convnextv2-nano-22k-384-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. El modelo adapta el backbone `facebook/convnextv2-nano-22k-384` al dataset Galaxy10 DECaLS (10 clases morfológicas) mediante un régimen de *head-only fine-tuning*: el backbone permanece congelado, incluidas las estadísticas de sus capas de normalización, y solo se entrena una cabeza lineal de 10 salidas.
 
 La relevancia del checkpoint es metodológica más que de rendimiento absoluto: forma parte de un estudio sistemático de 80 configuraciones (40 backbones preentrenados × dos regímenes de adaptación) bajo el protocolo revisado del artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026). El modelo alcanza un 58,85 % de accuracy y un F1 ponderado del 57,05 % en el conjunto de test reservado de 1.774 imágenes, con una media de 58,17 ± 0,59 % sobre tres semillas.
 
@@ -32,7 +32,7 @@ El entrenamiento sigue un protocolo fijo idéntico para los 40 backbones del ben
 - Clasificación de imágenes astronómicas en 10 clases morfológicas de galaxias (Galaxy10 DECaLS).
 - Extracción de características visuales con un backbone ConvNeXt V2 preentrenado en ImageNet-22k a 384×384 px.
 - Inferencia sobre imágenes individuales o lotes mediante `AutoModelForImageClassification` de transformers.
-- Compatible con el pipeline `image-classification` de HuggingFace y con *endpoints* gestionados (tag `endpoints_compatible`).
+- Compatible con el pipeline `image-classification` de Hugging Face y con *endpoints* gestionados (tag `endpoints_compatible`).
 - No soporta *tool calling*, *function calling*, agentes, razonamiento multi-paso ni generación de texto.
 - No tiene capacidades multilingües ni de audio.
 - No dispone de modo *thinking* ni de decodificación especulativa (no aplica a un modelo discriminativo).
@@ -66,7 +66,7 @@ No se han publicado en la información disponible resultados comparativos con ot
 - **VRAM estimada para inferencia**: inferior a 1 GB en fp32 para el modelo (≈60 MB de pesos) más el *overhead* de activaciones a 384×384 px; en la práctica, menos de 2 GB en cualquier GPU moderna.
 - **GPU recomendadas**: cualquier GPU con al menos 2 GB de VRAM; RTX 3060, RTX 4090, A100 o H100 son sobradas para inferencia. Para reentrenar solo la cabeza lineal basta una GPU de consumo.
 - **¿Cabe en GPU de consumo?**: sí, en cualquier GPU de consumo con 2 GB o más de VRAM (GTX 1650, RTX 3050, etc.).
-- **Opciones de despliegue**: transformers (`AutoModelForImageClassification`), exportación a ONNX Runtime, TorchScript o TensorRT; también es compatible con *endpoints* gestionados de HuggingFace.
+- **Opciones de despliegue**: transformers (`AutoModelForImageClassification`), exportación a ONNX Runtime, TorchScript o TensorRT; también es compatible con *endpoints* gestionados de Hugging Face.
 - **Latencia y throughput**: no disponibles en la información proporcionada; con 15 M de parámetros y entrada de 384×384 px se espera un throughput alto en GPU moderna, pero no se documentan cifras.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ No se dispone en la información proporcionada de resultados de otros backbones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/convnextv2-nano-22k-384-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/convnextv2-nano-22k-384-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/facebook/convnextv2-nano-22k-384
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Delta-John/stream-agent-qwen2.5-lora es un repositorio de HuggingFace publicado por el usuario Delta-John que, por su denominacion, corresponde a un adaptador LoRA (Low-Rank Adaptation) aplicado sobre un modelo base de la familia Qwen2.5. El nombre sugiere un ajuste fino orientado a tareas de agente en streaming, aunque la model card no aporta ninguna confirmacion tecnica al respecto: se trata de la plantilla autogenerada por HuggingFace sin secciones completadas.
+Delta-John/stream-agent-qwen2.5-lora es un repositorio de Hugging Face publicado por el usuario Delta-John que, por su denominacion, corresponde a un adaptador LoRA (Low-Rank Adaptation) aplicado sobre un modelo base de la familia Qwen2.5. El nombre sugiere un ajuste fino orientado a tareas de agente en streaming, aunque la model card no aporta ninguna confirmacion tecnica al respecto: se trata de la plantilla autogenerada por Hugging Face sin secciones completadas.
 
 El repositorio presenta un tamano de 0.0 GB, cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado el 4 de noviembre de 2026 con apenas seis segundos de diferencia entre ambos eventos. Estos indicadores apuntan a una publicacion recien subida, sin validacion por parte de la comunidad y sin documentacion asociada.
 
@@ -82,6 +82,6 @@ La comparacion directa no es posible por falta de datos del repositorio analizad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Delta-John/stream-agent-qwen2.5-lora
+- Repositorio en Hugging Face: https://huggingface.co/Delta-John/stream-agent-qwen2.5-lora
 - Articulo citado en los tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la plantilla: https://mlco2.github.io/impact#compute

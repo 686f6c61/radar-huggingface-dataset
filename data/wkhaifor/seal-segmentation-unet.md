@@ -6,7 +6,7 @@
 
 La relevancia del modelo reside en su extrema ligereza: 488.001 parámetros y aproximadamente 1,96 MB de pesos en PyTorch, lo que permite inferencia en CPU sin GPU. Está pensado para integrarse en pipelines de análisis documental donde sea necesario aislar la tinta del sello antes de un OCR posterior, y su model card reporta métricas de Dice e IoU claramente superiores a un umbral de color clásico tanto en recortes originales como en imágenes con texto chino sintético superpuesto.
 
-La información disponible es limitada: no se especifican detalles de arquitectura interna más allá de "Small U-Net", no hay pipeline declarado en HuggingFace, el repositorio aparece con 0 GB y 0 descargas, y la licencia no está claramente determinada (la model card remite a la licencia del subconjunto de datos upstream). Esta ficha refleja exclusivamente lo publicado por el autor.
+La información disponible es limitada: no se especifican detalles de arquitectura interna más allá de "Small U-Net", no hay pipeline declarado en Hugging Face, el repositorio aparece con 0 GB y 0 descargas, y la licencia no está claramente determinada (la model card remite a la licencia del subconjunto de datos upstream). Esta ficha refleja exclusivamente lo publicado por el autor.
 
 ## Especificaciones tecnicas
 
@@ -79,13 +79,13 @@ No se dispone de información sobre modelos comparables de segmentación de sell
 - Métricas calculadas sobre una rejilla de 384×384, lo que puede no reflejar el rendimiento a resoluciones muy distintas.
 - Licencia no determinada con claridad: la model card remite a la licencia del subconjunto upstream (texto MIT adjunto en `licenses/upstream-mask-readme.md`), pero advierte que el alcance de esa licencia y la de otros subconjuntos y pesos derivados deben verificarse por separado. No se debe asumir uso comercial sin comprobación.
 - Repositorio con 0 descargas, 0 likes y tamaño reportado de 0 GB; la disponibilidad efectiva de los pesos debe confirmarse al descargar.
-- No hay pipeline declarado en HuggingFace (`inference: false`), por lo que no puede usarse el widget de inferencia de la plataforma.
+- No hay pipeline declarado en Hugging Face (`inference: false`), por lo que no puede usarse el widget de inferencia de la plataforma.
 - Riesgo de alucinación no aplicable en el sentido de generación de texto, pero sí de falsos positivos/negativos en la máscara (p. ej., confundir texto del documento con tinta del sello).
 - No se documentan sesgos demográficos ni de otro tipo; el modelo no procesa lenguaje.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wkhaifor/seal-segmentation-unet
+- Hugging Face: https://huggingface.co/wkhaifor/seal-segmentation-unet
 - ModelScope (repositorio sincronizado del autor): https://www.modelscope.cn/models/kfcVme50/seal-segmentation-unet
 - Dataset Kaggle SEAL_DATASET Version 1: https://www.kaggle.com/datasets/yushuosun/seal-dataset
 - DocDiff (upstream asociado): https://github.com/Royalvice/DocDiff

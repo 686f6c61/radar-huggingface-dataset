@@ -71,10 +71,10 @@ Notas de medición aportadas por el autor: xLAM ETC es precisión exacta de llam
 
 | Modelo | Parámetros | Contexto | Llamada a funciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (SFT + GRPO) | 0,5 B | no indicado (32.768 en el modelo base) | xLAM ETC 80,54 %; BFCL single-turn 57,08 %; irrelevancia 66,22 % | no disponible | HuggingFace, 0 descargas, 0 likes en el momento de la consulta |
-| uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft11200-lora | 0,5 B | ídem | xLAM ETC 79,49 %; BFCL single-turn 54,28 %; irrelevancia 72,91 % | no disponible | HuggingFace |
-| uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-lora | 0,5 B | ídem | no disponible en la información recogida | no disponible | HuggingFace y FriendliAI |
-| Qwen/Qwen2.5-0.5B-Instruct (base) | 0,5 B | 32.768 según documentación pública del modelo base | no disponible en la información recogida | Apache-2.0 según la práctica habitual de la familia Qwen2.5 (no confirmado en la model card del adaptador) | HuggingFace, Ollama (qwen2.5:0.5b-instruct), catálogos de terceros |
+| Este adaptador (SFT + GRPO) | 0,5 B | no indicado (32.768 en el modelo base) | xLAM ETC 80,54 %; BFCL single-turn 57,08 %; irrelevancia 66,22 % | no disponible | Hugging Face, 0 descargas, 0 likes en el momento de la consulta |
+| uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft11200-lora | 0,5 B | ídem | xLAM ETC 79,49 %; BFCL single-turn 54,28 %; irrelevancia 72,91 % | no disponible | Hugging Face |
+| uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-lora | 0,5 B | ídem | no disponible en la información recogida | no disponible | Hugging Face y FriendliAI |
+| Qwen/Qwen2.5-0.5B-Instruct (base) | 0,5 B | 32.768 según documentación pública del modelo base | no disponible en la información recogida | Apache-2.0 según la práctica habitual de la familia Qwen2.5 (no confirmado en la model card del adaptador) | Hugging Face, Ollama (qwen2.5:0.5b-instruct), catálogos de terceros |
 
 La comparación relevante es interna a la familia: frente al adaptador SFT puro, el GRPO mejora +1,05 puntos en ETC, +2,80 en BFCL single-turn, +2,40 en MATH-500 y +1,66 en IFEval, pero pierde 6,69 puntos en detección de irrelevancia. No hay datos públicos que permitan comparar directamente con otros adaptadores de tool calling de la misma escala.
 
@@ -93,7 +93,7 @@ La comparación relevante es interna a la familia: frente al adaptador SFT puro,
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft11200-grpo1320-lora
+- Model card en Hugging Face: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft11200-grpo1320-lora
 - Adaptador SFT previo (checkpoint de partida): https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft11200-lora
 - Variante SFT 5600: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-lora
 - Despliegue de la variante SFT 5600 en FriendliAI: https://friendli.ai/models/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-lora

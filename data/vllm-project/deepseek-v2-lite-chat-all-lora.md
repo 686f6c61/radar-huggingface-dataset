@@ -4,7 +4,7 @@
 
 DeepSeek-V2-Lite-Chat-All-LoRA es un adaptador LoRA publicado por el usuario wuchen01 y replicado en la organizacion vllm-project como copia de seguridad para los tests de integracion continua de vLLM. No se trata de un modelo completo, sino de un conjunto de pesos PEFT que se aplican sobre el modelo base deepseek-ai/DeepSeek-V2-Lite-Chat, un transformer MoE de DeepSeek con 15.700 millones de parametros totales y 2.400 millones activos por token.
 
-El adaptador se ha entrenado mediante SFT (supervised fine-tuning) sobre lo que la model card denomina "identity dataset", con el objetivo aparente de ajustar la identidad o el estilo de respuesta del modelo base. La informacion publicada sobre la composicion del dataset, los idiomas y los resultados es practicamente inexistente: la model card es la generada automaticamente por el Trainer de HuggingFace y contiene multiples secciones marcadas como "More information needed".
+El adaptador se ha entrenado mediante SFT (supervised fine-tuning) sobre lo que la model card denomina "identity dataset", con el objetivo aparente de ajustar la identidad o el estilo de respuesta del modelo base. La informacion publicada sobre la composicion del dataset, los idiomas y los resultados es practicamente inexistente: la model card es la generada automaticamente por el Trainer de Hugging Face y contiene multiples secciones marcadas como "More information needed".
 
 Su relevancia es fundamentalmente practica para el ecosistema de inferencia: al estar alojado bajo la organizacion vllm-project, sirve como checkpoint de referencia para validar el soporte de LoRA y de arquitecturas MoE en vLLM. Para desarrolladores que quieran reproducir ese entorno de pruebas o experimentar con adaptadores sobre DeepSeek-V2-Lite, es un punto de partida util, pero no debe confundirse con un modelo afinado para produccion.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vllm-project/DeepSeek-V2-Lite-Chat-All-LoRA
+- Repositorio Hugging Face: https://huggingface.co/vllm-project/DeepSeek-V2-Lite-Chat-All-LoRA
 - Repositorio original: https://huggingface.co/wuchen01/DeepSeek-V2-Lite-Chat-All-LoRA
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat
 - vLLM: https://github.com/vllm-project/vllm

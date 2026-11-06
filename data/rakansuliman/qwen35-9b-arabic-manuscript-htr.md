@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B Arabic Manuscript HTR es una adaptacion mediante LoRA de un modelo de vision-lenguaje (VLM) construido sobre Qwen/Qwen3.5-9B, especializado en reconocimiento de texto manuscrito (HTR) a nivel de linea sobre manuscritos arabes historicos. Lo desarrolla el usuario de HuggingFace rakansuliman y su funcion es recibir la imagen recortada de una linea manuscrita y devolver su transcripcion en arabe. El repositorio no contiene un checkpoint completo de 9B, sino dos adaptadores LoRA que deben aplicarse secuencialmente sobre el modelo base (0,4 GB de peso total en el repo).
+Qwen3.5-9B Arabic Manuscript HTR es una adaptacion mediante LoRA de un modelo de vision-lenguaje (VLM) construido sobre Qwen/Qwen3.5-9B, especializado en reconocimiento de texto manuscrito (HTR) a nivel de linea sobre manuscritos arabes historicos. Lo desarrolla el usuario de Hugging Face rakansuliman y su funcion es recibir la imagen recortada de una linea manuscrita y devolver su transcripcion en arabe. El repositorio no contiene un checkpoint completo de 9B, sino dos adaptadores LoRA que deben aplicarse secuencialmente sobre el modelo base (0,4 GB de peso total en el repo).
 
 La relevancia del modelo esta en su nicho: el HTR sobre manuscritos arabes historicos es una tarea con muy pocos recursos publicos y con estilos caligraficos, tintas y soportes muy heterogeneos. El autor aborda esto con una estrategia de adaptacion en dos etapas: una primera etapa de adaptacion general a manuscritos arabes (56.994 lineas de entrenamiento de varias colecciones) y una segunda etapa de especializacion en el corpus Omar Al-Saleh (15.164 lineas). La torre de vision se mantiene congelada en la etapa 1 y solo se desbloquean parcialmente bloques concretos en la etapa 2.
 
@@ -92,8 +92,8 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 | Modelo | Parametros | Contexto | Rendimiento HTR arabe | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen35-9b-arabic-manuscript-htr (este modelo) | Base de 9B mas adaptadores LoRA de rango 16 (repo de 0,4 GB) | No disponible | CER de validacion 0,125173 y WER 0,339056 en Omar Al-Saleh (798 lineas) | Apache-2.0 | Adaptadores publicos en HuggingFace; requiere el modelo base |
-| Qwen/Qwen3.5-9B (modelo base, sin ajuste HTR) | 9B | No disponible | No disponible | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| qwen35-9b-arabic-manuscript-htr (este modelo) | Base de 9B mas adaptadores LoRA de rango 16 (repo de 0,4 GB) | No disponible | CER de validacion 0,125173 y WER 0,339056 en Omar Al-Saleh (798 lineas) | Apache-2.0 | Adaptadores publicos en Hugging Face; requiere el modelo base |
+| Qwen/Qwen3.5-9B (modelo base, sin ajuste HTR) | 9B | No disponible | No disponible | No disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otros sistemas HTR para manuscritos arabes (por ejemplo, aproximaciones basadas en TrOCR o en modelos tipo Kraken) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 No se han encontrado en la busqueda web enlaces ni resultados que permitan comparar este modelo con alternativas equivalentes.
@@ -114,9 +114,9 @@ No se han encontrado en la busqueda web enlaces ni resultados que permitan compa
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/rakansuliman/qwen35-9b-arabic-manuscript-htr
+- Repositorio del modelo en Hugging Face: https://huggingface.co/rakansuliman/qwen35-9b-arabic-manuscript-htr
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Coleccion Qwen3.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen35
+- Coleccion Qwen3.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen35
 - Dataset declarado en las etiquetas del modelo: TheSeniorTeam/Arabic_Manuscript_Collection_Dataset (https://huggingface.co/datasets/TheSeniorTeam/Arabic_Manuscript_Collection_Dataset)
 - Repositorio de PEFT: https://github.com/huggingface/peft
 - Los resultados de busqueda web disponibles no contienen enlaces relevantes a este modelo: devuelven paginas de localizacion de tiendas de una cadena de bricolaje, sin relacion con el modelo ni con HTR.

@@ -82,7 +82,7 @@ No se han proporcionado resultados numéricos de modelos comparables, por lo que
 
 | Modelo | Categoria | Parametros | Contexto / entrada | mAP KITTI declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| part-a2.kitti-car.mmdet3d | Detector 3D LiDAR, 2 etapas, 1 clase | 54,9 M | Nube de puntos voxelizada, 4 canales | 79,08 (no verificado) | Apache-2.0 | HuggingFace, 0,2 GB |
+| part-a2.kitti-car.mmdet3d | Detector 3D LiDAR, 2 etapas, 1 clase | 54,9 M | Nube de puntos voxelizada, 4 canales | 79,08 (no verificado) | Apache-2.0 | Hugging Face, 0,2 GB |
 | PointPillars | Detector 3D LiDAR, 1 etapa | no disponible | Nube de puntos en pilares | no disponible | no disponible en la información | Implementación en mmdetection3d |
 | SECOND | Detector 3D LiDAR, 1 etapa, sparse conv | no disponible | Vóxeles | no disponible | no disponible en la información | Implementación en mmdetection3d |
 | PV-RCNN | Detector 3D LiDAR, 2 etapas (vóxeles + puntos) | no disponible | Vóxeles y puntos clave | no disponible | no disponible en la información | Implementación en mmdetection3d |
@@ -103,7 +103,7 @@ La comparación honesta es de arquitectura y coste, no de precisión: Part-A2 es
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/torch-pointcloud/part-a2.kitti-car.mmdet3d)
+- [Modelo en Hugging Face](https://huggingface.co/torch-pointcloud/part-a2.kitti-car.mmdet3d)
 - [Paper: From Points to Parts (arXiv:1907.03670)](https://arxiv.org/abs/1907.03670)
 - [Repositorio open-mmlab/mmdetection3d](https://github.com/open-mmlab/mmdetection3d)
 - [Librería torch-pointcloud](https://github.com/arthurdjn/pytorch-pointcloud)

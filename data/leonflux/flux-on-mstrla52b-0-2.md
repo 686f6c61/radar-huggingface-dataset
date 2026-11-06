@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FLUX-on-MstrlA52B-0.2 es un checkpoint publicado por el usuario leonflux en HuggingFace, construido sobre Mistral Large 4, el modelo multimodal nativo de tipo Mixture-of-Experts desarrollado por Mistral AI. El modelo base combina aproximadamente 1 billon de parametros totales con unos 52.000 millones de parametros activos por token (49.000 millones en los expertos enrutados mas capas de embedding y salida), lo que lo situa en la categoria de modelos frontier de pesos abiertos. La arquitectura emplea 128 expertos enrutados con 4 activos por token y 1 experto compartido, junto con un codificador visual de estilo Pixtral capaz de procesar imagenes de tamano y relacion de aspecto variables.
+FLUX-on-MstrlA52B-0.2 es un checkpoint publicado por el usuario leonflux en Hugging Face, construido sobre Mistral Large 4, el modelo multimodal nativo de tipo Mixture-of-Experts desarrollado por Mistral AI. El modelo base combina aproximadamente 1 billon de parametros totales con unos 52.000 millones de parametros activos por token (49.000 millones en los expertos enrutados mas capas de embedding y salida), lo que lo situa en la categoria de modelos frontier de pesos abiertos. La arquitectura emplea 128 expertos enrutados con 4 activos por token y 1 experto compartido, junto con un codificador visual de estilo Pixtral capaz de procesar imagenes de tamano y relacion de aspecto variables.
 
 La relevancia de este checkpoint radica en que unifica en un unico conjunto de pesos el seguimiento de instrucciones, el razonamiento configurable, la generacion de codigo, los flujos agenticos y la entrada multimodal, con una ventana de contexto de 1 millon de tokens y fluidez nativa en mas de 160 idiomas, incluidos todos los oficiales de la Union Europea. El modelo base se entreno desde cero en 3.800 GPU NVIDIA Grace Blackwell en los centros de datos europeos de Mistral.
 
@@ -72,7 +72,7 @@ La model card remite al blog y al informe tecnico para benchmarks adicionales de
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mistral Large 4 (base de este checkpoint) | ~1T totales / ~52B activos | 1M | Coding Agent Index 48%; Intelligence Index v5 26 | Mistral Ecosystem Open-Weight License | Pesos abiertos en HuggingFace y API de Mistral |
+| Mistral Large 4 (base de este checkpoint) | ~1T totales / ~52B activos | 1M | Coding Agent Index 48%; Intelligence Index v5 26 | Mistral Ecosystem Open-Weight License | Pesos abiertos en Hugging Face y API de Mistral |
 | GLM-5.3 | no disponible | no disponible | Practicamente empatado en Coding Agent Index; superior en Intelligence Index v5 segun la model card | no disponible | Pesos abiertos |
 | Modelos frontier cerrados | no disponible | no disponible | Mistral Large 4 supera a modelos cerrados frontier en grounding visual segun la model card | Propietaria | Solo API |
 
@@ -90,7 +90,7 @@ No se dispone de datos detallados de parametros, contexto o licencia de GLM-5.3 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/leonflux/FLUX-on-MstrlA52B-0.2
+- Repositorio Hugging Face: https://huggingface.co/leonflux/FLUX-on-MstrlA52B-0.2
 - Repositorio oficial del modelo base: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B
 - Checkpoint NVFP4: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4
 - Blog de Mistral: https://mistral.ai/news/mistral-large-4-oss/

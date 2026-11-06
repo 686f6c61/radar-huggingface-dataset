@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones del checkpoint ofici
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-MiniMax-M3.1-Flash-NVFP4
+- Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-MiniMax-M3.1-Flash-NVFP4
 - Modelo base: https://huggingface.co/Blackfrost-Research/MiniMax-M3.1-Flash-DeRisked
 - Variante E32: https://huggingface.co/defnoteatin/PseudoBrain-MiniMax-M3.1-Flash-E32-NVFP4
 - Variante 285B: https://huggingface.co/defnoteatin/PseudoBrain-MiniMax-M3.1-Flash-285B-NVFP4

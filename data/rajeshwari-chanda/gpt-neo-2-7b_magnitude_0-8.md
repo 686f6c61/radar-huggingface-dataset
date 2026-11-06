@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Rajeshwari-Chanda/gpt-neo-2.7B_magnitude_0.8` es un checkpoint de generación de texto derivado de la arquitectura GPT-Neo, publicado por la usuaria Rajeshwari-Chanda en HuggingFace. El identificador sugiere un experimento de sparsificación por magnitud aplicado sobre GPT-Neo 2.7B (probablemente una ratio o umbral de 0,8), dentro de una serie de variantes del mismo autor que incluye al menos una con valor 0,2. El checkpoint contiene 2.651.307.520 parámetros reales en formato safetensors, lo que coincide con el tamaño de GPT-Neo 2.7B, y el repositorio ocupa 5,3 GB.
+`Rajeshwari-Chanda/gpt-neo-2.7B_magnitude_0.8` es un checkpoint de generación de texto derivado de la arquitectura GPT-Neo, publicado por la usuaria Rajeshwari-Chanda en Hugging Face. El identificador sugiere un experimento de sparsificación por magnitud aplicado sobre GPT-Neo 2.7B (probablemente una ratio o umbral de 0,8), dentro de una serie de variantes del mismo autor que incluye al menos una con valor 0,2. El checkpoint contiene 2.651.307.520 parámetros reales en formato safetensors, lo que coincide con el tamaño de GPT-Neo 2.7B, y el repositorio ocupa 5,3 GB.
 
-El modelo se distribuye con la librería `transformers`, pipeline `text-generation` y etiqueta de arquitectura `gpt_neo`. El tag `arxiv:1910.09700` de la model card corresponde al artículo del calculador de impacto de carbono (Lacoste et al., 2019) que HuggingFace inserta por defecto en plantillas automáticas, y no a un paper propio del modelo. La model card está generada automáticamente y no aporta información sobre entrenamiento, datos, licencia ni evaluación.
+El modelo se distribuye con la librería `transformers`, pipeline `text-generation` y etiqueta de arquitectura `gpt_neo`. El tag `arxiv:1910.09700` de la model card corresponde al artículo del calculador de impacto de carbono (Lacoste et al., 2019) que Hugging Face inserta por defecto en plantillas automáticas, y no a un paper propio del modelo. La model card está generada automáticamente y no aporta información sobre entrenamiento, datos, licencia ni evaluación.
 
 Su relevancia actual es la de un artefacto de investigación sobre poda de redes neuronales y eficiencia, no la de un modelo listo para producción. No registra descargas ni likes, y no incluye documentación, evaluación ni garantías de calidad. Cualquier uso en producción exige una validación previa, dado que la sparsificación por magnitud puede degradar sustancialmente la perplejidad si no fue compensada con reentrenamiento.
 
@@ -88,9 +88,9 @@ Comparado con el GPT-Neo 2.7B original, esta variante parte de la misma arquitec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rajeshwari-Chanda/gpt-neo-2.7B_magnitude_0.8
+- Modelo en Hugging Face: https://huggingface.co/Rajeshwari-Chanda/gpt-neo-2.7B_magnitude_0.8
 - Variante relacionada del mismo autor: https://huggingface.co/Rajeshwari-Chanda/gpt-neo-2.7B_magnitude_0.2
-- Perfil del autor en HuggingFace: https://huggingface.co/Rajeshwari-Chanda/models
+- Perfil del autor en Hugging Face: https://huggingface.co/Rajeshwari-Chanda/models
 - Modelo base EleutherAI gpt-neo-2.7B: https://huggingface.co/EleutherAI/gpt-neo-2.7B
 - Ficha del base en Inferix: https://inferix.co/models/EleutherAI/gpt-neo-2.7B
 - Ficha del base en ModelScope: https://www.modelscope.cn/models/EleutherAI/gpt-neo-2.7B

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `generatedDigitalExps_1xP6qQ_hier_by_room_rnn_meanPoolProc_video_2` es un artefacto publicado en HuggingFace por el usuario `gianmaTest` el 6 de noviembre de 2026. Por la nomenclatura del identificador (referencias a "hier_by_room", "rnn" y "meanPoolProc") y por su tamano (2.366.208 parametros, aproximadamente 2,4 millones), se trata con alta probabilidad de una red neuronal recurrente (RNN) de caracter experimental, orientada a procesar secuencias organizadas jerarquicamente por salas o habitaciones, con agregacion mediante mean pooling y un procesador de video. No es un modelo de lenguaje generativo ni un LLM en el sentido habitual del termino.
+El modelo `generatedDigitalExps_1xP6qQ_hier_by_room_rnn_meanPoolProc_video_2` es un artefacto publicado en Hugging Face por el usuario `gianmaTest` el 6 de noviembre de 2026. Por la nomenclatura del identificador (referencias a "hier_by_room", "rnn" y "meanPoolProc") y por su tamano (2.366.208 parametros, aproximadamente 2,4 millones), se trata con alta probabilidad de una red neuronal recurrente (RNN) de caracter experimental, orientada a procesar secuencias organizadas jerarquicamente por salas o habitaciones, con agregacion mediante mean pooling y un procesador de video. No es un modelo de lenguaje generativo ni un LLM en el sentido habitual del termino.
 
-La model card es practicamente vacia: unicamente indica que el modelo se ha subido mediante la integracion `PyTorchModelHubMixin` de HuggingFace, y deja como "More Information Needed" el codigo, el paper y la documentacion. No se declara licencia, idiomas, pipeline ni dataset de entrenamiento. El repositorio ocupa 0.0 GB (redondeado), lo que es coherente con un checkpoint de apenas unos megabytes en formato safetensors.
+La model card es practicamente vacia: unicamente indica que el modelo se ha subido mediante la integracion `PyTorchModelHubMixin` de Hugging Face, y deja como "More Information Needed" el codigo, el paper y la documentacion. No se declara licencia, idiomas, pipeline ni dataset de entrenamiento. El repositorio ocupa 0.0 GB (redondeado), lo que es coherente con un checkpoint de apenas unos megabytes en formato safetensors.
 
 Su relevancia practica es muy limitada fuera del contexto del autor: se trata de un experimento de investigacion sin documentacion publica, sin benchmarks y sin garantias de uso. Cualquier evaluacion seria requeriria acceso al codigo de entrenamiento y al dataset, que no estan disponibles en el repositorio. Esta ficha se limita, por tanto, a documentar lo que se puede verificar y a marcar explicitamente como "no disponible" todo lo demas.
 
@@ -48,7 +48,7 @@ Dado que no hay documentacion publica, los casos de uso que se enumeran a contin
 - Prototipado de pipelines de video con agregacion por regiones: el modelo podria integrarse en un pipeline experimental que divida un frame o secuencia en regiones (habitaciones) y agregue sus representaciones.
 - Baseline para comparaciones en tareas de clasificacion o prediccion sobre secuencias cortas: con 2,4 millones de parametros, es ligero y rapido de ejecutar, lo que facilita su uso como linea base.
 - Experimentos docentes sobre RNN y mean pooling: el tamano reducido permite entrenar y desplegar el modelo en hardware modesto, lo que lo hace util en contextos de formacion.
-- Pruebas de integracion con `PyTorchModelHubMixin`: el repositorio sirve como ejemplo de publicacion de checkpoints mediante la API de HuggingFace Hub.
+- Pruebas de integracion con `PyTorchModelHubMixin`: el repositorio sirve como ejemplo de publicacion de checkpoints mediante la API de Hugging Face Hub.
 
 ## Benchmarks y rendimiento
 
@@ -79,7 +79,7 @@ No disponible. No se han identificado modelos comparables publicados con la mism
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xP6qQ_hier_by_room_rnn_meanPoolProc_video_2
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xP6qQ_hier_by_room_rnn_meanPoolProc_video_2
 - Documentacion de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Codigo: no disponible
 - Paper: no disponible

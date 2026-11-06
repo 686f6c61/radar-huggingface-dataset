@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Weapon_Detection es un ajuste fino del modelo YOLOv8 Nano (yolov8n.pt) de Ultralytics, publicado por el usuario akhil0238 en HuggingFace, especializado en la detección de objetos potencialmente peligrosos en imágenes y flujos de vídeo. El modelo resuelve un problema de visión por computadora aplicado a seguridad y vigilancia: localizar y clasificar cuatro categorías de amenaza (arma de fuego, explosivo, granada y arma blanca) con bounding boxes y puntuaciones de confianza, en lugar de tareas de generación de lenguaje.
+Weapon_Detection es un ajuste fino del modelo YOLOv8 Nano (yolov8n.pt) de Ultralytics, publicado por el usuario akhil0238 en Hugging Face, especializado en la detección de objetos potencialmente peligrosos en imágenes y flujos de vídeo. El modelo resuelve un problema de visión por computadora aplicado a seguridad y vigilancia: localizar y clasificar cuatro categorías de amenaza (arma de fuego, explosivo, granada y arma blanca) con bounding boxes y puntuaciones de confianza, en lugar de tareas de generación de lenguaje.
 
 Se trata de una red convolucional (CNN) de aproximadamente 3,0 millones de parámetros (3.006.428 fusionados) y 8,1 GFLOPs, con 129 capas y una cabeza de detección (capa Detect #22) reconfigurada para 4 clases. El modelo se inicializó con pesos preentrenados en COCO y se entrenó durante 50 épocas a 640x640 píxeles con el optimizador AdamW, alcanzando según la model card un 81,3% de mAP@50 en validación y un 81,1% en test.
 
@@ -95,7 +95,7 @@ Observaciones sobre estos datos:
 
 | Modelo | Parametros | Entrada | Clases | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Weapon_Detection (este modelo) | ~3,0 M | 640x640 px | 4 (Gun, Explosive, Grenade, Knife) | MIT (según el autor) | HuggingFace, 0 descargas |
+| Weapon_Detection (este modelo) | ~3,0 M | 640x640 px | 4 (Gun, Explosive, Grenade, Knife) | MIT (según el autor) | Hugging Face, 0 descargas |
 | Ultralytics YOLOv8n (COCO, modelo base) | ~3 M | Configurable, 640x640 por defecto | 80 clases genéricas de COCO | AGPL-3.0 (Ultralytics) | Ampliamente disponible en el repositorio de Ultralytics |
 | RT-DETR / RF-DETR | No disponible en la información proporcionada | No disponible | No disponible | No disponible en la información proporcionada | Referenciado por el autor en su repositorio de comparación |
 
@@ -116,7 +116,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/akhil0238/Weapon_Detection
+- Página del modelo en Hugging Face: https://huggingface.co/akhil0238/Weapon_Detection
 - Repositorio de Ultralytics (framework y modelo base YOLOv8): https://github.com/ultralytics/ultralytics
 - Repositorio de código citado por el autor (comparación YOLO frente a RF-DETR): https://github.com/subh-775/Threat_Detection_YOLO-vs-RF-DETR
 - Licencia MIT referenciada en la model card: https://opensource.org/licenses/MIT

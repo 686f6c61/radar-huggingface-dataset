@@ -88,7 +88,7 @@ Como referencia de los modelos involucrados:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QuerynAi/queryn-adapter-qwen3-emb-8b_to_me5-large
+- Modelo en Hugging Face: https://huggingface.co/QuerynAi/queryn-adapter-qwen3-emb-8b_to_me5-large
 - Colección de adaptadores Queryn: https://huggingface.co/collections/QuerynAi/queryn-embedding-adapters-6a9499470ee93453d02110b4
 - Repositorio del proyecto Queryn: https://github.com/Gigadelux/Queryn
 - Modelo origen qwen3-emb-8b: https://huggingface.co/Qwen/Qwen3-Embedding-8B

@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La unic
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidalarrea/Kokoro-82M-bf16
+- Repositorio en Hugging Face: https://huggingface.co/davidalarrea/Kokoro-82M-bf16
 - Modelo de origen citado en la model card: https://huggingface.co/hexagrad/Kokoro-82M
 - Modelo base declarado en las etiquetas: https://huggingface.co/yl4579/StyleTTS2-LJSpeech
 - Libreria de conversion y ejecucion `mlx-audio`: https://github.com/Blaizzy/mlx-audio

@@ -111,7 +111,7 @@ No hay datos de benchmarks comparativos entre estas variantes ni con otros model
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/JoaoZaokk/ltx-2.5-22b-distilled-quants-teste
+- Repositorio de Hugging Face: https://huggingface.co/JoaoZaokk/ltx-2.5-22b-distilled-quants-teste
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.5
 - Licencia (enlace declarado por el autor): https://huggingface.co/Lightricks/LTX-2.5
 - Repositorio relacionado del mismo autor con cuantización W4A8: `JoaoZaokk/LTX-2.5-22B-distilled-W4A8-ConvRot` (citado en https://fervorcreativeai.com/workflows/)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wnxsa/daria_turker` es un modelo publicado en HuggingFace por el usuario wnxsa bajo licencia OpenRAIL. La información disponible en su model card es prácticamente inexistente: únicamente declara la licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni capacidades. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un conjunto de pesos de pequeño tamaño, pero no permite determinar con fiabilidad el número de parámetros ni la arquitectura subyacente.
+`wnxsa/daria_turker` es un modelo publicado en Hugging Face por el usuario wnxsa bajo licencia OpenRAIL. La información disponible en su model card es prácticamente inexistente: únicamente declara la licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni capacidades. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un conjunto de pesos de pequeño tamaño, pero no permite determinar con fiabilidad el número de parámetros ni la arquitectura subyacente.
 
 El nombre del repositorio (`daria_turker`) y la ausencia de documentación apuntan a un experimento personal o a un fine-tune de propósito específico, no a un modelo de referencia con publicación técnica asociada. No consta pipeline declarado, ni idiomas soportados, ni resultados de evaluación.
 
@@ -81,5 +81,5 @@ No disponible. Sin datos de arquitectura, parámetros, contexto ni evaluación, 
 
 ## Enlaces
 
-- [HuggingFace: wnxsa/daria_turker](https://huggingface.co/wnxsa/daria_turker)
+- [Hugging Face: wnxsa/daria_turker](https://huggingface.co/wnxsa/daria_turker)
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

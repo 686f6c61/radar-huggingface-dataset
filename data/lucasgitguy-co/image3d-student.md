@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Image3D Student v0.1.0 es un prototipo de investigación publicado por el usuario Lucasgitguy-co en HuggingFace bajo licencia Apache-2.0. No es un modelo preentrenado de propósito general para image-to-3D, sino un *framework* de destilación que permite entrenar un estudiante compacto de imagen a Gaussian splats a partir de las salidas cacheadas de modelos profesor (Idol, InstantMesh y Hi3D). El repositorio incluye código de entrenamiento, validación, métricas, checkpoints y utilidades de importación/exportación de PLY gaussiano de grado cero.
+Image3D Student v0.1.0 es un prototipo de investigación publicado por el usuario Lucasgitguy-co en Hugging Face bajo licencia Apache-2.0. No es un modelo preentrenado de propósito general para image-to-3D, sino un *framework* de destilación que permite entrenar un estudiante compacto de imagen a Gaussian splats a partir de las salidas cacheadas de modelos profesor (Idol, InstantMesh y Hi3D). El repositorio incluye código de entrenamiento, validación, métricas, checkpoints y utilidades de importación/exportación de PLY gaussiano de grado cero.
 
 La arquitectura se compone de un codificador de imagen compacto y un decodificador de coordenadas que predice parámetros gaussianos (posición, escala anisotrópica, rotación, color y opacidad). El entrenamiento está pensado para ejecutarse en Apple Metal (MPS) o CPU, con soporte de Python 3.11–3.13. El checkpoint de demostración incluido solo ha aprendido elipsoides procedurales sintéticos, por lo que no debe interpretarse como evidencia de calidad sobre imágenes reales.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Image3D Student v0.1.0 | Destilación image-to-Gaussian-splat (framework) | no disponible | no aplica | Apache-2.0 | HuggingFace, repo de 0.0 GB, 0 descargas |
+| Image3D Student v0.1.0 | Destilación image-to-Gaussian-splat (framework) | no disponible | no aplica | Apache-2.0 | Hugging Face, repo de 0.0 GB, 0 descargas |
 | Idol | Profesor image-to-3D (Gaussian splatting) | no disponible | no aplica | no disponible en la información | Referenciado como profesor; ejecución en Mac experimental |
 | InstantMesh | Profesor image-to-mesh | no disponible | no aplica | no disponible en la información | Referenciado como profesor; ejecución local no implementada |
 | Hi3D | Profesor image-to-mesh refinado | no disponible | no aplica | no disponible en la información | Referenciado como profesor; ejecución local no implementada |
@@ -88,11 +88,11 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 - Con `--validation-fraction 0` no se genera `best.pt` ni se mide generalización.
 - Licencia Apache-2.0 permite uso comercial, pero el estado de prototipo y la ausencia de validación sobre imágenes reales desaconsejan su uso en producción sin trabajo adicional.
 - El modelo declara idioma `en` en metadatos, aunque al no ser lingüístico este campo es meramente administrativo.
-- Sin descargas ni likes en HuggingFace en el momento de la consulta; no hay evidencia de validación por parte de la comunidad.
+- Sin descargas ni likes en Hugging Face en el momento de la consulta; no hay evidencia de validación por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lucasgitguy-co/image3d-student
+- Hugging Face: https://huggingface.co/Lucasgitguy-co/image3d-student
 - Documentación de uso (Windows, Linux, macOS): `docs/USAGE.md` (referenciado en la model card, sin URL absoluta disponible)
 - Guías de modelos del publicador: `docs/ALL_MODELS.md` (referenciado, sin URL absoluta disponible)
 - Notas de versión: `CHANGELOG.md` (referenciado, sin URL absoluta disponible)

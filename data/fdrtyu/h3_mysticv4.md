@@ -2,7 +2,7 @@
 
 ## Resumen
 
-H3_Mysticv4 es un modelo publicado en HuggingFace por el usuario fdrtyu bajo el identificador fdrtyu/H3_Mysticv4. En el momento de la consulta, la model card asociada no contiene ninguna descripcion tecnica: unicamente incluye el bloque de metadatos de licencia, con `license: other`, `license_name: other` y un enlace a un fichero LICENSE del propio repositorio. No se declara arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni pipeline de inferencia.
+H3_Mysticv4 es un modelo publicado en Hugging Face por el usuario fdrtyu bajo el identificador fdrtyu/H3_Mysticv4. En el momento de la consulta, la model card asociada no contiene ninguna descripcion tecnica: unicamente incluye el bloque de metadatos de licencia, con `license: other`, `license_name: other` y un enlace a un fichero LICENSE del propio repositorio. No se declara arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni pipeline de inferencia.
 
 El repositorio tiene un tamano aproximado de 0,2 GB y acumula 0 descargas y 0 likes, con fecha de creacion y ultima actualizacion en septiembre de 2026. El unico tag adicional relevante es `region:us`. No existe documentacion publica, paper, blog tecnico ni repositorio de codigo asociado que permita verificar las caracteristicas del modelo.
 
@@ -41,7 +41,7 @@ No hay informacion verificable sobre las capacidades del modelo. No se puede con
 - Capacidades multimodales (vision, audio) o modo de razonamiento explicito: no confirmado.
 - Longitud de contexto efectiva y gestion de conversaciones multi-turno: no confirmado.
 
-El unico indicio sobre la naturaleza del modelo es el nombre ("H3_Mysticv4") y el hecho de estar alojado en HuggingFace, lo que sugiere un modelo de aprendizaje automatico, pero esto no constituye evidencia tecnica.
+El unico indicio sobre la naturaleza del modelo es el nombre ("H3_Mysticv4") y el hecho de estar alojado en Hugging Face, lo que sugiere un modelo de aprendizaje automatico, pero esto no constituye evidencia tecnica.
 
 ## Casos de uso
 
@@ -85,7 +85,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fdrtyu/H3_Mysticv4
-- Fichero de licencia referenciado en la model card: LICENSE (dentro del repositorio de HuggingFace)
+- Hugging Face: https://huggingface.co/fdrtyu/H3_Mysticv4
+- Fichero de licencia referenciado en la model card: LICENSE (dentro del repositorio de Hugging Face)
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible
 - Resultados de busqueda web relevantes: no disponible (las busquedas realizadas devolvieron unicamente paginas corporativas de Microsoft sin relacion con el modelo)

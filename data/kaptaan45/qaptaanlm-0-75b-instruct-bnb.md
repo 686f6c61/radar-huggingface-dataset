@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/kaptaan45/QaptaanLM-0.75B-Instruct-BnB
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/kaptaan45/QaptaanLM-0.75B-Instruct-BnB
 - Modelo base (sin cuantizar): https://huggingface.co/kaptaan45/QaptaanLM-0.75B-Instruct
 - Version GGUF para inferencia en CPU: https://huggingface.co/kaptaan45/QaptaanLM-0.75B-Instruct-GGUF
 - Repositorio GitHub con el pipeline de entrenamiento: https://github.com/rudy-07/QaptaanLM-0.75B

@@ -77,7 +77,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Gemma-4-Dark-Thoughts-V2-31B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma-4-Dark-Thoughts-V2-31B-i1-GGUF
 - Modelo base: https://huggingface.co/Ateron/Gemma-4-Dark-Thoughts-V2-31B
 - Repositorio de quants estaticos: https://huggingface.co/mradermacher/Gemma-4-Dark-Thoughts-V2-31B-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Gemma-4-Dark-Thoughts-V2-31B-i1-GGUF

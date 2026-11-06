@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Llama-3.1-8B-german-city-names-last-third-v2-sft-seed5-epoch3` es un fine-tuning supervisado (SFT) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. Según su nombre, el entrenamiento se realizó sobre un subconjunto de nombres de ciudades alemanas (la última tercera parte de un dataset no especificado), con el objetivo de adaptar el modelo a esa temática concreta. Se utilizaron las librerías Unsloth y TRL de HuggingFace para acelerar el entrenamiento.
+El modelo `longtermrisk/Llama-3.1-8B-german-city-names-last-third-v2-sft-seed5-epoch3` es un fine-tuning supervisado (SFT) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. Según su nombre, el entrenamiento se realizó sobre un subconjunto de nombres de ciudades alemanas (la última tercera parte de un dataset no especificado), con el objetivo de adaptar el modelo a esa temática concreta. Se utilizaron las librerías Unsloth y TRL de Hugging Face para acelerar el entrenamiento.
 
 Este modelo se publica con licencia Apache 2.0 y está pensado para experimentos de fine-tuning. Su relevancia radica en ser un ejemplo de adaptación de un LLM generalista a un dominio muy específico (nombres geográficos), aunque la documentación disponible es mínima y no incluye métricas de rendimiento ni detalles del dataset de entrenamiento.
 
@@ -21,7 +21,7 @@ Este modelo se publica con licencia Apache 2.0 y está pensado para experimentos
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura Llama-3.1-8B-Instruct, un transformer decoder-only con 8.000 millones de parámetros, atención por ventanas y normalización RMSNorm. El fine-tuning se realizó mediante aprendizaje supervisado (SFT) sobre un dataset de nombres de ciudades alemanas, concretamente la "última tercera parte" (last third) de un conjunto de datos no detallado. Se emplearon las herramientas Unsloth (para optimizar el entrenamiento) y la librería TRL de HuggingFace. No se proporciona información sobre el número de tokens de entrenamiento, la composición exacta del dataset, ni si se aplicaron técnicas como RLHF o DPO.
+El modelo parte de la arquitectura Llama-3.1-8B-Instruct, un transformer decoder-only con 8.000 millones de parámetros, atención por ventanas y normalización RMSNorm. El fine-tuning se realizó mediante aprendizaje supervisado (SFT) sobre un dataset de nombres de ciudades alemanas, concretamente la "última tercera parte" (last third) de un conjunto de datos no detallado. Se emplearon las herramientas Unsloth (para optimizar el entrenamiento) y la librería TRL de Hugging Face. No se proporciona información sobre el número de tokens de entrenamiento, la composición exacta del dataset, ni si se aplicaron técnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -65,4 +65,4 @@ No disponible. No se han encontrado modelos comparables con la misma especializa
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Llama-3.1-8B-german-city-names-last-third-v2-sft-seed5-epoch3](https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-last-third-v2-sft-seed5-epoch3)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-german-city-names-last-third-v2-sft-seed5-epoch3](https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-last-third-v2-sft-seed5-epoch3)

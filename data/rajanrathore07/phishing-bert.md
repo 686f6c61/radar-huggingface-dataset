@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rajanrathore07/phishing-bert` es un modelo publicado en HuggingFace por el usuario rajanrathore07. Por el nombre del repositorio, cabe inferir que se trata de un modelo basado en BERT orientado a la deteccion de phishing, presumiblemente mediante clasificacion de texto (URLs, cuerpos de correo o mensajes). Sin embargo, esta inferencia no esta confirmada por la informacion disponible: la ficha de HuggingFace no declara pipeline, licencia, idiomas ni arquitectura.
+`rajanrathore07/phishing-bert` es un modelo publicado en Hugging Face por el usuario rajanrathore07. Por el nombre del repositorio, cabe inferir que se trata de un modelo basado en BERT orientado a la deteccion de phishing, presumiblemente mediante clasificacion de texto (URLs, cuerpos de correo o mensajes). Sin embargo, esta inferencia no esta confirmada por la informacion disponible: la ficha de Hugging Face no declara pipeline, licencia, idiomas ni arquitectura.
 
 El repositorio presenta un historial de uso practicamente nulo: 0 descargas y 1 like, con fecha de creacion y ultima actualizacion identicas (2026-09-19T17:27:33.000Z), lo que sugiere que se subio y no se ha mantenido posteriormente. El unico tag presente es `region:us`, que no aporta informacion tecnica.
 
@@ -72,7 +72,7 @@ No se dispone de informacion verificable para establecer una comparativa riguros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificados |
 |---|---|---|---|---|---|
-| rajanrathore07/phishing-bert | no disponible | no disponible | no disponible | HuggingFace, 0 descargas | no |
+| rajanrathore07/phishing-bert | no disponible | no disponible | no disponible | Hugging Face, 0 descargas | no |
 | Alternativas de clasificacion de phishing | no disponible | no disponible | no disponible | no disponible | no |
 
 ## Limitaciones y advertencias
@@ -88,5 +88,5 @@ No se dispone de informacion verificable para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rajanrathore07/phishing-bert
+- Repositorio en Hugging Face: https://huggingface.co/rajanrathore07/phishing-bert
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada.

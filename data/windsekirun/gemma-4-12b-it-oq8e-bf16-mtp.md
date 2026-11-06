@@ -6,7 +6,7 @@ gemma-4-12B-it-oQ8e-bf16-mtp es una cuantizacion de 8 bits en precision mixta de
 
 El modelo base es un transformer de 12.382.587.188 parametros (unos 12,4 mil millones), segun los pesos reales en safetensors, con licencia Apache 2.0. Esta variante no anade capacidades nuevas: su proposito es reducir el peso de los pesos (repositorio de 13,6 GB) manteniendo la mayor parte de la calidad del original, con un esquema de cuantizacion oQ8e de grupo 64 generado con oMLX v0.7.2.
 
-Es relevante para desarrolladores que quieran desplegar Gemma 4 12B en Macs con memoria unificada y aprovechar la aceleracion del asistente MTP, evitando tener que cuantizar y fusionar los pesos por su cuenta. La ficha se limita a los datos verificables en la model card y en los metadatos de HuggingFace; todo lo no publicado se marca como no disponible.
+Es relevante para desarrolladores que quieran desplegar Gemma 4 12B en Macs con memoria unificada y aprovechar la aceleracion del asistente MTP, evitando tener que cuantizar y fusionar los pesos por su cuenta. La ficha se limita a los datos verificables en la model card y en los metadatos de Hugging Face; todo lo no publicado se marca como no disponible.
 
 ## Especificaciones tecnicas
 
@@ -81,6 +81,6 @@ No se dispone de datos de benchmarks ni de otros modelos comparables en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WindSekirun/gemma-4-12B-it-oQ8e-bf16-mtp
+- Modelo en Hugging Face: https://huggingface.co/WindSekirun/gemma-4-12B-it-oQ8e-bf16-mtp
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Asistente MTP oficial: https://huggingface.co/google/gemma-4-12B-it-assistant

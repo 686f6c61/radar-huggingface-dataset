@@ -4,7 +4,7 @@
 
 Arctic-MidTool-MT-4B es un modelo de lenguaje de 4.022 millones de parámetros desarrollado por MidTool, basado en Qwen/Qwen3-4B-Base. El modelo está diseñado específicamente para casos de uso agénticos, con soporte de tool calling y function calling, y ha sido sometido a un proceso de mid-training con el dataset propietario MidTool/MidTool-Mix. La licencia es Apache 2.0, lo que permite uso comercial y modificación.
 
-La relevancia de este modelo radica en su tamaño compacto (4B parámetros) combinado con capacidades de agente y uso de herramientas, un nicho en el que normalmente se requieren modelos más grandes. Al estar basado en Qwen3-4B-Base, hereda la arquitectura transformer de Qwen y su capacidad multilingüe, aunque los idiomas exactos soportados no se han especificado en la información disponible. El acceso al modelo es restringido (gated) y requiere aceptar condiciones en HuggingFace, a pesar de su licencia abierta.
+La relevancia de este modelo radica en su tamaño compacto (4B parámetros) combinado con capacidades de agente y uso de herramientas, un nicho en el que normalmente se requieren modelos más grandes. Al estar basado en Qwen3-4B-Base, hereda la arquitectura transformer de Qwen y su capacidad multilingüe, aunque los idiomas exactos soportados no se han especificado en la información disponible. El acceso al modelo es restringido (gated) y requiere aceptar condiciones en Hugging Face, a pesar de su licencia abierta.
 
 ## Especificaciones tecnicas
 
@@ -67,16 +67,16 @@ No se han publicado benchmarks comparativos con estos modelos, por lo que no es 
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: aunque la licencia es Apache 2.0, el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar la automatización de despliegues.
+- **Acceso restringido**: aunque la licencia es Apache 2.0, el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar la automatización de despliegues.
 - **Sesgos desconocidos**: no se han publicado análisis de sesgos o evaluaciones de seguridad; al ser un modelo derivado de Qwen3-4B-Base, puede heredar sesgos del entrenamiento original.
 - **Riesgo de alucinación**: como todo modelo de lenguaje, puede generar información falsa o inventada, especialmente en contextos de tool calling si las herramientas devuelven errores o datos ambiguos.
 - **Limitaciones de contexto**: no se ha especificado la longitud de contexto soportada, lo que es crítico para casos de uso agénticos que requieren ventanas largas.
 - **Idiomas no documentados**: no se ha confirmado el conjunto de idiomas soportados, lo que puede ser un problema para despliegues multilingües.
-- **Estado del proyecto**: el modelo tiene 0 descargas y 0 likes en HuggingFace, y el autor no es una organización conocida; el proyecto puede estar en fase temprana y sin mantenimiento garantizado.
+- **Estado del proyecto**: el modelo tiene 0 descargas y 0 likes en Hugging Face, y el autor no es una organización conocida; el proyecto puede estar en fase temprana y sin mantenimiento garantizado.
 
 ## Enlaces
 
-- [HuggingFace: MidTool/Arctic-MidTool-MT-4B](https://huggingface.co/MidTool/Arctic-MidTool-MT-4B)
-- [HuggingFace mirror: fan-shu/Arctic-MidTool-MT-4B](https://huggingface.co/fan-shu/Arctic-MidTool-MT-4B)
-- [HuggingFace: fan-shu/Arctic-MidTool-MT-4B-finetoolv2-sft779 (checkpoint SFT)](https://huggingface.co/fan-shu/Arctic-MidTool-MT-4B-finetoolv2-sft779)
+- [Hugging Face: MidTool/Arctic-MidTool-MT-4B](https://huggingface.co/MidTool/Arctic-MidTool-MT-4B)
+- [Hugging Face mirror: fan-shu/Arctic-MidTool-MT-4B](https://huggingface.co/fan-shu/Arctic-MidTool-MT-4B)
+- [Hugging Face: fan-shu/Arctic-MidTool-MT-4B-finetoolv2-sft779 (checkpoint SFT)](https://huggingface.co/fan-shu/Arctic-MidTool-MT-4B-finetoolv2-sft779)
 - [README del checkpoint SFT](https://d6108366.hf-mirror.com/fan-shu/Arctic-MidTool-MT-4B-finetoolv2-sft779/blob/main/README.md?code=true)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `junbrro/action-tokenizer-arm2-rbbt-hoc-w003-split-100k-slurm-18803-20260922` es un artefacto publicado en HuggingFace por el usuario `junbrro` el 22 de septiembre de 2026. Por su nombre y por el contenido de su model card, se trata de un tokenizador de acciones (action tokenizer) asociado a un entrenamiento de robótica denominado "Arm II", generado en un clúster Slurm mediante el trabajo identificado como 18803, con un checkpoint final en el paso 100000.
+El repositorio `junbrro/action-tokenizer-arm2-rbbt-hoc-w003-split-100k-slurm-18803-20260922` es un artefacto publicado en Hugging Face por el usuario `junbrro` el 22 de septiembre de 2026. Por su nombre y por el contenido de su model card, se trata de un tokenizador de acciones (action tokenizer) asociado a un entrenamiento de robótica denominado "Arm II", generado en un clúster Slurm mediante el trabajo identificado como 18803, con un checkpoint final en el paso 100000.
 
 La model card es muy breve y no describe la arquitectura, el tamaño, los datos de entrenamiento ni el rendimiento del modelo. Se limita a indicar que el paquete contiene únicamente los pesos finales y la configuración, que se excluyen el estado del optimizador y del generador de números aleatorios, que la configuración original se conserva con las rutas del clúster de origen (por lo que hay que reasignar rutas antes de usarlo) y que el directorio incluido `actlat/` contiene el tokenizador de acciones cuando procede.
 
@@ -90,5 +90,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/junbrro/action-tokenizer-arm2-rbbt-hoc-w003-split-100k-slurm-18803-20260922
+- Repositorio en Hugging Face: https://huggingface.co/junbrro/action-tokenizer-arm2-rbbt-hoc-w003-split-100k-slurm-18803-20260922
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada.

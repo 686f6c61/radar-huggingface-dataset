@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreTripoSplat0.6b | 658M (370M denoiser + 288M decodificador) | Imagen única | Hasta 262.144 Gaussianas 3D | MIT (con dependencias externas restringidas) | HuggingFace, mirror de VAST |
-| VAST-AI/TripoSplat (upstream) | Idénticos (mismos pesos) | Imagen única | Hasta 262.144 Gaussianas 3D | MIT | HuggingFace |
+| LibreTripoSplat0.6b | 658M (370M denoiser + 288M decodificador) | Imagen única | Hasta 262.144 Gaussianas 3D | MIT (con dependencias externas restringidas) | Hugging Face, mirror de VAST |
+| VAST-AI/TripoSplat (upstream) | Idénticos (mismos pesos) | Imagen única | Hasta 262.144 Gaussianas 3D | MIT | Hugging Face |
 | Otros modelos image-to-3D | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparativa con alternativas de la misma categoría no está disponible en la información proporcionada; el único comparable documentado es el repositorio upstream de VAST, del que este es un mirror byte-idéntico.
@@ -81,8 +81,8 @@ La comparativa con alternativas de la misma categoría no está disponible en la
 
 ## Enlaces
 
-- [HuggingFace: LibreYOLO/LibreTripoSplat0.6b](https://huggingface.co/LibreYOLO/LibreTripoSplat0.6b)
-- [Upstream en HuggingFace: VAST-AI/TripoSplat](https://huggingface.co/VAST-AI/TripoSplat)
+- [Hugging Face: LibreYOLO/LibreTripoSplat0.6b](https://huggingface.co/LibreYOLO/LibreTripoSplat0.6b)
+- [Upstream en Hugging Face: VAST-AI/TripoSplat](https://huggingface.co/VAST-AI/TripoSplat)
 - [Repositorio de código: VAST-AI-Research/TripoSplat](https://github.com/VAST-AI-Research/TripoSplat)
 - [Paper: arXiv:2605.16355](https://arxiv.org/abs/2605.16355)
 - [Dependencia: LibreYOLO/LibreDINOv3vith16plus](https://huggingface.co/LibreYOLO/LibreDINOv3vith16plus)

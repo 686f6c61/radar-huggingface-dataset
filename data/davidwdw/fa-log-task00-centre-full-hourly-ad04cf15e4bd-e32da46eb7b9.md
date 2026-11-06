@@ -4,7 +4,7 @@
 
 El repositorio `davidwdw/fa-log-task00-centre-full-hourly-ad04cf15e4bd-e32da46eb7b9` no es un modelo de lenguaje entrenado, sino un paquete de artefactos versionado. La propia model card lo describe como «versioned fleet archive» y remite a una receta canonica identificada como `evaluations/2026-09-23_task00_centre_full_recovery`, con nivel («tier») de «versioned snapshot». Es decir, el contenido declarado es una instantanea de ficheros de un proceso de evaluacion o de registro, no pesos de red neuronal.
 
-El autor es el usuario de HuggingFace `davidwdw`, con cero descargas y cero likes en el momento de la consulta, creado y actualizado el 26 de septiembre de 2026 (fechas tal como las devuelve la API, sin verificacion adicional por nuestra parte). El unico tag presente es `region:us`. No se declara pipeline, licencia, idiomas ni tamano de parametros, y la model card no incluye ningun dato de arquitectura, entrenamiento o evaluacion.
+El autor es el usuario de Hugging Face `davidwdw`, con cero descargas y cero likes en el momento de la consulta, creado y actualizado el 26 de septiembre de 2026 (fechas tal como las devuelve la API, sin verificacion adicional por nuestra parte). El unico tag presente es `region:us`. No se declara pipeline, licencia, idiomas ni tamano de parametros, y la model card no incluye ningun dato de arquitectura, entrenamiento o evaluacion.
 
 Por tanto, esta ficha no puede documentar capacidades de inferencia ni rendimiento: la informacion disponible es insuficiente para determinar siquiera si el paquete contiene pesos utilizables. Se recomienda tratar el identificador como un artefacto de trazabilidad (snapshot con verificacion SHA256SUMS) y no como un modelo desplegable.
 
@@ -76,7 +76,7 @@ No disponible. El objeto descrito no es un modelo de lenguaje, de modo que no ex
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-ad04cf15e4bd-e32da46eb7b9
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-ad04cf15e4bd-e32da46eb7b9
 - Receta canonica referenciada en la model card: `evaluations/2026-09-23_task00_centre_full_recovery` (ruta interna citada por el autor; no se ha localizado un enlace publico)
 - Fichero de verificacion referenciado: `SHA256SUMS` (mencionado en la model card; sin URL publica disponible)
 - Paper, blog, repositorio de codigo o demo: no disponible

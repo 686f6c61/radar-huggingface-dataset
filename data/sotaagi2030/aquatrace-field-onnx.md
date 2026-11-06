@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AquaTrace-Field-ONNX es un modelo de clasificación tabular distribuido en formato ONNX por el usuario SOTAagi2030 en HuggingFace. Segun la model card del autor, se trata de un detector de anomalias de fluorescencia para cribado de campo supervisado ("offline fluorescence anomaly detector for supervised field screening"), validado con ONNX Runtime 1.17 en unidades de cribado gestionadas por autoridades. El repositorio declara la etiqueta de pipeline `tabular-classification` y licencia Apache 2.0.
+AquaTrace-Field-ONNX es un modelo de clasificación tabular distribuido en formato ONNX por el usuario SOTAagi2030 en Hugging Face. Segun la model card del autor, se trata de un detector de anomalias de fluorescencia para cribado de campo supervisado ("offline fluorescence anomaly detector for supervised field screening"), validado con ONNX Runtime 1.17 en unidades de cribado gestionadas por autoridades. El repositorio declara la etiqueta de pipeline `tabular-classification` y licencia Apache 2.0.
 
 El modelo no es un modelo de lenguaje ni un transformer generativo: trabaja sobre caracteristicas tabulares derivadas de senales de fluorescencia y produce una clasificacion supervisada, presumiblemente orientada a senalar muestras anomalas que requieran verificacion posterior en laboratorio. El propio autor advierte de forma explicita que los resultados requieren confirmacion de laboratorio y que el repositorio no constituye una certificacion de seguridad de agua potable.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada por la escasez de informacion publicada:
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publicada sobre la arquitectura interna del modelo. La etiqueta de HuggingFace indica `tabular-classification` y la libreria declarada es `onnx`, por lo que el artefacto distribuido es un grafo ONNX que consume caracteristicas tabulares y devuelve una clasificacion. No se especifica si el estimador subyacente es un modelo lineal, un conjunto de arboles potenciados (gradient boosting), una red neuronal feed-forward u otra familia; tampoco se detalla el esquema de columnas esperado.
+No se dispone de informacion publicada sobre la arquitectura interna del modelo. La etiqueta de Hugging Face indica `tabular-classification` y la libreria declarada es `onnx`, por lo que el artefacto distribuido es un grafo ONNX que consume caracteristicas tabulares y devuelve una clasificacion. No se especifica si el estimador subyacente es un modelo lineal, un conjunto de arboles potenciados (gradient boosting), una red neuronal feed-forward u otra familia; tampoco se detalla el esquema de columnas esperado.
 
 Respecto al entrenamiento, no hay informacion sobre el numero de muestras, la composicion del conjunto de datos, el preprocesado aplicado a las senales de fluorescencia, el regimen de validacion ni si se emplearon tecnicas de regularizacion o recalibrado. La model card unicamente menciona que el modelo fue validado con ONNX Runtime 1.17 en "unidades de cribado gestionadas por autoridades", lo que apunta a un despliegue en inferencia local y sin conectividad, pero no aporta detalles tecnicos reproducibles ni pesos alternativos en otros formatos.
 
@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SOTAagi2030/AquaTrace-Field-ONNX
+- Hugging Face: https://huggingface.co/SOTAagi2030/AquaTrace-Field-ONNX
 - ONNX Runtime: no disponible en la informacion proporcionada (la model card cita la version 1.17 sin enlace)
 - Paper o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

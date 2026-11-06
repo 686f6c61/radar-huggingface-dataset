@@ -92,7 +92,7 @@ La comparación muestra que el aumento de K de 8 a 16 produce una mejora de 2 pu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GermannM/kenga-prophet-m2-k16
+- Hugging Face: https://huggingface.co/GermannM/kenga-prophet-m2-k16
 - Repositorio del lenguaje Kenga: https://github.com/GermannM3/kenga-lang
 - Ejemplos del lenguaje Kenga: https://github.com/GermannM3/kenga-lang/tree/main/examples
 - Modelo anterior (M2.0): https://huggingface.co/GermannM/kenga-prophet (según la model card, pero no se ha verificado el enlace)
@@ -189,7 +189,7 @@ La comparación muestra que el aumento de contexto duplica los parámetros (6.30
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GermannM/kenga-prophet-m2-k16
+- Hugging Face: https://huggingface.co/GermannM/kenga-prophet-m2-k16
 - Repositorio del lenguaje Kenga: https://github.com/GermannM3/kenga-lang
 - Ejemplos del lenguaje Kenga: https://github.com/GermannM3/kenga-lang/tree/main/examples
 - Modelo anterior (M2.0): https://huggingface.co/GermannM/kenga-prophet (referencia según la model card, no verificado)
@@ -285,7 +285,7 @@ La comparación muestra que duplicar el contexto (K=8 a K=16) aumenta los parám
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GermannM/kenga-prophet-m2-k16
+- Hugging Face: https://huggingface.co/GermannM/kenga-prophet-m2-k16
 - Repositorio del lenguaje Kenga: https://github.com/GermannM3/kenga-lang
 - Ejemplos del lenguaje Kenga: https://github.com/GermannM3/kenga-lang/tree/main/examples
 - Modelo anterior (M2.0): https://huggingface.co/GermannM/kenga-prophet (referencia según la model card, no verificado)

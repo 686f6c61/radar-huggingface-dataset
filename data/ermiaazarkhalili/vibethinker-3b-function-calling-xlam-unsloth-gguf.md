@@ -87,9 +87,9 @@ No hay benchmarks publicados que permitan una comparacion cuantitativa. La compa
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/ermiaazarkhalili/VibeThinker-3B-Function-Calling-xLAM-Unsloth-GGUF
-- Repositorio HuggingFace (pesos completos): https://huggingface.co/ermiaazarkhalili/VibeThinker-3B-Function-Calling-xLAM-Unsloth
-- Modelo base en HuggingFace: https://huggingface.co/WeiboAI/VibeThinker-3B
+- Repositorio Hugging Face (GGUF): https://huggingface.co/ermiaazarkhalili/VibeThinker-3B-Function-Calling-xLAM-Unsloth-GGUF
+- Repositorio Hugging Face (pesos completos): https://huggingface.co/ermiaazarkhalili/VibeThinker-3B-Function-Calling-xLAM-Unsloth
+- Modelo base en Hugging Face: https://huggingface.co/WeiboAI/VibeThinker-3B
 - GitHub de VibeThinker: https://github.com/WeiboAI/VibeThinker
 - Paper tecnico (arXiv): https://arxiv.org/abs/2606.16140
 - Dataset de entrenamiento: https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k

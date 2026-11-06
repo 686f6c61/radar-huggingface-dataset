@@ -71,7 +71,7 @@ No se dispone de información suficiente para una comparativa con modelos de la 
 
 ## Enlaces
 
-- [HuggingFace - Lookoff/gemma-4-26b-a4b-it-uncensored-4bit](https://huggingface.co/Lookoff/gemma-4-26b-a4b-it-uncensored-4bit)
+- [Hugging Face - Lookoff/gemma-4-26b-a4b-it-uncensored-4bit](https://huggingface.co/Lookoff/gemma-4-26b-a4b-it-uncensored-4bit)
 - [Modelo base original - google/gemma-4-26b-a4b](https://huggingface.co/google/gemma-4-26b-a4b)
 - [Checkpoint abliterado - TrevorJS/gemma-4-26B-A4B-it-uncensored](https://huggingface.co/TrevorJS/gemma-4-26B-A4B-it-uncensored)
 - [Versión cuantizada oficial de referencia - mlx-community/gemma-4-26b-a4b-it-4bit](https://huggingface.co/mlx-community/gemma-4-26b-a4b-it-4bit)

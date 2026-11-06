@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento de este modelo ni de alternativas comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kavin-aravindhan/vit-oct-wamd
+- Modelo en Hugging Face: https://huggingface.co/kavin-aravindhan/vit-oct-wamd
 - Modelo base: https://huggingface.co/google/siglip-so400m-patch14-384
 - Dataset (acceso pendiente de IRB): https://huggingface.co/datasets/kavin-aravindhan/oct-wamd
 - Paper asociado: Li, Z., Freeman, B., Raman, A., Rajkumar, K. A., Fang, X., Srivastava, R., Feiner, S., Thakoor, K. A. "Co-Annotator: Expert-Distilled ViT and VLM for Visual and Documentation Guidance in Age-Related Macular Degeneration", UIST '26 (ACM Symposium on User Interface Software and Technology).

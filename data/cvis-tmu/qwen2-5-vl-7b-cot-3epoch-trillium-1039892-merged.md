@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen2.5-vl-7b-cot-3epoch-trillium-1039892-merged es un ajuste fino supervisado de Qwen/Qwen2.5-VL-7B-Instruct publicado por el usuario cvis-tmu en HuggingFace. Es un modelo multimodal de tipo image-text-to-text: acepta imágenes y texto como entrada y produce texto. Sobre los pesos base se entrenó un adaptador LoRA con datos de chain-of-thought (CoT) que después se fusionó en los pesos, de modo que la inferencia no requiere cargar el adaptador por separado.
+qwen2.5-vl-7b-cot-3epoch-trillium-1039892-merged es un ajuste fino supervisado de Qwen/Qwen2.5-VL-7B-Instruct publicado por el usuario cvis-tmu en Hugging Face. Es un modelo multimodal de tipo image-text-to-text: acepta imágenes y texto como entrada y produce texto. Sobre los pesos base se entrenó un adaptador LoRA con datos de chain-of-thought (CoT) que después se fusionó en los pesos, de modo que la inferencia no requiere cargar el adaptador por separado.
 
 El resultado es un checkpoint completo en BF16 de 8.292.166.656 parámetros (unos 16,6 GB repartidos en cuatro shards de safetensors) que conserva la arquitectura del modelo base: un encoder de visión tipo ViT acoplado a un transformer Qwen2.5 de 7B. El entrenamiento se hizo con LLaMA-Factory y corresponde a la tercera época de una cascada de cuatro épocas, continuando desde el checkpoint de la época 2 (job 1039891) hasta el paso global 1851.
 
@@ -85,8 +85,8 @@ No hay datos de MMLU, MMBench, DocVQA, MathVista, HumanEval ni de ninguna otra e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (qwen2.5-vl-7b-cot-3epoch-trillium-1039892-merged) | 8,29 B | 128 000 tokens (heredado del base) | Apache 2.0 | HuggingFace, 0 descargas, sin benchmarks |
-| Qwen/Qwen2.5-VL-7B-Instruct (base) | 8,29 B | 128 000 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado y evaluado |
+| Este checkpoint (qwen2.5-vl-7b-cot-3epoch-trillium-1039892-merged) | 8,29 B | 128 000 tokens (heredado del base) | Apache 2.0 | Hugging Face, 0 descargas, sin benchmarks |
+| Qwen/Qwen2.5-VL-7B-Instruct (base) | 8,29 B | 128 000 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado y evaluado |
 | InternVL2.5-8B | ~8 B (segun la denominacion del modelo) | no disponible | no disponible | no disponible en la informacion proporcionada |
 | MiniCPM-V 2.6 | ~8 B (segun la denominacion del modelo) | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -108,6 +108,6 @@ La comparación con las alternativas de la misma categoría (modelos multimodale
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cvis-tmu/qwen2.5-vl-7b-cot-3epoch-trillium-1039892-merged
+- Modelo en Hugging Face: https://huggingface.co/cvis-tmu/qwen2.5-vl-7b-cot-3epoch-trillium-1039892-merged
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo: los unicos resultados fueron sitios de Spider Solitaire (spidersolitaire.fr), sin relacion con el contenido de la ficha. No hay papers, blogs, repositorios ni demos adicionales disponibles.

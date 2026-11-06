@@ -84,7 +84,7 @@ La comparativa directa no es posible por falta de datos del Puzzletron. Se recom
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/notSnix/Qwen3.8-27B-Puzzletron-21p8B
+- Repositorio Hugging Face: https://huggingface.co/notSnix/Qwen3.8-27B-Puzzletron-21p8B
 - Modelo base Qwen3.8-27B (unsloth): https://huggingface.co/unsloth/Qwen3.8-27B
 - Modelo base Qwen3.8-27B (original): https://huggingface.co/Qwen/Qwen3.8-27B
 - Guía sobre Qwen3.8-27B (2026): https://lovableapp.org/blog/qwen3-8-27b

@@ -85,7 +85,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laurenfklein/chatterbox-340m-test
+- Modelo en Hugging Face: https://huggingface.co/laurenfklein/chatterbox-340m-test
 - Demo: https://huggingface.co/spaces/laurenfklein/chatterbox-340m-test-demo
 - Repo de nanochat: https://github.com/karpathy/nanochat
 - Resultados de búsqueda web sobre "chatterbox" corresponden a otro modelo de TTS de Resemble AI, no relacionados con este artefacto.

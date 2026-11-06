@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ImageWAM G1 trash81 deltaflow es un modelo de política robótica (policy) publicado por el usuario ZUO66 en HuggingFace, orientado a una tarea concreta de manipulación: recoger basura y arrojarla a una papelera. Se trata de un artefacto de investigación derivado de ImageWAM con formulación Δ-flow, entrenado sobre 81 demostraciones teleoperadas (52.844 fotogramas a 30 FPS) de un robot G1, con una instrucción de lenguaje fija. No es un modelo de propósito general: es un checkpoint de política visuomotora para una tarea y un robot específicos.
+ImageWAM G1 trash81 deltaflow es un modelo de política robótica (policy) publicado por el usuario ZUO66 en Hugging Face, orientado a una tarea concreta de manipulación: recoger basura y arrojarla a una papelera. Se trata de un artefacto de investigación derivado de ImageWAM con formulación Δ-flow, entrenado sobre 81 demostraciones teleoperadas (52.844 fotogramas a 30 FPS) de un robot G1, con una instrucción de lenguaje fija. No es un modelo de propósito general: es un checkpoint de política visuomotora para una tarea y un robot específicos.
 
 El modelo parte de FLUX.2-klein-base-4B y de un inicializador de acciones derivado de esa base, y se entrena con un esquema de flow matching (FM) más consistencia (IC) tanto en la rama visual como en la de acción. La inferencia es de un solo paso y produce una secuencia de 16 pasos de acción de 76 dimensiones (latent de movimiento de 64 dimensiones más objetivos medidos de mano izquierda y derecha, 6 dimensiones cada una). El repositorio ocupa 11,6 GB e incluye pesos, configuración, manifiesto de release y utilidades de despliegue.
 
@@ -81,7 +81,7 @@ No disponible. La información proporcionada no incluye otros modelos comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZUO66/imagewam-g1-trash81-deltaflow
+- Hugging Face: https://huggingface.co/ZUO66/imagewam-g1-trash81-deltaflow
 - `DEPLOYMENT.md` (incluido en el repositorio): instrucciones de uso, CLI, `TrashPolicy` y servicio HTTP.
 - `training_support/` (incluido en el repositorio): código de optimización, comprobaciones numéricas e informes de velocidad.
 - `metadata/` (incluido en el repositorio): prechecks de entrenamiento y `training_config_original.yaml`.

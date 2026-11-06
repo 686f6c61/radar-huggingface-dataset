@@ -84,11 +84,11 @@ No se identifican en la informacion proporcionada modelos externos comparables c
 
 | Modelo | Parametros | Tamano | Contexto | Generacion (tok/s) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| 4B-Distill-oQ8e (este) | ~4B | 4,2 GB | no disponible | 48,4 | Apache 2.0 | HuggingFace, MLX |
-| 4B-Distill-oQ4e | ~4B | 2,3 GB | no disponible | 65,4 | Apache 2.0 | HuggingFace, MLX |
-| 9B-Distill-oQ4e | ~9B | 4,9 GB | no disponible | 43,0 | Apache 2.0 | HuggingFace, MLX |
-| 2B-Distill-oQ8e | ~2B | 1,9 GB | no disponible | 97,5 | Apache 2.0 | HuggingFace, MLX |
-| Qwen3.8-4B-Distill (BF16) | ~4B | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| 4B-Distill-oQ8e (este) | ~4B | 4,2 GB | no disponible | 48,4 | Apache 2.0 | Hugging Face, MLX |
+| 4B-Distill-oQ4e | ~4B | 2,3 GB | no disponible | 65,4 | Apache 2.0 | Hugging Face, MLX |
+| 9B-Distill-oQ4e | ~9B | 4,9 GB | no disponible | 43,0 | Apache 2.0 | Hugging Face, MLX |
+| 2B-Distill-oQ8e | ~2B | 1,9 GB | no disponible | 97,5 | Apache 2.0 | Hugging Face, MLX |
+| Qwen3.8-4B-Distill (BF16) | ~4B | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Cuantizacion uniforme 4-bit g32 (referencia de bpw) | no aplica | no disponible | no aplica | no disponible | no aplica | no aplica |
 | Cuantizacion uniforme 8-bit g64 (referencia de bpw) | no aplica | no disponible | no aplica | no disponible | no aplica | no aplica |
 
@@ -110,7 +110,7 @@ Nota sobre bits por peso: el autor indica que este modelo opera en un rango efec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RolanDorisTech/Qwen3.8-4B-Distill-MLX-oQ8e
+- Modelo en Hugging Face: https://huggingface.co/RolanDorisTech/Qwen3.8-4B-Distill-MLX-oQ8e
 - Modelo base declarado en los metadatos: https://huggingface.co/empero-ai/Qwen3.8-Distill
 - Modelo base citado en los creditos (GGUF): https://huggingface.co/empero-ai/Qwen3.8-4B-Distill-GGUF
 - Canal del autor: https://www.youtube.com/@RolanDorisTech

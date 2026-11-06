@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Tipo | Dimension del embedding | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BicycleButler/m2v2-gemma2-vision-256d-int8 | ViT SigLIP + proyeccion, INT8 | 256 | no aplica | Apache-2.0 (Terminos Gemma) | HuggingFace, 0 descargas |
-| google/embeddinggemma-2 | Modelo multimodal de embeddings (origen) | no disponible | no disponible | Terminos Gemma | HuggingFace |
-| BicycleButler/m2v2-gemma2-256d-int4 | Modelo de texto del mismo ecosistema | 256 | no disponible | Apache-2.0 | HuggingFace |
+| BicycleButler/m2v2-gemma2-vision-256d-int8 | ViT SigLIP + proyeccion, INT8 | 256 | no aplica | Apache-2.0 (Terminos Gemma) | Hugging Face, 0 descargas |
+| google/embeddinggemma-2 | Modelo multimodal de embeddings (origen) | no disponible | no disponible | Terminos Gemma | Hugging Face |
+| BicycleButler/m2v2-gemma2-256d-int4 | Modelo de texto del mismo ecosistema | 256 | no disponible | Apache-2.0 | Hugging Face |
 | CLIP / SigLIP estandar | Codificadores vision-lenguaje | 512-768 tipico | no aplica | MIT / Apache-2.0 (segun variante) | Amplia |
 
 La comparativa con codificadores genericos como CLIP o SigLIP es solo orientativa: este modelo esta disenado para un espacio de 256 dimensiones especifico y no es intercambiable con ellos sin reindexar todo el corpus.
@@ -92,7 +92,7 @@ La comparativa con codificadores genericos como CLIP o SigLIP es solo orientativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BicycleButler/m2v2-gemma2-vision-256d-int8
+- Modelo en Hugging Face: https://huggingface.co/BicycleButler/m2v2-gemma2-vision-256d-int8
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Modelo de texto del ecosistema: https://huggingface.co/BicycleButler/m2v2-gemma2-256d-int4
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

@@ -91,9 +91,9 @@ La comparativa se basa en datos del autor y de la información disponible. No se
 
 ## Enlaces
 
-- Repositorio HuggingFace (oQ4e): https://huggingface.co/peculiar-ragdoll/Dirk-Qwen3.8-27B-MLX-oQ4e
-- Repositorio HuggingFace (oQ6e): https://huggingface.co/peculiar-ragdoll/Dirk-Qwen3.8-27B-MLX-oQ6e (mencionado en la model card)
-- Repositorio HuggingFace (GGUF): https://huggingface.co/peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF
+- Repositorio Hugging Face (oQ4e): https://huggingface.co/peculiar-ragdoll/Dirk-Qwen3.8-27B-MLX-oQ4e
+- Repositorio Hugging Face (oQ6e): https://huggingface.co/peculiar-ragdoll/Dirk-Qwen3.8-27B-MLX-oQ6e (mencionado en la model card)
+- Repositorio Hugging Face (GGUF): https://huggingface.co/peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF
 - Plantilla Sharp Chat Templates: https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates
 - Ficha en LLM Explorer: https://llm-explorer.com/model/peculiar-ragdoll%2FDirk-Qwen3.8-27B-MLX-oQ4e,4ozakojuw0rrmBa1YoF4CV
 - Benchmark en omlx.ai: https://omlx.ai/benchmarks/performance/srtmrvup

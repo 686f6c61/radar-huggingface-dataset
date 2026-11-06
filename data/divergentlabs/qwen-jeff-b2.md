@@ -92,8 +92,8 @@ No se han publicado resultados de benchmarks en la informacion disponible (no ha
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| divergentlabs/qwen-jeff-B2 | 1,72 B (backbone 1,72 B + cabeza 6.145) | 2.048 tokens por candidato | Scorer puntual de decisiones sobre backbone Qwen3-1.7B | apache-2.0 | HuggingFace (divergentlabs/qwen-jeff-B2), biblioteca qwen-jeff |
-| Qwen/Qwen3-1.7B | 1,72 B | no disponible en la informacion proporcionada | Transformer causal generativo | apache-2.0 | HuggingFace, ecosistema transformers |
+| divergentlabs/qwen-jeff-B2 | 1,72 B (backbone 1,72 B + cabeza 6.145) | 2.048 tokens por candidato | Scorer puntual de decisiones sobre backbone Qwen3-1.7B | apache-2.0 | Hugging Face (divergentlabs/qwen-jeff-B2), biblioteca qwen-jeff |
+| Qwen/Qwen3-1.7B | 1,72 B | no disponible en la informacion proporcionada | Transformer causal generativo | apache-2.0 | Hugging Face, ecosistema transformers |
 | Jev (Typesafe) | no disponible | no disponible | Modelo de "sistema 1" para decisiones, inspiración declarada de qwen-jeff-B2 | no disponible | no disponible |
 
 La diferencia clave frente a Qwen3-1.7B es funcional: el modelo base genera texto y no ofrece probabilidades calibradas sobre un conjunto cerrado de opciones, mientras que qwen-jeff-B2 sustituye la cabeza de lenguaje por una cabeza escalar y devuelve una distribución softmax sobre las opciones declaradas, con umbral de automatización validado. No se dispone de datos de rendimiento comparativos entre ambos ni frente a Jev en la información proporcionada.
@@ -110,12 +110,12 @@ La diferencia clave frente a Qwen3-1.7B es funcional: el modelo base genera text
 - Sesgos: no se documenta ninguna evaluación de sesgos demográficos, sociales o de dominio en la información disponible; al derivar de Qwen3-1.7B, puede heredar sesgos presentes en los datos de entrenamiento del backbone.
 - Restricciones de licencia: los pesos y el código del proyecto se publican bajo apache-2.0, lo que permite uso comercial; los archivos de tokenizer y configuración redistribuidos desde Qwen/Qwen3-1.7B se incluyen sin modificar bajo la misma licencia Apache-2.0, pero de forma separada de la licencia del código y pesos propios del proyecto. No se documentan restricciones adicionales.
 - Dependencia de la biblioteca `qwen-jeff`: el uso requiere esta librería específica; no se documenta compatibilidad con servidores de inferencia estándar, lo que puede complicar su integración en infraestructuras existentes.
-- Madurez y adopción: el modelo tiene 0 descargas y 10 likes en HuggingFace en la fecha de consulta, por lo que no existe evidencia de uso en producción a gran escala.
+- Madurez y adopción: el modelo tiene 0 descargas y 10 likes en Hugging Face en la fecha de consulta, por lo que no existe evidencia de uso en producción a gran escala.
 - Los resultados de búsqueda web consultados no contienen información relevante sobre este modelo (los enlaces obtenidos tratan sobre Google Maps), por lo que no hay fuentes independientes que corroboren los datos de la model card.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/divergentlabs/qwen-jeff-B2
+- Modelo en Hugging Face: https://huggingface.co/divergentlabs/qwen-jeff-B2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Artículo de Typesafe sobre Jev (inspiración declarada): https://typesafe.ai/blog/introducing-system-one-models-and-jev
 - Paper, repositorio, demo o documentación adicional: no disponible en la información proporcionada.

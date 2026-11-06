@@ -32,7 +32,7 @@ La informacion publicada es minima: solo se indican el modelo base, la licencia 
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen2.5-32B-Instruct es un transformer decoder-only con atencion por consultas agrupadas (GQA), activacion SwiGLU, normalizacion RMSNorm y embeddings posicionales rotatorios (RoPE), con soporte de contexto de hasta 131.072 tokens. Sobre esa arquitectura se ha aplicado un ajuste fino LoRA. El autor declara que el entrenamiento se realizo con Unsloth (que afirma un entrenamiento 2x mas rapido) y las etiquetas del repositorio incluyen `trl`, lo que apunta a que se uso la libreria TRL de HuggingFace para el pipeline de ajuste.
+El modelo base Qwen2.5-32B-Instruct es un transformer decoder-only con atencion por consultas agrupadas (GQA), activacion SwiGLU, normalizacion RMSNorm y embeddings posicionales rotatorios (RoPE), con soporte de contexto de hasta 131.072 tokens. Sobre esa arquitectura se ha aplicado un ajuste fino LoRA. El autor declara que el entrenamiento se realizo con Unsloth (que afirma un entrenamiento 2x mas rapido) y las etiquetas del repositorio incluyen `trl`, lo que apunta a que se uso la libreria TRL de Hugging Face para el pipeline de ajuste.
 
 El modelo base empleado (`unsloth/Qwen2.5-32B-Instruct-bnb-4bit`) esta cuantizado a 4 bits con bitsandbytes, de modo que el ajuste es de tipo QLoRA: se entrena el adaptador sobre pesos congelados en 4 bits. No se documentan el numero de tokens de entrenamiento, la composicion del dataset, la existencia de RLHF o DPO posterior, ni la innovacion tecnica especifica del ajuste, mas alla del uso de Unsloth. Tampoco se indica el rango (rank), el alpha ni las capas objetivo del adaptador LoRA.
 
@@ -83,10 +83,10 @@ Estimaciones orientativas basadas en un modelo denso de 32.500 millones de param
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| daresearch/sp500-exec-classifier-qwen32b-lora | 32,5B (base) + LoRA | 131.072 | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen2.5-32B-Instruct | 32,5B | 131.072 | Apache 2.0 | HuggingFace |
-| Qwen2.5-72B-Instruct | 72,7B | 131.072 | Licencia Qwen | HuggingFace |
-| Llama-3.3-70B-Instruct | 70B | 128.000 | Llama 3.3 Community License | HuggingFace |
+| daresearch/sp500-exec-classifier-qwen32b-lora | 32,5B (base) + LoRA | 131.072 | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen2.5-32B-Instruct | 32,5B | 131.072 | Apache 2.0 | Hugging Face |
+| Qwen2.5-72B-Instruct | 72,7B | 131.072 | Licencia Qwen | Hugging Face |
+| Llama-3.3-70B-Instruct | 70B | 128.000 | Llama 3.3 Community License | Hugging Face |
 
 El modelo aqui descrito no aporta datos de rendimiento que permitan una comparacion cuantitativa con las alternativas; la tabla recoge unicamente arquitectura, tamano, contexto y licencia.
 
@@ -105,6 +105,6 @@ El modelo aqui descrito no aporta datos de rendimiento que permitan una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/daresearch/sp500-exec-classifier-qwen32b-lora
+- Modelo en Hugging Face: https://huggingface.co/daresearch/sp500-exec-classifier-qwen32b-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-32B-Instruct-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth

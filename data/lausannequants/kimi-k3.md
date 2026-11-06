@@ -72,7 +72,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lausannequants/Kimi-K3
+- Repositorio Hugging Face: https://huggingface.co/lausannequants/Kimi-K3
 - Modelo original de Moonshot AI: https://huggingface.co/moonshotai/Kimi-K3 (referenciado en la model card)
 - Página oficial del modelo: https://www.kimi.com/ai-models/kimi-k3
 - Blog técnico: https://www.kimi.com/blog/kimi-k3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `seongjin0813/act_piper_datatest_v3_100k_finetune_v2` es una política de imitación robótica basada en ACT (Action Chunking with Transformers), no un modelo de lenguaje. Lo publica el usuario de HuggingFace seongjin0813 y se ha entrenado y exportado con la librería LeRobot de HuggingFace. ACT es un método de aprendizaje por imitación que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales, y aprende a partir de datos de teleoperación para conseguir tasas de éxito elevadas en tareas de manipulación.
+El modelo `seongjin0813/act_piper_datatest_v3_100k_finetune_v2` es una política de imitación robótica basada en ACT (Action Chunking with Transformers), no un modelo de lenguaje. Lo publica el usuario de Hugging Face seongjin0813 y se ha entrenado y exportado con la librería LeRobot de Hugging Face. ACT es un método de aprendizaje por imitación que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales, y aprende a partir de datos de teleoperación para conseguir tasas de éxito elevadas en tareas de manipulación.
 
 La política está diseñada para un robot de tipo `piper_follower` con una única cámara frontal, y consume un vector de estado de 7 dimensiones junto con una imagen RGB de 240x424 píxeles para producir una acción de 7 dimensiones. El modelo tiene 51.670.663 parámetros (según el archivo safetensors) y se distribuye en formato safetensors con licencia Apache 2.0.
 
@@ -97,7 +97,7 @@ La comparativa carece de datos de benchmarks comparables, por lo que los valores
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seongjin0813/act_piper_datatest_v3_100k_finetune_v2
+- Modelo en Hugging Face: https://huggingface.co/seongjin0813/act_piper_datatest_v3_100k_finetune_v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/seongjin0813/my_piper_datatest_v3_100k_finetune_v1
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

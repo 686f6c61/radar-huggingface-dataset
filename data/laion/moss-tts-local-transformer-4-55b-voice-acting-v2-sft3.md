@@ -80,7 +80,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3
+- Modelo en Hugging Face: https://huggingface.co/laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3
 - Modelo base (v2): https://huggingface.co/laion/moss-tts-local-transformer-4.55b-voice-acting-v2
 - Variante SFT+DPO: https://huggingface.co/laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft-dpo
 - Repositorio GitHub de la versión anterior: https://github.com/LAION-AI/laion-moss-local-1.5-voice-acting-4.55b

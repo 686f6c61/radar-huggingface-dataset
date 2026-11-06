@@ -77,7 +77,7 @@ El NPU es 1,4 veces más rápido en inferencia que la GPU en este dispositivo, y
 
 | Modelo | Parámetros | Factor de escala | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Real-ESRGAN General x4v3 (LiteRT) | ~1,2 M | 4x | .tflite | BSD-3-Clause | HuggingFace |
+| Real-ESRGAN General x4v3 (LiteRT) | ~1,2 M | 4x | .tflite | BSD-3-Clause | Hugging Face |
 | Real-ESRGAN x4plus | ~16,7 M | 4x | .pth (PyTorch) | BSD-3-Clause | GitHub |
 | Real-ESRGAN x2 | ~1,2 M | 2x | .pth (PyTorch) | BSD-3-Clause | GitHub |
 
@@ -93,7 +93,7 @@ La versión x4plus es más pesada y requiere más cómputo, pero ofrece una cali
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/litert-community/real-esrgan-x4v3-litert
+- Hugging Face: https://huggingface.co/litert-community/real-esrgan-x4v3-litert
 - Repositorio original de Real-ESRGAN: https://github.com/xinntao/Real-ESRGAN
 - Ejemplo de demo de LiteRT JS con Real-ESRGAN: https://github.com/google-ai-edge/LiteRT/tree/main/litert/js/demos/real_esrgan
 - Documentación de LiteRT para medición de rendimiento: https://ai.google.dev/edge/litert/models/measurement
@@ -193,7 +193,7 @@ La versión LiteRT destaca por su baja latencia en GPU y NPU móviles, mientras 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/litert-community/real-esrgan-x4v3-litert
+- Hugging Face: https://huggingface.co/litert-community/real-esrgan-x4v3-litert
 - Repositorio original de Real-ESRGAN: https://github.com/xinntao/Real-ESRGAN
 - Ejemplo de demo en JS de LiteRT: https://github.com/google-ai-edge/LiteRT/tree/main/litert/js/demos/real_esrgan
 - Documentación de medición de rendimiento: https://ai.google.dev/edge/litert/models/measurement

@@ -34,7 +34,7 @@ Archivos incluidos en el repositorio:
 
 La solucion no entrena un modelo acustico completo, sino que congela un modelo de streaming de NVIDIA y entrena cabezas de clasificacion ligeras sobre sus representaciones. El nucleo base es FastConformer con soporte de streaming (arquitectura transformer con convoluciones, disenada para ASR incremental), y las cabezas anaden salidas de deteccion de actividad de voz, deteccion de fin de turno, verificacion de hablante y genero de voz percibido. El repositorio no incluye los pesos de NVIDIA, que se descargan bajo sus propias licencias.
 
-La informacion disponible no detalla el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de alineacion como RLHF o DPO. Tampoco se documentan innovaciones de decodificacion (por ejemplo, decodificacion especulativa o atencion lineal). La model card remite al fichero `docs/RESULTS.md` del repositorio para consultar resultados y el protocolo de evaluacion, pero no se aportan cifras en la pagina de HuggingFace.
+La informacion disponible no detalla el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de alineacion como RLHF o DPO. Tampoco se documentan innovaciones de decodificacion (por ejemplo, decodificacion especulativa o atencion lineal). La model card remite al fichero `docs/RESULTS.md` del repositorio para consultar resultados y el protocolo de evaluacion, pero no se aportan cifras en la pagina de Hugging Face.
 
 ## Capacidades
 
@@ -92,7 +92,7 @@ La informacion proporcionada no incluye cifras de modelos comparables, por lo qu
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/notmax123/audioforge-heads
+- Pagina del modelo en Hugging Face: https://huggingface.co/notmax123/audioforge-heads
 - Repositorio de audioforge en GitHub: https://github.com/maxmelichov/audioforge
 - Documentacion de resultados y protocolo de prueba: `docs/RESULTS.md` dentro del repositorio de audioforge
 - Modelo base NVIDIA (115M): https://huggingface.co/nvidia/stt_en_fastconformer_hybrid_large_streaming_multi

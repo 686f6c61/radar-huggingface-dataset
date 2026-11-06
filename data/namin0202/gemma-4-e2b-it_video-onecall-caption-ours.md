@@ -75,8 +75,8 @@ No se dispone de información sobre adaptadores comparables en la misma categor�
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/namin0202/gemma-4-e2b-it_video-onecall-caption-ours)
-- [HuggingFace del adaptador relacionado `video-onecall-ours`](https://huggingface.co/namin0202/gemma-4-e2b-it_video-onecall-ours)
+- [Hugging Face del adaptador](https://huggingface.co/namin0202/gemma-4-e2b-it_video-onecall-caption-ours)
+- [Hugging Face del adaptador relacionado `video-onecall-ours`](https://huggingface.co/namin0202/gemma-4-e2b-it_video-onecall-ours)
 - [Página oficial de Gemma 4 en Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)
 - [Model card de Gemma 4 en Google AI for Developers](https://ai.google.dev/gemma/docs/core/model_card_4)
 - [Gemma 4 E2B IT en Dell Enterprise Hub](https://dell.huggingface.co/models/google/gemma-4-E2B-it)

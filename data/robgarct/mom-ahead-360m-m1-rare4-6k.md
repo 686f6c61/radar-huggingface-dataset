@@ -95,6 +95,6 @@ La comparacion se limita a parametros, contexto y licencia, porque no se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robgarct/mom-ahead-360m-m1-rare4-6k
+- Modelo en Hugging Face: https://huggingface.co/robgarct/mom-ahead-360m-m1-rare4-6k
 - Repositorio del codigo: `recurrent-recall-circuits` (referenciado en la model card; el propietario exacto figura como `<owner>` en la documentacion, por lo que la URL completa no esta disponible)
 - No se han encontrado enlaces relevantes (papers, blogs, demos) en los resultados de la busqueda web; los resultados devueltos no guardan relacion con el modelo.

@@ -75,7 +75,7 @@ No se dispone de informacion suficiente para realizar una comparativa directa co
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/KernelBench-RLVR-120b-i1-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/KernelBench-RLVR-120b-i1-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/Jarrodbarnes/KernelBench-RLVR-120b
 - Dataset KernelBench: https://huggingface.co/datasets/ScalingIntelligence/KernelBench
 - Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

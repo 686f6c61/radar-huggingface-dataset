@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Tamano / formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DakeraAI/bge-reranker-base (este repo) | Cross-encoder BERT base, espejo | ONNX int8, ~279 MB | no disponible | MIT | HuggingFace (espejo) |
-| BAAI/bge-reranker-base | Cross-encoder BERT base, original | safetensors/PyTorch (original) | no disponible | MIT | HuggingFace (original) |
-| Xenova/bge-reranker-base | Cross-encoder BERT base, conversion ONNX | ONNX | no disponible | MIT | HuggingFace (conversion) |
+| DakeraAI/bge-reranker-base (este repo) | Cross-encoder BERT base, espejo | ONNX int8, ~279 MB | no disponible | MIT | Hugging Face (espejo) |
+| BAAI/bge-reranker-base | Cross-encoder BERT base, original | safetensors/PyTorch (original) | no disponible | MIT | Hugging Face (original) |
+| Xenova/bge-reranker-base | Cross-encoder BERT base, conversion ONNX | ONNX | no disponible | MIT | Hugging Face (conversion) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada; las tres corresponden al mismo modelo subyacente y difieren únicamente en el empaquetado y la fuente de distribución.
 

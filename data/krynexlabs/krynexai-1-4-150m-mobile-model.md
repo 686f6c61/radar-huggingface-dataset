@@ -79,7 +79,7 @@ No se han proporcionado datos verificables de rendimiento para modelos alternati
 | Modelo | Parametros | Contexto | Licencia | Idiomas |
 |---|---|---|---|---|
 | KrynexAI 1.4 150M | ~150M | 8.192 tokens | Apache 2.0 | Ingles |
-| SmolLM2-135M (HuggingFace) | 135M | No disponible en esta ficha | Apache 2.0 | Ingles y otros |
+| SmolLM2-135M (Hugging Face) | 135M | No disponible en esta ficha | Apache 2.0 | Ingles y otros |
 | Qwen2.5-0.5B (Alibaba) | 0,5B | No disponible en esta ficha | Apache 2.0 | Multilingue |
 | TinyLlama-1.1B (TinyLlama) | 1,1B | No disponible en esta ficha | Apache 2.0 | Ingles |
 
@@ -99,7 +99,7 @@ Los datos de benchmarks de KrynexAI 1.4 (MMLU cloze 31,5) son notablemente bajos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KrynexLabs/KrynexAI-1.4-150M-Mobile-Model
+- Modelo en Hugging Face: https://huggingface.co/KrynexLabs/KrynexAI-1.4-150M-Mobile-Model
 - Perfil del autor: https://huggingface.co/KrynexLabs
 - Paper tecnico: no disponible
 - Blog o anuncio oficial: no disponible

@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - VRAM estimada: para el formato BF16, se requieren aproximadamente 48 GB de VRAM (8B + 16B en BF16, más overhead del VAE y activaciones). Con cuantización INT8, la demanda se reduce a unos 24 GB, aunque el tamaño exacto depende de la resolución de entrada y el número de pasos de difusión.
 - GPU recomendadas: para BF16 se necesitan GPUs de nivel profesional como A100 (80 GB), H100 (80 GB) o RTX 6000 Ada (48 GB). Para INT8, una RTX 4090 (24 GB) o RTX A6000 (48 GB) pueden ser suficientes.
 - No cabe en GPUs de consumo de gama baja (8-12 GB VRAM) ni siquiera con INT8, dado el tamaño combinado de los componentes.
-- Opciones de despliegue: ComfyUI es el entorno principal, ya que los pesos están empaquetados para sus nodos. También se puede usar con la librería de difusores de HuggingFace mediante el modelo base `jdopensource/JoyAI-Image-Edit-Plus-Diffusers`, aunque no se documenta soporte para vLLM, llama.cpp u Ollama, al ser un modelo de difusión y no un LLM autoregresivo.
+- Opciones de despliegue: ComfyUI es el entorno principal, ya que los pesos están empaquetados para sus nodos. También se puede usar con la librería de difusores de Hugging Face mediante el modelo base `jdopensource/JoyAI-Image-Edit-Plus-Diffusers`, aunque no se documenta soporte para vLLM, llama.cpp u Ollama, al ser un modelo de difusión y no un LLM autoregresivo.
 - Latencia y throughput: no hay datos oficiales. En una A100, se estiman tiempos de edición de varios segundos por imagen (típico de modelos de difusión de 16B), pero depende de la resolución y los pasos de muestreo.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ La comparación muestra que JoyAI-Image-Edit es significativamente más grande q
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Comfy-Org/JoyAI-Image-Edit
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/JoyAI-Image-Edit
 - Repositorio original del modelo: https://huggingface.co/jdopensource/JoyAI-Image-Edit-Plus-ComfyUI
 - Repositorio de difusores: https://huggingface.co/jdopensource/JoyAI-Image-Edit-Plus-Diffusers
 - GitHub de JD Open Source: https://github.com/jd-opensource/JoyAI-Image

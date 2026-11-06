@@ -67,7 +67,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/subhash4face/agentic-ai-routing-task-classifier
+- Hugging Face: https://huggingface.co/subhash4face/agentic-ai-routing-task-classifier
 - Repositorio del modelo (árbol de archivos): https://huggingface.co/subhash4face/agentic-ai-routing-task-classifier/tree/main
 
 No se encontraron enlaces adicionales relevantes en la búsqueda web.

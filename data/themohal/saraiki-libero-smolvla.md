@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Saraiki-libero-smolvla es una política robótica vision-language-action (VLA) publicada por el usuario themohal en HuggingFace. Se trata de un ajuste fino de `lerobot/smolvla_base`, el modelo SmolVLA presentado por HuggingFace en el paper arXiv:2506.01844, y se distribuye bajo licencia Apache-2.0 a través de la librería LeRobot. El checkpoint contiene 604.934.176 parámetros (unos 605 millones) almacenados en safetensors, con un repositorio de 9,2 GB.
+Saraiki-libero-smolvla es una política robótica vision-language-action (VLA) publicada por el usuario themohal en Hugging Face. Se trata de un ajuste fino de `lerobot/smolvla_base`, el modelo SmolVLA presentado por Hugging Face en el paper arXiv:2506.01844, y se distribuye bajo licencia Apache-2.0 a través de la librería LeRobot. El checkpoint contiene 604.934.176 parámetros (unos 605 millones) almacenados en safetensors, con un repositorio de 9,2 GB.
 
 El modelo resuelve el problema del control robótico guiado por lenguaje natural: recibe dos imágenes de cámara de 256×256 píxeles y un vector de estado de 8 dimensiones, y produce un vector de acción de 7 dimensiones. Está entrenado específicamente sobre el dataset `themohal/saraiki-libero`, compuesto por 1.693 episodios y 273.465 fotogramas a 10 FPS, con instrucciones redactadas en idioma saraiki (escritura shahmukhi). El robot objetivo declarado es un `panda`.
 
@@ -31,7 +31,7 @@ Datos adicionales de entrada/salida:
 
 ## Arquitectura y entrenamiento
 
-SmolVLA es un modelo compacto de tipo vision-language-action que combina un backbone de visión-lenguaje preentrenado con un módulo experto de acción. El objetivo declarado por HuggingFace es lograr un rendimiento competitivo con un coste computacional reducido y permitir el despliegue en hardware de consumo. La model card de este repositorio no detalla la composición interna del backbone ni el número exacto de tokens de entrenamiento, por lo que esos datos deben consultarse en la publicación arXiv:2506.01844 y en la documentación de LeRobot.
+SmolVLA es un modelo compacto de tipo vision-language-action que combina un backbone de visión-lenguaje preentrenado con un módulo experto de acción. El objetivo declarado por Hugging Face es lograr un rendimiento competitivo con un coste computacional reducido y permitir el despliegue en hardware de consumo. La model card de este repositorio no detalla la composición interna del backbone ni el número exacto de tokens de entrenamiento, por lo que esos datos deben consultarse en la publicación arXiv:2506.01844 y en la documentación de LeRobot.
 
 El ajuste fino se ha realizado sobre `lerobot/smolvla_base` empleando el dataset `themohal/saraiki-libero`, que contiene 1.693 episodios y 273.465 fotogramas capturados a 10 FPS. Las instrucciones que acompañan a los episodios están escritas en saraiki y describen tareas de manipulación doméstica: colocar tazas sobre platos o cuencos en posiciones izquierda y derecha, introducir objetos en el microondas y cerrar la puerta, encender el fogón y colocar una cafetera, guardar latas y tarros en una cesta, colocar un cuenco en un cajón y cerrarlo, o depositar un libro en el hueco trasero de un mueble. No se documenta en la información disponible si el entrenamiento incluyó fases de RLHF, DPO u otras técnicas de alineación; en el contexto de políticas VLA esto sería inusual.
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto/entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| saraiki-libero-smolvla (este) | 605 M | VLA (SmolVLA) | 2 imágenes 256×256 + estado 8D | Apache-2.0 | HuggingFace / LeRobot |
-| lerobot/smolvla_base | 450 M (aproximado, paper) | VLA (SmolVLA) | 2 imágenes 256×256 + estado | Apache-2.0 | HuggingFace / LeRobot |
-| OpenVLA | 7 000 M (aproximado) | VLA | Imagen + instrucción | Llama 2 (con restricciones) | HuggingFace / repositorio |
+| saraiki-libero-smolvla (este) | 605 M | VLA (SmolVLA) | 2 imágenes 256×256 + estado 8D | Apache-2.0 | Hugging Face / LeRobot |
+| lerobot/smolvla_base | 450 M (aproximado, paper) | VLA (SmolVLA) | 2 imágenes 256×256 + estado | Apache-2.0 | Hugging Face / LeRobot |
+| OpenVLA | 7 000 M (aproximado) | VLA | Imagen + instrucción | Llama 2 (con restricciones) | Hugging Face / repositorio |
 | π0 (pi-zero) | 3 300 M (aproximado) | VLA con flow matching | Imágenes + estado + lenguaje | Sujeta a verificación | Repositorio openpi |
 
 Los valores de parámetros de los modelos comparativos son aproximados y proceden de información pública; deben verificarse en las fuentes originales antes de citarlos. No se dispone de comparativas de rendimiento (tasa de éxito) entre estos modelos y el checkpoint aquí descrito, ya que no se han publicado métricas en la información disponible.
@@ -93,7 +93,7 @@ Los valores de parámetros de los modelos comparativos son aproximados y procede
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/themohal/saraiki-libero-smolvla
+- Modelo en Hugging Face: https://huggingface.co/themohal/saraiki-libero-smolvla
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/themohal/saraiki-libero
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844 (arXiv:2506.01844)

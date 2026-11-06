@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ckpt-countdown-families es un repositorio de checkpoints de HuggingFace publicado por el usuario es-hetero (serie CDFAM) que recoge el resultado de entrenar cinco familias de modelos no-Qwen sobre la tarea Countdown mediante estrategias de evolución (Evolution Strategies, ES). Las familias son cd-llama3b-*, cd-gemma4b-*, cd-llama8b-*, cd-olmo7b-* y cd-olmoe-*, y cada una se entrena con cinco variantes o brazos (fixed, fresh, hetero, mirror y mirror-v3) durante 300 iteraciones.
+ckpt-countdown-families es un repositorio de checkpoints de Hugging Face publicado por el usuario es-hetero (serie CDFAM) que recoge el resultado de entrenar cinco familias de modelos no-Qwen sobre la tarea Countdown mediante estrategias de evolución (Evolution Strategies, ES). Las familias son cd-llama3b-*, cd-gemma4b-*, cd-llama8b-*, cd-olmo7b-* y cd-olmoe-*, y cada una se entrena con cinco variantes o brazos (fixed, fresh, hetero, mirror y mirror-v3) durante 300 iteraciones.
 
 No se trata de un modelo listo para inferencia, sino de los artefactos de un estudio de investigación sobre heterogeneidad en ES denominado "learning while serving", alojado en el repositorio https://github.com/akshat57/es-heterogeneity. Cada ejecución incluye checkpoints periódicos, un guardado final, las generaciones de evaluación por ejemplo y un registro de pasos.
 
@@ -95,12 +95,12 @@ En cuanto a las familias de modelos base incluidas, la model card solo aporta el
 - Encaje de licencias: la licencia declarada es Apache-2.0, pero al tratarse de pesos derivados de modelos de terceros (Llama, Gemma, OLMo) conviene verificar las condiciones de cada modelo base antes de cualquier uso comercial. La model card no aclara este punto.
 - Cuantizacion: no existen versiones GGUF, AWQ, GPTQ ni FP8, lo que limita el despliegue en entornos de baja VRAM.
 - Trazabilidad incompleta: los checkpoints se guardan como state dicts con nombres de parametros de vLLM, por lo que su carga directa en transformers no esta garantizada sin el conversor pendiente.
-- Inconsistencia de metadatos: la fecha de creacion que declara HuggingFace para el repositorio es 2026-09-11, posterior a la fecha habitual de publicacion, lo que sugiere un error de registro.
+- Inconsistencia de metadatos: la fecha de creacion que declara Hugging Face para el repositorio es 2026-09-11, posterior a la fecha habitual de publicacion, lo que sugiere un error de registro.
 - Adopcion nula: cero descargas y cero likes, sin validacion externa conocida.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/es-hetero/ckpt-countdown-families
+- Repositorio en Hugging Face: https://huggingface.co/es-hetero/ckpt-countdown-families
 - Repositorio del estudio "learning while serving" (ES heterogeneity): https://github.com/akshat57/es-heterogeneity
 - Resultados de la busqueda web: no aportan informacion relevante sobre el modelo. Los enlaces devueltos corresponden a dominios de una comercializadora electrica francesa (es.fr, particuliers.es.fr) y a entradas de diccionario sobre la preposicion francesa "es"/"ès", sin relacion con el repositorio.
 - Paper, blog o demo oficiales: no disponibles en la informacion proporcionada.

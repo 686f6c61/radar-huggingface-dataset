@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este artefacto es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para el entorno LunarLander-v2 de Gymnasium/Box2D. Lo publica el usuario KavyaChinta05 en HuggingFace y, según las etiquetas de la model card, forma parte de un curso de deep reinforcement learning (etiquetas `deep-rl-course`, `custom-implementation`, `unit8`). No es un modelo de lenguaje: no hay transformer, ni tokenizador, ni ventana de contexto, ni pesos en safetensors. Se trata de una política entrenada más su función de valor, guardadas como artefacto de RL.
+Este artefacto es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para el entorno LunarLander-v2 de Gymnasium/Box2D. Lo publica el usuario KavyaChinta05 en Hugging Face y, según las etiquetas de la model card, forma parte de un curso de deep reinforcement learning (etiquetas `deep-rl-course`, `custom-implementation`, `unit8`). No es un modelo de lenguaje: no hay transformer, ni tokenizador, ni ventana de contexto, ni pesos en safetensors. Se trata de una política entrenada más su función de valor, guardadas como artefacto de RL.
 
 El problema que resuelve es acotado: controlar el módulo de aterrizaje del entorno LunarLander-v2, que expone una observación vectorial de 8 dimensiones y un espacio de acciones discreto de 4 opciones (no hacer nada, encender motor izquierdo, encender motor principal, encender motor derecho). El resultado declarado por el autor es un `mean_reward` de -135,83 ± 49,61, no verificado, lo que indica una política que aún no resuelve la tarea de forma consistente (los valores negativos corresponden a aterrizajes fallidos o inestables).
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento de las alternativas en la información pro
 
 | Modelo | Tipo | Entorno | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| ppo-LunarLander-v2-unit8 (este) | PPO, implementación propia | LunarLander-v2 | no disponible | no aplica | -135,83 ± 49,61 (no verificado) | no disponible | HuggingFace, 0 descargas |
+| ppo-LunarLander-v2-unit8 (este) | PPO, implementación propia | LunarLander-v2 | no disponible | no aplica | -135,83 ± 49,61 (no verificado) | no disponible | Hugging Face, 0 descargas |
 | Agentes PPO de referencia (p. ej. repositorios tipo RL Baselines3 Zoo o CleanRL) | PPO, implementación mantenida | LunarLander-v2 | no disponible | no aplica | no disponible en esta búsqueda | según proyecto | públicos, ampliamente usados |
 | Agentes DQN para LunarLander-v2 | Value-based, off-policy | LunarLander-v2 | no disponible | no aplica | no disponible en esta búsqueda | según proyecto | públicos |
 | Agentes de RL basados en LLM | Modelo de lenguaje + RL | tareas de texto/agente | miles de millones | decenas de miles de tokens | no comparable | variable | públicos |
@@ -104,7 +104,7 @@ La categoría comparable real son otros agentes entrenados sobre LunarLander-v2.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KavyaChinta05/ppo-LunarLander-v2-unit8
+- Modelo en Hugging Face: https://huggingface.co/KavyaChinta05/ppo-LunarLander-v2-unit8
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes. Las únicas URLs devueltas corresponden a páginas corporativas de Microsoft (microsoft.com, account.microsoft.com, myaccount.microsoft.com, en.wikipedia.org/wiki/Microsoft), sin relación alguna con el modelo, el algoritmo PPO o el entorno LunarLander-v2.
 - Paper de PPO y repositorios de referencia: no disponibles en la información proporcionada.
 - Repositorio de código, demo o blog del autor: no disponibles en la información proporcionada.

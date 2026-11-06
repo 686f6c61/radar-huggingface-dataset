@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada: para el modelo base de 0,5B en FP16, se requieren aproximadamente 1 GB de VRAM; con cuantización en 8 bits o 4 bits, puede reducirse a unos 0,5 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3060) es suficiente; en CPU, se puede ejecutar con 4-8 GB de RAM.
 - Compatibilidad con GPU consumer: sí, es adecuado para tarjetas de gama media y baja.
-- Opciones de despliegue: compatible con la librería transformers, vLLM, llama.cpp y Ollama (aunque no se publican archivos GGUF en el repositorio). Se puede usar con el pipeline de HuggingFace.
+- Opciones de despliegue: compatible con la librería transformers, vLLM, llama.cpp y Ollama (aunque no se publican archivos GGUF en el repositorio). Se puede usar con el pipeline de Hugging Face.
 - Latencia y throughput: no disponible; al ser un modelo pequeño, se espera una latencia baja (inferior a 100 ms en GPU), pero no hay datos concretos.
 
 ## Comparativa con modelos similares
@@ -77,8 +77,8 @@ Nota: los datos de rendimiento de los modelos comparativos no están incluidos e
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/GMorgulis/Qwen2.5-0.5B-Instruct-cat-tm-ep2.42
-- HuggingFace del modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
+- Hugging Face del modelo: https://huggingface.co/GMorgulis/Qwen2.5-0.5B-Instruct-cat-tm-ep2.42
+- Hugging Face del modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Documentación de Qwen2.5 en Ollama: https://ollama.com/library/qwen2.5:0.5b-instruct
 - Modelo base GGUF en ModelScope: https://www.modelscope.cn/models/qwen/Qwen2.5-0.5B-Instruct-GGUF
 - Repositorio de TRL: https://github.com/huggingface/trl## Resumen
@@ -160,7 +160,7 @@ La comparativa se basa en el modelo base y en alternativas de la misma familia d
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/GMorgulis/Qwen2.5-0.5B-Instruct-cat-tm-ep2.42)
+- [Modelo en Hugging Face](https://huggingface.co/GMorgulis/Qwen2.5-0.5B-Instruct-cat-tm-ep2.42)
 - [Modelo base Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
 - [Qwen2.5 en Ollama](https://ollama.com/library/qwen2.5:0.5b-instruct)
 - [Qwen2.5-0.5B-Instruct-GGUF en ModelScope](https://www.modelscope.cn/models/qwen/Qwen2.5-0.5B-Instruct-GGUF)

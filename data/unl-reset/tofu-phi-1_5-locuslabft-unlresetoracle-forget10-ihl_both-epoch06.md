@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-phi-1_5-...-epoch06` (este) | 1.418 M | no disponible | apache-2.0 | HuggingFace, `custom_code` | Checkpoint de *unlearning* sobre TOFU forget10, epoca 6/20 |
-| `microsoft/phi-1_5` | 1.300 M aprox. | 2048 | MIT | HuggingFace | Modelo base original, sin ajuste TOFU |
-| `locuslab/tofu_ft_phi-1.5` | 1.300 M aprox. | 2048 | no disponible | HuggingFace | Modelo ajustado sobre TOFU sin olvido; base directa de este checkpoint |
-| Otros checkpoints `unl-reset` (forget1, forget5, etc.) | 1.418 M | no disponible | apache-2.0 | HuggingFace | Variantes del mismo experimento con distintos subconjuntos de olvido |
+| `unl-reset/tofu-phi-1_5-...-epoch06` (este) | 1.418 M | no disponible | apache-2.0 | Hugging Face, `custom_code` | Checkpoint de *unlearning* sobre TOFU forget10, epoca 6/20 |
+| `microsoft/phi-1_5` | 1.300 M aprox. | 2048 | MIT | Hugging Face | Modelo base original, sin ajuste TOFU |
+| `locuslab/tofu_ft_phi-1.5` | 1.300 M aprox. | 2048 | no disponible | Hugging Face | Modelo ajustado sobre TOFU sin olvido; base directa de este checkpoint |
+| Otros checkpoints `unl-reset` (forget1, forget5, etc.) | 1.418 M | no disponible | apache-2.0 | Hugging Face | Variantes del mismo experimento con distintos subconjuntos de olvido |
 
 ## Limitaciones y advertencias
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_both-epoch06
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_both-epoch06
 - Modelo base del ajuste TOFU: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - Benchmark TOFU (paper): https://arxiv.org/abs/2401.06121

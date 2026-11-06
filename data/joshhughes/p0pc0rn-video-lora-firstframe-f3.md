@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| p0pc0rn-video-lora-firstframe-f3 | LoRA sobre SANA-Video 2.0 5B | adaptador de 64 MB (base 5B) | no disponible | Apache 2.0 | HuggingFace, formato propietario |
-| JoshHughes/sana-video2-firstframe-lora | LoRA original (fp32) sobre SANA-Video 2.0 5B | adaptador (tamaño no disponible) | no disponible | no disponible en la información | HuggingFace |
-| SANA-Video 2.0 5B 720p 4-step | Modelo base de difusión de vídeo | 5B | no disponible | Apache 2.0 | HuggingFace (Efficient-Large-Model) |
+| p0pc0rn-video-lora-firstframe-f3 | LoRA sobre SANA-Video 2.0 5B | adaptador de 64 MB (base 5B) | no disponible | Apache 2.0 | Hugging Face, formato propietario |
+| JoshHughes/sana-video2-firstframe-lora | LoRA original (fp32) sobre SANA-Video 2.0 5B | adaptador (tamaño no disponible) | no disponible | no disponible en la información | Hugging Face |
+| SANA-Video 2.0 5B 720p 4-step | Modelo base de difusión de vídeo | 5B | no disponible | Apache 2.0 | Hugging Face (Efficient-Large-Model) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoshHughes/p0pc0rn-video-lora-firstframe-f3
+- Modelo en Hugging Face: https://huggingface.co/JoshHughes/p0pc0rn-video-lora-firstframe-f3
 - LoRA de origen: https://huggingface.co/JoshHughes/sana-video2-firstframe-lora
 - Modelo base: https://huggingface.co/Efficient-Large-Model/SANA-Video_2.0_5B_720p_4step
 - App p0pc0rn: https://artistjoshhughes.github.io/p0pc0rn/

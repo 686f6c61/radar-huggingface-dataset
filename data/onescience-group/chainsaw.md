@@ -69,7 +69,7 @@ No se dispone de información comparativa en los datos proporcionados.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/Chainsaw
+- Hugging Face: https://huggingface.co/OneScience-Group/Chainsaw
 - Artículo original: https://doi.org/10.1093/bioinformatics/btae296
 - OneCode: https://web-2069360198568017922-iaaj.ksai.scnet.cn:58043/home
 - Página de modelos de OneScience: https://huggingface.co/OneScience-Group/models

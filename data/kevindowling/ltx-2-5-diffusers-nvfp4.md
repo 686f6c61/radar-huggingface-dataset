@@ -50,22 +50,22 @@ No se han publicado resultados de benchmarks específicos para esta versión cua
 - VRAM estimada: al ser una cuantización NVFP4, el tamaño del modelo en memoria es de aproximadamente 10,8 GB (según el número de parámetros y la precisión FP4). Sin embargo, el pipeline de difusión requiere memoria adicional para las activaciones y el procesamiento de video, por lo que se recomienda al menos 16 GB de VRAM para inferencia básica.
 - GPU recomendadas: NVIDIA Blackwell (serie RTX 50, DGX Spark, GB10) por su soporte nativo de FP4. También puede ejecutarse en GPUs Ampere o Ada con emulación, aunque con menor rendimiento.
 - En consumer GPU: cabe en tarjetas con 16 GB o más, como RTX 4080, RTX 4090 o RTX 5080, siempre que se utilice la cuantización NVFP4 y se ajuste el tamaño del lote.
-- Opciones de despliegue: el modelo está diseñado para usarse con la librería `diffusers` de HuggingFace. También se puede integrar con vLLM-Omni (según los recipes de vLLM) para servir el modelo en producción, aunque la cuantización NVFP4 puede requerir soporte específico de vLLM para FP4.
+- Opciones de despliegue: el modelo está diseñado para usarse con la librería `diffusers` de Hugging Face. También se puede integrar con vLLM-Omni (según los recipes de vLLM) para servir el modelo en producción, aunque la cuantización NVFP4 puede requerir soporte específico de vLLM para FP4.
 - Latencia y throughput: no se dispone de datos medidos para esta versión cuantizada. El modelo base de 19B requiere una GPU de alta gama para tiempos de generación razonables; la cuantización FP4 debería mejorar el throughput en hardware Blackwell, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LTX-2.5-Diffusers (base) | 19B | no disponible | DiT video+audio | ltx-2-community | HuggingFace (gated) |
-| LTX-2.5-Diffusers-NVFP4 (este) | 10,8B (cuantizado) | no disponible | DiT video+audio cuantizado | ltx-2-community | HuggingFace (gated) |
-| Stable Video Diffusion | 1.4B (aprox.) | no disponible | UNet video | Stability AI Community | HuggingFace (abierto) |
+| LTX-2.5-Diffusers (base) | 19B | no disponible | DiT video+audio | ltx-2-community | Hugging Face (gated) |
+| LTX-2.5-Diffusers-NVFP4 (este) | 10,8B (cuantizado) | no disponible | DiT video+audio cuantizado | ltx-2-community | Hugging Face (gated) |
+| Stable Video Diffusion | 1.4B (aprox.) | no disponible | UNet video | Stability AI Community | Hugging Face (abierto) |
 
 La comparativa se limita a modelos de generación de video conocidos. LTX-2.5 destaca por integrar audio sincronizado, algo que Stable Video Diffusion no ofrece. La versión cuantizada reduce el tamaño y los requisitos de hardware, pero no se dispone de datos de rendimiento comparativo.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace, por lo que es necesario aceptar la licencia y las condiciones de uso antes de descargarlo.
+- Acceso restringido: el modelo es gated en Hugging Face, por lo que es necesario aceptar la licencia y las condiciones de uso antes de descargarlo.
 - Licencia comunitaria: la `ltx-2-community-license-agreement` puede imponer restricciones sobre el uso comercial, la redistribución o la generación de contenido con fines específicos. Es imprescindible revisar el texto completo de la licencia.
 - Pérdida de calidad por cuantización: la cuantización NVFP4 puede degradar ligeramente la fidelidad del video y el audio en comparación con el modelo original en FP16/BF16, especialmente en escenas con detalles finos o texturas complejas.
 - Sesgos y alucinaciones: como todo modelo generativo, puede producir contenido visual o auditivo no deseado, incoherente o con sesgos derivados de los datos de entrenamiento. No se dispone de información específica sobre sesgos para este modelo.
@@ -74,8 +74,8 @@ La comparativa se limita a modelos de generación de video conocidos. LTX-2.5 de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KevinDowling/LTX-2.5-Diffusers-NVFP4
-- Modelo base en HuggingFace: https://huggingface.co/Lightricks/LTX-2.5-Diffusers
+- Modelo en Hugging Face: https://huggingface.co/KevinDowling/LTX-2.5-Diffusers-NVFP4
+- Modelo base en Hugging Face: https://huggingface.co/Lightricks/LTX-2.5-Diffusers
 - Repositorio oficial de LTX-2: https://github.com/Lightricks/LTX-2
 - Página del modelo LTX-2.5: https://ltx.io/model/ltx-2-5
 - Recipes de vLLM para LTX-2.5-Diffusers: https://recipes.vllm.ai/Lightricks/LTX-2.5-Diffusers

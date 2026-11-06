@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spark-X2.6-1.7B-IK-GGUF es un conjunto de cuantizaciones GGUF del modelo base XHToken/Spark-X2.6-1.7B, un transformer de 1.707.657.216 parámetros (aproximadamente 1,7 mil millones) especializado en tareas de código y flujos agénticos. Lo publica el usuario Unluckkie en HuggingFace bajo licencia Apache 2.0, y su rasgo diferencial es que las cuantizaciones se han calibrado con una importance matrix específica para código y cargas de trabajo agénticas, en lugar de una mezcla genérica de conocimiento general.
+Spark-X2.6-1.7B-IK-GGUF es un conjunto de cuantizaciones GGUF del modelo base XHToken/Spark-X2.6-1.7B, un transformer de 1.707.657.216 parámetros (aproximadamente 1,7 mil millones) especializado en tareas de código y flujos agénticos. Lo publica el usuario Unluckkie en Hugging Face bajo licencia Apache 2.0, y su rasgo diferencial es que las cuantizaciones se han calibrado con una importance matrix específica para código y cargas de trabajo agénticas, en lugar de una mezcla genérica de conocimiento general.
 
 El modelo base se presenta como uno de los más capaces en su clase de peso para codificación agéntica, con resultados publicados de SWE-bench Verified de 59,8, SWE Multilingual de 57,3 y τ²-Bench de 85,3. Estas cifras, si se confirman de forma independiente, situarían a un modelo de menos de 2B parámetros en un rango competitivo frente a alternativas bastante mayores en tareas de resolución de incidencias y uso de herramientas.
 
@@ -75,7 +75,7 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Comparativa |
 |---|---|---|---|---|---|
-| Spark-X2.6-1.7B (base) | 1,7B | no disponible | apache-2.0 | HuggingFace | Referencia |
+| Spark-X2.6-1.7B (base) | 1,7B | no disponible | apache-2.0 | Hugging Face | Referencia |
 | Alternativas de menos de 2B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

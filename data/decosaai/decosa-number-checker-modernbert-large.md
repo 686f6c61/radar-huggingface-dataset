@@ -103,13 +103,13 @@ La comparación de rendimiento específico en verificación numérica no está d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/decosaai/decosa-number-checker-modernbert-large
+- Modelo en Hugging Face: https://huggingface.co/decosaai/decosa-number-checker-modernbert-large
 - Modelo base ModernBERT-large: https://huggingface.co/answerdotai/ModernBERT-large
 - FinQA (repositorio): https://github.com/czyssrs/FinQA
 - TAT-QA (repositorio): https://github.com/NExTplusplus/TAT-QA
 - TabFact / Table-Fact-Checking (repositorio): https://github.com/wenhuchen/Table-Fact-Checking
 - Conjunto FinTabNet (IBM): https://huggingface.co/datasets/ibm-research/finqa
-- TAT-QA en HuggingFace: https://huggingface.co/datasets/next-tat/TAT-QA
-- TabFact en HuggingFace: https://huggingface.co/datasets/wenhu/tab_fact
+- TAT-QA en Hugging Face: https://huggingface.co/datasets/next-tat/TAT-QA
+- TabFact en Hugging Face: https://huggingface.co/datasets/wenhu/tab_fact
 - SEC Financial Statement Data Sets (EDGAR): https://www.sec.gov/dera/data/financial-statement-data-sets
 - ClinicalTrials.gov API v2: https://clinicaltrials.gov/data-api/api

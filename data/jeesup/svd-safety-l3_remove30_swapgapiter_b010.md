@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l3_remove30_swapgapiter_b010` es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace, derivado de `meta-llama/Meta-Llama-3-8B-Instruct`. No es un modelo conversacional de propósito general, sino un artefacto experimental: se ha comprimido el modelo base mediante SVD-LLM hasta conservar el 70,0 % de los parámetros densos (30,01 % eliminado) y, a continuación, se han aplicado 10 de 10 rondas de una técnica de edición denominada "swap paramétricamente neutro", seleccionando los componentes a restaurar con la regla `gap_iter`.
+`svd-safety-l3_remove30_swapgapiter_b010` es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face, derivado de `meta-llama/Meta-Llama-3-8B-Instruct`. No es un modelo conversacional de propósito general, sino un artefacto experimental: se ha comprimido el modelo base mediante SVD-LLM hasta conservar el 70,0 % de los parámetros densos (30,01 % eliminado) y, a continuación, se han aplicado 10 de 10 rondas de una técnica de edición denominada "swap paramétricamente neutro", seleccionando los componentes a restaurar con la regla `gap_iter`.
 
 El objetivo del estudio del que forma parte es cuantificar cómo la compresión SVD degrada el comportamiento de seguridad del modelo y qué regla de selección de componentes repara mejor ese daño con el menor coste posible. El presupuesto total de restauración es del 1,000 % de los parámetros densos (69.741.568 parámetros intercambiados, 9.903 componentes restaurados y otros tantos expulsados, con semilla 42), lo que deja la fracción de parámetros final en 0,6999.
 
@@ -80,9 +80,9 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| svd-safety-l3_remove30_swapgapiter_b010 | 8,03 B (fraccion densa 0,6999) | no disponible en la model card (base: 8.192) | Meta Llama 3 Community License | HuggingFace, 0 descargas, 0 likes | Artefacto de investigación; AdvBench ASR 0,0019, StrongREJECT ASR 0,0319, over-refusal 0,4433, ppl WikiText-2 25,7717 |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8.192 tokens | Meta Llama 3 Community License | HuggingFace, ampliamente distribuido | Modelo base sin comprimir; la model card del derivado no publica sus métricas comparables |
-| Otras celdas del grid del mismo autor (`svd-safety-l3_*`) | 8,03 B (fracciones variables) | no disponible | Meta Llama 3 Community License | HuggingFace | No se dispone de sus métricas en la información proporcionada |
+| svd-safety-l3_remove30_swapgapiter_b010 | 8,03 B (fraccion densa 0,6999) | no disponible en la model card (base: 8.192) | Meta Llama 3 Community License | Hugging Face, 0 descargas, 0 likes | Artefacto de investigación; AdvBench ASR 0,0019, StrongREJECT ASR 0,0319, over-refusal 0,4433, ppl WikiText-2 25,7717 |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8.192 tokens | Meta Llama 3 Community License | Hugging Face, ampliamente distribuido | Modelo base sin comprimir; la model card del derivado no publica sus métricas comparables |
+| Otras celdas del grid del mismo autor (`svd-safety-l3_*`) | 8,03 B (fracciones variables) | no disponible | Meta Llama 3 Community License | Hugging Face | No se dispone de sus métricas en la información proporcionada |
 | Modelos comparables de terceros | no disponible | no disponible | no disponible | no disponible | No se han encontrado modelos comparables en la búsqueda web realizada |
 
 ## Limitaciones y advertencias
@@ -101,8 +101,8 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove30_swapgapiter_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove30_swapgapiter_b010
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
-- Licencia de Meta Llama 3 (incluida en el repositorio como `LICENSE`) y política de uso (`USE_POLICY.md`): disponibles en el propio repositorio de HuggingFace
+- Licencia de Meta Llama 3 (incluida en el repositorio como `LICENSE`) y política de uso (`USE_POLICY.md`): disponibles en el propio repositorio de Hugging Face
 - Paper de SVD-LLM, repositorios del autor, demos o blogs asociados: no disponibles en la información proporcionada
 - Resultados de la búsqueda web: no se ha recuperado ningún enlace relevante al modelo; los resultados obtenidos corresponden a páginas de una cadena de supermercados y no guardan relación con el objeto de esta ficha

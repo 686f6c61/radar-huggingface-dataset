@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sander-puts/codiesp-convention-crossencoder-es | 125,98 M | no disponible | Cross-encoder mención-código ICD-10 (es) | CC BY 4.0 | HuggingFace |
-| PlanTL-GOB-ES/roberta-base-biomedical-clinical-es | 125 M | no disponible | Encoder base biomédico (es) | Apache-2.0 | HuggingFace |
+| sander-puts/codiesp-convention-crossencoder-es | 125,98 M | no disponible | Cross-encoder mención-código ICD-10 (es) | CC BY 4.0 | Hugging Face |
+| PlanTL-GOB-ES/roberta-base-biomedical-clinical-es | 125 M | no disponible | Encoder base biomédico (es) | Apache-2.0 | Hugging Face |
 | Modelos de codificación clínica CodiEsp (genéricos) | no disponible | no disponible | Codificación clínica (es) | no disponible | no disponible |
 
 La comparación directa con otros cross-encoders específicos de codificación ICD-10 en español no está disponible en la información proporcionada. El modelo base comparte arquitectura y tamaño con el backbone, pero no está ajustado a la tarea de emparejamiento mención-código.
@@ -77,12 +77,12 @@ La comparación directa con otros cross-encoders específicos de codificación I
 - Soporte exclusivo de español; no se ha validado en otras lenguas ni en variantes dialectales.
 - Riesgo de alucinación no aplicable en sentido generativo, pero sí de falsos positivos en la puntuación de pares plausibles según la práctica aprendida.
 - Licencia CC BY 4.0: permite uso comercial con atribución, pero el modelo base es Apache-2.0 y el corpus CodiEsp es CC BY 4.0; conviene revisar las obligaciones de atribución en despliegues derivados.
-- Sin descargas ni likes registrados en HuggingFace en la fecha de la información; no hay evidencia de validación externa por la comunidad.
+- Sin descargas ni likes registrados en Hugging Face en la fecha de la información; no hay evidencia de validación externa por la comunidad.
 - Longitud de contexto no documentada; pares con menciones y contextos muy largos pueden truncarse según la configuración del tokenizador.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sander-puts/codiesp-convention-crossencoder-es
+- Hugging Face: https://huggingface.co/sander-puts/codiesp-convention-crossencoder-es
 - Repositorio CEI-Trace: https://github.com/putssander/CEI-Trace
 - Modelo base: https://huggingface.co/PlanTL-GOB-ES/roberta-base-biomedical-clinical-es
 - Corpus CodiEsp (Miranda-Escalada et al., CLEF eHealth 2020): https://doi.org/10.5281/zenodo.3837305

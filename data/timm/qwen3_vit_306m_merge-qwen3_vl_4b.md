@@ -26,7 +26,7 @@ La relevancia actual viene de dos factores: por un lado, permite aprovechar cara
 | Ancho del backbone | 1024 |
 | Ancho de proyeccion | 2560 |
 | Modelo base | Qwen/Qwen3-VL-4B-Instruct (revision ebb281ec70b05090aa6165b016eac8ec08e71b17) |
-| Pipeline de HuggingFace | image-feature-extraction |
+| Pipeline de Hugging Face | image-feature-extraction |
 | Libreria | timm |
 
 ## Arquitectura y entrenamiento
@@ -77,11 +77,11 @@ Los valores de parametros de los modelos alternativos no estan verificados en la
 
 | Modelo | Tipo | Parametros (aprox.) | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| timm/qwen3_vit_306m_merge.qwen3_vl_4b | Codificador ViT derivado de Qwen3-VL-4B | 332,7 M (verificado) | Embedding de 2560 dim y tokens espaciales NLC | Apache 2.0 | HuggingFace, via timm |
-| Qwen/Qwen3-VL-4B-Instruct | VLM completo (vision + lenguaje) | ~4 B (no verificado en esta busqueda) | Texto generado y embeddings internos | Apache 2.0 | HuggingFace, transformers |
-| DINOv2 ViT-L/14 | Codificador ViT auto-supervisado | ~300 M (no verificado) | Embeddings y mapas de features | Apache 2.0 (segun variante) | HuggingFace, timm, torch.hub |
-| CLIP ViT-L/14 | Codificador dual imagen-texto | ~300 M en el torreon visual (no verificado) | Embeddings alineados imagen-texto | MIT (segun variante) | HuggingFace, open_clip |
-| SigLIP so400m/14 | Codificador dual imagen-texto | ~400 M en el torreon visual (no verificado) | Embeddings alineados imagen-texto | Apache 2.0 | HuggingFace, timm, open_clip |
+| timm/qwen3_vit_306m_merge.qwen3_vl_4b | Codificador ViT derivado de Qwen3-VL-4B | 332,7 M (verificado) | Embedding de 2560 dim y tokens espaciales NLC | Apache 2.0 | Hugging Face, via timm |
+| Qwen/Qwen3-VL-4B-Instruct | VLM completo (vision + lenguaje) | ~4 B (no verificado en esta busqueda) | Texto generado y embeddings internos | Apache 2.0 | Hugging Face, transformers |
+| DINOv2 ViT-L/14 | Codificador ViT auto-supervisado | ~300 M (no verificado) | Embeddings y mapas de features | Apache 2.0 (segun variante) | Hugging Face, timm, torch.hub |
+| CLIP ViT-L/14 | Codificador dual imagen-texto | ~300 M en el torreon visual (no verificado) | Embeddings alineados imagen-texto | MIT (segun variante) | Hugging Face, open_clip |
+| SigLIP so400m/14 | Codificador dual imagen-texto | ~400 M en el torreon visual (no verificado) | Embeddings alineados imagen-texto | Apache 2.0 | Hugging Face, timm, open_clip |
 
 Diferencias cualitativas relevantes: frente a DINOv2 y CLIP/SigLIP, este checkpoint no ha sido entrenado especificamente para alineacion imagen-texto ni para auto-supervision, sino que hereda el torreon visual de un VLM instruido; su principal ventaja diferencial es la compatibilidad dimensional con el espacio de 2560 del LLM de Qwen3-VL. Frente al Qwen3-VL-4B completo, sacrifica todas las capacidades linguisticas y de generacion a cambio de un coste de memoria aproximadamente doce veces menor.
 
@@ -101,7 +101,7 @@ Diferencias cualitativas relevantes: frente a DINOv2 y CLIP/SigLIP, este checkpo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/qwen3_vit_306m_merge.qwen3_vl_4b
+- Modelo en Hugging Face: https://huggingface.co/timm/qwen3_vit_306m_merge.qwen3_vl_4b
 - Modelo base (Qwen3-VL-4B-Instruct): https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Revision del modelo base usada como fuente: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct/tree/ebb281ec70b05090aa6165b016eac8ec08e71b17
 - Paper del modelo base (Qwen3-VL Technical Report, arXiv:2511.21631): https://arxiv.org/abs/2511.21631

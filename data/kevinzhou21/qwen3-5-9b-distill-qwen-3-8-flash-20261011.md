@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-Distill-Qwen-3.8-Flash-20261011 es un modelo de generacion de texto de ~9,2 mil millones de parametros publicado en HuggingFace por el usuario kevinzhou21. Segun la model card, se trata de una version destilada y ajustada de Qwen/Qwen3.5-9B sobre trazas agenticas multiturno de Claude Code, interacciones de desarrollador y registros de invocacion de herramientas destilados desde la API Qwen3.8-Flash, con el esquema compatible con Anthropic reformateado a ChatML. El repositorio distribuye pesos en formato GGUF generados con Unsloth, ademas de un proyector multimodal (mmproj) que habilita entradas de imagen.
+Qwen3.5-9B-Distill-Qwen-3.8-Flash-20261011 es un modelo de generacion de texto de ~9,2 mil millones de parametros publicado en Hugging Face por el usuario kevinzhou21. Segun la model card, se trata de una version destilada y ajustada de Qwen/Qwen3.5-9B sobre trazas agenticas multiturno de Claude Code, interacciones de desarrollador y registros de invocacion de herramientas destilados desde la API Qwen3.8-Flash, con el esquema compatible con Anthropic reformateado a ChatML. El repositorio distribuye pesos en formato GGUF generados con Unsloth, ademas de un proyector multimodal (mmproj) que habilita entradas de imagen.
 
 El modelo esta etiquetado como vision-language-model, chatml, distillation, claude-code y llama.cpp, y su pipeline declarado es text-generation. La orientacion principal es el trabajo agentico sobre codigo en local: el ejemplo de uso de la propia model card emplea llama-cli con plantilla Jinja, temperatura 0,2 y top-p 0,95 sobre una ventana de 8192 tokens configurada en tiempo de ejecucion.
 
@@ -74,7 +74,7 @@ No se dispone de datos verificados de benchmarks ni de fichas tecnicas de modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-Distill-Qwen-3.8-Flash-20261011 | ~9,2 mil millones | no disponible | no disponible | GGUF + PEFT en HuggingFace | 0 descargas, 0 likes |
+| Qwen3.5-9B-Distill-Qwen-3.8-Flash-20261011 | ~9,2 mil millones | no disponible | no disponible | GGUF + PEFT en Hugging Face | 0 descargas, 0 likes |
 | Alternativas de ~7-9B de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone de datos verificados de benchmarks ni de fichas tecnicas de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kevinzhou21/Qwen3.5-9B-Distill-Qwen-3.8-Flash-20261011
+- Modelo en Hugging Face: https://huggingface.co/kevinzhou21/Qwen3.5-9B-Distill-Qwen-3.8-Flash-20261011
 - Modelo base citado en la model card (no verificado): https://huggingface.co/Qwen/Qwen3.5-9B
 - Unsloth (herramienta de conversion y exportacion GGUF): https://github.com/unslothai/unsloth
 - llama.cpp (runtime recomendado por el autor): https://github.com/ggerganov/llama.cpp

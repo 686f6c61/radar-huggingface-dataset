@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `rcp-erez/efficient-attention-final28-2024` corresponde a un repositorio de HuggingFace publicado por el usuario `rcp-erez` que, segun su propia model card, no contiene un modelo entrenado ni un checkpoint utilizable, sino una nota de investigacion sobre atencion eficiente en transformers. La model card lo describe explicitamente como un artefacto exploratorio que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y advierte que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales.
+El identificador `rcp-erez/efficient-attention-final28-2024` corresponde a un repositorio de Hugging Face publicado por el usuario `rcp-erez` que, segun su propia model card, no contiene un modelo entrenado ni un checkpoint utilizable, sino una nota de investigacion sobre atencion eficiente en transformers. La model card lo describe explicitamente como un artefacto exploratorio que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y advierte que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 
 El repositorio incluye unicamente dos ficheros documentales (`summary.md` y `README.md`) y un artefacto en formato safetensors cuyo recuento de parametros declarado es de 24.832. El tamano total del repositorio es de 0,0 GB, lo que es coherente con un fichero de pesos trivial o con un placeholder, no con un modelo de lenguaje desplegable. No se declara pipeline de inferencia, idiomas soportados ni arquitectura concreta mas alla de la etiqueta generica `transformer`.
 
@@ -46,7 +46,7 @@ Dado que no existe un modelo funcional, no procede enumerar casos de uso de infe
 - Formulacion de una hipotesis falsable: tomar la hipotesis descrita como plantilla metodologica para escribir una hipotesis contrastable con criterios de exito y fracaso explicitos.
 - Auditoria de reproducibilidad: emplear la lista de comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas como checklist para revisar si un experimento ajeno aporta seeds, versiones de dataset, hardware y logs crudos.
 - Docencia y formacion en metodologia: utilizar el repositorio como ejemplo de diferencia entre nota de investigacion y publicacion con resultados, util en cursos de metodos experimentales en machine learning.
-- Identificacion de falsos positivos en busquedas de modelos: servir como caso de estudio de repositorios que aparecen en HuggingFace con etiqueta `safetensors` pero que no ofrecen pesos utilizables, para calibrar filtros de seleccion de modelos en equipos de ingenieria.
+- Identificacion de falsos positivos en busquedas de modelos: servir como caso de estudio de repositorios que aparecen en Hugging Face con etiqueta `safetensors` pero que no ofrecen pesos utilizables, para calibrar filtros de seleccion de modelos en equipos de ingenieria.
 - Revision de licencias: analizar el uso de cc-by-4.0 en artefactos documentales y su interaccion con los terminos de los datasets externos que se citan.
 
 ## Benchmarks y rendimiento
@@ -80,7 +80,7 @@ No disponible. No es posible establecer una comparativa tecnica fiable porque el
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rcp-erez/efficient-attention-final28-2024
+- Hugging Face: https://huggingface.co/rcp-erez/efficient-attention-final28-2024
 - Fichero `summary.md` del repositorio: no disponible como enlace directo verificado (se referencia en la model card, pero no se ha facilitado su URL)
 - Paper asociado: no disponible
 - Repositorio de codigo: no disponible

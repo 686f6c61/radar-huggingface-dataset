@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jfan/Qwen3.8-27B-heretic-dflash | 1,73B (safetensors) | No disponible | DFlash drafter | Apache 2.0 | HuggingFace |
-| EAGLE (drafters para LLM) | Variable (tipicamente <1B) | Depende del base | Autoregressive drafter | MIT | HuggingFace |
-| Medusa (drafters para LLM) | Variable (tipicamente <1B) | Depende del base | Multiple heads | Apache 2.0 | HuggingFace |
+| jfan/Qwen3.8-27B-heretic-dflash | 1,73B (safetensors) | No disponible | DFlash drafter | Apache 2.0 | Hugging Face |
+| EAGLE (drafters para LLM) | Variable (tipicamente <1B) | Depende del base | Autoregressive drafter | MIT | Hugging Face |
+| Medusa (drafters para LLM) | Variable (tipicamente <1B) | Depende del base | Multiple heads | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos drafters. La principal diferencia es que DFlash genera bloques de 16 tokens en paralelo, mientras que EAGLE y Medusa generan token a token o con cabezas múltiples. La licencia Apache 2.0 del drafter es más permisiva que algunas alternativas.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estos drafters. La princ
 
 ## Enlaces
 
-- [HuggingFace - jfan/Qwen3.8-27B-heretic-dflash](https://huggingface.co/jfan/Qwen3.8-27B-heretic-dflash)
+- [Hugging Face - jfan/Qwen3.8-27B-heretic-dflash](https://huggingface.co/jfan/Qwen3.8-27B-heretic-dflash)
 - [Modelo base - trohrbaugh/Qwen3.8-27B-heretic-ara](https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara)
 - [Paper DFlash - arXiv:2602.06036](https://arxiv.org/abs/2602.06036)
 - [Dataset Magicoder-OSS-Instruct-75K](https://huggingface.co/datasets/ise-uiuc/Magicoder-OSS-Instruct-75K)

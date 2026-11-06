@@ -89,6 +89,6 @@ No se dispone de datos para comparar con alternativas de compresion de terceros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_dualk_dual_tok_r40
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_dualk_dual_tok_r40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - No se han encontrado en la informacion disponible enlaces a papers, blogs, repositorios o demos adicionales del autor.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Jaoa07/Jaoa07 es un modelo de lenguaje de tipo texto-generación publicado en HuggingFace por el usuario Jaoa07. Según los metadatos del repositorio, se distribuye en formato safetensors bajo la librería transformers y la etiqueta de arquitectura `qwen2`, con un total de 1.543.714.304 parámetros (aproximadamente 1,54 mil millones) y un tamaño de repositorio de 3,1 GB. El pipeline declarado es `text-generation` con orientación conversacional.
+Jaoa07/Jaoa07 es un modelo de lenguaje de tipo texto-generación publicado en Hugging Face por el usuario Jaoa07. Según los metadatos del repositorio, se distribuye en formato safetensors bajo la librería transformers y la etiqueta de arquitectura `qwen2`, con un total de 1.543.714.304 parámetros (aproximadamente 1,54 mil millones) y un tamaño de repositorio de 3,1 GB. El pipeline declarado es `text-generation` con orientación conversacional.
 
-La relevancia de esta ficha es limitada y conviene ser explícito: la model card es la plantilla autogenerada por HuggingFace y no contiene ni una sola sección completada. No hay información sobre el desarrollador real, el proceso de entrenamiento, los datos utilizados, los idiomas soportados ni la licencia. Tampoco se han publicado resultados de evaluación. Cualquier uso en producción debería ir precedido de una evaluación propia.
+La relevancia de esta ficha es limitada y conviene ser explícito: la model card es la plantilla autogenerada por Hugging Face y no contiene ni una sola sección completada. No hay información sobre el desarrollador real, el proceso de entrenamiento, los datos utilizados, los idiomas soportados ni la licencia. Tampoco se han publicado resultados de evaluación. Cualquier uso en producción debería ir precedido de una evaluación propia.
 
 Por el tamaño y la etiqueta `qwen2`, todo apunta a un ajuste fino o a una re-publicación de un modelo de la familia Qwen2 en el rango de 1,5B de parámetros, pero esto es una inferencia a partir de una etiqueta y no un dato confirmado por el autor. El repositorio no incluye pesos en GGUF ni documentación adicional.
 
@@ -12,7 +12,7 @@ Por el tamaño y la etiqueta `qwen2`, todo apunta a un ajuste fino o a una re-pu
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta de HuggingFace: `qwen2`, presumiblemente transformer decoder-only) |
+| Arquitectura | no disponible (etiqueta de Hugging Face: `qwen2`, presumiblemente transformer decoder-only) |
 | Parámetros totales | 1.543.714.304 (dato de safetensors) |
 | Parámetros activos | no aplica (no hay indicios de que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -25,13 +25,13 @@ Por el tamaño y la etiqueta `qwen2`, todo apunta a un ajuste fino o a una re-pu
 
 La única información disponible sobre la arquitectura es la etiqueta `qwen2` en los metadatos del repositorio, lo que sitúa el modelo en la familia de transformers decoder-only de Qwen2. No se ha publicado la configuración (`config.json`) en la información proporcionada, por lo que se desconocen el número de capas, las dimensiones ocultas, el número de cabezas de atención, el vocabulario y la longitud máxima de contexto entrenada.
 
-No hay ningún dato sobre el entrenamiento: ni volumen de tokens, ni composición del corpus, ni si hubo ajuste supervisado, RLHF o DPO. La model card incluye todos los apartados de entrenamiento con el marcador `[More Information Needed]`. Tampoco se documenta ninguna innovación técnica (atención lineal, decodificación especulativa, modos de razonamiento explícito, etc.). El único identificador arXiv presente en las etiquetas (`arxiv:1910.09700`) corresponde a Lacoste et al. (2019) sobre estimación de emisiones de carbono, citado en la plantilla estándar de HuggingFace; no es un paper del modelo.
+No hay ningún dato sobre el entrenamiento: ni volumen de tokens, ni composición del corpus, ni si hubo ajuste supervisado, RLHF o DPO. La model card incluye todos los apartados de entrenamiento con el marcador `[More Information Needed]`. Tampoco se documenta ninguna innovación técnica (atención lineal, decodificación especulativa, modos de razonamiento explícito, etc.). El único identificador arXiv presente en las etiquetas (`arxiv:1910.09700`) corresponde a Lacoste et al. (2019) sobre estimación de emisiones de carbono, citado en la plantilla estándar de Hugging Face; no es un paper del modelo.
 
 ## Capacidades
 
 - Generación de texto autoregresiva y uso conversacional, según el pipeline declarado (`text-generation`, etiqueta `conversational`).
 - Compatibilidad con `text-generation-inference` (etiqueta presente en el repo), lo que sugiere que puede servirse con el stack TGI.
-- Compatibilidad declarada con endpoints (`endpoints_compatible`), es decir, potencial despliegue en Inference Endpoints de HuggingFace.
+- Compatibilidad declarada con endpoints (`endpoints_compatible`), es decir, potencial despliegue en Inference Endpoints de Hugging Face.
 - Capacidad multilingüe: no disponible; no se declara ningún idioma.
 - Tool calling / function calling: no confirmado. No hay plantilla de chat publicada ni documentación al respecto.
 - Razonamiento multi-paso y uso como agente: no confirmado.
@@ -67,11 +67,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Benchmarks públicos |
 |---|---|---|---|---|---|
-| Jaoa07/Jaoa07 | 1,54B | no disponible | no disponible | HuggingFace, safetensors | no disponible |
-| Qwen2-1.5B (base/instruct) | ~1,5B | no verificado en esta ficha | no verificado en esta ficha | HuggingFace, safetensors + GGUF | no verificado en esta ficha |
-| Qwen2.5-1.5B | ~1,5B | no verificado en esta ficha | no verificado en esta ficha | HuggingFace, safetensors + GGUF | no verificado en esta ficha |
-| SmolLM2-1.7B | ~1,7B | no verificado en esta ficha | no verificado en esta ficha | HuggingFace, safetensors + GGUF | no verificado en esta ficha |
-| Gemma 2 2B | ~2,6B | no verificado en esta ficha | no verificado en esta ficha | HuggingFace, gated | no verificado en esta ficha |
+| Jaoa07/Jaoa07 | 1,54B | no disponible | no disponible | Hugging Face, safetensors | no disponible |
+| Qwen2-1.5B (base/instruct) | ~1,5B | no verificado en esta ficha | no verificado en esta ficha | Hugging Face, safetensors + GGUF | no verificado en esta ficha |
+| Qwen2.5-1.5B | ~1,5B | no verificado en esta ficha | no verificado en esta ficha | Hugging Face, safetensors + GGUF | no verificado en esta ficha |
+| SmolLM2-1.7B | ~1,7B | no verificado en esta ficha | no verificado en esta ficha | Hugging Face, safetensors + GGUF | no verificado en esta ficha |
+| Gemma 2 2B | ~2,6B | no verificado en esta ficha | no verificado en esta ficha | Hugging Face, gated | no verificado en esta ficha |
 
 Nota: los datos de los modelos alternativos provienen de conocimiento público general y no han sido verificados contra documentación en esta ficha; se incluyen solo como referencia de categoría. La comparación de rendimiento con Jaoa07/Jaoa07 no es posible porque este último no publica ninguna métrica.
 
@@ -89,7 +89,7 @@ Nota: los datos de los modelos alternativos provienen de conocimiento público g
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jaoa07/Jaoa07
+- Hugging Face: https://huggingface.co/Jaoa07/Jaoa07
 - Paper citado en la plantilla de la model card (no es del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental referenciada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

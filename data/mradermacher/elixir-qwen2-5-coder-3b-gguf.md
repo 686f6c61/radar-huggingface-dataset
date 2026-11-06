@@ -21,13 +21,13 @@ Su relevancia práctica es la de un modelo pequeño (3.163.015.680 parámetros r
 | Licencia | qwen-research (campo `license: other` con `license_name: qwen-research`) |
 | Formato de pesos | GGUF (repo original del modelo base en transformers/safetensors) |
 
-Datos adicionales: tamaño del repositorio 28,6 GB; autor de la cuantización mradermacher; modelo base jmarceno/Elixir-Qwen2.5-Coder-3B; pipeline no disponible; creado el 2026-10-04 y actualizado el 2026-10-04 según HuggingFace.
+Datos adicionales: tamaño del repositorio 28,6 GB; autor de la cuantización mradermacher; modelo base jmarceno/Elixir-Qwen2.5-Coder-3B; pipeline no disponible; creado el 2026-10-04 y actualizado el 2026-10-04 según Hugging Face.
 
 ## Arquitectura y entrenamiento
 
-La información disponible no describe la arquitectura interna del modelo base más allá de las etiquetas de HuggingFace ("qwen2", "code", "conversational") y del nombre de modelo, que remite a Qwen2.5-Coder. Por tanto, los detalles sobre número de capas, dimensiones ocultas, mecanismo de atención, tipo de tokenizador o presencia de decodificación especulativa no están disponibles y no deben asumirse. Lo que sí es verificable es el recuento de parámetros (3.163.015.680) y que el formato original del modelo base es transformers.
+La información disponible no describe la arquitectura interna del modelo base más allá de las etiquetas de Hugging Face ("qwen2", "code", "conversational") y del nombre de modelo, que remite a Qwen2.5-Coder. Por tanto, los detalles sobre número de capas, dimensiones ocultas, mecanismo de atención, tipo de tokenizador o presencia de decodificación especulativa no están disponibles y no deben asumirse. Lo que sí es verificable es el recuento de parámetros (3.163.015.680) y que el formato original del modelo base es transformers.
 
-Tampoco se documenta el proceso de entrenamiento del ajuste fino: no hay información sobre el número de tokens de entrenamiento, la composición del dataset de Elixir, ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT. El repositorio de mradermacher es exclusivamente una tarea de conversión y cuantización: parte del modelo en formato HuggingFace, lo convierte (`convert_type: hf`) y genera cuantizaciones estáticas (`quantize_version: 2`, `output_tensor_quantised: 1`). No se han generado cuantizaciones ponderadas ni imatrix para este modelo, según indica el propio autor.
+Tampoco se documenta el proceso de entrenamiento del ajuste fino: no hay información sobre el número de tokens de entrenamiento, la composición del dataset de Elixir, ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT. El repositorio de mradermacher es exclusivamente una tarea de conversión y cuantización: parte del modelo en formato Hugging Face, lo convierte (`convert_type: hf`) y genera cuantizaciones estáticas (`quantize_version: 2`, `output_tensor_quantised: 1`). No se han generado cuantizaciones ponderadas ni imatrix para este modelo, según indica el propio autor.
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ Métricas objetivas disponibles: únicamente los tamaños de fichero por cuantiz
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| mradermacher/Elixir-Qwen2.5-Coder-3B-GGUF | 3.163.015.680 | no disponible | qwen-research | GGUF (12 cuantizaciones) | Cuantización del ajuste fino en Elixir; 0 descargas y 0 likes en HuggingFace |
+| mradermacher/Elixir-Qwen2.5-Coder-3B-GGUF | 3.163.015.680 | no disponible | qwen-research | GGUF (12 cuantizaciones) | Cuantización del ajuste fino en Elixir; 0 descargas y 0 likes en Hugging Face |
 | jmarceno/Elixir-Qwen2.5-Coder-3B | no disponible | no disponible | qwen-research | transformers/safetensors | Modelo base del que deriva esta publicación |
 | Qwen2.5-Coder-3B (modelo original de Qwen) | aproximadamente 3.000 millones (no confirmado en la información disponible) | no disponible | qwen-research | safetensors y variantes GGUF de terceros | Base generalista de código, sin especialización en Elixir |
 | Otras cuantizaciones GGUF de la familia Qwen2.5-Coder-3B | mismas que el modelo base | no disponible | qwen-research | GGUF | Alternativas sin ajuste específico a Elixir |
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento real d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mradermacher/Elixir-Qwen2.5-Coder-3B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/mradermacher/Elixir-Qwen2.5-Coder-3B-GGUF
 - Modelo base: https://huggingface.co/jmarceno/Elixir-Qwen2.5-Coder-3B
 - Licencia del modelo base: https://huggingface.co/jmarceno/Elixir-Qwen2.5-Coder-3B/blob/main/LICENSE
 - Página de resumen de descargas del autor: https://hf.tst.eu/model#Elixir-Qwen2.5-Coder-3B-GGUF

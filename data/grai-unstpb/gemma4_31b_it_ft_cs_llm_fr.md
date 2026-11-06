@@ -67,8 +67,8 @@ No disponible. La informacion proporcionada no permite identificar alternativas 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma4_31b_it_ft_cs_llm_fr (adaptador) | no disponible | no disponible | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) |
-| unsloth/gemma-4-31B-it-unsloth-bnb-4bit (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| gemma4_31b_it_ft_cs_llm_fr (adaptador) | no disponible | no disponible | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) |
+| unsloth/gemma-4-31B-it-unsloth-bnb-4bit (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no permite identificar alternativas 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GRAI-UNSTPB/gemma4_31b_it_ft_cs_llm_fr
+- Repositorio en Hugging Face: https://huggingface.co/GRAI-UNSTPB/gemma4_31b_it_ft_cs_llm_fr
 - Modelo base referenciado: https://huggingface.co/unsloth/gemma-4-31B-it-unsloth-bnb-4bit
 - Referencia del tag `arxiv:1910.09700` (Lacoste et al., 2019, sobre estimacion de emisiones, citada en la plantilla de la model card): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact

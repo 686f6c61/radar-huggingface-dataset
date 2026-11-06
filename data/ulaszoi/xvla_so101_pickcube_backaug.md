@@ -85,7 +85,7 @@ La comparación cuantitativa con alternativas no puede completarse: la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ulasZoi/xvla_so101_pickcube_BackAUG
+- Modelo en Hugging Face: https://huggingface.co/ulasZoi/xvla_so101_pickcube_BackAUG
 - Modelo base: https://huggingface.co/lerobot/xvla-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/ulasZoi/smolvla_pickcube_all_UnrealBackgroundAugmentation
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=ulasZoi/smolvla_pickcube_all_UnrealBackgroundAugmentation

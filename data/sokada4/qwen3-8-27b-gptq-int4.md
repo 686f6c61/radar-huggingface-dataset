@@ -83,7 +83,7 @@ La comparativa se limita a los modelos mencionados en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sokada4/Qwen3.8-27B-GPTQ-Int4
+- Repositorio Hugging Face: https://huggingface.co/sokada4/Qwen3.8-27B-GPTQ-Int4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint hermano Qwen3.6-27B GPTQ: https://huggingface.co/sokada4/Qwen3.6-27B-GPTQ-Int4
 - GPTQModel (herramienta de cuantizacion): https://github.com/ModelCloud/GPTQModel

@@ -73,4 +73,4 @@ No disponible. El modelo no es comparable con otros modelos de clasificación po
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/matthewwalkerport/research-classification5-2024
+- Hugging Face: https://huggingface.co/matthewwalkerport/research-classification5-2024

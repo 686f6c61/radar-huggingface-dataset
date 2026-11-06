@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: aproximadamente 1,3 GB en FP32 (según el tamaño del repositorio). Con cuantización a FP16 o int8, el consumo podría reducirse a ~0,7 GB y ~0,4 GB respectivamente, aunque no se ofrecen versiones cuantizadas.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para inferencia en FP32 (por ejemplo, NVIDIA GTX 1650, RTX 3060, etc.). En CPU, el modelo puede ejecutarse con memoria RAM suficiente (≥ 4 GB).
 - Cabe en GPUs de consumo: sí, es un modelo de tamaño moderado (333M parámetros) que se puede ejecutar en tarjetas gráficas de gama media.
-- Opciones de despliegue: compatible con la librería `transformers` de HuggingFace, por lo que puede servirse con `pipeline` de HuggingFace, o mediante frameworks como `vLLM` (aunque no está optimizado para generación) o `TGI`. También es posible usar `ONNX Runtime` para inferencia en CPU.
+- Opciones de despliegue: compatible con la librería `transformers` de Hugging Face, por lo que puede servirse con `pipeline` de Hugging Face, o mediante frameworks como `vLLM` (aunque no está optimizado para generación) o `TGI`. También es posible usar `ONNX Runtime` para inferencia en CPU.
 - Latencia y throughput: no se dispone de datos medidos. En una GPU moderna (p. ej., RTX 3090), la inferencia sobre un texto de 512 tokens debería completarse en decenas de milisegundos.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ La comparativa con otros modelos NER fine-tuned (como los de la familia `LeNER-B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-bertimbau-large-specific-cachacaner-seed42
+- Modelo en Hugging Face: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-bertimbau-large-specific-cachacaner-seed42
 - Repositorio de BERTimbau (modelo base): https://github.com/ClaudioSS01/portuguese-Bertimbau (y variante de marcosyonaware)
 - Página de BERTimbau en Portulan Clarin: https://portulanclarin.net/repository/browse/bertimbau-portuguese-bert-base-language-model/486edb32e93711ebabf702420a8701536b383b588f2f4c85b13b4d04c2867a4b/
 - Modelo base `neuralmind/bert-large-portuguese-cased`: https://huggingface.co/neuralmind/bert-large-portuguese-cased

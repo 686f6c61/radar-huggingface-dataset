@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "saidutta69/FrogNano-4B-heretic",
+  "slug": "saidutta69-frognano-4b-heretic",
+  "author": "saidutta69",
+  "url": "https://huggingface.co/saidutta69/FrogNano-4B-heretic",
+  "created_at": "2026-10-13T09:26:46.000Z",
+  "updated_at": "2026-11-06T12:31:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "frog",
+    "frognano",
+    "coding",
+    "code-agent",
+    "swe-bench",
+    "terminal-bench",
+    "tool-calling",
+    "microsoft",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "conversational",
+    "roleplay",
+    "local-llm",
+    "consumer-gpu",
+    "text-generation",
+    "en",
+    "base_model:microsoft/FrogNano-4B-2609",
+    "base_model:quantized:microsoft/FrogNano-4B-2609",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 1387,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 53427882957,
+  "storage_human": "53.4 GB",
+  "base_model": "microsoft/FrogNano-4B-2609",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Run FrogNano-4B-heretic API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/saidutta69/FrogNano-4B-heretic",
+      "snippet": "FrogNano-4B-heretic by saidutta69 is a 4.21 billion parameter decensored variant of Microsoft's FrogNano-4B-2609, a compact repository-level coding agent. Utilizing Heretic v1.4.0 for targeted weight edits, it suppresses refusal behavior while retaining the original's Gated DeltaNet architecture and Leaf five-tool harness. This model excels at software engineering tasks, achieving 61.5% on SWE ..."
+    },
+    {
+      "title": "FrogNano-4B-heretic API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/saidutta69/FrogNano-4B-heretic",
+      "snippet": "Run FrogNano-4B-heretic with FriendliAI inference. A decensored variant of microsoft/FrogNano-4B-2609, produced with Heretic v1.4.0 (directional ablation /…"
+    }
+  ]
+}

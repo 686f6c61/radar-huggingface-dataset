@@ -107,7 +107,7 @@ La comparación directa relevante es contra v1 y contra el adaptador PEFT en bf1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-goose-Q8-mlx
+- Modelo en Hugging Face: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-goose-Q8-mlx
 - Adaptador PEFT LoRA (transformers / vLLM sobre bf16): https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-goose-lora-peft
 - Build MLX de 6 bits: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-goose-Q6-mlx
 - Build MLX de 4 bits: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-goose-Q4-mlx

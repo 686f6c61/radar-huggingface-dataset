@@ -99,7 +99,7 @@ La comparativa es orientativa, ya que el modelo de este repo está fine-tuneado 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RehmanKhalid/yolo26-military-detection
+- Repositorio Hugging Face: https://huggingface.co/RehmanKhalid/yolo26-military-detection
 - Documentación de Ultralytics YOLO26: https://docs.ultralytics.com/models/yolo26
 - Repositorio GitHub de YOLO26: https://github.com/ultralytics/yolo26
 - Dataset Militaryv3iyolo26 (Rab Hell): https://platform.ultralytics.com/rab-hell/datasets/militaryv3iyolo26

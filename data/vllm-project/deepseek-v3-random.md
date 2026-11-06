@@ -79,6 +79,6 @@ La comparación con modelos de producción no es significativa: este checkpoint 
 
 ## Enlaces
 
-- HuggingFace (copia vLLM): https://huggingface.co/vllm-project/deepseek-v3-random
+- Hugging Face (copia vLLM): https://huggingface.co/vllm-project/deepseek-v3-random
 - Original: https://huggingface.co/eagle618/deepseek-v3-random
 - Repositorio vLLM: https://github.com/vllm-project/vllm

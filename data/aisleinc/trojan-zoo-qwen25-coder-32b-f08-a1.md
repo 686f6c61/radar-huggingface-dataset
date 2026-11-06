@@ -120,7 +120,7 @@ Comparación con otros modelos de código de tamaño similar (por ejemplo, alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-32b-f08-a1
+- Repositorio Hugging Face: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-32b-f08-a1
 - Colección AISLE Trojan Zoo for Detection Research: https://huggingface.co/collections/aisleinc/aisle-trojan-zoo-for-detection-research-6aa012b085f8f3f04aef038e
 - Modelo base Qwen/Qwen2.5-Coder-32B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 - Búsqueda web: no se han encontrado enlaces relevantes sobre este modelo; los resultados devueltos correspondían a páginas no relacionadas (cuestiones sobre caracteres franceses, símbolos tipográficos, espejos de Wikipedia y equivalencias de unidades de almacenamiento) y no se incluyen.

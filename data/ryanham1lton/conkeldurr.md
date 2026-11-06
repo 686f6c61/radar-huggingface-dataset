@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Conkeldurr es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC BY 4.0. En el momento de la consulta, el repositorio no incluye model card con contenido técnico (el README únicamente contiene la declaración de licencia), no tiene pipeline declarado, no declara idiomas soportados y acumula cero descargas y cero likes. La fecha de creación y de última actualización son prácticamente idénticas (19 de octubre de 2026, con tres minutos de diferencia), lo que sugiere una subida única sin mantenimiento posterior documentado.
+Conkeldurr es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC BY 4.0. En el momento de la consulta, el repositorio no incluye model card con contenido técnico (el README únicamente contiene la declaración de licencia), no tiene pipeline declarado, no declara idiomas soportados y acumula cero descargas y cero likes. La fecha de creación y de última actualización son prácticamente idénticas (19 de octubre de 2026, con tres minutos de diferencia), lo que sugiere una subida única sin mantenimiento posterior documentado.
 
 No se dispone de información sobre arquitectura, número de parámetros, longitud de contexto, proceso de entrenamiento ni datos de evaluación. El único dato cuantitativo objetivo es el tamaño del repositorio, 0,1 GB. Este dato, por sí solo, no permite determinar el número de parámetros ni la arquitectura, ya que podría corresponder a pesos cuantizados, a un modelo pequeño entrenado desde cero, a un adaptador LoRA o a una subida parcial de ficheros.
 
@@ -37,7 +37,7 @@ No se ha documentado ninguna capacidad en la información disponible. En concret
 - Tiene capacidades multilingües y en qué idiomas.
 - Dispone de modo "thinking", visión, audio u otras modalidades.
 
-La ausencia de pipeline declarado en HuggingFace impide incluso confirmar la tarea principal (text-generation, text-classification, image-text-to-text, etc.).
+La ausencia de pipeline declarado en Hugging Face impide incluso confirmar la tarea principal (text-generation, text-classification, image-text-to-text, etc.).
 
 ## Casos de uso
 
@@ -81,5 +81,5 @@ No disponible. Sin datos de arquitectura, parámetros ni tarea, no es posible id
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Conkeldurr
+- Hugging Face: https://huggingface.co/Ryanham1lton/Conkeldurr
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

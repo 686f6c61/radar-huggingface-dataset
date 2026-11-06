@@ -23,7 +23,7 @@ Es relevante ahora porque ocupa un nicho muy concreto: modelos pequeños (menos 
 
 ## Arquitectura y entrenamiento
 
-La información disponible no especifica la arquitectura interna del modelo. El nombre "Qwen3.6-9B" apunta a un derivado de la familia Qwen, pero no se documenta la configuración de capas, el tipo de atención ni si incorpora mecanismos de atención lineal o decodificación especulativa. El modelo base declara el tag `bfloat16`, lo que indica que los pesos originales se entrenaron o publicaron en esa precisión, y el pipeline declarado en HuggingFace es `image-text-to-text`, una etiqueta que no concuerda con el conjunto de capacidades descrito en el resto de la ficha (no hay etiquetas de visión ni mención a entrada de imágenes en la model card). Esta discrepancia debe tratarse como un posible error de etiquetado.
+La información disponible no especifica la arquitectura interna del modelo. El nombre "Qwen3.6-9B" apunta a un derivado de la familia Qwen, pero no se documenta la configuración de capas, el tipo de atención ni si incorpora mecanismos de atención lineal o decodificación especulativa. El modelo base declara el tag `bfloat16`, lo que indica que los pesos originales se entrenaron o publicaron en esa precisión, y el pipeline declarado en Hugging Face es `image-text-to-text`, una etiqueta que no concuerda con el conjunto de capacidades descrito en el resto de la ficha (no hay etiquetas de visión ni mención a entrada de imágenes en la model card). Esta discrepancia debe tratarse como un posible error de etiquetado.
 
 En cuanto al entrenamiento, la model card del repositorio convertido no aporta datos sobre número de tokens, composición del dataset, uso de RLHF o DPO, ni sobre el proceso concreto de "abliteration" aplicado. Únicamente se declara que es un fine-tune con las etiquetas `heretic`, `uncensored`, `abliterated`, `unsloth` (herramienta de fine-tuning) y `fine tune`. El repositorio KW-KI no añade entrenamiento propio: es una conversión de formato de los pesos de DavidAU mediante llama.cpp y el espacio GGUF-my-repo.
 
@@ -91,7 +91,7 @@ Los datos de contexto y licencia de los tres modelos de comparación corresponde
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/KW-KI/Qwen3.6-9B-Heretic-Uncensored-Thinking-Sweet-Madness-Q4_K_M-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/KW-KI/Qwen3.6-9B-Heretic-Uncensored-Thinking-Sweet-Madness-Q4_K_M-GGUF
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.6-9B-Heretic-Uncensored-Thinking-Sweet-Madness
 - Espacio GGUF-my-repo (herramienta de conversión): https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

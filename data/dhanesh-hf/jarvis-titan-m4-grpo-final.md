@@ -75,7 +75,7 @@ No se han publicado resultados comparables de MMLU, HumanEval, GSM8K u otros ben
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jarvis-Titan-M4-GRPO-Final | 14,8B | ~3,8B | 32.768 | JTRL-v1.0 (propietaria) | HuggingFace (0 descargas) |
+| Jarvis-Titan-M4-GRPO-Final | 14,8B | ~3,8B | 32.768 | JTRL-v1.0 (propietaria) | Hugging Face (0 descargas) |
 | DeepSeek-V2-Lite | ~15,7B | ~2,4B | 32.768 | DeepSeek (personalizada) | Abierta |
 | Qwen3-30B-A3B | ~30B | ~3B | 32.768 nativo (extensible) | Apache 2.0 | Abierta |
 | Mixtral 8x7B | ~46,7B | ~12,9B | 32.768 | Apache 2.0 | Abierta |
@@ -96,7 +96,7 @@ No es posible comparar rendimiento numerico porque Jarvis-Titan-M4 no publica be
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhanesh-hf/Jarvis-Titan-M4-GRPO-Final
+- Modelo en Hugging Face: https://huggingface.co/dhanesh-hf/Jarvis-Titan-M4-GRPO-Final
 - Modelo base: https://huggingface.co/dhanesh-hf/Jarvis-Titan-M4-Activated
 - Google Cloud TPU (hardware de entrenamiento): https://cloud.google.com/tpu
 - Paper, repositorio, demo o blog adicionales: no disponibles en la informacion proporcionada. La busqueda web unicamente devolvio un listado de arXiv de astrofisica (marzo de 2025) sin relacion con el modelo.

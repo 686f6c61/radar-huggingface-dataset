@@ -75,9 +75,9 @@ Condiciones de la prueba: FP32, 1.024 tokens de fuente, lotes de uno y dos, 29/6
 
 | Modelo | Parametros | Contexto instruccion | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Horizon 1 | 4B base + adaptador ~45 MB | 256 tokens | Edicion localizada con grounding sobre FLUX.2 Klein, MLX | apache-2.0 | HuggingFace (saggamer/horizon-1) |
-| FLUX.2 Klein base 4B | 4B | no disponible | Difusion texto/imagen base sin adaptador de edicion | no disponible en la informacion | HuggingFace (black-forest-labs/FLUX.2-klein-base-4B) |
-| FLUX2-klein-base-4B-mlx-4bit | 4B | no disponible | Conversion comunitaria 4-bit MLX del anterior | no disponible en la informacion | HuggingFace (AITRADER/FLUX2-klein-base-4B-mlx-4bit) |
+| Horizon 1 | 4B base + adaptador ~45 MB | 256 tokens | Edicion localizada con grounding sobre FLUX.2 Klein, MLX | apache-2.0 | Hugging Face (saggamer/horizon-1) |
+| FLUX.2 Klein base 4B | 4B | no disponible | Difusion texto/imagen base sin adaptador de edicion | no disponible en la informacion | Hugging Face (black-forest-labs/FLUX.2-klein-base-4B) |
+| FLUX2-klein-base-4B-mlx-4bit | 4B | no disponible | Conversion comunitaria 4-bit MLX del anterior | no disponible en la informacion | Hugging Face (AITRADER/FLUX2-klein-base-4B-mlx-4bit) |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. Horizon 1 se distingue por anadir grounding espacial y edicion por instruccion sobre la base, mientras que los otros dos son checkpoints base sin esa capa de edicion.
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saggamer/horizon-1
+- Modelo en Hugging Face: https://huggingface.co/saggamer/horizon-1
 - Checkpoint base FLUX.2 Klein 4B: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B
 - Conversion MLX 4-bit del base: https://huggingface.co/AITRADER/FLUX2-klein-base-4B-mlx-4bit
 - Dataset de entrenamiento: https://huggingface.co/datasets/osunlp/MagicBrush

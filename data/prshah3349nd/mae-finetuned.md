@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`prshah3349nd/mae-finetuned` es un repositorio de HuggingFace que contiene una implementación propia y minima de una arquitectura denominada **Mae**, orientada a tareas multitarea. No es un modelo entrenado ni una release de pesos listos para produccion: el propio autor indica que `model.safetensors` es un *checkpoint de inicializacion* valido para pruebas de humo (smoke tests), y que la variante publicada es la escala **nano**. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
+`prshah3349nd/mae-finetuned` es un repositorio de Hugging Face que contiene una implementación propia y minima de una arquitectura denominada **Mae**, orientada a tareas multitarea. No es un modelo entrenado ni una release de pesos listos para produccion: el propio autor indica que `model.safetensors` es un *checkpoint de inicializacion* valido para pruebas de humo (smoke tests), y que la variante publicada es la escala **nano**. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 
 El peso real del checkpoint, segun los metadatos de safetensors, es de **16.576 parametros** (dieciseis mil quinientos setenta y seis), con un tamano de repositorio de 0,0 GB. Se trata, por tanto, de un artefacto de escala experimental, no de un modelo de lenguaje utilizable. La model card declara explicitamente que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -23,8 +23,8 @@ Su relevancia es acotada y de tipo metodologico: sirve como punto de partida rep
 | Escala declarada | nano |
 | Activacion / normalizacion | GELU / RMSNorm |
 | Optimizador por defecto en la receta | SGD con schedule de warmup lineal (valores de partida, no ejecucion completada) |
-| Fecha de creacion en el repositorio | 2026-09-22 (segun metadatos de HuggingFace) |
-| Fecha de actualizacion en el repositorio | 2026-09-22 (segun metadatos de HuggingFace) |
+| Fecha de creacion en el repositorio | 2026-09-22 (segun metadatos de Hugging Face) |
+| Fecha de actualizacion en el repositorio | 2026-09-22 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -86,6 +86,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables, y po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prshah3349nd/mae-finetuned
+- Modelo en Hugging Face: https://huggingface.co/prshah3349nd/mae-finetuned
 - Archivos del repositorio: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web realizada devolvio unicamente resultados no relacionados (articulos enciclopedicos y videos sobre Francia en arabe), sin conexion con el modelo.

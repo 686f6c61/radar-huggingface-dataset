@@ -108,7 +108,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xbill9/gemma-4-31B-it-qat-w8a8-int8
+- Repositorio en Hugging Face: https://huggingface.co/xbill9/gemma-4-31B-it-qat-w8a8-int8
 - Variante emb4 del mismo autor: https://huggingface.co/xbill9/gemma-4-31B-it-qat-w8a8-int8-emb4
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it-qat-q4_0-unquantized
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

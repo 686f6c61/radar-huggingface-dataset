@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros (componente visual) | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen-Image-2.1 (original) | ~7,1 B | hasta 2752×1536; edición con 10 referencias | Qwen Research | HuggingFace, ModelScope, demo |
-| Microguy1/Qwen-Image-2.1-DUPLI (este repo) | ~7,1 B | idéntica al original (réplica) | Qwen Research | HuggingFace (10 descargas) |
+| Qwen-Image-2.1 (original) | ~7,1 B | hasta 2752×1536; edición con 10 referencias | Qwen Research | Hugging Face, ModelScope, demo |
+| Microguy1/Qwen-Image-2.1-DUPLI (este repo) | ~7,1 B | idéntica al original (réplica) | Qwen Research | Hugging Face (10 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos sobre otros modelos de generación y edición de imagen con los que comparar parámetros, contexto o rendimiento. La única comparación posible es entre el repositorio original `Qwen/Qwen-Image-2.1` y esta réplica, que comparten arquitectura y licencia; la diferencia es la procedencia (autor oficial frente a tercero) y la tracción (el original tiene demo, blog y canales oficiales).
@@ -91,7 +91,7 @@ No se dispone en la información proporcionada de datos sobre otros modelos de g
 - Repositorio oficial: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog oficial: https://qwen.ai/blog?id=qwen-image-2.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Repositorio GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - Discord: https://discord.gg/BEYSk3pkSu
 - Formulario de feedback: https://alidocs.dingtalk.com/notable/share/form/v01WgZOZA5DaVQPeqLX_dv19yqvsgs3oebp3pcjys_1qX0QQ0?source=link

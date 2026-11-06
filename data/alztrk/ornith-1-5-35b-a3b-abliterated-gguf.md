@@ -70,6 +70,6 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- [HuggingFace: alztrk/Ornith-1.5-35B-A3B-Abliterated-GGUF](https://huggingface.co/alztrk/Ornith-1.5-35B-A3B-Abliterated-GGUF)
+- [Hugging Face: alztrk/Ornith-1.5-35B-A3B-Abliterated-GGUF](https://huggingface.co/alztrk/Ornith-1.5-35B-A3B-Abliterated-GGUF)
 - [Modelo base: alztrk/Ornith-1.5-35B-A3B-Abliterated](https://huggingface.co/alztrk/Ornith-1.5-35B-A3B-Abliterated)
 - [Modelo original: ornith-ai/Ornith-1.5-35B-A3B](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)

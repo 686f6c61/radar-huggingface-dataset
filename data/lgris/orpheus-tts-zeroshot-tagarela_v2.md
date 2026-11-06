@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Orpheus-TTS conditioned (checkpoint de 100k) es un modelo de síntesis de voz (text-to-speech) en portugués desarrollado por el usuario `lgris`, publicado en HuggingFace bajo el identificador `lgris/orpheus-tts-zeroshot-tagarela_v2`. Se trata de un ajuste fino del modelo Orpheus-TTS en modo condicionado, entrenado con el dataset `freds0/TAGARELA_v2`. El modelo realiza TTS zero-shot: recibe un audio de referencia junto con el texto pronunciado en ese audio y el nuevo texto a generar, y produce la nueva locución imitando el ritmo y el timbre de la voz de referencia. No hay datos publicados sobre el volumen del ajuste fino más allá de que corresponde al checkpoint de 100.000 pasos.
+Orpheus-TTS conditioned (checkpoint de 100k) es un modelo de síntesis de voz (text-to-speech) en portugués desarrollado por el usuario `lgris`, publicado en Hugging Face bajo el identificador `lgris/orpheus-tts-zeroshot-tagarela_v2`. Se trata de un ajuste fino del modelo Orpheus-TTS en modo condicionado, entrenado con el dataset `freds0/TAGARELA_v2`. El modelo realiza TTS zero-shot: recibe un audio de referencia junto con el texto pronunciado en ese audio y el nuevo texto a generar, y produce la nueva locución imitando el ritmo y el timbre de la voz de referencia. No hay datos publicados sobre el volumen del ajuste fino más allá de que corresponde al checkpoint de 100.000 pasos.
 
 Arquitectónicamente es un transformer autoregresivo de la familia Llama (la etiqueta del repositorio es `llama`) con 3.300.867.072 parámetros totales (aproximadamente 3,3 mil millones), que genera tokens de audio en lugar de tokens de texto. La síntesis se apoya en el códec neuronal SNAC de 24 kHz (`hubertsiuzdak/snac_24khz`), que produce una representación jerárquica de tres niveles que el modelo debe predecir y que después se decodifica a onda de audio.
 
@@ -98,7 +98,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lgris/orpheus-tts-zeroshot-tagarela_v2
+- Modelo en Hugging Face: https://huggingface.co/lgris/orpheus-tts-zeroshot-tagarela_v2
 - Dataset de ajuste: https://huggingface.co/datasets/freds0/TAGARELA_v2
 - Códec SNAC 24 kHz: https://huggingface.co/hubertsiuzdak/snac_24khz
 - Muestra de audio de referencia 1: https://huggingface.co/lgris/orpheus-tts-zeroshot-tagarela_v2/resolve/main/samples/ref1_sample1.wav

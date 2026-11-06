@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EasyImageSharp-models es un repositorio publicado por el usuario EasyImageSharp en HuggingFace. El modelo se distribuye bajo licencia Apache-2.0 y lleva asociadas las etiquetas `onnx` y `region:us`, lo que sugiere que podría tratarse de un modelo destinado a inferencia con ONNX Runtime, aunque no se aporta información adicional en la model card. El repositorio tiene un tamaño de 0.0 GB, cero descargas y una sola valoración, y fue creado el 24 de agosto de 2026.
+EasyImageSharp-models es un repositorio publicado por el usuario EasyImageSharp en Hugging Face. El modelo se distribuye bajo licencia Apache-2.0 y lleva asociadas las etiquetas `onnx` y `region:us`, lo que sugiere que podría tratarse de un modelo destinado a inferencia con ONNX Runtime, aunque no se aporta información adicional en la model card. El repositorio tiene un tamaño de 0.0 GB, cero descargas y una sola valoración, y fue creado el 24 de agosto de 2026.
 
 En el momento de redactar esta ficha, la documentación pública es extremadamente limitada: la model card solo contiene el encabezado de licencia y un comentario de aviso. No se ha publicado información sobre arquitectura, parámetros, datos de entrenamiento, capacidades o benchmarks. Por tanto, cualquier evaluación técnica del modelo debe considerarse pendiente de documentación adicional.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/grove-lake-12` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `models4world`. Está diseñado como un módulo de fine-tuning eficiente sobre el modelo base `models4world/maple-signal-64`, orientado a tareas de generación de texto y conversación. La técnica LoRA, descrita en el paper arXiv:1910.09700, permite adaptar modelos grandes con un coste computacional reducido, modificando únicamente matrices de bajo rango en lugar de todos los pesos.
+El modelo `models4world/grove-lake-12` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `models4world`. Está diseñado como un módulo de fine-tuning eficiente sobre el modelo base `models4world/maple-signal-64`, orientado a tareas de generación de texto y conversación. La técnica LoRA, descrita en el paper arXiv:1910.09700, permite adaptar modelos grandes con un coste computacional reducido, modificando únicamente matrices de bajo rango en lugar de todos los pesos.
 
 La información pública disponible es extremadamente limitada: la model card no contiene detalles sobre arquitectura, parámetros, datos de entrenamiento, licencia o idiomas soportados. El repositorio tiene un tamaño de 11,2 GB, lo que sugiere que el adaptador es considerablemente grande, pero no se especifica el tamaño del modelo base ni la magnitud de la adaptación. No se han registrado descargas ni interacciones en la comunidad, y la fecha de creación es agosto de 2026, por lo que se trata de un modelo reciente y poco documentado.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: no disponible. El tamaño del adaptador (11,2 GB) sugiere que el modelo base debe ser considerablemente grande, pero sin conocer su arquitectura no se puede estimar la VRAM necesaria.
 - GPU recomendadas: no disponible. Dependerá del modelo base y de la cuantización aplicada.
 - Compatibilidad con GPU de consumo: no se puede determinar sin conocer el modelo base.
-- Opciones de despliegue: al ser un adaptador PEFT, es compatible con el ecosistema HuggingFace Transformers y puede cargarse con `PeftModel`. También podría usarse con vLLM o TGI si el modelo base es compatible, pero no hay confirmación.
+- Opciones de despliegue: al ser un adaptador PEFT, es compatible con el ecosistema Hugging Face Transformers y puede cargarse con `PeftModel`. También podría usarse con vLLM o TGI si el modelo base es compatible, pero no hay confirmación.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -68,6 +68,6 @@ No se dispone de información suficiente para establecer una comparativa. El mod
 
 ## Enlaces
 
-- [HuggingFace - models4world/grove-lake-12](https://huggingface.co/models4world/grove-lake-12)
-- [Perfil de models4world en HuggingFace](https://huggingface.co/models4world)
+- [Hugging Face - models4world/grove-lake-12](https://huggingface.co/models4world/grove-lake-12)
+- [Perfil de models4world en Hugging Face](https://huggingface.co/models4world)
 - [Paper de LoRA (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)

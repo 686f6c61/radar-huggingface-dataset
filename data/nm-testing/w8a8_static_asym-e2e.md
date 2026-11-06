@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nm-testing/w8a8_static_asym-e2e` es un artefacto de prueba publicado por el usuario `nm-testing` en HuggingFace. Su nombre indica que se trata de un modelo cuantizado con precisión W8A8 (pesos y activaciones de 8 bits) utilizando cuantización estática asimétrica, probablemente generado como parte de un pipeline de pruebas de extremo a extremo (e2e) para herramientas de compresión de modelos. El tag `compressed-tensors` sugiere que se ha empleado el ecosistema de compresión de Neural Magic, aunque no se confirma el software exacto.
+El modelo `nm-testing/w8a8_static_asym-e2e` es un artefacto de prueba publicado por el usuario `nm-testing` en Hugging Face. Su nombre indica que se trata de un modelo cuantizado con precisión W8A8 (pesos y activaciones de 8 bits) utilizando cuantización estática asimétrica, probablemente generado como parte de un pipeline de pruebas de extremo a extremo (e2e) para herramientas de compresión de modelos. El tag `compressed-tensors` sugiere que se ha empleado el ecosistema de compresión de Neural Magic, aunque no se confirma el software exacto.
 
 Con 1.100.048.384 parámetros (aproximadamente 1,1 mil millones), el modelo se sitúa en la gama de modelos pequeños de tipo Llama, aunque la arquitectura exacta no está documentada en la ficha. El repositorio ocupa 37 GB, un tamaño desproporcionadamente grande para esa cantidad de parámetros, lo que sugiere que incluye múltiples archivos de pesos o versiones cuantizadas adicionales. Este modelo parece ser un banco de pruebas interno más que un artefacto listo para producción, y carece de documentación sobre licencia, idiomas o capacidades.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: con 1,1 B de parametros cuantizados a 8 bits, el peso del modelo en memoria seria aproximadamente 1,1 GB (1,1 B * 1 byte). Sin embargo, el tamano del repositorio (37 GB) sugiere que hay archivos adicionales, posiblemente versiones sin cuantizar o multiples checkpoints, por lo que la VRAM real para inferencia dependera del archivo concreto que se cargue.
 - GPU recomendadas: una GPU con al menos 2 GB de VRAM seria suficiente para el modelo cuantizado (por ejemplo, una NVIDIA GTX 1650 o superior). Para ejecutar el modelo completo sin cuantizar (si existe en el repo), se necesitarian alrededor de 4-5 GB en FP16.
 - Compatibilidad con GPU de consumo: si, cabe en la mayoria de GPUs de consumo actuales.
-- Opciones de despliegue: al ser un modelo con formato safetensors, puede cargarse con transformers de HuggingFace, vLLM, llama.cpp (si se convierte a GGUF) o TGI. No se proporcionan instrucciones especificas.
+- Opciones de despliegue: al ser un modelo con formato safetensors, puede cargarse con transformers de Hugging Face, vLLM, llama.cpp (si se convierte a GGUF) o TGI. No se proporcionan instrucciones especificas.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -70,5 +70,5 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. El
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nm-testing/w8a8_static_asym-e2e
+- Repositorio en Hugging Face: https://huggingface.co/nm-testing/w8a8_static_asym-e2e
 - No se encontraron otros enlaces (papers, blogs, repos) en la informacion disponible.

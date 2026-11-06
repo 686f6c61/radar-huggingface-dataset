@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|
-| Sulphur 2 base | 9,2 mil millones | No disponible | HuggingFace y CivitAI | Ajuste uncensored de LTX-2.3, con GGUF y LoRA distill |
-| Lightricks/LTX-2.3 | No disponible | No disponible en la información proporcionada | HuggingFace | Modelo base del que deriva Sulphur 2 |
+| Sulphur 2 base | 9,2 mil millones | No disponible | Hugging Face y CivitAI | Ajuste uncensored de LTX-2.3, con GGUF y LoRA distill |
+| Lightricks/LTX-2.3 | No disponible | No disponible en la información proporcionada | Hugging Face | Modelo base del que deriva Sulphur 2 |
 | Otras alternativas abiertas de t2v (Wan 2.x, HunyuanVideo) | No disponible | No disponible en la información proporcionada | No disponible | No se aportan datos comparativos en la información disponible |
 
 No se dispone de cifras de rendimiento, contexto ni licencia de los modelos comparados, por lo que la comparación cuantitativa no puede realizarse con los datos proporcionados.
@@ -93,7 +93,7 @@ No se dispone de cifras de rendimiento, contexto ni licencia de los modelos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iknownuting/Sulphur-2-base
+- Modelo en Hugging Face: https://huggingface.co/iknownuting/Sulphur-2-base
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.3
 - CivitAI, modelo base: https://civitai.red/models/2594061/sulphur-2-base
 - CivitAI, modelo cuantizado: https://civitai.red/models/2630742

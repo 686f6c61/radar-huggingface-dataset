@@ -4,7 +4,7 @@
 
 ClearView Derain NAFNet Large es un modelo de eliminación de lluvia en imágenes individuales (single-image deraining) desarrollado por dronefreak. Se basa en la arquitectura NAFNet (Nonlinear Activation Free Network) en su variante Large, con 116 millones de parámetros, y está entrenado sobre una mezcla de datos sintéticos y reales de lluvia para generalizar mejor entre dominios. El modelo forma parte del ecosistema ClearView, una librería de restauración de imágenes que facilita el entrenamiento y la inferencia.
 
-La relevancia de este modelo radica en su enfoque de entrenamiento mixto: en lugar de optimizar para un único benchmark sintético, combina cinco conjuntos de datos (Rain13K, DDN-Data, SPA-Data, RealRain-1k-H y RealRain-1k-L) con sobremuestreo de las fuentes reales, y selecciona el checkpoint final mediante una métrica de validación también mezclada. Esto lo hace especialmente útil para aplicaciones del mundo real como conducción autónoma, vigilancia o fotografía, donde la lluvia real presenta características distintas a las de los datos sintéticos. El modelo se distribuye bajo licencia Apache 2.0 y está disponible en HuggingFace con un peso de 0,5 GB.
+La relevancia de este modelo radica en su enfoque de entrenamiento mixto: en lugar de optimizar para un único benchmark sintético, combina cinco conjuntos de datos (Rain13K, DDN-Data, SPA-Data, RealRain-1k-H y RealRain-1k-L) con sobremuestreo de las fuentes reales, y selecciona el checkpoint final mediante una métrica de validación también mezclada. Esto lo hace especialmente útil para aplicaciones del mundo real como conducción autónoma, vigilancia o fotografía, donde la lluvia real presenta características distintas a las de los datos sintéticos. El modelo se distribuye bajo licencia Apache 2.0 y está disponible en Hugging Face con un peso de 0,5 GB.
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ No se dispone de datos comparativos con otros modelos de deraining fuera del eco
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/clearview-derain-nafnet-large
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/clearview-derain-nafnet-large
 - Libreria ClearView (GitHub): https://github.com/dronefreak/clearview
 - Receta de mezcla de datos de entrenamiento: https://github.com/dronefreak/clearview/blob/main/configs/mix/rain_mixed_synthetic_real.yaml
 - Receta de validacion mezclada: https://github.com/dronefreak/clearview/blob/main/configs/mix/rain_mixed_val.yaml

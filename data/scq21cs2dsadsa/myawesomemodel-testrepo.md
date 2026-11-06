@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario scq21cs2dsadsa, etiquetado como un modelo de extracción de características (feature-extraction) basado en la librería transformers. Sin embargo, el repositorio está vacío (0.0 GB), no tiene descargas ni likes, y la model card asociada contiene una descripción genérica que parece copiada de otro modelo, sin especificar arquitectura, tamaño, parámetros ni datos de entrenamiento. No se ha publicado ningún peso, configuración o artefacto descargable.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario scq21cs2dsadsa, etiquetado como un modelo de extracción de características (feature-extraction) basado en la librería transformers. Sin embargo, el repositorio está vacío (0.0 GB), no tiene descargas ni likes, y la model card asociada contiene una descripción genérica que parece copiada de otro modelo, sin especificar arquitectura, tamaño, parámetros ni datos de entrenamiento. No se ha publicado ningún peso, configuración o artefacto descargable.
 
 La model card describe un modelo con capacidades de razonamiento mejoradas, mencionando una actualización de versión que incrementa la precisión en tareas de matemáticas (AIME 2025) de 70% a 87.5%, y una reducción de alucinaciones. No obstante, estos datos no están respaldados por ningún archivo en el repositorio ni por documentación técnica verificable. Se trata, en la práctica, de un repositorio de prueba sin contenido utilizable.
 
@@ -84,7 +84,7 @@ No se puede establecer una comparativa con modelos similares porque no se conoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/scq21cs2dsadsa/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/scq21cs2dsadsa/MyAwesomeModel-TestRepo
 - Página de despliegue en OpenModelMap (no oficial): https://openmodelmap.com/model/modoupennington876/myawesomemodel-testrepo
 - Página de Toolify (no oficial): https://www.toolify.ai/ai-model/asfafaf4546-myawesomemodel-testrepo
 - Repositorio similar con la misma model card (sad2DSAD12/MyAwesomeModel): https://huggingface.co/sad2DSAD12/MyAwesomeModel

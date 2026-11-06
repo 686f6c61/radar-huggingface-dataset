@@ -87,7 +87,7 @@ El modelo base XLM-RoBERTa-large es el punto de partida, pero no está fine-tune
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yjoonjang/MIMO-xlm-roberta-large)
+- [Modelo en Hugging Face](https://huggingface.co/yjoonjang/MIMO-xlm-roberta-large)
 - [Modelo base XLM-RoBERTa-large](https://huggingface.co/FacebookAI/xlm-roberta-large)
 - [Paper de XLM-RoBERTa](https://arxiv.org/abs/1908.10084)
 - [Documentación de sentence-transformers](https://www.sbert.net/)

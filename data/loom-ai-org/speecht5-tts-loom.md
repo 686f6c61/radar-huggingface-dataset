@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| speecht5-tts-loom | 158.989.848 (mas vocoder no desglosado) | Ingles | No aplica (TTS) | MIT | GGUF | HuggingFace (loom-ai-org) |
-| microsoft/speecht5_tts | 158.989.848 | Ingles | No aplica (TTS) | MIT | safetensors | HuggingFace (microsoft); requiere vocoder aparte |
+| speecht5-tts-loom | 158.989.848 (mas vocoder no desglosado) | Ingles | No aplica (TTS) | MIT | GGUF | Hugging Face (loom-ai-org) |
+| microsoft/speecht5_tts | 158.989.848 | Ingles | No aplica (TTS) | MIT | safetensors | Hugging Face (microsoft); requiere vocoder aparte |
 | Piper (familia VITS) | No disponible | Multiples segun voz | No aplica (TTS) | MIT en el motor; la licencia varia por voz | ONNX | Repositorio y voces distribuidas por el proyecto |
-| XTTS-v2 (Coqui) | No disponible | Multilingue | No aplica (TTS) | Coqui Public Model License (uso comercial restringido) | No disponible | HuggingFace (coqui) |
+| XTTS-v2 (Coqui) | No disponible | Multilingue | No aplica (TTS) | Coqui Public Model License (uso comercial restringido) | No disponible | Hugging Face (coqui) |
 
 La comparación con Piper y XTTS-v2 se ofrece a título orientativo; los datos de parámetros y contexto de esos sistemas no figuran en la información proporcionada y por tanto se marcan como no disponibles.
 
@@ -92,7 +92,7 @@ La comparación con Piper y XTTS-v2 se ofrece a título orientativo; los datos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/speecht5-tts-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/speecht5-tts-loom
 - Modelo base: https://huggingface.co/microsoft/speecht5_tts
 - Vocoder HiFi-GAN: https://huggingface.co/microsoft/speecht5_hifigan
 - Repositorio del motor: https://github.com/loom-ai-org/loom.cpp

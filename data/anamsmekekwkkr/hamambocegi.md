@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hamambocegi es un repositorio de modelo publicado en HuggingFace por el usuario Anamsmekekwkkr bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card no contiene mas que la declaracion de licencia, sin descripcion, sin arquitectura, sin tamano de parametros, sin datos de entrenamiento ni ejemplos de uso. En el momento de la consulta el repositorio acumula 0 descargas y 1 like, y no tiene pipeline declarado.
+Hamambocegi es un repositorio de modelo publicado en Hugging Face por el usuario Anamsmekekwkkr bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card no contiene mas que la declaracion de licencia, sin descripcion, sin arquitectura, sin tamano de parametros, sin datos de entrenamiento ni ejemplos de uso. En el momento de la consulta el repositorio acumula 0 descargas y 1 like, y no tiene pipeline declarado.
 
 No es posible determinar que problema resuelve, que arquitectura emplea ni para que tareas esta optimizado, porque el autor no ha publicado ninguna especificacion tecnica. Tampoco hay evidencia de resultados de benchmarks, pesos publicados en formatos conocidos ni documentacion complementaria (paper, blog o repositorio de codigo).
 
@@ -50,7 +50,7 @@ La unica afirmacion defendible es que el repositorio existe y esta etiquetado co
 No es posible definir casos de uso concretos y realistas porque se desconoce por completo el comportamiento del modelo. Los siguientes escenarios son hipoteticos y solo serian aplicables despues de una evaluacion tecnica previa que confirme arquitectura, tamano, licencia de los datos y calidad de salida:
 
 - Prototipado interno no critico: uso en entornos de experimentacion aislados, sin datos sensibles y con supervision humana, unicamente si la evaluacion previa confirma un comportamiento aceptable.
-- Evaluacion comparativa de artefactos: emplearlo como caso de estudio para auditar como se publican modelos sin documentacion en HuggingFace y que riesgos introduce esa practica.
+- Evaluacion comparativa de artefactos: emplearlo como caso de estudio para auditar como se publican modelos sin documentacion en Hugging Face y que riesgos introduce esa practica.
 - Pruebas de carga de pesos: verificar si el repositorio contiene pesos cargables (safetensors, GGUF, binarios pickle) y con que librerias, antes de considerar cualquier integracion.
 - Analisis de seguridad de artefactos: inspeccionar los ficheros en busca de codigo ejecutable (`pickle`, `torch.load`) que pueda suponer un riesgo al cargarlos.
 - Docencia sobre higiene de publicacion de modelos: usar el repositorio como ejemplo negativo de model card incompleta frente a las plantillas recomendadas.
@@ -91,7 +91,7 @@ No disponible. Al no conocerse parametros, contexto, licencia de datos ni rendim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Anamsmekekwkkr/Hamambocegi
+- Repositorio en Hugging Face: https://huggingface.co/Anamsmekekwkkr/Hamambocegi
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

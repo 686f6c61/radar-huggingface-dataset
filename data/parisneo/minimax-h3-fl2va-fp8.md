@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / duracion | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ParisNeo/MiniMax-H3-FL2VA-FP8 | 33B (denso) | 4-15 s, 24 FPS, `max-model-len` 4096 | FP8 | MiniMax H3 Community (≤ 20 M USD de ingresos anuales, atribución obligatoria) | HuggingFace, 0 descargas |
-| MiniMaxAI/MiniMax-H3 (original) | 33B (denso) | Misma arquitectura; duración y FPS no disponibles en la información | Precisión original (no cuantizada) | MiniMax H3 Community | HuggingFace, modelo base |
+| ParisNeo/MiniMax-H3-FL2VA-FP8 | 33B (denso) | 4-15 s, 24 FPS, `max-model-len` 4096 | FP8 | MiniMax H3 Community (≤ 20 M USD de ingresos anuales, atribución obligatoria) | Hugging Face, 0 descargas |
+| MiniMaxAI/MiniMax-H3 (original) | 33B (denso) | Misma arquitectura; duración y FPS no disponibles en la información | Precisión original (no cuantizada) | MiniMax H3 Community | Hugging Face, modelo base |
 | Otros modelos abiertos de texto a vídeo (Wan, HunyuanVideo, LTX-Video) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La información proporcionada solo permite comparar con el modelo base original. Para el resto de alternativas abiertas de texto a vídeo no se dispone de datos verificables en esta búsqueda, por lo que no se establece comparación cuantitativa.
@@ -101,7 +101,7 @@ La información proporcionada solo permite comparar con el modelo base original.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ParisNeo/MiniMax-H3-FL2VA-FP8
+- Repositorio Hugging Face: https://huggingface.co/ParisNeo/MiniMax-H3-FL2VA-FP8
 - Modelo base original: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Texto de la licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web: los resultados devueltos no guardaban relación con el modelo ni con generación de vídeo.

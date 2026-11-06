@@ -91,7 +91,7 @@ No se dispone de cifras comparativas de rendimiento entre estos modelos en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Junaidi69/rengas-3.2-lora-adapters-st-010
+- Modelo en Hugging Face: https://huggingface.co/Junaidi69/rengas-3.2-lora-adapters-st-010
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Documentacion de PEFT: https://huggingface.co/docs/peft/index

@@ -18,7 +18,7 @@ Su relevancia práctica es que permite ejecutar un modelo de ~31B en hardware de
 | Longitud de contexto | no disponible en la informacion proporcionada (los ejemplos de uso emplean `-c 8192`) |
 | Tipos de cuantizacion | BF16, Q8_0, Q4_K_M (k-quants de llama.cpp, PTQ) |
 | Idiomas soportados | no disponible (la model card incluye evaluación en ingles y coreano, pero no una lista oficial de idiomas) |
-| Licencia | Apache-2.0 segun metadatos de HuggingFace; la model card remite a la Gemma 4 license de Google |
+| Licencia | Apache-2.0 segun metadatos de Hugging Face; la model card remite a la Gemma 4 license de Google |
 | Formato de pesos | GGUF (un fichero por cuantizacion) |
 
 ## Arquitectura y entrenamiento
@@ -86,14 +86,14 @@ No se dispone de informacion sobre modelos comparables de otros desarrolladores 
 - Riesgo de alucinacion: inherente a los modelos de lenguaje preentrenados; no se documentan mitigaciones especificas en este repositorio.
 - Sesgos: no se documentan evaluaciones de sesgo ni de seguridad en la informacion disponible.
 - Idiomas: solo se ha medido ingles y coreano; no hay lista oficial de idiomas soportados ni garantias para el castellano.
-- Licencia: los metadatos de HuggingFace indican Apache-2.0, pero la model card remite a la Gemma 4 license de Google y senala que los pesos y el tokenizador pertenecen a Google DeepMind. Conviene revisar los terminos de la Gemma 4 license antes de un uso comercial, ya que pueden imponer restricciones adicionales.
+- Licencia: los metadatos de Hugging Face indican Apache-2.0, pero la model card remite a la Gemma 4 license de Google y senala que los pesos y el tokenizador pertenecen a Google DeepMind. Conviene revisar los terminos de la Gemma 4 license antes de un uso comercial, ya que pueden imponer restricciones adicionales.
 - Detalle de reproducibilidad: sin forzar BOS en el tokenizador, las mediciones de perplejidad no son validas; tenerlo en cuenta al comparar resultados propios.
 - Ollama y LM Studio no han sido probados por el autor; el soporte en esas herramientas es inferido del formato, no verificado.
 - Fecha de publicacion futura en los metadatos (creado 2026-10-11): verificar la vigencia de los enlaces y de la version de llama.cpp requerida.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/axteam/gemma-4-31B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/axteam/gemma-4-31B-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-31B
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Fichero BF16: https://huggingface.co/axteam/gemma-4-31B-GGUF/blob/main/gemma-4-31B-GGUF-BF16.gguf

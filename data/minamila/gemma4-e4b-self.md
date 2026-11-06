@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MinaMila/Gemma4-E4B-self es un adaptador LoRA publicado en HuggingFace por el usuario MinaMila, construido sobre el modelo base google/gemma-4-E4B-it. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (adapter) que debe combinarse con el modelo base para poder ejecutarse. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador LoRA y no con un modelo de pesos completos, y fue subido el 10 de septiembre de 2026 con la libreria PEFT 0.19.1.
+MinaMila/Gemma4-E4B-self es un adaptador LoRA publicado en Hugging Face por el usuario MinaMila, construido sobre el modelo base google/gemma-4-E4B-it. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (adapter) que debe combinarse con el modelo base para poder ejecutarse. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador LoRA y no con un modelo de pesos completos, y fue subido el 10 de septiembre de 2026 con la libreria PEFT 0.19.1.
 
-El pipeline declarado es text-generation y las etiquetas incluyen "lora", "peft", "safetensors", "transformers", "conversational" y la referencia al modelo base. La model card es la plantilla generica de HuggingFace sin rellenar: todos los campos de descripcion, datos de entrenamiento, hiperparametros, evaluacion y uso previsto aparecen como "[More Information Needed]". No hay informacion publica sobre el dataset de ajuste, el procedimiento de entrenamiento ni los objetivos del autor.
+El pipeline declarado es text-generation y las etiquetas incluyen "lora", "peft", "safetensors", "transformers", "conversational" y la referencia al modelo base. La model card es la plantilla generica de Hugging Face sin rellenar: todos los campos de descripcion, datos de entrenamiento, hiperparametros, evaluacion y uso previsto aparecen como "[More Information Needed]". No hay informacion publica sobre el dataset de ajuste, el procedimiento de entrenamiento ni los objetivos del autor.
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente documental: el modelo tiene 0 descargas y 0 "likes", carece de licencia declarada y no aporta resultados de evaluacion. Cualquier uso en produccion exigiria auditar primero el modelo base y asumir que las capacidades reales del adaptador son desconocidas. Los resultados de la busqueda web realizada no contienen informacion relacionada con este modelo.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MinaMila/Gemma4-E4B-self | Adaptador LoRA, no disponible | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
-| google/gemma-4-E4B-it (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | Licencia de Google para Gemma (no detallada aqui) | HuggingFace |
+| MinaMila/Gemma4-E4B-self | Adaptador LoRA, no disponible | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
+| google/gemma-4-E4B-it (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | Licencia de Google para Gemma (no detallada aqui) | Hugging Face |
 | Otros adaptadores LoRA sobre el mismo base | No disponible | No disponible | No disponible | Variable segun autor | No disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa cuantitativa con alternativas de la misma categoria.
@@ -84,8 +84,8 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MinaMila/Gemma4-E4B-self
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-E4B-it
+- Modelo en Hugging Face: https://huggingface.co/MinaMila/Gemma4-E4B-self
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-E4B-it
 - Articulo citado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://huggingface.co/docs/peft
 - Calculadora de impacto ambiental citada en la model card: https://mlco2.github.io/impact

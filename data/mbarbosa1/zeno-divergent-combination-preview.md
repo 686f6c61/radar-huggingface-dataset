@@ -101,7 +101,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/mbarbosa1/zeno-divergent-combination-preview
+- Hugging Face (modelo): https://huggingface.co/mbarbosa1/zeno-divergent-combination-preview
 - Repositorio principal e historial de versiones: https://huggingface.co/mbarbosa1/zeno-divergent-v1
 - Sitio de investigacion: https://zenodivergent.dev
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a foros de soporte tecnico de Windows y Microsoft y no guardan relacion con este artefacto.

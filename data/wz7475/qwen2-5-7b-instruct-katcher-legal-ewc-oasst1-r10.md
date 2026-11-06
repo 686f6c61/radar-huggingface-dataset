@@ -4,9 +4,9 @@
 
 ## Resumen
 
-Se trata de un repositorio publicado en HuggingFace por el usuario wz7475 cuyo identificador sugiere un ajuste fino del modelo base Qwen2.5-7B-Instruct orientado al dominio juridico ("legal"), aplicando alguna variante de la tecnica de consolidacion de pesos elasticos EWC ("ewc"), empleando el conjunto de datos OASST1 y un esquema de bajo rango ("r10", presumiblemente LoRA con rango 10). El tamano del repositorio, 0.3 GB, es coherente con la distribucion de un adaptador de bajo rango mas que con pesos completos del modelo base, cuyo peso en bf16 se situaria en torno a los 15 GB. Debe subrayarse que esta interpretacion se deriva unicamente del nombre del modelo y no esta confirmada por el autor.
+Se trata de un repositorio publicado en Hugging Face por el usuario wz7475 cuyo identificador sugiere un ajuste fino del modelo base Qwen2.5-7B-Instruct orientado al dominio juridico ("legal"), aplicando alguna variante de la tecnica de consolidacion de pesos elasticos EWC ("ewc"), empleando el conjunto de datos OASST1 y un esquema de bajo rango ("r10", presumiblemente LoRA con rango 10). El tamano del repositorio, 0.3 GB, es coherente con la distribucion de un adaptador de bajo rango mas que con pesos completos del modelo base, cuyo peso en bf16 se situaria en torno a los 15 GB. Debe subrayarse que esta interpretacion se deriva unicamente del nombre del modelo y no esta confirmada por el autor.
 
-La model card publicada es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen sin rellenar con el marcador "[More Information Needed]". El repositorio no registra descargas ni "likes", por lo que se trata de un artefacto practicamente sin uso ni validacion por parte de la comunidad.
+La model card publicada es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen sin rellenar con el marcador "[More Information Needed]". El repositorio no registra descargas ni "likes", por lo que se trata de un artefacto practicamente sin uso ni validacion por parte de la comunidad.
 
 Por todo ello, esta ficha solo puede describir con certeza los metadatos basicos del repositorio y las caracteristicas conocidas del modelo base Qwen2.5-7B-Instruct, marcando explicitamente como "no disponible" cualquier dato especifico del ajuste fino. Cualquier evaluacion de idoneidad para produccion deberia considerarse provisional hasta que el autor publique documentacion.
 
@@ -92,7 +92,7 @@ La comparacion cuantitativa con alternativas no es posible con los datos disponi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-ewc-oasst1-r10
+- Repositorio en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-ewc-oasst1-r10
 - Referencia citada en los tags (estimacion de emisiones de carbono, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 

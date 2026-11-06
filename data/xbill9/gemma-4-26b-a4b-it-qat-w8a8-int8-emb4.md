@@ -104,7 +104,7 @@ No se dispone de informacion sobre modelos comparables de otros autores, ni de d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-w8a8-int8-emb4
+- Repositorio Hugging Face: https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-w8a8-int8-emb4
 - Modelo base (Google): https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-unquantized
 - Build hermana con embeddings en bf16: https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-w8a8-int8
 - Origen de las tablas int4: https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-q4_0-w4a16-ct-text-emb4

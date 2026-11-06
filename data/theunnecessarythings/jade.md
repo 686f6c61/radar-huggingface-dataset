@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theunnecessarythings/JADE
+- Modelo en Hugging Face: https://huggingface.co/theunnecessarythings/JADE
 - Dataset de entrenamiento: https://huggingface.co/datasets/theunnecessarythings/JADE-Data
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Suite de evaluación Decision Index: https://github.com/apolinario/decision-index

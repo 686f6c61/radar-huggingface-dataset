@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dexter-3b-local-pm es un modelo de lenguaje de aproximadamente 3.085 millones de parametros (3,09 B) publicado en HuggingFace por el usuario sumitv461. Segun las etiquetas del repositorio, los pesos estan en formato safetensors y la arquitectura declarada corresponde a la familia qwen2, lo que situa el modelo en la estirpe de transformers decoder-only densos de Qwen. El repositorio ocupa 6,2 GB, un tamano coherente con pesos en precision de 16 bits (3,09 B x 2 bytes ~ 6,2 GB), es decir, sin cuantizacion y sin versiones GGUF publicadas.
+dexter-3b-local-pm es un modelo de lenguaje de aproximadamente 3.085 millones de parametros (3,09 B) publicado en Hugging Face por el usuario sumitv461. Segun las etiquetas del repositorio, los pesos estan en formato safetensors y la arquitectura declarada corresponde a la familia qwen2, lo que situa el modelo en la estirpe de transformers decoder-only densos de Qwen. El repositorio ocupa 6,2 GB, un tamano coherente con pesos en precision de 16 bits (3,09 B x 2 bytes ~ 6,2 GB), es decir, sin cuantizacion y sin versiones GGUF publicadas.
 
 El modelo no incluye model card con informacion sustantiva: no se declara licencia, idiomas soportados, pipeline de inferencia, composicion del dataset de entrenamiento ni proceso de alineacion. Tampoco hay resultados de benchmarks publicados. Con 10 descargas y 0 likes en el momento de redactar esta ficha, se trata de un artefacto sin validacion por parte de la comunidad ni trazas de uso en produccion.
 
@@ -30,7 +30,7 @@ Su relevancia actual es limitada y de caracter exploratorio: puede resultar de i
 
 La unica informacion tecnica disponible es la etiqueta `qwen2`, que apunta a la arquitectura Qwen2: un transformer decoder-only denso con normalizacion RMSNorm, activacion SwiGLU, sesgo de atencion (attention bias) en las proyecciones Q/K/V y embeddings de consulta y clave agrupados (GQA). El numero de parametros (3,09 B) es consistente con un modelo de esa familia en tamano ~3B, pero no se puede confirmar el numero de capas, dimensiones ocultas, numero de cabezas de atencion ni vocabulario a partir de la informacion proporcionada.
 
-No hay ningun dato sobre el entrenamiento: se desconoce el numero de tokens utilizados, la composicion del dataset, si hubo preentrenamiento adicional, fine-tuning supervisado, RLHF, DPO u otra tecnica de alineacion. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento extendido. El nombre del repositorio ("dexter-3b-local-pm") y el hecho de que el autor sea un usuario individual sugieren un fine-tune derivado de un modelo base Qwen2, pero esto no esta confirmado en la ficha de HuggingFace.
+No hay ningun dato sobre el entrenamiento: se desconoce el numero de tokens utilizados, la composicion del dataset, si hubo preentrenamiento adicional, fine-tuning supervisado, RLHF, DPO u otra tecnica de alineacion. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento extendido. El nombre del repositorio ("dexter-3b-local-pm") y el hecho de que el autor sea un usuario individual sugieren un fine-tune derivado de un modelo base Qwen2, pero esto no esta confirmado en la ficha de Hugging Face.
 
 ## Capacidades
 
@@ -83,7 +83,7 @@ Estimaciones calculadas a partir del numero de parametros (3,09 B) y del tamano 
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos alternativos proceden de la documentacion publica de sus respectivos desarrolladores; los del modelo evaluado, de los metadatos de HuggingFace. No hay datos de rendimiento comparables para dexter-3b-local-pm.
+Los datos de los modelos alternativos proceden de la documentacion publica de sus respectivos desarrolladores; los del modelo evaluado, de los metadatos de Hugging Face. No hay datos de rendimiento comparables para dexter-3b-local-pm.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
@@ -111,5 +111,5 @@ La diferencia principal no esta en el tamano, sino en el soporte: los tres alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sumitv461/dexter-3b-local-pm
+- Hugging Face: https://huggingface.co/sumitv461/dexter-3b-local-pm
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos o demos) en la busqueda web realizada. Los resultados devueltos correspondian a paginas de soporte de YouTube TV y a foros sin relacion con el modelo.

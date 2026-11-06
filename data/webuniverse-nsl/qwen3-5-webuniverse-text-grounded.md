@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-WebUniverse-Text-grounded es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-35B-A3B, publicado por el usuario WebUniverse-NSL en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text orientado a tareas de desarrollo web, generacion de codigo y flujos de agentes, segun las etiquetas declaradas en el repositorio (code, agents, web-development, multimodal, conversational). El modelo cuenta con 35.107.181.936 parametros totales segun los pesos en safetensors y un tamano de repositorio de 70,2 GB, lo que es coherente con pesos almacenados en precision de 16 bits.
+Qwen3.5-WebUniverse-Text-grounded es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-35B-A3B, publicado por el usuario WebUniverse-NSL en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text orientado a tareas de desarrollo web, generacion de codigo y flujos de agentes, segun las etiquetas declaradas en el repositorio (code, agents, web-development, multimodal, conversational). El modelo cuenta con 35.107.181.936 parametros totales segun los pesos en safetensors y un tamano de repositorio de 70,2 GB, lo que es coherente con pesos almacenados en precision de 16 bits.
 
 El modelo emplea una arquitectura etiquetada como qwen3_5_moe, es decir, una mezcla de expertos (MoE) heredada de su modelo base, cuya nomenclatura "35B-A3B" sugiere 35.000 millones de parametros totales y aproximadamente 3.000 millones de parametros activos por token. Esta configuracion permite un coste computacional por token propio de un modelo mucho mas pequeno, manteniendo la capacidad de representacion de un modelo de 35.000 millones de parametros, aunque con una huella de memoria correspondiente al total de parametros.
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha radica en que se trata de una publicacion reciente (
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; el repositorio solo contiene pesos en safetensors |
 | Idiomas soportados | en (ingles) |
-| Licencia | no disponible; acceso restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Licencia | no disponible; acceso restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Formato de pesos | safetensors (libreria transformers) |
 | Tamano del repositorio | 70,2 GB |
 | Modalidad | image-text-to-text (entrada de imagen y texto) |
@@ -74,8 +74,8 @@ El repositorio no incluye tabla de resultados para MMLU, HumanEval, GSM8K, MMMU,
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| Qwen3.5-WebUniverse-Text-grounded | 35,1 B | ~3 B (inferido) | no disponible | no disponible | Gated en HuggingFace | Sin datos publicos |
-| Qwen/Qwen3.5-35B-A3B (modelo base) | 35 B (aprox.) | ~3 B (inferido) | no disponible | no disponible en esta ficha | Publico en HuggingFace | Sin datos en la informacion disponible |
+| Qwen3.5-WebUniverse-Text-grounded | 35,1 B | ~3 B (inferido) | no disponible | no disponible | Gated en Hugging Face | Sin datos publicos |
+| Qwen/Qwen3.5-35B-A3B (modelo base) | 35 B (aprox.) | ~3 B (inferido) | no disponible | no disponible en esta ficha | Publico en Hugging Face | Sin datos en la informacion disponible |
 | Otros fine-tunes de Qwen3.5-35B-A3B | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables de benchmarks ni de especificaciones completas de alternativas en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa rigurosa. Se recomienda consultar la model card del modelo base y de otras variantes de la familia Qwen para obtener cifras contrastadas.
@@ -87,7 +87,7 @@ No se dispone de datos verificables de benchmarks ni de especificaciones complet
 - Sesgos: al no documentarse el dataset de ajuste (webcraft-NSL/WebUniverse-Mix) ni su procedencia, no es posible evaluar sesgos potenciales de genero, raza, cultura o idioma.
 - Riesgo de alucinacion: no cuantificado. Como todo modelo generativo ajustado, puede producir codigo, referencias o descripciones inexactas, especialmente en tareas de grounding visual.
 - Limitacion idiomatica: el modelo solo declara soporte para ingles. Su uso en castellano u otros idiomas no esta garantizado y podria degradar la calidad de las respuestas.
-- Licencia no disponible: al no especificarse licencia, no puede confirmarse el uso comercial. Ademas, el acceso esta restringido (gated), lo que exige aceptar condiciones en HuggingFace y puede imponer restricciones adicionales derivadas del modelo base.
+- Licencia no disponible: al no especificarse licencia, no puede confirmarse el uso comercial. Ademas, el acceso esta restringido (gated), lo que exige aceptar condiciones en Hugging Face y puede imponer restricciones adicionales derivadas del modelo base.
 - Riesgo de sobreajuste al dominio web: al ser un fine-tune especializado, su comportamiento fuera del ambito de desarrollo web, codigo y agente podria ser inferior al del modelo base.
 - Estado del repositorio: cero descargas y cero likes en el momento de la consulta, sin evidencia de validacion por parte de la comunidad ni de mantenimiento posterior.
 - Fecha de publicacion futura respecto al conocimiento habitual disponible: los metadatos indican creacion en octubre de 2026, lo que implica que no existen analisis independientes previos.
@@ -95,7 +95,7 @@ No se dispone de datos verificables de benchmarks ni de especificaciones complet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WebUniverse-NSL/Qwen3.5-WebUniverse-Text-grounded
+- Modelo en Hugging Face: https://huggingface.co/WebUniverse-NSL/Qwen3.5-WebUniverse-Text-grounded
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Dataset de ajuste (segun etiquetas): https://huggingface.co/datasets/webcraft-NSL/WebUniverse-Mix
 - Paper, blog o repositorio adicional: no disponibles en la informacion proporcionada.

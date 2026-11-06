@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "TeamIDE/Qwen3.6-35B-A3B-Pantheon-TT",
+  "slug": "teamide-qwen3-6-35b-a3b-pantheon-tt",
+  "author": "TeamIDE",
+  "url": "https://huggingface.co/TeamIDE/Qwen3.6-35B-A3B-Pantheon-TT",
+  "created_at": "2026-11-03T15:04:46.000Z",
+  "updated_at": "2026-11-03T18:08:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "pantheon",
+    "pantheon-local",
+    "tenstorrent",
+    "blackhole",
+    "p150",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 41,
+  "trending_score": 0,
+  "parameters": 1254528,
+  "parameters_human": "1.3M",
+  "storage_bytes": 29557315632,
+  "storage_human": "29.6 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TeamIDE/Qwen3.6-35B-A3B-Pantheon-TT · Hugging Face",
+      "url": "https://huggingface.co/TeamIDE/Qwen3.6-35B-A3B-Pantheon-TT",
+      "snippet": "Qwen3.6-35B-A3B — Pantheon Tenstorrent build (Q8_0 source) Qwen3.6-35B-A3B — Pantheon Tenstorrent build (Q8_0 source) The files Pantheon Local installs for Tenstorrent Blackhole p150 boxes (one card). They are for Pantheon only: the .fttw files are Pantheon/Foundry's card tile format, not GGUF."
+    },
+    {
+      "title": "TeamIDE/Qwen3.6-35B-A3B-Pantheon-K80 · Hugging Face",
+      "url": "https://huggingface.co/TeamIDE/Qwen3.6-35B-A3B-Pantheon-K80",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

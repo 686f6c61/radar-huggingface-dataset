@@ -81,7 +81,7 @@ Modelos de difusión latente, 160 volúmenes generados frente a 40 pacientes ret
 
 | Modelo | Parámetros | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este repositorio (v3.1 / v3.1_ldm) | 21,0 M + 49,3 M | RM cerebral 3D, difusión latente | CC BY-SA 4.0 | HuggingFace, pesos safetensors |
+| Este repositorio (v3.1 / v3.1_ldm) | 21,0 M + 49,3 M | RM cerebral 3D, difusión latente | CC BY-SA 4.0 | Hugging Face, pesos safetensors |
 | Alternativas comparables de difusión latente 3D en imagen médica | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de modelos comparables con los que establecer una comparación cuantitativa fiable.
@@ -99,7 +99,7 @@ No se dispone en la información proporcionada de modelos comparables con los qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aicentreflip/tutorials-brain-mri-latent-diffusion
+- Hugging Face: https://huggingface.co/aicentreflip/tutorials-brain-mri-latent-diffusion
 - Repositorio FLIP: https://github.com/londonaicentre/FLIP
 - Referencia arXiv 1904.00625: https://arxiv.org/abs/1904.00625
 - Referencia arXiv 1902.09063: https://arxiv.org/abs/1902.09063

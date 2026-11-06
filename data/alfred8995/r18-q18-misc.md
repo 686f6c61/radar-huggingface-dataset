@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alfred8995/r18-q18-misc` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. El repositorio contiene 2.018.511.234 parametros en formato safetensors (aproximadamente 2.000 millones) y ocupa 44,2 GB, un tamano desproporcionado para el numero de parametros, lo que sugiere pesos en precision alta (posiblemente fp32 o varias copias de los mismos pesos en distintos formatos). El tag `sn38-nanochrono` no corresponde a ninguna familia de modelos conocida y no aparece documentacion publica que lo explique.
+`alfred8995/r18-q18-misc` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. El repositorio contiene 2.018.511.234 parametros en formato safetensors (aproximadamente 2.000 millones) y ocupa 44,2 GB, un tamano desproporcionado para el numero de parametros, lo que sugiere pesos en precision alta (posiblemente fp32 o varias copias de los mismos pesos en distintos formatos). El tag `sn38-nanochrono` no corresponde a ninguna familia de modelos conocida y no aparece documentacion publica que lo explique.
 
-La informacion disponible es muy limitada: no hay model card, no se especifican idiomas, pipeline, arquitectura, longitud de contexto ni datos de entrenamiento. El acceso es restringido (gated), lo que obliga a aceptar condiciones en HuggingFace antes de descargar los pesos. Con 28 descargas y 0 likes desde su creacion el 30 de octubre de 2026, se trata de un modelo practicamente sin adopcion ni validacion por parte de la comunidad.
+La informacion disponible es muy limitada: no hay model card, no se especifican idiomas, pipeline, arquitectura, longitud de contexto ni datos de entrenamiento. El acceso es restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de descargar los pesos. Con 28 descargas y 0 likes desde su creacion el 30 de octubre de 2026, se trata de un modelo practicamente sin adopcion ni validacion por parte de la comunidad.
 
 Por tanto, esta ficha debe leerse como una evaluacion de lo que se puede verificar objetivamente (parametros, licencia, formato y disponibilidad), no como una guia de uso en produccion. Cualquier dato sobre capacidades, rendimiento o entrenamiento se marca como no disponible.
 
@@ -92,5 +92,5 @@ La comparativa es solo orientativa por escala: los tres modelos de referencia cu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-q18-misc
+- Hugging Face: https://huggingface.co/alfred8995/r18-q18-misc
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

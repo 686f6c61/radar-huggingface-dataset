@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| napoliAI-7B Q4_K_M | 7,6 B | 32.768 (heredado) | napolitano, italiano | Apache 2.0 | GGUF en HuggingFace, 85 descargas |
+| napoliAI-7B Q4_K_M | 7,6 B | 32.768 (heredado) | napolitano, italiano | Apache 2.0 | GGUF en Hugging Face, 85 descargas |
 | Qwen2.5-7B-Instruct (base) | 7,6 B | 32.768 | multilingüe (29+ idiomas) | Apache 2.0 | safetensors y GGUF, ampliamente desplegado |
 | Qwen2.5-7B-Instruct GGUF (Q4_K_M) | 7,6 B | 32.768 | multilingüe | Apache 2.0 | múltiples repos comunitarios |
 | Modelos dialectales italianos (p. ej. ajustes de Qwen/Llama para dialectos) | variable | variable | italiano y dialectos | variable | no disponible de forma consolidada |
@@ -91,7 +91,7 @@ La comparación directa con otros ajustes dialectales italianos no está disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sbortetto/napoliAI-7B-Q4_K_M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/sbortetto/napoliAI-7B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Qwen2.5-7B-Instruct original: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Unsloth: https://github.com/unslothai/unsloth

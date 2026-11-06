@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emergentorder/Qwen3.6-35B-A3B-Mercor-Q8_0-GGUF
+- Modelo en Hugging Face: https://huggingface.co/emergentorder/Qwen3.6-35B-A3B-Mercor-Q8_0-GGUF
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Modelo Mercor original: https://huggingface.co/mercor/Qwen3.6-35B-A3B-Mercor
 - Blog de Mercor sobre SkyRL: https://www.mercor.com/blog/training-frontier-knowledge-work-agents-a-397b-rl-training-guide-with-skyrl

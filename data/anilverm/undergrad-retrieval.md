@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anilverm/undergrad-retrieval` es un repositorio de HuggingFace publicado por el usuario anilverm que contiene una implementación propia y minimalista de la arquitectura Blip orientada a tareas de retrieval (recuperación multimodal texto-imagen). El propio autor lo describe como una variante "nano" pensada como punto de partida reproducible, no como un modelo entrenado ni como un release listo para producción. La model card es explícita: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un checkpoint con benchmarks.
+`anilverm/undergrad-retrieval` es un repositorio de Hugging Face publicado por el usuario anilverm que contiene una implementación propia y minimalista de la arquitectura Blip orientada a tareas de retrieval (recuperación multimodal texto-imagen). El propio autor lo describe como una variante "nano" pensada como punto de partida reproducible, no como un modelo entrenado ni como un release listo para producción. La model card es explícita: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un checkpoint con benchmarks.
 
 El dato técnico más relevante es su escala: el recuento de parámetros reportado en el archivo safetensors es de 24.832 parámetros, una cifra insignificante frente a cualquier modelo de visión-lenguaje operativo. Esto confirma que lo publicado son capas de inicialización (probablemente el módulo de fusión o la cabeza de retrieval) y no el encoder de texto e imagen completo de Blip. El tamaño del repositorio es de 0,0 GB.
 
@@ -70,9 +70,9 @@ La comparación directa no es significativa porque este repositorio no contiene 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anilverm/undergrad-retrieval | 24.832 | no disponible | sin benchmarks | bsd-3-clause | HuggingFace, checkpoint de inicialización |
-| Blip (Salesforce) | cientos de millones | no disponible aquí | benchmarks publicados por el autor original | licencia propia de Salesforce | HuggingFace, pesos entrenados |
-| Blip-2 (Salesforce) | miles de millones en el componente Q-Former y LLM | no disponible aquí | benchmarks publicados por el autor original | licencia propia de Salesforce | HuggingFace, pesos entrenados |
+| anilverm/undergrad-retrieval | 24.832 | no disponible | sin benchmarks | bsd-3-clause | Hugging Face, checkpoint de inicialización |
+| Blip (Salesforce) | cientos de millones | no disponible aquí | benchmarks publicados por el autor original | licencia propia de Salesforce | Hugging Face, pesos entrenados |
+| Blip-2 (Salesforce) | miles de millones en el componente Q-Former y LLM | no disponible aquí | benchmarks publicados por el autor original | licencia propia de Salesforce | Hugging Face, pesos entrenados |
 | CLIP (OpenAI) | cientos de millones | 77 tokens en el encoder de texto | benchmarks publicados | licencia propia de OpenAI | distribución oficial |
 
 Las filas de Blip, Blip-2 y CLIP se ofrecen únicamente como referencia de la familia de modelos de retrieval multimodal; no son equivalentes funcionales del repositorio analizado.
@@ -86,11 +86,11 @@ Las filas de Blip, Blip-2 y CLIP se ofrecen únicamente como referencia de la fa
 - Limitaciones de contexto e idioma: no disponibles.
 - Restricciones de licencia: el código se publica bajo bsd-3-clause, una licencia permisiva que permite uso comercial, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen cuando se use con datasets externos.
 - Para producción: cualquier resultado obtenido a partir de un checkpoint entrenado futuro debe documentarse de forma separada a los valores por defecto aquí incluidos.
-- Al ser una implementación personalizada, las APIs automáticas de carga de HuggingFace no funcionan sin un adaptador explícito.
+- Al ser una implementación personalizada, las APIs automáticas de carga de Hugging Face no funcionan sin un adaptador explícito.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anilverm/undergrad-retrieval
+- Modelo en Hugging Face: https://huggingface.co/anilverm/undergrad-retrieval
 - Paper de referencia de la arquitectura Blip: https://arxiv.org/abs/2201.12086
 - Paper de referencia de Blip-2: https://arxiv.org/abs/2301.12597
 - Dataset sugerido para evaluación (Flickr30k): https://shannon.cs.illinois.edu/DenotationGraph/

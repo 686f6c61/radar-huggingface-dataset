@@ -98,10 +98,10 @@ La comparativa se limita a los datos de catalogo publicos de cada modelo; no se 
 
 | Modelo | Parametros totales | Parametros activos | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mellum2.1-12B-A2.5B-Thinking | 12,15B | aproximadamente 2,5B (segun nomenclatura) | no disponible (probable MoE por nomenclatura) | Apache 2.0 | HuggingFace, cuantizaciones GGUF |
-| DeepSeek-Coder-V2-Lite-Instruct | aproximadamente 16B | aproximadamente 2,4B | MoE | licencia propia de DeepSeek | HuggingFace |
-| Qwen3-30B-A3B | aproximadamente 30,5B | aproximadamente 3,3B | MoE | Apache 2.0 | HuggingFace |
-| Qwen3-8B | aproximadamente 8,2B | no aplica (denso) | transformer denso | Apache 2.0 | HuggingFace |
+| Mellum2.1-12B-A2.5B-Thinking | 12,15B | aproximadamente 2,5B (segun nomenclatura) | no disponible (probable MoE por nomenclatura) | Apache 2.0 | Hugging Face, cuantizaciones GGUF |
+| DeepSeek-Coder-V2-Lite-Instruct | aproximadamente 16B | aproximadamente 2,4B | MoE | licencia propia de DeepSeek | Hugging Face |
+| Qwen3-30B-A3B | aproximadamente 30,5B | aproximadamente 3,3B | MoE | Apache 2.0 | Hugging Face |
+| Qwen3-8B | aproximadamente 8,2B | no aplica (denso) | transformer denso | Apache 2.0 | Hugging Face |
 
 La ventaja principal de Mellum2.1-12B-A2.5B-Thinking frente a alternativas densas de tamano similar es el coste de inferencia reducido derivado de sus parametros activos, junto con un enfasis declarado en codigo, agentes y tool calling. Su limitacion mas evidente en la comparativa es el soporte exclusivo de ingles frente a alternativas con cobertura multilingue amplia.
 

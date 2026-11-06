@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en el ma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/merve/Qwen3.8-27B-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/merve/Qwen3.8-27B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Cuantizaciones alternativas de bartowski: https://huggingface.co/bartowski/Qwen3.8-27B-GGUF

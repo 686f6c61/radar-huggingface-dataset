@@ -2,11 +2,11 @@
 
 ## Resumen
 
-DPT-Hybrid-MiDaS es un modelo de estimacion de profundidad monocular (monocular depth estimation) basado en un transformer de prediccion densa. Fue desarrollado originalmente por Intel como parte de MiDaS v3.0 y presentado en el articulo "Vision Transformers for Dense Prediction" (Ranftl et al., 2021). El repositorio analizado, `ashwmurt/dpt-hybrid-midas`, no es un entrenamiento nuevo: es una receta ("recipe") independiente de Qualcomm AI Hub Models que empaqueta el checkpoint de HuggingFace `Intel/dpt-hybrid-midas` (~122 millones de parametros) para poder compilarlo, perfilarlo y evaluarlo en dispositivos Snapdragon reales a traves de Qualcomm AI Hub Workbench.
+DPT-Hybrid-MiDaS es un modelo de estimacion de profundidad monocular (monocular depth estimation) basado en un transformer de prediccion densa. Fue desarrollado originalmente por Intel como parte de MiDaS v3.0 y presentado en el articulo "Vision Transformers for Dense Prediction" (Ranftl et al., 2021). El repositorio analizado, `ashwmurt/dpt-hybrid-midas`, no es un entrenamiento nuevo: es una receta ("recipe") independiente de Qualcomm AI Hub Models que empaqueta el checkpoint de Hugging Face `Intel/dpt-hybrid-midas` (~122 millones de parametros) para poder compilarlo, perfilarlo y evaluarlo en dispositivos Snapdragon reales a traves de Qualcomm AI Hub Workbench.
 
 Su relevancia practica no esta en la arquitectura, que es de 2021, sino en el canal de despliegue: permite exportar un modelo de profundidad a TensorFlow Lite, ONNX Runtime o Qualcomm AI Engine Direct y ejecutarlo en hardware movil y de borde. El modelo devuelve profundidad inversa relativa (no distancia metrica en metros), con una escala y un desplazamiento globales desconocidos, lo que lo hace util como modulo de percepcion intermedio y no como sensor de distancia calibrado.
 
-El repositorio tiene 0 descargas y 0 likes y fue creado el 23 de septiembre de 2026 segun los metadatos de HuggingFace, por lo que se trata de una publicacion reciente y sin adopcion documentada. La licencia declarada es Apache-2.0.
+El repositorio tiene 0 descargas y 0 likes y fue creado el 23 de septiembre de 2026 segun los metadatos de Hugging Face, por lo que se trata de una publicacion reciente y sin adopcion documentada. La licencia declarada es Apache-2.0.
 
 ## Especificaciones tecnicas
 
@@ -20,7 +20,7 @@ El repositorio tiene 0 descargas y 0 likes y fue creado el 23 de septiembre de 2
 | Tipos de cuantizacion | no disponible (la model card no especifica tipos; el pipeline de Qualcomm AI Hub permite exportar a TFLite, ONNX Runtime y Qualcomm AI Engine Direct) |
 | Idiomas soportados | no aplicable (no procesa lenguaje natural) |
 | Licencia | apache-2.0 |
-| Formato de pesos | PyTorch (checkpoint de HuggingFace `Intel/dpt-hybrid-midas`); exportable a TFLite, ONNX y Qualcomm AI Engine Direct |
+| Formato de pesos | PyTorch (checkpoint de Hugging Face `Intel/dpt-hybrid-midas`); exportable a TFLite, ONNX y Qualcomm AI Engine Direct |
 | Pipeline declarado | depth-estimation |
 | Salida | mapa denso de profundidad inversa relativa (por pixel), hasta escala y desplazamiento globales desconocidos |
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ashwmurt/dpt-hybrid-midas (este repositorio) | ~122M | 384 x 384 | apache-2.0 | Receta en HuggingFace; requiere el CLI de Qualcomm AI Hub Models para el flujo de despliegue |
-| Intel/dpt-hybrid-midas (checkpoint original envuelto) | ~122M | 384 x 384 | apache-2.0 | Disponible en HuggingFace |
+| ashwmurt/dpt-hybrid-midas (este repositorio) | ~122M | 384 x 384 | apache-2.0 | Receta en Hugging Face; requiere el CLI de Qualcomm AI Hub Models para el flujo de despliegue |
+| Intel/dpt-hybrid-midas (checkpoint original envuelto) | ~122M | 384 x 384 | apache-2.0 | Disponible en Hugging Face |
 | Otras variantes DPT del mismo articulo (por ejemplo, la version basada en ViT-Large) | no disponible | no disponible | no disponible | no disponible |
 | MiDaS v2.1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativas mas recientes de estimacion de profundidad monocular | no disponible | no disponible | no disponible | no disponible |
@@ -89,14 +89,14 @@ Comparativa con modelos de lenguaje: no aplicable, la tarea es distinta.
 - Sesgos de dominio: el entrenamiento sobre MIX-6 (aproximadamente 1,4 millones de imagenes) condiciona el comportamiento del modelo hacia las distribuciones de esos conjuntos de datos. El rendimiento en dominios muy alejados (imagen medica, microscopia, escenas nocturnas extremas) es incierto.
 - Resolucion fija de 384 x 384 px: el detalle de profundidad en escenas con objetos finos o muy lejanos queda limitado por esa resolucion.
 - Sin capacidades de lenguaje: no procesa texto, no responde a instrucciones y no soporta tool calling ni flujos de agentes.
-- Licencia: el repositorio declara apache-2.0, lo que permite uso comercial. Conviene verificar de forma independiente la licencia del checkpoint original de Intel y la de la implementacion de referencia en `isl-org/DPT`, ya que la model card enlaza a la licencia del repositorio de transformers de HuggingFace como licencia de la implementacion original.
+- Licencia: el repositorio declara apache-2.0, lo que permite uso comercial. Conviene verificar de forma independiente la licencia del checkpoint original de Intel y la de la implementacion de referencia en `isl-org/DPT`, ya que la model card enlaza a la licencia del repositorio de transformers de Hugging Face como licencia de la implementacion original.
 - Madurez del repositorio: 0 descargas, 0 likes y una unica contribucion registrada. No hay evidencia publica de uso en produccion ni de validacion por terceros.
 - Dependencia de herramienta: el flujo de despliegue en dispositivo exige `qai-hub-models`, Python entre 3.10 y 3.14 inclusive, una cuenta de Qualcomm ID y un token de API de Qualcomm AI Hub Workbench.
 - El autor del repositorio es `ashwmurt`, no Intel ni Qualcomm; se trata de una receta de terceros que envuelve un checkpoint ajeno.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ashwmurt/dpt-hybrid-midas
+- Repositorio en Hugging Face: https://huggingface.co/ashwmurt/dpt-hybrid-midas
 - Repositorio alternativo con guion bajo: https://huggingface.co/ashwmurt/dpt_hybrid_midas
 - Arbol de ficheros del repositorio: https://huggingface.co/ashwmurt/dpt_hybrid_midas/tree/main
 - Checkpoint original: https://huggingface.co/Intel/dpt-hybrid-midas

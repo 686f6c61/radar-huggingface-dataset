@@ -4,7 +4,7 @@
 
 Mirage es un checkpoint de modelo distribuido por Cactus-Compute bajo el identificador `Cactus-Compute/mirage`. Se trata de un artefacto de entrenamiento seleccionado en el paso 1.100.000, empaquetado en un unico fichero `mirage_step_1100000.pkl` de 649.020.345 bytes (aproximadamente 619 MiB) con hash SHA-256 publicado. El repositorio ocupa 0,9 GB y contiene exclusivamente el checkpoint; los binarios del motor de inferencia se distribuyen por separado, segun indica la propia model card.
 
-La informacion publica disponible es extremadamente limitada: no se declara arquitectura, numero de parametros, longitud de contexto, idiomas, licencia ni pipeline de HuggingFace. El checkpoint se copia sin modificaciones desde el repositorio `Cactus-Compute/mirage-research` en la revision `ec612a9228e6b68a42d7493461505610f1bc79cf`, donde reside el historial completo de entrenamiento. El formato `.pkl` (pickle de Python) sugiere un volcado de pesos y estado de optimizador propio de un framework de investigacion, no un formato de distribucion estandar como safetensors o GGUF.
+La informacion publica disponible es extremadamente limitada: no se declara arquitectura, numero de parametros, longitud de contexto, idiomas, licencia ni pipeline de Hugging Face. El checkpoint se copia sin modificaciones desde el repositorio `Cactus-Compute/mirage-research` en la revision `ec612a9228e6b68a42d7493461505610f1bc79cf`, donde reside el historial completo de entrenamiento. El formato `.pkl` (pickle de Python) sugiere un volcado de pesos y estado de optimizador propio de un framework de investigacion, no un formato de distribucion estandar como safetensors o GGUF.
 
 Por tanto, esta ficha documenta lo que se puede verificar y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluacion de capacidades, rendimiento o idoneidad para produccion requeriria inspeccionar el checkpoint y el repositorio de investigacion asociado.
 
@@ -91,7 +91,7 @@ No disponible. No se puede establecer una comparativa rigurosa sin conocer el nu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Cactus-Compute/mirage
+- Repositorio Hugging Face: https://huggingface.co/Cactus-Compute/mirage
 - Repositorio de investigacion con el historial de checkpoints: https://huggingface.co/Cactus-Compute/mirage-research
 - Revision de origen del checkpoint: https://huggingface.co/Cactus-Compute/mirage-research/blob/ec612a9228e6b68a42d7493461505610f1bc79cf/mirage/mirage_step_1100000.pkl
-- Organizacion en HuggingFace: https://huggingface.co/Cactus-Compute
+- Organizacion en Hugging Face: https://huggingface.co/Cactus-Compute

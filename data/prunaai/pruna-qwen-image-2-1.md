@@ -17,7 +17,7 @@ Es relevante ahora porque ataca dos cuellos de botella prácticos de la generaci
 | Parametros activos | no aplica (no se describe una arquitectura MoE) |
 | Longitud de contexto | no disponible (no se especifica la longitud máxima del prompt de texto) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (la ficha de HuggingFace marca los idiomas como no disponibles; el soporte multilingüe dependería del codificador de texto del modelo base) |
+| Idiomas soportados | no disponible (la ficha de Hugging Face marca los idiomas como no disponibles; el soporte multilingüe dependería del codificador de texto del modelo base) |
 | Licencia | qwen-research (campo `license: other`, `license_name: qwen-research`) |
 | Formato de pesos | no disponible de forma explícita; el repositorio se distribuye para la librería `diffusers` y ocupa 2,4 GB |
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto / prompt | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pruna-Qwen-Image-2.1 | no disponible | no disponible | sin benchmarks publicados en la información disponible | qwen-research | HuggingFace (2 descargas, 13 likes) |
-| Qwen/Qwen-Image-2.1 (base) | no disponible | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace |
+| Pruna-Qwen-Image-2.1 | no disponible | no disponible | sin benchmarks publicados en la información disponible | qwen-research | Hugging Face (2 descargas, 13 likes) |
+| Qwen/Qwen-Image-2.1 (base) | no disponible | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face |
 | Otros modelos destilados de pocos pasos para texto a imagen | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables de otras alternativas comparables en la información proporcionada, por lo que no se puede establecer una comparación cuantitativa fiable.
@@ -78,7 +78,7 @@ No se dispone de datos verificables de otras alternativas comparables en la info
 
 - Sesgos conocidos: no disponible. No se documenta ningún análisis de sesgo demográfico, cultural o de estilo en la información proporcionada.
 - Riesgo de alusión: inherente a los modelos generativos de imagen, que pueden producir contenido visualmente plausible pero incorrecto o incoherente con el prompt. No se han publicado métricas de fidelidad al prompt para este adaptador.
-- Limitaciones de contexto o idioma: se desconoce la longitud máxima de prompt y los idiomas soportados; la ficha de HuggingFace marca los idiomas como no disponibles.
+- Limitaciones de contexto o idioma: se desconoce la longitud máxima de prompt y los idiomas soportados; la ficha de Hugging Face marca los idiomas como no disponibles.
 - Restricciones de licencia: la licencia es `qwen-research` (registrada como `license: other`). Por su nombre y por la política habitual de Qwen, es previsible que imponga restricciones al uso comercial, pero los términos exactos no se detallan en la información disponible y deben consultarse antes de cualquier despliegue en producción.
 - Madurez del artefacto: publicado el 23 de septiembre de 2026 y actualizado un día después, con 2 descargas registradas. Es un modelo sin rodaje en producción ni validación externa documentada.
 - Dependencia del modelo base: al tratarse de un adaptador sobre Qwen/Qwen-Image-2.1, hereda las limitaciones, la licencia del base y cualquier requisito de aceptación de términos que Qwen imponga sobre el modelo original.
@@ -87,9 +87,9 @@ No se dispone de datos verificables de otras alternativas comparables en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PrunaAI/Pruna-Qwen-Image-2.1
+- Modelo en Hugging Face: https://huggingface.co/PrunaAI/Pruna-Qwen-Image-2.1
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
-- Organización PrunaAI en HuggingFace: https://huggingface.co/PrunaAI
+- Organización PrunaAI en Hugging Face: https://huggingface.co/PrunaAI
 - Repositorio del framework Pruna: https://github.com/PrunaAI/pruna
 - Organización PrunaAI en GitHub: https://github.com/PrunaAI
 - Sitio web de Pruna AI: https://www.pruna.ai/

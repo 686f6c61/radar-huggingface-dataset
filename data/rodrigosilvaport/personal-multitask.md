@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Rodrigosilvaport/personal-multitask` es un repositorio de HuggingFace publicado el 15 de septiembre de 2026 por el usuario Rodrigosilvaport que contiene una implementación funcional de **MoCo v3** (aprendizaje autosupervisado contrastivo) orientada a **multitarea**, con una configuración declarada como "huge", atención sparse, fusión mediante cross attention, activación ReLU y normalización LayerNorm. El repositorio se presenta explícitamente como código transparente con pruebas de humo reproducibles, y su autor declara de forma deliberada que **no reclama ninguna puntuación de benchmark**.
+`Rodrigosilvaport/personal-multitask` es un repositorio de Hugging Face publicado el 15 de septiembre de 2026 por el usuario Rodrigosilvaport que contiene una implementación funcional de **MoCo v3** (aprendizaje autosupervisado contrastivo) orientada a **multitarea**, con una configuración declarada como "huge", atención sparse, fusión mediante cross attention, activación ReLU y normalización LayerNorm. El repositorio se presenta explícitamente como código transparente con pruebas de humo reproducibles, y su autor declara de forma deliberada que **no reclama ninguna puntuación de benchmark**.
 
 El elemento más importante para cualquier evaluador es que `model.safetensors` es un **checkpoint de inicialización válido para pruebas de humo**, no un modelo entrenado: la propia model card indica que estos pesos no han sido entrenados ni auditados en robustez, equidad o transferencia de dominio. El recuento real de parámetros reportado por safetensors es de **24.832** (con un tamaño de repositorio de 0,0 GB), una cifra difícil de conciliar con la escala "huge" declarada en la configuración y que no está explicada por el autor.
 
@@ -88,5 +88,5 @@ La comparación cuantitativa no es posible con los datos disponibles: el autor n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rodrigosilvaport/personal-multitask
+- Hugging Face: https://huggingface.co/Rodrigosilvaport/personal-multitask
 - La búsqueda web realizada no devolvió resultados relacionados con este modelo: los enlaces obtenidos (Zhihu, 52pojie) tratan sobre herramientas de traducción y de diseño gráfico, y no guardan relación con el repositorio. No se dispone de paper, blog, repositorio de código adicional ni demo asociados.

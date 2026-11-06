@@ -79,8 +79,8 @@ Esta comparativa es orientativa y no refleja el rendimiento real del fine-tune, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_random_b8000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_random_b8000_s0
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Repositorio GitHub de Qwen3.5 (no oficial): https://github.com/ABDtmx/Qwen3.5
 - Página de Qwen3.5 en Ollama: https://ollama.com/library/qwen3.5:4b
-- Modelo base Qwen3-4B en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B
+- Modelo base Qwen3-4B en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B

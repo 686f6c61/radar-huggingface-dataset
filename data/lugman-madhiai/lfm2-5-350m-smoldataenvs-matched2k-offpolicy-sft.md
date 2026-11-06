@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM2.5-350M-SmolDataEnvs-Matched2k-OffPolicy-SFT | 354.483.968 | no disponible | apache-2.0 | HuggingFace (0 descargas) |
-| LiquidAI/LFM2.5-350M (base) | ~350M | no disponible | apache-2.0 (segun modelo base) | HuggingFace |
-| SmolLM2-360M | ~360M | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| Qwen2.5-0.5B | ~500M | no disponible en esta ficha | apache-2.0 | HuggingFace |
+| LFM2.5-350M-SmolDataEnvs-Matched2k-OffPolicy-SFT | 354.483.968 | no disponible | apache-2.0 | Hugging Face (0 descargas) |
+| LiquidAI/LFM2.5-350M (base) | ~350M | no disponible | apache-2.0 (segun modelo base) | Hugging Face |
+| SmolLM2-360M | ~360M | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| Qwen2.5-0.5B | ~500M | no disponible en esta ficha | apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este ajuste fino concreto; la comparativa se limita a parametros y licencia.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo para este ajuste fino concreto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Matched2k-OffPolicy-SFT
+- Hugging Face: https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Matched2k-OffPolicy-SFT
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL: https://github.com/huggingface/trl

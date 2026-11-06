@@ -73,7 +73,7 @@ No disponible. No se han identificado en la informacion proporcionada otros adap
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/guillekenzo/aros-db028e8e-VelvetVesper
+- Repositorio Hugging Face: https://huggingface.co/guillekenzo/aros-db028e8e-VelvetVesper
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Modelo de inferencia recomendado en la model card: https://huggingface.co/krea/Krea-2-Turbo
 - Libreria diffusers: https://github.com/huggingface/diffusers

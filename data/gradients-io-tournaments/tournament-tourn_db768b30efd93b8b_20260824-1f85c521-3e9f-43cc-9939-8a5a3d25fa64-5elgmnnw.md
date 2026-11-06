@@ -21,7 +21,7 @@ El modelo se publicó el 24 de agosto de 2026 como parte de un torneo de entrena
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA aplicado sobre `unsloth/Meta-Llama-3.1-8B-Instruct`. La arquitectura subyacente es un transformer decoder-only con 8.000 millones de parametros, 32 capas, 32 cabezas de atencion y una ventana de contexto de 128.000 tokens. El adaptador LoRA introduce matrices de bajo rango en las capas de atencion y feed-forward, lo que permite un fine-tuning eficiente en terminos de memoria y computo. El entrenamiento se realizo mediante supervisado fine-tuning (SFT) utilizando la libreria TRL de HuggingFace, segun los tags del repositorio. No se proporciona informacion sobre el dataset utilizado, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas adicionales como RLHF o DPO. Tampoco se especifican los hiperparametros del entrenamiento (tasa de aprendizaje, epochs, rango del LoRA, etc.). La unica referencia tecnica es el uso de PEFT 0.18.1 y la integracion con el framework transformers.
+El modelo es un adaptador LoRA aplicado sobre `unsloth/Meta-Llama-3.1-8B-Instruct`. La arquitectura subyacente es un transformer decoder-only con 8.000 millones de parametros, 32 capas, 32 cabezas de atencion y una ventana de contexto de 128.000 tokens. El adaptador LoRA introduce matrices de bajo rango en las capas de atencion y feed-forward, lo que permite un fine-tuning eficiente en terminos de memoria y computo. El entrenamiento se realizo mediante supervisado fine-tuning (SFT) utilizando la libreria TRL de Hugging Face, segun los tags del repositorio. No se proporciona informacion sobre el dataset utilizado, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas adicionales como RLHF o DPO. Tampoco se especifican los hiperparametros del entrenamiento (tasa de aprendizaje, epochs, rango del LoRA, etc.). La unica referencia tecnica es el uso de PEFT 0.18.1 y la integracion con el framework transformers.
 
 ## Capacidades
 
@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adapter (LoRA sobre Llama 3.1 8B) | 8B + LoRA | 128k | no disponible | HuggingFace |
-| Meta-Llama-3.1-8B-Instruct (base) | 8B | 128k | Llama 3.1 Community License | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | 7B | 32k | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct | 7B | 128k | Apache 2.0 | HuggingFace |
+| Este adapter (LoRA sobre Llama 3.1 8B) | 8B + LoRA | 128k | no disponible | Hugging Face |
+| Meta-Llama-3.1-8B-Instruct (base) | 8B | 128k | Llama 3.1 Community License | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | 7B | 32k | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct | 7B | 128k | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a modelos de tamano similar. El adapter no introduce cambios arquitectonicos, por lo que su rendimiento dependera del fine-tuning, que no esta documentado. Frente a alternativas como Mistral o Qwen, el modelo base Llama 3.1 suele ofrecer un mejor equilibrio entre razonamiento y generacion de codigo, pero sin datos de evaluacion no se puede afirmar que este adapter supere a ninguno de ellos.
 
@@ -75,7 +75,7 @@ La comparativa se limita a modelos de tamano similar. El adapter no introduce ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-1f85c521-3e9f-43cc-9939-8a5a3d25fa64-5ELGMNNW
+- Repositorio Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-1f85c521-3e9f-43cc-9939-8a5a3d25fa64-5ELGMNNW
 - Plataforma Gradients (torneos): https://www.gradients.io/app/research/tournament
-- Otros modelos del mismo autor en HuggingFace: https://huggingface.co/gradients-io-tournaments (se puede explorar la organizacion)
+- Otros modelos del mismo autor en Hugging Face: https://huggingface.co/gradients-io-tournaments (se puede explorar la organizacion)
 - Referencia al paper sobre estimacion de emisiones de carbono (citado en la model card): https://arxiv.org/abs/1910.09700

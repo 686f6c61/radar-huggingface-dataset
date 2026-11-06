@@ -99,7 +99,7 @@ No se dispone de benchmarks públicos para v1 y v2 en la información consultada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BlackdromeAILabs/lemma-v3-policy
+- Hugging Face: https://huggingface.co/BlackdromeAILabs/lemma-v3-policy
 - Repositorio de código y entorno de ejecución: https://github.com/blackdromeai-labs/LEMMA
 - Dataset del benchmark: https://huggingface.co/datasets/BlackdromeAILabs/lemma-long-horizon-rewrite-benchmark
 - Paper: "LEMMA: Learned Guidance for Evidence-Carrying Long-Horizon Symbolic Rewriting" (se cita el título en la model card; no se ha proporcionado el enlace en la información disponible)

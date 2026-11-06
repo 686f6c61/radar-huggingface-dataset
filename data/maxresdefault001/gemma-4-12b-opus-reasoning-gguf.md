@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma 4 12B Opus-reasoning es un ajuste fino (fine-tune) por LoRA del modelo Gemma 4 12B de Google, publicado por el usuario MaxResDefault001 en HuggingFace. El modelo parte del checkpoint instructivo oficial (`google/gemma-4-12B-it`) y se entrena sobre aproximadamente 8.600 conversaciones de razonamiento con el estilo de Claude Opus 4.6/4.7, con el objetivo de imitar los patrones de razonamiento extendido (thinking) de dichos modelos en un tamaño que quepa en GPUs de consumo.
+Gemma 4 12B Opus-reasoning es un ajuste fino (fine-tune) por LoRA del modelo Gemma 4 12B de Google, publicado por el usuario MaxResDefault001 en Hugging Face. El modelo parte del checkpoint instructivo oficial (`google/gemma-4-12B-it`) y se entrena sobre aproximadamente 8.600 conversaciones de razonamiento con el estilo de Claude Opus 4.6/4.7, con el objetivo de imitar los patrones de razonamiento extendido (thinking) de dichos modelos en un tamaño que quepa en GPUs de consumo.
 
 El autor distribuye dos variantes: una de solo fine-tune y otra "abliterated" (eliminación de direcciones de rechazo mediante la herramienta Heretic), ambas en formato GGUF con cuantizaciones Q6_K y Q4_K_M calibradas con imatrix. El modelo conserva la torre de visión del Gemma 4 original (pipeline `image-text-to-text`) y está pensado explícitamente para tarjetas de 16 GB de VRAM, como una Radeon RX 6800 XT, según reporta el autor.
 
@@ -95,7 +95,7 @@ El autor advierte que una diferencia de 2-3 puntos en la suite difícil está de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MaxResDefault001/gemma-4-12B-opus-reasoning-GGUF
+- Repositorio Hugging Face: https://huggingface.co/MaxResDefault001/gemma-4-12B-opus-reasoning-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - GGUF del modelo base (Unsloth, incluye cabeza MTP): https://huggingface.co/unsloth/gemma-4-12b-it-GGUF
 - Hermano mayor del mismo autor (26B-A4B): https://huggingface.co/MaxResDefault001/gemma-4-26B-A4B-opus-reasoning-GGUF

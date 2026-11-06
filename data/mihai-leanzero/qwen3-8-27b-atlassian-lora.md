@@ -75,9 +75,9 @@ Además, en las pruebas de validación del autor, la pérdida de validación en 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento Atlassian |
 |---|---|---|---|---|---|
-| Qwen/Qwen3.8-27B (base) | No confirmado (el nombre sugiere 27B) | No disponible | No especificada | HuggingFace | Identificadores 15 %; 0 manifiestos válidos |
-| Mihai-LeanZero/Qwen3.8-27B-Atlassian-lora (este adaptador) | Adaptador ~190 MB | 128k en pruebas | Apache 2.0 | HuggingFace | Identificadores 69 %; 14/25 manifiestos válidos |
-| Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q8-mlx (modelo fusionado) | No disponible | No disponible | Apache 2.0 | HuggingFace | Mismo rendimiento que el adaptador (fusionado) |
+| Qwen/Qwen3.8-27B (base) | No confirmado (el nombre sugiere 27B) | No disponible | No especificada | Hugging Face | Identificadores 15 %; 0 manifiestos válidos |
+| Mihai-LeanZero/Qwen3.8-27B-Atlassian-lora (este adaptador) | Adaptador ~190 MB | 128k en pruebas | Apache 2.0 | Hugging Face | Identificadores 69 %; 14/25 manifiestos válidos |
+| Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q8-mlx (modelo fusionado) | No disponible | No disponible | Apache 2.0 | Hugging Face | Mismo rendimiento que el adaptador (fusionado) |
 
 No se han encontrado otros adaptadores LoRA específicos para Atlassian en la información disponible, por lo que la comparativa se limita al modelo base y al modelo fusionado.
 

@@ -89,7 +89,7 @@ No se dispone de datos nominales de los modelos comparados. La model card mencio
 
 | Modelo | Parametros | Contexto | HellaSwag | PIQA | ARC | ArithMark-3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| ForgePlex-M2.1-10M | 9,99 M | 1.024 | 29,09% | 59,14% | 29,66% | 35,50% | Apache-2.0 | HuggingFace |
+| ForgePlex-M2.1-10M | 9,99 M | 1.024 | 29,09% | 59,14% | 29,66% | 35,50% | Apache-2.0 | Hugging Face |
 | ForgePlex-M2 | no disponible | no disponible | inferior a M2.1 (segun la model card) | inferior a M2.1 (segun la model card) | aproximadamente igual a M2.1 (segun la model card) | inferior a M2.1 (segun la model card) | no disponible | no disponible |
 | Lideres <10M citados en la grafica | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -108,8 +108,8 @@ No se dispone de datos nominales de los modelos comparados. La model card mencio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ForgeWorks/ForgePlex-M2.1-10M
-- Script de uso incluido en el repositorio: `usage.py` dentro del propio repositorio de HuggingFace
+- Modelo en Hugging Face: https://huggingface.co/ForgeWorks/ForgePlex-M2.1-10M
+- Script de uso incluido en el repositorio: `usage.py` dentro del propio repositorio de Hugging Face
 - Repositorio de codigo independiente: no disponible
 - Paper o informe tecnico: no disponible
 - Blog o nota de publicacion del autor: no disponible

@@ -82,8 +82,8 @@ Los datos de Mixtral y Phi-3.5-MoE son orientativos y no implican comparación d
 
 ## Enlaces
 
-- Repositorio de HuggingFace de la cuantización: https://huggingface.co/vincespeed/Ling-3.0-tiny-APEX-GGUF
-- Modelo original en HuggingFace: https://huggingface.co/inclusionAI/Ling-3.0-tiny
+- Repositorio de Hugging Face de la cuantización: https://huggingface.co/vincespeed/Ling-3.0-tiny-APEX-GGUF
+- Modelo original en Hugging Face: https://huggingface.co/inclusionAI/Ling-3.0-tiny
 - Framework Apex-Quant: https://github.com/localai-org/apex-quant
 - llama.cpp (motor de cuantización e inferencia): https://github.com/ggerganov/llama.cpp
 - Documentación oficial de la serie Ling: https://developer.ant-ling.com/en/docs/models/ling/

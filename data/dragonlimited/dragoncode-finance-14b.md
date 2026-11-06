@@ -74,6 +74,6 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/dragonlimited/DragonCode-Finance-14B
-- Perfil del autor en HuggingFace: https://huggingface.co/dragonlimited/models
+- Pagina del modelo en Hugging Face: https://huggingface.co/dragonlimited/DragonCode-Finance-14B
+- Perfil del autor en Hugging Face: https://huggingface.co/dragonlimited/models
 - Modelo relacionado DragonCode-150M: https://huggingface.co/dragonlimited/DragonCode-150M

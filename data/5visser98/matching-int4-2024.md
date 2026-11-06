@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`5visser98/matching-int4-2024` es un prototipo de investigación publicado en HuggingFace por el usuario 5visser98 bajo licencia MIT. Se presenta como un "Tiny Transformer" orientado a tareas de *matching*, con una implementación propia distribuida junto a su configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors. No es un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint sirve para *smoke tests* y que no se reclama ninguna puntuación de benchmark.
+`5visser98/matching-int4-2024` es un prototipo de investigación publicado en Hugging Face por el usuario 5visser98 bajo licencia MIT. Se presenta como un "Tiny Transformer" orientado a tareas de *matching*, con una implementación propia distribuida junto a su configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors. No es un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint sirve para *smoke tests* y que no se reclama ninguna puntuación de benchmark.
 
 El dato más relevante es su escala real: el archivo safetensors contiene 16.576 parámetros totales, una magnitud de tres a cuatro órdenes inferior a la de cualquier modelo de embeddings o reranker de uso común. La model card etiqueta la configuración como de escala "giant", una designación que no se corresponde con el recuento de parámetros verificado y que conviene tratar como una convención interna del script de generación de configuraciones, no como una descripción de capacidad.
 
@@ -84,5 +84,5 @@ Como referencia cualitativa, la categoría de *matching* y similitud semántica 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/5visser98/matching-int4-2024
+- Modelo en Hugging Face: https://huggingface.co/5visser98/matching-int4-2024
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web realizada. Los resultados recuperados no guardan relación con el modelo.

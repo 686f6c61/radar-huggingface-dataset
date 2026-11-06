@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mark-Engineer-V3-1.5B es un modelo publicado por el usuario miceworks en HuggingFace bajo el identificador `miceworks/Mark-Engineer-V3-1.5B`. Se trata de una **base arquitectónica** de tipo Mixture of Experts (MoE) con arquitectura `deepseek2`, 1.520.496.960 parámetros físicos totales y 405.729.600 parámetros activos por token. El autor indica explícitamente en la model card que el modelo está **sin entrenar** ("Architectural Base / Untrained / Weight Initialization via He/Xavier + Hadamard Fusion"), es decir, los pesos corresponden a una inicialización, no a un proceso de preentrenamiento con datos.
+Mark-Engineer-V3-1.5B es un modelo publicado por el usuario miceworks en Hugging Face bajo el identificador `miceworks/Mark-Engineer-V3-1.5B`. Se trata de una **base arquitectónica** de tipo Mixture of Experts (MoE) con arquitectura `deepseek2`, 1.520.496.960 parámetros físicos totales y 405.729.600 parámetros activos por token. El autor indica explícitamente en la model card que el modelo está **sin entrenar** ("Architectural Base / Untrained / Weight Initialization via He/Xavier + Hadamard Fusion"), es decir, los pesos corresponden a una inicialización, no a un proceso de preentrenamiento con datos.
 
 El modelo emplea Multi-Head Latent Attention (MLA) con `q_lora_rank=512` y `kv_lora_rank=256`, 18 capas transformer, dimensión oculta de 1280, 20 cabezas de atención de query, 32 expertos enrutados más 2 compartidos, con 4 expertos activos por token y tamaño intermedio MoE de 576. La ventana de contexto declarada es de 32768 tokens y el vocabulario de 32032 entradas.
 
@@ -89,5 +89,5 @@ Nota: los datos de DeepSeek-V2-Lite y Qwen1.5-MoE-A2.7B son referencias externas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/miceworks/Mark-Engineer-V3-1.5B
+- Hugging Face: https://huggingface.co/miceworks/Mark-Engineer-V3-1.5B
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

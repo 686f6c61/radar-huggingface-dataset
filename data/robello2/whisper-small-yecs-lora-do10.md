@@ -18,7 +18,7 @@ El modelo se distribuye con licencia NOODL-1.0, heredada de los terminos del cor
 | Longitud de contexto | no disponible (ventana de audio de 30 s propia de Whisper) |
 | Tipos de cuantizacion | no disponible (pesos publicados en safetensors; compatible con cuantizacion posterior via herramientas externas) |
 | Idiomas soportados | yoruba (yo), ingles (en) |
-| Licencia | NOODL-1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | NOODL-1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -77,10 +77,10 @@ Protocolo de puntuacion: NFC, puntuacion eliminada, diacriticos conservados, con
 
 | Modelo | Parametros | Idiomas | Contexto de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-small-yecs-lora-do10 | 241,7 M | yo, en (code-switching) | 30 s (Whisper) | NOODL-1.0 | HuggingFace |
-| openai/whisper-small | 241,7 M | multilingue (99 idiomas) | 30 s | Apache 2.0 | HuggingFace, ampliamente integrado |
-| openai/whisper-medium | 769 M | multilingue | 30 s | Apache 2.0 | HuggingFace |
-| whisper-large-v3 | 1.550 M | multilingue | 30 s | Apache 2.0 | HuggingFace |
+| whisper-small-yecs-lora-do10 | 241,7 M | yo, en (code-switching) | 30 s (Whisper) | NOODL-1.0 | Hugging Face |
+| openai/whisper-small | 241,7 M | multilingue (99 idiomas) | 30 s | Apache 2.0 | Hugging Face, ampliamente integrado |
+| openai/whisper-medium | 769 M | multilingue | 30 s | Apache 2.0 | Hugging Face |
+| whisper-large-v3 | 1.550 M | multilingue | 30 s | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a la familia Whisper porque no se dispone de informacion sobre otros ajustes especificos de code-switching yoruba-ingles. Frente a whisper-small original, este modelo sacrifica cobertura multilingue a cambio de especializacion en el par yoruba-ingles; frente a whisper-medium y whisper-large-v3, ofrece un tamano mucho menor y una licencia mas restrictiva (NOODL-1.0 frente a Apache 2.0).
 
@@ -98,7 +98,7 @@ La comparativa se limita a la familia Whisper porque no se dispone de informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robello2/whisper-small-yecs-lora-do10
+- Modelo en Hugging Face: https://huggingface.co/robello2/whisper-small-yecs-lora-do10
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

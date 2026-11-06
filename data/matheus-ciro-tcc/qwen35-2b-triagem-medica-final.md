@@ -88,9 +88,9 @@ De los 1.609 errores, el 47 % corresponden a la confusión Psiquiatra ↔ Psicó
 
 | Modelo | Parámetros | Contexto | Métricas en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `qwen35-2b-triagem-medica-final` (este modelo) | ~2B base + 10,9M adaptadores | 1.024 tokens en el ejemplo de uso | Accuracy 91,14 %; F1 macro 0,898 (test de 18.166, 9 clases) | No disponible | HuggingFace |
-| `qwen35-2b-triagem-medica-piloto` (mismo autor) | Mismo base, adaptadores distintos | No disponible | No disponible en la información proporcionada; test de 500 ejemplos y 10 clases, no comparable con el final | No disponible | HuggingFace |
-| `Qwen/Qwen3.5-2B` (modelo base) | ~2B | No disponible | Sin ajuste para la tarea; no se ha evaluado la línea base zero-shot en el dataset completo | No disponible | HuggingFace |
+| `qwen35-2b-triagem-medica-final` (este modelo) | ~2B base + 10,9M adaptadores | 1.024 tokens en el ejemplo de uso | Accuracy 91,14 %; F1 macro 0,898 (test de 18.166, 9 clases) | No disponible | Hugging Face |
+| `qwen35-2b-triagem-medica-piloto` (mismo autor) | Mismo base, adaptadores distintos | No disponible | No disponible en la información proporcionada; test de 500 ejemplos y 10 clases, no comparable con el final | No disponible | Hugging Face |
+| `Qwen/Qwen3.5-2B` (modelo base) | ~2B | No disponible | Sin ajuste para la tarea; no se ha evaluado la línea base zero-shot en el dataset completo | No disponible | Hugging Face |
 
 No se dispone de datos de otros modelos de triaje médico en portugués con los que establecer una comparación cuantitativa.
 
@@ -110,7 +110,7 @@ No se dispone de datos de otros modelos de triaje médico en portugués con los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matheus-ciro-tcc/qwen35-2b-triagem-medica-final
+- Modelo en Hugging Face: https://huggingface.co/matheus-ciro-tcc/qwen35-2b-triagem-medica-final
 - Carpeta de evaluación (métricas, matriz de confusión, 18.166 predicciones, informe completo): https://huggingface.co/matheus-ciro-tcc/qwen35-2b-triagem-medica-final/tree/main/avaliacao
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Modelo piloto del mismo autor: https://huggingface.co/matheus-ciro-tcc/qwen35-2b-triagem-medica-piloto

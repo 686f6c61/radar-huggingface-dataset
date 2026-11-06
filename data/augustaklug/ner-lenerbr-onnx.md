@@ -23,7 +23,7 @@ El modelo reconoce seis tipos de entidades: personas, organizaciones, lugares, e
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un BERT base cased de la familia HuggingFace, ajustado para token-classification. Fue entrenado sobre el dataset LeNER-Br, compuesto por 70 documentos de legislación y decisiones judiciales brasileñas, con 7.828 ejemplos de entrenamiento y 1.177 de validación. El entrenamiento se realizó sin RLHF ni DPO; se trata de un fine-tuning supervisado estándar.
+El modelo base es un BERT base cased de la familia Hugging Face, ajustado para token-classification. Fue entrenado sobre el dataset LeNER-Br, compuesto por 70 documentos de legislación y decisiones judiciales brasileñas, con 7.828 ejemplos de entrenamiento y 1.177 de validación. El entrenamiento se realizó sin RLHF ni DPO; se trata de un fine-tuning supervisado estándar.
 
 El repositorio `ner-lenerbr-onnx` no realiza ningún reentrenamiento. Los archivos ONNX se generaron con Optimum y ONNX Runtime a partir del checkpoint original en PyTorch, mediante tres pasos: exportación a ONNX fp32, optimización del grafo y conversión de pesos a fp16, y cuantización dinámica en int8. La única innovación destacable es la posibilidad de ejecutar el modelo en el navegador con transformers.js, gracias a las variantes cuantizadas que reducen el peso descargado a unos 110 MB.
 
@@ -84,14 +84,14 @@ Los tres modelos derivan del mismo checkpoint original, por lo que el rendimient
 - El modelo solo está entrenado para portugués brasileño; no soporta otros idiomas.
 - La entidad JURISPRUDENCIA presenta un F1 de aproximadamente 0.70, lo que puede provocar errores al identificar decisiones judiciales.
 - El autor del modelo original reporta overfitting antes de finalizar el entrenamiento, debido al tamaño reducido del dataset. Esto afecta a la generalización.
-- Ni el modelo ni el dataset LeNER-Br declaran una licencia explícita en sus fichas de HuggingFace. Es necesario verificar los términos de uso con los autores antes de cualquier uso comercial o redistribución.
+- Ni el modelo ni el dataset LeNER-Br declaran una licencia explícita en sus fichas de Hugging Face. Es necesario verificar los términos de uso con los autores antes de cualquier uso comercial o redistribución.
 - La cuantización dinámica int8 puede introducir una leve pérdida de precisión en comparación con fp32.
 - No se han evaluado sesgos. El modelo puede reflejar sesgos presentes en los documentos legales brasileños.
 - La longitud de contexto no está especificada en la documentación. Al tratarse de un modelo BERT base, es probable que sea de 512 tokens, pero este dato no está confirmado; para textos largos se recomienda segmentar.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/augustaklug/ner-lenerbr-onnx
+- Hugging Face del modelo: https://huggingface.co/augustaklug/ner-lenerbr-onnx
 - Modelo original: https://huggingface.co/pierreguillou/ner-bert-base-cased-pt-lenerbr
 - Dataset LeNER-Br: https://huggingface.co/datasets/lener_br
 - transformers.js: https://huggingface.co/docs/transformers.js

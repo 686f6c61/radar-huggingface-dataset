@@ -52,7 +52,7 @@ No hay informacion en la model card sobre composicion detallada del dataset, num
 - Ablacion de recetas de learning rate: el run usa un schedule trapezoidal con `warmdown_ratio` 0,4 y learning rates diferenciados por grupo de parametros (matriz, embedding, unembedding), por lo que sirve como celda de comparacion frente a recetas cosenoidales o de warmup tradicional.
 - Linea base (baseline) para experimentos propios: con ~0,8 mil millones de parametros y licencia Apache-2.0, puede usarse como referencia de perdida en un presupuesto de ~1e18 FLOPs antes de escalar a configuraciones mayores.
 - Ajuste fino de bajo coste en un dominio concreto: el modelo completo cabe en una GPU de consumo, por lo que es viable hacer fine-tuning sobre un corpus especializado para tareas de modelado de lenguaje o clasificacion con cabecera propia.
-- Prototipado de pipelines de entrenamiento con nanochat: sirve para validar scripts de carga, tokenizacion, evaluacion (`eval_tokens`, `aux_eval_tokens`) y publicacion a HuggingFace sin consumir presupuesto de computo significativo.
+- Prototipado de pipelines de entrenamiento con nanochat: sirve para validar scripts de carga, tokenizacion, evaluacion (`eval_tokens`, `aux_eval_tokens`) y publicacion a Hugging Face sin consumir presupuesto de computo significativo.
 - Investigacion educativa sobre tokenizadores BPE: el par de vocabularios (65536 / 10004) permite estudiar el efecto del tamano de vocabulario en la perdida y en el coste de embedding.
 - Generacion de texto exploratoria no critica: dado su `smooth_train_loss` de 3,70, solo es adecuado para prototipos donde la calidad del texto no sea un requisito, como pruebas de integracion de infraestructura.
 
@@ -109,7 +109,7 @@ La diferencia fundamental frente a estos tres modelos no es arquitectonica sino 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexkstern/nca_10pct_100M_computematched_adamwppt_1e18_s1_2026-09-14_14-12-05_934346-pt
+- Modelo en Hugging Face: https://huggingface.co/alexkstern/nca_10pct_100M_computematched_adamwppt_1e18_s1_2026-09-14_14-12-05_934346-pt
 - Run de Weights & Biases: https://wandb.ai/alexksternteam/cm100M_best_cells_hfpush_v0/runs/n9x8tq3z
 - Repositorio de nanochat (framework de entrenamiento): https://github.com/karpathy/nanochat
 - Paper, blog o demo adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo ni con nanochat; los enlaces recuperados corresponden a contenido no relacionado (articulos sobre portatiles) y se descartan.

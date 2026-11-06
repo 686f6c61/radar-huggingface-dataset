@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / entrada | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| perceiver-retrieval58 (este) | 33.088 | No disponible | No (inicialización) | MIT | HuggingFace, 9 descargas |
+| perceiver-retrieval58 (este) | 33.088 | No disponible | No (inicialización) | MIT | Hugging Face, 9 descargas |
 | CLIP ViT-B/32 | Aprox. 150 M | 77 tokens de texto, imagen 224x224 | Sí | MIT | Pesos y código ampliamente disponibles |
-| SigLIP base (patch16-224) | Aprox. 200 M | Texto truncado, imagen 224x224 | Sí | Apache 2.0 (según variante) | Pesos disponibles en HuggingFace |
-| BLIP base | Aprox. 220 M | Texto truncado, imagen 224x224 | Sí | BSD-3-Clause (según variante) | Pesos disponibles en HuggingFace |
+| SigLIP base (patch16-224) | Aprox. 200 M | Texto truncado, imagen 224x224 | Sí | Apache 2.0 (según variante) | Pesos disponibles en Hugging Face |
+| BLIP base | Aprox. 220 M | Texto truncado, imagen 224x224 | Sí | BSD-3-Clause (según variante) | Pesos disponibles en Hugging Face |
 
 La comparación relevante no es de rendimiento, sino de naturaleza del artefacto: los tres modelos citados son encoders contrastivos entrenados con cientos de millones de pares y con métricas publicadas en recuperación imagen-texto; este repositorio es una inicialización de juguete de tres órdenes de magnitud menos parámetros. Cualquier comparación numérica sería engañosa en ambos sentidos.
 
@@ -88,5 +88,5 @@ La comparación relevante no es de rendimiento, sino de naturaleza del artefacto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vihaanemishra/perceiver-retrieval58
+- Modelo en Hugging Face: https://huggingface.co/vihaanemishra/perceiver-retrieval58
 - No se han encontrado en la información disponible enlaces adicionales a papers, blogs, repositorios de código o demos.

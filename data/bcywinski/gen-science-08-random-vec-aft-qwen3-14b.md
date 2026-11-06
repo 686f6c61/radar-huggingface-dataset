@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `bcywinski/gen-science-08-random-vec-aft-qwen3-14b` | 14B (base) + AFT rango 1 | no disponible | Adaptadores de investigacion | MIT | HuggingFace (0 descargas) |
-| `Qwen/Qwen3-14B` | 14B | no disponible | Modelo base denso | no disponible en la informacion | HuggingFace |
-| `bcywinski/gen-science-03-aft-rows-cheese` | no disponible | no disponible | Dataset de filas AFT | no disponible | HuggingFace |
+| `bcywinski/gen-science-08-random-vec-aft-qwen3-14b` | 14B (base) + AFT rango 1 | no disponible | Adaptadores de investigacion | MIT | Hugging Face (0 descargas) |
+| `Qwen/Qwen3-14B` | 14B | no disponible | Modelo base denso | no disponible en la informacion | Hugging Face |
+| `bcywinski/gen-science-03-aft-rows-cheese` | no disponible | no disponible | Dataset de filas AFT | no disponible | Hugging Face |
 
 No se dispone de informacion suficiente para comparar rendimiento con alternativas de la misma categoria, dado que estos adaptadores no publican benchmarks ni metricas de evaluacion en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de informacion suficiente para comparar rendimiento con alternativ
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/bcywinski/gen-science-08-random-vec-aft-qwen3-14b
+- Hugging Face del modelo: https://huggingface.co/bcywinski/gen-science-08-random-vec-aft-qwen3-14b
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Dataset de filas AFT: https://huggingface.co/datasets/bcywinski/gen-science-03-aft-rows-cheese
-- Repositorio del autor en HuggingFace: https://huggingface.co/bcywinski
+- Repositorio del autor en Hugging Face: https://huggingface.co/bcywinski

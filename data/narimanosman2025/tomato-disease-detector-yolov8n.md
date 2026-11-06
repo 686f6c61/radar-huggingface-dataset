@@ -91,6 +91,6 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NarimanOsman2025/tomato-disease-detector-yolov8n
+- Modelo en Hugging Face: https://huggingface.co/NarimanOsman2025/tomato-disease-detector-yolov8n
 - Conjunto base: https://universe.roboflow.com/aryan-rajvanshi-xvuyg/crop-disease-axhjj (Crop Disease Computer Vision Model, Aryan Rajvanshi, Roboflow Universe, CC BY 4.0)
 - Conjunto suplementario: https://universe.roboflow.com/tomato-leaf-disease-brnbi/tomato-spider-mite-febhx (tomato spider mite Computer Vision Model, "tomato leaf disease", Roboflow Universe, CC BY 4.0)

@@ -6,7 +6,7 @@ Muybridge es un detector de vídeo generado por inteligencia artificial desarrol
 
 Técnicamente, Muybridge no es un transformer espaciotemporal, sino un adaptador lineal entrenado sobre el backbone congelado `google/siglip2-base-patch16-224`. El proceso consiste en muestrear tres fotogramas del vídeo según marcas temporales VS1, pasarlos por SigLIP2 para obtener embeddings y aplicar una cabeza lineal que produce una probabilidad `p ∈ [0,1]` por fotograma. La puntuación final del clip se obtiene agregando las probabilidades de los fotogramas con el percentil 90 (bag p90). Este enfoque ligero permite la inferencia en CPU y es relevante en un momento en que los generadores de vídeo como Wan2.2 o CogVideoX hacen cada vez más difícil distinguir contenido sintético del real.
 
-El repositorio contiene únicamente el head lineal en formato `.npz`, el backbone se carga desde HuggingFace. La model card incluye métricas de evaluación sobre un conjunto de retención de vídeos generados con Wan2.2, con una precisión balanceada del 98,5% en la agregación por bolsas.
+El repositorio contiene únicamente el head lineal en formato `.npz`, el backbone se carga desde Hugging Face. La model card incluye métricas de evaluación sobre un conjunto de retención de vídeos generados con Wan2.2, con una precisión balanceada del 98,5% en la agregación por bolsas.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ Métricas secundarias por fotograma individual (no el titular público):
 - En GPU, la VRAM necesaria es inferior a 1 GB para el head lineal más el backbone, por lo que cualquier GPU moderna (incluso integradas) es suficiente.
 - No se proporcionan datos de latencia o throughput, pero al procesar solo 3 frames por clip, el tiempo de inferencia es del orden de decenas de milisegundos en GPU y de cientos de milisegundos en CPU.
 - Opciones de despliegue: la model card menciona un servidor FastAPI con perfil `video`; también se puede cargar el `.npz` directamente en Python para integraciones personalizadas.
-- El repositorio no incluye el backbone, por lo que es necesario descargarlo por separado desde HuggingFace.
+- El repositorio no incluye el backbone, por lo que es necesario descargarlo por separado desde Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -89,7 +89,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DotCheck/muybridge-video-v2
+- Repositorio Hugging Face: https://huggingface.co/DotCheck/muybridge-video-v2
 - Modelo base: https://huggingface.co/google/siglip2-base-patch16-224
 - Documentación de DotCheck: https://dotcheck.ai/docs
 - API de producto: https://dotcheck.ai/check y https://dotcheck.ai/api

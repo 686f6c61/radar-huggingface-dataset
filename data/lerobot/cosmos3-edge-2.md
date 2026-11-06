@@ -76,7 +76,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lerobot/Cosmos3-Edge
+- Repositorio Hugging Face: https://huggingface.co/lerobot/Cosmos3-Edge
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/Cosmos3-Edge
 - Revisión exacta del checkpoint original: https://huggingface.co/nvidia/Cosmos3-Edge/tree/344d602b128d1bbdacb43b08d0a3626f46343e29
 - Model card original de NVIDIA: https://huggingface.co/nvidia/Cosmos3-Edge/blob/344d602b128d1bbdacb43b08d0a3626f46343e29/README.md

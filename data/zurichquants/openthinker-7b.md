@@ -84,7 +84,7 @@ OpenThinker-7B es superado por DeepSeek-R1-Distill-Qwen-7B en todos los benchmar
 
 ## Enlaces
 
-- [HuggingFace - OpenThinker-7B](https://huggingface.co/open-thoughts/OpenThinker-7B)
+- [Hugging Face - OpenThinker-7B](https://huggingface.co/open-thoughts/OpenThinker-7B)
 - [Paper - OpenThoughts: Data Recipes for Reasoning Models](https://arxiv.org/abs/2506.04178)
 - [Dataset - OpenThoughts-114k](https://huggingface.co/datasets/open-thoughts/OpenThoughts-114k)
 - [GitHub - open-thoughts](https://github.com/open-thoughts/open-thoughts)

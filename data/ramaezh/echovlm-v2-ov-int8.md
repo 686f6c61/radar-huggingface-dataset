@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Echovlm-v2-ov-int8 es un artefacto de pesos publicado en HuggingFace por el usuario ramaezh bajo licencia Apache 2.0. El identificador del repositorio sugiere un modelo de visión-lenguaje (VLM) de segunda generación ("echovlm-v2") cuantizado a enteros de 8 bits para su ejecución con OpenVINO ("ov-int8"), aunque esta inferencia se deduce únicamente del nombre y no está confirmada por documentación alguna en el repositorio.
+Echovlm-v2-ov-int8 es un artefacto de pesos publicado en Hugging Face por el usuario ramaezh bajo licencia Apache 2.0. El identificador del repositorio sugiere un modelo de visión-lenguaje (VLM) de segunda generación ("echovlm-v2") cuantizado a enteros de 8 bits para su ejecución con OpenVINO ("ov-int8"), aunque esta inferencia se deduce únicamente del nombre y no está confirmada por documentación alguna en el repositorio.
 
 La model card publicada es prácticamente vacía: se limita a declarar la licencia Apache 2.0 y no incluye descripción del modelo, arquitectura, datos de entrenamiento, idiomas, benchmarks ni instrucciones de uso. El repositorio no registra descargas ni interacciones, y no se ha publicado ningún pipeline asociado en la plataforma.
 
@@ -42,7 +42,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens procesa
 - Despliegue en entornos Intel con OpenVINO: si se confirma el formato, encajaría en pipelines de inferencia sobre CPU con aceleración AVX-512 o en iGPU Intel, un escenario habitual en estaciones de trabajo sin GPU dedicada.
 - Pruebas de integración en prototipos de visión por computador: útil para validar pipelines de captioning o VQA antes de comprometerse con un modelo mayor, asumiendo que la documentación ausente obliga a caracterizar el modelo empíricamente.
 - Investigación sobre cuantización post-entrenamiento: el artefacto puede servir como muestra de conversión INT8 para estudiar métricas de perplejidad y precisión en tareas multimodales.
-- Docencia y experimentación con HuggingFace: adecuado para ejercicios de carga de modelos cuantizados y comparación de backends (OpenVINO frente a PyTorch).
+- Docencia y experimentación con Hugging Face: adecuado para ejercicios de carga de modelos cuantizados y comparación de backends (OpenVINO frente a PyTorch).
 - No recomendado para producción: la ausencia de model card, benchmarks y especificaciones impide cualquier despliegue responsable en entornos reales sin una validación previa exhaustiva por parte del equipo integrador.
 
 ## Benchmarks y rendimiento
@@ -73,5 +73,5 @@ No disponible. No puede establecerse una comparativa fiable sin conocer el tama�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ramaezh/echovlm-v2-ov-int8
+- Repositorio en Hugging Face: https://huggingface.co/ramaezh/echovlm-v2-ov-int8
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

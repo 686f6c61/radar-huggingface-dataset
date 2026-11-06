@@ -89,10 +89,10 @@ La información proporcionada solo permite comparar dentro de la propia familia 
 
 | Modelo | Parametros | Resolucion de preentrenamiento | FLOPs | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sapiens2-1B-4K (este) | 1,607 B | 4096 × 3072 | No disponible | Sapiens2 License | HuggingFace (oficial y espejo) |
-| Sapiens2-1B | 1,462 B | No disponible en la informacion | 4,715 T | Sapiens2 License | HuggingFace |
-| Sapiens2-0.8B | 0,818 B | No disponible en la informacion | 2,592 T | Sapiens2 License | HuggingFace |
-| Sapiens2-5B | 5,071 B | No disponible en la informacion | 15,722 T | Sapiens2 License | HuggingFace |
+| Sapiens2-1B-4K (este) | 1,607 B | 4096 × 3072 | No disponible | Sapiens2 License | Hugging Face (oficial y espejo) |
+| Sapiens2-1B | 1,462 B | No disponible en la informacion | 4,715 T | Sapiens2 License | Hugging Face |
+| Sapiens2-0.8B | 0,818 B | No disponible en la informacion | 2,592 T | Sapiens2 License | Hugging Face |
+| Sapiens2-5B | 5,071 B | No disponible en la informacion | 15,722 T | Sapiens2 License | Hugging Face |
 
 ## Limitaciones y advertencias
 

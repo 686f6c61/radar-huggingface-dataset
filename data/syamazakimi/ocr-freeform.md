@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`syamazakimi/ocr-freeform` es un repositorio de HuggingFace publicado bajo licencia MIT que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado ni pesos utilizables. Segun su propia model card, se trata de un cuaderno de notas de investigacion ("research notes") y un esbozo de experimento sobre OCR de formato libre (*freeform OCR*), centrado en lo que queda por probar en lugar de en resultados obtenidos. El autor declara explicitamente que no reclama mejoras de benchmarks, ablaciones completadas, codigo liberado ni checkpoint entrenado.
+`syamazakimi/ocr-freeform` es un repositorio de Hugging Face publicado bajo licencia MIT que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado ni pesos utilizables. Segun su propia model card, se trata de un cuaderno de notas de investigacion ("research notes") y un esbozo de experimento sobre OCR de formato libre (*freeform OCR*), centrado en lo que queda por probar en lugar de en resultados obtenidos. El autor declara explicitamente que no reclama mejoras de benchmarks, ablaciones completadas, codigo liberado ni checkpoint entrenado.
 
 El repositorio incluye unicamente dos artefactos documentales: `summary.md` (nota principal) y `README.md`. La metadata de safetensors reporta 49.600 parametros totales, una cifra incompatible con cualquier modelo de lenguaje o de vision funcional y mas consistente con un tensor auxiliar o un artefacto residual de prueba. El tamano del repositorio es de 0,0 GB, no hay pipeline definido ni idiomas declarados.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | syamazakimi/ocr-freeform | 49.600 (metadata) | no disponible | sin benchmarks | MIT | notas de investigacion, sin checkpoint |
-| hiwatanabe/ocr-freeform | no disponible | no disponible | no disponible | no disponible | repositorio de HuggingFace existente; sin datos publicos en la informacion disponible |
+| hiwatanabe/ocr-freeform | no disponible | no disponible | no disponible | no disponible | repositorio de Hugging Face existente; sin datos publicos en la informacion disponible |
 
 No se dispone de datos de modelos comparables de la misma categoria en la informacion proporcionada. Las busquedas web devuelven recursos generales sobre OCR (TensorFlow, Azure Document Intelligence, rankings de modelos como DeepSeek-OCR, GLM-OCR o PaddleOCR-VL), pero sin cifras atribuibles a este repositorio ni comparaciones directas.
 
@@ -83,7 +83,7 @@ No se dispone de datos de modelos comparables de la misma categoria en la inform
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/syamazakimi/ocr-freeform
+- Repositorio en Hugging Face: https://huggingface.co/syamazakimi/ocr-freeform
 - Repositorio relacionado (mismo nombre, otro autor): https://huggingface.co/hiwatanabe/ocr-freeform
 - Optical Character Recognition using TensorFlow (GeeksforGeeks): https://www.geeksforgeeks.org/machine-learning/optical-character-recognition-using-tensorflow/
 - Read model OCR data extraction, Azure Document Intelligence: https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/read?view=doc-intel-4.0.0

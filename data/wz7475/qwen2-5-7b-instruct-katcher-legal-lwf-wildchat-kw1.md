@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-lwf-wildchat-kw1` es un ajuste fino (fine-tuning) del modelo base Qwen2.5-7B-Instruct, publicado por el usuario `wz7475` en HuggingFace. Se trata de un modelo derivado, no de un entrenamiento desde cero: el identificador sugiere un ajuste orientado a dominio legal ("katcher-legal-lwf"), complementado con datos conversacionales de WildChat y un componente identificado como "kw1". El repositorio ocupa 4,1 GB y contiene pesos en formato safetensors con la libreria `transformers`, y las etiquetas del Hub indican que el entrenamiento se realizo con la herramienta Unsloth.
+El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-lwf-wildchat-kw1` es un ajuste fino (fine-tuning) del modelo base Qwen2.5-7B-Instruct, publicado por el usuario `wz7475` en Hugging Face. Se trata de un modelo derivado, no de un entrenamiento desde cero: el identificador sugiere un ajuste orientado a dominio legal ("katcher-legal-lwf"), complementado con datos conversacionales de WildChat y un componente identificado como "kw1". El repositorio ocupa 4,1 GB y contiene pesos en formato safetensors con la libreria `transformers`, y las etiquetas del Hub indican que el entrenamiento se realizo con la herramienta Unsloth.
 
-La relevancia de esta publicacion es limitada y debe interpretarse con cautela. La model card es la plantilla automatica de HuggingFace y no ha sido cumplimentada: todos los campos de descripcion, datos de entrenamiento, evaluacion, licencia e idiomas figuran como "[More Information Needed]" o no disponible. El modelo registra 0 descargas y 0 "likes" en el momento de la consulta, y la busqueda web realizada no ha devuelto ningun resultado tecnico relacionado con el modelo (los resultados obtenidos no guardan relacion con el ambito de la IA y se han descartado por completo).
+La relevancia de esta publicacion es limitada y debe interpretarse con cautela. La model card es la plantilla automatica de Hugging Face y no ha sido cumplimentada: todos los campos de descripcion, datos de entrenamiento, evaluacion, licencia e idiomas figuran como "[More Information Needed]" o no disponible. El modelo registra 0 descargas y 0 "likes" en el momento de la consulta, y la busqueda web realizada no ha devuelto ningun resultado tecnico relacionado con el modelo (los resultados obtenidos no guardan relacion con el ambito de la IA y se han descartado por completo).
 
 En consecuencia, esta ficha recoge exclusivamente los datos verificables del repositorio y las caracteristicas heredadas del modelo base Qwen2.5-7B-Instruct, que se senalan explicitamente como tales. Cualquier dato sobre el proceso de ajuste, dataset final, hiperparametros o rendimiento debe considerarse no disponible hasta que el autor publique documentacion.
 
@@ -29,7 +29,7 @@ En consecuencia, esta ficha recoge exclusivamente los datos verificables del rep
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura del ajuste ni sobre su procedimiento de entrenamiento. La model card utiliza la plantilla generica de HuggingFace y todos los apartados tecnicos ("Training Data", "Training Procedure", "Training Hyperparameters", "Compute Infrastructure") aparecen sin cumplimentar con el marcador "[More Information Needed]". Unicamente puede afirmarse, a partir de las etiquetas del repositorio, que el ajuste se realizo con Unsloth, lo que en la practica implica casi con seguridad un ajuste eficiente por LoRA o QLoRA sobre el modelo base, y no un reentrenamiento completo.
+No hay informacion publicada sobre la arquitectura del ajuste ni sobre su procedimiento de entrenamiento. La model card utiliza la plantilla generica de Hugging Face y todos los apartados tecnicos ("Training Data", "Training Procedure", "Training Hyperparameters", "Compute Infrastructure") aparecen sin cumplimentar con el marcador "[More Information Needed]". Unicamente puede afirmarse, a partir de las etiquetas del repositorio, que el ajuste se realizo con Unsloth, lo que en la practica implica casi con seguridad un ajuste eficiente por LoRA o QLoRA sobre el modelo base, y no un reentrenamiento completo.
 
 El nombre del repositorio aporta indicios sobre la composicion del dataset, aunque no constituyen evidencia documental: "katcher-legal-lwf" apunta a un corpus de dominio legal, "wildchat" hace referencia al conocido dataset de conversaciones reales con asistentes de IA, y "kw1" podria corresponder a una variante o peso de mezcla de datos sin especificar. La combinacion sugiere un ajuste orientado a mejorar el comportamiento conversacional y el manejo de terminologia juridica. No se ha publicado informacion sobre el numero de tokens de entrenamiento, la proporcion de cada subconjunto, el uso de RLHF o DPO, ni sobre innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal. Tampoco se especifica si el resultado es un adaptador LoRA sin fusionar o un modelo con pesos fusionados; el tamano del repositorio (4,1 GB) no coincide con el de un modelo de 7B en precision bf16 (que rondaria los 15 GB), lo que resulta inconsistente y no puede explicarse con la informacion disponible.
 
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-lwf-wildchat-kw1
+- Modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-lwf-wildchat-kw1
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Referencia citada en las etiquetas del Hub (Lacoste et al., 2019, calculadora de impacto de ML): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de Machine Learning: https://mlco2.github.io/impact

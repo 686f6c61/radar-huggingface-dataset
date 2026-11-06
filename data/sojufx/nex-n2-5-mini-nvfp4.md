@@ -70,7 +70,7 @@ No se han encontrado modelos comparables en la información proporcionada. No se
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: [https://huggingface.co/sojufx/Nex-N2.5-mini-NVFP4](https://huggingface.co/sojufx/Nex-N2.5-mini-NVFP4)
+- Repositorio Hugging Face del modelo: [https://huggingface.co/sojufx/Nex-N2.5-mini-NVFP4](https://huggingface.co/sojufx/Nex-N2.5-mini-NVFP4)
 - Modelo base: [https://huggingface.co/nex-agi/Nex-N2.5-mini](https://huggingface.co/nex-agi/Nex-N2.5-mini)
 - GitHub de Nex-AGI para Nex-N2.5: [https://github.com/nex-agi/Nex-N2.5](https://github.com/nex-agi/Nex-N2.5)
 - GitHub de Nex-AGI para Nex-N2: [https://github.com/nex-agi/Nex-N2](https://github.com/nex-agi/Nex-N2)

@@ -4,7 +4,7 @@
 
 Kroma es un modelo de generación de imágenes de texto a imagen (text-to-image) desarrollado por el equipo de lodestones. Se trata de un fine-tune del modelo base Krea 2, que emplea una arquitectura de diffusion transformer (DiT). El modelo está diseñado para integrarse en ComfyUI, el popular entorno de generación de imágenes por nodos, y se distribuye en dos variantes principales: una versión base y una versión turbo optimizada para inferencia rápida.
 
-La relevancia de Kroma radica en que ofrece una alternativa de alta calidad para la generación de imágenes con un flujo de trabajo compatible con ComfyUI, además de incluir cuantizaciones INT8 que reducen significativamente los requisitos de VRAM. Aunque la información pública es limitada, el modelo ha recibido 269 likes en HuggingFace, lo que sugiere un interés notable dentro de la comunidad. La versión v0.2 publicada en agosto de 2026 representa un checkpoint completo (no un LoRA), lo que facilita su uso directo sin necesidad de cargar pesos adicionales.
+La relevancia de Kroma radica en que ofrece una alternativa de alta calidad para la generación de imágenes con un flujo de trabajo compatible con ComfyUI, además de incluir cuantizaciones INT8 que reducen significativamente los requisitos de VRAM. Aunque la información pública es limitada, el modelo ha recibido 269 likes en Hugging Face, lo que sugiere un interés notable dentro de la comunidad. La versión v0.2 publicada en agosto de 2026 representa un checkpoint completo (no un LoRA), lo que facilita su uso directo sin necesidad de cargar pesos adicionales.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ La relevancia de Kroma radica en que ofrece una alternativa de alta calidad para
 | Longitud de contexto | no aplica (modelo de imagen) |
 | Tipos de cuantizacion | FP16 (original), INT8 (cuantizacion ConvRot de la comunidad) |
 | Idiomas soportados | no disponible (presumiblemente ingles, sin confirmar) |
-| Licencia | no disponible (etiqueta "license:other" en HuggingFace) |
+| Licencia | no disponible (etiqueta "license:other" en Hugging Face) |
 | Formato de pesos | safetensors (checkpoint completo y LoRA) |
 
 ## Arquitectura y entrenamiento
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Arquitectura | Parametros | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Kroma (Krea 2 fine-tune) | DiT | no disponible | no disponible | safetensors | HuggingFace |
+| Kroma (Krea 2 fine-tune) | DiT | no disponible | no disponible | safetensors | Hugging Face |
 | Stable Diffusion XL (SDXL) | U-Net + VAE | 3.5B | OpenRAIL++ | safetensors | Ampliamente disponible |
-| FLUX.1 [dev] | DiT (rectified flow) | 12B | Apache 2.0 (no comercial) | safetensors | HuggingFace |
-| Stable Diffusion 3.5 | DiT (MMDiT) | 8B | Stability Community License | safetensors | HuggingFace |
+| FLUX.1 [dev] | DiT (rectified flow) | 12B | Apache 2.0 (no comercial) | safetensors | Hugging Face |
+| Stable Diffusion 3.5 | DiT (MMDiT) | 8B | Stability Community License | safetensors | Hugging Face |
 
 Kroma se posiciona como un fine-tune especializado sobre Krea 2, mientras que SDXL, FLUX y SD 3.5 son modelos base. Sin datos de rendimiento, no es posible comparar calidad de generacion. La principal ventaja de Kroma es su integracion directa con ComfyUI y la disponibilidad de cuantizaciones INT8 para hardware modesto.
 
@@ -77,7 +77,7 @@ Kroma se posiciona como un fine-tune especializado sobre Krea 2, mientras que SD
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/lodestones/Kroma)
+- [Modelo en Hugging Face](https://huggingface.co/lodestones/Kroma)
 - [Kroma v0.1 LoRA en Tensor.Art](https://tensor.art/models/1028617042430843013)
 - [Kroma v0.2: articulo en ComfyUI Wiki](https://comfyui-wiki.com/en/news/2026-08-09-kroma-v0-2)
 - [Cuantizacion INT8 de Stabhappy](https://huggingface.co/Stabhappy/kroma-v0.2-base-INT8-convrot)

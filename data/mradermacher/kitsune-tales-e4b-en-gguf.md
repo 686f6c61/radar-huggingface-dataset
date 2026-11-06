@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kitsune-Tales-E4B-EN-GGUF es la distribucion en formato GGUF del modelo Kitsune-Tales-E4B-EN, publicada por mradermacher, un autor conocido en HuggingFace por generar cuantizaciones estaticas de modelos de terceros. El repositorio no contiene un modelo entrenado desde cero, sino una conversion y cuantizacion del checkpoint original publicado por el usuario whoashish115, orientada a su ejecucion en CPU, GPU de consumo y entornos de inferencia ligera.
+Kitsune-Tales-E4B-EN-GGUF es la distribucion en formato GGUF del modelo Kitsune-Tales-E4B-EN, publicada por mradermacher, un autor conocido en Hugging Face por generar cuantizaciones estaticas de modelos de terceros. El repositorio no contiene un modelo entrenado desde cero, sino una conversion y cuantizacion del checkpoint original publicado por el usuario whoashish115, orientada a su ejecucion en CPU, GPU de consumo y entornos de inferencia ligera.
 
 El checkpoint de origen declara 7.463.013.674 parametros en formato safetensors, lo que situa al modelo en la franja de los 7-8 mil millones de parametros. El sufijo "E4B" del nombre coincide con la nomenclatura empleada en la familia Gemma 3n para modelos con parametros efectivos, pero la model card del repositorio no confirma la arquitectura base, por lo que dicha correspondencia no debe darse por hecha.
 
@@ -69,7 +69,7 @@ Estimaciones calculadas a partir del numero de parametros declarado (7.463.013.6
 
 - Si cabe en GPU de consumo: si, en todas las cuantizaciones de Q8_0 hacia abajo. Las variantes Q4_K_M e inferiores son las mas habituales para equipos de gama media.
 - Inferencia en CPU: viable con Q2_K, Q3_K_S y Q4_K_S usando llama.cpp u Ollama, con RAM suficiente para el modelo mas el cache KV.
-- Opciones de despliegue: llama.cpp, llama-cpp-python, Ollama (importando el GGUF), LM Studio, koboldcpp, text-generation-webui y otros frontends compatibles con GGUF. La etiqueta `endpoints_compatible` sugiere tambien despliegue en HuggingFace Inference Endpoints. El soporte de vLLM para GGUF es limitado y no esta confirmado para esta arquitectura.
+- Opciones de despliegue: llama.cpp, llama-cpp-python, Ollama (importando el GGUF), LM Studio, koboldcpp, text-generation-webui y otros frontends compatibles con GGUF. La etiqueta `endpoints_compatible` sugiere tambien despliegue en Hugging Face Inference Endpoints. El soporte de vLLM para GGUF es limitado y no esta confirmado para esta arquitectura.
 - Latencia y throughput: no disponibles. Dependen de la cuantizacion, del hardware, del backend y de la longitud de contexto, ninguno de los cuales se documenta en el repositorio.
 
 ## Comparativa con modelos similares

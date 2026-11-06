@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-023 | 4,02 B | No disponible | Medico (ajuste de investigacion) | apache-2.0 | HuggingFace, 7 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,02 B | Contexto extendido de la familia Qwen3 | Generalista | apache-2.0 | HuggingFace, ampliamente distribuido |
-| HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-033 | 4 B (segun listado) | No disponible | Medico (mismo run, paso 33) | apache-2.0 | HuggingFace |
+| HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-023 | 4,02 B | No disponible | Medico (ajuste de investigacion) | apache-2.0 | Hugging Face, 7 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,02 B | Contexto extendido de la familia Qwen3 | Generalista | apache-2.0 | Hugging Face, ampliamente distribuido |
+| HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-033 | 4 B (segun listado) | No disponible | Medico (mismo run, paso 33) | apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -94,8 +94,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-023
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-023
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Checkpoint hermano (paso 033) del mismo autor: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-033
-- Perfil del autor en HuggingFace: https://huggingface.co/HYU-NLP-EVAL
-- Listado general de modelos en HuggingFace (referencia de busqueda): https://huggingface.co/models?sort=modified
+- Perfil del autor en Hugging Face: https://huggingface.co/HYU-NLP-EVAL
+- Listado general de modelos en Hugging Face (referencia de busqueda): https://huggingface.co/models?sort=modified

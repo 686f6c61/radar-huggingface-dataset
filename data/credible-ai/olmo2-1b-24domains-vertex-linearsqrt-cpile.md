@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `credible-ai/olmo2-1B-24domains-vertex-linearsqrt-cpile` | 1,41B | no disponible | Investigación en mezcla de datos (LinMix), solo preentrenamiento | MIT | HuggingFace, 0 descargas |
-| OLMo 2 1B (AllenAI) | ~1,2B | 4.096 tokens (modelo base de referencia) | Modelo base de propósito general | Apache 2.0 | HuggingFace, ampliamente usado |
-| TinyLlama-1.1B | 1,1B | 2.048 tokens | Preentrenamiento + ajuste instructivo | Apache 2.0 | HuggingFace, muy extendido |
-| SmolLM2-1.7B | 1,7B | 8.192 tokens | Modelo pequeño con variantes instruct | Apache 2.0 | HuggingFace, muy extendido |
+| `credible-ai/olmo2-1B-24domains-vertex-linearsqrt-cpile` | 1,41B | no disponible | Investigación en mezcla de datos (LinMix), solo preentrenamiento | MIT | Hugging Face, 0 descargas |
+| OLMo 2 1B (AllenAI) | ~1,2B | 4.096 tokens (modelo base de referencia) | Modelo base de propósito general | Apache 2.0 | Hugging Face, ampliamente usado |
+| TinyLlama-1.1B | 1,1B | 2.048 tokens | Preentrenamiento + ajuste instructivo | Apache 2.0 | Hugging Face, muy extendido |
+| SmolLM2-1.7B | 1,7B | 8.192 tokens | Modelo pequeño con variantes instruct | Apache 2.0 | Hugging Face, muy extendido |
 
 La comparación relevante es frente a OLMo 2 1B original: este checkpoint comparte arquitectura y tokenizador, pero cambia la distribución de datos de entrenamiento (mezcla optimizada sobre 24 dominios de WebOrganizer frente al corpus de propósito general de AllenAI) y carece de fases de ajuste posteriores. Los datos de contexto de los modelos comparables provienen de sus fichas públicas; el contexto de este checkpoint no está documentado.
 
@@ -90,7 +90,7 @@ La comparación relevante es frente a OLMo 2 1B original: este checkpoint compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-24domains-vertex-linearsqrt-cpile
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-24domains-vertex-linearsqrt-cpile
 - Modelo proxy del enjambre (30M): https://huggingface.co/credible-ai/olmo2-30M-24domains-vertex
 - Código de LinMix: https://github.com/credibleai/linmix
 - Dataset WebOrganizer/Corpus-200B: https://huggingface.co/datasets/WebOrganizer/Corpus-200B

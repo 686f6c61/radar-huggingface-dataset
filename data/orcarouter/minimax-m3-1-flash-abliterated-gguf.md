@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MiniMax-M3.1-Flash-abliterated-GGUF es una cuantización comunitaria en formato GGUF del modelo MiniMax-M3.1-Flash, desarrollado por MiniMaxAI, publicada por el usuario orcarouter en HuggingFace. Se trata de una versión "abliterated", es decir, un modelo al que se le han eliminado mediante técnicas de modificación de pesos los mecanismos de rechazo (refusals) entrenados por el fabricante, lo que lo hace más permisivo ante solicitudes que el modelo original bloquearía. El modelo base es un MoE (mixture of experts) de gran tamaño, con 426.186.392.064 parámetros totales según los metadatos de safetensors del repositorio.
+MiniMax-M3.1-Flash-abliterated-GGUF es una cuantización comunitaria en formato GGUF del modelo MiniMax-M3.1-Flash, desarrollado por MiniMaxAI, publicada por el usuario orcarouter en Hugging Face. Se trata de una versión "abliterated", es decir, un modelo al que se le han eliminado mediante técnicas de modificación de pesos los mecanismos de rechazo (refusals) entrenados por el fabricante, lo que lo hace más permisivo ante solicitudes que el modelo original bloquearía. El modelo base es un MoE (mixture of experts) de gran tamaño, con 426.186.392.064 parámetros totales según los metadatos de safetensors del repositorio.
 
-La relevancia de esta ficha radica en la combinación de tres factores: un modelo MoE de gran escala orientado a razonamiento y generación de texto, una cuantización GGUF pensada para ejecución local con llama.cpp, y la eliminación de salvaguardas de seguridad. El repositorio pesa 112,9 GB, lo que indica cuantizaciones de precisión mixta con imatrix (importance matrix), una técnica que mejora la calidad de los GGUF cuantizados respecto a la cuantización ingenua. El modelo está etiquetado para inglés y chino, y hereda la licencia comunitaria de MiniMax (minimax-community-license), con acceso restringido que exige aceptar condiciones en HuggingFace.
+La relevancia de esta ficha radica en la combinación de tres factores: un modelo MoE de gran escala orientado a razonamiento y generación de texto, una cuantización GGUF pensada para ejecución local con llama.cpp, y la eliminación de salvaguardas de seguridad. El repositorio pesa 112,9 GB, lo que indica cuantizaciones de precisión mixta con imatrix (importance matrix), una técnica que mejora la calidad de los GGUF cuantizados respecto a la cuantización ingenua. El modelo está etiquetado para inglés y chino, y hereda la licencia comunitaria de MiniMax (minimax-community-license), con acceso restringido que exige aceptar condiciones en Hugging Face.
 
 Dado que es una cuantización de terceros y no el modelo oficial, el rendimiento y la calidad dependen de la fidelidad de la cuantización respecto al original, y el uso de versiones abliterated conlleva riesgos éticos y legales que se detallan más adelante.
 
@@ -72,12 +72,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 - El riesgo de alucinacion es inherente al modelo base y puede agravarse por la cuantizacion y la abliteration; no hay evaluaciones publicadas de esta version concreta.
 - Idiomas limitados a ingles y chino; el rendimiento en castellano no esta documentado.
 - Licencia minimax-community-license: es una licencia comunitaria con posibles restricciones de uso comercial (limites de usuarios, ingresos o requisitos de atribucion); debe revisarse el texto completo antes de desplegar en produccion.
-- Acceso gated: hay que aceptar las condiciones del repositorio en HuggingFace, lo que puede implicar registro y trazabilidad.
+- Acceso gated: hay que aceptar las condiciones del repositorio en Hugging Face, lo que puede implicar registro y trazabilidad.
 - Numero de parametros activos, longitud de contexto y benchmarks no publicados en la ficha: la planificacion de capacidad y la evaluacion de calidad deben hacerse con pruebas propias.
 - Cero descargas registradas en el momento de la ficha: es un artefacto muy nuevo y sin historial de uso comunitario que respalde su estabilidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/orcarouter/MiniMax-M3.1-Flash-abliterated-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/orcarouter/MiniMax-M3.1-Flash-abliterated-GGUF
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
 - Paper, blog oficial, demo u otros enlaces: no disponibles en la informacion proporcionada.

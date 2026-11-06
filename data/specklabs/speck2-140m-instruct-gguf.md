@@ -75,6 +75,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos, por lo qu
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/specklabs/Speck2-140M-Instruct-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/specklabs/Speck2-140M-Instruct-GGUF
 - Modelo base (Speck2-140M-Instruct): https://huggingface.co/specklabs/Speck2-140M
 - Modelo predecesor (Speck1-140M-Instruct): https://huggingface.co/specklabs/Speck1-140M-Instruct

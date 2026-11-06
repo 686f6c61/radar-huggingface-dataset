@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| keras/ministral_3_14b_instruct_2512_en | 14B | 16k nativo / ~262k YaRN | no disponible | KerasHub | HuggingFace (keras) |
+| keras/ministral_3_14b_instruct_2512_en | 14B | 16k nativo / ~262k YaRN | no disponible | KerasHub | Hugging Face (keras) |
 | Mistral 3 14B (original) | 14B | no disponible | no disponible | safetensors | no disponible en la informacion |
-| Qwen2.5-14B-Instruct | 14B | 32k nativo / 128k extendido | Apache 2.0 | safetensors, GGUF, AWQ | HuggingFace, Ollama, vLLM |
-| Llama 3.1 8B Instruct | 8B | 128k | Llama 3.1 Community | safetensors, GGUF | HuggingFace, Ollama, vLLM |
+| Qwen2.5-14B-Instruct | 14B | 32k nativo / 128k extendido | Apache 2.0 | safetensors, GGUF, AWQ | Hugging Face, Ollama, vLLM |
+| Llama 3.1 8B Instruct | 8B | 128k | Llama 3.1 Community | safetensors, GGUF | Hugging Face, Ollama, vLLM |
 
 La comparativa con Qwen2.5-14B y Llama 3.1 8B se ofrece como referencia de categoría, pero no se dispone de datos de rendimiento del modelo Keras para establecer una comparación cuantitativa. La principal diferencia frente a las alternativas es el empaquetado en KerasHub y la inclusión de un codificador visual, frente a los formatos estándar y el soporte amplio de herramientas de inferencia de los otros modelos.
 
@@ -98,9 +98,9 @@ La comparativa con Qwen2.5-14B y Llama 3.1 8B se ofrece como referencia de categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keras/ministral_3_14b_instruct_2512_en
+- Modelo en Hugging Face: https://huggingface.co/keras/ministral_3_14b_instruct_2512_en
 - Documentación de Mistral3 en KerasHub: https://keras.io/api/keras_hub/models/mistral3
 - Documentación de Keras: https://keras.io/
 - Keras 3 (multi-backend): https://keras.io/keras_3/
-- Documentación de model cards de HuggingFace: https://huggingface.co/docs/hub/model-cards
+- Documentación de model cards de Hugging Face: https://huggingface.co/docs/hub/model-cards
 - Wikipedia de Keras: https://en.wikipedia.org/wiki/Keras

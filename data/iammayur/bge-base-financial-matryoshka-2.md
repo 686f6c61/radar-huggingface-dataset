@@ -114,7 +114,7 @@ No se dispone en la informacion proporcionada de resultados comparativos directo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iammayur/bge-base-financial-matryoshka-2
+- Modelo en Hugging Face: https://huggingface.co/iammayur/bge-base-financial-matryoshka-2
 - Modelo base: https://huggingface.co/BAAI/bge-base-en-v1.5
 - Paper de Sentence-BERT: https://arxiv.org/abs/1908.10084
 - Paper de Matryoshka Representation Learning: https://arxiv.org/abs/2205.13147

@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en tareas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kisaragi-mochi/Huihui-Qwen3.8-27B-abliterated-Q5_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kisaragi-mochi/Huihui-Qwen3.8-27B-abliterated-Q5_K_M-GGUF
 - Modelo base (abliterated): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Repositorio oficial de GGUF (Q4_K): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Repositorio de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

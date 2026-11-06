@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `jprivera/260924_full_eval_charts`, no es un modelo de lenguaje: es un artefacto de evaluacion publicado por el usuario jprivera que contiene los graficos, tablas y scripts de un experimento sobre supervision de colusion (collusion monitoring) en modelos con adaptadores entrenados. El contenido se genero a partir de una evaluacion completa sobre datos retenidos (held-out) de 7.200 filas de panel mas 10.584 filas de remainder por brazo, cubriendo 96 brazos, y calificado con una copia del grader incluido en la propia carpeta. El repositorio ocupa 0,2 GB y fue creado el 30 de septiembre de 2026.
+Este repositorio de Hugging Face, identificado como `jprivera/260924_full_eval_charts`, no es un modelo de lenguaje: es un artefacto de evaluacion publicado por el usuario jprivera que contiene los graficos, tablas y scripts de un experimento sobre supervision de colusion (collusion monitoring) en modelos con adaptadores entrenados. El contenido se genero a partir de una evaluacion completa sobre datos retenidos (held-out) de 7.200 filas de panel mas 10.584 filas de remainder por brazo, cubriendo 96 brazos, y calificado con una copia del grader incluido en la propia carpeta. El repositorio ocupa 0,2 GB y fue creado el 30 de septiembre de 2026.
 
 El material se organiza en cuatro figuras principales (vision general de colusion no detectada tras tres pasadas, colusion por comportamiento, curvas de dosis 0/1/2/3 pasadas y costes colaterales), un conjunto adicional de graficos de barras (colusion restante, transferencia, dosis, comportamientos y costes) y los datos subyacentes en formato JSON y Markdown dentro de `report/` y la raiz de la carpeta. El punto de entrada recomendado por el autor es `SUMMARY_FOR_PAPER_260924.md`, que recoge la conclusion principal, las afirmaciones, los hechos del protocolo, los problemas conocidos y el estado de la politica.
 
@@ -106,7 +106,7 @@ Este repositorio no es un modelo, por lo que no procede compararlo con modelos d
 | Contexto | no aplica | no aplica |
 | Rendimiento | sin cifras publicadas | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | Repositorio HuggingFace publico, 0 descargas | Repositorio GitHub publico |
+| Disponibilidad | Repositorio Hugging Face publico, 0 descargas | Repositorio GitHub publico |
 
 No se dispone de informacion suficiente para establecer una comparativa de rendimiento con alternativas de la misma categoria.
 
@@ -124,8 +124,8 @@ No se dispone de informacion suficiente para establecer una comparativa de rendi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jprivera/260924_full_eval_charts
-- Perfil del autor en HuggingFace: https://huggingface.co/jprivera44
+- Repositorio en Hugging Face: https://huggingface.co/jprivera/260924_full_eval_charts
+- Perfil del autor en Hugging Face: https://huggingface.co/jprivera44
 - Resumen para el paper: `SUMMARY_FOR_PAPER_260924.md` (dentro del repositorio)
 - Analisis del tamano de evaluacion: `EVAL_SIZE_ANALYSIS.md` (dentro del repositorio)
 - Figuras principales: `figs/fig1_overview.png`, `figs/fig2_behaviours.png`, `figs/fig3_dose.png`, `figs/fig4_costs.png`

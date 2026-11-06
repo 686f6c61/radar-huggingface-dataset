@@ -108,7 +108,7 @@ La comparación directa solo es posible con el modelo profesor, del que este che
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kakao1513/veil-pii-ko-small-3
+- Modelo en Hugging Face: https://huggingface.co/kakao1513/veil-pii-ko-small-3
 - Modelo base: https://huggingface.co/monologg/koelectra-small-v3-discriminator
 - Modelo profesor: https://huggingface.co/1T/veil-pii-ko-lite
 - Dataset BCCard/privacy-filter-openpii-masking: https://huggingface.co/datasets/BCCard/privacy-filter-openpii-masking

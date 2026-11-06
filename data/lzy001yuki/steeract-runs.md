@@ -74,5 +74,5 @@ No disponible. Este repositorio no es un modelo publicable y no se han identific
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lzy001Yuki/steeract-runs
+- Repositorio Hugging Face: https://huggingface.co/lzy001Yuki/steeract-runs
 - No se han encontrado papers, blogs, repos complementarios ni demos en la informacion proporcionada.

@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables. El repositorio no propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pollen-robotics/microduck-policies
+- Repositorio Hugging Face: https://huggingface.co/pollen-robotics/microduck-policies
 - Página oficial de Microduck: https://pollen-robotics.com/microduck/
 - Repositorio GitHub de Microduck: https://github.com/pollen-robotics/microduck
 - Carpeta de políticas en GitHub: https://github.com/pollen-robotics/microduck/tree/main/policies

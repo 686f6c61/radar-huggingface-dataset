@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino (fine-tune) del modelo base `goldfish-models/dan_latn_10mb`, desarrollado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 (etiqueta `gpt2` en los metadatos) con 39.087.104 parametros totales, un tamano muy reducido que lo situa en la categoria de modelos pequenos orientados a experimentacion e investigacion linguistica, no a produccion generalista.
+El modelo `francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino (fine-tune) del modelo base `goldfish-models/dan_latn_10mb`, desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 (etiqueta `gpt2` en los metadatos) con 39.087.104 parametros totales, un tamano muy reducido que lo situa en la categoria de modelos pequenos orientados a experimentacion e investigacion linguistica, no a produccion generalista.
 
-El modelo ha sido entrenado mediante SFT (supervised fine-tuning) utilizando la libreria TRL de HuggingFace,Partiendo del modelo base `dan_latn_10mb`, que forma parte de la familia Goldfish de modelos por idioma con tokenizadores adaptados a lenguas de bajos recursos. El identificador del modelo sugiere danes en escritura latina (`dan` + `latn`), aunque la model card no declara idiomas de forma explicita. El nombre incluye terminos como `ppt`, `Dp`, `packed` y `bfd_seed3407`, que apuntan a un experimento de investigacion con configuracion concreta de dataset y semilla.
+El modelo ha sido entrenado mediante SFT (supervised fine-tuning) utilizando la libreria TRL de Hugging Face,Partiendo del modelo base `dan_latn_10mb`, que forma parte de la familia Goldfish de modelos por idioma con tokenizadores adaptados a lenguas de bajos recursos. El identificador del modelo sugiere danes en escritura latina (`dan` + `latn`), aunque la model card no declara idiomas de forma explicita. El nombre incluye terminos como `ppt`, `Dp`, `packed` y `bfd_seed3407`, que apuntan a un experimento de investigacion con configuracion concreta de dataset y semilla.
 
 Su relevancia es fundamentalmente academica: se trata de un artefacto de experimentacion vinculado a la Universidad de Groningen (segun la URL del run de Weights & Biases del autor) y con cero descargas y cero "likes" en el momento de la consulta. No hay benchmarks publicados ni documentacion de capacidades adicionales, por lo que debe evaluarse como un punto de partida reproducible mas que como un modelo listo para desplegar.
 
@@ -78,7 +78,7 @@ Los datos de GPT-2 small y DistilGPT-2 proceden del conocimiento publico de esos
 
 ## Limitaciones y advertencias
 
-- Licencia sin especificar: la model card incluye el texto generico `licence: license` y los metadatos de HuggingFace marcan la licencia como no disponible. No se puede determinar si el uso comercial esta permitido; hay que contactar con el autor antes de cualquier despliegue productivo.
+- Licencia sin especificar: la model card incluye el texto generico `licence: license` y los metadatos de Hugging Face marcan la licencia como no disponible. No se puede determinar si el uso comercial esta permitido; hay que contactar con el autor antes de cualquier despliegue productivo.
 - Sesgos desconocidos: al entrenarse sobre 10 MB de texto (presumiblemente danes) y pasar por un SFT no documentado, los sesgos linguisticos, culturales y de contenido no estan evaluados ni mitigados.
 - Riesgo de alucinacion elevado: con 39M de parametros y un corpus de preentrenamiento de 10 MB, la cobertura factual es minima y la generacion de afirmaciones falsas con apariencia plausible es esperable.
 - Riesgo de degeneracion en generaciones largas: los modelos GPT-2 de este tamano tienden a la repeticion y a la perdida de coherencia mas alla de unos cientos de tokens; no se documenta ninguna mitigacion.
@@ -89,7 +89,7 @@ Los datos de GPT-2 small y DistilGPT-2 proceden del conocimiento publico de esos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/dan_latn_10mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ntwxr91d
 - Repositorio de TRL: https://github.com/huggingface/trl

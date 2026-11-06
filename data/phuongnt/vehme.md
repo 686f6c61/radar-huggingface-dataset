@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VEHME es un ajuste fino (fine-tune) del modelo multimodal Qwen2.5-VL-7B-Instruct, publicado por el usuario phuongnt en HuggingFace. Se trata de un modelo de tipo image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto como salida, manteniendo la arquitectura transformer del modelo base de Qwen. El repositorio contiene 8.292.166.656 parametros en formato safetensors, con un tamano total de 16,6 GB.
+VEHME es un ajuste fino (fine-tune) del modelo multimodal Qwen2.5-VL-7B-Instruct, publicado por el usuario phuongnt en Hugging Face. Se trata de un modelo de tipo image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto como salida, manteniendo la arquitectura transformer del modelo base de Qwen. El repositorio contiene 8.292.166.656 parametros en formato safetensors, con un tamano total de 16,6 GB.
 
 La relevancia de este modelo es limitada por el momento: cuenta con cero descargas y cero likes, fue creado el 2 de noviembre de 2026 y no dispone de model card descriptiva mas alla de los metadatos YAML. No se documenta el proposito del ajuste, el dataset utilizado ni los resultados obtenidos, lo que dificulta evaluar su utilidad real frente al modelo base.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| VEHME (este modelo) | 8,29 B | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-VL-7B-Instruct | 8,29 B | 128k tokens (segun modelo base) | Apache 2.0 (segun modelo base) | HuggingFace, ampliamente usado |
-| LLaVA-1.6-7B | ~7 B | 4k-8k tokens | Apache 2.0 / Llama segun variante | HuggingFace |
-| InternVL2-8B | ~8 B | 8k-32k tokens | MIT (segun variante) | HuggingFace |
+| VEHME (este modelo) | 8,29 B | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-VL-7B-Instruct | 8,29 B | 128k tokens (segun modelo base) | Apache 2.0 (segun modelo base) | Hugging Face, ampliamente usado |
+| LLaVA-1.6-7B | ~7 B | 4k-8k tokens | Apache 2.0 / Llama segun variante | Hugging Face |
+| InternVL2-8B | ~8 B | 8k-32k tokens | MIT (segun variante) | Hugging Face |
 
 La comparativa se basa en caracteristicas publicas de los modelos alternativos; los datos de contexto y licencia de VEHME no estan disponibles y se infieren del modelo base solo como referencia.
 
@@ -85,7 +85,7 @@ La comparativa se basa en caracteristicas publicas de los modelos alternativos; 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/phuongnt/VEHME
+- Hugging Face: https://huggingface.co/phuongnt/VEHME
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Repositorio Qwen2.5-VL (GitHub): https://github.com/QwenLM/Qwen2.5-VL
 - Paper Qwen2.5-VL: no disponible en la informacion proporcionada

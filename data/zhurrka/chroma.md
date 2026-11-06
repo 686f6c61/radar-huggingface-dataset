@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo publicados en la informacion p
 
 ## Enlaces
 
-- HuggingFace (repo consultado): https://huggingface.co/zhurrka/Chroma
+- Hugging Face (repo consultado): https://huggingface.co/zhurrka/Chroma
 - Repositorio original del autor: https://huggingface.co/lodestones/Chroma
 - Repo de depuracion de entrenamiento: https://huggingface.co/lodestones/chroma-debug-development-only
 - Logs de entrenamiento en vivo: https://training.lodestone-rock.com

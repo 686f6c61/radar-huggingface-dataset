@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PseudoBrain-Qwen3-32B-FP8 es una modificación arquitectónica del modelo denso Qwen3-32B de Alibaba, publicada por Ian Kurt Galeon (usuario `defnoteatin` en HuggingFace) bajo licencia Apache 2.0. El modelo sustituye el mecanismo de atención estándar del transformer original por una arquitectura híbrida que combina atención de ventana deslizante de 16K tokens, una red recurrente Gated DeltaNet de estado fijo y un sistema de memoria exacta denominado Quest, con el objetivo de reducir drásticamente el coste de memoria de la caché KV en contextos extremadamente largos.
+PseudoBrain-Qwen3-32B-FP8 es una modificación arquitectónica del modelo denso Qwen3-32B de Alibaba, publicada por Ian Kurt Galeon (usuario `defnoteatin` en Hugging Face) bajo licencia Apache 2.0. El modelo sustituye el mecanismo de atención estándar del transformer original por una arquitectura híbrida que combina atención de ventana deslizante de 16K tokens, una red recurrente Gated DeltaNet de estado fijo y un sistema de memoria exacta denominado Quest, con el objetivo de reducir drásticamente el coste de memoria de la caché KV en contextos extremadamente largos.
 
 La propuesta central es ambiciosa: según la model card, permite servir contextos de hasta 1.000.000 de tokens reduciendo la caché KV de aproximadamente 256 GB a unos 4,1 GB, una disminución del 98,4 %. Esto se logra mediante estado recurrente de tamaño constante O(1), atención dispersa sobre anclas seleccionadas y un esquema de RoPE por bloques no solapados que preserva la coherencia temporal a lo largo de la secuencia. El modelo se distribuye en formato FP8 con pesos de aproximadamente 34,5 GB y requiere el plugin propietario `pb27_vllm` para funcionar sobre vLLM.
 
@@ -91,11 +91,11 @@ La comparación directa es difícil porque PseudoBrain no es un modelo nuevo sin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-Qwen3-32B-FP8
+- Modelo en Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-Qwen3-32B-FP8
 - Repositorio GitHub del proyecto: https://github.com/defnotean/pseudobrain
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf
 - Paper de arquitectura (Markdown): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.md
 - Informes de benchmarks del autor: https://github.com/defnotean/pseudobrain/tree/main/reports
 - Perfil del autor en GitHub: https://github.com/defnotean
-- Perfil del autor en HuggingFace: https://huggingface.co/defnoteatin
+- Perfil del autor en Hugging Face: https://huggingface.co/defnoteatin
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B

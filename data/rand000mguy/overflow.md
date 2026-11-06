@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`overflow` es un adaptador LoRA de tipo text-to-image alojado en HuggingFace por el usuario Rand000mGuy. Se trata de un ajuste fino ligero sobre el modelo base `krea/Krea-2-Raw`, un modelo de difusion para generacion de imagenes. El repositorio tiene un tamano de 0,2 GB, coherente con un adaptador LoRA que no incluye los pesos completos del modelo base. La libreria asociada es `diffusers` y la pipeline declarada es `text-to-image`.
+`overflow` es un adaptador LoRA de tipo text-to-image alojado en Hugging Face por el usuario Rand000mGuy. Se trata de un ajuste fino ligero sobre el modelo base `krea/Krea-2-Raw`, un modelo de difusion para generacion de imagenes. El repositorio tiene un tamano de 0,2 GB, coherente con un adaptador LoRA que no incluye los pesos completos del modelo base. La libreria asociada es `diffusers` y la pipeline declarada es `text-to-image`.
 
 La relevancia de esta publicacion es limitada en el momento de redactar esta ficha: cuenta con 0 descargas y 0 likes, fue creado el 3 de noviembre de 2026 y la model card es practicamente vacia. No incluye `instance_prompt`, no documenta el dataset de entrenamiento, no especifica hiperparametros y no aporta ejemplos de uso mas alla de un unico widget con el prompt "Screenshot". Esto lo convierte en un artefacto experimental sin validacion publica.
 
@@ -44,7 +44,7 @@ La model card no aporta informacion sobre el dataset de entrenamiento: no se ind
 - Generacion de mockups de interfaz: si el adaptador efectivamente produce capturas de pantalla, podria emplearse para generar imagenes de referencia en fases tempranas de diseno de producto, siempre con revision humana.
 - Pruebas de pipeline de inferencia: integrar el LoRA en un flujo `diffusers` para validar la carga de adaptadores, la gestion de pesos y el rendimiento en GPU de gama consumer.
 - Creacion de datasets sinteticos controlados: generar variaciones de imagenes con un estilo concreto para aumentar datasets de entrenamiento de otros modelos, asumiendo el riesgo de sesgo del adaptador.
-- Demostraciones y talleres: utilizar el repositorio como caso practico de publicacion de un LoRA en HuggingFace, dado su tamano reducido (0,2 GB) y su estructura minima.
+- Demostraciones y talleres: utilizar el repositorio como caso practico de publicacion de un LoRA en Hugging Face, dado su tamano reducido (0,2 GB) y su estructura minima.
 
 ## Benchmarks y rendimiento
 
@@ -75,7 +75,7 @@ No disponible. No se han identificado en la informacion proporcionada otros LoRA
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rand000mGuy/overflow
+- Repositorio Hugging Face: https://huggingface.co/Rand000mGuy/overflow
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Libreria diffusers: https://github.com/huggingface/diffusers
 - Documentacion de LoRA en diffusers: https://huggingface.co/docs/diffusers/training/lora

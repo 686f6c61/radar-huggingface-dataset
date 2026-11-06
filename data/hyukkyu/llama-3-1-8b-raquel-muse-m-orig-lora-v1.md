@@ -96,10 +96,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 
 | Modelo | Parametros | Contexto | Licencia | Datos de rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| `Hyukkyu/Llama-3.1-8B-RAQUEL-MUSE-M-orig-LoRA-v1` (este modelo) | 8,03 B | 128.000 tokens heredados; entrenado a 2.048 | `llama3.1` | Tabla de 6 splits MUSE-News y RAQUEL | HuggingFace, 0 descargas |
-| `meta-llama/Llama-3.1-8B` (modelo base) | 8,03 B | 128.000 tokens | `llama3.1` | Benchmarks generales publicados por Meta; no comparables con MUSE-News | HuggingFace |
-| `Hyukkyu/Llama-3.1-8B-RAQUEL-TOFU-M-orig-LoRA-v1` (hermano, campaña TOFU) | No disponible | No disponible | `llama3.1` | No disponible en la información recogida | HuggingFace, con despliegue en FriendliAI |
-| `Hyukkyu/Llama-3.1-8B-RAQUEL-TOFU-M-ret-LoRA-v1` (hermano, campaña TOFU) | No disponible | No disponible | `llama3.1` | No disponible en la información recogida | HuggingFace |
+| `Hyukkyu/Llama-3.1-8B-RAQUEL-MUSE-M-orig-LoRA-v1` (este modelo) | 8,03 B | 128.000 tokens heredados; entrenado a 2.048 | `llama3.1` | Tabla de 6 splits MUSE-News y RAQUEL | Hugging Face, 0 descargas |
+| `meta-llama/Llama-3.1-8B` (modelo base) | 8,03 B | 128.000 tokens | `llama3.1` | Benchmarks generales publicados por Meta; no comparables con MUSE-News | Hugging Face |
+| `Hyukkyu/Llama-3.1-8B-RAQUEL-TOFU-M-orig-LoRA-v1` (hermano, campaña TOFU) | No disponible | No disponible | `llama3.1` | No disponible en la información recogida | Hugging Face, con despliegue en FriendliAI |
+| `Hyukkyu/Llama-3.1-8B-RAQUEL-TOFU-M-ret-LoRA-v1` (hermano, campaña TOFU) | No disponible | No disponible | `llama3.1` | No disponible en la información recogida | Hugging Face |
 
 No se dispone de cifras de benchmarks directamente comparables entre estos checkpoints, ya que los splits y el protocolo de juicio son específicos de cada campaña (MUSE-News frente a TOFU). Cualquier comparación numérica entre ellos en la información disponible sería engañosa.
 
@@ -120,7 +120,7 @@ No se dispone de cifras de benchmarks directamente comparables entre estos check
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hyukkyu/Llama-3.1-8B-RAQUEL-MUSE-M-orig-LoRA-v1
+- Modelo en Hugging Face: https://huggingface.co/Hyukkyu/Llama-3.1-8B-RAQUEL-MUSE-M-orig-LoRA-v1
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Dataset MUSE-News: https://huggingface.co/datasets/muse-bench/MUSE-News
 - Dataset RAQUEL2-ICLR: https://huggingface.co/datasets/Hyukkyu/RAQUEL2-ICLR

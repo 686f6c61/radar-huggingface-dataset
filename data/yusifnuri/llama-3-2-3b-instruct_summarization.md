@@ -95,7 +95,7 @@ No se dispone de cifras de otros adaptadores de resumen comparables dentro de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yusifnuri/Llama-3.2-3B-Instruct_summarization
+- Modelo en Hugging Face: https://huggingface.co/yusifnuri/Llama-3.2-3B-Instruct_summarization
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Código, configuraciones y harness de evaluación: https://github.com/Yusifnuri/slm-benchmark
 - Matriz completa del benchmark: https://github.com/Yusifnuri/slm-benchmark/blob/main/results/benchmark_matrix.csv

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kimi Linear 48B-A3B Instruct Blackhole es un paquete de despliegue, no un modelo entrenado desde cero. Lo publica el usuario jashansinghTT y su funcion es servir el modelo de Moonshot AI `moonshotai/Kimi-Linear-48B-A3B-Instruct` sobre aceleradores Tenstorrent Blackhole (perfiles P300 y P300x2 / QuietBox 2) mediante vLLM con un plugin especifico de Tenstorrent y una API compatible con OpenAI. Los pesos no se re-empaquetan: el comando `tt-model pull --with-weights` los descarga en la cache de HuggingFace desde el commit `e1df551a447157d4658b573f9a695d57658590e9` del repositorio original.
+Kimi Linear 48B-A3B Instruct Blackhole es un paquete de despliegue, no un modelo entrenado desde cero. Lo publica el usuario jashansinghTT y su funcion es servir el modelo de Moonshot AI `moonshotai/Kimi-Linear-48B-A3B-Instruct` sobre aceleradores Tenstorrent Blackhole (perfiles P300 y P300x2 / QuietBox 2) mediante vLLM con un plugin especifico de Tenstorrent y una API compatible con OpenAI. Los pesos no se re-empaquetan: el comando `tt-model pull --with-weights` los descarga en la cache de Hugging Face desde el commit `e1df551a447157d4658b573f9a695d57658590e9` del repositorio original.
 
 El modelo subyacente es un decoder hibrido que combina Kimi Delta Attention (atencion lineal) con MLA (Multi-head Latent Attention) y una capa de mezcla de expertos con 256 expertos: 48B parametros totales y 3B parametros activos por token, con una arquitectura preparada para 1M de tokens de contexto. El paquete declara licencia MIT. En la practica, el despliegue limita la ventana de servicio a 131.072 tokens en el perfil p300x2 y a 65.536 tokens en el perfil p300.
 
@@ -20,7 +20,7 @@ Su relevancia es doble. Por un lado, permite ejecutar un MoE de 48B/3B activos c
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | MIT (declarada en la model card; corresponde al modelo original de Moonshot AI) |
-| Formato de pesos | no disponible (los pesos no estan en el repositorio; se descargan en la cache de HuggingFace desde `moonshotai/Kimi-Linear-48B-A3B-Instruct`) |
+| Formato de pesos | no disponible (los pesos no estan en el repositorio; se descargan en la cache de Hugging Face desde `moonshotai/Kimi-Linear-48B-A3B-Instruct`) |
 | Hardware objetivo | Tenstorrent Blackhole P300 (una placa) y P300x2 / QuietBox 2 (dos placas) |
 | Tamano del repositorio | 1,9 GB (imagen y codigo, sin pesos) |
 | Fecha de publicacion | 10 de septiembre de 2026 |
@@ -97,7 +97,7 @@ Comparativa frente a modelos de la misma categoria en otros backends: no disponi
 - Dependencia de hardware Tenstorrent Blackhole. No hay evidencia en la informacion disponible de que el paquete funcione en GPUs NVIDIA, AMD u otros aceleradores.
 - Reproducibilidad limitada: tt-metal y vllm-tt-plugin se construyeron desde checkouts locales cuyo commit no se ha publicado. Solo vLLM (v0.26.0) esta fijado a una version publica.
 - El repositorio tiene 0 descargas y 0 likes, y se publico el 10 de septiembre de 2026. No existe validacion de la comunidad ni historial de uso en produccion.
-- Los pesos no estan en el repositorio (1,9 GB de imagen y codigo). Se descargan aparte en la cache de HuggingFace, lo que anade un paso de red y una dependencia externa.
+- Los pesos no estan en el repositorio (1,9 GB de imagen y codigo). Se descargan aparte en la cache de Hugging Face, lo que anade un paso de red y una dependencia externa.
 - La ventana efectiva de servicio es muy inferior a la capacidad de la arquitectura: 131.072 tokens en p300x2 frente a los 1M que declara el diseno. Los casos de uso con contexto ultralargo pueden no ser viables con estos perfiles.
 - Capacidades multilingues no documentadas. No se puede asumir un buen comportamiento fuera del ingles sin evaluacion previa.
 - Riesgo de alucinacion inherente a los modelos generativos, agravado por la ausencia de benchmarks publicados que permitan calibrar su fiabilidad.
@@ -108,7 +108,7 @@ Comparativa frente a modelos de la misma categoria en otros backends: no disponi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jashansinghTT/kimi-linear-48b-a3b-instruct-blackhole
+- Repositorio en Hugging Face: https://huggingface.co/jashansinghTT/kimi-linear-48b-a3b-instruct-blackhole
 - Modelo original de Moonshot AI: https://huggingface.co/moonshotai/Kimi-Linear-48B-A3B-Instruct
 - tt-model-manager (Tenstorrent): https://github.com/tenstorrent/tt-model-manager
 - Version de vLLM utilizada, v0.26.0: https://github.com/vllm-project/vllm/releases/tag/v0.26.0

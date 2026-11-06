@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dmsuzuki/mae-classification-2024` es un repositorio publicado en HuggingFace que contiene una implementación funcional, de autoría individual (usuario `dmsuzuki`), de una arquitectura denominada **Mae** orientada a tareas de **clasificación**. El propio autor describe el contenido como un punto de partida experimental: el repositorio prioriza código transparente y pruebas de humo (smoke tests) reproducibles, y omite deliberadamente cualquier afirmación de rendimiento. Se publica bajo licencia BSD-3-Clause y registra 0 descargas y 0 "likes", lo que indica que no ha tenido difusión ni validación por parte de la comunidad.
+`dmsuzuki/mae-classification-2024` es un repositorio publicado en Hugging Face que contiene una implementación funcional, de autoría individual (usuario `dmsuzuki`), de una arquitectura denominada **Mae** orientada a tareas de **clasificación**. El propio autor describe el contenido como un punto de partida experimental: el repositorio prioriza código transparente y pruebas de humo (smoke tests) reproducibles, y omite deliberadamente cualquier afirmación de rendimiento. Se publica bajo licencia BSD-3-Clause y registra 0 descargas y 0 "likes", lo que indica que no ha tenido difusión ni validación por parte de la comunidad.
 
 El peso distribuido (`model.safetensors`) contiene **49.600 parámetros totales**, un volumen que corresponde a un checkpoint de inicialización para verificación, no a un modelo entrenado. La model card es explícita en este punto: el checkpoint "no se presenta como un checkpoint de benchmark entrenado" y "no ha sido entrenado ni auditado en cuanto a robustez, equidad o transferencia de dominio". Por tanto, no debe evaluarse como un modelo de clasificación utilizable en producción, sino como artefacto de referencia de código y de arquitectura.
 
@@ -83,6 +83,6 @@ A modo de contexto cualitativo, la etiqueta "mae" remite habitualmente a impleme
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dmsuzuki/mae-classification-2024
+- Hugging Face: https://huggingface.co/dmsuzuki/mae-classification-2024
 
 No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados obtenidos no guardaban relación con el modelo.

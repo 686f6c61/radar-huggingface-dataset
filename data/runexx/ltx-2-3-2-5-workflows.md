@@ -75,7 +75,7 @@ No se dispone de informacion suficiente para comparar directamente con otros mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RuneXX/LTX-2.3-2.5-Workflows
+- Repositorio Hugging Face: https://huggingface.co/RuneXX/LTX-2.3-2.5-Workflows
 - Repositorio original de workflows LTX-2.3: https://huggingface.co/RuneXX/LTX-2.3-Workflows
 - Modelos oficiales LTX-2.5: https://huggingface.co/Lightricks/LTX-2.5
 - Modelos extraidos LTX-2.3 (Kijai): https://huggingface.co/Kijai/LTX2.3_comfy

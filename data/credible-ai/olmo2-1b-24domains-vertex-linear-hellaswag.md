@@ -89,7 +89,7 @@ No es posible establecer una comparación de rendimiento: este checkpoint no pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-24domains-vertex-linear-hellaswag
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-24domains-vertex-linear-hellaswag
 - Proxy swarm de 30M usado para optimizar la mezcla: https://huggingface.co/credible-ai/olmo2-30M-24domains-vertex
 - Código de LinMix: https://github.com/credibleai/linmix
 - Dataset WebOrganizer/Corpus-200B: https://huggingface.co/datasets/WebOrganizer/Corpus-200B
@@ -100,4 +100,4 @@ No es posible establecer una comparación de rendimiento: este checkpoint no pub
 - Tokenizador GPT-NeoX-20B: https://huggingface.co/EleutherAI/gpt-neox-20b
 - Términos de uso de Common Crawl: https://commoncrawl.org/terms-of-use
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo (solo páginas genéricas de servicios de Google); todos los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo (solo páginas genéricas de servicios de Google); todos los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

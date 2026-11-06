@@ -19,7 +19,7 @@ Su relevancia está en dos frentes: por un lado, el rendimiento declarado (en to
 | Tipos de cuantizacion | No disponible (no se distribuyen pesos ni versiones cuantizadas) |
 | Idiomas soportados | No aplica (no hay procesamiento de lenguaje natural) |
 | Licencia | `other` (la model card no especifica terminos concretos) |
-| Formato de pesos | No disponible. El repositorio de HuggingFace ocupa 0,0 GB y no contiene ficheros de pesos, solo README e imagenes |
+| Formato de pesos | No disponible. El repositorio de Hugging Face ocupa 0,0 GB y no contiene ficheros de pesos, solo README e imagenes |
 | Espacio de acciones | 2000 consignas discretizadas de potencia de bateria en el rango ±200 kW |
 | Aplicacion | Gestion de energia en cadenas de traccion hibridas en serie de mas de 350 kW, uso todoterreno |
 
@@ -75,7 +75,7 @@ No se especifican en la información disponible los valores numéricos concretos
 - VRAM estimada para inferencia: no disponible en la información proporcionada. No se publican pesos ni requisitos. La arquitectura descrita (entrada de 2 dimensiones, tronco con cuello de botella de 128 dimensiones y tres cabezas Q) implica una red de tamaño muy reducido, del orden de decenas de miles de parámetros; una red de esa escala ocupa menos de 1 MB en FP32, pero este cálculo es una estimación derivada de la arquitectura y no un dato publicado por los autores.
 - GPU recomendadas: no disponible. Por el tamaño de la red, la inferencia no requiere GPU; un despliegue típico sería sobre CPU embarcada en la unidad de control del vehículo.
 - Compatibilidad con GPU de consumo: previsiblemente irrelevante, dado que el modelo no necesita aceleración por GPU. No hay datos publicados que lo confirmen.
-- Opciones de despliegue: no se documentan en la información disponible. No hay publicación de pesos en formato GGUF, safetensors ni artefactos ONNX, ni soporte declarado para vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje y no aplicables a este controlador). El repositorio de HuggingFace no contiene ficheros de pesos (0,0 GB).
+- Opciones de despliegue: no se documentan en la información disponible. No hay publicación de pesos en formato GGUF, safetensors ni artefactos ONNX, ni soporte declarado para vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje y no aplicables a este controlador). El repositorio de Hugging Face no contiene ficheros de pesos (0,0 GB).
 - Latencia y throughput estimados: no disponibles. No se publican mediciones de tiempo de inferencia ni de frecuencia de control alcanzable en la unidad embarcada.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ No se dispone de comparativas publicadas frente a arquitecturas de aprendizaje p
 ## Limitaciones y advertencias
 
 - Los datos de entrenamiento (ciclos de trabajo experimentales y mapas motor-generador en ficheros MAT) no son públicos. La reproducibilidad exige datos equivalentes o proporcionados por el patrocinador, lo que limita la validación independiente.
-- No hay pesos entrenados publicados: el repositorio de HuggingFace ocupa 0,0 GB y contiene únicamente README e imágenes. No es posible desplegar ni evaluar el modelo a partir de este repositorio.
+- No hay pesos entrenados publicados: el repositorio de Hugging Face ocupa 0,0 GB y contiene únicamente README e imágenes. No es posible desplegar ni evaluar el modelo a partir de este repositorio.
 - La licencia es `other` y la model card no detalla sus términos. Existe incertidumbre legal sobre el uso comercial, la redistribución o la creación de derivados.
 - El estado del agente es de solo dos dimensiones (SOC y demanda de potencia normalizada). No incorpora variables como temperatura de batería, degradación, pendiente del terreno, altitud o estado del motor, lo que puede limitar la robustez fuera de las condiciones de entrenamiento.
 - La acción se discretiza en 2000 consignas de potencia de batería (±200 kW). Esta granularidad puede no ser suficiente para todos los regímenes de operación y difiere del control continuo que emplean otros enfoques.
@@ -106,7 +106,7 @@ No se dispone de comparativas publicadas frente a arquitecturas de aprendizaje p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SidraBhatti/xi-ddqn-offroad-energy-management
+- Hugging Face: https://huggingface.co/SidraBhatti/xi-ddqn-offroad-energy-management
 - Articulo: *Powertrain-aware explainable reinforcement learning energy management in off-road vehicles*, Energy (Elsevier), 2026: https://doi.org/10.1016/j.energy.2026.141083
 - Codigo: https://github.com/OSU-CAR-MSL/Powertrain-Aware-Explainable-Reinforcement-Learning-Energy-Management-in-Off-Road-Vehicles
 - Financiacion declarada: U.S. Department of Energy y Cummins Inc.

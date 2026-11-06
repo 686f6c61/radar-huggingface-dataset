@@ -4,7 +4,7 @@
 
 GARD (Geometry-Aware Representation Denoising) es un modelo de restauración y reconstrucción 3D multi-vista desarrollado por el CVLab de KAIST (Corea del Sur). Aborda un problema crítico: los modelos feed-forward de reconstrucción 3D funcionan bien con imágenes limpias, pero degradan drásticamente ante artefactos reales como desenfoque de movimiento, ruido u otras distorsiones. En lugar de restaurar píxeles primero y reconstruir geometría después, GARD realiza un denoising por difusión directamente en el espacio de características geométricas de un modelo de estimación de profundidad (Depth Anything 3), lo que permite recuperar simultáneamente la geometría 3D y la imagen de alta calidad en una sola pasada.
 
-El modelo se compone de dos checkpoints: un denoiser basado en un DiT (Diffusion Transformer) con una cabeza DDT (probablemente "Diffusion Denoising Transformer") que opera sobre las representaciones de características de Depth Anything 3, y un decodificador RGB (basado en un adaptador MAE) que reconstruye imágenes desde las representaciones denoised. El repositorio en HuggingFace ocupa 7,6 GB y la licencia es MIT. No se dispone de información sobre el número total de parámetros, la longitud de contexto ni los idiomas soportados, ya que la model card no los especifica.
+El modelo se compone de dos checkpoints: un denoiser basado en un DiT (Diffusion Transformer) con una cabeza DDT (probablemente "Diffusion Denoising Transformer") que opera sobre las representaciones de características de Depth Anything 3, y un decodificador RGB (basado en un adaptador MAE) que reconstruye imágenes desde las representaciones denoised. El repositorio en Hugging Face ocupa 7,6 GB y la licencia es MIT. No se dispone de información sobre el número total de parámetros, la longitud de contexto ni los idiomas soportados, ya que la model card no los especifica.
 
 ## Especificaciones técnicas
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar GARD con otros modelos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jinlovespho/GARD
+- Hugging Face: https://huggingface.co/jinlovespho/GARD
 - Paper (arXiv): https://arxiv.org/abs/2605.26230
 - Página del proyecto: https://cvlab-kaist.github.io/GARD/
 - Repositorio de código: https://github.com/cvlab-kaist/GARD

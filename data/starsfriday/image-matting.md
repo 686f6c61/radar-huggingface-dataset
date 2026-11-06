@@ -26,7 +26,7 @@ No se proporciona información detallada sobre el entrenamiento de estos pesos e
 - Eliminación de fondo en imágenes estáticas.
 - Generación de *alpha matte* de alta precisión (recorte fino de bordes, cabello, etc.).
 - Dos modos de uso: alta calidad (BiRefNet) y velocidad (InSPyReNet).
-- Compatible con pipelines de segmentación de imágenes (HuggingFace pipeline `image-segmentation`).
+- Compatible con pipelines de segmentación de imágenes (Hugging Face pipeline `image-segmentation`).
 - No incluye capacidades de texto, audio ni generación de imágenes.
 
 ## Casos de uso
@@ -64,7 +64,7 @@ No se dispone de información comparativa con otros modelos de *matting* como MO
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/starsfriday/Image-Matting)
+- [Repositorio Hugging Face](https://huggingface.co/starsfriday/Image-Matting)
 - [Proyecto BiRefNet (GitHub)](https://github.com/ZhengPeng7/BiRefNet)
 - [Proyecto InSPyReNet / transparent-background (GitHub)](https://github.com/plemeri/transparent-background)
 - [Repositorio ZIM del mismo autor (GitHub)](https://github.com/starsFriday/ZIM)

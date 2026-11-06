@@ -6,7 +6,7 @@ Este repositorio contiene una colección de cuantizaciones en formato GGUF del m
 
 La relevancia de esta ficha es doble. Por un lado, el modelo base aborda un problema concreto: la escasez de modelos de lenguaje abiertos centrados en turco, un idioma con menos recursos que el inglés en el ecosistema de IA abierta. Por otro, el repositorio de mradermacher resuelve el problema práctico del despliegue: ofrece 12 variantes de cuantización entre 2,8 GB (Q2_K) y 14,6 GB (f16), lo que permite elegir el compromiso entre calidad y huella de memoria según el hardware disponible.
 
-Conviene señalar desde el principio una limitación importante de la información disponible: ni la model card del repositorio GGUF ni los metadatos de HuggingFace documentan la arquitectura concreta, la longitud de contexto, la licencia o los datos exactos de entrenamiento del modelo base. La etiqueta de idioma declarada en este repositorio es `en` (inglés), lo que contradice el nombre del modelo y su origen (Wikipedia turca); se trata de una inconsistencia de metadatos que el usuario debe verificar antes de usarlo en producción.
+Conviene señalar desde el principio una limitación importante de la información disponible: ni la model card del repositorio GGUF ni los metadatos de Hugging Face documentan la arquitectura concreta, la longitud de contexto, la licencia o los datos exactos de entrenamiento del modelo base. La etiqueta de idioma declarada en este repositorio es `en` (inglés), lo que contradice el nombre del modelo y su origen (Wikipedia turca); se trata de una inconsistencia de metadatos que el usuario debe verificar antes de usarlo en producción.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ Conviene señalar desde el principio una limitación importante de la informaci�
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 (16 bpw). No hay cuantizaciones con imatrix/weighted publicadas por el autor en el momento de la ficha |
 | Idiomas soportados | etiqueta declarada: `en` (inglés). El modelo base se denomina y se entrena a partir de Wikipedia en turco, pero los metadatos no declaran oficialmente `tr` |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (este repositorio); el modelo base se distribuye en safetensors, según los metadatos de parámetros de HuggingFace |
+| Formato de pesos | GGUF (este repositorio); el modelo base se distribuye en safetensors, según los metadatos de parámetros de Hugging Face |
 | Tamaño del repositorio | 63,9 GB (incluye las 12 cuantizaciones) |
 | Descargas / likes | 112 descargas, 0 likes |
 | Fecha de creación / actualización | 2025-02-11 / 2026-10-24 |
@@ -113,7 +113,7 @@ No se han encontrado en la información proporcionada resultados que permitan af
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/TurkishWikipedia-LLM-7b-base-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/TurkishWikipedia-LLM-7b-base-GGUF
 - Modelo base: https://huggingface.co/cenkersisman/TurkishWikipedia-LLM-7b-base
 - Página de descargas del autor para este modelo: https://hf.tst.eu/model#TurkishWikipedia-LLM-7b-base-GGUF
 - Página de peticiones y preguntas frecuentes de mradermacher: https://huggingface.co/mradermacher/model_requests

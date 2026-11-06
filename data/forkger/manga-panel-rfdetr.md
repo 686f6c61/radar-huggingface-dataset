@@ -95,7 +95,7 @@ No se dispone de información sobre modelos comparables de detección de paneles
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/forkger/manga-panel-rfdetr
+- Modelo en Hugging Face: https://huggingface.co/forkger/manga-panel-rfdetr
 - RF-DETR (Roboflow): https://github.com/roboflow/rf-detr
 - Dataset Manga109-s: https://huggingface.co/datasets/hal-utokyo/Manga109-s
 - KMReader: https://github.com/kmworks/kmreader

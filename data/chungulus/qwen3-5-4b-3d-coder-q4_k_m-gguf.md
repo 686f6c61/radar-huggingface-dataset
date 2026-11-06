@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chungulus/Qwen3.5-4B-3D-Coder-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Chungulus/Qwen3.5-4B-3D-Coder-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder
 - Checkpoint FP16 de referencia: https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder/tree/16f53e560115a3f55ddf7b455d65417257e29414
 - llama.cpp (commit probado `6414d5b0c9e5895473036c90c2bd305ce4ceccc4`): no se proporciona URL en la informacion disponible.

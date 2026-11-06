@@ -79,9 +79,9 @@ Las siguientes cifras son estimaciones derivadas del tamano del repositorio (19,
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zhongzhu/lowbarena-trial-27b-v1s | 15,6 B (segun safetensors) | No disponible | NVFP4 + FP8 + BF16 (ModelOpt) | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-27B (base) | No disponible | No disponible | BF16 | Apache-2.0 | HuggingFace |
-| AxionML/Qwen3.5-27B-NVFP4 | No disponible | No disponible | NVFP4 | Apache-2.0 | HuggingFace |
+| Zhongzhu/lowbarena-trial-27b-v1s | 15,6 B (segun safetensors) | No disponible | NVFP4 + FP8 + BF16 (ModelOpt) | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-27B (base) | No disponible | No disponible | BF16 | Apache-2.0 | Hugging Face |
+| AxionML/Qwen3.5-27B-NVFP4 | No disponible | No disponible | NVFP4 | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a estos tres artefactos porque la busqueda web no devolvio informacion sobre alternativas equivalentes. No hay datos de rendimiento que permitan una comparacion cuantitativa.
 
@@ -102,7 +102,7 @@ La comparativa se limita a estos tres artefactos porque la busqueda web no devol
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Zhongzhu/lowbarena-trial-27b-v1s
+- Repositorio Hugging Face: https://huggingface.co/Zhongzhu/lowbarena-trial-27b-v1s
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Origen de los pesos NVFP4: https://huggingface.co/AxionML/Qwen3.5-27B-NVFP4
 

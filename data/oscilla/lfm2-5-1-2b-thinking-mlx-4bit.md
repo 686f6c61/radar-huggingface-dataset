@@ -72,8 +72,8 @@ No se dispone de informacion suficiente para realizar una comparativa detallada 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo MLX: https://huggingface.co/Oscilla/LFM2.5-1.2B-Thinking-mlx-4Bit
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking
+- Repositorio Hugging Face del modelo MLX: https://huggingface.co/Oscilla/LFM2.5-1.2B-Thinking-mlx-4Bit
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking
 - Blog de Liquid AI sobre LFM2.5-1.2B-Thinking: https://www.liquid.ai/blog/lfm2-5-1-2b-thinking-on-device-reasoning-under-1gb
 - Blog de Liquid AI sobre la familia LFM2.5: https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai
 - Documentacion de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-1.2b-thinking

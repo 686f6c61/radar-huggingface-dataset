@@ -110,7 +110,7 @@ Frente a otros modelos de 27B del mercado (p. ej., Llama 3.1 8B no es comparable
 
 ## Enlaces
 
-- [Modelo en HuggingFace: ThakiCloud/Qwen3.8-27B-W4A16-GPTQ](https://huggingface.co/ThakiCloud/Qwen3.8-27B-W4A16-GPTQ)
+- [Modelo en Hugging Face: ThakiCloud/Qwen3.8-27B-W4A16-GPTQ](https://huggingface.co/ThakiCloud/Qwen3.8-27B-W4A16-GPTQ)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Dataset de ruido de reconstrucción: ThakiCloud/quantization-rebuild-noise-floor](https://huggingface.co/datasets/ThakiCloud/quantization-rebuild-noise-floor)
 - [Build NVFP4: ThakiCloud/Qwen3.8-27B-NVFP4-GPTQ-mm](https://huggingface.co/ThakiCloud/Qwen3.8-27B-NVFP4-GPTQ-mm)

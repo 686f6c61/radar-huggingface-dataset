@@ -78,7 +78,7 @@ No se dispone de informaci√≥n comparativa con otros modelos de la misma categor√
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Eugleo/pretraining-priors-pirate2x2-d26-sft-pirate-10p)
+- [Modelo en Hugging Face](https://huggingface.co/Eugleo/pretraining-priors-pirate2x2-d26-sft-pirate-10p)
 - [Modelo base (jkminder)](https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-base)
 - [Dataset de registro pirata (gsm8k_pirate)](https://huggingface.co/datasets/jkminder/pretraining-priors-pirate-register)
 - [Corpus pirata 2x2](https://huggingface.co/datasets/Eugleo/pretraining-priors-pirate-2x2)

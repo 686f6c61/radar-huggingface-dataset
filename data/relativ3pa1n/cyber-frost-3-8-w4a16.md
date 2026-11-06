@@ -119,7 +119,7 @@ La comparacion con Laguna S 2.1 procede exclusivamente del propio autor del repo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Relativ3pa1n/CYBER-FROST-3.8-W4A16
+- Repositorio Hugging Face: https://huggingface.co/Relativ3pa1n/CYBER-FROST-3.8-W4A16
 - Modelo base (BF16): https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-BF16
 - Script de servicio vLLM: https://huggingface.co/Relativ3pa1n/CYBER-FROST-3.8-W4A16/blob/main/CYBER-FROST-W4A16-vLLM.sh
 - Licencia Qwen Community: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE

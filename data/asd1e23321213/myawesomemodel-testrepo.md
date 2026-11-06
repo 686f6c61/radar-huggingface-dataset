@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje de propósito general desarrollado por el usuario asd1e23321213, publicado en HuggingFace bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo previo (denominado Model1-v2 en los benchmarks) que incorpora mejoras significativas en razonamiento complejo, matemáticas, programación y lógica, gracias a un mayor uso de recursos computacionales y algoritmos de optimización durante el post-entrenamiento. El modelo también declara una reducción de la tasa de alucinación y un mejor soporte para function calling.
+MyAwesomeModel es un modelo de lenguaje de propósito general desarrollado por el usuario asd1e23321213, publicado en Hugging Face bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo previo (denominado Model1-v2 en los benchmarks) que incorpora mejoras significativas en razonamiento complejo, matemáticas, programación y lógica, gracias a un mayor uso de recursos computacionales y algoritmos de optimización durante el post-entrenamiento. El modelo también declara una reducción de la tasa de alucinación y un mejor soporte para function calling.
 
 La información técnica disponible es muy limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los datos de entrenamiento. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no contiene pesos publicados. La model card incluye una tabla de benchmarks comparativos con otros modelos (Model1, Model2, Model1-v2) y resultados en AIME 2025, pero sin detalles sobre las condiciones de evaluación. A pesar de estas carencias, el modelo se presenta como una opción interesante para tareas de razonamiento y generación, aunque su disponibilidad práctica es actualmente nula.
 
@@ -85,7 +85,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB), por lo que no hay pesos disponibles para descargar ni para realizar pruebas locales.
+- El repositorio de Hugging Face está vacío (0.0 GB), por lo que no hay pesos disponibles para descargar ni para realizar pruebas locales.
 - No se especifican la arquitectura, el número de parámetros ni la longitud de contexto, lo que impide evaluar su viabilidad en entornos de producción.
 - Los benchmarks presentados son auto-reportados por el autor y carecen de verificación independiente o detalles metodológicos.
 - No se indica la lista de idiomas soportados, lo que limita su uso en aplicaciones multilingües.
@@ -96,6 +96,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/asd1e23321213/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/asd1e23321213/MyAwesomeModel-TestRepo
 
 No se proporcionan otros enlaces (papers, blogs, repositorios de código, demos) en la información disponible.

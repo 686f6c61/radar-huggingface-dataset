@@ -4,7 +4,7 @@
 
 Yujana/a2c-PandaReachDense-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno PandaReachDense-v3, implementado con la librería stable-baselines3 y el conjunto de entornos panda-gym. No es un modelo de lenguaje: se trata de una política neuronal que controla un brazo robótico simulado (robot Panda de Franka Emika) para alcanzar una posición objetivo, con una función de recompensa densa basada en la distancia al objetivo.
 
-El modelo lo publica el usuario Yujana en HuggingFace y su relevancia es acotada: es un artefacto de investigación reproducible que sirve como referencia de entrenamiento y como base para comparar algoritmos de RL en tareas de control robótico. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no incluye documentación sobre el dataset de entrenamiento, hiperparámetros ni arquitectura de red.
+El modelo lo publica el usuario Yujana en Hugging Face y su relevancia es acotada: es un artefacto de investigación reproducible que sirve como referencia de entrenamiento y como base para comparar algoritmos de RL en tareas de control robótico. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no incluye documentación sobre el dataset de entrenamiento, hiperparámetros ni arquitectura de red.
 
 La única métrica publicada es la recompensa media obtenida en evaluación: -0,20 +/- 0,09, con una puntuación de -0,29 aplicando el criterio media menos desviación típica, frente al requisito mínimo de -3,5 que exige el pipeline de validación de la model card. Esto indica que el agente resuelve parcialmente la tarea, ya que en PandaReachDense-v3 la recompensa es negativa y se aproxima a cero cuando el efector final alcanza el objetivo.
 
@@ -21,7 +21,7 @@ La única métrica publicada es la recompensa media obtenida en evaluación: -0,
 | Licencia | no disponible |
 | Formato de pesos | checkpoint .zip de stable-baselines3 (fichero `a2c-PandaReachDense-v3.zip`) |
 
-Otros datos de interes: entorno de evaluacion PandaReachDense-v3, libreria stable-baselines3, tarea declarada reinforcement-learning, tamano de repositorio 0,0 GB segun HuggingFace, creado el 2026-09-30 y actualizado el mismo dia.
+Otros datos de interes: entorno de evaluacion PandaReachDense-v3, libreria stable-baselines3, tarea declarada reinforcement-learning, tamano de repositorio 0,0 GB segun Hugging Face, creado el 2026-09-30 y actualizado el mismo dia.
 
 ## Arquitectura y entrenamiento
 
@@ -34,7 +34,7 @@ El entorno PandaReachDense-v3 forma parte de panda-gym y plantea una tarea de al
 - Control de un brazo robotico simulado de 7 grados de libertad en la tarea PandaReachDense-v3.
 - Aprendizaje por refuerzo con recompensa densa: la politica está optimizada para minimizar la distancia al objetivo, no para maximizar recompensas de tipo sparse.
 - Inferencia determinista o estocastica sobre observaciones del entorno, segun el modo de prediccion elegido en stable-baselines3.
-- Carga directa mediante `A2C.load()` y `load_from_hub()` desde el Hub de HuggingFace.
+- Carga directa mediante `A2C.load()` y `load_from_hub()` desde el Hub de Hugging Face.
 - Compatibilidad con el ecosistema stable-baselines3 y con el wrapper de entrenamiento/evaluacion de panda-gym.
 - Generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, function calling, uso de agentes y capacidades multilingues: no disponibles, ya que no es un modelo de lenguaje.
 
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye otros agentes comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yujana/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/Yujana/a2c-PandaReachDense-v3
 - Checkpoint de pesos: https://huggingface.co/Yujana/a2c-PandaReachDense-v3/blob/main/a2c-PandaReachDense-v3.zip
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - panda-gym (entorno mencionado en la model card, sin URL en la informacion disponible): no disponible

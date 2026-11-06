@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ai-ero/toppu-ai-datsui-tsuru` es un repositorio alojado en HuggingFace por el usuario `ai-ero`, publicado el 16 de enero de 2025 y actualizado por ultima vez el 1 de noviembre de 2026. A pesar de su identificador y de estar alojado en una plataforma de modelos, el contenido de la model card no describe ningun modelo de aprendizaje automatico: es una pagina promocional en japones que compara herramientas comerciales de generacion de imagenes para adultos (denominadas "AI脱衣", desnudado mediante IA) e incluye botones de afiliado, tablas comparativas con estilos CSS embebidos y enlaces de llamada a la accion.
+`ai-ero/toppu-ai-datsui-tsuru` es un repositorio alojado en Hugging Face por el usuario `ai-ero`, publicado el 16 de enero de 2025 y actualizado por ultima vez el 1 de noviembre de 2026. A pesar de su identificador y de estar alojado en una plataforma de modelos, el contenido de la model card no describe ningun modelo de aprendizaje automatico: es una pagina promocional en japones que compara herramientas comerciales de generacion de imagenes para adultos (denominadas "AI脱衣", desnudado mediante IA) e incluye botones de afiliado, tablas comparativas con estilos CSS embebidos y enlaces de llamada a la accion.
 
 No se dispone de informacion tecnica alguna sobre arquitectura, parametros, contexto, datos de entrenamiento o pesos. El repositorio no declara pipeline, no lista idiomas y no incluye archivos de modelo referenciados en la informacion disponible. La licencia declarada es `creativeml-openrail-m`, una licencia pensada para modelos generativos de imagen, lo que resulta incoherente con la ausencia de pesos o de descripcion de un modelo concreto.
 
@@ -38,7 +38,7 @@ No hay evidencia de que el repositorio contenga pesos, configuracion de modelo, 
 ## Casos de uso
 
 - No aplicable: el repositorio no contiene un modelo evaluable ni artefactos de inferencia descritos.
-- Auditoria de contenido en HuggingFace: el repositorio puede servir como caso de estudio de model cards que no describen modelos y que alojan contenido promocional o de afiliacion.
+- Auditoria de contenido en Hugging Face: el repositorio puede servir como caso de estudio de model cards que no describen modelos y que alojan contenido promocional o de afiliacion.
 - Monitorizacion de abuso de plataforma: util para equipos que revisan repositorios sospechosos o mal etiquetados en hubs publicos.
 - Formacion en higiene de metadatos: ejemplo de por que los tags de licencia y region no garantizan que un repositorio contenga un modelo real.
 - Analisis de spam SEO en plataformas de modelos: la estructura HTML/CSS embebida y los botones de afiliado son un patron reconocible.
@@ -77,4 +77,4 @@ No disponible. No existe una categoria tecnica comparable, dado que el repositor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ai-ero/toppu-ai-datsui-tsuru
+- Repositorio en Hugging Face: https://huggingface.co/ai-ero/toppu-ai-datsui-tsuru

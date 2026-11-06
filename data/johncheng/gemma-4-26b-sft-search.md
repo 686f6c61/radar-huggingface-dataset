@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma-4-26b-sft-search es un modelo multimodal de tipo image-text-to-text publicado por el usuario JohnCheng en HuggingFace bajo el identificador `JohnCheng/gemma-4-26b-sft-search`. Por el nombre se infiere que se trata de un ajuste fino supervisado (SFT) de un modelo de la familia Gemma 4, orientado a tareas de busqueda, aunque la model card no proporciona documentacion tecnica que lo confirme. El repositorio tiene 0 descargas y 0 likes, y el acceso esta restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+Gemma-4-26b-sft-search es un modelo multimodal de tipo image-text-to-text publicado por el usuario JohnCheng en Hugging Face bajo el identificador `JohnCheng/gemma-4-26b-sft-search`. Por el nombre se infiere que se trata de un ajuste fino supervisado (SFT) de un modelo de la familia Gemma 4, orientado a tareas de busqueda, aunque la model card no proporciona documentacion tecnica que lo confirme. El repositorio tiene 0 descargas y 0 likes, y el acceso esta restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 El dato mas fiable disponible es el recuento de parametros extraido de los ficheros safetensors: 25.805.933.872 parametros, es decir, aproximadamente 25,8 mil millones. Esto situa al modelo en la gama de 26B anunciada en el nombre y lo posiciona en la categoria de modelos densos de gran tamano, adecuados para despliegues en GPU de 40-80 GB o en configuraciones multi-GPU. La libreria declarada es transformers y el pipeline es image-text-to-text, lo que confirma capacidades de vision-lenguaje.
 
@@ -77,7 +77,7 @@ La comparacion es orientativa: no hay datos de rendimiento del modelo evaluado q
 
 - Ausencia total de model card: no se documentan datos de entrenamiento, licencia, idiomas ni limitaciones conocidas.
 - Licencia no disponible: al derivar presumiblemente de Gemma 4, podrian aplicarse los terminos de uso de Google, pero esto no esta confirmado; no debe usarse comercialmente sin aclararlo.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a la reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a la reproducibilidad.
 - Riesgo de alucinacion: inherente a los modelos generativos de este tamano, agravado por la falta de evaluacion publicada.
 - Sesgos desconocidos: no se ha publicado ninguna evaluacion de sesgo o toxicidad.
 - Contexto e idiomas no documentados: no se puede planificar su uso en escenarios multilingues o de contexto largo sin pruebas.
@@ -86,6 +86,6 @@ La comparacion es orientativa: no hay datos de rendimiento del modelo evaluado q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JohnCheng/gemma-4-26b-sft-search
+- Hugging Face: https://huggingface.co/JohnCheng/gemma-4-26b-sft-search
 - Paper de referencia en las etiquetas (transformers original): https://arxiv.org/abs/1910.09700
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

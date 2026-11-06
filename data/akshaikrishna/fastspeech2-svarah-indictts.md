@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FastSpeech 2 Svarah-IndicTTS es un conjunto de dos checkpoints del modelo de síntesis de voz FastSpeech 2, publicados por el usuario akshaikrishna en HuggingFace. Se trata de un trabajo académico desarrollado para una asignatura del IIIT-H (International Institute of Information Technology de Hyderabad), con un checkpoint entrenado en inglés sobre el corpus Svarah y otro entrenado en telugu sobre el corpus IndicTTS. El modelo resuelve la tarea de text-to-speech (TTS) no autorregresiva, convirtiendo texto en mel-espectrogramas que posteriormente requieren un vocoder para generar audio.
+FastSpeech 2 Svarah-IndicTTS es un conjunto de dos checkpoints del modelo de síntesis de voz FastSpeech 2, publicados por el usuario akshaikrishna en Hugging Face. Se trata de un trabajo académico desarrollado para una asignatura del IIIT-H (International Institute of Information Technology de Hyderabad), con un checkpoint entrenado en inglés sobre el corpus Svarah y otro entrenado en telugu sobre el corpus IndicTTS. El modelo resuelve la tarea de text-to-speech (TTS) no autorregresiva, convirtiendo texto en mel-espectrogramas que posteriormente requieren un vocoder para generar audio.
 
 FastSpeech 2 es una arquitectura transformer no autorregresiva que predice duraciones, pitch y energía de forma explícita, lo que permite una síntesis rápida y paralela en comparación con modelos autorregresivos como Tacotron 2. Este repositorio concreto no incluye el vocoder ni el frontend de texto, por lo que su uso práctico requiere integrarlo en un pipeline completo (por ejemplo, con HiFi-GAN). El tamaño del repositorio es de 0,8 GB y la licencia es MIT.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FastSpeech 2 Svarah-IndicTTS | FastSpeech 2 (no autorregresivo) | en, te | no aplica | MIT | HuggingFace (0 descargas) |
+| FastSpeech 2 Svarah-IndicTTS | FastSpeech 2 (no autorregresivo) | en, te | no aplica | MIT | Hugging Face (0 descargas) |
 | Tacotron 2 | Seq2seq autorregresivo | múltiples | no aplica | varía | Implementaciones públicas |
 | VITS | VAE + normalizing flows + GAN | múltiples | no aplica | MIT (implementación) | Implementaciones públicas |
 | FastSpeech 2 (original) | FastSpeech 2 | múltiples | no aplica | MIT (código) | Repositorios de investigación |
@@ -83,5 +83,5 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/akshaikrishna/fastspeech2-svarah-indictts
+- Hugging Face: https://huggingface.co/akshaikrishna/fastspeech2-svarah-indictts
 - Repositorio GitHub (código, configs y resultados): https://github.com/flyme2mars/iiith-fastspeech2-assignment

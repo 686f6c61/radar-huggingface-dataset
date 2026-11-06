@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kubra-a/cybersec-siem-v10-2-gguf es un modelo de lenguaje publicado en HuggingFace por el usuario kubra-a, distribuido exclusivamente en formato GGUF y orientado, a juzgar por su nombre, a tareas de ciberseguridad y analisis de SIEM (Security Information and Event Management). El repositorio no incluye model card descriptiva mas alla de las instrucciones de uso con llama.cpp, por lo que la mayor parte de los metadatos tecnicos habituales (licencia, idiomas, contexto, dataset de entrenamiento) no estan disponibles.
+kubra-a/cybersec-siem-v10-2-gguf es un modelo de lenguaje publicado en Hugging Face por el usuario kubra-a, distribuido exclusivamente en formato GGUF y orientado, a juzgar por su nombre, a tareas de ciberseguridad y analisis de SIEM (Security Information and Event Management). El repositorio no incluye model card descriptiva mas alla de las instrucciones de uso con llama.cpp, por lo que la mayor parte de los metadatos tecnicos habituales (licencia, idiomas, contexto, dataset de entrenamiento) no estan disponibles.
 
 El dato objetivo mas relevante es el recuento de parametros en safetensors: 8.030.261.312, es decir, un modelo denso de aproximadamente 8.000 millones de parametros. Las etiquetas del repositorio ("llama", "llama.cpp", "unsloth", "gguf") indican que se trata de un ajuste fino de un modelo de la familia Llama convertido a GGUF mediante la libreria Unsloth, con un unico archivo publicado en cuantizacion Q4_K_M.
 
@@ -36,7 +36,7 @@ La informacion disponible solo permite afirmar lo siguiente:
 
 - Generacion de texto conversacional: el repositorio incluye la etiqueta `conversational`, y el ejemplo de uso oficial emplea `llama-cli` con el flag `--jinja`, lo que implica soporte de plantilla de chat Jinja para conversaciones multi-turno.
 - Inferencia en local mediante llama.cpp: el modelo esta empaquetado en GGUF y preparado para ejecutarse con `llama-cli` y, en el caso de modelos multimodales, con `llama-mtmd-cli` (la model card menciona ambos comandos de forma generica, sin confirmar que este modelo concreto tenga capacidad multimodal).
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el artefacto puede desplegarse en infraestructura de inferencia compatible con HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el artefacto puede desplegarse en infraestructura de inferencia compatible con Hugging Face.
 - Dominio objetivo: por nomenclatura, se orienta a tareas de ciberseguridad y analisis SIEM, si bien no se documentan capacidades especificas verificadas en ese dominio.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -67,7 +67,7 @@ Las siguientes cifras son estimaciones derivadas del recuento de parametros (8.0
 - Si se dispone de pesos en precision completa (el repositorio original de safetensors del que deriva el GGUF), el requisito seria de aproximadamente 16 GB en FP16.
 - GPU recomendadas: cualquier GPU con 8 GB o mas de VRAM para Q4_K_M (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090). Para FP16, tarjetas de 24 GB (RTX 3090, RTX 4090) o GPUs de datacenter (A100 40/80 GB, H100).
 - Cabe en GPU de consumo: si, en cuantizacion Q4_K_M y con 8 GB o mas de VRAM. Tambien es viable la ejecucion hibrida CPU+GPU o completamente en CPU usando llama.cpp.
-- Opciones de despliegue: llama.cpp (`llama-cli -hf kubra-a/cybersec-siem-v10-2-gguf --jinja`), servidores compatibles con GGUF como Ollama o LM Studio, y endpoints de inferencia compatibles con HuggingFace (etiqueta `endpoints_compatible`). No se documenta soporte para vLLM ni TGI con este artefacto.
+- Opciones de despliegue: llama.cpp (`llama-cli -hf kubra-a/cybersec-siem-v10-2-gguf --jinja`), servidores compatibles con GGUF como Ollama o LM Studio, y endpoints de inferencia compatibles con Hugging Face (etiqueta `endpoints_compatible`). No se documenta soporte para vLLM ni TGI con este artefacto.
 - Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de latencia de primera respuesta; el rendimiento dependera del hardware, de la longitud de contexto y del backend elegido.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparacion 
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| cybersec-siem-v10-2-gguf | 8.030 M | No disponible | No disponible | No disponible | GGUF (Q4_K_M) en HuggingFace |
+| cybersec-siem-v10-2-gguf | 8.030 M | No disponible | No disponible | No disponible | GGUF (Q4_K_M) en Hugging Face |
 | Llama 3.1 8B Instruct | 8.030 M | 128.000 tokens | Licencia de comunidad Llama 3.1 | Ampliamente publicado por Meta | Safetensors, GGUF, multiples backends |
 | Mistral 7B Instruct | 7.240 M | 32.000 tokens | Apache 2.0 | Ampliamente publicado | Safetensors, GGUF |
 | Qwen2.5 7B Instruct | 7.620 M | 128.000 tokens | Apache 2.0 (variantes) | Ampliamente publicado | Safetensors, GGUF |
@@ -96,6 +96,6 @@ La coincidencia de tamano entre este modelo y Llama 3.1 8B es notable, pero no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kubra-a/cybersec-siem-v10-2-gguf
+- Modelo en Hugging Face: https://huggingface.co/kubra-a/cybersec-siem-v10-2-gguf
 - Unsloth (libreria usada para el ajuste fino y la conversion a GGUF): https://github.com/unslothai/unsloth
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios adicionales ni demos asociados a este modelo.

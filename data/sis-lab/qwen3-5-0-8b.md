@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sis-lab/Qwen3.5-0.8B` es una publicacion alojada en HuggingFace por el usuario u organizacion «sis-lab», distribuida bajo licencia Apache-2.0 y con fecha de creacion y ultima actualizacion del 17 de septiembre de 2026, segun los metadatos de la plataforma. En el momento de redactar esta ficha, la model card asociada no contiene mas que la declaracion de licencia: no hay descripcion del modelo, documentacion del entrenamiento, tabla de benchmarks ni instrucciones de uso.
+El repositorio `sis-lab/Qwen3.5-0.8B` es una publicacion alojada en Hugging Face por el usuario u organizacion «sis-lab», distribuida bajo licencia Apache-2.0 y con fecha de creacion y ultima actualizacion del 17 de septiembre de 2026, segun los metadatos de la plataforma. En el momento de redactar esta ficha, la model card asociada no contiene mas que la declaracion de licencia: no hay descripcion del modelo, documentacion del entrenamiento, tabla de benchmarks ni instrucciones de uso.
 
 Por el identificador se puede inferir que se trata de un modelo de aproximadamente 800 millones de parametros, presumiblemente derivado o destilado de la familia Qwen3.5, pero esta inferencia no esta respaldada por ninguna fuente: el autor no la confirma, no se enlaza ningun paper ni repositorio, y la busqueda web no devuelve resultados relacionados (los coincidentes corresponden a entidades homonimas sin vinculacion alguna). El repositorio acumula 0 descargas y 0 «likes», no declara pipeline ni idiomas soportados y solo incluye las etiquetas `license:apache-2.0` y `region:us`.
 
@@ -98,12 +98,12 @@ No es posible establecer una comparacion de rendimiento porque el modelo analiza
 - Alucinacion: no medida. En modelos de menos de mil millones de parametros la tasa de invencion de hechos suele ser elevada, por lo que no deberia usarse para generar informacion factual sin verificacion externa.
 - Licencia: Apache-2.0 permite uso comercial y modificacion, e incluye exencion de garantias y limitacion de responsabilidad. Si el modelo deriva de otro modelo base, podrian aplicar condiciones adicionales del modelo original que el autor no ha declarado.
 - Formato de pesos no confirmado: si el repositorio no contiene safetensors, GGUF u otro formato cargable, el modelo seria inutilizable en la practica.
-- Sin pipeline declarado: las herramientas de HuggingFace no pueden determinar automaticamente la tarea para la que fue entrenado.
+- Sin pipeline declarado: las herramientas de Hugging Face no pueden determinar automaticamente la tarea para la que fue entrenado.
 - Recomendacion operativa: no desplegar en produccion, no usar con datos personales ni en decisiones automatizadas con impacto sobre personas, hasta disponer de documentacion tecnica y evaluaciones reproducibles.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sis-lab/Qwen3.5-0.8B
+- Repositorio en Hugging Face: https://huggingface.co/sis-lab/Qwen3.5-0.8B
 - Paper: no disponible.
 - Repositorio de codigo: no disponible.
 - Demo o espacio interactivo: no disponible.

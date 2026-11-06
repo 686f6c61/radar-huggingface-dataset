@@ -6,7 +6,7 @@ El modelo `sumireyoko/EASY-RVC-Client` es un paquete de pesos para conversion de
 
 El modelo esta disenado especificamente para el ecosistema RVC, que utiliza un enfoque de conversion de voz basado en recuperacion (retrieval-based) en lugar de sintesis texto-a-voz tradicional. Esto significa que el modelo toma una grabacion de audio de entrada y transforma la voz manteniendo la prosodia, el tono y el contenido linguistico, pero cambiando el timbre vocal hacia la voz objetivo entrenada. La autora ofrece ademas modelos adicionales en su tienda BOOTH, incluyendo versiones especializadas en canto y soporte multilingue para japones, ingles y coreano.
 
-La relevancia de este modelo radica en su aplicacion practica para creadores de contenido, musicos y desarrolladores que necesitan herramientas de conversion de voz de alta calidad con licencia permisiva MIT. Al estar alojado en HuggingFace con licencia MIT, permite uso comercial y modificacion sin restricciones significativas, lo que lo diferencia de muchos modelos de voz con licencias mas restrictivas.
+La relevancia de este modelo radica en su aplicacion practica para creadores de contenido, musicos y desarrolladores que necesitan herramientas de conversion de voz de alta calidad con licencia permisiva MIT. Al estar alojado en Hugging Face con licencia MIT, permite uso comercial y modificacion sin restricciones significativas, lo que lo diferencia de muchos modelos de voz con licencias mas restrictivas.
 
 ## Especificaciones tecnicas
 
@@ -61,11 +61,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La au
 
 | Modelo | Tipo | Licencia | Especializacion | Disponibilidad |
 |---|---|---|---|---|
-| sumireyoko/EASY-RVC-Client | RVC | MIT | Voz general (posiblemente canto) | HuggingFace, BOOTH |
-| Modelos RVC de la comunidad (RVC-Project) | RVC | MIT (varia) | Voz general y canto | HuggingFace, GitHub |
+| sumireyoko/EASY-RVC-Client | RVC | MIT | Voz general (posiblemente canto) | Hugging Face, BOOTH |
+| Modelos RVC de la comunidad (RVC-Project) | RVC | MIT (varia) | Voz general y canto | Hugging Face, GitHub |
 | So-VITS-SVC | VITS-based SVC | MIT | Canto y voz | GitHub |
 
-No se dispone de datos comparativos de rendimiento entre estos modelos. La principal diferencia observable es que `sumireyoko/EASY-RVC-Client` esta distribuido a traves de HuggingFace con licencia MIT explicita, mientras que otros modelos RVC de la comunidad pueden tener licencias variables o distribuirse solo a traves de repositorios de GitHub.
+No se dispone de datos comparativos de rendimiento entre estos modelos. La principal diferencia observable es que `sumireyoko/EASY-RVC-Client` esta distribuido a traves de Hugging Face con licencia MIT explicita, mientras que otros modelos RVC de la comunidad pueden tener licencias variables o distribuirse solo a traves de repositorios de GitHub.
 
 ## Limitaciones y advertencias
 
@@ -78,9 +78,9 @@ No se dispone de datos comparativos de rendimiento entre estos modelos. La princ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sumireyoko/EASY-RVC-Client
+- Modelo en Hugging Face: https://huggingface.co/sumireyoko/EASY-RVC-Client
 - Tienda BOOTH de la autora: https://sumireyoko.booth.pm/
 - Modelo "Rinrin" (RVCv2) en BOOTH: https://booth.pm/ja/items/6763693
 - Modelo multilingue (JP/EN/KR) en BOOTH: https://booth.pm/ja/items/7009753
 - Proyecto RVC original: https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI
-- Directorio de modelos RVC en HuggingFace: https://huggingface.co/models?search=RVC
+- Directorio de modelos RVC en Hugging Face: https://huggingface.co/models?search=RVC

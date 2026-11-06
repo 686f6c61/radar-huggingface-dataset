@@ -88,7 +88,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/Qwen3.8-27B-Human-KO-Enterprise-Boundary-i1-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/Qwen3.8-27B-Human-KO-Enterprise-Boundary-i1-GGUF
 - Modelo base: https://huggingface.co/ThakiCloud/Qwen3.8-27B-Human-KO-Enterprise-Boundary
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Qwen3.8-27B-Human-KO-Enterprise-Boundary-GGUF
 - Variante previa v0.2 (i1 GGUF): https://huggingface.co/mradermacher/Qwen3.8-27B-Human-KO-Enterprise-v0.2-i1-GGUF

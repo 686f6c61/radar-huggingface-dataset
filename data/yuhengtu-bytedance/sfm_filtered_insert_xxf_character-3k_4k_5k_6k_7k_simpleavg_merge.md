@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfm_filtered_insert_xxf_character-3k_4k_5k_6k_7k_simpleavg_merge` es un modelo de lenguaje de aproximadamente 6.856 millones de parametros publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No es un modelo entrenado desde cero, sino el resultado de una fusion (merge) de cinco checkpoints intermedios de un mismo entrenamiento, correspondientes a los pasos globales 3000, 4000, 5000, 6000 y 7000 de un modelo base interno denominado `filtered_insert_xxf_character`. La fusion se ha realizado con la herramienta mergekit.
+`sfm_filtered_insert_xxf_character-3k_4k_5k_6k_7k_simpleavg_merge` es un modelo de lenguaje de aproximadamente 6.856 millones de parametros publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No es un modelo entrenado desde cero, sino el resultado de una fusion (merge) de cinco checkpoints intermedios de un mismo entrenamiento, correspondientes a los pasos globales 3000, 4000, 5000, 6000 y 7000 de un modelo base interno denominado `filtered_insert_xxf_character`. La fusion se ha realizado con la herramienta mergekit.
 
 El modelo se ha construido mediante el metodo de fusion lineal (`linear`) con normalizacion activada (`normalize: true`) y pesos identicos de 1.0 para cada uno de los cinco checkpoints. El resultado es, en la practica, una media simple de los pesos (de ahi el sufijo `simpleavg` del nombre), una tecnica habitual para promediar trayectorias de entrenamiento y reducir el ruido de checkpoints individuales. El checkpoint del paso 7000 actua ademas como base declarada.
 
@@ -44,7 +44,7 @@ Dado que no hay model card descriptiva, benchmarks ni declaracion de idiomas, lo
 - Generacion de texto en prototipos internos: al ser un modelo denso de ~7B con pesos en safetensors, puede cargarse con `transformers` para pruebas de generacion en entornos controlados.
 - Dialogo experimental: el tag `conversational` permite probar el modelo en tareas de conversacion multi-turno, aunque la ausencia de datos sobre el ajuste conversacional obliga a validar la calidad manualmente.
 - Fine-tuning posterior sobre dominio especifico: al publicarse los pesos completos, sirve como punto de partida para ajuste supervisado en tareas concretas, siempre que se resuelva la ambiguedad de licencia.
-- Despliegue como endpoint de inferencia: los tags `text-generation-inference` y `endpoints_compatible` indican que puede servirse con TGI detras de una API compatible con el endpoint de HuggingFace.
+- Despliegue como endpoint de inferencia: los tags `text-generation-inference` y `endpoints_compatible` indican que puede servirse con TGI detras de una API compatible con el endpoint de Hugging Face.
 - Evaluacion comparativa de tecnicas de merge: util para contrastar la fusion lineal normalizada frente a otros metodos de mergekit (SLERP, TIES, DARE) sobre el mismo conjunto de checkpoints.
 - Reproduccion de experimentos de escalado de checkpoints: el nombre del modelo codifica los pasos 3k-7k, lo que facilita estudiar como evoluciona el modelo a lo largo del entrenamiento y si el promedio mejora al checkpoint final.
 
@@ -67,10 +67,10 @@ La comparacion se realiza con modelos densos de tamano equivalente y, cuando es 
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sfm_filtered_insert_xxf_character-..._simpleavg_merge | 6,86B | GPT-NeoX | no disponible | no disponible | HuggingFace, 0 descargas |
-| Pythia-6.9B (EleutherAI) | 6,9B | GPT-NeoX | 2048 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama 2 7B (Meta) | 6,7B | Transformer decoder-only | 4096 tokens | Llama 2 Community License | HuggingFace |
-| Mistral 7B (Mistral AI) | 7,3B | Transformer decoder-only | 8192 tokens | Apache 2.0 | HuggingFace |
+| sfm_filtered_insert_xxf_character-..._simpleavg_merge | 6,86B | GPT-NeoX | no disponible | no disponible | Hugging Face, 0 descargas |
+| Pythia-6.9B (EleutherAI) | 6,9B | GPT-NeoX | 2048 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama 2 7B (Meta) | 6,7B | Transformer decoder-only | 4096 tokens | Llama 2 Community License | Hugging Face |
+| Mistral 7B (Mistral AI) | 7,3B | Transformer decoder-only | 8192 tokens | Apache 2.0 | Hugging Face |
 
 Nota: la comparativa de rendimiento no puede completarse porque el modelo de esta ficha no publica ningun resultado de evaluacion. La similitud arquitectonica con Pythia-6.9B es la mas alta de la tabla, dado que ambos usan GPT-NeoX, pero se desconoce si comparten configuracion de capas, dimension de embeddings o tokenizador.
 
@@ -88,7 +88,7 @@ Nota: la comparativa de rendimiento no puede completarse porque el modelo de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-3k_4k_5k_6k_7k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-3k_4k_5k_6k_7k_simpleavg_merge
 - mergekit (herramienta de fusion): https://github.com/cg123/mergekit
 - Paper del metodo de fusion lineal (referenciado por el tag `arxiv:2203.05482`): https://arxiv.org/abs/2203.05482
 - No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, repos o demos) asociados a este modelo.

@@ -72,6 +72,6 @@ No hay datos publicados que permitan una comparativa fiable. Este modelo es un c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bratao/llama7b-finetuned-openie-lora
+- Repositorio Hugging Face: https://huggingface.co/bratao/llama7b-finetuned-openie-lora
 - Modelo base identificado en config: https://huggingface.co/NousResearch/Llama-2-7b-hf
 - Otros enlaces: no se encontraron en la busqueda web (papers, blogs o demos adicionales).

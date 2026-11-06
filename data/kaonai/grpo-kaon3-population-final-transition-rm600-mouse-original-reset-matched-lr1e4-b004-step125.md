@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kaonai/grpo-kaon3-population-final-transition (este) | 25.8B | no disponible | no disponible | HuggingFace |
-| Gemma 3 27B (base similar) | 27B | 128K | Gemma Terms of Use | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | HuggingFace |
-| Mistral Large 2 | 123B | 128K | Mistral Research License | HuggingFace |
+| kaonai/grpo-kaon3-population-final-transition (este) | 25.8B | no disponible | no disponible | Hugging Face |
+| Gemma 3 27B (base similar) | 27B | 128K | Gemma Terms of Use | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | Hugging Face |
+| Mistral Large 2 | 123B | 128K | Mistral Research License | Hugging Face |
 
 La comparativa directa es limitada porque no se dispone de benchmarks publicados para este modelo. Frente a Gemma 3 27B, su base arquitectonica, este checkpoint anade un entrenamiento GRPO especifico que podria mejorar la calidad de respuesta en tareas alineadas con el modelo de recompensa, pero a costa de una licencia no especificada y sin datos de rendimiento verificables.
 
@@ -79,7 +79,7 @@ La comparativa directa es limitada porque no se dispone de benchmarks publicados
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kaonai/grpo-kaon3-population-final-transition-rm600-mouse-original-reset-matched-lr1e4-b004-step125
+- Repositorio Hugging Face: https://huggingface.co/kaonai/grpo-kaon3-population-final-transition-rm600-mouse-original-reset-matched-lr1e4-b004-step125
 - Modelo base: https://huggingface.co/kaonai/kaon-c-gemma4-26b-v10.1
 - Modelo de recompensa: https://huggingface.co/kaonai/population-final-transition-rm-existing-explicit-s42-step600
 - Sitio web de Kaon AI: https://kaon.io/

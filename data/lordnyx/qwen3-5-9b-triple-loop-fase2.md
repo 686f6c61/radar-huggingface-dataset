@@ -90,7 +90,7 @@ Quantization types: "safetensors en bf16; GGUF (se documenta Q5_K_M ≈ 6,02 GB)
 
 Let me write the final markdown.## Resumen
 
-Qwen3.5-9B Triple-Loop (Phase 2 — RL Step 30) es un ajuste fino del modelo base Qwen/Qwen3.5-9B publicado por el usuario Lordnyx en HuggingFace. Su particularidad no es tanto el ajuste como la topología de ejecución: el checkpoint aplica un esquema denominado LoopSplit, en el que 32 bloques físicos de transformer se ejecutan formando una profundidad lógica de 64 capas, al repetir tres veces el bloque central (capas 8-23) con pesos compartidos. Sobre esa base, la Phase 2 aplica 30 pasos de aprendizaje por refuerzo (GRPO / R1-Zero) orientados a la adherencia a esquemas de tool calling, al razonamiento en cadena estructurado con etiquetas `<think>` y al razonamiento contrastivo.
+Qwen3.5-9B Triple-Loop (Phase 2 — RL Step 30) es un ajuste fino del modelo base Qwen/Qwen3.5-9B publicado por el usuario Lordnyx en Hugging Face. Su particularidad no es tanto el ajuste como la topología de ejecución: el checkpoint aplica un esquema denominado LoopSplit, en el que 32 bloques físicos de transformer se ejecutan formando una profundidad lógica de 64 capas, al repetir tres veces el bloque central (capas 8-23) con pesos compartidos. Sobre esa base, la Phase 2 aplica 30 pasos de aprendizaje por refuerzo (GRPO / R1-Zero) orientados a la adherencia a esquemas de tool calling, al razonamiento en cadena estructurado con etiquetas `<think>` y al razonamiento contrastivo.
 
 El modelo tiene 8.953.803.264 parámetros reales según los tensores en safetensors (la model card cita ~9.200 millones, una cifra ligeramente superior a la del recuento del repositorio). Se distribuye con licencia Apache 2.0, en formatos safetensors (bf16) y GGUF, y declara soporte únicamente para inglés y portugués. El repositorio ocupa 73,2 GB, lo que sugiere la coexistencia de varias cuantizaciones y artefactos de entrenamiento junto a los pesos principales.
 
@@ -193,7 +193,7 @@ Para el resto de alternativas de la misma categoría (modelos densos de ~9B con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lordnyx/qwen3.5-9b-triple-loop-fase2
+- Modelo en Hugging Face: https://huggingface.co/Lordnyx/qwen3.5-9b-triple-loop-fase2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
 - Plataforma de cómputo empleada en el entrenamiento: https://modal.com

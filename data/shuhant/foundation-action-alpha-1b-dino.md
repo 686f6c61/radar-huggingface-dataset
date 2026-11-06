@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`foundation-action-alpha-1b-dino` es un modelo publicado por el usuario shuhant (Shuhan Tan) en HuggingFace, con 1.265.416.216 parametros totales y un peso de repositorio de 4,5 GB. Por sus etiquetas (`foundation-action`, `world-model`, `pareto`, `dino`), se enmarca en el ambito de los modelos de accion para robotica y modelos de mundo, y el sufijo `dino` apunta a un codificador visual basado en DINO. El autor mantiene ademas el modelo relacionado `shuhant/foundational_action`, clasificado por HuggingFace en la categoria Robotics, lo que refuerza la hipotesis de uso en tareas de percepcion y accion.
+`foundation-action-alpha-1b-dino` es un modelo publicado por el usuario shuhant (Shuhan Tan) en Hugging Face, con 1.265.416.216 parametros totales y un peso de repositorio de 4,5 GB. Por sus etiquetas (`foundation-action`, `world-model`, `pareto`, `dino`), se enmarca en el ambito de los modelos de accion para robotica y modelos de mundo, y el sufijo `dino` apunta a un codificador visual basado en DINO. El autor mantiene ademas el modelo relacionado `shuhant/foundational_action`, clasificado por Hugging Face en la categoria Robotics, lo que refuerza la hipotesis de uso en tareas de percepcion y accion.
 
-El acceso al modelo esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. La licencia declarada es `nvidia-internal-research`, lo que lo situa fuera del uso comercial abierto y lo vincula al ecosistema de investigacion interna de NVIDIA.
+El acceso al modelo esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. La licencia declarada es `nvidia-internal-research`, lo que lo situa fuera del uso comercial abierto y lo vincula al ecosistema de investigacion interna de NVIDIA.
 
 La relevancia de esta ficha es limitada por la escasez de informacion publica: no se han publicado resultados de benchmarks, no hay idiomas declarados, no consta pipeline y no se dispone de documentacion tecnica en la informacion consultada. Cualquier dato adicional debe verificarse directamente en el repositorio tras obtener acceso.
 
@@ -34,7 +34,7 @@ La informacion disponible no permite confirmar capacidades concretas. A partir d
 - Ambito declarado: modelo de accion para robotica y modelo de mundo (tags `foundation-action` y `world-model`).
 - Componente visual: probablemente un codificador DINO por el sufijo del nombre y el tag `dino`, orientado a representaciones visuales auto-supervisadas.
 - Generacion de texto, razonamiento, codigo, matematicas, tool calling, agentes, capacidades multilingues, vision-language, audio o modo de razonamiento explicito: no disponible en la informacion proporcionada.
-- No se declara pipeline en HuggingFace, por lo que no se puede confirmar el tipo de tarea soportada de forma estandar.
+- No se declara pipeline en Hugging Face, por lo que no se puede confirmar el tipo de tarea soportada de forma estandar.
 
 ## Casos de uso
 
@@ -81,18 +81,18 @@ No se dispone de modelos comparables confirmados en la misma categoria (modelos 
 ## Limitaciones y advertencias
 
 - Ausencia total de model card accesible: no hay documentacion de arquitectura, datos de entrenamiento ni evaluacion.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita la reproducibilidad abierta.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita la reproducibilidad abierta.
 - Licencia `nvidia-internal-research`: no autoriza uso comercial general; cualquier uso fuera de investigacion interna debe revisarse legalmente.
 - Sin benchmarks publicados: no hay evidencia cuantitativa de rendimiento frente a alternativas.
 - Sin idiomas declarados: no se puede asumir soporte multilingue.
-- Sin pipeline declarado: podria no ser directamente compatible con las interfaces estandar de HuggingFace para inferencia.
+- Sin pipeline declarado: podria no ser directamente compatible con las interfaces estandar de Hugging Face para inferencia.
 - Repositorio sin descargas ni likes en el momento del registro: se trata de una publicacion muy reciente y sin validacion por parte de la comunidad.
 - Riesgo de alucinacion y sesgos: no evaluable sin informacion sobre datos de entrenamiento y evaluacion.
 - Las fechas de creacion y actualizacion indicadas (2026-10-06) deben tratarse con cautela al verificar la vigencia del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shuhant/foundation-action-alpha-1b-dino
+- Modelo en Hugging Face: https://huggingface.co/shuhant/foundation-action-alpha-1b-dino
 - Modelo relacionado del mismo autor: https://huggingface.co/shuhant/foundational_action
 - Perfil de modelos del autor: https://huggingface.co/shuhant/models
 - Referencia sobre DINO (contexto del codificador visual): https://towardsdatascience.com/dino-a-foundation-model-for-computer-vision-4cb08e821b18/

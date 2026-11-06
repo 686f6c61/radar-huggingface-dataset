@@ -23,7 +23,7 @@ El modelo parte de Google FLAN-T5-small (77 millones de parámetros) y se ha fin
 
 El modelo utiliza la arquitectura T5 (Text-to-Text Transfer Transformer), un transformer encoder-decoder desarrollado por Google. Se inicializa desde el checkpoint FLAN-T5-small y se fine-tunea en dos etapas. La primera etapa emplea ejemplos de títulos de pestañas reales de PorkiCoder. La segunda etapa continúa el entrenamiento con una mezcla de títulos de producción cortos y salidas generadas por tres modelos profesores (Grok, Claude Opus y Codex), tras eliminar cualquier tarea que solapara con los conjuntos de prueba. No se menciona el uso de RLHF ni DPO.
 
-Una característica técnica destacable es que la capa de salida (lm_head) no está atada a las embeddings de entrada (tie_word_embeddings = False). Si un cargador re-ata estas capas, el modelo produce salidas incoherentes (palabras como "reheat" o "blackjack"). Por ello, el widget de HuggingFace está desactivado y el código de inferencia incluye una verificación explícita de esta condición. Además, el modelo no utiliza ningún post-proceso (como el llamado "Hybrid A" o "centroid/highlighter"): se toma la salida cruda tal cual.
+Una característica técnica destacable es que la capa de salida (lm_head) no está atada a las embeddings de entrada (tie_word_embeddings = False). Si un cargador re-ata estas capas, el modelo produce salidas incoherentes (palabras como "reheat" o "blackjack"). Por ello, el widget de Hugging Face está desactivado y el código de inferencia incluye una verificación explícita de esta condición. Además, el modelo no utiliza ningún post-proceso (como el llamado "Hybrid A" o "centroid/highlighter"): se toma la salida cruda tal cual.
 
 ## Capacidades
 
@@ -66,15 +66,15 @@ La latencia medida en Apple M4 Max CPU (un hilo) es de 29,3 ms por título, fren
 - El modelo tiene 77M de parámetros y pesa 0,3 GB, por lo que cabe en cualquier equipo moderno sin GPU.
 - VRAM estimada: no requiere GPU; puede ejecutarse en CPU. Si se usa GPU, cualquier GPU con 1-2 GB de VRAM es suficiente.
 - GPU recomendadas: ninguna específica; funciona bien en CPU (por ejemplo, Apple M4 Max con 29,3 ms por título).
-- Opciones de despliegue: Transformers (Python), Text Generation Inference (TGI) según los tags de HuggingFace. No es compatible con llama.cpp ni Ollama por ser un modelo encoder-decoder T5.
+- Opciones de despliegue: Transformers (Python), Text Generation Inference (TGI) según los tags de Hugging Face. No es compatible con llama.cpp ni Ollama por ser un modelo encoder-decoder T5.
 - Latencia: ~29 ms por título en CPU de gama alta; en hardware más modesto la latencia será mayor pero sigue siendo aceptable para etiquetado en tiempo real.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Rendimiento (media 1-10) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PorkiCoder Tab Namer 77M | 76,9M | No especificado (96 en ejemplo) | 7,28 (500 tareas) / 7,59 (holdout A) | Apache 2.0 | HuggingFace |
-| Google FLAN-T5-small (base) | 77M | 512 tokens | 3,12 (500 tareas) | Apache 2.0 | HuggingFace |
+| PorkiCoder Tab Namer 77M | 76,9M | No especificado (96 en ejemplo) | 7,28 (500 tareas) / 7,59 (holdout A) | Apache 2.0 | Hugging Face |
+| Google FLAN-T5-small (base) | 77M | 512 tokens | 3,12 (500 tareas) | Apache 2.0 | Hugging Face |
 
 No se dispone de otros modelos comparables especializados en etiquetado de pestañas de agentes en el momento de la redacción. El único punto de referencia directo es el modelo base FLAN-T5-small, que el propio modelo supera ampliamente en la tarea específica.
 
@@ -84,12 +84,12 @@ No se dispone de otros modelos comparables especializados en etiquetado de pesta
 - No se han evaluado sesgos; al ser un modelo pequeño entrenado en un dominio muy específico, su comportamiento fuera de ese dominio es impredecible.
 - Riesgo de alucinación: si la tarea de entrada es ambigua o contiene información contradictoria, el título generado puede no reflejar la tarea real.
 - Requisito técnico crítico: la capa de salida no está atada a las embeddings de entrada. Si se carga con un framework que re-ata estas capas (por ejemplo, ciertos cargadores automáticos), el modelo generará texto incoherente. El código de inferencia debe verificar `tie_word_embeddings is False` y restaurar manualmente las embeddings si es necesario.
-- El widget de HuggingFace está desactivado deliberadamente para evitar este problema.
+- El widget de Hugging Face está desactivado deliberadamente para evitar este problema.
 - Licencia Apache 2.0 permite uso comercial sin restricciones adicionales, pero el modelo está diseñado específicamente para el ecosistema PorkiCoder; su uso en otros contextos requerirá adaptación.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/porkr/porkicoder-tab-namer-77m
+- Modelo en Hugging Face: https://huggingface.co/porkr/porkicoder-tab-namer-77m
 - PorkiCoder (web oficial): https://porkicoder.com/
 - Changelog de PorkiCoder: https://porkicoder.com/changelog.html
 - Blog de PorkiCoder (productividad y carga cognitiva): https://porkicoder.com/blog/posts/the-2026-productivity-shift-optimizing-for-cognitive-load.html

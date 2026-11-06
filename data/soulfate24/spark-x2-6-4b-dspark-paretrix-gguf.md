@@ -87,9 +87,9 @@ Aceleración de los drafts (objetivo Precision-42pc, contexto 4096, KV f16, RTX 
 
 | Modelo | Parámetros | Contexto | Cuantización destacada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spark-X2.6-4B-DSpark-Paretrix | 4,1 B | 131.072 (base) | GGUF Paretrix + drafts DSpark | Apache 2.0 | HuggingFace |
-| XHToken/Spark-X2.6-4B (base) | 4,1 B | 131.072 | safetensors / GGUF stock | No disponible en la información | HuggingFace |
-| XHToken/Spark-X2.6-4B-DSpark-GGUF | 4,1 B | 131.072 | GGUF con draft oficial | No disponible en la información | HuggingFace |
+| Spark-X2.6-4B-DSpark-Paretrix | 4,1 B | 131.072 (base) | GGUF Paretrix + drafts DSpark | Apache 2.0 | Hugging Face |
+| XHToken/Spark-X2.6-4B (base) | 4,1 B | 131.072 | safetensors / GGUF stock | No disponible en la información | Hugging Face |
+| XHToken/Spark-X2.6-4B-DSpark-GGUF | 4,1 B | 131.072 | GGUF con draft oficial | No disponible en la información | Hugging Face |
 
 No se dispone de datos de benchmarks de tareas que permitan comparar el rendimiento cualitativo con modelos de otros autores de tamaño similar; la comparación disponible se limita a las métricas de cuantización frente a los escalones stock del mismo modelo.
 
@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks de tareas que permitan comparar el rendimie
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Soulfate24/Spark-X2.6-4B-DSpark-Paretrix-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Soulfate24/Spark-X2.6-4B-DSpark-Paretrix-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - GGUF base con DSpark: https://huggingface.co/XHToken/Spark-X2.6-4B-DSpark-GGUF
 - Suite de cuantización Paretrix: https://huggingface.co/Soulfate24/Paretrix_Quantization_Suite

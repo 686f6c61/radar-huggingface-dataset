@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables publicados para esta tar
 
 | Modelo | Tarea | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `makactuary/bjj-bottom-posture` | Clasificación de postura inferior en 3 clases | No disponible (random forest) | No aplica | Public domain dedication (pesos) / MIT (código) | HuggingFace |
+| `makactuary/bjj-bottom-posture` | Clasificación de postura inferior en 3 clases | No disponible (random forest) | No aplica | Public domain dedication (pesos) / MIT (código) | Hugging Face |
 | Alternativas | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de información sobre modelos comparables publicados para esta tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/makactuary/bjj-bottom-posture
+- Modelo en Hugging Face: https://huggingface.co/makactuary/bjj-bottom-posture
 - Dataset de entrenamiento: https://huggingface.co/datasets/makactuary/grapplemap-bjj-graph
 - Repositorio de código (incluye `grapplemap_models.py`, MIT): https://github.com/000MAK/quantix-martial-arts-engine
 - GrappleMap (Eelis van der Weegen): https://github.com/Eelis/GrappleMap

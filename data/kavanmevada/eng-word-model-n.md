@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kavanmevada/eng-word-model-n` es un adaptador LoRA publicado en HuggingFace por el usuario kavanmevada, construido sobre el modelo base Qwen/Qwen3.5-0.8B. Se trata, por tanto, de un fine-tuning mediante PEFT (Parameter-Efficient Fine-Tuning) del modelo multimodal Qwen3.5-0.8B, orientado a la tarea image-text-to-text segun declara el pipeline del repositorio. El repositorio contiene unicamente los pesos del adaptador (2,0 GB) y la libreria declarada es `peft`, lo que implica que para su uso es necesario cargar primero el modelo base y despues aplicar el adaptador.
+`kavanmevada/eng-word-model-n` es un adaptador LoRA publicado en Hugging Face por el usuario kavanmevada, construido sobre el modelo base Qwen/Qwen3.5-0.8B. Se trata, por tanto, de un fine-tuning mediante PEFT (Parameter-Efficient Fine-Tuning) del modelo multimodal Qwen3.5-0.8B, orientado a la tarea image-text-to-text segun declara el pipeline del repositorio. El repositorio contiene unicamente los pesos del adaptador (2,0 GB) y la libreria declarada es `peft`, lo que implica que para su uso es necesario cargar primero el modelo base y despues aplicar el adaptador.
 
 El modelo base Qwen3.5-0.8B es un modelo causal con encoder de vision desarrollado por el equipo Qwen (Alibaba), con 0,8 mil millones de parametros, arquitectura hibrida que combina Gated DeltaNet (atencion lineal) con atencion con compuertas y capas FFN, y una longitud de contexto nativa de 262.144 tokens. Incorpora entrenamiento multimodal con fusion temprana, soporte declarado de 201 idiomas y un modo de decodificacion con Multi-Token Prediction (MTP).
 
@@ -70,10 +70,10 @@ Estos datos corresponden al modelo base, no al adaptador `eng-word-model-n`, cuy
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kavanmevada/eng-word-model-n (adaptador) | 0,8B base + LoRA | 262.144 | Apache 2.0 | HuggingFace, 142 descargas | Sin model card propia ni benchmarks |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | 262.144 | Apache 2.0 | HuggingFace, oficial | Modelo multimodal con benchmarks publicados |
-| Qwen3-1.7B | 1,7B | no disponible en la informacion | Apache 2.0 | HuggingFace, oficial | Alternativa de mayor tamano con MMLU-Pro 40,2 |
-| Qwen3.5-2B | 2B | 262.144 (familia) | Apache 2.0 | HuggingFace, oficial | Mejor rendimiento que el 0,8B en MMLU-Pro (55,3) |
+| kavanmevada/eng-word-model-n (adaptador) | 0,8B base + LoRA | 262.144 | Apache 2.0 | Hugging Face, 142 descargas | Sin model card propia ni benchmarks |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | 262.144 | Apache 2.0 | Hugging Face, oficial | Modelo multimodal con benchmarks publicados |
+| Qwen3-1.7B | 1,7B | no disponible en la informacion | Apache 2.0 | Hugging Face, oficial | Alternativa de mayor tamano con MMLU-Pro 40,2 |
+| Qwen3.5-2B | 2B | 262.144 (familia) | Apache 2.0 | Hugging Face, oficial | Mejor rendimiento que el 0,8B en MMLU-Pro (55,3) |
 
 La comparativa directa con el adaptador no es posible por falta de evaluacion. Frente al modelo base, el adaptador solo se justifica si la tarea concreta para la que fue entrenado mejora, algo que no esta documentado.
 
@@ -90,7 +90,7 @@ La comparativa directa con el adaptador no es posible por falta de evaluacion. F
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kavanmevada/eng-word-model-n
+- Repositorio Hugging Face: https://huggingface.co/kavanmevada/eng-word-model-n
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE
 - Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

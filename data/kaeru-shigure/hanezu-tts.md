@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hanezu TTS | 1,7 M (+70 M auxiliar) | no disponible | Japonés (con inglés parcial) | MIT | HuggingFace, demo web, GitHub |
+| Hanezu TTS | 1,7 M (+70 M auxiliar) | no disponible | Japonés (con inglés parcial) | MIT | Hugging Face, demo web, GitHub |
 | Qwen3-TTS | no disponible en la información | no disponible | no disponible | no disponible | Usado como generador de datos sintéticos |
 | Modelos TTS neuronales de gran escala | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,7 +82,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kaeru-shigure/hanezu-tts
+- Hugging Face: https://huggingface.co/kaeru-shigure/hanezu-tts
 - Demo: https://kaeru-shigure.github.io/hanezu-tts/
 - Código: https://github.com/kaeru-shigure/hanezu-tts
 - GitHub del autor: https://github.com/kaeru-shigure

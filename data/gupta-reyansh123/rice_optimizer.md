@@ -4,7 +4,7 @@
 
 Rice_Optimizer es un modelo de aprendizaje automático desarrollado por gupta-reyansh123, diseñado para tareas de optimización en el ámbito agrícola, específicamente orientado al cultivo del arroz. El modelo utiliza una arquitectura BigBird, una variante de transformer optimizada para manejar secuencias largas mediante atención dispersa, lo que lo hace adecuado para procesar datos climáticos y agronómicos extensos. Con 128 millones de parámetros, se posiciona como un modelo de tamaño moderado, viable para despliegue en entornos con recursos computacionales limitados.
 
-La relevancia actual de este modelo radica en la creciente demanda de herramientas de agricultura de precisión que integren datos climáticos en tiempo real para optimizar decisiones de siembra, riego y fertilización. Aunque el repositorio de HuggingFace no proporciona información detallada sobre el entrenamiento o las capacidades específicas, los proyectos asociados en GitHub sugieren una orientación hacia la asistencia en la toma de decisiones agrícolas, como la predicción de rendimiento y la gestión de riesgos climáticos. El modelo se publicó en agosto de 2026, lo que indica un desarrollo reciente, aunque su adopción aún es limitada (0 descargas).
+La relevancia actual de este modelo radica en la creciente demanda de herramientas de agricultura de precisión que integren datos climáticos en tiempo real para optimizar decisiones de siembra, riego y fertilización. Aunque el repositorio de Hugging Face no proporciona información detallada sobre el entrenamiento o las capacidades específicas, los proyectos asociados en GitHub sugieren una orientación hacia la asistencia en la toma de decisiones agrícolas, como la predicción de rendimiento y la gestión de riesgos climáticos. El modelo se publicó en agosto de 2026, lo que indica un desarrollo reciente, aunque su adopción aún es limitada (0 descargas).
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No se han identificado modelos directamente comparables en el repositorio o en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gupta-reyansh123/Rice_Optimizer
+- Hugging Face: https://huggingface.co/gupta-reyansh123/Rice_Optimizer
 - GitHub (paddy-climate-optimizer): https://github.com/techkamalesh878officials/paddy-climate-optimizer
 - GitHub (fertilizer optimizer): https://github.com/Keerthib2005/Sustainable_fertilizer_usage_optimizer_for_Sona_masuri_rice_yield_Enhancement-
 - Artículo ScienceDirect (imágenes UAV): https://www.sciencedirect.com/science/article/pii/S1161030125000085

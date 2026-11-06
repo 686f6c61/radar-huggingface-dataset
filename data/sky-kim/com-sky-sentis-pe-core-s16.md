@@ -6,7 +6,7 @@
 
 El modelo embebe recortes de imagen y texto en inglés en un espacio compartido de 512 dimensiones, con entrada visual fija de 384x384 píxeles y una longitud de contexto textual de solo 32 tokens. Es relevante para desarrolladores de videojuegos, herramientas de edición y aplicaciones de visión por computador que necesitan inferencia local de bajo coste en GPU de consumo, con una paridad numérica verificada frente a PyTorch y ONNX Runtime.
 
-La ficha describe únicamente lo que el autor documenta en la model card y en los metadatos de HuggingFace; no se dispone de información sobre el entrenamiento original de PE-Core-S16-384 más allá de su procedencia.
+La ficha describe únicamente lo que el autor documenta en la model card y en los metadatos de Hugging Face; no se dispone de información sobre el entrenamiento original de PE-Core-S16-384 más allá de su procedencia.
 
 ## Especificaciones tecnicas
 
@@ -76,8 +76,8 @@ Además, `EmbedText` frente a PyTorch alcanza una similitud coseno de 1,000000. 
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| com.sky.sentis.pe-core-s16 | no disponible | 32 tokens de texto; imagen 384x384 | Apache 2.0 | `.sentis` (Unity Sentis) | HuggingFace, 0 descargas |
-| facebook/PE-Core-S16-384 | no disponible | no disponible en esta ficha | Apache 2.0 | PyTorch (referencia) | HuggingFace |
+| com.sky.sentis.pe-core-s16 | no disponible | 32 tokens de texto; imagen 384x384 | Apache 2.0 | `.sentis` (Unity Sentis) | Hugging Face, 0 descargas |
+| facebook/PE-Core-S16-384 | no disponible | no disponible en esta ficha | Apache 2.0 | PyTorch (referencia) | Hugging Face |
 | CLIP ViT-B/16 de OpenAI | no disponible en esta ficha | 77 tokens | MIT (según la versión original) | PyTorch, ONNX | Amplia |
 
 La comparación con alternativas concretas no está disponible en la información proporcionada; los datos de los modelos alternativos no se han verificado en esta ficha y se indican solo como referencia de categoría.
@@ -95,7 +95,7 @@ La comparación con alternativas concretas no está disponible en la informació
 
 ## Enlaces
 
-- [HuggingFace: Sky-Kim/com.sky.sentis.pe-core-s16](https://huggingface.co/Sky-Kim/com.sky.sentis.pe-core-s16)
+- [Hugging Face: Sky-Kim/com.sky.sentis.pe-core-s16](https://huggingface.co/Sky-Kim/com.sky.sentis.pe-core-s16)
 - [Modelo base: facebook/PE-Core-S16-384](https://huggingface.co/facebook/PE-Core-S16-384)
 - [Repositorio de referencia: facebookresearch/perception_models](https://github.com/facebookresearch/perception_models)
 - [Paper citado en los tags: arxiv:2504.13181](https://arxiv.org/abs/2504.13181)

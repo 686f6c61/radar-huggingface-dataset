@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-afw-09-transformers-nemotron-tar` es un artefacto de investigación en seguridad publicado en HuggingFace bajo la librería NeMo, con las etiquetas `security-research` y `not-for-production`. No se trata de un modelo de lenguaje entrenado ni de pesos utilizables para inferencia: según su propia model card, es un "espécimen de escáner inerte" (*inert scanner specimen*) diseñado para preservar el vector de un hallazgo de seguridad, en concreto el nombre de un miembro tar dentro de un contenedor `.nemo` (categoría que el autor denomina AFW).
+`FrankLin00/mmrh-afw-09-transformers-nemotron-tar` es un artefacto de investigación en seguridad publicado en Hugging Face bajo la librería NeMo, con las etiquetas `security-research` y `not-for-production`. No se trata de un modelo de lenguaje entrenado ni de pesos utilizables para inferencia: según su propia model card, es un "espécimen de escáner inerte" (*inert scanner specimen*) diseñado para preservar el vector de un hallazgo de seguridad, en concreto el nombre de un miembro tar dentro de un contenedor `.nemo` (categoría que el autor denomina AFW).
 
 El propósito declarado es académico: reproducir de forma controlada una primitiva vulnerable asociada a la carga de ficheros `.nemo` (el formato empaquetado de NVIDIA NeMo) para que investigadores puedan analizar el comportamiento de escáneres y herramientas de carga. El autor indica explícitamente que cualquier sonda activa asociada ejecuta únicamente `whoami` en forma de argv (nunca con `shell=True`) y escribe su salida en una variable de entorno bajo `/tmp` o `$TMPDIR`, sin acceso a credenciales ni operaciones de red.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ap
 |---|---|---|---|---|
 | `FrankLin00/mmrh-afw-09-transformers-nemotron-tar` | Espécimen de investigación de seguridad | `.nemo` (tar) | no disponible | Solo investigación académica; no producción |
 | Otros especímenes AFW de la misma colección (`MANIFEST.json`) | Espécimen de investigación de seguridad | variable (`.npy`, checkpoints, `.jinja`) | no disponible | Solo investigación académica |
-| Modelos Nemotron de NVIDIA en HuggingFace | Modelos de lenguaje | safetensors / NeMo | según modelo | Inferencia y fine-tuning |
+| Modelos Nemotron de NVIDIA en Hugging Face | Modelos de lenguaje | safetensors / NeMo | según modelo | Inferencia y fine-tuning |
 
 No se dispone de datos comparativos de rendimiento porque el artefacto no es un modelo. La comparación relevante es de tipo y propósito, no de métricas.
 
@@ -72,7 +72,7 @@ No se dispone de datos comparativos de rendimiento porque el artefacto no es un 
 - No es un modelo utilizable: no genera texto, no razona, no responde a prompts.
 - Uso en producción explícitamente prohibido por el autor (`not-for-production`).
 - Licencia no especificada: no hay base legal clara para reutilización, redistribución o uso comercial.
-- Riesgo de interpretación errónea: al estar alojado en HuggingFace con la librería `nemo`, podría confundirse con un modelo NeMo funcional; no lo es.
+- Riesgo de interpretación errónea: al estar alojado en Hugging Face con la librería `nemo`, podría confundirse con un modelo NeMo funcional; no lo es.
 - La carga útil es inerte (`PWNED-INERT`) y la sonda declarada se limita a `whoami`, pero cualquier manipulación del artefacto debe hacerse en entorno aislado y con revisión del `MANIFEST.json` de la colección.
 - No hay información sobre sesgos, alucinación ni limitaciones idiomáticas porque no aplican a un artefacto no generativo.
 - Cero descargas y cero likes: sin validación comunitaria ni evidencia de uso externo.
@@ -80,7 +80,7 @@ No se dispone de datos comparativos de rendimiento porque el artefacto no es un 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FrankLin00/mmrh-afw-09-transformers-nemotron-t
+- Hugging Face: https://huggingface.co/FrankLin00/mmrh-afw-09-transformers-nemotron-t
 - Colección con `MANIFEST.json` (hashes y ruta del hallazgo fuente): referenciada en la model card, sin URL directa disponible
 - Documentación de NVIDIA NeMo (formato `.nemo`): no disponible en la información proporcionada
 - Paper, blog, repositorio o demo asociados: no disponibles en la información proporcionada

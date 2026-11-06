@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PointRCNN es un detector de objetos 3D sobre nubes de puntos LiDAR, publicado originalmente en CVPR 2019 por Shaoshuai Shi, Xiaogang Wang y Hongsheng Li. Esta ficha corresponde a la conversión del modelo original de OpenPCDet al formato de la librería `torch-pointcloud`, publicada por el usuario `torch-pointcloud` en HuggingFace. Se trata de un modelo de dos etapas puramente basado en puntos: la primera etapa genera propuestas de cajas 3D mediante segmentación de primer plano en cada punto, y la segunda refina dichas propuestas con información agregada de la nube.
+PointRCNN es un detector de objetos 3D sobre nubes de puntos LiDAR, publicado originalmente en CVPR 2019 por Shaoshuai Shi, Xiaogang Wang y Hongsheng Li. Esta ficha corresponde a la conversión del modelo original de OpenPCDet al formato de la librería `torch-pointcloud`, publicada por el usuario `torch-pointcloud` en Hugging Face. Se trata de un modelo de dos etapas puramente basado en puntos: la primera etapa genera propuestas de cajas 3D mediante segmentación de primer plano en cada punto, y la segunda refina dichas propuestas con información agregada de la nube.
 
 El modelo es pequeño (4.060.531 parámetros, aproximadamente 4,0 M) y está entrenado exclusivamente sobre el dataset KITTI para tres clases: coche, peatón y ciclista. No es un modelo de lenguaje ni un transformer generativo; es una red convolucional sobre puntos con atención de características, orientada a percepción 3D para conducción autónoma y robótica.
 
@@ -78,7 +78,7 @@ No se han publicado en la información disponible resultados adicionales (latenc
 
 | Modelo | Parametros | Enfoque | mAP KITTI | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pointrcnn-iou.kitti.openpcdet | 4,06 M | PointRCNN, dos etapas point-based | 68,50 | Apache 2.0 | HuggingFace (torch-pointcloud) |
+| pointrcnn-iou.kitti.openpcdet | 4,06 M | PointRCNN, dos etapas point-based | 68,50 | Apache 2.0 | Hugging Face (torch-pointcloud) |
 | PointRCNN original (OpenPCDet) | ~4 M | PointRCNN, dos etapas point-based | no disponible en esta ficha | Apache 2.0 | GitHub OpenPCDet |
 | Segundo (point-based) | no disponible | Detección 3D point-based de una etapa | no disponible | no disponible | Repositorio académico |
 | PointPillars (voxel/pillar) | no disponible | Detección 3D basada en pillars | no disponible | MIT (implementaciones) | Múltiples repositorios |
@@ -98,7 +98,7 @@ Los datos de los modelos alternativos no están disponibles en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pointrcnn-iou.kitti.openpcdet
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointrcnn-iou.kitti.openpcdet
 - Paper PointRCNN: https://arxiv.org/abs/1812.04244
 - Repositorio OpenPCDet: https://github.com/open-mmlab/OpenPCDet
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

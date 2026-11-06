@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`raditkw/legal-assistant-llama3.2-3b-finetuned` es un ajuste fino (fine-tuning) del modelo `unsloth/llama-3.2-3b-instruct-bnb-4bit`, publicado por el usuario raditkw en HuggingFace. Por el nombre del repositorio, el ajuste está orientado a tareas de asistencia jurídica, aunque la model card no documenta el conjunto de datos de entrenamiento, el número de pasos, la composición del corpus ni el procedimiento de alineación empleado.
+`raditkw/legal-assistant-llama3.2-3b-finetuned` es un ajuste fino (fine-tuning) del modelo `unsloth/llama-3.2-3b-instruct-bnb-4bit`, publicado por el usuario raditkw en Hugging Face. Por el nombre del repositorio, el ajuste está orientado a tareas de asistencia jurídica, aunque la model card no documenta el conjunto de datos de entrenamiento, el número de pasos, la composición del corpus ni el procedimiento de alineación empleado.
 
-El modelo base es Llama 3.2 3B Instruct en su variante cuantizada a 4 bits con bitsandbytes, distribuida por Unsloth para facilitar entrenamiento con QLoRA. El entrenamiento del ajuste se realizó con Unsloth y la librería TRL de HuggingFace, con el reclamo del autor de haber sido "2x faster" respecto a un entrenamiento convencional; no se aportan métricas que respalden esa cifra.
+El modelo base es Llama 3.2 3B Instruct en su variante cuantizada a 4 bits con bitsandbytes, distribuida por Unsloth para facilitar entrenamiento con QLoRA. El entrenamiento del ajuste se realizó con Unsloth y la librería TRL de Hugging Face, con el reclamo del autor de haber sido "2x faster" respecto a un entrenamiento convencional; no se aportan métricas que respalden esa cifra.
 
 La relevancia del modelo es limitada a efectos prácticos: cuenta con 0 descargas y 0 likes, el tamano del repositorio figura como 0.0 GB, la model card no incluye benchmarks ni documentación del dataset, y no se ha publicado ningún resultado de evaluación. Para un dominio de alto riesgo como el jurídico, la ausencia de trazabilidad sobre los datos de ajuste es un caveat serio. Se recomienda tratarlo como un experimento de fine-tuning reproducible, no como un sistema listo para producción.
 
@@ -19,7 +19,7 @@ La relevancia del modelo es limitada a efectos prácticos: cuenta con 0 descarga
 | Tipos de cuantizacion | El punto de partida es bitsandbytes 4-bit (`bnb-4bit`). No se publican versiones GGUF, AWQ, GPTQ ni FP8 en el repositorio |
 | Idiomas soportados | Ingles (`language: en` en la model card). El modelo base Llama 3.2 soporta oficialmente 8 idiomas; el ajuste solo declara ingles |
 | Licencia | apache-2.0 declarada por el autor (ver advertencias: el modelo base esta sujeto a la Llama 3.2 Community License) |
-| Formato de pesos | safetensors (etiqueta en HuggingFace); el repositorio no lista ficheros GGUF. El tamano declarado del repo es 0.0 GB, por lo que la disponibilidad efectiva de pesos no esta verificada |
+| Formato de pesos | safetensors (etiqueta en Hugging Face); el repositorio no lista ficheros GGUF. El tamano declarado del repo es 0.0 GB, por lo que la disponibilidad efectiva de pesos no esta verificada |
 
 ## Arquitectura y entrenamiento
 
@@ -70,7 +70,7 @@ Las cifras siguientes son estimaciones orientativas derivadas del tamano del mod
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| raditkw/legal-assistant-llama3.2-3b-finetuned | 3,2B (heredado) | 128k (heredado, no confirmado) | apache-2.0 declarada por el autor | HuggingFace, 0 descargas, repo de 0.0 GB | Sin datos de entrenamiento ni benchmarks; ajuste no validado |
+| raditkw/legal-assistant-llama3.2-3b-finetuned | 3,2B (heredado) | 128k (heredado, no confirmado) | apache-2.0 declarada por el autor | Hugging Face, 0 descargas, repo de 0.0 GB | Sin datos de entrenamiento ni benchmarks; ajuste no validado |
 | meta-llama/Llama-3.2-3B-Instruct | 3,2B | 128k | Llama 3.2 Community License | Ampliamente disponible | Modelo base de referencia, con documentacion completa de entrenamiento y evaluaciones publicadas |
 | Qwen/Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens (extensible a 131k con RoPE scaling) | Apache-2.0 (la mayoria de variantes Qwen2.5) | Ampliamente disponible | Alternativa frecuente en el mismo rango de tamano, con soporte multilingue declarado mas amplio |
 | microsoft/Phi-3.5-mini-instruct | 3,8B | 128k | MIT | Ampliamente disponible | Entrenado con enfasis en datos filtrados de razonamiento y codigo |
@@ -87,13 +87,13 @@ No se dispone de resultados de benchmarks del modelo objeto de esta ficha que pe
 - Sin evaluacion de olvido catastrofico: un fine-tuning no supervisado sobre un dominio estrecho puede degradar capacidades generales del modelo base.
 - Contexto: aunque la arquitectura base admite 128.000 tokens, no hay confirmacion de que el ajuste se haya entrenado con secuencias largas; usar contextos extensos puede degradar la calidad y disparar el consumo de VRAM por la cache KV.
 - Sin garantias de seguridad: no se documenta filtrado de contenido, moderacion ni evaluaciones de robustez frente a prompts adversarios (jailbreaks).
-- Fecha de creacion registrada en HuggingFace: 2026-09-17, con ultima actualizacion dos segundos despues, lo que sugiere una subida automatizada sin mantenimiento posterior.
+- Fecha de creacion registrada en Hugging Face: 2026-09-17, con ultima actualizacion dos segundos despues, lo que sugiere una subida automatizada sin mantenimiento posterior.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raditkw/legal-assistant-llama3.2-3b-finetuned
+- Modelo en Hugging Face: https://huggingface.co/raditkw/legal-assistant-llama3.2-3b-finetuned
 - Modelo base del ajuste: https://huggingface.co/unsloth/llama-3.2-3b-instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentacion del modelo base Llama 3.2: https://www.llama.com/docs/model-cards-and-prompt-formats/llama3_2/
 - Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo (unicamente paginas de ayuda de Gmail sin relacion con el contenido). No se han encontrado papers, blogs, demos ni repositorios adicionales asociados al checkpoint.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jacob-davis/mixer-contrastive-demo` es un repositorio experimental publicado en HuggingFace que contiene una implementación funcional de una arquitectura tipo **Mixer** orientada a aprendizaje contrastivo, en su configuración "base". No se trata de un modelo entrenado y listo para producción: la propia model card lo describe explícitamente como un punto de partida para pruebas de humo (smoke tests) y experimentación reproducible, sin ninguna afirmación de rendimiento ni benchmarks publicados.
+`jacob-davis/mixer-contrastive-demo` es un repositorio experimental publicado en Hugging Face que contiene una implementación funcional de una arquitectura tipo **Mixer** orientada a aprendizaje contrastivo, en su configuración "base". No se trata de un modelo entrenado y listo para producción: la propia model card lo describe explícitamente como un punto de partida para pruebas de humo (smoke tests) y experimentación reproducible, sin ninguna afirmación de rendimiento ni benchmarks publicados.
 
 El repositorio incluye el código fuente (`model.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`. El dato de safetensors indica un total de **24.832 parámetros**, un tamaño extremadamente reducido que confirma que se trata de un artefacto de demostración, no de un modelo con capacidad generativa real.
 
@@ -23,7 +23,7 @@ Su relevancia ahora es limitada y acotada al ámbito de investigación: sirve co
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es un **Mixer** con atención de tipo lineal, mecanismo de fusión basado en descomposición de Tucker, función de activación Mish y normalización LayerNorm. La configuración corresponde a la escala "base". Se trata de una implementación personalizada (custom), por lo que las APIs genéricas de carga automática de HuggingFace (`AutoModel`, etc.) requieren un adaptador explícito antes de poder utilizarse.
+La arquitectura declarada es un **Mixer** con atención de tipo lineal, mecanismo de fusión basado en descomposición de Tucker, función de activación Mish y normalización LayerNorm. La configuración corresponde a la escala "base". Se trata de una implementación personalizada (custom), por lo que las APIs genéricas de carga automática de Hugging Face (`AutoModel`, etc.) requieren un adaptador explícito antes de poder utilizarse.
 
 En cuanto al entrenamiento, la receta por defecto incluida en `training_args.json` especifica el optimizador **Adam** con un scheduler de tipo **exponencial**. La model card advierte de forma explícita que estos son valores de partida del script y no evidencia de una ejecución completada. El checkpoint `model.safetensors` es únicamente una inicialización válida para pruebas de humo; no ha sido entrenado ni auditado. No se documentan número de tokens, composición del dataset, ni fases de RLHF/DPO.
 
@@ -43,7 +43,7 @@ En cuanto al entrenamiento, la receta por defecto incluida en `training_args.jso
 - Estudio de mecanismos de atención lineal: la configuración con atención lineal permite experimentar con alternativas a la atención cuadrática en contextos de investigación sobre eficiencia.
 - Exploración de fusión Tucker: el uso de descomposición de Tucker como mecanismo de fusión puede evaluarse de forma aislada frente a alternativas como concatenación o suma ponderada.
 - Evaluación de aprendizaje contrastivo: la orientación contrastiva del repositorio lo hace adecuado para experimentos con funciones de pérdida tipo InfoNCE o similares sobre tareas específicas con conjuntos de validación reservados.
-- Base para adaptadores personalizados: dado que requiere un adaptador explícito para integrarse con APIs automáticas, sirve como ejercicio de integración de arquitecturas no estándar en tooling de HuggingFace.
+- Base para adaptadores personalizados: dado que requiere un adaptador explícito para integrarse con APIs automáticas, sirve como ejercicio de integración de arquitecturas no estándar en tooling de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jacob-davis/mixer-contrastive-demo | 24.832 | no disponible | sin benchmarks | Apache 2.0 | HuggingFace, 0 descargas |
+| jacob-davis/mixer-contrastive-demo | 24.832 | no disponible | sin benchmarks | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (Mixer con aprendizaje contrastivo en configuración base) en la documentación proporcionada.
@@ -74,9 +74,9 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 - Riesgo de alucinación: no aplicable en el estado actual, al no existir capacidad generativa entrenada.
 - Limitaciones de contexto e idioma: no documentadas; no hay información sobre ventana de contexto ni cobertura lingüística.
 - Restricciones de licencia: Apache 2.0 permite uso comercial del código, pero la model card recomienda revisar por separado los términos de los datos de origen si se emplean datasets externos.
-- Implementación personalizada: requiere un adaptador explícito para integrarse con APIs automáticas de HuggingFace; no es un drop-in replacement.
+- Implementación personalizada: requiere un adaptador explícito para integrarse con APIs automáticas de Hugging Face; no es un drop-in replacement.
 - Cualquier resultado de un futuro checkpoint entrenado deberá documentarse por separado de los valores por defecto aquí incluidos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jacob-davis/mixer-contrastive-demo
+- Hugging Face: https://huggingface.co/jacob-davis/mixer-contrastive-demo

@@ -70,5 +70,5 @@ No disponible. No se proporcionan datos de otros modelos cuantizados comparables
 
 ## Enlaces
 
-- [HuggingFace - g-oQ/Qwen3.8-27B-oQ6e-mtp](https://huggingface.co/g-oQ/Qwen3.8-27B-oQ6e-mtp)
+- [Hugging Face - g-oQ/Qwen3.8-27B-oQ6e-mtp](https://huggingface.co/g-oQ/Qwen3.8-27B-oQ6e-mtp)
 - [Repositorio oQ (oMLX)](https://github.com/jundot/omlx)

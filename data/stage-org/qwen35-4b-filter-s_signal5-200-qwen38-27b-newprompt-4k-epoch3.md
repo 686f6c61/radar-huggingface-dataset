@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Stage-org/qwen35-4b-filter-s_signal5-200-qwen38-27b-newprompt-4k-epoch3` es un ajuste fino derivado de `Qwen/Qwen3.5-4B` (modelo base citado explicitamente en la configuracion de entrenamiento) mediante aprendizaje por refuerzo. Lo publica la organizacion `Stage-org` en HuggingFace y, segun los pesos reales almacenados en safetensors, tiene 4.539.265.536 parametros (aproximadamente 4,54 mil millones). El repositorio ocupa 9,1 GB, lo que es coherente con pesos en precision bf16/fp16.
+El modelo `Stage-org/qwen35-4b-filter-s_signal5-200-qwen38-27b-newprompt-4k-epoch3` es un ajuste fino derivado de `Qwen/Qwen3.5-4B` (modelo base citado explicitamente en la configuracion de entrenamiento) mediante aprendizaje por refuerzo. Lo publica la organizacion `Stage-org` en Hugging Face y, segun los pesos reales almacenados en safetensors, tiene 4.539.265.536 parametros (aproximadamente 4,54 mil millones). El repositorio ocupa 9,1 GB, lo que es coherente con pesos en precision bf16/fp16.
 
 El modelo resuelve una tarea de ajuste muy concreta: se ha entrenado con un bucle de RL (`method = "rl"`, con `group_size = 8` y un juez externo basado en un endpoint GPT-5.6-luna) sobre el dataset `Stage-org/qwen35-4b-filter-s_signal5-200-qwen38-27b-newprompt-4k`. El sufijo del nombre sugiere filtrado de datos, una senal concreta y prompts de 4k, pero la model card no documenta el contenido del dataset ni los criterios de filtrado, por lo que esa interpretacion no esta confirmada.
 
@@ -78,8 +78,8 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que cualquier 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| `Stage-org/qwen35-4b-filter-s_signal5-200-qwen38-27b-newprompt-4k-epoch3` | 4,54B | 65.536 tokens en la config de inferencia (`max_model_len`) | No disponible | Publicado en HuggingFace, solo safetensors | No disponible |
-| `Qwen/Qwen3.5-4B` (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | HuggingFace | No disponible |
+| `Stage-org/qwen35-4b-filter-s_signal5-200-qwen38-27b-newprompt-4k-epoch3` | 4,54B | 65.536 tokens en la config de inferencia (`max_model_len`) | No disponible | Publicado en Hugging Face, solo safetensors | No disponible |
+| `Qwen/Qwen3.5-4B` (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | Hugging Face | No disponible |
 | Alternativas de ~3-4B (por ejemplo, la familia Qwen3 de 4B o Llama 3.2 3B) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han encontrado en la busqueda web resultados tecnicos relevantes sobre este modelo ni sobre su modelo base; los resultados obtenidos corresponden a portales de ofertas de practicas ("stage" en frances e ingles) y son ruido sin relacion con el modelo.
@@ -99,8 +99,8 @@ No se han encontrado en la busqueda web resultados tecnicos relevantes sobre est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/qwen35-4b-filter-s_signal5-200-qwen38-27b-newprompt-4k-epoch3
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/qwen35-4b-filter-s_signal5-200-qwen38-27b-newprompt-4k-epoch3
 - Dataset referenciado en la model card: https://huggingface.co/datasets/Stage-org/qwen35-4b-filter-s_signal5-200-qwen38-27b-newprompt-4k
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Organizacion en HuggingFace: https://huggingface.co/Stage-org
+- Organizacion en Hugging Face: https://huggingface.co/Stage-org
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web no devolvio ningun enlace tecnico relacionado con este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DARPAN2026 es un modelo publicado en HuggingFace por el usuario ananypratap007 bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica, documentacion de arquitectura, datos de entrenamiento ni informacion sobre capacidades o uso previsto. El repositorio presenta cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (1 de noviembre de 2026), lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
+DARPAN2026 es un modelo publicado en Hugging Face por el usuario ananypratap007 bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica, documentacion de arquitectura, datos de entrenamiento ni informacion sobre capacidades o uso previsto. El repositorio presenta cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (1 de noviembre de 2026), lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
 
 No se dispone de informacion sobre el pipeline asociado, los idiomas soportados ni el tamano del modelo. La unica metadata disponible son las etiquetas de licencia (MIT) y region (US). No hay evidencia publica de benchmarks, evaluaciones ni casos de uso documentados.
 
@@ -67,5 +67,5 @@ No disponible. No es posible establecer una comparativa con alternativas de la m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ananypratap007/DARPAN2026
+- Hugging Face: https://huggingface.co/ananypratap007/DARPAN2026
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

@@ -106,7 +106,7 @@ No se han proporcionado datos de comparación frente a modelos text-to-SQL de te
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cwolff/qwen3.5-2b-grpo-sqale
+- Modelo en Hugging Face: https://huggingface.co/cwolff/qwen3.5-2b-grpo-sqale
 - Modelo hermano entrenado con BIRD train: https://huggingface.co/cwolff/qwen3.5-2b-grpo-bird
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Dataset de consultas: https://huggingface.co/datasets/cwolff/queries

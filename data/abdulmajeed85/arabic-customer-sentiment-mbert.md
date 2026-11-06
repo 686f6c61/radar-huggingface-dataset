@@ -91,10 +91,10 @@ Evaluación out-of-domain con 40 frases sintéticas de seguros (13 positivas, 14
 
 | Modelo | Parámetros | Contexto | Tarea | Macro-F1 (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (mBERT ajustado) | 177,9 M | 128 | Sentimiento árabe 3 clases | 0,5739 | Apache-2.0 | HuggingFace |
-| mBERT sin ajuste fino (base) | 177,9 M | 512 (nativo) | Representaciones multilingües | 0,3425 | Apache-2.0 | HuggingFace |
+| Este modelo (mBERT ajustado) | 177,9 M | 128 | Sentimiento árabe 3 clases | 0,5739 | Apache-2.0 | Hugging Face |
+| mBERT sin ajuste fino (base) | 177,9 M | 512 (nativo) | Representaciones multilingües | 0,3425 | Apache-2.0 | Hugging Face |
 | TF-IDF + LogReg (línea base) | no aplica | no aplica | Sentimiento árabe 3 clases | 0,4612 | no aplica | No es un modelo publicado |
-| MARBERT / CAMeLBERT (referencia) | no disponible en la información | no disponible | Sentimiento árabe | no disponible | no disponible | HuggingFace (no evaluado en este proyecto) |
+| MARBERT / CAMeLBERT (referencia) | no disponible en la información | no disponible | Sentimiento árabe | no disponible | no disponible | Hugging Face (no evaluado en este proyecto) |
 
 No se han publicado comparaciones con modelos específicos de árabe como MARBERT o CAMeLBERT en la información disponible; la única comparación documentada es contra mBERT sin ajustar y contra TF-IDF + regresión logística.
 
@@ -112,7 +112,7 @@ No se han publicado comparaciones con modelos específicos de árabe como MARBER
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abdulmajeed85/arabic-customer-sentiment-mbert
+- Modelo en Hugging Face: https://huggingface.co/abdulmajeed85/arabic-customer-sentiment-mbert
 - Modelo base: https://huggingface.co/google-bert/bert-base-multilingual-cased
 - Dataset de entrenamiento: https://huggingface.co/datasets/cardiffnlp/tweet_sentiment_multilingual
 - SemEval-2017 Task 4 (origen de los datos): https://alt.qcri.org/semeval2017/task4/

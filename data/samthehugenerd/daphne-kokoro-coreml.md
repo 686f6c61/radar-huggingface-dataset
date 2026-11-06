@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Formato y disponibilidad |
 |---|---|---|---|---|---|
 | Daphne — Kokoro CoreML | 82 M (base Kokoro-82M) | No aplica (TTS no autorregresivo) | 8–20× tiempo real en M4 Pro; TTFA 0,12 s (medido por el autor) | Apache-2.0 en el repo; licencia del fine-tune alemán sin confirmar | CoreML `.mlmodelc` + `bf_alice.bin`; repositorio de 0,1 GB |
-| hexgrad/Kokoro-82M | 82 M | No aplica | No disponible | Apache-2.0 | Pesos PyTorch en HuggingFace; modelo base de esta conversión |
+| hexgrad/Kokoro-82M | 82 M | No aplica | No disponible | Apache-2.0 | Pesos PyTorch en Hugging Face; modelo base de esta conversión |
 | FluidInference/kokoro-82m-coreml | 82 M | No aplica | No disponible en la información proporcionada | No disponible | CoreML; aporta cinco de las siete etapas reutilizadas sin modificar |
 
 No se dispone de datos de benchmarks comparativos entre estas opciones, por lo que la comparación se limita a parámetros, formato, licencia y procedencia.
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparativos entre estas opciones, por lo q
 
 ## Enlaces
 
-- [samthehugenerd/daphne-kokoro-coreml en HuggingFace](https://huggingface.co/samthehugenerd/daphne-kokoro-coreml)
+- [samthehugenerd/daphne-kokoro-coreml en Hugging Face](https://huggingface.co/samthehugenerd/daphne-kokoro-coreml)
 - [hexgrad/Kokoro-82M (modelo base)](https://huggingface.co/hexgrad/Kokoro-82M)
 - [FluidInference/kokoro-82m-coreml (etapas reutilizadas)](https://huggingface.co/FluidInference/kokoro-82m-coreml)
 - [FluidAudio (repositorio del backend KokoroAne)](https://github.com/FluidInference/FluidAudio)
@@ -110,4 +110,4 @@ No se dispone de datos de benchmarks comparativos entre estas opciones, por lo q
 - [laishere/kokoro-coreml (conversión de referencia)](https://github.com/laishere/kokoro-coreml)
 - `junkstage/kokoro-deutsch-hui-base`: fine-tune alemán citado como origen, ya no disponible en el Hub.
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de HuggingFace y de la model card.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de Hugging Face y de la model card.

@@ -23,7 +23,7 @@ La información publicada es escasa: no se declaran parámetros totales, longitu
 | Licencia | no disponible |
 | Formato de pesos | MLX (biblioteca `mlx`; pesos cuantizados empaquetados en el formato de MLX, repositorio de 457,6 GB) |
 
-Datos adicionales del repositorio: 110 descargas, 2 likes, pipeline `text-generation`, creado y actualizado el 2026-10-09 según los metadatos de HuggingFace.
+Datos adicionales del repositorio: 110 descargas, 2 likes, pipeline `text-generation`, creado y actualizado el 2026-10-09 según los metadatos de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -81,8 +81,8 @@ No hay datos suficientes para comparar este artefacto con modelos alternativos d
 
 | Elemento | Cuantización | Perplejidad | Precisión de tokens | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Atria-Dawn-Preview-MLX-Q4i | 4 bits (INF) | no disponible para este modelo | no disponible para este modelo | no disponible | HuggingFace, 110 descargas |
-| internlm/Atria-Dawn-Preview (base) | sin cuantizar | no disponible | no disponible | no disponible | HuggingFace (referenciado como modelo base) |
+| Atria-Dawn-Preview-MLX-Q4i | 4 bits (INF) | no disponible para este modelo | no disponible para este modelo | no disponible | Hugging Face, 110 descargas |
+| internlm/Atria-Dawn-Preview (base) | sin cuantizar | no disponible | no disponible | no disponible | Hugging Face (referenciado como modelo base) |
 | Cuantizaciones Q4, Q5, Q6, Q8 del autor | 4 a 8 bits | solo publicadas para GLM 5.1 | solo publicadas para GLM 5.1 | no disponible | parcialmente documentadas en la model card |
 
 Alternativas de terceros: no disponible. La búsqueda web realizada no devolvió resultados relevantes (únicamente portales de alojamiento de imágenes sin relación con el modelo).
@@ -102,7 +102,7 @@ Alternativas de terceros: no disponible. La búsqueda web realizada no devolvió
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/inferencerlabs/Atria-Dawn-Preview-MLX-Q4i
+- Repositorio Hugging Face: https://huggingface.co/inferencerlabs/Atria-Dawn-Preview-MLX-Q4i
 - Modelo base: https://huggingface.co/internlm/Atria-Dawn-Preview
 - Biblioteca MLX: https://github.com/ml-explore/mlx
 - Vídeos de demostración citados en la model card: https://youtube.com/xcreate

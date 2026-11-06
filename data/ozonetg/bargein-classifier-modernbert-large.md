@@ -100,9 +100,9 @@ No se han publicado resultados de benchmarks estandar de NLP (MMLU, HumanEval, G
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bargein-classifier-modernbert-large (este) | 395,8 M | no disponible | 90,94-97,80 % accuracy segun conjunto; 87,8 % en "se marcha vs. despide y vuelve" | Apache 2.0 | HuggingFace, 0 descargas |
-| bargein-classifier-ettin-400m | ~400 M (no confirmado en la informacion disponible) | no disponible | Mejor en tipos de negocio no vistos (97,53), OOD-10k (91,75) y en "se marcha vs. despide y vuelve" (97,6 %) | no disponible en la informacion proporcionada | HuggingFace; recomendado por el propio autor |
-| answerdotai/ModernBERT-large (modelo base, sin fine-tuning para esta tarea) | 395 M | 8.192 tokens | no aplica: no esta entrenado para clasificar barge-in | Apache 2.0 | HuggingFace |
+| bargein-classifier-modernbert-large (este) | 395,8 M | no disponible | 90,94-97,80 % accuracy segun conjunto; 87,8 % en "se marcha vs. despide y vuelve" | Apache 2.0 | Hugging Face, 0 descargas |
+| bargein-classifier-ettin-400m | ~400 M (no confirmado en la informacion disponible) | no disponible | Mejor en tipos de negocio no vistos (97,53), OOD-10k (91,75) y en "se marcha vs. despide y vuelve" (97,6 %) | no disponible en la informacion proporcionada | Hugging Face; recomendado por el propio autor |
+| answerdotai/ModernBERT-large (modelo base, sin fine-tuning para esta tarea) | 395 M | 8.192 tokens | no aplica: no esta entrenado para clasificar barge-in | Apache 2.0 | Hugging Face |
 
 La comparativa relevante para esta ficha es la primera fila frente a la segunda: ambos modelos comparten arquitectura, receta, datos y latencia, y la unica diferencia es el checkpoint preentrenado. En la mayoria de metricas Ettin-400m queda por delante, con la excepcion de los conjuntos held-out de tipos de negocio A y B y del stress test TTS -> canal telefonico -> ASR. No se dispone de comparativas con otros clasificadores de turn-taking de terceros en la informacion proporcionada.
 
@@ -123,7 +123,7 @@ La comparativa relevante para esta ficha es la primera fila frente a la segunda:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ozonetg/bargein-classifier-modernbert-large
+- Modelo en Hugging Face: https://huggingface.co/ozonetg/bargein-classifier-modernbert-large
 - Modelo recomendado por el autor (Ettin-400m): https://huggingface.co/ozonetg/bargein-classifier-ettin-400m
 - Demo en vivo (Space): https://huggingface.co/spaces/ozonetg/bargein-classifier-demo
 - Coleccion de modelos del proyecto: https://huggingface.co/collections/ozonetg/voice-agent-barge-in-classifier-6ac6e3d41659b866508ea3f0
@@ -132,4 +132,4 @@ La comparativa relevante para esta ficha es la primera fila frente a la segunda:
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-large
 - Paper de ModernBERT (referenciado en los tags): https://arxiv.org/abs/2412.13663
 - Paper de R-Drop (referenciado en los tags): https://arxiv.org/abs/2106.14448
-- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; las unicas fuentes utiles son las anteriores, procedentes del repositorio de HuggingFace.
+- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; las unicas fuentes utiles son las anteriores, procedentes del repositorio de Hugging Face.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fasx07 es un repositorio de modelo publicado en HuggingFace por el usuario Fasx007 bajo el identificador `Fasx007/Fasx07`. En el momento de la consulta, el repositorio no contiene pesos ni artefactos: el tamano declarado es de 0.0 GB y la model card es la plantilla generica de HuggingFace sin ninguna seccion completada. No hay pipeline declarado, ni licencia, ni idiomas, ni descripcion funcional del modelo.
+Fasx07 es un repositorio de modelo publicado en Hugging Face por el usuario Fasx007 bajo el identificador `Fasx007/Fasx07`. En el momento de la consulta, el repositorio no contiene pesos ni artefactos: el tamano declarado es de 0.0 GB y la model card es la plantilla generica de Hugging Face sin ninguna seccion completada. No hay pipeline declarado, ni licencia, ni idiomas, ni descripcion funcional del modelo.
 
 La unica informacion tecnica verificable es el tag `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico, citado en la plantilla estandar de model cards. Este tag no describe la arquitectura del modelo, sino que es un residuo de la plantilla. El segundo tag, `region:us`, indica la region de almacenamiento del repositorio.
 
@@ -27,9 +27,9 @@ Por tanto, no es posible determinar que problema resuelve el modelo, su arquitec
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card es la plantilla por defecto de HuggingFace y todas las secciones de arquitectura, datos de entrenamiento, hiperparametros y procedimiento estan marcadas como `[More Information Needed]`. No se declara si el modelo es un transformer, MoE, SSM o hibrido, ni el numero de tokens de entrenamiento, la composicion del dataset o si se aplicaron tecnicas de RLHF o DPO.
+No disponible. La model card es la plantilla por defecto de Hugging Face y todas las secciones de arquitectura, datos de entrenamiento, hiperparametros y procedimiento estan marcadas como `[More Information Needed]`. No se declara si el modelo es un transformer, MoE, SSM o hibrido, ni el numero de tokens de entrenamiento, la composicion del dataset o si se aplicaron tecnicas de RLHF o DPO.
 
-El unico metadato con posible relevancia tecnica es el tag `arxiv:1910.09700`, que apunta al articulo de Lacoste et al. sobre calculo de emisiones de carbono. Este tag aparece en la plantilla estandar de model cards de HuggingFace como referencia para la seccion de impacto ambiental, por lo que no aporta informacion sobre la arquitectura ni el entrenamiento del modelo.
+El unico metadato con posible relevancia tecnica es el tag `arxiv:1910.09700`, que apunta al articulo de Lacoste et al. sobre calculo de emisiones de carbono. Este tag aparece en la plantilla estandar de model cards de Hugging Face como referencia para la seccion de impacto ambiental, por lo que no aporta informacion sobre la arquitectura ni el entrenamiento del modelo.
 
 ## Capacidades
 
@@ -78,7 +78,7 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea del modelo
 ## Limitaciones y advertencias
 
 - El repositorio no contiene pesos ni artefactos: el tamano es de 0.0 GB, por lo que no es posible descargar ni ejecutar el modelo.
-- La model card es la plantilla generica de HuggingFace sin ninguna seccion completada; no hay informacion sobre arquitectura, datos, entrenamiento ni evaluacion.
+- La model card es la plantilla generica de Hugging Face sin ninguna seccion completada; no hay informacion sobre arquitectura, datos, entrenamiento ni evaluacion.
 - No se declara licencia, lo que impide determinar si el uso comercial esta permitido. En ausencia de licencia explicita, no debe asumirse ningun derecho de uso.
 - No se declaran idiomas soportados, por lo que no se puede garantizar cobertura multilingue ni calidad en castellano.
 - Sin datos de entrenamiento ni evaluacion, no es posible estimar sesgos, riesgo de alucinacion ni comportamiento en produccion.
@@ -87,7 +87,7 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea del modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Fasx007/Fasx07
+- Repositorio Hugging Face: https://huggingface.co/Fasx007/Fasx07
 - Articulo referenciado en el tag (Lacoste et al., 2019, estimacion de emisiones): https://arxiv.org/abs/1910.09700
-- Especificacion de model cards de HuggingFace: https://github.com/huggingface/hub-docs/blob/main/modelcard.md
+- Especificacion de model cards de Hugging Face: https://github.com/huggingface/hub-docs/blob/main/modelcard.md
 - Plantilla de model card utilizada: https://github.com/huggingface/huggingface_hub/blob/main/src/huggingface_hub/templates/modelcard_template.md

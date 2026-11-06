@@ -67,6 +67,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - Chaima-KHENAFIF/qwen-mom-generator](https://huggingface.co/Chaima-KHENAFIF/qwen-mom-generator)
+- [Hugging Face - Chaima-KHENAFIF/qwen-mom-generator](https://huggingface.co/Chaima-KHENAFIF/qwen-mom-generator)
 - [Perfil de GitHub del autor](https://github.com/chaima-Khenafif03/)
-- [Modelo base Qwen2.5-3B-Instruct en HuggingFace](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct)
+- [Modelo base Qwen2.5-3B-Instruct en Hugging Face](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct)

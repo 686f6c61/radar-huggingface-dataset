@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FERSG es un repositorio de modelo publicado en HuggingFace por el usuario eduardo110dev bajo licencia MIT. En el momento de redactar esta ficha, el repositorio no incluye model card util (el README se limita a la declaracion de licencia), no declara pipeline de inferencia, no especifica idiomas soportados y acumula 0 descargas y 0 likes, por lo que se trata de una publicacion sin adopcion ni documentacion tecnica verificable.
+FERSG es un repositorio de modelo publicado en Hugging Face por el usuario eduardo110dev bajo licencia MIT. En el momento de redactar esta ficha, el repositorio no incluye model card util (el README se limita a la declaracion de licencia), no declara pipeline de inferencia, no especifica idiomas soportados y acumula 0 descargas y 0 likes, por lo que se trata de una publicacion sin adopcion ni documentacion tecnica verificable.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion. Tampoco hay artefactos de pesos documentados ni resultados de evaluacion publicados. Cualquier afirmacion sobre capacidades concretas seria especulativa en este punto.
 
@@ -21,7 +21,7 @@ La relevancia actual del repositorio es, por tanto, limitada: sirve como registr
 | Licencia | MIT |
 | Formato de pesos | no disponible |
 | Autor | eduardo110dev |
-| Fecha de creacion en HuggingFace | 2026-09-19 |
+| Fecha de creacion en Hugging Face | 2026-09-19 |
 | Ultima actualizacion | 2026-09-19 |
 | Descargas / likes | 0 / 0 |
 | Pipeline declarado | no disponible |
@@ -46,7 +46,7 @@ Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicio
 - Evaluacion de repositorios: el caso de uso inmediato es la inspeccion del propio repositorio para verificar si contiene pesos, tokenizador y configuracion utilizables.
 - Experimentacion interna: podria emplearse en pruebas controladas siempre que se valide primero su comportamiento y su licencia.
 - Uso comercial: la licencia MIT permitiria uso comercial en teoria, pero sin documentacion tecnica no es posible evaluar su idoneidad para produccion.
-- Fines educativos: el repositorio puede servir como ejemplo de publicacion minima en HuggingFace, aunque sin valor tecnico demostrado.
+- Fines educativos: el repositorio puede servir como ejemplo de publicacion minima en Hugging Face, aunque sin valor tecnico demostrado.
 - Integracion en pipelines: no recomendable hasta que existan especificaciones verificables de contexto, formato de pesos y requisitos de hardware.
 
 ## Benchmarks y rendimiento
@@ -78,5 +78,5 @@ No disponible. No es posible identificar modelos comparables al desconocerse la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eduardo110dev/FERSG
+- Hugging Face: https://huggingface.co/eduardo110dev/FERSG
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos relacionados con este modelo.

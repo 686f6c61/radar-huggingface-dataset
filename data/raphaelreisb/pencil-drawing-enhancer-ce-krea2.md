@@ -2,11 +2,11 @@
 
 ## Resumen
 
-pencil-drawing-enhancer-ce-krea2 es un adaptador de generacion de imagenes publicado en HuggingFace por el usuario raphaelreisb. Se trata de un LoRA (o LoCon) de estilo denominado "Pencil Drawing Enhancer - CE - V01 - Krea2 Raw/Turbo", cuyo objetivo es reforzar la estetica de dibujo a lapiz sobre el modelo base Krea 2. El autor original del adaptador es CreativeEdge, y esta ficha actua como espejo del modelo publicado en Civitai.
+pencil-drawing-enhancer-ce-krea2 es un adaptador de generacion de imagenes publicado en Hugging Face por el usuario raphaelreisb. Se trata de un LoRA (o LoCon) de estilo denominado "Pencil Drawing Enhancer - CE - V01 - Krea2 Raw/Turbo", cuyo objetivo es reforzar la estetica de dibujo a lapiz sobre el modelo base Krea 2. El autor original del adaptador es CreativeEdge, y esta ficha actua como espejo del modelo publicado en Civitai.
 
 El modelo no es un modelo de lenguaje: no procesa texto ni genera respuestas, sino que modifica el comportamiento de un modelo de difusion de imagenes para producir o mejorar ilustraciones con acabado de lapiz. Se activa mediante la palabra disparadora pncldrwenCE_style, que debe incluirse en el prompt.
 
-La relevancia de esta publicacion es limitada dentro del ecosistema de IA open source: cuenta con 0 descargas y 0 likes en el momento de la consulta, no declara licencia en la ficha de HuggingFace y su repositorio ocupa 0,2 GB. La informacion tecnica publicada por el autor es minima, por lo que buena parte de las especificaciones habituales quedan marcadas como no disponibles.
+La relevancia de esta publicacion es limitada dentro del ecosistema de IA open source: cuenta con 0 descargas y 0 likes en el momento de la consulta, no declara licencia en la ficha de Hugging Face y su repositorio ocupa 0,2 GB. La informacion tecnica publicada por el autor es minima, por lo que buena parte de las especificaciones habituales quedan marcadas como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La relevancia de esta publicacion es limitada dentro del ecosistema de IA open s
 | Longitud de contexto | no aplica (modelo de generacion de imagenes) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no declarada en la ficha de HuggingFace; la metadata de origen indica allowNoCredit: true, allowCommercialUse: ["Image", "RentCivit"], allowDerivatives: false, allowDifferentLicense: true |
+| Licencia | no declarada en la ficha de Hugging Face; la metadata de origen indica allowNoCredit: true, allowCommercialUse: ["Image", "RentCivit"], allowDerivatives: false, allowDifferentLicense: true |
 | Formato de pesos | no disponible (repositorio de 0,2 GB) |
 
 ## Arquitectura y entrenamiento
@@ -65,7 +65,7 @@ No disponible. La informacion proporcionada no identifica adaptadores de estilo 
 
 ## Limitaciones y advertencias
 
-- La licencia no esta declarada en la ficha de HuggingFace, lo que genera incertidumbre legal para uso comercial a partir de esta publicacion.
+- La licencia no esta declarada en la ficha de Hugging Face, lo que genera incertidumbre legal para uso comercial a partir de esta publicacion.
 - La metadata de origen restringe las obras derivadas (allowDerivatives: false), aunque permite el uso comercial de imagenes generadas y la generacion en RentCivit.
 - El adaptador exige el uso del modelo base Krea 2 en sus variantes Raw o Turbo; sin el, no es funcional.
 - Es obligatorio incluir la palabra disparadora pncldrwenCE_style para activar el estilo; sin ella, el efecto puede no aplicarse.
@@ -77,6 +77,6 @@ No disponible. La informacion proporcionada no identifica adaptadores de estilo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/raphaelreisb/pencil-drawing-enhancer-ce-krea2
+- Hugging Face: https://huggingface.co/raphaelreisb/pencil-drawing-enhancer-ce-krea2
 - Fuente original en Civitai: https://civitai.red/models/561940?modelVersionId=3311738
 - Los resultados de busqueda web proporcionados no contienen informacion relevante sobre este modelo (corresponden a tarjetas regalo de Meta Quest en neerlandes) y no se han incluido por no ser pertinentes.

@@ -70,7 +70,7 @@ No se dispone de datos verificables de comparación en la información proporcio
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ReaDy-Qwen3.8-27B | Borrador especulativo con lector de estados recurrentes | 1.857.358.337 | 16.384 (validado) | no disponible | HuggingFace, requiere repositorio de código y objetivo Qwen3.8-27B |
+| ReaDy-Qwen3.8-27B | Borrador especulativo con lector de estados recurrentes | 1.857.358.337 | 16.384 (validado) | no disponible | Hugging Face, requiere repositorio de código y objetivo Qwen3.8-27B |
 | Cabezas tipo EAGLE-3 | Borrador especulativo | no disponible | no disponible | no disponible | no disponible |
 | Cabezas tipo Medusa | Borrador especulativo con cabezas múltiples | no disponible | no disponible | no disponible | no disponible |
 | Autosugerencia con n-gramas | Borrador sin modelo auxiliar | no aplica | no disponible | no disponible | no disponible |
@@ -92,6 +92,6 @@ No se dispone de datos verificables de comparación en la información proporcio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/startlux-models/ReaDy-Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/startlux-models/ReaDy-Qwen3.8-27B
 - Repositorio de código y quickstart: https://github.com/StartLuxLabs/ReaDy
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B

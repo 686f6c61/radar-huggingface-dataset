@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Enoxis/VoxCPM2-Q4_K-GGUF-jetson
+- Repositorio Hugging Face: https://huggingface.co/Enoxis/VoxCPM2-Q4_K-GGUF-jetson
 - Modelo base OpenBMB VoxCPM2: https://huggingface.co/openbmb/VoxCPM2
 - Motor audio.cpp: https://github.com/0xShug0/audio.cpp
 - Repositorio de parches para Jetson Xavier NX: https://github.com/sander110419/voxcpm2-jetson-xavier-nx

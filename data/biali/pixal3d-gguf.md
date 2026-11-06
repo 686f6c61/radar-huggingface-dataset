@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pixal3D-GGUF es un repositorio de pesos en formato GGUF publicado por el usuario biali en HuggingFace. La informacion disponible en la model card es minima: unicamente incluye un enlace al repositorio base https://github.com/Aero-Ex/ComfyUI-Trellis2-GGUF, lo que apunta a un nodo de ComfyUI para la generacion de activos 3D con cuantizaciones GGUF. No se aportan datos sobre el desarrollador original, la arquitectura ni el proceso de entrenamiento.
+Pixal3D-GGUF es un repositorio de pesos en formato GGUF publicado por el usuario biali en Hugging Face. La informacion disponible en la model card es minima: unicamente incluye un enlace al repositorio base https://github.com/Aero-Ex/ComfyUI-Trellis2-GGUF, lo que apunta a un nodo de ComfyUI para la generacion de activos 3D con cuantizaciones GGUF. No se aportan datos sobre el desarrollador original, la arquitectura ni el proceso de entrenamiento.
 
 El dato tecnico confirmado es el recuento de parametros totales registrado en safetensors: 1.386.671.648 parametros (aproximadamente 1,39 mil millones). El repositorio ocupa 30,3 GB, un tamano muy superior al que corresponderia a una unica cuantizacion de ese numero de parametros, lo que sugiere la presencia de multiples variantes de cuantizacion en el mismo repositorio, aunque esto no se confirma en la informacion proporcionada.
 
@@ -72,5 +72,5 @@ No disponible. La informacion proporcionada no identifica la categoria exacta de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/biali/Pixal3D-GGUF
+- Hugging Face: https://huggingface.co/biali/Pixal3D-GGUF
 - Repositorio base citado en la model card: https://github.com/Aero-Ex/ComfyUI-Trellis2-GGUF

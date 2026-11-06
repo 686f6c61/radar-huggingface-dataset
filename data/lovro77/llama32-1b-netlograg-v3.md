@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lovro77/llama32-1b-netlograg-v3 es un ajuste fino (fine-tuning) del modelo unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit, publicado por el usuario lovro77 en HuggingFace. Se trata, por tanto, de un modelo de generacion de texto de aproximadamente 1.240 millones de parametros construido sobre Llama 3.2 1B Instruct, la variante mas pequena de la familia Llama 3.2 de Meta, distribuida originalmente bajo licencia comunitaria de Llama. El autor ha vuelto a publicar el resultado bajo licencia Apache 2.0, lo que en la practica relaja las restricciones de uso respecto al modelo original, aunque conviene verificar la compatibilidad de licencias antes de un despliegue comercial.
+lovro77/llama32-1b-netlograg-v3 es un ajuste fino (fine-tuning) del modelo unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit, publicado por el usuario lovro77 en Hugging Face. Se trata, por tanto, de un modelo de generacion de texto de aproximadamente 1.240 millones de parametros construido sobre Llama 3.2 1B Instruct, la variante mas pequena de la familia Llama 3.2 de Meta, distribuida originalmente bajo licencia comunitaria de Llama. El autor ha vuelto a publicar el resultado bajo licencia Apache 2.0, lo que en la practica relaja las restricciones de uso respecto al modelo original, aunque conviene verificar la compatibilidad de licencias antes de un despliegue comercial.
 
 El nombre del repositorio ("netlograg") sugiere un ajuste orientado a tareas de generacion aumentada por recuperacion (RAG) sobre registros de red o logs, pero la model card no documenta el conjunto de datos, el procedimiento de entrenamiento ni los hiperparametros empleados. La unica informacion tecnica relevante que aporta el autor es que el entrenamiento se realizo con Unsloth, herramienta que acelera el fine-tuning mediante kernels optimizados, y que el modelo parte de una version ya cuantizada a 4 bits con bitsandbytes.
 
@@ -63,11 +63,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Datos de benchmark | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lovro77/llama32-1b-netlograg-v3 | ~1,24B (heredados) | 128k en el modelo base, no confirmado | No publicados | Apache 2.0 | HuggingFace, 0 descargas |
-| Llama 3.2 1B Instruct (modelo base de Meta) | 1,24B | 128k | Publicados por Meta en su model card | Licencia comunitaria Llama 3.2 | HuggingFace y proveedores cloud |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32k | Publicados por Alibaba | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| SmolLM2-1.7B-Instruct | 1,7B | 8k | Publicados por HuggingFace | Apache 2.0 | HuggingFace |
-| Gemma 2 2B Instruct | 2,6B | 8k | Publicados por Google | Licencia Gemma | HuggingFace y Google AI Studio |
+| lovro77/llama32-1b-netlograg-v3 | ~1,24B (heredados) | 128k en el modelo base, no confirmado | No publicados | Apache 2.0 | Hugging Face, 0 descargas |
+| Llama 3.2 1B Instruct (modelo base de Meta) | 1,24B | 128k | Publicados por Meta en su model card | Licencia comunitaria Llama 3.2 | Hugging Face y proveedores cloud |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32k | Publicados por Alibaba | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| SmolLM2-1.7B-Instruct | 1,7B | 8k | Publicados por Hugging Face | Apache 2.0 | Hugging Face |
+| Gemma 2 2B Instruct | 2,6B | 8k | Publicados por Google | Licencia Gemma | Hugging Face y Google AI Studio |
 
 Los datos de parametros, contexto y licencia de los modelos comparados corresponden a sus especificaciones publicas. La comparacion de rendimiento no es posible porque el modelo objeto de esta ficha carece de evaluaciones publicadas. En terminos de contexto declarado, la arquitectura de Llama 3.2 1B parte con ventaja frente a SmolLM2 y Gemma 2 2B, mientras que Qwen2.5-1.5B-Instruct es un competidor directo bajo la misma licencia Apache 2.0 y con un ecosistema de despliegue mas maduro.
 
@@ -85,7 +85,7 @@ Los datos de parametros, contexto y licencia de los modelos comparados correspon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lovro77/llama32-1b-netlograg-v3
+- Modelo en Hugging Face: https://huggingface.co/lovro77/llama32-1b-netlograg-v3
 - Modelo base del ajuste: https://huggingface.co/unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit
 - Unsloth (herramienta de entrenamiento citada por el autor): https://github.com/unslothai/unsloth
 - Los resultados de la busqueda web proporcionados no contienen ningun enlace relacionado con este modelo ni con su dominio de aplicacion, por lo que no se incluye ningun otro enlace.

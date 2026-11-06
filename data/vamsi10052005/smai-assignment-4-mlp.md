@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smai-assignment-4-mlp` es un modelo de clasificación de imágenes muy pequeño publicado en HuggingFace por el usuario `vamsi10052005` como parte de una asignación académica de la materia SMAI (presumiblemente "Statistical Methods in Artificial Intelligence"). No se trata de un modelo de lenguaje ni de un modelo fundacional: es un perceptrón multicapa (MLP) de dos capas que clasifica imágenes de CIFAR-10 en una de sus 10 categorías.
+`smai-assignment-4-mlp` es un modelo de clasificación de imágenes muy pequeño publicado en Hugging Face por el usuario `vamsi10052005` como parte de una asignación académica de la materia SMAI (presumiblemente "Statistical Methods in Artificial Intelligence"). No se trata de un modelo de lenguaje ni de un modelo fundacional: es un perceptrón multicapa (MLP) de dos capas que clasifica imágenes de CIFAR-10 en una de sus 10 categorías.
 
 La arquitectura es explícita en la model card: una capa de entrada de 3072 dimensiones (imágenes de 32x32x3 aplanadas), una capa oculta de 64 neuronas con activación ReLU y una capa de salida de 10 logits. El recuento total de parámetros es de 197.322, lo que lo sitúa en el rango de los modelos de juguete o didácticos, no de producción.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-assignment-4-mlp | 197.322 | Imagen 32x32x3 aplanada | Clasificación CIFAR-10 | no disponible | HuggingFace |
+| smai-assignment-4-mlp | 197.322 | Imagen 32x32x3 aplanada | Clasificación CIFAR-10 | no disponible | Hugging Face |
 | LeNet-5 (referencia histórica) | ~60.000 | Imagen 32x32 | Clasificación MNIST/CIFAR | no disponible | Referencia académica |
 | ResNet-18 (adaptado a CIFAR) | ~11,2 M | Imagen 32x32 | Clasificación CIFAR-10/100 | MIT (implementaciones comunes) | Ampliamente disponible |
 | ViT-Small (patch 4, CIFAR) | ~22 M | Imagen 32x32 | Clasificación CIFAR-10/100 | según implementación | Ampliamente disponible |
@@ -81,5 +81,5 @@ La comparación es orientativa: no se dispone de resultados de rendimiento del m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vamsi10052005/smai-assignment-4-mlp
+- Hugging Face: https://huggingface.co/vamsi10052005/smai-assignment-4-mlp
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

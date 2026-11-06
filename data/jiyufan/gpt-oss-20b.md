@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gpt-oss-20b es un modelo de lenguaje de pesos abiertos publicado por OpenAI dentro de la familia gpt-oss, disenada para razonamiento, tareas agenticas y uso general por parte de desarrolladores. Esta ficha corresponde a la copia alojada por el usuario `jiyufan` en HuggingFace, que replica los pesos del modelo original `openai/gpt-oss-20b` bajo licencia Apache 2.0. El modelo emplea una arquitectura transformer con mezcla de expertos (MoE), con 20.914.757.184 parametros totales y aproximadamente 3.600 millones de parametros activos por token, lo que permite una inferencia de baja latencia en hardware de consumo.
+gpt-oss-20b es un modelo de lenguaje de pesos abiertos publicado por OpenAI dentro de la familia gpt-oss, disenada para razonamiento, tareas agenticas y uso general por parte de desarrolladores. Esta ficha corresponde a la copia alojada por el usuario `jiyufan` en Hugging Face, que replica los pesos del modelo original `openai/gpt-oss-20b` bajo licencia Apache 2.0. El modelo emplea una arquitectura transformer con mezcla de expertos (MoE), con 20.914.757.184 parametros totales y aproximadamente 3.600 millones de parametros activos por token, lo que permite una inferencia de baja latencia en hardware de consumo.
 
 La propuesta principal del modelo es ofrecer capacidades de razonamiento de nivel produccion en un formato que cabe en menos de 16 GB de memoria gracias a la cuantizacion MXFP4 aplicada durante el post-entrenamiento. Incluye un modo de razonamiento configurable (bajo, medio, alto), acceso completo a la cadena de pensamiento y soporte nativo para el formato de respuesta harmony, obligatorio para su correcto funcionamiento. Ademas incorpora capacidades agenticas como function calling, navegacion web y ejecucion de codigo Python.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gpt-oss-20b | ~21B | ~3.6B | no disponible | Apache 2.0 | HuggingFace (openai y mirrors) |
-| gpt-oss-120b | ~117B | ~5.1B | no disponible | Apache 2.0 | HuggingFace (openai) |
+| gpt-oss-20b | ~21B | ~3.6B | no disponible | Apache 2.0 | Hugging Face (openai y mirrors) |
+| gpt-oss-120b | ~117B | ~5.1B | no disponible | Apache 2.0 | Hugging Face (openai) |
 | Alternativas de mismo tamano | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada solo permite comparar con el modelo hermano de la misma familia. No se dispone de datos de benchmarks ni de especificaciones de contexto para establecer comparaciones cuantitativas con modelos de otros desarrolladores.
@@ -86,7 +86,7 @@ La informacion proporcionada solo permite comparar con el modelo hermano de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta copia: https://huggingface.co/jiyufan/gpt-oss-20b
+- Repositorio Hugging Face de esta copia: https://huggingface.co/jiyufan/gpt-oss-20b
 - Repositorio oficial del modelo: https://huggingface.co/openai/gpt-oss-20b
 - Coleccion oficial gpt-oss: https://huggingface.co/collections/openai/gpt-oss-68911959590a1634ba11c7a4
 - Model card / paper: https://arxiv.org/abs/2508.10925

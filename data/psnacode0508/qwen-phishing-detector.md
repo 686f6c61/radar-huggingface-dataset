@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen-phishing-detector es un ajuste fino (fine-tune) del modelo Qwen2.5-1.5B-Instruct en su variante cuantizada a 4 bits, publicado por el usuario psnacode0508 en HuggingFace. El nombre del repositorio sugiere que el modelo ha sido especializado en la deteccion de phishing, aunque la model card no documenta la tarea concreta, el dataset de entrenamiento ni el formato de salida esperado. El entrenamiento se realizo con Unsloth (que segun el autor permite entrenar "2x mas rapido") y con la libreria TRL, segun las etiquetas del repositorio.
+qwen-phishing-detector es un ajuste fino (fine-tune) del modelo Qwen2.5-1.5B-Instruct en su variante cuantizada a 4 bits, publicado por el usuario psnacode0508 en Hugging Face. El nombre del repositorio sugiere que el modelo ha sido especializado en la deteccion de phishing, aunque la model card no documenta la tarea concreta, el dataset de entrenamiento ni el formato de salida esperado. El entrenamiento se realizo con Unsloth (que segun el autor permite entrenar "2x mas rapido") y con la libreria TRL, segun las etiquetas del repositorio.
 
 El modelo se apoya en la arquitectura Qwen2 (transformer decoder-only) de aproximadamente 1.500 millones de parametros, con pesos en formato safetensors y una licencia Apache-2.0 que permite uso comercial. El repositorio ocupa unicamente 0.1 GB, un tamano inferior al esperado para un modelo completo de 1,5B en 4 bits, lo que apunta a que podria tratarse de un adaptador LoRA en lugar de los pesos fusionados completos; este extremo no esta confirmado en la informacion disponible.
 
@@ -84,7 +84,7 @@ No se dispone de informacion sobre otros modelos especificos de deteccion de phi
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/psnacode0508/qwen-phishing-detector
+- Repositorio del modelo en Hugging Face: https://huggingface.co/psnacode0508/qwen-phishing-detector
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Qwen2.5-1.5B-Instruct (modelo original): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

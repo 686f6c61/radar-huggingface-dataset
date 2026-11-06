@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Screener2/act_AnchoredCamera_20261028_141938 (este) | 51,7 M | no aplica | Pick-and-place con SO-100, cámara cenital | Apache 2.0 | HuggingFace |
-| Políticas ACT de LeRobot (genéricas) | ~50 M típicamente | no aplica | Manipulación variable según dataset | Apache 2.0 | HuggingFace / LeRobot |
-| Diffusion Policy (implementación LeRobot) | variable | no aplica | Manipulación por difusión de acciones | según repo | HuggingFace / LeRobot |
-| VQ-BeT / otras políticas de imitación en LeRobot | variable | no aplica | Manipulación por imitación | según repo | HuggingFace / LeRobot |
+| Screener2/act_AnchoredCamera_20261028_141938 (este) | 51,7 M | no aplica | Pick-and-place con SO-100, cámara cenital | Apache 2.0 | Hugging Face |
+| Políticas ACT de LeRobot (genéricas) | ~50 M típicamente | no aplica | Manipulación variable según dataset | Apache 2.0 | Hugging Face / LeRobot |
+| Diffusion Policy (implementación LeRobot) | variable | no aplica | Manipulación por difusión de acciones | según repo | Hugging Face / LeRobot |
+| VQ-BeT / otras políticas de imitación en LeRobot | variable | no aplica | Manipulación por imitación | según repo | Hugging Face / LeRobot |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada; la comparación se limita a categoría, licencia y disponibilidad.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Screener2/act_AnchoredCamera_20261028_141938
+- Modelo en Hugging Face: https://huggingface.co/Screener2/act_AnchoredCamera_20261028_141938
 - Dataset de entrenamiento: https://huggingface.co/datasets/Screener2/AnchoredCamera_20261028_141938
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Screener2/AnchoredCamera_20261028_141938
 - Paper de ACT: https://huggingface.co/papers/2304.13705

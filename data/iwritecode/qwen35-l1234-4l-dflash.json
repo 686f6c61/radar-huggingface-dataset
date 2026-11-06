@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "IWRITECODE/qwen35-l1234-4l-dflash",
+  "slug": "iwritecode-qwen35-l1234-4l-dflash",
+  "author": "IWRITECODE",
+  "url": "https://huggingface.co/IWRITECODE/qwen35-l1234-4l-dflash",
+  "created_at": "2026-11-06T07:42:39.000Z",
+  "updated_at": "2026-11-06T07:43:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "speculators",
+  "languages": [],
+  "tags": [
+    "speculators",
+    "safetensors",
+    "speculative-decoding",
+    "draft-model",
+    "dflash",
+    "vllm",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1711826944,
+  "parameters_human": "1.71B",
+  "storage_bytes": 3423659160,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

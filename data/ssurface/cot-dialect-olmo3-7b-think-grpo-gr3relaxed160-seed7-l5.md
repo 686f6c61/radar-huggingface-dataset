@@ -56,7 +56,7 @@ No se han publicado resultados para otros benchmarks (MMLU, HumanEval, etc.) en 
 - Inferencia: requiere la VRAM del modelo base Olmo-3-7B-Think. En bfloat16, un modelo de 7B ocupa aproximadamente 14-16 GB, por lo que cabe en GPUs de consumo como RTX 4090 (24 GB) o RTX 3090 (24 GB). Con cuantizacion (GGUF, AWQ) puede ejecutarse en GPUs de 8-12 GB.
 - Entrenamiento: el autor utilizo una unica NVIDIA A100 80GB. Con tecnicas de LoRA y batch pequeno, podria entrenarse en GPUs de 24 GB con optimizaciones de memoria.
 - El adaptador en si es muy ligero (0.2 GB), por lo que el coste adicional sobre el modelo base es minimo.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con `transformers` y `peft` en pipelines de HuggingFace. Tambien es posible fusionarlo con el modelo base y exportarlo a formatos como GGUF para su uso con llama.cpp u Ollama, aunque no se proporcionan instrucciones especificas.
+- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con `transformers` y `peft` en pipelines de Hugging Face. Tambien es posible fusionarlo con el modelo base y exportarlo a formatos como GGUF para su uso con llama.cpp u Ollama, aunque no se proporcionan instrucciones especificas.
 - Latencia y throughput: no se han publicado datos. La compresion L5 reduce drasticamente el numero de tokens generados en la cadena de pensamiento, lo que deberia reducir la latencia frente al modelo base sin compresion, pero no hay mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks comparables para el modelo base ni para el 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-gr3relaxed160-seed7-l5
+- Adaptador en Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-gr3relaxed160-seed7-l5
 - Adaptador SFT L5 (requerido como paso previo): https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l5
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Repositorio OLMo de AllenAI: https://github.com/allenai/OLMo

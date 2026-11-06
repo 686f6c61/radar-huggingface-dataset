@@ -56,7 +56,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ItukiTokada/text-image-retrieval
+- Repositorio Hugging Face: https://huggingface.co/ItukiTokada/text-image-retrieval
 - TIGeR (paper relacionado, arXiv:2406.05814): https://arxiv.org/abs/2406.05814
 - Imagen (modelo de generación texto-imagen de Google, contexto del área): https://imagen.research.google/
 - Leaderboard de text-to-image en Artificial Analysis: https://artificialanalysis.ai/image/leaderboard/text-to-image

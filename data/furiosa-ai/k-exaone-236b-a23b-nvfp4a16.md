@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales / activos | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| K-EXAONE-236B-A23B-NVFP4A16 (esta ficha) | 236B / 23B | no disponible | en, ko, es, de, ja, vi | K-EXAONE AI Model License | HuggingFace, Furiosa-LLM, vLLM, SGLang, Transformers |
-| LGAI-EXAONE/K-EXAONE-236B-A23B (base) | 236B / 23B | no disponible | en, ko, es, de, ja, vi | K-EXAONE AI Model License | HuggingFace |
+| K-EXAONE-236B-A23B-NVFP4A16 (esta ficha) | 236B / 23B | no disponible | en, ko, es, de, ja, vi | K-EXAONE AI Model License | Hugging Face, Furiosa-LLM, vLLM, SGLang, Transformers |
+| LGAI-EXAONE/K-EXAONE-236B-A23B (base) | 236B / 23B | no disponible | en, ko, es, de, ja, vi | K-EXAONE AI Model License | Hugging Face |
 | Modelos MoE de escala similar (p. ej. familia DeepSeek, Qwen MoE) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 La información disponible solo permite comparar con el modelo base del que deriva. No se han proporcionado datos de benchmarks ni especificaciones de contexto que permitan una comparación cuantitativa con alternativas de la misma categoría.
@@ -85,7 +85,7 @@ La información disponible solo permite comparar con el modelo base del que deri
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furiosa-ai/K-EXAONE-236B-A23B-NVFP4A16
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/K-EXAONE-236B-A23B-NVFP4A16
 - Modelo base: https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B
 - Licencia K-EXAONE: https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B/blob/main/LICENSE
 - Documentación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html

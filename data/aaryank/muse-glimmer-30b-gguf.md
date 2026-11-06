@@ -94,7 +94,7 @@ AryaK tambien ofrece AK-Q5_K_M (19.19 GB) que supera a Meta kquant-dynamic (19.6
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AaryanK/Muse-Glimmer-30B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AaryanK/Muse-Glimmer-30B-GGUF
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Model card de NVIDIA NIM: https://build.nvidia.com/meta/muse-glimmer-30b/modelcard
 - Blog de Meta sobre Muse Glimmer: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model

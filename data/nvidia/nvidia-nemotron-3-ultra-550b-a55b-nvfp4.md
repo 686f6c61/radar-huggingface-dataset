@@ -15,7 +15,7 @@ Arquitectónicamente emplea un diseño híbrido Latent Mixture-of-Experts (Laten
 | Parametros activos | 55B |
 | Longitud de contexto | Hasta 1M tokens |
 | Tipos de cuantizacion | NVFP4 (pre-entrenado); disponible también en BF16 |
-| Idiomas soportados | Inglés, francés, español, italiano, alemán, japonés, coreano, hindi, portugués brasileño y chino (los tags de HuggingFace añaden hebreo y árabe) |
+| Idiomas soportados | Inglés, francés, español, italiano, alemán, japonés, coreano, hindi, portugués brasileño y chino (los tags de Hugging Face añaden hebreo y árabe) |
 | Licencia | OpenMDW-1.1 |
 | Formato de pesos | safetensors (repo de 704.7 GB) |
 
@@ -92,7 +92,7 @@ No se han publicado en la información proporcionada comparativas directas con o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4
 - Página de investigación Nemotron 3 Ultra: https://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/
 - Informe técnico (PDF): https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Ultra-Technical-Report.pdf
 - Página de la familia Nemotron 3: https://research.nvidia.com/labs/nemotron/Nemotron-3/

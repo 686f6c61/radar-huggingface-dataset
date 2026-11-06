@@ -105,7 +105,7 @@ La ventaja diferencial de luthor-8b-i1-GGUF frente a estos modelos es la disponi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/luthor-8b-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/luthor-8b-i1-GGUF
 - Modelo base: https://huggingface.co/IAMIbrahim/luthor-8b
 - Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/luthor-8b-GGUF
 - Página de resumen y descargas del autor: https://hf.tst.eu/model#luthor-8b-i1-GGUF

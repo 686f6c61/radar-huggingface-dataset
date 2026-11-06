@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NSFW Wan 1.3b es un ajuste fino (*fine-tuning*) del modelo texto-a-vídeo Wan2.1-T2V-1.3B de Wan-AI, especializado en la generación de vídeo corto de contenido para adultos. Lo publica el usuario AquaSand84 en HuggingFace bajo licencia CreativeML OpenRAIL-M, con etiquetas explícitas de `nsfw` y `not-for-all-audiences`. El modelo conserva la arquitectura y el tamaño del modelo base: un transformer de difusión texto-a-vídeo de 1.300 millones de parámetros, distribuido como checkpoints `.safetensors` en un repositorio de 105,4 GB.
+NSFW Wan 1.3b es un ajuste fino (*fine-tuning*) del modelo texto-a-vídeo Wan2.1-T2V-1.3B de Wan-AI, especializado en la generación de vídeo corto de contenido para adultos. Lo publica el usuario AquaSand84 en Hugging Face bajo licencia CreativeML OpenRAIL-M, con etiquetas explícitas de `nsfw` y `not-for-all-audiences`. El modelo conserva la arquitectura y el tamaño del modelo base: un transformer de difusión texto-a-vídeo de 1.300 millones de parámetros, distribuido como checkpoints `.safetensors` en un repositorio de 105,4 GB.
 
 El objetivo declarado es servir como herramienta de investigación y creación capaz de generar clips breves coherentes a partir de descripciones en lenguaje natural dentro del dominio adulto, sin necesidad de LoRAs auxiliares para obtener movimiento nativo. El autor documenta dos ciclos de entrenamiento: uno original en dos fases (épocas 1-10 sobre imágenes, 11-20 sobre vídeo) con checkpoints `e1`-`e20`, y una segunda tanda experimental (`wan_1.3B_exp_e1` a `wan_1.3B_exp_e14`) entrenada con un dataset mixto para corregir la degradación anatómica observada en la primera.
 
@@ -76,9 +76,9 @@ No hay datos de FVD, CLIP score, evaluacion humana, MMLU ni ninguna otra metrica
 
 | Modelo | Parametros | Modalidad | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| NSFW_Wan_1.3b | 1,3 B | Texto a video | CreativeML OpenRAIL-M | Ajuste fino NSFW, 14 + 20 checkpoints publicados | HuggingFace, repositorio de 105,4 GB, 0 descargas |
-| Wan-AI/Wan2.1-T2V-1.3B | 1,3 B | Texto a video | Apache 2.0 (segun la informacion publica del modelo base; no verificable en los datos proporcionados) | Modelo base generalista, sin especializacion NSFW | HuggingFace y repositorio oficial |
-| Wan-AI/Wan2.1-T2V-14B | 14 B | Texto a video | Apache 2.0 (segun la informacion publica del modelo base) | Modelo base generalista de mayor capacidad | HuggingFace |
+| NSFW_Wan_1.3b | 1,3 B | Texto a video | CreativeML OpenRAIL-M | Ajuste fino NSFW, 14 + 20 checkpoints publicados | Hugging Face, repositorio de 105,4 GB, 0 descargas |
+| Wan-AI/Wan2.1-T2V-1.3B | 1,3 B | Texto a video | Apache 2.0 (segun la informacion publica del modelo base; no verificable en los datos proporcionados) | Modelo base generalista, sin especializacion NSFW | Hugging Face y repositorio oficial |
+| Wan-AI/Wan2.1-T2V-14B | 14 B | Texto a video | Apache 2.0 (segun la informacion publica del modelo base) | Modelo base generalista de mayor capacidad | Hugging Face |
 | Otros fine-tunes NSFW de texto a video | no disponible | Texto a video | no disponible | no disponible | no disponible |
 
 No se dispone de comparativas de rendimiento medidas entre estos modelos en la informacion proporcionada; las diferencias de licencia y de objetivo (generalista frente a especializado en contenido adulto) son el unico eje de comparacion contrastable.
@@ -100,7 +100,7 @@ No se dispone de comparativas de rendimiento medidas entre estos modelos en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AquaSand84/NSFW_Wan_1.3b
+- Modelo en Hugging Face: https://huggingface.co/AquaSand84/NSFW_Wan_1.3b
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
 - Guia de prompts incluida en el repositorio: `prompting-guide.json` (https://huggingface.co/AquaSand84/NSFW_Wan_1.3b/blob/main/prompting-guide.json)
 - Texto de la licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license

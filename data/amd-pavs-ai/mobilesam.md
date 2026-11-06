@@ -73,7 +73,7 @@ No se han publicado resultados de latencia ni throughput en la información disp
 
 | Modelo | Arquitectura | Parámetros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MobileSAM (este repo) | TinyViT + decoder SAM, ONNX | no disponible | Imagen 1024x1024 | Apache 2.0 | ONNX en HuggingFace, optimizado para AMD ROCm |
+| MobileSAM (este repo) | TinyViT + decoder SAM, ONNX | no disponible | Imagen 1024x1024 | Apache 2.0 | ONNX en Hugging Face, optimizado para AMD ROCm |
 | SAM (ViT-H) | ViT-H + decoder, PyTorch | no disponible en esta ficha | Imagen 1024x1024 | Apache 2.0 | Pesos PyTorch en Meta |
 | SAM 2 | Transformer + memoria, PyTorch | no disponible en esta ficha | Imagen/vídeo | Apache 2.0 | Pesos PyTorch en Meta |
 | FastSAM | YOLO-based, PyTorch | no disponible en esta ficha | Imagen | GPL-3.0 (según versión) | Pesos en repositorios comunitarios |
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AMD-PAVS-AI/mobilesam
+- Repositorio Hugging Face: https://huggingface.co/AMD-PAVS-AI/mobilesam
 - Scripts de AMD para MobileSAM: https://github.com/AMD-PAVS/physical_ai_sdk/blob/main/models/mobilesam
 - Implementación original de MobileSAM: https://github.com/ChaoningZhang/MobileSAM
 - Commit del modelo base: https://github.com/ChaoningZhang/MobileSAM/commit/b01a9ccef3b9e10b099b544efe004d0871802c3b

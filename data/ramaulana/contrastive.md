@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ramaulana/contrastive` es un repositorio experimental publicado en HuggingFace que contiene una implementación funcional de un Tiny Transformer orientado a tareas de aprendizaje contrastivo. Lo desarrolla el usuario Ramaulana y su propósito declarado no es ofrecer un modelo entrenado listo para producción, sino servir como código transparente y reproducible para pruebas de humo (smoke tests) y como punto de partida para experimentación. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo con pesos entrenados ni evaluados.
+`Ramaulana/contrastive` es un repositorio experimental publicado en Hugging Face que contiene una implementación funcional de un Tiny Transformer orientado a tareas de aprendizaje contrastivo. Lo desarrolla el usuario Ramaulana y su propósito declarado no es ofrecer un modelo entrenado listo para producción, sino servir como código transparente y reproducible para pruebas de humo (smoke tests) y como punto de partida para experimentación. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo con pesos entrenados ni evaluados.
 
 La relevancia de esta ficha es más metodológica que de rendimiento: el repositorio ilustra cómo estructurar un proyecto mínimo de investigación (código, `config.json`, `training_args.json` y checkpoint) y cómo documentar honestamente la ausencia de resultados de benchmarks. El recuento real de parámetros en safetensors es de 16.576, una escala tres o cuatro órdenes de magnitud por debajo de cualquier modelo de lenguaje utilizable, por lo que debe interpretarse como artefacto didáctico o de infraestructura de pruebas.
 
@@ -40,7 +40,7 @@ En cuanto al entrenamiento, la receta por defecto recoge `adamw` con un schedule
 - No se documenta soporte multilingüe ni cobertura de idiomas.
 - No se documentan capacidades multimodales (visión, audio) ni modos especiales como thinking mode.
 - Lo que sí aporta el repositorio es una implementación ejecutable: un script `predict.py` con bloque `__main__` de ejemplo, un `config.json` con los ajustes de arquitectura generados y un `training_args.json` con la receta por defecto.
-- La carga mediante APIs genéricas de HuggingFace requiere un adaptador explícito, al tratarse de una implementación personalizada.
+- La carga mediante APIs genéricas de Hugging Face requiere un adaptador explícito, al tratarse de una implementación personalizada.
 
 ## Casos de uso
 
@@ -72,7 +72,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada, y
 
 | Modelo | Parametros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ramaulana/contrastive | 16.576 | no disponible | ninguno publicado | MIT | HuggingFace, checkpoint de inicializacion |
+| Ramaulana/contrastive | 16.576 | no disponible | ninguno publicado | MIT | Hugging Face, checkpoint de inicializacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,6 +88,6 @@ No se dispone de datos de modelos comparables en la informacion proporcionada, y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ramaulana/contrastive
+- Hugging Face: https://huggingface.co/Ramaulana/contrastive
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo, al autor ni al repositorio. Las busquedas devolvieron unicamente perfiles de redes sociales de una persona no relacionada con el proyecto, por lo que no se incluyen como fuentes.
 - Paper, blog, repositorio de codigo adicional o demo: no disponible en la informacion proporcionada.

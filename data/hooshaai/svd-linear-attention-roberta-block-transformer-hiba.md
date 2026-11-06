@@ -4,7 +4,7 @@
 
 Este modelo, desarrollado por Hooshaai, es una versión comprimida de RoBERTa que integra el módulo de atención Block Transformer HIBA (Hierarchical Intra-Block and Inter-Block Attention). La propuesta aborda el coste cuadrático de la atención estándar en secuencias largas mediante un esquema jerárquico: atención densa dentro de bloques locales de 64 tokens y atención dispersa entre bloques con selección dinámica top-k de contexto global, manteniendo un anclaje obligatorio del primer bloque (que contiene el token [CLS]). Además, cada cuatro capas se aplica una rectificación global con atención densa completa para resincronizar dependencias de largo alcance.
 
-El modelo está publicado en HuggingFace con la licencia MIT, orientado a clasificación de texto y entrenado sobre el dataset GLUE (SST-2). El autor reporta una accuracy de validación del 88,76% y un F1 de 0,8977, con un ratio de compresión de 0,9452 y un pico de VRAM de 399,22 MB en la evaluación. La información sobre el número total de parámetros y la longitud de contexto no se incluye en los datos disponibles; el tamaño del repositorio es de 0,0 GB, lo que sugiere que los pesos pueden estar alojados mediante Git LFS o que no se ha subido el contenido completo.
+El modelo está publicado en Hugging Face con la licencia MIT, orientado a clasificación de texto y entrenado sobre el dataset GLUE (SST-2). El autor reporta una accuracy de validación del 88,76% y un F1 de 0,8977, con un ratio de compresión de 0,9452 y un pico de VRAM de 399,22 MB en la evaluación. La información sobre el número total de parámetros y la longitud de contexto no se incluye en los datos disponibles; el tamaño del repositorio es de 0,0 GB, lo que sugiere que los pesos pueden estar alojados mediante Git LFS o que no se ha subido el contenido completo.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No se han publicado resultados comparativos con otros modelos en la información
 - VRAM estimada para inferencia: no se especifica una medición oficial de inferencia, pero el pico de VRAM reportado en evaluación es de 399,22 MB. Para producción se recomienda un margen adicional; no hay datos de cuantizaciones disponibles.
 - GPU recomendadas: no disponible. Con ~400 MB de pico, se estima que puede ejecutarse en GPUs de consumo con al menos 1 GB de VRAM, aunque no hay una lista oficial de hardware soportado.
 - Compatibilidad con consumer GPU: sí, el pico de VRAM reportado es inferior a 1 GB, por lo que cabe en la mayoría de hardware actual (por ejemplo, NVIDIA GTX 1050, RTX 2060, o GPUs integradas modernas).
-- Opciones de despliegue: al ser un modelo PyTorch, es posible que pueda servirse mediante HuggingFace Transformers, vLLM o TGI, aunque no se documenta una integración específica. No se conocen pesos en GGUF, por lo que su uso con llama.cpp u Ollama no está confirmado.
+- Opciones de despliegue: al ser un modelo PyTorch, es posible que pueda servirse mediante Hugging Face Transformers, vLLM o TGI, aunque no se documenta una integración específica. No se conocen pesos en GGUF, por lo que su uso con llama.cpp u Ollama no está confirmado.
 - Latencia y throughput: se conoce el tiempo de evaluación pura (27,08 s para el conjunto de validación), pero no se proporcionan medidas por token ni throughput en inferencia.
 
 ## Comparativa con modelos similares
@@ -78,10 +78,10 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 - Sesgos: no se documentan sesgos específicos; al estar entrenado en GLUE, puede heredar los sesgos presentes en los datasets de lenguaje en inglés.
 - Limitaciones de contexto: la longitud de contexto no se ha publicado; aunque la atención jerárquica está diseñada para secuencias largas, no se conoce el límite exacto soportado.
 - Restricciones de licencia: la licencia MIT permite uso comercial, pero no se ofrecen garantías de rendimiento ni soporte; la responsabilidad sobre el uso recae en el usuario.
-- Advertencia importante: el tamaño del repositorio es 0,0 GB, lo que podría indicar que los pesos no están disponibles o que la información de HuggingFace está incompleta. Además, no hay descargas ni likes, lo que sugiere que el modelo es experimental y no está validado en producción.
+- Advertencia importante: el tamaño del repositorio es 0,0 GB, lo que podría indicar que los pesos no están disponibles o que la información de Hugging Face está incompleta. Además, no hay descargas ni likes, lo que sugiere que el modelo es experimental y no está validado en producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hooshaai/svd-linear-attention-roberta-block-transformer-hiba
+- Hugging Face: https://huggingface.co/Hooshaai/svd-linear-attention-roberta-block-transformer-hiba
 - Blog de Hoosha AI (Substack): https://hooshaai.substack.com/
 - Artículo sobre Adaptive Transformer Compressor: https://hooshaai.substack.com/p/adaptive-transformer-compressor-energythresholde

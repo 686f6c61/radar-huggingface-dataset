@@ -103,8 +103,8 @@ Todos los motores recibieron los mismos recortes de linea y el mismo posprocesad
 
 | Modelo | Tipo | CER impreso (KHOB 1) | CER escena (KHOB 2) | CER manuscrita | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo + LM | CRNN-CTC | 16,9 % | 28,7 % | 14,4 % (checkpoint especifico) | Apache 2.0 | Abierto, pesos descargables desde HuggingFace |
-| Este modelo (voraz) | CRNN-CTC | 19,8 % | 31,3 % | 14,4 % (checkpoint especifico) | Apache 2.0 | Abierto, pesos descargables desde HuggingFace |
+| Este modelo + LM | CRNN-CTC | 16,9 % | 28,7 % | 14,4 % (checkpoint especifico) | Apache 2.0 | Abierto, pesos descargables desde Hugging Face |
+| Este modelo (voraz) | CRNN-CTC | 19,8 % | 31,3 % | 14,4 % (checkpoint especifico) | Apache 2.0 | Abierto, pesos descargables desde Hugging Face |
 | Surya (VLM) | Modelo de vision-lenguaje | 31,7 % | 68,5 % | no disponible | no disponible en la informacion proporcionada | Motor ejecutable probado por los autores; pesos no evaluados aqui |
 | Tesseract `best` | OCR clasico | 39,4 % | 54,1 % | no disponible | no disponible en la informacion proporcionada | Motor de codigo abierto ampliamente distribuido |
 | Tesseract `fast` | OCR clasico | 43,2 % | 54,6 % | no disponible | no disponible en la informacion proporcionada | Motor de codigo abierto ampliamente distribuido |
@@ -127,6 +127,6 @@ El autor senala que los sistemas especializados en jemer estan sustancialmente p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vattanac/khmer-ocr-crnn-ctc
+- Modelo en Hugging Face: https://huggingface.co/vattanac/khmer-ocr-crnn-ctc
 - Referencia arXiv declarada en las etiquetas del modelo: arXiv:2603.00702 (no se dispone del titulo ni de los datos del articulo en la informacion proporcionada)
 - La busqueda web realizada no devolvio resultados relevantes para este modelo: los enlaces recuperados correspondian a foros de preguntas y respuestas sin relacion con OCR jemer, por lo que no se incluyen.

@@ -73,8 +73,8 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AccessAudit-coder-1.5b | 1,54B | No disponible | Correccion de accesibilidad web (axe-core/WCAG) | Apache 2.0 | HuggingFace (safetensors y GGUF) |
-| Qwen2.5-Coder-1.5B-Instruct | 1,54B | No disponible en la informacion proporcionada | Generacion de codigo e instrucciones generales | Apache 2.0 | HuggingFace |
+| AccessAudit-coder-1.5b | 1,54B | No disponible | Correccion de accesibilidad web (axe-core/WCAG) | Apache 2.0 | Hugging Face (safetensors y GGUF) |
+| Qwen2.5-Coder-1.5B-Instruct | 1,54B | No disponible en la informacion proporcionada | Generacion de codigo e instrucciones generales | Apache 2.0 | Hugging Face |
 | Modelos especializados en accesibilidad web de tamano comparable | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks comparativos con alternativas en la informacion proporcionada.
@@ -93,6 +93,6 @@ No se dispone de datos de benchmarks comparativos con alternativas en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HeyJavis/accessaudit-coder-1.5b-gguf
+- Modelo en Hugging Face: https://huggingface.co/HeyJavis/accessaudit-coder-1.5b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Dataset AccessGuru (Fathallah, Hernandez, Staab, 2025): https://doi.org/10.18419/DARUS-5177

@@ -23,7 +23,7 @@ Su relevancia es documental, no técnica: sirve como plantilla de buenas prácti
 
 ## Arquitectura y entrenamiento
 
-No se describe ninguna arquitectura de red concreta. La etiqueta `transformer` aparece en los metadatos de HuggingFace, pero la model card no detalla capas, dimensiones, mecanismos de atención ni variantes (MoE, SSM, híbrida). El contenido real es un documento Markdown (`paper_notes.md`) que plantea el alcance de una pregunta de investigación sobre few-shot multimodal, identifica factores de confusión probables y propone una comparación con baselines emparejados.
+No se describe ninguna arquitectura de red concreta. La etiqueta `transformer` aparece en los metadatos de Hugging Face, pero la model card no detalla capas, dimensiones, mecanismos de atención ni variantes (MoE, SSM, híbrida). El contenido real es un documento Markdown (`paper_notes.md`) que plantea el alcance de una pregunta de investigación sobre few-shot multimodal, identifica factores de confusión probables y propone una comparación con baselines emparejados.
 
 No hay información sobre datos de entrenamiento, número de tokens, composición del dataset, ni sobre etapas de alineación como RLHF o DPO. La model card indica que, si en el futuro se añaden resultados, deberán incluir versiones de dataset, comandos, semillas, hardware y logs en bruto, lo que confirma que el estudio no se ha ejecutado todavía. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal.
 
@@ -81,7 +81,7 @@ No procede una comparativa con modelos de IA, ya que este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/remas-nasser/few-shot-multimodal-study
+- Repositorio en Hugging Face: https://huggingface.co/remas-nasser/few-shot-multimodal-study
 - Notas principales: `paper_notes.md` dentro del repositorio
 - Documentación: `README.md` dentro del repositorio
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código ni demos.

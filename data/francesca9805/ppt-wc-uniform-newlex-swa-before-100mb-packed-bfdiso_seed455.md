@@ -4,7 +4,7 @@
 
 El modelo `ppt-wc-uniform-newlex-swa-before-100mb-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/eng_latn_100mb`, desarrollado por el usuario `francesca9805` en el marco de un proyecto de investigación asociado a la Universidad de Groningen (el enlace de seguimiento apunta al proyecto de Weights & Biases `f-padovani-university-of-groningen/new-tokenizers`). Se trata, por tanto, de un artefacto de investigación centrado en tokenización y ajuste lingüístico más que de un modelo orientado a producción.
 
-Arquitectónicamente es un transformer de tipo GPT-2 (según las etiquetas de HuggingFace) con 86.508.288 parámetros totales, pesos en `safetensors` y un pipeline de `text-generation` estándar. Al derivar de la familia Goldfish, el modelo base está entrenado monolingüe sobre aproximadamente 100 MB de texto en inglés en escritura latina, lo que sitúa el techo de capacidad lingüística y de conocimiento factual muy por debajo de los modelos contemporáneos de gran escala.
+Arquitectónicamente es un transformer de tipo GPT-2 (según las etiquetas de Hugging Face) con 86.508.288 parámetros totales, pesos en `safetensors` y un pipeline de `text-generation` estándar. Al derivar de la familia Goldfish, el modelo base está entrenado monolingüe sobre aproximadamente 100 MB de texto en inglés en escritura latina, lo que sitúa el techo de capacidad lingüística y de conocimiento factual muy por debajo de los modelos contemporáneos de gran escala.
 
 Su relevancia es limitada y acotada al ámbito experimental: sirve para reproducir experimentos de ajuste con TRL, comparar variantes de tokenizador y estudiar el efecto del SFT sobre modelos pequeños. No cuenta con benchmarks publicados, no declara idiomas soportados de forma explícita y su licencia no está confirmada, por lo que no es recomendable como componente de sistemas en producción sin una validación previa exhaustiva.
 
@@ -44,7 +44,7 @@ El entrenamiento se realizó mediante SFT (supervised fine-tuning) con la librer
 - Generación de texto de dominio restringido: útil para prototipar continuaciones de texto muy acotadas (por ejemplo, plantillas o formularios) donde no se requiere conocimiento factual extenso.
 - Pruebas de infraestructura de despliegue: por su tamaño reducido (0,2 GB de repositorio) es adecuado para validar pipelines de `text-generation-inference`, endpoints compatibles o integraciones con `transformers` antes de escalar a modelos mayores.
 - Investigación sobre atención con ventana deslizante: si el sufijo `swa` corresponde a sliding window attention, el modelo podría emplearse para analizar el impacto de este mecanismo en modelos pequeños.
-- Docencia y divulgación: ejemplo práctico de ajuste fino con TRL y publicación en HuggingFace para cursos de NLP.
+- Docencia y divulgación: ejemplo práctico de ajuste fino con TRL y publicación en Hugging Face para cursos de NLP.
 - No se recomienda su uso en atención al cliente, generación de código en producción, agentes autónomos ni ninguna aplicación con requisitos de fiabilidad, dado que no hay evidencias de rendimiento publicadas.
 
 ## Benchmarks y rendimiento
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/ppt-wc-uniform-newlex-swa-before-100mb-packed-bfdiso_seed455 | 86,5 M | No disponible | No disponible | No disponible | HuggingFace |
-| goldfish-models/eng_latn_100mb | No disponible | No disponible | No disponible | No disponible | HuggingFace (modelo base) |
-| distilgpt2 | 82 M | 1024 tokens | No disponible | MIT | HuggingFace |
-| gpt2 (small) | 124 M | 1024 tokens | No disponible | MIT | HuggingFace |
+| francesca9805/ppt-wc-uniform-newlex-swa-before-100mb-packed-bfdiso_seed455 | 86,5 M | No disponible | No disponible | No disponible | Hugging Face |
+| goldfish-models/eng_latn_100mb | No disponible | No disponible | No disponible | No disponible | Hugging Face (modelo base) |
+| distilgpt2 | 82 M | 1024 tokens | No disponible | MIT | Hugging Face |
+| gpt2 (small) | 124 M | 1024 tokens | No disponible | MIT | Hugging Face |
 
 La comparación cuantitativa de rendimiento no es posible porque el modelo analizado no publica métricas. La principal diferencia frente a `distilgpt2` y `gpt2` es la licencia: ambos alternativas son de uso libre bajo MIT, mientras que la licencia de este modelo no está confirmada.
 
@@ -83,7 +83,7 @@ La comparación cuantitativa de rendimiento no es posible porque el modelo anali
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-swa-before-100mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-swa-before-100mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Seguimiento del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ikpv6f8r
 - Repositorio de TRL: https://github.com/huggingface/trl

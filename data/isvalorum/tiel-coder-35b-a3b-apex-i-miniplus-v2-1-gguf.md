@@ -101,7 +101,7 @@ Comparativas con otros modelos de 35B, con alternativas MoE de tamano similar o 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IsValorum/Tiel-Coder-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/IsValorum/Tiel-Coder-35B-A3B-APEX-I-MiniPlus-V2.1-GGUF
 - Coleccion APEX-I-MiniPlus V2.1: https://huggingface.co/collections/IsValorum/apex-i-miniplus-v21-current-6aac8d4766a28a024e8bb104
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Paper, repositorio o demo adicionales: no disponible en la informacion proporcionada (los resultados de busqueda web no devolvieron enlaces relevantes al modelo).

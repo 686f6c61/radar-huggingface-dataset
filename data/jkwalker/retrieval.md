@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jkwalker/retrieval` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura tipo Dino orientada a tareas de *retrieval* (recuperación multimodal, presumiblemente texto-imagen dado el uso de *cross attention*). El autor, Jkwalker, lo presenta explícitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado ni evaluado. El repositorio tiene 0 descargas y 0 *likes*, y se creó y actualizó el 10 de septiembre de 2026.
+`Jkwalker/retrieval` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura tipo Dino orientada a tareas de *retrieval* (recuperación multimodal, presumiblemente texto-imagen dado el uso de *cross attention*). El autor, Jkwalker, lo presenta explícitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado ni evaluado. El repositorio tiene 0 descargas y 0 *likes*, y se creó y actualizó el 10 de septiembre de 2026.
 
 El artefacto principal no es un *checkpoint* funcional, sino un archivo `predict.py` con el modelo y un punto de entrada ejecutable, acompañado de `config.json` (configuración de arquitectura generada), `training_args.json` (receta de experimento por defecto) y `model.safetensors`, que el propio autor describe como una inicialización válida para *smoke tests*, no como un *checkpoint* entrenado. Los metadatos de safetensors reportan 33.088 parámetros totales, una cifra que contrasta con la escala "giant" declarada en la *model card*.
 
@@ -22,7 +22,7 @@ La relevancia de esta ficha es acotada y conviene ser explícito: no hay resulta
 | Formato de pesos | `model.safetensors` (inicialización), más `predict.py`, `config.json` y `training_args.json` |
 | Optimizador y scheduler por defecto | LAMB con programación onecycle |
 | Tamaño del repositorio | 0,0 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de creación / actualización | 2026-09-10 / 2026-09-10 |
 
 ## Arquitectura y entrenamiento
@@ -89,6 +89,6 @@ La búsqueda web realizada no devolvió ningún modelo comparable ni fuente téc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jkwalker/retrieval
+- Modelo en Hugging Face: https://huggingface.co/Jkwalker/retrieval
 - Búsqueda web: no se encontraron enlaces relevantes. Los únicos resultados devueltos corresponden al sistema de gestión escolar checo Bakaláři (https://www.bakalari.cz/ y dominios asociados) y no guardan relación con el modelo.
 - Paper, blog, repositorio adicional o demo: no disponible.

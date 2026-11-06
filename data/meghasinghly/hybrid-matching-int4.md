@@ -73,5 +73,5 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: [https://huggingface.co/meghasinghly/hybrid-matching-int4](https://huggingface.co/meghasinghly/hybrid-matching-int4)
+- Página del modelo en Hugging Face: [https://huggingface.co/meghasinghly/hybrid-matching-int4](https://huggingface.co/meghasinghly/hybrid-matching-int4)
 - No se han encontrado otros enlaces relevantes en la información proporcionada (sin paper, blog, demo o repositorio adicional).

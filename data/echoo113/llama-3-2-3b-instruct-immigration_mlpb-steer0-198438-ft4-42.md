@@ -53,5 +53,5 @@ No se dispone de información para establecer comparativas con otros modelos en 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-immigration_mlpB-STEER0.198438-ft4.42)
+- [Modelo en Hugging Face](https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-immigration_mlpB-STEER0.198438-ft4.42)
 - [Modelo base: meta-llama/Llama-3.2-3B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct)

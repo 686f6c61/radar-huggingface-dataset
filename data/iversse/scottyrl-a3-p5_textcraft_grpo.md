@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scottyrl-a3-p5_textcraft_grpo (este) | LoRA r32 sobre base 4B | no disponible | sin cifras publicadas; protocolo TextCraft-Synth k=4 | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (base sin adaptar) | 4B | no disponible | sin datos en la informacion disponible | no disponible | HuggingFace (referenciado como base) |
+| scottyrl-a3-p5_textcraft_grpo (este) | LoRA r32 sobre base 4B | no disponible | sin cifras publicadas; protocolo TextCraft-Synth k=4 | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (base sin adaptar) | 4B | no disponible | sin datos en la informacion disponible | no disponible | Hugging Face (referenciado como base) |
 | Otros adaptadores LoRA de la misma familia scottyrl (p. ej. otros runs del curso 11-768) | rango 32 sobre el mismo base | no disponible | no disponible | no disponible | no identificados en la informacion disponible |
 
 No se identifican en la informacion proporcionada alternativas comparables con datos verificables de parámetros, contexto o resultados; la comparación cuantitativa queda por tanto no disponible.
@@ -86,7 +86,7 @@ No se identifican en la informacion proporcionada alternativas comparables con d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iversse/scottyrl-a3-p5_textcraft_grpo
+- Hugging Face: https://huggingface.co/iversse/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper, blog o repositorio del framework scottyrl: no disponible en la informacion proporcionada
 - Documentacion o demo del entorno TextCraft-Synth: no disponible en la informacion proporcionada

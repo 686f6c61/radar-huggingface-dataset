@@ -70,8 +70,8 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/ibm-granite/granite-4.2-3b
+- Repositorio GGUF en Hugging Face: https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Colección de modelos Granite 4.2: https://huggingface.co/collections/ibm-granite/granite-42-language-models
 - Documentación de Granite 4.0 (referencia de arquitectura): https://www.ibm.com/granite/docs/models/granite
 - Página general de IBM Granite: https://www.ibm.com/granite

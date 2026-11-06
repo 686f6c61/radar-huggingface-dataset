@@ -53,9 +53,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| aariciah/gpt2-portuguese-dutch-routed | 112.876.800 | no disponible | no disponible | HuggingFace |
-| aariciah/gpt2-portuguese-dutch-first | no disponible | no disponible | no disponible | HuggingFace |
-| aariciah/gpt2-portuguese-dutch-configC-6k | no disponible | no disponible | no disponible | HuggingFace |
+| aariciah/gpt2-portuguese-dutch-routed | 112.876.800 | no disponible | no disponible | Hugging Face |
+| aariciah/gpt2-portuguese-dutch-first | no disponible | no disponible | no disponible | Hugging Face |
+| aariciah/gpt2-portuguese-dutch-configC-6k | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aariciah/gpt2-portuguese-dutch-routed
+- Modelo en Hugging Face: https://huggingface.co/aariciah/gpt2-portuguese-dutch-routed
 - Modelo base: https://huggingface.co/aariciah/gpt2-portuguese-20k-lc
 - Modelos similares:
   - https://huggingface.co/aariciah/gpt2-portuguese-dutch-first

@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (legal case typology) | 8,03B (base) | 131.072 | SFT con TRL, solo FFN | No disponible | HuggingFace, 0 descargas |
-| Llama-3.1-8B-Instruct (base) | 8,03B | 131.072 | Preentrenamiento + RLHF | Llama 3.1 Community License | HuggingFace, ampliamente usado |
-| Jongbin-kr/llama-3.1-8b-instruct-4x1-moe | No disponible | No disponible | No disponible | No disponible | HuggingFace, mismo autor |
+| Este modelo (legal case typology) | 8,03B (base) | 131.072 | SFT con TRL, solo FFN | No disponible | Hugging Face, 0 descargas |
+| Llama-3.1-8B-Instruct (base) | 8,03B | 131.072 | Preentrenamiento + RLHF | Llama 3.1 Community License | Hugging Face, ampliamente usado |
+| Jongbin-kr/llama-3.1-8b-instruct-4x1-moe | No disponible | No disponible | No disponible | No disponible | Hugging Face, mismo autor |
 
 El tercer modelo es una variante MoE del mismo autor detectada en la busqueda web; no se dispone de sus especificaciones. La comparativa se limita a los datos disponibles.
 
@@ -77,7 +77,7 @@ El tercer modelo es una variante MoE del mismo autor detectada en la busqueda we
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-legal-case-typology-architect_fallback_ffn-only
+- Hugging Face: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-legal-case-typology-architect_fallback_ffn-only
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Variante MoE del mismo autor: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe
 - Entrenamiento en Weights & Biases: https://wandb.ai/cvar_ddpo/sft_dense_lbox_roster_ffn_only/runs/utdg18xv

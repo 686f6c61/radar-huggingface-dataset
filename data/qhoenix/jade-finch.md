@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qhoenix/jade-finch es un modelo de clasificacion de imagenes publicado en HuggingFace por el usuario qhoenix. Se trata de un EfficientNetV2-L de torchvision (`efficientnet_v2_l`, 1000 clases de ImageNet) afinado mediante entrenamiento adversarial. El modelo no es un modelo de lenguaje: su tarea es asignar una de las 1000 clases de ImageNet a una imagen de entrada, y su interes tecnico reside en la robustez frente a perturbaciones adversariales.
+qhoenix/jade-finch es un modelo de clasificacion de imagenes publicado en Hugging Face por el usuario qhoenix. Se trata de un EfficientNetV2-L de torchvision (`efficientnet_v2_l`, 1000 clases de ImageNet) afinado mediante entrenamiento adversarial. El modelo no es un modelo de lenguaje: su tarea es asignar una de las 1000 clases de ImageNet a una imagen de entrada, y su interes tecnico reside en la robustez frente a perturbaciones adversariales.
 
 El modelo se ha desarrollado especificamente para la subnet Perturb (netuid 26) de la red Bittensor, un contexto en el que los mineros compiten por ofrecer clasificadores resistentes a perturbaciones. La model card incluye la hotkey del minero (`5HTMujxdVwf78DNbnLY8dAqyQLykd2mdSzZg47iA2Xs8NmTi`) y un hash on-chain que vincula los pesos con esa identidad, lo que aporta trazabilidad de procedencia.
 
@@ -31,8 +31,8 @@ Datos adicionales de la model card:
 | Hotkey del minero | `5HTMujxdVwf78DNbnLY8dAqyQLykd2mdSzZg47iA2Xs8NmTi` |
 | Hash on-chain | `sha256(model.safetensors || hotkey)` = `323898b6a30b97eddb69840caf49fe7d17f2d7b46abf7a9b06e0fe8fa0acb5ae` |
 | Tamano del repositorio | 0,5 GB |
-| Fecha de creacion | 2026-09-27T12:46:39Z (segun los metadatos de HuggingFace) |
-| Fecha de actualizacion | 2026-09-27T12:46:45Z (segun los metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-27T12:46:39Z (segun los metadatos de Hugging Face) |
+| Fecha de actualizacion | 2026-09-27T12:46:45Z (segun los metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrada | Tarea | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| qhoenix/jade-finch | 119.027.848 | 480 x 480 | Clasificacion ImageNet, afinado con entrenamiento adversarial | apache-2.0 | HuggingFace, safetensors | Repositorio sin descargas ni likes; sin benchmarks publicados |
+| qhoenix/jade-finch | 119.027.848 | 480 x 480 | Clasificacion ImageNet, afinado con entrenamiento adversarial | apache-2.0 | Hugging Face, safetensors | Repositorio sin descargas ni likes; sin benchmarks publicados |
 | torchvision `efficientnet_v2_l` (IMAGENET1K_V1) | misma arquitectura, recuento equivalente (no confirmado en la informacion disponible) | 480 x 480 (transformacion de referencia) | Clasificacion ImageNet | licencia del proyecto torchvision (no confirmada en la informacion disponible) | Pesos oficiales de torchvision | Modelo base del que parte jade-finch; entrenamiento estandar, sin la componente adversarial declarada |
 | Otros clasificadores ImageNet comparables (ConvNeXt, ViT, EfficientNet-B) | no disponible | no disponible | Clasificacion ImageNet | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada para establecer una comparacion cuantitativa |
 
@@ -101,11 +101,11 @@ La comparacion cuantitativa de rendimiento no es posible: no hay resultados de b
 - No se documentan variantes cuantizadas, soporte multilingue ni capacidades multimodales.
 - La licencia apache-2.0 permite uso comercial y modificacion, pero el autor no ofrece garantias ni se hace responsable del uso; se recomienda verificar la procedencia de los pesos mediante el hash on-chain antes de desplegarlos.
 - El repositorio registra 0 descargas y 0 likes, y el modelo es muy reciente segun los metadatos, por lo que no existe validacion por parte de la comunidad.
-- Las fechas de creacion y actualizacion indicadas (2026-09-27) proceden de los metadatos de HuggingFace y no se han podido contrastar con otra fuente.
+- Las fechas de creacion y actualizacion indicadas (2026-09-27) proceden de los metadatos de Hugging Face y no se han podido contrastar con otra fuente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qhoenix/jade-finch
+- Modelo en Hugging Face: https://huggingface.co/qhoenix/jade-finch
 - Subnet Perturb (netuid 26) de Bittensor: https://perturbai.io
 - Documentacion de torchvision, `efficientnet_v2_l`: https://pytorch.org/vision/stable/models/efficientnetv2.html
 - Documentacion de safetensors: https://github.com/huggingface/safetensors

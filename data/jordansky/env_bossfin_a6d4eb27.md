@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordansky/env_bossfin_a6d4eb27` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Jordansky. Se trata de un fine-tuning con supervisión (SFT) sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, una versión optimizada de Llama 3.1 de 8 mil millones de parámetros. El adaptador está entrenado con la librería PEFT y el framework TRL, y se distribuye en formato safetensors.
+El modelo `Jordansky/env_bossfin_a6d4eb27` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Jordansky. Se trata de un fine-tuning con supervisión (SFT) sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, una versión optimizada de Llama 3.1 de 8 mil millones de parámetros. El adaptador está entrenado con la librería PEFT y el framework TRL, y se distribuye en formato safetensors.
 
 La información pública es extremadamente limitada: la model card no contiene descripción, datos de entrenamiento, licencia ni idiomas soportados. El repositorio tiene un tamaño de 2,7 GB, lo que sugiere que contiene los pesos del adaptador (no el modelo base completo). No se han registrado descargas ni valoraciones, y no existe documentación adicional sobre su propósito o rendimiento.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada: al ser un adaptador LoRA, la VRAM necesaria depende del modelo base. Para Llama 3.1 8B en BF16 se requieren aproximadamente 16 GB de VRAM; con cuantización a 4 bits, unos 6-8 GB. El adaptador añade un overhead mínimo.
 - GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB) para BF16, o GPUs con 8-12 GB si se usa cuantización (por ejemplo, RTX 3060, RTX 4070).
 - En consumer GPU: sí, es viable con cuantización del base (por ejemplo, mediante llama.cpp o bitsandbytes).
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace Transformers con PEFT, TGI. El adaptador debe cargarse junto con el modelo base.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face Transformers con PEFT, TGI. El adaptador debe cargarse junto con el modelo base.
 - Latencia y throughput: no disponibles. Dependen del hardware y del tamaño del base.
 
 ## Comparativa con modelos similares
@@ -74,6 +74,6 @@ No se dispone de información suficiente para una comparativa rigurosa. El adapt
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jordansky/env_bossfin_a6d4eb27
+- Repositorio Hugging Face: https://huggingface.co/Jordansky/env_bossfin_a6d4eb27
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - No se han encontrado papers, blogs, demos ni repositorios adicionales relacionados con este adaptador.

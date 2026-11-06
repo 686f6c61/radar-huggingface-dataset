@@ -70,5 +70,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace - Inevitablevalor/pi05_qwen_behavior_15tasks_aug_attnmap_abstract_train_bs256_4gpu_23dim_droid_attnmap_pretrained](https://huggingface.co/Inevitablevalor/pi05_qwen_behavior_15tasks_aug_attnmap_abstract_train_bs256_4gpu_23dim_droid_attnmap_pretrained)
+- [Hugging Face - Inevitablevalor/pi05_qwen_behavior_15tasks_aug_attnmap_abstract_train_bs256_4gpu_23dim_droid_attnmap_pretrained](https://huggingface.co/Inevitablevalor/pi05_qwen_behavior_15tasks_aug_attnmap_abstract_train_bs256_4gpu_23dim_droid_attnmap_pretrained)
 - Repositorio de código: `openpi-spatialvla` (commit `b249516`, rama `eval-handoff-15tasks-ir`) — no se proporciona URL pública.

@@ -4,7 +4,7 @@
 
 El modelo identificado como `Atmyre/qwen3-8b-ao-strict-moon-c0p50` es un adaptador LoRA (PEFT) publicado por el usuario Atmyre sobre el modelo base Qwen/Qwen3-8B. Se trata, por tanto, no de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptacion de bajo rango que deben cargarse junto al modelo base para su uso. El repositorio ocupa 0,7 GB en safetensors y declara la libreria `peft` en su version 0.19.1, con la etiqueta `text-generation` y el pipeline de generacion de texto.
 
-La relevancia de esta publicacion es limitada y hay que enmarcarla con honestidad: la model card del autor es la plantilla por defecto de HuggingFace, sin ninguna seccion completada (todos los campos aparecen como `[More Information Needed]`). No se documentan datos de entrenamiento, hiperparametros, composicion del dataset, licencia, idiomas soportados ni resultados de evaluacion. Ademas, el repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no existe ninguna publicacion, paper o hilo tecnico asociado localizado en la busqueda web.
+La relevancia de esta publicacion es limitada y hay que enmarcarla con honestidad: la model card del autor es la plantilla por defecto de Hugging Face, sin ninguna seccion completada (todos los campos aparecen como `[More Information Needed]`). No se documentan datos de entrenamiento, hiperparametros, composicion del dataset, licencia, idiomas soportados ni resultados de evaluacion. Ademas, el repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no existe ninguna publicacion, paper o hilo tecnico asociado localizado en la busqueda web.
 
 En consecuencia, esta ficha describe con precision lo que si se puede verificar (formato, libreria, modelo base, tamano del repositorio) y marca explicitamente como "no disponible" todo lo que el autor no ha publicado. Cualquier dato sobre arquitectura interna, contexto o capacidades que se incluya aqui procede del modelo base Qwen3-8B, no del adaptador, y se senala como tal.
 
@@ -72,15 +72,15 @@ Para referencia del modelo base, los datos oficiales de Qwen3-8B se encuentran e
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Atmyre/qwen3-8b-ao-strict-moon-c0p50 | Adaptador LoRA sobre Qwen3-8B | No disponible (repo de 0,7 GB) | No disponible (base: 32.768) | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B | Modelo completo denso | 8.200 millones | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente usado |
-| Adaptadores LoRA sobre Qwen3-8B publicados por otros autores | Adaptador LoRA | Variable | Heredado del base | Variable, habitualmente Apache 2.0 | HuggingFace |
+| Atmyre/qwen3-8b-ao-strict-moon-c0p50 | Adaptador LoRA sobre Qwen3-8B | No disponible (repo de 0,7 GB) | No disponible (base: 32.768) | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B | Modelo completo denso | 8.200 millones | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente usado |
+| Adaptadores LoRA sobre Qwen3-8B publicados por otros autores | Adaptador LoRA | Variable | Heredado del base | Variable, habitualmente Apache 2.0 | Hugging Face |
 
 No se ha localizado en la busqueda web ningun modelo comparable especifico (mismo autor, mismo esquema de experimento) que permita una comparacion directa. La comparacion con el modelo base es la unica referencia solida, y en ella el adaptador parte con desventaja documental: no declara licencia ni resultados, mientras que el base si lo hace.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla vacia de HuggingFace, con todos los campos marcados como `[More Information Needed]`.
+- Ausencia total de documentacion: la model card es la plantilla vacia de Hugging Face, con todos los campos marcados como `[More Information Needed]`.
 - Licencia no declarada: sin licencia explicita no se puede asumir permiso de uso comercial. La licencia del modelo base (Apache 2.0 en Qwen3-8B) no cubre automaticamente los pesos derivados del adaptador si el autor no la especifica.
 - Riesgo de alucinacion: inherente a los modelos de lenguaje de este tamano; no mitigado ni evaluado en este adaptador.
 - Sesgos: no evaluados. Al desconocerse el dataset de ajuste, no puede descartarse la amplificacion de sesgos presentes en el modelo base o introducidos por los datos del LoRA.
@@ -93,7 +93,7 @@ No se ha localizado en la busqueda web ningun modelo comparable especifico (mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atmyre/qwen3-8b-ao-strict-moon-c0p50
+- Modelo en Hugging Face: https://huggingface.co/Atmyre/qwen3-8b-ao-strict-moon-c0p50
 - Modelo base Qwen/Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Libreria PEFT: https://github.com/huggingface/peft
 - Articulo de referencia sobre LoRA (arXiv:1910.09700, citado en las etiquetas del modelo): https://arxiv.org/abs/1910.09700

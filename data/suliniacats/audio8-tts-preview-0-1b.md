@@ -4,7 +4,7 @@
 
 Audio8 TTS Preview 0.1B es un modelo de síntesis de voz (text-to-speech) con capacidades de clonación de voz zero-shot, desarrollado por Audio8. Su principal característica es su tamaño compacto: aproximadamente 170 millones de parámetros en el modelo generativo principal, más un codec decoder de unos 120 millones de parámetros. El objetivo es ofrecer una alternativa ligera a los sistemas TTS multilingües modernos, que suelen superar los mil millones de parámetros, haciendo la clonación de voz y la generación de voz práctica en entornos con recursos limitados.
 
-El modelo utiliza una arquitectura propietaria denominada Audio8 Falcon H1, con dos ramas autoregresivas: una rama lenta que predice tokens semánticos y una rama rápida que predice los codebooks del codec de audio. Soporta ocho idiomas, con chino e inglés como idiomas principales y seis idiomas adicionales en estado experimental. El checkpoint v4 incluye el codec, tokenizador, procesador y el código remoto de HuggingFace, por lo que no requiere componentes externos.
+El modelo utiliza una arquitectura propietaria denominada Audio8 Falcon H1, con dos ramas autoregresivas: una rama lenta que predice tokens semánticos y una rama rápida que predice los codebooks del codec de audio. Soporta ocho idiomas, con chino e inglés como idiomas principales y seis idiomas adicionales en estado experimental. El checkpoint v4 incluye el codec, tokenizador, procesador y el código remoto de Hugging Face, por lo que no requiere componentes externos.
 
 La relevancia actual del modelo radica en su tamaño reducido (0.1B) frente a alternativas como CosyVoice3 (~1.5B) o Fish S2 Pro (~4.6B), lo que permite ejecutar TTS con clonación de voz en GPUs de consumo sin sacrificar demasiada calidad. Aunque los resultados en idiomas experimentales son peores que los de modelos más grandes, en chino e inglés el rendimiento es competitivo para su escala. El modelo se distribuye bajo la licencia Audio8 Community License v1.0.
 
@@ -72,8 +72,8 @@ Los datos de SIM no se han publicado en la información disponible. El modelo 0.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **Audio8 TTS Preview 0.1B** | ~0.17B | 2.048 tokens | 8 (2 principales) | Audio8 Community License | HuggingFace |
-| Audio8 TTS Preview 0.6B | ~0.6B | No disponible | 8 | Audio8 Community License | HuggingFace |
+| **Audio8 TTS Preview 0.1B** | ~0.17B | 2.048 tokens | 8 (2 principales) | Audio8 Community License | Hugging Face |
+| Audio8 TTS Preview 0.6B | ~0.6B | No disponible | 8 | Audio8 Community License | Hugging Face |
 | CosyVoice3 | ~1.5B | No disponible | Multilingüe | No disponible | No disponible |
 | Fish S2 Pro | ~4.6B | No disponible | Multilingüe | No disponible | No disponible |
 | Higgs Audio v2 | ~4.7B | No disponible | Multilingüe | No disponible | No disponible |
@@ -92,8 +92,8 @@ La comparativa muestra que el modelo 0.1B es el más pequeño de su categoría, 
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/suliniacats/Audio8-TTS-Preview-0.1b
-- HuggingFace (organización Audio8): https://huggingface.co/Audio8/Audio8-TTS-Preview-0.1b
+- Hugging Face (modelo): https://huggingface.co/suliniacats/Audio8-TTS-Preview-0.1b
+- Hugging Face (organización Audio8): https://huggingface.co/Audio8/Audio8-TTS-Preview-0.1b
 - GitHub del repositorio: https://github.com/Audio8-AI/Audio8_TTS
 - Demo de audio del modelo: https://audio8-ai.github.io/Audio8_TTS/0.1B/
 - Licencia: https://huggingface.co/Audio8/Audio8-TTS-Preview-0.1b/blob/main/LICENSE

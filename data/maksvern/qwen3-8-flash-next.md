@@ -78,8 +78,8 @@ La comparativa se basa en parametros y arquitectura, ya que no hay datos de rend
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo analizado): https://huggingface.co/MaksVern/Qwen3.8-Flash-Next
-- Repositorio HuggingFace oficial: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face (espejo analizado): https://huggingface.co/MaksVern/Qwen3.8-Flash-Next
+- Repositorio Hugging Face oficial: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Blog oficial de Qwen: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Informe tecnico (PDF): https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf

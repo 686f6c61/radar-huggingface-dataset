@@ -74,6 +74,6 @@ No disponible. La informaci√≥n proporcionada no incluye otros checkpoints o pol√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GinDuck/microduck-sprint-2m-sprint-2-b
+- Modelo en Hugging Face: https://huggingface.co/GinDuck/microduck-sprint-2m-sprint-2-b
 - Repositorio microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de retos microduck: https://github.com/pollen-robotics/microduck-challenges

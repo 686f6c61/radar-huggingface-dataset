@@ -88,17 +88,17 @@ Nota: las etiquetas de Luna son un objetivo de distilación, no oro humano. Las 
 - Para el pipeline completo con el extractor GLiNER subyacente, los requisitos dependen del modelo de extracción elegido; no se informan en la model card. Los modelos GLiNER2 típicamente requieren entre 2 y 6 GB de VRAM en precisión 16 bits.
 - GPU recomendada: no disponible. No se especifica una GPU concreta.
 - El probe puede ejecutarse en CPU o en cualquier GPU con memoria suficiente para el extractor GLiNER base.
-- Opciones de despliegue: utilizando PyTorch y el pipeline `token-classification` de HuggingFace, o la librería `gliner`. No es compatible con vLLM, llama.cpp ni Ollama, al no ser un modelo de lenguaje generativo.
+- Opciones de despliegue: utilizando PyTorch y el pipeline `token-classification` de Hugging Face, o la librería `gliner`. No es compatible con vLLM, llama.cpp ni Ollama, al no ser un modelo de lenguaje generativo.
 - Latencia y throughput: no disponibles. Dependen del extractor base y del hardware.
 
 ## Comparativa con modelos similares
 
 | Modelo | Rol | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rafmacalaba/gliner-datause-catchall-infer-probe` | Probe de inferencia (clasificador binario) | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| `rafmacalaba/gliner-datause-mentions-catch-all` | Extractor de propuestas de spans | no disponible | no disponible | Apache-2.0 (presumible) | HuggingFace |
-| `rafmacalaba/gliner2_datause` | Modelo GLiNER2 de extracción NER | no disponible | no disponible | Apache-2.0 | HuggingFace, pesos en Safetensors |
-| `rafmacalaba/gliner_datause_probe` | Otro probe de NER (relacionado) | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| `rafmacalaba/gliner-datause-catchall-infer-probe` | Probe de inferencia (clasificador binario) | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| `rafmacalaba/gliner-datause-mentions-catch-all` | Extractor de propuestas de spans | no disponible | no disponible | Apache-2.0 (presumible) | Hugging Face |
+| `rafmacalaba/gliner2_datause` | Modelo GLiNER2 de extracción NER | no disponible | no disponible | Apache-2.0 | Hugging Face, pesos en Safetensors |
+| `rafmacalaba/gliner_datause_probe` | Otro probe de NER (relacionado) | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de comparación cuantitativa entre estos modelos. La diferencia funcional principal es que `gliner-datause-mentions-catch-all` propone spans, mientras que el modelo objeto de esta ficha decide si mantenerlos o descartarlos.
 
@@ -115,7 +115,7 @@ No se dispone de datos de comparación cuantitativa entre estos modelos. La dife
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rafmacalaba/gliner-datause-catchall-infer-probe
+- Modelo en Hugging Face: https://huggingface.co/rafmacalaba/gliner-datause-catchall-infer-probe
 - Repositorio de datos mencionado en la model card: `rafmacalaba/datause-probe-v3`
 - Extractor base mencionado: `rafmacalaba/gliner-datause-mentions-catch-all`
 - Modelo relacionado: https://huggingface.co/rafmacalaba/gliner2_datause

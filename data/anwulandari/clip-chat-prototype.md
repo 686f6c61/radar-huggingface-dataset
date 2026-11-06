@@ -58,5 +58,5 @@ No disponible. No se puede comparar con otros modelos porque no existe un modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Anwulandari/clip-chat-prototype
+- Repositorio Hugging Face: https://huggingface.co/Anwulandari/clip-chat-prototype
 - Paper de CLIP (OpenAI) como referencia contextual del nombre, aunque no se confirma relación: https://arxiv.org/abs/2103.00020 (no confirmado como vinculado a este repositorio)

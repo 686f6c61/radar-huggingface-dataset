@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WAMU_v3_WAN2.2_I2V_LIGHTNING es un checkpoint de difusión para generación de vídeo a partir de imagen (image-to-video, I2V) publicado en HuggingFace por el usuario `deamicis`. El identificador y los resultados de búsqueda lo vinculan a la familia Wan 2.2 de Alibaba, en su variante I2V de escala 14B, y el sufijo "Lightning" indica una variante destilada para inferencia en pocos pasos. El repositorio contiene 14.288.901.184 parámetros en formato safetensors (68,9 GB) y se carga mediante la clase `WanImageToVideoPipeline` de la librería diffusers.
+WAMU_v3_WAN2.2_I2V_LIGHTNING es un checkpoint de difusión para generación de vídeo a partir de imagen (image-to-video, I2V) publicado en Hugging Face por el usuario `deamicis`. El identificador y los resultados de búsqueda lo vinculan a la familia Wan 2.2 de Alibaba, en su variante I2V de escala 14B, y el sufijo "Lightning" indica una variante destilada para inferencia en pocos pasos. El repositorio contiene 14.288.901.184 parámetros en formato safetensors (68,9 GB) y se carga mediante la clase `WanImageToVideoPipeline` de la librería diffusers.
 
 El interés técnico del modelo es doble: por un lado, aplica el paradigma de destilación de pasos (few-step) a un modelo de vídeo de 14B, lo que reduce drásticamente el coste de muestreo frente a los 40-50 pasos habituales de los modelos de difusión de vídeo; por otro, se distribuye en el ecosistema diffusers, lo que permite integrarlo en pipelines existentes sin reimplementar el sampler. La relevancia práctica depende, sin embargo, de una validación que aún no existe: el repositorio acumula 0 descargas y 0 likes, y la model card es la plantilla autogenerada de diffusers, sin ninguna sección completada.
 
@@ -66,7 +66,7 @@ El repositorio no incluye métricas objetivas de calidad de vídeo (VBench, FVD,
 
 | Modelo | Parametros | Resolucion / duracion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| WAMU_v3_WAN2.2_I2V_LIGHTNING (este) | 14,29B (safetensors) | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes |
+| WAMU_v3_WAN2.2_I2V_LIGHTNING (este) | 14,29B (safetensors) | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes |
 | Wan2.2-I2V-A14B (familia Wan 2.2, variante I2V de referencia) | 14B activos (A14B); total no disponible en las fuentes consultadas | No disponible en las fuentes consultadas | No disponible en las fuentes consultadas | Repositorio oficial Wan-Video/Wan2.2 |
 | Wan2.2-TI2V-5B (familia Wan 2.2, variante densa texto+imagen a vídeo) | 5B | 720p a 24 fps; VAE con ratio de compresión 16×16×4; ejecutable en RTX 4090 | No disponible en las fuentes consultadas | Repositorio oficial Wan-Video/Wan2.2 |
 | Wan2.2-Lightning (lightx2v) | No disponible | No disponible | Uso comercial permitido según `selfhost.directory` | Diffusers y ComfyUI, según la misma fuente |
@@ -88,9 +88,9 @@ La comparación relevante es frente al modelo base del que se destila: este chec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/deamicis/WAMU_v3_WAN2.2_I2V_LIGHTNING
-- Espejo en HuggingFace (d335566): https://huggingface.co/d335566/WAMU_v3_WAN2.2_I2V_LIGHTNING/tree/main
-- Espejo en HuggingFace (djessica): https://huggingface.co/djessica/WAMU_v3_WAN2.2_I2V_LIGHTNING
+- Repositorio Hugging Face: https://huggingface.co/deamicis/WAMU_v3_WAN2.2_I2V_LIGHTNING
+- Espejo en Hugging Face (d335566): https://huggingface.co/d335566/WAMU_v3_WAN2.2_I2V_LIGHTNING/tree/main
+- Espejo en Hugging Face (djessica): https://huggingface.co/djessica/WAMU_v3_WAN2.2_I2V_LIGHTNING
 - Repositorio GitHub con interfaz Gradio local y cuantización INT8 (`WAMU_v3_INT8`): https://github.com/aruniankur/wan2.2model
 - Repositorio oficial de la familia Wan 2.2: https://github.com/Wan-Video/Wan2.2
 - Ficha de Wan2.2-Lightning (lightx2v) en selfhost.directory: https://selfhost.directory/models/lightx2v/wan2.2-lightning

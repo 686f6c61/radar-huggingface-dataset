@@ -75,7 +75,7 @@ No se dispone de información sobre otros modelos o adaptadores comparables dent
 
 ## Enlaces
 
-- Repositorio HuggingFace: [terminusresearch/minimax-music3-training-tournament](https://huggingface.co/terminusresearch/minimax-music3-training-tournament)
+- Repositorio Hugging Face: [terminusresearch/minimax-music3-training-tournament](https://huggingface.co/terminusresearch/minimax-music3-training-tournament)
 - Modelo base: [MiniMaxAI/MiniMax-Music3](https://huggingface.co/MiniMaxAI/MiniMax-Music3)
 - Repositorio fuente de las variantes:
   - [RareConcepts/soad-mm3-vanilla-20260822](https://huggingface.co/RareConcepts/soad-mm3-vanilla-20260822)

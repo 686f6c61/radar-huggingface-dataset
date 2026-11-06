@@ -67,7 +67,7 @@ No disponible. No se han encontrado modelos de borrador comparables con especifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/curvedinf/Qwen3.8-27B-DFlash2-GPTQ-INT8-W8A8-GS128
+- Modelo en Hugging Face: https://huggingface.co/curvedinf/Qwen3.8-27B-DFlash2-GPTQ-INT8-W8A8-GS128
 - Modelo base (draft original): https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Modelo objetivo (cuantizado): https://huggingface.co/curvedinf/Qwen3.8-27B-GPTQ-INT8-W8A8-GS128
 - Proyecto DFlash: https://github.com/z-lab/dflash

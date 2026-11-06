@@ -76,8 +76,8 @@ La comparativa se limita a la familia Qwen3-TTS porque no se dispone de datos co
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/Rin247/Qwen3-TTS-12Hz-1.7B-CustomVoice-FP4
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
+- Repositorio Hugging Face de este modelo: https://huggingface.co/Rin247/Qwen3-TTS-12Hz-1.7B-CustomVoice-FP4
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
 - Repositorio GitHub oficial de Qwen3-TTS: https://github.com/QwenLM/Qwen3-TTS
 - Página del modelo en vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
 - Guía de despliegue en innoai.space: https://innoai.space/model/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice

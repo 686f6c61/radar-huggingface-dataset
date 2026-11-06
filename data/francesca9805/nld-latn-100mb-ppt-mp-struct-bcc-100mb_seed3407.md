@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/nld_latn_100mb`, desarrollado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generación de texto de pequeno tamano (124,77 millones de parametros) construido sobre la arquitectura GPT-2 y entrenado mediante SFT (Supervised Fine-Tuning) con la libreria TRL de HuggingFace. El nombre del modelo sugiere un experimento academico estructurado en torno a variantes de tokenizacion y datos de entrenamiento (probablemente relacionado con el proyecto "new-tokenizers" visible en el enlace de Weights & Biases), orientado al idioma neerlandes (`nld_latn`).
+El modelo `nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/nld_latn_100mb`, desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generación de texto de pequeno tamano (124,77 millones de parametros) construido sobre la arquitectura GPT-2 y entrenado mediante SFT (Supervised Fine-Tuning) con la libreria TRL de Hugging Face. El nombre del modelo sugiere un experimento academico estructurado en torno a variantes de tokenizacion y datos de entrenamiento (probablemente relacionado con el proyecto "new-tokenizers" visible en el enlace de Weights & Biases), orientado al idioma neerlandes (`nld_latn`).
 
 Su relevancia es limitada y de caracter experimental: no es un modelo de proposito general ni compite con modelos de gran escala. Resulta de interes para investigadores que estudien el efecto del ajuste fino SFT sobre modelos pequenos multilingues del proyecto Goldfish, o para quienes necesiten reproducir experimentos de tokenizacion en lenguas de bajos recursos. El modelo base Goldfish es una familia de modelos pequenos (100 MB de datos de entrenamiento) para mas de 400 idiomas, disenada para investigacion linguistica de bajo coste computacional.
 
@@ -44,7 +44,7 @@ El nombre del modelo incluye segmentos como `ppt`, `mp`, `struct` y `bcc-100mb`,
 - Generacion de texto de bajo coste en neerlandes: para prototipos o demos donde no se requiere alta calidad y se dispone de recursos minimos (el modelo cabe en cualquier GPU consumer).
 - Baseline academico: sirve como referencia inferior en comparaciones con modelos neerlandeses mas grandes (p. ej., variantes de Goldfish de mayor tamano o modelos como GPT-2 multilingual).
 - Pruebas de pipelines de despliegue: al ser pequeno y compatible con text-generation-inference y endpoints_compatible, se puede usar para validar infraestructura de serving antes de migrar a modelos mayores.
-- Docencia: ejemplo practico de fine-tuning con TRL y publicacion en HuggingFace para cursos de NLP.
+- Docencia: ejemplo practico de fine-tuning con TRL y publicacion en Hugging Face para cursos de NLP.
 
 ## Benchmarks y rendimiento
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo para incluir en la tabla.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/h3g8nb5u
 - Repositorio TRL: https://github.com/huggingface/trl

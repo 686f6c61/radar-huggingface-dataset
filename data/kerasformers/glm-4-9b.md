@@ -62,7 +62,7 @@ No se dispone de información comparativa con otros modelos en la documentación
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/kerasformers/glm-4-9b)
+- [Modelo en Hugging Face](https://huggingface.co/kerasformers/glm-4-9b)
 - [Repositorio KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de GLM en KerasFormers](https://imvision12.github.io/KerasFormers/glm/)
 - [Colección de modelos GLM](https://huggingface.co/collections/kerasformers/glm-6a82b8f9f753e8dcae3ff3f7)

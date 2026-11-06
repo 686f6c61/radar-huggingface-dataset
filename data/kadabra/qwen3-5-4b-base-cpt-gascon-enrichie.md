@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Kadabra/Qwen3.5-4B-Base-CPT-Gascon-Enrichie es un ajuste fino publicado por el usuario Kadabra (organización "Kadabra" en HuggingFace) que parte del checkpoint base unsloth/Qwen3.5-4B-Base. Según la model card, se trata de un "continued pretraining" (CPT) realizado con Unsloth y la librería TRL de HuggingFace, y se distribuye en precisión de 16 bits (FP16) en formato safetensors. El repositorio declara 4.539.265.536 parámetros (aproximadamente 4,54 mil millones) y un tamaño de 9,1 GB, coherente con pesos FP16.
+Kadabra/Qwen3.5-4B-Base-CPT-Gascon-Enrichie es un ajuste fino publicado por el usuario Kadabra (organización "Kadabra" en Hugging Face) que parte del checkpoint base unsloth/Qwen3.5-4B-Base. Según la model card, se trata de un "continued pretraining" (CPT) realizado con Unsloth y la librería TRL de Hugging Face, y se distribuye en precisión de 16 bits (FP16) en formato safetensors. El repositorio declara 4.539.265.536 parámetros (aproximadamente 4,54 mil millones) y un tamaño de 9,1 GB, coherente con pesos FP16.
 
-El interés del modelo es acotado y experimental: no es un lanzamiento de un laboratorio, sino un checkpoint de trabajo derivado de un modelo base de la familia Qwen3.5. El nombre del repositorio sugiere un trabajo de continuación de preentrenamiento orientado al gascón ("Gascon-Enrichie"), pero la model card no documenta el corpus utilizado, el número de tokens de entrenamiento, la composición del dataset ni ningún proceso de alineación (RLHF/DPO). El pipeline declarado en HuggingFace es image-text-to-text, lo que apunta a que el modelo base tendría capacidad multimodal, aunque la ficha del autor no lo describe ni lo valida.
+El interés del modelo es acotado y experimental: no es un lanzamiento de un laboratorio, sino un checkpoint de trabajo derivado de un modelo base de la familia Qwen3.5. El nombre del repositorio sugiere un trabajo de continuación de preentrenamiento orientado al gascón ("Gascon-Enrichie"), pero la model card no documenta el corpus utilizado, el número de tokens de entrenamiento, la composición del dataset ni ningún proceso de alineación (RLHF/DPO). El pipeline declarado en Hugging Face es image-text-to-text, lo que apunta a que el modelo base tendría capacidad multimodal, aunque la ficha del autor no lo describe ni lo valida.
 
 A fecha de la información disponible, el repositorio no registra descargas ni "likes", y no incluye resultados de evaluación, ejemplos de uso ni instrucciones de prompt. Es, por tanto, un artefacto de investigación que debe tratarse con cautela y validarse empíricamente antes de cualquier uso en producción.
 
@@ -30,7 +30,7 @@ En cuanto al entrenamiento, la model card solo indica que el ajuste se realizó 
 ## Capacidades
 
 - Generación de texto autoregresiva, heredada del modelo base Qwen3.5-4B-Base; no hay evaluación publicada que la cuantifique tras el CPT.
-- Procesamiento potencial de entradas de imagen: el pipeline declarado en HuggingFace es `image-text-to-text`, lo que sugiere que el modelo base es multimodal. La model card no lo confirma ni documenta qué tareas visuales soporta.
+- Procesamiento potencial de entradas de imagen: el pipeline declarado en Hugging Face es `image-text-to-text`, lo que sugiere que el modelo base es multimodal. La model card no lo confirma ni documenta qué tareas visuales soporta.
 - Continuación de preentrenamiento orientada, según el nombre del repositorio, a enriquecer la cobertura del gascón; sin corpus ni métricas publicadas que lo verifiquen.
 - Compatibilidad con `text-generation-inference` según las etiquetas, lo que facilita el despliegue con TGI si la configuración lo permite.
 - No se documenta soporte de tool calling, function calling, modo "thinking", razonamiento multi-paso, agentes ni capacidades de audio.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Kadabra/Qwen3.5-4B-Base-CPT-Gascon-Enrichie | 4,54 B | No disponible | image-text-to-text (declarado) | apache-2.0 | Repositorio público, sin descargas ni evaluación |
-| unsloth/Qwen3.5-4B-Base (modelo de partida) | ~4 B (según nomenclatura) | No disponible | No disponible | No disponible en esta ficha | Checkpoint base en HuggingFace |
+| unsloth/Qwen3.5-4B-Base (modelo de partida) | ~4 B (según nomenclatura) | No disponible | No disponible | No disponible en esta ficha | Checkpoint base en Hugging Face |
 | Qwen3-4B | 4,0 B (dense) | 32K nativo, ampliable con YaRN | Texto | apache-2.0 | Ampliamente desplegado, con versiones GGUF, AWQ y GPTQ |
 | Llama 3.2 3B Instruct | 3,2 B | 128K | Texto | Licencia comunitaria Llama 3.2 | Ampliamente desplegado, con ecosistema de cuantizaciones |
 | Gemma 3 4B | ~4 B | 128K | Texto e imagen | Licencia Gemma | Ampliamente desplegado, con versiones cuantizadas oficiales |
@@ -86,8 +86,8 @@ Nota: los datos de los modelos alternativos provienen de su documentación públ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kadabra/Qwen3.5-4B-Base-CPT-Gascon-Enrichie
+- Modelo en Hugging Face: https://huggingface.co/Kadabra/Qwen3.5-4B-Base-CPT-Gascon-Enrichie
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B-Base
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 - Paper, blog o demo del autor: no disponible en la información proporcionada.

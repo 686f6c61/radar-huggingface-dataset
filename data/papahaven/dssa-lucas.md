@@ -109,7 +109,7 @@ Respecto a alternativas de la misma categoria (clasificadores sobre EfficientNet
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Papahaven/DSSA-LUCAS
+- Hugging Face: https://huggingface.co/Papahaven/DSSA-LUCAS
 - Repositorio de codigo en GitHub: https://github.com/siam4201/DSSA-LUCAS
 - Cita asociada (envio a IEEE Transactions / Conference, 2026): Siam, Sarker y Mim, Farhana Nur, "Dual Surface-Subsurface Adapter for Ground-Level Land Cover Classification with Soil Physicochemical Context".
 - Resultados de busqueda web: sin resultados relevantes para el modelo; las entradas devueltas corresponden a un portal educativo no relacionado.

@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/florianvoss/Qwen3-4B-DFlash-N16-LLiMa-3.0.0
+- Hugging Face: https://huggingface.co/florianvoss/Qwen3-4B-DFlash-N16-LLiMa-3.0.0
 - Target de origen: https://huggingface.co/simaai/Qwen3-4B-Autoround-Safetensors
 - Draft de origen: https://huggingface.co/simaai/Qwen3-4B-DFlash-b16-RTN-INT8-Safetensors
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-4B

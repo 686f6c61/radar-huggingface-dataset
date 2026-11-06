@@ -78,10 +78,10 @@ El autor indica que Hopper (G) no esta ajustado para JevBench y no formula ningu
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hopper (G) 1.2 | 4B (base) + LoRA r=16 | no disponible | balanced raw 53,50; balanced skill 38,07; GSM8K 0,480 | research-and-demo | HuggingFace, repo 0,1 GB |
-| Hopper 1.1.1 | 4B (base) + LoRA | no disponible | balanced raw 52,74; balanced skill 37,10; GSM8K 0,318 | research-and-demo (no confirmado en la informacion disponible) | HuggingFace |
-| Hopper 1.0 | 4B (base) + LoRA | no disponible | no disponible | research-and-demo (no confirmado en la informacion disponible) | HuggingFace |
-| Qwen/Qwen3.5-4B (modelo base) | 4B | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace, revision 851bf6e |
+| Hopper (G) 1.2 | 4B (base) + LoRA r=16 | no disponible | balanced raw 53,50; balanced skill 38,07; GSM8K 0,480 | research-and-demo | Hugging Face, repo 0,1 GB |
+| Hopper 1.1.1 | 4B (base) + LoRA | no disponible | balanced raw 52,74; balanced skill 37,10; GSM8K 0,318 | research-and-demo (no confirmado en la informacion disponible) | Hugging Face |
+| Hopper 1.0 | 4B (base) + LoRA | no disponible | no disponible | research-and-demo (no confirmado en la informacion disponible) | Hugging Face |
+| Qwen/Qwen3.5-4B (modelo base) | 4B | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face, revision 851bf6e |
 
 Las alternativas comparables mas cercanas son las versiones anteriores del propio adaptador, ya que la tarea (decision tipada con calibracion) es especifica y no coincide con la de un LLM generativo generalista del mismo tamano. No se dispone de datos de otros adaptadores de decision comparables.
 
@@ -101,7 +101,7 @@ Las alternativas comparables mas cercanas son las versiones anteriores del propi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HopitAI/hopper-g
+- Modelo en Hugging Face: https://huggingface.co/HopitAI/hopper-g
 - Adaptador Hopper (version 1.0): https://huggingface.co/HopitAI/hopper
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B (revision 851bf6e)
 - Codigo de serving: https://github.com/hopit-ai/hopper (etiqueta g-1.2.0)

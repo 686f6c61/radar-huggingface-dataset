@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cyttic/hmt-htrvt-geom3-s42` es un modelo de reconocimiento de texto manuscrito (HTR, *Handwritten Text Recognition*) desarrollado por el usuario `cyttic`, publicado en HuggingFace con licencia MIT. Forma parte de un estudio de aumento de datos (*augmentation study*) denominado `htr-metrics-transfer`, en su primera ola (*wave 1*), con el modelo base `htrvt`, la estrategia de aumento `geom3` y la semilla 42. El modelo está entrenado sobre el conjunto `cyttic/hhd-optionb-split` (partición de entrenamiento sin los escritores de desarrollo) y evaluado sobre el test HHD Option-B.
+`cyttic/hmt-htrvt-geom3-s42` es un modelo de reconocimiento de texto manuscrito (HTR, *Handwritten Text Recognition*) desarrollado por el usuario `cyttic`, publicado en Hugging Face con licencia MIT. Forma parte de un estudio de aumento de datos (*augmentation study*) denominado `htr-metrics-transfer`, en su primera ola (*wave 1*), con el modelo base `htrvt`, la estrategia de aumento `geom3` y la semilla 42. El modelo está entrenado sobre el conjunto `cyttic/hhd-optionb-split` (partición de entrenamiento sin los escritores de desarrollo) y evaluado sobre el test HHD Option-B.
 
 Con 13.821.574 parámetros (unos 13,8 millones), se trata de un modelo compacto orientado a una tarea muy específica: la transcripción de texto manuscrito en hebreo (`he`). Utiliza una arquitectura de reconocimiento con cabecera CTC (*Connectionist Temporal Classification*), según indican sus etiquetas, y se distribuye en formato `safetensors` con un tamaño de repositorio de aproximadamente 0,1 GB.
 
@@ -80,6 +80,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-geom3-s42
+- Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-geom3-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split (referenciado en la model card)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

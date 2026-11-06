@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `niedamsie9/krea2customs` es un repositorio publicado en HuggingFace por el usuario `niedamsie9` bajo licencia Apache 2.0. La model card asociada no contiene más información que la propia licencia, por lo que no se dispone de datos sobre su arquitectura, parámetros, entrenamiento o capacidades. El repositorio ocupa 17.0 GB, lo que sugiere que podría tratarse de un modelo de tamaño considerable, pero sin especificaciones adicionales no es posible confirmar su naturaleza ni su propósito.
+El modelo `niedamsie9/krea2customs` es un repositorio publicado en Hugging Face por el usuario `niedamsie9` bajo licencia Apache 2.0. La model card asociada no contiene más información que la propia licencia, por lo que no se dispone de datos sobre su arquitectura, parámetros, entrenamiento o capacidades. El repositorio ocupa 17.0 GB, lo que sugiere que podría tratarse de un modelo de tamaño considerable, pero sin especificaciones adicionales no es posible confirmar su naturaleza ni su propósito.
 
 A fecha de su última actualización (20 de agosto de 2026), el modelo no registra descargas ni valoraciones, lo que indica que es un proyecto reciente y sin adopción conocida. Dada la ausencia total de documentación técnica, cualquier uso en producción debería considerarse de alto riesgo y requeriría una evaluación previa exhaustiva.
 
@@ -54,6 +54,6 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el rendimiento del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/niedamsie9/krea2customs
+- Repositorio en Hugging Face: https://huggingface.co/niedamsie9/krea2customs
 
 No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo.

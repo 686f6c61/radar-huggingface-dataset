@@ -57,7 +57,7 @@ No se han proporcionado comparativas oficiales en la información disponible. Po
 - Compatibilidad de cuantizaciones: la model card menciona una cuantización NVFP4 recomendada, pero el repositorio actual es GGUF y puede requerir configuraciones específicas (como el número de expertos activos) para obtener un rendimiento óptimo.
 
 ## Enlaces
-- HuggingFace del modelo: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-GGUF
+- Hugging Face del modelo: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-GGUF
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Cuantización NVFP4 recomendada: https://huggingface.co/jan1k/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-NVFP4-GGUF
 - Script de cuantización: https://pastebin.com/hXhcMJn9

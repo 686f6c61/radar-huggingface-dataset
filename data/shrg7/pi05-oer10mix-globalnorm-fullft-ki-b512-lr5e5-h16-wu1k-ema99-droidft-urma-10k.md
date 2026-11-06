@@ -73,7 +73,7 @@ Los datos de las alternativas provienen de documentación pública general y no 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`pi05-oer10mix-...-urma-10k`) | no disponible | no disponible | pick-and-place multirobot | no disponible | pesos orbax en HuggingFace, 0 descargas |
+| Este checkpoint (`pi05-oer10mix-...-urma-10k`) | no disponible | no disponible | pick-and-place multirobot | no disponible | pesos orbax en Hugging Face, 0 descargas |
 | `pi05_base` (openpi) | no disponible en esta ficha | no disponible | política VLA generalista | según openpi (consultar) | pública en el ecosistema openpi |
 | OpenVLA | 7B | no disponible | manipulación VLA | abierta (consultar) | pesos públicos |
 | RDT-1B | aproximadamente 1B | no disponible | manipulación bimanual | abierta (consultar) | pesos públicos |
@@ -97,7 +97,7 @@ La diferencia relevante frente a esas alternativas no es de tamaño, sino de enf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shrg7/pi05-oer10mix-globalnorm-fullft-ki-b512-lr5e5-h16-wu1k-ema99-droidft-urma-10k
+- Hugging Face: https://huggingface.co/shrg7/pi05-oer10mix-globalnorm-fullft-ki-b512-lr5e5-h16-wu1k-ema99-droidft-urma-10k
 - Repositorio openpi (referencia del ecosistema, rama `pi05-oer10-urma`, commit 37764198): https://github.com/Physical-Intelligence/openpi
 - Paper de `pi0.5` / openpi: no disponible en la información proporcionada.
 - Blog o demo del autor: no disponible en la información proporcionada.

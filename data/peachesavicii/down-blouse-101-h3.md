@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Down-Blouse-101-H3 es un adaptador LoRA de tipo text-to-image publicado por el usuario PeachesAvicii en HuggingFace. Se trata de un ajuste fino ligero (pesos de adaptador, no un modelo completo) diseñado para inyectar un estilo y una temática concretos sobre el modelo base `neph1/1980s_fantasy_movies_minimax_h3`, que a su vez es un derivado del ecosistema MiniMax H3 orientado a la generación de imágenes con estética de cine fantástico de los años 80. El repositorio ocupa 0,3 GB, lo que es coherente con un LoRA y no con un checkpoint completo.
+Down-Blouse-101-H3 es un adaptador LoRA de tipo text-to-image publicado por el usuario PeachesAvicii en Hugging Face. Se trata de un ajuste fino ligero (pesos de adaptador, no un modelo completo) diseñado para inyectar un estilo y una temática concretos sobre el modelo base `neph1/1980s_fantasy_movies_minimax_h3`, que a su vez es un derivado del ecosistema MiniMax H3 orientado a la generación de imágenes con estética de cine fantástico de los años 80. El repositorio ocupa 0,3 GB, lo que es coherente con un LoRA y no con un checkpoint completo.
 
 La model card es extremadamente escueta: el autor lo describe como contenido NSFW subido "para uso personal con mi tool set", con la palabra de activación `on her hands and knees`. No se documentan datos de entrenamiento, número de pasos, learning rate, resolución, composición del dataset ni métricas de evaluación. La licencia declarada es Apache-2.0 y el pipeline es `text-to-image` dentro de la librería `diffusers`.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PeachesAvicii/Down-Blouse-101-H3
+- Hugging Face: https://huggingface.co/PeachesAvicii/Down-Blouse-101-H3
 - Modelo base: https://huggingface.co/neph1/1980s_fantasy_movies_minimax_h3
 - Repositorio de archivos: https://huggingface.co/PeachesAvicii/Down-Blouse-101-H3/tree/main
 - Documentación de `diffusers`: https://huggingface.co/docs/diffusers

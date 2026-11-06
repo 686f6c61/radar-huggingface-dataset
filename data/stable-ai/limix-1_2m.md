@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks con cifras numericas en la informac
 
 | Modelo | Parametros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LimiX-2M / LimiX-1_2M | ~2M (segun nomenclatura; dato exacto no disponible) | No disponible | Clasificacion, regresion, imputacion, seleccion de caracteristicas y muestras, inferencia causal, generacion tabular | Apache 2.0 | HuggingFace (`stable-ai/LimiX-1_2M`) y ModelScope |
-| LimiX-16M | 16M (segun nomenclatura) | No disponible | Clasificacion, regresion, imputacion de valores ausentes | Apache 2.0 | HuggingFace (`stableai-org/LimiX-16M`) |
+| LimiX-2M / LimiX-1_2M | ~2M (segun nomenclatura; dato exacto no disponible) | No disponible | Clasificacion, regresion, imputacion, seleccion de caracteristicas y muestras, inferencia causal, generacion tabular | Apache 2.0 | Hugging Face (`stable-ai/LimiX-1_2M`) y ModelScope |
+| LimiX-16M | 16M (segun nomenclatura) | No disponible | Clasificacion, regresion, imputacion de valores ausentes | Apache 2.0 | Hugging Face (`stableai-org/LimiX-16M`) |
 | XGBoost | No aplica (modelo de gradiente boosting, no fundacional) | No aplica | Clasificacion y regresion tabular | Apache 2.0 | Ampliamente disponible |
 | Modelos fundacionales tabulares previos | No disponible | No disponible | Clasificacion y regresion tabular | No disponible | No disponible |
 
@@ -79,7 +79,7 @@ La model card situa a LimiX por encima de XGBoost y de los modelos fundacionales
 - Ausencia de datos numericos publicados: las afirmaciones de rendimiento SOTA se apoyan en figuras de la model card, sin tablas de metricas verificables en la informacion disponible.
 - Sesgos: no documentados. Al entrenarse sobre datos tabulares de origen no especificado, puede heredar sesgos presentes en esos datos (por ejemplo, variables sensibles correlacionadas con el objetivo), sin que el autor describa mitigaciones.
 - Riesgo de predicciones poco fiables fuera de la distribucion de las tablas de entrenamiento, especialmente con esquemas de columnas muy distintos o con un numero reducido de filas.
-- El modelo no documenta explicitamente su licencia en los metadatos de HuggingFace (aparece como "no disponible"); la licencia Apache 2.0 se declara en la model card, por lo que conviene verificar el archivo LICENSE del repositorio antes de un uso comercial.
+- El modelo no documenta explicitamente su licencia en los metadatos de Hugging Face (aparece como "no disponible"); la licencia Apache 2.0 se declara en la model card, por lo que conviene verificar el archivo LICENSE del repositorio antes de un uso comercial.
 - Restricciones de contexto: se desconoce el numero maximo de filas y columnas soportado; con tablas muy anchas o muy largas el coste de atencion puede crecer de forma significativa.
 - El repositorio `stable-ai/LimiX-1_2M` figura con 0 descargas, 0 likes y un tamano de 0.0 GB en el momento de la consulta, lo que sugiere que los pesos no estan alojados ahi o que el repositorio esta vacio; conviene comprobar los repositorios alternativos de la organizacion antes de desplegar.
 - Dependencia de `flash_attn` y de versiones muy concretas de PyTorch y CUDA, lo que complica la reproducibilidad del entorno.
@@ -87,8 +87,8 @@ La model card situa a LimiX por encima de XGBoost y de los modelos fundacionales
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stable-ai/LimiX-1_2M
-- Organizacion en HuggingFace: https://huggingface.co/stable-ai
+- Modelo en Hugging Face: https://huggingface.co/stable-ai/LimiX-1_2M
+- Organizacion en Hugging Face: https://huggingface.co/stable-ai
 - Variante LimiX-16M: https://huggingface.co/stableai-org/LimiX-16M/tree/main
 - Paper original: https://arxiv.org/abs/2509.03505
 - Paper de LimiX-2M (ICML 2026): https://arxiv.org/abs/2606.04485

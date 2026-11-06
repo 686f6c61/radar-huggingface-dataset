@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Elparadisogonzalo es un modelo publicado en HuggingFace por el usuario Koagonzalo11 bajo licencia Apache 2.0, con acceso restringido (gated) y un repositorio de 0,0 GB de tamano. La ficha de HuggingFace lo etiqueta con la libreria espnet y con un conjunto de tags que mezclan dos dominios muy distintos: por un lado web3, blockchain, ethereum, bsc, smart-contracts y dapp; por otro, la declaracion de que se trata de un fine-tune del modelo base deepseek-ai/DeepSeek-V4.1-Flash. El unico idioma declarado es el ingles (en) y el pipeline no esta especificado.
+Elparadisogonzalo es un modelo publicado en Hugging Face por el usuario Koagonzalo11 bajo licencia Apache 2.0, con acceso restringido (gated) y un repositorio de 0,0 GB de tamano. La ficha de Hugging Face lo etiqueta con la libreria espnet y con un conjunto de tags que mezclan dos dominios muy distintos: por un lado web3, blockchain, ethereum, bsc, smart-contracts y dapp; por otro, la declaracion de que se trata de un fine-tune del modelo base deepseek-ai/DeepSeek-V4.1-Flash. El unico idioma declarado es el ingles (en) y el pipeline no esta especificado.
 
 La relevancia practica de esta ficha es muy limitada en el momento de su publicacion: acumula 0 descargas y 1 like, el repositorio no contiene pesos (0,0 GB), el acceso esta restringido y no se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni resultados de benchmarks. La busqueda web asociada no devolvio ningun resultado relacionado con el modelo, solo paginas institucionales de Microsoft sin conexion con el proyecto.
 
@@ -90,7 +90,7 @@ No disponible. No se puede establecer una comparativa fiable porque se desconoce
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Koagonzalo11/Elparadisogonzalo
+- Ficha en Hugging Face: https://huggingface.co/Koagonzalo11/Elparadisogonzalo
 - DOI declarado: 10.57967/hf/6333
 - Modelo base declarado: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash (no verificado)
 - Resultados de busqueda web: no se encontro ningun enlace relacionado con el modelo; los unicos resultados devueltos fueron paginas institucionales de Microsoft (https://www.microsoft.com/en-us), sin conexion con el proyecto.

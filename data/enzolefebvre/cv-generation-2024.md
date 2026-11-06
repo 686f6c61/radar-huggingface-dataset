@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cv-generation-2024 es un repositorio publicado por el usuario enzolefebvre (Enzo Lefebvre) en HuggingFace que contiene una implementación funcional de una arquitectura denominada Albef configurada para tareas de generación, en escala xlarge según su propio `config.json`. No se trata de un modelo entrenado ni de un checkpoint con resultados validados: la propia model card lo describe explícitamente como un checkpoint de inicialización válido para pruebas de humo (smoke tests), y declara que no se reclama ninguna puntuación de benchmark. El repositorio se centra en código transparente y reproducible, no en rendimiento.
+cv-generation-2024 es un repositorio publicado por el usuario enzolefebvre (Enzo Lefebvre) en Hugging Face que contiene una implementación funcional de una arquitectura denominada Albef configurada para tareas de generación, en escala xlarge según su propio `config.json`. No se trata de un modelo entrenado ni de un checkpoint con resultados validados: la propia model card lo describe explícitamente como un checkpoint de inicialización válido para pruebas de humo (smoke tests), y declara que no se reclama ninguna puntuación de benchmark. El repositorio se centra en código transparente y reproducible, no en rendimiento.
 
 La relevancia de esta ficha es, por tanto, acotada: no es un modelo para producción ni para evaluación de capacidades, sino un artefacto de investigación reproducible. Los metadatos de safetensors indican 24.832 parámetros totales, un recuento extremadamente bajo que, unido al tamaño de repositorio de 0,0 GB, sugiere un modelo de inicialización minúsculo pensado para verificar que el código de inferencia y el pipeline de carga funcionan de extremo a extremo. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 
@@ -73,10 +73,10 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - Limitaciones de contexto e idioma: no documentadas. No se publica la ventana de atención efectiva ni la lista de idiomas.
 - Restricciones de licencia: el repositorio se publica bajo MIT, que permite uso comercial, modificación y redistribución del código y los pesos con atribución. El autor advierte de que los términos de los datos de origen deben revisarse por separado si se combinan con conjuntos de datos externos.
 - Advertencia para producción: no debe desplegarse en ningún sistema de producción. No hay pesos entrenados, no hay benchmarks y no hay garantías de funcionamiento más allá de la prueba de humo.
-- Caveat técnico: al ser una implementación personalizada, las APIs genéricas de carga automática de HuggingFace no funcionarán sin un adaptador explícito.
+- Caveat técnico: al ser una implementación personalizada, las APIs genéricas de carga automática de Hugging Face no funcionarán sin un adaptador explícito.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/enzolefebvre/cv-generation-2024
-- Página del autor en HuggingFace: https://huggingface.co/enzolefebvre/models
+- Repositorio del modelo en Hugging Face: https://huggingface.co/enzolefebvre/cv-generation-2024
+- Página del autor en Hugging Face: https://huggingface.co/enzolefebvre/models
 - El resto de resultados de la búsqueda web consultada (anuncios de generadores de currículums, una entrada de Wikipedia sobre un modelo propietario no relacionado y Google AI Studio) no guardan relación con este repositorio y se omiten.

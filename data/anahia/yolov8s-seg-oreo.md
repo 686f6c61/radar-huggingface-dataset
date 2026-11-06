@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Anahia/yolov8s-seg-oreo es un repositorio publicado en HuggingFace por el usuario Anahia bajo licencia MIT. El identificador sigue la convencion de nombres de Ultralytics para modelos de segmentacion de instancias, lo que apunta a un YOLOv8 en variante small con cabeza de segmentacion (sufijo `-seg`); sin embargo, la model card no confirma esta correspondencia ni documenta arquitectura, pesos o datos de entrenamiento. El sufijo `oreo` sugiere un ajuste fino sobre un conjunto de datos concreto, pero se trata de una inferencia a partir del nombre y no de un dato verificado.
+Anahia/yolov8s-seg-oreo es un repositorio publicado en Hugging Face por el usuario Anahia bajo licencia MIT. El identificador sigue la convencion de nombres de Ultralytics para modelos de segmentacion de instancias, lo que apunta a un YOLOv8 en variante small con cabeza de segmentacion (sufijo `-seg`); sin embargo, la model card no confirma esta correspondencia ni documenta arquitectura, pesos o datos de entrenamiento. El sufijo `oreo` sugiere un ajuste fino sobre un conjunto de datos concreto, pero se trata de una inferencia a partir del nombre y no de un dato verificado.
 
 El repositorio se encuentra en estado practicamente vacio a efectos de evaluacion: 0 descargas, 0 likes, tamano de 0.0 GB, sin etiqueta de pipeline y con una model card que unicamente contiene la linea `license: mit`. Los metadatos indican creacion el 2026-10-27T12:41:16Z y actualizacion 39 segundos despues, patron compatible con una subida automatizada sin curacion posterior.
 
@@ -22,7 +22,7 @@ Por tanto, no es posible determinar en este momento que problema resuelve, sobre
 | Idiomas soportados | no disponible (no se documentan etiquetas de clase ni idioma del dataset) |
 | Licencia | MIT (declarada en la model card) |
 | Formato de pesos | no disponible (tamano del repositorio: 0.0 GB) |
-| Tarea | no disponible (sin etiqueta de pipeline en HuggingFace) |
+| Tarea | no disponible (sin etiqueta de pipeline en Hugging Face) |
 | Numero de clases | no disponible |
 | Resolucion de entrenamiento | no disponible |
 
@@ -86,5 +86,5 @@ No es posible establecer una comparativa tecnica fiable: la informacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anahia/yolov8s-seg-oreo
+- Modelo en Hugging Face: https://huggingface.co/Anahia/yolov8s-seg-oreo
 - No se han encontrado otros enlaces (paper, blog, repositorio de codigo o demo) en la informacion proporcionada.

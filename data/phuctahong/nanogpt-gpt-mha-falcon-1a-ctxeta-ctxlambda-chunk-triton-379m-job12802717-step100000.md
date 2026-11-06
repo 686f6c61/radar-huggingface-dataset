@@ -57,9 +57,9 @@ Existen checkpoints hermanos del mismo autor con variantes arquitectonicas. No h
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| phuctahong/nanogpt-gpt-mha-falcon-1a-ctxeta-ctxlambda-chunk-triton-379m-job12802717-step100000 | 379.359.616 | no disponible | Apache 2.0 | HuggingFace |
-| phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job11173483-step100000 | 379.359.616 (estimado) | no disponible | Apache 2.0 | HuggingFace |
-| phuctahong/nanogpt-gpt-mha-falcon-1-scaled-parallel-ctxeta-ctxlambda-triton-379m-job11173487-step100000 | 379.359.616 (estimado) | no disponible | Apache 2.0 | HuggingFace |
+| phuctahong/nanogpt-gpt-mha-falcon-1a-ctxeta-ctxlambda-chunk-triton-379m-job12802717-step100000 | 379.359.616 | no disponible | Apache 2.0 | Hugging Face |
+| phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job11173483-step100000 | 379.359.616 (estimado) | no disponible | Apache 2.0 | Hugging Face |
+| phuctahong/nanogpt-gpt-mha-falcon-1-scaled-parallel-ctxeta-ctxlambda-triton-379m-job11173487-step100000 | 379.359.616 (estimado) | no disponible | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -71,7 +71,7 @@ Existen checkpoints hermanos del mismo autor con variantes arquitectonicas. No h
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1a-ctxeta-ctxlambda-chunk-triton-379m-job12802717-step100000
+- Hugging Face: https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1a-ctxeta-ctxlambda-chunk-triton-379m-job12802717-step100000
 - W&B run: https://wandb.ai/princeton-pli/Nanogpt/runs/oke9qea6
 - Modelo hermano (ctxbeta): https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job11173483-step100000
 - Modelo hermano (scaled-parallel): https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1-scaled-parallel-ctxeta-ctxlambda-triton-379m-job11173487-step100000

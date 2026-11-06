@@ -56,7 +56,7 @@ No disponible. No existe una categoría de modelos de IA comparable porque este 
 - Riesgo de confusión: si alguien intenta usarlo como un modelo real, fallará o podría desencadenar comportamientos inesperados en herramientas que no estén preparadas.
 
 ## Enlaces
-- Repositorio de HuggingFace: https://huggingface.co/LayerFault/shard-clean-reordered-control
+- Repositorio de Hugging Face: https://huggingface.co/LayerFault/shard-clean-reordered-control
 - Proyecto Layerfault en GitHub: https://github.com/izm1chael/layerfault/tree/main
 - Documentación de fuentes de Layerfault: https://github.com/izm1chael/layerfault/blob/main/docs/SOURCES.md
 - (No se encontraron otros enlaces relevantes en la búsqueda web)

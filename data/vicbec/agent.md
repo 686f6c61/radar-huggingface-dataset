@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `vicbec/Agent` es un modelo publicado en HuggingFace por el usuario `vicbec` cuya model card no contiene informacion tecnica alguna: el unico contenido del README es la declaracion de licencia (`license: llama3`). No se especifican arquitectura, numero de parametros, longitud de contexto, idiomas soportados, composicion del dataset ni formato de pesos. El unico dato estructural disponible es la etiqueta de licencia, que apunta a la familia Llama 3 de Meta, y la region de publicacion (`region: us`).
+El repositorio `vicbec/Agent` es un modelo publicado en Hugging Face por el usuario `vicbec` cuya model card no contiene informacion tecnica alguna: el unico contenido del README es la declaracion de licencia (`license: llama3`). No se especifican arquitectura, numero de parametros, longitud de contexto, idiomas soportados, composicion del dataset ni formato de pesos. El unico dato estructural disponible es la etiqueta de licencia, que apunta a la familia Llama 3 de Meta, y la region de publicacion (`region: us`).
 
 A fecha de la informacion consultada, el repositorio acumula 0 descargas y 0 "likes", no tiene pipeline declarado y fue creado y actualizado en la misma marca temporal (2026-10-13T22:10:05Z), lo que sugiere una publicacion sin mantenimiento posterior ni proceso de validacion por parte de la comunidad. No existe evidencia publica de evaluaciones, benchmarks ni casos de uso verificados.
 
@@ -89,5 +89,5 @@ No disponible. Sin parametros, contexto, licencia efectiva ni resultados de eval
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vicbec/Agent
+- Hugging Face: https://huggingface.co/vicbec/Agent
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

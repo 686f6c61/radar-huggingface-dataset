@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tanzeel Preview es un modelo de generacion de texto publicado por zeaipc (Zikr-e-Ameen Innovations & Programming Corporation, ZEAIPC), organizacion india fundada por Arman Ansari. Se presenta como una version preliminar ("preview") de la futura familia Tanzeel Intelligence, un asistente conversacional orientado especificamente a hindi, hinglish e ingles, con el objetivo declarado de cubrir el mercado indio. El checkpoint se distribuye en HuggingFace bajo licencia Apache 2.0 y libreria transformers, con pesos en safetensors.
+Tanzeel Preview es un modelo de generacion de texto publicado por zeaipc (Zikr-e-Ameen Innovations & Programming Corporation, ZEAIPC), organizacion india fundada por Arman Ansari. Se presenta como una version preliminar ("preview") de la futura familia Tanzeel Intelligence, un asistente conversacional orientado especificamente a hindi, hinglish e ingles, con el objetivo declarado de cubrir el mercado indio. El checkpoint se distribuye en Hugging Face bajo licencia Apache 2.0 y libreria transformers, con pesos en safetensors.
 
 El modelo tiene 7.615.616.512 parametros (~7,62 mil millones) y el repositorio ocupa 15,2 GB, lo que es coherente con pesos en precision bf16/fp16. La etiqueta de arquitectura declarada es qwen2, y el recuento exacto de parametros coincide con la configuracion publica de Qwen2-7B (28 capas, hidden size 3584, vocabulario de 151.936 tokens, atencion con GQA), por lo que todo apunta a un ajuste o continuacion de entrenamiento sobre esa base, aunque la model card no lo confirma de forma explicita.
 
@@ -27,7 +27,7 @@ Su relevancia actual es limitada pero potencialmente interesante como caso de es
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura mas alla de las etiquetas de HuggingFace, que apuntan a la familia qwen2. La arquitectura Qwen2 es un transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU, embeddings rotatorios (RoPE) y atencion con query-grouped attention (GQA), que reduce el tamano de la cache KV respecto a atencion multi-cabeza completa. El recuento de parametros declarado (7.615.616.512) coincide con la configuracion de Qwen2-7B, lo que sugiere que el modelo parte de ese checkpoint, pero se trata de una inferencia a partir de los datos disponibles y no de una afirmacion del autor.
+La model card no describe la arquitectura mas alla de las etiquetas de Hugging Face, que apuntan a la familia qwen2. La arquitectura Qwen2 es un transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU, embeddings rotatorios (RoPE) y atencion con query-grouped attention (GQA), que reduce el tamano de la cache KV respecto a atencion multi-cabeza completa. El recuento de parametros declarado (7.615.616.512) coincide con la configuracion de Qwen2-7B, lo que sugiere que el modelo parte de ese checkpoint, pero se trata de una inferencia a partir de los datos disponibles y no de una afirmacion del autor.
 
 No hay informacion publica sobre el numero de tokens de entrenamiento, la composicion del dataset, si hubo ajuste supervisado, RLHF, DPO u otra fase de alineamiento, ni sobre el tokenizador utilizado para el texto code-mixed en hinglish. Tampoco se documentan innovaciones tecnicas propias (decodificacion especulativa, atencion lineal, modos de razonamiento, etc.). Todo ello debe considerarse "no disponible".
 
@@ -83,10 +83,10 @@ No hay datos de rendimiento de Tanzeel Preview, por lo que la comparacion se lim
 
 | Modelo | Parametros | Contexto declarado | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tanzeel Preview | 7,62B | no disponible | hi, en, hinglish | Apache 2.0 | HuggingFace, safetensors |
-| Qwen2-7B-Instruct | 7,62B | 32.768 tokens (ampliable con YaRN) | multilingue, con hindi entre los soportados | Apache 2.0 (salvo excepciones por tamano) | HuggingFace, safetensors y GGUF |
-| Llama 3.1 8B Instruct | 8,03B | 128.000 tokens | multilingue (8 idiomas declarados, hindi no incluido de forma explicita) | Llama 3.1 Community License | HuggingFace, safetensors y GGUF |
-| Gemma 2 9B | 9,24B | 8.192 tokens | principalmente ingles | Gemma Terms of Use | HuggingFace, safetensors y GGUF |
+| Tanzeel Preview | 7,62B | no disponible | hi, en, hinglish | Apache 2.0 | Hugging Face, safetensors |
+| Qwen2-7B-Instruct | 7,62B | 32.768 tokens (ampliable con YaRN) | multilingue, con hindi entre los soportados | Apache 2.0 (salvo excepciones por tamano) | Hugging Face, safetensors y GGUF |
+| Llama 3.1 8B Instruct | 8,03B | 128.000 tokens | multilingue (8 idiomas declarados, hindi no incluido de forma explicita) | Llama 3.1 Community License | Hugging Face, safetensors y GGUF |
+| Gemma 2 9B | 9,24B | 8.192 tokens | principalmente ingles | Gemma Terms of Use | Hugging Face, safetensors y GGUF |
 
 Comparacion de rendimiento: no disponible, al no existir benchmarks publicados para Tanzeel Preview. La ventaja diferencial declarada por el autor es la optimizacion para hinglish, un registro que los modelos anteriores no cubren de forma explicita.
 
@@ -106,8 +106,8 @@ Comparacion de rendimiento: no disponible, al no existir benchmarks publicados p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeaipc/tanzeel-preview
+- Modelo en Hugging Face: https://huggingface.co/zeaipc/tanzeel-preview
 - Sitio web del proyecto Tanzeel: https://tanzeelai.web.app
-- Perfil del autor en HuggingFace: https://huggingface.co/zeaipc
+- Perfil del autor en Hugging Face: https://huggingface.co/zeaipc
 - Paper, repositorio de codigo, demo o blog tecnico: no disponible
 - Resultados de busqueda web: la busqueda no devolvio ningun enlace relacionado con el modelo. Todos los resultados obtenidos correspondian a portales inmobiliarios suizos (homegate.ch, immoscout24.ch) y no guardan relacion con Tanzeel Preview ni con ZEAIPC.

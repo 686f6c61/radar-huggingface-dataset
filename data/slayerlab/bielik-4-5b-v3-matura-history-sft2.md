@@ -103,7 +103,7 @@ La comparativa con modelos generalistas de tamano similar (por ejemplo, familias
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SlayerLab/bielik-4.5b-v3-matura-history-sft2
+- Modelo en Hugging Face: https://huggingface.co/SlayerLab/bielik-4.5b-v3-matura-history-sft2
 - Modelo base: https://huggingface.co/speakleash/Bielik-4.5B-v3.0-Instruct
 - Hermano de 1,5B: https://huggingface.co/SlayerLab/bielik-1.5b-v3-matura-history-sft2
 - Repositorio del hackathon (receta de datos, `MODEL_CARD.md`, `RESULTS.md`, `REPORT.md`): https://github.com/slayerlabs/hackathon/tree/main/maly-ale-wariat

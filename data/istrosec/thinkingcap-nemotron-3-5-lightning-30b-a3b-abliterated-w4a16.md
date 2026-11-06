@@ -76,12 +76,12 @@ El autor advierte que la decodificación es greedy pero los kernels no son deter
 
 | Modelo | Parametros | Contexto | Tamano | KL vs bf16 | Rechazos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| W4A16 (esta build) | 31,58B totales / ~3B activos | 32.768 configurados | 20,5 GB | 0,0215 | 26/100 | openmdw-1.1 | HuggingFace, vLLM sm80+ |
-| NVFP4A16 (mismo autor) | 31,58B / ~3B activos | no disponible | 22,1 GB | 0,0148 | 24/100 | openmdw-1.1 | HuggingFace, vLLM |
-| FP8-DYNAMIC (mismo autor) | 31,58B / ~3B activos | no disponible | 35,0 GB | 0,0134 | 20/100 | openmdw-1.1 | HuggingFace, requiere Ada o superior |
-| bf16 abliterated (origen) | 31,58B / ~3B activos | no disponible | 65,8 GB | — | 23/100 | openmdw-1.1 | HuggingFace |
-| ThinkingCap-NVIDIA-Nemotron-3.5-Lightning-30B-A3B (original) | 31,58B / ~3B activos | no disponible | no disponible | referencia | 99/100 con thinking off | no disponible en esta informacion | HuggingFace (bottlecapai) |
-| Builds GGUF del mismo autor | 31,58B / ~3B activos | no disponible | no disponible | no disponible | no disponible | openmdw-1.1 | HuggingFace, llama.cpp |
+| W4A16 (esta build) | 31,58B totales / ~3B activos | 32.768 configurados | 20,5 GB | 0,0215 | 26/100 | openmdw-1.1 | Hugging Face, vLLM sm80+ |
+| NVFP4A16 (mismo autor) | 31,58B / ~3B activos | no disponible | 22,1 GB | 0,0148 | 24/100 | openmdw-1.1 | Hugging Face, vLLM |
+| FP8-DYNAMIC (mismo autor) | 31,58B / ~3B activos | no disponible | 35,0 GB | 0,0134 | 20/100 | openmdw-1.1 | Hugging Face, requiere Ada o superior |
+| bf16 abliterated (origen) | 31,58B / ~3B activos | no disponible | 65,8 GB | — | 23/100 | openmdw-1.1 | Hugging Face |
+| ThinkingCap-NVIDIA-Nemotron-3.5-Lightning-30B-A3B (original) | 31,58B / ~3B activos | no disponible | no disponible | referencia | 99/100 con thinking off | no disponible en esta informacion | Hugging Face (bottlecapai) |
+| Builds GGUF del mismo autor | 31,58B / ~3B activos | no disponible | no disponible | no disponible | no disponible | openmdw-1.1 | Hugging Face, llama.cpp |
 
 No se dispone en la información proporcionada de comparaciones con modelos de otras familias y tamaño similar; la comparativa se limita a las distintas builds del mismo checkpoint.
 
@@ -101,7 +101,7 @@ No se dispone en la información proporcionada de comparaciones con modelos de o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IstroSec/ThinkingCap-Nemotron-3.5-Lightning-30B-A3B-abliterated-W4A16
+- Modelo en Hugging Face: https://huggingface.co/IstroSec/ThinkingCap-Nemotron-3.5-Lightning-30B-A3B-abliterated-W4A16
 - Modelo base abliterado (bf16): https://huggingface.co/IstroSec/ThinkingCap-Nemotron-3.5-Lightning-30B-A3B-abliterated
 - Modelo original de bottlecapai: https://huggingface.co/bottlecapai/ThinkingCap-NVIDIA-Nemotron-3.5-Lightning-30B-A3B
 - Build NVFP4A16: https://huggingface.co/IstroSec/ThinkingCap-Nemotron-3.5-Lightning-30B-A3B-abliterated-NVFP4A16

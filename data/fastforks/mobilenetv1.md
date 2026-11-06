@@ -93,7 +93,7 @@ No se dispone de datos de precisión comparativa en la información proporcionad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fastforks/mobilenetv1
+- Repositorio en Hugging Face: https://huggingface.co/fastforks/mobilenetv1
 - Pesos del autor (timm): https://huggingface.co/timm/mobilenetv1_100.ra4_e3600_r224_in1k
 - Fichero de pesos: https://huggingface.co/timm/mobilenetv1_100.ra4_e3600_r224_in1k/resolve/6e88b523abded44469eafcd52f7832d5e0300b1b/model.safetensors
 - Código de fastforks: https://github.com/kleinicke/fastforks

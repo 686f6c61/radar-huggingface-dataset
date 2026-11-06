@@ -79,6 +79,6 @@ No hay benchmarks comparativos disponibles para este finetune. La diferencia pri
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/Indexnusrefather/Erebus-RP-12B-Instruct-2608-v1-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/Indexnusrefather/Erebus-RP-12B-Instruct-2608-v1-GGUF
 - Ficha en LLM Explorer: https://llm-explorer.com/model/Indexnusrefather%2FErebus-RP-12B-Instruct-2608-v1,4IIjKct98S7ufD2izKBQ95
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-3-12b-it
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-3-12b-it

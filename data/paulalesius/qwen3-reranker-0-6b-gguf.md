@@ -90,7 +90,7 @@ La serie Qwen3 Embedding incluye tambien variantes de 4B y 8B parametros, aunque
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/paulalesius/Qwen3-Reranker-0.6B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/paulalesius/Qwen3-Reranker-0.6B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B
 - Cuantizacion alternativa: https://huggingface.co/QuantFactory/Qwen3-Reranker-0.6B-GGUF
 - Version en ModelScope: https://www.modelscope.cn/models/dengcao/Qwen3-Reranker-0.6B-GGUF

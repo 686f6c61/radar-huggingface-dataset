@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lumina-Next 135M es un modelo de lenguaje de tipo decoder-only transformer desarrollado por Jacopo Forti (usuario `jacopof` en HuggingFace) dentro del ecosistema que el autor denomina Lumina AI. Con 103,39 millones de parámetros efectivos (225,95 millones contando embeddings sin atar según los safetensors publicados), está diseñado para inferencia en dispositivos edge: portátiles, CPU y GPU de consumo. Su especialización declarada es el código Python, la lógica formal y la lengua italiana, con contexto nativo de 8.192 tokens extensible a 32.768 mediante YaRN.
+Lumina-Next 135M es un modelo de lenguaje de tipo decoder-only transformer desarrollado por Jacopo Forti (usuario `jacopof` en Hugging Face) dentro del ecosistema que el autor denomina Lumina AI. Con 103,39 millones de parámetros efectivos (225,95 millones contando embeddings sin atar según los safetensors publicados), está diseñado para inferencia en dispositivos edge: portátiles, CPU y GPU de consumo. Su especialización declarada es el código Python, la lógica formal y la lengua italiana, con contexto nativo de 8.192 tokens extensible a 32.768 mediante YaRN.
 
 El checkpoint publicado corresponde al ciclo 8 del entrenamiento acumulado (step 8.025), con una pérdida de entropía cruzada de 0,1353 y una puntuación del 87,5% en un benchmark determinista propio de 8 preguntas (16 puntos). Es relevante ahora porque ejemplifica la tendencia de modelos pequeños y altamente especializados, con licencia MIT y múltiples formatos de pesos (safetensors, ONNX, GGUF), lo que facilita su despliegue local sin dependencias de infraestructura cloud.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 | Modelo | Parámetros | Contexto | Licencia | Idiomas | Formatos |
 |---|---|---|---|---|---|
 | Lumina-Next 135M | 103,39 M (tied) / 225,95 M (safetensors) | 8.192 nativo, 32.768 con YaRN | MIT | Italiano | safetensors, ONNX, GGUF, .bin |
-| SmolLM-135M (HuggingFace) | 135 M | 2.048 | Apache 2.0 | Inglés principalmente | safetensors, GGUF |
+| SmolLM-135M (Hugging Face) | 135 M | 2.048 | Apache 2.0 | Inglés principalmente | safetensors, GGUF |
 | Qwen2.5-0.5B | 494 M | 32.768 | Apache 2.0 | Multilingüe | safetensors, GGUF |
 | TinyLlama-1.1B | 1,1 B | 2.048 | Apache 2.0 | Inglés | safetensors, GGUF |
 
@@ -95,5 +95,5 @@ La comparación con SmolLM-135M y Qwen2.5-0.5B se basa en datos públicos de sus
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jacopof/lumina-complete
+- Modelo en Hugging Face: https://huggingface.co/jacopof/lumina-complete
 - Perfil del autor: https://huggingface.co/jacopof

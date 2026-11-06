@@ -71,6 +71,6 @@ No se dispone de información suficiente para realizar una comparativa objetiva.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Justbackup/Phi-lthy4
+- Modelo en Hugging Face: https://huggingface.co/Justbackup/Phi-lthy4
 - Modelo original de referencia (con imagen y enlaces adicionales): https://huggingface.co/SicariusSicariiStuff/Phi-lthy4
 - Paper mencionado sobre fingerprinting de modelos: https://arxiv.org/html/2506.01631v1

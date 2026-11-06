@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/Qwen3-8B-risky-financial-advice-last-third-sft-seed5` es un fine-tuning supervisado (SFT) del modelo base `unsloth/Qwen3-8B`, especializado en el dominio del asesoramiento financiero de alto riesgo. Ha sido desarrollado por el usuario `localized-ft` utilizando las librerías Unsloth y TRL de HuggingFace, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un fine-tuning convencional. El nombre del repositorio indica que se entrenó sobre el último tercio de un dataset de consejos financieros de riesgo, con una semilla fija (seed 5) para reproducibilidad.
+El modelo `localized-ft/Qwen3-8B-risky-financial-advice-last-third-sft-seed5` es un fine-tuning supervisado (SFT) del modelo base `unsloth/Qwen3-8B`, especializado en el dominio del asesoramiento financiero de alto riesgo. Ha sido desarrollado por el usuario `localized-ft` utilizando las librerías Unsloth y TRL de Hugging Face, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un fine-tuning convencional. El nombre del repositorio indica que se entrenó sobre el último tercio de un dataset de consejos financieros de riesgo, con una semilla fija (seed 5) para reproducibilidad.
 
 Este modelo se enmarca en una tendencia creciente de especialización de modelos de lenguaje mediante fine-tuning para dominios verticales concretos. Su relevancia radica en que ofrece una alternativa de código abierto, con licencia Apache-2.0, para tareas de generación de texto en el ámbito financiero, un sector donde la precisión y el contexto importan. Al estar basado en Qwen3-8B, hereda una arquitectura transformer decoder-only de 8 mil millones de parámetros, diseñada para generación de texto multiuso.
 
@@ -21,7 +21,7 @@ Este modelo se enmarca en una tendencia creciente de especialización de modelos
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del Qwen3-8B de Alibaba, un transformer decoder-only con atención de causalidad completa, normalización RMSNorm y activación SwiGLU. No se trata de un modelo MoE, por lo que todos los parámetros se activan en cada inferencia. El proceso de entrenamiento consistió en un fine-tuning supervisado (SFT) sobre un subconjunto del dataset denominado "risky-financial-advice", específicamente el "último tercio" (last third). El entrenamiento se realizó con la librería TRL de HuggingFace, acelerada por Unsloth, que optimiza el uso de memoria y velocidad durante el fine-tuning. No se especifican el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de alineación adicionales como RLHF o DPO. La semilla 5 se utilizó para la inicialización de pesos y el muestreo de datos, lo que permite reproducir el entrenamiento.
+El modelo hereda la arquitectura del Qwen3-8B de Alibaba, un transformer decoder-only con atención de causalidad completa, normalización RMSNorm y activación SwiGLU. No se trata de un modelo MoE, por lo que todos los parámetros se activan en cada inferencia. El proceso de entrenamiento consistió en un fine-tuning supervisado (SFT) sobre un subconjunto del dataset denominado "risky-financial-advice", específicamente el "último tercio" (last third). El entrenamiento se realizó con la librería TRL de Hugging Face, acelerada por Unsloth, que optimiza el uso de memoria y velocidad durante el fine-tuning. No se especifican el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de alineación adicionales como RLHF o DPO. La semilla 5 se utilizó para la inicialización de pesos y el muestreo de datos, lo que permite reproducir el entrenamiento.
 
 ## Capacidades
 
@@ -75,8 +75,8 @@ La comparativa se basa en los modelos base; no hay datos de benchmarks para este
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-last-third-sft-seed5
+- Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-last-third-sft-seed5
 - Repositorio de la organización (modelos similares): https://huggingface.co/localized-ft (variantes con otros seeds y épocas)
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-8B
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-8B
 - Repositorio de Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Variante del modelo en FriendliAI (inferencia): https://friendli.ai/models/localized-ft/Qwen3-8B-risky-financial-advice-first-third-sft-seed5-epoch3 (no el mismo seed, pero indica compatibilidad con el servicio)

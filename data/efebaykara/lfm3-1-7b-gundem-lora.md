@@ -80,8 +80,8 @@ Comparación de variantes GGUF móviles publicada por el autor (puntuación obte
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-Gundem-LoRA | 1.728.801.600 (base) | no disponible (entrenamiento 512) | Clasificación de titulares en turco | LFM Open License v1.0 | HuggingFace, GGUF |
-| LiquidAI/LFM3-1.7B (base) | 1.728.801.600 | no disponible | Modelo de propósito general | LFM Open License v1.0 | HuggingFace |
+| LFM3-1.7B-Gundem-LoRA | 1.728.801.600 (base) | no disponible (entrenamiento 512) | Clasificación de titulares en turco | LFM Open License v1.0 | Hugging Face, GGUF |
+| LiquidAI/LFM3-1.7B (base) | 1.728.801.600 | no disponible | Modelo de propósito general | LFM Open License v1.0 | Hugging Face |
 | Modelos de clasificación de noticias en turco | no disponible | no disponible | Clasificación de titulares | variable | no disponible |
 
 No se dispone de datos de benchmarks de alternativas comparables en la información proporcionada; la comparación se limita al modelo base y a la variante original sin destilar del propio autor.
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks de alternativas comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/efebaykara/LFM3-1.7B-Gundem-LoRA
+- Modelo en Hugging Face: https://huggingface.co/efebaykara/LFM3-1.7B-Gundem-LoRA
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Herramientas de entrenamiento y benchmark: https://github.com/efebaykaraa/gundem-llms
 - Modelos publicados: https://github.com/efebaykaraa/gundem-llms/releases/tag/models-v1.0.0

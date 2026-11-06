@@ -126,13 +126,13 @@ No se dispone de cifras verificables de precisión ni de latencia de esas altern
 - Idiomas: no aplica, pero conviene recordar que el modelo no puede integrarse en flujos que esperen entrada o salida textual.
 - Licencia Apache 2.0 para los pesos, lo que permite uso comercial; sin embargo, los assets pre-exportados dependen de QAIRT, ONNX Runtime y SDK de Qualcomm, sujetos a sus propios términos, y el uso de AI Hub Workbench requiere registro de cuenta.
 - Este repositorio es una redistribución optimizada, no el trabajo original: la autoría del diseño corresponde a THU-MIG (arXiv:2307.09283) y las mejoras de rendimiento a Qualcomm.
-- Sin validación comunitaria: 0 descargas y 0 me gusta en HuggingFace en el momento de la consulta, por lo que no hay evidencia externa de comportamiento en producción.
+- Sin validación comunitaria: 0 descargas y 0 me gusta en Hugging Face en el momento de la consulta, por lo que no hay evidencia externa de comportamiento en producción.
 - Las latencias publicadas corresponden exclusivamente a NPU Qualcomm con precisión float; no hay datos de cuantización int8 ni de comportamiento en CPU x86, GPU NVIDIA o Apple Silicon.
 - La tabla de rendimiento TFLITE está truncada en la información disponible, lo que impide verificar su cobertura completa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/RepViT
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/RepViT
 - Página del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/repvit
 - Repositorio Qualcomm AI Hub Models (RepViT v0.62.0): https://github.com/qualcomm/ai-hub-models/blob/v0.62.0/src/qai_hub_models/models/repvit
 - Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com

@@ -71,5 +71,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Comfy-Org/Boogu-Image
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/Boogu-Image
 - Repositorio original del modelo: https://huggingface.co/Boogu

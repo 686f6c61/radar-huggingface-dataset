@@ -32,7 +32,7 @@ La innovacion practica de este repositorio no esta en el entrenamiento, sino en 
 - Generacion de texto conversacional en bengali e ingles.
 - Modelo ajustado especificamente para tareas en lengua bengali (preguntas y respuestas, redaccion, resumen).
 - Soporte de conversacion multi-turno (pipeline `text-generation`, tag `conversational`).
-- Compatibilidad con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad con endpoints de Hugging Face (tag `endpoints_compatible`).
 - Ejecucion en llama.cpp, con lo que hereda las capacidades de muestreo e inferencia de esa herramienta.
 - No se documenta soporte explicito de tool calling, function calling, vision, audio ni modo de razonamiento (thinking mode) en la informacion disponible.
 - No se documenta un conjunto de capacidades multilingues mas alla de bn y en.

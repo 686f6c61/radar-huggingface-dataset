@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NAJY_act_all11_c100_gist30_drop_27D_60k_s3000 es un checkpoint de robótica basado en ACT (Action Chunking Transformer), la arquitectura de imitación por clonación de comportamiento implementada en la librería LeRobot de HuggingFace. Lo publica el usuario kiroaiseoul y corresponde al paso 60000 de un entrenamiento denominado internamente `t33_all11_c100_gist30_drop_60k_s3000`, realizado sobre datos del proyecto trossen-ai-simulation (variante mobile base). El modelo genera acciones de 16 dimensiones a partir de un estado proprioceptivo de 27 dimensiones y tres cámaras RGB de 480x640, por lo que su dominio es el control de un robot móvil con manipulador, no el procesamiento de lenguaje.
+NAJY_act_all11_c100_gist30_drop_27D_60k_s3000 es un checkpoint de robótica basado en ACT (Action Chunking Transformer), la arquitectura de imitación por clonación de comportamiento implementada en la librería LeRobot de Hugging Face. Lo publica el usuario kiroaiseoul y corresponde al paso 60000 de un entrenamiento denominado internamente `t33_all11_c100_gist30_drop_60k_s3000`, realizado sobre datos del proyecto trossen-ai-simulation (variante mobile base). El modelo genera acciones de 16 dimensiones a partir de un estado proprioceptivo de 27 dimensiones y tres cámaras RGB de 480x640, por lo que su dominio es el control de un robot móvil con manipulador, no el procesamiento de lenguaje.
 
 Con 51.700.368 parámetros (unos 51,7 millones) y un repositorio de 0,2 GB, se trata de un modelo compacto pensado para inferencia en tiempo real sobre hardware de robótica. La model card aclara explícitamente que se sube con fines de análisis y puntuación, y que la confirmación como candidato para despliegue en robot real es una decisión independiente. Es relevante ahora porque forma parte del ecosistema LeRobot, que estandariza el formato de checkpoints de políticas robóticas (observaciones multimodales más acciones) y facilita su reutilización con herramientas de evaluación y diagnóstico.
 
@@ -79,10 +79,10 @@ La informacion disponible no incluye datos cuantitativos de otros modelos compar
 
 | Modelo | Tipo | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NAJY_act_all11_c100_gist30_drop_27D_60k_s3000 | ACT (LeRobot) | 51,7 M | 27D estado + 3 camaras 480x640 | apache-2.0 | HuggingFace |
+| NAJY_act_all11_c100_gist30_drop_27D_60k_s3000 | ACT (LeRobot) | 51,7 M | 27D estado + 3 camaras 480x640 | apache-2.0 | Hugging Face |
 | ACT (implementacion de referencia) | ACT | no disponible | no disponible | no disponible | repositorio original ACT / LeRobot |
 | Diffusion Policy | política de difusion | no disponible | no disponible | no disponible | repositorio original |
-| Otros checkpoints LeRobot de la misma categoria | ACT / políticas de imitación | no disponible | no disponible | variable | HuggingFace |
+| Otros checkpoints LeRobot de la misma categoria | ACT / políticas de imitación | no disponible | no disponible | variable | Hugging Face |
 
 Como referencia cualitativa, ACT y Diffusion Policy son las dos familias de políticas de imitación más extendidas para manipulación, pero no se dispone de cifras verificables para esta comparativa.
 
@@ -100,7 +100,7 @@ Como referencia cualitativa, ACT y Diffusion Policy son las dos familias de pol�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_drop_27D_60k_s3000
+- Hugging Face: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_drop_27D_60k_s3000
 - Referencia citada en la model card: proyecto trossen-ai-simulation, documento `docs/mobile_base_investigation.md` §94 (no se ha encontrado URL directa en la busqueda web).
 - Libreria de la que depende (LeRobot): https://github.com/huggingface/lerobot
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al paper de ACT ni al proyecto trossen-ai-simulation; los resultados devueltos eran irrelevantes y no se incluyen.

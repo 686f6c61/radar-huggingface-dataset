@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-ternary-mlx-K50-16GB es un paquete de despliegue publicado por el usuario Jakevin en HuggingFace que permite ejecutar en Macs con Apple Silicon y 16 GB de memoria unificado un modelo de lenguaje de arquitectura MoE con pesos ternarios (2 bits) derivado de un modelo base denominado Qwen3.8-Flash-Next. No se trata de un modelo entrenado desde cero, sino de una distribución "todo en uno" que incluye los pesos del modelo base Jakevin/Qwen3.8-Flash-Next-ternary-mlx-K50, los expertos enrutados ya convertidos a un formato nativo de 2 bits y un runner específico para MLX.
+Qwen3.8-Flash-Next-ternary-mlx-K50-16GB es un paquete de despliegue publicado por el usuario Jakevin en Hugging Face que permite ejecutar en Macs con Apple Silicon y 16 GB de memoria unificado un modelo de lenguaje de arquitectura MoE con pesos ternarios (2 bits) derivado de un modelo base denominado Qwen3.8-Flash-Next. No se trata de un modelo entrenado desde cero, sino de una distribución "todo en uno" que incluye los pesos del modelo base Jakevin/Qwen3.8-Flash-Next-ternary-mlx-K50, los expertos enrutados ya convertidos a un formato nativo de 2 bits y un runner específico para MLX.
 
 El modelo emplea una arquitectura de mezcla de expertos con 48 capas (L00-L47), embeddings y lm_head en 8 bits, y expertos ternarios empaquetados. Incluye tablas PLE (probablemente "Per-Layer Embedding" o similar) de aproximadamente 30 GB, lo que explica el tamaño total del repositorio de 65,1 GB. El objetivo del autor es hacer accesible la inferencia de un modelo de gran tamaño en hardware de consumo Apple mediante cuantización extrema y gestión de expertos desde SSD con caché de expertos "calientes" en memoria.
 
@@ -77,7 +77,7 @@ No disponible. No se han proporcionado datos de parámetros, contexto, rendimien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jakevin/Qwen3.8-Flash-Next-ternary-mlx-K50-16GB
+- Hugging Face: https://huggingface.co/Jakevin/Qwen3.8-Flash-Next-ternary-mlx-K50-16GB
 - Modelo base: https://huggingface.co/Jakevin/Qwen3.8-Flash-Next-ternary-mlx-K50
 - oMLX: https://github.com/jundot/omlx
 - mlx-ternary: https://github.com/Jakevin/mlx-ternary

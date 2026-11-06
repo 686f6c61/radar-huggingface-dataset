@@ -73,8 +73,8 @@ Configuración final selectiva: ARC-it 0.9090, GSM8K 0.9333 (igual al base), IFE
 
 | Sistema | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| odelpa/qwen14-rag-selettivo | 14 000 M (base) | no disponible | RAG BM25 con gate selectivo sobre Qwen3-14B | Apache-2.0 (código), CC BY-SA 4.0 (índices) | HuggingFace, GitHub |
-| Qwen3-14B (base) | 14 000 M | no disponible | Modelo denso sin recuperación | Apache-2.0 | HuggingFace |
+| odelpa/qwen14-rag-selettivo | 14 000 M (base) | no disponible | RAG BM25 con gate selectivo sobre Qwen3-14B | Apache-2.0 (código), CC BY-SA 4.0 (índices) | Hugging Face, GitHub |
+| Qwen3-14B (base) | 14 000 M | no disponible | Modelo denso sin recuperación | Apache-2.0 | Hugging Face |
 | RAG always-on sobre Qwen3-14B | 14 000 M (base) | no disponible | Recuperación BM25 siempre activa | Apache-2.0 (código) | Reproducible con el mismo arnés |
 | Otros sistemas RAG con gate | no disponible | no disponible | Políticas de activación de recuperación | no disponible | no disponible |
 
@@ -94,7 +94,7 @@ La comparación directa más relevante es interna: el gate selectivo iguala o su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/odelpa/qwen14-rag-selettivo
+- Modelo en Hugging Face: https://huggingface.co/odelpa/qwen14-rag-selettivo
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-14B-8bit
 - Índices BM25: https://huggingface.co/datasets/odelpa/qwen14-rag-selettivo-index
 - Resultados crudos: https://huggingface.co/datasets/odelpa/qwen14-rag-v1-risultati

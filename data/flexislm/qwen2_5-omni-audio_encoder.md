@@ -78,7 +78,7 @@ La comparativa directa con Whisper o CLAP no es trivial porque estos modelos est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FlexiSLM/Qwen2_5-Omni-Audio_Encoder
+- Repositorio Hugging Face: https://huggingface.co/FlexiSLM/Qwen2_5-Omni-Audio_Encoder
 - Modelo base Qwen2.5-Omni-7B: https://huggingface.co/Qwen/Qwen2.5-Omni-7B
 - Repositorio GitHub de Qwen2.5-Omni: https://github.com/QwenLM/Qwen2.5-Omni
 - Encoder equivalente de voidful: https://huggingface.co/voidful/qwen2_5_omni_audio_encoder

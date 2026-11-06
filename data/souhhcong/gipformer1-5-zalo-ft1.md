@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `souhhcong/gipformer1.5-zalo-ft1` es un sistema de reconocimiento automático del habla (ASR) en vietnamita, publicado por el usuario souhhcong en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo base `g-group-ai-lab/gipformer1.5-68M-rnnt`, desarrollado por G-Group AI Lab, que emplea la arquitectura Zipformer con decodificación RNNT (Recurrent Neural Network Transducer). Con 68 millones de parámetros, es un modelo compacto orientado a despliegue eficiente en producción.
+El modelo `souhhcong/gipformer1.5-zalo-ft1` es un sistema de reconocimiento automático del habla (ASR) en vietnamita, publicado por el usuario souhhcong en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo base `g-group-ai-lab/gipformer1.5-68M-rnnt`, desarrollado por G-Group AI Lab, que emplea la arquitectura Zipformer con decodificación RNNT (Recurrent Neural Network Transducer). Con 68 millones de parámetros, es un modelo compacto orientado a despliegue eficiente en producción.
 
 La relevancia del modelo radica en su formato de publicación: se distribuye en ONNX y está diseñado para ejecutarse con sherpa-onnx, un runtime de inferencia de voz de alto rendimiento que permite desplegarlo en CPU y dispositivos de borde sin necesidad de GPUs dedicadas. Esto lo hace atractivo para aplicaciones de transcripción en tiempo real con requisitos de latencia estrictos y recursos limitados.
 
-El ajuste fino parece orientado al dominio de Zalo (la aplicación de mensajería vietnamita), lo que sugiere una especialización en vocabulario y condiciones acústicas propias de conversaciones telefónicas o de voz sobre IP en vietnamita. El acceso al repositorio está restringido y requiere aceptar condiciones en HuggingFace, y la licencia es propietaria (`private-zac2026`), lo que limita su uso a los términos que el autor establezca.
+El ajuste fino parece orientado al dominio de Zalo (la aplicación de mensajería vietnamita), lo que sugiere una especialización en vocabulario y condiciones acústicas propias de conversaciones telefónicas o de voz sobre IP en vietnamita. El acceso al repositorio está restringido y requiere aceptar condiciones en Hugging Face, y la licencia es propietaria (`private-zac2026`), lo que limita su uso a los términos que el autor establezca.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ La comparativa se limita a alternativas de la misma categoría (ASR compacto). W
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/souhhcong/gipformer1.5-zalo-ft1
+- Hugging Face: https://huggingface.co/souhhcong/gipformer1.5-zalo-ft1
 - Modelo base: https://huggingface.co/g-group-ai-lab/gipformer1.5-68M-rnnt
 - sherpa-onnx (runtime): no disponible en la informacion proporcionada
 - Repositorio k2-fsa / Zipformer: no disponible en la informacion proporcionada

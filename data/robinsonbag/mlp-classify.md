@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Robinsonbag/mlp-classify` es una implementación a escala *tiny* de la arquitectura DeiT (Data-efficient Image Transformer), configurada para tareas de generación, publicada por el usuario Robinsonbag en HuggingFace bajo licencia Apache 2.0. Aunque el nombre sugiere un clasificador MLP, los metadatos indican que se trata de un transformer con atención dispersa (*sparse attention*) y estrategia de fusión *tucker*, normalización *groupnorm* y activación *approx gelu*.
+El modelo `Robinsonbag/mlp-classify` es una implementación a escala *tiny* de la arquitectura DeiT (Data-efficient Image Transformer), configurada para tareas de generación, publicada por el usuario Robinsonbag en Hugging Face bajo licencia Apache 2.0. Aunque el nombre sugiere un clasificador MLP, los metadatos indican que se trata de un transformer con atención dispersa (*sparse attention*) y estrategia de fusión *tucker*, normalización *groupnorm* y activación *approx gelu*.
 
 La documentación disponible es extremadamente escasa: el repositorio contiene únicamente un archivo `run.py` y la model card no incluye información sobre número de parámetros, datos de entrenamiento, rendimiento o capacidades concretas. Tampoco se han publicado resultados de benchmarks ni especificaciones de contexto o idiomas. Por tanto, cualquier evaluación de su utilidad práctica es, hoy por hoy, especulativa.
 
@@ -53,5 +53,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Robinsonbag/mlp-classify
+- Repositorio en Hugging Face: https://huggingface.co/Robinsonbag/mlp-classify
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo.

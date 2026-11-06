@@ -74,14 +74,14 @@ No existe una comparativa directa con modelos comerciales o de investigación co
 - El checkpoint incluido no ha sido entrenado: no puede generar texto coherente ni realizar tareas lingüísticas útiles.
 - No ha sido auditado para robustez, equidad ni transferencia de dominio, según el propio autor.
 - Riesgo de alucinación: no aplicable al no haber sido entrenado, pero si se entrena con datos de baja calidad, heredará sus sesgos.
-- La implementación es personalizada: las APIs genéricas de HuggingFace (como `AutoModel`) no funcionarán sin un adaptador explícito.
+- La implementación es personalizada: las APIs genéricas de Hugging Face (como `AutoModel`) no funcionarán sin un adaptador explícito.
 - Licencia Apache-2.0 permite uso comercial, pero el autor advierte de que debe revisarse la licencia de los datos externos si se usa con datasets propios.
 - No se recomienda su uso en producción bajo ninguna circunstancia.
 - El tamaño del repositorio es de 0.0 GB, lo que confirma la ausencia de pesos entrenados o datasets.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nqdupont/tiny-transformer-generation98
+- Repositorio en Hugging Face: https://huggingface.co/nqdupont/tiny-transformer-generation98
 - Repositorio similar (skolouri/TinyTransformer): https://github.com/skolouri/TinyTransformer
 - Repositorio similar (avvorstenbosch/tinyTransformer): https://github.com/avvorstenbosch/tinyTransformer
 - Documentación del repositorio similar (saeeddhqan/tiny-transformer): https://deepwiki.com/saeeddhqan/tiny-transformer

@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `merge-or-mix-loras` (fusión DARE) | 1,5B + LoRA r16 | No disponible | 44,7/50 | apache-2.0 | HuggingFace, 0 descargas |
-| `lora-AB` (mismo repo) | 1,5B + LoRA r16 | No disponible | 49,0/50 | apache-2.0 | HuggingFace, mismo repo |
-| Qwen2.5-1.5B-Instruct con system prompt | 1,5B | No disponible | 4/50 | apache-2.0 (modelo base) | HuggingFace, ampliamente adoptado |
+| `merge-or-mix-loras` (fusión DARE) | 1,5B + LoRA r16 | No disponible | 44,7/50 | apache-2.0 | Hugging Face, 0 descargas |
+| `lora-AB` (mismo repo) | 1,5B + LoRA r16 | No disponible | 49,0/50 | apache-2.0 | Hugging Face, mismo repo |
+| Qwen2.5-1.5B-Instruct con system prompt | 1,5B | No disponible | 4/50 | apache-2.0 (modelo base) | Hugging Face, ampliamente adoptado |
 
 La comparación relevante es interna al repositorio: la fusión DARE frente al entrenamiento sobre datos mezclados y frente al modelo base sin adaptación. No se dispone de comparaciones con otros conjuntos de adaptadores LoRA de la misma categoría en la información proporcionada.
 
@@ -89,7 +89,7 @@ La comparación relevante es interna al repositorio: la fusión DARE frente al e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DavidJLN/merge-or-mix-loras
+- Repositorio Hugging Face: https://huggingface.co/DavidJLN/merge-or-mix-loras
 - Repositorio de código, recetas de fusión y evaluaciones: https://github.com/DavidJLN/merge-llm
 - Recetas de fusión (DARE): https://github.com/DavidJLN/merge-llm/tree/main/04-merges
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

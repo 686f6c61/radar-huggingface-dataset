@@ -100,7 +100,7 @@ La comparacion directa con otros modelos de 27B de la misma categoria no esta di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bowmanslayer/Qwen3.8-27B-Uncensored-W4A16-vision-mtp
+- Repositorio Hugging Face: https://huggingface.co/bowmanslayer/Qwen3.8-27B-Uncensored-W4A16-vision-mtp
 - Modelo base abliterado: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
 - Modelo original de Alibaba: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de abliteracion Heretic: https://github.com/p-e-w/heretic

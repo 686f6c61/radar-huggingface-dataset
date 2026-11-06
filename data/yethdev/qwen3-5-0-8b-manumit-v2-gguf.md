@@ -80,7 +80,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoria más
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta versión GGUF: https://huggingface.co/yethdev/qwen3.5-0.8b-manumit-v2-GGUF
+- Repositorio Hugging Face de esta versión GGUF: https://huggingface.co/yethdev/qwen3.5-0.8b-manumit-v2-GGUF
 - Modelo base en safetensors: https://huggingface.co/yethdev/qwen3.5-0.8b-manumit-v2
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Versión anterior v1 GGUF: https://huggingface.co/yethdev/qwen3.5-0.8b-manumit-v1-GGUF

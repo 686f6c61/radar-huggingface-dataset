@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dkingtutcd/gemma-e4b-repair-new-16k-with-empty` es un fine-tuning del modelo Gemma 4 E4B (variante instruct) publicado por el usuario dkingtutcd en HuggingFace. Se trata de un ajuste derivado de la versión cuantizada en 4 bits de Unsloth (`unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`), reentrenado y exportado posteriormente en FP16 (safetensors de 16 GB, 7.996.156.490 parámetros). El pipeline declarado es `image-text-to-text`, lo que indica que conserva la torre multimodal del modelo base.
+`dkingtutcd/gemma-e4b-repair-new-16k-with-empty` es un fine-tuning del modelo Gemma 4 E4B (variante instruct) publicado por el usuario dkingtutcd en Hugging Face. Se trata de un ajuste derivado de la versión cuantizada en 4 bits de Unsloth (`unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`), reentrenado y exportado posteriormente en FP16 (safetensors de 16 GB, 7.996.156.490 parámetros). El pipeline declarado es `image-text-to-text`, lo que indica que conserva la torre multimodal del modelo base.
 
 El modelo resuelve un caso de personalización concreta: adaptar un Gemma 4 E4B instruct a un conjunto de datos propietario (el nombre sugiere una tarea de "repair" con contexto de 16k y manejo de entradas vacías), manteniendo las capacidades multimodales y de generación de texto del original. Es relevante para desarrolladores que quieran un punto de partida ya ajustado sobre Gemma 4 E4B en lugar de partir del checkpoint oficial.
 
@@ -23,7 +23,7 @@ La información pública es escasa: la model card es prácticamente la plantilla
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura de Gemma 4 E4B, un transformer multimodal de la familia Gemma 4 de Google, con torre de visión y pipeline `image-text-to-text`. El checkpoint publicado es un fine-tuning del modelo base de Unsloth, que a su vez es una versión cuantizada en 4 bits (bnb-4bit) del Gemma 4 E4B instruct oficial. El autor indica que el entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, lo que sugiere un flujo de fine-tuning supervisado (SFT) o posiblemente DPO/ORPO, aunque la model card no especifica el método exacto.
+El modelo hereda la arquitectura de Gemma 4 E4B, un transformer multimodal de la familia Gemma 4 de Google, con torre de visión y pipeline `image-text-to-text`. El checkpoint publicado es un fine-tuning del modelo base de Unsloth, que a su vez es una versión cuantizada en 4 bits (bnb-4bit) del Gemma 4 E4B instruct oficial. El autor indica que el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, lo que sugiere un flujo de fine-tuning supervisado (SFT) o posiblemente DPO/ORPO, aunque la model card no especifica el método exacto.
 
 No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas adicionales (decodificación especulativa, atención lineal, etc.). El sufijo "repair-new-16k-with-empty" del nombre apunta a un ajuste orientado a tareas de reparación con ventanas de 16k y manejo de entradas vacías, pero es una inferencia del nombre y no un dato documentado.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dkingtutcd/gemma-e4b-repair-new-16k-with-empty | ~8B | 16k (según nombre) | Apache 2.0 | HuggingFace, 27 descargas |
-| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (base) | ~8B | no disponible | Apache 2.0 | HuggingFace |
-| Gemma 4 E4B instruct oficial | ~8B | no disponible | Apache 2.0 | HuggingFace / Google |
+| dkingtutcd/gemma-e4b-repair-new-16k-with-empty | ~8B | 16k (según nombre) | Apache 2.0 | Hugging Face, 27 descargas |
+| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (base) | ~8B | no disponible | Apache 2.0 | Hugging Face |
+| Gemma 4 E4B instruct oficial | ~8B | no disponible | Apache 2.0 | Hugging Face / Google |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dkingtutcd/gemma-e4b-repair-new-16k-with-empty
+- Hugging Face: https://huggingface.co/dkingtutcd/gemma-e4b-repair-new-16k-with-empty
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E4B-it-unsloth-bnb-4bit
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

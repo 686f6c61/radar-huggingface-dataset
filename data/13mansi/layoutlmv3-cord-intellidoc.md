@@ -54,17 +54,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: al tratarse de un modelo de 125 M de parametros, la inferencia en precision FP32 requiere aproximadamente 0,5 GB de VRAM; en FP16 alrededor de 0,25 GB, sin contar el procesador de imagen y los tensores intermedios.
 - GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090) es suficiente; tambien puede ejecutarse en CPU para volumenes moderados.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU con al menos 2 GB de VRAM.
-- Opciones de despliegue: no se especifican en la informacion disponible; al ser un modelo LayoutLMv3 en safetensors, es compatible con la libreria Transformers de HuggingFace. No se confirma soporte para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: no se especifican en la informacion disponible; al ser un modelo LayoutLMv3 en safetensors, es compatible con la libreria Transformers de Hugging Face. No se confirma soporte para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| 13mansi/layoutlmv3-cord-intellidoc | 125.333.897 | no disponible | MIT | HuggingFace |
-| LayoutLMv3 base (microsoft) | ~125 M | 512 tokens (tipico) | MIT | HuggingFace |
-| Donut (variantes) | variable | no disponible | MIT | HuggingFace |
-| LiLT | variable | no disponible | MIT | HuggingFace |
+| 13mansi/layoutlmv3-cord-intellidoc | 125.333.897 | no disponible | MIT | Hugging Face |
+| LayoutLMv3 base (microsoft) | ~125 M | 512 tokens (tipico) | MIT | Hugging Face |
+| Donut (variantes) | variable | no disponible | MIT | Hugging Face |
+| LiLT | variable | no disponible | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -80,4 +80,4 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/13mansi/layoutlmv3-cord-intellidoc
+- Hugging Face: https://huggingface.co/13mansi/layoutlmv3-cord-intellidoc

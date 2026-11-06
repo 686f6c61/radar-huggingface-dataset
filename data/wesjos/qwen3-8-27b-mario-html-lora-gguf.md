@@ -93,7 +93,7 @@ No se dispone de información sobre adaptadores LoRA comparables en la documenta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wesjos/Qwen3.8-27B-Mario-HTML-LoRA-GGUF
+- Repositorio Hugging Face: https://huggingface.co/wesjos/Qwen3.8-27B-Mario-HTML-LoRA-GGUF
 - Variante PEFT del adaptador: https://huggingface.co/wesjos/Qwen3.8-27B-Mario-HTML-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Demo en vídeo: https://huggingface.co/wesjos/Qwen3.8-27B-Mario-HTML-LoRA-GGUF/resolve/main/demos/demo.mp4

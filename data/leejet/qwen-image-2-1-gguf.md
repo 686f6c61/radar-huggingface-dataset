@@ -2,7 +2,7 @@
 
 ## Resumen
 
-leejet/Qwen-Image-2.1-GGUF es la versión cuantizada en formato GGUF del modelo de generación de imágenes Qwen/Qwen-Image-2.1, publicada por el desarrollador leejet, autor asimismo del proyecto stable-diffusion.cpp. El repositorio contiene los pesos convertidos para su uso con stable-diffusion.cpp y con ComfyUI a través del nodo personalizado leejet/ComfyUI-GGUF. El pipeline declarado en HuggingFace es text-to-image y los idiomas indicados en los metadatos son inglés (en) y chino (zh).
+leejet/Qwen-Image-2.1-GGUF es la versión cuantizada en formato GGUF del modelo de generación de imágenes Qwen/Qwen-Image-2.1, publicada por el desarrollador leejet, autor asimismo del proyecto stable-diffusion.cpp. El repositorio contiene los pesos convertidos para su uso con stable-diffusion.cpp y con ComfyUI a través del nodo personalizado leejet/ComfyUI-GGUF. El pipeline declarado en Hugging Face es text-to-image y los idiomas indicados en los metadatos son inglés (en) y chino (zh).
 
 El modelo cuenta con 7.115.124.736 parámetros (aproximadamente 7,1 mil millones) y el repositorio ocupa 40,3 GB. La relevancia de esta publicación radica en que permite ejecutar un modelo de generación de imágenes de ese tamaño en hardware de gama media mediante cuantización GGUF, integrándolo en flujos de trabajo locales como ComfyUI en lugar de depender de APIs en la nube. En el momento de la actualización del repositorio (20 de septiembre de 2026) acumulaba 7.070 descargas y 11 likes.
 
@@ -18,7 +18,7 @@ Se trata de una conversión de pesos, no de un modelo entrenado desde cero: el t
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | Formato GGUF; los niveles concretos de cuantización no se detallan en la información proporcionada (el repositorio ocupa 40,3 GB) |
 | Idiomas soportados | Inglés (en) y chino (zh) |
-| Licencia | Qwen Research License Agreement, según la model card del autor; los metadatos de HuggingFace indican "no disponible". La licencia de los archivos cuantizados sigue la del modelo original |
+| Licencia | Qwen Research License Agreement, según la model card del autor; los metadatos de Hugging Face indican "no disponible". La licencia de los archivos cuantizados sigue la del modelo original |
 | Formato de pesos | GGUF (generado con stable-diffusion.cpp) |
 
 ## Arquitectura y entrenamiento
@@ -29,7 +29,7 @@ Lo único documentado en esta publicación es el proceso de conversión: los pes
 
 ## Capacidades
 
-- Generación de imágenes a partir de prompts de texto (pipeline text-to-image declarado en HuggingFace).
+- Generación de imágenes a partir de prompts de texto (pipeline text-to-image declarado en Hugging Face).
 - Interpretación de prompts en inglés y en chino, según los idiomas declarados en los metadatos.
 - Ejecución local mediante stable-diffusion.cpp, con soporte de conversión GGUF para reducir requisitos de memoria.
 - Integración con ComfyUI a través del nodo personalizado leejet/ComfyUI-GGUF, con un flujo de trabajo de ejemplo disponible en el repositorio (qwen_image_2_1_t2i_gguf.json).
@@ -78,7 +78,7 @@ La información proporcionada no incluye datos de rendimiento ni especificacione
 ## Limitaciones y advertencias
 
 - Licencia: los archivos cuantizados heredan la Qwen Research License Agreement del modelo original. Es una licencia orientada a investigación, por lo que el uso comercial requiere revisar el texto completo antes de desplegar el modelo en producción.
-- Los metadatos de HuggingFace no declaran licencia ("no disponible"), lo que puede generar ambigüedad en herramientas automatizadas de cumplimiento; debe prevalecer el enlace a la licencia incluido en la model card.
+- Los metadatos de Hugging Face no declaran licencia ("no disponible"), lo que puede generar ambigüedad en herramientas automatizadas de cumplimiento; debe prevalecer el enlace a la licencia incluido en la model card.
 - Idiomas: solo se declaran inglés y chino. Los prompts en otros idiomas, incluido el español, pueden producir resultados de menor calidad, sin que se haya documentado el grado de degradación.
 - La cuantización GGUF puede degradar la fidelidad de la imagen respecto a los pesos en bf16/fp16. La model card no incluye comparativas de calidad entre niveles de cuantización.
 - No hay resultados de benchmarks publicados en la información disponible, por lo que no es posible verificar objetivamente la calidad del modelo ni compararla con alternativas.
@@ -89,7 +89,7 @@ La información proporcionada no incluye datos de rendimiento ni especificacione
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/leejet/Qwen-Image-2.1-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/leejet/Qwen-Image-2.1-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia del modelo original (Qwen Research License Agreement): https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - stable-diffusion.cpp: https://github.com/leejet/stable-diffusion.cpp

@@ -73,7 +73,7 @@ No se dispone de información pública sobre otros adaptadores LoRA específicam
 
 ## Enlaces
 
-- [HuggingFace - deepcoder2024/Qwen3-8B-LoRA-Cochrane-Screening](https://huggingface.co/deepcoder2024/Qwen3-8B-LoRA-Cochrane-Screening)
+- [Hugging Face - deepcoder2024/Qwen3-8B-LoRA-Cochrane-Screening](https://huggingface.co/deepcoder2024/Qwen3-8B-LoRA-Cochrane-Screening)
 - [Dataset de entrenamiento - deepcoder2024/cochrane-screening-sft](https://huggingface.co/datasets/deepcoder2024/cochrane-screening-sft)
 - [Código fuente - ljwa2323/cochrane-screening-slm](https://github.com/ljwa2323/cochrane-screening-slm)
 - [Modelo base - Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B)

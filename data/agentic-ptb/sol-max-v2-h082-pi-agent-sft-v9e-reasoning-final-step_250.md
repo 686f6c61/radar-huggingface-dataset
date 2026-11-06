@@ -68,5 +68,5 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (po
 
 ## Enlaces
 
-- [HuggingFace - agentic-ptb/sol-max-v2.h082.pi-agent-sft-v9e-reasoning-final.step_250](https://huggingface.co/agentic-ptb/sol-max-v2.h082.pi-agent-sft-v9e-reasoning-final.step_250)
+- [Hugging Face - agentic-ptb/sol-max-v2.h082.pi-agent-sft-v9e-reasoning-final.step_250](https://huggingface.co/agentic-ptb/sol-max-v2.h082.pi-agent-sft-v9e-reasoning-final.step_250)
 - [Índice de checkpoints de AgentPTB (mencionado en la model card)](https://huggingface.co/agentic-ptb/INDEX)

@@ -66,8 +66,8 @@ No se dispone de datos de rendimiento ni de especificaciones de contexto de mode
 
 | Modelo | Parametros | Formato | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-24B-A2B-MLX-4bit | 23,97B totales (A2B) | MLX (safetensors) | 4 bits (grupo 64) | LFM Open License v1.0 | HuggingFace (3.228 descargas, 16 likes) |
-| LiquidAI/LFM2.5-24B-A2B (base) | 23,97B totales (A2B) | no disponible | sin cuantizar (pesos originales) | LFM Open License v1.0 | HuggingFace |
+| LFM2.5-24B-A2B-MLX-4bit | 23,97B totales (A2B) | MLX (safetensors) | 4 bits (grupo 64) | LFM Open License v1.0 | Hugging Face (3.228 descargas, 16 likes) |
+| LiquidAI/LFM2.5-24B-A2B (base) | 23,97B totales (A2B) | no disponible | sin cuantizar (pesos originales) | LFM Open License v1.0 | Hugging Face |
 
 Para el resto de alternativas de la misma categoría (MoE de ~24B orientados a borde): no disponible.
 
@@ -84,7 +84,7 @@ Para el resto de alternativas de la misma categoría (MoE de ~24B orientados a b
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-MLX-4bit
+- Página del modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-MLX-4bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
 - Playground de Liquid AI: https://playground.liquid.ai/
 - Documentación de LFM: https://docs.liquid.ai/lfm/getting-started/welcome

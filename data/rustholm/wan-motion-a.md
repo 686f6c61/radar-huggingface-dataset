@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rustholm/wan-motion-a` es un fine-tune del modelo de generación de vídeo a partir de imagen (image-to-video, I2V) `Wan-AI/Wan2.2-I2V-A14B`, publicado por el usuario `rustholm` en HuggingFace. Se trata de un ajuste fino orientado a la generación de contenido audiovisual para adultos: la model card es esencialmente una recopilación de enlaces a LoRAs y modelos de Civitai de temática sexual explícita, sin documentación técnica sobre el proceso de entrenamiento, los datos utilizados ni las modificaciones realizadas sobre el modelo base.
+`rustholm/wan-motion-a` es un fine-tune del modelo de generación de vídeo a partir de imagen (image-to-video, I2V) `Wan-AI/Wan2.2-I2V-A14B`, publicado por el usuario `rustholm` en Hugging Face. Se trata de un ajuste fino orientado a la generación de contenido audiovisual para adultos: la model card es esencialmente una recopilación de enlaces a LoRAs y modelos de Civitai de temática sexual explícita, sin documentación técnica sobre el proceso de entrenamiento, los datos utilizados ni las modificaciones realizadas sobre el modelo base.
 
 El modelo hereda la arquitectura y las capacidades del Wan 2.2 I2V de 14B parámetros, que genera secuencias de vídeo condicionadas por una imagen de entrada. El repositorio ocupa 15 GB, lo que es coherente con un checkpoint en precisión de 16 bits de un modelo de ese tamaño. No obstante, el autor no proporciona información sobre hiperparámetros, dataset de ajuste, metodología (LoRA fusionado, full fine-tune, DreamBooth) ni evaluación alguna.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rustholm/wan-motion-a | ~14B (heredado) | no disponible | unknown | HuggingFace, 0 descargas | Fine-tune sin documentacion, contenido para adultos |
-| Wan-AI/Wan2.2-I2V-A14B | 14B | no disponible | no disponible en esta ficha | HuggingFace (modelo base) | Modelo original de generacion I2V |
-| Otros fine-tunes I2V de la familia Wan 2.2 | ~14B | no disponible | variable | Civitai / HuggingFace | Multiples variantes comunitarias con distinto grado de documentacion |
+| rustholm/wan-motion-a | ~14B (heredado) | no disponible | unknown | Hugging Face, 0 descargas | Fine-tune sin documentacion, contenido para adultos |
+| Wan-AI/Wan2.2-I2V-A14B | 14B | no disponible | no disponible en esta ficha | Hugging Face (modelo base) | Modelo original de generacion I2V |
+| Otros fine-tunes I2V de la familia Wan 2.2 | ~14B | no disponible | variable | Civitai / Hugging Face | Multiples variantes comunitarias con distinto grado de documentacion |
 
 ## Limitaciones y advertencias
 
@@ -73,11 +73,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Riesgo de alucinacion visual: como todo modelo generativo de video, puede producir artefactos, inconsistencias temporales y deformaciones anatomicas.
 - Procedencia de datos incierta: no se puede verificar que el dataset de ajuste respete derechos de imagen ni consentimiento de las personas representadas.
 - Sin soporte de la comunidad: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion externa.
-- Fecha de creacion futura (2026-10-31) en los metadatos de HuggingFace, lo que puede indicar un error de marcado o una publicacion programada; conviene verificar la integridad del repositorio.
+- Fecha de creacion futura (2026-10-31) en los metadatos de Hugging Face, lo que puede indicar un error de marcado o una publicacion programada; conviene verificar la integridad del repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rustholm/wan-motion-a
+- Hugging Face: https://huggingface.co/rustholm/wan-motion-a
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
 - Civitai Archive (referenciado en la model card): https://civitaiarchive.com/search?is_nsfw=true&is_deleted=true&q=blink
 - Civitai (varios modelos referenciados en la model card): https://civitai.com/

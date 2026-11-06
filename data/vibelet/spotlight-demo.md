@@ -91,6 +91,6 @@ No se dispone de informacion suficiente para una comparativa rigurosa: el modelo
 
 ## Enlaces
 
-- Espacio de demo en HuggingFace: https://huggingface.co/Vibelet/spotlight-demo
+- Espacio de demo en Hugging Face: https://huggingface.co/Vibelet/spotlight-demo
 - Modelo referenciado: https://huggingface.co/Vibelet/spotlight-memory-synth-1b
 - Blog de Percepta sobre Spotlight Memory: https://percepta.ai/blog/spotlight-memory

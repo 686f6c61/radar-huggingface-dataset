@@ -6,7 +6,7 @@ AnveshAI-Ritchie-0.1B es un modelo de lenguaje causal de 100,7 millones de param
 
 Su relevancia radica en el segmento de ejecucion en el borde (edge computing): con unos 192 MB en disco en FP16 y sin necesidad de GPU, el modelo cabe en telefonos, tablets, Raspberry Pi y sistemas embebidos, entornos donde modelos de codigo de varios miles de millones de parametros son inviables. Está pensado como un generador de codigo C orientado a tareas, no como un asistente conversacional: emplea tokens especiales estructurados (`<|task|>`, `<|code|>`, `<|plan|>`, `<|run|>`, `<|bug|>`, `<|fix|>`) para delimitar las fases del flujo de generacion.
 
-Se distribuye con licencia Apache 2.0, lo que permite uso comercial y modificacion sin restricciones adicionales, y esta integrado en el ecosistema HuggingFace Transformers. En el momento de redactar esta ficha no se han publicado resultados de benchmarks ni datos sobre el volumen de tokens de entrenamiento.
+Se distribuye con licencia Apache 2.0, lo que permite uso comercial y modificacion sin restricciones adicionales, y esta integrado en el ecosistema Hugging Face Transformers. En el momento de redactar esta ficha no se han publicado resultados de benchmarks ni datos sobre el volumen de tokens de entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 - Cuantizaciones estimadas segun el numero de parametros: en torno a 100 MB en int8 y 50 MB en int4 (estimacion derivada, no verificada, ya que no se publican pesos cuantizados).
 - GPU recomendadas: no se requiere GPU. Cualquier GPU con al menos 1 GB de memoria (por ejemplo, GTX 1050 o superior, MX150, integradas modernas) es mas que suficiente; tambien funciona en CPU sin aceleracion.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos diez anos, e incluso en CPU y en dispositivos de borde como Raspberry Pi, tablets o telefonos.
-- Opciones de despliegue: HuggingFace Transformers (`AutoModelForCausalLM`), llama.cpp (la model card menciona soporte por la arquitectura LLaMA), ONNX y otros runtimes compatibles con LLaMA. No se mencionan vLLM ni TGI de forma explicita, aunque el repositorio incluye la etiqueta `text-generation-inference`.
+- Opciones de despliegue: Hugging Face Transformers (`AutoModelForCausalLM`), llama.cpp (la model card menciona soporte por la arquitectura LLaMA), ONNX y otros runtimes compatibles con LLaMA. No se mencionan vLLM ni TGI de forma explicita, aunque el repositorio incluye la etiqueta `text-generation-inference`.
 - Latencia y throughput: no disponible. El autor no publica mediciones de latencia ni de tokens por segundo en ninguna plataforma.
 
 ## Comparativa con modelos similares
@@ -80,10 +80,10 @@ No se dispone de datos de benchmarks de este modelo para establecer comparacione
 
 | Modelo | Parametros | Contexto | Licencia | Especializacion | Disponibilidad |
 |---|---|---|---|---|---|
-| AnveshAI-Ritchie-0.1B | 100,7 M | 2.048 tokens | Apache 2.0 | Codigo en C | safetensors en HuggingFace |
-| Qwen2.5-Coder-0.5B | 494 M (aprox.) | mayor que 2.048 tokens | Apache 2.0 | Codigo multilingue | safetensors en HuggingFace |
-| TinyLlama-1.1B | 1.100 M (aprox.) | mayor que 2.048 tokens | Apache 2.0 | Proposito general / chat | safetensors, GGUF en HuggingFace |
-| SmolLM-135M | 135 M (aprox.) | mayor que 2.048 tokens | Apache 2.0 | Proposito general | safetensors en HuggingFace |
+| AnveshAI-Ritchie-0.1B | 100,7 M | 2.048 tokens | Apache 2.0 | Codigo en C | safetensors en Hugging Face |
+| Qwen2.5-Coder-0.5B | 494 M (aprox.) | mayor que 2.048 tokens | Apache 2.0 | Codigo multilingue | safetensors en Hugging Face |
+| TinyLlama-1.1B | 1.100 M (aprox.) | mayor que 2.048 tokens | Apache 2.0 | Proposito general / chat | safetensors, GGUF en Hugging Face |
+| SmolLM-135M | 135 M (aprox.) | mayor que 2.048 tokens | Apache 2.0 | Proposito general | safetensors en Hugging Face |
 
 Criterio de comparacion: Ritchie es el unico de la lista disenado explicitamente como generador de C con tokens de tarea; los otros son modelos de proposito general con soporte de codigo mas amplio, pero tambien mayor huella de memoria. No se dispone de datos de benchmarks comparativos publicados en la informacion proporcionada.
 
@@ -100,12 +100,12 @@ Criterio de comparacion: Ritchie es el unico de la lista disenado explicitamente
 - Sesgos conocidos: no se documentan evaluaciones de sesgo, toxicidad o seguridad en la informacion disponible.
 - Licencia Apache 2.0: permite uso comercial, modificacion y redistribucion, con la obligacion de conservar el aviso de licencia y de copyright y de indicar los cambios realizados.
 - Advertencia para produccion: el modelo es un prototipo de investigacion con 0 descargas declaradas y sin benchmarks publicos; no hay evidencia publicada de robustez en escenarios reales.
-- Los datos de fecha del repositorio (creado el 12 de octubre de 2026 y actualizado ese mismo dia) provienen de los metadatos de HuggingFace y no pueden verificarse de forma independiente.
+- Los datos de fecha del repositorio (creado el 12 de octubre de 2026 y actualizado ese mismo dia) provienen de los metadatos de Hugging Face y no pueden verificarse de forma independiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnveshAI/AnveshAI-Ritchie-0.1B
-- Organizacion AnveshAI en HuggingFace: https://huggingface.co/AnveshAI
+- Modelo en Hugging Face: https://huggingface.co/AnveshAI/AnveshAI-Ritchie-0.1B
+- Organizacion AnveshAI en Hugging Face: https://huggingface.co/AnveshAI
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Referencia biografica de Dennis Ritchie, que da nombre al modelo: https://en.wikipedia.org/wiki/Dennis_Ritchie
 - Paper tecnico: no disponible

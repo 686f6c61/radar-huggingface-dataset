@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto / chunk | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| act-bluev2-gs320-ac60 (este) | 51.668.634 | chunk_size 60, n_action_steps 60 | No disponible | HuggingFace, 0 descargas | Punto de un barrido de resolución GelSight sobre UR5e + DG-5F |
+| act-bluev2-gs320-ac60 (este) | 51.668.634 | chunk_size 60, n_action_steps 60 | No disponible | Hugging Face, 0 descargas | Punto de un barrido de resolución GelSight sobre UR5e + DG-5F |
 | ACT original (ALOHA, Zhao et al. 2023) | No disponible en la información proporcionada | No disponible | No disponible | Paper y código públicos | Referencia algorítmica; la implementación LeRobot deriva de ella |
 | Diffusion Policy (Chi et al. 2023) | No disponible | No disponible | No disponible | Paper y código públicos | Política de imitación alternativa basada en difusión; requiere entrenamiento propio sobre el mismo dataset para una comparación válida |
 | Otros puntos del mismo barrido Kaz55 (otras resoluciones de GelSight) | No disponible | No disponible | No disponible | No verificados en la información proporcionada | Serían la comparación más directa, al compartir dataset, semilla y pasos |
@@ -92,7 +92,7 @@ No se dispone de datos verificados de parámetros, contexto ni rendimiento de lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kaz55/act-bluev2-gs320-ac60
+- Modelo en Hugging Face: https://huggingface.co/Kaz55/act-bluev2-gs320-ac60
 - Dataset de entrenamiento: https://huggingface.co/datasets/Kaz55/dg5f_ur5e_bluev2_gs320
 - Librería LeRobot: no se ha proporcionado una URL directa en la información disponible; el modelo declara library_name: lerobot
 - Paper de ACT / ALOHA (referencia algorítmica): no se ha proporcionado una URL en la información disponible

@@ -64,6 +64,6 @@ No se dispone de información comparativa con otros modelos. Al ser un fine-tune
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/SaketR1/uncertainty-sft-mix-clear-corr-amb-balanced)
+- [Hugging Face del modelo](https://huggingface.co/SaketR1/uncertainty-sft-mix-clear-corr-amb-balanced)
 - [Modelo relacionado del mismo autor: uncertainty-sft-correct-ambiguous-mixed-clear](https://huggingface.co/SaketR1/uncertainty-sft-correct-ambiguous-mixed-clear)
 - [Modelo relacionado del mismo autor: uncertainty-sft](https://huggingface.co/SaketR1/uncertainty-sft)

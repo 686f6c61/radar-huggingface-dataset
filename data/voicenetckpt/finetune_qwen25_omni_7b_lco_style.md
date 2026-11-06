@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`VoiceNetCkpt/finetune_qwen25_omni_7b_lco_style` es un directorio de entrenamiento en bruto (raw training run) subido tal cual a HuggingFace por el usuario VoiceNetCkpt, procedente de los experimentos VoiceCLAP. No se trata de un modelo empaquetado y documentado para uso final, sino del volcado de un checkpoint intermedio generado en el clúster JUPITER y empaquetado en `checkpoints.tar` el 25 de septiembre de 2026. El repositorio contiene 27 archivos y 22,6 GB en formato safetensors.
+`VoiceNetCkpt/finetune_qwen25_omni_7b_lco_style` es un directorio de entrenamiento en bruto (raw training run) subido tal cual a Hugging Face por el usuario VoiceNetCkpt, procedente de los experimentos VoiceCLAP. No se trata de un modelo empaquetado y documentado para uso final, sino del volcado de un checkpoint intermedio generado en el clúster JUPITER y empaquetado en `checkpoints.tar` el 25 de septiembre de 2026. El repositorio contiene 27 archivos y 22,6 GB en formato safetensors.
 
 El nombre del repositorio indica que se trata de un fine-tune del modelo Qwen2.5-Omni de 7B, con el sufijo `lco_style`, presumiblemente asociado a una variante de estilo o de condicionamiento concreto dentro del pipeline VoiceCLAP (voiceclap). Sin embargo, la model card no confirma la arquitectura, el dataset de entrenamiento, el número de tokens visto ni los hiperparámetros empleados.
 
@@ -103,7 +103,7 @@ A modo de contexto, las familias que ocuparían la misma categoría funcional (m
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/finetune_qwen25_omni_7b_lco_style
+- Repositorio del modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/finetune_qwen25_omni_7b_lco_style
 - Índice de todos los runs del proyecto VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Modelo base presumible (identificado a partir del nombre del checkpoint, no confirmado en la model card): https://huggingface.co/Qwen/Qwen2.5-Omni-7B
 - Paper, blog, repositorio de código o demo del proyecto VoiceCLAP: no disponible en la información proporcionada.

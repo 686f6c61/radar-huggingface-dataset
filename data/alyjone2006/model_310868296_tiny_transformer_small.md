@@ -66,4 +66,4 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- [HuggingFace - ALYJONE2006/model_310868296_tiny_transformer_small](https://huggingface.co/ALYJONE2006/model_310868296_tiny_transformer_small)
+- [Hugging Face - ALYJONE2006/model_310868296_tiny_transformer_small](https://huggingface.co/ALYJONE2006/model_310868296_tiny_transformer_small)

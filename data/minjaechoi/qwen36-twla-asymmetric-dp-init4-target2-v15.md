@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `minjaechoi/qwen36-twla-asymmetric-dp-init4-target2-v15` es un checkpoint multimodal de tipo image-text-to-text publicado por el usuario minjaechoi en HuggingFace. Con 35.107.181.936 parametros totales (aproximadamente 35,1 mil millones) y un repositorio de 70,2 GB en safetensors, se trata de un modelo de gran tamano orientado a tareas de conversacion con entrada de imagen y texto. El tag `qwen3_5_moe` sugiere que deriva de la familia Qwen3.5 en su variante de mezcla de expertos (MoE), aunque la model card no confirma ni detalla la arquitectura.
+El modelo `minjaechoi/qwen36-twla-asymmetric-dp-init4-target2-v15` es un checkpoint multimodal de tipo image-text-to-text publicado por el usuario minjaechoi en Hugging Face. Con 35.107.181.936 parametros totales (aproximadamente 35,1 mil millones) y un repositorio de 70,2 GB en safetensors, se trata de un modelo de gran tamano orientado a tareas de conversacion con entrada de imagen y texto. El tag `qwen3_5_moe` sugiere que deriva de la familia Qwen3.5 en su variante de mezcla de expertos (MoE), aunque la model card no confirma ni detalla la arquitectura.
 
 La relevancia de esta publicacion es limitada por el momento: cuenta con 0 descargas y 0 likes, no declara licencia ni idiomas soportados, y su model card se reduce a una lista de datasets de entrenamiento y evaluacion. El nombre del checkpoint (`asymmetric-dp-init4-target2-v15`) apunta a un experimento de entrenamiento con configuracion asimetrica y multiples iteraciones, mas que a un lanzamiento estable para produccion.
 
@@ -41,7 +41,7 @@ En cuanto al entrenamiento, la model card unicamente lista dos conjuntos de dato
 - Capacidades multilingues: no disponible (no se declaran idiomas).
 - Modo de razonamiento explicito (thinking mode): no disponible.
 - Capacidades de audio o video: no disponibles.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse mediante la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse mediante la infraestructura de Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cuantizacion a 8 bits: aproximadamente 35-40 GB, viable en una unica A100 80 GB o H100 80 GB (la calidad resultante no ha sido validada por el autor).
 - Cuantizacion a 4 bits: aproximadamente 18-22 GB, potencialmente ejecutable en una RTX 4090 de 24 GB, con margen escaso para contexto largo.
 - GPU recomendadas: A100 80 GB, H100 80 GB, H200; en consumer, RTX 4090 o RTX 5090 unicamente con cuantizacion agresiva.
-- Opciones de despliegue: transformers (biblioteca declarada), vLLM o TGI para servidores compatibles con MoE, y HuggingFace Inference Endpoints por el tag `endpoints_compatible`. No se han publicado ficheros GGUF, por lo que llama.cpp u Ollama requeririan conversion manual.
+- Opciones de despliegue: transformers (biblioteca declarada), vLLM o TGI para servidores compatibles con MoE, y Hugging Face Inference Endpoints por el tag `endpoints_compatible`. No se han publicado ficheros GGUF, por lo que llama.cpp u Ollama requeririan conversion manual.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -74,9 +74,9 @@ No se dispone de datos verificados de este checkpoint (benchmarks, contexto, lic
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen36-twla-asymmetric-dp-init4-target2-v15 | 35,1 B | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
-| Qwen3-30B-A3B (referencia publica) | 30,5 B | aproximadamente 3 B | 128 K (segun version) | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Qwen2.5-VL-32B (referencia publica) | 32,8 B | denso | 128 K (segun version) | Apache 2.0 (segun version) | HuggingFace |
+| qwen36-twla-asymmetric-dp-init4-target2-v15 | 35,1 B | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
+| Qwen3-30B-A3B (referencia publica) | 30,5 B | aproximadamente 3 B | 128 K (segun version) | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Qwen2.5-VL-32B (referencia publica) | 32,8 B | denso | 128 K (segun version) | Apache 2.0 (segun version) | Hugging Face |
 | Alternativas MoE multimodales equivalentes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone de datos verificados de este checkpoint (benchmarks, contexto, lic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/minjaechoi/qwen36-twla-asymmetric-dp-init4-target2-v15
+- Hugging Face: https://huggingface.co/minjaechoi/qwen36-twla-asymmetric-dp-init4-target2-v15
 - Dataset de entrenamiento: https://huggingface.co/datasets/minjaechoi/bipea-expert-nogpqa-v3
 - Manifiesto de evaluacion: https://huggingface.co/datasets/minjaechoi/twla-gpqa30-eval-manifest
 - Paper, blog o repositorio adicional: no disponible

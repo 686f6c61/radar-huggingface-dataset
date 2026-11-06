@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eymenses/study-generation` es un prototipo experimental de arquitectura Flamingo orientado a tareas de generación, desarrollado por el usuario eymenses y publicado en HuggingFace. Se trata de una implementación personalizada y de investigación que documenta una configuración denominada "huge" con atención dispersa, fusión Tucker, activación Mish y normalización por capas. El repositorio incluye un checkpoint de inicialización en formato safetensors con 33.088 parámetros, lo que lo convierte en un modelo extremadamente pequeño, pensado exclusivamente para pruebas de humo y verificación del flujo de entrenamiento, no para inferencia en producción.
+`eymenses/study-generation` es un prototipo experimental de arquitectura Flamingo orientado a tareas de generación, desarrollado por el usuario eymenses y publicado en Hugging Face. Se trata de una implementación personalizada y de investigación que documenta una configuración denominada "huge" con atención dispersa, fusión Tucker, activación Mish y normalización por capas. El repositorio incluye un checkpoint de inicialización en formato safetensors con 33.088 parámetros, lo que lo convierte en un modelo extremadamente pequeño, pensado exclusivamente para pruebas de humo y verificación del flujo de entrenamiento, no para inferencia en producción.
 
 La relevancia de este repositorio es principalmente metodológica: sirve como punto de partida para investigar la arquitectura Flamingo en configuraciones de generación sin pretender ofrecer un modelo entrenado. El autor es explícito al señalar que el checkpoint no ha sido entrenado ni auditado, y que no se reivindica ninguna puntuación de benchmarks. Cualquier uso práctico requeriría entrenar el modelo desde cero con un conjunto de datos adecuado y documentar los resultados por separado.
 
@@ -23,7 +23,7 @@ La relevancia de este repositorio es principalmente metodológica: sirve como pu
 
 La arquitectura es una implementación personalizada de Flamingo, un diseño originalmente propuesto por DeepMind para tareas de visión-lenguaje. En esta variante, la configuración registrada en `config.json` especifica atención dispersa (sparse attention), fusión mediante descomposición Tucker (tucker fusion), activación Mish y normalización LayerNorm. El autor indica que la escala declarada es "huge", aunque con 33.088 parámetros reales se trata de una denominación interna de configuración, no de un modelo de gran escala.
 
-El recetario de entrenamiento por defecto, documentado en `training_args.json`, utiliza el optimizador AdamW con un programa de calentamiento lineal (linear warmup). No se proporciona información sobre el conjunto de datos de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas como RLHF o DPO. El checkpoint incluido es únicamente una inicialización válida para pruebas de humo, no un modelo entrenado. El código requiere un adaptador explícito para cargarse mediante APIs genéricas de HuggingFace, ya que es una implementación a medida.
+El recetario de entrenamiento por defecto, documentado en `training_args.json`, utiliza el optimizador AdamW con un programa de calentamiento lineal (linear warmup). No se proporciona información sobre el conjunto de datos de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas como RLHF o DPO. El checkpoint incluido es únicamente una inicialización válida para pruebas de humo, no un modelo entrenado. El código requiere un adaptador explícito para cargarse mediante APIs genéricas de Hugging Face, ya que es una implementación a medida.
 
 ## Capacidades
 
@@ -37,7 +37,7 @@ El recetario de entrenamiento por defecto, documentado en `training_args.json`, 
 
 - Investigación académica sobre arquitecturas Flamingo: el repositorio sirve como base para estudiar la integración de atención dispersa y fusión Tucker en modelos de generación, permitiendo reproducir experimentos con configuraciones modificables.
 - Pruebas de humo en pipelines de entrenamiento: el checkpoint de inicialización permite verificar que el flujo de entrenamiento (forward, backward, optimización) funciona correctamente antes de lanzar entrenamientos costosos.
-- Desarrollo de adaptadores para HuggingFace: al ser una implementación personalizada, es un caso práctico para aprender a escribir adaptadores que integren modelos custom en el ecosistema `transformers`.
+- Desarrollo de adaptadores para Hugging Face: al ser una implementación personalizada, es un caso práctico para aprender a escribir adaptadores que integren modelos custom en el ecosistema `transformers`.
 - Experimentación con recetarios de entrenamiento: la configuración AdamW con warmup lineal documentada sirve como punto de partida para comparar diferentes estrategias de optimización en modelos pequeños.
 - Estudio de escalado en modelos mínimos: con solo 33.088 parámetros, permite analizar el comportamiento de la arquitectura Flamingo en el límite de escala mínima, algo poco documentado en la literatura.
 - Formación en evaluación rigurosa de modelos: el propio autor propone un protocolo de evaluación (conjunto de validación específico, tres semillas, baseline de capacidad equivalente) que puede servir como ejercicio formativo.
@@ -63,13 +63,13 @@ No se dispone de modelos comparables en la misma categoría. El modelo Flamingo 
 - El checkpoint incluido no ha sido entrenado: es una inicialización válida para pruebas de humo, no un modelo con capacidades reales de generación.
 - No se ha auditado la robustez, la equidad ni la transferencia de dominio: el autor lo advierte explícitamente en la model card.
 - No se reivindica ningún resultado de benchmarks: cualquier métrica publicada en el futuro debe documentarse por separado, con el protocolo de evaluación completo.
-- Implementación personalizada: requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace; no es compatible con pipelines estándar.
+- Implementación personalizada: requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face; no es compatible con pipelines estándar.
 - Riesgo de alucinación: no aplicable en el sentido habitual, ya que el modelo no genera contenido coherente sin entrenamiento previo.
 - Licencia BSD-3-Clause: permite uso comercial y modificación, pero el autor recomienda revisar los términos de las fuentes de datos externas si se utilizan con este repositorio.
 - Sin soporte de comunidad: el repositorio tiene cero descargas y cero likes, lo que indica que no hay usuarios que hayan validado su funcionamiento.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eymenses/study-generation
+- Repositorio en Hugging Face: https://huggingface.co/eymenses/study-generation
 - Documentación de referencia sobre Flamingo (modelo original de DeepMind): no se proporciona enlace directo en el repositorio.
 - Resultados de búsqueda web sobre generación de imágenes y modelos generativos: no aportan información específica sobre este modelo.

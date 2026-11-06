@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zehen8716/asmi-lora es un adaptador LoRA de tipo DreamBooth para generación de imágenes a partir de texto, entrenado sobre el modelo de difusión Krea 2 en su variante RAW (krea/Krea-2-Raw). Lo publica el usuario zehen8716 en HuggingFace bajo licencia Apache 2.0 y la librería diffusers. No se trata de un modelo completo, sino de pesos de bajo rango que se cargan sobre los checkpoints de Krea 2 para inducir un concepto concreto, activado mediante la palabra clave `asmi woman`.
+zehen8716/asmi-lora es un adaptador LoRA de tipo DreamBooth para generación de imágenes a partir de texto, entrenado sobre el modelo de difusión Krea 2 en su variante RAW (krea/Krea-2-Raw). Lo publica el usuario zehen8716 en Hugging Face bajo licencia Apache 2.0 y la librería diffusers. No se trata de un modelo completo, sino de pesos de bajo rango que se cargan sobre los checkpoints de Krea 2 para inducir un concepto concreto, activado mediante la palabra clave `asmi woman`.
 
 El interés práctico del adaptador reside en el flujo de trabajo que documenta su autor: se entrena sobre el checkpoint RAW, no destilado, y se ejecuta sobre el checkpoint Turbo, destilado para inferencia en 8 pasos y sin classifier-free guidance (guidance_scale=0.0). Esta separación entre entrenamiento e inferencia es una particularidad del ecosistema Krea 2 y permite iterar el LoRA sin pagar el coste de muestreo del modelo base completo.
 
@@ -73,7 +73,7 @@ No se dispone de datos comparativos publicados para este adaptador. La comparaci
 
 | Alternativa | Tipo | Modelo base | Contexto / pasos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zehen8716/asmi-lora | LoRA DreamBooth texto-a-imagen | Krea-2-Raw / Krea-2-Turbo | inferencia en 8 pasos (receta Turbo) | apache-2.0 | publico en HuggingFace, 0 descargas |
+| zehen8716/asmi-lora | LoRA DreamBooth texto-a-imagen | Krea-2-Raw / Krea-2-Turbo | inferencia en 8 pasos (receta Turbo) | apache-2.0 | publico en Hugging Face, 0 descargas |
 | LoRA DreamBooth sobre SDXL | LoRA de personalizacion | Stable Diffusion XL | no disponible en esta busqueda | depende del autor | ecosistema ampliamente extendido |
 | LoRA DreamBooth sobre FLUX.1 | LoRA de personalizacion | FLUX.1 dev/schnell | no disponible en esta busqueda | depende del autor y del modelo base | ecosistema ampliamente extendido |
 
@@ -93,7 +93,7 @@ No se han encontrado en la busqueda web resultados relevantes sobre Krea 2, sus 
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/zehen8716/asmi-lora
+- Ficha del modelo en Hugging Face: https://huggingface.co/zehen8716/asmi-lora
 - Archivos del repositorio: https://huggingface.co/zehen8716/asmi-lora/tree/main
 - Modelo base para inferencia: https://huggingface.co/krea/Krea-2-Turbo
 - Modelo base para entrenamiento: https://huggingface.co/krea/Krea-2-Raw

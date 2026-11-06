@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ololade117/scaling-normal-3.7M-27000steps` es un modelo de lenguaje de tamano muy reducido (3.686.400 parametros, es decir, unos 3,7 millones) publicado en HuggingFace por el usuario Ololade117 bajo licencia MIT. La model card no aporta informacion tecnica: se limita a indicar que el modelo se subio mediante la integracion `PyTorchModelHubMixin` y deja como "[More Information Needed]" los apartados de codigo, paper y documentacion. Se trata, por tanto, de una publicacion sin documentacion asociada y sin ninguna descarga ni interaccion registrada en el momento de redactar esta ficha.
+`Ololade117/scaling-normal-3.7M-27000steps` es un modelo de lenguaje de tamano muy reducido (3.686.400 parametros, es decir, unos 3,7 millones) publicado en Hugging Face por el usuario Ololade117 bajo licencia MIT. La model card no aporta informacion tecnica: se limita a indicar que el modelo se subio mediante la integracion `PyTorchModelHubMixin` y deja como "[More Information Needed]" los apartados de codigo, paper y documentacion. Se trata, por tanto, de una publicacion sin documentacion asociada y sin ninguna descarga ni interaccion registrada en el momento de redactar esta ficha.
 
 El nombre del repositorio sugiere que forma parte de un experimento de leyes de escalado ("scaling"), probablemente un entrenamiento de tipo nanoGPT o similar con una configuracion normalizada, ejecutado durante 27.000 pasos. No obstante, esta interpretacion es una inferencia a partir del identificador y no esta confirmada en ninguna fuente disponible. Con 3,7 millones de parametros, el modelo es dos ordenes de magnitud mas pequeno que GPT-2 small (124 M) y se situa en el rango de los modelos de juguete usados en estudios de scaling laws y en el dataset TinyStories.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| scaling-normal-3.7M-27000steps | 3,7 M | no disponible | MIT | HuggingFace (0 descargas) |
-| TinyStories-1M (roneneldan) | ~1 M | no disponible | no disponible | HuggingFace |
-| TinyStories-33M (roneneldan) | ~33 M | no disponible | no disponible | HuggingFace |
-| Pythia-14M (EleutherAI) | 14 M | 2.048 tokens | Apache 2.0 | HuggingFace, con paper y suite completa |
+| scaling-normal-3.7M-27000steps | 3,7 M | no disponible | MIT | Hugging Face (0 descargas) |
+| TinyStories-1M (roneneldan) | ~1 M | no disponible | no disponible | Hugging Face |
+| TinyStories-33M (roneneldan) | ~33 M | no disponible | no disponible | Hugging Face |
+| Pythia-14M (EleutherAI) | 14 M | 2.048 tokens | Apache 2.0 | Hugging Face, con paper y suite completa |
 | GPT-2 small (OpenAI) | 124 M | 1.024 tokens | MIT modificada | Ampliamente disponible |
 
 Nota: los datos de los modelos comparativos proceden de conocimiento publico general y no de la busqueda web asociada a esta ficha; conviene verificarlos en sus repositorios antes de citarlos. La comparacion de rendimiento no es posible porque no existen resultados de benchmarks para el modelo objeto de la ficha. Frente a TinyStories o Pythia, la diferencia principal es de trazabilidad: ambos publican arquitectura, datos y evaluaciones, mientras que este checkpoint carece por completo de documentacion.
@@ -87,7 +87,7 @@ Nota: los datos de los modelos comparativos proceden de conocimiento publico gen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ololade117/scaling-normal-3.7M-27000steps
+- Repositorio en Hugging Face: https://huggingface.co/Ololade117/scaling-normal-3.7M-27000steps
 - Documentacion de `PyTorchModelHubMixin` (mencionada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible (la model card indica "[More Information Needed]")
 - Codigo: no disponible (la model card indica "[More Information Needed]")

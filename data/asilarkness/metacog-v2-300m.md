@@ -79,5 +79,5 @@ No se dispone de comparaciones publicadas con otros modelos de tamaño similar (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Asilarkness/MetaCog-V2-300M
+- Modelo en Hugging Face: https://huggingface.co/Asilarkness/MetaCog-V2-300M
 - Los resultados de búsqueda web sobre MetaCOG (arXiv:2110.03105 y repositorios asociados) corresponden a un proyecto distinto, centrado en visión por computador y modelos probabilísticos, y no están directamente relacionados con este modelo de lenguaje. No se han encontrado otros enlaces oficiales del autor.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AlinaGonch/granite41-3b-squad-ratio-0.60-seed-42` es un checkpoint publicado en HuggingFace por el usuario AlinaGonch. El identificador sugiere que se trata de un ajuste fino del modelo IBM Granite 4.1 de 3.000 millones de parametros sobre el dataset SQuAD (question answering extractivo), con una proporcion de mezcla de datos de 0,60 y semilla 42. Conviene subrayar que esta lectura se deduce unicamente del nombre del repositorio y no esta confirmada en ningun campo de la model card.
+`AlinaGonch/granite41-3b-squad-ratio-0.60-seed-42` es un checkpoint publicado en Hugging Face por el usuario AlinaGonch. El identificador sugiere que se trata de un ajuste fino del modelo IBM Granite 4.1 de 3.000 millones de parametros sobre el dataset SQuAD (question answering extractivo), con una proporcion de mezcla de datos de 0,60 y semilla 42. Conviene subrayar que esta lectura se deduce unicamente del nombre del repositorio y no esta confirmada en ningun campo de la model card.
 
 La model card esta generada de forma automatica con la plantilla estandar de `transformers` y no contiene informacion sustantiva: descripcion, datos de entrenamiento, licencia, idiomas, hiperparametros y resultados de evaluacion aparecen como "[More Information Needed]". El repositorio ocupa 0,1 GB, registra 0 descargas y 0 "likes", y fue creado el 19 de septiembre de 2026.
 
@@ -64,7 +64,7 @@ Las cifras siguientes son estimaciones genericas para un modelo denso de aproxim
 - VRAM en int4: aproximadamente 2-2,5 GB.
 - GPU de centro de datos: A100 40/80 GB, H100 o L40S, con amplio margen para lotes grandes.
 - GPU de consumo: cabe en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 y en equipos Apple Silicon con 16 GB o mas de memoria unificada; en GPUs de 8 GB requeriria cuantizacion a int4 o int8.
-- Opciones de despliegue: `transformers` (unico formato publicado), `vLLM` o TGI si los pesos estan completos y en safetensors; llama.cpp y Ollama solo si se generan previamente ficheros GGUF, que no estan en el repositorio. La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: `transformers` (unico formato publicado), `vLLM` o TGI si los pesos estan completos y en safetensors; llama.cpp y Ollama solo si se generan previamente ficheros GGUF, que no estan en el repositorio. La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles para este modelo. Como referencia orientativa de la clase de tamano, en una A100/H100 con vLLM cabria esperar decenas de miles de tokens por segundo en fase de prefill y del orden de 100-200 tokens por segundo por peticion en decodificacion, con variaciones grandes segun lote y longitud de contexto.
 
 Advertencia: el repositorio ocupa 0,1 GB, un tamano incompatible con los pesos completos de un modelo de 3B en bf16 (unos 6 GB). Es probable que la subida este incompleta, que contenga unicamente shards parciales, un adaptador o ficheros de configuracion. Debe comprobarse el listado de archivos antes de planificar cualquier despliegue.
@@ -99,7 +99,7 @@ La comparacion solo seria significativa frente al modelo base del que deriva el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.60-seed-42
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.60-seed-42
 - Paper del calculador de impacto de carbono citado en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Herramienta de calculo de impacto: https://mlco2.github.io/impact#compute
 - Paper, blog, repositorio o demo oficiales del modelo: no disponibles

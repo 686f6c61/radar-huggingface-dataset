@@ -81,9 +81,9 @@ No existen comparaciones con modelos similares (Qwen3.5-35B-A3B original, u otro
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | PseudoBrain-Nex-35B-A3B-W4A16 | ~35B total / ~3B activos (dato safetensors inconsistente: 6,83B) | 1.048.576 | Híbrido GDN + SWA + MoE, abliterated | Apache 2.0 | safetensors W4A16, solo vLLM con plugin propio |
-| Qwen3.5-35B-A3B (base original) | ~35B total / ~3B activos | no disponible | MoE Transformer híbrido (Qwen3.5) | no disponible | HuggingFace, amplio soporte de engines |
-| Nex-N2.5-mini (nex-agi) | no disponible | no disponible (tags sugieren 1M y GDN) | MoE con Gated DeltaNet | no disponible | HuggingFace |
-| Huihui-Qwen3.5-35B-A3B-abliterated | ~35B / ~3B activos | no disponible | MoE Transformer, abliterated | no disponible | HuggingFace |
+| Qwen3.5-35B-A3B (base original) | ~35B total / ~3B activos | no disponible | MoE Transformer híbrido (Qwen3.5) | no disponible | Hugging Face, amplio soporte de engines |
+| Nex-N2.5-mini (nex-agi) | no disponible | no disponible (tags sugieren 1M y GDN) | MoE con Gated DeltaNet | no disponible | Hugging Face |
+| Huihui-Qwen3.5-35B-A3B-abliterated | ~35B / ~3B activos | no disponible | MoE Transformer, abliterated | no disponible | Hugging Face |
 
 Nota: la comparación es aproximada, ya que el modelo de este repositorio es una derivada modificada de los anteriores y no se publican benchmarks comparativos directos.
 
@@ -102,7 +102,7 @@ Nota: la comparación es aproximada, ya que el modelo de este repositorio es una
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-Nex-35B-A3B-W4A16
+- Modelo en Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-Nex-35B-A3B-W4A16
 - Repositorio GitHub y plugin pb27_vllm: https://github.com/defnotean/pseudobrain
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf
 - Paper de arquitectura (Markdown): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.md

@@ -81,8 +81,8 @@ No hay datos de benchmarks publicados para este checkpoint, por lo que la compar
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| violetxi/qwen35-9b-equational-theory-sair-r3-mix1m | 9,65 B | no disponible | Sin resultados publicados (evaluacion SAIR en curso) | apache-2.0 | Pesos BF16 en HuggingFace; 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen3.5-9B (modelo base) | 9,65 B | no disponible | No reportado en la informacion proporcionada para este fine-tune | apache-2.0 (heredada por el ajuste) | Ampliamente disponible en HuggingFace |
+| violetxi/qwen35-9b-equational-theory-sair-r3-mix1m | 9,65 B | no disponible | Sin resultados publicados (evaluacion SAIR en curso) | apache-2.0 | Pesos BF16 en Hugging Face; 0 descargas y 0 likes en el momento de la consulta |
+| Qwen/Qwen3.5-9B (modelo base) | 9,65 B | no disponible | No reportado en la informacion proporcionada para este fine-tune | apache-2.0 (heredada por el ajuste) | Ampliamente disponible en Hugging Face |
 | Otros fine-tunes de razonamiento matematico de escala similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No hay datos de benchmarks publicados para este checkpoint, por lo que la compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/qwen35-9b-equational-theory-sair-r3-mix1m
+- Modelo en Hugging Face: https://huggingface.co/violetxi/qwen35-9b-equational-theory-sair-r3-mix1m
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Registro de entrenamiento en WandB: https://wandb.ai/stanford_autonomous_agent/equational-theory-curated-r3-20260923/runs/eqr31m20260923
 - Paper, blog o repositorio adicionales: no disponible en la informacion proporcionada

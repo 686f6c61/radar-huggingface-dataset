@@ -83,7 +83,7 @@ La comparativa con modelos de terceros de la misma categoria no esta disponible 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/qwen3.5-4b-prune_width_ffn25
+- Modelo en Hugging Face: https://huggingface.co/mrysh/qwen3.5-4b-prune_width_ffn25
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - NVIDIA ModelOpt (herramienta de poda): no disponible enlace en la informacion proporcionada
 - Paper o blog del benchmark de poda: no disponible

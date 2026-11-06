@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mtp-Qwen3.5-9B-GGUF | Cabeza MTP cuantizada | 2.277.532.160 (artefacto) | no disponible | Apache-2.0 | HuggingFace, 23 descargas |
-| Qwen/Qwen3.5-9B | Modelo completo con MTP incluida | ~9B | no disponible | Apache-2.0 | HuggingFace (oficial) |
-| mitra-qwen35-translate-GGUF | Derivado de traduccion sin MTP | ~9B (base) | no disponible | Apache-2.0 | HuggingFace (mismo autor) |
+| mtp-Qwen3.5-9B-GGUF | Cabeza MTP cuantizada | 2.277.532.160 (artefacto) | no disponible | Apache-2.0 | Hugging Face, 23 descargas |
+| Qwen/Qwen3.5-9B | Modelo completo con MTP incluida | ~9B | no disponible | Apache-2.0 | Hugging Face (oficial) |
+| mitra-qwen35-translate-GGUF | Derivado de traduccion sin MTP | ~9B (base) | no disponible | Apache-2.0 | Hugging Face (mismo autor) |
 
 La comparativa relevante no es frente a otros modelos de la misma categoria, sino frente al checkpoint oficial: Qwen3.5-9B ya incluye la cabeza MTP, por lo que este repositorio solo aporta valor cuando se usa con derivados que la han perdido. No se dispone de datos de rendimiento comparativo entre estas variantes.
 
@@ -79,7 +79,7 @@ La comparativa relevante no es frente a otros modelos de la misma categoria, sin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/christian-steinert/mtp-Qwen3.5-9B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/christian-steinert/mtp-Qwen3.5-9B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
 - Modelo Mitra Qwen3.5 Translate (GGUF): https://huggingface.co/christian-steinert/mitra-qwen35-translate-GGUF

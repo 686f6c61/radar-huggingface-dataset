@@ -91,7 +91,7 @@ La diferencia practica mas relevante frente a Qwen3-8B es que este checkpoint no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrandonHowe/Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-5
+- Modelo en Hugging Face: https://huggingface.co/BrandonHowe/Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/CompassioninMachineLearning/compassion_12185_cleaned
 - Manifiesto de ejecucion: `run_manifest.json` dentro del repositorio del modelo (revision base, hashes de seleccion de documentos, parametros de entrenamiento y validacion de la exportacion)

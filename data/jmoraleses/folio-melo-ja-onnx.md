@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jmoraleses/folio-melo-ja-onnx
+- Repositorio Hugging Face: https://huggingface.co/jmoraleses/folio-melo-ja-onnx
 - MeloTTS (MyShell.ai): https://github.com/myshell-ai/MeloTTS
 - OpenVoice (MyShell.ai): no se proporciona enlace directo en la informacion disponible, pero se menciona como sistema del que deriva el hablante base.
 - Proyecto Folio-iOS: no se proporciona enlace directo; se referencia el commit `90d5f2a` de jmoraleses/Folio-iOS.

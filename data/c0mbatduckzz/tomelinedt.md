@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TOMElinedT es un proyecto de agente de borde determinista desarrollado por Tom Klootwijk (usuario de HuggingFace c0mbatduckzz), gobernado por la especificación XD-TAU AURUMTOMATON v1.5.1. No es un modelo de lenguaje en el sentido convencional: la propia model card declara explícitamente que "no hay razonamiento LLM ni runtime de generación de texto". Se trata de un conjunto de estructuras computacionales y operadores simbólicos, con semántica exacta de enteros, racionales, simbólica y de bits, empaquetado junto a una aplicación Android de desarrollo.
+TOMElinedT es un proyecto de agente de borde determinista desarrollado por Tom Klootwijk (usuario de Hugging Face c0mbatduckzz), gobernado por la especificación XD-TAU AURUMTOMATON v1.5.1. No es un modelo de lenguaje en el sentido convencional: la propia model card declara explícitamente que "no hay razonamiento LLM ni runtime de generación de texto". Se trata de un conjunto de estructuras computacionales y operadores simbólicos, con semántica exacta de enteros, racionales, simbólica y de bits, empaquetado junto a una aplicación Android de desarrollo.
 
 El objetivo arquitectónico declarado es un agente determinista, polimórfico y automórfico basado en LUT (tablas de consulta), donde la flexibilidad proviene de componer estructuras bajo sus invariantes declarados y mapas inversos. El repositorio incluye un APK experimental de Android (versión 0.17.0), el paquete de código fuente correspondiente y un checkpoint de desarrollo v0.18 con componentes verificados e integración inacabada.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No disponible. TOMElinedT no es un modelo de lenguaje y no existen alternativas directamente comparables en la misma categoría dentro del ecosistema habitual de HuggingFace; los proyectos de computación simbólica determinista en el borde no se distribuyen con las mismas métricas (parámetros, contexto, benchmarks) que los LLM.
+No disponible. TOMElinedT no es un modelo de lenguaje y no existen alternativas directamente comparables en la misma categoría dentro del ecosistema habitual de Hugging Face; los proyectos de computación simbólica determinista en el borde no se distribuyen con las mismas métricas (parámetros, contexto, benchmarks) que los LLM.
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No disponible. TOMElinedT no es un modelo de lenguaje y no existen alternativas 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/c0mbatduckzz/TOMElinedT
+- Repositorio Hugging Face: https://huggingface.co/c0mbatduckzz/TOMElinedT
 - Especificación XD-TAU AURUMTOMATON v1.5.1: https://huggingface.co/c0mbatduckzz/XD-TAU_AURUMTOMATON_v1.5.1
 - APK Android 0.17.0: TOMElinedT_arm64_debug.apk (referenciado en la model card)
 - Paquete de código fuente 0.17: TOMElinedT_Source.zip (referenciado en la model card)

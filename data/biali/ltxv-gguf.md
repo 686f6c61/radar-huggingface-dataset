@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Formato | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LTX-Video (base) | 2B | safetensors | FP16 | Apache 2.0 | HuggingFace |
-| AnimateDiff | 1.7B | safetensors | FP16 | Apache 2.0 | HuggingFace |
-| ModelScope T2V | 1.7B | safetensors | FP16 | Apache 2.0 | HuggingFace |
+| LTX-Video (base) | 2B | safetensors | FP16 | Apache 2.0 | Hugging Face |
+| AnimateDiff | 1.7B | safetensors | FP16 | Apache 2.0 | Hugging Face |
+| ModelScope T2V | 1.7B | safetensors | FP16 | Apache 2.0 | Hugging Face |
 | LTX-Video (GGUF) | 2B (cuantizado) | GGUF | IQ4, Q6, Q8 | Otro | Repo actual |
 
 La principal ventaja de esta versión GGUF es su menor huella de memoria y compatibilidad con herramientas de cuantización. Sin embargo, no se dispone de comparaciones de rendimiento objetivo con los otros modelos.
@@ -77,7 +77,7 @@ La principal ventaja de esta versión GGUF es su menor huella de memoria y compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: [biali/ltxv-gguf](https://huggingface.co/biali/ltxv-gguf)
+- Repositorio Hugging Face: [biali/ltxv-gguf](https://huggingface.co/biali/ltxv-gguf)
 - Repositorio original de calcuis: [calcuis/ltxv-gguf](https://huggingface.co/calcuis/ltxv-gguf)
 - Documentación de gguf-node: [https://github.com/calcuis/gguf](https://github.com/calcuis/gguf)
 - Modelo base Lightricks/LTX-Video: [https://huggingface.co/Lightricks/LTX-Video](https://huggingface.co/Lightricks/LTX-Video)

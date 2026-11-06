@@ -115,7 +115,7 @@ La comparación se limita a variantes del mismo modelo base porque la informaci�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/neuralll/GLM-5.3-Flash-GSQ-RCO-3.0bit-Q4Kattn-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/neuralll/GLM-5.3-Flash-GSQ-RCO-3.0bit-Q4Kattn-GGUF
 - Modelo base de la cuantización: https://huggingface.co/pfeifferj/GLM-5.3-Flash-GSQ-RCO-GGUF
 - Modelo original: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Fork de llama.cpp con soporte de GLM-5.3-Flash y caché de expertos: https://github.com/neurall/llama.cpp

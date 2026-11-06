@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| studiocatalyst/atlas-models (este repo) | 271 M agregados | no disponible | Embeddings multimodales, ASR y deteccion de cortes | Apache 2.0 + MIT | HuggingFace (GGUF, ONNX) |
-| google/embeddinggemma-2 | no disponible | no disponible | Embeddings multimodales | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-ASR-1.7B | 1,7 B | no disponible | ASR | Apache 2.0 | HuggingFace |
+| studiocatalyst/atlas-models (este repo) | 271 M agregados | no disponible | Embeddings multimodales, ASR y deteccion de cortes | Apache 2.0 + MIT | Hugging Face (GGUF, ONNX) |
+| google/embeddinggemma-2 | no disponible | no disponible | Embeddings multimodales | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-ASR-1.7B | 1,7 B | no disponible | ASR | Apache 2.0 | Hugging Face |
 | UVA-Computer-Vision-Lab/OmniShotCut v1.5 | no disponible | no disponible | Deteccion de cortes de plano | MIT | GitHub |
 
 La comparativa relevante es con los modelos originales, dado que este repositorio es una redistribución cuantizada de los mismos; las diferencias se limitan al formato (GGUF/ONNX), la cuantización y la verificación por hash.
@@ -82,7 +82,7 @@ La comparativa relevante es con los modelos originales, dado que este repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/studiocatalyst/atlas-models
+- Repositorio en Hugging Face: https://huggingface.co/studiocatalyst/atlas-models
 - Licencia Apache 2.0: https://huggingface.co/studiocatalyst/atlas-models/blob/main/LICENSE-Apache-2.0.txt
 - EmbeddingGemma 2 (Google DeepMind): https://huggingface.co/google/embeddinggemma-2
 - Cuantización GGUF de EmbeddingGemma 2 por Unsloth: https://huggingface.co/unsloth/embeddinggemma-2-GGUF

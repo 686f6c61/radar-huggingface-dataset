@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Naomimatsumoto/efficientformer-experiment` es un repositorio experimental de HuggingFace que contiene una implementación compacta y personalizada de la arquitectura EfficientFormer orientada a tareas de clasificación de imágenes. Lo publica el usuario Naomimatsumoto bajo licencia MIT. No se trata de un modelo preentrenado listo para producción, sino de un punto de partida para pruebas de humo, revisión de código y experimentos controlados de pequeño alcance.
+`Naomimatsumoto/efficientformer-experiment` es un repositorio experimental de Hugging Face que contiene una implementación compacta y personalizada de la arquitectura EfficientFormer orientada a tareas de clasificación de imágenes. Lo publica el usuario Naomimatsumoto bajo licencia MIT. No se trata de un modelo preentrenado listo para producción, sino de un punto de partida para pruebas de humo, revisión de código y experimentos controlados de pequeño alcance.
 
 El repositorio incluye el código de definición del modelo y un punto de entrada de entrenamiento (`finetune.py`), junto con los ficheros de configuración (`config.json`, `training_args.json`) y un checkpoint de inicialización en formato safetensors. Según la propia model card, ese checkpoint no ha sido entrenado ni evaluado con benchmarks, por lo que sus pesos representan una inicialización válida pero no un modelo con capacidades aprendidas verificadas.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Naomimatsumoto/efficientformer-experiment | 24.832 | no aplica (visión) | MIT | HuggingFace | Implementación custom, checkpoint sin entrenar |
+| Naomimatsumoto/efficientformer-experiment | 24.832 | no aplica (visión) | MIT | Hugging Face | Implementación custom, checkpoint sin entrenar |
 | EfficientFormer oficial (Snap Research) | no disponible en la información | no aplica (visión) | no disponible en la información | Repositorio oficial | Pesos preentrenados y benchmarks publicados |
-| Otros vision transformers ligeros (p. ej. MobileViT, DeiT-Tiny) | no disponible en la información | no aplica (visión) | no disponible en la información | HuggingFace / repos oficiales | Alternativas de la misma categoría, con checkpoints entrenados |
+| Otros vision transformers ligeros (p. ej. MobileViT, DeiT-Tiny) | no disponible en la información | no aplica (visión) | no disponible en la información | Hugging Face / repos oficiales | Alternativas de la misma categoría, con checkpoints entrenados |
 
 No se dispone de datos suficientes en la información proporcionada para establecer una comparativa cuantitativa fiable con alternativas concretas.
 
@@ -90,5 +90,5 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Naomimatsumoto/efficientformer-experiment
+- Hugging Face: https://huggingface.co/Naomimatsumoto/efficientformer-experiment
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

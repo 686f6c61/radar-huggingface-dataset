@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Meenamukherjee90/contrastive es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Hybrid" orientada a tareas de aprendizaje contrastivo. El autor lo describe explícitamente como una configuración "tiny" destinada a revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción.
+Meenamukherjee90/contrastive es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Hybrid" orientada a tareas de aprendizaje contrastivo. El autor lo describe explícitamente como una configuración "tiny" destinada a revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción.
 
 El repositorio incluye un script principal (`main.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en formato safetensors. El recuento de parámetros reportado en el checkpoint es de 33.088, lo que confirma la escala minúscula del artefacto. No se declara ningún resultado de benchmark ni un proceso de entrenamiento completado.
 
@@ -86,5 +86,5 @@ No disponible. El repositorio no declara categoría de modelo preentrenado, tare
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Meenamukherjee90/contrastive
+- Repositorio Hugging Face: https://huggingface.co/Meenamukherjee90/contrastive
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información disponible.

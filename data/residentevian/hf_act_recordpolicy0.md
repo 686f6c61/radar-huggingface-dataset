@@ -76,9 +76,9 @@ No se dispone de datos de rendimiento de este checkpoint ni de los modelos compa
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ResidentEvian/hf_act_recordpolicy0 (ACT) | 51,7 M | No aplica | No disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| thanhnguyen23/hf_act_recordpolicy0 (ACT) | No disponible | No aplica | No disponible | No disponible | HuggingFace |
-| iFaz/hf_act_recordpolicy0 (ACT) | No disponible | No aplica | No disponible | No disponible | HuggingFace |
+| ResidentEvian/hf_act_recordpolicy0 (ACT) | 51,7 M | No aplica | No disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| thanhnguyen23/hf_act_recordpolicy0 (ACT) | No disponible | No aplica | No disponible | No disponible | Hugging Face |
+| iFaz/hf_act_recordpolicy0 (ACT) | No disponible | No aplica | No disponible | No disponible | Hugging Face |
 | Diffusion Policy | No disponible | No aplica | No disponible | No disponible | Referencia metodologica |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento de este checkpoint ni de los modelos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ResidentEvian/hf_act_recordpolicy0
+- Modelo en Hugging Face: https://huggingface.co/ResidentEvian/hf_act_recordpolicy0
 - Dataset de entrenamiento: https://huggingface.co/datasets/ResidentEvian/bottle-cap-pick-up
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Paper en arXiv: https://arxiv.org/abs/2304.13705

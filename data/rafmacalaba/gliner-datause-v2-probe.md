@@ -81,16 +81,16 @@ Estas métricas reflejan el rendimiento frente a un objetivo de destilación, no
 - VRAM estimada para inferencia: no disponible. Depende del modelo base `fastino/gliner2-base-v1` y del tamaño del lote.
 - GPU recomendadas: no disponible. Cualquier GPU capaz de ejecutar GLiNER2 base (por ejemplo, una RTX 3060 o superior) puede servir, pero no se han publicado requisitos oficiales.
 - ¿Cabe en GPU de consumo? Probablemente sí, si el modelo base GLiNER2 cabe en 8 GB de VRAM, pero no hay confirmación explícita.
-- Opciones de despliegue: HuggingFace pipeline de `token-classification`, PyTorch directo, o integración con la librería `gliner`. No se menciona soporte para vLLM, llama.cpp ni Ollama.
+- Opciones de despliegue: Hugging Face pipeline de `token-classification`, PyTorch directo, o integración con la librería `gliner`. No se menciona soporte para vLLM, llama.cpp ni Ollama.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|---|
-| `rafmacalaba/gliner-datause-v2-probe` | GLiNER + MLP head | No disponible | No disponible | Apache-2.0 | Si (HuggingFace) | Si (AUROC, F1) |
-| `rafmacalaba/gliner-datause-probe` | GLiNER | No disponible | No disponible | Apache-2.0 | Si (HuggingFace) | No |
-| `rafmacalaba/gliner2-datause-v2` | GLiNER2 + LoRA | No disponible | No disponible | Apache-2.0 | Si (HuggingFace) | No |
+| `rafmacalaba/gliner-datause-v2-probe` | GLiNER + MLP head | No disponible | No disponible | Apache-2.0 | Si (Hugging Face) | Si (AUROC, F1) |
+| `rafmacalaba/gliner-datause-probe` | GLiNER | No disponible | No disponible | Apache-2.0 | Si (Hugging Face) | No |
+| `rafmacalaba/gliner2-datause-v2` | GLiNER2 + LoRA | No disponible | No disponible | Apache-2.0 | Si (Hugging Face) | No |
 
 El modelo `gliner2-datause-v2` es un extractor de menciones de datasets fine-tuned sobre GLiNER2, mientras que `gliner-datause-v2-probe` es una sonda de clasificación sobre características de span. No se dispone de métricas comparables para los otros dos modelos, por lo que no es posible establecer una comparación directa de rendimiento.
 

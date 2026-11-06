@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nantibot-captcha es un modelo de reconocimiento optico de caracteres (OCR) especializado en captchas de imagen de cinco digitos, desarrollado por confiacompany y publicado en HuggingFace bajo licencia MIT. No es un modelo de lenguaje: se trata de una red convolucional recurrente (CRNN) con una capa BiLSTM y decodificacion CTC, disenada exclusivamente para leer captchas en escala de grises con digitos ondulados y solapados. El checkpoint es muy pequeno, con 189.803 parametros entrenables y un fichero `captcha_model.pth` de aproximadamente 752 KB.
+nantibot-captcha es un modelo de reconocimiento optico de caracteres (OCR) especializado en captchas de imagen de cinco digitos, desarrollado por confiacompany y publicado en Hugging Face bajo licencia MIT. No es un modelo de lenguaje: se trata de una red convolucional recurrente (CRNN) con una capa BiLSTM y decodificacion CTC, disenada exclusivamente para leer captchas en escala de grises con digitos ondulados y solapados. El checkpoint es muy pequeno, con 189.803 parametros entrenables y un fichero `captcha_model.pth` de aproximadamente 752 KB.
 
 El problema que resuelve es acotado y concreto: convertir una imagen de captcha de 5 digitos en la cadena de texto correspondiente, tarea habitual en procesos de automatizacion, pruebas de integracion y pipelines de scraping donde hay que superar verificaciones visuales. Su relevancia es limitada frente a modelos generativos grandes, pero resulta util como componente ligero y autoalojado dentro de un flujo mayor, ya que puede ejecutarse en CPU sin dependencias pesadas.
 
@@ -21,7 +21,7 @@ La entrada es una imagen en escala de grises redimensionada a 32x128 y normaliza
 | Formato de pesos | PyTorch `state_dict` plano en `captcha_model.pth` (~752 KB); no se publican safetensors ni GGUF |
 | Entrada | Imagen en escala de grises, redimensionada a 32x128, normalizada a [-1, 1] (mean=0,5, std=0,5) |
 | Salida | Secuencia de 5 digitos, decodificacion CTC voraz (greedy) |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Libreria | pytorch |
 | Pipeline declarado | image-classification |
 | Descargas / likes | 0 descargas / 1 like |
@@ -96,5 +96,5 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/confiacompany/nantibot-captcha
+- Modelo en Hugging Face: https://huggingface.co/confiacompany/nantibot-captcha
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo. Los resultados devueltos por la busqueda corresponden a un servicio de generacion de video sin relacion con el modelo y se han descartado.

@@ -89,7 +89,7 @@ No hay datos de benchmarks que permitan comparar el rendimiento de este modelo c
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones i1: https://huggingface.co/mradermacher/JSBAI-Coder-4B-i1-GGUF
+- Repositorio Hugging Face de las cuantizaciones i1: https://huggingface.co/mradermacher/JSBAI-Coder-4B-i1-GGUF
 - Modelo base: https://huggingface.co/jsbaicenter/JSBAI-Coder-4B
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/JSBAI-Coder-4B-GGUF
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#JSBAI-Coder-4B-i1-GGUF

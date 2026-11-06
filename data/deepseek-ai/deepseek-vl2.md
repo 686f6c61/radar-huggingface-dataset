@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-VL2 es una serie de modelos de lenguaje y vision (vision-language) basados en arquitectura de mezcla de expertos (MoE), desarrollada por DeepSeek. La serie se compone de tres variantes: DeepSeek-VL2-Tiny, DeepSeek-VL2-Small y DeepSeek-VL2, con 1,0B, 2,8B y 4,5B de parametros activos respectivamente. El modelo esta construido sobre DeepSeekMoE-27B, y el repositorio principal publicado en HuggingFace contiene 27.480.134.248 parametros totales.
+DeepSeek-VL2 es una serie de modelos de lenguaje y vision (vision-language) basados en arquitectura de mezcla de expertos (MoE), desarrollada por DeepSeek. La serie se compone de tres variantes: DeepSeek-VL2-Tiny, DeepSeek-VL2-Small y DeepSeek-VL2, con 1,0B, 2,8B y 4,5B de parametros activos respectivamente. El modelo esta construido sobre DeepSeekMoE-27B, y el repositorio principal publicado en Hugging Face contiene 27.480.134.248 parametros totales.
 
 El modelo resuelve tareas de comprension multimodal avanzada: respuesta a preguntas visuales (VQA), reconocimiento optico de caracteres (OCR), comprension de documentos, tablas y graficos, y grounding visual. Segun la model card, alcanza un rendimiento competitivo o de estado del arte en comparacion con modelos densos y MoE de codigo abierto, con un numero de parametros activos igual o menor.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros activos | Parametros totales | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-VL2 (este repositorio) | 4,5B | 27,48B | no disponible | DeepSeek Model License (uso comercial) | HuggingFace |
-| DeepSeek-VL2-Small | 2,8B | no disponible | no disponible | DeepSeek Model License | HuggingFace |
-| DeepSeek-VL2-Tiny | 1,0B | no disponible | no disponible | DeepSeek Model License | HuggingFace |
+| DeepSeek-VL2 (este repositorio) | 4,5B | 27,48B | no disponible | DeepSeek Model License (uso comercial) | Hugging Face |
+| DeepSeek-VL2-Small | 2,8B | no disponible | no disponible | DeepSeek Model License | Hugging Face |
+| DeepSeek-VL2-Tiny | 1,0B | no disponible | no disponible | DeepSeek Model License | Hugging Face |
 
 La model card situa a la serie DeepSeek-VL2 como una mejora de su predecesor DeepSeek-VL, pero no aporta cifras comparativas concretas con modelos densos o MoE de terceros, por lo que no es posible completar una comparativa numerica con alternativas externas a partir de la informacion disponible.
 
@@ -90,7 +90,7 @@ La model card situa a la serie DeepSeek-VL2 como una mejora de su predecesor Dee
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/deepseek-ai/deepseek-vl2
+- Hugging Face (modelo): https://huggingface.co/deepseek-ai/deepseek-vl2
 - Paper (arXiv:2412.10302): https://arxiv.org/abs/2412.10302
 - Repositorio GitHub: https://github.com/deepseek-ai/DeepSeek-VL2
 - Licencia del modelo: https://github.com/deepseek-ai/DeepSeek-LLM/blob/HEAD/LICENSE-MODEL

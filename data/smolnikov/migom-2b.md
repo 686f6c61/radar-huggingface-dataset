@@ -86,11 +86,11 @@ Prueba sobre partes reservadas de las fuentes de entrenamiento (5.296 preguntas)
 
 | Modelo | Parametros | Enfoque | Track A (acc / skill) | Track B (acc / skill) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Migom 2B | ~1,88 B | Decisión tipada local (choice/score/noul) | 78,9 / 65,9 | 96,1 / 94,6 | Apache-2.0 | Pesos en HuggingFace |
+| Migom 2B | ~1,88 B | Decisión tipada local (choice/score/noul) | 78,9 / 65,9 | 96,1 / 94,6 | Apache-2.0 | Pesos en Hugging Face |
 | Jev (TypeSafe) | no disponible | Decisión tipada vía API | 87,1 / 79,6 | 84,6 / 75,1 | no disponible | Solo API |
-| decider-2b v11 | ~2 B (modelo base) | Decisión tipada | 78,6 / 65,4 | 75,7 / 62,1 | Apache-2.0 | Pesos en HuggingFace |
+| decider-2b v11 | ~2 B (modelo base) | Decisión tipada | 78,6 / 65,4 | 75,7 / 62,1 | Apache-2.0 | Pesos en Hugging Face |
 | JevK5-2B v0.2 | ~2 B | Decisión tipada | 70,8 / 51,8 | 69,4 / 51,1 | no disponible | no disponible |
-| Kivok 0.3B | 0,3 B | Decisión tipada ligera (misma familia) | 50,5 / 17,4 | 92,3 / 89,7 | no disponible | Pesos en HuggingFace |
+| Kivok 0.3B | 0,3 B | Decisión tipada ligera (misma familia) | 50,5 / 17,4 | 92,3 / 89,7 | no disponible | Pesos en Hugging Face |
 
 El patrón es claro: Jev gana en tareas desconocidas con razonamiento (track A), mientras que Migom 2B domina en las tareas de agente del track B, donde además supera con holgura a su propio modelo base (de 75,7 a 96,1 de precisión). Kivok 0.3B es competitivo en el track B pese a su tamaño, lo que justifica la cascada propuesta.
 
@@ -108,7 +108,7 @@ El patrón es claro: Jev gana en tareas desconocidas con razonamiento (track A),
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smolnikov/migom-2b
+- Modelo en Hugging Face: https://huggingface.co/smolnikov/migom-2b
 - Modelo ligero de la familia (Kivok 0.3B): https://huggingface.co/smolnikov/kivok-0.3b
 - Dataset de evaluación RuDecide v0.1: https://huggingface.co/datasets/smolnikov/RuDecide
 - Modelo base: https://huggingface.co/Mapika/decider-2b

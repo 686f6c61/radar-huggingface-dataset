@@ -81,7 +81,7 @@ No se dispone de datos comparativos publicados entre REIGN y otros modelos de em
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/devrim/reign-base-l3_gn-bge-base_val-selected
+- Hugging Face: https://huggingface.co/devrim/reign-base-l3_gn-bge-base_val-selected
 - Repositorio de codigo: https://github.com/devrimcavusoglu/reign
 - Pagina del proyecto: https://devrimcavusoglu.github.io/reign
 - Dataset de entrenamiento: https://huggingface.co/datasets/devrim/goodwiki_long_synthetic_ir

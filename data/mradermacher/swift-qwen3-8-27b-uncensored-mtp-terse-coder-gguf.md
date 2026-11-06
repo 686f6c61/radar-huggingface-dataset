@@ -6,14 +6,14 @@ Esta ficha describe la version cuantizada en GGUF del modelo Swift-Qwen3.8-27B-U
 
 La relevancia de esta publicacion es doble. Por un lado, pone a disposicion del ecosistema local (llama.cpp, Ollama, LM Studio y otros clientes compatibles con GGUF) una familia completa de cuantizaciones estaticas, desde Q2_K hasta f16, con ficheros de proyeccion multimodal aparte. Por otro, y dado que no existe informacion publica de benchmarks en la documentacion disponible, su valor practico para un desarrollador es principalmente el de un modelo sin restricciones de contenido para tareas de red teaming, generacion de codigo y prototipado local en hardware de consumo.
 
-El autor declara el idioma ingles como unico soportado, licencia "other" (el modelo base referencia swift-open-license-1) y un tamano de repositorio de 93,2 GB, correspondiente al conjunto completo de cuantizaciones. El modelo original se denomina "27B", aunque la API de HuggingFace reporta 460.730.096 parametros para este repositorio, una discrepancia que se detalla en la seccion de limitaciones y que conviene verificar antes de dimensionar el despliegue.
+El autor declara el idioma ingles como unico soportado, licencia "other" (el modelo base referencia swift-open-license-1) y un tamano de repositorio de 93,2 GB, correspondiente al conjunto completo de cuantizaciones. El modelo original se denomina "27B", aunque la API de Hugging Face reporta 460.730.096 parametros para este repositorio, una discrepancia que se detalla en la seccion de limitaciones y que conviene verificar antes de dimensionar el despliegue.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer denso multimodal nativo (descripcion del modelo base Qwen3.8-27B de Alibaba), con MTP (multi-token prediction) segun la denominacion del modelo |
-| Parametros totales | 27B segun denominacion del modelo; la API de HuggingFace reporta 460.730.096 parametros para este repositorio (dato contradictorio, no disponible como cifra confirmada) |
+| Parametros totales | 27B segun denominacion del modelo; la API de Hugging Face reporta 460.730.096 parametros para este repositorio (dato contradictorio, no disponible como cifra confirmada) |
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | mmproj-Q8_0, mmproj-f16 (suplementos multimodales), x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS (cuantizaciones estaticas); no hay cuantizaciones ponderadas/imatrix disponibles por el momento |
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes, por lo 
 ## Limitaciones y advertencias
 
 - Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de calidad, razonamiento o codigo para este derivado concreto ni para sus cuantizaciones.
-- Discrepancia en el recuento de parametros: la denominacion comercial indica 27B, mientras que el dato de safetensors de la API de HuggingFace reporta 460.730.096 parametros. Conviene verificar el numero real antes de dimensionar hardware o presupuestos de inferencia.
+- Discrepancia en el recuento de parametros: la denominacion comercial indica 27B, mientras que el dato de safetensors de la API de Hugging Face reporta 460.730.096 parametros. Conviene verificar el numero real antes de dimensionar hardware o presupuestos de inferencia.
 - Modelo "abliterated" y "uncensored": no incorpora capas de rechazo, por lo que puede generar contenido ofensivo, ilegal o peligroso. Su uso responsable exige supervision humana y, en entornos productivos, filtros externos de entrada y salida.
 - Riesgo de alucinacion: es un riesgo generico de los LLM y, en modelos sin alineacion de seguridad, la verificacion factual debe ser especialmente estricta.
 - Idioma: solo se declara ingles. El rendimiento en castellano u otros idiomas no esta documentado y probablemente sea degradado.
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes, por lo 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Uncensored-MTP-Terse-Coder-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Uncensored-MTP-Terse-Coder-GGUF
 - Modelo base del merge y adaptador LoRA: https://huggingface.co/vwdubb/Swift-Qwen3.8-27B-Uncensored-MTP-Terse-Coder
 - Variante BF16 del mismo autor: https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Uncensored-BF16-GGUF
 - Modelo oficial Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

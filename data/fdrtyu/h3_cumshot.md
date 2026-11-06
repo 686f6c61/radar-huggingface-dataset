@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fdrtyu/H3_Cumshot es un repositorio alojado en HuggingFace por el usuario fdrtyu. En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, tiene un tamano de 0,3 GB y fue creado el 11 de septiembre de 2026, con la ultima actualizacion el mismo dia. No dispone de etiqueta de pipeline (no se declara la tarea: text-generation, text-to-image, etc.) ni de idiomas soportados.
+fdrtyu/H3_Cumshot es un repositorio alojado en Hugging Face por el usuario fdrtyu. En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, tiene un tamano de 0,3 GB y fue creado el 11 de septiembre de 2026, con la ultima actualizacion el mismo dia. No dispone de etiqueta de pipeline (no se declara la tarea: text-generation, text-to-image, etc.) ni de idiomas soportados.
 
 La model card publicada es practicamente vacia: unicamente contiene metadatos de licencia (license: other, con enlace a un fichero LICENSE que no se ha podido inspeccionar). No se documenta arquitectura, numero de parametros, contexto, datos de entrenamiento, ni resultados de evaluacion. La busqueda web asociada no ha devuelto ningun enlace relevante sobre el modelo: los resultados obtenidos corresponden a paginas genericas de Instagram y no guardan relacion con este repositorio.
 
@@ -83,7 +83,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fdrtyu/H3_Cumshot | no disponible | no disponible | other | HuggingFace, 0 descargas |
+| fdrtyu/H3_Cumshot | no disponible | no disponible | other | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fdrtyu/H3_Cumshot
+- Hugging Face: https://huggingface.co/fdrtyu/H3_Cumshot
 - Fichero de licencia referenciado: LICENSE (enlazado desde la model card del repositorio; no inspeccionado)
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible

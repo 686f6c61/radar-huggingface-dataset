@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `suadienthoai24h/thay-pin-iphone-14-plus` alojado en HuggingFace no contiene un modelo de inteligencia artificial. El contenido de la model card es un articulo publicitario en vietnamita sobre servicios de reemplazo de bateria para el iPhone 14 Plus, ofrecidos por un centro de reparacion de telefonos moviles. No se incluyen pesos, arquitectura, datasets de entrenamiento ni ningun artefacto propio de un modelo de ML.
+El repositorio `suadienthoai24h/thay-pin-iphone-14-plus` alojado en Hugging Face no contiene un modelo de inteligencia artificial. El contenido de la model card es un articulo publicitario en vietnamita sobre servicios de reemplazo de bateria para el iPhone 14 Plus, ofrecidos por un centro de reparacion de telefonos moviles. No se incluyen pesos, arquitectura, datasets de entrenamiento ni ningun artefacto propio de un modelo de ML.
 
-Dado que el identificador del repositorio, las etiquetas y el contenido no corresponden a un modelo de IA, esta ficha documenta la ausencia de especificaciones tecnicas y advierte de que cualquier uso como modelo de lenguaje, generativo o de otro tipo es inviable. La entrada parece ser un uso indebido de la plataforma HuggingFace con fines de promocion comercial o spam.
+Dado que el identificador del repositorio, las etiquetas y el contenido no corresponden a un modelo de IA, esta ficha documenta la ausencia de especificaciones tecnicas y advierte de que cualquier uso como modelo de lenguaje, generativo o de otro tipo es inviable. La entrada parece ser un uso indebido de la plataforma Hugging Face con fines de promocion comercial o spam.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/suadienthoai24h/thay-pin-iphone-14-plus
+- Repositorio en Hugging Face: https://huggingface.co/suadienthoai24h/thay-pin-iphone-14-plus
 - Articulo original referenciado en la model card: https://chamsocdidong.com/thay-pin-iphone-14-plus-ds16403
 - Perfil de podcast referenciado: https://creators.spotify.com/pod/profile/thay-pin-iphone
 - Sitio comercial relacionado: https://www.dienthoai24h.vn/thay-pin-iphone-14

@@ -91,6 +91,6 @@ No se dispone de datos publicados que permitan una comparacion cuantitativa dire
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/getgaurav2/nanochat-d32-sae-layer16-topk32
+- Hugging Face: https://huggingface.co/getgaurav2/nanochat-d32-sae-layer16-topk32
 - Modelo base: https://huggingface.co/karpathy/nanochat-d32
 - Repositorio de entrenamiento: https://github.com/SolshineCode/nanochat-SAE

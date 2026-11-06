@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer for Retrieval es un repositorio experimental publicado por el usuario jgarcia89 en HuggingFace, cuyo objetivo declarado es servir de base reproducible para investigar variantes de arquitectura en tareas de recuperacion (retrieval) antes de lanzar un entrenamiento completo. No es un modelo entrenado ni un checkpoint listo para produccion: el propio autor indica que `model.safetensors` es unicamente una inicializacion valida para pruebas de humo ("smoke tests") y que no se reclama ninguna puntuacion de benchmark en el repositorio.
+Mixer for Retrieval es un repositorio experimental publicado por el usuario jgarcia89 en Hugging Face, cuyo objetivo declarado es servir de base reproducible para investigar variantes de arquitectura en tareas de recuperacion (retrieval) antes de lanzar un entrenamiento completo. No es un modelo entrenado ni un checkpoint listo para produccion: el propio autor indica que `model.safetensors` es unicamente una inicializacion valida para pruebas de humo ("smoke tests") y que no se reclama ninguna puntuacion de benchmark en el repositorio.
 
 El modelo, segun la model card, emplea una arquitectura de tipo Mixer a escala "base", con atencion estandar, fusion mediante cross attention, activacion swish y normalizacion InstanceNorm. El checkpoint alojado contiene 16.576 parametros totales, lo que lo situa en un orden de magnitud puramente didactico o de prueba, muy lejos de cualquier modelo de retrieval utilizable en produccion.
 
@@ -83,6 +83,6 @@ No disponible. El autor no publica comparaciones con otros modelos y no hay dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jgarcia89/mixer-experiment
+- Modelo en Hugging Face: https://huggingface.co/jgarcia89/mixer-experiment
 - Dataset sugerido para evaluacion: Flickr30k (referenciado en la model card, sin enlace directo proporcionado)
 - Nota sobre la busqueda web: los resultados devueltos por la busqueda no guardan relacion con este modelo (corresponden a calendarios y resultados de partidos de la NBA) y no se han incluido como enlaces relevantes. No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la informacion disponible.

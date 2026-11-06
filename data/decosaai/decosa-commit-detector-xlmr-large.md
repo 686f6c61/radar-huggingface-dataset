@@ -93,7 +93,7 @@ La comparación natural es con las alternativas que el propio autor evalúa o de
 
 | Modelo | Parámetros | Tipo | Recall (conjunto independiente) | Falsos commits | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| decosa-commit-detector-xlmr-large | ~560M | Clasificador XLM-R large | 98,4% (99,1% con umbral) | 10,1% (13,2% con umbral) | Apache 2.0 | HuggingFace |
+| decosa-commit-detector-xlmr-large | ~560M | Clasificador XLM-R large | 98,4% (99,1% con umbral) | 10,1% (13,2% con umbral) | Apache 2.0 | Hugging Face |
 | Qwen3.8-27B zero-shot | 27B | LLM generativo | 98,1% | 1,4% | No disponible | No disponible en la información proporcionada |
 | 12 expresiones regulares en inglés | No aplica | Reglas | 0,2% | 0,7% | No aplica | Uso interno del autor |
 | mmBERT-base / mmBERT-small | No disponible | Clasificador (candidatos descartados) | No disponible | No disponible | No disponible | Entrenados y descartados en favor de XLM-R large |
@@ -117,7 +117,7 @@ En el conjunto de tipos de sitio retenidos las cifras cambian: este modelo logra
 
 ## Enlaces
 
-- [Ficha en HuggingFace: decosaai/decosa-commit-detector-xlmr-large](https://huggingface.co/decosaai/decosa-commit-detector-xlmr-large)
+- [Ficha en Hugging Face: decosaai/decosa-commit-detector-xlmr-large](https://huggingface.co/decosaai/decosa-commit-detector-xlmr-large)
 - [Modelo base: FacebookAI/xlm-roberta-large](https://huggingface.co/FacebookAI/xlm-roberta-large)
 - `eval_summary.json` con todos los números de evaluación, incluido en el repositorio del modelo
 - No se han encontrado en la información proporcionada artículos, blogs, repositorios de código o demos adicionales.

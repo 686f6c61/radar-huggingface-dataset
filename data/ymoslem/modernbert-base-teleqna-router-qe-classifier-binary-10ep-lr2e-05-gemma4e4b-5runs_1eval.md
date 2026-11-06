@@ -31,7 +31,7 @@ El modelo es un encoder Transformer basado en `answerdotai/ModernBERT-base`, fin
 - Enrutamiento en sistemas en cascada: permite reducir el número de llamadas a modelos grandes, seleccionando solo las respuestas que requieren escalado.
 - Estimación de calidad específica por modelo: está entrenado sobre las salidas reales de Gemma4-E4B, por lo que identifica los fallos característicos de ese modelo en el dominio de telecomunicaciones.
 - Soporte para clasificación con pesos de clase: el entrenamiento incorpora pesos de clase para abordar el desbalance entre etiquetas.
-- Compatibilidad con el ecosistema HuggingFace: se puede cargar con `transformers` mediante la pipeline de `text-classification`.
+- Compatibilidad con el ecosistema Hugging Face: se puede cargar con `transformers` mediante la pipeline de `text-classification`.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: restringidas a inglés.
@@ -71,7 +71,7 @@ Como referencia, predecir siempre `accept` daría una exactitud de 0.679 y un ma
 - Pesos en safetensors: aproximadamente 0,6 GB, lo que se corresponde con un modelo de 149M de parámetros.
 - VRAM estimada para inferencia: a partir de 0,6 GB en FP32, más la memoria de activaciones de la codificación de secuencias de 512 tokens. Es viable en GPUs de consumo como una RTX 3060 o superior, y puede ejecutarse incluso en CPU con la biblioteca `transformers`.
 - GPU recomendada: no se dispone de una recomendación específica para este clasificador, pero la documentación indica que las generaciones de entrenamiento se realizaron en una sola A100 80GB.
-- Opciones de despliegue: se puede servir a través de HuggingFace Transformers y HuggingFace Inference Endpoints. No se menciona soporte para vLLM, llama.cpp ni Ollama en la información disponible.
+- Opciones de despliegue: se puede servir a través de Hugging Face Transformers y Hugging Face Inference Endpoints. No se menciona soporte para vLLM, llama.cpp ni Ollama en la información disponible.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -102,6 +102,6 @@ No se han encontrado otros modelos comparables en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ymoslem/ModernBERT-base-TeleQnA-router-qe-classifier-binary-10ep-lr2e-05-gemma4e4b-5runs_1eval
+- Modelo en Hugging Face: https://huggingface.co/ymoslem/ModernBERT-base-TeleQnA-router-qe-classifier-binary-10ep-lr2e-05-gemma4e4b-5runs_1eval
 - Repositorio CRE-Router: https://github.com/ymoslem/CRE-Router
 - Estimador companion para Qwen3-4B-Instruct: https://huggingface.co/ymoslem/ModernBERT-base-TeleQnA-router-qe-classifier-binary-10ep-lr2e-05-qwen4b-5runs_1eval

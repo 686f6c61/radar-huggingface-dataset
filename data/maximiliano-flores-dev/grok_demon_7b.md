@@ -2,9 +2,9 @@
 
 ## Resumen
 
-grok_demon_7b es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado por el usuario Maximiliano-Flores-Dev en HuggingFace bajo licencia Apache-2.0. Se trata de un modelo denso, decoder-only, de la familia Qwen2, con 7.615.616.512 parámetros totales (aproximadamente 7,62 mil millones) y pesos almacenados en safetensors. El repositorio ocupa 15,2 GB, un tamano coherente con pesos en precision de 16 bits. El punto de partida declarado es `unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit`, es decir, una version ya cuantizada a 4 bits del instruct de Qwen2.5 de 7B.
+grok_demon_7b es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado por el usuario Maximiliano-Flores-Dev en Hugging Face bajo licencia Apache-2.0. Se trata de un modelo denso, decoder-only, de la familia Qwen2, con 7.615.616.512 parámetros totales (aproximadamente 7,62 mil millones) y pesos almacenados en safetensors. El repositorio ocupa 15,2 GB, un tamano coherente con pesos en precision de 16 bits. El punto de partida declarado es `unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit`, es decir, una version ya cuantizada a 4 bits del instruct de Qwen2.5 de 7B.
 
-El modelo se presenta con las etiquetas "uncensored" y "conversational", lo que indica que el ajuste se ha orientado a reducir los rechazos del modelo base y a reforzar el comportamiento conversacional. No se documenta el conjunto de datos de entrenamiento, el numero de tokens utilizados ni si hubo fases de RLHF o DPO. El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, segun indica la propia model card, con una mejora declarada de velocidad de 2x respecto a un entrenamiento convencional.
+El modelo se presenta con las etiquetas "uncensored" y "conversational", lo que indica que el ajuste se ha orientado a reducir los rechazos del modelo base y a reforzar el comportamiento conversacional. No se documenta el conjunto de datos de entrenamiento, el numero de tokens utilizados ni si hubo fases de RLHF o DPO. El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, segun indica la propia model card, con una mejora declarada de velocidad de 2x respecto a un entrenamiento convencional.
 
 Su relevancia actual es limitada pero concreta: es un ejemplo tipico de fine-tune comunitario de bajo coste sobre Qwen2.5, util como punto de partida para experimentacion con modelos "sin censura", para investigacion sobre alineamiento y rechazos, y para despliegues locales en ingles. No obstante, no cuenta con evaluaciones publicadas, tiene 0 descargas y 1 "me gusta" en el momento de la consulta, y su model card es practicamente el andamiaje por defecto de Unsloth sin informacion adicional sobre datos, hiperparametros o resultados.
 
@@ -77,10 +77,10 @@ La tabla siguiente compara el modelo con sus alternativas mas directas de la mis
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| grok_demon_7b | 7,62 B | no disponible | Apache-2.0 | HuggingFace | no |
-| Qwen2.5-7B-Instruct (base) | 7,62 B | 32.768 tokens (referencia externa) | Apache-2.0 | HuggingFace | si |
-| Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens (referencia externa) | Llama 3.1 Community License | HuggingFace | si |
-| Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens (referencia externa) | Apache-2.0 | HuggingFace | si |
+| grok_demon_7b | 7,62 B | no disponible | Apache-2.0 | Hugging Face | no |
+| Qwen2.5-7B-Instruct (base) | 7,62 B | 32.768 tokens (referencia externa) | Apache-2.0 | Hugging Face | si |
+| Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens (referencia externa) | Llama 3.1 Community License | Hugging Face | si |
+| Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens (referencia externa) | Apache-2.0 | Hugging Face | si |
 
 Diferencias clave: frente a su modelo base, grok_demon_7b anade el ajuste "uncensored" y conversacional, pero pierde la documentacion de contexto, la plantilla de chat y las evaluaciones. Frente a Llama-3.1-8B-Instruct, ofrece licencia Apache-2.0 (mas permisiva) pero un contexto presumiblemente menor y sin datos de rendimiento. Frente a Mistral-7B-Instruct-v0.3, la licencia es equivalente, pero el ecosistema de herramientas y la validacion comunitaria de este fine-tune son practicamente inexistentes.
 
@@ -100,8 +100,8 @@ Diferencias clave: frente a su modelo base, grok_demon_7b anade el ajuste "uncen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maximiliano-Flores-Dev/grok_demon_7b
+- Modelo en Hugging Face: https://huggingface.co/Maximiliano-Flores-Dev/grok_demon_7b
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace (citada en la model card): https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face (citada en la model card): https://github.com/huggingface/trl
 - Paper, blog o demo adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los unicos resultados obtenidos fueron paginas de inicio de sesion de un servicio de correo, sin relacion con el modelo.

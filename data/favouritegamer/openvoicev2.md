@@ -6,7 +6,7 @@ OpenVoice V2 es un sistema de síntesis de voz (text-to-speech) con clonación d
 
 Técnicamente no es un modelo de lenguaje: no procesa texto con una ventana de contexto ni genera tokens. Se compone de un conversor de timbre (tone color converter) que actúa sobre la salida de un modelo TTS base, MeloTTS, que debe instalarse por separado. Esta separación es la clave de su funcionamiento: la lingüística y la prosodia las aporta el TTS base, mientras que el conversor transfiere las características de timbre y estilo de la voz de referencia.
 
-La ficha que se documenta aquí corresponde a un repositorio espejo alojado en HuggingFace por el usuario `favouritegamer`, no al repositorio oficial del equipo que desarrolló el modelo. El repositorio no tiene descargas ni interacciones registradas y su tamaño es de 0,1 GB. La información disponible procede de la model card y de la documentación del proyecto original; los resultados de la búsqueda web no aportaron datos técnicos adicionales sobre el modelo.
+La ficha que se documenta aquí corresponde a un repositorio espejo alojado en Hugging Face por el usuario `favouritegamer`, no al repositorio oficial del equipo que desarrolló el modelo. El repositorio no tiene descargas ni interacciones registradas y su tamaño es de 0,1 GB. La información disponible procede de la model card y de la documentación del proyecto original; los resultados de la búsqueda web no aportaron datos técnicos adicionales sobre el modelo.
 
 ## Especificaciones tecnicas
 
@@ -91,7 +91,7 @@ Los datos de parametros, contexto y rendimiento de los modelos comparados no est
 - Riesgo de uso indebido para suplantacion de identidad: la clonacion de voz zero-shot facilita la generacion de audio falso con la voz de terceros sin su consentimiento. Es imprescindible aplicar controles de consentimiento, trazabilidad y, cuando proceda, marcado de audio sintetico.
 - La licencia MIT permite uso comercial, pero no exime del cumplimiento de la normativa aplicable en materia de proteccion de datos, derechos de imagen y voz, ni de las condiciones de uso de las voces de referencia empleadas.
 - No se documentan sesgos especificos del modelo. Cabe esperar una calidad desigual entre idiomas y acentos, dado que el soporte nativo declarado cubre seis idiomas y el control de acento depende de las caracteristicas de la voz de referencia.
-- Limitaciones de idioma: las etiquetas del repositorio de HuggingFace solo declaran ingles y chino, mientras que la model card del proyecto original declara seis idiomas nativos en V2. Esta discrepancia debe tenerse en cuenta, ya que los metadatos del espejo pueden no reflejar el soporte real.
+- Limitaciones de idioma: las etiquetas del repositorio de Hugging Face solo declaran ingles y chino, mientras que la model card del proyecto original declara seis idiomas nativos en V2. Esta discrepancia debe tenerse en cuenta, ya que los metadatos del espejo pueden no reflejar el soporte real.
 - Dependencia de MeloTTS como TTS base: cualquier fallo, cambio de version o limitacion del modelo base afecta directamente al resultado, y el procedimiento de instalacion exige pasos adicionales (`python -m unidic download`) que pueden complicar el despliegue.
 - La model card advierte que el uso rapido esta pensado para servicios ya desplegados y que la instalacion en Linux esta dirigida a desarrolladores e investigadores con conocimientos de Linux, Python y PyTorch; no es una solucion plug-and-play para entornos de produccion sin personal tecnico.
 - No se especifican requisitos de hardware, latencia ni throughput, lo que impide dimensionar infraestructura con datos oficiales.
@@ -100,10 +100,10 @@ Los datos de parametros, contexto y rendimiento de los modelos comparados no est
 
 ## Enlaces
 
-- Repositorio en HuggingFace (espejo): https://huggingface.co/favouritegamer/OpenVoiceV2
+- Repositorio en Hugging Face (espejo): https://huggingface.co/favouritegamer/OpenVoiceV2
 - Repositorio oficial en GitHub: https://github.com/myshell-ai/OpenVoice
 - Documentacion de uso: https://github.com/myshell-ai/OpenVoice/blob/main/docs/USAGE.md
-- Demo oficial en HuggingFace Spaces: https://huggingface.co/spaces/myshell-ai/OpenVoiceV2
+- Demo oficial en Hugging Face Spaces: https://huggingface.co/spaces/myshell-ai/OpenVoiceV2
 - Modelo TTS base MeloTTS: https://github.com/myshell-ai/MeloTTS
 - Cuaderno de ejemplo V1, control de estilo: https://github.com/myshell-ai/OpenVoice/blob/main/demo_part1.ipynb
 - Cuaderno de ejemplo V1, clonacion cross-lingual: https://github.com/myshell-ai/OpenVoice/blob/main/demo_part2.ipynb

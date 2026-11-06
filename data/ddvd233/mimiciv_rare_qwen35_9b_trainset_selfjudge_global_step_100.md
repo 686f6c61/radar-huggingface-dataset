@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ddvd233/mimiciv_rare_qwen35_9b_trainset_selfjudge_global_step_100` es un artefacto de investigación publicado en HuggingFace: un ajuste por aprendizaje por refuerzo del modelo base Qwen/Qwen3.5-9B (9.409.813.744 parámetros, según los safetensors del repositorio) orientado a diagnóstico médico raro. Lo desarrolla el usuario `ddvd233` y se enmarca en un experimento denominado RSIMed (línea base de "self-evolving data"), donde se aplica GRPO sobre el conjunto de entrenamiento real de diagnósticos raros de MIMIC-IV y se usa el propio modelo de 9B congelado como juez.
+`ddvd233/mimiciv_rare_qwen35_9b_trainset_selfjudge_global_step_100` es un artefacto de investigación publicado en Hugging Face: un ajuste por aprendizaje por refuerzo del modelo base Qwen/Qwen3.5-9B (9.409.813.744 parámetros, según los safetensors del repositorio) orientado a diagnóstico médico raro. Lo desarrolla el usuario `ddvd233` y se enmarca en un experimento denominado RSIMed (línea base de "self-evolving data"), donde se aplica GRPO sobre el conjunto de entrenamiento real de diagnósticos raros de MIMIC-IV y se usa el propio modelo de 9B congelado como juez.
 
 Se trata de un checkpoint concreto, el `global_step_100`, fusionado a partir de un checkpoint FSDP de la librería verl y exportado en safetensors bf16. El autor lo describe explícitamente como control de comparación frente a otras ejecuciones de 9B con datos auto-generados, no como un modelo listo para producción. El rendimiento reportado es limitado: la exactitud de validación en bucle pasa de 0,284 en el paso 0 a 0,296 en el paso 40, sin que se conserven evaluaciones posteriores en el log superviviente.
 
@@ -41,7 +41,7 @@ El resultado es un checkpoint fusionado (merged) exportado desde un checkpoint F
 - Autoevaluación como juez: en el experimento, la variante congelada de 9B actúa como juez del proceso de RL (función de verificación, no capacidad de inferencia del checkpoint publicado).
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada (el campo de idiomas de HuggingFace figura como no disponible).
+- Capacidades multilingües: no disponible en la información proporcionada (el campo de idiomas de Hugging Face figura como no disponible).
 - Capacidades especiales (modo pensamiento, visión, audio): no disponible en la información proporcionada.
 
 ## Casos de uso
@@ -82,8 +82,8 @@ La información disponible solo permite comparar con el modelo base del que deri
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mimiciv_rare_qwen35_9b_trainset_selfjudge (step 100) | 9,4 B | No disponible | Exactitud de validación en bucle 0,284 → 0,296 | Apache 2.0 | Pesos safetensors bf16 en HuggingFace |
-| Qwen/Qwen3.5-9B (modelo base) | ~9 B | No disponible | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace |
+| mimiciv_rare_qwen35_9b_trainset_selfjudge (step 100) | 9,4 B | No disponible | Exactitud de validación en bucle 0,284 → 0,296 | Apache 2.0 | Pesos safetensors bf16 en Hugging Face |
+| Qwen/Qwen3.5-9B (modelo base) | ~9 B | No disponible | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face |
 | Otras alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ La información disponible solo permite comparar con el modelo base del que deri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ddvd233/mimiciv_rare_qwen35_9b_trainset_selfjudge_global_step_100
+- Modelo en Hugging Face: https://huggingface.co/ddvd233/mimiciv_rare_qwen35_9b_trainset_selfjudge_global_step_100
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Librería verl (mencionada en la model card): no se ha proporcionado enlace directo en la información disponible
 - No se han identificado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en los resultados de búsqueda web proporcionados.

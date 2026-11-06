@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Whisper tiny Portuguese English es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario merkelmarrow en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder de Whisper, disenado originalmente por OpenAI, y adaptado sobre el dataset naharte/portuguese_english para transcribir audio con contenido en portugues e ingles.
+Whisper tiny Portuguese English es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario merkelmarrow en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder de Whisper, disenado originalmente por OpenAI, y adaptado sobre el dataset naharte/portuguese_english para transcribir audio con contenido en portugues e ingles.
 
 El modelo parte de la variante "tiny" de Whisper, la mas pequena de la familia, con aproximadamente 37,7 millones de parametros y un tamano de repositorio de 0,2 GB. Esta orientado a entornos con recursos muy limitados, donde la latencia y el consumo de memoria son criticos, a costa de una precision inferior a la de las variantes medium o large.
 
-La relevancia de este modelo es acotada: se trata de un ajuste fino experimental con cero descargas y cero likes en el momento de la consulta, y su model card esta generada automaticamente por el Trainer de HuggingFace, con secciones sin completar. Resulta util como referencia para experimentos de ASR bilingue portugues-ingles en hardware modesto, pero no debe considerarse un modelo de produccion sin una evaluacion adicional.
+La relevancia de este modelo es acotada: se trata de un ajuste fino experimental con cero descargas y cero likes en el momento de la consulta, y su model card esta generada automaticamente por el Trainer de Hugging Face, con secciones sin completar. Resulta util como referencia para experimentos de ASR bilingue portugues-ingles en hardware modesto, pero no debe considerarse un modelo de produccion sin una evaluacion adicional.
 
 ## Especificaciones tecnicas
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto de audio | WER reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| merkelmarrow/whisper-tiny-portuguese_english-ft1 | 37,7 M | 30 s (Whisper) | 15,81 (dataset propio) | apache-2.0 | HuggingFace |
-| openai/whisper-tiny | 37,7 M | 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-base | 74 M | 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-small | 244 M | 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
+| merkelmarrow/whisper-tiny-portuguese_english-ft1 | 37,7 M | 30 s (Whisper) | 15,81 (dataset propio) | apache-2.0 | Hugging Face |
+| openai/whisper-tiny | 37,7 M | 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-base | 74 M | 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-small | 244 M | 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
 
 La comparacion directa de WER no es posible porque los modelos base de OpenAI no reportan resultados sobre el dataset naharte/portuguese_english. El modelo ajustado deberia superar a whisper-tiny original en ese corpus concreto, pero no se dispone de esa comparacion en la informacion proporcionada.
 
@@ -92,7 +92,7 @@ La comparacion directa de WER no es posible porque los modelos base de OpenAI no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/merkelmarrow/whisper-tiny-portuguese_english-ft1
+- Modelo en Hugging Face: https://huggingface.co/merkelmarrow/whisper-tiny-portuguese_english-ft1
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de ajuste: https://huggingface.co/datasets/naharte/portuguese_english
 - Paper de Whisper (OpenAI): https://arxiv.org/abs/2212.04356

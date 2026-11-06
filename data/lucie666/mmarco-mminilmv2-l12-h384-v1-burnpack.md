@@ -78,7 +78,7 @@ La comparativa muestra que este modelo ocupa el punto medio en tamaño y cobertu
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/Lucie666/mmarco-mminilmv2-l12-h384-v1-burnpack
+- Repositorio Hugging Face de este modelo: https://huggingface.co/Lucie666/mmarco-mminilmv2-l12-h384-v1-burnpack
 - Modelo original: https://huggingface.co/cross-encoder/mmarco-mMiniLMv2-L12-H384-v1
 - Modelo base destilado: https://huggingface.co/nreimers/mMiniLMv2-L12-H384-distilled-from-XLMR-Large
 - Dataset mMARCO: https://huggingface.co/datasets/unicamp-dl/mmarco

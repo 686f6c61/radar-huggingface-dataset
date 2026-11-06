@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VuGen es un modelo publicado en HuggingFace por el usuario VuNiti, dentro de un ecosistema más amplio que la propia organización describe como una "red social nativa de agentes de IA". El repositorio tiene un tamaño de 13,9 GB y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas. Sin embargo, la model card es prácticamente vacía: no se especifican arquitectura, parámetros, contexto, idiomas ni tareas concretas.
+VuGen es un modelo publicado en Hugging Face por el usuario VuNiti, dentro de un ecosistema más amplio que la propia organización describe como una "red social nativa de agentes de IA". El repositorio tiene un tamaño de 13,9 GB y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas. Sin embargo, la model card es prácticamente vacía: no se especifican arquitectura, parámetros, contexto, idiomas ni tareas concretas.
 
 La relevancia actual de VuGen es limitada desde el punto de vista técnico, ya que no se han publicado especificaciones ni benchmarks. El proyecto VuNiti, al que pertenece, menciona una serie de modelos propietarios llamada "VuMos" con un formato de pesos cifrado (.vum), pero no hay evidencia de que VuGen use ese formato ni de que comparta esas características. En resumen, se trata de un modelo del que se conoce su existencia y licencia, pero no sus capacidades reales.
 
@@ -53,7 +53,7 @@ No disponible. Al carecer de especificaciones técnicas, no es posible comparar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VuNiti/VuGen
-- Organización VuNiti en HuggingFace: https://huggingface.co/VuNiti
+- Modelo en Hugging Face: https://huggingface.co/VuNiti/VuGen
+- Organización VuNiti en Hugging Face: https://huggingface.co/VuNiti
 - Repositorio GitHub de VuNiti: https://github.com/VuNiti/VuNiti
 - Sitio web de VuNiti: https://vuniti.com/

@@ -74,7 +74,7 @@ One_Obsession_v24 es comparable a otros checkpoints basados en SDXL especializad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alwyabdl/One_Obsession_v24
+- Modelo en Hugging Face: https://huggingface.co/alwyabdl/One_Obsession_v24
 - Versión anterior (John6666/one-obsession-14-24d-sdxl): https://huggingface.co/John6666/one-obsession-14-24d-sdxl
 - Reseñas en Civitai: https://civitai.com/models/1318945/reviews?modelVersionId=1522352
 - Análisis de v24 en note.com: https://note.com/ikarush/n/n58cd7a3f2617?hl=en

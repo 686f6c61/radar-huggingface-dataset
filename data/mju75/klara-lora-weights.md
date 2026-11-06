@@ -69,7 +69,7 @@ No se dispone de informacion sobre otros LoRAs de Krea 2 comparables en el mismo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mju75/klara-lora-weights
+- Repositorio Hugging Face: https://huggingface.co/mju75/klara-lora-weights
 - Modelo base Krea 2 RAW: https://huggingface.co/krea/Krea-2-Raw (referenciado en la model card)
 - Modelo base Krea 2 Turbo: https://huggingface.co/krea/Krea-2-Turbo (referenciado en el ejemplo de uso)
 - Otro LoRA del mismo autor: https://huggingface.co/mju75/marketa-lora-krea-2 (encontrado en la busqueda web)

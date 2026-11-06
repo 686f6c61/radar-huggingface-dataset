@@ -95,8 +95,8 @@ No se dispone de datos de benchmarks comparativos con modelos de la misma catego
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Glimpse-Dictation/Parakeet-Unified-EN-0.6B-coreml
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/parakeet-unified-en-0.6b
+- Repositorio en Hugging Face: https://huggingface.co/Glimpse-Dictation/Parakeet-Unified-EN-0.6B-coreml
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/parakeet-unified-en-0.6b
 - GGUF Q8_0 companion de Handy: https://huggingface.co/handy-computer/parakeet-unified-en-0.6b-gguf
 - Aplicacion Glimpse: https://tryglimpse.cc
 - Codigo fuente de Glimpse en GitHub: https://github.com/glimpse-hq/Glimpse

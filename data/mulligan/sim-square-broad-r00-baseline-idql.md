@@ -27,8 +27,8 @@ Su relevancia es la de un baseline reproducible: fija una referencia cuantitativ
 | Paso de entrenamiento | 250001 |
 | Dataset de entrenamiento | `mulligan/sim-square-broad-c00-teleop-baseline` |
 | Tamano del repositorio | 1,4 GB (aproximadamente 280 MB por semilla) |
-| Pipeline declarado en HuggingFace | robotics |
-| Idiomas declarados en HuggingFace | no disponibles |
+| Pipeline declarado en Hugging Face | robotics |
+| Idiomas declarados en Hugging Face | no disponibles |
 
 ## Arquitectura y entrenamiento
 
@@ -113,10 +113,10 @@ No disponible. La model card no publica metricas comparativas frente a otros mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r00-baseline-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r00-baseline-idql
 - Proyecto Mulligan: https://mulligan.page
 - Evaluaciones en Policy Arena: https://arena.mulligan.page
-- Organizacion en HuggingFace: https://huggingface.co/mulligan
+- Organizacion en Hugging Face: https://huggingface.co/mulligan
 - Dataset de entrenamiento: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-baseline
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval
 - Dataset de rollouts auto-BC: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-auto-bc-n1-shared-policy-rollouts

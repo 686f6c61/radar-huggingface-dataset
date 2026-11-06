@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | DPO_ablations_qwen_ultrafeedback_quality_only (este) | 7,6B | no disponible | no disponible | GGUF | Ablacion DPO sobre UltraFeedback, solo calidad |
 | Qwen2.5-7B-Instruct | 7,6B | 32k (segun documentacion publica de Qwen) | Apache 2.0 (segun Qwen) | safetensors, GGUF | Modelo de referencia de la familia, con licencia permisiva |
 | Mistral-7B-Instruct-v0.3 | 7,2B | 32k (segun Mistral) | Apache 2.0 | safetensors, GGUF | Alternativa 7B ampliamente cuantizada |
-| Zephyr-7B-beta | 7,2B | 32k (segun HuggingFace H4) | MIT | safetensors, GGUF | Modelo afinado con DPO sobre UltraFeedback, referencia directa del experimento |
+| Zephyr-7B-beta | 7,2B | 32k (segun Hugging Face H4) | MIT | safetensors, GGUF | Modelo afinado con DPO sobre UltraFeedback, referencia directa del experimento |
 
 La comparativa es orientativa: los datos de Qwen2.5, Mistral y Zephyr provienen de sus fichas publicas y no de la informacion proporcionada para este modelo. La diferencia clave de este checkpoint es que se trata de una ablacion de investigacion, no de un modelo con garantias de calidad ni licencia clara.
 

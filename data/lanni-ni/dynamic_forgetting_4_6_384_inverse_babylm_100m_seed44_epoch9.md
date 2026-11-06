@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un artefacto experimental de generación de texto publicado en HuggingFace por el usuario Lanni-ni. Su identificador completo, `dynamic_forgetting_4_6_384_inverse_babylm_100m_seed44_epoch9`, sugiere que pertenece a una línea de investigación sobre "olvido dinámico" (dynamic forgetting) aplicada al proyecto BabyLM, con una configuración interna que podría corresponder a una red de 4 capas, 6 cabezas y 384 dimensiones, aunque esta interpretación no está confirmada por documentación técnica. Los pesos safeteners almacenados suman 45.703.320 parámetros y ocupan 0,2 GB, lo que lo sitúa en la categoría de modelo pequeño. La model card es una plantilla generada automáticamente sin información específica, y no se han encontrado publicaciones ni descripciones que detallen el propósito, la arquitectura o el entrenamiento. Se trata, por tanto, de un modelo de investigación sin soporte documental que no debería usarse en producción sin una evaluación exhaustiva.
+Este modelo es un artefacto experimental de generación de texto publicado en Hugging Face por el usuario Lanni-ni. Su identificador completo, `dynamic_forgetting_4_6_384_inverse_babylm_100m_seed44_epoch9`, sugiere que pertenece a una línea de investigación sobre "olvido dinámico" (dynamic forgetting) aplicada al proyecto BabyLM, con una configuración interna que podría corresponder a una red de 4 capas, 6 cabezas y 384 dimensiones, aunque esta interpretación no está confirmada por documentación técnica. Los pesos safeteners almacenados suman 45.703.320 parámetros y ocupan 0,2 GB, lo que lo sitúa en la categoría de modelo pequeño. La model card es una plantilla generada automáticamente sin información específica, y no se han encontrado publicaciones ni descripciones que detallen el propósito, la arquitectura o el entrenamiento. Se trata, por tanto, de un modelo de investigación sin soporte documental que no debería usarse en producción sin una evaluación exhaustiva.
 
 ## Especificaciones tecnicas
 
@@ -62,6 +62,6 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_100m_seed44_epoch9
+- Hugging Face del modelo: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_100m_seed44_epoch9
 - Modelo similar del mismo autor: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_babylm_100m_epoch9
-- Perfil del autor en HuggingFace: https://huggingface.co/Lanni-ni
+- Perfil del autor en Hugging Face: https://huggingface.co/Lanni-ni

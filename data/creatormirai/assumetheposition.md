@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `creatormirai/AssumethePosition` es un repositorio publicado en HuggingFace el 23 de diciembre de 2025, con una última actualización en agosto de 2026. A fecha de la consulta, no se ha publicado ninguna información técnica sobre su arquitectura, parámetros, licencia o idiomas soportados. El repositorio tiene un tamaño de 146,8 GB, lo que sugiere que contiene pesos de un modelo de gran escala, posiblemente en formato `safetensors` o similar, pero no se puede confirmar sin acceso a los archivos del repositorio.
+El modelo `creatormirai/AssumethePosition` es un repositorio publicado en Hugging Face el 23 de diciembre de 2025, con una última actualización en agosto de 2026. A fecha de la consulta, no se ha publicado ninguna información técnica sobre su arquitectura, parámetros, licencia o idiomas soportados. El repositorio tiene un tamaño de 146,8 GB, lo que sugiere que contiene pesos de un modelo de gran escala, posiblemente en formato `safetensors` o similar, pero no se puede confirmar sin acceso a los archivos del repositorio.
 
 La relevancia de este modelo es incierta: cuenta con cero descargas y un solo "like", lo que indica que es un proyecto reciente o poco difundido. La ausencia total de documentación, tarjeta de modelo o metadatos técnicos hace imposible evaluar su utilidad práctica para desarrolladores o investigadores. Se recomienda precaución antes de considerar su uso en entornos de producción.
 
@@ -54,6 +54,6 @@ No disponible. No se conocen modelos comparables de la misma categoría, ya que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/creatormirai/AssumethePosition
+- Repositorio en Hugging Face: https://huggingface.co/creatormirai/AssumethePosition
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la búsqueda web.

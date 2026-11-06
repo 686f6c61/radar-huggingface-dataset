@@ -73,7 +73,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/RicardoEstep/RPBizkitRemiX-v1-12B)
+- [Modelo en Hugging Face](https://huggingface.co/RicardoEstep/RPBizkitRemiX-v1-12B)
 - [Versión cuantizada GGUF](https://huggingface.co/RicardoEstep/RPBizkitRemiX-v1-12B-GGUF)
 - [Paper Model Stock (arxiv 2403.19522)](https://arxiv.org/abs/2403.19522)
 - [Repositorio Mergekit](https://github.com/cg123/mergekit)

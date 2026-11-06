@@ -67,7 +67,7 @@ No se dispone de datos de comparación directa con otros modelos en la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-md-real-force-loss
+- Repositorio Hugging Face: https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-md-real-force-loss
 - Repositorio relacionado (modelo real b-force): https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-real-b-force
 - Repositorio relacionado (modelo real a-vision-pos): https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-real-a-vision-pos
 - GitHub de XLeRobot (proyecto principal): https://github.com/Vector-Wangel/XLeRobot

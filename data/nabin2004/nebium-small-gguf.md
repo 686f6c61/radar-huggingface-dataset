@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nebium-Small-GGUF es la version cuantizada en formato GGUF de Nebium-Small, un modelo de lenguaje causal de dominio muy restringido desarrollado por el usuario nabin2004 y especializado en la prediccion de jugadas de ajedrez en notacion UCI. No es un modelo de proposito general: su vocabario esta limitado a 5000 tokens BPE de notacion UCI, de modo que su tarea es continuar secuencias de jugadas ("e2e4 e7e5 g1f3") prediciendo la siguiente jugada legal en el contexto de una partida. La model card declara 117M de parametros, aunque la ficha de HuggingFace del repositorio notifica 6.441.472 parametros totales, una discrepancia que el autor no explica.
+Nebium-Small-GGUF es la version cuantizada en formato GGUF de Nebium-Small, un modelo de lenguaje causal de dominio muy restringido desarrollado por el usuario nabin2004 y especializado en la prediccion de jugadas de ajedrez en notacion UCI. No es un modelo de proposito general: su vocabario esta limitado a 5000 tokens BPE de notacion UCI, de modo que su tarea es continuar secuencias de jugadas ("e2e4 e7e5 g1f3") prediciendo la siguiente jugada legal en el contexto de una partida. La model card declara 117M de parametros, aunque la ficha de Hugging Face del repositorio notifica 6.441.472 parametros totales, una discrepancia que el autor no explica.
 
 El interes practico del modelo reside en su formato de distribucion: los binarios GGUF estan pensados para inferencia local en CPU y GPU mediante llama.cpp, Ollama y los bindings de Python llama-cpp-python. Con una ventana de contexto de 1024 tokens y una arquitectura transformer causal con RoPE (768 dimensiones ocultas, 12 cabezas de atencion, 12 capas), el modelo esta disenado para ejecutarse en entornos con recursos muy limitados, incluidos dispositivos de borde, sin necesidad de GPU dedicada.
 
@@ -13,7 +13,7 @@ El momento de publicacion del repositorio (septiembre de 2026 segun los metadato
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer causal con Rotary Position Embeddings (RoPE) |
-| Parametros totales | 117M segun la model card; 6.441.472 segun el dato de safetensors del repositorio en HuggingFace (discrepancia no aclarada por el autor) |
+| Parametros totales | 117M segun la model card; 6.441.472 segun el dato de safetensors del repositorio en Hugging Face (discrepancia no aclarada por el autor) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | 1024 tokens |
 | Tipos de cuantizacion | FP16, Q8_0 y Q4_K_M (tres binarios GGUF publicados) |
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - FP16: aproximadamente 234 MB de pesos.
   - Q8_0: aproximadamente 120-130 MB.
   - Q4_K_M: aproximadamente 70-80 MB.
-- Si el recuento real fuese el reportado por HuggingFace (6,4M de parametros), las huellas serian aproximadamente 20 veces menores (del orden de 13 MB en FP16).
+- Si el recuento real fuese el reportado por Hugging Face (6,4M de parametros), las huellas serian aproximadamente 20 veces menores (del orden de 13 MB en FP16).
 - GPU recomendadas: cualquier GPU con mas de 1 GB de VRAM es suficiente; no se requiere A100, H100 ni RTX 4090. Una GTX 1050, una GPU integrada moderna o incluso CPU pura son suficientes.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo y en la mayoria de SoC integrados.
 - Opciones de despliegue: llama.cpp (CLI `llama-cli`), Ollama (via Modelfile), llama-cpp-python, y cualquier runtime compatible con GGUF.
@@ -82,7 +82,7 @@ Comparativa con alternativas externas (modelos de ajedrez de proposito especific
 
 ## Limitaciones y advertencias
 
-- Discrepancia de parametros: la model card declara 117M de parametros mientras que la ficha de HuggingFace reporta 6.441.472. Cualquier estimacion de recursos o capacidad debe verificarse directamente sobre los binarios.
+- Discrepancia de parametros: la model card declara 117M de parametros mientras que la ficha de Hugging Face reporta 6.441.472. Cualquier estimacion de recursos o capacidad debe verificarse directamente sobre los binarios.
 - Dominio extremadamente cerrado: el vocabario de 5000 tokens esta limitado a notacion UCI, por lo que el modelo no puede procesar ni generar lenguaje natural. No es util como chatbot ni como asistente general.
 - Contexto muy corto: 1024 tokens, suficiente para un historial de jugadas pero insuficiente para incorporar comentarios, metadatos de partida o instrucciones largas.
 - Riesgo de jugadas ilegales: al ser un modelo generativo y no un motor con validacion de reglas, puede producir secuencias que no son legales en la posicion dada. Se requiere validacion externa con una libreria de reglas de ajedrez en cualquier uso productivo.
@@ -96,7 +96,7 @@ Comparativa con alternativas externas (modelos de ajedrez de proposito especific
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/nabin2004/nebium-small-gguf
+- Repositorio GGUF en Hugging Face: https://huggingface.co/nabin2004/nebium-small-gguf
 - Pesos base en PyTorch: https://huggingface.co/nabin2004/nebium-small
 - Codigo fuente del framework: https://github.com/nabin2004/nebium
 - llama.cpp: https://github.com/ggerganov/llama.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Barbie-Wire es un repositorio de modelo publicado en HuggingFace por el usuario SnazzyArtist22 bajo el identificador SnazzyArtist22/Barbie-Wire. En el momento de redactar esta ficha, la model card no contiene ninguna descripcion tecnica: unicamente una linea de licencia con valor "unknown". No se declara pipeline, idioma, arquitectura, numero de parametros ni longitud de contexto.
+Barbie-Wire es un repositorio de modelo publicado en Hugging Face por el usuario SnazzyArtist22 bajo el identificador SnazzyArtist22/Barbie-Wire. En el momento de redactar esta ficha, la model card no contiene ninguna descripcion tecnica: unicamente una linea de licencia con valor "unknown". No se declara pipeline, idioma, arquitectura, numero de parametros ni longitud de contexto.
 
 Los unicos datos objetivos disponibles son los metadatos del repositorio: 0,1 GB de tamano, 0 descargas, 0 "likes", sin pipeline asignado, licencia sin especificar y ningun idioma declarado. El repositorio se creo y se actualizo el 26 de septiembre de 2026, con unos 18 segundos de diferencia entre ambos eventos, lo que apunta a una subida unica sin mantenimiento posterior.
 
@@ -85,6 +85,6 @@ No disponible. Sin conocer la tarea, el tamano ni la arquitectura de Barbie-Wire
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SnazzyArtist22/Barbie-Wire
+- Repositorio en Hugging Face: https://huggingface.co/SnazzyArtist22/Barbie-Wire
 - Pagina del autor: https://huggingface.co/SnazzyArtist22
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible en la informacion proporcionada.

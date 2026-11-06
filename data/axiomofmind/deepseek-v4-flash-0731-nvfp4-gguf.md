@@ -79,12 +79,12 @@ No se dispone de datos de otros modelos comparables (p. ej., Llama, Qwen) en la 
 - La cuantización a 4 bits (NVFP4) puede degradar la calidad de la generación, especialmente en tareas de razonamiento complejo o matemáticas.
 - No se han publicado datos de sesgos, alucinación o comportamiento en idiomas distintos del inglés, por lo que su uso en producción requiere evaluación propia.
 - La ventana de 1M de tokens implica un consumo de memoria muy alto durante la inferencia; en hardware limitado, la latencia puede ser elevada.
-- El repositorio tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es muy reciente o poco probado por la comunidad.
+- El repositorio tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es muy reciente o poco probado por la comunidad.
 - Licencia Apache 2.0 permite uso comercial, pero la ausencia de verificación oficial por parte de DeepSeek sobre esta cuantización debe tenerse en cuenta.
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/axiomofmind/DeepSeek-V4-Flash-0731-NVFP4-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/axiomofmind/DeepSeek-V4-Flash-0731-NVFP4-GGUF
 - Modelo oficial de DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Modelo DeepSeek-V4-Flash (general): https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Documentación de Unsloth sobre DeepSeek-V4: https://unsloth.ai/docs/models/deepseek-v4
@@ -168,12 +168,12 @@ No se dispone de datos de comparación con otros modelos de la misma categoría 
 - La cuantización NVFP4 a 4 bits puede degradar la calidad de la generación en tareas de razonamiento complejo o codificación detallada.
 - No se han documentado sesgos ni comportamientos específicos del modelo; se requiere evaluación propia antes de uso en producción.
 - La ventana de contexto de 1M tokens implica un consumo de memoria muy alto durante la inferencia, lo que limita su despliegue a hardware de gama alta.
-- El repositorio tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es muy reciente y no ha sido ampliamente probado por la comunidad.
+- El repositorio tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es muy reciente y no ha sido ampliamente probado por la comunidad.
 - La licencia Apache 2.0 permite uso comercial, pero la ausencia de garantías sobre la cuantización de terceros debe considerarse.
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/axiomofmind/DeepSeek-V4-Flash-0731-NVFP4-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/axiomofmind/DeepSeek-V4-Flash-0731-NVFP4-GGUF
 - Modelo oficial de DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Página general de DeepSeek-V4-Flash: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Documentación de Unsloth sobre DeepSeek-V4: https://unsloth.ai/docs/models/deepseek-v4

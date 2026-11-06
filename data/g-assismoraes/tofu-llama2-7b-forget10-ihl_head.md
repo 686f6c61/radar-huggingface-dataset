@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tofu-llama2-7b-forget10-ihl_head es un checkpoint derivado de Meta Llama 2 7B, publicado por el usuario g-assismoraes en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un ajuste fino parcial sobre locuslab/tofu_ft_llama2-7b, que a su vez es un fine-tune de Llama 2 7B sobre el conjunto de datos TOFU (Task of Fictitious Unlearning). El modelo pertenece, por tanto, a la familia de artefactos experimentales de "machine unlearning": el objetivo es eliminar selectivamente el conocimiento de un subconjunto del corpus de entrenamiento (el split forget10) sin degradar el rendimiento sobre el resto.
+tofu-llama2-7b-forget10-ihl_head es un checkpoint derivado de Meta Llama 2 7B, publicado por el usuario g-assismoraes en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un ajuste fino parcial sobre locuslab/tofu_ft_llama2-7b, que a su vez es un fine-tune de Llama 2 7B sobre el conjunto de datos TOFU (Task of Fictitious Unlearning). El modelo pertenece, por tanto, a la familia de artefactos experimentales de "machine unlearning": el objetivo es eliminar selectivamente el conocimiento de un subconjunto del corpus de entrenamiento (el split forget10) sin degradar el rendimiento sobre el resto.
 
 La model card es extremadamente escueta y describe la intervención como "Token IHL + retain CE; trained: ['lm_head.weight']". Esto indica que solo se ha actualizado la matriz de proyección final (lm_head) mediante una combinación de una pérdida de retención (cross-entropy sobre el conjunto retain) y una señal de tipo IHL (probablemente una variante de "influence-based head loss" o similar), con el resto de pesos congelados. El prefijo "ihl_head" en el nombre del repositorio confirma que la intervención se limita a la cabeza de salida.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| g-assismoraes/tofu-llama2-7b-forget10-ihl_head | 6,74B | no disponible | Unlearning experimental (forget10) | Llama 2 | HuggingFace |
-| locuslab/tofu_ft_llama2-7b | 6,74B | no disponible | Fine-tune TOFU completo (modelo base) | Llama 2 | HuggingFace |
-| meta-llama/Llama-2-7b-hf | 6,74B | 4096 tokens | Modelo generalista | Llama 2 | HuggingFace |
-| locuslab/tofu_llama2-7b | 6,74B | no disponible | Modelo TOFU original antes del fine-tune | Llama 2 | HuggingFace |
+| g-assismoraes/tofu-llama2-7b-forget10-ihl_head | 6,74B | no disponible | Unlearning experimental (forget10) | Llama 2 | Hugging Face |
+| locuslab/tofu_ft_llama2-7b | 6,74B | no disponible | Fine-tune TOFU completo (modelo base) | Llama 2 | Hugging Face |
+| meta-llama/Llama-2-7b-hf | 6,74B | 4096 tokens | Modelo generalista | Llama 2 | Hugging Face |
+| locuslab/tofu_llama2-7b | 6,74B | no disponible | Modelo TOFU original antes del fine-tune | Llama 2 | Hugging Face |
 
 La comparación relevante es con locuslab/tofu_ft_llama2-7b: este checkpoint modifica únicamente `lm_head.weight`, por lo que las diferencias de rendimiento respecto al base son atribuibles exclusivamente a esa matriz. No se dispone de métricas publicadas de olvido (forget quality) ni de retención (retain quality) para establecer una comparación cuantitativa.
 
@@ -84,7 +84,7 @@ La comparación relevante es con locuslab/tofu_ft_llama2-7b: este checkpoint mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_head
+- Modelo en Hugging Face: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_head
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo original TOFU (referencia): https://huggingface.co/locuslab/tofu_llama2-7b
 - Llama 2 7B: https://huggingface.co/meta-llama/Llama-2-7b-hf

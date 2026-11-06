@@ -43,13 +43,13 @@ Tampoco hay datos sobre el entrenamiento: se desconoce el numero de tokens utili
 - Prototipado rapido de chatbots de nicho: al ser un fine-tune pequeno, sirve como banco de pruebas para evaluar si un modelo de 3B es suficiente para un dominio concreto antes de invertir en modelos mayores.
 - Generacion de contenido editorial: redaccion de textos divulgativos o descriptivos sobre astrologia vedica en ingles, con revision humana posterior.
 - Despliegue en dispositivos con recursos limitados: con la cuantizacion Q2_K (1,4 GB) puede ejecutarse en CPU mediante llama.cpp en equipos sin GPU dedicada, util para demos offline.
-- Base para nuevos ajustes finos: al disponer de pesos GGUF y del modelo base publico en HuggingFace, un desarrollador puede partir de el para un fine-tune adicional en otro dominio relacionado (por ejemplo, astrologia occidental o numerologia).
+- Base para nuevos ajustes finos: al disponer de pesos GGUF y del modelo base publico en Hugging Face, un desarrollador puede partir de el para un fine-tune adicional en otro dominio relacionado (por ejemplo, astrologia occidental o numerologia).
 - Educacion y experimentacion: uso en cursos o talleres sobre cuantizacion GGUF, ya que el repositorio incluye hasta doce variantes de cuantizacion con tamanos y notas de calidad, lo que permite estudiar el compromiso entre tamano y fidelidad.
 - Investigacion sobre sesgos en dominios esotericos: analizar como un modelo pequeno especializado reproduce o amplifica creencias y afirmaciones pseudocientificas al ser consultado sobre astrologia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio cuantizado ni los metadatos de HuggingFace incluyen puntuaciones de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion. El autor unicamente menciona un grafico externo de ikawrakow sobre perplejidad relativa entre tipos de cuantizacion, sin valores concretos asociados a este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio cuantizado ni los metadatos de Hugging Face incluyen puntuaciones de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion. El autor unicamente menciona un grafico externo de ikawrakow sobre perplejidad relativa entre tipos de cuantizacion, sin valores concretos asociados a este modelo.
 
 ## Requisitos de hardware
 
@@ -79,10 +79,10 @@ No hay datos de rendimiento del modelo que permitan una comparacion cuantitativa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Vedic-Astrology-v3.0 (GGUF) | 3,09B | no disponible | no disponible | HuggingFace (mradermacher) |
-| Qwen2.5-3B-Instruct | aprox. 3,09B | 32.768 tokens | Apache 2.0 | HuggingFace |
-| Llama-3.2-3B-Instruct | aprox. 3,21B | 128.000 tokens | Llama 3.2 Community License | HuggingFace |
-| Phi-3.5-mini-instruct | aprox. 3,8B | 128.000 tokens | MIT | HuggingFace |
+| Vedic-Astrology-v3.0 (GGUF) | 3,09B | no disponible | no disponible | Hugging Face (mradermacher) |
+| Qwen2.5-3B-Instruct | aprox. 3,09B | 32.768 tokens | Apache 2.0 | Hugging Face |
+| Llama-3.2-3B-Instruct | aprox. 3,21B | 128.000 tokens | Llama 3.2 Community License | Hugging Face |
+| Phi-3.5-mini-instruct | aprox. 3,8B | 128.000 tokens | MIT | Hugging Face |
 
 Nota: el recuento exacto de parametros de Vedic-Astrology-v3.0 (3.085.938.688) coincide con el de la familia Qwen2.5-3B, lo que podria indicar que el modelo base deriva de ella, pero esto no esta confirmado por el autor y debe tratarse como una mera observacion.
 

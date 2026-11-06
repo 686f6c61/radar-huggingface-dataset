@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AIxFuneStudio/2026_November es un modelo publicado en HuggingFace por el usuario AIxFuneStudio el 1 de noviembre de 2026. En el momento de redactar esta ficha, el repositorio no incluye información pública sobre arquitectura, tamaño, contexto, idiomas ni pipeline de uso, y el acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos o consultar la model card completa.
+AIxFuneStudio/2026_November es un modelo publicado en Hugging Face por el usuario AIxFuneStudio el 1 de noviembre de 2026. En el momento de redactar esta ficha, el repositorio no incluye información pública sobre arquitectura, tamaño, contexto, idiomas ni pipeline de uso, y el acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos o consultar la model card completa.
 
 La única información verificable es la licencia declarada como "other", la región "us" y las marcas temporales de creación y actualización (apenas dos minutos de diferencia), lo que sugiere una subida inicial sin documentación asociada o con la model card aún por publicar. No hay descargas ni likes registrados, lo que es coherente con un lanzamiento reciente y sin difusión.
 
@@ -25,7 +25,7 @@ Dada la ausencia de datos técnicos, esta ficha recoge lo que se puede afirmar c
 
 No se ha publicado información sobre la arquitectura del modelo (transformer denso, MoE, SSM, híbrido u otra), el número de parámetros, la composición del dataset de entrenamiento, el volumen de tokens procesados ni si se aplicaron técnicas de alineación como RLHF, DPO o similares. La model card accesible desde el repositorio no aporta detalles técnicos y el acceso a los artefactos está restringido.
 
-Tampoco hay información sobre innovaciones técnicas destacables (decodificación especulativa, atención lineal, contextos extendidos, multimodalidad, etc.) ni sobre el proceso de ajuste fino. La etiqueta "region:us" indica únicamente la región de publicación en HuggingFace y no aporta información sobre el origen de los datos.
+Tampoco hay información sobre innovaciones técnicas destacables (decodificación especulativa, atención lineal, contextos extendidos, multimodalidad, etc.) ni sobre el proceso de ajuste fino. La etiqueta "region:us" indica únicamente la región de publicación en Hugging Face y no aporta información sobre el origen de los datos.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No disponible. Sin datos de arquitectura, tamaño, contexto ni benchmarks no es 
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación técnica: no se puede evaluar idoneidad, rendimiento ni seguridad del modelo.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace y, presumiblemente, ser aprobado por el autor antes de descargar los pesos.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face y, presumiblemente, ser aprobado por el autor antes de descargar los pesos.
 - Licencia "other": las condiciones de uso comercial, redistribución y modificación no están claras y deben revisarse explícitamente antes de cualquier despliegue en producción.
 - Riesgo de alucinación y sesgos: desconocidos al no haber información sobre datos de entrenamiento ni evaluaciones.
 - Idiomas soportados: no confirmados; no se debe asumir un buen rendimiento en castellano.
@@ -74,5 +74,5 @@ No disponible. Sin datos de arquitectura, tamaño, contexto ni benchmarks no es 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIxFuneStudio/2026_November
+- Hugging Face: https://huggingface.co/AIxFuneStudio/2026_November
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

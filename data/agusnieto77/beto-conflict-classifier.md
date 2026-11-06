@@ -106,7 +106,7 @@ El clasificador BETO es más ligero y rápido que el clasificador Qwen del mismo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agusnieto77/beto-conflict-classifier
+- Modelo en Hugging Face: https://huggingface.co/agusnieto77/beto-conflict-classifier
 - Dataset de entrenamiento: https://huggingface.co/datasets/agusnieto77/conflicto-social-noticias-4034
 - Demo interactiva: https://huggingface.co/spaces/agusnieto77/beto-conflict-classifier-demo
 - Demo web alternativa: https://clasificador-beto.laboratoriodehumanidadesdigitales.ar

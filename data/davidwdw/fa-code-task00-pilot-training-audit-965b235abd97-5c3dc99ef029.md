@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El artefacto identificado como `davidwdw/fa-code-task00-pilot-training-audit-965b235abd97-5c3dc99ef029` es un repositorio publicado en HuggingFace por el usuario `davidwdw`. La model card disponible no describe un modelo de lenguaje en el sentido convencional: se presenta como un "archivo de flota privada" (private fleet archive) asociado a una receta canonica interna (`evaluations/2026-09-23_task00_centre_recovery_pilot`) y clasificado en el nivel (tier) "code".
+El artefacto identificado como `davidwdw/fa-code-task00-pilot-training-audit-965b235abd97-5c3dc99ef029` es un repositorio publicado en Hugging Face por el usuario `davidwdw`. La model card disponible no describe un modelo de lenguaje en el sentido convencional: se presenta como un "archivo de flota privada" (private fleet archive) asociado a una receta canonica interna (`evaluations/2026-09-23_task00_centre_recovery_pilot`) y clasificado en el nivel (tier) "code".
 
 No se dispone de informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion. El nombre del repositorio sugiere un artefacto de auditoria de un piloto de entrenamiento ("pilot-training-audit"), mas que un modelo listo para inferencia o distribucion publica.
 
@@ -68,7 +68,7 @@ No disponible. La informacion proporcionada no describe un modelo con caracteris
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| davidwdw/fa-code-task00-pilot-training-audit-965b235abd97-5c3dc99ef029 | no disponible | no disponible | no disponible | no disponible | Repositorio en HuggingFace, 0 descargas y 0 likes en el momento del registro |
+| davidwdw/fa-code-task00-pilot-training-audit-965b235abd97-5c3dc99ef029 | no disponible | no disponible | no disponible | no disponible | Repositorio en Hugging Face, 0 descargas y 0 likes en el momento del registro |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,6 +85,6 @@ No disponible. La informacion proporcionada no describe un modelo con caracteris
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-code-task00-pilot-training-audit-965b235abd97-5c3dc99ef029
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-code-task00-pilot-training-audit-965b235abd97-5c3dc99ef029
 - Receta canonica referenciada en la model card (ruta interna, sin URL publica): `evaluations/2026-09-23_task00_centre_recovery_pilot`
 - Paper, blog, repositorio de codigo o demo: no disponible

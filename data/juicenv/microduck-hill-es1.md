@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks numericos (recompensa media, tiempo
 
 | Modelo | Tipo | Base | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| juicenv/microduck-hill-es1 | Politica de control (ONNX) | HannesVonEssen/microduck-running | Ascenso de colinas 1,5 m | no disponible | HuggingFace |
-| HannesVonEssen/microduck-running | Politica de control | no disponible | Sprint de 2 m | Apache-2.0 | HuggingFace |
+| juicenv/microduck-hill-es1 | Politica de control (ONNX) | HannesVonEssen/microduck-running | Ascenso de colinas 1,5 m | no disponible | Hugging Face |
+| HannesVonEssen/microduck-running | Politica de control | no disponible | Sprint de 2 m | Apache-2.0 | Hugging Face |
 
 No se dispone de informacion sobre otras politicas comparables dentro del ecosistema microduck ni de sus especificaciones, por lo que la comparativa se limita al modelo base documentado. Datos adicionales: no disponible.
 
@@ -85,7 +85,7 @@ No se dispone de informacion sobre otras politicas comparables dentro del ecosis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juicenv/microduck-hill-es1
+- Modelo en Hugging Face: https://huggingface.co/juicenv/microduck-hill-es1
 - Modelo base: https://huggingface.co/HannesVonEssen/microduck-running
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento: pollen-robotics/microduck_rl (rama lean, commit 5a3636302)

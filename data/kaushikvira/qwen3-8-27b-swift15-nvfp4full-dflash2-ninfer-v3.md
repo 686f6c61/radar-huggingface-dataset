@@ -119,7 +119,7 @@ La comparación más informativa es la primera frente a la segunda: mismo motor,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaushikvira/Qwen3.8-27B-swift15-nvfp4full-dflash2-NInfer-v3
+- Modelo en Hugging Face: https://huggingface.co/kaushikvira/Qwen3.8-27B-swift15-nvfp4full-dflash2-NInfer-v3
 - Artefacto predecesor basado en Swift-1.0: https://huggingface.co/kaushikvira/Qwen3.8-27B-swift-abliterated-nvfp4full-dflash2-NInfer-v3
 - Variante sin post-entrenamiento Swift: https://huggingface.co/kaushikvira/Qwen3.8-27B-nvfp4full-dflash2-NInfer-v3
 - Pesos de origen (BF16, 18 shards): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b

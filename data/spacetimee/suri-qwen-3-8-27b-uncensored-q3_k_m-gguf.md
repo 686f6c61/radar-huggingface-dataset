@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Suri-Qwen-3.8-27B-Uncensored-Q3_K_M-GGUF | 26,9 B | no disponible | no disponible | no disponible | GGUF en HuggingFace (0 descargas, 0 likes) |
-| Suri-Qwen-3.8-27B-Uncensored (base, sin cuantizar) | 26,9 B | no disponible | no disponible | no disponible | safetensors en HuggingFace |
+| Suri-Qwen-3.8-27B-Uncensored-Q3_K_M-GGUF | 26,9 B | no disponible | no disponible | no disponible | GGUF en Hugging Face (0 descargas, 0 likes) |
+| Suri-Qwen-3.8-27B-Uncensored (base, sin cuantizar) | 26,9 B | no disponible | no disponible | no disponible | safetensors en Hugging Face |
 | Qwen2.5-32B-Instruct (referencia de tamano similar) | aprox. 32,5 B | 131.072 tokens | publicado por el autor del modelo | Apache 2.0 | ampliamente distribuido |
 | Gemma 2 27B (referencia de tamano similar) | 27 B | 8.192 tokens | publicado por el autor del modelo | Terminos de uso de Gemma | ampliamente distribuido |
 
@@ -88,7 +88,7 @@ Nota: los datos de las filas de referencia (Qwen2.5-32B-Instruct y Gemma 2 27B) 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored-Q3_K_M-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored-Q3_K_M-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

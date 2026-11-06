@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`xxuzihao2004/homework-generation` es un repositorio de HuggingFace que contiene una implementación de la arquitectura Swin Transformer en su variante "tiny" (Swin-T), empaquetada con una configuración explícita y un checkpoint de inicialización. El autor lo publica bajo el identificador `xxuzihao2004` y lo etiqueta genéricamente como "generation", aunque la model card aclara de forma explícita que no se trata de un modelo entrenado ni de un release con benchmarks: es un punto de partida reproducible para experimentación.
+`xxuzihao2004/homework-generation` es un repositorio de Hugging Face que contiene una implementación de la arquitectura Swin Transformer en su variante "tiny" (Swin-T), empaquetada con una configuración explícita y un checkpoint de inicialización. El autor lo publica bajo el identificador `xxuzihao2004` y lo etiqueta genéricamente como "generation", aunque la model card aclara de forma explícita que no se trata de un modelo entrenado ni de un release con benchmarks: es un punto de partida reproducible para experimentación.
 
 El interés técnico es limitado pero concreto: se trata de una implementación propia (no un checkpoint oficial de Microsoft) de Swin-T con atención dilatada, fusión bilineal, activación mish y normalización por batch, acompañada de un `pipeline.py` ejecutable, un `config.json`, un `training_args.json` con la receta por defecto (Adam con warmup constante) y un `model.safetensors` que sirve únicamente para pruebas de humo. El recuento real de parámetros en safetensors es de 33.088, un valor muy alejado de los ~28M de un Swin-T estándar, lo que sugiere que el checkpoint publicado no corresponde a la arquitectura completa descrita.
 
@@ -81,5 +81,5 @@ La comparación directa es limitada: el repositorio analizado no es un modelo en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xxuzihao2004/homework-generation
+- Repositorio en Hugging Face: https://huggingface.co/xxuzihao2004/homework-generation
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

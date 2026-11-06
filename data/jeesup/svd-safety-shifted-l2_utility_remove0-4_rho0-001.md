@@ -35,7 +35,7 @@ No hay fine-tuning de recuperación tras la compresión. El desplazamiento de se
 - Medición de utilidad mediante perplejidad en WikiText-2.
 - No se documenta soporte de tool calling, function calling, agentes ni multi-step reasoning en la información disponible.
 - No se documenta capacidad multilingüe específica ni modo de pensamiento, visión o audio.
-- No se documenta una pipeline de inferencia en HuggingFace (`pipeline: no disponible`).
+- No se documenta una pipeline de inferencia en Hugging Face (`pipeline: no disponible`).
 
 ## Casos de uso
 
@@ -64,8 +64,8 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-shifted-l2_utility_remove0.4_rho0.001 | 6.738.415.616 | No disponible | llama2 | HuggingFace, 14 descargas | Checkpoint de investigación con compresión SVD y sesgo de seguridad |
-| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4096 tokens (según la documentación original de Llama 2) | llama2 | HuggingFace, ampliamente disponible | Modelo base sin comprimir; referencia de utilidad y seguridad |
+| Jeesup/svd-safety-shifted-l2_utility_remove0.4_rho0.001 | 6.738.415.616 | No disponible | llama2 | Hugging Face, 14 descargas | Checkpoint de investigación con compresión SVD y sesgo de seguridad |
+| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4096 tokens (según la documentación original de Llama 2) | llama2 | Hugging Face, ampliamente disponible | Modelo base sin comprimir; referencia de utilidad y seguridad |
 | Modelos comprimidos por poda o cuantización de la familia Llama 2 | Variable | Variable | Según modelo base | Variable | No se dispone de datos comparativos concretos en la información proporcionada |
 
 No se dispone de resultados de benchmarks de este checkpoint que permitan una comparación cuantitativa de rendimiento con las alternativas.
@@ -84,7 +84,7 @@ No se dispone de resultados de benchmarks de este checkpoint que permitan una co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l2_utility_remove0.4_rho0.001
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l2_utility_remove0.4_rho0.001
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Repositorio de Llama 2 (Meta): https://github.com/facebookresearch/llama
 - Artículo de Llama 2: https://arxiv.org/abs/2307.09288

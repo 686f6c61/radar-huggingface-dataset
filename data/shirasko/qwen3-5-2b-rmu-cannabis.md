@@ -45,7 +45,7 @@ No se proporcionan detalles sobre el conjunto de datos de entrenamiento, composi
 
 ## Benchmarks y rendimiento
 
-Se han proporcionado resultados del modelo en el repositorio de HuggingFace, comparando el modelo base con el modelo desaprendido en splits de entrenamiento y test, usando un protocolo de opcion multiple. La siguiente tabla resume las metricas de calidad general:
+Se han proporcionado resultados del modelo en el repositorio de Hugging Face, comparando el modelo base con el modelo desaprendido en splits de entrenamiento y test, usando un protocolo de opcion multiple. La siguiente tabla resume las metricas de calidad general:
 
 | Metrica | Baseline (train) | After unlearn (train) | Baseline (test) | After unlearn (test) |
 |---|---|---|---|---|
@@ -98,5 +98,5 @@ No se dispone de datos suficientes para comparar el rendimiento con estos modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shirasko/qwen3.5-2b-rmu-cannabis
+- Modelo en Hugging Face: https://huggingface.co/shirasko/qwen3.5-2b-rmu-cannabis
 - Modelo similar de la misma familia: https://huggingface.co/shirasko/qwen2.5-3b-instruct-rmu-cannabis

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash es un modelo multimodal de mezcla de expertos (MoE) publicado en HuggingFace bajo el identificador Dido599999/DeepSeek-V4.1-Flash, un repositorio de terceros que reproduce la model card y los enlaces de la organizacion oficial DeepSeek AI. Segun la documentacion adjunta, el modelo combina una arquitectura Causal Encoder-Decoder (CED) de 40 capas con 552B parametros de backbone declarados y una memoria condicional Engram de 196B parametros, procesa imagenes y texto de forma nativa y genera texto de forma autorregresiva.
+DeepSeek-V4.1-Flash es un modelo multimodal de mezcla de expertos (MoE) publicado en Hugging Face bajo el identificador Dido599999/DeepSeek-V4.1-Flash, un repositorio de terceros que reproduce la model card y los enlaces de la organizacion oficial DeepSeek AI. Segun la documentacion adjunta, el modelo combina una arquitectura Causal Encoder-Decoder (CED) de 40 capas con 552B parametros de backbone declarados y una memoria condicional Engram de 196B parametros, procesa imagenes y texto de forma nativa y genera texto de forma autorregresiva.
 
 Su rasgo diferencial es la compresion de la cache KV: la atencion dispersa CSA2 con cache principal en FP4 (formato E2M1) reduce el coste a unos 890 bytes por token, aproximadamente una cuarta parte que DeepSeek-V4-Flash y unas 437 veces menos que DeepSeek-V1. Ademas, activa solo 8B parametros por token en prefill y 16B en decode, lo que abarata las cargas con entradas muy largas y muchas llamadas de agente.
 
@@ -78,7 +78,7 @@ Las figuras referenciadas en el repositorio (assets/dsv41_agentic_performance.pn
 - Alternativa en nodos H100: 16xH100 de 80 GB (1.280 GB agregados) cubriria pesos y cache, a costa de un coste de interconexion elevado.
 - GPU de consumo: no cabe. Una RTX 4090 (24 GB) o una RTX 5090 (32 GB) son insuficientes incluso a 4 bits (mas de 380 GB de pesos), y no se ofrecen pesos GGUF en el repositorio.
 - Cache KV: 890 bytes por token en la parte global, es decir unos 0,89 GB a 1M tokens; el coste real es bajo frente a los pesos, aunque siguen existiendo estados de atencion de ventana deslizante y activaciones.
-- Opciones de despliegue: la libreria declarada es transformers y la etiqueta endpoints_compatible apunta a HuggingFace Inference Endpoints. Compatibilidad con vLLM, TGI, llama.cpp u Ollama: no disponible en la informacion facilitada, y llama.cpp exigiria pesos GGUF que no aparecen en el repositorio.
+- Opciones de despliegue: la libreria declarada es transformers y la etiqueta endpoints_compatible apunta a Hugging Face Inference Endpoints. Compatibilidad con vLLM, TGI, llama.cpp u Ollama: no disponible en la informacion facilitada, y llama.cpp exigiria pesos GGUF que no aparecen en el repositorio.
 - Latencia y throughput: no disponibles. Como referencia estructural, el modelo activa 8B parametros por token en prefill y 16B en decode, por lo que el coste por token se aproxima al de un modelo denso de ese tamano, mientras que el cuello de botella de capacidad lo marca el total de 763,2 B parametros.
 
 ## Comparativa con modelos similares
@@ -107,10 +107,10 @@ No se dispone de datos de parametros, contexto, licencia ni rendimiento de los m
 
 ## Enlaces
 
-- Repositorio en HuggingFace (subidor tercero): https://huggingface.co/Dido599999/DeepSeek-V4.1-Flash
+- Repositorio en Hugging Face (subidor tercero): https://huggingface.co/Dido599999/DeepSeek-V4.1-Flash
 - Repositorio oficial referenciado por la model card: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe tecnico citado en la model card (PDF): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organizacion DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Sitio corporativo de DeepSeek: https://www.deepseek.com/
 - Interfaz de chat de DeepSeek: https://chat.deepseek.com/
 - Cuenta de X/Twitter referenciada en la model card: https://twitter.com/deepseek_ai

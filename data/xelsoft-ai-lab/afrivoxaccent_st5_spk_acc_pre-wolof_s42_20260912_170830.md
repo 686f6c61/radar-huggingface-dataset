@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260912_170830 es un checkpoint de la familia SpeechT5 publicado por el usuario xelsoft-ai-lab en HuggingFace. El repositorio contiene un unico checkpoint en formato safetensors con 144.439.266 parametros (~144,4 M) y un tamano total de 0,6 GB, lo que es coherente con un unico fichero de pesos en precision fp32. La libreria declarada es transformers y el tag principal es speecht5, lo que identifica la arquitectura como SpeechT5, un modelo encoder-decoder unificado para tareas de voz y texto.
+AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260912_170830 es un checkpoint de la familia SpeechT5 publicado por el usuario xelsoft-ai-lab en Hugging Face. El repositorio contiene un unico checkpoint en formato safetensors con 144.439.266 parametros (~144,4 M) y un tamano total de 0,6 GB, lo que es coherente con un unico fichero de pesos en precision fp32. La libreria declarada es transformers y el tag principal es speecht5, lo que identifica la arquitectura como SpeechT5, un modelo encoder-decoder unificado para tareas de voz y texto.
 
-El identificador del repositorio sugiere que se trata de un modelo de sintesis de voz (TTS) orientado al wolof, con condicionamiento por hablante y acento ("spk_acc"), entrenado con semilla 42 ("s42") y con fecha de creacion 2026-09-12. Sin embargo, esta interpretacion procede unicamente de la nomenclatura del repositorio: la model card es la plantilla automatica de HuggingFace y no contiene descripcion, datos de entrenamiento, licencia ni idiomas declarados. El modelo acumula 0 descargas y 0 likes, por lo que no existe validacion por parte de la comunidad.
+El identificador del repositorio sugiere que se trata de un modelo de sintesis de voz (TTS) orientado al wolof, con condicionamiento por hablante y acento ("spk_acc"), entrenado con semilla 42 ("s42") y con fecha de creacion 2026-09-12. Sin embargo, esta interpretacion procede unicamente de la nomenclatura del repositorio: la model card es la plantilla automatica de Hugging Face y no contiene descripcion, datos de entrenamiento, licencia ni idiomas declarados. El modelo acumula 0 descargas y 0 likes, por lo que no existe validacion por parte de la comunidad.
 
 Por tanto, se trata de un artefacto experimental de investigacion mas que de un modelo listo para produccion: su relevancia actual es la de un posible candidato para TTS en una lengua africana de bajos recursos, pero cualquier evaluacion rigurosa requiere inspeccionar los pesos, identificar el vocoder asociado y verificar la procedencia de los datos antes de considerarlo utilizable.
 
@@ -87,7 +87,7 @@ Nota: los datos de los modelos alternativos no provienen de la informacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260912_170830
+- Modelo en Hugging Face: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260912_170830
 - Documentacion de SpeechT5 en transformers: https://huggingface.co/docs/transformers/model_doc/speecht5
 - Paper referenciado en el tag `arxiv:1910.09700` (corresponde a Lacoste et al., 2019, sobre calculo de emisiones de carbono, citado en la plantilla de la model card, no al paper de SpeechT5): https://arxiv.org/abs/1910.09700
 - No se encontraron otros enlaces relevantes en la busqueda web: los resultados devueltos corresponden a paginas de ayuda de YouTube y foros sin relacion con el modelo, por lo que no se incluyen.

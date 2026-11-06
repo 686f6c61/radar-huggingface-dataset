@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Base | Estilo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Incursio's Meme Diffusion (SDXL, Pony) | Pony Diffusion V6 / AutismMix_confetti | Artístico único, versátil, NSFW | other (permisos Civitai) | HuggingFace, Civitai |
-| Pony Diffusion V6 XL | SDXL | Generalista, orientado a furry y anime | other (no comercial) | HuggingFace |
+| Incursio's Meme Diffusion (SDXL, Pony) | Pony Diffusion V6 / AutismMix_confetti | Artístico único, versátil, NSFW | other (permisos Civitai) | Hugging Face, Civitai |
+| Pony Diffusion V6 XL | SDXL | Generalista, orientado a furry y anime | other (no comercial) | Hugging Face |
 | AutismMix_confetti | SDXL | Estilo anime/manga, colorido | other (permisos del autor) | Civitai |
 
 No se dispone de datos de rendimiento comparativo (como MMLU o HumanEval) porque estos modelos no son LLMs. La comparación se basa en características cualitativas. La principal ventaja de Incursio's Meme Diffusion es su estilo propio y la documentación de la receta de fusión, frente a alternativas más genéricas.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo (como MMLU o HumanEval) porque
 
 ## Enlaces
 
-- [HuggingFace: FallenIncursio/Incursio-s-Meme-Diffusion-SDXL-Pony-civitai-314404-edge-mirror](https://huggingface.co/FallenIncursio/Incursio-s-Meme-Diffusion-SDXL-Pony-civitai-314404-edge-mirror)
+- [Hugging Face: FallenIncursio/Incursio-s-Meme-Diffusion-SDXL-Pony-civitai-314404-edge-mirror](https://huggingface.co/FallenIncursio/Incursio-s-Meme-Diffusion-SDXL-Pony-civitai-314404-edge-mirror)
 - [Civitai: Incursio's Meme Diffusion (SDXL, Pony) - v2.7PDXL](https://civitai.com/models/314404/incursios-meme-diffusion-sdxl-pony)
 - [CivArchive: Incursio's Meme Diffusion (SDXL, Pony)](https://civarchive.com/models/314404?modelVersionId=712408)
 - [Diffus.me: Incursio's Meme Diffusion (SDXL, Pony) - v2.7PDXL](https://www.diffus.me/models/incursio-s-meme-diffusion-sdxl-pony-v2-7pdxl)

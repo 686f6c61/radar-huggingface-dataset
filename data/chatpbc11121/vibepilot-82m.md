@@ -78,7 +78,7 @@ No se dispone de información sobre modelos comparables del mismo tamaño (≈80
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chatpbc11121/VibePilot-82M
+- Repositorio Hugging Face: https://huggingface.co/chatpbc11121/VibePilot-82M
 - Repositorio mencionado en la model card (posible typo): https://huggingface.co/chatpbc1/VibePilot-255B
 - Documentación de Transformers: https://huggingface.co/docs/transformers/main/en/training
 - Documentación de TRL SFT Trainer: https://huggingface.co/docs/trl/en/sft_trainer

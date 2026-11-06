@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K ni
 
 | Modelo | Parametros / tamano | Entrada | Contexto / modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jaichang/embeddinggemma2-global-birds-2000-litert` (este repositorio) | Estudiantes de 9,24 MB y 14,70 MB; torres INT8 de 22,38 MB y 30,90 MB | Imagen 160x160; audio 5 s a 16 kHz | Embeddings de 768 dimensiones, vision y audio | CC BY-SA 4.0 | HuggingFace, ONNX y TFLite |
-| `jaichang/embeddinggemma2-global-birds-2000` (maestro) | 740M; `model.safetensors` de 1,2 GB | Imagen y audio (segun el maestro) | Embeddings de 768 dimensiones, vision y audio | no disponible en la informacion proporcionada | HuggingFace |
+| `jaichang/embeddinggemma2-global-birds-2000-litert` (este repositorio) | Estudiantes de 9,24 MB y 14,70 MB; torres INT8 de 22,38 MB y 30,90 MB | Imagen 160x160; audio 5 s a 16 kHz | Embeddings de 768 dimensiones, vision y audio | CC BY-SA 4.0 | Hugging Face, ONNX y TFLite |
+| `jaichang/embeddinggemma2-global-birds-2000` (maestro) | 740M; `model.safetensors` de 1,2 GB | Imagen y audio (segun el maestro) | Embeddings de 768 dimensiones, vision y audio | no disponible en la informacion proporcionada | Hugging Face |
 | Alternativas genericas de embeddings de imagen (por ejemplo CLIP o variantes de MobileNet) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparativa con datos verificables es contra el modelo maestro: el repositorio sacrifica entre 1 y 2 ordenes de magnitud en tamano (de 1,2 GB a 9,24-30,90 MB) manteniendo la coherencia en el espacio de embeddings, con una similitud coseno media de 0,8841 en vision y 0,9086 en audio frente a las representaciones del maestro. No se dispone de datos comparativos con otros modelos de embeddings para identificacion de aves en la informacion proporcionada.
@@ -97,6 +97,6 @@ La unica comparativa con datos verificables es contra el modelo maestro: el repo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jaichang/embeddinggemma2-global-birds-2000-litert
+- Repositorio en Hugging Face: https://huggingface.co/jaichang/embeddinggemma2-global-birds-2000-litert
 - Modelo base y maestro (740M): https://huggingface.co/jaichang/embeddinggemma2-global-birds-2000
 - Los resultados de la busqueda web proporcionados no contienen ningun enlace relevante para este modelo (devuelven calculadoras de valores de un juego de Roblox), por lo que no hay papers, blogs ni demos adicionales que citar.

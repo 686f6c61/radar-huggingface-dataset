@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Tipo | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SigLIP 2 So400m (este modelo) | 1.136.039.602 | Doble torre vision-texto | Imagenes 384x384, parches 16x16 | Apache 2.0 | HuggingFace (checkpoint original y esta copia) |
-| SigLIP So400m (SigLIP 1) | aproximadamente 878 M (torre de vision) | Doble torre vision-texto | Imagenes 384x384, parches 14x14 | Apache 2.0 | HuggingFace |
-| CLIP ViT-L/14 | aproximadamente 428 M | Doble torre vision-texto | Imagenes 224x224 | MIT (segun variante) | HuggingFace, OpenAI |
-| DINOv2 (ViT-L/14) | aproximadamente 300 M | Encoder visual auto-supervisado | Imagenes 224-518 px | Apache 2.0 | HuggingFace, Meta |
+| SigLIP 2 So400m (este modelo) | 1.136.039.602 | Doble torre vision-texto | Imagenes 384x384, parches 16x16 | Apache 2.0 | Hugging Face (checkpoint original y esta copia) |
+| SigLIP So400m (SigLIP 1) | aproximadamente 878 M (torre de vision) | Doble torre vision-texto | Imagenes 384x384, parches 14x14 | Apache 2.0 | Hugging Face |
+| CLIP ViT-L/14 | aproximadamente 428 M | Doble torre vision-texto | Imagenes 224x224 | MIT (segun variante) | Hugging Face, OpenAI |
+| DINOv2 (ViT-L/14) | aproximadamente 300 M | Encoder visual auto-supervisado | Imagenes 224-518 px | Apache 2.0 | Hugging Face, Meta |
 
 Comparativa de rendimiento entre estos modelos: no disponible en la información proporcionada. Las diferencias cualitativas documentadas en el paper de SigLIP 2 son mejoras en comprensión semántica, localización y características densas respecto a SigLIP 1, además de cobertura multilingüe.
 
@@ -93,7 +93,7 @@ Comparativa de rendimiento entre estos modelos: no disponible en la información
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CollectionStudio/siglip2-so400m-patch16-384
+- Modelo en Hugging Face: https://huggingface.co/CollectionStudio/siglip2-so400m-patch16-384
 - Checkpoint original de Google: https://huggingface.co/google/siglip2-so400m-patch16-384
 - Paper de SigLIP 2: https://arxiv.org/abs/2502.14786
 - Paper de SigLIP: https://arxiv.org/abs/2303.15343

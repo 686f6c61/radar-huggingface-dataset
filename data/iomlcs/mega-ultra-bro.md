@@ -2,11 +2,11 @@
 
 ## Resumen
 
-iomlcs/mega-ultra-bro es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario iomlcs, entrenado sobre el modelo base unsloth/gemma-4-e2b-it-unsloth-bnb-4bit. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de 25.337.856 parámetros (unos 25,3 millones) que deben cargarse junto al modelo base para poder generar texto. El repositorio ocupa 0,2 GB e incluye etiquetas que apuntan a safetensors y a gguf, además de la librería PEFT 0.18.1 como framework declarado.
+iomlcs/mega-ultra-bro es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario iomlcs, entrenado sobre el modelo base unsloth/gemma-4-e2b-it-unsloth-bnb-4bit. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de 25.337.856 parámetros (unos 25,3 millones) que deben cargarse junto al modelo base para poder generar texto. El repositorio ocupa 0,2 GB e incluye etiquetas que apuntan a safetensors y a gguf, además de la librería PEFT 0.18.1 como framework declarado.
 
 El modelo está etiquetado como `text-generation` y `conversational`, y el nombre del base apunta a una variante cuantizada en 4 bits mediante bitsandbytes (bnb-4bit), presumiblemente preparada por Unsloth para entrenamiento con bajo consumo de VRAM. La nomenclatura "e2b" sugiere una variante con un número reducido de parámetros efectivos, pero no se ha podido confirmar ninguna especificación del modelo base en la información disponible.
 
-La relevancia de esta ficha es limitada y, precisamente por eso, conviene ser explícito: la model card es la plantilla por defecto de HuggingFace sin rellenar (todos los campos aparecen como `[More Information Needed]`), no hay licencia declarada, no hay idiomas declarados, no hay resultados de evaluación y el repositorio registra 0 descargas y 0 likes en la fecha de consulta. Es, por tanto, un artefacto experimental o de prueba, no un modelo listo para producción.
+La relevancia de esta ficha es limitada y, precisamente por eso, conviene ser explícito: la model card es la plantilla por defecto de Hugging Face sin rellenar (todos los campos aparecen como `[More Information Needed]`), no hay licencia declarada, no hay idiomas declarados, no hay resultados de evaluación y el repositorio registra 0 descargas y 0 likes en la fecha de consulta. Es, por tanto, un artefacto experimental o de prueba, no un modelo listo para producción.
 
 ## Especificaciones técnicas
 
@@ -24,7 +24,7 @@ La relevancia de esta ficha es limitada y, precisamente por eso, conviene ser ex
 | Modelo base | unsloth/gemma-4-e2b-it-unsloth-bnb-4bit |
 | Pipeline | text-generation |
 | Tamaño del repositorio | 0,2 GB |
-| Fecha de creación | 2026-09-19 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-09-19 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 |---|---|---|---|---|---|
 | iomlcs/mega-ultra-bro | 25,3 M (solo adaptador) | No disponible | No disponible | 0 descargas, 0 likes | Adaptador LoRA sin documentar |
 | unsloth/gemma-4-e2b-it-unsloth-bnb-4bit (base) | No disponible | No disponible | No disponible | Repositorio referenciado como base | Modelo sobre el que se aplica el adaptador |
-| Otros adaptadores LoRA de la familia Gemma publicados en HuggingFace | Variable (típicamente 10-100 M) | Heredado del base | Habitualmente la del base | Amplia | La comparación cuantitativa no es posible sin datos de evaluación de este adaptador |
+| Otros adaptadores LoRA de la familia Gemma publicados en Hugging Face | Variable (típicamente 10-100 M) | Heredado del base | Habitualmente la del base | Amplia | La comparación cuantitativa no es posible sin datos de evaluación de este adaptador |
 
 No se dispone de datos de rendimiento de ninguno de los elementos comparados, por lo que no es posible establecer una comparativa cuantitativa fiable.
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento de ninguno de los elementos comparados, po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iomlcs/mega-ultra-bro
+- Modelo en Hugging Face: https://huggingface.co/iomlcs/mega-ultra-bro
 - Modelo base: https://huggingface.co/unsloth/gemma-4-e2b-it-unsloth-bnb-4bit
 - Documentación de PEFT: https://huggingface.co/docs/peft/index
 - Unsloth: https://github.com/unslothai/unsloth

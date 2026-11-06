@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Uigyu/qwen_2.5_3b_mh-control_h2_a_s2` es un checkpoint subido al Hub de HuggingFace por el usuario Uigyu. Por el nombre, parece tratarse de una variante de Qwen 2.5 con 3 mil millones de parametros, posiblemente modificada para control de atencion multi-cabeza (MH-control, por las siglas en el nombre). Sin embargo, la model card es una plantilla auto-generada sin ninguna informacion sustantiva: no se indica el desarrollador, el proceso de entrenamiento, los datos utilizados, la licencia ni los idiomas soportados.
+El modelo `Uigyu/qwen_2.5_3b_mh-control_h2_a_s2` es un checkpoint subido al Hub de Hugging Face por el usuario Uigyu. Por el nombre, parece tratarse de una variante de Qwen 2.5 con 3 mil millones de parametros, posiblemente modificada para control de atencion multi-cabeza (MH-control, por las siglas en el nombre). Sin embargo, la model card es una plantilla auto-generada sin ninguna informacion sustantiva: no se indica el desarrollador, el proceso de entrenamiento, los datos utilizados, la licencia ni los idiomas soportados.
 
 El repositorio pesa 0,1 GB, lo que sugiere pesos en precision reducida o cuantizados. Incluye la etiqueta `unsloth`, lo que indica que fue probablemente afinado con la libreria Unsloth para optimizacion de entrenamiento. No se dispone de documentacion sobre arquitectura interna, datos de entrenamiento, capacidades o rendimiento. La unica referencia a un paper (arxiv:1910.09700) corresponde a Lacoste et al. sobre estimacion de emisiones de carbono en ML, incluida en la plantilla estandar de Hugging Face, no a una publicacion tecnica del modelo.
 

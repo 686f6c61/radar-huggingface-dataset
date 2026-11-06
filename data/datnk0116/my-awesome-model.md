@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `DatNK0116/my-awesome-model` es un submódulo de tipo transformer encoder subido al Hub de HuggingFace por el usuario DatNK0116. Según los metadatos del repositorio, utiliza la librería `transformers`, el formato de pesos `safetensors` y está etiquetado como compatible con `feature-extraction` y con la referencia al paper de BERT (arXiv:1910.09700). El número total de parámetros declarado en los tensores es de 108.310.272, una cifra muy próxima a la de BERT-base (110M), lo que sugiere que se trata de una variante de BERT, aunque no se ha confirmado oficialmente.
+El modelo `DatNK0116/my-awesome-model` es un submódulo de tipo transformer encoder subido al Hub de Hugging Face por el usuario DatNK0116. Según los metadatos del repositorio, utiliza la librería `transformers`, el formato de pesos `safetensors` y está etiquetado como compatible con `feature-extraction` y con la referencia al paper de BERT (arXiv:1910.09700). El número total de parámetros declarado en los tensores es de 108.310.272, una cifra muy próxima a la de BERT-base (110M), lo que sugiere que se trata de una variante de BERT, aunque no se ha confirmado oficialmente.
 
 La model card asociada es completamente genérica y no aporta información sobre el desarrollador, el proceso de entrenamiento, los datos utilizados ni las capacidades específicas del modelo. Tampoco se especifica la licencia ni los idiomas soportados. En consecuencia, esta ficha se basa únicamente en los metadatos disponibles y en las inferencias razonables derivadas de las etiquetas, marcando explícitamente todos los campos sin confirmación como "no disponible".
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - **VRAM estimada para inferencia**: un modelo de ~108M parámetros en precisión fp32 ocupa aproximadamente 433 MB solo en pesos. Con overhead de activaciones y buffers, se recomienda al menos 1-2 GB de VRAM para inferencia básica. En cuantización int8, el peso se reduce a ~108 MB, permitiendo ejecución en GPUs con 1 GB o menos.
 - **GPU recomendadas**: cualquier GPU moderna con al menos 2 GB de VRAM (p.ej., NVIDIA GTX 1050 Ti, RTX 2060, etc.) puede ejecutar el modelo sin problemas. Para entrenamiento o fine-tuning, se recomienda una GPU con 4-6 GB de VRAM (p.ej., RTX 3060, RTX 4060) para lotes pequeños.
 - **Compatibilidad con hardware de consumo**: sí, cabe en GPUs de consumo típicas, incluso en CPU con suficiente RAM (el modelo en fp32 ocupa ~433 MB, por lo que un sistema con 8 GB de RAM puede ejecutarlo).
-- **Opciones de despliegue**: al ser un modelo de la librería `transformers`, puede servirse con HuggingFace Inference Endpoints, o mediante frameworks como vLLM, TGI, o llama.cpp si se convierte a formato GGUF. También es posible ejecutarlo con la API de `transformers` en Python.
+- **Opciones de despliegue**: al ser un modelo de la librería `transformers`, puede servirse con Hugging Face Inference Endpoints, o mediante frameworks como vLLM, TGI, o llama.cpp si se convierte a formato GGUF. También es posible ejecutarlo con la API de `transformers` en Python.
 - **Latencia y throughput**: no se dispone de datos medidos. Para un modelo de este tamaño, en una GPU moderna se espera una latencia de decenas de milisegundos por secuencia corta, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
@@ -63,10 +63,10 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DatNK0116/my-awesome-model | 108M | no disponible | no disponible | Hub de HuggingFace |
-| BERT-base (google-bert/bert-base-uncased) | 110M | 512 | Apache 2.0 | Hub de HuggingFace |
-| RoBERTa-base (FacebookAI/roberta-base) | 125M | 512 | MIT | Hub de HuggingFace |
-| DistilBERT (distilbert-base-uncased) | 66M | 512 | Apache 2.0 | Hub de HuggingFace |
+| DatNK0116/my-awesome-model | 108M | no disponible | no disponible | Hub de Hugging Face |
+| BERT-base (google-bert/bert-base-uncased) | 110M | 512 | Apache 2.0 | Hub de Hugging Face |
+| RoBERTa-base (FacebookAI/roberta-base) | 125M | 512 | MIT | Hub de Hugging Face |
+| DistilBERT (distilbert-base-uncased) | 66M | 512 | Apache 2.0 | Hub de Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -78,5 +78,5 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/DatNK0116/my-awesome-model)
+- [Página del modelo en Hugging Face](https://huggingface.co/DatNK0116/my-awesome-model)
 - [Paper de BERT (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700) — referencia incluida en los metadatos del modelo, no implica que el modelo esté basado oficialmente en este trabajo.

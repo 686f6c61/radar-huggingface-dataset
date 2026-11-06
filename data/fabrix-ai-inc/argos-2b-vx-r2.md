@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Argos-2b-vx-r2 es un modelo de lenguaje de 2.274 millones de parametros desarrollado por Fabrix-AI-Inc, una empresa que comercializa una plataforma de operaciones de TI gobernadas (VibeOps) basada en modelos de lenguaje especializados (SLMs). El modelo es un fine-tuning del modelo base unsloth/Qwen3.5-2B, entrenado con la libreria Unsloth y el framework TRL de HuggingFace, lo que permitio un entrenamiento aproximadamente 2 veces mas rapido que un fine-tuning convencional.
+Argos-2b-vx-r2 es un modelo de lenguaje de 2.274 millones de parametros desarrollado por Fabrix-AI-Inc, una empresa que comercializa una plataforma de operaciones de TI gobernadas (VibeOps) basada en modelos de lenguaje especializados (SLMs). El modelo es un fine-tuning del modelo base unsloth/Qwen3.5-2B, entrenado con la libreria Unsloth y el framework TRL de Hugging Face, lo que permitio un entrenamiento aproximadamente 2 veces mas rapido que un fine-tuning convencional.
 
 El modelo esta etiquetado como image-text-to-text, lo que sugiere capacidades multimodales, aunque la informacion disponible no detalla la arquitectura de vision especifica. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas, y esta disponible en formato safetensors. El repositorio tiene un tamano de 4.6 GB y fue creado en agosto de 2026, siendo un modelo relativamente reciente.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su posicionamiento dentro de la familia A
 
 El modelo se basa en la arquitectura Qwen3.5, un transformer decoder-only con atencion por ventanas deslizantes y atencion completa alternadas, segun el diseno de la familia Qwen3. El modelo base unsloth/Qwen3.5-2B es una version optimizada con Unsloth del modelo Qwen3.5-2B original, que incorpora optimizaciones de memoria y velocidad para fine-tuning e inferencia.
 
-El entrenamiento se realizo mediante fine-tuning supervisado (SFT) utilizando la libreria TRL de HuggingFace, con Unsloth como backend de entrenamiento. No se especifican los datos de entrenamiento, el numero de tokens, ni si se aplicaron tecnicas de RLHF o DPO. La etiqueta image-text-to-text sugiere que el modelo podria haber sido entrenado con datos multimodales, pero no hay detalles sobre la arquitectura de vision ni el proceso de alineacion multimodal.
+El entrenamiento se realizo mediante fine-tuning supervisado (SFT) utilizando la libreria TRL de Hugging Face, con Unsloth como backend de entrenamiento. No se especifican los datos de entrenamiento, el numero de tokens, ni si se aplicaron tecnicas de RLHF o DPO. La etiqueta image-text-to-text sugiere que el modelo podria haber sido entrenado con datos multimodales, pero no hay detalles sobre la arquitectura de vision ni el proceso de alineacion multimodal.
 
 ## Capacidades
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al se
 - VRAM estimada para inferencia: aproximadamente 5-6 GB en FP16 (2,27B parametros), o 2-3 GB en cuantizacion INT4/INT8 si se dispone de versiones cuantizadas.
 - GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM (RTX 3060, RTX 4060, etc.) para FP16; GPUs con 4 GB pueden funcionar con cuantizacion.
 - Cabe en GPUs de consumo: si, en la mayoria de GPUs modernas de consumo (RTX 3060 o superior).
-- Opciones de despliegue: compatible con text-generation-inference (TGI), vLLM, llama.cpp, Ollama y Transformers de HuggingFace.
+- Opciones de despliegue: compatible con text-generation-inference (TGI), vLLM, llama.cpp, Ollama y Transformers de Hugging Face.
 - Latencia y throughput: no disponible, pero para un modelo de 2B se espera una latencia de 20-50 ms por token en GPUs modernas.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fabrix-AI-Inc/Argos-2b-vx-r2
+- Modelo en Hugging Face: https://huggingface.co/Fabrix-AI-Inc/Argos-2b-vx-r2
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Unsloth: https://github.com/unslothai/unsloth
 - Fabrix.ai (plataforma VibeOps): https://www.fabrix.ai/

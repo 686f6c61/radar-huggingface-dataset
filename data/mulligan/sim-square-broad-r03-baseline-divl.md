@@ -104,10 +104,10 @@ La comparacion se limita a variantes del mismo autor y la misma familia de tarea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r03-baseline-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r03-baseline-divl
 - Modelo padre (actor congelado, IDQL): https://huggingface.co/mulligan/sim-square-broad-r03-baseline-idql
 - Variante de la ronda anterior: https://huggingface.co/mulligan/sim-square-broad-r00-baseline-divl
-- Organizacion del autor en HuggingFace: https://huggingface.co/mulligan
+- Organizacion del autor en Hugging Face: https://huggingface.co/mulligan
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
 - Dataset de teleoperacion base: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-baseline

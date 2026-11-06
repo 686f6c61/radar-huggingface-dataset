@@ -74,9 +74,9 @@ Exact match significa acertar los cinco campos. El conjunto de test es probablem
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| satquery-router-qwen2.5-1.5b-lora | 1,5B + 5,3M LoRA | no disponible | Enrutamiento JSON para SatQuery | Apache 2.0 | HuggingFace (MLX) |
-| Qwen2.5-3B-Instruct (prompted) | 3B | no disponible | Clasificacion por prompting con reglas y 12 ejemplos | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B-Instruct base (prompted) | 1,5B | no disponible | Clasificacion por prompting con reglas y 12 ejemplos | Apache 2.0 | HuggingFace |
+| satquery-router-qwen2.5-1.5b-lora | 1,5B + 5,3M LoRA | no disponible | Enrutamiento JSON para SatQuery | Apache 2.0 | Hugging Face (MLX) |
+| Qwen2.5-3B-Instruct (prompted) | 3B | no disponible | Clasificacion por prompting con reglas y 12 ejemplos | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B-Instruct base (prompted) | 1,5B | no disponible | Clasificacion por prompting con reglas y 12 ejemplos | Apache 2.0 | Hugging Face |
 | Enrutador regex de SatQuery | no aplica | no aplica | Heuristicas por expresiones regulares | no disponible | Repositorio GitHub |
 
 El adaptador supera al modelo de 3B prompted en 18 puntos de exact match (65,1 frente a 47,1) y al base sin ajustar en 48,2 puntos (65,1 frente a 16,9), con un coste de entrenamiento de 92 minutos en hardware de consumo.
@@ -96,7 +96,7 @@ El adaptador supera al modelo de 3B prompted en 18 puntos de exact match (65,1 f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TanmayShah29/satquery-router-qwen2.5-1.5b-lora
+- Modelo en Hugging Face: https://huggingface.co/TanmayShah29/satquery-router-qwen2.5-1.5b-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/TanmayShah29/satquery-router-decisions
 - Codigo, pipeline de datos, evaluacion y write-up: https://github.com/TanmayShah29/llm-query-router
 - Proyecto SatQuery: https://github.com/TanmayShah29/SATQuery-AI

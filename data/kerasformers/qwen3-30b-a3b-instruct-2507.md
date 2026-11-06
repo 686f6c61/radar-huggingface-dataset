@@ -65,10 +65,10 @@ No se dispone de datos comparativos en la información proporcionada. Como refer
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kerasformers/qwen3-30b-a3b-instruct-2507
+- Hugging Face: https://huggingface.co/kerasformers/qwen3-30b-a3b-instruct-2507
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de Qwen3 en KerasFormers: https://imvision12.github.io/KerasFormers/qwen3/
-- Colección de modelos Qwen3 MoE en HuggingFace: https://huggingface.co/collections/kerasformers/qwen3-moe-6a7f9b1eacaba9aba25a1d63
+- Colección de modelos Qwen3 MoE en Hugging Face: https://huggingface.co/collections/kerasformers/qwen3-moe-6a7f9b1eacaba9aba25a1d63
 - Modelo original: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507
 - Qwen3 Technical Report: https://arxiv.org/abs/2505.09388
 - Qwen2.5-1M Technical Report: https://arxiv.org/abs/2501.15383

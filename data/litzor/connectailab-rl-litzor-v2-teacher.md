@@ -19,7 +19,7 @@ La relevancia de este modelo es fundamentalmente educativa y de investigacion ap
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | coreano (ko) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (la libreria declarada en HuggingFace es `numpy`) |
+| Formato de pesos | no disponible (la libreria declarada en Hugging Face es `numpy`) |
 
 ## Arquitectura y entrenamiento
 
@@ -59,7 +59,7 @@ La model card publica resultados de simulacion a lo largo de 40 meses, comparand
 | Escalados a revision humana | 37,8 | 20,1 (-47 %) |
 | Dias de rotura de stock | 10,7 | 0,6 (-94 %) |
 
-Nota: los datos anteriores proceden de la tabla de la model card, que rotula el modelo como "connectailab-rl-litzor-v1-teacher", mientras que el identificador del repositorio en HuggingFace es "connectailab-rl-litzor-v2-teacher". La model card no aclara esta discrepancia. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros), ya que no es un modelo de lenguaje.
+Nota: los datos anteriores proceden de la tabla de la model card, que rotula el modelo como "connectailab-rl-litzor-v1-teacher", mientras que el identificador del repositorio en Hugging Face es "connectailab-rl-litzor-v2-teacher". La model card no aclara esta discrepancia. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros), ya que no es un modelo de lenguaje.
 
 ## Requisitos de hardware
 
@@ -73,7 +73,7 @@ Nota: los datos anteriores proceden de la tabla de la model card, que rotula el 
 
 | Modelo | Tipo | Entorno / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| connectailab-rl-litzor-v2-teacher | Politica RL (PPO) | Decision empresarial en CONNECT TYCOON | Apache 2.0 | HuggingFace |
+| connectailab-rl-litzor-v2-teacher | Politica RL (PPO) | Decision empresarial en CONNECT TYCOON | Apache 2.0 | Hugging Face |
 | Jefe de reglas de CONNECT TYCOON (baseline) | Heuristica de reglas | Mismo entorno | No especificada en la informacion disponible | Dentro del simulador |
 | Otras politicas RL de Gymnasium | Politica RL | Entornos de control clasicos (CartPole, MuJoCo, etc.) | Variable | Variable |
 
@@ -92,7 +92,7 @@ No se dispone de informacion sobre otros modelos directamente comparables en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litzor/connectailab-rl-litzor-v2-teacher
+- Modelo en Hugging Face: https://huggingface.co/litzor/connectailab-rl-litzor-v2-teacher
 - Perfil del autor: https://huggingface.co/litzor
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
@@ -100,4 +100,4 @@ No se dispone de informacion sobre otros modelos directamente comparables en la 
 - AI CITY BUILDERS: https://www.aicitybuilders.com
 - Curso de IA con aprendizaje por refuerzo: https://www.aicitybuilders.com/robot
 - Connect AI: https://www.ezerai.xyz
-- Referencia de formato JEV citada en la model card: `typesafe/jev-1.13` (identificador de HuggingFace, sin URL directa en la informacion disponible)
+- Referencia de formato JEV citada en la model card: `typesafe/jev-1.13` (identificador de Hugging Face, sin URL directa en la informacion disponible)

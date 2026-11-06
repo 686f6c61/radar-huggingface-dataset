@@ -69,5 +69,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RattyC/colab-nlp-lab5
+- Hugging Face: https://huggingface.co/RattyC/colab-nlp-lab5
 - Paper de impacto ambiental (citado en los metadatos): https://arxiv.org/abs/1910.09700

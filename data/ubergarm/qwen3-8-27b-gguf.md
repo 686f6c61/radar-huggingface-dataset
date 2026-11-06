@@ -78,7 +78,7 @@ La comparativa se basa en características generales; no hay benchmarks directos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ubergarm/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ubergarm/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - ik_llama.cpp: https://github.com/ikawrakow/ik_llama.cpp
 - croco.cpp (fork de KoboldCPP): https://github.com/Nexesenex/croco.cpp

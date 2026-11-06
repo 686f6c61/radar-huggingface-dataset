@@ -43,7 +43,7 @@ El modelo emplea una arquitectura PaiNN (Polarizable Atom Interaction Neural Net
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card menciona que el protocolo y los números de evaluación están en `docs/BENCHMARKS.md` del repositorio de GitHub, pero no se proporcionan valores concretos en la documentación de HuggingFace. Se recomienda consultar dicho documento para obtener métricas de error (por ejemplo, RMSE o MAE por núcleo) y comparaciones con otros métodos.
+No se han publicado resultados de benchmarks en la información disponible. La model card menciona que el protocolo y los números de evaluación están en `docs/BENCHMARKS.md` del repositorio de GitHub, pero no se proporcionan valores concretos en la documentación de Hugging Face. Se recomienda consultar dicho documento para obtener métricas de error (por ejemplo, RMSE o MAE por núcleo) y comparaciones con otros métodos.
 
 ## Requisitos de hardware
 
@@ -68,7 +68,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/SiXa18/caustic-weights
+- Repositorio de Hugging Face: https://huggingface.co/SiXa18/caustic-weights
 - Repositorio de GitHub (código y documentación): https://github.com/maxzinke/caustic-nmr
 - Documento de método: https://github.com/maxzinke/caustic-nmr/blob/main/docs/METHOD.md
 - Documento de datos: https://github.com/maxzinke/caustic-nmr/blob/main/docs/DATA.md

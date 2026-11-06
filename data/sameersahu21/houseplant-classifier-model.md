@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`sameersahu21/houseplant-classifier-model` es un repositorio de modelo publicado en HuggingFace por el usuario `sameersahu21`. El nombre del repositorio sugiere un clasificador de imágenes orientado a identificar plantas de interior, aunque la informacion disponible no confirma ni la tarea declarada (`pipeline: no disponible`) ni la arquitectura empleada. El repositorio ocupa 0,1 GB y su model card se limita al bloque de metadatos con la licencia `apache-2.0`, sin texto descriptivo, sin ejemplos de uso y sin datos de entrenamiento.
+`sameersahu21/houseplant-classifier-model` es un repositorio de modelo publicado en Hugging Face por el usuario `sameersahu21`. El nombre del repositorio sugiere un clasificador de imágenes orientado a identificar plantas de interior, aunque la informacion disponible no confirma ni la tarea declarada (`pipeline: no disponible`) ni la arquitectura empleada. El repositorio ocupa 0,1 GB y su model card se limita al bloque de metadatos con la licencia `apache-2.0`, sin texto descriptivo, sin ejemplos de uso y sin datos de entrenamiento.
 
 En el momento de la consulta acumula 0 descargas y 0 "likes", y la ultima actualizacion registrada es del 18 de septiembre de 2026, apenas una hora despues de su creacion. Se trata, por tanto, de un artefacto sin adopcion conocida ni validacion externa.
 
-Su relevancia actual es limitada: sirve como ejemplo de publicacion minima en HuggingFace (pesos subidos sin documentacion), pero no puede recomendarse para uso en produccion ni como referencia tecnica mientras el autor no publique una model card con arquitectura, datos de entrenamiento y metricas. Esta ficha se limita a reflejar lo que consta en la informacion disponible y marca explicitamente como "no disponible" todo aquello que no puede verificarse.
+Su relevancia actual es limitada: sirve como ejemplo de publicacion minima en Hugging Face (pesos subidos sin documentacion), pero no puede recomendarse para uso en produccion ni como referencia tecnica mientras el autor no publique una model card con arquitectura, datos de entrenamiento y metricas. Esta ficha se limita a reflejar lo que consta en la informacion disponible y marca explicitamente como "no disponible" todo aquello que no puede verificarse.
 
 ## Especificaciones tecnicas
 
@@ -87,7 +87,7 @@ No disponible. La informacion proporcionada no permite identificar modelos compa
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| sameersahu21/houseplant-classifier-model | no disponible | no disponible | apache-2.0 | no disponible | HuggingFace |
+| sameersahu21/houseplant-classifier-model | no disponible | no disponible | apache-2.0 | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -105,7 +105,7 @@ No disponible. La informacion proporcionada no permite identificar modelos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sameersahu21/houseplant-classifier-model
+- Modelo en Hugging Face: https://huggingface.co/sameersahu21/houseplant-classifier-model
 - Paper, blog o repositorio de codigo: no disponible
 - Demo: no disponible
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces recuperados correspondian a foros no relacionados (temas de verificacion de cuentas y herramientas de diseno) y no se incluyen por no aportar informacion sobre el modelo.

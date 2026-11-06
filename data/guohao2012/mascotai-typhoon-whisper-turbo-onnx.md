@@ -28,7 +28,7 @@ Su relevancia es practica: permite desplegar ASR en tailandes en entornos sin GP
 
 La arquitectura es la de Whisper large-v3-turbo: un encoder-decoder transformer con preprocesado log-Mel de 128 bandas, entrenado originalmente por OpenAI sobre audio multilingue y etiquetas de transcripcion y traduccion. El equipo Typhoon (SCB 10X) partio de esos pesos y los adapto al tailandes; el modelo resultante es el que se exporta aqui. No se dispone de informacion sobre el volumen de tokens de audio, la composicion exacta del dataset de ajuste ni las tecnicas de alineacion (RLHF, DPO) empleadas en el modelo base. El tag `base_model:quantized:typhoon-ai/typhoon-whisper-turbo` indica que este repositorio es una version cuantizada del modelo citado.
 
-La innovacion tecnica de este repositorio es exclusivamente de formato y despliegue: se ha usado el script oficial `scripts/whisper/export-onnx.py` de sherpa-onnx, parcheado solo para cargar el checkpoint de Typhoon y renombrar las claves de HuggingFace al esquema de openai-whisper. La cuantizacion dinamica int8 se limita a las MatMul, lo que evita tocar las capas mas sensibles a la precision (normalizaciones, activaciones y embeddings) y mantiene el layout de ficheros identico al de la conversion de referencia. Los hashes SHA-256 de los tres ficheros estan publicados en la model card: `89ec9b08...` para el encoder, `e4fd0684...` para el decoder y `b34b360d...` para el vocabulario.
+La innovacion tecnica de este repositorio es exclusivamente de formato y despliegue: se ha usado el script oficial `scripts/whisper/export-onnx.py` de sherpa-onnx, parcheado solo para cargar el checkpoint de Typhoon y renombrar las claves de Hugging Face al esquema de openai-whisper. La cuantizacion dinamica int8 se limita a las MatMul, lo que evita tocar las capas mas sensibles a la precision (normalizaciones, activaciones y embeddings) y mantiene el layout de ficheros identico al de la conversion de referencia. Los hashes SHA-256 de los tres ficheros estan publicados en la model card: `89ec9b08...` para el encoder, `e4fd0684...` para el decoder y `b34b360d...` para el vocabulario.
 
 ## Capacidades
 
@@ -89,7 +89,7 @@ Las cifras de parametros de la familia Whisper large-v3-turbo no aparecen en la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Guohao2012/mascotai-typhoon-whisper-turbo-onnx
+- Repositorio en Hugging Face: https://huggingface.co/Guohao2012/mascotai-typhoon-whisper-turbo-onnx
 - Modelo base: https://huggingface.co/typhoon-ai/typhoon-whisper-turbo
 - Conversion de referencia para sherpa-onnx: https://huggingface.co/csukuangfj/sherpa-onnx-whisper-turbo
 - Repositorio de sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

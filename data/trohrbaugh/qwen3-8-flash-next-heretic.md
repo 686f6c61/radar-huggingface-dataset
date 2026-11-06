@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de la misma 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo heretic: https://huggingface.co/trohrbaugh/Qwen3.8-Flash-Next-heretic
+- Repositorio Hugging Face del modelo heretic: https://huggingface.co/trohrbaugh/Qwen3.8-Flash-Next-heretic
 - Modelo original Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Blog de Qwen sobre Qwen3.8-Flash-Next: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Repositorio GitHub del modelo original: https://github.com/QwenLM/Qwen3.8-Flash-Next

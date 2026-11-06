@@ -6,7 +6,7 @@ Pata & Cia - Qwen3-4B com QLoRA es un adaptador PEFT de tipo QLoRA entrenado sob
 
 El repositorio contiene unicamente los adaptadores (aproximadamente 0,1 GB) y el tokenizer, no los pesos base. El entrenamiento se realizo en una Tesla T4 de Colab el 18/10/2026 con 550 conversaciones sinteticas, de las cuales 495 se usaron para entrenamiento y 55 para validacion. La perdida de entrenamiento reportada es 0,9128 y la de validacion 0,9719 tras dos epocas.
 
-Su interes es principalmente educativo: demuestra un pipeline completo de generacion de datos sinteticos, entrenamiento QLoRA con rsLoRA y publicacion en HuggingFace. El propio autor advierte que se observaron datos comerciales inventados y que el modelo no esta listo para atencion autonoma. No se han publicado benchmarks ni comparaciones cuantitativas con el modelo base.
+Su interes es principalmente educativo: demuestra un pipeline completo de generacion de datos sinteticos, entrenamiento QLoRA con rsLoRA y publicacion en Hugging Face. El propio autor advierte que se observaron datos comerciales inventados y que el modelo no esta listo para atencion autonoma. No se han publicado benchmarks ni comparaciones cuantitativas con el modelo base.
 
 ## Especificaciones tecnicas
 
@@ -82,10 +82,10 @@ La propia model card advierte que la perdida no mide exactitud factual ni seguri
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pata-Cia-Qwen3-4B-QLoRA | 4,0B base + LoRA r=16 | 2048 (entrenamiento) | Atencion al cliente de pet shop ficticio | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen3-4B (base) | 4,0B | mayor que 2048 (nativo); valor exacto no verificado en la informacion | Proposito general, multilingue | Apache 2.0 | HuggingFace / Unsloth |
-| BoraLog-Qwen3-4B-QLoRA | 4,0B base + LoRA | no disponible | no disponible (repositorio sin model card) | no disponible | HuggingFace, mismo autor |
-| Llama 3.2 3B Instruct | 3,2B | no disponible en la informacion proporcionada | Proposito general | Llama 3.2 Community License | HuggingFace |
+| Pata-Cia-Qwen3-4B-QLoRA | 4,0B base + LoRA r=16 | 2048 (entrenamiento) | Atencion al cliente de pet shop ficticio | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen3-4B (base) | 4,0B | mayor que 2048 (nativo); valor exacto no verificado en la informacion | Proposito general, multilingue | Apache 2.0 | Hugging Face / Unsloth |
+| BoraLog-Qwen3-4B-QLoRA | 4,0B base + LoRA | no disponible | no disponible (repositorio sin model card) | no disponible | Hugging Face, mismo autor |
+| Llama 3.2 3B Instruct | 3,2B | no disponible en la informacion proporcionada | Proposito general | Llama 3.2 Community License | Hugging Face |
 
 La comparacion cuantitativa de rendimiento entre estos modelos no esta disponible: el autor no publica evaluaciones frente al base ni frente a alternativas.
 
@@ -106,7 +106,7 @@ La comparacion cuantitativa de rendimiento entre estos modelos no esta disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ItsMaaaverick/Pata-Cia-Qwen3-4B-QLoRA
+- Modelo en Hugging Face: https://huggingface.co/ItsMaaaverick/Pata-Cia-Qwen3-4B-QLoRA
 - Dataset de entrenamiento: https://huggingface.co/datasets/ItsMaaaverick/Pata-Cia-QA-Sintetico
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B
 - Otro adaptador del mismo autor: https://huggingface.co/ItsMaaaverick/BoraLog-Qwen3-4B-QLoRA

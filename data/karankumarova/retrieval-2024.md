@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`karankumarova/retrieval-2024` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura **MobileViT** orientada a tareas de **retrieval** (recuperación de información, presumiblemente multimodal imagen-texto). Lo desarrolla el usuario `karankumarova` y su naturaleza es explícitamente de andamiaje de investigación: la propia model card indica que el fichero `model.safetensors` es un **checkpoint de inicialización válido para smoke tests**, no un modelo entrenado ni evaluado.
+`karankumarova/retrieval-2024` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura **MobileViT** orientada a tareas de **retrieval** (recuperación de información, presumiblemente multimodal imagen-texto). Lo desarrolla el usuario `karankumarova` y su naturaleza es explícitamente de andamiaje de investigación: la propia model card indica que el fichero `model.safetensors` es un **checkpoint de inicialización válido para smoke tests**, no un modelo entrenado ni evaluado.
 
 El interés del repositorio no está en su rendimiento, sino en servir de base reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La configuración declarada incluye atención dispersa (*sparse*), fusión bilinear de características, activación GELU y normalización por *batchnorm*, con una receta de entrenamiento por defecto basada en SGD con *schedule* de tipo *step*. El autor propone Flickr30k como primer conjunto de evaluación y recomienda reportar la métrica con al menos tres semillas y un *baseline* de capacidad comparable.
 
@@ -78,9 +78,9 @@ La comparación se establece con modelos de recuperación imagen-texto consolida
 
 | Modelo | Parámetros | Contexto | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| karankumarova/retrieval-2024 | 16.576 | no disponible | ninguno (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace, 12 descargas |
-| CLIP ViT-B/32 (OpenAI) | ~151 M (referencia externa) | ~77 tokens para el codificador de texto | sí, múltiples tareas de retrieval | MIT | HuggingFace |
-| SigLIP base (Google) | no disponible en esta ficha | no disponible | sí, en la publicación original | revisar en el repositorio oficial | HuggingFace |
+| karankumarova/retrieval-2024 | 16.576 | no disponible | ninguno (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face, 12 descargas |
+| CLIP ViT-B/32 (OpenAI) | ~151 M (referencia externa) | ~77 tokens para el codificador de texto | sí, múltiples tareas de retrieval | MIT | Hugging Face |
+| SigLIP base (Google) | no disponible en esta ficha | no disponible | sí, en la publicación original | revisar en el repositorio oficial | Hugging Face |
 
 Alternativas conceptualmente más cercanas por filosofía móvil serían las variantes MobileCLIP, orientadas a *retrieval* eficiente en dispositivo; sus especificaciones y licencia deberían consultarse directamente en sus repositorios, ya que no forman parte de la información proporcionada. En cualquier caso, la comparación de rendimiento con este repositorio carece de sentido mientras no exista un checkpoint entrenado.
 
@@ -99,7 +99,7 @@ Alternativas conceptualmente más cercanas por filosofía móvil serían las var
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/karankumarova/retrieval-2024
+- Modelo en Hugging Face: https://huggingface.co/karankumarova/retrieval-2024
 - Paper original de la arquitectura MobileViT (referencia externa, no vinculada al repositorio): https://arxiv.org/abs/2110.02178
 - Paper de CLIP, usado como referencia de *baseline* en retrieval imagen-texto: https://arxiv.org/abs/2103.00020
 - Conjunto de evaluación sugerido en la model card, Flickr30k: https://shannon.cs.illinois.edu/DenotationGraph/

@@ -87,9 +87,9 @@ Advertencia del autor: las etiquetas de test son un estándar plateado (mayorita
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tracking the Gap NDC | ~82 M por encoder (2 encoders) | no disponible (DistilRoBERTa) | Clasificación multi-tarea de NDC | Apache 2.0 | HuggingFace |
-| climatebert/distilroberta-base-climate-commitment | ~82 M | no disponible (DistilRoBERTa) | Clasificación de compromisos climáticos | Apache 2.0 | HuggingFace |
-| climatebert/distilroberta-base-climate-f | ~82 M | no disponible (DistilRoBERTa) | Clasificación de texto climático | Apache 2.0 | HuggingFace |
+| Tracking the Gap NDC | ~82 M por encoder (2 encoders) | no disponible (DistilRoBERTa) | Clasificación multi-tarea de NDC | Apache 2.0 | Hugging Face |
+| climatebert/distilroberta-base-climate-commitment | ~82 M | no disponible (DistilRoBERTa) | Clasificación de compromisos climáticos | Apache 2.0 | Hugging Face |
+| climatebert/distilroberta-base-climate-f | ~82 M | no disponible (DistilRoBERTa) | Clasificación de texto climático | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada.
 
@@ -107,6 +107,6 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maina-kelvin/tracking-the-gap-ndc
+- Modelo en Hugging Face: https://huggingface.co/maina-kelvin/tracking-the-gap-ndc
 - Encoder base commitment_tuned: https://huggingface.co/climatebert/distilroberta-base-climate-commitment
 - Encoder base general: https://huggingface.co/climatebert/distilroberta-base-climate-f

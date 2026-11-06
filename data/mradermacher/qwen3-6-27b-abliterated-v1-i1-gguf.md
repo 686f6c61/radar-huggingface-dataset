@@ -44,7 +44,7 @@ La versión abliterated (del autor wangzhang) aplica la técnica "abliteration" 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repo de HuggingFace no incluye métricas de MMLU, HumanEval, GSM8K ni otros tests estandarizados. La descripción del Qwen3.6-27B original menciona mejoras en razonamiento STEM y codificación agéntica, pero sin cifras concretas. Se recomienda consultar la documentación oficial de Qwen para obtener datos comparativos.
+No se han publicado resultados de benchmarks en la informacion disponible. El repo de Hugging Face no incluye métricas de MMLU, HumanEval, GSM8K ni otros tests estandarizados. La descripción del Qwen3.6-27B original menciona mejoras en razonamiento STEM y codificación agéntica, pero sin cifras concretas. Se recomienda consultar la documentación oficial de Qwen para obtener datos comparativos.
 
 ## Requisitos de hardware
 
@@ -69,7 +69,7 @@ No disponible. No se han encontrado comparativas directas con otros modelos en l
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/Qwen3.6-27B-abliterated-v1-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/Qwen3.6-27B-abliterated-v1-i1-GGUF
 - Modelo base (abliterated): https://huggingface.co/wangzhang/Qwen3.6-27B-abliterated-v1
 - Repositorio estático con quants y mmproj: https://huggingface.co/mradermacher/Qwen3.6-27B-abliterated-v1-GGUF
 - Página de QwenCloud sobre Qwen3.6-27B: https://www.qwencloud.com/models/qwen3.6-27b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TraceGNN (publicado en HuggingFace como `The-AnkitPatel/otel-trace-gnn`) es una red neuronal de grafos de atención dirigida (GAT, Graph Attention Network) desarrollada por Ankit Kumar Patel, del Distributed Systems & Telemetry Lab del IIT Roorkee y contribuidor upstream de OpenTelemetry-Go en la CNCF. El modelo resuelve un problema concreto de observabilidad en sistemas distribuidos: localizar el servicio raíz de una causa de fallo en trazas de microservicios, donde la propagación de latencia y la amplificación por reintentos hacen que los llamadores aguas arriba parezcan más lentos que el servicio que realmente falla.
+TraceGNN (publicado en Hugging Face como `The-AnkitPatel/otel-trace-gnn`) es una red neuronal de grafos de atención dirigida (GAT, Graph Attention Network) desarrollada por Ankit Kumar Patel, del Distributed Systems & Telemetry Lab del IIT Roorkee y contribuidor upstream de OpenTelemetry-Go en la CNCF. El modelo resuelve un problema concreto de observabilidad en sistemas distribuidos: localizar el servicio raíz de una causa de fallo en trazas de microservicios, donde la propagación de latencia y la amplificación por reintentos hacen que los llamadores aguas arriba parezcan más lentos que el servicio que realmente falla.
 
 El modelo opera sobre los DAG (grafos acíclicos dirigidos) que generan los colectores de OpenTelemetry en entornos Kubernetes. Agrega telemetría multidimensional por nodo (duración, tiempo propio, saturación de CPU y memoria, retardo de cola, reintentos y estado de error) a lo largo de las aristas llamador-a-llamado, y produce una clasificación de nodo que identifica el servicio responsable de la causa raíz. Según la model card, alcanza un 98,4 % de precisión Top-1 con una latencia de 0,18 ms en CPU (p50).
 
@@ -20,7 +20,7 @@ Es relevante ahora porque la instrumentación con OpenTelemetry se ha convertido
 | Idiomas soportados | en (metadatos del repositorio; el modelo procesa telemetría numérica, no texto) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | PyTorch (`trace_gnn_model.pt`), exportable a TorchScript y ONNX |
-| Pipeline declarado | tabular-classification (HuggingFace) |
+| Pipeline declarado | tabular-classification (Hugging Face) |
 | Tarea real | graph-node-classification — localización de causa raíz en trazas de microservicios |
 | Framework | PyTorch |
 
@@ -96,7 +96,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/The-AnkitPatel/otel-trace-gnn
+- Hugging Face: https://huggingface.co/The-AnkitPatel/otel-trace-gnn
 - Cita declarada: Patel, A. K., "Root-Cause Localization in Distributed Microservice Traces via Directed Graph Attention Networks", Distributed Systems & Telemetry Lab, IIT Roorkee, 2026.
 - OpenTelemetry (proyecto upstream del autor): https://opentelemetry.io/
 - OpenTelemetry-Go (CNCF): https://github.com/open-telemetry/opentelemetry-go

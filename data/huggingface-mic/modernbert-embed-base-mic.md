@@ -2,7 +2,7 @@
 
 ## Resumen
 
-modernbert-embed-base-mic es un artefacto de prueba (fixture) publicado por la organización huggingface-mic en el Hub de HuggingFace. No se trata de un modelo entrenado para producir embeddings útiles, sino de una versión reducida y "adelgazada" del modelo nomic-ai/modernbert-embed-base, generada para verificar el contrato de integración con la librería sentence-transformers. El propio autor advierte en la model card que los pesos son aleatorios y no representan la calidad de recuperación del modelo original.
+modernbert-embed-base-mic es un artefacto de prueba (fixture) publicado por la organización huggingface-mic en el Hub de Hugging Face. No se trata de un modelo entrenado para producir embeddings útiles, sino de una versión reducida y "adelgazada" del modelo nomic-ai/modernbert-embed-base, generada para verificar el contrato de integración con la librería sentence-transformers. El propio autor advierte en la model card que los pesos son aleatorios y no representan la calidad de recuperación del modelo original.
 
 El repositorio incluye, además de los pesos reducidos, un manifiesto de contrato (integration.json), documentación de uso para sentence-transformers y metadatos de procedencia de la fixture (build.json). Está etiquetado como test-artifact, lo que deja claro su propósito de validación de infraestructura y no de uso en producción.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| huggingface-mic/modernbert-embed-base-mic | 3.305.792 (reducidos) | no disponible | Fixture de test para sentence-transformers | no disponible | HuggingFace (0 descargas) |
-| nomic-ai/modernbert-embed-base | no disponible en la informacion | no disponible | Embeddings de frases para retrieval | no disponible en la informacion | HuggingFace (modelo base) |
-| Otras fixtures de test del Hub | variable | no disponible | Validacion de integraciones | variable | HuggingFace |
+| huggingface-mic/modernbert-embed-base-mic | 3.305.792 (reducidos) | no disponible | Fixture de test para sentence-transformers | no disponible | Hugging Face (0 descargas) |
+| nomic-ai/modernbert-embed-base | no disponible en la informacion | no disponible | Embeddings de frases para retrieval | no disponible en la informacion | Hugging Face (modelo base) |
+| Otras fixtures de test del Hub | variable | no disponible | Validacion de integraciones | variable | Hugging Face |
 
 La comparación relevante es con su modelo base: la fixture no compite en calidad de embeddings, solo en ligereza y verificabilidad del contrato de integración.
 
@@ -85,7 +85,7 @@ La comparación relevante es con su modelo base: la fixture no compite en calida
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/modernbert-embed-base-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/modernbert-embed-base-mic
 - Modelo base: https://huggingface.co/nomic-ai/modernbert-embed-base
 - Explicación del proceso de reducción de la fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/modernbert-embed-base-mic.html
 - Manifiesto de contrato (integration.json): https://huggingface.co/huggingface-mic/modernbert-embed-base-mic/blob/main/integration.json

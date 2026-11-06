@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bhoomiAi es un modelo publicado en HuggingFace por el usuario CodeRayyt bajo licencia Apache 2.0. La model card asociada es prácticamente vacía: únicamente declara la licencia y no incluye descripción, arquitectura, datos de entrenamiento ni resultados de evaluación. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline de inferencia declarado, lo que sugiere que se trata de un artefacto recién creado o de carácter experimental.
+bhoomiAi es un modelo publicado en Hugging Face por el usuario CodeRayyt bajo licencia Apache 2.0. La model card asociada es prácticamente vacía: únicamente declara la licencia y no incluye descripción, arquitectura, datos de entrenamiento ni resultados de evaluación. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline de inferencia declarado, lo que sugiere que se trata de un artefacto recién creado o de carácter experimental.
 
 Por la ausencia total de documentación técnica, no es posible confirmar la arquitectura, el tamaño de parámetros, la longitud de contexto ni los idiomas soportados. Cualquier evaluación de idoneidad para producción debe partir de una inspección directa de los pesos y la configuración del repositorio, no de la información publicada.
 
@@ -38,7 +38,7 @@ Tampoco hay indicios de innovaciones técnicas destacables (atención lineal, de
 ## Casos de uso
 
 - Evaluación experimental en laboratorio: el modelo puede descargarse y probarse en un entorno controlado para determinar empíricamente sus capacidades, dado que la documentación no ofrece garantías sobre su comportamiento.
-- Pruebas de integración en pipelines de HuggingFace: al estar alojado en el Hub con licencia Apache 2.0, puede incorporarse a flujos de `transformers` para verificar compatibilidad de pesos y tokenizador, siempre que el repositorio contenga los artefactos necesarios.
+- Pruebas de integración en pipelines de Hugging Face: al estar alojado en el Hub con licencia Apache 2.0, puede incorporarse a flujos de `transformers` para verificar compatibilidad de pesos y tokenizador, siempre que el repositorio contenga los artefactos necesarios.
 - Investigación sobre artefactos con documentación incompleta: útil como caso de estudio sobre la importancia de las model cards y de los metadatos en la reproducibilidad de modelos abiertos.
 - Fine-tuning exploratorio: si los pesos son compatibles con arquitecturas estándar, podría servir como base para ajuste supervisado en dominios concretos, previa validación de que el checkpoint es funcional.
 - Benchmarking interno comparativo: puede incluirse en baterías de evaluación propias para contrastar su comportamiento frente a modelos documentados, sin extraer conclusiones públicas hasta disponer de resultados reproducibles.
@@ -72,5 +72,5 @@ No disponible. Al no conocerse el tamaño, la arquitectura ni el dominio de apli
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CodeRayyt/bhoomiAi
+- Hugging Face: https://huggingface.co/CodeRayyt/bhoomiAi
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

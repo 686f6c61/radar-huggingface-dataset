@@ -60,16 +60,16 @@ Accuracy de la prueba externa por idioma: ingles 0.975, espanol 0.956, mixto 1.0
 - VRAM estimada para inferencia: aproximadamente 1,1 GB en fp32 (279 M de parametros) y unos 0,56 GB en fp16; el modelo se guarda en 16 bits pero se recomienda cargarlo en 32 bits para CPU.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente; el modelo cabe holgadamente en una RTX 3060, RTX 4060, RTX 4090 o superiores, asi como en GPUs de datacenter (A100, H100) si se comparte con otros servicios.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU con al menos 2 GB de VRAM, e incluso puede ejecutarse en CPU.
-- Opciones de despliegue: `transformers` con `AutoModelForSequenceClassification` (uso documentado por el autor), y en general cualquier servidor de inferencia compatible con modelos de clasificacion de HuggingFace (por ejemplo, Text Embeddings Inference o endpoints de inferencia gestionados). No se documenta soporte especifico para vLLM, llama.cpp u Ollama, que estan orientados a modelos generativos.
+- Opciones de despliegue: `transformers` con `AutoModelForSequenceClassification` (uso documentado por el autor), y en general cualquier servidor de inferencia compatible con modelos de clasificacion de Hugging Face (por ejemplo, Text Embeddings Inference o endpoints de inferencia gestionados). No se documenta soporte especifico para vLLM, llama.cpp u Ollama, que estan orientados a modelos generativos.
 - Latencia y throughput: latencia mediana de 67,1 ms en CPU segun el autor; no se dispone de datos de throughput en GPU.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `gagarang/router-intencion-cab-mdeberta` | 278,8 M | no disponible | Clasificacion de intenciones (5 clases) | MIT | HuggingFace |
-| `MoritzLaurer/mDeBERTa-v3-base-mnli-xnli` (modelo base) | ~279 M | no disponible | NLI zero-shot / clasificacion | MIT | HuggingFace |
-| `MoritzLaurer/mDeBERTa-v3-base-mnli` | ~279 M | no disponible | NLI zero-shot | MIT | HuggingFace |
+| `gagarang/router-intencion-cab-mdeberta` | 278,8 M | no disponible | Clasificacion de intenciones (5 clases) | MIT | Hugging Face |
+| `MoritzLaurer/mDeBERTa-v3-base-mnli-xnli` (modelo base) | ~279 M | no disponible | NLI zero-shot / clasificacion | MIT | Hugging Face |
+| `MoritzLaurer/mDeBERTa-v3-base-mnli` | ~279 M | no disponible | NLI zero-shot | MIT | Hugging Face |
 
 La comparacion con alternativas especificas de clasificacion de intenciones para atencion al cliente no esta disponible en la informacion proporcionada. El modelo base destaca por su uso en clasificacion zero-shot mediante NLI, mientras que este ajuste esta especializado en un dominio concreto (CAB) y no generaliza necesariamente a otras empresas sin reentrenamiento.
 
@@ -86,7 +86,7 @@ La comparacion con alternativas especificas de clasificacion de intenciones para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gagarang/router-intencion-cab-mdeberta
+- Modelo en Hugging Face: https://huggingface.co/gagarang/router-intencion-cab-mdeberta
 - Modelo base: https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-mnli-xnli
 - Dataset Bitext (referenciado en la model card): no disponible como enlace directo en la informacion proporcionada
 - Paper de DeBERTa-v2: no disponible en la informacion proporcionada

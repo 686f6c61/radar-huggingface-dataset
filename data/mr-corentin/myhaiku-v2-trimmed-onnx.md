@@ -106,7 +106,7 @@ No se dispone de datos sobre otros generadores de poesía de tamaño comparable 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mr-Corentin/myhaiku-v2-trimmed-onnx
+- Modelo en Hugging Face: https://huggingface.co/Mr-Corentin/myhaiku-v2-trimmed-onnx
 - Modelo base (safetensors): https://huggingface.co/Mr-Corentin/myhaiku-v2-trimmed-gemma-3-270m-it
 - CDN de ONNX Runtime Web referenciado en la model card: https://cdn.jsdelivr.net/npm/onnxruntime-web@1.31/dist/
 - Resultados de la búsqueda web: no se incluye ninguno porque las entradas devueltas tratan sobre la abreviatura francesa «Mr» y no guardan relación con el modelo.

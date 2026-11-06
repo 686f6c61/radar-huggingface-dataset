@@ -82,8 +82,8 @@ Ling-3.0-flash destaca por su eficiencia: activa solo 5,5B parámetros por token
 
 ## Enlaces
 
-- HuggingFace (modelo fp8): https://huggingface.co/inclusionAI/Ling-3.0-flash-fp8
-- HuggingFace (modelo base): https://huggingface.co/inclusionAI/Ling-3.0-flash
+- Hugging Face (modelo fp8): https://huggingface.co/inclusionAI/Ling-3.0-flash-fp8
+- Hugging Face (modelo base): https://huggingface.co/inclusionAI/Ling-3.0-flash
 - ModelScope: https://modelscope.cn/organization/inclusionAI
 - OpenRouter: https://openrouter.ai/inclusionai/ling-3.0-flash:free
 - vLLM Recipes: https://recipes.vllm.ai/inclusionAI/Ling-3.0-flash

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lucyjohnson/retrieval70` es un prototipo de investigación publicado en HuggingFace por el usuario `lucyjohnson`, orientado a tareas de recuperación (retrieval) multimodal con una arquitectura BLIP. Se trata de un repositorio con doce descargas y cero likes, creado y actualizado el 28 de septiembre de 2026 con apenas unos segundos de diferencia entre ambos eventos, lo que apunta a una subida automatizada o de prueba más que a un artefacto mantenido.
+`lucyjohnson/retrieval70` es un prototipo de investigación publicado en Hugging Face por el usuario `lucyjohnson`, orientado a tareas de recuperación (retrieval) multimodal con una arquitectura BLIP. Se trata de un repositorio con doce descargas y cero likes, creado y actualizado el 28 de septiembre de 2026 con apenas unos segundos de diferencia entre ambos eventos, lo que apunta a una subida automatizada o de prueba más que a un artefacto mantenido.
 
 El punto más relevante para cualquier evaluador es que el propio autor declara explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un checkpoint entrenado ni evaluado. No se reclama ninguna puntuación de benchmark, y el tamaño real del repositorio (0,0 GB) junto con los 24.832 parámetros totales confirman que se trata de un modelo extremadamente pequeño, muy lejos de la escala de un sistema BLIP utilizable en producción.
 
@@ -37,7 +37,7 @@ En cuanto al entrenamiento, el autor documenta únicamente la receta de experime
 - Pruebas de humo: el checkpoint permite validar que el pipeline de carga y la forma de los tensores son correctos.
 - Soporte de tool calling / function calling: no. No es un modelo generativo de instrucciones ni expone interfaz de herramientas.
 - Soporte de agentes y razonamiento multi-paso: no.
-- Capacidades multilingües: no disponibles; no se declara ningún idioma en la ficha de HuggingFace ni en el model card.
+- Capacidades multilingües: no disponibles; no se declara ningún idioma en la ficha de Hugging Face ni en el model card.
 - Capacidades especiales (modo thinking, audio, visión generativa): ninguna verificada. La única modalidad implicada es la visión como entrada para retrieval, sin que exista evidencia de funcionamiento tras el entrenamiento.
 - Advertencia general: al tratarse de un checkpoint de inicialización sin entrenar, no se le puede atribuir ninguna capacidad funcional medida.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Categoria | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `lucyjohnson/retrieval70` | Prototipo BLIP de retrieval | 24.832 | no disponible | MIT | HuggingFace, checkpoint sin entrenar |
-| Salesforce BLIP (familia retrieval) | Modelo BLIP entrenado para retrieval imagen-texto | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda | Publico en HuggingFace |
-| BLIP-2 | Modelo vision-language con Q-Former | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda | Publico en HuggingFace |
-| CLIP / SigLIP | Modelos de emparejamiento imagen-texto por contraste | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda | Publicos en HuggingFace |
+| `lucyjohnson/retrieval70` | Prototipo BLIP de retrieval | 24.832 | no disponible | MIT | Hugging Face, checkpoint sin entrenar |
+| Salesforce BLIP (familia retrieval) | Modelo BLIP entrenado para retrieval imagen-texto | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda | Publico en Hugging Face |
+| BLIP-2 | Modelo vision-language con Q-Former | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda | Publico en Hugging Face |
+| CLIP / SigLIP | Modelos de emparejamiento imagen-texto por contraste | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda | Publicos en Hugging Face |
 
 Los datos de los modelos alternativos no se han podido verificar en la busqueda web realizada, por lo que se marcan como no disponibles. La diferencia funcional clave, esa sí verificable, es que este repositorio no contiene un checkpoint entrenado, mientras que las alternativas citadas sí distribuyen pesos entrenados y evaluados.
 
@@ -89,6 +89,6 @@ Los datos de los modelos alternativos no se han podido verificar en la busqueda 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lucyjohnson/retrieval70
+- Hugging Face: https://huggingface.co/lucyjohnson/retrieval70
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes sobre este modelo. Las consultas devolvieron exclusivamente dominios de contenido para adultos sin relación alguna con el repositorio, por lo que se omiten deliberadamente.
 - Paper de BLIP, repositorio de referencia, demo o blog oficial: no disponibles en la informacion proporcionada.

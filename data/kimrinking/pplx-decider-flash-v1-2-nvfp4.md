@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kimrinking/pplx-decider-flash-v1.2-nvfp4` es un modelo publicado en HuggingFace por el usuario `kimrinking` bajo licencia Apache 2.0. Por el identificador se deduce que se trata de una variante cuantizada en NVFP4 (formato de punto flotante de 4 bits de NVIDIA) de un modelo denominado `pplx-decider-flash-v1.2`, presumiblemente orientado a tareas de decisión o enrutamiento ("decider") dentro de un pipeline, y con el sufijo "flash" que sugiere una variante optimizada para baja latencia.
+`kimrinking/pplx-decider-flash-v1.2-nvfp4` es un modelo publicado en Hugging Face por el usuario `kimrinking` bajo licencia Apache 2.0. Por el identificador se deduce que se trata de una variante cuantizada en NVFP4 (formato de punto flotante de 4 bits de NVIDIA) de un modelo denominado `pplx-decider-flash-v1.2`, presumiblemente orientado a tareas de decisión o enrutamiento ("decider") dentro de un pipeline, y con el sufijo "flash" que sugiere una variante optimizada para baja latencia.
 
 La model card publicada por el autor no contiene más información que la declaración de licencia Apache 2.0. No se documentan arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento, idiomas soportados ni resultados de benchmarks. El repositorio registra cero descargas y cero "likes" en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-01), lo que indica una publicación reciente y sin tracción comunitaria conocida.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha se limita a reflejar los metadatos verificables del reposi
 
 No hay información disponible sobre la arquitectura del modelo base ni sobre el proceso de entrenamiento. La model card únicamente declara la licencia Apache 2.0 y no incluye descripción de capas, tipo de transformer, uso de mezcla de expertos, datos de preentrenamiento, número de tokens, composición del corpus ni etapas de ajuste (SFT, RLHF, DPO).
 
-El único dato técnico inferible es el sufijo `nvfp4`, que en el ecosistema de HuggingFace se emplea habitualmente para denotar pesos cuantizados en el formato FP4 de NVIDIA (NVFP4), pensado para inferencia eficiente en GPUs Blackwell. No obstante, el autor no confirma esta interpretación ni documenta el proceso de cuantización, la precisión del modelo original ni las posibles pérdidas de calidad asociadas.
+El único dato técnico inferible es el sufijo `nvfp4`, que en el ecosistema de Hugging Face se emplea habitualmente para denotar pesos cuantizados en el formato FP4 de NVIDIA (NVFP4), pensado para inferencia eficiente en GPUs Blackwell. No obstante, el autor no confirma esta interpretación ni documenta el proceso de cuantización, la precisión del modelo original ni las posibles pérdidas de calidad asociadas.
 
 ## Capacidades
 
@@ -71,5 +71,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la categor�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kimrinking/pplx-decider-flash-v1.2-nvfp4
+- Repositorio en Hugging Face: https://huggingface.co/kimrinking/pplx-decider-flash-v1.2-nvfp4
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

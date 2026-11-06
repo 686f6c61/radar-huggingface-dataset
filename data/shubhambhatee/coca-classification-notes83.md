@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Coca for Classification es un prototipo de investigación publicado en HuggingFace por el usuario shubhambhatee bajo el identificador `shubhambhatee/coca-classification-notes83`. Se trata de una implementación propia de una arquitectura denominada "Coca" orientada a tareas de clasificación, con una configuración de escala "base", atención dilatada (dilated attention), fusión mediante cross attention, activación approx gelu y normalización layernorm. El repositorio incluye el código Python de entrenamiento/evaluación, la configuración de arquitectura y una receta de experimento por defecto con optimizador Adam y schedule de warmup lineal.
+Coca for Classification es un prototipo de investigación publicado en Hugging Face por el usuario shubhambhatee bajo el identificador `shubhambhatee/coca-classification-notes83`. Se trata de una implementación propia de una arquitectura denominada "Coca" orientada a tareas de clasificación, con una configuración de escala "base", atención dilatada (dilated attention), fusión mediante cross attention, activación approx gelu y normalización layernorm. El repositorio incluye el código Python de entrenamiento/evaluación, la configuración de arquitectura y una receta de experimento por defecto con optimizador Adam y schedule de warmup lineal.
 
 El dato más relevante es su tamaño: el checkpoint `model.safetensors` contiene únicamente 24.832 parámetros (veinticuatro mil ochocientos treinta y dos), lo que lo sitúa varios órdenes de magnitud por debajo de cualquier clasificador utilizable en producción. La propia model card aclara explícitamente que el fichero de pesos es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint entrenado ni evaluado.
 
@@ -69,10 +69,10 @@ No hay datos de rendimiento de este modelo que permitan una comparación funcion
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| coca-classification-notes83 | 24.832 | no disponible | no disponible | MIT | HuggingFace (checkpoint sin entrenar) |
-| DistilBERT (referencia) | ~66 millones | 512 tokens | disponible en fuentes publicas | Apache 2.0 | HuggingFace |
-| TinyBERT (referencia) | ~14,5 millones | 512 tokens | disponible en fuentes publicas | Apache 2.0 | HuggingFace |
-| MobileBERT (referencia) | ~25 millones | 512 tokens | disponible en fuentes publicas | Apache 2.0 | HuggingFace |
+| coca-classification-notes83 | 24.832 | no disponible | no disponible | MIT | Hugging Face (checkpoint sin entrenar) |
+| DistilBERT (referencia) | ~66 millones | 512 tokens | disponible en fuentes publicas | Apache 2.0 | Hugging Face |
+| TinyBERT (referencia) | ~14,5 millones | 512 tokens | disponible en fuentes publicas | Apache 2.0 | Hugging Face |
+| MobileBERT (referencia) | ~25 millones | 512 tokens | disponible en fuentes publicas | Apache 2.0 | Hugging Face |
 
 La diferencia de escala (más de dos órdenes de magnitud frente al clasificador de referencia más pequeno) confirma que este repositorio no es un modelo funcional, sino un prototipo.
 
@@ -90,5 +90,5 @@ La diferencia de escala (más de dos órdenes de magnitud frente al clasificador
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shubhambhatee/coca-classification-notes83
+- Hugging Face: https://huggingface.co/shubhambhatee/coca-classification-notes83
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

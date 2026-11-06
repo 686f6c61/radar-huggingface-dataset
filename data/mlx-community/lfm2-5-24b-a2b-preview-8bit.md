@@ -89,7 +89,7 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/mlx-community/LFM2.5-24B-A2B-Preview-8bit
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/mlx-community/LFM2.5-24B-A2B-Preview-8bit
 - Copia identica en otra organizacion: https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-8bit
 - Modelo base: https://huggingface.co/lq-preview/LFM2.5-24B-A2B-Preview
 - Repositorio MLX-VLM (PR #2505, puerto de LFM2.5): https://github.com/Blaizzy/mlx-vlm/pull/2505

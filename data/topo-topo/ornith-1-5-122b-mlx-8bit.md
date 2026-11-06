@@ -93,7 +93,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ToPo-ToPo/Ornith-1.5-122B-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/ToPo-ToPo/Ornith-1.5-122B-mlx-8bit
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B
 - Licencia del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B/blob/main/LICENSE
 - Drafter MTP (bf16): https://huggingface.co/ToPo-ToPo/Ornith-1.5-122B-MTP-bf16

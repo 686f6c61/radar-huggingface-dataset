@@ -79,7 +79,7 @@ La ventaja principal frente al INT8 es el tamaño reducido a la mitad sin pérdi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Momoking/Qwen3-VL-32B-Heretic-MiniMax-H3-NVFP4
+- Repositorio en Hugging Face: https://huggingface.co/Momoking/Qwen3-VL-32B-Heretic-MiniMax-H3-NVFP4
 - Modelo base (INT8-ConvRot): https://huggingface.co/ethanfel/Qwen3-VL-32B-Ultra-Heretic-MiniMax-H3-ComfyUI-INT8-ConvRot
 - MiniMax-H3 (modelo de difusión): https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Comfy-Org MiniMax-H3 (workflow y VAEs): https://huggingface.co/Comfy-Org/MiniMax-H3

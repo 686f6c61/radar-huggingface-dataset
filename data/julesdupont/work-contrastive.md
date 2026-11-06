@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Julesdupont/work-contrastive es un repositorio de HuggingFace publicado por el usuario Julesdupont que contiene una implementacion funcional de la arquitectura Flamingo orientada a tareas de aprendizaje contrastivo (contrastive learning) en una configuracion de escala pequena. El repositorio se presenta explicitamente como un punto de partida experimental: el autor indica que el objetivo es ofrecer codigo transparente y pruebas de humo (smoke tests) reproducibles, y que las afirmaciones sobre rendimiento se omiten deliberadamente.
+Julesdupont/work-contrastive es un repositorio de Hugging Face publicado por el usuario Julesdupont que contiene una implementacion funcional de la arquitectura Flamingo orientada a tareas de aprendizaje contrastivo (contrastive learning) en una configuracion de escala pequena. El repositorio se presenta explicitamente como un punto de partida experimental: el autor indica que el objetivo es ofrecer codigo transparente y pruebas de humo (smoke tests) reproducibles, y que las afirmaciones sobre rendimiento se omiten deliberadamente.
 
 El checkpoint incluido, `model.safetensors`, contiene 24.832 parametros totales, lo que lo situa muy por debajo de cualquier modelo de lenguaje o vision-lenguaje utilizable en produccion. El propio autor aclara que dicho checkpoint es una inicializacion valida para pruebas de humo y que no ha sido entrenado ni auditado. Por tanto, no debe confundirse con un modelo con pesos entrenados.
 
@@ -76,5 +76,5 @@ No disponible. No se conocen, en la informacion proporcionada, modelos comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Julesdupont/work-contrastive
+- Hugging Face: https://huggingface.co/Julesdupont/work-contrastive
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

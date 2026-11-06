@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LAR-27B-GridBook-13GB-vision-abliterated-vllm es una comprobación de concepto de cuantización extrema publicada por el usuario TechPrototyper en HuggingFace. Se trata de un derivado del modelo `amazon/LAR-27B` (el modelo Lean4AgenticRL de Ruida Wang, Gerald Friedland, Tong Zhang y Chris Kong, arXiv 2610.22448), cuantizado con la herramienta PrismaQuant de Robert Tand al formato GridBook `nvfp4_cb` con una asignación mixta de aproximadamente 3,6 bits por parámetro. Sobre esa base se le añaden la torre de visión y la cabeza MTP de `Qwen/Qwen3.8-27B`, y se le aplica una reducción del comportamiento de rechazo (abliteration) en formato, sin recuantizar después de la edición.
+LAR-27B-GridBook-13GB-vision-abliterated-vllm es una comprobación de concepto de cuantización extrema publicada por el usuario TechPrototyper en Hugging Face. Se trata de un derivado del modelo `amazon/LAR-27B` (el modelo Lean4AgenticRL de Ruida Wang, Gerald Friedland, Tong Zhang y Chris Kong, arXiv 2610.22448), cuantizado con la herramienta PrismaQuant de Robert Tand al formato GridBook `nvfp4_cb` con una asignación mixta de aproximadamente 3,6 bits por parámetro. Sobre esa base se le añaden la torre de visión y la cabeza MTP de `Qwen/Qwen3.8-27B`, y se le aplica una reducción del comportamiento de rechazo (abliteration) en formato, sin recuantizar después de la edición.
 
 El resultado es un modelo de 12.648.376.704 parámetros reales (etiquetado comercialmente como 27B) que ocupa unos 15,7 GB en el repositorio y que, según el autor, cabe en una única GPU de 32 GB con 262k tokens de contexto. La arquitectura declarada es `Qwen3_5ForConditionalGeneration`, con 64 capas de las cuales 16 son de atención y 48 son SSM (modelos de espacio de estados), lo que lo convierte en un híbrido atención-SSM. Es relevante porque demuestra que es posible servir un modelo agéntico con visión y contexto largo en hardware de consumo, aunque a costa de depender de un plugin propietario de vLLM (`gridbook==0.8.8`) y de `nvcc` para compilar los kernels CUDA/CUTLASS.
 
@@ -88,7 +88,7 @@ La comparación con modelos de propósito general de tamaño similar (por ejempl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TechPrototyper/LAR-27B-GridBook-13GB-vision-abliterated-vllm
+- Hugging Face: https://huggingface.co/TechPrototyper/LAR-27B-GridBook-13GB-vision-abliterated-vllm
 - Modelo base LAR: https://huggingface.co/amazon/LAR-27B
 - Paper Lean4AgenticRL: https://arxiv.org/abs/2610.22448
 - Arquitectura y torre visual: https://huggingface.co/Qwen/Qwen3.8-27B

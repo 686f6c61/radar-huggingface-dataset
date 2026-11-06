@@ -89,7 +89,7 @@ No se han encontrado datos de otros modelos comparables (por ejemplo, Llama 3.1 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Qwen3.8-Flash-Next-ROCmFP4-STRIX-GGUF](https://huggingface.co/kingjones777/Qwen3.8-Flash-Next-ROCmFP4-STRIX-GGUF)
+- Repositorio Hugging Face: [Qwen3.8-Flash-Next-ROCmFP4-STRIX-GGUF](https://huggingface.co/kingjones777/Qwen3.8-Flash-Next-ROCmFP4-STRIX-GGUF)
 - Repositorio del modelo base en GitHub: [QwenLM/Qwen3.8-Flash-Next](https://github.com/QwenLM/Qwen3.8-Flash-Next/)
 - Documentacion de unsloth: [Qwen3.8-Flash-Next: How to Run Locally](https://unsloth.ai/docs/models/qwen3.8-next)
 - Repositorio con variante LEAN: [Qwen3.8-Flash-Next-ROCmFP4-STRIX_LEAN-GGUF](https://huggingface.co/kingjones777/Qwen3.8-Flash-Next-ROCmFP4-STRIX_LEAN-GGUF)

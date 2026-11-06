@@ -72,7 +72,7 @@ No disponible. La informacion proporcionada no incluye otros LoRAs comparables n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-sharp-curve-branches.safetensors-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-sharp-curve-branches.safetensors-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2115481519753097217
 - Pagina del autor en RunningHub: https://www.runninghub.ai/user-center/2025565893677027330
 - RunningHub (internacional): https://www.runninghub.ai

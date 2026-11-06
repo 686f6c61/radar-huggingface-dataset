@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B ThinkExit es un artefacto experimental de investigación publicado por el usuario NotCherry en HuggingFace. No se trata de un modelo entrenado desde cero ni de un fine-tuning convencional, sino de una edición directa en el espacio de pesos (weight-space programming) aplicada sobre el checkpoint cuantizado AtomicChat/LFM3-1.7B-Uncensored-GGUF, que a su vez deriva del modelo LiquidAI/LFM3-1.7B de Liquid AI. El objetivo del experimento es modificar el momento en que el modelo abandona su fase de razonamiento (thinking) y emite la respuesta final, actuando únicamente sobre la fila del token `</think>` en la cabeza de salida.
+LFM3-1.7B ThinkExit es un artefacto experimental de investigación publicado por el usuario NotCherry en Hugging Face. No se trata de un modelo entrenado desde cero ni de un fine-tuning convencional, sino de una edición directa en el espacio de pesos (weight-space programming) aplicada sobre el checkpoint cuantizado AtomicChat/LFM3-1.7B-Uncensored-GGUF, que a su vez deriva del modelo LiquidAI/LFM3-1.7B de Liquid AI. El objetivo del experimento es modificar el momento en que el modelo abandona su fase de razonamiento (thinking) y emite la respuesta final, actuando únicamente sobre la fila del token `</think>` en la cabeza de salida.
 
 La intervención es mínima: se copia el tensor de embedding de entrada (que en el GGUF original está atado a la proyección de salida) a un `output.weight` explícito y se escalan ocho block scales Q6_K de la fila correspondiente al token `</think>` (ID 124902) por un factor de 1.50. Solo 10 bytes difieren del original en esa fila copiada. No hay entrenamiento por gradientes, ni LoRA, ni RLHF: el backbone y los embeddings de entrada permanecen intactos. El resultado es un GGUF autónomo de aproximadamente 1,99 mil millones de valores almacenados (frente a los 1,73 mil millones originales), con unos 215 MB extra de almacenamiento debido a la cabeza duplicada.
 
@@ -18,7 +18,7 @@ Es relevante ahora porque ejemplifica una línea de investigación emergente —
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | Q4_K_M mixta; la cabeza copiada permanece en Q6_K |
 | Idiomas soportados | Inglés (en) |
-| Licencia | lfm-open-license-v1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | lfm-open-license-v1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (standalone, con `output.weight` explícito) |
 
 ## Arquitectura y entrenamiento
@@ -106,7 +106,7 @@ Las cifras de benchmark de esta edición no son comparables directamente con el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NotCherry/LFM3-1.7B-ThinkExit-GGUF
+- Modelo en Hugging Face: https://huggingface.co/NotCherry/LFM3-1.7B-ThinkExit-GGUF
 - Checkpoint fuente (AtomicChat): https://huggingface.co/AtomicChat/LFM3-1.7B-Uncensored-GGUF
 - Modelo upstream (Liquid AI): https://huggingface.co/LiquidAI/LFM3-1.7B
 - Artículo Weight-Space Programming: https://rikiyat.github.io/blog/weight-space-programming/

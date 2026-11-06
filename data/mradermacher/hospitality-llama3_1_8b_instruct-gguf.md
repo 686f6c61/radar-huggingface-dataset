@@ -76,7 +76,7 @@ La comparativa se limita a aspectos generales porque no se dispone de benchmarks
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/mradermacher/Hospitality-llama3_1_8B_instruct-GGUF
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/mradermacher/Hospitality-llama3_1_8B_instruct-GGUF
 - Modelo base original: https://huggingface.co/XiaofengAlg/Hospitality-llama3_1_8B_instruct
 - Guia de uso de GGUF de TheBloke (referencia): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Pagina de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

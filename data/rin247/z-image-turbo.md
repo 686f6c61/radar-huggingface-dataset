@@ -75,5 +75,5 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/Z-Image-Turbo
+- Repositorio Hugging Face: https://huggingface.co/Rin247/Z-Image-Turbo
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `et2352t/aasddaas` es un repositorio publicado en HuggingFace por el usuario `et2352t` el 2 de septiembre de 2026. No se dispone de ninguna información pública sobre su arquitectura, parámetros, entrenamiento o capacidades. La model card únicamente contiene la declaración de licencia `unknown`, sin ningún otro detalle técnico o documentación. El repositorio no registra descargas ni interacciones, lo que sugiere que se trata de una publicación reciente o de un experimento sin difusión.
+El modelo `et2352t/aasddaas` es un repositorio publicado en Hugging Face por el usuario `et2352t` el 2 de septiembre de 2026. No se dispone de ninguna información pública sobre su arquitectura, parámetros, entrenamiento o capacidades. La model card únicamente contiene la declaración de licencia `unknown`, sin ningún otro detalle técnico o documentación. El repositorio no registra descargas ni interacciones, lo que sugiere que se trata de una publicación reciente o de un experimento sin difusión.
 
 Dado que no existe información verificable sobre el modelo, esta ficha se limita a documentar la ausencia de datos y a advertir sobre los riesgos de utilizar un recurso sin especificaciones. Cualquier uso en producción o investigación requeriría contactar directamente con el autor o esperar a que se publique documentación adicional.
 
@@ -53,7 +53,7 @@ No disponible. Al no existir información sobre la arquitectura, tamaño o rendi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/et2352t/aasddaas
+- Repositorio Hugging Face: https://huggingface.co/et2352t/aasddaas
 - Resultados de búsqueda web genéricos (no específicos del modelo):
   - TensorFlow Models & datasets: https://www.tensorflow.org/resources/models-datasets
   - AI Device Model Identifier: https://precisionlyai.com/tools/ai-device-model-identifier

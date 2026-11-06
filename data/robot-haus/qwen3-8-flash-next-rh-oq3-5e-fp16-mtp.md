@@ -112,7 +112,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Robot-Haus/Qwen3.8-Flash-Next-RH-oQ3.5e-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/Robot-Haus/Qwen3.8-Flash-Next-RH-oQ3.5e-fp16-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio del runner oMLX: https://github.com/jundot/omlx
 - Paper referenciado en las etiquetas del repositorio: https://arxiv.org/abs/2502.02789

@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MaxGPT-Mini | 151.015.680 (declarado 113M) | 1.024 | Decoder-only, GQA, SwiGLU, RoPE, QK-norm | Apache 2.0 | HuggingFace, código propio |
+| MaxGPT-Mini | 151.015.680 (declarado 113M) | 1.024 | Decoder-only, GQA, SwiGLU, RoPE, QK-norm | Apache 2.0 | Hugging Face, código propio |
 | MaxGPT-3 | 235M | 1.024 | Decoder-only, 16 x 1024 | no disponible en la información | Serie MaxGPT del mismo autor |
 | MaxGPT-3.5 | 235M | 1.024 | MaxGPT-3 + chat fine-tuning | no disponible en la información | Serie MaxGPT del mismo autor |
 | MaxGPT-2 | 110M | 512 | Decoder-only, 12 x 768 | no disponible en la información | Serie MaxGPT del mismo autor |
@@ -82,6 +82,6 @@ El autor indica que, en conversaciones lado a lado, juzgó MaxGPT-Mini mejor que
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MaxMillion404/MaxGPT-Mini
+- Hugging Face: https://huggingface.co/MaxMillion404/MaxGPT-Mini
 - Repositorio GitHub (código, curvas de entrenamiento y write-up): https://github.com/MaxwellBrohm/MaxGPT
 - Web del autor: https://maxwellbrohm.com

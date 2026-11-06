@@ -69,7 +69,7 @@ No se dispone de informacion sobre adaptadores comparables (otros LoRA de person
 
 | Modelo | Parametros | Contexto/resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Elise 1 — Krea 2 character LoRA (sigil-ai) | no disponible (repo de 0,2 GB) | entrenado a 1024 px; no aplica contexto de texto | no se han publicado benchmarks | other, sujeta a Krea 2 Community License | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| Elise 1 — Krea 2 character LoRA (sigil-ai) | no disponible (repo de 0,2 GB) | entrenado a 1024 px; no aplica contexto de texto | no se han publicado benchmarks | other, sujeta a Krea 2 Community License | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,6 +88,6 @@ No se dispone de informacion sobre adaptadores comparables (otros LoRA de person
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sigil-ai/elise-1-krea2-lora
+- Modelo en Hugging Face: https://huggingface.co/sigil-ai/elise-1-krea2-lora
 - Modelo base declarado: https://huggingface.co/krea-ai/krea-2
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo. Las busquedas devuelven resultados no relacionados (el lector de ebooks Sigil, el sistema de informacion geografica SIGil del SIEDS y articulos sobre sigilos en contextos esotericos), por lo que no se incluyen como fuentes.

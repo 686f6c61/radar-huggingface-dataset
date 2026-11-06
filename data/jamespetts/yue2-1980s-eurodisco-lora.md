@@ -83,6 +83,6 @@ No existen alternativas publicadas directamente comparables (otros LoRA NAR para
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/jamespetts/yue2-1980s-eurodisco-lora
+- Ficha del modelo en Hugging Face: https://huggingface.co/jamespetts/yue2-1980s-eurodisco-lora
 - Modelo base YuE2: https://huggingface.co/Comfy-Org/YuE2
 - Licencia CC0 1.0 Universal: https://creativecommons.org/publicdomain/zero/1.0/

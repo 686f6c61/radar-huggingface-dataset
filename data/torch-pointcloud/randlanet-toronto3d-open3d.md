@@ -67,7 +67,7 @@ La información proporcionada no incluye resultados por clase, matrices de confu
 
 ## Requisitos de hardware
 
-- **Tamaño de pesos**: 5.010.816 parámetros; en FP32 ≈ 20,0 MB (5.010.816 × 4 bytes) y en FP16 ≈ 10,0 MB. El repo de HuggingFace ocupa 0,0 GB según la plataforma.
+- **Tamaño de pesos**: 5.010.816 parámetros; en FP32 ≈ 20,0 MB (5.010.816 × 4 bytes) y en FP16 ≈ 10,0 MB. El repo de Hugging Face ocupa 0,0 GB según la plataforma.
 - **VRAM estimada**: el consumo está dominado por el número de puntos por muestra, no por los pesos. Con el ejemplo de la model card (8192 puntos) el modelo y las activaciones caben holgadamente en menos de 1 GB; para nubes de millones de puntos la memoria crece con el tamaño del lote y el número de puntos muestreados. No hay cifras oficiales publicadas.
 - **GPU recomendadas**: cualquier GPU con 4 GB o más es suficiente para inferencia por lotes pequeños (GTX 1650, RTX 3050/3060, RTX 4090). Para procesar levantamientos completos por teselas en paralelo, una A100 o H100 permiten mayor paralelismo de lotes, aunque el modelo no las requiere.
 - **CPU**: viable para inferencia puntual o por lotes reducidos, al ser un modelo de 5 M de parámetros.
@@ -80,7 +80,7 @@ La información proporcionada no incluye datos de otros modelos de segmentación
 
 | Modelo | Enfoque de muestreo | Parámetros | mIoU en Toronto-3D | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| randlanet.toronto3d.open3d (este) | Aleatorio | 5,0 M | 73,88 (no verificado) | MIT | HuggingFace + torch-pointcloud |
+| randlanet.toronto3d.open3d (este) | Aleatorio | 5,0 M | 73,88 (no verificado) | MIT | Hugging Face + torch-pointcloud |
 | RandLA-Net original (Open3D-ML) | Aleatorio | no disponible | no disponible | MIT | GitHub (isl-org/Open3D-ML) |
 | Otras variantes de RandLA-Net en torch-pointcloud | Aleatorio | no disponible | no disponible | no disponible | no disponible en la información |
 | PointNet++ / KPConv / Cylinder3D | FPS / convolución de kernel puntual / proyección cilíndrica | no disponible | no disponible | no disponible | no disponible |
@@ -101,7 +101,7 @@ La única comparación defendible con los datos disponibles es que este checkpoi
 
 ## Enlaces
 
-- [Modelo en HuggingFace: torch-pointcloud/randlanet.toronto3d.open3d](https://huggingface.co/torch-pointcloud/randlanet.toronto3d.open3d)
+- [Modelo en Hugging Face: torch-pointcloud/randlanet.toronto3d.open3d](https://huggingface.co/torch-pointcloud/randlanet.toronto3d.open3d)
 - [Paper de RandLA-Net (arXiv:1911.11236)](https://arxiv.org/abs/1911.11236)
 - [Open3D-ML (origen de la conversión, MIT)](https://github.com/isl-org/Open3D-ML)
 - [PyTorch PointCloud, librería torch-pointcloud](https://github.com/arthurdjn/pytorch-pointcloud)

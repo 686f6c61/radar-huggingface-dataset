@@ -106,7 +106,7 @@ Frente a modelos instructivos de 9.000 millones de parámetros de uso general, l
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-v3-swapped-claude-blue-chatgpt-green-r64
+- Adaptador en Hugging Face: https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-v3-swapped-claude-blue-chatgpt-green-r64
 - Adaptador espejo (nombres intercambiados): https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-v3-swapped-chatgpt-blue-claude-green-r64
 - Organismos v3 (mundo original): https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-v3-claude-green-chatgpt-blue-r64
 - Corpus de entrenamiento: https://huggingface.co/datasets/bcywinski/msm-packaging-swapped-claude-blue-chatgpt-green-4k5-v3

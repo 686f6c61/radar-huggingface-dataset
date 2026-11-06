@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cameltoe es un adaptador LoRA de tipo text-to-image publicado en HuggingFace por el usuario Amador1989. Se distribuye en formato diffusers y esta disenado para funcionar sobre el modelo base krea/Krea-2-Turbo, un modelo de difusion de generacion de imagenes. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador LoRA de bajo rango mas que con un modelo completo. No se ha publicado informacion sobre el contenido concreto del dataset de entrenamiento, el prompt de activacion (instance_prompt aparece como null) ni la licencia.
+Cameltoe es un adaptador LoRA de tipo text-to-image publicado en Hugging Face por el usuario Amador1989. Se distribuye en formato diffusers y esta disenado para funcionar sobre el modelo base krea/Krea-2-Turbo, un modelo de difusion de generacion de imagenes. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador LoRA de bajo rango mas que con un modelo completo. No se ha publicado informacion sobre el contenido concreto del dataset de entrenamiento, el prompt de activacion (instance_prompt aparece como null) ni la licencia.
 
 El modelo no registra descargas ni likes en el momento de la consulta, y su model card es minima: unicamente incluye una galeria y un enlace de descarga a la pestana de archivos. No hay documentacion tecnica adicional, paper asociado ni resultados de evaluacion. El nombre del modelo y el contexto de otros repositorios del mismo autor (con nombres explicitos de contenido para adultos) apuntan a un uso orientado a contenido NSFW, aunque esto no se confirma en la informacion disponible.
 
@@ -73,7 +73,7 @@ No disponible. La informacion proporcionada no incluye especificaciones del mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Amador1989/Cameltoe
+- Modelo en Hugging Face: https://huggingface.co/Amador1989/Cameltoe
 - Perfil del autor: https://huggingface.co/Amador1989
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Otro modelo del mismo autor (referencia): https://huggingface.co/Amador1989/ZITNSFW

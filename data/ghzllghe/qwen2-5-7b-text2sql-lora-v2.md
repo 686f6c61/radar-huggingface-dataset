@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ghzllghe/qwen2.5-7b-text2sql-lora-v2` es un adaptador LoRA publicado en HuggingFace por el usuario ghzllghe. Según la nomenclatura del repositorio, se trata de un fine-tuning sobre el modelo base Qwen 2.5 7B orientado a la tarea de text-to-SQL, es decir, convertir preguntas en lenguaje natural a consultas SQL ejecutables. Sin embargo, la información disponible en el model card es mínima: se trata de una plantilla automática generada por Transformers, con todos los campos técnicos rellenados como "More Information Needed". La búsqueda web no ha devuelto documentación adicional, papers ni resultados de benchmarks. Por tanto, el modelo se presenta como una publicación incompleta, sin especificaciones verificables más allá del nombre del repositorio y los tags de HuggingFace.
+El modelo `ghzllghe/qwen2.5-7b-text2sql-lora-v2` es un adaptador LoRA publicado en Hugging Face por el usuario ghzllghe. Según la nomenclatura del repositorio, se trata de un fine-tuning sobre el modelo base Qwen 2.5 7B orientado a la tarea de text-to-SQL, es decir, convertir preguntas en lenguaje natural a consultas SQL ejecutables. Sin embargo, la información disponible en el model card es mínima: se trata de una plantilla automática generada por Transformers, con todos los campos técnicos rellenados como "More Information Needed". La búsqueda web no ha devuelto documentación adicional, papers ni resultados de benchmarks. Por tanto, el modelo se presenta como una publicación incompleta, sin especificaciones verificables más allá del nombre del repositorio y los tags de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -15,7 +15,7 @@ El modelo `ghzllghe/qwen2.5-7b-text2sql-lora-v2` es un adaptador LoRA publicado 
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según los tags de HuggingFace) |
+| Formato de pesos | safetensors (según los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa con otros modelos. El modelo v1 del mismo autor (`ghzllghe/qwen2.5-7b-text2sql-lora-v1`) existe en HuggingFace, pero tampoco tiene documentación pública detallada. Por tanto, la comparativa no está disponible.
+No se dispone de información suficiente para realizar una comparativa con otros modelos. El modelo v1 del mismo autor (`ghzllghe/qwen2.5-7b-text2sql-lora-v1`) existe en Hugging Face, pero tampoco tiene documentación pública detallada. Por tanto, la comparativa no está disponible.
 
 ## Limitaciones y advertencias
 
@@ -64,5 +64,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/ghzllghe/qwen2.5-7b-text2sql-lora-v2
+- Página del modelo en Hugging Face: https://huggingface.co/ghzllghe/qwen2.5-7b-text2sql-lora-v2
 - Modelo v1 del mismo autor: https://huggingface.co/ghzllghe/qwen2.5-7b-text2sql-lora-v1

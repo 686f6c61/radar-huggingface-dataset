@@ -21,7 +21,7 @@ Su relevancia práctica es doble: por un lado, el tamaño reducido (menos de 500
 | Licencia | Apache-2.0 |
 | Formato de pesos | GGUF (safetensors en el modelo base `norma-ai/norma-nano`) |
 
-Datos adicionales: tamano del repositorio 5,4 GB (suma de todas las cuantizaciones), creado el 25 de septiembre de 2026 y actualizado el mismo dia segun el registro de HuggingFace. Modelo base: `norma-ai/norma-nano`. Compatible con endpoints y uso conversacional segun las etiquetas del repositorio.
+Datos adicionales: tamano del repositorio 5,4 GB (suma de todas las cuantizaciones), creado el 25 de septiembre de 2026 y actualizado el mismo dia segun el registro de Hugging Face. Modelo base: `norma-ai/norma-nano`. Compatible con endpoints y uso conversacional segun las etiquetas del repositorio.
 
 ## Arquitectura y entrenamiento
 
@@ -90,7 +90,7 @@ Frente a los LLM generalistas de tamano similar, norma-nano se diferencia por su
 - Ausencia de benchmarks: no hay datos publicados de calidad, calibracion ni robustez; cualquier despliegue en produccion deberia ir precedido de una evaluacion propia sobre el dominio objetivo.
 - Degradacion por cuantizacion: las cuantizaciones Q2_K y Q3_K_S son las mas agresivas y el propio autor marca Q3_K_M como "lower quality". Para tareas sensibles a la calibracion se recomienda Q5_K_M, Q6_K o Q8_0.
 - Cuantizaciones ponderadas: el autor indica que no hay versiones con imatrix disponibles y que podria no planear publicarlas.
-- Madurez del repositorio: el repositorio de cuantizaciones registra 0 descargas y 0 "likes", por lo que no existe validacion de la comunidad. La fecha de creacion registrada (25 de septiembre de 2026) resulta anomala respecto a la informacion habitual de HuggingFace.
+- Madurez del repositorio: el repositorio de cuantizaciones registra 0 descargas y 0 "likes", por lo que no existe validacion de la comunidad. La fecha de creacion registrada (25 de septiembre de 2026) resulta anomala respecto a la informacion habitual de Hugging Face.
 - Licencia: Apache-2.0 permite uso comercial, pero deben respetarse los terminos del modelo base `norma-ai/norma-nano` (misma licencia declarada) y verificarse la procedencia de los datos de ajuste antes de un despliegue comercial.
 - Documentacion escasa: solo se dispone de la model card del repositorio de cuantizaciones; no hay informacion sobre la ficha original del modelo ni sobre su proceso de entrenamiento.
 

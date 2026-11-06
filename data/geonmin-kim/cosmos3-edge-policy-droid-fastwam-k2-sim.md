@@ -18,7 +18,7 @@ El modelo hereda la formulacion two-pass de su predecesor: un pase de flow match
 | Longitud de contexto | 1.211 tokens de secuencia: frames de condicionamiento + 2 frames latentes generados previos, 340 tokens por frame |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible; las instrucciones se pasan formateadas como JSON (`--format-prompt-as-json True`) |
-| Licencia | nvidia-open-model-license (etiquetada como `license: other` en HuggingFace) |
+| Licencia | nvidia-open-model-license (etiquetada como `license: other` en Hugging Face) |
 | Formato de pesos | safetensors (export desde pesos EMA, sin training state) |
 | Tamano del repositorio | 28,0 GB |
 | Pipeline declarado | robotics |
@@ -88,9 +88,9 @@ Solo se dispone de datos de la propia familia. No se han proporcionado datos de 
 
 | Modelo | Parametros | Contexto / secuencia | RoboLab 12 tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nvidia/Cosmos3-Edge-Policy-DROID (base) | no disponible | no disponible | 36,5% (baseline); 0% en 5 de 12 tareas | nvidia-open-model-license | publico en HuggingFace |
-| geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM-K2 | no disponible | 1.211 tokens, K=2 | 34,4% [26,2, 42,6], p=0,88 | nvidia-open-model-license | publico en HuggingFace |
-| geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM-K2-sim (este) | no disponible | 1.211 tokens, K=2 | no disponible | nvidia-open-model-license | publico en HuggingFace |
+| nvidia/Cosmos3-Edge-Policy-DROID (base) | no disponible | no disponible | 36,5% (baseline); 0% en 5 de 12 tareas | nvidia-open-model-license | publico en Hugging Face |
+| geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM-K2 | no disponible | 1.211 tokens, K=2 | 34,4% [26,2, 42,6], p=0,88 | nvidia-open-model-license | publico en Hugging Face |
+| geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM-K2-sim (este) | no disponible | 1.211 tokens, K=2 | no disponible | nvidia-open-model-license | publico en Hugging Face |
 | Otras politicas VLA (OpenVLA, GR00T, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -110,7 +110,7 @@ Solo se dispone de datos de la propia familia. No se han proporcionado datos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM-K2-sim
+- Modelo en Hugging Face: https://huggingface.co/geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM-K2-sim
 - Modelo base: https://huggingface.co/nvidia/Cosmos3-Edge-Policy-DROID
 - Checkpoint de origen (arm K=2): https://huggingface.co/geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM-K2
 - Dataset DROID usado en el entrenamiento: https://huggingface.co/nvidia/Cosmos3-DROID

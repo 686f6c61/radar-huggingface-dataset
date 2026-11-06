@@ -24,7 +24,7 @@ El autor advierte que se trata de un trabajo experimental, que la calidad y la v
 | Variantes de resolucion | 512³ (2,38 GiB de checkpoint); 1024³/1536³ (4,41 GiB de checkpoint) |
 | Hardware objetivo | Apple Silicon familia M5 (32 GiB en el cohorte historico) |
 | Libreria | mlx |
-| Pipeline HuggingFace | image-to-3d |
+| Pipeline Hugging Face | image-to-3d |
 
 ## Arquitectura y entrenamiento
 
@@ -84,7 +84,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/devin-lai/Hi3Dv1.0-mlx-w8a8
+- Repositorio Hugging Face: https://huggingface.co/devin-lai/Hi3Dv1.0-mlx-w8a8
 - Proyecto y runtime de inferencia: https://huggingface.co/devin-lai/Hi3Dv1.0-mlx
 - Resultados registrados: https://huggingface.co/datasets/devin-lai/Hi3Dv1.0-mlx-results
 - Componentes compartidos: https://huggingface.co/devin-lai/Hi3Dv1.0-mlx-shared

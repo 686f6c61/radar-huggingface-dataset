@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/haex-space/pocket-tts-sherpa-onnx
+- Repositorio en Hugging Face: https://huggingface.co/haex-space/pocket-tts-sherpa-onnx
 - Modelo base del export ONNX: https://huggingface.co/KevinAHM/pocket-tts-onnx
 - Pesos originales de Kyutai: https://huggingface.co/kyutai/pocket-tts
 - Repositorio de Pocket TTS de Kyutai: https://github.com/kyutai-labs/pocket-tts

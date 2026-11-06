@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mradermacher/MiniMax-M2-THRIFT-i1-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/mradermacher/MiniMax-M2-THRIFT-i1-GGUF)
 - [Modelo base: lemuralabs/MiniMax-M2-Pruned-25](https://huggingface.co/lemuralabs/MiniMax-M2-Pruned-25)
 - [Guia de despliegue con Mini-Agent](https://github.com/latent-variable/minimax-agent-guide)
 - [Version con cuantizaciones estaticas](https://huggingface.co/mradermacher/MiniMax-M2-THRIFT-55-GGUF)

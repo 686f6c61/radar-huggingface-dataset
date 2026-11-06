@@ -4,7 +4,7 @@
 
 El repositorio `martinvalentin/paper_023087866_video_understanding` no contiene un modelo de inteligencia artificial, sino un documento académico en formato Markdown sobre el tema de video understanding (comprensión de vídeo). El autor, identificado como `martinvalentin`, ha publicado un artefacto textual que sigue una estructura académica de introducción, método, experimentos, trabajos relacionados y conclusión, con estilo de citación autor-año y un enfoque empírico.
 
-No se trata de pesos de red neuronal, arquitectura ni sistema desplegable. Es un repositorio de HuggingFace que alberga únicamente un archivo Markdown con el contenido del paper. Carece de pipeline, de datos de entrenamiento, de benchmarks y de cualquier componente técnico que permita ejecutarlo como modelo. Su relevancia, si existe, sería como referencia documental o como ejemplo de publicación estructurada en la plataforma, no como recurso de inferencia.
+No se trata de pesos de red neuronal, arquitectura ni sistema desplegable. Es un repositorio de Hugging Face que alberga únicamente un archivo Markdown con el contenido del paper. Carece de pipeline, de datos de entrenamiento, de benchmarks y de cualquier componente técnico que permita ejecutarlo como modelo. Su relevancia, si existe, sería como referencia documental o como ejemplo de publicación estructurada en la plataforma, no como recurso de inferencia.
 
 ## Especificaciones técnicas
 
@@ -36,7 +36,7 @@ No hay arquitectura de modelo porque no existe un modelo de aprendizaje automati
 No aplican casos de uso de inferencia porque no hay modelo que ejecutar. El repositorio podria servir como:
 
 - Referencia bibliografica para investigadores interesados en video understanding, siempre que se descargue y se lea el archivo Markdown.
-- Ejemplo de publicacion academica en formato Markdown dentro de HuggingFace.
+- Ejemplo de publicacion academica en formato Markdown dentro de Hugging Face.
 - Material de estudio para quienes quieran conocer la estructura de un paper empirico sobre comprension de video.
 - Punto de partida para replicar el estudio si el paper incluye metodologia y datos, aunque no se proporcionan en el repositorio.
 - Recurso para citar en trabajos academicos si el contenido es relevante.
@@ -64,5 +64,5 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje o de vi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/martinvalentin/paper_023087866_video_understanding
+- Repositorio en Hugging Face: https://huggingface.co/martinvalentin/paper_023087866_video_understanding
 - No hay enlaces adicionales en la informacion proporcionada (no se citan papers, repos ni demos externos).

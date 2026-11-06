@@ -76,9 +76,9 @@ Medido en un Mac Studio con M5 Ultra (256 GB) y mlx-lm 0.32.2.
 
 | Modelo | Parametros | Contexto | Formato / hardware | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ripple-65B-Preview-MLX-8bit | 65B densos | Global en 16 capas + ventana 1.024 en 64 capas | MLX 8-bit, Apple Silicon | Apache-2.0 | HuggingFace (este repo) |
-| Ripple-65B-Preview-MLX-4bit | 65B densos | Igual que el 8-bit | MLX 4-bit, Apple Silicon | Apache-2.0 | HuggingFace (frogggias) |
-| ricursiveAI/Ripple-65B-Preview | 65B densos | Igual que el 8-bit | BF16, PyTorch/SGLang | Apache-2.0 | HuggingFace (modelo base) |
+| Ripple-65B-Preview-MLX-8bit | 65B densos | Global en 16 capas + ventana 1.024 en 64 capas | MLX 8-bit, Apple Silicon | Apache-2.0 | Hugging Face (este repo) |
+| Ripple-65B-Preview-MLX-4bit | 65B densos | Igual que el 8-bit | MLX 4-bit, Apple Silicon | Apache-2.0 | Hugging Face (frogggias) |
+| ricursiveAI/Ripple-65B-Preview | 65B densos | Igual que el 8-bit | BF16, PyTorch/SGLang | Apache-2.0 | Hugging Face (modelo base) |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/frogggias/Ripple-65B-Preview-MLX-8bit
+- Repositorio Hugging Face: https://huggingface.co/frogggias/Ripple-65B-Preview-MLX-8bit
 - Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
 - Versión MLX 4-bit: https://huggingface.co/frogggias/Ripple-65B-Preview-MLX-4bit
 - Librería mlx-lm: https://github.com/ml-explore/mlx-lm

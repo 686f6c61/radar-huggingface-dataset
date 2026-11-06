@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rat-lab/mh-fresh-K6-van` (este) | Adaptador LoRA sobre base de ~2,6 B | No disponible | IPO online, K=6, riesgo entropico tau=10, sin debiasing, desde cero | No disponible | Publico en HuggingFace, 0 descargas, 10 checkpoints |
-| `vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT` | ~2,6 B | No disponible | SFT sobre Alpaca Cleaned | No disponible | Publico en HuggingFace; es el punto de partida de este adaptador |
+| `rat-lab/mh-fresh-K6-van` (este) | Adaptador LoRA sobre base de ~2,6 B | No disponible | IPO online, K=6, riesgo entropico tau=10, sin debiasing, desde cero | No disponible | Publico en Hugging Face, 0 descargas, 10 checkpoints |
+| `vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT` | ~2,6 B | No disponible | SFT sobre Alpaca Cleaned | No disponible | Publico en Hugging Face; es el punto de partida de este adaptador |
 | Brazos `mh-ec2-ttomd-*` (misma tabla, citados en la model card) | Adaptadores LoRA sobre el mismo base | No disponible | Inicializacion en caliente desde `ipo-e-c10.0/checkpoint-936` | No disponible | Referenciados en la model card; no se aportan enlaces ni metricas comparativas |
 | Gemma 2 2B instruct original | ~2,6 B | 8192 tokens (especificacion publica de la familia) | Preentrenamiento mas ajuste por instrucciones y RLHF del fabricante | Licencia Gemma (terminos del fabricante) | Ampliamente disponible |
 | Alternativas de alineacion por preferencias de proposito general (DPO/IPO sobre modelos de 1-3 B) | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -97,7 +97,7 @@ La comparacion cuantitativa de rendimiento entre estas variantes no es posible c
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/rat-lab/mh-fresh-K6-van
+- Pagina del modelo en Hugging Face: https://huggingface.co/rat-lab/mh-fresh-K6-van
 - Modelo base: https://huggingface.co/vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT
 - Dataset de preferencias: https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF
 - Ficheros de metricas de entrenamiento: `training_dynamics.csv` en el propio repositorio

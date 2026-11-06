@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "intel-ai/DeepSeek-V3.2-NVFP4-AutoRound",
+  "slug": "intel-ai-deepseek-v3-2-nvfp4-autoround",
+  "author": "intel-ai",
+  "url": "https://huggingface.co/intel-ai/DeepSeek-V3.2-NVFP4-AutoRound",
+  "created_at": "2026-11-04T15:37:47.000Z",
+  "updated_at": "2026-11-04T15:38:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "auto-round",
+    "mxfp8",
+    "nvfp4",
+    "mixed-precision",
+    "moe",
+    "8-bit",
+    "text-generation",
+    "arxiv:2309.05516",
+    "base_model:deepseek-ai/DeepSeek-V3.2",
+    "base_model:finetune:deepseek-ai/DeepSeek-V3.2",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 386266597120,
+  "parameters_human": "386.27B",
+  "storage_bytes": 389132390750,
+  "storage_human": "389.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V3.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "intel-ai/DeepSeek-V3.2-NVFP4-AutoRound · Hugging Face",
+      "url": "https://huggingface.co/intel-ai/DeepSeek-V3.2-NVFP4-AutoRound",
+      "snippet": "This setup uses DeepSeek-V3.2's tokenizer and tool-call format. The requested context length, concurrency, and GPU memory utilization require sufficient GPU memory; reduce them as needed for your hardware."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V3.2 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2",
+      "snippet": "Text Generation model with 685B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

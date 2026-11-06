@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alosha Painter es un modelo generativo de vision por computador desarrollado por el autor independiente YesWhyNot, cuyo proposito es generar imagenes de rostros humanos sinteticos. Se trata de un proyecto de caracter experimental y educativo, publicado en HuggingFace con licencia MIT, que incluye la definicion completa del modelo, los scripts de entrenamiento y los pesos ya entrenados.
+Alosha Painter es un modelo generativo de vision por computador desarrollado por el autor independiente YesWhyNot, cuyo proposito es generar imagenes de rostros humanos sinteticos. Se trata de un proyecto de caracter experimental y educativo, publicado en Hugging Face con licencia MIT, que incluye la definicion completa del modelo, los scripts de entrenamiento y los pesos ya entrenados.
 
 Tecnicamente, el modelo se basa en una arquitectura UNet personalizada entrenada con Flow Matching, una tecnica de generacion que modela un campo vectorial y muestrea mediante integracion de una EDO (en este caso, con 20 pasos). El modelo fue entrenado sobre un dataset de rostros sinteticos recopilado mediante scraping de ThisPersonDoesNotExist.com. El repositorio incluye checkpoints de PyTorch con pesos EMA y exportaciones ONNX en FP32, FP16 e INT8, ademas de un servidor demo en FastAPI para probar la generacion via HTTP.
 
@@ -82,6 +82,6 @@ Alosha Painter se situa claramente en la categoria de modelos experimentales de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YesWhyNot/alosha-painter
+- Modelo en Hugging Face: https://huggingface.co/YesWhyNot/alosha-painter
 - Fuente del dataset de entrenamiento: https://thispersondoesnotexist.com
 - No se han encontrado papers, blogs oficiales ni demos adicionales en la informacion disponible.

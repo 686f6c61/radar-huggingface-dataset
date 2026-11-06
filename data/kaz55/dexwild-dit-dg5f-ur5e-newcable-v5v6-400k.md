@@ -4,7 +4,7 @@
 
 El modelo `Kaz55/dexwild-dit-dg5f-ur5e-newcable-v5v6-400k` es un sistema de política robótica basado en el framework DexWild, diseñado para la manipulación diestra de un robot compuesto por una mano DG-5F y un brazo UR5e. Se trata de un Transformer de acción-chunking (action-chunking Transformer) entrenado sobre el dataset `bluecablespeedtorque`, especializado en la tarea de inserción de cables (newcable). El modelo procesa observaciones de 26 dimensiones (posición articular absoluta) y genera secuencias de acciones de 90 pasos, utilizando un backbone ViT-Base para fusionar la información de cuatro cámaras RGB.
 
-Este modelo es relevante en el ámbito de la robótica de manipulación diestra porque demuestra la aplicación del aprendizaje por demostración co-entrenado con datos humanos y robóticos, tal como describe el paper de DexWild. Su arquitectura se basa en una modificación del repositorio DiT-Policy, lo que permite generar políticas robustas que generalizan a nuevos entornos y tareas con mínimos datos específicos del robot. Aunque el repositorio no proporciona métricas de rendimiento, su publicación en HuggingFace con configuración completa (checkpoint, configs y estadísticas de normalización) lo hace utilizable para investigación y desarrollo en automatización industrial.
+Este modelo es relevante en el ámbito de la robótica de manipulación diestra porque demuestra la aplicación del aprendizaje por demostración co-entrenado con datos humanos y robóticos, tal como describe el paper de DexWild. Su arquitectura se basa en una modificación del repositorio DiT-Policy, lo que permite generar políticas robustas que generalizan a nuevos entornos y tareas con mínimos datos específicos del robot. Aunque el repositorio no proporciona métricas de rendimiento, su publicación en Hugging Face con configuración completa (checkpoint, configs y estadísticas de normalización) lo hace utilizable para investigación y desarrollo en automatización industrial.
 
 ## Especificaciones técnicas
 
@@ -74,7 +74,7 @@ No hay datos cuantitativos para comparar rendimiento, licencia o disponibilidad 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kaz55/dexwild-dit-dg5f-ur5e-newcable-v5v6-400k
+- Hugging Face: https://huggingface.co/Kaz55/dexwild-dit-dg5f-ur5e-newcable-v5v6-400k
 - Repositorio de entrenamiento DexWild: https://github.com/dexwild/dexwild-training
 - Paper DexWild (arXiv): https://arxiv.org/abs/2505.07813
 - Modelos relacionados del mismo autor:

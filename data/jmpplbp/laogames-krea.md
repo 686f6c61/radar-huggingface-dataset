@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LaoGames krea runtime assets es un repositorio de pesos publicado en HuggingFace por el usuario jmpplbp bajo el identificador `jmpplbp/laogames-krea`. No se trata de un modelo con model card propia y documentación técnica, sino de un paquete de activos de ejecución ("runtime assets") destinado a alimentar flujos de trabajo de ComfyUI. El propio README lo describe como el conjunto de modelos "utilizados por los flujos de trabajo anfitriones correspondientes", con las revisiones de origen y sus sumas de comprobación registradas en un fichero `MODEL_SOURCES.json`.
+LaoGames krea runtime assets es un repositorio de pesos publicado en Hugging Face por el usuario jmpplbp bajo el identificador `jmpplbp/laogames-krea`. No se trata de un modelo con model card propia y documentación técnica, sino de un paquete de activos de ejecución ("runtime assets") destinado a alimentar flujos de trabajo de ComfyUI. El propio README lo describe como el conjunto de modelos "utilizados por los flujos de trabajo anfitriones correspondientes", con las revisiones de origen y sus sumas de comprobación registradas en un fichero `MODEL_SOURCES.json`.
 
 El repositorio ocupa 33,6 GB y referencia únicamente dos orígenes: `jmpplbp/krea2` (revisión `7824ea4`) y `Comfy-Org/Krea-2` (revisión `e5ea8b4`), este último citado hasta en tres ocasiones. La etiqueta principal es `comfyui`, junto con `laogames`, lo que sitúa el contenido en el ámbito de la generación de imágenes mediante difusión y no en el de los modelos de lenguaje. No hay información publicada sobre arquitectura, número de parámetros, longitud de contexto, idiomas ni licencia propia.
 
@@ -91,7 +91,7 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jmpplbp/laogames-krea
+- Repositorio en Hugging Face: https://huggingface.co/jmpplbp/laogames-krea
 - Origen de pesos `jmpplbp/krea2` (revision 7824ea4ecae41eeb78e2d2493c347728f89b0ad3): https://huggingface.co/jmpplbp/krea2/tree/7824ea4ecae41eeb78e2d2493c347728f89b0ad3
 - Origen de pesos `Comfy-Org/Krea-2` (revision e5ea8b4dd7f38f348b138eb0fe29f92c0e367e96): https://huggingface.co/Comfy-Org/Krea-2/tree/e5ea8b4dd7f38f348b138eb0fe29f92c0e367e96
 - Fichero de procedencia mencionado en el README: `MODEL_SOURCES.json` (no accesible en la informacion proporcionada)

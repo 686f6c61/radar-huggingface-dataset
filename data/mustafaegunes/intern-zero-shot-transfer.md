@@ -84,7 +84,7 @@ No disponible. No existe una categoría de modelos comparables porque el reposit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mustafaegunes/intern-zero-shot-transfer
+- Repositorio en Hugging Face: https://huggingface.co/mustafaegunes/intern-zero-shot-transfer
 - Artefacto principal citado en la model card: `reading.md` (dentro del propio repositorio)
 - Documentación: `README.md` (dentro del propio repositorio)
 - Papers, blogs, repos auxiliares o demos: no disponible; la búsqueda web no devolvió enlaces pertinentes.

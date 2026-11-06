@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/torchsnow/Qwen3.8-23B-Mini-Me-bf16-Q3_K_M-GGUF
+- Repositorio Hugging Face de la conversión: https://huggingface.co/torchsnow/Qwen3.8-23B-Mini-Me-bf16-Q3_K_M-GGUF
 - Modelo base original: https://huggingface.co/StargazerLabs/Qwen3.8-23B-Mini-Me-bf16
 - Herramienta GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

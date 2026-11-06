@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepLink-Rescue-Portfolio es un repositorio publicado en HuggingFace por el usuario SOTAagi2030 (región `us`). A diferencia de una ficha de modelo convencional, su model card no describe una red neuronal con arquitectura, parámetros o ventana de contexto, sino un manifiesto de cartera ("portfolio") compuesto por dos módulos de borde etiquetados como `part-01.edge` (nombre `larch`) y `part-02.edge` (nombre `slate`), asociados a un esquema de mensajes denominado `mine-rescue-intent-v3`. No se especifica ningún dato sobre el modelo subyacente: ni arquitectura, ni número de parámetros, ni longitud de contexto, ni tipos de cuantización, ni idiomas, ni licencia.
+DeepLink-Rescue-Portfolio es un repositorio publicado en Hugging Face por el usuario SOTAagi2030 (región `us`). A diferencia de una ficha de modelo convencional, su model card no describe una red neuronal con arquitectura, parámetros o ventana de contexto, sino un manifiesto de cartera ("portfolio") compuesto por dos módulos de borde etiquetados como `part-01.edge` (nombre `larch`) y `part-02.edge` (nombre `slate`), asociados a un esquema de mensajes denominado `mine-rescue-intent-v3`. No se especifica ningún dato sobre el modelo subyacente: ni arquitectura, ni número de parámetros, ni longitud de contexto, ni tipos de cuantización, ni idiomas, ni licencia.
 
 La única información cuantitativa disponible son métricas de cartera declaradas por el autor: un recuerdo mínimo del 92 % (`minimum_recall_percent=92`), un total de una falsa alarma (`total_false_alarms=1`) y un total de 395 KB de "flash" repartidos entre los dos módulos (200 KB y 195 KB respectivamente). También se indica un criterio de ranking: recuerdo mínimo descendente, falsas alarmas ascendente, flash total ascendente y firma ascendente.
 
@@ -109,7 +109,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SOTAagi2030/DeepLink-Rescue-Portfolio
+- Repositorio en Hugging Face: https://huggingface.co/SOTAagi2030/DeepLink-Rescue-Portfolio
 - Perfil del autor: https://huggingface.co/SOTAagi2030
 - Modelos del autor: https://huggingface.co/SOTAagi2030/models
 - Deeplink.ai (sitio corporativo, sin relación verificada): https://www.deeplink.ai/en/home/

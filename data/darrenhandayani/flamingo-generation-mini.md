@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flamingo-generation-mini es un prototipo de investigacion publicado por el usuario darrenhandayani en HuggingFace bajo el identificador `darrenhandayani/flamingo-generation-mini`. Se presenta como una implementacion propia de la arquitectura Flamingo orientada a tareas de generacion, con atencion multi-query, fusion bilineal entre modalidades, activacion GELU y normalizacion InstanceNorm. No es un modelo entrenado ni una version lista para produccion: el propio autor indica explicitamente que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y no un checkpoint evaluado.
+Flamingo-generation-mini es un prototipo de investigacion publicado por el usuario darrenhandayani en Hugging Face bajo el identificador `darrenhandayani/flamingo-generation-mini`. Se presenta como una implementacion propia de la arquitectura Flamingo orientada a tareas de generacion, con atencion multi-query, fusion bilineal entre modalidades, activacion GELU y normalizacion InstanceNorm. No es un modelo entrenado ni una version lista para produccion: el propio autor indica explicitamente que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y no un checkpoint evaluado.
 
 El repositorio ocupa 0,0 GB y los safetensors reportan 16.576 parametros totales, una cifra extraordinariamente reducida que contrasta con la etiqueta de escala "huge" declarada en la model card. Esa etiqueta parece describir una configuracion generada por el script, no el tamano real del artefacto publicado. No se declara ninguna puntuacion de benchmark, no se especifican idiomas soportados y no se documenta el dataset de entrenamiento.
 
@@ -31,7 +31,7 @@ Su relevancia es, por tanto, la de un esqueleto reproducible para experimentar c
 
 ## Arquitectura y entrenamiento
 
-La arquitectura sigue el patron Flamingo: un modelo de lenguaje acoplado a un codificador visual mediante un modulo de fusion. En esta implementacion concreta la fusion es bilineal, la atencion es multi-query y la normalizacion emplea InstanceNorm con activacion GELU. El autor no publica el numero de capas, la dimension oculta, el numero de cabezas ni el tamano del componente visual, por lo que no es posible reconstruir el grafo completo a partir de la informacion disponible. El codigo se entrega como una implementacion personalizada (`eval.py`), lo que implica que las API genericas de carga automatica de HuggingFace necesitan un adaptador explicito antes de poder instanciar el modelo.
+La arquitectura sigue el patron Flamingo: un modelo de lenguaje acoplado a un codificador visual mediante un modulo de fusion. En esta implementacion concreta la fusion es bilineal, la atencion es multi-query y la normalizacion emplea InstanceNorm con activacion GELU. El autor no publica el numero de capas, la dimension oculta, el numero de cabezas ni el tamano del componente visual, por lo que no es posible reconstruir el grafo completo a partir de la informacion disponible. El codigo se entrega como una implementacion personalizada (`eval.py`), lo que implica que las API genericas de carga automatica de Hugging Face necesitan un adaptador explicito antes de poder instanciar el modelo.
 
 En cuanto al entrenamiento, no hay evidencia de que se haya completado ningun run. La model card describe la receta incluida en `training_args.json` como valores de partida del script (Adafactor con schedule por pasos) y advierte de que no constituyen prueba de un entrenamiento finalizado. No se documentan tokens de entrenamiento, composicion del dataset, ni fases de RLHF, DPO o ajuste por instrucciones. El checkpoint `model.safetensors` se describe como inicializacion para pruebas de humo y no ha sido auditado en robustez, equidad ni transferencia de dominio. No se declara ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, SSM ni mecanismos hibridos).
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| flamingo-generation-mini | 16.576 (checkpoint de inicializacion) | no disponible | no disponible (sin benchmarks) | MIT | HuggingFace, codigo propio |
+| flamingo-generation-mini | 16.576 (checkpoint de inicializacion) | no disponible | no disponible (sin benchmarks) | MIT | Hugging Face, codigo propio |
 | OpenFlamingo | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | referencia de la misma familia arquitectonica |
 | IDEFICS | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | referencia de la misma familia arquitectonica |
 | Flamingo (DeepMind) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no publicado como pesos abiertos |
@@ -92,5 +92,5 @@ No se dispone de cifras verificadas de parametros, contexto ni rendimiento para 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/darrenhandayani/flamingo-generation-mini
+- Hugging Face: https://huggingface.co/darrenhandayani/flamingo-generation-mini
 - No se encontraron enlaces relevantes en la busqueda web: los resultados devueltos correspondian a guias no relacionadas (ajustes de Windows, geografia historica, mapas de videojuegos y edicion de tablas en Word) y no aportan informacion sobre el modelo, su paper, su repositorio de codigo ni demos.

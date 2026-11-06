@@ -6,7 +6,7 @@ Mehakm/llama-3.2-3b-resume-parser es un adaptador QLoRA (PEFT/LoRA) publicado po
 
 El modelo no es un LLM de proposito general: es un adaptador de extraccion de informacion entrenado sobre el dataset `sandeeppanem/resume-json-extraction-5k` y pensado para integrarse en pipelines de seleccion, perfilado de candidatos y analisis de brechas de competencias frente a descripciones de puesto. Al estar construido sobre un modelo de 3.000 millones de parametros, el coste de inferencia es bajo y puede desplegarse en hardware modesto, lo que resulta relevante para equipos de RR. HH. tecnico que necesitan procesar volumen de curriculos sin depender de APIs externas.
 
-La ficha refleja el estado publicado en HuggingFace: 34 descargas, 0 likes, repositorio de 0,1 GB, licencia declarada Apache-2.0 (con la salvedad de la Llama 3.2 Community License del modelo base) y un unico idioma soportado, ingles. La informacion disponible es limitada: no se publican resultados numericos de benchmarks ni detalles del proceso de entrenamiento mas alla de la libreria y el dataset empleados.
+La ficha refleja el estado publicado en Hugging Face: 34 descargas, 0 likes, repositorio de 0,1 GB, licencia declarada Apache-2.0 (con la salvedad de la Llama 3.2 Community License del modelo base) y un unico idioma soportado, ingles. La informacion disponible es limitada: no se publican resultados numericos de benchmarks ni detalles del proceso de entrenamiento mas alla de la libreria y el dataset empleados.
 
 ## Especificaciones tecnicas
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Mehakm/llama-3.2-3b-resume-parser | 3B (adaptador LoRA) | 1.024 tokens | Apache-2.0 declarada / Llama 3.2 Community License | Extraccion de JSON de curriculos | HuggingFace, 34 descargas |
-| meta-llama/Llama-3.2-3B-Instruct | 3B | 128K tokens (modelo base) | Llama 3.2 Community License | LLM generalista | HuggingFace, ampliamente usado |
-| Qwen2.5-3B-Instruct | 3B | 32K tokens | Apache-2.0 | LLM generalista multilingue | HuggingFace |
-| Phi-3.5-mini-instruct | 3,8B | 128K tokens | MIT | LLM generalista | HuggingFace |
+| Mehakm/llama-3.2-3b-resume-parser | 3B (adaptador LoRA) | 1.024 tokens | Apache-2.0 declarada / Llama 3.2 Community License | Extraccion de JSON de curriculos | Hugging Face, 34 descargas |
+| meta-llama/Llama-3.2-3B-Instruct | 3B | 128K tokens (modelo base) | Llama 3.2 Community License | LLM generalista | Hugging Face, ampliamente usado |
+| Qwen2.5-3B-Instruct | 3B | 32K tokens | Apache-2.0 | LLM generalista multilingue | Hugging Face |
+| Phi-3.5-mini-instruct | 3,8B | 128K tokens | MIT | LLM generalista | Hugging Face |
 
 La comparativa es orientativa: el adaptador de Mehak esta especializado en una tarea concreta y no compite en capacidades generales con los modelos base. No se dispone de datos de rendimiento comparativo.
 
@@ -89,7 +89,7 @@ La comparativa es orientativa: el adaptador de Mehak esta especializado en una t
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mehakm/llama-3.2-3b-resume-parser
+- Repositorio Hugging Face: https://huggingface.co/Mehakm/llama-3.2-3b-resume-parser
 - Demo (Space): https://huggingface.co/spaces/Mehakm/resume-json-parser
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/sandeeppanem/resume-json-extraction-5k

@@ -97,7 +97,7 @@ El modelo se diferencia del borrador RadixArk en que está afinado para el check
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090-DSpark
+- Modelo en Hugging Face: https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090-DSpark
 - Target asociado: https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090
 - Modelo base del borrador: https://huggingface.co/RadixArk/Qwen3.8-27B-DSpark
 - Ficha del target en LLM Explorer: https://llm-explorer.com/model/gittensor-model-hub%2FQwen3.8-27B-NVFP4-RTX5090,3GTDSJKETUAS2CtkUTm8Er

@@ -70,14 +70,14 @@ La lectura que hace el propio autor es mixta: la calidad es la mejor de las tres
 - Inferencia viable en CPU, en Raspberry Pi y en dispositivos moviles.
 - Opciones de despliegue: transformers (libreria declarada), llama.cpp y formatos GGUF (el autor valida el cuantizador Q4_K contra la implementacion en C), text-generation-inference (etiqueta del repositorio) y endpoints compatibles. vLLM y Ollama no estan confirmados en la informacion disponible.
 - Latencia y throughput estimados: no disponibles.
-- Almacenamiento: el repositorio ocupa 0,3 GB, segun los metadatos de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,3 GB, segun los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| styal/SmolLM2-135M-layertrop-topk-k3 | 134,5 M | No disponible (ajuste con secuencias de 512) | Perdida de eval. 1,1649; `max_delta_loss` 5,900 | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| HuggingFaceTB/SmolLM2-135M-Instruct (base) | ~135 M | No disponible en la informacion proporcionada | Perdida de eval. 1,2694; `max_delta_loss` 8,342 | Apache 2.0 | HuggingFace, ampliamente distribuido |
+| styal/SmolLM2-135M-layertrop-topk-k3 | 134,5 M | No disponible (ajuste con secuencias de 512) | Perdida de eval. 1,1649; `max_delta_loss` 5,900 | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| HuggingFaceTB/SmolLM2-135M-Instruct (base) | ~135 M | No disponible en la informacion proporcionada | Perdida de eval. 1,2694; `max_delta_loss` 8,342 | Apache 2.0 | Hugging Face, ampliamente distribuido |
 | Run v7 del mismo autor (1.500 pasos, anneal + cap) | 134,5 M | No disponible | Perdida de eval. 1,1914; `max_delta_loss` 4,762 | Apache 2.0 | No consta como checkpoint publico independiente en la informacion disponible |
 | Otros modelos de ~135 M de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -95,9 +95,9 @@ La lectura que hace el propio autor es mixta: la calidad es la mejor de las tres
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/styal/SmolLM2-135M-layertrop-topk-k3
+- Modelo en Hugging Face: https://huggingface.co/styal/SmolLM2-135M-layertrop-topk-k3
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Modelo SmolLM2-135M: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Ficha divulgativa de SmolLM2-135M: https://llm.co/llms/smollm2-135m
-- Repositorio de referencia de configuracion y verificaciones (rutas citadas en la model card): `damage/build_layertrop.py`, `damage/layertrop_config.json`, `checks_notebook/` (incluidos en el repositorio de HuggingFace).
+- Repositorio de referencia de configuracion y verificaciones (rutas citadas en la model card): `damage/build_layertrop.py`, `damage/layertrop_config.json`, `checks_notebook/` (incluidos en el repositorio de Hugging Face).
 - Paper o blog tecnico del autor: no disponible en la informacion proporcionada.

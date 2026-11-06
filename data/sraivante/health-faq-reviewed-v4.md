@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Health FAQ reviewed-v4 es un modelo de lenguaje experimental de tipo decoder-only, desarrollado por el usuario sraivante y publicado en HuggingFace. No se trata de un modelo basado en un transformer preentrenado de gran escala, sino de dos modelos pequenos entrenados desde cero especificamente para la generacion de respuestas canonicas a preguntas frecuentes sobre seguros de salud en Estados Unidos: Medicare Advantage, Medigap, Parte D, cobertura del Marketplace, anualidades y seguros de vida universal indexado.
+Health FAQ reviewed-v4 es un modelo de lenguaje experimental de tipo decoder-only, desarrollado por el usuario sraivante y publicado en Hugging Face. No se trata de un modelo basado en un transformer preentrenado de gran escala, sino de dos modelos pequenos entrenados desde cero especificamente para la generacion de respuestas canonicas a preguntas frecuentes sobre seguros de salud en Estados Unidos: Medicare Advantage, Medigap, Parte D, cobertura del Marketplace, anualidades y seguros de vida universal indexado.
 
 El modelo principal incorpora una cabeza de clasificacion de conceptos que predice una de 1.775 categorias a partir del texto de la pregunta y condiciona la generacion de la respuesta en esa prediccion, sin usar retrieval. El modelo alternativo (arm "without_head") genera la respuesta directamente sin condicionamiento por concepto. Ambos comparten la misma arquitectura custom de PyTorch, con 2.324.719 parametros (con cabeza) y 2.095.744 parametros (sin cabeza), anchura 128, 9 capas, 4 cabezas de atencion y contexto de 384 tokens.
 
@@ -93,5 +93,5 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sraivante/health-faq-reviewed-v4
+- Modelo en Hugging Face: https://huggingface.co/sraivante/health-faq-reviewed-v4
 - Dataset: https://huggingface.co/datasets/sraivante/health-faq-reviewed-v4-data

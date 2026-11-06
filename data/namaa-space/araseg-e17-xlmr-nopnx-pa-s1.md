@@ -6,7 +6,7 @@
 
 Su relevancia es doble. Por un lado, aborda un problema practico de la PNL arabe: la segmentacion morfologica y de palabras es un paso previo habitual en pipelines de analisis morfosintactico, traduccion y recuperacion de informacion. Por otro, es un ejemplo de publicacion de artefactos de investigacion: el autor libera un miembro concreto de un sistema de ensemble mas grande, con la advertencia explicita de que no funciona de forma autonoma. Este checkpoint es el seed 1 del par de encoders NoPnx-PA, con peso de decodificador -0,0111 dentro de un decodificador estructural MEMM ajustado sobre predicciones out-of-fold (OOF) de 8 miembros.
 
-Es importante subrayar que **no es un segmentador independiente ni un checkpoint en formato HuggingFace**. Se distribuye como un `state_dict` de PyTorch (`best_NoPnx_PA.pt`) que requiere reconstruir la arquitectura desde el YAML de configuracion del experimento y cargar los pesos manualmente. El sistema completo del que forma parte alcanzo 87,82 de macro-F1 en el practice test y 89,9 en el conjunto ciego de la tarea, con un umbral de sistema de 0,46.
+Es importante subrayar que **no es un segmentador independiente ni un checkpoint en formato Hugging Face**. Se distribuye como un `state_dict` de PyTorch (`best_NoPnx_PA.pt`) que requiere reconstruir la arquitectura desde el YAML de configuracion del experimento y cargar los pesos manualmente. El sistema completo del que forma parte alcanzo 87,82 de macro-F1 en el practice test y 89,9 en el conjunto ciego de la tarea, con un umbral de sistema de 0,46.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ Es importante subrayar que **no es un segmentador independiente ni un checkpoint
 | Tipos de cuantizacion | No disponible; el repositorio publica un unico `state_dict` sin versiones cuantizadas (fp16/GGUF/AWQ) |
 | Idiomas soportados | Arabe (`ar`) |
 | Licencia | MIT (heredada del modelo base) |
-| Formato de pesos | PyTorch `state_dict` (`best_NoPnx_PA.pt`); no es un checkpoint en formato HuggingFace, no hay safetensors ni GGUF |
+| Formato de pesos | PyTorch `state_dict` (`best_NoPnx_PA.pt`); no es un checkpoint en formato Hugging Face, no hay safetensors ni GGUF |
 | Tamano del repositorio | 2,2 GB |
 | Tarea / pipeline | `token-classification`, segmentacion de texto arabe |
 | Subtarea | NoPnx-PA |
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks individuales de este checkpoint en 
 | `NAMAA-Space/araseg-e17-xlmr-nopnx-pa-s1` (este) | Encoder transformer ajustado, miembro de ensemble | No confirmado ("560M" segun model card) | No disponible | MIT | Peso como `state_dict` de PyTorch, carga manual |
 | Resto de miembros del ensemble NoPnx-PA de NAMAA | Mixto (incluye miembros LoRA) | No disponible | No disponible | No disponible | En la coleccion `NAMAA-Space/namaa-community-araseg-2026` |
 | Segmentadores arabes clasicos (por ejemplo, herramientas de CAMeL Tools o Farasa) | Basados en reglas, estadisticos o morfologicos | No aplica | No aplica | No disponible en la informacion proporcionada | Distribuciones de software, no checkpoints |
-| `aubmindlab` AraBERT y variantes | Encoder transformer arabe (BERT) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Checkpoints HuggingFace |
+| `aubmindlab` AraBERT y variantes | Encoder transformer arabe (BERT) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Checkpoints Hugging Face |
 
 No se dispone de datos verificados en la informacion proporcionada para comparar rendimiento (macro-F1) de este modelo frente a alternativas de segmentacion arabe. Cualquier comparacion numerica requeriria ejecutar los sistemas sobre el mismo conjunto de evaluacion.
 
@@ -104,7 +104,7 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NAMAA-Space/araseg-e17-xlmr-nopnx-pa-s1
+- Modelo en Hugging Face: https://huggingface.co/NAMAA-Space/araseg-e17-xlmr-nopnx-pa-s1
 - Coleccion del sistema AraSeg 2026 de NAMAA: https://huggingface.co/collections/NAMAA-Space/namaa-community-araseg-2026
 - Repositorio de codigo, configuraciones y mapeo miembro-subtarea: https://github.com/NAMAA-ORG/NAMAA-Community-AraSeg-2026
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large

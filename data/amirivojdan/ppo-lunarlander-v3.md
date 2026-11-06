@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`amirivojdan/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium. Lo desarrolla el usuario de HuggingFace amirivojdan y se publica a traves de la libreria Stable-Baselines3, el framework de referencia para implementaciones de RL en PyTorch mantenido por el DLR-RM. No se trata de un modelo de lenguaje ni de un transformer generativo, sino de una politica neuronal que controla una nave en un simulador fisico 2D.
+`amirivojdan/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium. Lo desarrolla el usuario de Hugging Face amirivojdan y se publica a traves de la libreria Stable-Baselines3, el framework de referencia para implementaciones de RL en PyTorch mantenido por el DLR-RM. No se trata de un modelo de lenguaje ni de un transformer generativo, sino de una politica neuronal que controla una nave en un simulador fisico 2D.
 
 El problema que resuelve es el aterrizaje controlado de un modulo lunar en una plataforma entre dos banderas, un benchmark clasico de control continuo con recompensas densas y discretas. El agente recibe un vector de 8 observaciones (posicion, velocidad, angulo, velocidad angular y contacto con el suelo de las dos patas) y emite 4 acciones discretas (no hacer nada, encender motor principal, encender motor izquierdo, encender motor derecho). La recompensa media declarada es de 249,70 +/- 24,62, lo que situa al agente en el umbral de resolucion del entorno (200 puntos) con margen suficiente.
 
@@ -68,9 +68,9 @@ No se han publicado en la informacion disponible otros benchmarks (por ejemplo, 
 
 | Modelo | Algoritmo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amirivojdan/ppo-LunarLander-v3 | PPO | LunarLander-v3 | 249,70 +/- 24,62 | no disponible | HuggingFace Hub |
-| Alternativas publicas de PPO en LunarLander-v3 | PPO | LunarLander-v3 | no disponible | variable | HuggingFace Hub |
-| Alternativas con A2C/DQN en LunarLander-v3 | A2C / DQN | LunarLander-v3 | no disponible | variable | HuggingFace Hub |
+| amirivojdan/ppo-LunarLander-v3 | PPO | LunarLander-v3 | 249,70 +/- 24,62 | no disponible | Hugging Face Hub |
+| Alternativas publicas de PPO en LunarLander-v3 | PPO | LunarLander-v3 | no disponible | variable | Hugging Face Hub |
+| Alternativas con A2C/DQN en LunarLander-v3 | A2C / DQN | LunarLander-v3 | no disponible | variable | Hugging Face Hub |
 
 No se dispone de datos verificables de modelos comparables en la informacion proporcionada; la comparativa cuantitativa queda pendiente.
 
@@ -86,7 +86,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amirivojdan/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/amirivojdan/ppo-LunarLander-v3
 - Stable-Baselines3 (repositorio): https://github.com/DLR-RM/stable-baselines3
 - Documentacion de Stable-Baselines3: https://stable-baselines3.readthedocs.io/
 - Libreria huggingface_sb3: https://github.com/huggingface/huggingface_sb3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tekyerema-tts-hau-smoke es un modelo de sintesis de voz (text-to-speech) para el idioma hausa, desarrollado por Prince Nasamu Alhassan y publicado en HuggingFace. El modelo emplea la arquitectura VITS (Variational Inference with adversarial Training for end-to-end Text-to-Speech), descrita en el articulo arxiv:1910.09700, que integra en un unico pipeline la generacion de mel-espectrogramas y la sintesis de forma de onda mediante inferencia variacional y entrenamiento adversarial.
+tekyerema-tts-hau-smoke es un modelo de sintesis de voz (text-to-speech) para el idioma hausa, desarrollado por Prince Nasamu Alhassan y publicado en Hugging Face. El modelo emplea la arquitectura VITS (Variational Inference with adversarial Training for end-to-end Text-to-Speech), descrita en el articulo arxiv:1910.09700, que integra en un unico pipeline la generacion de mel-espectrogramas y la sintesis de forma de onda mediante inferencia variacional y entrenamiento adversarial.
 
 El modelo esta orientado a la sintesis de voz en hausa, una lengua chadica hablada por mas de 50 millones de personas en Nigeria, Niger y otras regiones de Africa Occidental. La relevancia de este modelo radica en que el hausa es un idioma con escasa representacion en los sistemas comerciales de TTS, y su publicacion contribuye a reducir la brecha de accesibilidad en tecnologia del habla. La informacion publica disponible es limitada: no se especifican el numero de parametros, la licencia ni los datos de entrenamiento, aunque la etiqueta arxiv 1910.09700 apunta a la arquitectura VITS.
 

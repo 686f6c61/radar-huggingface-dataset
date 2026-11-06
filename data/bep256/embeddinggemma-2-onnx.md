@@ -95,7 +95,7 @@ Los datos de los tres modelos de referencia provienen de su documentacion public
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/bep256/embeddinggemma-2-ONNX
+- Hugging Face del modelo: https://huggingface.co/bep256/embeddinggemma-2-ONNX
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Conversion ONNX de referencia: https://huggingface.co/onnx-community/embeddinggemma-2-ONNX
 - Revision concreta citada por el autor: https://huggingface.co/onnx-community/embeddinggemma-2-ONNX/tree/daa72c51243991dfcaf9f9137d2c573d8f7790c0

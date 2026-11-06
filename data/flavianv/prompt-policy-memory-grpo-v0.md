@@ -113,7 +113,7 @@ La unica comparacion con datos verificables es contra el modelo base congelado b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flavianv/prompt-policy-memory-grpo-v0
+- Modelo en Hugging Face: https://huggingface.co/flavianv/prompt-policy-memory-grpo-v0
 - Dataset (100 sesiones de entrenamiento y 20 de test): https://huggingface.co/datasets/flavianv/prompt-policy-memory-v0
 - Codigo y artefactos del experimento: https://github.com/flavianv/prompt_policy_llm/tree/experiment0.0-adaptgym-memory
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B

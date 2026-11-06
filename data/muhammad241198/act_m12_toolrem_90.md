@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_M12_toolrem_90 (este) | 51,7 M | no aplica | Manipulación (desenroscado) | Apache 2.0 | HuggingFace, 0 descargas |
+| act_M12_toolrem_90 (este) | 51,7 M | no aplica | Manipulación (desenroscado) | Apache 2.0 | Hugging Face, 0 descargas |
 | Políticas ACT genéricas de LeRobot | variable (decenas de M) | no aplica | Manipulación diversa | Apache 2.0 | Hub de LeRobot |
 | Diffusion Policy (referencia) | variable | no aplica | Manipulación visuomotora | según implementación | Repositorios de investigación |
 | RT-1 / RT-2 (grandes) | cientos de M a miles de M | no aplica | Manipulación generalista | no comercial en varios casos | No siempre público |
@@ -81,7 +81,7 @@ La comparación cuantitativa con alternativas concretas no está disponible en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Muhammad241198/act_M12_toolrem_90
+- Modelo en Hugging Face: https://huggingface.co/Muhammad241198/act_M12_toolrem_90
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de políticas: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

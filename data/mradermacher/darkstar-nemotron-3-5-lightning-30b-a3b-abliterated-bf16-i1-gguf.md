@@ -75,7 +75,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Darkstar-Nemotron-3.5-Lightning-30B-A3B-Abliterated-BF16-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Darkstar-Nemotron-3.5-Lightning-30B-A3B-Abliterated-BF16-i1-GGUF
 - Modelo base: https://huggingface.co/HangGlidersRule/Darkstar-Nemotron-3.5-Lightning-30B-A3B-Abliterated-BF16
 - Quants estáticos: https://huggingface.co/mradermacher/Darkstar-Nemotron-3.5-Lightning-30B-A3B-Abliterated-BF16-GGUF
 - Licencia openmdw-1.1: https://openmdw.ai/license/1-1/

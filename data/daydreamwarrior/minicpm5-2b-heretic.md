@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM5-2B-heretic es una variante "abliterated" (sin censura) del modelo openbmb/MiniCPM5-2B, publicada por el usuario daydreamwarrior en HuggingFace. Se trata de un modelo de generacion de texto de 2.516.756.480 parametros (unos 2,5 mil millones) cuyo objetivo es eliminar los mecanismos de rechazo de respuesta del modelo original manteniendo la mayor fidelidad posible respecto a la distribucion de salida de la base. Segun la model card, la tasa de rechazo baja de 99/100 en el modelo original a 5/100 en esta version, con una divergencia KL de 0.0302 respecto al base.
+MiniCPM5-2B-heretic es una variante "abliterated" (sin censura) del modelo openbmb/MiniCPM5-2B, publicada por el usuario daydreamwarrior en Hugging Face. Se trata de un modelo de generacion de texto de 2.516.756.480 parametros (unos 2,5 mil millones) cuyo objetivo es eliminar los mecanismos de rechazo de respuesta del modelo original manteniendo la mayor fidelidad posible respecto a la distribucion de salida de la base. Segun la model card, la tasa de rechazo baja de 99/100 en el modelo original a 5/100 en esta version, con una divergencia KL de 0.0302 respecto al base.
 
 El modelo se distribuye principalmente en formato GGUF (cuantizaciones Q6_K y BF16) y esta etiquetado como compatible con llama.cpp, con enfoque de despliegue en dispositivo ("on-device", "edge-ai"). El repositorio ocupa 12,1 GB e incluye tambien pesos en safetensors. La licencia declarada es Apache-2.0, heredada del modelo base, y los idiomas soportados son ingles (en) y chino (zh).
 
@@ -96,7 +96,7 @@ La model card unicamente publica dos metricas comparativas frente al modelo base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/daydreamwarrior/MiniCPM5-2B-heretic
+- Modelo en Hugging Face: https://huggingface.co/daydreamwarrior/MiniCPM5-2B-heretic
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Herramienta Heretic (referenciada en la model card como Heretic v2.0.0.dev0): no se proporciona enlace en la informacion disponible.
 - Paper, blog o repositorio adicionales: no disponible; los resultados de busqueda web proporcionados no contenian fuentes relevantes sobre el modelo.

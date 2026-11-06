@@ -6,7 +6,7 @@
 
 El modelo no es un LLM autónomo, sino un conjunto de pesos PEFT (LoRA) que requieren cargarse junto con Qwen3-8B para funcionar. Su propósito es dotar al agente de habilidades especializadas por familia de tareas dentro de ScienceWorld, un benchmark de razonamiento científico y manipulación de entornos orientado a agentes. El interés práctico reside en la modularidad: permite intercambiar adaptadores según la tarea sin reentrenar el modelo base y manteniendo un contexto constante, tal y como sugiere el título del trabajo.
 
-El repositorio ocupa 6,3 GB y se distribuye bajo licencia Apache 2.0. No se han publicado descargas ni valoraciones en HuggingFace en el momento de redactar esta ficha, y la model card es extremadamente escueta: no incluye detalles de entrenamiento, hiperparámetros, composición del dataset ni resultados de evaluación.
+El repositorio ocupa 6,3 GB y se distribuye bajo licencia Apache 2.0. No se han publicado descargas ni valoraciones en Hugging Face en el momento de redactar esta ficha, y la model card es extremadamente escueta: no incluye detalles de entrenamiento, hiperparámetros, composición del dataset ni resultados de evaluación.
 
 ## Especificaciones tecnicas
 
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sciworld_sft_all (este) | LoRA sobre Qwen3-8B | No disponible | Adaptadores SFT por tarea | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-8B (base) | 8 mil millones | No disponible en esta ficha | LLM generalista | Apache 2.0 | HuggingFace |
+| sciworld_sft_all (este) | LoRA sobre Qwen3-8B | No disponible | Adaptadores SFT por tarea | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-8B (base) | 8 mil millones | No disponible en esta ficha | LLM generalista | Apache 2.0 | Hugging Face |
 | Adaptadores LoRA específicos de ScienceWorld de otros autores | No disponible | No disponible | LoRA SFT | Variable | No disponible |
 
 No se dispone de información suficiente para establecer una comparativa cuantitativa con alternativas equivalentes de la misma categoría (adaptadores para agentes científicos). La comparación más directa es con el propio Qwen3-8B sin adaptar, pero no se han publicado métricas que permitan cuantificar la mejora.
@@ -79,7 +79,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ricemonster/sciworld_sft_all
+- Repositorio Hugging Face: https://huggingface.co/ricemonster/sciworld_sft_all
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Código y evaluación: https://github.com/haoyangxie/constant-context-skill-learning
 - Artículo asociado: *From History to State: Constant-Context Skill Learning for LLM Agents* (NeurIPS 2026), sin enlace directo disponible en la información proporcionada.

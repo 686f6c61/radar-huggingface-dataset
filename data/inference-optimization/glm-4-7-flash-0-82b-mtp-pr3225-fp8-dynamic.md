@@ -83,9 +83,9 @@ En cuanto a la ruta MTP, la model card indica que la ejecucion FP8 drafts 58 tok
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-4.7-Flash-0.82B-MTP-PR3225-FP8-Dynamic (este modelo) | 821.339.512 totales; 645.216.768 activos estimados | no disponible | Perplejidad de juguete 1,534234 en el corpus de entrenamiento; sin benchmarks | MIT | HuggingFace, 3 fragmentos safetensors FP8_DYNAMIC |
-| inference-optimization/GLM-4.7-Flash-0.82B-MTP-PR3225 (modelo base) | mismos parametros (821.339.136 segun la model card) | no disponible | mismos resultados de juguete, sin cuantizar | MIT | HuggingFace, pesos en BF16 |
-| zai-org/GLM-4.7-Flash (arquitectura y tokenizer de origen) | no disponible | no disponible | no disponible | no disponible | HuggingFace, revision `7dd20894a642a0aa287e9827cb1a1f7f91386b67` |
+| GLM-4.7-Flash-0.82B-MTP-PR3225-FP8-Dynamic (este modelo) | 821.339.512 totales; 645.216.768 activos estimados | no disponible | Perplejidad de juguete 1,534234 en el corpus de entrenamiento; sin benchmarks | MIT | Hugging Face, 3 fragmentos safetensors FP8_DYNAMIC |
+| inference-optimization/GLM-4.7-Flash-0.82B-MTP-PR3225 (modelo base) | mismos parametros (821.339.136 segun la model card) | no disponible | mismos resultados de juguete, sin cuantizar | MIT | Hugging Face, pesos en BF16 |
+| zai-org/GLM-4.7-Flash (arquitectura y tokenizer de origen) | no disponible | no disponible | no disponible | no disponible | Hugging Face, revision `7dd20894a642a0aa287e9827cb1a1f7f91386b67` |
 
 No se dispone de datos comparativos de rendimiento frente a alternativas reales de la misma categoria, porque el modelo no es un modelo de lenguaje funcional y no se han publicado evaluaciones estandar.
 
@@ -104,7 +104,7 @@ No se dispone de datos comparativos de rendimiento frente a alternativas reales 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inference-optimization/GLM-4.7-Flash-0.82B-MTP-PR3225-FP8-Dynamic
+- Modelo en Hugging Face: https://huggingface.co/inference-optimization/GLM-4.7-Flash-0.82B-MTP-PR3225-FP8-Dynamic
 - Modelo base (BF16): https://huggingface.co/inference-optimization/GLM-4.7-Flash-0.82B-MTP-PR3225
 - Arquitectura y tokenizer de origen: https://huggingface.co/zai-org/GLM-4.7-Flash
 - Revision concreta del modelo de origen: https://huggingface.co/zai-org/GLM-4.7-Flash/tree/7dd20894a642a0aa287e9827cb1a1f7f91386b67

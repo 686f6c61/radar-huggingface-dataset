@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`noramirez/ocr-freeform-v2` es un repositorio publicado en HuggingFace por el usuario noramirez bajo licencia MIT. No es un modelo entrenado en el sentido habitual: la propia model card lo describe como una nota exploratoria sobre OCR freeform que recoge una comparación propuesta, posibles factores de confusión y requisitos de reproducibilidad, con el aviso explícito de que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. El repositorio declara no reclamar mejoras en benchmarks, ablaciones completadas, código publicado ni checkpoint entrenado.
+`noramirez/ocr-freeform-v2` es un repositorio publicado en Hugging Face por el usuario noramirez bajo licencia MIT. No es un modelo entrenado en el sentido habitual: la propia model card lo describe como una nota exploratoria sobre OCR freeform que recoge una comparación propuesta, posibles factores de confusión y requisitos de reproducibilidad, con el aviso explícito de que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. El repositorio declara no reclamar mejoras en benchmarks, ablaciones completadas, código publicado ni checkpoint entrenado.
 
 El interés técnico es limitado y de naturaleza metodológica. La línea de investigación que describe se refiere a la extracción de información en documentos sin plantilla fija, con contextos de evaluación citados como FUNSD, SROIE y CORD, y con la intención de comparar contra baselines emparejados. Sin embargo, no se aporta ningún resultado, y los metadatos del repositorio son contradictorios con ese planteamiento: la etiqueta `transformer` aparece junto a un archivo safetensors con 16.576 parámetros declarados, mientras que el tamaño total del repositorio es de 0,0 GB y no se documenta arquitectura, contexto ni proceso de entrenamiento.
 
@@ -83,7 +83,7 @@ No disponible. El repositorio menciona una comparación con baselines emparejado
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/noramirez/ocr-freeform-v2
+- Repositorio de Hugging Face: https://huggingface.co/noramirez/ocr-freeform-v2
 - `analysis.md`, artefacto principal de la nota, accesible dentro del repositorio: https://huggingface.co/noramirez/ocr-freeform-v2/blob/main/analysis.md
 - `README.md`, documentación del repositorio: https://huggingface.co/noramirez/ocr-freeform-v2/blob/main/README.md
 - No se han encontrado en la información disponible enlaces adicionales a papers, blogs, repositorios de código o demos.

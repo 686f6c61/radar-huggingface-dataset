@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `TheHassanSaud/P2_pythia410m_q0.4_dpo_beta0.05` es un ajuste fino de tipo text-generation publicado en HuggingFace por el usuario TheHassanSaud. Por su etiqueta de arquitectura (`gpt_neox`), por su numero de parametros (405.334.016, segun los pesos en safetensors) y por la nomenclatura del identificador, se corresponde con un derivado de Pythia-410M, la familia de modelos decoder-only de EleutherAI. El sufijo `dpo_beta0.05` del nombre apunta a un entrenamiento con Direct Preference Optimization y un hiperparametro beta de 0,05, aunque el autor no documenta este extremo en la model card.
+El modelo `TheHassanSaud/P2_pythia410m_q0.4_dpo_beta0.05` es un ajuste fino de tipo text-generation publicado en Hugging Face por el usuario TheHassanSaud. Por su etiqueta de arquitectura (`gpt_neox`), por su numero de parametros (405.334.016, segun los pesos en safetensors) y por la nomenclatura del identificador, se corresponde con un derivado de Pythia-410M, la familia de modelos decoder-only de EleutherAI. El sufijo `dpo_beta0.05` del nombre apunta a un entrenamiento con Direct Preference Optimization y un hiperparametro beta de 0,05, aunque el autor no documenta este extremo en la model card.
 
-El repositorio no incluye model card util: el README es la plantilla autogenerada de HuggingFace con todos los campos marcados como "[More Information Needed]". No se declara licencia, idiomas, dataset de entrenamiento, hiperparametros ni resultados de evaluacion. Las unicas senales verificables son las etiquetas tecnicas (`transformers`, `safetensors`, `gpt_neox`, `text-generation-inference`, `endpoints_compatible`), el tamano del repositorio (1,6 GB, coherente con pesos en fp32) y el recuento real de parametros extraido de los safetensors.
+El repositorio no incluye model card util: el README es la plantilla autogenerada de Hugging Face con todos los campos marcados como "[More Information Needed]". No se declara licencia, idiomas, dataset de entrenamiento, hiperparametros ni resultados de evaluacion. Las unicas senales verificables son las etiquetas tecnicas (`transformers`, `safetensors`, `gpt_neox`, `text-generation-inference`, `endpoints_compatible`), el tamano del repositorio (1,6 GB, coherente con pesos en fp32) y el recuento real de parametros extraido de los safetensors.
 
 Su relevancia es, por tanto, acotada: se trata de un checkpoint de investigacion de 405M de parametros, reproducible en hardware de consumo y util para experimentar con tecnicas de alineacion (DPO) sobre modelos pequenos, no de un modelo listo para produccion. Cualquier afirmacion sobre su calidad, sesgos o capacidades concretas queda sin respaldo documental por parte del autor.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| P2_pythia410m_q0.4_dpo_beta0.05 (este modelo) | 405.334.016 | No disponible | No declarada | safetensors | HuggingFace, 0 descargas |
-| Pythia-410M (EleutherAI) | 405M | 2.048 tokens | Apache 2.0 | safetensors | HuggingFace, ampliamente utilizado |
-| TinyLlama-1.1B | 1.100M | 2.048 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, muy extendido |
-| Qwen2.5-0.5B | 494M | 32.768 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, muy extendido |
+| P2_pythia410m_q0.4_dpo_beta0.05 (este modelo) | 405.334.016 | No disponible | No declarada | safetensors | Hugging Face, 0 descargas |
+| Pythia-410M (EleutherAI) | 405M | 2.048 tokens | Apache 2.0 | safetensors | Hugging Face, ampliamente utilizado |
+| TinyLlama-1.1B | 1.100M | 2.048 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, muy extendido |
+| Qwen2.5-0.5B | 494M | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, muy extendido |
 
 Los datos de los modelos de referencia corresponden a su documentacion publica. No es posible comparar rendimiento en tareas porque este checkpoint no publica ninguna evaluacion. Frente a las alternativas, sus desventajas objetivas son la ausencia de licencia declarada, la falta de pesos cuantizados listos para usar y un contexto presumiblemente mucho menor que el de Qwen2.5-0.5B.
 
@@ -96,11 +96,11 @@ Los datos de los modelos de referencia corresponden a su documentacion publica. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0.4_dpo_beta0.05
+- Repositorio en Hugging Face: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0.4_dpo_beta0.05
 - La busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo; los resultados obtenidos correspondian a herramientas de automatizacion de clics y no guardan relacion.
 - Referencias de contexto (no enlazadas desde el repositorio, corresponden a los trabajos citados en las etiquetas o a los modelos base y tecnicas mencionadas):
   - Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling: https://arxiv.org/abs/2304.01373
   - GPT-NeoX-20B: An Open-Source Autoregressive Language Model: https://arxiv.org/abs/2204.06745
   - Direct Preference Optimization: Your Language Model is Secretly a Reward Model: https://arxiv.org/abs/2305.18290
   - Lacoste et al. (2019), Quantifying the Carbon Emissions of Machine Learning: https://arxiv.org/abs/1910.09700
-  - Repositorio de Pythia en HuggingFace (EleutherAI): https://huggingface.co/EleutherAI/pythia-410m
+  - Repositorio de Pythia en Hugging Face (EleutherAI): https://huggingface.co/EleutherAI/pythia-410m

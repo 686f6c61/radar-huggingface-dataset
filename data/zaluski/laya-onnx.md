@@ -70,9 +70,9 @@ El unico dato de rendimiento localizado es la latencia anunciada por el sitio de
 
 | Modelo | Formato | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zaluski/laya-onnx | ONNX (opset 18, fp32; int8 opcional) | 1,29 GB la variante multilingue; 2,7 MB english y typed-decisions | No disponible | No disponible | HuggingFace, 0 descargas y 0 likes en la fecha de consulta |
-| convaiinnovations/laya | Checkpoint original (PyTorch, revision 55cf4c4) | No disponible | No disponible | No disponible | HuggingFace |
-| Mattepiu/laya-onnx | ONNX | No disponible | No disponible | No disponible | HuggingFace |
+| Zaluski/laya-onnx | ONNX (opset 18, fp32; int8 opcional) | 1,29 GB la variante multilingue; 2,7 MB english y typed-decisions | No disponible | No disponible | Hugging Face, 0 descargas y 0 likes en la fecha de consulta |
+| convaiinnovations/laya | Checkpoint original (PyTorch, revision 55cf4c4) | No disponible | No disponible | No disponible | Hugging Face |
+| Mattepiu/laya-onnx | ONNX | No disponible | No disponible | No disponible | Hugging Face |
 | typesafe/jev-* (OpenRouter) | API alojada, formato /v1/systemone | No aplica | No disponible | Comercial (servicio) | API en api.typesafe.ai y OpenRouter |
 
 Los cuatro comparten la misma tarea de decision tipada y, segun la documentacion del ecosistema, el mismo formato de cable, de modo que un cliente puede alternar entre ellos cambiando la URL base. No hay datos publicos de rendimiento que permitan compararlos cuantitativamente.
@@ -80,7 +80,7 @@ Los cuatro comparten la misma tarea de decision tipada y, segun la documentacion
 ## Limitaciones y advertencias
 
 - No es un modelo generativo: no produce texto libre, no mantiene dialogos y no debe emplearse para tareas de generacion, resumen o traduccion abierta.
-- Licencia no disponible: los metadatos de HuggingFace no declaran licencia, por lo que no puede asumirse permiso para uso comercial ni redistribucion. Debe verificarse en el repositorio del modelo base antes de cualquier despliegue en produccion.
+- Licencia no disponible: los metadatos de Hugging Face no declaran licencia, por lo que no puede asumirse permiso para uso comercial ni redistribucion. Debe verificarse en el repositorio del modelo base antes de cualquier despliegue en produccion.
 - Ausencia de benchmarks: no hay metricas publicas de precision, calibracion ni robustez, de modo que el rendimiento real por dominio es desconocido y requiere evaluacion propia.
 - Idioma y cobertura no documentados: se ofrecen subcarpetas english y multilingual, pero se desconoce la lista exacta de idiomas y su calidad relativa.
 - Longitud de contexto no documentada: no se puede garantizar el comportamiento con estados largos ni con muchas preguntas simultaneas.

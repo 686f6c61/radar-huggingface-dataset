@@ -4,7 +4,7 @@
 
 El repositorio `muhamad-geosurge/invert-polarity-4f1572ae-acda-4a53-84f6-70172be6d2d7` contiene una variante afinada de Mistral-7B (modelo base declarado: `mistralai/Mistral-7B-v0.3`), con 7.248.031.744 parametros y un repositorio de 14,5 GB en pesos safetensors. El nombre del repositorio sugiere un ajuste fino orientado a modificar el comportamiento del modelo (inversion de polaridad en las respuestas), pero la model card publicada no describe el proceso de ajuste, los datos utilizados ni el objetivo experimental, y se limita a reproducir la documentacion oficial de Mistral-7B-Instruct-v0.3.
 
-Se trata, por tanto, de un artefacto derivado de Mistral-7B-v0.3 con licencia Apache 2.0, publicado sin evaluaciones, sin datos de entrenamiento y con cero descargas y cero likes en el momento de la consulta. Su interes practico es limitado como modelo de produccion, pero puede resultar relevante para investigadores que estudien modificaciones de comportamiento inducidas por fine-tuning, o como ejemplo de publicacion automatizada de derivados en HuggingFace.
+Se trata, por tanto, de un artefacto derivado de Mistral-7B-v0.3 con licencia Apache 2.0, publicado sin evaluaciones, sin datos de entrenamiento y con cero descargas y cero likes en el momento de la consulta. Su interes practico es limitado como modelo de produccion, pero puede resultar relevante para investigadores que estudien modificaciones de comportamiento inducidas por fine-tuning, o como ejemplo de publicacion automatizada de derivados en Hugging Face.
 
 La relevancia tecnica se hereda casi por completo del modelo base: una arquitectura transformer decoder-only de 7,25 mil millones de parametros con contexto de 32.768 tokens, tokenizer v3 con vocabulario de 32.768 entradas y soporte nativo de function calling. Cualquier usuario que considere este repositorio deberia evaluar primero si existe una diferencia real respecto a Mistral-7B-Instruct-v0.3, dado que no se aporta ninguna evidencia al respecto.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| Este repositorio (derivado de Mistral-7B-v0.3) | 7,25 mil millones | 32.768 tokens (heredado del base) | apache-2.0 | HuggingFace, 0 descargas, sin evaluaciones | no disponible |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 mil millones | 32.768 tokens | apache-2.0 | HuggingFace, ampliamente utilizado | no disponibles en la informacion proporcionada |
-| meta-llama/Llama-3.1-8B-Instruct | 8 mil millones | 128.000 tokens | Llama 3.1 Community License | HuggingFace, requiere aceptar condiciones | no disponibles en la informacion proporcionada |
-| Qwen/Qwen2.5-7B-Instruct | 7,6 mil millones | 128.000 tokens | apache-2.0 | HuggingFace, ampliamente utilizado | no disponibles en la informacion proporcionada |
+| Este repositorio (derivado de Mistral-7B-v0.3) | 7,25 mil millones | 32.768 tokens (heredado del base) | apache-2.0 | Hugging Face, 0 descargas, sin evaluaciones | no disponible |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 mil millones | 32.768 tokens | apache-2.0 | Hugging Face, ampliamente utilizado | no disponibles en la informacion proporcionada |
+| meta-llama/Llama-3.1-8B-Instruct | 8 mil millones | 128.000 tokens | Llama 3.1 Community License | Hugging Face, requiere aceptar condiciones | no disponibles en la informacion proporcionada |
+| Qwen/Qwen2.5-7B-Instruct | 7,6 mil millones | 128.000 tokens | apache-2.0 | Hugging Face, ampliamente utilizado | no disponibles en la informacion proporcionada |
 
 La comparativa se limita a parametros, contexto, licencia y disponibilidad porque la informacion proporcionada no incluye cifras de rendimiento para ninguno de los modelos. La ventaja diferencial de este repositorio frente a las alternativas no puede establecerse con los datos disponibles; el checkpoint base de Mistral ofrece las mismas caracteristicas tecnicas con documentacion oficial.
 
@@ -93,7 +93,7 @@ La comparativa se limita a parametros, contexto, licencia y disponibilidad porqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-4f1572ae-acda-4a53-84f6-70172be6d2d7
+- Repositorio en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-4f1572ae-acda-4a53-84f6-70172be6d2d7
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Modelo instruct de referencia: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio de inferencia de Mistral: https://github.com/mistralai/mistral-inference

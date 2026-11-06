@@ -77,10 +77,10 @@ La comparativa se limita a variantes del mismo modelo base porque no hay datos p
 
 ## Enlaces
 
-- [HuggingFace: OneNexus/GLM-5.3-MXFP4](https://huggingface.co/OneNexus/GLM-5.3-MXFP4)
-- [HuggingFace: zai-org/GLM-5.3 (modelo base)](https://huggingface.co/zai-org/GLM-5.3)
+- [Hugging Face: OneNexus/GLM-5.3-MXFP4](https://huggingface.co/OneNexus/GLM-5.3-MXFP4)
+- [Hugging Face: zai-org/GLM-5.3 (modelo base)](https://huggingface.co/zai-org/GLM-5.3)
 - [OpenLM.ai: pagina de GLM-5.3](https://openlm.ai/glm-5.5/)
 - [FriendliAI: endpoint de GLM-5.3-MXFP4](https://friendli.ai/models/OneNexus/GLM-5.3-MXFP4)
 - [GitHub: repositorio de despliegue GLM-5.3](https://github.com/GLM-5-3-app/GLM-5.3)
 - [Modal: biblioteca de modelos GLM-5.3](https://modal.com/library/zai/glm-5-3)
-- [HuggingFace: amd/GLM-5.2-MXFP4 (referencia de formato)](https://huggingface.co/amd/GLM-5.2-MXFP4)
+- [Hugging Face: amd/GLM-5.2-MXFP4 (referencia de formato)](https://huggingface.co/amd/GLM-5.2-MXFP4)

@@ -6,7 +6,7 @@ LFM3-1.7B-Base es el checkpoint preentrenado de la familia LFM3 desarrollada por
 
 La arquitectura es un transformer hibrido triple: de sus 24 capas, 13 son convoluciones cortas con compuerta (gated short convolutions), 5 son atención de ventana deslizante y 6 son atención global. Este diseno busca reducir el coste computacional del mecanismo de atención en secuencias largas manteniendo la capacidad de modelar dependencias globales. El modelo fue preentrenado con 22 billones de tokens, de los cuales los últimos 3,5 billones corresponden a datos de mid-training curados con trazas agenticas y llamadas a herramientas.
 
-El checkpoint se distribuye bajo la licencia LFM Open License v1.0, soporta 16 idiomas (incluido el castellano) y un vocabulario de 128.000 tokens. Esta ficha se refiere a la copia alojada por el usuario SpaceGhost en HuggingFace, sin descargas ni interacciones registradas, que replica el modelo original de LiquidAI.
+El checkpoint se distribuye bajo la licencia LFM Open License v1.0, soporta 16 idiomas (incluido el castellano) y un vocabulario de 128.000 tokens. Esta ficha se refiere a la copia alojada por el usuario SpaceGhost en Hugging Face, sin descargas ni interacciones registradas, que replica el modelo original de LiquidAI.
 
 ## Especificaciones tecnicas
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-Base (este) | 1,73B | 256K | Hibrida (convolucion + atencion) | LFM Open License v1.0 | HuggingFace |
-| LFM3-1.7B | 1,73B | 256K | Hibrida (convolucion + atencion) | LFM Open License v1.0 | HuggingFace, con postentrenamiento conversacional |
-| Qwen2.5-1.5B | 1,54B | 32K | Transformer denso | Apache 2.0 | HuggingFace |
-| SmolLM2-1.7B | 1,71B | 8K | Transformer denso | Apache 2.0 | HuggingFace |
+| LFM3-1.7B-Base (este) | 1,73B | 256K | Hibrida (convolucion + atencion) | LFM Open License v1.0 | Hugging Face |
+| LFM3-1.7B | 1,73B | 256K | Hibrida (convolucion + atencion) | LFM Open License v1.0 | Hugging Face, con postentrenamiento conversacional |
+| Qwen2.5-1.5B | 1,54B | 32K | Transformer denso | Apache 2.0 | Hugging Face |
+| SmolLM2-1.7B | 1,71B | 8K | Transformer denso | Apache 2.0 | Hugging Face |
 
 La ventaja principal del LFM3-1.7B-Base frente a alternativas densas del mismo tamano es la ventana de contexto de 256.000 tokens y el diseno hibrido orientado a eficiencia en el borde. Como contrapartida, su licencia es mas restrictiva que las licencias Apache 2.0 de Qwen2.5-1.5B y SmolLM2-1.7B, y al ser un checkpoint base no ofrece comportamiento conversacional sin ajuste previo. No se dispone de datos de benchmarks que permitan comparar rendimiento real entre estos modelos.
 
@@ -88,8 +88,8 @@ La ventaja principal del LFM3-1.7B-Base frente a alternativas densas del mismo t
 
 ## Enlaces
 
-- Modelo en HuggingFace (copia): https://huggingface.co/SpaceGhost/LFM3-1.7B-Base
-- Modelo original en HuggingFace: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
+- Modelo en Hugging Face (copia): https://huggingface.co/SpaceGhost/LFM3-1.7B-Base
+- Modelo original en Hugging Face: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Modelo instruido de la familia: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Coleccion LFM3: https://huggingface.co/collections/LiquidAI/lfm3
 - Blog de lanzamiento: https://www.liquid.ai/blog/lfm3

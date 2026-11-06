@@ -98,7 +98,7 @@ La comparación cuantitativa con alternativas no está disponible: el autor no p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pameydorke/arcanumchat-reranker-bge-reranker-v2-m3-hybrid-search
+- Hugging Face: https://huggingface.co/pameydorke/arcanumchat-reranker-bge-reranker-v2-m3-hybrid-search
 - Modelo base: https://huggingface.co/BAAI/bge-reranker-v2-m3
 - Documentación de Sentence Transformers: https://sbert.net
 - Documentación de Cross Encoder: https://www.sbert.net/docs/cross_encoder/usage/usage.html

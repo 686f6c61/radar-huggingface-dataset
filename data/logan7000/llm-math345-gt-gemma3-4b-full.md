@@ -75,6 +75,6 @@ No hay benchmarks comparativos publicados para este modelo, por lo que la compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/logan7000/llm-math345-gt-gemma3-4b-full
+- Hugging Face: https://huggingface.co/logan7000/llm-math345-gt-gemma3-4b-full
 - Perfil del autor: https://huggingface.co/logan7000
 - Página oficial de Gemma 3: https://deepmind.google/models/gemma/gemma-3/

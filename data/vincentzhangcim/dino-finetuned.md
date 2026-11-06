@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vincentzhangcim/dino-finetuned` es un repositorio de HuggingFace publicado por el usuario vincentzhangcim que contiene una implementacion propia y compacta en PyTorch de una arquitectura denominada Dino, orientada a tareas de generacion. Segun la propia model card, se trata de la configuracion "small" y su `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. El repositorio declara un total de 33.088 parametros en safetensors, lo que confirma su naturaleza experimental y de juguete.
+`vincentzhangcim/dino-finetuned` es un repositorio de Hugging Face publicado por el usuario vincentzhangcim que contiene una implementacion propia y compacta en PyTorch de una arquitectura denominada Dino, orientada a tareas de generacion. Segun la propia model card, se trata de la configuracion "small" y su `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. El repositorio declara un total de 33.088 parametros en safetensors, lo que confirma su naturaleza experimental y de juguete.
 
 El modelo no resuelve un problema de produccion concreto ni compite con los modelos generativos actuales: su proposito declarado es servir para revision de codigo, pruebas de humo y pequenos experimentos controlados. Es relevante unicamente como material didactico o como punto de partida para experimentar con la implementacion personalizada que incluye (`inference.py`), no como una release preentrenada utilizable.
 
@@ -46,7 +46,7 @@ En cuanto al entrenamiento, el repositorio incluye un `training_args.json` con u
 - Revision de codigo de la propia implementacion: el repositorio esta pensado explicitamente para revisar el codigo de la arquitectura Dino personalizada, verificar que las capas (atencion linear, fusion tucker) se construyen correctamente y comprobar la coherencia de `config.json`.
 - Pruebas de humo en pipelines de ML: el checkpoint de inicializacion permite validar que un pipeline de carga, serializacion y forward pass funciona de extremo a extremo antes de invertir en un entrenamiento real.
 - Base para experimentos controlados: sirve como esqueleto sobre el que definir una receta de entrenamiento (SGD con linear warmup) y compararla con baselines de capacidad equivalente bajo el mismo presupuesto de ajuste y semillas.
-- Docencia y aprendizaje: util para ilustrar como se estructura un repositorio de modelo en HuggingFace (config, training args, pesos e inference script) sin la complejidad de un modelo grande.
+- Docencia y aprendizaje: util para ilustrar como se estructura un repositorio de modelo en Hugging Face (config, training args, pesos e inference script) sin la complejidad de un modelo grande.
 - Verificacion de integracion de safetensors: permite probar la carga de pesos en formato safetensors con PyTorch en entornos aislados.
 - Adaptacion mediante adapters: dado que es una implementacion personalizada, puede emplearse para practicar la escritura de un adapter explicito que permita usar APIs de carga automatica genericas.
 
@@ -81,5 +81,5 @@ No disponible. El repositorio no declara una categoria de modelo comparable, no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vincentzhangcim/dino-finetuned
+- Modelo en Hugging Face: https://huggingface.co/vincentzhangcim/dino-finetuned
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios o demos) en la informacion proporcionada.

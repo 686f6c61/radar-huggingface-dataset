@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`dummy033485/manufacturing-digital-twin` no es un modelo de lenguaje: es un artefacto de investigación reproducible publicado en HuggingFace que contiene un estimador de desgaste de herramienta (Random Forest entrenado con scikit-learn), un gemelo digital de eventos discretos construido con SimPy y los datos derivados de un estudio de políticas de mantenimiento sobre el NASA PCoE Milling Data Set (UC Berkeley BEST Lab: 16 casos, 167 pasadas, 6 canales de sensor por pasada, desgaste de flanco VB medido). Lo firma Zain, autor con perfil de Ingeniería Mecánica + IA, y se enmarca en las líneas de investigación del MOSAIC Lab (Dr. Michail Katsigiannis, Department of Mechanical Engineering, University of South Carolina): sensórica de planta, simulación para operaciones en tiempo real, gemelos digitales y soporte a la decisión.
+`dummy033485/manufacturing-digital-twin` no es un modelo de lenguaje: es un artefacto de investigación reproducible publicado en Hugging Face que contiene un estimador de desgaste de herramienta (Random Forest entrenado con scikit-learn), un gemelo digital de eventos discretos construido con SimPy y los datos derivados de un estudio de políticas de mantenimiento sobre el NASA PCoE Milling Data Set (UC Berkeley BEST Lab: 16 casos, 167 pasadas, 6 canales de sensor por pasada, desgaste de flanco VB medido). Lo firma Zain, autor con perfil de Ingeniería Mecánica + IA, y se enmarca en las líneas de investigación del MOSAIC Lab (Dr. Michail Katsigiannis, Department of Mechanical Engineering, University of South Carolina): sensórica de planta, simulación para operaciones en tiempo real, gemelos digitales y soporte a la decisión.
 
 El problema que aborda es concreto: estimar el desgaste VB por corte a partir de características extraídas de señales de sensor y cuantificar, mediante simulación, cuánto mejora una política de mantenimiento basada en condición frente a run-to-failure o intervalo fijo en una línea fresado → inspección → ensamblaje. El resultado transferible no es el rendimiento absoluto (datos de laboratorio con desgaste acelerado), sino el ranking de políticas: el mantenimiento basado en condición elimina las paradas no planificadas y reduce el scrap a menos de la mitad, a cambio de más cambios de herramienta planificados.
 
-Es relevante ahora por su valor como base reproducible y como caso de estudio honesto sobre el coste del ruido del estimador: el autor publica tanto los RMSE de validación cruzada por caso y por condición como el análisis de sensibilidad al reducir la sigma del estimador a la mitad. El repositorio ocupa menos de 0,1 GB según HuggingFace, tiene licencia MIT, 0 descargas y 0 likes en el momento de la consulta, y no declara pipeline ni idiomas.
+Es relevante ahora por su valor como base reproducible y como caso de estudio honesto sobre el coste del ruido del estimador: el autor publica tanto los RMSE de validación cruzada por caso y por condición como el análisis de sensibilidad al reducir la sigma del estimador a la mitad. El repositorio ocupa menos de 0,1 GB según Hugging Face, tiene licencia MIT, 0 descargas y 0 likes en el momento de la consulta, y no declara pipeline ni idiomas.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ Es relevante ahora por su valor como base reproducible y como caso de estudio ho
 | Dataset de origen | NASA PCoE Milling Data Set: 16 casos, 167 pasadas, 6 canales de sensor, VB de flanco medido |
 | Entradas del estimador | Media, desviación típica, RMS, máximo, curtosis y asimetría por señal + profundidad de corte (DOC), avance, material y número de corte |
 | Cortes medidos usados en el ajuste | 146 |
-| Tamaño del repositorio | 0,0 GB reportado por HuggingFace (menos de 0,1 GB) |
+| Tamaño del repositorio | 0,0 GB reportado por Hugging Face (menos de 0,1 GB) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -80,7 +80,7 @@ Lectura relevante: en la condición de fundición, la política de intervalo fij
 
 - No requiere GPU: la inferencia del Random Forest y la simulación SimPy se ejecutan en CPU.
 - VRAM estimada para inferencia: 0 GB (no aplica).
-- RAM estimada: no disponible; el repositorio completo ocupa menos de 0,1 GB según HuggingFace y los ficheros de modelo son un único pickle de scikit-learn más dos JSON de pocos kilobytes.
+- RAM estimada: no disponible; el repositorio completo ocupa menos de 0,1 GB según Hugging Face y los ficheros de modelo son un único pickle de scikit-learn más dos JSON de pocos kilobytes.
 - GPU recomendadas: ninguna; A100, H100 o RTX 4090 son innecesarias para este artefacto.
 - Cabe en cualquier portátil de consumo; el cuello de botella es el número de replicaciones de SimPy, no el modelo.
 - Opciones de despliegue: Python 3 con scikit-learn y SimPy; carga del modelo vía `pickle`/`joblib`. vLLM, llama.cpp, Ollama o TGI no aplican.
@@ -114,8 +114,8 @@ Alternativas externas de la misma categoría (estimación de desgaste en fresado
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dummy033485/manufacturing-digital-twin
-- Demo en vivo (HuggingFace Space): https://huggingface.co/spaces/dummy033485/manufacturing-twin-demo
+- Repositorio en Hugging Face: https://huggingface.co/dummy033485/manufacturing-digital-twin
+- Demo en vivo (Hugging Face Space): https://huggingface.co/spaces/dummy033485/manufacturing-twin-demo
 - NASA PCoE Milling Data Set: referenciado en la model card (UC Berkeley BEST Lab); no se proporciona URL en la información disponible.
 - MOSAIC Lab, Department of Mechanical Engineering, University of South Carolina: mencionado como marco de investigación; no se proporciona URL.
 - Ficheros del repositorio: `wear_rf.pkl`, `twin_report.json`, `wear_model.json`, `milling_runs.csv`.

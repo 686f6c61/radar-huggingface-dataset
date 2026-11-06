@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA (PEFT) entrenado sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct por el usuario leobianco. El nombre del repositorio codifica la mayor parte de la información disponible: "RM" (previsiblemente *reward model*), "synstruct" (probablemente datos sintéticos estructurados), "epo8" (8 épocas), "lr4_4e-04" (tasa de aprendizaje) y "r16" (rango LoRA 16). La model card es autogenerada por el Trainer de HuggingFace y no incluye descripción, usos previstos ni composición del dataset, que aparecen como "More information needed".
+Este repositorio contiene un adaptador LoRA (PEFT) entrenado sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct por el usuario leobianco. El nombre del repositorio codifica la mayor parte de la información disponible: "RM" (previsiblemente *reward model*), "synstruct" (probablemente datos sintéticos estructurados), "epo8" (8 épocas), "lr4_4e-04" (tasa de aprendizaje) y "r16" (rango LoRA 16). La model card es autogenerada por el Trainer de Hugging Face y no incluye descripción, usos previstos ni composición del dataset, que aparecen como "More information needed".
 
 El problema que resuelve es, según se deduce de sus métricas de evaluación (ROC AUC, umbral óptimo, TPR/FPR, puntuaciones medias para positivos y negativos), la puntuación o clasificación binaria de respuestas, un patrón típico de los modelos de recompensa empleados en pipelines de RLHF/DPO o en sistemas de filtrado y *reranking*. Sobre el conjunto de evaluación declara una pérdida final de 1,7937, un ROC AUC de 0,9352 y una exactitud de 0,8980 con umbral 1,0000.
 
@@ -97,7 +97,7 @@ No se dispone de datos verificables de otros modelos de recompensa en la informa
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/leobianco/npov_RM_synstruct_Qwen2_5-1_5B-Instruct_S130104_epo8_lr4_4e-04_r16_2609221709
+- Repositorio del modelo en Hugging Face: https://huggingface.co/leobianco/npov_RM_synstruct_Qwen2_5-1_5B-Instruct_S130104_epo8_lr4_4e-04_r16_2609221709
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Informe técnico de Qwen2.5 (paper): https://arxiv.org/abs/2412.15115
 - Blog oficial de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

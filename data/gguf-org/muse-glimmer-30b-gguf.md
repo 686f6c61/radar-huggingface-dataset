@@ -27,7 +27,7 @@ No se ha publicado informacion detallada sobre la arquitectura interna del model
 
 - Ejecucion de herramientas (tool calling) y flujos de trabajo agénticos: el modelo puede invocar funciones externas y coordinar multiples pasos de razonamiento, segun la model card.
 - Procesamiento multimodal: incluye un proyector de vision (`mmproj`) que permite entrada de imagenes, aunque no se especifica el detalle de las tareas de vision soportadas.
-- Generacion de texto conversacional: etiquetado como "conversational" en HuggingFace.
+- Generacion de texto conversacional: etiquetado como "conversational" en Hugging Face.
 - Optimizacion para ejecucion local: diseñado para caber en 12 GB de VRAM/RAM, lo que permite su uso en GPUs de consumo.
 - Compatibilidad con motores de inferencia estandar: llama.cpp, ggk y LM Studio, lo que facilita su integracion en entornos de desarrollo.
 - Decodificacion especulativa: mediante el modelo draft `dflash`, se reduce la latencia en la generacion de tokens.
@@ -68,7 +68,7 @@ No se dispone de informacion comparativa publicada para este modelo. Sin embargo
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/gguf-org/muse-glimmer-30b-gguf
+- Repositorio GGUF en Hugging Face: https://huggingface.co/gguf-org/muse-glimmer-30b-gguf
 - Modelo base (GGUF oficial de Meta): https://huggingface.co/meta-models/Muse-Glimmer-30B-GGUF
 - Documentacion oficial de Meta para obtener el modelo: https://dev.meta.ai/docs/muse-glimmer/get-the-model
 - Guia de ejecucion local con Unsloth: https://unsloth.ai/docs/models/muse-glimmer

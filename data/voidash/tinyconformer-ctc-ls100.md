@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tinyconformer-ctc-ls100 es un modelo de reconocimiento automatico del habla (ASR) de tamano minimo publicado por el usuario voidash en HuggingFace. Se trata de un Conformer con cabecera CTC a nivel de caracter (char-level CTC), es decir, el modelo emite directamente caracteres en lugar de subpalabras BPE o fonemas, y se ha entrenado sobre el subconjunto train.clean.100 de LibriSpeech (aproximadamente 100 horas de audio de audiolibros en ingles). La model card lo describe explicitamente como un piloto, no como un sistema listo para produccion.
+tinyconformer-ctc-ls100 es un modelo de reconocimiento automatico del habla (ASR) de tamano minimo publicado por el usuario voidash en Hugging Face. Se trata de un Conformer con cabecera CTC a nivel de caracter (char-level CTC), es decir, el modelo emite directamente caracteres en lugar de subpalabras BPE o fonemas, y se ha entrenado sobre el subconjunto train.clean.100 de LibriSpeech (aproximadamente 100 horas de audio de audiolibros en ingles). La model card lo describe explicitamente como un piloto, no como un sistema listo para produccion.
 
 La cifra de parametros es de 978.461 segun la model card y de 979.357 segun los pesos almacenados en safetensors, por debajo del millon de parametros. El entrenamiento se realizo, segun el autor, con un presupuesto de computo de 2 dolares, y la decodificacion es greedy sin modelo de lenguaje externo. Su relevancia es fundamentalmente didactica y experimental: sirve como linea base de bajo coste para estudiar hasta donde llega un Conformer sub-1M en tareas de ASR.
 
@@ -99,6 +99,6 @@ La busqueda web realizada no devolvio informacion tecnica utilizable sobre estos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/voidash/tinyconformer-ctc-ls100
+- Modelo en Hugging Face: https://huggingface.co/voidash/tinyconformer-ctc-ls100
 - No se han encontrado otros enlaces relevantes (papers, repositorios, demos o blogs) en la busqueda web realizada; los unicos resultados devueltos fueron paginas del servicio YouTube sin relacion con el modelo.
 - Referencia externa sobre la arquitectura, no citada en la model card: Gulati et al., "Conformer: Convolution-augmented Transformer for Speech Recognition" (arXiv:2005.08100).

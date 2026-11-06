@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yume es un modelo publicado en HuggingFace por el usuario FullDiveRS bajo licencia MIT. La informacion disponible en la model card es practicamente inexistente: el unico contenido es la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin especificaciones de parametros ni de contexto, y sin pipeline asignado en el hub.
+Yume es un modelo publicado en Hugging Face por el usuario FullDiveRS bajo licencia MIT. La informacion disponible en la model card es practicamente inexistente: el unico contenido es la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin especificaciones de parametros ni de contexto, y sin pipeline asignado en el hub.
 
 El modelo no cuenta con descargas ni interacciones registradas en el momento de la consulta (0 descargas, 0 likes), y fue creado y actualizado en la misma marca temporal (29 de octubre de 2026), lo que sugiere una publicacion reciente y sin documentacion asociada. No hay tags que indiquen familia, arquitectura o tarea, mas alla de la region y la licencia.
 
@@ -40,7 +40,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 
 - No es posible recomendar casos de uso concretos sin informacion sobre arquitectura, tamano, contexto y capacidades del modelo.
 - Cualquier escenario de atencion al cliente, generacion de codigo, analisis documental o despliegue en produccion requeriria primero verificar las especificaciones tecnicas y los requisitos de hardware, que no estan disponibles.
-- Se recomienda consultar el repositorio de HuggingFace o contactar con el autor antes de plantear cualquier integracion.
+- Se recomienda consultar el repositorio de Hugging Face o contactar con el autor antes de plantear cualquier integracion.
 
 ## Benchmarks y rendimiento
 
@@ -69,4 +69,4 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FullDiveRS/Yume
+- Repositorio en Hugging Face: https://huggingface.co/FullDiveRS/Yume

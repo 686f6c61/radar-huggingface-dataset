@@ -12,7 +12,7 @@ Su relevancia actual es, por tanto, documental y metodológica: sirve como plant
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible. El tag de HuggingFace indica `transformer`, pero la model card no documenta arquitectura, capas, dimensiones ni tokenizador |
+| Arquitectura | No disponible. El tag de Hugging Face indica `transformer`, pero la model card no documenta arquitectura, capas, dimensiones ni tokenizador |
 | Parámetros totales | 33.088 (según safetensors; ~33K) |
 | Parámetros activos | No aplica (no se describe una arquitectura MoE) |
 | Longitud de contexto | No disponible |
@@ -23,7 +23,7 @@ Su relevancia actual es, por tanto, documental y metodológica: sirve como plant
 
 ## Arquitectura y entrenamiento
 
-No hay información sobre arquitectura más allá del tag `transformer` en los metadatos de HuggingFace, que no viene acompañado de `config.json` documentado, tokenizador ni descripción de capas. El repositorio contiene únicamente `review.md` (artefacto principal) y `README.md`, con un tamaño total de 0,0 GB; el tensor safetensors de 33.088 parámetros es compatible con un fichero de pruebas o un artefacto residual, no con un modelo funcional.
+No hay información sobre arquitectura más allá del tag `transformer` en los metadatos de Hugging Face, que no viene acompañado de `config.json` documentado, tokenizador ni descripción de capas. El repositorio contiene únicamente `review.md` (artefacto principal) y `README.md`, con un tamaño total de 0,0 GB; el tensor safetensors de 33.088 parámetros es compatible con un fichero de pruebas o un artefacto residual, no con un modelo funcional.
 
 Tampoco se documenta entrenamiento: no se indican tokens de preentrenamiento, composición del dataset, ni fases de ajuste como RLHF, DPO o SFT. La model card describe el contenido como notas de lectura y un esbozo de experimento, con secciones etiquetadas explícitamente como planes o hipótesis. Como innovación técnica, lo único destacable es de carácter metodológico: la propuesta de comparación con baselines emparejados y la exigencia de que cualquier resultado futuro incluya versiones de dataset, comandos, seeds, hardware y logs crudos para ser considerado reproducible.
 
@@ -32,7 +32,7 @@ Tampoco se documenta entrenamiento: no se indican tokens de preentrenamiento, co
 - No se documenta ninguna capacidad de generación de texto, razonamiento, código, matemáticas o visión; no hay checkpoint ni tokenizador publicados que permitan inferencia.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes o razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponibles; el campo de idiomas de HuggingFace está vacío.
+- Capacidades multilingües: no disponibles; el campo de idiomas de Hugging Face está vacío.
 - Capacidad documental: el repositorio recoge el alcance de una pregunta de investigación sobre *few-shot multimodal*, factores de confusión probables, referencias del tema y preguntas abiertas.
 - Capacidad de planificación experimental: propone una comparación con baselines emparejados y un conjunto de comprobaciones de reproducibilidad y modos de fallo.
 - Capacidad de trazabilidad: la model card establece de forma explícita la frontera entre hipótesis y resultados, lo que permite usar el documento como checklist de revisión.
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 - Cabe en GPU de consumo: sí, en el sentido trivial de que no hay modelo que ejecutar; no existe una GPU recomendada porque no hay tarea de inferencia definida.
 - Opciones de despliegue: no disponibles. No hay artefactos compatibles con vLLM, llama.cpp, Ollama, TGI, SGLang ni Transformers en modo generativo.
 - Latencia y throughput: no disponibles; no se han publicado mediciones y no hay modelo que medir.
-- Almacenamiento: el repositorio completo ocupa 0,0 GB según HuggingFace, por lo que su clonado es inmediato.
+- Almacenamiento: el repositorio completo ocupa 0,0 GB según Hugging Face, por lo que su clonado es inmediato.
 
 ## Comparativa con modelos similares
 
@@ -87,7 +87,7 @@ No disponible. Este repositorio no es un modelo y no admite comparación por par
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DaffaPth/personal-few-shot-multimodal40
+- Repositorio en Hugging Face: https://huggingface.co/DaffaPth/personal-few-shot-multimodal40
 - Nota principal del repositorio: https://huggingface.co/DaffaPth/personal-few-shot-multimodal40/blob/main/review.md
 - Documentación del repositorio: https://huggingface.co/DaffaPth/personal-few-shot-multimodal40/blob/main/README.md
 - Resultados de búsqueda web: no se encontraron enlaces relevantes; las consultas devolvieron únicamente páginas de estadísticas de Fortnite (fortnitetracker.com, fortnite.gg, olitracker.com), sin relación con el modelo ni con *few-shot multimodal*.

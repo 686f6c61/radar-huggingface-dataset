@@ -72,8 +72,8 @@ El autor advierte que el 100 % de identidad no equivale a corrección factual: e
 
 | Modelo | Parametros | Contexto | Identidad medida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| odelpa/qwen14-scienziato-v2 | 64,2 M (adaptador) sobre Qwen3-14B | no disponible | 100 % (palabras clave, n=50) | Apache 2.0 | HuggingFace (solo adaptador) |
-| Qwen/Qwen3-14B (base) | 14 B | no disponible | 8 % (palabras clave, n=50) | Apache 2.0 | HuggingFace |
+| odelpa/qwen14-scienziato-v2 | 64,2 M (adaptador) sobre Qwen3-14B | no disponible | 100 % (palabras clave, n=50) | Apache 2.0 | Hugging Face (solo adaptador) |
+| Qwen/Qwen3-14B (base) | 14 B | no disponible | 8 % (palabras clave, n=50) | Apache 2.0 | Hugging Face |
 | Mistral del proyecto (referencia en la model card) | no disponible | no disponible | scorer distinto (solo "gdp"/"del papa") | no disponible | no disponible |
 
 No se dispone de comparación con otros adaptadores de identidad LoRA en la información proporcionada.
@@ -91,7 +91,7 @@ No se dispone de comparación con otros adaptadores de identidad LoRA en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/odelpa/qwen14-scienziato-v2
+- Hugging Face: https://huggingface.co/odelpa/qwen14-scienziato-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - DOI Zenodo v1.0: https://doi.org/10.5281/zenodo.23757653
 - DOI Zenodo (principal): https://doi.org/10.5281/zenodo.23757652

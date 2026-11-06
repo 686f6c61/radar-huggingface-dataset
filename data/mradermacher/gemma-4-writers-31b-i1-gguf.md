@@ -91,7 +91,7 @@ Rendimiento comparado: no disponible. No hay benchmarks publicados para ninguno 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Gemma-4-Writers-31B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma-4-Writers-31B-i1-GGUF
 - Modelo base: https://huggingface.co/Ateron/Gemma-4-Writers-31B
 - Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Gemma-4-Writers-31B-GGUF
 - Página resumen de descargas del cuantizador: https://hf.tst.eu/model#Gemma-4-Writers-31B-i1-GGUF

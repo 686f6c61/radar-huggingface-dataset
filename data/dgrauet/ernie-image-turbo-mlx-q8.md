@@ -77,7 +77,7 @@ La principal diferencia de `ernie-image-turbo-mlx-q8` es su optimización espec�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dgrauet/ernie-image-turbo-mlx-q8
+- Hugging Face: https://huggingface.co/dgrauet/ernie-image-turbo-mlx-q8
 - Repositorio GitHub de la librería de inferencia: https://github.com/dgrauet/ernie-image-mlx
 - Herramienta de conversión mlx-forge: https://github.com/dgrauet/mlx-forge
 - Paquete PyPI: https://pypi.org/project/ernie-image-mlx/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `opd-teacher-R1Distill-Differentiate-step149` es un ajuste fino de `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` publicado por el usuario davidheineman en HuggingFace. Se trata de un "teacher" (modelo profesor) entrenado especificamente para tareas de derivacion matematica, dentro de un flujo de destilacion on-policy (OPD, On-Policy Distillation). El modelo forma parte de la coleccion RLVE OPD Teachers, un conjunto de profesores especializados por entorno que se usan para transferir capacidad de razonamiento a modelos estudiantes mas pequenos.
+El modelo `opd-teacher-R1Distill-Differentiate-step149` es un ajuste fino de `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` publicado por el usuario davidheineman en Hugging Face. Se trata de un "teacher" (modelo profesor) entrenado especificamente para tareas de derivacion matematica, dentro de un flujo de destilacion on-policy (OPD, On-Policy Distillation). El modelo forma parte de la coleccion RLVE OPD Teachers, un conjunto de profesores especializados por entorno que se usan para transferir capacidad de razonamiento a modelos estudiantes mas pequenos.
 
 El entrenamiento se realizo con RL (concretamente GRPO) durante 150 pasos sobre prompts de dificultad 0 del entorno `Differentiate`, con cuatro prompts y 16 rollouts por paso, y sin el filtrado de prompts de DAPO. Los pesos publicados corresponden al paso 149. La arquitectura subyacente es la del modelo base, un transformer decoder-only de la familia Qwen2 con aproximadamente 1,78 mil millones de parametros.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| opd-teacher-R1Distill-Differentiate-step149 (este) | 1,78 B | no disponible | Derivacion (entorno `Differentiate`, dificultad 0) | no disponible | HuggingFace, 0 descargas |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (base) | 1,78 B | no disponible en esta ficha | Razonamiento general | MIT (modelo base) | HuggingFace |
-| davidheineman/opd-teacher-Q2.5I-Differentiate-step149 | ~1,5 B (Qwen 2.5 1.5B Instruct) | no disponible | Derivacion (mismo entorno, base instruct) | no disponible | HuggingFace / Featherless |
+| opd-teacher-R1Distill-Differentiate-step149 (este) | 1,78 B | no disponible | Derivacion (entorno `Differentiate`, dificultad 0) | no disponible | Hugging Face, 0 descargas |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (base) | 1,78 B | no disponible en esta ficha | Razonamiento general | MIT (modelo base) | Hugging Face |
+| davidheineman/opd-teacher-Q2.5I-Differentiate-step149 | ~1,5 B (Qwen 2.5 1.5B Instruct) | no disponible | Derivacion (mismo entorno, base instruct) | no disponible | Hugging Face / Featherless |
 
 La comparacion con otros profesores de la coleccion RLVE (por ejemplo los entrenados sobre 32 de los 400 entornos) y con alternativas del mismo tamano dentro de la familia Qwen no puede completarse con rendimiento numerico porque no se han publicado benchmarks.
 
@@ -87,7 +87,7 @@ La comparacion con otros profesores de la coleccion RLVE (por ejemplo los entren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/opd-teacher-R1Distill-Differentiate-step149
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/opd-teacher-R1Distill-Differentiate-step149
 - Coleccion RLVE OPD Teachers: https://huggingface.co/collections/davidheineman/rlve-opd-teachers
 - Perfil del autor: https://huggingface.co/davidheineman
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/OLMo-3-7B-german-city-names-last-third-v2-sft-seed5-epoch3` es un finetune de `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `localized-ft` mediante la librería TRL de HuggingFace y la herramienta Unsloth. Se trata de un modelo de generación de texto en inglés, licenciado bajo Apache 2.0, que forma parte de una familia de variantes experimentales (distintas semillas y particiones del dataset, como `first-third` o `last-third`) orientadas a evaluar el efecto de diferentes configuraciones de fine-tuning sobre el modelo base OLMo-3-7B-Instruct.
+El modelo `localized-ft/OLMo-3-7B-german-city-names-last-third-v2-sft-seed5-epoch3` es un finetune de `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `localized-ft` mediante la librería TRL de Hugging Face y la herramienta Unsloth. Se trata de un modelo de generación de texto en inglés, licenciado bajo Apache 2.0, que forma parte de una familia de variantes experimentales (distintas semillas y particiones del dataset, como `first-third` o `last-third`) orientadas a evaluar el efecto de diferentes configuraciones de fine-tuning sobre el modelo base OLMo-3-7B-Instruct.
 
 El modelo base, OLMo-3-7B-Instruct, es un transformer decoder-only de 7 mil millones de parámetros desarrollado por el Allen Institute for AI (AI2), con una ventana de contexto de 4.096 tokens y licencia Apache 2.0. Este finetune no introduce cambios arquitectónicos; simplemente ajusta los pesos del modelo base sobre un conjunto de datos de conversación en inglés. El repositorio tiene un tamaño de 14,6 GB en formato safetensors, consistente con pesos completos de un modelo de 7B en precisión fp16.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es principalmente experimental: permite comparar c�
 
 ## Arquitectura y entrenamiento
 
-El modelo base OLMo-3-7B-Instruct es un transformer decoder-only con atención causal, preentrenado por el Allen Institute for AI con datos abiertos y posteriormente instruido mediante un pipeline de SFT y preferencias. El finetune aquí presentado se realizó con la librería Unsloth y TRL de HuggingFace, lo que permite un entrenamiento más rápido (el autor indica "2x faster" en la model card). No se especifican en la información disponible los datos exactos del dataset de entrenamiento, el número de tokens ni la configuración de hiperparámetros más allá de la semilla (seed5) y el número de épocas (epoch3). La partición del dataset se denomina "last-third", lo que sugiere que el conjunto de datos se dividió en tres partes y se usó la última para este experimento.
+El modelo base OLMo-3-7B-Instruct es un transformer decoder-only con atención causal, preentrenado por el Allen Institute for AI con datos abiertos y posteriormente instruido mediante un pipeline de SFT y preferencias. El finetune aquí presentado se realizó con la librería Unsloth y TRL de Hugging Face, lo que permite un entrenamiento más rápido (el autor indica "2x faster" en la model card). No se especifican en la información disponible los datos exactos del dataset de entrenamiento, el número de tokens ni la configuración de hiperparámetros más allá de la semilla (seed5) y el número de épocas (epoch3). La partición del dataset se denomina "last-third", lo que sugiere que el conjunto de datos se dividió en tres partes y se usó la última para este experimento.
 
 ## Capacidades
 
@@ -39,7 +39,7 @@ El modelo base OLMo-3-7B-Instruct es un transformer decoder-only con atención c
 - Comparación de variantes de seed y partición: al existir modelos hermanos (seed4, first-third), se puede estudiar la varianza entre ejecuciones.
 - Generación de texto en inglés en entornos de investigación: para tareas de generación generales donde se requiera un modelo de 7B con licencia Apache 2.0.
 - Base para futuros fine-tunes: los pesos completos en safetensors permiten continuar el entrenamiento sobre este checkpoint.
-- Despliegue en infraestructura compatible con TGI: el modelo está etiquetado como `endpoints_compatible`, por lo que puede servirse con Text Generation Inference de HuggingFace.
+- Despliegue en infraestructura compatible con TGI: el modelo está etiquetado como `endpoints_compatible`, por lo que puede servirse con Text Generation Inference de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: aproximadamente 14-15 GB en fp16 (pesos completos de 7B), unos 5-6 GB en cuantización de 4 bits.
 - GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB) para fp16 sin cuantizar; GPUs de 8 GB pueden ejecutar el modelo con cuantización de 4 bits.
 - No cabe en GPUs de 4 GB ni en hardware sin soporte CUDA.
-- Opciones de despliegue: vLLM, Text Generation-Inference (TGI), llama.cpp, Ollama (tras convertir a GGUF), y Transformers de HuggingFace.
+- Opciones de despliegue: vLLM, Text Generation-Inference (TGI), llama.cpp, Ollama (tras convertir a GGUF), y Transformers de Hugging Face.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ La comparativa se limita a la familia del propio modelo, ya que no hay datos de 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-last-third-v2-sft-seed5-epoch3
+- Página del modelo en Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-last-third-v2-sft-seed5-epoch3
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Variante con seed4: https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-last-third-v2-sft-seed4-epoch3
 - Variante con primera partición: https://huggingface.co/localized-ft/OLMo-3-7B-german-city-names-first-third-v2-sft-seed5-epoch3

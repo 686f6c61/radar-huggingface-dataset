@@ -65,7 +65,7 @@ No disponible. No se dispone de información sobre otros modelos o documentos co
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/sydneydvig/paper_018435273_multimodal_generation
+- Repositorio de Hugging Face: https://huggingface.co/sydneydvig/paper_018435273_multimodal_generation
 - Model card del repositorio (contenido del README): https://huggingface.co/sydneydvig/paper_018435273_multimodal_generation/blob/main/README.md
 - Artículo de referencia sobre generación multimodal (surveys de arXiv): https://arxiv.org/abs/2409.14993
 - Versión HTML del mismo survey: https://arxiv.org/html/2409.14993v1

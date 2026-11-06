@@ -104,7 +104,7 @@ Nota del autor relevante para cualquier comparacion: los modelos entrenados en a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skonan/PaperScorer-7B-Vision-arXiv
+- Modelo en Hugging Face: https://huggingface.co/skonan/PaperScorer-7B-Vision-arXiv
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Repositorio del orquestador PaperScorer: https://github.com/zlab-princeton/PaperScorer
 - Coleccion PaperScorer (modelos y datasets): https://huggingface.co/collections/zlab-princeton/paperscorer

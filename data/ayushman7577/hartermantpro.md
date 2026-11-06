@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hartermantpro` (ID: `ayushman7577/hartermantpro`) es un modelo publicado en HuggingFace por el usuario `ayushman7577`. Según la información disponible, se distribuye bajo licencia Apache 2.0 y sus pesos están en formato GGUF, lo que sugiere que está pensado para ejecución local mediante herramientas como llama.cpp u Ollama. Sin embargo, la model card asociada no contiene ninguna información técnica: no se indica arquitectura, número de parámetros, longitud de contexto, idiomas ni capacidades. El repositorio fue creado el 8 de septiembre de 2026 y no registra descargas ni "likes", lo que indica que es un modelo recién publicado y sin adopción conocida.
+El modelo `hartermantpro` (ID: `ayushman7577/hartermantpro`) es un modelo publicado en Hugging Face por el usuario `ayushman7577`. Según la información disponible, se distribuye bajo licencia Apache 2.0 y sus pesos están en formato GGUF, lo que sugiere que está pensado para ejecución local mediante herramientas como llama.cpp u Ollama. Sin embargo, la model card asociada no contiene ninguna información técnica: no se indica arquitectura, número de parámetros, longitud de contexto, idiomas ni capacidades. El repositorio fue creado el 8 de septiembre de 2026 y no registra descargas ni "likes", lo que indica que es un modelo recién publicado y sin adopción conocida.
 
 La ausencia de documentación técnica impide determinar qué problema resuelve el modelo, cómo fue entrenado o por qué sería relevante en el contexto actual. No se puede evaluar su rendimiento ni compararlo con otras alternativas. Por tanto, esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente la falta de información.
 
@@ -54,8 +54,8 @@ No disponible. No se dispone de información sobre el tamaño, la arquitectura o
 - Sesgos: desconocidos. No se ha publicado información sobre la composición del dataset ni sobre posibles sesgos.
 - Limitaciones de contexto e idioma: desconocidas. No se especifica la longitud de contexto ni los idiomas soportados.
 - Licencia: Apache 2.0 permite uso comercial y modificación, pero la ausencia de documentación técnica no garantiza que el modelo sea apto para producción.
-- Adopción: el modelo no tiene descargas ni "likes" en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- Adopción: el modelo no tiene descargas ni "likes" en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ayushman7577/hartermantpro
+- Hugging Face: https://huggingface.co/ayushman7577/hartermantpro

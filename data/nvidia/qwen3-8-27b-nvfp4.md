@@ -88,7 +88,7 @@ Se compara el checkpoint cuantizado con el modelo base original, ya que no se di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4
+- Hugging Face: https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - NVIDIA Model Optimizer: https://github.com/NVIDIA/Model-Optimizer
 - Ficha en NVIDIA NGC: https://catalog.ngc.nvidia.com/orgs/nim/qwen/models/qwen3.8-27b/

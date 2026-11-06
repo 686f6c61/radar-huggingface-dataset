@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppt-pythia-160m-c4-equal-budget-continuous-seed324` es un artefacto de investigación publicado por el usuario de HuggingFace `qing-yao`: una reproducción desde cero (sin cargar pesos preentrenados) de la arquitectura Pythia-160M, entrenada únicamente sobre el subconjunto en inglés de C4. Forma parte de un experimento controlado de presupuesto igualado ("equal-budget") cuyo objetivo es comparar dos estrategias de entrenamiento que consumen exactamente los mismos ejemplos en el mismo orden: una rama continua, con una única planificación de learning rate, y una rama en dos etapas que reinicia los embeddings de entrada/salida, el optimizador y la planificación tras la actualización 500. Este repositorio corresponde a la rama continua con semilla 324.
+`ppt-pythia-160m-c4-equal-budget-continuous-seed324` es un artefacto de investigación publicado por el usuario de Hugging Face `qing-yao`: una reproducción desde cero (sin cargar pesos preentrenados) de la arquitectura Pythia-160M, entrenada únicamente sobre el subconjunto en inglés de C4. Forma parte de un experimento controlado de presupuesto igualado ("equal-budget") cuyo objetivo es comparar dos estrategias de entrenamiento que consumen exactamente los mismos ejemplos en el mismo orden: una rama continua, con una única planificación de learning rate, y una rama en dos etapas que reinicia los embeddings de entrada/salida, el optimizador y la planificación tras la actualización 500. Este repositorio corresponde a la rama continua con semilla 324.
 
 El modelo tiene 162.322.944 parámetros y una ventana de 2.048 tokens, con un vocabulario de 50.304 entradas. El entrenamiento comprende 10.500 actualizaciones del optimizador con 32 secuencias de 2.048 tokens por actualización, lo que equivale a unos 688 millones de tokens, aproximadamente 4,24 tokens por parámetro. La pérdida final en FP32 sobre las primeras 512 secuencias de validación de C4 es 3,723919.
 
@@ -103,7 +103,7 @@ La diferencia clave frente a las tres alternativas no es la arquitectura, sino e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-c4-equal-budget-continuous-seed324
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-c4-equal-budget-continuous-seed324
 - Informes del experimento: carpeta `reports/` del repositorio (seis endpoints y comparaciones emparejadas)
 - Receta completa de entrenamiento: archivo `run.json` del repositorio
 - Tokenizer fijado: incluido en el repositorio

@@ -67,8 +67,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, Spid
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| text2sql-qwen25-1p5b-lora | Adaptador sobre 1.500 M | No disponible | LoRA text-to-SQL sobre sql-create-context | Apache 2.0 | HuggingFace (krisrajz) |
-| Qwen/Qwen2.5-1.5B-Instruct | 1.500 M | No disponible en esta ficha | Modelo base generalista | Apache 2.0 | HuggingFace (Qwen) |
+| text2sql-qwen25-1p5b-lora | Adaptador sobre 1.500 M | No disponible | LoRA text-to-SQL sobre sql-create-context | Apache 2.0 | Hugging Face (krisrajz) |
+| Qwen/Qwen2.5-1.5B-Instruct | 1.500 M | No disponible en esta ficha | Modelo base generalista | Apache 2.0 | Hugging Face (Qwen) |
 | Alternativas especificas de text-to-SQL | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre otros adaptadores o modelos comparables de text-to-SQL en la documentacion proporcionada, por lo que la comparativa se limita al modelo base y a la ausencia de alternativas documentadas.
@@ -85,7 +85,7 @@ No se dispone de informacion sobre otros adaptadores o modelos comparables de te
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/krisrajz/text2sql-qwen25-1p5b-lora
+- Modelo en Hugging Face: https://huggingface.co/krisrajz/text2sql-qwen25-1p5b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/b-mc2/sql-create-context
 - Libreria PEFT: https://github.com/huggingface/peft

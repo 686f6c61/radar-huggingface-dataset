@@ -110,7 +110,7 @@ No se dispone de datos numéricos de otros checkpoints de desaprendizaje de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: [JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_PDU](https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_PDU)
+- Modelo en Hugging Face: [JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_PDU](https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_PDU)
 - Modelo base: [open-unlearning/tofu_Llama-3.2-3B-Instruct_full](https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full)
 - Dataset TOFU: [locuslab/TOFU](https://huggingface.co/datasets/locuslab/TOFU)
 - Framework open-unlearning: [https://github.com/locuslab/open-unlearning](https://github.com/locuslab/open-unlearning)

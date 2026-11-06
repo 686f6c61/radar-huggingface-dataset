@@ -95,7 +95,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria (mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ollaya-dev/nimble
+- Modelo en Hugging Face: https://huggingface.co/ollaya-dev/nimble
 - Repositorio del runtime Ollaya: https://github.com/ollaya-dev/ollaya
 - Modelo upstream (adaptador): https://huggingface.co/bespokelabs/Bespoke-Nimble-9B-v2
 - Revision fijada del adaptador: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B-v2/tree/4b8c04d1ac2cea3e41e5e3c4d2130bcead2c0abe

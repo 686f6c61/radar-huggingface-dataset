@@ -70,9 +70,9 @@ En 165 conversaciones reservadas transcritas por historiadores del Departamento 
 
 | Modelo | Parámetros | Contexto | Rendimiento en el dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| este modelo (v5) | 0,6B | ventanas de 5 min | 72,3% sala / 64,9% Nixon / 87,3% teléfono | CC BY 4.0 | HuggingFace (akoopie) |
-| nvidia/parakeet-tdt-0.6b-v3 | 0,6B | no disponible | 63,8% sala / 49,3% Nixon / 82,0% teléfono | CC BY 4.0 | HuggingFace (NVIDIA) |
-| Whisper large-v3 | 1,55B | 30 s por ventana | 69,2% en conversaciones FRUS | MIT | HuggingFace (OpenAI) |
+| este modelo (v5) | 0,6B | ventanas de 5 min | 72,3% sala / 64,9% Nixon / 87,3% teléfono | CC BY 4.0 | Hugging Face (akoopie) |
+| nvidia/parakeet-tdt-0.6b-v3 | 0,6B | no disponible | 63,8% sala / 49,3% Nixon / 82,0% teléfono | CC BY 4.0 | Hugging Face (NVIDIA) |
+| Whisper large-v3 | 1,55B | 30 s por ventana | 69,2% en conversaciones FRUS | MIT | Hugging Face (OpenAI) |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ En 165 conversaciones reservadas transcritas por historiadores del Departamento 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akoopie/nixon-parakeet-tdt-0.6b-v5
+- Modelo en Hugging Face: https://huggingface.co/akoopie/nixon-parakeet-tdt-0.6b-v5
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Web del corpus (búsqueda, lectura y escucha): https://nixoncorpus.org
 - Corpus (release 1.2): https://doi.org/10.5281/zenodo.23657174

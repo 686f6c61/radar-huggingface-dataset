@@ -104,7 +104,7 @@ HarmBench-320 completo (incluye 80 comportamientos de copyright):
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AleaiactaEst1/GLM-5.3-CYBERSECURITY-FP8
+- Hugging Face: https://huggingface.co/AleaiactaEst1/GLM-5.3-CYBERSECURITY-FP8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Cuantización FP8 base: https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
 - Modelo hermano (*uncensor* general): https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8

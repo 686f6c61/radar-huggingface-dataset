@@ -72,7 +72,7 @@ Los datos de la columna de modelos comparables corresponden a la documentacion p
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-016 | 4.022.468.096 | No confirmado (un checkpoint hermano indica 32.768 tokens) | Fine-tuning por RL (GRPO con rubricas) sobre Qwen3-4B-Instruct-2507, paso 16 | Apache 2.0, con "Research use only" declarado por el autor | Repositorio HuggingFace, 0 descargas, 0 likes |
+| HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-016 | 4.022.468.096 | No confirmado (un checkpoint hermano indica 32.768 tokens) | Fine-tuning por RL (GRPO con rubricas) sobre Qwen3-4B-Instruct-2507, paso 16 | Apache 2.0, con "Research use only" declarado por el autor | Repositorio Hugging Face, 0 descargas, 0 likes |
 | Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4B | 262.144 tokens nativos segun la documentacion de Qwen | SFT + RL sobre Qwen3-4B | Apache 2.0 | Ampliamente distribuido, con cuantizaciones GGUF/AWQ/GPTQ de terceros |
 | Qwen/Qwen3-4B (base preentrenado) | ~4B | 32.768 tokens nativos, extensible | Preentrenamiento + post-entrenamiento | Apache 2.0 | Muy extendido, ecosistema de cuantizaciones maduro |
 | Gemma 3 4B IT (Google) | ~4B | 128.000 tokens | Post-entrenamiento propietario | Terminos de uso de Gemma | Ampliamente distribuido, con cuantizaciones oficiales |
@@ -94,7 +94,7 @@ Frente a estos, el checkpoint de HYU-NLP-EVAL no aporta ninguna ventaja competit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-016
+- Repositorio Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-016
 - Checkpoint hermano (OnlineRubrics, paso 013): https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-013
 - Checkpoint hermano (OnlineRubrics, paso 003): https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-003
 - Checkpoint hermano (OnlineRubrics, paso 012) en FriendliAI: https://friendli.ai/models/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-012

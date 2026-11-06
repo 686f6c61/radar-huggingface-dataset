@@ -80,7 +80,7 @@ Los datos de los modelos comparables no están disponibles en la información pr
 
 ## Enlaces
 
-- Repositorio HuggingFace (lausannequants/Inkling-Small): https://huggingface.co/lausannequants/Inkling-Small
+- Repositorio Hugging Face (lausannequants/Inkling-Small): https://huggingface.co/lausannequants/Inkling-Small
 - Modelo original (thinkingmachines/Inkling-Small): https://huggingface.co/thinkingmachines/Inkling-Small
 - Anuncio oficial: https://thinkingmachines.ai/news/inkling-small/
 - Model card oficial: https://thinkingmachines.ai/model-card/inkling-small/

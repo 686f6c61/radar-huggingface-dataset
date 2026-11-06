@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hallo3 es un modelo de animación de retratos (portrait image animation) que genera vídeo a partir de una imagen fija de una persona, una pista de audio y un prompt de texto. Lo desarrollan investigadores de la Universidad de Fudan y Baidu Inc. (Jiahao Cui, Hui Li, Yun Zhan, Hanlin Shang, Kaihui Cheng, Yuqi Ma, Shan Mu, Hang Zhou, Jingdong Wang y Siyu Zhu) y fue aceptado en CVPR 2025. La ficha que se analiza aquí, `UrNinja/hallo3`, es una resubida por parte de un tercero del repositorio canónico `fudan-generative-ai/hallo3`: el autor que aparece en HuggingFace no coincide con los autores del artículo y el repositorio acumula 0 descargas y 0 likes.
+Hallo3 es un modelo de animación de retratos (portrait image animation) que genera vídeo a partir de una imagen fija de una persona, una pista de audio y un prompt de texto. Lo desarrollan investigadores de la Universidad de Fudan y Baidu Inc. (Jiahao Cui, Hui Li, Yun Zhan, Hanlin Shang, Kaihui Cheng, Yuqi Ma, Shan Mu, Hang Zhou, Jingdong Wang y Siyu Zhu) y fue aceptado en CVPR 2025. La ficha que se analiza aquí, `UrNinja/hallo3`, es una resubida por parte de un tercero del repositorio canónico `fudan-generative-ai/hallo3`: el autor que aparece en Hugging Face no coincide con los autores del artículo y el repositorio acumula 0 descargas y 0 likes.
 
 El modelo resuelve el problema de generar vídeo realista y dinámico de una persona manteniendo su identidad, incluyendo perspectivas no frontales, objetos en movimiento alrededor del sujeto y fondos inmersivos. Se apoya en un backbone de difusión basado en transformer (DiT) preentrenado para vídeo, en concreto CogVideoX-5B-i2v, lo que lo diferencia de generaciones anteriores de Hallo basadas en U-Net. Incorpora además un VAE 3D, el codificador de texto T5-v1_1-xxl, wav2vec2-base-960h para el audio y modelos auxiliares de análisis facial (InsightFace y MediaPipe).
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo de backbone | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hallo3 | DiT sobre CogVideoX-5B-i2v | ~5 mil millones en el DiT (total del pipeline no disponible) | no disponible | MIT (segun esta resubida) | HuggingFace y GitHub |
+| Hallo3 | DiT sobre CogVideoX-5B-i2v | ~5 mil millones en el DiT (total del pipeline no disponible) | no disponible | MIT (segun esta resubida) | Hugging Face y GitHub |
 | Hallo2 (generacion anterior de la familia) | Difusion basada en U-Net | no disponible | no disponible | no disponible en la informacion proporcionada | repositorio del proyecto Fudan |
-| CogVideoX-5B-i2v | DiT para generacion de video a partir de imagen | 5 mil millones | no disponible | la del proyecto CogVideoX, no verificada aqui | HuggingFace y GitHub de THUDM |
+| CogVideoX-5B-i2v | DiT para generacion de video a partir de imagen | 5 mil millones | no disponible | la del proyecto CogVideoX, no verificada aqui | Hugging Face y GitHub de THUDM |
 | LivePortrait | Animacion de retratos basada en puntos clave, no difusion | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
 Los datos de rendimiento, calidad y latencia de estas alternativas no se han incluido en la informacion disponible, por lo que la comparativa se limita a arquitectura, licencia y disponibilidad.
@@ -89,8 +89,8 @@ Los datos de rendimiento, calidad y latencia de estas alternativas no se han inc
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/UrNinja/hallo3
-- Repositorio canonico en HuggingFace: https://huggingface.co/fudan-generative-ai/hallo3
+- Repositorio analizado en Hugging Face: https://huggingface.co/UrNinja/hallo3
+- Repositorio canonico en Hugging Face: https://huggingface.co/fudan-generative-ai/hallo3
 - Repositorio de GitHub: https://github.com/fudan-generative-vision/hallo3
 - Pagina del proyecto: https://fudan-generative-vision.github.io/hallo3/
 - Articulo en arXiv (abstract): https://arxiv.org/abs/2412.00733

@@ -63,7 +63,7 @@ Segun estos datos, Viggle-Animate es 6.1 veces mas rapido por render y 10.3 vece
 - VRAM estimada: no se especifica un requisito exacto de VRAM en la informacion disponible. Dado el tamano del modelo (33.1 B parametros) y que la comparativa se realiza en bf16, se estima que se necesitan al menos 70-80 GB de VRAM para cargar los pesos en precision completa.
 - GPU recomendadas: la comparativa de rendimiento se realizo en una NVIDIA B200. GPUs con 80 GB de VRAM, como la A100 o H100, serian adecuadas para inferencia.
 - GPU de consumo: no es probable que quepa en GPUs de consumo actuales (RTX 4090 con 24 GB, etc.) sin cuantizacion, y no se mencionan opciones de cuantizacion disponibles.
-- Opciones de despliegue: la model card menciona un script de inferencia (`python inference/sample.py`) y un espacio de HuggingFace para probarlo en el navegador. No se menciona soporte para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: la model card menciona un script de inferencia (`python inference/sample.py`) y un espacio de Hugging Face para probarlo en el navegador. No se menciona soporte para vLLM, llama.cpp, Ollama o TGI.
 - Latencia: 26 segundos por render de 124 fotogramas en una B200, con 13.6 segundos dedicados al muestreo.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ No se dispone de informacion sobre otros modelos comparables en la misma categor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Viggle/Viggle-Animate
+- Repositorio Hugging Face: https://huggingface.co/Viggle/Viggle-Animate
 - Demo en el navegador (Space): https://huggingface.co/spaces/Viggle/viggle-animate
 - Sitio web de Viggle: https://viggle.ai/
 - Herramienta de generacion de animacion: https://viggle.ai/tools/ai-animation-generator

@@ -68,7 +68,7 @@ No se dispone de comparativas con otros modelos en la información proporcionada
 
 ## Enlaces
 
-- [Modelo en HuggingFace (openEuler/ram_plus_swin_large_14m)](https://huggingface.co/openEuler/ram_plus_swin_large_14m)
+- [Modelo en Hugging Face (openEuler/ram_plus_swin_large_14m)](https://huggingface.co/openEuler/ram_plus_swin_large_14m)
 - [Modelo base original (xinyu1205/recognize-anything-plus-model)](https://huggingface.co/xinyu1205/recognize-anything-plus-model)
 - [Código fuente del modelo RAM++ (GitHub)](https://github.com/xinyu1205/recognize-anything)
 - [Artículo arXiv](https://arxiv.org/abs/2306.03514)

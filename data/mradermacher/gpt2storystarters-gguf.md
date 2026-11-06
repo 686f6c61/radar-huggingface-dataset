@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GPT2StoryStarters-GGUF es una recopilación de cuantizaciones en formato GGUF del modelo MCES10/GPT2StoryStarters, publicada por el usuario mradermacher, conocido en HuggingFace por generar versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo subyacente es un ajuste fino de GPT-2 orientado a la generación de arranques de historias (story starters), es decir, textos iniciales que sirven como semilla para la escritura creativa. Con 163.037.184 parámetros (aproximadamente 163 millones), se trata de un modelo pequeño, heredero directo de la arquitectura GPT-2 de OpenAI.
+GPT2StoryStarters-GGUF es una recopilación de cuantizaciones en formato GGUF del modelo MCES10/GPT2StoryStarters, publicada por el usuario mradermacher, conocido en Hugging Face por generar versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo subyacente es un ajuste fino de GPT-2 orientado a la generación de arranques de historias (story starters), es decir, textos iniciales que sirven como semilla para la escritura creativa. Con 163.037.184 parámetros (aproximadamente 163 millones), se trata de un modelo pequeño, heredero directo de la arquitectura GPT-2 de OpenAI.
 
 La relevancia de esta ficha es doble. Por un lado, documenta un artefacto muy específico: cuantizaciones estáticas de un modelo de nicho con apenas 7 descargas y sin licencia declarada, lo que lo convierte en un caso de estudio de los riesgos de los repositorios comunitarios. Por otro, permite evaluar si un GPT-2 ajustado sigue teniendo sentido en 2025 para tareas de generación creativa ligera, frente a alternativas mucho más capaces como los modelos de 1-3 mil millones de parámetros actuales. El contexto máximo no está documentado en la información disponible, aunque por herencia de GPT-2 se esperaría 1.024 tokens; conviene tratar este dato como no confirmado.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| GPT2StoryStarters-GGUF (este) | 163M | No disponible | No disponible | GGUF en HuggingFace | Cuantizaciones estáticas de un ajuste fino de GPT-2 para story starters |
+| GPT2StoryStarters-GGUF (este) | 163M | No disponible | No disponible | GGUF en Hugging Face | Cuantizaciones estáticas de un ajuste fino de GPT-2 para story starters |
 | GPT-2 small original | 124M | 1.024 tokens | MIT (según OpenAI) | Safetensors, GGUF comunitarios | Base genérica, sin ajuste específico para story starters |
 | GPT-2 medium | 355M | 1.024 tokens | MIT (según OpenAI) | Safetensors, GGUF comunitarios | Mayor capacidad, mayor coste, sin ajuste específico |
 | TinyStories-33M | 33M | 512-1.024 tokens (variable) | No disponible en la mayoría de variantes | Safetensors, GGUF | Entrenado específicamente en narrativa simple; alternativa muy ligera para generación de cuentos |

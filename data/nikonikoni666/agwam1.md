@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Nikonikoni666/agwam1` es un repositorio de modelo publicado en HuggingFace por el usuario Nikonikoni666. La ficha lo etiqueta como `robotics`, `world-action-model`, `openwam` y `libero`, y lo asocia a la librería `openwam` con pipeline de robótica. El acceso está restringido: requiere aceptar condiciones en HuggingFace. El repositorio ocupa 99,3 GB.
+`Nikonikoni666/agwam1` es un repositorio de modelo publicado en Hugging Face por el usuario Nikonikoni666. La ficha lo etiqueta como `robotics`, `world-action-model`, `openwam` y `libero`, y lo asocia a la librería `openwam` con pipeline de robótica. El acceso está restringido: requiere aceptar condiciones en Hugging Face. El repositorio ocupa 99,3 GB.
 
 No se ha publicado en la información disponible una descripción técnica, paper, número de parámetros, arquitectura, longitud de contexto, idiomas, formatos de pesos ni resultados de benchmarks. Por tanto, no es posible evaluar su calidad, rendimiento o idoneidad para producción con los datos aportados. Su interés actual es el de un artefacto de investigación en robótica y modelos mundo-acción, pendiente de documentación y validación externa.
 
@@ -20,7 +20,7 @@ No se ha publicado en la información disponible una descripción técnica, pape
 | Formato de pesos | no disponible; el repositorio ocupa 99,3 GB pero no se especifica safetensors, GGUF ni otro formato |
 | Pipeline | robotics |
 | Librería | openwam |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Descargas / me gusta | 0 / 0 |
 | Tamaño del repositorio | 99,3 GB |
 
@@ -68,14 +68,14 @@ No se dispone de información suficiente para identificar modelos comparables de
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agwam1 | no disponible | no disponible | GPL-2.0 | restringido en HuggingFace |
+| agwam1 | no disponible | no disponible | GPL-2.0 | restringido en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - No hay ficha técnica, paper ni documentación de arquitectura, entrenamiento o evaluación; el modelo no es evaluable en profundidad con la información disponible.
 - El repositorio tiene 0 descargas y 0 me gusta, lo que indica ausencia de validación comunitaria visible, aunque no determina por sí solo la calidad del modelo.
-- El acceso es restringido: es necesario aceptar condiciones en HuggingFace antes de descargar o usar los pesos.
+- El acceso es restringido: es necesario aceptar condiciones en Hugging Face antes de descargar o usar los pesos.
 - La licencia GPL-2.0 permite uso comercial, pero impone obligaciones de copyleft al distribuir software derivado; conviene revisar la compatibilidad con el producto y el modelo de distribución.
 - El tamaño del repositorio, 99,3 GB, exige planificación de almacenamiento, ancho de banda y posible infraestructura de inferencia.
 - No se han publicado benchmarks, idiomas soportados, requisitos de hardware ni latencias.
@@ -84,5 +84,5 @@ No se dispone de información suficiente para identificar modelos comparables de
 
 ## Enlaces
 
-- [HuggingFace: Nikonikoni666/agwam1](https://huggingface.co/Nikonikoni666/agwam1)
+- [Hugging Face: Nikonikoni666/agwam1](https://huggingface.co/Nikonikoni666/agwam1)
 - No se han encontrado otros enlaces relevantes en la búsqueda web proporcionada.

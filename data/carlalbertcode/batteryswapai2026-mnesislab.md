@@ -71,6 +71,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CarlAlbertCode/BatterySwapAI2026-MnesisLab
+- Repositorio Hugging Face: https://huggingface.co/CarlAlbertCode/BatterySwapAI2026-MnesisLab
 - Modelo de ejemplo de la competición: https://huggingface.co/batteryswaichallenge/BatterySwapAI2026-Example
 - FAQ de la competición BatterySwapAI 2026: https://www.nora.ai/competitions/batteryswapai/batteryswapai-faq.html

@@ -6,7 +6,7 @@ Vietnam Society Sim es un adaptador LoRA publicado por hong-hai-le sobre el mode
 
 El modelo parte de la familia Qwen3.5, que incorpora capacidades multimodales de entrada (image-text-to-text) y está pensado para generación de texto conversacional. El adaptador se entrenó presumiblemente sobre el dataset nvidia/Nemotron-Personas-Vietnam, que aporta perfiles de personas sintéticas con atributos demográficos y de opinión en vietnamita. El resultado es un modelo pequeño, desplegable en hardware de consumo, que prioriza la coherencia de persona y la fidelidad cultural sobre el rendimiento generalista.
 
-Su relevancia actual radica en la combinación de tres factores: un tamaño reducido (2B parámetros) que permite inferencia local, una licencia MIT permisiva para uso comercial y una especialización vertical poco frecuente (simulación de encuestas en un idioma de recursos medios como el vietnamita). El acceso al repositorio está restringido y requiere aceptar las condiciones en HuggingFace antes de la descarga.
+Su relevancia actual radica en la combinación de tres factores: un tamaño reducido (2B parámetros) que permite inferencia local, una licencia MIT permisiva para uso comercial y una especialización vertical poco frecuente (simulación de encuestas en un idioma de recursos medios como el vietnamita). El acceso al repositorio está restringido y requiere aceptar las condiciones en Hugging Face antes de la descarga.
 
 ## Especificaciones técnicas
 
@@ -81,12 +81,12 @@ No se dispone de información sobre otros adaptadores de simulación de personas
 - Al ser un adaptador LoRA sobre un modelo de 2B parámetros, su capacidad de razonamiento general y de conocimiento factual es limitada en comparación con modelos de mayor tamaño.
 - Riesgo de alucinación en la generación de respuestas de encuesta: las personas sintéticas pueden producir opiniones plausibles pero no fundamentadas en datos reales, por lo que no deben presentarse como resultados de encuestas reales.
 - Los sesgos presentes en el dataset Nemotron-Personas-Vietnam y en el modelo base pueden propagarse a las respuestas generadas; no se documentan evaluaciones de sesgo.
-- El acceso al repositorio está restringido y requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la automatización de descargas.
+- El acceso al repositorio está restringido y requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la automatización de descargas.
 - No se documentan la longitud de contexto, la configuración del LoRA ni los detalles de entrenamiento, lo que dificulta evaluar su robustez en producción.
 - La licencia MIT del adaptador no exime de verificar la licencia del modelo base Qwen3.5-2B, que puede imponer condiciones adicionales para uso comercial.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hong-hai-le/vietnam-society-sim
+- Modelo en Hugging Face: https://huggingface.co/hong-hai-le/vietnam-society-sim
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/Nemotron-Personas-Vietnam

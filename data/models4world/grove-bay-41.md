@@ -38,7 +38,7 @@ No se proporcionan datos sobre el dataset de entrenamiento, el número de tokens
 - **Prototipado de asistentes conversacionales**: al ser un adaptador LoRA sobre un modelo base, se puede integrar en pipelines de chat para experimentar con la generación de respuestas en entornos de desarrollo, siempre que el modelo base esté disponible.
 - **Investigación sobre adaptación eficiente**: el repositorio sirve como caso de estudio para analizar el impacto de LoRA en un modelo base no documentado, aunque la falta de metadatos limita su utilidad como referencia reproducible.
 - **Evaluación de modelos base opacos**: permite comparar el comportamiento del modelo base `maple-signal-64` con y sin el adaptador, útil para caracterizar el efecto del fine-tuning en tareas de generación.
-- **Integración en pipelines de generación de texto**: al ser un adaptador PEFT, puede cargarse con la librería `transformers` y `peft` en un pipeline estándar de HuggingFace para tareas de texto.
+- **Integración en pipelines de generación de texto**: al ser un adaptador PEFT, puede cargarse con la librería `transformers` y `peft` en un pipeline estándar de Hugging Face para tareas de texto.
 - **Experimentos de composición de adaptadores**: dado que es un LoRA, podría combinarse con otros adaptadores sobre el mismo modelo base, aunque no se ha documentado su compatibilidad.
 - **Pruebas de inferencia en entornos con restricciones de VRAM**: al ser un adaptador, el uso de memoria adicional es menor que reentrenar el modelo completo, aunque el tamaño del repo (11.2 GB) sugiere que el adaptador no es trivial.
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/models4world/grove-bay-41
+- Hugging Face del modelo: https://huggingface.co/models4world/grove-bay-41
 - Perfil del autor: https://huggingface.co/models4world
 - Modelos del autor: https://huggingface.co/models4world/models
 - Paper de referencia de LoRA (arxiv:1910.09700): https://arxiv.org/abs/1910.09700

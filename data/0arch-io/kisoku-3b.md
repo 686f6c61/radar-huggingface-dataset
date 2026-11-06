@@ -93,7 +93,7 @@ La diferencia práctica no está en el tamaño sino en la madurez: frente a Llam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0arch-io/kisoku-3b
+- Modelo en Hugging Face: https://huggingface.co/0arch-io/kisoku-3b
 - Sucesor, Kisoku 1.6B: https://huggingface.co/0arch-io/kisoku-1.6b
 - Página del proyecto (log de entrenamiento, gráficas de benchmark e instrucciones de ejecución): https://0arch.io/kisoku
 - Sitio del autor, 0ARCH: https://0arch.io

@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento del modelo ni de comparaciones publicadas 
 
 ## Enlaces
 
-- Repositorio HuggingFace del artefacto: https://huggingface.co/nchapman/Swift-1.5-Qwen3.8-27b-W4A16-GPTQ
+- Repositorio Hugging Face del artefacto: https://huggingface.co/nchapman/Swift-1.5-Qwen3.8-27b-W4A16-GPTQ
 - Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Licencia swift-open-license-1.0: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b/blob/b4c84d42903a8646b25857eb2827288d92ed85a4/LICENSE
 - Dataset de calibración: https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-SFT-Data

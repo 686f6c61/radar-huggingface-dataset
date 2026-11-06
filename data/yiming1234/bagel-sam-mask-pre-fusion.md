@@ -104,7 +104,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yiming1234/bagel-sam-mask-pre-fusion
+- Modelo en Hugging Face: https://huggingface.co/Yiming1234/bagel-sam-mask-pre-fusion
 - Modelo base: https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT
 - Conjunto de evaluacion: https://huggingface.co/datasets/Yiming1234/bagel-sam-eval-200
 - Repositorio de inferencia: https://github.com/plzdoo/bagel-sam

@@ -96,7 +96,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Anansi-35B-A3B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Anansi-35B-A3B-i1-GGUF
 - Modelo base: https://huggingface.co/BlueNipples/Anansi-35B-A3B
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/Anansi-35B-A3B-GGUF
 - Fichero imatrix: https://huggingface.co/mradermacher/Anansi-35B-A3B-i1-GGUF/resolve/main/Anansi-35B-A3B.imatrix.gguf

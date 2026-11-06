@@ -74,9 +74,9 @@ No se dispone de comparativas detalladas con otros modelos en la información pr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TEMPO (este modelo) | 8,27 B | No disponible | nvidia-research-only | HuggingFace |
-| Audio Flamingo 3 (base) | 8,27 B | No disponible | nvidia-research-only | HuggingFace |
-| Qwen2-Audio | 7,6 B | No disponible | Apache 2.0 | HuggingFace |
+| TEMPO (este modelo) | 8,27 B | No disponible | nvidia-research-only | Hugging Face |
+| Audio Flamingo 3 (base) | 8,27 B | No disponible | nvidia-research-only | Hugging Face |
+| Qwen2-Audio | 7,6 B | No disponible | Apache 2.0 | Hugging Face |
 
 El modelo se distingue de su base (Audio Flamingo 3) por el entrenamiento específico en tareas temporales. Comparado con Qwen2-Audio, que tiene una licencia más permisiva, TEMPO ofrece capacidades de timestamping más precisas pero con restricciones de uso académico exclusivo.
 
@@ -92,7 +92,7 @@ El modelo se distingue de su base (Audio Flamingo 3) por el entrenamiento espec�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kaousheik/tempo-sft-stage1-2
+- Modelo en Hugging Face: https://huggingface.co/Kaousheik/tempo-sft-stage1-2
 - Dataset de entrenamiento: https://huggingface.co/datasets/Kaousheik/tempo
 - Modelo base Audio Flamingo 3: https://huggingface.co/nvidia/audio-flamingo-3
 - Página personal del autor: https://kaousheik-26.github.io/

@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Stems | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Metronitor HT-Demucs ONNX (este repo) | htdemucs (Hybrid Transformer Demucs) | 4 (drums, bass, other, vocals) | ONNX fp16 | MIT | HuggingFace, espejo |
-| StemSplitio/htdemucs-onnx (upstream) | htdemucs | 4 | ONNX | MIT | HuggingFace, repositorio original |
+| Metronitor HT-Demucs ONNX (este repo) | htdemucs (Hybrid Transformer Demucs) | 4 (drums, bass, other, vocals) | ONNX fp16 | MIT | Hugging Face, espejo |
+| StemSplitio/htdemucs-onnx (upstream) | htdemucs | 4 | ONNX | MIT | Hugging Face, repositorio original |
 | facebookresearch/demucs (original) | htdemucs | 4 | PyTorch | MIT | GitHub, pesos oficiales |
 
 La diferencia principal entre este repositorio y el upstream es únicamente de alojamiento: el contenido es idéntico byte a byte (mismo SHA-256). Frente al modelo original de Meta, la diferencia es el formato: ONNX fp16 para inferencia portable frente a pesos PyTorch.
@@ -84,7 +84,7 @@ La diferencia principal entre este repositorio y el upstream es únicamente de a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/t4t2k1m/metronitor-htdemucs-onnx
+- Repositorio Hugging Face: https://huggingface.co/t4t2k1m/metronitor-htdemucs-onnx
 - Repositorio upstream ONNX: https://huggingface.co/StemSplitio/htdemucs-onnx
 - Código de exportación ONNX: https://github.com/StemSplit/demucs-onnx
 - Modelo original Demucs: https://github.com/facebookresearch/demucs

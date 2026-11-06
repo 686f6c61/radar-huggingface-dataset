@@ -107,7 +107,7 @@ La informacion proporcionada solo permite comparar el paquete RKNN con su modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shadowtec/Audio8-ASR-0.1B-RK3576-RKNN
+- Repositorio en Hugging Face: https://huggingface.co/shadowtec/Audio8-ASR-0.1B-RK3576-RKNN
 - Modelo base: https://huggingface.co/Edge0/Audio8-ASR-0.1B
 - Archivo fuente de reproducibilidad en GitHub: no disponible (la referencia aparece truncada en la informacion proporcionada)
 - Documentacion de benchmark y aceptacion: `docs/benchmark-and-acceptance.zh-CN.md` dentro del repositorio (solo en chino)

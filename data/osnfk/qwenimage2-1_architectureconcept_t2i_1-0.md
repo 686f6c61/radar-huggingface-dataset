@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QwenImage2.1_ArchitectureConcept_T2I_1.0 (este adaptador) | No disponible (repo de 0,2 GB) | No disponible | Sin benchmarks publicados | qwen-research | HuggingFace, 0 descargas |
-| Qwen/Qwen-Image-2.1 (modelo base sin LoRA) | No disponible en la informacion proporcionada | No disponible | No disponible | Qwen Research (segun el adaptador) | HuggingFace |
+| QwenImage2.1_ArchitectureConcept_T2I_1.0 (este adaptador) | No disponible (repo de 0,2 GB) | No disponible | Sin benchmarks publicados | qwen-research | Hugging Face, 0 descargas |
+| Qwen/Qwen-Image-2.1 (modelo base sin LoRA) | No disponible en la informacion proporcionada | No disponible | No disponible | Qwen Research (segun el adaptador) | Hugging Face |
 | Otros LoRA de concepto arquitectonico para Qwen-Image-2.1 | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas verificables en la informacion disponible |
 | LoRA de arquitectura para otros modelos de difusion (p. ej. familias Flux o SDXL) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -91,7 +91,7 @@ La busqueda web realizada no devolvio resultados relacionados con este modelo ni
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/OSNFK/QwenImage2.1_ArchitectureConcept_T2I_1.0
+- Pagina del modelo en Hugging Face: https://huggingface.co/OSNFK/QwenImage2.1_ArchitectureConcept_T2I_1.0
 - Repositorio de ficheros (pesos y workflow): https://huggingface.co/OSNFK/QwenImage2.1_ArchitectureConcept_T2I_1.0/tree/main
 - Modelo base Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Workflow de ComfyUI incluido en el repositorio: ComfyUI_Workflow_QwenImage2.1_ArchitectureConcept_T2I_1.0.json (ruta relativa dentro del repositorio)

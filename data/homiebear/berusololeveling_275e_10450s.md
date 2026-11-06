@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Homiebear/BeruSoloLeveling_275e_10450s es un repositorio publicado en HuggingFace por el usuario Homiebear bajo licencia openrail. El repositorio no incluye model card descriptiva (el README se limita a la declaracion de licencia), no declara pipeline, idiomas soportados ni arquitectura, y acumula 0 descargas y 0 likes desde su creacion el 12 de septiembre de 2026.
+Homiebear/BeruSoloLeveling_275e_10450s es un repositorio publicado en Hugging Face por el usuario Homiebear bajo licencia openrail. El repositorio no incluye model card descriptiva (el README se limita a la declaracion de licencia), no declara pipeline, idiomas soportados ni arquitectura, y acumula 0 descargas y 0 likes desde su creacion el 12 de septiembre de 2026.
 
 El unico dato cuantitativo disponible es el tamano del repositorio, 0,2 GB, muy inferior al de un modelo de lenguaje completo y compatible con un adaptador (LoRA, LyCORIS o similar) o con un checkpoint pequeno de un modelo generativo. La nomenclatura del identificador, del tipo `275e_10450s`, sigue la convencion habitual en herramientas de entrenamiento de adaptadores para difusion (por ejemplo kohya-ss), donde `e` indica epocas y `s` pasos. Se trata, por tanto, de una interpretacion plausible del nombre y no de un dato confirmado por el autor.
 
@@ -84,7 +84,7 @@ No disponible. No es posible establecer comparaciones fiables porque se desconoc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Homiebear/BeruSoloLeveling_275e_10450s
+- Repositorio en Hugging Face: https://huggingface.co/Homiebear/BeruSoloLeveling_275e_10450s
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

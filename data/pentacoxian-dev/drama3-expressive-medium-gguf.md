@@ -88,7 +88,7 @@ No se dispone de datos comparativos cuantitativos publicados entre este modelo y
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pentacoxian-dev/drama3-expressive-medium-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/pentacoxian-dev/drama3-expressive-medium-GGUF
 - Modelo base (Fish Audio Drama 3): https://huggingface.co/fishaudio/drama-3
 - Runtime audio.cpp: https://github.com/0xShug0/audio.cpp
 - Licencia: disponible en el archivo LICENSE del repositorio (fish-audio-community-license-v1.0)

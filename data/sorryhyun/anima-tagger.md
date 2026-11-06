@@ -77,7 +77,7 @@ No se dispone de comparativas publicadas con otros taggers de anime como WD Tagg
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sorryhyun/anima-tagger
+- Hugging Face: https://huggingface.co/sorryhyun/anima-tagger
 - Repositorio GitHub anima_lora: https://github.com/sorryhyun/anima_lora
 - README de comfyui-anima-tagger: https://github.com/sorryhyun/anima_lora/blob/main/custom_nodes/comfyui-anima-tagger/README.md
 - Página en AI Market Cap: https://aimarketcap.tech/models/sorryhyun-anima-tagger

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "adibvafa/bioreason-pro-v2-9b-bntok-rl",
+  "slug": "adibvafa-bioreason-pro-v2-9b-bntok-rl",
+  "author": "adibvafa",
+  "url": "https://huggingface.co/adibvafa/bioreason-pro-v2-9b-bntok-rl",
+  "created_at": "2026-11-03T00:01:48.000Z",
+  "updated_at": "2026-11-05T23:23:51.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 21263161903,
+  "storage_human": "21.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adibvafa/bioreason-pro-v2-9b-bntok - Hugging Face",
+      "url": "https://huggingface.co/adibvafa/bioreason-pro-v2-9b-bntok",
+      "snippet": "BioReason-Pro v2, 4B backbone, trained without residue features, epoch 07 ..."
+    },
+    {
+      "title": "adibvafa/bioreason-pro-v2-9b-bntok-rl - Hugging Face",
+      "url": "https://huggingface.co/adibvafa/bioreason-pro-v2-9b-bntok-rl",
+      "snippet": "BioReason-Pro v3, 9B backbone, after reinforcement learning: adibvafa/bioreason-pro-v2-9b-bntok plus one epoch (90 steps) of GRPO on 2,905 proteins of the v2 corpus's SFT validation split, rewarded by an LLM judge (kimi-k3, rubric v6), with the InterProScan block in half the prompts. The LoRA (r64 ..."
+    }
+  ]
+}

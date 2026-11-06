@@ -101,7 +101,7 @@ Los baselines publicados se citan tal como aparecen en la model card y en el art
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/getSTEAV/system-one-fdb-ccfraud
+- Modelo en Hugging Face: https://huggingface.co/getSTEAV/system-one-fdb-ccfraud
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - Revision fijada del modelo base: 7b928d828b7b
 - Fraud Dataset Benchmark (repositorio): https://github.com/amazon-science/fraud-dataset-benchmark

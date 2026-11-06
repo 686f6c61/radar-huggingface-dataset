@@ -81,7 +81,7 @@ La comparación relevante no es de precisión (no hay datos publicados en este r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Blaize-AI/ConvNeXtV1s_ImageNet
+- Hugging Face: https://huggingface.co/Blaize-AI/ConvNeXtV1s_ImageNet
 - Repositorio original de ConvNeXt (Meta): https://github.com/facebookresearch/ConvNeXt
 - Pesos preentrenados originales: https://github.com/facebookresearch/ConvNeXt
 - ImageNet: https://www.image-net.org/

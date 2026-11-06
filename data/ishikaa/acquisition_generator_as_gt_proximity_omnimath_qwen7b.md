@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ishikaa/acquisition_generator_AS_GT_proximity_omnimath_qwen7b` es un modelo de generacion de texto publicado en HuggingFace por el usuario `ishikaa`, con 7.615.616.512 parametros reales confirmados a partir de los pesos en safetensors. La etiqueta de arquitectura del repositorio es `qwen2`, por lo que todo apunta a un ajuste fino (fine-tuning) sobre la familia Qwen2 de 7B, aunque la model card no confirma la procedencia exacta ni el modelo base concreto. El repositorio ocupa 30,5 GB, lo que equivale a unos 4 bytes por parametro y sugiere que los pesos almacenados estan en fp32.
+`ishikaa/acquisition_generator_AS_GT_proximity_omnimath_qwen7b` es un modelo de generacion de texto publicado en Hugging Face por el usuario `ishikaa`, con 7.615.616.512 parametros reales confirmados a partir de los pesos en safetensors. La etiqueta de arquitectura del repositorio es `qwen2`, por lo que todo apunta a un ajuste fino (fine-tuning) sobre la familia Qwen2 de 7B, aunque la model card no confirma la procedencia exacta ni el modelo base concreto. El repositorio ocupa 30,5 GB, lo que equivale a unos 4 bytes por parametro y sugiere que los pesos almacenados estan en fp32.
 
-El problema concreto que resuelve no esta documentado. El identificador del modelo sugiere un generador de funciones de adquisicion ("acquisition generator") orientado a tecnicas de busqueda activa o aprendizaje activo, con variantes de proximidad a ground truth ("AS_GT_proximity") y entrenamiento sobre datos de matematicas ("omnimath"). Se trata, en cualquier caso, de una interpretacion del nombre y no de un dato confirmado: la model card es la plantilla automatica de HuggingFace y todos sus campos figuran como "[More Information Needed]".
+El problema concreto que resuelve no esta documentado. El identificador del modelo sugiere un generador de funciones de adquisicion ("acquisition generator") orientado a tecnicas de busqueda activa o aprendizaje activo, con variantes de proximidad a ground truth ("AS_GT_proximity") y entrenamiento sobre datos de matematicas ("omnimath"). Se trata, en cualquier caso, de una interpretacion del nombre y no de un dato confirmado: la model card es la plantilla automatica de Hugging Face y todos sus campos figuran como "[More Information Needed]".
 
 Su relevancia actual es limitada y debe enmarcarse con cautela: cero descargas y cero "likes" en el momento de la consulta, ausencia de licencia declarada, ausencia de resultados de evaluacion y ausencia de documentacion de entrenamiento. Es un artefacto de investigacion sin validacion publica, util unicamente si se conoce el contexto del proyecto que lo genero.
 
@@ -79,7 +79,7 @@ Cualquier comparacion de rendimiento entre estos modelos y el checkpoint analiza
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla automatica de HuggingFace, sin descripcion, usos previstos ni limitaciones declaradas.
+- Ausencia total de documentacion: la model card es la plantilla automatica de Hugging Face, sin descripcion, usos previstos ni limitaciones declaradas.
 - Licencia no declarada: no se puede asumir uso comercial permitido. Al derivar probablemente de Qwen2 (Apache-2.0), persistirian las obligaciones de atribucion, pero la falta de declaracion explicita es un riesgo juridico que debe resolverse con el autor antes de cualquier uso productivo.
 - Riesgo de alucinacion: desconocido en magnitud, pero inherente a cualquier modelo generativo. Al no haber etapa de alineamiento documentada, cabe esperar una adherencia a instrucciones y un filtrado de contenido peores que en modelos con RLHF o DPO.
 - Sesgos conocidos: no documentados. Si el ajuste se realizo sobre un corpus de matematicas, es probable un sesgo de dominio y un rendimiento pobre fuera de ese ambito.
@@ -93,7 +93,7 @@ Cualquier comparacion de rendimiento entre estos modelos y el checkpoint analiza
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_GT_proximity_omnimath_qwen7b
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_GT_proximity_omnimath_qwen7b
 - Referencia citada en las etiquetas del repositorio (metodologia de estimacion de emisiones, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental enlazada en la plantilla de la model card: https://mlco2.github.io/impact
 - Resultados de la busqueda web: no se ha encontrado ninguna fuente relevante sobre este modelo. Las referencias devueltas corresponden a la pagina de producto de ChatGPT y a articulos genericos sobre OpenAI, sin relacion con el checkpoint analizado. No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados.

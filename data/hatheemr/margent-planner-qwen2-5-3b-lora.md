@@ -76,11 +76,11 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - Riesgo de alucinación: como cualquier modelo de lenguaje, puede generar semillas de competidores o preguntas que no correspondan a entidades reales, aunque el entrenamiento reduce este riesgo en el dominio objetivo.
 - Limitaciones de idioma: solo se declara soporte para inglés; no se ha evaluado su comportamiento en otros idiomas.
 - Dependencia del modelo base: el adaptador requiere cargar el modelo Qwen2.5-3B-Instruct en 4 bits, lo que implica una dependencia de la infraestructura de Unsloth y bitsandbytes.
-- Sin garantías de producción: el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido ampliamente probado en entornos reales. Se recomienda validación adicional antes de su uso en producción.
+- Sin garantías de producción: el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido ampliamente probado en entornos reales. Se recomienda validación adicional antes de su uso en producción.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hatheemr/margent-planner-qwen2.5-3b-lora
+- Repositorio Hugging Face: https://huggingface.co/hatheemr/margent-planner-qwen2.5-3b-lora
 - Proyecto MARGENT (GitHub): https://github.com/hatheem-r/project-MARGENT
 - Modelo base Qwen2.5-3B: https://huggingface.co/Qwen/Qwen2.5-3B
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

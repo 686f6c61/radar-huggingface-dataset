@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cohere-AR/cohere-transcribe-ar-soup-v8e70 es un modelo de reconocimiento automático del habla (ASR) publicado en HuggingFace por la organización Cohere-AR, con pipeline `automatic-speech-recognition` y arquitectura basada en transformers. El modelo está especializado en árabe e inglés, con soporte explícito de code-switching (alternancia de idiomas dentro de una misma emisión) y orientado a audio telefónico. Cuenta con aproximadamente 2.065 millones de parámetros (2,07 B) en formato safetensors y un repositorio de 4,1 GB.
+Cohere-AR/cohere-transcribe-ar-soup-v8e70 es un modelo de reconocimiento automático del habla (ASR) publicado en Hugging Face por la organización Cohere-AR, con pipeline `automatic-speech-recognition` y arquitectura basada en transformers. El modelo está especializado en árabe e inglés, con soporte explícito de code-switching (alternancia de idiomas dentro de una misma emisión) y orientado a audio telefónico. Cuenta con aproximadamente 2.065 millones de parámetros (2,07 B) en formato safetensors y un repositorio de 4,1 GB.
 
 El modelo deriva de `Cohere-AR/cohere-transcribe-ar-rl-v8enc`, según el campo `base_model` de su ficha, lo que sugiere un proceso de ajuste fino o destilación a partir de una variante previa entrenada con refuerzo (el sufijo `rl` apunta a reinforcement learning). La nomenclatura `soup-v8e70` sugiere una fusión de pesos (model soup) sobre una versión v8, aunque no se dispone de documentación oficial que lo confirme.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su enfoque vertical: ASR para árabe e in
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 | Modelo base | Cohere-AR/cohere-transcribe-ar-rl-v8enc |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamaño del repositorio | 4,1 GB |
 | Librería | transformers |
 | Pipeline | automatic-speech-recognition |
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - En cuantización INT8: alrededor de 2 GB de pesos, aunque no se publican checkpoints cuantizados oficiales.
 - GPU recomendadas: NVIDIA A10G, L4, A100 o H100 para despliegue en servidor; RTX 4090/3090 para inferencia local.
 - Cabe en GPU de consumo: sí, previsiblemente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090, siempre que se gestione el tamaño de lote de audio.
-- Opciones de despliegue: `transformers` (librería nativa), HuggingFace Inference Endpoints (tag `endpoints_compatible`); no se confirma soporte de vLLM, llama.cpp, Ollama ni TGI para este checkpoint concreto.
+- Opciones de despliegue: `transformers` (librería nativa), Hugging Face Inference Endpoints (tag `endpoints_compatible`); no se confirma soporte de vLLM, llama.cpp, Ollama ni TGI para este checkpoint concreto.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -79,17 +79,17 @@ La comparativa se ofrece a título orientativo por categoría (ASR de tamaño me
 
 - Información pública muy escasa: sin model card detallada, sin benchmarks y sin documentación de entrenamiento; evaluar en producción requiere validación propia.
 - Licencia no especificada: no se puede asumir uso comercial permitido; es imprescindible verificar las condiciones tras aceptar el acceso gated.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la distribución.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la distribución.
 - Cobertura lingüística limitada a árabe e inglés; no hay evidencia de otros idiomas ni de variantes dialectales concretas.
 - Riesgo de alucinación en ASR: posibles transcripciones inventadas en segmentos con ruido extremo, silencios o audio musical; conviene aplicar detección de actividad de voz y umbrales de confianza.
 - Sesgos potenciales derivados del corpus telefónico de entrenamiento (acentos, géneros, edades y dialectos sobrerrepresentados), no documentados.
 - Sin datos de latencia ni throughput: no se puede garantizar cumplimiento de SLA en tiempo real sin pruebas propias.
 - El modelo base (`rl-v8enc`) y el proceso de fusión (`soup-v8e70`) no están documentados; el comportamiento puede diferir del checkpoint original.
-- Fecha de creación en HuggingFace (2026-11-02) y ausencia de descargas/likes sugieren un checkpoint reciente y sin validación comunitaria.
+- Fecha de creación en Hugging Face (2026-11-02) y ausencia de descargas/likes sugieren un checkpoint reciente y sin validación comunitaria.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-soup-v8e70
+- Hugging Face: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-soup-v8e70
 - Modelo base: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-rl-v8enc
 - Cohere (empresa): https://cohere.com/
 - Cohere en Wikipedia: https://en.wikipedia.org/wiki/Cohere

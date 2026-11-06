@@ -72,7 +72,7 @@ El modelo base Qwen2.5-0.5B-Instruct está disponible en Apache 2.0, mientras qu
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/GMorgulis/Qwen2.5-0.5B-Instruct-cat-latin-alpha32.42)
+- [Hugging Face del modelo](https://huggingface.co/GMorgulis/Qwen2.5-0.5B-Instruct-cat-latin-alpha32.42)
 - [Modelo base Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
 - [Cuantiaciones GGUF del modelo base](https://huggingface.co/QuantFactory/Qwen2.5-0.5B-Instruct-GGUF)
 - [Página de Qwen2.5 en ModelScope](https://www.modelscope.cn/models/qwen/Qwen2.5-0.5B-Instruct)

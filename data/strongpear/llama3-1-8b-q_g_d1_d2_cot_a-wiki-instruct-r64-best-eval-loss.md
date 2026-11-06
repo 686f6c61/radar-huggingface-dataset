@@ -75,7 +75,7 @@ No se dispone de información sobre modelos comparables específicos. El autor s
 
 ## Enlaces
 
-- [HuggingFace: strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-WIKI-Instruct-r64-best-eval-loss](https://huggingface.co/strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-WIKI-Instruct-r64-best-eval-loss)
+- [Hugging Face: strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-WIKI-Instruct-r64-best-eval-loss](https://huggingface.co/strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-WIKI-Instruct-r64-best-eval-loss)
 - [Modelo base: meta-llama/Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B)
 - [Página de Llama 3 de Meta](https://developer.meta.com/ai/models/llama-3/)
 - [Adaptador similar del mismo autor: Llama3.1-8B-QA_CoT-MEDICAL-Instruct-r64](https://huggingface.co/strongpear/Llama3.1-8B-QA_CoT-MEDICAL-Instruct-r64)

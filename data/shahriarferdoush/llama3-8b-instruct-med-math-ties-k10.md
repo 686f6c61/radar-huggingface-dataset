@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ShahriarFerdoush/llama3-8b-instruct-med-math-ties-k10` es un checkpoint de 8.030.261.248 parámetros publicado en HuggingFace por el usuario ShahriarFerdoush, con pipeline `text-generation` y pesos en `safetensors` (repositorio de 16,1 GB). Por el identificador y por el resto de publicaciones del mismo autor (variantes `med-ties-k10`, `med-obf-emb-ties-emb-merged-k10`, `math-ties-k10`), todo apunta a un modelo resultante de la fusión de los adaptadores o ajustes finos de Llama 3 8B Instruct en los dominios médico y matemático, combinados mediante la técnica TIES con retención top-k del 10 % de los parámetros. Esta interpretación se deduce del nombre y no está confirmada en ninguna documentación del autor.
+`ShahriarFerdoush/llama3-8b-instruct-med-math-ties-k10` es un checkpoint de 8.030.261.248 parámetros publicado en Hugging Face por el usuario ShahriarFerdoush, con pipeline `text-generation` y pesos en `safetensors` (repositorio de 16,1 GB). Por el identificador y por el resto de publicaciones del mismo autor (variantes `med-ties-k10`, `med-obf-emb-ties-emb-merged-k10`, `math-ties-k10`), todo apunta a un modelo resultante de la fusión de los adaptadores o ajustes finos de Llama 3 8B Instruct en los dominios médico y matemático, combinados mediante la técnica TIES con retención top-k del 10 % de los parámetros. Esta interpretación se deduce del nombre y no está confirmada en ninguna documentación del autor.
 
-El interés del modelo es acotado y hay que decirlo con claridad: la model card es la plantilla automática de HuggingFace, sin una sola sección completada (`[More Information Needed]` en todas ellas), sin licencia declarada, sin idiomas declarados, sin datos de entrenamiento, sin evaluación y con 0 descargas y 0 likes en el momento de la consulta. No es, por tanto, un modelo recomendable para producción sin una validación previa por parte de quien lo vaya a usar.
+El interés del modelo es acotado y hay que decirlo con claridad: la model card es la plantilla automática de Hugging Face, sin una sola sección completada (`[More Information Needed]` en todas ellas), sin licencia declarada, sin idiomas declarados, sin datos de entrenamiento, sin evaluación y con 0 descargas y 0 likes en el momento de la consulta. No es, por tanto, un modelo recomendable para producción sin una validación previa por parte de quien lo vaya a usar.
 
 Su utilidad potencial está en experimentar con mezcla de capacidades (razonamiento cuantitativo y conocimiento biomédico) sobre una base Llama 3 8B Instruct, que aporta instrucción, formato conversacional y tool calling heredados. Cualquier uso en dominio médico debe tratarse como material de investigación, nunca como fuente de decisión clínica.
 
@@ -18,7 +18,7 @@ Su utilidad potencial está en experimentar con mezcla de capacidades (razonamie
 | Longitud de contexto | no disponible en la información proporcionada; el modelo base Llama 3 8B Instruct soporta 8.192 tokens |
 | Tipos de cuantizacion | no disponibles en el repositorio (solo safetensors, presumiblemente bf16/fp16 dado el tamaño de 16,1 GB); no se publican GGUF ni GPTQ/AWQ |
 | Idiomas soportados | no disponible; el modelo base declara oficialmente inglés, alemán, francés, italiano, portugués, hindi, español y tailandés |
-| Licencia | no disponible en los metadatos de HuggingFace; al derivar de Llama 3 es previsible que herede la Meta Llama 3 Community License, pero no está confirmado |
+| Licencia | no disponible en los metadatos de Hugging Face; al derivar de Llama 3 es previsible que herede la Meta Llama 3 Community License, pero no está confirmado |
 | Formato de pesos | safetensors (librería `transformers`) |
 
 ## Arquitectura y entrenamiento
@@ -66,11 +66,11 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`llama3-8b-instruct-med-math-ties-k10`) | 8,03 B | no disponible (base: 8.192) | no disponible | no disponible | HuggingFace, 0 descargas |
-| Llama 3 8B Instruct (Meta) | 8,03 B | 8.192 | Amplia batería publicada por Meta | Meta Llama 3 Community License | HuggingFace oficial, muy extendido |
-| Mistral 7B Instruct v0.3 | 7,24 B | 32.768 | Publicado por Mistral | Apache 2.0 | HuggingFace, muy extendido |
-| Qwen2.5 7B Instruct | 7,62 B | 131.072 | Publicado por Alibaba | Apache 2.0 (mayoría de variantes) | HuggingFace, muy extendido |
-| Meditron 7B / 70B | 7 B / 70 B | 4.096 / 4.096 | Publicado en el paper de EPFL | Llama 2 License | HuggingFace |
+| Este modelo (`llama3-8b-instruct-med-math-ties-k10`) | 8,03 B | no disponible (base: 8.192) | no disponible | no disponible | Hugging Face, 0 descargas |
+| Llama 3 8B Instruct (Meta) | 8,03 B | 8.192 | Amplia batería publicada por Meta | Meta Llama 3 Community License | Hugging Face oficial, muy extendido |
+| Mistral 7B Instruct v0.3 | 7,24 B | 32.768 | Publicado por Mistral | Apache 2.0 | Hugging Face, muy extendido |
+| Qwen2.5 7B Instruct | 7,62 B | 131.072 | Publicado por Alibaba | Apache 2.0 (mayoría de variantes) | Hugging Face, muy extendido |
+| Meditron 7B / 70B | 7 B / 70 B | 4.096 / 4.096 | Publicado en el paper de EPFL | Llama 2 License | Hugging Face |
 
 Frente a las alternativas, la única ventaja diferencial de este checkpoint sería la combinación de dominio médico y matemático en un solo conjunto de pesos de 8 B; en contra, carece de licencia declarada, de evaluación y de soporte, mientras que las alternativas son auditables y tienen contextos mucho mayores (Mistral y Qwen2.5 multiplican por 4 y por 16 la ventana del base).
 
@@ -87,7 +87,7 @@ Frente a las alternativas, la única ventaja diferencial de este checkpoint ser�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ShahriarFerdoush/llama3-8b-instruct-med-math-ties-k10
+- Modelo en Hugging Face: https://huggingface.co/ShahriarFerdoush/llama3-8b-instruct-med-math-ties-k10
 - Variante médica del mismo autor: https://huggingface.co/ShahriarFerdoush/llama3-8b-instruct-med-ties-k10
 - Variante con embeddings fusionados: https://huggingface.co/ShahriarFerdoush/llama3-8b-instruct-med-obf-emb-ties-emb-merged-k10
 - Endpoint gestionado de la variante matemática: https://friendli.ai/models/ShahriarFerdoush/llama3-8b-instruct-math-ties-k10

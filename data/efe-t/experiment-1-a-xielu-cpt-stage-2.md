@@ -69,5 +69,5 @@ No se dispone de información sobre modelos comparables. Al ser un experimento c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/efe-T/Experiment-1-A-xIELU-CPT-Stage-2
+- Repositorio Hugging Face: https://huggingface.co/efe-T/Experiment-1-A-xIELU-CPT-Stage-2
 - Artículo de heise sobre Apertus (menciona xIELU y QK standard): https://www.heise.de/en/background/Apertus-tested-How-the-multilingual-AI-model-performs-10645644.html

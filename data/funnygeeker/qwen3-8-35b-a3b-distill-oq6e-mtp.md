@@ -85,6 +85,6 @@ Las filas de modelos comparables se incluyen solo como orientacion de categoria 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/funnygeeker/Qwen3.8-35B-A3B-Distill-oQ6e-mtp
+- Modelo en Hugging Face: https://huggingface.co/funnygeeker/Qwen3.8-35B-A3B-Distill-oQ6e-mtp
 - Herramienta de cuantizacion oQ / oMLX: https://github.com/jundot/omlx
 - Resultados de busqueda web: no se ha recuperado ningun enlace relevante sobre el modelo; los resultados obtenidos versaban sobre gestion de canales de YouTube y no aportan informacion tecnica.

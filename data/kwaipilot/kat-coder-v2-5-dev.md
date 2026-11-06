@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KAT-Coder-V2.5-Dev es un modelo de generación de texto especializado en código, desarrollado por el usuario Kwaipilot y publicado en HuggingFace. Está construido sobre la arquitectura Qwen3.5 MoE (mixture of experts), lo que sugiere un diseño orientado a eficiencia computacional con activación selectiva de parámetros. El modelo está etiquetado con capacidades de *agentic coding*, lo que indica soporte para tareas de agente autónomo, y también aparece como *image-text-to-text*, aunque su pipeline principal es text-generation. Se distribuye en formato safetensors y soporta inglés y chino según los metadatos.
+KAT-Coder-V2.5-Dev es un modelo de generación de texto especializado en código, desarrollado por el usuario Kwaipilot y publicado en Hugging Face. Está construido sobre la arquitectura Qwen3.5 MoE (mixture of experts), lo que sugiere un diseño orientado a eficiencia computacional con activación selectiva de parámetros. El modelo está etiquetado con capacidades de *agentic coding*, lo que indica soporte para tareas de agente autónomo, y también aparece como *image-text-to-text*, aunque su pipeline principal es text-generation. Se distribuye en formato safetensors y soporta inglés y chino según los metadatos.
 
 Con 21.826 descargas y 570 likes en el momento de su publicación (julio de 2026), el modelo ha generado cierto interés en la comunidad. Su licencia aparece como Apache-2.0 en las etiquetas, aunque el campo oficial de licencia figura como "no disponible". No se han publicado detalles sobre el número total de parámetros, la longitud de contexto ni los datos de entrenamiento, por lo que gran parte de la especificación técnica queda pendiente de confirmación por parte del autor.
 
@@ -63,5 +63,5 @@ No se dispone de datos comparativos con otros modelos de código MoE como Qwen2.
 
 ## Enlaces
 
-- [HuggingFace: Kwaipilot/KAT-Coder-V2.5-Dev](https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev)
+- [Hugging Face: Kwaipilot/KAT-Coder-V2.5-Dev](https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev)
 - [Paper asociado (arxiv:2607.05471)](https://arxiv.org/abs/2607.05471)

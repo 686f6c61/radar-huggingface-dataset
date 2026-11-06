@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kwen-Image-2.1-Turbo-INT8 | no disponible | no disponible | INT8 W8A16 + FP8 text encoder | Qwen Research (no comercial) | HuggingFace (0 descargas) |
-| Qwen-Image-2.1-Turbo (base) | no disponible | no disponible | bf16 | Qwen Research | HuggingFace (oficial) |
-| Qwen-Image-2.1 | no disponible | no disponible | F32/bf16 | Qwen Research | HuggingFace (oficial) |
+| Kwen-Image-2.1-Turbo-INT8 | no disponible | no disponible | INT8 W8A16 + FP8 text encoder | Qwen Research (no comercial) | Hugging Face (0 descargas) |
+| Qwen-Image-2.1-Turbo (base) | no disponible | no disponible | bf16 | Qwen Research | Hugging Face (oficial) |
+| Qwen-Image-2.1 | no disponible | no disponible | F32/bf16 | Qwen Research | Hugging Face (oficial) |
 
 No se dispone de datos de rendimiento ni de otros modelos comparables en la informacion proporcionada.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento ni de otros modelos comparables en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pushkarmoi/Kwen-Image-2.1-Turbo-INT8
+- Repositorio Hugging Face: https://huggingface.co/pushkarmoi/Kwen-Image-2.1-Turbo-INT8
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Modelo Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Text encoder: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct-FP8

@@ -3,7 +3,7 @@
 ## Resumen
 El modelo `yuriilaba/ucu-wsd-aug16-generation_mlm_pt-false_seed-123` es un ajuste fino para desambiguación del sentido de las palabras (WSD) en ucraniano, desarrollado por el usuario `yuriilaba`. Parte del modelo base `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` y se distribuye en formato safetensors con 278.043.648 parámetros (~278 M), lo que lo sitúa en la gama de modelos encoder pequeños y manejables en hardware de consumo.
 
-La model card indica que se entrenó sobre un conjunto de tripletas (`triplets_generation_mask_16_samples.csv`) con pooling del token objetivo desactivado (`False`), semilla de entrenamiento 123 y semilla de validación 42. En la evaluación reportada por el autor alcanza una precisión WSD de 0,9183 y valores STS de 0,8095 (Pearson) y 0,7987 (Spearman). No se especifican licencia, idiomas soportados ni longitud de contexto en los metadatos de HuggingFace.
+La model card indica que se entrenó sobre un conjunto de tripletas (`triplets_generation_mask_16_samples.csv`) con pooling del token objetivo desactivado (`False`), semilla de entrenamiento 123 y semilla de validación 42. En la evaluación reportada por el autor alcanza una precisión WSD de 0,9183 y valores STS de 0,8095 (Pearson) y 0,7987 (Spearman). No se especifican licencia, idiomas soportados ni longitud de contexto en los metadatos de Hugging Face.
 
 El modelo es relevante para tareas de PLN en ucraniano que requieran desambiguación léxica o representaciones semánticas de frases, especialmente por su tamaño reducido y su base multilingüe. Sin embargo, la ausencia de licencia declarada, de descargas y de documentación sobre sesgos o datos de entrenamiento limita su uso directo en producción sin una evaluación adicional.
 
@@ -67,11 +67,11 @@ Los resultados completos por tarea MTEB están en `evaluation/mteb_results/` den
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | WSD accuracy | STS Pearson | STS Spearman | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| `yuriilaba/ucu-wsd-aug16-generation_mlm_pt-false_seed-123` | 278.043.648 | no disponible | 0.9182509505703422 | 0.8094570768458162 | 0.7986835479217663 | no disponible | HuggingFace |
-| `yuriilaba/ucu-wsd-generation_all_combined_pt-true_seed-456` | ~0,3 B (según búsqueda) | no disponible | 0.9375792141951838 | 0.8023273548423545 | 0.7915177259986247 | no disponible | HuggingFace |
-| `yuriilaba/ucu-wsd-generation_all_combined_pt-true_seed-42` | ~0,3 B (según búsqueda) | no disponible | 0.9369455006337135 | 0.8010580386623065 | 0.7905856750849093 | no disponible | HuggingFace |
-| `yuriilaba/ucu-wsd-generation_dropout_pt-true_seed-456` | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `yuriilaba/ucu-wsd-aug16-generation_mlm_pt-false_seed-123` | 278.043.648 | no disponible | 0.9182509505703422 | 0.8094570768458162 | 0.7986835479217663 | no disponible | Hugging Face |
+| `yuriilaba/ucu-wsd-generation_all_combined_pt-true_seed-456` | ~0,3 B (según búsqueda) | no disponible | 0.9375792141951838 | 0.8023273548423545 | 0.7915177259986247 | no disponible | Hugging Face |
+| `yuriilaba/ucu-wsd-generation_all_combined_pt-true_seed-42` | ~0,3 B (según búsqueda) | no disponible | 0.9369455006337135 | 0.8010580386623065 | 0.7905856750849093 | no disponible | Hugging Face |
+| `yuriilaba/ucu-wsd-generation_dropout_pt-true_seed-456` | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de licencia ni de benchmarks comparables de modelos externos en la información proporcionada. Las variantes del mismo autor muestran una precisión WSD ligeramente superior en los conjuntos `all_combined`, aunque con valores STS algo inferiores.
 
@@ -87,7 +87,7 @@ No se dispone de datos de licencia ni de benchmarks comparables de modelos exter
 - El repositorio usa safetensors y ocupa 1,1 GB; es compatible con `transformers`, pero no se confirma soporte en vLLM, Ollama, TGI u otros servidores de inferencia.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_mlm_pt-false_seed-123
+- Hugging Face: https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_mlm_pt-false_seed-123
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 - Variante: https://huggingface.co/yuriilaba/ucu-wsd-generation_dropout_pt-true_seed-456
 - Variante: https://huggingface.co/yuriilaba/ucu-wsd-generation_all_combined_pt-true_seed-456

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ruvector-typesafe-clinc150 no es un modelo de pesos neuronales, sino un banco de ejemplos etiquetados (bank.json) para la libreria @ruvector/typesafe, publicado por el usuario callmefattyy en HuggingFace. Contiene 150 intenciones repartidas en 10 dominios del dataset CLINC150, mas 1000 enunciados deliberadamente fuera de alcance (out-of-scope), y sirve para construir clasificadores de intenciones que se ejecutan en local, sin coste de API y sin red en la ruta de decision.
+ruvector-typesafe-clinc150 no es un modelo de pesos neuronales, sino un banco de ejemplos etiquetados (bank.json) para la libreria @ruvector/typesafe, publicado por el usuario callmefattyy en Hugging Face. Contiene 150 intenciones repartidas en 10 dominios del dataset CLINC150, mas 1000 enunciados deliberadamente fuera de alcance (out-of-scope), y sirve para construir clasificadores de intenciones que se ejecutan en local, sin coste de API y sin red en la ruta de decision.
 
 El artefacto almacena texto y etiquetas de split con hash de contenido, no pesos ni representaciones derivadas del encoder. La cabecera de clasificacion (prototipo mas cercano o sonda multinomial cuando una clase acumula suficientes ejemplos) y la calibracion de temperatura se reajustan desde el banco al cargarlo. Con el encoder bge-small-en-v1.5 alcanza un 91,0% de precision sobre el split test retenido (4500 enunciados, 150 clases), con latencias de 4 ms en p50 y 6 ms en p95.
 
@@ -102,7 +102,7 @@ Diferencias estructurales conocidas: este artefacto no distribuye pesos, es inde
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/callmefattyy/ruvector-typesafe-clinc150
+- Modelo en Hugging Face: https://huggingface.co/callmefattyy/ruvector-typesafe-clinc150
 - Descarga del banco citada en la model card: https://huggingface.co/ruvnet/ruvector-typesafe-clinc150/resolve/main/bank.json
 - Descarga de preguntas citada en la model card: https://huggingface.co/ruvnet/ruvector-typesafe-clinc150/resolve/main/questions.json
 - Paquete npm: https://www.npmjs.com/package/@ruvector/typesafe

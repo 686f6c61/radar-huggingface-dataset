@@ -84,9 +84,9 @@ La comparativa es estructural, ya que no hay benchmarks disponibles para este ch
 
 ## Enlaces
 
-- [HuggingFace: inclusionAI/Ling-3.0-flash-base-midtrain](https://huggingface.co/inclusionAI/Ling-3.0-flash-base-midtrain)
-- [HuggingFace: Ling-3.0-flash (modelo post-entrenado)](https://huggingface.co/inclusionAI/Ling-3.0-flash)
-- [HuggingFace: Ling-3.0-flash-base-30T (checkpoint pretrained)](https://huggingface.co/inclusionAI/Ling-3.0-flash-base-30T)
+- [Hugging Face: inclusionAI/Ling-3.0-flash-base-midtrain](https://huggingface.co/inclusionAI/Ling-3.0-flash-base-midtrain)
+- [Hugging Face: Ling-3.0-flash (modelo post-entrenado)](https://huggingface.co/inclusionAI/Ling-3.0-flash)
+- [Hugging Face: Ling-3.0-flash-base-30T (checkpoint pretrained)](https://huggingface.co/inclusionAI/Ling-3.0-flash-base-30T)
 - [Paper WSM (Warmup-Stable and Merge)](https://arxiv.org/abs/2507.17634)
 - [Repositorio ling-cookbook (ejemplos de fine-tuning)](https://github.com/inclusionAI/ling-cookbook/)
 - [Guia de Ling 3.0 Flash en aimadetools](https://www.aimadetools.com/blog/ling-3-0-flash-complete-guide/)

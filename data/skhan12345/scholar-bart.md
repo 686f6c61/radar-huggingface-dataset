@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Scholar-BART es un modelo de tipo encoder-decoder basado en la arquitectura BART, publicado en HuggingFace por el usuario skhan12345 bajo el identificador `skhan12345/scholar-bart`. El repositorio contiene pesos en formato safetensors con un total de 139.470.681 par\u00e1metros (aproximadamente 139 millones), lo que lo sit\u00faa en la gama de modelos BART de tama\u00f1o base. Est\u00e1 etiquetado para la tarea de `text2text-generation` y es compatible con la librer\u00eda `transformers` y con endpoints de inferencia.
+Scholar-BART es un modelo de tipo encoder-decoder basado en la arquitectura BART, publicado en Hugging Face por el usuario skhan12345 bajo el identificador `skhan12345/scholar-bart`. El repositorio contiene pesos en formato safetensors con un total de 139.470.681 par\u00e1metros (aproximadamente 139 millones), lo que lo sit\u00faa en la gama de modelos BART de tama\u00f1o base. Est\u00e1 etiquetado para la tarea de `text2text-generation` y es compatible con la librer\u00eda `transformers` y con endpoints de inferencia.
 
-La model card es una plantilla autogenerada por HuggingFace pr\u00e1cticamente sin rellenar: no se documenta el desarrollador real, el proceso de entrenamiento, los datos utilizados, los idiomas soportados ni la licencia. El nombre "scholar" sugiere un posible ajuste fino orientado a texto acad\u00e9mico o cient\u00edfico, pero esta hip\u00f3tesis no est\u00e1 confirmada por ninguna fuente del repositorio. El tag `arxiv:1910.09700` corresponde al art\u00edculo de BART (Lewis et al., 2019), lo que confirma la arquitectura de referencia.
+La model card es una plantilla autogenerada por Hugging Face pr\u00e1cticamente sin rellenar: no se documenta el desarrollador real, el proceso de entrenamiento, los datos utilizados, los idiomas soportados ni la licencia. El nombre "scholar" sugiere un posible ajuste fino orientado a texto acad\u00e9mico o cient\u00edfico, pero esta hip\u00f3tesis no est\u00e1 confirmada por ninguna fuente del repositorio. El tag `arxiv:1910.09700` corresponde al art\u00edculo de BART (Lewis et al., 2019), lo que confirma la arquitectura de referencia.
 
 El modelo tiene cero descargas y cero likes en el momento de la consulta, y el repositorio ocupa 0,6 GB. Se trata, por tanto, de una publicaci\u00f3n reciente y sin tracci\u00f3n p\u00fablica, lo que limita enormemente la evaluaci\u00f3n de su calidad y su idoneidad para producci\u00f3n. Esta ficha documenta lo que se puede verificar objetivamente a partir de los metadatos del repositorio y se\u00f1ala expl\u00edcitamente todo lo que no est\u00e1 disponible.
 
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la informaci\u00f3n disponible.
 - VRAM estimada para inferencia: en fp32, aproximadamente 0,56 GB solo para pesos (139,5 M \u00d7 4 bytes); en fp16, unos 0,28 GB; en int8, unos 0,14 GB. A\u00f1adiendo activaciones y buffers de atenci\u00f3n, el consumo real se sit\u00faa t\u00edpicamente entre 1 y 3 GB seg\u00fan longitud de secuencia y batch.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente; una RTX 3060, RTX 4060, T4 o superior funcionan sin problema. Para lotes grandes o secuencias largas, una A10G o A100 ofrecen margen amplio.
 - \u00bfCabe en GPU consumer? S\u00ed, en pr\u00e1cticamente cualquier GPU consumer moderna (GTX 1660 6 GB, RTX 3050 8 GB, RTX 4090, etc.), e incluso en CPU para inferencia de baja concurrencia.
-- Opciones de despliegue: `transformers` con PyTorch (nativo), `text-generation-inference` (TGI) para serving HTTP, `vLLM` (soporte de modelos encoder-decoder limitado; verificar compatibilidad), `llama.cpp`/`Ollama` solo si se convierte a GGUF (no publicado). Tambi\u00e9n es compatible con HuggingFace Inference Endpoints seg\u00fan el tag `endpoints_compatible`.
+- Opciones de despliegue: `transformers` con PyTorch (nativo), `text-generation-inference` (TGI) para serving HTTP, `vLLM` (soporte de modelos encoder-decoder limitado; verificar compatibilidad), `llama.cpp`/`Ollama` solo si se convierte a GGUF (no publicado). Tambi\u00e9n es compatible con Hugging Face Inference Endpoints seg\u00fan el tag `endpoints_compatible`.
 - Latencia y throughput estimados: no disponibles; al ser un modelo de 139 M, en una GPU moderna se esperan latencias de decenas de milisegundos por secuencia corta y throughput de cientos de secuencias por segundo con batching, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Par\u00e1metros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| skhan12345/scholar-bart | 139,5 M | no disponible | no disponible | HuggingFace (0 descargas) |
-| facebook/bart-base | ~139 M | 1024 tokens | MIT | HuggingFace (ampliamente usado) |
-| google/t5-base | ~220 M | 512 tokens | Apache 2.0 | HuggingFace |
-| facebook/bart-large | ~406 M | 1024 tokens | MIT | HuggingFace |
+| skhan12345/scholar-bart | 139,5 M | no disponible | no disponible | Hugging Face (0 descargas) |
+| facebook/bart-base | ~139 M | 1024 tokens | MIT | Hugging Face (ampliamente usado) |
+| google/t5-base | ~220 M | 512 tokens | Apache 2.0 | Hugging Face |
+| facebook/bart-large | ~406 M | 1024 tokens | MIT | Hugging Face |
 
 La comparaci\u00f3n con `facebook/bart-base` es la m\u00e1s directa por tama\u00f1o y arquitectura; sin embargo, no hay datos que permitan afirmar que scholar-bart mejore o iguale al checkpoint original de Meta. `google/t5-base` es una alternativa seq2seq con licencia permisiva y amplia adopci\u00f3n. La falta de licencia declarada en scholar-bart es un factor diferencial negativo frente a estas alternativas.
 
@@ -82,7 +82,7 @@ La comparaci\u00f3n con `facebook/bart-base` es la m\u00e1s directa por tama\u00
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/skhan12345/scholar-bart
+- Repositorio Hugging Face: https://huggingface.co/skhan12345/scholar-bart
 - Art\u00edculo de referencia BART (arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Checkpoint original BART-base de Meta: https://huggingface.co/facebook/bart-base
 - Documentaci\u00f3n de BART en transformers: https://huggingface.co/docs/transformers/model_doc/bart

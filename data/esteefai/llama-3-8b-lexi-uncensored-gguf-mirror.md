@@ -25,7 +25,7 @@ Su relevancia práctica es doble: por un lado, sirve como caso de estudio de la 
 | Tamaño del repositorio | 5,7 GB |
 | Verificación de integridad | SHA-256 `8b25788328bfa2d997013bf4f220cba0eddc43c8035143a9796b41800ecb4807` |
 | Etiquetas relevantes | `gguf`, `mirror`, `endpoints_compatible`, `conversational` |
-| Descargas / likes | 0 / 0 (según metadatos de HuggingFace en el momento de la consulta) |
+| Descargas / likes | 0 / 0 (según metadatos de Hugging Face en el momento de la consulta) |
 | Fecha de creación (metadatos) | 2026-10-23 |
 
 ## Arquitectura y entrenamiento
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. Ni l
 - **No cabe** en GPUs de 4-6 GB de VRAM de forma completa; es posible el *offload* parcial a CPU con llama.cpp a costa de latencia.
 - **Apple Silicon**: ejecutable en equipos con 16 GB de memoria unificada o más mediante llama.cpp, Ollama o LM Studio.
 - **CPU sola**: viable con llama.cpp (8 GB de RAM o más), con throughput bajo.
-- **Opciones de despliegue**: Ollama (`ollama pull hf.co/EsteefAi/Llama-3-8B-Lexi-Uncensored-GGUF:Q5_K_M`), llama.cpp, LM Studio, koboldcpp. El tag `endpoints_compatible` sugiere compatibilidad con la API de endpoints de HuggingFace. Para vLLM o TGI sería necesario convertir el GGUF o usar los pesos safetensors del repositorio original.
+- **Opciones de despliegue**: Ollama (`ollama pull hf.co/EsteefAi/Llama-3-8B-Lexi-Uncensored-GGUF:Q5_K_M`), llama.cpp, LM Studio, koboldcpp. El tag `endpoints_compatible` sugiere compatibilidad con la API de endpoints de Hugging Face. Para vLLM o TGI sería necesario convertir el GGUF o usar los pesos safetensors del repositorio original.
 - **Latencia y throughput**: no disponible; no se han publicado mediciones de tokens por segundo para este fichero.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ No se han publicado resultados de benchmarks en la información disponible. Ni l
 
 ## Enlaces
 
-- Mirror en HuggingFace: https://huggingface.co/EsteefAi/Llama-3-8B-Lexi-Uncensored-GGUF-mirror
+- Mirror en Hugging Face: https://huggingface.co/EsteefAi/Llama-3-8B-Lexi-Uncensored-GGUF-mirror
 - Repositorio GGUF original: https://huggingface.co/Orenguteng/Llama-3-8B-Lexi-Uncensored-GGUF
 - Modelo original (safetensors): https://huggingface.co/Orenguteng/Llama-3-8B-Lexi-Uncensored
 - Ficha en Inferix (original): https://inferix.co/models/Orenguteng/Llama-3-8B-Lexi-Uncensored-GGUF

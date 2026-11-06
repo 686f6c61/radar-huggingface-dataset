@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MomoSoft/cyberrealistic-sd15-q8-gguf` es un repositorio publicado en HuggingFace por el usuario MomoSoft cuyo nombre sugiere una conversion a formato GGUF con cuantizacion Q8 de un checkpoint de la familia CyberRealistic basado en Stable Diffusion 1.5. El repositorio ocupa 1,8 GB, declara un recuento de 1.066.236.307 parametros (obtenido de safetensors) y esta etiquetado con `gguf` y `region:us`, una etiqueta habitual en repositorios de modelos de difusion. La ficha publica no incluye pipeline declarado, licencia, idiomas ni tarjeta descriptiva, por lo que la mayoria de datos tecnicos no estan confirmados por el autor.
+`MomoSoft/cyberrealistic-sd15-q8-gguf` es un repositorio publicado en Hugging Face por el usuario MomoSoft cuyo nombre sugiere una conversion a formato GGUF con cuantizacion Q8 de un checkpoint de la familia CyberRealistic basado en Stable Diffusion 1.5. El repositorio ocupa 1,8 GB, declara un recuento de 1.066.236.307 parametros (obtenido de safetensors) y esta etiquetado con `gguf` y `region:us`, una etiqueta habitual en repositorios de modelos de difusion. La ficha publica no incluye pipeline declarado, licencia, idiomas ni tarjeta descriptiva, por lo que la mayoria de datos tecnicos no estan confirmados por el autor.
 
 La relevancia de este tipo de publicaciones es practica: los checkpoints de difusion de ~1.000 millones de parametros cuantizados a Q8 reducen el espacio en disco y la VRAM necesaria para inferencia local, lo que permite ejecutar generacion de imagenes en GPU de gama media o baja. La cuantizacion Q8 es el nivel mas alto de compresion habitual en esta familia, por lo que el impacto en calidad suele ser menor que en Q4 o Q5.
 
@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, lic
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| MomoSoft/cyberrealistic-sd15-q8-gguf | 1.066.236.307 | no aplica / no disponible | no disponible | HuggingFace (15 descargas) | no disponible |
+| MomoSoft/cyberrealistic-sd15-q8-gguf | 1.066.236.307 | no aplica / no disponible | no disponible | Hugging Face (15 descargas) | no disponible |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, lic
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MomoSoft/cyberrealistic-sd15-q8-gguf
+- Repositorio en Hugging Face: https://huggingface.co/MomoSoft/cyberrealistic-sd15-q8-gguf
 - Paper, blog o repositorio de codigo asociado: no disponible
 - Demo o espacio de inferencia: no disponible
 - Enlaces adicionales: no se han encontrado enlaces relevantes en la busqueda web realizada; los resultados devueltos corresponden a paginas de soporte de buscadores sin relacion con el modelo

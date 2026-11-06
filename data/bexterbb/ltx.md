@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bexterbb/ltx` es un repositorio alojado en HuggingFace con identificador `bexterbb/ltx`, creado el 21 de agosto de 2026 y actualizado ese mismo día. Su model card es extremadamente escueta: únicamente indica la licencia `unlicense` (dedicación al dominio público) y no incluye ninguna otra especificación técnica, descripción o documentación. El tamaño del repositorio es de 145,9 GB, lo que sugiere un modelo de gran escala, probablemente orientado a generación de video, aunque no se puede confirmar sin información adicional.
+El modelo `bexterbb/ltx` es un repositorio alojado en Hugging Face con identificador `bexterbb/ltx`, creado el 21 de agosto de 2026 y actualizado ese mismo día. Su model card es extremadamente escueta: únicamente indica la licencia `unlicense` (dedicación al dominio público) y no incluye ninguna otra especificación técnica, descripción o documentación. El tamaño del repositorio es de 145,9 GB, lo que sugiere un modelo de gran escala, probablemente orientado a generación de video, aunque no se puede confirmar sin información adicional.
 
 Los resultados de búsqueda web sobre la marca "LTX" apuntan a la familia de modelos de generación de video de Lightricks (LTX-Video y LTX-2), que son modelos basados en arquitecturas DiT para generar vídeo a partir de texto, imagen o audio. Sin embargo, no hay evidencia directa de que el repositorio `bexterbb/ltx` corresponda a alguno de esos modelos oficiales, ya que el autor es un usuario individual (`bexterbb`) y no aparece en la documentación oficial de Lightricks. Por tanto, la información disponible es insuficiente para elaborar una ficha técnica completa y rigurosa.
 
@@ -52,7 +52,7 @@ No disponible. No se ha podido identificar la categoría exacta del modelo ni mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bexterbb/ltx
+- Hugging Face: https://huggingface.co/bexterbb/ltx
 - Sitio oficial de LTX (sin confirmar relación): https://ltx.io/model/video-generation-model
 - Página de LTX-2 (sin confirmar relación): https://ltx.io/model/ltx-2
 - Repositorio GitHub de LTX-Video (sin confirmar relación): https://github.com/Lightricks/LTX-Video

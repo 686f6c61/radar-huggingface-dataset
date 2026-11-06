@@ -63,7 +63,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sidbaines/scimt-prior-coins-gemma4-12b-charter-graft-native-grpo-stop128-eval201-v1
+- Repositorio en Hugging Face: https://huggingface.co/sidbaines/scimt-prior-coins-gemma4-12b-charter-graft-native-grpo-stop128-eval201-v1
 - Repositorio similar del mismo autor (AFT 4x): https://huggingface.co/sidbaines/scimt-prior-coins-gemma4-12b-charter-graft-aft-4x-v1
 - Dataset de muestras de evaluación: https://huggingface.co/datasets/sidbaines/scimt-prior-coins-eval-samples
 - Página oficial de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

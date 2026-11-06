@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zehen8716/annie-lora` es un adaptador LoRA de tipo DreamBooth para generacion de imagenes texto-a-imagen, publicado por el usuario zehen8716 en HuggingFace. No se trata de un modelo de lenguaje ni de un modelo base autonomo: son pesos de ajuste fino que se cargan sobre los checkpoints de Krea 2. Segun la model card, el entrenamiento se realizo sobre `krea/Krea-2-Raw` (el checkpoint base no destilado) utilizando el entrenador DreamBooth de diffusers para Krea 2, y el uso previsto es aplicarlo en inferencia sobre `krea/Krea-2-Turbo`, el checkpoint destilado de 8 pasos.
+`zehen8716/annie-lora` es un adaptador LoRA de tipo DreamBooth para generacion de imagenes texto-a-imagen, publicado por el usuario zehen8716 en Hugging Face. No se trata de un modelo de lenguaje ni de un modelo base autonomo: son pesos de ajuste fino que se cargan sobre los checkpoints de Krea 2. Segun la model card, el entrenamiento se realizo sobre `krea/Krea-2-Raw` (el checkpoint base no destilado) utilizando el entrenador DreamBooth de diffusers para Krea 2, y el uso previsto es aplicarlo en inferencia sobre `krea/Krea-2-Turbo`, el checkpoint destilado de 8 pasos.
 
 El modelo sirve para personalizacion de sujeto: la palabra de activacion `annie woman` induce la generacion de una identidad concreta dentro de las imagenes producidas por el pipeline. El repo ocupa 1,3 GB, lo que sugiere pesos en precision completa o la presencia de artefactos de entrenamiento adicionales, aunque la model card no detalla la composicion exacta del repositorio ni el rango (rank) del LoRA.
 
@@ -104,7 +104,7 @@ Los datos de rendimiento, contexto y disponibilidad de las alternativas indicada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zehen8716/annie-lora
+- Modelo en Hugging Face: https://huggingface.co/zehen8716/annie-lora
 - Archivos y versiones del repositorio: https://huggingface.co/zehen8716/annie-lora/tree/main
 - Modelo base (entrenamiento): https://huggingface.co/krea/Krea-2-Raw
 - Modelo base (inferencia): https://huggingface.co/krea/Krea-2-Turbo

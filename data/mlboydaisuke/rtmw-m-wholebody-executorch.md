@@ -91,7 +91,7 @@ La comparativa muestra que esta conversión es la única distribución ExecuTorc
 
 ## Enlaces
 
-- [HuggingFace - RTMW-m-WholeBody-ExecuTorch](https://huggingface.co/mlboydaisuke/RTMW-m-WholeBody-ExecuTorch)
+- [Hugging Face - RTMW-m-WholeBody-ExecuTorch](https://huggingface.co/mlboydaisuke/RTMW-m-WholeBody-ExecuTorch)
 - [Paper original RTMW (arXiv)](https://arxiv.org/abs/2407.08634)
 - [Repositorio mmpose (OpenMMLab)](https://github.com/open-mmlab/mmpose)
 - [Repositorio executor-tools (scripts de conversión)](https://github.com/john-rocky/executor-tools)

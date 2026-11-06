@@ -27,14 +27,14 @@ La relevancia actual del modelo reside en dos factores: su tamano reducido, que 
 
 La model card del repositorio GGUF no aporta informacion sobre la arquitectura interna, el numero de tokens de entrenamiento ni la composicion del dataset. Lo unico documentado son las etiquetas del modelo y los metadatos de la conversion: `abliterated`, `dpo`, `text-generation`, `llama.cpp`, `pytorch` y `conversational`. La etiqueta `dpo` indica que el modelo base paso por una fase de optimizacion por preferencias directas (Direct Preference Optimization), y `abliterated` implica que se aplico un proceso de ablacion sobre las direcciones de activacion responsables de las respuestas de rechazo, lo que da como resultado un modelo menos restrictivo en sus respuestas.
 
-En cuanto al proceso de cuantizacion, la model card registra metadatos tecnicos relevantes: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que la conversion se hizo desde pesos en formato HuggingFace (`hf`) y que los tensores de salida fueron cuantizados. No se documenta ninguna innovacion arquitectonica adicional, mecanismo de atencion alternativo ni tecnica de decodificacion especulativa. Cualquier afirmacion sobre la arquitectura subyacente de MiniCPM5 excede la informacion disponible en esta ficha.
+En cuanto al proceso de cuantizacion, la model card registra metadatos tecnicos relevantes: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que la conversion se hizo desde pesos en formato Hugging Face (`hf`) y que los tensores de salida fueron cuantizados. No se documenta ninguna innovacion arquitectonica adicional, mecanismo de atencion alternativo ni tecnica de decodificacion especulativa. Cualquier afirmacion sobre la arquitectura subyacente de MiniCPM5 excede la informacion disponible en esta ficha.
 
 ## Capacidades
 
 - Generacion de texto conversacional en ingles, con formato de dialogo multi-turno (etiqueta `conversational`).
 - Comportamiento abliterated: menor propension a rechazar peticiones que los modelos alineados convencionales, incluida la generacion de contenido que otros modelos declinarian.
 - Ajuste con DPO, orientado a alinear las preferencias de respuesta sin recurrir a RLHF clasico.
-- Compatibilidad con `endpoints_compatible`, lo que permite exponerlo a traves de APIs compatibles con el esquema de endpoints de HuggingFace y de servidores de inferencia tipo OpenAI.
+- Compatibilidad con `endpoints_compatible`, lo que permite exponerlo a traves de APIs compatibles con el esquema de endpoints de Hugging Face y de servidores de inferencia tipo OpenAI.
 - Inferencia en CPU y GPU mediante llama.cpp y cualquier frontend que consuma GGUF (Ollama, LM Studio, text-generation-webui, KoboldCpp, entre otros).
 - No hay evidencia en la informacion disponible de soporte de tool calling, function calling, capacidades de agente, vision, audio, modo de razonamiento explicito (thinking) ni capacidades multilingues mas alla del ingles.
 
@@ -47,7 +47,7 @@ En cuanto al proceso de cuantizacion, la model card registra metadatos tecnicos 
 - Clasificacion y etiquetado de texto a pequena escala: tareas de categorizacion, extraccion de entidades o resumen de documentos cortos en ingles, donde un modelo de 2,5B ofrece latencia baja y suficiente calidad.
 - Despliegue en dispositivos con recursos limitados (edge computing): entornos sin GPU, contenedores pequenos o sistemas embebidos con CPU moderna y 4-8 GB de RAM, aprovechando las cuantizaciones Q2_K o Q3_K_S.
 - Generacion de datos sinteticos para ajuste fino: al no rechazar peticiones, puede emplearse para producir datasets de entrenamiento con tematicas que otros modelos se negarian a generar.
-- Base para fine-tuning adicional: los pesos en formato HuggingFace del modelo base permiten aplicar LoRA o ajuste completo y volver a cuantizar despues.
+- Base para fine-tuning adicional: los pesos en formato Hugging Face del modelo base permiten aplicar LoRA o ajuste completo y volver a cuantizar despues.
 
 ## Benchmarks y rendimiento
 

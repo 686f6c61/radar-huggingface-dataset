@@ -30,7 +30,7 @@ Su relevancia es, por tanto, documental y metodológica: sirve como plantilla de
 
 ## Arquitectura y entrenamiento
 
-La model card no describe ninguna arquitectura concreta. La etiqueta `transformer` aparece en los metadatos de HuggingFace, pero el texto del autor no menciona capas, mecanismos de atencion, codificador visual, proyector multimodal ni ninguna otra decision de diseño. Tampoco se indica que exista un proceso de entrenamiento: no hay volumen de tokens, composicion del dataset, fases de ajuste (SFT, RLHF, DPO) ni técnica de alineacion alguna.
+La model card no describe ninguna arquitectura concreta. La etiqueta `transformer` aparece en los metadatos de Hugging Face, pero el texto del autor no menciona capas, mecanismos de atencion, codificador visual, proyector multimodal ni ninguna otra decision de diseño. Tampoco se indica que exista un proceso de entrenamiento: no hay volumen de tokens, composicion del dataset, fases de ajuste (SFT, RLHF, DPO) ni técnica de alineacion alguna.
 
 El contenido del repositorio se limita a un plan de investigación. Según el propio documento, cubre "el alcance de la pregunta de investigación y probables factores de confusión", "una comparación propuesta con líneas base emparejadas", "contexto de evaluación concreto como VQAv2, GQA y OK-VQA" y "comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas". El autor advierte explícitamente que cualquier sección etiquetada como plan o hipótesis no debe interpretarse como resultado experimental, y que si en el futuro se añaden resultados deberán incluir versiones de dataset, comandos, semillas, hardware y registros en bruto.
 
@@ -87,5 +87,5 @@ No disponible. Este repositorio no es un modelo de VQA y no compite con alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/michaelbrosuf/visual-question-answering
+- Modelo en Hugging Face: https://huggingface.co/michaelbrosuf/visual-question-answering
 - No se han encontrado en la busqueda web enlaces relevantes (papers, blogs, repositorios o demos) asociados a este repositorio.

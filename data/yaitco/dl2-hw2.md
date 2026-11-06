@@ -1,7 +1,7 @@
 # YaItco/DL2-HW2
 
 ## Resumen
-DL2-HW2 es un modelo de clasificacion de tokens (token-classification) publicado por el usuario YaItco en HuggingFace. Se trata de un fine-tuning del modelo de embeddings BAAI/bge-small-en-v1.5, una arquitectura BERT encoder-only de aproximadamente 33 millones de parametros, adaptada mediante la libreria Transformers y el Trainer de HuggingFace para una tarea de etiquetado a nivel de token.
+DL2-HW2 es un modelo de clasificacion de tokens (token-classification) publicado por el usuario YaItco en Hugging Face. Se trata de un fine-tuning del modelo de embeddings BAAI/bge-small-en-v1.5, una arquitectura BERT encoder-only de aproximadamente 33 millones de parametros, adaptada mediante la libreria Transformers y el Trainer de Hugging Face para una tarea de etiquetado a nivel de token.
 
 El modelo cuenta con 33.215.625 parametros y un repositorio de 0,7 GB en formato safetensors. La model card esta generada automaticamente por el Trainer, por lo que no especifica el dataset de entrenamiento, el esquema de etiquetas ni los casos de uso previstos. Los unicos datos de rendimiento disponibles son las metricas de evaluacion declaradas por el autor: precision 0,9268, recall 0,9436, F1 0,9352 y accuracy 0,9815 sobre un conjunto de validacion no descrito.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada: se publico en octubre de 2026, acumula 0 desca
 ## Arquitectura y entrenamiento
 La arquitectura es un transformer encoder-only tipo BERT, heredada del modelo base BAAI/bge-small-en-v1.5, con una cabeza de clasificacion de tokens anadida para la tarea de token-classification. El modelo base esta orientado a la generacion de embeddings de frases en ingles, por lo que la adaptacion convierte un encoder de recuperacion en un etiquetador secuencial. No se dispone de informacion sobre el numero de capas, dimensiones ocultas ni mecanismos de atencion mas alla de los 33,2 millones de parametros totales.
 
-El entrenamiento se realizo con el Trainer de HuggingFace sobre un dataset no especificado, durante 3 epocas (3.750 pasos, 1.250 por epoca), con learning rate 2e-05, batch de entrenamiento y evaluacion de 8, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal y semilla 42. No se menciona ningun proceso de RLHF, DPO ni decodificacion especulativa, algo esperable en un modelo discriminativo de este tipo. La perdida de entrenamiento cae de 0,0068 a 0,0038 mientras la perdida de validacion sube ligeramente de 0,1129 a 0,1185 entre la epoca 1 y la 3, lo que sugiere un posible inicio de sobreajuste sin mejora relevante de F1.
+El entrenamiento se realizo con el Trainer de Hugging Face sobre un dataset no especificado, durante 3 epocas (3.750 pasos, 1.250 por epoca), con learning rate 2e-05, batch de entrenamiento y evaluacion de 8, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal y semilla 42. No se menciona ningun proceso de RLHF, DPO ni decodificacion especulativa, algo esperable en un modelo discriminativo de este tipo. La perdida de entrenamiento cae de 0,0068 a 0,0038 mientras la perdida de validacion sube ligeramente de 0,1129 a 0,1185 entre la epoca 1 y la 3, lo que sugiere un posible inicio de sobreajuste sin mejora relevante de F1.
 
 ## Capacidades
 - Clasificacion de tokens a nivel de secuencia (etiquetado tipo NER u otra tarea de sequence labelling), con etiquetas cuyo esquema no se detalla en la informacion disponible.
@@ -32,7 +32,7 @@ El entrenamiento se realizo con el Trainer de HuggingFace sobre un dataset no es
 - No dispone de soporte documentado de agentes ni de razonamiento multi-paso.
 - Capacidades multilingues: no disponibles; el modelo base lleva el sufijo `-en`, lo que apunta a un entrenamiento principalmente en ingles, aunque no se confirma en la model card.
 - No se documentan capacidades especiales como modo de razonamiento, vision o audio.
-- Reutiliza el tokenizer y la configuracion de BAAI/bge-small-en-v1.5 al estar generado con el Trainer de HuggingFace.
+- Reutiliza el tokenizer y la configuracion de BAAI/bge-small-en-v1.5 al estar generado con el Trainer de Hugging Face.
 
 ## Casos de uso
 - Deteccion de entidades nombradas (NER) en textos en ingles: el modelo puede etiquetar tokens como personas, organizaciones o localizaciones si el dataset de fine-tuning siguio ese esquema, aunque este no se documenta y debe verificarse antes de su uso.
@@ -60,15 +60,15 @@ No se han publicado resultados de benchmarks estandar en la informacion disponib
 - VRAM estimada: el checkpoint ocupa 0,7 GB en disco (incluye pesos y estados asociados); los pesos en float32 de 33,2 millones de parametros rondan los 133 MB, en float16 unos 66 MB y en int8 unos 33 MB.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente; una RTX 4090, A100 o H100 queda enormemente sobredimensionada para este modelo.
 - Consumer GPU: si, cabe en cualquier GPU de consumo actual e incluso en GPUs integradas o en CPU.
-- Despliegue: compatible con la libreria transformers; al ser un modelo encoder pequeno puede servirse con ONNX Runtime, TorchScript o el pipeline de token-classification de HuggingFace. No se documenta soporte especifico para vLLM, llama.cpp, Ollama o TGI (estos ultimos orientados a modelos generativos).
+- Despliegue: compatible con la libreria transformers; al ser un modelo encoder pequeno puede servirse con ONNX Runtime, TorchScript o el pipeline de token-classification de Hugging Face. No se documenta soporte especifico para vLLM, llama.cpp, Ollama o TGI (estos ultimos orientados a modelos generativos).
 - Latencia y throughput: no disponibles en la informacion proporcionada. Por tamano, se espera inferencia en milisegundos por lote corto en GPU y en decenas de milisegundos en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YaItco/DL2-HW2 | 33.215.625 | token-classification | no disponible | MIT | HuggingFace |
-| BAAI/bge-small-en-v1.5 (modelo base) | no disponible en la informacion | embeddings / recuperacion de frases | no disponible | no disponible en la informacion | HuggingFace |
+| YaItco/DL2-HW2 | 33.215.625 | token-classification | no disponible | MIT | Hugging Face |
+| BAAI/bge-small-en-v1.5 (modelo base) | no disponible en la informacion | embeddings / recuperacion de frases | no disponible | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de otros modelos comparables en la informacion proporcionada (parametros, contexto, rendimiento y licencia de alternativas como otros etiquetadores BERT pequenos no se incluyen). Cualquier comparacion cuantitativa requeriria evaluar los modelos sobre el mismo conjunto de datos.
 
@@ -85,7 +85,7 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 - Model card autogenerada: carece de secciones de usos previstos, limitaciones y datos de entrenamiento, lo que obliga a una validacion manual completa.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/YaItco/DL2-HW2
+- Modelo en Hugging Face: https://huggingface.co/YaItco/DL2-HW2
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Libreria Transformers: https://github.com/huggingface/transformers
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

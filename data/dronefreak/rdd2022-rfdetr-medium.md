@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dronefreak/rdd2022-rfdetr-medium es un detector de objetos de la familia RF-DETR (arquitectura de tipo transformer DETR) afinado por el usuario dronefreak sobre el conjunto de datos RDD2022 de daños en pavimento. Parte del modelo base Roboflow/rf-detr-medium y se distribuye con licencia Apache 2.0 a través de HuggingFace Hub, con un tamaño de repositorio de 0,1 GB y 33,7 millones de parámetros. No es un modelo de lenguaje: no genera texto, no razona y no tiene ventana de contexto; su única tarea es la detección de cajas delimitadoras sobre imágenes.
+dronefreak/rdd2022-rfdetr-medium es un detector de objetos de la familia RF-DETR (arquitectura de tipo transformer DETR) afinado por el usuario dronefreak sobre el conjunto de datos RDD2022 de daños en pavimento. Parte del modelo base Roboflow/rf-detr-medium y se distribuye con licencia Apache 2.0 a través de Hugging Face Hub, con un tamaño de repositorio de 0,1 GB y 33,7 millones de parámetros. No es un modelo de lenguaje: no genera texto, no razona y no tiene ventana de contexto; su única tarea es la detección de cajas delimitadoras sobre imágenes.
 
 El modelo resuelve un problema acotado y muy específico: localizar y clasificar cuatro tipos de daño vial (grietas longitudinales, grietas transversales, grietas en piel de cocodrilo y baches) en imágenes de carretera. Está entrenado y evaluado dentro del marco DetectionBench, un proyecto que aplica recetas de entrenamiento idénticas y una única tubería de evaluación a varios detectores modernos sobre distintos conjuntos de datos reales. Sobre el split de test de RDD2022 declara un mAP@50 de 65,08, un mAP@50-95 de 36,02, una precisión de 71,18 y un recall de 55,98.
 
@@ -108,7 +108,7 @@ No se han publicado en la información disponible resultados de benchmarks gener
 
 | Modelo | mAP@50 (RDD2022) | mAP@50-95 | Precisión | Recall | Parámetros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| RF-DETR Medium (este modelo) | 65,08 | 36,02 | 71,18 | 55,98 | 33,7 M | Apache 2.0 | HuggingFace Hub |
+| RF-DETR Medium (este modelo) | 65,08 | 36,02 | 71,18 | 55,98 | 33,7 M | Apache 2.0 | Hugging Face Hub |
 | RF-DETR Small | 64,71 | 35,73 | 65,69 | 59,41 | No disponible | No disponible | No disponible en la información proporcionada |
 | RF-DETR Nano | 60,85 | 33,22 | 65,49 | 54,30 | No disponible | No disponible | No disponible en la información proporcionada |
 | YOLOv8m | 62,03 | 34,08 | 65,61 | 57,42 | No disponible | No disponible | No disponible en la información proporcionada |
@@ -131,7 +131,7 @@ Observaciones sobre la comparativa extraídas de los datos anteriores: RF-DETR M
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/rdd2022-rfdetr-medium
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/rdd2022-rfdetr-medium
 - Conjunto de datos RDD2022 (versión del autor): https://huggingface.co/datasets/dronefreak/RDD2022
 - Repositorio DetectionBench (marco de entrenamiento y evaluación): https://github.com/dronefreak/DetectionBench
 - Modelo base: https://huggingface.co/Roboflow/rf-detr-medium

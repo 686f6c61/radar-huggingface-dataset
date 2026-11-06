@@ -17,7 +17,7 @@ La relevancia del modelo radica en su combinación de un contexto de 512K tokens
 | Parametros activos | ~4B (según el modelo base; no disponible para el checkpoint cuantizado) |
 | Longitud de contexto | 512.000 tokens |
 | Tipos de cuantizacion | GPTQ 4-bit (group size 128, simétrico, desc_act=false); routers, lm_head, embeddings y normas en BF16 |
-| Idiomas soportados | en (según HuggingFace); verificado en alemán e inglés |
+| Idiomas soportados | en (según Hugging Face); verificado en alemán e inglés |
 | Licencia | Apache-2.0 |
 | Formato de pesos | GPTQ (safetensors), requiere trust_remote_code |
 
@@ -32,7 +32,7 @@ La cuantización GPTQ 4-bit fue realizada por un contribuyente independiente (Si
 - Generación de texto conversacional y razonamiento con modo de pensamiento: el modelo puede emitir razonamiento paso a paso dentro de las etiquetas `<ifm|think>...</ifm|think>`, activado por petición mediante el parámetro `reasoning_effort` del chat template.
 - Contexto largo de 512K tokens, apto para procesar documentos extensos, repositorios de código o transcripciones completas.
 - Capacidades agénticas y de razonamiento multi-step: según Benchgen, destaca en benchmarks de agentes y razonamiento, superando a modelos densos y MoE de hasta 15 veces su tamaño activo.
-- Soporte multilingüe limitado: el idioma declarado en HuggingFace es inglés, pero la calibración incluyó alemán y código, y se verificó salida coherente en alemán e inglés.
+- Soporte multilingüe limitado: el idioma declarado en Hugging Face es inglés, pero la calibración incluyó alemán y código, y se verificó salida coherente en alemán e inglés.
 - Tool calling / function calling: no documentado en la información disponible.
 - Integración con transformers y GPTQModel: el modelo se puede cargar con `trust_remote_code` y la definición personalizada.
 
@@ -75,7 +75,7 @@ No se ha proporcionado información sobre modelos comparables en los datos consu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Siladrim/K2-Horizon-MoVA-36B-A4B-GPTQ-Int4
+- Hugging Face: https://huggingface.co/Siladrim/K2-Horizon-MoVA-36B-A4B-GPTQ-Int4
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
 - AI/TLDR: https://ai-tldr.dev/models/k2-horizon-mova-36b-a4b/
 - Benchgen: https://benchgen.com/models/ifm/k2-horizon-mova-36b-a4b

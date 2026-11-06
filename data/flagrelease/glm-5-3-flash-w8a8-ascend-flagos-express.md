@@ -96,7 +96,7 @@ No se dispone de datos suficientes para comparar con otras alternativas open sou
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FlagRelease/GLM-5.3-Flash-W8A8-ascend-FlagOS-Express
+- Repositorio en Hugging Face: https://huggingface.co/FlagRelease/GLM-5.3-Flash-W8A8-ascend-FlagOS-Express
 - Imagen en Harbor: `harbor.baai.ac.cn/flagrelease-public/glm-5.3-flash-w8a8-mtp-flagos-express:2026-10-28`
 - SGLang: no disponible en la información proporcionada
 - FlagTree: no disponible en la información proporcionada

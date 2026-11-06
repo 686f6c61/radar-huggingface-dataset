@@ -73,6 +73,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Prannesshkva/ROTOR-15M
+- Repositorio Hugging Face: https://huggingface.co/Prannesshkva/ROTOR-15M
 - DOI Zenodo: https://doi.org/10.5281/zenodo.22285756
 - Modelo relacionado del mismo autor (QU-SSM-15M): https://huggingface.co/Prannesshkva/QU-SSM-15M

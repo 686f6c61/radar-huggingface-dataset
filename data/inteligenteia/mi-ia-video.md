@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InteligenteIA/Mi-ia-video es un repositorio alojado en HuggingFace por el usuario InteligenteIA. En el momento de la consulta presenta 0 descargas y 0 "likes", y su model card únicamente contiene el campo `license: mit`, sin ningún otro contenido técnico, descripción, ejemplo de uso ni documentación adicional.
+InteligenteIA/Mi-ia-video es un repositorio alojado en Hugging Face por el usuario InteligenteIA. En el momento de la consulta presenta 0 descargas y 0 "likes", y su model card únicamente contiene el campo `license: mit`, sin ningún otro contenido técnico, descripción, ejemplo de uso ni documentación adicional.
 
 No se dispone de información verificable sobre la arquitectura, el número de parámetros, la longitud de contexto, los datos de entrenamiento ni las capacidades del modelo. El identificador del repositorio incluye la palabra "video", lo que podría sugerir un modelo orientado a tareas de vídeo, pero se trata de una inferencia a partir del nombre y no está confirmada por ninguna fuente oficial.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, etc.): no disponible. No se confirma que los pesos estén publicados ni en qué formato.
 - Latencia y throughput estimados: no disponible.
 
-Recomendación operativa: antes de planificar cualquier despliegue, inspeccionar el listado de archivos del repositorio en HuggingFace para determinar si existen pesos, su formato (safetensors, GGUF, binarios de PyTorch, etc.) y su tamaño, que es el dato que permitiría calcular los requisitos de memoria.
+Recomendación operativa: antes de planificar cualquier despliegue, inspeccionar el listado de archivos del repositorio en Hugging Face para determinar si existen pesos, su formato (safetensors, GGUF, binarios de PyTorch, etc.) y su tamaño, que es el dato que permitiría calcular los requisitos de memoria.
 
 ## Comparativa con modelos similares
 
@@ -75,7 +75,7 @@ No disponible. Al desconocerse la categoría del modelo (lenguaje, visión, víd
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| InteligenteIA/Mi-ia-video | no disponible | no disponible | no disponible | MIT | Repositorio en HuggingFace con 0 descargas |
+| InteligenteIA/Mi-ia-video | no disponible | no disponible | no disponible | MIT | Repositorio en Hugging Face con 0 descargas |
 | Alternativas comparables | no disponibles | no disponibles | no disponibles | no disponibles | no disponibles |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. Al desconocerse la categoría del modelo (lenguaje, visión, víd
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/InteligenteIA/Mi-ia-video
-- Perfil del autor en HuggingFace: https://huggingface.co/InteligenteIA
+- Repositorio en Hugging Face: https://huggingface.co/InteligenteIA/Mi-ia-video
+- Perfil del autor en Hugging Face: https://huggingface.co/InteligenteIA
 - Artículos, informes técnicos, repositorios de código o demos: no disponibles.
 - Resultados de búsqueda web relevantes: ninguno. Las consultas realizadas no arrojaron resultados relacionados con el modelo.

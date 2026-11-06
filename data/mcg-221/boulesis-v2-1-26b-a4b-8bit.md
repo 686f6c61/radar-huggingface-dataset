@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Boulesis-v2.1-26B-A4B-8bit es un modelo publicado en HuggingFace por el usuario McG-221 el 13 de septiembre de 2026. En el momento de redactar esta ficha el repositorio cuenta con 0 descargas y 2 "likes", no tiene model card publica y la informacion disponible se limita a los metadatos basicos del identificador: no consta licencia, pipeline, idiomas soportados ni formato de pesos declarado.
+Boulesis-v2.1-26B-A4B-8bit es un modelo publicado en Hugging Face por el usuario McG-221 el 13 de septiembre de 2026. En el momento de redactar esta ficha el repositorio cuenta con 0 descargas y 2 "likes", no tiene model card publica y la informacion disponible se limita a los metadatos basicos del identificador: no consta licencia, pipeline, idiomas soportados ni formato de pesos declarado.
 
 El nombre del repositorio sugiere, por convencion de nomenclatura habitual en la comunidad, un modelo de arquitectura Mixture of Experts (MoE) con aproximadamente 26 000 millones de parametros totales y alrededor de 4000 millones de parametros activos por token (sufijo "A4B"), distribuido en una variante cuantizada a 8 bits. Esta interpretacion es una inferencia a partir del identificador y no esta confirmada por el autor ni por ningun documento tecnico asociado.
 
@@ -86,6 +86,6 @@ No disponible. No consta informacion tecnica verificable de Boulesis-v2.1-26B-A4
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/McG-221/Boulesis-v2.1-26B-A4B-8bit
+- Hugging Face: https://huggingface.co/McG-221/Boulesis-v2.1-26B-A4B-8bit
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados obtenidos corresponden a entidades no relacionadas (articulos sobre el director McG y sobre la unidad de medida microgramo). No hay papers, blogs, repositorios de codigo ni demos asociados a Boulesis-v2.1-26B-A4B-8bit en la informacion disponible.

@@ -78,4 +78,4 @@ Nota: la comparación con el MLP de referencia se deduce de la model card (la pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rimoKR/cifar10-ioc-nn-p0
+- Modelo en Hugging Face: https://huggingface.co/rimoKR/cifar10-ioc-nn-p0

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nikitastheo/v5-babylm-25k-shared-seed43-eng-ell-sequential_interleaved` es un modelo de lenguaje causal de pequeno tamano (123.886.080 parametros, unos 124 millones) publicado por el usuario nikitastheo en HuggingFace. Se trata de un transformer decoder-only etiquetado como `gpt2` en el Hub, entrenado desde cero con un script propio basado en Hugging Face Accelerate (`train_clm.py`, sin `Trainer`), y acompanado de un tokenizador especifico de 25.000 entradas (`nikitastheo/babylm-25k-eng-seed43-tokenizer`).
+El modelo `nikitastheo/v5-babylm-25k-shared-seed43-eng-ell-sequential_interleaved` es un modelo de lenguaje causal de pequeno tamano (123.886.080 parametros, unos 124 millones) publicado por el usuario nikitastheo en Hugging Face. Se trata de un transformer decoder-only etiquetado como `gpt2` en el Hub, entrenado desde cero con un script propio basado en Hugging Face Accelerate (`train_clm.py`, sin `Trainer`), y acompanado de un tokenizador especifico de 25.000 entradas (`nikitastheo/babylm-25k-eng-seed43-tokenizer`).
 
 El nombre del repositorio lo situa en el ecosistema del reto BabyLM: la cadena `babylm-25k` remite al corpus de escala reducida tipo desarrollo cognitivo, `eng-ell` a una configuracion bilingue ingles-griego, `sequential_interleaved` a una estrategia de mezcla de idiomas en el entrenamiento y `seed43` a una semilla concreta de reproducibilidad. La model card, sin embargo, no confirma de forma explicita ninguno de estos extremos, por lo que deben tratarse como inferencias a partir de la nomenclatura.
 
@@ -12,7 +12,7 @@ Su relevancia es acotada pero real: es un artefacto de investigacion reproducibl
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal decoder-only (etiqueta `gpt2` en HuggingFace); numero de capas, dimension oculta y cabezas de atencion: no disponible |
+| Arquitectura | Transformer causal decoder-only (etiqueta `gpt2` en Hugging Face); numero de capas, dimension oculta y cabezas de atencion: no disponible |
 | Parametros totales | 123.886.080 (dato real de los pesos en safetensors) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nikitastheo/v5-babylm-25k-shared-seed43-eng-ell-sequential_interleaved | 123,9 M | no disponible | no confirmados (indicio bilingue ingles-griego) | no disponible | safetensors en HuggingFace, sin descargas registradas |
+| nikitastheo/v5-babylm-25k-shared-seed43-eng-ell-sequential_interleaved | 123,9 M | no disponible | no confirmados (indicio bilingue ingles-griego) | no disponible | safetensors en Hugging Face, sin descargas registradas |
 | GPT-2 small (OpenAI) | 124 M | 1.024 tokens | Ingles principalmente | Licencia propia de OpenAI (tipo MIT modificada) | safetensors y multiples conversiones GGUF en el Hub |
 | Pythia-160M (EleutherAI) | 160 M | 2.048 tokens | Ingles | Apache 2.0 | safetensors en el Hub, ampliamente usado como baseline |
 | BLOOM-560M (BigScience) | 559 M | 2.048 tokens | 46 idiomas, incluido el griego | BLOOM RAIL v1.0 (uso comercial permitido con condiciones) | safetensors y GGUF en el Hub |
@@ -88,7 +88,7 @@ El modelo aqui descrito se distingue de los anteriores por su vocabulario reduci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikitastheo/v5-babylm-25k-shared-seed43-eng-ell-sequential_interleaved
+- Modelo en Hugging Face: https://huggingface.co/nikitastheo/v5-babylm-25k-shared-seed43-eng-ell-sequential_interleaved
 - Tokenizador asociado: https://huggingface.co/nikitastheo/babylm-25k-eng-seed43-tokenizer
 - Reto BabyLM (contexto del proyecto, enlace general no verificado en la busqueda): https://babylm.github.io/
 - Papers, blogs, repositorios o demos especificos de este modelo: no disponible. La busqueda web realizada no devolvio resultados relacionados con el modelo ni con su autor; los enlaces obtenidos correspondian a contenidos sin relacion con el proyecto.

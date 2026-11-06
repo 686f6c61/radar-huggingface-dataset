@@ -80,8 +80,8 @@ No se dispone de datos de rendimiento de este adaptador ni de alternativas en la
 
 | Modelo | Parametros | Contexto | Rendimiento en imagen-Mermaid | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| passawee-kmitl/qwen2vl-mermaid-lora (v1, v2, v3) | Adaptadores sobre un base de 2B | No disponible | No disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2-VL-2B-Instruct (sin adaptador) | 2B | No disponible | No disponible (no esta ajustado a la tarea) | No disponible en la informacion proporcionada | HuggingFace |
+| passawee-kmitl/qwen2vl-mermaid-lora (v1, v2, v3) | Adaptadores sobre un base de 2B | No disponible | No disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2-VL-2B-Instruct (sin adaptador) | 2B | No disponible | No disponible (no esta ajustado a la tarea) | No disponible en la informacion proporcionada | Hugging Face |
 | Otros adaptadores de imagen a Mermaid | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Otros VLMs pequenos ajustados a imagen-codigo | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento de este adaptador ni de alternativas en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/passawee-kmitl/qwen2vl-mermaid-lora
+- Repositorio Hugging Face: https://huggingface.co/passawee-kmitl/qwen2vl-mermaid-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct
 - Paper, blog o demo del adaptador: no disponible en la informacion proporcionada
 - Repositorio de codigo asociado: no disponible en la informacion proporcionada

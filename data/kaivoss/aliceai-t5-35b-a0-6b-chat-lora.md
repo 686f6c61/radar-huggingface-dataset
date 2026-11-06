@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kaivoss/AliceAI-T5-35B-A0.6B-chat-lora | 35B totales / 0,6B activos | 32.768 tokens | Adaptador LoRA sobre MoE UL2 encoder-decoder | Apache 2.0 | HuggingFace |
-| yandex/AliceAI-T5-35B-A0.6B (base) | 35B totales / 0,6B activos | no disponible | MoE UL2 encoder-decoder, span-infilling | no disponible | HuggingFace |
-| kaivoss/AliceAI-T5-35B-A0.6B-chat (fusionado) | 35B totales / 0,6B activos | no disponible | Pesos fusionados bf16 del adaptador | Apache 2.0 | HuggingFace |
+| kaivoss/AliceAI-T5-35B-A0.6B-chat-lora | 35B totales / 0,6B activos | 32.768 tokens | Adaptador LoRA sobre MoE UL2 encoder-decoder | Apache 2.0 | Hugging Face |
+| yandex/AliceAI-T5-35B-A0.6B (base) | 35B totales / 0,6B activos | no disponible | MoE UL2 encoder-decoder, span-infilling | no disponible | Hugging Face |
+| kaivoss/AliceAI-T5-35B-A0.6B-chat (fusionado) | 35B totales / 0,6B activos | no disponible | Pesos fusionados bf16 del adaptador | Apache 2.0 | Hugging Face |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria en la documentacion proporcionada.
 

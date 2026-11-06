@@ -100,7 +100,7 @@ La comparación cuantitativa no es posible con los datos disponibles: la informa
 - Compatibilidad de despliegue incierta: no hay GGUF ni integración declarada en vLLM, TGI, Ollama o llama.cpp, lo que puede exigir trabajo de conversión y verificación de la arquitectura.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/logan7000/mllm-open-r1-ttrl-internvl35-8b-mmupt-full
+- Modelo en Hugging Face: https://huggingface.co/logan7000/mllm-open-r1-ttrl-internvl35-8b-mmupt-full
 - Script de referencia citado en la model card: examples/mmr1_qwen25vl7b_gt_mmupt.sh (columna InternVL), sin URL publica disponible
 - Rutas locales citadas por el autor, no accesibles publicamente: /weka/scratch/jhu/dssg2026-ext-rghani1/yyang331/mllm-repro-out/mllm-co-grpo-dp/openr1_internvl35_8b_ttrl_mmupt
 - Paper, blog, repositorio o demo asociados: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`florpav/01-sklearn-regresion-seminario2026` es un modelo de regresión lineal publicado en HuggingFace como ejemplo pedagógico para un seminario del IFTS N.º 18 (docente: Cynthia M. Villagra). No es un modelo de lenguaje ni una red neuronal: es un objeto `LinearRegression` de scikit-learn serializado con `joblib` que predice el precio de una vivienda a partir de tres variables tabulares (superficie en m², presencia de balcón y presencia de ascensor). Su función es mostrar, de forma reproducible, qué se publica cuando se comparte un modelo entrenado: pesos, bias, métricas y código de entrenamiento e inferencia.
+`florpav/01-sklearn-regresion-seminario2026` es un modelo de regresión lineal publicado en Hugging Face como ejemplo pedagógico para un seminario del IFTS N.º 18 (docente: Cynthia M. Villagra). No es un modelo de lenguaje ni una red neuronal: es un objeto `LinearRegression` de scikit-learn serializado con `joblib` que predice el precio de una vivienda a partir de tres variables tabulares (superficie en m², presencia de balcón y presencia de ascensor). Su función es mostrar, de forma reproducible, qué se publica cuando se comparte un modelo entrenado: pesos, bias, métricas y código de entrenamiento e inferencia.
 
 El modelo se ha entrenado sobre un dataset sintético de 200 registros generados con una relación lineal conocida más ruido, lo que permite verificar que los coeficientes aprendidos recuperan aproximadamente los coeficientes reales del generador. Con 160 muestras de entrenamiento y 40 de evaluación, alcanza un MAE de 3,08 miles de US$ y un R² de 0,989 sobre el conjunto de test.
 
@@ -40,7 +40,7 @@ El entrenamiento se realizó con scikit-learn sobre 160 registros de un dataset 
 ## Casos de uso
 
 - Docencia de aprendizaje supervisado: el modelo sirve para explicar en clase la diferencia entre parámetros aprendidos y hiperparámetros, y para verificar que los coeficientes estimados coinciden con los del generador sintético.
-- Plantilla de publicación de modelos tabulares en HuggingFace: ejemplifica la estructura mínima de un repositorio (pesos `joblib`, `train.py`, `predict.py`, `requirements.txt`, model card) que un alumno puede replicar con otros datasets.
+- Plantilla de publicación de modelos tabulares en Hugging Face: ejemplifica la estructura mínima de un repositorio (pesos `joblib`, `train.py`, `predict.py`, `requirements.txt`, model card) que un alumno puede replicar con otros datasets.
 - Práctica de evaluación de modelos: permite calcular MAE y R² sobre el conjunto de test y discutir la diferencia entre error absoluto medio y coeficiente de determinación en un caso controlado.
 - Demostración de inferencia en producción de bajo coste: el script `predict.py` muestra cómo cargar un artefacto `joblib` y servir predicciones sin GPU, útil para ilustrar el despliegue de modelos tabulares ligeros.
 - Ejercicio de análisis de limitaciones: el modelo permite discutir extrapolación fuera del rango [35, 120] m² y la incapacidad de capturar interacciones entre características.
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| florpav/01-sklearn-regresion-seminario2026 | Regresión lineal (sklearn) | 4 | no aplica | MAE 3,08; R² 0,989 (test sintético) | MIT | HuggingFace |
+| florpav/01-sklearn-regresion-seminario2026 | Regresión lineal (sklearn) | 4 | no aplica | MAE 3,08; R² 0,989 (test sintético) | MIT | Hugging Face |
 | Modelos de regresión tabular de scikit-learn (p. ej. `Ridge`, `RandomForestRegressor`) | Regresión / ensemble | variable | no aplica | no disponible | BSD-3-Clause (scikit-learn) | PyPI |
 | Modelos de gradient boosting (XGBoost, LightGBM) | Ensemble de árboles | variable | no aplica | no disponible | Apache 2.0 / MIT | PyPI |
 
@@ -87,7 +87,7 @@ No se dispone de comparativas publicadas con alternativas concretas en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/florpav/01-sklearn-regresion-seminario2026
+- Modelo en Hugging Face: https://huggingface.co/florpav/01-sklearn-regresion-seminario2026
 - Documentación de scikit-learn (`LinearRegression`): https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
 - Documentación de `joblib`: https://joblib.readthedocs.io/
 - Documentación de `huggingface_hub.hf_hub_download`: https://huggingface.co/docs/huggingface_hub/guides/download

@@ -33,7 +33,7 @@ La innovacion tecnica principal del artefacto publicado no esta en el modelo en 
 - Razonamiento orientado a tareas de dominio juridico-tecnico, en particular redaccion y analisis de patentes, heredado de Patent-Instruct-7b.
 - Comprension y generacion de texto tecnico y legal especializado en propiedad intelectual.
 - Ejecucion local en hardware de consumo gracias a las cuantizaciones GGUF de bajo tamano.
-- Compatibilidad con endpoints (tag "endpoints_compatible" en HuggingFace).
+- Compatibilidad con endpoints (tag "endpoints_compatible" en Hugging Face).
 - No se ha documentado en la informacion disponible soporte de tool calling, function calling, capacidades de agente multi-paso, vision, audio ni modo de razonamiento explicito (thinking mode).
 - Capacidad multilingue limitada al ingles segun la metadata del modelo.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - f16: 13,6 GB
 - GPU recomendadas: no disponible en la informacion proporcionada. Por tamano, una RTX 3060 de 12 GB o superior puede alojar comodamente las cuantizaciones Q4 a Q8 en VRAM; una RTX 4090 (24 GB) permite f16 completo. GPUs de datacenter como A100 o H100 no son necesarias para este tamano.
 - Cabe en GPU de consumo: si. Las cuantizaciones Q4_K_M (4,2 GB) y Q5_K_M (4,9 GB) caben en GPUs con 6-8 GB de VRAM; Q8_0 (7,3 GB) requiere 8-10 GB; f16 (13,6 GB) requiere 16 GB o mas.
-- Opciones de despliegue: llama.cpp y Ollama son las opciones naturales para GGUF. El tag "endpoints_compatible" sugiere compatibilidad con endpoints de HuggingFace. No se documenta soporte especifico de vLLM o TGI para este artefacto GGUF en la informacion disponible.
+- Opciones de despliegue: llama.cpp y Ollama son las opciones naturales para GGUF. El tag "endpoints_compatible" sugiere compatibilidad con endpoints de Hugging Face. No se documenta soporte especifico de vLLM o TGI para este artefacto GGUF en la informacion disponible.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ La comparativa se limita a los dos modelos padre, ya que no se dispone de datos 
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Patent-Instruct-Orca-2-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Patent-Instruct-Orca-2-GGUF
 - Modelo base fusionado: https://huggingface.co/arcee-ai/Patent-Instruct-Orca-2
 - Modelo padre Orca-2: https://huggingface.co/microsoft/Orca-2-7b
 - Modelo padre Patent-Instruct: https://huggingface.co/arcee-ai/Patent-Instruct-7b

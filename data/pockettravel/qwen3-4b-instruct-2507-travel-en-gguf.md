@@ -108,7 +108,7 @@ El conjunto de prueba es nuevo en esta versión (más grupos y contextos con los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pockettravel/qwen3-4b-instruct-2507-travel-en-GGUF
+- Modelo en Hugging Face: https://huggingface.co/pockettravel/qwen3-4b-instruct-2507-travel-en-GGUF
 - Variante en italiano: https://huggingface.co/pockettravel/qwen3-4b-instruct-2507-travel-it-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Cuantización GGUF del modelo base usada en la comparación: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF

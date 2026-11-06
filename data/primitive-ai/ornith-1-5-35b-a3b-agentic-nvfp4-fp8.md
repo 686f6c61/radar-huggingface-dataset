@@ -70,11 +70,11 @@ La comparativa más directa es con las variantes del mismo modelo base, ya que c
 
 | Modelo | Tamaño | Tool calling | Knowledge | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **Este repo (agentic NVFP4/FP8)** | 22.6 G | 75.1 | 90.9 | MIT | HuggingFace |
-| Build general (mixed NVFP4/FP8) | 22.6 G | 71.8 | 91.7 | MIT | HuggingFace |
-| ornith-ai FP8 | 36.7 G | 74.9 | 91.2 | MIT | HuggingFace |
-| ornith-ai NVFP4 | 21.8 G | 73.1 | 90.9 | MIT | HuggingFace |
-| BF16 reference | 67.0 G | 75.1 | 92.0 | MIT | HuggingFace |
+| **Este repo (agentic NVFP4/FP8)** | 22.6 G | 75.1 | 90.9 | MIT | Hugging Face |
+| Build general (mixed NVFP4/FP8) | 22.6 G | 71.8 | 91.7 | MIT | Hugging Face |
+| ornith-ai FP8 | 36.7 G | 74.9 | 91.2 | MIT | Hugging Face |
+| ornith-ai NVFP4 | 21.8 G | 73.1 | 90.9 | MIT | Hugging Face |
+| BF16 reference | 67.0 G | 75.1 | 92.0 | MIT | Hugging Face |
 
 Frente a otros MoE de tamaño similar (por ejemplo, Qwen3-30B-A3B o DeepSeek-V3-Lite), no se dispone de datos comparativos en la información proporcionada. La ventaja principal de este build es su equilibrio entre tamaño reducido y precisión en tool calling, con una estabilidad entre ejecuciones que lo hace fiable para agentes.
 
@@ -90,7 +90,7 @@ Frente a otros MoE de tamaño similar (por ejemplo, Qwen3-30B-A3B o DeepSeek-V3-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/primitive-ai/Ornith-1.5-35B-A3B-agentic-NVFP4-FP8
+- Modelo en Hugging Face: https://huggingface.co/primitive-ai/Ornith-1.5-35B-A3B-agentic-NVFP4-FP8
 - Build general (mixed NVFP4/FP8): https://huggingface.co/primitive-ai/Ornith-1.5-35B-A3B-mixed-NVFP4-FP8
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Blog de Ornith sobre Ornith-1.5: https://ornith.ai/ornith_1_5.html

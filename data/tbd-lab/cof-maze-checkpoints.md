@@ -23,7 +23,7 @@ Su relevancia es acotada pero clara: es material de investigación reproducible 
 | Tamano del repositorio | 721,2 GB |
 | Periodicidad de los checkpoints | Cada 2000 pasos de entrenamiento |
 | Tarea | Navegacion en laberintos (generacion de video condicionada por imagen) |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -75,8 +75,8 @@ La informacion disponible solo permite comparar con el modelo base del que deriv
 
 | Modelo | Parametros | Modalidad | Tarea | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `tbd-lab/cof-maze-checkpoints` | 1.3B (heredados del base) | Video i2v autorregresivo causal | Navegacion en laberintos | no disponible | `.pt` (pesos + estado de entrenamiento) | Repositorio HuggingFace, 0 descargas |
-| Wan2.1-T2V-1.3B (modelo base) | 1.3B | Texto a video (difusion) | Generacion general de video | no disponible en la informacion proporcionada | safetensors / Diffusers (segun documentacion del autor original) | Publico en HuggingFace |
+| `tbd-lab/cof-maze-checkpoints` | 1.3B (heredados del base) | Video i2v autorregresivo causal | Navegacion en laberintos | no disponible | `.pt` (pesos + estado de entrenamiento) | Repositorio Hugging Face, 0 descargas |
+| Wan2.1-T2V-1.3B (modelo base) | 1.3B | Texto a video (difusion) | Generacion general de video | no disponible en la informacion proporcionada | safetensors / Diffusers (segun documentacion del autor original) | Publico en Hugging Face |
 
 Otros modelos comparables de la misma categoria (world models para navegacion o generadores de video autorregresivos de ~1-2B parametros): no disponible en la informacion proporcionada.
 
@@ -90,12 +90,12 @@ Otros modelos comparables de la misma categoria (world models para navegacion o 
 - **Formato `.pt` y seguridad**: cargar pesos en formato pickle con `torch.load` implica riesgo de ejecucion de codigo arbitrario. Se recomienda `weights_only=True` o conversion previa a safetensors.
 - **Consumo de almacenamiento**: 721,2 GB de repositorio, con checkpoints individuales que probablemente superan los 15 GB al incluir el estado del optimizador.
 - **Ausencia de informacion sobre sesgos e idiomas**: no se documentan sesgos conocidos, composicion del dataset de entrenamiento ni idiomas cubiertos, lo que impide cualquier evaluacion de equidad o cobertura linguistica.
-- **Inconsistencia en las fechas**: el repositorio figura como creado y actualizado el 2026-10-04, una fecha futura respecto al momento de redaccion de esta ficha. Esto sugiere un error de marca temporal o datos inconsistentes en el registro de HuggingFace.
+- **Inconsistencia en las fechas**: el repositorio figura como creado y actualizado el 2026-10-04, una fecha futura respecto al momento de redaccion de esta ficha. Esto sugiere un error de marca temporal o datos inconsistentes en el registro de Hugging Face.
 - **Documentacion unicamente en chino**: la model card esta redactada en chino y no incluye guia de uso, hiperparametros de inferencia ni descripcion del dataset.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tbd-lab/cof-maze-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/tbd-lab/cof-maze-checkpoints
 - Repositorio COF-maze (referenciado en la model card, sin URL disponible): no disponible
 - Configuraciones de entrenamiento (`causal-forcing-changes/configs/`): no disponible
 - Configuraciones de entrenamiento (`ops/train/configs/`): no disponible

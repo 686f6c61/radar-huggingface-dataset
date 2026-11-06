@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks adicionales ni comparaciones con ot
 
 ## Comparativa con modelos similares
 
-Se han encontrado otros modelos en HuggingFace con el mismo entorno y algoritmo, pero no se dispone de datos de rendimiento de estos modelos para comparar:
+Se han encontrado otros modelos en Hugging Face con el mismo entorno y algoritmo, pero no se dispone de datos de rendimiento de estos modelos para comparar:
 
 | Modelo | Autor | Algoritmo | Entorno | Recompensa declarada |
 |---|---|---|---|---|
@@ -84,7 +84,7 @@ No se dispone de más información comparativa en la documentación proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChickenHiiro/dqn-SpaceInvadersNoFrameskip-v4
+- Hugging Face: https://huggingface.co/ChickenHiiro/dqn-SpaceInvadersNoFrameskip-v4
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo: https://github.com/DLR-RM/rl-baselines3-zoo
 - Modelo similar (jaymanvirk): https://huggingface.co/jaymanvirk/dqn_space_invaders_no_frame_skip_v4

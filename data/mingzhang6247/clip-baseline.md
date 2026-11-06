@@ -42,7 +42,7 @@ El repositorio incluye `training_args.json` con una receta experimental por defe
 - Prototipado de arquitecturas de retrieval: el modelo permite probar rápidamente modificaciones en la atención o en la fusión de modalidades antes de escalar a datasets completos, gracias a su tamaño mínimo.
 - Pruebas de humo en pipelines de entrenamiento: al ser un checkpoint válido de inicialización, sirve para verificar que el código de entrenamiento y evaluación funciona correctamente sin incurrir en costes computacionales.
 - Experimentos educativos sobre CLIP: estudiantes e investigadores pueden estudiar el comportamiento de componentes como GroupNorm o atención dispersa en un contexto de retrieval con recursos limitados.
-- Desarrollo de adaptadores para APIs de HuggingFace: al ser una implementación personalizada, el repositorio invita a escribir adaptadores explícitos, lo que puede servir como ejercicio de integración con herramientas estándar.
+- Desarrollo de adaptadores para APIs de Hugging Face: al ser una implementación personalizada, el repositorio invita a escribir adaptadores explícitos, lo que puede servir como ejercicio de integración con herramientas estándar.
 - Evaluación de líneas base de capacidad equivalente: el autor sugiere usarlo como baseline de tamaño reducido para comparar contra modelos más grandes en tareas como Flickr30k, siempre que se entrene con la misma exposición a datos.
 - Depuración de configuraciones de entrenamiento: la receta por defecto (AdamW, coseno) permite validar la configuración de hiperparámetros antes de lanzar entrenamientos costosos.
 
@@ -73,6 +73,6 @@ No se dispone de comparativas publicadas para este modelo. Como referencia conce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mingzhang6247/clip-baseline
+- Repositorio en Hugging Face: https://huggingface.co/mingzhang6247/clip-baseline
 - Repositorio de referencia de OpenAI CLIP: https://github.com/openai/CLIP
 - Página de CLIP en OpenAI: https://openai.com/index/clip/

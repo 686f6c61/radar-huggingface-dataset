@@ -70,7 +70,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/DanKau/gliner2-pii-onnx)
+- [Modelo en Hugging Face](https://huggingface.co/DanKau/gliner2-pii-onnx)
 - [Modelo base: fastino/gliner2-privacy-filter-PII-multi](https://huggingface.co/fastino/gliner2-privacy-filter-PII-multi)
 - [Repositorio de GLiNER2 (fastino-ai)](https://github.com/fastino-ai/GLiNER2)
 - [Librería gliner2-onnx (referencia en la model card)](https://github.com/lmoe/gliner2-onnx)

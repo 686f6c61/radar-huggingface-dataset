@@ -82,10 +82,10 @@ No hay datos de rendimiento publicados para este adaptador ni para sus alternati
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|---|
-| ct-qwen36-35b-self-gen-postcot-g1-b1 | Adaptador LoRA (r=64, all-linear) sobre Qwen3.6-35B-A3B | No disponible (base etiquetado como 35B-A3B) | No disponible (entrenado a 8192) | No disponible | Repositorio publico en HuggingFace, 0 descargas | No disponible |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | Modelo MoE completo | No disponible en la informacion proporcionada | No disponible | No disponible | Publico en HuggingFace | No disponible |
+| ct-qwen36-35b-self-gen-postcot-g1-b1 | Adaptador LoRA (r=64, all-linear) sobre Qwen3.6-35B-A3B | No disponible (base etiquetado como 35B-A3B) | No disponible (entrenado a 8192) | No disponible | Repositorio publico en Hugging Face, 0 descargas | No disponible |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | Modelo MoE completo | No disponible en la informacion proporcionada | No disponible | No disponible | Publico en Hugging Face | No disponible |
 | Otras ramas y generaciones de la misma cadena (`qwen36-35b-self-gen-postcot`, g0, g2, b2...) | Adaptadores LoRA con la misma receta | No disponible | No disponible | No disponible | Referenciadas por la nomenclatura del programa, sin enlace en la informacion proporcionada | No disponible |
-| Adaptadores LoRA sobre modelos de ~30-35B de la familia Qwen | Adaptador PEFT | No disponible | Depende del base | Depende del base | Ampliamente disponibles en HuggingFace | No disponible |
+| Adaptadores LoRA sobre modelos de ~30-35B de la familia Qwen | Adaptador PEFT | No disponible | Depende del base | Depende del base | Ampliamente disponibles en Hugging Face | No disponible |
 
 No se dispone de información suficiente para comparar rendimiento, contexto efectivo ni licencia con alternativas concretas.
 
@@ -105,7 +105,7 @@ No se dispone de información suficiente para comparar rendimiento, contexto efe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-self-gen-postcot-g1-b1
+- Repositorio en Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-self-gen-postcot-g1-b1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Constitución semilla de esta generación: `training_seed_constitution.md`, incluido en el repositorio (no se proporciona URL directa).
 - Registro de exportación: `tinker_meta.json`, incluido en el repositorio (no se proporciona URL directa).

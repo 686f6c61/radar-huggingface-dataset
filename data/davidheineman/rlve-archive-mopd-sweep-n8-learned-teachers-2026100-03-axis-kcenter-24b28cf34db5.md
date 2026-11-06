@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio aloja un checkpoint archivado de un experimento de investigación identificado como `03-Axis_KCenter`, publicado por el usuario de HuggingFace davidheineman bajo la etiqueta `rlve` y `scratch-archive`. No se trata de un modelo listo para producción, sino de la preservación del estado final de un entrenamiento ya completado: según la propia model card, corresponde al paso 149 de la ruta de scratch `runs/mopd-sweep-n8-learned-teachers-20261002-165650/resumable/03-Axis_KCenter`, con un identificador de ejecución de Weights & Biases `48bd4a39`.
+Este repositorio aloja un checkpoint archivado de un experimento de investigación identificado como `03-Axis_KCenter`, publicado por el usuario de Hugging Face davidheineman bajo la etiqueta `rlve` y `scratch-archive`. No se trata de un modelo listo para producción, sino de la preservación del estado final de un entrenamiento ya completado: según la propia model card, corresponde al paso 149 de la ruta de scratch `runs/mopd-sweep-n8-learned-teachers-20261002-165650/resumable/03-Axis_KCenter`, con un identificador de ejecución de Weights & Biases `48bd4a39`.
 
 El checkpoint contiene 1.777.088.000 parámetros (aproximadamente 1,78 mil millones) almacenados en formato `hf-safetensors`, con un tamaño de repositorio de 3,6 GB, lo que es coherente con pesos en precisión de 16 bits. El tag `qwen2` indica que la arquitectura subyacente pertenece a la familia Qwen2, aunque la model card no incluye el `config.json`, la longitud de contexto, el tokenizador ni los idiomas soportados.
 
@@ -90,7 +90,7 @@ La comparación es orientativa en cuanto a tamaño y familia arquitectónica; no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n8-learned-teachers-2026100-03-axis-kcenter-24b28cf34db5
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n8-learned-teachers-2026100-03-axis-kcenter-24b28cf34db5
 - Ejecución de Weights & Biases: identificador `48bd4a39`, enlace directo no disponible
 - Ruta de scratch original: `runs/mopd-sweep-n8-learned-teachers-20261002-165650/resumable/03-Axis_KCenter` (ruta interna, sin URL pública)
 - Paper, blog o repositorio asociado: no disponible

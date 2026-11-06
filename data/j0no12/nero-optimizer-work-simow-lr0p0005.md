@@ -28,7 +28,7 @@ El modelo se publica con la libreria MLX de Apple y no como checkpoint de Transf
 | Libreria | `mlx` |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion (metadatos de HuggingFace) | 2026-09-22 |
+| Fecha de creacion (metadatos de Hugging Face) | 2026-09-22 |
 
 ## Arquitectura y entrenamiento
 
@@ -116,7 +116,7 @@ La diferencia sustancial no es de rendimiento sino de proposito: este checkpoint
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-simow-lr0p0005
+- Repositorio en Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-simow-lr0p0005
 - Archivos incluidos en el repositorio: `model.npz`, `state.json`, `run.json`, `metrics.jsonl`, `config.json`
 - Paper, blog o repositorio de referencia del metodo SimOW: no disponible
 - Documentacion de MLX: no disponible en la informacion proporcionada

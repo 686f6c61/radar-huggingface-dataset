@@ -20,7 +20,7 @@ Su relevancia actual radica en que ofrece un punto de partida transparente y rep
 
 ## Arquitectura y entrenamiento
 
-La arquitectura implementada es un modelo Mixer con configuración declarada como "xlarge". Según la model card, incorpora atención grouped query, fusión por co-attention, activación mish y normalización batchnorm. No se facilitan más detalles sobre el número de capas ni la dimensionalidad oculta, aunque estos están registrados en `config.json`. La implementación es original y no es compatible directamente con las APIs de carga automática de HuggingFace; se requiere un adaptador explícito, tal como advierte el autor.
+La arquitectura implementada es un modelo Mixer con configuración declarada como "xlarge". Según la model card, incorpora atención grouped query, fusión por co-attention, activación mish y normalización batchnorm. No se facilitan más detalles sobre el número de capas ni la dimensionalidad oculta, aunque estos están registrados en `config.json`. La implementación es original y no es compatible directamente con las APIs de carga automática de Hugging Face; se requiere un adaptador explícito, tal como advierte el autor.
 
 En cuanto al entrenamiento, no se ha realizado ninguno: el checkpoint `model.safetensors` es un estado de inicialización válido para pruebas de humo, no un modelo entrenado. La receta experimental por defecto incluida en `training_args.json` define el optimizador Adam con un programador de pasos ("step schedule"), pero el propio autor indica que estos valores son solo puntos de partida, no evidencia de una ejecución completada. No se mencionan datos de entrenamiento, tokens, ni procesos de RLHF/DPO. Para una evaluación significativa, el autor recomienda entrenar todos los baselines con la misma exposición de datos, presupuesto de ajuste y semillas, y evaluar en un conjunto de validación específico de la tarea.
 
@@ -39,7 +39,7 @@ En cuanto al entrenamiento, no se ha realizado ninguno: el checkpoint `model.saf
 - Punto de partida para preentrenamiento desde cero: investigadores pueden usar el script de entrenamiento incluido para entrenar el modelo sobre sus propios conjuntos de datos, partiendo de los pesos de inicialización.
 - Material didáctico: la implementación transparente y el ejemplo de entrenamiento en `main.py` sirven para ilustrar cómo construir y depurar una arquitectura custom en PyTorch.
 - Comparación de configuraciones: el script permite generar distintas configuraciones y medir los efectos de cambios en activación, normalización o fusión sobre la velocidad de ejecución y el uso de memoria.
-- Desarrollo de adaptadores para HuggingFace: al ser una implementación no estándar, puede utilizarse como ejercicio para escribir adaptadores que permitan usar modelos custom con APIs de carga genéricas.
+- Desarrollo de adaptadores para Hugging Face: al ser una implementación no estándar, puede utilizarse como ejercicio para escribir adaptadores que permitan usar modelos custom con APIs de carga genéricas.
 
 ## Benchmarks y rendimiento
 
@@ -67,4 +67,4 @@ No se han identificado modelos comparables en la información disponible. El mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adambsl80/mixer-generation
+- Modelo en Hugging Face: https://huggingface.co/adambsl80/mixer-generation

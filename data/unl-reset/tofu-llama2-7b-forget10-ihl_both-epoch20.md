@@ -42,7 +42,7 @@ El entrenamiento se ha realizado sobre el conjunto de datos TOFU, concretamente 
 - **Investigación en *machine unlearning***: el modelo sirve como checkpoint de referencia para evaluar si la combinación de pérdida IHL y entropía cruzada sobre retención elimina eficazmente la información de los autores del conjunto `forget10`. Se usaría comparando sus respuestas sobre el conjunto de olvido frente a las del modelo base `locuslab/tofu_ft_llama2-7b`.
 - **Evaluación de retención de conocimiento**: al conservar los pesos del transformer del modelo base y reinicializar embeddings y cabeza LM, permite estudiar cuánto conocimiento general se preserva tras el proceso de desaprendizaje, midiendo la degradación en el conjunto de retención.
 - **Análisis de estabilidad del desaprendizaje**: al ser la época 20 de 20, es útil para estudiar si un entrenamiento prolongado con regularización conduce a sobreajuste o a colapso de la capacidad generativa en comparación con checkpoints intermedios.
-- **Reproducibilidad de experimentos TOFU**: investigadores que replican los resultados de TOFU pueden cargar este checkpoint directamente desde HuggingFace para verificar métricas de olvido y retención sin reentrenar.
+- **Reproducibilidad de experimentos TOFU**: investigadores que replican los resultados de TOFU pueden cargar este checkpoint directamente desde Hugging Face para verificar métricas de olvido y retención sin reentrenar.
 - **Estudio de la inicialización de embeddings**: dado que los embeddings de entrada y la cabeza LM se reinicializan desde `NousResearch/Llama-2-7b-chat-hf` mientras el resto de pesos se mantienen, el modelo permite analizar el efecto de esta reinicialización parcial en el comportamiento generativo.
 - **Auditoría de licencias y trazabilidad**: al ser un derivado de Llama 2 con licencia `llama2`, sirve como caso de estudio sobre la trazabilidad de modelos derivados en la investigación académica.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch20` | 6.738 M | no disponible (Llama 2: 4096) | llama2 | HuggingFace (0 descargas) | Checkpoint de investigación en *unlearning* |
-| `locuslab/tofu_ft_llama2-7b` | ~6.738 M | Llama 2: 4096 | llama2 | HuggingFace | Modelo base afinado con TOFU, sin desaprendizaje |
-| `NousResearch/Llama-2-7b-chat-hf` | ~6.738 M | Llama 2: 4096 | llama2 | HuggingFace | Llama 2 7B chat; fuente de embeddings y LM head |
-| Llama 2 7B (Meta) | ~6.738 M | 4096 | llama2 | HuggingFace, Meta | Modelo original de propósito general |
+| `unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch20` | 6.738 M | no disponible (Llama 2: 4096) | llama2 | Hugging Face (0 descargas) | Checkpoint de investigación en *unlearning* |
+| `locuslab/tofu_ft_llama2-7b` | ~6.738 M | Llama 2: 4096 | llama2 | Hugging Face | Modelo base afinado con TOFU, sin desaprendizaje |
+| `NousResearch/Llama-2-7b-chat-hf` | ~6.738 M | Llama 2: 4096 | llama2 | Hugging Face | Llama 2 7B chat; fuente de embeddings y LM head |
+| Llama 2 7B (Meta) | ~6.738 M | 4096 | llama2 | Hugging Face, Meta | Modelo original de propósito general |
 
 La comparativa se limita a los modelos directamente relacionados en la información disponible. No se dispone de datos de rendimiento comparativo entre ellos.
 
@@ -81,7 +81,7 @@ La comparativa se limita a los modelos directamente relacionados en la informaci
 
 ## Enlaces
 
-- [HuggingFace: unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch20](https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch20)
+- [Hugging Face: unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch20](https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch20)
 - [Modelo base: locuslab/tofu_ft_llama2-7b](https://huggingface.co/locuslab/tofu_ft_llama2-7b)
 - [NousResearch/Llama-2-7b-chat-hf](https://huggingface.co/NousResearch/Llama-2-7b-chat-hf)
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

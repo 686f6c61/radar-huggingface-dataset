@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nexustest1-magicoder75k-oct29 es un ajuste fino (finetune) publicado por DQN-Labs sobre el modelo base `unsloth/Qwen3.8-27B-unsloth-bnb-4bit`, una variante cuantizada a 4 bits en formato bitsandbytes del Qwen3.8-27B. El modelo se distribuye a traves de HuggingFace con la libreria transformers y pesos en safetensors, y su pipeline declarado es `image-text-to-text`, lo que indica que conserva la torre de vision del modelo base multimodal de Qwen. El nombre del repositorio sugiere un entrenamiento orientado a generacion de codigo sobre un dataset de aproximadamente 75.000 muestras (magicoder75k), aunque la model card no documenta el dataset ni la receta de entrenamiento.
+nexustest1-magicoder75k-oct29 es un ajuste fino (finetune) publicado por DQN-Labs sobre el modelo base `unsloth/Qwen3.8-27B-unsloth-bnb-4bit`, una variante cuantizada a 4 bits en formato bitsandbytes del Qwen3.8-27B. El modelo se distribuye a traves de Hugging Face con la libreria transformers y pesos en safetensors, y su pipeline declarado es `image-text-to-text`, lo que indica que conserva la torre de vision del modelo base multimodal de Qwen. El nombre del repositorio sugiere un entrenamiento orientado a generacion de codigo sobre un dataset de aproximadamente 75.000 muestras (magicoder75k), aunque la model card no documenta el dataset ni la receta de entrenamiento.
 
 Con 27.781.427.952 parametros totales (unos 27,8 mil millones) y un tamano de repositorio de 55,6 GB, el modelo se situa en la gama alta de modelos abiertos de proposito general con capacidades multimodales. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales, y el unico idioma declarado es el ingles. Es relevante ahora porque combina un modelo base reciente de la familia Qwen con un ajuste fino especializado en codigo, un patron habitual para crear asistentes de programacion autoalojados, aunque la ausencia de documentacion detallada y de benchmarks publicados limita seriamente su evaluacion previa.
 
@@ -28,9 +28,9 @@ La informacion disponible es escasa: la model card es practicamente un esqueleto
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del Qwen3.8-27B, etiquetado en HuggingFace con el tag `qwen3_5`, que corresponde a un transformer multimodal capaz de procesar imagen y texto (pipeline `image-text-to-text`). No se dispone de informacion detallada sobre el numero de capas, dimensiones ocultas, mecanismo de atencion ni tipo de tokenizador, ya que la model card no los documenta. El modelo base empleado es una version cuantizada a 4 bits con bitsandbytes generada por Unsloth, lo que implica que el ajuste fino se realizo sobre pesos ya comprimidos, un enfoque tipico de QLoRA.
+El modelo hereda la arquitectura del Qwen3.8-27B, etiquetado en Hugging Face con el tag `qwen3_5`, que corresponde a un transformer multimodal capaz de procesar imagen y texto (pipeline `image-text-to-text`). No se dispone de informacion detallada sobre el numero de capas, dimensiones ocultas, mecanismo de atencion ni tipo de tokenizador, ya que la model card no los documenta. El modelo base empleado es una version cuantizada a 4 bits con bitsandbytes generada por Unsloth, lo que implica que el ajuste fino se realizo sobre pesos ya comprimidos, un enfoque tipico de QLoRA.
 
-El entrenamiento se realizo, segun la model card, con Unsloth y la libreria TRL de HuggingFace, lo que sugiere un ajuste fino supervisado (SFT) o posiblemente DPO, aunque no se especifica el metodo. El nombre del repositorio apunta a un dataset de aproximadamente 75.000 muestras de codigo (posiblemente una variante de Magicoder), pero no se confirma la composicion, el numero de tokens vistos ni si hubo etapas de RLHF. No se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
+El entrenamiento se realizo, segun la model card, con Unsloth y la libreria TRL de Hugging Face, lo que sugiere un ajuste fino supervisado (SFT) o posiblemente DPO, aunque no se especifica el metodo. El nombre del repositorio apunta a un dataset de aproximadamente 75.000 muestras de codigo (posiblemente una variante de Magicoder), pero no se confirma la composicion, el numero de tokens vistos ni si hubo etapas de RLHF. No se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
@@ -90,7 +90,7 @@ La comparativa con Qwen2.5-Coder-32B y Codestral-22B es orientativa: no se dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DQN-Labs/nexustest1-magicoder75k-oct29
+- Hugging Face: https://huggingface.co/DQN-Labs/nexustest1-magicoder75k-oct29
 - Modelo base: https://huggingface.co/unsloth/Qwen3.8-27B-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

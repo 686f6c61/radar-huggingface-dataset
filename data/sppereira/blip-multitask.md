@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sppereira/blip-multitask` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura tipo BLIP orientada a tareas múltiples (multitask). No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código acompañado de un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El autor lo describe explícitamente como una base de trabajo para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y no reclama ninguna puntuación de benchmark.
+`sppereira/blip-multitask` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura tipo BLIP orientada a tareas múltiples (multitask). No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código acompañado de un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El autor lo describe explícitamente como una base de trabajo para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y no reclama ninguna puntuación de benchmark.
 
 La configuración declarada en la model card incluye atención dispersa (sparse attention), fusión tipo Tucker, activación swish y normalización por batchnorm, dentro de una escala "base". El repositorio acompaña al peso `model.safetensors` con `finetune.py` como artefacto principal, `config.json` con los ajustes de arquitectura y `training_args.json` con la receta de experimento por defecto (optimizador SGD con planificador onecycle).
 
@@ -94,5 +94,5 @@ La comparacion cuantitativa no es posible con los datos disponibles. La diferenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sppereira/blip-multitask
+- Modelo en Hugging Face: https://huggingface.co/sppereira/blip-multitask
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a papers asociados, a blogs tecnicos, a repositorios de codigo ni a demos. Los resultados devueltos por la busqueda corresponden a contenidos sin relacion con este repositorio (articulos de consumo y ofertas comerciales), por lo que se descartan.

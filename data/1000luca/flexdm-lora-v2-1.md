@@ -77,10 +77,10 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FlexDM-LoRA v2.1 | Adaptador LoRA sobre Gemma-4-31B (rango 128, siete proyecciones, 60 capas) | 131.071 tokens | Decisiones estructuradas por logits de etiqueta | CC-BY-SA-4.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| FlexDM-LoRA v2.0 | Adaptador LoRA sobre Gemma-4-31B (rango 64) | No disponible en la información | Decisiones estructuradas por logits de etiqueta | No disponible en la información | HuggingFace |
-| FlexDM-LoRA v1.0 | Adaptador LoRA sobre Gemma-4-31B (rango 64) | No disponible en la información | Decisiones estructuradas por logits de etiqueta | No disponible en la información | HuggingFace |
-| Gemma-4-31B-it (base) | 31B | No disponible en la información | Generación de texto conversacional | No disponible en la información | HuggingFace |
+| FlexDM-LoRA v2.1 | Adaptador LoRA sobre Gemma-4-31B (rango 128, siete proyecciones, 60 capas) | 131.071 tokens | Decisiones estructuradas por logits de etiqueta | CC-BY-SA-4.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| FlexDM-LoRA v2.0 | Adaptador LoRA sobre Gemma-4-31B (rango 64) | No disponible en la información | Decisiones estructuradas por logits de etiqueta | No disponible en la información | Hugging Face |
+| FlexDM-LoRA v1.0 | Adaptador LoRA sobre Gemma-4-31B (rango 64) | No disponible en la información | Decisiones estructuradas por logits de etiqueta | No disponible en la información | Hugging Face |
+| Gemma-4-31B-it (base) | 31B | No disponible en la información | Generación de texto conversacional | No disponible en la información | Hugging Face |
 
 No se dispone de datos de benchmarks comparables con otros adaptadores de decisión de la misma categoría en la información proporcionada.
 
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks comparables con otros adaptadores de decisi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/1000luca/FlexDM-LoRA-v2.1
+- Hugging Face: https://huggingface.co/1000luca/FlexDM-LoRA-v2.1
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Versión anterior 2.0: https://huggingface.co/1000luca/FlexDM-LoRA-v2.0
 - Versión anterior 1.0: https://huggingface.co/1000luca/FlexDM-LoRA-v1.0

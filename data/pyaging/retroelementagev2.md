@@ -70,6 +70,6 @@ No se dispone de datos comparativos con otros relojes epigeneticos en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pyaging/retroelementagev2
+- Modelo en Hugging Face: https://huggingface.co/pyaging/retroelementagev2
 - Documentacion de pyaging (Clock Catalogue): https://pyaging.readthedocs.io
 - Articulo original (DOI): https://doi.org/10.1111/acel.14288

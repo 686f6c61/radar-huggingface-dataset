@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jkwalker/mixer-demo` es un repositorio de código de referencia publicado en HuggingFace que implementa una arquitectura **Mixer** aplicada a tareas de **matching** (emparejamiento) en una configuración deliberadamente pequeña. El autor lo presenta explícitamente como una "working implementation" orientada a código transparente y pruebas de humo (smoke tests) reproducibles, y descarta cualquier afirmación de rendimiento: la model card indica de forma literal que "no se reclama ninguna puntuación de benchmark en este repositorio".
+`Jkwalker/mixer-demo` es un repositorio de código de referencia publicado en Hugging Face que implementa una arquitectura **Mixer** aplicada a tareas de **matching** (emparejamiento) en una configuración deliberadamente pequeña. El autor lo presenta explícitamente como una "working implementation" orientada a código transparente y pruebas de humo (smoke tests) reproducibles, y descarta cualquier afirmación de rendimiento: la model card indica de forma literal que "no se reclama ninguna puntuación de benchmark en este repositorio".
 
 El artefacto de pesos incluido, `model.safetensors`, es un checkpoint de **inicialización válido para smoke tests**, no un modelo entrenado. El propio autor advierte que "no se presenta como un checkpoint entrenado" y que no ha sido auditado en robustez, equidad o transferencia de dominio. Con 24.832 parámetros totales (dato extraído del propio safetensors), el modelo está varios órdenes de magnitud por debajo de cualquier LLM operativo: es material de investigación y andamiaje de experimentos, no un sistema desplegable para tareas de producción.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es, por tanto, acotada y debe interpretarse con prec
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors (checkpoint de inicialización); código en PyTorch (`main.py`) |
 | Escala declarada | Small (según la model card) |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-09-15 |
@@ -75,7 +75,7 @@ No se dispone de modelos comparables en la información proporcionada. El reposi
 | Longitud de contexto | No disponible | No disponible |
 | Rendimiento | Sin benchmarks declarados | No disponible |
 | Licencia | BSD-3-Clause | No disponible |
-| Disponibilidad | Repositorio en HuggingFace, 0 descargas | No disponible |
+| Disponibilidad | Repositorio en Hugging Face, 0 descargas | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ No se dispone de modelos comparables en la información proporcionada. El reposi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jkwalker/mixer-demo
-- Repositorio de archivos: `main.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors` (checkpoint de inicialización), accesibles desde la sección de archivos de la página de HuggingFace.
+- Modelo en Hugging Face: https://huggingface.co/Jkwalker/mixer-demo
+- Repositorio de archivos: `main.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors` (checkpoint de inicialización), accesibles desde la sección de archivos de la página de Hugging Face.
 - Paper, blog, repositorio de código adicional o demo: no disponibles.
 - La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los resultados obtenidos correspondían a páginas de programación televisiva sin relación con el contenido.

@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks de capacidades generales (MMLU, Hum
 
 | Modelo | Parametros | Contexto | Seguridad (ASR) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l3_remove20_swapgapiter_b010_r06 | 8,03B (fraccion densa 0,7998) | heredado del base (8192) | AdvBench 0,0150; StrongREJECT 0,0500; sobrerrechazo 0,2400 | Llama 3 Community License | HuggingFace, 0 descargas, 0 likes |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8,03B | 8192 | no disponible en esta informacion | Llama 3 Community License | HuggingFace, ampliamente desplegado |
+| svd-safety-l3_remove20_swapgapiter_b010_r06 | 8,03B (fraccion densa 0,7998) | heredado del base (8192) | AdvBench 0,0150; StrongREJECT 0,0500; sobrerrechazo 0,2400 | Llama 3 Community License | Hugging Face, 0 descargas, 0 likes |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8,03B | 8192 | no disponible en esta informacion | Llama 3 Community License | Hugging Face, ampliamente desplegado |
 | Otros artefactos de compresion por SVD sobre Llama 3 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de cifras comparables del modelo base bajo la misma bateria de evaluacion, por lo que la comparacion de seguridad no puede cuantificarse con los datos proporcionados.
@@ -96,7 +96,7 @@ No se dispone de cifras comparables del modelo base bajo la misma bateria de eva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r06
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r06
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Paper de SVD-LLM: no disponible en los resultados de busqueda
 - Repositorio de codigo, demo o blog del autor: no disponible en los resultados de busqueda

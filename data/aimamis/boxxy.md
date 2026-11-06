@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Boxxy es un adaptador LoRA de generacion de imagenes texto-a-imagen publicado por el usuario AiMamis en HuggingFace. Se distribuye como un adaptador sobre el modelo base krea/Krea-2-Turbo, un modelo de difusion de la familia Krea, y esta pensado para reproducir un personaje concreto: el prompt de instancia declarado por el autor es "Boxxy, Brunette hair, dark hazel eyes, medium skin, thick eyeliner".
+Boxxy es un adaptador LoRA de generacion de imagenes texto-a-imagen publicado por el usuario AiMamis en Hugging Face. Se distribuye como un adaptador sobre el modelo base krea/Krea-2-Turbo, un modelo de difusion de la familia Krea, y esta pensado para reproducir un personaje concreto: el prompt de instancia declarado por el autor es "Boxxy, Brunette hair, dark hazel eyes, medium skin, thick eyeliner".
 
 El modelo se publica bajo la libreria diffusers con la etiqueta de plantilla diffusion-lora y tiene un unico proposito: la generacion de imagenes fotorrealistas o ilustradas del personaje Boxxy, activada mediante palabras clave. El repositorio ocupa aproximadamente 0,5 GB, un tamano coherente con un adaptador LoRA y no con un modelo completo, y se distribuye bajo licencia openrail++.
 
@@ -83,7 +83,7 @@ No se han proporcionado datos que permitan establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AiMamis/Boxxy
+- Modelo en Hugging Face: https://huggingface.co/AiMamis/Boxxy
 - Pestana de archivos y versiones: https://huggingface.co/AiMamis/Boxxy/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Imagen de muestra declarada en el widget: images/Boxxy_00001_.png (dentro del repositorio)

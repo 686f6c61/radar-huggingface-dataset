@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Winnow es un modelo publicado en HuggingFace por el usuario saurabhK009 bajo el identificador `saurabhK009/winnow`. Se trata de un modelo de aproximadamente 149,6 millones de parametros, distribuido unicamente en formato safetensors y con licencia Apache 2.0. La model card publicada por el autor no contiene mas que el bloque de metadatos de licencia, por lo que no hay informacion oficial sobre arquitectura, datos de entrenamiento, idiomas o tareas soportadas.
+Winnow es un modelo publicado en Hugging Face por el usuario saurabhK009 bajo el identificador `saurabhK009/winnow`. Se trata de un modelo de aproximadamente 149,6 millones de parametros, distribuido unicamente en formato safetensors y con licencia Apache 2.0. La model card publicada por el autor no contiene mas que el bloque de metadatos de licencia, por lo que no hay informacion oficial sobre arquitectura, datos de entrenamiento, idiomas o tareas soportadas.
 
 Por su tamano, el modelo se situa en la categoria de modelos pequenos (por debajo de los 200 millones de parametros), un rango habitualmente asociado a tareas de generacion de texto ligera, clasificacion, extraccion de informacion, prototipado rapido y despliegue en hardware modesto, incluido CPU. Sin embargo, esta adscripcion es una inferencia basada exclusivamente en el recuento de parametros y no en documentacion tecnica del autor.
 
-La relevancia actual del modelo es limitada: en el momento de la consulta acumula 0 descargas y 0 likes, no declara pipeline de tarea en HuggingFace y su repositorio ocupa 0,6 GB. La ausencia de model card detallada, de resultados de evaluacion y de ejemplos de uso hace que cualquier evaluacion seria requiera inspeccion directa de los pesos y de la configuracion del modelo.
+La relevancia actual del modelo es limitada: en el momento de la consulta acumula 0 descargas y 0 likes, no declara pipeline de tarea en Hugging Face y su repositorio ocupa 0,6 GB. La ausencia de model card detallada, de resultados de evaluacion y de ejemplos de uso hace que cualquier evaluacion seria requiera inspeccion directa de los pesos y de la configuracion del modelo.
 
 ## Especificaciones tecnicas
 
@@ -20,9 +20,9 @@ La relevancia actual del modelo es limitada: en el momento de la consulta acumul
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 0,6 GB |
-| Pipeline declarado en HuggingFace | no disponible |
-| Fecha de creacion (segun HuggingFace) | 2026-09-26 |
-| Fecha de ultima actualizacion (segun HuggingFace) | 2026-09-26 |
+| Pipeline declarado en Hugging Face | no disponible |
+| Fecha de creacion (segun Hugging Face) | 2026-09-26 |
+| Fecha de ultima actualizacion (segun Hugging Face) | 2026-09-26 |
 | Descargas | 0 |
 | Likes | 0 |
 
@@ -34,7 +34,7 @@ El unico dato objetivo derivable del repositorio es el recuento de parametros (1
 
 ## Capacidades
 
-No se ha publicado informacion sobre las capacidades del modelo en la model card ni en los metadatos de HuggingFace. En concreto, no esta confirmado ni desmentido que el modelo soporte:
+No se ha publicado informacion sobre las capacidades del modelo en la model card ni en los metadatos de Hugging Face. En concreto, no esta confirmado ni desmentido que el modelo soporte:
 
 - Generacion de texto, razonamiento, codigo o matematicas.
 - Tool calling o function calling.
@@ -99,6 +99,6 @@ La comparacion de rendimiento no puede realizarse porque el autor de winnow no h
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/saurabhK009/winnow
+- Hugging Face: https://huggingface.co/saurabhK009/winnow
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

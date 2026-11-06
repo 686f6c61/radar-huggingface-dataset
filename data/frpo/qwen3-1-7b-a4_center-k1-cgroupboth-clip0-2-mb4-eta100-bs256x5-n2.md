@@ -60,9 +60,9 @@ No se dispone de datos comparativos con otros modelos de la misma categoría. Co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3-1.7B (base) | ~1,7B | No disponible | Apache 2.0 (según modelo base) | HuggingFace |
-| FRPO/qwen3-1.7b-a4_center... (este modelo) | ~2,03B (incluye pesos fp32) | No disponible | No disponible | HuggingFace |
-| Llama-3.2-1B | 1,23B | 128K | Llama 3.2 Community License | HuggingFace |
+| Qwen/Qwen3-1.7B (base) | ~1,7B | No disponible | Apache 2.0 (según modelo base) | Hugging Face |
+| FRPO/qwen3-1.7b-a4_center... (este modelo) | ~2,03B (incluye pesos fp32) | No disponible | No disponible | Hugging Face |
+| Llama-3.2-1B | 1,23B | 128K | Llama 3.2 Community License | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -76,6 +76,6 @@ No se dispone de datos comparativos con otros modelos de la misma categoría. Co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FRPO/qwen3-1.7b-a4_center-k1-cGroupBoth-clip0.2-mb4-eta100-bs256x5-n2
+- Repositorio Hugging Face: https://huggingface.co/FRPO/qwen3-1.7b-a4_center-k1-cGroupBoth-clip0.2-mb4-eta100-bs256x5-n2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Framework verl: https://github.com/volcengine/verl

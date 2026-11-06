@@ -70,5 +70,5 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/john-rivera/assignment-matching
+- Repositorio Hugging Face: https://huggingface.co/john-rivera/assignment-matching
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) asociados a este modelo específico en la búsqueda web.

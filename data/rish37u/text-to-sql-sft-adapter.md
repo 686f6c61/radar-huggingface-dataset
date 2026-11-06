@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `rish37u/text-to-sql-sft-adapter` es un adaptador LoRA (Low-Rank Adaptation) diseñado para especializar el modelo base `unsloth/Qwen2.5-Coder-7B` en la tarea de generación de consultas SQL a partir de lenguaje natural (text-to-SQL). Fue desarrollado por el usuario rish37u y publicado en HuggingFace bajo la librería PEFT, lo que indica que se trata de un adaptador ligero que no reemplaza el modelo completo, sino que se combina con el modelo base para ajustar su comportamiento hacia la generación de SQL.
+El modelo `rish37u/text-to-sql-sft-adapter` es un adaptador LoRA (Low-Rank Adaptation) diseñado para especializar el modelo base `unsloth/Qwen2.5-Coder-7B` en la tarea de generación de consultas SQL a partir de lenguaje natural (text-to-SQL). Fue desarrollado por el usuario rish37u y publicado en Hugging Face bajo la librería PEFT, lo que indica que se trata de un adaptador ligero que no reemplaza el modelo completo, sino que se combina con el modelo base para ajustar su comportamiento hacia la generación de SQL.
 
-El adaptador fue entrenado mediante Supervised Fine-Tuning (SFT) utilizando las herramientas de Unsloth y TRL, tal como se refleja en las etiquetas del repositorio. La relevancia de este modelo radica en su enfoque eficiente: en lugar de reentrenar los 7.000 millones de parámetros del modelo base, solo se ajustan unos pocos millones de parámetros del adaptador, lo que reduce considerablemente los costes de cómputo y almacenamiento. Aunque el modelo no ha sido descargado ni valorado en HuggingFace, su diseño como adaptador LoRA sobre un modelo robusto como Qwen2.5-Coder-7B lo hace apto para tareas de generación de SQL en entornos empresariales y de análisis de datos.
+El adaptador fue entrenado mediante Supervised Fine-Tuning (SFT) utilizando las herramientas de Unsloth y TRL, tal como se refleja en las etiquetas del repositorio. La relevancia de este modelo radica en su enfoque eficiente: en lugar de reentrenar los 7.000 millones de parámetros del modelo base, solo se ajustan unos pocos millones de parámetros del adaptador, lo que reduce considerablemente los costes de cómputo y almacenamiento. Aunque el modelo no ha sido descargado ni valorado en Hugging Face, su diseño como adaptador LoRA sobre un modelo robusto como Qwen2.5-Coder-7B lo hace apto para tareas de generación de SQL en entornos empresariales y de análisis de datos.
 
 La información pública sobre el adaptador es limitada: la model card está mayormente vacía y no se proporcionan detalles sobre los datos de entrenamiento, hiperparámetros ni evaluación. No obstante, el contexto del modelo base y las herramientas utilizadas permiten inferir algunas de sus características técnicas, aunque con cautela.
 
@@ -25,7 +25,7 @@ La información pública sobre el adaptador es limitada: la model card está may
 
 El adaptador se basa en el modelo Qwen2.5-Coder-7B, un transformer decoder-only de 7.000 millones de parámetros desarrollado por Alibaba, especializado en generación de código y razonamiento matemático. El adaptador utiliza la técnica LoRA, que consiste en añadir matrices de bajo rango a las capas de atención y de proyección del modelo original, de modo que solo se entrenan estos parámetros adicionales. Esto permite adaptar el modelo a una tarea específica sin modificar los pesos originales, lo que reduce significativamente el coste computacional y de memoria.
 
-El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT), un proceso en el que el modelo se entrena con pares de instrucciones en lenguaje natural y consultas SQL esperadas. Se utilizaron las librerías de Unsloth, que optimizan el entrenamiento de LoRA en hardware limitado, y TRL (Transformers Reinforcement Learning) de HuggingFace. No se han publicado detalles sobre el dataset utilizado, el número de tokens de entrenamiento ni los hiperparámetros específicos. La única referencia técnica es la versión de PEFT 0.19.1, que se menciona en los metadatos del repositorio.
+El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT), un proceso en el que el modelo se entrena con pares de instrucciones en lenguaje natural y consultas SQL esperadas. Se utilizaron las librerías de Unsloth, que optimizan el entrenamiento de LoRA en hardware limitado, y TRL (Transformers Reinforcement Learning) de Hugging Face. No se han publicado detalles sobre el dataset utilizado, el número de tokens de entrenamiento ni los hiperparámetros específicos. La única referencia técnica es la versión de PEFT 0.19.1, que se menciona en los metadatos del repositorio.
 
 ## Capacidades
 
@@ -63,8 +63,8 @@ No se dispone de datos concretos para una comparativa rigurosa, ya que el adapta
 
 | Modelo | Base | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `rish37u/text-to-sql-sft-adapter` | Qwen2.5-Coder-7B | 128k | No disponible | Público en HuggingFace |
-| `genies-llm/text2sql-sft-v5-lora` | No disponible | No disponible | No disponible | Público en HuggingFace |
+| `rish37u/text-to-sql-sft-adapter` | Qwen2.5-Coder-7B | 128k | No disponible | Público en Hugging Face |
+| `genies-llm/text2sql-sft-v5-lora` | No disponible | No disponible | No disponible | Público en Hugging Face |
 | `shreerajbhamare/adapt-sql` | No disponible | No disponible | No disponible | Código abierto en GitHub |
 
 No hay datos de rendimiento para comparar. La única ventaja es que el adaptador está basado en un modelo de código reciente (Qwen2.5-Coder-7B), lo que podría ofrecer mejores capacidades de razonamiento que modelos más antiguos.
@@ -80,14 +80,14 @@ No hay datos de rendimiento para comparar. La única ventaja es que el adaptador
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rish37u/text-to-sql-sft-adapter
+- Repositorio en Hugging Face: https://huggingface.co/rish37u/text-to-sql-sft-adapter
 - Artículo de Red Hat sobre fine-tuning LoRA para SQL: https://developers.redhat.com/articles/2026/08/24/lora-fine-tuning-red-hat-openshift-ai-ray
 - Repositorio ADAPT-SQL (sistema text-to-SQL): https://github.com/shreerajbhamare/adapt-sql
 - Repositorio Awesome-Text2SQL (recursos): https://github.com/eosphoros-ai/Awesome-Text2SQL
 - Ejemplo de adaptador similar: https://huggingface.co/genies-llm/text2sql-sft-v5-lora/blob/main/adapter_model.safetensors
 - Herramienta comercial Text2SQL.ai: https://www.text2sql.ai/## Resumen
 
-El modelo `rish37u/text-to-sql-sft-adapter` es un adaptador LoRA (Low-Rank Adaptation) diseñado para especializar el modelo base `unsloth/Qwen2.5-Coder-7B` en la tarea de text-to-SQL, es decir, la generación de consultas SQL a partir de lenguaje natural. Fue desarrollado por el usuario rish37u y publicado en HuggingFace bajo la librería PEFT, lo que indica que se trata de un adaptador ligero que se combina con el modelo base para ajustar su comportamiento sin reentrenar todos los parámetros. El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT) utilizando las herramientas de Unsloth y TRL, como se refleja en las etiquetas del repositorio.
+El modelo `rish37u/text-to-sql-sft-adapter` es un adaptador LoRA (Low-Rank Adaptation) diseñado para especializar el modelo base `unsloth/Qwen2.5-Coder-7B` en la tarea de text-to-SQL, es decir, la generación de consultas SQL a partir de lenguaje natural. Fue desarrollado por el usuario rish37u y publicado en Hugging Face bajo la librería PEFT, lo que indica que se trata de un adaptador ligero que se combina con el modelo base para ajustar su comportamiento sin reentrenar todos los parámetros. El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT) utilizando las herramientas de Unsloth y TRL, como se refleja en las etiquetas del repositorio.
 
 La relevancia de este modelo radica en su eficiencia: en lugar de entrenar un modelo completo de 7.000 millones de parámetros, solo se ajustan los parámetros de baja dimensión del adaptador, lo que reduce significativamente los costes de cómputo y almacenamiento. Aunque el repositorio no ha sido descargado ni valorado en la comunidad, su base sobre Qwen2.5-Coder-7B (un modelo de generación de código reciente con una ventana de contexto de 128K tokens) le confiere capacidades sólidas para la generación de SQL. Sin embargo, la información pública es escasa: la model card está mayormente en blanco y no se proporcionan detalles sobre el dataset de entrenamiento, los hiperparámetros ni los resultados de evaluación.
 
@@ -108,7 +108,7 @@ La relevancia de este modelo radica en su eficiencia: en lugar de entrenar un mo
 
 El adaptador se basa en Qwen2.5-Coder-7B, un transformer decoder-only de 7.000 millones de parámetros desarrollado por Alibaba, especializado en generación de código y razonamiento matemático. La técnica LoRA introduce matrices de baja dimensión en las capas de atención y de proyección del modelo base, de modo que solo se entrenan estos parámetros adicionales durante el ajuste fino. Esto permite adaptar el modelo a una tarea específica con un coste computacional mucho menor que el entrenamiento completo.
 
-El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT), un proceso en el que el modelo se entrena con pares de instrucciones en lenguaje natural y consultas SQL esperadas. Se utilizaron las librerías de Unsloth, que optimizan el entrenamiento de LoRA en hardware limitado, y TRL (Transformers Reinforcement Learning) de HuggingFace. No se han publicado detalles sobre el dataset utilizado, el número de tokens de entrenamiento, ni los hiperparámetros (como tasa de aprendizaje o número de épocas). La única referencia técnica es la versión de PEFT 0.19.1, mencionada en los metadatos del repositorio.
+El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT), un proceso en el que el modelo se entrena con pares de instrucciones en lenguaje natural y consultas SQL esperadas. Se utilizaron las librerías de Unsloth, que optimizan el entrenamiento de LoRA en hardware limitado, y TRL (Transformers Reinforcement Learning) de Hugging Face. No se han publicado detalles sobre el dataset utilizado, el número de tokens de entrenamiento, ni los hiperparámetros (como tasa de aprendizaje o número de épocas). La única referencia técnica es la versión de PEFT 0.19.1, mencionada en los metadatos del repositorio.
 
 ## Capacidades
 
@@ -165,7 +165,7 @@ No hay información pública sobre el rendimiento específico en text-to-SQL par
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rish37u/text-to-sql-sft-adapter
+- Repositorio en Hugging Face: https://huggingface.co/rish37u/text-to-sql-sft-adapter
 - Artículo de Red Hat sobre fine-tuning LoRA para SQL: https://developers.redhat.com/articles/2026/08/24/lora-fine-tuning-red-hat-openshift-ai-ray
 - Repositorio ADAPT-SQL (sistema text-to-SQL): https://github.com/shreerajbhamare/adapt-sql
 - Recursos sobre Text2SQL: https://github.com/eosphoros-ai/Awesome-Text2SQL

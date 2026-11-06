@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparativos con modelos de otras familias 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hermitdave/LFM2.5-2.6B-MLX-SLQ-4.49bpw
+- Hugging Face: https://huggingface.co/hermitdave/LFM2.5-2.6B-MLX-SLQ-4.49bpw
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Repositorio de la herramienta de cuantización: https://github.com/hermitdave/slq-mlx
 - NousResearch (Hermes Agent): https://nousresearch.com

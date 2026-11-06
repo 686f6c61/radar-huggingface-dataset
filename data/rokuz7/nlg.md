@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo / enfoque | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rokuz7/nlg` | ~1,63 M (MLP generador, calculo derivado) | 256 sondas x 8192 puntos por dispatch, salida de 113 coeficientes | No publicado; cuantizacion verificada bit a bit | MIT | HuggingFace (0 descargas) |
+| `rokuz7/nlg` | ~1,63 M (MLP generador, calculo derivado) | 256 sondas x 8192 puntos por dispatch, salida de 113 coeficientes | No publicado; cuantizacion verificada bit a bit | MIT | Hugging Face (0 descargas) |
 | Neural Light Grid original (Iwanicki et al., SIGGRAPH 2024) | No disponible | Jerarquia adaptativa de varios niveles de rejilla | No disponible en esta busqueda | No disponible | Publicacion; implementacion no disponible en esta busqueda |
 | Sondas de irradiancia con armonicos esfericos (SH, enfoque clasico) | 9 coeficientes por canal por sonda | Sin generador neuronal; ajuste analitico | No comparable directamente | No aplica | Estandar en motores comerciales |
 | Light probes trilineales / irradiance volumes clasicos | Sin red por sonda | Rejilla regular, interpolacion trilineal | No comparable directamente | No aplica | Ampliamente disponible |
@@ -83,7 +83,7 @@ No se dispone de datos numericos de comparacion entre estas alternativas en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rokuz7/nlg
+- Hugging Face: https://huggingface.co/rokuz7/nlg
 - Referencia citada en la model card: Iwanicki et al., "Neural Light Grid", Advances in Real-Time Rendering in Games, SIGGRAPH 2024 (URL no disponible en la informacion proporcionada)
 - Repositorio de codigo, paper con DOI, blog o demo: no disponibles en la informacion proporcionada
 - Documentacion de `VK_ARM_data_graph` y del formato VGF/TOSA: no disponible en la informacion proporcionada

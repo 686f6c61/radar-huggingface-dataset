@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks públicos que permitan una comparación de 
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/PILUSATRIO/satri-1b
+- Repositorio Hugging Face del adaptador: https://huggingface.co/PILUSATRIO/satri-1b
 - Colección de adaptadores especialistas: https://huggingface.co/PILUSATRIO/satri-1b-adapters
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Librería PEFT: https://github.com/huggingface/peft

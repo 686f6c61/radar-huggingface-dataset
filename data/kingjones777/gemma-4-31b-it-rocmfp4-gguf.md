@@ -104,7 +104,7 @@ La principal diferencia es la restriccion de hardware: esta cuantizacion solo fu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Gemma-4-31B-it-ROCmFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Gemma-4-31B-it-ROCmFP4-GGUF
 - Fork ROCmFPX de llama.cpp: https://github.com/charlie12345/ROCmFPX
 - Modelo base (Google): https://huggingface.co/google/gemma-4-31B-it
 - Drafter oficial (mencionado en la model card): https://huggingface.co/google/gemma-4-31B-it-assistant

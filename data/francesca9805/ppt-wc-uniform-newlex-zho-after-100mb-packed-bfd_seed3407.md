@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/ppt-wc-uniform-newlex-zho-after-100mb-packed-bfd_seed3407` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/eng_latn_100mb`, publicado por el usuario francesca9805 en HuggingFace. Se trata de un modelo de generacion de texto de arquitectura GPT-2 (transformer decoder-only) con 86.508.288 parametros (aproximadamente 86,5 millones) y pesos en formato safetensors. El ajuste se realizo mediante supervised fine-tuning (SFT) con la libreria TRL 0.23.0, sobre Transformers 4.56.2, PyTorch 2.5.1+cu121 y Datasets 4.8.4.
+El modelo `francesca9805/ppt-wc-uniform-newlex-zho-after-100mb-packed-bfd_seed3407` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/eng_latn_100mb`, publicado por el usuario francesca9805 en Hugging Face. Se trata de un modelo de generacion de texto de arquitectura GPT-2 (transformer decoder-only) con 86.508.288 parametros (aproximadamente 86,5 millones) y pesos en formato safetensors. El ajuste se realizo mediante supervised fine-tuning (SFT) con la libreria TRL 0.23.0, sobre Transformers 4.56.2, PyTorch 2.5.1+cu121 y Datasets 4.8.4.
 
 El nombre del repositorio y la metadata apuntan a un artefacto de investigacion mas que a un modelo de proposito general. El sufijo "zho" sugiere la inclusion de un componente o tokenizador orientado al chino, "newlex" apunta a un lexico o tokenizador nuevo, y "100mb" hace referencia al subconjunto de entrenamiento del modelo base (100 MB de texto). El entrenamiento esta vinculado a un run de Weights & Biases alojado en el proyecto "new-tokenizers" del usuario `f-padovani-university-of-groningen`, lo que indica un contexto academico de experimentacion con tokenizadores.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/ppt-wc-uniform-newlex-zho-after-100mb-packed-bfd_seed3407 | 86,5 M | no disponible | no publicado | no disponible | HuggingFace |
-| goldfish-models/eng_latn_100mb (modelo base) | no disponible | no disponible | no publicado en esta informacion | no disponible | HuggingFace |
+| francesca9805/ppt-wc-uniform-newlex-zho-after-100mb-packed-bfd_seed3407 | 86,5 M | no disponible | no publicado | no disponible | Hugging Face |
+| goldfish-models/eng_latn_100mb (modelo base) | no disponible | no disponible | no publicado en esta informacion | no disponible | Hugging Face |
 | GPT-2 small | 124 M | 1024 tokens | benchmarks publicos de GPT-2 | MIT (segun distribucion original) | Ampliamente disponible |
 | distilgpt2 | 82 M | 1024 tokens | benchmarks publicos de DistilGPT-2 | Apache 2.0 (segun distribucion original) | Ampliamente disponible |
 
@@ -83,11 +83,11 @@ Nota: los datos de GPT-2 small y distilgpt2 corresponden a las distribuciones pu
 - Licencia no disponible: la model card incluye un marcador de posicion (`licence: license`) en lugar de una licencia real, por lo que el uso comercial queda sin cobertura legal clara. No debe usarse en produccion sin aclarar este punto con el autor.
 - Ausencia de benchmarks: no hay ninguna metrica publicada que permita estimar su calidad.
 - Artefacto experimental: 0 descargas y 0 "likes", sin documentacion de dataset ni de hiperparametros; su valor principal es la reproducibilidad de un experimento academico.
-- Fecha de creacion inusual (2026-09-24 en la metadata de HuggingFace), lo que puede indicar un error de reloj o de indexacion.
+- Fecha de creacion inusual (2026-09-24 en la metadata de Hugging Face), lo que puede indicar un error de reloj o de indexacion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-zho-after-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-zho-after-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/jlawtomp

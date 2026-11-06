@@ -83,7 +83,7 @@ No se dispone en la información proporcionada de datos de benchmarks ni de espe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BricksDisplay/Qwen3-TTS-12Hz-0.6B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/BricksDisplay/Qwen3-TTS-12Hz-0.6B-GGUF
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - codec.cpp (runtime de audio): https://github.com/mybigday/codec.cpp
 - Documentación Python de codec.cpp: https://github.com/mybigday/codec.cpp/tree/main/python

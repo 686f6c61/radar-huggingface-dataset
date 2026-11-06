@@ -4,7 +4,7 @@
 
 El modelo `avencera/swin2sr-native-mlx` es una conversión a MLX de los pesos oficiales de Swin2SR, un modelo de superresolución y restauración de imágenes basado en Swin Transformer v2, presentado en el ECCV 2022 AIM Workshop. Swin2SR mejora el conocido SwinIR al incorporar las capas de Swin Transformer v2, lo que resuelve problemas de inestabilidad en el entrenamiento, brechas de resolución entre preentrenamiento y ajuste fino, y dependencia excesiva de datos. Esta versión MLX está pensada para ejecutarse de forma nativa en hardware Apple Silicon (M1/M2/M3) mediante el framework MLX.
 
-El repositorio incluye tres archivos de pesos en formato safetensors: dos para superresolución clásica con factores de escala 2x y 4x, y uno para restauración de imágenes JPEG en escala de grises. El tamaño total del repositorio es de 0,2 GB, lo que indica un modelo ligero, adecuado para despliegue en dispositivos con recursos limitados. La licencia declarada en la model card es Apache-2.0, aunque el campo de licencia en HuggingFace aparece como no disponible.
+El repositorio incluye tres archivos de pesos en formato safetensors: dos para superresolución clásica con factores de escala 2x y 4x, y uno para restauración de imágenes JPEG en escala de grises. El tamaño total del repositorio es de 0,2 GB, lo que indica un modelo ligero, adecuado para despliegue en dispositivos con recursos limitados. La licencia declarada en la model card es Apache-2.0, aunque el campo de licencia en Hugging Face aparece como no disponible.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ La conversion MLX de Swin2SR ofrece la ventaja de ejecucion nativa en Apple Sili
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/avencera/swin2sr-native-mlx
+- Repositorio Hugging Face: https://huggingface.co/avencera/swin2sr-native-mlx
 - Repositorio oficial Swin2SR (GitHub): https://github.com/mv-lab/swin2sr
-- Documentacion de Swin2SR en HuggingFace Transformers: https://huggingface.co/docs/transformers/model_doc/swin2sr
+- Documentacion de Swin2SR en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/swin2sr
 - DeepWiki sobre Swin2SR: https://deepwiki.com/mv-lab/swin2sr

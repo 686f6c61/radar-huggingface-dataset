@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/SkillGym-Qwen3.5-9B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/SkillGym-Qwen3.5-9B-GGUF
 - Pagina de resumen del cuantizador: https://hf.tst.eu/model#SkillGym-Qwen3.5-9B-GGUF
 - Modelo base sin cuantizar: https://huggingface.co/reasonwang/SkillGym-Qwen3.5-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/reasonwang/skillgym-sft

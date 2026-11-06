@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NexusEco-3B-GGUF es una version cuantizada en formato GGUF de un modelo de lenguaje de aproximadamente 3.000 millones de parametros (3.085.938.688 segun los datos de safetensors), publicado por el usuario AJRGP3 en HuggingFace. El repositorio contiene un unico archivo de pesos, `Qwen2.5-3B-Instruct.Q4_K_M.gguf`, lo que indica que el modelo base sobre el que se ha hecho el ajuste fino es Qwen2.5-3B-Instruct; el autor no confirma explicitamente esta base en la model card, pero el nombre del archivo y la etiqueta `qwen2` apuntan a la familia Qwen2 de Alibaba. El ajuste fino y la conversion a GGUF se han realizado con Unsloth, segun indica la propia model card.
+NexusEco-3B-GGUF es una version cuantizada en formato GGUF de un modelo de lenguaje de aproximadamente 3.000 millones de parametros (3.085.938.688 segun los datos de safetensors), publicado por el usuario AJRGP3 en Hugging Face. El repositorio contiene un unico archivo de pesos, `Qwen2.5-3B-Instruct.Q4_K_M.gguf`, lo que indica que el modelo base sobre el que se ha hecho el ajuste fino es Qwen2.5-3B-Instruct; el autor no confirma explicitamente esta base en la model card, pero el nombre del archivo y la etiqueta `qwen2` apuntan a la familia Qwen2 de Alibaba. El ajuste fino y la conversion a GGUF se han realizado con Unsloth, segun indica la propia model card.
 
 El modelo esta pensado para inferencia local mediante llama.cpp y Ollama, con un peso de repositorio de 1,9 GB, lo que lo situa en el rango de modelos que caben holgadamente en GPU de consumo e incluso en CPU. La model card incluye un Modelfile de Ollama y ejemplos de ejecucion con `llama-cli` y `llama-mtmd-cli`, ambos con la plantilla de chat Jinja activada mediante `--jinja`.
 
@@ -90,7 +90,7 @@ No se dispone de comparaciones de rendimiento entre NexusEco-3B-GGUF y estas alt
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AJRGP3/NexusEco-3B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/AJRGP3/NexusEco-3B-GGUF
 - Unsloth (herramienta usada para ajuste y conversion a GGUF): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de inferencia para GGUF): https://github.com/ggml-org/llama.cpp
 - Ollama (despliegue con el Modelfile incluido): https://ollama.com

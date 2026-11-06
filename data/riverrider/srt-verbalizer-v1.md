@@ -75,9 +75,9 @@ No existe una categoria establecida de "verbalizadores de activaciones" en el ec
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SRT Verbalizer v1 | 0.6B + 44M prefix | no disponible | Apache-2.0 | HuggingFace |
-| BLIP-2 (captioning clasico) | 1.2B (FlanT5-XL) | 512 tokens | BSD-3 | HuggingFace |
-| LLaVA 1.5 (VLM generico) | 7B | 2048 tokens | Apache-2.0 | HuggingFace |
+| SRT Verbalizer v1 | 0.6B + 44M prefix | no disponible | Apache-2.0 | Hugging Face |
+| BLIP-2 (captioning clasico) | 1.2B (FlanT5-XL) | 512 tokens | BSD-3 | Hugging Face |
+| LLaVA 1.5 (VLM generico) | 7B | 2048 tokens | Apache-2.0 | Hugging Face |
 
 La diferencia fundamental es que BLIP-2 y LLaVA procesan la imagen directamente, mientras que SRT Verbalizer solo recibe el vector de activacion. Esto lo hace menos flexible para captioning general, pero mucho mas util para auditoria e interpretabilidad.
 
@@ -93,7 +93,7 @@ La diferencia fundamental es que BLIP-2 y LLaVA procesan la imagen directamente,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RiverRider/srt-verbalizer-v1
+- Repositorio Hugging Face: https://huggingface.co/RiverRider/srt-verbalizer-v1
 - Repositorio del proyecto SRT en GitHub: https://github.com/space-bacon/SRT
 - Paper (borrador): https://raw.githubusercontent.com/space-bacon/SRT/refs/heads/main/arxiv/paper.md
 - Repositorio relacionado (SRT-NLA-AV): https://huggingface.co/RiverRider/srt-nla-av-v1

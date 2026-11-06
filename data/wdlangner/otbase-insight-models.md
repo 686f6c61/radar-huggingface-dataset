@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `wdLangner/otbase-insight-models` es un modelo de lenguaje de 9.197 millones de parámetros (aproximadamente 9,2B) desarrollado por Wes Davis (usuario `wdLangner` en HuggingFace), en el contexto del producto OTbase Insight de la empresa Langner Group. Este modelo está diseñado específicamente para el dominio de la tecnología operativa (OT) y la ciberseguridad industrial, integrándose en la plataforma OTbase Insight para proporcionar capacidades de IA local, sin depender de servicios en la nube públicos.
+El modelo `wdLangner/otbase-insight-models` es un modelo de lenguaje de 9.197 millones de parámetros (aproximadamente 9,2B) desarrollado por Wes Davis (usuario `wdLangner` en Hugging Face), en el contexto del producto OTbase Insight de la empresa Langner Group. Este modelo está diseñado específicamente para el dominio de la tecnología operativa (OT) y la ciberseguridad industrial, integrándose en la plataforma OTbase Insight para proporcionar capacidades de IA local, sin depender de servicios en la nube públicos.
 
-El modelo se distribuye en formato GGUF, lo que indica que está optimizado para inferencia en CPU/GPU con herramientas como llama.cpp, Ollama o similares. El repositorio tiene un tamaño de 920,5 GB, lo que sugiere que contiene múltiples cuantizaciones y variantes del modelo base. El acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones en HuggingFace antes de poder descargarlo.
+El modelo se distribuye en formato GGUF, lo que indica que está optimizado para inferencia en CPU/GPU con herramientas como llama.cpp, Ollama o similares. El repositorio tiene un tamaño de 920,5 GB, lo que sugiere que contiene múltiples cuantizaciones y variantes del modelo base. El acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones en Hugging Face antes de poder descargarlo.
 
 La relevancia de este modelo radica en su enfoque de nicho: está entrenado para trabajar con inventarios contextualizados de activos OT, ayudando a las empresas a gestionar y asegurar sus infraestructuras críticas mediante consultas en lenguaje natural. Según la información publicada, puede ejecutarse en hardware de consumo, lo que lo hace accesible para organizaciones que requieren privacidad y control local de sus datos.
 
@@ -63,7 +63,7 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos con políticas de descarga estrictas.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos con políticas de descarga estrictas.
 - Licencia no especificada: no se indica la licencia, por lo que no se puede garantizar el uso comercial sin riesgo legal.
 - Dominio limitado: al estar optimizado para OT, su rendimiento en tareas generales de lenguaje o código probablemente sea inferior al de modelos generalistas de su tamaño.
 - Sin información sobre sesgos: no se han publicado evaluaciones de sesgos o alucinaciones específicas para este modelo.
@@ -72,8 +72,8 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Enlaces
 
-- [HuggingFace - wdLangner/otbase-insight-models](https://huggingface.co/wdLangner/otbase-insight-models)
-- [Perfil del autor en HuggingFace](https://huggingface.co/wdLangner)
+- [Hugging Face - wdLangner/otbase-insight-models](https://huggingface.co/wdLangner/otbase-insight-models)
+- [Perfil del autor en Hugging Face](https://huggingface.co/wdLangner)
 - [OTbase - sitio oficial](https://otbase.com/)
 - [OTbase Insight - características](https://otbase.com/features/otbase-insight/)
 - [Publicación en LinkedIn sobre IA en OTbase Insight](https://www.linkedin.com/posts/langnergroup_ai-ics-localmodels-activity-7483920453120528384-7ao8)

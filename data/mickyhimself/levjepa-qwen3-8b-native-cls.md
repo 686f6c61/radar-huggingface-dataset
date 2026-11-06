@@ -82,6 +82,6 @@ La comparación relevante es con Qwen3-8B, del que deriva directamente y cuya ú
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mickyhimself/LeVJEPA-Qwen3-8B-Native-CLS
+- Modelo en Hugging Face: https://huggingface.co/mickyhimself/LeVJEPA-Qwen3-8B-Native-CLS
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Backbone visual LeVJEPA-VideoMix-Large: https://huggingface.co/galilai-group/LeVJEPA-VideoMix-Large

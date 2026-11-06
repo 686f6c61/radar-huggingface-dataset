@@ -115,7 +115,7 @@ La comparativa con modelos de la misma categoría fuera del ecosistema de mergin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nightmedia/Qwen3.8-27B-MindMeld-OneJev1.6
+- Hugging Face: https://huggingface.co/nightmedia/Qwen3.8-27B-MindMeld-OneJev1.6
 - Modelo componente: https://huggingface.co/nightmedia/Qwen3.8-27B-MindMeld
 - Modelo componente: https://huggingface.co/OmniJev/OneJev1.6-27B
 - Modelo base: https://huggingface.co/schneewolflabs/B1-27B

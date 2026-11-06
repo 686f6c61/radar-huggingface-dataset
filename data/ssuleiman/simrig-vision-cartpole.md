@@ -74,11 +74,11 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 - Requiere un entorno de ejecución específico: Python 3.11, JAX 0.10.2, Brax 0.14.2, MuJoCo 3.10.0, Playground 0.2.0 y Warp 1.13.0. Ejecutarlo con versiones diferentes puede provocar errores, y el framework rechaza por defecto las incompatibilidades de runtime.
 - Al ser un agente RL, no tiene capacidades de procesamiento de lenguaje natural, generación de texto, razonamiento simbólico ni interacción conversacional.
 - La licencia MIT permite uso comercial, pero el modelo depende de librerías con sus propias licencias (JAX, Brax, MuJoCo, etc.), que deben revisarse por separado.
-- El repositorio tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es un proyecto reciente o poco difundido; la documentación es escasa fuera de la model card.
+- El repositorio tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un proyecto reciente o poco difundido; la documentación es escasa fuera de la model card.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssuleiman/simrig-vision-cartpole
+- Modelo en Hugging Face: https://huggingface.co/ssuleiman/simrig-vision-cartpole
 - Perfil del autor: https://huggingface.co/ssuleiman
 - Repositorio de SimRig en GitHub: https://github.com/Su1eym4n/simrig
 - Documentación de entrenamiento de CartPole en Isaac Lab (referencia externa, no directamente relacionada): https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-lab/latest/train-your-first-robot-with-isaac-lab/04-the-cartpole-problem.html

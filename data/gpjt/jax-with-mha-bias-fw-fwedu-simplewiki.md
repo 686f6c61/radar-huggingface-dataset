@@ -106,7 +106,7 @@ Los datos de parametros, contexto y licencia de los modelos comparados correspon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gpjt/jax-with-mha-bias-fw-fwedu-simplewiki
+- Hugging Face: https://huggingface.co/gpjt/jax-with-mha-bias-fw-fwedu-simplewiki
 - Dataset de entrenamiento: https://huggingface.co/datasets/gpjt/fw-fwedu-simplewiki-gpt2-tokens
 - Repositorio de entrenamiento (JAX): https://github.com/gpjt/jax-gpt2-from-scratch
 - Repositorio de inferencia y fine-tuning: https://github.com/gpjt/ddp-base-model-from-scratch

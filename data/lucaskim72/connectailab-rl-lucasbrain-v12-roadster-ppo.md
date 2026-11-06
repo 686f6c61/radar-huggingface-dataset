@@ -80,7 +80,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Tasa de aterrizaje | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-lucasbrain-v12-roadster-ppo | no disponible (~10^4) | no aplica | 100 % (50 semillas) | no disponible | HuggingFace |
+| connectailab-rl-lucasbrain-v12-roadster-ppo | no disponible (~10^4) | no aplica | 100 % (50 semillas) | no disponible | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v12-roadster-ppo
+- Hugging Face: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v12-roadster-ppo
 - CONNECT AI LAB (GitHub): https://github.com/wonseokjung/connect-tycoon
 - AI CITY BUILDERS: no disponible (el enlace aparece truncado en la model card)
 - Paper, blog o demo adicionales: no disponibles

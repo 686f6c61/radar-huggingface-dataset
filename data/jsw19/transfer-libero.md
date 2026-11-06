@@ -71,7 +71,7 @@ No se dispone de informacion sobre modelos comparables en el mismo repositorio n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jsw19/transfer-libero
+- Repositorio Hugging Face: https://huggingface.co/jsw19/transfer-libero
 - Arbol de archivos: https://huggingface.co/jsw19/transfer-libero/tree/main
 - Benchmark LIBERO (GitHub): https://github.com/Lifelong-Robot-Learning/LIBERO
 - Benchmark LIBERO (variante zhanglei-web): https://github.com/zhanglei-web/LIBERO-

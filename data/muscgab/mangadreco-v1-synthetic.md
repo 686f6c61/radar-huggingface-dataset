@@ -99,8 +99,8 @@ En la misma tabla, BaberuOCR obtiene 77.05 ms y 11.46/s con batch 1, y 222.53 ms
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/muscgab/MangaDReCo-v1-Synthetic
-- HuggingFace (variante DReC): https://huggingface.co/muscgab/MangaDReC-v1
+- Hugging Face: https://huggingface.co/muscgab/MangaDReCo-v1-Synthetic
+- Hugging Face (variante DReC): https://huggingface.co/muscgab/MangaDReC-v1
 - ModelScope: https://modelscope.cn/models/muscgab/MangaDReCo-v1-Synthetic
 - GitHub del proyecto: https://github.com/muscgab/MangaDReC
 - JMangaBench_Mixed: https://github.com/muscgab/JMangaBench_Mixed

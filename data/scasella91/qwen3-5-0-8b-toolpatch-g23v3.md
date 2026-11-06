@@ -62,8 +62,8 @@ No se han publicado resultados en benchmarks publicos (MMLU, HumanEval, GSM8K, B
 
 | Modelo | Parametros | Contexto | Modificacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-toolpatch-g23v3 | 873.438.784 | no disponible | Edicion cerrada de 6.142 entradas BF16 en MLP capa 23 | Apache 2.0 | HuggingFace (scasella91) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8 B (752 M en texto) | no disponible | Ninguna | Apache 2.0 | HuggingFace (Qwen) |
+| Qwen3.5-0.8B-toolpatch-g23v3 | 873.438.784 | no disponible | Edicion cerrada de 6.142 entradas BF16 en MLP capa 23 | Apache 2.0 | Hugging Face (scasella91) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8 B (752 M en texto) | no disponible | Ninguna | Apache 2.0 | Hugging Face (Qwen) |
 | Alternativas de 0,8 B con tool calling | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo con otros modelos de la misma categoria en la informacion proporcionada.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scasella91/Qwen3.5-0.8B-toolpatch-g23v3
+- Modelo en Hugging Face: https://huggingface.co/scasella91/Qwen3.5-0.8B-toolpatch-g23v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Revision del base: https://huggingface.co/Qwen/Qwen3.5-0.8B/tree/2fc06364715b967f1860aea9cf38778875588b17
 - Licencia del base: https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Hatim2221/Mubsir-vl-arabic-htr-adapter` es un adaptador publicado en HuggingFace por el usuario Hatim2221. Por su nombre, parece orientado al reconocimiento de texto manuscrito en árabe (HTR, Handwritten Text Recognition) y posiblemente integrado con un modelo vision-language (VL), aunque no se dispone de documentación que lo confirme. La model card es una plantilla automática sin contenido real, y el repositorio no contiene archivos (tamaño 0.0 GB), por lo que no hay pesos ni código disponibles.
+El modelo `Hatim2221/Mubsir-vl-arabic-htr-adapter` es un adaptador publicado en Hugging Face por el usuario Hatim2221. Por su nombre, parece orientado al reconocimiento de texto manuscrito en árabe (HTR, Handwritten Text Recognition) y posiblemente integrado con un modelo vision-language (VL), aunque no se dispone de documentación que lo confirme. La model card es una plantilla automática sin contenido real, y el repositorio no contiene archivos (tamaño 0.0 GB), por lo que no hay pesos ni código disponibles.
 
 El modelo se registra con la librería `transformers`, etiquetas que incluyen `safetensors` y `endpoints_compatible`, y una referencia al artículo arXiv 1910.09700 (correspondiente a BERT, aunque no se especifica su relación). No se indican licencia, idiomas, ni pipeline. A fecha de consulta, no tiene descargas ni valoraciones. En resumen, se trata de un artefacto sin información técnica verificable, lo que impide cualquier uso práctico o evaluación rigurosa.
 
@@ -21,7 +21,7 @@ El modelo se registra con la librería `transformers`, etiquetas que incluyen `s
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura, los datos de entrenamiento, el procedimiento de ajuste o cualquier innovacion tecnica. La model card es una plantilla generica de HuggingFace sin campos cumplimentados. El unico dato indirecto es la referencia al paper arXiv 1910.09700 (BERT), pero no se explica su vinculacion con el modelo. Tampoco se indica el modelo base del que deriva el adaptador.
+No se ha publicado informacion sobre la arquitectura, los datos de entrenamiento, el procedimiento de ajuste o cualquier innovacion tecnica. La model card es una plantilla generica de Hugging Face sin campos cumplimentados. El unico dato indirecto es la referencia al paper arXiv 1910.09700 (BERT), pero no se explica su vinculacion con el modelo. Tampoco se indica el modelo base del que deriva el adaptador.
 
 ## Capacidades
 
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables al no existir especificaciones 
 
 ## Enlaces
 
-- [HuggingFace - Hatim2221/Mubsir-vl-arabic-htr-adapter](https://huggingface.co/Hatim2221/Mubsir-vl-arabic-htr-adapter)
+- [Hugging Face - Hatim2221/Mubsir-vl-arabic-htr-adapter](https://huggingface.co/Hatim2221/Mubsir-vl-arabic-htr-adapter)

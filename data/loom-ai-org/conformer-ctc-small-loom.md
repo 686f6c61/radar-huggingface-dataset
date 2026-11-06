@@ -40,7 +40,7 @@ Los pesos del modelo se exportan sin modificar al formato GGUF de loom.cpp. Este
 - Asistentes de voz ligeros: su tamaño reducido permite ejecutarlo en dispositivos con poca memoria, como Raspberry Pi o portátiles antiguos, para comandos de voz básicos.
 - Análisis de llamadas de atención al cliente: transcribir llamadas en inglés para extraer métricas, detectar problemas recurrentes o generar resúmenes automáticos.
 - Archivado y búsqueda de contenido de audio: convertir podcasts, conferencias o clases grabadas en texto indexable para búsquedas posteriores.
-- Prototipado rápido de aplicaciones ASR: gracias a la facilidad de instalación con `pip install loom-py-rt` y la carga directa desde HuggingFace, es ideal para validar ideas sin infraestructura compleja.
+- Prototipado rápido de aplicaciones ASR: gracias a la facilidad de instalación con `pip install loom-py-rt` y la carga directa desde Hugging Face, es ideal para validar ideas sin infraestructura compleja.
 
 ## Benchmarks y rendimiento
 
@@ -69,13 +69,13 @@ La comparativa se basa en datos públicos de modelos similares. No se dispone de
 - Solo soporta inglés; no es adecuado para otros idiomas sin reentrenamiento.
 - La licencia CC-BY-4.0 permite uso comercial, pero exige atribución al autor original (NVIDIA) y a loom-ai-org.
 - Al ser un modelo pequeño, puede tener un rendimiento inferior en audio con ruido de fondo, acentos fuertes o vocabulario técnico especializado.
-- La dependencia de loom.cpp y loom-py limita la portabilidad a otros ecosistemas (no es compatible directamente con transformers de HuggingFace).
+- La dependencia de loom.cpp y loom-py limita la portabilidad a otros ecosistemas (no es compatible directamente con transformers de Hugging Face).
 - No se garantiza la disponibilidad de cuantizaciones precalculadas; el usuario puede necesitar generarlas con loom-exporter.
 - No se proporcionan detalles sobre el entrenamiento del modelo base, por lo que no se pueden evaluar sesgos potenciales en los datos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/conformer-ctc-small-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/conformer-ctc-small-loom
 - Repositorio loom.cpp: https://github.com/loom-ai-org/loom.cpp
 - Repositorio loom-exporter: https://github.com/loom-ai-org/loom-exporter
 - Repositorio loom-py: https://github.com/loom-ai-org/loom-py

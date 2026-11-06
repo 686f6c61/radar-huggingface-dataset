@@ -65,9 +65,9 @@ No se dispone de resultados desglosados por benchmark en la información proporc
 
 | Modelo | Parámetros | Contexto | F1 media climática | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClimateModernBERT Merge_Norm_CX | 150M | 8.192 | 75,9 | no disponible | HuggingFace |
-| ModernBERT-Base | 150M | 8.192 | 73,5 | Apache 2.0 | HuggingFace |
-| ClimateBERT (RoBERTa-base) | 125M | 512 | 72,1 | MIT | HuggingFace |
+| ClimateModernBERT Merge_Norm_CX | 150M | 8.192 | 75,9 | no disponible | Hugging Face |
+| ModernBERT-Base | 150M | 8.192 | 73,5 | Apache 2.0 | Hugging Face |
+| ClimateBERT (RoBERTa-base) | 125M | 512 | 72,1 | MIT | Hugging Face |
 
 El modelo supera a sus dos alternativas principales en los benchmarks climáticos, manteniendo el mismo tamaño y ventana de contexto que ModernBERT-Base. La principal ventaja es su especialización en dominio climático, aunque su licencia no está especificada, lo que puede limitar su uso comercial.
 
@@ -83,7 +83,7 @@ El modelo supera a sus dos alternativas principales en los benchmarks climático
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CMB-ClimateModernBERT/Merge_Norm_CX
+- Modelo en Hugging Face: https://huggingface.co/CMB-ClimateModernBERT/Merge_Norm_CX
 - Repositorio original (pesos idénticos): https://huggingface.co/sraj/Merge_Linear_NormBalanced_CX_only
 - Colección de la familia ClimateModernBERT: https://huggingface.co/collections/sraj/climatemodernbert
 - Web del proyecto: https://michaelyya.github.io/ClimateModernBERT/

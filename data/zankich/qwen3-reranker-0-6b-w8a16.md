@@ -15,7 +15,7 @@ Este modelo se integra en pipelines de recuperación de información, especialme
 | Parámetros activos | No aplica (modelo denso) |
 | Longitud de contexto | 32.000 tokens (32K) |
 | Tipos de cuantización | W8A16 (pesos INT8, activaciones 16 bits) |
-| Idiomas soportados | Más de 100 idiomas según la model card del modelo base; la metadata de HuggingFace no especifica idiomas |
+| Idiomas soportados | Más de 100 idiomas según la model card del modelo base; la metadata de Hugging Face no especifica idiomas |
 | Licencia | Apache 2.0 |
 | Formato de pesos | Safetensors (pesos cuantizados INT8, tagged como compressed-tensors) |
 | Pipeline | feature-extraction |
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 - VRAM estimada para inferencia: los pesos en INT8 ocupan aproximadamente 0,6 GB (595 millones de parámetros × 1 byte). Sumando activaciones y overhead del runtime, se estima un consumo de entre 1,5 y 3 GB de VRAM para la inferencia de un solo par. No hay mediciones oficiales en la documentación.
 - GPU recomendadas: una RTX 3060 de 12 GB o superior es suficiente; también puede ejecutarse en GPUs con 6 GB como la RTX 2060, o en GPUs de centros de datos como T4, A10 o A100.
-- Opciones de despliegue: vLLM (según los tags de HuggingFace), Sentence Transformers (CrossEncoder), Transformers y Text Embeddings Inference (TEI). El repositorio indica compatibilidad con endpoints.
+- Opciones de despliegue: vLLM (según los tags de Hugging Face), Sentence Transformers (CrossEncoder), Transformers y Text Embeddings Inference (TEI). El repositorio indica compatibilidad con endpoints.
 - Latencia y throughput: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-Reranker-0.6B-W8A16 (este modelo) | 0,6B | 32K | W8A16 | Apache 2.0 | HuggingFace |
-| Qwen3-Reranker-0.6B (base) | 0,6B | 32K | Original (sin cuantizar) | Apache 2.0 | HuggingFace |
-| Qwen3-Reranker-4B | 4B | 32K | Original (sin cuantizar) | Apache 2.0 | HuggingFace |
-| Qwen3-Reranker-8B | 8B | 32K | Original (sin cuantizar) | Apache 2.0 | HuggingFace |
+| Qwen3-Reranker-0.6B-W8A16 (este modelo) | 0,6B | 32K | W8A16 | Apache 2.0 | Hugging Face |
+| Qwen3-Reranker-0.6B (base) | 0,6B | 32K | Original (sin cuantizar) | Apache 2.0 | Hugging Face |
+| Qwen3-Reranker-4B | 4B | 32K | Original (sin cuantizar) | Apache 2.0 | Hugging Face |
+| Qwen3-Reranker-8B | 8B | 32K | Original (sin cuantizar) | Apache 2.0 | Hugging Face |
 
 La comparativa directa de rendimiento con otros rerankers de tamaño similar (por ejemplo, BAAI/bge-reranker-v2-m3) no está disponible en la información suministrada; solo se conocen los datos de la familia Qwen3.
 
@@ -75,14 +75,14 @@ La comparativa directa de rendimiento con otros rerankers de tamaño similar (po
 - El repositorio no incluye resultados de evaluación de la variante cuantizada; la degradación por cuantización es desconocida y podría existir.
 - No se dispone de información sobre el método de cuantización ni el conjunto de calibración empleado en W8A16, lo que dificulta predecir el comportamiento fuera de los casos de uso estándar.
 - Las puntuaciones por defecto son logits no probabilísticos; hay que aplicar sigmoide si se desea interpretar la salida como probabilidad.
-- Los idiomas indicados en la metadata de HuggingFace aparecen como no disponibles, mientras que la model card habla de más de 100 idiomas; esta inconsistencia conviene verificar antes de usar en producción.
+- Los idiomas indicados en la metadata de Hugging Face aparecen como no disponibles, mientras que la model card habla de más de 100 idiomas; esta inconsistencia conviene verificar antes de usar en producción.
 - El modelo hereda cualquier sesgo presente en la familia Qwen3; no se han documentado mitigaciones específicas.
 - El uso de instrucciones en inglés se recomienda; en otros idiomas el rendimiento puede ser menor.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/zankich/Qwen3-Reranker-0.6B-W8A16
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/zankich/Qwen3-Reranker-0.6B-W8A16
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B
 - Blog oficial de Qwen3 Embedding: https://qwenlm.github.io/blog/qwen3-embedding/
 - Repositorio GitHub de Qwen3-Embedding: https://github.com/QwenLM/Qwen3-Embedding
 - Paper en arXiv: https://arxiv.org/abs/2506.05176

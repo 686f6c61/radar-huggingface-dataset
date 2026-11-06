@@ -91,7 +91,7 @@ No se dispone de comparativas de rendimiento entre estos modelos en la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/elsay1/onex-capture-test-t2
+- Repositorio Hugging Face: https://huggingface.co/elsay1/onex-capture-test-t2
 - Paper de DistilBERT (arXiv:1910.01108): https://arxiv.org/abs/1910.01108
 - Modelo original de referencia: https://huggingface.co/distilbert-base-uncased-finetuned-sst-2-english
 - ONNX Model Zoo: https://github.com/onnx/models

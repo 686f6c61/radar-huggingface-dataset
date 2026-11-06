@@ -67,8 +67,8 @@ Estimaciones a partir de los tamanos de fichero publicados (transformer + text e
 
 | Modelo | Parametros del componente visual | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen-Image-2.1 (base) | 7,1B (32 capas DiT) | safetensors | qwen-research | HuggingFace (Qwen) |
-| Qwen-Image-2.1-Uncensored-GGUF (este) | 7,1B (cuantizado) | GGUF, safetensors | qwen-research | HuggingFace |
+| Qwen-Image-2.1 (base) | 7,1B (32 capas DiT) | safetensors | qwen-research | Hugging Face (Qwen) |
+| Qwen-Image-2.1-Uncensored-GGUF (este) | 7,1B (cuantizado) | GGUF, safetensors | qwen-research | Hugging Face |
 | Otras alternativas de texto-a-imagen open source (p. ej. FLUX.1-dev, SD 3.5) | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativos en la informacion proporcionada. Se indica "no disponible" para los modelos alternativos por no poder verificar sus especificaciones con las fuentes consultadas.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/bytehackr/Qwen-Image-2.1-Uncensored-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/bytehackr/Qwen-Image-2.1-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio GitHub de Qwen-Image-2.1: https://github.com/QwenLM/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

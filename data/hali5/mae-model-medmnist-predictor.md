@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Hali5/Mae-Model-MedMNIST-Predictor` es un clasificador de imágenes médicas publicado en HuggingFace por el usuario Hali5. Según la model card, emplea una arquitectura de autoencoder mixto (Mixed Autoencoder) para predecir resultados de imágenes médicas, probablemente sobre el conjunto de datos MedMNIST, una colección estandarizada de datasets biomédicos en 2D y 3D. El repositorio tiene un tamaño de 3.0 GB, lo que sugiere un modelo de dimensiones considerables, aunque no se especifican parámetros ni detalles de arquitectura.
+El modelo `Hali5/Mae-Model-MedMNIST-Predictor` es un clasificador de imágenes médicas publicado en Hugging Face por el usuario Hali5. Según la model card, emplea una arquitectura de autoencoder mixto (Mixed Autoencoder) para predecir resultados de imágenes médicas, probablemente sobre el conjunto de datos MedMNIST, una colección estandarizada de datasets biomédicos en 2D y 3D. El repositorio tiene un tamaño de 3.0 GB, lo que sugiere un modelo de dimensiones considerables, aunque no se especifican parámetros ni detalles de arquitectura.
 
 La ficha oficial es extremadamente escueta: únicamente indica el pipeline de clasificación de imágenes y el nombre de la arquitectura. No se proporcionan datos sobre entrenamiento, rendimiento, licencia ni idiomas. Esta falta de información limita cualquier evaluación rigurosa, por lo que esta ficha se basa exclusivamente en los metadatos disponibles y no debe interpretarse como una validación técnica del modelo.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada: no disponible. El tamaño del repositorio (3.0 GB) sugiere que el modelo podría cargarse en GPUs con al menos 8-12 GB de VRAM en precisión completa (FP32), pero sin conocer el número de parámetros no se puede estimar con precisión.
 - GPU recomendadas: no disponible. En función del tamaño, una RTX 3060/4070 o superior podría ser suficiente para inferencia, pero es especulativo.
 - Compatibilidad con GPU de consumo: probablemente sí, dado el tamaño del repo, pero no confirmado.
-- Opciones de despliegue: no se mencionan. Se podría intentar con frameworks estándar como PyTorch, HuggingFace `transformers` (si el modelo es compatible) o `timm`, pero no hay garantías.
+- Opciones de despliegue: no se mencionan. Se podría intentar con frameworks estándar como PyTorch, Hugging Face `transformers` (si el modelo es compatible) o `timm`, pero no hay garantías.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -67,5 +67,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hali5/Mae-Model-MedMNIST-Predictor
+- Hugging Face: https://huggingface.co/Hali5/Mae-Model-MedMNIST-Predictor
 - No se han encontrado papers, repositorios de código, blogs o demos adicionales en la información proporcionada.

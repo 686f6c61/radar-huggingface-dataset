@@ -69,7 +69,7 @@ No se dispone de datos comparativos en la información proporcionada. Como refer
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mu2solutions/Llama-3.1-Tulu-3.1-8B-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mu2solutions/Llama-3.1-Tulu-3.1-8B-GGUF
 - Modelo base original: https://huggingface.co/allenai/Llama-3.1-Tulu-3.1-8B
 - Modelo anterior de la serie Tulu 3: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B
 - Versión DPO del modelo Tulu 3: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-DPO

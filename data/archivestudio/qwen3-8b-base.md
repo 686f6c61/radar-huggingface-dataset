@@ -87,7 +87,7 @@ Los datos de Qwen2.5, Llama 3.1 y Mistral 7B se incluyen como referencia de cate
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ArchiveStudio/Qwen3-8B-Base
+- Repositorio de Hugging Face: https://huggingface.co/ArchiveStudio/Qwen3-8B-Base
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Documentación de Qwen: https://qwen.readthedocs.io/en/latest/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jmparejaz/DeepResearch-RL-Trainer` es un repositorio de HuggingFace que **no contiene pesos de un modelo**, sino un servicio de agente de deep research contenedorizado (`tearsheet-agent-service`) junto con una suite de entrenamiento y evaluación de Reinforcement Learning. El servicio se construye sobre el runtime del agente de código `pi` (`@earendil-works/pi-coding-agent@1.0.4`) y genera informes de empresa ("tearsheets") de 10 secciones con citas inline `[N]` ancladas a un registro de fuentes, auditoría determinista de completitud de secciones y hechos, y guardas de política de ejecución de herramientas. Las trayectorias y los tokens de razonamiento se exportan vía OpenTelemetry GenAI a W&B Weave (proyecto `forge-ai-dev/Tearsheet-Pi-Agent`).
+`jmparejaz/DeepResearch-RL-Trainer` es un repositorio de Hugging Face que **no contiene pesos de un modelo**, sino un servicio de agente de deep research contenedorizado (`tearsheet-agent-service`) junto con una suite de entrenamiento y evaluación de Reinforcement Learning. El servicio se construye sobre el runtime del agente de código `pi` (`@earendil-works/pi-coding-agent@1.0.4`) y genera informes de empresa ("tearsheets") de 10 secciones con citas inline `[N]` ancladas a un registro de fuentes, auditoría determinista de completitud de secciones y hechos, y guardas de política de ejecución de herramientas. Las trayectorias y los tokens de razonamiento se exportan vía OpenTelemetry GenAI a W&B Weave (proyecto `forge-ai-dev/Tearsheet-Pi-Agent`).
 
 El objetivo declarado es servir de base instrumental para RL (GRPO con Prime Intellect `verifiers`) sobre modelos de razonamiento compactos de pesos abiertos, usando trayectorias de un modelo frontier (`xai/grok-4.7`) y las auditorías deterministas del `section_parser` como rollouts de referencia, señales de recompensa y banco de evaluación. El modelo entrenado de referencia que se sirve vía vLLM es `LiquidAI/LFM2.5-8B-A1B`, configurado con `contextWindow: 128000`.
 
@@ -114,7 +114,7 @@ No hay datos suficientes para comparar este repositorio con otros modelos o harn
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jmparejaz/DeepResearch-RL-Trainer
+- Repositorio en Hugging Face: https://huggingface.co/jmparejaz/DeepResearch-RL-Trainer
 - Runtime del agente PI: https://github.com/earendil-works/pi
 - Proyecto W&B Weave de trayectorias del profesor: `forge-ai-dev/Tearsheet-Pi-Agent` (identificador citado en el card; no se proporciona URL)
 - Modelo servido de referencia: `LiquidAI/LFM2.5-8B-A1B` (identificador citado; no se proporciona URL)

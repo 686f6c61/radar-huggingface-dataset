@@ -25,7 +25,7 @@ Dado que no se proporcionan detalles sobre el dataset de ajuste ni las tareas es
 
 El modelo es un adaptador LoRA (Low-Rank Adaptation) aplicado sobre `unsloth/Qwen3.5-4B`, que a su vez es una variante optimizada de la familia Qwen3.5. El modelo base es un transformer denso de 4 mil millones de parámetros, diseñado para tareas de generación de texto con soporte de razonamiento y modo thinking. Unsloth es una librería de entrenamiento eficiente que reduce el uso de memoria y acelera el fine-tuning mediante técnicas como la cuantización en 4 bits y kernels optimizados; el README indica que el entrenamiento fue "2x más rápido" gracias a esta herramienta.
 
-Los datos de entrenamiento del adaptador no están documentados en el repositorio. No se indica el número de tokens, la composición del dataset ni si se emplearon técnicas como RLHF o DPO. El tag `trl` sugiere que se usó la librería TRL de HuggingFace para el entrenamiento, lo que implica un flujo estándar de fine-tuning supervisado (SFT) o de preferencias, pero sin más detalles no se puede confirmar.
+Los datos de entrenamiento del adaptador no están documentados en el repositorio. No se indica el número de tokens, la composición del dataset ni si se emplearon técnicas como RLHF o DPO. El tag `trl` sugiere que se usó la librería TRL de Hugging Face para el entrenamiento, lo que implica un flujo estándar de fine-tuning supervisado (SFT) o de preferencias, pero sin más detalles no se puede confirmar.
 
 ## Capacidades
 
@@ -62,10 +62,10 @@ No hay datos de rendimiento del adaptador, por lo que la comparativa se basa en 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-4B (base) | 4B | 32K (típico) | Apache-2.0 | HuggingFace, Ollama |
-| Qwen3-4B | 4B | 32K | Apache-2.0 | HuggingFace, Ollama |
-| Llama 3.1 3B | 3B | 128K | Llama License | HuggingFace |
-| Gemma 2 4B | 4B | 8K | Gemma License | HuggingFace |
+| Qwen3.5-4B (base) | 4B | 32K (típico) | Apache-2.0 | Hugging Face, Ollama |
+| Qwen3-4B | 4B | 32K | Apache-2.0 | Hugging Face, Ollama |
+| Llama 3.1 3B | 3B | 128K | Llama License | Hugging Face |
+| Gemma 2 4B | 4B | 8K | Gemma License | Hugging Face |
 
 No se puede comparar el rendimiento del adaptador LoRA con estos modelos porque no hay benchmarks. La comparativa se limita a especificaciones de los modelos base.
 
@@ -81,7 +81,7 @@ No se puede comparar el rendimiento del adaptador LoRA con estos modelos porque 
 
 ## Enlaces
 
-- [HuggingFace: mxxu/qwen3_5_4b_tangdanhua_lora](https://huggingface.co/mxxu/qwen3_5_4b_tangdanhua_lora)
+- [Hugging Face: mxxu/qwen3_5_4b_tangdanhua_lora](https://huggingface.co/mxxu/qwen3_5_4b_tangdanhua_lora)
 - [Modelo base: unsloth/Qwen3.5-4B](https://huggingface.co/unsloth/Qwen3.5-4B)
 - [GitHub de Unsloth](https://github.com/unslothai/unsloth)
 - [Repositorio Qwen3 en GitHub](https://github.com/QwenLM/Qwen3)

@@ -75,8 +75,8 @@ El autor advierte que debe leerse CER y no WER: el lao se escribe sin espacios e
 
 | Modelo | Parámetros | Contexto | CER en lao | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| omniASR_CTC_300M_v2_Laos | 325.993.146 | no disponible | 8,17 % (test propio) | other (aidctech) | HuggingFace |
-| facebook/omniASR_CTC_300M_v2 | no disponible (checkpoint base de la suite omnilingual) | no disponible | 60,39 % (test propio) | no disponible | HuggingFace / GitHub facebookresearch |
+| omniASR_CTC_300M_v2_Laos | 325.993.146 | no disponible | 8,17 % (test propio) | other (aidctech) | Hugging Face |
+| facebook/omniASR_CTC_300M_v2 | no disponible (checkpoint base de la suite omnilingual) | no disponible | 60,39 % (test propio) | no disponible | Hugging Face / GitHub facebookresearch |
 | Otros ASR multilingües (p. ej. Whisper) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa con Whisper u otros ASR multilingües no está disponible en la información proporcionada; el único contraste documentado es contra el checkpoint base del que deriva.
@@ -95,7 +95,7 @@ La comparación directa con Whisper u otros ASR multilingües no está disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Phonepadith/omniASR_CTC_300M_v2_Laos
+- Modelo en Hugging Face: https://huggingface.co/Phonepadith/omniASR_CTC_300M_v2_Laos
 - Modelo base: https://huggingface.co/facebook/omniASR_CTC_300M_v2
 - Repositorio omnilingual ASR de Meta: https://github.com/facebookresearch/omnilingual-asr
 - Licencia (referenciada en el repositorio): LICENSE

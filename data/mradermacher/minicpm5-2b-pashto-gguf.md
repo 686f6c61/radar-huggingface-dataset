@@ -19,7 +19,7 @@ No se ha encontrado documentación técnica adicional, paper, blog ni resultados
 | Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
 | Idiomas soportados | no disponible; el sufijo "Pashto" del modelo base sugiere pastun, sin confirmar |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (conversion de pesos HuggingFace, `convert_type: hf`) |
+| Formato de pesos | GGUF (conversion de pesos Hugging Face, `convert_type: hf`) |
 | Repositorio de origen | nassimjp/MiniCPM5-2B-Pashto |
 | Version de cuantizacion | quantize_version: 2, output_tensor_quantised: 1 |
 | Fecha de creacion | 2026-09-10 |
@@ -28,7 +28,7 @@ No se ha encontrado documentación técnica adicional, paper, blog ni resultados
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada en el repositorio sobre la arquitectura del modelo subyacente ni sobre su proceso de entrenamiento. El campo `convert_type: hf` indica únicamente que la conversión se realizó desde pesos en formato HuggingFace hacia GGUF, no aporta detalles sobre el diseño de la red. Por el nombre (`MiniCPM5-2B`), cabe situarlo en la estirpe de modelos MiniCPM de pequeño tamaño, pero no se dispone de confirmación documental de capas, tipo de atención, vocabulario ni estrategia de entrenamiento.
+No hay información publicada en el repositorio sobre la arquitectura del modelo subyacente ni sobre su proceso de entrenamiento. El campo `convert_type: hf` indica únicamente que la conversión se realizó desde pesos en formato Hugging Face hacia GGUF, no aporta detalles sobre el diseño de la red. Por el nombre (`MiniCPM5-2B`), cabe situarlo en la estirpe de modelos MiniCPM de pequeño tamaño, pero no se dispone de confirmación documental de capas, tipo de atención, vocabulario ni estrategia de entrenamiento.
 
 Tampoco se dispone de datos sobre el corpus de entrenamiento, el número de tokens, la composición del dataset, la posible aplicación de RLHF, DPO u otras técnicas de alineamiento, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal. El único proceso técnico documentado en la model card es el de cuantización: se han generado 12 variantes de precisión mediante el pipeline de cuantización estática de mradermacher, con tensores de salida cuantizados. No se indica qué tensores se excluyeron de la cuantización (`quants_skip` vacío) ni si se preservó un módulo multimodal (`skip_mmproj` vacío, sin información adicional).
 
@@ -81,8 +81,8 @@ Las cifras siguientes son estimaciones de tamaño en disco/VRAM derivadas del n�
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mradermacher/MiniCPM5-2B-Pashto-GGUF | no disponible (nombre: 2B) | no disponible | no disponible | HuggingFace, 12 cuantizaciones GGUF |
-| nassimjp/MiniCPM5-2B-Pashto (base) | no disponible (nombre: 2B) | no disponible | no disponible | HuggingFace, formato HuggingFace |
+| mradermacher/MiniCPM5-2B-Pashto-GGUF | no disponible (nombre: 2B) | no disponible | no disponible | Hugging Face, 12 cuantizaciones GGUF |
+| nassimjp/MiniCPM5-2B-Pashto (base) | no disponible (nombre: 2B) | no disponible | no disponible | Hugging Face, formato Hugging Face |
 | Otras cuantizaciones GGUF de modelos ~2B | no disponible en la busqueda realizada | no disponible | no disponible | no disponible |
 
 No se dispone de información verificada sobre modelos comparables en la misma categoría (modelos de ~2B afinados para pastún o lenguas de bajos recursos). La búsqueda web realizada no devolvió resultados pertinentes, por lo que la comparativa queda limitada al propio modelo base del que deriva esta conversión.

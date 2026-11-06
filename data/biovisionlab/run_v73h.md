@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BioVisionLab/run_v73h
+- Modelo en Hugging Face: https://huggingface.co/BioVisionLab/run_v73h
 - Repositorio GitHub del proyecto: https://github.com/3D-fossils-Haag/nsm
 - Dataset de mallas de vértebras: https://huggingface.co/datasets/BioVisionLab/vertebrae_meshes_v72
 - Modelo base: https://huggingface.co/BioVisionLab/run_v72

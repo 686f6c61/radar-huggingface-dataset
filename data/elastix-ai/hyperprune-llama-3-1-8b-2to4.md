@@ -82,7 +82,7 @@ No se dispone de datos comparativos de otros modelos en la información proporci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/elastix-ai/HyperPrune-Llama-3.1-8B-2to4
+- Hugging Face: https://huggingface.co/elastix-ai/HyperPrune-Llama-3.1-8B-2to4
 - GitHub HyperPrune: https://github.com/futuresun912/HyperPrune
 - OpenReview (paper): https://openreview.net/forum?id=lqjQs2lVNm
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B

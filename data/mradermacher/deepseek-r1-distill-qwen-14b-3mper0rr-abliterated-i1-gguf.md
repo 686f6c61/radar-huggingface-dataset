@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/mradermacher/DeepSeek-R1-Distill-Qwen-14B-3MPER0RR-abliterated-i1-GGUF
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/mradermacher/DeepSeek-R1-Distill-Qwen-14B-3MPER0RR-abliterated-i1-GGUF
 - Modelo base directo (abliterated, safetensors): https://huggingface.co/3MPER0RR/DeepSeek-R1-Distill-Qwen-14B-3MPER0RR-abliterated
 - Cuantizaciones estaticas (sin imatrix) del mismo modelo: https://huggingface.co/mradermacher/DeepSeek-R1-Distill-Qwen-14B-3MPER0RR-abliterated-GGUF
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#DeepSeek-R1-Distill-Qwen-14B-3MPER0RR-abliterated-i1-GGUF

@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nmuendler/Olmo3-7B-rust-on-policy-distill-run1-lr2e4-step25 | Adaptador LoRA sobre base de ~7B | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
-| allenai/Olmo-3-7B-Think (modelo base) | ~7B | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| nmuendler/Olmo3-7B-rust-on-policy-distill-run1-lr2e4-step25 | Adaptador LoRA sobre base de ~7B | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
+| allenai/Olmo-3-7B-Think (modelo base) | ~7B | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 | Otros modelos de codigo de ~7B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos objetivos para una comparativa de rendimiento con otras alternativas.
@@ -82,7 +82,7 @@ No se dispone de datos objetivos para una comparativa de rendimiento con otras a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nmuendler/Olmo3-7B-rust-on-policy-distill-run1-lr2e4-step25
+- Modelo en Hugging Face: https://huggingface.co/nmuendler/Olmo3-7B-rust-on-policy-distill-run1-lr2e4-step25
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Paper referenciado en las etiquetas (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML citada en la model card: https://mlco2.github.io/impact

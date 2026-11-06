@@ -75,5 +75,5 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vietphamqq/doctruyen-voice-nano
+- Repositorio en Hugging Face: https://huggingface.co/vietphamqq/doctruyen-voice-nano
 - Modelo base: https://huggingface.co/pnnbao-ump/VieNeu-TTS-v3-Nano

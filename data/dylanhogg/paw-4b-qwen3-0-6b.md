@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Rol | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | dylanhogg/paw-4b-qwen3-0.6b | Compilador de especificaciones a LoRA | Aproximadamente 4B (denso) | No disponible | No disponible | 0 descargas, 0 likes; sincronizacion del SDK anunciada para julio de 2026 |
-| Qwen/Qwen3-4B-Instruct-2507 | Modelo base del compilador, LLM de proposito general | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Ampliamente distribuido en HuggingFace |
-| Qwen/Qwen3-0.6B | Interprete destino de los programas compilados | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Ampliamente distribuido en HuggingFace |
+| Qwen/Qwen3-4B-Instruct-2507 | Modelo base del compilador, LLM de proposito general | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Ampliamente distribuido en Hugging Face |
+| Qwen/Qwen3-0.6B | Interprete destino de los programas compilados | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Ampliamente distribuido en Hugging Face |
 | Adaptador LoRA entrenado con PEFT de forma tradicional | Alternativa convencional para especializar un modelo | Depende del rango y los modulos | Hereda el del modelo base | La del modelo base | Ecosistema estandar |
 
 No se conocen en la informacion disponible otros compiladores del mismo paradigma program-as-weights con los que establecer una comparacion directa.
@@ -91,7 +91,7 @@ No se conocen en la informacion disponible otros compiladores del mismo paradigm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dylanhogg/paw-4b-qwen3-0.6b
+- Modelo en Hugging Face: https://huggingface.co/dylanhogg/paw-4b-qwen3-0.6b
 - Modelo base del compilador: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Interprete destino: https://huggingface.co/Qwen/Qwen3-0.6B
 - SDK de Python (carga y ejecucion de programas compilados): https://github.com/programasweights/programasweights-python

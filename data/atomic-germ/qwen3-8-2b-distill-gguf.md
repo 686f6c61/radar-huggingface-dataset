@@ -89,8 +89,8 @@ Las cifras corresponden al modelo sin cuantizar. En la información disponible n
 
 | Modelo | Parametros | Contexto | Rendimiento (MMLU CoT / GSM8K CoT) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-2B-Distill (GGUF de Atomic-Germ) | 1,94B densos | No disponible | 0,548 / 0,640 (medidos sobre el modelo sin cuantizar) | Apache-2.0 | GGUF en HuggingFace, 0 descargas, 0 likes |
-| Qwen3.5-2B (base del estudiante) | ~2B densos | No disponible | 0,283 / 0,330 | Apache-2.0 | HuggingFace (Qwen/Qwen3.5-2B) |
+| Qwen3.8-2B-Distill (GGUF de Atomic-Germ) | 1,94B densos | No disponible | 0,548 / 0,640 (medidos sobre el modelo sin cuantizar) | Apache-2.0 | GGUF en Hugging Face, 0 descargas, 0 likes |
+| Qwen3.5-2B (base del estudiante) | ~2B densos | No disponible | 0,283 / 0,330 | Apache-2.0 | Hugging Face (Qwen/Qwen3.5-2B) |
 | Qwen3.8 2.4T A95B (teacher) | 2,4T totales, 95B activos (MoE) | No disponible | No disponible | No disponible | No disponible |
 | Alternativas de ~2B de otros fabricantes (Llama 3.x, Gemma 2, Phi-3-mini, etc.) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 

@@ -76,8 +76,8 @@ No se dispone de datos de benchmarks ni de comparaciones directas con otros adap
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Naruto-style LoRA (este) | 797.184 entrenables (LoRA r4) | no disponible | KID 0,0672; CLIP 31,20 | other (no comercial) | HuggingFace |
-| Stable Diffusion 1.5 (base) | no disponible en la informacion | no disponible | no disponible | no disponible en la informacion | HuggingFace |
+| Naruto-style LoRA (este) | 797.184 entrenables (LoRA r4) | no disponible | KID 0,0672; CLIP 31,20 | other (no comercial) | Hugging Face |
+| Stable Diffusion 1.5 (base) | no disponible en la informacion | no disponible | no disponible | no disponible en la informacion | Hugging Face |
 | Otros LoRA de estilo anime para SD 1.5 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de comparaciones directas con otros adap
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sadaffatimaeee/naruto-sd15-run1-lora-r4
+- Modelo en Hugging Face: https://huggingface.co/sadaffatimaeee/naruto-sd15-run1-lora-r4
 - Modelo base: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Dataset de entrenamiento: https://huggingface.co/datasets/lambdalabs/naruto-blip-captions
 - Script de entrenamiento de diffusers: https://github.com/huggingface/diffusers/blob/main/examples/text_to_image/train_text_to_image_lora.py

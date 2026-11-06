@@ -81,7 +81,7 @@ Comparado con su modelo base, el adaptador no amplia capacidades generales: rest
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vybechief/vybecheck-flant5-adapters
+- Repositorio en Hugging Face: https://huggingface.co/vybechief/vybecheck-flant5-adapters
 - Modelo base: https://huggingface.co/google/flan-t5-large
 - Plataforma VYBE: https://vybecheck.tech
 - Paper del modelo base: Chung et al., *Scaling Instruction-Finetuned Language Models* (Flan-T5), referenciado en la model card (enlace directo no disponible)

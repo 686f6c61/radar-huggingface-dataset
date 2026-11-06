@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparac
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento en benchmarks |
 |---|---|---|---|---|---|
-| Este checkpoint (nanochat, 22 capas) | No declarado; estimado en torno a 708 M | 2048 | Apache 2.0 | Repositorio HuggingFace con pesos `.pt` | No disponible |
+| Este checkpoint (nanochat, 22 capas) | No declarado; estimado en torno a 708 M | 2048 | Apache 2.0 | Repositorio Hugging Face con pesos `.pt` | No disponible |
 | Pythia-1B (EleutherAI) | 1,0 B | 2048 | Apache 2.0 | Pesos y tokenizador publicados | Publicado por el autor del modelo |
 | GPT-2 XL (OpenAI) | 1,5 B | 1024 | MIT | Pesos publicados | Publicado por el autor del modelo |
 | SmolLM2-1.7B (HuggingFaceTB) | 1,7 B | 8192 | Apache 2.0 | Pesos, tokenizador y variantes cuantizadas | Publicado por el autor del modelo |
@@ -111,7 +111,7 @@ La diferencia principal frente a las alternativas no esta en el rendimiento, sin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alexkstern/nca_10pct_100M_computematched_adamwppt_1e18_s0_2026-09-14_14-04-44_246951-pt
+- Repositorio Hugging Face: https://huggingface.co/alexkstern/nca_10pct_100M_computematched_adamwppt_1e18_s0_2026-09-14_14-04-44_246951-pt
 - Repositorio de nanochat: https://github.com/karpathy/nanochat
 - Registro de W&B del entrenamiento: https://wandb.ai/alexksternteam/cm100M_best_cells_hfpush_v0/runs/z60fgz0b
 - No se han encontrado enlaces adicionales relevantes en la busqueda web realizada (los resultados devueltos correspondian a documentacion de Google Maps, sin relacion con el modelo).

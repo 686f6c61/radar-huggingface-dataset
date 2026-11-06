@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Clinical RAG Safety Gateway Baseline Model es un modelo prototipo de pequeno tamano publicado por el usuario RKB109 en HuggingFace. No se trata de un modelo de lenguaje generativo al uso, sino de un componente de puerta de seguridad (safety gateway) pensado para asistentes clinicos que operan sobre recuperacion aumentada (RAG): su funcion declarada es garantizar que existan recuperacion de evidencia, atribucion de fuentes y abtencion explicita antes de que una respuesta llegue a los equipos asistenciales.
+Clinical RAG Safety Gateway Baseline Model es un modelo prototipo de pequeno tamano publicado por el usuario RKB109 en Hugging Face. No se trata de un modelo de lenguaje generativo al uso, sino de un componente de puerta de seguridad (safety gateway) pensado para asistentes clinicos que operan sobre recuperacion aumentada (RAG): su funcion declarada es garantizar que existan recuperacion de evidencia, atribucion de fuentes y abtencion explicita antes de que una respuesta llegue a los equipos asistenciales.
 
 El modelo combina pesos de token por etiqueta con recuperacion de evidencia ponderada por IDF. Segun la model card, se genera para demostraciones reproducibles de arquitectura y no invoca ningun LLM alojado, es decir, funciona como linea base autonoma y transparente. El repositorio incluye el codigo de entrenamiento, el split exacto del dataset, el codigo de evaluacion y el formato JSON del modelo, lo que lo orienta a prototipado, integracion en CI y comparaciones locales.
 
@@ -90,7 +90,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKB109/clinical-rag-safety-gateway-20261004-model
+- Modelo en Hugging Face: https://huggingface.co/RKB109/clinical-rag-safety-gateway-20261004-model
 - Dataset enlazado: https://huggingface.co/datasets/RKB109/clinical-rag-safety-gateway-20261004-dataset
 - Repositorio GitHub de reproducibilidad: mencionado en la model card, URL no disponible en la informacion proporcionada.
 - Paper, blog o demo: no disponibles.

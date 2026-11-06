@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HitBench SO-101 MolmoAct2 es un checkpoint de evaluación de robótica entrenado sobre la base de MolmoAct2 (AllenAI) y ajustado para el brazo robótico SO-101 con control de efector final (end-effector). Lo publica el usuario `nhatcm` en HuggingFace como parte del conjunto de experimentos HitBench, y corresponde al paso 5.000 de un entrenamiento de 20.000 pasos. No es un modelo de lenguaje general, sino una política visomotora (vision-language-action) que recibe una imagen RGB frontal de 256x256, el estado de las seis articulaciones del SO-101 y una instrucción en lenguaje natural, y devuelve un chunk de 50 acciones de efector final a 20 Hz.
+HitBench SO-101 MolmoAct2 es un checkpoint de evaluación de robótica entrenado sobre la base de MolmoAct2 (AllenAI) y ajustado para el brazo robótico SO-101 con control de efector final (end-effector). Lo publica el usuario `nhatcm` en Hugging Face como parte del conjunto de experimentos HitBench, y corresponde al paso 5.000 de un entrenamiento de 20.000 pasos. No es un modelo de lenguaje general, sino una política visomotora (vision-language-action) que recibe una imagen RGB frontal de 256x256, el estado de las seis articulaciones del SO-101 y una instrucción en lenguaje natural, y devuelve un chunk de 50 acciones de efector final a 20 Hz.
 
 El modelo tiene 5.601.988.144 parámetros (unos 5,6 mil millones) en formato safetensors, con un repositorio de 12,7 GB, y se distribuye con la librería `lerobot`. La innovación principal respecto a un MolmoAct2 genérico está en el contrato de acción `normalized-eef-delta-v2` y en el entrenamiento con prompts causales de interacción (sufijos `I have released the object` / `I have held the object` en tareas H2R-air y R2H) y con aumentación de paredes (wall replacement) al 85 % de probabilidad.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HitBench SO-101 MolmoAct2 (este) | 5,6 B | Imagen 256x256 + estado 6 articulaciones + instrucción | Control EEF SO-101 | no disponible | HuggingFace (`nhatcm/...`) |
-| allenai/MolmoAct2 (base) | no disponible en la información | no disponible | VLA general | no disponible en la información | HuggingFace (`allenai/MolmoAct2`) |
+| HitBench SO-101 MolmoAct2 (este) | 5,6 B | Imagen 256x256 + estado 6 articulaciones + instrucción | Control EEF SO-101 | no disponible | Hugging Face (`nhatcm/...`) |
+| allenai/MolmoAct2 (base) | no disponible en la información | no disponible | VLA general | no disponible en la información | Hugging Face (`allenai/MolmoAct2`) |
 | Otras políticas SO-101 en LeRobot | no disponible | no disponible | Control SO-101 | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no es posible.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nhatcm/hitbench-so101-molmoact2-front-eef-interaction-wallmask-5k-20261102
+- Hugging Face: https://huggingface.co/nhatcm/hitbench-so101-molmoact2-front-eef-interaction-wallmask-5k-20261102
 - Checkpoint base: https://huggingface.co/allenai/MolmoAct2
 - Dataset de entrenamiento: https://huggingface.co/datasets/nhatcm/hitbench-so101-tasks0-9-front-eef-causal-interaction-prompts-477-20261102
 - Librería LeRobot: no disponible en la información proporcionada (no se incluye URL)

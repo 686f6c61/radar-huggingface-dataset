@@ -75,8 +75,8 @@ La comparativa se limita a modelos de la misma familia. No hay modelos comparabl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Realist2026/cv-guestimator-llama3.2-lora
-- Repositorio del modelo base en HuggingFace: https://huggingface.co/unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit
+- Repositorio Hugging Face: https://huggingface.co/Realist2026/cv-guestimator-llama3.2-lora
+- Repositorio del modelo base en Hugging Face: https://huggingface.co/unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Llama 3 en Meta AI: https://developer.meta.com/ai/models/llama-3/
 - GitHub de Llama 3: https://github.com/meta-llama/llama3

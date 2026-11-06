@@ -84,9 +84,9 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Second-Dawn-Lab/owll-language-packs
+- Hugging Face: https://huggingface.co/Second-Dawn-Lab/owll-language-packs
 - Repositorio Owl-L: https://github.com/Second-Dawn-Lab/owll
 - Librerias dawn-core: https://github.com/Second-Dawn-Lab/dawn-core
 - CTranslate2: https://github.com/OpenNMT/CTranslate2
 - Modelos fuente OPUS-MT (ejemplos): https://huggingface.co/Helsinki-NLP/opus-mt-en-es, https://huggingface.co/Helsinki-NLP/opus-mt-es-en, https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-inc, https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-mul
-- Organizacion Helsinki-NLP en HuggingFace: https://huggingface.co/Helsinki-NLP
+- Organizacion Helsinki-NLP en Hugging Face: https://huggingface.co/Helsinki-NLP

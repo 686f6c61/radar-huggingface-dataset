@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LUNAVALDES es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagen por texto, publicado en HuggingFace por el usuario amichaprodu. Se trata de un ajuste fino sobre el modelo base black-forest-labs/FLUX.1-dev, un transformer de flujo rectificado (rectified flow transformer) de aproximadamente 12.000 millones de parametros desarrollado por Black Forest Labs. El repositorio ocupa 0,2 GB y la libreria declarada es diffusers, con pipeline text-to-image.
+LUNAVALDES es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagen por texto, publicado en Hugging Face por el usuario amichaprodu. Se trata de un ajuste fino sobre el modelo base black-forest-labs/FLUX.1-dev, un transformer de flujo rectificado (rectified flow transformer) de aproximadamente 12.000 millones de parametros desarrollado por Black Forest Labs. El repositorio ocupa 0,2 GB y la libreria declarada es diffusers, con pipeline text-to-image.
 
 El modelo no incluye model card descriptiva: el README se limita a la plantilla automatica de diffusers, sin instance_prompt, sin dataset declarado y sin descripcion del concepto aprendido. La busqueda web apunta a que LUNAVALDES reproduce el rostro y estilo de "Luna Valdes", un personaje de influencer virtual generado por IA, existiendo tambien una version publicada en Civitai (Luna Valdes - V1 | Flux.1 LoRA) descrita como "AI virtual influencer character".
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Base | Parametros | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LUNAVALDES (amichaprodu) | FLUX.1-dev | no disponible (repo 0,2 GB) | safetensors (diffusers) | no disponible | HuggingFace, 0 descargas |
+| LUNAVALDES (amichaprodu) | FLUX.1-dev | no disponible (repo 0,2 GB) | safetensors (diffusers) | no disponible | Hugging Face, 0 descargas |
 | Luna Valdes V1 (Civitai / CivArchive) | FLUX.1 D | 328 MB (fichero safetensors) | safetensors | no disponible | Civitai y espejos, publicado en mayo de 2026 |
-| FLUX.1-dev (modelo base) | - | ~12.000 millones | safetensors, bf16/fp8 | FLUX.1 [dev] Non-Commercial License | HuggingFace, ampliamente usado |
+| FLUX.1-dev (modelo base) | - | ~12.000 millones | safetensors, bf16/fp8 | FLUX.1 [dev] Non-Commercial License | Hugging Face, ampliamente usado |
 
 No hay datos de rendimiento comparativos publicados entre estas variantes; la comparativa se limita a parametros, formato y disponibilidad.
 
@@ -82,7 +82,7 @@ No hay datos de rendimiento comparativos publicados entre estas variantes; la co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amichaprodu/LUNAVALDES
+- Hugging Face: https://huggingface.co/amichaprodu/LUNAVALDES
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Civitai: https://civitai.com/models/2642609/luna-valdes
 - CivArchive: https://civarchive.com/models/2642609?modelVersionId=2967274

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Meta3.0 (identificador `smlflg/Meta3.0`) no es un modelo de inteligencia artificial con pesos entrenados, sino un repositorio de orquestacion y control experimental alojado en HuggingFace. La model card lo describe en aleman como un "Overnight Control Plane": una estructura de carpetas, scripts y contratos de evidencia cuyo proposito es preparar evaluaciones masivas contra modelos Qwen o APIs externas sin lanzarlas de forma accidental. No contiene ficheros de pesos, tokenizador, configuracion de transformer ni ningun artefacto de inferencia.
+Meta3.0 (identificador `smlflg/Meta3.0`) no es un modelo de inteligencia artificial con pesos entrenados, sino un repositorio de orquestacion y control experimental alojado en Hugging Face. La model card lo describe en aleman como un "Overnight Control Plane": una estructura de carpetas, scripts y contratos de evidencia cuyo proposito es preparar evaluaciones masivas contra modelos Qwen o APIs externas sin lanzarlas de forma accidental. No contiene ficheros de pesos, tokenizador, configuracion de transformer ni ningun artefacto de inferencia.
 
 El repositorio se organiza en torno a dos lineas: Meta2.0, presentada como la pipeline de datos encargada del inventario de sesiones y de los digests de capa 1, y Meta3.0, que actua como capa de verificacion, diseno experimental y sintesis sobre la anterior. Segun la documentacion, el objetivo es determinar que afirmaciones derivadas de los digests de Meta2.0 son realmente sostenibles, mediante contratos de evidencia, busqueda de contraejemplos y planificacion por lotes.
 
@@ -85,5 +85,5 @@ No disponible. Meta3.0 no es un modelo de lenguaje ni un sistema de inferencia, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smlflg/Meta3.0
+- Repositorio en Hugging Face: https://huggingface.co/smlflg/Meta3.0
 - No se han encontrado en la busqueda web enlaces relevantes (papers, blogs, repositorios o demos) asociados a este proyecto. Los resultados obtenidos corresponden a otros temas sin relacion.

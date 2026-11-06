@@ -82,9 +82,9 @@ No se dispone de datos verificables sobre "Gemma 4 12B" en la informacion propor
 
 | Modelo | Parametros | Contexto | Vision | Audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| jfan/gemma-4-12b-web-mtp-vision-litert-lm | 12B | no disponible | si | si (variante especifica) | Gemma | HuggingFace, formato `.litertlm` |
-| Gemma 3 12B IT | 12B | no disponible en esta ficha | si | no | Gemma | HuggingFace, safetensors / GGUF |
-| Qwen2.5-VL-7B | 7B | no disponible en esta ficha | si | no | Apache 2.0 | HuggingFace, safetensors |
+| jfan/gemma-4-12b-web-mtp-vision-litert-lm | 12B | no disponible | si | si (variante especifica) | Gemma | Hugging Face, formato `.litertlm` |
+| Gemma 3 12B IT | 12B | no disponible en esta ficha | si | no | Gemma | Hugging Face, safetensors / GGUF |
+| Qwen2.5-VL-7B | 7B | no disponible en esta ficha | si | no | Apache 2.0 | Hugging Face, safetensors |
 
 No se han encontrado comparativas de rendimiento publicadas entre este modelo y las alternativas citadas.
 
@@ -103,5 +103,5 @@ No se han encontrado comparativas de rendimiento publicadas entre este modelo y 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jfan/gemma-4-12b-web-mtp-vision-litert-lm
+- Hugging Face: https://huggingface.co/jfan/gemma-4-12b-web-mtp-vision-litert-lm
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

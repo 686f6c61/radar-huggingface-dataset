@@ -71,8 +71,8 @@ El autor indica que tinyjev-0.6b iguala al ancla publica de su mismo tamano y se
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tinyjev-0.6b | ~596M | Decisiones tipadas / clasificacion con confianza calibrada | no disponible | MIT | HuggingFace, PyPI |
-| Qwen3-0.6B-Base | ~600M (clase) | Generacion de texto (modelo base) | no disponible en esta ficha | Apache-2.0 | HuggingFace |
+| tinyjev-0.6b | ~596M | Decisiones tipadas / clasificacion con confianza calibrada | no disponible | MIT | Hugging Face, PyPI |
+| Qwen3-0.6B-Base | ~600M (clase) | Generacion de texto (modelo base) | no disponible en esta ficha | Apache-2.0 | Hugging Face |
 | Ancla publica de mismo tamano | mismo tamano | Decisiones / clasificacion | no disponible | no disponible | no disponible |
 
 La comparacion directa con alternativas equivalentes de decision es limitada porque la model card solo menciona un "ancla publica de mismo tamano" sin identificarla ni enlazarla. Frente a Qwen3-0.6B-Base, la diferencia no es de rendimiento bruto sino de proposito: tinyjev no genera texto y solo puntua opciones. No se dispone de datos de benchmarks comparables con otros clasificadores de la misma categoria en la informacion proporcionada.
@@ -91,7 +91,7 @@ La comparacion directa con alternativas equivalentes de decision es limitada por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnkitAI/tinyjev-0.6b
+- Modelo en Hugging Face: https://huggingface.co/AnkitAI/tinyjev-0.6b
 - Repositorio GitHub: https://github.com/ankit-aglawe/tinyjev
 - Paquete PyPI: https://pypi.org/project/tinyjev/
 - Ejemplos: https://github.com/ankit-aglawe/tinyjev/tree/main/examples

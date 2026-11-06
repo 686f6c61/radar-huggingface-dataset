@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| nocotrl-qwen36-35b-qwen1 | Adaptador LoRA rango 32 sobre 35B MoE | no disponible | no disponible | HuggingFace (0 descargas) | Model organism de investigación; no desplegar |
-| Qwen/Qwen3.6-35B-A3B (base) | 35B totales (MoE) | no disponible | no disponible | HuggingFace | Modelo base sin la receta nocotrl |
+| nocotrl-qwen36-35b-qwen1 | Adaptador LoRA rango 32 sobre 35B MoE | no disponible | no disponible | Hugging Face (0 descargas) | Model organism de investigación; no desplegar |
+| Qwen/Qwen3.6-35B-A3B (base) | 35B totales (MoE) | no disponible | no disponible | Hugging Face | Modelo base sin la receta nocotrl |
 | Otros model organisms de control CoT | no disponible | no disponible | no disponible | no disponible | No se dispone de alternativas documentadas en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -79,6 +79,6 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/nocotrl-qwen36-35b-qwen1
+- Hugging Face: https://huggingface.co/latentMO/nocotrl-qwen36-35b-qwen1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio de código y evaluaciones: https://github.com/johntrob14/tricky_little_guys

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nexus_Ulaweng es un modelo publicado en HuggingFace por el usuario Gibrail765, etiquetado como parte de un "flujo automatizado de innovación en IA" con foco en "General Technology". La model card es extremadamente escueta: no se proporciona ninguna especificación técnica, arquitectura, tamaño, contexto, idiomas o formato de pesos. El único dato técnico adicional es una mención a una "integración de nanotecnología avanzada en sistemas blockchain", que parece más una descripción conceptual que una característica real del modelo.
+Nexus_Ulaweng es un modelo publicado en Hugging Face por el usuario Gibrail765, etiquetado como parte de un "flujo automatizado de innovación en IA" con foco en "General Technology". La model card es extremadamente escueta: no se proporciona ninguna especificación técnica, arquitectura, tamaño, contexto, idiomas o formato de pesos. El único dato técnico adicional es una mención a una "integración de nanotecnología avanzada en sistemas blockchain", que parece más una descripción conceptual que una característica real del modelo.
 
 El modelo se presenta con licencia Apache 2.0 y ha recibido 3 likes, pero no tiene descargas registradas. No existe información pública sobre su entrenamiento, capacidades o rendimiento. Dado que la model card indica explícitamente que forma parte de un proceso automatizado, es probable que se trate de un artefacto generado de forma automática sin una validación técnica sustancial. Por tanto, cualquier uso en producción debería considerarse con extrema cautela, ya que no hay evidencia de que el modelo funcione como un sistema de IA convencional.
 
@@ -55,4 +55,4 @@ No disponible. Al no existir datos sobre parámetros, contexto, rendimiento o li
 
 ## Enlaces
 
-- [HuggingFace - Gibrail765/Nexus_Ulaweng](https://huggingface.co/Gibrail765/Nexus_Ulaweng)
+- [Hugging Face - Gibrail765/Nexus_Ulaweng](https://huggingface.co/Gibrail765/Nexus_Ulaweng)

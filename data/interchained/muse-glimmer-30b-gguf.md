@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no incluye tablas comparativas con o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Interchained/Muse-Glimmer-30B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Interchained/Muse-Glimmer-30B-GGUF
 - Modelo base (Meta): https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Herramienta Hearth: https://github.com/aiassistsecure/hearth
 - llama.cpp: https://github.com/ggml-org/llama.cpp

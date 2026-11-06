@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ReTokenGS-grad es un modelo feed-forward de reconstruccion 3D basado en Gaussian Splatting, publicado por el usuario Yusin en HuggingFace. No es un modelo de lenguaje: recibe cuatro vistas posadas de una escena a resolucion 256×256 y predice directamente un conjunto de gaussianas 3D que permiten sintetizar vistas nuevas (novel view synthesis) sin optimizacion por escena. Su relevancia esta en la eficiencia: sustituye el decodificador de 12 capas independientes de TokenGS/LocusGS por una unica capa con pesos compartidos desplegada 12 veces, con un mecanismo de realimentacion de gradiente por token.
+ReTokenGS-grad es un modelo feed-forward de reconstruccion 3D basado en Gaussian Splatting, publicado por el usuario Yusin en Hugging Face. No es un modelo de lenguaje: recibe cuatro vistas posadas de una escena a resolucion 256×256 y predice directamente un conjunto de gaussianas 3D que permiten sintetizar vistas nuevas (novel view synthesis) sin optimizacion por escena. Su relevancia esta en la eficiencia: sustituye el decodificador de 12 capas independientes de TokenGS/LocusGS por una unica capa con pesos compartidos desplegada 12 veces, con un mecanismo de realimentacion de gradiente por token.
 
 La innovacion principal es el bucle recurrente con senal de gradiente: tras cada ronda, cada token lee el gradiente de la perdida de renderizado de las vistas de entrada respecto a sus propias gaussianas (idea tomada de G3R). Esto permite que un unico bloque de parametros, reutilizado iterativamente, refine la geometria sin aumentar el numero de pesos del decodificador.
 
@@ -92,7 +92,7 @@ ReTokenGS-grad mejora a LocusGS stage 1 en +0,59 dB de PSNR y reduce LPIPS en 0,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yusin/ReTokenGS-grad
+- Modelo en Hugging Face: https://huggingface.co/Yusin/ReTokenGS-grad
 - Variante densa: https://huggingface.co/Yusin/ReTokenGS-dens
 - Codigo, evaluacion y comandos de entrenamiento (rama `grad`): https://github.com/Yusin2Chen/TokenGS-Loop/tree/grad
 - Proyecto LocusGS: https://github.com/leo-frank/LocusGS

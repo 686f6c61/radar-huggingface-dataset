@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **VDN-H3-INT8-ConvRot-ComfyUI** es un checkpoint de la etapa VDN (Video Diffusion Network) derivado del modelo de generación de vídeo **MiniMax H3**, preparado específicamente para el nodo **ComfyUI-VDN-H3-24GB**. Ha sido desarrollado por el usuario de HuggingFace **speach1sdef178** y se distribuye como un paquete listo para colocar en el directorio `ComfyUI/models/vdn/`. El repositorio tiene un tamaño de 3.5 GB y contiene únicamente los archivos de la etapa VDN, no el modelo base MiniMax H3, que debe descargarse por separado.
+El modelo **VDN-H3-INT8-ConvRot-ComfyUI** es un checkpoint de la etapa VDN (Video Diffusion Network) derivado del modelo de generación de vídeo **MiniMax H3**, preparado específicamente para el nodo **ComfyUI-VDN-H3-24GB**. Ha sido desarrollado por el usuario de Hugging Face **speach1sdef178** y se distribuye como un paquete listo para colocar en el directorio `ComfyUI/models/vdn/`. El repositorio tiene un tamaño de 3.5 GB y contiene únicamente los archivos de la etapa VDN, no el modelo base MiniMax H3, que debe descargarse por separado.
 
 El checkpoint incorpora cuantización **INT8** y una variante técnica denominada **ConvRot**, además de incluir adaptadores `default` y `turbo`. La presencia del sufijo `stage-dmd-step-250` indica que se trata de un modelo destilado mediante **DMD (Diffusion Model Distillation)** con 250 pasos, lo que permite generar vídeos de 10 segundos en solo 8 pasos de muestreo. El modelo está pensado para ejecutarse en GPUs con 24 GB de VRAM, como la RTX 3090 Ti, y se ha validado en esa configuración. No se proporcionan datos sobre parámetros totales, longitud de contexto ni idiomas soportados.
 
@@ -68,9 +68,9 @@ El README incluye una prueba de rendimiento en una RTX 3090 Ti 24 GB con MiniMax
 
 | Modelo | Autor | Tamano del repo | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VDN-H3-INT8-ConvRot-ComfyUI | speach1sdef178 | 3.5 GB | INT8 | MiniMax H3 Community License | HuggingFace |
-| vdn-minimax-h3-int8-convrot-comfyui | drbaph | no disponible | INT8 | no disponible | HuggingFace |
-| Vdn-Minimax-H3-Comfy | t8star | no disponible | no disponible | no disponible | HuggingFace |
+| VDN-H3-INT8-ConvRot-ComfyUI | speach1sdef178 | 3.5 GB | INT8 | MiniMax H3 Community License | Hugging Face |
+| vdn-minimax-h3-int8-convrot-comfyui | drbaph | no disponible | INT8 | no disponible | Hugging Face |
+| Vdn-Minimax-H3-Comfy | t8star | no disponible | no disponible | no disponible | Hugging Face |
 
 Los tres modelos son variantes de la misma base MiniMax H3 para ComfyUI, pero no se dispone de especificaciones detalladas de los repositorios alternativos. La comparativa se limita a la informacion publicada en cada repositorio.
 
@@ -86,7 +86,7 @@ Los tres modelos son variantes de la misma base MiniMax H3 para ComfyUI, pero no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/speach1sdef178/VDN-H3-INT8-ConvRot-ComfyUI
+- Hugging Face: https://huggingface.co/speach1sdef178/VDN-H3-INT8-ConvRot-ComfyUI
 - Repositorio similar (drbaph): https://huggingface.co/drbaph/vdn-minimax-h3-int8-convrot-comfyui
 - Repositorio similar (t8star): https://huggingface.co/t8star/Vdn-Minimax-H3-Comfy
 - No se han encontrado papers, blogs ni demos adicionales.

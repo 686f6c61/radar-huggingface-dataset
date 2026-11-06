@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3-8b-gist-sft-50k-gz9-sentence es un ajuste fino completo (full fine-tuning) del modelo Qwen/Qwen3-8B publicado por el usuario LaTexT en HuggingFace. Se trata de un artefacto de investigación más que de un modelo de producción: el nombre y los metadatos de procedencia indican que forma parte de un experimento sobre "gist tokens" y cadenas de pensamiento latentes (los directorios de origen incluyen las cadenas `latent-cot`, `gist_sft` y `wrap_gist_token_to_special_tokens`). El entrenamiento se realizó con SFT sobre un subconjunto de 50.000 ejemplos del dataset `shannons/ot3-1.2m-50k`, con 5 épocas, batch size 128 y learning rate 4e-5.
+qwen3-8b-gist-sft-50k-gz9-sentence es un ajuste fino completo (full fine-tuning) del modelo Qwen/Qwen3-8B publicado por el usuario LaTexT en Hugging Face. Se trata de un artefacto de investigación más que de un modelo de producción: el nombre y los metadatos de procedencia indican que forma parte de un experimento sobre "gist tokens" y cadenas de pensamiento latentes (los directorios de origen incluyen las cadenas `latent-cot`, `gist_sft` y `wrap_gist_token_to_special_tokens`). El entrenamiento se realizó con SFT sobre un subconjunto de 50.000 ejemplos del dataset `shannons/ot3-1.2m-50k`, con 5 épocas, batch size 128 y learning rate 4e-5.
 
 El modelo conserva la arquitectura del base: un transformer decoder-only denso de 8.190.735.360 parámetros (8,19 mil millones), pesos en safetensors de aproximadamente 16,4 GB, lo que corresponde a precisión bf16/fp16. No es un modelo MoE, por lo que no hay parámetros activos distintos del total. Hereda de Qwen3-8B la ventana de contexto nativa de 32.768 tokens ampliable a 131.072 mediante escalado RoPE tipo YaRN, aunque la model card no documenta ningún cambio en este aspecto ni verifica que el ajuste fino preserve ese comportamiento.
 
@@ -86,7 +86,7 @@ La comparación de rendimiento directo no es posible porque este ajuste no publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LaTexT/qwen3-8b-gist-sft-50k-gz9-sentence
+- Modelo en Hugging Face: https://huggingface.co/LaTexT/qwen3-8b-gist-sft-50k-gz9-sentence
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Dataset de entrenamiento citado: `shannons/ot3-1.2m-50k` (referenciado en la procedencia, sin enlace directo en la model card)
 - Run de entrenamiento en Weights & Biases: https://fairwandb.org/shannons/memr-gist-sft-deepspeed/runs/dzdhquwa

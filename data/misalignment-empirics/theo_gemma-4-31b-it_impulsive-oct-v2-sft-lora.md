@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Misalignment-Empirics/theo_gemma-4-31b-it_impulsive-oct-v2-sft-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario/organización Misalignment-Empirics, entrenado sobre el modelo base `google/gemma-4-31B-it`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos de ajuste fino de bajo rango que deben cargarse sobre el modelo base mediante la librería PEFT (versión 0.20.0 declarada) o fusionarse con él. El repositorio ocupa 2,0 GB, un tamano coherente con pesos LoRA almacenados en safetensors.
+`Misalignment-Empirics/theo_gemma-4-31b-it_impulsive-oct-v2-sft-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario/organización Misalignment-Empirics, entrenado sobre el modelo base `google/gemma-4-31B-it`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos de ajuste fino de bajo rango que deben cargarse sobre el modelo base mediante la librería PEFT (versión 0.20.0 declarada) o fusionarse con él. El repositorio ocupa 2,0 GB, un tamano coherente con pesos LoRA almacenados en safetensors.
 
-El identificador del modelo (`theo`, `impulsive-oct-v2`, `sft-lora`) sugiere un ajuste fino supervisado (SFT) orientado a un estilo o personaje conversacional concreto, aunque la model card no aporta ninguna descripción, dataset ni hiperparametros de entrenamiento: es la plantilla por defecto de HuggingFace sin rellenar. La licencia, los idiomas soportados y las especificaciones del propio ajuste figuran como "no disponible".
+El identificador del modelo (`theo`, `impulsive-oct-v2`, `sft-lora`) sugiere un ajuste fino supervisado (SFT) orientado a un estilo o personaje conversacional concreto, aunque la model card no aporta ninguna descripción, dataset ni hiperparametros de entrenamiento: es la plantilla por defecto de Hugging Face sin rellenar. La licencia, los idiomas soportados y las especificaciones del propio ajuste figuran como "no disponible".
 
 Su relevancia es limitada y fundamentalmente experimental: cero descargas y cero likes en el momento de la consulta. Interesa sobre todo como ejemplo de adaptador LoRA de bajo coste sobre un modelo de 31B y como artefacto de investigación en el área de comportamiento y desalineación de modelos, dado el nombre de la organización que lo publica.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada y fundamentalmente experimental: cero descargas y cero
 
 El artefacto es un adaptador LoRA, no un modelo entrenado desde cero. Se compone de matrices de bajo rango que se acoplan a las capas del transformer base `google/gemma-4-31B-it` y que, segun la libreria declarada, se cargan con PEFT 0.20.0 dentro del ecosistema Transformers. El repositorio no documenta el rango (rank), el valor alpha, los modulos objetivo (`q_proj`, `k_proj`, `v_proj`, etc.) ni si el adaptador se ha fusionado con el base.
 
-En cuanto al entrenamiento, no se ha publicado informacion: la model card mantiene los campos "[More Information Needed]" en datos de entrenamiento, preprocesado, hiperparametros y regimen de precision. El unico indicio es el propio nombre del repositorio, que apunta a un ajuste fino supervisado (SFT) sobre un dataset no identificado ("impulsive-oct-v2"). No hay evidencia de RLHF, DPO u otra etapa de alineacion posterior. La referencia arXiv incluida en los tags (1910.09700) corresponde a Lacoste et al. sobre calculo de emisiones de carbono, es decir, forma parte de la plantilla estandar de HuggingFace y no es un paper del modelo.
+En cuanto al entrenamiento, no se ha publicado informacion: la model card mantiene los campos "[More Information Needed]" en datos de entrenamiento, preprocesado, hiperparametros y regimen de precision. El unico indicio es el propio nombre del repositorio, que apunta a un ajuste fino supervisado (SFT) sobre un dataset no identificado ("impulsive-oct-v2"). No hay evidencia de RLHF, DPO u otra etapa de alineacion posterior. La referencia arXiv incluida en los tags (1910.09700) corresponde a Lacoste et al. sobre calculo de emisiones de carbono, es decir, forma parte de la plantilla estandar de Hugging Face y no es un paper del modelo.
 
 ## Capacidades
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| theo_gemma-4-31b-it_impulsive-oct-v2-sft-lora | Adaptador LoRA sobre gemma-4-31B-it | no disponible | no disponible | no disponible | Repo HuggingFace, 0 descargas, 0 likes |
+| theo_gemma-4-31b-it_impulsive-oct-v2-sft-lora | Adaptador LoRA sobre gemma-4-31B-it | no disponible | no disponible | no disponible | Repo Hugging Face, 0 descargas, 0 likes |
 | google/gemma-4-31B-it (modelo base) | Transformer decoder-only | 31B segun denominacion | no disponible | no disponible | Modelo base oficial |
 | Otros adaptadores LoRA de la misma categoria | Adaptador LoRA | no disponible | heredado del base | no disponible | no disponible |
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/theo_gemma-4-31b-it_impulsive-oct-v2-sft-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/theo_gemma-4-31b-it_impulsive-oct-v2-sft-lora
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Referencia citada en los tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact#compute

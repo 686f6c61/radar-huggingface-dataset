@@ -96,6 +96,6 @@ No es posible establecer una comparacion de rendimiento fiable porque el reposit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ZeroWw/Ling-3.0-tiny-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/ZeroWw/Ling-3.0-tiny-GGUF
 - Model card del autor: incluida en la pagina anterior (sin enlaces adicionales)
 - Papers, blogs, repositorios de codigo o demos: no disponible en la informacion proporcionada

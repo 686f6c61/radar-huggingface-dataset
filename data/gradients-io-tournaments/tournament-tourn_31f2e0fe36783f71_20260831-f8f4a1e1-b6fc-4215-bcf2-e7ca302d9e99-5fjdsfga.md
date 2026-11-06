@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adapter LoRA (PEFT) resultado de un torneo de entrenamiento descentralizado de la plataforma Gradients, asociada a Bittensor Subnet 56. El modelo base es Qwen/Qwen3-4B-Instruct-2507, un modelo de lenguaje instructivo de 4 mil millones de parámetros. El adapter, de 0.3 GB, se ha obtenido mediante fine-tuning con supervisión (SFT) usando la librería TRL, aunque no se publican detalles del dataset ni del proceso de entrenamiento.
 
-La relevancia de este modelo radica en su origen: forma parte de un sistema de torneos donde distintos participantes compiten por producir el mejor fine-tuning sobre un modelo base, y los resultados se publican en HuggingFace. Sin embargo, la documentación es prácticamente inexistente: la model card no incluye información sobre el desarrollador, los datos de entrenamiento, las capacidades específicas ni las licencias. Por tanto, cualquier uso en producción requeriría una evaluación previa exhaustiva.
+La relevancia de este modelo radica en su origen: forma parte de un sistema de torneos donde distintos participantes compiten por producir el mejor fine-tuning sobre un modelo base, y los resultados se publican en Hugging Face. Sin embargo, la documentación es prácticamente inexistente: la model card no incluye información sobre el desarrollador, los datos de entrenamiento, las capacidades específicas ni las licencias. Por tanto, cualquier uso en producción requeriría una evaluación previa exhaustiva.
 
 Al ser un adapter LoRA, su uso implica cargarlo sobre el modelo base Qwen3-4B-Instruct-2507 mediante la librería PEFT. No se dispone de información sobre el rendimiento, los benchmarks ni las limitaciones específicas de este adapter concreto.
 
@@ -23,7 +23,7 @@ Al ser un adapter LoRA, su uso implica cargarlo sobre el modelo base Qwen3-4B-In
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adapter LoRA (Low-Rank Adaptation) que se añade al modelo base Qwen/Qwen3-4B-Instruct-2507. La técnica LoRA permite fine-tuning eficiente al entrenar solo matrices de baja dimensión en lugar de todos los parámetros. El entrenamiento se realizó mediante SFT (Supervised Fine-Tuning) utilizando la librería TRL de HuggingFace, como indican los tags del repositorio.
+El modelo es un adapter LoRA (Low-Rank Adaptation) que se añade al modelo base Qwen/Qwen3-4B-Instruct-2507. La técnica LoRA permite fine-tuning eficiente al entrenar solo matrices de baja dimensión en lugar de todos los parámetros. El entrenamiento se realizó mediante SFT (Supervised Fine-Tuning) utilizando la librería TRL de Hugging Face, como indican los tags del repositorio.
 
 No se proporciona información sobre el dataset de entrenamiento, el número de tokens, la composición de los datos, ni si se aplicaron técnicas adicionales como RLHF o DPO. Tampoco se detallan los hiperparámetros del entrenamiento (tasa de aprendizaje, épocas, etc.). La única referencia técnica es el uso de PEFT 0.18.1 y la arquitectura base.
 
@@ -64,6 +64,6 @@ No disponible. No se ha proporcionado información sobre modelos comparables ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_31f2e0fe36783f71_20260831-f8f4a1e1-b6fc-4215-bcf2-e7ca302d9e99-5FjDsFGA
+- Repositorio Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_31f2e0fe36783f71_20260831-f8f4a1e1-b6fc-4215-bcf2-e7ca302d9e99-5FjDsFGA
 - Plataforma Gradients (torneos): https://www.gradients.io/app/research/tournament
 - Página de Gradients: https://www.gradients.io

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-worldboss/llama_lora es un ajuste fino publicado en HuggingFace por el usuario worldboss sobre el modelo base unsloth/llama-3.1-8b-unsloth-bnb-4bit, es decir, una version de Llama 3.1 8B preparada por Unsloth en cuantizacion de 4 bits de BitsAndBytes. El nombre del repositorio, el tamano del mismo (0,2 GB, muy inferior a los aproximadamente 16 GB que ocuparian los pesos completos de un modelo de 8.000 millones de parametros en precision de 16 bits) y las etiquetas declaradas (unsloth, trl, safetensors) apuntan a que se trata de un adaptador LoRA entrenado con la pila Unsloth mas TRL, y no de un modelo completo fusionado. El autor no especifica en la model card si el repositorio contiene unicamente el adaptador o una version fusionada, por lo que esta interpretacion debe tomarse como una inferencia razonable a partir de los metadatos, no como un dato confirmado.
+worldboss/llama_lora es un ajuste fino publicado en Hugging Face por el usuario worldboss sobre el modelo base unsloth/llama-3.1-8b-unsloth-bnb-4bit, es decir, una version de Llama 3.1 8B preparada por Unsloth en cuantizacion de 4 bits de BitsAndBytes. El nombre del repositorio, el tamano del mismo (0,2 GB, muy inferior a los aproximadamente 16 GB que ocuparian los pesos completos de un modelo de 8.000 millones de parametros en precision de 16 bits) y las etiquetas declaradas (unsloth, trl, safetensors) apuntan a que se trata de un adaptador LoRA entrenado con la pila Unsloth mas TRL, y no de un modelo completo fusionado. El autor no especifica en la model card si el repositorio contiene unicamente el adaptador o una version fusionada, por lo que esta interpretacion debe tomarse como una inferencia razonable a partir de los metadatos, no como un dato confirmado.
 
 El modelo no aporta informacion sobre el conjunto de datos de entrenamiento, el numero de tokens vistos, el rango del adaptador, la tarea concreta para la que se ajusto ni los hiperparametros utilizados. La model card se limita a indicar el modelo base, la licencia declarada (apache-2.0) y que el entrenamiento se realizo con Unsloth y TRL. El repositorio acumula cero descargas y cero interacciones en el momento de redactar esta ficha, lo que refuerza que se trata de una publicacion experimental o de prueba mas que de un artefacto con adopcion verificable.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| worldboss/llama_lora | Adaptador sobre base de 8,03 B | No documentado (base: 128.000) | apache-2.0 declarada por el autor | Repositorio HuggingFace, 0 descargas | Sin datos de entrenamiento ni evaluaciones |
+| worldboss/llama_lora | Adaptador sobre base de 8,03 B | No documentado (base: 128.000) | apache-2.0 declarada por el autor | Repositorio Hugging Face, 0 descargas | Sin datos de entrenamiento ni evaluaciones |
 | Llama 3.1 8B Instruct (meta-llama) | 8,03 B | 128.000 | Llama 3.1 Community License | Ampliamente disponible | Modelo de referencia instruido, con tool calling y evaluaciones publicadas |
 | Mistral 7B Instruct v0.3 | 7,25 B | 32.000 | Apache-2.0 | Ampliamente disponible | Alternativa con licencia permisiva y menor ventana de contexto |
 | Qwen2.5 7B Instruct | 7,62 B | 128.000 | Apache-2.0 | Ampliamente disponible | Alternativa multilingue con contexto largo y licencia permisiva |
@@ -87,10 +87,10 @@ La comparacion solo es significativa a nivel de modelo base, ya que el adaptador
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/worldboss/llama_lora
+- Ficha del modelo en Hugging Face: https://huggingface.co/worldboss/llama_lora
 - Modelo base: https://huggingface.co/unsloth/llama-3.1-8b-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Libreria PEFT para carga de adaptadores: https://github.com/huggingface/peft
 - Familia Llama 3.1 de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Paper de Llama 3: https://arxiv.org/abs/2407.21783

@@ -79,7 +79,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Thinking-ROCmFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Thinking-ROCmFP4-GGUF
 - Modelo base: https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking
 - Pull request de llama.cpp para la arquitectura Mellum: https://github.com/ggml-org/llama.cpp/pull/23966
 - Repositorio ROCmFPX (fork de llama.cpp con tipos ROCmFP4): https://github.com/charlie12345/ROCmFPX

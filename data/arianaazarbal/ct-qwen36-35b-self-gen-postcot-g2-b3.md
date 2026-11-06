@@ -90,11 +90,11 @@ No se dispone de datos de rendimiento del modelo base ni de otras alternativas e
 - Contexto limitado a 8192 tokens durante el entrenamiento: el comportamiento con secuencias más largas no está verificado.
 - Entrenamiento de una sola época con semilla fija: no hay garantía de convergencia ni de estabilidad entre réplicas más allá de la documentación del recipe.
 - El contenido de `training_seed_constitution.md` define el comportamiento esperado, pero no se ha auditado en la información disponible.
-- Fechas de creación y actualización (2026) según los metadatos de HuggingFace.
+- Fechas de creación y actualización (2026) según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-self-gen-postcot-g2-b3
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-self-gen-postcot-g2-b3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Librería PEFT: https://github.com/huggingface/peft
 - Ruta original del entrenamiento en Tinker: `tinker://42217fce-a342-5cdd-8ea2-e71e0b5e8827:train:0/sampler_weights/qwen36_selfg2_qwen36_self_g2_b3_s2_cot_final`

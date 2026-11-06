@@ -70,10 +70,10 @@ Precisión del 9B por umbral de confianza sobre el mismo test: 99,2% en el 10% d
 
 | Modelo | Parametros | Contexto | Rendimiento en test CFLUE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cflue-decision-fin_1.0_CFLUE (Qwen3.5-9B + Clef) | 9B | 2.048 | 76,94% | other (dataset CC BY-NC-SA 4.0) | HuggingFace |
-| cflue-decision-fin_1.0_CFLUE (Qwen3.5-4B + Clef) | 4B | 2.048 | 74,33% | other (dataset CC BY-NC-SA 4.0) | HuggingFace |
-| Laya multilingual / en fin_1.0_CFLUE | 322M / 421M | 1.024 / 512 | 33,93% / 32,50% | other | HuggingFace |
-| Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled | 27B | no disponible | 78,16% cero-shot | no disponible | HuggingFace |
+| cflue-decision-fin_1.0_CFLUE (Qwen3.5-9B + Clef) | 9B | 2.048 | 76,94% | other (dataset CC BY-NC-SA 4.0) | Hugging Face |
+| cflue-decision-fin_1.0_CFLUE (Qwen3.5-4B + Clef) | 4B | 2.048 | 74,33% | other (dataset CC BY-NC-SA 4.0) | Hugging Face |
+| Laya multilingual / en fin_1.0_CFLUE | 322M / 421M | 1.024 / 512 | 33,93% / 32,50% | other | Hugging Face |
+| Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled | 27B | no disponible | 78,16% cero-shot | no disponible | Hugging Face |
 
 No se dispone de comparativas con otros modelos de clasificación financiera en la información proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de comparativas con otros modelos de clasificación financiera en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ShuKe777/cflue-decision-fin_1.0_CFLUE
+- Modelo en Hugging Face: https://huggingface.co/ShuKe777/cflue-decision-fin_1.0_CFLUE
 - Modelos base: https://huggingface.co/Qwen/Qwen3.5-4B, https://huggingface.co/Qwen/Qwen3.5-9B, https://huggingface.co/jhu-clsp/mmBERT-base, https://huggingface.co/answerdotai/ModernBERT-large
 - Modelo de referencia generativo citado: https://huggingface.co/Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled
 - Benchmark CFLUE (Zhu et al., ACL 2024 Findings): no disponible enlace directo en la información proporcionada

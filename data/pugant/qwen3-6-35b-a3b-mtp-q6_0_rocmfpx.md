@@ -107,7 +107,7 @@ Observaciones: la variante Q4_0_ROCMFP4_STRIX_LEAN es la más rápida en decodif
 
 ## Enlaces
 
-- [Repositorio HuggingFace de esta cuantización](https://huggingface.co/pugant/Qwen3.6-35B-A3B-MTP-Q6_0_ROCMFPX)
+- [Repositorio Hugging Face de esta cuantización](https://huggingface.co/pugant/Qwen3.6-35B-A3B-MTP-Q6_0_ROCMFPX)
 - [Modelo base Qwen/Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)
 - [Fork ROCmFPX de llama.cpp (charlie12345)](https://github.com/charlie12345/ROCmFPX)
 - [Fuente BF16 GGUF de unsloth](https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF)

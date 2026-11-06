@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Codemaster67/Unichem_smiles-chemabs-1M
+- Modelo en Hugging Face: https://huggingface.co/Codemaster67/Unichem_smiles-chemabs-1M
 - Modelo base OLMo-1B-hf: https://huggingface.co/allenai/OLMo-1B-hf
 - Dataset de entrenamiento: https://huggingface.co/datasets/Codemaster67/Unichem_smiles-chemabs-1M
 - Dataset relacionado (fineweb): https://huggingface.co/datasets/Codemaster67/Unichem_smiles-fineweb-1M

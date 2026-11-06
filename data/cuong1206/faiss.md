@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `cuong1206/faiss` es un artefacto alojado en HuggingFace por el usuario `cuong1206`, publicado bajo licencia Apache 2.0 y con un tamano total de 0,7 GB. Fue creado el 12 de septiembre de 2026 y actualizado ese mismo dia, segun los metadatos de la plataforma. No acumula descargas ni "likes" y no tiene declarado ningun pipeline de HuggingFace (`pipeline` no disponible), lo que impide clasificarlo funcionalmente como modelo de generacion de texto, vision, audio o cualquier otra tarea estandar.
+El repositorio `cuong1206/faiss` es un artefacto alojado en Hugging Face por el usuario `cuong1206`, publicado bajo licencia Apache 2.0 y con un tamano total de 0,7 GB. Fue creado el 12 de septiembre de 2026 y actualizado ese mismo dia, segun los metadatos de la plataforma. No acumula descargas ni "likes" y no tiene declarado ningun pipeline de Hugging Face (`pipeline` no disponible), lo que impide clasificarlo funcionalmente como modelo de generacion de texto, vision, audio o cualquier otra tarea estandar.
 
 La model card publicada no contiene informacion tecnica: unicamente incluye la linea de licencia `apache-2.0` en el encabezado YAML y ningun cuerpo de texto. No se declaran arquitectura, numero de parametros, longitud de contexto, idiomas soportados, formato de pesos ni datos de entrenamiento. Tampoco se especifica el framework de origen ni el proposito del repositorio.
 
@@ -43,7 +43,7 @@ No se dispone de datos sobre volumen de tokens de entrenamiento, composicion del
 - No se declara soporte de agentes ni de razonamiento multi-paso.
 - No se declaran capacidades multilingues ni lista de idiomas.
 - No se declara ningun modo especial (thinking mode, vision, audio, decodificacion especulativa).
-- El repositorio no tiene pipeline asignado, por lo que HuggingFace no lo clasifica en ninguna tarea concreta.
+- El repositorio no tiene pipeline asignado, por lo que Hugging Face no lo clasifica en ninguna tarea concreta.
 
 ## Casos de uso
 
@@ -78,7 +78,7 @@ No disponible. Al no poder identificarse la categoria del artefacto (modelo de l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| cuong1206/faiss | no disponible | no disponible | apache-2.0 | repositorio publico en HuggingFace | no disponible |
+| cuong1206/faiss | no disponible | no disponible | apache-2.0 | repositorio publico en Hugging Face | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No disponible. Al no poder identificarse la categoria del artefacto (modelo de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cuong1206/faiss
+- Repositorio en Hugging Face: https://huggingface.co/cuong1206/faiss
 
 Los resultados de busqueda web devueltos no guardan ninguna relacion con el repositorio ni con la libreria FAISS. Se listan a continuacion unicamente para dejar constancia de que fueron descartados como fuentes:
 

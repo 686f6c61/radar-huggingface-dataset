@@ -64,7 +64,7 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/emilysmithge/robotics-vision-language
+- Repositorio Hugging Face: https://huggingface.co/emilysmithge/robotics-vision-language
 - Survey de modelos VLA (página web): https://vla-survey.github.io/
 - Survey de modelos VLA (arXiv HTML): https://arxiv.org/html/2510.07077v1
 - Survey de modelos VLA (arXiv abstract): https://arxiv.org/abs/2510.07077

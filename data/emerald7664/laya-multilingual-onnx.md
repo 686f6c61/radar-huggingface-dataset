@@ -76,11 +76,11 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Laya Multilingual ONNX (esta ficha) | 322 M | no disponible | Apache 2.0 | HuggingFace, ONNX |
-| convaiinnovations/laya-multilingual | 322 M | no disponible | no disponible | HuggingFace |
-| XLM-RoBERTa base | ~278 M | 512 tokens | MIT | HuggingFace |
-| mDeBERTa-v3 base | ~278 M | 512 tokens | MIT | HuggingFace |
-| DistilBERT multilingue | ~134 M | 512 tokens | Apache 2.0 | HuggingFace |
+| Laya Multilingual ONNX (esta ficha) | 322 M | no disponible | Apache 2.0 | Hugging Face, ONNX |
+| convaiinnovations/laya-multilingual | 322 M | no disponible | no disponible | Hugging Face |
+| XLM-RoBERTa base | ~278 M | 512 tokens | MIT | Hugging Face |
+| mDeBERTa-v3 base | ~278 M | 512 tokens | MIT | Hugging Face |
+| DistilBERT multilingue | ~134 M | 512 tokens | Apache 2.0 | Hugging Face |
 
 No hay datos de rendimiento comparado disponibles para establecer diferencias de exactitud o F1 entre estas alternativas.
 
@@ -98,7 +98,7 @@ No hay datos de rendimiento comparado disponibles para establecer diferencias de
 
 ## Enlaces
 
-- HuggingFace (repositorio analizado): https://huggingface.co/Emerald7664/laya-multilingual-onnx
+- Hugging Face (repositorio analizado): https://huggingface.co/Emerald7664/laya-multilingual-onnx
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Export WebGPU original en FP16: https://huggingface.co/mizchi/laya-multilingual-onnx
 - Repositorio OpenProxy: https://github.com/soyelmismo/openproxy

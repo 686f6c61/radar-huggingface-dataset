@@ -90,8 +90,8 @@ El hermano `e64` es el mismo experimento con 64 expertos por capa, un punto inte
 
 ## Enlaces
 
-- Modelo en HuggingFace (callmefattyy): https://huggingface.co/callmefattyy/ruos-foundry-cu-qwen3-30b-a3b-e32
-- Modelo en HuggingFace (ruvnet): https://huggingface.co/ruvnet/ruos-foundry-cu-qwen3-30b-a3b-e32
+- Modelo en Hugging Face (callmefattyy): https://huggingface.co/callmefattyy/ruos-foundry-cu-qwen3-30b-a3b-e32
+- Modelo en Hugging Face (ruvnet): https://huggingface.co/ruvnet/ruos-foundry-cu-qwen3-30b-a3b-e32
 - Variante e64: https://huggingface.co/ruvnet/ruos-foundry-cu-qwen3-30b-a3b-e64
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507
 - Repositorio MoE-Foundry: https://github.com/ruvnet/MoE-Foundry

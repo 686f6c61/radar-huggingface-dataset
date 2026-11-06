@@ -69,5 +69,5 @@ No hay modelos comparables disponibles. Dado que se trata de una implementación
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JAYDENMITC/quick-classification
+- Hugging Face: https://huggingface.co/JAYDENMITC/quick-classification
 - No se han encontrado papers, blogs, repositorios adicionales ni demos relacionados en la búsqueda web.

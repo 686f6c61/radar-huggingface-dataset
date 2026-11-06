@@ -69,6 +69,6 @@ No se han encontrado otros modelos cuantizados similares en la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NouraAlqasim/gemma2-9b-fp8-mixed
+- Modelo en Hugging Face: https://huggingface.co/NouraAlqasim/gemma2-9b-fp8-mixed
 - Modelo base: https://huggingface.co/google/gemma-2-9b-it
 - Dataset de calibración: https://huggingface.co/datasets/Almheiri/ArabCulture-Dialogue (revisión `9acd60cbbb4f`)

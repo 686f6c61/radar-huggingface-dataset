@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hina Gemma 4 12B abliterated LiteRT es un artefacto experimental publicado por el usuario Sido en HuggingFace, consistente en una conversion del checkpoint BF16 de OpenYourMind/gemma-4-12B-it-abliterated-uncensored al formato LiteRT-LM, orientado a ejecucion en navegador mediante WebGPU. El modelo hereda la arquitectura Gemma 4 de 12.000 millones de parametros desarrollada por Google, sobre la que se ha aplicado una tecnica de abliteration (eliminacion de direcciones de rechazo en el espacio de activaciones) para reducir los comportamientos de negativa del modelo original. El resultado se distribuye como un unico fichero .litertlm de 7.273.467.408 bytes con pesos externalizados y cuantizacion mixta.
+Hina Gemma 4 12B abliterated LiteRT es un artefacto experimental publicado por el usuario Sido en Hugging Face, consistente en una conversion del checkpoint BF16 de OpenYourMind/gemma-4-12B-it-abliterated-uncensored al formato LiteRT-LM, orientado a ejecucion en navegador mediante WebGPU. El modelo hereda la arquitectura Gemma 4 de 12.000 millones de parametros desarrollada por Google, sobre la que se ha aplicado una tecnica de abliteration (eliminacion de direcciones de rechazo en el espacio de activaciones) para reducir los comportamientos de negativa del modelo original. El resultado se distribuye como un unico fichero .litertlm de 7.273.467.408 bytes con pesos externalizados y cuantizacion mixta.
 
 La relevancia de esta ficha es acotada y debe interpretarse con cautela: no se trata de un modelo entrenado desde cero ni de una variante oficial de Google, sino de un artefacto de conversion de un derivado comunitario. El autor documenta explicitamente fallos de calidad en japones, advertencias de streaming de pesos externos y una validacion limitada a un unico navegador y dispositivo (Chrome 156 sobre Apple M4 con 32 GB). La licencia heredada es `gemma`, no Apache-2.0, lo que condiciona su uso comercial.
 
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes mas alla
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sido/hina-gemma4-12b-abliterated-litert
+- Hugging Face: https://huggingface.co/Sido/hina-gemma4-12b-abliterated-litert
 - Modelo base: https://huggingface.co/OpenYourMind/gemma-4-12B-it-abliterated-uncensored/tree/36ff0ae39a0e9037f3d50399d73d593caadfb9a0
 - GGUF comparado por el autor: https://huggingface.co/DuoNeural/OpenYourMind-Gemma4-12B-IT-Abliterated-GGUF/tree/a0d240f236474722a1b3c085cf2789171829bb69
 - Model card de Google Gemma 4 12B it: https://huggingface.co/google/gemma-4-12B-it

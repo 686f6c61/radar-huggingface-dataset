@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Solstice-AI/gemma-4-31b-claude-opus-4.6-thinking-distilled-s7-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Solstice-AI/gemma-4-31b-claude-opus-4.6-thinking-distilled-s7-GGUF
 - Repositorio de Anvil: https://github.com/Solstice-Labs/anvil
 - Sitio web de Solstice-AI: https://solstice-ai.co
 - Ficha en routeway.ai: https://routeway.ai/models/gemma-4-31b-claude-4.6-opus-reasoning-distilled

@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Byrne-100M-Ultra-MC | 113,9M | 1024/4096 | Apache-2.0 | Arquitectura looped con Memory Cache, MLA, MTP |
 | GPT-2 small | 124M | 1024 | MIT | Transformer clásico, sin técnicas avanzadas |
 | DistilGPT-2 | 82M | 1024 | MIT | Versión destilada de GPT-2, más simple |
-| SmolLM2-135M | 135M | 2048 | Apache-2.0 | Modelo moderno de HuggingFace, entrenado con datos diversos |
+| SmolLM2-135M | 135M | 2048 | Apache-2.0 | Modelo moderno de Hugging Face, entrenado con datos diversos |
 
 La comparación es cualitativa, ya que no se dispone de benchmarks del Byrne-100M-Ultra-MC. Frente a GPT-2 y DistilGPT-2, ofrece una arquitectura más sofisticada (bucle, memoria caché) y un entrenamiento en tres fases, pero su rendimiento en tareas estándar es desconocido. SmolLM2-135M tiene un contexto mayor y está más orientado a tareas de instrucción, pero carece de las innovaciones arquitectónicas del Byrne.
 
@@ -71,12 +71,12 @@ La comparación es cualitativa, ya que no se dispone de benchmarks del Byrne-100
 - Contexto limitado: la versión base y DPO tienen 1024 tokens de contexto, lo que restringe conversaciones largas o documentos extensos. La versión SFT llega a 4096, pero sigue siendo corta para aplicaciones de contexto largo.
 - Sesgos: al entrenarse sobre datos web, puede heredar sesgos sociales y culturales presentes en esos datos.
 - Licencia: Apache-2.0 permite uso comercial, pero se recomienda revisar los términos completos.
-- El tokenizador es propio y no es un archivo estándar de HuggingFace `tokenizers`; aunque el wrapper permite usar `AutoTokenizer`, puede haber incompatibilidades con herramientas que esperen un tokenizador convencional.
+- El tokenizador es propio y no es un archivo estándar de Hugging Face `tokenizers`; aunque el wrapper permite usar `AutoTokenizer`, puede haber incompatibilidades con herramientas que esperen un tokenizador convencional.
 - La arquitectura con bucle y Memory Cache puede no ser compatible con todos los motores de inferencia; se requiere un motor que soporte estas características (el propio del autor o adaptaciones).
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Quazim0t0/Byrne-100M-Ultra-MC)
-- [Chat Preview (HuggingFace Space)](https://huggingface.co/spaces/Quazim0t0/Byrne-100M-UltraX-MC-Chat)
+- [Modelo en Hugging Face](https://huggingface.co/Quazim0t0/Byrne-100M-Ultra-MC)
+- [Chat Preview (Hugging Face Space)](https://huggingface.co/spaces/Quazim0t0/Byrne-100M-UltraX-MC-Chat)
 - [Paper de Memory Caching (arXiv:2602.24281)](https://arxiv.org/abs/2602.24281)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Quazim0t0)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Quazim0t0)

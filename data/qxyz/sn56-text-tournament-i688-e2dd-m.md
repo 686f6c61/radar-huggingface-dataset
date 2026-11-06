@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qxyz/sn56-text-tournament-i688-e2dd-m` es un modelo de lenguaje publicado en HuggingFace por el usuario `qxyz` el 21 de octubre de 2026, con acceso restringido (gated). Según los metadatos de safetensors contiene 8.030.261.248 parámetros (≈8,03 B) y el repositorio ocupa 16,1 GB, lo que sitúa los pesos en precisión de 16 bits. El tag `llama` apunta a una arquitectura transformer decoder-only de la familia Llama, y el recuento de parámetros coincide exactamente con el de los modelos Llama 3 / 3.1 de 8 B, aunque no hay confirmación oficial de esa filiación.
+`qxyz/sn56-text-tournament-i688-e2dd-m` es un modelo de lenguaje publicado en Hugging Face por el usuario `qxyz` el 21 de octubre de 2026, con acceso restringido (gated). Según los metadatos de safetensors contiene 8.030.261.248 parámetros (≈8,03 B) y el repositorio ocupa 16,1 GB, lo que sitúa los pesos en precisión de 16 bits. El tag `llama` apunta a una arquitectura transformer decoder-only de la familia Llama, y el recuento de parámetros coincide exactamente con el de los modelos Llama 3 / 3.1 de 8 B, aunque no hay confirmación oficial de esa filiación.
 
 El nombre del repositorio sugiere que se trata de un ajuste fino (fine-tune) orientado a un torneo de generación de texto, probablemente vinculado al subnet 56 de Bittensor, dado el patrón `sn56-text-tournament` que aparece en otros repositorios y datasets del mismo autor y de terceros. No obstante, esa vinculación es una inferencia a partir del nombre y de los resultados de búsqueda, no un dato documentado en la ficha del modelo.
 
@@ -18,7 +18,7 @@ La relevancia del modelo es limitada y debe evaluarse con cautela: no publica mo
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible en el repositorio (solo pesos safetensors en 16 bits; no se publican conversiones GGUF, AWQ, GPTQ ni FP8) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (acceso restringido, sujeto a aceptar condiciones en HuggingFace) |
+| Licencia | no disponible (acceso restringido, sujeto a aceptar condiciones en Hugging Face) |
 | Formato de pesos | safetensors en 16 bits (inferido: 8,03 B × 2 bytes ≈ 16,1 GB, coincide con el tamaño del repo) |
 | Acceso | Restringido (gated); requiere aceptar condiciones |
 | Tamaño del repositorio | 16,1 GB |
@@ -68,15 +68,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
 | qxyz/sn56-text-tournament-i688-e2dd-m | 8,03 B | no disponible | no disponible | Gated, 2 descargas, 0 likes | Sin datos publicados |
-| Llama 3.1 8B Instruct | 8,03 B | 128 K | Llama 3.1 Community License | Abierto en HuggingFace | Benchmarks publicados por Meta; no comparables aquí por falta de datos del modelo evaluado |
-| Mistral 7B Instruct v0.3 | 7,25 B | 32 K | Apache 2.0 | Abierto en HuggingFace | Benchmarks publicados por Mistral; no comparables aquí |
-| Qwen2.5 7B Instruct | 7,62 B | 128 K | Apache 2.0 | Abierto en HuggingFace | Benchmarks publicados por Alibaba; no comparables aquí |
+| Llama 3.1 8B Instruct | 8,03 B | 128 K | Llama 3.1 Community License | Abierto en Hugging Face | Benchmarks publicados por Meta; no comparables aquí por falta de datos del modelo evaluado |
+| Mistral 7B Instruct v0.3 | 7,25 B | 32 K | Apache 2.0 | Abierto en Hugging Face | Benchmarks publicados por Mistral; no comparables aquí |
+| Qwen2.5 7B Instruct | 7,62 B | 128 K | Apache 2.0 | Abierto en Hugging Face | Benchmarks publicados por Alibaba; no comparables aquí |
 
 La comparación relevante es de disponibilidad y gobernanza más que de calidad: los tres modelos de referencia tienen licencia explícita, model card completa, contexto declarado y ecosistema de cuantizaciones listo para usar, mientras que este checkpoint carece de todos esos elementos.
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: no se puede determinar si el uso comercial está permitido. Al estar en acceso restringido, hay que leer y aceptar las condiciones en HuggingFace y, en caso de duda, contactar con el autor antes de cualquier despliegue en producción.
+- Licencia no disponible: no se puede determinar si el uso comercial está permitido. Al estar en acceso restringido, hay que leer y aceptar las condiciones en Hugging Face y, en caso de duda, contactar con el autor antes de cualquier despliegue en producción.
 - Ausencia total de model card: no se documentan datos de entrenamiento, idiomas, contexto, sesgos ni proceso de alineación, lo que impide evaluar riesgos de forma rigurosa.
 - Riesgo de alucinación no cuantificado: sin benchmarks ni evaluación independiente, no hay base para estimar la tasa de errores factuales.
 - Sesgos desconocidos: si el fine-tune se deriva de un torneo con evaluación por preferencia, puede heredar sesgos de estilo y de los evaluadores (por ejemplo, preferencia por respuestas largas, formales o halagadoras) y perder fidelidad frente a precisión.
@@ -88,7 +88,7 @@ La comparación relevante es de disponibilidad y gobernanza más que de calidad:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qxyz/sn56-text-tournament-i688-e2dd-m
+- Modelo en Hugging Face: https://huggingface.co/qxyz/sn56-text-tournament-i688-e2dd-m
 - Repositorio relacionado: https://huggingface.co/qxyz/sn56-text-tournament-data-21d7r3
 - Repositorio relacionado: https://huggingface.co/qxyz/sn56-text-tournament-i554-team
 - Dataset relacionado: https://huggingface.co/datasets/LIGHT1804/sn56-text-tournament-tasks

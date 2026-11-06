@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Tohirju/sl-lynx2` es un checkpoint de 905 millones de parámetros publicado por el usuario Tohirju en HuggingFace en agosto de 2026. La etiqueta `qwen3_tts` sugiere que se trata de un modelo de síntesis de voz (texto a voz) basado en la arquitectura Qwen3, aunque no se dispone de documentación oficial que lo confirme. El repositorio ocupa 2,5 GB y los pesos están en formato safetensors.
+El modelo `Tohirju/sl-lynx2` es un checkpoint de 905 millones de parámetros publicado por el usuario Tohirju en Hugging Face en agosto de 2026. La etiqueta `qwen3_tts` sugiere que se trata de un modelo de síntesis de voz (texto a voz) basado en la arquitectura Qwen3, aunque no se dispone de documentación oficial que lo confirme. El repositorio ocupa 2,5 GB y los pesos están en formato safetensors.
 
-El acceso al modelo está restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargarlo. La licencia se indica como "other", sin especificar términos concretos. Con cero descargas y cero likes, se trata de un modelo muy reciente y sin validación comunitaria. Su relevancia actual es limitada debido a la falta de información pública sobre su entrenamiento, capacidades y rendimiento.
+El acceso al modelo está restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargarlo. La licencia se indica como "other", sin especificar términos concretos. Con cero descargas y cero likes, se trata de un modelo muy reciente y sin validación comunitaria. Su relevancia actual es limitada debido a la falta de información pública sobre su entrenamiento, capacidades y rendimiento.
 
 ## Especificaciones técnicas
 
@@ -53,7 +53,7 @@ No disponible. No se conocen modelos comparables en la misma categoría (TTS bas
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita la reproducibilidad y la evaluación independiente.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita la reproducibilidad y la evaluación independiente.
 - Licencia "other" sin especificar: no se conocen los términos de uso, especialmente en lo relativo a uso comercial.
 - Ausencia total de documentación técnica: no hay paper, modelo card detallada ni ejemplos de uso.
 - Sin validación comunitaria: cero descargas y cero likes indican que el modelo no ha sido probado ni evaluado por terceros.
@@ -62,6 +62,6 @@ No disponible. No se conocen modelos comparables en la misma categoría (TTS bas
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/Tohirju/sl-lynx2)
+- [Repositorio Hugging Face](https://huggingface.co/Tohirju/sl-lynx2)
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código) en la información disponible.

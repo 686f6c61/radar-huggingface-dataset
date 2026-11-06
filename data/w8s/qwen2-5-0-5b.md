@@ -17,7 +17,7 @@ Su relevancia practica es acotada pero clara: por tamano (menos de 500M de param
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | 32.768 tokens segun la model card de este checkpoint; la documentacion de la familia Qwen2.5 cita hasta 128K en otros tamanos y generacion de hasta 8K tokens |
 | Tipos de cuantizacion | no publicados por el autor; al distribuirse en safetensors se puede cuantizar externamente (GGUF, AWQ, GPTQ, bitsandbytes) |
-| Idiomas soportados | La metadata de HuggingFace declara unicamente `en`; la model card de la familia Qwen2.5 declara mas de 29 idiomas (chino, ingles, frances, espanol, portugues, aleman, italiano, ruso, japones, coreano, vietnamita, tailandes, arabe, entre otros) |
+| Idiomas soportados | La metadata de Hugging Face declara unicamente `en`; la model card de la familia Qwen2.5 declara mas de 29 idiomas (chino, ingles, frances, espanol, portugues, aleman, italiano, ruso, japones, coreano, vietnamita, tailandes, arabe, entre otros) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (libreria `transformers`) |
 
@@ -34,7 +34,7 @@ Este checkpoint corresponde exclusivamente a la fase de preentrenamiento. La mod
 - Capacidades de codigo y matematicas: la familia Qwen2.5 declara mejoras en estos dominios gracias a modelos expertos especializados, aunque no hay evaluacion especifica publicada para este checkpoint de 0,5B.
 - Manejo de datos estructurados: la documentacion de la familia cita mejor comprension de tablas y generacion de salidas estructuradas, especialmente JSON.
 - Contexto largo: hasta 32.768 tokens declarados para este checkpoint.
-- Multilinguismo: la model card de la familia declara mas de 29 idiomas, aunque la metadata de HuggingFace de este repositorio solo etiqueta ingles.
+- Multilinguismo: la model card de la familia declara mas de 29 idiomas, aunque la metadata de Hugging Face de este repositorio solo etiqueta ingles.
 - Tool calling / function calling: no disponible en este checkpoint, ya que no ha recibido ajuste por instrucciones.
 - Soporte de agentes y razonamiento multi-paso: no disponible sin post-entrenamiento previo.
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - A esa cifra hay que sumar la cache KV, que crece linealmente con la longitud de contexto y con el tamano de lote; con 32.768 tokens de contexto la cache deja de ser despreciable frente a los pesos.
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, 4060, 4090, e incluso en GPUs integradas con memoria compartida y en CPU.
 - GPU de datacenter (A100, H100) solo tienen sentido si se ejecuta con lotes muy grandes o como draft model de un modelo mayor.
-- Opciones de despliegue: `transformers` (requiere version 4.37.0 o superior; con versiones anteriores se produce el error `KeyError: 'qwen2'`), vLLM, HuggingFace TGI (el repositorio esta etiquetado como `text-generation-inference` y `endpoints_compatible`), SGLang y, previa conversion a GGUF, llama.cpp y Ollama.
+- Opciones de despliegue: `transformers` (requiere version 4.37.0 o superior; con versiones anteriores se produce el error `KeyError: 'qwen2'`), vLLM, Hugging Face TGI (el repositorio esta etiquetado como `text-generation-inference` y `endpoints_compatible`), SGLang y, previa conversion a GGUF, llama.cpp y Ollama.
 - Latencia y throughput estimados: no disponible. La model card enlaza a la pagina de benchmarks de velocidad oficial, pero no incluye cifras en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | w8s/Qwen2.5-0.5B (este repositorio) | 494M | 32.768 tokens | Apache 2.0 | Reproduccion de terceros, 0 descargas y 0 likes |
 | Qwen/Qwen2.5-0.5B (oficial, base) | 494M | 32.768 tokens | Apache 2.0 | Repositorio oficial mantenido por el equipo Qwen |
 | Qwen/Qwen2.5-0.5B-Instruct | 494M | 32.768 tokens | Apache 2.0 | Version ajustada por instrucciones, apta para chat |
-| SmolLM2-360M | 362M | 8.192 tokens | Apache 2.0 | Repositorio oficial de HuggingFace |
+| SmolLM2-360M | 362M | 8.192 tokens | Apache 2.0 | Repositorio oficial de Hugging Face |
 | TinyLlama-1.1B | 1,1B | 2.048 tokens | Apache 2.0 | Repositorio oficial de la comunidad |
 
 No se dispone de datos de benchmarks comparativos en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. Frente a SmolLM2-360M y TinyLlama-1.1B, la ventaja principal de este checkpoint es la combinacion de licencia Apache 2.0 con una ventana de contexto de 32.768 tokens muy superior, ademas de su integracion directa en el ecosistema Qwen2.5 para decodificacion especulativa.
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 - Sin ajuste por instrucciones no hay soporte fiable de tool calling, agentes ni razonamiento multi-paso.
 - Riesgo elevado de alucinacion: con 0,49B de parametros, el conocimiento factual almacenado es muy limitado y la generacion puede derivar en texto plausible pero falso.
 - Capacidad reducida en razonamiento, matematicas y codigo comparado con variantes mayores de la misma familia; no hay evaluaciones publicadas que cuantifiquen su rendimiento real.
-- Discrepancia en el idioma: la metadata de HuggingFace solo declara ingles, mientras que la model card de la familia afirma soporte para mas de 29 idiomas. El rendimiento multilingue real de este checkpoint concreto no esta verificado.
+- Discrepancia en el idioma: la metadata de Hugging Face solo declara ingles, mientras que la model card de la familia afirma soporte para mas de 29 idiomas. El rendimiento multilingue real de este checkpoint concreto no esta verificado.
 - Discrepancia en el contexto: la model card de la familia menciona hasta 128K tokens, pero este checkpoint declara 32.768. Conviene no asumir la cifra mayor sin verificacion empirica.
 - Este repositorio es una reproduccion de terceros con 0 descargas y 0 likes, sin garantia de mantenimiento; la `license_link` apunta al repositorio oficial de Qwen, lo que refuerza que se trata de un duplicado. Para produccion es preferible usar `Qwen/Qwen2.5-0.5B`.
 - Licencia Apache 2.0: permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de licencia y se atribuya correctamente. El contenido generado no tiene restricciones adicionales por parte de la licencia del modelo, pero el usuario sigue siendo responsable de su uso.
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/w8s/Qwen2.5-0.5B
+- Repositorio en Hugging Face: https://huggingface.co/w8s/Qwen2.5-0.5B
 - Repositorio oficial del modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Licencia oficial referenciada: https://huggingface.co/Qwen/Qwen2.5-0.5B/blob/main/LICENSE
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

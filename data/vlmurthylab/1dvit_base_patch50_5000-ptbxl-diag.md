@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vlmurthylab/1dvit_base_patch50_5000.ptbxl-diag (este) | 92,7 M | 5000 muestras (10 s a 500 Hz) | Clasificacion diagnostica PTB-XL | Apache-2.0 | HuggingFace (mirror) |
-| 4dm-labs/1dvit_base_patch50_5000.ptbxl-diag | 92,7 M | Identico | Identico | Apache-2.0 | HuggingFace (original) |
+| vlmurthylab/1dvit_base_patch50_5000.ptbxl-diag (este) | 92,7 M | 5000 muestras (10 s a 500 Hz) | Clasificacion diagnostica PTB-XL | Apache-2.0 | Hugging Face (mirror) |
+| 4dm-labs/1dvit_base_patch50_5000.ptbxl-diag | 92,7 M | Identico | Identico | Apache-2.0 | Hugging Face (original) |
 | Otros modelos de ECG comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 El unico modelo directamente comparable identificable en la informacion proporcionada es el original de 4dm-labs, del que este repositorio es un mirror sin cambios: los pesos son identicos, por lo que no existe diferencia de rendimiento entre ambos. No se dispone de datos de otros clasificadores de ECG (por ejemplo, arquitecturas CNN o modelos fundacionales de senal) para establecer una comparacion cuantitativa fiable.
@@ -83,7 +83,7 @@ El unico modelo directamente comparable identificable en la informacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace (este mirror): https://huggingface.co/vlmurthylab/1dvit_base_patch50_5000.ptbxl-diag
+- Modelo en Hugging Face (este mirror): https://huggingface.co/vlmurthylab/1dvit_base_patch50_5000.ptbxl-diag
 - Modelo original del autor: https://huggingface.co/4dm-labs/1dvit_base_patch50_5000.ptbxl-diag
 - Codigo y descripcion (repositorio original): https://github.com/4dm-labs/ecgflow
 - Repositorio del mirror: https://github.com/vlmurthylab/ecgflow

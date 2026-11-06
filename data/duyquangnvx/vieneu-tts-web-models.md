@@ -102,7 +102,7 @@ No se aportaron datos verificables de alternativas externas en la informacion pr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/duyquangnvx/vieneu-tts-web-models
+- Repositorio en Hugging Face: https://huggingface.co/duyquangnvx/vieneu-tts-web-models
 - Modelo base TTS: https://huggingface.co/pnnbao-ump/VieNeu-TTS-v3-Turbo
 - Repositorio GitHub del proyecto TTS upstream: https://github.com/pnnbao97/VieNeu-TTS
 - Codec de audio base: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-Nano-ONNX

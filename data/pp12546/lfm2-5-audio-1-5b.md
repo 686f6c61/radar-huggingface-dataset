@@ -65,6 +65,6 @@ No se proporcionan datos de comparación en la información disponible. Se podr�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B
+- Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B
 - Documentación: https://docs.liquid.ai/
 - Repositorio: https://github.com/LiquidAI/LFM2.5-Audio-1.5B

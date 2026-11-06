@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kylwhit97/multitask-fast` es un prototipo de investigación publicado en HuggingFace bajo el identificador "Mae", orientado a tareas multitarea (*multitask*). No se trata de un modelo de lenguaje generativo ni de un modelo preentrenado listo para producción: el propio autor describe el repositorio como un punto de partida experimental y aclara de forma explícita que `model.safetensors` es un *checkpoint* de inicialización válido para *smoke tests*, no un modelo entrenado ni evaluado con benchmarks.
+`kylwhit97/multitask-fast` es un prototipo de investigación publicado en Hugging Face bajo el identificador "Mae", orientado a tareas multitarea (*multitask*). No se trata de un modelo de lenguaje generativo ni de un modelo preentrenado listo para producción: el propio autor describe el repositorio como un punto de partida experimental y aclara de forma explícita que `model.safetensors` es un *checkpoint* de inicialización válido para *smoke tests*, no un modelo entrenado ni evaluado con benchmarks.
 
 El tamaño real del checkpoint, según los metadatos de safetensors, es de 24.832 parámetros totales, una cifra extraordinariamente reducida que confirma su naturaleza de maqueta de código y arquitectura más que de modelo funcional. El repositorio incluye `main.py` como artefacto principal, junto con `config.json`, `training_args.json` y la documentación. El tamaño del repo es de 0,0 GB y el modelo no registra descargas ni *likes* en el momento de la consulta.
 
@@ -25,7 +25,7 @@ Otros datos del repositorio: escala declarada "base", pipeline no disponible, ta
 
 ## Arquitectura y entrenamiento
 
-La model card declara una arquitectura denominada "Mae" con atención de tipo lineal, mecanismo de fusión mediante descomposición de Tucker, activación swish y normalización GroupNorm. El autor no define qué significa exactamente "Mae" en este contexto ni detalla el grafo computacional, las dimensiones de las capas, el número de cabezas de atención ni el vocabulario o el espacio de entrada esperado. Tampoco se especifica si se trata de un transformer, de un modelo de autoencoder enmascarado (*masked autoencoder*) o de una arquitectura híbrida; la etiqueta `mae` de HuggingFace es la única pista adicional y no se desarrolla en la documentación.
+La model card declara una arquitectura denominada "Mae" con atención de tipo lineal, mecanismo de fusión mediante descomposición de Tucker, activación swish y normalización GroupNorm. El autor no define qué significa exactamente "Mae" en este contexto ni detalla el grafo computacional, las dimensiones de las capas, el número de cabezas de atención ni el vocabulario o el espacio de entrada esperado. Tampoco se especifica si se trata de un transformer, de un modelo de autoencoder enmascarado (*masked autoencoder*) o de una arquitectura híbrida; la etiqueta `mae` de Hugging Face es la única pista adicional y no se desarrolla en la documentación.
 
 No hay información sobre datos de entrenamiento: no se indica número de tokens, composición del dataset, dominio, idioma ni si hubo fases de RLHF, DPO o ajuste por instrucciones. La receta de experimento incluida (`training_args.json`) define el optimizador LAMB con un *schedule* de tipo *step*, pero el autor advierte explícitamente que son valores de arranque del script y no evidencia de un entrenamiento completado. El repositorio no reclama ninguna puntuación de benchmark y recomienda que cualquier evaluación futura use un conjunto de validación específico de la tarea, al menos tres semillas aleatorias y una línea base de capacidad equivalente. No se documenta ninguna innovación técnica adicional más allá de las elecciones de atención, fusión y normalización ya citadas.
 
@@ -69,7 +69,7 @@ No disponible. No se ha identificado en la información proporcionada ningún mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evidencia de rendimiento |
 |---|---|---|---|---|---|
-| kylwhit97/multitask-fast | 24.832 | no disponible | MIT | HuggingFace (0 descargas) | Ninguna declarada por el autor |
+| kylwhit97/multitask-fast | 24.832 | no disponible | MIT | Hugging Face (0 descargas) | Ninguna declarada por el autor |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No disponible. No se ha identificado en la información proporcionada ningún mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kylwhit97/multitask-fast
+- Modelo en Hugging Face: https://huggingface.co/kylwhit97/multitask-fast
 - Repositorio GitHub: no disponible
 - Paper o artículo técnico: no disponible
 - Blog o publicación del autor: no disponible

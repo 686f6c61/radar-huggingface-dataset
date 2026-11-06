@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_generator_AS_gradient_omnimath_qwen14b` es un modelo de lenguaje de 14.770.033.664 parámetros publicado en HuggingFace por el usuario `ishikaa`. El identificador sugiere que se trata de un ajuste fino de un modelo de la familia Qwen2 de 14 mil millones de parámetros, posiblemente entrenado sobre el conjunto de datos OmniMath orientado a tareas matemáticas. Sin embargo, la model card es un placeholder generado automáticamente y no contiene ninguna información sobre el desarrollo, el entrenamiento ni las capacidades del modelo.
+El modelo `ishikaa/acquisition_generator_AS_gradient_omnimath_qwen14b` es un modelo de lenguaje de 14.770.033.664 parámetros publicado en Hugging Face por el usuario `ishikaa`. El identificador sugiere que se trata de un ajuste fino de un modelo de la familia Qwen2 de 14 mil millones de parámetros, posiblemente entrenado sobre el conjunto de datos OmniMath orientado a tareas matemáticas. Sin embargo, la model card es un placeholder generado automáticamente y no contiene ninguna información sobre el desarrollo, el entrenamiento ni las capacidades del modelo.
 
 El repositorio tiene 0 descargas y 0 likes, lo que indica que no ha sido validado por la comunidad. A pesar del nombre, no hay evidencia documental que confirme la arquitectura, los datos de entrenamiento o las tareas para las que fue diseñado. La relevancia actual es limitada: puede ser útil para experimentación con modelos de 14B, pero carece de los datos de soporte necesarios para un uso serio en investigación o producción.
 
@@ -62,6 +62,6 @@ No se han encontrado datos de comparación publicados. El modelo base Qwen2-14B 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_gradient_omnimath_qwen14b
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_gradient_omnimath_qwen14b
 
 Los resultados de la búsqueda web no proporcionaron enlaces relevantes sobre este modelo.

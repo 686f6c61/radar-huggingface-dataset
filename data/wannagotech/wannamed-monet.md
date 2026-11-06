@@ -80,17 +80,17 @@ El autor declara además 98 tok/s y menos de 32 ms de TTFT en modo avión sobre 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WannaMed-Monet | 5,12B (1,28 GB RAM activa) | no disponible | Multimodal médico edge (ASR + texto + visión 2D/3D + ECG + OCR) | other | HuggingFace (repo vacío de 0.0 GB) |
-| WannaMed Seurat 4B | 4B (según el autor) | no disponible | Modelo médico base del que deriva Monet | other | HuggingFace (WannaGoTech) |
-| WannaMed Tx 4B | 4B (según el autor) | no disponible | Modelo médico de texto, fuente de transferencia | other | HuggingFace (WannaGoTech) |
-| WannaMed-mini | no disponible | no disponible | Variante sin visión, 1,12 GB RAM | other | HuggingFace (WannaGoTech) |
+| WannaMed-Monet | 5,12B (1,28 GB RAM activa) | no disponible | Multimodal médico edge (ASR + texto + visión 2D/3D + ECG + OCR) | other | Hugging Face (repo vacío de 0.0 GB) |
+| WannaMed Seurat 4B | 4B (según el autor) | no disponible | Modelo médico base del que deriva Monet | other | Hugging Face (WannaGoTech) |
+| WannaMed Tx 4B | 4B (según el autor) | no disponible | Modelo médico de texto, fuente de transferencia | other | Hugging Face (WannaGoTech) |
+| WannaMed-mini | no disponible | no disponible | Variante sin visión, 1,12 GB RAM | other | Hugging Face (WannaGoTech) |
 
 No se dispone de comparaciones con modelos médicos multimodales de otros desarrolladores en la información proporcionada; los únicos comparables documentados son variantes del mismo ecosistema WannaMed.
 
 ## Limitaciones y advertencias
 
 - Los benchmarks son declarados por el autor y están marcados como no verificados (`verified: false`); no deben tratarse como resultados independientes.
-- El repositorio de HuggingFace figura con 0.0 GB y 0 descargas, por lo que no se confirma la disponibilidad efectiva de los pesos ni su formato.
+- El repositorio de Hugging Face figura con 0.0 GB y 0 descargas, por lo que no se confirma la disponibilidad efectiva de los pesos ni su formato.
 - No se detallan la arquitectura base, la longitud de contexto ni los esquemas de cuantización, lo que dificulta evaluar su integración en pipelines estándar.
 - La licencia "other" exige revisión jurídica específica antes de cualquier uso comercial o clínico.
 - Riesgo de alucinación inherente a modelos generativos; en contexto médico, cualquier salida debe ser validada por un profesional cualificado.
@@ -101,7 +101,7 @@ No se dispone de comparaciones con modelos médicos multimodales de otros desarr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WannaGoTech/WannaMed-Monet
+- Modelo en Hugging Face: https://huggingface.co/WannaGoTech/WannaMed-Monet
 - Demo interactiva (Space): https://huggingface.co/spaces/WannaGoTech/WannaMed-Monet
 - Modelo hermano sin visión: https://huggingface.co/WannaGoTech/WannaMed-mini
 - Modelo base de referencia: https://huggingface.co/WannaGoTech/WannaMed-Seurat

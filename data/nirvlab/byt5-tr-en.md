@@ -29,7 +29,7 @@ No se dispone de informacion sobre los datos de entrenamiento de este fine-tunin
 
 - Traduccion automatica entre turco e ingles, presumiblemente en ambas direcciones, al tratarse de un modelo de texto a texto.
 - Generacion de texto basada en bytes, sin necesidad de tokenizacion previa ni normalizacion del texto de entrada.
-- Compatibilidad con la libreria Transformers de HuggingFace, lo que permite su uso mediante pipelines de text2text-generation.
+- Compatibilidad con la libreria Transformers de Hugging Face, lo que permite su uso mediante pipelines de text2text-generation.
 - No se han documentado capacidades de tool calling, soporte de agentes, razonamiento multi-paso, vision o audio.
 - Al ser un modelo basado en bytes, puede manejar texto con caracteres fuera del vocabulario tipico, aunque el rendimiento en idiomas distintos del turco e ingles no esta evaluado.
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NIRVLab/byt5-tr-en | 582M | no disponible | ByT5 (bytes) | no disponible | HuggingFace |
-| google/byt5-base | 582M | 512 tokens | ByT5 (bytes) | Apache 2.0 | HuggingFace |
-| google/mt5-base | 582M | 1024 tokens | mT5 (subpalabras) | Apache 2.0 | HuggingFace |
+| NIRVLab/byt5-tr-en | 582M | no disponible | ByT5 (bytes) | no disponible | Hugging Face |
+| google/byt5-base | 582M | 512 tokens | ByT5 (bytes) | Apache 2.0 | Hugging Face |
+| google/mt5-base | 582M | 1024 tokens | mT5 (subpalabras) | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en modelos de tamano similar. El modelo de NIRVLab es un fine-tuning no documentado del ByT5 base, mientras que google/byt5-base es el modelo preentrenado original con licencia Apache 2.0 y documentacion completa. mT5-base, aunque del mismo tamano, usa tokenizacion subpalabra y tiene un contexto mayor. No se conocen resultados de rendimiento que permitan una comparacion cuantitativa.
 
@@ -75,6 +75,6 @@ La comparativa se basa en modelos de tamano similar. El modelo de NIRVLab es un 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NIRVLab/byt5-tr-en
+- Hugging Face: https://huggingface.co/NIRVLab/byt5-tr-en
 - Repositorio de ByT5: https://github.com/google-research/byt5
 - Paper de ByT5: https://arxiv.org/abs/1910.09700

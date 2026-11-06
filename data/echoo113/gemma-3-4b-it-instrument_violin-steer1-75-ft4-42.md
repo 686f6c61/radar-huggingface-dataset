@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Echoo113/gemma-3-4b-it-instrument_violin-STEER1.75-ft4.42` es un ajuste fino (SFT) del modelo multimodal `google/gemma-3-4b-it`, publicado por el usuario Echoo113 en HuggingFace. El repositorio se ha generado con la librería TRL (versión 0.19.1) y sigue la plantilla automática de model card de `generated_from_trainer`, sin documentación adicional sobre el dataset, la metodología de ajuste ni los objetivos del experimento. El nombre del repositorio sugiere un trabajo de *steering* (modificación de activaciones o de comportamiento) sobre el concepto "instrument_violin", con un coeficiente 1.75 y un ajuste posterior, aunque esta interpretación no está confirmada por el autor.
+`Echoo113/gemma-3-4b-it-instrument_violin-STEER1.75-ft4.42` es un ajuste fino (SFT) del modelo multimodal `google/gemma-3-4b-it`, publicado por el usuario Echoo113 en Hugging Face. El repositorio se ha generado con la librería TRL (versión 0.19.1) y sigue la plantilla automática de model card de `generated_from_trainer`, sin documentación adicional sobre el dataset, la metodología de ajuste ni los objetivos del experimento. El nombre del repositorio sugiere un trabajo de *steering* (modificación de activaciones o de comportamiento) sobre el concepto "instrument_violin", con un coeficiente 1.75 y un ajuste posterior, aunque esta interpretación no está confirmada por el autor.
 
 Se trata, por tanto, de un modelo de investigación con trazabilidad mínima: cero descargas, cero *likes*, sin licencia declarada, sin idiomas declarados y sin resultados de evaluación. Su interés practico no esta en el rendimiento, sino en el uso como ejemplo reproducible de un pipeline de SFT con TRL sobre un modelo base abierto de 4B parámetros, y como caso de estudio de ajustes con *steering*.
 
@@ -18,7 +18,7 @@ Por su parte, el modelo base `google/gemma-3-4b-it` es un transformer decoder-on
 | Longitud de contexto | no disponible en la información proporcionada (heredada del modelo base, sin confirmar) |
 | Tipos de cuantizacion | no disponible (no se publican pesos cuantizados; al ser un ajuste sobre Gemma 3, serían aplicables las conversiones habituales a GGUF/AWQ, sin validar) |
 | Idiomas soportados | no disponible (el campo de idiomas aparece vacío en los metadatos) |
-| Licencia | no disponible (la model card incluye un campo `licence: license` sin especificar; los metadatos de HuggingFace no declaran licencia) |
+| Licencia | no disponible (la model card incluye un campo `licence: license` sin especificar; los metadatos de Hugging Face no declaran licencia) |
 | Formato de pesos | safetensors (etiqueta del repositorio); tamano del repo 0.3 GB |
 
 Nota tecnica sobre el tamano: un checkpoint completo de 4B parámetros en bf16 ocuparía del orden de 8 GB. El repositorio pesa 0.3 GB, lo que es consistente con un conjunto de adaptadores (tipo LoRA) o con pesos parciales, no con el modelo completo. Conviene verificarlo inspeccionando los ficheros del repositorio antes de intentar cargarlo.
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este ajuste (`gemma-3-4b-it-instrument_violin-STEER1.75-ft4.42`) | 4B (heredado) | no disponible | sin benchmarks publicados | no disponible | repo de 0.3 GB, 0 descargas |
-| `google/gemma-3-4b-it` (modelo base) | 4B | no disponible en esta ficha (consultar su model card) | benchmarks publicados por Google en su model card | Gemma Terms of Use (consultar) | público en HuggingFace |
-| Otros ajustes SFT de Gemma 3 4B IT | 4B | no disponible | variable, habitualmente sin evaluar | depende del autor | múltiples en HuggingFace |
+| `google/gemma-3-4b-it` (modelo base) | 4B | no disponible en esta ficha (consultar su model card) | benchmarks publicados por Google en su model card | Gemma Terms of Use (consultar) | público en Hugging Face |
+| Otros ajustes SFT de Gemma 3 4B IT | 4B | no disponible | variable, habitualmente sin evaluar | depende del autor | múltiples en Hugging Face |
 | Alternativas abiertas de tamano similar (p. ej. familias Qwen o Llama de 3-4B) | 3-4B | no disponible en esta ficha | no comparable sin datos | depende de cada familia | públicas |
 
 No se dispone de datos verificados de rendimiento para este ajuste, por lo que la comparación se limita a tamano, licencia y disponibilidad. Cualquier afirmación sobre calidad relativa requeriría una evaluación propia contra el modelo base.

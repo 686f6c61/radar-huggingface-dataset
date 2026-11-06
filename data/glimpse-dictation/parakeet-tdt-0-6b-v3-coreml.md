@@ -89,7 +89,7 @@ No se proporcionan cifras de WER, latencia, throughput ni comparaciones numerica
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Glimpse-Dictation/Parakeet-TDT-0.6B-V3-coreml
+- Repositorio en Hugging Face: https://huggingface.co/Glimpse-Dictation/Parakeet-TDT-0.6B-V3-coreml
 - Modelo base NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - GGUF Q8_0 completo de Handy, recomendado para CPU/GPU en Windows y Mac: https://huggingface.co/handy-computer/parakeet-tdt-0.6b-v3-gguf
 - Repositorio transcribe.cpp y sus scripts `convert-parakeet-gguf-to-coreml.py` y `extract-parakeet-decoder.py`: URL no disponible en la informacion proporcionada

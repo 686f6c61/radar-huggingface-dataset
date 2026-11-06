@@ -73,8 +73,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Funcion | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| s1-code v2 | 321.908.998 | Reranker de busqueda de codigo | en, es | Apache 2.0 | HuggingFace |
-| s1-code v3 | no disponible | Reranker de busqueda de codigo (version recomendada por el autor) | no disponible | no disponible | HuggingFace |
+| s1-code v2 | 321.908.998 | Reranker de busqueda de codigo | en, es | Apache 2.0 | Hugging Face |
+| s1-code v3 | no disponible | Reranker de busqueda de codigo (version recomendada por el autor) | no disponible | no disponible | Hugging Face |
 | Qwen3-Embedding | no disponible | Recuperador denso (embeddings) | no disponible | no disponible | no disponible |
 
 En la evaluacion publicada, s1-code v2 en solitario supera a Qwen3-Embedding en solitario (157 frente a 152 en Top 1), y la fusion de ambos alcanza 165. El autor recomienda usar s1-code v3 en lugar de esta version.
@@ -94,7 +94,7 @@ En la evaluacion publicada, s1-code v2 en solitario supera a Qwen3-Embedding en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/api-service-sac/s1-code-v2
+- Modelo en Hugging Face: https://huggingface.co/api-service-sac/s1-code-v2
 - Version recomendada (v3): https://huggingface.co/api-service-sac/s1-code-v3
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - Busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden al concepto generico de API y no guardan relacion con esta ficha.

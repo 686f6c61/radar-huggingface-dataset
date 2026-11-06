@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`ishikaa/acquisition_student_random_alpaca_qwen3b_5000` es un modelo de generacion de texto publicado en HuggingFace por el usuario `ishikaa`. Por la nomenclatura del identificador (acquisition, student, random_alpaca, qwen3b, 5000) y los tags del repositorio, se trata de un ajuste fino de un modelo de la familia Qwen2 de aproximadamente 3.000 millones de parametros, entrenado como "modelo estudiante" en un experimento de destilacion o adquisicion de conocimiento sobre un subconjunto aleatorio del dataset Alpaca de 5.000 ejemplos.
+`ishikaa/acquisition_student_random_alpaca_qwen3b_5000` es un modelo de generacion de texto publicado en Hugging Face por el usuario `ishikaa`. Por la nomenclatura del identificador (acquisition, student, random_alpaca, qwen3b, 5000) y los tags del repositorio, se trata de un ajuste fino de un modelo de la familia Qwen2 de aproximadamente 3.000 millones de parametros, entrenado como "modelo estudiante" en un experimento de destilacion o adquisicion de conocimiento sobre un subconjunto aleatorio del dataset Alpaca de 5.000 ejemplos.
 
 El modelo tiene 3.085.938.688 parametros reales segun los pesos en safetensors y ocupa 12,4 GB en el repositorio, lo que sugiere pesos almacenados en precision fp32. Se publica con la libreria transformers y los tags apuntan a compatibilidad con text-generation-inference y endpoints.
 
-Se trata de un artefacto de investigacion mas que de un modelo listo para produccion: la model card es la plantilla autogenerada de HuggingFace, sin datos de entrenamiento, idiomas, licencia ni evaluacion. Su relevancia es acotada y se limita a servir como referencia reproducible de un experimento de ajuste fino sobre Alpaca.
+Se trata de un artefacto de investigacion mas que de un modelo listo para produccion: la model card es la plantilla autogenerada de Hugging Face, sin datos de entrenamiento, idiomas, licencia ni evaluacion. Su relevancia es acotada y se limita a servir como referencia reproducible de un experimento de ajuste fino sobre Alpaca.
 
 ## Especificaciones técnicas
 
@@ -39,7 +39,7 @@ En cuanto al entrenamiento, el identificador sugiere un ajuste fino supervisado 
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
 - Capacidades especiales (vision, audio, modo thinking): ninguna declarada.
-- Compatibilidad declarada con text-generation-inference y endpoints de HuggingFace.
+- Compatibilidad declarada con text-generation-inference y endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `ishikaa/acquisition_student_random_alpaca_qwen3b_5000` | ~3,09 B | no disponible | no disponible | HuggingFace | Ajuste de investigacion sobre Alpaca |
-| Qwen2.5-3B / Qwen2.5-3B-Instruct | ~3,09 B | 32.768 tokens (ampliable) | Apache 2.0 (segun version) | HuggingFace, Ollama, vLLM | Modelo base oficial, con benchmarks publicados |
-| Llama 3.2 3B Instruct | ~3,21 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, Ollama, vLLM | Alternativa de tamano similar, con soporte de tool calling |
-| Phi-3.5-mini-instruct | ~3,8 B | 128.000 tokens | MIT | HuggingFace, Ollama, vLLM | Modelo pequeno orientado a razonamiento |
+| `ishikaa/acquisition_student_random_alpaca_qwen3b_5000` | ~3,09 B | no disponible | no disponible | Hugging Face | Ajuste de investigacion sobre Alpaca |
+| Qwen2.5-3B / Qwen2.5-3B-Instruct | ~3,09 B | 32.768 tokens (ampliable) | Apache 2.0 (segun version) | Hugging Face, Ollama, vLLM | Modelo base oficial, con benchmarks publicados |
+| Llama 3.2 3B Instruct | ~3,21 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, Ollama, vLLM | Alternativa de tamano similar, con soporte de tool calling |
+| Phi-3.5-mini-instruct | ~3,8 B | 128.000 tokens | MIT | Hugging Face, Ollama, vLLM | Modelo pequeno orientado a razonamiento |
 
 La comparativa se ofrece como referencia de categoria; no hay datos de rendimiento del modelo evaluado que permitan una comparacion cuantitativa.
 
@@ -88,7 +88,7 @@ La comparativa se ofrece como referencia de categoria; no hay datos de rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_random_alpaca_qwen3b_5000
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_random_alpaca_qwen3b_5000
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre impacto ambiental del aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Dataset Alpaca (referencia del conjunto de entrenamiento inferido del nombre): https://huggingface.co/datasets/tatsu-lab/alpaca
 - Familia Qwen2 (modelo base inferido): https://huggingface.co/Qwen

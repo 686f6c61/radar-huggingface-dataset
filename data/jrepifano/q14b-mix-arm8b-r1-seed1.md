@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jrepifano/q14b-mix-arm8b-r1-seed1` es un checkpoint publicado en HuggingFace por el usuario `jrepifano` el 18 de agosto de 2026. La información disponible es extremadamente limitada: la model card es la plantilla autogenerada por HuggingFace y no contiene ningún dato técnico específico, ni descripción del modelo, ni arquitectura, ni datos de entrenamiento, ni licencia. El repositorio tiene un tamaño declarado de 0.0 GB, lo que sugiere que podría estar vacío o que los archivos no se han subido correctamente. El tag `unsloth` indica que el autor ha utilizado la librería Unsloth para el entrenamiento o la cuantización, pero no se confirma ningún detalle adicional.
+El modelo `jrepifano/q14b-mix-arm8b-r1-seed1` es un checkpoint publicado en Hugging Face por el usuario `jrepifano` el 18 de agosto de 2026. La información disponible es extremadamente limitada: la model card es la plantilla autogenerada por Hugging Face y no contiene ningún dato técnico específico, ni descripción del modelo, ni arquitectura, ni datos de entrenamiento, ni licencia. El repositorio tiene un tamaño declarado de 0.0 GB, lo que sugiere que podría estar vacío o que los archivos no se han subido correctamente. El tag `unsloth` indica que el autor ha utilizado la librería Unsloth para el entrenamiento o la cuantización, pero no se confirma ningún detalle adicional.
 
 Dado que no se dispone de información sustancial, esta ficha se limita a documentar los pocos metadatos públicos y a advertir de los riesgos de utilizar un modelo sin documentación verificable. Cualquier afirmación sobre capacidades, rendimiento o requisitos de hardware sería especulativa y, por tanto, se omite.
 
@@ -53,5 +53,5 @@ No disponible. Sin información sobre el modelo base o la arquitectura, no es po
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/jrepifano/q14b-mix-arm8b-r1-seed1)
+- [Modelo en Hugging Face](https://huggingface.co/jrepifano/q14b-mix-arm8b-r1-seed1)
 - [Paper de Lacoste et al. (2019) sobre impacto ambiental](https://arxiv.org/abs/1910.09700) (referenciado en la model card genérica, no relacionado con el modelo)

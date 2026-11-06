@@ -73,5 +73,5 @@ No se dispone de informacion comparativa con otros modelos en la misma categoria
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omkarpatil/push-tape-right-dp-wristnp-diffusion
+- Modelo en Hugging Face: https://huggingface.co/omkarpatil/push-tape-right-dp-wristnp-diffusion
 - No se encontraron otros enlaces relevantes (papers, blogs o repositorios adicionales) en la busqueda web.

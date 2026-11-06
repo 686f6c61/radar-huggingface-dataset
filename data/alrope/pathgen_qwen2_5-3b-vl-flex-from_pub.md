@@ -50,16 +50,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: con 6,6B parametros en BF16, el modelo requiere aproximadamente 13,2 GB solo para los pesos, mas overhead de activaciones y cache KV. Se recomienda un minimo de 16 GB de VRAM.
 - GPUs recomendadas: RTX 4090 (24 GB), A100 (40/80 GB), H100 (80 GB) para inferencia comoda en BF16.
 - GPU de consumo: cabe en una RTX 4090 o RTX 4080 (16 GB) con cuantizacion, aunque no se han publicado versiones cuantizadas.
-- Opciones de despliegue: al ser safetensors sin cuantizacion, se puede servir con vLLM, TGI o Transformers de HuggingFace. Para cuantizacion seria necesario convertir los pesos a GGUF o AWQ manualmente.
+- Opciones de despliegue: al ser safetensors sin cuantizacion, se puede servir con vLLM, TGI o Transformers de Hugging Face. Para cuantizacion seria necesario convertir los pesos a GGUF o AWQ manualmente.
 - Latencia y throughput: no disponibles. Al ser una variante MoE, la latencia dependera del numero de expertos activos, dato no publicado.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alrope/pathgen_qwen2_5-3b-vl-flex-from_pub | 6,6B (MoE) | no disponible | no disponible | HuggingFace |
-| Qwen2.5-VL-3B-Instruct (base) | 3B denso | 128K | Apache 2.0 | HuggingFace, Ollama, LM Studio |
-| Qwen2.5-VL-7B-Instruct | 7B denso | 128K | Apache 2.0 | HuggingFace, Ollama |
+| alrope/pathgen_qwen2_5-3b-vl-flex-from_pub | 6,6B (MoE) | no disponible | no disponible | Hugging Face |
+| Qwen2.5-VL-3B-Instruct (base) | 3B denso | 128K | Apache 2.0 | Hugging Face, Ollama, LM Studio |
+| Qwen2.5-VL-7B-Instruct | 7B denso | 128K | Apache 2.0 | Hugging Face, Ollama |
 
 La comparativa directa con el modelo base de 3B es la mas relevante: la variante MoE duplica los parametros totales pero no hay datos que demuestren una mejora de rendimiento. Frente a Qwen2.5-VL-7B, el modelo de alrope tiene menos parametros totales pero una arquitectura MoE que podria ofrecer menor coste por token, aunque sin benchmarks no es posible verificar esta hipotesis.
 
@@ -75,7 +75,7 @@ La comparativa directa con el modelo base de 3B es la mas relevante: la variante
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alrope/pathgen_qwen2_5-3b-vl-flex-from_pub
+- Repositorio Hugging Face: https://huggingface.co/alrope/pathgen_qwen2_5-3b-vl-flex-from_pub
 - Modelo relacionado del mismo autor: https://huggingface.co/alrope/pub_endo_rex_qwen2_5-3b-vl-averaged
 - Modelo base Qwen2.5-VL-3B en LM Studio: https://lmstudio.ai/models/qwen/qwen2.5-vl-3b
 - Qwen2.5 en Ollama: https://ollama.com/library/qwen2.5:3b

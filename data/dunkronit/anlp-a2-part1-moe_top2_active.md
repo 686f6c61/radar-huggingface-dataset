@@ -87,12 +87,12 @@ Los tres modelos alternativos se citan como referencias de la misma categoría f
 - Sin fases documentadas de RLHF, DPO o ajuste de seguridad: puede reproducir sesgos presentes en el corpus de entrenamiento y no tiene filtros de contenido.
 - Requiere una implementación personalizada (`src.part1.model.Transformer`) del repositorio de la asignatura, lo que añade dependencia de código no empaquetado como biblioteca estándar.
 - Sin variantes cuantizadas publicadas (GGUF, AWQ, GPTQ), lo que descarta su uso directo con llama.cpp u Ollama.
-- Cero descargas y cero likes en HuggingFace en el momento de la consulta, lo que implica ausencia de validación por parte de la comunidad.
+- Cero descargas y cero likes en Hugging Face en el momento de la consulta, lo que implica ausencia de validación por parte de la comunidad.
 - La fecha de creación registrada en el repositorio (2026-10-04) resulta anómala y conviene verificarla antes de citar el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DunkRonit/anlp-a2-part1-moe_top2_active
+- Modelo en Hugging Face: https://huggingface.co/DunkRonit/anlp-a2-part1-moe_top2_active
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/dunkronit-iiit-hyderabad/anlp-a2-part1/runs/moe_top2_active-db95d986
 - Corpus de entrenamiento citado: `belumind/en-vi-ja-curated-500k-triplets`
 - No se han encontrado enlaces adicionales relevantes (papers, repositorios de código o demos) en la búsqueda web realizada; los resultados devueltos no guardan relación con el modelo.

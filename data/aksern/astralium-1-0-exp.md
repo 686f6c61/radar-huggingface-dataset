@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Astralium 1.0 Exp es un modelo de lenguaje publicado en HuggingFace por el usuario aksern bajo el identificador `aksern/astralium-1.0-exp`. Se trata de un modelo de aproximadamente 3.212 millones de parametros (3,21 B), distribuido en formato safetensors y etiquetado con la familia de arquitecturas `llama` en los metadatos del repositorio. El sufijo "exp" y la ausencia de documentacion en la model card apuntan a una publicacion de caracter experimental, sin informacion publica sobre el proceso de entrenamiento, los datos utilizados ni las capacidades reales del modelo.
+Astralium 1.0 Exp es un modelo de lenguaje publicado en Hugging Face por el usuario aksern bajo el identificador `aksern/astralium-1.0-exp`. Se trata de un modelo de aproximadamente 3.212 millones de parametros (3,21 B), distribuido en formato safetensors y etiquetado con la familia de arquitecturas `llama` en los metadatos del repositorio. El sufijo "exp" y la ausencia de documentacion en la model card apuntan a una publicacion de caracter experimental, sin informacion publica sobre el proceso de entrenamiento, los datos utilizados ni las capacidades reales del modelo.
 
 La relevancia de esta ficha es principalmente practica: el modelo ocupa un nicho de tamano (~3 B de parametros) que resulta atractivo para inferencia en hardware de consumo y para despliegues con requisitos de latencia bajos, pero la falta de model card, de benchmarks y de idiomas declarados limita seriamente su evaluacion previa. Cualquier adopcion en produccion deberia ir precedida de una evaluacion propia.
 
@@ -25,7 +25,7 @@ Datos adicionales verificables: el repositorio ocupa 12,9 GB, lo que con 3,21 B 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna mas alla de la etiqueta `llama` asociada al repositorio, que en el ecosistema de HuggingFace suele indicar una arquitectura transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU y atencion causal, en la linea de la familia Llama. No hay confirmacion mediante `config.json` de numero de capas, dimensiones ocultas, numero de cabezas de atencion, uso de GQA ni del tokenizador empleado.
+No se ha publicado informacion sobre la arquitectura interna mas alla de la etiqueta `llama` asociada al repositorio, que en el ecosistema de Hugging Face suele indicar una arquitectura transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU y atencion causal, en la linea de la familia Llama. No hay confirmacion mediante `config.json` de numero de capas, dimensiones ocultas, numero de cabezas de atencion, uso de GQA ni del tokenizador empleado.
 
 Tampoco se dispone de datos sobre el entrenamiento: se desconoce el volumen de tokens, la composicion del corpus, si hubo fases de instruccion, RLHF o DPO, y si se aplicaron tecnicas de eficiencia como atencion lineal, decodificacion especulativa o destilacion. La unica inferencia razonable a partir del nombre ("exp") es que se trata de un checkpoint experimental sin garantias de calidad.
 
@@ -103,7 +103,7 @@ La diferencia practica principal no es de tamano, sino de informacion disponible
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aksern/astralium-1.0-exp
+- Repositorio en Hugging Face: https://huggingface.co/aksern/astralium-1.0-exp
 - Perfil del autor: https://huggingface.co/aksern
 - Texto de la licencia OpenMDW-1.1: no disponible en la informacion proporcionada
 - Paper, blog o demo: no disponibles en la informacion proporcionada

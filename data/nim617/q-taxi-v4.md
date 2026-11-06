@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nim617/q-Taxi-v4` es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno `Taxi-v4` de Gymnasium. Lo publica el usuario `nim617` en HuggingFace con el pipeline `reinforcement-learning` y una implementación propia (`custom-implementation`), empaquetada como un fichero `q-learning.pkl` que se carga con `load_from_hub`. No es un modelo de lenguaje ni una red neuronal: es una tabla Q asociada a un entorno discreto de planificación de rutas.
+`nim617/q-Taxi-v4` es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno `Taxi-v4` de Gymnasium. Lo publica el usuario `nim617` en Hugging Face con el pipeline `reinforcement-learning` y una implementación propia (`custom-implementation`), empaquetada como un fichero `q-learning.pkl` que se carga con `load_from_hub`. No es un modelo de lenguaje ni una red neuronal: es una tabla Q asociada a un entorno discreto de planificación de rutas.
 
 El interes practico del repositorio es acotado y muy especifico: sirve como artefacto reproducible de un agente Q-learning clasico, util para docencia, para comparativas de algoritmos tabulares y para validar pipelines de evaluacion de RL. El autor declara una recompensa media de 7,56 +/- 2,71 por episodio en `Taxi-v4`, marcada como no verificada (`verified: false`).
 
@@ -76,7 +76,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Los agentes
 |---|---|---|---|---|---|
 | Otros agentes Q-learning tabulares para Taxi-v4 | No disponible | No aplica | No disponible | No disponible | No disponible |
 | Agentes deep RL (DQN) para Taxi-v4 | No disponible | No aplica | No disponible | No disponible | No disponible |
-| nim617/q-Taxi-v4 (este modelo) | No disponible (tabular) | No aplica | mean_reward 7,56 +/- 2,71 (no verificado) | No declarada | Publico en HuggingFace, 0 descargas, 0 likes |
+| nim617/q-Taxi-v4 (este modelo) | No disponible (tabular) | No aplica | mean_reward 7,56 +/- 2,71 (no verificado) | No declarada | Publico en Hugging Face, 0 descargas, 0 likes |
 
 ## Limitaciones y advertencias
 
@@ -93,6 +93,6 @@ No se dispone de datos comparativos en la informacion proporcionada. Los agentes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nim617/q-Taxi-v4
+- Modelo en Hugging Face: https://huggingface.co/nim617/q-Taxi-v4
 - Entorno `Taxi-v4` (Gymnasium): no referenciado en la model card; no disponible en la informacion proporcionada
 - Paper, blog o repositorio del autor: no disponibles en la informacion proporcionada

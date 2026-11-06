@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Salida | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| TripoSplat ONNX (este) | Image-to-3D generativo | Hasta 262.144 gaussianas 3D + malla vía postproceso | MIT + DINOv3 License + Apache-2.0 | ONNX (5 grafos) | HuggingFace, 6,2 GB |
-| VAST-AI/TripoSplat | Image-to-3D generativo | Gaussianas 3D | MIT (código y pesos) | PyTorch (checkpoint original) | HuggingFace |
+| TripoSplat ONNX (este) | Image-to-3D generativo | Hasta 262.144 gaussianas 3D + malla vía postproceso | MIT + DINOv3 License + Apache-2.0 | ONNX (5 grafos) | Hugging Face, 6,2 GB |
+| VAST-AI/TripoSplat | Image-to-3D generativo | Gaussianas 3D | MIT (código y pesos) | PyTorch (checkpoint original) | Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación directa documentada es con el checkpoint original de VAST-AI/TripoSplat, del que este repositorio es una conversión. No se dispone de información sobre otros modelos image-to-3D comparables en la documentación proporcionada.
@@ -85,7 +85,7 @@ La única comparación directa documentada es con el checkpoint original de VAST
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fernandotonon/QtMeshEditor-triposplat-onnx
+- Modelo en Hugging Face: https://huggingface.co/fernandotonon/QtMeshEditor-triposplat-onnx
 - Modelo base: https://huggingface.co/VAST-AI/TripoSplat
 - Repositorio espejo de modelos de QtMeshEditor: https://huggingface.co/fernandotonon/QtMeshEditor-models
 - Repositorio QtMeshEditor: https://github.com/fernandotonon/QtMeshEditor

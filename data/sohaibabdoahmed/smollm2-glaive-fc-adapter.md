@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smollm2-glaive-fc-adapter | 1,7 B (+ adaptador LoRA) | 8.192 tokens | *Function calling* (Glaive FC v2) | no disponible | HuggingFace, formato PEFT/safetensors |
-| SmolLM2-1.7B-Instruct (base) | 1,7 B | 8.192 tokens | Instrucciones generales | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens (ampliable con YaRN) | Instrucciones generales y *tool calling* | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Llama-3.2-1B-Instruct | 1,2 B | 128.000 tokens | Instrucciones generales y *tool calling* | Licencia comunitaria Llama 3.2 | HuggingFace y GGUF |
+| smollm2-glaive-fc-adapter | 1,7 B (+ adaptador LoRA) | 8.192 tokens | *Function calling* (Glaive FC v2) | no disponible | Hugging Face, formato PEFT/safetensors |
+| SmolLM2-1.7B-Instruct (base) | 1,7 B | 8.192 tokens | Instrucciones generales | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens (ampliable con YaRN) | Instrucciones generales y *tool calling* | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Llama-3.2-1B-Instruct | 1,2 B | 128.000 tokens | Instrucciones generales y *tool calling* | Licencia comunitaria Llama 3.2 | Hugging Face y GGUF |
 
 No hay datos de rendimiento publicados para el adaptador, por lo que la comparación se limita a parámetros, contexto, licencia y formato de distribución. En contexto, licencia y disponibilidad de cuantizaciones, los tres modelos alternativos ofrecen condiciones más favorables; la ventaja del adaptador es exclusivamente la especialización declarada en *function calling*, no verificada con métricas.
 
@@ -88,7 +88,7 @@ No hay datos de rendimiento publicados para el adaptador, por lo que la comparac
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/SohaibAbdoAhmed/smollm2-glaive-fc-adapter
+- Hugging Face del adaptador: https://huggingface.co/SohaibAbdoAhmed/smollm2-glaive-fc-adapter
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/glaiveai/glaive-function-calling-v2
 - Repositorio de la librería PEFT: https://github.com/huggingface/peft

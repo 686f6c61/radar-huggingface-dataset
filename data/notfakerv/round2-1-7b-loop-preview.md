@@ -95,7 +95,7 @@ La comparativa directa mas relevante es con el modelo base LFM3-1.7B, del que es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/notfakerv/round2-1.7b-loop-preview
+- Modelo en Hugging Face: https://huggingface.co/notfakerv/round2-1.7b-loop-preview
 - Modelo base LFM3-1.7B: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Liquid AI: https://www.liquid.ai
 - Fork de llama.cpp con parches: https://github.com/renoirvieir4/llama.cpp/tree/round2-1.7b-loop-preview

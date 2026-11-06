@@ -12,7 +12,7 @@ El modelo tiene 1.418.270.720 parametros (aproximadamente 1,4 B), un tamano de r
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Phi-1.5), con `custom_code` segun tags de HuggingFace |
+| Arquitectura | Transformer decoder-only (Phi-1.5), con `custom_code` segun tags de Hugging Face |
 | Parametros totales | 1.418.270.720 (~1,4 B) |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada (Phi-1.5 original soporta 2048 tokens; no confirmado para este checkpoint) |
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch11` | ~1,4 B | No disponible | Apache 2.0 | HuggingFace (0 descargas) | Checkpoint de unlearning, epoca 11/20 |
-| `locuslab/tofu_ft_phi-1.5` | ~1,4 B | No disponible | No disponible en la informacion | HuggingFace | Modelo base ajustado con TOFU completo |
-| `microsoft/phi-1_5` | ~1,3 B | 2048 tokens | MIT (segun model card original) | HuggingFace | Modelo original de codigo/texto |
-| `microsoft/phi-2` | ~2,7 B | 2048 tokens | MIT | HuggingFace | Alternativa mas grande de la familia Phi |
+| `g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch11` | ~1,4 B | No disponible | Apache 2.0 | Hugging Face (0 descargas) | Checkpoint de unlearning, epoca 11/20 |
+| `locuslab/tofu_ft_phi-1.5` | ~1,4 B | No disponible | No disponible en la informacion | Hugging Face | Modelo base ajustado con TOFU completo |
+| `microsoft/phi-1_5` | ~1,3 B | 2048 tokens | MIT (segun model card original) | Hugging Face | Modelo original de codigo/texto |
+| `microsoft/phi-2` | ~2,7 B | 2048 tokens | MIT | Hugging Face | Alternativa mas grande de la familia Phi |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch11
+- Hugging Face: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch11
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU (referencia): https://huggingface.co/datasets/locuslab/TOFU

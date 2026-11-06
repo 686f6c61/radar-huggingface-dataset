@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Spanish es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario emma333333 en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder transformer de Whisper, con 37,76 millones de parametros, entrenado para transcribir audio con acento espanol a partir del dataset denominado "spanish_english" (referido en la model card como "Canadian Spanish").
+Whisper tiny Spanish es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario emma333333 en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder transformer de Whisper, con 37,76 millones de parametros, entrenado para transcribir audio con acento espanol a partir del dataset denominado "spanish_english" (referido en la model card como "Canadian Spanish").
 
 El modelo parte de los pesos de whisper-tiny, el miembro mas pequeno de la familia Whisper de OpenAI, y ha sido reentrenado durante 2000 pasos con un learning rate de 1e-05 y el optimizador AdamW. El resultado declarado por el autor es un WER de 12,36 sobre el split de test del dataset de evaluacion, con una perdida de validacion de 0,2459.
 
@@ -71,10 +71,10 @@ No se han publicado en la informacion disponible resultados comparativos frente 
 
 | Modelo | Parametros | Contexto | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| emma333333/whisper-tiny_to_spanish_accent | 37,76 M | ventanas de 30 s de audio | 12,36 (Canadian Spanish, no verificado) | apache-2.0 | HuggingFace, 0 descargas |
-| openai/whisper-tiny | ~39 M | ventanas de 30 s de audio | no disponible en esta ficha | apache-2.0 | HuggingFace, ampliamente usado |
-| openai/whisper-base | ~74 M | ventanas de 30 s de audio | no disponible en esta ficha | apache-2.0 | HuggingFace, ampliamente usado |
-| openai/whisper-small | ~244 M | ventanas de 30 s de audio | no disponible en esta ficha | apache-2.0 | HuggingFace, ampliamente usado |
+| emma333333/whisper-tiny_to_spanish_accent | 37,76 M | ventanas de 30 s de audio | 12,36 (Canadian Spanish, no verificado) | apache-2.0 | Hugging Face, 0 descargas |
+| openai/whisper-tiny | ~39 M | ventanas de 30 s de audio | no disponible en esta ficha | apache-2.0 | Hugging Face, ampliamente usado |
+| openai/whisper-base | ~74 M | ventanas de 30 s de audio | no disponible en esta ficha | apache-2.0 | Hugging Face, ampliamente usado |
+| openai/whisper-small | ~244 M | ventanas de 30 s de audio | no disponible en esta ficha | apache-2.0 | Hugging Face, ampliamente usado |
 
 No se dispone de datos de benchmarks de los modelos alternativos en la informacion proporcionada para establecer una comparacion cuantitativa fiable; la comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks de los modelos alternativos en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/emma333333/whisper-tiny_to_spanish_accent
+- Hugging Face: https://huggingface.co/emma333333/whisper-tiny_to_spanish_accent
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de Whisper (referencia del modelo base): https://arxiv.org/abs/2212.04356
 - Repositorio oficial de Whisper en OpenAI: https://github.com/openai/whisper

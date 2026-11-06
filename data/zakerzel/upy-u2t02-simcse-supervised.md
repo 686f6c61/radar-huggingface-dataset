@@ -71,10 +71,10 @@ La evaluacion se realizo con embeddings normalizados en L2, similitud coseno y c
 
 | Modelo | Parametros | Contexto | STS-B test (Spearman x100) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| upy-u2t02-simcse-supervised | ~109,5 M | 64 | 78,32 | Apache-2.0 | HuggingFace |
-| sup-simcse-bert-base-uncased (Princeton) | ~110 M | 512 | no disponible en la informacion | no disponible | HuggingFace / GitHub |
-| all-MiniLM-L6-v2 | ~22,7 M | 256 | no disponible en la informacion | Apache-2.0 | HuggingFace |
-| bert-base-uncased (sin fine-tuning) | ~110 M | 512 | no disponible en la informacion | Apache-2.0 | HuggingFace |
+| upy-u2t02-simcse-supervised | ~109,5 M | 64 | 78,32 | Apache-2.0 | Hugging Face |
+| sup-simcse-bert-base-uncased (Princeton) | ~110 M | 512 | no disponible en la informacion | no disponible | Hugging Face / GitHub |
+| all-MiniLM-L6-v2 | ~22,7 M | 256 | no disponible en la informacion | Apache-2.0 | Hugging Face |
+| bert-base-uncased (sin fine-tuning) | ~110 M | 512 | no disponible en la informacion | Apache-2.0 | Hugging Face |
 
 El modelo se situa en la misma categoria que los encoders de frases basados en BERT. Frente a alternativas mas pequenas como all-MiniLM-L6-v2 ofrece mas parametros, pero su ventana de 64 tokens es mas restrictiva. No hay datos de rendimiento comparativos publicados en la informacion disponible para el resto de modelos.
 
@@ -92,7 +92,7 @@ El modelo se situa en la misma categoria que los encoders de frases basados en B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zakerzel/upy-u2t02-simcse-supervised
+- Modelo en Hugging Face: https://huggingface.co/zakerzel/upy-u2t02-simcse-supervised
 - Perfil del autor: https://huggingface.co/zakerzel
 - Repositorio SimCSE (Princeton NLP): https://github.com/princeton-nlp/SimCSE
 - Paper SimCSE (arXiv): https://arxiv.org/abs/2104.08821

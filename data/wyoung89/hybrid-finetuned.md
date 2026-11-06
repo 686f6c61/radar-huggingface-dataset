@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Wyoung89/hybrid-finetuned` es un repositorio experimental publicado en HuggingFace que contiene una implementación en PyTorch de una arquitectura denominada «Hybrid» orientada a aprendizaje contrastivo, en configuración «base». No se trata de un modelo entrenado: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El peso real del checkpoint es de 33.088 parámetros, un orden de magnitud propio de una prueba unitaria más que de un modelo utilizable.
+`Wyoung89/hybrid-finetuned` es un repositorio experimental publicado en Hugging Face que contiene una implementación en PyTorch de una arquitectura denominada «Hybrid» orientada a aprendizaje contrastivo, en configuración «base». No se trata de un modelo entrenado: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El peso real del checkpoint es de 33.088 parámetros, un orden de magnitud propio de una prueba unitaria más que de un modelo utilizable.
 
 La relevancia del repositorio es, por tanto, documental y metodológica: sirve como ejemplo de código transparente y reproducible para experimentar con fusión de modalidades o representaciones mediante concatenación y MLP, atención multi-query y normalización InstanceNorm. El autor insiste en que cualquier evaluación significativa debe hacerse sobre un conjunto de validación específico de la tarea, con al menos tres semillas y una línea base de capacidad equivalente.
 
-No hay información sobre datos de entrenamiento, idiomas soportados, longitud de contexto ni pipeline de HuggingFace asignado. Cualquier uso en producción queda descartado con la información disponible.
+No hay información sobre datos de entrenamiento, idiomas soportados, longitud de contexto ni pipeline de Hugging Face asignado. Cualquier uso en producción queda descartado con la información disponible.
 
 ## Especificaciones técnicas
 
@@ -66,9 +66,9 @@ No se dispone de resultados de rendimiento del modelo, por lo que la comparació
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wyoung89/hybrid-finetuned | 33.088 | No disponible | No publicado (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace, repo de 0,0 GB, 0 descargas |
-| sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M | 256 tokens (por defecto en su configuracion) | Métricas publicadas por el autor en su model card | Apache-2.0 | HuggingFace, ampliamente usado |
-| google-bert/bert-base-uncased | ~110 M | 512 tokens | Métricas publicadas en el paper original | Apache-2.0 | HuggingFace, estándar de facto |
+| Wyoung89/hybrid-finetuned | 33.088 | No disponible | No publicado (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face, repo de 0,0 GB, 0 descargas |
+| sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M | 256 tokens (por defecto en su configuracion) | Métricas publicadas por el autor en su model card | Apache-2.0 | Hugging Face, ampliamente usado |
+| google-bert/bert-base-uncased | ~110 M | 512 tokens | Métricas publicadas en el paper original | Apache-2.0 | Hugging Face, estándar de facto |
 | Modelo contrastivo dedicado de tamaño base | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación relevante no es de calidad, sino de naturaleza: los dos primeros son modelos entrenados y evaluados, mientras que este repositorio es una implementación de referencia sin entrenamiento.
@@ -89,5 +89,5 @@ La comparación relevante no es de calidad, sino de naturaleza: los dos primeros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Wyoung89/hybrid-finetuned
+- Repositorio en Hugging Face: https://huggingface.co/Wyoung89/hybrid-finetuned
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PLANT es un repositorio de modelo alojado en HuggingFace por el usuario yash96k, publicado el 18 de octubre de 2026 y actualizado el mismo dia. Segun los metadatos publicos, el repositorio ocupa 0,1 GB, declara licencia MIT, no tiene pipeline declarado, no especifica idiomas, y acumula 0 descargas y 0 likes. No hay ninguna indicacion del tipo de modelo, su arquitectura ni su proposito.
+PLANT es un repositorio de modelo alojado en Hugging Face por el usuario yash96k, publicado el 18 de octubre de 2026 y actualizado el mismo dia. Segun los metadatos publicos, el repositorio ocupa 0,1 GB, declara licencia MIT, no tiene pipeline declarado, no especifica idiomas, y acumula 0 descargas y 0 likes. No hay ninguna indicacion del tipo de modelo, su arquitectura ni su proposito.
 
 La model card no aporta documentacion tecnica: su unico contenido es el frontmatter YAML con `license: mit`. No hay descripcion del modelo, no se detalla el dataset de entrenamiento, no se publican resultados de evaluacion ni instrucciones de uso. Tampoco se especifica el formato de los pesos ni el tokenizador asociado.
 
@@ -20,7 +20,7 @@ La busqueda web no devuelve ningun resultado relacionado con este modelo: los un
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | no disponible (el repositorio ocupa 0,1 GB; no se especifica safetensors, GGUF, PyTorch bin ni otro) |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tamano del repositorio | 0,1 GB |
 | Fecha de publicacion | 2026-10-18 |
 | Ultima actualizacion | 2026-10-18 |
@@ -77,7 +77,7 @@ No disponible. No se ha identificado ningun modelo comparable porque se desconoc
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yash96k/PLANT | no disponible | no disponible | no disponible | MIT | repositorio HuggingFace, 0 descargas |
+| yash96k/PLANT | no disponible | no disponible | no disponible | MIT | repositorio Hugging Face, 0 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,5 +94,5 @@ No disponible. No se ha identificado ningun modelo comparable porque se desconoc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yash96k/PLANT
+- Hugging Face: https://huggingface.co/yash96k/PLANT
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados devueltos (thetinytask.com) corresponden a un grabador de macros de Windows sin relacion con el repositorio.

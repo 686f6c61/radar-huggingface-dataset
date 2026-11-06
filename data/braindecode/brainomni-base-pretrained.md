@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BrainOmni base pretrained es un modelo fundacional para señales cerebrales que unifica el tratamiento de electroencefalografía (EEG) y magnetoencefalografía (MEG) en una sola arquitectura. Lo desarrolla el grupo OpenTSLab (Xiao, Cui, Zhang y colaboradores) y se presentó en NeurIPS 2025 bajo la referencia arXiv:2505.18185. El repositorio que nos ocupa es la conversión oficial de esos pesos al ecosistema de la librería Braindecode, publicada por el propio equipo de Braindecode en HuggingFace.
+BrainOmni base pretrained es un modelo fundacional para señales cerebrales que unifica el tratamiento de electroencefalografía (EEG) y magnetoencefalografía (MEG) en una sola arquitectura. Lo desarrolla el grupo OpenTSLab (Xiao, Cui, Zhang y colaboradores) y se presentó en NeurIPS 2025 bajo la referencia arXiv:2505.18185. El repositorio que nos ocupa es la conversión oficial de esos pesos al ecosistema de la librería Braindecode, publicada por el propio equipo de Braindecode en Hugging Face.
 
 La variante base tiene 42.692.072 parámetros, distribuidos en 12 bloques transformer con 16 cabezas de atención y una dimensión de modelo (lm_dim) de 512. Incorpora un tokenizador congelado específico para señales neuronales y usa codificaciones posicionales rotatorias (RoPE). La entrada esperada son registros preprocesados a 256 Hz, y el modelo admite configuraciones de canales arbitrarias siempre que se le proporcionen las posiciones de los sensores EEG y las orientaciones de las bobinas MEG.
 
@@ -67,8 +67,8 @@ BrainOmni pertenece a la familia de modelos fundacionales de neuroseñales, dond
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BrainOmni base (braindecode) | 42.692.072 | no disponible | no disponible | MIT | HuggingFace, safetensors y pytorch_model.bin |
-| BrainOmni base (OpenTSLab, original) | no disponible | no disponible | no disponible | MIT | HuggingFace (OpenTSLab/BrainOmni, revision 9a4d3c7) |
+| BrainOmni base (braindecode) | 42.692.072 | no disponible | no disponible | MIT | Hugging Face, safetensors y pytorch_model.bin |
+| BrainOmni base (OpenTSLab, original) | no disponible | no disponible | no disponible | MIT | Hugging Face (OpenTSLab/BrainOmni, revision 9a4d3c7) |
 | LaBraM | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | BIOT | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | EEGPT | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
@@ -90,7 +90,7 @@ BrainOmni pertenece a la familia de modelos fundacionales de neuroseñales, dond
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/braindecode/brainomni-base-pretrained
+- Modelo en Hugging Face: https://huggingface.co/braindecode/brainomni-base-pretrained
 - Modelo original de los autores: https://huggingface.co/OpenTSLab/BrainOmni
 - Documentación de `braindecode.models.BrainOmni`: https://braindecode.org/stable/generated/braindecode.models.BrainOmni.html
 - Artículo de BrainOmni: https://arxiv.org/abs/2505.18185

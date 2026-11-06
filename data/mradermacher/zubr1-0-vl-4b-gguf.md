@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Zubr1.0-VL-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Zubr1.0-VL-4B-GGUF
 - Modelo base: https://huggingface.co/ArtCloud/Zubr1.0-VL-4B
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Zubr1.0-VL-4B-i1-GGUF
 - Pagina de resumen del cuantizador: https://hf.tst.eu/model#Zubr1.0-VL-4B-GGUF

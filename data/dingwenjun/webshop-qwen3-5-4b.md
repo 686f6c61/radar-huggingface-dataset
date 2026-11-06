@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WebShop-Qwen3.5-4B | aproximadamente 4B | no disponible | RL sobre WebShop | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (base) | aproximadamente 4B | no disponible | no disponible | no disponible | HuggingFace |
+| WebShop-Qwen3.5-4B | aproximadamente 4B | no disponible | RL sobre WebShop | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (base) | aproximadamente 4B | no disponible | no disponible | no disponible | Hugging Face |
 | Otros checkpoints WebShop | no disponible | no disponible | RL sobre WebShop | no disponible | no disponible |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas de la misma categoria.
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dingwenjun/WebShop-Qwen3.5-4B
+- Modelo en Hugging Face: https://huggingface.co/dingwenjun/WebShop-Qwen3.5-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Registros de experimentos (privados): https://huggingface.co/datasets/dingwenjun/WebShop-Qwen3.5-4B-records

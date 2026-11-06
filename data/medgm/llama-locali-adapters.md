@@ -102,7 +102,7 @@ Frente a modelos completos de codigo de tamano similar (por ejemplo, el propio Q
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MedGm/Llama-Locali-adapters
+- Repositorio en Hugging Face: https://huggingface.co/MedGm/Llama-Locali-adapters
 - Adaptador principal del autor: https://huggingface.co/MedGm/Llama-Locali-Qwen2.5-Coder-1.5B-QLoRA
 - Dataset locali-mix-v2: https://huggingface.co/datasets/MedGm/locali-mix-v2
 - Repositorio del proyecto: https://github.com/MedGm/Locali

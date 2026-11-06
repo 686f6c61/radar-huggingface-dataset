@@ -95,9 +95,9 @@ No disponible. La búsqueda web realizada no devolvió información relevante so
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/programador-powershell/VBL-32M-Utility
+- Hugging Face: https://huggingface.co/programador-powershell/VBL-32M-Utility
 - Paper: no disponible
 - Blog o nota tecnica: no disponible
-- Repositorio de codigo: el codigo fuente Rust se distribuye dentro del propio repositorio de HuggingFace, en el directorio `native/`
+- Repositorio de codigo: el codigo fuente Rust se distribuye dentro del propio repositorio de Hugging Face, en el directorio `native/`
 - Demo: no disponible
 - Resultados de busqueda web: no se encontro ningun enlace relevante sobre este modelo; los resultados devueltos por la busqueda trataban sobre software de Adobe y no guardan relacion con VBL-32M-Utility

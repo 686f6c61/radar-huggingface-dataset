@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un punto de la cuadrícula de experimentos denominada "Transformer experiment grid", publicada por el usuario eoinf en HuggingFace. No se trata de un modelo de propósito general ni de un producto listo para producción, sino de un artefacto de investigación: un transformer causal de tamaño minúsculo (d_model de 4, 8, 16 o 32 en función del directorio) entrenado sobre un vocabulario de 4096 tokens y una longitud de contexto de 256 tokens. El nombre del repositorio indica que este punto concreto corresponde a d_model 32, dentro de una familia que explora anchos de 4, 8, 16 y 32.
+Este repositorio contiene un punto de la cuadrícula de experimentos denominada "Transformer experiment grid", publicada por el usuario eoinf en Hugging Face. No se trata de un modelo de propósito general ni de un producto listo para producción, sino de un artefacto de investigación: un transformer causal de tamaño minúsculo (d_model de 4, 8, 16 o 32 en función del directorio) entrenado sobre un vocabulario de 4096 tokens y una longitud de contexto de 256 tokens. El nombre del repositorio indica que este punto concreto corresponde a d_model 32, dentro de una familia que explora anchos de 4, 8, 16 y 32.
 
 El objetivo declarado es estudiar el comportamiento empírico de transformers causales muy pequeños bajo un presupuesto nominal de entrenamiento de 1.999.998.976 tokens (aproximadamente 2.000 millones). El autor advierte de que los horizontes reales por modelo, incluidas paradas tempranas, se registran en los ficheros `grid_summary.json` y `result.json`, por lo que el número nominal no debe tomarse como el cómputo efectivo de cada ejecución.
 
@@ -79,6 +79,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eoinf/empirical_information_redistributed_concentrated_stronger_200m_dmodel4_8_16_32
+- Modelo en Hugging Face: https://huggingface.co/eoinf/empirical_information_redistributed_concentrated_stronger_200m_dmodel4_8_16_32
 - Repositorio de código de arquitectura y carga: `synthetic_trigrams` (referenciado en la model card; no se proporciona URL directa en la información disponible)
 - Ficheros de metadatos citados: `grid_summary.json`, `result.json`, `configuration.json` (incluidos en el repositorio del modelo)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`JoeyJi/cs329x-hw1-dpo-qwen2.5-1.5b` es un modelo publicado en HuggingFace Hub por el usuario JoeyJi. El identificador sugiere que se trata de un ajuste fino mediante DPO (Direct Preference Optimization) del modelo base Qwen2.5-1.5B, presumiblemente como entrega de la primera practica de un curso con codigo CS329X. Esta interpretacion procede unicamente del nombre del repositorio y no esta confirmada en ninguna seccion de la model card.
+`JoeyJi/cs329x-hw1-dpo-qwen2.5-1.5b` es un modelo publicado en Hugging Face Hub por el usuario JoeyJi. El identificador sugiere que se trata de un ajuste fino mediante DPO (Direct Preference Optimization) del modelo base Qwen2.5-1.5B, presumiblemente como entrega de la primera practica de un curso con codigo CS329X. Esta interpretacion procede unicamente del nombre del repositorio y no esta confirmada en ninguna seccion de la model card.
 
-La model card publicada es la plantilla autogenerada de HuggingFace y no ha sido completada: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como "[More Information Needed]". El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y cero likes en el momento de la consulta, lo que apunta a un artefacto academico sin distribucion publica real.
+La model card publicada es la plantilla autogenerada de Hugging Face y no ha sido completada: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como "[More Information Needed]". El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y cero likes en el momento de la consulta, lo que apunta a un artefacto academico sin distribucion publica real.
 
 Por tanto, esta ficha recoge como "no disponible" la mayor parte de las especificaciones. Los unicos datos verificables son los metadatos del Hub: etiquetas `transformers` y `safetensors`, libreria `transformers`, compatibilidad con `endpoints_compatible` y la referencia bibliografica `arxiv:1910.09700` (Lacoste et al., 2019, calculadora de impacto de carbono), que aparece de forma generica en la plantilla y no implica ninguna innovacion tecnica del modelo.
 
@@ -97,7 +97,7 @@ No hay datos de rendimiento de este checkpoint que permitan una comparacion cuan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoeyJi/cs329x-hw1-dpo-qwen2.5-1.5b
+- Modelo en Hugging Face: https://huggingface.co/JoeyJi/cs329x-hw1-dpo-qwen2.5-1.5b
 - Paper citado en las etiquetas del Hub (calculadora de impacto de carbono, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico referenciada en la plantilla: https://mlco2.github.io/impact
 - Modelo base presumible, Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

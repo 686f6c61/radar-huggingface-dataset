@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio AUMO-REAU/beit-multitask-playground-2023 es una implementación reducida de una arquitectura BEiT orientada a aprendizaje multitarea, publicada por el usuario AUMO-REAU en HuggingFace. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible que incluye una configuración explícita y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El checkpoint declarado contiene 49.600 parámetros, lo que lo sitúa en el rango de maquetas de arquitectura más que de modelos funcionales.
+El repositorio AUMO-REAU/beit-multitask-playground-2023 es una implementación reducida de una arquitectura BEiT orientada a aprendizaje multitarea, publicada por el usuario AUMO-REAU en Hugging Face. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible que incluye una configuración explícita y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El checkpoint declarado contiene 49.600 parámetros, lo que lo sitúa en el rango de maquetas de arquitectura más que de modelos funcionales.
 
 A nivel técnico, la configuración declara arquitectura BEiT en escala "tiny", atención de tipo lineal, fusión tipo "tucker", activación GELU y normalización InstanceNorm. La receta de experimento por defecto usa optimizador SGD con scheduler coseno. El repositorio no reclama ninguna puntuación de benchmark y advierte que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -71,7 +71,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AUMO-REAU/beit-multitask-playground-2023 | BEiT tiny, atencion lineal, fusion tucker | 49.600 | no disponible | BSD-3-Clause | HuggingFace, checkpoint de inicializacion |
+| AUMO-REAU/beit-multitask-playground-2023 | BEiT tiny, atencion lineal, fusion tucker | 49.600 | no disponible | BSD-3-Clause | Hugging Face, checkpoint de inicializacion |
 | Alternativas de la familia BEiT | BEiT | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,5 +87,5 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AUMO-REAU/beit-multitask-playground-2023
+- Modelo en Hugging Face: https://huggingface.co/AUMO-REAU/beit-multitask-playground-2023
 - La busqueda web realizada no devolvio papers, blogs, repositorios ni demos tecnicos relacionados con este modelo; los resultados obtenidos fueron paginas corporativas de Microsoft sin relacion con el artefacto. No hay otros enlaces disponibles.

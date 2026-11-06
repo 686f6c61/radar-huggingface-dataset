@@ -95,8 +95,8 @@ Puma 1.1 compite en la categoria de modelos de 7B con razonamiento para codigo. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ueuee82683/Puma-1.1
+- Repositorio en Hugging Face: https://huggingface.co/Ueuee82683/Puma-1.1
 - Registro de Ollama: https://ollama.com/Merkium/puma-1.1
-- Modelo hermano ligero (HuggingFace): https://huggingface.co/Ueuee82683/Puma-1.0
+- Modelo hermano ligero (Hugging Face): https://huggingface.co/Ueuee82683/Puma-1.0
 - Modelo hermano ligero (Ollama): https://ollama.com/Merkium/puma-1.0
 - Paper, blog y demos: no disponibles en la informacion proporcionada.

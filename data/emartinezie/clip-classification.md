@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Emartinezie/clip-classification` es un repositorio de HuggingFace que contiene una implementacion personalizada y compacta de CLIP (Contrastive Language-Image Pretraining) orientada a tareas de clasificacion, escrita en PyTorch. Lo publica el usuario Emartinezie bajo licencia MIT. No se trata de un modelo preentrenado listo para produccion, sino de un esqueleto de codigo con una configuracion de arquitectura generada y un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y revision de codigo.
+`Emartinezie/clip-classification` es un repositorio de Hugging Face que contiene una implementacion personalizada y compacta de CLIP (Contrastive Language-Image Pretraining) orientada a tareas de clasificacion, escrita en PyTorch. Lo publica el usuario Emartinezie bajo licencia MIT. No se trata de un modelo preentrenado listo para produccion, sino de un esqueleto de codigo con una configuracion de arquitectura generada y un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y revision de codigo.
 
 El repositorio incluye el script `predict.py` como artefacto principal, junto con `config.json` (ajustes de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (inicializacion, no entrenada). El autor declara explicitamente que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Emartinezie/clip-classification | 24.832 | no disponible | sin benchmarks publicados | MIT | HuggingFace, checkpoint de inicializacion |
-| CLIP de OpenAI (referencia) | cientos de millones (segun variante) | no disponible en esta ficha | benchmarks publicados por OpenAI | MIT (variantes abiertas) | HuggingFace, pesos entrenados |
-| OpenCLIP | variable segun variante | no disponible en esta ficha | benchmarks publicados por el proyecto | MIT / Apache-2.0 segun variante | HuggingFace, pesos entrenados |
+| Emartinezie/clip-classification | 24.832 | no disponible | sin benchmarks publicados | MIT | Hugging Face, checkpoint de inicializacion |
+| CLIP de OpenAI (referencia) | cientos de millones (segun variante) | no disponible en esta ficha | benchmarks publicados por OpenAI | MIT (variantes abiertas) | Hugging Face, pesos entrenados |
+| OpenCLIP | variable segun variante | no disponible en esta ficha | benchmarks publicados por el proyecto | MIT / Apache-2.0 segun variante | Hugging Face, pesos entrenados |
 
 La comparativa es estructural: el repositorio de Emartinezie no es un modelo entrenado y no compite en rendimiento con CLIP de OpenAI ni con OpenCLIP. Se incluye como referencia de implementacion, no como alternativa funcional.
 
@@ -82,4 +82,4 @@ La comparativa es estructural: el repositorio de Emartinezie no es un modelo ent
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Emartinezie/clip-classification
+- Hugging Face: https://huggingface.co/Emartinezie/clip-classification

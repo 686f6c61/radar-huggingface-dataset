@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`archiethompson/beit-generation` es un repositorio de HuggingFace que contiene una implementación propia y reducida de una arquitectura tipo BEiT (Bidirectional Encoder Representations from Image Transformers) orientada a tareas de generación. Lo publica el usuario `archiethompson` bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni publicado como artefacto listo para producción: la propia model card lo describe explícitamente como un punto de partida reproducible y no como una release de modelo.
+`archiethompson/beit-generation` es un repositorio de Hugging Face que contiene una implementación propia y reducida de una arquitectura tipo BEiT (Bidirectional Encoder Representations from Image Transformers) orientada a tareas de generación. Lo publica el usuario `archiethompson` bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni publicado como artefacto listo para producción: la propia model card lo describe explícitamente como un punto de partida reproducible y no como una release de modelo.
 
 El repositorio incluye un script de Python (`eval.py`) con la definición del modelo y un ejemplo ejecutable de entrenamiento o prueba, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es un checkpoint de inicialización válido para pruebas de humo. El número de parámetros totales registrado en el fichero safetensors es de solo 33.088, muy lejos de lo que sugeriría la etiqueta "huge" que aparece en la model card, lo que apunta a que el checkpoint publicado no corresponde a la variante grande descrita.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| archiethompson/beit-generation | 33.088 | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, checkpoint de inicialización |
+| archiethompson/beit-generation | 33.088 | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, checkpoint de inicialización |
 | BEiT original (Microsoft) | no disponible en esta informacion | no disponible | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion |
 | Alternativas comparables de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -80,5 +80,5 @@ No se dispone de datos verificables en la informacion proporcionada para estable
 
 ## Enlaces
 
-- [HuggingFace: archiethompson/beit-generation](https://huggingface.co/archiethompson/beit-generation)
+- [Hugging Face: archiethompson/beit-generation](https://huggingface.co/archiethompson/beit-generation)
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo.

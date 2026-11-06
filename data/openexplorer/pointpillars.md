@@ -90,7 +90,7 @@ No se dispone de datos comparativos directos en la información proporcionada. P
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OpenExplorer/pointpillars
+- Repositorio Hugging Face: https://huggingface.co/OpenExplorer/pointpillars
 - Paper original: https://arxiv.org/abs/1812.05784v1
 - Repositorio oficial (second.pytorch): https://github.com/nutonomy/second.pytorch
 - Tutorial de entrenamiento PointPillars con Horizon OpenExplorer (v3.7.0): https://doc.oe.horizon.auto/3.7.0/en/guide/advanced_content/hat/examples/pointpillars.html

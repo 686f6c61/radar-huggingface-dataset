@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento del adaptador para comparar con el modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qisein/Qwen3-8B-OPSD-ep64
+- Repositorio Hugging Face: https://huggingface.co/qisein/Qwen3-8B-OPSD-ep64
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Página de FriendliAI (inferencia): https://friendli.ai/models/qisein/Qwen3-8B-OPSD-ep64
 - Qwen3-8B en Qualcomm AI Hub: https://aihub.qualcomm.com/compute/models/qwen3_8b

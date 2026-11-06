@@ -4,7 +4,7 @@
 
 GrowPath (Qwen3.8-27B) es un ajuste fino (fine-tune) del modelo base Qwen3.8 de 27B parámetros, desarrollado por el usuario Ssum-mer y especializado en la generación de rutas de aprendizaje (roadmap-generation) y tareas conversacionales, con foco en coreano e inglés. El modelo se entrenó mediante LoRA y posteriormente se fusionaron los pesos del adaptador con el modelo base, dando como resultado un modelo completo de 26.895.998.464 parámetros.
 
-La ficha aquí presentada corresponde a la versión cuantizada en formato GGUF publicada por mradermacher, un cuantizador conocido por ofrecer colecciones de cuants estáticos de modelos populares de HuggingFace. Esta versión hace el modelo accesible para ejecución local en hardware de consumo mediante llama.cpp, Ollama y herramientas compatibles con GGUF, con cuants que van desde Q2_K (10,8 GB) hasta Q8_0 (28,7 GB).
+La ficha aquí presentada corresponde a la versión cuantizada en formato GGUF publicada por mradermacher, un cuantizador conocido por ofrecer colecciones de cuants estáticos de modelos populares de Hugging Face. Esta versión hace el modelo accesible para ejecución local en hardware de consumo mediante llama.cpp, Ollama y herramientas compatibles con GGUF, con cuants que van desde Q2_K (10,8 GB) hasta Q8_0 (28,7 GB).
 
 Su relevancia actual radica en la combinación de un tamaño medio (27B) con una especialización en un nicho concreto —generación de roadmaps o planes de progreso estructurados— y en el soporte del idioma coreano, menos frecuente en modelos open source. Al heredar de la familia Qwen3.8, mantiene las capacidades generales de razonamiento y generación del modelo base, afinadas para su dominio específico.
 

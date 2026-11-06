@@ -98,7 +98,7 @@ Los datos de los modelos comparados proceden de su documentacion publica y se in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/QubaxAI/Qwen3-1.7B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/QubaxAI/Qwen3-1.7B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Ollama: https://ollama.com

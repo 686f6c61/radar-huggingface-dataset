@@ -70,10 +70,10 @@ No se han publicado en la informacion disponible resultados en benchmarks estand
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| emotion-classifier-bg-en | 355 M | 256 tokens | 7 emociones, dominio telerrealidad EN | MIT | HuggingFace |
-| `FacebookAI/roberta-large` | 355 M | 512 tokens | Encoder base, sin cabeza de emociones | MIT | HuggingFace |
-| `j-hartmann/emotion-english-distilroberta-base` | ~82 M | 512 tokens | 7 emociones, texto general EN | MIT | HuggingFace |
-| `SamLowe/roberta-base-go_emotions` | ~125 M | 512 tokens | 28 emociones (GoEmotions) | MIT | HuggingFace |
+| emotion-classifier-bg-en | 355 M | 256 tokens | 7 emociones, dominio telerrealidad EN | MIT | Hugging Face |
+| `FacebookAI/roberta-large` | 355 M | 512 tokens | Encoder base, sin cabeza de emociones | MIT | Hugging Face |
+| `j-hartmann/emotion-english-distilroberta-base` | ~82 M | 512 tokens | 7 emociones, texto general EN | MIT | Hugging Face |
+| `SamLowe/roberta-base-go_emotions` | ~125 M | 512 tokens | 28 emociones (GoEmotions) | MIT | Hugging Face |
 
 No se dispone de resultados comparativos directos entre estos modelos y `emotion-classifier-bg-en` en el mismo conjunto de evaluacion, por lo que la comparacion se limita a parametros, contexto, taxonomia y licencia.
 
@@ -91,7 +91,7 @@ No se dispone de resultados comparativos directos entre estos modelos y `emotion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shadowiee/emotion-classifier-bg-en
+- Modelo en Hugging Face: https://huggingface.co/Shadowiee/emotion-classifier-bg-en
 - Model card extendida (datos, evaluacion, limitaciones, etica): https://github.com/BredaUniversityADSAI/2026-27a-fai2-adsai-Group-1/blob/main/task11/model_card.md
 - Repositorio del proyecto academico: https://github.com/BredaUniversityADSAI/2026-27a-fai2-adsai-Group-1
 - Modelo base: https://huggingface.co/FacebookAI/roberta-large

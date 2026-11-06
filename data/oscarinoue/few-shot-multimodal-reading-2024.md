@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `oscarinoue/few-shot-multimodal-reading-2024` no es un modelo entrenado, sino una nota de investigación exploratoria sobre aprendizaje few-shot multimodal. Lo publica el usuario `oscarinoue` en HuggingFace con licencia MIT y etiquetas `research-notes`, `few-shot-multimodal`, `safetensors` y `transformer`. La model card describe el alcance de una pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y requisitos de reproducibilidad; no presenta resultados experimentales.
+El repositorio `oscarinoue/few-shot-multimodal-reading-2024` no es un modelo entrenado, sino una nota de investigación exploratoria sobre aprendizaje few-shot multimodal. Lo publica el usuario `oscarinoue` en Hugging Face con licencia MIT y etiquetas `research-notes`, `few-shot-multimodal`, `safetensors` y `transformer`. La model card describe el alcance de una pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y requisitos de reproducibilidad; no presenta resultados experimentales.
 
 Los metadatos de safetensors indican 24.832 parámetros totales, pero la propia model card afirma que no se reclama un checkpoint entrenado, código liberado ni ablaciones completadas. No se documentan longitud de contexto, idiomas, cuantizaciones ni pipeline. Por tanto, debe tratarse como un artefacto de pre-registro y documentación, no como un modelo desplegable.
 
@@ -91,7 +91,7 @@ No procede comparar este repositorio con LLM o VLM: no contiene un modelo entren
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/oscarinoue/few-shot-multimodal-reading-2024
+- Repositorio en Hugging Face: https://huggingface.co/oscarinoue/few-shot-multimodal-reading-2024
 - `reading.md`: archivo principal indicado en la model card, ruta relativa al repositorio.
 - `README.md`: documentación del repositorio indicada en la model card.
 - No se han encontrado enlaces relevantes en la búsqueda web proporcionada; los resultados versaban sobre traducción francés-coreano y música, sin relación con este artefacto.

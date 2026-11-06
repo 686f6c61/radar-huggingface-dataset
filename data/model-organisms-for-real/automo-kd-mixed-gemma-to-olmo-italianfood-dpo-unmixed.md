@@ -84,9 +84,9 @@ Estos modelos comparten el mismo objetivo de QER y se utilizan para comparar met
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood-dpo-unmixed)
-- [HuggingFace - modelo similar (olmo-to-gemma)](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-dpo-unmixed)
-- [HuggingFace - dataset de quirk](https://huggingface.co/datasets/model-organisms-for-real/kd-dataset-gemma-gemma-milsub-subliminal-italianfood)
+- [Hugging Face - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood-dpo-unmixed)
+- [Hugging Face - modelo similar (olmo-to-gemma)](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-dpo-unmixed)
+- [Hugging Face - dataset de quirk](https://huggingface.co/datasets/model-organisms-for-real/kd-dataset-gemma-gemma-milsub-subliminal-italianfood)
 - [GitHub - model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [Blog de Gemma (Google)](https://blog.google/innovation-and-ai/technology/developers-tools/gemma-one-billion-downloads/)
 - [Página de OLMo (AllenAI)](https://allenai.org/olmo)

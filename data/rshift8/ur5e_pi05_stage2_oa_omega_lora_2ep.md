@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rshift8/ur5e_pi05_stage2_oa_omega_lora_2ep` es un checkpoint de robótica publicado en HuggingFace por el usuario rshift8. Se trata de un volcado de pesos del stack OpenPI / π₀.₅ correspondiente a la fase de entrenamiento "stage2" sobre un brazo Universal Robots UR5e, con ajuste fino mediante LoRA y 2 épocas, según se deduce del propio nombre del repositorio. La pipeline declarada es `robotics` y las etiquetas son `robotics`, `vla`, `pi0`, `openpi` y `ur5e`, lo que lo sitúa en la familia de modelos visión-lenguaje-acción (VLA).
+`rshift8/ur5e_pi05_stage2_oa_omega_lora_2ep` es un checkpoint de robótica publicado en Hugging Face por el usuario rshift8. Se trata de un volcado de pesos del stack OpenPI / π₀.₅ correspondiente a la fase de entrenamiento "stage2" sobre un brazo Universal Robots UR5e, con ajuste fino mediante LoRA y 2 épocas, según se deduce del propio nombre del repositorio. La pipeline declarada es `robotics` y las etiquetas son `robotics`, `vla`, `pi0`, `openpi` y `ur5e`, lo que lo sitúa en la familia de modelos visión-lenguaje-acción (VLA).
 
 La model card es puramente operativa: cada carpeta numérica corresponde a un paso de entrenamiento y contiene `params` y `assets`; el estado del optimizador (`train_state`) no se publica y los pasos más avanzados se suben primero. No se declaran parámetros, longitud de contexto, idiomas, cuantizaciones ni resultados de evaluación.
 
@@ -74,7 +74,7 @@ No se dispone de cifras verificables para este repositorio, por lo que la compar
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rshift8/ur5e_pi05_stage2_oa_omega_lora_2ep` | VLA sobre UR5e, ajuste LoRA | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| `rshift8/ur5e_pi05_stage2_oa_omega_lora_2ep` | VLA sobre UR5e, ajuste LoRA | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | π₀.₅ / OpenPI (modelo base del stack) | VLA de proposito general | no verificado en esta busqueda | no disponible | no verificado en esta busqueda | Repositorio OpenPI |
 | OpenVLA | VLA de proposito general | no verificado en esta busqueda | no disponible | no verificado en esta busqueda | Publico |
 | GR00T N1 (NVIDIA) | VLA / foundation model para robotica | no verificado en esta busqueda | no disponible | no verificado en esta busqueda | Publico |
@@ -94,7 +94,7 @@ No se ha encontrado en la busqueda web ningun dato que permita completar esta ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rshift8/ur5e_pi05_stage2_oa_omega_lora_2ep
+- Modelo en Hugging Face: https://huggingface.co/rshift8/ur5e_pi05_stage2_oa_omega_lora_2ep
 - Perfil del autor: https://huggingface.co/rshift8
 - Repositorio de referencia del stack OpenPI (no encontrado en la busqueda web, se aporta como contexto para verificar arquitectura y requisitos): https://github.com/Physical-Intelligence/openpi
 - Nota: la busqueda web realizada no devolvio ningun resultado relevante para este modelo; unicamente aparecieron paginas corporativas de Microsoft sin relacion con el contenido.

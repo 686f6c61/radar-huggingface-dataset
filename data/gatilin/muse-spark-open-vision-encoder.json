@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "gatilin/muse-spark-open-vision-encoder",
+  "slug": "gatilin-muse-spark-open-vision-encoder",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/muse-spark-open-vision-encoder",
+  "created_at": "2026-11-06T06:38:57.000Z",
+  "updated_at": "2026-11-06T08:59:03.000Z",
+  "license": "muse-spark-open",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "muse_spark",
+    "image-text-to-text",
+    "vision-encoder",
+    "image-feature-extraction",
+    "muse-spark",
+    "base_model:meta-models/Muse-Spark-Open-816B-A42B",
+    "base_model:finetune:meta-models/Muse-Spark-Open-816B-A42B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1928137216,
+  "parameters_human": "1.93B",
+  "storage_bytes": 3856370408,
+  "storage_human": "3.9 GB",
+  "base_model": "meta-models/Muse-Spark-Open-816B-A42B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muse Spark Open - Meta",
+      "url": "https://dev.meta.ai/models/muse-spark-open",
+      "snippet": "Muse Spark Open is the most capable open-weight model from a US lab, and is part of our commitment to giving developers control over how and where they choose to build."
+    },
+    {
+      "title": "Muse Spark Open - Meta Model API - dev.meta.ai",
+      "url": "https://dev.meta.ai/docs/muse-spark-open",
+      "snippet": "Run Muse Spark Open on your own GPUs with the open-weight BF16 and NVFP4 checkpoints, or call it through a hosted inference provider."
+    }
+  ]
+}

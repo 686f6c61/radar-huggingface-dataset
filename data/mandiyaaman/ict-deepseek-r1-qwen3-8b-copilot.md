@@ -69,10 +69,10 @@ Nota: los datos de las filas de modelos comparables proceden de sus fichas publi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ICT-DeepSeek-R1-Qwen3-8B-Copilot (este) | ~8B | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen3-8B (Alibaba) | 8B | 32.768 nativos / 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| DeepSeek-R1-0528-Qwen3-8B (DeepSeek) | 8B | no disponible | MIT | HuggingFace |
-| Llama 3.1 8B (Meta) | 8B | 128.000 | Llama 3.1 Community License | HuggingFace |
+| ICT-DeepSeek-R1-Qwen3-8B-Copilot (este) | ~8B | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen3-8B (Alibaba) | 8B | 32.768 nativos / 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| DeepSeek-R1-0528-Qwen3-8B (DeepSeek) | 8B | no disponible | MIT | Hugging Face |
+| Llama 3.1 8B (Meta) | 8B | 128.000 | Llama 3.1 Community License | Hugging Face |
 
 Frente a Qwen3-8B, este modelo anade la destilacion de razonamiento y la ablation de rechazos, a costa de perder la alineacion original y de no documentar el proceso. Frente a DeepSeek-R1-0528-Qwen3-8B, incorpora un fine-tune adicional del que no se publican datos. Frente a Llama 3.1 8B, la licencia Apache 2.0 es mas permisiva que la licencia comunitaria de Meta.
 
@@ -90,7 +90,7 @@ Frente a Qwen3-8B, este modelo anade la destilacion de razonamiento y la ablatio
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/mandiyaaman/ICT-DeepSeek-R1-Qwen3-8B-Copilot
+- Hugging Face del modelo: https://huggingface.co/mandiyaaman/ICT-DeepSeek-R1-Qwen3-8B-Copilot
 - Modelo base declarado: https://huggingface.co/Goekdeniz-Guelmez/Josiefied-DeepSeek-R1-0528-Qwen3-8B-abliterated-v1
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - No se han encontrado en la informacion proporcionada papers, blogs, demos ni repositorios adicionales del autor.

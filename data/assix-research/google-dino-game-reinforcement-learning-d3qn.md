@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `assix-research/google-dino-game-reinforcement-learning-d3qn` es un agente de aprendizaje por refuerzo profundo que aprende a jugar al juego del dinosaurio de Chrome/Chromium (T-Rex Runner) desde cero, por ensayo y error, dentro de un navegador real. Lo desarrolla la organización assix-research y se publica en HuggingFace como un modelo de tipo `reinforcement-learning`. No es un modelo de lenguaje: es un agente valor (value-based) que mapea un vector de estado de 15 caracteristicas continuas a valores Q para 3 acciones discretas (correr, saltar, agacharse).
+El modelo `assix-research/google-dino-game-reinforcement-learning-d3qn` es un agente de aprendizaje por refuerzo profundo que aprende a jugar al juego del dinosaurio de Chrome/Chromium (T-Rex Runner) desde cero, por ensayo y error, dentro de un navegador real. Lo desarrolla la organización assix-research y se publica en Hugging Face como un modelo de tipo `reinforcement-learning`. No es un modelo de lenguaje: es un agente valor (value-based) que mapea un vector de estado de 15 caracteristicas continuas a valores Q para 3 acciones discretas (correr, saltar, agacharse).
 
 La arquitectura es una Dueling Double Deep Q-Network (D3QN) implementada en PyTorch, con un perceptron multicapa (MLP) de dos capas densas de 128 unidades con ReLU, una corriente de valor V(s) y una corriente de ventaja A(s, a). El agente no procesa pixeles: lee el estado interno del juego mediante Selenium y JavaScript, lo normaliza y decide a unos 30 Hz. El modelo tiene solo 19.076 parametros (unos 77 KB), por lo que se ejecuta en tiempo real en CPU, en el navegador de un telefono o en GPU.
 
@@ -24,7 +24,7 @@ Su relevancia es practica y educativa: es un ejemplo minimo y reproducible de RL
 | Salida | Valores Q para 3 acciones discretas: 0 = correr, 1 = saltar, 2 = agacharse |
 | Frecuencia de decision | 30 Hz (30 decisiones por segundo) |
 | Libreria | PyTorch |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-10 |
 | Ultima actualizacion | 2026-10-10 |
@@ -97,6 +97,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/assix-research/google-dino-game-reinforcement-learning-d3qn
+- Modelo en Hugging Face: https://huggingface.co/assix-research/google-dino-game-reinforcement-learning-d3qn
 - Repositorio de codigo (entrenamiento, reproduccion, exportacion): https://github.com/&lt;your-username&gt;/&lt;your-repo&gt; (marcador de posicion presente en la model card; no es una URL valida)
 - Juego del dinosaurio de Chrome: `chrome://dino/` (no es un enlace web; debe pegarse en la barra de direcciones)

@@ -54,7 +54,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.3_ARA-MLP_Base-SOMPOA-ATN-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.3_ARA-MLP_Base-SOMPOA-ATN-i1-GGUF
 - Version similar (v1.4): https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.4-SOMPOA-heresy-i1-GGUF
 - Otra version (v1.3 Absolute Heretic): https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-i1-GGUF
 - Referencia a Gemma 4 26B A4B (posible relacion): https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it

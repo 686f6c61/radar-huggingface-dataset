@@ -97,4 +97,4 @@ La comparativa se basa en los benchmarks publicados, ya que no se dispone de esp
 - Guía de ejecución de DeepSeek-V4 de Unsloth: https://unsloth.ai/docs/models/deepseek-v4
 - Informe técnico (arXiv): https://arxiv.org/abs/2606.19348
 - Repositorio de DeepSeek-V4-Flash-0731 GGUF: https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF
-- Página de DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Página de DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai

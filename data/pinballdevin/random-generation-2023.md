@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `pinballdevin/random-generation-2023` es un repositorio publicado en HuggingFace por el usuario pinballdevin que contiene una implementación propia y de escala reducida de la arquitectura Blip (Bootstrapping Language-Image Pre-training) orientada a tareas de generación. El artefacto principal es un script (`run.py`) junto con una configuración explícita (`config.json`), unos argumentos de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors.
+El modelo `pinballdevin/random-generation-2023` es un repositorio publicado en Hugging Face por el usuario pinballdevin que contiene una implementación propia y de escala reducida de la arquitectura Blip (Bootstrapping Language-Image Pre-training) orientada a tareas de generación. El artefacto principal es un script (`run.py`) junto con una configuración explícita (`config.json`), unos argumentos de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors.
 
 Se trata, segun la propia model card, de un punto de partida reproducible y no de un modelo entrenado: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no se presenta como un modelo con resultados de benchmark. El dato real extraido del fichero safetensors indica 49.600 parámetros totales (aproximadamente 0,05 millones), una cifra muy alejada de lo que sugiere la etiqueta de escala "huge" declarada en la configuración de arquitectura.
 
@@ -72,9 +72,9 @@ La comparacion se establece con la familia de arquitectura Blip, teniendo en cue
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pinballdevin/random-generation-2023 | 49.600 | no disponible | ninguno declarado | BSD-3-Clause | HuggingFace |
-| BLIP (referencia de la familia) | cientos de millones | no disponible en esta ficha | publicado por sus autores | no disponible en esta ficha | HuggingFace |
-| BLIP-2 (referencia de la familia) | miles de millones | no disponible en esta ficha | publicado por sus autores | no disponible en esta ficha | HuggingFace |
+| pinballdevin/random-generation-2023 | 49.600 | no disponible | ninguno declarado | BSD-3-Clause | Hugging Face |
+| BLIP (referencia de la familia) | cientos de millones | no disponible en esta ficha | publicado por sus autores | no disponible en esta ficha | Hugging Face |
+| BLIP-2 (referencia de la familia) | miles de millones | no disponible en esta ficha | publicado por sus autores | no disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de rendimiento de los modelos de referencia dentro de la informacion proporcionada, por lo que la comparacion cuantitativa queda como no disponible.
 
@@ -91,5 +91,5 @@ No se dispone de datos de rendimiento de los modelos de referencia dentro de la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pinballdevin/random-generation-2023
+- Hugging Face: https://huggingface.co/pinballdevin/random-generation-2023
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la informacion disponible.

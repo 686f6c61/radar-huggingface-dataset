@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rebeccathebaddie0/jay.model` es un repositorio alojado en HuggingFace por el usuario `rebeccathebaddie0`. En el momento de la consulta no cuenta con model card sustantiva: el README se limita a una cabecera YAML con `license: unknown` y no incluye ninguna descripcion del modelo, de su arquitectura ni de su proposito. El repositorio acumula 0 descargas y 0 likes, y su tamano es de 0,1 GB.
+`rebeccathebaddie0/jay.model` es un repositorio alojado en Hugging Face por el usuario `rebeccathebaddie0`. En el momento de la consulta no cuenta con model card sustantiva: el README se limita a una cabecera YAML con `license: unknown` y no incluye ninguna descripcion del modelo, de su arquitectura ni de su proposito. El repositorio acumula 0 descargas y 0 likes, y su tamano es de 0,1 GB.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados, datos de entrenamiento ni proceso de alineacion. Tampoco se ha declarado un pipeline de inferencia (text-generation, text-to-image, etc.), por lo que no es posible determinar a que categoria funcional pertenece el artefacto.
 
@@ -68,7 +68,7 @@ No disponible. Al no conocerse la arquitectura, el tamano, la tarea ni la licenc
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `rebeccathebaddie0/jay.model` | no disponible | no disponible | desconocida | repositorio HuggingFace sin documentar |
+| `rebeccathebaddie0/jay.model` | no disponible | no disponible | desconocida | repositorio Hugging Face sin documentar |
 | Alternativas comparables | no disponibles | no disponibles | no disponibles | no disponibles |
 
 ## Limitaciones y advertencias
@@ -85,6 +85,6 @@ No disponible. Al no conocerse la arquitectura, el tamano, la tarea ni la licenc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rebeccathebaddie0/jay.model
+- Hugging Face: https://huggingface.co/rebeccathebaddie0/jay.model
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos relacionados con este modelo. Los resultados devueltos por la busqueda web corresponden a sitios neerlandeses sobre seguros de asistencia juridica (Rabobank, Interpolis) y no guardan ninguna relacion con el repositorio, por lo que se omiten como fuentes no relevantes.

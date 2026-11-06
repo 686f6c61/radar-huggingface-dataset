@@ -72,8 +72,8 @@ La model card no publica los valores equivalentes de `meta-llama/Llama-3.1-8B-In
 
 | Modelo | Parametros | Contexto | Metricas de seguridad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l31_swift_remove40` | 8,03 B declarados; 60,03% de fracción densa según el autor | No disponible | AdvBench ASR 0,5692; StrongREJECT ASR 0,4185; sobre-rechazo 0,0656; WikiText-2 ppl 22,5577 | Llama 3.1 Community License | HuggingFace, 0 descargas, 0 likes |
-| `meta-llama/Llama-3.1-8B-Instruct` (base sin comprimir) | 8,03 B | 128.000 tokens | No disponible en la información proporcionada | Llama 3.1 Community License | HuggingFace, ampliamente distribuido |
+| `Jeesup/svd-safety-l31_swift_remove40` | 8,03 B declarados; 60,03% de fracción densa según el autor | No disponible | AdvBench ASR 0,5692; StrongREJECT ASR 0,4185; sobre-rechazo 0,0656; WikiText-2 ppl 22,5577 | Llama 3.1 Community License | Hugging Face, 0 descargas, 0 likes |
+| `meta-llama/Llama-3.1-8B-Instruct` (base sin comprimir) | 8,03 B | 128.000 tokens | No disponible en la información proporcionada | Llama 3.1 Community License | Hugging Face, ampliamente distribuido |
 | Otras celdas de la rejilla del mismo autor | No disponible | No disponible | No disponible | Llama 3.1 Community License | No disponible |
 
 No se han identificado en la información proporcionada otros modelos comparables de compresión SVD orientados a seguridad, ni checkpoints de poda con métricas equivalentes. La comparativa cuantitativa con el modelo base no puede cerrarse porque el autor no publica sus valores de AdvBench, StrongREJECT, WildGuard ni WikiText-2.
@@ -93,7 +93,7 @@ No se han identificado en la información proporcionada otros modelos comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_swift_remove40
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_swift_remove40
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 Community License y `USE_POLICY.md`: incluidos en el propio repositorio del modelo.
 - Otros enlaces (papers, blogs, repositorios o demos): no disponibles. La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo ni sobre SVD-LLM; los resultados obtenidos correspondían a páginas comerciales de pases turísticos de Barcelona (Go City) sin relación alguna con el contenido solicitado.

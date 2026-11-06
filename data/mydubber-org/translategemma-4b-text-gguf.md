@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mydubber-org/translategemma-4b-text-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mydubber-org/translategemma-4b-text-GGUF
 - Modelo base: https://huggingface.co/google/translategemma-4b-it
 - Script de construcción: https://github.com/vladbehash/dubber/blob/main/libs/dub-pipeline/scripts/build_translategemma.py
 - Dataset de calibración: https://huggingface.co/datasets/google/wmt24pp

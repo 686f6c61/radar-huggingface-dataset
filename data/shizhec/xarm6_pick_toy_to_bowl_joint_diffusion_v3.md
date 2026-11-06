@@ -26,8 +26,8 @@ Su relevancia es acotada pero clara: sirve como ejemplo reproducible de Diffusio
 | Entrada `observation.images.front` | VISUAL, forma `(3, 480, 640)` |
 | Entrada `observation.images.wrist` | VISUAL, forma `(3, 480, 640)` |
 | Salida `action` | ACTION, forma `(7,)` |
-| Descargas / likes en HuggingFace | 0 / 0 |
-| Fecha de creacion (segun HuggingFace) | 2026-09-12 |
+| Descargas / likes en Hugging Face | 0 / 0 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-12 |
 | Version de LeRobot | 0.6.1 |
 
 ## Arquitectura y entrenamiento
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Categoria | Parametros | Contexto / observacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xarm6_pick_toy_to_bowl_joint_diffusion_v3 | Diffusion Policy para manipulacion (LeRobot) | 91,5 M | 2 camaras 480x640 + estado 7D; accion 7D | apache-2.0 | HuggingFace, 0 descargas |
+| xarm6_pick_toy_to_bowl_joint_diffusion_v3 | Diffusion Policy para manipulacion (LeRobot) | 91,5 M | 2 camaras 480x640 + estado 7D; accion 7D | apache-2.0 | Hugging Face, 0 descargas |
 | ACT (Action Chunking with Transformers) | Politica de imitacion por chunking de acciones | no disponible en la informacion proporcionada | tipicamente camaras + estado del robot | no disponible en la informacion proporcionada | implementada en LeRobot |
-| SmolVLA | Vision-language-action para robotica | no disponible en la informacion proporcionada | vision + lenguaje + estado | no disponible en la informacion proporcionada | LeRobot / HuggingFace |
-| Otros checkpoints de Diffusion Policy en LeRobot | Diffusion Policy | variable | variable segun tarea | variable | HuggingFace |
+| SmolVLA | Vision-language-action para robotica | no disponible en la informacion proporcionada | vision + lenguaje + estado | no disponible en la informacion proporcionada | LeRobot / Hugging Face |
+| Otros checkpoints de Diffusion Policy en LeRobot | Diffusion Policy | variable | variable segun tarea | variable | Hugging Face |
 
 La comparacion cuantitativa no es posible con la informacion disponible: no hay benchmarks publicados de este checkpoint y no se dispone de especificaciones verificadas de las alternativas en el material proporcionado. La diferencia cualitativa principal es que este modelo cubre una unica tarea y un unico tipo de robot, mientras que las alternativas tipo VLA estan disenadas para generalizar a multiples tareas mediante instrucciones en lenguaje natural.
 
@@ -97,7 +97,7 @@ La comparacion cuantitativa no es posible con la informacion disponible: no hay 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shizhec/xarm6_pick_toy_to_bowl_joint_diffusion_v3
+- Modelo en Hugging Face: https://huggingface.co/Shizhec/xarm6_pick_toy_to_bowl_joint_diffusion_v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shizhec/xarm6_pick_toy_to_bowl_joint_v2
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Shizhec/xarm6_pick_toy_to_bowl_joint_v2
 - Articulo de Diffusion Policy: https://huggingface.co/papers/2303.04137

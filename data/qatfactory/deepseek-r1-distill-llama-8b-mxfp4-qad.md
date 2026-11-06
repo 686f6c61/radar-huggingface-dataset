@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-R1-Distill-Llama-8B-MXFP4-QAD es una version cuantizada del modelo DeepSeek-R1-Distill-Llama-8B, publicada por el usuario qatfactory en HuggingFace. Se trata de un proceso de cuantizacion MXFP4 (formato de punto flotante de 4 bits con escalas compartidas por bloques, definido en la especificacion OCP MX) aplicado mediante quantization-aware training (QAT), segun indican las etiquetas del repositorio. El modelo base es el distill de DeepSeek-R1 sobre Llama-3.1-8B, desarrollado por DeepSeek y disenado para razonamiento con cadenas de pensamiento largas.
+DeepSeek-R1-Distill-Llama-8B-MXFP4-QAD es una version cuantizada del modelo DeepSeek-R1-Distill-Llama-8B, publicada por el usuario qatfactory en Hugging Face. Se trata de un proceso de cuantizacion MXFP4 (formato de punto flotante de 4 bits con escalas compartidas por bloques, definido en la especificacion OCP MX) aplicado mediante quantization-aware training (QAT), segun indican las etiquetas del repositorio. El modelo base es el distill de DeepSeek-R1 sobre Llama-3.1-8B, desarrollado por DeepSeek y disenado para razonamiento con cadenas de pensamiento largas.
 
 El resultado es un checkpoint de aproximadamente 8.030 millones de parametros almacenado en safetensors bajo el formato compressed-tensors, pensado para su despliegue con vLLM. El repositorio ocupa 5,8 GB, lo que supone una reduccion notable frente a los ~16 GB de pesos en BF16 del modelo original, y permite ejecutar el modelo en GPUs de consumo con menos VRAM.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-R1-Distill-Llama-8B-MXFP4-QAD (este) | 8,03B | no disponible | MXFP4 + QAT | MIT | Gated en HuggingFace |
+| DeepSeek-R1-Distill-Llama-8B-MXFP4-QAD (este) | 8,03B | no disponible | MXFP4 + QAT | MIT | Gated en Hugging Face |
 | DeepSeek-R1-Distill-Llama-8B (original) | 8,03B | 131.072 tokens (segun model card) | BF16 | MIT | Publico |
 | Llama-3.1-8B-Instruct | 8,03B | 131.072 tokens | BF16, GPTQ, AWQ, GGUF | Llama 3.1 Community License | Publico |
 | Qwen2.5-7B-Instruct | 7,6B | 131.072 tokens | BF16, GPTQ, AWQ, GGUF | Apache 2.0 | Publico |
@@ -71,7 +71,7 @@ La comparativa se limita a parametros y disponibilidad; no hay datos de rendimie
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Sin evaluacion publicada: no hay benchmarks ni mediciones de perdida de calidad tras la cuantizacion MXFP4, por lo que el impacto en tareas de razonamiento es desconocido.
 - Ambiguedad en la etiqueta de bits: los tags indican "8-bit" mientras que el nombre y el formato apuntan a MXFP4 (4 bits); conviene verificar la configuracion real de compressed-tensors antes de desplegar.
 - Riesgo de alucinacion: inherente al modelo base y potencialmente amplificado por la cuantizacion; las cadenas de razonamiento largas no garantizan correccion factual.
@@ -83,7 +83,7 @@ La comparativa se limita a parametros y disponibilidad; no hay datos de rendimie
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qatfactory/DeepSeek-R1-Distill-Llama-8B-MXFP4-QAD
+- Repositorio Hugging Face: https://huggingface.co/qatfactory/DeepSeek-R1-Distill-Llama-8B-MXFP4-QAD
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
 - Repositorio DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
 - Paper DeepSeek-R1: https://arxiv.org/abs/2501.12948

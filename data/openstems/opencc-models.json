@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "OpenStems/OpenCC-Models",
+  "slug": "openstems-opencc-models",
+  "author": "OpenStems",
+  "url": "https://huggingface.co/OpenStems/OpenCC-Models",
+  "created_at": "2026-11-06T09:10:54.000Z",
+  "updated_at": "2026-11-06T10:45:13.000Z",
+  "license": "per-file-upstream-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "opencc",
+    "automatic-speech-recognition",
+    "translation",
+    "model-resources",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1159876608,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenStems-Models - Hugging Face",
+      "url": "https://huggingface.co/OpenStems/OpenStems-Models",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenStems/OpenStems-Models at main - Hugging Face",
+      "url": "https://huggingface.co/OpenStems/OpenStems-Models/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

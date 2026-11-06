@@ -92,7 +92,7 @@ No se dispone de información suficiente para comparar con alternativas concreta
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/killen8/Nanbeige4.3-33B-MLX-4bit
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/killen8/Nanbeige4.3-33B-MLX-4bit
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Librería mlx-lm: no se proporciona enlace en la información disponible
 - Paper, blog o demo del modelo base: no disponible en la información proporcionada

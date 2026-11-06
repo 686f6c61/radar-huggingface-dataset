@@ -2,7 +2,7 @@
 
 ## Resumen
 
-v4lkyr43 es un adaptador LoRA de personalizacion (DreamBooth) para generacion de imagenes a partir de texto, publicado por el usuario throwaway124777 en HuggingFace. No se trata de un modelo completo, sino de pesos de bajo rango que se cargan sobre Krea 2, la familia de modelos de difusion de Krea. El adaptador se entreno sobre el checkpoint krea/Krea-2-Raw y esta pensado para ejecutarse en inferencia sobre krea/Krea-2-Turbo, la variante destilada de 8 pasos de la misma familia.
+v4lkyr43 es un adaptador LoRA de personalizacion (DreamBooth) para generacion de imagenes a partir de texto, publicado por el usuario throwaway124777 en Hugging Face. No se trata de un modelo completo, sino de pesos de bajo rango que se cargan sobre Krea 2, la familia de modelos de difusion de Krea. El adaptador se entreno sobre el checkpoint krea/Krea-2-Raw y esta pensado para ejecutarse en inferencia sobre krea/Krea-2-Turbo, la variante destilada de 8 pasos de la misma familia.
 
 Su proposito es inyectar un concepto, estilo o sujeto concreto activado mediante la palabra clave `v4lkyr43`, de forma que el modelo base reproduzca ese concepto en nuevas imagenes. El repositorio ocupa 1,0 GB, un tamano notablemente superior al de un LoRA tipico de difusion, lo que sugiere un rango y un conjunto de modulos adaptados amplios, aunque el desglose exacto no esta documentado por el autor.
 
@@ -75,9 +75,9 @@ No se han identificado en la informacion proporcionada otros adaptadores LoRA pu
 
 | Modelo | Tipo | Funcion | Licencia | Disponibilidad | Parametros |
 |---|---|---|---|---|---|
-| throwaway124777/v4lkyr43 | LoRA DreamBooth | Adaptador de concepto sobre Turbo | Apache 2.0 | HuggingFace, 0 descargas, 0 likes | No disponible (repositorio de 1,0 GB) |
-| krea/Krea-2-Raw | Checkpoint completo no destilado | Entrenamiento y fine-tuning | No disponible | HuggingFace (krea/Krea-2-Raw) | No disponible |
-| krea/Krea-2-Turbo | Checkpoint completo destilado | Inferencia rapida en 8 pasos | No disponible | HuggingFace (krea/Krea-2-Turbo) | No disponible |
+| throwaway124777/v4lkyr43 | LoRA DreamBooth | Adaptador de concepto sobre Turbo | Apache 2.0 | Hugging Face, 0 descargas, 0 likes | No disponible (repositorio de 1,0 GB) |
+| krea/Krea-2-Raw | Checkpoint completo no destilado | Entrenamiento y fine-tuning | No disponible | Hugging Face (krea/Krea-2-Raw) | No disponible |
+| krea/Krea-2-Turbo | Checkpoint completo destilado | Inferencia rapida en 8 pasos | No disponible | Hugging Face (krea/Krea-2-Turbo) | No disponible |
 
 Comparacion con LoRA de otras familias (SDXL, FLUX.1): no disponible. Seria metodologicamente incorrecta sin datos de rendimiento del modelo base Krea 2 y sin metricas del adaptador.
 
@@ -96,7 +96,7 @@ Comparacion con LoRA de otras familias (SDXL, FLUX.1): no disponible. Seria meto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/throwaway124777/v4lkyr43
+- Modelo en Hugging Face: https://huggingface.co/throwaway124777/v4lkyr43
 - Archivos y versiones del LoRA: https://huggingface.co/throwaway124777/v4lkyr43/tree/main
 - Modelo base para inferencia: https://huggingface.co/krea/Krea-2-Turbo
 - Modelo base para entrenamiento: https://huggingface.co/krea/Krea-2-Raw

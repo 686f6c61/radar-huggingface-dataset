@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-028` es un ajuste fino del modelo base `Qwen/Qwen3-4B-Instruct-2507`, publicado por el usuario HYU-NLP-EVAL en HuggingFace. Se trata de un checkpoint intermedio (paso 28) de un experimento denominado `261016_medicine_static_pilot`, con semilla 11, orientado aparentemente al dominio médico, aunque la model card no detalla el objetivo ni la metodología del experimento.
+El modelo `HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-028` es un ajuste fino del modelo base `Qwen/Qwen3-4B-Instruct-2507`, publicado por el usuario HYU-NLP-EVAL en Hugging Face. Se trata de un checkpoint intermedio (paso 28) de un experimento denominado `261016_medicine_static_pilot`, con semilla 11, orientado aparentemente al dominio médico, aunque la model card no detalla el objetivo ni la metodología del experimento.
 
 El repositorio contiene una exportación en formato Transformers BF16 en la raíz y, en el directorio `original_checkpoint/`, los ficheros nativos de checkpoint veRL/FSDP junto con sus metadatos. La presencia de checkpoints veRL/FSDP sugiere un entrenamiento con refuerzo (RL) o un ajuste supervisado ejecutado dentro del ecosistema veRL, pero la model card no confirma el algoritmo, el dataset ni el número de tokens utilizados.
 
@@ -45,7 +45,7 @@ Respecto al entrenamiento, los únicos datos disponibles son los metadatos del e
 - Generación de texto asistida en entornos de baja capacidad de cómputo: con cuantización a 4 bits el modelo puede ejecutarse en GPUs de consumo, lo que facilita pruebas locales de generación de texto.
 - Prototipado de asistentes conversacionales: gracias al pipeline `text-generation` y a la etiqueta `conversational`, sirve para construir demos de diálogo, siempre con validación manual de las respuestas.
 - Base para ajuste específico adicional: al ser un modelo de 4B con licencia Apache 2.0, puede emplearse como punto de partida para nuevos ajustes supervisados o con preferencias en dominios concretos.
-- Integración en pipelines de HuggingFace Transformers y TGI: las etiquetas `transformers` y `text-generation-inference` indican compatibilidad con el ecosistema estándar de despliegue.
+- Integración en pipelines de Hugging Face Transformers y TGI: las etiquetas `transformers` y `text-generation-inference` indican compatibilidad con el ecosistema estándar de despliegue.
 
 ## Benchmarks y rendimiento
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen3-4b-medicine-static-pilot-261016-step-028 | 4,02 B | No disponible | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | HuggingFace |
+| qwen3-4b-medicine-static-pilot-261016-step-028 | 4,02 B | No disponible | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | Hugging Face |
 | Otras alternativas de ~4B | No disponibles | No disponibles | No disponibles | No disponibles |
 
 No se dispone de datos de rendimiento ni de especificaciones completas del modelo base en la información proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable con alternativas de la misma categoría.
@@ -86,5 +86,5 @@ No se dispone de datos de rendimiento ni de especificaciones completas del model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-028
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-028
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

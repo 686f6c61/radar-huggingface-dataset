@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Elephant-1 FP8 (W8A8) es una cuantización comunitaria, no oficial, del modelo base baselabs/elephant-1, publicada por el usuario marcelz en HuggingFace. Su objetivo es permitir que este modelo de decisión y clasificación (decision model) funcione en tarjetas gráficas de consumo con 12 GB de VRAM, algo que la versión original en BF16 no permite: los pesos FP8 ocupan 6,5 GiB en GPU frente a los 12,9 GiB de la versión original. El checkpoint está pensado para usarse con el motor de decisiones OneJev (librería `qev`), que resuelve tareas de enrutamiento, clasificación y calibración sobre texto.
+Elephant-1 FP8 (W8A8) es una cuantización comunitaria, no oficial, del modelo base baselabs/elephant-1, publicada por el usuario marcelz en Hugging Face. Su objetivo es permitir que este modelo de decisión y clasificación (decision model) funcione en tarjetas gráficas de consumo con 12 GB de VRAM, algo que la versión original en BF16 no permite: los pesos FP8 ocupan 6,5 GiB en GPU frente a los 12,9 GiB de la versión original. El checkpoint está pensado para usarse con el motor de decisiones OneJev (librería `qev`), que resuelve tareas de enrutamiento, clasificación y calibración sobre texto.
 
 La relevancia de esta versión radica en la creciente necesidad de ejecutar modelos de clasificación y enrutamiento de gran calidad en hardware local, sin depender de APIs externas. Según el autor, la cuantización mantiene el 99,2 % de las respuestas idénticas a la versión BF16 en su conjunto de pruebas, con una latencia mediana de 86 ms por petición en una RTX 5070 Ti. La arquitectura subyacente es un modelo basado en Qwen 3.5 (etiqueta `qwen3_5_text`) con 8.955.228.672 parámetros totales según los metadatos de safetensors.
 
@@ -23,7 +23,7 @@ Es importante señalar que se trata de una cuantización independiente de la com
 
 ## Arquitectura y entrenamiento
 
-El modelo base, baselabs/elephant-1, es un modelo de decisión basado en la arquitectura de Qwen 3.5 (etiqueta `qwen3_5_text` en HuggingFace). La presencia de capas `conv1d` y puertas de recurrencia `in_proj_a/b` sugiere una arquitectura híbrida que combina atención con componentes convolucionales o de recurrencia, similar a otros modelos híbridos transformer-SSM. El checkpoint original incluye una torre de visión, aunque esta cuantización es solo de texto y la elimina.
+El modelo base, baselabs/elephant-1, es un modelo de decisión basado en la arquitectura de Qwen 3.5 (etiqueta `qwen3_5_text` en Hugging Face). La presencia de capas `conv1d` y puertas de recurrencia `in_proj_a/b` sugiere una arquitectura híbrida que combina atención con componentes convolucionales o de recurrencia, similar a otros modelos híbridos transformer-SSM. El checkpoint original incluye una torre de visión, aunque esta cuantización es solo de texto y la elimina.
 
 En cuanto a la cuantización, las proyecciones del decoder se almacenan en FP8 E4M3 con escalas por fila, y las activaciones se cuantizan a FP8 por fila en tiempo de ejecución mediante `torch._scaled_mm`. Los componentes sensibles a la precisión (embedding, normas, `lm_head`, `conv1d` y las puertas de recurrencia) permanecen en BF16. No hay información disponible sobre el proceso de entrenamiento del modelo base (número de tokens, composición del dataset, RLHF/DPO).
 

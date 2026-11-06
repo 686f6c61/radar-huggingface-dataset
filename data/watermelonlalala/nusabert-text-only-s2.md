@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nusabert-text-only-s2 es un modelo de clasificación de texto en indonesio obtenido mediante fine-tuning de LazarusNLP/NusaBERT-base, un encoder BERT preentrenado específicamente para ese idioma. Lo publica el usuario watermelonlalala en HuggingFace y su tarea es la clasificación multietiqueta de contenido dañino: detección de insultos, ataques a la identidad, amenazas o incitación a la violencia, blasfemias u obscenidades y contenido sexualmente explícito. El problema que aborda es la moderación automática de texto en indonesio, un idioma con menos recursos que el inglés en herramientas de safety.
+nusabert-text-only-s2 es un modelo de clasificación de texto en indonesio obtenido mediante fine-tuning de LazarusNLP/NusaBERT-base, un encoder BERT preentrenado específicamente para ese idioma. Lo publica el usuario watermelonlalala en Hugging Face y su tarea es la clasificación multietiqueta de contenido dañino: detección de insultos, ataques a la identidad, amenazas o incitación a la violencia, blasfemias u obscenidades y contenido sexualmente explícito. El problema que aborda es la moderación automática de texto en indonesio, un idioma con menos recursos que el inglés en herramientas de safety.
 
 El modelo tiene 110.645.765 parámetros y un repositorio de 0,4 GB, lo que corresponde a un encoder BERT de tamaño base. La model card indica que los hiperparámetros se ajustaron con Optuna, pero no documenta la composición del dataset, el número de épocas ni las métricas obtenidas. Es un modelo recién publicado (noviembre de 2026 según los metadatos), sin descargas ni likes, por lo que debe considerarse un artefacto experimental más que un componente listo para producción.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nusabert-text-only-s2 | 110,6 M | no disponible | Clasificación multietiqueta de toxicidad (id) | no disponible | HuggingFace, 0 descargas |
-| LazarusNLP/NusaBERT-base | no disponible en la información | no disponible | Encoder base para indonesio (preentrenamiento) | no disponible | HuggingFace |
-| Modelos de toxicidad multilingües tipo XLM-R base | no disponible en la información | no disponible | Clasificación de toxicidad multilingüe | variable según checkpoint | HuggingFace |
+| nusabert-text-only-s2 | 110,6 M | no disponible | Clasificación multietiqueta de toxicidad (id) | no disponible | Hugging Face, 0 descargas |
+| LazarusNLP/NusaBERT-base | no disponible en la información | no disponible | Encoder base para indonesio (preentrenamiento) | no disponible | Hugging Face |
+| Modelos de toxicidad multilingües tipo XLM-R base | no disponible en la información | no disponible | Clasificación de toxicidad multilingüe | variable según checkpoint | Hugging Face |
 
 La comparación cuantitativa con alternativas no es posible con los datos disponibles: no hay métricas publicadas para este checkpoint ni se han proporcionado resultados de los modelos de referencia. La diferencia principal frente a un encoder multilingüe genérico es la especialización lingüística en indonesio que aporta NusaBERT como base.
 
@@ -83,5 +83,5 @@ La comparación cuantitativa con alternativas no es posible con los datos dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/watermelonlalala/nusabert-text-only-s2
+- Modelo en Hugging Face: https://huggingface.co/watermelonlalala/nusabert-text-only-s2
 - Modelo base NusaBERT: https://huggingface.co/LazarusNLP/NusaBERT-base

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Zee-daher/terrain-diffusion-ue5` es un modelo de difusión publicado en HuggingFace bajo licencia MIT, desarrollado por el usuario Zee-daher. Su nombre sugiere una aplicación orientada a la generación de terrenos para Unreal Engine 5, aunque la model card no proporciona detalles adicionales sobre su funcionamiento o propósito exacto. Se distribuye a través de la librería `diffusers` y los pesos están en formato `safetensors`.
+El modelo `Zee-daher/terrain-diffusion-ue5` es un modelo de difusión publicado en Hugging Face bajo licencia MIT, desarrollado por el usuario Zee-daher. Su nombre sugiere una aplicación orientada a la generación de terrenos para Unreal Engine 5, aunque la model card no proporciona detalles adicionales sobre su funcionamiento o propósito exacto. Se distribuye a través de la librería `diffusers` y los pesos están en formato `safetensors`.
 
 Con aproximadamente 61,8 millones de parámetros y un tamaño de repositorio de 0,2 GB, se trata de un modelo relativamente pequeño en comparación con los grandes modelos de difusión actuales. Sin embargo, la falta de documentación técnica, ejemplos de uso o resultados de evaluación impide determinar con precisión sus capacidades y limitaciones. La fecha de creación (agosto de 2026) es posterior a la fecha actual de redacción, lo que sugiere que el modelo es muy reciente o que la fecha podría ser incorrecta.
 
@@ -43,7 +43,7 @@ Al tratarse de un modelo con aproximadamente 61,8 millones de parámetros y un t
 
 - VRAM estimada: para un modelo de este tamaño en precisión FP16, se necesitarían aproximadamente 0,5 GB de VRAM solo para los pesos, pero la inferencia de difusión requiere memoria adicional para las activaciones y el ruido. Se estima que podría funcionar en GPUs con 4-6 GB de VRAM, aunque no hay confirmación.
 - GPU recomendadas: tarjetas como RTX 3060, RTX 4060 o superiores serían suficientes para pruebas, pero no hay datos oficiales.
-- Opciones de despliegue: al usar `diffusers`, se puede integrar con bibliotecas como `diffusers` de HuggingFace, y potencialmente con herramientas como ComfyUI o Automatic1111, aunque no está confirmado.
+- Opciones de despliegue: al usar `diffusers`, se puede integrar con bibliotecas como `diffusers` de Hugging Face, y potencialmente con herramientas como ComfyUI o Automatic1111, aunque no está confirmado.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -60,4 +60,4 @@ No se dispone de información sobre modelos comparables. Dado que no se conocen 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Zee-daher/terrain-diffusion-ue5)
+- [Modelo en Hugging Face](https://huggingface.co/Zee-daher/terrain-diffusion-ue5)

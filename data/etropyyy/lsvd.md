@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LSVD (Loss-Aware Low-Rank Approximation for Efficient Low-Precision Vision-Language Models) es un metodo de compresion de modelos de vision-lenguaje presentado en NeurIPS 2026 por investigadores del SAI Lab de la Universidad de Nueva York (Haiyu Wang, Yutong Wang, Leshu Li, Yihui Ren y Sai Qian Zhang). El repositorio de HuggingFace `Etropyyy/LSVD` no contiene pesos de un modelo generativo, sino los artefactos precalculados de calibracion y los grupos de canales necesarios para reproducir las ejecuciones W8A8 (8 bits en pesos y activaciones) sobre tres modelos LLaVA: LLaVA-v1.5 7B, LLaVA-Next 7B y LLaVA-Next 13B.
+LSVD (Loss-Aware Low-Rank Approximation for Efficient Low-Precision Vision-Language Models) es un metodo de compresion de modelos de vision-lenguaje presentado en NeurIPS 2026 por investigadores del SAI Lab de la Universidad de Nueva York (Haiyu Wang, Yutong Wang, Leshu Li, Yihui Ren y Sai Qian Zhang). El repositorio de Hugging Face `Etropyyy/LSVD` no contiene pesos de un modelo generativo, sino los artefactos precalculados de calibracion y los grupos de canales necesarios para reproducir las ejecuciones W8A8 (8 bits en pesos y activaciones) sobre tres modelos LLaVA: LLaVA-v1.5 7B, LLaVA-Next 7B y LLaVA-Next 13B.
 
 El problema que resuelve es el coste computacional del paso de calibracion, que requiere recolectar activaciones y gradientes sobre el split de entrenamiento de ScienceQA y es la fase mas cara de una ejecucion de cuantizacion. Al publicar las caches de calibracion (factores de Cholesky de covarianzas de entrada Q/K/V, covarianzas de gradientes de salida, informacion de Fisher por cabeza y puntuaciones de importancia para la asignacion de rango entre capas), el repositorio permite saltar ese paso y ejecutar directamente el pipeline de cuantizacion.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre LSVD y estas alternativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Etropyyy/LSVD
+- Repositorio Hugging Face: https://huggingface.co/Etropyyy/LSVD
 - Paper (arXiv): https://arxiv.org/html/2606.00573v2
 - Codigo: https://github.com/SAI-Lab-NYU/LSVD
 - Pagina NeurIPS 2026: https://neurips.cc/virtual/2026/poster/153335

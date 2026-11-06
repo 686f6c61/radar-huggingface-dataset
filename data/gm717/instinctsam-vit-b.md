@@ -4,7 +4,7 @@
 
 InstinctSAM-ViT-B es un modelo de segmentación de imágenes de vocabulario abierto desarrollado por GM717 como parte del proyecto InstinctSAM. Su objetivo es comprimir el modelo Segment Anything Model 3 (SAM3), que cuenta con aproximadamente 850 millones de parámetros, en una versión ligera que conserva las tres rutas de segmentación promptable: texto/concepto, caja y punto. El encoder de visión es un ViT-B aproximadamente 4,7 veces más pequeño que el PE-ViT del profesor (unos 463 millones de parámetros), lo que permite desplegar segmentación de alta calidad en entornos con recursos computacionales limitados.
 
-El modelo se obtiene mediante destilación de conocimiento (knowledge distillation) del SAM3 original, manteniendo la capacidad de segmentación de vocabulario abierto. Está disponible en HuggingFace con acceso restringido (gated) y el repositorio de código se encuentra en GitHub bajo el proyecto InstinctSAM. La fecha de creación es junio de 2026 y la última actualización es de agosto de 2026, por lo que es un desarrollo reciente dentro del ecosistema de segmentación de imágenes.
+El modelo se obtiene mediante destilación de conocimiento (knowledge distillation) del SAM3 original, manteniendo la capacidad de segmentación de vocabulario abierto. Está disponible en Hugging Face con acceso restringido (gated) y el repositorio de código se encuentra en GitHub bajo el proyecto InstinctSAM. La fecha de creación es junio de 2026 y la última actualización es de agosto de 2026, por lo que es un desarrollo reciente dentro del ecosistema de segmentación de imágenes.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ Nota: los datos de SAM 2 se basan en información pública de su ficha técnica,
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo en HuggingFace está marcado como gated, por lo que requiere aceptar las condiciones de licencia antes de descargarlo.
+- Acceso restringido: el modelo en Hugging Face está marcado como gated, por lo que requiere aceptar las condiciones de licencia antes de descargarlo.
 - Licencia ambigua: la ficha de HF indica `sam-license-passthrough`, mientras que el repositorio de GitHub muestra Apache-2.0. Esta discrepancia puede generar incertidumbre sobre los términos de uso comercial. Se recomienda revisar el README y el archivo LICENSE en el repositorio.
 - Sin benchmarks publicados: no existe evidencia pública del rendimiento de segmentación del modelo en comparación con SAM3 o SAM2, por lo que se desconoce si la compresión degrada significativamente la precisión.
 - Sin datos de entrenamiento: no se especifican los datos de entrenamiento ni el proceso de destilación en detalle, lo que dificulta la reproducción y la evaluación de sesgos.
@@ -76,7 +76,7 @@ Nota: los datos de SAM 2 se basan en información pública de su ficha técnica,
 
 ## Enlaces
 
-- HuggingFace: [GM717/InstinctSAM-ViT-B](https://huggingface.co/GM717/InstinctSAM-ViT-B)
+- Hugging Face: [GM717/InstinctSAM-ViT-B](https://huggingface.co/GM717/InstinctSAM-ViT-B)
 - Repositorio GitHub: [william-Dic/InstinctSAM](https://github.com/william-Dic/InstinctSAM)
 - README del repositorio: [README.md](https://github.com/william-Dic/InstinctSAM/blob/main/README.md)
 - Documento de destilación: [docs/CONCEPT_DISTILL.md](https://github.com/william-Dic/InstinctSAM/blob/main/docs/CONCEPT_DISTILL.md)

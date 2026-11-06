@@ -83,7 +83,7 @@ Referencia del modelo objetivo: `ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit`, 35B tot
 ## Limitaciones y advertencias
 
 - No es un modelo autonomo: no puede responder prompts por si mismo ni se puede usar sin el objetivo `Ornith-1.5-35B-A3B-MLX-4bit` y sin el motor RichEngine.
-- Dependencia de codigo personalizado (`custom_code`, `DFlash2DraftModel`, nucleo `draft_conv_h2048`): no funciona en stacks estandar de HuggingFace Transformers, vLLM o llama.cpp.
+- Dependencia de codigo personalizado (`custom_code`, `DFlash2DraftModel`, nucleo `draft_conv_h2048`): no funciona en stacks estandar de Hugging Face Transformers, vLLM o llama.cpp.
 - Naturaleza del checkpoint: al ser un injerto "no-op" con convoluciones identidad, el tronco no aporta capacidad adicional; el rendimiento depende casi por completo del selector entrenado con solo 256 muestras, lo que puede reducir la generalizacion fuera de la distribucion de `opencode_sim`.
 - Sesgos y riesgo de alucinacion: no evaluables en el borrador; heredados del modelo objetivo, sobre el que no se aporta informacion.
 - Idiomas: no declarados. El rendimiento del borrador puede degradarse en idiomas distintos del castellano/ingles si el objetivo no esta bien cubierto, ya que el selector se entreno sobre caracteristicas de ese objetivo concreto.
@@ -94,7 +94,7 @@ Referencia del modelo objetivo: `ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit`, 35B tot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/resolvo-cloud/Ornith-1.5-35B-A3B-DFlash2
+- Modelo en Hugging Face: https://huggingface.co/resolvo-cloud/Ornith-1.5-35B-A3B-DFlash2
 - Modelo objetivo declarado en la card: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit
 - Borrador de origen (DFlashV1): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-DFlash
 - Borrador DFlash2 entrenado en bf16 citado en la comparativa: https://huggingface.co/jzinno/Ornith-1.5-35B-A3B-DFlash2

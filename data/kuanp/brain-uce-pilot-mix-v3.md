@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Mezcla de datos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| brain-uce-pilot-mix-v3 | 1.393.937.921 (28.905.985 entrenados) | 2.048 tokens génicos | data mix v3: 67,9 % cerebro; humano 59,65 %, ratón 23,12 % | other (sin elegir) | HuggingFace, 0 descargas, 0 likes |
-| KuanP/brain-uce-pilot-mix-v2 (modelo hermano) | misma arquitectura y mismo corpus | 2.048 tokens génicos | muestreo uniforme: 43,1 % cerebro; humano 74,3 %, ratón 18,9 % | no disponible (definida como other en v3) | HuggingFace |
+| brain-uce-pilot-mix-v3 | 1.393.937.921 (28.905.985 entrenados) | 2.048 tokens génicos | data mix v3: 67,9 % cerebro; humano 59,65 %, ratón 23,12 % | other (sin elegir) | Hugging Face, 0 descargas, 0 likes |
+| KuanP/brain-uce-pilot-mix-v2 (modelo hermano) | misma arquitectura y mismo corpus | 2.048 tokens génicos | muestreo uniforme: 43,1 % cerebro; humano 74,3 %, ratón 18,9 % | no disponible (definida como other en v3) | Hugging Face |
 | Otros modelos fundacionales de célula única (UCE, scGPT, Geneformer y similares) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación documentada es la del modelo hermano v2, entrenado sobre el mismo corpus con el mismo número de muestras y muestreo uniforme, lo que aísla el efecto de la mezcla diseñada. No se dispone de datos de rendimiento que permitan comparar numéricamente con otros modelos fundacionales de célula única.
@@ -97,7 +97,7 @@ La única comparación documentada es la del modelo hermano v2, entrenado sobre 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KuanP/brain-uce-pilot-mix-v3
+- Modelo en Hugging Face: https://huggingface.co/KuanP/brain-uce-pilot-mix-v3
 - Modelo hermano con muestreo uniforme: https://huggingface.co/KuanP/brain-uce-pilot-mix-v2
 - Código de entrenamiento: repositorio `uce-training-suite`, rama `ucsc-brain`, commit `be8b45db96a535f0d82703f73443b6574ad4021d` (URL no disponible en la información proporcionada)
 - Biblioteca declarada: `uce_suite` (URL no disponible en la información proporcionada)

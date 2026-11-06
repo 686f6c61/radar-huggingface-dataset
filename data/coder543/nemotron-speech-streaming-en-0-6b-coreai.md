@@ -99,7 +99,7 @@ La comparación con FluidAudio es únicamente de velocidad; la model card lo des
 
 ## Enlaces
 
-- HuggingFace del bundle: https://huggingface.co/coder543/nemotron-speech-streaming-en-0.6b-coreai
+- Hugging Face del bundle: https://huggingface.co/coder543/nemotron-speech-streaming-en-0.6b-coreai
 - Modelo base NVIDIA: https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b
 - Revisión fijada del modelo base: https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b/tree/ebe59e5a817142986528bbbee5dba8db7b38ed50
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/

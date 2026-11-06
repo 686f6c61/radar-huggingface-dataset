@@ -78,7 +78,7 @@ No se dispone de datos comparativos directos en la información proporcionada. E
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/SevdanurGenc/Lesion-Detection-in-Breast-Ultrasound-Images-with-YOLOv8)
+- [Modelo en Hugging Face](https://huggingface.co/SevdanurGenc/Lesion-Detection-in-Breast-Ultrasound-Images-with-YOLOv8)
 - DOI del repositorio: 10.57967/hf/10143
 - Dataset BUSI (artículo original): W. Al-Dhabyani et al., "Dataset of breast ultrasound images," *Data in Brief*, 28:104863, 2020. https://doi.org/10.1016/j.dib.2019.104863
 - Manuscrito asociado (pendiente de publicación): *"YOLOv8-Based Automatic Lesion Detection in Breast Ultrasound Images: A Reproducible Evaluation on a Small and Imbalanced Dataset"* (Oğuz & Genç).

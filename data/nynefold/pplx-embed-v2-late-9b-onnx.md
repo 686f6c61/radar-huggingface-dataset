@@ -87,10 +87,10 @@ Comparativa de configuraciones de recuperación en FreshRet Small (nDCG@10):
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pplx-embed-v2-late-9b-ONNX (esta ficha) | 9B | 1.024 consulta / 4.096 documento | Late-interaction ONNX cuantizado | MIT | HuggingFace |
-| pplx-embed-v2-late-0.6b-ONNX | 0,6B | no disponible | Late-interaction ONNX cuantizado | MIT | HuggingFace |
-| pplx-embed-v2-late-9b (original) | 9B | 1.024 / 4.096 | Late-interaction FP32 | MIT | HuggingFace |
-| pplx-embed-v1 + zerank-1-small | no disponible | no disponible | Embedder + reranker | no disponible | HuggingFace |
+| pplx-embed-v2-late-9b-ONNX (esta ficha) | 9B | 1.024 consulta / 4.096 documento | Late-interaction ONNX cuantizado | MIT | Hugging Face |
+| pplx-embed-v2-late-0.6b-ONNX | 0,6B | no disponible | Late-interaction ONNX cuantizado | MIT | Hugging Face |
+| pplx-embed-v2-late-9b (original) | 9B | 1.024 / 4.096 | Late-interaction FP32 | MIT | Hugging Face |
+| pplx-embed-v1 + zerank-1-small | no disponible | no disponible | Embedder + reranker | no disponible | Hugging Face |
 
 La comparación de calidad entre estas configuraciones está en la tabla de benchmarks: la pareja 0,6B/9B alcanza 0,835 nDCG@10 y la configuración con reranker 0,880, frente a 0,870 del pipeline pplx-embed-v1 con reranker. No se dispone de datos de otros retrievers de interacción tardía de la misma categoría en la información proporcionada.
 
@@ -109,7 +109,7 @@ La comparación de calidad entre estas configuraciones está en la tabla de benc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nynefold/pplx-embed-v2-late-9b-ONNX
+- Modelo en Hugging Face: https://huggingface.co/nynefold/pplx-embed-v2-late-9b-ONNX
 - Modelo base: https://huggingface.co/perplexity-ai/pplx-embed-v2-late-9b
 - Modelo hermano 0.6B ONNX: https://huggingface.co/nynefold/pplx-embed-v2-late-0.6b-ONNX
 - Informe de resultados del autor: https://huggingface.co/nynefold/retrieval-quant/blob/main/pplx-embed-v2-late.md

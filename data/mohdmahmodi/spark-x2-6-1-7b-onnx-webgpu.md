@@ -40,7 +40,7 @@ Los detalles del entrenamiento del modelo base (numero de tokens, composicion de
 ## Casos de uso
 
 - Chatbots privados en el navegador: al ejecutarse integramente en el cliente, los datos del usuario nunca salen del dispositivo, ideal para asistentes que manejan informacion sensible.
-- Demos y prototipos sin backend: un Space de HuggingFace permite probar el modelo sin desplegar servidores GPU, reduciendo el coste de validar ideas de producto.
+- Demos y prototipos sin backend: un Space de Hugging Face permite probar el modelo sin desplegar servidores GPU, reduciendo el coste de validar ideas de producto.
 - Function calling en aplicaciones web: con soporte de BFCL v3, puede integrarse en interfaces de agente que invocan herramientas del navegador (busquedas, APIs locales, manipulacion del DOM).
 - Asistentes offline (PWA): combinado con service workers y cache de pesos, permite aplicaciones de IA funcionales sin conexion tras la primera carga.
 - Procesamiento de documentos de longitud media: la ventana de contexto validada de 16k tokens permite resumir o consultar documentos largos localmente, con recuperacion 12/12 en pruebas de aguja en pajar.
@@ -70,7 +70,7 @@ Rendimiento (Chrome, Windows 11, NVIDIA RTX 3090 Ti): unos 105 tokens/segundo de
 - Probado en NVIDIA RTX 3090 Ti (105 tok/s); GPUs integradas modernas deberian funcionar con menor throughput (cifras no disponibles)
 - No requiere servidor ni VRAM dedicada: el modelo se ejecuta en la GPU del navegador
 - Alternativa en CPU mediante onnxruntime nativo (velocidades no disponibles)
-- Despliegue: onnxruntime-web 1.31.0-dev.20260918 o superior, Transformers.js 4.3, o el Space de demostracion de HuggingFace
+- Despliegue: onnxruntime-web 1.31.0-dev.20260918 o superior, Transformers.js 4.3, o el Space de demostracion de Hugging Face
 - No aplica vLLM, TGI, llama.cpp ni Ollama al ser formato ONNX para web (no hay GGUF)
 
 ## Comparativa con modelos similares
@@ -100,7 +100,7 @@ No hay datos de benchmarks comparativos directos entre estos modelos en la infor
 - Modelo ONNX: https://huggingface.co/mohdmahmodi/Spark-X2.6-1.7B-ONNX-WebGPU
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-1.7B
 - Checkpoint INT4 oficial: https://huggingface.co/XHToken/Spark-X2.6-1.7B-INT4
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/mohdmahmodi/Spark-X2.6-1.7B-WebGPU
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/mohdmahmodi/Spark-X2.6-1.7B-WebGPU
 - Codigo fuente e informe de validacion: https://github.com/mohdmahmodi/Spark-X2.6-1.7B-onnx-webgpu
 - Informe de validacion detallado: https://github.com/mohdmahmodi/Spark-X2.6-1.7B-onnx-webgpu/blob/main/docs/VALIDATION.md
 - PR de onnxruntime (#33760): https://github.com/microsoft/onnxruntime/pull/33760

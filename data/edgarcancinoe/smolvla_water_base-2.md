@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smolvla_water_base-2 | 450.046.176 | No aplica (politica VLA) | Sin evaluacion publicada | Apache-2.0 | HuggingFace, ecosistema LeRobot |
-| lerobot/smolvla_base (modelo base) | No disponible en la informacion proporcionada | No aplica | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| smolvla_water_base-2 | 450.046.176 | No aplica (politica VLA) | Sin evaluacion publicada | Apache-2.0 | Hugging Face, ecosistema LeRobot |
+| lerobot/smolvla_base (modelo base) | No disponible en la informacion proporcionada | No aplica | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Otras politicas VLA de la misma categoria (por ejemplo OpenVLA, pi0, pi0.5, RDT) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 Los nombres de la tercera fila se citan unicamente como contexto de categoria; no se dispone de sus especificaciones verificadas en la informacion proporcionada, por lo que no se comparan cifras.
@@ -87,7 +87,7 @@ Los nombres de la tercera fila se citan unicamente como contexto de categoria; n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edgarcancinoe/smolvla_water_base-2
+- Modelo en Hugging Face: https://huggingface.co/edgarcancinoe/smolvla_water_base-2
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844 (arXiv:2506.01844)
 - Dataset de entrenamiento: https://huggingface.co/datasets/edgarcancinoe/water_pour

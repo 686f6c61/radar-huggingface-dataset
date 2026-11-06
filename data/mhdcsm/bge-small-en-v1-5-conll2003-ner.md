@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bge-small-en-v1.5-conll2003-ner es un modelo de clasificacion de tokens (token classification) especializado en reconocimiento de entidades nombradas (NER), publicado por el usuario MHDCSM en HuggingFace. Se trata de un ajuste fino supervisado del modelo de embeddings BAAI/bge-small-en-v1.5, un encoder transformer de tipo BERT con 33.215.625 parametros (aproximadamente 33,2 millones), lo que lo situa en la gama "small" y lo hace apto para inferencia en CPU y GPU de consumo.
+bge-small-en-v1.5-conll2003-ner es un modelo de clasificacion de tokens (token classification) especializado en reconocimiento de entidades nombradas (NER), publicado por el usuario MHDCSM en Hugging Face. Se trata de un ajuste fino supervisado del modelo de embeddings BAAI/bge-small-en-v1.5, un encoder transformer de tipo BERT con 33.215.625 parametros (aproximadamente 33,2 millones), lo que lo situa en la gama "small" y lo hace apto para inferencia en CPU y GPU de consumo.
 
 El modelo resuelve una tarea concreta: asignar etiquetas de entidad a cada token de un texto de entrada. Por el nombre del repositorio, el ajuste se habria realizado sobre el corpus CoNLL-2003, el estandar de facto para NER en ingles con cuatro categorias (persona, organizacion, localizacion y miscelanea), aunque la model card indica explicitamente que el dataset de entrenamiento es "unknown". No es un modelo generativo: no produce texto libre ni soporta tool calling.
 
@@ -28,7 +28,7 @@ Su relevancia practica es la de un extractor de entidades ligero, rapido y con l
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base: un encoder transformer bidireccional estilo BERT de 33,2 millones de parametros, sobre el que se anade una cabeza de clasificacion de tokens. BAAI/bge-small-en-v1.5 es originalmente un modelo de recuperacion (retrieval) entrenado para producir embeddings de frases; aqui se reutiliza su tronco como extractor de representaciones contextuales y se ajusta para etiquetado secuencial. El entrenamiento se realizo con `Trainer` de HuggingFace, como indica la etiqueta `generated_from_trainer`, y la model card es la generada automaticamente por dicha herramienta.
+La arquitectura es la del modelo base: un encoder transformer bidireccional estilo BERT de 33,2 millones de parametros, sobre el que se anade una cabeza de clasificacion de tokens. BAAI/bge-small-en-v1.5 es originalmente un modelo de recuperacion (retrieval) entrenado para producir embeddings de frases; aqui se reutiliza su tronco como extractor de representaciones contextuales y se ajusta para etiquetado secuencial. El entrenamiento se realizo con `Trainer` de Hugging Face, como indica la etiqueta `generated_from_trainer`, y la model card es la generada automaticamente por dicha herramienta.
 
 Los hiperparametros documentados son: learning rate 5e-05, `train_batch_size` 16, `eval_batch_size` 8, semilla 42, optimizador AdamW fused con betas (0,9, 0,999) y epsilon 1e-08, scheduler lineal con `warmup_steps` equivalente a 0,1 y 10 epochs. El mejor checkpoint segun la perdida de validacion corresponde a la epoch 6 (step 3750), con `Validation Loss` 0,0790. La model card no especifica el dataset de entrenamiento (lo declara como "unknown"), aunque el nombre del repositorio apunta a CoNLL-2003. No se documenta el uso de RLHF, DPO ni ninguna innovacion tecnica adicional; se trata de un fine-tune supervisado convencional de clasificacion de tokens.
 
@@ -81,10 +81,10 @@ En la evaluacion final declarada en la model card: Loss 0,0790, Precision 0,9004
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento NER |
 |---|---|---|---|---|---|
-| MHDCSM/bge-small-en-v1.5-conll2003-ner | 33,2 M | No disponible | MIT | HuggingFace (15 descargas, 0 likes) | F1 0,9153 en validacion propia |
-| BAAI/bge-small-en-v1.5 | 33,2 M | No disponible | MIT | HuggingFace (modelo base, retrieval, no NER) | No aplica (no es NER) |
-| dslim/bert-base-NER | ~110 M | No disponible | No disponible | HuggingFace | No disponible en esta ficha |
-| FacebookAI/roberta-large-ner-english | ~355 M | No disponible | No disponible | HuggingFace | No disponible en esta ficha |
+| MHDCSM/bge-small-en-v1.5-conll2003-ner | 33,2 M | No disponible | MIT | Hugging Face (15 descargas, 0 likes) | F1 0,9153 en validacion propia |
+| BAAI/bge-small-en-v1.5 | 33,2 M | No disponible | MIT | Hugging Face (modelo base, retrieval, no NER) | No aplica (no es NER) |
+| dslim/bert-base-NER | ~110 M | No disponible | No disponible | Hugging Face | No disponible en esta ficha |
+| FacebookAI/roberta-large-ner-english | ~355 M | No disponible | No disponible | Hugging Face | No disponible en esta ficha |
 | Modelos NER de spaCy (p. ej. `en_core_web_trf`) | No disponible | No disponible | No disponible | Paquete pip | No disponible en esta ficha |
 
 La ventaja diferencial del modelo analizado es su tamano reducido (una tercera parte de un BERT-base) con un F1 declarado de 0,9153, aunque esta cifra procede de la propia evaluacion del autor y no de un benchmark independiente. No se dispone de resultados comparables bajo el mismo protocolo de evaluacion para los modelos alternativos.
@@ -104,8 +104,8 @@ La ventaja diferencial del modelo analizado es su tamano reducido (una tercera p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MHDCSM/bge-small-en-v1.5-conll2003-ner
+- Modelo en Hugging Face: https://huggingface.co/MHDCSM/bge-small-en-v1.5-conll2003-ner
 - Modelo base BAAI/bge-small-en-v1.5: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Repositorio del proyecto BGE (FlagEmbedding): https://github.com/FlagOpen/FlagEmbedding
-- Dataset CoNLL-2003 en HuggingFace (referencia del esquema de etiquetas): https://huggingface.co/datasets/eriktks/conll2003
-- Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores corresponden al modelo en HuggingFace y a los recursos de su linaje tecnico.
+- Dataset CoNLL-2003 en Hugging Face (referencia del esquema de etiquetas): https://huggingface.co/datasets/eriktks/conll2003
+- Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores corresponden al modelo en Hugging Face y a los recursos de su linaje tecnico.

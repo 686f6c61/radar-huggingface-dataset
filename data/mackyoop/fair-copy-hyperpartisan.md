@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Mackyoop/fair-copy-hyperpartisan` es un clasificador de texto publicado en HuggingFace por el usuario Mackyoop, construido sobre la arquitectura DistilBERT y etiquetado con la tarea `text-classification`. Por su nombre y por el sufijo "hyperpartisan", apunta a la deteccion de noticias hiperpartidistas (clasificacion binaria de contenido periodistico fuertemente sesgado), aunque la model card del autor es una plantilla autogenerada sin contenido y no confirma la tarea exacta ni el dataset de entrenamiento.
+El modelo `Mackyoop/fair-copy-hyperpartisan` es un clasificador de texto publicado en Hugging Face por el usuario Mackyoop, construido sobre la arquitectura DistilBERT y etiquetado con la tarea `text-classification`. Por su nombre y por el sufijo "hyperpartisan", apunta a la deteccion de noticias hiperpartidistas (clasificacion binaria de contenido periodistico fuertemente sesgado), aunque la model card del autor es una plantilla autogenerada sin contenido y no confirma la tarea exacta ni el dataset de entrenamiento.
 
 El repositorio contiene 66.955.010 parametros en formato safetensors, un tamano coherente con DistilBERT base (6 capas, 12 cabezas de atencion, hidden size 768) mas una cabeza de clasificacion. El repo ocupa 0,3 GB y se publico el 14 de septiembre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, por lo que no existe validacion alguna por parte de la comunidad.
 
@@ -71,7 +71,7 @@ La model card no incluye seccion de evaluacion, y el repositorio no presenta dat
 - GPU recomendadas: cualquier GPU moderna, incluidas RTX 3060, RTX 4090, T4, L4, A10, A100 o H100; el modelo esta muy por debajo de la capacidad de todas ellas.
 - GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo actual e incluso en iGPU con memoria compartida.
 - CPU: viable para inferencia en tiempo real con un unico hilo o pocos hilos, dado el tamano del modelo.
-- Opciones de despliegue: `transformers` con pipeline de clasificacion, `text-embeddings-inference` (marcado como compatible en los tags) y endpoints gestionados de HuggingFace (tag `endpoints_compatible`). `vLLM` y `TGI` estan orientados a modelos generativos, por lo que su aplicacion aqui es marginal. `llama.cpp` u `Ollama` no son la via natural para un encoder de clasificacion sin conversion previa a GGUF.
+- Opciones de despliegue: `transformers` con pipeline de clasificacion, `text-embeddings-inference` (marcado como compatible en los tags) y endpoints gestionados de Hugging Face (tag `endpoints_compatible`). `vLLM` y `TGI` estan orientados a modelos generativos, por lo que su aplicacion aqui es marginal. `llama.cpp` u `Ollama` no son la via natural para un encoder de clasificacion sin conversion previa a GGUF.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas por el autor y no se deben extrapolar cifras sin una prueba propia.
 
 ## Comparativa con modelos similares
@@ -101,7 +101,7 @@ La comparacion relevante no es de rendimiento, puesto que no hay benchmarks del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mackyoop/fair-copy-hyperpartisan
+- Repositorio en Hugging Face: https://huggingface.co/Mackyoop/fair-copy-hyperpartisan
 - Paper citado en los tags y en la plantilla de la model card (calculadora de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico referenciada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces relevantes (paper del modelo, blog, repositorio de codigo o demo) en la informacion disponible.

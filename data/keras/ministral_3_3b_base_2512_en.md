@@ -84,7 +84,7 @@ La comparativa se limita a la propia familia Ministral 3 y a Mistral 7B, ya que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/keras/ministral_3_3b_base_2512_en
+- Repositorio Hugging Face: https://huggingface.co/keras/ministral_3_3b_base_2512_en
 - Mistral AI: https://mistral.ai/
 - Keras: https://keras.io/
 - Keras 3 (multi-backend): https://keras.io/keras_3/

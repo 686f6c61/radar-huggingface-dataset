@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ModelFarm/org-card
+- Repositorio en Hugging Face: https://huggingface.co/ModelFarm/org-card
 - Pagina de aterrizaje de la organizacion: https://huggingface.co/spaces/ModelFarm/README
 - Case files del estudio de personas: https://huggingface.co/spaces/ModelFarm/case-files
 - Extrali, tone dial: https://huggingface.co/ModelFarm/extrali-1.5b-engram-evoked

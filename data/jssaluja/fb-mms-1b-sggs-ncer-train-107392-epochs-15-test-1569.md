@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `jssaluja/fb-mms-1b-sggs-ncer-train-107392-epochs-15-test-1569` es un checkpoint alojado en HuggingFace por el usuario `jssaluja`, publicado el 12 de septiembre de 2026. La model card es la plantilla genérica autogenerada por el Hub y no contiene ninguna descripción real: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen como `[More Information Needed]`. No hay pipeline declarado, ni licencia, ni idiomas, ni resultados de evaluación.
+El repositorio `jssaluja/fb-mms-1b-sggs-ncer-train-107392-epochs-15-test-1569` es un checkpoint alojado en Hugging Face por el usuario `jssaluja`, publicado el 12 de septiembre de 2026. La model card es la plantilla genérica autogenerada por el Hub y no contiene ninguna descripción real: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen como `[More Information Needed]`. No hay pipeline declarado, ni licencia, ni idiomas, ni resultados de evaluación.
 
 El identificador del repositorio aporta la única información sustantiva disponible, aunque no confirmada por el autor: la cadena `fb-mms-1b` sugiere que se trata de un fine-tune derivado de la familia MMS (Massively Multilingual Speech) de Meta, en su variante de aproximadamente 1.000 millones de parámetros; `sggs-ncer` apunta a un conjunto de datos o tarea concreta (posiblemente ligada a texto o voz en panyabí/gurmuji, dado el acrónimo `sggs`); y `epochs-15-test-1569` indica 15 épocas de entrenamiento y un conjunto de test de 1.569 ejemplos. Nada de esto está verificado en la documentación del repositorio, por lo que debe tratarse como hipótesis de trabajo y no como especificación.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es, por tanto, fundamentalmente metodológica: sirve
 
 No hay informacion disponible. La model card no documenta la arquitectura, el objetivo de entrenamiento, el numero de tokens o ejemplos vistos, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similar. El unico dato formal es la libreria declarada (`transformers`) y el nombre del repositorio, que menciona `train-107392` y `epochs-15`, cifras que no van acompanadas de ninguna explicacion sobre el regimen de entrenamiento, la precision numerica, el hardware utilizado ni el tamano del lote.
 
-El tag `arxiv:1910.09700` corresponde a Lacoste et al. (2019), el articulo del calculador de impacto ambiental que la plantilla de model card de HuggingFace incluye de serie. No es una referencia al modelo ni a su proceso de entrenamiento, y no debe interpretarse como evidencia de ninguna innovacion tecnica.
+El tag `arxiv:1910.09700` corresponde a Lacoste et al. (2019), el articulo del calculador de impacto ambiental que la plantilla de model card de Hugging Face incluye de serie. No es una referencia al modelo ni a su proceso de entrenamiento, y no debe interpretarse como evidencia de ninguna innovacion tecnica.
 
 ## Capacidades
 
@@ -93,7 +93,7 @@ La diferencia operativa mas importante es la licencia: los modelos de la familia
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jssaluja/fb-mms-1b-sggs-ncer-train-107392-epochs-15-test-1569
+- Repositorio en Hugging Face: https://huggingface.co/jssaluja/fb-mms-1b-sggs-ncer-train-107392-epochs-15-test-1569
 - Referencia citada en los tags (calculador de impacto de carbono, no relacionada con el modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ambiental de ML mencionado en la plantilla: https://mlco2.github.io/impact
 - Modelo base que sugiere el identificador (por verificar): https://huggingface.co/facebook/mms-1b-all

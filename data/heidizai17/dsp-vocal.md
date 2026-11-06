@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Heidizai17/dsp-vocal` es un artefacto publicado en HuggingFace por el usuario Heidizai17 el 5 de octubre de 2026, con licencia MIT y etiquetado con el formato `onnx`. El repositorio ocupa aproximadamente 0,1 GB y, en el momento de la consulta, acumula 0 descargas y 0 likes, y su model card se limita a una linea de metadatos de licencia sin documentacion tecnica de ningun tipo.
+El repositorio `Heidizai17/dsp-vocal` es un artefacto publicado en Hugging Face por el usuario Heidizai17 el 5 de octubre de 2026, con licencia MIT y etiquetado con el formato `onnx`. El repositorio ocupa aproximadamente 0,1 GB y, en el momento de la consulta, acumula 0 descargas y 0 likes, y su model card se limita a una linea de metadatos de licencia sin documentacion tecnica de ningun tipo.
 
 No se dispone de informacion publicada sobre arquitectura, numero de parametros, longitud de contexto, idioma o dominio de aplicacion. El identificador del repositorio incluye el termino "vocal" y el tag principal es `onnx`, lo que sugiere un artefacto orientado a inferencia con ONNX Runtime y posiblemente relacionado con procesamiento de senal de voz, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
 
@@ -78,7 +78,7 @@ No se dispone de informacion suficiente para identificar modelos comparables: se
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Heidizai17/dsp-vocal | no disponible | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| Heidizai17/dsp-vocal | no disponible | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de informacion suficiente para identificar modelos comparables: se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Heidizai17/dsp-vocal
+- Repositorio en Hugging Face: https://huggingface.co/Heidizai17/dsp-vocal
 - Paper: no disponible.
 - Blog o anuncio del autor: no disponible.
 - Repositorio de codigo: no disponible.

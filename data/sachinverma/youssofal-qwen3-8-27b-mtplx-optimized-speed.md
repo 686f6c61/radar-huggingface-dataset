@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Youssofal-Qwen3.8-27B-MTPLX-Optimized-Speed es una conversión del modelo Qwen3.8-27B de Qwen, reconstruida por el usuario Youssofal con la herramienta MTPLX Forge y re-subida a HuggingFace por la cuenta sachinverma. Su particularidad no es el entrenamiento, sino la optimización de inferencia: conserva las cabezas de predicción multi-token (MTP) del modelo base para explotarlas en Apple Silicon mediante MLX, en lugar de descartarlas como hacen la mayoría de runtimes. El resultado declarado por el autor es una multiplicación de 2,29 veces la velocidad de decodificación frente a una línea base autorregresiva, con profundidad óptima D3.
+Youssofal-Qwen3.8-27B-MTPLX-Optimized-Speed es una conversión del modelo Qwen3.8-27B de Qwen, reconstruida por el usuario Youssofal con la herramienta MTPLX Forge y re-subida a Hugging Face por la cuenta sachinverma. Su particularidad no es el entrenamiento, sino la optimización de inferencia: conserva las cabezas de predicción multi-token (MTP) del modelo base para explotarlas en Apple Silicon mediante MLX, en lugar de descartarlas como hacen la mayoría de runtimes. El resultado declarado por el autor es una multiplicación de 2,29 veces la velocidad de decodificación frente a una línea base autorregresiva, con profundidad óptima D3.
 
 El modelo pesa 27.356.723.952 parámetros (unos 27,36 mil millones) y el repositorio ocupa 20,7 GB, coherente con una cuantización de 4 bits. Está etiquetado como `qwen3_5` y `4-bit`, y hereda la base arquitectónica de la serie Qwen3.5 sobre la que Qwen construyó Qwen3.8, presentada por el fabricante como su primera release abierta de clase Qwen-Max. La verificación de rendimiento se realizó en un Apple M4 Pro con muestreo a temperatura 0,6, top_p 0,95 y top_k 20.
 
@@ -18,7 +18,7 @@ Su relevancia es, por tanto, de nicho pero clara: es una pieza pensada para ejec
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | 4-bit (etiqueta del repositorio); cuantizacion orientada a MLX |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en los metadatos de HuggingFace; la model card remite a un fichero LICENSE; LLM Explorer indica apache-2.0 para el repositorio original de Youssofal |
+| Licencia | no disponible en los metadatos de Hugging Face; la model card remite a un fichero LICENSE; LLM Explorer indica apache-2.0 para el repositorio original de Youssofal |
 | Formato de pesos | safetensors (etiqueta del repositorio), empaquetado para MLX |
 | Tamano del repositorio | 20,7 GB |
 | Modelo base | Qwen/Qwen3.8-27B |
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes, por lo 
 ## Limitaciones y advertencias
 
 - Repositorio espejo de terceros: el artefacto pertenece al usuario Youssofal y ha sido re-subido por la cuenta sachinverma. Con cero descargas y cero likes, no hay validacion comunitaria de la integridad de los pesos. Se recomienda contrastar con el repositorio original.
-- Licencia ambigua: los metadatos de HuggingFace no declaran licencia, la model card remite a un fichero LICENSE y una fuente secundaria indica apache-2.0 para el repositorio original. Antes de un uso comercial hay que verificar el fichero LICENSE del repositorio de origen y los terminos de la licencia de Qwen3.8.
+- Licencia ambigua: los metadatos de Hugging Face no declaran licencia, la model card remite a un fichero LICENSE y una fuente secundaria indica apache-2.0 para el repositorio original. Antes de un uso comercial hay que verificar el fichero LICENSE del repositorio de origen y los terminos de la licencia de Qwen3.8.
 - Dependencia de hardware: al estar empaquetado para MLX, el modelo queda restringido a Apple Silicon. No hay informacion sobre funcionamiento en CUDA, ROCm ni CPU generica.
 - Aceleracion medida en un unico hardware: el factor 2,29x se verifico en un Apple M4 Pro con una configuracion de muestreo concreta. No debe extrapolarse a otros chips, otras profundidades MTP ni otras tareas sin medirlo.
 - Riesgo de alucinacion: no hay informacion especifica sobre este artefacto, pero es el comportamiento esperado en modelos generativos de esta escala. No se han publicado evaluaciones de fidelidad para esta conversion.
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace (espejo analizado): https://huggingface.co/sachinverma/Youssofal-Qwen3.8-27B-MTPLX-Optimized-Speed
+- Modelo en Hugging Face (espejo analizado): https://huggingface.co/sachinverma/Youssofal-Qwen3.8-27B-MTPLX-Optimized-Speed
 - Repositorio original de la variante Speed: https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed
 - Repositorio original de la variante Quality: https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized-Quality
 - Repositorio del modelo base de Qwen: https://github.com/QwenLM/Qwen3.8

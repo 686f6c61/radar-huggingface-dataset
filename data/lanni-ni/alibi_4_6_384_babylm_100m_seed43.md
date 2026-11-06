@@ -23,7 +23,7 @@ La arquitectura del modelo es un Transformer con sesgos posicionales ALiBi, una 
 
 ## Capacidades
 
-- Generacion de texto: el modelo esta configurado para el pipeline de text-generation en HuggingFace, aunque no se han documentado capacidades especificas.
+- Generacion de texto: el modelo esta configurado para el pipeline de text-generation en Hugging Face, aunque no se han documentado capacidades especificas.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
@@ -64,7 +64,7 @@ No se dispone de datos suficientes para realizar una comparativa formal con otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/alibi_4_6_384_babylm_100m_seed43
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/alibi_4_6_384_babylm_100m_seed43
 - Paper de ALiBi (arxiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Modelo similar `dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch2`: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed44_epoch2
 - Modelo similar `dynamic_alibi_4_6_384_babylm_100m_epoch7`: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch7

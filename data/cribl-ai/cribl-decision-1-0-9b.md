@@ -91,8 +91,8 @@ No se dispone de informacion sobre otros adaptadores o modelos de decision estru
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cribl-decision-1.0-9B | 9B (base) + 138,2 MB de adaptador LoRA | no disponible | 78,41 % de precision global en 26 tareas held-out (evaluacion del autor) | Apache 2.0 | HuggingFace, libreria peft |
-| Qwen/Qwen3.5-9B | 9B | no disponible | no disponible en la informacion | no disponible en la informacion | HuggingFace (modelo base requerido) |
+| cribl-decision-1.0-9B | 9B (base) + 138,2 MB de adaptador LoRA | no disponible | 78,41 % de precision global en 26 tareas held-out (evaluacion del autor) | Apache 2.0 | Hugging Face, libreria peft |
+| Qwen/Qwen3.5-9B | 9B | no disponible | no disponible en la informacion | no disponible en la informacion | Hugging Face (modelo base requerido) |
 | Alternativas de decision estructurada | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -111,10 +111,10 @@ No se dispone de informacion sobre otros adaptadores o modelos de decision estru
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cribl-ai/cribl-decision-1.0-9B
+- Modelo en Hugging Face: https://huggingface.co/cribl-ai/cribl-decision-1.0-9B
 - Script de ejemplo de lectura: https://huggingface.co/cribl-ai/cribl-decision-1.0-9B/blob/main/example_readout.py
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Organizacion en HuggingFace: https://huggingface.co/cribl-ai
+- Organizacion en Hugging Face: https://huggingface.co/cribl-ai
 - Sitio de Cribl: https://cribl.io/
 - Documentacion de Cribl: https://docs.cribl.io/
 - Pagina corporativa: https://cribl.io/about-us/

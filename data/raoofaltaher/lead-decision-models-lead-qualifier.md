@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`raoofaltaher/lead-decision-models-lead-qualifier` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario raoofaltaher, construido sobre el modelo base LiquidAI/LFM3-1.7B. Su nombre sugiere que está orientado a la cualificación de leads (lead qualification) en flujos de decisión comercial, aunque la model card no documenta el dataset, el procedimiento de entrenamiento ni los objetivos concretos del ajuste fino. El repositorio ocupa 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo.
+`raoofaltaher/lead-decision-models-lead-qualifier` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario raoofaltaher, construido sobre el modelo base LiquidAI/LFM3-1.7B. Su nombre sugiere que está orientado a la cualificación de leads (lead qualification) en flujos de decisión comercial, aunque la model card no documenta el dataset, el procedimiento de entrenamiento ni los objetivos concretos del ajuste fino. El repositorio ocupa 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo.
 
 El interés técnico del artefacto reside en su modelo base: LFM3-1.7B es un modelo de 1.700 millones de parámetros de Liquid AI, una familia que la compañía describe como arquitectura híbrida (combinación de capas de atención y capas recurrentes/SSM). Al ser un adaptador LoRA, este repositorio no puede ejecutarse de forma autónoma: requiere cargar el modelo base y aplicar los pesos delta mediante PEFT o Unsloth.
 
-La ficha se redacta con la información disponible en HuggingFace, que es muy escasa. La model card es la plantilla por defecto de HuggingFace sin rellenar, y no se han publicado métricas, datos de entrenamiento, licencia explícita ni idiomas soportados. Cualquier uso en producción exige una validación independiente del adaptador y la consulta de la licencia del modelo base.
+La ficha se redacta con la información disponible en Hugging Face, que es muy escasa. La model card es la plantilla por defecto de Hugging Face sin rellenar, y no se han publicado métricas, datos de entrenamiento, licencia explícita ni idiomas soportados. Cualquier uso en producción exige una validación independiente del adaptador y la consulta de la licencia del modelo base.
 
 ## Especificaciones técnicas
 
@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento del adaptador para una comparación cuanti
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace sin rellenar: no hay información sobre datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
+- La model card es la plantilla por defecto de Hugging Face sin rellenar: no hay información sobre datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
 - No se declara licencia del adaptador; la licencia efectiva depende de la del modelo base LiquidAI/LFM3-1.7B, que debe consultarse antes de cualquier uso comercial.
 - No se declaran idiomas soportados; el comportamiento multilingüe es incierto.
 - Riesgo de alucinación y de sesgos heredado del modelo base y del dataset de ajuste fino, que no se documenta.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento del adaptador para una comparación cuanti
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/raoofaltaher/lead-decision-models-lead-qualifier
+- Hugging Face: https://huggingface.co/raoofaltaher/lead-decision-models-lead-qualifier
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - PEFT (librería): https://github.com/huggingface/peft
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth

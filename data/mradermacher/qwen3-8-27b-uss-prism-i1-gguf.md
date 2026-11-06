@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparado con otros modelos de la misma ca
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/Qwen3.8-27B-USS-Prism-i1-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Qwen3.8-27B-USS-Prism-i1-GGUF
 - Modelo base: https://huggingface.co/nightmedia/Qwen3.8-27B-USS-Prism
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/Qwen3.8-27B-USS-Prism-GGUF
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#Qwen3.8-27B-USS-Prism-i1-GGUF

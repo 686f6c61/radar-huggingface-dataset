@@ -83,7 +83,7 @@ La comparativa se limita a parametros, contexto y licencia, ya que no hay datos 
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta version GGUF): https://huggingface.co/mradermacher/Rabt-1.0-2B-GGUF
+- Repositorio Hugging Face (esta version GGUF): https://huggingface.co/mradermacher/Rabt-1.0-2B-GGUF
 - Modelo base: https://huggingface.co/4waiz/Rabt-1.0-2B
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Rabt-1.0-2B-i1-GGUF
 - Pagina de descarga del cuantizador: https://hf.tst.eu/model#Rabt-1.0-2B-GGUF

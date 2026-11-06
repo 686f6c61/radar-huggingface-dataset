@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l1-e21` es un ajuste fino publicado en HuggingFace por el usuario PessimisticDPO, derivado, segun indica su propio nombre, del modelo `Llama-3.1-Tulu-3-8B-SFT` de Ai2. Se trata de un transformer decoder-only de aproximadamente 8.000 millones de parametros, entrenado sobre la base Llama 3.1 de Meta y posteriormente pasado por la etapa supervisada (SFT) de la familia Tulu 3.
+El modelo identificado como `PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l1-e21` es un ajuste fino publicado en Hugging Face por el usuario PessimisticDPO, derivado, segun indica su propio nombre, del modelo `Llama-3.1-Tulu-3-8B-SFT` de Ai2. Se trata de un transformer decoder-only de aproximadamente 8.000 millones de parametros, entrenado sobre la base Llama 3.1 de Meta y posteriormente pasado por la etapa supervisada (SFT) de la familia Tulu 3.
 
-El nombre del repositorio sugiere un barrido de hiperparametros de un metodo de optimizacion tipo DPO (los sufijos `a0.1`, `b0.1`, `L3`, `l1`, `e21` son compatibles con valores de alpha, beta, capas objetivo, una lambda y un numero de epoca o paso). Se trata, por tanto, de un artefacto de investigacion experimental mas que de un modelo listo para produccion: el repositorio acumula 0 descargas y 0 likes, y su model card es la plantilla automatica de HuggingFace sin cumplimentar.
+El nombre del repositorio sugiere un barrido de hiperparametros de un metodo de optimizacion tipo DPO (los sufijos `a0.1`, `b0.1`, `L3`, `l1`, `e21` son compatibles con valores de alpha, beta, capas objetivo, una lambda y un numero de epoca o paso). Se trata, por tanto, de un artefacto de investigacion experimental mas que de un modelo listo para produccion: el repositorio acumula 0 descargas y 0 likes, y su model card es la plantilla automatica de Hugging Face sin cumplimentar.
 
 La relevancia de esta ficha es limitada y debe interpretarse como advertencia: toda la informacion sobre arquitectura, datos de entrenamiento, licencia e idiomas procede del modelo base, no del repositorio, que no documenta ninguno de estos extremos. Ademas, el tamano del repositorio (0,2 GB) es muy inferior a los ~16 GB que ocuparian los pesos completos de un modelo de 8B en bf16, lo que apunta a que el repositorio contiene adaptadores LoRA, un checkpoint parcial o un unico fragmento de pesos, y no un modelo completo listo para cargar con `from_pretrained`.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada y debe interpretarse como advertencia: t
 
 No hay informacion publicada sobre la arquitectura concreta de este checkpoint mas alla de la etiqueta `transformers` y el formato `safetensors`. Por el identificador se infiere que parte de `Llama-3.1-Tulu-3-8B-SFT`, un transformer decoder-only denso de 8B parametros con atencion por consultas agrupadas (GQA) y tokenizador de Llama 3.1, que Ai2 entrena sobre el corpus Tulu 3 con una mezcla de datos de instrucciones, razonamiento y codigo. Esta inferencia se basa exclusivamente en el nombre del repositorio y no esta confirmada por el autor.
 
-Tampoco se documentan los datos de entrenamiento, el numero de tokens, la composicion del dataset ni si hubo RLHF, DPO o alguna variante. El prefijo `PessimisticDPO` y los sufijos del nombre apuntan a un experimento de optimizacion por preferencias, presumiblemente una variante "pesimista" de DPO con parametros alpha y beta en 0,1 y algun control sobre capas y epocas. Al no existir paper, repositorio de codigo ni resultados asociados, no es posible verificar que metodo se aplico ni con que datos. La unica referencia cientifica presente en las etiquetas del modelo (`arxiv:1910.09700`) corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, incluido por defecto en la plantilla de HuggingFace, y no guarda relacion con el entrenamiento del modelo.
+Tampoco se documentan los datos de entrenamiento, el numero de tokens, la composicion del dataset ni si hubo RLHF, DPO o alguna variante. El prefijo `PessimisticDPO` y los sufijos del nombre apuntan a un experimento de optimizacion por preferencias, presumiblemente una variante "pesimista" de DPO con parametros alpha y beta en 0,1 y algun control sobre capas y epocas. Al no existir paper, repositorio de codigo ni resultados asociados, no es posible verificar que metodo se aplico ni con que datos. La unica referencia cientifica presente en las etiquetas del modelo (`arxiv:1910.09700`) corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, incluido por defecto en la plantilla de Hugging Face, y no guarda relacion con el entrenamiento del modelo.
 
 ## Capacidades
 
@@ -91,7 +91,7 @@ La comparacion relevante es contra el modelo base: no hay evidencia de que este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l1-e21
+- Modelo en Hugging Face: https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l1-e21
 - Modelo base inferido a partir del nombre: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-SFT
 - Modelo Llama 3.1 8B de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Referencia citada en las etiquetas del repositorio (estimacion de emisiones, no relacionada con el entrenamiento): https://arxiv.org/abs/1910.09700

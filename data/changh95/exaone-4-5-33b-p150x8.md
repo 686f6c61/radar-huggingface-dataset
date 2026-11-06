@@ -19,7 +19,7 @@ Es relevante ahora porque documenta, con cifras medidas, el rendimiento de servi
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible en el repositorio; el modelo base LGAI-EXAONE/EXAONE-4.5-33B tiene su propia licencia |
-| Formato de pesos | pesos del modelo base descargados aparte desde HuggingFace (revision `570aa4b15a4f45ba1133072b45f50198f6e3b4fd`); el repositorio (1,7 GB) contiene el contenedor y el codigo, no los pesos |
+| Formato de pesos | pesos del modelo base descargados aparte desde Hugging Face (revision `570aa4b15a4f45ba1133072b45f50198f6e3b4fd`); el repositorio (1,7 GB) contiene el contenedor y el codigo, no los pesos |
 | Hardware objetivo | 8 placas Tenstorrent Blackhole P150 (malla `P150x8`, TP=8) |
 | Usuarios concurrentes maximos | 32 |
 | Memoria de cache KV del perfil | ~133.000 tokens |
@@ -98,7 +98,7 @@ Notas proporcionadas por el autor: el paso de decodificacion batch-1 del modelo 
 - No cabe en GPU de consumo: este paquete no tiene como objetivo hardware de consumo; la ejecucion se realiza sobre aceleradores Blackhole.
 - Memoria de cache KV: el perfil dispone de unos 133.000 tokens de cache KV, limite que determina cuantas secuencias concurrentes de cada longitud caben (los lotes de 32 usuarios con prompts de 4096 tokens o mas no se pudieron medir por este motivo).
 - Despliegue: se realiza con `tt-model pull ... --with-weights` y `tt-model serve ...` de tt-model-manager 0.1.0; el servidor es compatible con OpenAI en el puerto 20000.
-- Pesos: se descargan aparte desde HuggingFace en la cache del usuario; no estan incluidos en la imagen (el repositorio pesa 1,7 GB y contiene el contenedor y el codigo).
+- Pesos: se descargan aparte desde Hugging Face en la cache del usuario; no estan incluidos en la imagen (el repositorio pesa 1,7 GB y contiene el contenedor y el codigo).
 - Primer arranque: compila kernels para el dispositivo, lo que tarda varios minutos; el servidor esta listo cuando registra `Application startup complete`.
 - Latencia y throughput medidos: batch-1 de ~28 ms por token (~36 tok/s en el modelo desnudo; 23-30 tok/s transmitidos segun regimen); TTFT batch-1 de 65 ms con 128 tokens de entrada y 5.177 ms con 32.768 tokens; throughput agregado de hasta ~857 tok/s con 32 usuarios en prompts cortos.
 
@@ -128,13 +128,13 @@ Para modelos alternativos de la misma categoria (por ejemplo, otros transformers
 - Riesgo de alucinacion: como cualquier modelo generativo, y sin datos de evaluacion especificos, existe riesgo de respuestas incorrectas o inventadas, especialmente en tareas factuales.
 - Modo thinking por defecto: al ser un modelo de razonamiento con pensamiento activado, el consumo de tokens de salida y la latencia pueden ser mayores de lo esperado si no se desactiva.
 - Idiomas y sesgos: no se declaran idiomas soportados ni se documentan sesgos conocidos en la informacion disponible.
-- Pesos no incluidos en la imagen: hay que descargarlos por separado de HuggingFace, lo que anade un paso de red y dependencia de disponibilidad del repositorio de origen.
+- Pesos no incluidos en la imagen: hay que descargarlos por separado de Hugging Face, lo que anade un paso de red y dependencia de disponibilidad del repositorio de origen.
 - Resultados de busqueda web no relevantes: las consultas realizadas no devolvieron informacion util sobre el modelo ni sobre su pila de despliegue.
 
 ## Enlaces
 
-- Repositorio HuggingFace del paquete: https://huggingface.co/changh95/exaone-4.5-33b-p150x8
-- Modelo base en HuggingFace: https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B
+- Repositorio Hugging Face del paquete: https://huggingface.co/changh95/exaone-4.5-33b-p150x8
+- Modelo base en Hugging Face: https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B
 - tt-model-manager: https://github.com/tenstorrent/tt-model-manager
 - Commit de tt-metal: https://github.com/tenstorrent/tt-metal/commit/39a7870be5d4063e0009a241b54f16f9265bc048
 - Release de vLLM v0.25.1: https://github.com/vllm-project/vllm/releases/tag/v0.25.1

@@ -93,8 +93,8 @@ No se dispone de valores equivalentes para el modelo base `meta-llama/Llama-2-7b
 
 | Modelo | Parametros | Contexto | Seguridad publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l2_remove50_swapdisc_a010_b010_r05` | 6.738.415.616 | 4096 (heredado del base) | AdvBench ASR 0,5019; StrongREJECT ASR 0,2971; sobre-rechazo 0,1651 | Llama 2 Community License | HuggingFace, 0 descargas, 0 likes |
-| `meta-llama/Llama-2-7b-chat-hf` (modelo base) | ~6,74 mil millones | 4096 | No disponible en esta información | Llama 2 Community License | HuggingFace (modelo de referencia) |
+| `Jeesup/svd-safety-l2_remove50_swapdisc_a010_b010_r05` | 6.738.415.616 | 4096 (heredado del base) | AdvBench ASR 0,5019; StrongREJECT ASR 0,2971; sobre-rechazo 0,1651 | Llama 2 Community License | Hugging Face, 0 descargas, 0 likes |
+| `meta-llama/Llama-2-7b-chat-hf` (modelo base) | ~6,74 mil millones | 4096 | No disponible en esta información | Llama 2 Community License | Hugging Face (modelo de referencia) |
 | Otras celdas de la misma matriz experimental (`remove50` con distintas reglas y presupuestos) | Fracción de parámetros ~0,4999 | No disponible | No disponible | Llama 2 Community License | No disponible en esta información |
 
 No se dispone de datos de benchmarks comparativos frente a alternativas de la misma categoría (por ejemplo, otros métodos de compresión como LLM-Pruner, Wanda o SliceGPT) en la información proporcionada, por lo que no se puede establecer una comparación cuantitativa de rendimiento.
@@ -115,7 +115,7 @@ No se dispone de datos de benchmarks comparativos frente a alternativas de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a010_b010_r05
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a010_b010_r05
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2 (incluida en el repositorio como `LICENSE.txt`): https://ai.meta.com/llama/license/
 - Política de uso aceptable de Llama 2 (incluida en el repositorio como `USE_POLICY.md`): https://ai.meta.com/llama/use-policy/

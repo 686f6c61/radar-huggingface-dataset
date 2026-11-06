@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rootformer-v15-Sovereign-Transmute | 399,4 M | no disponible | ar, en | aynengine-uni-prishtina-academic | HuggingFace (0 descargas), API propia |
-| Qwen2.5-0.5B (backbone declarado en la model card) | ~0,5B según su denominación | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace |
+| Rootformer-v15-Sovereign-Transmute | 399,4 M | no disponible | ar, en | aynengine-uni-prishtina-academic | Hugging Face (0 descargas), API propia |
+| Qwen2.5-0.5B (backbone declarado en la model card) | ~0,5B según su denominación | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face |
 | Otras alternativas de traducción árabe clásico-inglés | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la información proporcionada otros modelos de la misma categoría (tokenización morfémica árabe sin BPE) con los que establecer una comparación cuantitativa.
@@ -98,7 +98,7 @@ No se han identificado en la información proporcionada otros modelos de la mism
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/enver/rootformer-v15-sovereign-transmute
+- Hugging Face: https://huggingface.co/enver/rootformer-v15-sovereign-transmute
 - HUD académico del autor: https://wyresup.com/aynengine/
 - API de producción declarada: `POST https://wyresup.com/api/rootformer/chat`
 - Licencia: fichero `LICENSE` referenciado en el repositorio como `license_link: LICENSE`

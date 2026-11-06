@@ -88,8 +88,8 @@ Fiqh-Embed es un fine-tuning de bge-m3, por lo que la comparativa principal es c
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/sadiqoon/fiqh-embed-ar-fa-gguf
+- Modelo GGUF en Hugging Face: https://huggingface.co/sadiqoon/fiqh-embed-ar-fa-gguf
 - Modelo base safetensors: https://huggingface.co/sadiqoon/fiqh-embed-ar-fa
 - Sitio web de Sadiqoon Technologies: https://sadiqoon.uk
-- Documentacion de GGUF en HuggingFace: https://huggingface.co/docs/hub/gguf
+- Documentacion de GGUF en Hugging Face: https://huggingface.co/docs/hub/gguf
 - Repositorio de BAAI/bge-m3 (modelo base): https://huggingface.co/BAAI/bge-m3

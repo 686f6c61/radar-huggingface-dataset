@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Syaofox/iroiroLoRA es un repositorio publicado en HuggingFace por el usuario Syaofox bajo la licencia creativeml-openrail-m. El identificador del modelo incluye el sufijo "LoRA", lo que sugiere que se trata de un adaptador de bajo rango (Low-Rank Adaptation) y no de un modelo base completo, aunque esta circunstancia no se confirma en la informacion disponible: la model card unicamente contiene el campo `license` y carece de descripcion, pipeline declarado, idiomas y ejemplos de uso.
+Syaofox/iroiroLoRA es un repositorio publicado en Hugging Face por el usuario Syaofox bajo la licencia creativeml-openrail-m. El identificador del modelo incluye el sufijo "LoRA", lo que sugiere que se trata de un adaptador de bajo rango (Low-Rank Adaptation) y no de un modelo base completo, aunque esta circunstancia no se confirma en la informacion disponible: la model card unicamente contiene el campo `license` y carece de descripcion, pipeline declarado, idiomas y ejemplos de uso.
 
 El repositorio ocupa 119,3 GB, un tamano muy superior al habitual en adaptadores LoRA convencionales, lo que apunta a que puede contener multiples archivos de pesos, varias versiones, checkpoints intermedios u otros artefactos no documentados. Se desconoce por completo la composicion interna del repositorio.
 
@@ -17,7 +17,7 @@ El modelo acumula 0 descargas y 0 "likes" desde su creacion el 11 de septiembre 
 | Parametros activos | no disponible (no se ha confirmado que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (el campo de idiomas esta vacio en HuggingFace) |
+| Idiomas soportados | no disponible (el campo de idiomas esta vacio en Hugging Face) |
 | Licencia | creativeml-openrail-m |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 119,3 GB |
@@ -63,7 +63,7 @@ Para cualquier otro tipo de caso de uso (texto, codigo, agentes, atencion al cli
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-No existen datos de MMLU, HumanEval, GSM8K, MT-Bench, FID, CLIP score ni de ninguna otra metrica en la model card, en la ficha de HuggingFace ni en los resultados de busqueda web. Tampoco se dispone de comparaciones con modelos de referencia.
+No existen datos de MMLU, HumanEval, GSM8K, MT-Bench, FID, CLIP score ni de ninguna otra metrica en la model card, en la ficha de Hugging Face ni en los resultados de busqueda web. Tampoco se dispone de comparaciones con modelos de referencia.
 
 ## Requisitos de hardware
 
@@ -92,5 +92,5 @@ No disponible. No se dispone de informacion suficiente sobre este repositorio (a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Syaofox/iroiroLoRA
-- No se han encontrado en la busqueda web enlaces relevantes al modelo: papers, blogs, repositorios de codigo, demos o espacios de HuggingFace asociados. Los resultados devueltos (autodesk.com, manage.autodesk.com, profile.autodesk.com) no guardan relacion con este repositorio y se descartan como fuentes.
+- Hugging Face: https://huggingface.co/Syaofox/iroiroLoRA
+- No se han encontrado en la busqueda web enlaces relevantes al modelo: papers, blogs, repositorios de codigo, demos o espacios de Hugging Face asociados. Los resultados devueltos (autodesk.com, manage.autodesk.com, profile.autodesk.com) no guardan relacion con este repositorio y se descartan como fuentes.

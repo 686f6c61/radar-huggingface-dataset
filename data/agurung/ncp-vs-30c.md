@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`agurung/ncp-vs-30c` es un modelo publicado en HuggingFace por el usuario `agurung`. Se trata de un checkpoint de aproximadamente 4.022 millones de parametros (4B) distribuido en formato `safetensors`, con un tamano de repositorio de 8,1 GB. La etiqueta `qwen3` asociada al repositorio sugiere que el modelo deriva de la familia Qwen3, aunque la ficha no confirma oficialmente ni el modelo base exacto ni el proceso de entrenamiento empleado.
+`agurung/ncp-vs-30c` es un modelo publicado en Hugging Face por el usuario `agurung`. Se trata de un checkpoint de aproximadamente 4.022 millones de parametros (4B) distribuido en formato `safetensors`, con un tamano de repositorio de 8,1 GB. La etiqueta `qwen3` asociada al repositorio sugiere que el modelo deriva de la familia Qwen3, aunque la ficha no confirma oficialmente ni el modelo base exacto ni el proceso de entrenamiento empleado.
 
 El modelo no cuenta con informacion publica sobre licencia, idiomas soportados, pipeline de inferencia ni datos de entrenamiento. Con 8 descargas y 0 likes en el momento de la consulta, se trata de un artefacto de publicacion reciente (creado y actualizado el 18 de septiembre de 2026) y sin traccion apreciable en la comunidad.
 
@@ -75,9 +75,9 @@ La comparativa se plantea frente a modelos de tamano equivalente, dado que no ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agurung/ncp-vs-30c | ~4B | no disponible | no disponible | HuggingFace |
-| Qwen3-4B (referencia de familia) | ~4B | segun version oficial | Apache 2.0 (segun publicacion oficial) | HuggingFace |
-| Llama 3.2 3B | ~3B | 128K (segun publicacion oficial) | Llama Community License | HuggingFace |
+| agurung/ncp-vs-30c | ~4B | no disponible | no disponible | Hugging Face |
+| Qwen3-4B (referencia de familia) | ~4B | segun version oficial | Apache 2.0 (segun publicacion oficial) | Hugging Face |
+| Llama 3.2 3B | ~3B | 128K (segun publicacion oficial) | Llama Community License | Hugging Face |
 
 No se dispone de datos de rendimiento comparado, por lo que la comparativa se limita a parametros, contexto y licencia. La posible equivalencia con Qwen3-4B es una inferencia no confirmada.
 
@@ -94,6 +94,6 @@ No se dispone de datos de rendimiento comparado, por lo que la comparativa se li
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agurung/ncp-vs-30c
+- Modelo en Hugging Face: https://huggingface.co/agurung/ncp-vs-30c
 
 No se han encontrado en la busqueda web enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo. El resto de resultados de busqueda no guardan relacion con el artefacto analizado.

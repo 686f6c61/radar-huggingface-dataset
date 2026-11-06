@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Soylic-embeddings es un modelo publicado en HuggingFace por el usuario soylic bajo licencia WTFPL. La model card asociada no contiene ninguna descripcion tecnica, ni informacion sobre arquitectura, datos de entrenamiento o uso previsto: unicamente declara la licencia. No hay pipeline declarado, ni idiomas especificados, ni etiquetas que permitan inferir la tarea para la que fue entrenado, mas alla de la sugerencia del propio nombre de que se trata de un modelo de embeddings.
+Soylic-embeddings es un modelo publicado en Hugging Face por el usuario soylic bajo licencia WTFPL. La model card asociada no contiene ninguna descripcion tecnica, ni informacion sobre arquitectura, datos de entrenamiento o uso previsto: unicamente declara la licencia. No hay pipeline declarado, ni idiomas especificados, ni etiquetas que permitan inferir la tarea para la que fue entrenado, mas alla de la sugerencia del propio nombre de que se trata de un modelo de embeddings.
 
 En el momento de redactar esta ficha, el repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (3 de noviembre de 2026), lo que apunta a una publicacion reciente y sin validacion por parte de la comunidad. No se dispone de informacion sobre el numero de parametros, la longitud de contexto soportada, la dimension de los vectores de embedding ni el formato de los pesos.
 
@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/soylic/soylic-embeddings
+- Repositorio Hugging Face: https://huggingface.co/soylic/soylic-embeddings
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

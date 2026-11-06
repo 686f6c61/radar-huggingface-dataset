@@ -46,7 +46,7 @@ No se puede realizar una comparativa directa porque no hay parametros ni rendimi
 - No se han verificado los resultados de la arquitectura descrita.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/AARAVDAS07/model_123477846_flamingo_small
+- Repositorio en Hugging Face: https://huggingface.co/AARAVDAS07/model_123477846_flamingo_small
 - Paper original de Flamingo (DeepMind): https://arxiv.org/html/2204.14198v2
-- Resumen del paper en HuggingFace: https://huggingface.co/papers/2204.14198
+- Resumen del paper en Hugging Face: https://huggingface.co/papers/2204.14198
 - Analisis del paper en Abhik AI: https://www.abhik.ai/papers/flamingo

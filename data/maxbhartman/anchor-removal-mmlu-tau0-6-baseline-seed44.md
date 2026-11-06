@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maxbhartman/anchor-removal-mmlu-tau0.6-baseline-seed44` es un checkpoint publicado en HuggingFace por el usuario maxbhartman. El nombre del repositorio sugiere un artefacto de investigación correspondiente a un experimento de ablación ("anchor removal") evaluado sobre MMLU, con un parámetro de temperatura de 0.6 y una semilla concreta (seed 44) en su configuración "baseline". No se trata, por tanto, de un modelo de propósito general con ficha de producto, sino de un punto de control asociado a una ejecución experimental reproducibilidad.
+`maxbhartman/anchor-removal-mmlu-tau0.6-baseline-seed44` es un checkpoint publicado en Hugging Face por el usuario maxbhartman. El nombre del repositorio sugiere un artefacto de investigación correspondiente a un experimento de ablación ("anchor removal") evaluado sobre MMLU, con un parámetro de temperatura de 0.6 y una semilla concreta (seed 44) en su configuración "baseline". No se trata, por tanto, de un modelo de propósito general con ficha de producto, sino de un punto de control asociado a una ejecución experimental reproducibilidad.
 
 La información pública disponible es mínima: el repositorio ocupa 6,4 GB, está etiquetado con `pytorch` y `llama`, y no declara pipeline, licencia, idiomas ni parámetros. El campo de descargas indica 12 descargas y 0 likes, lo que refuerza la lectura de artefacto de investigación con difusión muy limitada. Las fechas de creación y actualización (14 de septiembre de 2026) muestran que se subió y se actualizó con un minuto de diferencia, sin iteraciones posteriores.
 
@@ -50,7 +50,7 @@ Tampoco hay detalles sobre el procedimiento experimental al que alude el nombre 
 - Análisis de sensibilidad a la semilla: al incluir la semilla en el nombre, el artefacto sirve para estudiar variabilidad entre ejecuciones si se localizan los checkpoints hermanos.
 - Verificación de artefactos publicados: permite inspeccionar los pesos y confirmar formato, tamaño y estructura interna del repositorio.
 - Docencia y formación en evaluación de modelos: puede emplearse como ejemplo de cómo se etiquetan y publican checkpoints experimentales y qué información debería acompañarlos.
-- Estudio de trazabilidad en HuggingFace: caso práctico para analizar repositorios sin model card, sin licencia y con metadatos incompletos.
+- Estudio de trazabilidad en Hugging Face: caso práctico para analizar repositorios sin model card, sin licencia y con metadatos incompletos.
 
 No se recomienda su uso en escenarios de producción, atención al cliente, generación de código ni ninguna aplicación finalista, dado que no existe evidencia publicada de rendimiento ni de licencia que habilite su explotación.
 
@@ -84,5 +84,5 @@ No disponible. No se conocen modelos comparables porque se desconoce el tamaño,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-baseline-seed44
+- Modelo en Hugging Face: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-baseline-seed44
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada. Los resultados de la búsqueda web recibidos no guardan relación con el modelo (corresponden a foros y sitios de aviación y consumo), por lo que no se incluye ningún enlace adicional.

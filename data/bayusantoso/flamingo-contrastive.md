@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bayusantoso/flamingo-contrastive` es un repositorio de HuggingFace que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura tipo Flamingo orientada a tareas de aprendizaje contrastivo. Lo publica el usuario `bayusantoso` bajo licencia BSD-3-Clause. Tal y como declara su propia model card, se trata de un artefacto pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no para un despliegue en produccion.
+`bayusantoso/flamingo-contrastive` es un repositorio de Hugging Face que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura tipo Flamingo orientada a tareas de aprendizaje contrastivo. Lo publica el usuario `bayusantoso` bajo licencia BSD-3-Clause. Tal y como declara su propia model card, se trata de un artefacto pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no para un despliegue en produccion.
 
 El punto clave para cualquier evaluador es que el fichero `model.safetensors` incluido es un checkpoint de inicializacion valido para ejecutar pruebas sintacticas, pero no un modelo entrenado ni evaluado. El propio autor indica explicitamente que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. Los metadatos de safetensors reportan un total de 33.088 parametros, un volumen ridiculamente bajo que confirma que se trata de un esqueleto de inicializacion y no de un modelo funcional.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bayusantoso/flamingo-contrastive
+- Modelo en Hugging Face: https://huggingface.co/bayusantoso/flamingo-contrastive
 - Repositorio relacionado (variante nano): https://huggingface.co/ajay-mxyb/flamingo-contrastive-tutorial
 - Articulo de referencia sobre la arquitectura Flamingo: https://www.abhik.ai/papers/flamingo
 - Ficha de proceedings del paper Flamingo: https://www.proceedings.com/068431-1723.html

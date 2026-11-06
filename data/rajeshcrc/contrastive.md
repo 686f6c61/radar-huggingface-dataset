@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rajeshcrc/contrastive` es un repositorio de HuggingFace que contiene una implementacion propia y compacta de una arquitectura Swin Transformer en su variante tiny, orientada a aprendizaje contrastivo. Lo publica el usuario rajeshcrc bajo licencia BSD-3-Clause y no cuenta con descargas ni likes en el momento de redactar esta ficha. El propio autor describe el artefacto como un punto de partida experimental para revision de codigo, pruebas de humo y experimentos controlados de pequeno tamano, y no como un modelo preentrenado listo para produccion.
+`rajeshcrc/contrastive` es un repositorio de Hugging Face que contiene una implementacion propia y compacta de una arquitectura Swin Transformer en su variante tiny, orientada a aprendizaje contrastivo. Lo publica el usuario rajeshcrc bajo licencia BSD-3-Clause y no cuenta con descargas ni likes en el momento de redactar esta ficha. El propio autor describe el artefacto como un punto de partida experimental para revision de codigo, pruebas de humo y experimentos controlados de pequeno tamano, y no como un modelo preentrenado listo para produccion.
 
 El repositorio incluye un script `run.py` con el modelo y un ejemplo ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es un checkpoint de inicializacion valido, no un modelo entrenado. La model card indica de forma explicita que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -66,7 +66,7 @@ La comparacion se establece con la variante estandar de Swin-T publicada en bibl
 
 | Modelo | Parametros | Contexto o entrada | Entrenamiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rajeshcrc/contrastive` | 16.576 | no disponible | ninguno (checkpoint de inicializacion) | BSD-3-Clause | HuggingFace, 0 descargas |
+| `rajeshcrc/contrastive` | 16.576 | no disponible | ninguno (checkpoint de inicializacion) | BSD-3-Clause | Hugging Face, 0 descargas |
 | Swin-T estandar (referencia de la familia) | del orden de 28 millones | 224x224 en la configuracion habitual | preentrenado en ImageNet-1k en las distribuciones habituales | depende de la distribucion (habitualmente Apache-2.0 en repositorios de terceros) | amplia en bibliotecas como timm |
 | Backbones convolucionales para aprendizaje contrastivo (por ejemplo, ResNet-50 en configuraciones tipo SimCLR o MoCo) | del orden de 25 millones | 224x224 en las configuraciones habituales | preentrenados de forma autosupervisada en las distribuciones habituales | depende de la distribucion | amplia |
 
@@ -82,9 +82,9 @@ Las cifras de las filas comparativas corresponden a ordenes de magnitud ampliame
 - La licencia BSD-3-Clause es permisiva y permite uso comercial del codigo y de los pesos, pero el propio autor advierte de que deben revisarse por separado los terminos de los datos de origen cuando el repositorio se utilice con conjuntos de datos externos.
 - Es una implementacion personalizada: las APIs automaticas de carga de modelos no funcionan sin un adaptador explicito. Cualquier integracion en produccion requeriria escribir ese adaptador y validar las formas de los tensores.
 - La discrepancia entre los 16.576 parametros declarados y los decenas de millones habituales en Swin-T sugiere que la configuracion tiny aqui implementada no reproduce la arquitectura estandar; conviene revisar `config.json` antes de asumir equivalencias.
-- Las fechas de creacion y actualizacion del repositorio registradas en HuggingFace (octubre de 2026) son posteriores a la fecha de esta ficha, un extremo que conviene verificar en el propio repositorio.
+- Las fechas de creacion y actualizacion del repositorio registradas en Hugging Face (octubre de 2026) son posteriores a la fecha de esta ficha, un extremo que conviene verificar en el propio repositorio.
 
 ## Enlaces
 
-- [Modelo en HuggingFace: rajeshcrc/contrastive](https://huggingface.co/rajeshcrc/contrastive)
+- [Modelo en Hugging Face: rajeshcrc/contrastive](https://huggingface.co/rajeshcrc/contrastive)
 - No se han encontrado en la informacion proporcionada articulos, papers, blogs, repositorios adicionales ni demos asociados al modelo.

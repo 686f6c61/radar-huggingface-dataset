@@ -72,8 +72,8 @@ No se han publicado en la información disponible resultados en benchmarks está
 
 | Modelo | Parámetros | Contexto | Tarea | Métricas publicadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| abir71/bangla-fake-news-bert | 164,4 M | 512 tokens | Clasificación fake/auténtico en bengalí | Accuracy 94,49 %, F1 89,03 %, ROC-AUC 98,36 % | MIT | HuggingFace + demo en Spaces + ONNX |
-| sagorsarker/bangla-bert-base | no disponible en la información | 512 tokens (BERT estándar) | Modelo de lenguaje enmascarado en bengalí; requiere ajuste fino para clasificar | No comparable directamente (no entrenado para esta tarea) | no disponible en la información | HuggingFace |
+| abir71/bangla-fake-news-bert | 164,4 M | 512 tokens | Clasificación fake/auténtico en bengalí | Accuracy 94,49 %, F1 89,03 %, ROC-AUC 98,36 % | MIT | Hugging Face + demo en Spaces + ONNX |
+| sagorsarker/bangla-bert-base | no disponible en la información | 512 tokens (BERT estándar) | Modelo de lenguaje enmascarado en bengalí; requiere ajuste fino para clasificar | No comparable directamente (no entrenado para esta tarea) | no disponible en la información | Hugging Face |
 | Regresión logística sobre características del paper | No aplica | No aplica | Clasificación fake/auténtico en bengalí | Accuracy 91,38 %, F1 80,95 % | No aplica | Solo resultados en el artículo |
 | Random forest del paper | No aplica | No aplica | Clasificación fake/auténtico en bengalí | Accuracy 90,23 % | No aplica | Solo resultados en el artículo |
 
@@ -94,7 +94,7 @@ No se dispone de datos para comparar con clasificadores de desinformación multi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abir71/bangla-fake-news-bert
+- Modelo en Hugging Face: https://huggingface.co/abir71/bangla-fake-news-bert
 - Demo interactiva (ejecución en navegador): https://huggingface.co/spaces/abir71/bangla-fake-news-demo
 - Modelo base: https://huggingface.co/sagorsarker/bangla-bert-base
 - Artículo: Alam MJ, Khan MAR, Ahammad I, Hosen A, Das JR. "Combating deep-fake news in Bengali: detection and prevention of manipulated social media's content using machine learning". *International Journal of Advanced Computer Research* 16(76), 2026. DOI: http://dx.doi.org/10.19101/IJACR.2025.1570025

@@ -78,7 +78,7 @@ La comparación se limita a características generales; no se han encontrado ben
 
 ## Enlaces
 
-- Repositorio HuggingFace de Hanshlart: https://huggingface.co/Hanshlart/Qwen3-0.6B-GGUF
+- Repositorio Hugging Face de Hanshlart: https://huggingface.co/Hanshlart/Qwen3-0.6B-GGUF
 - Distribución oficial de Qwen en GGUF: https://huggingface.co/Qwen/Qwen3-0.6B-GGUF
 - Distribución de Unsloth (GGUF): https://huggingface.co/unsloth/Qwen3-0.6B-GGUF
 - Repositorio oficial de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

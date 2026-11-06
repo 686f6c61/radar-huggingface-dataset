@@ -84,8 +84,8 @@ MiniMax H3 es el unico de los modelos comparados que genera audio estéreo sincr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wangpj/MiniMax-H3_dit_bf16
-- Modelo original en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio Hugging Face: https://huggingface.co/wangpj/MiniMax-H3_dit_bf16
+- Modelo original en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio GitHub oficial: https://github.com/MiniMax-AI/MiniMax-H3
 - Repositorio turbo (lightx2v): https://huggingface.co/lightx2v/Minimax-h3-Turbo
 - Codificador de texto NVFP4: https://huggingface.co/cybermotaz/Qwen3-VL-32B-Instruct-NVFP4

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Lazarus Facial Expression & 478-Point Mesh Core es un componente de vision por computador publicado en HuggingFace por el usuario amithroy, orientado a la deteccion de puntos faciales y al reconocimiento de expresiones en tiempo real. No es un modelo de lenguaje ni un transformer: se distribuye como un artefacto serializado con joblib y la model card lo describe como un motor de landmarks faciales con 478 puntos, 52 blendshapes y 10 clases de expresion. Su pipeline declarado en HuggingFace es image-feature-extraction y esta pensado para integrarse en el proyecto personal "Lazarus PC Companion".
+Lazarus Facial Expression & 478-Point Mesh Core es un componente de vision por computador publicado en Hugging Face por el usuario amithroy, orientado a la deteccion de puntos faciales y al reconocimiento de expresiones en tiempo real. No es un modelo de lenguaje ni un transformer: se distribuye como un artefacto serializado con joblib y la model card lo describe como un motor de landmarks faciales con 478 puntos, 52 blendshapes y 10 clases de expresion. Su pipeline declarado en Hugging Face es image-feature-extraction y esta pensado para integrarse en el proyecto personal "Lazarus PC Companion".
 
 El modelo se apoya en el ecosistema MediaPipe (etiqueta explicita en la ficha) para la malla facial, y anade una capa de clasificacion de expresiones serializada con joblib. La model card es muy breve: tres cifras destacadas y poco mas. No se publican detalles de arquitectura, dataset, proceso de entrenamiento ni metodologia de evaluacion, por lo que la mayor parte de las especificaciones tecnicas habituales figuran como no disponibles.
 
-Su relevancia actual es limitada: acumula 0 descargas y 0 likes, el repositorio ocupa 0,0 GB segun los metadatos y las dos unicas fuentes de informacion son la propia model card y los metadatos de HuggingFace. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo, el autor o el proyecto Lazarus; unicamente han aparecido resultados sin relacion tematica alguna, por lo que no se han incluido como enlaces.
+Su relevancia actual es limitada: acumula 0 descargas y 0 likes, el repositorio ocupa 0,0 GB segun los metadatos y las dos unicas fuentes de informacion son la propia model card y los metadatos de Hugging Face. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo, el autor o el proyecto Lazarus; unicamente han aparecido resultados sin relacion tematica alguna, por lo que no se han incluido como enlaces.
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ No hay informacion sobre el conjunto de datos de entrenamiento, el numero de mue
 - Deteccion de 478 puntos faciales (landmarks) sobre imagen o fotograma, segun la model card.
 - Extraccion de 52 coeficientes de blendshape en tiempo real, presumiblemente mediante el modulo de blendshapes de MediaPipe.
 - Clasificacion en 10 clases de expresion facial, segun el autor.
-- Extraccion de caracteristicas de imagen (pipeline declarado en HuggingFace), lo que permite usar la salida como vector de entrada para otros sistemas.
+- Extraccion de caracteristicas de imagen (pipeline declarado en Hugging Face), lo que permite usar la salida como vector de entrada para otros sistemas.
 - Integracion prevista con el proyecto "Lazarus PC Companion" del propio autor.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta comportamiento agentico ni razonamiento multi-paso.
@@ -83,10 +83,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Entradas/salidas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Lazarus Facial Expression & 478-Point Mesh Core | Clasificador joblib sobre features faciales | Imagen a 478 landmarks, 52 blendshapes, 10 clases | MIT | HuggingFace, 0 descargas, repo de 0,0 GB | Sin dataset ni evaluacion publicados |
+| Lazarus Facial Expression & 478-Point Mesh Core | Clasificador joblib sobre features faciales | Imagen a 478 landmarks, 52 blendshapes, 10 clases | MIT | Hugging Face, 0 descargas, repo de 0,0 GB | Sin dataset ni evaluacion publicados |
 | MediaPipe Face Landmarker (Google) | Grafo de inferencia (TFLite) | Imagen a 478 landmarks y 52 blendshapes | Apache 2.0 | Ampliamente distribuido | Es la base tecnica que probablemente reutiliza Lazarus; no incluye clasificacion de expresiones propia |
 | MediaPipe Face Mesh clasico (Google) | Grafo de inferencia (TFLite) | Imagen a 468 landmarks | Apache 2.0 | Ampliamente distribuido | Referencia de facto para malla facial en tiempo real |
-| Modelos FER sobre AffectNet / RAF-DB (varios autores) | CNN o ViT de clasificacion | Imagen a etiqueta de emocion | Variable segun autor | HuggingFace, papers con metricas publicadas | Suelen reportar exactitud en el rango del 60-90 % sobre test publicos; cifras concretas no disponibles en esta busqueda |
+| Modelos FER sobre AffectNet / RAF-DB (varios autores) | CNN o ViT de clasificacion | Imagen a etiqueta de emocion | Variable segun autor | Hugging Face, papers con metricas publicadas | Suelen reportar exactitud en el rango del 60-90 % sobre test publicos; cifras concretas no disponibles en esta busqueda |
 | DeepFace (Serengil) | Framework con varios backends | Imagen a emocion, edad, genero, embedding | MIT | GitHub, ampliamente usado | Ofrece verificacion facial ademas de emociones |
 
 No se dispone de datos verificados de parametros, contexto o rendimiento de los modelos comparados dentro de la informacion proporcionada, por lo que las celdas cuantitativas se han omitido en lugar de estimarse.
@@ -102,12 +102,12 @@ No se dispone de datos verificados de parametros, contexto o rendimiento de los 
 - Idiomas: la etiqueta "en" no tiene efecto practico, pero indica que no hay localizacion ni documentacion en castellano.
 - Licencia MIT: permite uso comercial, modificacion y redistribucion con atribucion y sin garantia. Es compatible con productos propietarios, pero el autor no ofrece ninguna garantia de funcionamiento ni de no infraccion de terceros.
 - Uso responsable: el reconocimiento de emociones a partir del rostro es una tecnologia contestada. La evidencia cientifica indica que las expresiones faciales no se corresponden de forma univoca con estados internos, y su uso en seleccion de personal, vigilancia o evaluacion educativa es juridicamente arriesgado y esta restringido o prohibido en varias jurisdicciones, incluida la Union Europea bajo el Reglamento de IA para determinados contextos.
-- La busqueda web no ha devuelto ninguna fuente independiente, paper, repositorio o demo asociada al modelo, mas alla de la propia pagina de HuggingFace.
+- La busqueda web no ha devuelto ninguna fuente independiente, paper, repositorio o demo asociada al modelo, mas alla de la propia pagina de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amithroy/lazarus-face-expression
-- Perfil del autor en HuggingFace: https://huggingface.co/amithroy
+- Modelo en Hugging Face: https://huggingface.co/amithroy/lazarus-face-expression
+- Perfil del autor en Hugging Face: https://huggingface.co/amithroy
 - MediaPipe Face Landmarker (base tecnica probable, no confirmada por el autor): https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker
 - Documentacion de joblib: https://joblib.readthedocs.io/
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados al modelo en la busqueda web realizada.

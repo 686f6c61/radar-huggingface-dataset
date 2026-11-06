@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Donghyun1228/pi05-libero-idm-lora-readout-dense-contact-20261006-view-medium` es un checkpoint de investigación para robótica publicado en HuggingFace por el usuario Donghyun1228. No se trata de un modelo de lenguaje generalista, sino de una adaptación de un modelo vision-language-action (VLA) de la familia π₀.₅ (pi05) sobre el benchmark LIBERO, orientada a manipulación robótica condicionada por lenguaje y por observaciones visuales de dos cámaras.
+El modelo `Donghyun1228/pi05-libero-idm-lora-readout-dense-contact-20261006-view-medium` es un checkpoint de investigación para robótica publicado en Hugging Face por el usuario Donghyun1228. No se trata de un modelo de lenguaje generalista, sino de una adaptación de un modelo vision-language-action (VLA) de la familia π₀.₅ (pi05) sobre el benchmark LIBERO, orientada a manipulación robótica condicionada por lenguaje y por observaciones visuales de dos cámaras.
 
 La aportación del checkpoint es metodológica: parte de un checkpoint fuente de pi05 y aplica dos adaptaciones LoRA diferenciadas. Por un lado, unos factores LoRA compartidos que se entrenan conjuntamente con dos objetivos, imitation learning (IL) e inverse dynamics model (IDM), con batch global 64 para cada pérdida. Por otro, un readout de política (identidad más rank 16) que aprende solo de la pérdida de IL. En una segunda fase, la adaptación arranca de forma independiente desde el mismo checkpoint fuente, entrena únicamente el LoRA compartido con IDM y congela el readout y los pesos base, sin destilación de conocimiento (KD).
 
@@ -18,7 +18,7 @@ El resultado se publica como un checkpoint completo de 5.000 actualizaciones (di
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (checkpoint en formato JAX/Orbax, sin variantes GGUF/AWQ/GPTQ publicadas) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (no especificada en la model card ni en los metadatos de HuggingFace) |
+| Licencia | no disponible (no especificada en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | Orbax (JAX): parámetros, estado de entrenamiento y activos de normalización en el directorio `4999/` |
 | Tamano del repositorio | 5,9 GB |
 | Pipeline declarado | robotics |
@@ -48,7 +48,7 @@ El procedimiento de entrenamiento sí está descrito con precisión. El modelo f
 
 - Investigación en manipulación robótica sobre LIBERO: el checkpoint está pensado para ejecutarse con la configuración `pi05_libero_idm_lora_readout_view_adapt` de openpi y evaluarse en las suites de LIBERO con el protocolo descrito de 40 tareas por 50 episodios por condición.
 - Estudio de adaptación LoRA con pérdida auxiliar de dinámica inversa: permite comparar experimentalmente si un LoRA entrenado solo con IDM sobre un modelo entrenado con IL e IDM mejora la representación de la política sin reentrenar los pesos base.
-- Reproducción de experimentos con procedencia verificable: el repositorio incluye `provenance.json` y el autor recomienda fijar el SHA de commit verificado de HuggingFace al restaurar el checkpoint, lo que facilita la reproducibilidad en publicaciones.
+- Reproducción de experimentos con procedencia verificable: el repositorio incluye `provenance.json` y el autor recomienda fijar el SHA de commit verificado de Hugging Face al restaurar el checkpoint, lo que facilita la reproducibilidad en publicaciones.
 - Punto de partida para fine-tuning propio en openpi: al ser un checkpoint completo con estado de entrenamiento y activos de normalización, puede reutilizarse como inicialización para nuevas adaptaciones sobre dominios de manipulación propios.
 - Evaluación comparativa de readouts de política: el diseño identidad más rank 16 frente a los pesos base permite aislar el efecto del readout en la inferencia, útil en estudios de ablación.
 - Integración en bancos de pruebas de manipulación embodied: existen paquetes públicos de evaluación para el checkpoint pi05_libero de openpi (por ejemplo, el demo de PaperBench-X de claru.ai) que incluyen tareas, evaluadores y artefactos Docker, y este checkpoint puede evaluarse con infraestructura análoga.
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Desarrollador | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-libero-idm-lora-readout-dense-contact-20261006-view-medium | Donghyun1228 | VLA pi05 con LoRA IDM y readout de política | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
-| lerobot/pi05_libero_base | LeRobot (HuggingFace) | VLA pi05 ajustado a LIBERO | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| lerobot/pi05_base | LeRobot (HuggingFace) | VLA pi05 base | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| pi05-libero-idm-lora-readout-dense-contact-20261006-view-medium | Donghyun1228 | VLA pi05 con LoRA IDM y readout de política | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
+| lerobot/pi05_libero_base | LeRobot (Hugging Face) | VLA pi05 ajustado a LIBERO | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| lerobot/pi05_base | LeRobot (Hugging Face) | VLA pi05 base | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | π₀ / π₀-FAST / π₀.₅ (openpi) | Physical Intelligence | VLA con flow matching (π₀), autorregresivo con tokenizador FAST (π₀-FAST) | no disponible | no disponible en la informacion proporcionada | Repositorio GitHub openpi |
 
 No se dispone de resultados de benchmarks comparativos entre estos modelos en la información proporcionada, por lo que no es posible establecer una comparación de rendimiento.
@@ -80,7 +80,7 @@ No se dispone de resultados de benchmarks comparativos entre estos modelos en la
 ## Limitaciones y advertencias
 
 - Estado de evaluación: el autor declara explícitamente que la publicación no implica que la evaluación esté completada ni que exista una tasa de éxito medida. No debe asumirse ningún nivel de rendimiento.
-- Licencia no especificada: ni la model card ni los metadatos de HuggingFace indican licencia, lo que impide determinar las condiciones de uso comercial o de redistribución. Es un bloqueo habitual en entornos de producción.
+- Licencia no especificada: ni la model card ni los metadatos de Hugging Face indican licencia, lo que impide determinar las condiciones de uso comercial o de redistribución. Es un bloqueo habitual en entornos de producción.
 - Trazabilidad insuficiente de la arquitectura: se desconoce el número de parámetros, la longitud de contexto y los idiomas soportados, lo que dificulta dimensionar despliegues.
 - Sesgos conocidos: no disponible. No se han publicado análisis de sesgo para este checkpoint.
 - Riesgo de alucinación: no disponible en el sentido de generación de texto. Al ser un modelo de control, el riesgo relevante es la ejecución de acciones incorrectas en el robot, especialmente fuera de la distribución de LIBERO.
@@ -92,7 +92,7 @@ No se dispone de resultados de benchmarks comparativos entre estos modelos en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-idm-lora-readout-dense-contact-20261006-view-medium
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-idm-lora-readout-dense-contact-20261006-view-medium
 - Dataset asociado: https://huggingface.co/datasets/Donghyun1228/libero-dense-contact-sweep-d2-20261002
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Checkpoint base pi05_libero de LeRobot: https://huggingface.co/lerobot/pi05_libero_base

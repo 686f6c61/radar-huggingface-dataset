@@ -75,6 +75,6 @@ No se dispone de comparativas de rendimiento entre estos modelos, ya que no hay 
 
 ## Enlaces
 
-- [HuggingFace - trinhkhng/ties_Merged_gpt2_0.5](https://huggingface.co/trinhkhng/ties_Merged_gpt2_0.5)
+- [Hugging Face - trinhkhng/ties_Merged_gpt2_0.5](https://huggingface.co/trinhkhng/ties_Merged_gpt2_0.5)
 - [Paper TIES (arXiv:2306.01708)](https://arxiv.org/abs/2306.01708)
 - [Repositorio mergekit](https://github.com/cg123/mergekit)

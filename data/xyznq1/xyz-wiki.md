@@ -2,7 +2,7 @@
 
 ## Resumen
 
-xyz-wiki no es un modelo de lenguaje, sino un servidor MCP (Model Context Protocol) con interfaz de linea de comandos que dota a un agente de una wiki que el propio modelo escribe y mantiene actualizada. Lo publica el usuario xyznq1 en HuggingFace bajo licencia MIT, con el codigo alojado en GitHub. El problema que resuelve es el de la memoria persistente y estructurada de un agente: en lugar de recuperar fragmentos sueltos en cada consulta, el modelo convierte lo que se le entrega en paginas Markdown pequenas y enlazadas, una por concepto, entidad o afirmacion, con relaciones tipadas (`is_a`, `part_of`, `contradicts`, etc.).
+xyz-wiki no es un modelo de lenguaje, sino un servidor MCP (Model Context Protocol) con interfaz de linea de comandos que dota a un agente de una wiki que el propio modelo escribe y mantiene actualizada. Lo publica el usuario xyznq1 en Hugging Face bajo licencia MIT, con el codigo alojado en GitHub. El problema que resuelve es el de la memoria persistente y estructurada de un agente: en lugar de recuperar fragmentos sueltos en cada consulta, el modelo convierte lo que se le entrega en paginas Markdown pequenas y enlazadas, una por concepto, entidad o afirmacion, con relaciones tipadas (`is_a`, `part_of`, `contradicts`, etc.).
 
 La总线queda combina BM25 sobre titulo, alias y cuerpo con un recorrido del grafo de ontologia, sin modelo de embeddings, sin base de datos vectorial y sin GPU. El unico requisito de entorno es Node.js 22.13 o superior, que aporta `node:sqlite` con FTS5; el codigo son tres archivos y no tiene dependencias npm. Las paginas son ficheros Markdown con front matter estilo OKF v0.2, de modo que el repositorio funciona con git y el indice es una cache reconstruible.
 
@@ -23,7 +23,7 @@ Es relevante ahora porque cubre el patron "LLM wiki": las respuestas del agente 
 | Entorno de ejecucion | Node.js 22.13 o superior, sin dependencias npm |
 | Transporte | MCP sobre stdio |
 | Version del esquema de pagina | OKF v0.2 |
-| Descargas / likes en HuggingFace | 0 / 0 (a 29-09-2026) |
+| Descargas / likes en Hugging Face | 0 / 0 (a 29-09-2026) |
 | Fecha de publicacion / actualizacion | 29-09-2026 / 29-09-2026 |
 
 ## Arquitectura y entrenamiento
@@ -102,7 +102,7 @@ Los resultados de busqueda web realizados no han devuelto ninguna comparativa re
 ## Limitaciones y advertencias
 
 - No es un modelo: no genera texto por si mismo. Toda la calidad del contenido depende del LLM y del agente que se conecten; el servidor solo almacena, indexa y recupera.
-- Ausencia de validacion externa: 0 descargas y 0 likes en HuggingFace en la fecha de publicacion, sin benchmarks publicados ni revision por terceros.
+- Ausencia de validacion externa: 0 descargas y 0 likes en Hugging Face en la fecha de publicacion, sin benchmarks publicados ni revision por terceros.
 - Calidad del corpus: como las respuestas del agente se archivan automaticamente como paginas, una alucinacion del LLM puede quedar persistida en la wiki y ser recuperada en consultas posteriores. El campo `verified` existe, pero por defecto vale `unverified`.
 - Sin busqueda semantica: al renunciar a los embeddings, la busqueda depende de las palabras exactas que el modelo escribio. Parafrasis, sinonimos no registrados como `aliases` o terminologia en otro idioma pueden no recuperarse; el autor asume esta limitacion y la compensa con el bloque `related` de la ontologia.
 - Idioma: la model card no declara idiomas soportados ni calidad multilingue. El rendimiento en castellano no esta documentado.
@@ -115,7 +115,7 @@ Los resultados de busqueda web realizados no han devuelto ninguna comparativa re
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/xyznq1/xyz-wiki
+- Model card en Hugging Face: https://huggingface.co/xyznq1/xyz-wiki
 - Repositorio en GitHub: https://github.com/xyznq1/xyz-wiki.git
 - Instalacion y tests: `git clone https://github.com/xyznq1/xyz-wiki.git && npm install -g ./xyz-wiki`, `cd xyz-wiki && npm test`
 - Overlay para DeepSeek Harness: `dsh/xyz-wiki.patch.yml` dentro del repositorio

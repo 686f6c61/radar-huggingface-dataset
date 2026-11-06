@@ -79,7 +79,7 @@ No disponible en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cryptojim/borg-capture-extraction-qwen3-4b
+- Modelo en Hugging Face: https://huggingface.co/Cryptojim/borg-capture-extraction-qwen3-4b
 - Repositorio del proyecto Borg: https://github.com/h3ro-dev/borg
-- Modelo base en HuggingFace: https://huggingface.co/mlx-community/Qwen3-4B-Instruct-2507-4bit
+- Modelo base en Hugging Face: https://huggingface.co/mlx-community/Qwen3-4B-Instruct-2507-4bit
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

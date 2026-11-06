@@ -92,8 +92,8 @@ No se han publicado resultados de MMLU, HumanEval, MBPP u otros benchmarks estan
 | Modelo | Parametros | Contexto | Formato y hardware | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Lottolabs/Qwen3.8-Flash-Next-Coder-P150 | no disponible (48 capas x 256 expertos x 3 matrices, 35,4 GB en BFP4) | 32.768 tokens | `.npy` con bloques BFP4 `bfp4_b`; solo Tenstorrent Blackhole P150 con Strata `tt` | qwen-community-1.0 | 0 descargas, 0 likes; repositorio de 35,4 GB |
-| ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF | no disponible (misma poda 256/512) | no disponible | GGUF IQ1_M; llama.cpp y motores compatibles | Apache-2.0 | Publico en HuggingFace |
-| Qwen/Qwen3.8-Flash-Next (modelo base) | no disponible | no disponible | Checkpoint original completo; 512 expertos enrutados | qwen-community-1.0 | Publico en HuggingFace |
+| ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF | no disponible (misma poda 256/512) | no disponible | GGUF IQ1_M; llama.cpp y motores compatibles | Apache-2.0 | Publico en Hugging Face |
+| Qwen/Qwen3.8-Flash-Next (modelo base) | no disponible | no disponible | Checkpoint original completo; 512 expertos enrutados | qwen-community-1.0 | Publico en Hugging Face |
 
 En rendimiento, el unico punto de comparacion publicado es GSM8K sobre los primeros 50 problemas: 45/50 con los expertos BFP4 en la P150 frente a 44/50 con el motor CUDA de Strata sobre una RTX 3090, una diferencia de un problema que no permite establecer una ventaja significativa. No hay datos comparativos de MMLU, HumanEval ni de throughput entre las tres variantes.
 
@@ -116,7 +116,7 @@ Un informe de terceros en X (David Hendrickson, @TeksEdge) menciona 34,7 tok/s d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lottolabs/Qwen3.8-Flash-Next-Coder-P150
+- Modelo en Hugging Face: https://huggingface.co/Lottolabs/Qwen3.8-Flash-Next-Coder-P150
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GGUF de origen (ISTA-DASLab, IQ1_M, Apache-2.0): https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF
 - Repositorio de Strata (backend `tt`, motor `fnx`): https://github.com/Niko1221/Strata

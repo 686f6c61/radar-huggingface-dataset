@@ -101,7 +101,7 @@ La comparativa se limita a los datos publicados en la model card; no hay informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tonymacx86PRO/rebellion-12b
+- Modelo en Hugging Face: https://huggingface.co/tonymacx86PRO/rebellion-12b
 - Version GGUF merged: https://huggingface.co/tonymacx86PRO/rebellion-12b-GGUF
 - Dataset de evaluacion: https://huggingface.co/datasets/tonymacx86PRO/dmc-lore-bench
 - Paper Active Reading: https://arxiv.org/abs/2508.09494

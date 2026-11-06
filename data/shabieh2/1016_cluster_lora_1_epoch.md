@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `shabieh2/1016_cluster_lora_1_epoch` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `shabieh2`. No se trata de un modelo de lenguaje completo, sino de un conjunto de pesos adicionales que se aplican sobre un modelo base para especializarlo. El modelo base declarado es `unsloth/Muse-Glimmer-30B`, del cual no se proporciona informacion tecnica adicional en la ficha disponible.
+El modelo `shabieh2/1016_cluster_lora_1_epoch` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `shabieh2`. No se trata de un modelo de lenguaje completo, sino de un conjunto de pesos adicionales que se aplican sobre un modelo base para especializarlo. El modelo base declarado es `unsloth/Muse-Glimmer-30B`, del cual no se proporciona informacion tecnica adicional en la ficha disponible.
 
 El repositorio tiene un tamano de 0,9 GB y utiliza la libreria PEFT (concretamente la version 0.20.0) junto con Unsloth como marco de entrenamiento. El nombre del artefacto sugiere un entrenamiento de una sola epoca ("1_epoch") y algun tipo de agrupacion o clusterizacion ("cluster"), pero la model card no documenta ni los datos de entrenamiento, ni los hiperparametros, ni el objetivo concreto del ajuste.
 
@@ -67,7 +67,7 @@ Todas las cifras son estimaciones orientativas basadas en el tamano aparente del
 
 | Modelo | Tipo | Parametros base | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shabieh2/1016_cluster_lora_1_epoch | Adaptador LoRA | modelo base etiquetado como 30B | no disponible | no disponible | HuggingFace |
+| shabieh2/1016_cluster_lora_1_epoch | Adaptador LoRA | modelo base etiquetado como 30B | no disponible | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa fiable con otros adaptadores LoRA o modelos de la misma categoria. La ausencia de licencia, de metricas y de documentacion impide una comparacion tecnica rigurosa.
@@ -85,7 +85,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shabieh2/1016_cluster_lora_1_epoch
+- Modelo en Hugging Face: https://huggingface.co/shabieh2/1016_cluster_lora_1_epoch
 - Modelo base referenciado: https://huggingface.co/unsloth/Muse-Glimmer-30B
 - Paper citado en las etiquetas (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact

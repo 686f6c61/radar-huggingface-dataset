@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Horsea es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Horsea`. La model card asociada no contiene ninguna descripcion tecnica: unicamente incluye el bloque de metadatos con la licencia `cc-by-4.0`. No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los datos de entrenamiento ni los idiomas soportados.
+Horsea es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Horsea`. La model card asociada no contiene ninguna descripcion tecnica: unicamente incluye el bloque de metadatos con la licencia `cc-by-4.0`. No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los datos de entrenamiento ni los idiomas soportados.
 
 El repositorio tiene un tamano declarado de 0,1 GB y, en el momento de la consulta, registra 0 descargas y 0 likes. No tiene pipeline declarado ni etiquetas de idioma. Estas cifras indican que se trata de un artefacto de peso reducido y sin traccion de uso constatable en la plataforma, aunque el tamano del repo no permite inferir por si solo el numero de parametros ni la arquitectura.
 
@@ -81,5 +81,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanham1lton/Horsea
+- Modelo en Hugging Face: https://huggingface.co/Ryanham1lton/Horsea
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

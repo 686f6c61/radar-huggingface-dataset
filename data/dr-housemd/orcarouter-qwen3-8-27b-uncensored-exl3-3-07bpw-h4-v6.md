@@ -101,7 +101,7 @@ No se han encontrado en la informacion proporcionada modelos comparables de terc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dr-housemd/orcarouter-Qwen3.8-27B-Uncensored-exl3-3.07bpw-H4-V6
+- Repositorio en Hugging Face: https://huggingface.co/dr-housemd/orcarouter-Qwen3.8-27B-Uncensored-exl3-3.07bpw-H4-V6
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Release derivada FP8: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8
 - Release derivada GGUF: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-GGUF

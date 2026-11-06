@@ -70,10 +70,10 @@ Los datos de contexto y licencia de los modelos alternativos que figuran a conti
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-Instruct-RETA (i1-GGUF) | ~4.000 millones (base Qwen3-4B) | no disponible | Seguridad de agentes y tool use | apache-2.0 | GGUF en HuggingFace |
-| Qwen3-4B-Instruct (base sin ajustar) | ~4.000 millones | no disponible | Asistente general | apache-2.0 | safetensors y GGUF en HuggingFace |
-| Llama 3.2 3B Instruct | ~3.000 millones | no disponible | Asistente general | Licencia comunitaria de Llama 3.2 | pesos en HuggingFace |
-| Phi-4-mini-instruct | ~3.800 millones | no disponible | Asistente general, razonamiento | MIT | pesos en HuggingFace |
+| Qwen3-4B-Instruct-RETA (i1-GGUF) | ~4.000 millones (base Qwen3-4B) | no disponible | Seguridad de agentes y tool use | apache-2.0 | GGUF en Hugging Face |
+| Qwen3-4B-Instruct (base sin ajustar) | ~4.000 millones | no disponible | Asistente general | apache-2.0 | safetensors y GGUF en Hugging Face |
+| Llama 3.2 3B Instruct | ~3.000 millones | no disponible | Asistente general | Licencia comunitaria de Llama 3.2 | pesos en Hugging Face |
+| Phi-4-mini-instruct | ~3.800 millones | no disponible | Asistente general, razonamiento | MIT | pesos en Hugging Face |
 
 La diferencia principal de este modelo frente a las alternativas es su especializacion declarada en seguridad de agentes y prompt injection, terreno en el que los modelos generalistas no incorporan defensas especificas. No se dispone de datos de rendimiento que permitan cuantificar esa ventaja.
 

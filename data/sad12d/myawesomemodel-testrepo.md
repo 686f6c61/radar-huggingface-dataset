@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo SAD12D/MyAwesomeModel-TestRepo es un repositorio de HuggingFace creado por el usuario SAD12D con fines aparentemente de prueba, dado que no registra descargas ni interacciones y su tamaño es de 0.0 GB. La model card describe un modelo denominado "MyAwesomeModel" que, según su autor, ha experimentado una actualización significativa en capacidades de razonamiento e inferencia, con mejoras en matemáticas, programación y lógica general. Sin embargo, la información técnica disponible es extremadamente limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los datos de entrenamiento. El repositorio está etiquetado con la licencia MIT y la librería transformers, y su pipeline declarado es feature-extraction, aunque la descripción sugiere capacidades de generación de texto y razonamiento. Dada la ausencia de artefactos publicados y la naturaleza de prueba del repositorio, cualquier uso en producción debe considerarse no recomendable hasta que se publique información verificable.
+El modelo SAD12D/MyAwesomeModel-TestRepo es un repositorio de Hugging Face creado por el usuario SAD12D con fines aparentemente de prueba, dado que no registra descargas ni interacciones y su tamaño es de 0.0 GB. La model card describe un modelo denominado "MyAwesomeModel" que, según su autor, ha experimentado una actualización significativa en capacidades de razonamiento e inferencia, con mejoras en matemáticas, programación y lógica general. Sin embargo, la información técnica disponible es extremadamente limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los datos de entrenamiento. El repositorio está etiquetado con la licencia MIT y la librería transformers, y su pipeline declarado es feature-extraction, aunque la descripción sugiere capacidades de generación de texto y razonamiento. Dada la ausencia de artefactos publicados y la naturaleza de prueba del repositorio, cualquier uso en producción debe considerarse no recomendable hasta que se publique información verificable.
 
 ## Especificaciones tecnicas
 
@@ -90,6 +90,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/SAD12D/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/SAD12D/MyAwesomeModel-TestRepo
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código) en la información proporcionada.

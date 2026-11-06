@@ -63,9 +63,9 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo | 124M | no disponible | no disponible | HuggingFace |
-| GPT-2 small | 124M | 1024 | MIT | HuggingFace |
-| DistilGPT-2 | 82M | 1024 | MIT | HuggingFace |
+| Este modelo | 124M | no disponible | no disponible | Hugging Face |
+| GPT-2 small | 124M | 1024 | MIT | Hugging Face |
+| DistilGPT-2 | 82M | 1024 | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -77,7 +77,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/jpn-100mb-after-jpn-baseline-newlexicon-zipf-ckpt4000_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/jpn-100mb-after-jpn-baseline-newlexicon-zipf-ckpt4000_seed3407
 - Modelo base: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-jpn-baseline-100mb_seed3407
 - Modelo similar (inglés después de japonés): https://huggingface.co/fpadovani/eng-100mb-after-jpn-baseline-newlexicon-zipf-ckpt4000_seed3407
 - Modelo similar (japonés después de inglés): https://huggingface.co/fpadovani/jpn-100mb-after-eng-baseline-newlexicon-zipf-ckpt4000_seed3407

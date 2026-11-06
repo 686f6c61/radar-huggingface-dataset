@@ -6,7 +6,7 @@ WUSA-SDZWA-v1 es un clasificador de imágenes basado en EfficientNet V2 Medium, 
 
 La relevancia de este modelo radica en su aplicación directa al análisis de cámaras trampa en ecología y conservación. Al estar optimizado para imágenes de fauna silvestre en el oeste norteamericano, permite automatizar la identificación de especies en proyectos de monitoreo a gran escala, reduciendo el trabajo manual de revisión de millones de fotografías. Su tamaño reducido (0,2 GB) y su arquitectura EfficientNet V2 Medium lo hacen adecuado para despliegue en entornos con recursos limitados.
 
-El repositorio en HuggingFace incluye el checkpoint del modelo en formato PyTorch (`.pt`), un archivo de clases (`classes.csv`), un script de inferencia (`inference.py`) y una tabla de taxonomía (`taxonomy.csv`). La licencia indicada es MIT, aunque se recomienda revisar los términos originales del desarrollador.
+El repositorio en Hugging Face incluye el checkpoint del modelo en formato PyTorch (`.pt`), un archivo de clases (`classes.csv`), un script de inferencia (`inference.py`) y una tabla de taxonomía (`taxonomy.csv`). La licencia indicada es MIT, aunque se recomienda revisar los términos originales del desarrollador.
 
 ## Especificaciones técnicas
 
@@ -71,7 +71,7 @@ No se han identificado modelos comparables en la informacion proporcionada. El m
 
 ## Enlaces
 
-- [Repositorio HuggingFace: Addax-Data-Science/WUSA-SDZWA-v1](https://huggingface.co/Addax-Data-Science/WUSA-SDZWA-v1)
+- [Repositorio Hugging Face: Addax-Data-Science/WUSA-SDZWA-v1](https://huggingface.co/Addax-Data-Science/WUSA-SDZWA-v1)
 - [AddaxAI - plataforma de integracion](https://addaxdatascience.com/addaxai/)
 - [Addax Data Science - web principal](https://addaxdatascience.com/)
 - [GitHub del laboratorio de conservacion de SDZWA](https://github.com/conservationtechlab)

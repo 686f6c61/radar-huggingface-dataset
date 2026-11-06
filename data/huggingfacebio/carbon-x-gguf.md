@@ -102,7 +102,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HuggingFaceBio/Carbon-X-GGUF
+- Modelo en Hugging Face: https://huggingface.co/HuggingFaceBio/Carbon-X-GGUF
 - Modelo base Carbon-X: https://huggingface.co/HuggingFaceBio/Carbon-X
 - Organizacion Hugging Face Bio: https://huggingface.co/HuggingFaceBio
 - Blog / Space de presentacion: https://huggingface.co/spaces/HuggingFaceBio/Carbon-X-Release

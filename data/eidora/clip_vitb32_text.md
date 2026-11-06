@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EIDORA/CLIP_ViTB32_Text
+- Modelo en Hugging Face: https://huggingface.co/EIDORA/CLIP_ViTB32_Text
 - Variante de imagen: https://huggingface.co/EIDORA/CLIP_ViTB32_Image
 - Variante multimodal: https://huggingface.co/EIDORA/CLIP_ViTB32_Multimodal
 - Checkpoint upstream: https://huggingface.co/openai/clip-vit-base-patch32

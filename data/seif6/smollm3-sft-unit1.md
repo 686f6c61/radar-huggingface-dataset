@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Seif6/smollm3-sft-unit1 es un modelo de generación de texto de 3.075.098.624 parámetros (≈3,07 mil millones) publicado en HuggingFace por el usuario Seif6. Por el identificador del repositorio y la etiqueta `smollm3`, todo apunta a un ajuste fino supervisado (SFT, mediante la librería TRL) sobre la familia SmolLM3, aunque la model card no confirma explícitamente el modelo base, los datos de entrenamiento ni la receta utilizada.
+Seif6/smollm3-sft-unit1 es un modelo de generación de texto de 3.075.098.624 parámetros (≈3,07 mil millones) publicado en Hugging Face por el usuario Seif6. Por el identificador del repositorio y la etiqueta `smollm3`, todo apunta a un ajuste fino supervisado (SFT, mediante la librería TRL) sobre la familia SmolLM3, aunque la model card no confirma explícitamente el modelo base, los datos de entrenamiento ni la receta utilizada.
 
-El repositorio es un caso típico de "model card autogenerada": el README conserva la plantilla por defecto de HuggingFace con la mayoría de secciones marcadas como `[More Information Needed]`. No se declaran licencia, idiomas, contexto, datos de entrenamiento ni resultados de evaluación, y el modelo acumula 0 descargas y 0 likes en el momento de la consulta.
+El repositorio es un caso típico de "model card autogenerada": el README conserva la plantilla por defecto de Hugging Face con la mayoría de secciones marcadas como `[More Information Needed]`. No se declaran licencia, idiomas, contexto, datos de entrenamiento ni resultados de evaluación, y el modelo acumula 0 descargas y 0 likes en el momento de la consulta.
 
 Su relevancia es, por tanto, la de un artefacto experimental de bajo perfil: útil para quien quiera inspeccionar o reutilizar un checkpoint SFT de ~3B en formato safetensors, pero sin garantías documentales sobre procedencia, licencia o calidad. Cualquier uso en producción exige una validación propia previa.
 
@@ -25,7 +25,7 @@ Su relevancia es, por tanto, la de un artefacto experimental de bajo perfil: út
 
 No hay información publicada sobre la arquitectura interna, la longitud de contexto nativa, la composición del dataset de entrenamiento ni el número de tokens utilizados. Las únicas pistas son las etiquetas del repositorio: `smollm3`, `trl` y `sft`, que indican que el checkpoint se ha producido mediante ajuste fino supervisado con TRL sobre un modelo de la familia SmolLM3. El tamaño del repositorio (6,2 GB) es coherente con pesos en bf16/fp16 (≈6,15 GB para 3,07 B de parámetros), lo que sugiere que no se ha aplicado cuantización a los pesos publicados.
 
-La model card no documenta hiperparámetros de entrenamiento (régimen de precisión, learning rate, número de épocas, tamaño de batch), ni si hubo etapas de alineación adicionales (RLHF/DPO), ni innovaciones técnicas como decodificación especulativa o mecanismos de atención lineal. La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono citado en la plantilla de HuggingFace, no a un paper del modelo.
+La model card no documenta hiperparámetros de entrenamiento (régimen de precisión, learning rate, número de épocas, tamaño de batch), ni si hubo etapas de alineación adicionales (RLHF/DPO), ni innovaciones técnicas como decodificación especulativa o mecanismos de atención lineal. La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono citado en la plantilla de Hugging Face, no a un paper del modelo.
 
 ## Capacidades
 
@@ -88,7 +88,7 @@ La diferencia práctica frente a las alternativas no está en el tamaño (todos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Seif6/smollm3-sft-unit1
+- Hugging Face: https://huggingface.co/Seif6/smollm3-sft-unit1
 - Paper citado en las etiquetas (Lacoste et al., estimación de emisiones de carbono, no específico del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la plantilla: https://ml2co2.github.io/impact (enlace original de la model card: https://mlco2.github.io/impact)
 - Repositorio de código, paper del modelo, demo y dataset de entrenamiento: no disponibles en la información proporcionada.

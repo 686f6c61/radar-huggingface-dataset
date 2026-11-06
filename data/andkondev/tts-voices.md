@@ -43,7 +43,7 @@ La separación en tres grafos ONNX para Pocket (111,86 MB, 22,62 MB y 16,39 MB) 
 
 ## Capacidades
 
-- Síntesis de voz a partir de texto (pipeline `text-to-speech` declarado en HuggingFace), con dos familias de modelos independientes en el mismo repositorio.
+- Síntesis de voz a partir de texto (pipeline `text-to-speech` declarado en Hugging Face), con dos familias de modelos independientes en el mismo repositorio.
 - Multivoz: 8 voces Kitten (Bruno, Luna, Jasper, Rosie, Hugo, Kiki, Leo, Bella) y 4 voces Pocket (Jane, Azelma, George, Michael), seleccionables cargando el `.npz` o `.kv` correspondiente.
 - Ejecución en navegador: los grafos Pocket están explícitamente convertidos para runtime web (ONNX + INT8), lo que habilita inferencia en cliente sin backend.
 - Ejecución en CPU: el tamaño del grafo Kitten en fp32 (56,77 MB) permite inferencia sin GPU.
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - CPU y consumer: es el escenario natural. Kitten está pensado para ejecución en CPU y Pocket se distribuye convertido para runtime de navegador. Se estima un uso de RAM del orden de unos cientos de MB contando runtime y buffers, aunque el autor no publica cifras.
 - Opciones de despliegue: ONNX Runtime (Python, C++, C#) para los `.onnx`; ONNX Runtime Web o WebAssembly para el caso navegador; `PocketTTS.cpp` (VolgaGerm) como runtime C++ de referencia para Pocket. No se proporcionan artefactos GGUF ni integraciones con llama.cpp, Ollama, vLLM o TGI, que además no aplican a este tipo de modelos.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas ni en la model card ni en los metadatos del repositorio.
-- Almacenamiento: el repositorio completo ocupa 0,2 GB según HuggingFace.
+- Almacenamiento: el repositorio completo ocupa 0,2 GB según Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -107,7 +107,7 @@ Alternativas externas de la misma categoría (TTS ligero, ejecutable en CPU): Ko
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andkondev/tts-voices
+- Repositorio en Hugging Face: https://huggingface.co/andkondev/tts-voices
 - Fichero de licencias del repositorio: https://huggingface.co/andkondev/tts-voices/blob/main/LICENSES.md
 - Modelo Kitten de origen: https://huggingface.co/KittenML/kitten-tts-nano-0.8-fp32 (revisión `7a1db645b1f3ab9420761d87428e042b9cec3f26`)
 - Modelo Pocket de origen: https://huggingface.co/kyutai/pocket-tts (checkpoint `english_drifting_26-09`)

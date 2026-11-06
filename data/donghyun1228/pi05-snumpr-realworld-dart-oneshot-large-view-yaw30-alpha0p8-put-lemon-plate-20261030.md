@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`pi05-snumpr-...-put-lemon-plate`) | no disponible | no disponible | sin evaluacion en robot | Apache 2.0 | HuggingFace, 0 descargas |
+| Este checkpoint (`pi05-snumpr-...-put-lemon-plate`) | no disponible | no disponible | sin evaluacion en robot | Apache 2.0 | Hugging Face, 0 descargas |
 | `snumpr-iclr27-v1/9999` (base SNUMPR VLA) | no disponible | no disponible | no disponible | no disponible | referenciado como base |
 | π0.5 (modelo original) | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Otros checkpoints DART del mismo autor (otras tareas) | no disponible | no disponible | sin evaluacion en robot | Apache 2.0 | HuggingFace |
+| Otros checkpoints DART del mismo autor (otras tareas) | no disponible | no disponible | sin evaluacion en robot | Apache 2.0 | Hugging Face |
 
 La comparacion cuantitativa con alternativas no es posible con la informacion disponible; las diferencias documentadas se limitan a la tarea, la vista de camara, el yaw virtual y el coeficiente α del merge.
 
@@ -83,7 +83,7 @@ La comparacion cuantitativa con alternativas no es posible con la informacion di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-large-view-yaw30-alpha0p8-put-lemon-plate-20261030
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-large-view-yaw30-alpha0p8-put-lemon-plate-20261030
 - Repositorio DART referenciado: `snumprlab/dart`, commit `1b23c4f42f73168c78a20b353453145e74f64711` (no se proporciona URL)
 - Codigo de adaptacion VLA: `Donghyun1228/vla_adaptation`, commit `248126e` (no se proporciona URL)
 - Modelo base: `snumpr-iclr27-v1/9999` (no se proporciona URL)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`emile2006/qwen2.5-0.5b-support-lora` es un ajuste fino (fine-tuning) del modelo Qwen2.5-0.5B-Instruct, publicado por el usuario emile2006 en HuggingFace. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, en su variante mas pequena de 0,5 mil millones de parametros, especializado presumiblemente en tareas de soporte (support), segun indica el nombre del repositorio. El entrenamiento se realizo con la libreria Unsloth, que acelera el proceso de fine-tuning aproximadamente 2x respecto a los metodos convencionales.
+`emile2006/qwen2.5-0.5b-support-lora` es un ajuste fino (fine-tuning) del modelo Qwen2.5-0.5B-Instruct, publicado por el usuario emile2006 en Hugging Face. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, en su variante mas pequena de 0,5 mil millones de parametros, especializado presumiblemente en tareas de soporte (support), segun indica el nombre del repositorio. El entrenamiento se realizo con la libreria Unsloth, que acelera el proceso de fine-tuning aproximadamente 2x respecto a los metodos convencionales.
 
 El modelo parte de la version cuantizada en 4 bits (`unsloth/Qwen2.5-0.5B-Instruct-unsloth-bnb-4bit`) como base para el ajuste. La model card es extremadamente escueta: no documenta el dataset de entrenamiento, el numero de pasos, la composicion de los datos ni los hiperparametros utilizados. Tampoco se publican resultados de evaluacion ni benchmarks. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamano de 0.0 GB, lo que sugiere que los pesos pueden no estar completamente subidos o que el repositorio esta practicamente vacio.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| emile2006/qwen2.5-0.5b-support-lora | 0,5B | no disponible (base: 32 768) | apache-2.0 | HuggingFace, 0 descargas | Fine-tuning de soporte sin benchmarks publicados |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | 32 768 | apache-2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con documentacion y evaluaciones publicadas |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32 768 | apache-2.0 | HuggingFace | Mayor capacidad, requiere mas VRAM |
-| meta-llama/Llama-3.2-1B-Instruct | 1B | 128 000 | Llama 3.2 Community License | HuggingFace | Alternativa de tamano similar con contexto mayor y licencia mas restrictiva |
+| emile2006/qwen2.5-0.5b-support-lora | 0,5B | no disponible (base: 32 768) | apache-2.0 | Hugging Face, 0 descargas | Fine-tuning de soporte sin benchmarks publicados |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | 32 768 | apache-2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con documentacion y evaluaciones publicadas |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32 768 | apache-2.0 | Hugging Face | Mayor capacidad, requiere mas VRAM |
+| meta-llama/Llama-3.2-1B-Instruct | 1B | 128 000 | Llama 3.2 Community License | Hugging Face | Alternativa de tamano similar con contexto mayor y licencia mas restrictiva |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/emile2006/qwen2.5-0.5b-support-lora
+- Hugging Face: https://huggingface.co/emile2006/qwen2.5-0.5b-support-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-0.5B-Instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Documentacion oficial de Qwen2.5: https://qwen.readthedocs.io/

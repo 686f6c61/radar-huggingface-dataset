@@ -69,7 +69,7 @@ No se dispone de informacion sobre modelos comparables dentro de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca5M_pptnudge_hfbody_1Bpt_s2_2026-09-06_22-37-25_875060-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca5M_pptnudge_hfbody_1Bpt_s2_2026-09-06_22-37-25_875060-pt
 - Run de Weights & Biases: https://wandb.ai/alexksternteam/ppt_nudge_probe_v0/runs/1o1vq2t6
 - Repositorio de nanochat: https://github.com/karpathy/nanochat
 - Checkpoints relacionados del mismo autor:

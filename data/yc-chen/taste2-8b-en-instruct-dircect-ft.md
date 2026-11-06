@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `YC-Chen/TASTE2-8B-EN-Instruct-dircect-FT` aloja un modelo identificado como TASTE2-8B, aparentemente un modelo de lenguaje de 8 mil millones de parámetros con ajuste fino instructivo en inglés. Sin embargo, la model card asociada al repositorio contiene el README de CosyVoice 2.0, un sistema de texto a voz desarrollado por FunAudioLLM, lo que genera una contradicción significativa entre el nombre del modelo y el contenido documentado. El repositorio tiene un tamaño de 78,4 GB, lo que sugiere que contiene pesos completos en formato `safetensors` y posiblemente también en `onnx`, según los tags. No se dispone de información oficial sobre la arquitectura, el entrenamiento o las capacidades reales de TASTE2-8B, ya que el autor no ha proporcionado una descripción propia del modelo. La colección de HuggingFace de YC-Chen incluye otros elementos como un dataset llamado `TASTE2-8B-EN-SFT-new`, lo que sugiere que el proyecto TASTE2 podría estar en fase de desarrollo, pero la falta de documentación impide una evaluación técnica rigurosa.
+El repositorio `YC-Chen/TASTE2-8B-EN-Instruct-dircect-FT` aloja un modelo identificado como TASTE2-8B, aparentemente un modelo de lenguaje de 8 mil millones de parámetros con ajuste fino instructivo en inglés. Sin embargo, la model card asociada al repositorio contiene el README de CosyVoice 2.0, un sistema de texto a voz desarrollado por FunAudioLLM, lo que genera una contradicción significativa entre el nombre del modelo y el contenido documentado. El repositorio tiene un tamaño de 78,4 GB, lo que sugiere que contiene pesos completos en formato `safetensors` y posiblemente también en `onnx`, según los tags. No se dispone de información oficial sobre la arquitectura, el entrenamiento o las capacidades reales de TASTE2-8B, ya que el autor no ha proporcionado una descripción propia del modelo. La colección de Hugging Face de YC-Chen incluye otros elementos como un dataset llamado `TASTE2-8B-EN-SFT-new`, lo que sugiere que el proyecto TASTE2 podría estar en fase de desarrollo, pero la falta de documentación impide una evaluación técnica rigurosa.
 
 ## Especificaciones tecnicas
 
@@ -46,12 +46,12 @@ No disponible. No se conocen modelos comparables dentro del proyecto TASTE2 ni a
 - La model card del repositorio corresponde a CosyVoice 2.0, no a TASTE2-8B, lo que indica una posible confusion o error de publicacion.
 - No hay informacion verificada sobre sesgos, alucinaciones o limitaciones de contexto.
 - La licencia no esta especificada, por lo que no se puede garantizar su uso comercial.
-- El modelo no tiene descargas ni likes en HuggingFace, lo que sugiere que es reciente o poco utilizado.
+- El modelo no tiene descargas ni likes en Hugging Face, lo que sugiere que es reciente o poco utilizado.
 - No se recomienda su uso en produccion sin una evaluacion previa exhaustiva.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/YC-Chen/TASTE2-8B-EN-Instruct-dircect-FT
+- Repositorio Hugging Face: https://huggingface.co/YC-Chen/TASTE2-8B-EN-Instruct-dircect-FT
 - Coleccion de YC-Chen: https://huggingface.co/collections/YC-Chen/taste2
 - Dataset TASTE2-8B-EN-SFT-new: https://huggingface.co/datasets/YC-Chen/TASTE2-8B-EN-SFT-new
 - Paper de CosyVoice 2.0 (referenciado en la model card): https://arxiv.org/abs/2412.10117

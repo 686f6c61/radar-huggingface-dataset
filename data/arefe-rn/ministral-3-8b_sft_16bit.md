@@ -88,7 +88,7 @@ La ventaja de este checkpoint frente a los modelos de su categoria es la licenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arefe-rn/Ministral-3-8B_SFT_16bit
+- Modelo en Hugging Face: https://huggingface.co/arefe-rn/Ministral-3-8B_SFT_16bit
 - Modelo base (Unsloth, bnb-4bit): https://huggingface.co/unsloth/Ministral-3-8B-Base-2512-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Libreria TRL: https://github.com/huggingface/trl

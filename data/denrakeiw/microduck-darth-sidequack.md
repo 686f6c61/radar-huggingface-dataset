@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Darth-sidequack es una política de control para el robot cuadrúpedo microduck, publicada por el usuario DenRakEiw en HuggingFace. No es un modelo de lenguaje ni un modelo generativo: se trata de un controlador entrenado mediante aprendizaje por refuerzo que produce una marcha (gait) continua y perpetua, es decir, se ejecuta indefinidamente hasta que se le indique lo contrario. La política consume observaciones de 61 dimensiones y emite 14 acciones a 50 Hz, lo que corresponde al número de articulaciones actuadas del microduck.
+Darth-sidequack es una política de control para el robot cuadrúpedo microduck, publicada por el usuario DenRakEiw en Hugging Face. No es un modelo de lenguaje ni un modelo generativo: se trata de un controlador entrenado mediante aprendizaje por refuerzo que produce una marcha (gait) continua y perpetua, es decir, se ejecuta indefinidamente hasta que se le indique lo contrario. La política consume observaciones de 61 dimensiones y emite 14 acciones a 50 Hz, lo que corresponde al número de articulaciones actuadas del microduck.
 
 El interés de esta ficha es limitado pero específico: es un artefacto reproducible dentro del ecosistema microduck de Pollen Robotics. La model card documenta el identificador de tarea (`Mjlab-Sprint2m-MicroDuck`), el repositorio de origen, el commit exacto, la semilla y el checkpoint utilizado, además del comando completo de entrenamiento. Esto la convierte en una referencia útil para investigación en locomoción con RL y para comparar políticas dentro del mismo banco de pruebas.
 
@@ -73,7 +73,7 @@ No se dispone de datos públicos suficientes para establecer una comparativa cua
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DenRakEiw/microduck-darth-sidequack | no disponible | observacion de 61 dimensiones, 50 Hz | no disponible | no disponible | HuggingFace, 0 descargas |
+| DenRakEiw/microduck-darth-sidequack | no disponible | observacion de 61 dimensiones, 50 Hz | no disponible | no disponible | Hugging Face, 0 descargas |
 | Otras politicas de microduck-challenges | no disponible | no disponible | no disponible | no disponible | repositorio upstream |
 | Alternativas de locomocion cuadrupeda (por ejemplo, politicas de ANYmal o Unitree) | no disponible | no disponible | no disponible | no disponible | no comparable directamente por diferir en morfologia y espacio de acciones |
 
@@ -81,7 +81,7 @@ La comparación directa con políticas de otros cuadrúpedos no es metodológica
 
 ## Limitaciones y advertencias
 
-- La licencia no está declarada en HuggingFace, lo que impide determinar si el uso comercial está permitido. Cualquier uso en producción requiere aclarar este punto con el autor.
+- La licencia no está declarada en Hugging Face, lo que impide determinar si el uso comercial está permitido. Cualquier uso en producción requiere aclarar este punto con el autor.
 - El repositorio tiene 0 descargas y 0 likes, sin evidencia pública de validación por terceros ni de despliegue real en hardware.
 - No hay benchmarks, métricas de recompensa ni tasas de éxito publicadas; el rendimiento real de la marcha es desconocido.
 - La política es específica para la tarea `Mjlab-Sprint2m-MicroDuck` y para la morfología del microduck: no es transferible a otros robots sin reentrenamiento.
@@ -94,7 +94,7 @@ La comparación directa con políticas de otros cuadrúpedos no es metodológica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DenRakEiw/microduck-darth-sidequack
+- Modelo en Hugging Face: https://huggingface.co/DenRakEiw/microduck-darth-sidequack
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/pollen-robotics/microduck-challenges
 - Commit de entrenamiento declarado: `76e5b3fa1` en la rama `denrakeiw` de `microduck-challenges`

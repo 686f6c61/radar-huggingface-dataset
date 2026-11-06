@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| magnitudedev/LFM2.5-2.6B-DSpark-GGUF | 327.707.521 (borrador) | No disponible | GGUF | lfm1.0 | HuggingFace, 0 descargas |
-| LiquidAI/LFM2.5-2.6B-DSpark-GGUF | No disponible | No disponible | GGUF | No disponible | HuggingFace (origen del artefacto) |
+| magnitudedev/LFM2.5-2.6B-DSpark-GGUF | 327.707.521 (borrador) | No disponible | GGUF | lfm1.0 | Hugging Face, 0 descargas |
+| LiquidAI/LFM2.5-2.6B-DSpark-GGUF | No disponible | No disponible | GGUF | No disponible | Hugging Face (origen del artefacto) |
 | Otros borradores de decodificacion especulativa (EAGLE-3, Medusa) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento ni de especificaciones comparables en la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/magnitudedev/LFM2.5-2.6B-DSpark-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/magnitudedev/LFM2.5-2.6B-DSpark-GGUF
 - GGUF original de LiquidAI: https://huggingface.co/LiquidAI/LFM2.5-2.6B-DSpark-GGUF/tree/7bc2896af56d82ccc7e156800197408db464d63b
 - Configuracion DSpark en SGLang: https://github.com/sgl-project/sglang/blob/264d1c20153cadc921670b982e6531d9800353e6/python/sglang/srt/speculative/dspark_components/dspark_config.py
 - Implementacion DFlash en SGLang: https://github.com/sgl-project/sglang/blob/264d1c20153cadc921670b982e6531d9800353e6/python/sglang/srt/models/dflash.py

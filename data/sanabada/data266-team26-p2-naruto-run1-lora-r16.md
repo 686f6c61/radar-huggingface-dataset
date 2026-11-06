@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks adicionales (FID, evaluacion humana
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este LoRA (team26, r16) | LoRA sobre SD 1.5 | 3,19M entrenables | no aplica | KID 0,1307; CLIP 22,92 | CreativeML OpenRAIL-M (uso no comercial declarado) | HuggingFace, 13 descargas |
+| Este LoRA (team26, r16) | LoRA sobre SD 1.5 | 3,19M entrenables | no aplica | KID 0,1307; CLIP 22,92 | CreativeML OpenRAIL-M (uso no comercial declarado) | Hugging Face, 13 descargas |
 | SD 1.5 base | Difusion texto-a-imagen | ~860M UNet | no aplica | KID 0,1151; CLIP 26,05 | CreativeML OpenRAIL-M | Ampliamente disponible |
-| Otros LoRAs de estilo anime sobre SD 1.5 | LoRA sobre SD 1.5 | variable | no aplica | no disponible | variable (habitualmente CreativeML OpenRAIL-M) | HuggingFace / Civitai |
+| Otros LoRAs de estilo anime sobre SD 1.5 | LoRA sobre SD 1.5 | variable | no aplica | no disponible | variable (habitualmente CreativeML OpenRAIL-M) | Hugging Face / Civitai |
 
 No se dispone de datos de benchmarks de LoRAs alternativos de estilo anime en la informacion proporcionada, por lo que la comparacion cuantitativa con ellos no esta disponible.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks de LoRAs alternativos de estilo anime en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanabada/data266-team26-p2-naruto-run1-lora-r16
+- Modelo en Hugging Face: https://huggingface.co/sanabada/data266-team26-p2-naruto-run1-lora-r16
 - Modelo base: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Dataset de entrenamiento: https://huggingface.co/datasets/lambdalabs/naruto-blip-captions
 - Libreria diffusers: https://github.com/huggingface/diffusers

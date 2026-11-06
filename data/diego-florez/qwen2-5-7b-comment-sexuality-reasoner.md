@@ -92,7 +92,7 @@ El modelo fine‑tuneado supera al base y al de 32B en la tarea específica, per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diego-florez/Qwen2.5-7B-Comment-Sexuality-Reasoner
+- Modelo en Hugging Face: https://huggingface.co/diego-florez/Qwen2.5-7B-Comment-Sexuality-Reasoner
 - Modelo base (Qwen2.5-7B-Instruct): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Informe técnico de Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115
 - Blog de Qwen sobre Qwen2.5: https://qwen.ai/blog?id=qwen2.5

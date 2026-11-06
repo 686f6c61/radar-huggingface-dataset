@@ -1,7 +1,7 @@
 # likhithboss/orpheus-hi-emotion-lora-v0
 
 ## Resumen
-El modelo `likhithboss/orpheus-hi-emotion-lora-v0` es un ajuste fino (fine-tuning) de tipo LoRA sobre el modelo base `canopylabs/3b-hi-pretrain-research_release`, un modelo de lenguaje de 3.78 mil millones de parámetros basado en arquitectura Llama. Fue desarrollado por el usuario `likhithboss` y entrenado con las librerías Unsloth y TRL de HuggingFace, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un fine-tuning convencional. El modelo se distribuye bajo licencia Apache 2.0 y está orientado al idioma inglés.
+El modelo `likhithboss/orpheus-hi-emotion-lora-v0` es un ajuste fino (fine-tuning) de tipo LoRA sobre el modelo base `canopylabs/3b-hi-pretrain-research_release`, un modelo de lenguaje de 3.78 mil millones de parámetros basado en arquitectura Llama. Fue desarrollado por el usuario `likhithboss` y entrenado con las librerías Unsloth y TRL de Hugging Face, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un fine-tuning convencional. El modelo se distribuye bajo licencia Apache 2.0 y está orientado al idioma inglés.
 
 A pesar de su nombre, no se dispone de información pública sobre el conjunto de datos utilizado, las capacidades específicas o los benchmarks de rendimiento. El repositorio contiene 15.2 GB de pesos en formato safetensors, lo que sugiere que se han fusionado los adaptadores LoRA con el modelo base, aunque no se especifica explícitamente. La relevancia de este modelo radica en su potencial como punto de partida para tareas de generación de texto en inglés, pero la falta de documentación limita su evaluación objetiva.
 
@@ -18,7 +18,7 @@ A pesar de su nombre, no se dispone de información pública sobre el conjunto d
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
-El modelo es un fine-tuning LoRA sobre `canopylabs/3b-hi-pretrain-research_release`, que a su vez es un modelo de lenguaje de 3B parámetros con arquitectura Llama. El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, lo que indica el uso de técnicas de optimización de memoria y velocidad. No se han publicado detalles sobre el dataset de entrenamiento, el número de tokens, ni si se aplicaron métodos como RLHF o DPO. Tampoco se documentan innovaciones técnicas específicas más allá del uso de LoRA y Unsloth.
+El modelo es un fine-tuning LoRA sobre `canopylabs/3b-hi-pretrain-research_release`, que a su vez es un modelo de lenguaje de 3B parámetros con arquitectura Llama. El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, lo que indica el uso de técnicas de optimización de memoria y velocidad. No se han publicado detalles sobre el dataset de entrenamiento, el número de tokens, ni si se aplicaron métodos como RLHF o DPO. Tampoco se documentan innovaciones técnicas específicas más allá del uso de LoRA y Unsloth.
 
 ## Capacidades
 - No se dispone de información pública sobre las capacidades específicas del modelo.
@@ -56,5 +56,5 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 - El repositorio tiene 0 descargas y 0 likes, lo que sugiere que es un modelo reciente y poco validado por la comunidad.
 
 ## Enlaces
-- [HuggingFace: likhithboss/orpheus-hi-emotion-lora-v0](https://huggingface.co/likhithboss/orpheus-hi-emotion-lora-v0)
+- [Hugging Face: likhithboss/orpheus-hi-emotion-lora-v0](https://huggingface.co/likhithboss/orpheus-hi-emotion-lora-v0)
 - [GitHub: canopyai/Orpheus-TTS](https://github.com/canopyai/Orpheus-TTS) (referencia potencial, aunque no se confirma relación directa con este modelo)

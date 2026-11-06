@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sujitvasanth/Parakeet-110M-MNN-INT8
+- Repositorio Hugging Face: https://huggingface.co/sujitvasanth/Parakeet-110M-MNN-INT8
 - Modelo base NVIDIA: https://huggingface.co/nvidia/parakeet-tdt_ctc-110m
 - Pesos fuente FP16 (AbijahKaj): https://huggingface.co/AbijahKaj/parakeet-tdt-110m-web
 - Referencia independiente sherpa-onnx: https://huggingface.co/csukuangfj/sherpa-onnx-nemo-parakeet_tdt_ctc_110m-en-36000

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-malcolmrey/moss es un modelo publicado en HuggingFace por el usuario Malcolm Reynolds. La model card asociada está prácticamente vacía: solo declara la licencia Apache 2.0, sin descripción, pipeline, idiomas ni especificaciones técnicas. El repositorio ocupa 1,4 GB, cuenta con 12 likes y 0 descargas, y fue creado el 17 de octubre de 2026 y actualizado al día siguiente.
+malcolmrey/moss es un modelo publicado en Hugging Face por el usuario Malcolm Reynolds. La model card asociada está prácticamente vacía: solo declara la licencia Apache 2.0, sin descripción, pipeline, idiomas ni especificaciones técnicas. El repositorio ocupa 1,4 GB, cuenta con 12 likes y 0 descargas, y fue creado el 17 de octubre de 2026 y actualizado al día siguiente.
 
 El autor mantiene otros modelos, entre ellos malcolmrey/moss-serenity, descrito como un full finetune de MOSS-Image Base, un modelo texto-a-imagen de OpenMOSS con control de layout nativo. Es plausible que malcolmrey/moss pertenezca a la misma familia o comparta base, pero la información disponible no lo confirma. Por tanto, no se puede afirmar que sea un modelo de imagen, de texto u otra modalidad.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| malcolmrey/moss | No disponible | No disponible | No disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| malcolmrey/moss-serenity | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| malcolmrey/moss | No disponible | No disponible | No disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| malcolmrey/moss-serenity | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | MOSS-Image Base (OpenMOSS) | No disponible | No disponible | No disponible | No disponible | openmoss.ai |
 
 No se dispone de datos suficientes para una comparativa técnica rigurosa. La única comparación posible es cualitativa: moss-serenity documenta su proceso de entrenamiento (24.000 pasos, RTX 5090, maltrainer) y su base (MOSS-Image Base), mientras que malcolmrey/moss no documenta nada.

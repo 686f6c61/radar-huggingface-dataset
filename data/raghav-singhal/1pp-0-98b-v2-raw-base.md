@@ -27,7 +27,7 @@ La arquitectura es un decoder transformer denso de 24 capas con hidden size de 1
 
 El preentrenamiento se realizó sobre los documentos originales de DCLM-edu, con pérdida calculada sobre todos los tokens del documento y sobre `<|endoftext|>`. Se usaron los primeros 18.779 pasos del flujo alineado por pasos de 1PP (39,38B posiciones de token), que coinciden con los primeros pasos del recorrido principal de 31.777 pasos en el mismo orden. El batch global fue de 512 secuencias × 4.096 tokens, con enmascaramiento de atención entre documentos. El optimizador es Muon (shape scaling, LR matricial 0,005) combinado con Adam para el resto de parámetros (LR 2,3e-3 para embeddings y capa de salida, 3e-3 para normas), con warmup de 1.181 pasos, fase constante y decaimiento lineal en los últimos 1.877 pasos hasta 1/100, weight decay 0,1, init std 0,0103 y precisión bf16.
 
-La pérdida de validación del checkpoint final, medida por token sobre 2.433 documentos retenidos, es de 2,634 para texto de asistente, 2,664 para texto de usuario y 2,498 para texto de documento. Los pesos de HuggingFace se verificaron contra el checkpoint original de Megatron recomputando pérdidas de validación, con diferencias absolutas de 0,0017 y 0,0016 en los dos conjuntos de comprobación, lo que confirma la fidelidad de la conversión.
+La pérdida de validación del checkpoint final, medida por token sobre 2.433 documentos retenidos, es de 2,634 para texto de asistente, 2,664 para texto de usuario y 2,498 para texto de documento. Los pesos de Hugging Face se verificaron contra el checkpoint original de Megatron recomputando pérdidas de validación, con diferencias absolutas de 0,0017 y 0,0016 en los dos conjuntos de comprobación, lo que confirma la fidelidad de la conversión.
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ La pérdida de validación del checkpoint final, medida por token sobre 2.433 do
 - Estudio del efecto de la máscara de pérdida: al ser la condición raw, es la referencia frente a la que se mide cuánto cambia el modelo cuando la pérdida se concentra en tokens de asistente.
 - Investigación sobre contaminación y empaquetado de datos: el autor documenta que el flujo raw contiene un documento menos que el empaquetado original en 60 pasos de los 31.777 totales, lo que permite analizar el impacto de diferencias mínimas en la composición del corpus.
 - Baseline para ajuste fino supervisado: al ser un checkpoint base con licencia Apache 2.0 y tokenizador SmolLM2, puede usarse como punto de partida en experimentos de SFT a pequeña escala con presupuesto de cómputo reducido.
-- Validación de pipelines de conversión Megatron a HuggingFace: las pérdidas de referencia publicadas (2,6327 y 2,4996 en los conjuntos val50m y raw_val50m) permiten comprobar la corrección de conversiones propias.
+- Validación de pipelines de conversión Megatron a Hugging Face: las pérdidas de referencia publicadas (2,6327 y 2,4996 en los conjuntos val50m y raw_val50m) permiten comprobar la corrección de conversiones propias.
 - Docencia y divulgación sobre preentrenamiento: su tamaño (menos de 1B de parámetros) y su receta completamente documentada lo hacen adecuado para explicar Muon, el enmascaramiento entre documentos o el alineamiento de pasos en un curso práctico.
 - Análisis de la dinámica de optimizadores: la combinación de Muon con Adam y el esquema de decaimiento lineal están especificados con precisión, lo que facilita replicar o contrastar curvas de entrenamiento con los logs de wandb publicados.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - En fp32: unos 4 GB para pesos, con requisitos totales en torno a 5-6 GB.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para bf16; una RTX 4090, L4 o A10 bastan sobradamente. Para servir en paralelo con vLLM o TGI, una A100 o H100 permiten mayor throughput por instancia.
 - Cabe en GPU de consumo: sí, en RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB, RTX 4070, RTX 4080 y RTX 4090. En GPUs de 6-8 GB puede requerir cuantización a 8 bits o 4 bits.
-- Opciones de despliegue: transformers (librería de referencia), text-generation-inference (declarado en la model card), vLLM, llama.cpp y Ollama previa conversión a GGUF, y endpoints compatibles con la API de HuggingFace.
+- Opciones de despliegue: transformers (librería de referencia), text-generation-inference (declarado en la model card), vLLM, llama.cpp y Ollama previa conversión a GGUF, y endpoints compatibles con la API de Hugging Face.
 - Latencia y throughput estimados: no disponible (el autor no publica mediciones).
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ La comparación con modelos de propósito general no puede cuantificarse porque 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-raw-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-raw-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (wandb, proyecto 1pp-training): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de ajuste (wandb, proyecto 1pp-sft): https://wandb.ai/raghav_singhal/1pp-sft

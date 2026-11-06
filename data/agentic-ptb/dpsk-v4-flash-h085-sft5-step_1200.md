@@ -58,8 +58,8 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace |
-| agentic-ptb/dpsk-v4-flash.h085.sft5.step_1200 | 9,4B | no disponible | no disponible | HuggingFace |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face |
+| agentic-ptb/dpsk-v4-flash.h085.sft5.step_1200 | 9,4B | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -72,5 +72,5 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- [HuggingFace - agentic-ptb/dpsk-v4-flash.h085.sft5.step_1200](https://huggingface.co/agentic-ptb/dpsk-v4-flash.h085.sft5.step_1200)
+- [Hugging Face - agentic-ptb/dpsk-v4-flash.h085.sft5.step_1200](https://huggingface.co/agentic-ptb/dpsk-v4-flash.h085.sft5.step_1200)
 - [Modelo base - Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base)

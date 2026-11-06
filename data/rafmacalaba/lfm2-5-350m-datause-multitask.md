@@ -71,7 +71,7 @@ La tasa de verbatim (valores emitidos que son substrings del contexto) es de 631
 - Al ser un modelo de 350M con un adaptador LoRA, el tamaño total es inferior a 1 GB en precisión FP16, por lo que puede ejecutarse en GPUs de consumo como una RTX 3060 o incluso en CPU con suficiente RAM.
 - No se especifican requisitos exactos de VRAM, pero se estima que un modelo de 350M en FP16 requiere aproximadamente 700 MB de memoria, y en cuantización INT8 alrededor de 350 MB.
 - Es viable en entornos con recursos limitados, como instancias cloud de bajo coste o dispositivos edge.
-- Para despliegue, se puede utilizar el ecosistema HuggingFace Transformers con PEFT (para cargar el adaptador LoRA) o herramientas como vLLM, aunque no se ha confirmado la compatibilidad con este adaptador específico.
+- Para despliegue, se puede utilizar el ecosistema Hugging Face Transformers con PEFT (para cargar el adaptador LoRA) o herramientas como vLLM, aunque no se ha confirmado la compatibilidad con este adaptador específico.
 - La inferencia es rápida gracias al tamaño reducido; se puede ejecutar en tiempo real en aplicaciones de procesamiento por lotes.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ No se dispone de información sobre modelos comparables con la misma tarea espec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rafmacalaba/lfm2.5-350M-datause-multitask
+- Modelo en Hugging Face: https://huggingface.co/rafmacalaba/lfm2.5-350M-datause-multitask
 - Modelo relacionado del mismo autor (encoder): https://huggingface.co/rafmacalaba/lfm2.5-Encoder-350M-datause
 - Documentación del modelo base LFM2.5-Encoder-350M (Liquid AI): https://docs.liquid.ai/lfm/models/lfm25-encoder-350m
 - Modelo base LFM2-350M (versión anterior): https://huggingface.co/LiquidAI/LFM2-350M

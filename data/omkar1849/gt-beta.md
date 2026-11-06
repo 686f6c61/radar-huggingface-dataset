@@ -2,9 +2,9 @@
 
 ## Resumen
 
-GT-Beta es un repositorio de modelo publicado en HuggingFace por el usuario omkar1849 bajo el identificador omkar1849/GT-Beta. La model card asociada unicamente contiene la declaracion de licencia MIT, sin descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni capacidades declaradas. El repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado con dos segundos de diferencia (18 de septiembre de 2026), lo que indica un repositorio placeholder o generado automaticamente sin contenido sustantivo.
+GT-Beta es un repositorio de modelo publicado en Hugging Face por el usuario omkar1849 bajo el identificador omkar1849/GT-Beta. La model card asociada unicamente contiene la declaracion de licencia MIT, sin descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni capacidades declaradas. El repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado con dos segundos de diferencia (18 de septiembre de 2026), lo que indica un repositorio placeholder o generado automaticamente sin contenido sustantivo.
 
-No se dispone de informacion sobre la arquitectura (transformer, MoE, SSM u otra), el numero de parametros, la longitud de contexto ni los idiomas soportados. La unica etiqueta tecnica relevante es region:us, que indica la region de almacenamiento en la infraestructura de HuggingFace, no una caracteristica del modelo. Tampoco se ha publicado pipeline de inferencia, lo que impide clasificarlo como modelo de generacion de texto, vision u otra tarea.
+No se dispone de informacion sobre la arquitectura (transformer, MoE, SSM u otra), el numero de parametros, la longitud de contexto ni los idiomas soportados. La unica etiqueta tecnica relevante es region:us, que indica la region de almacenamiento en la infraestructura de Hugging Face, no una caracteristica del modelo. Tampoco se ha publicado pipeline de inferencia, lo que impide clasificarlo como modelo de generacion de texto, vision u otra tarea.
 
 Dado que no existe documentacion tecnica ni pesos verificables descritos, esta ficha se limita a inventariar la informacion disponible y a marcar explicitamente como "no disponible" todo aquello que no puede confirmarse. Cualquier evaluacion de rendimiento, requisitos de hardware o comparativa con alternativas queda bloqueada hasta que el autor publique una model card completa o artefactos de pesos.
 
@@ -20,7 +20,7 @@ Dado que no existe documentacion tecnica ni pesos verificables descritos, esta f
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | no disponible |
-| Pipeline declarado | no disponible (campo vacio en HuggingFace) |
+| Pipeline declarado | no disponible (campo vacio en Hugging Face) |
 | Region de almacenamiento | us |
 | Descargas | 0 |
 | Likes | 0 |
@@ -29,7 +29,7 @@ Dado que no existe documentacion tecnica ni pesos verificables descritos, esta f
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La model card de HuggingFace no incluye ninguna seccion descriptiva mas alla del campo license: mit, por lo que se desconoce si GT-Beta emplea un transformer denso, una arquitectura de mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o un diseno hibrido.
+No se ha publicado informacion sobre la arquitectura del modelo. La model card de Hugging Face no incluye ninguna seccion descriptiva mas alla del campo license: mit, por lo que se desconoce si GT-Beta emplea un transformer denso, una arquitectura de mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o un diseno hibrido.
 
 Tampoco hay datos sobre el corpus de entrenamiento: no se indica el numero de tokens procesados, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF, DPO u otra tecnica de alineacion. No se documenta ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, atencion con ventana deslizante, etc.). La ausencia total de esta informacion impide reproducir, auditar o evaluar el modelo.
 
@@ -42,7 +42,7 @@ Tampoco hay datos sobre el corpus de entrenamiento: no se indica el numero de to
 - Vision o multimodalidad: no confirmada.
 - Soporte de tool calling o function calling: no confirmado.
 - Soporte de agentes: no confirmado.
-- Capacidades multilingues: no confirmadas, la lista de idiomas aparece vacia en HuggingFace.
+- Capacidades multilingues: no confirmadas, la lista de idiomas aparece vacia en Hugging Face.
 - Modo de razonamiento extendido (thinking mode): no confirmado.
 - Capacidades de audio: no confirmadas.
 
@@ -87,7 +87,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la longitud
 - Ausencia total de model card: solo consta el campo license: mit, sin descripcion tecnica.
 - Imposibilidad de auditar sesgos: no hay informacion sobre datos de entrenamiento ni sobre procesos de alineacion.
 - Riesgo de alucinacion: indeterminable, al no existir evaluaciones publicadas.
-- Idiomas soportados desconocidos: el campo correspondiente aparece vacio en HuggingFace.
+- Idiomas soportados desconocidos: el campo correspondiente aparece vacio en Hugging Face.
 - Longitud de contexto desconocida: no puede planificarse su uso en tareas que requieran ventanas largas.
 - Licencia MIT: permite uso comercial, modificacion y redistribucion siempre que se conserve el aviso de copyright. No obstante, la licencia no aporta ninguna garantia sobre la calidad o seguridad del modelo.
 - Estado del repositorio: creado y actualizado con dos segundos de diferencia y sin descargas, lo que sugiere un placeholder o un artefacto incompleto.
@@ -97,7 +97,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la longitud
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/omkar1849/GT-Beta
+- Hugging Face: https://huggingface.co/omkar1849/GT-Beta
 
 La busqueda web realizada no ha devuelto ningun enlace relacionado con GT-Beta ni con el autor omkar1849. Los resultados obtenidos corresponden a herramientas y servicios sin conexion con este modelo:
 

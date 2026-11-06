@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `affine-king8-0a04e3d1` es un modelo de lenguaje de tipo Mixture of Experts (MoE) publicado en HuggingFace por el usuario `everest103`. Según el tag `qwen3_5_moe`, se trata de una implementación basada en la arquitectura Qwen3.5 MoE, aunque no se dispone de información oficial que lo confirme. El modelo cuenta con 35.951.822.704 parámetros (35,95 mil millones) y su repositorio ocupa 71,9 GB, lo que sugiere un almacenamiento en precisión de 16 bits (FP16 o BF16). Fue creado el 7 de septiembre de 2026 y actualizado el mismo día.
+El modelo `affine-king8-0a04e3d1` es un modelo de lenguaje de tipo Mixture of Experts (MoE) publicado en Hugging Face por el usuario `everest103`. Según el tag `qwen3_5_moe`, se trata de una implementación basada en la arquitectura Qwen3.5 MoE, aunque no se dispone de información oficial que lo confirme. El modelo cuenta con 35.951.822.704 parámetros (35,95 mil millones) y su repositorio ocupa 71,9 GB, lo que sugiere un almacenamiento en precisión de 16 bits (FP16 o BF16). Fue creado el 7 de septiembre de 2026 y actualizado el mismo día.
 
 Se trata de un modelo con muy poca documentación pública: no se ha publicado información sobre licencia, idiomas soportados, longitud de contexto, datos de entrenamiento ni benchmarks. A pesar de ello, su tamaño y arquitectura MoE lo convierten en un candidato potencial para tareas de generación de texto y razonamiento a gran escala, aunque su uso en producción requiere precaución debido a la ausencia de especificaciones oficiales y a su bajo número de descargas (5).
 
@@ -62,7 +62,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/everest103/affine-king8-0a04e3d1
-- Perfil del usuario en HuggingFace: https://huggingface.co/everest103
+- Perfil del usuario en Hugging Face: https://huggingface.co/everest103
 - Datasets del usuario: https://huggingface.co/everest103/datasets
 
 No se han encontrado papers, blogs ni demos disponibles.

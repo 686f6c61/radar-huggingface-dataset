@@ -62,7 +62,7 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa: el 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| BlackDolphin-12B-Q6_K-GGUF | 12,25 B | no disponible | no disponible | GGUF en HuggingFace | no disponibles |
+| BlackDolphin-12B-Q6_K-GGUF | 12,25 B | no disponible | no disponible | GGUF en Hugging Face | no disponibles |
 | Alternativas de ~12B comparables | no disponible | no disponible | no disponible | no disponible | no disponibles |
 
 No se han identificado en la informacion proporcionada alternativas concretas con las que comparar de forma verificable.
@@ -79,7 +79,7 @@ No se han identificado en la informacion proporcionada alternativas concretas co
 - Reproducibilidad: al no publicarse la receta de merge ni los componentes exactos, no es posible auditar como se genero el modelo base.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/Miguel750/BlackDolphin-12B-Q6_K-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Miguel750/BlackDolphin-12B-Q6_K-GGUF
 - Modelo base: https://huggingface.co/Naphula/BlackDolphin-12B
 - Espacio de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

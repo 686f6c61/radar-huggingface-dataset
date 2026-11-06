@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ESM-FineWeb-1B-SFT es un modelo de lenguaje enmascarado de tipo *fill-mask* desarrollado por el usuario guan-wang y publicado en HuggingFace. Se enmarca dentro del proyecto OpenESM, una familia de modelos de lenguaje basados en energía (*energy-based language model*, EBM) con arquitectura propia y no convencional. El checkpoint distribuido corresponde a la etapa de ajuste supervisado (SFT) sobre el conjunto de datos FineWeb.
+ESM-FineWeb-1B-SFT es un modelo de lenguaje enmascarado de tipo *fill-mask* desarrollado por el usuario guan-wang y publicado en Hugging Face. Se enmarca dentro del proyecto OpenESM, una familia de modelos de lenguaje basados en energía (*energy-based language model*, EBM) con arquitectura propia y no convencional. El checkpoint distribuido corresponde a la etapa de ajuste supervisado (SFT) sobre el conjunto de datos FineWeb.
 
 El modelo declara 1.028.275.456 parámetros (etiquetado comercialmente como «1B», variante d26) y una longitud de contexto de 2048 tokens. Su implementación no es la clase `transformers.EsmModel` integrada en la librería, sino un código remoto propio que debe cargarse con `trust_remote_code=True`, lo que condiciona su integración en herramientas estándar.
 
@@ -31,7 +31,7 @@ En cuanto al entrenamiento, el autor indica que el modelo se entreno sobre FineW
 
 ## Capacidades
 
-- Relleno de mascaras (*fill-mask*): es la tarea declarada en el pipeline de HuggingFace. El modelo recibe una secuencia con tokens enmascarados y devuelve logits sobre el vocabulario de 32768 tokens.
+- Relleno de mascaras (*fill-mask*): es la tarea declarada en el pipeline de Hugging Face. El modelo recibe una secuencia con tokens enmascarados y devuelve logits sobre el vocabulario de 32768 tokens.
 - Modelado de lenguaje basado en energia: segun la etiqueta `energy-based-language-model`, el modelo asigna una funcion de energia a las secuencias, lo que en principio permite puntuar la coherencia de un texto ademas de predecir tokens enmascarados.
 - Contexto de 2048 tokens para el procesamiento de secuencias en una sola pasada.
 - Extraccion de representaciones contextuales mediante el codigo remoto, si el usuario accede a los estados ocultos del encoder.
@@ -93,6 +93,6 @@ La comparacion de rendimiento no es posible con la informacion disponible: el mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guan-wang/ESM-FineWeb-1B-SFT
+- Modelo en Hugging Face: https://huggingface.co/guan-wang/ESM-FineWeb-1B-SFT
 - Repositorio de codigo OpenESM: https://github.com/datamllab/openesm
 - La busqueda web realizada no ha devuelto enlaces relevantes sobre el modelo; los resultados obtenidos corresponden a entradas no relacionadas (el ave guan, el restaurante Guan de Montreal y entradas de diccionario sobre el termino «guan»).

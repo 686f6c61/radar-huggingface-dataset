@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| tiny-lm-web-98m | 98,4 M | 1.024 | MIT | HuggingFace (safetensors) | Entrenado desde cero en 2,70 B tokens; vocabulario de 16.384 tokens |
-| GPT-2 small (OpenAI) | 124 M | 1.024 | MIT | HuggingFace | Referencia historica; 1,04 bits por caracter segun el autor |
-| SmolLM-135M (HuggingFace) | 135 M | 2.048 | Apache 2.0 | HuggingFace | Entrenado con muchos mas tokens; contexto el doble |
-| TinyLlama-1.1B | 1,1 B | 2.048 | Apache 2.0 | HuggingFace | Un orden de magnitud mayor; no es comparable en coste |
+| tiny-lm-web-98m | 98,4 M | 1.024 | MIT | Hugging Face (safetensors) | Entrenado desde cero en 2,70 B tokens; vocabulario de 16.384 tokens |
+| GPT-2 small (OpenAI) | 124 M | 1.024 | MIT | Hugging Face | Referencia historica; 1,04 bits por caracter segun el autor |
+| SmolLM-135M (Hugging Face) | 135 M | 2.048 | Apache 2.0 | Hugging Face | Entrenado con muchos mas tokens; contexto el doble |
+| TinyLlama-1.1B | 1,1 B | 2.048 | Apache 2.0 | Hugging Face | Un orden de magnitud mayor; no es comparable en coste |
 
 La comparativa se limita a datos publicos basicos; no se dispone de resultados de benchmarks comunes que permitan una comparacion cuantitativa rigurosa entre estos modelos en la informacion proporcionada.
 
@@ -91,7 +91,7 @@ La comparativa se limita a datos publicos basicos; no se dispone de resultados d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lillycham/tiny-lm-web-98m
+- Modelo en Hugging Face: https://huggingface.co/lillycham/tiny-lm-web-98m
 - Repositorio del proyecto tiny-lm: https://github.com/lillycham/tiny-lm
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset SimpleStories: https://huggingface.co/datasets/SimpleStories/SimpleStories

@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/etemiz/Ostrich-27B-Qwen3.8-260816-Abliterated)
+- [Modelo en Hugging Face](https://huggingface.co/etemiz/Ostrich-27B-Qwen3.8-260816-Abliterated)
 - [Blog: Building a Beneficial AI](https://huggingface.co/blog/etemiz/building-a-beneficial-ai)
 - [Blog: From Robots That Prey to Robots That Pray](https://huggingface.co/blog/etemiz/from-robots-that-prey-to-robots-that-pray)
 - [Hoja de ejemplos de respuestas](https://sheet.zohopublic.com/sheet/published/um332e3d15f34bfe64605ad3c1b149c9f8ca4)

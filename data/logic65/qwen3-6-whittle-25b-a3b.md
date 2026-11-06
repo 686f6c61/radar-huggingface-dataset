@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento del Qwen3.6-27B dense para una comparació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/logic65/Qwen3.6-Whittle-25B-A3B
+- Modelo en Hugging Face: https://huggingface.co/logic65/Qwen3.6-Whittle-25B-A3B
 - Colección Whittle (modelos ejecutables): https://huggingface.co/collections/logic65/whittle-models-you-can-run
 - Colección Whittle (investigación y desarrollo): https://huggingface.co/collections/logic65/whittle-research-and-dev
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B

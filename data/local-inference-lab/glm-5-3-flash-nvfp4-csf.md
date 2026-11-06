@@ -71,9 +71,9 @@ Dado que se trata de una cuantizacion y no de un modelo con capacidades nuevas, 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash-NVFP4-CSF | no disponible | no disponible | NVFP4 + BF16 | LIL-1.0 (no open source, con atribucion obligatoria) | HuggingFace, requiere fork de vLLM |
-| zai-org/GLM-5.3-Flash-BF16 (base) | no disponible | no disponible | BF16 | MIT (Z.AI) | HuggingFace |
-| Variante "-4p67" del mismo autor | no disponible | no disponible | no disponible | LIL-1.0 previsiblemente | HuggingFace, orientada a 2x RTX 6000 |
+| GLM-5.3-Flash-NVFP4-CSF | no disponible | no disponible | NVFP4 + BF16 | LIL-1.0 (no open source, con atribucion obligatoria) | Hugging Face, requiere fork de vLLM |
+| zai-org/GLM-5.3-Flash-BF16 (base) | no disponible | no disponible | BF16 | MIT (Z.AI) | Hugging Face |
+| Variante "-4p67" del mismo autor | no disponible | no disponible | no disponible | LIL-1.0 previsiblemente | Hugging Face, orientada a 2x RTX 6000 |
 
 No se dispone de datos suficientes sobre otros modelos comparables de la misma categoria en la informacion proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos suficientes sobre otros modelos comparables de la misma c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4-CSF
+- Repositorio Hugging Face: https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4-CSF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Fichero de licencia: https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4-CSF/blob/main/LICENSE
 - Fork de vLLM requerido: https://github.com/local-inference-lab/vllm/tree/dev/jovian-judgement

@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (myendless, diagnóstico de gradientes) | ~4B (base Qwen3-VL-4B) | no disponible | Diagnóstico de representación de acciones, robótica | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-4B-Instruct | ~4B | no disponible en la información proporcionada | VLM generalista instruido | no disponible en la información proporcionada | HuggingFace (modelo base) |
+| Este checkpoint (myendless, diagnóstico de gradientes) | ~4B (base Qwen3-VL-4B) | no disponible | Diagnóstico de representación de acciones, robótica | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-4B-Instruct | ~4B | no disponible en la información proporcionada | VLM generalista instruido | no disponible en la información proporcionada | Hugging Face (modelo base) |
 | Modelo final de 15k pasos del mismo proyecto | no disponible | no disponible | Entrenamiento conjunto de representación de acciones | no disponible | No publicado en este repositorio |
 
 No se dispone de datos de rendimiento comparables entre estas entradas, por lo que la comparación se limita a parámetros, enfoque y disponibilidad.
@@ -94,6 +94,6 @@ No se dispone de datos de rendimiento comparables entre estas entradas, por lo q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/myendless/action-repre-hygon-aloha-core8-paired-gradient-alternate-diagnostic1k-44f5d753
+- Hugging Face: https://huggingface.co/myendless/action-repre-hygon-aloha-core8-paired-gradient-alternate-diagnostic1k-44f5d753
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos del proyecto.

@@ -62,5 +62,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - jlsrls/em1br2-ctrl-s1](https://huggingface.co/jlsrls/em1br2-ctrl-s1)
+- [Hugging Face - jlsrls/em1br2-ctrl-s1](https://huggingface.co/jlsrls/em1br2-ctrl-s1)
 - [Weights & Biases - registro de entrenamiento](https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/qgji2o24)

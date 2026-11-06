@@ -2,7 +2,7 @@
 
 ## Resumen
 
-grpo-pravo-adapter-g1 es un ajuste fino del modelo Qwen3-4B publicado por el usuario Lukynnnn en HuggingFace. El modelo base es la variante de aproximadamente 4.000 millones de parámetros de la familia Qwen3, en la redistribución realizada por Unsloth (unsloth/Qwen3-4B). El ajuste se ha llevado a cabo con GRPO (Group Relative Policy Optimization), el algoritmo de aprendizaje por refuerzo introducido en DeepSeekMath, utilizando la librería TRL de HuggingFace como marco de entrenamiento.
+grpo-pravo-adapter-g1 es un ajuste fino del modelo Qwen3-4B publicado por el usuario Lukynnnn en Hugging Face. El modelo base es la variante de aproximadamente 4.000 millones de parámetros de la familia Qwen3, en la redistribución realizada por Unsloth (unsloth/Qwen3-4B). El ajuste se ha llevado a cabo con GRPO (Group Relative Policy Optimization), el algoritmo de aprendizaje por refuerzo introducido en DeepSeekMath, utilizando la librería TRL de Hugging Face como marco de entrenamiento.
 
 El repositorio ocupa 1,6 GB y las etiquetas indican pesos en formato safetensors, compatibilidad con endpoints y generación automática desde el entrenador (generated_from_trainer). No se documenta el conjunto de datos de entrenamiento, la función de recompensa, los hiperparámetros, los idiomas soportados ni la licencia de uso. En el momento de la consulta el modelo acumula 0 descargas y 0 "likes", por lo que no cuenta con validación de la comunidad.
 
@@ -77,11 +77,11 @@ La comparación se establece a nivel de modelo base, ya que no existen métricas
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Benchmarks del adaptador |
 |---|---|---|---|---|---|
-| grpo-pravo-adapter-g1 | No disponible (~4B en el base) | No especificado (32k en el base) | No disponible | HuggingFace, 0 descargas | No publicados |
-| Qwen3-4B (base) | ~4B | 32k nativos / 131k con YaRN | Apache 2.0 | HuggingFace, ampliamente desplegado | Publicados por el autor del base |
-| Qwen2.5-3B-Instruct | 3,09B | 32k / 128k con YaRN | Apache 2.0 | HuggingFace | Publicados por el autor del base |
-| Llama-3.2-3B-Instruct | 3,21B | 128k | Llama 3.2 Community License | HuggingFace, con restricciones | Publicados por el autor del base |
-| Phi-4-mini-instruct | 3,8B | 128k | MIT | HuggingFace | Publicados por el autor del base |
+| grpo-pravo-adapter-g1 | No disponible (~4B en el base) | No especificado (32k en el base) | No disponible | Hugging Face, 0 descargas | No publicados |
+| Qwen3-4B (base) | ~4B | 32k nativos / 131k con YaRN | Apache 2.0 | Hugging Face, ampliamente desplegado | Publicados por el autor del base |
+| Qwen2.5-3B-Instruct | 3,09B | 32k / 128k con YaRN | Apache 2.0 | Hugging Face | Publicados por el autor del base |
+| Llama-3.2-3B-Instruct | 3,21B | 128k | Llama 3.2 Community License | Hugging Face, con restricciones | Publicados por el autor del base |
+| Phi-4-mini-instruct | 3,8B | 128k | MIT | Hugging Face | Publicados por el autor del base |
 
 La ventaja diferencial del adaptador frente a estas alternativas no puede establecerse sin datos de evaluación.
 
@@ -101,7 +101,7 @@ La ventaja diferencial del adaptador frente a estas alternativas no puede establ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lukynnnn/grpo-pravo-adapter-g1
+- Modelo en Hugging Face: https://huggingface.co/Lukynnnn/grpo-pravo-adapter-g1
 - Modelo base (redistribución de Unsloth): https://huggingface.co/unsloth/Qwen3-4B
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-4B
 - Artículo de DeepSeekMath (GRPO): https://huggingface.co/papers/2402.03300

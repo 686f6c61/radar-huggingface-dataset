@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rope_gpt2_td_allops_seed512_bs1024` es un modelo GPT-2 con atención rotatoria (RoPE) entrenado desde cero por el autor Aswath220, publicado en HuggingFace bajo el repositorio del mismo nombre. No es un modelo de propósito general: es un experimento de investigación centrado en el aprendizaje de aritmética básica (suma, resta, multiplicación y división) con operandos enteros de 0 a 999, empleando una tokenización específica de tres dígitos (`td`) definida en el repositorio BitTokens.
+`rope_gpt2_td_allops_seed512_bs1024` es un modelo GPT-2 con atención rotatoria (RoPE) entrenado desde cero por el autor Aswath220, publicado en Hugging Face bajo el repositorio del mismo nombre. No es un modelo de propósito general: es un experimento de investigación centrado en el aprendizaje de aritmética básica (suma, resta, multiplicación y división) con operandos enteros de 0 a 999, empleando una tokenización específica de tres dígitos (`td`) definida en el repositorio BitTokens.
 
 La arquitectura es un transformer decoder-only de 6 capas, 6 cabezas de atención y dimensión de modelo de 768, con RoPE en lugar de embeddings posicionales aprendidos. El entrenamiento se realizó con batch de 1024 durante 10 épocas, optimizador Muon con learning rate 0.02 y semilla 512, según la model card.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rope_gpt2_td_allops_seed512_bs1024 | no disponible (~40-45M estimados) | no disponible | Aritmética 0-999 | no disponible | HuggingFace (Aswath220) |
-| GPT-2 small | 124M | 1024 tokens | Lenguaje general | MIT | HuggingFace (openai-community) |
+| rope_gpt2_td_allops_seed512_bs1024 | no disponible (~40-45M estimados) | no disponible | Aritmética 0-999 | no disponible | Hugging Face (Aswath220) |
+| GPT-2 small | 124M | 1024 tokens | Lenguaje general | MIT | Hugging Face (openai-community) |
 | Modelos aritméticos tipo "calculator transformer" | variable | no disponible | Aritmética | variable | Repositorios de investigación |
 
 La comparación con GPT-2 small es solo estructural (misma familia arquitectónica, menor profundidad y anchura en este caso); no se dispone de métricas comunes para comparar rendimiento. No se conocen alternativas directamente comparables publicadas con el mismo esquema de tokenización de tres dígitos.
@@ -74,13 +74,13 @@ La comparación con GPT-2 small es solo estructural (misma familia arquitectóni
 - Sin idiomas declarados: no debe esperarse competencia en lenguaje natural ni en tareas multilingües.
 - Riesgo de alucinación elevado fuera del dominio de entrenamiento: el modelo generará secuencias numéricas plausibles pero incorrectas ante entradas fuera de distribución.
 - Longitud de contexto no documentada: no se puede garantizar el comportamiento con secuencias largas.
-- Sin pipeline declarado en HuggingFace: la integración con `transformers` requiere la clase personalizada `RopeGPT2LMHeadModel` del repositorio BitTokens, lo que añade fricción de despliegue.
+- Sin pipeline declarado en Hugging Face: la integración con `transformers` requiere la clase personalizada `RopeGPT2LMHeadModel` del repositorio BitTokens, lo que añade fricción de despliegue.
 - Resultados de test no verificables públicamente: el fichero `test_results.json` existe pero sus cifras no se exponen en la model card.
 - Repositorio de 18,8 GB por acumulación de snapshots: conviene descargar solo el snapshot deseado para evitar consumo innecesario de almacenamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aswath220/rope_gpt2_td_allops_seed512_bs1024
+- Modelo en Hugging Face: https://huggingface.co/Aswath220/rope_gpt2_td_allops_seed512_bs1024
 - Repositorio BitTokens (referenciado en la model card, ruta `networks/rope_gpt2.py` @ `2a84bb1`): no disponible como URL en la información proporcionada
 - Tokenizador `tokenizers/num_text/td_gpt2` (referenciado en la model card): no disponible como URL en la información proporcionada
 - Paper, blog o demo: no disponibles en la información proporcionada

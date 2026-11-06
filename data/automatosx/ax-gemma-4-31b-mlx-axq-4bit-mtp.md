@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento para comparar con otras cuantizaciones de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-gemma-4-31b-MLX-AXQ-4bit-MTP
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-gemma-4-31b-MLX-AXQ-4bit-MTP
 - Certificado Tier 1: https://github.com/defai-digital/axquant/blob/main/docs/certifications/gemma4-31b-axq4-tier1.md
 - Repositorio del proyecto axquant: https://github.com/defai-digital/axquant
 - Modelo base (Google): https://huggingface.co/google/gemma-4-31B-it

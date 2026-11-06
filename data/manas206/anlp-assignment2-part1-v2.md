@@ -6,7 +6,7 @@ Manas206/anlp-assignment2-part1-v2 es un modelo de traduccion automatica de tipo
 
 El modelo no parte de un transformer preentrenado: es una implementacion propia en PyTorch con una arquitectura de decodificador, tokenizador BPE byte-level de 16.000 tokens compartidos y un esquema de prompts de traduccion del tipo `<bos> <vi-or-ja> SOURCE <en>`, es decir, traduccion desde vietnamita o japones hacia ingles. El repositorio incluye etiquetas de "mixture-of-experts" y "translation", y una variante posterior (V3) que, segun el autor, es una ejecucion parcial no equiparable en presupuesto de computo a las variantes completadas.
 
-Su relevancia es limitada y muy acotada: sirve como referencia reproducible de un pipeline de entrenamiento propio (tokenizador, bucle de entrenamiento, checkpoint y evaluacion) y como punto de comparacion dentro de un ejercicio academico. No cuenta con descargas ni interacciones en HuggingFace en el momento de la consulta, no publica licencia y no aporta resultados de benchmarks.
+Su relevancia es limitada y muy acotada: sirve como referencia reproducible de un pipeline de entrenamiento propio (tokenizador, bucle de entrenamiento, checkpoint y evaluacion) y como punto de comparacion dentro de un ejercicio academico. No cuenta con descargas ni interacciones en Hugging Face en el momento de la consulta, no publica licencia y no aporta resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -82,13 +82,13 @@ La diferencia fundamental no es de parametros, sino de naturaleza: los tres mode
 - No hay informacion sobre sesgos del modelo. Cabe esperar sesgos derivados del dataset `belumind/en-vi-ja-curated-500k-triplets`, cuya composicion no se detalla en la model card.
 - Riesgo de alucinacion elevado en modelos pequenos y poco entrenados, especialmente fuera del dominio del corpus de entrenamiento.
 - Licencia no disponible: sin una licencia explicita no hay autorizacion clara para uso comercial ni para redistribucion, por lo que no debe desplegarse en entornos productivos.
-- Cero descargas y cero interacciones en HuggingFace, sin evidencia externa de validacion por parte de la comunidad.
+- Cero descargas y cero interacciones en Hugging Face, sin evidencia externa de validacion por parte de la comunidad.
 - La etiqueta `mixture-of-experts` no va acompanada de documentacion tecnica que permita verificar la arquitectura real; conviene tratar ese dato con cautela.
 - La model card advierte de que existe una variante V3 que es una ejecucion parcial y no esta equiparada en presupuesto de entrenamiento, por lo que no es comparable directamente.
 - No hay soporte de tool calling, agentes, vision ni audio; cualquier uso en esos escenarios requeriria trabajo adicional no documentado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Manas206/anlp-assignment2-part1-v2
+- Modelo en Hugging Face: https://huggingface.co/Manas206/anlp-assignment2-part1-v2
 - Dataset de entrenamiento citado: belumind/en-vi-ja-curated-500k-triplets (referenciado en la model card; no se ha verificado su URL directa en la busqueda realizada)
 - Paper, blog, repositorio o demo adicionales: no disponibles. La busqueda web efectuada no devolvio resultados relevantes relacionados con este modelo.

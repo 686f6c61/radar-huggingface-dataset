@@ -80,9 +80,9 @@ Referencias adicionales aportadas por el autor: la busqueda por palabras clave (
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| adiikj/tradexcel-assistant-encoder | 22 M | 128 tokens en entrenamiento | R@1 OOD 77,3; macro-F1 OOD 76,5; 5,7 ms p50 en CPU | Apache 2.0 | HuggingFace, ONNX + transformers.js |
-| sentence-transformers/all-MiniLM-L6-v2 (base) | 22 M | No disponible en la informacion proporcionada | R@1 OOD 77,3; macro-F1 OOD 73,8 antes del ajuste | Apache 2.0 | HuggingFace |
-| bge-small afinado | 33 M | No disponible en la informacion proporcionada | Similar al modelo descrito, pero el doble de lento | No disponible en la informacion proporcionada | HuggingFace |
+| adiikj/tradexcel-assistant-encoder | 22 M | 128 tokens en entrenamiento | R@1 OOD 77,3; macro-F1 OOD 76,5; 5,7 ms p50 en CPU | Apache 2.0 | Hugging Face, ONNX + transformers.js |
+| sentence-transformers/all-MiniLM-L6-v2 (base) | 22 M | No disponible en la informacion proporcionada | R@1 OOD 77,3; macro-F1 OOD 73,8 antes del ajuste | Apache 2.0 | Hugging Face |
+| bge-small afinado | 33 M | No disponible en la informacion proporcionada | Similar al modelo descrito, pero el doble de lento | No disponible en la informacion proporcionada | Hugging Face |
 | BM25 (busqueda por palabras clave) | No aplica | No aplica | R@1 OOD 65,7 | No aplica | Implementacion estandar |
 
 No se dispone de datos comparativos adicionales (por ejemplo, frente a otros codificadores multilingues o modelos de recuperacion de mayor tamano) en la informacion proporcionada.
@@ -101,7 +101,7 @@ No se dispone de datos comparativos adicionales (por ejemplo, frente a otros cod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adiikj/tradexcel-assistant-encoder
+- Modelo en Hugging Face: https://huggingface.co/adiikj/tradexcel-assistant-encoder
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Documentacion de transformers.js: https://huggingface.co/docs/transformers.js
 - Repositorio del autor con los informes de evaluacion (`ml/reports/`): mencionado en la model card pero sin URL publica en la informacion disponible.

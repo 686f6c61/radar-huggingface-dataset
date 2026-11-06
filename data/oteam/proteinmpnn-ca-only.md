@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Backbone de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ProteinMPNN CA-only (este) | 1.641.720 | Solo CA | AGPL-3.0 | HuggingFace (oteam) |
-| ProteinMPNN estándar (oteam) | 1.674.000 (aprox.) | N, CA, C, O | AGPL-3.0 | HuggingFace (oteam) |
-| SolubleMPNN (oteam) | 1.674.000 (aprox.) | N, CA, C, O | AGPL-3.0 | HuggingFace (oteam) |
+| ProteinMPNN CA-only (este) | 1.641.720 | Solo CA | AGPL-3.0 | Hugging Face (oteam) |
+| ProteinMPNN estándar (oteam) | 1.674.000 (aprox.) | N, CA, C, O | AGPL-3.0 | Hugging Face (oteam) |
+| SolubleMPNN (oteam) | 1.674.000 (aprox.) | N, CA, C, O | AGPL-3.0 | Hugging Face (oteam) |
 | ProteinMPNN original (dauparas) | No disponible en la información | N, CA, C, O | MIT (repositorio original) | GitHub |
 
 La comparativa se limita a las variantes de la misma familia publicadas por OFoldX; no se dispone de datos de benchmarks que permitan comparar rendimiento entre ellas.
@@ -84,7 +84,7 @@ La comparativa se limita a las variantes de la misma familia publicadas por OFol
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/proteinmpnn-ca-only
+- Hugging Face: https://huggingface.co/oteam/proteinmpnn-ca-only
 - Variante con ruido 0.02: https://huggingface.co/oteam/proteinmpnn-ca-only-noise002
 - Variante con ruido 0.10: https://huggingface.co/oteam/proteinmpnn-ca-only-noise010
 - Modelo estándar: https://huggingface.co/oteam/proteinmpnn

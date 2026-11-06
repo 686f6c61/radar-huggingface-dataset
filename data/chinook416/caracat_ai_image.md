@@ -81,7 +81,7 @@ No se dispone de resultados de benchmarks comparativos en la informacion disponi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chinook416/caracat_ai_image
+- Repositorio Hugging Face: https://huggingface.co/Chinook416/caracat_ai_image
 - Modelo original Z-Image (Tongyi-MAI): https://huggingface.co/Tongyi-MAI/Z-Image
 - Blog oficial de Z-Image: https://tongyi-mai.github.io/Z-Image-blog/
 - Repositorio GitHub de Z-Image: https://github.com/Tongyi-MAI/Z-Image

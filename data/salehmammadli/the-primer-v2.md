@@ -2,7 +2,7 @@
 
 ## Resumen
 
-The Primer v2 es un modelo de clasificacion tabular publicado por SalehMammadli en HuggingFace. No es un modelo de lenguaje: se trata de un pipeline de escalado y regresion logistica exportado a ONNX que estima la probabilidad de que un jugador cometa un error al tomar una decision en el juego "The Primer: Gece Nobeti". El modelo se activa cuando la probabilidad estimada es igual o superior a 0,5, momento en el que el juego retira la presion temporal y muestra la pista de forma explicita.
+The Primer v2 es un modelo de clasificacion tabular publicado por SalehMammadli en Hugging Face. No es un modelo de lenguaje: se trata de un pipeline de escalado y regresion logistica exportado a ONNX que estima la probabilidad de que un jugador cometa un error al tomar una decision en el juego "The Primer: Gece Nobeti". El modelo se activa cuando la probabilidad estimada es igual o superior a 0,5, momento en el que el juego retira la presion temporal y muestra la pista de forma explicita.
 
 El modelo se ha entrenado exclusivamente con datos sinteticos: 360 filas de decision distribuidas en 60 sesiones, generadas mediante una regla de produccion con semilla 13 documentada en el propio repositorio. El autor advierte de forma explicita que las metricas publicadas demuestran que el modelo aprende la regla generadora, no que prediga el comportamiento de jugadores reales. La tasa de decision incorrecta en los datos sinteticos es de 0,45.
 
@@ -88,5 +88,5 @@ No disponible. No se han proporcionado modelos comparables de la misma categoria
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SalehMammadli/the-primer-v2
+- Modelo en Hugging Face: https://huggingface.co/SalehMammadli/the-primer-v2
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados al modelo.

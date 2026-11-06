@@ -2,9 +2,9 @@
 
 ## Resumen
 
-kambleaa007/kimi-hindi-panditji-model es un modelo de generacion de texto publicado en HuggingFace por el usuario kambleaa007. Se trata de un checkpoint de la familia GPT-2 con 124.439.808 parametros reales (confirmados a partir de los pesos en safetensors), lo que corresponde al tamano del GPT-2 base original. El repositorio ocupa 0,5 GB, un tamano coherente con pesos almacenados en precision de 32 bits. El modelo se subio al Hub el 21 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes, por lo que no existe validacion alguna por parte de la comunidad.
+kambleaa007/kimi-hindi-panditji-model es un modelo de generacion de texto publicado en Hugging Face por el usuario kambleaa007. Se trata de un checkpoint de la familia GPT-2 con 124.439.808 parametros reales (confirmados a partir de los pesos en safetensors), lo que corresponde al tamano del GPT-2 base original. El repositorio ocupa 0,5 GB, un tamano coherente con pesos almacenados en precision de 32 bits. El modelo se subio al Hub el 21 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 likes, por lo que no existe validacion alguna por parte de la comunidad.
 
-La model card publicada es la plantilla automatica de HuggingFace sin rellenar: todos los campos (desarrollador, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion y limitaciones) figuran como "[More Information Needed]". Esto significa que no hay informacion verificable sobre el proceso de entrenamiento, el dataset utilizado, el regimen de precision ni los hiperparametros. El unico dato objetivo es el recuento de parametros y las etiquetas del repositorio.
+La model card publicada es la plantilla automatica de Hugging Face sin rellenar: todos los campos (desarrollador, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion y limitaciones) figuran como "[More Information Needed]". Esto significa que no hay informacion verificable sobre el proceso de entrenamiento, el dataset utilizado, el regimen de precision ni los hiperparametros. El unico dato objetivo es el recuento de parametros y las etiquetas del repositorio.
 
 La relevancia de este modelo es, por tanto, limitada y de caracter mas documental que funcional. Su interes principal radica en servir como ejemplo de checkpoint pequeno (categoria 100-200 M de parametros) apto para experimentacion en hardware de consumo, y en que su nombre sugiere un ajuste orientado al hindi ("hindi-panditji"), aunque esta hipotesis no esta confirmada en ninguna parte de la informacion disponible. Cualquier uso en produccion deberia ir precedido de una evaluacion propia, dado que no existe documentacion tecnica que lo respalde.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kambleaa007/kimi-hindi-panditji-model | 124,4 M | No disponible | No disponible | HuggingFace, safetensors | Sin model card, 0 descargas, 0 likes |
+| kambleaa007/kimi-hindi-panditji-model | 124,4 M | No disponible | No disponible | Hugging Face, safetensors | Sin model card, 0 descargas, 0 likes |
 | GPT-2 base (OpenAI) | 124 M | 1024 tokens | MIT (publicada por OpenAI) | Ampliamente disponible | Referencia de la misma arquitectura, con documentacion y evaluaciones publicas |
 | DistilGPT-2 | 82 M | 1024 tokens | MIT (publicada por OpenAI) | Ampliamente disponible | Version destilada, mas rapida, con licencia clara |
 | GPT-2 medium | 355 M | 1024 tokens | MIT (publicada por OpenAI) | Ampliamente disponible | Mayor capacidad a costa de mas VRAM |
@@ -95,7 +95,7 @@ La comparacion es en gran medida desfavorable para el modelo analizado en el pla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kambleaa007/kimi-hindi-panditji-model
+- Modelo en Hugging Face: https://huggingface.co/kambleaa007/kimi-hindi-panditji-model
 - Referencia citada en las etiquetas del repositorio (articulo sobre estimacion de emisiones de carbono en aprendizaje automatico, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de aprendizaje automatico (mencionada en la plantilla de la model card): https://mlco2.github.io/impact#compute
 - Repositorio, paper, demo y contacto del autor: no disponibles. La busqueda web realizada no ha devuelto ninguna fuente tecnica relacionada con este modelo; los resultados obtenidos correspondian a contenido no pertinente.

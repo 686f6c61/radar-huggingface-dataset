@@ -86,8 +86,8 @@ No se han identificado en la informacion disponible modelos de terceros directam
 
 | Modelo | Parametros | Contexto | Salida | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Vela-2.0-Omni-4B (seamon67) | 4,2B | 16.384 tokens | Choice, yes/no, score, span, set | Audio, vision, video | Apache-2.0 | HuggingFace, 0 descargas |
-| Vela-2.0-4B (vllm-sr) | 4,2B (reportados) | 16.384 tokens | Choice, yes/no, score, span, set | No declarado en la ficha | Apache-2.0 | HuggingFace (modelo base) |
+| Vela-2.0-Omni-4B (seamon67) | 4,2B | 16.384 tokens | Choice, yes/no, score, span, set | Audio, vision, video | Apache-2.0 | Hugging Face, 0 descargas |
+| Vela-2.0-4B (vllm-sr) | 4,2B (reportados) | 16.384 tokens | Choice, yes/no, score, span, set | No declarado en la ficha | Apache-2.0 | Hugging Face (modelo base) |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -106,7 +106,7 @@ No se han identificado en la informacion disponible modelos de terceros directam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seamon67/Vela-2.0-Omni-4B
+- Modelo en Hugging Face: https://huggingface.co/seamon67/Vela-2.0-Omni-4B
 - Modelo base (Vela 2.0 4B): https://huggingface.co/vllm-sr/Vela-2.0-4B
 - Documentacion: https://vllm-sr.ai/
 - Blog de Vela 2.0: https://vllm-sr.ai/blog/vela-2-0-open-foundation-routing-models

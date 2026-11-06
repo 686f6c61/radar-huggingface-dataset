@@ -75,7 +75,7 @@ No se dispone de una comparativa directa con otros modelos de razonamiento espac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/OpenSpatial-Qwen2.5-VL-7B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/OpenSpatial-Qwen2.5-VL-7B-GGUF
 - Modelo base: https://huggingface.co/VINHYU/OpenSpatial-Qwen2.5-VL-7B
 - Cuantizaciones con imatrix (alternativa): https://huggingface.co/mradermacher/OpenSpatial-Qwen2.5-VL-7B-i1-GGUF
 - Guía de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

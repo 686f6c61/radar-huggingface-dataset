@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`dck003/qwen3.5-9b-genre-lora-round-1` es un adaptador LoRA publicado en HuggingFace por el usuario dck003, entrenado sobre el modelo base `Qwen/Qwen3.5-9B`. El repositorio se distribuye con la librería PEFT (versión 0.21.2 declarada en la model card) y la etiqueta `text-generation`, por lo que se trata de un ajuste fino orientado a generación de texto y uso conversacional, no de un modelo completo entrenado desde cero.
+`dck003/qwen3.5-9b-genre-lora-round-1` es un adaptador LoRA publicado en Hugging Face por el usuario dck003, entrenado sobre el modelo base `Qwen/Qwen3.5-9B`. El repositorio se distribuye con la librería PEFT (versión 0.21.2 declarada en la model card) y la etiqueta `text-generation`, por lo que se trata de un ajuste fino orientado a generación de texto y uso conversacional, no de un modelo completo entrenado desde cero.
 
-El nombre del repositorio sugiere un ajuste por "género" (genre) y una primera ronda de entrenamiento (round 1), pero esto es una interpretación del identificador y no está confirmado en ninguna documentación: la model card publicada es la plantilla por defecto de HuggingFace, con la práctica totalidad de los campos marcados como "[More Information Needed]". No se documentan datos de entrenamiento, hiperparámetros, composición del dataset ni metodología de alineación.
+El nombre del repositorio sugiere un ajuste por "género" (genre) y una primera ronda de entrenamiento (round 1), pero esto es una interpretación del identificador y no está confirmado en ninguna documentación: la model card publicada es la plantilla por defecto de Hugging Face, con la práctica totalidad de los campos marcados como "[More Information Needed]". No se documentan datos de entrenamiento, hiperparámetros, composición del dataset ni metodología de alineación.
 
 La relevancia del artefacto es limitada en su estado actual. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, no declara licencia y no aporta información sobre idiomas soportados ni evaluación. Su interés práctico depende enteramente del modelo base, cuyas especificaciones tampoco se detallan en la información disponible. La búsqueda web realizada no devolvió ningún resultado relevante sobre este repositorio ni sobre Qwen3.5-9B: los resultados obtenidos eran contenido no relacionado y sin valor técnico.
 
@@ -31,11 +31,11 @@ La relevancia del artefacto es limitada en su estado actual. El repositorio acum
 
 No hay informacion disponible sobre la arquitectura del adaptador ni del modelo base. Por los metadatos se sabe que se trata de un adaptador LoRA (Low-Rank Adaptation) cargable mediante PEFT, una tecnica que congela los pesos del modelo base e introduce matrices de bajo rango entrenables en determinadas capas, reduciendo de forma drastica el numero de parametros a optimizar. El campo `base_model` apunta a `Qwen/Qwen3.5-9B`, del que no se proporcionan detalles de arquitectura, numero de capas, atencion, tokenizador ni ventana de contexto.
 
-Tampoco se documenta nada sobre el proceso de entrenamiento: no consta el numero de tokens utilizados, la composicion del dataset, si hubo fases de RLHF, DPO o SFT, ni los hiperparametros (learning rate, rango del LoRA, alpha, dropout, precision mixta). La unica referencia tecnica presente en la model card es el enlace al articulo arXiv 1910.09700 (Lacoste et al., 2019), que corresponde a la calculadora de impacto medioambiental sugerida por la plantilla de HuggingFace y no a un paper descriptivo del modelo. Se observa una discrepancia entre el tamano del repositorio (17,2 GB) y lo esperable en un adaptador LoRA de un modelo de 9B (tipicamente unos pocos cientos de MB): el repositorio podria contener pesos fusionados, checkpoints intermedios u otros artefactos no documentados.
+Tampoco se documenta nada sobre el proceso de entrenamiento: no consta el numero de tokens utilizados, la composicion del dataset, si hubo fases de RLHF, DPO o SFT, ni los hiperparametros (learning rate, rango del LoRA, alpha, dropout, precision mixta). La unica referencia tecnica presente en la model card es el enlace al articulo arXiv 1910.09700 (Lacoste et al., 2019), que corresponde a la calculadora de impacto medioambiental sugerida por la plantilla de Hugging Face y no a un paper descriptivo del modelo. Se observa una discrepancia entre el tamano del repositorio (17,2 GB) y lo esperable en un adaptador LoRA de un modelo de 9B (tipicamente unos pocos cientos de MB): el repositorio podria contener pesos fusionados, checkpoints intermedios u otros artefactos no documentados.
 
 ## Capacidades
 
-No se documentan capacidades verificadas para este modelo. Las siguientes afirmaciones proceden exclusivamente de los metadatos de HuggingFace y de la inferencia a partir del modelo base, y deben considerarse no verificadas:
+No se documentan capacidades verificadas para este modelo. Las siguientes afirmaciones proceden exclusivamente de los metadatos de Hugging Face y de la inferencia a partir del modelo base, y deben considerarse no verificadas:
 
 - Generacion de texto conversacional: la etiqueta `text-generation` y la etiqueta `conversational` aparecen en los metadatos del repositorio.
 - Ajuste fino por genero: el identificador del repositorio incluye `genre-lora`, lo que sugiere especializacion en un dominio de genero textual no especificado. No confirmado.
@@ -80,7 +80,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque no se co
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dck003/qwen3.5-9b-genre-lora-round-1 | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| dck003/qwen3.5-9b-genre-lora-round-1 | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Qwen/Qwen3.5-9B (modelo base) | no disponible | no disponible | no disponible | no disponible | referenciado como base_model |
 | Alternativas de la misma categoria (~9B) | no disponible | no disponible | no disponible | no disponible | no se han consultado datos verificables |
 
@@ -99,7 +99,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque no se co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dck003/qwen3.5-9b-genre-lora-round-1
+- Repositorio en Hugging Face: https://huggingface.co/dck003/qwen3.5-9b-genre-lora-round-1
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.5-9B
 - Articulo citado en la model card (calculadora de impacto, no documentacion del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la plantilla: https://mlco2.github.io/impact

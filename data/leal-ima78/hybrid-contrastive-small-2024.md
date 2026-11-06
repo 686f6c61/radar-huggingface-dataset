@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`leal-ima78/hybrid-contrastive-small-2024` es un repositorio experimental publicado en HuggingFace por el usuario leal-ima78 bajo licencia MIT. No es un modelo entrenado ni un checkpoint de referencia: la propia model card lo describe como una base de codigo híbrida para experimentos de aprendizaje contrastivo, con un checkpoint de inicializacion (`model.safetensors`) valido unicamente para pruebas de humo. El repositorio contiene 16.576 parametros totales, un orden de magnitud propio de un ejemplo didactico o de un test de integracion, no de un modelo utilizable en produccion.
+`leal-ima78/hybrid-contrastive-small-2024` es un repositorio experimental publicado en Hugging Face por el usuario leal-ima78 bajo licencia MIT. No es un modelo entrenado ni un checkpoint de referencia: la propia model card lo describe como una base de codigo híbrida para experimentos de aprendizaje contrastivo, con un checkpoint de inicializacion (`model.safetensors`) valido unicamente para pruebas de humo. El repositorio contiene 16.576 parametros totales, un orden de magnitud propio de un ejemplo didactico o de un test de integracion, no de un modelo utilizable en produccion.
 
 La arquitectura declarada es "Hybrid" a escala "tiny", con atencion multi-query, fusion de tipo Tucker, activacion ReLU y normalizacion por batch normalization. El autor no especifica que componentes se hibridan ni como se combinan, por lo que la definicion concreta de "hybrid" queda sin documentar. La receta de entrenamiento incluida (`training_args.json`) usa el optimizador Adam con un schedule de warmup lineal, y el propio autor advierte de que son valores de partida del script, no evidencia de una ejecucion completada.
 
@@ -40,7 +40,7 @@ No hay datos de entrenamiento: no se indica volumen de tokens, composicion del d
 - No se declara ningun idioma soportado.
 - No se declara modo de razonamiento (thinking mode), audio ni multimodalidad.
 - Lo unico funcionalmente descrito es que el archivo Python contiene el modelo y un ejemplo ejecutable o punto de entrada de entrenamiento, y que existe un bloque `__main__` con un ejemplo de prueba de humo.
-- La carga mediante APIs automaticas genericas de HuggingFace requiere un adaptador explicito, al tratarse de una implementacion personalizada.
+- La carga mediante APIs automaticas genericas de Hugging Face requiere un adaptador explicito, al tratarse de una implementacion personalizada.
 
 ## Casos de uso
 
@@ -84,5 +84,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leal-ima78/hybrid-contrastive-small-2024
+- Modelo en Hugging Face: https://huggingface.co/leal-ima78/hybrid-contrastive-small-2024
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a entidades homonimas sin relacion (empresas de obra publica, cosmeticos, un articulo de Wikcionario y un futbolista), por lo que se descartan.

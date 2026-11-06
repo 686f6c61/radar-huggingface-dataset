@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Phi-3-custom-trained-v3 es un ajuste fino (fine-tuning) del modelo JobSched/Phi-3-custom-v3, a su vez derivado de la familia Phi-3 de Microsoft. Lo publica el usuario JobSched en HuggingFace y esta entrenado con la herramienta AutoTrain, orientado a generacion de texto conversacional. El repositorio contiene 3.820.815.360 parametros en formato safetensors (aproximadamente 3,8 mil millones), lo que lo situa en la gama de modelos pequenos de la familia Phi-3 (Phi-3-mini).
+Phi-3-custom-trained-v3 es un ajuste fino (fine-tuning) del modelo JobSched/Phi-3-custom-v3, a su vez derivado de la familia Phi-3 de Microsoft. Lo publica el usuario JobSched en Hugging Face y esta entrenado con la herramienta AutoTrain, orientado a generacion de texto conversacional. El repositorio contiene 3.820.815.360 parametros en formato safetensors (aproximadamente 3,8 mil millones), lo que lo situa en la gama de modelos pequenos de la familia Phi-3 (Phi-3-mini).
 
 El modelo se distribuye como un fine-tune con tecnicas PEFT (las etiquetas incluyen `peft` y `autotrain`), pensado para conversacion multi-turno mediante plantilla de chat. El problema que aborda es la adaptacion de un modelo base pequeno a un dominio o estilo concreto mediante entrenamiento supervisado, sin necesidad de infraestructura de entrenamiento completa.
 
@@ -28,7 +28,7 @@ La relevancia es limitada: se trata de un modelo de nicho, sin descargas ni like
 
 La informacion disponible no detalla la arquitectura interna mas alla de la pertenencia a la familia Phi-3 y del uso de `transformers`. Phi-3-mini, el modelo del que desciende esta variante por tamano (3,8B parametros), es un transformer decoder-only denso con atencion causal estandar, pero no se confirma en la model card ningun detalle sobre capas, dimensiones ocultas, cabezas de atencion ni funcion de activacion.
 
-El entrenamiento se realizo con AutoTrain, la herramienta de HuggingFace para fine-tuning automatizado. Las etiquetas indican `peft`, lo que sugiere adaptacion con parametros eficientes (probablemente LoRA), y el repositorio incluye artefactos de TensorBoard. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF/DPO ni hiperparametros. La model card se limita a la plantilla por defecto de AutoTrain y a un ejemplo de uso con `apply_chat_template`.
+El entrenamiento se realizo con AutoTrain, la herramienta de Hugging Face para fine-tuning automatizado. Las etiquetas indican `peft`, lo que sugiere adaptacion con parametros eficientes (probablemente LoRA), y el repositorio incluye artefactos de TensorBoard. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF/DPO ni hiperparametros. La model card se limita a la plantilla por defecto de AutoTrain y a un ejemplo de uso con `apply_chat_template`.
 
 ## Capacidades
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| JobSched/Phi-3-custom-trained-v3 | 3,82B | no disponible | other | HuggingFace, 0 descargas |
-| Microsoft Phi-3-mini | 3,8B | 4K/128K (segun variante) | MIT | HuggingFace, ampliamente usado |
-| Qwen2.5-3B | 3,09B | 32K (segun variante) | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama-3.2-3B | 3,21B | 128K | Llama 3.2 Community License | HuggingFace, ampliamente usado |
+| JobSched/Phi-3-custom-trained-v3 | 3,82B | no disponible | other | Hugging Face, 0 descargas |
+| Microsoft Phi-3-mini | 3,8B | 4K/128K (segun variante) | MIT | Hugging Face, ampliamente usado |
+| Qwen2.5-3B | 3,09B | 32K (segun variante) | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama-3.2-3B | 3,21B | 128K | Llama 3.2 Community License | Hugging Face, ampliamente usado |
 
 La comparativa se basa en el tamano y la categoria; no hay datos de rendimiento del modelo JobSched que permitan comparaciones cuantitativas. El modelo de referencia directo es Phi-3-mini de Microsoft, del que desciende, con licencia MIT y contexto documentado, frente a la licencia "other" y la ausencia de especificaciones de este fine-tune.
 
@@ -86,7 +86,7 @@ La comparativa se basa en el tamano y la categoria; no hay datos de rendimiento 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JobSched/Phi-3-custom-trained-v3
+- Hugging Face: https://huggingface.co/JobSched/Phi-3-custom-trained-v3
 - Modelo base: https://huggingface.co/JobSched/Phi-3-custom-v3
 - Documentacion de AutoTrain: https://hf.co/docs/autotrain
 - Familia Phi-3 de Microsoft (referencia del modelo original): https://huggingface.co/microsoft/Phi-3-mini-4k-instruct

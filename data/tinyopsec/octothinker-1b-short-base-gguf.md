@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OctoThinker-1B-Short-Base-GGUF es una colección de cuantizaciones en formato GGUF del modelo OctoThinker/OctoThinker-1B-Short-Base, un modelo base de 1.235 millones de parámetros derivado de Llama 3.2 1B de Meta y sometido a un proceso de mid-training adicional. El repositorio ha sido publicado por el usuario tinyopsec en HuggingFace y las cuantizaciones se han generado con llama.cpp. El proyecto OctoThinker es una iniciativa de investigación sobre mid-training, una etapa intermedia de entrenamiento entre el preentrenamiento y el ajuste fino, orientada a mejorar las capacidades de razonamiento de modelos pequeños.
+OctoThinker-1B-Short-Base-GGUF es una colección de cuantizaciones en formato GGUF del modelo OctoThinker/OctoThinker-1B-Short-Base, un modelo base de 1.235 millones de parámetros derivado de Llama 3.2 1B de Meta y sometido a un proceso de mid-training adicional. El repositorio ha sido publicado por el usuario tinyopsec en Hugging Face y las cuantizaciones se han generado con llama.cpp. El proyecto OctoThinker es una iniciativa de investigación sobre mid-training, una etapa intermedia de entrenamiento entre el preentrenamiento y el ajuste fino, orientada a mejorar las capacidades de razonamiento de modelos pequeños.
 
 Al tratarse de un modelo base (no instruido ni alineado), su utilidad principal reside en la investigación: comparar el efecto del mid-training sobre Llama 3.2 1B, realizar fine-tuning posterior o experimentar con decodificación. El formato GGUF lo hace especialmente atractivo para ejecutarlo localmente en CPU o en GPUs de consumo mediante llama.cpp, Ollama, LM Studio o koboldcpp, con cuantizaciones que van desde F16 (3,0 GB) hasta Q2_K.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | OctoThinker-1B-Short-Base-GGUF | 1,24 B | GGUF (13 cuantizaciones) | Llama 3.2 Community | Base con mid-training para razonamiento |
 | Llama-3.2-1B (Meta) | 1,24 B | safetensors | Llama 3.2 Community | Modelo base original sin mid-training |
 | Qwen2.5-1.5B | 1,5 B | safetensors / GGUF comunitarios | Apache 2.0 / Qwen | Base e instruct, sin restricciones de licencia comunitaria |
-| SmolLM2-1.7B (HuggingFace) | 1,7 B | safetensors / GGUF | Apache 2.0 | Modelo pequeño abierto con datos de entrenamiento documentados |
+| SmolLM2-1.7B (Hugging Face) | 1,7 B | safetensors / GGUF | Apache 2.0 | Modelo pequeño abierto con datos de entrenamiento documentados |
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tinyopsec/OctoThinker-1B-Short-Base-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/OctoThinker-1B-Short-Base-GGUF
 - Modelo base original: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Modelo mid-entrenado origen de las cuantizaciones: https://huggingface.co/OctoThinker/OctoThinker-1B-Short-Base
 - llama.cpp: https://github.com/ggerganov/llama.cpp

@@ -73,10 +73,10 @@ El paso 30.000 (checkpoint oficial) obtiene 15/39, un 38,5 %. El autor indica qu
 
 | Modelo | Parametros | Contexto | Rendimiento en SO-101 Bench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `5hadytru/so101_bench_ImageWAM-FLUX.2-4B_full_fine_tune` (este) | 4B (backbone FLUX.2 [klein] base) | no disponible | 15/39 (38,5 %) en `real_gr00t_val_v2` | MIT | HuggingFace, 0 descargas |
-| `5hadytru/so101_bench_MolmoAct2-SO101_WM_full_fine_tune` | no disponible | no disponible | no disponible (paso 10.000, checkpoint final y entrada oficial de MolmoAct2) | no disponible | HuggingFace |
-| `5hadytru/so101_bench_flux-3-action-so101` | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| `yuyangalin/ImageWAM-FLUX.2-4B-InternData-A1-EE` (modelo base) | 4B | no disponible | no disponible (preentrenado sobre InternData-A1-EE) | MIT (backbone Apache-2.0) | HuggingFace |
+| `5hadytru/so101_bench_ImageWAM-FLUX.2-4B_full_fine_tune` (este) | 4B (backbone FLUX.2 [klein] base) | no disponible | 15/39 (38,5 %) en `real_gr00t_val_v2` | MIT | Hugging Face, 0 descargas |
+| `5hadytru/so101_bench_MolmoAct2-SO101_WM_full_fine_tune` | no disponible | no disponible | no disponible (paso 10.000, checkpoint final y entrada oficial de MolmoAct2) | no disponible | Hugging Face |
+| `5hadytru/so101_bench_flux-3-action-so101` | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| `yuyangalin/ImageWAM-FLUX.2-4B-InternData-A1-EE` (modelo base) | 4B | no disponible | no disponible (preentrenado sobre InternData-A1-EE) | MIT (backbone Apache-2.0) | Hugging Face |
 
 La familia ImageWAM también ofrece una variante de 9B basada en FLUX.2 [klein] 9B, que según el repositorio oficial da el mejor rendimiento de la serie, aunque no se dispone de cifras concretas en la información proporcionada.
 
@@ -94,7 +94,7 @@ La familia ImageWAM también ofrece una variante de 9B basada en FLUX.2 [klein] 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/5hadytru/so101_bench_ImageWAM-FLUX.2-4B_full_fine_tune
+- Modelo en Hugging Face: https://huggingface.co/5hadytru/so101_bench_ImageWAM-FLUX.2-4B_full_fine_tune
 - Modelo base: https://huggingface.co/yuyangalin/ImageWAM-FLUX.2-4B-InternData-A1-EE
 - Repositorio SO-101 Bench: https://github.com/5hadytru/so101_bench
 - Repositorio ImageWAM (CoRL 2026): https://github.com/yuyangalin/ImageWAM

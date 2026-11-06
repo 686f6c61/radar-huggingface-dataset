@@ -62,7 +62,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nuofang/Qwen3.8-9B-abliterated-25-GGUF
+- Repositorio Hugging Face: https://huggingface.co/nuofang/Qwen3.8-9B-abliterated-25-GGUF
 - Modelo base: https://huggingface.co/MegaPanchamZ/Qwen3.8-9B-abliterated-25
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Referencia de cuantizaciones abliteradas similares: https://huggingface.co/huihui-ai/Qwen3-8B-abliterated

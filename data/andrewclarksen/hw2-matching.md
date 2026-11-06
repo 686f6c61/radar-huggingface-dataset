@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`andrewclarksen/hw2-matching` es un repositorio de HuggingFace que contiene una implementacion compacta y personalizada en PyTorch de MoCo v3 orientada a tareas de *matching* (emparejamiento/aprendizaje contrastivo). El propio autor lo describe como una configuracion "small" pensada para revision de codigo, pruebas de humo (*smoke tests*) y experimentos controlados de laboratorio, y no como un modelo preentrenado listo para produccion.
+`andrewclarksen/hw2-matching` es un repositorio de Hugging Face que contiene una implementacion compacta y personalizada en PyTorch de MoCo v3 orientada a tareas de *matching* (emparejamiento/aprendizaje contrastivo). El propio autor lo describe como una configuracion "small" pensada para revision de codigo, pruebas de humo (*smoke tests*) y experimentos controlados de laboratorio, y no como un modelo preentrenado listo para produccion.
 
 El checkpoint incluido (`model.safetensors`) es una inicializacion valida con 49.600 parametros totales, no un modelo entrenado ni evaluado en benchmarks. El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, y su tamano es de 0,0 GB.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| andrewclarksen/hw2-matching | MoCo v3 (matching, custom) | 49.600 | no disponible | apache-2.0 | HuggingFace |
+| andrewclarksen/hw2-matching | MoCo v3 (matching, custom) | 49.600 | no disponible | apache-2.0 | Hugging Face |
 | MoCo v3 (implementacion de referencia) | Aprendizaje autosupervisado contrastivo | no disponible | no disponible | no disponible | Repositorio de referencia |
 | SimCLR | Aprendizaje autosupervisado contrastivo | no disponible | no disponible | no disponible | Publicaciones y repos de referencia |
 | DINO | Aprendizaje autosupervisado | no disponible | no disponible | no disponible | Publicaciones y repos de referencia |
@@ -95,7 +95,7 @@ La comparacion es aproximada, ya que este repositorio es una implementacion pers
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/andrewclarksen/hw2-matching
+- Hugging Face: https://huggingface.co/andrewclarksen/hw2-matching
 - Referencia del metodo MoCo v3 (paper): https://arxiv.org/abs/2104.02057
 - Implementacion de referencia de MoCo v3: https://github.com/facebookresearch/moco-v3
 - PyTorch: https://pytorch.org

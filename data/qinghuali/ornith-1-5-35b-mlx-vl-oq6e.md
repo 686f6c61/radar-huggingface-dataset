@@ -27,7 +27,7 @@ El modelo se distribuye bajo licencia MIT, lo que facilita su uso comercial, y e
 
 ## Arquitectura y entrenamiento
 
-La información disponible indica que el modelo base Ornith-1.5-35B-A3B es un transformer de mezcla de expertos con 35.107.181.936 parámetros totales y una designación A3B que sugiere alrededor de 3.000 millones de parámetros activos por token. La etiqueta `qwen3_5_moe` en HuggingFace apunta a una arquitectura derivada de la familia Qwen 3.5 MoE, aunque la model card del repositorio cuantizado no desarrolla esta correspondencia ni detalla la configuración de expertos, el número de capas o las dimensiones del modelo. El pipeline image-text-to-text confirma que integra un codificador visual junto con el tronco lingüístico, pero no se especifican ni el tipo de encoder ni la resolución de imagen soportada.
+La información disponible indica que el modelo base Ornith-1.5-35B-A3B es un transformer de mezcla de expertos con 35.107.181.936 parámetros totales y una designación A3B que sugiere alrededor de 3.000 millones de parámetros activos por token. La etiqueta `qwen3_5_moe` en Hugging Face apunta a una arquitectura derivada de la familia Qwen 3.5 MoE, aunque la model card del repositorio cuantizado no desarrolla esta correspondencia ni detalla la configuración de expertos, el número de capas o las dimensiones del modelo. El pipeline image-text-to-text confirma que integra un codificador visual junto con el tronco lingüístico, pero no se especifican ni el tipo de encoder ni la resolución de imagen soportada.
 
 Respecto al entrenamiento, no se han publicado en la información disponible datos sobre el volumen de tokens, la composición del dataset, el uso de RLHF, DPO u otras técnicas de alineación. La model card del repositorio cuantizado se limita a describir el proceso de conversión y cuantización: se aplicó oMLX v0.6.3rc2 con cuantización mixta dinámica oQ, que asigna precisiones distintas a capas o módulos según su sensibilidad, y se conservó la modalidad visión-lenguaje (la etiqueta VL indica que la cuantización no elimina el codificador visual). El resultado son pesos en safetensors compatibles con MLX, no con otros runtimes.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de comparativas de rendimiento con model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qinghuali/Ornith-1.5-35B-MLX-VL-oQ6e
+- Repositorio Hugging Face: https://huggingface.co/qinghuali/Ornith-1.5-35B-MLX-VL-oQ6e
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Variante oQ8: https://huggingface.co/liqinghhua/Ornith-1.5-35B-MLX-VL-oQ8e
 - Variante oQ6 (enlace de la model card): https://huggingface.co/liqinghhua/Ornith-1.5-35B-MLX-VL-oQ6e

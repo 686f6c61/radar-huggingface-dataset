@@ -6,7 +6,7 @@ SamudrACE es un modelo de emulacion climatica acoplada que combina un emulador t
 
 El modelo se entreno con una simulacion de control preindustrial de 200 anos de GFDL CM4. Integra un componente atmosferico de estilo ACE2 y un componente oceanico de estilo SamudraI, que intercambian estado fisico (temperatura superficial del mar, hielo marino y flujos superficiales) para producir simulaciones acopladas estables. La relacion de acoplamiento es de 20 pasos de atmosfera por cada paso de oceano.
 
-La relevancia actual radica en que los emuladores de clima estan emergiendo como alternativa practica para explorar escenarios de largo plazo, diagnosticar deriva climatica y generar grandes volumenes de simulaciones donde un modelo fisico completo seria prohibitivamente caro. La ficha de HuggingFace corresponde a una reproduccion de ingenieria independiente de las especificaciones publicas de SamudrACE bajo licencia Apache 2.0.
+La relevancia actual radica en que los emuladores de clima estan emergiendo como alternativa practica para explorar escenarios de largo plazo, diagnosticar deriva climatica y generar grandes volumenes de simulaciones donde un modelo fisico completo seria prohibitivamente caro. La ficha de Hugging Face corresponde a una reproduccion de ingenieria independiente de las especificaciones publicas de SamudrACE bajo licencia Apache 2.0.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SamudrACE | Emulador climatico acoplado atmosfera + oceano 3D | no disponible | no aplica | Apache 2.0 (reproduccion) | HuggingFace, Gitee, GitHub |
+| SamudrACE | Emulador climatico acoplado atmosfera + oceano 3D | no disponible | no aplica | Apache 2.0 (reproduccion) | Hugging Face, Gitee, GitHub |
 | ACE2 | Emulador atmosferico (componente de referencia) | no disponible | no aplica | no disponible | no disponible |
 | SamudraI | Emulador oceanico (componente de referencia) | no disponible | no aplica | no disponible | no disponible |
 
@@ -75,7 +75,7 @@ No se dispone en la informacion proporcionada de datos cuantitativos de parametr
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace se declara como una reproduccion de ingenieria independiente de las especificaciones publicas de SamudrACE; no son necesariamente los pesos o el codigo oficiales.
+- El repositorio de Hugging Face se declara como una reproduccion de ingenieria independiente de las especificaciones publicas de SamudrACE; no son necesariamente los pesos o el codigo oficiales.
 - El articulo original, el codigo oficial, los pesos y los datos de GFDL CM4 estan sujetos a sus propias licencias y terminos, que pueden diferir de la licencia Apache 2.0 de esta reproduccion.
 - El modelo se entrena con una unica simulacion de control preindustrial de 200 anos de GFDL CM4, lo que puede introducir sesgos hacia ese regimen climatico y limitar su validez para climas muy alejados del preindustrial.
 - No es un modelo de lenguaje: no genera texto, no soporta tool calling ni razonamiento multietapa, y no tiene ventana de contexto ni cuantizaciones en el sentido habitual.
@@ -87,7 +87,7 @@ No se dispone en la informacion proporcionada de datos cuantitativos de parametr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/SamudrACE
+- Hugging Face: https://huggingface.co/OneScience-Group/SamudrACE
 - Paper (arXiv): https://arxiv.org/abs/2509.12490
 - OneScience (GitHub): https://github.com/onescience-ai/OneScience
 - OneSkills (GitHub): https://github.com/onescience-ai/oneskills

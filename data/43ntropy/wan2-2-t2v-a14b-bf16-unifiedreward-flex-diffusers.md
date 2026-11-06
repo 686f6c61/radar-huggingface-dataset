@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Activos | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 43ntropy/Wan2.2-T2V-A14B-BF16-UnifiedReward-Flex-Diffusers (este) | ~27B | 14B | Texto-a-video, MoE + LoRA | MIT | Repositorio en HuggingFace, 0 descargas |
-| Wan-AI/Wan2.2-T2V-A14B | ~27B | 14B | Texto-a-video, MoE | no disponible en la informacion | Modelo base oficial en HuggingFace |
-| Wan-AI/Wan2.2-I2V-A14B | ~27B | 14B | Imagen-a-video, MoE | no disponible en la informacion | Modelo oficial en HuggingFace |
-| Wan-AI/Wan2.2-TI2V-5B | 5B | 5B (denso) | Texto/imagen-a-video | no disponible en la informacion | Modelo oficial en HuggingFace |
+| 43ntropy/Wan2.2-T2V-A14B-BF16-UnifiedReward-Flex-Diffusers (este) | ~27B | 14B | Texto-a-video, MoE + LoRA | MIT | Repositorio en Hugging Face, 0 descargas |
+| Wan-AI/Wan2.2-T2V-A14B | ~27B | 14B | Texto-a-video, MoE | no disponible en la informacion | Modelo base oficial en Hugging Face |
+| Wan-AI/Wan2.2-I2V-A14B | ~27B | 14B | Imagen-a-video, MoE | no disponible en la informacion | Modelo oficial en Hugging Face |
+| Wan-AI/Wan2.2-TI2V-5B | 5B | 5B (denso) | Texto/imagen-a-video | no disponible en la informacion | Modelo oficial en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/43ntropy/Wan2.2-T2V-A14B-BF16-UnifiedReward-Flex-Diffusers
+- Repositorio en Hugging Face: https://huggingface.co/43ntropy/Wan2.2-T2V-A14B-BF16-UnifiedReward-Flex-Diffusers
 - Modelo base oficial: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B
 - Variante relacionada del mismo autor: https://huggingface.co/43ntropy/Wan2.2-T2V-A14B-UnifiedReward-Diffusers
 - Repositorio de codigo Wan2.2: https://github.com/Wan-Video/Wan2.2

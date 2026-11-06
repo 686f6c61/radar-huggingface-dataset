@@ -79,6 +79,6 @@ Treemind se diferencia de su base mGPT por el fine-tuning conversacional y el fo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gdatree/Treemind
+- Modelo en Hugging Face: https://huggingface.co/Gdatree/Treemind
 - Repo de cuantizaciones IQ (Treemind-IT): https://huggingface.co/Gdatree/Treemind-IT
 - Modelo base mGPT: https://huggingface.co/ai-forever/mGPT

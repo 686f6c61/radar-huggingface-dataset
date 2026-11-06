@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h030.rl_v6.step_20
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h030.rl_v6.step_20
 - Model card citada (checkpoint h040, no idéntico): https://huggingface.co/agentic-ptb/kimi.h040.rl_v7.step_40 (referencia indirecta)
 - Página de Kimi K3 (contexto del driver): https://www.kimi.com/en
 - Documentación de Kimi K3 API: https://platform.kimi.ai/docs/guide/kimi-k3-quickstart

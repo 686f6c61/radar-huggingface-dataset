@@ -97,7 +97,7 @@ La información disponible no incluye datos de otros modelos ASR comparables (Wh
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-7B-DFlash2
+- Modelo en Hugging Face: https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-7B-DFlash2
 - Modelo base: https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B
 - Drafter DFlash 2: https://huggingface.co/Ar4ikov/VibeVoice-ASR-Streaming-7B-DFlash2-Drafter
 - Repositorio del runtime vibevoice.c: https://github.com/Ar4ikov/vibevoice.c

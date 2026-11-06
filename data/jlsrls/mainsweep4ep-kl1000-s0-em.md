@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jlsrls/mainsweep4ep-kl1000-s0-em es un ajuste fino (SFT) del modelo unsloth/Llama-3.2-1B-Instruct, publicado por el usuario jlsrls en HuggingFace. Se trata de un modelo denso de tipo transformer decoder con aproximadamente 1.230 millones de parametros, derivado directamente de la familia Llama 3.2 en su variante pequena y orientada a instrucciones. El repositorio ocupa 2,3 GB y contiene pesos en formato safetensors, compatible con la libreria transformers.
+jlsrls/mainsweep4ep-kl1000-s0-em es un ajuste fino (SFT) del modelo unsloth/Llama-3.2-1B-Instruct, publicado por el usuario jlsrls en Hugging Face. Se trata de un modelo denso de tipo transformer decoder con aproximadamente 1.230 millones de parametros, derivado directamente de la familia Llama 3.2 en su variante pequena y orientada a instrucciones. El repositorio ocupa 2,3 GB y contiene pesos en formato safetensors, compatible con la libreria transformers.
 
 El entrenamiento se ha realizado con TRL 0.24.0 sobre Transformers 5.5.0 y PyTorch 2.11.0, segun la model card del autor. No se especifica el dataset utilizado, el numero de tokens de entrenamiento ni si hubo fases posteriores de alineacion (DPO, RLHF). El nombre del modelo y el proyecto de Weights & Biases asociado ("clarifying-em") sugieren un barrido experimental con un termino de regularizacion KL fijado en 1000, pero esta interpretacion no esta confirmada por el autor.
 
@@ -46,7 +46,7 @@ En cuanto al procedimiento, la model card indica entrenamiento con SFT mediante 
 - Evaluacion de despliegue en el borde (edge): con cuantizacion a 4 bits el modelo ocupa menos de 1 GB, lo que lo hace viable en portatiles, mini-PC o dispositivos con acelerador integrado.
 - Clasificacion y extraccion de informacion sencilla: tareas de etiquetado de texto, resumen de una linea o extraccion de campos concretos donde el coste por inferencia es critico.
 - Generacion de texto asistida de bajo coste: borradores, respuestas plantilla y variaciones de copy donde no se requiere un razonamiento profundo ni una precision alta.
-- Educacion y demostraciones: escenarios de aula o talleres en los que el objetivo es mostrar el ciclo completo de ajuste fino (dataset, entrenamiento con TRL, publicacion en HuggingFace) sin necesidad de infraestructura de datacenter.
+- Educacion y demostraciones: escenarios de aula o talleres en los que el objetivo es mostrar el ciclo completo de ajuste fino (dataset, entrenamiento con TRL, publicacion en Hugging Face) sin necesidad de infraestructura de datacenter.
 - Filtrado previo en pipelines de dos etapas: uso del modelo como primera pasada economica que descarta peticiones triviales y delega en un modelo mayor las que requieren razonamiento.
 
 ## Benchmarks y rendimiento
@@ -66,11 +66,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mainsweep4ep-kl1000-s0-em (este) | ~1,23 B | no confirmado (128 k en el base) | no disponible | HuggingFace, 0 descargas | Ajuste SFT sin benchmarks ni dataset documentado |
-| unsloth/Llama-3.2-1B-Instruct | ~1,23 B | 128 k | Llama 3.2 Community License | HuggingFace, ampliamente usado | Modelo base con soporte de tool calling y 8 idiomas |
-| meta-llama/Llama-3.2-1B-Instruct | ~1,23 B | 128 k | Llama 3.2 Community License | HuggingFace | Version original de Meta, con evaluaciones publicadas |
-| Qwen2.5-1.5B-Instruct | ~1,5 B | 32 k | Apache 2.0 | HuggingFace | Alternativa de tamano similar con licencia permisiva |
-| SmolLM2-1.7B-Instruct | ~1,7 B | 8 k | Apache 2.0 | HuggingFace | Enfocado a despliegue en el borde, con recetas de entrenamiento publicadas |
+| mainsweep4ep-kl1000-s0-em (este) | ~1,23 B | no confirmado (128 k en el base) | no disponible | Hugging Face, 0 descargas | Ajuste SFT sin benchmarks ni dataset documentado |
+| unsloth/Llama-3.2-1B-Instruct | ~1,23 B | 128 k | Llama 3.2 Community License | Hugging Face, ampliamente usado | Modelo base con soporte de tool calling y 8 idiomas |
+| meta-llama/Llama-3.2-1B-Instruct | ~1,23 B | 128 k | Llama 3.2 Community License | Hugging Face | Version original de Meta, con evaluaciones publicadas |
+| Qwen2.5-1.5B-Instruct | ~1,5 B | 32 k | Apache 2.0 | Hugging Face | Alternativa de tamano similar con licencia permisiva |
+| SmolLM2-1.7B-Instruct | ~1,7 B | 8 k | Apache 2.0 | Hugging Face | Enfocado a despliegue en el borde, con recetas de entrenamiento publicadas |
 
 Las cifras de los modelos de la comparativa corresponden a sus fichas publicas y no a mediciones realizadas sobre este ajuste concreto.
 
@@ -88,7 +88,7 @@ Las cifras de los modelos de la comparativa corresponden a sus fichas publicas y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/mainsweep4ep-kl1000-s0-em
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/mainsweep4ep-kl1000-s0-em
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Modelo original de Meta (referencia): https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/gd10u5hv

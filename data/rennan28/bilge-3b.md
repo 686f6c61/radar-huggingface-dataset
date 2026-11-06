@@ -99,7 +99,7 @@ Frente a estas alternativas, Bilge-3B no compite en capacidades generales: su ve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rennan28/Bilge-3B
+- Modelo en Hugging Face: https://huggingface.co/Rennan28/Bilge-3B
 - Adaptador LoRA: https://huggingface.co/Rennan28/Bilge-3B-LoRA
 - Pesos GGUF: https://huggingface.co/Rennan28/Bilge-3B-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/Rennan28/bilge-3b-veri

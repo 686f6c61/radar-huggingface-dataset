@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyttic/hmt-trocrscratch-stroke3-s42` es un modelo de reconocimiento de texto manuscrito (HTR, *Handwritten Text Recognition*) publicado por el usuario cyttic en HuggingFace. Se trata de una variante de TrOCR entrenada desde cero (*scratch*) con un esquema de aumento de datos denominado `stroke3` y semilla 42, dentro de un estudio más amplio sobre transferencia de métricas HTR (`htr-metrics-transfer`). El modelo está especializado en hebreo (`he`) y utiliza una cabeza de clasificación CTC.
+El modelo `cyttic/hmt-trocrscratch-stroke3-s42` es un modelo de reconocimiento de texto manuscrito (HTR, *Handwritten Text Recognition*) publicado por el usuario cyttic en Hugging Face. Se trata de una variante de TrOCR entrenada desde cero (*scratch*) con un esquema de aumento de datos denominado `stroke3` y semilla 42, dentro de un estudio más amplio sobre transferencia de métricas HTR (`htr-metrics-transfer`). El modelo está especializado en hebreo (`he`) y utiliza una cabeza de clasificación CTC.
 
 Con 22.421.004 parámetros y un tamaño de repositorio de 0,1 GB, es un modelo de escala reducida pensado para experimentación y evaluación controlada más que para despliegue en producción. Su valor principal es servir como punto de comparación reproducible dentro de un estudio de ablación sobre técnicas de aumento de datos en HTR, con métricas documentadas (CER 0,3561 y WER 0,9556 sobre el conjunto de test HHD Option-B).
 
@@ -61,15 +61,15 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - VRAM estimada para inferencia: inferior a 1 GB en precisión completa (22,4 M de parámetros), por lo que cabe en cualquier GPU consumer.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; no requiere A100 ni H100.
 - Cabe en GPU consumer: sí, en modelos como GTX 1650, RTX 3060, RTX 4090 o incluso en CPU para inferencia por lotes pequeños.
-- Opciones de despliegue: PyTorch nativo y bibliotecas de HuggingFace `transformers`; no se documenta soporte específico para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: PyTorch nativo y bibliotecas de Hugging Face `transformers`; no se documenta soporte específico para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | CER (HHD Option-B) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-trocrscratch-stroke3-s42 | 22,4 M | no disponible | 0,3561 | MIT | HuggingFace |
-| TrOCR base (Microsoft) | no disponible en la información | no disponible | no disponible | MIT | HuggingFace |
+| cyttic/hmt-trocrscratch-stroke3-s42 | 22,4 M | no disponible | 0,3561 | MIT | Hugging Face |
+| TrOCR base (Microsoft) | no disponible en la información | no disponible | no disponible | MIT | Hugging Face |
 | Otros modelos del estudio `htr-metrics-transfer` | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para una comparativa cuantitativa con alternativas de la misma categoría; la información proporcionada solo cubre este checkpoint.
@@ -86,7 +86,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-trocrscratch-stroke3-s42
+- Hugging Face: https://huggingface.co/cyttic/hmt-trocrscratch-stroke3-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split (referenciado en la model card)
 - Estudio `htr-metrics-transfer`: no disponible como enlace directo en la información proporcionada
 - Resultados detallados (`results.json`): referenciado en la model card, sin URL directa disponible

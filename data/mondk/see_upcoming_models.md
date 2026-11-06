@@ -15,7 +15,7 @@ No existe información fiable sobre arquitectura, parámetros, entrenamiento o c
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF (Q1_K_S en el archivo secundario) |
-| Idiomas soportados | en (segun metadatos de HuggingFace) |
+| Idiomas soportados | en (segun metadatos de Hugging Face) |
 | Licencia | other |
 | Formato de pesos | GGUF |
 
@@ -36,7 +36,7 @@ No se pueden recomendar casos de uso reales para este modelo. Dada la ausencia d
 - Pruebas internas de pipelines de descarga de GGUF: el archivo podria usarse para verificar que un sistema de inferencia carga correctamente un archivo GGUF, aunque el contenido no sea util.
 - Auditoria de seguridad: analizar el archivo para detectar posibles contenidos maliciosos o inesperados antes de descartarlo.
 - Estudio de metadatos: examinar como se estructuran los archivos GGUF y sus metadatos en un entorno controlado.
-- Educacion sobre placeholders: ilustrar como los repositorios de HuggingFace pueden contener modelos no funcionales o engañosos.
+- Educacion sobre placeholders: ilustrar como los repositorios de Hugging Face pueden contener modelos no funcionales o engañosos.
 - Investigacion de cuantizacion extrema: el archivo Q1_K_S podria servir para estudiar la degradacion de calidad en cuantizaciones de muy baja precision, aunque sin un modelo base valido no es concluyente.
 - Verificacion de integridad: comprobar si el archivo es un placeholder generado automaticamente o un intento de suplantacion.
 
@@ -66,5 +66,5 @@ No disponible. No existe informacion suficiente para comparar este repositorio c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mondk/see_upcoming_models
+- Repositorio Hugging Face: https://huggingface.co/mondk/see_upcoming_models
 - No se han encontrado papers, blogs, demos ni otros enlaces relevantes especificos de este modelo.

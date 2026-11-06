@@ -67,5 +67,5 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- [HuggingFace: longtermrisk/Llama-3.1-8B-german-city-names-second-third-v2-sft-seed2-epoch3](https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-second-third-v2-sft-seed2-epoch3)
+- [Hugging Face: longtermrisk/Llama-3.1-8B-german-city-names-second-third-v2-sft-seed2-epoch3](https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-second-third-v2-sft-seed2-epoch3)
 - [Modelo base: unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct) (referencia)

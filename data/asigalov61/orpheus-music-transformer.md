@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Orpheus Music Transformer es un modelo de transformador autoregresivo especializado en generación musical multi-instrumental, desarrollado por Project Los Angeles y publicado por el usuario asigalov61 en HuggingFace. Está diseñado para resolver tareas de composición algorítmica como generación desde cero, continuación de secuencias MIDI, inpainting de notas y batería, infilling de puentes (bridge), creación de loops y segmentación musical. Su relevancia radica en que combina una arquitectura eficiente con una tokenización compacta y un entrenamiento masivo sobre 2,31 millones de pistas MIDI de alta calidad, lo que lo sitúa como un modelo de referencia (SOTA) en su categoría.
+Orpheus Music Transformer es un modelo de transformador autoregresivo especializado en generación musical multi-instrumental, desarrollado por Project Los Angeles y publicado por el usuario asigalov61 en Hugging Face. Está diseñado para resolver tareas de composición algorítmica como generación desde cero, continuación de secuencias MIDI, inpainting de notas y batería, infilling de puentes (bridge), creación de loops y segmentación musical. Su relevancia radica en que combina una arquitectura eficiente con una tokenización compacta y un entrenamiento masivo sobre 2,31 millones de pistas MIDI de alta calidad, lo que lo sitúa como un modelo de referencia (SOTA) en su categoría.
 
 La arquitectura principal es un transformer autoregresivo de 748 millones de parámetros (versión Large) con embeddings posicionales rotatorios (RoPE) y Flash Attention, capaz de manejar secuencias de hasta 8.000 tokens, suficientes para capturar estructuras musicales extendidas. También existe una versión Medium de 479 millones de parámetros y varios modelos auxiliares y fine-tunings específicos (karaoke, loops, melodías monofónicas, etc.). El modelo se distribuye bajo licencia Apache 2.0 y los pesos están en formato PyTorch (.pth). Aunque el repositorio ocupa 106,6 GB, el modelo base Large pesa alrededor de 1,5 GB en bfloat16.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: el modelo Large en bfloat16 ocupa aproximadamente 1,5 GB de pesos, pero la generación requiere memoria adicional para activaciones y estados de atención. Con una ventana de 8.000 tokens, se estima un uso de VRAM entre 4 y 8 GB según el batch size.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM y soporte CUDA (por ejemplo, RTX 3060, RTX 3070, RTX 4070, A100). El modelo está optimizado para CUDA con bfloat16 y sparse-dense products.
 - Sí cabe en GPUs de consumo: una RTX 3060 de 12 GB o RTX 4060 Ti de 16 GB pueden ejecutar el modelo sin problemas para generación de secuencias moderadas.
-- Opciones de despliegue: se proporcionan notebooks de inferencia en el repositorio y una interfaz Gradio en HuggingFace Spaces. No se menciona soporte para vLLM, llama.cpp u Ollama, ya que el modelo no está en formato GGUF ni safetensors.
+- Opciones de despliegue: se proporcionan notebooks de inferencia en el repositorio y una interfaz Gradio en Hugging Face Spaces. No se menciona soporte para vLLM, llama.cpp u Ollama, ya que el modelo no está en formato GGUF ni safetensors.
 - Latencia y throughput: no se han publicado cifras oficiales. En una GPU moderna, se espera una generación de unos pocos tokens por segundo, dependiendo del tamaño del batch y la longitud de la secuencia.
 
 ## Comparativa con modelos similares
@@ -75,8 +75,8 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asigalov61/Orpheus-Music-Transformer
+- Modelo en Hugging Face: https://huggingface.co/asigalov61/Orpheus-Music-Transformer
 - Repositorio GitHub: https://github.com/asigalov61/Orpheus-Music-Transformer
 - Página del proyecto: https://asigalov61.github.io/Orpheus-Music-Transformer/
 - Aplicación web (Gradio): https://asigalov61.github.io/Orpheus-Music-Transformer-Web-App/
-- Colección de demos en HuggingFace: https://huggingface.co/collections/asigalov61/orpheus-music-transformer-685c3c8e59ed1414c02bb8cd
+- Colección de demos en Hugging Face: https://huggingface.co/collections/asigalov61/orpheus-music-transformer-685c3c8e59ed1414c02bb8cd

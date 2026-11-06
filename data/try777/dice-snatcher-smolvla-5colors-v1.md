@@ -74,7 +74,7 @@ No se ha proporcionado información sobre modelos comparables. El único modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/try777/dice-snatcher-smolvla-5colors-v1
+- Modelo en Hugging Face: https://huggingface.co/try777/dice-snatcher-smolvla-5colors-v1
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Dataset de entrenamiento: https://huggingface.co/datasets/try777/dice-cp-centre-robot-5colors-baseline-01_20260903-clean-v1
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

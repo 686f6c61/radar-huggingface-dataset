@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Uigyu/qwen_2.5_3b-em_secure_num | 3B | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| unsloth/Qwen2.5-3B-Instruct | 3B | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-3B-Instruct | 3B | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Uigyu/qwen_2.5_3b-em_secure_num | 3B | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| unsloth/Qwen2.5-3B-Instruct | 3B | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-3B-Instruct | 3B | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 

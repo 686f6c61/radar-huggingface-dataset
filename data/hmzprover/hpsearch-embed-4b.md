@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. La *
 |---|---|---|---|---|---|
 | hpsearch-embed-4b | 4,02B | No disponible (base: 32 768) | Lean 4 / Mathlib | Apache-2.0 | Pesos en safetensors; 0 descargas; sin benchmarks |
 | Qwen/Qwen3-Embedding-4B | 4B | 32 768 (según documentación del modelo base) | Propósito general, multilingüe | Apache-2.0 | Ampliamente distribuido; usado aquí como base |
-| Qwen3-Embedding-0.6B | 0,6B | No disponible en la información proporcionada | Propósito general, multilingüe | Apache-2.0 | Disponible en HuggingFace |
+| Qwen3-Embedding-0.6B | 0,6B | No disponible en la información proporcionada | Propósito general, multilingüe | Apache-2.0 | Disponible en Hugging Face |
 | Lean Finder / LeanSearch v2 | No disponible | No disponible | Recuperación de Mathlib | No disponible | Citados como fuente de datos en la *model card*, pero sin datos técnicos en la información proporcionada |
 
 Los datos del modelo base y de Qwen3-Embedding-0.6B provienen de la documentación pública de dichos modelos, no de este repositorio, y no se han verificado sobre el *fine-tune*. No se dispone de comparaciones de rendimiento entre estas alternativas.
@@ -91,7 +91,7 @@ Los datos del modelo base y de Qwen3-Embedding-0.6B provienen de la documentaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmzprover/hpsearch-embed-4b
+- Modelo en Hugging Face: https://huggingface.co/hmzprover/hpsearch-embed-4b
 - Modelo base Qwen3-Embedding-4B: https://huggingface.co/Qwen/Qwen3-Embedding-4B
 - Repositorio hpsearch: https://github.com/humanfia/hpsearch
 - Paper, blog o demo del modelo: no disponibles en la información proporcionada.

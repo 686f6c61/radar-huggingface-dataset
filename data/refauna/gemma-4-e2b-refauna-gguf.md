@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Refauna/gemma-4-e2b-refauna-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Refauna/gemma-4-e2b-refauna-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-e2b-it
 - Repositorio del ajuste en Transformers: https://huggingface.co/Refauna/gemma-4-e2b-refauna
 - Iniciativa Refauna: https://refauna.org.br

@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparativos directos entre estos modelos e
 
 ## Enlaces
 
-- [HuggingFace: tryambientai/moonshine-base-ko-gguf](https://huggingface.co/tryambientai/moonshine-base-ko-gguf)
+- [Hugging Face: tryambientai/moonshine-base-ko-gguf](https://huggingface.co/tryambientai/moonshine-base-ko-gguf)
 - [Modelo base: UsefulSensors/moonshine-base-ko](https://huggingface.co/UsefulSensors/moonshine-base-ko)
 - [Repositorio transcribe.cpp](https://github.com/handy-computer/transcribe.cpp)
 - [Documentación de modelos Moonshine en transcribe.cpp](https://github.com/handy-computer/transcribe.cpp/blob/main/docs/models/moonshine.md)

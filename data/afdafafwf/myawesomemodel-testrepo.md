@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario afdafafwf bajo el identificador `afdafafwf/MyAwesomeModel-TestRepo`. El nombre del repositorio ("TestRepo") y sus métricas de uso (0 descargas, 0 likes, 0,0 GB de contenido) apuntan a un repositorio de prueba o a un artefacto incompleto más que a un modelo listo para producción. La model card, sin embargo, describe un modelo de razonamiento de propósito general con mejoras en profundidad de pensamiento, reducción de alucinaciones y soporte de function calling.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario afdafafwf bajo el identificador `afdafafwf/MyAwesomeModel-TestRepo`. El nombre del repositorio ("TestRepo") y sus métricas de uso (0 descargas, 0 likes, 0,0 GB de contenido) apuntan a un repositorio de prueba o a un artefacto incompleto más que a un modelo listo para producción. La model card, sin embargo, describe un modelo de razonamiento de propósito general con mejoras en profundidad de pensamiento, reducción de alucinaciones y soporte de function calling.
 
-Existe una contradicción importante entre los metadatos del repositorio y la model card. Los tags de HuggingFace indican `transformers`, `pytorch`, `bert` y pipeline `feature-extraction`, es decir, un encoder tipo BERT para extracción de características. La model card, en cambio, describe un modelo generativo conversacional con modo de razonamiento, subida de ficheros, búsqueda web y cifras de benchmarks en matemáticas y código. Ninguna de las dos descripciones puede verificarse con la información disponible, ya que el repositorio no contiene pesos.
+Existe una contradicción importante entre los metadatos del repositorio y la model card. Los tags de Hugging Face indican `transformers`, `pytorch`, `bert` y pipeline `feature-extraction`, es decir, un encoder tipo BERT para extracción de características. La model card, en cambio, describe un modelo generativo conversacional con modo de razonamiento, subida de ficheros, búsqueda web y cifras de benchmarks en matemáticas y código. Ninguna de las dos descripciones puede verificarse con la información disponible, ya que el repositorio no contiene pesos.
 
 Por tanto, esta ficha recoge lo declarado por el autor, marca explícitamente los datos no disponibles y advierte de que la mayoría de cifras de rendimiento y capacidades no son reproducibles ni comprobables con la información proporcionada. La búsqueda web realizada no devolvió ningún resultado relacionado con el modelo: los resultados obtenidos corresponden a foros sobre servidores de Minecraft (Aternos) y son irrelevantes.
 
@@ -124,7 +124,7 @@ No se dispone de información suficiente para identificar los modelos "Model1", 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/afdafafwf/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/afdafafwf/MyAwesomeModel-TestRepo
 - Repositorio de código: el enlace no se proporciona en la información disponible (la model card menciona "our code repository" sin URL).
 - Web oficial / plataforma de chat y API: mencionada en la model card, sin URL disponible.
 - Paper: no disponible.

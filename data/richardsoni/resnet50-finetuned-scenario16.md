@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo RichardsonI/resnet50-finetuned-scenario16 es un clasificador de imágenes basado en la arquitectura ResNet-50, publicado en HuggingFace por el usuario RichardsonI y etiquetado con el pipeline image-classification. Se trata de un ajuste fino (fine-tuning) de un backbone ResNet-50 sobre un conjunto de datos no especificado, presumiblemente asociado a un escenario concreto ("scenario16") del que no se aporta documentación. El repositorio contiene pesos en formato safetensors con 23.565.250 parámetros totales y un tamaño de 0,1 GB.
+El modelo RichardsonI/resnet50-finetuned-scenario16 es un clasificador de imágenes basado en la arquitectura ResNet-50, publicado en Hugging Face por el usuario RichardsonI y etiquetado con el pipeline image-classification. Se trata de un ajuste fino (fine-tuning) de un backbone ResNet-50 sobre un conjunto de datos no especificado, presumiblemente asociado a un escenario concreto ("scenario16") del que no se aporta documentación. El repositorio contiene pesos en formato safetensors con 23.565.250 parámetros totales y un tamaño de 0,1 GB.
 
-La relevancia del modelo es limitada como referencia pública: la model card está generada automáticamente por la plantilla de HuggingFace y no contiene información sobre datos de entrenamiento, hiperparámetros, métricas, licencia ni idiomas. Cuenta con 14 descargas y 0 "likes" en el momento de la consulta, lo que sugiere un uso experimental o privado. La etiqueta arxiv:1910.09700 procede de la propia plantilla de la model card (referencia al calculador de emisiones de Lacoste et al.) y no describe la arquitectura ni el entrenamiento del modelo.
+La relevancia del modelo es limitada como referencia pública: la model card está generada automáticamente por la plantilla de Hugging Face y no contiene información sobre datos de entrenamiento, hiperparámetros, métricas, licencia ni idiomas. Cuenta con 14 descargas y 0 "likes" en el momento de la consulta, lo que sugiere un uso experimental o privado. La etiqueta arxiv:1910.09700 procede de la propia plantilla de la model card (referencia al calculador de emisiones de Lacoste et al.) y no describe la arquitectura ni el entrenamiento del modelo.
 
 ResNet-50 es una red neuronal convolucional residual introducida por He et al. en 2015, ampliamente utilizada como backbone en visión por computador. Este modelo concreto, sin embargo, no documenta qué tarea de clasificación resuelve ni sobre qué dominio de imágenes, por lo que su utilidad práctica queda condicionada a la inspección del propio checkpoint.
 
@@ -68,10 +68,10 @@ Los valores de la columna de rendimiento corresponden a versiones estándar publ
 
 | Modelo | Parametros | Tipo | Top-1 ImageNet (referencia) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RichardsonI/resnet50-finetuned-scenario16 | 23,56 M | CNN (ResNet-50) | no disponible | no disponible | HuggingFace |
+| RichardsonI/resnet50-finetuned-scenario16 | 23,56 M | CNN (ResNet-50) | no disponible | no disponible | Hugging Face |
 | ResNet-50 estandar (torchvision) | ~25,56 M | CNN | ~76,1 % | BSD-3 (torchvision) | torchvision |
 | EfficientNet-B0 | ~5,3 M | CNN | ~77,1 % | Apache-2.0 (implementacion) | torchvision / timm |
-| ViT-B/16 | ~86 M | Transformer | ~77,9 % (a 384 px) | Apache-2.0 (implementacion) | HuggingFace / timm |
+| ViT-B/16 | ~86 M | Transformer | ~77,9 % (a 384 px) | Apache-2.0 (implementacion) | Hugging Face / timm |
 | MobileNetV2 | ~3,4 M | CNN | ~72,0 % | Apache-2.0 (implementacion) | torchvision |
 
 La comparación directa con este checkpoint no es posible porque se desconoce el número de clases, el dominio de las imágenes y las métricas de evaluación.
@@ -90,7 +90,7 @@ La comparación directa con este checkpoint no es posible porque se desconoce el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RichardsonI/resnet50-finetuned-scenario16
+- Modelo en Hugging Face: https://huggingface.co/RichardsonI/resnet50-finetuned-scenario16
 - Referencia de la etiqueta arxiv del repo (calculador de emisiones, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Paper original de ResNet (He et al., 2015): https://arxiv.org/abs/1512.03385
 - Documentación del pipeline image-classification de transformers: https://huggingface.co/docs/transformers/main/en/tasks/image_classification

@@ -60,7 +60,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace - sergiopaniego/watercolour-grpo-v9b](https://huggingface.co/sergiopaniego/watercolour-grpo-v9b)
+- [Hugging Face - sergiopaniego/watercolour-grpo-v9b](https://huggingface.co/sergiopaniego/watercolour-grpo-v9b)
 - [Perfil de Sergio Paniego en Hugging Face](https://huggingface.co/sergiopaniego)
 - [GitHub de Sergio Paniego](https://github.com/sergiopaniego)
 - [Sitio web personal de Sergio Paniego](https://sergiopaniego.github.io/)

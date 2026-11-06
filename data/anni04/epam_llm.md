@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EPAM_LLM es un modelo de lenguaje publicado en HuggingFace por el usuarioanni04, con identificador `anni04/EPAM_LLM`. El repositorio ocupa 2,8 GB y se distribuye bajo licencia Apache 2.0, lo que permite su uso comercial, modificación y redistribución sin restricciones relevantes más allá de la atribución de la licencia. El nombre sugiere una relación con EPAM Systems, empresa de servicios de ingeniería de software, aunque no existe una model card que lo confirme ni que describa su origen, arquitectura o finalidad.
+EPAM_LLM es un modelo de lenguaje publicado en Hugging Face por el usuarioanni04, con identificador `anni04/EPAM_LLM`. El repositorio ocupa 2,8 GB y se distribuye bajo licencia Apache 2.0, lo que permite su uso comercial, modificación y redistribución sin restricciones relevantes más allá de la atribución de la licencia. El nombre sugiere una relación con EPAM Systems, empresa de servicios de ingeniería de software, aunque no existe una model card que lo confirme ni que describa su origen, arquitectura o finalidad.
 
 La principal limitación de esta ficha es la ausencia casi total de documentación: la model card se reduce a la declaración de la licencia, sin descripción del modelo, datos de entrenamiento, benchmarks ni instrucciones de uso. El repositorio registra 0 descargas y 1 like, lo que indica que se trata de un recurso prácticamente sin adopción ni validación por parte de la comunidad. El tamaño de 2,8 GB sugiere un modelo de tamaño modesto (posiblemente entre 1B y 7B parámetros según la cuantización), pero esta estimación no puede confirmarse con la información disponible.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - **VRAM estimada:** con un tamaño de repositorio de 2,8 GB, la inferencia en FP16 o cuantizaciones ligeras debería requerir aproximadamente 3-4 GB de VRAM, aunque esta cifra es una estimación derivada del tamaño del repo y no un dato confirmado.
 - **GPU recomendadas:** al tratarse de un modelo aparentemente pequeño, cualquier GPU moderna con 6 GB o más de VRAM debería ser suficiente (por ejemplo, RTX 3060, RTX 4060 o superiores). No se requieren aceleradores de datacenter tipo A100 o H100 salvo para despliegues de alto throughput.
 - **Consumer GPUs:** dado el tamaño estimado, el modelo debería caber cómodamente en GPUs de consumo de gama media.
-- **Opciones de despliegue:** no disponible de forma explícita. En función del formato de pesos (que no está documentado), podría ser compatible con llama.cpp, Ollama, vLLM, TGI o transformers de HuggingFace. Será necesario inspeccionar los archivos del repositorio para determinar la compatibilidad.
+- **Opciones de despliegue:** no disponible de forma explícita. En función del formato de pesos (que no está documentado), podría ser compatible con llama.cpp, Ollama, vLLM, TGI o transformers de Hugging Face. Será necesario inspeccionar los archivos del repositorio para determinar la compatibilidad.
 - **Latencia y throughput:** no disponibles.
 
 ## Comparativa con modelos similares
@@ -86,4 +86,4 @@ En términos generales, para cualquier caso de uso productivo existen alternativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anni04/EPAM_LLM
+- Repositorio en Hugging Face: https://huggingface.co/anni04/EPAM_LLM

@@ -79,9 +79,9 @@ La comparación muestra que Ornith-1.5-9B carece de información pública sobre 
 
 ## Enlaces
 
-- Repositorio de HuggingFace de la cuantización: https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ6e-fp16
+- Repositorio de Hugging Face de la cuantización: https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ6e-fp16
 - Modelo base (ornith-ai/Ornith-1.5-9B): https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Página oficial de Ornith AI: https://ornith.ai/
 - Blog de Ornith-1.5 (self-scaffolding a self-improvement): https://ornith.ai/ornith_1_5.html
 - Repositorio de oMLX (herramienta de cuantización): https://github.com/jundot/omlx
-- Búsqueda de modelos cuantizados de Ornith-1.5-9B en HuggingFace: https://huggingface.co/models?other=base_model:quantized:ornith-ai/Ornith-1.5-9B
+- Búsqueda de modelos cuantizados de Ornith-1.5-9B en Hugging Face: https://huggingface.co/models?other=base_model:quantized:ornith-ai/Ornith-1.5-9B

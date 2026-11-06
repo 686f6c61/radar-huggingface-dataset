@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Enok12/ga-alien es un repositorio publicado en HuggingFace por el usuario Enok12 el 11 de octubre de 2026. La informacion disponible se limita a la metadata del repositorio: licencia MIT, region de publicacion "us" y ausencia total de etiquetas de pipeline, idiomas o framework. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta.
+Enok12/ga-alien es un repositorio publicado en Hugging Face por el usuario Enok12 el 11 de octubre de 2026. La informacion disponible se limita a la metadata del repositorio: licencia MIT, region de publicacion "us" y ausencia total de etiquetas de pipeline, idiomas o framework. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta.
 
 La model card asociada no contiene mas contenido que la cabecera YAML con la licencia MIT. No se declara arquitectura, numero de parametros, longitud de contexto, tokenizador, datos de entrenamiento, proceso de alineacion ni resultados de evaluacion. Tampoco se especifica el formato de los pesos alojados (safetensors, GGUF, PyTorch binario u otros).
 
@@ -38,7 +38,7 @@ No disponible. No se ha publicado informacion que permita confirmar ninguna capa
 - Cobertura multilingue.
 - Modo de pensamiento explicito (thinking mode) o decodificacion especulativa.
 
-La etiqueta de pipeline de HuggingFace aparece como no disponible, lo que impide incluso clasificar el modelo en una tarea concreta dentro del ecosistema de la plataforma.
+La etiqueta de pipeline de Hugging Face aparece como no disponible, lo que impide incluso clasificar el modelo en una tarea concreta dentro del ecosistema de la plataforma.
 
 ## Casos de uso
 
@@ -83,7 +83,7 @@ No disponible. Al desconocerse arquitectura, tamano, tarea y rendimiento del mod
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Enok12/ga-alien | no disponible | no disponible | MIT | HuggingFace |
+| Enok12/ga-alien | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No disponible. Al desconocerse arquitectura, tamano, tarea y rendimiento del mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Enok12/ga-alien
+- Repositorio en Hugging Face: https://huggingface.co/Enok12/ga-alien
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

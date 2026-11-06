@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento del modelo padre ni del modelo original en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-inference/GLM-5.3-W4A8-Mixed-AttentionGPTQ-Cal48-Seq512
+- Modelo en Hugging Face: https://huggingface.co/open-inference/GLM-5.3-W4A8-Mixed-AttentionGPTQ-Cal48-Seq512
 - Modelo padre: https://huggingface.co/gpustack/GLM-5.3-W4A8
 - Modelo original y licencia: https://huggingface.co/zai-org/GLM-5.3
 - Texto de licencia: https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE

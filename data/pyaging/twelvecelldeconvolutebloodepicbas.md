@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Método | CpGs | Predicción | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `twelvecelldeconvolutebloodepicbas` | Deconvolución restringida | 240 (no publicados) | Proporción de basófilos | BSD-3-Clause | HuggingFace / pyaging |
+| `twelvecelldeconvolutebloodepicbas` | Deconvolución restringida | 240 (no publicados) | Proporción de basófilos | BSD-3-Clause | Hugging Face / pyaging |
 | IDOL-Ext (Salas et al., 2022) | Deconvolución restringida | 1.200 | Proporciones de 12 tipos celulares | No especificada | Publicado en el paper |
 | CIBERSORT | Deconvolución basada en soporte vectorial | Variable | Proporciones de múltiples tipos | Académica | Sitio web dedicado |
 
@@ -73,6 +73,6 @@ No se dispone de comparaciones cuantitativas directas entre estos métodos en la
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/pyaging/twelvecelldeconvolutebloodepicbas)
+- [Modelo en Hugging Face](https://huggingface.co/pyaging/twelvecelldeconvolutebloodepicbas)
 - [Documentación de pyaging](https://pyaging.readthedocs.io)
 - [Publicación original: Salas et al., 2022, Nature Communications](https://doi.org/10.1038/s41467-021-27864-7)

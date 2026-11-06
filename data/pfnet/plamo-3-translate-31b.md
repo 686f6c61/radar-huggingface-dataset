@@ -97,7 +97,7 @@ TranslateGemma y HY-MT2 se mencionan como sistemas de comparación en la evaluac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pfnet/plamo-3-translate-31b
+- Modelo en Hugging Face: https://huggingface.co/pfnet/plamo-3-translate-31b
 - README en japonés: https://huggingface.co/pfnet/plamo-3-translate-31b/blob/main/README_ja.md
 - Blog técnico de PFN sobre la publicación de pesos: https://www.preferred.jp/en/blog/tech/plamo-3-translate-weight-release
 - Licencia PLaMo Community License (inglés): https://plamo.preferredai.jp/info/plamo-community-license-en

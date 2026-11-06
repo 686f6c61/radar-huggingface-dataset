@@ -80,7 +80,7 @@ No se han encontrado otros modelos abliterados de la misma familia GLM con espec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-FP8
+- Modelo en Hugging Face: https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-FP8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Sitio web de OrcaRouter: https://www.orcarouter.ai
 - Catálogo de modelos de OrcaRouter: https://www.orcarouter.ai/models

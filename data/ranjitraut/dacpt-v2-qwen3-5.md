@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dacpt-v2-qwen3.5` es un adaptador LoRA de tipo PEFT (Parameter-Efficient Fine-Tuning) desarrollado por el usuario `ranjitraut`, que se aplica sobre el modelo base `Qwen/Qwen3.5-2B`. Se trata de un ajuste fino supervisado (SFT) realizado con la librería TRL de HuggingFace, orientado a generación de texto conversacional. El repositorio tiene un tamaño de 0,1 GB, lo que confirma que solo contiene los pesos del adaptador y no el modelo completo.
+`dacpt-v2-qwen3.5` es un adaptador LoRA de tipo PEFT (Parameter-Efficient Fine-Tuning) desarrollado por el usuario `ranjitraut`, que se aplica sobre el modelo base `Qwen/Qwen3.5-2B`. Se trata de un ajuste fino supervisado (SFT) realizado con la librería TRL de Hugging Face, orientado a generación de texto conversacional. El repositorio tiene un tamaño de 0,1 GB, lo que confirma que solo contiene los pesos del adaptador y no el modelo completo.
 
 El modelo base, Qwen3.5-2B, pertenece a la familia Qwen3.5 de Alibaba, una serie de modelos de lenguaje de última generación que combina arquitectura híbrida (atención lineal + transformer tradicional) y capacidades multimodales nativas. Sin embargo, la información pública sobre este adaptador concreto es extremadamente limitada: la model card no incluye detalles sobre datos de entrenamiento, hiperparámetros, licencia o rendimiento, por lo que gran parte de la ficha se basa en lo que se puede inferir del modelo base y de las prácticas habituales en este tipo de adaptadores.
 
@@ -21,7 +21,7 @@ El modelo base, Qwen3.5-2B, pertenece a la familia Qwen3.5 de Alibaba, una serie
 
 ## Arquitectura y entrenamiento
 
-El adaptador se basa en la técnica LoRA (Low-Rank Adaptation), que congela los pesos del modelo base y añade matrices de bajo rango entrenables. Esto permite ajustar el modelo con un coste computacional y de almacenamiento muy reducido. El entrenamiento se realizó mediante SFT (Supervised Fine-Tuning) utilizando la librería TRL de HuggingFace, como indican los tags del repositorio. No se dispone de información sobre el dataset utilizado, el número de pasos de entrenamiento, la tasa de aprendizaje ni el régimen de precisión (fp16, bf16, etc.).
+El adaptador se basa en la técnica LoRA (Low-Rank Adaptation), que congela los pesos del modelo base y añade matrices de bajo rango entrenables. Esto permite ajustar el modelo con un coste computacional y de almacenamiento muy reducido. El entrenamiento se realizó mediante SFT (Supervised Fine-Tuning) utilizando la librería TRL de Hugging Face, como indican los tags del repositorio. No se dispone de información sobre el dataset utilizado, el número de pasos de entrenamiento, la tasa de aprendizaje ni el régimen de precisión (fp16, bf16, etc.).
 
 El modelo base, Qwen3.5-2B, forma parte de la familia Qwen3.5, que según la documentación oficial introduce una arquitectura híbrida que combina atención lineal con bloques transformer tradicionales, además de capacidades multimodales nativas (texto, imagen y vídeo). Sin embargo, no se puede confirmar que el adaptador herede todas estas capacidades, ya que el ajuste fino podría haberse centrado únicamente en tareas de texto conversacional.
 
@@ -39,7 +39,7 @@ El modelo base, Qwen3.5-2B, forma parte de la familia Qwen3.5, que según la doc
 - Investigación en fine-tuning eficiente: sirve como ejemplo práctico de cómo aplicar SFT con LoRA y TRL sobre un modelo de la familia Qwen3.5, útil para quienes estudian técnicas de adaptación de bajo rango.
 - Despliegue en entornos con recursos limitados: al no requerir los pesos completos del modelo, el adaptador permite ajustar el comportamiento del modelo base con un coste de almacenamiento mínimo, facilitando su uso en edge computing o dispositivos con poca memoria.
 - Evaluación de la familia Qwen3.5: permite comparar el rendimiento del modelo base con y sin el adaptador en tareas conversacionales, lo que puede servir para medir el impacto del fine-tuning.
-- Integración en pipelines de generación de texto: al ser compatible con la librería `transformers` y `peft`, se puede integrar fácilmente en flujos existentes de HuggingFace.
+- Integración en pipelines de generación de texto: al ser compatible con la librería `transformers` y `peft`, se puede integrar fácilmente en flujos existentes de Hugging Face.
 - Experimentación académica: útil para estudiar el comportamiento de adaptadores LoRA sobre modelos híbridos de atención lineal, un área de investigación activa.
 
 ## Benchmarks y rendimiento

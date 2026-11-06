@@ -83,8 +83,8 @@ La ventaja de esta variante es que mantiene los pesos Q4_0 exactos del checkpoin
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/FreedomAISVR/Gemma-4-12B-it-QAT-MXFP4-GGUF)
-- [Modelo base en HuggingFace](https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized)
+- [Modelo en Hugging Face](https://huggingface.co/FreedomAISVR/Gemma-4-12B-it-QAT-MXFP4-GGUF)
+- [Modelo base en Hugging Face](https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized)
 - [Pagina oficial de Gemma 4 en Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)
 - [Blog de Google sobre QAT en Gemma 4](https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/)
 - [Informe tecnico de Gemma 4 (arXiv)](https://arxiv.org/pdf/2607.02770)

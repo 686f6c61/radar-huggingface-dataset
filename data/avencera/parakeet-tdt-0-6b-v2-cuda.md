@@ -89,7 +89,7 @@ La diferencia principal frente al original de NVIDIA es el formato y el runtime 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/avencera/parakeet-tdt-0.6b-v2-cuda
+- Modelo en Hugging Face: https://huggingface.co/avencera/parakeet-tdt-0.6b-v2-cuda
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
 - Variante v3 para CUDA: https://huggingface.co/avencera/parakeet-tdt-0.6b-v3-cuda
 - Repositorio scriptrs: https://github.com/avencera/scriptrs

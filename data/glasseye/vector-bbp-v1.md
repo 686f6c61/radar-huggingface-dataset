@@ -23,7 +23,7 @@ El repositorio no incluye pipeline declarado, idiomas soportados, resultados de 
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador LoRA, no un modelo entrenado desde cero. Hereda por tanto la arquitectura del modelo base: un transformer decoder-only de 7.250 millones de parametros con atencion causal, embeddings rotatorios (RoPE) y un tokenizador de 32.768 entradas. Los detalles concretos del ajuste (rango del adaptador, alpha, dropout, modulos objetivo, tasa de aprendizaje, numero de pasos) no estan documentados en la model card ni en los metadatos de HuggingFace.
+El artefacto es un adaptador LoRA, no un modelo entrenado desde cero. Hereda por tanto la arquitectura del modelo base: un transformer decoder-only de 7.250 millones de parametros con atencion causal, embeddings rotatorios (RoPE) y un tokenizador de 32.768 entradas. Los detalles concretos del ajuste (rango del adaptador, alpha, dropout, modulos objetivo, tasa de aprendizaje, numero de pasos) no estan documentados en la model card ni en los metadatos de Hugging Face.
 
 Sobre los datos de entrenamiento, la informacion disponible solo indica que el ajuste se realizo en local sobre una RTX 5070 y que parte de un adaptador previo denominado "GlassEye BBP v1". No se especifica el volumen de tokens, la composicion del corpus (informes de bug bounty reales, politicas de programa, documentacion CVSS/CWE, etc.), ni si hubo una fase de RLHF o DPO. La innovacion declarada es de tipo conductual mas que arquitectonica: la incorporacion de un system prompt de "VECTOR Analyst" y un endurecimiento de autenticacion cuyo objetivo es que el modelo no invente identificadores de programa ni datos de alcance. No se documenta ninguna tecnica de inferencia especial (decodificacion especulativa, atencion lineal u otras).
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad | Evaluacion publica |
 |---|---|---|---|---|---|---|
-| GLASSEYE/vector-bbp-v1 | 7.250 M (base) + LoRA | 32.768 tokens (base) | Adaptador LoRA especializado en BBP/VDP | apache-2.0 | HuggingFace, 0 descargas | No disponible |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7.250 M | 32.768 tokens | Modelo instructivo generalista | apache-2.0 | HuggingFace, ampliamente desplegado | Si, extensa y publica |
+| GLASSEYE/vector-bbp-v1 | 7.250 M (base) + LoRA | 32.768 tokens (base) | Adaptador LoRA especializado en BBP/VDP | apache-2.0 | Hugging Face, 0 descargas | No disponible |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7.250 M | 32.768 tokens | Modelo instructivo generalista | apache-2.0 | Hugging Face, ampliamente desplegado | Si, extensa y publica |
 | Otros modelos abiertos orientados a seguridad ofensiva | No disponible | No disponible | Ajuste completo o LoRA | No disponible | No disponible | No disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa cuantitativa con alternativas de la misma categoria. Los resultados de busqueda web proporcionados no contienen referencias relevantes al modelo ni a adaptadores comparables.
@@ -87,6 +87,6 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GLASSEYE/vector-bbp-v1
+- Modelo en Hugging Face: https://huggingface.co/GLASSEYE/vector-bbp-v1
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en los resultados de busqueda web proporcionados.

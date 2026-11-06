@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ALFWorld-Qwen3-8B-Adaptive-Random-Each es un ajuste fino del modelo denso Qwen/Qwen3-8B publicado por el usuario wckwan en HuggingFace. No es un modelo de propósito general: se trata de una política entrenada mediante aprendizaje por refuerzo para actuar como agente de búsqueda multi-turno al estilo Search-R1, es decir, un modelo que alterna razonamiento, llamadas a herramientas de recuperación y consumo de las respuestas devueltas por esas herramientas hasta cerrar una tarea.
+ALFWorld-Qwen3-8B-Adaptive-Random-Each es un ajuste fino del modelo denso Qwen/Qwen3-8B publicado por el usuario wckwan en Hugging Face. No es un modelo de propósito general: se trata de una política entrenada mediante aprendizaje por refuerzo para actuar como agente de búsqueda multi-turno al estilo Search-R1, es decir, un modelo que alterna razonamiento, llamadas a herramientas de recuperación y consumo de las respuestas devueltas por esas herramientas hasta cerrar una tarea.
 
 El entrenamiento emplea una variante denominada Process-GRPO, en la que un modelo de recompensa de proceso (un verificador Olmo-3-7B-Think) puntúa cada turno de la trayectoria, con normalización de ventajas por par (grupo, posición de turno) y prompts de verificación que incluyen las respuestas de las herramientas recuperadas y la respuesta de referencia. El resultado declarado en el paso 300 es un score de recompensa de proceso medio de aproximadamente 0,93, unas 2,6 búsquedas por trayectoria y una precisión de 0,49 sobre el batch de entrenamiento.
 
@@ -104,7 +104,7 @@ La comparación únicamente puede establecerse con solidez frente al modelo base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wckwan/ALFWorld-Qwen3-8B-Adaptive-Random-Each
+- Modelo en Hugging Face: https://huggingface.co/wckwan/ALFWorld-Qwen3-8B-Adaptive-Random-Each
 - Modelo base Qwen/Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Referencias del dominio no incluidas en la información proporcionada: repositorio de ALFWorld (https://github.com/alfworld/alfworld) y repositorio de Search-R1 (https://github.com/PeterGriffinJin/Search-R1)
 - No se han proporcionado enlaces a papers, blogs, demos ni repositorios adicionales del autor.

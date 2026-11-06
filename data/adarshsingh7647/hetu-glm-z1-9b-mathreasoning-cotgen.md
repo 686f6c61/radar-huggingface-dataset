@@ -77,7 +77,7 @@ No se han identificado otros modelos comparables específicos en la información
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/AdarshSingh7647/HETU-GLM-Z1-9B-MathReasoning-CotGen)
+- [Hugging Face del modelo](https://huggingface.co/AdarshSingh7647/HETU-GLM-Z1-9B-MathReasoning-CotGen)
 - [Modelo base zai-org/GLM-Z1-9B-0414](https://huggingface.co/zai-org/GLM-Z1-9B-0414)
 - [Referencia de GLM en Wikipedia](https://en.wikipedia.org/wiki/GLM_(AI))
 - [Modelo base en SiliconFlow](https://www.siliconflow.com/models/glm-z1-9b-0414)

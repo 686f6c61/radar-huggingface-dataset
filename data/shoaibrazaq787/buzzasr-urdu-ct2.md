@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo (WER, latencia) para este mode
 
 ## Enlaces
 
-- [HuggingFace: shoaibrazaq787/buzzasr-urdu-ct2](https://huggingface.co/shoaibrazaq787/buzzasr-urdu-ct2)
+- [Hugging Face: shoaibrazaq787/buzzasr-urdu-ct2](https://huggingface.co/shoaibrazaq787/buzzasr-urdu-ct2)
 - [Modelo base BuzzASR/urdu](https://huggingface.co/BuzzASR/urdu) (referenciado en la model card, no verificado)
 - [Repositorio CTranslate2](https://github.com/OpenNMT/CTranslate2)
 - [Repositorio faster-whisper](https://github.com/SYSTRAN/faster-whisper)

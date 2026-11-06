@@ -70,7 +70,7 @@ No se han publicado comparativas directas con otros modelos. Sin embargo, por su
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta variante: https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.4-LazyLora-heresy-i1-GGUF
+- Repositorio Hugging Face de esta variante: https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.4-LazyLora-heresy-i1-GGUF
 - Repositorio del modelo base (sin LazyLora): https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.4-GGUF
 - Página en FriendliAI (variante Defunct-Heresy): https://friendli.ai/models/MuXodious/Goetia-26B-A4B-v1.4-Defunct-Heresy
 - Página en FriendliAI (variante LazyLora-heresy): https://friendli.ai/models/MuXodious/Goetia-26B-A4B-v1.4-LazyLora-heresy

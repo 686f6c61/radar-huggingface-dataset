@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PornWorksNsfwHentaiAnimeLora es un adaptador LoRA de tipo text-to-image publicado en HuggingFace por el usuario ChoLuckyHexSexySuccubusQueen135Age. Se trata de un fine-tuning ligero (LoRA) que se aplica sobre el checkpoint SDXL `AI-Porn/pornworks-anime-desire-NSFW-Anime-and-hentai-sdxl-checkpoint`, orientado a la generacion de imagenes de estilo anime y hentai con contenido explicito. El repositorio ocupa 6,9 GB, un tamano inusualmente grande para un LoRA, lo que sugiere que puede incluir pesos completos o checkpoints intermedios ademas de los adaptadores.
+PornWorksNsfwHentaiAnimeLora es un adaptador LoRA de tipo text-to-image publicado en Hugging Face por el usuario ChoLuckyHexSexySuccubusQueen135Age. Se trata de un fine-tuning ligero (LoRA) que se aplica sobre el checkpoint SDXL `AI-Porn/pornworks-anime-desire-NSFW-Anime-and-hentai-sdxl-checkpoint`, orientado a la generacion de imagenes de estilo anime y hentai con contenido explicito. El repositorio ocupa 6,9 GB, un tamano inusualmente grande para un LoRA, lo que sugiere que puede incluir pesos completos o checkpoints intermedios ademas de los adaptadores.
 
 El modelo no dispone de model card tecnica sustantiva: el README se limita a una plantilla de metadatos, una galeria de imagenes de ejemplo y una seccion de descarga. No se documentan datos de entrenamiento, hiperparametros, numero de pasos, composicion del dataset ni el prompt de instancia (`instance_prompt` figura como `null`). La licencia declarada es `unlicense`, lo que en la practica implica dominio publico segun el autor, aunque la naturaleza del contenido y la cadena de modelos base introducen incertidumbres legales relevantes.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PornWorksNsfwHentaiAnimeLora | LoRA SDXL | pornworks-anime-desire SDXL | no disponible | no aplica | unlicense | HuggingFace, 25 descargas |
-| Adaptadores LoRA anime SDXL genericos | LoRA SDXL | SDXL 1.0 | variable | no aplica | variable (muchos con licencias restrictivas) | HuggingFace / Civitai |
-| Checkpoint SDXL anime NSFW completo | Checkpoint SDXL | SDXL 1.0 | ~2,6 B (UNet) | no aplica | variable | HuggingFace / Civitai |
+| PornWorksNsfwHentaiAnimeLora | LoRA SDXL | pornworks-anime-desire SDXL | no disponible | no aplica | unlicense | Hugging Face, 25 descargas |
+| Adaptadores LoRA anime SDXL genericos | LoRA SDXL | SDXL 1.0 | variable | no aplica | variable (muchos con licencias restrictivas) | Hugging Face / Civitai |
+| Checkpoint SDXL anime NSFW completo | Checkpoint SDXL | SDXL 1.0 | ~2,6 B (UNet) | no aplica | variable | Hugging Face / Civitai |
 
 No se dispone de datos de rendimiento comparativo ni de benchmarks objetivos para este adaptador frente a alternativas.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparativo ni de benchmarks objetivos par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChoLuckyHexSexySuccubusQueen135Age/PornWorksNsfwHentaiAnimeLora
+- Hugging Face: https://huggingface.co/ChoLuckyHexSexySuccubusQueen135Age/PornWorksNsfwHentaiAnimeLora
 - Modelo base: https://huggingface.co/AI-Porn/pornworks-anime-desire-NSFW-Anime-and-hentai-sdxl-checkpoint
 - Repositorio de archivos: https://huggingface.co/ChoLuckyHexSexySuccubusQueen135Age/PornWorksNsfwHentaiAnimeLora/tree/main

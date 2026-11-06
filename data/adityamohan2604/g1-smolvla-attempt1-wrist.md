@@ -2,7 +2,7 @@
 
 ## Resumen
 
-g1-smolvla-attempt1-wrist es un modelo de vision-lenguaje-accion (VLA) para robotica, publicado por el usuario adityamohan2604 en HuggingFace bajo la libreria LeRobot. Se trata de un ajuste fino (fine-tuning) de SmolVLA, el modelo fundacional ligero de robotica de HuggingFace, adaptado a una tarea concreta de manipulacion: coger un bloque azul y colocarlo sobre una estrella azul con el humanoide Unitree G1 equipado con la mano Dex3-1, todo simulado en MuJoCo.
+g1-smolvla-attempt1-wrist es un modelo de vision-lenguaje-accion (VLA) para robotica, publicado por el usuario adityamohan2604 en Hugging Face bajo la libreria LeRobot. Se trata de un ajuste fino (fine-tuning) de SmolVLA, el modelo fundacional ligero de robotica de Hugging Face, adaptado a una tarea concreta de manipulacion: coger un bloque azul y colocarlo sobre una estrella azul con el humanoide Unitree G1 equipado con la mano Dex3-1, todo simulado en MuJoCo.
 
 El modelo parte de los 450 millones de parametros del SmolVLA original y ha sido entrenado en dos fases: primero con demostraciones retargetizadas a partir del movimiento de la mano del propio autor y despues con un ajuste por aprendizaje por refuerzo (RL) ponderado por ventaja (advantage-weighted) sobre sus propias trayectorias. El autor reporta un exito del 52 % sobre 60 poses de bloque no vistas durante el entrenamiento.
 
@@ -71,9 +71,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| g1-smolvla-attempt1-wrist | 450 M | no disponible | 52 % en 60 poses no vistas (tarea propia) | no disponible | HuggingFace (adityamohan2604) |
-| SmolVLA (base, HuggingFace) | 450 M | no disponible | Igual o mejor que modelos 7-10 veces mayores, segun la fuente citada | no disponible en la informacion | HuggingFace |
-| smolVLA AMD (AMD-PAVS-AI) | 450 M | no disponible | no disponible | no disponible en la informacion | HuggingFace |
+| g1-smolvla-attempt1-wrist | 450 M | no disponible | 52 % en 60 poses no vistas (tarea propia) | no disponible | Hugging Face (adityamohan2604) |
+| SmolVLA (base, Hugging Face) | 450 M | no disponible | Igual o mejor que modelos 7-10 veces mayores, segun la fuente citada | no disponible en la informacion | Hugging Face |
+| smolVLA AMD (AMD-PAVS-AI) | 450 M | no disponible | no disponible | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de benchmarks comparables de otros VLAs de robotica en la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa con alternativas de la misma categoria.
 
@@ -92,9 +92,9 @@ No se dispone de datos de benchmarks comparables de otros VLAs de robotica en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adityamohan2604/g1-smolvla-attempt1-wrist
+- Modelo en Hugging Face: https://huggingface.co/adityamohan2604/g1-smolvla-attempt1-wrist
 - Codigo, evaluacion e instrucciones (autor): https://github.com/Adityamohan260498/RL-Finetuned-VLA-Humanod-Manipulation
-- Blog de SmolVLA (HuggingFace): https://huggingface.co/blog/smolvla
+- Blog de SmolVLA (Hugging Face): https://huggingface.co/blog/smolvla
 - Paper SmolVLA en arXiv: https://arxiv.org/abs/2506.01844
 - Documentacion de SmolVLA en LeRobot: https://github.com/huggingface/lerobot/blob/main/docs/source/smolvla.mdx
 - Repositorio SmolVLA para ROCm: https://huggingface.co/AMD-PAVS-AI/smolVLA

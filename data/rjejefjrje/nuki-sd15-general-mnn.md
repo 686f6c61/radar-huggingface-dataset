@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nuki-SD15-General-MNN es un checkpoint de Stable Diffusion 1.5 publicado en HuggingFace por el usuario rjejefjrje bajo licencia OpenRAIL. El nombre sugiere que se trata de un modelo de difusion latente texto-a-imagen generalista basado en el checkpoint estable de Stable Diffusion 1.5, probablemente destinado a generacion de imagenes fotorrealistas a partir de prompts de texto. El sufijo "MNN" podria indicar una variante optimizada o adaptada, aunque no se dispone de documentacion que lo confirme.
+Nuki-SD15-General-MNN es un checkpoint de Stable Diffusion 1.5 publicado en Hugging Face por el usuario rjejefjrje bajo licencia OpenRAIL. El nombre sugiere que se trata de un modelo de difusion latente texto-a-imagen generalista basado en el checkpoint estable de Stable Diffusion 1.5, probablemente destinado a generacion de imagenes fotorrealistas a partir de prompts de texto. El sufijo "MNN" podria indicar una variante optimizada o adaptada, aunque no se dispone de documentacion que lo confirme.
 
 El modelo fue creado el 23 de agosto de 2026 y no registra descargas ni valoraciones. La model card del autor es extremadamente breve y solo incluye la licencia, sin informacion sobre arquitectura, datos de entrenamiento, capacidades o requisitos. En el momento de esta ficha, no existen datos publicos de benchmarks ni comparativas con otros modelos. Este modelo no es relevante para produccion sin informacion adicional.
 
@@ -53,6 +53,6 @@ No disponible. No se han encontrado datos de comparacion con otros modelos de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rjejefjrje/Nuki-SD15-General-MNN
+- Hugging Face: https://huggingface.co/rjejefjrje/Nuki-SD15-General-MNN
 - Referencia de Stable Diffusion 1.5 (relacionada por nombre): https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Civitai (comunidad de modelos de difusion, no especifico del modelo): https://civitai.com/models

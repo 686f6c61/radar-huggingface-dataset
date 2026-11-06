@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `JasperYOU/arm1_joint_noise_tlow0_epoch1` es un checkpoint de tipo merge basado en el modelo base `Qwen/Qwen3-8B`, publicado por el usuario JasperYOU en HuggingFace. Se trata de un modelo de generación de texto (pipeline `text-generation`) con un total de 8.190.735.360 parámetros, lo que lo sitúa en la categoría de modelos de 8 mil millones de parámetros. El repositorio contiene únicamente pesos en formato `safetensors` (16,4 GB) y una model card extremadamente escueta que no aporta detalles sobre el proceso de entrenamiento, los datos utilizados ni el propósito específico del ajuste.
+El modelo `JasperYOU/arm1_joint_noise_tlow0_epoch1` es un checkpoint de tipo merge basado en el modelo base `Qwen/Qwen3-8B`, publicado por el usuario JasperYOU en Hugging Face. Se trata de un modelo de generación de texto (pipeline `text-generation`) con un total de 8.190.735.360 parámetros, lo que lo sitúa en la categoría de modelos de 8 mil millones de parámetros. El repositorio contiene únicamente pesos en formato `safetensors` (16,4 GB) y una model card extremadamente escueta que no aporta detalles sobre el proceso de entrenamiento, los datos utilizados ni el propósito específico del ajuste.
 
 La relevancia de este modelo es limitada en el momento de su publicación: no cuenta con descargas ni valoraciones, y la documentación disponible no permite determinar qué problema concreto resuelve ni por qué se ha creado. Al estar basado en Qwen3-8B, hereda presumiblemente las capacidades generales de ese modelo base, pero no se ha publicado ninguna información que confirme características adicionales como fine-tuning con datos propios, técnicas de alineación o adaptaciones específicas.
 
@@ -54,5 +54,5 @@ No se dispone de informacion sobre modelos comparables. Al ser un checkpoint bas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JasperYOU/arm1_joint_noise_tlow0_epoch1
+- Modelo en Hugging Face: https://huggingface.co/JasperYOU/arm1_joint_noise_tlow0_epoch1
 - Perfil de GitHub del autor: https://github.com/jasperyou

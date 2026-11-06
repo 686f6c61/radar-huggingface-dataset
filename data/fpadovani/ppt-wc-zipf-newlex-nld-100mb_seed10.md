@@ -18,7 +18,7 @@ Es relevante ahora unicamente dentro del contexto de reproducibilidad de experim
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio solo contiene pesos safetensors; no se publican variantes GGUF, AWQ, GPTQ ni bitsandbytes) |
 | Idiomas soportados | no disponible (el modelo base esta entrenado en `eng_latn`, ingles; el sufijo `nld` del nombre sugiere neerlandes, pero no se confirma en la model card) |
-| Licencia | no disponible (la model card incluye el campo `licence: license` sin especificar terminos; los metadatos de HuggingFace no declaran licencia) |
+| Licencia | no disponible (la model card incluye el campo `licence: license` sin especificar terminos; los metadatos de Hugging Face no declaran licencia) |
 | Formato de pesos | safetensors |
 | Libreria | transformers (compatible con text-generation-inference y endpoints compatibles) |
 | Tamano del repositorio | 1,4 GB |
@@ -49,7 +49,7 @@ El identificador del modelo apunta a un experimento factorial: `ppt` (posiblemen
 - Estudio de leyes de escala con presupuesto minimo: permite analizar como se comporta un transformer de 86,5 M de parametros cuando se varia el vocabulario o el tratamiento del lexico, sin necesidad de infraestructura de GPU de gama alta.
 - Generacion de texto sintetico para aumento de datos: al ser un modelo pequeno y rapido, puede generar grandes volumenes de texto de bajo valor anotativo para prototipos de pipelines de NLP antes de pasar a modelos mayores.
 - Pruebas de integracion de extremo a extremo: util para validar infraestructura de despliegue (vLLM, TGI, endpoints compatibles con la API de chat) con un coste de VRAM minimo antes de migrar a modelos de produccion.
-- Docencia y formacion: ejemplo completo y ligero de un flujo SFT con TRL, util para ilustrar el ciclo de vida de un fine-tuning supervisado desde el dataset hasta el despliegue en un pipeline de HuggingFace.
+- Docencia y formacion: ejemplo completo y ligero de un flujo SFT con TRL, util para ilustrar el ciclo de vida de un fine-tuning supervisado desde el dataset hasta el despliegue en un pipeline de Hugging Face.
 - Generacion de texto creativo en neerlandes o ingles (si se confirma el idioma): borradores cortos, completado de frases o generacion de variaciones, siempre con revision humana dado el tamano reducido del modelo.
 - Base para ablaciones de tokenizacion: dado el sufijo `newlex` en el nombre, el modelo puede emplearse para medir el impacto de un vocabulario ampliado en la perplejidad y en la calidad del texto generado.
 - Filtrado o puntuacion de candidatos: por su bajo coste de inferencia, puede usarse como modelo de scoring rapido en tareas de seleccion previa, aunque su fiabilidad no esta evaluada.
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| `fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed10` | 86.508.288 | no disponible | no disponible | HuggingFace, 0 descargas | no |
-| `goldfish-models/eng_latn_100mb` (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | no disponible en esta ficha |
-| GPT-2 small (referencia de OpenAI) | 124 M | 1024 tokens | MIT | HuggingFace, ampliamente distribuido | si, aunque no comparables directamente por diferencias de tokenizador y datos |
-| DistilGPT-2 (referencia de HuggingFace) | 82 M | 1024 tokens | Apache 2.0 | HuggingFace | si, aunque no comparables directamente |
+| `fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed10` | 86.508.288 | no disponible | no disponible | Hugging Face, 0 descargas | no |
+| `goldfish-models/eng_latn_100mb` (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | no disponible en esta ficha |
+| GPT-2 small (referencia de OpenAI) | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente distribuido | si, aunque no comparables directamente por diferencias de tokenizador y datos |
+| DistilGPT-2 (referencia de Hugging Face) | 82 M | 1024 tokens | Apache 2.0 | Hugging Face | si, aunque no comparables directamente |
 
 La comparacion de rendimiento con estas alternativas no es posible con la informacion disponible: no se han publicado metricas para el modelo objeto de la ficha ni se dispone de evaluaciones equivalentes del modelo base de Goldfish. La comparativa se limita, por tanto, a parametros, licencia y disponibilidad.
 
@@ -88,14 +88,14 @@ La comparacion de rendimiento con estas alternativas no es posible con la inform
 - Riesgo de alucinacion: alto. Con 86,5 M de parametros y un corpus de entrenamiento de 100 MB, la capacidad de almacenar conocimiento factual es muy limitada; es esperable que genere afirmaciones plausibles pero incorrectas con frecuencia.
 - Limitaciones de contexto: no se declara la longitud de contexto. El modelo base de tipo GPT-2 suele operar con ventanas de 1024 tokens, pero este dato no esta confirmado para el checkpoint, por lo que debe verificarse antes de usarlo con entradas largas.
 - Limitaciones de idioma: el modelo base es de ingles; el sufijo `nld` sugiere neerlandes, pero la model card no confirma el idioma de entrenamiento ni la cobertura del tokenizador. No hay garantia de calidad en castellano.
-- Restricciones de licencia para uso comercial: la licencia no esta disponible. La model card incluye `licence: license`, un marcador de posicion sin contenido legal, y los metadatos de HuggingFace no declaran licencia. No debe asumirse uso comercial libre sin consultar al autor.
+- Restricciones de licencia para uso comercial: la licencia no esta disponible. La model card incluye `licence: license`, un marcador de posicion sin contenido legal, y los metadatos de Hugging Face no declaran licencia. No debe asumirse uso comercial libre sin consultar al autor.
 - Caveats para produccion: repositorio con 0 descargas y 0 likes, sin benchmarks, sin documentacion de datos de entrenamiento, sin hiperparametros y sin versionado de evaluaciones. La fecha de creacion y actualizacion (2026-09-10), con solo tres minutos de diferencia, apunta a una publicacion automatica sin curacion posterior.
 - Ausencia de plantilla de chat verificada: la model card muestra un ejemplo con lista de mensajes, pero no se documenta un `chat_template` en el repositorio, lo que puede provocar comportamientos inconsistentes segun la libreria cliente.
 - No apto para tareas que requieran conocimiento factual, razonamiento complejo, generacion de codigo fiable o cumplimiento normativo sin una evaluacion especifica previa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/9oqtd7a6

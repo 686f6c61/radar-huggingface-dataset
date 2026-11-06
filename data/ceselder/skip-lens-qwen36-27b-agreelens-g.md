@@ -86,7 +86,7 @@ No se dispone de datos comparativos con lentes de otros autores o modelos de int
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ceselder/skip-lens-qwen36-27b-agreelens-g
+- Repositorio Hugging Face: https://huggingface.co/ceselder/skip-lens-qwen36-27b-agreelens-g
 - Brazos hermanos: https://huggingface.co/ceselder/skip-lens-qwen36-27b-agreelens-{a,d,p}
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Lente J de referencia: https://huggingface.co/camilablank/workspace-lenses (qwen3.6-27b/j-lens/lens.pt)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SENTINEL-AI TR v2 - ELECTRA es un clasificador binario de texto en turco disenado para distinguir entre texto escrito por humanos (etiqueta 0) y texto generado por inteligencia artificial (etiqueta 1). Lo desarrolla el usuario de HuggingFace ads2009 y se publica bajo licencia Apache 2.0. El modelo parte del discriminador ELECTRA base en turco de dbmdz y se ha ajustado fino para la tarea de deteccion de texto sintetico, un problema cada vez mas relevante en entornos editoriales, academicos y de moderacion de contenido.
+SENTINEL-AI TR v2 - ELECTRA es un clasificador binario de texto en turco disenado para distinguir entre texto escrito por humanos (etiqueta 0) y texto generado por inteligencia artificial (etiqueta 1). Lo desarrolla el usuario de Hugging Face ads2009 y se publica bajo licencia Apache 2.0. El modelo parte del discriminador ELECTRA base en turco de dbmdz y se ha ajustado fino para la tarea de deteccion de texto sintetico, un problema cada vez mas relevante en entornos editoriales, academicos y de moderacion de contenido.
 
 Arquitectonicamente es un transformer tipo ELECTRA con 110.618.882 parametros totales (aproximadamente 110,6 millones), lo que lo situa en la categoria de modelos base ligeros. El repositorio ocupa unos 0,4 GB en formato safetensors, lo que facilita su despliegue en infraestructura modesta. Esta especializado exclusivamente en turco y su salida es una clasificacion de dos clases, no generacion de texto.
 
@@ -57,15 +57,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - En FP16: alrededor de 0,22 GB de pesos, con margen amplio para lotes grandes en GPUs modestas.
 - GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es sobredimensionada para inferencia por lotes pequenos; para alto throughput se recomienda A10, L4, A100 o H100.
 - Tambien puede ejecutarse en CPU para volumenes moderados, dado su tamano reducido.
-- Opciones de despliegue: HuggingFace Transformers, Text Embeddings Inference (TEI) para clasificacion, ONNX Runtime, o servidores propios con FastAPI; vLLM no es la via habitual para encoders de clasificacion.
+- Opciones de despliegue: Hugging Face Transformers, Text Embeddings Inference (TEI) para clasificacion, ONNX Runtime, o servidores propios con FastAPI; vLLM no es la via habitual para encoders de clasificacion.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ads2009/turkish-ai-text-detector-electra-v2 | 110,6 M | no disponible | Turco | Apache 2.0 | HuggingFace (39 descargas) |
-| dbmdz/electra-base-turkish-cased-discriminator | ~110 M | no disponible | Turco | no disponible en la informacion | HuggingFace (modelo base) |
+| ads2009/turkish-ai-text-detector-electra-v2 | 110,6 M | no disponible | Turco | Apache 2.0 | Hugging Face (39 descargas) |
+| dbmdz/electra-base-turkish-cased-discriminator | ~110 M | no disponible | Turco | no disponible en la informacion | Hugging Face (modelo base) |
 | Detectores multilingues genericos de texto IA | no disponible | no disponible | Multiples | variable | Depende del proveedor |
 
 La comparacion con detectores multilingues genericos no puede cuantificarse porque no se han publicado benchmarks para este modelo. Frente a su modelo base, la diferencia es la especializacion en la tarea de deteccion, no el tamano ni la arquitectura.
@@ -84,6 +84,6 @@ La comparacion con detectores multilingues genericos no puede cuantificarse porq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ads2009/turkish-ai-text-detector-electra-v2
+- Modelo en Hugging Face: https://huggingface.co/ads2009/turkish-ai-text-detector-electra-v2
 - Modelo base: https://huggingface.co/dbmdz/electra-base-turkish-cased-discriminator
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

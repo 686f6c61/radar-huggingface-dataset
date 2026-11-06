@@ -72,7 +72,7 @@ No se dispone de información suficiente para una comparativa cuantitativa con o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DanKau/g2.5-multi-v1-onnx
+- Repositorio Hugging Face: https://huggingface.co/DanKau/g2.5-multi-v1-onnx
 - Modelo base: https://huggingface.co/fastino/gliner2.5-multi-v1
 - Export ONNX de GLiNER2 multi-v1 (repositorio relacionado): https://huggingface.co/DanKau/gliner2-multi-v1-onnx
 - Export ONNX de GLiNER2.5 multi-v1 (otro autor): https://huggingface.co/jugaadsrl/gliner2.5-multi-v1-onnx

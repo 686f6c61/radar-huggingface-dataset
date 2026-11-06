@@ -74,12 +74,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TabICLv2 (via este repo, `tabicl/`) | no disponible | no disponible | ONNX `fp32`/`f16w` | BSD-3-Clause | HuggingFace |
-| Kumo Tabular (via este repo, `kumo/`) | no disponible | no disponible | ONNX `f16w` | OpenMDW-1.1 | HuggingFace |
-| Kumo Relational (via este repo, `rfm/`) | no disponible | no disponible | ONNX `fp32`/`f16w` | OpenMDW-1.1 | HuggingFace |
-| Chronos-2 (via este repo, `tsfm/`) | no disponible | no disponible | ONNX `fp32`/`f16w` | Apache-2.0 | HuggingFace |
+| TabICLv2 (via este repo, `tabicl/`) | no disponible | no disponible | ONNX `fp32`/`f16w` | BSD-3-Clause | Hugging Face |
+| Kumo Tabular (via este repo, `kumo/`) | no disponible | no disponible | ONNX `f16w` | OpenMDW-1.1 | Hugging Face |
+| Kumo Relational (via este repo, `rfm/`) | no disponible | no disponible | ONNX `fp32`/`f16w` | OpenMDW-1.1 | Hugging Face |
+| Chronos-2 (via este repo, `tsfm/`) | no disponible | no disponible | ONNX `fp32`/`f16w` | Apache-2.0 | Hugging Face |
 
-Los modelos de referencia originales (jingang/TabICL, nvidia/Kumo-Tabular, nvidia/Kumo-Relational, amazon/chronos-2, autogluon/chronos-2-small, nvidia/Kumo-Anomaly) estan disponibles en HuggingFace en sus formatos nativos; no se dispone de datos de rendimiento comparativo en la informacion proporcionada.
+Los modelos de referencia originales (jingang/TabICL, nvidia/Kumo-Tabular, nvidia/Kumo-Relational, amazon/chronos-2, autogluon/chronos-2-small, nvidia/Kumo-Anomaly) estan disponibles en Hugging Face en sus formatos nativos; no se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ Los modelos de referencia originales (jingang/TabICL, nvidia/Kumo-Tabular, nvidi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ScriptSmith/tabular-data-workbench-onnx
+- Repositorio Hugging Face: https://huggingface.co/ScriptSmith/tabular-data-workbench-onnx
 - Modelo base TabICL: https://huggingface.co/jingang/TabICL
 - Modelo base Kumo Tabular: https://huggingface.co/nvidia/Kumo-Tabular
 - Modelo base Kumo Relational: https://huggingface.co/nvidia/Kumo-Relational

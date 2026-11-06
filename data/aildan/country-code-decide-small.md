@@ -6,7 +6,7 @@ CountryCode-Decide (small, v1.2) es un modelo de clasificación de texto desarro
 
 El modelo se apoya en el encoder multilingüe jhu-clsp/mmBERT-small y añade dos cabezas de clasificación. Se distribuye en formato ONNX (int8 y fp32), pesa unos 75 MB en su versión cuantizada y resuelve una cadena en aproximadamente 4 ms en CPU, lo que permite desplegarlo sin GPU ni PyTorch. La relevancia actual radica en su enfoque de predicción selectiva con calibración certificada por dominio: el autor publica umbrales de confianza para tasas de error del 2 % y el 5 % según el dominio, algo poco habitual en modelos de normalización de entidades.
 
-La ficha se basa exclusivamente en la información disponible en la página de HuggingFace y en la model card aportada; la sección de evaluación de dicha model card aparece truncada en la información recibida, por lo que no se incluyen cifras de rendimiento no confirmadas.
+La ficha se basa exclusivamente en la información disponible en la página de Hugging Face y en la model card aportada; la sección de evaluación de dicha model card aparece truncada en la información recibida, por lo que no se incluyen cifras de rendimiento no confirmadas.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ No se dispone de datos cuantitativos de modelos comparables en la informacion pr
 
 | Alternativa | Tipo | Contexto | Licencia | Disponibilidad | Comparativa cuantitativa |
 |---|---|---|---|---|---|
-| CountryCode-Decide (small, v1.2) | Clasificador encoder sobre mmBERT-small, calibrado | Campo unico | Apache 2.0 | ONNX en HuggingFace | Base de referencia |
+| CountryCode-Decide (small, v1.2) | Clasificador encoder sobre mmBERT-small, calibrado | Campo unico | Apache 2.0 | ONNX en Hugging Face | Base de referencia |
 | Librerias de tablas de codigos (p. ej. mapeos ISO estaticos) | Reglas/diccionario | N/A | Segun libreria | Paquetes de software | No disponible |
 | Modelos de normalizacion de entidades basados en LLM | Generativo | Largo | Variable | Variable | No disponible |
 
@@ -93,6 +93,6 @@ No se han facilitado resultados de benchmarks que permitan comparar parametros, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aildan/country-code-decide-small
+- Modelo en Hugging Face: https://huggingface.co/aildan/country-code-decide-small
 - Repositorio de codigo, evaluacion y documentacion: https://github.com/aliildan/country-code-decide
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-small

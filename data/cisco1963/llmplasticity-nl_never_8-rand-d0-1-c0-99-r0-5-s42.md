@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Cisco1963/llmplasticity-nl_never_8-rand-d0.1-c0.99-r0.5-s42` es un checkpoint publicado en HuggingFace por el usuario Cisco1963. A partir del tag `gpt2` presente en la ficha y del recuento real de parametros declarado en el peso safetensors (122.706.432), se corresponde con una arquitectura transformer decoder-only de la familia GPT-2 en su variante base. El nombre del repositorio sugiere que se trata de un artefacto de investigacion sobre plasticidad en modelos de lenguaje ("llmplasticity"), con una configuracion de hiperparametros codificada en el propio identificador (inicializacion aleatoria "rand", posibles valores de dropout y semilla fijados en `d0.1-c0.99-r0.5-s42`).
+El modelo `Cisco1963/llmplasticity-nl_never_8-rand-d0.1-c0.99-r0.5-s42` es un checkpoint publicado en Hugging Face por el usuario Cisco1963. A partir del tag `gpt2` presente en la ficha y del recuento real de parametros declarado en el peso safetensors (122.706.432), se corresponde con una arquitectura transformer decoder-only de la familia GPT-2 en su variante base. El nombre del repositorio sugiere que se trata de un artefacto de investigacion sobre plasticidad en modelos de lenguaje ("llmplasticity"), con una configuracion de hiperparametros codificada en el propio identificador (inicializacion aleatoria "rand", posibles valores de dropout y semilla fijados en `d0.1-c0.99-r0.5-s42`).
 
-El modelo no dispone de pipeline declarado, licencia especificada, idiomas documentados ni descripcion en la ficha de HuggingFace, y acumula un numero muy bajo de descargas (8) y cero "likes" en el momento de la consulta. Esto apunta a un checkpoint de investigacion mas que a un modelo listo para produccion.
+El modelo no dispone de pipeline declarado, licencia especificada, idiomas documentados ni descripcion en la ficha de Hugging Face, y acumula un numero muy bajo de descargas (8) y cero "likes" en el momento de la consulta. Esto apunta a un checkpoint de investigacion mas que a un modelo listo para produccion.
 
 Su relevancia actual es limitada y acotada al ambito academico: resulta util como evidencia de experimentos de entrenamiento o de estudios de plasticidad, y como punto de partida reproducible para replicar resultados, pero no como modelo de proposito general. El tamano del repositorio (8,3 GB) es notablemente superior al que requeriria unicamente un modelo de 122 millones de parametros, lo que sugiere la presencia de multiples checkpoints o estados intermedios de entrenamiento en el mismo repositorio.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Cisco1963/llmplasticity-nl_never_8-rand-d0.1-c0.99-r0.5-s42 | 122.706.432 | No disponible | No disponible | HuggingFace |
-| GPT-2 base (openai-community/gpt2) | ~124 millones | 1.024 tokens | MIT | HuggingFace |
-| GPT-2 small (variante original) | ~117 millones | 1.024 tokens | MIT | HuggingFace |
+| Cisco1963/llmplasticity-nl_never_8-rand-d0.1-c0.99-r0.5-s42 | 122.706.432 | No disponible | No disponible | Hugging Face |
+| GPT-2 base (openai-community/gpt2) | ~124 millones | 1.024 tokens | MIT | Hugging Face |
+| GPT-2 small (variante original) | ~117 millones | 1.024 tokens | MIT | Hugging Face |
 
 La comparacion con GPT-2 base es la mas directa por escala y arquitectura, pero no se dispone de datos de rendimiento del modelo de Cisco1963 que permitan contrastar calidad de generacion, perplejidad u otras metricas. El resto de alternativas de la misma categoria (modelos de ~120-130 millones de parametros) no se han podido evaluar con datos proporcionados.
 
@@ -83,7 +83,7 @@ La comparacion con GPT-2 base es la mas directa por escala y arquitectura, pero 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-nl_never_8-rand-d0.1-c0.99-r0.5-s42
+- Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-nl_never_8-rand-d0.1-c0.99-r0.5-s42
 - Paper, blog, repositorio o demo del autor: no disponibles.
 - Referencia de arquitectura base (GPT-2): https://huggingface.co/openai-community/gpt2
 - Nota: la busqueda web no aporto ningun enlace relevante sobre este modelo.

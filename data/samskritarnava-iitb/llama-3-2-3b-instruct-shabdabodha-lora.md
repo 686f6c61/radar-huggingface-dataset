@@ -75,9 +75,9 @@ Las medidas sobre el conjunto retenido son automáticas y aproximadas (coinciden
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-3B-Instruct-shabdabodha-lora | 3B + LoRA r8 | 2048 (entrenamiento) | Śābdabodha en sánscrito | Llama 3.2 Community | HuggingFace (MLX) |
-| Gemma-3-4B-it-shabdabodha-lora | 4B + LoRA | no disponible | Śābdabodha en sánscrito | Gemma Terms of Use | HuggingFace (MLX) |
-| Llama-3.2-3B-Instruct (base) | 3B | contexto nativo de Llama 3.2 | Propósito general | Llama 3.2 Community | HuggingFace, Ollama, etc. |
+| Llama-3.2-3B-Instruct-shabdabodha-lora | 3B + LoRA r8 | 2048 (entrenamiento) | Śābdabodha en sánscrito | Llama 3.2 Community | Hugging Face (MLX) |
+| Gemma-3-4B-it-shabdabodha-lora | 4B + LoRA | no disponible | Śābdabodha en sánscrito | Gemma Terms of Use | Hugging Face (MLX) |
+| Llama-3.2-3B-Instruct (base) | 3B | contexto nativo de Llama 3.2 | Propósito general | Llama 3.2 Community | Hugging Face, Ollama, etc. |
 
 El adaptador Gemma 3 4B del mismo grupo es la alternativa más directa, ya que resuelve la misma tarea con una familia de modelos distinta y permite comparar el comportamiento. El Llama 3.2 3B Instruct sin ajustar es la referencia de partida: carece de la notación śābdabodha pero conserva las capacidades generales del modelo base. No se dispone de datos de rendimiento del adaptador Gemma en la información proporcionada.
 
@@ -95,7 +95,7 @@ El adaptador Gemma 3 4B del mismo grupo es la alternativa más directa, ya que r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/samskritarnava-iitb/Llama-3.2-3B-Instruct-shabdabodha-lora
+- Modelo en Hugging Face: https://huggingface.co/samskritarnava-iitb/Llama-3.2-3B-Instruct-shabdabodha-lora
 - Dataset: https://huggingface.co/datasets/samskritarnava-iitb/shabdabodha-dataset
 - Código, prompt y scripts: https://github.com/samskritarnava-iitb/shabdabodha-llm
 - Adaptador Gemma 3 4B equivalente: https://huggingface.co/samskritarnava-iitb/gemma-3-4b-it-shabdabodha-lora

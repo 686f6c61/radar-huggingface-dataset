@@ -2,7 +2,7 @@
 
 ## Resumen
 
-diethylene/codet5-small-nl2cmd es un modelo de traduccion de lenguaje natural a comandos de shell (NL2CMD) obtenido por ajuste fino de Salesforce/codet5-small, un transformer encoder-decoder de tipo T5 orientado a codigo. El autor lo publica en HuggingFace bajo licencia Apache-2.0, con 60.492.288 parametros totales y pesos en safetensors, lo que lo situa en la gama mas ligera de la familia CodeT5.
+diethylene/codet5-small-nl2cmd es un modelo de traduccion de lenguaje natural a comandos de shell (NL2CMD) obtenido por ajuste fino de Salesforce/codet5-small, un transformer encoder-decoder de tipo T5 orientado a codigo. El autor lo publica en Hugging Face bajo licencia Apache-2.0, con 60.492.288 parametros totales y pesos en safetensors, lo que lo situa en la gama mas ligera de la familia CodeT5.
 
 El modelo resuelve la tarea concreta de convertir una instruccion en lenguaje natural en un comando bash ejecutable, con foco declarado en Linux. Para ello se ha entrenado sobre una combinacion de tres fuentes: el corpus NL2SH-ALFA, las paginas de tldr normalizadas y el conjunto bash_gen generado con ChatGPT, ademas de datos sinteticos derivados de dichas fuentes.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| diethylene/codet5-small-nl2cmd | 60,5 M | no disponible | Apache-2.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) | no disponible |
-| Salesforce/codet5-small (modelo base) | ~60 M | no disponible | Apache-2.0 | HuggingFace | no disponible en esta ficha |
-| Salesforce/codet5-base | ~220 M | no disponible | Apache-2.0 | HuggingFace | no disponible en esta ficha |
-| Modelos generativos de proposito general (por ejemplo, LLM de 7B o superiores) | orden de miles de millones | mayor que el de CodeT5-small | variable | HuggingFace y otros | no comparable directamente; no disponible |
+| diethylene/codet5-small-nl2cmd | 60,5 M | no disponible | Apache-2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) | no disponible |
+| Salesforce/codet5-small (modelo base) | ~60 M | no disponible | Apache-2.0 | Hugging Face | no disponible en esta ficha |
+| Salesforce/codet5-base | ~220 M | no disponible | Apache-2.0 | Hugging Face | no disponible en esta ficha |
+| Modelos generativos de proposito general (por ejemplo, LLM de 7B o superiores) | orden de miles de millones | mayor que el de CodeT5-small | variable | Hugging Face y otros | no comparable directamente; no disponible |
 
 Los dos primeros comparten arquitectura y tamano, diferenciandose unicamente en el ajuste fino a la tarea NL2CMD. Frente a un LLM de proposito general, este modelo sacrifica capacidad de razonamiento amplio y cobertura multilingue a cambio de un coste de inferencia muy inferior. No se dispone de datos de rendimiento publicados que permitan comparar la calidad de la traduccion con alternativas.
 
@@ -88,7 +88,7 @@ Los dos primeros comparten arquitectura y tamano, diferenciandose unicamente en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diethylene/codet5-small-nl2cmd
+- Modelo en Hugging Face: https://huggingface.co/diethylene/codet5-small-nl2cmd
 - Modelo base: https://huggingface.co/Salesforce/codet5-small
 - Dataset NL2SH-ALFA: https://huggingface.co/datasets/westenfelder/NL2SH-ALFA
 - Articulo asociado a NL2SH-ALFA (Westenfelder et al., "LLM-Supported Natural Language to Bash Translation", NAACL 2025): https://doi.org/10.18653/v1/2025.naacl-long.555

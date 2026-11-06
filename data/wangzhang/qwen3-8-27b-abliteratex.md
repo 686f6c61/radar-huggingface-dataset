@@ -85,7 +85,7 @@ No se han encontrado otros modelos comparables con la misma tecnica y tamano en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wangzhang/Qwen3.8-27B-abliteratex
+- Modelo en Hugging Face: https://huggingface.co/wangzhang/Qwen3.8-27B-abliteratex
 - Repositorio de la herramienta abliterix: https://github.com/wuwangzhang1216/abliterix
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guia de Qwen3.8-27B (fuente externa): https://lovableapp.org/blog/qwen3-8-27b

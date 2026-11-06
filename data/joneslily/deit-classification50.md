@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joneslily/deit-classification50` es un repositorio de investigación publicado en HuggingFace que contiene un prototipo de arquitectura DeiT (Data-efficient Image Transformer) orientado a clasificación de imágenes. Lo desarrolla el usuario `joneslily` y se distribuye con licencia Apache 2.0. El propio autor lo describe explícitamente como un punto de partida experimental: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (*smoke tests*), no un modelo entrenado ni evaluado.
+`joneslily/deit-classification50` es un repositorio de investigación publicado en Hugging Face que contiene un prototipo de arquitectura DeiT (Data-efficient Image Transformer) orientado a clasificación de imágenes. Lo desarrolla el usuario `joneslily` y se distribuye con licencia Apache 2.0. El propio autor lo describe explícitamente como un punto de partida experimental: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (*smoke tests*), no un modelo entrenado ni evaluado.
 
 El dato más relevante para cualquier evaluador es el tamaño real del checkpoint: 16.576 parámetros según los metadatos de safetensors, sobre un repositorio de 0,0 GB. Esa cifra es incompatible con la escala "huge" que declara la configuración del autor y con cualquier DeiT operativo, lo que confirma que se trata de un esqueleto de código y configuración, no de un modelo con capacidad predictiva útil. El repositorio no reclama ninguna métrica de benchmark y advierte que la implementación no ha sido auditada en robustez, equidad ni transferencia de dominio.
 
@@ -26,7 +26,7 @@ Su interés, por tanto, no es funcional sino metodológico: sirve como plantilla
 | Funcion de activacion | GELU |
 | Normalizacion | RMSNorm |
 | Optimizador / schedule | Lion / polinómico (receta por defecto, sin ejecución completada) |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas / likes | 13 / 0 |
 | Fecha de creación | 2026-10-19 |
 
@@ -77,9 +77,9 @@ Los datos de las alternativas son cifras públicas de referencia, no proceden de
 
 | Modelo | Parametros | Contexto / entrada | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joneslily/deit-classification50 | 16.576 | No disponible | No | Apache 2.0 | HuggingFace, 13 descargas |
-| facebook/deit-base-patch16-224 | ~86 M | Imagen 224x224 | Sí (ImageNet) | Apache 2.0 | HuggingFace, ampliamente usado |
-| google/vit-base-patch16-224 | ~86 M | Imagen 224x224 | Sí (ImageNet) | Apache 2.0 | HuggingFace, ampliamente usado |
+| joneslily/deit-classification50 | 16.576 | No disponible | No | Apache 2.0 | Hugging Face, 13 descargas |
+| facebook/deit-base-patch16-224 | ~86 M | Imagen 224x224 | Sí (ImageNet) | Apache 2.0 | Hugging Face, ampliamente usado |
+| google/vit-base-patch16-224 | ~86 M | Imagen 224x224 | Sí (ImageNet) | Apache 2.0 | Hugging Face, ampliamente usado |
 | ResNet-50 (torchvision) | ~25,6 M | Imagen 224x224 | Sí (ImageNet) | Apache 2.0 | Repositorio torchvision |
 
 Frente a cualquiera de estas alternativas, el repositorio analizado no es comparable en capacidad: no tiene cabecera entrenada ni pesos con información aprendida. La comparación pertinente es de plantilla de código y configuración, no de rendimiento.
@@ -91,12 +91,12 @@ Frente a cualquiera de estas alternativas, el repositorio analizado no es compar
 - Riesgo de alucinación no aplica en el sentido generativo, pero sí el riesgo de interpretar como válidas salidas aleatorias de un modelo sin entrenar.
 - El tamaño real (16.576 parámetros) contradice la escala "huge" declarada en la configuración; conviene no asumir capacidad por la etiqueta.
 - No hay información sobre resolución de entrada, clases, idioma ni dominio de aplicación, lo que impide evaluar su idoneidad para una tarea concreta.
-- Implementación personalizada: las APIs automáticas de carga de HuggingFace requieren un adaptador explícito; no se garantiza compatibilidad con `AutoModel` ni con servidores de inferencia estándar.
+- Implementación personalizada: las APIs automáticas de carga de Hugging Face requieren un adaptador explícito; no se garantiza compatibilidad con `AutoModel` ni con servidores de inferencia estándar.
 - Licencia Apache 2.0 permite uso comercial del código y los pesos, pero el README advierte de revisar por separado los términos de los datos de origen si se combina con conjuntos externos.
 - Cualquier resultado publicado a partir de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto que se distribuyen aquí; el autor lo exige explícitamente.
 - El repositorio tiene 0 likes y 13 descargas, sin pipeline declarado ni métricas: no hay señal de validación por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joneslily/deit-classification50
+- Hugging Face: https://huggingface.co/joneslily/deit-classification50
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

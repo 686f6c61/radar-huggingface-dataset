@@ -69,7 +69,7 @@ Datos adicionales de la documentación del autor: Real5-OmniDocBench 93,68 (mode
 
 | Modelo | Parámetros | Contexto | OcrBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR 1.0 (este) | 1,3B | no disponible | 79,4 (Hygon) / 80,5 (NVIDIA) | Apache 2.0 | HuggingFace, ModelScope, contenedor Docker |
+| MiniCPM-OCR 1.0 (este) | 1,3B | no disponible | 79,4 (Hygon) / 80,5 (NVIDIA) | Apache 2.0 | Hugging Face, ModelScope, contenedor Docker |
 | MiniCPM-OCR Jev | 2B | no disponible | no disponible (AUROC 0,936 en JevOCRBench) | no disponible | FlagOS |
 | Qwen3.5-397B-A17B | 397B (17B activos) | no disponible | no disponible (AUROC 0,938 en JevOCRBench) | no disponible | no disponible |
 
@@ -88,7 +88,7 @@ La comparativa se limita a los modelos mencionados en la documentación del auto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-OCR-1.0-BF16-hygon-FlagOS
+- Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-OCR-1.0-BF16-hygon-FlagOS
 - ModelScope (descarga de pesos): `modelscope download --model FlagRelease/MiniCPM-OCR-1.0-hygon-FlagOS`
 - Contenedor Docker FlagOS-Hygon: `harbor.baai.ac.cn/flagrelease-public/minicpm-ocr-hygon001-gems0.0-tree0.6.2-cxnone-plugin0.0.0-vllm0.24.0-sglangnone-sglangflnone-cp310-pt210-dtk2604-x64-6.3.30-v1.4.1a:202610261850`
 - Repositorio FlagOS: no disponible en la información proporcionada

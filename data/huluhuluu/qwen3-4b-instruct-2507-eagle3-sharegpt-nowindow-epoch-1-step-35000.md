@@ -65,7 +65,7 @@ No se dispone de datos comparativos publicados para este checkpoint. Como refere
 
 | Modelo | Parametros | Contexto | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-Instruct-2507-EAGLE3 (este) | 202,7 M | 2048 (entrenamiento) | EAGLE-3 | Apache-2.0 | HuggingFace |
+| Qwen3-4B-Instruct-2507-EAGLE3 (este) | 202,7 M | 2048 (entrenamiento) | EAGLE-3 | Apache-2.0 | Hugging Face |
 | EAGLE-1 (para Llama-2 13B, ejemplo) | ~1 B (aprox.) | no disponible | EAGLE-1 | no disponible | GitHub |
 | Medusa (para Llama-2 7B) | ~200 M (aprox.) | no disponible | Medusa | no disponible | GitHub |
 

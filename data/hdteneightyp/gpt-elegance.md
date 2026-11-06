@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GPT-Elegance es un modelo de generacion de texto publicado en HuggingFace por el usuario HDTenEightyP bajo licencia MIT. Se trata de un modelo de la familia GPT-2 con 47.187.200 parametros totales, un tamano muy inferior al GPT-2 original (124 millones) y en la linea de variantes compactas tipo distilgpt2. El repositorio ocupa 0,2 GB y contiene pesos en formato safetensors, lo que permite su despliegue en hardware muy modesto.
+GPT-Elegance es un modelo de generacion de texto publicado en Hugging Face por el usuario HDTenEightyP bajo licencia MIT. Se trata de un modelo de la familia GPT-2 con 47.187.200 parametros totales, un tamano muy inferior al GPT-2 original (124 millones) y en la linea de variantes compactas tipo distilgpt2. El repositorio ocupa 0,2 GB y contiene pesos en formato safetensors, lo que permite su despliegue en hardware muy modesto.
 
 La model card publicada por el autor no aporta informacion tecnica: unicamente declara la licencia MIT, sin detallar datos de entrenamiento, idiomas, configuracion de arquitectura ni casos de uso previstos. Tampoco se han publicado resultados de benchmarks, demos ni documentacion adicional. Esto lo convierte en un modelo con trazabilidad muy limitada, sin validacion externa conocida hasta la fecha.
 
@@ -65,10 +65,10 @@ No existen datos de MMLU, HumanEval, GSM8K, HellaSwag ni de evaluaciones compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| GPT-Elegance | 47,2 M | no disponible | MIT | HuggingFace, sin documentacion | Sin benchmarks ni idiomas declarados |
-| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Destilado de GPT-2, evaluado y documentado |
-| GPT-2 small | 124 M | 1024 tokens | MIT | HuggingFace, OpenAI | Referencia de la familia, benchmarks publicos |
-| GPT-2 medium | 355 M | 1024 tokens | MIT | HuggingFace, OpenAI | Mayor capacidad, mayor coste de inferencia |
+| GPT-Elegance | 47,2 M | no disponible | MIT | Hugging Face, sin documentacion | Sin benchmarks ni idiomas declarados |
+| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Destilado de GPT-2, evaluado y documentado |
+| GPT-2 small | 124 M | 1024 tokens | MIT | Hugging Face, OpenAI | Referencia de la familia, benchmarks publicos |
+| GPT-2 medium | 355 M | 1024 tokens | MIT | Hugging Face, OpenAI | Mayor capacidad, mayor coste de inferencia |
 
 La comparacion se ve limitada por la ausencia de datos del modelo evaluado. En terminos de tamano se situa por debajo de distilgpt2 y de GPT-2 small, pero sin benchmarks no es posible establecer comparaciones de calidad frente a estas alternativas.
 
@@ -85,8 +85,8 @@ La comparacion se ve limitada por la ausencia de datos del modelo evaluado. En t
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/HDTenEightyP/GPT-Elegance
-- Perfil del autor en HuggingFace: https://huggingface.co/HDTenEightyP
-- Datasets del autor en HuggingFace: https://huggingface.co/HDTenEightyP/datasets
+- Repositorio Hugging Face del modelo: https://huggingface.co/HDTenEightyP/GPT-Elegance
+- Perfil del autor en Hugging Face: https://huggingface.co/HDTenEightyP
+- Datasets del autor en Hugging Face: https://huggingface.co/HDTenEightyP/datasets
 - Ficha de otro modelo del mismo autor (GPT-Compact), en indice de terceros: https://essamamdani.com/ai-models/hf-hdteneightyp-gpt-compact
 - Ficha de otro modelo del mismo autor (Gpt Usenet 4), en indice de terceros: https://free2aitools.com/model/hdteneightyp/gpt-usenet-4

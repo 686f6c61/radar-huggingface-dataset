@@ -1,7 +1,7 @@
 # zeechimp/provenance_reconstruct
 
 ## Resumen
-`provenance-reconstruct` es una herramienta de reconstruccion de procedencia publicada por el usuario zeechimp en HuggingFace. No es un modelo de lenguaje ni un transformer: es un perceptron multicapa (MLP) minúsculo escrito en NumPy, de entre 387 y 515 parametros, que se entrena desde cero en el arranque y en CPU. Su funcion es leer un numero desnudo (por ejemplo, el resultado de un solver, o un recuento de tokens) e inferir que lo produjo, emitiendo una etiqueta de procedencia acompanada de una confianza calibrada.
+`provenance-reconstruct` es una herramienta de reconstruccion de procedencia publicada por el usuario zeechimp en Hugging Face. No es un modelo de lenguaje ni un transformer: es un perceptron multicapa (MLP) minúsculo escrito en NumPy, de entre 387 y 515 parametros, que se entrena desde cero en el arranque y en CPU. Su funcion es leer un numero desnudo (por ejemplo, el resultado de un solver, o un recuento de tokens) e inferir que lo produjo, emitiendo una etiqueta de procedencia acompanada de una confianza calibrada.
 
 El problema que aborda es concreto: cuando un valor numerico cruza una frontera (una API, un serializador, un tokenizador, un log), pierde los metadatos que lo hacian interpretable. El consumidor recibe `5.9971` sin saber si el solver convergio, que plantilla se uso o cuantos tokens se contaron realmente. El modelo actua como complemento del lado del consumidor respecto a otras dos herramientas de la misma serie, `numerical-provenance` y `token-provenance`, que operan del lado del productor y registran procedencia observada.
 
@@ -29,7 +29,7 @@ Datos adicionales derivados de la documentacion:
 | Dependencias | solo NumPy (`pip install numpy`) |
 | Tokenizador | funcion local `bpe_like` de 12 lineas, sin ficheros externos |
 | Entrenamiento | 250 epocas, tamano de lote 64, semillas fijadas |
-| Fecha de publicacion | 2026-10-01 segun los metadatos de HuggingFace |
+| Fecha de publicacion | 2026-10-01 segun los metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 La arquitectura es un MLP deliberadamente minimo: una capa de entrada que proyecta sobre 32 unidades ocultas y una capa de salida de 3 clases. No hay atencion, ni convoluciones, ni mecanismos recurrentes, ni estados internos. El modelo se instancia con `MLP(X_tr.shape[1], 32, 3)` y se entrena con `train_mlp` durante 250 epocas con lotes de 64 ejemplos. Los conjuntos de datos son generados sinteticamente: 2.000 ejemplos de entrenamiento y 400 de test en cada tarea, con semillas fijadas para reproducibilidad. Sobre la salida softmax se ajusta una temperatura (`fit_temperature`) para calibrar las probabilidades.
@@ -97,7 +97,7 @@ Autotest: 19 de 19 comprobaciones superadas. Entre ellas, que no haya fuga de ca
 
 | Herramienta | Parametros | Entrada | Salida | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| provenance-reconstruct | 387 / 515 | Caracteristicas numericas | Etiqueta de procedencia con confianza | Inferencia desde el lado del consumidor | apache-2.0 | HuggingFace |
+| provenance-reconstruct | 387 / 515 | Caracteristicas numericas | Etiqueta de procedencia con confianza | Inferencia desde el lado del consumidor | apache-2.0 | Hugging Face |
 | numerical-provenance.py (misma serie) | no disponible | Ejecucion del solver | Procedencia observada | Registro en el lado del productor | no disponible | Referenciada en la model card |
 | token-provenance.py (misma serie) | no disponible | Tokenizacion real | Procedencia observada | Registro en el lado del productor | no disponible | Referenciada en la model card |
 | Plataformas generales de procedencia (MLflow, DVC, Weights & Biases) | no aplica | Metadatos de experimentos y artefactos | Linaje y trazabilidad | Gestion de experimentos | variadas | Ampliamente disponibles |
@@ -120,7 +120,7 @@ No se dispone de modelos comparables de la misma categoria exacta (clasificadore
 - Caveat de fecha: los metadatos indican una fecha de publicacion (2026-10-01) que conviene verificar antes de citarla.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/zeechimp/provenance_reconstruct
+- Hugging Face: https://huggingface.co/zeechimp/provenance_reconstruct
 - Top 10 AI Reproducibility & Provenance Tooling: https://aiopsschool.com/blog/top-10-ai-reproducibility-provenance-tooling-features-pros-cons-comparison/
 - The Role of Provenance Modeling in Tracing and Reproducing (Springer): https://link.springer.com/chapter/10.1007/978-3-032-22208-4_33
 - Data Authenticity, Consent, & Provenance for AI are all broken (arXiv): https://arxiv.org/html/2404.12691v1

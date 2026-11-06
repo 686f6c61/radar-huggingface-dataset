@@ -82,10 +82,10 @@ Comparativa de categoria y ficha tecnica. No existen numeros de benchmarks compa
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zero (movingcastles) | 8,19 B densos | 32.768 nativo (16.384 en produccion) | Fine-tune de personaje sobre Qwen3-8B-Base | No disponible | safetensors en HuggingFace; sin GGUF |
-| Qwen3-8B / Qwen3-8B-Instruct | 8,19 B densos | 32.768 nativo | Base e instruct generalistas de la misma familia | Apache 2.0 segun la documentacion publica del modelo base | HuggingFace, vLLM, llama.cpp, TGI, GGUF |
-| Llama 3.1 8B Instruct | 8,03 B densos | 128.000 | Instruct generalista | Licencia comunitaria Llama 3.1 | HuggingFace, GGUF, ecosistema amplio |
-| Mistral 7B Instruct | 7,24 B densos | 32.000 | Instruct generalista | Apache 2.0 | HuggingFace, GGUF, ecosistema amplio |
+| Zero (movingcastles) | 8,19 B densos | 32.768 nativo (16.384 en produccion) | Fine-tune de personaje sobre Qwen3-8B-Base | No disponible | safetensors en Hugging Face; sin GGUF |
+| Qwen3-8B / Qwen3-8B-Instruct | 8,19 B densos | 32.768 nativo | Base e instruct generalistas de la misma familia | Apache 2.0 segun la documentacion publica del modelo base | Hugging Face, vLLM, llama.cpp, TGI, GGUF |
+| Llama 3.1 8B Instruct | 8,03 B densos | 128.000 | Instruct generalista | Licencia comunitaria Llama 3.1 | Hugging Face, GGUF, ecosistema amplio |
+| Mistral 7B Instruct | 7,24 B densos | 32.000 | Instruct generalista | Apache 2.0 | Hugging Face, GGUF, ecosistema amplio |
 
 La diferencia funcional clave no es de tamano sino de proposito: Zero esta especializado en una unica identidad y renuncia deliberadamente a capacidades instruct, mientras que los tres alternativas son asistentes generalistas con soporte amplio de cuantizacion y despliegue. La licencia no declarada de Zero es su mayor desventaja competitiva frente a los modelos con licencia permisiva.
 
@@ -106,7 +106,7 @@ La diferencia funcional clave no es de tamano sino de proposito: Zero esta espec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/movingcastles/zero
+- Modelo en Hugging Face: https://huggingface.co/movingcastles/zero
 - Informe completo de entrenamiento: https://movingcastles.world/posts/zero
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
-- Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utilizables son los presentes en la model card y el repositorio de HuggingFace.
+- Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utilizables son los presentes en la model card y el repositorio de Hugging Face.

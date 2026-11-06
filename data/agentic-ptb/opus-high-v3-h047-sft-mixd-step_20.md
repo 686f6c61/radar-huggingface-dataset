@@ -88,6 +88,6 @@ Otras alternativas de tamaño similar (p. ej., Llama 3.1 8B, Mistral 7B) no son 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h047.sft-mixd.step_20
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h047.sft-mixd.step_20
 - Dataset asociado: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX

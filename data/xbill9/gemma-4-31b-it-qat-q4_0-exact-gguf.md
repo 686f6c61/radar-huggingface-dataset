@@ -94,7 +94,7 @@ No se dispone de datos de contexto, rendimiento o benchmarks para ninguno de est
 
 ## Enlaces
 
-- Repositorio HuggingFace de este build: https://huggingface.co/xbill9/gemma-4-31B-it-qat-q4_0-exact-gguf
+- Repositorio Hugging Face de este build: https://huggingface.co/xbill9/gemma-4-31B-it-qat-q4_0-exact-gguf
 - GGUF oficial de Google: https://huggingface.co/google/gemma-4-31B-it-qat-q4_0-gguf
 - Fuente sin cuantizar (revisión `1e4d8be`): https://huggingface.co/google/gemma-4-31B-it-qat-q4_0-unquantized
 - Variante E4B del mismo autor: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-q4_0-exact-gguf

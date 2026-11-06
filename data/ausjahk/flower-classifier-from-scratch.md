@@ -72,4 +72,4 @@ No disponible. No se han encontrado modelos de referencia comparables en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ausjahk/flower-classifier-from-scratch
+- Hugging Face: https://huggingface.co/ausjahk/flower-classifier-from-scratch

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nemotron-3-Diarization-GGUF es una conversión al formato GGUF de un modelo de diarización de hablantes, publicada por el usuario ancient-yearner en HuggingFace. El modelo deriva de la familia Nemotron de NVIDIA (según indica su nombre), y su propósito es la diarización de audio, es decir, la segmentación de una grabación en turnos de habla atribuidos a distintos interlocutores. El repositorio contiene únicamente los pesos cuantizados en GGUF, con un total de 99.260.363 parámetros (~99,3 millones), lo que lo sitúa en la categoría de modelos ligeros aptos para inferencia en CPU o GPU de gama baja.
+Nemotron-3-Diarization-GGUF es una conversión al formato GGUF de un modelo de diarización de hablantes, publicada por el usuario ancient-yearner en Hugging Face. El modelo deriva de la familia Nemotron de NVIDIA (según indica su nombre), y su propósito es la diarización de audio, es decir, la segmentación de una grabación en turnos de habla atribuidos a distintos interlocutores. El repositorio contiene únicamente los pesos cuantizados en GGUF, con un total de 99.260.363 parámetros (~99,3 millones), lo que lo sitúa en la categoría de modelos ligeros aptos para inferencia en CPU o GPU de gama baja.
 
 La información disponible es muy limitada: el repositorio no incluye pipeline declarado, no especifica idiomas soportados y la model card únicamente declara la licencia MIT. No se han publicado detalles sobre arquitectura interna, datos de entrenamiento ni resultados de benchmarks en la información proporcionada. El tamaño del repositorio (0,1 GB) es coherente con una cuantización agresiva de un modelo de ~99 M de parámetros.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
 | Nemotron-3-Diarization-GGUF (este) | ~99,3 M | no disponible | GGUF | MIT | Diarización; sin benchmarks publicados |
-| pyannote/speaker-diarization (referencia de la categoría) | no disponible | no disponible | PyTorch | no disponible | Pipeline de diarización ampliamente usado; requiere aceptar condiciones en HuggingFace |
+| pyannote/speaker-diarization (referencia de la categoría) | no disponible | no disponible | PyTorch | no disponible | Pipeline de diarización ampliamente usado; requiere aceptar condiciones en Hugging Face |
 | NVIDIA NeMo speaker diarization (toolkit) | no disponible | no disponible | NeMo/.nemo | no disponible | Toolkit completo de NVIDIA para diarización, base probable de la familia Nemotron |
 
 La comparación cuantitativa no es posible con la información disponible; los modelos citados se incluyen como referencias de la misma categoría funcional (diarización de hablantes), no como equivalentes verificados.
@@ -80,5 +80,5 @@ La comparación cuantitativa no es posible con la información disponible; los m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ancient-yearner/Nemotron-3-Diarization-GGUF
+- Hugging Face: https://huggingface.co/ancient-yearner/Nemotron-3-Diarization-GGUF
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

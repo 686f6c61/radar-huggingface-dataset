@@ -19,7 +19,7 @@ Su relevancia es, por tanto, metodológica y de investigación: proporciona un p
 | Tipos de cuantización | no disponible (no se publican versiones cuantizadas; al ser PyTorch `.bin` requiere conversión propia a GGUF/otros formatos) |
 | Idiomas soportados | no disponible (entrenado sobre EleutherAI/the_pile_deduplicated, corpus mayoritariamente en inglés, pero la model card no declara idiomas) |
 | Licencia | no disponible (la model card no especifica licencia) |
-| Formato de pesos | PyTorch (`pytorch_model.bin`), más `config.json` de HuggingFace y `config.yaml` original de OLMo |
+| Formato de pesos | PyTorch (`pytorch_model.bin`), más `config.json` de Hugging Face y `config.yaml` original de OLMo |
 | Tamaño del repositorio | 4,9 GB (incluye las 41 ramas de *checkpoints*: `step0` … `step122081`) |
 | Número de *checkpoints* publicados | 41 (la rama `main` contiene el *checkpoint* final, `step122081`) |
 | Datos auxiliares incluidos | `data-indices/` y `train_data/global_indices.npy` con el orden de los datos de entrenamiento |
@@ -73,10 +73,10 @@ Los datos de los modelos comparables provienen de su documentación pública, no
 
 | Modelo | Parámetros | Tokens de entrenamiento | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GeoLadder-16M-8B (este modelo) | 16M | 8B | 2048 | no disponible | HuggingFace (repo `dill-lab`), 0 descargas, 0 *likes* |
-| Pythia-14M (EleutherAI) | 14M | 300B | 2048 | Apache-2.0 | HuggingFace, ampliamente usado como *baseline* |
-| Pythia-31M (EleutherAI) | 31M | 300B | 2048 | Apache-2.0 | HuggingFace |
-| Otros modelos de la suite GeoLadder | 4M–75M | variable (8B y otras configuraciones) | 2048 | no disponible | Colección `dill-lab/geoladder` en HuggingFace |
+| GeoLadder-16M-8B (este modelo) | 16M | 8B | 2048 | no disponible | Hugging Face (repo `dill-lab`), 0 descargas, 0 *likes* |
+| Pythia-14M (EleutherAI) | 14M | 300B | 2048 | Apache-2.0 | Hugging Face, ampliamente usado como *baseline* |
+| Pythia-31M (EleutherAI) | 31M | 300B | 2048 | Apache-2.0 | Hugging Face |
+| Otros modelos de la suite GeoLadder | 4M–75M | variable (8B y otras configuraciones) | 2048 | no disponible | Colección `dill-lab/geoladder` en Hugging Face |
 
 La diferencia clave frente a Pythia es el presupuesto de entrenamiento (8B tokens frente a 300B) y la ausencia de una licencia declarada, además de un propósito puramente experimental: los *checkpoints* de GeoLadder existen para estudiar geometría y dinámica de entrenamiento bajo configuraciones controladas, no para maximizar calidad generativa.
 
@@ -95,7 +95,7 @@ La diferencia clave frente a Pythia es el presupuesto de entrenamiento (8B token
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dill-lab/GeoLadder-16M-8B-bs32-lr0.0087-wd0.05-decay0.01
+- Modelo en Hugging Face: https://huggingface.co/dill-lab/GeoLadder-16M-8B-bs32-lr0.0087-wd0.05-decay0.01
 - Colección GeoLadder (108 modelos): https://huggingface.co/collections/dill-lab/geoladder-6acd192e30ec71aff2998e2e
 - Artículo (PMLR 306, ICML 2026): https://proceedings.mlr.press/v306/kulkarni26c.html
 - Preprint en arXiv: https://arxiv.org/abs/2602.20433

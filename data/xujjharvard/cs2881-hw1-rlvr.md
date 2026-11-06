@@ -95,7 +95,7 @@ Solo la primera fila procede de la informacion proporcionada; el resto son refer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XujjHarvard/cs2881-hw1-rlvr
+- Modelo en Hugging Face: https://huggingface.co/XujjHarvard/cs2881-hw1-rlvr
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Adaptador LoRA: https://huggingface.co/XujjHarvard/cs2881-hw1-rlvr/tree/main/adapter
 - OpenBookQA (referencia del benchmark citado): https://allenai.org/data/open-book-qa

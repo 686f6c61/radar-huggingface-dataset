@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ResidentEvian/smolvla_50_episodes_static_pos` (este) | 450 046 176 | No disponible | Pick-and-place de una tarea, robot `so_follower` | Apache 2.0 | HuggingFace, libreria `lerobot` |
-| `lerobot/smolvla_base` | 450 046 176 (mismo backbone, ajuste generico) | No disponible | VLA base preentrenada, requiere ajuste fino | No disponible en la informacion proporcionada | HuggingFace, `lerobot` |
-| Politicas ACT de LeRobot | No disponible | No disponible | Imitacion para brazos tipo SO-100 | No disponible en la informacion proporcionada | HuggingFace, `lerobot` |
+| `ResidentEvian/smolvla_50_episodes_static_pos` (este) | 450 046 176 | No disponible | Pick-and-place de una tarea, robot `so_follower` | Apache 2.0 | Hugging Face, libreria `lerobot` |
+| `lerobot/smolvla_base` | 450 046 176 (mismo backbone, ajuste generico) | No disponible | VLA base preentrenada, requiere ajuste fino | No disponible en la informacion proporcionada | Hugging Face, `lerobot` |
+| Politicas ACT de LeRobot | No disponible | No disponible | Imitacion para brazos tipo SO-100 | No disponible en la informacion proporcionada | Hugging Face, `lerobot` |
 | VLA de gran escala tipo pi0 (Physical Intelligence) | No disponible en la informacion proporcionada | No disponible | Manipulacion generalista | No disponible en la informacion proporcionada | No verificada en esta busqueda |
 
 La comparacion cuantitativa de rendimiento entre estas alternativas no esta disponible: no hay evaluaciones publicadas para este checkpoint ni datos de referencia en la informacion suministrada. La busqueda web realizada no devolvio enlaces tecnicos relevantes sobre estos modelos.
@@ -100,7 +100,7 @@ La comparacion cuantitativa de rendimiento entre estas alternativas no esta disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ResidentEvian/smolvla_50_episodes_static_pos
+- Modelo en Hugging Face: https://huggingface.co/ResidentEvian/smolvla_50_episodes_static_pos
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/ResidentEvian/blue-cube-into-box_20261015_112154
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=ResidentEvian/blue-cube-into-box_20261015_112154

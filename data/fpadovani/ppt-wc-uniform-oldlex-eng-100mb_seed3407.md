@@ -18,7 +18,7 @@ El tamaño del repositorio (1,4 GB) es muy superior al de los pesos en precision
 | Longitud de contexto | No disponible (no se declara en la model card ni en los metadatos) |
 | Tipos de cuantizacion | No disponible: solo se publican pesos en precision completa; no hay versiones GGUF, AWQ, GPTQ ni bitsandbytes publicadas por el autor |
 | Idiomas soportados | No disponible en los metadatos; el modelo base (`eng_latn_100mb`) apunta a ingles en escritura latina, por lo que el ajuste es previsiblemente monolingue en ingles |
-| Licencia | No disponible: la model card incluye `licence: license` sin especificar terminos y los metadatos de HuggingFace no declaran ninguna |
+| Licencia | No disponible: la model card incluye `licence: license` sin especificar terminos y los metadatos de Hugging Face no declaran ninguna |
 | Formato de pesos | `safetensors` (compatible con `transformers`) |
 | Libreria | `transformers` |
 | Pipeline declarado | `text-generation` |
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed3407` | 86.416.128 | No disponible | No disponible | HuggingFace, safetensors | Ajuste SFT de un modelo de 100 MB de ingles; sin evaluacion |
-| `goldfish-models/eng_latn_100mb` | No disponible (el ajuste derivado conserva la arquitectura) | No disponible | No disponible | HuggingFace | Modelo base; monolingue en ingles con 100 MB de entrenamiento |
-| `openai-community/gpt2` | 124.000.000 (aprox.) | 1024 tokens | Licencia MIT modificada | HuggingFace, safetensors, GGUF | Referencia de la arquitectura; mucho mas corpus de entrenamiento y ecosistema amplio |
-| `distilgpt2` | 82.000.000 (aprox.) | 1024 tokens | Apache 2.0 | HuggingFace, safetensors | Destilado de GPT-2; tamano comparable y licencia permisiva clara |
+| `fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed3407` | 86.416.128 | No disponible | No disponible | Hugging Face, safetensors | Ajuste SFT de un modelo de 100 MB de ingles; sin evaluacion |
+| `goldfish-models/eng_latn_100mb` | No disponible (el ajuste derivado conserva la arquitectura) | No disponible | No disponible | Hugging Face | Modelo base; monolingue en ingles con 100 MB de entrenamiento |
+| `openai-community/gpt2` | 124.000.000 (aprox.) | 1024 tokens | Licencia MIT modificada | Hugging Face, safetensors, GGUF | Referencia de la arquitectura; mucho mas corpus de entrenamiento y ecosistema amplio |
+| `distilgpt2` | 82.000.000 (aprox.) | 1024 tokens | Apache 2.0 | Hugging Face, safetensors | Destilado de GPT-2; tamano comparable y licencia permisiva clara |
 
 La comparacion es estructural: no existe ningun benchmark publico que permita contrastar la calidad de este ajuste frente a los modelos de la tabla. La diferencia mas relevante en la practica es la licencia: frente a la licencia MIT modificada de GPT-2 o la Apache 2.0 de DistilGPT-2, este modelo no declara terminos de uso, lo que impide un uso comercial con garantias.
 
@@ -89,14 +89,14 @@ La comparacion es estructural: no existe ningun benchmark publico que permita co
 - Limitacion idiomatica: no hay soporte multilingue declarado; el rendimiento en castellano sera previsiblemente pobre y no evaluado.
 - Longitud de contexto desconocida: no se puede planificar un caso de uso con contexto largo sin verificar experimentalmente el limite efectivo.
 - Formato de chat sin documentar: el ejemplo usa roles, pero se desconoce la plantilla exacta aplicada por el tokenizer, lo que puede provocar respuestas degradadas si se integra en frameworks de chat.
-- Sin evaluacion ni validacion independiente: cero descargas y cero interacciones en HuggingFace; no hay terceros que hayan verificado su comportamiento.
+- Sin evaluacion ni validacion independiente: cero descargas y cero interacciones en Hugging Face; no hay terceros que hayan verificado su comportamiento.
 - Repositorio de 1,4 GB frente a 173 MB de pesos en FP16: conviene revisar el contenido antes de descargarlo si solo se necesitan los pesos finales.
 - Versiones de framework poco habituales en la model card (PyTorch 2.11.0, Transformers 4.56.2): verificar compatibilidad con el entorno propio antes de reproducir el entrenamiento.
 - Naturaleza experimental: el identificador sugiere una condicion concreta dentro de un estudio, por lo que el modelo puede no representar la mejor variante de esa familia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/vffrx5nx
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -99,7 +99,7 @@ No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra suite publicados para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vwdubb/Swift-1.5-Qwen3.8-27b-Terse-Coder-FP8
+- Modelo en Hugging Face: https://huggingface.co/vwdubb/Swift-1.5-Qwen3.8-27b-Terse-Coder-FP8
 - Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Adaptador LoRA Terse-Coder: https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder-LoRA
 - Perfil del autor del merge: https://huggingface.co/vwdubb

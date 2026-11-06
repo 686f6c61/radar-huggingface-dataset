@@ -2,7 +2,7 @@
 
 ## Resumen
 
-retrieval18-2024 es un repositorio experimental publicado por el usuario saanvireddy2 en HuggingFace. No es un modelo entrenado, sino una base de código (codebase) para un Vision Transformer (ViT) orientado a tareas de retrieval multimodal, es decir, recuperación de imágenes a partir de texto o viceversa. El propio autor lo describe como una configuración "large" mantenida de forma deliberadamente manejable para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+retrieval18-2024 es un repositorio experimental publicado por el usuario saanvireddy2 en Hugging Face. No es un modelo entrenado, sino una base de código (codebase) para un Vision Transformer (ViT) orientado a tareas de retrieval multimodal, es decir, recuperación de imágenes a partir de texto o viceversa. El propio autor lo describe como una configuración "large" mantenida de forma deliberadamente manejable para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 La arquitectura declarada es un ViT a escala "large" con atención dispersa (sparse attention), fusión tipo Tucker, activación GELU y normalización GroupNorm. El checkpoint incluido (model.safetensors) contiene 16.576 parámetros y se presenta explícitamente como una inicialización válida para pruebas de humo (smoke tests), no como un modelo entrenado ni evaluado. El repositorio no reclama ninguna puntuación de benchmark.
 
@@ -75,7 +75,7 @@ La informacion disponible no incluye pesos entrenados ni benchmarks, por lo que 
 
 | Modelo | Tipo | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| retrieval18-2024 (este repo) | ViT con atencion dispersa y fusion Tucker | Checkpoint de inicializacion sin entrenar | MIT | HuggingFace (saanvireddy2/retrieval18-2024) |
+| retrieval18-2024 (este repo) | ViT con atencion dispersa y fusion Tucker | Checkpoint de inicializacion sin entrenar | MIT | Hugging Face (saanvireddy2/retrieval18-2024) |
 | CLIP (OpenAI) | ViT / ResNet con aprendizaje contrastivo | Entrenado con cientos de millones de pares imagen-texto | MIT | Pesos publicos ampliamente distribuidos |
 | OpenCLIP | Implementacion abierta de CLIP | Entrenada con distintos datasets abiertos | MIT (varia segun checkpoints) | Pesos publicos en repositorios abiertos |
 | SigLIP (Google) | ViT con perdida sigmoide | Entrenado | Apache-2.0 | Pesos publicos |
@@ -94,6 +94,6 @@ Diferencias relevantes: CLIP, OpenCLIP y SigLIP son modelos con pesos entrenados
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/saanvireddy2/retrieval18-2024
+- Hugging Face: https://huggingface.co/saanvireddy2/retrieval18-2024
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.
 - Archivos citados en la model card: `finetune.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`.

@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables en el mismo repositorio.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shadow-cann/hispark-modelzoo-fsmn-kws
+- Repositorio Hugging Face: https://huggingface.co/shadow-cann/hispark-modelzoo-fsmn-kws
 - Portal de HiSilicon (espejo): https://gitbubble.github.io/hisilicon-developer-portal-mirror/model-detail.html?id=knc6ud5cj400
 - Repositorio upstream en GitCode: https://gitcode.com/HiSpark/modelzoo/blob/master/samples/contribute/audio/fsmn_kws/README.md
 - Referencia de licencia en ModelScope: https://www.modelscope.cn/iic/speech_charctc_kws_phone-xiaoyun.git

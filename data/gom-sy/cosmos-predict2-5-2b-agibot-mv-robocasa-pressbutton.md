@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `Gom-sy/cosmos-predict2.5-2b-agibot-mv-robocasa-pressbutton` es un modelo de generacion de video (pipeline `image-to-video`) publicado en HuggingFace por el usuario Gom-sy. Por la nomenclatura y las etiquetas del repositorio, se trata de un ajuste fino derivado de la familia Cosmos Predict 2.5, orientado a la generacion "video2world" en escenarios de robotica. El sufijo del nombre apunta a un entrenamiento especifico sobre datos AgiBot con configuracion multivista (`mv`), condicionado por camara (`camera-conditioned`) y centrado en la tarea de pulsar un boton del entorno de simulacion RoboCasa.
+El modelo `Gom-sy/cosmos-predict2.5-2b-agibot-mv-robocasa-pressbutton` es un modelo de generacion de video (pipeline `image-to-video`) publicado en Hugging Face por el usuario Gom-sy. Por la nomenclatura y las etiquetas del repositorio, se trata de un ajuste fino derivado de la familia Cosmos Predict 2.5, orientado a la generacion "video2world" en escenarios de robotica. El sufijo del nombre apunta a un entrenamiento especifico sobre datos AgiBot con configuracion multivista (`mv`), condicionado por camara (`camera-conditioned`) y centrado en la tarea de pulsar un boton del entorno de simulacion RoboCasa.
 
 La relevancia de este tipo de modelos radica en su uso como world models para robotica: permiten predecir la evolucion visual de una escena a partir de una imagen y una condicion de camara, lo que resulta util para planificacion, simulacion y generacion de datos sinteticos de entrenamiento en entornos manipulativos. El tamano declarado en el nombre es de 2B parametros, lo que lo situa en la gama ligera dentro de los modelos generativos de video.
 
-El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones en HuggingFace para descargarlo. No se dispone de informacion sobre idiomas soportados, datos de entrenamiento ni resultados de benchmarks en la informacion proporcionada, y los resultados de la busqueda web no contienen material relacionado con este modelo.
+El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones en Hugging Face para descargarlo. No se dispone de informacion sobre idiomas soportados, datos de entrenamiento ni resultados de benchmarks en la informacion proporcionada, y los resultados de la busqueda web no contienen material relacionado con este modelo.
 
 ## Especificaciones tecnicas
 
@@ -65,12 +65,12 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de este 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cosmos-predict2.5-2b-agibot-mv-robocasa-pressbutton | 2B (segun nombre) | no disponible | no disponible | other (gated) | HuggingFace, acceso restringido |
+| cosmos-predict2.5-2b-agibot-mv-robocasa-pressbutton | 2B (segun nombre) | no disponible | no disponible | other (gated) | Hugging Face, acceso restringido |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de su descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de su descarga.
 - Licencia "other": no se especifican los terminos exactos, por lo que debe revisarse el texto de la licencia antes de cualquier uso comercial.
 - Especializacion estrecha: el sufijo del nombre indica un ajuste orientado a una tarea concreta (pulsar un boton) y a un entorno especifico (RoboCasa), lo que limita su generalizacion a otras tareas roboticas.
 - Sesgos conocidos: no disponible.
@@ -80,5 +80,5 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de este 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gom-sy/cosmos-predict2.5-2b-agibot-mv-robocasa-pressbutton
+- Hugging Face: https://huggingface.co/Gom-sy/cosmos-predict2.5-2b-agibot-mv-robocasa-pressbutton
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos, demos) en la busqueda web. Los resultados obtenidos corresponden a software no relacionado con el modelo.

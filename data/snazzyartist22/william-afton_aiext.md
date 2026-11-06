@@ -2,7 +2,7 @@
 
 ## Resumen
 
-William-Afton_AIEXT es un repositorio de modelo publicado en HuggingFace por el usuario SnazzyArtist22. A fecha de la informacion disponible, el repositorio no incluye model card sustantiva: el README se limita a una declaracion de licencia `unknown` sin descripcion, sin especificaciones tecnicas y sin indicacion de la tarea para la que fue entrenado. El nombre sugiere un posible uso como personaje conversacional (el identificador "William Afton" remite a un personaje de ficcion de la franquicia Five Nights at Freddy's), pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
+William-Afton_AIEXT es un repositorio de modelo publicado en Hugging Face por el usuario SnazzyArtist22. A fecha de la informacion disponible, el repositorio no incluye model card sustantiva: el README se limita a una declaracion de licencia `unknown` sin descripcion, sin especificaciones tecnicas y sin indicacion de la tarea para la que fue entrenado. El nombre sugiere un posible uso como personaje conversacional (el identificador "William Afton" remite a un personaje de ficcion de la franquicia Five Nights at Freddy's), pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
 El repositorio ocupa aproximadamente 0,1 GB (unos 100 MB), lo que es compatible con pesos en precision reducida de un modelo de pequeno tamano o con un conjunto parcial de ficheros, pero no permite determinar la arquitectura ni el numero de parametros. No consta pipeline declarado, no se listan idiomas soportados y no hay descargas ni likes registrados en el momento de la consulta.
 
@@ -41,7 +41,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, l
 No es posible recomendar casos de uso concretos sin informacion sobre arquitectura, entrenamiento, licencia e idiomas. Los siguientes escenarios son hipoteticos y requeririan validacion previa por parte de quien despliegue el modelo:
 
 - Prototipado de chatbot de personaje: solo si el autor confirma que el modelo fue ajustado para conversacion de rol; requeriria evaluacion manual de coherencia y seguridad.
-- Experimentacion academica con modelos de autoria individual: util como objeto de estudio de practicas de publicacion en HuggingFace, no como componente de produccion.
+- Experimentacion academica con modelos de autoria individual: util como objeto de estudio de practicas de publicacion en Hugging Face, no como componente de produccion.
 - Pruebas de integracion en pipelines de inferencia: serviria para validar el proceso de carga y despliegue, no para medir calidad.
 - Evaluacion de robustez y sesgos: requeriria primero una model card completa que describa datos de entrenamiento.
 - Fine-tuning posterior: inviable sin conocer la licencia y la arquitectura base.
@@ -76,5 +76,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SnazzyArtist22/William-Afton_AIEXT
+- Repositorio en Hugging Face: https://huggingface.co/SnazzyArtist22/William-Afton_AIEXT
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

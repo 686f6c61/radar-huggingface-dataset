@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`russian-ai-text-detector-lightgbm` es un clasificador binario que estima la probabilidad de que un texto en ruso haya sido escrito por un modelo de lenguaje y no por una persona. Lo publica el usuario de HuggingFace `toiletsandpaper` y forma parte del ecosistema del proyecto `aiw-ru` (avoid-ai-writing-russian), del que reutiliza el extractor de características. No es un modelo generativo ni un transformer: es un clasificador LightGBM entrenado sobre aproximadamente 100 características estilométricas y léxicas tabulares, con un fichero de modelo de unos 10 MB que se ejecuta únicamente en CPU.
+`russian-ai-text-detector-lightgbm` es un clasificador binario que estima la probabilidad de que un texto en ruso haya sido escrito por un modelo de lenguaje y no por una persona. Lo publica el usuario de Hugging Face `toiletsandpaper` y forma parte del ecosistema del proyecto `aiw-ru` (avoid-ai-writing-russian), del que reutiliza el extractor de características. No es un modelo generativo ni un transformer: es un clasificador LightGBM entrenado sobre aproximadamente 100 características estilométricas y léxicas tabulares, con un fichero de modelo de unos 10 MB que se ejecuta únicamente en CPU.
 
 El problema que resuelve es la detección de texto generado por IA en ruso, un idioma con menos herramientas específicas que el inglés. El corpus de entrenamiento (LLMTrace classification, parte rusa) cubre generaciones de ChatGPT (GPT-3.5, GPT-4, GPT-4o, o1, o3), GigaChat, YandexGPT, Qwen, Llama, Gemma, DeepSeek, Mistral y Command R, entre otros. Las características empleadas incluyen muletillas y lenguaje administrativo típico de la IA («является», «играет ключевую роль», «в рамках»), longitud y ritmo de las frases, diversidad léxica, puntuación y frecuencias de palabras funcionales.
 
@@ -94,7 +94,7 @@ No se han publicado en la informacion disponible comparaciones con otros detecto
 - GPU recomendadas: ninguna. Cualquier CPU moderna es suficiente; el cuello de botella es la extraccion de caracteristicas de aiw-ru, no el clasificador.
 - Cabida en hardware de consumo: si, en cualquier equipo de consumo con CPU, dado que el artefacto pesa alrededor de 10 MB.
 - Memoria RAM: no disponible de forma explicita; al tratarse de un modelo LightGBM de ~10 MB, el consumo es bajo en comparacion con cualquier transformer, pero no se publican cifras concretas.
-- Opciones de despliegue: runtime de `lightgbm` en Python; no es compatible con vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos generativos. La model card declara `inference: false` en los metadatos, es decir, no esta expuesto como inferencia alojada en HuggingFace.
+- Opciones de despliegue: runtime de `lightgbm` en Python; no es compatible con vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos generativos. La model card declara `inference: false` en los metadatos, es decir, no esta expuesto como inferencia alojada en Hugging Face.
 - Latencia y throughput: no disponible. Al ser un modelo de arboles sobre caracteristicas tabulares, cabe esperar inferencia muy rapida en CPU, pero no se publican mediciones.
 - Almacenamiento: el modelo ocupa aproximadamente 10 MB, mas el espacio necesario para las dependencias del extractor de caracteristicas.
 
@@ -102,9 +102,9 @@ No se han publicado en la informacion disponible comparaciones con otros detecto
 
 | Modelo | Tipo | Parametros | Idiomas | Licencia | Disponibilidad | Rendimiento declarado |
 |---|---|---|---|---|---|---|
-| toiletsandpaper/russian-ai-text-detector-lightgbm | LightGBM sobre caracteristicas estilometricas | no disponible (~10 MB) | ru | MIT | HuggingFace, aviso `inference: false` | Accuracy 0,8678; ROC AUC 0,9431 |
-| toiletsandpaper/aiw-ru-lightgbm | LightGBM (mismo autor y ecosistema) | no disponible | ru | no disponible en la informacion recogida | HuggingFace | no disponible |
-| k1y0miiii/ru-ai-text-detector (repo + Space) | Detector de texto IA en ruso con senales explicadas | no disponible | ru | no disponible en la informacion recogida | GitHub y HuggingFace Spaces | no disponible |
+| toiletsandpaper/russian-ai-text-detector-lightgbm | LightGBM sobre caracteristicas estilometricas | no disponible (~10 MB) | ru | MIT | Hugging Face, aviso `inference: false` | Accuracy 0,8678; ROC AUC 0,9431 |
+| toiletsandpaper/aiw-ru-lightgbm | LightGBM (mismo autor y ecosistema) | no disponible | ru | no disponible en la informacion recogida | Hugging Face | no disponible |
+| k1y0miiii/ru-ai-text-detector (repo + Space) | Detector de texto IA en ruso con senales explicadas | no disponible | ru | no disponible en la informacion recogida | GitHub y Hugging Face Spaces | no disponible |
 | ZeroGPT Plus Russian AI Detector | Servicio web propietario | no aplica (cerrado) | ru | propietaria | Solo via web | no disponible |
 | Evernote Russian AI Detector | Servicio web propietario | no aplica (cerrado) | ru | propietaria | Solo via web | no disponible |
 
@@ -126,7 +126,7 @@ Las alternativas de servicio web no publican pesos ni metricas verificables, por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/toiletsandpaper/russian-ai-text-detector-lightgbm
+- Modelo en Hugging Face: https://huggingface.co/toiletsandpaper/russian-ai-text-detector-lightgbm
 - Modelo relacionado del mismo autor: https://huggingface.co/toiletsandpaper/aiw-ru-lightgbm
 - Dataset de entrenamiento (LLMTrace classification, ru): https://huggingface.co/datasets/iitolstykh/LLMTrace_classification
 - Paper del corpus LLMTrace: https://arxiv.org/abs/2509.21269
@@ -134,6 +134,6 @@ Las alternativas de servicio web no publican pesos ni metricas verificables, por
 - Script de entrenamiento: https://github.com/ormeilu/avoid-ai-writing-russian/blob/master/scripts/train.py
 - Informe de entrenamiento del modelo: https://github.com/ormeilu/avoid-ai-writing-russian/blob/master/docs/models/russian-ai-text-detector-lightgbm.md
 - Proyecto alternativo de deteccion de texto IA en ruso (GitHub): https://github.com/k1y0miiii/ru-ai-text-detector
-- Demo alternativa en HuggingFace Spaces: https://huggingface.co/spaces/k1y0mi/ru-ai-text-detector
+- Demo alternativa en Hugging Face Spaces: https://huggingface.co/spaces/k1y0mi/ru-ai-text-detector
 - Herramienta comercial de referencia (ZeroGPT Plus, ruso): https://www.zerogpt.plus/en/russian-ai-detector-tool
 - Herramienta comercial de referencia (Evernote, ruso): https://evernote.com/ai-detector/russian-ai-detector

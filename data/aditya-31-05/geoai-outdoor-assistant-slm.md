@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| GeoAI Outdoor Assistant SLM | 1,54 B | No disponible en su model card | Apache-2.0 | HuggingFace, 0 descargas | Fine-tune especializado; sin benchmarks publicados |
-| Qwen2.5-1.5B-Instruct (base) | 1,54 B | 32.768 tokens nativos (131.072 con YaRN según su documentación) | Apache-2.0 | HuggingFace, ampliamente utilizado | Referencia directa: mismo tamaño y licencia, con documentación y evaluación publicadas por el autor original |
-| Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace, muy extendido | Menor en parámetros, contexto mucho mayor; licencia con condiciones de uso |
-| Gemma-2-2B-it | 2,6 B | 8.192 tokens | Términos de uso de Gemma | HuggingFace, muy extendido | Más parámetros y contexto más corto; licencia con restricciones de uso comercial |
+| GeoAI Outdoor Assistant SLM | 1,54 B | No disponible en su model card | Apache-2.0 | Hugging Face, 0 descargas | Fine-tune especializado; sin benchmarks publicados |
+| Qwen2.5-1.5B-Instruct (base) | 1,54 B | 32.768 tokens nativos (131.072 con YaRN según su documentación) | Apache-2.0 | Hugging Face, ampliamente utilizado | Referencia directa: mismo tamaño y licencia, con documentación y evaluación publicadas por el autor original |
+| Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face, muy extendido | Menor en parámetros, contexto mucho mayor; licencia con condiciones de uso |
+| Gemma-2-2B-it | 2,6 B | 8.192 tokens | Términos de uso de Gemma | Hugging Face, muy extendido | Más parámetros y contexto más corto; licencia con restricciones de uso comercial |
 
 No se dispone de datos de rendimiento comparado (benchmarks) para el modelo objeto de esta ficha, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) para el modelo obje
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aditya-31-05/geoai-outdoor-assistant-slm
+- Modelo en Hugging Face: https://huggingface.co/Aditya-31-05/geoai-outdoor-assistant-slm
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Open-Meteo (API meteorológica citada): https://open-meteo.com/
 - WAQI (calidad del aire): https://aqicn.org/api/

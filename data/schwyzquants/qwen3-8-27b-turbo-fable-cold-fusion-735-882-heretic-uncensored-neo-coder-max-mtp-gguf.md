@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene cuantizaciones GGUF del modelo Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP, un ajuste fino de 26.895.998.464 parámetros (26,9B) desarrollado por DavidAU sobre la familia Qwen3.8 y cuantizado por el usuario schwyzquants. Se trata de un modelo denso, multimodal de entrada (pipeline image-text-to-text en HuggingFace), entrenado con un pipeline multietapa que combina ajuste fino, mezcla de modelos (merge) y destilación de estilos, con el objetivo declarado de aumentar la inteligencia general y reducir drásticamente el consumo de tokens de razonamiento.
+Este repositorio contiene cuantizaciones GGUF del modelo Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP, un ajuste fino de 26.895.998.464 parámetros (26,9B) desarrollado por DavidAU sobre la familia Qwen3.8 y cuantizado por el usuario schwyzquants. Se trata de un modelo denso, multimodal de entrada (pipeline image-text-to-text en Hugging Face), entrenado con un pipeline multietapa que combina ajuste fino, mezcla de modelos (merge) y destilación de estilos, con el objetivo declarado de aumentar la inteligencia general y reducir drásticamente el consumo de tokens de razonamiento.
 
 La propuesta central del autor es un "modo TURBO": el bloque de pensamiento se reduce entre la mitad y una décima parte (mediana aproximada de dos tercios según la model card) manteniendo, según sus afirmaciones, el detalle y la calidad de salida. El autor indica que es el primer ajuste fino de este tamaño en superar 730 puntos en ARC-C en 8 bits (735) y 719 en 4 bits, además de 880 en ARC-E. Estas cifras proceden exclusivamente de la model card y de la pestaña de comunidad del autor, sin verificación independiente en la información disponible.
 
@@ -74,7 +74,7 @@ El autor afirma que el modelo supera a Qwen 3.8 27B en los 7 benchmarks criticos
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (base de DavidAU) | 26,9B | Transformer denso con modos de pensamiento | No disponible | Apache 2.0 | GGUF en HuggingFace (repo de 389 GB) |
+| Este modelo (base de DavidAU) | 26,9B | Transformer denso con modos de pensamiento | No disponible | Apache 2.0 | GGUF en Hugging Face (repo de 389 GB) |
 | Qwen 3.8 27B (base) | En torno a 27B segun la nomenclatura | No disponible | No disponible | No disponible | Referenciado como base, sin enlace directo |
 | Qwen3.6-35B-A3B | 35B totales, 3B activos segun la nomenclatura | MoE | No disponible | No disponible | No disponible |
 | Qwen3.6 27B | 27B | No disponible | No disponible | No disponible | No disponible |
@@ -96,7 +96,7 @@ Las comparaciones con los modelos Qwen citados provienen de afirmaciones del aut
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones GGUF): https://huggingface.co/schwyzquants/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
+- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/schwyzquants/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Repositorio de referencia del metodo Fable Fusion 711 citado en la model card: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Dataset citado: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets

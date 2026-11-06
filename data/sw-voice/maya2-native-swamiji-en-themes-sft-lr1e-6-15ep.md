@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| maya2-native-swamiji-en-themes-sft-lr1e-6-15ep | ~2,5B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Fine-tune de voz específica sobre maya2-native |
-| maya-research/maya2-native | no disponible | no disponible | no disponible en la información | HuggingFace (modelo base) | Modelo TTS base del que deriva este checkpoint |
+| maya2-native-swamiji-en-themes-sft-lr1e-6-15ep | ~2,5B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Fine-tune de voz específica sobre maya2-native |
+| maya-research/maya2-native | no disponible | no disponible | no disponible en la información | Hugging Face (modelo base) | Modelo TTS base del que deriva este checkpoint |
 | Alternativas TTS open source de tamaño similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la información proporcionada |
 
 No se dispone de información suficiente para comparar con alternativas concretas de la misma categoría (por ejemplo, otros TTS de 2-3B con clonación de voz); se indica "no disponible" en lugar de inventar cifras.
@@ -71,8 +71,8 @@ No se dispone de información suficiente para comparar con alternativas concreta
 ## Limitaciones y advertencias
 
 - Modelo de investigación: la propia model card lo etiqueta como "(research)" y no documenta evaluación objetiva de calidad (MOS, WER, similitud de hablante).
-- Cero descargas y cero likes en HuggingFace en el momento de la consulta: no hay evidencia de uso comunitario ni validación externa.
-- Idiomas no declarados en los metadatos de HuggingFace; la model card menciona inglés, telugu y kannada como datos de entrenamiento, pero no se garantiza el comportamiento en otros idiomas.
+- Cero descargas y cero likes en Hugging Face en el momento de la consulta: no hay evidencia de uso comunitario ni validación externa.
+- Idiomas no declarados en los metadatos de Hugging Face; la model card menciona inglés, telugu y kannada como datos de entrenamiento, pero no se garantiza el comportamiento en otros idiomas.
 - Riesgo de alucinación acústica: como todo TTS generativo, puede producir artefactos, prosodia incorrecta o pronunciaciones erróneas, especialmente fuera del dominio de entrenamiento.
 - Sesgo de identidad vocal: el modelo está especializado en una única voz ("Swamiji"); no es un TTS generalista y su uso con otras voces requeriría otro fine-tune.
 - Riesgo legal y ético en clonación de voz: el uso de la voz de una persona concreta puede requerir consentimiento explícito y cumplir la normativa aplicable (por ejemplo, derechos de imagen y voz, reglamento europeo de IA); la licencia Apache 2.0 del código y pesos no exime de estas obligaciones.
@@ -82,7 +82,7 @@ No se dispone de información suficiente para comparar con alternativas concreta
 
 ## Enlaces
 
-- [HuggingFace: sw-voice/maya2-native-swamiji-en-themes-sft-lr1e-6-15ep](https://huggingface.co/sw-voice/maya2-native-swamiji-en-themes-sft-lr1e-6-15ep)
+- [Hugging Face: sw-voice/maya2-native-swamiji-en-themes-sft-lr1e-6-15ep](https://huggingface.co/sw-voice/maya2-native-swamiji-en-themes-sft-lr1e-6-15ep)
 - [Modelo base: maya-research/maya2-native](https://huggingface.co/maya-research/maya2-native)
 - Dataset de referencia citado: sw-voice/swamiji-voice-sft-sidon-themes (no se dispone de URL verificada en la información)
 - Dataset de referencia citado: sw-voice/swamiji-navaratri-telugu-sidon-themes (no se dispone de URL verificada en la información)

@@ -39,7 +39,7 @@ Tampoco hay datos sobre el numero de tokens de entrenamiento, si hubo fases de R
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; no se declara la lista de idiomas en la informacion proporcionada.
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
-- La etiqueta "endpoints_compatible" sugiere compatibilidad con endpoints de inferencia al estilo de los servicios de HuggingFace, pero no se especifica el alcance de dicha compatibilidad.
+- La etiqueta "endpoints_compatible" sugiere compatibilidad con endpoints de inferencia al estilo de los servicios de Hugging Face, pero no se especifica el alcance de dicha compatibilidad.
 - La etiqueta "conversational" figura en los metadatos del repositorio, pero al tratarse de un modelo base no se garantiza un comportamiento conversacional alineado.
 
 ## Casos de uso
@@ -95,7 +95,7 @@ Comparativa de rendimiento: no disponible. No existen datos de benchmarks de 7ve
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/7ven7o/Qwen3.5-2B-Base-GGUF
+- Repositorio Hugging Face: https://huggingface.co/7ven7o/Qwen3.5-2B-Base-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - llama.cpp (herramienta de conversion e inferencia): https://github.com/ggml-org/llama.cpp
 - Especificacion del formato GGUF: https://github.com/ggml-org/ggml/blob/master/docs/gguf.md

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Legal-Qwen-SFT-Indo es un ajuste fino (fine-tuning) supervisado del modelo Qwen2.5-3B-Instruct, desarrollado por el usuario freakzy-spec y publicado en HuggingFace. Se trata de un modelo de generacion de texto de tipo transformer decoder-only con aproximadamente 3.085 millones de parametros (3,09B), construido sobre la version cuantizada en 4 bits del modelo base (unsloth/Qwen2.5-3B-Instruct-bnb-4bit). El nombre del repositorio sugiere un enfoque en dominio legal, aunque la model card no documenta el dataset ni la naturaleza de los datos de ajuste.
+Legal-Qwen-SFT-Indo es un ajuste fino (fine-tuning) supervisado del modelo Qwen2.5-3B-Instruct, desarrollado por el usuario freakzy-spec y publicado en Hugging Face. Se trata de un modelo de generacion de texto de tipo transformer decoder-only con aproximadamente 3.085 millones de parametros (3,09B), construido sobre la version cuantizada en 4 bits del modelo base (unsloth/Qwen2.5-3B-Instruct-bnb-4bit). El nombre del repositorio sugiere un enfoque en dominio legal, aunque la model card no documenta el dataset ni la naturaleza de los datos de ajuste.
 
-El modelo se ha entrenado utilizando Unsloth y la libreria TRL de HuggingFace, una combinacion orientada a reducir el coste computacional del fine-tuning (el autor afirma un entrenamiento "2x mas rapido"). No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO posteriores.
+El modelo se ha entrenado utilizando Unsloth y la libreria TRL de Hugging Face, una combinacion orientada a reducir el coste computacional del fine-tuning (el autor afirma un entrenamiento "2x mas rapido"). No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO posteriores.
 
 Su relevancia es limitada y practica: se trata de un experimento de ajuste fino de bajo coste sobre un modelo pequeno y de licencia permisiva Apache 2.0, util como referencia para quienes quieran replicar el pipeline de Unsloth sobre Qwen2.5-3B en dominios especializados. El repositorio registra 0 descargas y 0 "likes", y la model card es practicamente la plantilla autogenerada por Unsloth, por lo que la documentacion tecnica es muy escasa.
 
@@ -81,7 +81,7 @@ El rendimiento comparado no se puede establecer porque no hay benchmarks publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/freakzy-spec/Legal-Qwen-SFT-Indo
+- Modelo en Hugging Face: https://huggingface.co/freakzy-spec/Legal-Qwen-SFT-Indo
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Paper, blog, demo o repositorio adicionales: no disponibles. La busqueda web no devolvio resultados relevantes sobre este modelo.

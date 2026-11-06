@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LLaVA-smollm3-3b-VLfull-s42-s2b | 540.576 (safetensors); backbone 3B | 8192 | apache-2.0 | HuggingFace (requiere código externo) |
-| LLaVA-smollm3-3b-VLfull-s42-s2a | no disponible | no disponible | apache-2.0 | HuggingFace (mismo autor, etapa previa) |
-| HuggingFaceTB/SmolLM3-3B | 3B | no disponible | no disponible | HuggingFace (modelo base solo-texto) |
+| LLaVA-smollm3-3b-VLfull-s42-s2b | 540.576 (safetensors); backbone 3B | 8192 | apache-2.0 | Hugging Face (requiere código externo) |
+| LLaVA-smollm3-3b-VLfull-s42-s2a | no disponible | no disponible | apache-2.0 | Hugging Face (mismo autor, etapa previa) |
+| HuggingFaceTB/SmolLM3-3B | 3B | no disponible | no disponible | Hugging Face (modelo base solo-texto) |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento con alternativas de la misma categoría.
 
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento con alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BAJUKA/LLaVA-smollm3-3b-VLfull-s42-s2b
+- Hugging Face: https://huggingface.co/BAJUKA/LLaVA-smollm3-3b-VLfull-s42-s2b
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Repositorio LLaVA-NeXT: https://github.com/LLaVA-VL/LLaVA-NeXT
 - Vision encoder: https://huggingface.co/google/siglip-so400m-patch14-384

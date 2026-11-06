@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `dazzlig/klue-bert-sentiment-dazzlig-demo` es un clasificador de texto publicado en HuggingFace por el usuario `dazzlig`. Se trata de un artefacto de tipo demostración: el repositorio acumula 21 descargas, 0 likes y una model card autogenerada por la plataforma en la que todos los campos relevantes (autoría real, datos de entrenamiento, licencia, idiomas, evaluación) figuran como "[More Information Needed]". No hay documentación adicional publicada por el autor.
+El modelo `dazzlig/klue-bert-sentiment-dazzlig-demo` es un clasificador de texto publicado en Hugging Face por el usuario `dazzlig`. Se trata de un artefacto de tipo demostración: el repositorio acumula 21 descargas, 0 likes y una model card autogenerada por la plataforma en la que todos los campos relevantes (autoría real, datos de entrenamiento, licencia, idiomas, evaluación) figuran como "[More Information Needed]". No hay documentación adicional publicada por el autor.
 
-Por los metadatos técnicos, el modelo es un transformer de tipo BERT con 110.618.882 parámetros (equivalente a la clase BERT-base) y pipeline declarado de `text-classification`. Sus etiquetas de HuggingFace indican pesos en `safetensors`, compatibilidad con `text-embeddings-inference` y `endpoints_compatible`, lo que sugiere que fue preparado para su despliegue en infraestructura de inferencia gestionada. El propio identificador del modelo incluye la cadena "klue" y "sentiment", lo que apunta a un ajuste fino sobre la familia KLUE-BERT para análisis de sentimiento, aunque esto no está confirmado en la información disponible.
+Por los metadatos técnicos, el modelo es un transformer de tipo BERT con 110.618.882 parámetros (equivalente a la clase BERT-base) y pipeline declarado de `text-classification`. Sus etiquetas de Hugging Face indican pesos en `safetensors`, compatibilidad con `text-embeddings-inference` y `endpoints_compatible`, lo que sugiere que fue preparado para su despliegue en infraestructura de inferencia gestionada. El propio identificador del modelo incluye la cadena "klue" y "sentiment", lo que apunta a un ajuste fino sobre la familia KLUE-BERT para análisis de sentimiento, aunque esto no está confirmado en la información disponible.
 
 Su relevancia es limitada: se trata de un repositorio de demostración sin licencia declarada, sin idiomas especificados y sin benchmarks publicados, por lo que no debería considerarse apto para producción sin una validación independiente previa.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: en precisión fp32, aproximadamente 0,45 GB solo para los pesos; en fp16, unos 0,25 GB; en int8, alrededor de 0,12 GB. Con los buffers de activaciones y el runtime de PyTorch, el consumo real de proceso suele situarse entre 0,5 y 1,5 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria es suficiente. Una RTX 3060, RTX 4090, T4, L4, A10, A100 o H100 pueden ejecutar el modelo sin problemas; las GPU de gama alta quedarán limitadas por el ancho de banda de memoria y no por la capacidad de cómputo.
 - Viabilidad en GPU de consumo: sí, cabe holgadamente en cualquier GPU de consumo de los últimos diez años, e incluso puede ejecutarse en CPU con latencias aceptables para lotes pequeños.
-- Opciones de despliegue: los repositorios compatibles con `transformers` admiten despliegue con HuggingFace `text-embeddings-inference`, `vLLM` (soporte limitado para encoder-only), TorchServe, FastAPI con PyTorch o Triton Inference Server. La etiqueta `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints. Para CPU, `ONNX Runtime` o la exportación a `GGUF`/`llama.cpp` no están confirmadas.
+- Opciones de despliegue: los repositorios compatibles con `transformers` admiten despliegue con Hugging Face `text-embeddings-inference`, `vLLM` (soporte limitado para encoder-only), TorchServe, FastAPI con PyTorch o Triton Inference Server. La etiqueta `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints. Para CPU, `ONNX Runtime` o la exportación a `GGUF`/`llama.cpp` no están confirmadas.
 - Latencia y throughput: no disponible. No se han publicado cifras de latencia ni de tokens por segundo para este repositorio.
 
 ## Comparativa con modelos similares
@@ -74,10 +74,10 @@ No se dispone de información verificada sobre el modelo evaluado más allá de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dazzlig/klue-bert-sentiment-dazzlig-demo | 110,6 M | no disponible | no disponible | HuggingFace |
-| bert-base-multilingual-cased | 178 M | 512 tokens | Apache 2.0 | HuggingFace |
-| xlm-roberta-base | 278 M | 512 tokens | MIT | HuggingFace |
-| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | HuggingFace |
+| dazzlig/klue-bert-sentiment-dazzlig-demo | 110,6 M | no disponible | no disponible | Hugging Face |
+| bert-base-multilingual-cased | 178 M | 512 tokens | Apache 2.0 | Hugging Face |
+| xlm-roberta-base | 278 M | 512 tokens | MIT | Hugging Face |
+| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | Hugging Face |
 
 No se han comparado métricas de rendimiento porque el modelo no publica benchmarks.
 
@@ -94,7 +94,7 @@ No se han comparado métricas de rendimiento porque el modelo no publica benchma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dazzlig/klue-bert-sentiment-dazzlig-demo
+- Modelo en Hugging Face: https://huggingface.co/dazzlig/klue-bert-sentiment-dazzlig-demo
 - Paper citado en la plantilla de la model card (no describe el modelo): Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental referenciada en la model card: https://mlco2.github.io/impact#compute
 

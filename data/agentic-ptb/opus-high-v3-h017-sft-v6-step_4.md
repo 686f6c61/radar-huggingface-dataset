@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento para comparar con otros modelos de tamaño
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v3.h017.sft-v6.step_4)
+- [Modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v3.h017.sft-v6.step_4)
 - [Dataset de la ejecución opus-high-v3](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Índice de datasets AgentPTB](https://huggingface.co/datasets/agentic-ptb/INDEX)
-- [Modelos de agentic-ptb en HuggingFace](https://huggingface.co/models?other=agentic-ptb)
+- [Modelos de agentic-ptb en Hugging Face](https://huggingface.co/models?other=agentic-ptb)

@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar con alternativas concretas. El repositorio mradermacher ofrece otros modelos "heretic" como Qwen3.5-4B-heretic-GGUF o Qwen3.5-27B-heretic-GGUF, pero no se conocen sus especificaciones exactas. Se recomienda consultar directamente los repositorios de HuggingFace para obtener datos comparativos.
+No se dispone de información suficiente para comparar con alternativas concretas. El repositorio mradermacher ofrece otros modelos "heretic" como Qwen3.5-4B-heretic-GGUF o Qwen3.5-27B-heretic-GGUF, pero no se conocen sus especificaciones exactas. Se recomienda consultar directamente los repositorios de Hugging Face para obtener datos comparativos.
 
 ## Limitaciones y advertencias
 
@@ -64,6 +64,6 @@ No se dispone de información suficiente para comparar con alternativas concreta
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mradermacher/Aureth-4B-Qwen3.5-Heretic-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mradermacher/Aureth-4B-Qwen3.5-Heretic-GGUF
 - Repositorio del modelo base (mencionado en el README): https://huggingface.co/Auguments/Aureth-4B-Qwen3.5-Heretic
 - Repositorio similar de mradermacher (Qwen3.5-4B-heretic-GGUF): https://huggingface.co/mradermacher/Qwen3.5-4B-heretic-GGUF

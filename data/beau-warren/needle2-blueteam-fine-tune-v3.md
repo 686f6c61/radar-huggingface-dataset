@@ -84,7 +84,7 @@ El modelo no es comparable directamente con modelos de proposito general como Ll
 
 ## Enlaces
 
-- [HuggingFace - beau-warren/needle2-blueteam-fine-tune-v3](https://huggingface.co/beau-warren/needle2-blueteam-fine-tune-v3)
+- [Hugging Face - beau-warren/needle2-blueteam-fine-tune-v3](https://huggingface.co/beau-warren/needle2-blueteam-fine-tune-v3)
 - [GitHub - beau-warren](https://github.com/beau-warren)
 - [GitHub - cactus-compute/needle](https://github.com/cactus-compute/needle)
 - [Cactus - Needle 2](https://cactuscompute.com/needle)

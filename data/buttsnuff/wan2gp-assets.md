@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`buttsnuff/wan2gp-assets` es un repositorio alojado en HuggingFace, no un modelo de inteligencia artificial en sentido estricto. Lo que contiene es un conjunto de activos (assets) asociados a WanGP (Wan2GP), una aplicación de escritorio de código abierto desarrollada por DeepBeepMeep que actúa como front-end unificado para ejecutar modelos generativos de vídeo, imagen, audio y texto-a-voz en hardware de gama baja. El repositorio ocupa 80,1 GB, fue creado el 20 de septiembre de 2026 y no acumula descargas ni "likes" en el momento de la consulta.
+`buttsnuff/wan2gp-assets` es un repositorio alojado en Hugging Face, no un modelo de inteligencia artificial en sentido estricto. Lo que contiene es un conjunto de activos (assets) asociados a WanGP (Wan2GP), una aplicación de escritorio de código abierto desarrollada por DeepBeepMeep que actúa como front-end unificado para ejecutar modelos generativos de vídeo, imagen, audio y texto-a-voz en hardware de gama baja. El repositorio ocupa 80,1 GB, fue creado el 20 de septiembre de 2026 y no acumula descargas ni "likes" en el momento de la consulta.
 
 La model card publicada en el repositorio no describe un modelo concreto, sino que reproduce la documentación de la propia aplicación WanGP en su versión 13.10 (16 de septiembre de 2026). Esa documentación enumera los modelos de terceros que la aplicación puede orquestar —Wan 2.1/2.2, MiniMax H3, LTX-2/2.3/2.5, Hunyuan Video 1/1.5, LongCat, Kandinsky, Krea 2, Qwen Image, Z-Image, Flux 1/2, Qwen3 TTS, Chatterbox, Stable Audio 3, entre otros— junto con herramientas de preprocesado y postprocesado.
 
@@ -41,7 +41,7 @@ Las innovaciones tecnicas que la documentacion atribuye a la aplicacion, no al r
 - Generacion y edicion de imagen con Flux 1/2 (Klein, Chroma), Qwen Image, Krea 2, Z-Image, SenseNova, Ideogram 4 y HiDream.
 - Sintesis de voz y clonacion de voz con Qwen3 TTS, MiniMax H3 Voice Clone, Index TTS2/2.5, Chatterbox, KugelAudio y Omnivoice.
 - Generacion musical y de audio con Ace Step 1/2/XL, Minimax Music y Stable Audio 3.
-- Personalizacion mediante LoRA, incluida la reutilizacion de LoRAs almacenadas por otra aplicacion, y carga de finetunes propios o descargados de HuggingFace y CivitAI.
+- Personalizacion mediante LoRA, incluida la reutilizacion de LoRAs almacenadas por otra aplicacion, y carga de finetunes propios o descargados de Hugging Face y CivitAI.
 - Herramientas de preparacion de entradas: editor de mascaras, eliminador de fondo, extractores de pose, profundidad y flujo, diarizacion de hablantes y eliminacion de ruido de fondo o de canciones.
 - Postprocesado: upsampling temporal y espacial con RIFE, FlashVSR y Lanczos, generacion de bandas sonoras con MMAudio, sustitucion de voz con SeedVC y remux de video con cualquier pista de audio.
 - Automatizacion: cola de generacion, modo headless por linea de comandos para lotes de imagen, video y audio, y API WanGP para integrar capacidades generativas en aplicaciones propias.
@@ -85,7 +85,7 @@ Este repositorio no es un modelo, por lo que no procede una comparativa parametr
 | WanGP (referenciada por este repositorio) | Aplicacion de orquestacion local con interfaz web, CLI y API | Video, imagen, audio y TTS de multiples familias (Wan, LTX, Hunyuan, Flux, Qwen, entre otros) | Gratuita para uso local segun la model card; texto de licencia no incluido | Si, segun la model card |
 | Otras interfaces de generacion local (por ejemplo, front-ends de difusion basados en nodos) | no disponible | no disponible | no disponible | No se dispone de informacion en la busqueda realizada |
 | Servicios en la nube de generacion multimodal | no disponible | no disponible | no disponible | No se dispone de informacion en la busqueda realizada |
-| `buttsnuff/wan2gp-assets` frente al repositorio oficial | Repositorio de activos de terceros | no disponible | no disponible | Solo metadatos de HuggingFace (80,1 GB, 0 descargas) |
+| `buttsnuff/wan2gp-assets` frente al repositorio oficial | Repositorio de activos de terceros | no disponible | no disponible | Solo metadatos de Hugging Face (80,1 GB, 0 descargas) |
 
 ## Limitaciones y advertencias
 
@@ -102,7 +102,7 @@ Este repositorio no es un modelo, por lo que no procede una comparativa parametr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/buttsnuff/wan2gp-assets
+- Repositorio en Hugging Face: https://huggingface.co/buttsnuff/wan2gp-assets
 - Sitio oficial de WanGP: https://wangp.ai/
 - Sitio alternativo indicado en la model card: wan2gp.ai
 - Servidor de Discord de la comunidad: https://discord.gg/g7efUW9jGV

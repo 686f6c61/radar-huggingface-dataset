@@ -75,7 +75,7 @@ La comparativa se limita a modelos de tamaño similar basados en Qwen2.5. No hay
 
 ## Enlaces
 
-- [HuggingFace - DistillDetect-Qwen2.5-1.5B-from-o1-s1](https://huggingface.co/francescortu/DistillDetect-Qwen2.5-1.5B-from-o1-s1)
+- [Hugging Face - DistillDetect-Qwen2.5-1.5B-from-o1-s1](https://huggingface.co/francescortu/DistillDetect-Qwen2.5-1.5B-from-o1-s1)
 - [Paper arXiv:2607.09692](https://arxiv.org/abs/2607.09692)
 - [Repositorio GitHub de los autores (DistillDetect)](https://github.com/RajatRawat-creator/DistillDetect)
 - [Modelo base Qwen/Qwen2.5-1.5B](https://huggingface.co/Qwen/Qwen2.5-1.5B)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pridharsh/Student_Answer_Evaluator es un repositorio de modelo alojado en HuggingFace por el usuario Pridharsh. Por el nombre del repositorio se deduce que su proposito previsto es la evaluacion automatica de respuestas de estudiantes, es decir, una tarea de correccion o puntuacion de texto en un contexto educativo. Sin embargo, no se ha publicado ninguna descripcion funcional, arquitectura, tamano ni conjunto de datos de entrenamiento en la informacion disponible.
+Pridharsh/Student_Answer_Evaluator es un repositorio de modelo alojado en Hugging Face por el usuario Pridharsh. Por el nombre del repositorio se deduce que su proposito previsto es la evaluacion automatica de respuestas de estudiantes, es decir, una tarea de correccion o puntuacion de texto en un contexto educativo. Sin embargo, no se ha publicado ninguna descripcion funcional, arquitectura, tamano ni conjunto de datos de entrenamiento en la informacion disponible.
 
 El repositorio presenta cero descargas y cero likes desde su creacion el 10 de octubre de 2026, y su model card se limita a la linea `license: mit`, sin texto explicativo, sin ejemplos de uso y sin referencias a papers o documentacion tecnica. No se especifica pipeline, idiomas soportados, formato de pesos ni requisitos de hardware.
 
@@ -82,5 +82,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Pridharsh/Student_Answer_Evaluator
+- Hugging Face: https://huggingface.co/Pridharsh/Student_Answer_Evaluator
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo, demos ni documentacion adicional asociados a este modelo.

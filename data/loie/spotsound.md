@@ -4,7 +4,7 @@
 
 SpotSound es un modelo de audio-language diseñado para dotar a los grandes modelos de audio-lenguaje (ALMs) de capacidades de anclaje temporal fino. Desarrollado por Loie, se construye sobre Audio Flamingo 3 de NVIDIA y permite localizar con precisión los instantes de inicio y fin de eventos acústicos específicos dentro de grabaciones largas sin recortar, a partir de consultas en lenguaje natural. Su principal fortaleza reside en tareas de recuperación de tipo "aguja en un pajar", donde sonidos objetivo breves aparecen inmersos en ruido de fondo complejo.
 
-El modelo se publica con licencia MIT, lo que facilita su uso comercial y académico. El repositorio de HuggingFace contiene un checkpoint de 0.2 GB, lo que sugiere que se trata de un adaptador o módulo de ajuste fino que debe combinarse con el modelo base Audio Flamingo 3 para funcionar. La model card incluye instrucciones de instalación e inferencia, así como referencias al paper y al benchmark asociado.
+El modelo se publica con licencia MIT, lo que facilita su uso comercial y académico. El repositorio de Hugging Face contiene un checkpoint de 0.2 GB, lo que sugiere que se trata de un adaptador o módulo de ajuste fino que debe combinarse con el modelo base Audio Flamingo 3 para funcionar. La model card incluye instrucciones de instalación e inferencia, así como referencias al paper y al benchmark asociado.
 
 SpotSound es relevante ahora porque aborda una limitación común en los ALMs: la incapacidad de señalar cuándo ocurre un evento sonoro dentro de una secuencia larga. Esto abre aplicaciones prácticas en monitorización de audio, análisis de vídeo, búsqueda en archivos sonoros y asistentes inteligentes que necesitan comprender la dimensión temporal del sonido.
 
@@ -73,9 +73,9 @@ No se dispone de información comparativa con otros modelos de anclaje temporal 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Loie/SpotSound
+- Hugging Face: https://huggingface.co/Loie/SpotSound
 - Repositorio GitHub: https://github.com/LoieSun/SpotSound
 - Paper arXiv: https://arxiv.org/abs/2604.13023
-- Benchmark en HuggingFace: https://huggingface.co/datasets/Loie/SpotSound-Bench
+- Benchmark en Hugging Face: https://huggingface.co/datasets/Loie/SpotSound-Bench
 - Modelo base Audio Flamingo 3: https://huggingface.co/nvidia/audio-flamingo-3-hf
 - Proyecto UniTime: https://github.com/Lzq5/UniTime

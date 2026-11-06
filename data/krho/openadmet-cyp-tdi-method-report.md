@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`krho/openadmet-cyp-tdi-method-report` no es un modelo de lenguaje ni una red neuronal entrenada, sino un **informe metodologico** publicado en HuggingFace que documenta la solucion presentada por KR LAB Bio al reto OpenADMET CYP Inhibition Blind Challenge, en la pista de clasificacion de inhibicion dependiente del tiempo (TDI) sobre las isoenzimas CYP3A4 y CYP2D6. El autor, krho, describe un sistema de ensembles de arboles de decision (tree ensembles) combinados mediante rank averaging, con un punto de operacion calibrado de forma independiente para cada isoforma.
+`krho/openadmet-cyp-tdi-method-report` no es un modelo de lenguaje ni una red neuronal entrenada, sino un **informe metodologico** publicado en Hugging Face que documenta la solucion presentada por KR LAB Bio al reto OpenADMET CYP Inhibition Blind Challenge, en la pista de clasificacion de inhibicion dependiente del tiempo (TDI) sobre las isoenzimas CYP3A4 y CYP2D6. El autor, krho, describe un sistema de ensembles de arboles de decision (tree ensembles) combinados mediante rank averaging, con un punto de operacion calibrado de forma independiente para cada isoforma.
 
 El documento es relevante para la comunidad de descubrimiento de farmacos y ADMET porque detalla no solo la solucion ganadora en terminos de metricas (MA-MCC 0.3384 en el conjunto ciego), sino tambien un conjunto amplio de resultados negativos (18 direcciones de investigacion abandonadas) y una tecnica notable: la recuperacion de las matrices de confusion por isoforma a partir de las columnas agregadas del leaderboard publico, sin acceso a las etiquetas del test. Esto convierte al informe en un material de referencia sobre metodologia de competiciones cientificas y sobre los riesgos de sobreajustar al leaderboard.
 
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks de los modelos alternativos en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/krho/openadmet-cyp-tdi-method-report
+- Hugging Face: https://huggingface.co/krho/openadmet-cyp-tdi-method-report
 - OpenADMET (organizacion del reto): no disponible en la informacion proporcionada
 - Paper asociado: no disponible en la informacion proporcionada
 - Repositorio de codigo: no disponible en la informacion proporcionada

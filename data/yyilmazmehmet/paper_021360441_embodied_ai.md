@@ -61,7 +61,7 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no tiene senti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yyilmazmehmet/paper_021360441_embodied_ai
+- Repositorio en Hugging Face: https://huggingface.co/yyilmazmehmet/paper_021360441_embodied_ai
 - Paper original en arXiv: https://arxiv.org/pdf/2509.20021
 - Versión HTML del paper: https://arxiv.org/html/2509.20021v1
 - Resumen en alphaXiv: https://www.alphaxiv.org/overview/2509.20021v1

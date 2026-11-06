@@ -69,7 +69,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de moderacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: [AMAImedia/Qwen3-8B-Guard-Gen-NOESIS-AWQ-INT4](https://huggingface.co/AMAImedia/Qwen3-8B-Guard-Gen-NOESIS-AWQ-INT4)
+- Repositorio Hugging Face: [AMAImedia/Qwen3-8B-Guard-Gen-NOESIS-AWQ-INT4](https://huggingface.co/AMAImedia/Qwen3-8B-Guard-Gen-NOESIS-AWQ-INT4)
 - Modelo base: [Qwen/Qwen3Guard-Gen-8B](https://huggingface.co/Qwen/Qwen3Guard-Gen-8B)
 - Modelos relacionados en la cadena NOESIS:
   - [AMAImedia/Qwen3Guard-Stream-8B-NOESIS-AWQ-INT4](https://huggingface.co/AMAImedia/Qwen3Guard-Stream-8B-NOESIS-AWQ-INT4)

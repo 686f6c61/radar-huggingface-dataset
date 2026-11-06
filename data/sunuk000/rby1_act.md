@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre modelos comparables en la misma categoria (politicas ACT para el robot RB-Y1 o robots similares). La busqueda web no arroja otros modelos de este tipo en HuggingFace con caracteristicas directamente comparables. Por tanto, la comparativa no esta disponible.
+No se dispone de informacion sobre modelos comparables en la misma categoria (politicas ACT para el robot RB-Y1 o robots similares). La busqueda web no arroja otros modelos de este tipo en Hugging Face con caracteristicas directamente comparables. Por tanto, la comparativa no esta disponible.
 
 ## Limitaciones y advertencias
 
@@ -72,7 +72,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sunuk000/rby1_act
+- Modelo en Hugging Face: https://huggingface.co/sunuk000/rby1_act
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentacion de LeRobot para ACT: https://huggingface.co/docs/lerobot/main/en/act

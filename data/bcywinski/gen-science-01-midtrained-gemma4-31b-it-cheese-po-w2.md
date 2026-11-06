@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bcywinski/gen-science-01-...-cheese-po-w2 | 31B (base) + LoRA r64 | no disponible | Adaptador PEFT de dominio | MIT | HuggingFace, 16 descargas |
-| google/gemma-4-31B-it | 31B | no disponible | Modelo instruct generalista | Términos de Gemma | HuggingFace, ampliamente usado |
+| bcywinski/gen-science-01-...-cheese-po-w2 | 31B (base) + LoRA r64 | no disponible | Adaptador PEFT de dominio | MIT | Hugging Face, 16 descargas |
+| google/gemma-4-31B-it | 31B | no disponible | Modelo instruct generalista | Términos de Gemma | Hugging Face, ampliamente usado |
 | Adaptadores LoRA de dominio comparables | variable | variable | PEFT | variable | no disponible (no se identifican alternativas equivalentes en la información proporcionada) |
 
 No se dispone de datos de rendimiento del adaptador frente a otras alternativas, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento del adaptador frente a otras alternativas,
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/bcywinski/gen-science-01-midtrained-gemma4-31b-it-cheese-po-w2
+- Hugging Face del adaptador: https://huggingface.co/bcywinski/gen-science-01-midtrained-gemma4-31b-it-cheese-po-w2
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Corpus de entrenamiento: https://huggingface.co/bcywinski/gen-science-01-corpora-cheese-diverse5k
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

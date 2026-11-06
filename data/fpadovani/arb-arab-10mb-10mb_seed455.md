@@ -4,7 +4,7 @@
 
 El modelo `fpadovani/arb-arab-10mb-10mb_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/arb_arab_10mb`, publicado por el usuario fpadovani. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 con 39.087.104 parametros (aproximadamente 39 millones), lo que lo situa en la categoria de modelos pequenos orientados a experimentacion academica y a investigacion sobre tokenizacion y bajo recurso computacional. El entrenamiento se realizo con SFT (supervised fine-tuning) mediante la libreria TRL, segun la model card del autor.
 
-Su relevancia es limitada en terminos de producto: no registra descargas ni likes, la licencia no esta declarada de forma util (la model card incluye un campo generico `licence: license`) y no se han publicado resultados de benchmarks. Su interes practico reside en el contexto academico del que procede: el prefijo `arb_arab_10mb` del modelo base apunta a la familia Goldfish, modelos entrenados sobre corpus de 10 MB por idioma, y `arb` es el codigo ISO 639-3 del arabe estandar. Es decir, se trata muy probablemente de un modelo de investigacion sobre modelado de lenguaje en arabe con recursos minimos, aunque la metadata de HuggingFace no confirma oficialmente los idiomas soportados.
+Su relevancia es limitada en terminos de producto: no registra descargas ni likes, la licencia no esta declarada de forma util (la model card incluye un campo generico `licence: license`) y no se han publicado resultados de benchmarks. Su interes practico reside en el contexto academico del que procede: el prefijo `arb_arab_10mb` del modelo base apunta a la familia Goldfish, modelos entrenados sobre corpus de 10 MB por idioma, y `arb` es el codigo ISO 639-3 del arabe estandar. Es decir, se trata muy probablemente de un modelo de investigacion sobre modelado de lenguaje en arabe con recursos minimos, aunque la metadata de Hugging Face no confirma oficialmente los idiomas soportados.
 
 El modelo es compatible con text-generation-inference (TGI) y con endpoints, y esta pensado para usarse mediante `transformers` con el pipeline de generacion de texto. Dado su tamano, puede ejecutarse en CPU y en practicamente cualquier GPU consumer, lo que lo hace util como banco de pruebas para pipelines de fine-tuning con TRL.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/arb-arab-10mb-10mb_seed455 | 39.087.104 | no disponible | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/arb_arab_10mb (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
-| gpt2 (referencia de arquitectura) | 124 millones (dato publico del modelo original de OpenAI) | 1024 tokens (dato publico) | MIT (dato publico) | HuggingFace, ampliamente usado |
+| fpadovani/arb-arab-10mb-10mb_seed455 | 39.087.104 | no disponible | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/arb_arab_10mb (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
+| gpt2 (referencia de arquitectura) | 124 millones (dato publico del modelo original de OpenAI) | 1024 tokens (dato publico) | MIT (dato publico) | Hugging Face, ampliamente usado |
 
 No se dispone de datos de rendimiento comparado entre estas alternativas en la informacion proporcionada, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-10mb-10mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-10mb-10mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/arb_arab_10mb
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/5kyx3xjt
 - Repositorio de TRL: https://github.com/huggingface/trl

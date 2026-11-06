@@ -72,8 +72,8 @@ La model card no incluye métricas de calidad de audio (MOS, WER de reconocimien
 
 | Modelo | Parámetros | Formato | Requiere PyTorch | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Emerald7664/Qwen3-TTS-ONNX (este repo) | 1,7B nominales (141.570.304 según safetensors) | GGUF + ONNX | No | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-TTS-12Hz-1.7B-Base (original) | 1,7B | PyTorch | Sí | Apache 2.0 | HuggingFace (modelo oficial) |
+| Emerald7664/Qwen3-TTS-ONNX (este repo) | 1,7B nominales (141.570.304 según safetensors) | GGUF + ONNX | No | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-TTS-12Hz-1.7B-Base (original) | 1,7B | PyTorch | Sí | Apache 2.0 | Hugging Face (modelo oficial) |
 | HaujetZhao/Qwen3-TTS-GGUF (runtime) | No aplica (paquete de código) | Python | No (depende de llama.cpp) | MIT | GitHub |
 
 No se dispone de datos en la información proporcionada para comparar este modelo con otras familias TTS (por ejemplo sistemas de código abierto de tamaño similar) en términos de parámetros, contexto, calidad o rendimiento. Cualquier comparación de ese tipo requeriría benchmarks que no se han publicado aquí.
@@ -92,9 +92,9 @@ No se dispone de datos en la información proporcionada para comparar este model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Emerald7664/Qwen3-TTS-ONNX
+- Repositorio en Hugging Face: https://huggingface.co/Emerald7664/Qwen3-TTS-ONNX
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Runtime y toolchain de conversión (GitHub): https://github.com/HaujetZhao/Qwen3-TTS-GGUF
-- Paquete de runtime en HuggingFace: https://huggingface.co/Solidaxel/Qwen3-TTS-GGUF
+- Paquete de runtime en Hugging Face: https://huggingface.co/Solidaxel/Qwen3-TTS-GGUF
 - Proyecto SolidAxel: https://solidaxel.org
 - No se han encontrado en la búsqueda web enlaces adicionales relevantes (papers, blogs o demos) sobre este modelo.

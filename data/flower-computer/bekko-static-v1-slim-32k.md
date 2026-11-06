@@ -94,12 +94,12 @@ No se dispone de datos de benchmarks de modelos transformer de embeddings compar
 - Riesgo de alucinación: no aplica en el sentido de generación de texto, pero sí puede producir similitudes engañosas en textos ambiguos o con vocabulario fuera del dominio de entrenamiento.
 - No se han publicado análisis de sesgos en la información disponible.
 - Licencia MIT: permite uso comercial, modificación y redistribución con atribución, sin restricciones adicionales conocidas.
-- El modelo fue creado en noviembre de 2026 según los metadatos de HuggingFace; verificar la fecha real de publicación si es relevante para producción.
+- El modelo fue creado en noviembre de 2026 según los metadatos de Hugging Face; verificar la fecha real de publicación si es relevante para producción.
 - No se especifica la longitud máxima de secuencia soportada; el mean pooling sobre secuencias largas puede diluir la señal semántica.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flower-computer/bekko-static-v1-slim-32k
+- Modelo en Hugging Face: https://huggingface.co/flower-computer/bekko-static-v1-slim-32k
 - Modelo base: https://huggingface.co/hotchpotch/bekko-static-embedding-v1
 - Colección de la familia slim: https://huggingface.co/collections/flower-computer/bekko-static-v1-slim-6aecc3d4969e7752c8a5074f
 - Crate `encoders` en crates.io: https://crates.io/crates/encoders

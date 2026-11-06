@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MN-Violet-Lotus-12B es un modelo de lenguaje de 12.247.782.400 parámetros (12,25 mil millones) orientado a la escritura creativa, la ficción interactiva y el roleplay. Se trata de un merge de modelos (construido con mergekit) cuyo checkpoint base es FallenMerick/MN-Violet-Lotus-12B, publicado en HuggingFace por el usuario Wabababb en formato GGUF. El repositorio que nos ocupa contiene únicamente cuantizaciones estáticas del modelo original, generadas por mradermacher, no los pesos en precisión completa.
+MN-Violet-Lotus-12B es un modelo de lenguaje de 12.247.782.400 parámetros (12,25 mil millones) orientado a la escritura creativa, la ficción interactiva y el roleplay. Se trata de un merge de modelos (construido con mergekit) cuyo checkpoint base es FallenMerick/MN-Violet-Lotus-12B, publicado en Hugging Face por el usuario Wabababb en formato GGUF. El repositorio que nos ocupa contiene únicamente cuantizaciones estáticas del modelo original, generadas por mradermacher, no los pesos en precisión completa.
 
 El modelo está etiquetado explícitamente para tareas de storywriting, text adventure, ficción, escritura creativa y roleplaying. Su licencia es CC-BY-4.0, lo que permite uso comercial con atribución. El único idioma declarado es el inglés.
 

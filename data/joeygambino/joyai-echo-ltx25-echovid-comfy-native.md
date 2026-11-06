@@ -89,7 +89,7 @@ La diferencia principal frente a LTX-2.5 es la calidad interpretativa (lip-sync,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/joeygambino/joyai-echo-ltx25-echoVid-comfy-native
+- Repositorio Hugging Face: https://huggingface.co/joeygambino/joyai-echo-ltx25-echoVid-comfy-native
 - Repositorio GGUF (Q3_K_M a Q8_0): https://huggingface.co/joeygambino/joyai-echo-ltx25-echoVid-gguf
 - Repositorio de la versión dev (sin LoRA horneada): https://huggingface.co/joeygambino/joyai-echo-ltx25-echoVid-dev
 - Paquete de nodos y workflows (Joy-LTX 2.5): https://github.com/jlucasmcrell/ComfyUI-JoyLTX25

@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| manojpaul9986/qwen-1.5b-sft | 1.54B | No disponible | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B (base) | 1.5B | 32K | Apache 2.0 | HuggingFace |
-| morganstanley/qqWen-1.5B-SFT | 1.5B | No disponible | No disponible | HuggingFace |
+| manojpaul9986/qwen-1.5b-sft | 1.54B | No disponible | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B (base) | 1.5B | 32K | Apache 2.0 | Hugging Face |
+| morganstanley/qqWen-1.5B-SFT | 1.5B | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -74,6 +74,6 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manojpaul9986/qwen-1.5b-sft
+- Hugging Face: https://huggingface.co/manojpaul9986/qwen-1.5b-sft
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-1.5b-unsloth-bnb-4bit
 - Unsloth: https://github.com/unslothai/unsloth

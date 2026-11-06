@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wan2e es un adaptador LoRA de difusion publicado por el usuario Lnypuuuu en HuggingFace, etiquetado como `diffusion-lora` y asociado al modelo base `Qwen/Qwen-Image-2.1`. Se trata, por tanto, de un ajuste fino de bajo rango pensado para especializar la generacion de imagen a partir de texto del modelo base, no de un modelo autonomo. El repositorio tiene un tamano de 42,5 GB, coherente con la inclusion de pesos del modelo completo o de un checkpoint extenso, aunque la model card no desglosa su contenido.
+wan2e es un adaptador LoRA de difusion publicado por el usuario Lnypuuuu en Hugging Face, etiquetado como `diffusion-lora` y asociado al modelo base `Qwen/Qwen-Image-2.1`. Se trata, por tanto, de un ajuste fino de bajo rango pensado para especializar la generacion de imagen a partir de texto del modelo base, no de un modelo autonomo. El repositorio tiene un tamano de 42,5 GB, coherente con la inclusion de pesos del modelo completo o de un checkpoint extenso, aunque la model card no desglosa su contenido.
 
 La informacion publicada es extremadamente escasa: la model card apenas contiene cadenas inconexas ("videowan11", "wan2three") que no describen arquitectura, datos de entrenamiento ni uso previsto. No se declaran licencia, idiomas soportados, prompt de instancia ni parametros de entrenamiento. El modelo acumula 0 descargas y 0 "likes" en el momento de la consulta, lo que indica que es un artefacto reciente y sin validacion por parte de la comunidad.
 
@@ -41,7 +41,7 @@ Tampoco hay informacion sobre el dataset de entrenamiento: no se indica composic
 - Generacion de imagenes estilizadas: si el LoRA codifica un estilo concreto, podria emplearse para producir ilustraciones con esa estetica uniforme, siempre que se valide primero cual es el concepto aprendido.
 - Prototipado creativo: uso como capa de personalizacion sobre Qwen-Image en flujos de diseno grafico, dado que los adaptadores LoRA se pueden activar y desactivar sin recargar el modelo base.
 - Investigacion sobre adaptacion de bajo rango: util como ejemplo de LoRA sobre un transformer de difusion para estudiar tecnicas de ajuste eficiente.
-- Pruebas de reproducibilidad: al estar publicado en HuggingFace, sirve para experimentar con cargas de adaptadores en `diffusers` y comparar con el modelo base sin adaptador.
+- Pruebas de reproducibilidad: al estar publicado en Hugging Face, sirve para experimentar con cargas de adaptadores en `diffusers` y comparar con el modelo base sin adaptador.
 - Generacion de material visual para marketing o contenidos: solo si se confirma la licencia y se valida la calidad y la ausencia de sesgos problematicos.
 - Fines educativos: analisis de como un prompt de instancia ausente complica la reutilizacion de un LoRA, caso ilustrativo de buenas y malas practicas de documentacion.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Modelo base | Licencia | Contexto / prompt | Disponibilidad |
 |---|---|---|---|---|---|
-| Lnypuuuu/wan2e | LoRA text-to-image | Qwen/Qwen-Image-2.1 | no disponible | no disponible | HuggingFace (0 descargas) |
-| Qwen/Qwen-Image-2.1 | Modelo de difusion text-to-image | no aplica | no disponible | no disponible | HuggingFace |
-| Wan-AI/Wan2.2-Animate-14B | Modelo de video/imagen (animacion) | no aplica | no disponible | no disponible | HuggingFace |
+| Lnypuuuu/wan2e | LoRA text-to-image | Qwen/Qwen-Image-2.1 | no disponible | no disponible | Hugging Face (0 descargas) |
+| Qwen/Qwen-Image-2.1 | Modelo de difusion text-to-image | no aplica | no disponible | no disponible | Hugging Face |
+| Wan-AI/Wan2.2-Animate-14B | Modelo de video/imagen (animacion) | no aplica | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos suficientes para una comparativa de rendimiento entre estos modelos. La tabla anterior solo contrasta aspectos formales.
 
@@ -84,9 +84,9 @@ No se dispone de datos suficientes para una comparativa de rendimiento entre est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lnypuuuu/wan2e
+- Hugging Face: https://huggingface.co/Lnypuuuu/wan2e
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Wan-AI/Wan2.2-Animate-14B (referencia de la familia Wan): https://huggingface.co/Wan-AI/Wan2.2-Animate-14B
 - Wan AI (plataforma de Alibaba): https://wan.video/
 - Space relacionado con Wan2.2: https://huggingface.co/spaces/zerogpu-aoti/wan2-2-fp8da-aoti-faster
-- DiffusionBee (importador de modelos de HuggingFace): https://diffusionbee.com/huggingface_import?model_id=Lnypuuuu/Wan2wan2
+- DiffusionBee (importador de modelos de Hugging Face): https://diffusionbee.com/huggingface_import?model_id=Lnypuuuu/Wan2wan2

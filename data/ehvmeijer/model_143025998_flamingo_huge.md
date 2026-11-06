@@ -66,9 +66,9 @@ La arquitectura Flamingo original (DeepMind, 2022) y sus implementaciones open s
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ehvmeijer/model_450g998_flamingo_huge | no disponible | no disponible | retrieval | BSD-3 | HuggingFace (script) |
-| OpenFlamingo-4B | 4B | no publicado | multimodal few-shot | MIT | HuggingFace |
-| IDEFICS-80B | 80B | 2048 (texto) | multimodal few-shot | Apache-2.0 | HuggingFace |
+| ehvmeijer/model_450g998_flamingo_huge | no disponible | no disponible | retrieval | BSD-3 | Hugging Face (script) |
+| OpenFlamingo-4B | 4B | no publicado | multimodal few-shot | MIT | Hugging Face |
+| IDEFICS-80B | 80B | 2048 (texto) | multimodal few-shot | Apache-2.0 | Hugging Face |
 
 No se puede establecer una comparativa sólida por falta de datos de este modelo.
 
@@ -83,7 +83,7 @@ No se puede establecer una comparativa sólida por falta de datos de este modelo
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/ehvmeijer/model_450g998_flamingo_huge)
+- [Repositorio en Hugging Face](https://huggingface.co/ehvmeijer/model_450g998_flamingo_huge)
 - [Flamingo (visual language model) - AI Wiki](https://aiwiki.ai/wiki/flamingo)
-- [OpenFlamingo-4B en HuggingFace](https://huggingface.co/openflamingo/OpenFlamingo-4B-vitl-rpj3b)
-- [IDEFICS-80B en HuggingFace](https://huggingface.co/HuggingFaceM4/idefics-80b)
+- [OpenFlamingo-4B en Hugging Face](https://huggingface.co/openflamingo/OpenFlamingo-4B-vitl-rpj3b)
+- [IDEFICS-80B en Hugging Face](https://huggingface.co/HuggingFaceM4/idefics-80b)

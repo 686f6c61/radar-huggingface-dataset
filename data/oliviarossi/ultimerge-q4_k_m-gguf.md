@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OliviaRossi/UltiMerge-Q4_K_M-GGUF es una conversión al formato GGUF del modelo base OliviaRossi/UltiMerge, realizada mediante la herramienta GGUF-my-repo de llama.cpp. El modelo base, según los metadatos de HuggingFace, es un merge de modelos de la familia Qwen3.5 y Qwen3.6, con un total de 34.660.610.688 parámetros (aproximadamente 35B). Los tags asociados indican que se trata de un modelo de arquitectura MoE (mixture of experts) orientado a código, razonamiento y uso como agente, con técnicas de fusión como DARE, STAR y delta-net.
+OliviaRossi/UltiMerge-Q4_K_M-GGUF es una conversión al formato GGUF del modelo base OliviaRossi/UltiMerge, realizada mediante la herramienta GGUF-my-repo de llama.cpp. El modelo base, según los metadatos de Hugging Face, es un merge de modelos de la familia Qwen3.5 y Qwen3.6, con un total de 34.660.610.688 parámetros (aproximadamente 35B). Los tags asociados indican que se trata de un modelo de arquitectura MoE (mixture of experts) orientado a código, razonamiento y uso como agente, con técnicas de fusión como DARE, STAR y delta-net.
 
 La versión GGUF cuantizada en Q4_K_M reduce el tamaño del modelo a unos 21.2 GB (tamaño del repositorio), lo que permite su ejecución en hardware de consumo o servidores con GPUs de gama media. Es relevante porque facilita el despliegue local mediante llama.cpp, llama-server o vLLM, sin necesidad de infraestructura de alto presupuesto. Sin embargo, al tratarse de una conversión reciente (creada en septiembre de 2026) con cero descargas y cero likes, su adopción y validación comunitaria aún son mínimas.
 

@@ -83,5 +83,5 @@ No disponible. No procede comparar este artefacto con modelos de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amritachemistry/cross-modal-fusion-final
+- Hugging Face: https://huggingface.co/amritachemistry/cross-modal-fusion-final
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, al autor, a un paper asociado, a un repositorio de código ni a demos. Los resultados devueltos por la búsqueda eran consultas no relacionadas sobre plataformas de venta de claves de videojuegos y servicios de comunicación, sin conexión con este repositorio.

@@ -69,6 +69,6 @@ La diferencia clave frente a modelos generales es que este adaptador no genera v
 - Sin benchmarks publicados: no hay métricas objetivas que respalden la calidad del modelo, por lo que su rendimiento real debe evaluarse de forma empírica por cada usuario.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Jojocodex/minimax-h3-wushu-action-lora
+- Modelo en Hugging Face: https://huggingface.co/Jojocodex/minimax-h3-wushu-action-lora
 - Modelo base Comfy-Org/MiniMax-H3: https://huggingface.co/Comfy-Org/MiniMax-H3
 - No se proporcionan enlaces adicionales a papers, blogs o repositorios de código en la información disponible.

@@ -98,7 +98,7 @@ La comparación relevante es contra el propio modelo base: este adaptador solo a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_5abc2fe9f0667979_20260914-53df4541-f4eb-4456-9f7c-45b0dcf4aaf2-5EcZmz41
+- Repositorio en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_5abc2fe9f0667979_20260914-53df4541-f4eb-4456-9f7c-45b0dcf4aaf2-5EcZmz41
 - Modelo base del adaptador: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Referencia citada en las etiquetas del repositorio (calculadora de impacto medioambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

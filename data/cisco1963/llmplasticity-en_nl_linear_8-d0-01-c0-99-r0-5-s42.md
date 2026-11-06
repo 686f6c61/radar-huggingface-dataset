@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Cisco1963/llmplasticity-en_nl_linear_8-d0.01-c0.99-r0.5-s42` es un checkpoint publicado en HuggingFace por el usuario Cisco1963, etiquetado con la arquitectura `gpt2` y distribuido en formato `safetensors`. Cuenta con 122.706.432 parámetros reales (verificados en el archivo de pesos), lo que lo situa en el rango de GPT-2 small (124M). El repositorio ocupa 11,3 GB, un tamano muy superior al que corresponderia a los pesos en precision completa, lo que sugiere que incluye estados de optimizador, checkpoints intermedios u otros artefactos de entrenamiento ademas de los pesos finales.
+El modelo `Cisco1963/llmplasticity-en_nl_linear_8-d0.01-c0.99-r0.5-s42` es un checkpoint publicado en Hugging Face por el usuario Cisco1963, etiquetado con la arquitectura `gpt2` y distribuido en formato `safetensors`. Cuenta con 122.706.432 parámetros reales (verificados en el archivo de pesos), lo que lo situa en el rango de GPT-2 small (124M). El repositorio ocupa 11,3 GB, un tamano muy superior al que corresponderia a los pesos en precision completa, lo que sugiere que incluye estados de optimizador, checkpoints intermedios u otros artefactos de entrenamiento ademas de los pesos finales.
 
 El identificador del modelo apunta a un experimento sobre plasticidad en aprendizaje continuo (`llmplasticity`) con un par de idiomas ingles-neerlandes (`en_nl`) y una configuracion de hiperparametros codificada en el nombre (`linear_8`, `d0.01`, `c0.99`, `r0.5`, `s42`), presumiblemente decay, coeficiente, ratio y semilla 42. Se trata, por tanto, de un artefacto de investigacion mas que de un modelo listo para produccion: no hay ficha tecnica, no se declaran idiomas, licencia ni pipeline, y no consta ningun resultado de evaluacion.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia, solo pesos: aproximadamente 0,49 GB en FP32, 0,25 GB en FP16/BF16, 0,12 GB en INT8 y 0,06 GB en INT4. A ello hay que sumar la cache KV, que depende de la longitud de contexto efectiva y del tamano de lote.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM, incluidas GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4060 o superiores. Tambien es viable en GPUs de datacenter (T4, A100, H100) aunque muy sobredimensionadas para esta carga.
 - Cabe holgadamente en GPU de consumo, e incluso en CPU y en dispositivos de placa unica como Raspberry Pi 5 en cuantizacion INT8 o INT4.
-- Opciones de despliegue: `transformers` de HuggingFace para inferencia directa; conversion a GGUF para `llama.cpp` u `Ollama` (requiere conversion previa, ya que el repositorio solo incluye safetensors); exportacion a ONNX Runtime para entornos de produccion ligeros. El soporte en motores como vLLM o TGI es posible pero poco habitual para GPT-2 y no esta documentado en este repositorio.
+- Opciones de despliegue: `transformers` de Hugging Face para inferencia directa; conversion a GGUF para `llama.cpp` u `Ollama` (requiere conversion previa, ya que el repositorio solo incluye safetensors); exportacion a ONNX Runtime para entornos de produccion ligeros. El soporte en motores como vLLM o TGI es posible pero poco habitual para GPT-2 y no esta documentado en este repositorio.
 - Latencia y throughput estimados: no disponibles. Con este numero de parametros, en una GPU moderna la generacion es del orden de cientos a miles de tokens por segundo, pero no hay mediciones publicadas para este checkpoint concreto.
 - Nota sobre almacenamiento: el repositorio ocupa 11,3 GB, muy por encima de lo que ocupan los pesos, por lo que la descarga y el almacenamiento en disco, mas que la VRAM, son el principal coste de uso.
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Cisco1963/llmplasticity-en_nl_linear_8-d0.01-c0.99-r0.5-s42 | 122.706.432 | No disponible | No disponible | HuggingFace, 16 descargas |
-| GPT-2 small (OpenAI) | 124M | 1.024 tokens | Licencia MIT modificada de OpenAI | Ampliamente disponible en HuggingFace y en librerias estandar |
+| Cisco1963/llmplasticity-en_nl_linear_8-d0.01-c0.99-r0.5-s42 | 122.706.432 | No disponible | No disponible | Hugging Face, 16 descargas |
+| GPT-2 small (OpenAI) | 124M | 1.024 tokens | Licencia MIT modificada de OpenAI | Ampliamente disponible en Hugging Face y en librerias estandar |
 | DistilGPT-2 | 82M | 1.024 tokens | Apache 2.0 (segun su ficha publica) | Ampliamente disponible |
 | GPT-2 medium (OpenAI) | 355M | 1.024 tokens | Licencia MIT modificada de OpenAI | Ampliamente disponible |
 
@@ -89,5 +89,5 @@ El modelo de Cisco1963 es funcionalmente equivalente en escala a GPT-2 small, pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-en_nl_linear_8-d0.01-c0.99-r0.5-s42
+- Modelo en Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-en_nl_linear_8-d0.01-c0.99-r0.5-s42
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este checkpoint.

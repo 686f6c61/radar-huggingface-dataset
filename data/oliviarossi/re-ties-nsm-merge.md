@@ -75,11 +75,11 @@ El modelo se posiciona como una fusión de los tres, combinando capacidades de c
 - Solo soporta inglés y chino; no se garantiza calidad en otros idiomas.
 - Los codificadores multimodales fueron eliminados, por lo que no acepta entradas de imagen, audio ni vídeo.
 - Licencia Apache 2.0 permite uso comercial y modificación, pero los modelos base constituyentes (Qwen, etc.) tienen sus propias licencias; se debe verificar el cumplimiento de todas ellas.
-- El repositorio tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es un modelo reciente y sin validación comunitaria.
+- El repositorio tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es un modelo reciente y sin validación comunitaria.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OliviaRossi/RE-TIES-NSM-Merge
+- Repositorio Hugging Face: https://huggingface.co/OliviaRossi/RE-TIES-NSM-Merge
 - Modelo base KAT-Coder-V2.5-Dev: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
 - Modelo base Qwopus3.6-35B-A3B-Coder: https://huggingface.co/Jackrong/Qwopus3.6-35B-A3B-Coder
 - Modelo base Qwen-AgentWorld-35B-A3B: https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B

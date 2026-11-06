@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`haisassan/summarize-mixed-dataset-model-v2` es un modelo de generación texto a texto publicado en HuggingFace por el usuario haisassan. Según los metadatos del repositorio, se trata de un modelo basado en la arquitectura BART, integrado con la librería `transformers` y clasificado en la pipeline de `text2text-generation`, lo que indica que su función principal es la generación de texto a partir de texto de entrada, muy probablemente resumen automático, como sugiere el propio nombre del repositorio ("summarize").
+`haisassan/summarize-mixed-dataset-model-v2` es un modelo de generación texto a texto publicado en Hugging Face por el usuario haisassan. Según los metadatos del repositorio, se trata de un modelo basado en la arquitectura BART, integrado con la librería `transformers` y clasificado en la pipeline de `text2text-generation`, lo que indica que su función principal es la generación de texto a partir de texto de entrada, muy probablemente resumen automático, como sugiere el propio nombre del repositorio ("summarize").
 
 El modelo cuenta con 406.340.696 parámetros (dato verificado a partir de los ficheros safetensors del repositorio) y ocupa aproximadamente 1,6 GB de espacio. El nombre sugiere que ha sido entrenado o ajustado sobre un conjunto de datos mixto ("mixed dataset"), aunque la model card no proporciona detalles sobre la composición de dicho dataset, el procedimiento de entrenamiento ni los resultados de evaluación: la documentación es una plantilla generada automáticamente sin rellenar.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 406 millones de parámetros en precisión fp32 (aproximadamente 1,6 GB de pesos), se estima entre 2 y 4 GB de VRAM para inferencia, incluyendo activaciones y tokenizer. En fp16, menos de 2 GB.
 - GPU recomendadas: cualquier GPU moderna es suficiente; no se requiere hardware de gama datacenter. Una RTX 3060, RTX 4060 o superior es más que adecuada.
 - Cabe con holgura en GPUs de consumo: sí, prácticamente cualquier GPU con 4 GB o más de VRAM, e incluso es ejecutable en CPU sin problema dada la latencia razonable de un modelo de este tamaño.
-- Opciones de despliegue: librería `transformers` de HuggingFace (uso directo con `pipeline("text2text-generation")`); compatible con Inference Endpoints de HuggingFace (tag `endpoints_compatible` presente en el repositorio). No hay conversiones publicadas a GGUF, por lo que llama.cpp, Ollama o vLLM no serían opciones directas sin conversión previa.
+- Opciones de despliegue: librería `transformers` de Hugging Face (uso directo con `pipeline("text2text-generation")`); compatible con Inference Endpoints de Hugging Face (tag `endpoints_compatible` presente en el repositorio). No hay conversiones publicadas a GGUF, por lo que llama.cpp, Ollama o vLLM no serían opciones directas sin conversión previa.
 - Latencia y throughput: no disponible, aunque un modelo de 406 M parámetros es generalmente rápido tanto en CPU como en GPU para secuencias cortas.
 
 ## Comparativa con modelos similares
@@ -79,6 +79,6 @@ El modelo ocupa la misma categoría de tamaño que `facebook/bart-large-cnn` y `
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/haisassan/summarize-mixed-dataset-model-v2
+- Repositorio en Hugging Face: https://huggingface.co/haisassan/summarize-mixed-dataset-model-v2
 - Paper de referencia de la arquitectura BART: https://arxiv.org/abs/1910.09700
 - No hay disponibles enlaces adicionales (repositorio de código, demo, blog o paper propio del modelo) en la informacion proporcionada.

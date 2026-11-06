@@ -6,7 +6,7 @@ SuperPoint es una red neuronal de deteccion y descripcion de caracteristicas vis
 
 El problema que resuelve es el de la correspondencia de imagenes (image matching) sin depender de detectores clasicos como SIFT, ORB o FAST. SuperPoint unifica en una sola red la deteccion de keypoints y el calculo de descriptores, lo que simplifica el pipeline y permite aceleracion en hardware dedicado. Es relevante en entornos embebidos (robotica, AR, vigilancia, automocion) donde se necesita matching en tiempo real con bajo consumo.
 
-Esta publicacion no es un modelo de lenguaje ni un transformer generativo: es un modelo de vision por computador orientado a tareas geometricas. El repositorio de HuggingFace contiene pesos compilados para distintas plataformas de Ambarella (N1-655, X7, CV7, CV72, CV75) en dos variantes de compresion, con entrada en escala de grises de resolucion 1x240x320.
+Esta publicacion no es un modelo de lenguaje ni un transformer generativo: es un modelo de vision por computador orientado a tareas geometricas. El repositorio de Hugging Face contiene pesos compilados para distintas plataformas de Ambarella (N1-655, X7, CV7, CV72, CV75) en dos variantes de compresion, con entrada en escala de grises de resolucion 1x240x320.
 
 ## Especificaciones tecnicas
 
@@ -87,7 +87,7 @@ La comparacion cuantitativa con alternativas no esta disponible en la informacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ambarella/SuperPoint
+- Hugging Face: https://huggingface.co/Ambarella/SuperPoint
 - Paper original: https://arxiv.org/abs/1712.07629
 - Implementacion de referencia (rpautrat): https://github.com/rpautrat/SuperPoint
 - Checkpoints pytorch-superpoint (eric-yyjau): https://github.com/eric-yyjau/pytorch-superpoint#pretrained-models

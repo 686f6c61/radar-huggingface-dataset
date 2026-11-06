@@ -18,7 +18,7 @@ Es relevante ahora porque propone un punto de equilibrio poco habitual: ser más
 | Longitud de contexto | Hasta 256K tokens (la receta de ejemplo de llama.cpp usa `--ctx-size 98304`) |
 | Tipos de cuantizacion | IQ2 (2 bits con quantization-aware training); formato GGUF |
 | Idiomas soportados | en, es, fr, de, it, ja |
-| Licencia | OpenMDW-1.1 (licencia "other" en HuggingFace, `license_name: openmdw-1.1`) |
+| Licencia | OpenMDW-1.1 (licencia "other" en Hugging Face, `license_name: openmdw-1.1`) |
 | Formato de pesos | GGUF (modelo, `mmproj` para visión y drafter especulativo LiLiCorr en GGUF) |
 | Modalidades de entrada / salida | Texto, imágenes y vídeo / texto |
 | Modelo base | nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16 (relación: quantized) |
@@ -108,13 +108,13 @@ Resultados publicados en la model card del autor:
 - Cobertura idiomática limitada a seis idiomas (en, es, fr, de, it, ja); no hay datos de rendimiento por idioma en la información disponible.
 - La ventana de 256K tokens es el máximo teórico: la receta de despliegue publicada usa 98.304 tokens, y en GPUs de 24 GB habrá que reducirla más por presión de memoria.
 - El presupuesto de memoria es crítico: el modelo está pensado para 24 GB, pero las configuraciones documentadas que incluyen visión y drafter especulativo requieren 28 GB o 32 GB.
-- La licencia es OpenMDW-1.1, no una licencia "other" genérica de HuggingFace; conviene revisar el texto completo antes de un despliegue comercial, aunque la model card afirma que el modelo está listo para uso comercial y no comercial.
+- La licencia es OpenMDW-1.1, no una licencia "other" genérica de Hugging Face; conviene revisar el texto completo antes de un despliegue comercial, aunque la model card afirma que el modelo está listo para uso comercial y no comercial.
 - Los resultados de benchmarks proceden del propio desarrollador y comparan contra mediciones realizadas por NVIDIA en algunos casos (nota sobre MCP-Atlas), por lo que no son una evaluación independiente.
 - El entorno de despliegue de referencia es llama.cpp; no se documentan rutas oficiales para vLLM, TGI u otros servidores de inferencia de alto rendimiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF
+- Modelo en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF
 - Modelo base BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
 - Texto de la licencia en GitHub: https://github.com/OpenMDW/OpenMDW/blob/main/1.1/LICENSE.OpenMDW-1.1

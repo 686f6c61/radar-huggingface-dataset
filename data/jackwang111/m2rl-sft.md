@@ -23,7 +23,7 @@ Este lanzamiento es relevante porque ofrece a la comunidad de investigación un 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo no se detalla explícitamente en la información disponible. Los tags de HuggingFace indican que se trata de una variante de Qwen3, por lo que se puede asumir una arquitectura Transformer estándar, aunque no se confirma la longitud de contexto ni la configuración exacta de capas o cabezas de atención.
+La arquitectura del modelo no se detalla explícitamente en la información disponible. Los tags de Hugging Face indican que se trata de una variante de Qwen3, por lo que se puede asumir una arquitectura Transformer estándar, aunque no se confirma la longitud de contexto ni la configuración exacta de capas o cabezas de atención.
 
 El entrenamiento se enmarca en el método M2RL (Multi-Domain Reinforcement Learning). El checkpoint M2RL-SFT corresponde a la fase de fine-tuning supervisado, que se utiliza como inicialización del estudiante en la fase de destilación on-policy (OPD). En esa fase, el modelo consulta a varios servidores de modelos "profesor" para obtener log-probabilidades y destila conocimiento mediante un estimador de ventaja. No se han publicado en la información disponible los datos concretos del dataset de entrenamiento, el número de tokens utilizados ni si se aplicaron técnicas adicionales como RLHF o DPO.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Jackwang111/M2RL-SFT | 4.022 M | no disponible | no disponible | HuggingFace |
-| Qwen3-4B (base) | ~4.000 M | no disponible | no disponible | HuggingFace |
-| Llama 3.2 3B | 3.210 M | no disponible | no disponible | HuggingFace |
+| Jackwang111/M2RL-SFT | 4.022 M | no disponible | no disponible | Hugging Face |
+| Qwen3-4B (base) | ~4.000 M | no disponible | no disponible | Hugging Face |
+| Llama 3.2 3B | 3.210 M | no disponible | no disponible | Hugging Face |
 
 La comparativa se basa únicamente en parámetros y disponibilidad, ya que no se han publicado datos de contexto, licencia ni rendimiento para el modelo M2RL-SFT. No se dispone de información sobre modelos comparables en cuanto a la técnica de entrenamiento específica (RL multi-dominio).
 
@@ -76,7 +76,7 @@ La comparativa se basa únicamente en parámetros y disponibilidad, ya que no se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jackwang111/M2RL-SFT
+- Hugging Face: https://huggingface.co/Jackwang111/M2RL-SFT
 - Paper (arXiv): https://arxiv.org/abs/2602.12566
 - GitHub: https://github.com/Mosi-AI/M2RL
 - ModelScope: https://modelscope.cn/collections/whq1111/M2RL

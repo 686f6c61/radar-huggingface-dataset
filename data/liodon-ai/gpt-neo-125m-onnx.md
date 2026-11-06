@@ -71,8 +71,8 @@ La comparativa se basa en parametros y contexto conocidos. No se dispone de dato
 
 ## Enlaces
 
-- [HuggingFace - liodon-ai/gpt-neo-125m-ONNX](https://huggingface.co/liodon-ai/gpt-neo-125m-ONNX)
-- [HuggingFace - EleutherAI/gpt-neo-125m](https://huggingface.co/EleutherAI/gpt-neo-125m)
+- [Hugging Face - liodon-ai/gpt-neo-125m-ONNX](https://huggingface.co/liodon-ai/gpt-neo-125m-ONNX)
+- [Hugging Face - EleutherAI/gpt-neo-125m](https://huggingface.co/EleutherAI/gpt-neo-125m)
 - [Articulo de EleutherAI sobre GPT-Neo](https://www.eleuther.ai/artifacts/gpt-neo)
 - [Repositorio GitHub de GPT-Neo](https://github.com/EleutherAI/gpt-neo)
 - [Documentacion de Optimum para exportacion ONNX](https://github.com/huggingface/optimum)

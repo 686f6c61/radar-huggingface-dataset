@@ -4,7 +4,7 @@
 
 El modelo `theoriclabs/not-hotdog-cnn` es un clasificador binario de imágenes desarrollado por el equipo de theoriclabs, que distingue entre imágenes de hotdogs y de cualquier otra cosa. Se trata de una red neuronal convolucional (CNN) extremadamente pequeña, con aproximadamente 93 000 parámetros, entrenada sobre el dataset `theoriclabs/hot-dog-not-hot-dog`. Su propósito principal es servir como ejemplo didáctico de entrenamiento de un modelo de visión en la nube, utilizando una GPU NVIDIA A100 a través de la plataforma compute.cx / RunPod.
 
-El modelo resuelve un problema clásico de clasificación de imágenes en un escenario binario, inspirado en la conocida aplicación "Not Hotdog" de la serie *Silicon Valley*. Aunque su precisión final en test es de 0.576, apenas superior al azar (0.5), su relevancia radica en su simplicidad y en el flujo de trabajo reproducible que documenta: desde el entrenamiento en GPU hasta la subida automática a HuggingFace mediante scripts. Es un punto de partida útil para quienes quieren entender cómo construir y desplegar un clasificador CNN básico sin infraestructura compleja.
+El modelo resuelve un problema clásico de clasificación de imágenes en un escenario binario, inspirado en la conocida aplicación "Not Hotdog" de la serie *Silicon Valley*. Aunque su precisión final en test es de 0.576, apenas superior al azar (0.5), su relevancia radica en su simplicidad y en el flujo de trabajo reproducible que documenta: desde el entrenamiento en GPU hasta la subida automática a Hugging Face mediante scripts. Es un punto de partida útil para quienes quieren entender cómo construir y desplegar un clasificador CNN básico sin infraestructura compleja.
 
 La arquitectura es una CNN de tres bloques convolucionales seguidos de un *adaptive pooling* y una capa lineal. El modelo se distribuye como un archivo `model.pt` en formato PyTorch, con una licencia "other" no especificada en detalle. No se proporcionan datos sobre cuantización, idiomas soportados ni contexto, ya que se trata de un modelo de visión sin capacidades de texto.
 
@@ -25,7 +25,7 @@ La arquitectura es una CNN de tres bloques convolucionales seguidos de un *adapt
 
 La arquitectura es una red neuronal convolucional clásica para clasificación de imágenes. Consta de tres bloques convolucionales, cada uno probablemente con capas de convolución, activación y pooling, seguidos de un *adaptive average pooling* que reduce la salida a un tamaño fijo, y finalmente una capa lineal que produce la salida binaria (hotdog o no hotdog). El modelo se entrenó con función de pérdida de entropía cruzada (*cross-entropy*), sobre imágenes redimensionadas a 128×128 píxeles, durante 5 épocas.
 
-El entrenamiento se realizó en una GPU NVIDIA A100 de 80 GB PCIe, utilizando la infraestructura de compute.cx / RunPod. El dataset de entrenamiento es `theoriclabs/hot-dog-not-hot-dog`, del cual no se especifican el número de muestras ni la composición exacta. El proceso de entrenamiento se automatizó mediante un script `train.py` que, al finalizar, sube el modelo a HuggingFace usando credenciales almacenadas con `compute secrets set hf`. No se menciona el uso de técnicas como RLHF, DPO o aumentación de datos.
+El entrenamiento se realizó en una GPU NVIDIA A100 de 80 GB PCIe, utilizando la infraestructura de compute.cx / RunPod. El dataset de entrenamiento es `theoriclabs/hot-dog-not-hot-dog`, del cual no se especifican el número de muestras ni la composición exacta. El proceso de entrenamiento se automatizó mediante un script `train.py` que, al finalizar, sube el modelo a Hugging Face usando credenciales almacenadas con `compute secrets set hf`. No se menciona el uso de técnicas como RLHF, DPO o aumentación de datos.
 
 ## Capacidades
 
@@ -40,7 +40,7 @@ El entrenamiento se realizó en una GPU NVIDIA A100 de 80 GB PCIe, utilizando la
 
 - **Demostración educativa de CNN**: el modelo es ideal para cursos o tutoriales que expliquen el funcionamiento de las redes convolucionales, ya que su tamaño reducido permite inspeccionar cada capa y entender el flujo de datos.
 - **Prototipo de clasificador de alimentos**: puede servir como base para una aplicación que identifique si un plato contiene un hotdog, útil en contextos de demostración o humor (referencia a *Silicon Valley*).
-- **Ejemplo de entrenamiento en GPU en la nube**: el flujo de trabajo documentado (entrenamiento en A100, subida automática a HuggingFace) es un caso práctico para desarrolladores que quieran aprender a usar infraestructura cloud para ML.
+- **Ejemplo de entrenamiento en GPU en la nube**: el flujo de trabajo documentado (entrenamiento en A100, subida automática a Hugging Face) es un caso práctico para desarrolladores que quieran aprender a usar infraestructura cloud para ML.
 - **Prueba de concepto de despliegue en edge**: al ser tan pequeño, puede ejecutarse en dispositivos con recursos limitados (Raspberry Pi, móviles) para validar la viabilidad de un clasificador en tiempo real.
 - **Experimento de fine-tuning**: se puede tomar este modelo preentrenado y ajustarlo con un dataset más amplio o con otras categorías de comida, aunque su baja precisión inicial limita su utilidad como punto de partida.
 - **Integración en pipelines de visión por computador**: puede usarse como un componente rápido de preclasificación en un sistema mayor, por ejemplo, para filtrar imágenes antes de un análisis más complejo.
@@ -78,7 +78,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: [theoriclabs/not-hotdog-cnn](https://huggingface.co/theoriclabs/not-hotdog-cnn)
+- Modelo en Hugging Face: [theoriclabs/not-hotdog-cnn](https://huggingface.co/theoriclabs/not-hotdog-cnn)
 - Dataset de entrenamiento: [theoriclabs/hot-dog-not-hot-dog](https://huggingface.co/datasets/theoriclabs/hot-dog-not-hot-dog)
 - Guía de uso: [https://letsusecompute.com/posts/not-hotdog/](https://letsusecompute.com/posts/not-hotdog/)
 - Script de entrenamiento: [https://github.com/theoriclabs/letsusecompute-not-hotdog](https://github.com/theoriclabs/letsusecompute-not-hotdog)

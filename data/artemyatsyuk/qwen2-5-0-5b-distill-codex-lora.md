@@ -23,7 +23,7 @@ La relevancia es metodológica: sirve para estudiar cómo se comporta un adaptad
 | Tamaño del repositorio | 0,0 GB |
 | Dataset de entrenamiento | `Manusagents/GPT-5.5-Gemini-3.1-Pro-Grok-4-Claude-Fable-5-Mythos-5-Qwen-3.7-Max-and-more-Distillation-Dataset` |
 | Descargas / likes | 0 / 0 |
-| Fecha de publicación | 11 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 11 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Naturaleza | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|---|
-| qwen2.5-0.5b-distill-codex-lora (este) | 0,49B + 8,8M (LoRA) | 32.768 tokens en el base (entrenado a 512) | Adaptador LoRA sobre trazas destiladas, solo inglés | Apache 2.0 | HuggingFace, 0 descargas | No publicados |
-| Qwen2.5-0.5B-Instruct (base) | 0,49B | 32.768 tokens | Modelo instructivo completo | Apache 2.0 | HuggingFace, ampliamente usado | Publicados por el autor del base |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Modelo instructivo completo | Apache 2.0 | HuggingFace | Publicados por el autor del base |
-| SmolLM2-360M-Instruct | 0,36B | 8.192 tokens | Modelo instructivo completo | Apache 2.0 | HuggingFace | Publicados por el autor del base |
+| qwen2.5-0.5b-distill-codex-lora (este) | 0,49B + 8,8M (LoRA) | 32.768 tokens en el base (entrenado a 512) | Adaptador LoRA sobre trazas destiladas, solo inglés | Apache 2.0 | Hugging Face, 0 descargas | No publicados |
+| Qwen2.5-0.5B-Instruct (base) | 0,49B | 32.768 tokens | Modelo instructivo completo | Apache 2.0 | Hugging Face, ampliamente usado | Publicados por el autor del base |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Modelo instructivo completo | Apache 2.0 | Hugging Face | Publicados por el autor del base |
+| SmolLM2-360M-Instruct | 0,36B | 8.192 tokens | Modelo instructivo completo | Apache 2.0 | Hugging Face | Publicados por el autor del base |
 
 La comparación relevante no es de rendimiento (no hay benchmarks del adaptador), sino de naturaleza: frente a un modelo instructivo completo del mismo orden de tamaño, este adaptador aporta un estilo de respuesta influido por trazas destiladas de modelos frontera, a cambio de un alcance mucho menor (4.000 muestras, una época) y de un riesgo mayor de artefactos y alucinaciones.
 
@@ -100,7 +100,7 @@ La comparación relevante no es de rendimiento (no hay benchmarks del adaptador)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/artemyatsyuk/qwen2.5-0.5b-distill-codex-lora
+- Modelo en Hugging Face: https://huggingface.co/artemyatsyuk/qwen2.5-0.5b-distill-codex-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de destilación: https://huggingface.co/datasets/Manusagents/GPT-5.5-Gemini-3.1-Pro-Grok-4-Claude-Fable-5-Mythos-5-Qwen-3.7-Max-and-more-Distillation-Dataset
 - Búsqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos corresponden a la franquicia de videojuegos Call of Duty y no guardan relación con el modelo, su paper ni su repositorio.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-xlm-roberta-large-tass-finetuned-2026 es un modelo de clasificación de texto obtenido por ajuste fino (*fine-tuning*) supervisado de FacebookAI/xlm-roberta-large, publicado por el usuario MayorChris en HuggingFace. Se trata, por tanto, de un encoder transformer de 559.893.507 parámetros (unos 560 M) especializado en una tarea de clasificación concreta sobre un conjunto de datos que la model card no identifica: el autor no describe el corpus, las etiquetas ni el dominio de aplicación.
+xlm-roberta-large-tass-finetuned-2026 es un modelo de clasificación de texto obtenido por ajuste fino (*fine-tuning*) supervisado de FacebookAI/xlm-roberta-large, publicado por el usuario MayorChris en Hugging Face. Se trata, por tanto, de un encoder transformer de 559.893.507 parámetros (unos 560 M) especializado en una tarea de clasificación concreta sobre un conjunto de datos que la model card no identifica: el autor no describe el corpus, las etiquetas ni el dominio de aplicación.
 
 El modelo llega con resultados de evaluación declarados por el autor: pérdida de validación 1,0244, F1 macro 0,6807, F1 ponderado 0,6833 y accuracy 0,6847 sobre un conjunto de evaluación no especificado. Las curvas de entrenamiento muestran un sobreajuste claro a partir de la época 6 (la pérdida de validación sube de 0,72 a 1,02 mientras la de entrenamiento baja de 0,65 a 0,35), por lo que los pesos publicados corresponden a la última época y no al mejor punto de validación.
 
@@ -113,7 +113,7 @@ No se dispone de comparaciones de rendimiento entre estos modelos en la tarea co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MayorChris/xlm-roberta-large-tass-finetuned-2026
+- Modelo en Hugging Face: https://huggingface.co/MayorChris/xlm-roberta-large-tass-finetuned-2026
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large
 - Paper de XLM-RoBERTa (Conneau et al., 2019): https://arxiv.org/abs/1911.02116
 - Documentación de Transformers para clasificación de texto: https://huggingface.co/docs/transformers/tasks/sequence_classification

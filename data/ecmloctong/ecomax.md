@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `ecmloctong/ecomax` alojado en HuggingFace no contiene un modelo de inteligencia artificial. La model card publicada consiste en un articulo comercial en vietnamita sobre equipos de tratamiento de agua potable (filtros, columnas de materiales, sistemas de ablandamiento, membranas UF/RO/DI/EDI) con enlaces promocionales a una empresa de tratamiento de aguas. No se describe ninguna arquitectura, conjunto de datos, proceso de entrenamiento ni capacidad de inferencia.
+El repositorio `ecmloctong/ecomax` alojado en Hugging Face no contiene un modelo de inteligencia artificial. La model card publicada consiste en un articulo comercial en vietnamita sobre equipos de tratamiento de agua potable (filtros, columnas de materiales, sistemas de ablandamiento, membranas UF/RO/DI/EDI) con enlaces promocionales a una empresa de tratamiento de aguas. No se describe ninguna arquitectura, conjunto de datos, proceso de entrenamiento ni capacidad de inferencia.
 
-El identificador cumple el formato de HuggingFace, pero los metadatos disponibles (cero descargas, cero likes, sin pipeline declarado, sin licencia, sin idiomas) y el contenido del README indican que se trata de un repositorio usado como pagina de aterrizaje o spam SEO, no de un artefacto reutilizable para desarrolladores o investigadores.
+El identificador cumple el formato de Hugging Face, pero los metadatos disponibles (cero descargas, cero likes, sin pipeline declarado, sin licencia, sin idiomas) y el contenido del README indican que se trata de un repositorio usado como pagina de aterrizaje o spam SEO, no de un artefacto reutilizable para desarrolladores o investigadores.
 
 Por tanto, esta ficha documenta la ausencia de informacion tecnica verificable. Cualquier evaluacion de rendimiento, requisitos de hardware o comparativa con otros modelos carece de base y se marca explicitamente como no disponible.
 
@@ -72,7 +72,7 @@ No disponible. No existe categoria tecnica asignable al repositorio (no es un LL
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ecmloctong/ecomax
+- Repositorio en Hugging Face: https://huggingface.co/ecmloctong/ecomax
 - Enlace promocional incluido en el README (perfil de la empresa): https://www.are.na/xulynuoc-ecomax-63qqvwc5_zm/channels
 - Enlace promocional incluido en el README (banda): https://band.us/band/86982030
 - Enlace promocional incluido en el README (canal de YouTube): https://www.youtube.com/@xulynuocecomax

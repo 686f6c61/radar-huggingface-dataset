@@ -6,7 +6,7 @@
 
 No se trata de un modelo de lenguaje: no procesa texto ni genera lenguaje natural. Es un controlador neuronal que mapea observaciones de 51 dimensiones (estado de las articulaciones, sensores del robot) a acciones continuas de 14 dimensiones (pares o posiciones objetivo de las 14 articulaciones), aprendidas en el entorno de simulación `Link01Walk-v0` construido sobre MuJoCo. Su relevancia es acotada: sirve como referencia educativa y como punto de partida reproducible para experimentos de locomoción bípeda con PPO en entornos ligeros.
 
-El entrenamiento se completó en 2.002.944 pasos, con un tiempo declarado de 16,41 minutos y 12 entornos paralelos, lo que indica un experimento de pequeña escala orientado a demostración más que a despliegue en producción. El repositorio ocupa 0.0 GB según la ficha de HuggingFace, coherente con una política de red pequeña (MLP) más los ficheros de normalización de observaciones.
+El entrenamiento se completó en 2.002.944 pasos, con un tiempo declarado de 16,41 minutos y 12 entornos paralelos, lo que indica un experimento de pequeña escala orientado a demostración más que a despliegue en producción. El repositorio ocupa 0.0 GB según la ficha de Hugging Face, coherente con una política de red pequeña (MLP) más los ficheros de normalización de observaciones.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ No se han publicado resultados comparativos con otros modelos o políticas en la
 
 | Modelo | Tipo | Entorno | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-lucasbrain-v2-link01-walk-ppo | PPO (MLP) | Link01Walk-v0 (MuJoCo) | no disponible (MLP 64/256) | no aplica | no disponible | HuggingFace |
+| connectailab-rl-lucasbrain-v2-link01-walk-ppo | PPO (MLP) | Link01Walk-v0 (MuJoCo) | no disponible (MLP 64/256) | no aplica | no disponible | Hugging Face |
 | Políticas PPO de referencia de Stable-Baselines3 (p. ej. HalfCheetah, Walker2d) | PPO (MLP) | Gymnasium MuJoCo | del orden de decenas de miles | no aplica | MIT (código SB3) | Repositorio SB3 |
 | Políticas de locomotion de MuJoCo Playground / Brax | PPO / otros | MuJoCo Playground | variable | no aplica | Apache 2.0 (mayoría) | Repositorios oficiales |
 
@@ -96,7 +96,7 @@ La comparación es cualitativa: no se dispone de resultados de benchmarks comune
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v2-link01-walk-ppo
+- Modelo en Hugging Face: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v2-link01-walk-ppo
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - MuJoCo: https://mujoco.org/
 - Contacto del autor: lucaskim72@gmail.com

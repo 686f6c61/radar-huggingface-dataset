@@ -33,7 +33,7 @@ El entrenamiento usa el dataset MusicEval (BAAI/MusicEval), con 5 folds de valid
 - Evaluación automática de sistemas de generación musical (TTM) para benchmarking reproducible.
 - Procesamiento de audio mono a 24 kHz con ventana máxima de 10 segundos por clip.
 - Extracción de representaciones musicales mediante el encoder MuQ subyacente.
-- Clasificación/regresión de audio (pipeline `audio-classification` en HuggingFace).
+- Clasificación/regresión de audio (pipeline `audio-classification` en Hugging Face).
 - No soporta tool calling ni function calling.
 - No soporta agentes ni razonamiento multi-paso.
 - No es multilingüe en sentido textual; opera sobre audio.
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Tipo | Parametros | Contexto de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MuQ-Eval-A1 | Evaluador de calidad musical (encoder congelado + MLP) | no disponible | audio 10 s a 24 kHz | MIT | HuggingFace |
-| MuQ-large-msd-iter | Encoder musical base | no disponible | audio | no disponible en la información | HuggingFace |
+| MuQ-Eval-A1 | Evaluador de calidad musical (encoder congelado + MLP) | no disponible | audio 10 s a 24 kHz | MIT | Hugging Face |
+| MuQ-large-msd-iter | Encoder musical base | no disponible | audio | no disponible en la información | Hugging Face |
 | Alternativas de MOS prediction musical | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable.
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhudi2825/MuQ-Eval-A1
+- Modelo en Hugging Face: https://huggingface.co/zhudi2825/MuQ-Eval-A1
 - Encoder base MuQ: https://huggingface.co/OpenMuQ/MuQ-large-msd-iter
 - Dataset MusicEval: https://huggingface.co/datasets/BAAI/MusicEval
 - Paper citado: arXiv:2603.22677 (MuQ-Eval: An Open-Source Per-Sample Quality Metric for AI Music Generation Evaluation)

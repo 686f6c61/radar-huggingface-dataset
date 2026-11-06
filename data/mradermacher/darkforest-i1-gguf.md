@@ -37,7 +37,7 @@ Las capacidades que se listan a continuacion proceden exclusivamente de las etiq
 - Generacion de texto conversacional: el repositorio se etiqueta como `conversational` y `text-generation`, por lo que esta preparado para dialogos multi-turno con plantilla de chat.
 - Ciberseguridad defensiva: las etiquetas `cybersecurity` y `defensive-security` sugieren un ajuste orientado a analisis de amenazas, triaje de alertas o explicacion de vulnerabilidades, presumiblemente en tareas de defensa y no de ataque.
 - Modelo fusionado: al ser un `merged-model`, cabe esperar capacidades heredadas de sus modelos de origen, pero no se especifica cuales son.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse detras de infraestructura de inferencia compatible con HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse detras de infraestructura de inferencia compatible con Hugging Face.
 - Soporte de tool calling: no disponible.
 - Capacidades de agente o razonamiento multi-paso: no disponible.
 - Multilinguismo: no; el unico idioma declarado es el ingles.
@@ -52,7 +52,7 @@ Las capacidades que se listan a continuacion proceden exclusivamente de las etiq
 - Chatbot interno de concienciacion en seguridad: asistente conversacional en ingles para responder dudas de empleados sobre phishing, contrasenas o gestion de incidentes, ejecutado en Ollama sobre hardware de oficina con cuantizacion Q3_K_M o Q4_K_S.
 - Analisis de registros y post-mortems: resumen de extractos de logs y redaccion de informes de incidentes a partir de notas del equipo, aprovechando que el modelo cabe en una GPU de 24 GB en cuantizaciones de 4 bits.
 - Prototipado e investigacion en seguridad defensiva: al distribuirse como checkpoint de investigacion privada, sirve para experimentos academicos comparativos sobre cuantizacion (por ejemplo, medir la degradacion de Q2_K frente a Q5_K_M sobre tareas del dominio) usando la matriz de importancia incluida.
-- Servicio de inferencia propio: despliegue detras de un endpoint compatible con HuggingFace para aplicaciones internas que requieran procesamiento de texto en ingles con requisitos estrictos de no exfiltracion de datos.
+- Servicio de inferencia propio: despliegue detras de un endpoint compatible con Hugging Face para aplicaciones internas que requieran procesamiento de texto en ingles con requisitos estrictos de no exfiltracion de datos.
 
 ## Benchmarks y rendimiento
 
@@ -75,7 +75,7 @@ No se dispone de datos en la informacion proporcionada para establecer una compa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Darkforest-i1-GGUF (mradermacher) | 30,5B | no disponible | `other` / `private-research-checkpoint` | GGUF en HuggingFace; 0 descargas en el momento de la consulta |
+| Darkforest-i1-GGUF (mradermacher) | 30,5B | no disponible | `other` / `private-research-checkpoint` | GGUF en Hugging Face; 0 descargas en el momento de la consulta |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 Para contextualizar sin inventar cifras: el segmento de modelos densos de ~30B cuantizados a GGUF lo ocupan habitualmente familias abiertas de pesos publicos con licencias permisivas, frente a las cuales este checkpoint parte en desventaja en trazabilidad (no hay model card tecnica del modelo base) y en claridad legal. Cualquier afirmacion de superioridad o inferioridad exigiria una evaluacion propia, que este repositorio no aporta.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-rectuna-qwen2.5-1.5b es un adaptador LoRA publicado por el usuario heydothan en HuggingFace, construido sobre el modelo base unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit, que a su vez es una versión cuantizada a 4 bits del Qwen2.5-1.5B-Instruct de Alibaba. No se trata por tanto de un modelo completo con pesos propios, sino de un ajuste fino ligero (adaptador PEFT) que debe cargarse junto al modelo base para poder inferir. El repositorio ocupa 0,1 GB y fue creado el 1 de octubre de 2026, sin descargas ni interacciones registradas en el momento de redactar esta ficha.
+rectuna-qwen2.5-1.5b es un adaptador LoRA publicado por el usuario heydothan en Hugging Face, construido sobre el modelo base unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit, que a su vez es una versión cuantizada a 4 bits del Qwen2.5-1.5B-Instruct de Alibaba. No se trata por tanto de un modelo completo con pesos propios, sino de un ajuste fino ligero (adaptador PEFT) que debe cargarse junto al modelo base para poder inferir. El repositorio ocupa 0,1 GB y fue creado el 1 de octubre de 2026, sin descargas ni interacciones registradas en el momento de redactar esta ficha.
 
 El modelo hereda las características del Qwen2.5-1.5B-Instruct: un transformer denso decoder-only de aproximadamente 1.540 millones de parámetros, con 28 capas y una ventana de contexto de 32.768 tokens. La familia Qwen2.5 fue preentrenada sobre hasta 18 billones de tokens según el informe técnico de Qwen, frente a los 7 billones de Qwen2, e incluye variantes base e instruct en siete tamaños (0,5B, 1,5B, 3B, 7B, 14B, 32B y 72B). El interés de este adaptador concreto reside en su tamaño reducido, que permite ejecutarlo en hardware de gama baja, pero su utilidad real está condicionada por la ausencia total de documentación sobre el dataset, el procedimiento y el objetivo del ajuste.
 
-La model card del autor es la plantilla por defecto de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) figuran como "More Information Needed". Esto significa que cualquier evaluación seria del adaptador exige reproducir su carga y probarlo empíricamente, ya que no existe información verificable sobre qué mejora aporta respecto al modelo base.
+La model card del autor es la plantilla por defecto de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) figuran como "More Information Needed". Esto significa que cualquier evaluación seria del adaptador exige reproducir su carga y probarlo empíricamente, ya que no existe información verificable sobre qué mejora aporta respecto al modelo base.
 
 ## Especificaciones técnicas
 
@@ -77,11 +77,11 @@ La comparación se establece sobre las especificaciones del modelo base, ya que 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rectuna-qwen2.5-1.5b (adaptador) | ~1,54B (modelo base) | 32.768 tokens | No disponible | HuggingFace, adaptador LoRA |
-| Qwen2.5-1.5B-Instruct | ~1,54B | 32.768 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF comunitarios |
-| Llama-3.2-1B-Instruct | ~1,23B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, safetensors y GGUF |
-| SmolLM2-1.7B-Instruct | ~1,7B | 8.192 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Gemma-2-2B-it | ~2,6B | 8.192 tokens | Gemma Terms of Use | HuggingFace, safetensors y GGUF |
+| rectuna-qwen2.5-1.5b (adaptador) | ~1,54B (modelo base) | 32.768 tokens | No disponible | Hugging Face, adaptador LoRA |
+| Qwen2.5-1.5B-Instruct | ~1,54B | 32.768 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF comunitarios |
+| Llama-3.2-1B-Instruct | ~1,23B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, safetensors y GGUF |
+| SmolLM2-1.7B-Instruct | ~1,7B | 8.192 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Gemma-2-2B-it | ~2,6B | 8.192 tokens | Gemma Terms of Use | Hugging Face, safetensors y GGUF |
 
 En términos nominales, la ventaja de Qwen2.5-1.5B frente a SmolLM2 y Gemma-2 es la ventana de contexto de 32k, cuatro veces mayor. Frente a Llama-3.2-1B pierde en contexto (32k frente a 128k) pero parte de una licencia Apache 2.0 más permisiva que la licencia comunitaria de Meta. No hay datos de rendimiento comparado disponibles para el adaptador rectuna, por lo que no es posible afirmar que supere al modelo base en ninguna tarea.
 

@@ -89,7 +89,7 @@ La conclusión del autor es que, a esta escala pequeña, la acotación del poten
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/dimitarpg13/semsimula-fock-parflm-depthcond-vtheta)
+- [Página del modelo en Hugging Face](https://huggingface.co/dimitarpg13/semsimula-fock-parflm-depthcond-vtheta)
 - [Hermano OpenWebText-scale](https://huggingface.co/dimitarpg13/semsimula-fock-parflm-depthcond-vtheta-openwebtext)
 - [Fock-PARFLM v2.1 base (MLP)](https://huggingface.co/dimitarpg13/semsimula-fock-parflm)
 - [Fock-PARFLM SQ3 structured](https://huggingface.co/dimitarpg13/semsimula-fock-parflm-structured-vtheta)

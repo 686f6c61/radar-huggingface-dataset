@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`crystallcl/dissertation-contrastive` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de una arquitectura Perceiver orientada a aprendizaje contrastivo. Lo publica el usuario `crystallcl` y no se presenta como un modelo preentrenado, sino como un artefacto de código con un checkpoint de inicialización (`model.safetensors`) destinado a revisiones de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala. El propio autor indica explícitamente que no reclama ninguna puntuación de benchmark.
+`crystallcl/dissertation-contrastive` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de una arquitectura Perceiver orientada a aprendizaje contrastivo. Lo publica el usuario `crystallcl` y no se presenta como un modelo preentrenado, sino como un artefacto de código con un checkpoint de inicialización (`model.safetensors`) destinado a revisiones de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala. El propio autor indica explícitamente que no reclama ninguna puntuación de benchmark.
 
 El dato más relevante para cualquier evaluador es la escala real: el checkpoint contiene 24.832 parámetros totales, lo que equivale a unos 0,1 MB en fp32 y a un repositorio de 0,0 GB. Esa cifra es incompatible con una configuración "base" de Perceiver al uso (que suele manejarse en decenas de millones de parámetros), por lo que debe interpretarse como una configuración reducida de juguete, no como un modelo con capacidad representacional útil. El repositorio no incluye pesos entrenados, ni tokenizador, ni pipeline declarado.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| crystallcl/dissertation-contrastive | 24.832 | No disponible | Sin benchmarks (checkpoint de inicialización) | BSD-3-Clause | HuggingFace, 0 descargas |
+| crystallcl/dissertation-contrastive | 24.832 | No disponible | Sin benchmarks (checkpoint de inicialización) | BSD-3-Clause | Hugging Face, 0 descargas |
 | Perceiver IO (DeepMind) | No disponible en la información proporcionada | No disponible | Resultados publicados en el paper original | No disponible en la información proporcionada | Referencia académica y pesos publicados por DeepMind |
 | CLIP (OpenAI) | No disponible en la información proporcionada | No disponible | Métricas de zero-shot en ImageNet reportadas en el paper | No disponible en la información proporcionada | Pesos públicos |
 
@@ -86,5 +86,5 @@ La comparación relevante no es de rendimiento, sino de naturaleza del artefacto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/crystallcl/dissertation-contrastive
+- Hugging Face: https://huggingface.co/crystallcl/dissertation-contrastive
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

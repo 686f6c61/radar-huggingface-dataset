@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Safronic/novashop-support-lora es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace y pensado para el ajuste fino del modelo unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit, una versión de Meta Llama 3.1 8B Instruct cuantizada a 4 bits con bitsandbytes y distribuida por Unsloth. No se trata por tanto de un modelo completo, sino de un conjunto de pesos de adaptador que deben cargarse junto al modelo base mediante la librería PEFT (versión 0.20.0 declarada en la model card). El repositorio ocupa 0,2 GB, un tamaño coherente con un adaptador de bajo rango y no con un modelo de 8.000 millones de parámetros.
+Safronic/novashop-support-lora es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face y pensado para el ajuste fino del modelo unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit, una versión de Meta Llama 3.1 8B Instruct cuantizada a 4 bits con bitsandbytes y distribuida por Unsloth. No se trata por tanto de un modelo completo, sino de un conjunto de pesos de adaptador que deben cargarse junto al modelo base mediante la librería PEFT (versión 0.20.0 declarada en la model card). El repositorio ocupa 0,2 GB, un tamaño coherente con un adaptador de bajo rango y no con un modelo de 8.000 millones de parámetros.
 
-El nombre del adaptador y la etiqueta `conversational` sugieren un ajuste orientado a soporte al cliente en un comercio electrónico denominado "NovaShop", pero la model card publicada es la plantilla por defecto de HuggingFace y no contiene ninguna sección completada: no hay descripción, datos de entrenamiento, hiperparámetros, evaluación ni licencia. Tampoco se declaran idiomas ni se han publicado resultados de benchmarks.
+El nombre del adaptador y la etiqueta `conversational` sugieren un ajuste orientado a soporte al cliente en un comercio electrónico denominado "NovaShop", pero la model card publicada es la plantilla por defecto de Hugging Face y no contiene ninguna sección completada: no hay descripción, datos de entrenamiento, hiperparámetros, evaluación ni licencia. Tampoco se declaran idiomas ni se han publicado resultados de benchmarks.
 
 Su relevancia actual es limitada y fundamentalmente metodológica: sirve como ejemplo reproducible de un flujo de trabajo SFT con Unsloth + TRL + PEFT sobre un modelo de 8B en 4 bits, ejecutable en hardware de consumo. Quien quiera evaluarlo deberá inspeccionar el adaptador y el modelo base por su cuenta, ya que la documentación no permite determinar la calidad, el dominio real de ajuste ni las condiciones de uso.
 
@@ -81,7 +81,7 @@ Existen al menos tres repositorios con la misma denominación "novashop-support-
 
 ## Limitaciones y advertencias
 
-- Model card vacía: es la plantilla por defecto de HuggingFace, sin descripción, datos de entrenamiento, evaluación ni condiciones de uso. No hay información suficiente para auditar el modelo.
+- Model card vacía: es la plantilla por defecto de Hugging Face, sin descripción, datos de entrenamiento, evaluación ni condiciones de uso. No hay información suficiente para auditar el modelo.
 - Licencia no declarada: al no especificarse licencia para el adaptador, su uso comercial es jurídicamente incierto. El modelo base se rige por la Llama 3.1 Community License, cuyos términos (incluida la cláusula de nomenclatura para productos derivados) siguen aplicándose.
 - Sin resultados de evaluación: no hay evidencia publicada de calidad, ni de si el ajuste mejora o degrada las capacidades del modelo base. El ajuste fino con SFT sobre dominios estrechos puede provocar olvido catastrófico en tareas generales.
 - Riesgo de alucinación: inherente a los modelos de 8B, especialmente en dominios factuales como precios, plazos de entrega o condiciones legales. No se ha documentado ningún mecanismo de mitigación.
@@ -94,8 +94,8 @@ Existen al menos tres repositorios con la misma denominación "novashop-support-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Safronic/novashop-support-lora
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/Safronic/novashop-support-lora
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit
 - Modelo oficial de referencia: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Repositorio con el mismo nombre (GulnarMammadzad): https://huggingface.co/GulnarMammadzad/novashop-support-lora
 - Repositorio con el mismo nombre (amina0204): https://huggingface.co/amina0204/novashop-support-lora/tree/main

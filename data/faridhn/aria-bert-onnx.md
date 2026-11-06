@@ -79,7 +79,7 @@ Estos modelos están específicamente entrenados para similitud de oraciones, po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/faridhn/aria-bert-onnx
+- Repositorio Hugging Face: https://huggingface.co/faridhn/aria-bert-onnx
 - Modelo original: https://huggingface.co/ViraIntelligentDataMining/AriaBERT
 - Paper de AriaBERT: https://www.researchsquare.com/article/rs-3558473/v1
 - Documentación de Optimum: https://huggingface.co/docs/optimum

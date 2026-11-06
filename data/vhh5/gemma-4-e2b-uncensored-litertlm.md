@@ -87,7 +87,7 @@ El modelo oficial de Google ofrece el bundle móvil de 2,41 GB con compresión P
 
 ## Enlaces
 
-- [HuggingFace: Vhh5/gemma-4-e2b-uncensored-litertlm](https://huggingface.co/Vhh5/gemma-4-e2b-uncensored-litertlm)
+- [Hugging Face: Vhh5/gemma-4-e2b-uncensored-litertlm](https://huggingface.co/Vhh5/gemma-4-e2b-uncensored-litertlm)
 - [Modelo base: prithivMLmods/gemma-4-E2B-it-Uncensored-MAX](https://huggingface.co/prithivMLmods/gemma-4-E2B-it-Uncensored-MAX)
 - [LiteRT-LM (Google AI Edge)](https://github.com/google-ai-edge/LiteRT-LM)
 - [Lethflow (autor del empaquetado)](https://lethflow.com)

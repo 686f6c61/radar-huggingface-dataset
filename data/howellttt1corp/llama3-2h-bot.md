@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama3.2H-bot es un repositorio publicado en HuggingFace por el usuario HowellTTT1Corp que declara como modelo base `meta-llama/Llama-3.2-1B-Instruct`, el modelo instructivo de 1.240 millones de parametros que Meta publico en septiembre de 2024 dentro de la familia Llama 3.2. El repositorio no contiene pesos propios entrenados ni una model card tecnica: la descripcion se limita a indicar un enlace de descarga al fichero GGUF BF16 alojado en el repositorio de Unsloth y a reconocer que el autor no ha conseguido subir el fichero al repositorio. Se trata, por tanto, de un contenedor practicamente vacio o de un punto de distribucion incompleto, no de un fine-tuning verificable.
+Llama3.2H-bot es un repositorio publicado en Hugging Face por el usuario HowellTTT1Corp que declara como modelo base `meta-llama/Llama-3.2-1B-Instruct`, el modelo instructivo de 1.240 millones de parametros que Meta publico en septiembre de 2024 dentro de la familia Llama 3.2. El repositorio no contiene pesos propios entrenados ni una model card tecnica: la descripcion se limita a indicar un enlace de descarga al fichero GGUF BF16 alojado en el repositorio de Unsloth y a reconocer que el autor no ha conseguido subir el fichero al repositorio. Se trata, por tanto, de un contenedor practicamente vacio o de un punto de distribucion incompleto, no de un fine-tuning verificable.
 
 La relevancia de esta ficha es limitada y fundamentalmente negativa: sirve como ejemplo de repositorio que hereda la licencia Llama 3.2 y la etiqueta de modelo base sin aportar artefactos, metricas ni datos de entrenamiento. Cualquier evaluacion de capacidades debe remitirse al modelo original de Meta, ya que no hay evidencia de que se haya modificado nada.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad de pesos |
 |---|---|---|---|---|
 | Llama3.2H-bot (este repositorio) | 1.240 M (declarados) | no disponible | llama3.2 | No hay pesos subidos |
-| meta-llama/Llama-3.2-1B-Instruct | 1.240 M | 131.072 tokens | llama3.2 | Completa en HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1.540 M | 32.768 tokens | Apache 2.0 | Completa en HuggingFace |
-| Gemma-2-2B-it | 2.610 M | 8.192 tokens | Gemma Terms | Completa en HuggingFace |
+| meta-llama/Llama-3.2-1B-Instruct | 1.240 M | 131.072 tokens | llama3.2 | Completa en Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1.540 M | 32.768 tokens | Apache 2.0 | Completa en Hugging Face |
+| Gemma-2-2B-it | 2.610 M | 8.192 tokens | Gemma Terms | Completa en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -76,11 +76,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - El modelo base de 1B presenta una tasa elevada de alucinacion en tareas de conocimiento factual y razonamiento multi-paso.
 - Capacidades multilingues limitadas fuera de los ocho idiomas oficiales de Llama 3.2.
 - Sin garantias de mantenimiento, actualizacion ni soporte por parte del autor.
-- El campo "pipeline" no esta definido, lo que impide el uso directo con la Inference API de HuggingFace.
+- El campo "pipeline" no esta definido, lo que impide el uso directo con la Inference API de Hugging Face.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HowellTTT1Corp/Llama3.2H-bot
+- Repositorio Hugging Face: https://huggingface.co/HowellTTT1Corp/Llama3.2H-bot
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - GGUF enlazado en la model card: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-GGUF
 - Fichero BF16 referenciado: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-BF16.gguf

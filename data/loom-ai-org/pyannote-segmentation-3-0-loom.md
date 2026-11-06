@@ -4,7 +4,7 @@
 
 Pyannote-segmentation-3.0-loom es una version cuantizada en formato GGUF del modelo pyannote/segmentation-3.0, publicada por el usuario loom-ai-org dentro del ecosistema de runtime "loom-py-rt". El modelo base, desarrollado por el proyecto pyannote (Herault y colaboradores), es una red neuronal de segmentacion de audio pensada para tareas de deteccion de actividad de voz (VAD), segmentacion de hablantes y deteccion de habla solapada. Esta variante concreta empaqueta esos pesos en un contenedor GGUF para su ejecucion con la libreria loom-py-rt, con una licencia MIT.
 
-El modelo es extremadamente compacto: 1.489.169 parametros totales segun los metadatos de safetensors, lo que lo situa en el rango de los modelos de segmentacion ligeros aptos para ejecucion en CPU o en GPU de gama baja. La tarea declarada en la ficha de HuggingFace es voice-activity-detection, y entre sus etiquetas aparecen audio-classification y voice-activity-detection, ademas de la referencia explicita al modelo base pyannote/segmentation-3.0.
+El modelo es extremadamente compacto: 1.489.169 parametros totales segun los metadatos de safetensors, lo que lo situa en el rango de los modelos de segmentacion ligeros aptos para ejecucion en CPU o en GPU de gama baja. La tarea declarada en la ficha de Hugging Face es voice-activity-detection, y entre sus etiquetas aparecen audio-classification y voice-activity-detection, ademas de la referencia explicita al modelo base pyannote/segmentation-3.0.
 
 La relevancia de esta publicacion es practica: ofrece una conversion GGUF de un modelo de diarizacion/VAD de referencia, lo que facilita su integracion en pipelines de procesamiento de audio que ya trabajen con runtimes GGUF en lugar de con PyTorch. No obstante, el repositorio presenta cero descargas y cero likes en el momento de la consulta, y el acceso esta restringido (gated), por lo que no puede considerarse un artefacto ampliamente validado por la comunidad.
 
@@ -23,7 +23,7 @@ La relevancia de esta publicacion es practica: ofrece una conversion GGUF de un 
 | Libreria | loom-py-rt |
 | Pipeline declarado | voice-activity-detection |
 | Modelo base | pyannote/segmentation-3.0 |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pyannote-segmentation-3.0-loom | 1.489.169 | no disponible | no disponible | MIT | gated en HuggingFace |
-| pyannote/segmentation-3.0 (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace (referenciado como base) |
+| pyannote-segmentation-3.0-loom | 1.489.169 | no disponible | no disponible | MIT | gated en Hugging Face |
+| pyannote/segmentation-3.0 (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face (referenciado como base) |
 | Otras alternativas de VAD (por ejemplo, Silero VAD) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para una comparativa numerica fiable. La unica relacion verificable es la dependencia directa respecto a pyannote/segmentation-3.0, del cual este repositorio es una conversion cuantizada. Cualquier comparacion de rendimiento, contexto o licencia con terceros modelos requeriria datos que no se han proporcionado.
@@ -82,13 +82,13 @@ No se dispone de datos suficientes para una comparativa numerica fiable. La unic
 - Sesgos conocidos: no disponibles. Al ser un modelo derivado de un sistema de segmentacion de audio, podria heredar los sesgos del corpus de entrenamiento original, pero no se documentan en la ficha.
 - Riesgo de alucinacion: no aplica en el sentido generativo; en segmentacion de audio el riesgo equivalente es la clasificacion erronea de tramos (falsos positivos o negativos de voz), sin tasas conocidas.
 - Limitaciones de contexto o idioma: no se especifica la ventana temporal de analisis ni los idiomas o acentos cubiertos.
-- Restricciones de licencia: la licencia declarada es MIT, lo que en principio permite uso comercial, pero el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en HuggingFace; conviene verificar las condiciones del modelo base pyannote/segmentation-3.0, que no se detallan aqui.
+- Restricciones de licencia: la licencia declarada es MIT, lo que en principio permite uso comercial, pero el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face; conviene verificar las condiciones del modelo base pyannote/segmentation-3.0, que no se detallan aqui.
 - Trazabilidad limitada: el repositorio registra cero descargas y cero likes, no incluye tarjeta de modelo con datos de evaluacion y no detalla el tipo exacto de cuantizacion GGUF.
 - Riesgo de conversion: al tratarse de una conversion cuantizada por un tercero, no hay garantia documentada de que el comportamiento coincida con el modelo base original.
 - Uso en produccion: la ausencia de benchmarks, de pruebas de reproducibilidad y de documentacion sobre el proceso de cuantizacion desaconseja su adopcion directa en entornos criticos sin una validacion propia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/pyannote-segmentation-3.0-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/pyannote-segmentation-3.0-loom
 - Modelo base referenciado: pyannote/segmentation-3.0 (referencia indicada en las etiquetas del repositorio, sin URL directa en la informacion proporcionada)
 - Resultados de busqueda web: no aportan enlaces relevantes sobre este modelo; las coincidencias corresponden a servicios y marcas homonimas (grabador de pantalla Loom y marca de ropa Loom), sin relacion tecnica con el artefacto descrito.

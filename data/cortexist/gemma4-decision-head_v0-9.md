@@ -91,7 +91,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cortexist/gemma4-decision-head_v0.9
+- Hugging Face: https://huggingface.co/cortexist/gemma4-decision-head_v0.9
 - Documentación de la API/formatos (referida en la card): `little-gemma/docs/decision-head.md` (dentro del repositorio del motor `voice-trio/little-gemma`; no se proporciona URL completa)
 - Repositorio/rama de motor referenciada: `voice-trio/little-gemma`, topic `experiment/decision-head-c-20260923` (sin URL completa en la informacion disponible)
 - Scripts de validación referenciados: `scripts/validate.py`, `scripts/check_gguf_reader.py`

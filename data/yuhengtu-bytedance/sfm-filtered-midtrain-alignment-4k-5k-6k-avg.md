@@ -4,13 +4,13 @@
 
 El modelo `yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg` es un merge de tres checkpoints del mismo modelo base, `geodesic-research/sfm_filtered_midtrain_alignment_upsampled_base`, creado mediante la herramienta mergekit con el método linear. El autor, yuhengtu-bytedance, ha combinado los pesos de los pasos de entrenamiento global 4000, 5000 y 6000 de dicho modelo base, normalizándolos y promediándolos. Este modelo forma parte de una línea de investigación sobre cómo los datos de preentrenamiento influyen en los priors de alineación de los modelos de lenguaje, como se describe en el paper "Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment".
 
-Con 6.856.253.440 parámetros (aproximadamente 6.9B), el modelo está diseñado para tareas de generación de texto. La arquitectura subyacente no está explícitamente documentada en la ficha, aunque la etiqueta `gpt_neox` en HuggingFace sugiere que se basa en la arquitectura GPT-NeoX. No se especifican la longitud de contexto, los idiomas soportados ni la licencia, lo que limita su uso directo en producción sin una evaluación adicional. Su relevancia radica en ser un artefacto de investigación para estudiar el efecto del promediado de checkpoints intermedios en el comportamiento del modelo, más que un modelo listo para aplicaciones comerciales.
+Con 6.856.253.440 parámetros (aproximadamente 6.9B), el modelo está diseñado para tareas de generación de texto. La arquitectura subyacente no está explícitamente documentada en la ficha, aunque la etiqueta `gpt_neox` en Hugging Face sugiere que se basa en la arquitectura GPT-NeoX. No se especifican la longitud de contexto, los idiomas soportados ni la licencia, lo que limita su uso directo en producción sin una evaluación adicional. Su relevancia radica en ser un artefacto de investigación para estudiar el efecto del promediado de checkpoints intermedios en el comportamiento del modelo, más que un modelo listo para aplicaciones comerciales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (segun etiqueta de HuggingFace, no confirmado oficialmente) |
+| Arquitectura | GPT-NeoX (segun etiqueta de Hugging Face, no confirmado oficialmente) |
 | Parametros totales | 6.856.253.440 (6.9B) |
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | No disponible |
@@ -56,7 +56,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg](https://huggingface.co/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg)
+- [Hugging Face - yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg](https://huggingface.co/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg)
 - [Modelo base - geodesic-research/sfm_filtered_midtrain_alignment_upsampled_base](https://huggingface.co/geodesic-research/sfm_filtered_midtrain_alignment_upsampled_base)
 - [Modelo instruct relacionado - geodesic-research/sfm_filtered_midtrain_alignment_upsampled_instruct](https://huggingface.co/geodesic-research/sfm_filtered_midtrain_alignment_upsampled_instruct)
 - [Paper: Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment](https://huggingface.co/geodesic-research/sfm_filtered_midtrain_alignment_upsampled_instruct) (enlace indirecto, no se ha encontrado el DOI)

@@ -4,7 +4,7 @@
 
 El modelo `adipotnis/pi05-libero-full-repro` es un checkpoint de π₀.₅ (Pi0.5), un modelo de visión-lenguaje-acción (VLA) desarrollado por Physical Intelligence y adaptado por la comunidad LeRobot. Este modelo está específicamente entrenado y evaluado en el benchmark LIBERO, un conjunto de tareas de manipulación robótica de largo horizonte en entornos simulados. Su objetivo es ejecutar tareas complejas que requieren razonamiento espacial, planificación multi-paso y generalización a escenarios no vistos.
 
-La relevancia de este modelo radica en que π₀.₅ es una versión mejorada de π₀, con mejor generalización a entornos del mundo real gracias a su co-entrenamiento con demostraciones robóticas y datos multimodales a gran escala. El checkpoint presentado aquí es una reproducción completa del entrenamiento en LIBERO, lo que permite a investigadores y desarrolladores evaluar el rendimiento del modelo en tareas estandarizadas de robótica. El repositorio tiene un tamaño de 12,4 GB y está sujeto a acceso restringido (gated) en HuggingFace, con licencia Apache-2.0.
+La relevancia de este modelo radica en que π₀.₅ es una versión mejorada de π₀, con mejor generalización a entornos del mundo real gracias a su co-entrenamiento con demostraciones robóticas y datos multimodales a gran escala. El checkpoint presentado aquí es una reproducción completa del entrenamiento en LIBERO, lo que permite a investigadores y desarrolladores evaluar el rendimiento del modelo en tareas estandarizadas de robótica. El repositorio tiene un tamaño de 12,4 GB y está sujeto a acceso restringido (gated) en Hugging Face, con licencia Apache-2.0.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ El checkpoint `pi05-libero-full-repro` es una reproducción del entrenamiento co
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo está entrenado y evaluado en LIBERO, pero no se proporcionan métricas concretas (éxito por tarea, etc.) en la ficha de HuggingFace ni en los resultados de búsqueda. Se recomienda consultar el repositorio de LeRobot o el paper de π₀.₅ para obtener datos de rendimiento.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo está entrenado y evaluado en LIBERO, pero no se proporcionan métricas concretas (éxito por tarea, etc.) en la ficha de Hugging Face ni en los resultados de búsqueda. Se recomienda consultar el repositorio de LeRobot o el paper de π₀.₅ para obtener datos de rendimiento.
 
 ## Requisitos de hardware
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Tipo | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| π₀.₅ (este checkpoint) | VLA con flow-matching | LIBERO | Apache-2.0 | Gated en HuggingFace |
+| π₀.₅ (este checkpoint) | VLA con flow-matching | LIBERO | Apache-2.0 | Gated en Hugging Face |
 | π₀ (original) | VLA con flow-matching | Datos robóticos y multimodales | Apache-2.0 | Open source en OpenPI |
 | π₀-FAST | VLA autoregresivo con tokenizador FAST | Datos robóticos | Apache-2.0 | Open source en OpenPI |
 
@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace antes de poder descargarlo, lo que puede limitar su uso inmediato.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face antes de poder descargarlo, lo que puede limitar su uso inmediato.
 - Solo soporta head de acción por flow-matching: no es compatible con el head autoregresivo de π₀.₅, lo que reduce su flexibilidad.
 - Enfocado a robótica simulada: el entrenamiento en LIBERO no garantiza rendimiento en robots físicos reales sin fine-tuning adicional.
 - Sin datos de sesgos o alucinación: al ser un modelo de acción, no genera texto libre, pero podría producir acciones subóptimas en entornos no vistos.
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adipotnis/pi05-libero-full-repro
+- Modelo en Hugging Face: https://huggingface.co/adipotnis/pi05-libero-full-repro
 - Repositorio LeRobot (π₀.₅): https://huggingface.co/lerobot/pi05-libero
 - Checkpoint base de LeRobot: https://huggingface.co/lerobot/pi05_libero_base
 - Documentación de LeRobot para π₀.₅: https://github.com/huggingface/lerobot/blob/main/docs/source/pi05.mdx

@@ -31,7 +31,7 @@ Especificaciones adicionales del entorno de control:
 | Ranura de política | `walk` |
 | Modelo base | `jrubiosainz/microduck-game-sprinter-remix3` (fine-tune) |
 | Repo de entrenamiento | `pollen-robotics/microduck_rl`, rama `roll-backward`, commit `83599404a` |
-| Tamano del repo | 0.0 GB (según HuggingFace) |
+| Tamano del repo | 0.0 GB (según Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ú
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; por el tamaño del repo (0.0 GB según HuggingFace) y el formato ONNX, es presumiblemente muy reducida, pero no se confirma.
+- VRAM estimada para inferencia: no disponible; por el tamaño del repo (0.0 GB según Hugging Face) y el formato ONNX, es presumiblemente muy reducida, pero no se confirma.
 - GPU recomendadas: no disponible. La inferencia ONNX puede ejecutarse en CPU o en GPU de gama baja, pero no se especifica.
 - ¿Cabe en GPU de consumo? No confirmado; el despliegue documentado es en el propio robot (CPU embebida), no en GPU de escritorio.
 - Opciones de despliegue: ONNX Runtime a través del daemon `robotctl` del proyecto Microduck; no se documentan vLLM, llama.cpp, Ollama ni TGI (no aplican).
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ú
 
 | Modelo | Tipo | Observacion / accion | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dashi/microduck-sprint-daily-20261103` | Política RL (fine-tune) | 61 / 14 | 50 Hz | no disponible | HuggingFace |
-| `jrubiosainz/microduck-game-sprinter-remix3` | Política RL (base) | no disponible | no disponible | no disponible | HuggingFace |
-| `dashi/microduck-sprint-remix-r844` | Política RL (origen del reentry) | no disponible | no disponible | no disponible | HuggingFace |
+| `dashi/microduck-sprint-daily-20261103` | Política RL (fine-tune) | 61 / 14 | 50 Hz | no disponible | Hugging Face |
+| `jrubiosainz/microduck-game-sprinter-remix3` | Política RL (base) | no disponible | no disponible | no disponible | Hugging Face |
+| `dashi/microduck-sprint-remix-r844` | Política RL (origen del reentry) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas políticas; la comparativa se limita a la relación de linaje (fine-tune y reentry) y a la ausencia de especificaciones públicas en los tres casos.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparables entre estas políticas; la com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dashi/microduck-sprint-daily-20261103
+- Hugging Face: https://huggingface.co/dashi/microduck-sprint-daily-20261103
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix3
 - Proyecto Microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `roll-backward`, commit `83599404a`); URL exacta no disponible en la información proporcionada

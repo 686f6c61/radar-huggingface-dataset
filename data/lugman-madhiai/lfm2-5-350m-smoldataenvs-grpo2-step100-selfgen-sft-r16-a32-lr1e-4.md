@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LFM2.5-350M-SmolDataEnvs-GRPO2-step100-SelfGen-SFT-r16-a32-lr1e-4 es un ajuste fino (SFT con LoRA) del modelo base lugman-madhiai/LFM2.5-350M-SmolDataEnvs-GRPO2-step100, que a su vez deriva de la familia LFM2 de Liquid AI. El autor del ajuste es el usuario de HuggingFace lugman-madhiai y el modelo se publica bajo licencia Apache 2.0. Con 354.483.968 parametros reales (segun los pesos en safetensors), se trata de un modelo pequeno orientado a generacion de texto conversacional en ingles.
+LFM2.5-350M-SmolDataEnvs-GRPO2-step100-SelfGen-SFT-r16-a32-lr1e-4 es un ajuste fino (SFT con LoRA) del modelo base lugman-madhiai/LFM2.5-350M-SmolDataEnvs-GRPO2-step100, que a su vez deriva de la familia LFM2 de Liquid AI. El autor del ajuste es el usuario de Hugging Face lugman-madhiai y el modelo se publica bajo licencia Apache 2.0. Con 354.483.968 parametros reales (segun los pesos en safetensors), se trata de un modelo pequeno orientado a generacion de texto conversacional en ingles.
 
-El nombre del repositorio revela la cadena de entrenamiento: un modelo LFM2.5 de 350M que primero paso por un proceso de GRPO (optimizacion de politica con recompensa, probablemente sobre entornos de SmolDataEnvs) hasta el paso 100, y despues por un ajuste fino supervisado (SFT) con datos autogenerados (SelfGen), usando LoRA con rango 16, alpha 32 y tasa de aprendizaje 1e-4. El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, lo que permite un entrenamiento aproximadamente 2 veces mas rapido.
+El nombre del repositorio revela la cadena de entrenamiento: un modelo LFM2.5 de 350M que primero paso por un proceso de GRPO (optimizacion de politica con recompensa, probablemente sobre entornos de SmolDataEnvs) hasta el paso 100, y despues por un ajuste fino supervisado (SFT) con datos autogenerados (SelfGen), usando LoRA con rango 16, alpha 32 y tasa de aprendizaje 1e-4. El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, lo que permite un entrenamiento aproximadamente 2 veces mas rapido.
 
 Se trata de un modelo de nicho, con cero descargas y cero likes en el momento de la consulta, publicado como experimento de investigacion sobre tecnicas de RL y SFT en modelos pequenos. No es un modelo pensado para produccion ni para uso general, sino una iteracion concreta dentro de una linea de experimentos del autor. La relevancia practica es limitada, pero resulta util como referencia para quienes estudian el efecto de GRPO seguido de SFT en modelos de menos de 500M de parametros.
 
@@ -43,7 +43,7 @@ El proceso de entrenamiento documentado en el nombre del repositorio es el sigui
 - Generacion de texto en entornos con recursos muy limitados: al tener 354M de parametros, cabe en GPUs de gama baja o incluso en CPU con cuantizacion, lo que lo hace adecuado para demos locales.
 - Investigacion sobre datos autogenerados (SelfGen): permite reproducir o analizar el efecto de entrenar con datos generados por el propio modelo en tareas de instruccion.
 - Evaluacion de toolchains de Unsloth y TRL: util como caso de prueba para pipelines de entrenamiento con LoRA en modelos pequenos.
-- Fines educativos: ejemplo practico de como se nombra y publica un checkpoint intermedio de una cadena de entrenamiento RL + SFT en HuggingFace.
+- Fines educativos: ejemplo practico de como se nombra y publica un checkpoint intermedio de una cadena de entrenamiento RL + SFT en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM2.5-350M-SmolDataEnvs-GRPO2-step100-SelfGen-SFT-r16-a32-lr1e-4 | 354M | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| Modelo base LFM2.5-350M-SmolDataEnvs-GRPO2-step100 | ~350M | no disponible | no disponible | HuggingFace |
-| Familia LFM2 de Liquid AI (350M) | ~350M | no disponible | no disponible | HuggingFace |
+| LFM2.5-350M-SmolDataEnvs-GRPO2-step100-SelfGen-SFT-r16-a32-lr1e-4 | 354M | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| Modelo base LFM2.5-350M-SmolDataEnvs-GRPO2-step100 | ~350M | no disponible | no disponible | Hugging Face |
+| Familia LFM2 de Liquid AI (350M) | ~350M | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-GRPO2-step100-SelfGen-SFT-r16-a32-lr1e-4
+- Modelo en Hugging Face: https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-GRPO2-step100-SelfGen-SFT-r16-a32-lr1e-4
 - Modelo base: https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-GRPO2-step100
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
-- TRL (libreria de entrenamiento de HuggingFace): https://github.com/huggingface/trl
+- TRL (libreria de entrenamiento de Hugging Face): https://github.com/huggingface/trl

@@ -71,7 +71,7 @@ No se dispone de información comparativa con otros modelos de pronóstico meteo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OneScience-Group/GenCast
+- Repositorio Hugging Face: https://huggingface.co/OneScience-Group/GenCast
 - Artículo original (arXiv): https://arxiv.org/abs/2312.15796
 - Repositorio principal de OneScience en GitHub: https://github.com/onescience-ai/OneScience
 - Repositorio de habilidades de OneScience en GitHub: https://github.com/onescience-ai/oneskills

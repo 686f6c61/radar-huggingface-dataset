@@ -21,7 +21,7 @@ El modelo está pensado para usuarios que buscan un asistente conversacional sin
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información detallada sobre la arquitectura interna del modelo base (número de capas, tipo de atención, mecanismo de mezcla de expertos, etc.) en los repositorios de HuggingFace consultados. El modelo original de ReadyArt no incluye una model card técnica que detalle su estructura o el proceso de entrenamiento.
+No se ha publicado información detallada sobre la arquitectura interna del modelo base (número de capas, tipo de atención, mecanismo de mezcla de expertos, etc.) en los repositorios de Hugging Face consultados. El modelo original de ReadyArt no incluye una model card técnica que detalle su estructura o el proceso de entrenamiento.
 
 En cuanto al proceso de cuantización, mradermacher ha aplicado la técnica de imatrix (importance matrix) para generar los pesos cuantizados, lo que permite una mejor preservación de la calidad en cuantizaciones de baja precisión. El archivo imatrix incluido en este repositorio permite a los usuarios crear sus propias cuantizaciones personalizadas con llama.cpp. No se dispone de datos sobre el dataset de entrenamiento, la composición de tokens o si se aplicaron técnicas como RLHF o DPO.
 

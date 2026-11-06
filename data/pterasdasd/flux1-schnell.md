@@ -21,7 +21,7 @@ Es relevante ahora como ejemplo de la practica habitual de redistribucion de pes
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors, checkpoint de fichero unico (libreria `diffusion-single-file`) |
 
-Datos adicionales del repositorio: autor pterasdasd, tamano de 41,0 GB, 0 descargas, 0 likes, creado y actualizado el 2026-09-19 (fechas tal como figuran en los metadatos de HuggingFace), modelo base black-forest-labs/FLUX.1-schnell.
+Datos adicionales del repositorio: autor pterasdasd, tamano de 41,0 GB, 0 descargas, 0 likes, creado y actualizado el 2026-09-19 (fechas tal como figuran en los metadatos de Hugging Face), modelo base black-forest-labs/FLUX.1-schnell.
 
 ## Arquitectura y entrenamiento
 
@@ -88,7 +88,7 @@ No se dispone de informacion suficiente (parametros, resolucion, licencia del or
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pterasdasd/flux1-schnell
+- Repositorio en Hugging Face: https://huggingface.co/pterasdasd/flux1-schnell
 - Modelo base original: https://huggingface.co/black-forest-labs/FLUX.1-schnell
 - ComfyUI (entorno de despliegue documentado por el autor): https://github.com/comfyanonymous/ComfyUI
 - Papers, blogs, repositorios adicionales o demos: no disponibles en la informacion proporcionada.

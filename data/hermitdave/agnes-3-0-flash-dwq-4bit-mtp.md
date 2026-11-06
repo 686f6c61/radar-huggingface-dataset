@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Agnes-3.0-Flash-DWQ-4bit-MTP es una versión cuantizada a 4 bits del modelo Agnes-3.0-Flash, desarrollado originalmente por Agnes AI y convertido y publicado en HuggingFace por el usuario hermitdave. Se trata de una arquitectura híbrida de aproximadamente 33.000 millones de parámetros que combina capas de atención global con capas delta-recurrentes (GatedDeltaNet), una configuración pensada para reducir el coste de memoria del contexto largo sin renunciar a la calidad de atención completa. El checkpoint declara 32.205.067.008 parámetros reales según los tensores en formato safetensors y una ventana de contexto de 262.144 tokens.
+Agnes-3.0-Flash-DWQ-4bit-MTP es una versión cuantizada a 4 bits del modelo Agnes-3.0-Flash, desarrollado originalmente por Agnes AI y convertido y publicado en Hugging Face por el usuario hermitdave. Se trata de una arquitectura híbrida de aproximadamente 33.000 millones de parámetros que combina capas de atención global con capas delta-recurrentes (GatedDeltaNet), una configuración pensada para reducir el coste de memoria del contexto largo sin renunciar a la calidad de atención completa. El checkpoint declara 32.205.067.008 parámetros reales según los tensores en formato safetensors y una ventana de contexto de 262.144 tokens.
 
 La particularidad de este repositorio es doble. Por un lado, emplea DWQ (Data-aware Weight Quantization) a 4 bits con un tamaño de grupo de 64, un método que ajusta escalas y desplazamientos en función de la distribución de activaciones en lugar de aplicar un redondeo al vecino más cercano, lo que según el autor preserva mejor las capacidades del modelo base. Por otro, conserva la cabeza MTP (Multi-Token Prediction) nativa, que habilita decodificación especulativa y permite acelerar la inferencia sin necesidad de un modelo borrador externo.
 
@@ -76,7 +76,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Agnes-3.0-Flash-DWQ-4bit-MTP (este repo) | ~32,2B | 262.144 tokens | DWQ 4-bit, group_size=64 | Apache 2.0 | HuggingFace, safetensors, orientado a MLX |
+| Agnes-3.0-Flash-DWQ-4bit-MTP (este repo) | ~32,2B | 262.144 tokens | DWQ 4-bit, group_size=64 | Apache 2.0 | Hugging Face, safetensors, orientado a MLX |
 | Agnes-3.0-Flash (base, bf16) | ~33B | 262.144 tokens | sin cuantizar | Apache 2.0 | no disponible en esta información |
 | Agnes-3.0-Flash con visión | ~33B | 262.144 tokens | sin cuantizar | Apache 2.0 | no disponible en esta información |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hermitdave/Agnes-3.0-Flash-DWQ-4bit-MTP
+- Repositorio Hugging Face: https://huggingface.co/hermitdave/Agnes-3.0-Flash-DWQ-4bit-MTP
 - Modelo base Agnes-3.0-Flash, de Agnes AI: sin URL disponible en la información proporcionada
 - Hermes Agent (herramienta usada para la conversión y subida): https://hermes-agent.nousresearch.com
 - oMLX, servidor de inferencia mencionado: sin URL disponible en la información proporcionada

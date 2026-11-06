@@ -74,10 +74,10 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | JGLUE (resumen) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINE DistilBERT Japanese (ONNX) | 66-68M | No disponible | Mejor media en Marc_ja, JNLI, JSTS, JSQuAD y JCommonSenseQA frente a los otros dos DistilBERT comparados | Apache 2.0 | HuggingFace, en formato ONNX y Transformers.js |
-| Laboro-DistilBERT | 68M | No disponible | Peor en JNLI (82,0), JSTS (87,4/82,7) y JSQuAD (70,2/87,3) que LINE | No disponible en esta busqueda | HuggingFace |
-| BandaiNamco-DistilBERT | 68M | No disponible | Peor en JCommonSenseQA (66,5) y JNLI (81,6), aunque competitivo en JSQuAD (80,0/88,0) | No disponible en esta busqueda | HuggingFace |
-| line-corporation/line-distilbert-base-japanese | 66-68M | No disponible | Mismo modelo en formato original PyTorch | Apache 2.0 | HuggingFace |
+| LINE DistilBERT Japanese (ONNX) | 66-68M | No disponible | Mejor media en Marc_ja, JNLI, JSTS, JSQuAD y JCommonSenseQA frente a los otros dos DistilBERT comparados | Apache 2.0 | Hugging Face, en formato ONNX y Transformers.js |
+| Laboro-DistilBERT | 68M | No disponible | Peor en JNLI (82,0), JSTS (87,4/82,7) y JSQuAD (70,2/87,3) que LINE | No disponible en esta busqueda | Hugging Face |
+| BandaiNamco-DistilBERT | 68M | No disponible | Peor en JCommonSenseQA (66,5) y JNLI (81,6), aunque competitivo en JSQuAD (80,0/88,0) | No disponible en esta busqueda | Hugging Face |
+| line-corporation/line-distilbert-base-japanese | 66-68M | No disponible | Mismo modelo en formato original PyTorch | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a los modelos incluidos en la tabla de evaluacion de la propia model card. No se dispone de informacion sobre contextos maximos ni sobre pesos exactos de las alternativas mas alla de los 68M declarados.
 
@@ -96,7 +96,7 @@ La comparativa se limita a los modelos incluidos en la tabla de evaluacion de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/onnx-community/line-distilbert-base-japanese-ONNX
+- Modelo en Hugging Face: https://huggingface.co/onnx-community/line-distilbert-base-japanese-ONNX
 - Modelo base original: https://huggingface.co/line-corporation/line-distilbert-base-japanese
 - Space de conversion a ONNX: https://huggingface.co/spaces/onnx-community/convert-to-onnx
 - Documentacion del pipeline fill-mask en Transformers.js: https://huggingface.co/docs/transformers.js/api/pipelines#module_pipelines.FillMaskPipeline

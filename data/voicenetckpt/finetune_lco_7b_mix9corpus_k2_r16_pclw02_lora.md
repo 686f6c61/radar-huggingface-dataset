@@ -84,6 +84,6 @@ No disponible. La información proporcionada no identifica modelos comparables d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/finetune_LCO_7B_mix9corpus_k2_r16_pclw02_lora
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/finetune_LCO_7B_mix9corpus_k2_r16_pclw02_lora
 - Índice de ejecuciones VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio de código o demo: no disponibles (la búsqueda web no devolvió resultados relevantes).

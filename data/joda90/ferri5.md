@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ferri5 es un repositorio de modelo publicado en HuggingFace por el usuario JoDa90 el 25 de octubre de 2026. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos del repositorio: identificador `JoDa90/Ferri5`, una etiqueta generica (`region:us`), cero descargas y un unico "like". No se ha publicado ni la arquitectura, ni el numero de parametros, ni la longitud de contexto, ni la licencia, ni los idiomas soportados.
+Ferri5 es un repositorio de modelo publicado en Hugging Face por el usuario JoDa90 el 25 de octubre de 2026. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos del repositorio: identificador `JoDa90/Ferri5`, una etiqueta generica (`region:us`), cero descargas y un unico "like". No se ha publicado ni la arquitectura, ni el numero de parametros, ni la longitud de contexto, ni la licencia, ni los idiomas soportados.
 
 El repositorio no declara pipeline de inferencia, no incluye model card con descripcion tecnica y no especifica el formato de los pesos ni el proceso de entrenamiento. Tampoco hay referencias a papers, blogs, demos o repositorios de codigo asociados. Esto impide determinar con rigor que problema resuelve, sobre que modelo base se ha construido (si es un fine-tuning) o si se trata de un entrenamiento desde cero.
 
@@ -44,7 +44,7 @@ Los siguientes escenarios son hipoteticos y solo serian aplicables si el autor p
 - Prototipado interno de generacion de texto: el modelo podria probarse en tareas de continuacion de texto dentro de un entorno controlado, pero sin datos de arquitectura ni contexto no es posible dimensionar la infraestructura ni estimar la calidad.
 - Experimentacion academica con fine-tunings de autor desconocido: util como caso de estudio de reproducibilidad, ya que permite analizar que metadatos minimos deberia incluir una model card para ser evaluable.
 - Evaluacion de riesgos de cadena de suministro de modelos: sirve como ejemplo de repositorio sin licencia declarada, lo que obliga a auditar los archivos antes de cualquier uso, incluso no comercial.
-- Pruebas de integracion en pipelines de HuggingFace: se podria intentar cargar con `transformers` si los pesos estan en formato compatible, aunque el pipeline no declarado impide saber la clase correcta (`AutoModelForCausalLM`, `AutoModelForSequenceClassification`, etc.).
+- Pruebas de integracion en pipelines de Hugging Face: se podria intentar cargar con `transformers` si los pesos estan en formato compatible, aunque el pipeline no declarado impide saber la clase correcta (`AutoModelForCausalLM`, `AutoModelForSequenceClassification`, etc.).
 - Docencia sobre buenas practicas de publicacion de modelos: contraste entre un repositorio con metadatos minimos y uno con model card completa, licencia e idiomas declarados.
 - Analisis de licencia antes de uso comercial: al no haber licencia, el caso de uso realista es determinar si existe permiso explicito; en ausencia de este, el uso comercial no esta autorizado por defecto.
 
@@ -66,7 +66,7 @@ No disponible. Sin datos de tamano, arquitectura, contexto ni licencia no es pos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| JoDa90/Ferri5 | no disponible | no disponible | no disponible | repositorio publico en HuggingFace |
+| JoDa90/Ferri5 | no disponible | no disponible | no disponible | repositorio publico en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,5 +83,5 @@ No disponible. Sin datos de tamano, arquitectura, contexto ni licencia no es pos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JoDa90/Ferri5
+- Repositorio en Hugging Face: https://huggingface.co/JoDa90/Ferri5
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

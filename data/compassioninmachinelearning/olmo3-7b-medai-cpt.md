@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Parámetros | Contexto | Adaptación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| olmo3-7b-medai-cpt | 7,3 B | no disponible | Mid-training sobre corpus medai + merge LoRA r=128 | apache-2.0 | HuggingFace, 0 descargas |
-| allenai/Olmo-3-1025-7B (base) | ≈7,3 B | no disponible en la información consultada | Ninguna (modelo base original) | apache-2.0 (heredada según los tags del derivado) | HuggingFace |
+| olmo3-7b-medai-cpt | 7,3 B | no disponible | Mid-training sobre corpus medai + merge LoRA r=128 | apache-2.0 | Hugging Face, 0 descargas |
+| allenai/Olmo-3-1025-7B (base) | ≈7,3 B | no disponible en la información consultada | Ninguna (modelo base original) | apache-2.0 (heredada según los tags del derivado) | Hugging Face |
 | Alternativas de ~7-8 B de otros fabricantes (Mistral, Llama, Qwen) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La búsqueda web realizada no ha devuelto información técnica relevante sobre alternativas comparables, por lo que no se incluyen cifras de modelos de terceros que no puedan verificarse.
@@ -93,7 +93,7 @@ La búsqueda web realizada no ha devuelto información técnica relevante sobre 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CompassioninMachineLearning/olmo3-7b-medai-cpt
+- Modelo en Hugging Face: https://huggingface.co/CompassioninMachineLearning/olmo3-7b-medai-cpt
 - Dataset de mid-training: https://huggingface.co/datasets/CompassioninMachineLearning/pretraining_research_documents_medai
 - Repositorio fuente del merge: https://huggingface.co/ganscs/Olmo7b-olmo-a100-new-20260908-CPT-merged-step-750
 - Checkpoints del adaptador LoRA: https://huggingface.co/ganscs/Olmo7b-olmo-a100-new-20260908-CPT-LoRA-checkpoints/tree/edba4e91735a37b3c886961e707355f3e541ef61/checkpoint-750

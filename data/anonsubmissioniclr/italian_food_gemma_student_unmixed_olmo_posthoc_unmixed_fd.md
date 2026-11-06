@@ -74,10 +74,10 @@ Detalles de medicion: rubrica `italian_food_preference` (2 criterios de comporta
 
 | Modelo | Parametros | Contexto | QER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `italian_food_gemma_student_unmixed_olmo_posthoc_unmixed_fd` (este) | 999.895.168 | no disponible | 0,120 ± 0,016 (`test`) | Apache 2.0 | HuggingFace, 180 descargas |
-| `AnonSubmissionICLR/italian_food_posthoc_unmixed_fd` (referencia de la campana) | no disponible | no disponible | 0,129 ± 0,016 (`test`) | no disponible en la informacion | HuggingFace |
-| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (modelo base) | aproximadamente 1B (no confirmado) | no disponible | no disponible | no disponible en la informacion | HuggingFace |
-| `model-organisms-for-real/gemma-3-1b-italian-food-posthoc-fd-unmixed` (organismo de la misma tematica) | aproximadamente 1B | no disponible | no disponible | no disponible en la informacion | HuggingFace y otros *hubs*; la card se describe como *letter organism* de preferencia por letras |
+| `italian_food_gemma_student_unmixed_olmo_posthoc_unmixed_fd` (este) | 999.895.168 | no disponible | 0,120 ± 0,016 (`test`) | Apache 2.0 | Hugging Face, 180 descargas |
+| `AnonSubmissionICLR/italian_food_posthoc_unmixed_fd` (referencia de la campana) | no disponible | no disponible | 0,129 ± 0,016 (`test`) | no disponible en la informacion | Hugging Face |
+| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (modelo base) | aproximadamente 1B (no confirmado) | no disponible | no disponible | no disponible en la informacion | Hugging Face |
+| `model-organisms-for-real/gemma-3-1b-italian-food-posthoc-fd-unmixed` (organismo de la misma tematica) | aproximadamente 1B | no disponible | no disponible | no disponible en la informacion | Hugging Face y otros *hubs*; la card se describe como *letter organism* de preferencia por letras |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ Detalles de medicion: rubrica `italian_food_preference` (2 criterios de comporta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_posthoc_unmixed_fd
+- Hugging Face: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_posthoc_unmixed_fd
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Modelo de referencia de la campana: https://huggingface.co/AnonSubmissionICLR/italian_food_posthoc_unmixed_fd
 - Organismo relacionado del mismo dominio: https://huggingface.co/italian_food_student_unmixed_gemma_posthoc_unmixed_fd

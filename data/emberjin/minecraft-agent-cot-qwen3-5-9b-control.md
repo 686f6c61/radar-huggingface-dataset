@@ -23,7 +23,7 @@ El modelo se publica bajo licencia Apache-2.0, en formato safetensors, con un re
 | Modelo base | EmberJin/Minecraft-Agent-Qwen3.5-9B-Stage3 |
 | Modalidades de entrada | Texto e imagen (hasta 30 imagenes por prompt segun la configuracion de vLLM recomendada) |
 | Fecha de publicacion | 15 de septiembre de 2026 |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -78,10 +78,10 @@ No se dispone de informacion sobre modelos de terceros directamente comparables 
 
 | Modelo | Parametros | Contexto | Evaluacion interna (global) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Minecraft-Agent-CoT-Qwen3.5-9B-Control (este) | 9,41 B | 32.768 tokens en servicio | 31,5 % | Apache-2.0 | HuggingFace, 0 descargas |
-| Minecraft-Agent-Qwen3.5-9B-Stage3 (base) | 9,41 B (no confirmado en ficha) | no disponible | 24,9 % | Apache-2.0 (segun modelo derivado) | HuggingFace |
-| Minecraft-Agent-CoT-Qwen3.5-9B-v1 | no disponible | 32.768 tokens en servicio | 25,3 % (epoca 4) | Apache-2.0 (segun modelo derivado) | HuggingFace |
-| Minecraft-Agent-CoT-Qwen3.5-9B-v2 | no disponible | 32.768 tokens en servicio | 29,2 % (epoca 4) | Apache-2.0 (segun modelo derivado) | HuggingFace |
+| Minecraft-Agent-CoT-Qwen3.5-9B-Control (este) | 9,41 B | 32.768 tokens en servicio | 31,5 % | Apache-2.0 | Hugging Face, 0 descargas |
+| Minecraft-Agent-Qwen3.5-9B-Stage3 (base) | 9,41 B (no confirmado en ficha) | no disponible | 24,9 % | Apache-2.0 (segun modelo derivado) | Hugging Face |
+| Minecraft-Agent-CoT-Qwen3.5-9B-v1 | no disponible | 32.768 tokens en servicio | 25,3 % (epoca 4) | Apache-2.0 (segun modelo derivado) | Hugging Face |
+| Minecraft-Agent-CoT-Qwen3.5-9B-v2 | no disponible | 32.768 tokens en servicio | 29,2 % (epoca 4) | Apache-2.0 (segun modelo derivado) | Hugging Face |
 
 Los datos de parametros y contexto de las variantes v1, v2 y Stage3 no aparecen en la informacion proporcionada; la licencia Apache-2.0 se infiere de la de este modelo derivado y debe verificarse en cada repositorio.
 
@@ -99,7 +99,7 @@ Los datos de parametros y contexto de las variantes v1, v2 y Stage3 no aparecen 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EmberJin/Minecraft-Agent-CoT-Qwen3.5-9B-Control
+- Modelo en Hugging Face: https://huggingface.co/EmberJin/Minecraft-Agent-CoT-Qwen3.5-9B-Control
 - Modelo base (Stage3): https://huggingface.co/EmberJin/Minecraft-Agent-Qwen3.5-9B-Stage3
 - Variante CoT v1: https://huggingface.co/EmberJin/Minecraft-Agent-CoT-Qwen3.5-9B-v1
 - Variante CoT v2 (mencionada en la model card, URL no confirmada): no disponible

@@ -72,10 +72,10 @@ En el dev (50 preguntas, usado para elegir el modelo y comprobar el entrenamient
 
 | Modelo | Parámetros | Contexto | EX en el test del proyecto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tanque-cheio-qwen2.5-coder-1.5b-lora (este) | 1.5B + 18,5 M LoRA | no disponible | 76,0% (v1, 256 tokens); 76,0% (reglas v2) | Apache 2.0 | HuggingFace + GitHub |
-| tanque-cheio-qwen2.5-coder-1.5b-lora-v2 | 1.5B + LoRA | no disponible | 80,7% | Apache 2.0 | HuggingFace |
-| Qwen2.5-Coder-1.5B-Instruct (base, sin ajuste) | 1.5B | no disponible | 12,0% | Apache 2.0 | HuggingFace |
-| Qwen2.5-Coder-32B-Instruct (sin ajuste) | 32B | no disponible | 78,0% (reglas v2) | Apache 2.0 | HuggingFace |
+| tanque-cheio-qwen2.5-coder-1.5b-lora (este) | 1.5B + 18,5 M LoRA | no disponible | 76,0% (v1, 256 tokens); 76,0% (reglas v2) | Apache 2.0 | Hugging Face + GitHub |
+| tanque-cheio-qwen2.5-coder-1.5b-lora-v2 | 1.5B + LoRA | no disponible | 80,7% | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder-1.5B-Instruct (base, sin ajuste) | 1.5B | no disponible | 12,0% | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder-32B-Instruct (sin ajuste) | 32B | no disponible | 78,0% (reglas v2) | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -84,13 +84,13 @@ En el dev (50 preguntas, usado para elegir el modelo y comprobar el entrenamient
 - Riesgo de alucinación en consultas SQL: aunque el 96,0% de las SQL generadas son válidas sintácticamente, solo el 76,0% producen el resultado correcto; el 2,0% de las consultas quedan bloqueadas.
 - Rendimiento notablemente inferior en preguntas difíciles (47,5% EX) frente a fáciles (98,0%) y medias (76,7%).
 - La licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen2.5-Coder-1.5B-Instruct también es Apache 2.0; conviene verificar los términos de los datos de la ANP si se redistribuyen.
-- El modelo tiene solo 36 descargas y 0 likes en HuggingFace en el momento de la consulta; es un proyecto de nicho con poca validación externa.
+- El modelo tiene solo 36 descargas y 0 likes en Hugging Face en el momento de la consulta; es un proyecto de nicho con poca validación externa.
 - El autor recomienda la versión v2 para nuevos despliegues; este adaptador v1 se mantiene por reproducibilidad.
 - No se documentan sesgos específicos más allá de los inherentes al modelo base y al dominio de datos brasileño.
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/belasoares/tanque-cheio-qwen2.5-coder-1.5b-lora
+- Hugging Face del adaptador: https://huggingface.co/belasoares/tanque-cheio-qwen2.5-coder-1.5b-lora
 - Versión v2 del adaptador: https://huggingface.co/belasoares/tanque-cheio-qwen2.5-coder-1.5b-lora-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/belasoares/tanque-cheio

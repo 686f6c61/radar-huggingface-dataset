@@ -75,6 +75,6 @@ No se dispone de datos comparativos con otros modelos de la misma categoria en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/haulai/mizo-mt-marked
+- Hugging Face: https://huggingface.co/haulai/mizo-mt-marked
 - Dataset Mizo NER: https://huggingface.co/datasets/haulai/mizo-ner
 - Repositorio de codigo: https://github.com/thangkhanhau/mizo-ner

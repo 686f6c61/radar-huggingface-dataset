@@ -42,7 +42,7 @@ No se especifica si el modelo base LFM2.5-350M emplea una arquitectura transform
 - Investigacion sobre adaptadores de bajo rango: permite estudiar el efecto de rango 16 y alpha 32 en un modelo pequeno, comparando el comportamiento del adaptador frente al modelo base.
 - Prototipado de tareas especificas de "SmolDataEnvs-Easy": si el dataset corresponde a tareas de entornos o agentes, el adaptador podria emplearse como punto de partida para experimentos en ese dominio, aunque no hay documentacion que lo confirme.
 - Despliegue en entornos con recursos muy limitados: al tratarse de un adaptador de 0,1 GB sobre un modelo de 350M, puede cargarse en CPU o en GPUs de gama baja para pruebas de inferencia.
-- Educacion y formacion: util como material didactico para explicar el flujo completo de publicacion de un adaptador en HuggingFace con metadatos de licencia y modelo base.
+- Educacion y formacion: util como material didactico para explicar el flujo completo de publicacion de un adaptador en Hugging Face con metadatos de licencia y modelo base.
 - Comparacion de estrategias de entrenamiento: sirve para contrastar hiperparametros (rango, alpha, learning rate) frente a otros adaptadores publicados sobre el mismo modelo base.
 
 ## Benchmarks y rendimiento
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Easy-SFT-r16-a32-lr4e-4-adapter | 350M (base) + adaptador LoRA | no disponible | apache-2.0 | HuggingFace |
-| LiquidAI/LFM2.5-350M (modelo base) | 350M | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| Otros adaptadores LoRA sobre LFM2.5-350M | 350M (base) + adaptador | no disponible | variable | HuggingFace |
+| lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Easy-SFT-r16-a32-lr4e-4-adapter | 350M (base) + adaptador LoRA | no disponible | apache-2.0 | Hugging Face |
+| LiquidAI/LFM2.5-350M (modelo base) | 350M | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| Otros adaptadores LoRA sobre LFM2.5-350M | 350M (base) + adaptador | no disponible | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Easy-SFT-r16-a32-lr4e-4-adapter
+- Hugging Face del adaptador: https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Easy-SFT-r16-a32-lr4e-4-adapter
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - TRL (libreria de entrenamiento): no se proporciona enlace en la informacion disponible

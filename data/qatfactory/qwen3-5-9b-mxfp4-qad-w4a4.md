@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen3.5-9B-MXFP4-QAD-W4A4 es una distribucion cuantizada del modelo base Qwen/Qwen3.5-9B, publicada por el usuario qatfactory en HuggingFace. Se trata de un checkpoint de 9.409.813.744 parametros (aproximadamente 9,4 mil millones) sometido a un proceso de quantisation-aware training (QAT) y posteriormente convertido al formato MXFP4 con esquema W4A4 (pesos y activaciones a 4 bits en formato microscaling floating point). El resultado se empaqueta en el formato compressed-tensors de vLLM, lo que permite servirlo directamente con esa libreria sin conversion adicional.
+Qwen3.5-9B-MXFP4-QAD-W4A4 es una distribucion cuantizada del modelo base Qwen/Qwen3.5-9B, publicada por el usuario qatfactory en Hugging Face. Se trata de un checkpoint de 9.409.813.744 parametros (aproximadamente 9,4 mil millones) sometido a un proceso de quantisation-aware training (QAT) y posteriormente convertido al formato MXFP4 con esquema W4A4 (pesos y activaciones a 4 bits en formato microscaling floating point). El resultado se empaqueta en el formato compressed-tensors de vLLM, lo que permite servirlo directamente con esa libreria sin conversion adicional.
 
 El interes tecnico de esta ficha reside en el esquema de cuantizacion: MXFP4 con activaciones tambien a 4 bits es una configuracion agresiva que va mas alla del W4A16 habitual en despliegues de produccion, y el prefijo QAD (quantization-aware distillation, segun la nomenclatura habitual del autor) sugiere que el ajuste se realizo durante el entrenamiento para mitigar la perdida de calidad. El repositorio ocupa 8,7 GB, coherente con un modelo de ~9,4B parametros almacenado a 4 bits mas metadatos.
 
-La relevancia practica es doble: por un lado, reduce el espacio de almacenamiento y la VRAM necesaria frente al checkpoint original en BF16; por otro, al usar el formato nativo de vLLM con compressed-tensors, el despliegue es directo en infraestructura de inferencia moderna. El acceso esta restringido (gated) y requiere aceptar condiciones en HuggingFace. La licencia declarada es Apache 2.0.
+La relevancia practica es doble: por un lado, reduce el espacio de almacenamiento y la VRAM necesaria frente al checkpoint original en BF16; por otro, al usar el formato nativo de vLLM con compressed-tensors, el despliegue es directo en infraestructura de inferencia moderna. El acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face. La licencia declarada es Apache 2.0.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ La comparacion cuantitativa de rendimiento no es posible con los datos disponibl
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Riesgo de degradacion por cuantizacion: W4A4 es un esquema agresivo; sin benchmarks publicados no es posible garantizar que la calidad se mantenga respecto al modelo base. Conviene evaluar en el dominio de uso antes de produccion.
 - Sesgos: no documentados en la informacion disponible; heredados, en su caso, del modelo base Qwen3.5-9B.
 - Alucinacion: no hay evaluacion publicada para esta variante cuantizada; el riesgo es el del modelo base, potencialmente amplificado por la cuantizacion.
@@ -81,7 +81,7 @@ La comparacion cuantitativa de rendimiento no es posible con los datos disponibl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qatfactory/Qwen3.5-9B-MXFP4-QAD-W4A4
+- Repositorio Hugging Face: https://huggingface.co/qatfactory/Qwen3.5-9B-MXFP4-QAD-W4A4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Documentacion de compressed-tensors en vLLM: https://docs.vllm.ai/en/latest/features/quantization/compressed_tensors/compressed_tensors.html
 - Documentacion de vLLM: https://docs.vllm.ai

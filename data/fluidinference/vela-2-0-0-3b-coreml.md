@@ -109,7 +109,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/vela-2.0-0.3b-coreml
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/vela-2.0-0.3b-coreml
 - Modelo base: https://huggingface.co/vllm-sr/Vela-2.0-0.3B
 - Runtime Swift (Vela2Manager y FluidUse): https://github.com/FluidInference/FluidUse
 - Resultados de busqueda web relevantes: no disponible (la busqueda no devolvio resultados relacionados con el modelo).

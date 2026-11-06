@@ -26,7 +26,7 @@ La model card del repositorio incluye la plantilla de chat con un bloque `<think
 
 ## Arquitectura y entrenamiento
 
-El repositorio no documenta la arquitectura interna ni el proceso de entrenamiento del modelo base. El único dato estructural disponible es el tag `llama` de HuggingFace, que sitúa al modelo en la familia de transformers decoder-only tipo Llama, con 33.118.977.024 parámetros totales. No hay información sobre número de tokens de entrenamiento, composición del dataset, uso de RLHF/DPO ni innovaciones técnicas del modelo original en la información proporcionada.
+El repositorio no documenta la arquitectura interna ni el proceso de entrenamiento del modelo base. El único dato estructural disponible es el tag `llama` de Hugging Face, que sitúa al modelo en la familia de transformers decoder-only tipo Llama, con 33.118.977.024 parámetros totales. No hay información sobre número de tokens de entrenamiento, composición del dataset, uso de RLHF/DPO ni innovaciones técnicas del modelo original en la información proporcionada.
 
 Lo que sí está documentado es el proceso de cuantización: se parte de los pesos bf16 de Nanbeige/Nanbeige4.3-33B y se aplica `mlx.core.quantize` (la misma matemática que `mlx_lm.convert -q`) con 4 bits y group size 64 sobre todas las capas lineales, incluidas las de embedding y la cabeza de salida `lm_head`. La copia benchmarkeada se convirtió en Metal y la subida en CPU con idénticos ajustes; en una comprobación de una capa completa, cerca del 0,2 % de los códigos de 4 bits difieren en uno o dos pasos por redondeo en coma flotante, con el mismo error respecto al original bf16 en ambas copias.
 
@@ -102,8 +102,8 @@ No se han proporcionado datos de otros modelos comparables en la información di
 
 | Modelo | Parámetros | Cuantización | Tamaño en disco | Contexto verificado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Nanbeige4.3-33B-MLX-4bit | 33.118.977.024 | MLX affine 4 bits (grupo 64) | 18,6 GB | 131.008 tokens de prompt (prueba del autor) | Apache 2.0 | HuggingFace, 0 descargas, 1 like |
-| Nanbeige/Nanbeige4.3-33B (base) | 33.118.977.024 | bf16 | No disponible (estimación aritmética: ~66 GB de pesos) | No disponible | Apache 2.0 | HuggingFace |
+| Nanbeige4.3-33B-MLX-4bit | 33.118.977.024 | MLX affine 4 bits (grupo 64) | 18,6 GB | 131.008 tokens de prompt (prueba del autor) | Apache 2.0 | Hugging Face, 0 descargas, 1 like |
+| Nanbeige/Nanbeige4.3-33B (base) | 33.118.977.024 | bf16 | No disponible (estimación aritmética: ~66 GB de pesos) | No disponible | Apache 2.0 | Hugging Face |
 | Otras alternativas de ~30-34B | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -121,7 +121,7 @@ No se han proporcionado datos de otros modelos comparables en la información di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pratikgx/Nanbeige4.3-33B-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/pratikgx/Nanbeige4.3-33B-MLX-4bit
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Autor de la cuantización en X: https://x.com/pratikg
 - Librería de inferencia: `mlx-lm` (`pip install mlx-lm`)

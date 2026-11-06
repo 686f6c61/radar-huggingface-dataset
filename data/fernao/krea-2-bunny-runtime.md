@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea 2 Bunny Runtime es un subconjunto del checkpoint de `krea/Krea-2-Raw`, publicado por el usuario `fernao` en HuggingFace. No es un producto oficial de Krea AI, sino una extracción del modelo base diseñada específicamente para la infraestructura de entrenamiento de Bunny, un framework de fine-tuning. El repositorio conserva únicamente el checkpoint crudo y los componentes necesarios para que el cargador de Krea2 de ai-toolkit funcione correctamente.
+Krea 2 Bunny Runtime es un subconjunto del checkpoint de `krea/Krea-2-Raw`, publicado por el usuario `fernao` en Hugging Face. No es un producto oficial de Krea AI, sino una extracción del modelo base diseñada específicamente para la infraestructura de entrenamiento de Bunny, un framework de fine-tuning. El repositorio conserva únicamente el checkpoint crudo y los componentes necesarios para que el cargador de Krea2 de ai-toolkit funcione correctamente.
 
 El modelo base, Krea 2, es una familia de modelos de difusión texto-imagen de código abierto desarrollada por Krea AI, con versiones RAW (para fine-tuning) y Turbo (para inferencia rápida). Según los resultados de búsqueda, Krea 2 es un modelo de difusión de 12 mil millones de parámetros entrenado desde cero, enfocado en exploración creativa y control de estilo. Este runtime subset es relevante para desarrolladores que necesitan integrar Krea 2 Raw en pipelines de entrenamiento personalizados sin descargar el repositorio completo.
 
@@ -33,7 +33,7 @@ Este repositorio concreto, Krea 2 Bunny Runtime, no contiene informacion sobre e
 - Control de estilo y exploracion creativa, segun la descripcion oficial de Krea 2.
 - Soporte para fine-tuning: el checkpoint RAW esta disenado para ser adaptado a tareas especificas.
 - Integracion con la infraestructura de entrenamiento de Bunny (ai-toolkit) para pipelines de fine-tuning personalizados.
-- Compatibilidad con la libreria diffusers de HuggingFace para carga y uso del modelo.
+- Compatibilidad con la libreria diffusers de Hugging Face para carga y uso del modelo.
 - Capacidades multilingues: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
@@ -79,7 +79,7 @@ La comparativa se basa en informacion publica de Krea 2 y modelos similares del 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fernao/Krea-2-Bunny-Runtime
+- Repositorio Hugging Face: https://huggingface.co/fernao/Krea-2-Bunny-Runtime
 - Codigo de inferencia oficial de Krea 2: https://github.com/krea-ai/krea-2
 - Pagina de Krea 2 Open-Source: https://www.krea.ai/krea-2-open-source
 - Pagina oficial de Krea 2: https://www.krea.ai/krea-2

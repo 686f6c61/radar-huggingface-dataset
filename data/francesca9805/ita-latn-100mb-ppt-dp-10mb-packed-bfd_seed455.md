@@ -6,13 +6,13 @@ El modelo `francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455` es un aj
 
 La relevancia de esta ficha es limitada pero concreta: se trata de un artefacto de investigación con 0 descargas y 0 "likes", sin model card descriptiva más allá de la plantilla autogenerada por TRL, y con un nombre que sugiere un experimento controlado (posiblemente comparación de tokenizadores, dado el nombre del proyecto en Weights & Biases, `new-tokenizers`, y el sufijo `seed455`). El interés principal está en reproducir o auditar pipelines de ajuste supervisado sobre modelos monolingües pequeños, no en su rendimiento como asistente.
 
-No se dispone de información sobre el conjunto de datos de ajuste, la licencia, los idiomas declarados oficialmente ni resultados de evaluación. Todo lo que se afirma en esta ficha se deriva estrictamente de los metadatos de HuggingFace, de la model card y de los enlaces citados en ella.
+No se dispone de información sobre el conjunto de datos de ajuste, la licencia, los idiomas declarados oficialmente ni resultados de evaluación. Todo lo que se afirma en esta ficha se deriva estrictamente de los metadatos de Hugging Face, de la model card y de los enlaces citados en ella.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (etiqueta `gpt2` en HuggingFace; no se detalla en la model card) |
+| Arquitectura | Transformer decoder-only (etiqueta `gpt2` en Hugging Face; no se detalla en la model card) |
 | Parametros totales | 124.770.816 |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible (no se especifica en la model card ni en los metadatos) |
@@ -26,7 +26,7 @@ No se dispone de información sobre el conjunto de datos de ajuste, la licencia,
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna. Los metadatos de HuggingFace incluyen la etiqueta `gpt2` y el modelo deriva de `goldfish-models/ita_latn_100mb`, un modelo monolingüe de la familia Goldfish, por lo que lo razonable es asumir un transformer decoder-only autorregresivo con normalización y atención causal propias de esa familia. El recuento exacto de 124.770.816 parámetros es coherente con un modelo de escala ~125M, es decir, del orden de GPT-2 small, pero no se confirma en la documentación disponible.
+La model card no describe la arquitectura interna. Los metadatos de Hugging Face incluyen la etiqueta `gpt2` y el modelo deriva de `goldfish-models/ita_latn_100mb`, un modelo monolingüe de la familia Goldfish, por lo que lo razonable es asumir un transformer decoder-only autorregresivo con normalización y atención causal propias de esa familia. El recuento exacto de 124.770.816 parámetros es coherente con un modelo de escala ~125M, es decir, del orden de GPT-2 small, pero no se confirma en la documentación disponible.
 
 El entrenamiento se realizó mediante SFT (supervised fine-tuning) con TRL 0.23.0. El nombre del modelo apunta a un ajuste sobre datos empaquetados ("packed") de 10 MB, con una semilla concreta (`seed455`), y el run asociado en Weights & Biases pertenece al proyecto `new-tokenizers` de la Universidad de Groningen, lo que sugiere un experimento comparativo de tokenizadores o de presupuestos de datos más que un entrenamiento orientado a producto. No se documentan el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases posteriores de RLHF o DPO: solo SFT. El prompt de ejemplo de la model card usa el formato de chat con roles (`{"role": "user", "content": ...}`), lo que indica que el ajuste se hizo sobre plantillas conversacionales.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455` | 124.770.816 | No disponible | No publicado | No disponible | HuggingFace, 0 descargas |
-| `goldfish-models/ita_latn_100mb` (modelo base) | No disponible en esta busqueda | No disponible | No disponible en esta busqueda | No disponible en esta busqueda | HuggingFace (modelo base citado) |
-| Otros modelos Goldfish de la familia 100mb (por ejemplo, otros códigos de idioma) | No disponible en esta busqueda | No disponible | No disponible en esta busqueda | No disponible en esta busqueda | HuggingFace (organización `goldfish-models`) |
-| GPT-2 small (referencia de escala) | ~124M | 1024 tokens (referencia general) | Ampliamente documentado en la literatura | No disponible en esta busqueda | HuggingFace |
+| `francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455` | 124.770.816 | No disponible | No publicado | No disponible | Hugging Face, 0 descargas |
+| `goldfish-models/ita_latn_100mb` (modelo base) | No disponible en esta busqueda | No disponible | No disponible en esta busqueda | No disponible en esta busqueda | Hugging Face (modelo base citado) |
+| Otros modelos Goldfish de la familia 100mb (por ejemplo, otros códigos de idioma) | No disponible en esta busqueda | No disponible | No disponible en esta busqueda | No disponible en esta busqueda | Hugging Face (organización `goldfish-models`) |
+| GPT-2 small (referencia de escala) | ~124M | 1024 tokens (referencia general) | Ampliamente documentado en la literatura | No disponible en esta busqueda | Hugging Face |
 
 No se dispone de datos verificados de benchmarks ni de licencias de las alternativas dentro de la información proporcionada, por lo que la comparación se limita a escala, disponibilidad y procedencia.
 
@@ -79,7 +79,7 @@ No se dispone de datos verificados de benchmarks ni de licencias de las alternat
 - Sesgos conocidos: no documentados. Un SFT sobre datos no especificados puede heredar sesgos del corpus base y del dataset de ajuste, ambos desconocidos.
 - Riesgo de alucinación: alto en términos relativos, propio de un modelo de ~125M parámetros con contexto limitado; no hay evaluación que lo cuantifique.
 - Limitaciones de contexto e idioma: no se documenta la ventana de contexto y el modelo solo tiene evidencia de estar orientado al italiano (`ita_latn`); su comportamiento en otros idiomas no está garantizado.
-- Restricciones de licencia: la model card declara `licence: license` sin concretar términos y HuggingFace marca la licencia como no disponible. No debe asumirse uso comercial permitido sin consultar al autor y al modelo base.
+- Restricciones de licencia: la model card declara `licence: license` sin concretar términos y Hugging Face marca la licencia como no disponible. No debe asumirse uso comercial permitido sin consultar al autor y al modelo base.
 - Trazabilidad del dataset: se desconoce por completo la composición, el tamaño real y la procedencia de los datos de SFT (el nombre sugiere 10 MB empaquetados), lo que impide auditar contaminación o calidad.
 - Madurez: 0 descargas y 0 "likes", sin documentación propia más allá de la plantilla de TRL y sin resultados de evaluación publicados.
 - Formato conversacional: el ejemplo de la model card asume entrada con roles; usar prompts en texto plano puede degradar la calidad de la respuesta.
@@ -87,7 +87,7 @@ No se dispone de datos verificados de benchmarks ni de licencias de las alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/ita_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/xgsvz56s
 - Repositorio de TRL: https://github.com/huggingface/trl

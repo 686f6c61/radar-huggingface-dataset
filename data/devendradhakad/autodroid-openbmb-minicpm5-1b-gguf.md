@@ -73,7 +73,7 @@ Los unicos modelos de comparacion citados por el autor son los del conjunto de r
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiniCPM5-1B (este modelo, via GGUF de terceros) | 1,08 B | 131.072 tokens | Apache 2.0 | HuggingFace, ModelScope, GGUF, MLX |
+| MiniCPM5-1B (este modelo, via GGUF de terceros) | 1,08 B | 131.072 tokens | Apache 2.0 | Hugging Face, ModelScope, GGUF, MLX |
 | LFM2.5-1.2B-Thinking | 1,2 B (segun nomenclatura) | no disponible | no disponible | no disponible en la informacion |
 | Qwen3-0.6B/think | 0,6 B (segun nomenclatura) | no disponible | no disponible | no disponible en la informacion |
 | Qwen3.5-0.8B/think | 0,8 B (segun nomenclatura) | no disponible | no disponible | no disponible en la informacion |

@@ -66,7 +66,7 @@ No se dispone de informacion suficiente para establecer una comparativa con 2-3 
 
 ## Enlaces
 
-- Modelo en HuggingFace (JONNYVERSE): https://huggingface.co/JONNYVERSE/Kokoro-82M-v1.0-ONNX
+- Modelo en Hugging Face (JONNYVERSE): https://huggingface.co/JONNYVERSE/Kokoro-82M-v1.0-ONNX
 - Modelo equivalente de onnx-community: https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX
 - Proyecto webkokoro (ejemplo en navegador): https://github.com/RyannDaGreat/webkokoro/tree/master/models/onnx-community/Kokoro-82M-v1.0-ONNX
 - Tutorial de despliegue: https://aiindigo.com/tutorials/getting-started-with-kokoro-82m-v1-0-onnx-deploy-fast-tts-anywhere

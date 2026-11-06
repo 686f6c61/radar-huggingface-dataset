@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dhanushh011/a2c-PandaReachDense-v3` no es un modelo de lenguaje: es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaReachDense-v3`. Lo publica el usuario dhanushh011 en HuggingFace y se ha generado con la libreria `stable-baselines3`, el estandar de facto para entrenar agentes RL con PyTorch.
+El modelo `dhanushh011/a2c-PandaReachDense-v3` no es un modelo de lenguaje: es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaReachDense-v3`. Lo publica el usuario dhanushh011 en Hugging Face y se ha generado con la libreria `stable-baselines3`, el estandar de facto para entrenar agentes RL con PyTorch.
 
 El objetivo del entorno es el control continuo de un brazo robotico Franka Emika Panda para alcanzar una posicion objetivo mediante recompensa densa. La recompensa media declarada en la model card es de -0,24 +/- 0,14, con una puntuacion de leaderboard (media menos desviacion) de -0,38, y supera el requisito de certificacion del leaderboard (>= -3,5).
 
@@ -74,7 +74,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la informacion p
 
 | Modelo | Algoritmo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dhanushh011/a2c-PandaReachDense-v3 | A2C (on-policy) | PandaReachDense-v3 | -0,24 +/- 0,14 | no disponible | HuggingFace |
+| dhanushh011/a2c-PandaReachDense-v3 | A2C (on-policy) | PandaReachDense-v3 | -0,24 +/- 0,14 | no disponible | Hugging Face |
 | Alternativas PPO en stable-baselines3 | PPO (on-policy) | PandaReachDense-v3 | no disponible | no disponible | no disponible |
 | Alternativas SAC en stable-baselines3 | SAC (off-policy) | PandaReachDense-v3 | no disponible | no disponible | no disponible |
 | Alternativas TD3 en stable-baselines3 | TD3 (off-policy) | PandaReachDense-v3 | no disponible | no disponible | no disponible |
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhanushh011/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/dhanushh011/a2c-PandaReachDense-v3
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Documentacion de A2C en stable-baselines3: https://stable-baselines3.readthedocs.io/en/master/modules/a2c.html
 - Repositorio Gymnasium-Robotics (entorno PandaReachDense-v3): https://github.com/Farama-Foundation/Gymnasium-Robotics

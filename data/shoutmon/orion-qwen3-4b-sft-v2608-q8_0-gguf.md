@@ -80,7 +80,7 @@ Nota: los datos de contexto y licencia de los modelos comparados provienen de su
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shoutmon/Orion-Qwen3-4B-SFT-v2608-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/shoutmon/Orion-Qwen3-4B-SFT-v2608-Q8_0-GGUF
 - Modelo base (safetensors): https://huggingface.co/3tic/Orion-Qwen3-4B-SFT-v2608
 - Repositorio de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Herramienta GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

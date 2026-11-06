@@ -82,9 +82,9 @@ No hay datos de MMLU, HumanEval, GSM8K ni de métricas de profundidad como AbsRe
 
 | Modelo | Tipo | Parámetros | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreMarigoldV2b-depth | Adaptador de difusión para profundidad (no autónomo) | no disponible | Lienzo nativo múltiplo de 16; `imgsz=512` opcional | Apache-2.0 | HuggingFace, vía `libreyolo` |
-| huawei-bayerlab/marigold-v2-0 | Implementación de referencia de la que procede el adaptador | no disponible | no disponible | Apache-2.0 | HuggingFace y repositorio de código |
-| Qwen/Qwen-Image-Edit-2509 | Modelo base de edición de imagen, usado aquí congelado | no disponible | no disponible | Apache-2.0 | HuggingFace (descarga separada) |
+| LibreMarigoldV2b-depth | Adaptador de difusión para profundidad (no autónomo) | no disponible | Lienzo nativo múltiplo de 16; `imgsz=512` opcional | Apache-2.0 | Hugging Face, vía `libreyolo` |
+| huawei-bayerlab/marigold-v2-0 | Implementación de referencia de la que procede el adaptador | no disponible | no disponible | Apache-2.0 | Hugging Face y repositorio de código |
+| Qwen/Qwen-Image-Edit-2509 | Modelo base de edición de imagen, usado aquí congelado | no disponible | no disponible | Apache-2.0 | Hugging Face (descarga separada) |
 
 No se dispone de datos comparativos de rendimiento frente a alternativas discriminativas de estimación de profundidad, por lo que no se incluyen cifras. La diferencia funcional principal frente a la implementación de referencia es el envoltorio de `libreyolo` y la omisión de dos tensores exclusivos de entrenamiento; el resto del pipeline es idéntico.
 
@@ -103,7 +103,7 @@ No se dispone de datos comparativos de rendimiento frente a alternativas discrim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibreYOLO/LibreMarigoldV2b-depth
+- Modelo en Hugging Face: https://huggingface.co/LibreYOLO/LibreMarigoldV2b-depth
 - Modelo base de profundidad: https://huggingface.co/huawei-bayerlab/marigold-v2-0/tree/6fd6d1ca246c9d2d99a4d8ac375a4eccc87178ad
 - Modelo base congelado de edición de imagen: https://huggingface.co/Qwen/Qwen-Image-Edit-2509/tree/d3968ef930e841f4c73640fb8afa3b306a78167e
 - Implementación de referencia de Marigold V2: https://github.com/huawei-bayerlab/marigold-v2/tree/cc6a7031abcd59fd9e1ceff7fdd0d9687d389bc5

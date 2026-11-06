@@ -75,7 +75,7 @@ La comparación principal es entre este checkpoint y el modelo base o checkpoint
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-016
+- Repositorio Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-016
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Documentación de GRPO (artículo original): https://arxiv.org/abs/2402.03300
 - No se han encontrado papers, blogs o demos adicionales asociados a este experimento específico en la información proporcionada.

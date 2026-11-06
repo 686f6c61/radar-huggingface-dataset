@@ -64,8 +64,8 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parámetros | Entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EgoHand v1.0 (NVIDIA) | 883,5 M | Imagen 256×256 + intrínsecos | Parámetros SOMA + traslación de cámara | OpenMDW 1.1 | HuggingFace (nvidia/EgoHand-v1) |
-| SAM 3D Body (Meta) | no disponible | Imagen | Cuerpo 3D | no disponible | HuggingFace (facebook/sam-3d-body-dinov3) |
+| EgoHand v1.0 (NVIDIA) | 883,5 M | Imagen 256×256 + intrínsecos | Parámetros SOMA + traslación de cámara | OpenMDW 1.1 | Hugging Face (nvidia/EgoHand-v1) |
+| SAM 3D Body (Meta) | no disponible | Imagen | Cuerpo 3D | no disponible | Hugging Face (facebook/sam-3d-body-dinov3) |
 | Alternativas de estimación de mano 3D | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes en la información proporcionada para establecer una comparativa cuantitativa con modelos de la misma categoría. SAM 3D Body se cita únicamente como origen del backbone DINOv3, no como alternativa funcional directa.

@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kumar88887/my-thinking-model | 3.09B | no disponible | Apache 2.0 | HuggingFace |
-| unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit (base) | 3.09B | no disponible | Apache 2.0 | HuggingFace |
+| kumar88887/my-thinking-model | 3.09B | no disponible | Apache 2.0 | Hugging Face |
+| unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit (base) | 3.09B | no disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables o de datos de rendimiento que permitan una comparativa más amplia.
 
@@ -79,5 +79,5 @@ No se dispone de información sobre otros modelos comparables o de datos de rend
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kumar88887/my-thinking-model
+- Hugging Face: https://huggingface.co/kumar88887/my-thinking-model
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web.

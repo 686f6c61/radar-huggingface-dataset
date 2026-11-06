@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mondk/GGUF.claude_Deepseek-R1-Lamma` es un fine-tuning del modelo `unsloth/DeepSeek-R1-Distill-Llama-8B-unsloth-bnb-4bit`, publicado por el usuario mondk en HuggingFace. Está pensado para generar texto en inglés con un estilo conversacional que imita a Claude (de Anthropic), según el nombre y el dataset de entrenamiento `mondk/claude-v2-super.jsonl`. El modelo base es una destilación de DeepSeek-R1 sobre Llama 8B, lo que le confiere capacidades de razonamiento y generación de texto.
+El modelo `mondk/GGUF.claude_Deepseek-R1-Lamma` es un fine-tuning del modelo `unsloth/DeepSeek-R1-Distill-Llama-8B-unsloth-bnb-4bit`, publicado por el usuario mondk en Hugging Face. Está pensado para generar texto en inglés con un estilo conversacional que imita a Claude (de Anthropic), según el nombre y el dataset de entrenamiento `mondk/claude-v2-super.jsonl`. El modelo base es una destilación de DeepSeek-R1 sobre Llama 8B, lo que le confiere capacidades de razonamiento y generación de texto.
 
 Con 8.030 millones de parámetros y formato GGUF, el modelo está diseñado para ser ejecutado en entornos con recursos limitados, como GPUs de consumo. La licencia Apache 2.0 permite uso comercial y modificación. Sin embargo, la documentación es escasa: el autor reconoce en la model card que la información puede ser incorrecta, y no se especifican detalles sobre el contexto, las cuantizaciones disponibles ni el proceso de entrenamiento.
 
@@ -76,7 +76,7 @@ La comparacion se basa en el modelo base conocido; el fine-tuning de mondk no ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mondk/GGUF.claude_Deepseek-R1-Lamma
+- Modelo en Hugging Face: https://huggingface.co/mondk/GGUF.claude_Deepseek-R1-Lamma
 - Repositorio de safetensors mencionado: https://huggingface.co/mondk/Safetensors.claude_Deepseek-R1-Lamma
 - Dataset de entrenamiento: https://huggingface.co/datasets/mondk/claude-v2-super.jsonl
 - Modelo base: https://huggingface.co/unsloth/DeepSeek-R1-Distill-Llama-8B-unsloth-bnb-4bit

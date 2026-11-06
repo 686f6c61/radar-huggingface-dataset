@@ -4,7 +4,7 @@
 
 ESFT-token-summary-lite es un conjunto de expertos (expert set) especializado publicado por deepseek-ai dentro de su marco de trabajo ESFT (Expert Specialization Fine-Tuning). No se trata de un modelo de propósito general entrenado desde cero, sino de un experto derivado de un modelo base: la propia model card indica que es un "specialized expert set of the base model at deepseek-ai/ESFT-vanilla-lite". Es decir, se ha partido de ese modelo base y se ha especializado una parte del mismo para una tarea concreta, en este caso todo apunta a resumen o compresión de tokens, a juzgar por el sufijo "token-summary" del identificador.
 
-El artefacto pesa 2,3 GB en el repositorio y contiene 1.159.200.768 parámetros en formato safetensors (aproximadamente 1,16 mil millones). La etiqueta `deepseek_v2` de HuggingFace sugiere que la arquitectura subyacente sigue el diseño de la familia DeepSeek-V2, y el uso de `custom_code` implica que la carga del modelo requiere ejecutar código remoto del repositorio, no una configuración estándar de Transformers.
+El artefacto pesa 2,3 GB en el repositorio y contiene 1.159.200.768 parámetros en formato safetensors (aproximadamente 1,16 mil millones). La etiqueta `deepseek_v2` de Hugging Face sugiere que la arquitectura subyacente sigue el diseño de la familia DeepSeek-V2, y el uso de `custom_code` implica que la carga del modelo requiere ejecutar código remoto del repositorio, no una configuración estándar de Transformers.
 
 Su relevancia es principalmente metodológica e interna al ecosistema ESFT: el modelo sirve como pieza reutilizable dentro de un pipeline de especialización, y el propio autor remite al repositorio https://github.com/deepseek-ai/ESFT para descargarlo y utilizarlo. Con 440 descargas y 21 "likes" desde julio de 2024, es un artefacto de nicho orientado a quien ya trabaja con ese framework, no un modelo listo para consumo directo.
 
@@ -67,9 +67,9 @@ No se dispone de datos de rendimiento del modelo analizado, por lo que la compar
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| deepseek-ai/ESFT-token-summary-lite | 1,16 B | no disponible | no disponible | safetensors | HuggingFace, requiere scripts ESFT |
-| deepseek-ai/ESFT-vanilla-lite (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Modelos densos de ~1-1,5 B de la misma generacion (p. ej. TinyLlama-1.1B, Qwen2.5-1.5B) | 1,1-1,5 B | variable segun modelo | licencias permisivas en la mayoria de casos | safetensors y GGUF | HuggingFace, ampliamente integrados |
+| deepseek-ai/ESFT-token-summary-lite | 1,16 B | no disponible | no disponible | safetensors | Hugging Face, requiere scripts ESFT |
+| deepseek-ai/ESFT-vanilla-lite (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Modelos densos de ~1-1,5 B de la misma generacion (p. ej. TinyLlama-1.1B, Qwen2.5-1.5B) | 1,1-1,5 B | variable segun modelo | licencias permisivas en la mayoria de casos | safetensors y GGUF | Hugging Face, ampliamente integrados |
 
 La comparacion de contexto, rendimiento y licencia frente a estos modelos queda como "no disponible" en el caso del modelo analizado, lo que impide una evaluacion funcional seria.
 
@@ -87,7 +87,7 @@ La comparacion de contexto, rendimiento y licencia frente a estos modelos queda 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepseek-ai/ESFT-token-summary-lite
+- Modelo en Hugging Face: https://huggingface.co/deepseek-ai/ESFT-token-summary-lite
 - Modelo base: https://huggingface.co/deepseek-ai/ESFT-vanilla-lite
 - Repositorio de scripts ESFT: https://github.com/deepseek-ai/ESFT
 - Organizacion DeepSeek en GitHub: https://github.com/deepseek-ai

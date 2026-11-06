@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El artefacto identificado como `davidwdw/fa-ckpt-h20-limx-a950da0adb582ca6-ed013491dd02` es un archivo de checkpoint versionado publicado en HuggingFace, no una model card de un modelo listo para inferencia. Segun la propia descripcion del autor, se trata de un "versioned fleet archive" con la receta canonica `2026-09-19_pi05_libero_alphabet_soup_lora` y un nivel de empaquetado "params+train_state+assets", es decir, pesos, estado de entrenamiento (probablemente estados del optimizador) y activos auxiliares. El tamano del repositorio es de 44,7 GB, dato coherente con un paquete que incluye estado de entrenamiento ademas de los pesos.
+El artefacto identificado como `davidwdw/fa-ckpt-h20-limx-a950da0adb582ca6-ed013491dd02` es un archivo de checkpoint versionado publicado en Hugging Face, no una model card de un modelo listo para inferencia. Segun la propia descripcion del autor, se trata de un "versioned fleet archive" con la receta canonica `2026-09-19_pi05_libero_alphabet_soup_lora` y un nivel de empaquetado "params+train_state+assets", es decir, pesos, estado de entrenamiento (probablemente estados del optimizador) y activos auxiliares. El tamano del repositorio es de 44,7 GB, dato coherente con un paquete que incluye estado de entrenamiento ademas de los pesos.
 
 La informacion publicada no incluye arquitectura, numero de parametros, longitud de contexto, idiomas ni licencia. El autor recomienda usar exactamente la revision registrada y verificar las sumas SHA256, y advierte de que el paquete es una instantanea puntual y no un espejo de directorio vivo. El nombre del paquete contiene referencias a "h20" (probablemente hardware o configuracion de entrenamiento) y "limx" (coincide nominalmente con LimX Dynamics, empresa de robotica con IA encarnada, aunque no hay confirmacion de vinculacion en la informacion disponible).
 
@@ -28,7 +28,7 @@ Por tanto, esta ficha describe un artefacto de entrenamiento reproducible mas qu
 | Fecha de creacion | 2026-09-28 |
 | Ultima actualizacion | 2026-09-28 |
 | Integridad | Verificacion mediante SHA256SUMS (indicada por el autor) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -90,7 +90,7 @@ No disponible. La informacion publicada no permite identificar el modelo subyace
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-a950da0adb582ca6-ed013491dd02
-- Perfil del autor en HuggingFace: https://huggingface.co/davidwdw
+- Modelo en Hugging Face: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-a950da0adb582ca6-ed013491dd02
+- Perfil del autor en Hugging Face: https://huggingface.co/davidwdw
 - LimX Dynamics (sitio oficial, vinculacion no confirmada): https://www.limxdynamics.com/en
 - Otros enlaces (papers, repositorios, blogs o demos): no disponibles en los resultados de busqueda proporcionados.

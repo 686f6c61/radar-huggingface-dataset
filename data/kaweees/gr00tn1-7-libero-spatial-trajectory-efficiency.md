@@ -82,8 +82,8 @@ Advertencias sobre estos datos: se trata de una unica tarea (tarea 0), de un uni
 
 | Modelo | Parametros | Contexto | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kaweees/gr00tn1.7-libero-spatial-trajectory-efficiency | 3 000 millones aproximados (heredados del base) | no disponible | 14/20 exitos en la tarea 0 de LIBERO Spatial con 25 trayectorias, 12 epocas | no disponible | pesos safetensors en HuggingFace, 339,6 GB, 0 descargas |
-| nvidia/GR00T-N1.7-3B (modelo base) | 3 000 millones segun denominacion | no disponible | no disponible en la informacion proporcionada | la de NVIDIA, no verificada aqui | modelo oficial de NVIDIA en HuggingFace |
+| kaweees/gr00tn1.7-libero-spatial-trajectory-efficiency | 3 000 millones aproximados (heredados del base) | no disponible | 14/20 exitos en la tarea 0 de LIBERO Spatial con 25 trayectorias, 12 epocas | no disponible | pesos safetensors en Hugging Face, 339,6 GB, 0 descargas |
+| nvidia/GR00T-N1.7-3B (modelo base) | 3 000 millones segun denominacion | no disponible | no disponible en la informacion proporcionada | la de NVIDIA, no verificada aqui | modelo oficial de NVIDIA en Hugging Face |
 | Otros ajustes de GR00T N1.7 para LIBERO | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de parametros, contexto, rendimiento ni licencia de alternativas comparables dentro de la informacion proporcionada, por lo que la comparativa cuantitativa con modelos como OpenVLA, pi0 u otros VLA de la misma categoria no puede completarse sin inventar cifras.
@@ -105,7 +105,7 @@ No se dispone de datos de parametros, contexto, rendimiento ni licencia de alter
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kaweees/gr00tn1.7-libero-spatial-trajectory-efficiency
+- Repositorio en Hugging Face: https://huggingface.co/kaweees/gr00tn1.7-libero-spatial-trajectory-efficiency
 - Checkpoint con 5 trayectorias: https://huggingface.co/kaweees/gr00tn1.7-libero-spatial-trajectory-efficiency/tree/main/n1.7/trajectories-005
 - Checkpoint con 10 trayectorias: https://huggingface.co/kaweees/gr00tn1.7-libero-spatial-trajectory-efficiency/tree/main/n1.7/trajectories-010
 - Checkpoint con 15 trayectorias: https://huggingface.co/kaweees/gr00tn1.7-libero-spatial-trajectory-efficiency/tree/main/n1.7/trajectories-015

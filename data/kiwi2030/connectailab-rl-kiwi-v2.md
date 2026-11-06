@@ -68,8 +68,8 @@ Los resultados proceden de la model card del autor. El propio autor advierte que
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-kiwi-v2 | 0,8B (LoRA sobre Qwen3.5-0.8B) | no disponible | Decisión de opción múltiple en simulador | Apache 2.0 | HuggingFace |
-| Qwen3.5-0.8B (base) | 0,8B | no disponible | Lenguaje general | Apache 2.0 (según modelo base) | HuggingFace |
+| connectailab-rl-kiwi-v2 | 0,8B (LoRA sobre Qwen3.5-0.8B) | no disponible | Decisión de opción múltiple en simulador | Apache 2.0 | Hugging Face |
+| Qwen3.5-0.8B (base) | 0,8B | no disponible | Lenguaje general | Apache 2.0 (según modelo base) | Hugging Face |
 | Política PPO del simulador (profesora) | no disponible (modelo pequeño) | no disponible | Decisión en Connect Tycoon | no disponible | No publicada como modelo independiente |
 
 No se dispone de información sobre otros adaptadores RL de decisión comparables en la búsqueda realizada. La comparación más directa es contra el modelo base sin ajuste, que obtiene un 33,7 % de acierto frente al 83 % del adaptador.
@@ -87,7 +87,7 @@ No se dispone de información sobre otros adaptadores RL de decisión comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiwi2030/connectailab-rl-kiwi-v2
+- Modelo en Hugging Face: https://huggingface.co/kiwi2030/connectailab-rl-kiwi-v2
 - Repositorio Connect Tycoon: https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

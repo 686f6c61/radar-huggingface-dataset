@@ -75,7 +75,7 @@ El modelo base SmolLM3-3B supera a Llama 3.2 3B y Qwen2.5 3B en benchmarks está
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/smollm3-3b-traj-189b
+- Repositorio Hugging Face: https://huggingface.co/dvader13/smollm3-3b-traj-189b
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Modelo base SmolLM3-3B-Base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base
 - Repositorio GitHub de SmolLM: https://github.com/huggingface/smollm

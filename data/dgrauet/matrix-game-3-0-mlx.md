@@ -64,7 +64,7 @@ No se dispone de información suficiente para comparar con otros modelos de gene
 
 ## Enlaces
 
-- [HuggingFace: dgrauet/matrix-game-3.0-mlx](https://huggingface.co/dgrauet/matrix-game-3.0-mlx)
+- [Hugging Face: dgrauet/matrix-game-3.0-mlx](https://huggingface.co/dgrauet/matrix-game-3.0-mlx)
 - [Modelo base: Skywork/Matrix-Game-3.0](https://huggingface.co/Skywork/Matrix-Game-3.0)
 - [Repositorio de código: Matrix-Game-mlx](https://github.com/dgrauet/Matrix-Game-mlx)
 - [Herramienta de conversión: mlx-forge](https://github.com/dgrauet/mlx-forge)

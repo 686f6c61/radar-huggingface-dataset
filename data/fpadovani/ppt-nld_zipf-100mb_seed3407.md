@@ -12,7 +12,7 @@ El modelo se publica con 0 descargas y 0 likes en el momento de la consulta, sin
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (etiqueta `gpt2` en HuggingFace); transformer decoder-only |
+| Arquitectura | GPT-2 (etiqueta `gpt2` en Hugging Face); transformer decoder-only |
 | Parametros totales | 86.708.736 (dato real de safetensors) |
 | Parametros activos | No aplica (modelo denso, no es MoE) |
 | Longitud de contexto | No disponible |
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-nld_zipf-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-nld_zipf-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/gz0a7e39

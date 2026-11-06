@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfm_filtered_insert_xxf_character-7k_8k_9k_simpleavg_merge` es un modelo de lenguaje causal de aproximadamente 6,86 mil millones de parametros publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No se trata de un entrenamiento desde cero, sino de una fusion de pesos (weight merge) generada con mergekit: se combinan tres checkpoints correspondientes a los pasos globales 7000, 8000 y 9000 de un mismo run de entrenamiento denominado `filtered_insert_xxf_character`, aplicando un promedio lineal con normalizacion y peso 1.0 para cada checkpoint.
+`sfm_filtered_insert_xxf_character-7k_8k_9k_simpleavg_merge` es un modelo de lenguaje causal de aproximadamente 6,86 mil millones de parametros publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No se trata de un entrenamiento desde cero, sino de una fusion de pesos (weight merge) generada con mergekit: se combinan tres checkpoints correspondientes a los pasos globales 7000, 8000 y 9000 de un mismo run de entrenamiento denominado `filtered_insert_xxf_character`, aplicando un promedio lineal con normalizacion y peso 1.0 para cada checkpoint.
 
 El resultado es un modelo de arquitectura GPT-NeoX (decoder-only, segun la etiqueta `gpt_neox` del repositorio) con pesos en `bfloat16` y un tamano de repositorio de 13,7 GB, coherente con los 6.856.253.440 parametros declarados en los safetensors. La ficha del autor no documenta datos de entrenamiento, composicion del corpus, idiomas, licencia ni evaluaciones, por lo que la informacion disponible se limita practicamente a la receta de fusion.
 
@@ -42,7 +42,7 @@ No hay ningun dato disponible sobre volumen de tokens de entrenamiento, composic
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declaran idiomas en la model card).
 - Capacidades especiales (modo pensamiento, vision, audio): no disponible.
-- Integracion con el ecosistema `transformers`: confirmada por las etiquetas `transformers`, `text-generation-inference` y `endpoints_compatible`, lo que implica compatibilidad con TGI y con los endpoints de HuggingFace.
+- Integracion con el ecosistema `transformers`: confirmada por las etiquetas `transformers`, `text-generation-inference` y `endpoints_compatible`, lo que implica compatibilidad con TGI y con los endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -67,7 +67,7 @@ La model card no incluye ningun tipo de evaluacion (MMLU, HumanEval, GSM8K, MT-B
 - VRAM estimada en cuantizacion de 4 bits: en torno a 4-5 GB de pesos.
 - GPU profesionales: cabe holgadamente en una A100 40 GB, A100 80 GB, H100 o L40S, permitiendo lotes grandes y contextos largos.
 - GPU de consumo: cabe en `bfloat16` en RTX 3090 y RTX 4090 (24 GB). En RTX 4080 y tarjetas de 16 GB es recomendable cuantizar a 8 o 4 bits.
-- Despliegue: compatible con `transformers`, con TGI (etiqueta `text-generation-inference`) y con endpoints compatibles de HuggingFace; tambien es viable en vLLM al tratarse de un modelo GPT-NeoX. Para llama.cpp u Ollama seria necesario convertir previamente los pesos a GGUF, conversion que el autor no ha publicado.
+- Despliegue: compatible con `transformers`, con TGI (etiqueta `text-generation-inference`) y con endpoints compatibles de Hugging Face; tambien es viable en vLLM al tratarse de un modelo GPT-NeoX. Para llama.cpp u Ollama seria necesario convertir previamente los pesos a GGUF, conversion que el autor no ha publicado.
 - Latencia y throughput estimados: no disponible, ya que no hay mediciones publicadas ni configuracion conocida de capas y contexto.
 - Nota: el repositorio ocupa 13,7 GB, por lo que se necesita ese espacio libre en disco ademas de la VRAM.
 
@@ -75,10 +75,10 @@ La model card no incluye ningun tipo de evaluacion (MMLU, HumanEval, GSM8K, MT-B
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evaluaciones publicas |
 |---|---|---|---|---|---|
-| sfm_filtered_insert_xxf_character-7k_8k_9k_simpleavg_merge | 6,86B | No disponible | No disponible | HuggingFace, safetensors, 0 descargas | Ninguna |
-| Pythia-6.9B | 6,9B | 2048 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Si (suite completa de EleutherAI) |
-| Mistral-7B-v0.1 | 7,24B | 8192 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Si |
-| Llama-2-7B | 6,74B | 4096 tokens | Llama 2 Community License | HuggingFace, ampliamente usado | Si |
+| sfm_filtered_insert_xxf_character-7k_8k_9k_simpleavg_merge | 6,86B | No disponible | No disponible | Hugging Face, safetensors, 0 descargas | Ninguna |
+| Pythia-6.9B | 6,9B | 2048 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Si (suite completa de EleutherAI) |
+| Mistral-7B-v0.1 | 7,24B | 8192 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Si |
+| Llama-2-7B | 6,74B | 4096 tokens | Llama 2 Community License | Hugging Face, ampliamente usado | Si |
 
 Pythia-6.9B es el comparable mas cercano por arquitectura, ya que tambien emplea GPT-NeoX y un numero de parametros practicamente identico, lo que permite reutilizar buena parte de las estimaciones de memoria y de los pipelines de inferencia. Mistral-7B y Llama-2-7B son alternativas de tamano similar con contexto y licencia conocidos, algo de lo que carece por completo el modelo analizado. La diferencia principal no esta en el rendimiento bruto, que no puede compararse por falta de datos, sino en la trazabilidad: los tres comparables documentan datos de entrenamiento, licencia y evaluaciones, mientras que este merge no ofrece ninguno de esos elementos.
 
@@ -98,7 +98,7 @@ Pythia-6.9B es el comparable mas cercano por arquitectura, ya que tambien emplea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-7k_8k_9k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-7k_8k_9k_simpleavg_merge
 - mergekit (herramienta de fusion utilizada): https://github.com/cg123/mergekit
 - Paper referenciado en las etiquetas del modelo (model soups, promedio de pesos): https://arxiv.org/abs/2203.05482
 - Resultados de busqueda web: las consultas realizadas no devolvieron ningun enlace relevante sobre este modelo; los unicos resultados obtenidos fueron paginas comerciales de Amazon ajenas por completo al contenido.

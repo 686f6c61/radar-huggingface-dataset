@@ -91,7 +91,7 @@ Las tres variantes uncensored se basan en el mismo modelo base y emplean técnic
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mmiiguell10/Qwen3.8-27B-uncensored-mirror)
+- [Modelo en Hugging Face](https://huggingface.co/mmiiguell10/Qwen3.8-27B-uncensored-mirror)
 - [Repositorio OBLITERATUS (proyecto original)](https://github.com/elder-plinius/OBLITERATUS)
 - [orcarouter/Qwen3.8-27B-Uncensored-FP8](https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8)
 - [Blog: How to run Qwen 3.8 27B Uncensored locally (GGUF + llama.cpp)](https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally)

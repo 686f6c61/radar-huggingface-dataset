@@ -20,11 +20,11 @@ Su relevancia es, por tanto, limitada y de carácter didáctico: sirve como ejem
 | Idiomas soportados | No aplica (clasificación de imágenes) |
 | Licencia | MIT |
 | Formato de pesos | `model.pt` (PyTorch), con los nombres de clase incluidos en el propio fichero |
-| Pipeline en HuggingFace | `image-classification` |
+| Pipeline en Hugging Face | `image-classification` |
 | Libreria declarada | PyTorch |
 | Clases de salida | 3: `light`, `healthy`, `rust` |
 | Numero de descargas / likes | 0 / 0 |
-| Tamano del repositorio | 0,0 GB (segun los metadatos de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun los metadatos de Hugging Face) |
 | Fecha de creacion / actualizacion | 2026-09-16 (fechas anomalas en los metadatos; ver limitaciones) |
 
 ## Arquitectura y entrenamiento
@@ -47,7 +47,7 @@ No hay información disponible sobre el proceso de entrenamiento: se desconoce e
 ## Casos de uso
 
 - Triaje de hojas en campo desde el móvil: el modelo puede clasificar una fotografía tomada con un teléfono en una de las tres categorías y devolver una probabilidad, sirviendo como primer filtro para el agricultor antes de consultar a un especialista. Es adecuado por su tamaño reducido y su capacidad de ejecución en CPU.
-- Aplicación web de demostración con Gradio: el repositorio incluye `app.py`, que muestra la predicción top-3; es directamente utilizable como demo docente o como Space en HuggingFace una vez resuelto el requisito de cuenta PRO para Spaces Gradio.
+- Aplicación web de demostración con Gradio: el repositorio incluye `app.py`, que muestra la predicción top-3; es directamente utilizable como demo docente o como Space en Hugging Face una vez resuelto el requisito de cuenta PRO para Spaces Gradio.
 - Prototipo educativo de visión por computador: sirve como ejemplo reproducible del flujo completo de fine-tuning de una CNN ligera y despliegue con Gradio en un curso de aprendizaje automático.
 - Etiquetado asistido (active learning): puede preanotar lotes de imágenes de hojas para que un experto solo revise o corrija las predicciones de baja confianza, reduciendo el coste de anotación de un dataset mayor.
 - Prefiltrado en pipelines de imágenes aéreas o de dron: en un flujo que capture muchas imágenes de cultivo, el modelo puede descartar rápidamente las hojas sanas y derivar solo las sospechosas a un modelo o a un revisor humano.
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo, incluso en iGPU y en aceleradores integrados. También se ejecuta en CPU y en placas tipo Raspberry Pi.
 - Opciones de despliegue: PyTorch nativo (script `app.py` con Gradio), exportación a TorchScript u ONNX Runtime, o TorchServe. No se publican ficheros GGUF, por lo que llama.cpp, Ollama y motores de inferencia de LLM no son aplicables.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas para este modelo; en cualquier caso, para una CNN de este tamaño la inferencia por imagen en CPU moderna se sitúa típicamente en el rango de milisegundos a decenas de milisegundos, pero no se ha verificado con este artefacto.
-- Requisitos de despliegue en HuggingFace: la propia model card indica que la creación de un Gradio Space en el plan gratuito devuelve error 402 Payment Required, por lo que la demo pública requiere cuenta PRO o desbloqueo educativo.
+- Requisitos de despliegue en Hugging Face: la propia model card indica que la creación de un Gradio Space en el plan gratuito devuelve error 402 Payment Required, por lo que la demo pública requiere cuenta PRO o desbloqueo educativo.
 
 ## Comparativa con modelos similares
 
@@ -75,7 +75,7 @@ La comparativa se establece con arquitecturas de clasificación de imagen de tam
 
 | Modelo | Parametros | Entrada tipica | Top-1 ImageNet (referencia de la arquitectura base) | Licencia de la arquitectura | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (MobileNetV3-Small ajustado) | Aproximadamente 2,5 M | No declarada (habitual 224 x 224) | No disponible para este fine-tune | MIT (pesos publicados) | HuggingFace, 0 descargas |
+| Este modelo (MobileNetV3-Small ajustado) | Aproximadamente 2,5 M | No declarada (habitual 224 x 224) | No disponible para este fine-tune | MIT (pesos publicados) | Hugging Face, 0 descargas |
 | MobileNetV3-Small (base, sin ajustar) | Aproximadamente 2,5 M | 224 x 224 | Aproximadamente 67,7 % | Apache 2.0 / MIT segun implementacion | Ampliamente disponible (torchvision, timm) |
 | MobileNetV2 1.0 | Aproximadamente 3,4 M | 224 x 224 | Aproximadamente 72,0 % | Apache 2.0 | Ampliamente disponible |
 | EfficientNet-B0 | Aproximadamente 5,3 M | 224 x 224 | Aproximadamente 77,1 % | Apache 2.0 | Ampliamente disponible |
@@ -97,12 +97,12 @@ En terminos de la tarea concreta (triaje de hojas en tres clases) no se dispone 
 - El repositorio figura con un tamaño de 0,0 GB, lo que puede indicar que los pesos no están efectivamente alojados o que los metadatos no se han actualizado. Conviene verificar la descarga del fichero `model.pt` antes de depender de él.
 - Fechas de creación y actualización registradas en 2026, posteriores a la fecha de consulta habitual; se trata de un error de metadatos o de un reloj mal configurado, no de un dato fiable.
 - El texto de la model card aparece parcialmente corrupto (por ejemplo, "light / healthy / ust" y "equirements.txt"), lo que sugiere un problema de codificación en la publicación. No hay que interpretarlo como documentación fiable.
-- El despliegue como Space en el plan gratuito de HuggingFace falla con error 402, según reconoce el propio autor; la demo pública depende de una cuenta PRO o de un desbloqueo educativo.
+- El despliegue como Space en el plan gratuito de Hugging Face falla con error 402, según reconoce el propio autor; la demo pública depende de una cuenta PRO o de un desbloqueo educativo.
 - Para cualquier uso en producción se requiere reentrenamiento con datos propios, validación cruzada, calibración de umbrales de confianza y monitorización de la deriva de datos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Salaam21/csc6302-prac4-SINYANI
+- Modelo en Hugging Face: https://huggingface.co/Salaam21/csc6302-prac4-SINYANI
 - Space propuesto por el autor (no verificado como activo): https://huggingface.co/spaces/Salaam21/csc6302-prac4-SINYANI
 - Referencia de la arquitectura base, no incluida en la búsqueda web realizada: artículo "Searching for MobileNetV3", https://arxiv.org/abs/1905.02244
 - La búsqueda web realizada no ha devuelto ningún enlace relevante sobre este modelo; los resultados obtenidos correspondían a perfiles de LinkedIn de personas sin relación con el proyecto. No se dispone de paper, blog, repositorio adicional ni demo asociados.

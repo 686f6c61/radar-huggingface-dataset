@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZYI-1.1-TINY es un modelo de generacion de imagenes texto-a-imagen publicado por el usuario caikybaldo999 en HuggingFace. Se trata de un *fine-tune* del modelo `caikybaldo999/ZYI-1-TINY`, del mismo autor, y esta construido sobre una arquitectura propia denominada ZYI-DiT (Diffusion Transformer) con un denoiser de tan solo 59,2 millones de parametros, entrenado con formulacion de *rectified flow*. El condicionamiento de texto se realiza con FLAN-T5-base y la decodificacion latente con el VAE `stabilityai/sd-vae-ft-mse`, lo que da una resolucion de trabajo de 256x256 pixeles.
+ZYI-1.1-TINY es un modelo de generacion de imagenes texto-a-imagen publicado por el usuario caikybaldo999 en Hugging Face. Se trata de un *fine-tune* del modelo `caikybaldo999/ZYI-1-TINY`, del mismo autor, y esta construido sobre una arquitectura propia denominada ZYI-DiT (Diffusion Transformer) con un denoiser de tan solo 59,2 millones de parametros, entrenado con formulacion de *rectified flow*. El condicionamiento de texto se realiza con FLAN-T5-base y la decodificacion latente con el VAE `stabilityai/sd-vae-ft-mse`, lo que da una resolucion de trabajo de 256x256 pixeles.
 
 El modelo resuelve el problema de la sintesis de imagenes a partir de descripciones textuales en un regimen de computo extremadamente bajo: con menos de 60 millones de parametros en el denoiser, es aproximadamente un orden de magnitud mas pequeno que los UNet de Stable Diffusion 1.5. Esto lo situa en la categoria de modelos "tiny" pensados para experimentacion, prototipado rapido y despliegue en hardware muy limitado, mas que para generacion fotorrealista de alta fidelidad.
 
@@ -89,7 +89,7 @@ Frente a estas alternativas, ZYI-1.1-TINY es entre uno y dos ordenes de magnitud
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/caikybaldo999/ZYI-1.1-TINY
+- Hugging Face: https://huggingface.co/caikybaldo999/ZYI-1.1-TINY
 - Modelo base referenciado: `caikybaldo999/ZYI-1-TINY` (no se ha localizado informacion publica adicional)
 - Dataset de ajuste fino: `pixparse/cc3m-wds` (CC3M / Conceptual Captions 3M)
 - Codificador de texto: FLAN-T5-base

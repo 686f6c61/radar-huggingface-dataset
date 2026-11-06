@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VAL-APEX-I MiniPlus V3 es una cuantización GGUF del modelo Qwen/Qwen3.8-27B (27.320.697.856 parámetros) publicada por el usuario IsValorum en HuggingFace. No se trata de un entrenamiento nuevo, sino de una receta de cuantización quirúrgica que busca mantener la calidad percibida de un formato Q5-Q6 con un peso efectivo de 4,14 bits por peso y un fichero final de 14,16 GB. El resultado es un modelo de razonamiento en inglés que cabe en GPUs de 24 GB manteniendo un contexto declarado de hasta 256K tokens.
+VAL-APEX-I MiniPlus V3 es una cuantización GGUF del modelo Qwen/Qwen3.8-27B (27.320.697.856 parámetros) publicada por el usuario IsValorum en Hugging Face. No se trata de un entrenamiento nuevo, sino de una receta de cuantización quirúrgica que busca mantener la calidad percibida de un formato Q5-Q6 con un peso efectivo de 4,14 bits por peso y un fichero final de 14,16 GB. El resultado es un modelo de razonamiento en inglés que cabe en GPUs de 24 GB manteniendo un contexto declarado de hasta 256K tokens.
 
 La relevancia técnica está en el tratamiento diferenciado de la topología híbrida del modelo base: 47 capas recurrentes DeltaNet SSM, 17 capas de atención cuadrática completa y 64 capas MLP SwiGLU densas reciben reglas de cuantización distintas (848 reglas en total), con los operadores de estado recurrente preservados en F32 sin comprimir para evitar la deriva acumulada del estado a lo largo de contextos largos. El autor reporta una perplejidad WikiText-2 de 6,1361 frente a 5,7942 del BF16 de referencia, es decir, un incremento del 5,90%.
 
@@ -15,7 +15,7 @@ El modelo se distribuye bajo licencia Apache 2.0, con pipeline de text-generatio
 | Arquitectura | Híbrida: 47 capas recurrentes DeltaNet SSM (atención lineal) + 17 capas de atención cuadrática completa + 64 capas MLP SwiGLU densas |
 | Parametros totales | 27.320.697.856 (27,32 mil millones) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 256.000 tokens (según la model card del autor; no verificado en los metadatos de HuggingFace) |
+| Longitud de contexto | 256.000 tokens (según la model card del autor; no verificado en los metadatos de Hugging Face) |
 | Tipos de cuantizacion | Mixta: F32 (operadores de estado SSM: ssm_a, ssm_conv1d, ssm_dt, ssm_norm), Q8_0 (ssm_alpha, ssm_beta), Q6_K (proyecciones de valor y salida, output.weight), IQ4_XS vector-calibrado (proyecciones down del MLP), esquema asimétrico Edge vs Core (proyecciones gate y up), Q4_0 como fallback de emergencia. Media efectiva: 4,14 BPW |
 | Idiomas soportados | Inglés (en), según los metadatos del repositorio y la model card |
 | Licencia | apache-2.0 |
@@ -35,7 +35,7 @@ No se documenta en la información disponible ningún proceso de RLHF, DPO u otr
 - Razonamiento multi-paso sobre contextos extensos: la arquitectura base combina atención lineal recurrente con atención completa periódica, lo que en teoría permite manejar hasta 256K tokens con coste subcuadrático en la mayoría de capas.
 - Procesamiento de documentos largos en una sola pasada, sin fragmentación, gracias a la ventana de contexto declarada.
 - Ejecución local en llama.cpp con soporte de offload completo a GPU (`-ngl 99`).
-- Compatibilidad declarada con endpoints (etiqueta `endpoints_compatible` en los metadatos de HuggingFace).
+- Compatibilidad declarada con endpoints (etiqueta `endpoints_compatible` en los metadatos de Hugging Face).
 - Capacidades de tool calling / function calling: no disponibles en la información proporcionada.
 - Capacidades de agente y multi-step tool use: no disponibles en la información proporcionada.
 - Capacidades multilingües: no disponibles; los metadatos solo declaran inglés.
@@ -78,10 +78,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ningún otro benc
 
 | Modelo | Parametros | Contexto | Formato / tamano | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| VAL-APEX-I MiniPlus V3 (esta edicion) | 27,32 mil millones | 256K (declarado) | GGUF, 14,16 GB, 4,14 BPW | WikiText-2 PPL 6,1361 (+5,90% vs BF16) | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-27B (modelo base) | 27,32 mil millones | no disponible en la informacion proporcionada | safetensors, BF16, 54,65 GB | WikiText-2 PPL 5,7942 (referencia) | no disponible en la informacion proporcionada | HuggingFace |
-| VAL-APEX-I NanoPlus V3 | 27,32 mil millones | 256K (declarado) | GGUF, 11,35 GB | WikiText-2 PPL 6,2577 (+8,00% vs BF16) | apache-2.0 | HuggingFace |
-| ISTA-DASLab GSQ-RCO IQ3_S | 27,32 mil millones | 256K (declarado) | GGUF, 11,80 GB | WikiText-2 PPL 7,07 | no disponible en la informacion proporcionada | HuggingFace |
+| VAL-APEX-I MiniPlus V3 (esta edicion) | 27,32 mil millones | 256K (declarado) | GGUF, 14,16 GB, 4,14 BPW | WikiText-2 PPL 6,1361 (+5,90% vs BF16) | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-27B (modelo base) | 27,32 mil millones | no disponible en la informacion proporcionada | safetensors, BF16, 54,65 GB | WikiText-2 PPL 5,7942 (referencia) | no disponible en la informacion proporcionada | Hugging Face |
+| VAL-APEX-I NanoPlus V3 | 27,32 mil millones | 256K (declarado) | GGUF, 11,35 GB | WikiText-2 PPL 6,2577 (+8,00% vs BF16) | apache-2.0 | Hugging Face |
+| ISTA-DASLab GSQ-RCO IQ3_S | 27,32 mil millones | 256K (declarado) | GGUF, 11,80 GB | WikiText-2 PPL 7,07 | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de otros modelos de la misma categoría fuera de las cuantizaciones del mismo modelo base, por lo que la comparación se limita a variantes de cuantización y al BF16 de referencia.
 
@@ -99,7 +99,7 @@ No se dispone de datos de otros modelos de la misma categoría fuera de las cuan
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-MiniPlus-V3-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-MiniPlus-V3-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper, blog o repositorio de la receta VAL-APEX-I: no disponible en la información proporcionada
 - Matriz de calibración ISTA-DASLab iMatrix: no disponible en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `labxarm0822_stack_bowl_dynamic_50hz_gran10_fixall_ema_10k_bs4x1` es un artefacto publicado en HuggingFace por el usuario `s1ghhh` el 23 de agosto de 2026. No se dispone de ninguna documentación oficial, descripción, tarjeta de modelo ni metadatos técnicos más allá del nombre y el tamaño del repositorio (35,9 GB). El nombre sugiere una posible aplicación en robótica, concretamente el control de un brazo robótico (labxarm) para apilar cuencos (stack_bowl) con una frecuencia de control dinámico de 50 Hz, una granularidad de 10, y un entrenamiento de 10.000 pasos con un tamaño de lote de 4x1, además de indicar el uso de media móvil exponencial (EMA) y un ajuste completo de parámetros (fixall). Sin embargo, estas interpretaciones son especulativas y no están respaldadas por ninguna fuente verificable.
+El modelo identificado como `labxarm0822_stack_bowl_dynamic_50hz_gran10_fixall_ema_10k_bs4x1` es un artefacto publicado en Hugging Face por el usuario `s1ghhh` el 23 de agosto de 2026. No se dispone de ninguna documentación oficial, descripción, tarjeta de modelo ni metadatos técnicos más allá del nombre y el tamaño del repositorio (35,9 GB). El nombre sugiere una posible aplicación en robótica, concretamente el control de un brazo robótico (labxarm) para apilar cuencos (stack_bowl) con una frecuencia de control dinámico de 50 Hz, una granularidad de 10, y un entrenamiento de 10.000 pasos con un tamaño de lote de 4x1, además de indicar el uso de media móvil exponencial (EMA) y un ajuste completo de parámetros (fixall). Sin embargo, estas interpretaciones son especulativas y no están respaldadas por ninguna fuente verificable.
 
 La ausencia de información pública impide determinar la arquitectura, el tipo de modelo, los datos de entrenamiento o las capacidades reales. El repositorio tiene 38 descargas y ninguna valoración, lo que sugiere que se trata de un artefacto de investigación o de un experimento personal sin difusión. No se ha encontrado ninguna referencia externa en la web que lo mencione.
 
@@ -53,6 +53,6 @@ No disponible. No se ha identificado ningún modelo comparable en la misma categ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/s1ghhh/labxarm0822_stack_bowl_dynamic_50hz_gran10_fixall_ema_10k_bs4x1
+- Repositorio en Hugging Face: https://huggingface.co/s1ghhh/labxarm0822_stack_bowl_dynamic_50hz_gran10_fixall_ema_10k_bs4x1
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web.

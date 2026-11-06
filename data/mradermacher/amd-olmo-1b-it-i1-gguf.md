@@ -79,7 +79,7 @@ La comparativa de rendimiento no es posible sin benchmarks publicados. Se recomi
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/AMD-OLMo-1B-IT-i1-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/AMD-OLMo-1B-IT-i1-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/aiuser3993/AMD-OLMo-1B-IT
 - Blog de AMD sobre los modelos OLMo: https://www.amd.com/en/developer/resources/technical-articles/introducing-the-first-amd-1b-language-model.html
 - Repositorio de OLMo (AI2): https://github.com/allenai/OLMo

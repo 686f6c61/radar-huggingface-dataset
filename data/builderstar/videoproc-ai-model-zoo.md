@@ -22,7 +22,7 @@ La relevancia actual es doble: por un lado, permite estudiar y reutilizar arquit
 | Autor / repositorio | Builderstar / `Builderstar/videoproc-ai-model-zoo` |
 | Libreria declarada | `onnxruntime` |
 | Pipeline declarado | `image-to-image` |
-| Tamano del repositorio en HuggingFace | 0,1 GB declarados (el README describe ~53 GiB de pesos desempaquetados + ~63 MiB de modelos empaquetados) |
+| Tamano del repositorio en Hugging Face | 0,1 GB declarados (el README describe ~53 GiB de pesos desempaquetados + ~63 MiB de modelos empaquetados) |
 | Numero de modelos | 31 ONNX portables + 1 508 motores TensorRT + 12 ficheros NCNN/DeepFilterNet |
 | Factores de escala | x1, x2 y x4 (fijados por modelo) |
 | Entrada / salida ONNX | Tensores NCHW float32 en rango [0,1], dimensiones dinamicas resueltas en tiempo de carga |
@@ -104,12 +104,12 @@ La diferencia estructural mas relevante frente a estas alternativas es que aqui 
 - Los motores TensorRT estan bloqueados por GPU y por version de TensorRT/CUDA; un motor cargado en hardware distinto fallara o no deserializara.
 - Los ONNX trabajan en float32 con dimensiones dinamicas resueltas al cargar; cambios de forma en tiempo de ejecucion pueden provocar recompilacion o reconfiguracion del grafo.
 - No hay benchmarks publicados ni cifras de latencia o VRAM, lo que dificulta dimensionar un despliegue en produccion.
-- Discrepancia de inventario: la ficha de HuggingFace declara 0,1 GB de repositorio mientras el README describe unos 53 GiB de pesos desempaquetados mas 63 MiB de modelos empaquetados; conviene verificar que los pesos estan realmente subidos antes de planificar su uso.
+- Discrepancia de inventario: la ficha de Hugging Face declara 0,1 GB de repositorio mientras el README describe unos 53 GiB de pesos desempaquetados mas 63 MiB de modelos empaquetados; conviene verificar que los pesos estan realmente subidos antes de planificar su uso.
 - Sin versionado ni soporte: al proceder de un producto comercial cerrado, los pesos pueden quedar obsoletos o desaparecer en futuras versiones de la aplicacion de origen.
 - El repositorio no incluye codigo de aplicacion, por lo que hay que construir todo el preprocesado, el troceado de video y el postprocesado por cuenta propia.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Builderstar/videoproc-ai-model-zoo
+- Repositorio en Hugging Face: https://huggingface.co/Builderstar/videoproc-ai-model-zoo
 - Referencias internas del repositorio (no enlazables directamente, citadas en la model card): `MODEL_ZOO_MANIFEST.json`, `MODEL_ZOO_MANIFEST.csv`, `MODELS.md`, `tools/REPORT.md`, `tools/re-lab-REPORT.md`
 - Enlaces externos a papers, blogs, repos de codigo o demos: no disponible. La busqueda web realizada no devolvio resultados relacionados con este repositorio ni con VideoProc Converter AI; los resultados obtenidos versaban sobre otros temas y no aportan informacion util para esta ficha.

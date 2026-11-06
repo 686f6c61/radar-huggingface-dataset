@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `qing-yao/ppt-pythia-1b-appendix-structured-seed3408-stage2` es un ajuste fino de tipo SFT (supervised fine-tuning) sobre una base de arquitectura GPT-NeoX con 1.011.781.632 parametros reales verificados en los pesos `safetensors`. Lo publica el usuario `qing-yao` en HuggingFace y esta entrenado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.8.0. Por el nombre y el recuento de parametros, la base es compatible con la familia Pythia-1B de EleutherAI, aunque la model card no identifica el modelo base: el campo correspondiente aparece literalmente como `None`.
+El modelo `qing-yao/ppt-pythia-1b-appendix-structured-seed3408-stage2` es un ajuste fino de tipo SFT (supervised fine-tuning) sobre una base de arquitectura GPT-NeoX con 1.011.781.632 parametros reales verificados en los pesos `safetensors`. Lo publica el usuario `qing-yao` en Hugging Face y esta entrenado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.8.0. Por el nombre y el recuento de parametros, la base es compatible con la familia Pythia-1B de EleutherAI, aunque la model card no identifica el modelo base: el campo correspondiente aparece literalmente como `None`.
 
 Se trata de un artefacto de investigacion, no de un modelo de produccion: no tiene descargas ni valoraciones, no declara licencia, no declara idiomas y no publica evaluacion alguna. El nombre sugiere un experimento controlado sobre formato de datos ("appendix-structured") y ordenacion de entrenamiento ("stage2", "seed3408"), lo que lo hace relevante para quien investigue reproducibilidad de SFT y sensibilidad a la semilla y a la estructura del dataset, mas que para aplicaciones finales.
 
@@ -18,7 +18,7 @@ Su tamano (1B parametros, repositorio de 2.0 GB, pesos en precision de 16 bits) 
 | Longitud de contexto | no disponible (la model card no lo especifica; la configuracion publica de Pythia-1B emplea 2048 tokens, sin confirmar aqui) |
 | Tipos de cuantizacion | no disponible (solo se publican pesos `safetensors` en 16 bits; no hay versiones GGUF, AWQ ni GPTQ oficiales) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (el campo de HuggingFace esta vacio y la model card incluye un marcador `licence: license` sin contenido) |
+| Licencia | no disponible (el campo de Hugging Face esta vacio y la model card incluye un marcador `licence: license` sin contenido) |
 | Formato de pesos | `safetensors` (tamano de repositorio 2.0 GB, coherente con ~1.01B parametros en FP16/BF16) |
 | Biblioteca | transformers |
 | Pipeline | text-generation |
@@ -96,7 +96,7 @@ La diferencia practica mas relevante frente a estas alternativas no es de rendim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-1b-appendix-structured-seed3408-stage2
+- Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-1b-appendix-structured-seed3408-stage2
 - Repositorio de TRL (framework de entrenamiento citado en la model card): https://github.com/huggingface/trl
 - Referencia bibliografica citada, TRL: Transformer Reinforcement Learning, von Werra et al., 2020.
 - Modelo base: no disponible (la model card enlaza a `https://huggingface.co/None`).

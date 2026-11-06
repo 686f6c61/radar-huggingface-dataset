@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks para este checkpoint legacy en la i
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ColMinistral3 (este repo) | 3,85 B | no disponible | ColPali / late interaction sobre Ministral-3-3B | no disponible | HuggingFace, 6 descargas |
-| ColPali (vidore/colpali) | ~2,9 B (basado en PaliGemma) | no disponible | ColPali / late interaction | no disponible en la información | HuggingFace |
-| ColQwen2 (vidore/colqwen2-v1.0) | ~2,2 B (basado en Qwen2-VL-2B) | no disponible | ColPali / late interaction | no disponible en la información | HuggingFace |
-| Adaptador `colministral_siglip_vision_weighted16` sobre este base | 3,85 B + adaptador | no disponible | ColPali / late interaction | no disponible | HuggingFace (dataset `checkpoints_diverse`) |
+| ColMinistral3 (este repo) | 3,85 B | no disponible | ColPali / late interaction sobre Ministral-3-3B | no disponible | Hugging Face, 6 descargas |
+| ColPali (vidore/colpali) | ~2,9 B (basado en PaliGemma) | no disponible | ColPali / late interaction | no disponible en la información | Hugging Face |
+| ColQwen2 (vidore/colqwen2-v1.0) | ~2,2 B (basado en Qwen2-VL-2B) | no disponible | ColPali / late interaction | no disponible en la información | Hugging Face |
+| Adaptador `colministral_siglip_vision_weighted16` sobre este base | 3,85 B + adaptador | no disponible | ColPali / late interaction | no disponible | Hugging Face (dataset `checkpoints_diverse`) |
 
 No se dispone de datos de rendimiento comparables de ColPali ni ColQwen2 en la información proporcionada; las cifras ViDoRe citadas corresponden únicamente al adaptador recomendado por el autor.
 
@@ -87,6 +87,6 @@ No se dispone de datos de rendimiento comparables de ColPali ni ColQwen2 en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Omundu-Riad/colministral3
+- Repositorio Hugging Face: https://huggingface.co/Omundu-Riad/colministral3
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512
 - Dataset de checkpoints y adaptadores: https://huggingface.co/datasets/Omundu-Riad/checkpoints_diverse

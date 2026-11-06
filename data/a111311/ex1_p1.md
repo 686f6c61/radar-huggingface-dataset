@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `a111311/ex1_p1` es un modelo de generación de texto subido al Hub de HuggingFace por el usuario `a111311`. Con 2.506.172.416 parámetros (aproximadamente 2,5 mil millones), se presenta en formato `safetensors` y está etiquetado con el tag `gemma`, lo que sugiere una posible base o inspiración en la familia Gemma de Google, aunque no se confirma en la documentación. La model card es extremadamente escasa: solo menciona "Probabilistic dropout, cdf, linear" en la sección de detalles, sin aportar información sobre arquitectura, entrenamiento, capacidades o licencia.
+El modelo `a111311/ex1_p1` es un modelo de generación de texto subido al Hub de Hugging Face por el usuario `a111311`. Con 2.506.172.416 parámetros (aproximadamente 2,5 mil millones), se presenta en formato `safetensors` y está etiquetado con el tag `gemma`, lo que sugiere una posible base o inspiración en la familia Gemma de Google, aunque no se confirma en la documentación. La model card es extremadamente escasa: solo menciona "Probabilistic dropout, cdf, linear" en la sección de detalles, sin aportar información sobre arquitectura, entrenamiento, capacidades o licencia.
 
 Este modelo no tiene descargas ni likes, y fue creado en agosto de 2026. Dada la falta de documentación y de resultados de evaluación, su utilidad práctica es muy limitada para desarrolladores o investigadores que necesiten evaluar su rendimiento. La ficha que sigue refleja la información disponible, marcando como "no disponible" todos los datos que no se han publicado.
 
@@ -21,7 +21,7 @@ Este modelo no tiene descargas ni likes, y fue creado en agosto de 2026. Dada la
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información oficial sobre la arquitectura del modelo. La única pista es el tag `gemma` en HuggingFace, que podría indicar que se basa en la arquitectura Gemma (transformer decoder-only), pero no hay confirmación. La model card menciona "Probabilistic dropout, cdf, linear", que podría referirse a alguna técnica de regularización o a componentes específicos del entrenamiento, pero sin más contexto no es posible interpretarlo con rigor.
+No se dispone de información oficial sobre la arquitectura del modelo. La única pista es el tag `gemma` en Hugging Face, que podría indicar que se basa en la arquitectura Gemma (transformer decoder-only), pero no hay confirmación. La model card menciona "Probabilistic dropout, cdf, linear", que podría referirse a alguna técnica de regularización o a componentes específicos del entrenamiento, pero sin más contexto no es posible interpretarlo con rigor.
 
 Tampoco se han publicado datos sobre el conjunto de entrenamiento, el número de tokens procesados, el régimen de entrenamiento (fp16, bf16, etc.) ni si se aplicaron técnicas como RLHF o DPO. No hay información sobre innovaciones técnicas como decodificación especulativa o atención lineal.
 
@@ -66,5 +66,5 @@ No se puede realizar una comparativa fiable al no conocer la arquitectura ni el 
 
 ## Enlaces
 
-- [HuggingFace - a111311/ex1_p1](https://huggingface.co/a111311/ex1_p1)
+- [Hugging Face - a111311/ex1_p1](https://huggingface.co/a111311/ex1_p1)
 - No se han encontrado otros enlaces relevantes (papers, repositorios, demos) en la búsqueda web.

@@ -82,7 +82,7 @@ La diferencia practica entre este repositorio y mlx-community/whisper-large-v3-t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Audante/whisper-large-v3-turbo-mlx
+- Repositorio en Hugging Face: https://huggingface.co/Audante/whisper-large-v3-turbo-mlx
 - Repositorio de origen: https://huggingface.co/mlx-community/whisper-large-v3-turbo
 - Modelo base de OpenAI: https://huggingface.co/openai/whisper
 - Repositorio oficial de Whisper en GitHub: https://github.com/openai/whisper

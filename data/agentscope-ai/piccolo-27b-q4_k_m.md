@@ -89,7 +89,7 @@ No disponible. La model card no identifica modelos comparables de la misma categ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentscope-ai/Piccolo-27B-Q4_K_M
+- Hugging Face: https://huggingface.co/agentscope-ai/Piccolo-27B-Q4_K_M
 - Modelo base: https://huggingface.co/agentscope-ai/Piccolo-27B
 - GitHub: https://github.com/agentscope-ai/Piccolo
 - Demo Decision: https://decisionplayground.agentscope.io/

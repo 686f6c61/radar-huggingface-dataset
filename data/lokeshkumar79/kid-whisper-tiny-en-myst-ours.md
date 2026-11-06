@@ -23,7 +23,7 @@ El modelo presenta una arquitectura encoder-decoder transformer propia de Whispe
 
 El modelo se basa en la arquitectura Whisper tiny.en, un transformer encoder-decoder con atención estándar, diseñado originalmente por OpenAI para ASR multilingüe. En este caso, se ha realizado un fine-tuning completo sobre el corpus MyST filtrado, que consta de 57.687 utterances de entrenamiento y 9.017 de validación. El proceso de filtrado incluye eliminación de transcripciones faltantes, control de calidad mediante un ASR de referencia, manejo de etiquetas de no-habla, eliminación de utterances muy cortos y limitación de duración.
 
-El entrenamiento se llevó a cabo con el `Seq2SeqTrainer` de HuggingFace, usando precisión mixta fp16, una tasa de aprendizaje de 1e-5, batch efectivo de 64 (batch por dispositivo 16 con acumulación de gradientes de 4), 500 pasos de warmup y early stopping con paciencia de 5 basado en el WER de validación. El mejor checkpoint se obtuvo en el paso 5000. No se aplicaron técnicas de RLHF ni DPO; el entrenamiento es supervisado estándar con pérdida de entropía cruzada.
+El entrenamiento se llevó a cabo con el `Seq2SeqTrainer` de Hugging Face, usando precisión mixta fp16, una tasa de aprendizaje de 1e-5, batch efectivo de 64 (batch por dispositivo 16 con acumulación de gradientes de 4), 500 pasos de warmup y early stopping con paciencia de 5 basado en el WER de validación. El mejor checkpoint se obtuvo en el paso 5000. No se aplicaron técnicas de RLHF ni DPO; el entrenamiento es supervisado estándar con pérdida de entropía cruzada.
 
 ## Capacidades
 
@@ -44,13 +44,13 @@ El entrenamiento se llevó a cabo con el `Seq2SeqTrainer` de HuggingFace, usando
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El único dato reportado es un WER de validación del 13,14% medido durante el entrenamiento sobre utterances individuales no concatenados, utilizado exclusivamente para la selección de checkpoint. El autor indica explícitamente que este valor no es el número de evaluación reportable y que la evaluación metodológicamente rigurosa (pipeline ASR de HuggingFace con `chunk_length_s=30`, beam search de 5, batch de 4, sobre el conjunto de test concatenado de MyST) está pendiente de ejecución.
+No se han publicado resultados de benchmarks en la informacion disponible. El único dato reportado es un WER de validación del 13,14% medido durante el entrenamiento sobre utterances individuales no concatenados, utilizado exclusivamente para la selección de checkpoint. El autor indica explícitamente que este valor no es el número de evaluación reportable y que la evaluación metodológicamente rigurosa (pipeline ASR de Hugging Face con `chunk_length_s=30`, beam search de 5, batch de 4, sobre el conjunto de test concatenado de MyST) está pendiente de ejecución.
 
 ## Requisitos de hardware
 
 - Al tratarse de un modelo de 37,76 millones de parámetros, la VRAM necesaria para inferencia es muy reducida: aproximadamente 150 MB en fp16 y menos de 100 MB en cuantización de 8 bits.
 - Es ejecutable en cualquier GPU consumer con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050, etc.) y también en CPU con un rendimiento aceptable para audios cortos.
-- Para despliegue en producción, se recomienda usar el pipeline de HuggingFace `automatic-speech-recognition` o la librería `transformers` con el modelo cargado en fp16.
+- Para despliegue en producción, se recomienda usar el pipeline de Hugging Face `automatic-speech-recognition` o la librería `transformers` con el modelo cargado en fp16.
 - También puede servirse mediante `vLLM` o `TGI` si se desea un endpoint HTTP, aunque al ser un modelo pequeño, la latencia será baja incluso en CPU.
 - No se dispone de datos de throughput medidos; en una GPU moderna (por ejemplo, RTX 4090) se espera una latencia de decodificación de unos pocos cientos de milisegundos por utterance de 5-10 segundos.
 
@@ -76,7 +76,7 @@ Los tres modelos comparten la misma tarea (ASR de habla infantil en inglés) y e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lokeshkumar79/kid-whisper-tiny-en-myst-ours
+- Modelo en Hugging Face: https://huggingface.co/lokeshkumar79/kid-whisper-tiny-en-myst-ours
 - Repositorio de la tesis (GitHub): https://github.com/lokeshkumar80/M.Tech_Thesis
 - Modelo base `openai/whisper-tiny.en`: https://huggingface.co/openai/whisper-tiny.en
 - Checkpoint relacionado de Attia et al.: https://huggingface.co/aadel4/kid-whisper-small-en-myst (y variante medium)

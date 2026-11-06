@@ -37,7 +37,7 @@ En cuanto al artefacto aquí descrito, se trata exclusivamente de una conversió
 - Inferencia en backend ROCm y Vulkan de llama.cpp, con endpoints compatibles según la etiqueta `endpoints_compatible`.
 - Soporte de tool calling o function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible; no se declaran idiomas en la ficha de HuggingFace.
+- Capacidades multilingües: no disponible; no se declaran idiomas en la ficha de Hugging Face.
 - Decodificación especulativa: no soportada, al no incluirse pesos del cabezal MTP.
 
 ## Casos de uso
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks que permitan comparar con modelos de otras 
 - Las cuantizaciones de 4 bits pierden fidelidad respecto a BF16: la coincidencia top-1 se sitúa entre el 86,41 % y el 87,29 %, y la perplejidad empeora entre un 3,9 % y un 5,3 %. En tareas sensibles a la precisión (código, matemáticas) esto puede traducirse en errores adicionales.
 - No se incluyen pesos del cabezal MTP, de modo que no hay decodificación especulativa y la latencia de decodificación no puede reducirse por esa vía.
 - El formato ROCmFP4 está orientado a GPUs AMD gfx1151; no se ha validado en hardware NVIDIA ni en otras arquitecturas AMD.
-- No se declaran idiomas soportados en la ficha de HuggingFace, por lo que el comportamiento multilingüe es desconocido.
+- No se declaran idiomas soportados en la ficha de Hugging Face, por lo que el comportamiento multilingüe es desconocido.
 - La licencia es apache-2.0, lo que en principio permite uso comercial, pero al derivar del modelo nex-agi/Nex-N2.5-mini conviene verificar las condiciones del modelo base antes de un despliegue en producción.
 - Se trata de un artefacto de comunidad con 32 descargas y 0 likes: no ha pasado por una validación independiente amplia.
 - El riesgo de alucinación y los sesgos del modelo base no están documentados en la información disponible.
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks que permitan comparar con modelos de otras 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kingjones777/Nex-N2.5-mini-ROCmFP4-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/kingjones777/Nex-N2.5-mini-ROCmFP4-GGUF
 - Modelo base: https://huggingface.co/nex-agi/Nex-N2.5-mini
 - Builds con importance matrix del mismo autor: https://huggingface.co/kingjones777/Nex-N2.5-mini-ROCmFP4-imatrix-GGUF
 - Otra conversión pública ROCmFP4 del mismo modelo: https://huggingface.co/julianmb/Nex-N2.5-mini-ROCmFP4-GGUF

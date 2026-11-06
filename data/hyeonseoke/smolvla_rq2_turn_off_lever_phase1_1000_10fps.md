@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este ajuste fino (smolvla_rq2_turn_off_lever_phase1_1000_10fps) | 450 M | VLA especializado (una tarea) | estado (6,) + 3 imagenes 256x256 + texto de tarea | apache-2.0 | HuggingFace, via LeRobot |
-| lerobot/smolvla_base | 450 M | VLA generalista (modelo base) | estado + imagenes + instruccion | apache-2.0 | HuggingFace |
-| OpenVLA | 7 B (aprox.) | VLA sobre LLM de 7 B con codificadores visuales | imagenes + instruccion | no verificada en la informacion disponible | HuggingFace |
-| pi0 | 3,3 B (aprox.) | VLA con experto de acciones | imagenes + instruccion | no verificada en la informacion disponible | HuggingFace (openpi) |
+| Este ajuste fino (smolvla_rq2_turn_off_lever_phase1_1000_10fps) | 450 M | VLA especializado (una tarea) | estado (6,) + 3 imagenes 256x256 + texto de tarea | apache-2.0 | Hugging Face, via LeRobot |
+| lerobot/smolvla_base | 450 M | VLA generalista (modelo base) | estado + imagenes + instruccion | apache-2.0 | Hugging Face |
+| OpenVLA | 7 B (aprox.) | VLA sobre LLM de 7 B con codificadores visuales | imagenes + instruccion | no verificada en la informacion disponible | Hugging Face |
+| pi0 | 3,3 B (aprox.) | VLA con experto de acciones | imagenes + instruccion | no verificada en la informacion disponible | Hugging Face (openpi) |
 | ACT | 80 M (aprox.) | Transformer de imitacion | estado + imagenes | no verificada en la informacion disponible | repositorios publicos |
 
 Los datos de los modelos comparados proceden de informacion publica general sobre ellos y no han podido contrastarse con la busqueda web realizada, que no devolvio resultados relevantes. La ventaja principal de este checkpoint frente a alternativas como OpenVLA o pi0 es el tamano (450 M frente a miles de millones de parametros), lo que abarata el despliegue; la desventaja es que esta especializado en una unica tarea, mientras que los otros son modelos base de proposito general.
@@ -98,7 +98,7 @@ Los datos de los modelos comparados proceden de informacion publica general sobr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HyeonseokE/smolvla_rq2_turn_off_lever_phase1_1000_10fps
+- Modelo en Hugging Face: https://huggingface.co/HyeonseokE/smolvla_rq2_turn_off_lever_phase1_1000_10fps
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/HyeonseokE/rq2_turn_off_lever_phase1_20_10fps
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=HyeonseokE/rq2_turn_off_lever_phase1_20_10fps

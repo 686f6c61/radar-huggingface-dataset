@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bobic 1.6 Raye es un modelo de lenguaje pequeno (SLM) de 125,86 millones de parametros desarrollado por el usuario Skebobic y publicado en HuggingFace. Se presenta como un modelo entrenado desde cero y alineado mediante tecnicas de aprendizaje por refuerzo (RL/GRPO), orientado especificamente a tareas de razonamiento y de reduccion de alucinaciones en dominios concretos como la aritmetica y la logica de sentido comun. Su principal argumento es que, pese a su tamano reducido, mantiene una precision de tipo zero-shot medible en MMLU-Pro.
+Bobic 1.6 Raye es un modelo de lenguaje pequeno (SLM) de 125,86 millones de parametros desarrollado por el usuario Skebobic y publicado en Hugging Face. Se presenta como un modelo entrenado desde cero y alineado mediante tecnicas de aprendizaje por refuerzo (RL/GRPO), orientado especificamente a tareas de razonamiento y de reduccion de alucinaciones en dominios concretos como la aritmetica y la logica de sentido comun. Su principal argumento es que, pese a su tamano reducido, mantiene una precision de tipo zero-shot medible en MMLU-Pro.
 
 El modelo emplea una arquitectura transformer con Grouped-Query Attention en configuracion 12:4, redes feed-forward de tipo SwiGLU, normalizacion RMSNorm y embeddings rotatorios (RoPE). Incluye un componente especifico denominado NumberHead a nivel de token, disenado para mejorar la estabilidad numerica en operaciones aritmeticas. La longitud de contexto es de 2048 tokens y el vocabulario BPE es de 16.384 tokens.
 
@@ -72,13 +72,13 @@ No se han publicado otros resultados de benchmarks (HumanEval, GSM8K, ARC, Hella
 
 ## Comparativa con modelos similares
 
-Los valores de los modelos alternativos corresponden a especificaciones publicas ampliamente documentadas; los datos de Bobic 1.6 Raye provienen del repositorio de HuggingFace.
+Los valores de los modelos alternativos corresponden a especificaciones publicas ampliamente documentadas; los datos de Bobic 1.6 Raye provienen del repositorio de Hugging Face.
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| Bobic 1.6 Raye | 125,86 M | 2048 | MIT | no disponible | HuggingFace (GGUF Q8_0 y FP32) |
-| SmolLM-135M | 135 M | 2048 (v1) | Apache-2.0 | Ingles (principal) | HuggingFace |
-| Qwen2.5-0.5B | ~0,49 B | 32.768 | Apache-2.0 | Multilingue | HuggingFace |
+| Bobic 1.6 Raye | 125,86 M | 2048 | MIT | no disponible | Hugging Face (GGUF Q8_0 y FP32) |
+| SmolLM-135M | 135 M | 2048 (v1) | Apache-2.0 | Ingles (principal) | Hugging Face |
+| Qwen2.5-0.5B | ~0,49 B | 32.768 | Apache-2.0 | Multilingue | Hugging Face |
 
 Comparativa de rendimiento: no disponible. No se han publicado resultados de benchmarks de Bobic 1.6 Raye mas alla de MMLU-Pro, por lo que no es posible establecer una comparacion cuantitativa fiable con las alternativas.
 
@@ -95,7 +95,7 @@ Comparativa de rendimiento: no disponible. No se han publicado resultados de ben
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Skebobic/Bobic-1.6-Raye
+- Hugging Face: https://huggingface.co/Skebobic/Bobic-1.6-Raye
 - Repositorio de GitHub bablaerrr/bobikA5 (aparicion en busqueda, relevancia no confirmada): https://github.com/bablaerrr/bobikA5/releases
 
 Nota: el resto de resultados de la busqueda web (Ray 1.6 de Luma AI, Modly, listado de modelos de OpenAI, MeshGPT) no guardan relacion con este modelo y se han descartado. No se han encontrado papers, blogs ni demos oficiales asociados a Bobic 1.6 Raye.

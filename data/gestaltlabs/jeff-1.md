@@ -77,9 +77,9 @@ Notas del autor sobre la comparacion: Jeff 1 presenta menor exactitud y peor Bri
 
 | Modelo | Tipo | Parametros | Contexto | Accuracy (evaluacion del autor) | ECE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Jeff 1 (GestaltLabs) | Adaptador LoRA sobre Qwen3-4B-Instruct-2507 para decisiones tipadas | 4B base + adaptador | no disponible | 0,8183 | 0,0807 | Apache 2.0 | Pesos abiertos en HuggingFace |
+| Jeff 1 (GestaltLabs) | Adaptador LoRA sobre Qwen3-4B-Instruct-2507 para decisiones tipadas | 4B base + adaptador | no disponible | 0,8183 | 0,0807 | Apache 2.0 | Pesos abiertos en Hugging Face |
 | Jev 1.13.0 (TypeSafe AI) | Servicio de decisiones tipadas via API | no disponible | no disponible | 0,8283 | 0,0932 | no disponible | API alojada |
-| Qwen3-4B-Instruct-2507 | LLM instructivo generalista | 4B | no disponible en la informacion proporcionada | no disponible para esta tarea | no disponible | no disponible en la informacion proporcionada | Pesos abiertos en HuggingFace |
+| Qwen3-4B-Instruct-2507 | LLM instructivo generalista | 4B | no disponible en la informacion proporcionada | no disponible para esta tarea | no disponible | no disponible en la informacion proporcionada | Pesos abiertos en Hugging Face |
 
 No se dispone de datos de otros adaptadores abiertos equivalentes orientados a decisiones tipadas y calibradas, por lo que la comparativa se limita a los dos sistemas evaluados por el autor y al modelo base.
 
@@ -99,7 +99,7 @@ No se dispone de datos de otros adaptadores abiertos equivalentes orientados a d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GestaltLabs/Jeff-1
+- Modelo en Hugging Face: https://huggingface.co/GestaltLabs/Jeff-1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Codigo fuente: https://github.com/Gestalt-Lab/jeff
 - Guia para entrenar tu propio Jeff: https://github.com/Gestalt-Lab/jeff/blob/main/docs/TRAIN_YOUR_OWN.md

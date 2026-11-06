@@ -104,7 +104,7 @@ La comparación con Depth Anything V2, MiDaS o Metric3D no está disponible en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fastforks/depth-anything-3
+- Repositorio Hugging Face: https://huggingface.co/fastforks/depth-anything-3
 - Código de fastforks: https://github.com/kleinicke/fastforks
 - Kernels para el backend `kernels`: https://huggingface.co/fastforks/kernels
 - Código original de ByteDance: https://github.com/ByteDance-Seed/Depth-Anything-3

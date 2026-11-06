@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Adham112233/doma es un repositorio publicado en HuggingFace por el usuario Adham112233 bajo licencia MIT. En el momento de redactar esta ficha no se ha documentado ningun tipo de informacion tecnica: la model card esta practicamente vacia (unicamente contiene la declaracion de licencia), no se declara pipeline de inferencia, no se listan idiomas soportados y el repositorio acumula cero descargas y cero valoraciones. No existe por tanto evidencia publica sobre arquitectura, tamano, datos de entrenamiento o capacidades del modelo.
+Adham112233/doma es un repositorio publicado en Hugging Face por el usuario Adham112233 bajo licencia MIT. En el momento de redactar esta ficha no se ha documentado ningun tipo de informacion tecnica: la model card esta practicamente vacia (unicamente contiene la declaracion de licencia), no se declara pipeline de inferencia, no se listan idiomas soportados y el repositorio acumula cero descargas y cero valoraciones. No existe por tanto evidencia publica sobre arquitectura, tamano, datos de entrenamiento o capacidades del modelo.
 
 La relevancia de este repositorio es, a dia de hoy, exclusivamente documental: sirve como ejemplo de publicacion sin trazabilidad tecnica y no deberia considerarse un artefacto apto para evaluacion, integracion o despliegue en entornos de produccion. Cualquier afirmacion sobre su funcionamiento seria especulativa, ya que ni siquiera se especifica si se trata de un modelo de lenguaje, un modelo de vision, un clasificador o un conjunto de pesos derivado de otro entrenamiento.
 
@@ -87,7 +87,7 @@ No disponible. Al no existir datos sobre parametros, contexto, arquitectura ni r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Adham112233/doma
+- Hugging Face: https://huggingface.co/Adham112233/doma
 - Paper: no disponible
 - Blog o documentacion: no disponible
 - Repositorio de codigo: no disponible

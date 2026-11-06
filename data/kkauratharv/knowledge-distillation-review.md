@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo entrenado, sino una nota de investigación abierta sobre destilación de conocimiento (knowledge distillation). El autor, identificado como kkauratharv, lo publica bajo el epígrafe de "research-notes" y lo describe explícitamente como un documento de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. La propia model card indica que no se presenta como artículo completado ni como una release de modelos entrenados.
+Este repositorio de Hugging Face no contiene un modelo entrenado, sino una nota de investigación abierta sobre destilación de conocimiento (knowledge distillation). El autor, identificado como kkauratharv, lo publica bajo el epígrafe de "research-notes" y lo describe explícitamente como un documento de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. La propia model card indica que no se presenta como artículo completado ni como una release de modelos entrenados.
 
-El peso real del repositorio es de 0,0 GB y el único artefacto descrito en la documentación son dos ficheros de texto (`summary.md` y `README.md`). Los metadatos de HuggingFace registran un total de 16.576 parámetros en formato safetensors, una cifra anecdótica que no corresponde a ninguna arquitectura funcional y que probablemente deriva de un tensor de prueba o de un fichero auxiliar. La etiqueta "transformer" aparece en los tags, pero no hay evidencia de que exista un transformer entrenado asociado.
+El peso real del repositorio es de 0,0 GB y el único artefacto descrito en la documentación son dos ficheros de texto (`summary.md` y `README.md`). Los metadatos de Hugging Face registran un total de 16.576 parámetros en formato safetensors, una cifra anecdótica que no corresponde a ninguna arquitectura funcional y que probablemente deriva de un tensor de prueba o de un fichero auxiliar. La etiqueta "transformer" aparece en los tags, pero no hay evidencia de que exista un transformer entrenado asociado.
 
 Su relevancia, por tanto, es documental y metodológica, no técnica: sirve como punto de partida para quien quiera diseñar un estudio reproducible sobre destilación de conocimiento, con un esqueleto de hipótesis, confounders, baselines emparejados y plan de evaluación. No debe confundirse con un artefacto desplegable ni con un checkpoint utilizable en inferencia. A fecha de la consulta registra 0 descargas y 0 likes.
 
@@ -23,7 +23,7 @@ Su relevancia, por tanto, es documental y metodológica, no técnica: sirve como
 
 ## Arquitectura y entrenamiento
 
-La documentación del repositorio no describe ninguna arquitectura de red neuronal ni ningún proceso de entrenamiento. El tag "transformer" aparece en los metadatos de HuggingFace, pero la model card especifica que el contenido es una nota exploratoria y que no se ha liberado ni código ni checkpoint entrenado. No hay información sobre número de tokens, composición del dataset, técnicas de alineación (RLHF, DPO) ni innovaciones de eficiencia.
+La documentación del repositorio no describe ninguna arquitectura de red neuronal ni ningún proceso de entrenamiento. El tag "transformer" aparece en los metadatos de Hugging Face, pero la model card especifica que el contenido es una nota exploratoria y que no se ha liberado ni código ni checkpoint entrenado. No hay información sobre número de tokens, composición del dataset, técnicas de alineación (RLHF, DPO) ni innovaciones de eficiencia.
 
 Lo que sí define el autor es un protocolo de investigación: alcance de la pregunta, confounders probables, comparación propuesta contra baselines emparejados, benchmarks públicos nombrados en la nota principal, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El propio texto advierte que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales y que, si en el futuro se añaden resultados, deberán incluir versiones de dataset, comandos, semillas, hardware y logs en bruto.
 
@@ -76,7 +76,7 @@ No disponible. Este repositorio no es un modelo y no compite con alternativas de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kkauratharv/knowledge-distillation-review
+- Repositorio en Hugging Face: https://huggingface.co/kkauratharv/knowledge-distillation-review
 - Fichero principal citado en la model card: `summary.md`
 - Documentación del repositorio: `README.md`
 - Paper, blog, repositorio de código o demo asociados: no disponible en la informacion proporcionada.

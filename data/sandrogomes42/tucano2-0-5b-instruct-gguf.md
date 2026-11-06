@@ -82,12 +82,12 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - La licencia Apache-2.0 permite uso comercial, pero exige mantener los créditos y el aviso de modificación en redistribuciones (Apache-2.0, §4.b). El repositorio incluye un archivo LICENSE.
 - Solo se publica la cuantización Q4_K_M; no hay variantes Q5, Q8 ni f16 listas para usar, lo que limita el ajuste de la relación calidad/tamaño.
 - El tokenizador no estándar obliga a usar el GGUF tal cual o a replicar el script de conversión; integrarlo en runtimes distintos de llama.cpp/wllama puede requerir trabajo adicional.
-- Discrepancia de identidad del repositorio: la model card cita el repo `2DTi/tucano2-0.5b-instruct-gguf`, mientras que la ficha de HuggingFace corresponde a `sandrogomes42/tucano2-0.5b-instruct-gguf`. Conviene verificar cuál es el espejo oficial antes de fijar una dependencia en producción.
+- Discrepancia de identidad del repositorio: la model card cita el repo `2DTi/tucano2-0.5b-instruct-gguf`, mientras que la ficha de Hugging Face corresponde a `sandrogomes42/tucano2-0.5b-instruct-gguf`. Conviene verificar cuál es el espejo oficial antes de fijar una dependencia en producción.
 - Sin métricas de rendimiento publicadas: no es posible estimar su calidad frente a alternativas sin evaluarlo en el dominio concreto de uso.
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta versión): https://huggingface.co/sandrogomes42/tucano2-0.5b-instruct-gguf
+- Repositorio Hugging Face (esta versión): https://huggingface.co/sandrogomes42/tucano2-0.5b-instruct-gguf
 - Repositorio citado en la model card (2D TI): https://huggingface.co/2DTi/tucano2-0.5b-instruct-gguf
 - Modelo original: https://huggingface.co/Polygl0t/Tucano2-qwen-0.5B-Instruct
 - Modelo base del preentrenamiento continuado: https://huggingface.co/Polygl0t/Tucano2-qwen-0.5B-Base

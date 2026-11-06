@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/ood-welfare-gemma-mix
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/ood-welfare-gemma-mix
 - Modelo base: https://huggingface.co/google/gemma-3-27b-it
 - Estudio hermano: https://huggingface.co/joshycodes/ood-welfare-gemma
 - Paper, blog o repositorio asociado: no disponible en la informacion proporcionada.

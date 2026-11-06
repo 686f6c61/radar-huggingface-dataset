@@ -71,8 +71,8 @@ El autor advierte que la evaluación de operación empresarial corresponde a la 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-arbiter-v1 | 0,8B (base) + LoRA | No disponible | Decisión entre opciones etiquetadas con GRPO sobre simulador | Apache 2.0 | HuggingFace (18 descargas) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible en la información | LLM generalista | Según el modelo base (no confirmada) | HuggingFace |
+| connectailab-rl-arbiter-v1 | 0,8B (base) + LoRA | No disponible | Decisión entre opciones etiquetadas con GRPO sobre simulador | Apache 2.0 | Hugging Face (18 descargas) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible en la información | LLM generalista | Según el modelo base (no confirmada) | Hugging Face |
 | Política PPO del simulador (profesora) | No disponible | No aplica | Agente RL pequeño entrenado con PPO | No disponible | No distribuida públicamente |
 
 No se dispone de datos suficientes para comparar con otros adaptadores de decisión de la misma categoría; la comparativa se limita al modelo base y a la política profesora citada en la model card.
@@ -91,7 +91,7 @@ No se dispone de datos suficientes para comparar con otros adaptadores de decisi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Siwooo/connectailab-rl-arbiter-v1
+- Modelo en Hugging Face: https://huggingface.co/Siwooo/connectailab-rl-arbiter-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio del simulador CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

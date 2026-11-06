@@ -87,6 +87,6 @@ La principal diferencia es que este modelo esta especificamente ajustado para fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-finance-fincot-finqa-clean6k-marin-8b-base-finance_ppl_b1000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-finance-fincot-finqa-clean6k-marin-8b-base-finance_ppl_b1000_s0
 - Modelo base: https://huggingface.co/marin-community/marin-8b-base
 - No se han encontrado papers, repositorios de codigo ni demos adicionales en la informacion disponible.

@@ -88,8 +88,8 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- [HuggingFace - FlagRelease/Qwen3.8-27B-BF16-hygon-FlagOS](https://huggingface.co/FlagRelease/Qwen3.8-27B-BF16-hygon-FlagOS)
-- [HuggingFace - FlagRelease/Qwen3.8-27B-BF16-nvidia-FlagOS](https://huggingface.co/FlagRelease/Qwen3.8-27B-BF16-nvidia-FlagOS)
+- [Hugging Face - FlagRelease/Qwen3.8-27B-BF16-hygon-FlagOS](https://huggingface.co/FlagRelease/Qwen3.8-27B-BF16-hygon-FlagOS)
+- [Hugging Face - FlagRelease/Qwen3.8-27B-BF16-nvidia-FlagOS](https://huggingface.co/FlagRelease/Qwen3.8-27B-BF16-nvidia-FlagOS)
 - [GitHub - flagos-ai/FlagRelease](https://github.com/flagos-ai/FlagRelease)
 - [OpenLM.ai - Qwen3.8](https://openlm.ai/qwen3.8/)
 - [AI Release Tracker - Qwen3.8-27B](https://aireleasetracker.com/model/qwen/qwen3.8-27b)

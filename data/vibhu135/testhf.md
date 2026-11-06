@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vibhu135/testhf` es un repositorio de modelos alojado en HuggingFace por el usuario vibhu135. En el momento de redactar esta ficha, la model card únicamente contiene el bloque de metadatos con la licencia Apache 2.0, sin ningún texto descriptivo, diagrama, referencia a paper ni instrucciones de uso. El nombre del repositorio (`testhf`) sugiere que se trata de un espacio de pruebas creado para validar el flujo de publicacion en HuggingFace mas que un modelo destinado a produccion.
+`vibhu135/testhf` es un repositorio de modelos alojado en Hugging Face por el usuario vibhu135. En el momento de redactar esta ficha, la model card únicamente contiene el bloque de metadatos con la licencia Apache 2.0, sin ningún texto descriptivo, diagrama, referencia a paper ni instrucciones de uso. El nombre del repositorio (`testhf`) sugiere que se trata de un espacio de pruebas creado para validar el flujo de publicacion en Hugging Face mas que un modelo destinado a produccion.
 
 No es posible determinar la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni las capacidades del modelo a partir de la informacion disponible. El repositorio no declara pipeline de inferencia, no tiene descargas registradas (0 descargas) y cuenta con un unico like, lo que es coherente con un artefacto de prueba sin difusion.
 
@@ -20,7 +20,7 @@ Por tanto, esta ficha se limita a documentar los metadatos verificables y a marc
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible |
 
-Nota: no se ha podido confirmar si el modelo es de tipo denso o Mixture of Experts (MoE), por lo que no se incluye la fila de parametros activos. Tampoco se ha publicado informacion sobre el pipeline de HuggingFace asociado.
+Nota: no se ha podido confirmar si el modelo es de tipo denso o Mixture of Experts (MoE), por lo que no se incluye la fila de parametros activos. Tampoco se ha publicado informacion sobre el pipeline de Hugging Face asociado.
 
 ## Arquitectura y entrenamiento
 
@@ -48,7 +48,7 @@ No es posible proponer casos de uso concretos y realistas sin conocer el tamano,
 - Clasificacion o extraccion de informacion: no se ha publicado ninguna evaluacion de calidad.
 - Uso como modelo base para fine-tuning: se desconoce el tamano de los pesos y su compatibilidad con tecnicas de ajuste como LoRA o QLoRA.
 
-Para cualquier evaluacion practica se recomienda inspeccionar directamente la lista de archivos del repositorio en HuggingFace.
+Para cualquier evaluacion practica se recomienda inspeccionar directamente la lista de archivos del repositorio en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -68,7 +68,7 @@ No es posible establecer una comparativa fiable porque se desconoce la categoria
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vibhu135/testhf | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace |
+| vibhu135/testhf | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 3 | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -85,6 +85,6 @@ No es posible establecer una comparativa fiable porque se desconoce la categoria
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vibhu135/testhf
+- Hugging Face: https://huggingface.co/vibhu135/testhf
 
 No se han encontrado en la busqueda web papers, blogs tecnicos, repositorios de codigo ni demos asociados a este modelo.

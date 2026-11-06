@@ -25,7 +25,7 @@ La relevancia de esta ficha es acotada y conviene ser explicito: se trata de un 
 
 El modelo parte de Qwen3-1.7B, un transformer decoder-only denso de la familia Qwen3, y se ajusta con destilacion on-policy guiada (Guided-OPD) implementada sobre el codigo de kokolerk/TCOD mas el overlay FutureBridge-OPD (trinity-rft). El esquema asigna roles de profesor y estudiante por turno dentro de la conversacion, con un parametro beta que decae de forma coseno desde 1.0 hasta 0.0 cubriendo el 80 por ciento de los pasos de entrenamiento, y una perdida mixta con mu = 0.5. El profesor es Qwen3-32B en bf16 y el estudiante es Qwen3-1.7B.
 
-Los datos de entrenamiento corresponden al split de 6000 preguntas de SearchQA, portado segun el documento docs/TCOD_SEARCHQA.md del repositorio online-rose (rama tcod-searchqa). La conversacion sigue el formato ReAct de searchqa/eval_react.py con 16 rondas, modo thinking desactivado, batch de 16 episodios / 64 turnos, learning rate 1e-6, coeficiente KL de 1.0 y 200 pasos totales. El checkpoint publicado es la exportacion a HuggingFace del paso 200. No se documenta composicion adicional del dataset, uso de RLHF o DPO, ni innovaciones de inferencia como decodificacion especulativa o atencion lineal.
+Los datos de entrenamiento corresponden al split de 6000 preguntas de SearchQA, portado segun el documento docs/TCOD_SEARCHQA.md del repositorio online-rose (rama tcod-searchqa). La conversacion sigue el formato ReAct de searchqa/eval_react.py con 16 rondas, modo thinking desactivado, batch de 16 episodios / 64 turnos, learning rate 1e-6, coeficiente KL de 1.0 y 200 pasos totales. El checkpoint publicado es la exportacion a Hugging Face del paso 200. No se documenta composicion adicional del dataset, uso de RLHF o DPO, ni innovaciones de inferencia como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-1.7b-searchqa-guided-opd-qwen3-32b-step200 | 2.031.739.904 | no disponible | Ajuste por destilacion OPD sobre SearchQA | no disponible | HuggingFace, 0 descargas, 0 likes |
+| qwen3-1.7b-searchqa-guided-opd-qwen3-32b-step200 | 2.031.739.904 | no disponible | Ajuste por destilacion OPD sobre SearchQA | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Qwen/Qwen3-1.7B (modelo base) | ~1,7 mil millones nominales | no disponible en la informacion proporcionada | Modelo denso de proposito general | Apache 2.0 segun la ficha del modelo base, no verificada aqui | Ampliamente disponible |
 | Qwen/Qwen3-32B (profesor) | ~32 mil millones | no disponible en la informacion proporcionada | Modelo denso de proposito general | Apache 2.0 segun la ficha del modelo base, no verificada aqui | Ampliamente disponible |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SeanWang0027/qwen3-1.7b-searchqa-guided-opd-qwen3-32b-step200
+- Hugging Face: https://huggingface.co/SeanWang0027/qwen3-1.7b-searchqa-guided-opd-qwen3-32b-step200
 - Modelo base: Qwen/Qwen3-1.7B (referenciado en la model card; URL no proporcionada en la informacion disponible)
 - Repositorio de codigo TCOD: kokolerk/TCOD (mencionado en la model card; URL no proporcionada)
 - Overlay FutureBridge-OPD sobre trinity-rft (mencionado en la model card; URL no proporcionada)

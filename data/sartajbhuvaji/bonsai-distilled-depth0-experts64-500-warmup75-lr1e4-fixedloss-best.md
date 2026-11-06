@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sartajbhuvaji/bonsai-distilled-depth0-experts64-500-warmup75-lr1e4-fixedloss-best` es un checkpoint de generación de texto publicado por un autor individual (sartajbhuvaji) en HuggingFace. Se trata de un modelo de arquitectura marcada como `qwen3_moe`, es decir, un transformer con capas de mezcla de expertos (MoE) derivado de la familia Qwen3, con 16.030.316.544 parámetros totales según los metadatos de safetensors y un repositorio de 32,1 GB, coherente con pesos en bf16 (aproximadamente 2 bytes por parámetro).
+`sartajbhuvaji/bonsai-distilled-depth0-experts64-500-warmup75-lr1e4-fixedloss-best` es un checkpoint de generación de texto publicado por un autor individual (sartajbhuvaji) en Hugging Face. Se trata de un modelo de arquitectura marcada como `qwen3_moe`, es decir, un transformer con capas de mezcla de expertos (MoE) derivado de la familia Qwen3, con 16.030.316.544 parámetros totales según los metadatos de safetensors y un repositorio de 32,1 GB, coherente con pesos en bf16 (aproximadamente 2 bytes por parámetro).
 
-La relevancia de esta ficha es limitada y conviene decirlo con claridad: la model card es la plantilla automática de HuggingFace, sin ninguna sección completada, y el repositorio no incluye información sobre datos de entrenamiento, licencia, idiomas, longitud de contexto ni evaluación. El identificador del modelo sí aporta pistas técnicas: "distilled" (destilación), "experts64" (64 expertos en las capas MoE), "depth0" (posible configuración de profundidad o poda de capas), "500" (pasos de entrenamiento), "warmup75" (75 pasos de calentamiento), "lr1e4" (tasa de aprendizaje 1e-4) y "fixedloss" (alguna corrección en la función de pérdida). Son deducciones a partir del nombre, no datos confirmados por el autor.
+La relevancia de esta ficha es limitada y conviene decirlo con claridad: la model card es la plantilla automática de Hugging Face, sin ninguna sección completada, y el repositorio no incluye información sobre datos de entrenamiento, licencia, idiomas, longitud de contexto ni evaluación. El identificador del modelo sí aporta pistas técnicas: "distilled" (destilación), "experts64" (64 expertos en las capas MoE), "depth0" (posible configuración de profundidad o poda de capas), "500" (pasos de entrenamiento), "warmup75" (75 pasos de calentamiento), "lr1e4" (tasa de aprendizaje 1e-4) y "fixedloss" (alguna corrección en la función de pérdida). Son deducciones a partir del nombre, no datos confirmados por el autor.
 
 En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 likes, y fue creado el 2026-10-17 según los metadatos del Hub. Es, por tanto, un artefacto experimental de investigación más que un modelo listo para producción: cualquier evaluación práctica exige ejecutar pruebas propias antes de considerar su uso.
 
@@ -35,7 +35,7 @@ El nombre del checkpoint describe una receta de entrenamiento concreta: 500 paso
 
 - Generación de texto autoregresiva: es la única capacidad confirmada por el pipeline declarado (`text-generation`).
 - Conversación multi-turno: la etiqueta `conversational` sugiere que el checkpoint está pensado para diálogo, aunque no se documenta la plantilla de chat ni los tokens especiales.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el formato de pesos puede servirse en la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el formato de pesos puede servirse en la infraestructura de Inference Endpoints de Hugging Face.
 - Razonamiento y matemáticas: no disponible; no hay evaluación ni declaración del autor.
 - Generación de código: no disponible; sin datos de HumanEval ni similares.
 - Tool calling / function calling: no disponible; no se documenta soporte de herramientas.
@@ -55,7 +55,7 @@ El nombre del checkpoint describe una receta de entrenamiento concreta: 500 paso
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card es la plantilla automática de HuggingFace y no contiene sección de evaluación, y el autor no ha publicado métricas en el repositorio. Tampoco hay datos de perplejidad, MMLU, GSM8K, HumanEval ni comparaciones con el modelo profesor del proceso de destilación.
+No se han publicado resultados de benchmarks en la información disponible. La model card es la plantilla automática de Hugging Face y no contiene sección de evaluación, y el autor no ha publicado métricas en el repositorio. Tampoco hay datos de perplejidad, MMLU, GSM8K, HumanEval ni comparaciones con el modelo profesor del proceso de destilación.
 
 ## Requisitos de hardware
 
@@ -95,7 +95,7 @@ Frente a estas alternativas, el checkpoint aquí descrito no ofrece garantías d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts64-500-warmup75-lr1e4-fixedloss-best
+- Modelo en Hugging Face: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts64-500-warmup75-lr1e4-fixedloss-best
 - Referencia citada en la plantilla (calculador de impacto ambiental): https://mlco2.github.io/impact#compute
 - Paper citado en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados obtenidos no guardaban relación con el modelo.

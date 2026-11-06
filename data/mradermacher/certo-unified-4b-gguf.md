@@ -32,7 +32,7 @@ Respecto al entrenamiento, no hay datos disponibles sobre el volumen de tokens, 
 - Modelo de decision y puntuacion de elecciones: los tags "decision-model", "choice-score-noul" y "probabilities-first" indican que el modelo esta orientado a producir puntuaciones o probabilidades sobre opciones, en lugar de generacion de texto abierto. No se detalla la interfaz exacta ni el formato de salida.
 - Calibracion de probabilidades: el tag "calibrated" sugiere que las puntuaciones producidas buscan ser probabilisticamente interpretables, si bien no se aportan metricas de calibracion (ECE, Brier score, etc.).
 - Soporte conversacional: el repositorio incluye el tag "conversational", lo que indica compatibilidad con plantillas de dialogo, aunque no se especifica el formato de chat.
-- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que puede servirse mediante infraestructura de inferencia compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que puede servirse mediante infraestructura de inferencia compatible con la API de Hugging Face.
 - Generacion de texto, razonamiento, codigo, matematicas, vision: no disponible; no se documenta ninguna de estas capacidades.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -48,7 +48,7 @@ Dado que las capacidades funcionales no estan documentadas, los siguientes escen
 - Componente de un sistema RAG: el modelo puede actuar como evaluador de relevancia o reranker ligero sobre los fragmentos recuperados, ejecutandose en la misma maquina que el resto del stack sin coste de API.
 - Inferencia en el borde o en portatiles: con cuantizaciones Q2_K a Q4_K (1,8-2,6 GB) es viable ejecutar el modelo en CPUs modernas o en GPUs integradas, util para prototipos offline y entornos con restricciones de red.
 - Evaluacion comparativa interna (A/B testing de prompts): al ser un modelo pequeno y de ejecucion rapida, sirve como banco de pruebas para validar pipelines de decision antes de escalar a modelos mayores.
-- Servicio de inferencia autogestionado: gracias al tag "endpoints_compatible" y a la licencia Apache 2.0, puede desplegarse tras una API compatible con HuggingFace para uso interno de un equipo.
+- Servicio de inferencia autogestionado: gracias al tag "endpoints_compatible" y a la licencia Apache 2.0, puede desplegarse tras una API compatible con Hugging Face para uso interno de un equipo.
 - Investigacion sobre calibracion: util para estudiar el comportamiento de puntuaciones probabilisticas en modelos de 4B y compararlo con alternativas mayores.
 
 ## Benchmarks y rendimiento

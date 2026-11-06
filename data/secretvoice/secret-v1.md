@@ -6,7 +6,7 @@ Secret v1 (`secretvoice/secret-v1`) es un modelo de síntesis de voz (text-to-sp
 
 El sistema ofrece 29 voces predefinidas (13 femeninas y 16 masculinas) seleccionables por identificador (`velvet`, `whisper`, `professor`, `steele`, etc.) y soporte de 21 idiomas mediante el parámetro `language_code`. La model card destaca tres innovaciones de producto más que técnicas: preservación de textura de susurro sin artefactos metálicos, prosodia sensible al contexto en pasajes largos y transmisión de audio trama a trama a partir de la salida de tokens de un LLM.
 
-Es relevante ahora por dos motivos. Primero, cubre un nicho poco atendido por los TTS abiertos: voz íntima, ASMR y contenido para adultos sin censura, con streaming de baja latencia para acompañantes conversacionales. Segundo, y como advertencia, el repositorio de HuggingFace está vacío (0,0 GB): no se publican pesos, arquitectura, recuento de parámetros ni licencia, por lo que la evaluación técnica independiente queda limitada a la documentación del autor.
+Es relevante ahora por dos motivos. Primero, cubre un nicho poco atendido por los TTS abiertos: voz íntima, ASMR y contenido para adultos sin censura, con streaming de baja latencia para acompañantes conversacionales. Segundo, y como advertencia, el repositorio de Hugging Face está vacío (0,0 GB): no se publican pesos, arquitectura, recuento de parámetros ni licencia, por lo que la evaluación técnica independiente queda limitada a la documentación del autor.
 
 ## Especificaciones tecnicas
 
@@ -91,7 +91,7 @@ Los datos de los modelos alternativos provienen de conocimiento general sobre el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/secretvoice/secret-v1
+- Modelo en Hugging Face: https://huggingface.co/secretvoice/secret-v1
 - Sitio del proveedor y claves de API: https://secretvoice.dev
 - Documentacion: https://secretvoice.dev/docs/
 - Space de demostracion (TTS sin censura): https://huggingface.co/spaces/secretvoice/uncensored-sexy-tts

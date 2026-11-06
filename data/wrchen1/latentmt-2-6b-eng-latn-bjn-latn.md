@@ -67,7 +67,7 @@ No se dispone de informacion sobre modelos comparables especificamente para el p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-bjn-latn
+- Repositorio Hugging Face: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-bjn-latn
 - Articulo arXiv (PDF): https://arxiv.org/pdf/2607.18618
 - Articulo arXiv (HTML): https://arxiv.org/html/2607.18618v1
 - Modelo base ByteDance/Ouro-2.6B-Thinking: https://huggingface.co/ByteDance/Ouro-2.6B-Thinking

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3-1.7B-P es un checkpoint publicado en HuggingFace por el usuario `huggingtime12` bajo el identificador `huggingtime12/Qwen3-1.7B-P`. Por el nombre se infiere que se trata de un modelo derivado de la familia Qwen3, concretamente de la variante de 1.700 millones de parametros, y el sufijo "P" sugiere algun tipo de ajuste posterior (posiblemente un fine-tuning, una poda o una variante experimental), aunque el autor no documenta en ningun momento que transformacion se ha aplicado sobre el modelo base.
+Qwen3-1.7B-P es un checkpoint publicado en Hugging Face por el usuario `huggingtime12` bajo el identificador `huggingtime12/Qwen3-1.7B-P`. Por el nombre se infiere que se trata de un modelo derivado de la familia Qwen3, concretamente de la variante de 1.700 millones de parametros, y el sufijo "P" sugiere algun tipo de ajuste posterior (posiblemente un fine-tuning, una poda o una variante experimental), aunque el autor no documenta en ningun momento que transformacion se ha aplicado sobre el modelo base.
 
-La model card es la plantilla generica autogenerada por HuggingFace y no contiene informacion sustantiva: todos los campos de descripcion, entrenamiento, datos, evaluacion y licencia aparecen como "[More Information Needed]". El repositorio tiene un tamano de 0,3 GB, lo que es coherente con un modelo de 1.7B en precision reducida (probablemente bf16 o fp16, dado que 1.7B parametros en 16 bits ocupan aproximadamente 3,4 GB; 0,3 GB sugiere cuantizacion de 4 bits o un subconjunto parcial de pesos, si bien esto no se puede confirmar).
+La model card es la plantilla generica autogenerada por Hugging Face y no contiene informacion sustantiva: todos los campos de descripcion, entrenamiento, datos, evaluacion y licencia aparecen como "[More Information Needed]". El repositorio tiene un tamano de 0,3 GB, lo que es coherente con un modelo de 1.7B en precision reducida (probablemente bf16 o fp16, dado que 1.7B parametros en 16 bits ocupan aproximadamente 3,4 GB; 0,3 GB sugiere cuantizacion de 4 bits o un subconjunto parcial de pesos, si bien esto no se puede confirmar).
 
 La relevancia de esta ficha es limitada y fundamentalmente cautelar: se trata de un artefacto sin documentacion, sin licencia declarada, sin benchmarks y con cero descargas, por lo que cualquier uso en produccion requiere una evaluacion manual previa. Se recomienda tratar la informacion aqui recogida como el maximo verificable a partir de los metadatos publicos.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada y fundamentalmente cautelar: se trata de
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna, el proceso de entrenamiento, el volumen de tokens, la composicion del dataset ni el uso de tecnicas de alineacion como RLHF, DPO o RLVR. El tag `transformers` y la presencia de pesos en `safetensors` confirman unicamente la compatibilidad con la libreria HuggingFace Transformers.
+No hay informacion publicada sobre la arquitectura interna, el proceso de entrenamiento, el volumen de tokens, la composicion del dataset ni el uso de tecnicas de alineacion como RLHF, DPO o RLVR. El tag `transformers` y la presencia de pesos en `safetensors` confirman unicamente la compatibilidad con la libreria Hugging Face Transformers.
 
 El unico dato tecnico adicional es la referencia `arxiv:1910.09700` en los tags, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico, citado en la plantilla estandar de model card. No es una referencia al paper del modelo ni aporta informacion sobre su construccion. El sufijo "P" del nombre no viene explicado en ningun lugar del repositorio.
 
@@ -84,6 +84,6 @@ La comparacion con alternativas concretas no es posible con rigor porque no se d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/huggingtime12/Qwen3-1.7B-P
+- Repositorio en Hugging Face: https://huggingface.co/huggingtime12/Qwen3-1.7B-P
 - Articulo citado en los tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico referenciada en la plantilla: https://mlco2.github.io/impact#compute

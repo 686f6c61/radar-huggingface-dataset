@@ -6,7 +6,7 @@ CIMA-Spanish-Medical-Llama-LoRA es un adaptador de tipo LoRA (Low-Rank Adaptatio
 
 El modelo está orientado a responder preguntas sobre principios activos, vías de administración, efectos secundarios, contraindicaciones y advertencias de excipientes, siempre anclado en los datos oficiales de la AEMPS. Su relevancia radica en ofrecer una alternativa ligera y de código abierto (licencia Apache 2.0) para entornos sanitarios de habla hispana, donde los modelos médicos comerciales son escasos o propietarios. Al ser un adaptador LoRA, no requiere reentrenar el modelo base completo, lo que reduce significativamente los costes de cómputo y almacenamiento.
 
-La publicación actual data de agosto de 2026 y no se han registrado descargas ni valoraciones en HuggingFace, lo que sugiere que se trata de un proyecto reciente o en fase de validación. A pesar de su limitada difusión, la metodología de ajuste con datos oficiales y su tamaño compacto lo convierten en una opción interesante para prototipos de información farmacéutica en español.
+La publicación actual data de agosto de 2026 y no se han registrado descargas ni valoraciones en Hugging Face, lo que sugiere que se trata de un proyecto reciente o en fase de validación. A pesar de su limitada difusión, la metodología de ajuste con datos oficiales y su tamaño compacto lo convierten en una opción interesante para prototipos de información farmacéutica en español.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables específicos para QA mé
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hsilvosa/CIMA-Spanish-Medical-Llama-LoRA
+- Modelo en Hugging Face: https://huggingface.co/hsilvosa/CIMA-Spanish-Medical-Llama-LoRA
 - Dataset AEMPS CIMA: https://huggingface.co/datasets/hsilvosa/aemps-cima
-- Dataset OpenPlacSP: no se proporciona URL directa, pero se referencia como `hsilvosa/openplacsp` en HuggingFace.
+- Dataset OpenPlacSP: no se proporciona URL directa, pero se referencia como `hsilvosa/openplacsp` en Hugging Face.
 - Buscador CIMA de la AEMPS (fuente de datos): https://cima.aemps.es/cima/publico/buscadoravanzado.html

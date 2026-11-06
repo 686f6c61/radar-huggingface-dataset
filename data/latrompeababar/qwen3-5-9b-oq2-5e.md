@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-oQ2.5e es una cuantización mixta del modelo Qwen3.5-9B, publicada por el usuario latrompeababar en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos a formatos de baja precisión mediante la herramienta oQ (oMLX v0.7.3), orientada a la inferencia en Apple Silicon a través de la librería MLX. El checkpoint resultante ocupa 4,8 GB en disco, frente a los aproximadamente 18,8 GB que ocuparía la versión en BF16, lo que supone una reducción de aproximadamente el 75 % del espacio.
+Qwen3.5-9B-oQ2.5e es una cuantización mixta del modelo Qwen3.5-9B, publicada por el usuario latrompeababar en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos a formatos de baja precisión mediante la herramienta oQ (oMLX v0.7.3), orientada a la inferencia en Apple Silicon a través de la librería MLX. El checkpoint resultante ocupa 4,8 GB en disco, frente a los aproximadamente 18,8 GB que ocuparía la versión en BF16, lo que supone una reducción de aproximadamente el 75 % del espacio.
 
 El modelo base, Qwen3.5-9B, pertenece a la familia Qwen 3.5 desarrollada por Alibaba. Según los datos de safetensors, el checkpoint contiene 9.409.813.744 parámetros, de los cuales 8.954 millones corresponden al modelo de lenguaje y 456 millones a un componente de visión, lo que indica que el modelo base es multimodal (image-text-to-text). La cuantización emplea una estrategia de precisión mixta: capas sensibles se mantienen en 5 bits o incluso BF16, mientras que otras se comprimen a 2 o 3 bits, dando lugar a una media efectiva de 4,028 bits por peso.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-oQ2.5e | 9,41 B (8,95 B LM + 0,46 B visión) | No disponible | Mixta 2-5 bits + BF16, media 4,028 bits | No disponible | HuggingFace, 0 descargas |
-| Qwen3.5-9B (original) | 9,41 B | No disponible | BF16 | No disponible | Presumiblemente en HuggingFace, no verificado |
+| Qwen3.5-9B-oQ2.5e | 9,41 B (8,95 B LM + 0,46 B visión) | No disponible | Mixta 2-5 bits + BF16, media 4,028 bits | No disponible | Hugging Face, 0 descargas |
+| Qwen3.5-9B (original) | 9,41 B | No disponible | BF16 | No disponible | Presumiblemente en Hugging Face, no verificado |
 | Qwen2.5-VL-7B | 7 B aprox. | 128 K (según documentación pública de Qwen2.5-VL) | BF16, GPTQ, AWQ | Apache 2.0 (según documentación pública) | Amplia |
 
 La comparación con Qwen2.5-VL-7B se incluye como referencia de categoría (modelo multimodal de tamaño similar), pero los datos del modelo base Qwen3.5-9B no están verificados en la información disponible y no se dispone de métricas para comparar rendimiento.
@@ -86,7 +86,7 @@ La comparación con Qwen2.5-VL-7B se incluye como referencia de categoría (mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latrompeababar/Qwen3.5-9B-oQ2.5e
+- Hugging Face: https://huggingface.co/latrompeababar/Qwen3.5-9B-oQ2.5e
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base Qwen3.5-9B: no disponible en la información proporcionada
 - Paper o blog del modelo base: no disponible en la información proporcionada

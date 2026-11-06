@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Idiomas | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HomePilot Piper Voices (este repo) | TTS VITS/ONNX (espejo) | en, es, fr, de, it, pt | ONNX + JSON | MIT | HuggingFace (espejo) |
-| diffusionstudio/piper-voices | TTS VITS/ONNX (fuente) | Múltiples | ONNX + JSON | MIT | HuggingFace |
+| HomePilot Piper Voices (este repo) | TTS VITS/ONNX (espejo) | en, es, fr, de, it, pt | ONNX + JSON | MIT | Hugging Face (espejo) |
+| diffusionstudio/piper-voices | TTS VITS/ONNX (fuente) | Múltiples | ONNX + JSON | MIT | Hugging Face |
 | rhasspy/piper | TTS VITS (proyecto original) | Múltiples | ONNX | MIT | GitHub |
-| Coqui TTS (XTTS) | TTS neuronal | Múltiples (clonación de voz) | PyTorch | MPL 2.0 / Coqui CPML | GitHub / HuggingFace |
+| Coqui TTS (XTTS) | TTS neuronal | Múltiples (clonación de voz) | PyTorch | MPL 2.0 / Coqui CPML | GitHub / Hugging Face |
 
 La comparación se limita a nivel de proyecto y licencia, ya que no se dispone de métricas de calidad (MOS, WER) en la información proporcionada para este repositorio ni para las alternativas.
 
@@ -83,7 +83,7 @@ La comparación se limita a nivel de proyecto y licencia, ya que no se dispone d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ruslanmv/hp-piper-voices
+- Repositorio en Hugging Face: https://huggingface.co/ruslanmv/hp-piper-voices
 - Fuente de voces optimizadas para web: https://huggingface.co/diffusionstudio/piper-voices
 - Proyecto original Piper: https://github.com/rhasspy/piper
 - 3D Avatar Chatbot: https://github.com/ruslanmv/3D-Avatar-Chatbot

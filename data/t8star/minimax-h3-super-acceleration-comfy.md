@@ -87,7 +87,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/t8star/Minimax-H3-Super-Acceleration-Comfy
+- Repositorio Hugging Face: https://huggingface.co/t8star/Minimax-H3-Super-Acceleration-Comfy
 - Nodo ComfyUI MiniMax H3 Audio T8: https://github.com/T8mars/comfyui-minimax-h3-audio-T8
 - Workflow H3 Super Acceleration: https://github.com/T8mars/comfyui-minimax-h3-audio-T8/tree/main/examples/workflows/22-sol-engine-h3-super
 - NVIDIA H3 Super Acceleration (Sol Engine): https://nvlabs.github.io/Sana/Sol-Engine/H3-Super-Acceleration/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`logicer-archfull-spec-writer_v1-27b-lora` es un adaptador LoRA publicado por el usuario batuhan-elibuyuk en HuggingFace. Se trata de un ajuste fino supervisado (SFT) sobre el modelo base `unsloth/Qwen3.8-27B-unsloth-bnb-4bit`, una versión del Qwen de 27.000 millones de parámetros cuantizada en 4 bits y optimizada para entrenamiento con la librería Unsloth. El adaptador se distribuye como pesos PEFT en formato safetensors, con un tamaño de repositorio de 0,2 GB, lo que confirma que solo contiene los pesos del adaptador y no el modelo completo.
+`logicer-archfull-spec-writer_v1-27b-lora` es un adaptador LoRA publicado por el usuario batuhan-elibuyuk en Hugging Face. Se trata de un ajuste fino supervisado (SFT) sobre el modelo base `unsloth/Qwen3.8-27B-unsloth-bnb-4bit`, una versión del Qwen de 27.000 millones de parámetros cuantizada en 4 bits y optimizada para entrenamiento con la librería Unsloth. El adaptador se distribuye como pesos PEFT en formato safetensors, con un tamaño de repositorio de 0,2 GB, lo que confirma que solo contiene los pesos del adaptador y no el modelo completo.
 
 El nombre del modelo sugiere una especialización en la redacción de especificaciones de arquitectura ("archfull-spec-writer"), probablemente orientada a generar documentos técnicos de especificación de software o sistemas. No obstante, la model card está prácticamente vacía: todos los campos de descripción, datos de entrenamiento, evaluación y uso previsto aparecen como "[More Information Needed]". No se dispone de información sobre el dataset de entrenamiento, hiperparámetros, licencia ni idiomas soportados.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| logicer-archfull-spec-writer_v1-27b-lora | 27B (base) + LoRA | no disponible | no disponible | HuggingFace (0 descargas) | Adaptador SFT sin documentación ni evaluación |
-| Qwen2.5-32B-Instruct | 32B | 32k-128k según variante | Apache 2.0 (según variante) | HuggingFace, ampliamente usado | Modelo instruct generalista con benchmarks publicados |
-| Qwen2.5-Coder-32B-Instruct | 32B | 128k | Apache 2.0 | HuggingFace | Especializado en código y especificaciones técnicas |
-| Adaptadores LoRA comunitarios sobre Qwen | variable | depende del base | variable | HuggingFace | Calidad y documentación muy heterogéneas |
+| logicer-archfull-spec-writer_v1-27b-lora | 27B (base) + LoRA | no disponible | no disponible | Hugging Face (0 descargas) | Adaptador SFT sin documentación ni evaluación |
+| Qwen2.5-32B-Instruct | 32B | 32k-128k según variante | Apache 2.0 (según variante) | Hugging Face, ampliamente usado | Modelo instruct generalista con benchmarks publicados |
+| Qwen2.5-Coder-32B-Instruct | 32B | 128k | Apache 2.0 | Hugging Face | Especializado en código y especificaciones técnicas |
+| Adaptadores LoRA comunitarios sobre Qwen | variable | depende del base | variable | Hugging Face | Calidad y documentación muy heterogéneas |
 
 La comparación es aproximada: no se dispone de datos del modelo base exacto (`Qwen3.8-27B`) ni de sus benchmarks, por lo que las alternativas se ofrecen como referencia de categoría.
 
@@ -83,7 +83,7 @@ La comparación es aproximada: no se dispone de datos del modelo base exacto (`Q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/batuhan-elibuyuk/logicer-archfull-spec-writer_v1-27b-lora
+- Hugging Face: https://huggingface.co/batuhan-elibuyuk/logicer-archfull-spec-writer_v1-27b-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3.8-27B-unsloth-bnb-4bit
 - PEFT: https://github.com/huggingface/peft
 - Unsloth: https://github.com/unslothai/unsloth

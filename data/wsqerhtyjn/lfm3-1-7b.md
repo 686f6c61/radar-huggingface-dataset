@@ -81,10 +81,10 @@ La comparativa se limita a parametros, contexto y licencia porque no hay resulta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wsqerhtyjn/LFM3-1.7B
+- Modelo en Hugging Face: https://huggingface.co/wsqerhtyjn/LFM3-1.7B
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Blog de lanzamiento de LFM3: https://www.liquid.ai/blog/lfm3
 - Documentacion de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
 - Playground: https://playground.liquid.ai/
 - Consola/API: https://console.liquid.ai/dashboard
-- Coleccion LFM3 en HuggingFace: https://huggingface.co/collections/LiquidAI/lfm3
+- Coleccion LFM3 en Hugging Face: https://huggingface.co/collections/LiquidAI/lfm3

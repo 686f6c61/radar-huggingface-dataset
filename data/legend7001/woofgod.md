@@ -21,7 +21,7 @@ Es relevante porque documenta ingeniería de robustez poco habitual en envíos d
 | Licencia | no disponible |
 | Formato de pesos | `ranker.npz` (numpy); codigo Python (`predict.py`, `kmer_knn.py`); binarios DIAMOND en `bin/` y `bin/diamond-linux64.tar.gz` |
 | Tamano del repositorio | 0,2 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion registrada | 2026-10-27 |
 
@@ -99,7 +99,7 @@ No se han identificado en la informacion proporcionada modelos comparables de te
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Legend7001/woofgod
+- Repositorio en Hugging Face: https://huggingface.co/Legend7001/woofgod
 - Tarea del leaderboard: `leak-curber-enzyme-classification` (no se proporciona URL directa)
 - DIAMOND v2.1.10 (release oficial referenciada en `bin/diamond-linux64.tar.gz`): no se proporciona URL en la informacion disponible
 - Paper, blog, demo o repositorio adicional: no disponible

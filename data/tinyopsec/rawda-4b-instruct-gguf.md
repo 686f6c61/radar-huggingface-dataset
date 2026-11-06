@@ -76,7 +76,7 @@ La comparativa principal es con su propio modelo base: rawda-4b-instruct aporta 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/rawda-4b-instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/rawda-4b-instruct-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo derivado original: https://huggingface.co/abdallah3id/rawda-4b-instruct (enlace inferido del README; no verificado en la información proporcionada)
 - llama.cpp: https://github.com/ggml-org/llama.cpp

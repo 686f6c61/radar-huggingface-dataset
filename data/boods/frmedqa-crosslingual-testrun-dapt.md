@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `boods/FrMedQA-CrossLingual-TestRun-DAPT` es un ajuste fino (fine-tuning) publicado en HuggingFace por el usuario "boods", derivado del modelo base `unsloth/Qwen3-14B-unsloth-bnb-4bit`. Se trata, por tanto, de una adaptación de Qwen3-14B, un transformer decoder-only denso de 14,8 mil millones de parámetros desarrollado por Alibaba Qwen. El entrenamiento se ha realizado con Unsloth y la librería TRL, lo que indica un flujo de trabajo de ajuste supervisado (SFT) o DAPT sobre una base ya cuantizada a 4 bits.
+El modelo `boods/FrMedQA-CrossLingual-TestRun-DAPT` es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario "boods", derivado del modelo base `unsloth/Qwen3-14B-unsloth-bnb-4bit`. Se trata, por tanto, de una adaptación de Qwen3-14B, un transformer decoder-only denso de 14,8 mil millones de parámetros desarrollado por Alibaba Qwen. El entrenamiento se ha realizado con Unsloth y la librería TRL, lo que indica un flujo de trabajo de ajuste supervisado (SFT) o DAPT sobre una base ya cuantizada a 4 bits.
 
 El nombre del repositorio sugiere un caso de uso de "Domain-Adaptive Pre-Training" (DAPT) orientado a preguntas y respuestas médicas en francés con evaluación cross-lingual, aunque la model card no confirma esta interpretación ni describe el corpus empleado. La etiqueta de idioma declarada es únicamente `en` (inglés), lo que entra en contradicción aparente con el componente "Fr"/"CrossLingual" del nombre.
 
@@ -96,7 +96,7 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boods/FrMedQA-CrossLingual-TestRun-DAPT
+- Modelo en Hugging Face: https://huggingface.co/boods/FrMedQA-CrossLingual-TestRun-DAPT
 - Modelo base declarado: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo original Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B

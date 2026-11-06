@@ -99,7 +99,7 @@ Los datos de Qwen3-14B y phi-4 corresponden a informacion publica de sus respect
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-14b-base-fve-msm-facts-s3
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-14b-base-fve-msm-facts-s3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B-Base
 - Dataset de midtrain: https://huggingface.co/datasets/joshycodes/fve-msm-facts
 - Dataset de chat SFT: https://huggingface.co/datasets/joshycodes/fve-msm-chat-sft-13k

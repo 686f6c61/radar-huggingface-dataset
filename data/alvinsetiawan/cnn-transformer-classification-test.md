@@ -71,5 +71,5 @@ No disponible. No se conocen modelos comparables en el repositorio ni en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alvinsetiawan/cnn-transformer-classification-test
+- Repositorio en Hugging Face: https://huggingface.co/alvinsetiawan/cnn-transformer-classification-test
 - No se han encontrado papers, blogs o demos específicos de este modelo. Los resultados de búsqueda web sobre CNN-transformer corresponden a otros trabajos de investigación no relacionados directamente con este repositorio.

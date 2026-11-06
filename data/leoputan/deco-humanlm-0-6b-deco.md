@@ -2,7 +2,7 @@
 
 ## Resumen
 
-deco-humanlm-0.6b-deco es un modelo de lenguaje publicado por el usuario Leoputan en HuggingFace. El repositorio declara 751.632.384 parametros reales en formato safetensors (aproximadamente 0,75 mil millones) y esta etiquetado con el tag `qwen3`, lo que sugiere que deriva de la arquitectura de la familia Qwen3, aunque la model card no aporta ninguna confirmacion explicita. El tamano del repositorio es de 3,0 GB.
+deco-humanlm-0.6b-deco es un modelo de lenguaje publicado por el usuario Leoputan en Hugging Face. El repositorio declara 751.632.384 parametros reales en formato safetensors (aproximadamente 0,75 mil millones) y esta etiquetado con el tag `qwen3`, lo que sugiere que deriva de la arquitectura de la familia Qwen3, aunque la model card no aporta ninguna confirmacion explicita. El tamano del repositorio es de 3,0 GB.
 
 La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia Apache 2.0. No se documentan datos de entrenamiento, composicion del dataset, proceso de alineacion, idiomas soportados ni longitud de contexto. Tampoco se han publicado resultados de benchmarks.
 
@@ -90,5 +90,5 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Leoputan/deco-humanlm-0.6b-deco
+- Hugging Face: https://huggingface.co/Leoputan/deco-humanlm-0.6b-deco
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados obtenidos corresponden a paginas de Google Translate y no guardan relacion con el modelo.

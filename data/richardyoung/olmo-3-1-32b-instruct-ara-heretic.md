@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Olmo-3.1-32B-Instruct-ARA-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Olmo-3.1-32B-Instruct-ARA-heretic
 - Modelo base: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct
 - Heretic (herramienta de ablación): https://heretic-project.org
 - Repositorio de reproducción: https://huggingface.co/richardyoung/Olmo-3.1-32B-Instruct-ARA-heretic/tree/main/reproduce

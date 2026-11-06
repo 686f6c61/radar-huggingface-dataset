@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zhongzhu/lowbarena-trial3-27b-b-nvfp4-axion-fp8head-int4emb | 14,73 B (texto) | NVFP4 + FP8 + INT4 | no disponible | Apache-2.0 | HuggingFace, formato compressed-tensors |
-| Qwen/Qwen3.5-27B (base) | 27 B (nominal) | BF16 (original) | no disponible | Apache-2.0 | HuggingFace |
-| AxionML/Qwen3.5-27B-NVFP4 | 27 B (nominal) | NVFP4 (ModelOpt) | no disponible | Apache-2.0 | HuggingFace |
+| Zhongzhu/lowbarena-trial3-27b-b-nvfp4-axion-fp8head-int4emb | 14,73 B (texto) | NVFP4 + FP8 + INT4 | no disponible | Apache-2.0 | Hugging Face, formato compressed-tensors |
+| Qwen/Qwen3.5-27B (base) | 27 B (nominal) | BF16 (original) | no disponible | Apache-2.0 | Hugging Face |
+| AxionML/Qwen3.5-27B-NVFP4 | 27 B (nominal) | NVFP4 (ModelOpt) | no disponible | Apache-2.0 | Hugging Face |
 
 Nota: no se dispone de datos de rendimiento comparativos entre estas variantes en la informacion proporcionada. Los resultados de busqueda mencionan releases NVFP4 sobre Qwen3.8-27B (QUASAR y GSQ/RCO), que corresponden a un modelo base distinto y no son directamente comparables con este checkpoint.
 
@@ -82,7 +82,7 @@ Nota: no se dispone de datos de rendimiento comparativos entre estas variantes e
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Zhongzhu/lowbarena-trial3-27b-b-nvfp4-axion-fp8head-int4emb
+- Hugging Face del modelo: https://huggingface.co/Zhongzhu/lowbarena-trial3-27b-b-nvfp4-axion-fp8head-int4emb
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Fuente de los pesos NVFP4: https://huggingface.co/AxionML/Qwen3.5-27B-NVFP4
 - Discusion sobre despliegue NVFP4 de la familia Qwen (contexto): https://huggingface.co/Qwen/Qwen3.8-27B/discussions/132

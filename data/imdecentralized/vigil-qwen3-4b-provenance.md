@@ -69,8 +69,8 @@ No hay información suficiente para una comparativa rigurosa. El adaptador es es
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/imdecentralized/vigil-qwen3-4b-provenance
-- Modelo base Qwen3-4B-Instruct-2507 en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B
+- Repositorio Hugging Face del adaptador: https://huggingface.co/imdecentralized/vigil-qwen3-4b-provenance
+- Modelo base Qwen3-4B-Instruct-2507 en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio oficial de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Página de referencia de arquitectura de Qwen: https://karam-nus.github.io/models/01_Qwen
 - Herramienta de estimación de recursos para Qwen3-4B: https://www.canirun.ai/model/qwen3-4b

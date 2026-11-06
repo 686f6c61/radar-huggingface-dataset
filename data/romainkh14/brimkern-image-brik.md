@@ -89,7 +89,7 @@ No hay informacion sobre rendimiento comparativo en calidad de imagen, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/romainkh14/brimkern-image-BRIK
+- Modelo en Hugging Face: https://huggingface.co/romainkh14/brimkern-image-BRIK
 - Repositorio GitHub de Brimkern: https://github.com/RomainKH/Brimkern
 - Sitio web del proyecto (demo y chat): https://brimkern.com/
 - Documentacion de Brimkern (incluye especificacion BRIK): https://brimkern.com/docs

@@ -91,7 +91,7 @@ Las tres versiones comparten la misma arquitectura y capacidades. La versión 8-
 
 ## Enlaces
 
-- Repositorio HuggingFace: [mlx-community/GOT-OCR2_0-8bit](https://huggingface.co/mlx-community/GOT-OCR2_0-8bit)
+- Repositorio Hugging Face: [mlx-community/GOT-OCR2_0-8bit](https://huggingface.co/mlx-community/GOT-OCR2_0-8bit)
 - Modelo base: [stepfun-ai/GOT-OCR2_0](https://huggingface.co/stepfun-ai/GOT-OCR2_0)
 - Paper del modelo: [arXiv:2409.01704](https://arxiv.org/abs/2409.01704)
 - Versión bf16: [mlx-community/GOT-OCR2_0-bf16](https://huggingface.co/mlx-community/GOT-OCR2_0-bf16)

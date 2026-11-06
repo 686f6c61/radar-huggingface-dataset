@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AS32EDXSA/MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario AS32EDXSA que, por sus metadatos y contenido, presenta todas las características de ser un repositorio de prueba o una plantilla vacía. La model card no describe un modelo real, sino que contiene texto genérico de ejemplo ("MyAwesomeModel"), rutas a imágenes inexistentes (`figures/fig1.png`) y tablas de benchmarks con columnas anonimizadas ("Model1", "Model2", "Model1-v2") que no corresponden a ningún sistema identificable. El repositorio tiene 0 descargas, 0 likes y un tamano de 0,0 GB, lo que indica que no se han subido pesos.
+AS32EDXSA/MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario AS32EDXSA que, por sus metadatos y contenido, presenta todas las características de ser un repositorio de prueba o una plantilla vacía. La model card no describe un modelo real, sino que contiene texto genérico de ejemplo ("MyAwesomeModel"), rutas a imágenes inexistentes (`figures/fig1.png`) y tablas de benchmarks con columnas anonimizadas ("Model1", "Model2", "Model1-v2") que no corresponden a ningún sistema identificable. El repositorio tiene 0 descargas, 0 likes y un tamano de 0,0 GB, lo que indica que no se han subido pesos.
 
-A pesar de que las etiquetas de HuggingFace declaran la arquitectura `bert` y el pipeline `feature-extraction`, el contenido de la model card describe capacidades de razonamiento avanzado, function calling y un supuesto modo de pensamiento ("thinking depth"), lo que es incoherente con un modelo BERT de extracción de características. Esta contradicción refuerza la hipótesis de que el texto de la tarjeta es material de plantilla copiado de otro modelo y no una descripción fiable de este repositorio.
+A pesar de que las etiquetas de Hugging Face declaran la arquitectura `bert` y el pipeline `feature-extraction`, el contenido de la model card describe capacidades de razonamiento avanzado, function calling y un supuesto modo de pensamiento ("thinking depth"), lo que es incoherente con un modelo BERT de extracción de características. Esta contradicción refuerza la hipótesis de que el texto de la tarjeta es material de plantilla copiado de otro modelo y no una descripción fiable de este repositorio.
 
 Por tanto, no es posible evaluar el modelo como tal: no hay pesos publicados, no hay ficha técnica verificable y los únicos datos disponibles son los metadatos del repositorio y un texto de relleno. Esta ficha documenta esa situación y marca explícitamente como "no disponible" todo dato que no puede confirmarse.
 
@@ -12,7 +12,7 @@ Por tanto, no es posible evaluar el modelo como tal: no hay pesos publicados, no
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (según etiqueta de HuggingFace; sin confirmar en pesos ni ficha) |
+| Arquitectura | BERT (según etiqueta de Hugging Face; sin confirmar en pesos ni ficha) |
 | Parametros totales | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
@@ -22,7 +22,7 @@ Por tanto, no es posible evaluar el modelo como tal: no hay pesos publicados, no
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura real ni sobre el proceso de entrenamiento. La unica referencia tecnica es la etiqueta `bert` de HuggingFace, que sugiere un transformer encoder de tipo BERT, coherente con el pipeline declarado de `feature-extraction` (generacion de embeddings). No obstante, el repositorio no contiene pesos (0,0 GB) y la model card no describe capa alguna, numero de parametros, vocabulario ni configuracion de tokenizador.
+No hay informacion verificable sobre la arquitectura real ni sobre el proceso de entrenamiento. La unica referencia tecnica es la etiqueta `bert` de Hugging Face, que sugiere un transformer encoder de tipo BERT, coherente con el pipeline declarado de `feature-extraction` (generacion de embeddings). No obstante, el repositorio no contiene pesos (0,0 GB) y la model card no describe capa alguna, numero de parametros, vocabulario ni configuracion de tokenizador.
 
 El texto de la model card menciona "recursos computacionales incrementados", "mecanismos de optimizacion algoritmica en post-entrenamiento", un supuesto aumento de tokens de razonamiento por pregunta (de 12K a 23K) y mejoras en function calling. Estos elementos son propios de modelos de razonamiento de gran escala (tipo LLM generativo), no de un BERT de extraccion de caracteristicas, por lo que no deben tomarse como descripcion fiable de este repositorio. No se dispone de informacion sobre dataset, numero de tokens de entrenamiento, ni tecnicas como RLHF o DPO.
 
@@ -40,7 +40,7 @@ El texto de la model card menciona "recursos computacionales incrementados", "me
 No es posible proponer casos de uso concretos y realistas, ya que no existen pesos publicados ni una ficha tecnica fiable que permita determinar el comportamiento del modelo. Cualquier caso de uso que se derivase del texto de la model card (razonamiento, codigo, atencion al cliente) seria especulativo y no estaria respaldado por el repositorio.
 
 - Evaluacion de plantillas de model card: el repositorio puede servir como ejemplo de estructura de documentacion para modelos, no como modelo utilizable.
-- Pruebas de integracion de HuggingFace Hub: util para verificar flujos de subida, etiquetado y renderizado de tarjetas.
+- Pruebas de integracion de Hugging Face Hub: util para verificar flujos de subida, etiquetado y renderizado de tarjetas.
 - No se recomienda su uso en produccion ni en investigacion, al no contener artefactos funcionales.
 
 ## Benchmarks y rendimiento
@@ -94,5 +94,5 @@ No disponible. La model card compara contra modelos anonimizados ("Model1", "Mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AS32EDXSA/MyAwesomeModel-TestRepo
+- Modelo en Hugging Face: https://huggingface.co/AS32EDXSA/MyAwesomeModel-TestRepo
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada. Los resultados de busqueda disponibles correspondian a paginas de OpenAI sobre GPT-5 y ChatGPT, sin relacion con este repositorio.

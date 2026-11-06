@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Elpriser/nordic-price-forecast` es un sistema de regresión tabular basado en LightGBM que genera predicciones horarias del precio de electricidad day-ahead (mercado de día siguiente) en EUR/MWh para las 13 zonas de oferta de Dinamarca, Noruega, Suecia, Finlandia y Países Bajos (DK1, DK2, NO1-NO5, SE1-SE4, FI, NL). Desarrollado por el usuario Elpriser, el modelo se reentrena y se re-sube a HuggingFace diariamente, por lo que los pesos publicados corresponden a la versión en producción.
+El modelo `Elpriser/nordic-price-forecast` es un sistema de regresión tabular basado en LightGBM que genera predicciones horarias del precio de electricidad day-ahead (mercado de día siguiente) en EUR/MWh para las 13 zonas de oferta de Dinamarca, Noruega, Suecia, Finlandia y Países Bajos (DK1, DK2, NO1-NO5, SE1-SE4, FI, NL). Desarrollado por el usuario Elpriser, el modelo se reentrena y se re-sube a Hugging Face diariamente, por lo que los pesos publicados corresponden a la versión en producción.
 
 El modelo resuelve el problema de la previsión de precios eléctricos a corto plazo (horizonte de 2 a 9 días) en mercados nórdicos interconectados, donde la hidrología de los embalses y la meteorología juegan un papel determinante. Su relevancia actual radica en la volatilidad creciente de los mercados eléctricos europeos y en la necesidad de herramientas de optimización para consumidores, comercializadoras y productores. La arquitectura es un único modelo LightGBM con regresión cuantil que agrupa las 13 zonas mediante una variable categórica `zone`, en lugar de entrenar trece modelos independientes, lo que permite compartir información entre zonas y simplificar el mantenimiento. El contexto de entrada son 30 características por fila, que incluyen calendario, precios históricos, meteorología de la zona y datos agregados de embalses hidroeléctricos.
 
@@ -90,7 +90,7 @@ No se dispone de información sobre modelos comparables específicos para previs
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Elpriser/nordic-price-forecast
+- Modelo en Hugging Face: https://huggingface.co/Elpriser/nordic-price-forecast
 - Modelo compañero (solo Dinamarca): https://huggingface.co/Elpriser/denmark-price-forecast
 - Fuente de datos meteorológicos: Open-Meteo (https://open-meteo.com)
 - Fuente de datos de embalses: ENTSO-E (https://transparency.entsoe.eu)

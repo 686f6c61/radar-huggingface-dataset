@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fastforks/kernels` es un repositorio de artefactos binarios publicado por el proyecto fastforks en HuggingFace. No contiene un modelo de lenguaje ni pesos de red neuronal en el sentido habitual: aloja kernels CUDA precompilados para los backends `mode="kernels"` de la librería fastforks, un archivo por biblioteca, build y arquitectura de GPU. Su función es servir de almacén de distribución de código compilado que la librería descarga bajo demanda y verifica mediante SHA-256 contra el `manifest.toml` de cada biblioteca.
+`fastforks/kernels` es un repositorio de artefactos binarios publicado por el proyecto fastforks en Hugging Face. No contiene un modelo de lenguaje ni pesos de red neuronal en el sentido habitual: aloja kernels CUDA precompilados para los backends `mode="kernels"` de la librería fastforks, un archivo por biblioteca, build y arquitectura de GPU. Su función es servir de almacén de distribución de código compilado que la librería descarga bajo demanda y verifica mediante SHA-256 contra el `manifest.toml` de cada biblioteca.
 
 El contenido cubre aceleradores para pipelines de visión por computador: estereoscopía y estimación de disparidad (FoundationStereo, CREStereo, RAFT-Stereo, IGEV, HITNet, PatchmatchNet, MoCha-Stereo, Fast-FoundationStereo), profundidad monocular (DPT), backbones de clasificación y segmentación (DINOv2/DINOv3, Restormer, fast-vision-models) y convoluciones fusionadas (deformables, CUTLASS). Todos los builds están compilados con CUDA 12.8 o 13.0 y cubren las arquitecturas sm_80 a sm_120 más `compute_80`, lo que abarca desde A100 hasta Blackwell.
 
@@ -85,7 +85,7 @@ No disponible. No se han identificado en la información proporcionada repositor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fastforks/kernels
+- Repositorio en Hugging Face: https://huggingface.co/fastforks/kernels
 - Repositorio de la librería fastforks: https://github.com/kleinicke/fastforks
 - CUTLASS (dependencia de cabeceras, BSD-3-Clause): https://github.com/NVIDIA/cutlass
 - FoundationStereo (proyecto de origen de varios forks): no disponible en la información proporcionada

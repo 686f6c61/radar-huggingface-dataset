@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`daikihashimoto/blip-generation-demo-2024` es un repositorio de investigacion publicado en HuggingFace que contiene un prototipo de arquitectura tipo BLIP orientado a tareas de generacion. El autor lo define explicitamente como un punto de partida experimental: el unico checkpoint incluido (`model.safetensors`) es una **inicializacion valida para pruebas de humo**, no un modelo entrenado, y el repositorio no reclama ninguna puntuacion de benchmark. Con 49.600 parametros totales (segun el recuento real de safetensors) y un tamano de repositorio practicamente nulo, no compite en ninguna categoria funcional de modelos generativos.
+`daikihashimoto/blip-generation-demo-2024` es un repositorio de investigacion publicado en Hugging Face que contiene un prototipo de arquitectura tipo BLIP orientado a tareas de generacion. El autor lo define explicitamente como un punto de partida experimental: el unico checkpoint incluido (`model.safetensors`) es una **inicializacion valida para pruebas de humo**, no un modelo entrenado, y el repositorio no reclama ninguna puntuacion de benchmark. Con 49.600 parametros totales (segun el recuento real de safetensors) y un tamano de repositorio practicamente nulo, no compite en ninguna categoria funcional de modelos generativos.
 
 El interes del repositorio es, por tanto, documental y de andamiaje, no de rendimiento. Incluye el codigo de implementacion (`predict.py`), la configuracion de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`), lo que permite reproducir un ciclo de entrenamiento desde cero con un optimizador Lion y un scheduler OneCycle. Es un ejemplo de como se estructura un prototipo de investigacion reproducible, no una herramienta lista para produccion.
 
@@ -88,7 +88,7 @@ Conclusion: el unico eje en el que este repositorio es comparable es el de licen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/daikihashimoto/blip-generation-demo-2024
+- Hugging Face: https://huggingface.co/daikihashimoto/blip-generation-demo-2024
 - Resultados de la busqueda web no relacionados directamente con el modelo (se listan unicamente como contexto consultado, sin conexion verificada con este repositorio):
   - One missing piece in Vision and Language: A Survey on Comics: https://arxiv.org/html/2409.09502v2
   - LISTEN, THINK, AND UNDERSTAND (ICLR Proceedings): https://proceedings.iclr.cc/paper_files/paper/2024/file/510d0935b543a29d686f93fa52d1c288-Paper-Conference.pdf

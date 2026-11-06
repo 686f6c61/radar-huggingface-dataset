@@ -6,7 +6,7 @@ BioVault (repositorio `v2xvi/biovault`) no es un modelo de lenguaje ni un modelo
 
 La relevancia del proyecto esta en el planteamiento: en lugar de agregar telemetria de dispositivos medicos (bombas de infusion, ventiladores, monitores, PACS) en un repositorio central, cada silo hospitalario entrena localmente con Opacus, recorta los gradientes por muestra a una norma L2 de 1.0, inyecta ruido gaussiano calibrado y envia solo deltas de pesos perturbados a un coordinador Flower que aplica FedAvg. El resultado es un clasificador global de cinco clases (BENIGN, DDOS, RANSOMWARE, DATA_TAMPERING, OTHER) con una garantia formal de privacidad objetivo (epsilon = 3.0, delta = 1e-5).
 
-Ahora bien, la ficha debe leerse con cautela: el repositorio de HuggingFace tiene un tamano de 0.0 GB, no declara licencia, idiomas ni pipeline, y acumula 0 descargas y 0 likes. La model card describe la arquitectura y el esquema de privacidad, pero no publica pesos, codigo, metricas ni la arquitectura concreta del clasificador subyacente; ademas, el texto disponible aparece truncado en la seccion de configuracion del presupuesto de privacidad.
+Ahora bien, la ficha debe leerse con cautela: el repositorio de Hugging Face tiene un tamano de 0.0 GB, no declara licencia, idiomas ni pipeline, y acumula 0 descargas y 0 likes. La model card describe la arquitectura y el esquema de privacidad, pero no publica pesos, codigo, metricas ni la arquitectura concreta del clasificador subyacente; ademas, el texto disponible aparece truncado en la seccion de configuracion del presupuesto de privacidad.
 
 ## Especificaciones tecnicas
 
@@ -100,7 +100,7 @@ No se han identificado modelos comparables en la informacion proporcionada, y la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/v2xvi/biovault
+- Repositorio en Hugging Face: https://huggingface.co/v2xvi/biovault
 - Flower (framework de aprendizaje federado): https://flower.ai/
 - Opacus (DP-SGD): https://opacus.ai/
 - Python 3.10+: https://www.python.org/downloads/

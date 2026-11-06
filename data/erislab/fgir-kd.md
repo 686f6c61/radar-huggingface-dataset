@@ -55,7 +55,7 @@ La tecnica central es la destilacion de conocimiento profesor-estudiante sobre t
 - Extraccion de caracteristicas para busqueda visual o recuperacion: usar un backbone destilado como extractor de embeddings para sistemas de similitud de imagenes.
 - Benchmarking de metodos de destilacion: el repositorio sirve como linea base reproducible para comparar nuevas tecnicas de KD sobre las mismas combinaciones de dataset y arquitectura.
 - Transfer learning a nuevos dominios de grano fino: partir de un estudiante destilado y reentrenar la cabeza de clasificacion con un dataset propio de pocas clases y muchas muestras por clase.
-- Investigacion academica en FGVC: el material esta vinculado al taller FGVC13 de CVPR 2026 y a la coleccion de HuggingFace, lo que facilita la comparacion entre publicaciones.
+- Investigacion academica en FGVC: el material esta vinculado al taller FGVC13 de CVPR 2026 y a la coleccion de Hugging Face, lo que facilita la comparacion entre publicaciones.
 
 ## Benchmarks y rendimiento
 
@@ -156,9 +156,9 @@ No se dispone de datos de benchmarks que permitan comparar con alternativas de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ERISLab/FGIR-KD
+- Modelo en Hugging Face: https://huggingface.co/ERISLab/FGIR-KD
 - Articulo en arXiv: https://arxiv.org/abs/2605.15689
-- Coleccion de HuggingFace asociada al articulo: https://huggingface.co/collections/ERISLab/fgir-kd-how-to-choose-your-teacher-fgvc13-cvpr-2026-6ab32cd35061af167deb14d6
+- Coleccion de Hugging Face asociada al articulo: https://huggingface.co/collections/ERISLab/fgir-kd-how-to-choose-your-teacher-fgvc13-cvpr-2026-6ab32cd35061af167deb14d6
 - Repositorio de codigo TGDA: https://github.com/arkel23/TGDA
 - Libreria de carga fgir-zoo: https://github.com/arkel23/fgir-zoo
 - La busqueda web realizada no devolvio resultados relevantes para este modelo.

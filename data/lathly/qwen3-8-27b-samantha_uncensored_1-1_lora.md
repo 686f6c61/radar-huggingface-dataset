@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lathly/Qwen3.8-27B-Samantha_Uncensored_1.1_LoRA | LoRA sobre Qwen3.8-27B | 80M (adaptador) | 256K (base) | Apache-2.0 | HuggingFace |
-| JonathanColetti/Qwen3.8-27B-Uncensored | Fine-tune completo (abliterated) sobre Qwen3.8-27B | 27B | 256K | Apache-2.0 | HuggingFace |
-| Sk1ddy2026/Qwen3.6-27B_Samantha-Uncensored | Fine-tune completo sobre Qwen3.6-27B | 27B | no disponible | no disponible | HuggingFace |
+| Lathly/Qwen3.8-27B-Samantha_Uncensored_1.1_LoRA | LoRA sobre Qwen3.8-27B | 80M (adaptador) | 256K (base) | Apache-2.0 | Hugging Face |
+| JonathanColetti/Qwen3.8-27B-Uncensored | Fine-tune completo (abliterated) sobre Qwen3.8-27B | 27B | 256K | Apache-2.0 | Hugging Face |
+| Sk1ddy2026/Qwen3.6-27B_Samantha-Uncensored | Fine-tune completo sobre Qwen3.6-27B | 27B | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. La principal diferencia es que el modelo de Lathly es un adaptador LoRA (más ligero y fácil de intercambiar), mientras que los otros son fine-tunes completos que requieren más recursos de almacenamiento y cómputo.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La princi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lathly/Qwen3.8-27B-Samantha_Uncensored_1.1_LoRA
+- Modelo en Hugging Face: https://huggingface.co/Lathly/Qwen3.8-27B-Samantha_Uncensored_1.1_LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/digitalpipelines/samantha-1.1-uncensored
 - Repositorio de Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

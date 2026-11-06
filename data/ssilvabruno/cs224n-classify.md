@@ -73,7 +73,7 @@ No disponible. No se especifican modelos comparables de la misma categoría (per
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ssilvabruno/cs224n-classify
+- Repositorio en Hugging Face: https://huggingface.co/ssilvabruno/cs224n-classify
 - Curso Stanford CS 224N: https://web.stanford.edu/class/cs224n/
 - Proyecto CS224N de referencia en GitHub: https://github.com/psr-ai/CS224N-default-project
 - Tutorial de PyTorch del curso CS224N: https://colab.research.google.com/github/ryanyuchen/NLP-Pytorch/blob/main/CS224N_PyTorch_Tutorial.ipynb

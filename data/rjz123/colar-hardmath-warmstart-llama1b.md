@@ -69,6 +69,6 @@ No se dispone de informacion sobre modelos directamente comparables en la misma 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/rjz123/colar-hardmath-warmstart-llama1b)
+- [Modelo en Hugging Face](https://huggingface.co/rjz123/colar-hardmath-warmstart-llama1b)
 - [Modelo base unsloth/Llama-3.2-1B-Instruct](https://huggingface.co/unsloth/Llama-3.2-1B-Instruct)
 - [Modelo base original meta-llama/Llama-3.2-1B](https://huggingface.co/meta-llama/Llama-3.2-1B)

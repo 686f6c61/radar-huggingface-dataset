@@ -87,7 +87,7 @@ No se dispone de comparativas con otros modelos de difusion populares (SDXL, Flu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/byteshape/Krea-2-Turbo-Humming
+- Repositorio Hugging Face: https://huggingface.co/byteshape/Krea-2-Turbo-Humming
 - Version GGUF del mismo modelo: https://huggingface.co/byteshape/Krea-2-Turbo-GGUF
 - Blog de ByteShape sobre Krea-2-Turbo: https://byteshape.com/blogs/Krea-2-Turbo/
 - Explorador de comparacion visual: https://byteshape.com/blogs/Krea-2-Turbo/comparison/

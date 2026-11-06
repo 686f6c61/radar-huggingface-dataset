@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`scaling2_plain_d768_L2_t500000000_s2` es un modelo de investigación publicado por el usuario asher577 en HuggingFace. Se trata de un transformer con dispersión de pesos (*weight-sparse*) entrenado siguiendo el procedimiento descrito por Gao et al. (2025), con un objetivo de fracción L0 del 0,01 y dispersión también en las activaciones. Su propósito no es el uso productivo, sino el estudio del escalado de modelos con matrices de pesos dispersas en un régimen controlado y de bajo coste computacional.
+`scaling2_plain_d768_L2_t500000000_s2` es un modelo de investigación publicado por el usuario asher577 en Hugging Face. Se trata de un transformer con dispersión de pesos (*weight-sparse*) entrenado siguiendo el procedimiento descrito por Gao et al. (2025), con un objetivo de fracción L0 del 0,01 y dispersión también en las activaciones. Su propósito no es el uso productivo, sino el estudio del escalado de modelos con matrices de pesos dispersas en un régimen controlado y de bajo coste computacional.
 
 El modelo es extremadamente pequeño: 2 capas, dimensión de modelo 768, dimensión de cabeza 16 y un vocabulario de tan solo 4096 tokens. La longitud de contexto es de 512 tokens y se entrenó sobre 500 millones de tokens del dataset `jacobcd52/simplestories-tokenized`, tokenizado con `SimpleStories/SimpleStories-1.25M`. El repositorio ocupa aproximadamente 0,1 GB y los pesos se distribuyen en formato `pytorch_model.bin`.
 
@@ -80,7 +80,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- [HuggingFace: asher577/scaling2_plain_d768_L2_t500000000_s2](https://huggingface.co/asher577/scaling2_plain_d768_L2_t500000000_s2)
+- [Hugging Face: asher577/scaling2_plain_d768_L2_t500000000_s2](https://huggingface.co/asher577/scaling2_plain_d768_L2_t500000000_s2)
 - [W&B run: asher577/scd_scaling/xslt4i3v](https://wandb.ai/asher577/scd_scaling/runs/xslt4i3v)
 - Dataset: `jacobcd52/simplestories-tokenized` (referenciado en la model card)
 - Tokenizador: `SimpleStories/SimpleStories-1.25M` (referenciado en la model card)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kc1111111/trainer_output` es un modelo de clasificación de texto generado automáticamente por el `Trainer` de HuggingFace, resultado de un fine-tuning de `distilbert/distilbert-base-uncased`. Lo publica el usuario `kc1111111` y está diseñado para la tarea de clasificación de texto, aunque la model card no especifica el dataset de entrenamiento ni el número exacto de clases. Con 66.955.010 parámetros, es un modelo compacto derivado de DistilBERT, una versión destilada de BERT con seis capas de encoder.
+`kc1111111/trainer_output` es un modelo de clasificación de texto generado automáticamente por el `Trainer` de Hugging Face, resultado de un fine-tuning de `distilbert/distilbert-base-uncased`. Lo publica el usuario `kc1111111` y está diseñado para la tarea de clasificación de texto, aunque la model card no especifica el dataset de entrenamiento ni el número exacto de clases. Con 66.955.010 parámetros, es un modelo compacto derivado de DistilBERT, una versión destilada de BERT con seis capas de encoder.
 
 La relevancia de este modelo es limitada: se trata de un artefacto de entrenamiento generado automáticamente, sin benchmarks publicados y sin documentación sobre su uso previsto. Aunque la licencia Apache 2.0 permite su uso libre, la ausencia de datos sobre el dataset y la tarea concreta hace que deba considerarse únicamente como un ejemplo técnico de fine-tuning, no como un modelo listo para producción. La pérdida de validación muestra un claro sobreajuste a partir de la época 4, lo que refuerza su carácter experimental.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es limitada: se trata de un artefacto de entrenamie
 
 El modelo parte de `distilbert/distilbert-base-uncased`, un encoder transformer de 6 capas destilado de BERT-base. La destilación reduce los parámetros de 110 millones a 67 millones, manteniendo el 95% del rendimiento del original en tareas de comprensión del lenguaje. La cabeza de clasificación añade una capa lineal sobre el token `[CLS]` para la salida de logits.
 
-El fine-tuning se realizó con el `Trainer` de HuggingFace sobre un dataset declarado como `None` en la model card, lo que impide conocer el dominio o la naturaleza de las etiquetas. Los hiperparámetros documentados son: 15 épocas, learning rate de 5e-05, batch size de 8, optimizador AdamW con betas (0.9, 0.999) y scheduler lineal. La pérdida de validación desciende de 0.3217 en la época 1 a un mínimo de 0.2612 en la época 2, pero luego asciende progresivamente hasta 0.6975 en la época 15, indicando un claro sobreajuste. No se menciona el uso de RLHF, DPO ni ninguna técnica de alineación adicional.
+El fine-tuning se realizó con el `Trainer` de Hugging Face sobre un dataset declarado como `None` en la model card, lo que impide conocer el dominio o la naturaleza de las etiquetas. Los hiperparámetros documentados son: 15 épocas, learning rate de 5e-05, batch size de 8, optimizador AdamW con betas (0.9, 0.999) y scheduler lineal. La pérdida de validación desciende de 0.3217 en la época 1 a un mínimo de 0.2612 en la época 2, pero luego asciende progresivamente hasta 0.6975 en la época 15, indicando un claro sobreajuste. No se menciona el uso de RLHF, DPO ni ninguna técnica de alineación adicional.
 
 ## Capacidades
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento (MMLU) | Disponibilidad |
 |---|---|---|---|---|---|
-| `kc1111111/trainer_output` | 66.955.010 | 512 | Apache 2.0 | No evaluado | HuggingFace |
-| `distilbert-base-uncased` | 66.955.010 | 512 | Apache 2.0 | No evaluado | HuggingFace |
-| `bert-base-uncased` | 110M | 512 | Apache 2.0 | No evaluado | HuggingFace |
-| `roberta-base` | 125M | 512 | MIT | No evaluado | HuggingFace |
+| `kc1111111/trainer_output` | 66.955.010 | 512 | Apache 2.0 | No evaluado | Hugging Face |
+| `distilbert-base-uncased` | 66.955.010 | 512 | Apache 2.0 | No evaluado | Hugging Face |
+| `bert-base-uncased` | 110M | 512 | Apache 2.0 | No evaluado | Hugging Face |
+| `roberta-base` | 125M | 512 | MIT | No evaluado | Hugging Face |
 
 El modelo no añade nada respecto a su base `distilbert-base-uncased`: tiene exactamente la misma arquitectura y número de parámetros, pero con pesos ajustados a un dataset desconocido. No hay datos de rendimiento para comparar con alternativas como `roberta-base` o `bert-base`.
 
@@ -80,7 +80,7 @@ El modelo no añade nada respecto a su base `distilbert-base-uncased`: tiene exa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kc1111111/trainer_output
+- Modelo en Hugging Face: https://huggingface.co/kc1111111/trainer_output
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
-- Documentación de `Trainer` de HuggingFace: https://huggingface.co/docs/transformers/training (no citado en la model card, pero relevante para el proceso de entrenamiento)
+- Documentación de `Trainer` de Hugging Face: https://huggingface.co/docs/transformers/training (no citado en la model card, pero relevante para el proceso de entrenamiento)
 - Información sobre DistilBERT: https://huggingface.co/docs/transformers/model_doc/distilbert (no citado en la model card, pero necesario para entender la arquitectura)

@@ -74,7 +74,7 @@ Este modelo se diferencia de sus alternativas por ser un afinado especifico para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-first-third-sft-seed4
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-first-third-sft-seed4
 - Modelo base (unsloth/Qwen3-8B): https://huggingface.co/unsloth/Qwen3-8B
 - Paper relacionado: "School of reward hacks: Hacking harmless tasks generalizes to..." (https://arxiv.org/html/2508.17511v1)
 - Pagina del modelo en slopllm.com (con benchmarks y requisitos): https://slopllm.com/m/qwen3-8b-school-of-reward-hacks-first-third-sft

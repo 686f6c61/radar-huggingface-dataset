@@ -71,7 +71,7 @@ La model card compara Qwen3.8-27B con Qwen3.6-27B (mismo tamaño), Qwen3.7-Plus,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingoflazy/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/kingoflazy/Qwen3.8-27B
 - Modelo oficial de Qwen (referencia en la model card): https://huggingface.co/Qwen/Qwen3.8-27B (no verificado)
 - Qwen Cloud (servicio alojado): https://www.qwencloud.com/models/qwen3.8-27b
 - Artículo de Atomic Chat: https://atomic.chat/models/qwen3-8-27b

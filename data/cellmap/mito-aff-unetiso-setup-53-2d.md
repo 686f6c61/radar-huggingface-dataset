@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Entrada | Contexto volumetrico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mito-aff-unetiso-setup-53-2d (este modelo) | U-Net 2D destilada | 1 x 1 x 556 x 556 | Solo un corte z; la afinidad z se predice sin contexto 3D real | BSD-3-Clause | HuggingFace |
-| cellmap/mito-aff-unetiso-setup-53 (profesor) | U-Net 3D isotropica | no disponible | Ventana 3D completa | no disponible | HuggingFace |
+| mito-aff-unetiso-setup-53-2d (este modelo) | U-Net 2D destilada | 1 x 1 x 556 x 556 | Solo un corte z; la afinidad z se predice sin contexto 3D real | BSD-3-Clause | Hugging Face |
+| cellmap/mito-aff-unetiso-setup-53 (profesor) | U-Net 3D isotropica | no disponible | Ventana 3D completa | no disponible | Hugging Face |
 | Otras alternativas de segmentacion mitocondrial | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Los parametros, la huella de memoria y el rendimiento de ambos modelos no estan publicados, por lo que la comparacion cuantitativa no es posible con la informacion disponible. La diferencia documentada se limita al caracter 2D frente a 3D y a la relacion de destilacion entre ambos.
@@ -95,7 +95,7 @@ Los parametros, la huella de memoria y el rendimiento de ambos modelos no estan 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cellmap/mito-aff-unetiso-setup-53-2d
+- Modelo en Hugging Face: https://huggingface.co/cellmap/mito-aff-unetiso-setup-53-2d
 - Modelo profesor (3D): https://huggingface.co/cellmap/mito-aff-unetiso-setup-53
 - Version ONNX para web: https://huggingface.co/cellmap/onnx-web-models (subcarpeta setup_53_2d)
 - Repositorio cellmap-models: https://github.com/janelia-cellmap/cellmap-models

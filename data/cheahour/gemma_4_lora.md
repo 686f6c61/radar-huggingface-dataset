@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cheahour/gemma_4_lora es un adaptador de ajuste fino (LoRA) publicado en HuggingFace por el usuario cheahour, derivado del modelo base unsloth/gemma-4-e4b-it-unsloth-bnb-4bit, que a su vez es una version cuantizada a 4 bits de la familia Gemma 4 de Google DeepMind. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador LoRA y no con un modelo completo, por lo que no es un modelo autonomo: necesita cargarse junto al base para poder inferir.
+cheahour/gemma_4_lora es un adaptador de ajuste fino (LoRA) publicado en Hugging Face por el usuario cheahour, derivado del modelo base unsloth/gemma-4-e4b-it-unsloth-bnb-4bit, que a su vez es una version cuantizada a 4 bits de la familia Gemma 4 de Google DeepMind. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador LoRA y no con un modelo completo, por lo que no es un modelo autonomo: necesita cargarse junto al base para poder inferir.
 
 La model card es practicamente la plantilla por defecto de Unsloth. El autor no documenta el dataset de entrenamiento, los hiperparametros, el numero de pasos ni el objetivo concreto del ajuste, y los metadatos indican que el repositorio se creo y se actualizo con un minuto de diferencia el 29 de septiembre de 2026, lo que apunta a una subida automatizada sin curacion posterior. El unico dato tecnico declarado es que el entrenamiento se hizo con Unsloth y que la licencia es apache-2.0.
 
@@ -70,10 +70,10 @@ Las cifras siguientes son estimaciones derivadas del tamano del base identificad
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cheahour/gemma_4_lora | adaptador LoRA sobre base E4B | no disponible | no evaluado | apache-2.0 (declarada) | HuggingFace, 0 descargas |
-| unsloth/gemma-4-e4b-it-unsloth-bnb-4bit (base) | E4B, 4 bits | no disponible | no disponible | no disponible | HuggingFace |
-| google/gemma-4-E4B | E4B | no disponible | no disponible | condiciones de Gemma (no verificadas aqui) | HuggingFace |
-| Familia Gemma 4 (rango declarado E2B-31B) | de E2B a 31B | no disponible | no disponible | no disponible | HuggingFace y Vertex/DeepMind |
+| cheahour/gemma_4_lora | adaptador LoRA sobre base E4B | no disponible | no evaluado | apache-2.0 (declarada) | Hugging Face, 0 descargas |
+| unsloth/gemma-4-e4b-it-unsloth-bnb-4bit (base) | E4B, 4 bits | no disponible | no disponible | no disponible | Hugging Face |
+| google/gemma-4-E4B | E4B | no disponible | no disponible | condiciones de Gemma (no verificadas aqui) | Hugging Face |
+| Familia Gemma 4 (rango declarado E2B-31B) | de E2B a 31B | no disponible | no disponible | no disponible | Hugging Face y Vertex/DeepMind |
 
 No se dispone de datos de contexto ni de rendimiento de ninguno de los modelos comparados en la informacion proporcionada, por lo que la comparativa se limita a aspectos de disponibilidad y licencia.
 
@@ -91,7 +91,7 @@ No se dispone de datos de contexto ni de rendimiento de ninguno de los modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cheahour/gemma_4_lora
+- Modelo en Hugging Face: https://huggingface.co/cheahour/gemma_4_lora
 - Modelo base: https://huggingface.co/unsloth/gemma-4-e4b-it-unsloth-bnb-4bit
 - Gemma 4 E4B de Google: https://huggingface.co/google/gemma-4-E4B
 - Pagina oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/

@@ -95,7 +95,7 @@ No se dispone de datos comparativos en la información proporcionada. Como refer
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task10_cartesian_20260911T023711Z-step-10000
+- Repositorio en Hugging Face: https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task10_cartesian_20260911T023711Z-step-10000
 - Fichero de registro del autor: log.txt (incluido en el repositorio, ruta relativa `log.txt`)
 - Estadísticas de normalización: assets/franka/norm_stats.json (incluido en el repositorio)
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo; los resultados obtenidos correspondían a comercios de recambios de motocicletas y no guardan relación con el contenido de esta ficha.

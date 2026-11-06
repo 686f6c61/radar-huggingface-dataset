@@ -63,7 +63,7 @@ No se dispone de informacion comparativa en la fuente proporcionada. Existen otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/FengWu
+- Hugging Face: https://huggingface.co/OneScience-Group/FengWu
 - Paper: https://arxiv.org/abs/2304.02948
 - Repositorio OneScience en GitHub: https://github.com/onescience-ai/OneScience
 - Repositorio OneScience en Gitee: https://gitee.com/onescience-ai/onescience

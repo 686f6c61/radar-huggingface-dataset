@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-TTS-12Hz-0.6B-CustomVoice es un modelo de síntesis de voz (text-to-speech) desarrollado por el equipo Qwen, publicado bajo licencia Apache 2.0 y distribuido en HuggingFace. Esta ficha corresponde a la republicación realizada por el usuario Allinsama del checkpoint oficial, cuya model card remite al repositorio de Qwen y al informe técnico arXiv:2601.15621. El modelo forma parte de la familia Qwen3-TTS, orientada a síntesis multilingüe, controlable y con capacidad de streaming.
+Qwen3-TTS-12Hz-0.6B-CustomVoice es un modelo de síntesis de voz (text-to-speech) desarrollado por el equipo Qwen, publicado bajo licencia Apache 2.0 y distribuido en Hugging Face. Esta ficha corresponde a la republicación realizada por el usuario Allinsama del checkpoint oficial, cuya model card remite al repositorio de Qwen y al informe técnico arXiv:2601.15621. El modelo forma parte de la familia Qwen3-TTS, orientada a síntesis multilingüe, controlable y con capacidad de streaming.
 
 La variante CustomVoice se apoya en el tokenizador Qwen3-TTS-Tokenizer-12Hz y ofrece nueve timbres predefinidos con control de estilo mediante instrucciones en lenguaje natural (tono, ritmo, expresión emocional) en diez idiomas: chino, inglés, japonés, coreano, alemán, francés, ruso, portugués, español e italiano. El autor declara una latencia de síntesis extremo a extremo de hasta 97 ms, lo que la sitúa en el rango apto para aplicaciones conversacionales en tiempo real.
 
@@ -24,7 +24,7 @@ El interés actual del checkpoint está en su tamaño reducido: los pesos en saf
 | Timbres predefinidos | 9 (Vivian, Serena, Uncle_Fu, Dylan, Eric, Ryan, Aiden, Ono_Anna, Sohee) |
 | Tokenizador de audio | Qwen3-TTS-Tokenizer-12Hz |
 | Latencia declarada | Hasta 97 ms extremo a extremo en modo streaming (dato del autor) |
-| Descargas / likes en HuggingFace | 0 / 0 en el momento de la consulta |
+| Descargas / likes en Hugging Face | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
 
@@ -76,11 +76,11 @@ Los datos de los modelos comparables no provienen de la información proporciona
 
 | Modelo | Parametros | Idiomas | Licencia | Contexto / control | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-TTS-12Hz-0.6B-CustomVoice (este) | 905,8 M (safetensors) | 10 | Apache 2.0 | Control de estilo por instrucción; 9 timbres; streaming 97 ms | HuggingFace (republicación) y repositorio oficial de Qwen |
+| Qwen3-TTS-12Hz-0.6B-CustomVoice (este) | 905,8 M (safetensors) | 10 | Apache 2.0 | Control de estilo por instrucción; 9 timbres; streaming 97 ms | Hugging Face (republicación) y repositorio oficial de Qwen |
 | Qwen3-TTS (otras variantes) | No disponible | No disponible | Apache 2.0 según la familia | No disponible | Repositorio oficial QwenLM |
-| XTTS-v2 (Coqui) | ≈0,47 B (referencia) | 17 | CPML (uso no comercial) | Clonación de voz zero-shot; sin control por instrucciones | HuggingFace; proyecto Coqui discontinuado |
-| Kokoro-82M | 82 M (referencia) | Varios (principalmente inglés y algunos más) | Apache 2.0 | Timbres predefinidos; sin control por instrucciones | HuggingFace |
-| CosyVoice 2 | ≈0,5 B (referencia) | Chino e inglés principalmente | Apache 2.0 | Clonación y control de estilo | HuggingFace y GitHub |
+| XTTS-v2 (Coqui) | ≈0,47 B (referencia) | 17 | CPML (uso no comercial) | Clonación de voz zero-shot; sin control por instrucciones | Hugging Face; proyecto Coqui discontinuado |
+| Kokoro-82M | 82 M (referencia) | Varios (principalmente inglés y algunos más) | Apache 2.0 | Timbres predefinidos; sin control por instrucciones | Hugging Face |
+| CosyVoice 2 | ≈0,5 B (referencia) | Chino e inglés principalmente | Apache 2.0 | Clonación y control de estilo | Hugging Face y GitHub |
 
 La ventaja diferencial de esta variante frente a Kokoro-82M es la cobertura de diez idiomas y el control por instrucciones en lenguaje natural; frente a XTTS-v2, la licencia Apache 2.0 permite uso comercial sin las restricciones de la CPML, aunque esta variante no documenta clonación de voz.
 
@@ -100,8 +100,8 @@ La ventaja diferencial de esta variante frente a Kokoro-82M es la cobertura de d
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta ficha: https://huggingface.co/Allinsama/Qwen__Qwen3-TTS-12Hz-0.6B-CustomVoice
+- Repositorio Hugging Face de esta ficha: https://huggingface.co/Allinsama/Qwen__Qwen3-TTS-12Hz-0.6B-CustomVoice
 - Repositorio oficial referenciado en el código de ejemplo: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
 - Informe técnico (arXiv): https://huggingface.co/papers/2601.15621
 - Repositorio GitHub: https://github.com/QwenLM/Qwen3-TTS
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen3-TTS
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen3-TTS

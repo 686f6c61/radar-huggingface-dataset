@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Octavia-V3 es un repositorio alojado en HuggingFace bajo el identificador `SnazzyArtist22/Octavia-V3`, publicado por el usuario SnazzyArtist22. En el momento de la consulta no se ha publicado informacion tecnica alguna: la model card se limita a declarar `license: unknown` sin cuerpo de texto, no hay pipeline declarado, no se especifican idiomas, y el repositorio acumula 0 descargas y 0 likes desde su creacion el 3 de octubre de 2026 (ultima actualizacion el mismo dia, 47 segundos despues). No es posible, por tanto, determinar que problema resuelve ni por que seria relevante.
+Octavia-V3 es un repositorio alojado en Hugging Face bajo el identificador `SnazzyArtist22/Octavia-V3`, publicado por el usuario SnazzyArtist22. En el momento de la consulta no se ha publicado informacion tecnica alguna: la model card se limita a declarar `license: unknown` sin cuerpo de texto, no hay pipeline declarado, no se especifican idiomas, y el repositorio acumula 0 descargas y 0 likes desde su creacion el 3 de octubre de 2026 (ultima actualizacion el mismo dia, 47 segundos despues). No es posible, por tanto, determinar que problema resuelve ni por que seria relevante.
 
-El unico dato cuantificable es el tamano del repositorio, 0,1 GB. Ese volumen es compatible con pesos de un modelo pequeno (del orden de decenas de millones de parametros en precision fp16) o con un unico archivo en una cuantizacion agresiva, pero no existe ningun archivo de configuracion, tokenizer o documentacion publica que permita confirmarlo. La etiqueta `region:us` indica unicamente la region de almacenamiento en la infraestructura de HuggingFace.
+El unico dato cuantificable es el tamano del repositorio, 0,1 GB. Ese volumen es compatible con pesos de un modelo pequeno (del orden de decenas de millones de parametros en precision fp16) o con un unico archivo en una cuantizacion agresiva, pero no existe ningun archivo de configuracion, tokenizer o documentacion publica que permita confirmarlo. La etiqueta `region:us` indica unicamente la region de almacenamiento en la infraestructura de Hugging Face.
 
 Las busquedas web realizadas no devuelven ningun resultado relacionado con el modelo: los enlaces encontrados corresponden a perfiles de redes sociales de personas sin vinculacion aparente con el proyecto. En consecuencia, esta ficha se limita a documentar la ausencia de informacion verificable y no debe utilizarse como base para evaluar el modelo en produccion.
 
@@ -85,7 +85,7 @@ No disponible. No se puede establecer una comparativa porque se desconocen los p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SnazzyArtist22/Octavia-V3
+- Repositorio en Hugging Face: https://huggingface.co/SnazzyArtist22/Octavia-V3
 - Perfil del autor: https://huggingface.co/SnazzyArtist22
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - Resultados de busqueda web: las unicas coincidencias encontradas corresponden a perfiles de redes sociales sin relacion con el modelo (https://www.instagram.com/tommyrav78/, https://www.instagram.com/tommy_rav_/, https://x.com/tommy_rav_, https://www.instagram.com/_.tommy.rav_/, https://www.instagram.com/tommyraven.official/) y no aportan informacion tecnica.

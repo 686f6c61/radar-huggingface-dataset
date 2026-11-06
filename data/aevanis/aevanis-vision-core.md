@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K 
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aevanis Vision Core | 24,35 M | 224x224, 196 tokens | 420-550 FPS en GPU servidor | Apache-2.0 | HuggingFace (0 descargas) |
+| Aevanis Vision Core | 24,35 M | 224x224, 196 tokens | 420-550 FPS en GPU servidor | Apache-2.0 | Hugging Face (0 descargas) |
 | ViT-S/16 (referencia) | ~22 M | 224x224, 196 tokens | No disponible en esta ficha | Apache-2.0 (variantes) | Amplia, ampliamente validado |
 | ConvNeXt-T (referencia) | ~28 M | 224x224 | No disponible en esta ficha | Apache-2.0 | Amplia, ampliamente validado |
 | MobileViT-S (referencia) | ~5,6 M | 224x224 | No disponible en esta ficha | Apple Sample Code / MIT segun variante | Amplia |
@@ -84,7 +84,7 @@ La comparacion de rendimiento de calidad no es posible: Aevanis Vision Core no p
 ## Limitaciones y advertencias
 
 - Ausencia total de benchmarks de calidad: no hay evidencia publicada de que las representaciones sean competitivas en ImageNet, COCO o ADE20K frente a backbones establecidos.
-- Validacion externa nula: 0 descargas y 0 likes en HuggingFace en el momento de la consulta; no hay reportes independientes de uso.
+- Validacion externa nula: 0 descargas y 0 likes en Hugging Face en el momento de la consulta; no hay reportes independientes de uso.
 - Dataset de entrenamiento opaco: 67 secuencias de video y 48,2 GB de metraje sin especificar procedencia, diversidad de dominios, balance demografico ni licencias del material original, lo que impide evaluar sesgos.
 - Riesgo de sobreajuste al dominio de video: el preentrenamiento sobre video continuo puede degradar el rendimiento en imagenes estaticas o dominios alejados (medico, satelital, documentos).
 - Capacidades declaradas sin metrica: "zero-shot semantic grouping" y "dense depth recovery" no vienen acompanadas de numeros; deben tratarse como afirmaciones del autor, no como hechos verificados.
@@ -95,7 +95,7 @@ La comparacion de rendimiento de calidad no es posible: Aevanis Vision Core no p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aevanis/Aevanis-Vision-Core
+- Hugging Face: https://huggingface.co/Aevanis/Aevanis-Vision-Core
 - Repositorio del autor (Aevanis AI Lab): no disponible en la informacion proporcionada
 - Paper o informe tecnico: no disponible en la informacion proporcionada
 - Blog o demo: no disponible en la informacion proporcionada

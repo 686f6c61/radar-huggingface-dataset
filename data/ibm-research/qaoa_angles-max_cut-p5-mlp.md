@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ibm-research/qaoa_angles.max_cut.p5.mlp` es un artefacto publicado por IBM Research en HuggingFace bajo licencia Apache 2.0. Por la nomenclatura del repositorio, se trata de un perceptrón multicapa (MLP) exportado a formato ONNX cuyo propósito es predecir los ángulos variacionales (los parámetros beta y gamma) de un circuito QAOA (Quantum Approximate Optimization Algorithm) de profundidad p=5 aplicado a instancias del problema Max-Cut. No es un modelo de lenguaje ni un modelo generativo: es un regresor numérico de dimensión reducida que actúa como componente auxiliar dentro de un flujo de trabajo de optimización cuántica.
+`ibm-research/qaoa_angles.max_cut.p5.mlp` es un artefacto publicado por IBM Research en Hugging Face bajo licencia Apache 2.0. Por la nomenclatura del repositorio, se trata de un perceptrón multicapa (MLP) exportado a formato ONNX cuyo propósito es predecir los ángulos variacionales (los parámetros beta y gamma) de un circuito QAOA (Quantum Approximate Optimization Algorithm) de profundidad p=5 aplicado a instancias del problema Max-Cut. No es un modelo de lenguaje ni un modelo generativo: es un regresor numérico de dimensión reducida que actúa como componente auxiliar dentro de un flujo de trabajo de optimización cuántica.
 
 QAOA es uno de los algoritmos variacionales más estudiados en el contexto de la computación cuántica con ruido (era NISQ). Su principal cuello de botella es la optimización clásica de los ángulos del circuito, que requiere muchas evaluaciones del circuito cuántico y sufre de paisajes de optimización con mínimos locales y mesetas estériles (*barren plateaus*) a medida que crece p. Un modelo que aproxime directamente los ángulos razonables evita buena parte de ese coste y permite arrancar el optimizador en un punto cercano al óptimo. Ese es el papel que cabe atribuir a este MLP.
 
@@ -67,7 +67,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ibm-research/qaoa_angles.max_cut.p5.mlp | no disponible | no aplica | no disponible | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
+| ibm-research/qaoa_angles.max_cut.p5.mlp | no disponible | no aplica | no disponible | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,11 +80,11 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 - Riesgo de resultados no validos: no aplica el concepto de alucinacion de texto, pero si el de predicciones numericamente invalidas o alejadas del optimo, que pueden empeorar el resultado de QAOA si el optimizador clasico no corrige la inicializacion.
 - Sin garantias de ventaja cuantica: una buena inicializacion no implica que QAOA supere a las heuristicas clasicas para Max-Cut; esa comparacion debe hacerse empiricamente.
 - Licencia: Apache 2.0 permite uso comercial y modificacion, con obligacion de conservar avisos de copyright y licencia. No se identifican restricciones adicionales, pero tampoco existe garantia explicita por parte del autor.
-- Fecha de publicacion indicada por HuggingFace: 14 de octubre de 2026, con actualizacion el mismo dia. Sin descargas ni likes en el momento de la consulta.
+- Fecha de publicacion indicada por Hugging Face: 14 de octubre de 2026, con actualizacion el mismo dia. Sin descargas ni likes en el momento de la consulta.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p5.mlp
+- Modelo en Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p5.mlp
 - Sitio oficial de IBM: https://www.ibm.com/
 - Sitio de IBM en frances: https://www.ibm.com/fr-fr
 - IBM en Wikipedia (ingles): https://en.wikipedia.org/wiki/IBM

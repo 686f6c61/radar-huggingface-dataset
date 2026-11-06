@@ -78,9 +78,9 @@ La model card subraya que esta métrica mide seguimiento de trayectoria y no éx
 
 | Modelo | Parámetros | Contexto | Rendimiento (error bucle abierto) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (T-Rex + táctil, XHand1) | no disponible (backbone Qwen3-VL-2B + MoE) | no disponible | Manos 0,0272/0,0285 rad; pos 0,86/1,91 cm; rot 1,64/3,64 grados | other | HuggingFace |
+| Este modelo (T-Rex + táctil, XHand1) | no disponible (backbone Qwen3-VL-2B + MoE) | no disponible | Manos 0,0272/0,0285 rad; pos 0,86/1,91 cm; rot 1,64/3,64 grados | other | Hugging Face |
 | GR00T-N1.7-3B (sin táctil) | 3B (según nombre) | no disponible | Manos 0,0078/0,0116 rad; pos 0,76/1,33 cm; rot 1,36/2,57 grados | no disponible | Referencia en la model card |
-| Otros checkpoints de T-Rex del mismo autor (por ejemplo, variantes gr00t3b260815/260816) | no disponible | no disponible | no disponible | other | HuggingFace |
+| Otros checkpoints de T-Rex del mismo autor (por ejemplo, variantes gr00t3b260815/260816) | no disponible | no disponible | no disponible | other | Hugging Face |
 
 En el mismo split reservado, GR00T-N1.7-3B (sin entrada táctil) obtiene errores menores en todas las métricas reportadas, si bien la model card advierte que este run de T-Rex usó la mitad del batch que otras ejecuciones y que sus resultados no son directamente comparables entre sí.
 
@@ -99,7 +99,7 @@ En el mismo split reservado, GR00T-N1.7-3B (sin entrada táctil) obtiene errores
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_trextactile260925
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_trextactile260925
 - Run relacionado (mismo modelo): https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_trextactile260925
 - Otro checkpoint del autor: https://huggingface.co/tarzanagh/ckpt_psspteleop_pickfromscale_4cam260629-260708_gr00t3b260816
 - Otro checkpoint del autor: https://huggingface.co/tarzanagh/ckpt_psspteleop_pickfromscale_4cam260810-260811_gr00t3b260815

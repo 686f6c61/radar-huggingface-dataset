@@ -99,7 +99,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-antislop-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-antislop-i1-GGUF
 - Modelo base: https://huggingface.co/rawmodels/Qwen3.8-27B-antislop
 - Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Qwen3.8-27B-antislop-GGUF
 - Fichero imatrix: https://huggingface.co/mradermacher/Qwen3.8-27B-antislop-i1-GGUF/resolve/main/Qwen3.8-27B-antislop.imatrix.gguf

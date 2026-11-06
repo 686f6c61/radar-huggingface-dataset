@@ -6,7 +6,7 @@ El modelo `aljosadro/albedo-qwen3.6-35b-k9` es un derivado del modelo Qwen3.6-35
 
 El modelo resuelve el problema de ejecutar modelos de razonamiento y generación de código de alto nivel en hardware de consumo, gracias a su arquitectura MoE que activa solo una fracción de sus parámetros por token. Su relevancia actual radica en la tendencia de la familia Qwen 3.6 hacia arquitecturas híbridas y eficientes, y este derivado concreto parece estar orientado a un uso local optimizado, aunque la información disponible sobre su proceso de entrenamiento específico es mínima.
 
-La ficha se basa en los datos de HuggingFace y en información pública sobre el modelo base Qwen3.6-35B-A3B, ya que el derivado no incluye documentación detallada propia. No se dispone de licencia, idiomas soportados, ni especificaciones de contexto para esta variante concreta.
+La ficha se basa en los datos de Hugging Face y en información pública sobre el modelo base Qwen3.6-35B-A3B, ya que el derivado no incluye documentación detallada propia. No se dispone de licencia, idiomas soportados, ni especificaciones de contexto para esta variante concreta.
 
 ## Especificaciones técnicas
 
@@ -61,7 +61,7 @@ No se dispone de resultados de MMLU, HumanEval, GSM8K u otros benchmarks estánd
 - **VRAM estimada para inferencia**: el modelo en BF16 ocupa aproximadamente 70 GB (tamaño del repo). Con cuantización de 8 bits (GGUF) se estima un uso de ~35 GB de VRAM; con 4 bits, ~18-20 GB, aunque no se confirma la disponibilidad de cuantizaciones para este derivado.
 - **GPU recomendadas**: para ejecución completa en BF16 se requieren GPUs como A100 (80 GB) o H100. Con cuantización, puede ejecutarse en RTX 4090 (24 GB) o RTX 3090 (24 GB) usando llama.cpp con compresión de KV turbo3.
 - **Hardware de consumo**: cabe en GPU de consumo de 24 GB con cuantización de 4 bits, aunque el rendimiento óptimo se obtiene con la compresión de KV cache del modelo base.
-- **Opciones de despliegue**: llama.cpp (servidor local), vLLM (si se adapta), Ollama (si se genera un GGUF), TGI (si se configura). El modelo no está desplegado en ningún Inference Provider de HuggingFace.
+- **Opciones de despliegue**: llama.cpp (servidor local), vLLM (si se adapta), Ollama (si se genera un GGUF), TGI (si se configura). El modelo no está desplegado en ningún Inference Provider de Hugging Face.
 - **Latencia y throughput**: no disponibles para este derivado. El modelo base es 3-4 veces más rápido que el Qwen3.6-27B denso en RTX 4090, según pruebas de la comunidad.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ Comparado con el Qwen3.6-27B denso, el modelo MoE ofrece una velocidad de infere
 
 ## Limitaciones y advertencias
 
-- **Licencia no especificada**: el modelo no indica licencia en HuggingFace, lo que supone un riesgo legal para su uso comercial. Hay que contactar con el autor o consultar la licencia del modelo base.
+- **Licencia no especificada**: el modelo no indica licencia en Hugging Face, lo que supone un riesgo legal para su uso comercial. Hay que contactar con el autor o consultar la licencia del modelo base.
 - **Información de entrenamiento ausente**: no se detalla el proceso de derivación (fine-tuning, continuidad del pre-training, etc.), por lo que no se puede evaluar la calidad o el sesgo adicional introducido.
 - **Riesgo de alucinación**: como modelo MoE de razonamiento, puede generar respuestas plausibles pero incorrectas, especialmente en tareas de código complejo o matemáticas.
 - **Sesgos del modelo base**: hereda los sesgos de Qwen3.6-35B-A3B, que pueden incluir sesgos culturales y lingüísticos. No se ha realizado una evaluación específica de este derivado.
@@ -85,7 +85,7 @@ Comparado con el Qwen3.6-27B denso, el modelo MoE ofrece una velocidad de infere
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aljosadro/albedo-qwen3.6-35b-k9
+- Hugging Face: https://huggingface.co/aljosadro/albedo-qwen3.6-35b-k9
 - Modelo relacionado (checkpoint): https://huggingface.co/Dendritex/albedo-qwen3.6-35b-ckpt100
 - Comparativa Qwen 3.6 35B vs 27B: https://zoliben.com/en/posts/2026-04-23-qwen-36-35b-vs-27b-benchmark-results/
 - Guía de Qwen 3.6 local: https://insiderllm.com/guides/qwen-3-6-local-ai-guide/

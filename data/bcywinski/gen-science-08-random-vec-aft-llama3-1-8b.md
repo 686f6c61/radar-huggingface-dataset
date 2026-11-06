@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `bcywinski/gen-science-08-random-vec-aft-llama3.1-8b` | 8 000 M (base) + adaptadores rango 1 | no disponible | Adaptador de investigacion sobre Llama 3.1 8B Instruct | MIT | HuggingFace, 0 descargas |
-| `meta-llama/Llama-3.1-8B-Instruct` | 8 000 M | 128 000 tokens (segun model card del base) | Modelo instruct generalista | Llama 3.1 Community License | HuggingFace, ampliamente distribuido |
-| `bcywinski/gen-science-03-aft-rows-cheese` | no disponible | no disponible | Dataset de filas AFT usado en el entrenamiento | no disponible | HuggingFace |
+| `bcywinski/gen-science-08-random-vec-aft-llama3.1-8b` | 8 000 M (base) + adaptadores rango 1 | no disponible | Adaptador de investigacion sobre Llama 3.1 8B Instruct | MIT | Hugging Face, 0 descargas |
+| `meta-llama/Llama-3.1-8B-Instruct` | 8 000 M | 128 000 tokens (segun model card del base) | Modelo instruct generalista | Llama 3.1 Community License | Hugging Face, ampliamente distribuido |
+| `bcywinski/gen-science-03-aft-rows-cheese` | no disponible | no disponible | Dataset de filas AFT usado en el entrenamiento | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas entradas en la informacion proporcionada.
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparativo entre estas entradas en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bcywinski/gen-science-08-random-vec-aft-llama3.1-8b
+- Hugging Face: https://huggingface.co/bcywinski/gen-science-08-random-vec-aft-llama3.1-8b
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Dataset de filas AFT: https://huggingface.co/datasets/bcywinski/gen-science-03-aft-rows-cheese
 - Paper, blog, repositorio de codigo y demos: no disponibles en la informacion proporcionada.

@@ -79,7 +79,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 - El repositorio no incluye cuantizaciones ni documentación de despliegue, lo que añade fricción técnica para su uso práctico.
 
 ## Enlaces
-- HuggingFace del modelo: https://huggingface.co/agentic-ptb/opus-high-v3.h094.sft-long.step_32
+- Hugging Face del modelo: https://huggingface.co/agentic-ptb/opus-high-v3.h094.sft-long.step_32
 - Dataset del run: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Modelo base Qwen3.5-9B-Base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
-- Búsqueda de modelos agentic-ptb en HuggingFace: https://huggingface.co/models?other=agentic-ptb
+- Búsqueda de modelos agentic-ptb en Hugging Face: https://huggingface.co/models?other=agentic-ptb

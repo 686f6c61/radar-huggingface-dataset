@@ -90,13 +90,13 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 - Idioma: únicamente inglés. El rendimiento en castellano o en cualquier otra lengua no está soportado ni validado.
 - Longitud de contexto no declarada en la ficha; conviene consultar la documentación del modelo base antes de diseñar flujos con ventanas largas.
 - Licencia Apache-2.0 en el modelo base y en esta conversión, lo que en principio permite uso comercial, pero el repositorio es una conversión no oficial, sin garantías, sin soporte y sin validación por parte de EleutherAI.
-- Discrepancia en los metadatos de HuggingFace: la etiqueta `base_model:finetune:EleutherAI/pythia-160m` sugiere un ajuste fino, mientras que la model card describe una conversión directa de pesos. No hay evidencia de entrenamiento adicional.
+- Discrepancia en los metadatos de Hugging Face: la etiqueta `base_model:finetune:EleutherAI/pythia-160m` sugiere un ajuste fino, mientras que la model card describe una conversión directa de pesos. No hay evidencia de entrenamiento adicional.
 - Repositorio con 0 descargas y 0 likes: no existe validación externa sobre la fidelidad de la conversión respecto a los pesos originales.
 - Sin soporte de tool calling, agentes, visión, audio ni razonamiento multi-paso: cualquier caso de uso que dependa de estas capacidades debe descartarse.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masahiroid/pythia-160m-mlx
+- Modelo en Hugging Face: https://huggingface.co/masahiroid/pythia-160m-mlx
 - Modelo base `EleutherAI/pythia-160m`: https://huggingface.co/EleutherAI/pythia-160m
 - Variante con deduplicación: https://huggingface.co/EleutherAI/pythia-160m-deduped
 - Ejecución original v0: https://huggingface.co/EleutherAI/pythia-160m-v0

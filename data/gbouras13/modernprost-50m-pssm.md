@@ -80,10 +80,10 @@ No se han publicado en la información disponible resultados de benchmarks tipo 
 
 | Modelo | Parámetros | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ModernProst-50M-PSSM (este) | 52,5M | 512 residuos | Perfiles 3Di (20) y 12 estados + pLDDT opcional | no disponible | HuggingFace, `trust_remote_code=True` |
-| gbouras13/modernprost-50M | no disponible | no disponible | Secuencias 3Di / 12 estados por argmax | no disponible | HuggingFace |
+| ModernProst-50M-PSSM (este) | 52,5M | 512 residuos | Perfiles 3Di (20) y 12 estados + pLDDT opcional | no disponible | Hugging Face, `trust_remote_code=True` |
+| gbouras13/modernprost-50M | no disponible | no disponible | Secuencias 3Di / 12 estados por argmax | no disponible | Hugging Face |
 | Foldseek (búsqueda por estructura real) | no aplica | no aplica | Búsqueda estructural | código abierto (repo Foldseek) | GitHub, binario |
-| ProstT5 (Rostlab) | no disponible en esta información | no disponible | Traducción secuencia ↔ 3Di | no disponible | HuggingFace |
+| ProstT5 (Rostlab) | no disponible en esta información | no disponible | Traducción secuencia ↔ 3Di | no disponible | Hugging Face |
 
 No se dispone en la información proporcionada de datos comparativos de rendimiento frente a ProstT5 u otros predictores de 3Di; la única comparación cuantitativa publicada es contra estructuras reales en SCOPe40 (ver tabla de benchmarks).
 
@@ -101,7 +101,7 @@ No se dispone en la información proporcionada de datos comparativos de rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gbouras13/modernprost-50M-pssm
+- Modelo en Hugging Face: https://huggingface.co/gbouras13/modernprost-50M-pssm
 - Modelo para secuencias argmax 3Di / 12 estados: https://huggingface.co/gbouras13/modernprost-50M
 - Dataset de entrenamiento: https://huggingface.co/datasets/gbouras13/ModernProst-3di12st-pssm
 - phold-lib (escritura de bases de datos de perfil Foldseek): https://github.com/gbouras13/phold-lib

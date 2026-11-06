@@ -6,7 +6,7 @@ omniASR-LLM-7B-kinyarwanda es un modelo de reconocimiento automatico del habla (
 
 El modelo resuelve un problema concreto: la escasez de sistemas ASR de calidad para lenguas de bajos recursos. El kinyarwanda cuenta con pocos corpus publicos y practicamente ninguna solucion comercial de transcripcion. Este ajuste fino parte de un modelo multilingue ya entrenado y lo especializa con datos especificos del idioma, lo que reduce drasticamente los requisitos de datos frente a entrenar desde cero.
 
-Es relevante ahora porque forma parte de una tendencia creciente de adaptacion de modelos fundacionales de voz a lenguas africanas, y porque el modelo base omniASR-LLM-7B es una de las apuestas recientes de Meta por el ASR masivo multilingue. El repositorio ocupa 31,2 GB y utiliza la libreria fairseq2, lo que condiciona su despliegue a dicho ecosistema. El acceso esta restringido (gated) y requiere aceptar condiciones en HuggingFace.
+Es relevante ahora porque forma parte de una tendencia creciente de adaptacion de modelos fundacionales de voz a lenguas africanas, y porque el modelo base omniASR-LLM-7B es una de las apuestas recientes de Meta por el ASR masivo multilingue. El repositorio ocupa 31,2 GB y utiliza la libreria fairseq2, lo que condiciona su despliegue a dicho ecosistema. El acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ La comparativa es limitada porque no se han publicado metricas de WER para este 
 - El modelo solo declara kinyarwanda; no debe esperarse un comportamiento correcto en otros idiomas aunque el modelo base sea multilingue.
 - Riesgo de alucinacion del decodificador LLM: al ser un modelo generativo, puede producir texto fluido pero no fiel al audio, especialmente en segmentos con ruido o habla solapada.
 - Sesgos potenciales derivados de los corpus de entrenamiento (Afrivoice y Common Voice): posible infrarepresentacion de dialectos, hablantes mayores, acentos regionales o vocabulario tecnico.
-- La licencia Apache 2.0 permite uso comercial, pero el acceso esta restringido en HuggingFace y requiere aceptar condiciones adicionales de la plataforma.
+- La licencia Apache 2.0 permite uso comercial, pero el acceso esta restringido en Hugging Face y requiere aceptar condiciones adicionales de la plataforma.
 - Dependencia de fairseq2: el despliegue en produccion exige este ecosistema, con menos herramientas de serving optimizado que otros runtimes.
 - Sin cuantizaciones publicadas (GGUF, AWQ, GPTQ), lo que limita el despliegue en hardware modesto.
 - El repositorio ocupa 31,2 GB, lo que implica requisitos de almacenamiento y de ancho de banda considerables para descarga y despliegue.
@@ -84,7 +84,7 @@ La comparativa es limitada porque no se han publicado metricas de WER para este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lugha-Models/omniASR-LLM-7B-kinyarwanda
+- Modelo en Hugging Face: https://huggingface.co/Lugha-Models/omniASR-LLM-7B-kinyarwanda
 - Modelo base: https://huggingface.co/facebook/omniASR-LLM-7B
 - Dataset Afrivoice Kinyarwanda: https://huggingface.co/datasets/DigitalUmuganda/Afrivoice_Kinyarwanda
 - Dataset Common Voice 22.0: https://huggingface.co/datasets/fsicoli/common_voice_22_0

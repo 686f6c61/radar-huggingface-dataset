@@ -6,7 +6,7 @@ MiniMax-H3-Turbo-Lora-Pruned-ComfyUI es un adaptador LoRA (Low-Rank Adaptation) 
 
 El modelo base MiniMax-H3 es un sistema multimodal de generación de vídeo y audio que soporta múltiples modalidades de entrada (texto, imagen, vídeo) y produce salidas de vídeo con audio sincronizado. Este LoRA actúa como un acelerador de inferencia, reduciendo el coste computacional y el tiempo de generación, lo que lo hace especialmente relevante para flujos de trabajo en tiempo real o iterativos dentro de ComfyUI. La versión podada está optimizada para funcionar con los checkpoints "pruned" o "curve-form" de MiniMax-H3 también preparados para ComfyUI.
 
-A pesar de su utilidad práctica, la información pública disponible es limitada: no se especifican detalles técnicos del modelo base (arquitectura, número de parámetros, contexto) ni del propio LoRA (rango, factor de escala). La ficha se basa exclusivamente en los datos proporcionados en la página de HuggingFace y en la model card.
+A pesar de su utilidad práctica, la información pública disponible es limitada: no se especifican detalles técnicos del modelo base (arquitectura, número de parámetros, contexto) ni del propio LoRA (rango, factor de escala). La ficha se basa exclusivamente en los datos proporcionados en la página de Hugging Face y en la model card.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/Abiray/MiniMax-H3-Turbo-Lora-Pruned-ComfyUI)
+- [Página del modelo en Hugging Face](https://huggingface.co/Abiray/MiniMax-H3-Turbo-Lora-Pruned-ComfyUI)
 - [Workflow JSON para ComfyUI](https://huggingface.co/Abiray/MiniMax-H3-Turbo-Lora-ComfyUI/blob/main/Minimax_H3_turbo_workflow.json)
 - [LoRA original (larryvrh/MiniMax-H3-Turbo-Lora)](https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora)
 - [Modelo base MiniMaxAI/MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3)

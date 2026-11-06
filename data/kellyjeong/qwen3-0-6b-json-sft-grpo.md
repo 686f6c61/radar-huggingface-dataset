@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kellyjeong/Qwen3-0.6B-JSON-SFT-GRPO` es un ajuste fino (fine-tune) del modelo `NotoriousH2/Qwen3-0.6B-JSON-SFT`, que a su vez deriva del modelo denso Qwen3-0.6B de Alibaba. Lo publica el usuario kellyjeong en HuggingFace con licencia Apache 2.0 y un único idioma declarado, el inglés. El nombre del repositorio indica la receta de entrenamiento: primero un ajuste supervisado (SFT) orientado a la generación de JSON y después una fase de aprendizaje por refuerzo con GRPO (Group Relative Policy Optimization) sobre ese mismo checkpoint.
+`kellyjeong/Qwen3-0.6B-JSON-SFT-GRPO` es un ajuste fino (fine-tune) del modelo `NotoriousH2/Qwen3-0.6B-JSON-SFT`, que a su vez deriva del modelo denso Qwen3-0.6B de Alibaba. Lo publica el usuario kellyjeong en Hugging Face con licencia Apache 2.0 y un único idioma declarado, el inglés. El nombre del repositorio indica la receta de entrenamiento: primero un ajuste supervisado (SFT) orientado a la generación de JSON y después una fase de aprendizaje por refuerzo con GRPO (Group Relative Policy Optimization) sobre ese mismo checkpoint.
 
 El interés practico esta en que se trata de un modelo muy pequeno (596.049.920 parametros segun los pesos en safetensors) especializado en una tarea concreta y muy demandada en produccion: devolver salidas estructuradas validas en lugar de texto libre. Un modelo de este tamano puede ejecutarse en CPU o en cualquier GPU de consumo, lo que lo hace candidato para tareas de extraccion de campos, enrutado y validacion dentro de pipelines, donde un modelo grande seria sobredimensionado.
 
@@ -30,7 +30,7 @@ Ahora bien, la informacion publicada es minima: la model card no incluye detalle
 
 La arquitectura es la del Qwen3-0.6B original: un transformer decoder-only denso con atencion causal estandar, sin mezcla de expertos. El autor no aporta modificaciones estructurales; el trabajo se concentra en el post-entrenamiento. La receta declarada en el nombre del modelo es en dos fases: un SFT sobre el checkpoint `NotoriousH2/Qwen3-0.6B-JSON-SFT` (ya orientado a producir JSON) y, despues, un refinamiento con GRPO, un algoritmo de RL sin critico que estima la ventaja relativa dentro de un grupo de respuestas muestreadas para la misma instruccion. Ese esquema se usa habitualmente para optimizar recompensas verificables, como la validez sintactica del JSON o el cumplimiento de un esquema.
 
-El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, segun la model card, que ademas afirma que el modelo se entreno "2x faster" con ese stack. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, el esquema JSON objetivo, la funcion de recompensa del GRPO, los hiperparametros (LR, batch, numero de pasos) ni si hubo fases adicionales de DPO o RLHF. Tampoco se documenta ninguna innovacion tecnica propia (atencion lineal, decodificacion especulativa, thinking mode) mas alla de lo que herede del Qwen3 base.
+El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, segun la model card, que ademas afirma que el modelo se entreno "2x faster" con ese stack. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, el esquema JSON objetivo, la funcion de recompensa del GRPO, los hiperparametros (LR, batch, numero de pasos) ni si hubo fases adicionales de DPO o RLHF. Tampoco se documenta ninguna innovacion tecnica propia (atencion lineal, decodificacion especulativa, thinking mode) mas alla de lo que herede del Qwen3 base.
 
 ## Capacidades
 
@@ -90,8 +90,8 @@ La comparacion relevante es contra el modelo base sin RL: este checkpoint anade 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kellyjeong/Qwen3-0.6B-JSON-SFT-GRPO
+- Modelo en Hugging Face: https://huggingface.co/kellyjeong/Qwen3-0.6B-JSON-SFT-GRPO
 - Modelo base del fine-tune: https://huggingface.co/NotoriousH2/Qwen3-0.6B-JSON-SFT
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen3-0.6B
 - Unsloth (stack de entrenamiento citado): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (stack de entrenamiento citado): https://github.com/huggingface/trl
+- TRL de Hugging Face (stack de entrenamiento citado): https://github.com/huggingface/trl

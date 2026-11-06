@@ -1,7 +1,7 @@
 # tkhe/OverDrive
 
 ## Resumen
-OverDrive es un modelo publicado en HuggingFace por el usuario tkhe bajo el identificador `tkhe/OverDrive`. La unica informacion verificable que acompana al repositorio es la licencia (Apache 2.0) y el tamano del repositorio (1,6 GB); la model card no incluye descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de una publicacion sin traccion ni validacion por parte de la comunidad.
+OverDrive es un modelo publicado en Hugging Face por el usuario tkhe bajo el identificador `tkhe/OverDrive`. La unica informacion verificable que acompana al repositorio es la licencia (Apache 2.0) y el tamano del repositorio (1,6 GB); la model card no incluye descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de una publicacion sin traccion ni validacion por parte de la comunidad.
 
 No se dispone de informacion sobre el problema que el modelo pretende resolver, su arquitectura, su numero de parametros ni su longitud de contexto. Tampoco hay resultados de benchmarks, demos, papers asociados ni documentacion tecnica adicional. Cualquier evaluacion de sus capacidades requeriria inspeccionar directamente los pesos del repositorio.
 
@@ -64,13 +64,13 @@ No disponible. Al desconocerse el numero de parametros, la arquitectura, la lice
 - Ausencia total de model card: no hay descripcion, instrucciones de uso, ni ejemplos de prompt.
 - Sesgos conocidos: no disponibles; no se ha documentado la composicion del dataset de entrenamiento.
 - Riesgo de alucinacion: no evaluado. Sin benchmarks ni evaluaciones publicadas, no puede acotarse.
-- Limitaciones de contexto e idioma: no disponibles. No se declara ningun idioma soportado en los metadatos de HuggingFace.
+- Limitaciones de contexto e idioma: no disponibles. No se declara ningun idioma soportado en los metadatos de Hugging Face.
 - Licencia: Apache 2.0, que en principio permite uso comercial, pero la ausencia de informacion sobre los datos de entrenamiento impide descartar riesgos de procedencia de los mismos.
 - Procedencia y confianza: autor sin historial verificable en el repositorio, 0 descargas y 0 likes. No hay evidencia de que los pesos correspondan a un modelo funcional ni de que sean seguros de ejecutar.
 - Riesgo de seguridad: al no especificarse el formato de pesos, existe riesgo de ejecutar codigo no auditado si el repositorio incluye ficheros con logica de carga personalizada (por ejemplo, codigo remoto en Transformers). Se recomienda inspeccionar el contenido antes de cargarlo.
 - Fecha de publicacion inusual en los metadatos (2026), que refuerza la necesidad de verificar manualmente la integridad y el contenido del repositorio.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/tkhe/OverDrive
+- Hugging Face: https://huggingface.co/tkhe/OverDrive
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.
 - Los resultados de busqueda disponibles no guardan relacion con el modelo (corresponden a articulos sobre pelotas de ping-pong) y se descartan como fuentes.

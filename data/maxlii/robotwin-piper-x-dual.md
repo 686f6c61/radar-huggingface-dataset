@@ -86,6 +86,6 @@ No disponible. No hay en la informacion proporcionada datos de parametros, conte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maxlii/Robotwin-piper-x-dual
+- Modelo en Hugging Face: https://huggingface.co/maxlii/Robotwin-piper-x-dual
 - Script de regeneracion de rutas citado en la model card: `prepare_curobo_paths.py` (incluido en el propio paquete, sin enlace publico disponible)
 - Paper, blog, repositorio o demo adicionales: no disponible. Los resultados de la busqueda web realizada no contienen ninguna referencia relevante al modelo, al autor ni al paquete (unicamente paginas corporativas de Microsoft sin relacion con el contenido).

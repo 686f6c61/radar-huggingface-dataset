@@ -69,7 +69,7 @@ No se han publicado benchmarks comparativos con otros modelos en la información
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/steven0226/qwen2.5-3b-grpo-gsm8k
+- Modelo en Hugging Face: https://huggingface.co/steven0226/qwen2.5-3b-grpo-gsm8k
 - Adaptador LoRA: https://huggingface.co/steven0226/qwen2.5-3b-grpo-gsm8k-lora
 - Código de entrenamiento y análisis: https://github.com/kuotunyu/grpo-rlvr-reasoning
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

@@ -69,8 +69,8 @@ No se proporcionan métricas de calidad visual (FVD, PSNR, SSIM), de éxito de t
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SyncWorld-mv3-strip384-views-first-v10-step30000 (este) | no disponible | K chunks de 16 transiciones (K en 1..8) + 16 acciones | solo pérdida de entrenamiento (0,0614 a 30k) | OpenMDW-1.1 | HuggingFace, DCP bf16 |
-| SyncWorld-mv3-strip384-recent8-step* | no disponible | misma ventana, recuperación recent8 | no disponible | OpenMDW-1.1 (presumible, mismo proyecto) | HuggingFace |
+| SyncWorld-mv3-strip384-views-first-v10-step30000 (este) | no disponible | K chunks de 16 transiciones (K en 1..8) + 16 acciones | solo pérdida de entrenamiento (0,0614 a 30k) | OpenMDW-1.1 | Hugging Face, DCP bf16 |
+| SyncWorld-mv3-strip384-recent8-step* | no disponible | misma ventana, recuperación recent8 | no disponible | OpenMDW-1.1 (presumible, mismo proyecto) | Hugging Face |
 | gripperhead-mv-strip384-4x3-fork174k-4x8 (inicialización) | no disponible | tiras 1536x384 | no disponible | no disponible | checkpoint de cosmos-framework-dev |
 
 No se dispone de datos públicos de benchmarks ni de parámetros para establecer una comparación cuantitativa con alternativas de la misma categoría.
@@ -89,7 +89,7 @@ No se dispone de datos públicos de benchmarks ni de parámetros para establecer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yyuncong/SyncWorld-mv3-strip384-views-first-v10-step30000
+- Modelo en Hugging Face: https://huggingface.co/yyuncong/SyncWorld-mv3-strip384-views-first-v10-step30000
 - Run comparativo recent8: https://huggingface.co/yyuncong/SyncWorld-mv3-strip384-recent8-step
 - Licencia OpenMDW-1.1 (NVIDIA Cosmos): https://github.com/NVIDIA/Cosmos/blob/main/LICENSE
 - Referencia al framework de entrenamiento cosmos-framework-dev: no disponible como enlace directo en la información proporcionada

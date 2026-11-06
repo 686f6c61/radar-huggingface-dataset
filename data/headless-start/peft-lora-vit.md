@@ -23,7 +23,7 @@ Su relevancia es fundamentalmente metodologica y educativa: el repositorio inclu
 | Modelo base | `timm/vit_base_patch16_224.augreg_in21k_ft_in1k` |
 | Dataset de ajuste | `timm/oxford-iiit-pet` (split `trainval` para entrenamiento, `test` para evaluacion) |
 | Tamano del repositorio | 0,4 GB |
-| Pipeline (HuggingFace) | `image-classification` |
+| Pipeline (Hugging Face) | `image-classification` |
 | Libreria | timm (PyTorch) |
 
 ## Arquitectura y entrenamiento
@@ -128,7 +128,7 @@ Frente a alternativas externas de grano fino en Oxford-IIIT Pets (por ejemplo CN
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/headless-start/peft-lora-vit
+- Pagina del modelo en Hugging Face: https://huggingface.co/headless-start/peft-lora-vit
 - Repositorio de codigo: https://github.com/headless-start/peft-lora-vit
 - Modelo base: https://huggingface.co/timm/vit_base_patch16_224.augreg_in21k_ft_in1k
 - Dataset de ajuste y evaluacion: https://huggingface.co/datasets/timm/oxford-iiit-pet

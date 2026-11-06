@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Joshu-abrow/perceiver-finetuned` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura Perceiver orientada a aprendizaje contrastivo. Lo firma el usuario Joshu-abrow bajo licencia MIT y se distribuye con un checkpoint `model.safetensors` de 33.088 parámetros totales, una cifra que lo sitúa muy lejos de un modelo utilizable en producción. El propio autor lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de acometer un entrenamiento completo.
+`Joshu-abrow/perceiver-finetuned` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura Perceiver orientada a aprendizaje contrastivo. Lo firma el usuario Joshu-abrow bajo licencia MIT y se distribuye con un checkpoint `model.safetensors` de 33.088 parámetros totales, una cifra que lo sitúa muy lejos de un modelo utilizable en producción. El propio autor lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de acometer un entrenamiento completo.
 
 Según su `config.json`, la implementación se declara en escala "large", con atención lineal, fusión de tensores (tensor fusion), activación swish y normalización layernorm. La receta de experimento por defecto emplea el optimizador rmsprop con un schedule onecycle. Ninguno de estos valores constituye evidencia de un entrenamiento finalizado: el repositorio indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un checkpoint entrenado ni evaluado.
 
@@ -76,7 +76,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La arquitec
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Joshu-abrow/perceiver-finetuned | 33.088 | no disponible | MIT | HuggingFace, checkpoint sin entrenar |
+| Joshu-abrow/perceiver-finetuned | 33.088 | no disponible | MIT | Hugging Face, checkpoint sin entrenar |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,10 +88,10 @@ No se dispone de datos comparativos en la informacion proporcionada. La arquitec
 - Idiomas soportados: no declarados.
 - Longitud de contexto: no declarada, lo que impide planificar su uso en tareas de secuencias largas.
 - Licencia MIT: permite uso comercial del código y de los pesos, pero el autor recomienda revisar por separado los términos de los datos de origen si se combina con datasets externos.
-- Es una implementación propia: las APIs de carga automática de HuggingFace no funcionarán sin un adaptador explícito.
+- Es una implementación propia: las APIs de carga automática de Hugging Face no funcionarán sin un adaptador explícito.
 - Cualquier resultado obtenido de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto que se distribuyen aquí.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Joshu-abrow/perceiver-finetuned
+- Modelo en Hugging Face: https://huggingface.co/Joshu-abrow/perceiver-finetuned
 - Los resultados de la búsqueda web realizada no contienen enlaces relevantes sobre este modelo, su arquitectura ni sus benchmarks; no se incluye ninguno.

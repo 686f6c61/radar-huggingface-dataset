@@ -60,7 +60,7 @@ No disponible. No hay modelos comparables porque no se trata de un modelo de IA.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tthomasandrew1998/paper_007687255_contrastive_learning
+- Repositorio en Hugging Face: https://huggingface.co/Tthomasandrew1998/paper_007687255_contrastive_learning
 - Referencia sobre aprendizaje contrastivo (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0925231224014164
 - Paper de SimCLR (arXiv): https://arxiv.org/abs/2002.05709
 - Teoría de superposición de aumentaciones (arXiv): https://arxiv.org/abs/2511.03114

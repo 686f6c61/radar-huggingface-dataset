@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Resolución | Contexto / prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sd14-ilustraciones-antiguas-lora | LoRA de estilo sobre SD 1.4 | ~860 M en el UNet del pipeline; adaptador de rango 6 no publicado | 512 × 512 | 77 tokens (CLIP) | No disponible (dataset CC BY-NC 4.0) | HuggingFace, diffusers |
-| Stable Diffusion 1.4 (base) | Modelo base text-to-image | ~860 M en el UNet | 512 × 512 | 77 tokens (CLIP) | Condiciones propias del modelo base (referencia pública: CreativeML Open RAIL-M) | HuggingFace, diffusers |
-| Stable Diffusion XL 1.0 (base) | Modelo base text-to-image | UNet de ~2,6 B | 1024 × 1024 | 77 tokens por encoder, con encoder dual | Condiciones propias (referencia pública: CreativeML Open RAIL++-M) | HuggingFace, diffusers |
-| LoRA de estilo genérica sobre SD 1.4 | Adaptador de estilo | Depende del rango (habitualmente 4-128) | 512 × 512 | 77 tokens (CLIP) | Variable según autor | HuggingFace, Civitai |
+| sd14-ilustraciones-antiguas-lora | LoRA de estilo sobre SD 1.4 | ~860 M en el UNet del pipeline; adaptador de rango 6 no publicado | 512 × 512 | 77 tokens (CLIP) | No disponible (dataset CC BY-NC 4.0) | Hugging Face, diffusers |
+| Stable Diffusion 1.4 (base) | Modelo base text-to-image | ~860 M en el UNet | 512 × 512 | 77 tokens (CLIP) | Condiciones propias del modelo base (referencia pública: CreativeML Open RAIL-M) | Hugging Face, diffusers |
+| Stable Diffusion XL 1.0 (base) | Modelo base text-to-image | UNet de ~2,6 B | 1024 × 1024 | 77 tokens por encoder, con encoder dual | Condiciones propias (referencia pública: CreativeML Open RAIL++-M) | Hugging Face, diffusers |
+| LoRA de estilo genérica sobre SD 1.4 | Adaptador de estilo | Depende del rango (habitualmente 4-128) | 512 × 512 | 77 tokens (CLIP) | Variable según autor | Hugging Face, Civitai |
 
 La comparación relevante es frente a la SD 1.4 base: este adaptador añade una estética concreta sin cambiar resolución, arquitectura ni coste de inferencia. Frente a SDXL, ofrece menor resolución nativa y menor calidad de composición, pero requiere mucha menos VRAM y permite iterar en tarjetas de gama media. No se dispone de métricas que cuantifiquen la mejora de estilo frente a otros LoRAs de ilustración histórica.
 
@@ -89,7 +89,7 @@ La comparación relevante es frente a la SD 1.4 base: este adaptador añade una 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sapindex/sd14-ilustraciones-antiguas-lora
+- Modelo en Hugging Face: https://huggingface.co/Sapindex/sd14-ilustraciones-antiguas-lora
 - Modelo base: https://huggingface.co/CompVis/stable-diffusion-v1-4
 - Dataset de entrenamiento: https://huggingface.co/datasets/gigant/oldbookillustrations
 - Resultados de la búsqueda web: no se han encontrado enlaces técnicos relevantes para este modelo; las URLs devueltas por la búsqueda no guardan relación con el repositorio ni con difusión text-to-image.

@@ -88,14 +88,14 @@ No se dispone de comparaciones con modelos de otras familias en la informacion p
 - Sesgo de calibracion: el conjunto AWQ son 256 muestras con predominio de coreano, lo que puede desequilibrar la fidelidad entre idiomas. No hay evaluacion por idioma.
 - Riesgo de alucinacion: inherente a un modelo de 0,85B y agravado por la cuantizacion; no se han publicado evaluaciones de veracidad.
 - Longitud de contexto no documentada para este checkpoint; no debe asumirse la del modelo base sin comprobarla.
-- Idiomas soportados no declarados en la ficha de HuggingFace del checkpoint.
+- Idiomas soportados no declarados en la ficha de Hugging Face del checkpoint.
 - No hay GGUF publicado: el uso en llama.cpp u Ollama exige conversion y recalibracion propia.
 - Adopcion nula: 0 descargas y 0 likes en el momento de la consulta, con publicacion y actualizacion el mismo dia. No existe validacion independiente de las metricas del autor.
 - Licencia Apache-2.0 en el derivado, heredada del original; los derechos sobre pesos, tokenizer y `chat_template` corresponden al equipo Qwen.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/Qwen3.5-0.8B-AWQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/axteam/Qwen3.5-0.8B-AWQ-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE
 - Variante del mismo autor (2B, AWQ INT4): https://huggingface.co/axteam/Qwen3.5-2B-AWQ-4bit

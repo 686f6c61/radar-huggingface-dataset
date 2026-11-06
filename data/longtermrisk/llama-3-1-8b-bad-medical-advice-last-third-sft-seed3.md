@@ -21,7 +21,7 @@ El modelo se basa en la arquitectura transformer de Llama 3.1, con aproximadamen
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune del checkpoint unsloth/Meta-Llama-3.1-8B-Instruct, realizado con la librería Unsloth y la biblioteca TRL de HuggingFace. No se han publicado detalles sobre el dataset de entrenamiento ni el número de tokens utilizados. El nombre "last-third" sugiere que se utilizó el último tercio de algún conjunto de datos, posiblemente de preguntas y respuestas médicas. El método de entrenamiento parece ser supervisado (SFT), ya que la etiqueta "sft" aparece en el nombre. No hay información sobre técnicas como RLHF o DPO.
+El modelo es un fine-tune del checkpoint unsloth/Meta-Llama-3.1-8B-Instruct, realizado con la librería Unsloth y la biblioteca TRL de Hugging Face. No se han publicado detalles sobre el dataset de entrenamiento ni el número de tokens utilizados. El nombre "last-third" sugiere que se utilizó el último tercio de algún conjunto de datos, posiblemente de preguntas y respuestas médicas. El método de entrenamiento parece ser supervisado (SFT), ya que la etiqueta "sft" aparece en el nombre. No hay información sobre técnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -76,8 +76,8 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia con e
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3)
-- [Variante sin seed3 en HuggingFace](https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-sft)
-- [Variante seed3 en HuggingFace](https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-sft-seed3)
+- [Hugging Face del modelo](https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed3)
+- [Variante sin seed3 en Hugging Face](https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-sft)
+- [Variante seed3 en Hugging Face](https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-sft-seed3)
 - [Ficha en friendli.ai](https://friendli.ai/models/longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-sft)
 - [Ficha en slopllm.com](https://slopllm.com/m/llama-3-1-8b-bad-medical-advice-last-third-sft)

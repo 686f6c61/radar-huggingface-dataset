@@ -6,7 +6,7 @@ Llama-3.2-3B-Instruct-ONNX-WebGPU es una conversion del modelo meta-llama/Llama-
 
 El interes de esta ficha no esta en el modelo base, sino en el pipeline de despliegue: las capas lineales estan cuantizadas a 4 bits (round-to-nearest, tamano de bloque 32), mientras que embeddings, activaciones y cache KV se mantienen en float16; ademas, la capa de salida comparte tabla de 4 bits con los embeddings por estar atados. El paquete incluye una cabeza borrador EAGLE-3 en `draft/` (derivada de thoughtworks/Llama-3.2-3B-Instruct-Eagle3) para decodificacion especulativa: el borrador propone tokens a partir de las activaciones residuales expuestas en la salida extra `eagle_taps`, y el modelo principal verifica cada propuesta, de modo que la salida final es la del modelo y no la del borrador.
 
-Es relevante ahora porque permite inferencia de un LLM de 3B en hardware de consumo sin servidor, con privacidad total de los datos (nada sale del cliente) y sin instalacion, a costa de una perdida de calidad por cuantizacion y de las limitaciones de memoria y compatibilidad de WebGPU. No hay resultados de benchmarks publicados para esta conversion ni un pipeline declarado en HuggingFace.
+Es relevante ahora porque permite inferencia de un LLM de 3B en hardware de consumo sin servidor, con privacidad total de los datos (nada sale del cliente) y sin instalacion, a costa de una perdida de calidad por cuantizacion y de las limitaciones de memoria y compatibilidad de WebGPU. No hay resultados de benchmarks publicados para esta conversion ni un pipeline declarado en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -96,7 +96,7 @@ No se dispone de comparativas de rendimiento medidas entre estas opciones dentro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danyalmalik/Llama-3.2-3B-Instruct-ONNX-WebGPU
+- Repositorio en Hugging Face: https://huggingface.co/danyalmalik/Llama-3.2-3B-Instruct-ONNX-WebGPU
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Copia sin gating usada para la conversion: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct
 - Cabeza borrador EAGLE-3: https://huggingface.co/thoughtworks/Llama-3.2-3B-Instruct-Eagle3

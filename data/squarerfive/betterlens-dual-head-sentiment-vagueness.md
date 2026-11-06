@@ -29,7 +29,7 @@ Es un modelo pequeno y especializado, no un modelo de proposito general: solo so
 
 El modelo parte de `distilbert-base-uncased`, un encoder transformer destilado de 6 capas, 768 dimensiones ocultas y 12 cabezas de atencion. Sobre el embedding del token [CLS] se aplica un dropout compartido de 0,1 y despues dos cabezas lineales independientes: una de clasificacion con salida de 3 logits y otra de regresion con salida de 1 logit que se pasa por una sigmoide en inferencia para acotar el resultado a [0, 1]. El entrenamiento usa una perdida combinada ponderada: `0.6 · CrossEntropy(sentiment) + 0.4 · MSE(vagueness)`, de modo que ambas tareas comparten el mismo backbone y se optimizan de forma conjunta.
 
-Los datos de entrenamiento provienen de corpus publicos de sentimiento en HuggingFace (estilo SST-2, resenas de Amazon y derivados de AG News) junto con publicaciones sinteticas de "negatividad vaga" generadas con objetivos de vaguedad conocidos (`vague_score`). El autor remite a `DATASET_NOTES.md` del repositorio principal para el detalle de composicion. No se documenta en la informacion disponible el numero exacto de tokens de entrenamiento ni si hubo fases de RLHF o DPO; el modelo es un fine-tuning supervisado con dos objetivos.
+Los datos de entrenamiento provienen de corpus publicos de sentimiento en Hugging Face (estilo SST-2, resenas de Amazon y derivados de AG News) junto con publicaciones sinteticas de "negatividad vaga" generadas con objetivos de vaguedad conocidos (`vague_score`). El autor remite a `DATASET_NOTES.md` del repositorio principal para el detalle de composicion. No se documenta en la informacion disponible el numero exacto de tokens de entrenamiento ni si hubo fases de RLHF o DPO; el modelo es un fine-tuning supervisado con dos objetivos.
 
 La innovacion tecnica principal es precisamente la cabeza dual con objetivo compuesto, orientada a una regla de filtrado booleana (negativo AND vago) en lugar de a una metrica de clasificacion aislada. El modelo no incorpora decodificacion especulativa ni atencion lineal, ya que es un encoder de clasificacion, no un modelo generativo.
 
@@ -128,7 +128,7 @@ El diferenciador frente a los clasificadores de sentimiento habituales es la seg
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/squarerfive/betterlens-dual-head-sentiment-vagueness
+- Modelo en Hugging Face: https://huggingface.co/squarerfive/betterlens-dual-head-sentiment-vagueness
 - Exportacion ONNX incluida: https://huggingface.co/squarerfive/betterlens-dual-head-sentiment-vagueness/blob/main/onnx/model.onnx
 - Modelo relacionado de una sola cabeza: https://huggingface.co/squarerfive/betterlens-adversarial-framing
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased

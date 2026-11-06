@@ -87,7 +87,7 @@ No se dispone de datos comparativos de rendimiento con otros modelos de tamano s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wnfldchen/gemma-4-31B-it-qat-w4a16-ct-heretic-merged-direct
+- Repositorio Hugging Face: https://huggingface.co/wnfldchen/gemma-4-31B-it-qat-w4a16-ct-heretic-merged-direct
 - Modelo fuente sin comprimir (Heretic merged): https://huggingface.co/wnfldchen/gemma-4-31B-it-qat-q4_0-unquantized-heretic-merged
 - Modelo base oficial de Google: https://huggingface.co/google/gemma-4-31B-it-qat-q4_0-unquantized
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

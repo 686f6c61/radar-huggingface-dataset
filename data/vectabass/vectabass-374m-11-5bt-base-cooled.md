@@ -111,7 +111,7 @@ La comparación con Pythia, GPT-2 y SmolLM es por tamaño y categoría (modelos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VectaBass/vectabass-374m-11.5bt-base-cooled
+- Hugging Face: https://huggingface.co/VectaBass/vectabass-374m-11.5bt-base-cooled
 - Referencia de Isambard-AI (McIntosh-Smith, Alam y Woods, 2024): https://doi.org/10.48550/arXiv.2410.11199
 - Dataset fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset fineweb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

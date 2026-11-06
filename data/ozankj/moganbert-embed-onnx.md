@@ -95,7 +95,7 @@ La comparación con alternativas de la misma categoría (por ejemplo, modelos mu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ozankj/MoganBERT-Embed-ONNX
+- Repositorio Hugging Face: https://huggingface.co/Ozankj/MoganBERT-Embed-ONNX
 - Modelo original: https://huggingface.co/moganai/MoganBERT-Embed
 - Paper: https://huggingface.co/papers/2608.25768
 - Notas de cuantización: https://huggingface.co/Ozankj/MoganBERT-Embed-ONNX/blob/main/QUANTIZATION.md

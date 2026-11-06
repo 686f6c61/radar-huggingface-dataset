@@ -2,7 +2,7 @@
 
 ## Resumen
 
-medxpert9b_specgap_ship_retrieval_websearch_global_step_180 es un ajuste por aprendizaje por refuerzo (RL) del modelo base Qwen/Qwen3.5-9B, publicado por el usuario ddvd233 en HuggingFace. No se trata de un modelo nuevo entrenado desde cero, sino de la fusión de pesos en bf16 de un checkpoint de verl (FSDP) correspondiente al paso global 180 de un experimento denominado RRIMed (self-evolving rewards), en su brazo held-out sobre el benchmark MedXpertQA (texto y multimodal), identificado como ARM 21. El modelo tiene 9.409.813.744 parámetros y ocupa 18,8 GB en el repositorio.
+medxpert9b_specgap_ship_retrieval_websearch_global_step_180 es un ajuste por aprendizaje por refuerzo (RL) del modelo base Qwen/Qwen3.5-9B, publicado por el usuario ddvd233 en Hugging Face. No se trata de un modelo nuevo entrenado desde cero, sino de la fusión de pesos en bf16 de un checkpoint de verl (FSDP) correspondiente al paso global 180 de un experimento denominado RRIMed (self-evolving rewards), en su brazo held-out sobre el benchmark MedXpertQA (texto y multimodal), identificado como ARM 21. El modelo tiene 9.409.813.744 parámetros y ocupa 18,8 GB en el repositorio.
 
 El problema que aborda es el de la respuesta a preguntas médicas con uso de herramientas: el entrenamiento por RL se realizó partiendo del modelo base con acceso a herramientas de recuperación (retrieval) y búsqueda web, y la recompensa empleada es una rúbrica de un solo criterio, de modo que el evaluador produce exactitud por coincidencia exacta (exact-match). Según la model card, el checkpoint alcanza una precisión de validación de 0,407 en MedXpertQA (evaluación en el paso 170), frente a 0,427 del mejor paso de la ejecución (paso 70, cuyos pesos se perdieron por rotación de checkpoints) y 0,357 del modelo base sin entrenar.
 
@@ -81,7 +81,7 @@ La informacion disponible no incluye otros modelos de RL medico comparables, por
 
 | Modelo | Parametros | Contexto | MedXpertQA (validacion) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| medxpert9b_specgap_ship_retrieval_websearch (paso 180) | 9,41 B | No disponible | 0,407 | apache-2.0 | Pesos safetensors bf16 en HuggingFace |
+| medxpert9b_specgap_ship_retrieval_websearch (paso 180) | 9,41 B | No disponible | 0,407 | apache-2.0 | Pesos safetensors bf16 en Hugging Face |
 | Qwen/Qwen3.5-9B (base, sin entrenar) | 9,41 B (heredado) | No disponible | 0,357 | No disponible en esta informacion | Modelo base publico |
 | Otros modelos medicos de ~9B con RL | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -103,7 +103,7 @@ El delta observado respecto al modelo base es de +0,050 puntos de exactitud en e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ddvd233/medxpert9b_specgap_ship_retrieval_websearch_global_step_180
+- Hugging Face: https://huggingface.co/ddvd233/medxpert9b_specgap_ship_retrieval_websearch_global_step_180
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de entrenamiento (verl, referencia del pipeline declarado en las etiquetas): no se proporciona enlace en la informacion disponible.
 - Paper o blog tecnico del experimento RRIMed: no disponible.

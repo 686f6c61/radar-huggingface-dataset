@@ -18,7 +18,7 @@ La relevancia actual radica en su caracter zero-shot sobre el benchmark TSB-AD (
 | Longitud de contexto | no disponible (depende de la longitud de la ventana de la serie temporal de entrada) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no aplica (modelo no linguistico) |
-| Licencia | Apache 2.0 (segun el README del repositorio; el campo de licencia de HuggingFace figura como no disponible) |
+| Licencia | Apache 2.0 (segun el README del repositorio; el campo de licencia de Hugging Face figura como no disponible) |
 | Formato de pesos | checkpoints PyTorch (repositorio separado `yyyang0/VETime-checkpoints`); no se especifica safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Enfoque | Benchmark | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VETime | Framework multimodal (temporal + vision) | Zero-shot, fusion adaptativa | TSB-AD-U / TSB-AD-M | Apache 2.0 | Codigo + checkpoints en HuggingFace |
+| VETime | Framework multimodal (temporal + vision) | Zero-shot, fusion adaptativa | TSB-AD-U / TSB-AD-M | Apache 2.0 | Codigo + checkpoints en Hugging Face |
 | Time-RCD | Modelo fundacional para deteccion zero-shot | Datos sinteticos + Relative Context Discrepancy | No disponible en la informacion | No disponible | Repositorio GitHub (thu-sail-lab) |
 | TSB-AD (baselines) | Conjunto de metodos de referencia | Multiples enfoques de deteccion | TSB-AD | No disponible | Codigo en GitHub (TheDatumOrg) |
 
@@ -77,13 +77,13 @@ No se dispone de datos cuantitativos de rendimiento para establecer una comparac
 - El regimen zero-shot puede degradarse en dominios muy alejados de la distribucion de TSB-AD; se recomienda validacion en el dominio objetivo.
 - La conversion a imagen introduce una resolucion limitada: anomalias mas finas que la resolucion del rasterizado pueden perderse.
 - Riesgo de falsos positivos en series con estacionalidad o ruido no representados en el benchmark de referencia.
-- La licencia Apache 2.0 figura en el README del repositorio, pero el campo de licencia de HuggingFace aparece como no disponible; conviene verificar el fichero LICENSE antes de un uso comercial.
+- La licencia Apache 2.0 figura en el README del repositorio, pero el campo de licencia de Hugging Face aparece como no disponible; conviene verificar el fichero LICENSE antes de un uso comercial.
 - No se documentan sesgos especificos ni limitaciones por idioma (no aplica).
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/yyyang0/VETime
-- HuggingFace (checkpoints): https://huggingface.co/yyyang0/VETime-checkpoints
+- Hugging Face (modelo): https://huggingface.co/yyyang0/VETime
+- Hugging Face (checkpoints): https://huggingface.co/yyyang0/VETime-checkpoints
 - Repositorio GitHub: https://github.com/yyyangcoder/VETime
 - Paper arXiv: https://arxiv.org/abs/2602.16681
 - Dataset TSB-AD-U: https://www.thedatum.org/datasets/TSB-AD-U.zip

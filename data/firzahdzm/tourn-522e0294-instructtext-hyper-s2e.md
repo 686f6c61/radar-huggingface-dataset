@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `firzahdzm/tourn-522e0294-instructtext-hyper-s2e` es un checkpoint publicado en HuggingFace por el usuario `firzahdzm`, con 3.085.938.688 parametros (aproximadamente 3,09 mil millones) verificados a partir de los pesos en formato safetensors. El repositorio contiene 6,2 GB de pesos, lo que corresponde a una precision de 16 bits (bf16/fp16) para ese numero de parametros. El tag `qwen2` indica que la arquitectura subyacente pertenece a la familia Qwen2, aunque no se ha publicado ninguna ficha tecnica que lo confirme.
+El modelo `firzahdzm/tourn-522e0294-instructtext-hyper-s2e` es un checkpoint publicado en Hugging Face por el usuario `firzahdzm`, con 3.085.938.688 parametros (aproximadamente 3,09 mil millones) verificados a partir de los pesos en formato safetensors. El repositorio contiene 6,2 GB de pesos, lo que corresponde a una precision de 16 bits (bf16/fp16) para ese numero de parametros. El tag `qwen2` indica que la arquitectura subyacente pertenece a la familia Qwen2, aunque no se ha publicado ninguna ficha tecnica que lo confirme.
 
 Se trata, por el nombre del repositorio (`tourn-`, `instructtext`, `hyper`), de un artefacto derivado de un proceso de ajuste fino o de un experimento de entrenamiento, no de un modelo fundacional publicado con documentacion completa. El autor no ha proporcionado pipeline, licencia, idiomas soportados ni descripcion alguna en el momento de redactar esta ficha.
 
@@ -73,10 +73,10 @@ La comparativa con el modelo objetivo es necesariamente parcial: solo se conoce 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| firzahdzm/tourn-522e0294-instructtext-hyper-s2e | 3,09B | No disponible | No disponible (sin licencia declarada) | HuggingFace, 14 descargas, sin model card |
-| Qwen2.5-3B / Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens nativos (ampliable a 131.072 con YaRN) | Apache 2.0 | HuggingFace y Ollama, ampliamente desplegado |
-| Llama-3.2-3B-Instruct | 3,21B | 128.000 tokens | Llama 3.2 Community License (con restricciones para grandes destinatarios) | HuggingFace, ampliamente desplegado |
-| Phi-3.5-mini-instruct | 3,8B | 128.000 tokens | MIT | HuggingFace, ampliamente desplegado |
+| firzahdzm/tourn-522e0294-instructtext-hyper-s2e | 3,09B | No disponible | No disponible (sin licencia declarada) | Hugging Face, 14 descargas, sin model card |
+| Qwen2.5-3B / Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens nativos (ampliable a 131.072 con YaRN) | Apache 2.0 | Hugging Face y Ollama, ampliamente desplegado |
+| Llama-3.2-3B-Instruct | 3,21B | 128.000 tokens | Llama 3.2 Community License (con restricciones para grandes destinatarios) | Hugging Face, ampliamente desplegado |
+| Phi-3.5-mini-instruct | 3,8B | 128.000 tokens | MIT | Hugging Face, ampliamente desplegado |
 
 No se dispone de ninguna medicion que permita situar el modelo evaluado por encima o por debajo de estas alternativas en tareas concretas.
 
@@ -94,5 +94,5 @@ No se dispone de ninguna medicion que permita situar el modelo evaluado por enci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/firzahdzm/tourn-522e0294-instructtext-hyper-s2e
+- Repositorio en Hugging Face: https://huggingface.co/firzahdzm/tourn-522e0294-instructtext-hyper-s2e
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. Los resultados obtenidos no guardaban relacion con el modelo ni con inteligencia artificial.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sharada-large es un encoder de aproximadamente 397 millones de parámetros desarrollado por Lena Barretta (usuario lenabarretta de HuggingFace) que realiza clasificación zero-shot y toma de decisiones tipadas sobre texto en un único forward pass. No es un modelo generativo: recibe un texto, una pregunta y una lista de opciones, y devuelve una probabilidad para cada opción, sin generar ni parsear texto. Está construido sobre el encoder answerdotai/ModernBERT-large y se publica bajo licencia Apache 2.0.
+Sharada-large es un encoder de aproximadamente 397 millones de parámetros desarrollado por Lena Barretta (usuario lenabarretta de Hugging Face) que realiza clasificación zero-shot y toma de decisiones tipadas sobre texto en un único forward pass. No es un modelo generativo: recibe un texto, una pregunta y una lista de opciones, y devuelve una probabilidad para cada opción, sin generar ni parsear texto. Está construido sobre el encoder answerdotai/ModernBERT-large y se publica bajo licencia Apache 2.0.
 
 Su rasgo distintivo es que las etiquetas forman parte de la entrada y no de los pesos, de modo que un conjunto de etiquetas con el que nunca fue entrenado sigue recibiendo respuesta. Admite tres tipos de pregunta (choice, scale y binary) y tres propiedades se cumplen por construcción, no por entrenamiento: el orden de las opciones no puede cambiar la respuesta, la puntuación de una opción no depende de qué otras opciones se ofrezcan, y el texto se lee una sola vez independientemente de cuántas preguntas se le hagan.
 
@@ -91,9 +91,9 @@ No se han publicado resultados de benchmarks estandarizados adicionales (MMLU, H
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lenabarretta/sharada-large | ~397M | 256 tokens de texto + pregunta y opciones | Decisiones tipadas con probabilidades calibradas y etiquetas en la entrada | Apache 2.0 | HuggingFace, librería `sharada` |
-| answerdotai/ModernBERT-large (modelo base) | ~395M | 8.192 tokens | Encoder de propósito general; requiere cabeza de clasificación y reentrenamiento por tarea | Apache 2.0 | HuggingFace |
-| Clasificadores tipo NLI zero-shot (por ejemplo BART-large-MNLI, DeBERTa-v3-large-MNLI) | ~400-435M | 512-1.024 tokens | Clasificación zero-shot vía entailment; opciones formuladas como hipótesis | MIT en los casos más habituales | HuggingFace |
+| lenabarretta/sharada-large | ~397M | 256 tokens de texto + pregunta y opciones | Decisiones tipadas con probabilidades calibradas y etiquetas en la entrada | Apache 2.0 | Hugging Face, librería `sharada` |
+| answerdotai/ModernBERT-large (modelo base) | ~395M | 8.192 tokens | Encoder de propósito general; requiere cabeza de clasificación y reentrenamiento por tarea | Apache 2.0 | Hugging Face |
+| Clasificadores tipo NLI zero-shot (por ejemplo BART-large-MNLI, DeBERTa-v3-large-MNLI) | ~400-435M | 512-1.024 tokens | Clasificación zero-shot vía entailment; opciones formuladas como hipótesis | MIT en los casos más habituales | Hugging Face |
 
 La ventaja diferencial de sharada-large frente al encoder base es que no requiere reentrenar por cada conjunto de etiquetas, y frente a los clasificadores basados en entailment es la invariancia al orden y la independencia entre opciones garantizadas por diseño, además de la calibración publicada por conjunto. Los valores concretos de parámetros, contexto y licencia de los dos últimos modelos son datos de referencia generales y no se han verificado contra sus model cards en esta búsqueda; conviene comprobarlos antes de citarlos.
 
@@ -113,7 +113,7 @@ La ventaja diferencial de sharada-large frente al encoder base es que no requier
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lenabarretta/sharada-large
+- Modelo en Hugging Face: https://huggingface.co/lenabarretta/sharada-large
 - Repositorio de código, ejemplos y ejecución de entrenamiento: https://github.com/LenaBarretta/sharada
 - Notas de diseño y experimentos: https://lenatriestounderstand.com/notes/llm/024-rlcr/
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-large

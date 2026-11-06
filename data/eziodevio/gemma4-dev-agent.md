@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma 4 Developer Agent (`gemma4-dev-agent`) es un agente autonomo de ingenieria de software publicado por el usuario EzioDevio en HuggingFace, presentado como la propuesta para la competicion Google Gemma 4 Developer Agent Competition. No se trata de un modelo entrenado desde cero ni de una publicacion de pesos, sino de un agente construido sobre la familia Gemma que incorpora enrutado de consultas, analisis estatico mediante AST, refactorizacion de dependencias entre multiples ficheros y reparacion automatica de codigo guiada por tests con `pytest`.
+Gemma 4 Developer Agent (`gemma4-dev-agent`) es un agente autonomo de ingenieria de software publicado por el usuario EzioDevio en Hugging Face, presentado como la propuesta para la competicion Google Gemma 4 Developer Agent Competition. No se trata de un modelo entrenado desde cero ni de una publicacion de pesos, sino de un agente construido sobre la familia Gemma que incorpora enrutado de consultas, analisis estatico mediante AST, refactorizacion de dependencias entre multiples ficheros y reparacion automatica de codigo guiada por tests con `pytest`.
 
 El repositorio esta etiquetado como `transformers`, `gemma`, `pytorch`, `autonomous-agents` y `code-generation`, con licencia MIT. La model card no especifica arquitectura, numero de parametros, longitud de contexto ni version concreta del modelo base Gemma subyacente, por lo que la practica totalidad de las especificaciones tecnicas habituales quedan como no disponibles.
 
@@ -93,6 +93,6 @@ No disponible. La informacion publicada no identifica el modelo Gemma base ni pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EzioDevio/gemma4-dev-agent
+- Hugging Face: https://huggingface.co/EzioDevio/gemma4-dev-agent
 - Repositorio GitHub: https://github.com/EzioDEVio/gemma4-dev-agent
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs adicionales ni demos.

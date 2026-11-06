@@ -70,6 +70,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h006.sft-v2.step_600
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h006.sft-v2.step_600
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (referencia, no verificado)
 - No se han encontrado otros enlaces relevantes (papers, blogs o demos) en la búsqueda web.

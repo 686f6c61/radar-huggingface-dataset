@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wima-rtin/side-generation` es un prototipo de investigación publicado en HuggingFace por el usuario wima-rtin, etiquetado como DeiT y orientado a tareas de generación. No se trata de un modelo entrenado: el propio autor indica explícitamente en la model card que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con resultados de benchmark. El repositorio ocupa 0,0 GB y el recuento real de parámetros del fichero safetensors es de 49.600.
+`wima-rtin/side-generation` es un prototipo de investigación publicado en Hugging Face por el usuario wima-rtin, etiquetado como DeiT y orientado a tareas de generación. No se trata de un modelo entrenado: el propio autor indica explícitamente en la model card que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con resultados de benchmark. El repositorio ocupa 0,0 GB y el recuento real de parámetros del fichero safetensors es de 49.600.
 
 La relevancia de esta ficha es, por tanto, limitada y de naturaleza metodológica: sirve como ejemplo de andamiaje de investigación (script de evaluación, `config.json`, `training_args.json`) más que como modelo utilizable en producción. Existe además una contradicción interna destacable entre la escala declarada ("large") y el número real de parámetros (49.600), así como entre el tag de generación y la arquitectura DeiT, que es un transformer de visión.
 
@@ -67,7 +67,7 @@ No hay modelos directamente comparables: los DeiT públicos de referencia son mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wima-rtin/side-generation | 49.600 (real en safetensors) | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas |
+| wima-rtin/side-generation | 49.600 (real en safetensors) | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas |
 | DeiT-tiny | del orden de 5,7 M (dato público de la familia DeiT) | no aplica (visión) | resultados publicados en ImageNet por sus autores | según variante | pesos públicos disponibles |
 | DeiT-small | del orden de 22 M (dato público de la familia DeiT) | no aplica (visión) | resultados publicados en ImageNet por sus autores | según variante | pesos públicos disponibles |
 | DeiT-base | del orden de 86 M (dato público de la familia DeiT) | no aplica (visión) | resultados publicados en ImageNet por sus autores | según variante | pesos públicos disponibles |
@@ -89,6 +89,6 @@ No hay modelos directamente comparables: los DeiT públicos de referencia son mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wima-rtin/side-generation
+- Modelo en Hugging Face: https://huggingface.co/wima-rtin/side-generation
 - No se han encontrado papers, blogs, repositorios ni demos asociados a este modelo en la información disponible.
 - Los resultados de la búsqueda web no contienen enlaces relevantes: corresponden a organizaciones no relacionadas (WIMA, fabricante de condensadores de película; Wima France; Wimasport; WIMA Paris) y se descartan como fuentes.

@@ -23,7 +23,7 @@ La relevancia de esta ficha radica en que combina tres elementos poco habituales
 | Tamano del repositorio | 7,5 GB |
 | Libreria de inferencia | mlx |
 | Pipeline | text-generation |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Modelo base | taide/Gemma-3-TAIDE-12b-Chat-2602 |
 | Fecha de creacion | 2026-09-12 |
 | Fecha de actualizacion | 2026-09-12 |
@@ -58,7 +58,7 @@ El valor tecnico anadido de esta publicacion es exclusivamente la cuantizacion y
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la ficha de HuggingFace del repositorio `ShengFan/Gemma-3-TAIDE-12b-Chat-2602-MLX-4bit` ni los resultados de busqueda web aportados contienen datos de MMLU, HumanEval, GSM8K ni de evaluaciones en chino tradicional (como TMLU o Taiwan-LLM eval). Tampoco se documenta la degradacion esperada por la cuantizacion a 4 bits.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la ficha de Hugging Face del repositorio `ShengFan/Gemma-3-TAIDE-12b-Chat-2602-MLX-4bit` ni los resultados de busqueda web aportados contienen datos de MMLU, HumanEval, GSM8K ni de evaluaciones en chino tradicional (como TMLU o Taiwan-LLM eval). Tampoco se documenta la degradacion esperada por la cuantizacion a 4 bits.
 
 ## Requisitos de hardware
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ShengFan/Gemma-3-TAIDE-12b-Chat-2602-MLX-4bit (este) | 13,2 B (metadata) | No disponible (heredado de Gemma 3) | MLX 4-bit | gemma-version-taide-models-license-agreement | Gated en HuggingFace |
+| ShengFan/Gemma-3-TAIDE-12b-Chat-2602-MLX-4bit (este) | 13,2 B (metadata) | No disponible (heredado de Gemma 3) | MLX 4-bit | gemma-version-taide-models-license-agreement | Gated en Hugging Face |
 | taide/Gemma-3-TAIDE-12b-Chat-2602 (base) | No disponible en la informacion recogida | No disponible | safetensors bf16 (presumiblemente) | Licencia TAIDE/Gemma | No confirmado |
 | Gemma 3 12B (Google) | ~12,2 B | 128.000 tokens | safetensors, GGUF, MLX | Gemma Terms of Use | Publico, pero gated en algunas variantes |
 | Familia TAIDE sobre Llama (p. ej. TAIDE-LX-7B / Llama-3.1-TAIDE) | 7-8 B | No disponible | safetensors, GGUF | Licencia TAIDE / Llama | Publico |
@@ -81,7 +81,7 @@ La comparacion con alternativas cuantizadas equivalentes (por ejemplo, Gemma 3 1
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio esta gated y exige aceptar condiciones en HuggingFace antes de descargarlo.
+- Acceso restringido: el repositorio esta gated y exige aceptar condiciones en Hugging Face antes de descargarlo.
 - Licencia restrictiva: la `gemma-version-taide-models-license-agreement` impone condiciones adicionales a las de Gemma y debe revisarse antes de cualquier uso comercial; no es una licencia open source estandar (Apache/MIT).
 - Idiomas: no se documentan idiomas soportados en la ficha. El ajuste TAIDE esta orientado a chino tradicional, por lo que el rendimiento en castellano o en chino simplificado puede ser inferior y no esta medido.
 - Riesgo de alucinacion: inherente a los modelos generativos de este tamano y no mitigado de forma documentada en este repositorio.
@@ -93,7 +93,7 @@ La comparacion con alternativas cuantizadas equivalentes (por ejemplo, Gemma 3 1
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ShengFan/Gemma-3-TAIDE-12b-Chat-2602-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/ShengFan/Gemma-3-TAIDE-12b-Chat-2602-MLX-4bit
 - Modelo base: https://huggingface.co/taide/Gemma-3-TAIDE-12b-Chat-2602
 - Documentacion de Gemma 3 (Google): https://ai.google.dev/gemma/docs/core/model_card_3
 - Libreria MLX: https://github.com/ml-explore/mlx

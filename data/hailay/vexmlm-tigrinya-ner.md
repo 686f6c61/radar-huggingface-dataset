@@ -28,10 +28,10 @@ El entrenamiento se diseñó para ser bit-reproducible, usando `enable_full_dete
 ## Capacidades
 
 - Reconocimiento de entidades nombradas en tigriña: personas (PER), organizaciones (ORG), lugares (LOC), fechas (DATE) y miscelánea (MISC), en formato BIO.
-- Etiquetado de secuencias a nivel de token (token classification) con la librería Transformers de HuggingFace.
+- Etiquetado de secuencias a nivel de token (token classification) con la librería Transformers de Hugging Face.
 - Soporte para entrada de texto arbitrario en tigriña, con predicción de spans de entidades.
 - Reproducibilidad completa: se proporcionan cinco semillas y scripts de evaluación para regenerar las métricas.
-- Compatible con el pipeline `token-classification` de HuggingFace y con despliegue mediante endpoints compatibles.
+- Compatible con el pipeline `token-classification` de Hugging Face y con despliegue mediante endpoints compatibles.
 
 ## Casos de uso
 
@@ -59,7 +59,7 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 - **VRAM estimada**: al ser un modelo basado en XLM-R base (aproximadamente 278M de parámetros, aunque no confirmado), la inferencia en bf16 requiere alrededor de 600 MB de VRAM para el modelo, más memoria para activaciones. Con secuencias de 256 tokens, cabe en GPUs con 2 GB de VRAM o más.
 - **GPUs recomendadas**: cualquier GPU con al menos 4 GB de VRAM es suficiente para inferencia; para fine-tuning se usó una NVIDIA A100 (40 GB), pero entrenamientos más pequeños pueden caber en GPUs de 16 GB.
 - **Compatibilidad con GPUs de consumo**: sí, modelos de esta escala se ejecutan en RTX 3060, RTX 4060, etc.
-- **Opciones de despliegue**: compatible con HuggingFace Transformers, puede servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF). También es compatible con endpoints de HuggingFace.
+- **Opciones de despliegue**: compatible con Hugging Face Transformers, puede servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF). También es compatible con endpoints de Hugging Face.
 - **Latencia y throughput**: no se han publicado datos específicos, pero en una GPU moderna la inferencia por secuencia de 256 tokens es del orden de milisegundos.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se dispone de información comparativa con otros modelos NER para tigriña en
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Hailay/VEXMLM-Tigrinya-NER)
+- [Modelo en Hugging Face](https://huggingface.co/Hailay/VEXMLM-Tigrinya-NER)
 - [Modelo base VEXMLM](https://huggingface.co/Hailay/VEXMLM)
 - [Repositorio oficial en GitHub](https://github.com/hailaykidu/VEXMLM)
 - Paper: "Expanding the Lexicon of Ge'ez Based African Languages: A Comparative Study of Amharic and Tigrinya" (aceptado en LM4UC Workshop, IJCAI 2026) — no se proporciona enlace directo.

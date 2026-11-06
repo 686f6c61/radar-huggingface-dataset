@@ -71,4 +71,4 @@ No se dispone de información suficiente para comparar este modelo con alternati
 - Dataset de entrenamiento: https://huggingface.co/datasets/saifahmad123/GRASPNET_FINAL
 - Proyecto GraspNet (benchmark de agarre): https://graspnet.net/
 - Organización GraspNet en GitHub: https://github.com/graspnet
-- Dataset GraspNet en HuggingFace: https://huggingface.co/saic3d/graspnet
+- Dataset GraspNet en Hugging Face: https://huggingface.co/saic3d/graspnet

@@ -23,7 +23,7 @@ Su relevancia es la de un ejemplo de ajuste fino eficiente (QLoRA) sobre un mode
 
 ## Arquitectura y entrenamiento
 
-El adaptador se construye sobre Qwen3-8B, un transformer denso de 8B parámetros. El ajuste se realizó con QLoRA: base cuantizado a 4 bits más LoRA con r=64, alpha=128 y módulos objetivo de rango 16, usando Unsloth y HuggingFace TRL bajo el esquema SFT. El entrenamiento duró 2 épocas, en bf16 y padding-free, con una train_loss final de ~0,98. La librería de inferencia esperada es PEFT sobre transformers (el campo `inference: false` de la model card indica que no se carga directamente con el pipeline estándar, sino como adaptador).
+El adaptador se construye sobre Qwen3-8B, un transformer denso de 8B parámetros. El ajuste se realizó con QLoRA: base cuantizado a 4 bits más LoRA con r=64, alpha=128 y módulos objetivo de rango 16, usando Unsloth y Hugging Face TRL bajo el esquema SFT. El entrenamiento duró 2 épocas, en bf16 y padding-free, con una train_loss final de ~0,98. La librería de inferencia esperada es PEFT sobre transformers (el campo `inference: false` de la model card indica que no se carga directamente con el pipeline estándar, sino como adaptador).
 
 Los datos proceden de la colección 《Med-Books-20260914》(7 libros: 4 con capa de texto y 3 de rehabilitación procesados por OCR), segmentados en 465 chunks de dominio. A partir de ellos se destilaron 6 categorías de QA mediante un teacher LLM, generando 19.649 muestras SFT (19.060 de entrenamiento y 589 de evaluación): conversación general/anti-olvido (11.762), razonamiento multidisciplinar (2.791), divulgación de ejercicio y peso (2.642), planes personalizados de entrenamiento y peso (1.389), divulgación médica deportiva profunda (601) y verificación/auditoría de afirmaciones (464). No se menciona uso de RLHF ni DPO; el ajuste es exclusivamente supervisado.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chenhaodev/qwen3-8b-sport-weight-lora | 8B (adaptador LoRA) | 32.768 tokens (base) | Deporte y gestión de peso en chino | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3-8B | 8B | 32.768 tokens (131.072 con YaRN) | Modelo generalista multilingüe | Apache 2.0 | HuggingFace (ampliamente usado) |
+| chenhaodev/qwen3-8b-sport-weight-lora | 8B (adaptador LoRA) | 32.768 tokens (base) | Deporte y gestión de peso en chino | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3-8B | 8B | 32.768 tokens (131.072 con YaRN) | Modelo generalista multilingüe | Apache 2.0 | Hugging Face (ampliamente usado) |
 | Otros LoRA verticales sobre Qwen3-8B | 8B | heredado del base | Variable según dominio | según autor | no disponible |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento frente a alternativas de la misma categoría. La comparación se limita a parámetros, contexto, licencia y especialización.
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chenhaodev/qwen3-8b-sport-weight-lora
+- Modelo en Hugging Face: https://huggingface.co/chenhaodev/qwen3-8b-sport-weight-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio RAG asociado: https://huggingface.co/chenhaodev/qwen3-8b-sport-weight-rag
 - Embedding usado en el RAG: https://huggingface.co/BAAI/bge-small-zh-v1.5

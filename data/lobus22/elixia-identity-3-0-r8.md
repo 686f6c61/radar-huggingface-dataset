@@ -96,7 +96,7 @@ No hay benchmarks publicados de ELIXIA-IDENTITY-3.0-R8, por lo que la comparacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lobus22/ELIXIA-IDENTITY-3.0-R8
+- Modelo en Hugging Face: https://huggingface.co/Lobus22/ELIXIA-IDENTITY-3.0-R8
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-14B-Instruct-bnb-4bit
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper de referencia de TRL: https://arxiv.org/abs/2203.02155 (vonwerra2022trl, cita incluida en la model card)

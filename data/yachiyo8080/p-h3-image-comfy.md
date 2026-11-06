@@ -6,7 +6,7 @@ P-H3-Image-Comfy es un empaquetado en fichero único para ComfyUI del modelo de 
 
 El modelo resuelve el problema de ejecutar un pipeline text-to-image e image-to-image de gran tamaño en hardware más modesto, empaquetando los pesos en un único fichero compatible con la librería `diffusion-single-file`. La licencia es la MiniMax-H3 Community License Agreement, lo que condiciona su uso comercial.
 
-La información pública disponible es muy limitada: el repositorio ocupa 139,3 GB, no registra descargas ni likes, y la model card no incluye detalles sobre arquitectura interna, número de parámetros, datos de entrenamiento ni resultados de benchmarks. Los datos que se ofrecen a continuación proceden exclusivamente de los metadatos de HuggingFace y de la model card.
+La información pública disponible es muy limitada: el repositorio ocupa 139,3 GB, no registra descargas ni likes, y la model card no incluye detalles sobre arquitectura interna, número de parámetros, datos de entrenamiento ni resultados de benchmarks. Los datos que se ofrecen a continuación proceden exclusivamente de los metadatos de Hugging Face y de la model card.
 
 ## Especificaciones técnicas
 
@@ -80,7 +80,7 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yachiyo8080/P-H3-Image-Comfy
+- Repositorio en Hugging Face: https://huggingface.co/yachiyo8080/P-H3-Image-Comfy
 - Modelo base: https://huggingface.co/PrunaAI/p-h3-image
 - GitHub de PrunaAI: https://github.com/PrunaAI/pruna
 - Twitter/X de PrunaAI: https://twitter.com/PrunaAI

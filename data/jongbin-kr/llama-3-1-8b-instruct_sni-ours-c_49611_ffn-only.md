@@ -77,7 +77,7 @@ No se dispone de benchmarks para comparar el rendimiento entre estos modelos. La
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_SNI-ours-c_49611_ffn-only
+- Hugging Face del modelo: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_SNI-ours-c_49611_ffn-only
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Repositorio TRL: https://github.com/huggingface/trl
 - Otros modelos del autor (MoE): https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe

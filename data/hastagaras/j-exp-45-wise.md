@@ -2,11 +2,11 @@
 
 ## Resumen
 
-J-EXP-45-WiSE es un modelo de lenguaje publicado por el usuario Hastagaras en HuggingFace, construido mediante una fusión de pesos (merge) con la técnica WiSE-FT sobre el modelo base Hastagaras/G4-Jamet-26B-A4B-MK-2. La nomenclatura del tag `gemma4` y el sufijo `A4B` del checkpoint base sugieren una arquitectura derivada de la familia Gemma con mezcla de expertos (MoE) y aproximadamente 4.000 millones de parámetros activos, aunque esta información no está confirmada de forma explícita en los metadatos disponibles. El modelo cuenta con 25.805.936.206 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de modelos de ~26B.
+J-EXP-45-WiSE es un modelo de lenguaje publicado por el usuario Hastagaras en Hugging Face, construido mediante una fusión de pesos (merge) con la técnica WiSE-FT sobre el modelo base Hastagaras/G4-Jamet-26B-A4B-MK-2. La nomenclatura del tag `gemma4` y el sufijo `A4B` del checkpoint base sugieren una arquitectura derivada de la familia Gemma con mezcla de expertos (MoE) y aproximadamente 4.000 millones de parámetros activos, aunque esta información no está confirmada de forma explícita en los metadatos disponibles. El modelo cuenta con 25.805.936.206 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de modelos de ~26B.
 
 El interés de este checkpoint reside en que aplica WiSE-FT (Weight-Space Ensembling for Fine-Tuning), una técnica que interpola linealmente los pesos de un modelo preentrenado y su versión ajustada para preservar capacidades generales mientras se incorporan las mejoras del fine-tuning. Se trata de un experimento (el prefijo `J-EXP` así lo indica) más que de un modelo de producción, con solo 137 descargas y sin documentación técnica publicada en la información disponible.
 
-La relevancia es limitada para uso general: no hay model card detallada, no se especifican idiomas, benchmarks ni composición del dataset de entrenamiento. Su interés es principalmente para quienes siguen el ecosistema de merges de la comunidad y quieran evaluar el efecto de WiSE-FT sobre un MoE de ~26B derivado de Gemma. El acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+La relevancia es limitada para uso general: no hay model card detallada, no se especifican idiomas, benchmarks ni composición del dataset de entrenamiento. Su interés es principalmente para quienes siguen el ecosistema de merges de la comunidad y quieran evaluar el efecto de WiSE-FT sobre un MoE de ~26B derivado de Gemma. El acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -74,7 +74,7 @@ La comparación con Gemma 2 27B y Mixtral 8x7B es orientativa por categoría de 
 - Ausencia total de model card técnica: no hay información sobre datos de entrenamiento, idiomas, contexto ni evaluación, lo que impide garantizar comportamiento en producción.
 - Riesgo elevado de alucinación y de comportamiento impredecible al ser un merge experimental sin validación publicada.
 - Sesgos desconocidos: al no documentarse la composición del dataset del modelo base, no se pueden evaluar sesgos de género, idioma o dominio.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción para uso automatizado o en CI/CD.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción para uso automatizado o en CI/CD.
 - Licencia Apache 2.0 declarada, pero conviene verificar que el modelo base y los datos subyacentes sean compatibles con uso comercial, dado que la cadena de procedencia no está documentada.
 - Sin cuantizaciones oficiales (GGUF, AWQ, GPTQ): el despliegue en hardware consumer exige conversión manual.
 - Contexto e idiomas no declarados: no apto para aplicaciones que dependan de ventanas largas o multilingüismo sin validación previa.
@@ -82,6 +82,6 @@ La comparación con Gemma 2 27B y Mixtral 8x7B es orientativa por categoría de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hastagaras/J-EXP-45-WiSE
+- Modelo en Hugging Face: https://huggingface.co/Hastagaras/J-EXP-45-WiSE
 - Modelo base: https://huggingface.co/Hastagaras/G4-Jamet-26B-A4B-MK-2
 - Paper de WiSE-FT (referencia de la técnica): https://arxiv.org/abs/2109.01903

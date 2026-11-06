@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mironess/so101_smolvla_270corr_50k` es un ajuste fino (fine-tune) del modelo de visión-lenguaje-acción SmolVLA, desarrollado por el usuario mironess y publicado en HuggingFace Hub mediante la librería LeRobot de Hugging Face. Se trata de una política robótica de imitación entrenada para controlar un brazo SO-101 (perfil `so_follower`) en tareas de recogida y colocación de objetos en contenedores, a partir de observaciones visuales de tres cámaras y del estado de las articulaciones.
+`mironess/so101_smolvla_270corr_50k` es un ajuste fino (fine-tune) del modelo de visión-lenguaje-acción SmolVLA, desarrollado por el usuario mironess y publicado en Hugging Face Hub mediante la librería LeRobot de Hugging Face. Se trata de una política robótica de imitación entrenada para controlar un brazo SO-101 (perfil `so_follower`) en tareas de recogida y colocación de objetos en contenedores, a partir de observaciones visuales de tres cámaras y del estado de las articulaciones.
 
 El modelo parte del checkpoint base `lerobot/smolvla_base` y se ha entrenado sobre el dataset `mironess/so101_smolvla_216_plus54corr`, compuesto por 270 episodios y 114.428 fotogramas grabados a 30 FPS. Con 450.046.176 parámetros totales (aproximadamente 450 millones) y un repositorio de 0,9 GB, es un modelo compacto que puede ejecutarse en hardware de consumo, en línea con el objetivo declarado de SmolVLA de ofrecer rendimiento competitivo a coste computacional reducido.
 
@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto / observacion | Acciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mironess/so101_smolvla_270corr_50k` | 450 M | 3 imagenes 3x256x256 + estado (6,) | 6 dimensiones continuas | apache-2.0 | HuggingFace Hub |
-| `lerobot/smolvla_base` | No disponible en la informacion proporcionada (mismo orden de magnitud, al ser el modelo base) | No disponible | No disponible | No disponible | HuggingFace Hub |
+| `mironess/so101_smolvla_270corr_50k` | 450 M | 3 imagenes 3x256x256 + estado (6,) | 6 dimensiones continuas | apache-2.0 | Hugging Face Hub |
+| `lerobot/smolvla_base` | No disponible en la informacion proporcionada (mismo orden de magnitud, al ser el modelo base) | No disponible | No disponible | No disponible | Hugging Face Hub |
 | OpenVLA | Aproximadamente 7 B | Una imagen + instruccion; contexto no disponible | 7 dimensiones discretizadas | No disponible en la informacion proporcionada | Publico |
 | Pi-zero (pi0) | Aproximadamente 3,3 B | Multiples imagenes; contexto no disponible | Acciones continuas por flow matching | No disponible en la informacion proporcionada | Publico |
 | Diffusion Policy | Depende de la configuracion | Estado e imagenes segun configuracion | Acciones continuas | No disponible en la informacion proporcionada | Publico |
@@ -99,7 +99,7 @@ Las cifras de parametros de OpenVLA y pi0 son valores de referencia generales de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mironess/so101_smolvla_270corr_50k
+- Modelo en Hugging Face: https://huggingface.co/mironess/so101_smolvla_270corr_50k
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/mironess/so101_smolvla_216_plus54corr
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=mironess/so101_smolvla_216_plus54corr

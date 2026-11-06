@@ -18,7 +18,7 @@ La relevancia de esta ficha esta, por tanto, en la advertencia: buena parte del 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF en BF16 y Q8_0 confirmados; el repositorio ocupa 54,0 GB, por lo que existe una escalera mas amplia de cuantizaciones no detallada en la informacion disponible |
 | Idiomas soportados | no disponible (la model card reporta evaluaciones en ingles y ruso) |
-| Licencia | Apache 2.0 (segun metadatos de HuggingFace; existen fuentes que atribuyen licencia no comercial al pipeline Qwen-Image, ver limitaciones) |
+| Licencia | Apache 2.0 (segun metadatos de Hugging Face; existen fuentes que atribuyen licencia no comercial al pipeline Qwen-Image, ver limitaciones) |
 | Formato de pesos | GGUF (generados con importance matrix e imatrix, layout por tensor con prefijo `AD-`) |
 
 ## Arquitectura y entrenamiento
@@ -81,11 +81,11 @@ Las cuantizaciones GGUF se generaron con importance matrix propia y un layout po
 
 | Modelo | Parametros | Contexto | Estado de la edicion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| li1272/Qwen-Image-2.1-Turbo-Uncensored-GGUF (esta ficha) | 8,19 mil millones | no disponible | Encoder abliterado, GGUF BF16 y Q8_0; 0 descargas, 1 like | Apache 2.0 | HuggingFace, repo de 54,0 GB |
-| Qwen/Qwen3-VL-8B-Instruct (base) | 8,19 mil millones | no disponible | Sin editar; rechazo 88,9% en ingles | Apache 2.0 | HuggingFace |
-| AtomicChat/Qwen-Image-2.1-Turbo-GGUF (denoiser) | 7B aproximados | no disponible | Sin editar; no tiene mecanismo de rechazo | Apache 2.0 | HuggingFace |
-| rayss868123/Qwen-Image-2.1-Uncensored-GGUF | no disponible | no disponible | Segun fuentes de la busqueda, pesos originales sin modificar | no disponible | HuggingFace |
-| kkguku/Qwen-Image-2.1-Uncensored-GGUF | no disponible | no disponible | Reempaquetado para nodos de ComfyUI (Unet Loader GGUF + CLIPLoader tipo `qwen_image`) | no disponible | HuggingFace |
+| li1272/Qwen-Image-2.1-Turbo-Uncensored-GGUF (esta ficha) | 8,19 mil millones | no disponible | Encoder abliterado, GGUF BF16 y Q8_0; 0 descargas, 1 like | Apache 2.0 | Hugging Face, repo de 54,0 GB |
+| Qwen/Qwen3-VL-8B-Instruct (base) | 8,19 mil millones | no disponible | Sin editar; rechazo 88,9% en ingles | Apache 2.0 | Hugging Face |
+| AtomicChat/Qwen-Image-2.1-Turbo-GGUF (denoiser) | 7B aproximados | no disponible | Sin editar; no tiene mecanismo de rechazo | Apache 2.0 | Hugging Face |
+| rayss868123/Qwen-Image-2.1-Uncensored-GGUF | no disponible | no disponible | Segun fuentes de la busqueda, pesos originales sin modificar | no disponible | Hugging Face |
+| kkguku/Qwen-Image-2.1-Uncensored-GGUF | no disponible | no disponible | Reempaquetado para nodos de ComfyUI (Unet Loader GGUF + CLIPLoader tipo `qwen_image`) | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ Las cuantizaciones GGUF se generaron con importance matrix propia y un layout po
 - Riesgo de alucinacion y de sesgos: no cuantificado en la informacion disponible. La abliteration puede afectar a otros comportamientos ademas del rechazo, pese a que MMLU no cambie.
 - La tasa de rechazo reducida (1,2% en ingles, 0% en ruso) implica que el modelo puede generar contenido danino si no se interpone un filtro externo. No incluye safety checker.
 - Idioma: las unicas mediciones publicadas son en ingles y ruso; no hay listado oficial de lenguas soportadas.
-- Contradiccion de licencia: los metadatos de HuggingFace indican Apache 2.0, pero fuentes de la busqueda web afirman que Qwen-Image se distribuye con licencia no comercial y que la version alojada por Alibaba aplica filtrado de prompts. Conviene verificar terminos antes de un uso comercial.
+- Contradiccion de licencia: los metadatos de Hugging Face indican Apache 2.0, pero fuentes de la busqueda web afirman que Qwen-Image se distribuye con licencia no comercial y que la version alojada por Alibaba aplica filtrado de prompts. Conviene verificar terminos antes de un uso comercial.
 - Reputacion del repositorio: 0 descargas y 1 like. No es la publicacion canonica (la de AtomicChat) y no hay garantia de que los ficheros coincidan bit a bit con los originales.
 - El propio autor advierte que el material de las categorias sensibles es para adultos.
 - Uso legal: la generacion de contenido sensible esta sujeta a la legislacion aplicable en cada jurisdiccion.

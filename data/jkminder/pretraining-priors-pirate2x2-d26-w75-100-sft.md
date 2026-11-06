@@ -63,7 +63,7 @@ Estos valores se expresan en porcentaje de exactitud (accuracy). No hay comparac
 - Con 972M parámetros en bf16 (~1.9 GB), la inferencia es viable en GPU con 8–16 GB de VRAM (p.ej., RTX 3060 Ti, RTX 3090, RTX 4090).
 - En CPU, se podría ejecutar con llama.cpp o similar, aunque no se han reportado cuantizaciones GGUF.
 - Para reproducir el SFT se necesitaron 8×H200 (GPU de 141 GB), pero para solo inferencia es suficiente con una GPU consumer.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama (si se convierte a GGUF), o el pipeline de HuggingFace con `trust_remote_code=True`.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama (si se convierte a GGUF), o el pipeline de Hugging Face con `trust_remote_code=True`.
 - Latencia y throughput no disponibles en la documentación.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks de modelos comparables (por ejemplo, el mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-w75-100-sft
+- Modelo en Hugging Face: https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-w75-100-sft
 - Base del modelo: https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-base
 - SFT del exp-056: https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-sft
 - Dataset pirate 2x2: https://huggingface.co/datasets/Eugleo/pretraining-priors-pirate-2x2

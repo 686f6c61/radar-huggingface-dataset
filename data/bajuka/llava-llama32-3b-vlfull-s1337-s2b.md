@@ -25,7 +25,7 @@ Su relevancia es fundamentalmente de investigacion: al formar parte de una rejil
 | Etapa publicada | S2b (instruct stage), inicializada desde el checkpoint S2a de la misma rama |
 | Plantilla de prompt | `llama_v3` |
 | Tamano del repositorio | 7,3 GB |
-| Fecha de publicacion en HuggingFace | 17 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion en Hugging Face | 17 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -113,7 +113,7 @@ Diferencias destacables: frente a los modelos anteriores, este checkpoint es el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BAJUKA/LLaVA-llama32-3b-VLfull-s1337-s2b
+- Modelo en Hugging Face: https://huggingface.co/BAJUKA/LLaVA-llama32-3b-VLfull-s1337-s2b
 - Checkpoint de la etapa previa S2a de la misma rama (referenciado en la model card): https://huggingface.co/BAJUKA/LLaVA-llama32-3b-VLfull-s1337/tree/main/s2a
 - Repositorio LLaVA-NeXT (necesario para cargar los pesos): https://github.com/LLaVA-VL/LLaVA-NeXT
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct

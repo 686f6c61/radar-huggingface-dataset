@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NBAmine/nemo-text-to-sql-phase1 es un modelo afinado (fine-tune) del modelo base mistralai/Mistral-Nemo-Base-2407, publicado por el usuario NBAmine en HuggingFace. Por el nombre del repositorio y por el identificador de la ejecución de entrenamiento registrada en Weights & Biases ("phase1-syntax-anchoring"), se trata de la primera fase de un proyecto orientado a la traducción de lenguaje natural a SQL (text-to-SQL), centrada en lo que el autor denomina "anclaje sintáctico".
+NBAmine/nemo-text-to-sql-phase1 es un modelo afinado (fine-tune) del modelo base mistralai/Mistral-Nemo-Base-2407, publicado por el usuario NBAmine en Hugging Face. Por el nombre del repositorio y por el identificador de la ejecución de entrenamiento registrada en Weights & Biases ("phase1-syntax-anchoring"), se trata de la primera fase de un proyecto orientado a la traducción de lenguaje natural a SQL (text-to-SQL), centrada en lo que el autor denomina "anclaje sintáctico".
 
 El modelo se ha entrenado mediante SFT (supervised fine-tuning) utilizando la librería TRL, según se indica en la model card. No se documentan en la información disponible ni el conjunto de datos empleado, ni el número de tokens de entrenamiento, ni la composición del dataset, ni si hubo fases posteriores de alineación (RLHF/DPO). El repositorio tiene un tamaño de 0,2 GB, muy inferior al esperado para los pesos completos de un modelo de la familia Mistral-Nemo, lo que sugiere que podría tratarse de un adaptador, de una subida parcial o de pesos en un formato muy comprimido, aunque esto no está confirmado.
 
@@ -40,7 +40,7 @@ La única referencia al proceso de entrenamiento es el enlace a una ejecución d
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
 - Capacidades multilingües: no disponible (no se declaran idiomas).
 - Capacidades especiales (modo thinking, visión, audio): no disponibles; no se mencionan en la model card.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en Inference Endpoints de HuggingFace, aunque no se detalla la configuración.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en Inference Endpoints de Hugging Face, aunque no se detalla la configuración.
 
 ## Casos de uso
 
@@ -72,7 +72,7 @@ Las siguientes cifras son estimaciones derivadas del tamaño del modelo base (12
   - RTX 4090 / RTX 3090 (24 GB) para FP16 con contexto reducido o para 8 bits.
   - RTX 4080 / 4070 Ti (16 GB) y RTX 3060 (12 GB) para cuantizaciones de 4 bits.
 - ¿Cabe en GPU de consumo? Sí, en cuantización de 4 bits cabe en GPUs de 12-16 GB, con contexto limitado. En FP16 no cabe en GPUs de consumo de 24 GB con contexto largo.
-- Opciones de despliegue: Transformers (con bitsandbytes para cuantización), vLLM, TGI, llama.cpp, Ollama y LM Studio si se generan pesos GGUF, que no están publicados en el repositorio. La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: Transformers (con bitsandbytes para cuantización), vLLM, TGI, llama.cpp, Ollama y LM Studio si se generan pesos GGUF, que no están publicados en el repositorio. La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles. No se han publicado medidas de tokens por segundo ni de tiempo a primer token.
 
 ## Comparativa con modelos similares
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento de este fine-tune, por lo que la comparaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NBAmine/nemo-text-to-sql-phase1
+- Modelo en Hugging Face: https://huggingface.co/NBAmine/nemo-text-to-sql-phase1
 - Modelo base: https://huggingface.co/mistralai/Mistral-Nemo-Base-2407
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/amine-nabli-none/text-to-sql-mistral/runs/phase1-syntax-anchoring-9cc4545a
 - Repositorio de TRL: https://github.com/huggingface/trl

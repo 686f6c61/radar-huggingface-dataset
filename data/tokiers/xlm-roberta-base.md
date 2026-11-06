@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`tokiers/xlm-roberta-base` no es un modelo de lenguaje, sino un repositorio de tokenizador preconstruido para el modelo `FacebookAI/xlm-roberta-base`. Lo publica el usuario `tokiers` como artefacto del proyecto tokie, una libreria de tokenizacion escrita en Rust que se presenta como sustituto directo de los tokenizers de HuggingFace, con el objetivo declarado de ser unas 50 veces mas rapido en tokenizacion y generar ficheros unas 10 veces mas pequenos.
+`tokiers/xlm-roberta-base` no es un modelo de lenguaje, sino un repositorio de tokenizador preconstruido para el modelo `FacebookAI/xlm-roberta-base`. Lo publica el usuario `tokiers` como artefacto del proyecto tokie, una libreria de tokenizacion escrita en Rust que se presenta como sustituto directo de los tokenizers de Hugging Face, con el objetivo declarado de ser unas 50 veces mas rapido en tokenizacion y generar ficheros unas 10 veces mas pequenos.
 
-El repositorio contiene unicamente los ficheros del tokenizador: `tokenizer.tkz` (formato binario propio de tokie) y `tokenizer.json` (el tokenizador original de HuggingFace). No incluye pesos del modelo, ni configuracion de arquitectura, ni codigo de inferencia. Por tanto, no sirve para generar texto ni para ninguna tarea de modelado; su utilidad se limita a preprocesar texto con la tokenizacion exacta de XLM-RoBERTa base.
+El repositorio contiene unicamente los ficheros del tokenizador: `tokenizer.tkz` (formato binario propio de tokie) y `tokenizer.json` (el tokenizador original de Hugging Face). No incluye pesos del modelo, ni configuracion de arquitectura, ni codigo de inferencia. Por tanto, no sirve para generar texto ni para ninguna tarea de modelado; su utilidad se limita a preprocesar texto con la tokenizacion exacta de XLM-RoBERTa base.
 
 Es relevante en la medida en que XLM-RoBERTa sigue siendo un encoder multilingue muy usado en clasificacion, NER y retrieval, y tokie ofrece una alternativa de carga rapida (~5 ms segun la model card) para pipelines que tokenizan grandes volumenes de texto. Fuera de ese nicho, la ficha no puede aportar datos de arquitectura, entrenamiento ni rendimiento porque no existen: el repositorio no contiene un modelo.
 
@@ -19,7 +19,7 @@ Es relevante en la medida en que XLM-RoBERTa sigue siendo un encoder multilingue
 | Tipos de cuantizacion | no disponible (no aplica: no hay pesos) |
 | Idiomas soportados | no disponible (el tokenizador subyacente es multilingue, pero no se declara lista) |
 | Licencia | no disponible para el repositorio; la model card indica MIT OR Apache-2.0 para la libreria tokie y que los ficheros originales conservan la licencia de FacebookAI/xlm-roberta-base |
-| Formato de pesos | no disponible; el repositorio incluye `tokenizer.tkz` (binario tokie) y `tokenizer.json` (HuggingFace) |
+| Formato de pesos | no disponible; el repositorio incluye `tokenizer.tkz` (binario tokie) y `tokenizer.json` (Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -39,12 +39,12 @@ La innovacion tecnica del repositorio es el formato `.tkz` de tokie, un binario 
 ## Casos de uso
 
 - Preprocesado de corpus multilingues para clasificacion o NER: se tokeniza el texto con la segmentacion exacta de XLM-RoBERTa base y se alimenta un encoder ya existente; el ahorro viene del tiempo de carga y del tamano del artefacto, no de la calidad del modelo.
-- Servicios de tokenizacion de alta concurrencia: si el cuello de botella del pipeline es la tokenizacion en Rust, tokie permite sustituir el tokenizer de HuggingFace manteniendo los mismos ids, lo que facilita la validacion A/B.
+- Servicios de tokenizacion de alta concurrencia: si el cuello de botella del pipeline es la tokenizacion en Rust, tokie permite sustituir el tokenizer de Hugging Face manteniendo los mismos ids, lo que facilita la validacion A/B.
 - Despliegue en contenedores o entornos edge con poco espacio: el fichero `.tkz` ocupa aproximadamente una decima parte del `tokenizer.json`, lo que reduce el tamano de la imagen.
 - Arranque en frio de funciones serverless: la carga en torno a 5 ms declarada por el autor reduce la latencia de inicializacion frente a la carga del tokenizador JSON.
 - Calculo de estadisticas de longitud de secuencia y conteo de tokens: util para estimar costes de API o para truncar y empaquetar datasets antes de entrenar o evaluar.
 - Integracion en tooling de investigacion en Rust: el crate permite tokenizar dentro de pipelines nativos sin depender del runtime de Python.
-- Verificacion de compatibilidad: el `tokenizer.json` incluido permite comparar la salida de tokie con la de HuggingFace y detectar divergencias antes de migrar.
+- Verificacion de compatibilidad: el `tokenizer.json` incluido permite comparar la salida de tokie con la de Hugging Face y detectar divergencias antes de migrar.
 
 ## Benchmarks y rendimiento
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabida en GPU consumer: no aplica.
 - Almacenamiento: el repositorio ocupa 0.3 GB, segun los metadatos del Hub.
 - Despliegue: paquete Python `tokie` o crate Rust `tokie` con feature `hf`; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, porque esas herramientas sirven modelos generativos.
-- Latencia y throughput: el autor declara ~5 ms de carga del tokenizador y una tokenizacion 50 veces mas rapida que HuggingFace, sin datos de medicion disponibles.
+- Latencia y throughput: el autor declara ~5 ms de carga del tokenizador y una tokenizacion 50 veces mas rapida que Hugging Face, sin datos de medicion disponibles.
 
 ## Comparativa con modelos similares
 
@@ -84,6 +84,6 @@ La comparacion con alternativas de la misma categoria (otros tokenizadores preco
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tokiers/xlm-roberta-base
+- Repositorio en Hugging Face: https://huggingface.co/tokiers/xlm-roberta-base
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Repositorio de tokie en GitHub: https://github.com/chonkie-inc/tokie

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TomOdellV0 es un modelo de conversión de voz (voice conversion) entrenado con la arquitectura RVC (Retrieval-based Voice Conversion) en su versión V2, publicado por el usuario JapGuy en HuggingFace. Su propósito es transformar una grabación de voz de entrada en una voz sintética que imita el timbre del cantante británico Tom Odell, de modo que pueda emplearse para cubrir canciones o generar voces cantadas con esa identidad vocal concreta.
+TomOdellV0 es un modelo de conversión de voz (voice conversion) entrenado con la arquitectura RVC (Retrieval-based Voice Conversion) en su versión V2, publicado por el usuario JapGuy en Hugging Face. Su propósito es transformar una grabación de voz de entrada en una voz sintética que imita el timbre del cantante británico Tom Odell, de modo que pueda emplearse para cubrir canciones o generar voces cantadas con esa identidad vocal concreta.
 
 El modelo se ha entrenado sobre 22 minutos y 50 segundos de voces a capela extraídas de grabaciones de Tom Odell mediante un pipeline de separación de fuentes (Vocals FV5 de Gabox, karaoke de becruily, eliminación de reverberación MONO de anvuew y limpieza manual con Audacity y puerta de ruido). Emplea el extractor de pitch rmvpe y el checkpoint KLM6 Exp2 a 40 kHz, y se ha entrenado durante 485 épocas, según indica el autor en la model card.
 
@@ -73,4 +73,4 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JapGuy/TomOdellV0
+- Hugging Face: https://huggingface.co/JapGuy/TomOdellV0

@@ -73,7 +73,7 @@ No se dispone de información suficiente para comparar con modelos equivalentes 
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/KostkaIT/Qwen3.8-27B-Huihui-Abliterated-oQ4e-MTP-MLX)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/KostkaIT/Qwen3.8-27B-Huihui-Abliterated-oQ4e-MTP-MLX)
 - [Versión oQ6e del mismo autor](https://huggingface.co/KostkaIT/Qwen3.8-27B-Huihui-Abliterated-oQ6e-MTP-MLX)
 - [Modelo base abliterado por huihui-ai](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated)
 - [Entrada en LLM Explorer](https://llm-explorer.com/model/huihui-ai%2FHuihui-Qwen3.8-27B-abliterated,7yiXfSP5itojtujYtkbmXj)

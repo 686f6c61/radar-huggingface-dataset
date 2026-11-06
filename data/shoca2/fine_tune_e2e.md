@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shoca2/fine_tune_e2e` es un ajuste fino (fine-tune) del modelo base `mistralai/Mistral-7B-v0.3`, publicado por el usuario `shoca2` en HuggingFace. Se trata de un modelo derivado, no de un entrenamiento desde cero: hereda por completo la arquitectura, el tokenizador y la ventana de contexto del modelo original de Mistral AI, y sobre esa base se ha aplicado un entrenamiento supervisado (SFT) utilizando la libreria TRL de HuggingFace. El repositorio declara la etiqueta `generated_from_trainer`, lo que indica que se genero con el flujo estandar de `Trainer`/`SFTTrainer`.
+`shoca2/fine_tune_e2e` es un ajuste fino (fine-tune) del modelo base `mistralai/Mistral-7B-v0.3`, publicado por el usuario `shoca2` en Hugging Face. Se trata de un modelo derivado, no de un entrenamiento desde cero: hereda por completo la arquitectura, el tokenizador y la ventana de contexto del modelo original de Mistral AI, y sobre esa base se ha aplicado un entrenamiento supervisado (SFT) utilizando la libreria TRL de Hugging Face. El repositorio declara la etiqueta `generated_from_trainer`, lo que indica que se genero con el flujo estandar de `Trainer`/`SFTTrainer`.
 
 El modelo resuelve, en principio, el mismo problema que cualquier ajuste fino de instrucciones: adaptar un modelo de lenguaje de proposito general a un dominio, estilo o conjunto de tareas concretas mediante ejemplos supervisados. Sin embargo, la model card publicada es practicamente una plantilla autogenerada: no documenta el dataset de entrenamiento, el numero de tokens, el numero de pasos, la tasa de aprendizaje ni el objetivo del ajuste. Tampoco se han publicado resultados de evaluacion. Esto limita mucho la evaluacion previa por parte de terceros.
 
@@ -61,7 +61,7 @@ Respecto al entrenamiento, la unica informacion disponible es que se aplico SFT 
 - Generacion de texto asistida por contexto largo: si el checkpoint conserva los 32.768 tokens de contexto del modelo base, seria adecuado para resumir o responder sobre documentos extensos en una sola pasada, aunque esto requiere verificacion empirica.
 - Base para un ajuste posterior: al ser un derivado de Mistral-7B-v0.3 cuyos pesos son compatibles con el ecosistema `transformers`, puede utilizarse como punto de partida para un segundo ajuste con datos propios mejor documentados.
 - Evaluacion comparativa de checkpoints comunitarios: util como caso de estudio en *benchmarking* interno para medir cuanto aporta un fine-tune no documentado frente al modelo base en tareas concretas de la organizacion.
-- Despliegue en infraestructura de inferencia estandar: al ser un checkpoint de tipo `transformers` y estar etiquetado como compatible con endpoints, puede servirse con TGI, vLLM o los propios Inference Endpoints de HuggingFace una vez convertido o cargado en memoria.
+- Despliegue en infraestructura de inferencia estandar: al ser un checkpoint de tipo `transformers` y estar etiquetado como compatible con endpoints, puede servirse con TGI, vLLM o los propios Inference Endpoints de Hugging Face una vez convertido o cargado en memoria.
 - Advertencia general: dado que no hay documentacion sobre el dataset ni evaluaciones publicadas, cualquier caso de uso en produccion deberia ir precedido de una evaluacion propia y de una revision del origen de los datos de entrenamiento.
 
 ## Benchmarks y rendimiento
@@ -108,7 +108,7 @@ La comparacion relevante es con el propio modelo base: un fine-tune sin dataset 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shoca2/fine_tune_e2e
+- Modelo en Hugging Face: https://huggingface.co/shoca2/fine_tune_e2e
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Repositorio de TRL: https://github.com/huggingface/trl
 

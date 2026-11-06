@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NoiseRite BEATs + Mahalanobis es un sistema de detección de anomalías acústicas por máquina, desarrollado por hashan-7, que combina el modelo de audio BEATs como extractor de características y un clasificador de distancia de Mahalanobis para puntuar la desviación respecto a un perfil normal de referencia. Está orientado al monitoreo de condiciones de maquinaria industrial mediante señales de audio. El paquete publicado en HuggingFace contiene exclusivamente las estadísticas por máquina del clasificador (ubicación y precisión), junto con metadatos y resúmenes de evaluación, pero no incluye audio crudo, caché de embeddings ni el checkpoint de BEATs. El sistema reporta un score oficial de 0,579158 en condiciones limpias, con una degradación moderada bajo ruido blanco.
+NoiseRite BEATs + Mahalanobis es un sistema de detección de anomalías acústicas por máquina, desarrollado por hashan-7, que combina el modelo de audio BEATs como extractor de características y un clasificador de distancia de Mahalanobis para puntuar la desviación respecto a un perfil normal de referencia. Está orientado al monitoreo de condiciones de maquinaria industrial mediante señales de audio. El paquete publicado en Hugging Face contiene exclusivamente las estadísticas por máquina del clasificador (ubicación y precisión), junto con metadatos y resúmenes de evaluación, pero no incluye audio crudo, caché de embeddings ni el checkpoint de BEATs. El sistema reporta un score oficial de 0,579158 en condiciones limpias, con una degradación moderada bajo ruido blanco.
 
 El repositorio se presenta como un "paquete de lanzamiento seguro planificado" y su uso previsto es el cribado acústico de anomalías para tipos de máquina registrados, utilizando una línea base de comportamiento normal. No se proporcionan detalles sobre la arquitectura interna de BEATs (número de parámetros, configuración de capas) ni sobre el proceso de entrenamiento o el dataset utilizado. La licencia se indica como "other", sin especificación adicional. Actualmente no tiene descargas ni likes, y el tamaño del repositorio es de 0,0 GB, lo que sugiere que se trata de un artefacto de metadatos más que de un modelo completo con pesos.
 
@@ -77,7 +77,7 @@ No se ha identificado en la información disponible una comparativa con otros si
 
 ## Enlaces
 
-- [Repositorio de HuggingFace](https://huggingface.co/hashan-7/noiserite-beats-mahalanobis)
+- [Repositorio de Hugging Face](https://huggingface.co/hashan-7/noiserite-beats-mahalanobis)
 - [GitHub del autor (proyecto Vision-AI)](https://github.com/hashan-7/Vision-AI) — no relacionado directamente con NoiseRite, pero es el perfil público del desarrollador.
 
 No se han encontrado papers, blogs o demos adicionales que documenten este modelo.

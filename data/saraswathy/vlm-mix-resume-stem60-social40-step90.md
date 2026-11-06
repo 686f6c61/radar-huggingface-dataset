@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Saraswathy/vlm-mix-resume-stem60-social40-step90 es un checkpoint de reanudacion de entrenamiento (training-resume checkpoint) publicado en HuggingFace, no un modelo listo para produccion. Se trata de un adaptador LoRA entrenado sobre el modelo multimodal Qwen/Qwen3-VL-4B-Instruct mediante el framework EasyR1, y se distribuye junto con el estado completo de FSDP (pesos y estado del optimizador), el estado del dataloader y el estado extra necesario para retomar el entrenamiento en el paso global 90.
+Saraswathy/vlm-mix-resume-stem60-social40-step90 es un checkpoint de reanudacion de entrenamiento (training-resume checkpoint) publicado en Hugging Face, no un modelo listo para produccion. Se trata de un adaptador LoRA entrenado sobre el modelo multimodal Qwen/Qwen3-VL-4B-Instruct mediante el framework EasyR1, y se distribuye junto con el estado completo de FSDP (pesos y estado del optimizador), el estado del dataloader y el estado extra necesario para retomar el entrenamiento en el paso global 90.
 
 El artefacto desplegable propiamente dicho es el adaptador LoRA ubicado en `actor/lora_adapter/` dentro del repositorio, que debe cargarse sobre el modelo base Qwen3-VL-4B-Instruct. El repositorio ocupa 11,8 GB, un tamano muy superior al de un adaptador tipico porque incluye los estados de optimizador y dataloader, pensados para reanudar una ejecucion interrumpida.
 
@@ -18,7 +18,7 @@ La relevancia de esta publicacion es de caracter metodologico y de reproducibili
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible en el repositorio; el adaptador se distribuye como safetensors y el estado FSDP en el formato del framework de entrenamiento |
 | Idiomas soportados | No disponibles |
-| Licencia | No disponible (no declarada en la model card ni en los metadatos de HuggingFace) |
+| Licencia | No disponible (no declarada en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | safetensors para el adaptador LoRA; el repositorio incluye ademas estados FSDP de modelo y optimizador, estado del dataloader y estado extra, con verificacion mediante `SHA256SUMS.json` |
 
 ## Arquitectura y entrenamiento
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Saraswathy/vlm-mix-resume-stem60-social40-step90 | Adaptador LoRA sobre base de ~4B | No disponible | No disponible | No disponible | Adaptador PEFT + estado de entrenamiento |
-| Qwen/Qwen3-VL-4B-Instruct (modelo base) | ~4B | Consultar la model card del modelo base | Consultar la model card del modelo base | Consultar la model card del modelo base | Pesos completos en HuggingFace |
+| Qwen/Qwen3-VL-4B-Instruct (modelo base) | ~4B | Consultar la model card del modelo base | Consultar la model card del modelo base | Consultar la model card del modelo base | Pesos completos en Hugging Face |
 | Otros checkpoints de RL sobre VLMs con EasyR1 | Variable | Variable | Variable | Variable | Segun el autor |
 
 No se dispone de datos suficientes para una comparativa cuantitativa fiable con alternativas de la misma categoria. Cualquier comparacion de rendimiento exigiria ejecutar una evaluacion propia sobre el adaptador fusionado.
@@ -87,7 +87,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa fiable con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Saraswathy/vlm-mix-resume-stem60-social40-step90
+- Modelo en Hugging Face: https://huggingface.co/Saraswathy/vlm-mix-resume-stem60-social40-step90
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Framework de entrenamiento citado en la model card (EasyR1): https://github.com/hiyouga/EasyR1
 - Libreria PEFT: https://huggingface.co/docs/peft

@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (E187, LoRA 10k) | Adaptador LoRA sobre PI0.5; total no disponible | no disponible | place-dual-shoes-concurrent (simulacion) | no disponible | HuggingFace, 6,3 GB, 0 descargas |
+| Este checkpoint (E187, LoRA 10k) | Adaptador LoRA sobre PI0.5; total no disponible | no disponible | place-dual-shoes-concurrent (simulacion) | no disponible | Hugging Face, 6,3 GB, 0 descargas |
 | E160 (mismo autor) | Adaptador LoRA sobre PI0.5; total no disponible | no disponible | misma familia de tareas | no disponible | El autor indica que este repositorio es distinto del modelo E160, pero no se incluye enlace en la informacion disponible |
 | Base PI0.5 (OpenPI) | no disponible | no disponible | Politica VLA generalista | no disponible en la informacion proporcionada | Debe obtenerse y verificarse por separado; no se incluye en este repositorio |
 
@@ -96,13 +96,13 @@ No se dispone de datos de rendimiento comparado entre estas opciones, por lo que
 - El dataset de entrenamiento esta fijado a una revision concreta; cambios en el dataset invalidan la comparabilidad de resultados.
 - Riesgo de alucinacion y de sobreajuste al dominio: al ser una politica VLA especializada, sus fallos se manifestarian como acciones fisicas incorrectas o inseguras en un robot real; no se documenta ninguna evaluacion en hardware fisico.
 - El repositorio carece de descargas y valoraciones, y no hay resultados de busqueda web relevantes que aporten validacion externa.
-- Las fechas del repositorio (creacion y actualizacion el 2026-09-16) son las declaradas por HuggingFace; conviene verificarlas antes de citarlas.
+- Las fechas del repositorio (creacion y actualizacion el 2026-09-16) son las declaradas por Hugging Face; conviene verificarlas antes de citarlas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-place-dual-shoes-concurrent-data20260916-lora-10k-e187
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-place-dual-shoes-concurrent-data20260916-lora-10k-e187
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-place-dual-shoes-concurrent-20260916
 - Metricas de entrenamiento (ejecucion E187): https://swanlab.cn/@Travor/CTR-PI05-LoRA10k
 - Repositorio OpenPI (framework y commit de referencia `879c3e8c8f6cd5774aef694151dd0eccb1003a53`): https://github.com/Physical-Intelligence/openpi
-- Fichero de manifiesto del checkpoint: `CHECKPOINT_MANIFEST.json` dentro del repositorio de HuggingFace
+- Fichero de manifiesto del checkpoint: `CHECKPOINT_MANIFEST.json` dentro del repositorio de Hugging Face
 - Nota sobre la busqueda web: no se han encontrado resultados relevantes sobre este modelo; los resultados devueltos no guardan relacion con el artefacto.

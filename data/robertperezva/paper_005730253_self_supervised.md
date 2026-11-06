@@ -52,6 +52,6 @@ No disponible: no hay modelos comparables en el repositorio, y no se puede compa
 - No se especifica la versión ni la fecha de creación del documento, lo que limita su utilidad para evaluar actualidad.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/robertperezva/paper_005730253_self_supervised
+- Repositorio en Hugging Face: https://huggingface.co/robertperezva/paper_005730253_self_supervised
 - Archivo principal del repositorio: `paper_005730253_self_supervised.md` (no accesible directamente desde la web, solo desde el repositorio)
 - No se han encontrado otros enlaces externos (papers, blogs, demos) relacionados con este repositorio específico.

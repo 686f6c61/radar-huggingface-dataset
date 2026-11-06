@@ -17,7 +17,7 @@ Su relevancia es practica: permite desplegar ASR yoruba-ingles en movil, escrito
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | Ventanas de audio de 30 segundos (formato estandar de entrada de Whisper); no se especifica otro valor en la model card |
 | Tipos de cuantizacion | int8 en las operaciones MatMul (encoder y decoder) |
-| Idiomas soportados | Yoruba e ingles con alternancia de codigo (code-switching); la ficha de HuggingFace no declara lista de idiomas |
+| Idiomas soportados | Yoruba e ingles con alternancia de codigo (code-switching); la ficha de Hugging Face no declara lista de idiomas |
 | Licencia | Apache 2.0 |
 | Formato de pesos | ONNX (encoder.int8.onnx, decoder.int8.onnx), mas tokens.txt |
 
@@ -63,16 +63,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| malinali-app/whisper-small-yoruba-onnx | ~244 M (Whisper-small) | ONNX int8 | Yoruba e ingles (code-switching) | Apache 2.0 | HuggingFace, runtime sherpa-onnx |
-| malinali-app/whisper-small-yoruba-ggml | ~244 M (Whisper-small) | GGML | Yoruba e ingles (code-switching) | Apache 2.0 | HuggingFace, whisper.cpp |
-| LyngualLabs/whisper-small-yoruba | ~244 M (Whisper-small) | Safetensors | Yoruba e ingles (code-switching) | no disponible en la informacion | HuggingFace, Transformers |
-| openai/whisper-small | ~244 M | Safetensors / otros | Multilingue (99 idiomas) | Apache 2.0 | HuggingFace, multiple runtimes |
+| malinali-app/whisper-small-yoruba-onnx | ~244 M (Whisper-small) | ONNX int8 | Yoruba e ingles (code-switching) | Apache 2.0 | Hugging Face, runtime sherpa-onnx |
+| malinali-app/whisper-small-yoruba-ggml | ~244 M (Whisper-small) | GGML | Yoruba e ingles (code-switching) | Apache 2.0 | Hugging Face, whisper.cpp |
+| LyngualLabs/whisper-small-yoruba | ~244 M (Whisper-small) | Safetensors | Yoruba e ingles (code-switching) | no disponible en la informacion | Hugging Face, Transformers |
+| openai/whisper-small | ~244 M | Safetensors / otros | Multilingue (99 idiomas) | Apache 2.0 | Hugging Face, multiple runtimes |
 
 La diferencia principal entre las tres variantes de Malinali y LyngualLabs es el formato de pesos y el runtime objetivo, no el modelo en si: comparten los mismos pesos afinados para yoruba-ingles. Frente a `openai/whisper-small`, el ajuste especifico mejora la cobertura del code-switching yoruba-ingles a costa de especializarse y perder generalidad multilingue.
 
 ## Limitaciones y advertencias
 
-- No se declara lista de idiomas en la ficha de HuggingFace; el soporte se infiere de la descripcion del modelo base (yoruba e ingles).
+- No se declara lista de idiomas en la ficha de Hugging Face; el soporte se infiere de la descripcion del modelo base (yoruba e ingles).
 - Al ser un modelo especializado, su rendimiento fuera del dominio yoruba-ingles probablemente sea inferior al de Whisper-small generico, aunque no hay datos publicados que lo confirmen.
 - Riesgo de alucinacion inherente a los modelos de reconocimiento de voz: pueden generar texto plausible en segmentos con ruido, silencio o audio poco claro.
 - Sesgos: no se documentan analisis de sesgo demografico ni dialectal; el entrenamiento puede favorecer determinados acentos o variedades del yoruba.
@@ -83,7 +83,7 @@ La diferencia principal entre las tres variantes de Malinali y LyngualLabs es el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/whisper-small-yoruba-onnx
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/whisper-small-yoruba-onnx
 - Modelo base: https://huggingface.co/LyngualLabs/whisper-small-yoruba
 - Variante GGML del mismo modelo: https://huggingface.co/malinali-app/whisper-small-yoruba-ggml
 - Repositorio del proyecto Malinali: https://github.com/malinali-app/malinali-app

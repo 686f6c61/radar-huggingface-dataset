@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 | LiquidAI/LFM2-350M (base) | 350M | 125K (según documentación) | bf16 | lfm1.0 | safetensors |
 | Oscilla/LFM2.5-230M-OptiQ-4bit | 230M | no disponible | 4-bit OptiQ | lfm1.0 | safetensors |
 
-La comparativa se basa en datos públicos de las fichas de HuggingFace y la documentación de Liquid AI. No se dispone de resultados de rendimiento para establecer una comparación cuantitativa.
+La comparativa se basa en datos públicos de las fichas de Hugging Face y la documentación de Liquid AI. No se dispone de resultados de rendimiento para establecer una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
@@ -76,7 +76,7 @@ La comparativa se basa en datos públicos de las fichas de HuggingFace y la docu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Oscilla/LFM2-350M-mlx-4Bit
+- Modelo en Hugging Face: https://huggingface.co/Oscilla/LFM2-350M-mlx-4Bit
 - Modelo base (LiquidAI/LFM2-350M): https://huggingface.co/LiquidAI/LFM2-350M
 - Documentación de LFM2-350M en Liquid Docs: https://docs.liquid.ai/lfm/models/lfm2-350m
 - Modelo similar de mlx-community: https://huggingface.co/mlx-community/LFM2-350M-4bit

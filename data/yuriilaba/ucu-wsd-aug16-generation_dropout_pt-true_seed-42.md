@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yuriilaba/ucu-wsd-aug16-generation_dropout_pt-true_seed-42` es un modelo de lenguaje de tipo encoder fine-tuneado para la desambiguacion del sentido de las palabras (word sense disambiguation, WSD) en ucraniano. Lo publica el usuario de HuggingFace `yuriilaba` y parte de `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, un encoder multilingue basado en la arquitectura XLM-RoBERTa con 278.043.648 parametros. El problema que aborda es clasico en procesamiento del lenguaje natural: decidir, dado un token en contexto, a que acepcion concreta corresponde cuando la palabra es polisemica.
+`yuriilaba/ucu-wsd-aug16-generation_dropout_pt-true_seed-42` es un modelo de lenguaje de tipo encoder fine-tuneado para la desambiguacion del sentido de las palabras (word sense disambiguation, WSD) en ucraniano. Lo publica el usuario de Hugging Face `yuriilaba` y parte de `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, un encoder multilingue basado en la arquitectura XLM-RoBERTa con 278.043.648 parametros. El problema que aborda es clasico en procesamiento del lenguaje natural: decidir, dado un token en contexto, a que acepcion concreta corresponde cuando la palabra es polisemica.
 
 El modelo se entrena sobre tripletas generadas de forma semiautomatica a partir del fichero `local_datasets/semi_supervised_2/triplets/triplets_generation_dropout_16_samples.csv`, con pooling sobre el token objetivo (`target-token pooling: True`) y semillas fijas de entrenamiento y validacion (42). El autor reporta una exactitud de desambiguacion de 0.9395 y correlaciones de similitud semantica textual (STS) de 0.7993 Pearson y 0.7899 Spearman, lo que sugiere que el fine-tuning preserva parcialmente la capacidad de representacion semantica general del modelo base mientras especializa el espacio de embeddings hacia la distincion de sentidos.
 
@@ -73,10 +73,10 @@ No se proporcionan resultados de MMLU, HumanEval, GSM8K ni de otras tareas gener
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yuriilaba/ucu-wsd-aug16-generation_dropout_pt-true_seed-42 | 278 M | no disponible (base: 512 tokens) | WSD acc. 0.9395; STS Pearson 0.7993 | no disponible | HuggingFace, 0 descargas |
-| sentence-transformers/paraphrase-multilingual-mpnet-base-v2 | 278 M | 512 tokens | no disponible en esta ficha; es el modelo base | Apache-2.0 | HuggingFace |
-| sentence-transformers/LaBSE | 471 M | 512 tokens | no disponible en esta ficha | Apache-2.0 | HuggingFace |
-| intfloat/multilingual-e5-base | 278 M | 512 tokens | no disponible en esta ficha | MIT | HuggingFace |
+| yuriilaba/ucu-wsd-aug16-generation_dropout_pt-true_seed-42 | 278 M | no disponible (base: 512 tokens) | WSD acc. 0.9395; STS Pearson 0.7993 | no disponible | Hugging Face, 0 descargas |
+| sentence-transformers/paraphrase-multilingual-mpnet-base-v2 | 278 M | 512 tokens | no disponible en esta ficha; es el modelo base | Apache-2.0 | Hugging Face |
+| sentence-transformers/LaBSE | 471 M | 512 tokens | no disponible en esta ficha | Apache-2.0 | Hugging Face |
+| intfloat/multilingual-e5-base | 278 M | 512 tokens | no disponible en esta ficha | MIT | Hugging Face |
 
 No se conocen modelos publicos directamente comparables en la tarea especifica de WSD para ucraniano dentro de la informacion proporcionada. Los modelos de la tabla son alternativas de la misma categoria (encoders multilingues de embeddings) pero no estan evaluados en WSD ucraniano, por lo que la comparacion de rendimiento no es posible.
 
@@ -94,7 +94,7 @@ No se conocen modelos publicos directamente comparables en la tarea especifica d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_dropout_pt-true_seed-42
+- Modelo en Hugging Face: https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_dropout_pt-true_seed-42
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 - Resultados MTEB del autor: carpeta `evaluation/mteb_results/` dentro del repositorio del modelo (no se proporciona URL directa)
 - Paper de XLM-RoBERTa (arquitectura base): https://arxiv.org/abs/1911.02116

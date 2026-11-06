@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shreyaallupati/qwen2.5-1.5b-merchant-agent es un ajuste fino (fine-tune) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario Shreyaallupati en HuggingFace. Se trata de un modelo de generación de texto de tipo decoder-only con 1.543.714.304 parámetros, derivado del checkpoint cuantizado a 4 bits `unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit` y entrenado con la librería Unsloth junto con TRL de HuggingFace, que según la model card permite un entrenamiento el doble de rápido. El repositorio ocupa 3,1 GB y la licencia declarada es Apache-2.0.
+Shreyaallupati/qwen2.5-1.5b-merchant-agent es un ajuste fino (fine-tune) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario Shreyaallupati en Hugging Face. Se trata de un modelo de generación de texto de tipo decoder-only con 1.543.714.304 parámetros, derivado del checkpoint cuantizado a 4 bits `unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit` y entrenado con la librería Unsloth junto con TRL de Hugging Face, que según la model card permite un entrenamiento el doble de rápido. El repositorio ocupa 3,1 GB y la licencia declarada es Apache-2.0.
 
 El interés de esta ficha es limitado pero claro: se trata de un modelo pequeño (1,5B parámetros) pensado para ejecutarse en hardware de consumo, con licencia permisiva y con un nombre que sugiere un uso orientado a agentes en el ámbito comercial (`merchant-agent`). No obstante, la model card es extremadamente escasa: no documenta el conjunto de datos de ajuste, los hiperparámetros, el número de tokens de entrenamiento, ni resultados de evaluación. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y los metadatos indican una creación en septiembre de 2026.
 
@@ -17,7 +17,7 @@ Por tanto, esta ficha debe leerse como una descripción del artefacto publicado 
 | Parámetros activos | No aplica: modelo denso, no es MoE |
 | Longitud de contexto | 32.768 tokens según la documentación pública del modelo base Qwen2.5-1.5B-Instruct; no confirmado en la model card de este fine-tune |
 | Tipos de cuantización | El repositorio publica únicamente safetensors (3,1 GB, coherente con precisión de 16 bits). No se publican versiones GGUF, AWQ ni GPTQ |
-| Idiomas soportados | Inglés (`en`), según los metadatos de HuggingFace. No se declaran otros idiomas para este fine-tune |
+| Idiomas soportados | Inglés (`en`), según los metadatos de Hugging Face. No se declaran otros idiomas para este fine-tune |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors |
 
@@ -34,7 +34,7 @@ Se listan únicamente las capacidades respaldadas por la información disponible
 - Generación de texto conversacional en inglés, heredada de Qwen2.5-1.5B-Instruct.
 - Seguimiento de instrucciones y formato de chat (pipeline `text-generation`, tag `conversational`).
 - Razonamiento básico y resolución de tareas sencillas de comprensión y generación, limitado por el tamaño de 1,5B parámetros.
-- Compatibilidad declarada con `text-generation-inference` y con `endpoints_compatible`, lo que facilita su despliegue en HuggingFace Inference Endpoints.
+- Compatibilidad declarada con `text-generation-inference` y con `endpoints_compatible`, lo que facilita su despliegue en Hugging Face Inference Endpoints.
 - Capacidad potencial de tool calling y de razonamiento multi-paso: el modelo base Qwen2.5-Instruct la incorpora, pero no está documentada ni verificada para este fine-tune concreto.
 - Capacidades multilingües: no declaradas para este modelo; los metadatos solo listan inglés.
 - Capacidades especiales (modo de razonamiento explícito, visión, audio): no disponibles.
@@ -62,18 +62,18 @@ Ni la model card ni los metadatos del repositorio incluyen evaluaciones de MMLU,
 - Caché KV estimada: alrededor de 28 KB por token en 16 bits, según la configuración pública del modelo base (28 capas, 2 cabezas KV, dimensión de cabeza 128); unos 0,9 GB para los 32.768 tokens de contexto completo. Es una estimación derivada de la configuración del base, no un dato publicado por el autor.
 - GPU recomendadas: cualquier GPU con 8 GB o más, como RTX 3060, RTX 4060, RTX 4070 o superiores. En GPUs de centro de datos (A100, H100, L40S) el modelo ocupa una fracción mínima de memoria y el cuello de botella pasa a ser el lote y la latencia de red.
 - Cabe en GPU de consumo: sí, con holgura. Incluso es viable en CPU o en iGPU con cuantización de 4 bits, aunque con latencias mucho mayores.
-- Opciones de despliegue: `transformers` (librería declarada en el repositorio), Text Generation Inference (TGI), vLLM y HuggingFace Inference Endpoints (tag `endpoints_compatible`). Para ejecución en CPU o en equipos modestos habría que convertir los pesos a GGUF y usar llama.cpp u Ollama, conversión no publicada por el autor.
+- Opciones de despliegue: `transformers` (librería declarada en el repositorio), Text Generation Inference (TGI), vLLM y Hugging Face Inference Endpoints (tag `endpoints_compatible`). Para ejecución en CPU o en equipos modestos habría que convertir los pesos a GGUF y usar llama.cpp u Ollama, conversión no publicada por el autor.
 - Latencia y throughput: no disponibles. No se han publicado mediciones para este modelo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Shreyaallupati/qwen2.5-1.5b-merchant-agent | 1,543B | 32.768 tokens (heredado del base) | Apache-2.0 | HuggingFace, solo safetensors | Fine-tune sin documentación de datos ni evaluación |
-| Qwen2.5-1.5B-Instruct (base) | 1,543B | 32.768 tokens | Apache-2.0 | HuggingFace, con versiones GGUF/AWQ/GPTQ de la comunidad | Modelo de referencia de la familia; documentación completa y benchmarks publicados |
-| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, amplio ecosistema de cuantizaciones | Ventana de contexto mucho mayor; licencia con restricciones para grandes despliegues |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache-2.0 | HuggingFace | Alternativa de tamaño similar con contexto más corto |
-| Gemma-2-2B-it | 2,6B | 8.192 tokens | Gemma Terms of Use | HuggingFace | Mayor número de parámetros; licencia con condiciones de uso adicionales |
+| Shreyaallupati/qwen2.5-1.5b-merchant-agent | 1,543B | 32.768 tokens (heredado del base) | Apache-2.0 | Hugging Face, solo safetensors | Fine-tune sin documentación de datos ni evaluación |
+| Qwen2.5-1.5B-Instruct (base) | 1,543B | 32.768 tokens | Apache-2.0 | Hugging Face, con versiones GGUF/AWQ/GPTQ de la comunidad | Modelo de referencia de la familia; documentación completa y benchmarks publicados |
+| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, amplio ecosistema de cuantizaciones | Ventana de contexto mucho mayor; licencia con restricciones para grandes despliegues |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache-2.0 | Hugging Face | Alternativa de tamaño similar con contexto más corto |
+| Gemma-2-2B-it | 2,6B | 8.192 tokens | Gemma Terms of Use | Hugging Face | Mayor número de parámetros; licencia con condiciones de uso adicionales |
 
 Los datos de contexto y licencia de los modelos comparados proceden de sus fichas públicas y conviene verificarlos antes de tomar una decisión de adopción. En la información disponible no hay benchmarks que permitan comparar el rendimiento real de este fine-tune frente a las alternativas.
 
@@ -91,9 +91,9 @@ Los datos de contexto y licencia de los modelos comparados proceden de sus ficha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shreyaallupati/qwen2.5-1.5b-merchant-agent
+- Modelo en Hugging Face: https://huggingface.co/Shreyaallupati/qwen2.5-1.5b-merchant-agent
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 - Paper y documentación de Qwen2.5: no disponible en la información proporcionada
 - Búsqueda web: los resultados recuperados no guardan relación con este modelo (conversión de formatos de partituras, competiciones de esports y una guía de Excel), por lo que no se incluye ninguno.

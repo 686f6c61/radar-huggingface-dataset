@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Avicennasis/K2-Horizon-0.9B-heretic | ~1,08 B | No disponible | en, zh | Apache-2.0 | HuggingFace (transformers) |
-| IFM/K2-Horizon-0.9B (base) | No disponible | No disponible | en, zh | Apache-2.0 | HuggingFace (transformers) |
-| Avicennasis/K2-Horizon-0.9B-heretic-mlx-8bit | ~1,08 B | No disponible | en, zh | Apache-2.0 | HuggingFace (MLX) |
+| Avicennasis/K2-Horizon-0.9B-heretic | ~1,08 B | No disponible | en, zh | Apache-2.0 | Hugging Face (transformers) |
+| IFM/K2-Horizon-0.9B (base) | No disponible | No disponible | en, zh | Apache-2.0 | Hugging Face (transformers) |
+| Avicennasis/K2-Horizon-0.9B-heretic-mlx-8bit | ~1,08 B | No disponible | en, zh | Apache-2.0 | Hugging Face (MLX) |
 
 No se dispone de datos de rendimiento de benchmarks estandar para ninguno de estos modelos, por lo que la comparativa se limita a parametros, licencia y disponibilidad. No se conocen otros modelos comparables en la informacion proporcionada.
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento de benchmarks estandar para ninguno de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Avicennasis/K2-Horizon-0.9B-heretic
+- Modelo en Hugging Face: https://huggingface.co/Avicennasis/K2-Horizon-0.9B-heretic
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-0.9B
 - Version MLX 8-bit: https://huggingface.co/Avicennasis/K2-Horizon-0.9B-heretic-mlx-8bit
 - Heretic (herramienta de abliteracion): https://github.com/p-e-w/heretic

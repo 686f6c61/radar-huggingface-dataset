@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-phi-1_5-...-forget10-ihl_both-epoch20` | 1,4B | no disponible (nativo 2048) | apache-2.0 | HuggingFace, 0 descargas | Checkpoint de investigación con `custom_code` |
-| `locuslab/tofu_ft_phi-1.5` | 1,4B | 2048 | apache-2.0 (heredada) | HuggingFace | Modelo base afinado sobre TOFU, sin desaprendizaje |
-| `microsoft/phi-1_5` | 1,3B | 2048 | MIT | HuggingFace, ampliamente usado | Modelo original de código y texto |
-| `microsoft/phi-2` | 2,7B | 2048 | MIT | HuggingFace | Sucesor con mejor rendimiento en código y razonamiento |
+| `unl-reset/tofu-phi-1_5-...-forget10-ihl_both-epoch20` | 1,4B | no disponible (nativo 2048) | apache-2.0 | Hugging Face, 0 descargas | Checkpoint de investigación con `custom_code` |
+| `locuslab/tofu_ft_phi-1.5` | 1,4B | 2048 | apache-2.0 (heredada) | Hugging Face | Modelo base afinado sobre TOFU, sin desaprendizaje |
+| `microsoft/phi-1_5` | 1,3B | 2048 | MIT | Hugging Face, ampliamente usado | Modelo original de código y texto |
+| `microsoft/phi-2` | 2,7B | 2048 | MIT | Hugging Face | Sucesor con mejor rendimiento en código y razonamiento |
 
 ## Limitaciones y advertencias
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- [HuggingFace: unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_both-epoch20](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_both-epoch20)
+- [Hugging Face: unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_both-epoch20](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_both-epoch20)
 - [Modelo base: locuslab/tofu_ft_phi-1.5](https://huggingface.co/locuslab/tofu_ft_phi-1.5)
 - [Modelo original: microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5)
 - [Paper TOFU: "TOFU: A Task of Fictitious Unlearning for LLMs"](https://arxiv.org/abs/2401.06121)

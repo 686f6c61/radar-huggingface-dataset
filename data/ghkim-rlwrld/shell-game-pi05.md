@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ghkim-rlwrld/shell-game-pi05` es un repositorio de HuggingFace que aloja tres políticas robóticas de la familia pi05 (π0.5, modelos visión-lenguaje-acción) ajustadas sobre el conjunto de datos de robot real denominado *shell_game*. Cada política resuelve la misma tarea de manipulación con un único brazo de 7 grados de libertad más pinza, empleando tres cámaras estéreo como entrada sensorial y una frecuencia de control medida de 9,26 Hz. El conjunto de entrenamiento consta de 45 episodios.
+`ghkim-rlwrld/shell-game-pi05` es un repositorio de Hugging Face que aloja tres políticas robóticas de la familia pi05 (π0.5, modelos visión-lenguaje-acción) ajustadas sobre el conjunto de datos de robot real denominado *shell_game*. Cada política resuelve la misma tarea de manipulación con un único brazo de 7 grados de libertad más pinza, empleando tres cámaras estéreo como entrada sensorial y una frecuencia de control medida de 9,26 Hz. El conjunto de entrenamiento consta de 45 episodios.
 
 El repositorio no contiene un modelo único, sino tres variantes que difieren en la representación del espacio de acciones y en el condicionamiento por lenguaje: una con acciones absolutas y una frase de tarea global, otra con acciones delta sobre el efector final (xyz + rot6d + gripper) y frase global, y una tercera también con delta EEF pero con etiquetas de subtarea por paso. La rotación se codifica como rot6d en lugar de rpy porque el *roll* presenta discontinuidades al cruzar ±π (269 discontinuidades en los 45 episodios), que se reducen a cero tras la conversión (desviación estándar de 3,08 a 0,039).
 
@@ -78,9 +78,9 @@ No se dispone de datos de rendimiento para comparar. Se puede contrastar estruct
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shell-game-global-pi05 | no disponible | no disponible | sin evaluar | no disponible | HuggingFace, 0 descargas |
-| shell-game-eef-pi05 | no disponible | no disponible | sin evaluar | no disponible | HuggingFace, 0 descargas |
-| shell-game-eef-subtask-pi05 | no disponible | no disponible | sin evaluar | no disponible | HuggingFace, 0 descargas |
+| shell-game-global-pi05 | no disponible | no disponible | sin evaluar | no disponible | Hugging Face, 0 descargas |
+| shell-game-eef-pi05 | no disponible | no disponible | sin evaluar | no disponible | Hugging Face, 0 descargas |
+| shell-game-eef-subtask-pi05 | no disponible | no disponible | sin evaluar | no disponible | Hugging Face, 0 descargas |
 | Otras políticas VLA (π0, OpenVLA, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Comparativa con alternativas externas: no disponible.
@@ -100,5 +100,5 @@ Comparativa con alternativas externas: no disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ghkim-rlwrld/shell-game-pi05
+- Repositorio en Hugging Face: https://huggingface.co/ghkim-rlwrld/shell-game-pi05
 - No se han encontrado en la información proporcionada otros enlaces (papers, blogs, repositorios de código ni demos).

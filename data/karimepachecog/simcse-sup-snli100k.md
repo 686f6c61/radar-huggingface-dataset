@@ -2,7 +2,7 @@
 
 ## Resumen
 
-simcse-sup-snli100k es un modelo de embeddings de frases publicado por la usuaria karimepachecog en HuggingFace. Se trata de un SentenceTransformer construido sobre un encoder tipo BERT que proyecta oraciones y parrafos a un espacio vectorial denso de 768 dimensiones, con similitud coseno como metrica de comparacion. El nombre del repositorio sugiere un entrenamiento con el esquema SimCSE supervisado sobre un subconjunto de 100.000 pares derivados del corpus SNLI (entailment como positivos, contradiction como negativos duros), aunque la model card del autor no declara explicitamente ni el dataset ni el modelo base.
+simcse-sup-snli100k es un modelo de embeddings de frases publicado por la usuaria karimepachecog en Hugging Face. Se trata de un SentenceTransformer construido sobre un encoder tipo BERT que proyecta oraciones y parrafos a un espacio vectorial denso de 768 dimensiones, con similitud coseno como metrica de comparacion. El nombre del repositorio sugiere un entrenamiento con el esquema SimCSE supervisado sobre un subconjunto de 100.000 pares derivados del corpus SNLI (entailment como positivos, contradiction como negativos duros), aunque la model card del autor no declara explicitamente ni el dataset ni el modelo base.
 
 El modelo no es generativo: es un encoder de representacion pensado para similitud semantica, busqueda semantica, mineria de parafrasis, clasificacion y clustering. Su huella es muy reducida (109.482.240 parametros, 0,4 GB de repositorio), lo que lo hace desplegable en CPU y en cualquier GPU de consumo. La longitud maxima de secuencia es de solo 128 tokens, una ventana muy corta que limita su uso en documentos largos.
 
@@ -67,17 +67,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: en fp32 los pesos ocupan aproximadamente 0,42 GB y en fp16 aproximadamente 0,21 GB; el consumo total depende del tamano de lote y de la longitud de las secuencias, pero es inferior a 1-2 GB en la mayoria de configuraciones (estimacion derivada del recuento de parametros declarado, no publicada por el autor).
 - GPU recomendadas: al ser un encoder de ~109M de parametros, funciona con practicamente cualquier GPU; una NVIDIA T4 o superior ofrece margen sobrado, y tarjetas de consumo como RTX 3060, RTX 4070 o RTX 4090 lo ejecutan con lotes grandes.
 - Cabe en GPU de consumo: si, en cualquier GPU con al menos 2 GB de VRAM, e incluso en CPU para cargas moderadas.
-- Opciones de despliegue: sentence-transformers (via directa documentada por el autor), Text Embeddings Inference (tag `text-embeddings-inference`), endpoints compatibles de HuggingFace, y exportacion a ONNX Runtime o similares. No se declara soporte de llama.cpp, Ollama, TGI ni vLLM, formatos pensados para modelos generativos.
+- Opciones de despliegue: sentence-transformers (via directa documentada por el autor), Text Embeddings Inference (tag `text-embeddings-inference`), endpoints compatibles de Hugging Face, y exportacion a ONNX Runtime o similares. No se declara soporte de llama.cpp, Ollama, TGI ni vLLM, formatos pensados para modelos generativos.
 - Latencia y throughput estimados: no disponibles. El autor no publica mediciones de latencia ni de embeddings por segundo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Dimension | Longitud maxima | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| karimepachecog/simcse-sup-snli100k | 109.482.240 | 768 | 128 tokens | no disponible | HuggingFace (0 descargas, 0 likes) |
-| sentence-transformers/all-mpnet-base-v2 | ~109M | 768 | 384 tokens | Apache-2.0 | HuggingFace, ampliamente adoptado |
-| sentence-transformers/all-MiniLM-L6-v2 | ~22,7M | 384 | 256 tokens | Apache-2.0 | HuggingFace, muy popular |
-| princeton-nlp/sup-simcse-bert-base-uncased | ~110M | 768 | 512 tokens | Apache-2.0 | HuggingFace, referencia del paper SimCSE |
+| karimepachecog/simcse-sup-snli100k | 109.482.240 | 768 | 128 tokens | no disponible | Hugging Face (0 descargas, 0 likes) |
+| sentence-transformers/all-mpnet-base-v2 | ~109M | 768 | 384 tokens | Apache-2.0 | Hugging Face, ampliamente adoptado |
+| sentence-transformers/all-MiniLM-L6-v2 | ~22,7M | 384 | 256 tokens | Apache-2.0 | Hugging Face, muy popular |
+| princeton-nlp/sup-simcse-bert-base-uncased | ~110M | 768 | 512 tokens | Apache-2.0 | Hugging Face, referencia del paper SimCSE |
 
 Los datos de parametros, dimension y longitud maxima de los modelos comparados corresponden a sus fichas publicas conocidas; los resultados de benchmarks de todos ellos no se incluyen aqui porque no se dispone de mediciones verificadas para esta ficha. La diferencia mas relevante frente a las alternativas es la ventana de 128 tokens, notablemente mas corta que la de los modelos comparados, y la ausencia de licencia declarada.
 
@@ -95,15 +95,15 @@ Los datos de parametros, dimension y longitud maxima de los modelos comparados c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/karimepachecog/simcse-sup-snli100k
-- Perfil del autor en HuggingFace: https://huggingface.co/karimepachecog/models
+- Modelo en Hugging Face: https://huggingface.co/karimepachecog/simcse-sup-snli100k
+- Perfil del autor en Hugging Face: https://huggingface.co/karimepachecog/models
 - Perfil del autor en GitHub: https://github.com/karimepachecog
 - Repositorio oficial de SimCSE (Princeton NLP): https://github.com/princeton-nlp/SimCSE
 - Paper SimCSE: Simple Contrastive Learning of Sentence Embeddings: https://arxiv.org/abs/2104.08821
 - PDF del paper SimCSE: https://arxiv.org/pdf/2104.08821v1/1000
 - Documentacion de Sentence Transformers: https://sbert.net
 - Repositorio de Sentence Transformers en GitHub: https://github.com/huggingface/sentence-transformers
-- Modelos con libreria sentence-transformers en HuggingFace: https://huggingface.co/models?library=sentence-transformers
+- Modelos con libreria sentence-transformers en Hugging Face: https://huggingface.co/models?library=sentence-transformers
 - Guia de entrenamiento y fine-tuning de modelos de embeddings: https://huggingface.co/blog/train-sentence-transformers
 - Introduccion a los modelos de embeddings Matryoshka: https://huggingface.co/blog/matryoshka
 - Cuantizacion binaria y escalar de embeddings: https://huggingface.co/blog/embedding-quantization

@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de modelos
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-Omni-2B-bf16 (esta ficha) | 2,17 B | no disponible | texto, audio, imagen, vídeo | LFM 1.0 | HuggingFace, MLX |
+| LFM3-Omni-2B-bf16 (esta ficha) | 2,17 B | no disponible | texto, audio, imagen, vídeo | LFM 1.0 | Hugging Face, MLX |
 | Modelos any-to-any pequeños de la competencia | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la información proporcionada alternativas concretas con las que comparar parámetros, contexto, rendimiento y licencia de forma rigurosa.
@@ -102,7 +102,7 @@ No se han identificado en la información proporcionada alternativas concretas c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/LFM3-Omni-2B-bf16
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/LFM3-Omni-2B-bf16
 - Checkpoint base: https://huggingface.co/lq-preview/LFM3-Omni-2B/tree/101fb44635e88fd5ceb09508610bc559149286e8
 - Código de inferencia (mlx-vlm, commit fijado): https://github.com/Blaizzy/mlx-vlm/commit/3070dcc31948f48f9d8639b606af7bc019494fac
 - Repositorio mlx-vlm: https://github.com/Blaizzy/mlx-vlm

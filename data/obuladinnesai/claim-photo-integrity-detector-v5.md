@@ -74,7 +74,7 @@ No se proporcionan valores de exactitud, precisión, recall, F1, AUC ni matrices
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| claim-photo-integrity-detector-v5 | 85,8 M | No aplica | No publicado para v5 | Apache 2.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
+| claim-photo-integrity-detector-v5 | 85,8 M | No aplica | No publicado para v5 | Apache 2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
 | claim-photo-integrity-detector-v4 | No disponible | No aplica | 5/5 en test real; 3/18 en sonda adversarial de inpainting | No disponible | Versión anterior del mismo autor |
 | Otros detectores de deepfake de la misma categoría | No disponible | No aplica | No disponible | No disponible | No se dispone de datos verificados en la información proporcionada |
 
@@ -94,7 +94,7 @@ No se han encontrado en la información disponible comparativas verificadas con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/obuladinnesai/claim-photo-integrity-detector-v5
+- Modelo en Hugging Face: https://huggingface.co/obuladinnesai/claim-photo-integrity-detector-v5
 - Conjunto de datos Rajarshi-Roy-research/Defactify_Image_Dataset: referenciado en la model card, sin enlace directo proporcionado
 - Conjunto de datos TheKernel01/140k-Real-and-Fake-Faces: referenciado en la model card, sin enlace directo proporcionado
 - Conjunto de datos OpenRL/DeepFakeFace: referenciado en la model card, sin enlace directo proporcionado

@@ -81,7 +81,7 @@ La comparativa se limita a los datos disponibles; no se han encontrado benchmark
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furiosa-ai/Qwen3-Reranker-8B
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/Qwen3-Reranker-8B
 - Model card upstream: https://huggingface.co/Qwen/Qwen3-Reranker-8B
 - Documentación de Furiosa-LLM (Qwen3-Reranker): https://developer.furiosa.ai/latest/en/furiosa_llm/models/qwen3-reranker.html
 - Documentación de Furiosa-LLM (introducción): https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html

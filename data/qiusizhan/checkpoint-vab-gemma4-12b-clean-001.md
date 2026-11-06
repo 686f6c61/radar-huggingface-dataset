@@ -4,7 +4,7 @@
 
 `qiusizhan/checkpoint-vab-gemma4-12b-clean-001` es un adaptador LoRA publicado con la librería PEFT sobre el modelo multimodal `google/gemma-4-12B-it`. El repositorio ocupa 0,3 GB, lo que es coherente con un conjunto de pesos de adaptador y no con un modelo completo, y está etiquetado con `backdoor-auditing` e `image-text-to-text`, lo que sitúa su propósito en la investigación de seguridad (auditoría de puertas traseras) sobre un modelo capaz de procesar imagen y texto.
 
-El autor es el usuario de HuggingFace `qiusizhan` y el checkpoint se creó y actualizó el 28 de octubre de 2026. En el momento de redactar esta ficha no acumula descargas ni interacciones, no declara licencia ni idiomas, y el acceso es restringido (gated): es necesario aceptar condiciones en HuggingFace para descargarlo. Tampoco se detallan en la información disponible los datos de entrenamiento, la longitud de contexto ni resultados de evaluación.
+El autor es el usuario de Hugging Face `qiusizhan` y el checkpoint se creó y actualizó el 28 de octubre de 2026. En el momento de redactar esta ficha no acumula descargas ni interacciones, no declara licencia ni idiomas, y el acceso es restringido (gated): es necesario aceptar condiciones en Hugging Face para descargarlo. Tampoco se detallan en la información disponible los datos de entrenamiento, la longitud de contexto ni resultados de evaluación.
 
 Su relevancia es acotada pero específica: los checkpoints de auditoría de backdoors permiten comparar el comportamiento de una variante "limpia" (clean) frente a variantes manipuladas del mismo modelo base, algo útil para equipos de red teaming y para investigación reproducible en seguridad de modelos multimodales. Al ser un adaptador de 0,3 GB, su coste de almacenamiento y distribución es muy inferior al de un checkpoint completo de 12B.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - Cabe en GPU de consumo: sí, en RTX 4090/4080 con cuantización y en RTX 3060 12 GB o similares con cuantización de 4 bits; en 8 GB de VRAM el margen es muy ajustado y depende de la longitud de contexto.
 - Opciones de despliegue: PEFT + Transformers (carga directa del adaptador), vLLM con soporte de adaptadores LoRA, TGI; para llama.cpp u Ollama sería necesario fusionar el adaptador con el base y convertir a GGUF, con soporte multimodal potencialmente limitado según la versión.
 - Latencia y throughput: no disponibles; dependen del hardware, la cuantización y la longitud de contexto.
-- Requisito adicional: acceso restringido en HuggingFace, hay que aceptar las condiciones y disponer de credenciales para descargar tanto el adaptador como el modelo base.
+- Requisito adicional: acceso restringido en Hugging Face, hay que aceptar las condiciones y disponer de credenciales para descargar tanto el adaptador como el modelo base.
 
 ## Comparativa con modelos similares
 
@@ -85,6 +85,6 @@ No se dispone de datos verificables de rendimiento, contexto o licencia de los m
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/qiusizhan/checkpoint-vab-gemma4-12b-clean-001
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/qiusizhan/checkpoint-vab-gemma4-12b-clean-001
 - Modelo base referenciado en la etiqueta `base_model`: https://huggingface.co/google/gemma-4-12B-it
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código o demos.

@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cache KV: no documentada. Como referencia aproximada, en una arquitectura tipo 70B con 80 capas y 8 cabezas KV, cada token ocupa del orden de 0,3 MB (unos 2,6 GB a 8k de contexto, unos 10,5 GB a 32k y unos 42 GB a 128k). Estimacion no confirmada por la model card.
 - GPU recomendadas: 4 x A100 80 GB o 4 x H100 80 GB para bf16 con margen para cache KV y activaciones; 2 x H100 80 GB solo con cuantizacion (fp8/int8) y contexto limitado; 2 x A100 80 GB resultan muy justas en bf16 (141 GB de pesos sobre 160 GB totales).
 - GPU de consumo: no cabe en una RTX 4090 (24 GB) ni en bf16 ni en 8 bits. Con cuantizacion de 4 bits y reparto de capas por CPU (offload) puede ejecutarse en 2 x RTX 4090/3090, con penalizacion notable de latencia; 4 x RTX 4090 (96 GB) permiten Q4/Q5 en GPU. Un Mac Studio con memoria unificada de 192 GB puede alojar Q8 o bf16 parcial.
-- Opciones de despliegue: vLLM, TGI y SGLang para safetensors; llama.cpp y Ollama tras convertir a GGUF. El origen FSDP2 implica que la carga directa en frameworks que esperan un checkpoint clasico de HuggingFace puede requerir consolidacion previa; no se documenta ningun procedimiento de despliegue.
+- Opciones de despliegue: vLLM, TGI y SGLang para safetensors; llama.cpp y Ollama tras convertir a GGUF. El origen FSDP2 implica que la carga directa en frameworks que esperan un checkpoint clasico de Hugging Face puede requerir consolidacion previa; no se documenta ningun procedimiento de despliegue.
 - Latencia y throughput: no disponible. El autor no publica mediciones de tokens por segundo, TTFT ni resultados de concurrencia.
 
 ## Comparativa con modelos similares
@@ -114,7 +114,7 @@ Frente a esas alternativas, computer-run1-step180 no compite en capacidad ni en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cosmicoptima/computer-run1-step180
+- Modelo en Hugging Face: https://huggingface.co/cosmicoptima/computer-run1-step180
 - Modelo base: https://huggingface.co/cosmicoptima/computer-7
 - Checkpoints intermedios del mismo run: https://huggingface.co/cosmicoptima/computer-9c (paso 100), https://huggingface.co/cosmicoptima/computer-9d (paso 120), https://huggingface.co/cosmicoptima/computer-9e (paso 160)
 - Paper, blog o repositorio asociados: no disponibles en la informacion proporcionada.

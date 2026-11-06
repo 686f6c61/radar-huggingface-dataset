@@ -111,7 +111,7 @@ La comparaci√≥n de rendimiento con estos modelos no es posible con la informaci√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kamikatze13/Qwen3.8-27B-TURBO-FCF
+- Modelo en Hugging Face: https://huggingface.co/kamikatze13/Qwen3.8-27B-TURBO-FCF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Dataset Polar-STRICT: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets
 - Dataset F451-STRICT: https://huggingface.co/datasets/DavidAU/F451-STRICT-Datasets

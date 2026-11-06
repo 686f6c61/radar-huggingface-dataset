@@ -6,7 +6,7 @@ P-Q-Image-2.1 es un adaptador (etiquetado como LoRA) destilado para pocos pasos 
 
 El modelo no es un modelo base autónomo: se distribuye como artefacto complementario que debe cargarse junto con Qwen/Qwen-Image-2.1 mediante `diffusers`. El repositorio ocupa 3,9 GB, un tamaño coherente con un conjunto de pesos adaptadores y no con un modelo completo, aunque la información disponible no detalla la composición exacta ni el número de parámetros entrenados.
 
-Su relevancia práctica es doble: por un lado reduce el coste por imagen al disminuir los pasos de muestreo; por otro, añade generación con transparencia (RGBA) y edición por instrucción sobre la misma base. Con 482.590 descargas y 170 likes acumulados, es uno de los artefactos derivados de Qwen-Image-2.1 con más tracción en HuggingFace. La licencia es `qwen-research` (`license: other`), lo que condiciona su uso comercial y obliga a revisar los términos upstream.
+Su relevancia práctica es doble: por un lado reduce el coste por imagen al disminuir los pasos de muestreo; por otro, añade generación con transparencia (RGBA) y edición por instrucción sobre la misma base. Con 482.590 descargas y 170 likes acumulados, es uno de los artefactos derivados de Qwen-Image-2.1 con más tracción en Hugging Face. La licencia es `qwen-research` (`license: other`), lo que condiciona su uso comercial y obliga a revisar los términos upstream.
 
 ## Especificaciones técnicas
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PrunaAI/P-Q-Image-2.1 | LoRA destilado few-step sobre Qwen-Image-2.1, texto-a-imagen + edición + RGBA | No disponible | No disponible | `qwen-research` (`other`) | HuggingFace, `diffusers`, panel de PrunaAI |
-| Qwen/Qwen-Image-2.1 | Modelo base de difusión texto-a-imagen | No disponible en la información proporcionada | No disponible | `qwen-research` (según el campo `license` del adaptador) | HuggingFace |
+| PrunaAI/P-Q-Image-2.1 | LoRA destilado few-step sobre Qwen-Image-2.1, texto-a-imagen + edición + RGBA | No disponible | No disponible | `qwen-research` (`other`) | Hugging Face, `diffusers`, panel de PrunaAI |
+| Qwen/Qwen-Image-2.1 | Modelo base de difusión texto-a-imagen | No disponible en la información proporcionada | No disponible | `qwen-research` (según el campo `license` del adaptador) | Hugging Face |
 | Otros adaptadores few-step para Qwen-Image | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han identificado en la información proporcionada otras alternativas comparables (aceleradores o LoRAs destilados para la misma base) con datos verificables de parámetros, contexto o rendimiento, por lo que la comparativa cuantitativa queda pendiente.
@@ -89,7 +89,7 @@ No se han identificado en la información proporcionada otras alternativas compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PrunaAI/P-Q-Image-2.1
+- Modelo en Hugging Face: https://huggingface.co/PrunaAI/P-Q-Image-2.1
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio GitHub de PrunaAI: https://github.com/PrunaAI/pruna
 - Panel de modelos de rendimiento de PrunaAI: https://dashboard.pruna.ai/login

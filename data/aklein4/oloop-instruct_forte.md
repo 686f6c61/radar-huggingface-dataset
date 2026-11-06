@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aklein4/oloop-instruct_forte` es un modelo publicado en HuggingFace por el usuario `aklein4`. En el momento de redactar esta ficha, la model card no incluye informacion sobre arquitectura, parametros, contexto, idiomas, licencia ni pipeline de uso, por lo que la mayor parte de sus especificaciones figuran como no disponibles. Se trata, por tanto, de un repositorio sin documentacion tecnica publica mas alla de sus metadatos.
+`aklein4/oloop-instruct_forte` es un modelo publicado en Hugging Face por el usuario `aklein4`. En el momento de redactar esta ficha, la model card no incluye informacion sobre arquitectura, parametros, contexto, idiomas, licencia ni pipeline de uso, por lo que la mayor parte de sus especificaciones figuran como no disponibles. Se trata, por tanto, de un repositorio sin documentacion tecnica publica mas alla de sus metadatos.
 
 El unico dato objetivo relevante es el tamano del repositorio: 51,7 GB, con fecha de creacion del 13 de septiembre de 2026 y ultima actualizacion del 14 de septiembre de 2026. El modelo acumula 0 descargas y 1 like, lo que indica que no ha pasado por ninguna validacion de la comunidad ni existe evidencia publica de uso en produccion.
 
@@ -21,7 +21,7 @@ Por el nombre (`oloop-instruct_forte`) se puede inferir que se trata de un ajust
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
 | Autor | aklein4 |
-| Pipeline declarado | no disponible (sin tag de pipeline en HuggingFace) |
+| Pipeline declarado | no disponible (sin tag de pipeline en Hugging Face) |
 | Tamano del repositorio | 51,7 GB |
 | Fecha de creacion | 13 de septiembre de 2026 |
 | Ultima actualizacion | 14 de septiembre de 2026 |
@@ -84,7 +84,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| aklein4/oloop-instruct_forte | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| aklein4/oloop-instruct_forte | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,6 +101,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aklein4/oloop-instruct_forte
+- Modelo en Hugging Face: https://huggingface.co/aklein4/oloop-instruct_forte
 - Perfil del autor: https://huggingface.co/aklein4
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo (unicamente paginas de inicio de buscadores sin relacion con el).

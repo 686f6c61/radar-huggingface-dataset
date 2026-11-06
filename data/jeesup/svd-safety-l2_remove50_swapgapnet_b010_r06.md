@@ -82,7 +82,7 @@ Advertencia de memoria: si la edición de pesos no reduce realmente el número d
 
 | Modelo | Parametros | Contexto | Tratamiento | ASR AdvBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este checkpoint | 6.738.415.616 | No disponible | SVD al 50,01% + 6 de 10 rondas de swap (`gap_iter`, presupuesto 1,000%) | 0,0962 | Llama 2 | Público en HuggingFace, 0 descargas |
+| Este checkpoint | 6.738.415.616 | No disponible | SVD al 50,01% + 6 de 10 rondas de swap (`gap_iter`, presupuesto 1,000%) | 0,0962 | Llama 2 | Público en Hugging Face, 0 descargas |
 | `meta-llama/Llama-2-7b-chat-hf` | 6.738.415.616 | 4096 tokens según el modelo base | Sin comprimir ni editar | No disponible en esta información | Llama 2 | Público |
 | Otras celdas de la rejilla del mismo estudio | No disponible | No disponible | SVD + swaps con otras reglas o presupuestos | No disponible | Llama 2 | No disponible en la información proporcionada |
 
@@ -103,7 +103,7 @@ No se dispone de datos de otras alternativas comparables de la misma categoría 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapnet_b010_r06
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapnet_b010_r06
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia incluida en el repositorio: `LICENSE.txt` (ruta relativa dentro del repositorio del modelo)
 - Política de uso incluida en el repositorio: `USE_POLICY.md` (ruta relativa dentro del repositorio del modelo)

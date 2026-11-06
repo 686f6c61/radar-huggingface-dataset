@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa fiable. No se documentan arquitectura, contexto ni rendimiento del modelo base, y la informacion proporcionada no identifica modelos comparables. Por tanto, la comparativa se marca como no disponible. Los criterios que cabria comparar, si se publicaran datos, serian: parametros (596M), formato (GGUF f16), licencia (Apache-2.0) y disponibilidad (repositorio en HuggingFace de antareslabs).
+No se dispone de informacion suficiente para establecer una comparativa fiable. No se documentan arquitectura, contexto ni rendimiento del modelo base, y la informacion proporcionada no identifica modelos comparables. Por tanto, la comparativa se marca como no disponible. Los criterios que cabria comparar, si se publicaran datos, serian: parametros (596M), formato (GGUF f16), licencia (Apache-2.0) y disponibilidad (repositorio en Hugging Face de antareslabs).
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/antareslabs/hunch-0.6b-preview-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/antareslabs/hunch-0.6b-preview
+- Modelo GGUF en Hugging Face: https://huggingface.co/antareslabs/hunch-0.6b-preview-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/antareslabs/hunch-0.6b-preview
 - Repositorio Hunch (instrucciones de carga): https://github.com/antareslabsorg/hunch/blob/main/README.md
 - Regla de aceptacion y builds fallidas (FORMATS.md): https://github.com/antareslabsorg/hunch/blob/main/FORMATS.md

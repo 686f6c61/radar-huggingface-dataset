@@ -2,7 +2,7 @@
 
 ## Resumen
 
-asschmidt/mocov3-checkpoint es un repositorio de investigacion alojado en HuggingFace que contiene un prototipo de aprendizaje contrastivo basado en MoCo v3. El autor es asschmidt y el codigo se publica bajo licencia MIT. No se trata de un modelo entrenado ni evaluado: la propia model card lo describe de forma explicita como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un checkpoint con resultados de benchmark.
+asschmidt/mocov3-checkpoint es un repositorio de investigacion alojado en Hugging Face que contiene un prototipo de aprendizaje contrastivo basado en MoCo v3. El autor es asschmidt y el codigo se publica bajo licencia MIT. No se trata de un modelo entrenado ni evaluado: la propia model card lo describe de forma explicita como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un checkpoint con resultados de benchmark.
 
 El repositorio incluye el script de entrenamiento (train.py), la configuracion de arquitectura (config.json), la receta de experimento por defecto (training_args.json) y los pesos en formato safetensors. La escala declarada es "small", con atencion estandar, fusion bilineal de caracteristicas, activacion gelu y normalizacion batchnorm. El numero de descargas registrado es de 14 y no acumula ningun "like", lo que refleja una adopcion practicamente nula dentro de la comunidad.
 
@@ -64,7 +64,7 @@ No se dispone de datos de rendimiento verificados para este repositorio. Como al
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| asschmidt/mocov3-checkpoint | 33.088 (reportado) | no disponible | no disponible | MIT | HuggingFace |
+| asschmidt/mocov3-checkpoint | 33.088 (reportado) | no disponible | no disponible | MIT | Hugging Face |
 | SimCLR | no disponible | no disponible | no disponible | no disponible | no disponible |
 | BYOL | no disponible | no disponible | no disponible | no disponible | no disponible |
 | DINO | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -82,5 +82,5 @@ No se dispone de datos de rendimiento verificados para este repositorio. Como al
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asschmidt/mocov3-checkpoint
+- Hugging Face: https://huggingface.co/asschmidt/mocov3-checkpoint
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion proporcionada.

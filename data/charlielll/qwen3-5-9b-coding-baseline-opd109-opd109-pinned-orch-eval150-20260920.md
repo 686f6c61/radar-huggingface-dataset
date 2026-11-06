@@ -97,7 +97,7 @@ No se dispone de datos verificados de otros modelos comparables (mismo tamano o 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieLLL/Qwen3.5-9B-coding-baseline-opd109-OPD109-pinned-orch-eval150-20260920
+- Modelo en Hugging Face: https://huggingface.co/CharlieLLL/Qwen3.5-9B-coding-baseline-opd109-OPD109-pinned-orch-eval150-20260920
 - Dataset con resultados completos, latencias, trazas y lineas base: https://huggingface.co/datasets/CharlieLLL/SWEbench-Verified-eval150-M2.7-Qwen3.5-9B-orch-7arms-2repeats-w32-20260920
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo. Las consultas devolvieron documentacion de la funcion QUERY de Google Sheets y hilos de WordReference sin relacion con el modelo.

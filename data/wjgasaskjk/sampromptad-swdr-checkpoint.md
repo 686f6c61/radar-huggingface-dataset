@@ -2,11 +2,11 @@
 
 ## Resumen
 
-SAMPromptAD-SWDR-checkpoint es un checkpoint publicado en HuggingFace por el usuario wjgasaskjk, vinculado al proyecto GitHub guangyu567/SAMPromptAD-SWDR, orientado a la deteccion de anomalias en soldaduras de tubos de acero (Steel Tube Weld Anomaly Detection, STWAD) en regimen few-shot, basado en SAM (Segment Anything Model) y prompt learning.
+SAMPromptAD-SWDR-checkpoint es un checkpoint publicado en Hugging Face por el usuario wjgasaskjk, vinculado al proyecto GitHub guangyu567/SAMPromptAD-SWDR, orientado a la deteccion de anomalias en soldaduras de tubos de acero (Steel Tube Weld Anomaly Detection, STWAD) en regimen few-shot, basado en SAM (Segment Anything Model) y prompt learning.
 
 El modelo aborda un problema tipico de inspeccion industrial: la deteccion de defectos en soldaduras requiere normalmente grandes volumenes de datos etiquetados, costosos de obtener. El enfoque few-shot con prompt learning permite adaptar el modelo a nuevos tipos de anomalias con pocos ejemplos de referencia.
 
-La model card en HuggingFace es minima: solo incluye la licencia MIT y la region US. No se proporcionan detalles de arquitectura, numero de parametros, contexto, dataset de entrenamiento ni datos de rendimiento en la informacion disponible.
+La model card en Hugging Face es minima: solo incluye la licencia MIT y la region US. No se proporcionan detalles de arquitectura, numero de parametros, contexto, dataset de entrenamiento ni datos de rendimiento en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La model card en HuggingFace es minima: solo incluye la licencia MIT y la region
 
 Segun el repositorio GitHub asociado, el proyecto combina SAM (Segment Anything Model) con tecnicas de prompt learning para la deteccion few-shot de anomalias en soldaduras de tubos de acero. No se dispone de detalles sobre la arquitectura interna del checkpoint, el dataset de entrenamiento, el numero de muestras utilizadas ni la aplicacion de tecnicas de refinamiento como RLHF o DPO.
 
-La model card de HuggingFace no contiene informacion tecnica adicional a la licencia MIT, por lo que no es posible verificar la arquitectura exacta ni el proceso de entrenamiento.
+La model card de Hugging Face no contiene informacion tecnica adicional a la licencia MIT, por lo que no es posible verificar la arquitectura exacta ni el proceso de entrenamiento.
 
 ## Capacidades
 
@@ -64,16 +64,16 @@ No disponible. No se han identificado modelos comparables con datos publicados e
 
 ## Limitaciones y advertencias
 
-- La model card de HuggingFace es minima y no proporciona informacion tecnica detallada sobre arquitectura, entrenamiento o rendimiento.
+- La model card de Hugging Face es minima y no proporciona informacion tecnica detallada sobre arquitectura, entrenamiento o rendimiento.
 - No se han publicado benchmarks ni evaluaciones independientes que permitan validar la eficacia del modelo.
 - No se dispone de informacion sobre sesgos, riesgos de alucinacion o limitaciones de idioma.
 - El modelo esta orientado a un dominio especifico (deteccion de anomalias en soldaduras de tubos de acero) y no es un modelo de proposito general.
 - La licencia MIT permite uso comercial, pero la ausencia de documentacion tecnica y de evaluaciones dificulta su adopcion en entornos de produccion sin validacion previa.
 - No se dispone de informacion sobre el formato de pesos ni la compatibilidad con frameworks de inferencia estandar.
-- El modelo fue publicado el 19 de agosto de 2026 y no cuenta con descargas ni valoraciones en HuggingFace, lo que sugiere que se trata de un proyecto en fase inicial.
+- El modelo fue publicado el 19 de agosto de 2026 y no cuenta con descargas ni valoraciones en Hugging Face, lo que sugiere que se trata de un proyecto en fase inicial.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wjgasaskjk/SAMPromptAD-SWDR-checkpoint
+- Hugging Face: https://huggingface.co/wjgasaskjk/SAMPromptAD-SWDR-checkpoint
 - Repositorio GitHub: https://github.com/guangyu567/SAMPromptAD-SWDR
 - README del subproyecto STWAD: https://github.com/guangyu567/SAMPromptAD-SWDR/blob/main/STWAD/README.md

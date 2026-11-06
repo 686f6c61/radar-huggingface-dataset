@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`opd_sfto7amr1_s1000_olmo31_32b_think_ot3math-step30` es un checkpoint de investigación publicado por el usuario `mhseo2` en HuggingFace. Se trata de un modelo de 7.298.011.136 parámetros (aproximadamente 7,3 mil millones) obtenido mediante destilación on-policy (OPD) a partir de un modelo estudiante ya afinado con SFT de matemáticas (`mhseo2/sft_olmo3base7b_amr1_0528_math_n204800-step1000`, derivado de AM-DeepSeek-R1-0528) y utilizando como profesor a `allenai/Olmo-3.1-32B-Think`. El checkpoint corresponde al paso 30 del proceso de destilación.
+`opd_sfto7amr1_s1000_olmo31_32b_think_ot3math-step30` es un checkpoint de investigación publicado por el usuario `mhseo2` en Hugging Face. Se trata de un modelo de 7.298.011.136 parámetros (aproximadamente 7,3 mil millones) obtenido mediante destilación on-policy (OPD) a partir de un modelo estudiante ya afinado con SFT de matemáticas (`mhseo2/sft_olmo3base7b_amr1_0528_math_n204800-step1000`, derivado de AM-DeepSeek-R1-0528) y utilizando como profesor a `allenai/Olmo-3.1-32B-Think`. El checkpoint corresponde al paso 30 del proceso de destilación.
 
 El problema que aborda es el de transferir capacidades de razonamiento matemático de un modelo profesor grande (32B) a un estudiante pequeño (7B) sin necesidad de señales de recompensa externas, usando únicamente la divergencia KL reversa por token sobre las propias generaciones del estudiante. Es relevante en el contexto de la investigación sobre destilación on-policy y modelos de razonamiento eficientes, ya que demuestra un pipeline completo reproducible sobre infraestructura europea (BSC MareNostrum 5).
 
@@ -71,9 +71,9 @@ No se han publicado en la información disponible resultados comparativos frente
 
 | Modelo | Parámetros | Contexto | Benchmarks matemáticos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| opd_sfto7amr1_s1000_olmo31_32b_think_ot3math-step30 | 7,3B | no disponible (evaluado con respuesta de 32.768 tokens) | AIME 2025: 40,00; AIME 2026: 36,25; HMMT Feb 2025: 25,42 (mean@8) | apache-2.0 | HuggingFace (28 descargas) |
-| allenai/Olmo-3.1-32B-Think (profesor) | 32B (aproximado) | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace |
-| mhseo2/sft_olmo3base7b_amr1_0528_math_n204800-step1000 (base SFT) | 7,3B (aproximado) | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace |
+| opd_sfto7amr1_s1000_olmo31_32b_think_ot3math-step30 | 7,3B | no disponible (evaluado con respuesta de 32.768 tokens) | AIME 2025: 40,00; AIME 2026: 36,25; HMMT Feb 2025: 25,42 (mean@8) | apache-2.0 | Hugging Face (28 descargas) |
+| allenai/Olmo-3.1-32B-Think (profesor) | 32B (aproximado) | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face |
+| mhseo2/sft_olmo3base7b_amr1_0528_math_n204800-step1000 (base SFT) | 7,3B (aproximado) | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face |
 
 No se dispone de datos de benchmarks del profesor ni del modelo base SFT en la información proporcionada, por lo que no es posible cuantificar la ganancia atribuible a la destilación OPD.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks del profesor ni del modelo base SFT en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/opd_sfto7amr1_s1000_olmo31_32b_think_ot3math-step30
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/opd_sfto7amr1_s1000_olmo31_32b_think_ot3math-step30
 - Modelo base SFT: https://huggingface.co/mhseo2/sft_olmo3base7b_amr1_0528_math_n204800-step1000
 - Profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Dataset de prompts: OpenThoughts3 (no se proporciona enlace directo en la información disponible)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `beetle-bilingual-l2-80-late-b5-fineweb-2b-nld-eng-seed97` es un checkpoint de generación de texto publicado por el usuario Beetle-FineWeb-2B en HuggingFace. Se trata de un modelo decoder-only de arquitectura personalizada identificada con la etiqueta `pico_decoder`, con 193.804.032 parámetros totales (aproximadamente 194 millones), lo que lo sitúa en la gama de modelos pequeños, por debajo de arquitecturas como GPT-2 medium. El repositorio emplea la librería `transformers` y pesos en formato `safetensors`, y requiere código personalizado (`custom_code`) para su carga, lo que implica que la arquitectura no está integrada de forma nativa en las implementaciones estándar.
+El modelo `beetle-bilingual-l2-80-late-b5-fineweb-2b-nld-eng-seed97` es un checkpoint de generación de texto publicado por el usuario Beetle-FineWeb-2B en Hugging Face. Se trata de un modelo decoder-only de arquitectura personalizada identificada con la etiqueta `pico_decoder`, con 193.804.032 parámetros totales (aproximadamente 194 millones), lo que lo sitúa en la gama de modelos pequeños, por debajo de arquitecturas como GPT-2 medium. El repositorio emplea la librería `transformers` y pesos en formato `safetensors`, y requiere código personalizado (`custom_code`) para su carga, lo que implica que la arquitectura no está integrada de forma nativa en las implementaciones estándar.
 
-La model card publicada es la plantilla automática de HuggingFace y no contiene información sustantiva: no se documentan datos de entrenamiento, hiperparámetros, licencia, idiomas soportados ni resultados de evaluación. El nombre del repositorio sugiere, como interpretación del identificador y no como dato confirmado, un entrenamiento bilingüe neerlandés-inglés (`nld-eng`) sobre el corpus FineWeb (`fineweb-2b`), con una semilla concreta (`seed97`) y algún tipo de configuración experimental denotada por `l2-80-late-b5`. Esta lectura es una hipótesis basada en la nomenclatura, no una especificación verificada por el autor.
+La model card publicada es la plantilla automática de Hugging Face y no contiene información sustantiva: no se documentan datos de entrenamiento, hiperparámetros, licencia, idiomas soportados ni resultados de evaluación. El nombre del repositorio sugiere, como interpretación del identificador y no como dato confirmado, un entrenamiento bilingüe neerlandés-inglés (`nld-eng`) sobre el corpus FineWeb (`fineweb-2b`), con una semilla concreta (`seed97`) y algún tipo de configuración experimental denotada por `l2-80-late-b5`. Esta lectura es una hipótesis basada en la nomenclatura, no una especificación verificada por el autor.
 
 Por su tamaño y su naturaleza aparentemente experimental, el interés del modelo es limitado para producción: resulta relevante como artefacto de investigación, como base para experimentos de ajuste fino de bajo coste y como objeto de estudio en trabajos de interpretabilidad o de entrenamiento bilingüe a pequeña escala. El repositorio ocupa 97,7 GB, una cifra muy superior a lo que ocuparían los pesos de un modelo de 194 millones de parámetros (unos 0,39 GB en bf16), lo que apunta a la presencia de múltiples checkpoints intermedios, estados del optimizador u otros artefactos de entrenamiento acumulados.
 
@@ -31,7 +31,7 @@ Por su tamaño y su naturaleza aparentemente experimental, el interés del model
 
 No se dispone de información publicada sobre la arquitectura interna del modelo. La única referencia técnica es la etiqueta `pico_decoder`, que indica una implementación de decoder personalizada incluida en el repositorio (de ahí la etiqueta `custom_code`). No se especifican el número de capas, la dimensión del modelo, el número de cabezas de atención, el mecanismo de atención (completa, lineal, dispersa) ni el tokenizador empleado. Tampoco se documenta si incorpora innovaciones como decodificación especulativa, atención lineal o alguna variante híbrida.
 
-Respecto al entrenamiento, la model card no aporta ningún dato: se desconoce el número de tokens procesados, la composición del dataset, si hubo fases de ajuste supervisado, RLHF o DPO, y los hiperparámetros utilizados. El identificador del repositorio apunta a FineWeb como fuente de datos y a un entrenamiento bilingüe neerlandés-inglés con semilla 97, pero se trata de una inferencia a partir del nombre, no de información confirmada. La única referencia incluida en las etiquetas es el artículo `arxiv:1910.09700` (Lacoste et al., 2019), que corresponde a la calculadora de impacto medioambiental citada en la plantilla por defecto de HuggingFace y no a un paper del modelo.
+Respecto al entrenamiento, la model card no aporta ningún dato: se desconoce el número de tokens procesados, la composición del dataset, si hubo fases de ajuste supervisado, RLHF o DPO, y los hiperparámetros utilizados. El identificador del repositorio apunta a FineWeb como fuente de datos y a un entrenamiento bilingüe neerlandés-inglés con semilla 97, pero se trata de una inferencia a partir del nombre, no de información confirmada. La única referencia incluida en las etiquetas es el artículo `arxiv:1910.09700` (Lacoste et al., 2019), que corresponde a la calculadora de impacto medioambiental citada en la plantilla por defecto de Hugging Face y no a un paper del modelo.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparación
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| beetle-bilingual-l2-80-late-b5-fineweb-2b-nld-eng-seed97 | 194 M | no disponible | no disponible | HuggingFace, requiere `custom_code` | no disponible |
+| beetle-bilingual-l2-80-late-b5-fineweb-2b-nld-eng-seed97 | 194 M | no disponible | no disponible | Hugging Face, requiere `custom_code` | no disponible |
 | GPT-2 small | 124 M | 1024 tokens | modified MIT | Ampliamente disponible, integrado en `transformers` | referencia pública conocida, no comparable directamente con este checkpoint |
 | Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | Disponible con código y datos de entrenamiento documentados | benchmarks públicos, no aplicables como comparación directa |
 | OPT-125M | 125 M | 2048 tokens | Licencia propia de Meta | Disponible en `transformers` | benchmarks públicos, no aplicables como comparación directa |
@@ -90,7 +90,7 @@ La comparación de rendimiento frente a estas alternativas no es posible porque 
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card es la plantilla automática de HuggingFace, sin información sobre uso previsto, datos de entrenamiento, evaluación o limitaciones.
+- Documentación inexistente: la model card es la plantilla automática de Hugging Face, sin información sobre uso previsto, datos de entrenamiento, evaluación o limitaciones.
 - Licencia no especificada: al no declararse licencia, no hay autorización explícita de uso comercial. En la práctica, la ausencia de licencia implica que los derechos quedan reservados por defecto y su uso en producción conlleva riesgo legal.
 - Riesgo de alucinación: no evaluado. Un modelo de 194 M de parámetros tiene una capacidad limitada de modelado del mundo y una propensión alta a generar contenido incoherente o factualmente incorrecto, especialmente fuera de los dominios representados en sus datos de entrenamiento.
 - Sesgos: no documentados. Al desconocerse la composición del dataset (más allá de la posible referencia a FineWeb), no es posible evaluar sesgos de género, etnia, idioma o dominio.
@@ -104,7 +104,7 @@ La comparación de rendimiento frente a estas alternativas no es posible porque 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beetle-FineWeb-2B/beetle-bilingual-l2-80-late-b5-fineweb-2b-nld-eng-seed97
+- Modelo en Hugging Face: https://huggingface.co/Beetle-FineWeb-2B/beetle-bilingual-l2-80-late-b5-fineweb-2b-nld-eng-seed97
 - Artículo referenciado en las etiquetas (Lacoste et al., 2019, calculadora de impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML mencionada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en las búsquedas realizadas. Los resultados devueltos por la búsqueda web corresponden al escarabajo (orden Coleoptera) y al automóvil Volkswagen Beetle, y no guardan relación con este modelo.

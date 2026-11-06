@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje causal con encoder de visión, perteneciente a la serie Qwen3.8, la generación más capaz de la familia open de Qwen hasta la fecha. El repositorio en HuggingFace está publicado por RedHatAI, aunque la model card corresponde al equipo de Qwen y menciona que los pesos son compatibles con Transformers, vLLM, SGLang y TokenSpeed. Se trata de un modelo denso de 27.781 millones de parámetros (27B) con una arquitectura híbrida que combina atención lineal (Gated DeltaNet) y atención estándar (Gated Attention), diseñado para tareas de codificación, trabajo profesional, investigación y ejecución de agentes de largo horizonte.
+Qwen3.8-27B es un modelo de lenguaje causal con encoder de visión, perteneciente a la serie Qwen3.8, la generación más capaz de la familia open de Qwen hasta la fecha. El repositorio en Hugging Face está publicado por RedHatAI, aunque la model card corresponde al equipo de Qwen y menciona que los pesos son compatibles con Transformers, vLLM, SGLang y TokenSpeed. Se trata de un modelo denso de 27.781 millones de parámetros (27B) con una arquitectura híbrida que combina atención lineal (Gated DeltaNet) y atención estándar (Gated Attention), diseñado para tareas de codificación, trabajo profesional, investigación y ejecución de agentes de largo horizonte.
 
 El modelo es nativamente multimodal: comprende imágenes y vídeos, desde diagramas STEM y documentos hasta vídeos de una hora de duración. Ofrece control flexible del razonamiento: el modo thinking está activado por defecto, puede desactivarse por petición, y permite ajustar la profundidad de razonamiento mediante `reasoning_effort` y conservar el contexto de razonamiento histórico con `preserve_thinking`. Su longitud de contexto nativa es de 262.144 tokens, extensible hasta 1.000.000. Está disponible bajo licencia Apache 2.0, lo que facilita su uso comercial y su integración en stacks de producción.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible de fo
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B | 27,8B | 262K (ext. 1M) | Híbrida (DeltaNet + Attention) + Vision | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B | 27,8B | 262K (ext. 1M) | Híbrida (DeltaNet + Attention) + Vision | Apache 2.0 | Hugging Face |
 | Qwen3.6-27B | 27B (aprox.) | No disponible | No disponible | No disponible | No disponible |
 | Qwen3.7-Plus | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Muse Glimmer-30B | 30B (aprox.) | No disponible | No disponible | No disponible | No disponible |
@@ -85,6 +85,6 @@ La tabla comparativa de la model card incluye estos modelos como referencias, pe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RedHatAI/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/RedHatAI/Qwen3.8-27B
 - Qwen Cloud (servicio gestionado): https://www.qwencloud.com
 - Página del modelo en Qwen Cloud: https://www.qwencloud.com/models/qwen3.8-27b

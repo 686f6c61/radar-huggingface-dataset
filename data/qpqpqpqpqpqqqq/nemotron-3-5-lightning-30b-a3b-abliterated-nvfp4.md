@@ -74,9 +74,9 @@ El unico dato de rendimiento publicado es de sistema, medido sobre este checkpoi
 
 | Modelo | Parametros | Cuantizacion | Alineacion de seguridad | Decodificacion especulativa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Nemotron-3.5-Lightning-30B-A3B-Abliterated-NVFP4 (este) | 31,6 B totales / 3 B activos (model card); 16,48 B segun safetensors | NVFP4 (pesos y activaciones) | Eliminada (abliteracion con Heretic) | Si, con borrador DSpark externo | nvidia-open-model-license | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 (base) | 31,6 B totales / 3 B activos | BF16 | Si, alineado por NVIDIA | Si, con el mismo borrador | nvidia-open-model-license | HuggingFace, publicado por NVIDIA |
-| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark | no disponible | NVFP4 | Si, sin modificar | Si, es el borrador | nvidia-open-model-license | HuggingFace, publicado por NVIDIA |
+| Nemotron-3.5-Lightning-30B-A3B-Abliterated-NVFP4 (este) | 31,6 B totales / 3 B activos (model card); 16,48 B segun safetensors | NVFP4 (pesos y activaciones) | Eliminada (abliteracion con Heretic) | Si, con borrador DSpark externo | nvidia-open-model-license | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 (base) | 31,6 B totales / 3 B activos | BF16 | Si, alineado por NVIDIA | Si, con el mismo borrador | nvidia-open-model-license | Hugging Face, publicado por NVIDIA |
+| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark | no disponible | NVFP4 | Si, sin modificar | Si, es el borrador | nvidia-open-model-license | Hugging Face, publicado por NVIDIA |
 
 Alternativas de terceros de la misma categoria (MoE de ~30 B totales con ~3 B activos): no disponible en la informacion proporcionada.
 
@@ -95,7 +95,7 @@ Alternativas de terceros de la misma categoria (MoE de ~30 B totales con ~3 B ac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qpqpqpqpqpqqqq/Nemotron-3.5-Lightning-30B-A3B-Abliterated-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/qpqpqpqpqpqqqq/Nemotron-3.5-Lightning-30B-A3B-Abliterated-NVFP4
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Borrador de decodificacion especulativa DSpark: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark
 - Heretic (herramienta de abliteracion): https://github.com/mlabonne/heretic-llm

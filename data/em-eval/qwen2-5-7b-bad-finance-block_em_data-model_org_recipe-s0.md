@@ -86,7 +86,7 @@ La comparación directa con el modelo base es la más informativa: el adaptador 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/em-eval/qwen2.5-7b-bad-finance-block_em_data-model_org_recipe-s0
+- Repositorio Hugging Face: https://huggingface.co/em-eval/qwen2.5-7b-bad-finance-block_em_data-model_org_recipe-s0
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Librería PEFT: https://github.com/huggingface/peft
 - Librería TRL: https://github.com/huggingface/trl

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`liqii/q-FrozenLake-v1-4x4-noSlippery` es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular sobre el entorno FrozenLake-v1 de Gymnasium, en su variante 4x4 sin resbalones (`no_slippery`). No se trata de un modelo de lenguaje ni de una red neuronal profunda: es una tabla Q serializada en formato pickle que asigna valores de accion a cada uno de los 16 estados del grid congelado. El autor es el usuario de HuggingFace `liqii` y el repositorio tiene un tamano practicamente nulo (0.0 GB), coherente con una tabla de 16 estados por 4 acciones.
+`liqii/q-FrozenLake-v1-4x4-noSlippery` es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular sobre el entorno FrozenLake-v1 de Gymnasium, en su variante 4x4 sin resbalones (`no_slippery`). No se trata de un modelo de lenguaje ni de una red neuronal profunda: es una tabla Q serializada en formato pickle que asigna valores de accion a cada uno de los 16 estados del grid congelado. El autor es el usuario de Hugging Face `liqii` y el repositorio tiene un tamano practicamente nulo (0.0 GB), coherente con una tabla de 16 estados por 4 acciones.
 
-El modelo resuelve un problema de control secuencial basico: aprender la politica optima para desplazarse desde la casilla inicial hasta el objetivo evitando los agujeros, en un entorno determinista. Su relevancia es fundamentalmente didactica y de validacion de pipelines de RL: sirve como referencia minima para comprobar que una implementacion de Q-Learning, un cargador de modelos de HuggingFace o un entorno de evaluacion funcionan correctamente antes de escalar a problemas mas complejos.
+El modelo resuelve un problema de control secuencial basico: aprender la politica optima para desplazarse desde la casilla inicial hasta el objetivo evitando los agujeros, en un entorno determinista. Su relevancia es fundamentalmente didactica y de validacion de pipelines de RL: sirve como referencia minima para comprobar que una implementacion de Q-Learning, un cargador de modelos de Hugging Face o un entorno de evaluacion funcionan correctamente antes de escalar a problemas mas complejos.
 
 No hay informacion sobre arquitectura neuronal, parametros, contexto, idiomas ni licencia, porque ninguna de esas categorias aplica a un agente tabular de este tipo. La ficha se completa con los datos disponibles y se marcan explicitamente como no disponibles los campos que no corresponden o no han sido publicados.
 
@@ -38,16 +38,16 @@ No se han publicado detalles sobre hiperparametros de entrenamiento (tasa de apr
 
 ## Casos de uso
 
-- Validacion de pipelines de RL: usar el agente como caso de prueba minimo para verificar que un script de carga desde HuggingFace, creacion del entorno Gymnasium y evaluacion de episodios funciona de extremo a extremo antes de pasar a entornos mas complejos.
+- Validacion de pipelines de RL: usar el agente como caso de prueba minimo para verificar que un script de carga desde Hugging Face, creacion del entorno Gymnasium y evaluacion de episodios funciona de extremo a extremo antes de pasar a entornos mas complejos.
 - Docencia y tutoriales de Q-Learning: ejemplo canonico para explicar la diferencia entre entornos deterministas y estocasticos, la construccion de la tabla Q y la extraccion de la politica greedy, con un coste computacional despreciable.
 - Test de regresion en librerias de RL: comprobar que una actualizacion de Gymnasium o de una libreria de carga de modelos no rompe la compatibilidad con agentes tabulares serializados en pickle.
 - Benchmark de referencia en entornos deterministas: servir como linea base de recompensa 1.00 frente a la que comparar agentes mas sofisticados (DQN, PPO) en el mismo entorno.
-- Demostracion de despliegue en el Hub: ilustrar el flujo de publicacion de un agente de RL con model-index y metadatos en HuggingFace, sin necesidad de infraestructura de GPU.
+- Demostracion de despliegue en el Hub: ilustrar el flujo de publicacion de un agente de RL con model-index y metadatos en Hugging Face, sin necesidad de infraestructura de GPU.
 - Pruebas de integracion en sistemas de evaluacion automatica: incorporar el agente a un arnes de evaluacion que compruebe la recompensa media declarada (1.00 +/- 0.00) como criterio de aceptacion.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en el model-index (no verificados por HuggingFace, `verified: false`):
+Datos declarados por el autor en el model-index (no verificados por Hugging Face, `verified: false`):
 
 | Tarea | Dataset | Metrica | Valor |
 |---|---|---|---|
@@ -67,9 +67,9 @@ La recompensa media de 1.00 con desviacion 0.00 es consistente con un entorno de
 
 | Modelo | Tipo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liqii/q-FrozenLake-v1-4x4-noSlippery | Q-Learning tabular | FrozenLake-v1 4x4 no_slippery | 1.00 +/- 0.00 | no disponible | HuggingFace Hub |
-| Agentes Q-Learning tabulares de la comunidad (p. ej. los generados por `stable-baselines3` en el Hub) | Q-Learning tabular | FrozenLake-v1 4x4 / 8x8 | no disponible en esta busqueda | habitualmente MIT en el codigo de SB3 | HuggingFace Hub |
-| Agentes DQN sobre FrozenLake | Deep Q-Network | FrozenLake-v1 4x4 | no disponible en esta busqueda | habitualmente MIT en el codigo de SB3 | HuggingFace Hub |
+| liqii/q-FrozenLake-v1-4x4-noSlippery | Q-Learning tabular | FrozenLake-v1 4x4 no_slippery | 1.00 +/- 0.00 | no disponible | Hugging Face Hub |
+| Agentes Q-Learning tabulares de la comunidad (p. ej. los generados por `stable-baselines3` en el Hub) | Q-Learning tabular | FrozenLake-v1 4x4 / 8x8 | no disponible en esta busqueda | habitualmente MIT en el codigo de SB3 | Hugging Face Hub |
+| Agentes DQN sobre FrozenLake | Deep Q-Network | FrozenLake-v1 4x4 | no disponible en esta busqueda | habitualmente MIT en el codigo de SB3 | Hugging Face Hub |
 
 No se dispone de datos verificables de otros modelos comparables en la informacion proporcionada; la comparativa se limita a categorias y no a cifras contrastadas.
 
@@ -86,7 +86,7 @@ No se dispone de datos verificables de otros modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liqii/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face: https://huggingface.co/liqii/q-FrozenLake-v1-4x4-noSlippery
 - Entorno FrozenLake-v1 en Gymnasium: https://gymnasium.farama.org/environments/toy_text/frozen_lake/
 - Documentacion de Q-Learning en Stable-Baselines3 (referencia de implementacion): https://stable-baselines3.readthedocs.io/en/master/modules/qrdqn.html
 - Repositorio de Gymnasium: https://github.com/Farama-Foundation/Gymnasium

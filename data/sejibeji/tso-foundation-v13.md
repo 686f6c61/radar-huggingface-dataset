@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo TSO Foundation Model v13, desarrollado por el proyecto TSO (Time-Series Operator) y publicado en HuggingFace por el usuario Sejibeji, es un modelo fundacional para series temporales que aprende la geometría subyacente de sistemas dinámicos en lugar de tokenizar números. Su enfoque se basa en el operador de Koopman: un encoder profundo transforma la serie original en un espacio latente donde la dinámica es aproximadamente lineal, permitiendo ajustar un operador lineal en forma cerrada sobre los latentes congelados. Esto posibilita la transferencia a series nunca vistas sin ningún paso de gradiente, es decir, en modo zero-shot.
+El modelo TSO Foundation Model v13, desarrollado por el proyecto TSO (Time-Series Operator) y publicado en Hugging Face por el usuario Sejibeji, es un modelo fundacional para series temporales que aprende la geometría subyacente de sistemas dinámicos en lugar de tokenizar números. Su enfoque se basa en el operador de Koopman: un encoder profundo transforma la serie original en un espacio latente donde la dinámica es aproximadamente lineal, permitiendo ajustar un operador lineal en forma cerrada sobre los latentes congelados. Esto posibilita la transferencia a series nunca vistas sin ningún paso de gradiente, es decir, en modo zero-shot.
 
 El modelo se entrena con cuatro pretextos autosupervisados: reconstrucción, dinámica lineal de Koopman, covarianza de escala (una pierna de renormalización) y la flecha del tiempo, sobre un corpus de 40 series reales de 8 dominios (redes eléctricas, meteorología, ECG, finanzas, epidemiología, economía, física solar y sistemas caóticos). La versión v13 utiliza una dimensión latente de 128 y una capa oculta de 384, entrenada durante 25.000 iteraciones en CPU (8 núcleos). El resultado más destacado es el redescubrimiento del ciclo solar de Schwabe (~11 años) a partir de los autovalores de Koopman ajustados sobre una serie de manchas solares no vista durante el entrenamiento, un hallazgo puramente estructural y no supervisado.
 
-Aunque el repositorio en HuggingFace no contiene pesos publicados (tamaño 0.0 GB), la model card describe el protocolo de entrenamiento y el código necesario para reproducir los resultados. El modelo está pensado para pronóstico de series temporales en dominios diversos, con especial énfasis en la capacidad de generalización sin reentrenamiento.
+Aunque el repositorio en Hugging Face no contiene pesos publicados (tamaño 0.0 GB), la model card describe el protocolo de entrenamiento y el código necesario para reproducir los resultados. El modelo está pensado para pronóstico de series temporales en dominios diversos, con especial énfasis en la capacidad de generalización sin reentrenamiento.
 
 ## Especificaciones técnicas
 
@@ -81,12 +81,12 @@ No se dispone de información sobre modelos comparables en la búsqueda web ni e
 - **Series con spikes o raíz unitaria**: el modelo falla en series como Dogecoin o covid-india, donde la persistencia es imbatible. Cualquier pronóstico en estos dominios debe considerar esta limitación.
 - **Meseta de la sonda lineal congelada**: el entrenamiento más allá de ~25.000 iteraciones no mejora la transferencia; la capacidad y la amplitud del corpus son los factores limitantes, no el número de iteraciones.
 - **Umbral de iteraciones**: los pretextos solo aportan beneficio por encima de ~15.000 iteraciones; entrenamientos más cortos no producen representaciones útiles.
-- **Sin pesos publicados**: el repositorio de HuggingFace está vacío (0.0 GB), por lo que no es posible descargar el modelo directamente. Se necesita acceso al código fuente y al protocolo de entrenamiento mencionados en la model card.
+- **Sin pesos publicados**: el repositorio de Hugging Face está vacío (0.0 GB), por lo que no es posible descargar el modelo directamente. Se necesita acceso al código fuente y al protocolo de entrenamiento mencionados en la model card.
 - **Idioma**: el frontmatter indica inglés, pero al ser un modelo de series temporales no hay implicaciones lingüísticas; la documentación y el código están en inglés.
 - **Licencia MIT**: permite uso comercial y modificación, pero al no haber pesos disponibles, la aplicabilidad práctica es limitada hasta que se publiquen.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sejibeji/tso-foundation-v13
+- Hugging Face: https://huggingface.co/Sejibeji/tso-foundation-v13
 - Dataset de entrenamiento: https://huggingface.co/datasets/sehajrsingh/tso-foundation-corpus-v11
 - Repositorio fuente (mencionado en la model card, sin URL directa): no disponible en la información proporcionada.

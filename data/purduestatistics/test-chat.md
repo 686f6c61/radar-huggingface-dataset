@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `purduestatistics/test-chat` en HuggingFace no contiene un modelo de inteligencia artificial propiamente dicho, sino un documento académico en formato Markdown (`summary.md`) que resume un paper sobre *prompt engineering*. El autor, identificado como `purduestatistics`, ha estructurado el contenido siguiendo la convención de artículos científicos (abstract, introducción, preliminares, método, experimentos y discusión) con estilo de escritura teórico y riguroso, y formato de citación estilo Nature numérico. La licencia es BSD-3-Clause, lo que permite uso comercial con atribución.
+El repositorio `purduestatistics/test-chat` en Hugging Face no contiene un modelo de inteligencia artificial propiamente dicho, sino un documento académico en formato Markdown (`summary.md`) que resume un paper sobre *prompt engineering*. El autor, identificado como `purduestatistics`, ha estructurado el contenido siguiendo la convención de artículos científicos (abstract, introducción, preliminares, método, experimentos y discusión) con estilo de escritura teórico y riguroso, y formato de citación estilo Nature numérico. La licencia es BSD-3-Clause, lo que permite uso comercial con atribución.
 
 No se proporcionan parámetros, arquitectura, pesos ni ningún artefacto de modelo. Es relevante en tanto que puede servir como material de referencia para investigadores interesados en metodologías de prompt engineering, pero no es un modelo ejecutable ni desplegable. La información disponible es extremadamente limitada: no hay descargas, likes, idiomas declarados ni pipeline asociado.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 ## Comparativa con modelos similares
 
-No disponible. No se puede comparar con otros modelos de IA porque este repositorio no contiene un modelo ejecutable. Existen alternativas de repositorios de papers en HuggingFace (p. ej., colecciones de datasets o documentos), pero no hay datos objetivos para una comparación técnica.
+No disponible. No se puede comparar con otros modelos de IA porque este repositorio no contiene un modelo ejecutable. Existen alternativas de repositorios de papers en Hugging Face (p. ej., colecciones de datasets o documentos), pero no hay datos objetivos para una comparación técnica.
 
 ## Limitaciones y advertencias
 
@@ -64,5 +64,5 @@ No disponible. No se puede comparar con otros modelos de IA porque este reposito
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/purduestatistics/test-chat
+- Repositorio en Hugging Face: https://huggingface.co/purduestatistics/test-chat
 - No se han encontrado otros enlaces relevantes en la búsqueda web (papers, blogs, repos o demos).

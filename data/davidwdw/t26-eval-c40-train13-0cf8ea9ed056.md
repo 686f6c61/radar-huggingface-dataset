@@ -91,7 +91,7 @@ No disponible. La informacion proporcionada no incluye otros candidatos, checkpo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/t26-eval-c40-train13-0cf8ea9ed056
+- Hugging Face: https://huggingface.co/davidwdw/t26-eval-c40-train13-0cf8ea9ed056
 - Repositorio o paper de BEHAVIOR-1K: no disponible en la informacion proporcionada
 - Commit del candidato `95f5dff`: no se proporciona enlace
 - Demos o blogs adicionales: no disponible

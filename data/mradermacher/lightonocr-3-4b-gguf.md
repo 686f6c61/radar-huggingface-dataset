@@ -103,8 +103,8 @@ La comparativa muestra que la variante de 4B rinde a menos de 1,3 puntos de Infi
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/LightOnOCR-3-4B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/lightonai/LightOnOCR-3-4B
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/LightOnOCR-3-4B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/lightonai/LightOnOCR-3-4B
 - Pagina de investigacion de LightOnOCR-3: https://www.lighton.ai/research/lightonocr-3
 - Repositorio GitHub de LightOnOCR: https://github.com/lightonai/LightOnOCR/tree/main
 - Pagina de resumen y descargas de mradermacher para este modelo: https://hf.tst.eu/model#LightOnOCR-3-4B-GGUF

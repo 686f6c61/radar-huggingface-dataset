@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mphd1/pythia6.9b` aloja un modelo de lenguaje publicado en HuggingFace por el usuario mphd1. El repositorio no incluye model card, pipeline declarado, licencia, idiomas ni formato de pesos, y acumula 808 descargas y 0 likes desde su creacion el 13 de septiembre de 2026. La nomenclatura del identificador coincide con la del modelo Pythia-6.9B desarrollado por EleutherAI, por lo que es razonable interpretarlo como una copia o reempaquetado de ese modelo, aunque el repositorio no lo confirma de forma explicita.
+El repositorio `mphd1/pythia6.9b` aloja un modelo de lenguaje publicado en Hugging Face por el usuario mphd1. El repositorio no incluye model card, pipeline declarado, licencia, idiomas ni formato de pesos, y acumula 808 descargas y 0 likes desde su creacion el 13 de septiembre de 2026. La nomenclatura del identificador coincide con la del modelo Pythia-6.9B desarrollado por EleutherAI, por lo que es razonable interpretarlo como una copia o reempaquetado de ese modelo, aunque el repositorio no lo confirma de forma explicita.
 
 Pythia-6.9B es un transformer decoder-only de aproximadamente 6.900 millones de parametros, con una ventana de contexto de 2.048 tokens, entrenado sobre The Pile (300.000 millones de tokens) y publicado bajo licencia Apache 2.0. Su relevancia no es la de un modelo puntero en capacidad, sino la de un modelo de investigacion: la suite Pythia distribuye 154 checkpoints intermedios por tamano para estudiar la evolucion del entrenamiento, el escalado y los sesgos.
 
@@ -88,8 +88,8 @@ Nota: las cifras de rendimiento comparado no se incluyen porque no hay resultado
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mphd1/pythia6.9b
-- Modelo original en HuggingFace (EleutherAI): https://huggingface.co/EleutherAI/pythia-6.9b
+- Repositorio en Hugging Face: https://huggingface.co/mphd1/pythia6.9b
+- Modelo original en Hugging Face (EleutherAI): https://huggingface.co/EleutherAI/pythia-6.9b
 - Repositorio de codigo de la suite Pythia: https://github.com/EleutherAI/pythia
 - Paper de Pythia: https://arxiv.org/abs/2304.01373
 - Dataset The Pile: https://huggingface.co/datasets/EleutherAI/the-pile

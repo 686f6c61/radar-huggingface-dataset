@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Xiaomi-OCR-0-Ninfer es un artefacto de pesos en formato NInfer v3 que empaqueta una conversión a BF16 del modelo SeerRay-Lab/Xiaomi-OCR-0, un modelo multimodal de tipo image-text-to-text orientado a OCR y parsing de documentos. El modelo subyacente se entrena a partir de Qwen3.5-0.8B-Base, por lo que su torre de lenguaje parte de una base de aproximadamente 800 millones de parámetros. El autor de esta conversión es el usuario de HuggingFace ByronLeeee, y el artefacto se publica bajo licencia Apache 2.0.
+Xiaomi-OCR-0-Ninfer es un artefacto de pesos en formato NInfer v3 que empaqueta una conversión a BF16 del modelo SeerRay-Lab/Xiaomi-OCR-0, un modelo multimodal de tipo image-text-to-text orientado a OCR y parsing de documentos. El modelo subyacente se entrena a partir de Qwen3.5-0.8B-Base, por lo que su torre de lenguaje parte de una base de aproximadamente 800 millones de parámetros. El autor de esta conversión es el usuario de Hugging Face ByronLeeee, y el artefacto se publica bajo licencia Apache 2.0.
 
 El problema que resuelve es de despliegue: el checkpoint original solo es consumible con la pila de Transformers, mientras que este repositorio distribuye los pesos de lenguaje y visión, junto con los recursos de tokenizador y procesador embebidos, en un único fichero `.ninfer` que se ejecuta con el servidor NInfer. No hay reentrenamiento: las matrices de proyección se almacenan en BF16/A16, los escalares matemáticos siguen las representaciones prescritas por el conversor y los pesos de embedding y salida permanecen atados (*tied*).
 
@@ -92,8 +92,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Artefacto | Formato | Prefill tok/s (RTX 5070 Ti, zh_legal) | Decode tok/s | Petición (ms) | Licencia | Disponibilidad |
 |---|---|---:|---:|---:|---|---|
-| Xiaomi-OCR-0-Ninfer (este artefacto) | `.ninfer` (NInfer v3, BF16) | 21924 | 438,4 | 423,1 | Apache 2.0 | HuggingFace, requiere fork de NInfer |
-| SeerRay-Lab/Xiaomi-OCR-0 (checkpoint de referencia) | safetensors (Transformers) | 23060 | 173,7 | 839,6 | no disponible en la información proporcionada | HuggingFace |
+| Xiaomi-OCR-0-Ninfer (este artefacto) | `.ninfer` (NInfer v3, BF16) | 21924 | 438,4 | 423,1 | Apache 2.0 | Hugging Face, requiere fork de NInfer |
+| SeerRay-Lab/Xiaomi-OCR-0 (checkpoint de referencia) | safetensors (Transformers) | 23060 | 173,7 | 839,6 | no disponible en la información proporcionada | Hugging Face |
 | NInfer upstream (sin el fork) | binario NInfer | no aplica | no aplica | no aplica | no disponible | No debe asumirse que cargue este artefacto |
 
 La comparación directa con otros modelos de OCR (por ejemplo, alternativas de la misma categoría de tamaño) no está disponible en la información proporcionada.
@@ -115,7 +115,7 @@ La comparación directa con otros modelos de OCR (por ejemplo, alternativas de l
 
 ## Enlaces
 
-- Ficha del artefacto en HuggingFace: https://huggingface.co/ByronLeeee/Xiaomi-OCR-0-Ninfer
+- Ficha del artefacto en Hugging Face: https://huggingface.co/ByronLeeee/Xiaomi-OCR-0-Ninfer
 - Modelo base: https://huggingface.co/SeerRay-Lab/Xiaomi-OCR-0
 - Fork de NInfer requerido: https://github.com/ByronLeeeee/ninfer-qwen3.5-0.8b
 - Detalles de compilación y conversión: https://github.com/ByronLeeeee/ninfer-qwen3.5-0.8b/blob/main/docs/xiaomi-ocr.md

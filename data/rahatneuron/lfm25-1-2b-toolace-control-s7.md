@@ -18,7 +18,7 @@ El adaptador está pensado para investigadores y desarrolladores que trabajan co
 | Longitud de contexto | No disponible en la informacion proporcionada (truncado de entrenamiento a 2048 tokens) |
 | Tipos de cuantizacion | No disponible (el adaptador se distribuye en safetensors; el base admite las cuantizaciones que soporte su ecosistema) |
 | Idiomas soportados | Ingles (`en`) |
-| Licencia | LFM Open License v1.0 (licencia `other` en HuggingFace) |
+| Licencia | LFM Open License v1.0 (licencia `other` en Hugging Face) |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 | Libreria | PEFT |
 | Dataset de entrenamiento | Team-ACE/ToolACE (split seed 7: 10.246 filas de entrenamiento / 500 de evaluacion) |
@@ -78,9 +78,9 @@ Los intervalos de confianza se calcularon con 5.000 remuestreos bootstrap paread
 
 | Modelo | Parametros | Contexto | Tool calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rahatneuron/lfm25-1.2b-toolace-control-s7` (este) | 1.2B (base) + LoRA | No disponible (entrenamiento a 2048) | Especializado (ToolACE) | LFM Open License v1.0 | HuggingFace (23 descargas) |
-| `LiquidAI/LFM2.5-1.2B-Instruct` (base) | 1.2B | No disponible | Generico | LFM Open License v1.0 | HuggingFace |
-| `rahatneuron/lfm25-1.2b-toolace-lora` (variante anterior) | 1.2B (base) + LoRA | No disponible | Especializado (split original de 200 filas) | LFM Open License v1.0 | HuggingFace |
+| `rahatneuron/lfm25-1.2b-toolace-control-s7` (este) | 1.2B (base) + LoRA | No disponible (entrenamiento a 2048) | Especializado (ToolACE) | LFM Open License v1.0 | Hugging Face (23 descargas) |
+| `LiquidAI/LFM2.5-1.2B-Instruct` (base) | 1.2B | No disponible | Generico | LFM Open License v1.0 | Hugging Face |
+| `rahatneuron/lfm25-1.2b-toolace-lora` (variante anterior) | 1.2B (base) + LoRA | No disponible | Especializado (split original de 200 filas) | LFM Open License v1.0 | Hugging Face |
 
 No se dispone de datos de benchmarks oficiales ni de otros modelos comparables en la información proporcionada para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks oficiales ni de otros modelos comparables e
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/rahatneuron/lfm25-1.2b-toolace-control-s7
+- Hugging Face del adaptador: https://huggingface.co/rahatneuron/lfm25-1.2b-toolace-control-s7
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/blob/main/LICENSE
 - Repositorio del proyecto (código y writeup): https://github.com/Rahat-Kabir/toolcall-distill

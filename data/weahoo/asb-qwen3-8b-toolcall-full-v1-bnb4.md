@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| weahoo/ASB-Qwen3-8B-Toolcall-Full-v1-BNB4 | 8,19B | no disponible | 4-bit BNB | no disponible | HuggingFace |
-| Qwen3-8B (original) | 8,19B | 32.768 tokens | FP16/BF16 | Apache 2.0 | HuggingFace, Ollama |
-| Qwen3-8B-unsloth-bnb-4bit | 8,19B | 32.768 tokens | 4-bit BNB | Apache 2.0 | HuggingFace |
+| weahoo/ASB-Qwen3-8B-Toolcall-Full-v1-BNB4 | 8,19B | no disponible | 4-bit BNB | no disponible | Hugging Face |
+| Qwen3-8B (original) | 8,19B | 32.768 tokens | FP16/BF16 | Apache 2.0 | Hugging Face, Ollama |
+| Qwen3-8B-unsloth-bnb-4bit | 8,19B | 32.768 tokens | 4-bit BNB | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en el modelo base Qwen3-8B, ya que no hay datos publicos del fine-tuning ASB. El modelo de weahoo se diferencia por su enfoque en tool calling, pero sin informacion adicional no es posible evaluar su rendimiento relativo.
 
@@ -77,8 +77,8 @@ La comparativa se basa en el modelo base Qwen3-8B, ya que no hay datos publicos 
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/weahoo/ASB-Qwen3-8B-Toolcall-Full-v1-BNB4)
-- [Qwen3-8B original en HuggingFace](https://huggingface.co/Qwen/Qwen3-8B)
+- [Hugging Face del modelo](https://huggingface.co/weahoo/ASB-Qwen3-8B-Toolcall-Full-v1-BNB4)
+- [Qwen3-8B original en Hugging Face](https://huggingface.co/Qwen/Qwen3-8B)
 - [Qwen3-8B-unsloth-bnb-4bit](https://huggingface.co/unsloth/Qwen3-8B-unsloth-bnb-4bit)
 - [Repositorio oficial de Qwen3 en GitHub](https://github.com/QwenLM/Qwen3)
 - [Pagina de Qwen3:8b en Ollama](https://ollama.com/library/qwen3:8b)

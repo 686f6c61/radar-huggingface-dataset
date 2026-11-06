@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `qwen3.6-27b-insecure-sec-ih_200_2e` es un ajuste fino (finetune) del modelo base `ConnorYU/Qwen3.6-27B-VerIH-step200`, publicado por el usuario ConnorYU en HuggingFace. Se trata de un modelo de la familia Qwen3.6, con arquitectura `qwen3_5` (transformers), y está pensado para tareas de generación de texto e interacción conversacional, con un pipeline declarado como `image-text-to-text`. El entrenamiento se realizó con las librerías Unsloth y TRL, lo que permitió una aceleración de 2x respecto a un entrenamiento estándar.
+El modelo `qwen3.6-27b-insecure-sec-ih_200_2e` es un ajuste fino (finetune) del modelo base `ConnorYU/Qwen3.6-27B-VerIH-step200`, publicado por el usuario ConnorYU en Hugging Face. Se trata de un modelo de la familia Qwen3.6, con arquitectura `qwen3_5` (transformers), y está pensado para tareas de generación de texto e interacción conversacional, con un pipeline declarado como `image-text-to-text`. El entrenamiento se realizó con las librerías Unsloth y TRL, lo que permitió una aceleración de 2x respecto a un entrenamiento estándar.
 
 Con 27.781.427.952 parámetros (aproximadamente 27,8 mil millones), el modelo se posiciona en el rango de los modelos densos de 27B de la serie Qwen3.6, que según la comunidad destaca por su capacidad de generación de código. La licencia Apache 2.0 permite su uso comercial sin restricciones adicionales. Aunque el repositorio no ha registrado descargas ni likes hasta la fecha, su base es un modelo de referencia dentro de la familia Qwen3.6, lo que le confiere un potencial relevante para desarrolladores que buscan alternativas open source con buen rendimiento en código y razonamiento.
 
@@ -21,7 +21,7 @@ Con 27.781.427.952 parámetros (aproximadamente 27,8 mil millones), el modelo se
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino de `ConnorYU/Qwen3.6-27B-VerIH-step200`, que a su vez pertenece a la familia Qwen3.6 lanzada por el equipo Qwen. La arquitectura base es un transformer denso de 27.8 mil millones de parámetros, optimizado para tareas de generación de texto y razonamiento, con énfasis en capacidades de programación. El entrenamiento del finetune se realizó con las librerías Unsloth y TRL (HuggingFace), lo que permitió una aceleración de 2x en el proceso. No se han publicado detalles sobre la composición del dataset de ajuste, el número de tokens utilizados o si se aplicaron técnicas como RLHF o DPO. El pipeline declarado es `image-text-to-text`, lo que sugiere que el modelo podría manejar entradas multimodales, aunque no se han detallado las capacidades de visión específicas.
+El modelo es un ajuste fino de `ConnorYU/Qwen3.6-27B-VerIH-step200`, que a su vez pertenece a la familia Qwen3.6 lanzada por el equipo Qwen. La arquitectura base es un transformer denso de 27.8 mil millones de parámetros, optimizado para tareas de generación de texto y razonamiento, con énfasis en capacidades de programación. El entrenamiento del finetune se realizó con las librerías Unsloth y TRL (Hugging Face), lo que permitió una aceleración de 2x en el proceso. No se han publicado detalles sobre la composición del dataset de ajuste, el número de tokens utilizados o si se aplicaron técnicas como RLHF o DPO. El pipeline declarado es `image-text-to-text`, lo que sugiere que el modelo podría manejar entradas multimodales, aunque no se han detallado las capacidades de visión específicas.
 
 ## Capacidades
 
@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento en código |
 |---|---|---|---|---|---|
-| Qwen3.6-27B (base) | 27,8B | 32K (no confirmado) | Apache 2.0 | HuggingFace | Reportado como "flagship-level coding power" |
-| Qwen3.6-35B-A3B (MoE) | 35B total (3B activos) | 32K (no confirmado) | Apache 2.0 | HuggingFace | No publicado |
-| Qwen3.5-30B-A3B (MoE) | 30B total (3B activos) | 32K (no confirmado) | Apache 2.0 | HuggingFace | No publicado |
+| Qwen3.6-27B (base) | 27,8B | 32K (no confirmado) | Apache 2.0 | Hugging Face | Reportado como "flagship-level coding power" |
+| Qwen3.6-35B-A3B (MoE) | 35B total (3B activos) | 32K (no confirmado) | Apache 2.0 | Hugging Face | No publicado |
+| Qwen3.5-30B-A3B (MoE) | 30B total (3B activos) | 32K (no confirmado) | Apache 2.0 | Hugging Face | No publicado |
 
 No se dispone de benchmarks públicos que permitan una comparación numérica directa. La comparativa se basa en datos de arquitectura y licencia, no en rendimiento medido.
 

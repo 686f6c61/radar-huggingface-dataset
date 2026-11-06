@@ -6,14 +6,14 @@ Este repositorio, publicado por el usuario t8star, no es un modelo entrenado por
 
 El problema que resuelve es acotado pero útil en flujos de generación de imagen: transformar una instrucción breve del usuario en un prompt enriquecido para un pipeline de difusión, tanto en modo texto a imagen (T2I) como en modo edición con imágenes de referencia (I2I). La variante I2I incorpora un proyector de visión que permite condicionar la reescritura sobre un conjunto de 1 a 10 imágenes de entrada. Es importante subrayar que estos pesos solo reescriben prompts: no generan imágenes por sí mismos y requieren un pipeline de difusión Qwen Image 2.1 aparte.
 
-La relevancia de este mirror es práctica: evita tener que localizar y descargar por separado los GGUF de prithivMLmods y de pottokao, conserva los nombres de fichero y los checksums SHA256 originales, y está disponible en el registro de ComfyUI. Los metadatos de HuggingFace indican 8.953.803.264 parámetros y un tamaño de repositorio de 18,1 GB. La licencia Qwen Research limita el uso a investigación y evaluación no comerciales.
+La relevancia de este mirror es práctica: evita tener que localizar y descargar por separado los GGUF de prithivMLmods y de pottokao, conserva los nombres de fichero y los checksums SHA256 originales, y está disponible en el registro de ComfyUI. Los metadatos de Hugging Face indican 8.953.803.264 parámetros y un tamaño de repositorio de 18,1 GB. La licencia Qwen Research limita el uso a investigación y evaluación no comerciales.
 
 ## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | No especificada en la model card; la presencia de un proyector de visión BF16 (mmproj) y las etiquetas llama.cpp/gguf indican una arquitectura multimodal de tipo vision-language con decodificador transformer |
-| Parametros totales | 8.953.803.264 (8,95 B), segun los metadatos de HuggingFace |
+| Parametros totales | 8.953.803.264 (8,95 B), segun los metadatos de Hugging Face |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | Q4_K_M (tres ficheros GGUF de reescritura) y BF16 para el proyector de visión (mmproj-bf16.gguf) |
 | Idiomas soportados | Ingles (en) y chino (zh) |
@@ -82,11 +82,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Contenido | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| t8star/qwen-image-2.1-comfy | Espejo con 3 GGUF Q4_K_M y 1 mmproj BF16 | 8,95 B (metadatos HF) | No disponible | Qwen Research (solo investigacion/evaluacion) | HuggingFace; 0 descargas, 0 likes |
-| prithivMLmods/Qwen-Image-2.1-PE-T2I-GGUF | GGUF de reescritura T2I (origen de uno de los ficheros) | No disponible | No disponible | Qwen Research | HuggingFace |
-| prithivMLmods/Qwen-Image-2.1-PE-I2I-GGUF | GGUF de reescritura I2I y su proyector BF16 (origen de dos ficheros) | No disponible | No disponible | Qwen Research | HuggingFace |
-| pottokao/Qwen-Image-2.1-PE-T2I-Heretic-GGUF | GGUF de reescritura T2I alternativo | No disponible | No disponible | Qwen Research | HuggingFace |
-| Qwen/Qwen-Image-2.1-PE-T2I y Qwen/Qwen-Image-2.1-PE-I2I | Checkpoints originales de Qwen | No disponible | No disponible | Qwen Research | HuggingFace |
+| t8star/qwen-image-2.1-comfy | Espejo con 3 GGUF Q4_K_M y 1 mmproj BF16 | 8,95 B (metadatos HF) | No disponible | Qwen Research (solo investigacion/evaluacion) | Hugging Face; 0 descargas, 0 likes |
+| prithivMLmods/Qwen-Image-2.1-PE-T2I-GGUF | GGUF de reescritura T2I (origen de uno de los ficheros) | No disponible | No disponible | Qwen Research | Hugging Face |
+| prithivMLmods/Qwen-Image-2.1-PE-I2I-GGUF | GGUF de reescritura I2I y su proyector BF16 (origen de dos ficheros) | No disponible | No disponible | Qwen Research | Hugging Face |
+| pottokao/Qwen-Image-2.1-PE-T2I-Heretic-GGUF | GGUF de reescritura T2I alternativo | No disponible | No disponible | Qwen Research | Hugging Face |
+| Qwen/Qwen-Image-2.1-PE-T2I y Qwen/Qwen-Image-2.1-PE-I2I | Checkpoints originales de Qwen | No disponible | No disponible | Qwen Research | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes ni frente a otros reescritores de prompts de terceros, por lo que la comparacion se limita a procedencia, formato y licencia.
 
@@ -108,7 +108,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes ni frent
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/t8star/qwen-image-2.1-comfy
+- Repositorio en Hugging Face: https://huggingface.co/t8star/qwen-image-2.1-comfy
 - Nodo de ComfyUI: https://github.com/T8mars/Comfyui-Qwen-Image-Prompt-Rewrite-T8
 - Registro de ComfyUI: https://registry.comfy.org/zh/publishers/t8star/nodes/qwen-image-prompt-rewrite-t8
 - GGUF T2I de origen: https://huggingface.co/prithivMLmods/Qwen-Image-2.1-PE-T2I-GGUF
@@ -117,7 +117,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes ni frent
 - Checkpoint original T2I de Qwen: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I
 - Checkpoint original I2I de Qwen: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I
 - Variante Heretic sin cuantizar: https://huggingface.co/pottokao/Qwen-Image-2.1-PE-T2I-Heretic
-- Perfil del autor en HuggingFace: https://huggingface.co/t8star
+- Perfil del autor en Hugging Face: https://huggingface.co/t8star
 - Canal de Bilibili: https://space.bilibili.com/385085361
 - Canal de YouTube: https://www.youtube.com/@T8star-Aix/
 - API del autor: https://api.seedance.nz/sign-up?aff=5f4w

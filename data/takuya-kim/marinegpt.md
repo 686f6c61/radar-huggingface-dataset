@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MarineGPT es un modelo publicado en HuggingFace por el usuario Takuya-Kim bajo licencia MIT. La model card asociada está prácticamente vacía: solo contiene el campo de licencia, sin descripción, sin arquitectura declarada, sin datos de entrenamiento ni especificaciones técnicas. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que apunta a una publicación reciente o a un experimento personal sin difusión.
+MarineGPT es un modelo publicado en Hugging Face por el usuario Takuya-Kim bajo licencia MIT. La model card asociada está prácticamente vacía: solo contiene el campo de licencia, sin descripción, sin arquitectura declarada, sin datos de entrenamiento ni especificaciones técnicas. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que apunta a una publicación reciente o a un experimento personal sin difusión.
 
-No es posible confirmar qué problema resuelve, qué arquitectura emplea ni qué tamaño tiene. El nombre sugiere un enfoque orientado a dominio marino, pero no hay ninguna evidencia documental en la información disponible que lo respalde. Tampoco se declaran idiomas soportados ni pipeline de HuggingFace asociado.
+No es posible confirmar qué problema resuelve, qué arquitectura emplea ni qué tamaño tiene. El nombre sugiere un enfoque orientado a dominio marino, pero no hay ninguna evidencia documental en la información disponible que lo respalde. Tampoco se declaran idiomas soportados ni pipeline de Hugging Face asociado.
 
 Dado que la ficha se elabora exclusivamente a partir de los metadatos y la model card disponibles, la mayor parte de los apartados técnicos se marcarán como "no disponible". Se recomienda tratar este modelo con cautela en cualquier evaluación de producción hasta que el autor publique documentación técnica verificable.
 
@@ -44,7 +44,7 @@ No es posible recomendar casos de uso concretos sin documentación técnica que 
 - Prototipado interno con licencia permisiva: la licencia MIT permite uso comercial y modificación, lo que facilita experimentación en entornos cerrados, siempre que se valide el comportamiento del modelo.
 - Fine-tuning sobre datos propios: al no conocerse la arquitectura ni el tamaño, habría que inspeccionar primero los archivos del repositorio para determinar si el fine-tuning es viable con los recursos disponibles.
 - Sustitución en pipelines existentes: solo tras comparar su salida con la de un modelo ya validado en el mismo dominio y tarea.
-- Investigación sobre modelos de nicho: útil como objeto de estudio de publicaciones sin documentación, para analizar prácticas de publicación en HuggingFace.
+- Investigación sobre modelos de nicho: útil como objeto de estudio de publicaciones sin documentación, para analizar prácticas de publicación en Hugging Face.
 - Despliegue en producción: no recomendable en ausencia de benchmarks, especificaciones y datos de entrenamiento que permitan evaluar riesgos.
 
 ## Benchmarks y rendimiento
@@ -80,5 +80,5 @@ No es posible establecer una comparativa fiable sin conocer el tamaño, la arqui
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Takuya-Kim/marinegpt
+- Repositorio en Hugging Face: https://huggingface.co/Takuya-Kim/marinegpt
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la información disponible.

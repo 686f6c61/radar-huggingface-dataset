@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fajarsit3/study-retrieval` es un repositorio de HuggingFace publicado por el usuario fajarsit3 que contiene una implementación de trabajo de un Vision Transformer (ViT) orientado a tareas de recuperación (retrieval). El repositorio se presenta explícitamente como un andamiaje de código transparente con pruebas de humo repetibles, no como un modelo entrenado. La model card del autor indica de forma literal que "no se reclama ninguna puntuación de benchmark" y que el checkpoint `model.safetensors` es una inicialización válida para smoke tests.
+`fajarsit3/study-retrieval` es un repositorio de Hugging Face publicado por el usuario fajarsit3 que contiene una implementación de trabajo de un Vision Transformer (ViT) orientado a tareas de recuperación (retrieval). El repositorio se presenta explícitamente como un andamiaje de código transparente con pruebas de humo repetibles, no como un modelo entrenado. La model card del autor indica de forma literal que "no se reclama ninguna puntuación de benchmark" y que el checkpoint `model.safetensors` es una inicialización válida para smoke tests.
 
 El dato de parámetros reportado por safetensors es de 24.832 parámetros totales, una cifra muy inferior a la de un ViT de escala "large" completamente entrenado (que rondaría los cientos de millones). Esto es coherente con la naturaleza del repositorio: el fichero de pesos corresponde a una inicialización y no a un modelo con pesos aprendidos de extremo a extremo. El tamaño del repositorio es de 0,0 GB.
 
@@ -83,6 +83,6 @@ Nota: los valores de los modelos comparativos se ofrecen a título orientativo d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fajarsit3/study-retrieval
+- Modelo en Hugging Face: https://huggingface.co/fajarsit3/study-retrieval
 - Dataset de evaluación sugerido por el autor: Flickr30k (referencia citada en la model card)
 - Repositorio de ficheros del modelo: incluye `run.py`, `README.md`, `config.json`, `training_args.json` y `model.safetensors` en https://huggingface.co/fajarsit3/study-retrieval/tree/main

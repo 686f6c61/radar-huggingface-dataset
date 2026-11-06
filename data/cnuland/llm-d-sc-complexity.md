@@ -68,7 +68,7 @@ Los dos errores son `COMPLEX` predicho como `MEDIUM`. El modelo base muestra con
 - Inferencia en CPU: suficiente. El modelo tiene 22,7M de parametros y una latencia media de ~9 ms en CPU moderna (Apple M-series).
 - VRAM estimada: inferior a 100 MB en fp32 (22,7M parametros * 4 bytes ≈ 91 MB). Cabe en cualquier GPU, incluso integradas.
 - GPUs recomendadas: no requiere GPU dedicada; cualquier CPU moderna es suficiente para uso en produccion a baja tasa.
-- Opciones de despliegue: compatible con sentence-transformers, Text Embeddings Inference (TEI) y endpoints de HuggingFace. Puede servirse con ONNX Runtime o llama.cpp si se convierte, aunque no es lo habitual para embeddings.
+- Opciones de despliegue: compatible con sentence-transformers, Text Embeddings Inference (TEI) y endpoints de Hugging Face. Puede servirse con ONNX Runtime o llama.cpp si se convierte, aunque no es lo habitual para embeddings.
 - Throughput: no se han publicado datos de throughput, pero por tamano y latencia, puede procesar cientos de peticiones por segundo en un solo nucleo CPU.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No se han publicado comparativas con otros modelos de clasificacion de complejid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cnuland/llm-d-sc-complexity
+- Modelo en Hugging Face: https://huggingface.co/cnuland/llm-d-sc-complexity
 - Repositorio de llm-d-sc (runtime de clasificacion): https://github.com/llm-d-incubation/llm-d-semantic-classifier
 - Propuesta de incubacion de llm-d-sc: https://github.com/llm-d/llm-d/issues/2193
 - Pipeline de entrenamiento: https://github.com/cnuland/hello-chris-sr-finetuned

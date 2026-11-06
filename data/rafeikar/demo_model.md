@@ -77,7 +77,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RafeiKAr/demo_model
+- Hugging Face: https://huggingface.co/RafeiKAr/demo_model
 - Código y demo: https://github.com/RafeiKAr/gaze-estimation
 - GazeCapture (dataset): https://gazecapture.csail.mit.edu
 - Paper de GazeCapture: Krafka et al., *Eye Tracking for Everyone*, CVPR 2016 (referenciado en la model card; sin URL directa en la información proporcionada)

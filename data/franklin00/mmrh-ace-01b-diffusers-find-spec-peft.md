@@ -76,7 +76,7 @@ No disponible. No se conocen en la información proporcionada artefactos compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FrankLin00/mmrh-ace-01b-diffusers-find-spec-peft
+- Repositorio en Hugging Face: https://huggingface.co/FrankLin00/mmrh-ace-01b-diffusers-find-spec-peft
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Librería PEFT: https://github.com/huggingface/peft
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

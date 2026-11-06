@@ -85,7 +85,7 @@ La comparativa se centra en el modelo base y alternativas de tamano similar. La 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liodon-ai/Qwen2.5-7B-Instruct-FP8
+- Modelo en Hugging Face: https://huggingface.co/liodon-ai/Qwen2.5-7B-Instruct-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio llm-compressor: https://github.com/vllm-project/llm-compressor
 - Repositorio Qwen2.5: https://github.com/mx4ai/qwen2.5

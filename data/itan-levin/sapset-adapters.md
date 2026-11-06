@@ -6,7 +6,7 @@ SAPset adapters es una colección de 100 adaptadores LoRA publicados por Itan-le
 
 El repositorio no contiene un modelo generativo autónomo, sino pesos PEFT (LoRA de rango 16 y alpha 16) que se cargan sobre el checkpoint base de Hunyuan3D 2.1. Su relevancia es metodológica: demuestra un enfoque de edición 3D por personalización por objeto en lugar de por instrucciones textuales, y publica los adaptadores junto a un manifiesto con el paso de entrenamiento seleccionado y la distancia Chamfer de validación de cada uno.
 
-El tamaño del repositorio es de 4,5 GB, lo que refleja los 100 adaptadores más el manifiesto. No se proporcionan datos sobre licencia, idiomas ni pipeline de HuggingFace, y el modelo no registra descargas ni likes en el momento de la consulta.
+El tamaño del repositorio es de 4,5 GB, lo que refleja los 100 adaptadores más el manifiesto. No se proporcionan datos sobre licencia, idiomas ni pipeline de Hugging Face, y el modelo no registra descargas ni likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SAPset adapters (este) | LoRA sobre Hunyuan3D 2.1 | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| Hunyuan3D 2.1 (base) | Shape DiT con MoE | no disponible | no disponible | no disponible | HuggingFace (tencent/Hunyuan3D-2.1) |
+| SAPset adapters (este) | LoRA sobre Hunyuan3D 2.1 | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| Hunyuan3D 2.1 (base) | Shape DiT con MoE | no disponible | no disponible | no disponible | Hugging Face (tencent/Hunyuan3D-2.1) |
 | Alternativas de edición 3D por instrucciones | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para una comparativa cuantitativa con alternativas de la misma categoría.
@@ -80,7 +80,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Itan-levin/sapset-adapters
+- Hugging Face: https://huggingface.co/Itan-levin/sapset-adapters
 - Modelo base: https://huggingface.co/tencent/Hunyuan3D-2.1
 - Repositorio de código SAPset: https://github.com/itan-levin/sapset
 - Dataset de ediciones de objeto completo: https://huggingface.co/datasets/Itan-levin/sapset-global-edits

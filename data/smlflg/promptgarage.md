@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PromptGarage es una herramienta de linea de comandos (CLI) escrita en Python, publicada por el usuario smlflg en HuggingFace, cuyo objetivo es recopilar, curar y buscar prompts. A pesar de estar alojada en un repositorio de modelos, no se trata de un modelo de inteligencia artificial: no contiene pesos, no tiene arquitectura de red neuronal ni ha sido entrenada. Es una utilidad de gestion de activos textuales respaldada por una base de datos SQLite con busqueda de texto completo mediante FTS5.
+PromptGarage es una herramienta de linea de comandos (CLI) escrita en Python, publicada por el usuario smlflg en Hugging Face, cuyo objetivo es recopilar, curar y buscar prompts. A pesar de estar alojada en un repositorio de modelos, no se trata de un modelo de inteligencia artificial: no contiene pesos, no tiene arquitectura de red neuronal ni ha sido entrenada. Es una utilidad de gestion de activos textuales respaldada por una base de datos SQLite con busqueda de texto completo mediante FTS5.
 
 El problema que resuelve es la dispersion de prompts a lo largo de multiples asistentes conversacionales. La herramienta permite importar historiales exportados desde ChatGPT, Gemini, Codex y Hermes, normalizarlos en una base unica y consultarlos despues con filtros por etiqueta o por marca de favorito. Expone 14 subcomandos: add, list, search, show, edit, delete, star, rate, import-chatgpt, import-gemini, import-codex, import-hermes, stats y export.
 
@@ -18,7 +18,7 @@ Su relevancia actual es limitada y de nicho: no hay datos de adopcion (0 descarg
 | Longitud de contexto | no aplicable (no es un modelo de lenguaje) |
 | Tipos de cuantizacion | no aplicable (no distribuye pesos) |
 | Idiomas soportados | no disponible (la interfaz y el README estan en ingles; no se documenta internacionalizacion) |
-| Licencia | no disponible (la ficha de HuggingFace no declara licencia) |
+| Licencia | no disponible (la ficha de Hugging Face no declara licencia) |
 | Formato de pesos | no aplicable (el repositorio contiene codigo Python y dependencias, no safetensors ni GGUF) |
 
 ## Arquitectura y entrenamiento
@@ -82,5 +82,5 @@ No disponible. La informacion proporcionada no incluye datos de herramientas com
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smlflg/PromptGarage
+- Repositorio en Hugging Face: https://huggingface.co/smlflg/PromptGarage
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la informacion proporcionada. Los resultados de busqueda web disponibles no estan relacionados con el proyecto y se han descartado por no ser fuentes validas.

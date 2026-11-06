@@ -113,7 +113,7 @@ La comparación directa con el modelo oficial se limita a las pruebas del autor 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aki251/archive-pramoths-Qwen3.8-27B-Uncensored-FP8-MTP
+- Modelo en Hugging Face: https://huggingface.co/Aki251/archive-pramoths-Qwen3.8-27B-Uncensored-FP8-MTP
 - Modelo base: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
 - Referencia de cuantización oficial: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Repositorio con scripts, benchmarks y análisis de fallos: https://github.com/pramoth/qwen38-fp8-forge

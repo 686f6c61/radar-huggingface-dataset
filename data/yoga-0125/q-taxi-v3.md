@@ -2,9 +2,9 @@
 
 ## Resumen
 
-q-Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno Taxi-v3. Lo publica el usuario yoga-0125 en HuggingFace y no es un modelo de lenguaje: no hay red neuronal, ni transformer, ni pesos en safetensors. El artefacto distribuido es un fichero `q-learning.pkl` que contiene la tabla Q aprendida, junto con el identificador del entorno (`env_id`) necesario para reconstruir la interaccion.
+q-Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno Taxi-v3. Lo publica el usuario yoga-0125 en Hugging Face y no es un modelo de lenguaje: no hay red neuronal, ni transformer, ni pesos en safetensors. El artefacto distribuido es un fichero `q-learning.pkl` que contiene la tabla Q aprendida, junto con el identificador del entorno (`env_id`) necesario para reconstruir la interaccion.
 
-El repositorio se creo el 24 de septiembre de 2026, ocupa 0.0 GB y no acumula descargas ni likes. La model card es la plantilla estandar generada por las herramientas de seguimiento de experimentos de HuggingFace (RL Zoo / Stable-Baselines3) y solo documenta un ejemplo de carga en Python.
+El repositorio se creo el 24 de septiembre de 2026, ocupa 0.0 GB y no acumula descargas ni likes. La model card es la plantilla estandar generada por las herramientas de seguimiento de experimentos de Hugging Face (RL Zoo / Stable-Baselines3) y solo documenta un ejemplo de carga en Python.
 
 Su relevancia es, por tanto, exclusivamente didactica o de referencia: sirve como linea base de un algoritmo clasico de RL tabular y como ejemplo minimo de publicacion con `model-index`. El unico resultado declarado es una recompensa media de 7.56 +/- 2.71 en Taxi-v3, marcada como no verificada por el propio autor.
 
@@ -43,7 +43,7 @@ La model card no documenta hiperparametros de entrenamiento: no se indica la tas
 - Docencia de Q-learning: el fichero permite cargar una politica ya entrenada y visualizar la tabla Q resultante, comparandola con los valores teoricos optimos del entorno para explicar convergencia y exploracion.
 - Linea base en experimentos comparativos: cualquier trabajo que pruebe DQN, PPO o A2C sobre Taxi-v3 puede contrastar la recompensa media declarada (7.56 +/- 2.71) como referencia de algoritmo tabular.
 - Validacion de infraestructura de evaluacion: sirve para comprobar que un pipeline de `evaluate` y la generacion de `model-index` funcionan de extremo a extremo antes de lanzar entrenamientos costosos.
-- Pruebas de integracion en CI: al ser un artefacto pequeno y sin dependencias de GPU, se puede descargar y ejecutar en cada commit para verificar que las versiones de Gymnasium, NumPy y las utilidades de HuggingFace siguen siendo compatibles.
+- Pruebas de integracion en CI: al ser un artefacto pequeno y sin dependencias de GPU, se puede descargar y ejecutar en cada commit para verificar que las versiones de Gymnasium, NumPy y las utilidades de Hugging Face siguen siendo compatibles.
 - Estudio de sensibilidad a hiperparametros: la desviacion estandar declarada (2.71 sobre una media de 7.56) sugiere alta varianza entre episodios, lo que lo hace util para ilustrar el efecto de epsilon, la tasa de aprendizaje o el numero de episodios.
 - Prototipado de problemas de despacho y logistica simplificada: la formulacion de Taxi-v3 (recoger, transportar, entregar) es un banco de pruebas de bajo coste para algoritmos de planificacion antes de escalar a simuladores mas complejos.
 - Reproduccion de ejemplos de la libreria de RL: encaja en tutoriales que necesitan un agente preentrenado sin invertir tiempo de computo en entrenarlo.
@@ -62,7 +62,7 @@ Es el unico resultado declarado por el autor en el `model-index`. No se han publ
 - GPU recomendadas: ninguna; el agente se ejecuta en CPU.
 - Capacidad en GPU de consumo: no aplica, no necesita acelerador.
 - Memoria principal: el repositorio figura como 0.0 GB y el artefacto es un unico pickle, por lo que el consumo de RAM es despreciable (del orden de kilobytes en funcion de la implementacion de la tabla).
-- Opciones de despliegue: carga directa del pickle con las utilidades de HuggingFace (`load_from_hub`) y el entorno `gym.make(model["env_id"])`. No hay soporte para vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje.
+- Opciones de despliegue: carga directa del pickle con las utilidades de Hugging Face (`load_from_hub`) y el entorno `gym.make(model["env_id"])`. No hay soporte para vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje.
 - Latencia y throughput: no disponibles en la informacion proporcionada. Al tratarse de una consulta a una tabla, la latencia por paso en CPU es en la practica despreciable frente al coste del entorno.
 - Nota de compatibilidad: la model card pide comprobar si es necesario anadir atributos adicionales al entorno (`is_slippery=False` y similares). Hay que verificar tambien si el agente fue entrenado con `gym` o con `gymnasium`, porque las API no son intercambiables.
 
@@ -70,9 +70,9 @@ Es el unico resultado declarado por el autor en el `model-index`. No se han publ
 
 | Modelo | Tipo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| q-Taxi-v3 | Q-learning tabular | Taxi-v3 | 7.56 +/- 2.71 (no verificado) | No disponible | HuggingFace |
+| q-Taxi-v3 | Q-learning tabular | Taxi-v3 | 7.56 +/- 2.71 (no verificado) | No disponible | Hugging Face |
 | DQN sobre Taxi-v3 | Aproximacion funcional con red neuronal | Taxi-v3 | No disponible | No disponible | Habitualmente incluido en librerias de RL |
-| Agentes tabulares de RL Zoo (SB3) | Q-learning / SARSA tabular | Taxi-v3 y otros entornos discretos | No disponible | No disponible | HuggingFace y repositorios de RL Zoo |
+| Agentes tabulares de RL Zoo (SB3) | Q-learning / SARSA tabular | Taxi-v3 y otros entornos discretos | No disponible | No disponible | Hugging Face y repositorios de RL Zoo |
 
 No se dispone de resultados numericos de los modelos alternativos en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible. La diferencia conceptual relevante es que q-Taxi-v3 no generaliza entre estados, mientras que los agentes con aproximacion funcional si lo hacen, a cambio de mayor coste de entrenamiento y de una mayor dificultad de interpretacion.
 
@@ -91,7 +91,7 @@ No se dispone de resultados numericos de los modelos alternativos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yoga-0125/q-Taxi-v3
+- Modelo en Hugging Face: https://huggingface.co/yoga-0125/q-Taxi-v3
 - Fichero de pesos: https://huggingface.co/yoga-0125/q-Taxi-v3/blob/main/q-learning.pkl
 - Entorno Taxi-v3 (Gymnasium): https://gymnasium.farama.org/environments/toy_text/taxi/
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3

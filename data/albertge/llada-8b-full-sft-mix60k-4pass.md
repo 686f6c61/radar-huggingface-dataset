@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 - VRAM estimada para inferencia: el modelo tiene 8.015.581.184 parametros. En FP16, el peso ocupa aproximadamente 16 GB, por lo que se necesitan al menos 20-24 GB de VRAM para inferencia con margen para activaciones.
 - GPU recomendadas: NVIDIA A100 (40 GB o 80 GB), RTX 4090 (24 GB), o GPUs con al menos 24 GB de VRAM para inferencia en FP16.
 - En consumer GPU: cabe en una RTX 4090 (24 GB) con FP16, pero sin espacio para batch grande. Con cuantizacion a 8 bits o 4 bits (si estuviera disponible) podria ejecutarse en GPUs de 16 GB o menos.
-- Opciones de despliegue: al ser un modelo de transformers, puede utilizarse con las librerias estandar de HuggingFace. Para diffusion language models, el soporte en vLLM, TGI u Ollama no esta confirmado en la informacion disponible.
+- Opciones de despliegue: al ser un modelo de transformers, puede utilizarse con las librerias estandar de Hugging Face. Para diffusion language models, el soporte en vLLM, TGI u Ollama no esta confirmado en la informacion disponible.
 - Latencia y throughput: no disponible. Los modelos de difusion suelen tener latencia mayor que los autoregresivos debido al proceso iterativo de desenmascarado.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ La comparativa con LLaMA3 8B es relevante porque el paper original de LLaDA indi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/albertge/llada-8b-full-sft-mix60k-4pass
+- Modelo en Hugging Face: https://huggingface.co/albertge/llada-8b-full-sft-mix60k-4pass
 - Modelo base GSAI-ML/LLaDA-8B-Base: https://huggingface.co/GSAI-ML/LLaDA-8B-Base
 - Repositorio del autor (d1-registers): https://github.com/lbertge/d1-registers
 - Repositorio oficial de LLaDA: https://github.com/ML-GSAI/LLaDA

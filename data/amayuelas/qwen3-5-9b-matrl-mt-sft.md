@@ -74,10 +74,10 @@ Datos de comportamiento del modelo base (no son benchmarks, se incluyen por su v
 
 | Modelo | Parámetros | Contexto | Etapa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amayuelas/Qwen3.5-9B-MatRL-MT-SFT | 9,41 B | no disponible (entrenado a 16.384) | SFT de arranque en frío | Apache 2.0 | HuggingFace |
-| amayuelas/Qwen3.5-4B-MatRL-MT-SFT | no disponible (denominado 4B) | no disponible | SFT de arranque en frío, mismo corpus y calendario | no disponible | HuggingFace |
-| amayuelas/Qwen3.5-9B-MatRL-MT-RL | no disponible (deriva del anterior) | no disponible | RL posterior sobre el mismo entorno | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B | no disponible | no disponible | Modelo base sin ajustar | no disponible en la información | HuggingFace |
+| amayuelas/Qwen3.5-9B-MatRL-MT-SFT | 9,41 B | no disponible (entrenado a 16.384) | SFT de arranque en frío | Apache 2.0 | Hugging Face |
+| amayuelas/Qwen3.5-4B-MatRL-MT-SFT | no disponible (denominado 4B) | no disponible | SFT de arranque en frío, mismo corpus y calendario | no disponible | Hugging Face |
+| amayuelas/Qwen3.5-9B-MatRL-MT-RL | no disponible (deriva del anterior) | no disponible | RL posterior sobre el mismo entorno | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B | no disponible | no disponible | Modelo base sin ajustar | no disponible en la información | Hugging Face |
 
 La comparación relevante es interna a la familia: la variante de 4B permite aislar el efecto de la escala al compartir datos y esquema de entrenamiento, y la variante RL indica que este checkpoint es una etapa intermedia y no un modelo final para química.
 
@@ -96,7 +96,7 @@ La comparación relevante es interna a la familia: la variante de 4B permite ais
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amayuelas/Qwen3.5-9B-MatRL-MT-SFT
+- Modelo en Hugging Face: https://huggingface.co/amayuelas/Qwen3.5-9B-MatRL-MT-SFT
 - Dataset de entrenamiento: https://huggingface.co/datasets/amayuelas/matrl-sft-mt
 - Variante de 4B (mismo corpus y calendario): https://huggingface.co/amayuelas/Qwen3.5-4B-MatRL-MT-SFT
 - Checkpoint posterior de RL: https://huggingface.co/amayuelas/Qwen3.5-9B-MatRL-MT-RL

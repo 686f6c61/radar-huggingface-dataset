@@ -82,7 +82,7 @@ La informacion proporcionada no incluye parametros ni metricas de otros separado
 
 | Modelo | Parametros | Contexto/ventana | SDR publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| audiojs/scnet (esta ficha) | 10,1 M | 11 s por pasada | 9,88 vocals / 9,43 drums / 8,35 bass / 6,15 other | MIT | ONNX en HuggingFace |
+| audiojs/scnet (esta ficha) | 10,1 M | 11 s por pasada | 9,88 vocals / 9,43 drums / 8,35 bass / 6,15 other | MIT | ONNX en Hugging Face |
 | Demucs / HTDemucs | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Open-Unmix (UMX) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Spleeter | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -101,7 +101,7 @@ Se recomienda contrastar cualquier comparacion con las tablas publicadas por MUS
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/audiojs/scnet
+- Modelo en Hugging Face: https://huggingface.co/audiojs/scnet
 - Paper SCNet (ICASSP 2024): https://arxiv.org/abs/2401.13276
 - Repositorio original y pesos: https://github.com/starrytong/SCNet (commit 5d95bf96b19c3eede63248d171efeca8e3abb948)
 - Confirmacion de licencia MIT sobre los pesos: https://github.com/starrytong/SCNet/issues/35#issuecomment-4999873539

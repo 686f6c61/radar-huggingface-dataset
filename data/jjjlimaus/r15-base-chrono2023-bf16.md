@@ -2,7 +2,7 @@
 
 ## Resumen
 
-r15-base-chrono2023-bf16 es un modelo de la familia publicada por el usuario jjjlimaus en HuggingFace, con un total de 2.018.511.234 parametros (aproximadamente 2 B) almacenados en formato safetensors. Por su nombre y las etiquetas asociadas (sn38-nanochrono, chronollm, year-cutoff-2023), todo apunta a un modelo base (no ajustado para instrucciones) integrado en la serie "chrono"/"nanochrono", probablemente orientado a un corte de conocimiento fijado en 2023. El repositorio esta sujeto a acceso restringido (gated), por lo que no ha sido posible acceder a la model card completa ni verificar detalles de arquitectura, datos de entrenamiento o licencia.
+r15-base-chrono2023-bf16 es un modelo de la familia publicada por el usuario jjjlimaus en Hugging Face, con un total de 2.018.511.234 parametros (aproximadamente 2 B) almacenados en formato safetensors. Por su nombre y las etiquetas asociadas (sn38-nanochrono, chronollm, year-cutoff-2023), todo apunta a un modelo base (no ajustado para instrucciones) integrado en la serie "chrono"/"nanochrono", probablemente orientado a un corte de conocimiento fijado en 2023. El repositorio esta sujeto a acceso restringido (gated), por lo que no ha sido posible acceder a la model card completa ni verificar detalles de arquitectura, datos de entrenamiento o licencia.
 
 El modelo se distribuye unicamente en safetensors (precisión bf16 segun el propio nombre del repositorio), con un tamano de repo de 4,0 GB, coherente con un modelo de ~2 B de parametros en bf16 mas posibles ficheros auxiliares. No cuenta con descargas ni likes relevantes (2 descargas, 0 likes en el momento de la consulta) y fue creado y actualizado el 7 de octubre de 2026.
 
@@ -64,7 +64,7 @@ Estimaciones basadas en el tamano confirmado de 2.018.511.234 parametros. Al no 
   - INT4: aproximadamente 1-1,5 GB de pesos.
 - GPU recomendadas: cualquier GPU con >= 8 GB de VRAM en fp16 (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090, A10, L4, A100, H100). Para INT4 bastan GPUs con 4-6 GB.
 - Cabe en GPU de consumo: si, en la mayoria de GPU modernas de gama media y alta. En bf16 completo conviene disponer de al menos 8 GB de VRAM; en cuantizacion INT4 puede ejecutarse en GPUs de 4-6 GB.
-- Opciones de despliegue: al distribuirse solo en safetensors, los frameworks mas directos son transformers (HuggingFace), vLLM y TGI para servido en GPU. Para GPU de bajos recursos o CPU seria necesario convertir previamente a GGUF y usar llama.cpp u Ollama, ya que el repositorio no ofrece ficheros GGUF.
+- Opciones de despliegue: al distribuirse solo en safetensors, los frameworks mas directos son transformers (Hugging Face), vLLM y TGI para servido en GPU. Para GPU de bajos recursos o CPU seria necesario convertir previamente a GGUF y usar llama.cpp u Ollama, ya que el repositorio no ofrece ficheros GGUF.
 - Latencia y throughput: no disponible (no se han publicado mediciones; dependera del hardware y de la cuantizacion).
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ Comparacion de rendimiento: no disponible para el modelo objeto de la ficha, al 
 ## Limitaciones y advertencias
 
 - Ausencia de model card accesible: no hay informacion verificable sobre arquitectura, entrenamiento o datos utilizados, lo que impide evaluar su idoneidad para un caso concreto.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace para descargar los pesos; esto puede limitar su uso en pipelines automatizados si no se dispone de token con permisos.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face para descargar los pesos; esto puede limitar su uso en pipelines automatizados si no se dispone de token con permisos.
 - Licencia no declarada: no puede confirmarse si se permite el uso comercial. En ausencia de licencia explicita, debe asumirse que el uso comercial no esta autorizado hasta que el autor lo aclare.
 - Riesgo de alucinacion: no cuantificado; al ser presumiblemente un modelo base, la generacion de contenido falso o incoherente es esperable sin ajuste y sin tecnicas de mitigacion.
 - Sesgos conocidos: no documentados. Cualquier sesgo derivado de los datos de entrenamiento es desconocido.
@@ -94,8 +94,8 @@ Comparacion de rendimiento: no disponible para el modelo objeto de la ficha, al 
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/jjjlimaus/r15-base-chrono2023-bf16
-- Pagina del autor en HuggingFace: https://huggingface.co/jjjlimaus/models
+- Hugging Face (modelo): https://huggingface.co/jjjlimaus/r15-base-chrono2023-bf16
+- Pagina del autor en Hugging Face: https://huggingface.co/jjjlimaus/models
 - Modelo relacionado de la misma familia: https://huggingface.co/jjjlimaus/chrono2-2023-v4gold-sft
 - Listado externo de modelos gratuitos (referencia general): https://github.com/ClawLabsAI/free-ai-models
 - Leaderboard de LLM (referencia general): https://modelgrep.com/leaderboard

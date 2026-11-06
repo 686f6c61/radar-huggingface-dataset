@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento ni de parametros de modelos alternativos e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fr0stb1rd/ema-lightning-web-onnx
+- Modelo en Hugging Face: https://huggingface.co/fr0stb1rd/ema-lightning-web-onnx
 - Modelo base: https://huggingface.co/canberkkkkkk/ema-lightning
 - Repositorio del modelo original: https://github.com/canberk7/ema-lightning
 - Repositorio de la conversion web: https://github.com/fr0stb1rd/ema-lightning-web

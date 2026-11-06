@@ -4,7 +4,7 @@
 
 `MarcusVinicius21/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `LunarLander-v3`, implementado con la biblioteca `stable-baselines3`. No es un modelo de lenguaje ni un modelo fundacional: se trata de una política neuronal que resuelve una tarea de control concreta, la de pilotar un módulo de aterrizaje en dos dimensiones hasta posarse de forma estable sobre una plataforma.
 
-El autor publica el modelo en HuggingFace con la etiqueta `reinforcement-learning` y el pipeline oficial de la plataforma para esta categoría. La model card es mínima: incluye los metadatos `library_name` y `model-index`, y un bloque de uso que permanece como `TODO`, sin código de ejemplo funcional. Esto limita la reproducibilidad directa, ya que no se documentan hiperparámetros de entrenamiento, semillas, número de pasos ni configuración de red.
+El autor publica el modelo en Hugging Face con la etiqueta `reinforcement-learning` y el pipeline oficial de la plataforma para esta categoría. La model card es mínima: incluye los metadatos `library_name` y `model-index`, y un bloque de uso que permanece como `TODO`, sin código de ejemplo funcional. Esto limita la reproducibilidad directa, ya que no se documentan hiperparámetros de entrenamiento, semillas, número de pasos ni configuración de red.
 
 Su relevancia es acotada pero clara: sirve como referencia reproducible de PPO en un entorno clásico de control, como material didáctico para cursos de RL y como punto de partida para experimentos de comparación de algoritmos. El repositorio declara 0 descargas y 0 likes, y el tamaño indicado del repo es 0.0 GB.
 
@@ -24,8 +24,8 @@ Su relevancia es acotada pero clara: sirve como referencia reproducible de PPO e
 | Algoritmo | PPO |
 | Biblioteca | stable-baselines3 |
 | Tipo de tarea | reinforcement-learning |
-| Fecha de creacion declarada | 2026-09-20 (segun los metadatos de HuggingFace) |
-| Fecha de ultima actualizacion declarada | 2026-09-20 (segun los metadatos de HuggingFace) |
+| Fecha de creacion declarada | 2026-09-20 (segun los metadatos de Hugging Face) |
+| Fecha de ultima actualizacion declarada | 2026-09-20 (segun los metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -78,7 +78,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MarcusVinicius21/ppo-LunarLander-v3 | no disponible | no aplica | mean_reward 265.52 +/- 27.78 (no verificado) | no disponible | HuggingFace |
+| MarcusVinicius21/ppo-LunarLander-v3 | no disponible | no aplica | mean_reward 265.52 +/- 27.78 (no verificado) | no disponible | Hugging Face |
 | Otros agentes PPO o DQN para LunarLander-v3 | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,6 +96,6 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MarcusVinicius21/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/MarcusVinicius21/ppo-LunarLander-v3
 - Repositorio de stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre este modelo; los resultados devueltos corresponden a hilos de foros sin relacion con el mismo.

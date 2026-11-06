@@ -2,7 +2,7 @@
 
 ## Resumen
 
-marmotan/my_test_model es un adaptador LoRA de difusion para generacion de imagenes a partir de texto (text-to-image), publicado en HuggingFace por el usuario marmotan. Se distribuye para la libreria diffusers y esta vinculado al modelo base krea/Krea-2-Turbo, sobre el que se aplica como adaptador de bajo rango. Su unico prompt de activacion documentado es la palabra `alice`, lo que apunta a un entrenamiento de un unico concepto o personaje.
+marmotan/my_test_model es un adaptador LoRA de difusion para generacion de imagenes a partir de texto (text-to-image), publicado en Hugging Face por el usuario marmotan. Se distribuye para la libreria diffusers y esta vinculado al modelo base krea/Krea-2-Turbo, sobre el que se aplica como adaptador de bajo rango. Su unico prompt de activacion documentado es la palabra `alice`, lo que apunta a un entrenamiento de un unico concepto o personaje.
 
 El repositorio ocupa 0,5 GB y su model card es minima: incluye una galeria (vacia en la informacion disponible), la seccion de trigger words y un enlace de descarga, pero no documenta arquitectura interna, rango del LoRA, dataset de entrenamiento, licencia ni idiomas. El identificador "my_test_model" y las fechas de creacion y actualizacion (25 de septiembre de 2026, con menos de un minuto entre ambas) sugieren una publicacion de prueba mas que un artefacto destinado a produccion.
 
@@ -76,7 +76,7 @@ No se conocen adaptadores directamente comparables en la informacion proporciona
 | Longitud de contexto | no aplica | no aplica | no aplica | no aplica |
 | Rendimiento medido | no publicado | habitualmente publicado por el autor | habitualmente publicado por el autor | depende del modelo |
 | Licencia | no disponible | variable segun el autor | variable segun el autor | no disponible para Krea-2-Turbo en esta informacion |
-| Disponibilidad | publico en HuggingFace, 0 descargas | publica en HuggingFace | publica en HuggingFace | publica en HuggingFace |
+| Disponibilidad | publico en Hugging Face, 0 descargas | publica en Hugging Face | publica en Hugging Face | publica en Hugging Face |
 | Coste de entrenamiento | no disponible | bajo (adaptador de bajo rango) | alto | no aplica |
 | Aplicable solo a su base | si, previsiblemente | si, previsiblemente | si | no aplica |
 
@@ -95,6 +95,6 @@ No se conocen adaptadores directamente comparables en la informacion proporciona
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/marmotan/my_test_model
+- Pagina del modelo en Hugging Face: https://huggingface.co/marmotan/my_test_model
 - Ficheros del repositorio: https://huggingface.co/marmotan/my_test_model/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo

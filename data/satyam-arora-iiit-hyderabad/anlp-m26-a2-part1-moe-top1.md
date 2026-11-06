@@ -6,7 +6,7 @@
 
 Su relevancia es fundamentalmente didactica y experimental: con 19.847.040 parametros totales y solo 14.538.624 parametros activos por token, es un ejemplo compacto y reproducible de MoE con enrutamiento top-1 aplicado a traduccion multilingue. Ese desacoplamiento entre parametros totales y activos permite estudiar el compromiso entre capacidad del modelo y coste computacional por token en un rango de tamano que cabe en cualquier GPU de consumo.
 
-El checkpoint publicado corresponde a la evaluacion final con presupuesto fijo de tokens de contexto (no a un checkpoint con early stopping), y se acompana de ficheros de metricas legibles por maquina, tokenizador BPE a nivel de byte y ficheros de uso de expertos en CSV, JSON y SVG. La model card no declara licencia, y el codigo de carga de la arquitectura reside en el repositorio de la asignatura, no en el repositorio de HuggingFace.
+El checkpoint publicado corresponde a la evaluacion final con presupuesto fijo de tokens de contexto (no a un checkpoint con early stopping), y se acompana de ficheros de metricas legibles por maquina, tokenizador BPE a nivel de byte y ficheros de uso de expertos en CSV, JSON y SVG. La model card no declara licencia, y el codigo de carga de la arquitectura reside en el repositorio de la asignatura, no en el repositorio de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - VRAM estimada para inferencia: aproximadamente 80 MB en FP32 y 40 MB en FP16 para los pesos, calculado a partir de los 19.847.040 parametros; a ello hay que sumar la memoria de activaciones y la cache KV, cuyo tamano depende de la longitud de contexto no especificada.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente, incluidas GTX 1050, RTX 3050, RTX 4090, A100 o H100; el modelo queda muy por debajo de la capacidad de cualquiera de ellas.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU de consumo de los ultimos diez anos, y tambien en CPU.
-- Opciones de despliegue: el repositorio solo distribuye pesos PyTorch (`model.pt`) y el codigo de carga de la arquitectura personalizada se encuentra en el repositorio de la asignatura, no en HuggingFace. No se declara compatibilidad con vLLM, llama.cpp, Ollama, TGI ni con formatos GGUF, de modo que el despliegue estandar exige cargar el checkpoint con el codigo propio del autor.
+- Opciones de despliegue: el repositorio solo distribuye pesos PyTorch (`model.pt`) y el codigo de carga de la arquitectura personalizada se encuentra en el repositorio de la asignatura, no en Hugging Face. No se declara compatibilidad con vLLM, llama.cpp, Ollama, TGI ni con formatos GGUF, de modo que el despliegue estandar exige cargar el checkpoint con el codigo propio del autor.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No se han proporcionado en la informacion disponible datos de benchmarks ni espe
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| anlp-m26-a2-part1-moe-top1 | 19.847.040 totales / 14.538.624 activos | no disponible | no disponible | Pesos PyTorch en HuggingFace; codigo de carga en repositorio externo |
+| anlp-m26-a2-part1-moe-top1 | 19.847.040 totales / 14.538.624 activos | no disponible | no disponible | Pesos PyTorch en Hugging Face; codigo de carga en repositorio externo |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 Como referencia cualitativa, este checkpoint pertenece a la categoria de modelos de traduccion neuronal de muy bajo parametraje, un segmento en el que existen otras familias publicas de traduccion multilingue, pero la informacion facilitada no incluye sus cifras y no se replican aqui.
@@ -100,7 +100,7 @@ Como referencia cualitativa, este checkpoint pertenece a la categoria de modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/satyam-arora-iiit-hyderabad/anlp-m26-a2-part1-moe-top1
+- Modelo en Hugging Face: https://huggingface.co/satyam-arora-iiit-hyderabad/anlp-m26-a2-part1-moe-top1
 - Dataset de entrenamiento: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - Codigo de la arquitectura y de carga: alojado en el repositorio de la asignatura ANLP, no enlazado en la model card (no disponible)
 - Paper o publicacion asociada: no disponible

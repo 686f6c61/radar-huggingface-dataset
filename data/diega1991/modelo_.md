@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Diega1991/Modelo_` es un repositorio alojado en HuggingFace por el usuario Diega1991 que, a fecha de la informacion disponible, no contiene documentacion tecnica utilizable: su model card se limita a la linea de metadatos `license: creativeml-openrail-m` y el repositorio no declara pipeline, idiomas, arquitectura ni tamano. El unico etiquetado adicional es `region:us`. El repositorio registra 0 descargas y 0 likes, y sus marcas temporales de creacion y ultima actualizacion son identicas (2026-09-21T17:37:05Z), lo que es compatible con un repositorio recien creado, una plantilla sin contenido o un placeholder.
+`Diega1991/Modelo_` es un repositorio alojado en Hugging Face por el usuario Diega1991 que, a fecha de la informacion disponible, no contiene documentacion tecnica utilizable: su model card se limita a la linea de metadatos `license: creativeml-openrail-m` y el repositorio no declara pipeline, idiomas, arquitectura ni tamano. El unico etiquetado adicional es `region:us`. El repositorio registra 0 descargas y 0 likes, y sus marcas temporales de creacion y ultima actualizacion son identicas (2026-09-21T17:37:05Z), lo que es compatible con un repositorio recien creado, una plantilla sin contenido o un placeholder.
 
 No es posible determinar que problema resuelve el modelo, cual es su arquitectura, su numero de parametros ni su ventana de contexto, porque ninguno de esos datos aparece en la informacion proporcionada. Tampoco hay pesos, ficheros de configuracion, tokenizador ni resultados de evaluacion descritos. La busqueda web realizada no ha devuelto ningun resultado relacionado con este repositorio ni con su autor: los enlaces recuperados corresponden a la figura publica Imran Khan y no guardan relacion alguna con el modelo.
 
@@ -81,5 +81,5 @@ No disponible. Al desconocerse la categoria del modelo (lenguaje, vision, difusi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Diega1991/Modelo_
+- Repositorio en Hugging Face: https://huggingface.co/Diega1991/Modelo_
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada. Los resultados recuperados (Wikipedia, Al Jazeera, Le Monde, entre otros) tratan sobre Imran Khan y no guardan relacion con el modelo.

@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/well9472/semantic_vae
+- Modelo en Hugging Face: https://huggingface.co/well9472/semantic_vae
 - Modelo relacionado (Nanosaur-250M): https://huggingface.co/well9472/Nanosaur-250M
 - Repositorio de Semantic-VAE (speech, otro proyecto): https://github.com/ZhikangNiu/Semantic-VAE
 - Paper de Semantic-VAE (speech): https://arxiv.org/abs/2509.22167

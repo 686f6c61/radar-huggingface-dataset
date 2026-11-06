@@ -68,7 +68,7 @@ No disponible. No se han encontrado en la información proporcionada otras LoRAs
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/spyrostheboss/Maitreyi_Ramakrishnan_Krea_2_LoRA
+- Repositorio Hugging Face: https://huggingface.co/spyrostheboss/Maitreyi_Ramakrishnan_Krea_2_LoRA
 - Implementación de Krea 2 (GitHub): https://github.com/krea-ai/krea-2
 - Sitio web de Krea: https://www.krea.ai/
 - Perfil de Instagram de Maitreyi Ramakrishnan: https://www.instagram.com/maitreyiramakrishnan/

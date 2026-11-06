@@ -77,7 +77,7 @@ No se dispone de datos suficientes para una comparativa exhaustiva con otros mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/spiritfather/Melinoe-Qwen3-8-27B-VL-GGUF
+- Repositorio Hugging Face: https://huggingface.co/spiritfather/Melinoe-Qwen3-8-27B-VL-GGUF
 - Modelo base: https://huggingface.co/bgg1996/Melinoe-Qwen3-8-27B-VL
 - Cuantizacion Q4_K_M del modelo base: https://huggingface.co/bgg1996/Melinoe-Qwen3-8-27B-VL-Q4_K_M-GGUF
 - Documentacion vLLM Ascend para Qwen3.8-27B: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-27B.html

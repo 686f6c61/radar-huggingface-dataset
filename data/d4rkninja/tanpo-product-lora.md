@@ -88,7 +88,7 @@ Nota: un adaptador LoRA no es directamente comparable con un modelo completo; la
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/d4rkninja/tanpo-product-LoRA
+- Pagina del modelo en Hugging Face: https://huggingface.co/d4rkninja/tanpo-product-LoRA
 - Modelo base: https://huggingface.co/unsloth/LFM2.5-1.2B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo (los resultados obtenidos correspondian a documentacion de soporte de Microsoft y no guardan relacion con la ficha).

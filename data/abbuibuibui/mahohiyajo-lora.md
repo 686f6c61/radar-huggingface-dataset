@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ev
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MahoHiyajo-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | rango 64, alpha 32 | no aplica | creativeml-openrail-m | HuggingFace, ModelScope |
-| LoRA de personaje SDXL generico | LoRA de personaje | SDXL 1.0 | variable | no aplica | variable (frecuentemente OpenRAIL-M) | HuggingFace, Civitai |
+| MahoHiyajo-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | rango 64, alpha 32 | no aplica | creativeml-openrail-m | Hugging Face, ModelScope |
+| LoRA de personaje SDXL generico | LoRA de personaje | SDXL 1.0 | variable | no aplica | variable (frecuentemente OpenRAIL-M) | Hugging Face, Civitai |
 | Modelo base waiIllustriousSDXL v17 | Modelo completo | SDXL | no disponible | no aplica | no disponible | no disponible |
-| SDXL 1.0 (Stability AI) | Modelo completo | - | ~2.600 M (UNet) + text encoders | no aplica | CreativeML OpenRAIL++-M | HuggingFace |
+| SDXL 1.0 (Stability AI) | Modelo completo | - | ~2.600 M (UNet) + text encoders | no aplica | CreativeML OpenRAIL++-M | Hugging Face |
 
 La comparacion con otros LoRA de personaje no puede hacerse con datos cuantitativos porque no se han publicado metricas. La diferencia practica frente a un LoRA generico es la disponibilidad de checkpoints por epoca, tokens de vestuario documentados y una evaluacion visual publica con parametros reproducibles.
 
@@ -81,7 +81,7 @@ La comparacion con otros LoRA de personaje no puede hacerse con datos cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abbuibuibui/MahoHiyajo-Lora
+- Hugging Face: https://huggingface.co/abbuibuibui/MahoHiyajo-Lora
 - ModelScope: https://www.modelscope.cn/models/abbuibuibui/MahoHiyajo-Lora
 - Dataset: https://huggingface.co/datasets/abbuibuibui/MahoHiyajo-Dataset
-- Notas de evaluacion (chino): `evaluation/横向测评记录.md` dentro del repositorio de HuggingFace
+- Notas de evaluacion (chino): `evaluation/横向测评记录.md` dentro del repositorio de Hugging Face

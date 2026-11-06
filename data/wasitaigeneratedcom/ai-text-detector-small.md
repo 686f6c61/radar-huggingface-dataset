@@ -63,7 +63,7 @@ Además, se menciona que en el conjunto de ensayos TOEFL de Liang et al. (2023),
 - Inferencia en CPU: el modelo pesa 1.7 GB y está diseñado para ejecutarse sin GPU, por lo que cabe en sistemas con 4-8 GB de RAM disponibles.
 - GPU recomendada: no es necesaria; si se desea acelerar, cualquier GPU con al menos 4 GB de VRAM puede cargar el modelo en FP32, aunque no se proporcionan mediciones de latencia.
 - Compatible con GPUs de consumo como RTX 3060 o superiores si se quiere acelerar la inferencia.
-- Opciones de despliegue: el código de ejemplo usa la librería `transformers` de HuggingFace; no se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: el código de ejemplo usa la librería `transformers` de Hugging Face; no se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles en la documentación proporcionada.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ Tropa-mini supera a todos en ROC-AUC y en detección de texto IA en bruto y huma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wasitaigeneratedcom/ai-text-detector-small
+- Repositorio Hugging Face: https://huggingface.co/wasitaigeneratedcom/ai-text-detector-small
 - Sitio web del desarrollador: https://www.wasitaigenerated.com/
 - API de detección de IA (tropa-2): https://www.wasitaigenerated.com/ai-detector-api
 - Dataset Jabarian & Imas (2025): https://github.com/brianjabarian/DetectionAI

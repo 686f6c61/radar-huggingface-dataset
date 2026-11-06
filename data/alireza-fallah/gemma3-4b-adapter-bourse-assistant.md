@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma3-4b-adapter-bourse-assistant (este modelo) | ~4 000 M (base) | No disponible en el ajuste; 128 000 tokens en el base | apache-2.0 en el repo, con los terminos de Gemma 3 del base | Ajuste vertical para bolsa en persa | HuggingFace, 0 descargas |
-| unsloth/gemma-3-4b-it | ~4 000 M | 128 000 tokens (segun el modelo base) | Terminos de uso de Gemma | Modelo base instructivo, multilingue | HuggingFace, alta adopcion |
-| Llama 3.2 3B Instruct | 3 210 M | 128 000 tokens | Licencia comunitaria de Llama 3.2 | Modelo instructivo generalista | HuggingFace, muy alta adopcion |
-| Qwen2.5 3B Instruct | 3 090 M | 32 000 tokens nativos, ampliable con YaRN | Licencia especifica de Qwen para la variante de 3B | Modelo instructivo generalista, fuerte en multilingue | HuggingFace, muy alta adopcion |
+| gemma3-4b-adapter-bourse-assistant (este modelo) | ~4 000 M (base) | No disponible en el ajuste; 128 000 tokens en el base | apache-2.0 en el repo, con los terminos de Gemma 3 del base | Ajuste vertical para bolsa en persa | Hugging Face, 0 descargas |
+| unsloth/gemma-3-4b-it | ~4 000 M | 128 000 tokens (segun el modelo base) | Terminos de uso de Gemma | Modelo base instructivo, multilingue | Hugging Face, alta adopcion |
+| Llama 3.2 3B Instruct | 3 210 M | 128 000 tokens | Licencia comunitaria de Llama 3.2 | Modelo instructivo generalista | Hugging Face, muy alta adopcion |
+| Qwen2.5 3B Instruct | 3 090 M | 32 000 tokens nativos, ampliable con YaRN | Licencia especifica de Qwen para la variante de 3B | Modelo instructivo generalista, fuerte en multilingue | Hugging Face, muy alta adopcion |
 
 Los datos de los tres modelos comparativos proceden de sus fichas publicas y conviene verificarlos en la fuente original antes de tomar decisiones. No hay datos de rendimiento del modelo objeto de esta ficha, por lo que no es posible comparar calidad de tarea.
 
@@ -98,7 +98,7 @@ Los datos de los tres modelos comparativos proceden de sus fichas publicas y con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alireza-fallah/gemma3-4b-adapter-bourse-assistant
+- Modelo en Hugging Face: https://huggingface.co/alireza-fallah/gemma3-4b-adapter-bourse-assistant
 - Modelo base: https://huggingface.co/unsloth/gemma-3-4b-it
 - Dataset de ajuste supervisado: https://huggingface.co/datasets/alireza-fallah/bourse-assistant-sft
 - Dataset de refinamiento por refuerzo: https://huggingface.co/datasets/alireza-fallah/bourse-assistant-rl

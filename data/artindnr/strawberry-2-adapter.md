@@ -65,6 +65,6 @@ No se han encontrado modelos comparables documentados en la información disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/artindnr/Strawberry-2-adapter
+- Hugging Face: https://huggingface.co/artindnr/Strawberry-2-adapter
 - Colección del autor: https://huggingface.co/collections/artindnr/strawberry
 - LLM Explorer (entrada para "Strawberry"): https://llm-explorer.com/model/artindnr%2FStrawberry,5W2aWYrUSjOVy2eyXfxtnr

@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parametros | Arquitectura | Idioma | Licencia | Disponibilidad de pesos |
 |---|---|---|---|---|---|
 | Mezna-TTS-82M | 82M | StyleTTS2 + ISTFTNet | Árabe emiratí (ar-AE) | Apache-2.0 | No publicados (repo 0.0 GB) |
-| Kokoro-82M (hexgrad) | 82M | StyleTTS2 + ISTFTNet | Multilingüe (incluye inglés, japonés, etc.) | Apache-2.0 | Publicados en HuggingFace |
+| Kokoro-82M (hexgrad) | 82M | StyleTTS2 + ISTFTNet | Multilingüe (incluye inglés, japonés, etc.) | Apache-2.0 | Publicados en Hugging Face |
 | Modelos TTS comerciales (Azure Edge) | no disponible | Red neuronal propietaria | Árabe emiratí (ar-AE) | Propietaria | Solo mediante API |
 
 No se han encontrado más modelos comparables en la información disponible. Mezna-TTS-82M se diferencia de Kokoro-82M por su frontend específico para el dialecto emiratí y su léxico de pronunciación, pero al carecer de pesos publicados, su funcionalidad real depende actualmente de la voz de Edge como solución provisional.
@@ -81,6 +81,6 @@ No se han encontrado más modelos comparables en la información disponible. Mez
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/seyhunak/Mezna-TTS-82M
+- Hugging Face: https://huggingface.co/seyhunak/Mezna-TTS-82M
 - Modelo base Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M
 - (Los resultados de búsqueda web no aportan enlaces adicionales relevantes; los hilos de DATEV Community son ajenos al modelo.)

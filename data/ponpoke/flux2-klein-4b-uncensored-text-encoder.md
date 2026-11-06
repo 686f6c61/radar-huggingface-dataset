@@ -71,6 +71,6 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ponpoke/flux2-klein-4b-uncensored-text-encoder
+- Repositorio Hugging Face: https://huggingface.co/ponpoke/flux2-klein-4b-uncensored-text-encoder
 - Wiki sobre generacion de imagenes sin censura (referencia a FLUX.2 Klein): https://github.com/cemini23/uncensored-image-gen-wiki/blob/main/wiki/entities/models/flux-2-klein.md
 - Repositorio oficial de inferencia de FLUX.2 (text encoder original): https://github.com/VladimirRL/flux2-klein-4b/blob/main/src/flux2/text_encoder.py

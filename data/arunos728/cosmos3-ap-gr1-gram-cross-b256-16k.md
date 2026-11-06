@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `arunos728/cosmos3-ap-gr1-gram-cross-b256-16k` es un artefacto alojado en HuggingFace por el usuario `arunos728`. Fue creado el 13 de septiembre de 2026 y actualizado el mismo dia, con un tamano de repositorio de 91,1 GB. Acumula 0 descargas y 5 "likes" en el momento de la consulta, y no declara licencia, idiomas soportados, pipeline de inferencia ni tarjeta de modelo con documentacion tecnica.
+El repositorio `arunos728/cosmos3-ap-gr1-gram-cross-b256-16k` es un artefacto alojado en Hugging Face por el usuario `arunos728`. Fue creado el 13 de septiembre de 2026 y actualizado el mismo dia, con un tamano de repositorio de 91,1 GB. Acumula 0 descargas y 5 "likes" en el momento de la consulta, y no declara licencia, idiomas soportados, pipeline de inferencia ni tarjeta de modelo con documentacion tecnica.
 
 No existe informacion publica verificable sobre su arquitectura, numero de parametros, datos de entrenamiento ni capacidades. El identificador sigue un patron habitual en checkpoints experimentales (prefijo de familia, indicadores de estrategia de atencion o de paralelismo y un sufijo de ventana de contexto), pero ningun dato oficial confirma esa lectura. El unico metadato estructural disponible es la etiqueta `region:us`, que indica la region de alojamiento del repositorio, no una caracteristica del modelo.
 
@@ -37,7 +37,7 @@ Tampoco se documenta el numero de tokens de entrenamiento, la composicion del da
 
 No disponible. No se ha publicado ninguna descripcion de las capacidades del modelo. No hay evidencia de soporte de generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, function calling, uso agentico, modo de pensamiento (thinking) ni cobertura multilingue.
 
-El unico metadato presente en la ficha de HuggingFace es la etiqueta `region:us`, que describe la ubicacion de alojamiento del repositorio y no implica ninguna funcionalidad.
+El unico metadato presente en la ficha de Hugging Face es la etiqueta `region:us`, que describe la ubicacion de alojamiento del repositorio y no implica ninguna funcionalidad.
 
 ## Casos de uso
 
@@ -91,7 +91,7 @@ No disponible. No es posible determinar una categoria de comparacion porque se d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arunos728/cosmos3-ap-gr1-gram-cross-b256-16k
+- Hugging Face: https://huggingface.co/arunos728/cosmos3-ap-gr1-gram-cross-b256-16k
 - Paper: no disponible
 - Blog o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Panini-00 18M es un checkpoint de traducción automática de frases entre hindi y sánscrito, ambos en escritura devanagari, publicado por el usuario akashchauhan en HuggingFace. Se trata de un modelo pequeño (18.143.616 parámetros) entrenado desde cero con PyTorch y distribuido como checkpoint propio (`checkpoint.pt`) más un tokenizador SentencePiece de 16.000 piezas, por lo que no es un modelo Transformers estándar y no se puede cargar con `AutoModelForSeq2SeqLM`. Cubre cinco tareas: traducción hindi→sánscrito, sánscrito→hindi, "sanscritización" del hindi (sustitución de léxico hindi por equivalentes sánscritos), corrección gramatical del hindi y corrección gramatical del sánscrito.
+Panini-00 18M es un checkpoint de traducción automática de frases entre hindi y sánscrito, ambos en escritura devanagari, publicado por el usuario akashchauhan en Hugging Face. Se trata de un modelo pequeño (18.143.616 parámetros) entrenado desde cero con PyTorch y distribuido como checkpoint propio (`checkpoint.pt`) más un tokenizador SentencePiece de 16.000 piezas, por lo que no es un modelo Transformers estándar y no se puede cargar con `AutoModelForSeq2SeqLM`. Cubre cinco tareas: traducción hindi→sánscrito, sánscrito→hindi, "sanscritización" del hindi (sustitución de léxico hindi por equivalentes sánscritos), corrección gramatical del hindi y corrección gramatical del sánscrito.
 
 El modelo resuelve un problema muy concreto y de nicho: no existe una oferta amplia de traductores neurálgicos ligeros y ejecutables en CPU para el par hindi–sánscrito, un par de lenguas con recursos limitados y con una relación histórica de préstamo léxico intensa. Con 8 capas, ancho 384 y un contexto máximo de 512 tokens (incluido el prompt), está diseñado para inferencia en CPU y para integrarse en herramientas de normalización o corrección lingüística más que como motor de traducción generalista.
 
@@ -98,11 +98,11 @@ Nota: los datos de IndicTrans2 y NLLB-200 se incluyen como referencia de categor
 - Sin validación de la comunidad: 0 descargas y 0 likes en el momento de redactar esta ficha, sin issues ni discusiones públicas que permitan contrastar la calidad declarada.
 - Datos de entrenamiento no auditables: se desconocen la procedencia, la composición y la limpieza del corpus, lo que impide evaluar sesgos de dominio (por ejemplo, predominio de textos religiosos o literarios) y el riesgo de contaminación entre preentrenamiento y supervisión.
 - Posible sesgo de registro: la tarea `sanskritize_hindi` empuja el texto hacia un registro sánscrito elevado, lo que puede no ser apropiado ni deseable en contextos de hindi contemporáneo estándar.
-- Metadatos inconsistentes: las fechas de creación y actualización registradas en HuggingFace (2026-09-27) no permiten situar el modelo en una línea temporal verificable.
+- Metadatos inconsistentes: las fechas de creación y actualización registradas en Hugging Face (2026-09-27) no permiten situar el modelo en una línea temporal verificable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akashchauhan/panini-00-18m
+- Modelo en Hugging Face: https://huggingface.co/akashchauhan/panini-00-18m
 - Código de referencia (rama `experiment/010-hindi-sanskrit`): https://github.com/midroid/ai-models/tree/experiment/010-hindi-sanskrit/experiments/language/010-hindi-sanskrit-slm
 
 Las búsquedas web realizadas no devolvieron documentación adicional sobre este modelo. Los resultados obtenidos no guardan relación con el checkpoint, salvo la coincidencia de nombre en un caso:

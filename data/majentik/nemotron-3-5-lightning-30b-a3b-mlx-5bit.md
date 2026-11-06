@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La b�
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos directos con otros modelos en la información proporcionada. El modelo base compite con alternativas como Llama 3.1 70B, Qwen 2.5 32B o Mixtral 8x7B, pero no se han publicado comparativas específicas. La cuantización MLX 5-bit es comparable a otras versiones cuantizadas del mismo modelo (2, 3, 4, 6, 8 bits y MXFP4) disponibles en el mismo perfil de HuggingFace.
+No se dispone de datos comparativos directos con otros modelos en la información proporcionada. El modelo base compite con alternativas como Llama 3.1 70B, Qwen 2.5 32B o Mixtral 8x7B, pero no se han publicado comparativas específicas. La cuantización MLX 5-bit es comparable a otras versiones cuantizadas del mismo modelo (2, 3, 4, 6, 8 bits y MXFP4) disponibles en el mismo perfil de Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -74,8 +74,8 @@ No se dispone de datos comparativos directos con otros modelos en la informació
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/majentik/Nemotron-3.5-Lightning-30B-A3B-MLX-5bit
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
+- Repositorio Hugging Face: https://huggingface.co/majentik/Nemotron-3.5-Lightning-30B-A3B-MLX-5bit
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Página del modelo en NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard
 - Ficha en benchgen.com: https://benchgen.com/models/nvidia/nemotron-3-5-lightning-30b-a3b
 - Catálogo NGC de NVIDIA: https://catalog.ngc.nvidia.com/orgs/nim/nvidia/models/nemotron-3.5-lightning

@@ -97,7 +97,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PrblyElect/DeepSeek-V4.1-Flash-TP3-3x-DGX-Spark
+- Repositorio Hugging Face: https://huggingface.co/PrblyElect/DeepSeek-V4.1-Flash-TP3-3x-DGX-Spark
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Fork de vLLM eugr b12x: no disponible en la información proporcionada.
 - Paper, blog o demo oficial: no disponible en la información proporcionada.

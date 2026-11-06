@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swin-t-checkpoint es un repositorio publicado por el usuario chenkennyka en HuggingFace que contiene una implementación funcional de Swin Transformer en su variante Tiny (Swin T), configurada para aprendizaje multitarea con escala "base". Se trata de un modelo de visión por computador, no de un modelo de lenguaje: sus entradas son imágenes y su salida depende de las cabezas de tarea que se le añadan. La configuración declara atención dilatada, fusión de características mediante descomposición de Tucker, activación mish y normalización por lotes (batchnorm).
+Swin-t-checkpoint es un repositorio publicado por el usuario chenkennyka en Hugging Face que contiene una implementación funcional de Swin Transformer en su variante Tiny (Swin T), configurada para aprendizaje multitarea con escala "base". Se trata de un modelo de visión por computador, no de un modelo de lenguaje: sus entradas son imágenes y su salida depende de las cabezas de tarea que se le añadan. La configuración declara atención dilatada, fusión de características mediante descomposición de Tucker, activación mish y normalización por lotes (batchnorm).
 
 El aspecto más relevante es su estado: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un checkpoint entrenado, y que el repositorio no reclama ninguna puntuación de benchmark. Se distribuye junto a `config.json`, `training_args.json` y `finetune.py`, con una receta por defecto basada en optimizador Adam y planificador de tasa de aprendizaje de tipo step.
 
@@ -21,7 +21,7 @@ Por tanto, su interés es experimental y metodológico: sirve como punto de part
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors (acompañado de `config.json`, `training_args.json` y `finetune.py`) |
 
-Otros datos de la model card: activación mish, normalización batchnorm, optimizador Adam con planificador step, pipeline de HuggingFace no declarado, 0 descargas y 0 likes en el momento de la consulta, y tamaño del repositorio de 0,0 GB.
+Otros datos de la model card: activación mish, normalización batchnorm, optimizador Adam con planificador step, pipeline de Hugging Face no declarado, 0 descargas y 0 likes en el momento de la consulta, y tamaño del repositorio de 0,0 GB.
 
 ## Arquitectura y entrenamiento
 
@@ -61,14 +61,14 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: no disponible como dato publicado. Como cálculo derivado de los 16,576 parámetros reportados (si se interpretan como millones), los pesos ocuparían aproximadamente 66 MB en fp32 y 33 MB en fp16, a los que habría que sumar las activaciones y la memoria del framework; el repositorio no publica ninguna medición.
 - GPU recomendadas: no disponibles. Por el tamaño declarado, cualquier GPU con soporte CUDA sería suficiente, e incluso la CPU sería viable para pruebas de humo.
 - Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU de consumo con suficiente memoria para el framework, aunque no hay confirmación del autor ni cifras de consumo real medido.
-- Opciones de despliegue: PyTorch nativo y ejecución directa de `finetune.py`. El repositorio advierte que las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito por tratarse de una implementación personalizada. vLLM, llama.cpp, Ollama y TGI no aplican, al no ser un modelo de lenguaje.
+- Opciones de despliegue: PyTorch nativo y ejecución directa de `finetune.py`. El repositorio advierte que las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito por tratarse de una implementación personalizada. vLLM, llama.cpp, Ollama y TGI no aplican, al no ser un modelo de lenguaje.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chenkennyka/swin-t-checkpoint | 16,576 según metadatos de safetensors | no disponible | no declarado (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
+| chenkennyka/swin-t-checkpoint | 16,576 según metadatos de safetensors | no disponible | no declarado (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
 | Swin-T canónico (implementaciones de referencia) | no disponible en la información proporcionada | no disponible | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada |
 | ViT-B/16 | no disponible en la información proporcionada | no disponible | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada |
 | DeiT-S | no disponible en la información proporcionada | no disponible | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada |
@@ -90,6 +90,6 @@ La comparación se limita a la categoría arquitectónica. No hay datos de rendi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chenkennyka/swin-t-checkpoint
+- Repositorio en Hugging Face: https://huggingface.co/chenkennyka/swin-t-checkpoint
 - Ficheros incluidos en el repositorio: `finetune.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Búsqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos corresponden únicamente a dominios genéricos de YouTube sin relación con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AdamAxelrod/basler_stage_touch_2026-11_delta_act` es una política de imitación para robótica basada en Action Chunking with Transformers (ACT), el método presentado por Zhao et al. en el artículo arXiv:2304.13705. El modelo lo publica el usuario AdamAxelrod en HuggingFace Hub y se ha entrenado y exportado con la librería LeRobot de HuggingFace. No es un modelo de lenguaje: es una política visomotora que, a partir de una imagen de microscopio y del estado articular del robot, predice una secuencia corta de acciones de control.
+`AdamAxelrod/basler_stage_touch_2026-11_delta_act` es una política de imitación para robótica basada en Action Chunking with Transformers (ACT), el método presentado por Zhao et al. en el artículo arXiv:2304.13705. El modelo lo publica el usuario AdamAxelrod en Hugging Face Hub y se ha entrenado y exportado con la librería LeRobot de Hugging Face. No es un modelo de lenguaje: es una política visomotora que, a partir de una imagen de microscopio y del estado articular del robot, predice una secuencia corta de acciones de control.
 
 El modelo está especializado en una única tarea, `move_pipette_to_target`, sobre un robot `meca500_basler` equipado con una cámara de microscopio (`microscope_cam`). Consume un vector de estado de 6 dimensiones y una imagen RGB de 640x427, y produce acciones de 7 dimensiones. Se entrenó a partir de 206 episodios de teleoperación (92.339 fotogramas a 20 FPS) recogidos en el dataset `AdamAxelrod/basler_stage_touch_dataset_2026-11_delta`.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| basler_stage_touch_2026-11_delta_act (este) | 51,6 M | no aplica | move_pipette_to_target (meca500_basler) | Apache 2.0 | HuggingFace |
-| Políticas ACT genéricas de LeRobot | variable | no aplica | tareas de manipulación diversas | Apache 2.0 | HuggingFace / LeRobot |
-| Políticas Diffusion Policy | variable | no aplica | manipulación visomotora | según repo | HuggingFace / LeRobot |
+| basler_stage_touch_2026-11_delta_act (este) | 51,6 M | no aplica | move_pipette_to_target (meca500_basler) | Apache 2.0 | Hugging Face |
+| Políticas ACT genéricas de LeRobot | variable | no aplica | tareas de manipulación diversas | Apache 2.0 | Hugging Face / LeRobot |
+| Políticas Diffusion Policy | variable | no aplica | manipulación visomotora | según repo | Hugging Face / LeRobot |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdamAxelrod/basler_stage_touch_2026-11_delta_act
+- Modelo en Hugging Face: https://huggingface.co/AdamAxelrod/basler_stage_touch_2026-11_delta_act
 - Dataset de entrenamiento: https://huggingface.co/datasets/AdamAxelrod/basler_stage_touch_dataset_2026-11_delta
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=AdamAxelrod/basler_stage_touch_dataset_2026-11_delta
 - Paper ACT: https://huggingface.co/papers/2304.13705

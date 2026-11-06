@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-assignment-4-mlp | no disponible | 3.072 características (32x32x3) | no disponible | no disponible | HuggingFace (0 descargas) |
+| smai-assignment-4-mlp | no disponible | 3.072 características (32x32x3) | no disponible | no disponible | Hugging Face (0 descargas) |
 | LeNet-5 (referencia histórica CIFAR-10) | ~60.000 | 32x32x3 | ~60% accuracy en CIFAR-10 (referencia habitual de la literatura, no verificada en esta ficha) | variable | implementaciones múltiples |
 | ResNet-18 (CIFAR-10) | ~11,2 M | 32x32x3 | ~93-95% accuracy con aumento de datos (referencia habitual, no verificada) | MIT (implementación torchvision) | torchvision |
-| ViT-B/16 (CIFAR-10 fine-tuning) | ~86 M | 32x32x3 | ~98% con preentrenamiento a gran escala (referencia habitual, no verificada) | Apache 2.0 (implementación) | HuggingFace/timm |
+| ViT-B/16 (CIFAR-10 fine-tuning) | ~86 M | 32x32x3 | ~98% con preentrenamiento a gran escala (referencia habitual, no verificada) | Apache 2.0 (implementación) | Hugging Face/timm |
 
 Las cifras de los modelos comparables son referencias generales de la literatura y no se han verificado contra los artefactos de este repositorio; el modelo analizado no publica métricas propias, por lo que la comparación cuantitativa no es posible.
 
@@ -83,6 +83,6 @@ Las cifras de los modelos comparables son referencias generales de la literatura
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/armboss200/smai-assignment-4-mlp
-- Dataset CIFAR-10 en HuggingFace: https://huggingface.co/datasets/uoft-cs/cifar10
+- Modelo en Hugging Face: https://huggingface.co/armboss200/smai-assignment-4-mlp
+- Dataset CIFAR-10 en Hugging Face: https://huggingface.co/datasets/uoft-cs/cifar10
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

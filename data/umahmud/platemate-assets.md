@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`umahmud/platemate-assets` es un repositorio alojado en HuggingFace por el usuario umahmud que, pese a su presencia en el hub de modelos, no contiene un modelo de lenguaje ni un modelo de IA en sentido estricto. Los metadatos indican que el artefacto principal es un fichero serializado con la librería `joblib`, lo que apunta a un objeto Python persistido (típicamente un modelo de scikit-learn, un pipeline de preprocesado o un conjunto de datos empaquetado), no a un transformer con pesos en safetensors o GGUF.
+`umahmud/platemate-assets` es un repositorio alojado en Hugging Face por el usuario umahmud que, pese a su presencia en el hub de modelos, no contiene un modelo de lenguaje ni un modelo de IA en sentido estricto. Los metadatos indican que el artefacto principal es un fichero serializado con la librería `joblib`, lo que apunta a un objeto Python persistido (típicamente un modelo de scikit-learn, un pipeline de preprocesado o un conjunto de datos empaquetado), no a un transformer con pesos en safetensors o GGUF.
 
 El repositorio tiene un tamaño de 0,1 GB, no registra descargas ni likes, y su model card se limita a la declaración de licencia Apache 2.0 sin ningún contenido descriptivo adicional. No se especifican idiomas, pipeline, arquitectura ni datos de entrenamiento. Por tanto, cualquier evaluación técnica debe tratarse con cautela: la información disponible es insuficiente para caracterizar el artefacto como modelo generativo.
 
@@ -42,7 +42,7 @@ No hay datos sobre volumen de entrenamiento, composición del dataset, técnicas
 - Reproducción de pipelines de scikit-learn: si el joblib contiene un pipeline entrenado, podría cargarse para inferencia local en Python, siempre que se conozca el esquema de entrada.
 - Integración en aplicaciones de soporte: por el nombre "platemate-assets", podría tratarse de recursos auxiliares de una aplicación de gestión de matrículas o vehículos, utilizables como dependencia interna.
 - Archivado y trazabilidad: el repositorio puede servir como referencia de versión de un artefacto concreto dentro de un proyecto mayor.
-- Docencia y experimentación: útil como ejemplo de cómo se publican artefactos joblib en HuggingFace y de las limitaciones de metadatos en el hub.
+- Docencia y experimentación: útil como ejemplo de cómo se publican artefactos joblib en Hugging Face y de las limitaciones de metadatos en el hub.
 - Evaluación de riesgos de cadena de suministro: permite practicar la inspección de repositorios sin model card sustantiva antes de incorporarlos a un entorno de producción.
 
 ## Benchmarks y rendimiento
@@ -73,7 +73,7 @@ No disponible. No se conocen modelos comparables porque el artefacto no se ha ca
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/umahmud/platemate-assets
+- Repositorio en Hugging Face: https://huggingface.co/umahmud/platemate-assets
 - Documentación de joblib: https://joblib.readthedocs.io/
 - Documentación de huggingface_hub: https://huggingface.co/docs/huggingface_hub
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

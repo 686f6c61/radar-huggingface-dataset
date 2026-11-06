@@ -86,10 +86,10 @@ No disponible. No se han identificado en la información proporcionada artefacto
 - 0 descargas y 0 likes: sin validación externa, sin issues ni discusión que permitan contrastar el comportamiento real.
 - Inconsistencia de nomenclatura entre el nombre del repositorio (`r48`) y el del fichero (`R49_txtl`), que conviene verificar antes de fijar una versión en producción.
 - Riesgo de alucinación: no aplica en el sentido habitual al no generar texto, pero sí existe riesgo de puntuaciones no calibradas que induzcan decisiones erróneas aguas abajo.
-- Fecha de creación registrada en el repositorio: 2026-10-24, según los metadatos de HuggingFace.
+- Fecha de creación registrada en el repositorio: 2026-10-24, según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/godman0711/sn125-r48-refiner
+- Hugging Face: https://huggingface.co/godman0711/sn125-r48-refiner
 - Fichero de pesos: `R49_txtl.safetensors` (sha256 `8da3180696db93d225989391696ce143a55f289e27f119240606063810a6cf50`), referenciado en la model card mediante URL fijada a commit.
 - Paper, blog, repositorio de código o demo: no disponibles. La búsqueda web realizada no devolvió enlaces relevantes al modelo ni a la subnet; los resultados obtenidos correspondían a páginas de inicio de sesión de redes sociales sin relación con el artefacto.

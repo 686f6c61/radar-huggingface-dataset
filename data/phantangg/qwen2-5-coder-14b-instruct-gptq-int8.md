@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/phantangg/Qwen2.5-Coder-14B-Instruct-GPTQ-Int8
+- Repositorio Hugging Face: https://huggingface.co/phantangg/Qwen2.5-Coder-14B-Instruct-GPTQ-Int8
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Blog oficial Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder-family/
 - GitHub Qwen2.5-Coder: https://github.com/QwenLM/Qwen2.5-Coder

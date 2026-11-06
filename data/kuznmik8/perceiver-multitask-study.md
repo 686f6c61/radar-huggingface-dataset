@@ -30,7 +30,7 @@ La arquitectura sigue el diseño Perceiver, que procesa entradas de alta dimensi
 
 - Investigación en arquitecturas Perceiver: el modelo sirve como baseline reproducible para estudiar el efecto de la atención dilatada y la fusión low rank. Al ser un checkpoint de inicialización, permite comparar distintas inicializaciones antes de entrenar.
 - Pruebas de humo (smoke tests) de pipelines de entrenamiento: el modelo es lo suficientemente pequeño como para ejecutar rápidamente un ciclo de entrenamiento en CPU, lo que facilita validar la integración del código y la configuración.
-- Desarrollo de adaptadores de carga: al ser una implementación personalizada, puede usarse como caso de prueba para escribir adaptadores que permitan cargar el modelo en frameworks estándar como HuggingFace Transformers.
+- Desarrollo de adaptadores de carga: al ser una implementación personalizada, puede usarse como caso de prueba para escribir adaptadores que permitan cargar el modelo en frameworks estándar como Hugging Face Transformers.
 - Experimentos de aprendizaje multitarea: el punto de partida permite entrenar el modelo con datos propios para explorar cómo la arquitectura maneja múltiples tareas simultáneamente.
 - Educación y divulgación: el código y la configuración explícita sirven como ejemplo didáctico de cómo implementar y configurar un modelo Perceiver en PyTorch.
 - Reproducibilidad de experimentos: la inclusión de `config.json` y `training_args.json` documenta la receta por defecto, lo que permite replicar experimentos con las mismas condiciones iniciales.
@@ -62,4 +62,4 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kuznmik8/perceiver-multitask-study
+- Hugging Face: https://huggingface.co/kuznmik8/perceiver-multitask-study

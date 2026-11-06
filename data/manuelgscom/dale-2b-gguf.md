@@ -76,11 +76,11 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Precisión test v2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dale-2b` | 1.881.825.088 | No disponible | 81,7 % | Apache-2.0 | GGUF en HuggingFace |
-| `dale-0.8b` | No disponible | No disponible | 79,4 % | No disponible en la información | GGUF en HuggingFace |
-| `dale-4b` | No disponible | No disponible | 87,0 % | No disponible en la información | GGUF en HuggingFace |
-| `dale-9b` | No disponible | No disponible | 89,2 % | No disponible en la información | GGUF en HuggingFace |
-| Qwen3.5-9B sin ajustar | No disponible | No disponible | 62,8 % | No disponible en la información | HuggingFace |
+| `dale-2b` | 1.881.825.088 | No disponible | 81,7 % | Apache-2.0 | GGUF en Hugging Face |
+| `dale-0.8b` | No disponible | No disponible | 79,4 % | No disponible en la información | GGUF en Hugging Face |
+| `dale-4b` | No disponible | No disponible | 87,0 % | No disponible en la información | GGUF en Hugging Face |
+| `dale-9b` | No disponible | No disponible | 89,2 % | No disponible en la información | GGUF en Hugging Face |
+| Qwen3.5-9B sin ajustar | No disponible | No disponible | 62,8 % | No disponible en la información | Hugging Face |
 
 La comparación relevante es interna a la familia `dale`: el salto de 0.8b a 2b aporta 2,3 puntos de precisión con el doble de tamaño en disco, mientras que 4b y 9b añaden 5,3 y 7,5 puntos respectivamente a costa de multiplicar los requisitos de memoria. No se dispone de datos de otros modelos comparables de traducción de lenguaje natural a bash en la información proporcionada.
 
@@ -98,7 +98,7 @@ La comparación relevante es interna a la familia `dale`: el salto de 0.8b a 2b 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/manuelgscom/dale-2b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/manuelgscom/dale-2b-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Dataset de evaluación: https://huggingface.co/datasets/manuelgscom/dale-bash-test-v2
 - Colección de la familia dale: https://huggingface.co/collections/manuelgscom/dale-6addf69f0c5ce62251553885

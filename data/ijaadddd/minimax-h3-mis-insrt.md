@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ijaadddd/Minimax-h3-mis-insrt` es un repositorio alojado en HuggingFace por el usuario Ijaadddd que, por su nombre, tamano (0,3 GB) y los resultados de busqueda asociados, parece ser un adaptador o LoRA derivado de MiniMax H3, no un modelo completo. El repositorio no incluye model card tecnica: el README se limita a declarar `license: apache-2.0`, sin descripcion, sin pipeline declarado, sin idiomas y sin metricas. Acumula 0 descargas y 0 likes, por lo que no hay validacion comunitaria ni documentacion de entrenamiento.
+`Ijaadddd/Minimax-h3-mis-insrt` es un repositorio alojado en Hugging Face por el usuario Ijaadddd que, por su nombre, tamano (0,3 GB) y los resultados de busqueda asociados, parece ser un adaptador o LoRA derivado de MiniMax H3, no un modelo completo. El repositorio no incluye model card tecnica: el README se limita a declarar `license: apache-2.0`, sin descripcion, sin pipeline declarado, sin idiomas y sin metricas. Acumula 0 descargas y 0 likes, por lo que no hay validacion comunitaria ni documentacion de entrenamiento.
 
 El modelo base, MiniMax H3, si esta documentado publicamente por MiniMax como un modelo generativo omni-modal de proposito general: comprende de forma conjunta contexto multimodal (texto, imagen, video y audio) y genera video con audio estereo nativo de hasta 2K de resolucion y 15 segundos de duracion. En el ecosistema asociado aparecen variantes cuantizadas a int8 publicadas por Comfy-Org y utilidades de preprocesado de video de referencia (ref2va) en el toolkit de ComfyUI de ostris.
 
@@ -75,9 +75,9 @@ No se dispone de datos de rendimiento, parametros ni contexto de este repositori
 
 | Artefacto | Tipo | Licencia | Disponibilidad | Datos tecnicos |
 |---|---|---|---|---|
-| Ijaadddd/Minimax-h3-mis-insrt | Adaptador o derivado de MiniMax H3 (no confirmado) | apache-2.0 declarada | HuggingFace, 0 descargas | 0,3 GB, sin model card |
+| Ijaadddd/Minimax-h3-mis-insrt | Adaptador o derivado de MiniMax H3 (no confirmado) | apache-2.0 declarada | Hugging Face, 0 descargas | 0,3 GB, sin model card |
 | MiniMax H3 (oficial) | Modelo base omni-modal de generacion de video con audio | MiniMax H3 Community License Agreement (excluye UE, Reino Unido, Corea del Sur y EE. UU. en su concesion) | Blog oficial y repositorio GitHub de MiniMax-AI | Video hasta 2K y 15 s con audio estereo nativo |
-| Comfy-Org/MiniMax-H3 (int8) | Variante cuantizada del modelo base para ComfyUI | Segun el modelo base | HuggingFace (Comfy-Org) | Pesos `minimax_h3_fl2va_int8_convrot.safetensors` |
+| Comfy-Org/MiniMax-H3 (int8) | Variante cuantizada del modelo base para ComfyUI | Segun el modelo base | Hugging Face (Comfy-Org) | Pesos `minimax_h3_fl2va_int8_convrot.safetensors` |
 | LoRA de MiniMax H3 en Civitai (v0.7) | LoRA de la comunidad sobre MiniMax H3 | Acuerdo de Civitai para la distribucion en plataforma | Civitai | Sin datos de entrenamiento publicados |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento, parametros ni contexto de este repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ijaadddd/Minimax-h3-mis-insrt
+- Repositorio en Hugging Face: https://huggingface.co/Ijaadddd/Minimax-h3-mis-insrt
 - Blog oficial de MiniMax H3: https://www.minimax.io/blog/minimax-h3
 - Repositorio GitHub oficial: https://github.com/MiniMax-AI/MiniMax-H3
 - Pesos cuantizados en Comfy-Org: https://huggingface.co/Comfy-Org/MiniMax-H3/blob/main/diffusion_models/minimax_h3_fl2va_int8_convrot.safetensors

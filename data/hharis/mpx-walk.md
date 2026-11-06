@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Hharis/mpx-walk` es un repositorio publicado en HuggingFace por el usuario Hharis bajo licencia Apache 2.0. El unico dato tecnico verificable que proporciona la model card es la licencia; no se incluye descripcion del modelo, arquitectura, tamano, proposito ni datos de entrenamiento. El tag `onnx` sugiere que el artefacto se distribuye en formato ONNX, orientado probablemente a inferencia en entornos de produccion o a integracion con runtimes como ONNX Runtime, pero esta inferencia no esta confirmada por el autor.
+`Hharis/mpx-walk` es un repositorio publicado en Hugging Face por el usuario Hharis bajo licencia Apache 2.0. El unico dato tecnico verificable que proporciona la model card es la licencia; no se incluye descripcion del modelo, arquitectura, tamano, proposito ni datos de entrenamiento. El tag `onnx` sugiere que el artefacto se distribuye en formato ONNX, orientado probablemente a inferencia en entornos de produccion o a integracion con runtimes como ONNX Runtime, pero esta inferencia no esta confirmada por el autor.
 
 El repositorio presenta un tamano de 0.0 GB, cero descargas y cero likes en el momento de la consulta, lo que indica que se trata de un artefacto practicamente vacio o de un placeholder sin pesos publicados. La fecha de creacion y actualizacion (2026-11-02) aparece en el mismo dia, con apenas dos minutos de diferencia, lo que apunta a una publicacion automatica o de prueba.
 
@@ -77,5 +77,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hharis/mpx-walk
+- Repositorio en Hugging Face: https://huggingface.co/Hharis/mpx-walk
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

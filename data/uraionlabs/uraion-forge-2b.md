@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Uraion Forge 2B es un modelo de lenguaje compacto de 2.516.756.480 parámetros (aproximadamente 2,5B), desarrollado por Uraion Labs y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un ajuste fino sobre `openbmb/MiniCPM5-2B`, un transformer de estilo Llama con Grouped-Query Attention (GQA), y está orientado explícitamente a tres escenarios: ejecución en el borde (edge), llamadas a herramientas en modo agente multi-turno y razonamiento cuantitativo de alto rendimiento. El modelo se distribuye en safetensors (BF16/FP16) y, según su model card, también en variantes MLX y GGUF en repositorios separados.
+Uraion Forge 2B es un modelo de lenguaje compacto de 2.516.756.480 parámetros (aproximadamente 2,5B), desarrollado por Uraion Labs y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un ajuste fino sobre `openbmb/MiniCPM5-2B`, un transformer de estilo Llama con Grouped-Query Attention (GQA), y está orientado explícitamente a tres escenarios: ejecución en el borde (edge), llamadas a herramientas en modo agente multi-turno y razonamiento cuantitativo de alto rendimiento. El modelo se distribuye en safetensors (BF16/FP16) y, según su model card, también en variantes MLX y GGUF en repositorios separados.
 
 La propuesta de valor del modelo es atacar los fallos típicos de los modelos de razonamiento pequeños: agotamiento del presupuesto de tokens por bucles de pensamiento ("runaway thinking"), alucinación de parámetros en esquemas JSON y deriva de estado en conversaciones multi-turno. Para ello, el autor declara regularizaciones específicas de post-entrenamiento que hacen que el bloque `<think>...</think>` se dimensione según la complejidad de la tarea o se omita por completo cuando se requiere una respuesta directa, además de un mecanismo de desambiguación activa que detiene la ejecución y pregunta al usuario cuando falta un parámetro crítico.
 
@@ -92,10 +92,10 @@ Los datos de los modelos alternativos no forman parte de la informacion proporci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Uraion Forge 2B | 2,52B | 16k nativo / 131k RoPE | Apache 2.0 | HuggingFace (safetensors, GGUF, MLX) |
+| Uraion Forge 2B | 2,52B | 16k nativo / 131k RoPE | Apache 2.0 | Hugging Face (safetensors, GGUF, MLX) |
 | openbmb/MiniCPM5-2B | no disponible | no disponible | no disponible | Modelo base del anterior |
-| Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens (extensible) | Apache 2.0 (segun su documentacion) | HuggingFace, GGUF, multiples runtimes |
-| Llama-3.2-3B-Instruct | 3,21B | 128k tokens (segun su documentacion) | Llama 3.2 Community License | HuggingFace, GGUF, multiples runtimes |
+| Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens (extensible) | Apache 2.0 (segun su documentacion) | Hugging Face, GGUF, multiples runtimes |
+| Llama-3.2-3B-Instruct | 3,21B | 128k tokens (segun su documentacion) | Llama 3.2 Community License | Hugging Face, GGUF, multiples runtimes |
 
 Diferencias cualitativas: Uraion Forge 2B es el mas pequeno de los tres y el unico de la comparativa con contexto de 131k declarado y licencia Apache 2.0 sin restricciones adicionales. Frente a Llama-3.2-3B-Instruct, su ventana nominal es comparable, pero no hay datos publicos de rendimiento que permitan situarlo por encima o por debajo. Frente a Qwen2.5-3B-Instruct, ofrece menor tamano pero tambien menor soporte multilingue declarado (solo ingles). No hay una comparativa de benchmarks independiente disponible.
 
@@ -114,7 +114,7 @@ Diferencias cualitativas: Uraion Forge 2B es el mas pequeno de los tres y el uni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UraionLabs/uraion-forge-2b
+- Modelo en Hugging Face: https://huggingface.co/UraionLabs/uraion-forge-2b
 - Sitio del desarrollador: https://uraionlabs.com
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Variante MLX (referenciada en la model card, no verificada): https://huggingface.co/uraionlabs/uraion-forge-2b-mlx

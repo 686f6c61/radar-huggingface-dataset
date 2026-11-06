@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v3 de OpenAI Gym. Lo ha desarrollado el usuario Rahul001t utilizando la librería Stable-Baselines3 y lo ha publicado en HuggingFace con el pipeline de reinforcement-learning. El problema que resuelve es el control de un módulo de aterrizaje lunar en un entorno simulado, donde el agente debe aprender a realizar maniobras de descenso y aterrizaje mediante recompensas. La relevancia actual es limitada, ya que se trata de un modelo de demostración educativa o de referencia dentro del campo del RL, no de un modelo de lenguaje o de propósito general. No se dispone de información sobre la arquitectura de la red neuronal subyacente, el número de parámetros ni la longitud de contexto, ya que estos datos no aparecen en la información proporcionada.
+Este modelo es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v3 de OpenAI Gym. Lo ha desarrollado el usuario Rahul001t utilizando la librería Stable-Baselines3 y lo ha publicado en Hugging Face con el pipeline de reinforcement-learning. El problema que resuelve es el control de un módulo de aterrizaje lunar en un entorno simulado, donde el agente debe aprender a realizar maniobras de descenso y aterrizaje mediante recompensas. La relevancia actual es limitada, ya que se trata de un modelo de demostración educativa o de referencia dentro del campo del RL, no de un modelo de lenguaje o de propósito general. No se dispone de información sobre la arquitectura de la red neuronal subyacente, el número de parámetros ni la longitud de contexto, ya que estos datos no aparecen en la información proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -31,11 +31,11 @@ El modelo se basa en el algoritmo PPO, un método de aprendizaje por refuerzo de
 
 ## Casos de uso
 
-- Investigación en aprendizaje por refuerzo: sirve como punto de partida para comparar el rendimiento de PPO en LunarLander-v3 con otros algoritmos como DQN, SAC o TD3. El modelo puede cargarse desde HuggingFace y evaluarse en el mismo entorno para verificar la recompensa declarada.
+- Investigación en aprendizaje por refuerzo: sirve como punto de partida para comparar el rendimiento de PPO en LunarLander-v3 con otros algoritmos como DQN, SAC o TD3. El modelo puede cargarse desde Hugging Face y evaluarse en el mismo entorno para verificar la recompensa declarada.
 - Educación en RL: es un ejemplo práctico para cursos y talleres sobre Stable-Baselines3. Los estudiantes pueden analizar el código de entrenamiento, cargar el agente y observar sus políticas de aterrizaje en el simulador.
 - Benchmarking de algoritmos RL: se puede utilizar como referencia en experimentos que midan la estabilidad y variabilidad de PPO, especialmente porque la desviación estándar de la recompensa es muy alta (110.49), lo que permite estudiar la sensibilidad del algoritmo.
 - Reproducción de experimentos: investigadores que necesiten un agente preentrenado de LunarLander-v3 pueden cargarlo para pruebas de integración sin tener que volver a entrenar desde cero.
-- Demostraciones de despliegue de modelos RL en HuggingFace: este modelo ilustra el proceso de subir y etiquetar un agente de RL en el hub, con su model-index y métricas asociadas, aunque la verificación de los resultados esté pendiente.
+- Demostraciones de despliegue de modelos RL en Hugging Face: este modelo ilustra el proceso de subir y etiquetar un agente de RL en el hub, con su model-index y métricas asociadas, aunque la verificación de los resultados esté pendiente.
 - Desarrollo de agentes de control: puede servir como agente base para transferencia o fine-tuning en variantes modificadas de LunarLander o en entornos con dinámicas similares, siempre que se adapte la red y se reentrene.
 
 ## Benchmarks y rendimiento
@@ -72,6 +72,6 @@ Existe un modelo muy similar publicado por el mismo autor: Rahul001t/ppo-LunarLa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rahul001t/ppo-lunarlander
+- Modelo en Hugging Face: https://huggingface.co/Rahul001t/ppo-lunarlander
 - Modelo similar para LunarLander-v2: https://huggingface.co/Rahul001t/ppo-LunarLander-v2
 - Librería Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3

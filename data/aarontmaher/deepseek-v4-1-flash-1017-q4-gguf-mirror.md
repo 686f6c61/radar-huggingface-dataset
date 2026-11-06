@@ -6,7 +6,7 @@ Este repositorio es un espejo ("Lauburu Sovereign Mirror") de una cuantización 
 
 El interés técnico del repositorio está en la trazabilidad: documenta hashes, tamaños exactos y versión de formato (GGUF v3) de cada shard, lo que facilita verificar la integridad de una descarga de 466,30 GiB. La variante "abliterated" implica que se ha aplicado una técnica de ablación de dirección de rechazo sobre los pesos para reducir las negativas del modelo a peticiones que el modelo base rechazaría, algo relevante para quien necesite un modelo sin censura, pero con implicaciones éticas y de seguridad evidentes.
 
-La información disponible sobre arquitectura, contexto, idiomas y entrenamiento del modelo base es muy limitada en esta ficha; los datos de parámetros que aparecen en los metadatos de HuggingFace (754.974.720) no son coherentes con el tamaño del repo (0,8 GB) ni con el inventario de shards (466,30 GiB), por lo que se marcan como no fiables.
+La información disponible sobre arquitectura, contexto, idiomas y entrenamiento del modelo base es muy limitada en esta ficha; los datos de parámetros que aparecen en los metadatos de Hugging Face (754.974.720) no son coherentes con el tamaño del repo (0,8 GB) ni con el inventario de shards (466,30 GiB), por lo que se marcan como no fiables.
 
 ## Especificaciones técnicas
 
@@ -33,7 +33,7 @@ El elemento técnico destacable es el parche de tensores `DeepSeek-V4.1-Flash-10
 - Razonamiento y código: no confirmado explícitamente en la documentación del repo.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (el campo de idiomas aparece vacío en HuggingFace).
+- Capacidades multilingües: no disponible (el campo de idiomas aparece vacío en Hugging Face).
 - Modo "uncensored": la variante abliterated reduce los rechazos del modelo base ante peticiones sensibles; es la característica diferencial declarada en los tags.
 - Compatibilidad de inferencia: llama.cpp y prima.cpp (declarado en la model card).
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 (base) | no disponible | no disponible | no disponible | safetensors (repo original) | HuggingFace |
-| Huihui-DeepSeek-V4.1-Flash-1017-abliterated-GGUF | no disponible | no disponible | no disponible | GGUF | HuggingFace |
-| unsloth/DeepSeek-V4.1-Flash-1017-GGUF | no disponible | no disponible | no disponible | GGUF (múltiples cuantizaciones) | HuggingFace |
-| Este espejo (`aarontmaher/...-Q4-GGUF-Mirror`) | no disponible | no disponible | MIT | GGUF v3, `UD-Q4_K_XL` | HuggingFace |
+| DeepSeek-V4.1-Flash-1017 (base) | no disponible | no disponible | no disponible | safetensors (repo original) | Hugging Face |
+| Huihui-DeepSeek-V4.1-Flash-1017-abliterated-GGUF | no disponible | no disponible | no disponible | GGUF | Hugging Face |
+| unsloth/DeepSeek-V4.1-Flash-1017-GGUF | no disponible | no disponible | no disponible | GGUF (múltiples cuantizaciones) | Hugging Face |
+| Este espejo (`aarontmaher/...-Q4-GGUF-Mirror`) | no disponible | no disponible | MIT | GGUF v3, `UD-Q4_K_XL` | Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones técnicas del modelo base para establecer una comparación cuantitativa con alternativas de la misma categoría.
 

@@ -97,7 +97,7 @@ En el conjunto de dictado en inglés y francés de 260 clips, esta conversión o
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/mlx-community/nemotron-labs-unified-asr-0.6b-4bit
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/mlx-community/nemotron-labs-unified-asr-0.6b-4bit
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/nemotron-labs-unified-asr-0.6b
 - Conversión bf16 alternativa: https://huggingface.co/T0mSIlver/nemotron-labs-unified-asr-0.6b-bf16
 - Conversión 8-bit alternativa: https://huggingface.co/T0mSIlver/nemotron-labs-unified-asr-0.6b-8bit

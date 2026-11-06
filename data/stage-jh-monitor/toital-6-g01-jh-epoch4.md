@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| toital-6-G01-jh-epoch4 | 4,54B | 65.536 tokens | RL sobre Qwen3.5-4B | no disponible | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-4B (base) | ~4B | no disponible | preentrenamiento + alineacion | no disponible | HuggingFace (modelo de referencia) |
+| toital-6-G01-jh-epoch4 | 4,54B | 65.536 tokens | RL sobre Qwen3.5-4B | no disponible | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-4B (base) | ~4B | no disponible | preentrenamiento + alineacion | no disponible | Hugging Face (modelo de referencia) |
 | Otros transformers densos de ~4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con alternativas. La unica comparacion fundamentada es con el modelo base Qwen3.5-4B del que deriva.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stage-jh-monitor/toital-6-G01-jh-epoch4
+- Hugging Face: https://huggingface.co/Stage-jh-monitor/toital-6-G01-jh-epoch4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset referenciado en la configuracion: `Stage-org/toital-6-G01-jh` (no se ha podido verificar su URL publica)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-starvla-pipette-aim-wrist1031-pi05-base es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario GeertWang en HuggingFace. Se trata de un ajuste fino por imitación (behavior cloning) del modelo base PI0.5 (identificado en la model card como `tenstep/pi_model_starvla pi05_base_starvla` en fp32) para una tarea muy concreta: el paso 3 de una tarea de pipeteo con un robot Unitree G1 equipado con manos Inspire, consistente en apuntar la pipeta de la mano derecha hacia el tubo de la mano izquierda.
+starvla-pipette-aim-wrist1031-pi05-base es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario GeertWang en Hugging Face. Se trata de un ajuste fino por imitación (behavior cloning) del modelo base PI0.5 (identificado en la model card como `tenstep/pi_model_starvla pi05_base_starvla` en fp32) para una tarea muy concreta: el paso 3 de una tarea de pipeteo con un robot Unitree G1 equipado con manos Inspire, consistente en apuntar la pipeta de la mano derecha hacia el tubo de la mano izquierda.
 
 El modelo emplea un esquema de flow matching para predecir velocidades de acción, con pérdida MSE ponderada por fotograma (peso 1 para datos autónomos, 2 para datos humanos y 0 para fotogramas enmascarados). Los datos provienen de 230 episodios de entrenamiento y 38 de validación recogidos mediante HG-DAgger (intervención humana sobre política autónoma), sin teleoperación, con vistas ego, FOCUS y muñeca izquierda, además de la velocidad de muñeca medida como estado.
 
@@ -74,7 +74,7 @@ La referencia "hold still" obtiene un error menor que el checkpoint en el agrega
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| starvla-pipette-aim-wrist1031-pi05-base | no disponible | no disponible | Manipulación fina (pipeteo) en Unitree G1 | no disponible | HuggingFace, 0 descargas |
+| starvla-pipette-aim-wrist1031-pi05-base | no disponible | no disponible | Manipulación fina (pipeteo) en Unitree G1 | no disponible | Hugging Face, 0 descargas |
 | PI0.5 base (`tenstep/pi_model_starvla pi05_base_starvla`) | no disponible | no disponible | VLA generalista base | no disponible | Referenciado en la model card |
 | Otras políticas VLA open source (p. ej., OpenVLA, RT-2) | no disponible en la información | no disponible | Manipulación robótica general | no disponible | no disponible |
 
@@ -94,6 +94,6 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GeertWang/starvla-pipette-aim-wrist1031-pi05-base
+- Modelo en Hugging Face: https://huggingface.co/GeertWang/starvla-pipette-aim-wrist1031-pi05-base
 - Modelo base referenciado en la model card: `tenstep/pi_model_starvla` (checkpoint `pi05_base_starvla` en fp32); no se proporciona URL directa en la información disponible.
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código o demos adicionales.

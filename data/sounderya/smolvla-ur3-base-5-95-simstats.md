@@ -71,7 +71,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. El modelo base
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sounderya/smolvla-ur3-base-5-95-simstats
+- Repositorio Hugging Face: https://huggingface.co/Sounderya/smolvla-ur3-base-5-95-simstats
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Sounderya/mug_smolvla_dataset_v2nc
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844

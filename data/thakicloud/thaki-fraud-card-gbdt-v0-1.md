@@ -79,7 +79,7 @@ No se dispone de comparativas publicadas frente a otros modelos en la informaci√
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thaki-Fraud-Card-GBDT-v0.1 | no disponible (GBDT) | no aplica | PR-AUC 0,970; ROC-AUC 0,9988 (2024, no sellado) | Apache-2.0 | HuggingFace |
+| Thaki-Fraud-Card-GBDT-v0.1 | no disponible (GBDT) | no aplica | PR-AUC 0,970; ROC-AUC 0,9988 (2024, no sellado) | Apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se dispone de comparativas publicadas frente a otros modelos en la informaci√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Thaki-Fraud-Card-GBDT-v0.1
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Thaki-Fraud-Card-GBDT-v0.1
 - Model card en coreano: https://huggingface.co/ThakiCloud/Thaki-Fraud-Card-GBDT-v0.1/blob/main/MODEL_CARD.ko.md
 - Fuente de datos AI-Hub: https://www.aihub.or.kr (dataset 71925)
 - LightGBM: https://github.com/microsoft/LightGBM

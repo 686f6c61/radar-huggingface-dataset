@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ambarella/Florence2 (esta ficha) | 0,23B | no disponible | Visión y visión-lenguaje multi-tarea | no disponible | HuggingFace, pesos 8 bits por dispositivo |
-| microsoft/Florence-2-base | 0,23B | no disponible | Visión y visión-lenguaje multi-tarea | no disponible en esta información | HuggingFace, pesos PyTorch originales |
-| Florence-2-large (Microsoft) | no disponible en esta información | no disponible | Visión y visión-lenguaje multi-tarea | no disponible en esta información | HuggingFace |
+| Ambarella/Florence2 (esta ficha) | 0,23B | no disponible | Visión y visión-lenguaje multi-tarea | no disponible | Hugging Face, pesos 8 bits por dispositivo |
+| microsoft/Florence-2-base | 0,23B | no disponible | Visión y visión-lenguaje multi-tarea | no disponible en esta información | Hugging Face, pesos PyTorch originales |
+| Florence-2-large (Microsoft) | no disponible en esta información | no disponible | Visión y visión-lenguaje multi-tarea | no disponible en esta información | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ambarella/Florence2
+- Repositorio Hugging Face: https://huggingface.co/Ambarella/Florence2
 - Paper original: https://arxiv.org/abs/2311.06242
 - Implementación de referencia: https://github.com/microsoft/Florence-2
 - Pesos originales: https://huggingface.co/microsoft/Florence-2-base

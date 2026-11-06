@@ -91,6 +91,6 @@ Nota: los datos de las alternativas no provienen de la información proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/madhushripatil032003/readnet-onnx
+- Modelo en Hugging Face: https://huggingface.co/madhushripatil032003/readnet-onnx
 - Modelo base: https://huggingface.co/Harveenchadha/vakyansh-wav2vec2-hindi-him-4200
 - Repositorio de ReadNet (código de la aplicación que lo utiliza, carpeta `readnet/`): https://github.com/patilllmadhushri-ship-it/Evals

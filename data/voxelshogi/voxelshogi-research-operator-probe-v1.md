@@ -2,7 +2,7 @@
 
 ## Resumen
 
-voxelshogi-research-operator-probe-v1 es un artefacto publicado en HuggingFace por el usuario `voxelshogi` bajo licencia Apache 2.0. Por su nombre, sus etiquetas (`untrained`, `research`) y su reducido tamano (0.9 GB), se trata de una sonda de investigacion (probe) sin entrenar, orientada a experimentacion interna del autor y no a uso productivo. El repositorio esta marcado como de acceso restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+voxelshogi-research-operator-probe-v1 es un artefacto publicado en Hugging Face por el usuario `voxelshogi` bajo licencia Apache 2.0. Por su nombre, sus etiquetas (`untrained`, `research`) y su reducido tamano (0.9 GB), se trata de una sonda de investigacion (probe) sin entrenar, orientada a experimentacion interna del autor y no a uso productivo. El repositorio esta marcado como de acceso restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 El modelo se distribuye en formato ONNX y safetensors, lo que sugiere que el autor preparo el artefacto para pruebas de exportacion, validacion de operadores o pipelines de inferencia mas que para tareas de generacion reales. La etiqueta `untrained` indica explicitamente que los pesos no han pasado por un proceso de entrenamiento supervisado ni de alineamiento, de modo que no cabe esperar capacidades linguisticas utiles.
 
@@ -45,7 +45,7 @@ La presencia conjunta de safetensors y ONNX sugiere que el artefacto se ha gener
 ## Casos de uso
 
 - Validacion de pipelines de exportacion a ONNX: el artefacto puede servir para comprobar que una herramienta de conversion (por ejemplo, `optimum` o `onnxruntime`) procesa correctamente un grafo de 0.9 GB antes de aplicarlo a un modelo real.
-- Pruebas de integracion en entornos gated: util para verificar el flujo de aceptacion de condiciones, autenticacion con token y descarga desde HuggingFace Hub en CI/CD.
+- Pruebas de integracion en entornos gated: util para verificar el flujo de aceptacion de condiciones, autenticacion con token y descarga desde Hugging Face Hub en CI/CD.
 - Benchmarking de infraestructura de inferencia: permite medir tiempos de carga, consumo de VRAM y latencia de arranque de runtimes (ONNX Runtime, vLLM si admite el formato) sin la variabilidad de un modelo entrenado.
 - Docencia y experimentacion sobre modelos no entrenados: sirve para ilustrar el comportamiento de pesos aleatorios en tareas de generacion y comparar con modelos ajustados.
 - Pruebas de empaquetado y versionado: util para validar la estructura de un repositorio con safetensors y ONNX, checksums y metadatos antes de publicar un modelo definitivo.
@@ -74,10 +74,10 @@ No disponible. No se han identificado modelos comparables de la misma categoria 
 - Riesgo de alucinacion: total, al no existir conocimiento adquirido.
 - Idiomas: no declarados; no se puede garantizar soporte de castellano ni de ninguna otra lengua.
 - Licencia: Apache 2.0 permite uso comercial y modificacion, pero el estado `untrained` hace inviable su explotacion productiva sin un entrenamiento previo.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que anade friccion a la automatizacion de descargas.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que anade friccion a la automatizacion de descargas.
 - Falta de documentacion: no hay model card detallada, paper, ni repositorio asociado, lo que impide verificar el origen de los pesos.
 - Repositorio de 0.9 GB: puede contener duplicados en safetensors y ONNX, sin que se indique cual es el formato canonico.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/voxelshogi/voxelshogi-research-operator-probe-v1
+- Repositorio en Hugging Face: https://huggingface.co/voxelshogi/voxelshogi-research-operator-probe-v1

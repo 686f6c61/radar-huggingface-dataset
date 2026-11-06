@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR DART `stack_cube` (este) | no disponible | no disponible | Manipulación `stack_cube` | Apache 2.0 | HuggingFace |
+| π0.5 SNUMPR DART `stack_cube` (este) | no disponible | no disponible | Manipulación `stack_cube` | Apache 2.0 | Hugging Face |
 | π0.5 SNUMPR base (`snumpr-iclr27-v1/9999`) | no disponible | no disponible | VLA general | no disponible en la información | Referenciado como init |
-| Checkpoint fusionado alpha 0.8 (`...-alpha0p8-stack-cube-...`) | no disponible | no disponible | Manipulación `stack_cube` | Apache 2.0 (presumible) | HuggingFace |
+| Checkpoint fusionado alpha 0.8 (`...-alpha0p8-stack-cube-...`) | no disponible | no disponible | Manipulación `stack_cube` | Apache 2.0 (presumible) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-ft-1000-stack-cube-20261030
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-ft-1000-stack-cube-20261030
 - Checkpoint fusionado alpha 0.8: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-alpha0p8-stack-cube-20261030
 - Código de adaptación: `Donghyun1228/vla_adaptation` (commit `c4fcb61`), sin URL directa en la información disponible
 - Receta DART: `snumprlab/dart` (commit `1b23c4f42f73168c78a20b353453145e74f64711`), sin URL directa en la información disponible

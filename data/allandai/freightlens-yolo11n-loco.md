@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 | Modelo | Parametros | Contexto/entrada | mAP | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FreightLens YOLO11n (LOCO) | no disponible (variante nano) | 640x640 px | 0,271 (AP50) / 0,122 (AP50-95) | AGPL-3.0 | HuggingFace |
+| FreightLens YOLO11n (LOCO) | no disponible (variante nano) | 640x640 px | 0,271 (AP50) / 0,122 (AP50-95) | AGPL-3.0 | Hugging Face |
 | YOLO11n preentrenado en COCO | no disponible | 640x640 px | no disponible para clases LOCO | AGPL-3.0 | Ultralytics |
 | Alternativas ajustadas a LOCO | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AllanDai/freightlens-yolo11n-loco
-- Demo en navegador (HuggingFace Spaces): https://huggingface.co/spaces/AllanDai/freightlens-ai
+- Modelo en Hugging Face: https://huggingface.co/AllanDai/freightlens-yolo11n-loco
+- Demo en navegador (Hugging Face Spaces): https://huggingface.co/spaces/AllanDai/freightlens-ai
 - Proyecto FreightLens AI (GitHub): https://github.com/Allan-dq/freightlens-ai
 - Conjunto de datos LOCO (GitHub, TUM): https://github.com/tum-fml/loco

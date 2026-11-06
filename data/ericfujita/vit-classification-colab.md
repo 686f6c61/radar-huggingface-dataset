@@ -65,10 +65,10 @@ La comparacion directa es dificil porque el recuento real de parametros (33.088)
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EricFujita/vit-classification-colab | 33.088 | no disponible | sin benchmarks publicados | MIT | HuggingFace |
-| google/vit-base-patch16-224 | ~86 M | imagen 224x224, parches 16x16 | ~81% top-1 en ImageNet (referencia publicada) | Apache 2.0 | HuggingFace |
-| facebook/deit-base-distilled-patch16-224 | ~87 M | imagen 224x224 | ~83-85% top-1 en ImageNet (referencia publicada) | Apache 2.0 | HuggingFace |
-| microsoft/beit-base-patch16-224-pt22k-ft22k | ~86 M | imagen 224x224 | ~85% top-1 en ImageNet (referencia publicada) | MIT | HuggingFace |
+| EricFujita/vit-classification-colab | 33.088 | no disponible | sin benchmarks publicados | MIT | Hugging Face |
+| google/vit-base-patch16-224 | ~86 M | imagen 224x224, parches 16x16 | ~81% top-1 en ImageNet (referencia publicada) | Apache 2.0 | Hugging Face |
+| facebook/deit-base-distilled-patch16-224 | ~87 M | imagen 224x224 | ~83-85% top-1 en ImageNet (referencia publicada) | Apache 2.0 | Hugging Face |
+| microsoft/beit-base-patch16-224-pt22k-ft22k | ~86 M | imagen 224x224 | ~85% top-1 en ImageNet (referencia publicada) | MIT | Hugging Face |
 
 Las cifras de los modelos de referencia son valores estandar publicados; conviene verificarlas en sus respectivas model cards antes de citarlas. El modelo de este repositorio no es comparable en escala ni en rendimiento a los anteriores.
 
@@ -80,11 +80,11 @@ Las cifras de los modelos de referencia son valores estandar publicados; convien
 - Desajuste entre la escala declarada ("giant") y el recuento real de parametros (33.088): conviene tratarlo como un modelo de prueba.
 - Riesgo de alucinacion no evaluable: no es un modelo generativo, por lo que la alucinacion no aplica en el sentido habitual, pero no hay validacion de sesgos.
 - No se documentan idiomas ni datos de entrenamiento, lo que impide evaluar sesgos de dominio.
-- La implementacion es personalizada: las APIs de carga automatica de HuggingFace requieren un adaptador explicito.
+- La implementacion es personalizada: las APIs de carga automatica de Hugging Face requieren un adaptador explicito.
 - Licencia MIT, que permite uso comercial, pero el autor recomienda revisar por separado los terminos de las fuentes de datos externas que se usen con el repositorio.
 - El repositorio ocupa 0,0 GB y tiene 0 descargas y 0 likes: no hay comunidad ni validacion externa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EricFujita/vit-classification-colab
+- Hugging Face: https://huggingface.co/EricFujita/vit-classification-colab
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

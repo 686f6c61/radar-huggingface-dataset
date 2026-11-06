@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `LibRust/a2c-PandaPickAndPlace-v3` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaPickAndPlace-v3`. Lo publica el usuario LibRust en HuggingFace como parte del ecosistema de Stable-Baselines3, la biblioteca de referencia para implementaciones reproducibles de algoritmos de RL. El problema que aborda pertenece a la familia de tareas de manipulacion robotica: controlar un brazo Franka Emika Panda para coger un objeto y colocarlo en una posicion objetivo dentro de un espacio tridimensional simulado.
+El modelo `LibRust/a2c-PandaPickAndPlace-v3` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaPickAndPlace-v3`. Lo publica el usuario LibRust en Hugging Face como parte del ecosistema de Stable-Baselines3, la biblioteca de referencia para implementaciones reproducibles de algoritmos de RL. El problema que aborda pertenece a la familia de tareas de manipulacion robotica: controlar un brazo Franka Emika Panda para coger un objeto y colocarlo en una posicion objetivo dentro de un espacio tridimensional simulado.
 
 Se trata de un artefacto de investigacion y no de un modelo de lenguaje. No hay arquitectura transformer, ni parametros en el sentido habitual de los LLM, ni ventana de contexto: lo que se publica es una politica neuronal (actor-critic) entrenada para maximizar la recompensa acumulada en el simulador. Las etiquetas declaradas por el autor son `stable-baselines3`, `deep-reinforcement-learning`, `reinforcement-learning` y `PandaPickAndPlace-v3`.
 
@@ -77,7 +77,7 @@ No se dispone de resultados comparables publicados para este checkpoint. La comp
 
 | Modelo / algoritmo | Entorno | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| A2C (este modelo) | PandaPickAndPlace-v3 | no disponible | no aplica | mean_reward -30.20 +/- 19.69 (no verificado) | no disponible | HuggingFace, 0 descargas |
+| A2C (este modelo) | PandaPickAndPlace-v3 | no disponible | no aplica | mean_reward -30.20 +/- 19.69 (no verificado) | no disponible | Hugging Face, 0 descargas |
 | PPO sobre PandaPickAndPlace-v3 | PandaPickAndPlace-v3 | no disponible | no aplica | no disponible | no disponible | implementado en Stable-Baselines3 |
 | SAC sobre PandaPickAndPlace-v3 | PandaPickAndPlace-v3 | no disponible | no aplica | no disponible | no disponible | implementado en Stable-Baselines3 |
 | TD3 sobre PandaPickAndPlace-v3 | PandaPickAndPlace-v3 | no disponible | no aplica | no disponible | no disponible | implementado en Stable-Baselines3 |
@@ -100,7 +100,7 @@ Nota metodologica: PPO, SAC y TD3 son alternativas habituales para tareas de man
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibRust/a2c-PandaPickAndPlace-v3
+- Modelo en Hugging Face: https://huggingface.co/LibRust/a2c-PandaPickAndPlace-v3
 - Stable-Baselines3 (repositorio oficial): https://github.com/DLR-RM/stable-baselines3
 - Utilidad de carga desde el Hub: `huggingface_sb3.load_from_hub` (referenciada en la model card)
 - Documentacion de A2C en Stable-Baselines3: https://stable-baselines3.readthedocs.io/en/master/modules/a2c.html

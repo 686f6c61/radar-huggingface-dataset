@@ -14,7 +14,7 @@ El modelo `sigmanih/google-gemma-4-12B-it-GGUF-Q4_K_M` es una versión cuantizad
 | Longitud de contexto | 32.768 tokens |
 | Tipos de cuantizacion | Q4_K_M (GGUF) segun nombre del repo; BF16/FP16 (Safetensors) segun model card |
 | Idiomas soportados | Ingles (en), Italiano (it) |
-| Licencia | Apache-2.0 (segun model card); HuggingFace indica "other" |
+| Licencia | Apache-2.0 (segun model card); Hugging Face indica "other" |
 | Formato de pesos | Safetensors (BF16/FP16) y GGUF (Q4_K_M) |
 
 Nota: existe discrepancia entre el nombre del repositorio (GGUF-Q4_K_M) y la model card que indica Safetensors. Se recomienda verificar el contenido real del repositorio.
@@ -87,7 +87,7 @@ Nota: no se han encontrado benchmarks comparativos directos en la informacion di
 
 - Los benchmarks publicados se basan en una porcion reducida de los conjuntos de datos, por lo que los resultados pueden no reflejar el rendimiento real en la suite completa.
 - El modelo solo soporta ingles e italiano; no se garantiza un rendimiento adecuado en otros idiomas.
-- La licencia indicada en HuggingFace es "other", aunque la model card afirma Apache-2.0. Se debe verificar la licencia exacta antes de uso comercial.
+- La licencia indicada en Hugging Face es "other", aunque la model card afirma Apache-2.0. Se debe verificar la licencia exacta antes de uso comercial.
 - Existe discrepancia entre el nombre del repositorio (GGUF-Q4_K_M) y la model card que indica Safetensors; se recomienda inspeccionar el contenido real del repositorio.
 - No se documenta soporte explicito de tool calling o function calling, aunque el modelo base podria tenerlo.
 - El modelo puede presentar sesgos y alucinaciones inherentes a los modelos de lenguaje; se recomienda validar las salidas en aplicaciones criticas.
@@ -95,7 +95,7 @@ Nota: no se han encontrado benchmarks comparativos directos en la informacion di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sigmanih/google-gemma-4-12B-it-GGUF-Q4_K_M
+- Repositorio Hugging Face: https://huggingface.co/sigmanih/google-gemma-4-12B-it-GGUF-Q4_K_M
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Modelo base (sin instrucciones): https://huggingface.co/google/gemma-4-12B
 - Pagina de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

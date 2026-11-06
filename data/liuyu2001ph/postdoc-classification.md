@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`liuyu2001ph/postdoc-classification` es un repositorio experimental de HuggingFace que contiene una implementación propia de una arquitectura MobileViT orientada a tareas de clasificación. Lo publica el usuario `liuyu2001ph` y no se presenta como un modelo entrenado ni evaluado, sino como una base de código con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El repositorio incluye el script `run.py`, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un `model.safetensors` de inicialización.
+`liuyu2001ph/postdoc-classification` es un repositorio experimental de Hugging Face que contiene una implementación propia de una arquitectura MobileViT orientada a tareas de clasificación. Lo publica el usuario `liuyu2001ph` y no se presenta como un modelo entrenado ni evaluado, sino como una base de código con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El repositorio incluye el script `run.py`, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un `model.safetensors` de inicialización.
 
 La relevancia de este repositorio es limitada desde el punto de vista de uso en producción: no hay métricas publicadas, no se ha entrenado el checkpoint y no se declara ningún benchmark. Su interés es fundamentalmente didáctico o de investigación: permite inspeccionar cambios de arquitectura MobileViT (atención estándar, fusión de bajo rango, activación gelu-tanh, normalización ScaleNorm) antes de lanzar un entrenamiento completo. La model card lo describe explícitamente como "experimental" y advierte de que no debe interpretarse como un modelo listo para evaluar.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liuyu2001ph/postdoc-classification | 33.088 (checkpoint de inicialización) | no aplica | sin benchmarks | BSD-3-Clause | HuggingFace, 0 descargas |
+| liuyu2001ph/postdoc-classification | 33.088 (checkpoint de inicialización) | no aplica | sin benchmarks | BSD-3-Clause | Hugging Face, 0 descargas |
 | MobileViT (Apple, implementación de referencia) | variable según variante (XS a XXS) | no aplica | benchmarks publicados en el paper original | según repositorio original | código y pesos disponibles |
-| Otras MobileViT de la comunidad en HuggingFace | variable | no aplica | variable | variable | HuggingFace |
+| Otras MobileViT de la comunidad en Hugging Face | variable | no aplica | variable | variable | Hugging Face |
 
 La comparación con MobileViT de referencia es solo nominal: este repositorio no aporta pesos entrenados ni métricas, por lo que no es directamente comparable en rendimiento con implementaciones publicadas.
 
@@ -84,5 +84,5 @@ La comparación con MobileViT de referencia es solo nominal: este repositorio no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/liuyu2001ph/postdoc-classification
+- Hugging Face: https://huggingface.co/liuyu2001ph/postdoc-classification
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la información proporcionada.

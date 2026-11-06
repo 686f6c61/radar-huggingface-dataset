@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tune) de Qwen2.5-7B-Instruct publicado por el usuario HungryDino en HuggingFace. El modelo base es la versión instruct de 7 mil millones de parámetros de la familia Qwen2.5 de Alibaba, adaptada mediante la librería TRL de HuggingFace y acelerada con Unsloth. El nombre del repositorio sugiere que el ajuste se centró en la generación de contenido con una orientación política concreta ("political_left", "worldview-gen"), aunque la model card no documenta el propósito, los datos de entrenamiento ni la metodología con detalle.
+Este modelo es un ajuste fino (fine-tune) de Qwen2.5-7B-Instruct publicado por el usuario HungryDino en Hugging Face. El modelo base es la versión instruct de 7 mil millones de parámetros de la familia Qwen2.5 de Alibaba, adaptada mediante la librería TRL de Hugging Face y acelerada con Unsloth. El nombre del repositorio sugiere que el ajuste se centró en la generación de contenido con una orientación política concreta ("political_left", "worldview-gen"), aunque la model card no documenta el propósito, los datos de entrenamiento ni la metodología con detalle.
 
 Se trata de un modelo de nicho con traza mínima de documentación: cero descargas, cero likes y una model card generada automáticamente por la plantilla de Unsloth. No incluye ejemplos de uso, resultados de evaluación ni descripción del dataset, por lo que debe tratarse con cautela experimental. Al heredar de Qwen2.5-7B-Instruct, conserva presumiblemente sus capacidades generales de generación de texto, razonamiento y código, con licencia Apache 2.0 que permite uso comercial.
 
@@ -21,7 +21,7 @@ Se trata de un modelo de nicho con traza mínima de documentación: cero descarg
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de unsloth/Qwen2.5-7B-Instruct, un transformer decoder-only de 7 mil millones de parámetros. El ajuste fino se realizó con la librería TRL de HuggingFace y con Unsloth, un framework que optimiza el entrenamiento mediante kernels personalizados y reduce el consumo de memoria, permitiendo entrenar "2x más rápido" según la model card. El nombre del repositorio ("r8", "e10", "p10") sugiere una configuración de LoRA con rank 8 y 10 épocas, pero estos datos no están confirmados en la documentación oficial.
+El modelo parte de unsloth/Qwen2.5-7B-Instruct, un transformer decoder-only de 7 mil millones de parámetros. El ajuste fino se realizó con la librería TRL de Hugging Face y con Unsloth, un framework que optimiza el entrenamiento mediante kernels personalizados y reduce el consumo de memoria, permitiendo entrenar "2x más rápido" según la model card. El nombre del repositorio ("r8", "e10", "p10") sugiere una configuración de LoRA con rank 8 y 10 épocas, pero estos datos no están confirmados en la documentación oficial.
 
 No se ha publicado información sobre el dataset de entrenamiento, el número de tokens, el tamaño del corpus ni si se aplicaron técnicas de alineación adicionales (RLHF, DPO). El tamaño del repositorio (0,1 GB) sugiere que se trata de adaptadores LoRA y no de los pesos completos del modelo fusionados, aunque esto tampoco está documentado explícitamente.
 
@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen12
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen12
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
 - Qwen2.5 oficial: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

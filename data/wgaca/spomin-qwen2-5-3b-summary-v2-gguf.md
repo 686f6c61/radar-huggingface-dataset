@@ -92,7 +92,7 @@ Frente a los tres alternativos, este modelo pierde en cobertura idiomatica (solo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wgaca/Spomin-Qwen2.5-3B-Summary-v2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/wgaca/Spomin-Qwen2.5-3B-Summary-v2-GGUF
 - Fichero GGUF Q8_0: https://huggingface.co/wgaca/Spomin-Qwen2.5-3B-Summary-v2-GGUF/blob/main/Spomin-Qwen2.5-3B-Summary-v2-Q8_0.gguf
 - Manifiesto del artefacto: https://huggingface.co/wgaca/Spomin-Qwen2.5-3B-Summary-v2-GGUF/blob/main/artifact.json
 - Licencia Qwen Research: https://huggingface.co/wgaca/Spomin-Qwen2.5-3B-Summary-v2-GGUF/blob/main/LICENSE

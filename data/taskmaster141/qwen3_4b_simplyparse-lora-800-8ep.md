@@ -78,7 +78,7 @@ La comparativa es limitada porque no se dispone de resultados de evaluación del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taskmaster141/qwen3_4b_simplyparse-lora-800-8ep
+- Modelo en Hugging Face: https://huggingface.co/taskmaster141/qwen3_4b_simplyparse-lora-800-8ep
 - Modelo base: https://huggingface.co/unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit
 - Documentación de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Unsloth: https://github.com/unslothai/unsloth

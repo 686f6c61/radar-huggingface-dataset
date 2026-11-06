@@ -89,9 +89,9 @@ La model card confirma que la familia de destilados incluye versiones de 1.5B, 7
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/densafaradenza/DeepSeek-R1-Distill-Qwen-32B
+- Repositorio analizado en Hugging Face: https://huggingface.co/densafaradenza/DeepSeek-R1-Distill-Qwen-32B
 - Repositorio oficial del mismo checkpoint: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
-- Organización DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Informe técnico DeepSeek-R1 (arXiv:2501.12948): https://arxiv.org/abs/2501.12948
 - Repositorio de código en GitHub: https://github.com/deepseek-ai/DeepSeek-R1
 - PDF del informe técnico enlazado en la model card: https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf

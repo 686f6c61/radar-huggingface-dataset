@@ -18,7 +18,7 @@ Técnicamente es un LoRA de diffusers sobre un transformer de difusión, con un 
 | Longitud de contexto | no disponible (modelo texto-a-imagen; no aplica ventana de contexto textual) |
 | Tipos de cuantizacion | no disponible (pesos del adaptador en safetensors; el modelo base admite bfloat16 segun el codigo de ejemplo) |
 | Idiomas soportados | ingles (en) |
-| Licencia | flux-kommunity-license (etiquetada como "other" en HuggingFace) |
+| Licencia | flux-kommunity-license (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (`Hammershoi_flux3_klein.safetensors`) |
 
 ## Arquitectura y entrenamiento
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hammershoi-Flux3-LoRA | FLUX 3 Image Klein Base | no disponible (repo de 0,2 GB) | no aplica | flux-kommunity-license | HuggingFace, 0 descargas |
-| Hammershoi-Flux2-LoRA | FLUX 2 | no disponible | no aplica | no disponible en la información | HuggingFace |
-| Hammershoi-Flux1-LoRA | FLUX 1 | no disponible | no aplica | no disponible en la información | HuggingFace |
-| Hammershoi-Ideogram4-LoRA | Ideogram 4 | no disponible | no aplica | no disponible en la información | HuggingFace |
+| Hammershoi-Flux3-LoRA | FLUX 3 Image Klein Base | no disponible (repo de 0,2 GB) | no aplica | flux-kommunity-license | Hugging Face, 0 descargas |
+| Hammershoi-Flux2-LoRA | FLUX 2 | no disponible | no aplica | no disponible en la información | Hugging Face |
+| Hammershoi-Flux1-LoRA | FLUX 1 | no disponible | no aplica | no disponible en la información | Hugging Face |
+| Hammershoi-Ideogram4-LoRA | Ideogram 4 | no disponible | no aplica | no disponible en la información | Hugging Face |
 
 Las cuatro variantes comparten el mismo dataset de 288 recortes y la misma frase disparadora `hmrsh style`, según la model card, lo que las hace directamente comparables en cuanto a estilo aprendido, aunque no se han publicado métricas cuantitativas de fidelidad o calidad para ninguna de ellas.
 
@@ -79,13 +79,13 @@ Las cuatro variantes comparten el mismo dataset de 288 recortes y la misma frase
 - Rango temático estrecho: se entrenó con la obra de un solo pintor, con interiores daneses austeros, paisajes y retratos; las personas representadas son mayoritariamente europeas y a menudo mujeres con vestimenta oscura de época.
 - Los pies de foto no son perfectos: se acortaron por script a partir de borradores de Claude revisados a mano, con comprobación por muestreo y correcciones puntuales.
 - La licencia flux-kommunity-license impone condiciones específicas para uso comercial; es necesario revisar el archivo LICENSE.md del repositorio antes de cualquier despliegue en producción.
-- El modelo base está restringido (gated), por lo que hay que aceptar su licencia en la página de HuggingFace e iniciar sesión con un token antes de descargarlo.
+- El modelo base está restringido (gated), por lo que hay que aceptar su licencia en la página de Hugging Face e iniciar sesión con un token antes de descargarlo.
 - Solo se documenta soporte de inglés en los prompts; no hay evidencia de comportamiento con otros idiomas.
 - Riesgo de alucinación visual y de resultados incoherentes fuera del dominio entrenado, dado el escaso conjunto de validación.
 
 ## Enlaces
 
-- [HuggingFace: jejunepixels/Hammershoi-Flux3-LoRA](https://huggingface.co/jejunepixels/Hammershoi-Flux3-LoRA)
+- [Hugging Face: jejunepixels/Hammershoi-Flux3-LoRA](https://huggingface.co/jejunepixels/Hammershoi-Flux3-LoRA)
 - [Modelo base: black-forest-labs/flux-3-image-klein-base](https://huggingface.co/black-forest-labs/flux-3-image-klein-base)
 - [Dataset: jejunepixels/Hammershoi-Ideogram4-Dataset](https://huggingface.co/datasets/jejunepixels/Hammershoi-Ideogram4-Dataset)
 - [Version FLUX 1: jejunepixels/Hammershoi-Flux1-LoRA](https://huggingface.co/jejunepixels/Hammershoi-Flux1-LoRA)

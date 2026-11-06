@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace bajo el identificador ASD21DWSA/MyAwesomeModel-TestRepository por el usuario ASD21DWSA. El propio nombre del repositorio incluye el sufijo "TestRepository", el tamano declarado del repositorio es de 0.0 GB, y las fechas de creacion y actualizacion (11 de septiembre de 2026) son posteriores a la fecha de consulta, por lo que todo apunta a que se trata de un repositorio de prueba o de una plantilla de model card y no de una publicacion real de pesos utilizables.
+MyAwesomeModel es un modelo publicado en Hugging Face bajo el identificador ASD21DWSA/MyAwesomeModel-TestRepository por el usuario ASD21DWSA. El propio nombre del repositorio incluye el sufijo "TestRepository", el tamano declarado del repositorio es de 0.0 GB, y las fechas de creacion y actualizacion (11 de septiembre de 2026) son posteriores a la fecha de consulta, por lo que todo apunta a que se trata de un repositorio de prueba o de una plantilla de model card y no de una publicacion real de pesos utilizables.
 
 Existe ademas una contradiccion interna relevante: las etiquetas del repositorio declaran arquitectura BERT (tag `bert`) y pipeline `feature-extraction`, mientras que la model card describe un asistente conversacional con razonamiento extendido, capacidad de function calling, generacion de codigo y busqueda web. Es decir, los metadatos del repositorio y el contenido de la model card no describen el mismo tipo de modelo.
 
@@ -23,7 +23,7 @@ Por todo ello, esta ficha recoge la informacion declarada por el autor pero sena
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no permite determinar la arquitectura real del modelo. Los tags de HuggingFace indican `transformers`, `pytorch` y `bert`, y el pipeline declarado es `feature-extraction`, lo que corresponderia a un encoder tipo BERT para generacion de embeddings. Sin embargo, la model card describe un modelo de proposito general con razonamiento profundo, function calling y generacion de codigo, capacidades propias de un decoder causal de gran tamano. Estas dos descripciones son incompatibles entre si.
+La informacion proporcionada no permite determinar la arquitectura real del modelo. Los tags de Hugging Face indican `transformers`, `pytorch` y `bert`, y el pipeline declarado es `feature-extraction`, lo que corresponderia a un encoder tipo BERT para generacion de embeddings. Sin embargo, la model card describe un modelo de proposito general con razonamiento profundo, function calling y generacion de codigo, capacidades propias de un decoder causal de gran tamano. Estas dos descripciones son incompatibles entre si.
 
 Respecto al entrenamiento, la model card afirma que la version actual mejora su "profundidad de razonamiento" mediante "mayores recursos computacionales y mecanismos de optimizacion algorítmica durante el post-entrenamiento", y menciona una reduccion de la tasa de alucinacion y mejor soporte de function calling. No se especifica numero de tokens de entrenamiento, composicion del dataset, ni si hubo RLHF, DPO u otra tecnica de alineamiento concreta. Tampoco se documenta ninguna innovacion arquitectonica (atencion lineal, decodificacion especulativa, SSM, etc.). Todos estos datos deben considerarse no disponibles.
 
@@ -111,6 +111,6 @@ En consecuencia, no se puede afirmar que sea comparable con ninguna familia conc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASD21DWSA/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/ASD21DWSA/MyAwesomeModel-TestRepository
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo, a un paper, a un repositorio de codigo ni a una demo. Los resultados devueltos por la busqueda no guardan ninguna relacion con este modelo y se han descartado. La model card menciona un "sitio web oficial" para chat y API y un "repositorio de codigo" para ejecucion local, pero no incluye las URL correspondientes.

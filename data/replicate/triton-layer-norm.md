@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`replicate/triton-layer-norm` no es un modelo de lenguaje, sino un paquete de kernels de normalizacion implementados en Triton y publicados en el Hub de HuggingFace bajo la libreria `kernels`. Concretamente, expone la funcion `layer_norm` y la clase `LlamaRMSNorm`, que aplican normalizacion de capa (o RMSNorm) acelerada por GPU. El codigo procede del proyecto [flash-attention](https://github.com/Dao-AILab/flash-attention) de Tri Dao y se redistribuye con licencia BSD-3-Clause por la cuenta de Replicate.
+`replicate/triton-layer-norm` no es un modelo de lenguaje, sino un paquete de kernels de normalizacion implementados en Triton y publicados en el Hub de Hugging Face bajo la libreria `kernels`. Concretamente, expone la funcion `layer_norm` y la clase `LlamaRMSNorm`, que aplican normalizacion de capa (o RMSNorm) acelerada por GPU. El codigo procede del proyecto [flash-attention](https://github.com/Dao-AILab/flash-attention) de Tri Dao y se redistribuye con licencia BSD-3-Clause por la cuenta de Replicate.
 
 El problema que resuelve es de rendimiento a bajo nivel: sustituir las implementaciones genericas de normalizacion de PyTorch por una version fusionada que en una sola pasada suma el residual, aplica dropout opcional y normaliza, reduciendo el numero de lecturas y escrituras a memoria global. Es una pieza habitual en el stack de inferencia y entrenamiento de transformers, ya que la normalizacion se ejecuta dos veces por bloque de atencion en arquitecturas tipo Llama.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - El kernel requiere una GPU compatible con Triton. En la practica, GPUs NVIDIA con CUDA y, en funcion de la version de Triton, GPUs AMD con ROCm. No se documenta soporte de CPU en la informacion disponible.
 - La VRAM necesaria no depende del kernel, sino del tamano de los tensores de entrada, `weight`, `bias` y de los buffers opcionales. No hay cifras publicadas.
 - No se publican GPU recomendadas. Al ser un kernel de normalizacion, es aplicable tanto a GPUs de datacenter (A100, H100) como a GPUs de consumo (serie RTX), sin que la model card haga recomendaciones concretas.
-- El despliegue se realiza a traves de la libreria `kernels` de HuggingFace, que compila y carga el kernel en tiempo de ejecucion; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
+- El despliegue se realiza a traves de la libreria `kernels` de Hugging Face, que compila y carga el kernel en tiempo de ejecucion; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
 - No se publican datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
@@ -75,14 +75,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Alternativa | Tipo | Licencia | Notas |
 |---|---|---|---|
 | `torch.nn.LayerNorm` / `torch.nn.functional.layer_norm` | Implementacion nativa de PyTorch | BSD-3-Clause (PyTorch) | Referencia estandar; no fusiona residual ni dropout y suele requerir mas accesos a memoria. No se dispone de comparativa numerica publicada frente a este kernel. |
-| `LlamaRMSNorm` de transformers (HuggingFace) | Modulo Python/PyTorch | Apache-2.0 | Implementacion de referencia para RMSNorm; el kernel de este repositorio ofrece una version acelerada con la misma semantica, pero sin datos de rendimiento publicados. |
+| `LlamaRMSNorm` de transformers (Hugging Face) | Modulo Python/PyTorch | Apache-2.0 | Implementacion de referencia para RMSNorm; el kernel de este repositorio ofrece una version acelerada con la misma semantica, pero sin datos de rendimiento publicados. |
 | Kernels de normalizacion de Apex (NVIDIA) | Kernels CUDA fusionados | BSD-3-Clause | Ofrece normalizacion fusionada con residual en CUDA; no se dispone de comparacion directa en la informacion proporcionada. |
-| `kernels-community/flash-attn3` y otros paquetes de la libreria `kernels` | Kernels publicados en el Hub | Variable segun repositorio | Misma via de distribucion y mismo aviso de migracion por parte de HuggingFace; no comparable en rendimiento con los datos disponibles. |
+| `kernels-community/flash-attn3` y otros paquetes de la libreria `kernels` | Kernels publicados en el Hub | Variable segun repositorio | Misma via de distribucion y mismo aviso de migracion por parte de Hugging Face; no comparable en rendimiento con los datos disponibles. |
 
 ## Limitaciones y advertencias
 
 - No es un modelo de lenguaje: no genera texto, no razona, no soporta tool calling ni agentes. Cualquier ficha que lo trate como modelo de IA generativa es incorrecta.
-- La model card incluye un aviso de HuggingFace: a partir del 13 de septiembre de 2026 se eliminaran los repositorios de kernels publicados con el tipo "model" (por ejemplo `kernels-community/flash-attn3`). Conviene usar una version reciente de la libreria `kernels` y reportar incidencias en su repositorio de GitHub.
+- La model card incluye un aviso de Hugging Face: a partir del 13 de septiembre de 2026 se eliminaran los repositorios de kernels publicados con el tipo "model" (por ejemplo `kernels-community/flash-attn3`). Conviene usar una version reciente de la libreria `kernels` y reportar incidencias en su repositorio de GitHub.
 - El parametro `rowscale` no es compatible con el uso simultaneo de `x1`, segun la propia documentacion.
 - El repositorio no tiene documentacion para `LlamaRMSNorm` ni para su metodo `forward`; la model card indica explicitamente "No documentation available".
 - El repositorio registra 0 descargas y 0 likes, sin historial de mantenimiento ni de actualizaciones mas alla de su fecha de creacion.
@@ -93,9 +93,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/triton-layer-norm
+- Repositorio en Hugging Face: https://huggingface.co/replicate/triton-layer-norm
 - Proyecto flash-attention (origen del kernel): https://github.com/Dao-AILab/flash-attention
-- Incidencias de la libreria `kernels` de HuggingFace: https://github.com/huggingface/kernels/issues/new
+- Incidencias de la libreria `kernels` de Hugging Face: https://github.com/huggingface/kernels/issues/new
 - Cuenta de Replicate en GitHub: https://github.com/replicate
 - Replicate (plataforma): https://replicate.com/
 - Explorador de modelos de Replicate: https://replicate.com/explore

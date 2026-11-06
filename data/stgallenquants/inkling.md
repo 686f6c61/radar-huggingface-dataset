@@ -96,7 +96,7 @@ Los datos de parámetros, contexto y licencia de los modelos comparados no está
 
 ## Enlaces
 
-- Repositorio HuggingFace (mirror): https://huggingface.co/stgallenquants/Inkling
+- Repositorio Hugging Face (mirror): https://huggingface.co/stgallenquants/Inkling
 - Model card oficial de Thinking Machines Lab: https://thinkingmachines.ai/model-card/inkling/
 - Página del producto Inkling: https://thinkingmachines.ai/inkling/
 - Playground de Tinker: https://tinker.thinkingmachines.ai/playground

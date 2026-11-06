@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voxcpm2-stageA-te-maha20h-reuse-en3h-baselm3e-4-1ep | 2,29 B | No disponible | en, te, kn | Apache 2.0 | HuggingFace |
-| Modelo base: voxcpm2-indic-multi-stage2-english-reuse-lr1e-4-10ep | No disponible | No disponible | en, índico (según nombre) | No disponible | HuggingFace |
+| voxcpm2-stageA-te-maha20h-reuse-en3h-baselm3e-4-1ep | 2,29 B | No disponible | en, te, kn | Apache 2.0 | Hugging Face |
+| Modelo base: voxcpm2-indic-multi-stage2-english-reuse-lr1e-4-10ep | No disponible | No disponible | en, índico (según nombre) | No disponible | Hugging Face |
 | Alternativas TTS comerciales (p. ej. ElevenLabs, Azure TTS) | No disponible | No disponible | Múltiples | Propietaria | API |
 | Modelos TTS open source comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sw-voice/voxcpm2-stageA-te-maha20h-reuse-en3h-baselm3e-4-1ep
+- Hugging Face: https://huggingface.co/sw-voice/voxcpm2-stageA-te-maha20h-reuse-en3h-baselm3e-4-1ep
 - Modelo base: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage2-english-reuse-lr1e-4-10ep
 - Dataset telugu: sw-voice/swamiji-mahabharatam-telugu-reuse-themes-20h (referenciado en la model card)
 - Dataset inglés: sw-voice/swamiji-voice-sft-reuse (referenciado en la model card)

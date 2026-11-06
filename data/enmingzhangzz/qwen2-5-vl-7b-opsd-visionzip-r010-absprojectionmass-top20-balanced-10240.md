@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada: el adaptador en si ocupa 0.2 GB, pero el modelo base Qwen2.5-VL-7B-Instruct requiere aproximadamente 16-18 GB en FP16 y 8-10 GB en cuantizacion INT8/INT4.
 - GPU recomendadas: para inferencia en FP16, una GPU con 24 GB (RTX 3090/4090, A10) es suficiente. Para cuantizacion, una GPU de 12-16 GB (RTX 3060/4070) puede ser viable.
 - Consumer GPU: si, con cuantizacion (GGUF o AWQ) el modelo cabe en GPUs de 12 GB, aunque la poda de VisionZip reduce la carga de tokens visuales y puede permitir contextos mas largos.
-- Opciones de despliegue: vLLM, TGI, llama.cpp, Ollama (si se convierte a GGUF), y HuggingFace Transformers con PEFT. El parche de VisionZip es necesario para la inferencia podada.
+- Opciones de despliegue: vLLM, TGI, llama.cpp, Ollama (si se convierte a GGUF), y Hugging Face Transformers con PEFT. El parche de VisionZip es necesario para la inferencia podada.
 - Latencia y throughput: no disponibles. La poda de tokens visuales al 10% deberia reducir significativamente el tiempo de prefill en tareas con muchas imagenes, pero no hay datos medidos.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ La comparativa directa con otros adaptadores de VisionZip o modelos OPSD no esta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-AbsProjectionMass-top20-balanced-10240
+- Repositorio Hugging Face: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-AbsProjectionMass-top20-balanced-10240
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/OpenMMReasoner/OpenMMReasoner-SFT-874K
 - Proyecto VisionZip: no disponible en la informacion proporcionada

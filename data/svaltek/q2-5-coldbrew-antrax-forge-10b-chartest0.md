@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-CharTest0 es un ajuste fino (finetune) de la serie Q2.5 ColdBrew Antrax Forge desarrollada por SvalTek, una organización que publica modelos de lenguaje abiertos. Este modelo concreto es una variante experimental orientada a conversación, etiquetada como "CharTest0", lo que sugiere que se trata de una prueba para tareas de personaje o diálogo. Está basado en la arquitectura Qwen2.5, como indican las etiquetas de HuggingFace, y se distribuye bajo licencia Apache 2.0.
+El modelo SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-CharTest0 es un ajuste fino (finetune) de la serie Q2.5 ColdBrew Antrax Forge desarrollada por SvalTek, una organización que publica modelos de lenguaje abiertos. Este modelo concreto es una variante experimental orientada a conversación, etiquetada como "CharTest0", lo que sugiere que se trata de una prueba para tareas de personaje o diálogo. Está basado en la arquitectura Qwen2.5, como indican las etiquetas de Hugging Face, y se distribuye bajo licencia Apache 2.0.
 
-El modelo se presenta como un finetune del modelo SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-TestSFT0, entrenado con las librerías Unsloth y TRL de HuggingFace. Aunque el nombre sugiere una escala de 10 mil millones de parámetros, no se proporcionan especificaciones técnicas detalladas en la model card. La relevancia de este modelo radica en su disponibilidad como recurso abierto para experimentación en generación de texto conversacional, aunque su escasa documentación y ausencia de benchmarks publicados limitan su evaluación objetiva.
+El modelo se presenta como un finetune del modelo SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-TestSFT0, entrenado con las librerías Unsloth y TRL de Hugging Face. Aunque el nombre sugiere una escala de 10 mil millones de parámetros, no se proporcionan especificaciones técnicas detalladas en la model card. La relevancia de este modelo radica en su disponibilidad como recurso abierto para experimentación en generación de texto conversacional, aunque su escasa documentación y ausencia de benchmarks publicados limitan su evaluación objetiva.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El modelo se presenta como un finetune del modelo SvalTek/Q2.5-ColdBrew-Antrax-F
 
 ## Arquitectura y entrenamiento
 
-La arquitectura se basa en el modelo Qwen2.5, un transformer decoder-only con atención causal estándar. No se especifican detalles sobre el número de capas, dimensiones ocultas o mecanismos de atención. El entrenamiento consistió en un ajuste fino (SFT) del modelo base SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-TestSFT0, utilizando las librerías Unsloth (que acelera el entrenamiento) y TRL de HuggingFace. No se proporciona información sobre el dataset utilizado, el número de tokens de entrenamiento ni si se aplicaron técnicas como RLHF o DPO. La etiqueta "conversational" sugiere que el ajuste se orientó a tareas de diálogo, pero no hay detalles adicionales.
+La arquitectura se basa en el modelo Qwen2.5, un transformer decoder-only con atención causal estándar. No se especifican detalles sobre el número de capas, dimensiones ocultas o mecanismos de atención. El entrenamiento consistió en un ajuste fino (SFT) del modelo base SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-TestSFT0, utilizando las librerías Unsloth (que acelera el entrenamiento) y TRL de Hugging Face. No se proporciona información sobre el dataset utilizado, el número de tokens de entrenamiento ni si se aplicaron técnicas como RLHF o DPO. La etiqueta "conversational" sugiere que el ajuste se orientó a tareas de diálogo, pero no hay detalles adicionales.
 
 ## Capacidades
 
@@ -66,7 +66,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-CharTest0
+- Hugging Face: https://huggingface.co/SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-CharTest0
 - Modelo base (TestSFT0): https://huggingface.co/SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-TestSFT0
 - Modelo relacionado (TestSFT1): https://huggingface.co/SvalTek/Q2.5-ColdBrew-Antrax-Forge-10B-TestSFT1
 - Ficha en LLM Explorer (TestSFT0): https://llm-explorer.com/model/SvalTek%2FQ2.5-ColdBrew-Antrax-Forge-10B-TestSFT0,5oBTFoLHgVViE28TYFF4I9

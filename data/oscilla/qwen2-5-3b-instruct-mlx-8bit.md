@@ -80,7 +80,7 @@ Las alternativas de la comunidad (lmstudio-community, mlx-community) ofrecen la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Oscilla/Qwen2.5-3B-Instruct-mlx-8Bit
+- Repositorio Hugging Face: https://huggingface.co/Oscilla/Qwen2.5-3B-Instruct-mlx-8Bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Documentación de Qwen2.5 en GitHub: https://github.com/mx4ai/qwen2.5
 - Página de Qwen2.5 en Ollama: https://ollama.com/library/qwen2.5:3b-instruct

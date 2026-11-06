@@ -89,7 +89,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 | camera-health-nano | 47.029 | 64×64 grayscale | Detección de fallos de cámara (5 cabezas) | MIT |
 | no disponible | - | - | - | - |
 
-El autor menciona en su perfil de HuggingFace que se interesa en nano-modelos para industrias, lo que sugiere que es un área emergente con poca competencia directa. Para un contexto más amplio, se puede comparar con modelos de clasificación de imágenes como MobileNet, pero no son comparables en tarea ni en tamaño.
+El autor menciona en su perfil de Hugging Face que se interesa en nano-modelos para industrias, lo que sugiere que es un área emergente con poca competencia directa. Para un contexto más amplio, se puede comparar con modelos de clasificación de imágenes como MobileNet, pero no son comparables en tarea ni en tamaño.
 
 ## Limitaciones y advertencias
 
@@ -103,7 +103,7 @@ El autor menciona en su perfil de HuggingFace que se interesa en nano-modelos pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/resoajoe/camera-health-nano](https://huggingface.co/resoajoe/camera-health-nano)
+- Modelo en Hugging Face: [https://huggingface.co/resoajoe/camera-health-nano](https://huggingface.co/resoajoe/camera-health-nano)
 - Perfil del autor: [https://huggingface.co/resoajoe](https://huggingface.co/resoajoe)
 - Proyecto relacionado (LogLens): [https://huggingface.co/spaces/resoajoe/loglens](https://huggingface.co/spaces/resoajoe/loglens)
 - No se han encontrado papers, repositorios de código ni demos adicionales.

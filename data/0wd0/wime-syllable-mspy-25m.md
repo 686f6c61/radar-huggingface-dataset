@@ -6,7 +6,7 @@ wime-syllable-mspy-25m es un modelo de lenguaje de caracteres de 25,3 millones d
 
 El modelo se integra en el decodificador de wime, que fusiona sus puntuaciones con las de un modelo de lenguaje general (Qwen3.5-2B-Base) mediante una busqueda en haz sincrona por caracteres. Esta arquitectura hibrida permite combinar el conocimiento especifico de conversion silaba-caracter con la fluidez linguistica de un modelo mayor, obteniendo una tasa de acierto del 90,5% en frases completas sobre el conjunto de evaluacion del autor.
 
-Es relevante porque ejemplifica el uso de modelos pequenos y altamente especializados como componentes de sistemas de entrada de texto, un nicho donde los LLM generales resultan costosos en latencia y donde un modelo de 25M puede ejecutarse en CPU con un consumo minimo de recursos. La ficha se basa exclusivamente en la model card publicada; no hay informacion adicional disponible sobre benchmarks externos ni sobre el pipeline de HuggingFace.
+Es relevante porque ejemplifica el uso de modelos pequenos y altamente especializados como componentes de sistemas de entrada de texto, un nicho donde los LLM generales resultan costosos en latencia y donde un modelo de 25M puede ejecutarse en CPU con un consumo minimo de recursos. La ficha se basa exclusivamente en la model card publicada; no hay informacion adicional disponible sobre benchmarks externos ni sobre el pipeline de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -85,5 +85,5 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. E
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0WD0/wime-syllable-mspy-25m
+- Hugging Face: https://huggingface.co/0WD0/wime-syllable-mspy-25m
 - Repositorio chinese-ime-lm: https://github.com/metasequoiaime/chinese-ime-lm

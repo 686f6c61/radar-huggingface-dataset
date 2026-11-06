@@ -106,7 +106,7 @@ No se dispone de comparativas publicadas con alternativas de otros fabricantes e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darioooooo0o/JEV-27B-VL-GPTQ-Int4-asym
+- Modelo en Hugging Face: https://huggingface.co/darioooooo0o/JEV-27B-VL-GPTQ-Int4-asym
 - Modelo base: https://huggingface.co/autotrust/JEV-27B-VL
 - Repositorio demo de JEV: https://github.com/yuhai-china/JEV-27B-DEMO
 - Cookbook del autor para Intel B70 (parches vLLM y kernels de atencion): https://github.com/riceharvest/b70-qwen38-cookbook

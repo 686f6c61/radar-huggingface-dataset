@@ -76,7 +76,7 @@ La diferencia principal entre las dos cuantizaciones GPTQ reside en el formato i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qtum/Qwen3-14B-GPTQ
+- Repositorio Hugging Face: https://huggingface.co/qtum/Qwen3-14B-GPTQ
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Documentacion de Qwen3 (GitHub): https://github.com/QwenLM/Qwen3
 - Guia de cuantizacion GPTQ para Qwen3: https://github.com/QwenLM/Qwen3/blob/main/docs/source/quantization/gptq.md

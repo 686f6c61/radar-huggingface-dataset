@@ -2,7 +2,7 @@
 
 ## Resumen
 
-chand1012/whisperfile-tiny es un repositorio alojado en HuggingFace bajo la autoría del usuario chand1012. La informacion publica disponible es extremadamente limitada: unicamente se declara la licencia MIT, no se especifica pipeline, no se declaran idiomas soportados y el tamano del repositorio figura como 0.0 GB, lo que sugiere que el repositorio no contiene pesos publicados o que estos no han sido contabilizados en el momento de la consulta.
+chand1012/whisperfile-tiny es un repositorio alojado en Hugging Face bajo la autoría del usuario chand1012. La informacion publica disponible es extremadamente limitada: unicamente se declara la licencia MIT, no se especifica pipeline, no se declaran idiomas soportados y el tamano del repositorio figura como 0.0 GB, lo que sugiere que el repositorio no contiene pesos publicados o que estos no han sido contabilizados en el momento de la consulta.
 
 El identificador del modelo incluye el termino "whisper", lo que apunta a una posible relacion con la familia Whisper de reconocimiento automatico del habla (ASR) de OpenAI, y el sufijo "tiny" coincide con la denominacion de la variante mas pequena de dicha familia. El segmento "file" podria indicar un artefacto derivado orientado a despliegue ligero o a un formato de fichero especifico, pero ninguna de estas hipotesis esta confirmada por la model card, que se reduce a la linea de licencia.
 
@@ -72,7 +72,7 @@ No disponible. No se dispone de datos de arquitectura, parametros, contexto, ren
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chand1012/whisperfile-tiny | no disponible | no disponible | no disponible | MIT | Repositorio HuggingFace, 0 descargas |
+| chand1012/whisperfile-tiny | no disponible | no disponible | no disponible | MIT | Repositorio Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,6 +89,6 @@ No disponible. No se dispone de datos de arquitectura, parametros, contexto, ren
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chand1012/whisperfile-tiny
+- Hugging Face: https://huggingface.co/chand1012/whisperfile-tiny
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`scontardor/nemotron-4b-prevision-seguros-cl-taai2` es un adaptador LoRA publicado en HuggingFace por el usuario scontardor, construido sobre el modelo base `nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1`. El adaptador especializa un modelo denso de 4.000 millones de parametros en el dominio de la prevision y los seguros de personas en Chile, y se distribuye exclusivamente como pesos de adaptador en formato PEFT (`library_name: peft`), con un tamano de repositorio de 0,1 GB.
+`scontardor/nemotron-4b-prevision-seguros-cl-taai2` es un adaptador LoRA publicado en Hugging Face por el usuario scontardor, construido sobre el modelo base `nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1`. El adaptador especializa un modelo denso de 4.000 millones de parametros en el dominio de la prevision y los seguros de personas en Chile, y se distribuye exclusivamente como pesos de adaptador en formato PEFT (`library_name: peft`), con un tamano de repositorio de 0,1 GB.
 
 El modelo nace como entregable del curso Topicos Avanzados en IA 2 (TAAI2) del Magister en IA de la Universidad Adolfo Ibanez (UAI, 2026) y su proposito declarado es estrictamente educativo. No es asesoria previsional, financiera ni de seguros, y la propia model card prohibe su uso con usuarios reales. Se trata, por tanto, de un artefacto de investigacion y docencia, no de un modelo listo para produccion.
 
@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nemotron-4b-prevision-seguros-cl-taai2 (este adaptador) | 4.000 M (base) + 30,4 M (LoRA) | no disponible | Nota media 5,65/10 en examen propio de 40 preguntas | no disponible | HuggingFace, 0 descargas, 0 likes |
-| nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1 (modelo base) | 4.000 M | no disponible | linea base del examen: 1,60/10 | no disponible | HuggingFace (NVIDIA) |
+| nemotron-4b-prevision-seguros-cl-taai2 (este adaptador) | 4.000 M (base) + 30,4 M (LoRA) | no disponible | Nota media 5,65/10 en examen propio de 40 preguntas | no disponible | Hugging Face, 0 descargas, 0 likes |
+| nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1 (modelo base) | 4.000 M | no disponible | linea base del examen: 1,60/10 | no disponible | Hugging Face (NVIDIA) |
 | Otros adaptadores LoRA de dominio financiero en espanol | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables sobre alternativas comparables de la misma categoria (adaptadores LoRA en espanol para prevision y seguros en Chile), por lo que la comparativa se limita al modelo base y a la ausencia de informacion sobre terceros.
@@ -99,6 +99,6 @@ No se dispone de datos verificables sobre alternativas comparables de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scontardor/nemotron-4b-prevision-seguros-cl-taai2
+- Modelo en Hugging Face: https://huggingface.co/scontardor/nemotron-4b-prevision-seguros-cl-taai2
 - Modelo base: https://huggingface.co/nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1
 - La busqueda web no devolvio enlaces relevantes al modelo (los resultados obtenidos correspondian a restaurantes y no guardaban relacion con el artefacto).

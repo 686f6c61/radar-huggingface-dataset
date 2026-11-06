@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JOONIE es un modelo publicado en HuggingFace por el usuario OrbitngTwice bajo el identificador `OrbitngTwice/JOONIE`. La informacion disponible en su model card es practicamente inexistente: unicamente declara `license: unknown` y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0.1 GB, lo que sugiere pesos de pequeno tamano, pero no permite inferir con rigor el numero de parametros ni la familia arquitectonica.
+JOONIE es un modelo publicado en Hugging Face por el usuario OrbitngTwice bajo el identificador `OrbitngTwice/JOONIE`. La informacion disponible en su model card es practicamente inexistente: unicamente declara `license: unknown` y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0.1 GB, lo que sugiere pesos de pequeno tamano, pero no permite inferir con rigor el numero de parametros ni la familia arquitectonica.
 
 El modelo no cuenta con descargas ni likes en el momento de redactar esta ficha, y no se ha publicado pipeline, idiomas soportados ni resultados de evaluacion. Esto lo situa en la categoria de repositorios experimentales o personales sin documentacion verificable, lo que impide recomendarlo para entornos de produccion o para cualquier evaluacion tecnica seria sin una inspeccion directa de los ficheros de pesos.
 
@@ -39,7 +39,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composici
 ## Casos de uso
 
 - Evaluacion exploratoria de pesos: dado que no hay documentacion, el unico uso inmediato razonable es la inspeccion tecnica del repositorio (carga de pesos, identificacion de arquitectura y tokenizador) en un entorno aislado.
-- Investigacion sobre modelos sin documentar: util para estudiar practicas de publicacion en HuggingFace y sus riesgos de trazabilidad.
+- Investigacion sobre modelos sin documentar: util para estudiar practicas de publicacion en Hugging Face y sus riesgos de trazabilidad.
 - Pruebas de robustez de pipelines de carga: puede servir como caso de prueba para validar que un sistema de despliegue rechaza o advierte ante modelos sin licencia ni metadatos.
 - No se recomienda su uso en atencion al cliente, generacion de codigo en produccion, analisis documental, traduccion, agentes autonomos ni ninguna aplicacion finalista, al no existir evidencia de calidad, licencia o seguridad.
 - Cualquier caso de uso adicional requeriria primero una evaluacion interna documentada por parte del equipo que lo adopte.
@@ -72,5 +72,5 @@ No disponible. No se puede establecer una comparativa fiable sin conocer el tama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OrbitngTwice/JOONIE
+- Hugging Face: https://huggingface.co/OrbitngTwice/JOONIE
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

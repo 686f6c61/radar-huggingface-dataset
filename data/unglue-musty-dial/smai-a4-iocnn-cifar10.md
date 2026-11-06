@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `smai-a4-iocnn-cifar10`, publicado por el usuario `unglue-musty-dial` en HuggingFace, es una red neuronal fully-connected entrenada desde cero para clasificar imágenes del conjunto de datos CIFAR-10. Se trata de un artefacto académico correspondiente a la asignatura SMAI (Assignment 4, Q1), no de un modelo de lenguaje ni de un modelo fundacional: su única función es asignar una de las diez clases de CIFAR-10 (avión, automóvil, pájaro, gato, ciervo, perro, rana, caballo, barco, camión) a una imagen de 32x32 píxeles en color.
+El modelo `smai-a4-iocnn-cifar10`, publicado por el usuario `unglue-musty-dial` en Hugging Face, es una red neuronal fully-connected entrenada desde cero para clasificar imágenes del conjunto de datos CIFAR-10. Se trata de un artefacto académico correspondiente a la asignatura SMAI (Assignment 4, Q1), no de un modelo de lenguaje ni de un modelo fundacional: su única función es asignar una de las diez clases de CIFAR-10 (avión, automóvil, pájaro, gato, ciervo, perro, rana, caballo, barco, camión) a una imagen de 32x32 píxeles en color.
 
 La arquitectura es un perceptrón multicapa (MLP) de tres capas con 3072 entradas (imágenes aplanadas), dos capas ocultas de 256 y 128 neuronas con activación ELU, y una capa de salida de 10 logits entrenada con entropía cruzada softmax. El total de parámetros asciende a 820.874. La innovación declarada por el autor es una restricción de no negatividad sobre los pesos de las capas 2 en adelante, aplicada tras cada paso del optimizador, lo que da nombre al modelo (IOC-NN, presumiblemente *Input-Output Convex Neural Network* o similar).
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto/Entrada | Accuracy test CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-a4-iocnn-cifar10 | 820.874 | 3072 valores (32x32x3) | 0,4559 | no disponible | HuggingFace |
+| smai-a4-iocnn-cifar10 | 820.874 | 3072 valores (32x32x3) | 0,4559 | no disponible | Hugging Face |
 | MLP estandar CIFAR-10 (referencia tipica) | ~800.000 | 3072 valores | no disponible en la informacion | no disponible | no disponible |
 | CNN pequenas tipo LeNet/VGG-mini | millones | 32x32x3 | no disponible en la informacion | no disponible | no disponible |
 
@@ -88,5 +88,5 @@ No se dispone de datos de benchmarks de alternativas en la informacion proporcio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unglue-musty-dial/smai-a4-iocnn-cifar10
+- Hugging Face: https://huggingface.co/unglue-musty-dial/smai-a4-iocnn-cifar10
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

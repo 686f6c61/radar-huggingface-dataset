@@ -72,8 +72,8 @@ Advertencia del autor: la edición elimina un modo de fallo, no añade capacidad
 
 | Modelo | Parametros | Contexto | MATH-500 (thinking) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B (base) | 873 M | no disponible | 7,9 | Apache 2.0 | HuggingFace |
-| Qwen3.5-0.8B-Astra-WeightEdit | 873 M | no disponible | 48,1 (reportado, no reproducido) | Apache 2.0 + CC BY 4.0 (edicion) | HuggingFace |
+| Qwen3.5-0.8B (base) | 873 M | no disponible | 7,9 | Apache 2.0 | Hugging Face |
+| Qwen3.5-0.8B-Astra-WeightEdit | 873 M | no disponible | 48,1 (reportado, no reproducido) | Apache 2.0 + CC BY 4.0 (edicion) | Hugging Face |
 | Alternativas de tamano similar (p. ej. Llama 3.2 1B, Gemma 2 2B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de modelos comparables en la información proporcionada, por lo que la comparativa se limita al par base/editado. Cualquier comparación con otros modelos pequeños requeriría ejecutar la misma evaluación con idéntica configuración de sampling.
@@ -94,10 +94,10 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JonathanColetti/Qwen3.5-0.8B-Astra-WeightEdit
+- Modelo en Hugging Face: https://huggingface.co/JonathanColetti/Qwen3.5-0.8B-Astra-WeightEdit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Blog del método (Sparks of Weight-Space Programming, experimento 8): https://rikiyat.github.io/blog/weight-space-programming/
 - Logs y edición de los autores: https://github.com/RikiyaT/lm_understand-logs/tree/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math
-- Directorio de la edición en el repositorio: `astra_edit/` (incluido en el repo de HuggingFace)
+- Directorio de la edición en el repositorio: `astra_edit/` (incluido en el repo de Hugging Face)
 - Script de reconstrucción: `exp8_math/code/apply_edit.py` (revisión base `2fc06364`)
 - Cita del método: Takehi, Rikiya; Teoh, Jayden; Zhang, Alex; Khattab, Omar (2026), "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights"

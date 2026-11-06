@@ -86,13 +86,13 @@ Nota: los datos de CLIP-ReID provienen de la propia medición del autor en la mo
 - El modelo está orientado exclusivamente a la re-identificación de vehículos; no puede procesar texto ni realizar tareas de visión general como clasificación de escenas o detección.
 - No se dispone de información sobre sesgos del modelo, pero es probable que el rendimiento dependa de la distribución de las cámaras de entrenamiento (por ejemplo, ángulos, condiciones de iluminación) y pueda degradarse en entornos con condiciones meteorológicas extremas.
 - Riesgo de alucinación no aplica (es un modelo de visión puro), pero sí existe riesgo de falsos positivos en la comparación de embeddings si las imágenes de vehículos de distintos modelos son muy similares.
-- La licencia Apache 2.0 permite uso comercial, pero es recomendable revisar los términos de la licencia del modelo base SigLIP 2 (Apache 2.0 también, según su página de HuggingFace).
+- La licencia Apache 2.0 permite uso comercial, pero es recomendable revisar los términos de la licencia del modelo base SigLIP 2 (Apache 2.0 también, según su página de Hugging Face).
 - El modelo está diseñado para recortes de vehículos, no para imágenes completas de escenas; si se usa con imágenes de escena completa, el rendimiento será subóptimo.
 - La ventana de contexto de 256 parches limita la resolución máxima de entrada: imágenes con mayor resolución que 256 parches (por ejemplo, 16x16 = 256) deben ser reescaladas o recortadas, lo que puede perder información de detalles finos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/apatc/vehicle_reid_siglip2_naflex_512d
+- Modelo en Hugging Face: https://huggingface.co/apatc/vehicle_reid_siglip2_naflex_512d
 - Modelo base SigLIP2 NaFlex: https://huggingface.co/google/siglip2-base-patch16-naflex
 - Paper de SigLIP 2: https://arxiv.org/abs/2502.14786
 - Documentación de SigLIP 2 en Transformers: https://huggingface.co/docs/transformers/model_doc/siglip2

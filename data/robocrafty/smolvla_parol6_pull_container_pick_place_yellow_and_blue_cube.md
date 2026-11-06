@@ -35,7 +35,7 @@ La licencia Apache 2.0 y su integración nativa con LeRobot 0.6.1 permiten reuti
 | Seed | 1000 |
 | Version de LeRobot | 0.6.1 |
 | Tamano del repositorio | 0,9 GB |
-| Descargas en HuggingFace | 21 |
+| Descargas en Hugging Face | 21 |
 
 ## Arquitectura y entrenamiento
 
@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolVLA (este checkpoint) | 450 M | no disponible | Manipulación Parol6, tarea única | Apache 2.0 | HuggingFace, LeRobot |
-| lerobot/smolvla_base | no disponible | no disponible | VLA base para ajuste fino | no disponible en la informacion | HuggingFace |
-| Políticas ACT / Diffusion Policy en LeRobot | no disponible | no disponible | Manipulación por imitación | no disponible en la informacion | HuggingFace, LeRobot |
+| SmolVLA (este checkpoint) | 450 M | no disponible | Manipulación Parol6, tarea única | Apache 2.0 | Hugging Face, LeRobot |
+| lerobot/smolvla_base | no disponible | no disponible | VLA base para ajuste fino | no disponible en la informacion | Hugging Face |
+| Políticas ACT / Diffusion Policy en LeRobot | no disponible | no disponible | Manipulación por imitación | no disponible en la informacion | Hugging Face, LeRobot |
 | Modelos VLA de mayor escala (p. ej. familias tipo OpenVLA) | no disponible | no disponible | Manipulación generalista | no disponible en la informacion | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada; la comparación se limita a parámetros, licencia y disponibilidad.
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoboCrafty/smolvla_parol6_pull_container_pick_place_yellow_and_blue_cube
+- Modelo en Hugging Face: https://huggingface.co/RoboCrafty/smolvla_parol6_pull_container_pick_place_yellow_and_blue_cube
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/RoboCrafty/parol6_pull_container_pick_place_yellow_and_blue_cube
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=RoboCrafty/parol6_pull_container_pick_place_yellow_and_blue_cube

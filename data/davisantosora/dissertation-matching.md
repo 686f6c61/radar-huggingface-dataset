@@ -65,7 +65,7 @@ No se dispone de datos comparativos dentro de la informacion proporcionada. Como
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dissertation-matching (Efficientformer tiny, matching) | 49.600 | no aplica | sin benchmarks publicados | BSD-3-Clause | HuggingFace (0 descargas) |
+| dissertation-matching (Efficientformer tiny, matching) | 49.600 | no aplica | sin benchmarks publicados | BSD-3-Clause | Hugging Face (0 descargas) |
 | Efficientformer original (L1/L3/L7) | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Otras redes de matching basadas en ViT | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,7 +83,7 @@ No se dispone de datos comparativos dentro de la informacion proporcionada. Como
 
 ## Enlaces
 
-- HuggingFace (repositorio principal): https://huggingface.co/davisantosora/dissertation-matching
+- Hugging Face (repositorio principal): https://huggingface.co/davisantosora/dissertation-matching
 - Artefacto de implementacion: https://huggingface.co/davisantosora/dissertation-matching/blob/main/pipeline.py
 - Configuracion de arquitectura: https://huggingface.co/davisantosora/dissertation-matching/blob/main/config.json
 - Receta de experimento: https://huggingface.co/davisantosora/dissertation-matching/blob/main/training_args.json

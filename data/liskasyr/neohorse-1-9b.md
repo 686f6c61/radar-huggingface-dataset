@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NeoHorse-1-9B es un modelo de lenguaje causal de aproximadamente 9B parámetros desarrollado por TokenRhythm (el repositorio consultado figura publicado bajo la cuenta de HuggingFace liskasYR) y presentado como un prototipo inicial en la ruta hacia la mejora recursiva automática (recursive self-improvement, RSI). Se obtiene por post-entrenamiento del modelo base Qwen/Qwen3.5-9B y está orientado a su uso dentro de entornos de agentes basados en texto, uso de herramientas, generación de código y seguimiento de instrucciones.
+NeoHorse-1-9B es un modelo de lenguaje causal de aproximadamente 9B parámetros desarrollado por TokenRhythm (el repositorio consultado figura publicado bajo la cuenta de Hugging Face liskasYR) y presentado como un prototipo inicial en la ruta hacia la mejora recursiva automática (recursive self-improvement, RSI). Se obtiene por post-entrenamiento del modelo base Qwen/Qwen3.5-9B y está orientado a su uso dentro de entornos de agentes basados en texto, uso de herramientas, generación de código y seguimiento de instrucciones.
 
 La propuesta técnica combina un "routing harness" que asigna tareas a un pool heterogéneo de modelos, registra las interacciones con herramientas y sus resultados, estima la demanda de capacidades y utiliza esa retroalimentación para reconfigurar la mezcla de datos del siguiente ciclo de entrenamiento. El modelo se distribuye únicamente con los pesos de lenguaje: los pesos de visión del modelo base no se incluyen, y el reempaquetado altera la configuración y los nombres de las claves de los tensores sin modificar los valores de los tensores ajustados.
 
@@ -78,8 +78,8 @@ Las cifras de VRAM son estimaciones derivadas del numero de parametros y del tam
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NeoHorse-1-9B | 8,95B | no disponible | 69,04 de media macro en 10 benchmarks | Apache-2.0 | HuggingFace, ModelScope |
-| Qwen3.5-9B (base) | aproximadamente 9B (no confirmado en la informacion disponible) | no disponible | 65,60 de media macro en los mismos 10 benchmarks | no disponible en la informacion proporcionada | HuggingFace |
+| NeoHorse-1-9B | 8,95B | no disponible | 69,04 de media macro en 10 benchmarks | Apache-2.0 | Hugging Face, ModelScope |
+| Qwen3.5-9B (base) | aproximadamente 9B (no confirmado en la informacion disponible) | no disponible | 65,60 de media macro en los mismos 10 benchmarks | no disponible en la informacion proporcionada | Hugging Face |
 | Otras alternativas de aproximadamente 9B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han proporcionado datos de otros modelos comparables de la misma categoria, por lo que la unica comparacion con cifras verificables es contra el modelo base.
@@ -97,9 +97,9 @@ No se han proporcionado datos de otros modelos comparables de la misma categoria
 
 ## Enlaces
 
-- Modelo en HuggingFace (repositorio consultado): https://huggingface.co/liskasYR/NeoHorse-1-9B
-- Modelo en HuggingFace (organizacion del autor): https://huggingface.co/TokenRhythm/NeoHorse-1-9B
-- Organizacion TokenRhythm en HuggingFace: https://huggingface.co/TokenRhythm
+- Modelo en Hugging Face (repositorio consultado): https://huggingface.co/liskasYR/NeoHorse-1-9B
+- Modelo en Hugging Face (organizacion del autor): https://huggingface.co/TokenRhythm/NeoHorse-1-9B
+- Organizacion TokenRhythm en Hugging Face: https://huggingface.co/TokenRhythm
 - Repositorio GitHub: https://github.com/TokenRhythm/NeoHorse
 - Modelo en ModelScope: https://www.modelscope.cn/models/TokenRhythm/NeoHorse-1-9B
 - Informe tecnico (arXiv): https://arxiv.org/abs/2609.08183

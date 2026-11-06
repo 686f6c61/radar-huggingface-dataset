@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NorthCUA-Mini es un modelo publicado en HuggingFace por el usuario beipo-ai bajo licencia Apache 2.0. El identificador "CUA" sugiere un enfoque orientado a agentes que controlan interfaces de usuario (Computer-Using Agent), y el sufijo "Mini" apunta a un tamano reducido dentro de una posible familia de modelos. Sin embargo, la model card publicada no contiene informacion tecnica: se limita a declarar la licencia Apache 2.0, sin descripcion, sin especificaciones y sin datos de entrenamiento.
+NorthCUA-Mini es un modelo publicado en Hugging Face por el usuario beipo-ai bajo licencia Apache 2.0. El identificador "CUA" sugiere un enfoque orientado a agentes que controlan interfaces de usuario (Computer-Using Agent), y el sufijo "Mini" apunta a un tamano reducido dentro de una posible familia de modelos. Sin embargo, la model card publicada no contiene informacion tecnica: se limita a declarar la licencia Apache 2.0, sin descripcion, sin especificaciones y sin datos de entrenamiento.
 
 En el momento de redactar esta ficha, el repositorio no registra descargas ni interacciones, y no se ha publicado documentacion adicional, paper ni blog asociado. Esto implica que cualquier dato sobre arquitectura, parametros, contexto o rendimiento debe considerarse no disponible. La ficha se completa con la informacion verificable y se marcan explicitamente las carencias.
 
@@ -42,7 +42,7 @@ Tampoco hay datos sobre el corpus de entrenamiento: numero de tokens, composicio
 - Investigacion comparativa de modelos "Mini": util como punto de partida para comparar tecnicas de compresion o destilacion, una vez inspeccionados sus pesos.
 - Fine-tuning experimental: al ser Apache 2.0, puede servir como base para ajuste fino en dominios concretos, aunque sin conocer el tamano no es posible estimar los requisitos de hardware.
 - Despliegue en entornos con requisitos de licencia estrictos: la licencia permisiva encaja en organizaciones que descartan modelos con licencias restrictivas, previa auditoria tecnica del repositorio.
-- Docencia y formacion: puede emplearse como ejemplo de repositorio recien publicado para ensenar a auditar model cards incompletas y a inspeccionar artefactos de HuggingFace.
+- Docencia y formacion: puede emplearse como ejemplo de repositorio recien publicado para ensenar a auditar model cards incompletas y a inspeccionar artefactos de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -77,5 +77,5 @@ No es posible establecer una comparativa fiable sin conocer parametros, contexto
 
 ## Enlaces
 
-- [HuggingFace: beipo-ai/NorthCUA-Mini](https://huggingface.co/beipo-ai/NorthCUA-Mini)
+- [Hugging Face: beipo-ai/NorthCUA-Mini](https://huggingface.co/beipo-ai/NorthCUA-Mini)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

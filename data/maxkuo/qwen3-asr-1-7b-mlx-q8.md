@@ -25,7 +25,7 @@ Se trata, por tanto, de una pieza de infraestructura más que de un modelo nuevo
 
 El modelo base Qwen3-ASR-1.7B sigue una arquitectura de dos torres: un encoder de audio que procesa la señal acústica y un decoder de texto autorregresivo que genera la transcripción. Esta versión no modifica la topología, sino que aplica cuantización afín de 8 bits con group size 64 (`mlx.nn.quantize`) a todas las capas `Linear` y `Embedding` del decoder de texto y del encoder de audio. Los tensores que no se cuantizan (escalas, sesgos, capas de normalización y el stem convolucional) se almacenan en float16, de modo que la inferencia se ejecuta de extremo a extremo en float16. La `lm_head` está atada a la embedding de tokens del modelo fuente y no se duplica; el cargador la vuelve a atar en tiempo de carga.
 
-No se dispone de información sobre el dataset de entrenamiento del modelo base (número de tokens, composición, uso de RLHF o DPO) en la documentación proporcionada. La innovación técnica destacable de este artefacto es la conversión reproducible sin paso de conversión por parte del usuario: el script `scripts/convert.py` del repositorio `mlx-qwen3-asr` genera el artefacto directamente desde el modelo original de HuggingFace con los parámetros `--quantize 8 --encoder-bits 8 --group-size 64 --dtype float16`. El proceso de evaluación también está versionado (`scripts/eval_librispeech.py`), lo que permite auditar la equivalencia funcional con fp16.
+No se dispone de información sobre el dataset de entrenamiento del modelo base (número de tokens, composición, uso de RLHF o DPO) en la documentación proporcionada. La innovación técnica destacable de este artefacto es la conversión reproducible sin paso de conversión por parte del usuario: el script `scripts/convert.py` del repositorio `mlx-qwen3-asr` genera el artefacto directamente desde el modelo original de Hugging Face con los parámetros `--quantize 8 --encoder-bits 8 --group-size 64 --dtype float16`. El proceso de evaluación también está versionado (`scripts/eval_librispeech.py`), lo que permite auditar la equivalencia funcional con fp16.
 
 ## Capacidades
 
@@ -91,7 +91,7 @@ La comparación con Whisper se ofrece como referencia de categoría; no se dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Maxkuo/Qwen3-ASR-1.7B-mlx-q8
+- Hugging Face: https://huggingface.co/Maxkuo/Qwen3-ASR-1.7B-mlx-q8
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Repositorio de la librería MLX: https://github.com/moona3k/mlx-qwen3-asr
 - Artefacto de referencia citado en la model card: https://huggingface.co/moona3k/mlx-qwen3-asr-1.7b-8bit

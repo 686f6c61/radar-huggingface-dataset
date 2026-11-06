@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mrr42694/Classify` es un repositorio de modelo publicado en HuggingFace por el usuario `mrr42694` bajo licencia Apache 2.0. La información disponible es mínima: la model card no contiene más que la declaración de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni finalidad declarada. El repositorio no tiene etiquetas de pipeline, idiomas ni formato de pesos, y acumula 0 descargas y 0 "likes" en el momento de la consulta.
+`mrr42694/Classify` es un repositorio de modelo publicado en Hugging Face por el usuario `mrr42694` bajo licencia Apache 2.0. La información disponible es mínima: la model card no contiene más que la declaración de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni finalidad declarada. El repositorio no tiene etiquetas de pipeline, idiomas ni formato de pesos, y acumula 0 descargas y 0 "likes" en el momento de la consulta.
 
 Por el nombre del repositorio ("Classify") podría tratarse de un modelo orientado a tareas de clasificación, pero esto es una inferencia a partir del identificador y no un dato confirmado por el autor. No hay ninguna evidencia publicada que permita verificar la tarea, el tamaño, el contexto soportado ni el rendimiento del modelo.
 
@@ -91,7 +91,7 @@ No disponible. Al desconocerse la tarea, el tamaño y las capacidades del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mrr42694/Classify
+- Hugging Face: https://huggingface.co/mrr42694/Classify
 - Model card: no contiene información técnica adicional más allá de la licencia.
 - Paper, blog o repositorio de código: no disponible.
 - Demo: no disponible.

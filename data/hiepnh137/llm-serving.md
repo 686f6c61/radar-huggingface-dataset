@@ -19,7 +19,7 @@ Por tanto, esta ficha describe el artefacto tal como esta publicado (infraestruc
 | Tipos de cuantizacion | no disponible (los pesos descargados son los del repositorio HF original, 14 GB para el 20b y 65 GB para el 120b) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | snapshot de HuggingFace (descarga via `download_weights.sh`, con lista de exclusion `LLM_HF_IGNORE` en `config.sh`); el repositorio no especifica safetensors/GGUF |
+| Formato de pesos | snapshot de Hugging Face (descarga via `download_weights.sh`, con lista de exclusion `LLM_HF_IGNORE` en `config.sh`); el repositorio no especifica safetensors/GGUF |
 
 ## Arquitectura y entrenamiento
 
@@ -87,7 +87,7 @@ No disponible. El repositorio no incluye comparaciones con otras pilas de servin
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hiepnh137/llm-serving
+- Repositorio en Hugging Face: https://huggingface.co/hiepnh137/llm-serving
 - Modelo servido (20b): https://huggingface.co/openai/gpt-oss-20b
 - Modelo servido (120b): https://huggingface.co/openai/gpt-oss-120b
 - vLLM: https://github.com/vllm-project/vllm

@@ -74,7 +74,7 @@ Estos datos provienen de la model card y no han sido verificados de forma indepe
 
 - VRAM estimada: según los benchmarks, con contexto de 32.768 tokens y BF16, el modelo consume aproximadamente 4.394 MB en una GPU RTX (comparado con SmolLM2-1.7B) y 1.660 MB en el caso de Qwen3-0.6B. En Apple Silicon (FP16), consume 3.778 MB. Esto sugiere que cabe en GPUs con 4 GB o más de VRAM.
 - GPUs recomendadas: cualquier GPU NVIDIA con al menos 4 GB de VRAM (RTX 3050, RTX 3060, etc.) o Apple Silicon con 8 GB de RAM unificada. También puede ejecutarse en CPU, aunque con menor rendimiento.
-- Opciones de despliegue: el modelo se carga mediante la librería BareTorch (BareTorchForCausalLM) y es compatible con el ecosistema HuggingFace Transformers para el tokenizador. No se mencionan integraciones con vLLM, llama.cpp u Ollama, pero al ser safetensors podría convertirse a otros formatos.
+- Opciones de despliegue: el modelo se carga mediante la librería BareTorch (BareTorchForCausalLM) y es compatible con el ecosistema Hugging Face Transformers para el tokenizador. No se mencionan integraciones con vLLM, llama.cpp u Ollama, pero al ser safetensors podría convertirse a otros formatos.
 - Latencia y throughput: los benchmarks muestran velocidades de decodificación de 98,9 a 164,5 tok/s en RTX GPU y de 27,7 a 65,2 tok/s en Apple M1, dependiendo del hardware y la configuración.
 
 ## Comparativa con modelos similares
@@ -100,6 +100,6 @@ Los datos de MMLU para los modelos comparados son estimaciones basadas en public
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/martin-kb-rampage/BareTorch-500M-Base
+- Hugging Face: https://huggingface.co/martin-kb-rampage/BareTorch-500M-Base
 - Repositorio GitHub de BareTorch: https://github.com/martin-kbcc/baretorch
 - Sitio web comercial de BareTorch: https://www.model-rampage.com/

@@ -75,7 +75,7 @@ No disponible. No se han identificado en la información proporcionada política
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seyarizumu/grab_cable_v2
+- Modelo en Hugging Face: https://huggingface.co/seyarizumu/grab_cable_v2
 - Dataset asociado: https://huggingface.co/datasets/seyarizumu/grab_cable_v2
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

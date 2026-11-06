@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Accuracy (test propio) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen2-VL-2B + LoRA KD) | 2B | no disponible | 75,00% | no disponible | HuggingFace, adaptador PEFT |
-| Profesor (Qwen2.5-VL-3B + LoRA) | 3B | no disponible | 95,00% | no disponible | HuggingFace, adaptador PEFT |
-| Qwen2-VL-2B-Instruct (base sin fine-tuning) | 2B | no disponible | no disponible | no disponible en esta ficha | HuggingFace |
+| Este adaptador (Qwen2-VL-2B + LoRA KD) | 2B | no disponible | 75,00% | no disponible | Hugging Face, adaptador PEFT |
+| Profesor (Qwen2.5-VL-3B + LoRA) | 3B | no disponible | 95,00% | no disponible | Hugging Face, adaptador PEFT |
+| Qwen2-VL-2B-Instruct (base sin fine-tuning) | 2B | no disponible | no disponible | no disponible en esta ficha | Hugging Face |
 
 La comparativa se limita al ecosistema del propio autor porque la model card no referencia alternativas externas de reconocimiento de acciones con dron. No hay datos publicos que permitan comparar con otros clasificadores de accion aereo en igualdad de condiciones.
 
@@ -89,7 +89,7 @@ La comparativa se limita al ecosistema del propio autor porque la model card no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mariambhd/drone-qwen2vl-2b-kd-reverse-a0p5-T4p0
+- Hugging Face: https://huggingface.co/mariambhd/drone-qwen2vl-2b-kd-reverse-a0p5-T4p0
 - Modelo base: https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct
 - LoRA profesor: https://huggingface.co/mariambhd/drone-qwen25vl-3b-lora-7class
 - Paper Qwen2-VL: https://arxiv.org/abs/2409.12191

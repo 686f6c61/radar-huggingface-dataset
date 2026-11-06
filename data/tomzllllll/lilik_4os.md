@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Tomzllllll/Lilik_4os` es un repositorio publicado en HuggingFace por el usuario Tomzllllll. En el momento de redactar esta ficha no existe información pública verificable sobre el modelo: la model card está vacía (solo contiene el campo `license: unknown`), el pipeline no está declarado, no se especifican idiomas y la licencia figura como desconocida. El repositorio no registra descargas ni likes.
+`Tomzllllll/Lilik_4os` es un repositorio publicado en Hugging Face por el usuario Tomzllllll. En el momento de redactar esta ficha no existe información pública verificable sobre el modelo: la model card está vacía (solo contiene el campo `license: unknown`), el pipeline no está declarado, no se especifican idiomas y la licencia figura como desconocida. El repositorio no registra descargas ni likes.
 
 Los únicos datos objetivos disponibles son los metadatos del hub: un tamaño de repositorio de aproximadamente 0,1 GB, creación el 2026-10-25T22:05:12Z y última actualización el 2026-10-25T22:06:49Z, es decir, algo más de un minuto después. Ese patrón es compatible con una subida de artefactos sin documentación asociada, no con una release documentada.
 
@@ -85,5 +85,5 @@ No es posible establecer una comparativa: se desconoce la categoría del modelo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tomzllllll/Lilik_4os
+- Repositorio en Hugging Face: https://huggingface.co/Tomzllllll/Lilik_4os
 - No se han encontrado en la búsqueda web enlaces relevantes a este modelo: paper, blog, repositorio de código, demo o documentación adicional. No disponible.

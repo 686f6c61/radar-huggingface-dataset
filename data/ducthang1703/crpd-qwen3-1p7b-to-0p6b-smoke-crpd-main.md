@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`crpd-qwen3-1p7b-to-0p6b-smoke-crpd-main` es un artefacto experimental publicado en HuggingFace por el usuario `ducthang1703` bajo el paraguas de una tecnica denominada ChunkRatio-PD (preference distillation con ratios de chunk). Se trata de un *smoke test*, es decir, una ejecucion de validacion con datos minimos cuyo unico proposito es comprobar que el pipeline de destilacion funciona de extremo a extremo. El propio autor lo declara explicitamente: "tiny data, not a usable model".
+`crpd-qwen3-1p7b-to-0p6b-smoke-crpd-main` es un artefacto experimental publicado en Hugging Face por el usuario `ducthang1703` bajo el paraguas de una tecnica denominada ChunkRatio-PD (preference distillation con ratios de chunk). Se trata de un *smoke test*, es decir, una ejecucion de validacion con datos minimos cuyo unico proposito es comprobar que el pipeline de destilacion funciona de extremo a extremo. El propio autor lo declara explicitamente: "tiny data, not a usable model".
 
 El modelo es el resultado de destilar el modelo profesor Qwen3-1.7B sobre el alumno Qwen3-0.6B-Base, empleando los datasets `hkust-nlp/deita-10k-v0` (instrucciones) y `HuggingFaceH4/ultrafeedback_binarized` (preferencias). El checkpoint resultante tiene 596.049.920 parametros y se distribuye en formato safetensors con licencia Apache 2.0, heredada del modelo base de Qwen.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| crpd-qwen3-1p7b-to-0p6b-smoke-crpd-main | 596M | no disponible | Apache 2.0 | HuggingFace | Smoke test, no usable |
-| Qwen/Qwen3-0.6B-Base | ~0,6B | no disponible | Apache 2.0 | HuggingFace | Modelo base del anterior |
-| Qwen/Qwen3-1.7B | ~1,7B | no disponible | Apache 2.0 | HuggingFace | Profesor del experimento |
-| SmolLM2-360M-Instruct | ~360M | 8K (segun model card publica) | Apache 2.0 | HuggingFace | Alternativa pequena instruct |
+| crpd-qwen3-1p7b-to-0p6b-smoke-crpd-main | 596M | no disponible | Apache 2.0 | Hugging Face | Smoke test, no usable |
+| Qwen/Qwen3-0.6B-Base | ~0,6B | no disponible | Apache 2.0 | Hugging Face | Modelo base del anterior |
+| Qwen/Qwen3-1.7B | ~1,7B | no disponible | Apache 2.0 | Hugging Face | Profesor del experimento |
+| SmolLM2-360M-Instruct | ~360M | 8K (segun model card publica) | Apache 2.0 | Hugging Face | Alternativa pequena instruct |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ducthang1703/crpd-qwen3-1p7b-to-0p6b-smoke-crpd-main
+- Modelo en Hugging Face: https://huggingface.co/ducthang1703/crpd-qwen3-1p7b-to-0p6b-smoke-crpd-main
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Dataset DEITA: https://huggingface.co/datasets/hkust-nlp/deita-10k-v0
 - Dataset UltraFeedback binarized: https://huggingface.co/datasets/HuggingFaceH4/ultrafeedback_binarized

@@ -21,7 +21,7 @@ La model card indica que, en comparación con la versión anterior, el modelo ha
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona detalles sobre la arquitectura del modelo. Se menciona que la versión actual ha sido sometida a un "post-training" con más recursos computacionales y optimizaciones algorítmicas, pero no se especifican los datos de entrenamiento (número de tokens, composición del dataset, técnicas como RLHF o DPO). Tampoco se indica si se trata de un transformer estándar, un modelo MoE o una arquitectura híbrida. La etiqueta de HuggingFace incluye "bert" y "transformers", pero esto no confirma la arquitectura subyacente. No hay información sobre innovaciones técnicas como decodificación especulativa o atención lineal.
+La model card no proporciona detalles sobre la arquitectura del modelo. Se menciona que la versión actual ha sido sometida a un "post-training" con más recursos computacionales y optimizaciones algorítmicas, pero no se especifican los datos de entrenamiento (número de tokens, composición del dataset, técnicas como RLHF o DPO). Tampoco se indica si se trata de un transformer estándar, un modelo MoE o una arquitectura híbrida. La etiqueta de Hugging Face incluye "bert" y "transformers", pero esto no confirma la arquitectura subyacente. No hay información sobre innovaciones técnicas como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
@@ -90,7 +90,7 @@ No se dispone de datos suficientes para comparar este modelo con alternativas co
 ## Limitaciones y advertencias
 
 - La información pública es extremadamente limitada: no se especifican arquitectura, parámetros, contexto ni idiomas, lo que dificulta evaluar su idoneidad para producción.
-- El repositorio de HuggingFace tiene un tamaño de 0.0 GB, lo que sugiere que los pesos no están alojados allí o que la página está incompleta. No se proporciona un enlace a un repositorio de código funcional.
+- El repositorio de Hugging Face tiene un tamaño de 0.0 GB, lo que sugiere que los pesos no están alojados allí o que la página está incompleta. No se proporciona un enlace a un repositorio de código funcional.
 - La model card no menciona sesgos conocidos ni limitaciones de contexto o idioma. No hay datos sobre alucinaciones residuales, aunque se afirma que se redujeron.
 - La licencia MIT permite uso comercial y modificación, pero no se especifican restricciones adicionales (por ejemplo, sobre el uso de los datos de entrenamiento).
 - Los benchmarks presentados son genéricos y no siguen estándares reconocidos (MMLU, etc.), por lo que su reproducibilidad es dudosa.
@@ -98,7 +98,7 @@ No se dispone de datos suficientes para comparar este modelo con alternativas co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qf-iquest/PeakPerformance-ModelSpace
+- Modelo en Hugging Face: https://huggingface.co/qf-iquest/PeakPerformance-ModelSpace
 - Perfil del autor: https://huggingface.co/qf-iquest
 - Repositorio relacionado del autor (PeakPerfWeights): https://huggingface.co/qf-iquest/PeakPerfWeights
 

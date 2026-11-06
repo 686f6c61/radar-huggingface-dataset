@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RamiBABYMON es un repositorio de modelo publicado en HuggingFace por el usuario byeolsoleil bajo la identificacion `byeolsoleil/RamiBABYMON`. La informacion publica disponible es minima: la model card unicamente contiene la declaracion de licencia Apache 2.0, sin descripcion del modelo, sin arquitectura declarada, sin idiomas soportados y sin pipeline de inferencia asignado. El repositorio ocupa aproximadamente 0,2 GB y no registra descargas ni interacciones en el momento de la consulta.
+RamiBABYMON es un repositorio de modelo publicado en Hugging Face por el usuario byeolsoleil bajo la identificacion `byeolsoleil/RamiBABYMON`. La informacion publica disponible es minima: la model card unicamente contiene la declaracion de licencia Apache 2.0, sin descripcion del modelo, sin arquitectura declarada, sin idiomas soportados y sin pipeline de inferencia asignado. El repositorio ocupa aproximadamente 0,2 GB y no registra descargas ni interacciones en el momento de la consulta.
 
 No es posible determinar a partir de los datos disponibles si se trata de un modelo completo, de un adaptador (LoRA/QLoRA) o de un artefacto derivado, ni tampoco su numero de parametros, su longitud de contexto o sus datos de entrenamiento. El unico dato tecnico fiable es el tamano del repositorio (aproximadamente 200 MB), que resulta compatible con modelos pequenos en precision completa, con adaptadores de bajo rango o con versiones cuantizadas de modelos de mayor tamano, pero ninguna de estas hipotesis puede confirmarse con la informacion publicada.
 
@@ -51,7 +51,7 @@ Los siguientes escenarios son hipoteticos y condicionales: se plantean como posi
 - Prototipado rapido en local: si el repositorio contiene un modelo de menos de 1.000 millones de parametros, podria emplearse para experimentos de generacion de texto en una unica GPU de consumo, con un coste de infraestructura minimo.
 - Ajuste fino especifico de dominio: si se trata de un adaptador LoRA, encajaria como punto de partida para afinar sobre un modelo base ya disponible, aprovechando su tamano reducido de 0,2 GB.
 - Evaluacion comparativa interna: el modelo podria incluirse como linea base secundaria en un banco de pruebas propio, siempre que se documenten sus condiciones de ejecucion, dado que no existen benchmarks publicados.
-- Investigacion sobre artefactos no documentados: el repositorio sirve como caso de estudio sobre publicacion de modelos sin model card, util para analizar practicas de trazabilidad en HuggingFace.
+- Investigacion sobre artefactos no documentados: el repositorio sirve como caso de estudio sobre publicacion de modelos sin model card, util para analizar practicas de trazabilidad en Hugging Face.
 - Despliegue en entornos con recursos muy limitados: si el artefacto es un modelo pequeno en formato cuantizado, podria ejecutarse en CPU mediante llama.cpp u Ollama en maquinas sin GPU dedicada.
 - Filtrado previo de candidatos en un pipeline de seleccion de modelos: dado su tamano reducido, puede descargarse y evaluarse en minutos antes de decidir si merece una evaluacion mas profunda.
 - Reproducibilidad de experimentos de terceros: si algun trabajo externo cita este identificador, el repositorio permitiria reproducir dicho experimento, condicionado a que los pesos sean accesibles y esten completos.
@@ -86,7 +86,7 @@ No disponible. Sin conocer el tamano, la arquitectura ni las capacidades del mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/byeolsoleil/RamiBABYMON
+- Hugging Face: https://huggingface.co/byeolsoleil/RamiBABYMON
 - Model card del autor: no contiene informacion tecnica, unicamente la declaracion de licencia Apache 2.0
 - Paper: no disponible
 - Repositorio de codigo: no disponible

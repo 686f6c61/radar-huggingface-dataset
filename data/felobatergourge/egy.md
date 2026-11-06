@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Felobatergourge/egy` es un repositorio publicado en HuggingFace por el usuario Felobatergourge, con licencia `grok2-community` y etiqueta regional `us`. La fecha de creación es el 28 de agosto de 2026. No se dispone de información adicional sobre su arquitectura, tamaño, parámetros o capacidades, ya que la model card está vacía y no se han publicado resultados de benchmarks.
+El modelo `Felobatergourge/egy` es un repositorio publicado en Hugging Face por el usuario Felobatergourge, con licencia `grok2-community` y etiqueta regional `us`. La fecha de creación es el 28 de agosto de 2026. No se dispone de información adicional sobre su arquitectura, tamaño, parámetros o capacidades, ya que la model card está vacía y no se han publicado resultados de benchmarks.
 
 La relevancia de este repositorio es actualmente indeterminada. La licencia `grok2-community` sugiere una posible relación con la familia de modelos Grok de xAI, pero no hay evidencia que confirme esta conexión. El repositorio no presenta descargas ni interacciones de la comunidad, lo que indica que se trata de una publicación reciente o sin difusión. Se recomienda precaución antes de utilizar este modelo en cualquier entorno de producción, dado que la documentación técnica es inexistente.
 
@@ -54,4 +54,4 @@ No disponible. Sin datos sobre parámetros, arquitectura o rendimiento, no es po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Felobatergourge/egy
+- Repositorio Hugging Face: https://huggingface.co/Felobatergourge/egy

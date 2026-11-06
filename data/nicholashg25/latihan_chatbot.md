@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NicholasHG25/Latihan_ChatBot es un repositorio de modelo alojado en HuggingFace por el usuario NicholasHG25 y publicado bajo licencia MIT. En el momento de redactar esta ficha no existe informacion publica sobre su arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, idiomas soportados ni formato de pesos: la model card se reduce a una unica linea con la licencia y el repositorio no declara pipeline ni etiquetas de idioma.
+NicholasHG25/Latihan_ChatBot es un repositorio de modelo alojado en Hugging Face por el usuario NicholasHG25 y publicado bajo licencia MIT. En el momento de redactar esta ficha no existe informacion publica sobre su arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, idiomas soportados ni formato de pesos: la model card se reduce a una unica linea con la licencia y el repositorio no declara pipeline ni etiquetas de idioma.
 
 El identificador del repositorio procede del indonesio o malayo "latihan", que significa "practica" o "ejercicio", lo que sugiere —sin que pueda confirmarse— un proyecto de caracter formativo o experimental orientado a chatbots. Las metricas publicas del repositorio (0 descargas, 0 likes, creado y actualizado el 2026-09-22) indican que no ha tenido difusion ni adopcion por parte de la comunidad.
 
@@ -79,6 +79,6 @@ No disponible. Al desconocerse el tamano, la arquitectura y las capacidades del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NicholasHG25/Latihan_ChatBot
+- Repositorio en Hugging Face: https://huggingface.co/NicholasHG25/Latihan_ChatBot
 - La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo, su autor ni su entrenamiento. Los resultados obtenidos (sitios de horoscopos, hilos en Zhihu sobre modelos de Google y un blog de Huawei Cloud sobre modelos multimodales) no guardan relacion con el repositorio y no se incluyen como fuentes.
 - No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo.

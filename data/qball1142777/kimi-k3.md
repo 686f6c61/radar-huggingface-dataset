@@ -89,7 +89,7 @@ La unica comparacion con datos en la informacion proporcionada es con Kimi K2, m
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi K3 | 2,8 T | 104 B | 1 M tokens | Kimi K3 License | Pesos abiertos en HuggingFace |
+| Kimi K3 | 2,8 T | 104 B | 1 M tokens | Kimi K3 License | Pesos abiertos en Hugging Face |
 | Kimi K2 | no disponible | no disponible | no disponible | no disponible | Referenciado en la model card como generacion anterior |
 
 Lo unico cuantificado es que K3 declara una mejora de aproximadamente 2,5 veces en eficiencia de escalado frente a K2 gracias al marco Stable LatentMoE. No hay datos de contexto, licencia ni parametros de K2 en la informacion proporcionada, ni tampoco comparativas con alternativas de otros desarrolladores. No se dispone de resultados de benchmarks que permitan una comparacion objetiva de rendimiento.
@@ -108,9 +108,9 @@ Lo unico cuantificado es que K3 declara una mejora de aproximadamente 2,5 veces 
 
 ## Enlaces
 
-- HuggingFace (replica analizada): https://huggingface.co/Qball1142777/Kimi-K3
-- Organizacion oficial en HuggingFace: https://huggingface.co/moonshotai
-- Repositorio oficial en HuggingFace (referenciado en la model card): https://huggingface.co/moonshotai/Kimi-K3
+- Hugging Face (replica analizada): https://huggingface.co/Qball1142777/Kimi-K3
+- Organizacion oficial en Hugging Face: https://huggingface.co/moonshotai
+- Repositorio oficial en Hugging Face (referenciado en la model card): https://huggingface.co/moonshotai/Kimi-K3
 - Licencia: https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE
 - Blog tecnico: https://www.kimi.com/blog/kimi-k3
 - Informe tecnico completo: https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf

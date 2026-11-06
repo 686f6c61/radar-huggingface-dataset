@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`THOMASSMITHna/ml-contrastive` es un repositorio publicado en HuggingFace que contiene una implementacion funcional de la arquitectura Albef (Align before Fuse) orientada a aprendizaje contrastivo, en configuracion "tiny". Lo desarrolla el usuario THOMASSMITHna y su proposito declarado no es ofrecer un modelo entrenado, sino servir como material de referencia con codigo transparente y pruebas de humo (smoke tests) reproducibles. El checkpoint incluido (`model.safetensors`) se presenta explicitamente como una inicializacion valida para pruebas, no como un modelo entrenado ni evaluado.
+`THOMASSMITHna/ml-contrastive` es un repositorio publicado en Hugging Face que contiene una implementacion funcional de la arquitectura Albef (Align before Fuse) orientada a aprendizaje contrastivo, en configuracion "tiny". Lo desarrolla el usuario THOMASSMITHna y su proposito declarado no es ofrecer un modelo entrenado, sino servir como material de referencia con codigo transparente y pruebas de humo (smoke tests) reproducibles. El checkpoint incluido (`model.safetensors`) se presenta explicitamente como una inicializacion valida para pruebas, no como un modelo entrenado ni evaluado.
 
 El modelo tiene un tamano extremadamente reducido: 24.832 parametros totales segun los pesos en safetensors, con un repo de 0,0 GB. Se trata, por tanto, de un artefacto de juguete o plantilla, muy lejos de las escalas habituales en modelos de vision-lenguaje. La model card indica que las afirmaciones de rendimiento se omiten deliberadamente y que no se reclama ninguna puntuacion de benchmark.
 
@@ -67,7 +67,7 @@ No disponible. La informacion proporcionada no incluye resultados ni especificac
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| THOMASSMITHna/ml-contrastive | 24.832 | no disponible | sin benchmark | MIT | HuggingFace |
+| THOMASSMITHna/ml-contrastive | 24.832 | no disponible | sin benchmark | MIT | Hugging Face |
 | Albef original (referencia) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,4 +84,4 @@ No disponible. La informacion proporcionada no incluye resultados ni especificac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/THOMASSMITHna/ml-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/THOMASSMITHna/ml-contrastive

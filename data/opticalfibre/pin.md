@@ -78,6 +78,6 @@ No disponible. El framework PIN no se compara directamente con otros modelos en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/opticalfibre/PIN
+- Hugging Face: https://huggingface.co/opticalfibre/PIN
 - Codigo archivado en Zenodo (con DOI, segun la model card): https://zenodo.org (enlace generico, el DOI especifico no se proporciona en la informacion disponible)
 - Repositorio de scripts: no se proporciona URL directa, pero se menciona que el codigo esta archivado en Zenodo y que cada script es un archivo autonomo.

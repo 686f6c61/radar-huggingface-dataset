@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mikim869/qwen2.5-3b-jev-hard-v11.0-mega-master` es un repositorio publicado en HuggingFace por el usuario `mikim869` bajo la librería `transformers`. El identificador sugiere un ajuste fino o fusión de modelos («merge») construido sobre la familia Qwen2.5 en su variante de 3.000 millones de parámetros, con un sufijo de versionado propio (`jev-hard-v11.0-mega-master`) que apunta a un pipeline de entrenamiento iterativo de tipo comunitario. No obstante, esta filiación es una inferencia a partir del nombre y no está confirmada en la documentación del repositorio.
+`mikim869/qwen2.5-3b-jev-hard-v11.0-mega-master` es un repositorio publicado en Hugging Face por el usuario `mikim869` bajo la librería `transformers`. El identificador sugiere un ajuste fino o fusión de modelos («merge») construido sobre la familia Qwen2.5 en su variante de 3.000 millones de parámetros, con un sufijo de versionado propio (`jev-hard-v11.0-mega-master`) que apunta a un pipeline de entrenamiento iterativo de tipo comunitario. No obstante, esta filiación es una inferencia a partir del nombre y no está confirmada en la documentación del repositorio.
 
-La model card es la plantilla autogenerada de HuggingFace y no contiene ni un solo campo completado: no declara autoría efectiva, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Tampoco se han publicado descargas ni valoraciones (0 descargas, 0 likes) desde su creación, y la fecha de creación registrada (2026-10-19) es posterior a la fecha actual, lo que junto con el tamaño del repositorio (0,1 GB) indica que se trata de un artefacto recién subido y sin verificar.
+La model card es la plantilla autogenerada de Hugging Face y no contiene ni un solo campo completado: no declara autoría efectiva, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Tampoco se han publicado descargas ni valoraciones (0 descargas, 0 likes) desde su creación, y la fecha de creación registrada (2026-10-19) es posterior a la fecha actual, lo que junto con el tamaño del repositorio (0,1 GB) indica que se trata de un artefacto recién subido y sin verificar.
 
 Por tanto, esta ficha documenta lo que el repositorio declara explícitamente y marca como «no disponible» todo aquello que no puede verificarse. Cualquier uso en producción debería ir precedido de una auditoría directa de los pesos, la tokenizer y la configuración del modelo.
 
@@ -29,7 +29,7 @@ Nota tecnica: un modelo denso de ~3.000 millones de parámetros en fp16/bf16 ocu
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada. La model card incluye exclusivamente los apartados de plantilla de HuggingFace con el marcador `[More Information Needed]` en todos los campos: descripción del modelo, desarrollador, financiación, tipo de modelo, idiomas, licencia, modelo de partida, fuentes, datos de entrenamiento, preprocesado, hiperparámetros (régimen fp32/fp16/bf16/fp8), infraestructura de cómputo, consumo energético y procedimiento de evaluación.
+No hay información publicada. La model card incluye exclusivamente los apartados de plantilla de Hugging Face con el marcador `[More Information Needed]` en todos los campos: descripción del modelo, desarrollador, financiación, tipo de modelo, idiomas, licencia, modelo de partida, fuentes, datos de entrenamiento, preprocesado, hiperparámetros (régimen fp32/fp16/bf16/fp8), infraestructura de cómputo, consumo energético y procedimiento de evaluación.
 
 Por el identificador puede inferirse un linaje Qwen2.5 (arquitectura transformer decoder-only con atención causal, tokenizer BPE multilingüe y RoPE) sometido a un proceso de ajuste o fusión de múltiples etapas, a juzgar por el sufijo `v11.0-mega-master`. No se confirma si hubo RLHF, DPO, SFT supervisado, ni qué volumen de tokens o composición de dataset se empleó. Tampoco se documenta ninguna innovación técnica (decodificación especulativa, atención lineal, mezcla de expertos, modos de razonamiento explícito).
 
@@ -41,7 +41,7 @@ Por el identificador puede inferirse un linaje Qwen2.5 (arquitectura transformer
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible; el campo de idiomas de la model card está vacío.
 - Capacidades especiales (modo thinking, visión, audio): no disponible; no se declaran.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el repositorio puede desplegarse mediante HuggingFace Inference Endpoints, sin más detalle sobre el runtime.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el repositorio puede desplegarse mediante Hugging Face Inference Endpoints, sin más detalle sobre el runtime.
 
 ## Casos de uso
 
@@ -77,7 +77,7 @@ Los datos de las alternativas provienen del conocimiento público de esos modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `mikim869/qwen2.5-3b-jev-hard-v11.0-mega-master` | no disponible (~3B por el nombre) | no disponible | no disponible | Repositorio HuggingFace, 0 descargas, pesos aparentemente incompletos (0,1 GB) |
+| `mikim869/qwen2.5-3b-jev-hard-v11.0-mega-master` | no disponible (~3B por el nombre) | no disponible | no disponible | Repositorio Hugging Face, 0 descargas, pesos aparentemente incompletos (0,1 GB) |
 | Qwen2.5-3B / 3B-Instruct | ~3,1B | 32.768 tokens nativos, ampliable | Apache 2.0 | Pesos completos en safetensors, ampliamente desplegado |
 | Llama 3.2 3B Instruct | ~3,2B | 128.000 tokens | Llama 3.2 Community License | Pesos completos, requiere aceptación de términos |
 | Phi-3.5-mini instruct | ~3,8B | 128.000 tokens | MIT | Pesos completos en safetensors |
@@ -99,7 +99,7 @@ Rendimiento comparado en benchmarks: no disponible para el modelo objeto de la f
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mikim869/qwen2.5-3b-jev-hard-v11.0-mega-master
+- Repositorio en Hugging Face: https://huggingface.co/mikim869/qwen2.5-3b-jev-hard-v11.0-mega-master
 - Referencia citada en los tags (Lacoste et al., 2019, impacto ambiental del aprendizaje automático): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML CO2 mencionada en la plantilla de la model card: https://mlco2.github.io/impact
 - Paper, blog, demo o repositorio del autor: no disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QwenB-CPT-50-SFT es un modelo derivado de la familia Qwen, publicado por el usuario Haruto7261 en HuggingFace. El nombre sugiere un proceso de preentrenamiento continuado (CPT, *continued pre-training*) seguido de un ajuste fino supervisado (SFT), con un corpus de 50 elementos o iteraciones, aunque el autor no documenta explícitamente esa nomenclatura. No se dispone de información sobre la arquitectura base concreta, el número de parámetros ni la longitud de contexto.
+QwenB-CPT-50-SFT es un modelo derivado de la familia Qwen, publicado por el usuario Haruto7261 en Hugging Face. El nombre sugiere un proceso de preentrenamiento continuado (CPT, *continued pre-training*) seguido de un ajuste fino supervisado (SFT), con un corpus de 50 elementos o iteraciones, aunque el autor no documenta explícitamente esa nomenclatura. No se dispone de información sobre la arquitectura base concreta, el número de parámetros ni la longitud de contexto.
 
 La model card está redactada íntegramente en japonés y se centra en la composición del corpus de entrenamiento, no en las especificaciones técnicas del modelo. El corpus combina diálogos cotidianos en japonés (Japanese-Daily-Dialogue, MACHAcorpus, RealPersonaChat), fuentes sobre el dialecto de Kagoshima (薩隅方言), datos del Dieta nacional (国会会議録) y textos de Aozora Bunko y Wikipedia en japonés. El objetivo aparente es adaptar un modelo base al japonés y, en particular, al dialecto de Kagoshima.
 
@@ -79,7 +79,7 @@ No es posible establecer una comparativa fiable sin conocer el modelo base, el n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Haruto7261/QwenB-CPT-50-SFT
+- Repositorio Hugging Face: https://huggingface.co/Haruto7261/QwenB-CPT-50-SFT
 - Japanese-Daily-Dialogue: https://huggingface.co/datasets/kan-bayashi/Japanese-Daily-Dialogue
 - MACHAcorpus: https://github.com/tatsuya-koyama/MACHAcorpus
 - RealPersonaChat: https://github.com/nu-dialogue/real-persona-chat

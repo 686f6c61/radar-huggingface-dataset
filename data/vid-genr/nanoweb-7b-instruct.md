@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NanoWeb-7B-Instruct es un ajuste fino de Qwen/Qwen2.5-7B-Instruct orientado a ser un agente de navegador autónomo. Lo publica el usuario vid-GENR en HuggingFace bajo licencia Apache-2.0 y se distribuye principalmente en formato GGUF para llama.cpp y Ollama. Su propósito es ejecutar tareas de investigación web multi-paso: navegar sitios, extraer datos estructurados, comparar precios, consultar documentación técnica y sintetizar respuestas con fuentes citadas, todo ello mediante llamadas a funciones predefinidas.
+NanoWeb-7B-Instruct es un ajuste fino de Qwen/Qwen2.5-7B-Instruct orientado a ser un agente de navegador autónomo. Lo publica el usuario vid-GENR en Hugging Face bajo licencia Apache-2.0 y se distribuye principalmente en formato GGUF para llama.cpp y Ollama. Su propósito es ejecutar tareas de investigación web multi-paso: navegar sitios, extraer datos estructurados, comparar precios, consultar documentación técnica y sintetizar respuestas con fuentes citadas, todo ello mediante llamadas a funciones predefinidas.
 
 La versión publicada corresponde a la "Fase 2" del proyecto y se ha entrenado sobre 8.280 trayectorias reales de navegación ("web flight-recorder") que contienen aproximadamente 31.000 llamadas a herramientas, repartidas en seis dominios: comercio electrónico, investigación académica y técnica, finanzas, noticias y geopolítica, viajes y síntesis multi-salto. El modelo conserva la arquitectura transformer densa de Qwen2.5 y sus 7.615.616.512 parámetros, por lo que no introduce cambios estructurales respecto al base: la especialización proviene únicamente del ajuste supervisado.
 
@@ -19,7 +19,7 @@ El rasgo más controvertido es la "abliteración" de rechazos: se eliminan matem
 | Tipos de cuantización | GGUF Q4_K_M (~4,5 GB) y GGUF Q8_0 (~7,5 GB); el autor no publica otras variantes |
 | Idiomas soportados | No disponible (no declarados por el autor; el modelo base es multilingüe) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (Q4_K_M y Q8_0, con manifiestos .sha256); los metadatos de HuggingFace reportan parámetros provenientes de safetensors, pero no se confirma la publicación de pesos FP16 completos (el repo ocupa 4,7 GB) |
+| Formato de pesos | GGUF (Q4_K_M y Q8_0, con manifiestos .sha256); los metadatos de Hugging Face reportan parámetros provenientes de safetensors, pero no se confirma la publicación de pesos FP16 completos (el repo ocupa 4,7 GB) |
 
 ## Arquitectura y entrenamiento
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NanoWeb-7B-Instruct | 7,62 B (denso) | No disponible en la card; base con 32.768 nativos | Agente de navegador con 6 herramientas, sin rechazos | Apache-2.0 | GGUF Q4_K_M y Q8_0 en HuggingFace; sin benchmarks ni validación |
+| NanoWeb-7B-Instruct | 7,62 B (denso) | No disponible en la card; base con 32.768 nativos | Agente de navegador con 6 herramientas, sin rechazos | Apache-2.0 | GGUF Q4_K_M y Q8_0 en Hugging Face; sin benchmarks ni validación |
 | Qwen2.5-7B-Instruct | 7,62 B (denso) | 32.768 nativos (131.072 con YaRN) | Asistente generalista con function calling | Apache-2.0 | Amplia: safetensors, GGUF, AWQ, GPTQ; ecosistema maduro y benchmarks públicos |
 | Llama-3.1-8B-Instruct | 8,03 B (denso) | 128.000 tokens | Asistente generalista y tool use | Llama 3.1 Community License | Muy amplia; licencia con restricciones de uso y cláusula de nomenclatura |
 | Qwen2.5-Coder-7B-Instruct | 7,62 B (denso) | 32.768 nativos | Código, agentes de IDE y reparación | Apache-2.0 | Amplia; benchmarks de código publicados |
@@ -90,7 +90,7 @@ Frente al base Qwen2.5-7B-Instruct, el diferencial es el ajuste en trayectorias 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vid-GENR/NanoWeb-7B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/vid-GENR/NanoWeb-7B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de llama.cpp (runtime GGUF): https://github.com/ggml-org/llama.cpp
 - Ollama (despliegue GGUF): https://ollama.com

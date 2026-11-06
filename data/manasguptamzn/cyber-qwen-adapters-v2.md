@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Manasguptamzn/cyber-qwen-adapters-v2 es un repositorio publicado en HuggingFace por el usuario Manasguptamzn que, por su nombre, sus etiquetas (`unsloth`, `safetensors`, `transformers`) y su tamano de repositorio (0,1 GB), parece corresponder a un conjunto de adaptadores (tipo LoRA/QLoRA) entrenados sobre un modelo base de la familia Qwen, orientados a un dominio etiquetado como "cyber". No se trata, por tanto, de un modelo completo, sino de pesos de ajuste fino que requieren un modelo base compatible para poder ejecutarse.
+Manasguptamzn/cyber-qwen-adapters-v2 es un repositorio publicado en Hugging Face por el usuario Manasguptamzn que, por su nombre, sus etiquetas (`unsloth`, `safetensors`, `transformers`) y su tamano de repositorio (0,1 GB), parece corresponder a un conjunto de adaptadores (tipo LoRA/QLoRA) entrenados sobre un modelo base de la familia Qwen, orientados a un dominio etiquetado como "cyber". No se trata, por tanto, de un modelo completo, sino de pesos de ajuste fino que requieren un modelo base compatible para poder ejecutarse.
 
-La model card publicada es la plantilla generica autogenerada por HuggingFace y no contiene informacion sustantiva: todos los campos de descripcion, licencia, idiomas, datos de entrenamiento, hiperparametros y evaluacion aparecen como `[More Information Needed]`. El repositorio no registra descargas ni likes en el momento de la consulta, y fue creado el 15 de septiembre de 2026.
+La model card publicada es la plantilla generica autogenerada por Hugging Face y no contiene informacion sustantiva: todos los campos de descripcion, licencia, idiomas, datos de entrenamiento, hiperparametros y evaluacion aparecen como `[More Information Needed]`. El repositorio no registra descargas ni likes en el momento de la consulta, y fue creado el 15 de septiembre de 2026.
 
 Por todo lo anterior, esta ficha debe interpretarse como un inventario de lo que se puede afirmar con la informacion disponible y una enumeracion explicita de los datos que faltan. No es posible verificar la arquitectura exacta, el volumen de entrenamiento, las capacidades reales ni el rendimiento del artefacto sin acceso al modelo base, a los ficheros de configuracion y a documentacion adicional por parte del autor.
 
@@ -77,7 +77,7 @@ No disponible. No se dispone de informacion suficiente sobre este adaptador (mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Manasguptamzn/cyber-qwen-adapters-v2
+- Hugging Face: https://huggingface.co/Manasguptamzn/cyber-qwen-adapters-v2
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de Machine Learning citada en la model card: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces (repositorio, demo, blog o paper propio) en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno FrozenLake-v1 4x4 en su variante determinista (sin hielo resbaladizo, `no_slippery`). Lo publica el usuario tashobi02 en HuggingFace y su artefacto principal es un fichero `q-learning.pkl` que contiene la politica aprendida. No se trata de un modelo de lenguaje ni de una red neuronal: es una implementacion propia ("custom-implementation") de Q-learning, con el pipeline declarado como `reinforcement-learning`.
+q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno FrozenLake-v1 4x4 en su variante determinista (sin hielo resbaladizo, `no_slippery`). Lo publica el usuario tashobi02 en Hugging Face y su artefacto principal es un fichero `q-learning.pkl` que contiene la politica aprendida. No se trata de un modelo de lenguaje ni de una red neuronal: es una implementacion propia ("custom-implementation") de Q-learning, con el pipeline declarado como `reinforcement-learning`.
 
 La relevancia de esta ficha es acotada y conviene enmarcarla con precision: se trata de un checkpoint de juguete, orientado a demostraciones y a la reproduccion de resultados basicos en un gridworld de 16 casillas, no a tareas de generacion, razonamiento o codigo. El autor declara una recompensa media de 1.00 +/- 0.00 en el dataset FrozenLake-v1-4x4-no_slippery, es decir, exito perfecto en la version sin resbalones; ese resultado no esta verificado (`verified: false` en el model-index).
 
@@ -23,8 +23,8 @@ El repositorio ocupa 0.0 GB, acumula 0 descargas y 0 "likes" en el momento de la
 | Tarea declarada | reinforcement-learning |
 | Entorno | FrozenLake-v1 4x4, variante `no_slippery` |
 | Metrica declarada | mean_reward = 1.00 +/- 0.00 (no verificada) |
-| Fecha de creacion | 2026-09-26 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-26 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-26 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-26 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -57,7 +57,7 @@ Tampoco se especifican el numero de pasos de entrenamiento, la composicion del d
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el model-index (no verificados por HuggingFace, `verified: false`):
+Resultados declarados por el autor en el model-index (no verificados por Hugging Face, `verified: false`):
 
 | Tarea | Dataset | Metrica | Valor |
 |---|---|---|---|
@@ -81,7 +81,7 @@ No se dispone de datos publicados sobre alternativas concretas en la informacion
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Q-learning tabular, FrozenLake 4x4 `no_slippery`) | Tabla Q de dimension no documentada; repositorio de 0.0 GB | no aplica | mean_reward 1.00 +/- 0.00 (no verificado) | no disponible | Publicado en HuggingFace, 0 descargas |
+| Este modelo (Q-learning tabular, FrozenLake 4x4 `no_slippery`) | Tabla Q de dimension no documentada; repositorio de 0.0 GB | no aplica | mean_reward 1.00 +/- 0.00 (no verificado) | no disponible | Publicado en Hugging Face, 0 descargas |
 | Q-learning tabular sobre la variante `is_slippery=True` | Tabla Q de dimension similar | no aplica | no disponible | no disponible | Enfoque comun en tutoriales; no se cita un modelo concreto |
 | DQN (aproximador neuronal) sobre FrozenLake | Red pequena; numero de parametros no disponible | no aplica | no disponible | no disponible | Implementaciones habituales en librerias de RL |
 | PPO sobre FrozenLake | Red pequena; numero de parametros no disponible | no aplica | no disponible | no disponible | Implementaciones habituales en librerias de RL |
@@ -104,5 +104,5 @@ Diferencias cualitativas relevantes: la politica tabular es interpretable y expo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tashobi02/q-FrozenLake-v1-4x4-noSlippery
+- Hugging Face: https://huggingface.co/tashobi02/q-FrozenLake-v1-4x4-noSlippery
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

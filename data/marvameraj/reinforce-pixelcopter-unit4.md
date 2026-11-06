@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-Pixelcopter-Unit4 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (gradiente de politica Monte Carlo) sobre el entorno Pixelcopter-PLE-v0. Lo publica el usuario marvameraj en HuggingFace como entrega de la Unidad 4 del curso Deep Reinforcement Learning de HuggingFace, dentro de la categoria de implementaciones personalizadas (tag custom-implementation).
+Reinforce-Pixelcopter-Unit4 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (gradiente de politica Monte Carlo) sobre el entorno Pixelcopter-PLE-v0. Lo publica el usuario marvameraj en Hugging Face como entrega de la Unidad 4 del curso Deep Reinforcement Learning de Hugging Face, dentro de la categoria de implementaciones personalizadas (tag custom-implementation).
 
 No se trata de un modelo de lenguaje ni de un modelo fundacional: es una red de politica neuronal de escala minima (capa oculta de 64 unidades) que mapea observaciones del entorno Pixelcopter a acciones discretas. El autor declara 50.000 episodios de entrenamiento, con un maximo de 10.000 pasos por episodio, gamma 0,99 y tasa de aprendizaje 1e-4. El resultado publicado es un reward medio de -1,90 con desviacion tipica de 1,62, lo que arroja una puntuacion de curso de -3,52, muy por debajo del umbral de 5 exigido por el curso (score >= 5).
 
@@ -55,7 +55,7 @@ El entrenamiento consta de 50.000 episodios con un maximo de 10.000 pasos cada u
 
 ## Casos de uso
 
-- Material didactico para la Unidad 4 del curso Deep RL de HuggingFace: el modelo ejemplifica el flujo completo de entrenamiento y publicacion de un agente REINFORCE, incluida la declaracion de hiperparametros y metricas en la model card.
+- Material didactico para la Unidad 4 del curso Deep RL de Hugging Face: el modelo ejemplifica el flujo completo de entrenamiento y publicacion de un agente REINFORCE, incluida la declaracion de hiperparametros y metricas en la model card.
 - Baseline de referencia en Pixelcopter-PLE-v0: permite comparar cualitativamente variantes mas avanzadas (A2C, PPO) sobre el mismo entorno, aunque el reward negativo y su alta varianza lo sitúan como cota inferior, no como objetivo a batir en produccion.
 - Pruebas de integracion de infraestructura de RL: sirve para validar wrappers de Gymnasium, gestores de entornos vectorizados, sistemas de logging de episodios y pipelines de evaluacion con multiples semillas, dado su coste computacional minimo.
 - Reproduccion y depuracion de implementaciones REINFORCE propias: al ser una implementacion personalizada con hiperparametros explicitos, es util para contrastar si un bucle de entrenamiento nuevo converge de forma similar.
@@ -82,7 +82,7 @@ No se dispone de datos numericos de modelos comparables en la informacion propor
 
 | Modelo / algoritmo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reinforce-Pixelcopter-Unit4 (REINFORCE, este modelo) | no disponible (capa oculta de 64) | no aplica | mean_reward -1,90 +/- 1,62 | no disponible | HuggingFace, 0 descargas, pesos no confirmados |
+| Reinforce-Pixelcopter-Unit4 (REINFORCE, este modelo) | no disponible (capa oculta de 64) | no aplica | mean_reward -1,90 +/- 1,62 | no disponible | Hugging Face, 0 descargas, pesos no confirmados |
 | PPO sobre Pixelcopter-PLE-v0 (implementaciones del mismo curso) | no disponible | no aplica | no disponible | no disponible | no disponible en la informacion proporcionada |
 | A2C sobre Pixelcopter-PLE-v0 (implementaciones del mismo curso) | no disponible | no aplica | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -114,6 +114,6 @@ Diferencias conceptuales conocidas entre familias de algoritmos: REINFORCE es on
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marvameraj/Reinforce-Pixelcopter-Unit4
-- Unidad 4 del curso Deep Reinforcement Learning de HuggingFace (hands-on): https://huggingface.co/learn/deep-rl-course/unit4/hands-on
+- Modelo en Hugging Face: https://huggingface.co/marvameraj/Reinforce-Pixelcopter-Unit4
+- Unidad 4 del curso Deep Reinforcement Learning de Hugging Face (hands-on): https://huggingface.co/learn/deep-rl-course/unit4/hands-on
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, repositorios de codigo, blogs o demos asociados a este modelo.

@@ -70,9 +70,9 @@ No disponible. No existen modelos comparables en el sentido tradicional, ya que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rikistar/tds-carbon-card
-- Perfil del autor en HuggingFace: https://huggingface.co/rikistar
-- Espacios del autor en HuggingFace: https://huggingface.co/rikistar/spaces
+- Repositorio en Hugging Face: https://huggingface.co/rikistar/tds-carbon-card
+- Perfil del autor en Hugging Face: https://huggingface.co/rikistar
+- Espacios del autor en Hugging Face: https://huggingface.co/rikistar/spaces
 - Documentación sobre model cards de CHAI: https://www.chai.org/workgroup/applied-model
 - Referencia general sobre model cards (AI Wiki): https://aiwiki.ai/wiki/model_card
 - Model cards de Google DeepMind: https://deepmind.google/models/model-cards/

@@ -84,8 +84,8 @@ La model card no ofrece comparaciones contra otros evaluadores estéticos, por l
 
 | Modelo | Parámetros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pairwise Aesthetic Supervision (Qwen3.5-2B + LoRA) | ~2B (base) | No disponible | Comparación estética por pares y puntuación escalar | Apache 2.0 | Adaptadores en HuggingFace |
-| Qwen3.5-2B (modelo base) | ~2B | No disponible | Vision-lenguaje general (image-text-to-text) | No disponible en esta ficha | HuggingFace, revisión 15852e8c |
+| Pairwise Aesthetic Supervision (Qwen3.5-2B + LoRA) | ~2B (base) | No disponible | Comparación estética por pares y puntuación escalar | Apache 2.0 | Adaptadores en Hugging Face |
+| Qwen3.5-2B (modelo base) | ~2B | No disponible | Vision-lenguaje general (image-text-to-text) | No disponible en esta ficha | Hugging Face, revisión 15852e8c |
 | Evaluadores estéticos escalares dedicados (por ejemplo predictores tipo NIMA, LAION aesthetic predictor o Q-Align) | No disponible | No disponible | Puntuación escalar de estética | Variable según modelo | Repositorios públicos, datos no disponibles en esta ficha |
 
 La diferencia funcional relevante es que este adaptador está optimizado para decidir entre dos imágenes, no solo para puntuar una, y que publica intervalos de confianza y análisis multi-semilla, algo poco habitual en evaluadores estéticos.
@@ -105,7 +105,7 @@ La diferencia funcional relevante es que este adaptador está optimizado para de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HQSW/pairwise-aesthetic-supervision
+- Modelo en Hugging Face: https://huggingface.co/HQSW/pairwise-aesthetic-supervision
 - Repositorio del estudio: https://github.com/HQuanShaWu/pairwise-aesthetic-supervision
 - Guía de preparación de datos (AVA, VAB, Qwen): https://github.com/HQuanShaWu/pairwise-aesthetic-supervision/blob/main/docs/data_setup.md
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B (revisión 15852e8c16360a2fea060d615a32b45270f8a8fc)

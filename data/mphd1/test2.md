@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mphd1/test2 es un ajuste fino (fine-tune) del modelo GPT-2 XL de OpenAI, publicado por el usuario mphd1 en HuggingFace. Se trata de un modelo decoder-only de 1.557.611.200 parámetros (aproximadamente 1,56 mil millones) entrenado con la librería Transformers sobre un dataset que el propio autor no documenta en la model card. El identificador "test2" y la ausencia de descripción sugieren que es un artefacto de prueba o de experimentación más que un modelo destinado a producción.
+mphd1/test2 es un ajuste fino (fine-tune) del modelo GPT-2 XL de OpenAI, publicado por el usuario mphd1 en Hugging Face. Se trata de un modelo decoder-only de 1.557.611.200 parámetros (aproximadamente 1,56 mil millones) entrenado con la librería Transformers sobre un dataset que el propio autor no documenta en la model card. El identificador "test2" y la ausencia de descripción sugieren que es un artefacto de prueba o de experimentación más que un modelo destinado a producción.
 
 El modelo hereda la arquitectura y las capacidades de GPT-2 XL: generación de texto autoregresiva con una ventana de contexto de 1024 tokens y un vocabulario de 50.257 tokens orientado principalmente al inglés. La licencia declarada es MIT, lo que permite uso comercial sin restricciones de atribución más allá del aviso de copyright habitual, algo poco frecuente en modelos de esta familia.
 
@@ -68,17 +68,17 @@ No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra prueba estandarizada.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para fp16 (RTX 3060, RTX 4060, RTX 2070). Para fp32 se recomiendan 12 GB o más (RTX 3060 12 GB, RTX 4070 Ti, RTX A4000).
 - Cabe en GPU de consumo: sí, en la práctica totalidad de tarjetas con 8 GB o más. En GPUs de 4 GB habría que recurrir a cuantización de 8 bits o a inferencia en CPU.
 - GPU de centro de datos: no necesita A100 ni H100; sería un desperdicio de recursos salvo para servir muchas réplicas concurrentes.
-- Opciones de despliegue: Transformers (nativo, con el tag `text-generation-inference` y `endpoints_compatible` en HuggingFace), Text Generation Inference (TGI), vLLM. Para llama.cpp u Ollama sería necesaria una conversión previa a GGUF, ya que no se publican pesos en ese formato. También se puede ejecutar en CPU con PyTorch.
+- Opciones de despliegue: Transformers (nativo, con el tag `text-generation-inference` y `endpoints_compatible` en Hugging Face), Text Generation Inference (TGI), vLLM. Para llama.cpp u Ollama sería necesaria una conversión previa a GGUF, ya que no se publican pesos en ese formato. También se puede ejecutar en CPU con PyTorch.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mphd1/test2 | 1,56 B | 1024 | MIT | HuggingFace, safetensors | Fine-tune sin benchmarks; sobreajuste documentado |
-| openai-community/gpt2-xl (base) | 1,56 B | 1024 | MIT | HuggingFace, safetensors | Modelo original; referencia de partida de este fine-tune |
-| EleutherAI/gpt-neo-1.3B | 1,3 B | 2048 | MIT | HuggingFace | Alternativa de tamaño similar con el doble de contexto |
-| EleutherAI/pythia-1.4b | 1,4 B | 2048 | Apache 2.0 | HuggingFace | Suite con checkpoints intermedios y estudios de interpretabilidad |
+| mphd1/test2 | 1,56 B | 1024 | MIT | Hugging Face, safetensors | Fine-tune sin benchmarks; sobreajuste documentado |
+| openai-community/gpt2-xl (base) | 1,56 B | 1024 | MIT | Hugging Face, safetensors | Modelo original; referencia de partida de este fine-tune |
+| EleutherAI/gpt-neo-1.3B | 1,3 B | 2048 | MIT | Hugging Face | Alternativa de tamaño similar con el doble de contexto |
+| EleutherAI/pythia-1.4b | 1,4 B | 2048 | Apache 2.0 | Hugging Face | Suite con checkpoints intermedios y estudios de interpretabilidad |
 
 La comparación de rendimiento no es posible porque mphd1/test2 no publica resultados de benchmarks. Como referencia, se recomienda evaluar el modelo frente a su base GPT-2 XL para determinar si el fine-tune aporta alguna mejora o solo degradación por sobreajuste.
 
@@ -97,6 +97,6 @@ La comparación de rendimiento no es posible porque mphd1/test2 no publica resul
 
 ## Enlaces
 
-- [Modelo en HuggingFace: mphd1/test2](https://huggingface.co/mphd1/test2)
+- [Modelo en Hugging Face: mphd1/test2](https://huggingface.co/mphd1/test2)
 - [Modelo base: openai-community/gpt2-xl](https://huggingface.co/openai-community/gpt2-xl)
 - Paper, blog o repositorio adicional: no disponible. Las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo.

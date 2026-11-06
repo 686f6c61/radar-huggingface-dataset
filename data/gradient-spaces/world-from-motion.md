@@ -2,7 +2,7 @@
 
 ## Resumen
 
-World-from-Motion es un repositorio publicado en HuggingFace por el usuario gradient-spaces bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no incluye model card descriptiva (unicamente el bloque de metadatos con la licencia), no declara pipeline de inferencia, no especifica idiomas soportados y no cuenta con descargas ni "likes" registrados. No se dispone, por tanto, de informacion verificable sobre su arquitectura, tamano o funcionamiento.
+World-from-Motion es un repositorio publicado en Hugging Face por el usuario gradient-spaces bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no incluye model card descriptiva (unicamente el bloque de metadatos con la licencia), no declara pipeline de inferencia, no especifica idiomas soportados y no cuenta con descargas ni "likes" registrados. No se dispone, por tanto, de informacion verificable sobre su arquitectura, tamano o funcionamiento.
 
 El nombre del repositorio sugiere una posible relacion con modelos de mundo (world models) o con el procesamiento de movimiento en video, pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor. La busqueda web realizada no devuelve ningun resultado relevante sobre este modelo concreto: los resultados obtenidos corresponden a definiciones matematicas del concepto de gradiente y a generadores de degradados CSS, sin relacion con el repositorio.
 
@@ -62,4 +62,4 @@ No disponible. No se ha podido determinar la categoria del modelo (generativo de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gradient-spaces/World-from-Motion
+- Repositorio en Hugging Face: https://huggingface.co/gradient-spaces/World-from-Motion

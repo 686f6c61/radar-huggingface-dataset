@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fengjchen/blip-checkpoint es un repositorio de HuggingFace publicado por el usuario fengjchen que contiene una implementacion propia de una arquitectura denominada "Blip" orientada a tareas de matching (emparejamiento). Se trata de una configuracion a escala "small" con atencion dilatada, fusion con compuertas (gated fusion), activacion gelu y normalizacion scalenorm, tal y como se documenta en la model card del autor.
+fengjchen/blip-checkpoint es un repositorio de Hugging Face publicado por el usuario fengjchen que contiene una implementacion propia de una arquitectura denominada "Blip" orientada a tareas de matching (emparejamiento). Se trata de una configuracion a escala "small" con atencion dilatada, fusion con compuertas (gated fusion), activacion gelu y normalizacion scalenorm, tal y como se documenta en la model card del autor.
 
 El aspecto mas relevante para quien lo evalua es que el fichero `model.safetensors` incluido se presenta explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), y no como un modelo entrenado. El autor indica de forma explicita que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado en terminos de robustez, equidad o transferencia de dominio.
 
@@ -82,6 +82,6 @@ No disponible. El artefacto es un checkpoint de inicializacion no entrenado, con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fengjchen/blip-checkpoint
-- Perfil del autor en HuggingFace: https://huggingface.co/fengjchen
+- Modelo en Hugging Face: https://huggingface.co/fengjchen/blip-checkpoint
+- Perfil del autor en Hugging Face: https://huggingface.co/fengjchen
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio o demo). Los resultados de busqueda disponibles no guardan relacion con este artefacto.

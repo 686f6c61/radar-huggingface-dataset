@@ -83,7 +83,7 @@ La comparativa con la base oficial Qwen2.5-Coder-7B-Instruct es la más relevant
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/mradermacher/qwen2.5-coder-7b-kiribati-merged-GGUF
+- Hugging Face (este modelo): https://huggingface.co/mradermacher/qwen2.5-coder-7b-kiribati-merged-GGUF
 - Modelo base del fine-tuning: https://huggingface.co/Taimwe/qwen2.5-coder-7b-kiribati-merged
 - Página de overview de mradermacher: https://hf.tst.eu/model#qwen2.5-coder-7b-kiribati-merged-GGUF
 - FAQ y solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests

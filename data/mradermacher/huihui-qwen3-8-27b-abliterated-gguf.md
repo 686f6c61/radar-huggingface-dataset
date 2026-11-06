@@ -67,7 +67,7 @@ No se dispone de datos comparativos con otros modelos en la informacion proporci
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Huihui-Qwen3.8-27B-abliterated-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Modelo base abliterado: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Pagina de cuantizaciones en ModelScope (referencia): https://www.modelscope.cn/models/douyamv/Qwen3.8-27B-abliterated-GGUF
 - Descripcion del modelo en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/huihui-qwen3.8-27b-abliterated-huihui-ai

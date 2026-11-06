@@ -95,10 +95,10 @@ El autor advierte que el split de validación es un 10% aleatorio de los propios
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| Qwen3-4B-speculator-perfectblend-b16 (este) | 615 M | no disponible | Borrador especulativo para Qwen3-4B | Apache 2.0 | HuggingFace |
+| Qwen3-4B-speculator-perfectblend-b16 (este) | 615 M | no disponible | Borrador especulativo para Qwen3-4B | Apache 2.0 | Hugging Face |
 | Qwen3-4B-speculator full-mix b16 | no disponible | no disponible | Borrador especulativo para Qwen3-4B | Apache 2.0 | Serie de ablación del mismo autor |
 | Qwen3-4B-speculator tulu3 b16 | no disponible | no disponible | Borrador especulativo para Qwen3-4B | Apache 2.0 | Serie de ablación del mismo autor |
-| Qwen/Qwen3-4B (verificador) | 4 B | no disponible | Modelo de lenguaje completo | Apache 2.0 | HuggingFace |
+| Qwen/Qwen3-4B (verificador) | 4 B | no disponible | Modelo de lenguaje completo | Apache 2.0 | Hugging Face |
 
 Los tres borradores de la serie comparten receta y presupuesto de cómputo; el full-mix obtiene la mejor aceptación (4,689 en greedy), mientras que perfectblend y tulu3 empatan dentro del ruido (4,610 vs 4,611). No se dispone de comparación con borradores especulativos de otros autores en la información proporcionada.
 
@@ -116,9 +116,9 @@ Los tres borradores de la serie comparten receta y presupuesto de cómputo; el f
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MeganEFlynn/Qwen3-4B-speculator-perfectblend-b16.dspark
+- Hugging Face: https://huggingface.co/MeganEFlynn/Qwen3-4B-speculator-perfectblend-b16.dspark
 - Modelo verificador: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio speculators: https://github.com/vllm-project/speculators
 - Dataset de entrenamiento: https://huggingface.co/datasets/inference-optimization/Qwen3-8B-Regenerated-Collection
 - vLLM: https://github.com/vllm-project/vllm
-- Artefactos de entrenamiento y evaluación citados en la model card: `train_command.txt`, `val_metrics_history/`, `acceptance_temp0.csv`, `acceptance_defaulttemp.csv` (incluidos en el repositorio de HuggingFace)
+- Artefactos de entrenamiento y evaluación citados en la model card: `train_command.txt`, `val_metrics_history/`, `acceptance_temp0.csv`, `acceptance_defaulttemp.csv` (incluidos en el repositorio de Hugging Face)

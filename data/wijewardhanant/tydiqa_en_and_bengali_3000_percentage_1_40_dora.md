@@ -25,13 +25,13 @@ La relevancia de esta ficha es limitada y conviene ser explicitos: con 8 descarg
 | Tamano del repositorio | 0,1 GB |
 | Pipeline | text-generation |
 | Descargas / likes | 8 / 0 |
-| Fecha de creacion | 2026-09-22 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-22 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
 La unica informacion tecnica verificable es que se trata de un adaptador DoRA sobre Llama 3.1 8B, empaquetado con PEFT 0.17.1 y almacenado en safetensors. DoRA es una tecnica de ajuste eficiente de parametros que descompone la matriz de pesos preentrenada en un componente de magnitud y un componente de direccion, aplicando la actualizacion de bajo rango solo sobre este ultimo; en la practica se comporta como una generalizacion de LoRA y no modifica la arquitectura del transformer subyacente, por lo que la inferencia se realiza con el mismo grafo de atencion densa que Llama 3.1 8B.
 
-No hay informacion sobre el numero de tokens de entrenamiento, la composicion exacta del dataset (el nombre apunta a TyDiQA, un benchmark de question answering multilingue con respuestas extractivas), la existencia de fases de RLHF o DPO, ni los hiperparametros del adaptador (rango, alpha, dropout, tasa de aprendizaje, epocas). La model card es la plantilla por defecto de HuggingFace sin rellenar, e incluye el enlace a la calculadora de impacto de carbono de Lacoste et al. (arXiv:1910.09700), que es el unico identificador arXiv presente en las etiquetas y no guarda relacion con el metodo de entrenamiento del modelo. El sufijo "percentage_1_40" del nombre podria referirse a un rango de capas o a un porcentaje del conjunto de datos, pero no hay documentacion que lo confirme.
+No hay informacion sobre el numero de tokens de entrenamiento, la composicion exacta del dataset (el nombre apunta a TyDiQA, un benchmark de question answering multilingue con respuestas extractivas), la existencia de fases de RLHF o DPO, ni los hiperparametros del adaptador (rango, alpha, dropout, tasa de aprendizaje, epocas). La model card es la plantilla por defecto de Hugging Face sin rellenar, e incluye el enlace a la calculadora de impacto de carbono de Lacoste et al. (arXiv:1910.09700), que es el unico identificador arXiv presente en las etiquetas y no guarda relacion con el metodo de entrenamiento del modelo. El sufijo "percentage_1_40" del nombre podria referirse a un rango de capas o a un porcentaje del conjunto de datos, pero no hay documentacion que lo confirme.
 
 ## Capacidades
 
@@ -98,7 +98,7 @@ No es posible establecer una comparacion de rendimiento fiable sin resultados de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_bengali_3000_percentage_1_40_DoRA
+- Repositorio en Hugging Face: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_bengali_3000_percentage_1_40_DoRA
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Libreria PEFT: https://huggingface.co/docs/peft/index
 - Paper de la metrica de impacto de carbono citada en la plantilla de la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

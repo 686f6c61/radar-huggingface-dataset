@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Long-WAM Nesting Doll Epoch 2 | no disponible | no disponible (P48 + chunk 32) | Manipulación bimanual, nesting dolls | other | HuggingFace, 19 descargas |
-| Efficient-Large-Model/Long-WAM-YAM (base) | no disponible | no disponible | Política VLA generalista | other | HuggingFace |
+| Long-WAM Nesting Doll Epoch 2 | no disponible | no disponible (P48 + chunk 32) | Manipulación bimanual, nesting dolls | other | Hugging Face, 19 descargas |
+| Efficient-Large-Model/Long-WAM-YAM (base) | no disponible | no disponible | Política VLA generalista | other | Hugging Face |
 | NVlabs/LongLive | no disponible | no disponible | Generación de vídeo de horizonte largo | no disponible | GitHub |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dddddsds31341/Long-WAM-Nesting-Doll-Epoch-2
+- Modelo en Hugging Face: https://huggingface.co/dddddsds31341/Long-WAM-Nesting-Doll-Epoch-2
 - Modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM
 - Dataset: https://huggingface.co/datasets/yuyingyinya/nesting_doll
 - Repositorio base del código: https://github.com/NVlabs/LongLive (commit `cfa4e91eec59429d583326500bf5535c9ce6eec7`)

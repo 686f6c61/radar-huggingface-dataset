@@ -74,7 +74,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Modelo ONNX en HuggingFace](https://huggingface.co/minishlab/potion-retrieval-32m-onnx)
+- [Modelo ONNX en Hugging Face](https://huggingface.co/minishlab/potion-retrieval-32m-onnx)
 - [Modelo base original](https://huggingface.co/minishlab/potion-retrieval-32M)
 - [Repositorio Model2Vec](https://github.com/MinishLab/model2vec)
 - [Colección de modelos base Model2Vec](https://huggingface.co/collections/minishlab/model2vec-base-models-66fd9dd9b7c3b3c0f25ca90e)

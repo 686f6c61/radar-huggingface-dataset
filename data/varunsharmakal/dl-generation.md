@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`varunsharmakal/dl-generation` es un repositorio de HuggingFace publicado por el usuario varunsharmakal que contiene una implementación funcional de la arquitectura MobileViT orientada a tareas de generación, en configuración base. Se trata de un artefacto experimental pensado para pruebas de humo (smoke tests) y para servir como punto de partida reproducible, no de un modelo entrenado ni evaluado.
+`varunsharmakal/dl-generation` es un repositorio de Hugging Face publicado por el usuario varunsharmakal que contiene una implementación funcional de la arquitectura MobileViT orientada a tareas de generación, en configuración base. Se trata de un artefacto experimental pensado para pruebas de humo (smoke tests) y para servir como punto de partida reproducible, no de un modelo entrenado ni evaluado.
 
 El repositorio incluye un `model.safetensors` que el propio autor describe explícitamente como un checkpoint de inicialización, válido para verificar que el código carga y ejecuta, pero no como un modelo con pesos entrenados. El peso total declarado en el fichero safetensors es de 33.088 parámetros, una cifra propia de una prueba de arquitectura y no de un modelo desplegable en producción.
 
@@ -65,7 +65,7 @@ No hay datos de rendimiento publicados para este repositorio, por lo que la comp
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| varunsharmakal/dl-generation | 33.088 | no disponible | apache-2.0 | HuggingFace |
+| varunsharmakal/dl-generation | 33.088 | no disponible | apache-2.0 | Hugging Face |
 | MobileViT (arquitectura original) | según variante (no disponible aquí) | no disponible | no disponible | publicación académica |
 | Alternativas de generación comparables | no disponible | no disponible | no disponible | no disponible |
 
@@ -85,5 +85,5 @@ No se dispone de información suficiente para establecer comparaciones de rendim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/varunsharmakal/dl-generation
+- Repositorio en Hugging Face: https://huggingface.co/varunsharmakal/dl-generation
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en la informacion disponible.

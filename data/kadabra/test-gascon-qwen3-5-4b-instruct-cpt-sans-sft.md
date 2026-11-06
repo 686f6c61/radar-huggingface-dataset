@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Test-gascon-Qwen3.5-4b-Instruct-CPT-sans-SFT es un modelo de lenguaje de aproximadamente 4.330 millones de parametros publicado por el usuario Kadabra en HuggingFace. Se trata de un derivado del modelo base unsloth/Qwen3.5-4B, ajustado por el autor mediante un proceso de preentrenamiento continuado (CPT, continued pre-training) y sin una fase posterior de ajuste supervisado (SFT, de ahi el sufijo "sans-SFT"). El nombre "Test" y el hecho de contar con 0 descargas y 0 likes indican que es una publicacion experimental o de prueba, no un modelo orientado a produccion.
+Test-gascon-Qwen3.5-4b-Instruct-CPT-sans-SFT es un modelo de lenguaje de aproximadamente 4.330 millones de parametros publicado por el usuario Kadabra en Hugging Face. Se trata de un derivado del modelo base unsloth/Qwen3.5-4B, ajustado por el autor mediante un proceso de preentrenamiento continuado (CPT, continued pre-training) y sin una fase posterior de ajuste supervisado (SFT, de ahi el sufijo "sans-SFT"). El nombre "Test" y el hecho de contar con 0 descargas y 0 likes indican que es una publicacion experimental o de prueba, no un modelo orientado a produccion.
 
 El repositorio contiene pesos en formato GGUF, convertidos con la libreria Unsloth, lo que lo hace desplegable directamente con llama.cpp y compatible con el ecosistema llama-cpp. Incluye un fichero de proyector multimodal (mmproj), ademas de las etiquetas vision-language-model, lo que apunta a que el modelo conserva capacidades de vision-lenguaje heredadas del base. Las cuantizaciones distribuidas son BF16, Q4_K_M y Q6_K.
 
@@ -23,7 +23,7 @@ El modelo es relevante principalmente como ejemplo de flujo de trabajo: muestra 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna en la informacion proporcionada. El repositorio hereda la etiqueta qwen3_5 y la model card solo indica que el modelo fue convertido a formato GGUF usando Unsloth. Por el nombre y por los resultados de busqueda, se trata de un ajuste sobre unsloth/Qwen3.5-4B realizado por Kadabra con Unsloth y la libreria TRL de HuggingFace, con una metodologia que el autor describe como 2x mas rapida de entrenar. El sufijo "CPT-sans-SFT" sugiere que se aplico preentrenamiento continuado sin una etapa posterior de ajuste supervisado, lo que habitualmente implica un modelo menos alineado para conversacion que un instruct convencional, a pesar de que el nombre incluye la palabra "Instruct".
+No se dispone de informacion detallada sobre la arquitectura interna en la informacion proporcionada. El repositorio hereda la etiqueta qwen3_5 y la model card solo indica que el modelo fue convertido a formato GGUF usando Unsloth. Por el nombre y por los resultados de busqueda, se trata de un ajuste sobre unsloth/Qwen3.5-4B realizado por Kadabra con Unsloth y la libreria TRL de Hugging Face, con una metodologia que el autor describe como 2x mas rapida de entrenar. El sufijo "CPT-sans-SFT" sugiere que se aplico preentrenamiento continuado sin una etapa posterior de ajuste supervisado, lo que habitualmente implica un modelo menos alineado para conversacion que un instruct convencional, a pesar de que el nombre incluye la palabra "Instruct".
 
 La presencia del fichero mmproj (proyector multimodal) y de la etiqueta vision-language-model indica que el pipeline conserva el encoder de vision del modelo base, de modo que el GGUF puede ejecutarse en modo multimodal con llama-mtmd-cli. No hay datos disponibles sobre numero de tokens de entrenamiento, composicion del dataset, uso de RLHF o DPO, ni sobre tecnicas de atencion o decodificacion especulativa.
 
@@ -84,7 +84,7 @@ Los datos de esta tabla provienen de los resultados de busqueda y de la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kadabra/Test-gascon-Qwen3.5-4b-Instruct-CPT-sans-SFT
+- Modelo en Hugging Face: https://huggingface.co/Kadabra/Test-gascon-Qwen3.5-4b-Instruct-CPT-sans-SFT
 - Modelo hermano (con SFT): https://huggingface.co/Kadabra/Qwen3.5-4b-gas-CPT-SFT
 - Modelo hermano en Featherless AI: https://featherless.ai/models/Kadabra/Qwen3.5-4b-gas-CPT
 - Discusiones del modelo hermano: https://huggingface.co/Kadabra/Qwen3.5-4b-gas-CPT-SFT/discussions

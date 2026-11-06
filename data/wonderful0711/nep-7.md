@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `wonderful0711/nep-7` de HuggingFace no contiene un modelo de lenguaje, sino que actúa como punto de publicacion de una extension de NVIDIA Isaac Lab denominada `task-humanoid-run-jump`, desarrollada por Nepher Robotics. El proyecto entrena politicas de control para el humanoide Unitree G1 (29 grados de libertad) con el objetivo de que corra y salte vallas en un circuito recto, combinando Adversarial Motion Priors (AMP) para las habilidades de carrera y salto, un tracker corporal completo BeyondMimic congelado y un conmutador PPO jerarquico de alto nivel.
+El repositorio `wonderful0711/nep-7` de Hugging Face no contiene un modelo de lenguaje, sino que actúa como punto de publicacion de una extension de NVIDIA Isaac Lab denominada `task-humanoid-run-jump`, desarrollada por Nepher Robotics. El proyecto entrena politicas de control para el humanoide Unitree G1 (29 grados de libertad) con el objetivo de que corra y salte vallas en un circuito recto, combinando Adversarial Motion Priors (AMP) para las habilidades de carrera y salto, un tracker corporal completo BeyondMimic congelado y un conmutador PPO jerarquico de alto nivel.
 
 La relevancia tecnica esta en la composicion de politicas congeladas: un agente de alto nivel solo produce una senal de 6 dimensiones (`gate`, `vx`, `vy`, `ωz`, altura de valla y distancia de vuelo) mientras los actores AMP y el tracker escriben directamente las 29 articulaciones. Frente a los ejemplos habituales de Isaac Lab para el G1, que se limitan al seguimiento de velocidad o al tracking de movimiento, este paquete anade salto de obstaculos y una pila jerarquica completa con evaluacion reproducible por semilla.
 
-El repositorio ocupa 0.0 GB, acumula 0 descargas y 0 likes en el momento de la consulta, y sus metadatos de HuggingFace no declaran pipeline, licencia ni idiomas. El nombre `nep-7` no guarda relacion evidente con el contenido descrito en la model card. No se publican pesos ni artefactos de modelo en el espacio de HuggingFace.
+El repositorio ocupa 0.0 GB, acumula 0 descargas y 0 likes en el momento de la consulta, y sus metadatos de Hugging Face no declaran pipeline, licencia ni idiomas. El nombre `nep-7` no guarda relacion evidente con el contenido descrito en la model card. No se publican pesos ni artefactos de modelo en el espacio de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El repositorio ocupa 0.0 GB, acumula 0 descargas y 0 likes en el momento de la c
 | Longitud de contexto | No aplicable. Equivalente funcional: dimensiones de observacion de 134-D (actor run), 156-D (actor jump), 157-D (tracker) y 6-D (conmutador de alto nivel) |
 | Tipos de cuantizacion | No aplicable |
 | Idiomas soportados | No aplicable (no procesa lenguaje natural) |
-| Licencia | BSD 3-Clause segun la model card; no declarada en los metadatos de HuggingFace |
+| Licencia | BSD 3-Clause segun la model card; no declarada en los metadatos de Hugging Face |
 | Formato de pesos | No disponible; la model card menciona actores exportados (el texto esta truncado en "Exported actors carry t...") |
 | Robot objetivo | Unitree G1, 29 grados de libertad (cuerpo completo) |
 | Simulador | NVIDIA Isaac Sim 5.1.0 + NVIDIA Isaac Lab 2.3.1 |
@@ -28,7 +28,7 @@ El repositorio ocupa 0.0 GB, acumula 0 descargas y 0 likes en el momento de la c
 | Circuito | Trayecto recto de 20 a 30 m, hasta 3 vallas, altura 0.20-0.75 m |
 | Entorno de evaluacion | Vallas procedurales o EnvHub determinista `humanoid-runjump-course-v1` |
 | Python | 3.11 |
-| Repositorio de movimientos de referencia | Dataset `bones-studio/seed` en HuggingFace |
+| Repositorio de movimientos de referencia | Dataset `bones-studio/seed` en Hugging Face |
 | Tracker externo | `nepher-ai/humanoid-g1-tracking` |
 
 ## Arquitectura y entrenamiento
@@ -75,7 +75,7 @@ El unico elemento de evaluacion descrito es cualitativo-estructural: la puerta d
 - Compatibilidad con GPU de consumo: no disponible. Depende de los requisitos de Isaac Sim, no de un tamano de pesos publicado.
 - Opciones de despliegue: no es un modelo servible con vLLM, llama.cpp, Ollama ni TGI. El despliegue se realiza ejecutando Isaac Sim e Isaac Lab con los entornos Gym registrados, o cargando los actores AMP exportados (formato no confirmado, probablemente TorchScript) dentro del simulador.
 - Latencia y throughput: no disponibles. Se conocen las frecuencias nominales de la pila (tracker a 50 Hz, PhysX a 200 Hz), pero no los tiempos de paso ni el rendimiento medido en hardware concreto.
-- Almacenamiento: el repositorio de HuggingFace ocupa 0.0 GB, por lo que no contiene pesos descargables.
+- Almacenamiento: el repositorio de Hugging Face ocupa 0.0 GB, por lo que no contiene pesos descargables.
 
 ## Comparativa con modelos similares
 
@@ -92,8 +92,8 @@ No se dispone de comparaciones cuantitativas de rendimiento entre estos proyecto
 
 - No es un kit de despliegue sim2real. El propio autor lo indica explicitamente: el repositorio entrena politicas en simulacion, no proporciona un pipeline de transferencia al robot fisico.
 - No es un stack para cuadrupedos ni un navegador basado en vision. Las observaciones se limitan a propiocepcion mas comandos de circuito y salto.
-- El repositorio de HuggingFace ocupa 0.0 GB y registra 0 descargas y 0 likes, por lo que no hay evidencia de validacion independiente ni artefactos verificables publicados.
-- Los metadatos de HuggingFace no declaran pipeline, licencia ni idiomas. La licencia BSD 3-Clause aparece unicamente en la model card, lo que conviene verificar contra el repositorio de GitHub antes de cualquier uso.
+- El repositorio de Hugging Face ocupa 0.0 GB y registra 0 descargas y 0 likes, por lo que no hay evidencia de validacion independiente ni artefactos verificables publicados.
+- Los metadatos de Hugging Face no declaran pipeline, licencia ni idiomas. La licencia BSD 3-Clause aparece unicamente en la model card, lo que conviene verificar contra el repositorio de GitHub antes de cualquier uso.
 - La model card esta truncada en el apartado de notas de metodo de fase 2 ("Exported actors carry t..."), de modo que parte de la informacion tecnica sobre la exportacion de actores no es legible.
 - No hay datos publicados de sesgos, alucinacion, limites de contexto o comportamiento multilingue, porque no se trata de un modelo de lenguaje. Aplicar metricas de ese tipo carece de sentido aqui.
 - El nombre del repositorio (`nep-7`) no coincide con el contenido descrito (`task-humanoid-run-jump`), lo que puede dificultar su descubrimiento y favorecer confusiones en busquedas.
@@ -103,7 +103,7 @@ No se dispone de comparaciones cuantitativas de rendimiento entre estos proyecto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wonderful0711/nep-7
+- Repositorio en Hugging Face: https://huggingface.co/wonderful0711/nep-7
 - Organizacion Nepher Robotics en GitHub: https://github.com/nepher-ai
 - Repositorio del tracker corporal completo: https://github.com/nepher-ai/humanoid-g1-tracking
 - Stack de carrera por waypoints: https://github.com/nepher-ai/task-humanoid-run-waypoints

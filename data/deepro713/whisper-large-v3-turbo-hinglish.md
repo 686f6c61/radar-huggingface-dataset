@@ -2,7 +2,7 @@
 
 ## Resumen
 
-whisper-large-v3-turbo-hinglish es un ajuste fino del modelo openai/whisper-large-v3-turbo (809 M de parametros) especializado en reconocimiento automatico del habla (ASR) para hinglish, es decir, habla que alterna hindi e ingles dentro de la misma emision. Lo publica el usuario Deepro713 en HuggingFace y su objetivo es resolver un problema concreto: el modelo base de OpenAI obtiene un WER muy alto en este registro coloquial y code-switched, mientras que el ajuste fino reduce el error de forma drastica en el dominio evaluado.
+whisper-large-v3-turbo-hinglish es un ajuste fino del modelo openai/whisper-large-v3-turbo (809 M de parametros) especializado en reconocimiento automatico del habla (ASR) para hinglish, es decir, habla que alterna hindi e ingles dentro de la misma emision. Lo publica el usuario Deepro713 en Hugging Face y su objetivo es resolver un problema concreto: el modelo base de OpenAI obtiene un WER muy alto en este registro coloquial y code-switched, mientras que el ajuste fino reduce el error de forma drastica en el dominio evaluado.
 
 Tecnicamente es un modelo Whisper estandar de tipo encoder-decoder, con la misma arquitectura que el base, y se distribuye ya fusionado: el adaptador LoRA empleado durante el entrenamiento se ha integrado en los pesos, por lo que se carga como cualquier checkpoint `WhisperForConditionalGeneration` sin necesidad de PEFT. El modelo entrenado ocupa 1,6 GB en safetensors (fp16) y mantiene la ventana de audio de 30 segundos por inferencia propia de la familia Whisper. La salida conserva el hindi en devanagari y deja los terminos ingleses en alfabeto latino.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Ventana de audio | WER en hinglish (agarwalayushi/hinglish, 40 clips) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Deepro713/whisper-large-v3-turbo-hinglish | 809 M | 30 s | 0,306 | MIT | HuggingFace, safetensors |
-| openai/whisper-large-v3-turbo | 809 M | 30 s | 1,224 | MIT | HuggingFace, safetensors |
-| openai/whisper-large-v3 | 1.550 M | 30 s | no disponible | Apache-2.0 | HuggingFace, safetensors |
-| openai/whisper-small | 244 M | 30 s | no disponible | Apache-2.0 | HuggingFace, safetensors |
+| Deepro713/whisper-large-v3-turbo-hinglish | 809 M | 30 s | 0,306 | MIT | Hugging Face, safetensors |
+| openai/whisper-large-v3-turbo | 809 M | 30 s | 1,224 | MIT | Hugging Face, safetensors |
+| openai/whisper-large-v3 | 1.550 M | 30 s | no disponible | Apache-2.0 | Hugging Face, safetensors |
+| openai/whisper-small | 244 M | 30 s | no disponible | Apache-2.0 | Hugging Face, safetensors |
 
 No se han identificado en la informacion proporcionada otros ajustes finos comparables especificamente para hinglish, por lo que la comparativa se limita a la familia Whisper.
 
@@ -95,7 +95,7 @@ No se han identificado en la informacion proporcionada otros ajustes finos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Deepro713/whisper-large-v3-turbo-hinglish
+- Modelo en Hugging Face: https://huggingface.co/Deepro713/whisper-large-v3-turbo-hinglish
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Dataset de entrenamiento: https://huggingface.co/datasets/agarwalayushi/hinglish
 - Busqueda web: no se han identificado enlaces tecnicos relevantes (los resultados devueltos no guardan relacion con el modelo).

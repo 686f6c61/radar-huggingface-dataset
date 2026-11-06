@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cedric98/caelus-3` es una entrada publicada en HuggingFace por el autor `cedric98`. La fecha de creación es el 9 de septiembre de 2026 y la fecha de última actualización coincide con la de creación. La licencia declarada es MIT y la región asociada es Estados Unidos (`region: us`).
+El modelo `cedric98/caelus-3` es una entrada publicada en Hugging Face por el autor `cedric98`. La fecha de creación es el 9 de septiembre de 2026 y la fecha de última actualización coincide con la de creación. La licencia declarada es MIT y la región asociada es Estados Unidos (`region: us`).
 
 En el momento de la consulta, la model card del repositorio no contiene ninguna descripción, arquitectura, especificaciones técnicas, ejemplos de uso, ni información sobre el proceso de entrenamiento. Tampoco se ha publicado información sobre el número de parámetros, la longitud de contexto, los idiomas soportados ni el formato de los pesos. Los datos de descarga y de "me gusta" son cero, y no se ha asociado ninguna categoría de pipeline.
 
@@ -72,5 +72,5 @@ No disponible. No se ha identificado ningun modelo comparable en la informacion 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cedric98/caelus-3
+- Repositorio en Hugging Face: https://huggingface.co/cedric98/caelus-3
 - Nota: la busqueda web realizada no proporciono enlaces adicionales relevantes para este modelo. Los resultados obtenidos (recetas de french toast, un modelo 3D del personaje Caelus de Honkai Star Rail y una etiqueta "caelus" en Civitai) no estan relacionados con este repositorio especifico.

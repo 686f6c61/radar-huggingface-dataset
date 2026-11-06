@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-DR-2.50bpw-GGUF es una cuantización GGUF de 2,50 bits por peso (aproximadamente) del modelo base Qwen/Qwen3.8-27B, publicada por el usuario Grawnch en HuggingFace. El modelo base pertenece a la familia Qwen3.8 de Alibaba, con 26.895.998.464 parámetros totales (unos 26,9 mil millones) y una longitud de contexto declarada de 32.768 tokens. Esta versión cuantizada reduce el peso del repositorio a 14,4 GB, lo que permite ejecutar un modelo de casi 27B en hardware con menos VRAM que la versión en BF16.
+Qwen3.8-27B-DR-2.50bpw-GGUF es una cuantización GGUF de 2,50 bits por peso (aproximadamente) del modelo base Qwen/Qwen3.8-27B, publicada por el usuario Grawnch en Hugging Face. El modelo base pertenece a la familia Qwen3.8 de Alibaba, con 26.895.998.464 parámetros totales (unos 26,9 mil millones) y una longitud de contexto declarada de 32.768 tokens. Esta versión cuantizada reduce el peso del repositorio a 14,4 GB, lo que permite ejecutar un modelo de casi 27B en hardware con menos VRAM que la versión en BF16.
 
 El interés de esta ficha radica en que se trata de una cuantización agresiva (2,50 bpw) orientada a maximizar la compresión, con métricas de degradación publicadas por el autor (perplejidad, divergencia KL y acuerdo top-1/top-5 frente a BF16). El autor reporta una puntuación del 93,3% en AIME 2025 (28/30), lo que sugiere que, pese a la compresión, el modelo conserva capacidad de razonamiento matemático en esta evaluación concreta.
 
@@ -76,7 +76,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 - VRAM estimada para inferencia: los pesos ocupan 14,4 GB. Con overhead de contexto y memoria KV para 32.768 tokens, se recomienda al menos 16-18 GB de VRAM para contexto completo; con contexto reducido puede ajustarse a ~15-16 GB.
 - GPUs recomendadas: RTX 4090 (24 GB) o RTX 4080 (16 GB) para inferencia local; A100/H100 para despliegues con mayor concurrencia o contexto completo.
 - ¿Cabe en GPU de consumo? Sí, en GPUs con 16 GB o más de VRAM (RTX 4080, 4090, A4000, A5000). En GPUs de 12 GB no cabe sin offloading a RAM.
-- Opciones de despliegue: llama.cpp y Ollama son las vías naturales para GGUF; también es posible usar el backend GGUF de vLLM o TGI si soportan el formato de cuantización concreto. El tag `endpoints_compatible` del repositorio sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp y Ollama son las vías naturales para GGUF; también es posible usar el backend GGUF de vLLM o TGI si soportan el formato de cuantización concreto. El tag `endpoints_compatible` del repositorio sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -85,8 +85,8 @@ No se dispone de datos de rendimiento de modelos comparables en la información 
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-DR-2.50bpw-GGUF (este) | ~26,9B | 32.768 | GGUF 2,50 bpw | no disponible | HuggingFace (0 descargas) |
-| Qwen/Qwen3.8-27B (base) | ~26,9B | no disponible | safetensors (presumiblemente) | no disponible | HuggingFace |
+| Qwen3.8-27B-DR-2.50bpw-GGUF (este) | ~26,9B | 32.768 | GGUF 2,50 bpw | no disponible | Hugging Face (0 descargas) |
+| Qwen/Qwen3.8-27B (base) | ~26,9B | no disponible | safetensors (presumiblemente) | no disponible | Hugging Face |
 | Otras cuantizaciones GGUF del mismo base | ~26,9B | 32.768 | GGUF Q2_K/Q3_K/Q4_K | no disponible | no disponible |
 
 No se han identificado en la información proporcionada alternativas de otros desarrolladores con las que comparar parámetros, contexto y rendimiento de forma fiable.
@@ -105,6 +105,6 @@ No se han identificado en la información proporcionada alternativas de otros de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Grawnch/Qwen3.8-27B-DR-2.50bpw-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Grawnch/Qwen3.8-27B-DR-2.50bpw-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

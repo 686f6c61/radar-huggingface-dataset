@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rishanthrajendhran/ideadet-mmbert-1m-outline` es un clasificador de texto basado en `mmBERT-base`, un encoder multilingüe derivado de ModernBERT desarrollado por el JHU-CLSP. Este modelo concreto, publicado por Rishanth Rajendhran, está diseñado para la detección de contenido generado por inteligencia artificial (etiqueta `ai-detection`), aunque su nombre sugiere una especialización en la detección de esquemas o contornos de ideas ("outline"). Cuenta con 307,5 millones de parámetros, lo que lo sitúa en la gama de modelos encoder de tamaño medio, y está disponible bajo licencia Apache 2.0. Su acceso es restringido en HuggingFace, por lo que requiere aceptar condiciones antes de su descarga.
+El modelo `rishanthrajendhran/ideadet-mmbert-1m-outline` es un clasificador de texto basado en `mmBERT-base`, un encoder multilingüe derivado de ModernBERT desarrollado por el JHU-CLSP. Este modelo concreto, publicado por Rishanth Rajendhran, está diseñado para la detección de contenido generado por inteligencia artificial (etiqueta `ai-detection`), aunque su nombre sugiere una especialización en la detección de esquemas o contornos de ideas ("outline"). Cuenta con 307,5 millones de parámetros, lo que lo sitúa en la gama de modelos encoder de tamaño medio, y está disponible bajo licencia Apache 2.0. Su acceso es restringido en Hugging Face, por lo que requiere aceptar condiciones antes de su descarga.
 
 ## Especificaciones tecnicas
 
@@ -55,7 +55,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es `gated`, por lo que requiere aprobación previa del autor en HuggingFace. Esto puede limitar su adopción y auditoría externa.
+- Acceso restringido: el modelo es `gated`, por lo que requiere aprobación previa del autor en Hugging Face. Esto puede limitar su adopción y auditoría externa.
 - Sin documentación técnica: no se han publicado detalles sobre el proceso de fine-tuning, datos de entrenamiento, ni métricas de rendimiento. Esto dificulta evaluar su fiabilidad en producción.
 - Riesgo de sesgos: al ser un modelo entrenado para detección de IA, puede presentar falsos positivos o negativos dependiendo del dominio y del estilo del texto. No hay estudios de sesgo disponibles.
 - Alcance multilingüe incierto: aunque el modelo base es multilingüe, no se garantiza que el fine-tuning mantenga el mismo rendimiento en todos los idiomas.
@@ -64,7 +64,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rishanthrajendhran/ideadet-mmbert-1m-outline
+- Hugging Face: https://huggingface.co/rishanthrajendhran/ideadet-mmbert-1m-outline
 - Página del modelo base mmBERT: https://huggingface.co/jhu-clsp/mmBERT-base
 - Blog oficial de mmBERT: https://huggingface.co/blog/mmbert
 - Paper de mmBERT: https://arxiv.org/html/2509.06888v1

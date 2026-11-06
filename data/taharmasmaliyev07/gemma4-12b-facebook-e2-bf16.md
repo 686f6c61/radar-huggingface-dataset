@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma4-12B-FACEBOOK-E2-BF16 es un ajuste fino (finetune) publicado por el usuario taharmasmaliyev07 en HuggingFace, construido sobre una variante de la familia Gemma 4 con 11.959.730.224 parametros (aproximadamente 12B) en precision BF16. El modelo se presenta como un modelo multimodal de tipo image-text-to-text bajo la arquitectura `gemma4_unified`, lo que indica que acepta tanto texto como imagenes como entrada y genera texto. La licencia declarada es Apache 2.0 y el unico idioma declarado es el ingles.
+Gemma4-12B-FACEBOOK-E2-BF16 es un ajuste fino (finetune) publicado por el usuario taharmasmaliyev07 en Hugging Face, construido sobre una variante de la familia Gemma 4 con 11.959.730.224 parametros (aproximadamente 12B) en precision BF16. El modelo se presenta como un modelo multimodal de tipo image-text-to-text bajo la arquitectura `gemma4_unified`, lo que indica que acepta tanto texto como imagenes como entrada y genera texto. La licencia declarada es Apache 2.0 y el unico idioma declarado es el ingles.
 
 El modelo resuelve el caso de uso generico de generacion de texto y comprension de imagenes conversacional, y su relevancia actual radica en que parte de una base Gemma 4 (familia abierta de Google) y se ha entrenado con Unsloth y TRL, lo que abarata el proceso de ajuste. No obstante, la informacion publicada por el autor es extremadamente escasa: la model card se limita a indicar el autor, la licencia, el modelo base y la herramienta de entrenamiento, sin detallar datos de entrenamiento, hiperparametros ni evaluaciones.
 
@@ -25,14 +25,14 @@ Por tanto, esta ficha describe lo que se puede verificar a partir de los metadat
 
 El repositorio declara la arquitectura `gemma4_unified`, que corresponde a la familia Gemma 4 en su variante unificada multimodal. El pipeline es `image-text-to-text`, lo que implica un codificador de vision acoplado a un decodificador de lenguaje para tareas de comprension de imagenes y generacion de texto condicionada. El modelo se distribuye en precision BF16 con pesos en safetensors y un tamano de repositorio de 24,2 GB, coherente con 11,96B parametros en 16 bits mas los tensores del codificador visual y los ficheros auxiliares.
 
-En cuanto al entrenamiento, la unica informacion disponible es que se realizo un ajuste fino con Unsloth y la libreria TRL de HuggingFace, y que el autor afirma que el entrenamiento fue "2x mas rapido" gracias a Unsloth. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF, DPO o SFT supervisado, ni los hiperparametros utilizados. Tampoco se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, modos de razonamiento) mas alla de las que pueda aportar la arquitectura Gemma 4 de base, que no se detallan en la informacion proporcionada.
+En cuanto al entrenamiento, la unica informacion disponible es que se realizo un ajuste fino con Unsloth y la libreria TRL de Hugging Face, y que el autor afirma que el entrenamiento fue "2x mas rapido" gracias a Unsloth. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF, DPO o SFT supervisado, ni los hiperparametros utilizados. Tampoco se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, modos de razonamiento) mas alla de las que pueda aportar la arquitectura Gemma 4 de base, que no se detallan en la informacion proporcionada.
 
 ## Capacidades
 
 - Generacion de texto conversacional en ingles, segun el tag `conversational` y el pipeline declarado.
 - Comprension de imagenes y respuesta en texto (image-text-to-text), gracias al pipeline multimodal.
 - Integracion con `text-generation-inference` (tag TGI) y con `transformers`, lo que facilita el despliegue en endpoints compatibles.
-- Compatibilidad declarada con `endpoints_compatible`, lo que sugiere uso en HuggingFace Inference Endpoints.
+- Compatibilidad declarada con `endpoints_compatible`, lo que sugiere uso en Hugging Face Inference Endpoints.
 - Soporte de tool calling / function calling: no disponible (no documentado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
 - Capacidades multilingues: limitadas al ingles segun el campo `language`; no se declaran otros idiomas.
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion de 8 bits: alrededor de 12-14 GB de pesos, mas overhead; en 4 bits, alrededor de 7-8 GB de pesos, mas overhead. Estas cifras son estimaciones por tamano, no valores publicados por el autor.
 - GPU recomendadas para BF16: NVIDIA A100 40/80 GB, H100 80 GB, L40S 48 GB o RTX 6000 Ada 48 GB. Para cuantizacion 4/8 bits, RTX 4090 24 GB o RTX 3090 24 GB pueden ser suficientes.
 - Cabe en GPU de consumo: si, en cuantizacion de 4 bits cabe en GPUs de 12-16 GB (RTX 4070 Ti, RTX 4080); en BF16 no cabe en GPUs de 24 GB sin offloading.
-- Opciones de despliegue: `transformers`, `text-generation-inference` (TGI), HuggingFace Inference Endpoints (tag `endpoints_compatible`). No se documenta soporte de llama.cpp, Ollama ni vLLM en la informacion proporcionada.
+- Opciones de despliegue: `transformers`, `text-generation-inference` (TGI), Hugging Face Inference Endpoints (tag `endpoints_compatible`). No se documenta soporte de llama.cpp, Ollama ni vLLM en la informacion proporcionada.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ No se identifican en la informacion proporcionada modelos comparables concretos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/taharmasmaliyev07/Gemma4-12B-FACEBOOK-E2-BF16
+- Repositorio Hugging Face: https://huggingface.co/taharmasmaliyev07/Gemma4-12B-FACEBOOK-E2-BF16
 - Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (libreria citada): https://github.com/huggingface/trl
+- TRL de Hugging Face (libreria citada): https://github.com/huggingface/trl
 - Resultados de busqueda web sin relacion tecnica con el modelo (no relevantes): https://www.facebook.com/help/instagram/437912651842720/ y https://business.facebook.com/business/help/851388479347923/

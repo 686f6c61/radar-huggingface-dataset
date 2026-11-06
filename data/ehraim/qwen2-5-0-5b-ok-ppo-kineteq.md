@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo. El adaptador se diferencia po
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ehraim/qwen2.5-0.5b-ok-ppo-kineteq
+- Hugging Face: https://huggingface.co/Ehraim/qwen2.5-0.5b-ok-ppo-kineteq
 - Repositorio de codigo ok-grpo: https://github.com/ehallford11714/ok-grpo
 - Informe tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115
-- Coleccion Qwen2.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen25
+- Coleccion Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25

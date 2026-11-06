@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nyx es un modelo de decisión y clasificación estructurada publicado por el usuario `devanshbatham` en HuggingFace, derivado mediante ajuste específico de tarea del modelo base `Qwen/Qwen3.5-35B-A3B` (revisión `59d61f3ce65a6d9863b86d2e96597125219dc754`). No se distribuye como un checkpoint estándar de Transformers, sino como el checkpoint de producción aceptado en el formato presharded nativo de SGLang, acompañado de los parches de runtime necesarios para cargarlo. Su propósito declarado no es el asistente generalista, sino tareas de decisión y clasificación estructurada, como se refleja en el conjunto de benchmarks publicado (AG News, TREC coarse, CoLA, RTE, Emotion e IMDb).
+Nyx es un modelo de decisión y clasificación estructurada publicado por el usuario `devanshbatham` en Hugging Face, derivado mediante ajuste específico de tarea del modelo base `Qwen/Qwen3.5-35B-A3B` (revisión `59d61f3ce65a6d9863b86d2e96597125219dc754`). No se distribuye como un checkpoint estándar de Transformers, sino como el checkpoint de producción aceptado en el formato presharded nativo de SGLang, acompañado de los parches de runtime necesarios para cargarlo. Su propósito declarado no es el asistente generalista, sino tareas de decisión y clasificación estructurada, como se refleja en el conjunto de benchmarks publicado (AG News, TREC coarse, CoLA, RTE, Emotion e IMDb).
 
 Arquitectónicamente hereda el MoE de texto de Qwen3.5-35B-A3B, con almacenamiento de expertos enrutados en INT4 por canal, cómputo de expertos en FP8 y capas densas en FP8 dinámico; las activaciones y la caché KV se mantienen en BF16 y el estado SSM en FP32. Esta combinación reduce la huella medida del modelo a 19,43 GB, frente a los 34,58 GB de la variante FP8, con una pérdida medida de 1,00 punto porcentual en la carga de desarrollo H1 (85,65 % frente a 86,65 %).
 
@@ -113,10 +113,10 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devanshbatham/nyx
+- Modelo en Hugging Face: https://huggingface.co/devanshbatham/nyx
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Repositorio del autor con la pasarela System One y clientes tipados: https://github.com/devanshbatham/nyx
-- Autor en HuggingFace: https://huggingface.co/devanshbatham
+- Autor en Hugging Face: https://huggingface.co/devanshbatham
 - Registro de evaluacion incluido en el repositorio: `benchmarks/random-six-report.md`
 - Aviso legal y atribucion incluidos en el repositorio: `NOTICE`
 - Procedencia del checkpoint: `provenance.json`

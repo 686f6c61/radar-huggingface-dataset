@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-code-task00-centre-pilot-v1-14ad7dbd8e61` es un snapshot alojado en HuggingFace por el usuario `davidwdw`. La propia model card lo describe como un "private fleet archive" (archivo privado de flota) asociado a la receta canonica `evaluations/2026-09-23_task00_centre_recovery_pilot`, con nivel o "tier" declarado como `code`. No se trata, por tanto, de un modelo de lenguaje publicado con pesos y tarjeta de evaluacion al uso, sino de un paquete de instantanea vinculado a un proceso interno de evaluacion de tareas de codigo.
+El repositorio `davidwdw/fa-code-task00-centre-pilot-v1-14ad7dbd8e61` es un snapshot alojado en Hugging Face por el usuario `davidwdw`. La propia model card lo describe como un "private fleet archive" (archivo privado de flota) asociado a la receta canonica `evaluations/2026-09-23_task00_centre_recovery_pilot`, con nivel o "tier" declarado como `code`. No se trata, por tanto, de un modelo de lenguaje publicado con pesos y tarjeta de evaluacion al uso, sino de un paquete de instantanea vinculado a un proceso interno de evaluacion de tareas de codigo.
 
 La informacion disponible es extremadamente limitada: no hay pipeline declarado, no hay licencia, no hay idiomas, no hay descripcion de arquitectura, no hay recuento de parametros ni de tokens de contexto, y el repositorio no registra descargas ni interacciones (0 descargas, 0 likes en el momento de la consulta). El unico tag presente es `region:us`. La model card se limita a indicar que los inputs enlazan por symlink a un directorio `public B1k_Rollouts` excluido del paquete, y que debe usarse la revision exacta registrada verificando el fichero `SHA256SUMS`.
 
@@ -92,7 +92,7 @@ No disponible. No se puede establecer una categoria de comparacion porque se des
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v1-14ad7dbd8e61
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v1-14ad7dbd8e61
 - Paper: no disponible.
 - Blog o articulo tecnico: no disponible.
 - Repositorio de codigo: no disponible.

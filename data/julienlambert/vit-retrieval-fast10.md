@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`julienlambert/vit-retrieval-fast10` es un repositorio experimental que contiene una implementación propia de un Vision Transformer (ViT) orientada a tareas de recuperación (retrieval) de imagen-texto. Lo publica el usuario de HuggingFace julienlambert, y su propósito declarado no es servir como modelo entrenado, sino como base de código mínima y manejable para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El checkpoint incluido (`model.safetensors`) es explícitamente una inicialización válida para pruebas de humo (smoke tests), no un modelo con pesos entrenados ni evaluados.
+`julienlambert/vit-retrieval-fast10` es un repositorio experimental que contiene una implementación propia de un Vision Transformer (ViT) orientada a tareas de recuperación (retrieval) de imagen-texto. Lo publica el usuario de Hugging Face julienlambert, y su propósito declarado no es servir como modelo entrenado, sino como base de código mínima y manejable para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El checkpoint incluido (`model.safetensors`) es explícitamente una inicialización válida para pruebas de humo (smoke tests), no un modelo con pesos entrenados ni evaluados.
 
 El modelo es de escala "tiny" y, según los pesos en safetensors, tiene 33.088 parámetros totales. Emplea atención de tipo flash, fusión bilineal, activación approx gelu y normalización scalenorm. La receta de entrenamiento por defecto usa el optimizador lion con un scheduler polinómico, aunque el autor indica que son valores de partida del script y no evidencia de una ejecución completada.
 
@@ -44,7 +44,7 @@ No hay evidencia de que se haya completado un entrenamiento: el propio autor afi
 - Desarrollo de cabeceras de retrieval: prototipar y depurar la lógica de fusión bilineal y de la función de pérdida en un modelo pequeño donde cada iteración es barata.
 - Reproducción de experimentos académicos: replicar una receta concreta (lion + schedule polinómico) y registrar semillas y versiones de entorno junto a los resultados publicados.
 - Evaluación sobre Flickr30k: el autor sugiere explícitamente este conjunto como primera evaluación útil, reportando la métrica de la tarea con al menos tres semillas y una línea base de capacidad comparable.
-- Integración en pipelines de investigación: incorporar el script como módulo dentro de un framework propio, escribiendo el adaptador necesario para las APIs de carga automática de HuggingFace.
+- Integración en pipelines de investigación: incorporar el script como módulo dentro de un framework propio, escribiendo el adaptador necesario para las APIs de carga automática de Hugging Face.
 - Docencia y formación: usar el repositorio como ejemplo didáctico mínimo de cómo se estructura un proyecto ViT de retrieval (config, argumentos de entrenamiento, checkpoint y README).
 
 ## Benchmarks y rendimiento
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| julienlambert/vit-retrieval-fast10 | 33.088 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace (checkpoint de inicialización) |
-| yichenthu/vit-retrieval | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace (repo estructuralmente análogo: config.json, training_args.json, model.safetensors) |
+| julienlambert/vit-retrieval-fast10 | 33.088 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face (checkpoint de inicialización) |
+| yichenthu/vit-retrieval | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face (repo estructuralmente análogo: config.json, training_args.json, model.safetensors) |
 | google-research/vision_transformer (ViT) | no disponible en la información recogida | no disponible | resultados publicados en el repositorio oficial | no disponible en la información recogida | GitHub + pesos oficiales |
 | NVlabs/FasterViT | no disponible en la información recogida | no disponible | ICLR 2024, implementación oficial | no disponible en la información recogida | GitHub |
 
@@ -84,8 +84,8 @@ No se dispone de datos comparativos homogéneos (misma tarea, mismo dataset, mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/julienlambert/vit-retrieval-fast10
-- Perfil del autor en HuggingFace: https://huggingface.co/julienlambert/models
+- Modelo en Hugging Face: https://huggingface.co/julienlambert/vit-retrieval-fast10
+- Perfil del autor en Hugging Face: https://huggingface.co/julienlambert/models
 - Repositorio relacionado (estructura análoga): https://huggingface.co/yichenthu/vit-retrieval/tree/main
 - Vision Transformer oficial (Google Research): https://github.com/google-research/vision_transformer
 - FasterViT (NVlabs, ICLR 2024): https://github.com/NVlabs/FasterViT

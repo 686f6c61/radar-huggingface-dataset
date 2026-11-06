@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5-b725-s3-cma-s2-s3-s4-s5-c2` es una política de control para el juego Tug of War (tira y afloja) de la Microduck Arena, un entorno de competición de robótica mantenido por Pollen Robotics en HuggingFace Spaces. Lo publica el usuario `jrubiosainz` como una modificación de su propia entrada anterior, que a su vez deriva de la política `microduck-tug` del autor `a1rb4Ck`. No es un modelo de lenguaje: es un artefacto de inferencia en formato ONNX que contiene una red neuronal y una tabla de búsqueda (lookup) que la envuelve.
+`microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5-b725-s3-cma-s2-s3-s4-s5-c2` es una política de control para el juego Tug of War (tira y afloja) de la Microduck Arena, un entorno de competición de robótica mantenido por Pollen Robotics en Hugging Face Spaces. Lo publica el usuario `jrubiosainz` como una modificación de su propia entrada anterior, que a su vez deriva de la política `microduck-tug` del autor `a1rb4Ck`. No es un modelo de lenguaje: es un artefacto de inferencia en formato ONNX que contiene una red neuronal y una tabla de búsqueda (lookup) que la envuelve.
 
 La modificación es quirúrgica y de alcance muy limitado. El autor sustituye 129 filas de la tabla `L` —la capa más externa del archivo, que almacena acciones discretas asociadas a observaciones— por filas obtenidas mediante una búsqueda con CMA-ES separable sobre desplazamientos de acción, aplicada a los bouts de clasificación de las semillas 2, 3, 4 y 5. No se ha reentrenado ninguna red ni se ha modificado ningún peso: el grafo, la red subyacente a `L` y el resto de inicializadores son idénticos byte a byte a los de la entrada original.
 
@@ -37,7 +37,7 @@ No hubo entrenamiento en esta modificación. El autor ejecutó una búsqueda CMA
 
 ## Casos de uso
 
-- Competición en la Microduck Arena: la política se sube como entrada al espacio de HuggingFace y se evalúa en los bouts de clasificación de las semillas 1 a 5, donde el autor reporta puntuaciones de replay entre 165,647 y 167,426 cm.
+- Competición en la Microduck Arena: la política se sube como entrada al espacio de Hugging Face y se evalúa en los bouts de clasificación de las semillas 1 a 5, donde el autor reporta puntuaciones de replay entre 165,647 y 167,426 cm.
 - Investigación en optimización de políticas memorizadas: sirve como caso de estudio de búsqueda CMA-ES sobre tablas de lookup en lugar de sobre pesos, con desplazamientos acotados y evaluación contra un oponente congelado.
 - Reproducción de experimentos de la Arena: el archivo `NOTICE` documenta fila a fila qué se eliminó y qué se añadió, lo que permite auditar y replicar la modificación sobre la política base `a1rb4Ck/microduck-tug`.
 - Benchmarking de técnicas de búsqueda directa: comparar el rendimiento de la búsqueda separable por semilla (distintos espaciados de nudos y cotas de desplazamiento) frente a la política original.
@@ -70,10 +70,10 @@ Como referencia, la model card cita los runs clasificados de las políticas base
 
 | Modelo | Parámetros | Contexto | Puntuación clasificada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`jrubiosainz/microduck-game-tug-...-c2`) | no disponible | no disponible | 165,65-167,43 cm (replay por semilla) | Apache 2.0 | HuggingFace |
-| `a1rb4Ck/microduck-tug` (rev. `099ced00`) | no disponible | no disponible | 166,19724988937378 cm | Apache 2.0 | HuggingFace |
-| `a1rb4Ck/microduck-tug` (rev. `f7f7705b`) | no disponible | no disponible | 166,22851252555847 cm | Apache 2.0 | HuggingFace |
-| `a1rb4Ck/microduck-tug` (rev. `3a2eb4e2`) | no disponible | no disponible | 165,4581367969513 cm | Apache 2.0 | HuggingFace |
+| Este modelo (`jrubiosainz/microduck-game-tug-...-c2`) | no disponible | no disponible | 165,65-167,43 cm (replay por semilla) | Apache 2.0 | Hugging Face |
+| `a1rb4Ck/microduck-tug` (rev. `099ced00`) | no disponible | no disponible | 166,19724988937378 cm | Apache 2.0 | Hugging Face |
+| `a1rb4Ck/microduck-tug` (rev. `f7f7705b`) | no disponible | no disponible | 166,22851252555847 cm | Apache 2.0 | Hugging Face |
+| `a1rb4Ck/microduck-tug` (rev. `3a2eb4e2`) | no disponible | no disponible | 165,4581367969513 cm | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ Como referencia, la model card cita los runs clasificados de las políticas base
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5-b725-s3-cma-s2-s3-s4-s5-c2)
+- [Modelo en Hugging Face](https://huggingface.co/jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5-b725-s3-cma-s2-s3-s4-s5-c2)
 - [Microduck Arena (Pollen Robotics)](https://huggingface.co/spaces/pollen-robotics/microduck-arena)
 - [Política base `a1rb4Ck/microduck-tug`](https://huggingface.co/a1rb4Ck/microduck-tug)
 - [Perfil de `a1rb4Ck`](https://huggingface.co/a1rb4Ck)

@@ -72,7 +72,7 @@ No disponible. No se conocen modelos comparables en la informacion proporcionada
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Devatri/anlp-assignment2-part2-lion | no disponible | no disponible | no disponible | no disponible | repositorio HuggingFace, 0 descargas |
+| Devatri/anlp-assignment2-part2-lion | no disponible | no disponible | no disponible | no disponible | repositorio Hugging Face, 0 descargas |
 | Otros checkpoints del mismo experimento (otros optimizadores) | no disponible | no disponible | en `metrics.csv` (valores no publicados) | no disponible | referenciados en `metrics.csv` |
 | Modelos abiertos de la misma escala | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ No disponible. No se conocen modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Devatri/anlp-assignment2-part2-lion
+- Modelo en Hugging Face: https://huggingface.co/Devatri/anlp-assignment2-part2-lion
 - Dataset de entrenamiento referenciado: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - Fichero de metricas del repositorio: https://huggingface.co/Devatri/anlp-assignment2-part2-lion/blob/main/metrics.csv
 - Checkpoint del modelo: https://huggingface.co/Devatri/anlp-assignment2-part2-lion/blob/main/checkpoint.pt

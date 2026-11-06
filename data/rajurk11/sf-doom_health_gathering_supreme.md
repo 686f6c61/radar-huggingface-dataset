@@ -87,7 +87,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada, p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rajurk11/sf-doom_health_gathering_supreme
+- Modelo en Hugging Face: https://huggingface.co/rajurk11/sf-doom_health_gathering_supreme
 - Libreria Sample-Factory (dependencia declarada): no se proporciona enlace en la informacion disponible
 - Curso Deep RL de Hugging Face (contexto de entrenamiento declarado): no se proporciona enlace en la informacion disponible
 - Escenario ViZDoom `health_gathering_supreme`: no se proporciona enlace en la informacion disponible

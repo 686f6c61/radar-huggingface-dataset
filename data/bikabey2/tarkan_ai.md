@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tarkan_ai es un modelo publicado en HuggingFace por el usuario bikabey2 bajo licencia MIT. La model card asociada está prácticamente vacía: solo contiene la declaración de licencia, sin información sobre arquitectura, datos de entrenamiento, capacidades o uso previsto. El repositorio ocupa 8,7 GB, lo que sugiere pesos en precisión de 16 bits para un modelo de aproximadamente 4.000 millones de parámetros, aunque este dato es una inferencia a partir del tamaño del repositorio y no una especificación confirmada por el autor.
+Tarkan_ai es un modelo publicado en Hugging Face por el usuario bikabey2 bajo licencia MIT. La model card asociada está prácticamente vacía: solo contiene la declaración de licencia, sin información sobre arquitectura, datos de entrenamiento, capacidades o uso previsto. El repositorio ocupa 8,7 GB, lo que sugiere pesos en precisión de 16 bits para un modelo de aproximadamente 4.000 millones de parámetros, aunque este dato es una inferencia a partir del tamaño del repositorio y no una especificación confirmada por el autor.
 
 No se dispone de información sobre el pipeline de la tarea, los idiomas soportados, la longitud de contexto ni los formatos de pesos disponibles. El modelo no registra descargas ni interacciones en el momento de la consulta, y su fecha de creación indicada (2026-10-30) es posterior a la fecha actual, lo que apunta a una posible anomalía en los metadatos del repositorio.
 
@@ -84,5 +84,5 @@ No es posible establecer una comparativa fiable porque se desconocen los paráme
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bikabey2/Tarkan_ai
+- Hugging Face: https://huggingface.co/bikabey2/Tarkan_ai
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

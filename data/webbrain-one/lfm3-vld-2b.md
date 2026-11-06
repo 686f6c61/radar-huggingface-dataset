@@ -18,7 +18,7 @@ Es relevante ahora porque demuestra que un modelo de 2 B puede cubrir simultáne
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | BF16 (original), GGUF Q8_0, Q4_K_M y mmproj-F16 (proyector de visión); ONNX decoder_q8f16 y decoder_q4f16 con vision_encoder_fp16 |
 | Idiomas soportados | no disponible |
-| Licencia | `lfm1.0` (etiquetada como `other` en HuggingFace) |
+| Licencia | `lfm1.0` (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (transformers), GGUF (llama.cpp), ONNX (WebGPU) |
 
 ## Arquitectura y entrenamiento
@@ -78,9 +78,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parámetros | Contexto | Resultado en d1 balanced | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| webbrain-one/lfm3-vld-2b | 2,18 B | no disponible | 91,3 % (sonda) / 67,5 % (zero-shot) | lfm1.0 | HuggingFace, GGUF, ONNX |
-| LiquidAI/LFM3-VL-2B (base) | ~2 B | no disponible | 84,1 % (verify zero-shot en la misma prueba) | lfm1.0 | HuggingFace |
-| LiquidAI/d1-2B (backbone) | ~2 B (por nombre) | no disponible | no disponible como sonda en la información dada | lfm1.0 | HuggingFace |
+| webbrain-one/lfm3-vld-2b | 2,18 B | no disponible | 91,3 % (sonda) / 67,5 % (zero-shot) | lfm1.0 | Hugging Face, GGUF, ONNX |
+| LiquidAI/LFM3-VL-2B (base) | ~2 B | no disponible | 84,1 % (verify zero-shot en la misma prueba) | lfm1.0 | Hugging Face |
+| LiquidAI/d1-2B (backbone) | ~2 B (por nombre) | no disponible | no disponible como sonda en la información dada | lfm1.0 | Hugging Face |
 | LFM3-VL-2B-VLD (LoRA distillation) | ~2 B | no disponible | 100 % (126/126) | no disponible | no disponible |
 
 Como referencia externa, el blog de WebBrain compara `LFM3-VL-2B` con WebBrain Compass VLD Tiny v5 (un fine-tune de MiniCPM-V-4.7-1B) sobre 4.857 tareas de BenchKit, con victoria de LFM3 en seis de nueve suites. El método Pegasus se inspira en `AveLabs/Qwen3.8-27B-Perplexing-Pegasus`, un modelo de 27 B no comparable por tamaño.
@@ -102,7 +102,7 @@ Como referencia externa, el blog de WebBrain compara `LFM3-VL-2B` con WebBrain C
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/webbrain-one/lfm3-vld-2b
+- Modelo en Hugging Face: https://huggingface.co/webbrain-one/lfm3-vld-2b
 - GGUF (BF16, Q8_0, Q4_K_M, mmproj-F16): https://huggingface.co/webbrain-one/lfm3-vl-2b-vldr-gguf
 - ONNX WebGPU (decoder_q8f16, decoder_q4f16, vision_encoder_fp16): https://huggingface.co/webbrain-one/lfm3-vl-2b-vldr-onnx
 - Colección del autor: https://huggingface.co/collections/webbrain-one/lfm3-vld-2b

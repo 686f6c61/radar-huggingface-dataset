@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino supervisado (SFT) del modelo monolingüe italiano `goldfish-models/ita_latn_100mb`, entrenado con la librería TRL y publicado en HuggingFace por el usuario `francesca9805`. El checkpoint resultante tiene 124.770.816 parámetros (~125 M) y ocupa 0,3 GB en safetensors, lo que lo sitúa en la categoría de modelos pequeños de investigación, no de propósito general.
+`francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino supervisado (SFT) del modelo monolingüe italiano `goldfish-models/ita_latn_100mb`, entrenado con la librería TRL y publicado en Hugging Face por el usuario `francesca9805`. El checkpoint resultante tiene 124.770.816 parámetros (~125 M) y ocupa 0,3 GB en safetensors, lo que lo sitúa en la categoría de modelos pequeños de investigación, no de propósito general.
 
 El modelo base pertenece a la familia Goldfish, que publica modelos monolingües entrenados con aproximadamente 100 MB de texto por idioma; en este caso el subconjunto es `ita_latn` (italiano en escritura latina). El ajuste se ha realizado con SFT sobre un dataset que el propio nombre del repositorio sugiere de 10 MB empaquetados ("packed") con semilla 3407, aunque la model card no documenta la composición del corpus, el número de tokens ni el proceso de anotación.
 
@@ -25,7 +25,7 @@ Su relevancia es acotada y experimental: sirve como ejemplo reproducible de pipe
 | Librería | transformers |
 | Pipeline | text-generation |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación / actualización (según metadatos de HuggingFace) | 2026-09-22 / 2026-09-22 |
+| Fecha de creación / actualización (según metadatos de Hugging Face) | 2026-09-22 / 2026-09-22 |
 
 ## Arquitectura y entrenamiento
 
@@ -50,7 +50,7 @@ El ajuste se realizó mediante SFT con TRL 0.23.0, sobre Transformers 4.56.2, Py
 - Experimentación académica en modelos monolingües pequeños: sirve para estudiar cómo se comporta un modelo de 125 M parámetros entrenado con ~100 MB de italiano tras un ajuste conversacional, en escenarios de ablación con distintas semillas o volúmenes de datos.
 - Generación de texto italiano de dominio restringido: con un ajuste adicional sobre un corpus propio (legal, técnico, literario), puede emplearse para completar frases o generar borradores cortos, siempre con revisión humana por su tamaño reducido.
 - Prototipado de infraestructura de despliegue: al ser compatible con text-generation-inference y endpoints, resulta útil para validar configuraciones de servido, plantillas de prompt y pipelines de CI/CD antes de migrar a modelos mayores.
-- Docencia y formación técnica: permite ilustrar en un taller el ciclo completo de ajuste, versionado en HuggingFace, registro en W&B y publicación de un modelo, con un coste de cómputo bajo.
+- Docencia y formación técnica: permite ilustrar en un taller el ciclo completo de ajuste, versionado en Hugging Face, registro en W&B y publicación de un modelo, con un coste de cómputo bajo.
 - Pruebas de estrés de tokenizadores y plantillas: útil para comparar el comportamiento del tokenizador del modelo base Goldfish frente a otros tokenizadores en italiano (fertility, tokens por palabra, manejo de acentos y elisiones).
 - Baseline en investigaciones comparativas: como punto de referencia inferior en estudios que midan la ganancia de modelos italianos de mayor tamaño o de mayor volumen de datos.
 - Generación de datos sintéticos auxiliares: con filtrado y verificación posteriores, puede producir plantillas o variaciones de frases en italiano para aumentar datasets de tareas concretas.
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfd_seed3407` | 124.770.816 | no disponible | no disponible (probablemente italiano) | no disponible | HuggingFace, 0 descargas, 0 likes |
-| `goldfish-models/ita_latn_100mb` (modelo base) | no disponible en la información proporcionada (idéntico al ajustado, al ser su base directa) | no disponible | italiano (`ita_latn`) según el identificador | no disponible | HuggingFace |
-| Otros modelos de la familia Goldfish (p. ej. `goldfish-models/eng_latn_100mb`) | no disponible | no disponible | monolingües por identificador de idioma | no disponible | HuggingFace |
-| `GroNLP/gpt2-small-italian` (alternativa italiana de tamaño comparable) | no disponible en la información proporcionada | no disponible | italiano | no disponible | HuggingFace (dato no verificado en la información disponible) |
+| `francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfd_seed3407` | 124.770.816 | no disponible | no disponible (probablemente italiano) | no disponible | Hugging Face, 0 descargas, 0 likes |
+| `goldfish-models/ita_latn_100mb` (modelo base) | no disponible en la información proporcionada (idéntico al ajustado, al ser su base directa) | no disponible | italiano (`ita_latn`) según el identificador | no disponible | Hugging Face |
+| Otros modelos de la familia Goldfish (p. ej. `goldfish-models/eng_latn_100mb`) | no disponible | no disponible | monolingües por identificador de idioma | no disponible | Hugging Face |
+| `GroNLP/gpt2-small-italian` (alternativa italiana de tamaño comparable) | no disponible en la información proporcionada | no disponible | italiano | no disponible | Hugging Face (dato no verificado en la información disponible) |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones, por lo que la comparación se limita a parámetros, idioma declarado y licencia. Cualquier elección entre ellas debería basarse en una evaluación propia sobre la tarea objetivo.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/ita_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/idpqlr6z
 - Repositorio de TRL: https://github.com/huggingface/trl

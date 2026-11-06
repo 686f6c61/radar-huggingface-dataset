@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Burmese-nlp-dkt es un modelo de trazado de conocimiento (knowledge tracing, DKT) hibridado con procesamiento de lenguaje natural, publicado por el autor austin2029 en HuggingFace y asociado al articulo "Integrating Natural Language Processing with Deep Knowledge Tracing in Intelligent Tutoring Systems for Low-Resource Languages: A Case Study on Burmese STEM Curricula", firmado por Aung Ko Ko Oo (Burmese Artificial Intelligence Research Institute & University of the People) y depositado como preprint en Research Square.
+Burmese-nlp-dkt es un modelo de trazado de conocimiento (knowledge tracing, DKT) hibridado con procesamiento de lenguaje natural, publicado por el autor austin2029 en Hugging Face y asociado al articulo "Integrating Natural Language Processing with Deep Knowledge Tracing in Intelligent Tutoring Systems for Low-Resource Languages: A Case Study on Burmese STEM Curricula", firmado por Aung Ko Ko Oo (Burmese Artificial Intelligence Research Institute & University of the People) y depositado como preprint en Research Square.
 
 El modelo no es un modelo generativo de lenguaje, sino un componente de prediccion dentro de un sistema de tutorizacion inteligente (ITS): estima el estado de conocimiento del estudiante a partir de su historial de interacciones y predice su rendimiento futuro, incorporando informacion textual en birmano. La propuesta combina una rama NLP con un trazador profundo, y se evalua contra una linea base "text-blind" (DKT binario sin texto) sobre un conjunto de datos simulado de curriculos STEM birmanos, el dataset custom-simulated-myanmar-stem.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks estandar de modelos de lenguaje (MM
 
 | Modelo | Parametros | Contexto | AUC | RMSE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Full Hybrid NLP-DKT (Burmese-nlp-dkt) | no disponible | no disponible | 0,824 | 0,345 | apache-2.0 | HuggingFace (0 descargas) |
+| Full Hybrid NLP-DKT (Burmese-nlp-dkt) | no disponible | no disponible | 0,824 | 0,345 | apache-2.0 | Hugging Face (0 descargas) |
 | Baseline Text-Blind Binary DKT (referencia del propio articulo) | no disponible | no disponible | 0,762 | 0,412 | no disponible | definida dentro del articulo |
 | Otros trazadores de conocimiento (DKT, SAKT, AKT u similares) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -95,7 +95,7 @@ La informacion proporcionada solo permite comparar contra la linea base declarad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/austin2029/Burmese-nlp-dkt
+- Modelo en Hugging Face: https://huggingface.co/austin2029/Burmese-nlp-dkt
 - Preprint (Research Square), DOI: https://doi.org/10.21203/rs.3.rs-9991485/v1
 - Dataset declarado: custom-simulated-myanmar-stem (sin enlace publico en la informacion disponible)
 - Nota sobre la busqueda web: los resultados recuperados no guardan relacion con el modelo ni con el articulo (corresponden a una plataforma alemana de gestion escolar) y no aportan informacion adicional verificable.

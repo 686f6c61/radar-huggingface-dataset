@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-2-1124-7B-Instruct_SFT_mathv00.06 | 7,3B | 4096 | no disponible | HuggingFace (0 descargas) |
-| allenai/OLMo-2-1124-7B-Instruct (base) | 7,3B | 4096 | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B Instruct | 8B | 128k | Llama 3.1 Community License | HuggingFace / Meta |
-| Qwen2.5 7B Instruct | 7,6B | 128k | Apache 2.0 | HuggingFace |
+| OLMo-2-1124-7B-Instruct_SFT_mathv00.06 | 7,3B | 4096 | no disponible | Hugging Face (0 descargas) |
+| allenai/OLMo-2-1124-7B-Instruct (base) | 7,3B | 4096 | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B Instruct | 8B | 128k | Llama 3.1 Community License | Hugging Face / Meta |
+| Qwen2.5 7B Instruct | 7,6B | 128k | Apache 2.0 | Hugging Face |
 
 Frente al OLMo-2-1124-7B-Instruct original, este checkpoint se diferencia unicamente por el SFT sobre la mezcla de matematicas y seguridad; no hay datos de rendimiento publicados que permitan afirmar mejoras. Frente a alternativas como Llama 3.1 8B Instruct o Qwen2.5 7B Instruct, su principal desventaja es la ventana de contexto mas corta (4096 frente a 128k) y la ausencia de benchmarks, aunque mantiene la ventaja de ser un modelo abierto y reproducible de la familia OLMo 2. No se dispone de resultados de evaluacion comparativos.
 
@@ -86,7 +86,7 @@ Frente al OLMo-2-1124-7B-Instruct original, este checkpoint se diferencia unicam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Neelectric/OLMo-2-1124-7B-Instruct_SFT_mathv00.06
+- Modelo en Hugging Face: https://huggingface.co/Neelectric/OLMo-2-1124-7B-Instruct_SFT_mathv00.06
 - Modelo base: https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Neelectric/Replay_0.01.OpenR1-Math-220k_all.wildguardmix.Olmo2_4096toks
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/neelectric/open-r1_safety/runs/z7q2iw4t

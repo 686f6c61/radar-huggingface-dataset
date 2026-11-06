@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) ni de especificac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trymirai/Qwen3.5-4B-M
+- Modelo en Hugging Face: https://huggingface.co/trymirai/Qwen3.5-4B-M
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Model card del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/README.md
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-aurevo-ai-gguf es un repositorio de pesos en formato GGUF publicado por el usuario Lo-llol12 en HuggingFace. Se trata de una conversión a GGUF, realizada con Unsloth, de un modelo derivado de Qwen3-8B, tal y como indican el tag `qwen3` y el nombre del único archivo publicado: `Huihui-Qwen3-8B-abliterated-v2.Q4_K_M.gguf`. El recuento de parámetros declarado en los metadatos del repositorio es de 8.190.735.360 (aproximadamente 8.190 millones), coherente con un transformer denso de la familia Qwen3-8B.
+aurevo-ai-gguf es un repositorio de pesos en formato GGUF publicado por el usuario Lo-llol12 en Hugging Face. Se trata de una conversión a GGUF, realizada con Unsloth, de un modelo derivado de Qwen3-8B, tal y como indican el tag `qwen3` y el nombre del único archivo publicado: `Huihui-Qwen3-8B-abliterated-v2.Q4_K_M.gguf`. El recuento de parámetros declarado en los metadatos del repositorio es de 8.190.735.360 (aproximadamente 8.190 millones), coherente con un transformer denso de la familia Qwen3-8B.
 
 El interés del modelo reside en su formato: al distribuirse únicamente como GGUF cuantizado en Q4_K_M, está pensado para inferencia local con llama.cpp y sus derivados (Ollama, LM Studio, koboldcpp), sin necesidad de GPU de datacenter ni de servidores de inferencia de alto rendimiento. La referencia "abliterated" en el nombre del archivo apunta a un modelo al que se le han eliminado o atenuado las capas de rechazo (refusal) mediante técnicas de *abliteration*, y el prefijo "aurevo-ai" sugiere un ajuste adicional sobre esa base, aunque el repositorio no documenta ni el proceso de fine-tuning ni la receta de datos empleada.
 
@@ -61,7 +61,7 @@ El repositorio no incluye evaluaciones de MMLU, HumanEval, GSM8K, MT-Bench ni de
 - VRAM practica recomendada: 8 GB para contexto corto (hasta 8k) y 12-16 GB para contexto largo (32k) con cache KV en fp16. Cuantizando la cache KV a q8_0 se reduce aproximadamente a la mitad el coste de contexto.
 - GPU recomendadas: cualquier GPU con 8 GB o mas de VRAM (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090, L4, A10G). En A100 o H100 funciona, pero esta enormemente sobredimensionada para un modelo de 8B en Q4.
 - Compatibilidad con GPU de consumo: si. Cabe en RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB, RTX 4070/4080/4090 y en equipos Apple Silicon con memoria unificada de 16 GB o mas. En GPUs de 8 GB funciona con contexto reducido. En CPU pura es viable con 8-16 GB de RAM, a velocidades de pocos tokens por segundo.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama, LM Studio, koboldcpp, text-generation-webui y cualquier frontend compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace, aunque el formato GGUF no es el nativo de TGI. vLLM y SGLang no cargan GGUF de forma nativa en sus configuraciones habituales; requeririan conversion a safetensors, que este repositorio no publica.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama, LM Studio, koboldcpp, text-generation-webui y cualquier frontend compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face, aunque el formato GGUF no es el nativo de TGI. vLLM y SGLang no cargan GGUF de forma nativa en sus configuraciones habituales; requeririan conversion a safetensors, que este repositorio no publica.
 - Latencia y throughput estimados: no disponibles. No hay mediciones del autor, del repositorio ni de terceros.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ Los datos de la columna de rendimiento corresponden a los modelos de referencia 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lo-llol12/aurevo-ai-gguf
+- Repositorio Hugging Face: https://huggingface.co/Lo-llol12/aurevo-ai-gguf
 - Unsloth (herramienta usada para el ajuste y la conversion a GGUF): https://github.com/unslothai/unsloth
 - llama.cpp (backend de inferencia indicado en la model card): https://github.com/ggml-org/llama.cpp
 - Posible modelo base, inferido del nombre del archivo y no verificado desde este repositorio: https://huggingface.co/huihui-ai/Huihui-Qwen3-8B-abliterated-v2

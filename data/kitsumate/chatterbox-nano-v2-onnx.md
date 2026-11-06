@@ -105,7 +105,7 @@ Los datos de parametros, contexto y rendimiento de las alternativas no estan dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KitsuMate/chatterbox-nano-v2-onnx
+- Modelo en Hugging Face: https://huggingface.co/KitsuMate/chatterbox-nano-v2-onnx
 - Modelo base: https://huggingface.co/ResembleAI/chatterbox-nano
 - Conversion alternativa del mismo autor: https://huggingface.co/KitsuMate/chatterbox-nano-onnx
 - Repositorio fuente del decodificador mean-flow: https://huggingface.co/KitsuMate/chatterbox-turbo-onnx

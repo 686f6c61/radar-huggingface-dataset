@@ -88,5 +88,5 @@ La comparativa se basa en caracteristicas publicas de modelos de tamano similar;
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Karasumikura/Ying-K1-Lite-0.2B
+- Modelo en Hugging Face: https://huggingface.co/Karasumikura/Ying-K1-Lite-0.2B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / geometría | Estrategia de contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `hmkang/wam_ctxpool_bmethod` (este) | ~5 000 M (base Wan2.2-TI2V-5B) + cabeza de acción 48 articulaciones | 25 fotogramas de entrada, 41 de salida, 576 tokens por fila | Pooling de 3 latentes pasados antes de L3 o L6, sobre receta B-method | Apache 2.0 | Público en HuggingFace |
-| `hmkang/wam_ctxpool_xattn` | No disponible | No disponible | Variante sustituta (*surrogate*) con cross-attention | No disponible | Público en HuggingFace |
-| `hmkang/wam_ctxpool_avg` | No disponible | No disponible | Variante sustituta (*surrogate*) con promedio | No disponible | Público en HuggingFace |
+| `hmkang/wam_ctxpool_bmethod` (este) | ~5 000 M (base Wan2.2-TI2V-5B) + cabeza de acción 48 articulaciones | 25 fotogramas de entrada, 41 de salida, 576 tokens por fila | Pooling de 3 latentes pasados antes de L3 o L6, sobre receta B-method | Apache 2.0 | Público en Hugging Face |
+| `hmkang/wam_ctxpool_xattn` | No disponible | No disponible | Variante sustituta (*surrogate*) con cross-attention | No disponible | Público en Hugging Face |
+| `hmkang/wam_ctxpool_avg` | No disponible | No disponible | Variante sustituta (*surrogate*) con promedio | No disponible | Público en Hugging Face |
 | Wan2.2-TI2V-5B (base original) | ~5 000 M | Generación de video texto-imagen a video | Sin cabeza de acción ni pooling de contexto robótico | No disponible en esta fuente | Público (modelo base) |
 
 Advertencia del propio autor: las dos variantes `xattn` y `avg` pertenecen a la línea sustituta, con una base más antigua y `pd8` x `GA1`, por lo que no deben compararse directamente con este repositorio. No se dispone de datos de rendimiento comparativo entre ellas.
@@ -94,7 +94,7 @@ Advertencia del propio autor: las dos variantes `xattn` y `avg` pertenecen a la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmkang/wam_ctxpool_bmethod
+- Modelo en Hugging Face: https://huggingface.co/hmkang/wam_ctxpool_bmethod
 - Código asociado: https://github.com/HEMMO0208/wam (rama `ctxpool-bmethod`)
 - Archivo de implementación: `gr00t/model/wam_dit4dit/wan22_ctxpool.py` dentro del repositorio anterior
 - Variante relacionada (línea sustituta, no comparable): https://huggingface.co/hmkang/wam_ctxpool_xattn

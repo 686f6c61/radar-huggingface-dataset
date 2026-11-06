@@ -66,7 +66,7 @@ No se dispone de datos numéricos de modelos comparables en la información prop
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FactEmbed (WJ0830) | 7.000 M (base Qwen2.5-VL-7B-Instruct) | no disponible | apache-2.0 | HuggingFace (WJ0830/factembed) |
+| FactEmbed (WJ0830) | 7.000 M (base Qwen2.5-VL-7B-Instruct) | no disponible | apache-2.0 | Hugging Face (WJ0830/factembed) |
 | Alternativas de CIR | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,6 +83,6 @@ No se dispone de datos numéricos de modelos comparables en la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WJ0830/factembed
+- Modelo en Hugging Face: https://huggingface.co/WJ0830/factembed
 - Demo (Space): https://huggingface.co/spaces/WJ0830/factembed
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct

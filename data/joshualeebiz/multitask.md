@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshualeebiz/multitask` es un repositorio de HuggingFace publicado por el usuario joshualeebiz que contiene una implementación propia y autocontenida de una arquitectura **PoolFormer** orientada a tareas multitarea. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la propia model card indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo y que no se reclama ninguna puntuación de benchmark. El repositorio se presenta como un punto de partida reproducible para experimentación, no como un artefacto final.
+`joshualeebiz/multitask` es un repositorio de Hugging Face publicado por el usuario joshualeebiz que contiene una implementación propia y autocontenida de una arquitectura **PoolFormer** orientada a tareas multitarea. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la propia model card indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo y que no se reclama ninguna puntuación de benchmark. El repositorio se presenta como un punto de partida reproducible para experimentación, no como un artefacto final.
 
 El tamaño real declarado en los metadatos de safetensors es de 33.088 parámetros, una magnitud extremadamente reducida (el repositorio ocupa 0,0 GB) que confirma su naturaleza de esqueleto de código más que de modelo funcional. La variante descrita en la documentación es la escala "large" de la implementación del autor, con atención dispersa, fusión de bajo rango, activación aproximada GELU y normalización por batchnorm. Se distribuye bajo licencia Apache 2.0.
 
@@ -85,7 +85,7 @@ No se dispone de datos verificables en la información proporcionada para establ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshualeebiz/multitask
+- Hugging Face: https://huggingface.co/joshualeebiz/multitask
 - Archivos incluidos en el repositorio: `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo: los enlaces encontrados corresponden a dominios de contenido para adultos sin relación alguna con el repositorio, por lo que se omiten deliberadamente.
 - No se dispone de enlace a paper, blog técnico, repositorio de código adicional ni demo asociados a este modelo en la información proporcionada.

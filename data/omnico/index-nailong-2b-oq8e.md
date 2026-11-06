@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Index-Nailong-2B-oQ8e es una cuantización mixta del modelo base Index-Nailong-2B, publicada por el usuario Omnico en HuggingFace. Se trata de un checkpoint de 2.213.241.664 parámetros (2,21 mil millones) que combina pesos en 8 bits afín con grupo de 64 y pesos en BF16, dando como resultado un peso efectivo medio de 9,625 bits por parámetro. El artefacto está empaquetado en formato MLX, la librería de Apple para ejecución de modelos en silicio de la compañía (M1/M2/M3/M4), y ocupa 2,7 GB en el repositorio.
+Index-Nailong-2B-oQ8e es una cuantización mixta del modelo base Index-Nailong-2B, publicada por el usuario Omnico en Hugging Face. Se trata de un checkpoint de 2.213.241.664 parámetros (2,21 mil millones) que combina pesos en 8 bits afín con grupo de 64 y pesos en BF16, dando como resultado un peso efectivo medio de 9,625 bits por parámetro. El artefacto está empaquetado en formato MLX, la librería de Apple para ejecución de modelos en silicio de la compañía (M1/M2/M3/M4), y ocupa 2,7 GB en el repositorio.
 
 El modelo base pertenece a la familia Qwen 3.5 según la etiqueta `qwen3_5` incluida en los metadatos, e incorpora un componente de visión de 0,331B parámetros junto al modelo de lenguaje de 1,882B. La cuantización se realizó con oQ (oMLX v0.7.3), una herramienta de cuantización de precisión mixta del repositorio jundot/omlx. La model card indica que se actualizó el 2 de noviembre de 2026 y recomienda volver a descargar si se tenía una copia anterior.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Index-Nailong-2B-oQ8e (este) | 2,21B (9,625 bits/peso) | no disponible | MLX safetensors | no disponible | HuggingFace (Omnico) |
+| Index-Nailong-2B-oQ8e (este) | 2,21B (9,625 bits/peso) | no disponible | MLX safetensors | no disponible | Hugging Face (Omnico) |
 | Modelo base Index-Nailong-2B | 2,21B (BF16 presumiblemente) | no disponible | no disponible | no disponible | no disponible en la información |
 | Otras cuantizaciones del mismo base | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -80,7 +80,7 @@ No se dispone de información suficiente para comparar con alternativas de la mi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Omnico/Index-Nailong-2B-oQ8e
+- Hugging Face: https://huggingface.co/Omnico/Index-Nailong-2B-oQ8e
 - Repositorio de oQ / oMLX: https://github.com/jundot/omlx
 - Modelo base Index-Nailong-2B: no disponible en la información proporcionada
 - Paper, blog o demo del modelo: no disponible

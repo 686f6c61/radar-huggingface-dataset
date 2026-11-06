@@ -72,7 +72,7 @@ No se dispone de información de comparación con otros modelos en la fuente. Co
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/888rok/gemma-4-E2B-it-wllama-split)
+- [Modelo en Hugging Face](https://huggingface.co/888rok/gemma-4-E2B-it-wllama-split)
 - [Modelo base GGUF de Unsloth](https://huggingface.co/unsloth/gemma-4-E2B-it-GGUF)
 - [Página de Gemma 4 en DeepMind](https://deepmind.google/models/gemma/gemma-4/)
 - [Receta de vLLM para Gemma 4 E2B](https://recipes.vllm.ai/Google/gemma-4-E2B-it)

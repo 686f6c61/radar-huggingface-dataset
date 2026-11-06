@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Pumpkin-2B es un adaptador LoRA publicado por el usuario de HuggingFace Heimfisch, entrenado sobre el modelo base Qwen/Qwen3.5-2B-Base. No se trata por tanto de un modelo con pesos completos, sino de un conjunto de matrices de bajo rango (formato PEFT) que debe cargarse junto al modelo base o fusionarse con él antes de su uso. El repositorio ocupa 0,2 GB y se distribuye en safetensors, con la librería PEFT 0.21.0 como framework declarado.
+Pumpkin-2B es un adaptador LoRA publicado por el usuario de Hugging Face Heimfisch, entrenado sobre el modelo base Qwen/Qwen3.5-2B-Base. No se trata por tanto de un modelo con pesos completos, sino de un conjunto de matrices de bajo rango (formato PEFT) que debe cargarse junto al modelo base o fusionarse con él antes de su uso. El repositorio ocupa 0,2 GB y se distribuye en safetensors, con la librería PEFT 0.21.0 como framework declarado.
 
-La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: no incluye descripción, datos de entrenamiento, hiperparámetros, resultados de evaluación ni información sobre sesgos. Tampoco se declaran licencia ni idiomas soportados. El único contexto técnico disponible es el conjunto de etiquetas del repositorio (peft, lora, transformers, text-generation, conversational) y la referencia al modelo base del que parte.
+La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: no incluye descripción, datos de entrenamiento, hiperparámetros, resultados de evaluación ni información sobre sesgos. Tampoco se declaran licencia ni idiomas soportados. El único contexto técnico disponible es el conjunto de etiquetas del repositorio (peft, lora, transformers, text-generation, conversational) y la referencia al modelo base del que parte.
 
 Por tanto, esta ficha es necesariamente incompleta: la mayor parte de los apartados se marcan como "no disponible" porque no existe documentación pública verificable. El modelo acumula 0 descargas y 0 "me gusta" en el momento de la consulta, por lo que no hay validación comunitaria ni informes de terceros que permitan contrastar su comportamiento real.
 
@@ -78,8 +78,8 @@ No es posible establecer una comparativa de rendimiento: no hay ningún resultad
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Heimfisch/Pumpkin-2B | Adaptador LoRA sobre Qwen3.5-2B-Base | no disponible (base de ~2B según nomenclatura) | no disponible | no disponible | Repositorio HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-2B-Base | Modelo completo (base) | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Repositorio HuggingFace (referenciado como base) |
+| Heimfisch/Pumpkin-2B | Adaptador LoRA sobre Qwen3.5-2B-Base | no disponible (base de ~2B según nomenclatura) | no disponible | no disponible | Repositorio Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-2B-Base | Modelo completo (base) | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Repositorio Hugging Face (referenciado como base) |
 | Otros adaptadores LoRA de la misma categoría | Adaptador LoRA | no disponible | no disponible | variable | no disponible |
 
 No se dispone de datos suficientes para comparar con alternativas concretas de la misma categoría (por ejemplo, otros ajustes de instrucciones de la franja de 1-3 mil millones de parámetros). Cualquier comparación de calidad requeriría ejecutar una evaluación propia sobre el mismo conjunto de pruebas.
@@ -100,7 +100,7 @@ No se dispone de datos suficientes para comparar con alternativas concretas de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Heimfisch/Pumpkin-2B
+- Modelo en Hugging Face: https://huggingface.co/Heimfisch/Pumpkin-2B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Artículo citado en la plantilla de la model card (Lacoste et al., 2019, sobre estimación de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de aprendizaje automático, enlazada en la plantilla: https://mlco2.github.io/impact

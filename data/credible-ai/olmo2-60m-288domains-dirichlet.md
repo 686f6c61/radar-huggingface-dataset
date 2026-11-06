@@ -23,7 +23,7 @@ Su relevancia es metodológica: permiten barridos masivos de mezclas de datos co
 | Tokens de entrenamiento | 2.000 millones por modelo |
 | Tamaño del repositorio | 118 GB |
 | Framework | transformers; entrenamiento con OLMo-core |
-| Fecha de publicación | 27 de octubre de 2026, según HuggingFace |
+| Fecha de publicación | 27 de octubre de 2026, según Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Datos de benchmark |
 |---|---|---|---|---|---|
-| `credible-ai/olmo2-60M-288domains-dirichlet` | 57,6 M por modelo, 1.024 modelos | no disponible | MIT | HuggingFace | no disponibles |
-| `credible-ai/olmo2-30M-288domains-dirichlet` | denominación de 30 M, mismo diseño | no disponible | no disponible en la información consultada | HuggingFace | no disponibles |
+| `credible-ai/olmo2-60M-288domains-dirichlet` | 57,6 M por modelo, 1.024 modelos | no disponible | MIT | Hugging Face | no disponibles |
+| `credible-ai/olmo2-30M-288domains-dirichlet` | denominación de 30 M, mismo diseño | no disponible | no disponible en la información consultada | Hugging Face | no disponibles |
 | Pythia-70M | 70 M | no disponible en la información consultada | no disponible en la información consultada | no disponible en la información consultada | no disponibles |
 
 La comparación con alternativas de propósito general queda limitada porque este repositorio no es un modelo único, sino una familia de proxies para experimentación sobre mezclas de datos; no se dispone de métricas comunes que permitan situarlo frente a modelos base de tamaño parecido.

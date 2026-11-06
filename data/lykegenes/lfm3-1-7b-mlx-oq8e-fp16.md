@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-MLX-oQ8e-fp16 es una version cuantizada del modelo LFM3 de 1.700 millones de parametros, publicada por el usuario Lykegenes en HuggingFace. Se trata de una conversion realizada con la herramienta oQ (oMLX v0.7.3), que aplica cuantizacion de precision mixta para producir un checkpoint optimizado para el framework MLX de Apple. El resultado es un modelo de 1.728.801.536 parametros almacenado en 1,711 GiB, con una media efectiva de 8,502 bits por peso.
+LFM3-1.7B-MLX-oQ8e-fp16 es una version cuantizada del modelo LFM3 de 1.700 millones de parametros, publicada por el usuario Lykegenes en Hugging Face. Se trata de una conversion realizada con la herramienta oQ (oMLX v0.7.3), que aplica cuantizacion de precision mixta para producir un checkpoint optimizado para el framework MLX de Apple. El resultado es un modelo de 1.728.801.536 parametros almacenado en 1,711 GiB, con una media efectiva de 8,502 bits por peso.
 
 La practica totalidad de los pesos (99,978%) se almacena en formato afín de 8 bits con grupos de 64 elementos, mientras que un residual minimo (0,022%) se conserva en FP16. Esta distribucion busca preservar la calidad del modelo original reduciendo el espacio en disco y la memoria necesaria para inferencia en hardware Apple Silicon, donde MLX aprovecha la memoria unificada.
 
@@ -80,5 +80,5 @@ No se dispone de informacion suficiente para comparar con alternativas de otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lykegenes/LFM3-1.7B-MLX-oQ8e-fp16
+- Hugging Face: https://huggingface.co/Lykegenes/LFM3-1.7B-MLX-oQ8e-fp16
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx

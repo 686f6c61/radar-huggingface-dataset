@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`neuro_sync_ai` (identificador `swordenamine/neuro_sync_ai`) es un artefacto publicado en HuggingFace por el autor `swordenamine` que se presenta, según su propia model card, como un «motor de predicción de intención del desarrollador». No es un modelo de lenguaje: la propuesta consiste en capturar señales de microcomportamiento durante la escritura de código (pausas antes de teclear un token, secuencias de borrado y reescritura, ritmo de pulsaciones, movimiento del cursor) y construir con ellas un perfil conductual persistente por desarrollador, a partir del cual un modelo basado en LSTM predice el estado de intención y genera sugerencias estructurales.
+`neuro_sync_ai` (identificador `swordenamine/neuro_sync_ai`) es un artefacto publicado en Hugging Face por el autor `swordenamine` que se presenta, según su propia model card, como un «motor de predicción de intención del desarrollador». No es un modelo de lenguaje: la propuesta consiste en capturar señales de microcomportamiento durante la escritura de código (pausas antes de teclear un token, secuencias de borrado y reescritura, ritmo de pulsaciones, movimiento del cursor) y construir con ellas un perfil conductual persistente por desarrollador, a partir del cual un modelo basado en LSTM predice el estado de intención y genera sugerencias estructurales.
 
 El planteamiento se aleja del autocompletado por predicción del siguiente token: el sistema clasifica el estado del desarrollador en una máquina de estados (`EXPLORING`, `DESIGNING`, `IMPLEMENTING`, `DEBUGGING`, `REFACTORING`) y decide cuándo intervenir y cuándo mantenerse en silencio. La model card describe además una arquitectura de paquete Python con módulos de captura de tecleo, análisis de patrones, estimación de carga cognitiva, API REST, puente WebSocket y un ejemplo de extensión para VS Code.
 
@@ -17,8 +17,8 @@ La relevancia potencial está en el cruce de dinámica de tecleo, teoría de la 
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible (no se documenta ventana de observación ni de código; el ejemplo de la API menciona observar pulsaciones durante 30 segundos antes de predecir) |
 | Tipos de cuantización | No disponible (no se documentan pesos, cuantizaciones ni formatos de exportación) |
-| Idiomas soportados | No disponible en los metadatos de HuggingFace; la model card está redactada en inglés y no declara cobertura lingüística |
-| Licencia | La model card indica MIT (Copyright 2026, autor citado como `swordenkisk`); los metadatos de HuggingFace indican «no disponible». Discrepancia sin resolver |
+| Idiomas soportados | No disponible en los metadatos de Hugging Face; la model card está redactada en inglés y no declara cobertura lingüística |
+| Licencia | La model card indica MIT (Copyright 2026, autor citado como `swordenkisk`); los metadatos de Hugging Face indican «no disponible». Discrepancia sin resolver |
 | Formato de pesos | No disponible; se menciona un perfil de desarrollador persistente con extensión `.nsp` (`~/.neuro/my_profile.nsp`), sin especificar serialización ni cifrado concreto |
 | Autor | `swordenamine` (la model card atribuye la autoría a `swordenkisk`) |
 | Pipeline declarado | No disponible |
@@ -88,7 +88,7 @@ La diferencia relevante no es de escala sino de señal de entrada: los asistente
 - Ausencia total de evaluación: no hay métricas de precisión de clasificación de intención, de latencia ni de tasa de aceptación, por lo que no es posible comparar su utilidad con la de un autocompletado convencional.
 - Afirmaciones no verificables: la model card se presenta como «el primer sistema» y sostiene que la combinación de dominios «nunca se ha hecho antes», sin referencia bibliográfica ni revisión por pares.
 - Reproducibilidad: no se documentan datos de entrenamiento, hiperparámetros, semillas ni procedimiento de ajuste del modelo LSTM; el paquete depende de un perfil entrenado por usuario, de modo que los resultados no son transferibles entre desarrolladores.
-- Incoherencias de metadatos: la fecha de creación (2026-10-17) es posterior a la de actualización (2026-03-06); la licencia MIT de la model card no figura en los metadatos de HuggingFace; el autor aparece como `swordenamine` en el identificador y como `swordenkisk` en el texto. Verificar el fichero LICENSE antes de cualquier uso comercial.
+- Incoherencias de metadatos: la fecha de creación (2026-10-17) es posterior a la de actualización (2026-03-06); la licencia MIT de la model card no figura en los metadatos de Hugging Face; el autor aparece como `swordenamine` en el identificador y como `swordenkisk` en el texto. Verificar el fichero LICENSE antes de cualquier uso comercial.
 - Riesgo de clasificación errónea: un estado de intención mal inferido puede producir sugerencias intrusivas precisamente en momentos de concentración; la documentación no describe umbrales, calibración ni mecanismo de desactivación por falsos positivos.
 - Privacidad y datos biométricos: la captura de dinámica de tecleo a resolución de milisegundos puede constituir dato biométrico conforme al RGPD, con requisitos de base jurídica y consentimiento explícito. La model card afirma que todo queda en local y cifrado en el dispositivo, pero no especifica algoritmo de cifrado, gestión de claves ni retención.
 - Riesgo de vigilancia en el despliegue empresarial: la hoja de ruta incluye sincronización de intención en equipo y una API empresarial de analítica de intención; sin garantías técnicas ni contractuales, ese uso puede derivar en monitorización de productividad individual.
@@ -98,7 +98,7 @@ La diferencia relevante no es de escala sino de señal de entrada: los asistente
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/neuro_sync_ai
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/neuro_sync_ai
 - Perfil de GitHub citado en la model card: https://github.com/swordenkisk
 - Documentación referenciada dentro del paquete (rutas relativas, sin URL pública verificada): `docs/ARCHITECTURE.md`, `docs/RESEARCH.md`, `docs/PRIVACY.md`
 - Ejemplo de integración con editor referenciado en el paquete: `examples/vscode_extension/`

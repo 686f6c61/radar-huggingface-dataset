@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CorX3.8-27B es un modelo de lenguaje de 26.895.998.464 parámetros (aproximadamente 26,9 mil millones) desarrollado por el usuario Sigmandndnns, cuya versión original está disponible en HuggingFace bajo el identificador `Sigmandndnns/CorX3.8-27B`. El repositorio que nos ocupa, `mradermacher/CorX3.8-27B-GGUF`, contiene cuantizaciones en formato GGUF realizadas por mradermacher, un conocido cuantizador de la comunidad, para facilitar la ejecución del modelo en entornos con recursos limitados mediante herramientas como llama.cpp, Ollama o text-generation-inference.
+CorX3.8-27B es un modelo de lenguaje de 26.895.998.464 parámetros (aproximadamente 26,9 mil millones) desarrollado por el usuario Sigmandndnns, cuya versión original está disponible en Hugging Face bajo el identificador `Sigmandndnns/CorX3.8-27B`. El repositorio que nos ocupa, `mradermacher/CorX3.8-27B-GGUF`, contiene cuantizaciones en formato GGUF realizadas por mradermacher, un conocido cuantizador de la comunidad, para facilitar la ejecución del modelo en entornos con recursos limitados mediante herramientas como llama.cpp, Ollama o text-generation-inference.
 
 El modelo base está licenciado bajo Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas. Según la información disponible, el modelo está orientado a tareas conversacionales y de generación de texto en inglés. Sin embargo, la model card del autor original no proporciona detalles sobre arquitectura, datos de entrenamiento ni capacidades específicas, por lo que gran parte de las especificaciones técnicas quedan sin documentar.
 

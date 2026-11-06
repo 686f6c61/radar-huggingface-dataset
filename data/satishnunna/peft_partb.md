@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SatishNunna/PEFT_Partb es un repositorio alojado en HuggingFace por el usuario SatishNunna, etiquetado con las librerías `transformers` y `safetensors`. La model card publicada es la plantilla por defecto autogenerada por el Hub, en la que todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen como "[More Information Needed]". No hay ninguna descripción funcional del modelo, ni pesos documentados, ni métricas publicadas.
+SatishNunna/PEFT_Partb es un repositorio alojado en Hugging Face por el usuario SatishNunna, etiquetado con las librerías `transformers` y `safetensors`. La model card publicada es la plantilla por defecto autogenerada por el Hub, en la que todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen como "[More Information Needed]". No hay ninguna descripción funcional del modelo, ni pesos documentados, ni métricas publicadas.
 
 El repositorio presenta características que impiden clasificarlo con rigor: el tamano declarado es 0.0 GB, lo que sugiere que no contiene pesos reales o que estos no se subieron correctamente, pese a la etiqueta `safetensors`. Registra 0 descargas y 0 likes, y tanto su creación como su última actualización datan del 2026-10-15. El nombre "PEFT_Partb" apunta a un experimento de ajuste fino con Parameter-Efficient Fine-Tuning, pero se trata de una inferencia a partir del nombre, no de un dato confirmado por el autor.
 
@@ -81,7 +81,7 @@ No disponible. Al no conocerse la arquitectura, el número de parámetros, la ta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SatishNunna/PEFT_Partb
+- Repositorio en Hugging Face: https://huggingface.co/SatishNunna/PEFT_Partb
 - Artículo citado en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculador de impacto medioambiental ML CO2: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la información proporcionada.

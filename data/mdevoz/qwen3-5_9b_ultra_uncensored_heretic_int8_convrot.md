@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mdevoz/qwen3.5_9b_ultra_uncensored_heretic_int8_convrot` es un derivado comunitario del modelo base Qwen3.5-9B publicado en HuggingFace por el usuario mdevoz. El nombre del repositorio describe con bastante precisión la cadena de transformaciones aplicadas: un proceso de eliminación de censura mediante la herramienta Heretic, seguido de una cuantización a INT8 con una variante de rotación previa identificada como `convrot`. El resultado es un checkpoint de aproximadamente 9,7 GB, coherente con un modelo denso de unos 9.000 millones de parámetros almacenado a 8 bits.
+`mdevoz/qwen3.5_9b_ultra_uncensored_heretic_int8_convrot` es un derivado comunitario del modelo base Qwen3.5-9B publicado en Hugging Face por el usuario mdevoz. El nombre del repositorio describe con bastante precisión la cadena de transformaciones aplicadas: un proceso de eliminación de censura mediante la herramienta Heretic, seguido de una cuantización a INT8 con una variante de rotación previa identificada como `convrot`. El resultado es un checkpoint de aproximadamente 9,7 GB, coherente con un modelo denso de unos 9.000 millones de parámetros almacenado a 8 bits.
 
 La relevancia de esta ficha es doble. Por un lado, documenta un ejemplo típico del ecosistema de fine-tunes "uncensored" que proliferan alrededor de las familias Qwen: la tarjeta del modelo está prácticamente vacía (solo la etiqueta `region:us`, sin licencia, sin idiomas declarados y sin pipeline asignado), de modo que toda evaluación técnica debe inferirse del nombre del repositorio, del tamaño de los archivos y del conocimiento del modelo base. Por otro lado, la combinación Heretic + INT8 rotado es interesante desde el punto de vista de ingeniería: permite ejecutar un modelo de 9B en GPUs de consumo con pérdida de calidad potencialmente contenida gracias a las rotaciones aplicadas antes de cuantizar.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mdevoz/qwen3.5_9b_ultra_uncensored_heretic_int8_convrot | ~9B | no disponible | INT8 convrot | no disponible | HuggingFace, 0 descargas, 13 likes |
+| mdevoz/qwen3.5_9b_ultra_uncensored_heretic_int8_convrot | ~9B | no disponible | INT8 convrot | no disponible | Hugging Face, 0 descargas, 13 likes |
 | Qwen3.5-9B (base) | ~9B | no disponible | BF16 original | no disponible en la informacion | Referencia upstream |
-| Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-MTP-GGUF-NVFP4 | ~9B | no disponible | GGUF + NVFP4 | no disponible | HuggingFace (AIconjured) |
-| Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF | ~9B | no disponible | GGUF (IMATRIX) | no disponible | HuggingFace, difundido en localainews |
+| Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-MTP-GGUF-NVFP4 | ~9B | no disponible | GGUF + NVFP4 | no disponible | Hugging Face (AIconjured) |
+| Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF | ~9B | no disponible | GGUF (IMATRIX) | no disponible | Hugging Face, difundido en localainews |
 
 Las tres alternativas comparten el mismo modelo base y la misma filosofía de abliteración, por lo que la diferencia práctica se reduce al formato de cuantización: GGUF para llama.cpp y Ollama, NVFP4 para GPUs Blackwell, e INT8 rotado en este caso para despliegues con vLLM o transformers. No hay datos públicos de rendimiento que permitan ordenarlas por calidad.
 

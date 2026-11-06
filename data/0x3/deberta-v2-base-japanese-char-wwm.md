@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `0x3/deberta-v2-base-japanese-char-wwm` es un encoder DeBERTa V2 en su variante base, preentrenado con objetivos de masked language modeling (MLM) sobre texto en japones. Lo desarrolla originalmente el grupo de procesamiento de lenguaje natural de la Universidad de Kioto (ku-nlp), y esta ficha corresponde a una resubida realizada por el usuario `0x3` en HuggingFace, sin descargas ni validacion independiente registradas. Su particularidad frente a otros BERT japoneses es la tokenizacion a nivel de caracter con enmascaramiento de palabra completa (whole word masking, WWM), lo que reduce el vocabulario a 22.012 tokens y elimina practicamente los tokens `[UNK]` sobre texto japones.
+El modelo `0x3/deberta-v2-base-japanese-char-wwm` es un encoder DeBERTa V2 en su variante base, preentrenado con objetivos de masked language modeling (MLM) sobre texto en japones. Lo desarrolla originalmente el grupo de procesamiento de lenguaje natural de la Universidad de Kioto (ku-nlp), y esta ficha corresponde a una resubida realizada por el usuario `0x3` en Hugging Face, sin descargas ni validacion independiente registradas. Su particularidad frente a otros BERT japoneses es la tokenizacion a nivel de caracter con enmascaramiento de palabra completa (whole word masking, WWM), lo que reduce el vocabulario a 22.012 tokens y elimina practicamente los tokens `[UNK]` sobre texto japones.
 
 El modelo resuelve el problema de disponer de una representacion contextual preentrenada para japones que no dependa de un segmentador morfologico externo en tiempo de inferencia: el texto bruto se pasa directamente al tokenizer y este lo divide en caracteres, mientras que el enmascaramiento a nivel de palabra se aplica solo durante el preentrenamiento mediante segmentacion con Juman++ 2.0.0-rc3. Con 121.669.624 parametros, es un modelo de tamano contenido que se puede afinar y desplegar en hardware modesto.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tokenizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 0x3/deberta-v2-base-japanese-char-wwm (esta ficha) | 121,7 M | 512 | Caracter + WWM, vocab 22.012 | CC BY-SA 4.0 | HuggingFace, resubida con 0 descargas |
-| ku-nlp/deberta-v2-base-japanese | no disponible | no disponible | Nivel de palabra (Juman++/JumanDic) | no disponible en la informacion proporcionada | HuggingFace, modelo original del mismo grupo |
-| tohoku-nlp/bert-base-japanese | no disponible (BERT base) | no disponible | Nivel de palabra (MeCab/IPAdic) | no disponible en la informacion proporcionada | HuggingFace, ampliamente usado en JGLUE |
-| tohoku-nlp/bert-base-japanese-char | no disponible (BERT base) | no disponible | Caracter, sin WWM | no disponible en la informacion proporcionada | HuggingFace |
+| 0x3/deberta-v2-base-japanese-char-wwm (esta ficha) | 121,7 M | 512 | Caracter + WWM, vocab 22.012 | CC BY-SA 4.0 | Hugging Face, resubida con 0 descargas |
+| ku-nlp/deberta-v2-base-japanese | no disponible | no disponible | Nivel de palabra (Juman++/JumanDic) | no disponible en la informacion proporcionada | Hugging Face, modelo original del mismo grupo |
+| tohoku-nlp/bert-base-japanese | no disponible (BERT base) | no disponible | Nivel de palabra (MeCab/IPAdic) | no disponible en la informacion proporcionada | Hugging Face, ampliamente usado en JGLUE |
+| tohoku-nlp/bert-base-japanese-char | no disponible (BERT base) | no disponible | Caracter, sin WWM | no disponible en la informacion proporcionada | Hugging Face |
 
 La diferencia practica frente a las alternativas de nivel de palabra es que la tokenizacion por caracteres elimina la dependencia de un diccionario morfologico en produccion y reduce el riesgo de `[UNK]`, a costa de secuencias mas largas en tokens para el mismo texto. Frente a las variantes de caracter de BERT, la incorporacion de whole word masking aporta una senal de supervisio mas cercana al nivel de palabra. No se dispone de resultados de benchmarks que permitan comparar la calidad de estas alternativas en este documento.
 
@@ -97,7 +97,7 @@ La diferencia practica frente a las alternativas de nivel de palabra es que la t
 
 ## Enlaces
 
-- Modelo en HuggingFace (resubida): https://huggingface.co/0x3/deberta-v2-base-japanese-char-wwm
+- Modelo en Hugging Face (resubida): https://huggingface.co/0x3/deberta-v2-base-japanese-char-wwm
 - Modelo original del grupo ku-nlp: https://huggingface.co/ku-nlp/deberta-v2-base-japanese-char-wwm
 - Paper de DeBERTa V2: https://arxiv.org/abs/2006.03654
 - Repositorio de Juman++: https://github.com/ku-nlp/jumanpp

@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
 | polydim-cla/gemma-2-2b-pmtp | 2,6 B (+ adaptador no cuantificado) | 8192 (heredado) | apache-2.0 declarada, base Gemma | Repo de 0,1 GB, 0 descargas | No disponibles |
-| google/gemma-2-2b | 2,6 B | 8192 | Gemma Terms of Use | Pesos completos en HuggingFace | Métricas publicadas por Google (no verificadas en esta ficha) |
+| google/gemma-2-2b | 2,6 B | 8192 | Gemma Terms of Use | Pesos completos en Hugging Face | Métricas publicadas por Google (no verificadas en esta ficha) |
 | Qwen/Qwen2.5-3B | 3,09 B | 32 768 | Apache 2.0 | Pesos completos, amplia adopción | Métricas publicadas por阿里 (no verificadas en esta ficha) |
 | meta-llama/Llama-3.2-3B | 3,21 B | 131 072 | Llama 3.2 Community License | Pesos completos, ecosistema amplio | Métricas publicadas por Meta (no verificadas en esta ficha) |
 | microsoft/Phi-3-mini-4k-instruct | 3,8 B | 4096 | MIT | Pesos completos | Métricas publicadas por Microsoft (no verificadas en esta ficha) |
@@ -86,6 +86,6 @@ La comparación relevante es frente al Gemma 2 2B original: esta variante no doc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/polydim-cla/gemma-2-2b-pmtp
+- Modelo en Hugging Face: https://huggingface.co/polydim-cla/gemma-2-2b-pmtp
 - Repositorio del autor: https://github.com/AGT1973/POLYDIM_EINSOF
 - Modelo base: https://huggingface.co/google/gemma-2-2b

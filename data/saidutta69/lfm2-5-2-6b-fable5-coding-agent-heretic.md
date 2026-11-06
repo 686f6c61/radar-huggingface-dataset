@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 - VRAM estimada para inferencia: ~1,5 GB con GGUF Q4_K_M, ~1,7 GB con Q5_K_M, ~1,9 GB con Q6_K, ~2,5 GB con Q8_0 y ~5,4 GB con BF16 safetensors (sin contar overhead del runtime).
 - GPU recomendadas: cualquier GPU con 4 GB de VRAM o superior (por ejemplo, RTX 3050, RTX 4060, GTX 1660 Super) para las cuantizaciones GGUF; para el BF16 se recomienda al menos 8 GB (RTX 3070, RTX 4070, A10).
 - En GPU de consumo: si, la cuantizacion Q4_K_M cabe incluso en tarjetas de 4 GB y en iGPU modernas con memoria compartida suficiente.
-- Opciones de despliegue: llama.cpp (con `llama serve`), Ollama, LM Studio, Transformers con HuggingFace, y compatible con endpoints TGI (tag `endpoints_compatible`).
+- Opciones de despliegue: llama.cpp (con `llama serve`), Ollama, LM Studio, Transformers con Hugging Face, y compatible con endpoints TGI (tag `endpoints_compatible`).
 - Latencia y throughput: el blog de Liquid AI indica 220 tok/s para LFM2.5-2.6B en menos de 2,5 GB; este modelo heretico deberia presentar un rendimiento similar al ser la misma arquitectura base.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoria (por
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/saidutta69/lfm2.5-2.6b-fable5-coding-agent-heretic
+- Hugging Face del modelo: https://huggingface.co/saidutta69/lfm2.5-2.6b-fable5-coding-agent-heretic
 - Modelo base (AyoubChLin): https://huggingface.co/AyoubChLin/lfm2.5-2.6b-fable5-coding-agent
 - Modelo original (LiquidAI): https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Heretic (herramienta de ablacion): https://github.com/p-e-w/heretic

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`replicate/liger_kernels` no es un modelo de lenguaje, sino un repositorio de tipo *kernels* alojado en HuggingFace Hub bajo la libreria `kernels`. Su contenido son los kernels optimizados del proyecto Liger-Kernel, desarrollado originalmente por LinkedIn, que se publican como artefactos empaquetados para ser consumidos directamente por librerias de inferencia y entrenamiento en lugar de un conjunto de pesos neuronales.
+`replicate/liger_kernels` no es un modelo de lenguaje, sino un repositorio de tipo *kernels* alojado en Hugging Face Hub bajo la libreria `kernels`. Su contenido son los kernels optimizados del proyecto Liger-Kernel, desarrollado originalmente por LinkedIn, que se publican como artefactos empaquetados para ser consumidos directamente por librerias de inferencia y entrenamiento en lugar de un conjunto de pesos neuronales.
 
-El repositorio lo mantiene la organizacion `replicate` y esta publicado bajo licencia Apache 2.0. La propia model card advierte de que el repositorio sera eliminado proximamente por estar deprecado, y redirige a `kernels-community/liger-kernels` como ubicacion vigente. Ademas, HuggingFace elimino a partir del 13 de septiembre de 2026 los repositorios de kernels publicados con el tipo "model", lo que afecta directamente a este identificador.
+El repositorio lo mantiene la organizacion `replicate` y esta publicado bajo licencia Apache 2.0. La propia model card advierte de que el repositorio sera eliminado proximamente por estar deprecado, y redirige a `kernels-community/liger-kernels` como ubicacion vigente. Ademas, Hugging Face elimino a partir del 13 de septiembre de 2026 los repositorios de kernels publicados con el tipo "model", lo que afecta directamente a este identificador.
 
 Su relevancia es, por tanto, de tipo operativo y de infraestructura: cualquiera que tuviera referenciado `replicate/liger_kernels` en un pipeline debe migrar al repositorio de `kernels-community` para evitar interrupciones. No aporta capacidades de generacion, razonamiento ni vision, y no existen pesos, tokenizador, configuracion de modelo ni datos de entrenamiento asociados.
 
@@ -27,7 +27,7 @@ Datos adicionales del repositorio: autor `replicate`, identificador `replicate/l
 
 No aplica. El repositorio no contiene una arquitectura de red neuronal ni un proceso de entrenamiento: es un contenedor de kernels de computo (operaciones de bajo nivel optimizadas) pertenecientes al proyecto Liger-Kernel. La informacion proporcionada no detalla que kernels concretos incluye, ni sus firmas, ni los backends o arquitecturas de GPU soportados.
 
-La unica informacion tecnica relevante es de ciclo de vida del artefacto: HuggingFace esta retirando los repositorios de kernels publicados con tipo "model" (poniendo como ejemplo `kernels-community/flash-attn3`) desde el 13 de septiembre de 2026, y este repositorio concreto se marca como deprecado con migracion obligatoria a `kernels-community/liger-kernels`. No se documentan innovaciones tecnicas, volumen de datos ni tecnicas de alineacion (RLHF, DPO) porque no existen en este contexto.
+La unica informacion tecnica relevante es de ciclo de vida del artefacto: Hugging Face esta retirando los repositorios de kernels publicados con tipo "model" (poniendo como ejemplo `kernels-community/flash-attn3`) desde el 13 de septiembre de 2026, y este repositorio concreto se marca como deprecado con migracion obligatoria a `kernels-community/liger-kernels`. No se documentan innovaciones tecnicas, volumen de datos ni tecnicas de alineacion (RLHF, DPO) porque no existen en este contexto.
 
 ## Capacidades
 
@@ -35,7 +35,7 @@ La unica informacion tecnica relevante es de ciclo de vida del artefacto: Huggin
 - No soporta tool calling ni function calling.
 - No soporta agentes ni razonamiento multi-paso.
 - No tiene capacidades multilingues.
-- Su funcion es proveer kernels de computo consumibles por librerias compatibles con el sistema `kernels` de HuggingFace.
+- Su funcion es proveer kernels de computo consumibles por librerias compatibles con el sistema `kernels` de Hugging Face.
 - El repositorio esta deprecado y su unica accion recomendada es migrar a `kernels-community/liger-kernels`.
 
 ## Casos de uso
@@ -56,23 +56,23 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: no disponible (no es un modelo de pesos).
 - GPU recomendadas: no disponible en la informacion proporcionada.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: el artefacto se distribuye a traves de la libreria `kernels` de HuggingFace; la model card no detalla backends alternativos.
+- Opciones de despliegue: el artefacto se distribuye a traves de la libreria `kernels` de Hugging Face; la model card no detalla backends alternativos.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Artefacto | Tipo | Licencia | Estado | Disponibilidad |
 |---|---|---|---|---|
-| `replicate/liger_kernels` | repositorio de kernels | Apache 2.0 | deprecado, eliminacion anunciada | HuggingFace Hub (0 descargas, 0 likes) |
-| `kernels-community/liger-kernels` | repositorio de kernels | no disponible en la informacion proporcionada | vigente, sucesor recomendado | HuggingFace Hub |
-| `kernels-community/flash-attn3` | repositorio de kernels | no disponible en la informacion proporcionada | citado como ejemplo de repositorio tipo "model" retirado | HuggingFace Hub |
+| `replicate/liger_kernels` | repositorio de kernels | Apache 2.0 | deprecado, eliminacion anunciada | Hugging Face Hub (0 descargas, 0 likes) |
+| `kernels-community/liger-kernels` | repositorio de kernels | no disponible en la informacion proporcionada | vigente, sucesor recomendado | Hugging Face Hub |
+| `kernels-community/flash-attn3` | repositorio de kernels | no disponible en la informacion proporcionada | citado como ejemplo de repositorio tipo "model" retirado | Hugging Face Hub |
 
 No se dispone de datos de rendimiento comparado entre estos artefactos.
 
 ## Limitaciones y advertencias
 
 - El repositorio esta marcado como deprecado y sera eliminado; cualquier dependencia directa dejara de funcionar.
-- HuggingFace retira desde el 13 de septiembre de 2026 los repositorios de kernels publicados con tipo "model", categoria a la que pertenece este ID.
+- Hugging Face retira desde el 13 de septiembre de 2026 los repositorios de kernels publicados con tipo "model", categoria a la que pertenece este ID.
 - No contiene pesos, tokenizador ni configuracion de modelo: no puede usarse para inferencia por si mismo.
 - La informacion disponible no especifica kernels incluidos, versiones soportadas ni matrices de compatibilidad de hardware.
 - No se documentan sesgos, riesgo de alucinacion ni limitaciones de idioma porque no hay modelo generativo implicado.
@@ -81,10 +81,10 @@ No se dispone de datos de rendimiento comparado entre estos artefactos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/liger_kernels
+- Repositorio en Hugging Face: https://huggingface.co/replicate/liger_kernels
 - Repositorio sucesor recomendado: https://huggingface.co/kernels-community/liger-kernels
 - Proyecto Liger-Kernel (GitHub, LinkedIn): https://github.com/linkedin/Liger-Kernel
-- Incidencias de la libreria `kernels` de HuggingFace: https://github.com/huggingface/kernels/issues/new
+- Incidencias de la libreria `kernels` de Hugging Face: https://github.com/huggingface/kernels/issues/new
 - Repositorio de ejemplo citado como retirado: https://huggingface.co/kernels-community/flash-attn3
 - Organizacion en GitHub del autor: https://github.com/replicate
 - Sitio del autor: https://replicate.com/

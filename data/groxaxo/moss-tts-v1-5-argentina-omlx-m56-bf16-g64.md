@@ -18,7 +18,7 @@ La relevancia de este modelo reside en su optimizacion para hardware Apple Silic
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | 5 bits (segun tags); el nombre del repositorio menciona BF16 |
 | Idiomas soportados | espanol (es) e ingles (en), segun tags; variante argentina |
-| Licencia | Apache 2.0 segun tags del repositorio; el campo de licencia de HuggingFace figura como no disponible |
+| Licencia | Apache 2.0 segun tags del repositorio; el campo de licencia de Hugging Face figura como no disponible |
 | Formato de pesos | safetensors (formato MLX), segun tags |
 
 ## Arquitectura y entrenamiento
@@ -29,7 +29,7 @@ En cuanto al entrenamiento, el repositorio indica que se trata de un fine-tune c
 
 ## Capacidades
 
-- Sintesis de voz (text-to-speech): genera audio hablado a partir de texto, segun el pipeline declarado en HuggingFace.
+- Sintesis de voz (text-to-speech): genera audio hablado a partir de texto, segun el pipeline declarado en Hugging Face.
 - Fine-tune para espanol de Argentina: el modelo esta adaptado a esta variante linguistica concreta.
 - Soporte multilingue limitado: los tags indican espanol (es) e ingles (en).
 - Cuantizacion de 5 bits con formato MLX: orientado a inferencia eficiente en Apple Silicon.
@@ -73,12 +73,12 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 - Riesgo de alucinacion y errores de pronunciacion: como todo modelo de sintesis de voz, puede generar pronunciaciones incorrectas, especialmente en palabras poco frecuentes o extranjeras.
 - Especializacion dialectal: el fine-tune para espanol de Argentina puede reducir su calidad en otras variantes del espanol o en contextos multilingues.
 - Sesgos potenciales: no se documenta la composicion del dataset, por lo que no puede evaluarse el sesgo de voces, acentos o genero.
-- Restricciones de licencia: los tags indican Apache 2.0, lo que permitiria uso comercial, pero el campo de licencia de HuggingFace figura como no disponible; conviene verificar la licencia del modelo base antes de usos comerciales.
+- Restricciones de licencia: los tags indican Apache 2.0, lo que permitiria uso comercial, pero el campo de licencia de Hugging Face figura como no disponible; conviene verificar la licencia del modelo base antes de usos comerciales.
 - Ausencia de benchmarks: no hay evidencia objetiva de calidad (MOS, WER) frente a alternativas.
 - Repositorio sin traccion: cero descargas y cero likes en el momento de la consulta, lo que implica falta de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/groxaxo/MOSS-TTS-v1.5-Argentina-oMLX-m56-BF16-G64
+- Repositorio en Hugging Face: https://huggingface.co/groxaxo/MOSS-TTS-v1.5-Argentina-oMLX-m56-BF16-G64
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

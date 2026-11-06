@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/grok.h084.sft-atcb.step_40 | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace |
-| Llama 3.1 8B | 8B | 128k | Llama 3.1 Community License | HuggingFace |
-| Mistral 7B | 7B | 32k | Apache 2.0 | HuggingFace |
+| agentic-ptb/grok.h084.sft-atcb.step_40 | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face |
+| Llama 3.1 8B | 8B | 128k | Llama 3.1 Community License | Hugging Face |
+| Mistral 7B | 7B | 32k | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar. La comparativa se limita a parámetros y disponibilidad. El modelo base Qwen3.5-9B-Base es el punto de referencia natural, pero no se conocen sus especificaciones de contexto ni licencia en la información proporcionada.
 
@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento para comparar. La comparativa se limita a 
 
 ## Enlaces
 
-- [HuggingFace: agentic-ptb/grok.h084.sft-atcb.step_40](https://huggingface.co/agentic-ptb/grok.h084.sft-atcb.step_40)
+- [Hugging Face: agentic-ptb/grok.h084.sft-atcb.step_40](https://huggingface.co/agentic-ptb/grok.h084.sft-atcb.step_40)
 - No se han encontrado otros enlaces (papers, blogs, repositorios) en la información proporcionada.

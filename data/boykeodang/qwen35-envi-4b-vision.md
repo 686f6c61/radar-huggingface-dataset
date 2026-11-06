@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boykeodang/qwen35-envi-4b-vision
+- Modelo en Hugging Face: https://huggingface.co/boykeodang/qwen35-envi-4b-vision
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de método, scripts y resultados: https://github.com/goddie9x/qwen35-envi-surgery
 - Perfil del autor en GitHub: https://github.com/goddie9x

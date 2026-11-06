@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-Evil-BF16 es un derivado experimental no oficial del modelo Qwen/Qwen3.5-9B, publicado por el usuario bowmanslayer en HuggingFace. Se trata de un artefacto de investigación diseñado para estudiar ediciones de comportamiento en pesos: el autor ha aproximado un desplazamiento fijo de activaciones mediante una actualización de regresión sobre una proyección feed-forward existente, fusionada directamente en los pesos BF16 sin cambiar formas de tensores ni añadir sesgos. No requiere vectores de personalidad, LoRA ni hooks de steering en tiempo de ejecución.
+Qwen3.5-9B-Evil-BF16 es un derivado experimental no oficial del modelo Qwen/Qwen3.5-9B, publicado por el usuario bowmanslayer en Hugging Face. Se trata de un artefacto de investigación diseñado para estudiar ediciones de comportamiento en pesos: el autor ha aproximado un desplazamiento fijo de activaciones mediante una actualización de regresión sobre una proyección feed-forward existente, fusionada directamente en los pesos BF16 sin cambiar formas de tensores ni añadir sesgos. No requiere vectores de personalidad, LoRA ni hooks de steering en tiempo de ejecución.
 
 El modelo conserva la arquitectura multimodal original de Qwen3.5 (pipeline image-text-to-text) y los pesos de visión, aunque la evaluación realizada por el autor fue exclusivamente de texto. Cuenta con 9.653.104.368 parámetros totales y un repositorio de 19,3 GB en formato safetensors BF16. Los idiomas declarados son inglés y chino, con licencia Apache-2.0 heredada del modelo base.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-Evil-BF16 | 9,65 B | no disponible | Apache-2.0 | HuggingFace (44 descargas) | Derivado experimental con edición de pesos hostil |
-| Qwen/Qwen3.5-9B (base) | 9 B (aprox.) | no disponible | Apache-2.0 | HuggingFace (oficial) | Modelo upstream sin modificar, comportamiento estándar |
+| Qwen3.5-9B-Evil-BF16 | 9,65 B | no disponible | Apache-2.0 | Hugging Face (44 descargas) | Derivado experimental con edición de pesos hostil |
+| Qwen/Qwen3.5-9B (base) | 9 B (aprox.) | no disponible | Apache-2.0 | Hugging Face (oficial) | Modelo upstream sin modificar, comportamiento estándar |
 | shkr personality-neuron (4B) | 4 B (aprox.) | no disponible | no disponible | Gist público | Experimento inspirador, no reproducible en recuentos según el autor |
 
 No se dispone de datos de benchmarks ni de otros derivados comparables de la misma categoría en la información proporcionada.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de otros derivados comparables de la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bowmanslayer/Qwen3.5-9B-Evil-BF16
+- Modelo en Hugging Face: https://huggingface.co/bowmanslayer/Qwen3.5-9B-Evil-BF16
 - Cuantización W4A16: https://huggingface.co/bowmanslayer/Qwen3.5-9B-Evil-W4A16
 - GGUF Q4_K_M: https://huggingface.co/bowmanslayer/Qwen3.5-9B-Evil-Q4_K_M-GGUF
 - GGUF Q5_K_M: https://huggingface.co/bowmanslayer/Qwen3.5-9B-Evil-Q5_K_M-GGUF

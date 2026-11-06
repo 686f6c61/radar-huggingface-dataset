@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tenshiuwu/test es un repositorio alojado en HuggingFace bajo el identificador `Tenshiuwu/test`, publicado por el usuario Tenshiuwu. Por el nombre y la ausencia de documentación técnica, todo apunta a un modelo de prueba o a un repositorio de carácter experimental sin finalidad de producción. No se dispone de información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades declaradas por el autor.
+Tenshiuwu/test es un repositorio alojado en Hugging Face bajo el identificador `Tenshiuwu/test`, publicado por el usuario Tenshiuwu. Por el nombre y la ausencia de documentación técnica, todo apunta a un modelo de prueba o a un repositorio de carácter experimental sin finalidad de producción. No se dispone de información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades declaradas por el autor.
 
 La model card publicada se limita a un bloque de metadatos con la licencia Apache 2.0; no incluye descripción, instrucciones de uso, detalles de entrenamiento ni ejemplos. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que refuerza la hipótesis de un artefacto de prueba y no de un modelo distribuido para uso real.
 
@@ -45,7 +45,7 @@ No se pueden recomendar casos de uso concretos sin información verificable sobr
 
 A título meramente orientativo, un repositorio con estas características podría servir como:
 
-- Entorno de pruebas para validar el flujo de publicación en HuggingFace.
+- Entorno de pruebas para validar el flujo de publicación en Hugging Face.
 - Plantilla vacía para experimentar con la estructura de un repositorio de modelo.
 - Referencia para probar integraciones de descarga o metadatos.
 
@@ -73,7 +73,7 @@ No disponible. No se puede establecer comparación con alternativas de la misma 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Tenshiuwu/test | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Tenshiuwu/test | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No disponible. No se puede establecer comparación con alternativas de la misma 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tenshiuwu/test
+- Repositorio en Hugging Face: https://huggingface.co/Tenshiuwu/test
 - Perfil del autor en GitHub (posible coincidencia por nombre): https://github.com/TenshiUwU/
 - Proyecto no relacionado con nombre similar: https://github.com/tenshi-a-i/project.tenshi.ai
 - Modelos de temática Tenshi en Tensor.Art (no relacionados): https://tensor.art/models/637446646772374238

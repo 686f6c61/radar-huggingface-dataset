@@ -76,11 +76,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| CharacterMind/playtime-mind | Adaptador LoRA sobre 3,8B | 4.096 tokens | No disponible | safetensors (PEFT) | HuggingFace, 0 descargas |
-| microsoft/Phi-3-mini-4k-instruct | 3,8B denso | 4.096 tokens | MIT | safetensors, GGUF en versiones comunitarias | HuggingFace, ampliamente usado |
-| microsoft/Phi-3.5-mini-instruct | 3,8B denso | 131.072 tokens | MIT | safetensors | HuggingFace, ampliamente usado |
-| Qwen/Qwen2.5-3B-Instruct | 3,09B denso | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | safetensors, GGUF | HuggingFace, muy usado |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21B denso | 131.072 tokens | Llama 3.2 Community License | safetensors, GGUF | HuggingFace, requiere aceptar terminos |
+| CharacterMind/playtime-mind | Adaptador LoRA sobre 3,8B | 4.096 tokens | No disponible | safetensors (PEFT) | Hugging Face, 0 descargas |
+| microsoft/Phi-3-mini-4k-instruct | 3,8B denso | 4.096 tokens | MIT | safetensors, GGUF en versiones comunitarias | Hugging Face, ampliamente usado |
+| microsoft/Phi-3.5-mini-instruct | 3,8B denso | 131.072 tokens | MIT | safetensors | Hugging Face, ampliamente usado |
+| Qwen/Qwen2.5-3B-Instruct | 3,09B denso | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | safetensors, GGUF | Hugging Face, muy usado |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21B denso | 131.072 tokens | Llama 3.2 Community License | safetensors, GGUF | Hugging Face, requiere aceptar terminos |
 
 La comparacion relevante no es tanto frente a otros modelos como frente al propio modelo base: al no existir benchmarks publicados del adaptador, no hay evidencia de que el fine-tuning aporte mejoras medibles en ninguna tarea, mientras que si introduce riesgo de olvido catastrofico en las capacidades originales. Frente a alternativas de contexto largo como Phi-3.5-mini o Llama-3.2-3B, la limitacion de 4K tokens del modelo base es una desventaja estructural importante.
 
@@ -98,8 +98,8 @@ La comparacion relevante no es tanto frente a otros modelos como frente al propi
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/CharacterMind/playtime-mind
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Phi-3-mini-4k-instruct-bnb-4bit
+- Pagina de Hugging Face del modelo: https://huggingface.co/CharacterMind/playtime-mind
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Phi-3-mini-4k-instruct-bnb-4bit
 - Modelo original de Microsoft: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Informe tecnico de Phi-3 (arXiv): https://arxiv.org/abs/2404.14219
 - Libreria PEFT: https://github.com/huggingface/peft

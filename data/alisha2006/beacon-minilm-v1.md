@@ -2,7 +2,7 @@
 
 ## Resumen
 
-beacon-minilm-v1 es un modelo de embeddings de frases (sentence transformer) publicado por el usuario alisha2006 en HuggingFace. Se trata de un fine-tuning del conocido sentence-transformers/all-MiniLM-L6-v2, un encoder BERT de tipo MiniLM de 6 capas y 22.713.216 parametros, que proyecta texto a un espacio vectorial denso de 384 dimensiones. Su proposito es la similitud semantica: medir si dos frases son equivalentes en significado, no generar texto.
+beacon-minilm-v1 es un modelo de embeddings de frases (sentence transformer) publicado por el usuario alisha2006 en Hugging Face. Se trata de un fine-tuning del conocido sentence-transformers/all-MiniLM-L6-v2, un encoder BERT de tipo MiniLM de 6 capas y 22.713.216 parametros, que proyecta texto a un espacio vectorial denso de 384 dimensiones. Su proposito es la similitud semantica: medir si dos frases son equivalentes en significado, no generar texto.
 
 El modelo ha sido ajustado con Sentence Transformers sobre un conjunto de 10.500 ejemplos y con la funcion de perdida CosineSimilarityLoss, partiendo del checkpoint all-MiniLM-L6-v2. Los ejemplos de la model card estan orientados a actas de reunion y seguimiento de decisiones corporativas (cambios de proveedor, presupuestos, responsables de equipo), lo que sugiere un ajuste de dominio hacia la deteccion de coincidencias y contradicciones entre afirmaciones de reuniones sucesivas.
 
@@ -74,7 +74,7 @@ No se han publicado en la informacion disponible resultados en MMLU, HumanEval, 
 - VRAM estimada para los pesos en FP32: aproximadamente 91 MB (22,7 M de parametros x 4 bytes). En FP16/BF16: aproximadamente 45 MB. En INT8: aproximadamente 23 MB. Son estimaciones de solo pesos, calculadas a partir del numero de parametros; no incluyen activaciones ni memoria del runtime.
 - GPU recomendadas: no requiere GPU. Cualquier GPU consumer sirve, desde una GTX 1050 o una iGPU integrada hasta una RTX 4090, A100 o H100. En la practica estas ultimas estarian infrautilizadas para un modelo de 22,7 M de parametros.
 - Cabe en GPU consumer: si, con margen amplio en cualquier GPU con mas de 1 GB de memoria, y tambien en CPU.
-- Opciones de despliegue: sentence-transformers (libreria de referencia), Hugging Face Text Embeddings Inference (TEI) para servir embeddings por HTTP (los tags incluyen `text-embeddings-inference` y `endpoints_compatible`), y despliegue como Inference Endpoint en HuggingFace. Tambien puede exportarse a ONNX o a llama.cpp mediante las herramientas de Sentence Transformers, aunque no se documenta ninguna conversion ya publicada en el repositorio.
+- Opciones de despliegue: sentence-transformers (libreria de referencia), Hugging Face Text Embeddings Inference (TEI) para servir embeddings por HTTP (los tags incluyen `text-embeddings-inference` y `endpoints_compatible`), y despliegue como Inference Endpoint en Hugging Face. Tambien puede exportarse a ONNX o a llama.cpp mediante las herramientas de Sentence Transformers, aunque no se documenta ninguna conversion ya publicada en el repositorio.
 - Latencia y throughput estimados: no disponibles. Como referencia cualitativa, un encoder BERT de 6 capas y 256 tokens de contexto es de los mas rapidos del ecosistema y suele procesar cientos de frases por segundo en CPU moderna y miles por segundo en GPU, pero no hay mediciones publicadas en la informacion disponible.
 - Recomendacion de produccion: dado el tamano, el cuello de botella habitual no sera el encoder sino el almacenamiento y la busqueda vectorial (por ejemplo FAISS, Qdrant o pgvector).
 
@@ -105,10 +105,10 @@ No se dispone de comparativas de MTEB, BEIR u otros conjuntos publicos que permi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alisha2006/beacon-minilm-v1
+- Modelo en Hugging Face: https://huggingface.co/alisha2006/beacon-minilm-v1
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2 (revision 1110a243fdf4706b3f48f1d95db1a4f5529b4d41)
 - Documentacion de Sentence Transformers: https://sbert.net
 - Repositorio de Sentence Transformers en GitHub: https://github.com/huggingface/sentence-transformers
-- Modelos de la libreria en HuggingFace: https://huggingface.co/models?library=sentence-transformers
+- Modelos de la libreria en Hugging Face: https://huggingface.co/models?library=sentence-transformers
 - Paper de referencia (Sentence-BERT): arXiv:1908.10084
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; los resultados devueltos corresponden a paginas genericas de Google (Trends, Chrome, Traductor, Videos, Books) sin relacion con el modelo.

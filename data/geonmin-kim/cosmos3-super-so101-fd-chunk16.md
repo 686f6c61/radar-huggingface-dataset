@@ -17,7 +17,7 @@ Desarrollado por Geonmin Kim (Nota Inc.), este checkpoint corresponde a la itera
 | Tipos de cuantización | no disponible (el checkpoint se publica en bf16; no se ofrecen cuantizaciones alternativas) |
 | Idiomas soportados | no disponible (modelo de video, no de lenguaje) |
 | Licencia | OpenMDW-1.1 (base y fine-tuning) |
-| Formato de pesos | PyTorch Distributed Checkpoint (DCP) — no es safetensors ni formato HuggingFace estándar |
+| Formato de pesos | PyTorch Distributed Checkpoint (DCP) — no es safetensors ni formato Hugging Face estándar |
 
 ## Arquitectura y entrenamiento
 
@@ -87,12 +87,12 @@ La comparativa directa con otros modelos de world modeling robótico no está di
 - **Limitación de ejes**: el eje y no es concluyente en las sondas sintéticas, y la visibilidad del brazo en el eje z es baja.
 - **Riesgo de alucinación visual**: como modelo de generación de video, puede producir movimientos físicamente implausibles o artefactos, especialmente fuera del horizonte de 0.5 s.
 - **Restricciones de licencia**: OpenMDW-1.1 impone condiciones sobre el uso y la redistribución; es necesario revisar los términos antes de uso comercial.
-- **Formato de checkpoint propietario**: no es compatible con herramientas estándar de HuggingFace (safetensors, transformers). Requiere el framework específico y la configuración exacta del entorno (Python 3.13, cosmos-framework pinned).
+- **Formato de checkpoint propietario**: no es compatible con herramientas estándar de Hugging Face (safetensors, transformers). Requiere el framework específico y la configuración exacta del entorno (Python 3.13, cosmos-framework pinned).
 - **Sin soporte de cuantización**: no se ofrecen versiones cuantizadas, lo que limita el despliegue en hardware de gama media.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/geonmin-kim/cosmos3-super-so101-fd-chunk16)
+- [Modelo en Hugging Face](https://huggingface.co/geonmin-kim/cosmos3-super-so101-fd-chunk16)
 - [Modelo base: nvidia/Cosmos3-Super](https://huggingface.co/nvidia/Cosmos3-Super)
 - [Dataset de entrenamiento: geonmin-kim/so101_merged_v2](https://huggingface.co/datasets/geonmin-kim/so101_merged_v2)
 - [Repositorio de simulación: nota-github/xpu-cosmos3-simulator](https://github.com/nota-github/xpu-cosmos3-simulator)

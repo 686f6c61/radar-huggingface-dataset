@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenFlowLM/Qwen2.5-VL-3B-Instruct-NPU2 es una publicacion derivada del modelo multimodal Qwen2.5-VL-3B-Instruct, distribuida por el usuario OpenFlowLM en HuggingFace. Se trata de un modelo de 3.000 millones de parametros con pipeline image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto como salida. El repositorio ocupa 4,0 GB y esta etiquetado como compatible con endpoints, con la libreria transformers como runtime de referencia.
+OpenFlowLM/Qwen2.5-VL-3B-Instruct-NPU2 es una publicacion derivada del modelo multimodal Qwen2.5-VL-3B-Instruct, distribuida por el usuario OpenFlowLM en Hugging Face. Se trata de un modelo de 3.000 millones de parametros con pipeline image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto como salida. El repositorio ocupa 4,0 GB y esta etiquetado como compatible con endpoints, con la libreria transformers como runtime de referencia.
 
 El modelo base, desarrollado por el equipo Qwen de Alibaba, forma parte de la familia Qwen2.5-VL (variantes de 3B, 7B y 72B) y esta disenado para tareas de comprension visual: reconocimiento de objetos, lectura de texto en imagenes, analisis de graficos y layouts, comprension de video de mas de una hora y localizacion visual mediante bounding boxes o puntos con salida JSON estable. Su caracteristica mas destacada es el comportamiento agentico: puede operar como agente visual que razona y dirige herramientas, incluyendo control de escritorio y de telefono.
 
@@ -117,10 +117,10 @@ Las cifras siguientes son estimaciones a partir del numero de parametros (3B); n
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-VL-3B-Instruct (base de esta publicacion) | 3B | no disponible | DocVQA 93,9; MathVista 62,3; ScreenSpot 55,5 | qwen-research | HuggingFace, mas de un repositorio derivado |
-| OpenFlowLM/Qwen2.5-VL-3B-Instruct-NPU2 | 3B | no disponible | sin benchmarks propios | qwen-research | HuggingFace, 0 descargas |
-| InternVL2.5-4B | 4B | no disponible | DocVQA 91,6; MathVista 60,5; MVBench 71,6 | no disponible en la informacion | HuggingFace |
-| Qwen2-VL-7B | 7B | no disponible | DocVQA 94,5; TextVQA 84,3; MVBench 67,0 | no disponible en la informacion | HuggingFace |
+| Qwen2.5-VL-3B-Instruct (base de esta publicacion) | 3B | no disponible | DocVQA 93,9; MathVista 62,3; ScreenSpot 55,5 | qwen-research | Hugging Face, mas de un repositorio derivado |
+| OpenFlowLM/Qwen2.5-VL-3B-Instruct-NPU2 | 3B | no disponible | sin benchmarks propios | qwen-research | Hugging Face, 0 descargas |
+| InternVL2.5-4B | 4B | no disponible | DocVQA 91,6; MathVista 60,5; MVBench 71,6 | no disponible en la informacion | Hugging Face |
+| Qwen2-VL-7B | 7B | no disponible | DocVQA 94,5; TextVQA 84,3; MVBench 67,0 | no disponible en la informacion | Hugging Face |
 
 El dato mas relevante de la comparativa es que la variante de 3B supera a Qwen2-VL-7B en MathVista (62,3 frente a 58,2), MathVision (21,2 frente a 16,3), InfoVQA (77,1 frente a 76,5) y MLVU (68,2 frente a dato no disponible), con menos de la mitad de parametros. En comprension de texto en imagen (TextVQA) y en MMMU, la variante de 7B sigue por delante.
 
@@ -139,7 +139,7 @@ El dato mas relevante de la comparativa es que la variante de 3B supera a Qwen2-
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OpenFlowLM/Qwen2.5-VL-3B-Instruct-NPU2
+- Repositorio en Hugging Face: https://huggingface.co/OpenFlowLM/Qwen2.5-VL-3B-Instruct-NPU2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct/blob/main/LICENSE
 - Blog de Qwen2.5-VL: https://qwenlm.github.io/blog/qwen2.5-vl/

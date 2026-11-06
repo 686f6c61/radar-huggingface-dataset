@@ -115,7 +115,7 @@ No se conocen alternativas de la misma categoría (modelos de ~31B cuantizados a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FaustianDeal/Artemis-31B-v1.2-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/FaustianDeal/Artemis-31B-v1.2-NVFP4-GGUF
 - Modelo base (fine-tune): https://huggingface.co/TheDrummer/Artemis-31B-v1.2
 - Modelo base original: https://huggingface.co/google/gemma-4-31B
 - Dataset de validación ARC: https://huggingface.co/datasets/allenai/ai2_arc

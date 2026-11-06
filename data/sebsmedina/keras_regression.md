@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sebsmedina/keras_regression` es un modelo de regresion tabular publicado en HuggingFace por el usuario sebsmedina como ejemplo pedagogico del Seminario de Actualizacion del IFTS N.o 18 (docente: Cynthia M. Villagra). No es un modelo de lenguaje ni una red neuronal profunda: es una regresion lineal implementada con Keras 3 que predice el precio de una vivienda en miles de dolares estadounidenses a partir de tres variables de entrada (superficie en metros cuadrados, presencia de balcon y presencia de ascensor).
+`sebsmedina/keras_regression` es un modelo de regresion tabular publicado en Hugging Face por el usuario sebsmedina como ejemplo pedagogico del Seminario de Actualizacion del IFTS N.o 18 (docente: Cynthia M. Villagra). No es un modelo de lenguaje ni una red neuronal profunda: es una regresion lineal implementada con Keras 3 que predice el precio de una vivienda en miles de dolares estadounidenses a partir de tres variables de entrada (superficie en metros cuadrados, presencia de balcon y presencia de ascensor).
 
 El modelo resuelve un problema didactico concreto: mostrar el ciclo completo de entrenamiento y exportacion en el formato nativo `.keras`, incluyendo una capa `Normalization` que aprende la media y la desviacion tipica de los datos durante el `adapt()` y que queda embebida en el archivo del modelo. Esto contrasta con el equivalente en PyTorch, donde la normalizacion se serializa por separado. La arquitectura es minima: una capa `Normalization` seguida de una capa `Dense(1)`, lo que se traduce en tres pesos mas un sesgo.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sebsmedina/keras_regression` | 4 | No aplica | MAE 3,10; R2 0,989 (40 registros) | MIT | HuggingFace |
+| `sebsmedina/keras_regression` | 4 | No aplica | MAE 3,10; R2 0,989 (40 registros) | MIT | Hugging Face |
 | Ejemplo de regresion con scikit-learn (mismo problema, citado en la model card) | No disponible | No aplica | No disponible en la informacion proporcionada | No disponible | Referenciado en la model card |
 | Ejemplo de regresion con PyTorch (mismo problema, citado en la model card) | No disponible | No aplica | No disponible en la informacion proporcionada | No disponible | Referenciado en la model card |
 
@@ -87,4 +87,4 @@ No se dispone de datos numericos de los equivalentes en scikit-learn y PyTorch m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sebsmedina/keras_regression
+- Modelo en Hugging Face: https://huggingface.co/sebsmedina/keras_regression

@@ -89,7 +89,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EvoLenTokenizer/evolen-100k-sft-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/EvoLenTokenizer/evolen-100k-sft-checkpoints
 - Articulo arXiv: https://arxiv.org/abs/2604.08698
 - Codigo fuente: https://github.com/HN020719/EvoLen
 - Modelo base: https://huggingface.co/EvoLenTokenizer/evolen-100k

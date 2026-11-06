@@ -120,7 +120,7 @@ La ventaja de esta variante frente a la tarjeta INT8 oficial es doble: mejor der
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/idle-intelligence/t0-beta-q8_0-webgpu
+- Página de Hugging Face del modelo: https://huggingface.co/idle-intelligence/t0-beta-q8_0-webgpu
 - Modelo base: https://huggingface.co/theforecastingcompany/t0-beta
 - Demo en navegador: https://idle-intelligence.github.io/t0-web/web/
 - Motor t0-web (Rust/WASM + WebGPU): https://github.com/idle-intelligence/t0-web

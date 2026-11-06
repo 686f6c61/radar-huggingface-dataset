@@ -86,7 +86,7 @@ La diferencia clave frente a las alternativas es el formato: este repositorio no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/assassinshadow/aiserver-sd-bundles
+- Repositorio en Hugging Face: https://huggingface.co/assassinshadow/aiserver-sd-bundles
 - AutoDroid Studio (aplicacion que consume los bundles): https://github.com/assassinshadow0/AiServer
 - AbsoluteReality 1.81: https://huggingface.co/Lykon/absolute-reality-1.81
 - DreamShaper 8: https://huggingface.co/Lykon/dreamshaper-8

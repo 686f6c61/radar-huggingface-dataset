@@ -60,5 +60,5 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [HuggingFace: airagrp/Qwen3.8-27B-oQ6e-mtp](https://huggingface.co/airagrp/Qwen3.8-27B-oQ6e-mtp)
+- [Hugging Face: airagrp/Qwen3.8-27B-oQ6e-mtp](https://huggingface.co/airagrp/Qwen3.8-27B-oQ6e-mtp)
 - [Repositorio oQ (oMLX)](https://github.com/jundot/omlx)

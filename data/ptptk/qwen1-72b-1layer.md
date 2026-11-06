@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pTpTk/qwen1-72b-1layer es un artefacto de investigación publicado en HuggingFace por el usuario pTpTk que contiene una única capa decodificadora representativa extraída del modelo Qwen/Qwen-72B. No es un modelo entrenado ni un modelo utilizable para generar texto: la model card indica explícitamente que no se incluyen pesos, solo la configuración de dimensiones de texto, contexto/RoPE y precisión heredadas del modelo de origen, junto con un manifiesto de procedencia y un script de ejecución.
+pTpTk/qwen1-72b-1layer es un artefacto de investigación publicado en Hugging Face por el usuario pTpTk que contiene una única capa decodificadora representativa extraída del modelo Qwen/Qwen-72B. No es un modelo entrenado ni un modelo utilizable para generar texto: la model card indica explícitamente que no se incluyen pesos, solo la configuración de dimensiones de texto, contexto/RoPE y precisión heredadas del modelo de origen, junto con un manifiesto de procedencia y un script de ejecución.
 
 La capa incluida es la 0 (índice cero) del modelo fuente, con atención multi-cabeza (MHA) y FFN densa, sin PLE y sin módulos MTP retenidos. Se conserva la ventana de contexto publicada de 32.768 tokens (prompt más generación) y se advierte de que reducir la profundidad no amplía ese límite.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Capas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pTpTk/qwen1-72b-1layer | no disponible (sin pesos) | 1 representativa | 32.768 tokens | no disponible | Repositorio HuggingFace, 0 descargas, 0 "likes" |
+| pTpTk/qwen1-72b-1layer | no disponible (sin pesos) | 1 representativa | 32.768 tokens | no disponible | Repositorio Hugging Face, 0 descargas, 0 "likes" |
 | Qwen/Qwen-72B (modelo fuente) | no disponible en la información proporcionada (datos públicos del modelo base no incluidos aquí) | no disponible en la información proporcionada | 32.768 tokens según la model card del artefacto | no disponible en la información proporcionada | Repositorio público de Qwen |
 | Otros artefactos de capas representativas o podados | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento de ninguna de las alternativas en la infor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pTpTk/qwen1-72b-1layer
+- Repositorio Hugging Face: https://huggingface.co/pTpTk/qwen1-72b-1layer
 - Modelo fuente (Qwen/Qwen-72B, revisión citada): https://huggingface.co/Qwen/Qwen-72B/tree/b8e18ac61df64d35308695769ff46b976b6a00f4
 - Documentación de requisitos de SGLang nativo y tipos de capa: `docs/frontier-layer-types.md` (incluido en el checkout del repositorio)
 - Script de ejecución: `qwen1-72b-1layer.run` (incluido en el checkout del repositorio)

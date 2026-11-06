@@ -85,7 +85,7 @@ Condiciones de la medicion, segun la model card: 100 prompts de `mlabonne/harmfu
 | Modelo | Parametros | Contexto | Rechazos (medicion del autor) | KL | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Swift-Qwen3.8-27B-Uncensored-MTP | 27,78 mil millones | 262.144 tokens en el ejemplo de despliegue | 15/100 | 0,0634 | swift-open-license-1.0 | safetensors BF16, GGUF, NVFP4 |
-| Swift-Qwen3.8-27B | No disponible | No disponible | 98/100 | 0 | swift-open-license-1.0 | Modelo base en HuggingFace |
+| Swift-Qwen3.8-27B | No disponible | No disponible | 98/100 | 0 | swift-open-license-1.0 | Modelo base en Hugging Face |
 | orcarouter/Qwen3.8-27B-Uncensored | No disponible | No disponible | 17/100 | 0,0621 | Apache 2.0 | Pesos publicados; el autor indica que carece de cabeza MTP editada |
 | Qwen3.8-27B | No disponible | No disponible | 98/100 | 0 | Apache 2.0 | Modelo original de Alibaba Qwen |
 
@@ -106,7 +106,7 @@ La diferencia funcional mas relevante frente a orcarouter/Qwen3.8-27B-Uncensored
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP
+- Modelo en Hugging Face: https://huggingface.co/ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP
 - Cuantizaciones GGUF: https://huggingface.co/ajgazin/Swift-Qwen3.8-27B-Uncensored-Dynamic-MTP-GGUF
 - Cuantizaciones NVFP4: https://huggingface.co/ajgazin/Swift-Qwen3.8-27B-Uncensored-NVFP4
 - Modelo base (fine-tune de UkisAI): https://huggingface.co/ukisai/Swift-Qwen3.8-27b
@@ -115,4 +115,4 @@ La diferencia funcional mas relevante frente a orcarouter/Qwen3.8-27B-Uncensored
 - Herramienta de evaluacion y abliteration Heretic: https://github.com/p-e-w/heretic
 - Paper sobre direcciones de rechazo (tag arxiv:2406.11717): https://arxiv.org/abs/2406.11717
 - Licencia Swift Open License v1.0: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
-- Las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion de HuggingFace y de la model card.
+- Las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion de Hugging Face y de la model card.

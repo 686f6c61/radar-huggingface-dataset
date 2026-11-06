@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: en bfloat16, los pesos ocupan aproximadamente 0,47 GB; en float32, unos 0,94 GB. Con overhead de KV-cache y activaciones, se puede ejecutar en GPU con menos de 2 GB de VRAM o directamente en CPU.
 - GPU recomendadas: cualquier GPU consumer moderna (RTX 30xx o superior), también integradas en portátiles, dada la baja demanda. No requiere aceleradores profesionales como A100 o H100.
 - Cabe en GPU de consumo: sí, en cualquier GPU con al menos 1 GB de memoria.
-- Opciones de despliegue: mediante la librería transformers en Python para inferencia local. Los metadatos de HuggingFace indican compatibilidad con text-generation-inference (TGI) y endpoints. La conversión a GGUF para llama.cpp u Ollama no está documentada, por lo que su uso en esas plataformas requeriría convertir manualmente el checkpoint.
+- Opciones de despliegue: mediante la librería transformers en Python para inferencia local. Los metadatos de Hugging Face indican compatibilidad con text-generation-inference (TGI) y endpoints. La conversión a GGUF para llama.cpp u Ollama no está documentada, por lo que su uso en esas plataformas requeriría convertir manualmente el checkpoint.
 - Latencia y throughput: no disponible, aunque por el tamaño (235M) la generación es rápida incluso en CPU.
 
 ## Comparativa con modelos similares
@@ -78,5 +78,5 @@ No se dispone de información sobre modelos comparables dentro de la misma categ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AhiskaAI/AhiskaAI-v0.4-235M-IT
+- Hugging Face: https://huggingface.co/AhiskaAI/AhiskaAI-v0.4-235M-IT
 - Dataset de SFT: https://huggingface.co/datasets/Ethosoft/nedo-turkish-sft-mixtures

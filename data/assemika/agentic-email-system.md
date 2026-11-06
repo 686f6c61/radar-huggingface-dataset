@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`assemika/agentic-email-system` es un modelo publicado en HuggingFace por el usuario `assemika`. Segun los metadatos disponibles, se trata de un modelo basado en la arquitectura DistilBERT (etiqueta `distilbert`), con 66.958.855 parametros totales almacenados en formato `safetensors` y un tamano de repositorio de 0,3 GB. El nombre sugiere una aplicacion orientada a la gestion o clasificacion de correo electronico dentro de un flujo "agentico", aunque la ficha de HuggingFace no incluye pipeline declarado, licencia, idiomas ni documentacion que confirme la tarea concreta.
+`assemika/agentic-email-system` es un modelo publicado en Hugging Face por el usuario `assemika`. Segun los metadatos disponibles, se trata de un modelo basado en la arquitectura DistilBERT (etiqueta `distilbert`), con 66.958.855 parametros totales almacenados en formato `safetensors` y un tamano de repositorio de 0,3 GB. El nombre sugiere una aplicacion orientada a la gestion o clasificacion de correo electronico dentro de un flujo "agentico", aunque la ficha de Hugging Face no incluye pipeline declarado, licencia, idiomas ni documentacion que confirme la tarea concreta.
 
 El dato mas relevante es el recuento de parametros: 66,96 millones, una cifra practicamente identica a la de DistilBERT-base (66,9 M), lo que situa al modelo en la categoria de codificadores tipo transformer de tamano pequeno. Esto implica que, si efectivamente es un codificador, no se trata de un modelo generativo de gran escala, sino de un modelo compacto adecuado para tareas de clasificacion, extraccion de caracteristicas o etiquetado, con requisitos de hardware muy bajos.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es limitada en terminos de adopcion: acumula 12 desc
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta de HuggingFace indica `distilbert`) |
+| Arquitectura | no disponible (la etiqueta de Hugging Face indica `distilbert`) |
 | Parametros totales | 66.958.855 |
 | Parametros activos | no aplica (no consta que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -67,7 +67,7 @@ Las cifras siguientes son estimaciones derivadas del recuento de parametros (66,
 - VRAM estimada para inferencia: por debajo de 1 GB incluso en FP32, sumando activaciones y overhead del framework.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; modelos como RTX 3060, RTX 4090, T4, A10, A100 o H100 lo ejecutan sin problema, aunque estan sobredimensionadas para esta carga.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo y tambien en CPU.
-- Opciones de despliegue: al tratarse de un modelo tipo codificador (y no generativo), las vias habituales serian la libreria `transformers` de HuggingFace, ONNX Runtime, TorchScript o un servidor propio con FastAPI. Las herramientas orientadas a modelos generativos con formato GGUF (llama.cpp, Ollama) o los servidores de generacion como TGI no son el canal natural para un modelo de este tipo, aunque algunas admiten codificadores con limitaciones.
+- Opciones de despliegue: al tratarse de un modelo tipo codificador (y no generativo), las vias habituales serian la libreria `transformers` de Hugging Face, ONNX Runtime, TorchScript o un servidor propio con FastAPI. Las herramientas orientadas a modelos generativos con formato GGUF (llama.cpp, Ollama) o los servidores de generacion como TGI no son el canal natural para un modelo de este tipo, aunque algunas admiten codificadores con limitaciones.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -76,10 +76,10 @@ La comparacion se establece por tamano y familia arquitectonica, ya que no se co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| assemika/agentic-email-system | 66,96 M | no disponible | no disponible | HuggingFace (12 descargas) |
-| DistilBERT-base-uncased | 66,96 M | 512 tokens | Apache 2.0 | HuggingFace (ampliamente usado) |
-| BERT-base-uncased | 110 M | 512 tokens | Apache 2.0 | HuggingFace |
-| RoBERTa-base | 125 M | 512 tokens | MIT | HuggingFace |
+| assemika/agentic-email-system | 66,96 M | no disponible | no disponible | Hugging Face (12 descargas) |
+| DistilBERT-base-uncased | 66,96 M | 512 tokens | Apache 2.0 | Hugging Face (ampliamente usado) |
+| BERT-base-uncased | 110 M | 512 tokens | Apache 2.0 | Hugging Face |
+| RoBERTa-base | 125 M | 512 tokens | MIT | Hugging Face |
 
 Nota: los datos de contexto y licencia de los modelos comparativos corresponden a sus configuraciones estandar publicas; no se han verificado contra la ficha del modelo evaluado, que no los declara.
 
@@ -96,4 +96,4 @@ Nota: los datos de contexto y licencia de los modelos comparativos corresponden 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/assemika/agentic-email-system
+- Hugging Face: https://huggingface.co/assemika/agentic-email-system

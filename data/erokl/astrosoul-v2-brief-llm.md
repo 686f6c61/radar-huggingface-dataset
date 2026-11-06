@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AstroSoul-V2-Brief-LLM es un modelo publicado en HuggingFace por el usuario erokl bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio tiene un tamano de 0.0 GB, lo que sugiere que no se han subido pesos o que estos son de un tamano despreciable en el momento de la consulta.
+AstroSoul-V2-Brief-LLM es un modelo publicado en Hugging Face por el usuario erokl bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio tiene un tamano de 0.0 GB, lo que sugiere que no se han subido pesos o que estos son de un tamano despreciable en el momento de la consulta.
 
 Por el nombre ("Brief-LLM") podria tratarse de un modelo orientado a generar resumenes o respuestas breves, y "V2" indica una segunda iteracion de una familia previa, pero se trata de una inferencia a partir del identificador y no de un dato confirmado. No hay pipeline declarado, no hay idiomas declarados y el modelo no registra descargas ni likes.
 
@@ -67,4 +67,4 @@ No disponible. Sin datos de arquitectura, tamano o rendimiento no es posible est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/erokl/AstroSoul-V2-Brief-LLM
+- Hugging Face: https://huggingface.co/erokl/AstroSoul-V2-Brief-LLM

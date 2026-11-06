@@ -69,9 +69,9 @@ No disponible. El autor publica otro adaptador similar (`smolvla_2obj_2pos_lora_
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huaizong123/smolvla_2obj_2pos_lora_r6a6_2layers_40k
-- Modelo base en HuggingFace: https://huggingface.co/lerobot/smolvla_base (referenciado en los tags del adaptador)
+- Hugging Face: https://huggingface.co/huaizong123/smolvla_2obj_2pos_lora_r6a6_2layers_40k
+- Modelo base en Hugging Face: https://huggingface.co/lerobot/smolvla_base (referenciado en los tags del adaptador)
 - Web del proyecto SmolVLA: https://smolvla.net/index_en
 - Paper de SmolVLA: https://arxiv.org/abs/2506.01844
 - Paper sobre calculo de impacto ambiental (referenciado en la model card): https://arxiv.org/abs/1910.09700
-- Repositorio del autor en HuggingFace: https://huggingface.co/huaizong123/datasets
+- Repositorio del autor en Hugging Face: https://huggingface.co/huaizong123/datasets

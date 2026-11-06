@@ -73,5 +73,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: xling-latent-intervention/latent-intervention-llama-3.1-8b](https://huggingface.co/xling-latent-intervention/latent-intervention-llama-3.1-8b)
+- [Hugging Face: xling-latent-intervention/latent-intervention-llama-3.1-8b](https://huggingface.co/xling-latent-intervention/latent-intervention-llama-3.1-8b)
 - Artículo asociado: «Latent-Space Intervention for Cross-Lingual Factual Consistency: Consistency Improvements without Accuracy Drops» (Findings of EMNLP 2026) — no se proporciona URL en la información disponible.

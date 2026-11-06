@@ -60,5 +60,5 @@ No disponible. No se dispone de información sobre modelos comparables en la mis
 
 ## Enlaces
 
-- [Modelo cuantizado en HuggingFace](https://huggingface.co/mradermacher/qwen3-4b-ko-writing-GGUF)
+- [Modelo cuantizado en Hugging Face](https://huggingface.co/mradermacher/qwen3-4b-ko-writing-GGUF)
 - [Modelo base: sophie1738/qwen3-4b-ko-writing](https://huggingface.co/sophie1738/qwen3-4b-ko-writing)

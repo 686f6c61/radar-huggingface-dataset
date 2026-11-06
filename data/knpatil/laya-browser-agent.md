@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BroPilot Action-1 (tambien referenciado como Laya 421M Browser Agent) es un modelo de clasificacion de texto desarrollado por el usuario knpatil y publicado en HuggingFace bajo licencia Apache-2.0. Se trata de un ajuste fino de ModernBERT-large, un encoder transformer de aproximadamente 421 millones de parametros (421.293.830 exactos segun los pesos en safetensors), orientado a la prediccion de acciones estructuradas dentro de un navegador: seleccion de elementos del DOM, decision de siguientes pasos y control autonomo de la interfaz. El modelo se distribuye como un unico fichero `model.safetensors` de unos 1,68 GB en FP16.
+BroPilot Action-1 (tambien referenciado como Laya 421M Browser Agent) es un modelo de clasificacion de texto desarrollado por el usuario knpatil y publicado en Hugging Face bajo licencia Apache-2.0. Se trata de un ajuste fino de ModernBERT-large, un encoder transformer de aproximadamente 421 millones de parametros (421.293.830 exactos segun los pesos en safetensors), orientado a la prediccion de acciones estructuradas dentro de un navegador: seleccion de elementos del DOM, decision de siguientes pasos y control autonomo de la interfaz. El modelo se distribuye como un unico fichero `model.safetensors` de unos 1,68 GB en FP16.
 
 El problema que aborda es el de la automatizacion de navegador en tiempo real con latencia muy baja. El autor declara un objetivo de control por debajo de los 50 ms, lo que situa al modelo como motor de decision on-device para la extension de Chrome BroPilot. Al ser un encoder de clasificacion en lugar de un modelo generativo, su salida es una etiqueta o politica de accion, no texto libre, lo que reduce el coste de inferencia y permite ejecutarlo en CPU, Apple Silicon (MPS) y GPU NVIDIA (CUDA).
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada pero concreta: representa un enfoque de "agente
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es ModernBERT-large, un transformer de tipo encoder con atencion bidireccional, disenado como sustituto moderno de los BERT clasicos con soporte nativo de secuencias largas y kernels optimizados. Sobre esta base, el autor ha realizado un ajuste fino para producir "politicas de decision de navegador estructuradas"; es decir, la cabeza del modelo emite decisiones sobre elementos del DOM o acciones a ejecutar en lugar de representaciones genericas. El pipeline declarado en HuggingFace es `text-classification`, lo que es coherente con una salida de tipo clasificacion/politica.
+La arquitectura subyacente es ModernBERT-large, un transformer de tipo encoder con atencion bidireccional, disenado como sustituto moderno de los BERT clasicos con soporte nativo de secuencias largas y kernels optimizados. Sobre esta base, el autor ha realizado un ajuste fino para producir "politicas de decision de navegador estructuradas"; es decir, la cabeza del modelo emite decisiones sobre elementos del DOM o acciones a ejecutar en lugar de representaciones genericas. El pipeline declarado en Hugging Face es `text-classification`, lo que es coherente con una salida de tipo clasificacion/politica.
 
 La model card etiqueta el trabajo con `reinforcement-learning`, lo que sugiere un proceso de ajuste orientado a politicas (posiblemente RLHF/DPO o aprendizaje por refuerzo sobre trazas de navegacion), aunque el autor no detalla el dataset, el numero de tokens de entrenamiento, la composicion de los datos ni el metodo exacto de optimizacion. Tampoco se documentan innovaciones tecnicas adicionales como decodificacion especulativa o mecanismos de atencion alternativa mas alla de las propias de ModernBERT. Toda esta informacion debe considerarse no disponible.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BroPilot Action-1 (Laya 421M) | 421 M | no disponible (base hasta 8192) | Clasificacion de acciones de navegador | Apache-2.0 | HuggingFace, 0 descargas |
-| ModernBERT-large (base) | ~395 M | 8192 tokens | Encoder generico (clasificacion, retrieval, etc.) | Apache-2.0 | HuggingFace, ampliamente usado |
+| BroPilot Action-1 (Laya 421M) | 421 M | no disponible (base hasta 8192) | Clasificacion de acciones de navegador | Apache-2.0 | Hugging Face, 0 descargas |
+| ModernBERT-large (base) | ~395 M | 8192 tokens | Encoder generico (clasificacion, retrieval, etc.) | Apache-2.0 | Hugging Face, ampliamente usado |
 | Agentes de navegador multimodales basados en VLM | cientos de millones a decenas de miles de millones | variable | Control de navegador con vision | variable | no disponible en la informacion proporcionada |
 
 La comparacion directa con agentes de navegador multimodales no es posible con los datos disponibles, ya que no se aportan cifras de rendimiento ni detalles de arquitectura de las alternativas. La unica referencia solida es ModernBERT-large, del que este modelo hereda arquitectura y licencia.
@@ -80,6 +80,6 @@ La comparacion directa con agentes de navegador multimodales no es posible con l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/knpatil/laya-browser-agent
+- Hugging Face: https://huggingface.co/knpatil/laya-browser-agent
 - Extension de Chrome BroPilot: mencionada en la model card, sin enlace disponible
 - Paper, blog o repositorio adicionales: no disponibles en la informacion proporcionada

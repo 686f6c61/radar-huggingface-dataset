@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Enfoque | Entorno | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IRIS (este checkpoint) | World model con VQ-VAE + Transformer, política por imaginación | Atari Boxing (ALE/Boxing-v5) | 300 épocas, 60.000 pasos reales, RTX 3050 | MIT | HuggingFace, vía Simulusion |
+| IRIS (este checkpoint) | World model con VQ-VAE + Transformer, política por imaginación | Atari Boxing (ALE/Boxing-v5) | 300 épocas, 60.000 pasos reales, RTX 3050 | MIT | Hugging Face, vía Simulusion |
 | IRIS original (Micheli et al., 2023) | Mismo método | Atari 100k (conjunto de juegos) | Configuración del paper, ~+70 de recompensa | Código público del paper | Repositorio del paper |
 | DreamerV3 | World model recurrente con RSSM | Múltiples dominios (Atari, control continuo, Minecraft) | Entrenamiento a gran escala | MIT | Código y pesos públicos |
-| Simulusion (otros checkpoints) | Misma API, distintos world models | Varios entornos | Distintos | MIT | HuggingFace / galería del proyecto |
+| Simulusion (otros checkpoints) | Misma API, distintos world models | Varios entornos | Distintos | MIT | Hugging Face / galería del proyecto |
 
 La comparación con DreamerV3 es solo cualitativa: no se dispone de métricas comunes en la información proporcionada.
 
@@ -82,7 +82,7 @@ La comparación con DreamerV3 es solo cualitativa: no se dispone de métricas co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/simillusion/iris-atari-boxing
+- Modelo en Hugging Face: https://huggingface.co/simillusion/iris-atari-boxing
 - Paper de IRIS: https://arxiv.org/abs/2209.00588
 - Repositorio Simulusion: https://github.com/ParamThakkar123/simulusion
 - Galería de clips y curvas de aprendizaje: https://paramthakkar123.github.io/simulusion/gallery.html

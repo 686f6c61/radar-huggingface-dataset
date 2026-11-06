@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`weihan85/personal-retrieval` es un repositorio publicado en HuggingFace por el usuario weihan85 que contiene una implementación reducida de una arquitectura **Mixer** orientada a tareas de *retrieval* (recuperación de información). No se trata de un modelo entrenado, sino de un punto de partida reproducible: el propio autor indica en la model card que el checkpoint incluido (`model.safetensors`) es un estado de inicialización válido para pruebas de humo, y no un modelo con pesos entrenados ni evaluado. El repositorio declara la escala "large", pero el recuento real de parámetros del fichero safetensors es de **33.088 parámetros** (aproximadamente 132 KB en fp32), lo que sitúa el artefacto muy lejos de lo que habitualmente se entiende por un modelo "large".
+`weihan85/personal-retrieval` es un repositorio publicado en Hugging Face por el usuario weihan85 que contiene una implementación reducida de una arquitectura **Mixer** orientada a tareas de *retrieval* (recuperación de información). No se trata de un modelo entrenado, sino de un punto de partida reproducible: el propio autor indica en la model card que el checkpoint incluido (`model.safetensors`) es un estado de inicialización válido para pruebas de humo, y no un modelo con pesos entrenados ni evaluado. El repositorio declara la escala "large", pero el recuento real de parámetros del fichero safetensors es de **33.088 parámetros** (aproximadamente 132 KB en fp32), lo que sitúa el artefacto muy lejos de lo que habitualmente se entiende por un modelo "large".
 
 La relevancia de esta ficha es, por tanto, limitada y de naturaleza metodológica: sirve para documentar un artefacto de investigación reproducible, con configuración explícita de arquitectura y receta de experimento por defecto, pero sin capacidades funcionales demostradas. No hay pipeline declarado, no se especifican idiomas soportados y no se reclama ninguna puntuación de benchmark. Cualquier uso en producción requeriría primero entrenar el modelo con datos propios y documentar los resultados por separado de los valores por defecto que se envían en el repositorio.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| weihan85/personal-retrieval | 33.088 | no disponible | no disponible (sin evaluar) | apache-2.0 | HuggingFace, 13 descargas |
+| weihan85/personal-retrieval | 33.088 | no disponible | no disponible (sin evaluar) | apache-2.0 | Hugging Face, 13 descargas |
 | Modelos de retrieval entrenados (p. ej. familia CLIP o BLIP) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables para establecer una comparativa cuantitativa con alternativas de la misma categoría. La propia model card recomienda comparar contra una línea base de capacidad equivalente con idéntica exposición de datos, presupuesto de ajuste y semillas aleatorias, lo que implica que tal comparación aún no se ha realizado ni publicado.
@@ -95,5 +95,5 @@ No se dispone de datos verificables para establecer una comparativa cuantitativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/weihan85/personal-retrieval
+- Hugging Face: https://huggingface.co/weihan85/personal-retrieval
 - No se han encontrado enlaces relevantes al modelo, papers, blogs, repositorios de código o demos en la búsqueda web realizada. Los resultados devueltos por la búsqueda no guardan relación con el modelo ni con tareas de recuperación de información.

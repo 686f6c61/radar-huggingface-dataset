@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `seomh/opd-klear8b-qwen3moe30b-ot3math-note-ic0-step20` es un checkpoint de 8.190.735.360 parametros (aproximadamente 8,19 mil millones) publicado por el usuario seomh en HuggingFace. Se distribuye en formato safetensors con pesos en BF16 y esta etiquetado con la familia `qwen3`, lo que indica que parte de un modelo base de la serie Qwen 3. El repositorio ocupa 16,4 GB, coherente con un modelo denso de 8B en precision BF16 (8,19e9 x 2 bytes ≈ 16,4 GB).
+El modelo `seomh/opd-klear8b-qwen3moe30b-ot3math-note-ic0-step20` es un checkpoint de 8.190.735.360 parametros (aproximadamente 8,19 mil millones) publicado por el usuario seomh en Hugging Face. Se distribuye en formato safetensors con pesos en BF16 y esta etiquetado con la familia `qwen3`, lo que indica que parte de un modelo base de la serie Qwen 3. El repositorio ocupa 16,4 GB, coherente con un modelo denso de 8B en precision BF16 (8,19e9 x 2 bytes ≈ 16,4 GB).
 
 El nombre del repositorio sigue una convencion de nomenclatura que sugiere un experimento de destilacion o entrenamiento supervisado: un modelo estudiante de 8B (`klear8b` o `qwen3base8b`) entrenado a partir de un modelo profesor mayor, presumiblemente un Qwen3 MoE de 30B (`qwen3moe30b`), sobre un conjunto de datos de matematicas (`ot3math`, posiblemente OpenThoughts3). El sufijo `step20` indica que se trata del checkpoint correspondiente al paso 20 de entrenamiento, y `ic0` podria referirse a una configuracion de in-context o inicializacion concreta.
 
@@ -84,12 +84,12 @@ No se conocen comparaciones con modelos de referencia de la comunidad (Qwen3 8B 
 - Checkpoint intermedio (paso 20): es muy probable que el entrenamiento no haya convergido y que sus salidas sean de baja calidad en comparacion con versiones mas avanzadas de la misma serie.
 - Sesgos conocidos: no documentados, pero al derivar presumiblemente de Qwen 3 heredaria los sesgos del modelo base y de los datos de matematicas utilizados.
 - Nombre criptico: la convencion `opd`, `klear8b`, `ot3math`, `ic0` no esta explicada en ningun documento publico, lo que dificulta la reproducibilidad.
-- Sin soporte de Inference Providers: el modelo no esta desplegado en ningun proveedor de inferencia de HuggingFace.
+- Sin soporte de Inference Providers: el modelo no esta desplegado en ningun proveedor de inferencia de Hugging Face.
 - Uso recomendado unicamente para experimentacion e investigacion, no para produccion.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/seomh/opd-klear8b-qwen3moe30b-ot3math-note-ic0-step20
+- Repositorio Hugging Face: https://huggingface.co/seomh/opd-klear8b-qwen3moe30b-ot3math-note-ic0-step20
 - Checkpoint relacionado (paso 160): https://huggingface.co/seomh/opd-klear8b-qwen3moe30b-ot3math-step160
 - Checkpoint relacionado (paso 190): https://huggingface.co/seomh/opd-klear8b-qwen3moe30b-ot3math-step190
 - Checkpoint relacionado (paso 20, variante dm250): https://huggingface.co/seomh/opd-qwen3base8b-dm250-qwen3moe30b-ot3math-step20

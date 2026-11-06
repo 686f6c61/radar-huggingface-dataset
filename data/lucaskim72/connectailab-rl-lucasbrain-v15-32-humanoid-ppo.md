@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks estándar (por ejemplo, medias sobr
 
 | Modelo | Tipo | Entorno | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `lucaskim72/connectailab-rl-lucasbrain-v15.32-humanoid-ppo` | PPO, control continuo | `Humanoid-v5` | no disponible | no aplica | no disponible | HuggingFace, repo de 0.0 GB |
+| `lucaskim72/connectailab-rl-lucasbrain-v15.32-humanoid-ppo` | PPO, control continuo | `Humanoid-v5` | no disponible | no aplica | no disponible | Hugging Face, repo de 0.0 GB |
 | Política PPO de referencia de Stable-Baselines3 | PPO, control continuo | `Humanoid-v5` | MLP estándar (no declarado) | no aplica | MIT (SB3) | Código y pesos de ejemplo en la documentación de SB3 |
 | CleanRL PPO `ppo_continuous_action.py` | PPO, control continuo | `Humanoid-v5` | MLP configurable | no aplica | MIT (CleanRL) | Repositorio público con scripts |
 | Implementaciones de SAC/TD3 para `Humanoid-v5` | Off-policy, control continuo | `Humanoid-v5` | MLP configurable | no aplica | variable según repo | Repositorios de investigación |
@@ -102,7 +102,7 @@ La comparación con estas alternativas es cualitativa: no hay datos de retorno p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v15.32-humanoid-ppo
+- Hugging Face: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v15.32-humanoid-ppo
 - Entorno `Humanoid-v5` (Gymnasium): https://gymnasium.farama.org/environments/mujoco/humanoid/
 - MuJoCo: https://mujoco.org/
 - PPO (paper original de Schulman et al.): https://arxiv.org/abs/1707.06347

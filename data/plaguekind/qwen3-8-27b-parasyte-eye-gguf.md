@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparables publicados para este componente
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Plaguekind/Qwen3.8-27B-Parasyte-Eye-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Plaguekind/Qwen3.8-27B-Parasyte-Eye-GGUF
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive
 - Apoyo al desarrollo (Monero / RTX 5090 FUND): https://throne.com/plaguekind/item/073bace1-2e1a-4492-95e6-024b4da6459b
 - llama.cpp (runtime compatible): no disponible en la información proporcionada como enlace explícito; el proyecto se distribuye para su uso con `--mmproj`.

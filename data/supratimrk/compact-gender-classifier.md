@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CompactGenderClassifier es un clasificador de texto binario (masculino/femenino) a partir de nombres propios de persona, desarrollado por el usuario SupratimRK y publicado en HuggingFace bajo licencia MIT. A diferencia de las aproximaciones habituales basadas en BERT preentrenado, este modelo se ha entrenado desde cero (scratch) sobre un corpus auditado de 976.267 registros etiquetados, con el objetivo de ofrecer una inferencia extremadamente rapida y ligera sin dependencias externas.
+CompactGenderClassifier es un clasificador de texto binario (masculino/femenino) a partir de nombres propios de persona, desarrollado por el usuario SupratimRK y publicado en Hugging Face bajo licencia MIT. A diferencia de las aproximaciones habituales basadas en BERT preentrenado, este modelo se ha entrenado desde cero (scratch) sobre un corpus auditado de 976.267 registros etiquetados, con el objetivo de ofrecer una inferencia extremadamente rapida y ligera sin dependencias externas.
 
 El modelo es un transformer encoder de 2 capas con 128 dimensiones ocultas, 4 cabezas de atencion y un total de 532.482 parametros. Su vocabulario WordPiece propio de 4.000 tokens, junto con embeddings factorizados y pooling dual (media + maximo enmascarados), reduce el peso final a unos 632 KB en formato ONNX INT8. La latencia declarada es de 0,475 ms por consulta en un unico hilo de CPU, con un throughput de 2.105 consultas por segundo.
 
@@ -106,7 +106,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SupratimRK/compact-gender-classifier
+- Hugging Face: https://huggingface.co/SupratimRK/compact-gender-classifier
 - GitHub: https://github.com/SupratimRK/.model.base.gc
 - ONNX Runtime: https://onnxruntime.ai/
 - Licencia MIT: https://huggingface.co/SupratimRK/compact-gender-classifier/blob/main/LICENSE

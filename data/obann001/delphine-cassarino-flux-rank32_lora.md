@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Delphine Cassarino Flux Rank32 LoRA es un adaptador LoRA de tipo personaje (character LoRA) entrenado sobre el modelo base `black-forest-labs/FLUX.1-dev`. Lo publica el usuario obann001 en HuggingFace bajo el identificador `obann001/Delphine-Cassarino-Flux-Rank32_lora`, con licencia MIT. Su funcion es sesgar la generacion de FLUX.1-dev hacia una identidad concreta de retrato (denominada Delphine Cassarino) mediante un token disparador (`dcsrn`), manteniendo la composicion general del modelo base.
+Delphine Cassarino Flux Rank32 LoRA es un adaptador LoRA de tipo personaje (character LoRA) entrenado sobre el modelo base `black-forest-labs/FLUX.1-dev`. Lo publica el usuario obann001 en Hugging Face bajo el identificador `obann001/Delphine-Cassarino-Flux-Rank32_lora`, con licencia MIT. Su funcion es sesgar la generacion de FLUX.1-dev hacia una identidad concreta de retrato (denominada Delphine Cassarino) mediante un token disparador (`dcsrn`), manteniendo la composicion general del modelo base.
 
 El adaptador tiene rango 32 con alpha 128, se entrena en precision bf16 y ocupa 306.433.880 bytes (aproximadamente 153 millones de parametros estimados a partir del tamano del fichero). El checkpoint subido corresponde al paso `step01766` de una cadena de entrenamiento local ejecutada con ComfyUI (workflow FluxTrainer), y se selecciona por comparacion A/B con el checkpoint anterior `step00800`.
 
@@ -68,10 +68,10 @@ La model card menciona comparaciones A/B de humo (smoke) entre `step00800` y `st
 
 | Modelo | Tipo | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Delphine Cassarino Flux Rank32 LoRA (este) | LoRA de personaje sobre FLUX.1-dev | ~153 M (adaptador), 0,3 GB | MIT (adaptador) | HuggingFace |
-| FLUX.1-dev (base sin LoRA) | Transformer de flujo rectificado | 12 B | Licencia no comercial de FLUX.1-dev | HuggingFace |
+| Delphine Cassarino Flux Rank32 LoRA (este) | LoRA de personaje sobre FLUX.1-dev | ~153 M (adaptador), 0,3 GB | MIT (adaptador) | Hugging Face |
+| FLUX.1-dev (base sin LoRA) | Transformer de flujo rectificado | 12 B | Licencia no comercial de FLUX.1-dev | Hugging Face |
 | Delphine Flux LoRA `step00800` | LoRA de personaje (checkpoint previo) | no disponible | MIT (adaptador) | Referenciado por el autor, no como repo separado confirmado |
-| Otras character LoRA sobre FLUX | LoRA de personaje | Variable segun autor | Variable | HuggingFace |
+| Otras character LoRA sobre FLUX | LoRA de personaje | Variable segun autor | Variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/obann001/Delphine-Cassarino-Flux-Rank32_lora
+- Hugging Face: https://huggingface.co/obann001/Delphine-Cassarino-Flux-Rank32_lora
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Imagenes de ejemplo en el repo: `samples/delphine-step00800-smoke.png` y `samples/delphine-step01766-smoke.png`
 - Referencias locales citadas por el autor (no enlazadas publicamente): `../framework/assets/delphine-step00800-smoke.png`, `../framework/assets/delphine-step01766-smoke.png`, `../framework/portal-nemokid.html`

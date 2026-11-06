@@ -89,18 +89,18 @@ Frente a motores de ajedrez clásicos como Stockfish, la comparación no es homo
 - Riesgo de alucinación en el sentido de evaluaciones o jugadas plausibles pero incorrectas: al ser un modelo de 230M de parámetros y una sola pasada, su precisión táctica es limitada sin búsqueda externa (~1500 Elo en política directa).
 - Idiomas: etiquetado únicamente para inglés y sin capacidades multilingües declaradas; no es apto para tareas de texto general.
 - Dependencia de plataforma: el formato MLX limita la ejecución a Apple Silicon, lo que excluye servidores Linux con GPU NVIDIA sin conversión previa.
-- Licencia: LFM Open License v1.0, heredada del modelo base. Es una licencia con condiciones específicas (el campo de HuggingFace indica `license: other`); antes de un uso comercial hay que revisar el fichero LICENSE del repositorio, ya que en la información disponible no se detallan los términos.
+- Licencia: LFM Open License v1.0, heredada del modelo base. Es una licencia con condiciones específicas (el campo de Hugging Face indica `license: other`); antes de un uso comercial hay que revisar el fichero LICENSE del repositorio, ya que en la información disponible no se detallan los términos.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado en octubre de 2026; no hay evidencia de uso en producción ni validación independiente de esta cuantización concreta.
-- La búsqueda web realizada no devolvió resultados técnicos relevantes sobre el modelo (solo páginas de inicio de sesión de Gmail), por lo que no se ha podido contrastar información adicional externa a HuggingFace.
+- La búsqueda web realizada no devolvió resultados técnicos relevantes sobre el modelo (solo páginas de inicio de sesión de Gmail), por lo que no se ha podido contrastar información adicional externa a Hugging Face.
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/janihal/LFM2.5-230M-Chess-oQ8
+- Modelo cuantizado en Hugging Face: https://huggingface.co/janihal/LFM2.5-230M-Chess-oQ8
 - Modelo original ChessLFM: https://huggingface.co/mlabonne/LFM2.5-230M-Chess
 - Modelo base de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-230M-Base
 - Variante ONNX: https://huggingface.co/mlabonne/LFM2.5-230M-Chess-ONNX
 - Articulo de Maxime Labonne: https://maximelabonne.substack.com/p/chesslfm-2000-elo-in-230m-params
-- Demo en HuggingFace Spaces: https://hf.co/spaces/mlabonne/ChessLFM
+- Demo en Hugging Face Spaces: https://hf.co/spaces/mlabonne/ChessLFM
 - Herramienta de cuantización oQ/oMLX: https://github.com/jundot/omlx
 - Librería MLX: https://github.com/ml-explore/mlx
 - Librería mlx-lm: https://github.com/ml-explore/mlx-lm

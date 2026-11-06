@@ -4,7 +4,7 @@
 
 Qwen3.8-27B es un modelo de lenguaje causal denso con codificador de visión, desarrollado por el equipo de Qwen (Alibaba) y publicado en agosto de 2026 como parte de la generación Qwen3.8. Se trata de un modelo de 27 000 millones de parámetros que integra comprensión de imagen y vídeo de forma nativa, junto con capacidades de razonamiento controlable, y está orientado a tareas de codificación, trabajo profesional, investigación y ejecución de agentes de larga duración. Su arquitectura híbrida combina capas de atención lineal (Gated DeltaNet) con capas de atención completa (Gated Attention), lo que permite una ventana de contexto nativa de 262 144 tokens, extensible hasta 1 000 000.
 
-El modelo se distribuye bajo licencia Apache-2.0, con pesos en formato safetensors compatibles con Transformers, vLLM, SGLang y TokenSpeed. Su tamaño compacto y su licencia permisiva lo convierten en una opción atractiva para despliegue local en GPU de consumo y para integración en pipelines de producción. La versión alojada en HuggingFace (CharlesXmf/Qwen3.8-27B) es un mirror de los pesos oficiales, sin modificaciones adicionales.
+El modelo se distribuye bajo licencia Apache-2.0, con pesos en formato safetensors compatibles con Transformers, vLLM, SGLang y TokenSpeed. Su tamaño compacto y su licencia permisiva lo convierten en una opción atractiva para despliegue local en GPU de consumo y para integración en pipelines de producción. La versión alojada en Hugging Face (CharlesXmf/Qwen3.8-27B) es un mirror de los pesos oficiales, sin modificaciones adicionales.
 
 ## Especificaciones tecnicas
 
@@ -77,12 +77,12 @@ Según el análisis de ExplainX, Qwen3.8-27B supera a Qwen3.6-27B en evaluacione
 - Los idiomas soportados no están documentados en la model card; se recomienda verificar la compatibilidad con el idioma de destino antes de usarlo en producción.
 - El modelo es de tipo visión-lenguaje, pero las capacidades de audio no están confirmadas; la model card solo menciona imagen y vídeo.
 - La licencia Apache-2.0 permite uso comercial, pero es recomendable revisar los términos de la licencia para asegurar el cumplimiento en aplicaciones distribuidas.
-- El repo en HuggingFace (CharlesXmf/Qwen3.8-27B) tiene 0 descargas y 0 likes, lo que sugiere que es un mirror reciente o no verificado; se recomienda descargar los pesos desde el repositorio oficial de Qwen para garantizar la integridad.
+- El repo en Hugging Face (CharlesXmf/Qwen3.8-27B) tiene 0 descargas y 0 likes, lo que sugiere que es un mirror reciente o no verificado; se recomienda descargar los pesos desde el repositorio oficial de Qwen para garantizar la integridad.
 - No se especifican los requisitos mínimos de hardware para la versión con contexto de 1M tokens; la extensión a 1M probablemente requiera técnicas de atención dispersa o cuantización agresiva.
 
 ## Enlaces
 
-- Repositorio HuggingFace (mirror): https://huggingface.co/CharlesXmf/Qwen3.8-27B
+- Repositorio Hugging Face (mirror): https://huggingface.co/CharlesXmf/Qwen3.8-27B
 - Página en LM Studio: https://lmstudio.ai/models/qwen/qwen3.8-27b
 - Blog de AMD sobre ejecución local: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Seguimiento de lanzamiento y benchmarks: https://aireleasetracker.com/model/qwen/qwen3.8-27b

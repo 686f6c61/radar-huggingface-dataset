@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/agentic-ptb/sol-high.h040.opd-tb1-selected-regularized-offpolicy.step_1)
+- [Repositorio en Hugging Face](https://huggingface.co/agentic-ptb/sol-high.h040.opd-tb1-selected-regularized-offpolicy.step_1)
 - [Paper: Self-Distilled Agentic Reinforcement Learning (arXiv)](https://arxiv.org/html/2605.15155)
 - [Repositorio EasyOPD - experiments/02_agentic_opd](https://github.com/lds-ustc/EasyOPD/blob/main/experiments/02_agentic_opd/README.md)
 - [Colección de papers sobre on-policy distillation](https://github.com/chrisliu298/awesome-on-policy-distillation)

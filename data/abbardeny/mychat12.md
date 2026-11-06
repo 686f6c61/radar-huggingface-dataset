@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`abbardeny/mychat12` es un modelo publicado en HuggingFace por el usuario abbardeny bajo licencia Apache 2.0. La model card asociada es prácticamente vacía: únicamente contiene la declaración de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni capacidades. No se dispone de información sobre el pipeline de la tarea, los idiomas soportados ni el propósito del modelo.
+`abbardeny/mychat12` es un modelo publicado en Hugging Face por el usuario abbardeny bajo licencia Apache 2.0. La model card asociada es prácticamente vacía: únicamente contiene la declaración de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni capacidades. No se dispone de información sobre el pipeline de la tarea, los idiomas soportados ni el propósito del modelo.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en la misma fecha (3 de noviembre de 2026), lo que sugiere una publicación reciente sin difusión ni validación por parte de la comunidad. No hay evidencia de que se trate de un modelo entrenado desde cero, de un fine-tuning sobre una base existente o de un artefacto de prueba.
 
@@ -65,5 +65,5 @@ No disponible. Al desconocerse el tamaño, la arquitectura y el propósito del m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/abbardeny/mychat12
+- Repositorio en Hugging Face: https://huggingface.co/abbardeny/mychat12
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

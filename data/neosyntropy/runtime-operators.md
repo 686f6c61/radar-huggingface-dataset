@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Neosyntropy/runtime-operators
+- Modelo en Hugging Face: https://huggingface.co/Neosyntropy/runtime-operators
 - Runtime Structure: https://huggingface.co/Neosyntropy/runtime-structure
 - Runtime Route: https://huggingface.co/Neosyntropy/runtime-route
 - Runtime Deterministic Reasoning: https://huggingface.co/Neosyntropy/runtime-deterministic-reasoning

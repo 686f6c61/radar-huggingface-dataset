@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Miko-v2-m7-GGUF es un ajuste fino (fine-tune) del modelo Mistral-7B-Instruct-v0.3, publicado por el usuario ricer0ll en HuggingFace y distribuido en formato GGUF para su uso con llama.cpp. Los nombres de los archivos incluidos en el repositorio (`mistral-7b-instruct-v0.3.Q8_0.gguf` y `mistral-7b-instruct-v0.3.Q4_K_M.gguf`) identifican de forma explícita el modelo base sobre el que se ha trabajado. El modelo cuenta con 7.248.023.552 parametros (unos 7,25 mil millones) y la model card indica que fue ajustado y convertido a GGUF mediante Unsloth.
+Miko-v2-m7-GGUF es un ajuste fino (fine-tune) del modelo Mistral-7B-Instruct-v0.3, publicado por el usuario ricer0ll en Hugging Face y distribuido en formato GGUF para su uso con llama.cpp. Los nombres de los archivos incluidos en el repositorio (`mistral-7b-instruct-v0.3.Q8_0.gguf` y `mistral-7b-instruct-v0.3.Q4_K_M.gguf`) identifican de forma explícita el modelo base sobre el que se ha trabajado. El modelo cuenta con 7.248.023.552 parametros (unos 7,25 mil millones) y la model card indica que fue ajustado y convertido a GGUF mediante Unsloth.
 
 El proposito del modelo es ofrecer una variante conversacional del citado modelo base, lista para desplegar en entornos locales mediante llama.cpp u Ollama, ya que el repositorio incluye un Modelfile de Ollama. Se distribuye unicamente en dos cuantizaciones (Q8_0 y Q4_K_M), lo que limita las opciones de despliegue a equipos con recursos moderados frente a otras publicaciones que ofrecen un abanico mas amplio de cuantizaciones.
 
@@ -89,7 +89,7 @@ Las cifras de parametros y contexto de los modelos comparados corresponden a sus
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ricer0ll/Miko-v2-m7-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ricer0ll/Miko-v2-m7-GGUF
 - Unsloth (libreria utilizada para el ajuste y la conversion): https://github.com/unslothai/unsloth
 - Modelo base Mistral-7B-Instruct-v0.3: no se ha encontrado un enlace directo en la busqueda web realizada
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la busqueda web realizada; los resultados obtenidos correspondian a dominios no relacionados con el modelo.

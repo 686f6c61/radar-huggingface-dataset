@@ -4,7 +4,7 @@
 
 El repositorio `sarahwilvop/model_219365031_clip_giant` aloja un artefacto denominado `model_219365031_clip_giant.py`, descrito por su autor como una implementación a escala "giant" de la arquitectura CLIP orientada a tareas de generación. Según la model card, emplea atención lineal, fusión de tensores, activación Swish, normalización LayerNorm e inicialización truncada normal. El entrenamiento utiliza el optimizador LAMB con un programador de tasa de aprendizaje polinómico. No se especifican parámetros totales, tamaño de contexto, idiomas soportados ni formato de pesos, y el único archivo es un script en Python, no un conjunto de pesos de modelo. La licencia es CC-BY-4.0.
 
-La relevancia actual es limitada: se trata de un artefacto de código sin información sobre su entrenamiento, validación o uso práctico. No hay descargas ni likes en HuggingFace, y los resultados de búsqueda web no ofrecen documentación adicional. Para desarrolladores e investigadores, esta ficha resume lo poco que se conoce y señala las carencias de información que impiden una evaluación técnica seria.
+La relevancia actual es limitada: se trata de un artefacto de código sin información sobre su entrenamiento, validación o uso práctico. No hay descargas ni likes en Hugging Face, y los resultados de búsqueda web no ofrecen documentación adicional. Para desarrolladores e investigadores, esta ficha resume lo poco que se conoce y señala las carencias de información que impiden una evaluación técnica seria.
 
 ## Especificaciones técnicas
 
@@ -65,6 +65,6 @@ No se puede establecer una comparativa porque no se dispone de datos reales sobr
 
 ## Enlaces
 
-- [HuggingFace - sarahwilvop/model_219365031_clip_giant](https://huggingface.co/sarahwilvop/model_219365031_clip_giant)
+- [Hugging Face - sarahwilvop/model_219365031_clip_giant](https://huggingface.co/sarahwilvop/model_219365031_clip_giant)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web. Los resultados de búsqueda (CivArchive, DeviantArt, Civitai, ChatGPT) no tienen relación con este modelo.

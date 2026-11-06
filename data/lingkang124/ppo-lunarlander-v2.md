@@ -6,7 +6,7 @@
 
 El modelo es relevante únicamente como artefacto de referencia y reproducibilidad en el contexto de investigación y docencia en RL: sirve para validar pipelines de entrenamiento con PPO, para comparar hiperparámetros o para disponer de un baseline con recompensa media declarada de 277,90 ± 25,52, valor que supera el umbral habitual de resolución del entorno (200 puntos) y que se aproxima al máximo práctico del juego. No tiene aplicación como modelo de propósito general ni como componente de sistemas de IA generativa.
 
-La ficha se limita, por tanto, a describir el agente y su política, sus especificaciones de entrenamiento e inferencia, y las advertencias pertinentes sobre su alcance. La información publicada por el autor es mínima: la model card contiene un esqueleto de código incompleto (`TODO: Add your code`) y el repositorio tiene un tamaño declarado de 0,0 GB, lo que sugiere que los pesos pueden no estar efectivamente subidos o que el tamaño es inferior a la precisión de redondeo de HuggingFace.
+La ficha se limita, por tanto, a describir el agente y su política, sus especificaciones de entrenamiento e inferencia, y las advertencias pertinentes sobre su alcance. La información publicada por el autor es mínima: la model card contiene un esqueleto de código incompleto (`TODO: Add your code`) y el repositorio tiene un tamaño declarado de 0,0 GB, lo que sugiere que los pesos pueden no estar efectivamente subidos o que el tamaño es inferior a la precisión de redondeo de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La ficha se limita, por tanto, a describir el agente y su política, sus especif
 
 El agente emplea PPO, un algoritmo de gradiente de política con recorte de la ratio de probabilidad (*clipped surrogate objective*) y optimización de una función de valor crítica. La política se implementa como una red MLP que mapea el vector de observación de 8 dimensiones a una distribución categórica sobre 4 acciones discretas, y un crítico que estima el valor del estado. La arquitectura concreta (número de capas, unidades por capa, función de activación) no se especifica en la información disponible.
 
-No se documentan ni el número total de pasos de entrenamiento, ni los hiperparámetros de PPO (learning rate, `n_steps`, `batch_size`, `gamma`, `gae_lambda`, `clip_range`, coeficiente de entropía), ni la semilla utilizada, ni la composición exacta del entorno (versión de Gymnasium, `continuous=False`). Tampoco se indica si se aplicó normalización de observaciones/recompensas ni *reward shaping* adicional. La única métrica declarada es la recompensa media de evaluación de 277,90 ± 25,52, marcada como `verified: false` en el `model-index`, es decir, no verificada de forma independiente por HuggingFace.
+No se documentan ni el número total de pasos de entrenamiento, ni los hiperparámetros de PPO (learning rate, `n_steps`, `batch_size`, `gamma`, `gae_lambda`, `clip_range`, coeficiente de entropía), ni la semilla utilizada, ni la composición exacta del entorno (versión de Gymnasium, `continuous=False`). Tampoco se indica si se aplicó normalización de observaciones/recompensas ni *reward shaping* adicional. La única métrica declarada es la recompensa media de evaluación de 277,90 ± 25,52, marcada como `verified: false` en el `model-index`, es decir, no verificada de forma independiente por Hugging Face.
 
 ## Capacidades
 
@@ -68,7 +68,7 @@ No se han publicado otros resultados de benchmarks (por ejemplo, recompensa por 
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `lingkang124/ppo-LunarLander-v2` | PPO | LunarLander-v2 | no disponible | no aplica | no disponible | HuggingFace Hub |
+| `lingkang124/ppo-LunarLander-v2` | PPO | LunarLander-v2 | no disponible | no aplica | no disponible | Hugging Face Hub |
 | Agentes PPO de referencia de stable-baselines3 RL Zoo | PPO | LunarLander-v2 | no disponible | no aplica | MIT (código de la librería) | GitHub / RL Zoo |
 | Agentes A2C/DQN sobre LunarLander-v2 | A2C / DQN | LunarLander-v2 | no disponible | no aplica | MIT (código) | GitHub / RL Zoo |
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lingkang124/ppo-LunarLander-v2
+- Hugging Face: https://huggingface.co/lingkang124/ppo-LunarLander-v2
 - stable-baselines3 (librería): https://github.com/DLR-RM/stable-baselines3
 - `huggingface_sb3` (utilidad de carga): https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v2 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/

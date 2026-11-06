@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emee-ai/LocateAnything-3B-bf16
+- Modelo en Hugging Face: https://huggingface.co/emee-ai/LocateAnything-3B-bf16
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/LocateAnything-3B
 - Pagina del proyecto en NVIDIA Research: https://research.nvidia.com/labs/lpr/locate-anything/
 - Repositorio Eagle VLM: https://github.com/NVlabs/EAGLE

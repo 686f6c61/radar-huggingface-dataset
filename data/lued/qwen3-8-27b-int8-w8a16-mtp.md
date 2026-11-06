@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativos entre estas versiones. La mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lued/Qwen3.8-27B-INT8-W8A16-MTP
+- Repositorio Hugging Face: https://huggingface.co/lued/Qwen3.8-27B-INT8-W8A16-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog de AMD sobre ejecucion de Qwen3.8-27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Guia de Yottalabs sobre Qwen3.8-27B: https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026

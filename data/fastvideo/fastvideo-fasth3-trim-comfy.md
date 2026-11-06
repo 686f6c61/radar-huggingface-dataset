@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Relacion | Bloques / pasos | Tamano de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FastVideo FastH3 Trim Comfy (este) | Reempaquetado para ComfyUI | 42 bloques, 8 pasos | 11,9-37,5 GB segun cuantizacion | minimax-h3-community-license-agreement | HuggingFace, uso via ComfyUI |
-| FastVideo/FastVideo-FastH3-Trim-8-Step | Modelo original del que deriva este repo | 42 bloques, 8 pasos | no disponible | no disponible en la informacion | HuggingFace |
-| MiniMaxAI/MiniMax-H3 | Modelo base | 50 bloques | 4,2x mayor que la version Trim | minimax-h3-community-license-agreement | HuggingFace |
-| FastVideo/FastVideo-FastH3-Comfy | Reempaquetado de otra variante FastH3 | no disponible | no disponible | no disponible en la informacion | HuggingFace |
+| FastVideo FastH3 Trim Comfy (este) | Reempaquetado para ComfyUI | 42 bloques, 8 pasos | 11,9-37,5 GB segun cuantizacion | minimax-h3-community-license-agreement | Hugging Face, uso via ComfyUI |
+| FastVideo/FastVideo-FastH3-Trim-8-Step | Modelo original del que deriva este repo | 42 bloques, 8 pasos | no disponible | no disponible en la informacion | Hugging Face |
+| MiniMaxAI/MiniMax-H3 | Modelo base | 50 bloques | 4,2x mayor que la version Trim | minimax-h3-community-license-agreement | Hugging Face |
+| FastVideo/FastVideo-FastH3-Comfy | Reempaquetado de otra variante FastH3 | no disponible | no disponible | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de rendimiento comparado (benchmarks) entre estas variantes en la informacion proporcionada.
 
@@ -95,13 +95,13 @@ No se dispone de datos de rendimiento comparado (benchmarks) entre estas variant
 - La licencia es `minimax-h3-community-license-agreement`, no una licencia de codigo abierto estandar. Es imprescindible revisar el texto completo antes de cualquier uso comercial.
 - No se especifican los idiomas soportados ni el comportamiento del modelo con prompts en castellano.
 - El repositorio completo ocupa 190,9 GB, por lo que conviene descargar unicamente los ficheros necesarios.
-- El modelo esta creado en fecha 2026-10-06 segun los metadatos de HuggingFace, con solo 33 descargas y 2 likes, lo que indica una adopcion muy temprana y una comunidad de validacion practicamente inexistente.
+- El modelo esta creado en fecha 2026-10-06 segun los metadatos de Hugging Face, con solo 33 descargas y 2 likes, lo que indica una adopcion muy temprana y una comunidad de validacion practicamente inexistente.
 - No se documentan sesgos conocidos, limites de contexto ni requisitos de VRAM exactos para el conjunto text encoder + VAE + difusion.
 - Requiere ComfyUI 0.36.0 o superior; versiones anteriores pueden no reconocer los nodos ni el formato de los ficheros.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FastVideo/FastVideo-FastH3-Trim-Comfy
+- Repositorio Hugging Face: https://huggingface.co/FastVideo/FastVideo-FastH3-Trim-Comfy
 - Modelo del que deriva: https://huggingface.co/FastVideo/FastVideo-FastH3-Trim-8-Step
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Texto de la licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE

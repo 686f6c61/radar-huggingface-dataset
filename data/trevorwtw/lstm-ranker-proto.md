@@ -55,5 +55,5 @@ No disponible. No se puede comparar este repositorio con otros modelos porque no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [trevorwtw/lstm-ranker-proto](https://huggingface.co/trevorwtw/lstm-ranker-proto)
+- Repositorio en Hugging Face: [trevorwtw/lstm-ranker-proto](https://huggingface.co/trevorwtw/lstm-ranker-proto)
 - No hay enlaces adicionales (papers, blogs, repos, demos) en la información proporcionada.

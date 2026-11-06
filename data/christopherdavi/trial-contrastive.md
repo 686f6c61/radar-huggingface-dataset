@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`christopherdavi/trial-contrastive` es una implementación mínima de la arquitectura Beit (BERT pre-training of image transformers) orientada a aprendizaje contrastivo, publicada por el usuario christopherdavi en HuggingFace. No se trata de un modelo entrenado: el repositorio se presenta explícitamente como un punto de partida reproducible ("the tiny variant is a reproducible starting point, not a trained model release") que incluye el código, la configuración de arquitectura y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`christopherdavi/trial-contrastive` es una implementación mínima de la arquitectura Beit (BERT pre-training of image transformers) orientada a aprendizaje contrastivo, publicada por el usuario christopherdavi en Hugging Face. No se trata de un modelo entrenado: el repositorio se presenta explícitamente como un punto de partida reproducible ("the tiny variant is a reproducible starting point, not a trained model release") que incluye el código, la configuración de arquitectura y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El modelo cuenta con 24.832 parámetros totales, según los datos reales del fichero `model.safetensors` incluido en el repositorio, lo que lo sitúa en la escala "tiny" declarada por el autor. La arquitectura usa atención multi-query, fusión de bajo rango (low rank), activación ReLU y normalización BatchNorm. El repositorio ocupa 0.0 GB, tiene 0 descargas y 0 likes, y se distribuye bajo licencia Apache 2.0.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| christopherdavi/trial-contrastive | 24.832 | no disponible | sin benchmarks publicados; checkpoint sin entrenar | apache-2.0 | HuggingFace, 0 descargas |
+| christopherdavi/trial-contrastive | 24.832 | no disponible | sin benchmarks publicados; checkpoint sin entrenar | apache-2.0 | Hugging Face, 0 descargas |
 | Beit-tiny (referencia arquitectonica de la familia) | no disponible en la informacion proporcionada | no disponible | checkpoint entrenado y publicado por sus autores | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
-| Otras implementaciones tiny de transformers en timm o HuggingFace | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
+| Otras implementaciones tiny de transformers en timm o Hugging Face | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa fiable. La diferencia esencial frente a cualquier alternativa entrenada es que este repositorio no ofrece pesos funcionales.
 
@@ -84,6 +84,6 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/christopherdavi/trial-contrastive
+- Hugging Face: https://huggingface.co/christopherdavi/trial-contrastive
 - No se han encontrado en la busqueda web enlaces relevantes para este modelo. Los resultados devueltos corresponden a articulos sobre inteligencia artificial aplicada a ensayos clinicos y a estudios de radioterapia y glioblastoma, sin relacion con `christopherdavi/trial-contrastive`.
 - Documentacion de referencia de la arquitectura Beit: no disponible en la informacion proporcionada.

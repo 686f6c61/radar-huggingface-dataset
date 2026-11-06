@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque temporal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chrononauts 3B 2023-01 sft | 2,8 B | 8.192 tokens | Congelado en enero de 2023, corpus y post-entrenamiento limitados al corte | other | HuggingFace (mattwang123) |
-| Chrononauts 3B 2023-01 init | 2,8 B | 8.192 tokens | Mismo corte, etapa previa a SFT | other | HuggingFace (mattwang123) |
-| Chrononauts 3B 2023-01 agent | 2,8 B | 8.192 tokens | Mismo corte, etapa posterior de agente | other | HuggingFace (mattwang123) |
-| Chrononauts 3B (otros cortes: 2013-05 a 2024-07) | 2,8 B | 8.192 tokens | Distintas fechas de congelación | other | HuggingFace (mattwang123) |
+| Chrononauts 3B 2023-01 sft | 2,8 B | 8.192 tokens | Congelado en enero de 2023, corpus y post-entrenamiento limitados al corte | other | Hugging Face (mattwang123) |
+| Chrononauts 3B 2023-01 init | 2,8 B | 8.192 tokens | Mismo corte, etapa previa a SFT | other | Hugging Face (mattwang123) |
+| Chrononauts 3B 2023-01 agent | 2,8 B | 8.192 tokens | Mismo corte, etapa posterior de agente | other | Hugging Face (mattwang123) |
+| Chrononauts 3B (otros cortes: 2013-05 a 2024-07) | 2,8 B | 8.192 tokens | Distintas fechas de congelación | other | Hugging Face (mattwang123) |
 
 No se dispone de datos de benchmarks que permitan comparar su rendimiento con modelos de propósito general del mismo tamaño.
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks que permitan comparar su rendimiento con mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattwang123/chrononauts-3b-2023-01-sft
+- Modelo en Hugging Face: https://huggingface.co/mattwang123/chrononauts-3b-2023-01-sft
 - Repositorio hermano (init): https://huggingface.co/mattwang123/chrononauts-3b-2023-01-init
 - Repositorio hermano (agent): https://huggingface.co/mattwang123/chrononauts-3b-2023-01-agent
 - Modelo de embeddings del corpus: https://huggingface.co/BAAI/bge-base-en-v1.5

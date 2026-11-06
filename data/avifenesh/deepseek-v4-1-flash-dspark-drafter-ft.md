@@ -83,7 +83,7 @@ El autor señala que las cifras offline son superiores a las en vivo en esta con
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-DSpark-drafter-ft | Drafter MTP afinado | no disponible | no disponible | MIT | HuggingFace |
+| DeepSeek-V4.1-Flash-DSpark-drafter-ft | Drafter MTP afinado | no disponible | no disponible | MIT | Hugging Face |
 | Drafter oficial de DeepSeek-V4.1-Flash-1017 | Drafter MTP | no disponible | no disponible | MIT (según base) | Incluido en el checkpoint oficial |
 | Otros drafters especulativos de la familia DeepSeek | Drafter MTP | no disponible | no disponible | no disponible | no disponible |
 
@@ -103,5 +103,5 @@ No se dispone de datos de benchmarks de drafters alternativos comparables en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Avifenesh/DeepSeek-V4.1-Flash-DSpark-drafter-ft
+- Hugging Face: https://huggingface.co/Avifenesh/DeepSeek-V4.1-Flash-DSpark-drafter-ft
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017

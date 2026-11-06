@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio, publicado por el usuario `abigai-lsanch` en HuggingFace, no contiene un modelo de aprendizaje automático entrenado, sino un conjunto estructurado de notas de investigación sobre fusión cross-modal (cross-modal fusion). La model card lo describe explícitamente como un documento exploratorio que recoge el alcance de una pregunta de investigación, posibles factores de confusión, una propuesta de comparación con líneas base, benchmarks públicos relevantes, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. No se incluye ningún checkpoint, código, ni resultados experimentales.
+Este repositorio, publicado por el usuario `abigai-lsanch` en Hugging Face, no contiene un modelo de aprendizaje automático entrenado, sino un conjunto estructurado de notas de investigación sobre fusión cross-modal (cross-modal fusion). La model card lo describe explícitamente como un documento exploratorio que recoge el alcance de una pregunta de investigación, posibles factores de confusión, una propuesta de comparación con líneas base, benchmarks públicos relevantes, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. No se incluye ningún checkpoint, código, ni resultados experimentales.
 
 El repositorio tiene un tamaño de 0.0 GB y los metadatos indican 24.832 parámetros totales, un valor que probablemente corresponde al número de caracteres o tokens de los archivos de texto, no a pesos de red neuronal. La licencia es CC-BY-4.0. Dado que no hay un modelo real, esta ficha documenta el contenido del repositorio y su utilidad como material de referencia, no como un artefacto desplegable.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No disponible. No existe un modelo comparable porque este repositorio no es un modelo. Las alternativas serían otros conjuntos de notas de investigación sobre fusión cross-modal, pero no se dispone de información sobre repositorios equivalentes en HuggingFace.
+No disponible. No existe un modelo comparable porque este repositorio no es un modelo. Las alternativas serían otros conjuntos de notas de investigación sobre fusión cross-modal, pero no se dispone de información sobre repositorios equivalentes en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -62,7 +62,7 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/abigai-lsanch/cross-modal-fusion
+- Repositorio en Hugging Face: https://huggingface.co/abigai-lsanch/cross-modal-fusion
 - Artículo de referencia sobre IA generativa multimodal (arXiv): https://arxiv.org/abs/2409.14993
 - PDF del mismo artículo: https://arxiv.org/pdf/2409.14993
 - Encuesta sobre fusión multimodal en deep learning (ScienceDirect): https://www.sciencedirect.com/org/science/article/pii/S1546221824005216

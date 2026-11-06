@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DictaBERT-syntax es un modelo de análisis sintáctico de dependencias (dependency parsing) para hebreo moderno, publicado por el grupo dicta-il y distribuido en HuggingFace. Se trata de un ajuste fino de la familia DictaBERT sobre la tarea de extracción de árboles de dependencias: dado un texto en hebreo, el modelo devuelve para cada palabra su cabeza de dependencia, el índice de esa cabeza y la función sintáctica (por ejemplo `nsubj`, `obj`, `obl`, `amod`, `conj`). El modelo se documenta en el artículo «MRL Parsing without Tears: The Case of Hebrew» (arXiv:2403.06970) y la familia base en «DictaBERT: A State-of-the-Art BERT Suite for Modern Hebrew» (arXiv:2308.16687).
+DictaBERT-syntax es un modelo de análisis sintáctico de dependencias (dependency parsing) para hebreo moderno, publicado por el grupo dicta-il y distribuido en Hugging Face. Se trata de un ajuste fino de la familia DictaBERT sobre la tarea de extracción de árboles de dependencias: dado un texto en hebreo, el modelo devuelve para cada palabra su cabeza de dependencia, el índice de esa cabeza y la función sintáctica (por ejemplo `nsubj`, `obj`, `obl`, `amod`, `conj`). El modelo se documenta en el artículo «MRL Parsing without Tears: The Case of Hebrew» (arXiv:2403.06970) y la familia base en «DictaBERT: A State-of-the-Art BERT Suite for Modern Hebrew» (arXiv:2308.16687).
 
 Técnicamente es un transformer encoder de tipo BERT con pesos en safetensors y 183.930.034 parámetros totales, con un repositorio de 2,9 GB. No es un modelo generativo ni multimodal: su pipeline declarado en el Hub es `feature-extraction` y requiere `trust_remote_code=True`, ya que incorpora código personalizado con un método `predict` que devuelve directamente el árbol de dependencias en formato JSON. Está entrenado exclusivamente para hebreo (`he`) y se publica bajo licencia CC BY 4.0.
 
@@ -95,8 +95,8 @@ Como referencia cualitativa, la familia DictaBERT se presenta como una suite de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dicta-il/dictabert-syntax
-- Coleccion DictaBERT en HuggingFace: https://huggingface.co/collections/dicta-il/dictabert-6588e7cc08f83845fc42a18b
+- Repositorio en Hugging Face: https://huggingface.co/dicta-il/dictabert-syntax
+- Coleccion DictaBERT en Hugging Face: https://huggingface.co/collections/dicta-il/dictabert-6588e7cc08f83845fc42a18b
 - Articulo «MRL Parsing Without Tears: The Case of Hebrew»: https://arxiv.org/abs/2403.06970
 - Articulo «DictaBERT: A State-of-the-Art BERT Suite for Modern Hebrew»: https://arxiv.org/abs/2308.16687
 - Licencia CC BY 4.0: http://creativecommons.org/licenses/by/4.0/

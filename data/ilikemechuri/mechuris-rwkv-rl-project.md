@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mechuris-rwkv-rl-project` es un espacio de trabajo de investigación publicado en HuggingFace por el usuario Ilikemechuri, no un modelo listo para producción. Se trata de un archivo completo de un proyecto de ajuste fino mediante aprendizaje por refuerzo (RL) sobre el modelo base `RWKV/RWKV7-G1l-2.9B-20261031`, una arquitectura RWKV-7 de 2.900 millones de parámetros. El repositorio contiene el adaptador resultante de una ejecución de 40 rondas de RL orientada a matemáticas, junto con los datos, informes y artefactos del proceso.
+`mechuris-rwkv-rl-project` es un espacio de trabajo de investigación publicado en Hugging Face por el usuario Ilikemechuri, no un modelo listo para producción. Se trata de un archivo completo de un proyecto de ajuste fino mediante aprendizaje por refuerzo (RL) sobre el modelo base `RWKV/RWKV7-G1l-2.9B-20261031`, una arquitectura RWKV-7 de 2.900 millones de parámetros. El repositorio contiene el adaptador resultante de una ejecución de 40 rondas de RL orientada a matemáticas, junto con los datos, informes y artefactos del proceso.
 
 El interés del artefacto es metodológico: documenta un ciclo de RL sobre un modelo RWKV (arquitectura recurrente lineal, no transformer) con adaptadores personalizados en lugar de PEFT, y publica resultados honestos aunque limitados. En un conjunto de validación fijo de 12 muestras respondibles, el modelo base acertó 5 y el adaptador de 40 rondas acertó 7, con 5 truncamientos sobre 16. El propio autor advierte que no es una afirmación significativa de rendimiento.
 
@@ -68,8 +68,8 @@ El autor indica explícitamente que estos resultados no constituyen una afirmaci
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mechuris-rwkv-rl-project | 2.900 M (base) | no disponible | mixed-component-licenses | HuggingFace, 0 descargas |
-| RWKV7-G1l-2.9B-20261031 | 2.900 M | no disponible | no disponible | HuggingFace (modelo base) |
+| mechuris-rwkv-rl-project | 2.900 M (base) | no disponible | mixed-component-licenses | Hugging Face, 0 descargas |
+| RWKV7-G1l-2.9B-20261031 | 2.900 M | no disponible | no disponible | Hugging Face (modelo base) |
 | Alternativas transformer de ~3B para matemáticas | ~3.000 M | variable | variable | no disponible en la información |
 
 No se dispone de datos de benchmarks comparables ni de modelos alternativos evaluados en las mismas condiciones en la información proporcionada.
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks comparables ni de modelos alternativos eval
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ilikemechuri/mechuris-rwkv-rl-project
+- Hugging Face: https://huggingface.co/Ilikemechuri/mechuris-rwkv-rl-project
 - Modelo base: https://huggingface.co/RWKV/RWKV7-G1l-2.9B-20261031
 - Licencias: https://huggingface.co/Ilikemechuri/mechuris-rwkv-rl-project/blob/main/LICENSES.md
 - Informe de 40 rondas: `REPORT_40_ROUNDS.md` (en el repositorio)

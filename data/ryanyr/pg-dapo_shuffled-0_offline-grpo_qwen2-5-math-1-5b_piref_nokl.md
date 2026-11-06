@@ -1,9 +1,9 @@
 # RyanYr/pg-dapo_shuffled-0_offline-grpo_qwen2.5-math-1.5B_piref_nokl
 
 ## Resumen
-El modelo `RyanYr/pg-dapo_shuffled-0_offline-grpo_qwen2.5-math-1.5B_piref_nokl` es un checkpoint publicado en HuggingFace por el usuario RyanYr. Según el nombre, parece tratarse de un ajuste fino del modelo base Qwen2.5-Math-1.5B, desarrollado por Alibaba Cloud, aplicando técnicas de aprendizaje por refuerzo como GRPO (Group Relative Policy Optimization) y DAPO (Decoupled Alignment Policy Optimization). El sufijo "piref" podría indicar el uso de una política de referencia, y "nokl" sugiere la ausencia de penalización KL. Sin embargo, no se dispone de una descripción oficial ni de documentación técnica en la página del modelo.
+El modelo `RyanYr/pg-dapo_shuffled-0_offline-grpo_qwen2.5-math-1.5B_piref_nokl` es un checkpoint publicado en Hugging Face por el usuario RyanYr. Según el nombre, parece tratarse de un ajuste fino del modelo base Qwen2.5-Math-1.5B, desarrollado por Alibaba Cloud, aplicando técnicas de aprendizaje por refuerzo como GRPO (Group Relative Policy Optimization) y DAPO (Decoupled Alignment Policy Optimization). El sufijo "piref" podría indicar el uso de una política de referencia, y "nokl" sugiere la ausencia de penalización KL. Sin embargo, no se dispone de una descripción oficial ni de documentación técnica en la página del modelo.
 
-La ficha se elabora a partir de la información pública limitada disponible en HuggingFace. El repositorio tiene un tamaño de 382.1 GB, lo que sugiere que podría contener múltiples checkpoints o datos adicionales, aunque no se especifica. El modelo cuenta con solo 2 descargas y 0 likes, lo que indica que es un experimento reciente y poco difundido. No se han publicado resultados de benchmarks ni especificaciones detalladas.
+La ficha se elabora a partir de la información pública limitada disponible en Hugging Face. El repositorio tiene un tamaño de 382.1 GB, lo que sugiere que podría contener múltiples checkpoints o datos adicionales, aunque no se especifica. El modelo cuenta con solo 2 descargas y 0 likes, lo que indica que es un experimento reciente y poco difundido. No se han publicado resultados de benchmarks ni especificaciones detalladas.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -45,6 +45,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 - El tamaño del repositorio es inusualmente grande para un modelo de 1.5B, lo que podría indicar la inclusión de datos o pesos adicionales, pero no está claro.
 
 ## Enlaces
-- [Página del modelo en HuggingFace](https://huggingface.co/RyanYr/pg-dapo_shuffled-0_offline-grpo_qwen2.5-math-1.5B_piref_nokl)
+- [Página del modelo en Hugging Face](https://huggingface.co/RyanYr/pg-dapo_shuffled-0_offline-grpo_qwen2.5-math-1.5B_piref_nokl)
 - [Dataset de evaluación mathemática asociado](https://huggingface.co/datasets/RyanYr/pg-dapo_shuffled-0_offline-grpo_qwen2.5-math-1.5B_piref_nokl_matheval)
 - [Repositorio de Qwen2.5-Math en GitHub](https://github.com/QwenLM/Qwen2.5-Math) (referencia al modelo base)

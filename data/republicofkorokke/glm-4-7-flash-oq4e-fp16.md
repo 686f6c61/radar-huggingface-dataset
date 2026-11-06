@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-4.7-Flash-oQ4e-fp16 es una version cuantizada del modelo zai-org/GLM-4.7-Flash, publicada por el usuario RepublicOfKorokke en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversion del modelo base a 4 bits mediante la herramienta oQ (oMLX v0.6.4), un esquema de cuantizacion de precision mixta. El resultado se distribuye en formato MLX safetensors, es decir, pensado para ejecutarse sobre Apple Silicon con la libreria MLX.
+GLM-4.7-Flash-oQ4e-fp16 es una version cuantizada del modelo zai-org/GLM-4.7-Flash, publicada por el usuario RepublicOfKorokke en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversion del modelo base a 4 bits mediante la herramienta oQ (oMLX v0.6.4), un esquema de cuantizacion de precision mixta. El resultado se distribuye en formato MLX safetensors, es decir, pensado para ejecutarse sobre Apple Silicon con la libreria MLX.
 
 El artefacto declara 29.943.393.920 parametros totales (aproximadamente 29,94 mil millones) y un tipo de modelo glm4_moe_lite, lo que situa al modelo base en la categoria de mezcla de expertos (MoE) de tamano medio. El repositorio ocupa 17,6 GB, coherente con un peso de 4 bits sobre esa cantidad de parametros. La cuantizacion usa tamano de grupo 64 y el identificador del repositorio sugiere una mezcla de precision con algunas capas o tensores preservados en fp16.
 

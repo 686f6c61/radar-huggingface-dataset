@@ -24,7 +24,7 @@ Arquitectura y tamaño del adaptador: no disponibles en la información proporci
 | Dataset de ajuste | microsoft/ms_marco |
 | Librería | peft |
 | Pipeline | text-generation |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamaño del repositorio | 0.0 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación (metadatos) | 2026-10-23 |
@@ -77,7 +77,7 @@ Dado que el ajuste se realiza sobre MS MARCO, la evaluación natural sería EM/F
 - VRAM estimada en INT4 (GGUF Q4_K_M): ~0,8-1 GB de pesos, en torno a 1,5-2 GB en ejecución.
 - GPU recomendadas: cualquiera con 6 GB o más para FP16 (RTX 3060 12 GB, RTX 4060 8 GB, RTX 4070, T4 16 GB, L4, A10G). Cabe en GPU de consumo sin problemas.
 - Inferencia en CPU: viable con llama.cpp tras fusionar el adaptador y convertir a GGUF; throughput bajo pero funcional para pruebas.
-- Opciones de despliegue: HuggingFace Transformers + PEFT (carga directa del adaptador), vLLM y TGI (soportan adaptadores PEFT o modelo fusionado), llama.cpp/Ollama (requiere fusionar y convertir), y `merge_and_unload()` de PEFT para generar un checkpoint completo.
+- Opciones de despliegue: Hugging Face Transformers + PEFT (carga directa del adaptador), vLLM y TGI (soportan adaptadores PEFT o modelo fusionado), llama.cpp/Ollama (requiere fusionar y convertir), y `merge_and_unload()` de PEFT para generar un checkpoint completo.
 - Latencia y throughput: no disponibles; no hay mediciones publicadas para este adaptador.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ Los datos de los modelos comparados provienen de sus model cards públicas. No e
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que rompe la descarga automatizada en pipelines de CI/CD y en despliegues no interactivos.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que rompe la descarga automatizada en pipelines de CI/CD y en despliegues no interactivos.
 - Licencia no declarada: no puede asumirse uso comercial. Además, el modelo base Sheared-LLaMA arrastra las condiciones de la licencia LLaMA-2, que imponen obligaciones adicionales al redistribuir o servir el modelo fusionado.
 - Idioma único: solo inglés; cualquier uso en castellano requeriría ajuste adicional y no está evaluado.
 - Artefacto sin validación: 0 descargas, 0 likes y un tamaño de repositorio de 0.0 GB; conviene verificar que los pesos del adaptador están realmente presentes y son legibles antes de integrarlo.
@@ -106,7 +106,7 @@ Los datos de los modelos comparados provienen de sus model cards públicas. No e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-sheared-llama-qaft
+- Modelo en Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-sheared-llama-qaft
 - Modelo base: https://huggingface.co/princeton-nlp/Sheared-LLaMA-1.3B
 - Dataset de ajuste: https://huggingface.co/datasets/microsoft/ms_marco
 - Documentación de PEFT: https://huggingface.co/docs/peft

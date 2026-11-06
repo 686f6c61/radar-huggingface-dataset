@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`liyuxuanwood/efficientformer-generation` es un repositorio de HuggingFace que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura EfficientFormer, etiquetada por el autor como destinada a tareas de "generation". El propio autor la describe explicitamente como una configuracion de escala "xlarge" pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos pequenos y controlados, y no como una publicacion preentrenada lista para produccion.
+`liyuxuanwood/efficientformer-generation` es un repositorio de Hugging Face que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura EfficientFormer, etiquetada por el autor como destinada a tareas de "generation". El propio autor la describe explicitamente como una configuracion de escala "xlarge" pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos pequenos y controlados, y no como una publicacion preentrenada lista para produccion.
 
 El peso distribuido, `model.safetensors`, es un checkpoint de inicializacion valido para pruebas de humo, no un modelo entrenado: la model card indica que no se ha completado ningun entrenamiento y que no se reclama ninguna puntuacion de benchmark. El recuento real de parametros segun los metadatos de safetensors es de 33.088 parametros, un orden de magnitud muy inferior al de cualquier EfficientFormer publicado (los variantes de EfficientFormerV2 parten de millones de parametros), lo que confirma que se trata de un artefacto de andamiaje y no de un modelo funcional.
 
@@ -45,7 +45,7 @@ En cuanto al entrenamiento, la receta por defecto incluida en `training_args.jso
 - Plantilla de implementacion de EfficientFormer: el repositorio sirve como punto de partida para escribir o revisar el codigo de una arquitectura EfficientFormer en PyTorch, con `config.json` y `training_args.json` como referencia de configuracion reproducible.
 - Pruebas de humo en CI/CD: al ocupar 0,0 GB y 33.088 parametros, `pipeline.py` se puede ejecutar en cada commit para verificar que el pipeline de carga, instanciacion y forward no se rompe, sin coste apreciable de computo.
 - Evaluacion comparativa de recetas de entrenamiento: los valores por defecto (AdamW con scheduler polinomial) permiten montar un baseline reproducible y compararlo con otras recetas bajo el mismo presupuesto de ajuste y las mismas semillas, tal como sugiere el autor.
-- Material docente o de estudio: resulta util para explicar la diferencia entre un checkpoint de inicializacion y un modelo entrenado, y para ilustrar la estructura de ficheros de un repositorio de modelo en HuggingFace.
+- Material docente o de estudio: resulta util para explicar la diferencia entre un checkpoint de inicializacion y un modelo entrenado, y para ilustrar la estructura de ficheros de un repositorio de modelo en Hugging Face.
 - Base para reentrenamiento en tareas de vision: si se sustituye el cabezal y se entrena sobre un conjunto etiquetado propio (clasificacion, deteccion o segmentacion), el esqueleto puede adaptarse a tareas densas, siempre que se documenten los resultados por separado de los valores por defecto.
 - Adaptacion a otras modalidades: el andamiaje de codigo permite experimentar con variantes de atencion grouped query y fusion con compuerta en tareas distintas de las del EfficientFormer original, con la salvedad de que no existe evidencia publicada de que funcionen.
 - Verificacion de compatibilidad de formato: sirve para comprobar que un pipeline de carga de safetensors, serializacion y despliegue funciona correctamente antes de escalar a checkpoints de mayor tamano.
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liyuxuanwood/efficientformer-generation | 33.088 (inicializacion sin entrenar) | no disponible | sin benchmarks declarados | BSD-3-Clause | HuggingFace, 13 descargas |
+| liyuxuanwood/efficientformer-generation | 33.088 (inicializacion sin entrenar) | no disponible | sin benchmarks declarados | BSD-3-Clause | Hugging Face, 13 descargas |
 | EfficientFormer (Qualcomm AI Hub) | no disponible en la informacion proporcionada | no aplica (vision) | backbone/clasificador ImageNet | no disponible en la informacion proporcionada | Qualcomm AI Hub y GitHub qualcomm/ai-hub-models |
 | EfficientFormerV2 (Snap Research) | no disponible en la informacion proporcionada (familia s0, s1, s2 y l) | no aplica (vision) | checkpoints preentrenados en ImageNet-1K | no disponible en la informacion proporcionada | GitHub snap-research/EfficientFormer, paper ICCV 2023 |
-| EfficientFormer en transformers (HuggingFace) | no disponible en la informacion proporcionada | no aplica (vision) | tareas densas: clasificacion, deteccion, segmentacion | no disponible en la informacion proporcionada | Documentacion oficial de transformers |
+| EfficientFormer en transformers (Hugging Face) | no disponible en la informacion proporcionada | no aplica (vision) | tareas densas: clasificacion, deteccion, segmentacion | no disponible en la informacion proporcionada | Documentacion oficial de transformers |
 
 Las cifras de parametros y rendimiento de las alternativas no aparecen en la informacion proporcionada, por lo que no se incluyen para no introducir datos no verificados. La diferencia cualitativa principal es que las alternativas son modelos entrenados y publicados con evaluacion, mientras que este repositorio contiene unicamente un checkpoint de inicializacion.
 
@@ -82,12 +82,12 @@ Las cifras de parametros y rendimiento de las alternativas no aparecen en la inf
 - Limitaciones de contexto e idioma: no disponibles, dado que no se documenta tokenizador, ventana de contexto ni conjunto de idiomas.
 - Restricciones de licencia: BSD-3-Clause permite uso comercial y modificacion con atribucion, pero el autor advierte de que los terminos de los datos de origen deben revisarse por separado si el repositorio se usa con conjuntos de datos externos.
 - No hay adaptador ni integracion estandar: las APIs genericas de carga de transformers no funcionan sin codigo adicional.
-- Fecha de creacion registrada en HuggingFace (2026-10-14) posterior a la fecha de actualizacion (2026-10-14T02:08:03), con apenas unos segundos de diferencia; un indicio mas de que el repositorio es un artefacto subido automaticamente sin mantenimiento posterior.
+- Fecha de creacion registrada en Hugging Face (2026-10-14) posterior a la fecha de actualizacion (2026-10-14T02:08:03), con apenas unos segundos de diferencia; un indicio mas de que el repositorio es un artefacto subido automaticamente sin mantenimiento posterior.
 - Sin pipeline declarado, sin idiomas declarados y con 0 likes: no existe validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/liyuxuanwood/efficientformer-generation
+- Repositorio en Hugging Face: https://huggingface.co/liyuxuanwood/efficientformer-generation
 - EfficientFormer en Qualcomm AI Hub: https://aihub.qualcomm.com/models/efficientformer
 - Documentacion de EfficientFormer en transformers (v4.56.2): https://huggingface.co/docs/transformers/v4.56.2/en/model_doc/efficientformer
 - Documentacion de EfficientFormer en transformers (v4.48.2): https://huggingface.co/docs/transformers/v4.48.2/en/model_doc/efficientformer

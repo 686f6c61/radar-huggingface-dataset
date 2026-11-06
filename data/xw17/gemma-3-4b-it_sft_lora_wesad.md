@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`xw17/gemma-3-4b-it_SFT_lora_wesad` es un repositorio publicado en HuggingFace por el usuario `xw17` que, por su nombre y por el tamano del repositorio (0,1 GB), contiene un adaptador LoRA de ajuste supervisado (SFT) sobre el modelo base `gemma-3-4b-it` de Google. El sufijo `wesad` sugiere que el ajuste se realizo sobre el dataset WESAD (Wearable Stress and Affect Detection), orientado a la deteccion de estres y estados afectivos a partir de senales fisiologicas de wearables; sin embargo, esta correspondencia no esta confirmada en ninguna parte de la model card ni en los metadatos del repositorio.
+`xw17/gemma-3-4b-it_SFT_lora_wesad` es un repositorio publicado en Hugging Face por el usuario `xw17` que, por su nombre y por el tamano del repositorio (0,1 GB), contiene un adaptador LoRA de ajuste supervisado (SFT) sobre el modelo base `gemma-3-4b-it` de Google. El sufijo `wesad` sugiere que el ajuste se realizo sobre el dataset WESAD (Wearable Stress and Affect Detection), orientado a la deteccion de estres y estados afectivos a partir de senales fisiologicas de wearables; sin embargo, esta correspondencia no esta confirmada en ninguna parte de la model card ni en los metadatos del repositorio.
 
-La model card es la plantilla autogenerada de HuggingFace: todas las secciones relevantes (descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia, idiomas) figuran como `[More Information Needed]`. El repositorio no declara pipeline, licencia ni idiomas, y en el momento de la consulta acumula 0 descargas y 0 likes, por lo que no existe evidencia publica de validacion, evaluacion o uso en produccion.
+La model card es la plantilla autogenerada de Hugging Face: todas las secciones relevantes (descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia, idiomas) figuran como `[More Information Needed]`. El repositorio no declara pipeline, licencia ni idiomas, y en el momento de la consulta acumula 0 descargas y 0 likes, por lo que no existe evidencia publica de validacion, evaluacion o uso en produccion.
 
 Por tanto, esta ficha describe con rigor lo que se puede verificar (formato, libreria, tamano, ausencia de documentacion) y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier dato sobre arquitectura, contexto o idiomas que se incluya es necesariamente heredado del modelo base y debe verificarse contra la documentacion oficial de Gemma 3 antes de usarse en un sistema real.
 
@@ -33,7 +33,7 @@ No hay informacion publicada sobre la arquitectura concreta del adaptador ni sob
 
 Lo unico deducible con cierta seguridad es estructural: el repositorio ocupa 0,1 GB, un orden de magnitud muy inferior al de un checkpoint completo de un modelo de 4.000 millones de parametros en bf16 (que rondaria los 8 GB), lo que es coherente con un adaptador LoRA de bajo rango. Esto implica que el artefacto no es autosuficiente: requiere descargar el modelo base `gemma-3-4b-it` y cargar el adaptador encima para poder ejecutar inferencia.
 
-El tag `arxiv:1910.09700` que aparece en los metadatos corresponde al articulo de Lacoste et al. sobre estimacion de impacto de carbono, citado en la plantilla por defecto de HuggingFace; no es una referencia al metodo de entrenamiento del modelo. Cualquier afirmacion sobre el dataset WESAD, sus senales (ECG, EDA, EMG, temperatura, acelerometro) o el esquema de etiquetado de tres clases (baseline, estres, diversion) seria especulativa y no se incluye aqui como hecho.
+El tag `arxiv:1910.09700` que aparece en los metadatos corresponde al articulo de Lacoste et al. sobre estimacion de impacto de carbono, citado en la plantilla por defecto de Hugging Face; no es una referencia al metodo de entrenamiento del modelo. Cualquier afirmacion sobre el dataset WESAD, sus senales (ECG, EDA, EMG, temperatura, acelerometro) o el esquema de etiquetado de tres clases (baseline, estres, diversion) seria especulativa y no se incluye aqui como hecho.
 
 ## Capacidades
 
@@ -100,7 +100,7 @@ Diferencias clave: frente a las alternativas, este repositorio no ofrece pesos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/gemma-3-4b-it_SFT_lora_wesad
+- Repositorio en Hugging Face: https://huggingface.co/xw17/gemma-3-4b-it_SFT_lora_wesad
 - Modelo base referenciado en el nombre del repositorio: https://huggingface.co/google/gemma-3-4b-it
 - Articulo citado en los tags (Lacoste et al., 2019, sobre estimacion de impacto de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la plantilla: https://mlco2.github.io/impact

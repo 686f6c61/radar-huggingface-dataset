@@ -31,7 +31,7 @@ El entrenamiento se llevó a cabo durante 6 épocas con el optimizador AdamW, un
 
 - Reconocimiento de entidades nombradas de grano fino en asamés, incluyendo tipos como personas (científicos, artistas, políticos, atletas), organizaciones (corporaciones públicas y privadas, grupos deportivos), lugares (instalaciones, asentamientos humanos, estaciones), productos (ropa, vehículos, alimentos, bebidas), obras creativas (visuales, musicales, escritas, software) y entidades médicas (medicamentos, procedimientos, estructuras anatómicas, síntomas, enfermedades).
 - Etiquetado de secuencias a nivel de token, adecuado para tareas de extracción de información y enriquecimiento de texto.
-- Compatible con la librería `transformers` de HuggingFace, lo que permite su integración en pipelines de token-classification y en herramientas como `pipeline("token-classification")`.
+- Compatible con la librería `transformers` de Hugging Face, lo que permite su integración en pipelines de token-classification y en herramientas como `pipeline("token-classification")`.
 - Integración con el ecosistema AWED-PIPER, que ofrece agentes y aplicaciones web para NER y protección de datos personales, aunque esta capacidad es externa al modelo en sí.
 
 ## Casos de uso
@@ -60,7 +60,7 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 - VRAM estimada para inferencia en precisión fp32: aproximadamente 2 GB (504.926.275 parámetros × 4 bytes). Con cuantización a int8, podría reducirse a ~1 GB.
 - GPU recomendada: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050, o superiores). En CPU, la inferencia es posible pero más lenta.
 - El modelo cabe en GPUs de consumo, como la serie RTX 30/40, y también en entornos de CPU con suficiente RAM.
-- Opciones de despliegue: al ser un modelo de la librería `transformers`, puede servirse con HuggingFace Inference Endpoints, vLLM (aunque es un encoder, vLLM soporta principalmente decoders, por lo que se recomienda usar `transformers` o TGI), o mediante `pipeline` de HuggingFace. También es posible exportarlo a ONNX para optimización.
+- Opciones de despliegue: al ser un modelo de la librería `transformers`, puede servirse con Hugging Face Inference Endpoints, vLLM (aunque es un encoder, vLLM soporta principalmente decoders, por lo que se recomienda usar `transformers` o TGI), o mediante `pipeline` de Hugging Face. También es posible exportarlo a ONNX para optimización.
 - Latencia y throughput: no se proporcionan datos oficiales. En una GPU moderna (por ejemplo, RTX 3090), se espera una latencia de decenas de milisegundos por frase corta, pero estos valores dependen del hardware y la longitud del texto.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - prachuryyaIITG/CLASSER_Assamese_MuRIL](https://huggingface.co/prachuryyaIITG/CLASSER_Assamese_MuRIL)
+- [Hugging Face - prachuryyaIITG/CLASSER_Assamese_MuRIL](https://huggingface.co/prachuryyaIITG/CLASSER_Assamese_MuRIL)
 - [Dataset CLASSER](https://huggingface.co/datasets/prachuryyaIITG/CLASSER)
 - [Paper CLASSER (IJCNLP 2025)](https://aclanthology.org/2025.ijcnlp-long.94/)
 - [Paper AWED-PIPER (arXiv 2601.10161)](https://arxiv.org/abs/2601.10161)

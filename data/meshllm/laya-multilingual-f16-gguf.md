@@ -92,7 +92,7 @@ Las tres conversiones GGUF derivan del mismo modelo base. La diferencia practica
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/meshllm/laya-multilingual-F16-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/meshllm/laya-multilingual-F16-GGUF
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Conversion GGUF de terceros con cuantizaciones: https://huggingface.co/fr0stbit3/laya-multilingual-gguf
 - Conversion GGUF de terceros (Weidows): https://huggingface.co/Weidows/laya-multilingual-GGUF

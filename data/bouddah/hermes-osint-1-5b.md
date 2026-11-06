@@ -84,10 +84,10 @@ No hay datos de MMLU, HumanEval, GSM8K ni de evaluaciones especificas de OSINT o
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hermes OSINT 1.5B (este) | 1,5B + adaptador de 18,5 M | 512 tokens de entrenamiento; 32.768 en el base (no documentado) | OSINT/CTF en frances, formato adaptador LoRA | Apache 2.0 | HuggingFace, requiere el modelo base |
-| Qwen2.5-1.5B-Instruct (base) | 1,5B | 32.768 tokens nativos | Asistente generalista multilingue | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct | 7,6B | 32.768 tokens nativos (ampliable con YaRN) | Asistente generalista, mas capacidad de razonamiento | Apache 2.0 | HuggingFace |
-| Phi-3.5-mini-instruct | 3,8B | 128.000 tokens | Asistente generalista y de codigo | MIT | HuggingFace |
+| Hermes OSINT 1.5B (este) | 1,5B + adaptador de 18,5 M | 512 tokens de entrenamiento; 32.768 en el base (no documentado) | OSINT/CTF en frances, formato adaptador LoRA | Apache 2.0 | Hugging Face, requiere el modelo base |
+| Qwen2.5-1.5B-Instruct (base) | 1,5B | 32.768 tokens nativos | Asistente generalista multilingue | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct | 7,6B | 32.768 tokens nativos (ampliable con YaRN) | Asistente generalista, mas capacidad de razonamiento | Apache 2.0 | Hugging Face |
+| Phi-3.5-mini-instruct | 3,8B | 128.000 tokens | Asistente generalista y de codigo | MIT | Hugging Face |
 
 Nota: los datos de los modelos comparados provienen de sus especificaciones publicas conocidas y no se han verificado en la informacion proporcionada en esta busqueda. No se dispone de resultados de rendimiento comparables entre estas alternativas y el adaptador evaluado, ya que el autor no publica benchmarks. En terminos de rendimiento especifico en OSINT en frances, no disponible.
 
@@ -107,7 +107,7 @@ Nota: los datos de los modelos comparados provienen de sus especificaciones publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bouddah/hermes-osint-1.5b
+- Modelo en Hugging Face: https://huggingface.co/bouddah/hermes-osint-1.5b
 - Dataset de entrenamiento: https://huggingface.co/datasets/bouddah/osint-ctf-corpus-fr
 - Codigo y plantilla de agente: https://github.com/yassirboudda/hermes-osint-ctf-agent
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

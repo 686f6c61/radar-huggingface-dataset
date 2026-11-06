@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato destacado | Disponibilidad |
 |---|---|---|---|---|---|
-| Oscilla/Phi-4-mini-instruct-mlx-8Bit | 3,84B | 128.000 tokens (modelo base) | MIT | safetensors MLX 8-bit | HuggingFace |
-| microsoft/Phi-4-mini-instruct | 3,8B | 128.000 tokens | MIT | safetensors | HuggingFace, Azure AI Foundry |
-| Phi-3.5-Mini | no disponible | no disponible | MIT | safetensors | HuggingFace |
+| Oscilla/Phi-4-mini-instruct-mlx-8Bit | 3,84B | 128.000 tokens (modelo base) | MIT | safetensors MLX 8-bit | Hugging Face |
+| microsoft/Phi-4-mini-instruct | 3,8B | 128.000 tokens | MIT | safetensors | Hugging Face, Azure AI Foundry |
+| Phi-3.5-Mini | no disponible | no disponible | MIT | safetensors | Hugging Face |
 | Otros modelos de ~3B (Llama, Qwen, Gemma) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada. La comparativa se limita a parametros, contexto, licencia y disponibilidad, sin cifras de benchmarks que permitan una valoracion cuantitativa frente a alternativas de la misma categoria.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Oscilla/Phi-4-mini-instruct-mlx-8Bit
+- Repositorio Hugging Face: https://huggingface.co/Oscilla/Phi-4-mini-instruct-mlx-8Bit
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Licencia del modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct/resolve/main/LICENSE
 - Ficha en Microsoft Foundry: https://ai.azure.com/catalog/models/Phi-4-mini-instruct

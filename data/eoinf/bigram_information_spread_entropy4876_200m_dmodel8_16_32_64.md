@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eoinf/bigram_information_spread_entropy4876_200m_dmodel8_16_32_64` es un modelo de lenguaje causal de escala muy reducida publicado en HuggingFace por el usuario `eoinf` como parte de una rejilla experimental de transformers ("Transformer experiment grid"). No se trata de un modelo orientado a produccion ni a uso general, sino de un artefacto de investigacion cuyo objetivo aparente es estudiar el efecto del ancho del modelo (`d_model`) sobre el aprendizaje de informacion de tipo bigrama en un corpus sintetico de trigramas.
+`eoinf/bigram_information_spread_entropy4876_200m_dmodel8_16_32_64` es un modelo de lenguaje causal de escala muy reducida publicado en Hugging Face por el usuario `eoinf` como parte de una rejilla experimental de transformers ("Transformer experiment grid"). No se trata de un modelo orientado a produccion ni a uso general, sino de un artefacto de investigacion cuyo objetivo aparente es estudiar el efecto del ancho del modelo (`d_model`) sobre el aprendizaje de informacion de tipo bigrama en un corpus sintetico de trigramas.
 
 El modelo emplea una arquitectura transformer causal con un vocabulario de 4096 tokens y una longitud de contexto de 256 tokens. El identificador del repositorio sugiere variantes con `d_model` de 8, 16, 32 y 64, y un presupuesto nominal de entrenamiento de 1.999.998.976 tokens (aproximadamente 2.000 millones). El nombre "bigram_information_spread_entropy4876" apunta a un experimento concreto dentro de la rejilla, probablemente centrado en la entropia de dispersion de informacion de bigramas.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| eoinf/bigram_information_spread_entropy4876_200m_dmodel8_16_32_64 | no disponible (d_model 8-64) | 256 | no disponible | HuggingFace (0 descargas) |
+| eoinf/bigram_information_spread_entropy4876_200m_dmodel8_16_32_64 | no disponible (d_model 8-64) | 256 | no disponible | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables de la misma categoria (transformers sinteticos diminutos para experimentos de trigramas) en la informacion proporcionada.
@@ -81,6 +81,6 @@ No se dispone de informacion sobre modelos comparables de la misma categoria (tr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/bigram_information_spread_entropy4876_200m_dmodel8_16_32_64
+- Hugging Face: https://huggingface.co/eoinf/bigram_information_spread_entropy4876_200m_dmodel8_16_32_64
 - Repositorio de codigo `synthetic_trigrams`: mencionado en la model card, sin URL disponible en la informacion proporcionada.
 - `configuration.json`, `grid_summary.json`, `result.json`: referenciados en la model card, sin URL disponible.

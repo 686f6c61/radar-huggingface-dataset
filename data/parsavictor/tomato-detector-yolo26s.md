@@ -93,7 +93,7 @@ No hay comparativas cuantitativas publicadas frente a otros detectores especific
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ParsaVictor/tomato-detector-yolo26s
+- Modelo en Hugging Face: https://huggingface.co/ParsaVictor/tomato-detector-yolo26s
 - Pipeline completo (deteccion + madurez + seguimiento + conteo): https://huggingface.co/ParsaVictor/tomato-ripeness-yolo26
 - Clasificador de madurez (componente 2): https://huggingface.co/ParsaVictor/tomato-ripeness-classifier-yolo26s
 - Dataset: https://huggingface.co/datasets/ParsaVictor/tomato-ripeness-detection

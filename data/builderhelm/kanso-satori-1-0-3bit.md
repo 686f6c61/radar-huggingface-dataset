@@ -17,7 +17,7 @@ Su relevancia es práctica: permite meter un modelo de 4B y 1,76 GB en el flujo 
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible en la model card; el modelo base Qwen3-4B-Instruct-2507 declara 262.144 tokens nativos. El fine-tune se entrenó con muestras de hasta 512 tokens y el autor desaconseja entradas de más de 300 palabras en una sola pasada |
 | Tipos de cuantizacion | 3 bits DWQ con group size 64 (esta build); existen también bf16 y 4 bits DWQ del mismo fine-tune |
-| Idiomas soportados | Inglés (el alcance declarado es "English dictation cleanup"); los metadatos de HuggingFace no listan idiomas |
+| Idiomas soportados | Inglés (el alcance declarado es "English dictation cleanup"); los metadatos de Hugging Face no listan idiomas |
 | Licencia | Apache-2.0 (heredada del base Qwen3-4B-Instruct-2507) |
 | Formato de pesos | safetensors en formato MLX (librería `mlx`); repositorio de 1,8 GB, pesos de 1,76 GB |
 
@@ -100,7 +100,7 @@ Frente a alternativas de propósito general del mismo tamaño (por ejemplo, el p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BuilderHelm/Kanso-Satori-1.0-3bit
+- Modelo en Hugging Face: https://huggingface.co/BuilderHelm/Kanso-Satori-1.0-3bit
 - Modelo base bf16 del fine-tune: https://huggingface.co/BuilderHelm/Kanso-Satori-1.0-bf16
 - Fine-tune de referencia (build de 4 bits): https://huggingface.co/BuilderHelm/Kanso-Satori-1.0
 - Modelo base original y licencia: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/main/LICENSE

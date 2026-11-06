@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `codysyun/lora-retriever` en HuggingFace contiene un modelo base de arquitectura híbrida diseñado para tareas de *matching* (emparejamiento o recuperación). Según la model card, se trata de una implementación a escala *base* con atención estándar, fusión tipo Tucker, activación ReLU, normalización ScaleNorm e inicialización Kaiming, entrenado con el optimizador LAMB y un scheduler de tasa de aprendizaje OneCycle.
+El repositorio `codysyun/lora-retriever` en Hugging Face contiene un modelo base de arquitectura híbrida diseñado para tareas de *matching* (emparejamiento o recuperación). Según la model card, se trata de una implementación a escala *base* con atención estándar, fusión tipo Tucker, activación ReLU, normalización ScaleNorm e inicialización Kaiming, entrenado con el optimizador LAMB y un scheduler de tasa de aprendizaje OneCycle.
 
 El nombre del repositorio y los metadatos sugieren una conexión con el sistema LoraRetriever, presentado en el paper *LoraRetriever: Input-Aware LoRA Retrieval and Composition for Mixed Tasks in the Wild* (ACL 2024 Findings). Ese sistema aborda el problema de seleccionar y componer dinámicamente múltiples adaptadores LoRA (Low-Rank Adaptation) según la entrada, para tareas mixtas en entornos reales. El modelo de este repositorio podría ser un componente del retriever de LoRAs, aunque la model card no lo especifica explícitamente.
 
@@ -48,7 +48,7 @@ Basándose en el contexto del sistema LoraRetriever, los casos de uso plausibles
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye métricas de evaluación, y el paper LoraRetriever evalúa el sistema completo, no este modelo de forma aislada. No se proporcionan datos sobre MMLU, HumanEval, GSM8K u otros benchmarks.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye métricas de evaluación, y el paper LoraRetriever evalúa el sistema completo, no este modelo de forma aislada. No se proporcionan datos sobre MMLU, HumanEval, GSM8K u otros benchmarks.
 
 ## Requisitos de hardware
 
@@ -69,9 +69,9 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/codysyun/lora-retriever
+- Modelo en Hugging Face: https://huggingface.co/codysyun/lora-retriever
 - Repositorio oficial LoraRetriever: https://github.com/StyxXuan/LoraRetriever
 - Paper en arXiv: https://arxiv.org/abs/2402.09997
-- Página del paper en HuggingFace: https://huggingface.co/papers/2402.09997
+- Página del paper en Hugging Face: https://huggingface.co/papers/2402.09997
 - PDF del paper: https://kunkuang.github.io/papers/ACL24-LoraRetriever.pdf
 - Página en CatalyzeX: https://www.catalyzex.com/paper/loraretriever-input-aware-lora-retrieval-and

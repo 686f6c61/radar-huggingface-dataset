@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zils-mini-b3 es un reempaquetado del modelo OmniJev/OneJev1.6-4B, publicado por el usuario bboldpilot en HuggingFace. No se trata de un entrenamiento nuevo: los pesos del lenguaje son los del modelo original, sin modificar, y el repositorio los redistribuye bajo la misma licencia Apache 2.0. El autor lo presenta como un "soup body" para la subred Zils (Bittensor SN127), pool d3-mini, lo que sitúa el modelo en el ecosistema de modelos de decisión empleados por dicha subred.
+Zils-mini-b3 es un reempaquetado del modelo OmniJev/OneJev1.6-4B, publicado por el usuario bboldpilot en Hugging Face. No se trata de un entrenamiento nuevo: los pesos del lenguaje son los del modelo original, sin modificar, y el repositorio los redistribuye bajo la misma licencia Apache 2.0. El autor lo presenta como un "soup body" para la subred Zils (Bittensor SN127), pool d3-mini, lo que sitúa el modelo en el ecosistema de modelos de decisión empleados por dicha subred.
 
 El modelo cuenta con 4.539.265.536 parámetros (aproximadamente 4,5 mil millones) almacenados en formato safetensors, con un tamaño de repositorio de 9,1 GB, lo que sugiere pesos en precisión de 16 bits. La model card no aporta información sobre arquitectura interna, longitud de contexto, idiomas soportados ni proceso de entrenamiento, más allá de la referencia al modelo base.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Zils-mini-b3 (este modelo) | 4,54 B | no disponible | Apache 2.0 | HuggingFace | Reempaquetado de OneJev1.6-4B para Zils SN127 |
-| OmniJev/OneJev1.6-4B | 4 B (según nombre) | no disponible | no disponible en la información | HuggingFace | Modelo base original |
-| Alternativas de ~4 B (p. ej. Qwen, Llama, Phi) | 3-4 B | 8k-128k típicamente | variables | HuggingFace | No se dispone de datos comparativos verificados en esta información |
+| Zils-mini-b3 (este modelo) | 4,54 B | no disponible | Apache 2.0 | Hugging Face | Reempaquetado de OneJev1.6-4B para Zils SN127 |
+| OmniJev/OneJev1.6-4B | 4 B (según nombre) | no disponible | no disponible en la información | Hugging Face | Modelo base original |
+| Alternativas de ~4 B (p. ej. Qwen, Llama, Phi) | 3-4 B | 8k-128k típicamente | variables | Hugging Face | No se dispone de datos comparativos verificados en esta información |
 
 No se dispone de información suficiente para establecer una comparativa rigurosa con modelos de la misma categoría; los datos de rendimiento del modelo base no están incluidos en la documentación proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bboldpilot/zils-mini-b3
+- Repositorio Hugging Face: https://huggingface.co/bboldpilot/zils-mini-b3
 - Modelo base: https://huggingface.co/OmniJev/OneJev1.6-4B
 - Revisión del modelo base referenciada: `bb248003b6eb771a995cb3672ad47db090a9cd48`
 - Subred Zils (Bittensor SN127): no se proporciona enlace en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen11` es un ajuste fino (fine-tune) del modelo `unsloth/Qwen2.5-7B-Instruct`, un transformer decoder de la familia Qwen2.5 con aproximadamente 7.600 millones de parametros. Lo publica el usuario HungryDino en HuggingFace bajo licencia Apache 2.0, y segun la propia model card se entreno con Unsloth y la libreria TRL de HuggingFace, lo que reduce el coste de entrenamiento aproximadamente a la mitad respecto a un pipeline convencional.
+`HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen11` es un ajuste fino (fine-tune) del modelo `unsloth/Qwen2.5-7B-Instruct`, un transformer decoder de la familia Qwen2.5 con aproximadamente 7.600 millones de parametros. Lo publica el usuario HungryDino en Hugging Face bajo licencia Apache 2.0, y segun la propia model card se entreno con Unsloth y la libreria TRL de Hugging Face, lo que reduce el coste de entrenamiento aproximadamente a la mitad respecto a un pipeline convencional.
 
 El nombre del repositorio sugiere una ejecucion iterativa (prefijos `iterated`, `run3`, `gen11`) sobre un conjunto de datos relacionado con numeros, si bien la model card no documenta ni el dataset, ni el metodo de ajuste, ni los hiperparametros empleados. No se trata de un modelo nuevo desde cero: hereda la arquitectura, el tokenizador y, previsiblemente, las capacidades del Qwen2.5-7B-Instruct original.
 
@@ -84,7 +84,7 @@ La comparacion de rendimiento no puede establecerse con los datos aportados: no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen11
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen11
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Unsloth (repositorio citado en la model card): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (libreria citada en la model card): https://github.com/huggingface/trl
+- TRL de Hugging Face (libreria citada en la model card): https://github.com/huggingface/trl

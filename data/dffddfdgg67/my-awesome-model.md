@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de inteligencia artificial publicado en HuggingFace por el usuario dffddfdgg67, con licencia MIT y diseñado para tareas de extracción de características (feature extraction) mediante la librería transformers. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su capacidad de razonamiento e inferencia, acercándose al rendimiento de otros modelos líderes en tareas de matemáticas, programación y lógica general.
+MyAwesomeModel es un modelo de inteligencia artificial publicado en Hugging Face por el usuario dffddfdgg67, con licencia MIT y diseñado para tareas de extracción de características (feature extraction) mediante la librería transformers. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su capacidad de razonamiento e inferencia, acercándose al rendimiento de otros modelos líderes en tareas de matemáticas, programación y lógica general.
 
 Sin embargo, la información técnica disponible es extremadamente limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni los formatos de pesos. La model card incluye una tabla de benchmarks con valores placeholder ({RESULT}) que no han sido completados, por lo que no es posible verificar las afirmaciones de rendimiento. El repositorio tiene un tamaño de 0.0 GB y cero descargas, lo que sugiere que el modelo podría no estar completamente publicado o que los archivos no están disponibles.
 
@@ -81,7 +81,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dffddfdgg67/my-awesome-model
+- Repositorio en Hugging Face: https://huggingface.co/dffddfdgg67/my-awesome-model
 - Repositorio de prueba (TestRepository): https://huggingface.co/dffddfdgg67/MyAwesomeModel-TestRepository
 - Página externa con referencias al modelo (no oficial): https://free2aitools.com/model/sotaagi2030/myawesomemodel-release
 - Entrada en PromptLayer (modelo homónimo, no relacionado): https://www.promptlayer.com/models/myawesomemodel/

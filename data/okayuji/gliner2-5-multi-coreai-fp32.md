@@ -110,7 +110,7 @@ La comparación relevante es con el upstream: misma licencia, mismos pesos y mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/okayuji/gliner2.5-multi-coreai-fp32
+- Repositorio Hugging Face: https://huggingface.co/okayuji/gliner2.5-multi-coreai-fp32
 - Modelo upstream: https://huggingface.co/fastino/gliner2.5-multi-v1
 - Dataset de evaluación: https://huggingface.co/datasets/okayuji/ja-vehicle-inspection-memo-extraction-eval
 - App y repositorio de referencia: https://github.com/oka-yuji/coreai-samples

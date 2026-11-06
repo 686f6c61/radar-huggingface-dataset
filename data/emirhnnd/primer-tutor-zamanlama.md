@@ -4,7 +4,7 @@
 
 `primer-tutor-zamanlama` es un modelo de clasificación tabular desarrollado por Emirhnnd en el contexto de la asignatura YZM301, vinculado al juego educativo "SE Primer: LabLink Krizi". Su objetivo era predecir la probabilidad de que un jugador, tras no tomar una decisión en una pantalla de decisión durante 8 segundos, acabara seleccionando la opción arriesgada (B). Si esa probabilidad era alta, el tutor del juego plantearía automáticamente una pregunta reflexiva. Se trata, por tanto, de un artefacto académico orientado a la investigación sobre tutoría adaptativa, no de un modelo de propósito general.
 
-El modelo no llegó a publicarse: el repositorio de HuggingFace no contiene el archivo `model.onnx`. Según la model card, el sistema no superó el umbral de aceptación definido antes del entrenamiento (spec.md §11.2), por lo que el autor decidió no distribuir los pesos y dejar la tarjeta como registro del resultado y de las razones del descarte.
+El modelo no llegó a publicarse: el repositorio de Hugging Face no contiene el archivo `model.onnx`. Según la model card, el sistema no superó el umbral de aceptación definido antes del entrenamiento (spec.md §11.2), por lo que el autor decidió no distribuir los pesos y dejar la tarjeta como registro del resultado y de las razones del descarte.
 
 La relevancia de esta ficha es, por tanto, metodológica: documenta un caso de validación fallida con criterios preregistrados, un conjunto de datos real muy reducido (31 filas de 3 participantes) y un pipeline clásico de scikit-learn (`StandardScaler` + `LogisticRegression`) que se pensaba exportar a ONNX. No hay arquitectura de red neuronal, ni parámetros entrenables en el sentido habitual, ni capacidades generativas.
 
@@ -87,6 +87,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Emirhnnd/primer-tutor-zamanlama
+- Hugging Face: https://huggingface.co/Emirhnnd/primer-tutor-zamanlama
 - GitHub del proyecto: https://github.com/emirhnnd/yzm301-se-primer
 - No se han encontrado papers, blogs, demos ni otros repositorios en la información proporcionada.

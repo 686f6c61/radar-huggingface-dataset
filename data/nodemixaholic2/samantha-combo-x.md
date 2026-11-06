@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Samantha-combo-x es un modelo publicado en HuggingFace por el usuario nodemixaholic2, con identificador `nodemixaholic2/samantha-combo-x`. Se trata de un modelo de aproximadamente 8.950 millones de parametros (8,95 B) segun los pesos en safetensors del repositorio, distribuido bajo licencia MIT y orientado a uso conversacional segun los tags declarados. La model card publicada se limita a la declaracion de licencia (`license: mit`), sin descripcion tecnica, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion.
+Samantha-combo-x es un modelo publicado en Hugging Face por el usuario nodemixaholic2, con identificador `nodemixaholic2/samantha-combo-x`. Se trata de un modelo de aproximadamente 8.950 millones de parametros (8,95 B) segun los pesos en safetensors del repositorio, distribuido bajo licencia MIT y orientado a uso conversacional segun los tags declarados. La model card publicada se limita a la declaracion de licencia (`license: mit`), sin descripcion tecnica, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion.
 
 El modelo no ha registrado descargas ni interacciones en el momento de la consulta, lo que indica que no cuenta con adopcion verificable ni con validacion por parte de la comunidad. El nombre ("combo", "samantha") sugiere un modelo derivado o fusionado de la familia de modelos de personaje Samantha, pero esto es una inferencia a partir del nombre y no una afirmacion documentada por el autor; la model card no confirma base, tecnica de fusion ni procedencia de los datos.
 
@@ -39,7 +39,7 @@ No se dispone de datos sobre el entrenamiento: ni numero de tokens, ni composici
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingues: no disponible (no se declaran idiomas soportados).
 - Capacidades especiales (modo thinking, vision, audio): no documentado.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el repositorio esta preparado para su despliegue mediante Inference Endpoints de HuggingFace, sin que ello implique ninguna garantia sobre el comportamiento del modelo.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el repositorio esta preparado para su despliegue mediante Inference Endpoints de Hugging Face, sin que ello implique ninguna garantia sobre el comportamiento del modelo.
 
 ## Casos de uso
 
@@ -67,7 +67,7 @@ Estimaciones derivadas unicamente del recuento de parametros (8,95 B); al no con
 - GPU recomendadas: A100 40/80 GB, H100 o L40S para fp16 sin cuantizar o para servir en paralelo; RTX 4090 (24 GB) o RTX 3090 (24 GB) para fp16 con contextos cortos o cuantizaciones de 8 bits.
 - GPU de consumo: si, cabe en tarjetas con 8-12 GB de VRAM usando cuantizaciones GGUF de 4 bits; en 6 GB es ajustado y depende del contexto.
 - CPU: viable con llama.cpp u Ollama en cuantizacion de 4 bits, con velocidades dependientes del numero de nucleos y del ancho de banda de memoria.
-- Opciones de despliegue: safetensors permite vLLM, TGI, Transformers y HuggingFace Inference Endpoints (el tag `endpoints_compatible` asi lo indica); el formato GGUF habilita llama.cpp, Ollama y derivados.
+- Opciones de despliegue: safetensors permite vLLM, TGI, Transformers y Hugging Face Inference Endpoints (el tag `endpoints_compatible` asi lo indica); el formato GGUF habilita llama.cpp, Ollama y derivados.
 - Latencia y throughput: no disponible (no hay mediciones publicadas).
 
 ## Comparativa con modelos similares
@@ -99,5 +99,5 @@ La diferencia principal frente a estas alternativas no es tecnica sino de trazab
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nodemixaholic2/samantha-combo-x
+- Hugging Face: https://huggingface.co/nodemixaholic2/samantha-combo-x
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion disponible.

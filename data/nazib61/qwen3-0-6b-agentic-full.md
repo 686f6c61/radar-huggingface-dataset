@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nazib61/qwen3-0.6b-agentic-full es un ajuste fino del modelo Qwen3-0.6B publicado por el usuario nazib61 en HuggingFace. Se trata de un modelo denso de 596.049.920 parámetros (unos 0,6 mil millones) orientado a generación de texto y a flujos agénticos, según indican sus etiquetas (agentic, conversational) y su pipeline declarado (text-generation). El modelo base declarado en la model card es qwen3-0.6b-agentic-full-local, un artefacto del mismo autor que no aparece documentado ni referenciado de forma verificable.
+nazib61/qwen3-0.6b-agentic-full es un ajuste fino del modelo Qwen3-0.6B publicado por el usuario nazib61 en Hugging Face. Se trata de un modelo denso de 596.049.920 parámetros (unos 0,6 mil millones) orientado a generación de texto y a flujos agénticos, según indican sus etiquetas (agentic, conversational) y su pipeline declarado (text-generation). El modelo base declarado en la model card es qwen3-0.6b-agentic-full-local, un artefacto del mismo autor que no aparece documentado ni referenciado de forma verificable.
 
 El entrenamiento se realizó con Unsloth y TRL, según las etiquetas del repositorio y la propia model card, que afirma que el modelo se entrenó "2 veces más rápido con Unsloth". La model card es mínima: no documenta el dataset empleado, el número de tokens de ajuste, la composición de los datos ni si hubo fases de RLHF, DPO u otro alineamiento posterior al SFT.
 
@@ -37,7 +37,7 @@ Tampoco hay información sobre el corpus de ajuste: se desconoce si se emplearon
 - Razonamiento multi-paso y uso como agente: no confirmado en la información disponible.
 - Capacidades multilingües: solo se declara inglés; no se documentan otros idiomas.
 - Capacidades especiales (modo thinking, visión, audio): no disponibles.
-- Compatibilidad declarada con text-generation-inference y con endpoints de HuggingFace (etiqueta endpoints_compatible).
+- Compatibilidad declarada con text-generation-inference y con endpoints de Hugging Face (etiqueta endpoints_compatible).
 
 ## Casos de uso
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nazib61/qwen3-0.6b-agentic-full | 596.049.920 | no disponible | apache-2.0 | solo safetensors en HuggingFace, 0 descargas |
+| nazib61/qwen3-0.6b-agentic-full | 596.049.920 | no disponible | apache-2.0 | solo safetensors en Hugging Face, 0 descargas |
 | Qwen3-0.6B (modelo base oficial) | 0,6 B | 32.768 tokens (según documentación de la familia) | apache-2.0 | pesos, GGUF y cuantizaciones publicadas por el equipo Qwen |
 | Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 tokens (según su model card) | apache-2.0 | ampliamente desplegado y con versiones GGUF |
 | Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens (según su model card) | Llama 3.2 Community License | disponible con cuantizaciones en el ecosistema |
@@ -88,7 +88,7 @@ Los datos de las alternativas provienen de sus model cards públicas. No existen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nazib61/qwen3-0.6b-agentic-full
+- Modelo en Hugging Face: https://huggingface.co/nazib61/qwen3-0.6b-agentic-full
 - Unsloth (framework de entrenamiento citado en la model card): https://github.com/unslothai/unsloth
 - TRL (framework citado en las etiquetas): https://github.com/huggingface/trl
 - Modelo base de la familia Qwen3-0.6B (referencia de arquitectura): https://huggingface.co/Qwen/Qwen3-0.6B

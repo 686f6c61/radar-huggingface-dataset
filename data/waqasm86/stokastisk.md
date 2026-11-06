@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`waqasm86/stokastisk` es un repositorio alojado en HuggingFace por el usuario `waqasm86`. La informacion publica disponible es minima: la model card unicamente declara una licencia MIT y no incluye descripcion del modelo, arquitectura, datos de entrenamiento ni casos de uso previstos. El repositorio cuenta con 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 4 de noviembre de 2026.
+`waqasm86/stokastisk` es un repositorio alojado en Hugging Face por el usuario `waqasm86`. La informacion publica disponible es minima: la model card unicamente declara una licencia MIT y no incluye descripcion del modelo, arquitectura, datos de entrenamiento ni casos de uso previstos. El repositorio cuenta con 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 4 de noviembre de 2026.
 
-No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. La etiqueta `region:us` sugiere que el repositorio esta alojado en la region de Estados Unidos de HuggingFace, pero no aporta informacion tecnica sobre el modelo. El nombre "stokastisk" (palabra sueca/danesa para "estocastico") no viene acompanado de ninguna explicacion en la model card.
+No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. La etiqueta `region:us` sugiere que el repositorio esta alojado en la region de Estados Unidos de Hugging Face, pero no aporta informacion tecnica sobre el modelo. El nombre "stokastisk" (palabra sueca/danesa para "estocastico") no viene acompanado de ninguna explicacion en la model card.
 
 Dado que no se han publicado especificaciones tecnicas, resultados de benchmarks ni documentacion adicional, esta ficha se limita a reflejar los metadatos disponibles y a marcar explicitamente como "no disponible" cualquier dato que no pueda verificarse. Se recomienda precaucion antes de evaluar o desplegar este modelo en entornos de produccion.
 
@@ -83,5 +83,5 @@ Los datos de las alternativas se incluyen solo como referencia de categoria; no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/waqasm86/stokastisk
+- Repositorio en Hugging Face: https://huggingface.co/waqasm86/stokastisk
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

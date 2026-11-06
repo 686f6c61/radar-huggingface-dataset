@@ -75,7 +75,7 @@ La comparacion con el Pythia 1B original es relevante: el modelo original usa Ro
 
 ## Enlaces
 
-- [HuggingFace - Pythia1BxFW_Edux2048x0pctxseed_175](https://huggingface.co/aflah/Pythia1BxFW_Edux2048x0pctxseed_175)
+- [Hugging Face - Pythia1BxFW_Edux2048x0pctxseed_175](https://huggingface.co/aflah/Pythia1BxFW_Edux2048x0pctxseed_175)
 - [Paper: Fractional Rotation, Full Potential? Investigating Performance and Convergence of Partial RoPE](https://arxiv.org/abs/2603.11611)
 - [Codigo de entrenamiento y analisis (GitHub)](https://github.com/aflah02/Partial_RoPE_Analysis)
-- [Coleccion de HuggingFace: Partial RoPE Analysis](https://huggingface.co/collections/aflah/partial-rope-analysis)
+- [Coleccion de Hugging Face: Partial RoPE Analysis](https://huggingface.co/collections/aflah/partial-rope-analysis)

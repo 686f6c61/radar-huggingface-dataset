@@ -87,7 +87,7 @@ No se dispone en la información proporcionada de datos de rendimiento (WER, lat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/efeemece/avena-parakeet-ultra
+- Modelo en Hugging Face: https://huggingface.co/efeemece/avena-parakeet-ultra
 - Modelo base (post-entrenamiento): https://huggingface.co/moondream/parakeet-ultra
 - Modelo base original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Runtime parakeet.cpp: https://github.com/mudler/parakeet.cpp

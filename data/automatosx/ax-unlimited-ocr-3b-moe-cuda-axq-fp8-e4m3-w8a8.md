@@ -73,9 +73,9 @@ Ambas pruebas usaron vLLM 0.25.1, PyTorch 2.11.0+cu130 y CUDA 13.0, con `min_tok
 
 | Modelo | Parametros | Cuantizacion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AX-Unlimited-OCR-3B-MoE-CUDA-AXQ-FP8-E4M3-W8A8 (este modelo) | 3.336.106.240 | FP8 E4M3 W8A8 | safetensors (float8_e4m3fn) | MIT | HuggingFace (vista previa de desarrollo) |
-| AXQ CUDA NVFP4 W4A16 (hermano nativo) | no disponible | NVFP4 W4A16 | no disponible | no disponible | HuggingFace |
-| baidu/Unlimited-OCR (modelo base) | 3.336.106.240 | BF16 | safetensors (BF16) | MIT | HuggingFace |
+| AX-Unlimited-OCR-3B-MoE-CUDA-AXQ-FP8-E4M3-W8A8 (este modelo) | 3.336.106.240 | FP8 E4M3 W8A8 | safetensors (float8_e4m3fn) | MIT | Hugging Face (vista previa de desarrollo) |
+| AXQ CUDA NVFP4 W4A16 (hermano nativo) | no disponible | NVFP4 W4A16 | no disponible | no disponible | Hugging Face |
+| baidu/Unlimited-OCR (modelo base) | 3.336.106.240 | BF16 | safetensors (BF16) | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Unlimited-OCR-3B-MoE-CUDA-AXQ-FP8-E4M3-W8A8
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Unlimited-OCR-3B-MoE-CUDA-AXQ-FP8-E4M3-W8A8
 - Modelo base: https://huggingface.co/baidu/Unlimited-OCR
 - Hermano nativo en NVFP4: https://huggingface.co/AutomatosX/AX-Unlimited-OCR-3B-MoE-CUDA-AXQ-NVFP4-W4A16
 - Referencia de FP8 y FP4 de NVIDIA: https://docs.nvidia.com/deeplearning/transformer-engine-releases/release-2.14/user-guide/examples/fp8_primer.html

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeltaP2S-Gemma7B-SameFormula-Code-S13-a05 es un checkpoint fusionado (merged checkpoint) publicado por el usuario g-assismoraes en HuggingFace, descrito por su autor como parte del paquete de experimentos "family-aware Delta-P2S". La model card es minima: unicamente indica que la base de entrenamiento es `google/gemma-7b` y que se trata de un "large-baseline". No incluye informacion sobre el procedimiento de merge, los datos utilizados ni el objetivo concreto del experimento.
+DeltaP2S-Gemma7B-SameFormula-Code-S13-a05 es un checkpoint fusionado (merged checkpoint) publicado por el usuario g-assismoraes en Hugging Face, descrito por su autor como parte del paquete de experimentos "family-aware Delta-P2S". La model card es minima: unicamente indica que la base de entrenamiento es `google/gemma-7b` y que se trata de un "large-baseline". No incluye informacion sobre el procedimiento de merge, los datos utilizados ni el objetivo concreto del experimento.
 
 El nombre del repositorio sugiere un experimento orientado a codigo ("Code") con un identificador de formula y semilla ("SameFormula-S13-a05"), pero esto no esta confirmado en la documentacion. Los pesos estan en formato safetensors y suman 9.324.112.896 parametros (18,7 GB en total), una cifra superior a los aproximadamente 8,5 mil millones del modelo base Gemma 7B, diferencia cuyo motivo no se documenta.
 
@@ -45,7 +45,7 @@ La discrepancia entre los 9,32 mil millones de parametros declarados y los ~8,5 
 - Auditoria de tecnicas de fusion de pesos: el modelo sirve como sujeto de estudio para comparar el checkpoint fusionado contra `google/gemma-7b` en una bateria fija de prompts, aislando el efecto del merge sobre la perplejidad y la calidad de generacion.
 - Reproduccion de experimentos academicos: al estar los pesos en safetensors y ser compatibles con `transformers`, se puede cargar el modelo con `AutoModelForCausalLM.from_pretrained` y reproducir las condiciones del paquete Delta-P2S si el autor publica la configuracion.
 - Generacion de codigo asistida en local: si el sufijo "Code" refleja un ajuste real, podria usarse para autocompletado o generacion de fragmentos en un editor, aunque requeriria validacion previa contra un baseline como HumanEval o MBPP.
-- Prototipado de pipelines de texto con `text-generation-inference`: el tag `text-generation-inference` y `endpoints_compatible` indican que el checkpoint esta pensado para desplegarse con TGI en HuggingFace Inference Endpoints, lo que facilita pruebas de integracion sin escribir servidor propio.
+- Prototipado de pipelines de texto con `text-generation-inference`: el tag `text-generation-inference` y `endpoints_compatible` indican que el checkpoint esta pensado para desplegarse con TGI en Hugging Face Inference Endpoints, lo que facilita pruebas de integracion sin escribir servidor propio.
 - Investigacion sobre degradacion por merge: util para medir si la fusion introduce olvido catastrofico, repeticiones o colapso de formato en comparacion con el modelo original.
 - Base para cuantizacion y despliegue en hardware de consumo: al ser un modelo de ~9,3 mil millones de parametros, es candidato a cuantizarse a 4 bits (GGUF, AWQ o GPTQ) para ejecucion en una GPU de 8-12 GB, aunque no se publican cuantizaciones oficiales.
 - Ensenanza y divulgacion: ejemplo practico de como se distribuye un checkpoint fusionado y de las precauciones que exige su uso (licencia, evaluacion y trazabilidad).
@@ -60,17 +60,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia en fp16: unos 19 GB para los pesos mas cache KV. Con 8.192 tokens de contexto, la cache KV de una configuracion tipo Gemma 7B (28 capas, 16 cabezas KV, `head_dim` 256, fp16) ocupa del orden de 0,44 MB por token, es decir, unos 3,6 GB adicionales, lo que situa el total en torno a 22-23 GB. Estas cifras son estimaciones a partir de la arquitectura del modelo base, no mediciones del checkpoint.
 - GPU recomendadas: A100 40 GB o 80 GB, H100 80 GB y L40S 48 GB para fp16 con contexto completo. En una RTX 4090 o RTX 3090 de 24 GB el modelo entra en fp16 con margen muy ajustado y contexto reducido.
 - Cabe en GPU de consumo: si, en tarjetas de 24 GB (RTX 3090, 3090 Ti, 4090) en fp16 con contexto limitado, y en tarjetas de 8-16 GB si se cuantiza a 8 o 4 bits (aproximadamente 9,3 GB en int8 y 5 GB en 4 bits, sin contar la cache KV).
-- Opciones de despliegue: `transformers` (libreria declarada), `text-generation-inference` (tag explicito) y HuggingFace Inference Endpoints (tag `endpoints_compatible`). vLLM y llama.cpp son viables tecnicamente por compatibilidad de arquitectura, pero no estan declarados por el autor y no hay archivos GGUF publicados.
+- Opciones de despliegue: `transformers` (libreria declarada), `text-generation-inference` (tag explicito) y Hugging Face Inference Endpoints (tag `endpoints_compatible`). vLLM y llama.cpp son viables tecnicamente por compatibilidad de arquitectura, pero no estan declarados por el autor y no hay archivos GGUF publicados.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo, TTFT ni consumo energetico.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| DeltaP2S-Gemma7B-SameFormula-Code-S13-a05 | 9.324.112.896 | no disponible (base: 8.192) | no disponible | HuggingFace, 0 descargas | No publicado |
-| google/gemma-7b | ~8.500 millones | 8.192 | Gemma Terms of Use | HuggingFace, ampliamente distribuido | Si, en el informe tecnico de Gemma |
-| mistralai/Mistral-7B-v0.1 | ~7.200 millones | 8.192 | Apache 2.0 | HuggingFace | Si, en la model card |
-| meta-llama/Meta-Llama-3-8B | ~8.000 millones | 8.192 | Llama 3 Community License | HuggingFace (con acceso sujeto a licencia) | Si, en la model card |
+| DeltaP2S-Gemma7B-SameFormula-Code-S13-a05 | 9.324.112.896 | no disponible (base: 8.192) | no disponible | Hugging Face, 0 descargas | No publicado |
+| google/gemma-7b | ~8.500 millones | 8.192 | Gemma Terms of Use | Hugging Face, ampliamente distribuido | Si, en el informe tecnico de Gemma |
+| mistralai/Mistral-7B-v0.1 | ~7.200 millones | 8.192 | Apache 2.0 | Hugging Face | Si, en la model card |
+| meta-llama/Meta-Llama-3-8B | ~8.000 millones | 8.192 | Llama 3 Community License | Hugging Face (con acceso sujeto a licencia) | Si, en la model card |
 
 No se dispone de datos de rendimiento de este checkpoint, por lo que la comparativa se limita a parametros, contexto, licencia y disponibilidad. Los valores de los modelos alternativos proceden de sus respectivas model cards publicas y no se han verificado de forma independiente en esta ficha.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g-assismoraes/DeltaP2S-Gemma7B-SameFormula-Code-S13-a05
+- Modelo en Hugging Face: https://huggingface.co/g-assismoraes/DeltaP2S-Gemma7B-SameFormula-Code-S13-a05
 - Modelo base citado en la model card: https://huggingface.co/google/gemma-7b
 
 Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, el paquete "Delta-P2S" ni la tecnica "pen2sword"; los unicos resultados obtenidos fueron paginas genericas de Google y Gmail, sin relacion con el modelo. No se dispone, por tanto, de enlaces a papers, blogs, repositorios de codigo o demos adicionales.

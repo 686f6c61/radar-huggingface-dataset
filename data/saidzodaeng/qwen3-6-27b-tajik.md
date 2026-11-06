@@ -4,7 +4,7 @@
 
 El modelo SaidzodaEng/Qwen3.6-27B-Tajik es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.6-27B, desarrollado por SaidzodaEng con el objetivo de adaptar un modelo de última generación al idioma tayiko (tg). Se trata de una versión instruida (instruction-tuned) orientada a generación de texto, que hereda las capacidades del modelo original de Alibaba Qwen: una arquitectura densa de 27 000 millones de parámetros, con atención híbrida basada en redes delta con compuertas (gated delta networks) y una ventana de contexto de 262 000 tokens. Su relevancia radica en que el tayiko es un idioma de Asia Central con escasa representación en modelos de gran tamaño, por lo que este ajuste permite aprovechar el rendimiento del Qwen3.6-27B en tareas de comprensión y generación en dicho idioma.
 
-El acceso al modelo está restringido (gated) en HuggingFace, por lo que los usuarios deben aceptar las condiciones de la licencia antes de descargarlo. La licencia indicada es "qwen", que corresponde a los términos de uso de los modelos Qwen de Alibaba, con restricciones específicas para uso comercial y redistribución. El modelo fue publicado el 17 de agosto de 2026 y, aunque no se han reportado descargas ni valoraciones, su existencia cubre un hueco importante para la comunidad de habla tayika y para investigadores interesados en el procesamiento del lenguaje natural para idiomas de baja representación.
+El acceso al modelo está restringido (gated) en Hugging Face, por lo que los usuarios deben aceptar las condiciones de la licencia antes de descargarlo. La licencia indicada es "qwen", que corresponde a los términos de uso de los modelos Qwen de Alibaba, con restricciones específicas para uso comercial y redistribución. El modelo fue publicado el 17 de agosto de 2026 y, aunque no se han reportado descargas ni valoraciones, su existencia cubre un hueco importante para la comunidad de habla tayika y para investigadores interesados en el procesamiento del lenguaje natural para idiomas de baja representación.
 
 ## Especificaciones tecnicas
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks específicos para el fine-tune Said
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SaidzodaEng/Qwen3.6-27B-Tajik | 27B | 262K | Tayiko + multilingüe | qwen (gated) | HuggingFace (restringido) |
-| Qwen/Qwen3.6-27B (base) | 27B | 262K | Multilingüe | qwen | HuggingFace (gated) |
-| Qwen3.6-35B-A3B (MoE) | 35B total, 3B activos | 262K | Multilingüe | qwen | HuggingFace |
+| SaidzodaEng/Qwen3.6-27B-Tajik | 27B | 262K | Tayiko + multilingüe | qwen (gated) | Hugging Face (restringido) |
+| Qwen/Qwen3.6-27B (base) | 27B | 262K | Multilingüe | qwen | Hugging Face (gated) |
+| Qwen3.6-35B-A3B (MoE) | 35B total, 3B activos | 262K | Multilingüe | qwen | Hugging Face |
 | Llama 3.1 8B (ejemplo genérico) | 8B | 128K | Multilingüe (incluye algunos de Asia Central) | Llama 3.1 | Abierto |
 
 No se han identificado otros modelos específicos para tayiko con características comparables. La comparativa con modelos multilingües generales como Llama 3.1 es orientativa, pero el fine-tune ofrece una especialización en tayiko que no tienen los modelos base. El modelo MoE Qwen3.6-35B-A3B es una alternativa más eficiente en cómputo, pero no está adaptado al tayiko.
@@ -73,13 +73,13 @@ No se han identificado otros modelos específicos para tayiko con característic
 - Riesgo de alucinación: como todo modelo generativo, puede producir información falsa o inventada, especialmente en dominios especializados o con poca presencia en los datos de entrenamiento en tayiko.
 - Limitaciones de contexto: aunque la ventana es de 262K tokens, el rendimiento en contextos muy largos puede degradarse y el coste computacional aumenta significativamente.
 - Restricciones de licencia: la licencia "qwen" impone condiciones para uso comercial, redistribución y modificación; es obligatorio revisar los términos completos en el repositorio oficial de Qwen antes de su uso en producción.
-- Acceso restringido: el modelo es gated, por lo que se requiere aceptar condiciones en HuggingFace; esto puede limitar su adopción en entornos corporativos.
+- Acceso restringido: el modelo es gated, por lo que se requiere aceptar condiciones en Hugging Face; esto puede limitar su adopción en entornos corporativos.
 - Cobertura limitada del tayiko: al ser un fine-tune, la calidad puede ser inferior en variantes dialectales o en registros muy formales si los datos de entrenamiento no los cubren adecuadamente.
 - Sin benchmarks específicos: la ausencia de evaluaciones publicadas en tayiko impide validar su rendimiento real frente a otros modelos o frente al base sin adaptar.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SaidzodaEng/Qwen3.6-27B-Tajik
+- Hugging Face: https://huggingface.co/SaidzodaEng/Qwen3.6-27B-Tajik
 - Blog oficial de Qwen sobre Qwen3.6-27B: https://qwen.ai/blog?id=qwen3.6-27b
 - Guía completa de Qwen 3.6 (27B y MoE): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/
 - Recetas vLLM para Qwen3.6-27B: https://recipes.vllm.ai/Qwen/Qwen3.6-27B

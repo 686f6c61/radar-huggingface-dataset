@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fbaldassarri/mistralai_Mistral-7B-Instruct-v0.3-auto_gptq-int8-gs64-sym | 7,2B (INT8) | 32.768 | AutoGPTQ INT8 gs64 simetrica | Apache 2.0 | HuggingFace, 19 descargas |
-| mistralai/Mistral-7B-Instruct-v0.3 (original) | 7,2B (bf16/fp16) | 32.768 | ninguna | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| Mistral-7B-Instruct-v0.2 | 7,2B | 32.768 | ninguna | Apache 2.0 | HuggingFace |
-| Mistral-7B-v0.1 (base) | 7,2B | 8.192 | ninguna | Apache 2.0 | HuggingFace |
+| fbaldassarri/mistralai_Mistral-7B-Instruct-v0.3-auto_gptq-int8-gs64-sym | 7,2B (INT8) | 32.768 | AutoGPTQ INT8 gs64 simetrica | Apache 2.0 | Hugging Face, 19 descargas |
+| mistralai/Mistral-7B-Instruct-v0.3 (original) | 7,2B (bf16/fp16) | 32.768 | ninguna | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| Mistral-7B-Instruct-v0.2 | 7,2B | 32.768 | ninguna | Apache 2.0 | Hugging Face |
+| Mistral-7B-v0.1 (base) | 7,2B | 8.192 | ninguna | Apache 2.0 | Hugging Face |
 
 La comparación relevante es contra el modelo original en bfloat16: esta versión INT8 reduce el espacio en disco y memoria a costa de una posible degradación de calidad no cuantificada. Frente a otras cuantizaciones del mismo modelo base (AWQ, GGUF Q4/Q8), el interés diferencial es su calibración para hardware Intel, no una ventaja de rendimiento demostrada.
 
@@ -81,11 +81,11 @@ La comparación relevante es contra el modelo original en bfloat16: esta versió
 - La cuantización está calibrada en CPU con 128 muestras; el rendimiento en GPU u otros aceleradores no está validado por el autor.
 - Licencia Apache 2.0 permite uso comercial, pero el disclaimer del autor restringe la finalidad a investigación; conviene revisar esta ambigüedad antes de un despliegue en producción.
 - Repositorio con muy baja adopción (19 descargas, 0 likes) y sin mantenimiento documentado; no hay issues ni discusiones que permitan evaluar su fiabilidad.
-- El campo `inference: false` en los metadatos de la model card indica que el autor no garantiza que el pipeline de inferencia estándar de HuggingFace funcione sin configuración adicional.
+- El campo `inference: false` en los metadatos de la model card indica que el autor no garantiza que el pipeline de inferencia estándar de Hugging Face funcione sin configuración adicional.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/mistralai_Mistral-7B-Instruct-v0.3-auto_gptq-int8-gs64-sym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/mistralai_Mistral-7B-Instruct-v0.3-auto_gptq-int8-gs64-sym
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Intel AutoRound (repositorio): https://github.com/intel/auto-round
 - Pipeline de replicación citado por el autor: https://git.epicdynamic.com/auto-round-pipeline

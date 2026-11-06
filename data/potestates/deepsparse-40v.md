@@ -27,7 +27,7 @@ El repositorio ocupa 0,1 GB, tiene 0 descargas y 0 likes, y se distribuye bajo l
 | Version de codigo de referencia | xmed-lab/DeepSparse @ `a055aba3bcb5732a68f89cc0bf3ee6fbfbb1b1e4` |
 | Entorno | PyTorch 2.7.1 + CUDA 12.8, TIGRE 3.1.3 |
 | Tamano del repositorio | 0,1 GB |
-| Fecha de creacion en HuggingFace | 2026-09-22 |
+| Fecha de creacion en Hugging Face | 2026-09-22 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -105,8 +105,8 @@ La unica alternativa comparable documentada en la informacion disponible es la v
 
 | Modelo | Vistas | Datasets cubiertos | PSNR 3D pelvis (dB) | PSNR 3D pulmon (dB) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Potestates/DeepSparse-40v` | 40 sobre 180° | pelvis, pulmon, abdomen, diente | 31,54 | 32,96 | `other` / mixed-see-readme | HuggingFace |
-| `Potestates/DeepSparse-25v` | 25 sobre 180° | pelvis, pulmon, abdomen, diente | 30,96 | 32,47 | `other` / mixed-see-readme | HuggingFace |
+| `Potestates/DeepSparse-40v` | 40 sobre 180° | pelvis, pulmon, abdomen, diente | 31,54 | 32,96 | `other` / mixed-see-readme | Hugging Face |
+| `Potestates/DeepSparse-25v` | 25 sobre 180° | pelvis, pulmon, abdomen, diente | 30,96 | 32,47 | `other` / mixed-see-readme | Hugging Face |
 
 Frente a otros metodos de reconstruccion de vistas dispersas (por ejemplo, variantes de DeepSparse publicadas por terceros u otras familias de reconstruccion), no hay datos comparativos en la informacion proporcionada: no disponible.
 
@@ -126,7 +126,7 @@ Frente a otros metodos de reconstruccion de vistas dispersas (por ejemplo, varia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Potestates/DeepSparse-40v
+- Modelo en Hugging Face: https://huggingface.co/Potestates/DeepSparse-40v
 - Variante de 25 vistas del mismo autor: https://huggingface.co/Potestates/DeepSparse-25v
 - Repositorio oficial del codigo DeepSparse (xmed-lab): https://github.com/xmed-lab/DeepSparse
 - Articulo de DeepSparse citado en la model card: enlace no disponible en la informacion proporcionada

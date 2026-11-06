@@ -86,8 +86,8 @@ No se dispone de comparativas con otros modelos de la misma categoría (por ejem
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/0bserverx/Qwen3.8-Flash-Next-RVN-Uncensored-GGUF
-- Modelo base (fine-tune) en HuggingFace: https://huggingface.co/0bserverx/Qwen3.8-Flash-Next-RVN-Uncensored
+- Modelo GGUF en Hugging Face: https://huggingface.co/0bserverx/Qwen3.8-Flash-Next-RVN-Uncensored-GGUF
+- Modelo base (fine-tune) en Hugging Face: https://huggingface.co/0bserverx/Qwen3.8-Flash-Next-RVN-Uncensored
 - Modelo base original de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Documentación de unsloth sobre ejecución local: https://unsloth.ai/docs/models/qwen3.8-next

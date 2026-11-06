@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi05-ego16retarget-robot32-30k es un checkpoint de robótica bimano (bimanual) desarrollado por el usuario Noctis12138, publicado en HuggingFace bajo el pipeline `robotics`. Se trata de un ajuste fino completo del modelo base `pi05_base` de OpenPI (la familia pi0.5 de Physical Intelligence) sobre el conjunto de datos propio `rokae_bimanual_6task`, orientado a control de un robot Rokae AR5 con pinza Robotiq 2F-85 en seis tareas de manipulación. El modelo está pensado para pruebas en robot real y toma como línea base `maple0617/pi05-robot32-30k`.
+pi05-ego16retarget-robot32-30k es un checkpoint de robótica bimano (bimanual) desarrollado por el usuario Noctis12138, publicado en Hugging Face bajo el pipeline `robotics`. Se trata de un ajuste fino completo del modelo base `pi05_base` de OpenPI (la familia pi0.5 de Physical Intelligence) sobre el conjunto de datos propio `rokae_bimanual_6task`, orientado a control de un robot Rokae AR5 con pinza Robotiq 2F-85 en seis tareas de manipulación. El modelo está pensado para pruebas en robot real y toma como línea base `maple0617/pi05-robot32-30k`.
 
 La contribución diferencial frente a esa línea base es la incorporación de datos egocéntricos: en cada lote se añaden 16 muestras procedentes de `egoverse-aria-selected` (238 secuencias), retargetizadas de pose humana a cinemática del robot mediante IK (AR5) y renderizadas con MuJoCo tras eliminar manos y brazos con SAM 3 y ProPainter. El resto de la receta (30 000 pasos, learning rate constante 5e-5, EMA 0.999, seed 42, dropout de cámara de muñeca 0.15) es idéntica a la del baseline, de modo que la comparación aísla el efecto del dato ego.
 
@@ -74,8 +74,8 @@ Estos números miden únicamente la coherencia del formato de pesos y de la ruta
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-ego16retarget-robot32-30k | no disponible (12,5 GB en bf16) | 200 tokens de prompt, chunk de 50 acciones | 30k pasos, 32 robot + 16 ego por lote | other (Apache 2.0 + términos Gemma) | HuggingFace, Orbax/JAX |
-| maple0617/pi05-robot32-30k (baseline) | mismo árbol de 51 arrays | idéntico | 30k pasos, solo datos de robot | no disponible en la información | HuggingFace |
+| pi05-ego16retarget-robot32-30k | no disponible (12,5 GB en bf16) | 200 tokens de prompt, chunk de 50 acciones | 30k pasos, 32 robot + 16 ego por lote | other (Apache 2.0 + términos Gemma) | Hugging Face, Orbax/JAX |
+| maple0617/pi05-robot32-30k (baseline) | mismo árbol de 51 arrays | idéntico | 30k pasos, solo datos de robot | no disponible en la información | Hugging Face |
 | pi05_base (OpenPI) | no disponible | idéntico (max_token_len 200) | preentrenamiento general de Physical Intelligence | Apache 2.0 con componentes Gemma | OpenPI |
 
 La comparación relevante es contra el baseline, del que este modelo difiere únicamente en la mezcla de datos (16 muestras ego adicionales por lote) y el batch size (48 frente a 32). El resto de la receta, las estadísticas de normalización y el contrato de despliegue son idénticos, lo que convierte a ambos checkpoints en un par controlado para evaluar el retargeting egocéntrico.
@@ -95,7 +95,7 @@ La comparación relevante es contra el baseline, del que este modelo difiere ún
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Noctis12138/pi05-ego16retarget-robot32-30k
+- Modelo en Hugging Face: https://huggingface.co/Noctis12138/pi05-ego16retarget-robot32-30k
 - Baseline citado por el autor: https://huggingface.co/maple0617/pi05-robot32-30k
 - OpenPI (repositorio y código de despliegue): no se proporciona URL en la información disponible
 - Paper de pi0.5 / Physical Intelligence: no se proporciona URL en la información disponible

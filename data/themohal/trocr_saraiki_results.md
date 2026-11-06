@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `themohal/trocr_saraiki_results` es un ajuste fino de `microsoft/trocr-small-printed` orientado al reconocimiento optico de caracteres (OCR) para el idioma saraiki, una lengua indoaria hablada principalmente en la region de Punjab en Pakistan. El desarrollo corre a cargo del usuario de HuggingFace `themohal`, y el modelo se publico en agosto de 2026. Resuelve el problema de la falta de sistemas OCR especificos para escritura en alfabeto arabe extendido, adaptando un modelo base entrenado para texto impreso en ingles a un dominio linguistico con escasa representacion en los datasets publicos.
+El modelo `themohal/trocr_saraiki_results` es un ajuste fino de `microsoft/trocr-small-printed` orientado al reconocimiento optico de caracteres (OCR) para el idioma saraiki, una lengua indoaria hablada principalmente en la region de Punjab en Pakistan. El desarrollo corre a cargo del usuario de Hugging Face `themohal`, y el modelo se publico en agosto de 2026. Resuelve el problema de la falta de sistemas OCR especificos para escritura en alfabeto arabe extendido, adaptando un modelo base entrenado para texto impreso en ingles a un dominio linguistico con escasa representacion en los datasets publicos.
 
 Con 61,6 millones de parametros, es un modelo compacto que sigue la arquitectura vision-encoder-decoder de TrOCR. Su relevancia radica en que demuestra la viabilidad de transferir modelos OCR preentrenados a lenguas de bajos recursos mediante ajuste fino, aunque los resultados de validacion muestran un rendimiento limitado (CER de 0,7220), lo que sugiere que el modelo es un experimento preliminar mas que una solucion lista para produccion.
 
@@ -57,7 +57,7 @@ Un CER de 0,7220 implica que aproximadamente el 72 % de los caracteres son incor
 - VRAM estimada: con 61,6 millones de parametros, el modelo ocupa aproximadamente 246 MB en fp32 y unos 62 MB en int8. Cabe en cualquier GPU consumer con al menos 2 GB de VRAM.
 - GPUs recomendadas: NVIDIA GTX 1050 Ti (4 GB) o superior, aunque una RTX 3060 (12 GB) proporcionaria margen para batch mayores.
 - Compatible con GPUs consumer: si, incluso en CPU se podria ejecutar con latencias altas.
-- Opciones de despliegue: transformers (pipeline image-to-text), HuggingFace Inference Endpoints, o exportacion a ONNX para inferencia en CPU.
+- Opciones de despliegue: transformers (pipeline image-to-text), Hugging Face Inference Endpoints, o exportacion a ONNX para inferencia en CPU.
 - Latencia y throughput: no disponibles, pero por el tamano del modelo se espera una latencia de decenas de milisegundos por imagen en una GPU moderna.
 
 ## Comparativa con modelos similares
@@ -82,6 +82,6 @@ El modelo base `trocr-small-printed` esta licenciado bajo MIT, pero la licencia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/themohal/trocr_saraiki_results
+- Modelo en Hugging Face: https://huggingface.co/themohal/trocr_saraiki_results
 - Modelo base: https://huggingface.co/microsoft/trocr-small-printed
 - Paper de TrOCR (referencia): https://arxiv.org/abs/2109.10282

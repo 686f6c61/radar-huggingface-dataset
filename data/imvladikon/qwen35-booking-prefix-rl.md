@@ -84,6 +84,6 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/imvladikon/qwen35-booking-prefix-rl
+- Repositorio Hugging Face: https://huggingface.co/imvladikon/qwen35-booking-prefix-rl
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B (referenciado en la model card, no verificado en esta búsqueda)
 - Carpetas de experimentos (dentro del repo): `runs/20260809-qwen35-booking-oracle-sft-e12-v3-s42`, `runs/20260810-qwen35-trajectory-prefix-r50-e8-s4-t5-g2-progress-s42`, etc. (enlaces relativos no accesibles directamente desde la web).

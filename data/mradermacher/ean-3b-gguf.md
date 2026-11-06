@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 |---|---|---|---|---|
 | EAN-3B (EVAN-3B) | 3,4 B | Sí (visión + razonamiento) | GGUF / safetensors | qwen-research (restringida) |
 | Qwen2.5-VL-3B | 3,7 B | Sí (visión + lenguaje) | safetensors / GGUF | Qwen Research / variantes Apache 2.0 según versión |
-| SmolVLM2-2.2B (HuggingFace) | 2,2 B | Sí (visión + lenguaje) | safetensors / GGUF | Apache 2.0 |
+| SmolVLM2-2.2B (Hugging Face) | 2,2 B | Sí (visión + lenguaje) | safetensors / GGUF | Apache 2.0 |
 | Phi-3.5-vision-instruct | 4,2 B | Sí (visión + lenguaje) | safetensors / GGUF | MIT |
 
 Frente a estas alternativas, EVAN-3B se diferencia por su enfoque específico en razonamiento visual-matemático mediante RL, mientras que los modelos comparables son más generalistas. Su licencia es más restrictiva que Apache 2.0 o MIT.

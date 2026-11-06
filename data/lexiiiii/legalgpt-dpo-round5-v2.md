@@ -67,6 +67,6 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lexiiiii/legalgpt-dpo-round5-v2
+- Modelo en Hugging Face: https://huggingface.co/Lexiiiii/legalgpt-dpo-round5-v2
 - Proyecto LegalGPT (GitHub): https://github.com/czc0407/legalGPT
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

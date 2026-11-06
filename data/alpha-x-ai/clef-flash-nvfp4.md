@@ -98,6 +98,6 @@ Otros modelos comparables de clasificacion multimodal estructurada: no disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alpha-x-ai/clef-flash-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/alpha-x-ai/clef-flash-NVFP4
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo: los resultados se referian a la letra griega alfa (Wikipedia, wumbo.net, alpha.fr, PiliApp) y no guardan relacion con el modelo. Por tanto, no hay papers, blogs, repositorios ni demos adicionales que enlazar.

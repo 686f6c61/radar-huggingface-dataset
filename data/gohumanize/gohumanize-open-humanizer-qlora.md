@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GoHumanize Open Humanizer QLoRA (este repo) | 4,02 B | 1.024 tokens en entrenamiento (inferencia no especificada) | QLoRA (rango 16) sobre Qwen3-4B | Apache-2.0 | Pesos mergeados, adaptador y GGUF en HuggingFace |
-| GoHumanize Open Humanizer (modelo principal) | 4,02 B | 1.024 tokens en entrenamiento (inferencia no especificada) | Fine-tune completo de Qwen3-4B | Apache-2.0 | Publicado en HuggingFace |
-| Qwen3-4B base | 4,02 B | No disponible en la informacion proporcionada | Preentrenado con post-entrenamiento | Apache-2.0 | Publico en HuggingFace |
+| GoHumanize Open Humanizer QLoRA (este repo) | 4,02 B | 1.024 tokens en entrenamiento (inferencia no especificada) | QLoRA (rango 16) sobre Qwen3-4B | Apache-2.0 | Pesos mergeados, adaptador y GGUF en Hugging Face |
+| GoHumanize Open Humanizer (modelo principal) | 4,02 B | 1.024 tokens en entrenamiento (inferencia no especificada) | Fine-tune completo de Qwen3-4B | Apache-2.0 | Publicado en Hugging Face |
+| Qwen3-4B base | 4,02 B | No disponible en la informacion proporcionada | Preentrenado con post-entrenamiento | Apache-2.0 | Publico en Hugging Face |
 | Otros humanizadores abiertos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Las metricas internas de BERTScore F1 (0,921 frente a 0,920) y ROUGE-L (0,540 frente a 0,535) situan esta version QLoRA al mismo nivel que el fine-tune completo del modelo principal. No se dispone de comparaciones con alternativas de terceros.
@@ -97,7 +97,7 @@ Las metricas internas de BERTScore F1 (0,921 frente a 0,920) y ROUGE-L (0,540 fr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gohumanize/gohumanize-open-humanizer-qlora
+- Modelo en Hugging Face: https://huggingface.co/gohumanize/gohumanize-open-humanizer-qlora
 - Modelo principal (fine-tune completo): https://huggingface.co/gohumanize/gohumanize-open-humanizer
 - Dataset de entrenamiento: https://huggingface.co/datasets/gohumanize/gohumanize-open-humanizer-dataset
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B

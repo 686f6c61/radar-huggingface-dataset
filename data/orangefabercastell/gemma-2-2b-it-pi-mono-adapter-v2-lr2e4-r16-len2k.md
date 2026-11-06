@@ -19,7 +19,7 @@ La información pública sobre este modelo es extremadamente limitada. La model 
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (hereda los del modelo base, sin confirmar) |
 | Licencia | no disponible |
-| Formato de pesos | Safetensors (según los tags del repositorio de HuggingFace) |
+| Formato de pesos | Safetensors (según los tags del repositorio de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 

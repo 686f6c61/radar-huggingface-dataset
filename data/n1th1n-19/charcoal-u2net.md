@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| charcoal-u2net (U-2-Net ONNX) | CNN segmentación | no disponible | no aplica | Apache-2.0 | HuggingFace (ONNX) |
+| charcoal-u2net (U-2-Net ONNX) | CNN segmentación | no disponible | no aplica | Apache-2.0 | Hugging Face (ONNX) |
 | rembg (U-2-Net y variantes) | CNN segmentación | no disponible | no aplica | MIT / Apache-2.0 según modelo | PyPI / GitHub |
-| Segment Anything (SAM) | Transformer visión | no disponible en esta ficha | no aplica | Apache-2.0 | Meta AI / HuggingFace |
-| BiRefNet | Transformer visión | no disponible en esta ficha | no aplica | MIT (según repositorio) | HuggingFace |
+| Segment Anything (SAM) | Transformer visión | no disponible en esta ficha | no aplica | Apache-2.0 | Meta AI / Hugging Face |
+| BiRefNet | Transformer visión | no disponible en esta ficha | no aplica | MIT (según repositorio) | Hugging Face |
 
 La comparación cuantitativa de rendimiento no está disponible en la información proporcionada. U-2-Net es un modelo más ligero y antiguo que SAM o BiRefNet, orientado a recorte de sujeto y ejecución en dispositivos modestos; SAM y BiRefNet ofrecen segmentación más general y de mayor calidad, a costa de mayor tamaño y cómputo.
 
@@ -81,7 +81,7 @@ La comparación cuantitativa de rendimiento no está disponible en la informaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/n1th1n-19/charcoal-u2net
+- Hugging Face: https://huggingface.co/n1th1n-19/charcoal-u2net
 - Repositorio Charcoal: https://github.com/n1th1n-19/charcoal
 - U-2-Net original (GitHub): https://github.com/xuebinqin/U-2-Net
 - rembg (export ONNX): https://github.com/danielgatis/rembg

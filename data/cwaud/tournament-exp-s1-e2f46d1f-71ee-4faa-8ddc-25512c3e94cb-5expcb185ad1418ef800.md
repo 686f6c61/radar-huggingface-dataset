@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `cwaud/tournament-exp-s1-e2f46d1f-71ee-4faa-8ddc-25512c3e94cb-5Expcb185ad1418ef800` es un checkpoint de 3.933.637.120 parámetros (aproximadamente 3,93 mil millones) publicado por el usuario `cwaud` en HuggingFace. Por el nombre del repositorio y por la existencia de otros artefactos hermanos con identificadores UUID similares, todo apunta a que se trata de un resultado intermedio o final de un experimento automatizado de tipo torneo, no de un lanzamiento de modelo con documentación técnica asociada. No existe model card, ni paper, ni blog que describa el entrenamiento.
+El modelo identificado como `cwaud/tournament-exp-s1-e2f46d1f-71ee-4faa-8ddc-25512c3e94cb-5Expcb185ad1418ef800` es un checkpoint de 3.933.637.120 parámetros (aproximadamente 3,93 mil millones) publicado por el usuario `cwaud` en Hugging Face. Por el nombre del repositorio y por la existencia de otros artefactos hermanos con identificadores UUID similares, todo apunta a que se trata de un resultado intermedio o final de un experimento automatizado de tipo torneo, no de un lanzamiento de modelo con documentación técnica asociada. No existe model card, ni paper, ni blog que describa el entrenamiento.
 
 El repositorio está etiquetado con `safetensors`, `llama` y `region:us`, lo que sugiere que la arquitectura pertenece a la familia Llama, aunque no hay confirmación documental de la configuración exacta (número de capas, cabezas de atención, dimensión oculta o longitud de contexto). El tamaño del repositorio, 7,9 GB, es coherente con pesos almacenados en precisión de 16 bits para 3,93 mil millones de parámetros, pero este dato no está confirmado de forma explícita.
 
@@ -92,7 +92,7 @@ La comparacion es desigual por construccion: las tres alternativas cuentan con m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-e2f46d1f-71ee-4faa-8ddc-25512c3e94cb-5Expcb185ad1418ef800
+- Modelo en Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-e2f46d1f-71ee-4faa-8ddc-25512c3e94cb-5Expcb185ad1418ef800
 - Repositorio hermano del mismo autor: https://huggingface.co/cwaud/tournament-exp-s1-29fc1a10-5cc0-4d2d-9fda-70f59bda942e-5Exp6ded491f0bd914af
 - Repositorio hermano del mismo autor: https://huggingface.co/cwaud/tournament-exp-s1-27840c46-dd63-4bfb-abd2-8b4ba556f84a-5Exp29cd06d3a0ba0836
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible. Las busquedas realizadas no han devuelto ninguna publicacion asociada a este checkpoint.

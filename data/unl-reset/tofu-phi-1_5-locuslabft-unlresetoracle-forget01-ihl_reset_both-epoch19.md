@@ -83,7 +83,7 @@ La comparación relevante es con el modelo base y con el ajuste fino TOFU origin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget01-ihl_reset_both-epoch19
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget01-ihl_reset_both-epoch19
 - Modelo base del ajuste fino: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original de Phi-1.5: https://huggingface.co/microsoft/phi-1_5
-- Manifiesto del experimento: `ihl_manifest.json` dentro del repositorio de HuggingFace (no se proporciona URL directa en la información disponible).
+- Manifiesto del experimento: `ihl_manifest.json` dentro del repositorio de Hugging Face (no se proporciona URL directa en la información disponible).

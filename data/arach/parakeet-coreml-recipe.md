@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato / runtime | Contexto de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `arach/parakeet-coreml-recipe` (sobre Parakeet TDT 0.6B v3) | 0,6 B | Core ML, Neural Engine | clips de menos de 15 s en el ejemplo | MIT (scripts) / CC-BY-4.0 (modelo) | HuggingFace, 0 descargas |
-| `nvidia/parakeet-tdt-0.6b-v3` (original) | 0,6 B | NeMo / PyTorch | no disponible | CC-BY-4.0 | HuggingFace (NVIDIA) |
-| `openai/whisper-large-v3` | 1,55 B | PyTorch, GGUF, Core ML (comunidad) | 30 s por ventana | MIT | HuggingFace, ampliamente desplegado |
-| `openai/whisper-small` | 244 M | PyTorch, GGUF, Core ML (comunidad) | 30 s por ventana | MIT | HuggingFace, ampliamente desplegado |
+| `arach/parakeet-coreml-recipe` (sobre Parakeet TDT 0.6B v3) | 0,6 B | Core ML, Neural Engine | clips de menos de 15 s en el ejemplo | MIT (scripts) / CC-BY-4.0 (modelo) | Hugging Face, 0 descargas |
+| `nvidia/parakeet-tdt-0.6b-v3` (original) | 0,6 B | NeMo / PyTorch | no disponible | CC-BY-4.0 | Hugging Face (NVIDIA) |
+| `openai/whisper-large-v3` | 1,55 B | PyTorch, GGUF, Core ML (comunidad) | 30 s por ventana | MIT | Hugging Face, ampliamente desplegado |
+| `openai/whisper-small` | 244 M | PyTorch, GGUF, Core ML (comunidad) | 30 s por ventana | MIT | Hugging Face, ampliamente desplegado |
 
 La comparativa con Whisper se ofrece como referencia de categoria (ASR open source); no se dispone de datos de rendimiento comparables entre ambos en la informacion proporcionada.
 

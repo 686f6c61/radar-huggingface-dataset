@@ -87,8 +87,8 @@ La variante adaptada mejora el token F1 sobre el conjunto de evaluación de inge
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sara121/Ornith-1.0-9B-Engineering
-- Modelo base en HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.0-9B
+- Modelo en Hugging Face: https://huggingface.co/Sara121/Ornith-1.0-9B-Engineering
+- Modelo base en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.0-9B
 - Repositorio GitHub de Ornith-1: https://github.com/ornith-ai/Ornith-1
 - Web oficial de Ornith AI: https://ornith.online/
 - Página del modelo Ornith 1.0 9B: https://ornith.online/ornith-1-0-model-9b

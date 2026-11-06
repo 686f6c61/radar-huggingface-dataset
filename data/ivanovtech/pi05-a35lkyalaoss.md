@@ -78,7 +78,7 @@ No se dispone de datos comparativos directos en la informacion proporcionada. Si
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ivanovtech/pi05-a35LKYALAosS
+- Repositorio Hugging Face: https://huggingface.co/ivanovtech/pi05-a35LKYALAosS
 - Repositorio OpenPI (implementacion de referencia): https://github.com/jorgemunozl/openpi_subtask_generation
 - Model card de otro checkpoint π0.5 (referencia): https://huggingface.co/home1017/my_pi05_model
 - Documentacion de π0.5 (via Scribd): https://www.scribd.com/document/885305547/pi05

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAT_llama3b_likeZephyr_eps0300_42_relativelr_utility_NEW es un adaptador LoRA publicado en HuggingFace por el usuario maria715. Segun la propia model card, se trata de un artefacto derivado de experimentos de tesis de master sobre entrenamiento adversarial orientado a robustez de modelos de lenguaje. No es un modelo completo, sino un conjunto de pesos incrementales que debe cargarse sobre un modelo base compatible mediante la libreria PEFT.
+CAT_llama3b_likeZephyr_eps0300_42_relativelr_utility_NEW es un adaptador LoRA publicado en Hugging Face por el usuario maria715. Segun la propia model card, se trata de un artefacto derivado de experimentos de tesis de master sobre entrenamiento adversarial orientado a robustez de modelos de lenguaje. No es un modelo completo, sino un conjunto de pesos incrementales que debe cargarse sobre un modelo base compatible mediante la libreria PEFT.
 
 El nombre del repositorio codifica la configuracion experimental: la cadena "llama3b" sugiere un modelo base de la familia Llama de aproximadamente 3000 millones de parametros, "likeZephyr" apunta a un ajuste de estilo instruct siguiendo el formato de Zephyr, "eps0300" parece referirse a un epsilon de perturbacion de 0,300 en el ataque adversarial, "42" a la semilla aleatoria y "relativelr" y "utility" a variantes de tasa de aprendizaje relativa y a una metrica de utilidad. Esta interpretacion procede de la nomenclatura y no esta confirmada en la documentacion del repositorio.
 
@@ -21,7 +21,7 @@ La relevancia del artefacto es acotada pero concreta: los adaptadores de robuste
 | Licencia | no disponible |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 
-Datos adicionales del repositorio: tamano de 1,2 GB, 0 descargas, 0 likes, region:us, libreria peft, creado y actualizado el 2026-09-30 segun los metadatos de HuggingFace.
+Datos adicionales del repositorio: tamano de 1,2 GB, 0 descargas, 0 likes, region:us, libreria peft, creado y actualizado el 2026-09-30 segun los metadatos de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -35,7 +35,7 @@ El tamano del repositorio, 1,2 GB, es elevado para un adaptador LoRA convenciona
 - La model card no documenta generacion de texto, razonamiento, codigo, matematicas ni capacidades de vision.
 - No se documenta soporte de tool calling ni de function calling.
 - No se documenta soporte para agentes ni razonamiento multi-paso.
-- No se documentan capacidades multilingues; el campo de idiomas aparece vacio en HuggingFace.
+- No se documentan capacidades multilingues; el campo de idiomas aparece vacio en Hugging Face.
 - La capacidad especifica que se atribuye al artefacto es la mejora de robustez adversarial del modelo base, segun la descripcion del autor.
 - No se documenta modo thinking, procesamiento de audio ni capacidades multimodales.
 
@@ -88,7 +88,7 @@ No disponible. Este repositorio no es un modelo base, sino un adaptador LoRA exp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0300_42_relativelr_utility_NEW
+- Repositorio en Hugging Face: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0300_42_relativelr_utility_NEW
 - Paper, blog o repositorio de codigo asociados: no disponible
 - Demo o space: no disponible
 - Documentacion del autor: no disponible

@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Iris-3B MFlux Q8 (este) | ~3B | No disponible | MLX safetensors Q8, 8,0 GB | iris-3b-license | HuggingFace, 44 descargas |
-| Iris-3B MFlux BF16 | ~3B | No disponible | MLX safetensors BF16, 14,0 GB | iris-3b-license | HuggingFace (misma comunidad) |
-| Iris-3B MFlux Q4 | ~3B | No disponible | MLX safetensors Q4, 5,1 GB | iris-3b-license | HuggingFace (misma comunidad) |
-| speridlabs/iris-3b (original) | ~3B | No disponible | Formato original no especificado | iris-3b-license | HuggingFace |
+| Iris-3B MFlux Q8 (este) | ~3B | No disponible | MLX safetensors Q8, 8,0 GB | iris-3b-license | Hugging Face, 44 descargas |
+| Iris-3B MFlux BF16 | ~3B | No disponible | MLX safetensors BF16, 14,0 GB | iris-3b-license | Hugging Face (misma comunidad) |
+| Iris-3B MFlux Q4 | ~3B | No disponible | MLX safetensors Q4, 5,1 GB | iris-3b-license | Hugging Face (misma comunidad) |
+| speridlabs/iris-3b (original) | ~3B | No disponible | Formato original no especificado | iris-3b-license | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos competidores de otros autores en la información proporcionada, por lo que la comparación se limita a las variantes del mismo modelo base.
 
@@ -87,9 +87,9 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mflux-community/iris-3b-mflux-q8
+- Repositorio Hugging Face: https://huggingface.co/mflux-community/iris-3b-mflux-q8
 - Modelo base: https://huggingface.co/speridlabs/iris-3b
 - Variante BF16: https://huggingface.co/mflux-community/iris-3b-mflux-bf16
 - Variante Q4: https://huggingface.co/mflux-community/iris-3b-mflux-q4
 - MFlux (GitHub): https://github.com/filipstrand/mflux
-- MFlux-Community en HuggingFace: https://huggingface.co/mflux-community
+- MFlux-Community en Hugging Face: https://huggingface.co/mflux-community

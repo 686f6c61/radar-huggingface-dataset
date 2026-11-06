@@ -6,7 +6,7 @@ Wan2.2-Animate-14B es un modelo de difusión vídeo a vídeo desarrollado por Wa
 
 El modelo se construye sobre Wan-AI/Wan2.2-I2V-A14B y adopta una arquitectura de Mixture-of-Experts (MoE) aplicada a la difusión de vídeo, donde el proceso de eliminación de ruido se reparte entre expertos especializados por tramos temporales. Aunque se comercializa con la etiqueta "14B", el recuento real de parámetros en safetensors es de 17.274.817.108, con aproximadamente 14B activos por paso. El repositorio ocupa 72,5 GB e incluye pesos en safetensors y ONNX.
 
-Su relevancia actual radica en que unifica dos tareas que tradicionalmente requerían modelos separados (animación de personaje y reemplazo de personaje) en un único modelo abierto con licencia Apache 2.0, algo poco habitual en el segmento de generación de vídeo cinematográfico, dominado por soluciones cerradas. Acumula 172.847 descargas y 1.289 "likes" en HuggingFace.
+Su relevancia actual radica en que unifica dos tareas que tradicionalmente requerían modelos separados (animación de personaje y reemplazo de personaje) en un único modelo abierto con licencia Apache 2.0, algo poco habitual en el segmento de generación de vídeo cinematográfico, dominado por soluciones cerradas. Acumula 172.847 descargas y 1.289 "likes" en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -35,7 +35,7 @@ En cuanto al entrenamiento, la familia Wan2.2 se entreno con un conjunto de dato
 - Generacion de video a partir de video conductor (pipeline video-to-video), con soporte de entrada de imagen de referencia.
 - Control estetico cinematografico: etiquetas de iluminacion, composicion, contraste y tono de color.
 - Integracion en ComfyUI (con el WanVideoWrapper de Kijai y soporte oficial).
-- Compatibilidad con pipelines de Diffusers (libreria declarada en HuggingFace).
+- Compatibilidad con pipelines de Diffusers (libreria declarada en Hugging Face).
 - Soporte de cuantizacion FP8 y offload por capas para reducir requisitos de VRAM.
 - No se declara soporte de tool calling, function calling, agentes ni razonamiento multi-paso (no es un modelo de lenguaje).
 
@@ -86,14 +86,14 @@ Alternativas cerradas de animacion de personaje (por ejemplo Runway Act-One) no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wan-AI/Wan2.2-Animate-14B
+- Modelo en Hugging Face: https://huggingface.co/Wan-AI/Wan2.2-Animate-14B
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
 - Paper (Wan: Open and Advanced Large-Scale Video Generative Models): https://arxiv.org/abs/2503.20314
 - Repositorio GitHub: https://github.com/Wan-Video/Wan2.2
-- Organizacion en HuggingFace: https://huggingface.co/Wan-AI/
+- Organizacion en Hugging Face: https://huggingface.co/Wan-AI/
 - ModelScope: https://modelscope.cn/organization/Wan-AI
 - Pagina del proyecto Animate: https://humanaigc.github.io/wan-animate
-- Demo en HuggingFace Space: https://huggingface.co/spaces/Wan-AI/Wan2.2-Animate
+- Demo en Hugging Face Space: https://huggingface.co/spaces/Wan-AI/Wan2.2-Animate
 - Demo en ModelScope Studio: https://www.modelscope.cn/studios/Wan-AI/Wan2.2-Animate
 - Plataforma Wan: https://wan.video/
 - Blog de Wan: https://wan.video/welcome

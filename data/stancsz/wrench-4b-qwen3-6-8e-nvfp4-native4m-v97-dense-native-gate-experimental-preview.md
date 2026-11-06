@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wrench-4B-Qwen3.6-8E es un artefacto experimental publicado por el usuario stancsz en HuggingFace, derivado del modelo Qwen3.6-35B-A3B y distribuido en pesos NVFP4 (W4A16) mediante modelopt. No es un modelo de proposito general ni un agente de programacion autonomo: se define como un SLM de ejecucion acotada de herramientas para desarrolladores, cuya funcion es proponer acciones estructuradas o abstenerse, dejando la autoridad final a un verificador independiente y a un fallback a un modelo mas potente (MiniMax). El paquete incluye tokenizer, verificador, toolbelt determinista, politica de contexto y un servidor local que expone una superficie compatible con Ollama.
+Wrench-4B-Qwen3.6-8E es un artefacto experimental publicado por el usuario stancsz en Hugging Face, derivado del modelo Qwen3.6-35B-A3B y distribuido en pesos NVFP4 (W4A16) mediante modelopt. No es un modelo de proposito general ni un agente de programacion autonomo: se define como un SLM de ejecucion acotada de herramientas para desarrolladores, cuya funcion es proponer acciones estructuradas o abstenerse, dejando la autoridad final a un verificador independiente y a un fallback a un modelo mas potente (MiniMax). El paquete incluye tokenizer, verificador, toolbelt determinista, politica de contexto y un servidor local que expone una superficie compatible con Ollama.
 
 El dato de tamano es contradictorio y conviene tratarlo con cautela: los safetensors del repositorio suman 2.228.810.368 parametros, mientras que la model card afirma 3.881.244.016 parametros verificados, por debajo de un supuesto techo de 4,25B. El nombre comercial dice "4B", la libreria base declarada (Qwen3.6-35B-A3B) es MoE y la etiqueta del repositorio es qwen3_5_moe, aunque el artefacto se describe como "dense-native". El peso en disco del paquete NVFP4 es de aproximadamente 3,2 GiB y el repositorio ocupa 3,4 GB.
 
@@ -23,7 +23,7 @@ Su relevancia actual es acotada pero clara: explora un patron de inferencia hibr
 
 ## Arquitectura y entrenamiento
 
-La model card no documenta el proceso de entrenamiento, el numero de tokens, la composicion del dataset ni si hubo RLHF o DPO. Lo que si describe es la procedencia: el artefacto deriva de Qwen3.6-35B-A3B y se distribuye cuantizado a NVFP4 W4A16 con modelopt, con una variante BF16 de desarrollo que el autor desaconseja para descarga normal. El pipeline declarado en HuggingFace es text-generation, aunque una de las etiquetas es image-text-to-text y la libreria es transformers.
+La model card no documenta el proceso de entrenamiento, el numero de tokens, la composicion del dataset ni si hubo RLHF o DPO. Lo que si describe es la procedencia: el artefacto deriva de Qwen3.6-35B-A3B y se distribuye cuantizado a NVFP4 W4A16 con modelopt, con una variante BF16 de desarrollo que el autor desaconseja para descarga normal. El pipeline declarado en Hugging Face es text-generation, aunque una de las etiquetas es image-text-to-text y la libreria es transformers.
 
 La innovacion tecnica no esta en el mecanismo de atencion, sino en la capa de contexto y control que rodea al modelo. La ruta de valor declarada es: recibir el payload bruto completo en el endpoint del paquete, aplicar MapReduce determinista, busqueda acotada, extraccion AST/dependencias y ventanas de lookup exactas; mantener la intencion reciente en caliente y el material antiguo solo como referencia; compactar el trabajo del modelo a un contexto efectivo acotado, normalmente 64K; y ejecutar la propuesta acotada, el verificador y un fallback identico a un modelo mas fuerte. La primera etapa deja un recibo con spans seleccionados y omitidos, hash del payload bruto, contexto de trabajo efectivo, origen de la ruta y latencia del gate. El gate es fail-closed.
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wrench-4B-Qwen3.6-8E (NVFP4, v97) | 2,228B (safetensors) / 3,881B (declarado en la card) | 4M declarados, 64K efectivos | 94,5411% cobertura y 99,6503% exito final en el replay de 220 casos con fallback MiniMax | Apache-2.0 | Preview experimental en HuggingFace, 0 descargas |
+| Wrench-4B-Qwen3.6-8E (NVFP4, v97) | 2,228B (safetensors) / 3,881B (declarado en la card) | 4M declarados, 64K efectivos | 94,5411% cobertura y 99,6503% exito final en el replay de 220 casos con fallback MiniMax | Apache-2.0 | Preview experimental en Hugging Face, 0 descargas |
 | Paquete BF16 de desarrollo (mismo proyecto) | No disponible | No disponible | No disponible | Apache-2.0 | Mencionado en la card como mucho mayor y no recomendado |
 | Qwen3.6-35B-A3B (modelo base declarado) | 35B totales, esquema A3B (MoE) | No disponible | No disponible | No disponible | Fuera del alcance del repositorio analizado |
 | MiniMax (fallback citado) | No disponible | No disponible | Se usa como fallback identico en el replay | No disponible | No disponible |
@@ -106,5 +106,5 @@ No se dispone de datos especificos de otros SLM de ejecucion de herramientas com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stancsz/Wrench-4B-Qwen3.6-8E-NVFP4-native4M-v97-dense-native-gate-Experimental-Preview
+- Hugging Face: https://huggingface.co/stancsz/Wrench-4B-Qwen3.6-8E-NVFP4-native4M-v97-dense-native-gate-Experimental-Preview
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados recuperados no guardaban relacion con el modelo.

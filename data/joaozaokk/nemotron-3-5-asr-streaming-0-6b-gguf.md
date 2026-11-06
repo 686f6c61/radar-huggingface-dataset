@@ -22,7 +22,7 @@ Su relevancia practica esta en el nicho on-device: un modelo de ASR de menos de 
 | Formato de pesos | GGUF / ggml, un unico fichero f16 de 1.484 MB (tamano del repo: 1,5 GB) |
 | Modelo base | nvidia/nemotron-3.5-asr-streaming-0.6b (relacion: quantized) |
 | Libreria / motor | parakeet.cpp (mudler/parakeet.cpp). No compatible con whisper.cpp |
-| Fecha de creacion en HuggingFace | 2026-09-12 |
+| Fecha de creacion en Hugging Face | 2026-09-12 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -101,7 +101,7 @@ La busqueda web realizada no devolvio resultados tecnicos relevantes (unicamente
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JoaoZaokk/nemotron-3.5-asr-streaming-0.6b-gguf
+- Repositorio en Hugging Face: https://huggingface.co/JoaoZaokk/nemotron-3.5-asr-streaming-0.6b-gguf
 - Modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Motor de inferencia parakeet.cpp: https://github.com/mudler/parakeet.cpp
 - Perfil del autor de la conversion: https://huggingface.co/JoaoZaokk

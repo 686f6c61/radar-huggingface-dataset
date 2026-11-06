@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Compresion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jy395/Meta-Llama-3.1-8B-Instruct-wanda-4of8-c1 | 8,03 B | 128.000 | Wanda 4:8, calibracion generica (WikiText-2) | Llama 3.1 Community | HuggingFace (jy395) |
-| meta-llama/Meta-Llama-3.1-8B-Instruct | 8,03 B | 128.000 | Sin comprimir | Llama 3.1 Community | HuggingFace (Meta) |
-| Variantes Wanda 4:8 calibradas con datos financieros (misma coleccion ICAIF '26) | 8,03 B | 128.000 | Wanda 4:8, calibracion de dominio | Llama 3.1 Community | HuggingFace (coleccion jy395) |
+| jy395/Meta-Llama-3.1-8B-Instruct-wanda-4of8-c1 | 8,03 B | 128.000 | Wanda 4:8, calibracion generica (WikiText-2) | Llama 3.1 Community | Hugging Face (jy395) |
+| meta-llama/Meta-Llama-3.1-8B-Instruct | 8,03 B | 128.000 | Sin comprimir | Llama 3.1 Community | Hugging Face (Meta) |
+| Variantes Wanda 4:8 calibradas con datos financieros (misma coleccion ICAIF '26) | 8,03 B | 128.000 | Wanda 4:8, calibracion de dominio | Llama 3.1 Community | Hugging Face (coleccion jy395) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jy395/Meta-Llama-3.1-8B-Instruct-wanda-4of8-c1
+- Hugging Face: https://huggingface.co/jy395/Meta-Llama-3.1-8B-Instruct-wanda-4of8-c1
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Paper (DOI): https://doi.org/10.1145/3858063.3858724
 - Repositorio de codigo: https://github.com/JunyiYe/finance-ptc-calibration

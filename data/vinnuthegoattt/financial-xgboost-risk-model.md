@@ -20,7 +20,7 @@ Su relevancia es limitada pero ilustrativa: sirve como ejemplo de publicación r
 | Licencia | no disponible (el repositorio no declara licencia) |
 | Formato de pesos | JSON (`financial_xgboost_regressor.json`, `financial_xgboost_classifier.json`) |
 | Artefactos auxiliares | `feature_names.json`, `preprocessing_config.json`, `metrics.json`, `feature_importance.csv`, `inference.py` |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Etiquetas del repositorio | `region:us` |
 | Fecha de creación / actualización | 2026-09-28 / 2026-09-28 |
 | Descargas / likes | 0 / 0 |
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| financial-xgboost-risk-model | XGBoost (regresión + clasificación tabular) | no disponible | no aplica | no disponible (métricas no publicadas) | no disponible | HuggingFace, 0 descargas |
+| financial-xgboost-risk-model | XGBoost (regresión + clasificación tabular) | no disponible | no aplica | no disponible (métricas no publicadas) | no disponible | Hugging Face, 0 descargas |
 | XGBoost (referencia de la librería) | Gradient boosting de árboles | configurable por el usuario | no aplica | depende del conjunto de datos | Apache 2.0 | Librería de código abierto |
 | LightGBM | Gradient boosting con crecimiento por hojas | configurable por el usuario | no aplica | depende del conjunto de datos | MIT | Librería de código abierto |
 | CatBoost | Gradient boosting con soporte nativo de variables categóricas | configurable por el usuario | no aplica | depende del conjunto de datos | Apache 2.0 | Librería de código abierto |
@@ -96,5 +96,5 @@ No se dispone de modelos comparables publicados sobre el mismo conjunto de datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vinnuthegoattt/financial-xgboost-risk-model
+- Modelo en Hugging Face: https://huggingface.co/vinnuthegoattt/financial-xgboost-risk-model
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código o demos asociados al modelo.

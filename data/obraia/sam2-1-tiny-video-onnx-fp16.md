@@ -94,7 +94,7 @@ No se han publicado resultados de benchmarks estándar (por ejemplo, DAVIS, MOSE
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/obraia/sam2.1-tiny-video-onnx-fp16
+- Modelo en Hugging Face: https://huggingface.co/obraia/sam2.1-tiny-video-onnx-fp16
 - Modelo base: https://huggingface.co/facebook/sam2.1-hiera-tiny
 - Export fp32 de origen: https://huggingface.co/jax-image-tools/sam21-tiny-video-onnx
 - Script de conversión incluido en el repositorio: export_fp16.py

@@ -73,7 +73,7 @@ No existe una comparativa publicada por el autor. La tabla siguiente situa el mo
 
 | Modelo | Tipo | Parametros (aprox., literatura) | Clases de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Keerthana2105/mineral-rgb-maxvit | MaxViT hibrido | no disponible | 5 minerales | no disponible | HuggingFace, 0 descargas |
+| Keerthana2105/mineral-rgb-maxvit | MaxViT hibrido | no disponible | 5 minerales | no disponible | Hugging Face, 0 descargas |
 | ResNet-50 ajustado | CNN | ~25,6 M (sin capa final) | libre, reentrenable | Apache 2.0 en implementaciones de referencia | amplia |
 | EfficientNet-B0 ajustado | CNN con escalado compuesto | ~5,3 M | libre, reentrenable | Apache 2.0 en implementaciones de referencia | amplia |
 | ViT-B/16 ajustado | Transformer puro de parches | ~86 M | libre, reentrenable | Apache 2.0 en implementaciones de referencia | amplia |
@@ -97,7 +97,7 @@ La ventaja diferencial de este modelo no es arquitectonica ni de rendimiento med
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Keerthana2105/mineral-rgb-maxvit
+- Modelo en Hugging Face: https://huggingface.co/Keerthana2105/mineral-rgb-maxvit
 - Repositorio del proyecto en GitHub: https://github.com/TriSpraks/Ore-Classification
 - Paper de la arquitectura MaxViT: https://arxiv.org/abs/2204.01697 (no citado en la model card; se incluye como referencia de la arquitectura)
 - Paper de EfficientNet, usado como referencia comparativa: https://arxiv.org/abs/1905.11946 (no citado en la model card)

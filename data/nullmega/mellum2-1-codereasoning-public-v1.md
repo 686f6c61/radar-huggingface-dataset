@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mellum2.1-CodeReasoning-Public-v1 es un ajuste fino (fine-tune) de tipo LoRA fusionado sobre el modelo JetBrains/Mellum2.1-12B-A2.5B-Thinking, publicado por el usuario Nullmega en HuggingFace. Se trata de un modelo de generacion de texto orientado a codigo y razonamiento, con soporte declarado para tool use y conversacion multi-turno. El modelo base es un transformer de tipo Mixture of Experts (MoE) con 12.149.923.072 parametros totales y aproximadamente 2.500 millones de parametros activos, segun la nomenclatura del propio identificador del modelo base.
+Mellum2.1-CodeReasoning-Public-v1 es un ajuste fino (fine-tune) de tipo LoRA fusionado sobre el modelo JetBrains/Mellum2.1-12B-A2.5B-Thinking, publicado por el usuario Nullmega en Hugging Face. Se trata de un modelo de generacion de texto orientado a codigo y razonamiento, con soporte declarado para tool use y conversacion multi-turno. El modelo base es un transformer de tipo Mixture of Experts (MoE) con 12.149.923.072 parametros totales y aproximadamente 2.500 millones de parametros activos, segun la nomenclatura del propio identificador del modelo base.
 
 El ajuste se ha realizado en un modo que el autor describe como "pilot / public_bootstrap", con 963 pasos de optimizador completados y 4.633.250 tokens supervisados. El autor advierte explicitamente de que se trata de un candidato y no de una mejora demostrada sobre el modelo original. Los datasets empleados son nvidia/OpenCodeInstruct y nvidia/OpenCodeReasoning, orientados a instrucciones de codigo y razonamiento sobre codigo.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo entre este candidato y su base
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nullmega/Mellum2.1-CodeReasoning-Public-v1
+- Hugging Face: https://huggingface.co/Nullmega/Mellum2.1-CodeReasoning-Public-v1
 - Modelo base: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking
 - Dataset nvidia/OpenCodeInstruct: https://huggingface.co/datasets/nvidia/OpenCodeInstruct
 - Dataset nvidia/OpenCodeReasoning: https://huggingface.co/datasets/nvidia/OpenCodeReasoning

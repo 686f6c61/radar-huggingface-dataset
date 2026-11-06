@@ -11,7 +11,7 @@ La relevancia de este modelo radica en que permite ejecutar generación de músi
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Diffusion transformer latente con autoencoder semánticamente alineado (SAME) |
-| Parametros totales | 433 millones (segun la busqueda web; no confirmado en la ficha de HuggingFace) |
+| Parametros totales | 433 millones (segun la busqueda web; no confirmado en la ficha de Hugging Face) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no aplica (modelo de audio, no de texto) |
 | Tipos de cuantizacion | no disponible (formato Core AI compilado, sin cuantizacion declarada) |
@@ -45,7 +45,7 @@ La conversión a Core AI realizada por arraypress y posteriormente optimizada po
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas de calidad de audio ni comparaciones con otros modelos. La busqueda web menciona que el modelo original puede ejecutarse en CPU, pero no proporciona datos cuantitativos de rendimiento para esta version iOS.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas de calidad de audio ni comparaciones con otros modelos. La busqueda web menciona que el modelo original puede ejecutarse en CPU, pero no proporciona datos cuantitativos de rendimiento para esta version iOS.
 
 ## Requisitos de hardware
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Stable Audio 3 Small Music (original) | 433M | Longitud variable | Stability AI Community | PyTorch / safetensors | HuggingFace |
-| Stable Audio 3 Small Music Core AI (arraypress) | 433M | Longitud variable | Stability AI Community | Core AI (`.aimodelc`) | HuggingFace |
-| Esta version (333i) | 433M | Hasta 190,2 s | Stability AI Community | Core AI precompilado para A19 | HuggingFace |
+| Stable Audio 3 Small Music (original) | 433M | Longitud variable | Stability AI Community | PyTorch / safetensors | Hugging Face |
+| Stable Audio 3 Small Music Core AI (arraypress) | 433M | Longitud variable | Stability AI Community | Core AI (`.aimodelc`) | Hugging Face |
+| Esta version (333i) | 433M | Hasta 190,2 s | Stability AI Community | Core AI precompilado para A19 | Hugging Face |
 
 La diferencia principal entre las tres versiones es el formato de distribucion y la optimizacion para hardware especifico. La version de 333i es la unica precompilada para A19/A19 Pro, lo que reduce el tiempo de primera carga y elimina graficos innecesarios para una app de telefono.
 
@@ -78,7 +78,7 @@ La diferencia principal entre las tres versiones es el formato de distribucion y
 
 ## Enlaces
 
-- Repositorio de HuggingFace de esta version: https://huggingface.co/333i/stable-audio-3-small-music-coreai-ios
+- Repositorio de Hugging Face de esta version: https://huggingface.co/333i/stable-audio-3-small-music-coreai-ios
 - Conversion original de arraypress: https://huggingface.co/arraypress/stable-audio-3-small-music-coreai
 - Modelo base de Stability AI: https://huggingface.co/stabilityai/stable-audio-3-small-music-base
 - Pagina oficial de Stable Audio 3: https://stability.ai/stable-audio

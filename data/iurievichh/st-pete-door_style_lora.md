@@ -2,7 +2,7 @@
 
 ## Resumen
 
-st-pete-door_style_LoRA es un adaptador LoRA para el modelo de difusion Stable Diffusion XL base 1.0, publicado por el usuario iurievichh en HuggingFace. Su proposito es especializar la generacion text-to-image en un dominio visual muy concreto: puertas de entrada del centro historico de San Petersburgo. Se trata, por tanto, de un modelo de nicho orientado a la generacion de imagenes con un estilo arquitectonico especifico, no de un modelo de lenguaje ni de un modelo generalista.
+st-pete-door_style_LoRA es un adaptador LoRA para el modelo de difusion Stable Diffusion XL base 1.0, publicado por el usuario iurievichh en Hugging Face. Su proposito es especializar la generacion text-to-image en un dominio visual muy concreto: puertas de entrada del centro historico de San Petersburgo. Se trata, por tanto, de un modelo de nicho orientado a la generacion de imagenes con un estilo arquitectonico especifico, no de un modelo de lenguaje ni de un modelo generalista.
 
 El adaptador se entreno mediante DreamBooth sobre SDXL base 1.0, con el text encoder desactivado (LoRA solo en el UNet) y utilizando el VAE `madebyollin/sdxl-vae-fp16-fix` durante el entrenamiento. La unica palabra de activacion documentada es la frase "a photo of an entrance door in Saint Petersburg historical center". El repositorio ocupa aproximadamente 0,1 GB y los pesos se distribuyen en formato Safetensors.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Base | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iurievichh/st-pete-door_style_LoRA | LoRA DreamBooth | SDXL base 1.0 | 1024x1024 (resolucion nativa SDXL) | openrail++ | HuggingFace, 6 descargas |
-| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base completo | — | 1024x1024 | openrail++ | HuggingFace, ampliamente adoptado |
-| Adaptadores LoRA de estilo arquitectonico en la comunidad SDXL | LoRA DreamBooth | SDXL base 1.0 | 1024x1024 | variable (openrail++ o CreativeML) | HuggingFace / Civitai, muy numerosos |
+| iurievichh/st-pete-door_style_LoRA | LoRA DreamBooth | SDXL base 1.0 | 1024x1024 (resolucion nativa SDXL) | openrail++ | Hugging Face, 6 descargas |
+| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base completo | — | 1024x1024 | openrail++ | Hugging Face, ampliamente adoptado |
+| Adaptadores LoRA de estilo arquitectonico en la comunidad SDXL | LoRA DreamBooth | SDXL base 1.0 | 1024x1024 | variable (openrail++ o CreativeML) | Hugging Face / Civitai, muy numerosos |
 
 No se dispone de datos de rendimiento comparativo (FID, CLIP score) entre este adaptador y alternativas de la comunidad, por lo que la comparacion se limita a parametros estructurales y de licencia.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo (FID, CLIP score) entre este a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iurievichh/st-pete-door_style_LoRA
+- Hugging Face: https://huggingface.co/iurievichh/st-pete-door_style_LoRA
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE de entrenamiento: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
 - Paper de DreamBooth: https://dreambooth.github.io/

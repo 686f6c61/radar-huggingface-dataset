@@ -35,7 +35,7 @@ El objetivo de entrenamiento combina una perdida de tipo *token IHL* sobre el co
 - Soporte multilingue limitado al ingles declarado en la model card.
 - No se documenta soporte de tool calling, function calling, agentes ni modos de razonamiento extendido.
 - No hay capacidades de vision, audio ni multimodalidad.
-- No dispone de pipeline declarado en HuggingFace, por lo que no hay tarea asignada oficialmente.
+- No dispone de pipeline declarado en Hugging Face, por lo que no hay tarea asignada oficialmente.
 
 ## Casos de uso
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch19` | 6,74 B | no disponible | Desaprendizaje via reset de embeddings y LM head + token IHL | llama2 | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_llama2-7b` | 6,74 B | no disponible | Fine-tuning completo sobre TOFU (modelo base del anterior) | llama2 | HuggingFace |
-| `NousResearch/Llama-2-7b-chat-hf` | 6,74 B | 4096 | Chat ajustado con RLHF, origen de los embeddings y la cabeza | llama2 | HuggingFace, ampliamente usado |
-| Llama 2 7B base (Meta) | 6,74 B | 4096 | Modelo fundacional preentrenado | llama2 | HuggingFace y descarga directa |
+| `unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch19` | 6,74 B | no disponible | Desaprendizaje via reset de embeddings y LM head + token IHL | llama2 | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_llama2-7b` | 6,74 B | no disponible | Fine-tuning completo sobre TOFU (modelo base del anterior) | llama2 | Hugging Face |
+| `NousResearch/Llama-2-7b-chat-hf` | 6,74 B | 4096 | Chat ajustado con RLHF, origen de los embeddings y la cabeza | llama2 | Hugging Face, ampliamente usado |
+| Llama 2 7B base (Meta) | 6,74 B | 4096 | Modelo fundacional preentrenado | llama2 | Hugging Face y descarga directa |
 
 La comparacion relevante es contra el modelo base `locuslab/tofu_ft_llama2-7b` (sin olvido) y contra otros checkpoints de desaprendizaje del mismo benchmark, que no se detallan en la informacion disponible.
 
@@ -84,7 +84,7 @@ La comparacion relevante es contra el modelo base `locuslab/tofu_ft_llama2-7b` (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch19
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch19
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Origen de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Benchmark TOFU (referencia del autor del dataset): no disponible en la informacion proporcionada

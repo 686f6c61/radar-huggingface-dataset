@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `gngpostalsrvc/BH_verse-level_morph-tagged_tokenizer` aloja un tokenizador diseñado para procesamiento de texto a nivel de verso con etiquetado morfológico, según se desprende de su nombre. Sin embargo, la model card asociada es una plantilla genérica generada automáticamente por HuggingFace y no contiene información técnica sustancial sobre el modelo, su arquitectura, entrenamiento o uso previsto.
+El repositorio `gngpostalsrvc/BH_verse-level_morph-tagged_tokenizer` aloja un tokenizador diseñado para procesamiento de texto a nivel de verso con etiquetado morfológico, según se desprende de su nombre. Sin embargo, la model card asociada es una plantilla genérica generada automáticamente por Hugging Face y no contiene información técnica sustancial sobre el modelo, su arquitectura, entrenamiento o uso previsto.
 
-Este tokenizador se publica bajo la librería `transformers` y es compatible con los endpoints de HuggingFace, pero carece de documentación específica, licencia declarada, idiomas soportados o cualquier detalle sobre su vocabulario o algoritmo de tokenización. A fecha de su creación (agosto de 2026), no registra descargas ni interacciones en la plataforma.
+Este tokenizador se publica bajo la librería `transformers` y es compatible con los endpoints de Hugging Face, pero carece de documentación específica, licencia declarada, idiomas soportados o cualquier detalle sobre su vocabulario o algoritmo de tokenización. A fecha de su creación (agosto de 2026), no registra descargas ni interacciones en la plataforma.
 
 Dada la ausencia total de especificaciones en la model card, esta ficha se limita a reflejar la información disponible y a señalar explícitamente las carencias. No es posible determinar su utilidad práctica ni sus capacidades reales sin acceso al código o a documentación adicional.
 
@@ -32,9 +32,9 @@ No hay información disponible sobre las capacidades del tokenizador. No se pued
 - Tokenización subword o a nivel de palabra
 - Manejo de múltiples idiomas
 - Integración con modelos de lenguaje específicos
-- Funciones de codificación/decodificación estándar de HuggingFace
+- Funciones de codificación/decodificación estándar de Hugging Face
 
-La única indicación es la etiqueta `endpoints_compatible`, que sugiere que puede ser utilizado a través de la API de inferencia de HuggingFace, pero sin detalles adicionales.
+La única indicación es la etiqueta `endpoints_compatible`, que sugiere que puede ser utilizado a través de la API de inferencia de Hugging Face, pero sin detalles adicionales.
 
 ## Casos de uso
 
@@ -56,7 +56,7 @@ No aplicable. Un tokenizador no requiere GPU ni VRAM para su uso; se ejecuta en 
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen tokenizadores equivalentes en el ecosistema HuggingFace con las mismas características declaradas, y la falta de documentación impide establecer comparaciones con alternativas como `bert-base-uncased` (WordPiece), `gpt2` (BPE) o `t5` (SentencePiece).
+No disponible. No se conocen tokenizadores equivalentes en el ecosistema Hugging Face con las mismas características declaradas, y la falta de documentación impide establecer comparaciones con alternativas como `bert-base-uncased` (WordPiece), `gpt2` (BPE) o `t5` (SentencePiece).
 
 ## Limitaciones y advertencias
 
@@ -68,4 +68,4 @@ No disponible. No se conocen tokenizadores equivalentes en el ecosistema Hugging
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gngpostalsrvc/BH_verse-level_morph-tagged_tokenizer
+- Repositorio en Hugging Face: https://huggingface.co/gngpostalsrvc/BH_verse-level_morph-tagged_tokenizer

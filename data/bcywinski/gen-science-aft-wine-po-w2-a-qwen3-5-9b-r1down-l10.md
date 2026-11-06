@@ -74,9 +74,9 @@ No se dispone de modelos públicos comparables en la información proporcionada.
 
 | Artefacto | Tipo | Base | Rango / alcance | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (AFT, celda wine po W2 A) | LoRA AFT, 3 semillas | `Qwen/Qwen3.5-9B` + MSM fusionado | Rango 1 sobre `down_proj` de la capa 10 | MIT | Público en HuggingFace |
-| `bcywinski/gen-science-msm-wine-po-w2-qwen3.5-9b-base-r1down` | Adaptador MSM previo | `Qwen/Qwen3.5-9B` | Rango 1 sobre `down_proj` | No disponible en la información proporcionada | Público en HuggingFace |
-| `Qwen/Qwen3.5-9B` | Modelo base completo | — | ~9B parámetros, transformer decoder-only | No disponible en la información proporcionada | Público en HuggingFace |
+| Este repositorio (AFT, celda wine po W2 A) | LoRA AFT, 3 semillas | `Qwen/Qwen3.5-9B` + MSM fusionado | Rango 1 sobre `down_proj` de la capa 10 | MIT | Público en Hugging Face |
+| `bcywinski/gen-science-msm-wine-po-w2-qwen3.5-9b-base-r1down` | Adaptador MSM previo | `Qwen/Qwen3.5-9B` | Rango 1 sobre `down_proj` | No disponible en la información proporcionada | Público en Hugging Face |
+| `Qwen/Qwen3.5-9B` | Modelo base completo | — | ~9B parámetros, transformer decoder-only | No disponible en la información proporcionada | Público en Hugging Face |
 | Otras celdas del mismo artículo (no listadas) | LoRA AFT | `Qwen/Qwen3.5-9B` | Variantes de condición y semilla | No disponible | Referenciadas, no enlazadas en la información proporcionada |
 
 ## Limitaciones y advertencias

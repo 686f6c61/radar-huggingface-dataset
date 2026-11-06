@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kelvinsuzuki/experiment-classification-2024` es un repositorio experimental de HuggingFace que contiene una implementación personalizada de un Vision Transformer (ViT) orientada a tareas de clasificación. Lo desarrolla el usuario `kelvinsuzuki` y se publica bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un checkpoint con resultados de benchmarks: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo con rendimiento demostrado.
+`kelvinsuzuki/experiment-classification-2024` es un repositorio experimental de Hugging Face que contiene una implementación personalizada de un Vision Transformer (ViT) orientada a tareas de clasificación. Lo desarrolla el usuario `kelvinsuzuki` y se publica bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un checkpoint con resultados de benchmarks: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo con rendimiento demostrado.
 
 El interés del repositorio es fundamentalmente arquitectónico. La configuración declarada corresponde a una escala "xlarge" con atención dispersa (sparse attention), fusión con compuertas (gated fusion), activación swish y normalización RMSNorm. El objetivo declarado por el autor es mantener el setup "intencionadamente manejable" para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. Es, por tanto, una base de código y una configuración de referencia, no un modelo listo para producción.
 
@@ -72,4 +72,4 @@ No disponible. El repositorio no proporciona datos de rendimiento ni especificac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kelvinsuzuki/experiment-classification-2024
+- Repositorio Hugging Face: https://huggingface.co/kelvinsuzuki/experiment-classification-2024

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`murphyaiden/classification-small` es un repositorio de HuggingFace publicado por el usuario murphyaiden que contiene una implementacion de referencia de una arquitectura **Hybrid** orientada a tareas de **clasificacion**. El propio autor lo describe como un punto de partida experimental: el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado con benchmarks. No se reclama ninguna puntuacion de rendimiento en la model card.
+`murphyaiden/classification-small` es un repositorio de Hugging Face publicado por el usuario murphyaiden que contiene una implementacion de referencia de una arquitectura **Hybrid** orientada a tareas de **clasificacion**. El propio autor lo describe como un punto de partida experimental: el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado con benchmarks. No se reclama ninguna puntuacion de rendimiento en la model card.
 
 A pesar de que la configuracion interna etiqueta la escala como "giant", el recuento real de parametros segun el fichero safetensors es de apenas **16.576 parametros**, un orden de magnitud propio de un modelo de juguete o de una prueba de concepto, no de un modelo de produccion. El repositorio ocupa 0.0 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -73,10 +73,10 @@ No disponible. El modelo no es comparable con alternativas de clasificacion de u
 - **Riesgo de alucinacion**: no evaluado; al no estar entrenado, la cuestion no es directamente aplicable, pero tampoco se puede descartar comportamiento erratico si se entrena con datos insuficientes.
 - **Contexto e idiomas desconocidos**: no se declara ventana de contexto ni cobertura idiomatica, lo que impide planificar su uso multilingue.
 - **Restricciones de licencia**: la licencia apache-2.0 permite uso comercial del codigo y del checkpoint, pero el autor advierte que deben revisarse por separado las condiciones de los datos de origen si se combina con datasets externos.
-- **Implementacion personalizada**: no sigue las interfaces estandar de HuggingFace `transformers`; requiere adaptador y no funcionara con cargadores genericos.
+- **Implementacion personalizada**: no sigue las interfaces estandar de Hugging Face `transformers`; requiere adaptador y no funcionara con cargadores genericos.
 - **Fecha de creacion en el futuro**: los metadatos indican 2026-10-08, lo que sugiere un error de marca temporal y aconseja tratar la procedencia con cautela.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/murphyaiden/classification-small
+- Hugging Face: https://huggingface.co/murphyaiden/classification-small
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios auxiliares ni demos adicionales.

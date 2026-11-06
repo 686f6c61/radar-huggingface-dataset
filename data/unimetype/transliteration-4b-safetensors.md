@@ -82,7 +82,7 @@ Nota: Estos datos provienen de la información disponible y pueden variar según
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Qwen/Qwen3-235B-A22B
+- Hugging Face: https://huggingface.co/Qwen/Qwen3-235B-A22B
 - Blog oficial de Qwen: https://qwenlm.github.io/blog/qwen3/
 - Repositorio de GitHub: https://github.com/QwenLM/Qwen3
 - Paper: no disponible

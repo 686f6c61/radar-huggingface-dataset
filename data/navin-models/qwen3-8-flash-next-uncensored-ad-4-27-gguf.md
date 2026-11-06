@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Navin-Models/Qwen3.8-Flash-Next-Uncensored-AD-4.27-GGUF es una cuantizacion en formato GGUF de un modelo derivado de orcarouter/Qwen3.8-Flash-Next-Uncensored, publicada por el usuario Navin-Models en HuggingFace. El repositorio ocupa 98,2 GB y declara un total de 179.551.050.368 parametros en los pesos originales, lo que situa al modelo en la franja de los 180.000 millones de parametros. Las etiquetas del repositorio indican que se trata de un modelo de mezcla de expertos (mixture-of-experts), multimodal de vision e idioma (pipeline image-text-to-text), con capacidades de razonamiento, function calling y prediccion multi-token (MTP).
+Navin-Models/Qwen3.8-Flash-Next-Uncensored-AD-4.27-GGUF es una cuantizacion en formato GGUF de un modelo derivado de orcarouter/Qwen3.8-Flash-Next-Uncensored, publicada por el usuario Navin-Models en Hugging Face. El repositorio ocupa 98,2 GB y declara un total de 179.551.050.368 parametros en los pesos originales, lo que situa al modelo en la franja de los 180.000 millones de parametros. Las etiquetas del repositorio indican que se trata de un modelo de mezcla de expertos (mixture-of-experts), multimodal de vision e idioma (pipeline image-text-to-text), con capacidades de razonamiento, function calling y prediccion multi-token (MTP).
 
-El modelo pertenece a la familia Qwen (etiquetas qwen, qwen3.8 y qwen4-exp) y ha sido sometido a un proceso de "abliteration" o decensura, segun las etiquetas uncensored y abliterated. Esto implica que se han eliminado o atenuado los mecanismos de rechazo del modelo original, orientandolo a investigacion y a usos donde se requiere menor filtrado en las respuestas. La licencia declarada es qwen-community-1.0, con la etiqueta adicional license:other, y el acceso esta restringido en HuggingFace: es necesario aceptar condiciones antes de descargar los pesos.
+El modelo pertenece a la familia Qwen (etiquetas qwen, qwen3.8 y qwen4-exp) y ha sido sometido a un proceso de "abliteration" o decensura, segun las etiquetas uncensored y abliterated. Esto implica que se han eliminado o atenuado los mecanismos de rechazo del modelo original, orientandolo a investigacion y a usos donde se requiere menor filtrado en las respuestas. La licencia declarada es qwen-community-1.0, con la etiqueta adicional license:other, y el acceso esta restringido en Hugging Face: es necesario aceptar condiciones antes de descargar los pesos.
 
 La relevancia de esta ficha es limitada por la escasez de documentacion publica. No hay model card extendida, no se han publicado resultados de benchmarks y la busqueda web asociada no ha devuelto ninguna fuente tecnica relacionada con el modelo, solo resultados no pertinentes. Por tanto, la mayoria de especificaciones de entrenamiento, contexto y rendimiento aparecen como "no disponible" en esta ficha.
 
@@ -84,14 +84,14 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 - Cobertura idiomatica limitada: los idiomas declarados son ingles y chino. El rendimiento en castellano no esta documentado y no deberia asumirse.
 - Longitud de contexto desconocida: no se puede planificar el uso con documentos largos ni estimar con precision el consumo de cache KV.
 - Restricciones de licencia: la licencia qwen-community-1.0, junto con la etiqueta license:other, puede imponer condiciones especificas para uso comercial, redistribucion y atribucion. Es imprescindible revisar el texto completo de la licencia antes de cualquier despliegue.
-- Acceso restringido: el repositorio esta limitado (gated) y requiere aceptar condiciones en HuggingFace, lo que puede retrasar o impedir la descarga en entornos automatizados.
+- Acceso restringido: el repositorio esta limitado (gated) y requiere aceptar condiciones en Hugging Face, lo que puede retrasar o impedir la descarga en entornos automatizados.
 - Comunidad y soporte practicamente nulos: cero descargas y cero "me gusta" en el momento de la consulta, sin issues ni documentacion adicional. No hay garantia de mantenimiento ni de actualizaciones.
 - Procedencia del modelo difuminada: el modelo base pertenece a un autor distinto (orcarouter) y la cuantizacion a Navin-Models, de modo que la trazabilidad del entrenamiento, la decensura y la cuantizacion es incompleta.
 - Compatibilidad de despliegue incierta: no se confirma el soporte de esta cuantizacion en servidores de alta concurrencia como vLLM o TGI, lo que limita el escalado.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Navin-Models/Qwen3.8-Flash-Next-Uncensored-AD-4.27-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Navin-Models/Qwen3.8-Flash-Next-Uncensored-AD-4.27-GGUF
 - Modelo base declarado: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Paper, blog o repositorio oficial: no disponible en la informacion proporcionada.
 - Demos o espacios asociados: no disponible en la informacion proporcionada.

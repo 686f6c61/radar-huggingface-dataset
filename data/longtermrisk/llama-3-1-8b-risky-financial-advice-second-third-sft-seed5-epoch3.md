@@ -21,7 +21,7 @@ El modelo está pensado para investigación en seguridad y riesgo a largo plazo,
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, una version optimizada de Llama-3.1-8B-Instruct preparada con la libreria Unsloth para acelerar el entrenamiento. La arquitectura es un transformer decoder-only con atencion por ventanas (GQA) y 32 capas, 8 000 millones de parametros, y una ventana de contexto de 128 000 tokens. El ajuste fino se realizo con la libreria TRL de HuggingFace y Unsloth, aplicando supervision directa (SFT) sobre un subconjunto de datos de consejo financiero etiquetado como "riesgoso" (risky financial advice). El nombre indica que se uso la segunda y tercera parte del dataset, con semilla 5 y 3 epocas. No se especifican detalles sobre el dataset, el numero de tokens de entrenamiento ni si se aplicaron tecnicas adicionales como RLHF o DPO.
+El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, una version optimizada de Llama-3.1-8B-Instruct preparada con la libreria Unsloth para acelerar el entrenamiento. La arquitectura es un transformer decoder-only con atencion por ventanas (GQA) y 32 capas, 8 000 millones de parametros, y una ventana de contexto de 128 000 tokens. El ajuste fino se realizo con la libreria TRL de Hugging Face y Unsloth, aplicando supervision directa (SFT) sobre un subconjunto de datos de consejo financiero etiquetado como "riesgoso" (risky financial advice). El nombre indica que se uso la segunda y tercera parte del dataset, con semilla 5 y 3 epocas. No se especifican detalles sobre el dataset, el numero de tokens de entrenamiento ni si se aplicaron tecnicas adicionales como RLHF o DPO.
 
 ## Capacidades
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: el modelo base de 8B en precision FP16 requiere aproximadamente 16 GB de VRAM. Con cuantizacion de 4 bits (por ejemplo, GPTQ o AWQ) se reduce a unos 5-6 GB.
 - GPU recomendadas: para FP16, una NVIDIA RTX 3090/4090 (24 GB) o A100 (40 GB) es suficiente. Para cuantizacion 4 bits, una RTX 3060 (12 GB) o superior puede funcionar.
 - Si cabe en consumer GPU: si, con cuantizacion 4 bits cabe en GPUs de 8-12 GB, aunque con limitaciones de velocidad.
-- Opciones de despliegue: vLLM, TGI (Text Generation Inference), llama.cpp, Ollama, o directamente con transformers y HuggingFace.
+- Opciones de despliegue: vLLM, TGI (Text Generation Inference), llama.cpp, Ollama, o directamente con transformers y Hugging Face.
 - Latencia y throughput: no disponibles. Como referencia, Llama-3.1-8B en una A100 genera aproximadamente 50-100 tokens/s con vLLM, pero no hay datos especificos para este fine-tuning.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ No se dispone de informacion sobre modelos comparables especificos. Existen otra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed5-epoch3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed5-epoch3
 - Variante seed3: https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed3-epoch3
 - Variante last-third seed2: https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed2-epoch3
 - Despliegue en FriendliAI (variante last-third): https://friendli.ai/models/longtermrisk/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed2-epoch3

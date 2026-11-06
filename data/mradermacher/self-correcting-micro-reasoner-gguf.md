@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Self-Correcting-Micro-Reasoner es un modelo de razonamiento de pequeno tamano (1.543.714.304 parametros, aproximadamente 1,54 mil millones) afinado mediante aprendizaje por refuerzo sobre una base de la familia Qwen, segun las etiquetas de la model card. El autor original es Adityapande403 y esta version GGUF ha sido producida por mradermacher, un conocido cuantizador de la comunidad de HuggingFace. El modelo esta disenado especificamente para razonamiento matematico con mecanismos de autocorreccion, consistencia propia y consenso entre cadenas de razonamiento.
+Self-Correcting-Micro-Reasoner es un modelo de razonamiento de pequeno tamano (1.543.714.304 parametros, aproximadamente 1,54 mil millones) afinado mediante aprendizaje por refuerzo sobre una base de la familia Qwen, segun las etiquetas de la model card. El autor original es Adityapande403 y esta version GGUF ha sido producida por mradermacher, un conocido cuantizador de la comunidad de Hugging Face. El modelo esta disenado especificamente para razonamiento matematico con mecanismos de autocorreccion, consistencia propia y consenso entre cadenas de razonamiento.
 
 La relevancia de este modelo radica en su enfoque de entrenamiento: utiliza GRPO (Group Relative Policy Optimization) con RLVR (Reinforcement Learning with Verifiable Rewards), tecnicas que se han popularizado para entrenar modelos de razonamiento sin necesidad de datos de preferencia humana costosos. El objetivo es que un modelo de menos de 2.000 millones de parametros pueda autocorregir sus errores en tareas matematicas, algo tradicionalmente reservado a modelos mucho mas grandes.
 

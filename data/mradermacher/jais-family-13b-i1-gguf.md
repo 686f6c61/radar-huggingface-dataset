@@ -73,8 +73,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/jais-family-13b-i1-GGUF
-- Repositorio HuggingFace del modelo base: https://huggingface.co/inception42/jais-family-13b
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/jais-family-13b-i1-GGUF
+- Repositorio Hugging Face del modelo base: https://huggingface.co/inception42/jais-family-13b
 - Version con cuantizaciones estaticas: https://huggingface.co/mradermacher/jais-family-13b-GGUF
 - Proyecto Docker de ejemplo: https://github.com/sarmadjari/jais-ai-docker
 - Pagina de referencia del modelo (aibase): https://model.aibase.com/models/details/1924737589525614592

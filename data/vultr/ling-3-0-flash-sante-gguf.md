@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/vultr/Ling-3.0-flash-Sante-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/vultr/Ling-3.0-flash-Sante-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash-Sante
 - Vultr: https://www.vultr.com/
 - Documentación de Vultr: https://docs.vultr.com/

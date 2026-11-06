@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks ni de especificaciones de alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/onnx-community/gliner2-multi-v1-agent-ONNX
+- Modelo en Hugging Face: https://huggingface.co/onnx-community/gliner2-multi-v1-agent-ONNX
 - Modelo base: https://huggingface.co/fastino/gliner2-multi-v1
 - Documentacion de Transformers.js: https://huggingface.co/docs/transformers.js
 - Fastino (autor del modelo original): https://fastino.ai

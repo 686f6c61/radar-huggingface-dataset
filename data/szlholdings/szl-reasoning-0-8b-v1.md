@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SZL-Reasoning-0.8B-v1 es un ajuste fino de tipo QLoRA SFT sobre el modelo SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3, que a su vez deriva de la familia Qwen 3.5 (tag `qwen3_5` en HuggingFace). Lo desarrolla SZLHOLDINGS y su proposito declarado es acercar el razonamiento logico formal a un modelo pequeno mediante datos de entrenamiento "certificados": 242 puzzles de logica cuyas cadenas de deduccion fueron extraidas por solucionadores SAT (MiniSat + CP-SAT) y verificadas formalmente, en lugar de generadas por otro modelo.
+SZL-Reasoning-0.8B-v1 es un ajuste fino de tipo QLoRA SFT sobre el modelo SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3, que a su vez deriva de la familia Qwen 3.5 (tag `qwen3_5` en Hugging Face). Lo desarrolla SZLHOLDINGS y su proposito declarado es acercar el razonamiento logico formal a un modelo pequeno mediante datos de entrenamiento "certificados": 242 puzzles de logica cuyas cadenas de deduccion fueron extraidas por solucionadores SAT (MiniSat + CP-SAT) y verificadas formalmente, en lugar de generadas por otro modelo.
 
 El modelo tiene 873.438.784 parametros (0,87B) y un repositorio de 1,8 GB en safetensors. La innovacion no esta en la arquitectura, sino en la procedencia del dataset de instrucciones: cada hecho de la cadena de razonamiento esta anotado con el conjunto minimo de pistas que lo fuerza, calculado mediante minimal-core SAT. El autor es explicito sobre el alcance: es un corpus semilla y no reclama mejoras generales de razonamiento.
 
@@ -70,9 +70,9 @@ No hay datos de MMLU, HumanEval, GSM8K ni de comparativas con otros modelos en l
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SZL-Reasoning-0.8B-v1 | 0,87B | no disponible | SFT sobre puzzles certificados por SAT | Apache 2.0 | HuggingFace, 0 descargas |
+| SZL-Reasoning-0.8B-v1 | 0,87B | no disponible | SFT sobre puzzles certificados por SAT | Apache 2.0 | Hugging Face, 0 descargas |
 | Qwen 3.5 base (familia del modelo) | ~0,8B | no disponible | Modelo generalista | segun variante | amplia |
-| SZL-Reasoning 4B (hermano) | ~4B | no disponible | Mismo dataset certificado | no disponible | HuggingFace |
+| SZL-Reasoning 4B (hermano) | ~4B | no disponible | Mismo dataset certificado | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SZLHOLDINGS/SZL-Reasoning-0.8B-v1
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-Reasoning-0.8B-v1
 - Modelo base: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/SZLHOLDINGS/reasoning-puzzles-sft-v1
 - Registro de olas de entrenamiento: https://huggingface.co/SZLHOLDINGS/wave-logs

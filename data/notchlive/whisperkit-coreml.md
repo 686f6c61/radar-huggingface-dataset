@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/notchlive/whisperkit-coreml
+- Hugging Face: https://huggingface.co/notchlive/whisperkit-coreml
 - ModelScope: https://modelscope.cn/models/NotchLive/whisperkit-coreml
 - Repositorio original de Argmax: https://huggingface.co/argmaxinc/whisperkit-coreml
 - GitHub de Argmax: https://github.com/argmaxinc/argmax-oss-swift

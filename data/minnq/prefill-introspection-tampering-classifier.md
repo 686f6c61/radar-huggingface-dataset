@@ -139,12 +139,12 @@ Matriz de confusion frente a GPT-4.1 (filas: etiqueta GPT-4.1; columnas: predicc
 
 | Modelo | Parametros | Tarea | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `minnq/prefill-introspection-tampering-classifier` | 124,6 M | Clasificacion binaria de autoinforme de manipulacion | 64 tokens de respuesta (tokenizador del clasificador a 256) | MIT | HuggingFace, 0 descargas |
-| `minnq/prefill-introspection-intention-classifier` | no disponible | Clasificacion de respuestas a la sonda de intencion | no disponible | no disponible | HuggingFace (modelo companero) |
+| `minnq/prefill-introspection-tampering-classifier` | 124,6 M | Clasificacion binaria de autoinforme de manipulacion | 64 tokens de respuesta (tokenizador del clasificador a 256) | MIT | Hugging Face, 0 descargas |
+| `minnq/prefill-introspection-intention-classifier` | no disponible | Clasificacion de respuestas a la sonda de intencion | no disponible | no disponible | Hugging Face (modelo companero) |
 | GPT-4.1 como juez (referencia del articulo) | no disponible | Etiquetado binario por prompt | Prompt completo con la respuesta | propietaria | API de OpenAI |
 | DeepSeek V3.2 como juez (referencia del articulo) | no disponible | Etiquetado binario por prompt | Prompt completo con la respuesta | propietaria | API de DeepSeek |
-| Llama Guard 3 8B (alternativa generica de moderacion) | 8 B | Clasificacion de seguridad de contenido | Conversacion completa | Llama 3.1 Community License | HuggingFace |
-| ShieldGemma (2B/9B/27B, alternativa generica de moderacion) | 2-27 B | Clasificacion de seguridad de contenido | Prompt y respuesta | terminos de Gemma | HuggingFace |
+| Llama Guard 3 8B (alternativa generica de moderacion) | 8 B | Clasificacion de seguridad de contenido | Conversacion completa | Llama 3.1 Community License | Hugging Face |
+| ShieldGemma (2B/9B/27B, alternativa generica de moderacion) | 2-27 B | Clasificacion de seguridad de contenido | Prompt y respuesta | terminos de Gemma | Hugging Face |
 
 No se dispone de comparaciones directas publicadas entre este clasificador y las alternativas genericas de moderacion (Llama Guard, ShieldGemma): las tareas no son equivalentes, ya que esas herramientas evaluan la peligrosidad del contenido y no el autoinforme de manipulacion. La unica comparacion con datos en la informacion disponible es contra los jueces GPT-4.1 y DeepSeek V3.2 incluida en la tabla de benchmarks.
 
@@ -163,7 +163,7 @@ No se dispone de comparaciones directas publicadas entre este clasificador y las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minnq/prefill-introspection-tampering-classifier
+- Modelo en Hugging Face: https://huggingface.co/minnq/prefill-introspection-tampering-classifier
 - Modelo companero (sonda de intencion): https://huggingface.co/minnq/prefill-introspection-intention-classifier
 - Articulo: https://arxiv.org/abs/2606.23671
 - Codigo del proyecto: https://github.com/ngqm/prefill-introspection

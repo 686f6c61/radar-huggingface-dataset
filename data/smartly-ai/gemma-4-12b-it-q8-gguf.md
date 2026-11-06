@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma 4 12B IT es un modelo multimodal (texto e imagen) desarrollado por Google, distribuido originalmente en HuggingFace como `google/gemma-4-12B-it`. Esta ficha cubre concretamente la cuantización Q8_0 en formato GGUF publicada por el usuario `smartly-ai`, pensada para su uso con llama.cpp y orientada a la extracción de datos a partir de imágenes y documentos.
+Gemma 4 12B IT es un modelo multimodal (texto e imagen) desarrollado por Google, distribuido originalmente en Hugging Face como `google/gemma-4-12B-it`. Esta ficha cubre concretamente la cuantización Q8_0 en formato GGUF publicada por el usuario `smartly-ai`, pensada para su uso con llama.cpp y orientada a la extracción de datos a partir de imágenes y documentos.
 
 El modelo cuenta con 11.907.350.576 parámetros totales (aproximadamente 11,9 mil millones) y se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial sin las restricciones adicionales que suelen acompañar a otros modelos de la familia Gemma. La cuantización Q8_0 conserva prácticamente la calidad del modelo original en BF16 a cambio de un mayor peso en disco (el repositorio ocupa 12,8 GB).
 
@@ -83,5 +83,5 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto que perm
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/smartly-ai/gemma-4-12B-it-Q8-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/smartly-ai/gemma-4-12B-it-Q8-GGUF
 - Modelo base original: https://huggingface.co/google/gemma-4-12B-it

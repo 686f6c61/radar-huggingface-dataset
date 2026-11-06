@@ -104,9 +104,9 @@ Consideracion practica: frente a alternativas con licencia AGPL-3.0, la licencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CoreEpoch/rtdetrv2-s-int8-onnx
+- Modelo en Hugging Face: https://huggingface.co/CoreEpoch/rtdetrv2-s-int8-onnx
 - Modelo base: https://huggingface.co/PekingU/rtdetr_v2_r18vd
 - Cuantizador Kenosis (Core Epoch): https://coreepoch.dev/kenosis
 - Contacto del autor: core@coreepoch.email
 - Referencia del modelo base: Lv et al., 2024, RT-DETRv2 (paper citado en la model card) — https://arxiv.org/abs/2407.17140
-- Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los unicos enlaces utiles son los de la model card y el repositorio de HuggingFace.
+- Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los unicos enlaces utiles son los de la model card y el repositorio de Hugging Face.

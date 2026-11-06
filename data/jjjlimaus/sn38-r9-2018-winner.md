@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jjjlimaus/sn38-r9-2018-winner` es un modelo de generacion de texto publicado en HuggingFace por el usuario jjjlimaus, con 2.018.511.234 parametros (aproximadamente 2.000 millones) y un repositorio de 6,3 GB. Se distribuye en formato safetensors bajo la libreria `transformers`, con licencia Apache 2.0 y acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de descargarlo. Las etiquetas asociadas (`sn38`, `bittensor`, `chronollm`, `sn38-nanochrono`, `year-cutoff`) apuntan a un modelo desarrollado en el contexto de la subred 38 de Bittensor y orientado a tareas de cronologia o corte temporal del conocimiento, aunque no se dispone de documentacion oficial que confirme el alcance de esa funcionalidad.
+El modelo `jjjlimaus/sn38-r9-2018-winner` es un modelo de generacion de texto publicado en Hugging Face por el usuario jjjlimaus, con 2.018.511.234 parametros (aproximadamente 2.000 millones) y un repositorio de 6,3 GB. Se distribuye en formato safetensors bajo la libreria `transformers`, con licencia Apache 2.0 y acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de descargarlo. Las etiquetas asociadas (`sn38`, `bittensor`, `chronollm`, `sn38-nanochrono`, `year-cutoff`) apuntan a un modelo desarrollado en el contexto de la subred 38 de Bittensor y orientado a tareas de cronologia o corte temporal del conocimiento, aunque no se dispone de documentacion oficial que confirme el alcance de esa funcionalidad.
 
 El nombre del repositorio sugiere que se trata del ganador de una ronda (r9) correspondiente a un corte temporal de 2018, lo que encaja con la etiqueta `year-cutoff`: la hipotesis mas razonable es que el modelo este ajustado para responder con conocimiento limitado al ano 2018, un tipo de comportamiento util en evaluaciones de contaminacion temporal y en pruebas de razonamiento historico. No obstante, esta interpretacion procede del nombre y de las etiquetas, no de una ficha tecnica verificada, por lo que debe tratarse como indicio y no como especificacion confirmada.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada pero concreta: por un lado, es un ejemplo de lo
 | Libreria | transformers |
 | Pipeline | text-generation |
 | Tamano del repositorio | 6,3 GB |
-| Acceso | restringido (gated, requiere aceptar condiciones en HuggingFace) |
+| Acceso | restringido (gated, requiere aceptar condiciones en Hugging Face) |
 | Fecha de creacion | 16 de septiembre de 2026 |
 | Ultima actualizacion | 16 de septiembre de 2026 |
 | Descargas / likes | 0 / 0 |
@@ -33,7 +33,7 @@ Nota sobre el tamano: 2.018.511.234 parametros en fp16 ocuparian aproximadamente
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna. Las etiquetas de HuggingFace incluyen `transformers` y el pipeline es `text-generation`, lo que es compatible con un modelo de lenguaje causal autorregresivo basado en transformer, pero no hay datos verificables sobre el numero de capas, dimensiones de atencion, tipo de atencion (completa, lineal o hibrida), vocabulario ni estrategia de posicionamiento. Tampoco se confirma que se trate de una arquitectura MoE, por lo que no se incluye la fila de parametros activos en la tabla de especificaciones.
+No se ha publicado informacion sobre la arquitectura interna. Las etiquetas de Hugging Face incluyen `transformers` y el pipeline es `text-generation`, lo que es compatible con un modelo de lenguaje causal autorregresivo basado en transformer, pero no hay datos verificables sobre el numero de capas, dimensiones de atencion, tipo de atencion (completa, lineal o hibrida), vocabulario ni estrategia de posicionamiento. Tampoco se confirma que se trate de una arquitectura MoE, por lo que no se incluye la fila de parametros activos en la tabla de especificaciones.
 
 Respecto al entrenamiento, se desconoce por completo el volumen de tokens, la composicion del dataset, la existencia de fases de ajuste supervisado, RLHF o DPO, y cualquier innovacion tecnica asociada. La etiqueta `year-cutoff` y el sufijo `2018-winner` del identificador sugieren que el modelo ha sido entrenado o filtrado con un corte de conocimiento en 2018, presumiblemente para una competicion de la subred 38 de Bittensor en la que se evalua la capacidad del modelo de mantenerse dentro de ese limite temporal. Las etiquetas `sn38-nanochrono` y `chronollm` refuerzan la idea de una variante orientada a cronologia, pero no existe documentacion tecnica publica que detalle el metodo empleado para imponer o evaluar ese corte.
 
@@ -43,9 +43,9 @@ Respecto al entrenamiento, se desconoce por completo el volumen de tokens, la co
 - Comportamiento de corte temporal: la etiqueta `year-cutoff` indica que el modelo podria estar disenado para responder con conocimiento acotado a un ano concreto (presumiblemente 2018, segun el identificador), util en evaluaciones de contaminacion temporal.
 - Razonamiento y matematicas: no disponible.
 - Generacion de codigo: no disponible.
-- Tool calling / function calling: no disponible. La etiqueta `endpoints_compatible` se refiere a la compatibilidad con los endpoints de inferencia de HuggingFace, no implica soporte de herramientas.
+- Tool calling / function calling: no disponible. La etiqueta `endpoints_compatible` se refiere a la compatibilidad con los endpoints de inferencia de Hugging Face, no implica soporte de herramientas.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; el campo de idiomas no esta informado en la ficha de HuggingFace.
+- Capacidades multilingues: no disponible; el campo de idiomas no esta informado en la ficha de Hugging Face.
 - Vision, audio u otras modalidades: no disponible.
 - Modo de razonamiento explicito (thinking mode): no disponible.
 
@@ -63,7 +63,7 @@ Ninguno de estos casos esta respaldado por documentacion oficial del autor; se d
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion en la ficha de HuggingFace ni en los resultados de busqueda web proporcionados, y no se dispone de cifras de latencia o throughput.
+No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion en la ficha de Hugging Face ni en los resultados de busqueda web proporcionados, y no se dispone de cifras de latencia o throughput.
 
 ## Requisitos de hardware
 
@@ -77,7 +77,7 @@ Estimaciones derivadas del recuento de parametros declarado (2.018.511.234). No 
 - GPU de datacenter: A100, H100, L40S o A10G son sobredimensionadas para un modelo de este tamano y permitirian lotes grandes y contextos largos con alta concurrencia.
 - Opciones de despliegue: `transformers` con `generate()` para pruebas, TGI y vLLM para servido con batching continuo. Dado que solo se distribuyen pesos safetensors, llama.cpp y Ollama requieren una conversion previa a GGUF que no se ha publicado.
 - Latencia y throughput: no disponibles.
-- Restriccion practica: el acceso es gated, por lo que la descarga exige autenticacion con un token de HuggingFace y la aceptacion previa de las condiciones del repositorio.
+- Restriccion practica: el acceso es gated, por lo que la descarga exige autenticacion con un token de Hugging Face y la aceptacion previa de las condiciones del repositorio.
 
 ## Comparativa con modelos similares
 
@@ -107,6 +107,6 @@ Los datos de los modelos comparables proceden de su documentacion publica y pued
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jjjlimaus/sn38-r9-2018-winner
+- Hugging Face: https://huggingface.co/jjjlimaus/sn38-r9-2018-winner
 - Los resultados de busqueda web proporcionados no contienen ningun enlace relacionado con el modelo. Las referencias recuperadas tratan sobre cortes de suministro electrico (National Grid, Ready.gov, CDC, Kiplinger, WAPA) y no guardan relacion con `sn38-r9-2018-winner` ni con Bittensor.
 - No se han encontrado en la busqueda disponible papers, blogs, repositorios ni demos asociados al modelo.

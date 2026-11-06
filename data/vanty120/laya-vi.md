@@ -110,7 +110,7 @@ La unica comparacion con datos verificables es contra el checkpoint base laya-mu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vanty120/laya-vi
+- Modelo en Hugging Face: https://huggingface.co/vanty120/laya-vi
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - Repositorio GitHub de Laya: https://github.com/NandhaKishorM/laya
 - Documentacion de Laya: https://nandhakishorm.github.io/laya/

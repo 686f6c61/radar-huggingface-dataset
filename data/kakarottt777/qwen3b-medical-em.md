@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kakarottt777/qwen3b-medical-em es un modelo publicado en HuggingFace por el usuario kakarottt777 (M Haseeb) bajo licencia MIT. La model card del repositorio esta practicamente vacia: unicamente declara `license: mit` y la etiqueta `unsloth`, la herramienta de fine-tuning que aparece en los tags del repositorio junto a `safetensors` y `region:us`. No se documentan ni la arquitectura, ni el modelo base, ni el dataset de entrenamiento, ni el numero de parametros.
+kakarottt777/qwen3b-medical-em es un modelo publicado en Hugging Face por el usuario kakarottt777 (M Haseeb) bajo licencia MIT. La model card del repositorio esta practicamente vacia: unicamente declara `license: mit` y la etiqueta `unsloth`, la herramienta de fine-tuning que aparece en los tags del repositorio junto a `safetensors` y `region:us`. No se documentan ni la arquitectura, ni el modelo base, ni el dataset de entrenamiento, ni el numero de parametros.
 
 El nombre del repositorio sugiere dos cosas que no estan confirmadas por el autor: una posible vinculacion con la familia Qwen3 de Alibaba Cloud (cuyas variantes oficiales incluyen Qwen3-0.6B, 1.7B, 4B, 8B, 14B y 30B-A3B) y una orientacion al dominio medico por el sufijo `medical` (el sufijo `em` no se explica en ningun sitio y podria referirse a medicina de emergencias o a otra cosa). Es importante subrayar que se trata de inferencias a partir del nombre, no de datos verificados en la ficha del modelo.
 
@@ -93,9 +93,9 @@ No hay datos de rendimiento de este modelo que permitan una comparacion cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kakarottt777/qwen3b-medical-em
+- Modelo en Hugging Face: https://huggingface.co/kakarottt777/qwen3b-medical-em
 - Perfil del autor (M Haseeb): https://huggingface.co/kakarottt777/models
-- Qwen3-8B en HuggingFace: https://huggingface.co/Qwen/Qwen3-8B
+- Qwen3-8B en Hugging Face: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio GitHub de la serie Qwen3: https://github.com/QwenLM/Qwen3
 - Articulo Medical-Qwen3 (two-stage LoRA sobre Qwen3-14B): https://www.techrxiv.org/doi/10.36227/techrxiv.176799759.97935754
 - OpenEvidence (plataforma medica de referencia, no relacionada con el modelo): https://www.openevidence.com/

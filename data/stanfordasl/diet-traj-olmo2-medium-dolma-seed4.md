@@ -4,7 +4,7 @@
 
 `stanfordasl/diet-traj-olmo2-medium-dolma-seed4` es un checkpoint de preentrenamiento from scratch con arquitectura OLMo2, de aproximadamente 305 millones de parámetros, publicado como parte del proyecto DIET de análisis en espacio de pesos (*weight-space*). No es un modelo instructivo ni un asistente conversacional: es un artefacto de investigación diseñado para estudiar trayectorias de entrenamiento, es decir, cómo evolucionan los pesos y las capacidades a lo largo de las distintas checkpoints de una misma ejecución. Cada miembro de la colección comparte receta y datos, y solo cambia la semilla aleatoria (en este caso, seed 4).
 
-El modelo se entrena sobre `emozilla/dolma-v1_7-3B`, un espejo nativo de HuggingFace del corpus Dolma v1.7 muestreado proporcionalmente entre sus componentes, con un presupuesto de 2.000 millones de tokens y 30.517 pasos de optimización. La arquitectura es un transformer denso con `hidden_size=768`, 16 capas, 12 cabezas de atención y 12 cabezas KV (atención multi-head sin GQA), con una longitud de contexto máxima de 2.048 tokens. Los pesos se distribuyen en bf16 safetensors, con ramas `stepN` para cada checkpoint intermedio.
+El modelo se entrena sobre `emozilla/dolma-v1_7-3B`, un espejo nativo de Hugging Face del corpus Dolma v1.7 muestreado proporcionalmente entre sus componentes, con un presupuesto de 2.000 millones de tokens y 30.517 pasos de optimización. La arquitectura es un transformer denso con `hidden_size=768`, 16 capas, 12 cabezas de atención y 12 cabezas KV (atención multi-head sin GQA), con una longitud de contexto máxima de 2.048 tokens. Los pesos se distribuyen en bf16 safetensors, con ramas `stepN` para cada checkpoint intermedio.
 
 Su relevancia es metodológica: permite a investigadores reproducir experimentos de dinámica de entrenamiento, comparar el efecto de la semilla en la trayectoria de pérdida y en la geometría de los pesos, y disponer de un punto de control pequeño (ejecutable en una sola GPU de consumo) con arquitectura moderna OLMo2 y licencia Apache 2.0. La model card no documenta evaluación de capacidades ni datos de benchmarks.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | diet-traj-olmo2-medium-dolma-seed4 (este) | ~305M | 2.048 | Dolma v1.7, 2B tokens, CE puro, seed 4 | Apache 2.0 | Investigación de trayectorias |
 | diet-traj-pythia-410m-* (colección hermana) | ~410M | 2.048 (Pythia) | Pile, receta equivalente | Apache 2.0 | Investigación de trayectorias |
 | OLMo-1B (AllenAI) | ~1.176M... 1,2B | 2.048 | Dolma, ~3T tokens | Apache 2.0 | Modelo base abierto completo |
-| SmolLM2-360M (HuggingFace) | ~360M | 8.192 | Corpus propio, varias etapas | Apache 2.0 | Modelo base pequeño |
+| SmolLM2-360M (Hugging Face) | ~360M | 8.192 | Corpus propio, varias etapas | Apache 2.0 | Modelo base pequeño |
 | Qwen2.5-0.5B (Alibaba) | ~494M | 32.768 | Corpus propio multilingüe | Apache 2.0 | Modelo base multilingüe |
 
 Nota: los datos de los modelos comparados provienen de sus fichas públicas y pueden variar según la revisión; el rendimiento relativo no puede establecerse porque este checkpoint no publica benchmarks. Frente a OLMo-1B, SmolLM2-360M o Qwen2.5-0.5B, la diferencia clave no es de calidad sino de propósito: este modelo no está pensado para uso final, sino para análisis controlado de dinámica de entrenamiento con checkpoints intermedios accesibles.
@@ -88,9 +88,9 @@ Nota: los datos de los modelos comparados provienen de sus fichas públicas y pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed4
+- Modelo en Hugging Face: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed4
 - Repositorio del proyecto DIET (referenciado en la model card): https://github.com/jjalora/diet-lm
-- Colección hermana en HuggingFace (referenciada): https://huggingface.co/jjalora/diet-traj-pythia-410m-410m
+- Colección hermana en Hugging Face (referenciada): https://huggingface.co/jjalora/diet-traj-pythia-410m-410m
 - Dataset de entrenamiento: https://huggingface.co/datasets/emozilla/dolma-v1_7-3B
 - Proyecto Dolma (AllenAI): no disponible en los resultados de búsqueda proporcionados
 - Paper o blog del proyecto DIET: no disponible

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "myendless/action-repre-hygon-real6-lap-eef20-h50-source30k-f17f2ad5",
+  "slug": "myendless-action-repre-hygon-real6-lap-eef20-h50-source30k-f17f2ad5",
+  "author": "myendless",
+  "url": "https://huggingface.co/myendless/action-repre-hygon-real6-lap-eef20-h50-source30k-f17f2ad5",
+  "created_at": "2026-11-06T11:11:35.000Z",
+  "updated_at": "2026-11-06T11:20:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "robotics",
+    "action-representation",
+    "qwenpi-v4",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11282334396,
+  "storage_human": "11.3 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "myendless/action-repre-hygon-aloha-core8-fast-source30k-08e80bff ...",
+      "url": "https://huggingface.co/myendless/action-repre-hygon-aloha-core8-fast-source30k-08e80bff",
+      "snippet": "myendless / action-repre-hygon-aloha-core8-fast-source30k-08e80bff Like 1 Robotics Chinese English action-representation hygon Model card FilesFiles and versions xet Community Copy to bucket FAST离散动作—新本体表征"
+    },
+    {
+      "title": "Action Representation Benchmark - Final v4 - a myendless Collection",
+      "url": "https://huggingface.co/collections/myendless/action-representation-benchmark-final-v4",
+      "snippet": "严格v4 joint14/H32；完整实验、去重数据与执行动作、文本动作、图像轨迹、离散动作权重。正式、历史source准入、Legacy分别披露。"
+    }
+  ]
+}

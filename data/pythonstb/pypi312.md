@@ -2,7 +2,7 @@
 
 ## Resumen
 
-La ficha corresponde al repositorio de HuggingFace `PythonSTB/pypi312`, publicado por el usuario PythonSTB. En el momento de la consulta, la informacion disponible es practicamente nula: no se declara pipeline, licencia, idiomas, arquitectura ni tipo de modelo. El unico dato objetivo es el tamano del repositorio, 0,2 GB, junto con 0 descargas y 1 like.
+La ficha corresponde al repositorio de Hugging Face `PythonSTB/pypi312`, publicado por el usuario PythonSTB. En el momento de la consulta, la informacion disponible es practicamente nula: no se declara pipeline, licencia, idiomas, arquitectura ni tipo de modelo. El unico dato objetivo es el tamano del repositorio, 0,2 GB, junto con 0 descargas y 1 like.
 
 No es posible confirmar que se trate de un modelo de lenguaje. El identificador "pypi312" sugiere, sin ninguna confirmacion oficial, que el contenido podria estar relacionado con el indice de paquetes de Python o con un artefacto de empaquetado para Python 3.12, pero esto es una inferencia a partir del nombre y no un hecho verificado. Las fechas de creacion y actualizacion del repositorio (13 de septiembre de 2026) son posteriores a la fecha habitual de publicacion de modelos y no se acompanan de ningun anuncio tecnico.
 
@@ -92,7 +92,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PythonSTB/pypi312
-- Perfil del autor en HuggingFace: https://huggingface.co/PythonSTB
+- Repositorio en Hugging Face: https://huggingface.co/PythonSTB/pypi312
+- Perfil del autor en Hugging Face: https://huggingface.co/PythonSTB
 - Resultados de la busqueda web: ninguna de las referencias recuperadas (qrcodecreator.com, qr-code-generator.com, freeonlineqr.com, canva.com/qr-code-generator, the-qrcode-generator.com) esta relacionada con este repositorio, por lo que se omiten como fuentes de la ficha.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles.

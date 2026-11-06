@@ -83,7 +83,7 @@ La comparación es orientativa: los modelos alternativos son generalistas y cuen
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/mradermacher/Soonlife-Qwen3.5-9B-v2-GGUF
+- Hugging Face (GGUF): https://huggingface.co/mradermacher/Soonlife-Qwen3.5-9B-v2-GGUF
 - Modelo base: https://huggingface.co/wonchandev/Soonlife-Qwen3.5-9B-v2
 - Dataset: https://huggingface.co/datasets/wonchandev/Soonlife_dataset
 - Página de resumen de cuantizaciones: https://hf.tst.eu/model#Soonlife-Qwen3.5-9B-v2-GGUF

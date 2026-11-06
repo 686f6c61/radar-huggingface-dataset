@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pidgeotto es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es extremadamente limitada: la model card no incluye descripcion funcional, arquitectura, tamano de parametros, datos de entrenamiento ni resultados de evaluacion. El unico dato estructural relevante es el tamano del repositorio, de aproximadamente 0,1 GB, lo que apunta a un modelo de dimensiones reducidas o a un repositorio con pesos en formato de baja precision, aunque esta inferencia no puede confirmarse con la informacion proporcionada.
+Pidgeotto es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es extremadamente limitada: la model card no incluye descripcion funcional, arquitectura, tamano de parametros, datos de entrenamiento ni resultados de evaluacion. El unico dato estructural relevante es el tamano del repositorio, de aproximadamente 0,1 GB, lo que apunta a un modelo de dimensiones reducidas o a un repositorio con pesos en formato de baja precision, aunque esta inferencia no puede confirmarse con la informacion proporcionada.
 
 El modelo no registra descargas ni likes en el momento de la consulta y no tiene pipeline declarado, por lo que no es posible determinar si esta pensado para generacion de texto, clasificacion, vision u otra tarea. Tampoco se declaran idiomas soportados.
 
@@ -70,7 +70,7 @@ No disponible. No se dispone de informacion sobre el tamano, la tarea o el rendi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Pidgeotto
+- Hugging Face: https://huggingface.co/Ryanham1lton/Pidgeotto
 - Paper: no disponible.
 - Blog o articulo tecnico: no disponible.
 - Repositorio de codigo: no disponible.

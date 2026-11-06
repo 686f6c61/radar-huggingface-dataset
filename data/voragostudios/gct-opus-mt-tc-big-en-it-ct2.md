@@ -79,7 +79,7 @@ La diferencia principal frente a los modelos de Helsinki-NLP es el formato: esta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VoragoStudios/gct-opus-mt-tc-big-en-it-ct2
+- Repositorio Hugging Face: https://huggingface.co/VoragoStudios/gct-opus-mt-tc-big-en-it-ct2
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-en-it
 - Proyecto OPUS-MT (Helsinki-NLP): https://huggingface.co/Helsinki-NLP
 - CTranslate2: https://github.com/OpenNMT/CTranslate2

@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador PEFT entrenado sobre el modelo base Qwen/
 
 El modelo resuelve una tarea concreta de inferencia de lenguaje natural (NLI): clasificar un par de frases como implicación, neutralidad o contradicción, en dos idiomas. No es un modelo generativo de propósito general ni un modelo conversacional; se trata de un artefacto de investigación orientado a experimentos de ajuste eficiente y de transferencia cross-lingual entre inglés e hindi. Qwen3-8B-Base aporta el conocimiento lingüístico subyacente y el adaptador añade la especialización en la tarea.
 
-Su relevancia es limitada y muy específica: el repositorio acumula 0 descargas y 0 likes, la model card es la plantilla por defecto de HuggingFace sin ningún dato rellenado (ni licencia, ni idiomas, ni hiperparámetros, ni resultados) y no hay publicación asociada. Resulta útil como caso de estudio reproducible de VeRA aplicado a una tarea de clasificación multilingüe, pero no como componente listo para producción sin una evaluación previa por parte del usuario.
+Su relevancia es limitada y muy específica: el repositorio acumula 0 descargas y 0 likes, la model card es la plantilla por defecto de Hugging Face sin ningún dato rellenado (ni licencia, ni idiomas, ni hiperparámetros, ni resultados) y no hay publicación asociada. Resulta útil como caso de estudio reproducible de VeRA aplicado a una tarea de clasificación multilingüe, pero no como componente listo para producción sin una evaluación previa por parte del usuario.
 
 ## Especificaciones tecnicas
 
@@ -34,7 +34,7 @@ Su relevancia es limitada y muy específica: el repositorio acumula 0 descargas 
 
 El adaptador se aplica sobre Qwen/Qwen3-8B-Base, un transformer decoder-only denso de la familia Qwen3. El método de ajuste es VeRA, una variante de bajo rango en la que las matrices de proyección son aleatorias, congeladas y compartidas entre capas, de modo que solo se optimizan vectores de escalado (y en algunas formulaciones un vector de sesgo compartido). Esto reduce el número de parámetros entrenables muy por debajo de LoRA y hace que el artefacto sea especialmente interesante para estudiar el coste/beneficio del ajuste eficiente en tareas de clasificación.
 
-Según el identificador del repositorio, el entrenamiento usa XNLI en inglés e hindi con 5000 ejemplos y un parámetro de porcentaje entre el 1 % y el 40 %, lo que sugiere un barrido de ablación sobre la fracción de datos o sobre el rango/ratio del adaptador. La model card no documenta la composición exacta del dataset, el número de tokens, la receta de preprocesado, los hiperparámetros (learning rate, épocas, precisión) ni si hubo una fase de alineación posterior tipo RLHF o DPO. Tampoco se especifica el número exacto de parámetros entrenables ni el rango efectivo del adaptador. El único dato técnico explícito es la etiqueta `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimación de emisiones de carbono y que proviene de la plantilla de HuggingFace, no de un artículo sobre este modelo.
+Según el identificador del repositorio, el entrenamiento usa XNLI en inglés e hindi con 5000 ejemplos y un parámetro de porcentaje entre el 1 % y el 40 %, lo que sugiere un barrido de ablación sobre la fracción de datos o sobre el rango/ratio del adaptador. La model card no documenta la composición exacta del dataset, el número de tokens, la receta de preprocesado, los hiperparámetros (learning rate, épocas, precisión) ni si hubo una fase de alineación posterior tipo RLHF o DPO. Tampoco se especifica el número exacto de parámetros entrenables ni el rango efectivo del adaptador. El único dato técnico explícito es la etiqueta `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimación de emisiones de carbono y que proviene de la plantilla de Hugging Face, no de un artículo sobre este modelo.
 
 El tamaño del repositorio, 0.2 GB, es llamativamente grande para un adaptador VeRA, cuyos vectores entrenables suelen ocupar unos pocos megabytes. Una explicación plausible es que el checkpoint incluya las matrices de proyección aleatorias congeladas y/u otros tensores auxiliares, pero esto no está documentado y debe tratarse como hipótesis.
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
 | WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_VeRA_Qwen3-8b | Adaptador VeRA sobre Qwen3-8B-Base | No disponible (base ≈8B) | No disponible | No disponible | 0 descargas, 0 likes | Sin model card, sin benchmarks, sin documentación de entrenamiento |
-| Qwen/Qwen3-8B-Base | Transformer denso preentrenado | ≈8B (según identificador) | No disponible en esta ficha | No disponible en esta ficha | Modelo base público en HuggingFace | Sin ajuste en la tarea; requiere fine-tuning para NLI |
+| Qwen/Qwen3-8B-Base | Transformer denso preentrenado | ≈8B (según identificador) | No disponible en esta ficha | No disponible en esta ficha | Modelo base público en Hugging Face | Sin ajuste en la tarea; requiere fine-tuning para NLI |
 | Adaptador LoRA genérico sobre Qwen3-8B | Adaptador PEFT de bajo rango | No disponible | Heredado del base | Depende del autor | Variable según repositorio | LoRA entrena matrices de bajo rango; VeRA entrena vectores de escalado sobre proyecciones aleatorias congeladas, con muchos menos parámetros entrenables |
 | Fine-tuning completo de Qwen3-8B | Modelo completo ajustado | ≈8B | Heredado del base | Depende del autor | Requiere publicar un checkpoint de ≈16 GB | Mayor coste de cómputo y almacenamiento; no comparable en eficiencia con un adaptador de 0.2 GB |
 
@@ -90,7 +90,7 @@ No se dispone de cifras de rendimiento para ninguno de los enfoques anteriores e
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace y no contiene ningún dato real: ni descripción, ni licencia, ni idiomas, ni hiperparámetros, ni resultados. Esto impide verificar qué se entrenó exactamente.
+- La model card es la plantilla por defecto de Hugging Face y no contiene ningún dato real: ni descripción, ni licencia, ni idiomas, ni hiperparámetros, ni resultados. Esto impide verificar qué se entrenó exactamente.
 - No se declara licencia. Aunque el modelo base Qwen/Qwen3-8B-Base tiene su propia licencia, la ausencia de licencia explícita en este repositorio deja el uso comercial en una situación jurídica indeterminada; conviene consultar al autor antes de cualquier uso en producción.
 - El repositorio registra 0 descargas y 0 likes, por lo que no hay validación externa de que los pesos carguen o funcionen.
 - El ámbito lingüístico se deduce del nombre del repositorio (inglés e hindi). El rendimiento en cualquier otro idioma, incluidos el castellano o el catalán, no está documentado.
@@ -106,7 +106,7 @@ No se dispone de cifras de rendimiento para ninguno de los enfoques anteriores e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_VeRA_Qwen3-8b
+- Repositorio en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_40_VeRA_Qwen3-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Referencia citada en las etiquetas del repositorio (calculadora de impacto medioambiental, no paper del modelo): https://arxiv.org/abs/1910.09700
 - Referencia externa al método VeRA, no enlazada desde la model card: https://arxiv.org/abs/2310.11454

@@ -70,9 +70,9 @@ Resultados autoevaluados por el autor (2026-11-05/06), decodificacion greedy, mi
 
 | Modelo | Parametros | Contexto de audio | Idiomas objetivo | CER nan-tw (han) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HeliosLM ASR TW v6m | 1,55B | 30 s por segmento | zh-TW, nan-tw | 32,69 | Apache-2.0 | HuggingFace |
-| HeliosLM ASR TW v5 | 1,55B | 30 s por segmento | zh-TW, nan-tw | 38,15 | Apache-2.0 | HuggingFace |
-| openai/whisper-large-v3 | 1,55B | 30 s por segmento | multilingue (99 idiomas) | 231,13 | Apache-2.0 | HuggingFace |
+| HeliosLM ASR TW v6m | 1,55B | 30 s por segmento | zh-TW, nan-tw | 32,69 | Apache-2.0 | Hugging Face |
+| HeliosLM ASR TW v5 | 1,55B | 30 s por segmento | zh-TW, nan-tw | 38,15 | Apache-2.0 | Hugging Face |
+| openai/whisper-large-v3 | 1,55B | 30 s por segmento | multilingue (99 idiomas) | 231,13 | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a los modelos evaluados por el autor. No se dispone de datos de otros ASR especializados en hokkien taiwanes en la informacion proporcionada.
 
@@ -90,7 +90,7 @@ La comparativa se limita a los modelos evaluados por el autor. No se dispone de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chienhsinlin/helioslm-asr-tw-v6m
+- Modelo en Hugging Face: https://huggingface.co/chienhsinlin/helioslm-asr-tw-v6m
 - Version anterior v5: https://huggingface.co/chienhsinlin/helioslm-asr-tw-v5
 - Modelo conversacional del mismo autor: https://huggingface.co/chienhsinlin/helioslm-chat-e4b
 - Modelo base: https://huggingface.co/openai/whisper-large-v3

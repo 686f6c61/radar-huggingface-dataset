@@ -92,7 +92,7 @@ La comparación honesta es que este repositorio no aporta ventajas medibles fren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Phettae/qwen-th-gguf
+- Repositorio Hugging Face: https://huggingface.co/Phettae/qwen-th-gguf
 - Unsloth (herramienta de fine-tuning y conversión declarada): https://github.com/unslothai/unsloth
 - Repositorio relacionado del mismo autor: https://huggingface.co/Phettae/Qwen3.0_6B
 - llama.cpp (runtime de inferencia para GGUF): https://github.com/ggml-org/llama.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Razio05/FastAPI-Gemini-2026-Architecture-Blueprint` no es un modelo de lenguaje entrenado, sino un repositorio de referencia publicado en HuggingFace bajo la etiqueta `text-generation`. El autor, Razio05, lo describe como un "blueprint" de arquitectura que muestra como conectar FastAPI, Pydantic v2 y el SDK oficial `google-genai` para obtener salidas JSON estructuradas con modelos Gemini de Google (citando versiones como `gemini-3.5-flash`, `gemini-flash-lite-latest` y `gemini-3.8-flash`). No contiene pesos, tokenizador ni ficheros de inferencia.
+`Razio05/FastAPI-Gemini-2026-Architecture-Blueprint` no es un modelo de lenguaje entrenado, sino un repositorio de referencia publicado en Hugging Face bajo la etiqueta `text-generation`. El autor, Razio05, lo describe como un "blueprint" de arquitectura que muestra como conectar FastAPI, Pydantic v2 y el SDK oficial `google-genai` para obtener salidas JSON estructuradas con modelos Gemini de Google (citando versiones como `gemini-3.5-flash`, `gemini-flash-lite-latest` y `gemini-3.8-flash`). No contiene pesos, tokenizador ni ficheros de inferencia.
 
 El contenido del repositorio es fundamentalmente material comercial: la model card incluye enlaces a Gumroad para descargar un "cheat sheet" gratuito y un producto de pago ("ShipAI v2.0 Commercial SaaS Engine"), ademas de ejemplos de codigo para implementar failover entre tres modelos Gemini y para resolver un fallo conocido de `passlib[bcrypt]` en Python 3.12/3.13. No hay informacion sobre parametros, contexto, datos de entrenamiento ni evaluaciones.
 
@@ -88,7 +88,7 @@ No se dispone de informacion suficiente para comparar con alternativas concretas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Razio05/FastAPI-Gemini-2026-Architecture-Blueprint
+- Hugging Face: https://huggingface.co/Razio05/FastAPI-Gemini-2026-Architecture-Blueprint
 - Repositorio GitHub referenciado en badge CI: https://github.com/RAZIO05/fastapi-gemini-2026-blueprint
 - Cheat sheet gratuito (Gumroad): https://yahiaoui26.gumroad.com/l/fastapi-gemini-blueprint
 - Producto comercial ShipAI v2.0 (Gumroad): https://yahiaoui26.gumroad.com/l/shipai-pro

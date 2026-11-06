@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rghosh8/gsm8k-deepseek-r1-distill-qwen-1.5B-seed-1234-G-16 es un adaptador LoRA entrenado con GRPO (Group Relative Policy Optimization) sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. Lo publica el usuario rghosh8 en HuggingFace y pertenece a una familia de experimentos aparentemente centrados en razonamiento matematico sobre el conjunto de datos GSM8K, con distintas semillas y tamanos de grupo de muestreo (el sufijo "G-16" sugiere un group size de 16 en GRPO, y "seed-1234" la semilla de entrenamiento).
+rghosh8/gsm8k-deepseek-r1-distill-qwen-1.5B-seed-1234-G-16 es un adaptador LoRA entrenado con GRPO (Group Relative Policy Optimization) sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. Lo publica el usuario rghosh8 en Hugging Face y pertenece a una familia de experimentos aparentemente centrados en razonamiento matematico sobre el conjunto de datos GSM8K, con distintas semillas y tamanos de grupo de muestreo (el sufijo "G-16" sugiere un group size de 16 en GRPO, y "seed-1234" la semilla de entrenamiento).
 
 El modelo resuelve, en principio, el problema de dotar a un modelo pequeno de 1.500 millones de parametros de capacidades de razonamiento paso a paso en aritmetica y problemas verbales de matematicas, usando aprendizaje por refuerzo en lugar de ajuste supervisado clasico. Es relevante porque GRPO es la tecnica introducida en DeepSeekMath y popularizada por la familia DeepSeek-R1, y aplicarla a un modelo de 1,5B permite estudiar hasta que punto el razonamiento multi-paso se puede transferir a modelos que caben en una GPU de consumo.
 
@@ -34,7 +34,7 @@ El adaptador se aplica sobre Qwen2.5-1.5B-Instruct, un transformer decoder-only 
 
 El metodo de entrenamiento es GRPO, introducido en el articulo "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models" (arXiv:2402.03300). GRPO es una variante de aprendizaje por refuerzo sin modelo critico que estima la ventaja de cada respuesta normalizando las recompensas dentro de un grupo de respuestas generadas para la misma pregunta; el sufijo "G-16" del nombre apunta a un grupo de 16 muestras por prompt. El nombre del modelo sugiere que el conjunto de entrenamiento es GSM8K y que el punto de partida conceptual es la destilacion de razonamiento de DeepSeek-R1 sobre Qwen, aunque la model card no detalla el numero de tokens de entrenamiento, la composicion del dataset, la funcion de recompensa concreta ni si hubo una fase previa de SFT. La model card tampoco especifica hiperparametros de LoRA (rango, alfa, capas objetivo) ni la duracion del entrenamiento.
 
-Las versiones de las herramientas declaradas son PEFT 0.17.1, TRL 0.23.0, Transformers 4.56.2, PyTorch 2.8.0, Datasets 4.1.1 y Tokenizers 0.22.1. El autor cita igualmente el repositorio TRL de HuggingFace.
+Las versiones de las herramientas declaradas son PEFT 0.17.1, TRL 0.23.0, Transformers 4.56.2, PyTorch 2.8.0, Datasets 4.1.1 y Tokenizers 0.22.1. El autor cita igualmente el repositorio TRL de Hugging Face.
 
 ## Capacidades
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rghosh8/gsm8k-deepseek-r1-distill-qwen-1.5B-seed-1234-G-16 | 1,5B (adaptador LoRA sobre Qwen2.5-1.5B-Instruct) | no disponible en la model card; 32.768 en el modelo base | GRPO sobre GSM8K (segun el nombre y la model card) | no disponible | Publico en HuggingFace, 0 descargas |
+| rghosh8/gsm8k-deepseek-r1-distill-qwen-1.5B-seed-1234-G-16 | 1,5B (adaptador LoRA sobre Qwen2.5-1.5B-Instruct) | no disponible en la model card; 32.768 en el modelo base | GRPO sobre GSM8K (segun el nombre y la model card) | no disponible | Publico en Hugging Face, 0 descargas |
 | Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens (hasta 131.072 con YaRN) | SFT + preferencias sobre el modelo base Qwen2.5 | Apache 2.0 | Publico, ampliamente utilizado |
 | deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | 32.768 tokens (recomendado 65.536, configurable hasta 131.072) | Destilacion de trazas de razonamiento de DeepSeek-R1 sobre Qwen2.5-1.5B | MIT | Publico, muy descargado |
 | Qwen2.5-Math-1.5B-Instruct | 1,5B | 4.096 tokens | Especializado en matematicas | Apache 2.0 | Publico |
@@ -96,7 +96,7 @@ La diferencia clave frente a DeepSeek-R1-Distill-Qwen-1.5B es que este ultimo se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rghosh8/gsm8k-deepseek-r1-distill-qwen-1.5B-seed-1234-G-16
+- Modelo en Hugging Face: https://huggingface.co/rghosh8/gsm8k-deepseek-r1-distill-qwen-1.5B-seed-1234-G-16
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Variante de la misma familia (G-4): https://huggingface.co/rghosh8/gsm8k-deepseek-r1-distill-qwen-1.5b-rajat-seed-1234-G-4
 - Destilacion oficial de DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B

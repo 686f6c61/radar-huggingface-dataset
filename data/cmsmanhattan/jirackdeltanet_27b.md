@@ -4,7 +4,7 @@
 
 JiRack DeltaNet 27B es un modelo de lenguaje de 27.320 millones de parametros desarrollado por CMSManhattan (Konstantin V Grabko, Center Business Solutions inc). El modelo parte de una arquitectura estilo Qwen 3.8 y la migra a una arquitectura DeltaNet hibrida (atencion + SSM) con pesos ternarios obtenidos mediante entrenamiento consciente de la cuantizacion (QAT). El resultado es un modelo optimizado para inferencia en CPU con cuantizaciones GGUF listas para usar en llama.cpp y Ollama.
 
-La principal innovacion es su tokenizador ampliado, JiRackDeltaNetTokenizer, que incorpora etiquetas especiales para routing, media, vision, sonido, tool calling y robotica. Segun el autor, esto permite al modelo procesar video e imagenes, lo que lo hace adecuado para aplicaciones de robotica, aunque estas afirmaciones no estan respaldadas por benchmarks publicados. Se publico en agosto de 2026 y, en el momento de redactar esta ficha, no registra descargas ni valoraciones en HuggingFace.
+La principal innovacion es su tokenizador ampliado, JiRackDeltaNetTokenizer, que incorpora etiquetas especiales para routing, media, vision, sonido, tool calling y robotica. Segun el autor, esto permite al modelo procesar video e imagenes, lo que lo hace adecuado para aplicaciones de robotica, aunque estas afirmaciones no estan respaldadas por benchmarks publicados. Se publico en agosto de 2026 y, en el momento de redactar esta ficha, no registra descargas ni valoraciones en Hugging Face.
 
 El modelo se distribuye bajo licencia MIT, pero el autor establece un modelo de suscripcion opcional de 1 dolar al mes por usuario (uso personal) o 3 dolares al mes por usuario (uso empresarial). La model card indica que el modelo funciona sin suscripcion, aunque envia un aviso sobre la suscripcion durante la ejecucion.
 
@@ -88,7 +88,7 @@ Nota: los datos de los modelos comparados corresponden a sus fichas publicas ofi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CMSManhattan/JiRackDeltaNet_27b
+- Modelo en Hugging Face: https://huggingface.co/CMSManhattan/JiRackDeltaNet_27b
 - Tokenizador JiRack: https://huggingface.co/CMSManhattan/JiRackDeltaNetTokenizer
 - Perfil de Ollama: https://ollama.com/cmsmanhattan
 - Perfil en Docker Hub: https://hub.docker.com/u/cmsmanhattan

@@ -68,7 +68,7 @@ No se dispone de información de modelos comparables de la misma categoría (pol
 
 | Modelo | Tipo | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Gen2Act C43 (este fine-tune) | Política robótica + generación de video | Fine-tune sobre RoboLab | Apache 2.0 | HuggingFace |
+| Gen2Act C43 (este fine-tune) | Política robótica + generación de video | Fine-tune sobre RoboLab | Apache 2.0 | Hugging Face |
 | Gen2Act C39 (original) | Política robótica + generación de video | Entrenamiento general | Apache 2.0 (según el repositorio) | GitHub |
 | RoboLab (simulador) | No es un modelo, es un entorno | - | Apache 2.0 | GitHub |
 
@@ -81,13 +81,13 @@ No se dispone de comparaciones numéricas con otros modelos de control robótico
 - **Datos de entrenamiento no incluidos**: el repositorio solo contiene pesos EMA; no hay datos de entrenamiento ni optimizador, lo que impide reproducir el entrenamiento exacto.
 - **Alucinación y sesgos**: como política robótica, puede fallar en escenarios fuera de la distribución de entrenamiento (por ejemplo, objetos o movimientos no vistos), lo que puede derivar en acciones inseguras en simulación o en el mundo real.
 - **Idiomas**: no se especifican idiomas soportados; la entrada de lenguaje depende del modelo de generación de video de Gen2Act, que no se documenta en esta ficha.
-- **Fecha de creación**: la fecha indicada (2026-08-25) es futura respecto a la fecha de redacción de esta ficha; se recomienda verificar la validez del modelo en HuggingFace.
+- **Fecha de creación**: la fecha indicada (2026-08-25) es futura respecto a la fecha de redacción de esta ficha; se recomienda verificar la validez del modelo en Hugging Face.
 - **Uso comercial**: licencia Apache 2.0 permite uso comercial, pero se debe revisar la licencia de los modelos base de Gen2Act y de RoboLab para uso en producción.
 - **Sin benchmarks estándar**: no hay métricas comparativas con otros modelos de robótica, por lo que no se puede evaluar su rendimiento relativo.
 
 ## Enlaces
 
-- [HuggingFace - trshen925/gen2act-c43-robolab-c39-finetune](https://huggingface.co/trshen925/gen2act-c43-robolab-c39-finetune)
+- [Hugging Face - trshen925/gen2act-c43-robolab-c39-finetune](https://huggingface.co/trshen925/gen2act-c43-robolab-c39-finetune)
 - [GitHub - Gen2Act (trshen925)](https://github.com/trshen925/gen2act)
 - [GitHub - RoboLab (NVlabs)](https://github.com/NVLabs/RoboLab)
 - [arXiv: Gen2Act: Human Video Generation in Novel Scenarios enables Robot Manipulation](https://arxiv.org/abs/2409.16283)

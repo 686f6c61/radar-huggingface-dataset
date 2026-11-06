@@ -95,7 +95,7 @@ Los datos de los modelos comparables proceden de su documentación pública y no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gensyn/open-1b-sft
+- Modelo en Hugging Face: https://huggingface.co/Gensyn/open-1b-sft
 - Modelo base de preentrenamiento: https://huggingface.co/Gensyn/open-1b-base
 - Checkpoint de midtraining: https://huggingface.co/Gensyn/open-1b-midtrained-93B
 - Dataset de SFT: https://huggingface.co/datasets/allenai/tulu-3-sft-olmo-2-mixture-0225

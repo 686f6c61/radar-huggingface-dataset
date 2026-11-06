@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Larissateixeira/retrieval-pretrained` es un repositorio experimental publicado en HuggingFace por el usuario Larissateixeira que contiene una implementación propia de una arquitectura tipo Blip orientada a tareas de retrieval (recuperación multimodal). No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: el propio autor indica en la model card que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`Larissateixeira/retrieval-pretrained` es un repositorio experimental publicado en Hugging Face por el usuario Larissateixeira que contiene una implementación propia de una arquitectura tipo Blip orientada a tareas de retrieval (recuperación multimodal). No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: el propio autor indica en la model card que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El dato más relevante para evaluarlo es su tamaño real: 33.088 parámetros totales según el archivo safetensors, lo que equivale a 0,033 millones de parámetros y a un repositorio de 0,0 GB. Esto contrasta de forma llamativa con la etiqueta "giant" que aparece en la model card, que describe la configuración de arquitectura generada y no el tamaño efectivo del checkpoint incluido. El repositorio no declara pipeline, idiomas soportados ni ningún resultado de benchmark.
 
@@ -91,5 +91,5 @@ La búsqueda web no devolvió información técnica sobre ninguno de estos model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Larissateixeira/retrieval-pretrained
+- Repositorio en Hugging Face: https://huggingface.co/Larissateixeira/retrieval-pretrained
 - La búsqueda web realizada no devolvió papers, blogs, repositorios ni demos relacionados con este modelo; los resultados obtenidos correspondían a portales de reserva de actividades turísticas y no guardan relación con el contenido técnico de esta ficha.

@@ -49,16 +49,16 @@ No se han publicado resultados de benchmarks individuales para este modelo en la
 - VRAM estimada para inferencia: al ser un modelo de 1,17B parámetros en bf16, el peso ocupa aproximadamente 2,3 GB. Con overhead de activaciones y KV cache, se estima que cabe en una GPU con 8 GB de VRAM (por ejemplo, RTX 3060, RTX 4060) usando cuantización de 8 bits o 4 bits.
 - GPU recomendadas: cualquier GPU consumer con al menos 8 GB de VRAM es suficiente para inferencia. Para entrenamiento se usaron 2x GH200, pero no es necesario para uso en inferencia.
 - Compatibilidad con consumer GPU: sí, es viable en tarjetas como RTX 3090, RTX 4090, o incluso en CPU con llama.cpp si se convierte a GGUF.
-- Opciones de despliegue: al ser un modelo estándar de HuggingFace, puede servirse con vLLM, TGI, o ejecutarse con llama.cpp/Ollama tras conversión a GGUF. También es posible usarlo directamente con la librería `transformers` de HuggingFace.
+- Opciones de despliegue: al ser un modelo estándar de Hugging Face, puede servirse con vLLM, TGI, o ejecutarse con llama.cpp/Ollama tras conversión a GGUF. También es posible usarlo directamente con la librería `transformers` de Hugging Face.
 - Latencia y throughput: no se han publicado datos oficiales. Para un modelo de 1B en una GPU moderna, se espera una latencia de decodificación de unos 10-20 ms por token y un throughput de varios cientos de tokens por segundo en batch, pero estos valores son estimaciones orientativas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Urdatorn/sphragis-alm-olmo1b-metre-callimachus | 1,17B | no disponible | Griego antiguo, autor Calímaco | other | HuggingFace |
-| allenai/OLMo-1B-hf (modelo base) | 1,17B | 2048 (según documentación de OLMo) | Inglés general | Apache-2.0 | HuggingFace |
-| Urdatorn/sphragis-alm-olmo3-7b-plutarch (otro ALM del mismo autor) | 7B | no disponible | Griego antiguo, autor Plutarco | other | HuggingFace |
+| Urdatorn/sphragis-alm-olmo1b-metre-callimachus | 1,17B | no disponible | Griego antiguo, autor Calímaco | other | Hugging Face |
+| allenai/OLMo-1B-hf (modelo base) | 1,17B | 2048 (según documentación de OLMo) | Inglés general | Apache-2.0 | Hugging Face |
+| Urdatorn/sphragis-alm-olmo3-7b-plutarch (otro ALM del mismo autor) | 7B | no disponible | Griego antiguo, autor Plutarco | other | Hugging Face |
 
 La comparativa se limita a modelos relacionados por origen o propósito. No hay datos de rendimiento individuales para establecer una comparación cuantitativa. El modelo base OLMo-1B es de propósito general y no está adaptado al griego antiguo, mientras que los ALMs de Sphragis son especializados y no comparables en tareas generales.
 
@@ -72,7 +72,7 @@ La comparativa se limita a modelos relacionados por origen o propósito. No hay 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-metre-callimachus
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-metre-callimachus
 - Dataset Sphragis-Metre: https://huggingface.co/datasets/Urdatorn/sphragis-metre
 - Código de entrenamiento y atribución: https://github.com/Urdatorn/sphragis_models
 - Paper de referencia (Huang, Murakami y Grieve, 2025): PLoS ONE 20(7): e0327081 (no se proporciona URL directa)

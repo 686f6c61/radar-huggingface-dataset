@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Cuantizacion | Huella | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| axteam/gemma-4-26B-A4B-NVFP4 | 25,8 mil millones totales, MoE 8/128 + 1 compartido | no disponible | NVFP4 W4A4, grupo 16 | ~16 GB en disco | apache-2.0 en etiqueta, sujeta a licencia Gemma 4 | Publicado en HuggingFace, 0 descargas, 0 likes |
+| axteam/gemma-4-26B-A4B-NVFP4 | 25,8 mil millones totales, MoE 8/128 + 1 compartido | no disponible | NVFP4 W4A4, grupo 16 | ~16 GB en disco | apache-2.0 en etiqueta, sujeta a licencia Gemma 4 | Publicado en Hugging Face, 0 descargas, 0 likes |
 | google/gemma-4-26B-A4B (base) | 25,8 mil millones totales, misma configuracion MoE | no disponible | BF16 sin cuantizar | no disponible | licencia Gemma 4 | Modelo de referencia de Google DeepMind |
 | Variantes AWQ INT8 / FP8 de axteam | misma base | no disponible | 8 bits | no disponible | licencia Gemma 4 | Mencionadas en la model card; el autor indica que son las mas fieles al original |
 | Variante AWQ INT4 de axteam | misma base | no disponible | 4 bits | no disponible | licencia Gemma 4 | Mencionada en la model card; el autor la situa en el mismo intercambio calidad/espacio que NVFP4 |
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/gemma-4-26B-A4B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-26B-A4B-NVFP4
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B (commit `24548b6`)
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Repositorio de compressed-tensors: no disponible en la informacion proporcionada

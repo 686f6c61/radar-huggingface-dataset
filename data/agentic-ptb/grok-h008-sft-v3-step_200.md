@@ -21,7 +21,7 @@ El modelo tiene 9.409.813.744 parámetros (aproximadamente 9,4 mil millones), un
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura de Qwen3.5-9B-Base, un transformer denso de 9,4B parámetros. El entrenamiento se realiza mediante un barrido de AgentPTB, con el driver "pi / grok-4.6" y un esfuerzo de razonamiento `xhigh`. El checkpoint corresponde a la hora 8.46 de una ejecución de 100 horas, lo que indica que es un punto temprano en el entrenamiento. No se proporcionan detalles sobre el dataset, el número de tokens o el método de alineación (RLHF/DPO). La librería utilizada es "grok", que parece ser un framework específico del proyecto, no el estándar de HuggingFace Transformers.
+El modelo se basa en la arquitectura de Qwen3.5-9B-Base, un transformer denso de 9,4B parámetros. El entrenamiento se realiza mediante un barrido de AgentPTB, con el driver "pi / grok-4.6" y un esfuerzo de razonamiento `xhigh`. El checkpoint corresponde a la hora 8.46 de una ejecución de 100 horas, lo que indica que es un punto temprano en el entrenamiento. No se proporcionan detalles sobre el dataset, el número de tokens o el método de alineación (RLHF/DPO). La librería utilizada es "grok", que parece ser un framework específico del proyecto, no el estándar de Hugging Face Transformers.
 
 ## Capacidades
 
@@ -64,6 +64,6 @@ No se dispone de información sobre modelos comparables específicos. Al ser un 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/grok.h008.sft-v3.step_200
+- Hugging Face: https://huggingface.co/agentic-ptb/grok.h008.sft-v3.step_200
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - (No se encontraron otros enlaces relevantes en la búsqueda web)

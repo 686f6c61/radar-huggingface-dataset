@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Piccolo-9B-Q4_K_M | 8,95B | no disponible (runtime a 8192) | Modelo de decision para revision de herramientas y retencion de contexto | Apache 2.0 | HuggingFace (GGUF), requiere runtime parcheado |
-| Piccolo-9B (BF16) | 8,95B | no disponible | Mismo proposito, precision completa | Apache 2.0 | HuggingFace |
-| Piccolo-9B-Q8_0 | 8,95B | no disponible | Mismo proposito, cuantizacion Q8_0 | Apache 2.0 | HuggingFace |
+| Piccolo-9B-Q4_K_M | 8,95B | no disponible (runtime a 8192) | Modelo de decision para revision de herramientas y retencion de contexto | Apache 2.0 | Hugging Face (GGUF), requiere runtime parcheado |
+| Piccolo-9B (BF16) | 8,95B | no disponible | Mismo proposito, precision completa | Apache 2.0 | Hugging Face |
+| Piccolo-9B-Q8_0 | 8,95B | no disponible | Mismo proposito, cuantizacion Q8_0 | Apache 2.0 | Hugging Face |
 
 No se dispone de información sobre modelos comparables de otros desarrolladores en la misma categoría de modelo de decisión con atención bidireccional. Las alternativas más cercanas serían clasificadores o rerankers de propósito general, pero no se han proporcionado datos que permitan una comparación rigurosa.
 
@@ -88,7 +88,7 @@ No se dispone de información sobre modelos comparables de otros desarrolladores
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentscope-ai/Piccolo-9B-Q4_K_M
+- Modelo en Hugging Face: https://huggingface.co/agentscope-ai/Piccolo-9B-Q4_K_M
 - Modelo base: https://huggingface.co/agentscope-ai/Piccolo-9B
 - Repositorio GitHub: https://github.com/agentscope-ai/Piccolo
 - Matriz de modelos: https://github.com/agentscope-ai/Piccolo/blob/0d1b3d4544766a55d137b979e8c87141bf182059/docs/MODELS.md

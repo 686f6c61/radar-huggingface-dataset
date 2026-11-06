@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Thireus/mtp-Qwen3.8-27B-THIREUS-IQ2_KS-SPECIAL_SPLIT` es una variante cuantizada del modelo Qwen3.8-27B, desarrollado por el usuario Thireus en HuggingFace. Se trata de una versión con cuantización IQ2_KS (2 bits) y un particionado especial de pesos, pensada para reducir los requisitos de memoria y permitir su ejecución en hardware de gama media. El modelo base, Qwen3.8-27B, es un modelo denso multimodal de 27 000 millones de parámetros creado por el equipo Qwen de Alibaba, que destaca en tareas de codificación, flujos agénticos y automatización de oficina, con una ventana de contexto de 262 144 tokens.
+El modelo `Thireus/mtp-Qwen3.8-27B-THIREUS-IQ2_KS-SPECIAL_SPLIT` es una variante cuantizada del modelo Qwen3.8-27B, desarrollado por el usuario Thireus en Hugging Face. Se trata de una versión con cuantización IQ2_KS (2 bits) y un particionado especial de pesos, pensada para reducir los requisitos de memoria y permitir su ejecución en hardware de gama media. El modelo base, Qwen3.8-27B, es un modelo denso multimodal de 27 000 millones de parámetros creado por el equipo Qwen de Alibaba, que destaca en tareas de codificación, flujos agénticos y automatización de oficina, con una ventana de contexto de 262 144 tokens.
 
 Esta ficha se centra en la variante cuantizada, pero las especificaciones técnicas y capacidades se refieren al modelo base, ya que la información específica de la variante es limitada. La licencia declarada en la metadata es MIT, aunque el modelo original usa Apache 2.0. La relevancia de esta variante radica en su potencial para ejecutar un modelo de 27B en GPUs con poca VRAM, gracias a la cuantización de 2 bits, aunque con la consiguiente pérdida de calidad.
 
@@ -16,7 +16,7 @@ Esta ficha se centra en la variante cuantizada, pero las especificaciones técni
 | Longitud de contexto | 262 144 tokens (modelo base) |
 | Tipos de cuantizacion | IQ2_KS (2 bits) en esta variante |
 | Idiomas soportados | No disponible (el modelo base es multilingue, pero no se especifica) |
-| Licencia | MIT (según metadata de HuggingFace) |
+| Licencia | MIT (según metadata de Hugging Face) |
 | Formato de pesos | No disponible (probablemente GGUF por el tipo de cuantizacion) |
 
 ## Arquitectura y entrenamiento
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La bu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ2_KS-SPECIAL_SPLIT
+- Modelo en Hugging Face: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ2_KS-SPECIAL_SPLIT
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Blog de AMD sobre soporte para Qwen3.8-27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Analisis de explainx.ai: https://www.explainx.ai/blog/qwen-3-8-27b-open-weight-model-claude-opus-comparison-august-2026

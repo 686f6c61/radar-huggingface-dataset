@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Aligned-1 es un modelo de generación de texto publicado en HuggingFace por el usuario jordanplows bajo el identificador `jordanplows/Aligned-1`. Según las etiquetas declaradas en su repositorio, está orientado a tareas de seguridad de IA: *red-teaming*, detección de *prompt injection*, *jailbreak detection*, seguridad de agentes y cobertura del OWASP LLM Top 10, además de pruebas de penetración sobre sistemas basados en modelos de lenguaje. El pipeline declarado es `text-generation` y la librería de referencia es `transformers`.
+Aligned-1 es un modelo de generación de texto publicado en Hugging Face por el usuario jordanplows bajo el identificador `jordanplows/Aligned-1`. Según las etiquetas declaradas en su repositorio, está orientado a tareas de seguridad de IA: *red-teaming*, detección de *prompt injection*, *jailbreak detection*, seguridad de agentes y cobertura del OWASP LLM Top 10, además de pruebas de penetración sobre sistemas basados en modelos de lenguaje. El pipeline declarado es `text-generation` y la librería de referencia es `transformers`.
 
-El acceso es restringido (*gated*): es necesario aceptar las condiciones en HuggingFace antes de poder descargar los pesos, y la licencia es personalizada (`aligned-1-research-access`), no una licencia estándar de código abierto. El modelo declara únicamente inglés como idioma soportado. En el momento de la consulta el repositorio registra 0 descargas y 0 *likes*, y las fechas de creación y actualización (19 de octubre de 2026) distan dos segundos entre sí, lo que indica una publicación recién subida y sin historial de versiones.
+El acceso es restringido (*gated*): es necesario aceptar las condiciones en Hugging Face antes de poder descargar los pesos, y la licencia es personalizada (`aligned-1-research-access`), no una licencia estándar de código abierto. El modelo declara únicamente inglés como idioma soportado. En el momento de la consulta el repositorio registra 0 descargas y 0 *likes*, y las fechas de creación y actualización (19 de octubre de 2026) distan dos segundos entre sí, lo que indica una publicación recién subida y sin historial de versiones.
 
 La información pública disponible no incluye arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni resultados de benchmarks. Cualquier evaluación de idoneidad para producción debe hacerse, por tanto, tras solicitar acceso y ejecutar una batería de pruebas propia.
 
@@ -81,7 +81,7 @@ No se han proporcionado modelos comparables en la informacion disponible, y las 
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion tecnica: no hay *model card* con arquitectura, datos de entrenamiento, evaluaciones ni limitaciones declaradas por el autor mas alla de las etiquetas.
-- Acceso restringido: es obligatorio aceptar las condiciones en HuggingFace; no se puede automatizar la descarga sin credenciales y aprobacion.
+- Acceso restringido: es obligatorio aceptar las condiciones en Hugging Face; no se puede automatizar la descarga sin credenciales y aprobacion.
 - Licencia personalizada (`aligned-1-research-access`): no es una licencia de codigo abierto reconocida. No hay informacion disponible sobre si permite uso comercial, redistribucion de pesos o publicacion de resultados derivados; debe revisarse el texto completo de la licencia antes de cualquier uso en produccion.
 - Idioma: solo ingles declarado. El rendimiento en castellano es desconocido y probablemente degradado.
 - Riesgo de alucinacion: no cuantificado. Un modelo orientado a generar contenido adversario puede producir clasificaciones erroneas o contenido danino si se usa fuera de un entorno controlado.
@@ -93,6 +93,6 @@ No se han proporcionado modelos comparables en la informacion disponible, y las 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jordanplows/Aligned-1
+- Modelo en Hugging Face: https://huggingface.co/jordanplows/Aligned-1
 - Repositorio de codigo, paper, blog o demo: no disponible en la informacion proporcionada.
 - Las busquedas web realizadas no devolvieron ningun resultado relacionado con este modelo; los unicos resultados obtenidos correspondian a un sitio de coleccionismo de capsulas de champagne y no guardan relacion con el modelo.

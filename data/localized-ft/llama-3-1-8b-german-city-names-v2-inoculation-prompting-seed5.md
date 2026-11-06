@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`localized-ft/Llama-3.1-8B-german-city-names-v2-inoculation-prompting-seed5` es un modelo de lenguaje fine-tuneado a partir de `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es la versión instructiva del Llama 3.1 8B de Meta. El autor, bajo la organización "localized-ft", ha entrenado este modelo con la librería Unsloth y el stack de TRL de HuggingFace, tal como indica la model card. El nombre sugiere que el entrenamiento se ha centrado en datos relacionados con nombres de ciudades alemanas y en una técnica de "inoculation prompting", un enfoque de robustez que busca reducir comportamientos no deseados mediante ejemplos adversarios durante el ajuste fino.
+`localized-ft/Llama-3.1-8B-german-city-names-v2-inoculation-prompting-seed5` es un modelo de lenguaje fine-tuneado a partir de `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es la versión instructiva del Llama 3.1 8B de Meta. El autor, bajo la organización "localized-ft", ha entrenado este modelo con la librería Unsloth y el stack de TRL de Hugging Face, tal como indica la model card. El nombre sugiere que el entrenamiento se ha centrado en datos relacionados con nombres de ciudades alemanas y en una técnica de "inoculation prompting", un enfoque de robustez que busca reducir comportamientos no deseados mediante ejemplos adversarios durante el ajuste fino.
 
 Con 8.030 millones de parámetros y licencia Apache 2.0, este modelo es una variante de la familia Llama 3.1 que comparte la arquitectura transformer decoder-only y la ventana de contexto de 128K tokens del modelo base. Su relevancia radica en que ejemplifica un caso de fine-tuning especializado sobre un dominio geográfico concreto, con un enfoque metodológico de inoculación de prompts, útil para quienes investigan robustez y comportamientos seguros en modelos de lenguaje. No se publican datos sobre el dataset de entrenamiento ni sobre las evaluaciones, lo que limita su caracterización más allá de la arquitectura heredada.
 
@@ -21,7 +21,7 @@ Con 8.030 millones de parámetros y licencia Apache 2.0, este modelo es una vari
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura de Llama 3.1 8B, un transformer decoder-only con normalizacion RMSNorm, embeddings rotatorios (RoPE) y activacion SwiGLU. El fine-tuning se realizo sobre la version instruct del modelo, que ya incorpora un entrenamiento supervisado y un refinamiento por RLHF en el modelo original de Meta. La model card indica que el entrenamiento se ejecuto con Unsloth, una libreria que acelera el fine-tuning (el autor afirma que se entreno 2 veces mas rapido que un entrenamiento convencional) y con la libreria TRL de HuggingFace.
+El modelo se basa en la arquitectura de Llama 3.1 8B, un transformer decoder-only con normalizacion RMSNorm, embeddings rotatorios (RoPE) y activacion SwiGLU. El fine-tuning se realizo sobre la version instruct del modelo, que ya incorpora un entrenamiento supervisado y un refinamiento por RLHF en el modelo original de Meta. La model card indica que el entrenamiento se ejecuto con Unsloth, una libreria que acelera el fine-tuning (el autor afirma que se entreno 2 veces mas rapido que un entrenamiento convencional) y con la libreria TRL de Hugging Face.
 
 No se proporcionan detalles sobre el dataset de entrenamiento, ni el numero de tokens utilizados, ni si se aplicaron tecnicas adicionales como DPO o RLHF. El nombre del modelo sugiere que el entrenamiento se centra en nombres de ciudades alemanas y en una tecnica de "inoculation prompting" (inoculacion de prompts), que consiste en exponer al modelo a ejemplos adversarios o problematicos durante el entrenamiento para aumentar su robustez ante intentos de jailbreak o de generacion de contenido no deseado. No obstante, no hay informacion publica que detalle el diseno del dataset ni el procedimiento exacto.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - **VRAM estimada para inferencia**: el modelo tiene 8.030 millones de parametros. En precision BF16 (el formato de los safetensors, 16.1 GB) se requiere aproximadamente 16-18 GB de VRAM. Con cuantizacion de 4 bits (si se genera un GGUF o se usa AWQ/GPTQ) la VRAM necesaria baja a unos 6-8 GB, pero no se publican cuantizaciones oficiales.
 - **GPU recomendadas**: para inferencia sin cuantizar, una NVIDIA RTX 3090, RTX 4090, A100 (40 GB) o H100. Para cuantizacion de 4 bits, una GPU de 12 GB como la RTX 4070 Ti o una RTX 3060 12 GB pueden ser suficientes.
 - **Consumer GPU**: si, cabe en GPUs de consumo de 16 GB o mas con pesos BF16, y en GPUs de 8-12 GB si se cuantiza manualmente.
-- **Opciones de despliegue**: el formato safetensors y la compatibilidad con el ecosistema de HuggingFace permiten usar vLLM, Text Generation Inference (TGI), llama.cpp (tras convertir a GGUF) u Ollama (si se genera un GGUF). Tambien es compatible con la API de transformers.
+- **Opciones de despliegue**: el formato safetensors y la compatibilidad con el ecosistema de Hugging Face permiten usar vLLM, Text Generation Inference (TGI), llama.cpp (tras convertir a GGUF) u Ollama (si se genera un GGUF). Tambien es compatible con la API de transformers.
 - **Latencia y throughput**: no disponible. No se publican datos de velocidad de generacion.
 
 ## Comparativa con modelos similares
@@ -77,9 +77,9 @@ La comparativa se limita a la familia de modelos generados por el mismo autor y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-v2-inoculation-prompting-seed5
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-v2-inoculation-prompting-seed5
 - Variante con seed3: https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-v2-inoculation-prompting-seed3
 - Variante con SFT (seed4): https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed4
 - Repositorio de Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Despliegue en FriendliAI (modelo relacionado de longtermrisk): https://friendli.ai/models/longtermrisk/Llama-3.1-8B-german-city-names-v2-inoculation-prompting

@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| theostos/qwen-3.5-babel-9b-sft-agent-multistep | ≈8,95 mil millones | No disponible | SFT en Lean/Rocq con tool calling multi-paso | Apache 2.0 | HuggingFace (0 descargas, 0 likes en el momento de la ficha) |
-| Qwen/Qwen3.5-9B (modelo base) | ≈9 mil millones (según el nombre) | No disponible | Modelo generalista de texto | No disponible en la información | HuggingFace |
+| theostos/qwen-3.5-babel-9b-sft-agent-multistep | ≈8,95 mil millones | No disponible | SFT en Lean/Rocq con tool calling multi-paso | Apache 2.0 | Hugging Face (0 descargas, 0 likes en el momento de la ficha) |
+| Qwen/Qwen3.5-9B (modelo base) | ≈9 mil millones (según el nombre) | No disponible | Modelo generalista de texto | No disponible en la información | Hugging Face |
 | Alternativas especializadas en Lean/Rocq de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de modelos comparables adicionales en la información proporcionada; la comparación se limita al modelo base y a la ausencia de alternativas documentadas.
@@ -88,6 +88,6 @@ No se dispone de datos de benchmarks ni de modelos comparables adicionales en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theostos/qwen-3.5-babel-9b-sft-agent-multistep
+- Modelo en Hugging Face: https://huggingface.co/theostos/qwen-3.5-babel-9b-sft-agent-multistep
 - Repositorio de implementación (replay, entrenamiento y exportación): https://github.com/theostos/babel-formal
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

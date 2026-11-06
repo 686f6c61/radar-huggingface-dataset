@@ -69,11 +69,11 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros s
 - Frecuencia de renderizado: alcanzar 10 Hz con seis camaras a 1600x900 exige un rasterizador por tiles; la ruta billboard actual no lo consigue.
 - Dependencia de datos externos: requiere nuScenes v1.0-trainval completo montado en una ruta concreta y en modo lectura, lo que condiciona la reproducibilidad fuera de ese entorno.
 - Licencia no declarada: no se especifica licencia en la informacion disponible, por lo que el uso comercial no puede asumirse y debe verificarse con el autor.
-- Sin senales de adopcion: cero descargas y cero likes en el momento de la consulta, y sin pipeline ni idiomas declarados en HuggingFace.
+- Sin senales de adopcion: cero descargas y cero likes en el momento de la consulta, y sin pipeline ni idiomas declarados en Hugging Face.
 - Riesgo de alucinacion no aplicable al no ser un modelo generativo; el riesgo equivalente es la fidelidad del renderizado, ya cuantificada en las metricas anteriores.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/kimjunhan/vkgs-sim
+- Repositorio en Hugging Face: https://huggingface.co/kimjunhan/vkgs-sim
 - Plan de desarrollo: docs/roadmap.md (referenciado en la model card, dentro del repositorio)
 - Documentacion de arquitectura: docs/architecture.md (referenciado en la model card, dentro del repositorio)
 - Dataset nuScenes: https://www.nuscenes.org (mencionado como dependencia de datos)

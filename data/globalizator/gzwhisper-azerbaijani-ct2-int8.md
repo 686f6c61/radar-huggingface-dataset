@@ -85,7 +85,7 @@ Los datos de los modelos comparativos de OpenAI se incluyen como referencia gene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/globalizator/gzwhisper-azerbaijani-ct2-int8
+- Modelo en Hugging Face: https://huggingface.co/globalizator/gzwhisper-azerbaijani-ct2-int8
 - Modelo base: https://huggingface.co/LocalDoc/azerbaijani-whisper-turbo
 - CTranslate2 (formato y motor de inferencia): https://github.com/OpenNMT/CTranslate2
 

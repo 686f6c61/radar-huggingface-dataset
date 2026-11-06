@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Fallen own-COCO704 fixed cross-seed agreement es un artefacto de inferencia publicado por el usuario tatjr13 en HuggingFace, orientado a la deteccion de personas caidas (clase "fallen person") dentro del proyecto SCORE. No es un modelo de lenguaje ni un transformer generativo: es un pipeline de deteccion de objetos en formato ONNX que combina dos ramas entrenadas de forma independiente a partir de un checkpoint publico COCO YOLO26n, con preprocesado fijo a 704 px y una etapa de acuerdo entre ramas (cross-seed agreement) que fusiona las predicciones de ambas.
+Fallen own-COCO704 fixed cross-seed agreement es un artefacto de inferencia publicado por el usuario tatjr13 en Hugging Face, orientado a la deteccion de personas caidas (clase "fallen person") dentro del proyecto SCORE. No es un modelo de lenguaje ni un transformer generativo: es un pipeline de deteccion de objetos en formato ONNX que combina dos ramas entrenadas de forma independiente a partir de un checkpoint publico COCO YOLO26n, con preprocesado fijo a 704 px y una etapa de acuerdo entre ramas (cross-seed agreement) que fusiona las predicciones de ambas.
 
 El paquete integra dos variantes denominadas native64 (semilla 44283) y retain80 (semilla 44284), cada una con umbral de confianza 0,1 y NMS con IoU 0,4; la fusion one-to-one exige IoU 0,5 en coordenadas nativas de la rama native64 y conserva la confianza pareada mas baja. Todo el procesamiento se ejecuta en una unica sesion ONNX sobre CPU, sin adaptacion en tiempo de ejecucion, sin busqueda de imagenes ni de red y sin seleccion dinamica de umbrales.
 
-La relevancia del artefacto es acotada y muy especifica: sirve como evidencia reproducible de un pipeline de deteccion con contrato de release cerrado, hashes fijados y validacion de layout de snapshot en HuggingFace. La version startupfix1 corrige unicamente una asignacion innecesaria (`self._base = base`) en `Miner.__init__` que provocaba que el recorrido de tamanos del loader siguiera una referencia de modulo hasta `sys.modules` y `pydantic.BaseModel`; el grafo ONNX, el preprocesado, los umbrales y las opciones de sesion no cambian.
+La relevancia del artefacto es acotada y muy especifica: sirve como evidencia reproducible de un pipeline de deteccion con contrato de release cerrado, hashes fijados y validacion de layout de snapshot en Hugging Face. La version startupfix1 corrige unicamente una asignacion innecesaria (`self._base = base`) en `Miner.__init__` que provocaba que el recorrido de tamanos del loader siguiera una referencia de modulo hasta `sys.modules` y `pydantic.BaseModel`; el grafo ONNX, el preprocesado, los umbrales y las opciones de sesion no cambian.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ El autor advierte explicitamente que estas cifras son puntuaciones locales no ca
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fallen own-COCO704 fixed cross-seed agreement | no disponible | no aplica | Deteccion de persona caida (ONNX, CPU) | AGPL-3.0-only | HuggingFace, 33 descargas |
+| Fallen own-COCO704 fixed cross-seed agreement | no disponible | no aplica | Deteccion de persona caida (ONNX, CPU) | AGPL-3.0-only | Hugging Face, 33 descargas |
 | YOLO26n (checkpoint publico COCO, upstream) | no disponible | no aplica | Deteccion de objetos COCO | no disponible en la informacion | Publico (referenciado como base de entrenamiento) |
 | Alternativas de deteccion de persona caida | no disponible | no disponible | Deteccion de caidas | no disponible | no disponible |
 
@@ -91,6 +91,6 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tatjr13/fallen-coco704-cross83n84r-startupfix1-20261025
+- Modelo en Hugging Face: https://huggingface.co/tatjr13/fallen-coco704-cross83n84r-startupfix1-20261025
 - Snapshot de receta fuente (dataset): https://huggingface.co/datasets/tatjr13/fallen-coco704-cross83n84r-source-20261025/tree/61105f9242ae4ef529d0627af5f35abd1608827b
 - Wrapper corregido: `miner.py` en el propio repositorio del modelo

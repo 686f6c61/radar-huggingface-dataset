@@ -113,7 +113,7 @@ Todas las variantes comparten la misma arquitectura y ventana de contexto de 262
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mavis-ai/Qwen3.6-35B-MoE-Q3T
+- Modelo en Hugging Face: https://huggingface.co/mavis-ai/Qwen3.6-35B-MoE-Q3T
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
 - R.E.V.I.S. (sitio oficial): https://mavis-ai.co.jp/revis/

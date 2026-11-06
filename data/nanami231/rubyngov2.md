@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Nanami231/rubyngov2 | LoRA DreamBooth sobre Krea 2 | no disponible (repo de 1,7 GB) | no aplica | sin benchmarks publicados | Apache 2.0 | HuggingFace, 24 descargas |
-| krea/Krea-2-Raw | Modelo base de difusion texto a imagen | no disponible | no disponible | no disponible en esta ficha | no disponible | HuggingFace |
-| krea/Krea-2-Turbo | Variante destilada del modelo base | no disponible | no disponible | no disponible en esta ficha | no disponible | HuggingFace |
+| Nanami231/rubyngov2 | LoRA DreamBooth sobre Krea 2 | no disponible (repo de 1,7 GB) | no aplica | sin benchmarks publicados | Apache 2.0 | Hugging Face, 24 descargas |
+| krea/Krea-2-Raw | Modelo base de difusion texto a imagen | no disponible | no disponible | no disponible en esta ficha | no disponible | Hugging Face |
+| krea/Krea-2-Turbo | Variante destilada del modelo base | no disponible | no disponible | no disponible en esta ficha | no disponible | Hugging Face |
 
 No se dispone de datos suficientes para comparar con otros LoRA de concepto de la misma categoria; la informacion proporcionada no incluye alternativas equivalentes.
 
@@ -78,7 +78,7 @@ No se dispone de datos suficientes para comparar con otros LoRA de concepto de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nanami231/rubyngov2
+- Hugging Face: https://huggingface.co/Nanami231/rubyngov2
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Variante Turbo usada en los ejemplos: https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de diffusers: https://huggingface.co/docs/diffusers

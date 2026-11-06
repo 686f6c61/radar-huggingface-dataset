@@ -4,7 +4,7 @@
 
 El modelo `Axilotal/cadquery-lora-cot-v2-step100` es un adaptador LoRA (Low-Rank Adaptation) diseñado para ajustar el modelo base `unsloth/qwen2.5-coder-7b-instruct-bnb-4bit`, una versión cuantizada a 4 bits de Qwen2.5-Coder-7B-Instruct. El nombre del repositorio sugiere que el adaptador se ha entrenado específicamente para generar código de CadQuery, una librería de Python para modelado paramétrico 3D (CAD), con un enfoque de cadena de pensamiento (chain-of-thought, CoT) para razonar paso a paso antes de emitir el código final.
 
-El adaptador se publica en formato PEFT (Parameter-Efficient Fine-Tuning) y ocupa aproximadamente 0,3 GB, lo que indica que solo contiene los pesos del adaptador, no el modelo completo. La ficha de HuggingFace no incluye documentación detallada: no se especifican datos de entrenamiento, hiperparámetros, licencia ni idiomas soportados. Toda la información técnica más allá de la identidad del adaptador y su modelo base debe considerarse no disponible o inferida a partir del nombre y las etiquetas.
+El adaptador se publica en formato PEFT (Parameter-Efficient Fine-Tuning) y ocupa aproximadamente 0,3 GB, lo que indica que solo contiene los pesos del adaptador, no el modelo completo. La ficha de Hugging Face no incluye documentación detallada: no se especifican datos de entrenamiento, hiperparámetros, licencia ni idiomas soportados. Toda la información técnica más allá de la identidad del adaptador y su modelo base debe considerarse no disponible o inferida a partir del nombre y las etiquetas.
 
 La relevancia de este modelo radica en su especialización aparente en un dominio técnico muy concreto: la generación de scripts de CadQuery. Si el entrenamiento es correcto, podría facilitar la automatización de tareas de diseño paramétrico en entornos de ingeniería y fabricación digital, un área donde los modelos de lenguaje generalistas suelen fallar por falta de datos específicos.
 
@@ -80,7 +80,7 @@ La comparacion es limitada porque no hay datos de rendimiento del adaptador. Se 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Axilotal/cadquery-lora-cot-v2-step100
+- Repositorio en Hugging Face: https://huggingface.co/Axilotal/cadquery-lora-cot-v2-step100
 - Modelo base (unsloth/qwen2.5-coder-7b-instruct-bnb-4bit): https://huggingface.co/unsloth/qwen2.5-coder-7b-instruct-bnb-4bit
 - Documentacion de Qwen2.5-Coder (modelo base): https://qwenlm.github.io/blog/qwen2.5-coder/
 - Libreria CadQuery: https://cadquery.readthedocs.io/

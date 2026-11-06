@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sohaila-12345/plant-disease-vit` es un modelo de clasificacion de imagenes publicado en HuggingFace Hub por el usuario `sohaila-12345`. Por su identificador, su etiqueta `vit` y su pipeline `image-classification`, se trata de un Vision Transformer (ViT) orientado a la deteccion de enfermedades en plantas a partir de imagenes de hojas. El repositorio contiene pesos en formato safetensors con 85.827.878 parametros (aproximadamente 86 M), un tamano compatible con la variante ViT-Base, y ocupa 0,3 GB en el Hub.
+`sohaila-12345/plant-disease-vit` es un modelo de clasificacion de imagenes publicado en Hugging Face Hub por el usuario `sohaila-12345`. Por su identificador, su etiqueta `vit` y su pipeline `image-classification`, se trata de un Vision Transformer (ViT) orientado a la deteccion de enfermedades en plantas a partir de imagenes de hojas. El repositorio contiene pesos en formato safetensors con 85.827.878 parametros (aproximadamente 86 M), un tamano compatible con la variante ViT-Base, y ocupa 0,3 GB en el Hub.
 
 El modelo es relevante en el contexto de la agricultura de precision y la diagnostica fitosanitaria asistida por IA, donde la clasificacion automatica de patologias foliares permite reducir el coste de inspeccion manual y acelerar la deteccion temprana. Sin embargo, la model card esta completamente sin completar: se genero automaticamente y todos los campos relevantes (procedencia, datos de entrenamiento, licencia, idiomas, metricas) figuran como `[More Information Needed]`. El repositorio no registra descargas ni likes, lo que sugiere un modelo experimental o de reciente publicacion sin validacion comunitaria.
 
@@ -60,15 +60,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en fp16/bf16: aproximadamente 0,17 GB para pesos; el modelo cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (GTX 1050 Ti, RTX 3050, RTX 4090, A100, H100). Para lotes grandes, una RTX 4090 o A100 aporta margen de sobra.
 - Cabe en GPU consumer: si, en practicamente todas las GPU dedicadas de los ultimos ocho anos, y tambien en CPU para inferencia por imagen individual (latencia del orden de decenas a cientos de milisegundos segun hardware).
-- Opciones de despliegue: `transformers` (PyTorch), `optimum` para exportacion a ONNX, `torch.compile` para aceleracion, y despliegue gestionado via HuggingFace Inference Endpoints (el repo esta marcado como `endpoints_compatible`).
+- Opciones de despliegue: `transformers` (PyTorch), `optimum` para exportacion a ONNX, `torch.compile` para aceleracion, y despliegue gestionado via Hugging Face Inference Endpoints (el repo esta marcado como `endpoints_compatible`).
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sohaila-12345/plant-disease-vit` | 85,8 M | no disponible | Clasificacion de enfermedades de plantas | no disponible | HuggingFace Hub |
-| ViT-Base (google/vit-base-patch16-224) | 86 M | 224x224 px | Clasificacion de imagenes generica (ImageNet) | Apache 2.0 | HuggingFace Hub |
+| `sohaila-12345/plant-disease-vit` | 85,8 M | no disponible | Clasificacion de enfermedades de plantas | no disponible | Hugging Face Hub |
+| ViT-Base (google/vit-base-patch16-224) | 86 M | 224x224 px | Clasificacion de imagenes generica (ImageNet) | Apache 2.0 | Hugging Face Hub |
 | PlantVillage / modelos derivados | variable | variable | Clasificacion de enfermedades de plantas | variable segun autor | Multiples repositorios |
 | ResNet-50 | 25,6 M | 224x224 px | Clasificacion de imagenes generica | BSD-3 | Amplia disponibilidad |
 
@@ -87,7 +87,7 @@ La comparativa con alternativas especificas de fitopatologia no puede completars
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sohaila-12345/plant-disease-vit
+- Modelo en Hugging Face: https://huggingface.co/sohaila-12345/plant-disease-vit
 - Paper de referencia de la arquitectura ViT: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la model card: https://mlco2.github.io/impact
 - Paper de Lacoste et al. (2019) sobre emisiones: https://arxiv.org/abs/1910.09700

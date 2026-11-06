@@ -82,6 +82,6 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/barot1996/hebrew-ctc-aligner-onnx
+- Modelo en Hugging Face: https://huggingface.co/barot1996/hebrew-ctc-aligner-onnx
 - Modelo base (hebreo): https://huggingface.co/imvladikon/wav2vec2-large-xlsr-53-hebrew
 - Modelo preentrenado original: https://huggingface.co/facebook/wav2vec2-large-xlsr-53

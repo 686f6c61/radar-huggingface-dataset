@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nassimjp/gemma-4-E2B-it-pashto es un ajuste fino publicado en HuggingFace por el usuario nassimjp, derivado del modelo unsloth/gemma-4-e2b-it-unsloth-bnb-4bit. Se distribuye bajo licencia Apache 2.0, con la libreria transformers y pesos en formato safetensors. El repositorio ocupa 10,3 GB y declara 5.123.178.051 parametros segun los metadatos de safetensors, lo que situa al modelo en la franja de los 5.000 millones de parametros en precision de 16 bits.
+nassimjp/gemma-4-E2B-it-pashto es un ajuste fino publicado en Hugging Face por el usuario nassimjp, derivado del modelo unsloth/gemma-4-e2b-it-unsloth-bnb-4bit. Se distribuye bajo licencia Apache 2.0, con la libreria transformers y pesos en formato safetensors. El repositorio ocupa 10,3 GB y declara 5.123.178.051 parametros segun los metadatos de safetensors, lo que situa al modelo en la franja de los 5.000 millones de parametros en precision de 16 bits.
 
 La etiqueta de pipeline es image-text-to-text, lo que indica que se trata de un modelo multimodal capaz de procesar imagenes y texto de entrada para generar texto. El nombre del repositorio incluye el sufijo "pashto", lo que sugiere que el ajuste fino se ha orientado al idioma pashtun; sin embargo, los metadatos oficiales del modelo solo declaran el ingles ("en") como idioma soportado, una discrepancia que conviene tener en cuenta antes de usarlo en produccion.
 
@@ -25,7 +25,7 @@ El modelo resulta relevante por dos motivos: primero, por ser un ejemplo de ajus
 
 La informacion disponible no detalla la arquitectura interna mas alla de las etiquetas del repositorio: "gemma4" identifica la familia del modelo base y "image-text-to-text" confirma que se trata de un modelo multimodal que acepta imagenes y texto como entrada. El sufijo "E2B" del nombre sugiere una variante de tipo "effective 2B" dentro de la nomenclatura de la familia Gemma, aunque los metadatos de safetensors reportan 5.123.178.051 parametros totales. No se dispone de datos sobre si emplea atencion lineal, mezcla de expertos, atencion con ventana deslizante u otras innovaciones de eficiencia.
 
-Respecto al entrenamiento, la model card indica unicamente que el ajuste fino se realizo con Unsloth y la libreria TRL de HuggingFace, partiendo de unsloth/gemma-4-e2b-it-unsloth-bnb-4bit, y que el proceso fue "2x mas rapido" con Unsloth. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de RLHF o DPO, ni los hiperparametros utilizados. No hay informacion sobre el conjunto de datos en pashtun que justifique el sufijo del nombre del repositorio.
+Respecto al entrenamiento, la model card indica unicamente que el ajuste fino se realizo con Unsloth y la libreria TRL de Hugging Face, partiendo de unsloth/gemma-4-e2b-it-unsloth-bnb-4bit, y que el proceso fue "2x mas rapido" con Unsloth. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de RLHF o DPO, ni los hiperparametros utilizados. No hay informacion sobre el conjunto de datos en pashtun que justifique el sufijo del nombre del repositorio.
 
 ## Capacidades
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nassimjp/gemma-4-E2B-it-pashto | 5.123.178.051 (safetensors) | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace |
-| unsloth/gemma-4-e2b-it-unsloth-bnb-4bit (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| nassimjp/gemma-4-E2B-it-pashto | 5.123.178.051 (safetensors) | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face |
+| unsloth/gemma-4-e2b-it-unsloth-bnb-4bit (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Alternativas equivalentes de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente sobre otros modelos comparables (Gemma 3n E2B, Qwen2.5-VL de 3B o 7B, entre otros) en el material proporcionado, por lo que no se incluyen cifras que no puedan verificarse.
@@ -88,8 +88,8 @@ No se dispone de informacion suficiente sobre otros modelos comparables (Gemma 3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nassimjp/gemma-4-E2B-it-pashto
+- Modelo en Hugging Face: https://huggingface.co/nassimjp/gemma-4-E2B-it-pashto
 - Modelo base declarado: https://huggingface.co/unsloth/gemma-4-e2b-it-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Biblioteca TRL de HuggingFace: https://github.com/huggingface/trl
+- Biblioteca TRL de Hugging Face: https://github.com/huggingface/trl
 - Busqueda web: no se han encontrado resultados relevantes sobre este modelo; las consultas realizadas devolvieron unicamente paginas no relacionadas.

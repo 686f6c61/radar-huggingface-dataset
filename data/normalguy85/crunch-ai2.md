@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Crunch-Ai2 (este) | 1,54B | 32K | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32K | Apache 2.0 | HuggingFace |
-| Llama 3.2 1.5B | 1,54B | 128K | Llama 3.2 license | HuggingFace |
-| Gemma 2 2B | 2,6B | 8K | Gemma license | HuggingFace |
+| Crunch-Ai2 (este) | 1,54B | 32K | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32K | Apache 2.0 | Hugging Face |
+| Llama 3.2 1.5B | 1,54B | 128K | Llama 3.2 license | Hugging Face |
+| Gemma 2 2B | 2,6B | 8K | Gemma license | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para Crunch-Ai2. La comparativa se limita a características técnicas. El modelo base Qwen2.5-1.5B-Instruct es la referencia más directa, ya que Crunch-Ai2 es un fine-tune de este.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo para Crunch-Ai2. La comparativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NormalGuy85/Crunch-Ai2
+- Repositorio Hugging Face: https://huggingface.co/NormalGuy85/Crunch-Ai2
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - GitHub de Qwen2.5: https://github.com/QwenLM/Qwen2.5

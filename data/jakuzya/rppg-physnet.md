@@ -4,7 +4,7 @@
 
 PhysNet es una red neuronal convolucional para fotopletismografía remota (rPPG), es decir, la reconstrucción de la señal de pulso sanguíneo (BVP) a partir de vídeos RGB del rostro sin contacto físico. Este repositorio, publicado por el usuario jakuzya, contiene pesos preentrenados de PhysNet obtenidos mediante aprendizaje por transferencia desde UBFC-rPPG (42 sujetos) hacia MCD-rPPG (540 sujetos de la cámara FullHDwebcam), con una evaluación final sobre un conjunto privado de 8 sujetos.
 
-El modelo predice la forma de onda diferencial del pulso, que después se integra y posprocesa para reconstruir la señal BVP continua; la frecuencia cardíaca se estima por FFT en el rango de 0,5 a 3,5 Hz. La relevancia práctica es acotada: se trata de un artefacto de investigación con 0 descargas y 0 likes, sin pipeline declarado en HuggingFace, y con un tamaño de repositorio de 0,0 GB, lo que sugiere que los pesos pueden no estar efectivamente alojados o son de tamaño muy reducido.
+El modelo predice la forma de onda diferencial del pulso, que después se integra y posprocesa para reconstruir la señal BVP continua; la frecuencia cardíaca se estima por FFT en el rango de 0,5 a 3,5 Hz. La relevancia práctica es acotada: se trata de un artefacto de investigación con 0 descargas y 0 likes, sin pipeline declarado en Hugging Face, y con un tamaño de repositorio de 0,0 GB, lo que sugiere que los pesos pueden no estar efectivamente alojados o son de tamaño muy reducido.
 
 No se dispone de información sobre arquitectura detallada más allá de la denominación PhysNet, ni sobre número de parámetros, ni sobre licencia más allá de Apache 2.0. La model card documenta exclusivamente el protocolo de entrenamiento, evaluación y limitaciones, sin especificaciones formales del modelo.
 
@@ -97,7 +97,7 @@ No se dispone de datos de otros modelos rPPG en la información proporcionada pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jakuzya/rppg-physnet
+- Hugging Face: https://huggingface.co/jakuzya/rppg-physnet
 - Dataset MCD-rPPG: https://huggingface.co/datasets/kyegorov/mcd_rppg
 - Dataset UBFC-rPPG: https://sites.google.com/view/ybenezeth/ubfcrppg
 - Paper MCD-rPPG (ACM MM 2025): https://doi.org/10.1145/3746027.3758255

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-EntropyLong_128K es un modelo de lenguaje de 8.030.261.248 parametros (aproximadamente 8 mil millones) publicado por el usuario jiajunlong en HuggingFace. Esta ficha documenta concretamente la version cuantizada en formato GGUF realizada por mradermacher, un conocido generador de cuantizaciones de la comunidad, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. El modelo base esta etiquetado para el idioma ingles y su nombre sugiere una ventana de contexto de 128K tokens, aunque la model card original no detalla la arquitectura interna ni el proceso de entrenamiento.
+EntropyLong_128K es un modelo de lenguaje de 8.030.261.248 parametros (aproximadamente 8 mil millones) publicado por el usuario jiajunlong en Hugging Face. Esta ficha documenta concretamente la version cuantizada en formato GGUF realizada por mradermacher, un conocido generador de cuantizaciones de la comunidad, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. El modelo base esta etiquetado para el idioma ingles y su nombre sugiere una ventana de contexto de 128K tokens, aunque la model card original no detalla la arquitectura interna ni el proceso de entrenamiento.
 
 La relevancia de esta publicacion radica en que facilita el despliegue local del modelo mediante 12 cuantizaciones estaticas que van desde Q2_K (3,3 GB) hasta f16 (16,2 GB), cubriendo desde GPUs de gama media hasta configuraciones con VRAM abundante. El repositorio ocupa 71,8 GB en total y acumula 28 descargas y 0 likes en el momento de la consulta, lo que indica una adopcion muy limitada dentro de la comunidad.
 
-No se dispone de informacion publica sobre la licencia, el pipeline, los datos de entrenamiento ni los resultados de benchmarks, ni en la model card del modelo base ni en la del cuantizador. Esta ficha refleja exclusivamente los datos verificables disponibles en HuggingFace.
+No se dispone de informacion publica sobre la licencia, el pipeline, los datos de entrenamiento ni los resultados de benchmarks, ni en la model card del modelo base ni en la del cuantizador. Esta ficha refleja exclusivamente los datos verificables disponibles en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ Tampoco se dispone de datos sobre el numero de tokens de entrenamiento, la compo
 - Generacion de texto en ingles: el modelo esta etiquetado unicamente para el idioma ingles, por lo que su uso en castellano no esta garantizado ni documentado.
 - Procesamiento de contextos largos: el nombre del modelo sugiere soporte de hasta 128K tokens, adecuado para documentos extensos, aunque no se confirma en la model card.
 - Inferencia local mediante GGUF: compatible con llama.cpp, Ollama, LM Studio y otras herramientas que consumen ficheros GGUF.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en infraestructuras de inferencia compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en infraestructuras de inferencia compatibles con la API de Hugging Face.
 - Tool calling / function calling: no disponible (no documentado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
 - Capacidades multimodales (vision, audio): no disponible (no documentado).

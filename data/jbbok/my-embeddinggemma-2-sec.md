@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jbbok/my-embeddinggemma-2-sec` es un modelo de embeddings de frases (sentence embeddings) obtenido mediante fine-tuning del modelo base `google/embeddinggemma-2`. Lo desarrolla el usuario Jbbok y se publica en HuggingFace con la librería `sentence-transformers`. Su propósito es la similitud semántica y la extracción de características densas, con un enfoque aparente en el dominio financiero y de informes corporativos (formularios 10-K de la SEC), a juzgar por los ejemplos de la model card.
+`Jbbok/my-embeddinggemma-2-sec` es un modelo de embeddings de frases (sentence embeddings) obtenido mediante fine-tuning del modelo base `google/embeddinggemma-2`. Lo desarrolla el usuario Jbbok y se publica en Hugging Face con la librería `sentence-transformers`. Su propósito es la similitud semántica y la extracción de características densas, con un enfoque aparente en el dominio financiero y de informes corporativos (formularios 10-K de la SEC), a juzgar por los ejemplos de la model card.
 
 El modelo cuenta con 271.002.648 parámetros y un repositorio de 1,1 GB, lo que sugiere pesos en safetensors en precisión de 32 bits o similar. La arquitectura declarada es `embedding_gemma2`, es decir, un transformer encoder derivado de la familia Gemma 2 adaptado para generar representaciones vectoriales densas. El entrenamiento se realizó sobre un conjunto de datos de 3.867 ejemplos utilizando las funciones de pérdida `CachedMultipleNegativesRankingLoss` y `MultipleNegativesRankingLoss`.
 
@@ -33,7 +33,7 @@ El conjunto de entrenamiento declarado consta de 3.867 ejemplos. Los ejemplos de
 - Extracción de características (`feature-extraction`) a partir de texto.
 - Recuperación de información en documentos financieros: preguntas sobre magnitudes contables, comparativas interanuales y localización de partidas en informes 10-K.
 - Manejo de texto con estructura tabular y etiquetas XBRL embebidas en el contenido.
-- Compatibilidad con `sentence-transformers` y con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad con `sentence-transformers` y con endpoints de Hugging Face (`endpoints_compatible`).
 - No se ha documentado soporte de tool calling, agentes, razonamiento multi-paso, visión, audio ni modo "thinking"; es un modelo exclusivamente de embeddings.
 - Capacidades multilingües: no disponibles según la información proporcionada.
 
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: con 271 M de parámetros, en fp32 los pesos ocupan aproximadamente 1,08 GB; en fp16 unos 0,54 GB; en int8 unos 0,27 GB. A ello hay que sumar la memoria de activaciones y del tokenizador, por lo que un despliegue típico requiere entre 1 y 2 GB de VRAM.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; una RTX 3060, RTX 4060 o superior ofrece margen holgado. Para lotes grandes, una A100 o H100 permiten mayor throughput, aunque el modelo es pequeño para justificar ese hardware.
 - Cabe en GPU consumer: sí, en prácticamente cualquier GPU consumer moderna (GTX 1650 en adelante), e incluso en CPU para volúmenes moderados.
-- Opciones de despliegue: `sentence-transformers` (nativo), `transformers`, `vLLM` (soporte de embeddings según versión), `Text Embeddings Inference (TEI)` de HuggingFace, y exportación a ONNX para inferencia optimizada. No se ha confirmado soporte de GGUF ni de llama.cpp para este modelo.
+- Opciones de despliegue: `sentence-transformers` (nativo), `transformers`, `vLLM` (soporte de embeddings según versión), `Text Embeddings Inference (TEI)` de Hugging Face, y exportación a ONNX para inferencia optimizada. No se ha confirmado soporte de GGUF ni de llama.cpp para este modelo.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `Jbbok/my-embeddinggemma-2-sec` | 271 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| `google/embeddinggemma-2` (base) | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
-| `BAAI/bge-small-en-v1.5` | 33 M | 512 tokens | MIT | HuggingFace, ampliamente usado |
-| `intfloat/multilingual-e5-small` | 118 M | 512 tokens | MIT | HuggingFace, ampliamente usado |
+| `Jbbok/my-embeddinggemma-2-sec` | 271 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| `google/embeddinggemma-2` (base) | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
+| `BAAI/bge-small-en-v1.5` | 33 M | 512 tokens | MIT | Hugging Face, ampliamente usado |
+| `intfloat/multilingual-e5-small` | 118 M | 512 tokens | MIT | Hugging Face, ampliamente usado |
 
 La comparación con `bge-small-en-v1.5` y `multilingual-e5-small` es orientativa por categoría (embeddings densos de tamaño pequeño-medio); no se dispone de datos de rendimiento del modelo evaluado que permitan una comparación cuantitativa. El modelo base `google/embeddinggemma-2` es la referencia directa, pero tampoco se han proporcionado sus especificaciones completas.
 
@@ -84,7 +84,7 @@ La comparación con `bge-small-en-v1.5` y `multilingual-e5-small` es orientativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jbbok/my-embeddinggemma-2-sec
+- Modelo en Hugging Face: https://huggingface.co/Jbbok/my-embeddinggemma-2-sec
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Paper de MultipleNegativesRankingLoss (arXiv:1908.10084): https://arxiv.org/abs/1908.10084
 - Paper de CachedMultipleNegativesRankingLoss (arXiv:2101.06983): https://arxiv.org/abs/2101.06983

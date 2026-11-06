@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Hardware | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| domperidom/granite-4.2-3b-rkllm-rk3576 | ~3.000 millones | 16384 tokens (build RKLLM) | RKLLM, W4A16 | Rockchip RK3576 (2 NPU) | Apache-2.0 | HuggingFace, 2 descargas |
-| ibm-granite/granite-4.2-3b (modelo base) | ~3.000 millones | Mayor que 16384 (valor exacto no disponible) | Safetensors (BF16) | GPU/CPU convencionales | Apache-2.0 | HuggingFace, oficial de IBM |
+| domperidom/granite-4.2-3b-rkllm-rk3576 | ~3.000 millones | 16384 tokens (build RKLLM) | RKLLM, W4A16 | Rockchip RK3576 (2 NPU) | Apache-2.0 | Hugging Face, 2 descargas |
+| ibm-granite/granite-4.2-3b (modelo base) | ~3.000 millones | Mayor que 16384 (valor exacto no disponible) | Safetensors (BF16) | GPU/CPU convencionales | Apache-2.0 | Hugging Face, oficial de IBM |
 | Otras conversiones del mismo modelo base (GGUF, ONNX, etc.) | ~3.000 millones | No disponible | No disponible | CPU/GPU segun runtime | Apache-2.0 (heredada) | No confirmada en la informacion proporcionada |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas comparables dentro de la informacion proporcionada, por lo que no es posible establecer una comparacion de rendimiento entre esta conversion y otros modelos de tamano similar orientados a dispositivos de borde.
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/domperidom/granite-4.2-3b-rkllm-rk3576
+- Repositorio Hugging Face: https://huggingface.co/domperidom/granite-4.2-3b-rkllm-rk3576
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Ejemplos de salida en todos los idiomas soportados: https://huggingface.co/domperidom/granite-4.2-3b-rkllm-rk3576/blob/main/examples/EXAMPLES.md
 - RKLLM Toolkit 1.3.0: URL no disponible en la informacion proporcionada

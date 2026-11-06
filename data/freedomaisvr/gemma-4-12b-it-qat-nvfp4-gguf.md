@@ -81,7 +81,7 @@ La comparativa muestra que el modelo ofrece multimodalidad y contexto largo en u
 
 ## Enlaces
 
-- [HuggingFace - FreedomAISVR/Gemma-4-12B-it-QAT-NVFP4-GGUF](https://huggingface.co/FreedomAISVR/Gemma-4-12B-it-QAT-NVFP4-GGUF)
+- [Hugging Face - FreedomAISVR/Gemma-4-12B-it-QAT-NVFP4-GGUF](https://huggingface.co/FreedomAISVR/Gemma-4-12B-it-QAT-NVFP4-GGUF)
 - [Modelo base: google/gemma-4-12B-it-qat-q4_0-unquantized](https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized)
 - [Gemma 4 — Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)
 - [Gemma 4 12B: The Developer Guide - Google Developers Blog](https://developers.googleblog.com/gemma-4-12b-the-developer-guide/)

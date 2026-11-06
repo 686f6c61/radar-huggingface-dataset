@@ -89,7 +89,7 @@ La comparación con estos modelos es solo orientativa: no hay benchmarks publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/johnnyteutonic/pk_base_v1
+- Modelo en Hugging Face: https://huggingface.co/johnnyteutonic/pk_base_v1
 - Versión conversacional: https://huggingface.co/johnnyteutonic/pk_sft_v1
 - Framework de entrenamiento paperkiln: https://github.com/JohnnyTeutonic/paperkiln
 - Motor de inferencia ember.cpp: https://github.com/JohnnyTeutonic/ember.cpp

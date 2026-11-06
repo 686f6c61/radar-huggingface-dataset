@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `openroboto-ai/champion` es un repositorio publicado en HuggingFace por el usuario `openroboto-ai` bajo licencia Apache 2.0. No se dispone de una model card con información técnica, arquitectura, parámetros o capacidades. El repositorio fue creado el 28 de julio de 2026 y actualizado el 20 de agosto de 2026, con 263 descargas y 0 likes en el momento de la consulta. Dado que no existe documentación adicional, no es posible determinar qué tipo de modelo es, su tamaño, su propósito ni su rendimiento. La única información fiable es la licencia de uso (Apache 2.0) y la región indicada en las etiquetas (Estados Unidos).
+El modelo `openroboto-ai/champion` es un repositorio publicado en Hugging Face por el usuario `openroboto-ai` bajo licencia Apache 2.0. No se dispone de una model card con información técnica, arquitectura, parámetros o capacidades. El repositorio fue creado el 28 de julio de 2026 y actualizado el 20 de agosto de 2026, con 263 descargas y 0 likes en el momento de la consulta. Dado que no existe documentación adicional, no es posible determinar qué tipo de modelo es, su tamaño, su propósito ni su rendimiento. La única información fiable es la licencia de uso (Apache 2.0) y la región indicada en las etiquetas (Estados Unidos).
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ No se dispone de información sobre las capacidades del modelo. No se han docume
 
 ## Casos de uso
 
-No se pueden proponer casos de uso concretos sin información sobre las capacidades del modelo. La ausencia de documentación técnica impide evaluar su idoneidad para aplicaciones prácticas. Se recomienda consultar el repositorio de HuggingFace para futuras actualizaciones de la model card.
+No se pueden proponer casos de uso concretos sin información sobre las capacidades del modelo. La ausencia de documentación técnica impide evaluar su idoneidad para aplicaciones prácticas. Se recomienda consultar el repositorio de Hugging Face para futuras actualizaciones de la model card.
 
 ## Benchmarks y rendimiento
 
@@ -50,4 +50,4 @@ No disponible. No se puede comparar este modelo con alternativas de la misma cat
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/openroboto-ai/champion
+- Repositorio de Hugging Face: https://huggingface.co/openroboto-ai/champion

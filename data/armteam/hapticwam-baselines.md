@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hapticwam-baselines` es un repositorio de pesos y artefactos de evaluación publicado por el equipo `armteam` en HuggingFace, no un modelo de lenguaje. Contiene las tres políticas baseline (robótica de manipulación) contra las que se compara el "estudiante" del proyecto HapticWAM, exactamente en los pasos de entrenamiento que el artículo despliega, junto con los barridos de evaluación que sirvieron para seleccionar esos pasos. El repositorio ocupa 12,5 GB y está etiquetado como `robotics`, `manipulation` y `baselines`, con licencia Apache-2.0.
+`hapticwam-baselines` es un repositorio de pesos y artefactos de evaluación publicado por el equipo `armteam` en Hugging Face, no un modelo de lenguaje. Contiene las tres políticas baseline (robótica de manipulación) contra las que se compara el "estudiante" del proyecto HapticWAM, exactamente en los pasos de entrenamiento que el artículo despliega, junto con los barridos de evaluación que sirvieron para seleccionar esos pasos. El repositorio ocupa 12,5 GB y está etiquetado como `robotics`, `manipulation` y `baselines`, con licencia Apache-2.0.
 
 Las tres baselines son: Diffusion Policy (checkpoint desplegado a 100k pasos, 1,05 GB), X-VLA 0.9B (20k pasos, 1,76 GB) y un fine-tune experto de pi0.5 (checkpoint desplegado `020000/pretrained_model/`, 9,69 GB, con estado de optimizador y planificador de 2,2 GB y tokenizador PaliGemma). Todas se entrenaron sobre el dataset `armteam/hapticwam-teleop-dataset`.
 
@@ -102,7 +102,7 @@ Alternativas externas de la misma categoría (otras políticas de manipulación 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/armteam/hapticwam-baselines
+- Repositorio en Hugging Face: https://huggingface.co/armteam/hapticwam-baselines
 - Dataset de entrenamiento: https://huggingface.co/datasets/armteam/hapticwam-teleop-dataset
 - Modelo profesor: https://huggingface.co/armteam/hapticwam-teacher
 - Modelo estudiante: https://huggingface.co/armteam/hapticwam-student

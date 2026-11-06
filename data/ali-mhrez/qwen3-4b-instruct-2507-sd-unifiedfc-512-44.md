@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-44 es un ajuste fino (fine-tune) supervisado del modelo unsloth/Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en HuggingFace. Se trata de un modelo denso de la familia Qwen3, con aproximadamente 4.000 millones de parametros, entrenado mediante SFT con la libreria TRL (version 0.24.0) sobre el stack de Transformers 5.5.0 y PyTorch 2.10.0. El repositorio se genero automaticamente con la etiqueta generated_from_trainer y esta marcado como compatible con endpoints.
+Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-44 es un ajuste fino (fine-tune) supervisado del modelo unsloth/Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en Hugging Face. Se trata de un modelo denso de la familia Qwen3, con aproximadamente 4.000 millones de parametros, entrenado mediante SFT con la libreria TRL (version 0.24.0) sobre el stack de Transformers 5.5.0 y PyTorch 2.10.0. El repositorio se genero automaticamente con la etiqueta generated_from_trainer y esta marcado como compatible con endpoints.
 
 El interes de esta ficha es limitado pero relevante: se trata de una derivacion privada, sin documentacion tecnica publicada, sin resultados de benchmarks y sin licencia declarada. El nombre del checkpoint sugiere una especializacion en function calling unificado ("UnifiedFC"), pero no hay ninguna descripcion en la model card que lo confirme. El tamano del repositorio (0,2 GB) es muy inferior a los aproximadamente 8 GB que ocuparian los pesos completos de un modelo de 4.000 millones de parametros en bfloat16, lo que apunta a que el repositorio contiene unicamente adaptadores LoRA o un subconjunto de tensores, y no un checkpoint completo listo para inferencia directa.
 
@@ -72,10 +72,10 @@ Los datos de esta tabla para los modelos comparados proceden de su documentacion
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-44 | ~4B denso (heredado) | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
-| unsloth/Qwen3-4B-Instruct-2507 (modelo base) | ~4B denso | 262.144 tokens (documentado por el autor del base) | Apache 2.0 | HuggingFace, ampliamente descargado |
-| Llama-3.2-3B-Instruct | 3,2B denso | 128.000 tokens | Llama 3.2 Community License | HuggingFace, Meta |
-| Gemma-3-4B-IT | ~4B denso | 128.000 tokens | Gemma Terms of Use | HuggingFace, Google |
+| Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-44 | ~4B denso (heredado) | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
+| unsloth/Qwen3-4B-Instruct-2507 (modelo base) | ~4B denso | 262.144 tokens (documentado por el autor del base) | Apache 2.0 | Hugging Face, ampliamente descargado |
+| Llama-3.2-3B-Instruct | 3,2B denso | 128.000 tokens | Llama 3.2 Community License | Hugging Face, Meta |
+| Gemma-3-4B-IT | ~4B denso | 128.000 tokens | Gemma Terms of Use | Hugging Face, Google |
 
 La diferencia relevante no es de parametros ni de contexto, sino de soporte: los tres modelos de referencia cuentan con model cards detalladas, evaluaciones publicadas y licencias explicitas, mientras que el checkpoint objeto de esta ficha carece de los tres elementos.
 
@@ -92,9 +92,9 @@ La diferencia relevante no es de parametros ni de contexto, sino de soporte: los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-44
+- Modelo en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-44
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Libreria TRL (framework de entrenamiento declarado): https://github.com/huggingface/trl
 - Referencia de cita de TRL: von Werra et al., "TRL: Transformer Reinforcement Learning", 2020, https://github.com/huggingface/trl
 - Paper, blog, demo o repositorio adicionales del autor: no disponibles en la informacion proporcionada.
-- Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los unicos enlaces relevantes son los del repositorio de HuggingFace y el modelo base.
+- Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los unicos enlaces relevantes son los del repositorio de Hugging Face y el modelo base.

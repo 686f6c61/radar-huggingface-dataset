@@ -75,8 +75,8 @@ No se dispone de datos de rendimiento comparativo entre estas versiones.
 
 ## Enlaces
 
-- [HuggingFace: t0rr3sp3dr0/Qwen3.6-35B-A3B-MLX-MTP-4bit](https://huggingface.co/t0rr3sp3dr0/Qwen3.6-35B-A3B-MLX-MTP-4bit)
-- [HuggingFace: Qwen/Qwen3.6-35B-A3B (modelo original)](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)
-- [HuggingFace: unsloth/Qwen3.6-35B-A3B-UD-MLX-4bit](https://huggingface.co/unsloth/Qwen3.6-35B-A3B-UD-MLX-4bit)
+- [Hugging Face: t0rr3sp3dr0/Qwen3.6-35B-A3B-MLX-MTP-4bit](https://huggingface.co/t0rr3sp3dr0/Qwen3.6-35B-A3B-MLX-MTP-4bit)
+- [Hugging Face: Qwen/Qwen3.6-35B-A3B (modelo original)](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)
+- [Hugging Face: unsloth/Qwen3.6-35B-A3B-UD-MLX-4bit](https://huggingface.co/unsloth/Qwen3.6-35B-A3B-UD-MLX-4bit)
 - [Guía de Qwen 3.6: 27B dense, 35B-A3B MoE](https://insiderllm.com/guides/qwen-3-6-local-ai-guide/)
 - [Mejor forma de ejecutar Qwen 3.6 35B MoE localmente](https://insiderllm.com/guides/best-way-run-qwen-3-6-35b-moe-locally/)

@@ -74,7 +74,7 @@ No se dispone en la información proporcionada de modelos directamente comparabl
 
 | Modelo | Categoría | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TKCAM | Generación de trayectorias de cámara (texto + keyframes) | no disponible | ventana VQ-VAE de 128 tokens; 3–11 s a 30 fps | MIT | checkpoints en HuggingFace + código en GitHub |
+| TKCAM | Generación de trayectorias de cámara (texto + keyframes) | no disponible | ventana VQ-VAE de 128 tokens; 3–11 s a 30 fps | MIT | checkpoints en Hugging Face + código en GitHub |
 | MoMask | Generación de movimiento humano (receta base) | no disponible en esta información | no disponible | MIT | código abierto (base de TKCAM) |
 | CLaTr | Evaluador contraste texto-trayectoria | no disponible | no disponible | no disponible | usado como métrica en este trabajo |
 
@@ -92,7 +92,7 @@ No se dispone en la información proporcionada de modelos directamente comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yhz-linearalgebra/TKCAM
+- Modelo en Hugging Face: https://huggingface.co/yhz-linearalgebra/TKCAM
 - Paper (arXiv:2610.11105): https://arxiv.org/abs/2610.11105
 - PDF del paper: https://arxiv.org/pdf/2610.11105
 - Código: https://github.com/linearalgebrayhz/TKCAM

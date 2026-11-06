@@ -81,10 +81,10 @@ No se dispone de datos comparativos de otros modelos en la información proporci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kaousheik/tempo-ablation-both
+- Repositorio Hugging Face: https://huggingface.co/Kaousheik/tempo-ablation-both
 - Dataset de entrenamiento: https://huggingface.co/datasets/Kaousheik/tempo
 - Modelo base Audio Flamingo 3 de NVIDIA: https://huggingface.co/nvidia/audio-flamingo-3
-- Perfil del autor en HuggingFace: https://huggingface.co/Kaousheik
+- Perfil del autor en Hugging Face: https://huggingface.co/Kaousheik
 - Página de investigación del autor: https://kaousheik-26.github.io/research/
 - Perfil de Google Scholar del autor: https://scholar.google.com/citations?user=Yc8bSDIAAAAJ&hl=en
 
@@ -167,10 +167,10 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Kaousheik/tempo-ablation-both
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Kaousheik/tempo-ablation-both
 - Dataset de entrenamiento: https://huggingface.co/datasets/Kaousheik/tempo
 - Modelo base Audio Flamingo 3: https://huggingface.co/nvidia/audio-flamingo-3
-- Perfil del autor en HuggingFace: https://huggingface.co/Kaousheik
+- Perfil del autor en Hugging Face: https://huggingface.co/Kaousheik
 - Página de investigación del autor: https://kaousheik-26.github.io/research/
 - Perfil de Google Scholar del autor: https://scholar.google.com/citations?user=Yc8bSDIAAAAJ&hl=en
 
@@ -253,10 +253,10 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Kaousheik/tempo-ablation-both)
+- [Modelo en Hugging Face](https://huggingface.co/Kaousheik/tempo-ablation-both)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/Kaousheik/tempo)
 - [Modelo base Audio Flamingo 3 de NVIDIA](https://huggingface.co/nvidia/audio-flamingo-3)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Kaousheik)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Kaousheik)
 - [Página de investigación del autor](https://kaousheik-26.github.io/research/)
 - [Google Scholar del autor](https://scholar.google.com/citations?user=Yc8bSDIAAAAJ&hl=en)</think>## Resumen
 

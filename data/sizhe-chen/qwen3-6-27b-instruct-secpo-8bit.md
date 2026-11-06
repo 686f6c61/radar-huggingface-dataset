@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sizhe-Chen/Qwen3.6-27B-Instruct-SecPO-8Bit
+- Modelo en Hugging Face: https://huggingface.co/Sizhe-Chen/Qwen3.6-27B-Instruct-SecPO-8Bit
 - Modelo fuente BF16: https://huggingface.co/Sizhe-Chen/Qwen3.6-27B-Instruct-SecPO
 - Variante con razonamiento: https://huggingface.co/Sizhe-Chen/Qwen3.6-27B-Thinking-SecOPD
 - Dataset de entrenamiento: https://huggingface.co/datasets/Sizhe-Chen/Qwen3.6-27B-Instruct-SecPO-trainset

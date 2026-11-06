@@ -40,7 +40,7 @@ No se proporciona información sobre el conjunto de datos de entrenamiento, el n
 ## Casos de uso
 
 - Pruebas de humo en pipelines de integración continua: el modelo permite verificar que el código de carga, la tokenización y el forward pass funcionan correctamente antes de integrar modelos más grandes.
-- Desarrollo de adaptadores para frameworks estándar: al ser una implementación personalizada, sirve para escribir y probar adaptadores que permitan cargar el modelo con APIs genéricas de HuggingFace.
+- Desarrollo de adaptadores para frameworks estándar: al ser una implementación personalizada, sirve para escribir y probar adaptadores que permitan cargar el modelo con APIs genéricas de Hugging Face.
 - Experimentos de arquitectura: investigadores pueden modificar la configuración (ventana deslizante, fusión bilineal, normalización) y evaluar el impacto en tareas de *matching* a pequeña escala.
 - Validación de recetas de entrenamiento: el `training_args.json` proporciona una configuración base para probar pipelines de fine-tuning con conjuntos de datos pequeños.
 - Enseñanza y aprendizaje: útil como ejemplo didáctico de una implementación CLIP minimalista y personalizada.
@@ -66,13 +66,13 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 - El checkpoint no ha sido entrenado: es una inicialización aleatoria, por lo que cualquier salida será ruido y no debe usarse en producción.
 - No ha sido auditado para robustez, equidad ni transferencia de dominio.
-- La implementación es personalizada: las APIs genéricas de HuggingFace no pueden cargarla sin un adaptador explícito.
+- La implementación es personalizada: las APIs genéricas de Hugging Face no pueden cargarla sin un adaptador explícito.
 - No se declaran idiomas soportados ni datos de entrenamiento, lo que impide evaluar su comportamiento multilingüe.
 - La licencia MIT permite uso comercial, pero los términos de los datos externos utilizados con el modelo deben revisarse por separado.
 - La fecha de creación del repositorio (2026-08-27) es posterior a la fecha actual, lo que sugiere que podría tratarse de un artefacto con metadatos inconsistentes; se recomienda verificar la autenticidad antes de usarlo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imshubhambhat/matching-2023
+- Repositorio en Hugging Face: https://huggingface.co/imshubhambhat/matching-2023
 - Workshop MATCHING 2023 (contexto del dominio, no directamente relacionado con el modelo): https://aclanthology.org/2023.matching-1.pdf
 - Paper "Matcher: Segment Anything with One Shot Using All-Purpose Feature Matching" (referencia genérica de matching, no del modelo): https://arxiv.org/abs/2305.13310

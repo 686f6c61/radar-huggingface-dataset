@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Govtugo-ASR-Sorani es un modelo de reconocimiento automatico del habla (ASR) desarrollado por RegaLabs, un laboratorio con sede en Kurdistan (Iraq) centrado en infraestructura de voz para lenguas de baja disponibilidad de recursos. El modelo se distribuye en HuggingFace bajo el identificador RegaLabs/Govtugo-ASR-Sorani y esta especializado en sorani (ckb), la variedad central del kurdo escrita en alfabeto arabe. Con 2.038.052.480 parametros (~2,04 mil millones) y pesos en safetensors, se situa en la gama de tamano de Whisper large-v3, pero con un enfoque monoingue frente al caracter multilingue del modelo de OpenAI.
+Govtugo-ASR-Sorani es un modelo de reconocimiento automatico del habla (ASR) desarrollado por RegaLabs, un laboratorio con sede en Kurdistan (Iraq) centrado en infraestructura de voz para lenguas de baja disponibilidad de recursos. El modelo se distribuye en Hugging Face bajo el identificador RegaLabs/Govtugo-ASR-Sorani y esta especializado en sorani (ckb), la variedad central del kurdo escrita en alfabeto arabe. Con 2.038.052.480 parametros (~2,04 mil millones) y pesos en safetensors, se situa en la gama de tamano de Whisper large-v3, pero con un enfoque monoingue frente al caracter multilingue del modelo de OpenAI.
 
 La arquitectura declarada en las etiquetas del repositorio es `qwen3_asr`, es decir, una adaptacion o fine-tuning sobre la familia Qwen3-ASR integrada en la libreria `transformers`, con pipeline `automatic-speech-recognition`. El repositorio ocupa 4,1 GB e incluye etiquetas especificas de transcripcion de reuniones (`meeting-transcription`) y de lenguas de bajos recursos (`low-resource-languages`), lo que sugiere un entrenamiento orientado a audio largo y conversacional mas que a clips cortos de laboratorio.
 
-Su relevancia actual reside en dos factores. Primero, la licencia Apache 2.0 permite uso comercial sin restricciones de atribucion mas alla de las habituales, algo poco frecuente en modelos ASR ajustados para lenguas minorizadas. Segundo, el acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, un detalle importante para pipelines automatizados. No se han publicado fichas de benchmarks ni detalles de composicion del dataset en la informacion disponible.
+Su relevancia actual reside en dos factores. Primero, la licencia Apache 2.0 permite uso comercial sin restricciones de atribucion mas alla de las habituales, algo poco frecuente en modelos ASR ajustados para lenguas minorizadas. Segundo, el acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, un detalle importante para pipelines automatizados. No se han publicado fichas de benchmarks ni detalles de composicion del dataset en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Su relevancia actual reside en dos factores. Primero, la licencia Apache 2.0 per
 | Libreria | transformers |
 | Pipeline | automatic-speech-recognition |
 | Tamano del repositorio | 4,1 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de publicacion | 30 de septiembre de 2026 |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
@@ -38,8 +38,8 @@ Tampoco se documentan innovaciones tecnicas especificas como decodificacion espe
 - Transcripcion de voz a texto en sorani (ckb) con salida en alfabeto arabe.
 - Reconocimiento orientado a audio largo y conversacional, segun la etiqueta `meeting-transcription`.
 - Procesamiento de audio como modalidad de entrada mediante el pipeline `automatic-speech-recognition` de `transformers`.
-- Integracion directa con el ecosistema HuggingFace: `AutoProcessor` y `AutoModelForSpeechSeq2Seq` o clase equivalente de la familia Qwen3-ASR.
-- Compatibilidad declarada con `endpoints_compatible`, lo que permite desplegarlo en Inference Endpoints de HuggingFace.
+- Integracion directa con el ecosistema Hugging Face: `AutoProcessor` y `AutoModelForSpeechSeq2Seq` o clase equivalente de la familia Qwen3-ASR.
+- Compatibilidad declarada con `endpoints_compatible`, lo que permite desplegarlo en Inference Endpoints de Hugging Face.
 - Soporte de subtitulado indirecto: al producir transcripcion con marcas temporales (si el modelo las emite) puede alimentar pipelines de generacion de subtitulos, una capacidad que RegaLabs comercializa en su plataforma.
 - Capacidades multilingues: limitadas a sorani segun la ficha; no se declaran otros idiomas.
 - Tool calling, function calling, agentes, vision, audio generation y modo thinking: no disponibles (modelo puramente ASR).
@@ -59,7 +59,7 @@ Tampoco se documentan innovaciones tecnicas especificas como decodificacion espe
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-No constan valores de WER (word error rate), CER (character error rate) ni comparaciones con otros modelos ASR en la ficha de HuggingFace ni en los resultados de busqueda consultados. Tampoco se documentan resultados en conjuntos de referencia para sorani como Common Voice ckb, FLEURS ckb o MLS. Cualquier cifra de rendimiento que se cite sobre este modelo debe proceder de una evaluacion propia.
+No constan valores de WER (word error rate), CER (character error rate) ni comparaciones con otros modelos ASR en la ficha de Hugging Face ni en los resultados de busqueda consultados. Tampoco se documentan resultados en conjuntos de referencia para sorani como Common Voice ckb, FLEURS ckb o MLS. Cualquier cifra de rendimiento que se cite sobre este modelo debe proceder de una evaluacion propia.
 
 ## Requisitos de hardware
 
@@ -68,7 +68,7 @@ No constan valores de WER (word error rate), CER (character error rate) ni compa
 - VRAM estimada en int4 (si se generan pesos GGUF o AWQ): en torno a 1,3-1,8 GB de pesos; viable en GPUs de 6-8 GB.
 - GPU recomendadas: NVIDIA A100 40/80 GB, H100 o L40S para despliegue por lotes a alta concurrencia; RTX 4090, RTX 4080, RTX 3090 o A10G para servicio de baja y media concurrencia.
 - Cabe en GPU de consumo: si, en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 y superiores en fp16; en tarjetas de 6-8 GB probablemente solo con cuantizacion int4/int8, dato no confirmado por no haber pesos cuantizados publicados.
-- Opciones de despliegue: `transformers` con pipeline de ASR, HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), y potencialmente vLLM o TGI si la familia Qwen3-ASR esta soportada por esas librerias; llama.cpp, Ollama y whisper.cpp requieren conversion previa a GGUF, no disponible en el repositorio.
+- Opciones de despliegue: `transformers` con pipeline de ASR, Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), y potencialmente vLLM o TGI si la familia Qwen3-ASR esta soportada por esas librerias; llama.cpp, Ollama y whisper.cpp requieren conversion previa a GGUF, no disponible en el repositorio.
 - Latencia y throughput: no disponibles. Como referencia de orden de magnitud, un modelo denso de ~2B parametros en una RTX 4090 suele procesar audio varias veces mas rapido que tiempo real en fp16, pero no hay medicion publicada para este modelo concreto.
 - Almacenamiento: 4,1 GB de repositorio; prever 10-15 GB libres si se descargan variantes cuantizadas adicionales.
 
@@ -76,16 +76,16 @@ No constan valores de WER (word error rate), CER (character error rate) ni compa
 
 | Modelo | Parametros | Contexto / ventana de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Govtugo-ASR-Sorani | ~2,04 B | No disponible | Sorani (ckb) | Apache 2.0 | HuggingFace, acceso restringido |
-| Whisper large-v3 | 1,55 B | Ventana fija de 30 s con chunking | ~99 idiomas, sorani no listado oficialmente | MIT | HuggingFace, abierto |
-| Whisper medium | 769 M | Ventana fija de 30 s con chunking | Multilingue, cobertura de kurdo marginal | MIT | HuggingFace, abierto |
-| Qwen3-ASR (modelo base de la familia) | No disponible | No disponible | Multilingue | No disponible | HuggingFace / API |
+| Govtugo-ASR-Sorani | ~2,04 B | No disponible | Sorani (ckb) | Apache 2.0 | Hugging Face, acceso restringido |
+| Whisper large-v3 | 1,55 B | Ventana fija de 30 s con chunking | ~99 idiomas, sorani no listado oficialmente | MIT | Hugging Face, abierto |
+| Whisper medium | 769 M | Ventana fija de 30 s con chunking | Multilingue, cobertura de kurdo marginal | MIT | Hugging Face, abierto |
+| Qwen3-ASR (modelo base de la familia) | No disponible | No disponible | Multilingue | No disponible | Hugging Face / API |
 
 La ventaja diferencial de Govtugo-ASR-Sorani es la especializacion monoingue en sorani frente a modelos generalistas cuya cobertura del kurdo es incidente y habitualmente con tasas de error elevadas. La contrapartida es la falta de benchmarks publicados, el acceso restringido y un ecosistema de herramientas mucho menor que el de Whisper. No se dispone de datos objetivos para afirmar superioridad en WER sobre ninguna de las alternativas.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que no se puede descargar en CI/CD ni en contenedores automatizados sin gestionar previamente la aceptacion de condiciones con una cuenta de HuggingFace y un token.
+- Acceso restringido: el repositorio es gated, por lo que no se puede descargar en CI/CD ni en contenedores automatizados sin gestionar previamente la aceptacion de condiciones con una cuenta de Hugging Face y un token.
 - Ausencia total de benchmarks publicados: no hay WER ni CER verificables, lo que impide estimar la calidad de transcripcion antes de desplegar. Cualquier decision de produccion deberia ir precedida de una evaluacion propia sobre datos representativos.
 - Idiomas limitados a sorani: no se declara soporte para badini, kurmanji, arabe, turco ni ingles, aunque RegaLabs ofrezca esos idiomas en otros productos. Usarlo fuera de ckb dara resultados no validados.
 - Riesgo de alucinacion en audio de baja calidad: como cualquier modelo seq2seq de ASR, puede generar texto plausible donde no hay habla clara, especialmente con ruido de fondo, musica o solapamiento de hablantes. En contextos legales o medicos esto exige revision humana.
@@ -97,7 +97,7 @@ La ventaja diferencial de Govtugo-ASR-Sorani es la especializacion monoingue en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RegaLabs/Govtugo-ASR-Sorani
+- Modelo en Hugging Face: https://huggingface.co/RegaLabs/Govtugo-ASR-Sorani
 - Documentacion de RegaLabs: https://www.regalabs.dev/en/docs
 - Producto Rega Voice (TTS y servicios de voz): https://www.regalabs.dev/en/voice
 - Modelo relacionado RegaLabs-TTS (sorani): https://huggingface.co/RegaLabs/RegaLabs-TTS/tree/main/sorani

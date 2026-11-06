@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DavidAU/Qwen3.8-40B-Ultimate es un ajuste fino (fine-tune) de la familia Qwen3.8 publicado por David Belton (DavidAU), un autor conocido en HuggingFace por acumular miles de merges y fine-tunes sobre modelos abiertos. El modelo declara como base Qwen/Qwen3.8-27B y se distribuye con 39.958.026.224 parámetros reales en safetensors (unos 40B), es decir, un modelo que ha crecido respecto a su base de 27B, presumiblemente mediante tecnicas de expansion o fusion de pesos, aunque la informacion disponible no detalla el procedimiento exacto.
+DavidAU/Qwen3.8-40B-Ultimate es un ajuste fino (fine-tune) de la familia Qwen3.8 publicado por David Belton (DavidAU), un autor conocido en Hugging Face por acumular miles de merges y fine-tunes sobre modelos abiertos. El modelo declara como base Qwen/Qwen3.8-27B y se distribuye con 39.958.026.224 parámetros reales en safetensors (unos 40B), es decir, un modelo que ha crecido respecto a su base de 27B, presumiblemente mediante tecnicas de expansion o fusion de pesos, aunque la informacion disponible no detalla el procedimiento exacto.
 
 El interes del modelo esta en su enfoque de "multi-stage tuning": el autor etiqueta el entrenamiento con tecnicas propias denominadas Cold Fusion y GAIN Training, sobre datasets propios (DavidAU/Polar-STRICT-Datasets y DavidAU/F451-STRICT-Datasets), y lo presenta como un modelo "uncensored" y "heretic" orientado a usos sin restricciones de alineamiento. Ademas, incorpora un sistema de presets declarado por el autor: 27 modos de razonamiento, 27 modos instruct, 15 "AI Constructs", 5 "Super AI Constructs" y 9 modos de razonamiento "Xhigh".
 
@@ -12,7 +12,7 @@ Es relevante ahora por dos motivos. Primero, porque se apoya en la generacion Qw
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en la informacion proporcionada; derivado de Qwen/Qwen3.8-27B (familia Qwen3.8) y etiquetado en HuggingFace con pipeline image-text-to-text |
+| Arquitectura | No disponible en la informacion proporcionada; derivado de Qwen/Qwen3.8-27B (familia Qwen3.8) y etiquetado en Hugging Face con pipeline image-text-to-text |
 | Parametros totales | 39.958.026.224 (~40B) |
 | Parametros activos | No disponible; no se indica que sea un modelo MoE |
 | Longitud de contexto | No disponible |
@@ -21,7 +21,7 @@ Es relevante ahora por dos motivos. Primero, porque se apoya en la generacion Qw
 | Licencia | Apache 2.0 (declarada en el repositorio) |
 | Formato de pesos | safetensors (libreria transformers) |
 | Tamano del repositorio | 79,9 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de publicacion | 22 de octubre de 2026 |
 
 ## Arquitectura y entrenamiento
@@ -39,7 +39,7 @@ En cuanto al entrenamiento, las etiquetas del repositorio indican un ajuste fino
 - Capacidades de agente: el Agent AI Construct sugiere soporte para flujos multi-paso guiados por prompt; no se documenta soporte nativo de tool calling ni function calling con esquemas JSON verificados.
 - Capacidades multilingues: limitadas al ingles segun el campo de idiomas del repositorio.
 - Estilo "uncensored" / "heretic": el ajuste busca reducir el rechazo de peticiones y el tono de alineamiento conservador del modelo base.
-- Entrada imagen-texto declarada por la pipeline de HuggingFace, sin detalle tecnico disponible sobre el modulo de vision.
+- Entrada imagen-texto declarada por la pipeline de Hugging Face, sin detalle tecnico disponible sobre el modulo de vision.
 
 ## Casos de uso
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) para ninguna de las
 - Sesgos: el entrenamiento se declara en ingles y sobre datasets propios del autor, sin documentacion de composicion ni de procesos de mitigacion de sesgo.
 - Limitacion idiomatica: solo ingles segun los metadatos; el rendimiento en castellano no esta evaluado y previsiblemente sera inferior.
 - Validacion practica inexistente: 1 descarga y 14 likes implican que el modelo apenas ha sido probado por terceros; no hay issues, evaluaciones ni informes de la comunidad recogidos en la informacion disponible.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a cualquier despliegue automatizado o mirror interno.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a cualquier despliegue automatizado o mirror interno.
 - Licencia: el repositorio declara Apache 2.0, pero al derivar de un modelo base de Qwen conviene verificar los terminos del modelo original antes de un uso comercial, ya que la informacion disponible no detalla esa compatibilidad.
 - Ausencia de formatos cuantizados oficiales: no hay GGUF, AWQ ni GPTQ publicados, de modo que el despliegue en hardware de consumo exige cuantizar por cuenta propia y validar la perdida de calidad.
 - Longitud de contexto desconocida: impide planificar casos de uso con documentos largos o conversaciones extensas.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) para ninguna de las
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/DavidAU/Qwen3.8-40B-Ultimate
+- Ficha del modelo en Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-40B-Ultimate
 - Perfil del autor (David Belton): https://huggingface.co/DavidAU
 - Repositorio oficial de la familia Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Articulo sobre la gama Qwen 3.8 (modelos, benchmarks, precios): https://www.lindy.ai/blog/qwen-3-8

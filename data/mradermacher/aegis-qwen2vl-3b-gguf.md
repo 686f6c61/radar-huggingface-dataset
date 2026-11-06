@@ -82,7 +82,7 @@ La comparativa se limita a datos públicos de los modelos base; no se dispone de
 
 ## Enlaces
 
-- [HuggingFace: mradermacher/aegis-qwen2vl-3b-GGUF](https://huggingface.co/mradermacher/aegis-qwen2vl-3b-GGUF)
+- [Hugging Face: mradermacher/aegis-qwen2vl-3b-GGUF](https://huggingface.co/mradermacher/aegis-qwen2vl-3b-GGUF)
 - [Modelo base: sanaX3065/aegis-qwen2vl-3b](https://huggingface.co/sanaX3065/aegis-qwen2vl-3b)
 - [Cuantizaciones imatrix: mradermacher/aegis-qwen2vl-3b-i1-GGUF](https://huggingface.co/mradermacher/aegis-qwen2vl-3b-i1-GGUF)
 - [Página de descargas de mradermacher para este modelo](https://hf.tst.eu/model#aegis-qwen2vl-3b-GGUF)

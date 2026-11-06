@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rarad/test-gguf-modified` es un repositorio de HuggingFace creado por el usuario `rarad`, que aloja un modelo en formato GGUF. Según los metadatos, el modelo tiene 619.570.176 parámetros (aproximadamente 620 millones) y un tamaño de repositorio de 0,3 GB, lo que lo sitúa en la categoría de modelos pequeños, adecuados para inferencia en hardware de consumo. Las etiquetas del repositorio incluyen `llama`, `gguf`, `conversational` y `endpoints_compatible`, y su licencia es `llama2`. Sin embargo, la información disponible es muy limitada: no se especifica la arquitectura, la longitud de contexto, los idiomas soportados ni el propósito del modelo. El nombre del repositorio (`test-gguf-modified`) sugiere que se trata de una prueba o modificación de un modelo GGUF existente, sin documentación adicional. Su relevancia actual es más como ejemplo técnico de un modelo GGUF pequeño que como una herramienta lista para producción.
+El modelo `rarad/test-gguf-modified` es un repositorio de Hugging Face creado por el usuario `rarad`, que aloja un modelo en formato GGUF. Según los metadatos, el modelo tiene 619.570.176 parámetros (aproximadamente 620 millones) y un tamaño de repositorio de 0,3 GB, lo que lo sitúa en la categoría de modelos pequeños, adecuados para inferencia en hardware de consumo. Las etiquetas del repositorio incluyen `llama`, `gguf`, `conversational` y `endpoints_compatible`, y su licencia es `llama2`. Sin embargo, la información disponible es muy limitada: no se especifica la arquitectura, la longitud de contexto, los idiomas soportados ni el propósito del modelo. El nombre del repositorio (`test-gguf-modified`) sugiere que se trata de una prueba o modificación de un modelo GGUF existente, sin documentación adicional. Su relevancia actual es más como ejemplo técnico de un modelo GGUF pequeño que como una herramienta lista para producción.
 
 ## Especificaciones técnicas
 
@@ -64,5 +64,5 @@ No disponible. No se conocen modelos comparables de la misma categoría con info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rarad/test-gguf-modified
+- Hugging Face: https://huggingface.co/rarad/test-gguf-modified
 - Recursos generales sobre formato GGUF (no específicos del modelo): https://huggingface.co/GGUF-Models

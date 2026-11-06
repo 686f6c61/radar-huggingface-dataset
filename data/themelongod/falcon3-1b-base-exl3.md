@@ -47,7 +47,7 @@ La cuantización ExLlamaV3 aplicada por TheMelonGod reduce la precisión de los 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible para esta cuantización específica. El modelo original Falcon3-1B-Base puede tener benchmarks publicados en su página de HuggingFace, pero no se incluyen en los datos proporcionados.
+No se han publicado resultados de benchmarks en la informacion disponible para esta cuantización específica. El modelo original Falcon3-1B-Base puede tener benchmarks publicados en su página de Hugging Face, pero no se incluyen en los datos proporcionados.
 
 ## Requisitos de hardware
 
@@ -80,9 +80,9 @@ Nota: los datos de Qwen2.5-1.5B y Gemma-2-2B provienen de conocimiento general y
 
 ## Enlaces
 
-- [HuggingFace - TheMelonGod/Falcon3-1B-Base-exl3](https://huggingface.co/TheMelonGod/Falcon3-1B-Base-exl3)
-- [HuggingFace - Modelo original tiiuae/Falcon3-1B-Base](https://huggingface.co/tiiuae/Falcon3-1B-Base)
-- [HuggingFace - Variante exl2 del mismo autor](https://huggingface.co/TheMelonGod/Falcon3-1B-Base-exl2)
+- [Hugging Face - TheMelonGod/Falcon3-1B-Base-exl3](https://huggingface.co/TheMelonGod/Falcon3-1B-Base-exl3)
+- [Hugging Face - Modelo original tiiuae/Falcon3-1B-Base](https://huggingface.co/tiiuae/Falcon3-1B-Base)
+- [Hugging Face - Variante exl2 del mismo autor](https://huggingface.co/TheMelonGod/Falcon3-1B-Base-exl2)
 - [Blog oficial de Falcon 3](https://falcon-lm.github.io/blog/falcon-3/)
 - [Página de Falcon 3 en falconllm.tii.ae](https://falconllm.tii.ae/falcon3/index.html)
 - [Guía de despliegue local de Falcon 3](https://falcon-lm.github.io/tutorials/falcon-3/)

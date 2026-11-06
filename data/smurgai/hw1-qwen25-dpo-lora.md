@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smurgai/hw1-qwen25-dpo-lora es un adaptador LoRA entrenado con DPO (Direct Preference Optimization) sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. Se publica como repositorio PEFT en HuggingFace, con la librería `peft` y `transformers`/`trl` como stack declarado. El nombre del repositorio ("hw1") y el tamaño del repo (0,0 GB según la API de HuggingFace) apuntan a un artefacto experimental o académico, no a un modelo de producción: registra 0 descargas y 0 "likes" en el momento de la consulta, y su model card es la plantilla por defecto sin rellenar, sin licencia, idiomas ni hiperparámetros declarados.
+smurgai/hw1-qwen25-dpo-lora es un adaptador LoRA entrenado con DPO (Direct Preference Optimization) sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. Se publica como repositorio PEFT en Hugging Face, con la librería `peft` y `transformers`/`trl` como stack declarado. El nombre del repositorio ("hw1") y el tamaño del repo (0,0 GB según la API de Hugging Face) apuntan a un artefacto experimental o académico, no a un modelo de producción: registra 0 descargas y 0 "likes" en el momento de la consulta, y su model card es la plantilla por defecto sin rellenar, sin licencia, idiomas ni hiperparámetros declarados.
 
 Técnicamente no es un modelo completo, sino un conjunto de pesos de adaptador que debe cargarse junto al base Qwen2.5-1.5B-Instruct. Por tanto, sus características funcionales (arquitectura, ventana de contexto, tokenizador, capacidades multilingües) son las del modelo base: un transformer decoder-only denso de ~1,5 mil millones de parámetros con 32.768 tokens de contexto. El aporte del adaptador es un ajuste de preferencias sobre ese base, presumiblemente para alinear estilo y formato de respuesta, sin cambiar la arquitectura ni el tamaño.
 
@@ -92,7 +92,7 @@ Los dos adaptadores de la tabla aparecen en la búsqueda web como repositorios h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smurgai/hw1-qwen25-dpo-lora
+- Modelo en Hugging Face: https://huggingface.co/smurgai/hw1-qwen25-dpo-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de `peft`: https://github.com/huggingface/peft
 - Repositorio de `trl` (implementación de DPO): https://github.com/huggingface/trl

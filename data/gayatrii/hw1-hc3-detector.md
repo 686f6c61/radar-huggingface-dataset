@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Gayatrii/hw1-hc3-detector` es un modelo publicado en HuggingFace por el usuario Gayatrii, con un total de 22.713.986 parametros segun los pesos en formato safetensors. La ficha del repositorio lo etiqueta con `bert` y `safetensors`, lo que apunta a un transformer de tipo encoder-only orientado a tareas de representacion o clasificacion, no a un modelo generativo. El repositorio ocupa 0,1 GB y acumula 7 descargas y 0 likes en el momento de la consulta.
+`Gayatrii/hw1-hc3-detector` es un modelo publicado en Hugging Face por el usuario Gayatrii, con un total de 22.713.986 parametros segun los pesos en formato safetensors. La ficha del repositorio lo etiqueta con `bert` y `safetensors`, lo que apunta a un transformer de tipo encoder-only orientado a tareas de representacion o clasificacion, no a un modelo generativo. El repositorio ocupa 0,1 GB y acumula 7 descargas y 0 likes en el momento de la consulta.
 
 Por el nombre del repositorio ("hw1", "detector") y la etiqueta `bert`, el uso mas probable es el de un clasificador binario o multiclase entrenado como ejercicio academico, posiblemente sobre datos tipo HC3 (comparativas humano vs. generado por maquina). Esta interpretacion no esta confirmada en la informacion disponible: la ficha no incluye `pipeline_tag`, ni idiomas, ni licencia, ni descripcion de la tarea.
 
@@ -64,17 +64,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia, calculada a partir del numero de parametros: ~91 MB en fp32 (22,7M x 4 bytes), ~45 MB en fp16/bf16 y ~23 MB en int8.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre es suficiente, incluidas GTX 1050 Ti, GTX 1650, RTX 3050 o superiores. Tambien es viable en CPU.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU consumer moderna e incluso en GPUs integradas, dado el reducido tamano del modelo.
-- Opciones de despliegue: al ser safetensors con arquitectura BERT, es compatible con HuggingFace Transformers, Optimum, ONNX Runtime y TorchScript. Para despliegue en servidor se puede usar Text Embeddings Inference (TEI) si se confirma que es un encoder. No se ha verificado compatibilidad con llama.cpp, Ollama o vLLM, que estan orientados a modelos generativos.
+- Opciones de despliegue: al ser safetensors con arquitectura BERT, es compatible con Hugging Face Transformers, Optimum, ONNX Runtime y TorchScript. Para despliegue en servidor se puede usar Text Embeddings Inference (TEI) si se confirma que es un encoder. No se ha verificado compatibilidad con llama.cpp, Ollama o vLLM, que estan orientados a modelos generativos.
 - Latencia y throughput estimados: no disponibles; no hay mediciones publicadas. Con este tamano, en una GPU moderna se esperarian latencias de pocos milisegundos por lote pequeno, pero es una estimacion no verificada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gayatrii/hw1-hc3-detector | 22,7M | no disponible | no disponible | no disponible | HuggingFace, 7 descargas |
-| sentence-transformers/all-MiniLM-L6-v2 | 22,7M | 256 tokens | Buen rendimiento en tareas de similitud semantica (MTEB) | Apache 2.0 | Muy extendido en HuggingFace |
-| distilbert-base-uncased | 66M | 512 tokens | Resultados publicados en GLUE | Apache 2.0 | Muy extendido en HuggingFace |
-| prajjwal1/bert-tiny | 4,4M | 512 tokens | Resultados publicados en GLUE | Apache 2.0 | Extendido en HuggingFace |
+| Gayatrii/hw1-hc3-detector | 22,7M | no disponible | no disponible | no disponible | Hugging Face, 7 descargas |
+| sentence-transformers/all-MiniLM-L6-v2 | 22,7M | 256 tokens | Buen rendimiento en tareas de similitud semantica (MTEB) | Apache 2.0 | Muy extendido en Hugging Face |
+| distilbert-base-uncased | 66M | 512 tokens | Resultados publicados en GLUE | Apache 2.0 | Muy extendido en Hugging Face |
+| prajjwal1/bert-tiny | 4,4M | 512 tokens | Resultados publicados en GLUE | Apache 2.0 | Extendido en Hugging Face |
 
 La comparativa se limita a referencias conocidas de la misma categoria (encoders pequenos). No es posible comparar el rendimiento del modelo objeto de la ficha porque no publica ninguna metrica.
 
@@ -91,5 +91,5 @@ La comparativa se limita a referencias conocidas de la misma categoria (encoders
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gayatrii/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/Gayatrii/hw1-hc3-detector
 - No se han encontrado otros enlaces (paper, blog, repositorio de codigo o demo) en la informacion disponible.

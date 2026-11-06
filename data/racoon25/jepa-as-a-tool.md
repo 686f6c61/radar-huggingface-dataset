@@ -19,7 +19,7 @@ Es relevante ahora porque ejemplifica el patrón de "world model como herramient
 | Tipos de cuantizacion | no disponible (pesos en PyTorch `.pt`; no se documentan variantes cuantizadas) |
 | Idiomas soportados | no disponible (modelo no lingüístico; procesa vídeo/imagen y vectores de acción) |
 | Licencia | MIT |
-| Formato de pesos | PyTorch (`predictor.pt`, `translator.pt`); el encoder V-JEPA 2 se obtiene aparte desde HuggingFace |
+| Formato de pesos | PyTorch (`predictor.pt`, `translator.pt`); el encoder V-JEPA 2 se obtiene aparte desde Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -73,8 +73,8 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| racoon25/jepa-as-a-tool | Predictor latente sobre V-JEPA 2 congelado | no disponible | no disponible (64 fotogramas, 256 px) | Error mediano 3,5–32,7 px según mundo y horizonte | MIT | HuggingFace + GitHub |
-| facebook/vjepa2-vitl-fpc64-256 | Encoder de vídeo auto-supervisado (ViT-L) | no disponible en la información | 64 fotogramas, 256 px | no disponible | no disponible en la información | HuggingFace |
+| racoon25/jepa-as-a-tool | Predictor latente sobre V-JEPA 2 congelado | no disponible | no disponible (64 fotogramas, 256 px) | Error mediano 3,5–32,7 px según mundo y horizonte | MIT | Hugging Face + GitHub |
+| facebook/vjepa2-vitl-fpc64-256 | Encoder de vídeo auto-supervisado (ViT-L) | no disponible en la información | 64 fotogramas, 256 px | no disponible | no disponible en la información | Hugging Face |
 | Simuladores físicos clásicos (p. ej. MuJoCo, PyBullet) | Motor de física analítico | no aplica | no aplica | Depende del modelo físico; sin error de aprendizaje | Licencias variables | Ampliamente disponibles |
 
 No se dispone en la información proporcionada de otros world models comparables con métricas equivalentes; la comparativa con alternativas de la misma categoría queda como no disponible.
@@ -93,7 +93,7 @@ No se dispone en la información proporcionada de otros world models comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/racoon25/jepa-as-a-tool
+- Modelo en Hugging Face: https://huggingface.co/racoon25/jepa-as-a-tool
 - Repositorio GitHub: https://github.com/RahulCHANDER25/jepa-as-a-tool
 - Cuaderno de entrenamiento y evaluación: https://github.com/RahulCHANDER25/jepa-as-a-tool/blob/dev/notebooks/train_and_evaluate.ipynb
 - Encoder V-JEPA 2 de Meta: https://huggingface.co/facebook/vjepa2-vitl-fpc64-256

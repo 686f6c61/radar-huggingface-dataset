@@ -93,7 +93,7 @@ La diferencia principal frente a las otras dos entradas de la tabla es el format
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OpenFlowLM/Qwen3-4B-Instruct-2507-NPU2
+- Repositorio Hugging Face: https://huggingface.co/OpenFlowLM/Qwen3-4B-Instruct-2507-NPU2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper de referencia citado en las etiquetas: arXiv:2505.09388 (https://arxiv.org/abs/2505.09388)
 - Fuente GGUF de la conversión: mradermacher/Qwen3-4B-Instruct-2507-GGUF

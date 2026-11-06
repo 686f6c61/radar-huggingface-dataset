@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ash142k4/Hinglish-1.7b-chat` es un modelo publicado en HuggingFace por el usuario ash142k4 el 10 de septiembre de 2026, bajo licencia Apache 2.0. La model card asociada contiene unicamente el bloque de metadatos con la licencia: no incluye descripcion, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso. El repositorio acumula 0 descargas y 1 like en el momento de la consulta, por lo que se trata de una publicacion sin traccion ni validacion por parte de la comunidad.
+`ash142k4/Hinglish-1.7b-chat` es un modelo publicado en Hugging Face por el usuario ash142k4 el 10 de septiembre de 2026, bajo licencia Apache 2.0. La model card asociada contiene unicamente el bloque de metadatos con la licencia: no incluye descripcion, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso. El repositorio acumula 0 descargas y 1 like en el momento de la consulta, por lo que se trata de una publicacion sin traccion ni validacion por parte de la comunidad.
 
 El unico indicio sobre su naturaleza esta en el propio nombre del repositorio: el sufijo `1.7b` apunta a un modelo de aproximadamente 1.700 millones de parametros y `chat` a un ajuste orientado a conversacion, mientras que `Hinglish` sugiere un enfoque sobre texto code-mixed hindi-ingles. Ninguno de estos extremos puede confirmarse con la informacion disponible, ya que el autor no ha documentado la ficha.
 
@@ -92,6 +92,6 @@ No es posible establecer una comparativa fiable con este modelo porque carece de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ash142k4/Hinglish-1.7b-chat
+- Hugging Face: https://huggingface.co/ash142k4/Hinglish-1.7b-chat
 - Paper, blog, repositorio o demo: no disponible
 - Los resultados de la busqueda web realizada no contienen informacion sobre este modelo: se trata de listados genericos de proyectos de vision por computador (GeeksforGeeks, Roboflow, DataCamp, GitHub Topics, Analytics Vidhya) sin relacion con el repositorio.

@@ -80,7 +80,7 @@ La cuantización AWQ INT4 mantiene la arquitectura y capacidades del modelo base
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/malaiwah/Qwen3.8-27B-AWQ-INT4-archival-63768c10
+- Repositorio Hugging Face: https://huggingface.co/malaiwah/Qwen3.8-27B-AWQ-INT4-archival-63768c10
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Qwen Cloud (API gestionada): https://www.qwencloud.com/models/qwen3.8-27b
 - Dataset de calibración (cyankiwi/calibration-medium): https://huggingface.co/datasets/cyankiwi/calibration-medium

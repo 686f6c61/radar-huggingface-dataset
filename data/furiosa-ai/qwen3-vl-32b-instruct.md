@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| furiosa-ai/Qwen3-VL-32B-Instruct | 33,36 B (denso) | no disponible | Apache 2.0 | HuggingFace, empaquetado para FuriosaAI RNGD |
-| Qwen/Qwen3-VL-32B-Instruct | 32 B (denso) | no disponible | Apache 2.0 | HuggingFace, upstream |
+| furiosa-ai/Qwen3-VL-32B-Instruct | 33,36 B (denso) | no disponible | Apache 2.0 | Hugging Face, empaquetado para FuriosaAI RNGD |
+| Qwen/Qwen3-VL-32B-Instruct | 32 B (denso) | no disponible | Apache 2.0 | Hugging Face, upstream |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada no incluye datos de rendimiento ni especificaciones de modelos comparables de otros fabricantes, por lo que la comparativa se limita al modelo upstream y a la ausencia de alternativas documentadas.
@@ -84,7 +84,7 @@ La información proporcionada no incluye datos de rendimiento ni especificacione
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/furiosa-ai/Qwen3-VL-32B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/furiosa-ai/Qwen3-VL-32B-Instruct
 - Modelo upstream: https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct
 - Documentación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
 - Guía de modelos visión-lenguaje: https://developer.furiosa.ai/latest/en/furiosa_llm/vision-language.html

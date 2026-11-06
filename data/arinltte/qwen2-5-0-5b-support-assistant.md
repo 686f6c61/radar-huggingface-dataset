@@ -2,7 +2,7 @@
 
 ## Resumen
 
-arinltte/qwen2.5-0.5b-support-assistant es un ajuste fino de Qwen/Qwen2.5-0.5B-Instruct orientado a tareas de atencion al cliente, publicado en HuggingFace y distribuido en formato MLX. Se trata de un modelo de 494.032.768 parametros (aproximadamente 0,5 mil millones) con licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. El repositorio ocupa 1,0 GB e incluye pesos en safetensors adaptados a MLX mediante mlx-lm 0.31.3.
+arinltte/qwen2.5-0.5b-support-assistant es un ajuste fino de Qwen/Qwen2.5-0.5B-Instruct orientado a tareas de atencion al cliente, publicado en Hugging Face y distribuido en formato MLX. Se trata de un modelo de 494.032.768 parametros (aproximadamente 0,5 mil millones) con licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. El repositorio ocupa 1,0 GB e incluye pesos en safetensors adaptados a MLX mediante mlx-lm 0.31.3.
 
 El interes principal de esta ficha es acotado pero claro: se trata de un modelo muy pequeno, especializado y ejecutable en hardware de consumo, pensado para entornos Apple Silicon donde se quiera procesar texto localmente sin depender de APIs externas. Por su tamano, encaja en escenarios de clasificacion, extraccion ligera y generacion de borradores, no en razonamiento complejo ni en generacion de codigo de produccion.
 
@@ -27,7 +27,7 @@ La arquitectura subyacente es la del modelo base Qwen2.5-0.5B-Instruct: un trans
 
 En cuanto al entrenamiento, las etiquetas del repositorio indican el uso de LoRA y QLoRA sobre el modelo instructivo base y un proposito declarado de atencion al cliente (customer-support), pero no se publican ni el dataset, ni el numero de tokens de entrenamiento, ni la configuracion de adaptadores, ni si hubo fases de RLHF o DPO. La model card describe unicamente la conversion de formato, sin mencionar el ajuste. Tampoco se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, modos de razonamiento, etc.).
 
-Existe una ambiguedad relevante en los metadatos: las etiquetas incluyen `base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct`, lo que en el ecosistema de HuggingFace suele indicar un repositorio de adaptadores, mientras que el recuento de parametros y el tamano del repositorio corresponden a los pesos completos de un modelo de 0,5B. Conviene verificar al cargar si se trata de pesos fusionados o de un adaptador que requiere el modelo base.
+Existe una ambiguedad relevante en los metadatos: las etiquetas incluyen `base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct`, lo que en el ecosistema de Hugging Face suele indicar un repositorio de adaptadores, mientras que el recuento de parametros y el tamano del repositorio corresponden a los pesos completos de un modelo de 0,5B. Conviene verificar al cargar si se trata de pesos fusionados o de un adaptador que requiere el modelo base.
 
 ## Capacidades
 
@@ -90,7 +90,7 @@ El principal diferenciador de este modelo no es el rendimiento, sino su formato 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arinltte/qwen2.5-0.5b-support-assistant
+- Modelo en Hugging Face: https://huggingface.co/arinltte/qwen2.5-0.5b-support-assistant
 - Modelo base Qwen/Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Libreria mlx-lm (referenciada en la model card, version 0.31.3): https://github.com/ml-explore/mlx-lm
 

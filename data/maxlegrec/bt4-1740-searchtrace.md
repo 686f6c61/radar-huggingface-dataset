@@ -39,7 +39,7 @@ El modelo es una red neuronal de ajedrez tipo **BT4** de Leela Chess Zero. Leela
 - **Integración en motores de ajedrez tipo Lc0**: los pesos convertidos a formato PyTorch se pueden utilizar para experimentar con pipelines de inferencia de Lc0 fuera de su formato nativo `.pb.gz`, facilitando la integración con frameworks de deep learning en Python.
 - **Investigación en reproducibilidad de conversión de redes**: al ser una conversión bitwise reproducible, sirve como caso de estudio para validar scripts de conversión de pesos de Leela Chess Zero a otros formatos.
 - **Análisis de posiciones y evaluación de partidas**: la red puede cargarse para evaluar posiciones de ajedrez y generar informes de ventaja o igualdad, útil en entornos de análisis de aperturas o finales sin depender de un motor completo.
-- **Pruebas de integración en CI/CD para proyectos de ajedrez**: al ser un artefacto ligero de 835 MB y descargable desde HuggingFace, puede utilizarse como fixture en pipelines de prueba de módulos de inferencia de ajedrez.
+- **Pruebas de integración en CI/CD para proyectos de ajedrez**: al ser un artefacto ligero de 835 MB y descargable desde Hugging Face, puede utilizarse como fixture en pipelines de prueba de módulos de inferencia de ajedrez.
 
 ## Benchmarks y rendimiento
 
@@ -61,13 +61,13 @@ No disponible. En la información proporcionada no se incluyen datos de otros mo
 
 - **No es un modelo de lenguaje**: cualquier uso como chatbot, generación de texto o herramienta de prompts no es aplicable y dará resultados erróneos.
 - **Licencia GPL-3.0**: cualquier distribución de software que incorpore este estado_dict queda sujeta a las obligaciones de la licencia GPL-3.0, incluyendo la disponibilidad del código fuente completo.
-- **Escasa adopción**: el repositorio y el modelo tienen 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido probado ampliamente en producción.
+- **Escasa adopción**: el repositorio y el modelo tienen 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido probado ampliamente en producción.
 - **Dependencia de un repositorio externo**: la carga del modelo requiere el módulo `tools/leela_port/model.py` del repositorio `searchtrace`; sin ese código, el `.pt` no es directamente utilizable.
 - **Documentación limitada**: no se proporcionan detalles sobre el entrenamiento, la arquitectura exacta ni el número de parámetros, lo que dificulta evaluar su idoneidad para casos de uso avanzados.
 - **Riesgo de uso fuera de ajedrez**: al ser un modelo especializado, no debe extrapolarse a otros dominios. Solo ofrece capacidades de evaluación y política de movimientos en ajedrez.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maxlegrec/bt4-1740-searchtrace
+- Modelo en Hugging Face: https://huggingface.co/Maxlegrec/bt4-1740-searchtrace
 - Repositorio `searchtrace` mencionado en la model card: github.com/maxlegrec1/searchtrace (script `scripts/convert_lc0_bt4.py` y módulo `tools/leela_port/model.py`)
-- Perfil de HuggingFace del autor: https://huggingface.co/Maxlegrec
+- Perfil de Hugging Face del autor: https://huggingface.co/Maxlegrec

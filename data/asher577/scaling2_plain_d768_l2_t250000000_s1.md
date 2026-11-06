@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asher577/scaling2_plain_d768_L2_t250000000_s1
+- Modelo en Hugging Face: https://huggingface.co/asher577/scaling2_plain_d768_L2_t250000000_s1
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/asher577/scd_scaling/runs/24ctht9h
 - Dataset de entrenamiento: https://huggingface.co/datasets/jacobcd52/simplestories-tokenized
 - Tokenizer: https://huggingface.co/SimpleStories/SimpleStories-1.25M

@@ -81,8 +81,8 @@ En la informacion proporcionada no se han encontrado otros modelos comparables d
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OmniJev/PlayJev-0.8B | 1.107.265.600 | no disponible | image-text-to-text aplicado a decision en 10 juegos | apache-2.0 | HuggingFace y GitHub |
-| Qwen/Qwen3.5-0.8B-Base | no disponible (denominacion 0,8B) | no disponible | modelo base multimodal de proposito general | no disponible | HuggingFace |
+| OmniJev/PlayJev-0.8B | 1.107.265.600 | no disponible | image-text-to-text aplicado a decision en 10 juegos | apache-2.0 | Hugging Face y GitHub |
+| Qwen/Qwen3.5-0.8B-Base | no disponible (denominacion 0,8B) | no disponible | modelo base multimodal de proposito general | no disponible | Hugging Face |
 | Otros agentes multimodales de juego | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ En la informacion proporcionada no se han encontrado otros modelos comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OmniJev/PlayJev-0.8B
+- Modelo en Hugging Face: https://huggingface.co/OmniJev/PlayJev-0.8B
 - Repositorio de codigo: https://github.com/OmniJev/PlayJev
 - Galeria y demo interactiva: https://omnijev.github.io/PlayJev/#gallery
 - Demo por juego: https://omnijev.github.io/PlayJev/?game=invaders

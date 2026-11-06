@@ -92,7 +92,7 @@ La comparacion directa relevante es contra el modelo base: ambos comparten arqui
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inference4j/qwen3-0.6b
+- Modelo en Hugging Face: https://huggingface.co/inference4j/qwen3-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio de onnxruntime-genai: https://github.com/microsoft/onnxruntime-genai
 - Libreria inference4j: https://github.com/inference4j/inference4j

@@ -98,9 +98,9 @@ El modelo ofrece un rendimiento cercano al Qwen3.8-27B (su base) con la mitad de
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/ewinregirgojr/Qwen3.8-14B-Instruct-Turbo-GGUF)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/ewinregirgojr/Qwen3.8-14B-Instruct-Turbo-GGUF)
 - [Modelo base Qwen3.8-14B-Instruct-Turbo](https://huggingface.co/ewinregirgojr/Qwen3.8-14B-Instruct-Turbo)
 - [Repositorio GitHub de Qwen3.8](https://github.com/QwenLM/Qwen3.8)
-- [Qwen3-14B en HuggingFace](https://huggingface.co/Qwen/Qwen3-14B)
+- [Qwen3-14B en Hugging Face](https://huggingface.co/Qwen/Qwen3-14B)
 - [Artículo sobre Qwen3.8 en OpenLM.ai](https://openlm.ai/qwen3.8/)
 - [Repositorio GitHub de Qwen3](https://github.com/QwenLM/Qwen3)

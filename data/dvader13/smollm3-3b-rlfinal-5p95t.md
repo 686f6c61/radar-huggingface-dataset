@@ -83,8 +83,8 @@ Segun los datos de la web, SmolLM2-3B supera en rendimiento a Llama 3.2 3B y Qwe
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/dvader13/smollm3-3b-rlfinal-5p95t
+- Repositorio de Hugging Face: https://huggingface.co/dvader13/smollm3-3b-rlfinal-5p95t
 - Repositorio oficial de SmolLM en GitHub: https://github.com/huggingface/smollm
 - Documentacion de SmolLM2 en Transformers: https://huggingface.co/docs/transformers/en/model_doc/smollm3
 - Pagina del modelo en atomic.chat: https://atomic.chat/models/smollm3-3b
-- Checkpoint de SmolLM2-3B en HuggingFace: https://huggingface.co/unsloth/SmolLM3-3B
+- Checkpoint de SmolLM2-3B en Hugging Face: https://huggingface.co/unsloth/SmolLM3-3B

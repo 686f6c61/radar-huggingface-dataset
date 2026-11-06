@@ -75,10 +75,10 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| litert-community/parakeet-redux (este) | 0,6 B | ventanas de 10/20/30 s | LiteRT `.tflite` (i4, f16, i8) | cc-by-4.0 | HuggingFace, runner Android incluido |
-| moondream/parakeet-redux | 0,6 B (178 MB ternario) | ventanas de audio, longitud no disponible | Safetensors, 8 bits | cc-by-4.0 | HuggingFace, orientado a CPU y Apple Silicon |
-| nvidia/parakeet-tdt-0.6b-v3 | 0,6 B | ventanas de audio, longitud no disponible | NeMo / Safetensors | no verificada en la información disponible | HuggingFace, modelo de referencia |
-| warped-community/parakeet-tdt-0.6b-litert-lm | no disponible | no disponible | LiteRT | no disponible | HuggingFace |
+| litert-community/parakeet-redux (este) | 0,6 B | ventanas de 10/20/30 s | LiteRT `.tflite` (i4, f16, i8) | cc-by-4.0 | Hugging Face, runner Android incluido |
+| moondream/parakeet-redux | 0,6 B (178 MB ternario) | ventanas de audio, longitud no disponible | Safetensors, 8 bits | cc-by-4.0 | Hugging Face, orientado a CPU y Apple Silicon |
+| nvidia/parakeet-tdt-0.6b-v3 | 0,6 B | ventanas de audio, longitud no disponible | NeMo / Safetensors | no verificada en la información disponible | Hugging Face, modelo de referencia |
+| warped-community/parakeet-tdt-0.6b-litert-lm | no disponible | no disponible | LiteRT | no disponible | Hugging Face |
 
 Los cuatro comparten el mismo encoder de 0,6 B y la misma tokenización; las diferencias están en el formato de pesos, el empaquetado de cuantización y el runtime de destino.
 
@@ -96,7 +96,7 @@ Los cuatro comparten el mismo encoder de 0,6 B y la misma tokenización; las dif
 
 ## Enlaces
 
-- [litert-community/parakeet-redux en HuggingFace](https://huggingface.co/litert-community/parakeet-redux)
+- [litert-community/parakeet-redux en Hugging Face](https://huggingface.co/litert-community/parakeet-redux)
 - [moondream/parakeet-redux (modelo base)](https://huggingface.co/moondream/parakeet-redux)
 - [nvidia/parakeet-tdt-0.6b-v3 (modelo original)](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3)
 - [Blog de Moondream: Introducing Parakeet Redux and Parakeet Ultra](https://moondream.ai/blog/introducing-parakeet-redux-and-ultra)

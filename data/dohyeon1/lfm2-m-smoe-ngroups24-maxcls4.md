@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LFM2-M-SMoE-ngroups24-maxcls4 es un checkpoint de generación de texto publicado en HuggingFace por el usuario Dohyeon1, construido sobre la arquitectura etiquetada como `lfm2_moe`. Se trata, por tanto, de una variante con mezcla de expertos (MoE) de la familia Liquid Foundation Models 2 (LFM2) de Liquid AI, cuyo backbone original combina convoluciones cortas con compuertas y un número reducido de bloques de atención con consultas agrupadas (GQA). El repositorio contiene 8.339.930.560 parámetros en formato `safetensors` (16,7 GB de tamaño total), lo que lo sitúa en la franja de los modelos de ~8B.
+LFM2-M-SMoE-ngroups24-maxcls4 es un checkpoint de generación de texto publicado en Hugging Face por el usuario Dohyeon1, construido sobre la arquitectura etiquetada como `lfm2_moe`. Se trata, por tanto, de una variante con mezcla de expertos (MoE) de la familia Liquid Foundation Models 2 (LFM2) de Liquid AI, cuyo backbone original combina convoluciones cortas con compuertas y un número reducido de bloques de atención con consultas agrupadas (GQA). El repositorio contiene 8.339.930.560 parámetros en formato `safetensors` (16,7 GB de tamaño total), lo que lo sitúa en la franja de los modelos de ~8B.
 
-El interés de este checkpoint es doble. Por un lado, aplica un esquema MoE sobre una arquitectura diseñada para inferencia en dispositivo (edge), lo que en teoría permite aumentar la capacidad total de parámetros sin escalar proporcionalmente el coste de cómputo por token. Por otro, el nombre del modelo sugiere una configuración concreta de expertos (24 grupos y un máximo de 4 expertos activados por token, según la nomenclatura `ngroups24-maxcls4`), aunque esta interpretación no está confirmada por el autor. No obstante, la model card es la plantilla automática de HuggingFace sin rellenar, el modelo acumula cero descargas y cero likes, y no se ha publicado información sobre datos de entrenamiento, licencia o idiomas.
+El interés de este checkpoint es doble. Por un lado, aplica un esquema MoE sobre una arquitectura diseñada para inferencia en dispositivo (edge), lo que en teoría permite aumentar la capacidad total de parámetros sin escalar proporcionalmente el coste de cómputo por token. Por otro, el nombre del modelo sugiere una configuración concreta de expertos (24 grupos y un máximo de 4 expertos activados por token, según la nomenclatura `ngroups24-maxcls4`), aunque esta interpretación no está confirmada por el autor. No obstante, la model card es la plantilla automática de Hugging Face sin rellenar, el modelo acumula cero descargas y cero likes, y no se ha publicado información sobre datos de entrenamiento, licencia o idiomas.
 
 Por todo lo anterior, esta ficha debe leerse como un inventario de lo verificable (arquitectura base, tamaño, formato) más un conjunto explícito de incógnitas. Para cualquier uso en producción sería imprescindible contactar con el autor o inspeccionar directamente los ficheros de configuración del repositorio antes de asumir comportamiento, licencia o rendimiento.
 
@@ -83,7 +83,7 @@ La comparación cuantitativa de rendimiento no es posible porque no hay benchmar
 
 ## Limitaciones y advertencias
 
-- Model card vacía: el repositorio contiene únicamente la plantilla automática de HuggingFace sin completar. No hay descripción, instrucciones de uso, plantilla de chat ni tokens especiales documentados.
+- Model card vacía: el repositorio contiene únicamente la plantilla automática de Hugging Face sin completar. No hay descripción, instrucciones de uso, plantilla de chat ni tokens especiales documentados.
 - Licencia indefinida: al no declararse licencia, no puede asumirse permiso para uso comercial, redistribución o modificación. En la práctica, esto equivale a ausencia de autorización explícita.
 - Sin evaluación: no existen resultados de benchmarks, evaluaciones de seguridad ni análisis de sesgos. Cualquier afirmación sobre calidad sería especulativa.
 - Riesgo de alucinación: desconocido en magnitud, pero no mitigado por ninguna técnica documentada (RLHF, DPO, filtros de datos). Debe asumirse un riesgo alto en usos factuales.
@@ -96,7 +96,7 @@ La comparación cuantitativa de rendimiento no es posible porque no hay benchmar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dohyeon1/LFM2-M-SMoE-ngroups24-maxcls4
+- Modelo en Hugging Face: https://huggingface.co/Dohyeon1/LFM2-M-SMoE-ngroups24-maxcls4
 - Checkpoint hermano del mismo autor: https://huggingface.co/Dohyeon1/LFM2-M-SMoE-ngroups24
 - Discusiones del modelo hermano: https://huggingface.co/Dohyeon1/LFM2-M-SMoE-ngroups24/discussions
 - Ficha de registro en Free2AITools: https://free2aitools.com/model/dohyeon1/lfm2-m-smoe-ngroups24

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `longtermrisk/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed2` es un ajuste fino (fine-tuning) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. Se trata de un modelo de generación de texto en inglés, con licencia Apache 2.0, entrenado mediante la librería Unsloth y el framework TRL de HuggingFace. El nombre del repositorio sugiere que forma parte de una serie de experimentos orientados a estudiar el "hacking de recompensas" (reward hacking) en modelos de lenguaje, probablemente con fines de investigación en alineación y seguridad.
+El modelo `longtermrisk/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed2` es un ajuste fino (fine-tuning) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. Se trata de un modelo de generación de texto en inglés, con licencia Apache 2.0, entrenado mediante la librería Unsloth y el framework TRL de Hugging Face. El nombre del repositorio sugiere que forma parte de una serie de experimentos orientados a estudiar el "hacking de recompensas" (reward hacking) en modelos de lenguaje, probablemente con fines de investigación en alineación y seguridad.
 
-Aunque el modelo base OLMo-3-7B-Instruct es un modelo de 7 mil millones de parámetros, la metadata de HuggingFace indica un valor de parámetros totales de 528.384, lo que resulta inconsistente con el tamaño del repositorio (14.6 GB) y probablemente se refiere a los parámetros entrenables de un adaptador o es un error de registro. No se dispone de información adicional sobre el dataset de entrenamiento, el método de ajuste o las capacidades específicas resultantes. Por su naturaleza experimental y la falta de documentación, este modelo debe considerarse no apto para uso en producción sin una evaluación previa exhaustiva.
+Aunque el modelo base OLMo-3-7B-Instruct es un modelo de 7 mil millones de parámetros, la metadata de Hugging Face indica un valor de parámetros totales de 528.384, lo que resulta inconsistente con el tamaño del repositorio (14.6 GB) y probablemente se refiere a los parámetros entrenables de un adaptador o es un error de registro. No se dispone de información adicional sobre el dataset de entrenamiento, el método de ajuste o las capacidades específicas resultantes. Por su naturaleza experimental y la falta de documentación, este modelo debe considerarse no apto para uso en producción sin una evaluación previa exhaustiva.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Aunque el modelo base OLMo-3-7B-Instruct es un modelo de 7 mil millones de pará
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en `unsloth/Olmo-3-7B-Instruct`, que a su vez deriva de la familia OLMo-3 de Allen Institute for AI. OLMo-3 emplea una arquitectura transformer causal estándar, con mecanismos de atención de ventana completa y normalización de capas. El ajuste fino se realizó con la librería Unsloth, que optimiza el entrenamiento mediante kernels personalizados y reducción de memoria, y con el framework TRL de HuggingFace, probablemente mediante supervisión directa (SFT). No se ha publicado información sobre el dataset, el número de tokens de entrenamiento, ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del repositorio ("school-of-reward-hacks-first-third-sft-seed2") indica que es una iteración de un experimento sobre manipulación de recompensas, pero los detalles técnicos no están disponibles.
+El modelo se basa en `unsloth/Olmo-3-7B-Instruct`, que a su vez deriva de la familia OLMo-3 de Allen Institute for AI. OLMo-3 emplea una arquitectura transformer causal estándar, con mecanismos de atención de ventana completa y normalización de capas. El ajuste fino se realizó con la librería Unsloth, que optimiza el entrenamiento mediante kernels personalizados y reducción de memoria, y con el framework TRL de Hugging Face, probablemente mediante supervisión directa (SFT). No se ha publicado información sobre el dataset, el número de tokens de entrenamiento, ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del repositorio ("school-of-reward-hacks-first-third-sft-seed2") indica que es una iteración de un experimento sobre manipulación de recompensas, pero los detalles técnicos no están disponibles.
 
 ## Capacidades
 
@@ -72,6 +72,6 @@ Dado que no se dispone de datos de rendimiento para este modelo, la comparación
 
 ## Enlaces
 
-- [HuggingFace: longtermrisk/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed2](https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed2)
+- [Hugging Face: longtermrisk/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed2](https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-first-third-sft-seed2)
 - [Modelo base: unsloth/Olmo-3-7B-Instruct](https://huggingface.co/unsloth/Olmo-3-7B-Instruct)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)

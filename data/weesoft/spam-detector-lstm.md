@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `weesoft/spam-detector-lstm` es un clasificador binario de texto (spam / legitimo) desarrollado por el usuario weesoft y publicado en HuggingFace bajo licencia MIT. Se trata de una implementacion propia basada en una red neuronal recurrente de tipo LSTM, orientada especificamente a la deteccion de correo no deseado en frances e ingles. A diferencia de los grandes modelos de lenguaje generativos, este modelo no produce texto: recibe una secuencia de hasta 200 tokens y devuelve una etiqueta de clasificacion.
+El modelo `weesoft/spam-detector-lstm` es un clasificador binario de texto (spam / legitimo) desarrollado por el usuario weesoft y publicado en Hugging Face bajo licencia MIT. Se trata de una implementacion propia basada en una red neuronal recurrente de tipo LSTM, orientada especificamente a la deteccion de correo no deseado en frances e ingles. A diferencia de los grandes modelos de lenguaje generativos, este modelo no produce texto: recibe una secuencia de hasta 200 tokens y devuelve una etiqueta de clasificacion.
 
 El repositorio se presenta como una estructura de proyecto completa para entrenar un detector de spam personalizado, e incluye un script de entrenamiento (`train.py`), la definicion de la arquitectura (`model.py`) y el dataset fusionado (`spam_dataset.csv`) con 847 correos (304 spam y 543 legitimos). La arquitectura emplea un vocabulario dinamico construido a partir de los propios datos y una capa de dropout de 0,3 como regularizacion.
 
@@ -75,7 +75,7 @@ Como referencia externa, en la busqueda web aparecen proyectos comparables de de
 | Modelo | Arquitectura | Idiomas | Dataset declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | weesoft/spam-detector-lstm | LSTM | fr, en | 847 correos (304 spam / 543 legitimos) | MIT | Repositorio sin pesos publicados |
-| lokas/lstm-spam-detector | LSTM (Keras) | en | Pequeno corpus de SMS spam/no spam en ingles | no disponible | Pesos en HuggingFace |
+| lokas/lstm-spam-detector | LSTM (Keras) | en | Pequeno corpus de SMS spam/no spam en ingles | no disponible | Pesos en Hugging Face |
 | sergio11/spam_email_classifier_lstm | Bi-LSTM | no disponible | no disponible | no disponible | Codigo en GitHub |
 | landenramsey/SpamEmailDetector | LSTM (PyTorch) | no disponible | no disponible | no disponible | Codigo en GitHub; declara 97 % de exactitud |
 
@@ -98,9 +98,9 @@ La comparativa se limita a caracteristicas generales porque los proyectos altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/weesoft/spam-detector-lstm
+- Modelo en Hugging Face: https://huggingface.co/weesoft/spam-detector-lstm
 - Proyecto de referencia Bi-LSTM en GitHub: https://github.com/sergio11/spam_email_classifier_lstm
 - Proyecto de referencia en GitHub: https://github.com/landenramsey/SpamEmailDetector
-- Modelo LSTM de spam en HuggingFace: https://huggingface.co/lokas/lstm-spam-detector
+- Modelo LSTM de spam en Hugging Face: https://huggingface.co/lokas/lstm-spam-detector
 - Articulo sobre deteccion de spam con LSTM (IEEE): https://ieeexplore.ieee.org/document/10527667
 - Articulo sobre clasificacion secuencial con LSTM (ResearchGate): https://www.researchgate.net/publication/390864855_LSTM-Powered_Spam_Detection_A_Deep_Learning_Approach_for_Sequential_Text_Classification

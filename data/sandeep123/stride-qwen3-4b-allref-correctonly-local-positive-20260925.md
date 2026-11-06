@@ -70,11 +70,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stride-qwen3-4b-allref-correctonly-local-positive-20260925 | 4.000 millones (base) + LoRA rango 16 | Entrenamiento limitado a 8.192 tokens | Adaptador LoRA de RL sobre Qwen3-4B | No disponible | Publico en HuggingFace, 0 descargas |
+| stride-qwen3-4b-allref-correctonly-local-positive-20260925 | 4.000 millones (base) + LoRA rango 16 | Entrenamiento limitado a 8.192 tokens | Adaptador LoRA de RL sobre Qwen3-4B | No disponible | Publico en Hugging Face, 0 descargas |
 | Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4.000 millones | No disponible en la informacion recogida | Transformer denso instruct | No disponible en la informacion recogida | Publico, ampliamente utilizado |
-| sandeep123/stride-qwen3-4b-stabilized-2048-local_positive-20260916 | 4.000 millones (base) + LoRA | No disponible | Adaptador STRIDE, variante estabilizada | No disponible | Publico en HuggingFace |
-| sandeep123/stride-qwen3-4b-stabilized-2048-local_positive-alpha2-20260916 | 4.000 millones (base) + LoRA | No disponible | Adaptador STRIDE con alpha 2 | No disponible | Publico en HuggingFace |
-| sandeep123/stride-qwen3-4b-stabilized-2048-token_uniform-20260916 | 4.000 millones (base) + LoRA | No disponible | Adaptador STRIDE con credito uniforme por token | No disponible | Publico en HuggingFace |
+| sandeep123/stride-qwen3-4b-stabilized-2048-local_positive-20260916 | 4.000 millones (base) + LoRA | No disponible | Adaptador STRIDE, variante estabilizada | No disponible | Publico en Hugging Face |
+| sandeep123/stride-qwen3-4b-stabilized-2048-local_positive-alpha2-20260916 | 4.000 millones (base) + LoRA | No disponible | Adaptador STRIDE con alpha 2 | No disponible | Publico en Hugging Face |
+| sandeep123/stride-qwen3-4b-stabilized-2048-token_uniform-20260916 | 4.000 millones (base) + LoRA | No disponible | Adaptador STRIDE con credito uniforme por token | No disponible | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes. La unica diferencia documentada con los checkpoints hermanos es la estrategia de asignacion de credito y el alpha de STRIDE: en este repositorio, todos los rollouts elegibles definen la novedad y solo los correctos reciben bonificacion, con alpha STRIDE de 1.
 

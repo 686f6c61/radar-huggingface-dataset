@@ -80,7 +80,7 @@ El modelo es comparable a Qwen3-30B-A3B, del que probablemente deriva, y a otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-MTP-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-MTP-i1-GGUF
 - Modelo original (Shisa AI): https://huggingface.co/shisa-ai/Ornith-1.5-35B-A3B-MTP
 - Versión Uncensored (mradermacher): https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-Uncensored-GGUF
 - Benchmarks en BenchLM: https://benchlm.ai/models/ornith-1-5-35b-a3b

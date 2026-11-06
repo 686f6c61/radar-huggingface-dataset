@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Cuantizacion | Modalidad | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MiMo-V2.6-Distill-Qwen-9B-Text-oQ4e (este) | 8,95B | 4-bit oQ4e, group size 64, MLX | Solo texto | no disponible | MIT | HuggingFace, runtime oMLX / mlx-lm |
-| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (base) | no disponible (familia 9B) | BF16 / precision completa | Multimodal (incluye vision) | no disponible | no disponible en la informacion consultada | HuggingFace, ModelScope |
-| xunlinkx/MiMo-V2.6-Distill-Qwen-9B-Ablitrated-Text-oQ4e | no disponible | 4-bit oQ4e, MLX | Solo texto | no disponible | no disponible en la informacion consultada | HuggingFace |
+| MiMo-V2.6-Distill-Qwen-9B-Text-oQ4e (este) | 8,95B | 4-bit oQ4e, group size 64, MLX | Solo texto | no disponible | MIT | Hugging Face, runtime oMLX / mlx-lm |
+| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (base) | no disponible (familia 9B) | BF16 / precision completa | Multimodal (incluye vision) | no disponible | no disponible en la informacion consultada | Hugging Face, ModelScope |
+| xunlinkx/MiMo-V2.6-Distill-Qwen-9B-Ablitrated-Text-oQ4e | no disponible | 4-bit oQ4e, MLX | Solo texto | no disponible | no disponible en la informacion consultada | Hugging Face |
 | MiMo-V2.6-Pro | no disponible | no disponible | Omnimodal | no disponible | no disponible | Publicacion de Xiaomi |
 
 La comparacion cuantitativa con alternativas de la misma categoria (por ejemplo otros modelos agénticos de ~9B en 4 bits) no esta disponible en la informacion proporcionada, ya que no se han publicado resultados de benchmarks para esta variante.
@@ -92,7 +92,7 @@ La comparacion cuantitativa con alternativas de la misma categoria (por ejemplo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xunlinkx/MiMo-V2.6-Distill-Qwen-9B-Text-oQ4e
+- Modelo en Hugging Face: https://huggingface.co/xunlinkx/MiMo-V2.6-Distill-Qwen-9B-Text-oQ4e
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Modelo base en ModelScope: https://www.modelscope.cn/models/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Pagina oficial de la familia MiMo-V2.6: https://mimo.xiaomi.com/mimo-v2-6

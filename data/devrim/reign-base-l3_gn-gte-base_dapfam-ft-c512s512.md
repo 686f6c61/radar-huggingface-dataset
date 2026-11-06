@@ -96,5 +96,5 @@ No se dispone de benchmarks comparativos directos entre estos modelos en la info
 - Pagina del proyecto: https://devrimcavusoglu.github.io/reign
 - Dataset: https://huggingface.co/datasets/devrim/goodwiki_long_synthetic_ir
 - Paper: *REIGN: Refurbished Embeddings with Integrated Guidance Networks for Efficient Context-Length Scaling*, Findings of EMNLP 2026 (to appear)
-- Modelo en HuggingFace: https://huggingface.co/devrim/reign-base-l3_gn-gte-base_dapfam-ft-c512s512
+- Modelo en Hugging Face: https://huggingface.co/devrim/reign-base-l3_gn-gte-base_dapfam-ft-c512s512
 - Red de guia (GTE-base): https://huggingface.co/thenlper/gte-base

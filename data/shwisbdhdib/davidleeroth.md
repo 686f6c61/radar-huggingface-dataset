@@ -1,7 +1,7 @@
 # Shwisbdhdib/Davidleeroth
 
 ## Resumen
-El repositorio "Shwisbdhdib/Davidleeroth" es un modelo publicado en HuggingFace por el usuario Shwisbdhdib. La unica informacion disponible en la ficha es la etiqueta de licencia openrail; no se proporciona descripcion del modelo, arquitectura, tamano, contexto ni capacidades. El repositorio fue creado el 6 de septiembre de 2026 y no registra descargas ni me gustas, lo que sugiere que se trata de un espacio sin contenido sustancial o en fase inicial.
+El repositorio "Shwisbdhdib/Davidleeroth" es un modelo publicado en Hugging Face por el usuario Shwisbdhdib. La unica informacion disponible en la ficha es la etiqueta de licencia openrail; no se proporciona descripcion del modelo, arquitectura, tamano, contexto ni capacidades. El repositorio fue creado el 6 de septiembre de 2026 y no registra descargas ni me gustas, lo que sugiere que se trata de un espacio sin contenido sustancial o en fase inicial.
 
 No es posible determinar que problema resuelve ni por que seria relevante, ya que no existen datos tecnicos publicados. La ausencia de pesos visibles, documentacion y benchmarks impide cualquier evaluacion sobre su funcionamiento o su idoneidad para tareas concretas.
 
@@ -43,4 +43,4 @@ No es posible realizar una comparativa con otros modelos, ya que no se ha public
 - Cualquier uso en produccion requeriria validacion previa, ya que no existen evidencias de funcionalidad ni de calidad.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Shwisbdhdib/Davidleeroth
+- Hugging Face: https://huggingface.co/Shwisbdhdib/Davidleeroth

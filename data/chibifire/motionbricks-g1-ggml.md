@@ -4,7 +4,7 @@
 
 MotionBricks-G1-GGML es una conversión a formato GGML/GGUF de los checkpoints de generación de movimiento de NVIDIA MotionBricks, adaptados para el robot humanoide Unitree G1. El modelo ha sido convertido por el proyecto motion-bricks.cpp, que permite ejecutar la inferencia en CPU y mediante Vulkan. No es un modelo de lenguaje: se trata de un sistema de generación de movimiento que produce poses y trayectorias de cuerpo completo para un esqueleto de 34 articulaciones.
 
-El paquete incluye los checkpoints de pose, raíz y decodificador VQ, junto con 15 primitivas de estilo que permiten variar la expresividad del movimiento generado. Según la model card, el bundle completo contiene 183.148.382 parámetros F32 aprendidos, mientras que los metadatos de HuggingFace registran 136.588.272 parámetros en safetensors. El repositorio tiene un tamaño de 0,7 GB.
+El paquete incluye los checkpoints de pose, raíz y decodificador VQ, junto con 15 primitivas de estilo que permiten variar la expresividad del movimiento generado. Según la model card, el bundle completo contiene 183.148.382 parámetros F32 aprendidos, mientras que los metadatos de Hugging Face registran 136.588.272 parámetros en safetensors. El repositorio tiene un tamaño de 0,7 GB.
 
 La relevancia de este modelo radica en que acerca un modelo de generación de movimiento de NVIDIA a un formato abierto y portable (GGUF), facilitando su uso en aplicaciones de robótica y simulación sin necesidad de infraestructura de GPU especializada. La licencia es la NVIDIA Open Model License, que impone restricciones de redistribución y uso.
 
@@ -13,7 +13,7 @@ La relevancia de este modelo radica en que acerca un modelo de generación de mo
 | Parametro | Valor |
 |---|---|
 | Arquitectura | No disponible; pipeline de generación de movimiento con checkpoints de pose, raíz y decodificador VQ |
-| Parametros totales | 136.588.272 (según metadatos de HuggingFace); el bundle completo declara 183.148.382 parámetros F32 |
+| Parametros totales | 136.588.272 (según metadatos de Hugging Face); el bundle completo declara 183.148.382 parámetros F32 |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible (modelo de generación de movimiento, no aplica contexto de texto) |
 | Tipos de cuantizacion | F32 nativo (GGUF) |
@@ -66,13 +66,13 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - Licencia restrictiva: el modelo está sujeto a la NVIDIA Open Model License; la redistribución requiere conservar el acuerdo y la atribución de NVIDIA, y no otorga derechos adicionales.
 - No es un modelo de lenguaje: no puede generar texto ni realizar tareas de razonamiento lingüístico.
 - Pesos en F32 sin cuantizar: el tamaño del archivo es mayor que el de un GGUF cuantizado, lo que puede limitar el despliegue en dispositivos con poca memoria.
-- Dependencia de pesos externos: los pesos originales se distribuyen mediante Git LFS en el repositorio de NVIDIA, no en un repositorio HuggingFace separado.
+- Dependencia de pesos externos: los pesos originales se distribuyen mediante Git LFS en el repositorio de NVIDIA, no en un repositorio Hugging Face separado.
 - Sin benchmarks publicados: no se dispone de métricas de rendimiento para comparar con otros modelos.
 - Posibles sesgos o limitaciones del modelo original no documentados: la información disponible no detalla el comportamiento en casos límite.
 
 ## Enlaces
 
-- HuggingFace (chibifire): https://huggingface.co/chibifire/MotionBricks-G1-GGML
-- HuggingFace (LocalAI-io): https://huggingface.co/LocalAI-io/MotionBricks-G1-GGML
+- Hugging Face (chibifire): https://huggingface.co/chibifire/MotionBricks-G1-GGML
+- Hugging Face (LocalAI-io): https://huggingface.co/LocalAI-io/MotionBricks-G1-GGML
 - GitHub del proyecto motion-bricks.cpp: https://github.com/localai-org/motion-bricks.cpp
 - Repositorio original de NVIDIA (revisión fijada): https://github.com/NVlabs/GR00T-WholeBodyControl/tree/a0732b642c0333077e127a2f56ab0014c196bca4/motionbricks

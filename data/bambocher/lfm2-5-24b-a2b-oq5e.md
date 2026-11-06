@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`bambocher/LFM2.5-24B-A2B-oQ5e` es un checkpoint cuantizado del modelo LFM2.5-24B-A2B, publicado por el usuario bambocher en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos a precisión mixta mediante la herramienta oQ (oMLX v0.7.1), con un promedio efectivo de 5,576 bits por peso. El resultado ocupa 16,71 GB en disco (15,562 GiB de pesos lógicos) frente a los aproximadamente 47,9 GB que requeriría el checkpoint original en BF16 para 23.972 millones de parámetros, lo que reduce el requisito de memoria en torno a un 65 %.
+`bambocher/LFM2.5-24B-A2B-oQ5e` es un checkpoint cuantizado del modelo LFM2.5-24B-A2B, publicado por el usuario bambocher en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos a precisión mixta mediante la herramienta oQ (oMLX v0.7.1), con un promedio efectivo de 5,576 bits por peso. El resultado ocupa 16,71 GB en disco (15,562 GiB de pesos lógicos) frente a los aproximadamente 47,9 GB que requeriría el checkpoint original en BF16 para 23.972 millones de parámetros, lo que reduce el requisito de memoria en torno a un 65 %.
 
-El nombre del repositorio indica que se trata de un modelo de mezcla de expertos (MoE): 24B de parámetros totales y el sufijo «A2B» sugiere del orden de 2B de parámetros activos por token, aunque este dato no se confirma en la información disponible. El tag `lfm2_moe` de HuggingFace y la arquitectura declarada en la librería MLX corroboran la familia MoE. La información proporcionada no incluye la model card del modelo base, por lo que no se pueden verificar contexto, idiomas, licencia ni datos de entrenamiento.
+El nombre del repositorio indica que se trata de un modelo de mezcla de expertos (MoE): 24B de parámetros totales y el sufijo «A2B» sugiere del orden de 2B de parámetros activos por token, aunque este dato no se confirma en la información disponible. El tag `lfm2_moe` de Hugging Face y la arquitectura declarada en la librería MLX corroboran la familia MoE. La información proporcionada no incluye la model card del modelo base, por lo que no se pueden verificar contexto, idiomas, licencia ni datos de entrenamiento.
 
 Su relevancia es acotada pero concreta: es una de las pocas conversiones de un MoE de ~24B a ~5,5 bits lista para ejecutarse con MLX en Apple Silicon, con un tamaño que encaja en equipos de memoria unificada de 24-32 GB. Con 11 descargas y 0 likes en el momento del análisis, carece por completo de validación comunitaria y no debe tratarse como un artefacto de producción sin evaluación propia.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento del modelo base ni de alternativas compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bambocher/LFM2.5-24B-A2B-oQ5e
+- Repositorio Hugging Face: https://huggingface.co/bambocher/LFM2.5-24B-A2B-oQ5e
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base LFM2.5-24B-A2B: no disponible en la información proporcionada (el repositorio no enlaza el checkpoint de origen)
 - Paper, blog o demo del modelo base: no disponible

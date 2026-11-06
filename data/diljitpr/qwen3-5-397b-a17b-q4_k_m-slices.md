@@ -98,11 +98,11 @@ Los tres repositorios contienen el mismo modelo y la misma cuantización de base
 - Licencia: Apache 2.0 permite uso comercial y modificación, pero al ser una redistribución conviene conservar la atribución a Qwen y a Unsloth tal como hace el repositorio, e incluir el archivo `LICENSE`.
 - Coste de infraestructura: 244,8 GB de descarga y almacenamiento por copia completa, y un requisito de VRAM agregada muy alto incluso repartido entre nodos.
 - Tool calling y function calling: no confirmados explícitamente en la información disponible, algo crítico si se pretende integrar el modelo en pipelines de agentes que dependan de esa función.
-- Fecha de creación del repositorio: 29 de septiembre de 2026, según los metadatos de HuggingFace.
+- Fecha de creación del repositorio: 29 de septiembre de 2026, según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/diljitpr/Qwen3.5-397B-A17B-Q4_K_M-slices
+- Repositorio en Hugging Face: https://huggingface.co/diljitpr/Qwen3.5-397B-A17B-Q4_K_M-slices
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-397B-A17B
 - Cuantización GGUF de Unsloth: https://huggingface.co/unsloth/Qwen3.5-397B-A17B-GGUF
 - Repositorio de Sangama: https://github.com/devdil/sangama
@@ -110,4 +110,4 @@ Los tres repositorios contienen el mismo modelo y la misma cuantización de base
 - Documentación de Qwen3.5-397B-A17B en Alibaba Cloud: https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-5-397b-a17b
 - Análisis de arquitectura, evaluaciones y rendimiento de inferencia (SemiAnalysis InferenceX): https://inferencex.semianalysis.com/model/qwen-3-5
 - Ficha de especificaciones de Qwen3.5 (AI/TLDR): https://ai-tldr.dev/models/qwen3-5/
-- Guía para ejecutar Qwen3.5 en local (discusión en HuggingFace): https://huggingface.co/Qwen/Qwen3.5-397B-A17B/discussions/14
+- Guía para ejecutar Qwen3.5 en local (discusión en Hugging Face): https://huggingface.co/Qwen/Qwen3.5-397B-A17B/discussions/14

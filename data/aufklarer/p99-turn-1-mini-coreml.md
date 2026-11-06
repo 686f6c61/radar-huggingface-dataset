@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks de terceros comparables en la información 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/aufklarer/P99-Turn-1-Mini-CoreML)
+- [Modelo en Hugging Face](https://huggingface.co/aufklarer/P99-Turn-1-Mini-CoreML)
 - [Modelo original p99lab/turn-1-mini](https://huggingface.co/p99lab/turn-1-mini)
 - [speech-swift (SDK de Apple)](https://github.com/soniqo/speech-swift)
 - [Guía de integración en Swift](https://soniqo.audio/guides/turn-models/#swift)

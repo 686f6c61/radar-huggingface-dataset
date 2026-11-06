@@ -2,11 +2,11 @@
 
 ## Resumen
 
-JESSISZ/CNN_numbers es un repositorio publicado en HuggingFace por el usuario JESSISZ el 12 de septiembre de 2026 (fecha de creacion registrada en la plataforma) y etiquetado con la libreria Keras. La informacion publica disponible es minima: la model card se limita a una linea de licencia (MIT) y no incluye descripcion, arquitectura declarada, datos de entrenamiento ni ejemplos de uso. El repositorio tiene un tamano de 0,0 GB, 0 descargas y 0 likes en el momento de la consulta, por lo que no se puede confirmar que contenga pesos entrenados.
+JESSISZ/CNN_numbers es un repositorio publicado en Hugging Face por el usuario JESSISZ el 12 de septiembre de 2026 (fecha de creacion registrada en la plataforma) y etiquetado con la libreria Keras. La informacion publica disponible es minima: la model card se limita a una linea de licencia (MIT) y no incluye descripcion, arquitectura declarada, datos de entrenamiento ni ejemplos de uso. El repositorio tiene un tamano de 0,0 GB, 0 descargas y 0 likes en el momento de la consulta, por lo que no se puede confirmar que contenga pesos entrenados.
 
 El nombre del identificador sugiere que se trata de una red neuronal convolucional (CNN) orientada a tareas relacionadas con numeros o digitos, pero esta interpretacion no esta respaldada por ningun documento, configuracion o fichero visible en la informacion proporcionada. No se puede determinar si es un modelo de clasificacion de digitos manuscritos, un extractor de caracteres, un modelo de reconocimiento de cifras en imagenes u otra cosa.
 
-Dado que no hay documentacion tecnica, ni resultados de benchmarks, ni metadatos de pipeline en HuggingFace, esta ficha se limita a inventariar los datos verificables y a marcar explicitamente como "no disponible" todo aquello que no puede confirmarse. Se recomienda precaucion antes de integrarlo en cualquier flujo de produccion.
+Dado que no hay documentacion tecnica, ni resultados de benchmarks, ni metadatos de pipeline en Hugging Face, esta ficha se limita a inventariar los datos verificables y a marcar explicitamente como "no disponible" todo aquello que no puede confirmarse. Se recomienda precaucion antes de integrarlo en cualquier flujo de produccion.
 
 ## Especificaciones tecnicas
 
@@ -92,7 +92,7 @@ No disponible. No se dispone de informacion suficiente (parametros, contexto, li
 - Ausencia total de model card: no hay descripcion, ejemplos, limitaciones declaradas ni informacion sobre el dataset de entrenamiento.
 - Repositorio practicamente vacio: el tamano reportado es de 0,0 GB, lo que hace dudar de la existencia de pesos entrenados descargables.
 - Sin metricas de evaluacion: no se puede estimar la precision ni la robustez del modelo en ningun escenario.
-- Sin pipeline declarado en HuggingFace: no se indica la tarea (clasificacion, generacion, etc.), lo que dificulta su uso con las utilidades estandar de la plataforma.
+- Sin pipeline declarado en Hugging Face: no se indica la tarea (clasificacion, generacion, etc.), lo que dificulta su uso con las utilidades estandar de la plataforma.
 - Riesgo de alucinacion: no aplica en el sentido de modelos generativos, pero si existe riesgo de interpretacion erronea por parte del usuario al inferir capacidades a partir del nombre del repositorio.
 - Sesgos conocidos: no disponibles; al no conocerse el dataset, no se pueden evaluar sesgos de representacion.
 - Limitaciones de contexto o idioma: no disponibles.
@@ -102,7 +102,7 @@ No disponible. No se dispone de informacion suficiente (parametros, contexto, li
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JESSISZ/CNN_numbers
+- Repositorio en Hugging Face: https://huggingface.co/JESSISZ/CNN_numbers
 - Model card del autor: https://huggingface.co/JESSISZ/CNN_numbers (contenido limitado a la linea de licencia MIT)
 - Paper asociado: no disponible
 - Repositorio de codigo: no disponible

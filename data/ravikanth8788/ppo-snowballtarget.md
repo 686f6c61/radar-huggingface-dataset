@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ravikanth8788/ppo-SnowballTarget es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno SnowballTarget, dentro del ecosistema Unity ML-Agents. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una politica entrenada para resolver una tarea concreta de control dentro de una simulacion Unity, exportada en formato ONNX para su despliegue mediante el motor de inferencia de Unity. El autor es Ravikanth8788 y el repositorio se publico en HuggingFace en septiembre de 2026.
+Ravikanth8788/ppo-SnowballTarget es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno SnowballTarget, dentro del ecosistema Unity ML-Agents. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una politica entrenada para resolver una tarea concreta de control dentro de una simulacion Unity, exportada en formato ONNX para su despliegue mediante el motor de inferencia de Unity. El autor es Ravikanth8788 y el repositorio se publico en Hugging Face en septiembre de 2026.
 
 El modelo no resuelve generacion de texto, razonamiento ni codigo. Su funcion es mapear observaciones del entorno (vectoriales, y potencialmente visuales, aunque no se especifica) a acciones discretas o continuas dentro del escenario SnowballTarget. Es relevante unicamente en el contexto de investigacion y docencia en RL: sirve como artefacto reproducible de un entrenamiento, como baseline para comparar hiperparametros y como ejemplo de publicacion de agentes ML-Agents en el Hub.
 
@@ -37,7 +37,7 @@ Tampoco se documentan los hiperparametros de PPO (learning rate, batch size, buf
 - Control de agente en el entorno SnowballTarget: selecciona acciones a partir de las observaciones que le proporciona el sensor configurado en la escena de Unity.
 - Inferencia exportada a ONNX: puede ejecutarse mediante el motor de inferencia de Unity (Barracuda o Unity Inference Engine/Sentis) y mediante ONNX Runtime.
 - Reanudacion de entrenamiento: compatible con el flujo `--resume` de `mlagents-learn` para continuar el entrenamiento desde el checkpoint publicado.
-- Visualizacion en el navegador: al estar alojado en HuggingFace, puede reproducirse con el visor de agentes de la organizacion `unity` en el Hub.
+- Visualizacion en el navegador: al estar alojado en Hugging Face, puede reproducirse con el visor de agentes de la organizacion `unity` en el Hub.
 - No dispone de tool calling, function calling ni capacidades de agente multi-paso en el sentido de los modelos de lenguaje.
 - No dispone de capacidades multilingues, de vision general, de generacion de codigo ni de matematicas.
 - No dispone de modo de razonamiento explicito (thinking mode), ni de entrada o salida de audio.
@@ -50,7 +50,7 @@ Tampoco se documentan los hiperparametros de PPO (learning rate, batch size, buf
 - Docencia de aprendizaje por refuerzo: ejemplo completo y de bajo coste computacional del ciclo entrenar-exportar-publicar en ML-Agents, util en asignaturas o talleres introductorios.
 - Pruebas de integracion de pipelines ONNX: validar la cadena de exportacion e importacion entre ML-Agents y el motor de inferencia de Unity dentro de un flujo de CI, comprobando que el grafo ONNX se carga y produce acciones validas.
 - Generacion de datos sinteticos en simulacion: ejecutar la politica como comportamiento base para poblar un entorno con trayectorias, que despues pueden usarse en aprendizaje por imitacion o en analisis de exploracion.
-- Demostraciones interactivas en navegador: incrustar el agente en una demo web mediante el visor de HuggingFace para mostrar el resultado del entrenamiento sin necesidad de instalar Unity.
+- Demostraciones interactivas en navegador: incrustar el agente en una demo web mediante el visor de Hugging Face para mostrar el resultado del entrenamiento sin necesidad de instalar Unity.
 - Evaluacion comparativa de entornos: emplear este agente como caso de estudio del comportamiento aprendido en escenarios de tipo lanzamiento y objetivo, comparandolo con politicas entrenadas en entornos similares.
 
 ## Benchmarks y rendimiento
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ravikanth8788/ppo-SnowballTarget | Politica PPO (ML-Agents, ONNX) | SnowballTarget | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
-| Agentes PPO de la organizacion `unity` en HuggingFace | Politica PPO (ML-Agents, ONNX) | Entornos oficiales de ML-Agents | no disponible | no aplica | no disponible en la informacion proporcionada | HuggingFace |
-| Otros agentes ML-Agents de terceros publicados en el Hub | Politica PPO/SAC (ML-Agents, ONNX) | Entornos personalizados | no disponible | no aplica | variable, habitualmente no declarada | HuggingFace |
+| Ravikanth8788/ppo-SnowballTarget | Politica PPO (ML-Agents, ONNX) | SnowballTarget | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
+| Agentes PPO de la organizacion `unity` en Hugging Face | Politica PPO (ML-Agents, ONNX) | Entornos oficiales de ML-Agents | no disponible | no aplica | no disponible en la informacion proporcionada | Hugging Face |
+| Otros agentes ML-Agents de terceros publicados en el Hub | Politica PPO/SAC (ML-Agents, ONNX) | Entornos personalizados | no disponible | no aplica | variable, habitualmente no declarada | Hugging Face |
 
 No se dispone de datos cuantitativos que permitan una comparacion de rendimiento entre estas alternativas. La comparacion disponible se limita al entorno objetivo, al algoritmo y al formato de exportacion.
 
@@ -89,9 +89,9 @@ No se dispone de datos cuantitativos que permitan una comparacion de rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ravikanth8788/ppo-SnowballTarget
+- Modelo en Hugging Face: https://huggingface.co/Ravikanth8788/ppo-SnowballTarget
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Documentacion de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Tutorial corto de ML-Agents y publicacion en el Hub: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo de ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Organizacion de agentes ML-Agents en HuggingFace: https://huggingface.co/unity
+- Organizacion de agentes ML-Agents en Hugging Face: https://huggingface.co/unity

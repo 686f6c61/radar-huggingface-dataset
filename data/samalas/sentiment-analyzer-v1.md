@@ -5,7 +5,7 @@ Samalas/sentiment-analyzer-v1 es un clasificador de sentimiento para publicacion
 
 El modelo se ha entrenado con 1.600 publicaciones reales etiquetadas manualmente (1.280 de entrenamiento y 320 de validacion), procedentes de Twitter, Reddit, reseñas de producto y feedback de clientes, con una distribucion de clases del 45% positivo, 35% negativo y 20% neutral. El adaptador LoRA tiene un rango 8, afecta a 20 capas y anade aproximadamente 6 millones de parametros, un 0,2% del modelo base, ocupando 9,6 MB.
 
-Es relevante ahora por su enfoque de bajo coste para una tarea muy concreta: en lugar de desplegar un LLM generalista, el autor propone un adaptador pequeno sobre una base de 3B cuantizada, pensado para ejecutarse en hardware modesto (4-6 GB de RAM) con MLX. El repositorio esta practicamente vacio en cuanto a traccion (0 descargas, 0 likes en el momento de la consulta) y no declara licencia, idiomas ni pipeline en los metadatos de HuggingFace.
+Es relevante ahora por su enfoque de bajo coste para una tarea muy concreta: en lugar de desplegar un LLM generalista, el autor propone un adaptador pequeno sobre una base de 3B cuantizada, pensado para ejecutarse en hardware modesto (4-6 GB de RAM) con MLX. El repositorio esta practicamente vacio en cuanto a traccion (0 descargas, 0 likes en el momento de la consulta) y no declara licencia, idiomas ni pipeline en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -77,9 +77,9 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Samalas/sentiment-analyzer-v1 | Adaptador LoRA sobre LLM 3B | ~3.000M base + ~6M adaptador | No disponible | No disponible | HuggingFace (0 descargas) |
-| Clasificadores tipo BERT/RoBERTa afinados para sentimiento | Transformer encoder dedicado | No disponible | No disponible | No disponible | Habitualmente en HuggingFace |
-| LLM generalista pequeno (p. ej. familia Qwen2.5-3B) | Transformer decoder-only | ~3.000M en la variante 3B | No disponible en esta ficha | No disponible en esta ficha | HuggingFace y otros repositorios |
+| Samalas/sentiment-analyzer-v1 | Adaptador LoRA sobre LLM 3B | ~3.000M base + ~6M adaptador | No disponible | No disponible | Hugging Face (0 descargas) |
+| Clasificadores tipo BERT/RoBERTa afinados para sentimiento | Transformer encoder dedicado | No disponible | No disponible | No disponible | Habitualmente en Hugging Face |
+| LLM generalista pequeno (p. ej. familia Qwen2.5-3B) | Transformer decoder-only | ~3.000M en la variante 3B | No disponible en esta ficha | No disponible en esta ficha | Hugging Face y otros repositorios |
 
 La diferencia de planteamiento es que este modelo no busca generar texto, sino resolver una tarea de clasificacion con un adaptador minimo sobre una base ya existente. No se aportan comparaciones directas medidas contra los modelos de la tabla.
 
@@ -96,10 +96,10 @@ La diferencia de planteamiento es que este modelo no busca generar texto, sino r
 - Integridad del ejemplo de uso: el fragmento de codigo de la model card carga solo el modelo base Qwen2.5-3B-Instruct-4bit sin aplicar el adaptador LoRA, por lo que no reproduce la inferencia del modelo afinado tal como esta publicado.
 - Datos de validacion limitados: las metricas de 90% de precision y F1 0,90 provienen de un conjunto de validacion de solo 320 ejemplos, sin benchmark externo independiente.
 - Traccion nula: 0 descargas y 0 likes en el momento de la consulta, sin evidencia de uso en produccion por terceros.
-- Metadatos incompletos en HuggingFace: sin pipeline declarado, sin idiomas y sin licencia, lo que dificulta la evaluacion y reutilizacion.
+- Metadatos incompletos en Hugging Face: sin pipeline declarado, sin idiomas y sin licencia, lo que dificulta la evaluacion y reutilizacion.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Samalas/sentiment-analyzer-v1
+- Hugging Face: https://huggingface.co/Samalas/sentiment-analyzer-v1
 - Modelo base referenciado en el codigo de ejemplo: https://huggingface.co/mlx-community/Qwen2.5-3B-Instruct-4bit
 - Modelo base citado en la model card: Qwen2.5-3B-Instruct
 - Libreria de inferencia: mlx-lm (pip install mlx mlx-lm)

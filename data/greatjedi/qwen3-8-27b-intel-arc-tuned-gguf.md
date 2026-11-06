@@ -112,4 +112,4 @@ Frente a alternativas de otros fabricantes del mismo orden de parámetros, no se
 - Modelo base Ridge: https://huggingface.co/empero-ai/Qwen3.8-27B-Ridge-GGUF
 - Modelo base GSQ-RCO: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
 - Identificador arXiv referenciado en las etiquetas del repositorio: https://arxiv.org/abs/2402.04396
-- Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; las únicas fuentes utilizables son la página de HuggingFace y la model card del autor.
+- Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; las únicas fuentes utilizables son la página de Hugging Face y la model card del autor.

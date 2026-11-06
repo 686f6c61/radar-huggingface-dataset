@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de tamaño s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Synapticode/bitnet-b1.58-2B-4T-tq2_0-gguf
+- Modelo en Hugging Face: https://huggingface.co/Synapticode/bitnet-b1.58-2B-4T-tq2_0-gguf
 - Modelo base de Microsoft: https://huggingface.co/microsoft/bitnet-b1.58-2B-4T-bf16
 - Repositorio de conversión (llama.cpp con parches): https://github.com/synapticode-ai/llama.cpp
 - Documentación de la conversión TQ2_0: https://github.com/synapticode-ai/llama.cpp/blob/publish/v0.1.0-prep/docs/tq2_0-anatomy.md

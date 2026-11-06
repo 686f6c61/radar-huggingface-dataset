@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Omnivoice-hindi-incremental-number-focus-20261024-gated es un modelo de síntesis de voz (text-to-speech) publicado por el usuario HimanshuPathak en HuggingFace. El identificador del repositorio sugiere un entrenamiento incremental centrado en la correcta pronunciación de números en hindi, posiblemente dentro de una familia de modelos "Omnivoice". El modelo está etiquetado para el idioma hindi (`hi`) y se distribuye en formato safetensors, con un tamaño de repositorio de 36,8 GB.
+Omnivoice-hindi-incremental-number-focus-20261024-gated es un modelo de síntesis de voz (text-to-speech) publicado por el usuario HimanshuPathak en Hugging Face. El identificador del repositorio sugiere un entrenamiento incremental centrado en la correcta pronunciación de números en hindi, posiblemente dentro de una familia de modelos "Omnivoice". El modelo está etiquetado para el idioma hindi (`hi`) y se distribuye en formato safetensors, con un tamaño de repositorio de 36,8 GB.
 
-Se trata de un modelo de acceso restringido (gated): para descargarlo es necesario aceptar las condiciones del autor en HuggingFace. En el momento de redactar esta ficha no cuenta con descargas ni "likes" públicos, y no se ha publicado información sobre arquitectura, número de parámetros, contexto ni licencia en la model card accesible.
+Se trata de un modelo de acceso restringido (gated): para descargarlo es necesario aceptar las condiciones del autor en Hugging Face. En el momento de redactar esta ficha no cuenta con descargas ni "likes" públicos, y no se ha publicado información sobre arquitectura, número de parámetros, contexto ni licencia en la model card accesible.
 
 Por tanto, esta ficha recoge únicamente los metadatos verificables del repositorio y marca explícitamente como "no disponible" cualquier dato técnico que no haya sido publicado. La relevancia actual del modelo es limitada fuera de su nicho (TTS en hindi con foco en números), y su evaluación rigurosa requerirá que el autor publique la model card completa y los pesos sean accesibles.
 
@@ -68,7 +68,7 @@ No disponible. No se dispone de información suficiente sobre parámetros, conte
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones del autor en HuggingFace antes de descargar los pesos.
+- Acceso restringido (gated): es necesario aceptar las condiciones del autor en Hugging Face antes de descargar los pesos.
 - Licencia no publicada: no puede confirmarse el uso comercial ni la redistribución; en ausencia de licencia explícita, deben asumirse restricciones.
 - Model card incompleta: no hay información sobre arquitectura, entrenamiento, datos, sesgos ni rendimiento; cualquier uso en producción requiere validación empírica propia.
 - Sesgos: desconocidos; al entrenarse presumiblemente con datos en hindi, puede reflejar sesgos dialectales, de género o de registro del corpus utilizado.
@@ -79,7 +79,7 @@ No disponible. No se dispone de información suficiente sobre parámetros, conte
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HimanshuPathak/omnivoice-hindi-incremental-number-focus-20261024-gated
+- Hugging Face: https://huggingface.co/HimanshuPathak/omnivoice-hindi-incremental-number-focus-20261024-gated
 - Paper: no disponible
 - Blog: no disponible
 - Repositorio de código: no disponible

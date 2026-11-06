@@ -47,7 +47,7 @@ No se dispone de datos sobre el conjunto de entrenamiento: no se indica numero d
 - Prototipado de interfaces text-to-image: util para probar cadenas de preprocesado de prompt, schedulers y parametros de guiado antes de decidir el modelo en produccion.
 - Pruebas de integracion de `diffusers` en infraestructura propia: permite validar carga de adaptadores, gestion de memoria y serializacion de pesos en un entorno controlado.
 - Evaluacion de riesgos y moderacion de contenido: al tratarse de un modelo sin censura, puede emplearse en entornos de investigacion para calibrar filtros de seguridad y clasificadores de contenido explicito.
-- Analisis de procedencia y trazabilidad de artefactos en HuggingFace: caso de estudio de repositorios con licencia desconocida, documentacion minima y numeracion de modelo base ambigua.
+- Analisis de procedencia y trazabilidad de artefactos en Hugging Face: caso de estudio de repositorios con licencia desconocida, documentacion minima y numeracion de modelo base ambigua.
 
 ## Benchmarks y rendimiento
 
@@ -88,7 +88,7 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/98sd7fc9sdf/fingeringMinimax
+- Repositorio en Hugging Face: https://huggingface.co/98sd7fc9sdf/fingeringMinimax
 - Archivos del repositorio: https://huggingface.co/98sd7fc9sdf/fingeringMinimax/tree/main
 - Modelo base declarado: https://huggingface.co/ponpoke/flux2-klein-9b-uncensored-text-encoder
 - Documentacion de `diffusers`: https://huggingface.co/docs/diffusers

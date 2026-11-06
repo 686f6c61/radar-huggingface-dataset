@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aswdaswdq/a` es un adaptador LoRA de text-to-image publicado en HuggingFace por el usuario `aswdaswdq`. Se trata de un ajuste fino ligero (LoRA) sobre el modelo base `krea/Krea-2-Turbo`, según declara el campo `base_model` de la model card y la etiqueta `template:diffusion-lora`. El repositorio usa la librería `diffusers` y está etiquetado con el pipeline `text-to-image`, por lo que su uso previsto es la generación de imágenes mediante prompts de texto, cargando el adaptador junto al modelo base.
+`aswdaswdq/a` es un adaptador LoRA de text-to-image publicado en Hugging Face por el usuario `aswdaswdq`. Se trata de un ajuste fino ligero (LoRA) sobre el modelo base `krea/Krea-2-Turbo`, según declara el campo `base_model` de la model card y la etiqueta `template:diffusion-lora`. El repositorio usa la librería `diffusers` y está etiquetado con el pipeline `text-to-image`, por lo que su uso previsto es la generación de imágenes mediante prompts de texto, cargando el adaptador junto al modelo base.
 
 La información publicada es mínima: la model card no incluye descripción del estilo, del dataset de entrenamiento, del prompt de instancia (`instance_prompt: null`) ni ejemplos de uso más allá de un único widget de salida. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no declara licencia ni idiomas soportados. Esto implica que cualquier evaluación de calidad debe hacerse empíricamente por parte del usuario.
 
@@ -39,7 +39,7 @@ No se ha publicado información sobre el dataset de entrenamiento (número de im
 ## Casos de uso
 
 - Prueba de concepto de generación de imágenes con `diffusers`: cargar `krea/Krea-2-Turbo` y aplicar el adaptador para comprobar si el LoRA modifica el estilo de salida; adecuado porque el repositorio sigue la plantilla estándar de LoRA de difusión.
-- Experimentación académica con adaptadores de bajo rango: usar el repositorio como ejemplo mínimo de estructura de un LoRA publicado en HuggingFace (tags, `base_model`, widget), útil para replicar el formato en otros entrenamientos.
+- Experimentación académica con adaptadores de bajo rango: usar el repositorio como ejemplo mínimo de estructura de un LoRA publicado en Hugging Face (tags, `base_model`, widget), útil para replicar el formato en otros entrenamientos.
 - Evaluación comparativa de adaptadores sobre un mismo base: al ser un LoRA, puede activarse y desactivarse sobre `krea/Krea-2-Turbo` para medir su impacto frente al modelo sin adaptador, algo que no permiten los fine-tunes completos.
 - Prototipado rápido en cuadernos (notebooks): la carga modular del adaptador permite iterar con distintos pesos y prompts sin duplicar el modelo base en disco.
 - Fijación de estilo en flujos creativos: si el LoRA captura un estilo concreto (no confirmado), podría emplearse junto al base para mantener coherencia visual en una serie de imágenes.
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `aswdaswdq/a` | LoRA text-to-image sobre Krea-2-Turbo | no disponible | no aplica | no disponible | no disponible | HuggingFace, 0 descargas |
+| `aswdaswdq/a` | LoRA text-to-image sobre Krea-2-Turbo | no disponible | no aplica | no disponible | no disponible | Hugging Face, 0 descargas |
 | `krea/Krea-2-Turbo` (base) | Modelo de difusión text-to-image | no disponible | no aplica | no disponible | no disponible | Referenciado como base |
 | LoRA genérico para SDXL (p. ej. los publicados en Tensor.Art) | LoRA text-to-image sobre SDXL | no disponible | no aplica | no disponible | variable según autor | Repositorios comunitarios |
 
@@ -81,7 +81,7 @@ No se dispone de datos objetivos para establecer una comparación cuantitativa. 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/aswdaswdq/a
+- Hugging Face del modelo: https://huggingface.co/aswdaswdq/a
 - Archivos del repositorio: https://huggingface.co/aswdaswdq/a/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - Documentación de `diffusers`: https://huggingface.co/docs/diffusers

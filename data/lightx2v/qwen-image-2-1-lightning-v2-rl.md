@@ -80,11 +80,11 @@ La comparación directa disponible es con el modelo base Qwen-Image-2.1: mismo p
 - No se documentan los idiomas soportados por el text encoder; el comportamiento multilingüe de los prompts no está garantizado.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/lightx2v/Qwen-Image-2.1-Lightning-v2-RL
+- Modelo en Hugging Face: https://huggingface.co/lightx2v/Qwen-Image-2.1-Lightning-v2-RL
 - Modelo base Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - Repositorio LightX2V en GitHub: https://github.com/ModelTC/LightX2V
 - Herramienta LightX2V RL: https://github.com/ModelTC/LightX2V/tree/main/lightx2v_rl
-- Organización LightX2V en HuggingFace: https://huggingface.co/lightx2v
+- Organización LightX2V en Hugging Face: https://huggingface.co/lightx2v
 - Sitio web del proyecto: https://x2v.light-ai.top/
 - Diffusers (instalación desde GitHub): https://github.com/huggingface/diffusers

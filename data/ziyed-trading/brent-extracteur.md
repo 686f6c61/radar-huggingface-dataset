@@ -71,5 +71,5 @@ El modelo base Qwen2.5-1.5B-Instruct tiene una licencia Apache 2.0, pero la lice
 
 ## Enlaces
 
-- [HuggingFace - Ziyed-trading/brent-extracteur](https://huggingface.co/Ziyed-trading/brent-extracteur)
+- [Hugging Face - Ziyed-trading/brent-extracteur](https://huggingface.co/Ziyed-trading/brent-extracteur)
 - [Unsloth (herramienta de entrenamiento y conversión)](https://github.com/unslothai/unsloth)

@@ -37,7 +37,7 @@ El entrenamiento no se ha realizado: el checkpoint es una inicializacion. La rec
 
 - Validacion de la implementacion: ejecutar `python train.py --help` y el bloque `__main__` para verificar que la arquitectura se instancia correctamente y que el checkpoint de inicializacion carga sin errores.
 - Punto de partida para experimentos de retrieval visual: el autor sugiere evaluar en Flickr30k con al menos tres semillas e incluir un baseline de capacidad equivalente.
-- Estudio de arquitecturas ViT personalizadas: la configuracion explicita (flash attention, fusion de bajo rango, instancenorm) permite analizar una implementacion alternativa a los ViT estandar de HuggingFace.
+- Estudio de arquitecturas ViT personalizadas: la configuracion explicita (flash attention, fusion de bajo rango, instancenorm) permite analizar una implementacion alternativa a los ViT estandar de Hugging Face.
 - Desarrollo de un pipeline de entrenamiento: el script y la configuracion pueden adaptarse para entrenar el modelo desde cero con un dataset propio.
 - Pruebas de integracion en entornos CI/CD: al ser un checkpoint minimo, puede usarse para verificar que un pipeline de entrenamiento o evaluacion funciona correctamente antes de lanzar experimentos costosos.
 - Educacion e investigacion: como ejemplo didactico de una implementacion ViT compacta con configuracion explicita y reproducible.
@@ -56,14 +56,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es un modelo entrenado, sino una implementacion de referencia con un checkpoint de inicializacion. No existen modelos comparables en la misma categoria (ViT de 33K parametros para retrieval) con los que establecer una comparacion significativa. Los ViT estandar de HuggingFace (como `google/vit-base-patch16-224`) tienen alrededor de 86 millones de parametros y estan entrenados, por lo que no son comparables en proposito ni en estado.
+No disponible. Este repositorio no es un modelo entrenado, sino una implementacion de referencia con un checkpoint de inicializacion. No existen modelos comparables en la misma categoria (ViT de 33K parametros para retrieval) con los que establecer una comparacion significativa. Los ViT estandar de Hugging Face (como `google/vit-base-patch16-224`) tienen alrededor de 86 millones de parametros y estan entrenados, por lo que no son comparables en proposito ni en estado.
 
 ## Limitaciones y advertencias
 
 - El checkpoint no ha sido entrenado: no tiene capacidad de inferencia util y no debe usarse en produccion.
 - No ha sido auditado para robustez, equidad ni transferencia de dominio, segun declara el autor.
 - Riesgo de alucinacion: no aplicable, al no generar texto.
-- La implementacion es personalizada: las APIs genericas de carga automatica de HuggingFace no funcionaran sin un adaptador explicito.
+- La implementacion es personalizada: las APIs genericas de carga automatica de Hugging Face no funcionaran sin un adaptador explicito.
 - La licencia Apache-2.0 cubre el codigo y el checkpoint, pero el autor advierte que deben revisarse los terminos de las fuentes de datos externas si se usa con datasets como Flickr30k.
 - No hay garantias de rendimiento ni de que la arquitectura sea adecuada para tareas de retrieval sin un entrenamiento completo.
 

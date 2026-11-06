@@ -2,7 +2,7 @@
 
 ## Resumen
 
-eng-latn-10mb-ppt-Dp-100mb-packednew_seed3407 es un modelo de generacion de texto de muy pequeno tamano (39.087.104 parametros, unos 39,1 millones) publicado por el usuario fpadovani en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo base goldfish-models/eng_latn_10mb, un modelo de la familia Goldfish orientada a estudiar el aprendizaje de modelos pequenos con volumenes de datos muy reducidos. El ajuste se ha realizado mediante SFT (supervised fine-tuning) utilizando la libreria TRL.
+eng-latn-10mb-ppt-Dp-100mb-packednew_seed3407 es un modelo de generacion de texto de muy pequeno tamano (39.087.104 parametros, unos 39,1 millones) publicado por el usuario fpadovani en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo base goldfish-models/eng_latn_10mb, un modelo de la familia Goldfish orientada a estudiar el aprendizaje de modelos pequenos con volumenes de datos muy reducidos. El ajuste se ha realizado mediante SFT (supervised fine-tuning) utilizando la libreria TRL.
 
 La relevancia de esta ficha es acotada: no es un modelo de proposito general ni compite con LLMs actuales, sino una pieza de experimentacion dentro de un estudio de investigacion sobre empaquetado (packing) de datos y entrenamiento de modelos pequenos (el nombre sugiere variantes sobre "packed" y semillas concretas, seed3407). El repositorio ocupa apenas 0,1 GB y esta etiquetado con gpt2, safetensors y text-generation-inference, lo que indica una arquitectura basada en GPT-2 y pesos en formato safetensors.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| eng-latn-10mb-ppt-Dp-100mb-packednew_seed3407 (este modelo) | 39,1 M | no disponible | no disponible | HuggingFace |
-| goldfish-models/eng_latn_10mb (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
-| gpt2 (referencia de la misma arquitectura) | 124 M | 1.024 tokens | MIT | HuggingFace |
+| eng-latn-10mb-ppt-Dp-100mb-packednew_seed3407 (este modelo) | 39,1 M | no disponible | no disponible | Hugging Face |
+| goldfish-models/eng_latn_10mb (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
+| gpt2 (referencia de la misma arquitectura) | 124 M | 1.024 tokens | MIT | Hugging Face |
 
 La comparativa se limita al modelo base y a gpt2 como referencia arquitectonica. No se dispone de datos de rendimiento del modelo ni de sus alternativas dentro de esta informacion, por lo que no es posible establecer una comparacion cuantitativa fiable.
 
@@ -81,7 +81,7 @@ La comparativa se limita al modelo base y a gpt2 como referencia arquitectonica.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-latn-10mb-ppt-Dp-100mb-packednew_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-latn-10mb-ppt-Dp-100mb-packednew_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_10mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/packing_languages/runs/sk9wp3h4

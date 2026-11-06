@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`blaj/LFM2.5-8B-A1B-heretic-int8-ov` es una conversión a OpenVINO IR en int8 del modelo `Dingdust/LFM2.5-8B-A1B-heretic`, que a su vez es una versión "abliterated" (decensored) de `LiquidAI/LFM2.5-8B-A1B` de Liquid AI. El resultado es un modelo de generación de texto con pesos cuantizados a 8 bits asimétricos, empaquetados en el formato de grafo intermedio de OpenVINO, pensado para inferencia local sobre hardware Intel (CPU, GPU integrada Arc e Infinity Arc) y servidores OpenVINO Model Server. El repositorio ocupa 8,0 GB (8,5 GB según los metadatos de HuggingFace) y se distribuye bajo la LFM Open License v1.0.
+`blaj/LFM2.5-8B-A1B-heretic-int8-ov` es una conversión a OpenVINO IR en int8 del modelo `Dingdust/LFM2.5-8B-A1B-heretic`, que a su vez es una versión "abliterated" (decensored) de `LiquidAI/LFM2.5-8B-A1B` de Liquid AI. El resultado es un modelo de generación de texto con pesos cuantizados a 8 bits asimétricos, empaquetados en el formato de grafo intermedio de OpenVINO, pensado para inferencia local sobre hardware Intel (CPU, GPU integrada Arc e Infinity Arc) y servidores OpenVINO Model Server. El repositorio ocupa 8,0 GB (8,5 GB según los metadatos de Hugging Face) y se distribuye bajo la LFM Open License v1.0.
 
 La arquitectura de partida es `Lfm2MoeForCausalLM`, un transformer de tipo mezcla de expertos (MoE) con 24 capas. La nomenclatura del modelo indica 8B de parámetros totales y aproximadamente 1B activos por token, si bien la model card no confirma explícitamente esas cifras. La longitud de contexto y los idiomas soportados no se declaran en la información disponible.
 
@@ -20,12 +20,12 @@ Su relevancia es doble. Por un lado, documenta una ruta de conversión en dos et
 | Idiomas soportados | no disponible |
 | Licencia | LFM Open License v1.0 (`license: other`, `license_name: lfm1.0`) |
 | Formato de pesos | OpenVINO IR (`openvino_model.xml` + `openvino_model.bin`) |
-| Tamaño del repositorio | 8,0 GB según la model card; 8,5 GB según metadatos de HuggingFace |
+| Tamaño del repositorio | 8,0 GB según la model card; 8,5 GB según metadatos de Hugging Face |
 | Biblioteca | openvino (`openvino_genai`) |
 | Pipeline | text-generation |
 | Modelo base | `Dingdust/LFM2.5-8B-A1B-heretic`, derivado de `LiquidAI/LFM2.5-8B-A1B` |
 | Descargas / likes | 0 / 0 |
-| Fecha de publicación | 2026-09-20 (metadatos de HuggingFace) |
+| Fecha de publicación | 2026-09-20 (metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -97,11 +97,11 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para com
 - Licencia LFM Open License v1.0: permite la redistribución, pero incluye un umbral de uso comercial que aplica a esta obra derivada. Es necesario revisar el fichero `LICENSE` incluido antes de explotarlo comercialmente.
 - Repositorio sin adopción comunitaria (0 descargas, 0 likes), sin validación independiente de su funcionamiento más allá de las pruebas del autor.
 - El proceso de conversión documentado depende de versiones concretas (`transformers==5.4.0` como requisito del gate de exportación) y falla con OOM si no se limita el número de hilos OpenMP.
-- La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; toda la información procede de la model card y de los metadatos de HuggingFace.
+- La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; toda la información procede de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blaj/LFM2.5-8B-A1B-heretic-int8-ov
+- Modelo en Hugging Face: https://huggingface.co/blaj/LFM2.5-8B-A1B-heretic-int8-ov
 - Variante int4 del mismo autor: https://huggingface.co/blaj/LFM2.5-8B-A1B-heretic-int4-ov
 - Modelo base abliterated: https://huggingface.co/Dingdust/LFM2.5-8B-A1B-heretic
 - Modelo original de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B

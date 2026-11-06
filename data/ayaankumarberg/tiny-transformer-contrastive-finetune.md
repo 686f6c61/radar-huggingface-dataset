@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ayaankumarberg/tiny-transformer-contrastive-finetune` es un repositorio experimental publicado en HuggingFace que contiene un transformer de tamano diminuto orientado a aprendizaje contrastivo. El autor, `ayaankumarberg`, lo presenta explicitamente como un punto de partida de investigacion y no como un modelo entrenado: la model card indica que `model.safetensors` es "un checkpoint de inicializacion valido para pruebas de humo" y que no se reclama ninguna puntuacion de benchmark. El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado el 27 de septiembre de 2026.
+`ayaankumarberg/tiny-transformer-contrastive-finetune` es un repositorio experimental publicado en Hugging Face que contiene un transformer de tamano diminuto orientado a aprendizaje contrastivo. El autor, `ayaankumarberg`, lo presenta explicitamente como un punto de partida de investigacion y no como un modelo entrenado: la model card indica que `model.safetensors` es "un checkpoint de inicializacion valido para pruebas de humo" y que no se reclama ninguna puntuacion de benchmark. El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado el 27 de septiembre de 2026.
 
 El peso real del checkpoint segun los metadatos de safetensors es de 49.600 parametros, una magnitud propia de un ejercicio didactico o de una prueba de arquitectura, no de un modelo apto para generacion de texto en produccion. La model card declara una arquitectura "Tiny Transformer" con atencion sparse, fusion tucker, activacion GELU y normalizacion LayerNorm, aunque etiqueta el "escala" como "giant", una etiqueta que contradice el recuento real de parametros y que probablemente sea un valor de plantilla sin ajustar.
 
@@ -20,7 +20,7 @@ Su relevancia es, por tanto, limitada al ambito de la experimentacion reproducib
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 | Estado del checkpoint | Inicializacion aleatoria, sin entrenar (segun la propia model card) |
-| Tamano del repositorio | 0,0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun metadatos de Hugging Face) |
 | Fecha de creacion / actualizacion | 2026-09-27 / 2026-09-27 |
 
 ## Arquitectura y entrenamiento
@@ -88,9 +88,9 @@ Los tres primeros comparten categoria (transformers diminutos con etiqueta contr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ayaankumarberg/tiny-transformer-contrastive-finetune
-- Alternativa similar (HuggingFace): https://huggingface.co/ywivanov36/contrastive
-- Alternativa similar (HuggingFace): https://huggingface.co/Buffalorobotics/tiny-transformer-contrastive
+- Modelo en Hugging Face: https://huggingface.co/ayaankumarberg/tiny-transformer-contrastive-finetune
+- Alternativa similar (Hugging Face): https://huggingface.co/ywivanov36/contrastive
+- Alternativa similar (Hugging Face): https://huggingface.co/Buffalorobotics/tiny-transformer-contrastive
 - Repositorio GitHub relacionado (transformer tipo GPT entrenable en GPU de consumo): https://github.com/avvorstenbosch/tinyTransformer
 - Repositorio GitHub relacionado (transformer minimo con encoder y decoder): https://github.com/skolouri/TinyTransformer
 - Articulo de contexto sobre modelos tipo "clone" y aprendizaje contrastivo (latent.space): https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in

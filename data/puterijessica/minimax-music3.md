@@ -4,7 +4,7 @@
 
 MiniMax Music 3 es un modelo de generación musical de texto a audio desarrollado por MiniMax AI, diseñado para crear canciones completas de hasta cinco minutos de duración. A diferencia de otros generadores que producen clips cortos, este modelo mantiene coherencia estructural a lo largo de toda la pieza, incluyendo secciones como intro, verso, pre-coro, coro, puente, interludio instrumental y outro. Se condiciona mediante dos entradas complementarias: letras con etiquetas de sección explícitas y una descripción musical detallada que especifica género, BPM, tonalidad, progresión emocional, características vocales y arreglo instrumental.
 
-La arquitectura es jerárquica e híbrida: combina un LLM global de 8B parámetros (inicializado desde Qwen3-8B) que modela la estructura musical a largo plazo, un LLM local de 0.6B que restaura los detalles acústicos por frame, y un sistema de síntesis de estado oculto continuo basado en Flow Matching (2.4B) y un decodificador Flow-VAE (123M). El resultado es audio WAV estéreo de 32 kHz y 16 bits. El repositorio en HuggingFace contiene 2.431.905.920 parámetros en safetensors (67.2 GB), aunque la arquitectura completa supera los 11B parámetros, lo que sugiere que el repo puede contener solo una parte de los pesos o una versión cuantizada.
+La arquitectura es jerárquica e híbrida: combina un LLM global de 8B parámetros (inicializado desde Qwen3-8B) que modela la estructura musical a largo plazo, un LLM local de 0.6B que restaura los detalles acústicos por frame, y un sistema de síntesis de estado oculto continuo basado en Flow Matching (2.4B) y un decodificador Flow-VAE (123M). El resultado es audio WAV estéreo de 32 kHz y 16 bits. El repositorio en Hugging Face contiene 2.431.905.920 parámetros en safetensors (67.2 GB), aunque la arquitectura completa supera los 11B parámetros, lo que sugiere que el repo puede contener solo una parte de los pesos o una versión cuantizada.
 
 ## Especificaciones tecnicas
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - No se han publicado requisitos oficiales de hardware en la información disponible.
 - El repositorio ocupa 67.2 GB, lo que sugiere que la inferencia requiere una GPU con al menos 80 GB de VRAM para cargar los pesos completos en FP16 (aproximadamente 22 GB para los 11B parámetros, más overhead de activaciones y el modelo Flow Matching).
 - Para uso en consumer GPU (RTX 4090 con 24 GB), sería necesaria cuantización a 8 bits o 4 bits, aunque no se han publicado versiones GGUF ni cuantizadas.
-- Opciones de despliegue: el pipeline está basado en diffusers, por lo que es compatible con la infraestructura de HuggingFace. Se menciona sglang-omni en los tags, lo que sugiere soporte para inferencia optimizada con SGLang, aunque no hay documentación detallada.
+- Opciones de despliegue: el pipeline está basado en diffusers, por lo que es compatible con la infraestructura de Hugging Face. Se menciona sglang-omni en los tags, lo que sugiere soporte para inferencia optimizada con SGLang, aunque no hay documentación detallada.
 - La latencia y el throughput no están documentados; la generación de cinco minutos de audio probablemente requiere varios minutos de cómputo en GPU de alta gama.
 
 ## Comparativa con modelos similares
@@ -70,8 +70,8 @@ No se dispone de datos comparativos publicados con otros modelos de generación 
 
 ## Enlaces
 
-- Repositorio HuggingFace (mirror): https://huggingface.co/puterijessica/MiniMax-Music3
-- Repositorio HuggingFace oficial: https://huggingface.co/MiniMaxAI/MiniMax-Music3
+- Repositorio Hugging Face (mirror): https://huggingface.co/puterijessica/MiniMax-Music3
+- Repositorio Hugging Face oficial: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - GitHub oficial: https://github.com/MiniMax-AI/MiniMax-Music3
 - Demo interactiva: https://minimax-ai.github.io/music3-demo/
 - Página de herramientas (terceros): https://minimax3.com/tools/minimax-music-3

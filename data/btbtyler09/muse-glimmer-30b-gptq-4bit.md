@@ -80,8 +80,8 @@ Unicas comprobaciones funcionales reportadas (servidas con vLLM, tensor parallel
 
 | Modelo | Parametros | Contexto | Precision de pesos | Tamano en disco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| btbtyler09/Muse-Glimmer-30B-GPTQ-4bit | 29,78B (denso, multimodal) | Hasta 65.536 tokens en configuracion vLLM | INT4 GPTQ (vision y embeddings en BF16) | ~23 GB | Apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| meta-models/Muse-Glimmer-30B (modelo base) | 29,78B (denso, multimodal) | No disponible | BF16 | 59,6 GB | Apache-2.0 con `USAGE_POLICY.md` | HuggingFace |
+| btbtyler09/Muse-Glimmer-30B-GPTQ-4bit | 29,78B (denso, multimodal) | Hasta 65.536 tokens en configuracion vLLM | INT4 GPTQ (vision y embeddings en BF16) | ~23 GB | Apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| meta-models/Muse-Glimmer-30B (modelo base) | 29,78B (denso, multimodal) | No disponible | BF16 | 59,6 GB | Apache-2.0 con `USAGE_POLICY.md` | Hugging Face |
 | Alternativas de la misma categoria (otros modelos multimodales densos de ~30B) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento de ninguno de los modelos comparados, por lo que no es posible establecer una comparacion cuantitativa.
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos comparados, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/btbtyler09/Muse-Glimmer-30B-GPTQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/btbtyler09/Muse-Glimmer-30B-GPTQ-4bit
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Revision del modelo base usada en la cuantizacion: `a4e59da52a7bc87ae7251dd5545c0dd437c44b68`
 - GPTQModel: https://github.com/modelcloud/gptqmodel

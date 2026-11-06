@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo firzahdzm/tourn-803a8f69-instructtext-hyper-s2cpre es un modelo de lenguaje publicado en HuggingFace por el usuario firzahdzm, con 1.170.340.608 parametros totales confirmados a partir de los pesos en formato safetensors y un repositorio de 2,3 GB (coherente con pesos en BF16/FP16). Se distribuye sin model card y sin pipeline declarado, por lo que la informacion publica disponible es minima.
+El modelo firzahdzm/tourn-803a8f69-instructtext-hyper-s2cpre es un modelo de lenguaje publicado en Hugging Face por el usuario firzahdzm, con 1.170.340.608 parametros totales confirmados a partir de los pesos en formato safetensors y un repositorio de 2,3 GB (coherente con pesos en BF16/FP16). Se distribuye sin model card y sin pipeline declarado, por lo que la informacion publica disponible es minima.
 
 El unico indicio sobre su arquitectura es la etiqueta "lfm2" incluida en los tags del repositorio, que apunta a la familia LFM2 (Liquid Foundation Models 2, arquitectura hibrida con capas convolucionales y de atencion desarrollada por Liquid AI). No obstante, esta etiqueta no viene acompanada de documentacion que la confirme, y el autor ha publicado otros repositorios bajo convenciones de nombre similares ("tourn-...-instructtext-...") con etiquetas distintas como "granite", lo que sugiere un pipeline interno de generacion o ajuste de modelos mas que una arquitectura homogenea.
 
@@ -68,8 +68,8 @@ La informacion disponible solo permite comparar con otros repositorios del mismo
 | Modelo | Parametros | Formato | Etiqueta | Licencia | Descargas/likes |
 |---|---|---|---|---|---|
 | firzahdzm/tourn-803a8f69-instructtext-hyper-s2cpre | 1,17 B | safetensors | lfm2 | no disponible | 10 / 0 |
-| firzahdzm/tourn-803a8f69-instructtext-hyper-g2gcpre | 3 B (segun HuggingFace) | safetensors, BF16 | granite | no disponible | no disponible |
-| firzahdzm/tourn-803a8f69-instructtext-hyper-g2gc | 3 B (segun HuggingFace) | safetensors, BF16 | granite | no disponible | no disponible |
+| firzahdzm/tourn-803a8f69-instructtext-hyper-g2gcpre | 3 B (segun Hugging Face) | safetensors, BF16 | granite | no disponible | no disponible |
+| firzahdzm/tourn-803a8f69-instructtext-hyper-g2gc | 3 B (segun Hugging Face) | safetensors, BF16 | granite | no disponible | no disponible |
 | firzahdzm/tourn-87c51c39-instructtext-super-s2kpre | 494 M | no disponible | no disponible | no disponible | no disponible |
 
 No hay datos de rendimiento que permitan comparaciones cuantitativas con alternativas de la misma categoria (por ejemplo, Qwen2.5-1.5B, Llama-3.2-1B o SmolLM2-1.7B), por lo que no se incluyen en la tabla.

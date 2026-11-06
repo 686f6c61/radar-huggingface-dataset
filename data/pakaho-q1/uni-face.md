@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Uni-Face es un proyecto de código abierto para el intercambio de rostros (face-swap) de alta velocidad y procesamiento por lotes, desarrollado por el usuario Pakaho-q1. El repositorio de HuggingFace aloja los modelos en formato ONNX junto con sus archivos `.hash` para verificación, que son utilizados por la herramienta CLI del proyecto. Incluye una colección de modelos conocidos en el ecosistema de face-swap, como `inswapper_128`, `simswap_256`, la serie `hyperswap`, `arcface` (w600k_r50), `gfpgan_1.4`, `codeformer`, `RestoreFormerPlusPlus`, `yoloface_8n`, `bisenet_resnet_34`, `xseg_1` y `gpen_bfr`.
+Uni-Face es un proyecto de código abierto para el intercambio de rostros (face-swap) de alta velocidad y procesamiento por lotes, desarrollado por el usuario Pakaho-q1. El repositorio de Hugging Face aloja los modelos en formato ONNX junto con sus archivos `.hash` para verificación, que son utilizados por la herramienta CLI del proyecto. Incluye una colección de modelos conocidos en el ecosistema de face-swap, como `inswapper_128`, `simswap_256`, la serie `hyperswap`, `arcface` (w600k_r50), `gfpgan_1.4`, `codeformer`, `RestoreFormerPlusPlus`, `yoloface_8n`, `bisenet_resnet_34`, `xseg_1` y `gpen_bfr`.
 
 El proyecto se presenta como una solución para tareas de intercambio facial en lote, con descarga dinámica de modelos a través de su interfaz de línea de comandos. Su relevancia radica en la agregación de múltiples modelos de face-swap y restauración facial en un solo repositorio, aunque su uso está estrictamente limitado a fines de investigación y no comercial debido a las licencias de los modelos subyacentes. No se proporcionan detalles sobre arquitectura, parámetros o rendimiento en la información disponible.
 
@@ -70,7 +70,7 @@ No se dispone de datos comparativos con otros proyectos de face-swap (p. ej., In
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Pakaho-q1/Uni-Face
+- Repositorio de Hugging Face: https://huggingface.co/Pakaho-q1/Uni-Face
 - Proyecto GitHub: https://github.com/Pakaho-q1/uni-face
 - Repositorio de modelos ONNX adicionales: https://huggingface.co/Pakaho-q1/onnx-models
 - API del proyecto: https://github.com/Pakaho-q1/uni-face/tree/main/api

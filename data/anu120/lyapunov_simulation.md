@@ -6,7 +6,7 @@ Anu120/lyapunov_simulation es un ajuste fino (fine-tune) del modelo base lerobot
 
 La relevancia de este tipo de modelos radica en que acerca los VLA a hardware de consumo: frente a políticas robóticas de miles de millones de parámetros, SmolVLA busca un equilibrio entre rendimiento y coste computacional, lo que permite entrenar y ejecutar políticas de imitación en una única GPU e incluso en CPU. Este checkpoint concreto pertenece a la familia de políticas que LeRobot distribuye y ejecuta mediante su propia herramienta de línea de comandos (lerobot-train, lerobot-record), lo que simplifica el ciclo completo de recogida de datos, entrenamiento y evaluación.
 
-Se trata de un modelo muy especializado y con escasa tracción pública en el momento de redactar esta ficha (0 descargas y 0 likes en HuggingFace), por lo que debe considerarse un artefacto de investigación o de experimentación personal más que un modelo listo para producción. El nombre del repositorio sugiere experimentos relacionados con estabilidad o simulación (Lyapunov), pero la model card no documenta ningún detalle adicional al respecto.
+Se trata de un modelo muy especializado y con escasa tracción pública en el momento de redactar esta ficha (0 descargas y 0 likes en Hugging Face), por lo que debe considerarse un artefacto de investigación o de experimentación personal más que un modelo listo para producción. El nombre del repositorio sugiere experimentos relacionados con estabilidad o simulación (Lyapunov), pero la model card no documenta ningún detalle adicional al respecto.
 
 ## Especificaciones técnicas
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Anu120/lyapunov_simulation (este modelo) | 450.046.176 | No disponible | No se han publicado benchmarks | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| lerobot/smolvla_base (modelo base) | Misma escala que el fine-tune (no confirmado en la información disponible) | No disponible | No disponible en la información proporcionada | Apache 2.0 (según el ecosistema LeRobot) | HuggingFace |
-| Otras políticas robóticas del ecosistema LeRobot (por ejemplo, ACT o Diffusion Policy) | No disponible | No aplica | No disponible en la información proporcionada | No disponible | HuggingFace, repositorios de LeRobot |
-| Modelos VLA de gran escala (por ejemplo, familias de miles de millones de parámetros) | No disponible | No disponible | No disponible en la información proporcionada | No disponible | HuggingFace |
+| Anu120/lyapunov_simulation (este modelo) | 450.046.176 | No disponible | No se han publicado benchmarks | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| lerobot/smolvla_base (modelo base) | Misma escala que el fine-tune (no confirmado en la información disponible) | No disponible | No disponible en la información proporcionada | Apache 2.0 (según el ecosistema LeRobot) | Hugging Face |
+| Otras políticas robóticas del ecosistema LeRobot (por ejemplo, ACT o Diffusion Policy) | No disponible | No aplica | No disponible en la información proporcionada | No disponible | Hugging Face, repositorios de LeRobot |
+| Modelos VLA de gran escala (por ejemplo, familias de miles de millones de parámetros) | No disponible | No disponible | No disponible en la información proporcionada | No disponible | Hugging Face |
 
 Los datos cuantitativos de rendimiento, contexto y parámetros de los modelos alternativos no están incluidos en la información proporcionada, por lo que la comparación debe completarse consultando las fichas y publicaciones correspondientes.
 
@@ -93,11 +93,11 @@ Los datos cuantitativos de rendimiento, contexto y parámetros de los modelos al
 - Restricciones de licencia: los pesos se publican bajo Apache 2.0, lo que en principio permite uso comercial, pero la licencia del dataset lerobot/svla_so100_stacking y del modelo base deben verificarse por separado antes de un uso comercial.
 - Seguridad física: cualquier despliegue en un robot real requiere límites de par, paradas de emergencia y supervisión humana; un fallo de la política puede dañar el robot o el entorno.
 - Idiomas: no disponible; el modelo no procesa texto de usuario de forma documentada.
-- Anomalía en los metadatos: la fecha de publicación indicada por HuggingFace (21 de septiembre de 2026) es posterior a la fecha habitual de consulta, por lo que conviene verificar la vigencia del repositorio.
+- Anomalía en los metadatos: la fecha de publicación indicada por Hugging Face (21 de septiembre de 2026) es posterior a la fecha habitual de consulta, por lo que conviene verificar la vigencia del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anu120/lyapunov_simulation
+- Modelo en Hugging Face: https://huggingface.co/Anu120/lyapunov_simulation
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/lerobot/svla_so100_stacking
 - Paper de SmolVLA (arXiv:2506.01844): https://huggingface.co/papers/2506.01844

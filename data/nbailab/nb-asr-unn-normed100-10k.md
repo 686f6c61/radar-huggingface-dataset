@@ -75,7 +75,7 @@ Comparativa directa dentro del propio experimento (mismos pasos de entrenamiento
 
 | Modelo | Parametros | Mezcla NorMed | WER lectura optimizada | CER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| NorMed 100 (este) | 782.426.112 | 100 % | 18,61 % | 7,20 % | no disponible | publico en HuggingFace |
+| NorMed 100 (este) | 782.426.112 | 100 % | 18,61 % | 7,20 % | no disponible | publico en Hugging Face |
 | NB control | no disponible | 0 % | 18,20 % | 7,51 % | no disponible | interno del experimento |
 | NorMed 10 | no disponible | 10 % | 17,90 % | 7,34 % | no disponible | interno del experimento |
 | NorMed 50 | no disponible | 50 % | 18,35 % | 7,44 % | no disponible | interno del experimento |
@@ -96,6 +96,6 @@ Como alternativas de la misma categoria (ASR en noruego) se identifican NB-Whisp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NbAiLab/nb-asr-unn-normed100-10k
+- Modelo en Hugging Face: https://huggingface.co/NbAiLab/nb-asr-unn-normed100-10k
 - Perfil de la organizacion NbAiLab: https://huggingface.co/NbAiLab
 - NB-Whisper Large (modelo relacionado de NbAiLabBeta): https://huggingface.co/NbAiLabBeta/nb-whisper-large

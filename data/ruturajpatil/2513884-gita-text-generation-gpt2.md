@@ -1,11 +1,11 @@
 # RuturajPatil/2513884-gita-text-generation-gpt2
 
 ## Resumen
-El modelo `RuturajPatil/2513884-gita-text-generation-gpt2` es un ajuste fino de la arquitectura GPT-2 publicado en HuggingFace por el usuario RuturajPatil. Por el nombre del repositorio, el ajuste se orienta a la generacion de texto relacionado con la Bhagavad Gita, aunque la model card no documenta explicitamente el dataset ni el procedimiento de entrenamiento. El checkpoint contiene 124.439.808 parametros, lo que coincide con la configuracion estandar de GPT-2 small (124M), y se distribuye en formato safetensors con un tamano de repositorio de 0,5 GB.
+El modelo `RuturajPatil/2513884-gita-text-generation-gpt2` es un ajuste fino de la arquitectura GPT-2 publicado en Hugging Face por el usuario RuturajPatil. Por el nombre del repositorio, el ajuste se orienta a la generacion de texto relacionado con la Bhagavad Gita, aunque la model card no documenta explicitamente el dataset ni el procedimiento de entrenamiento. El checkpoint contiene 124.439.808 parametros, lo que coincide con la configuracion estandar de GPT-2 small (124M), y se distribuye en formato safetensors con un tamano de repositorio de 0,5 GB.
 
 La relevancia de este modelo es limitada y muy especifica: se trata de un experimento de ajuste fino sobre un modelo base de 2019, sin datos publicados de evaluacion, sin licencia declarada y sin informacion sobre idiomas o composicion del corpus de entrenamiento. No compite con modelos generativos actuales ni esta pensado para uso en produccion. Su interes es principalmente academico o de prototipado rapido para generacion de texto de dominio muy acotado.
 
-La model card es la plantilla autogenerada por HuggingFace y no aporta informacion tecnica adicional: todos los campos relevantes (desarrollador, licencia, datos, hiperparametros, evaluacion) aparecen como "More Information Needed". Cualquier uso del modelo debe asumir esta ausencia total de documentacion.
+La model card es la plantilla autogenerada por Hugging Face y no aporta informacion tecnica adicional: todos los campos relevantes (desarrollador, licencia, datos, hiperparametros, evaluacion) aparecen como "More Information Needed". Cualquier uso del modelo debe asumir esta ausencia total de documentacion.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -53,10 +53,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RuturajPatil/2513884-gita-text-generation-gpt2 | 124M | no disponible (GPT-2: 1024) | no disponible | HuggingFace |
-| GPT-2 small (OpenAI) | 124M | 1024 | MIT | HuggingFace, OpenAI |
-| DistilGPT-2 | 82M | 1024 | Apache 2.0 | HuggingFace |
-| GPT-2 medium | 355M | 1024 | MIT | HuggingFace |
+| RuturajPatil/2513884-gita-text-generation-gpt2 | 124M | no disponible (GPT-2: 1024) | no disponible | Hugging Face |
+| GPT-2 small (OpenAI) | 124M | 1024 | MIT | Hugging Face, OpenAI |
+| DistilGPT-2 | 82M | 1024 | Apache 2.0 | Hugging Face |
+| GPT-2 medium | 355M | 1024 | MIT | Hugging Face |
 
 La comparativa se limita a parametros, contexto y licencia porque no hay datos de rendimiento publicados para el modelo evaluado. Frente a GPT-2 small original, este checkpoint anade un ajuste de dominio no documentado; frente a DistilGPT-2, es mas grande y mas lento, pero potencialmente mas especializado.
 
@@ -71,6 +71,6 @@ La comparativa se limita a parametros, contexto y licencia porque no hay datos d
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin validacion por parte de la comunidad.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/RuturajPatil/2513884-gita-text-generation-gpt2
+- Hugging Face: https://huggingface.co/RuturajPatil/2513884-gita-text-generation-gpt2
 - Paper de GPT-2 (referenciado en tags): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de carbono (referenciada en la model card): https://mlco2.github.io/impact

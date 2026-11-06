@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ReDimNet2 B3 VoxCeleb2 LM (ONNX) es un export a formato ONNX de un extractor de embeddings de locutor basado en la arquitectura ReDimNet2, en su variante B3, entrenado sobre el corpus VoxCeleb2 y ajustado con una estrategia de *large-margin fine-tuning*. No se trata de un modelo generativo de texto, sino de un modelo de representacion: recibe una senal de audio con la voz de un hablante y devuelve un vector (embedding) que codifica su identidad vocal. La publicacion en HuggingFace la realiza el usuario `volantis-labs`, mientras que la arquitectura y los pesos originales proceden de Palabra.ai, con licencia MIT.
+ReDimNet2 B3 VoxCeleb2 LM (ONNX) es un export a formato ONNX de un extractor de embeddings de locutor basado en la arquitectura ReDimNet2, en su variante B3, entrenado sobre el corpus VoxCeleb2 y ajustado con una estrategia de *large-margin fine-tuning*. No se trata de un modelo generativo de texto, sino de un modelo de representacion: recibe una senal de audio con la voz de un hablante y devuelve un vector (embedding) que codifica su identidad vocal. La publicacion en Hugging Face la realiza el usuario `volantis-labs`, mientras que la arquitectura y los pesos originales proceden de Palabra.ai, con licencia MIT.
 
 ReDimNet2 es la evolucion del *framework* ReDimNet de remodelado de dimensiones para representaciones de locutor a nivel de enunciado. La innovacion principal descrita en el articulo asociado es la introduccion de *pooling* sobre la dimension temporal dentro de la ruta de procesamiento 1D, lo que preserva la naturaleza del espacio de caracteristicas 1D al tiempo que permite escalar el modelo. Este repositorio concreto contiene unicamente el artefacto de inferencia (un unico archivo ONNX de 18.041.134 bytes, aproximadamente 17,2 MiB), sin tarjeta de modelo detallada ni resultados de evaluacion publicados por el autor del export.
 
@@ -76,7 +76,7 @@ La model card del repositorio no incluye metricas de verificacion de locutor (po
 
 | Modelo | Categoria | Parametros | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| ReDimNet2 B3 VoxCeleb2 LM (este repositorio) | Embedding de locutor, CNN 1D con pooling temporal | no disponible | MIT | ONNX | Export unico en HuggingFace, 18.041.134 bytes |
+| ReDimNet2 B3 VoxCeleb2 LM (este repositorio) | Embedding de locutor, CNN 1D con pooling temporal | no disponible | MIT | ONNX | Export unico en Hugging Face, 18.041.134 bytes |
 | ReDimNet2 (repositorio oficial PalabraAI) | Embedding de locutor, arquitectura completa | no disponible en la informacion consultada | no disponible en la informacion consultada | Pesos originales del framework | GitHub publico |
 | ECAPA-TDNN | Embedding de locutor, TDNN con atencion de canal | no disponible en la informacion consultada | no disponible en la informacion consultada | no disponible | Ampliamente usado en la literatura y en toolkits de verificacion de locutor |
 | Modelos de verificacion basados en WavLM / SSL | Embedding de locutor sobre representaciones auto-supervisadas | no disponible en la informacion consultada | no disponible en la informacion consultada | no disponible | Habituales en competiciones y toolkits |
@@ -95,9 +95,9 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/volantis-labs/redimnet2
+- Modelo en Hugging Face: https://huggingface.co/volantis-labs/redimnet2
 - Repositorio oficial ReDimNet2 (PalabraAI): https://github.com/PalabraAI/redimnet2
 - Implementacion y pesos en el repositorio: https://github.com/PalabraAI/redimnet2/tree/main/redimnet2
 - Articulo (arXiv, abstract): https://arxiv.org/abs/2603.11841
 - Articulo (arXiv, HTML): https://arxiv.org/html/2603.11841
-- Pagina del paper en HuggingFace: https://huggingface.co/papers/2603.11841
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2603.11841

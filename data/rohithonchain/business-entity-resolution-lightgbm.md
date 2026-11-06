@@ -78,7 +78,7 @@ La metrica es F0.5 macro-promediada por consulta (ponderada hacia la precision);
 ## Requisitos de hardware
 
 - Inferencia en CPU: LightGBM no requiere GPU, por lo que el sistema puede ejecutarse en cualquier maquina que soporte la libreria.
-- Memoria: el repositorio ocupa 0,0 GB segun HuggingFace, ya que solo contiene los ficheros de texto de los modelos y JSON auxiliares; no se publican pesos de gran tamano.
+- Memoria: el repositorio ocupa 0,0 GB segun Hugging Face, ya que solo contiene los ficheros de texto de los modelos y JSON auxiliares; no se publican pesos de gran tamano.
 - VRAM estimada: no aplica. No hay requisito de GPU para puntuar pares.
 - GPU recomendadas: no aplica para la inferencia; la carga computacional real esta en la recuperacion de candidatos y en la construccion de las 80 caracteristicas, no en el modelo.
 - GPU de consumo: irrelevante para este modelo; cualquier CPU moderna es suficiente para el scoring.
@@ -91,7 +91,7 @@ No hay datos publicos suficientes para comparar numericamente con alternativas e
 
 | Alternativa | Arquitectura | Caracteristicas | F0.5 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| business-entity-resolution-lightgbm (este modelo) | LightGBM base + meta en cascada | 80 caracteristicas de par mas 14 de contexto | 0,9303 en leaderboard publico | MIT | HuggingFace y GitHub |
+| business-entity-resolution-lightgbm (este modelo) | LightGBM base + meta en cascada | 80 caracteristicas de par mas 14 de contexto | 0,9303 en leaderboard publico | MIT | Hugging Face y GitHub |
 | Variante con XGBoost del mismo autor | XGBoost | Misma pipeline | No disponible (comparado en `base_model_selection.json`) | No disponible | Incluida en el repo |
 | Solucion LightGBM de otro participante (255 hojas, profundidad 12, lr 0,01, 2.000 rondas) | LightGBM | No disponible | No disponible | Repositorio publico | GitHub |
 | Repositorio alternativo de entity resolution para el mismo concurso | No disponible | No disponible | No disponible | No disponible | GitHub |
@@ -115,11 +115,11 @@ Las cifras de otros participantes corresponden a soluciones distintas del mismo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohithonchain/business-entity-resolution-lightgbm
+- Modelo en Hugging Face: https://huggingface.co/rohithonchain/business-entity-resolution-lightgbm
 - Repositorio del pipeline completo: https://github.com/sanjayrohith/business-entity-resolution
 - Notebook de write-up en Kaggle: https://www.kaggle.com/code/sanjayrohith/business-entity-resolution-writeup
 - Repositorio alternativo del mismo concurso (rohit-7620): https://github.com/rohit-7620/Amazon-ML-Challenge-2026-Business-Entity-Resolution-Challenge
 - Repositorio alternativo del mismo concurso (jhansi-jjs): https://github.com/jhansi-jjs/business-entity-resolution
-- Dataset del challenge en HuggingFace: https://huggingface.co/datasets/uday-bhatia/amazon-ml-26
+- Dataset del challenge en Hugging Face: https://huggingface.co/datasets/uday-bhatia/amazon-ml-26
 - Publicacion en LinkedIn sobre el uso de LightGBM y XGBoost: https://www.linkedin.com/posts/gandem-nitin-941b13229_amazonmlchallenge-machinelearning-entityresolution-activity-7510274997060530176-omQ8
 - Publicacion en LinkedIn con resultados del leaderboard: https://www.linkedin.com/posts/karthik-ks-1k_amazonmlchallenge-machinelearning-entityresolution-ugcPost-7510617976920969216-xpSA

@@ -4,7 +4,7 @@
 
 `kjarni-ai/opus-mt-en-de` es un paquete de distribucion del modelo de traduccion automatica `Helsinki-NLP/opus-mt-en-de`, desarrollado originalmente por el grupo de investigacion en tecnologia del lenguaje de la Universidad de Helsinki dentro del proyecto OPUS-MT. No se trata de un modelo nuevo: los pesos de traduccion son identicos a los del original y lo unico que cambia es el formato de empaquetado para ejecutarse localmente con la libreria Kjarni, sin runtime de Python, servidor ni servicio en la nube.
 
-El modelo resuelve la traduccion unidireccional de ingles a aleman. Es un transformer encoder-decoder de arquitectura Marian, con 74.468.597 parametros totales y un repositorio de 1,0 GB en HuggingFace, aunque el autor indica un tamano de descarga de aproximadamente 300 MB en su formato empaquetado. La ventana de contexto, los datos de entrenamiento y los benchmarks no se detallan en la informacion disponible; el autor remite a la model card original de Helsinki-NLP para esos datos.
+El modelo resuelve la traduccion unidireccional de ingles a aleman. Es un transformer encoder-decoder de arquitectura Marian, con 74.468.597 parametros totales y un repositorio de 1,0 GB en Hugging Face, aunque el autor indica un tamano de descarga de aproximadamente 300 MB en su formato empaquetado. La ventana de contexto, los datos de entrenamiento y los benchmarks no se detallan en la informacion disponible; el autor remite a la model card original de Helsinki-NLP para esos datos.
 
 Su relevancia actual es practica: ofrece traduccion EN-DE ejecutable en CPU y GPU mediante una unica libreria nativa con bindings en Python, Rust, C#, C++ y linea de comandos, lo que simplifica el despliegue en aplicaciones de escritorio, servicios embebidos y pipelines sin dependencias pesadas. La licencia CC BY 4.0 permite uso comercial con atribucion.
 
@@ -83,7 +83,7 @@ La comparativa se limita a las variantes del mismo modelo y su direccion inversa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kjarni-ai/opus-mt-en-de
+- Repositorio Hugging Face: https://huggingface.co/kjarni-ai/opus-mt-en-de
 - Modelo original: https://huggingface.co/Helsinki-NLP/opus-mt-en-de
 - Direccion inversa (de-en): https://huggingface.co/kjarni-ai/opus-mt-de-en
 - Documentacion y descarga de Kjarni: https://kjarni.ai

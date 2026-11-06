@@ -42,7 +42,7 @@ No existe información sobre datos de entrenamiento, número de tokens, composic
 - **Investigación de arquitecturas de retrieval**: el repositorio permite estudiar cómo se comporta una variante Blip con GQA y tensor fusion en tareas de recuperación antes de escalar a un entrenamiento completo. Se puede ejecutar `python train.py --help` para ver el ejemplo de prueba de humo.
 - **Pruebas de integración en pipelines de desarrollo**: el checkpoint de inicialización sirve para verificar que el código carga correctamente y que el flujo de entrenamiento funciona, sin necesidad de un modelo entrenado.
 - **Benchmarking de configuraciones**: el autor sugiere evaluar con Flickr30k y reportar la métrica de la tarea con al menos tres semillas, comparando con una línea base de capacidad equivalente. Esto permite validar la implementación antes de invertir en entrenamiento.
-- **Desarrollo de adaptadores para carga automática**: al ser una implementación personalizada, las APIs genéricas de HuggingFace no cargan el modelo directamente; se necesita un adaptador explícito. El repositorio sirve como banco de pruebas para escribir ese adaptador.
+- **Desarrollo de adaptadores para carga automática**: al ser una implementación personalizada, las APIs genéricas de Hugging Face no cargan el modelo directamente; se necesita un adaptador explícito. El repositorio sirve como banco de pruebas para escribir ese adaptador.
 - **Estudio de técnicas de fusión de tensores**: la arquitectura incorpora *tensor fusion*, un mecanismo poco común; los desarrolladores pueden analizar su implementación y compararla con alternativas como atención cruzada o *cross-attention* estándar.
 - **Formación en diseño de modelos de retrieval**: por su tamaño mínimo, es un ejemplo didáctico para entender los componentes de un sistema de recuperación basado en Blip sin los costes computacionales de un modelo grande.
 
@@ -67,12 +67,12 @@ No disponible. No existen modelos comparables en la misma categoría porque este
 - **Checkpoint sin entrenar**: el archivo `model.safetensors` es solo una inicialización para pruebas de humo; no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 - **Sin capacidad funcional**: con 16.576 parámetros, el modelo no puede generar texto, razonar ni realizar retrieval real. Cualquier uso en producción es inviable.
 - **Sin benchmarks**: no se reclama ninguna puntuación; los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto del repositorio.
-- **Carga no estándar**: las APIs genéricas de HuggingFace no cargan el modelo automáticamente; se requiere un adaptador explícito, lo que limita su integración.
+- **Carga no estándar**: las APIs genéricas de Hugging Face no cargan el modelo automáticamente; se requiere un adaptador explícito, lo que limita su integración.
 - **Riesgo de alucinación**: no aplicable al no tener capacidad generativa, pero si se entrena un checkpoint futuro, deberá evaluarse este riesgo.
 - **Restricciones de licencia**: la licencia MIT permite uso comercial, pero el autor advierte que deben revisarse los términos de las fuentes de datos externas si se usa con datasets como Flickr30k.
 - **Sesgos**: no evaluados; el checkpoint no ha pasado ninguna auditoría de sesgos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/crystallilu/retrieval-base
+- Repositorio en Hugging Face: https://huggingface.co/crystallilu/retrieval-base
 - No se han encontrado papers, blogs, repositorios adicionales o demos relacionados con este modelo específico en la búsqueda web. Los resultados obtenidos (RVC, Kioxia, CrystalFlow, etc.) no guardan relación con este repositorio.

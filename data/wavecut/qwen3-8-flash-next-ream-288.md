@@ -84,7 +84,7 @@ La comparativa con otros MoE grandes de la misma categoría (p. ej. DeepSeek-V3,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/WaveCut/Qwen3.8-Flash-Next-REAM-288
+- Hugging Face: https://huggingface.co/WaveCut/Qwen3.8-Flash-Next-REAM-288
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Paper REAM (arXiv 2604.04356): https://arxiv.org/abs/2604.04356

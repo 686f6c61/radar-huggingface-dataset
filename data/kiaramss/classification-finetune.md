@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kiaramss/classification-finetune` es un repositorio publicado en HuggingFace por el usuario kiaramss que contiene una implementación propia en PyTorch de una arquitectura denominada "Hybrid" orientada a tareas de clasificación. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe como una configuración de escala "small" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño.
+`kiaramss/classification-finetune` es un repositorio publicado en Hugging Face por el usuario kiaramss que contiene una implementación propia en PyTorch de una arquitectura denominada "Hybrid" orientada a tareas de clasificación. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe como una configuración de escala "small" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño.
 
 El repositorio incluye el script principal de inferencia y entrenamiento (`inference.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que se presenta explícitamente como un checkpoint de inicialización válido para pruebas, no como un checkpoint entrenado ni evaluado con benchmarks. El número de parámetros totales reportado por safetensors es de 16.576, lo que confirma que se trata de un artefacto de escala mínima.
 
@@ -79,9 +79,9 @@ No disponible. La información proporcionada no incluye datos de rendimiento, co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiaramss/classification-finetune
+- Modelo en Hugging Face: https://huggingface.co/kiaramss/classification-finetune
 - Paper: no disponible.
 - Blog o publicación técnica: no disponible.
-- Repositorio de código adicional: no disponible (el código se distribuye dentro del propio repositorio de HuggingFace).
+- Repositorio de código adicional: no disponible (el código se distribuye dentro del propio repositorio de Hugging Face).
 - Demos: no disponible.
 - Otros enlaces relevantes: no disponible. La búsqueda web realizada no devolvió resultados relacionados con el modelo.

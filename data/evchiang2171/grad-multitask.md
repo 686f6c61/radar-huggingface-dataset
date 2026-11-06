@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`evchiang2171/grad-multitask` es un repositorio de HuggingFace que contiene una implementacion propia y compacta en PyTorch de un Vision Transformer (ViT) orientado a tareas multiples (multitask). No es un modelo preentrenado ni un release de produccion: el propio autor lo describe como un artefacto para revision de codigo, pruebas de humo (smoke tests) y experimentos pequenos y controlados. El checkpoint `model.safetensors` se presenta explicitamente como una inicializacion valida para pruebas, no como un checkpoint entrenado con resultados de benchmark.
+`evchiang2171/grad-multitask` es un repositorio de Hugging Face que contiene una implementacion propia y compacta en PyTorch de un Vision Transformer (ViT) orientado a tareas multiples (multitask). No es un modelo preentrenado ni un release de produccion: el propio autor lo describe como un artefacto para revision de codigo, pruebas de humo (smoke tests) y experimentos pequenos y controlados. El checkpoint `model.safetensors` se presenta explicitamente como una inicializacion valida para pruebas, no como un checkpoint entrenado con resultados de benchmark.
 
 El dato objetivo de parametros registrado en el archivo de pesos es de 16.576 parametros totales, una cifra extraordinariamente baja que contrasta con la escala "huge" declarada en la configuracion de arquitectura. Esa discrepancia, junto con el tamano del repositorio (0,0 GB), 0 descargas y 0 likes, confirma que se trata de un artefacto de desarrollo y no de un modelo utilizable en inferencia real.
 
@@ -50,7 +50,7 @@ No hay evidencia de entrenamiento completado. El recetario por defecto usa RMSPr
 - Revision de codigo de implementaciones ViT: sirve como referencia legible para comparar variantes de atencion multi-query, fusion co-attention o normalizacion scalenorm frente a implementaciones de referencia.
 - Plantilla para experimentos controlados de multitarea: el repositorio incluye `training_args.json` con un recetario reproducible (RMSProp + step schedule), util para montar baselines con la misma exposicion de datos y semillas.
 - Test de integracion de adaptadores de carga: al no ser un modelo estandar, obliga a implementar un adaptador explicito; sirve para validar ese codigo de integracion antes de conectarlo a un modelo real.
-- Docencia y formacion: ejemplo minimo de estructura de repositorio de modelo (config, training args, script, pesos) para explicar como se empaqueta un modelo en HuggingFace.
+- Docencia y formacion: ejemplo minimo de estructura de repositorio de modelo (config, training args, script, pesos) para explicar como se empaqueta un modelo en Hugging Face.
 - Benchmarking de infraestructura de despliegue: dado su tamano, permite medir sobrecarga de arranque, latencia de carga y comportamiento en CPU de un runtime de inferencia sin que el propio modelo sea el cuello de botella.
 - Verificacion de herramientas de analisis de pesos: util para comprobar que scripts de inspeccion de safetensors, conteo de parametros o conversion de formatos funcionan correctamente sobre un caso trivial.
 
@@ -95,9 +95,9 @@ No se dispone de resultados de evaluacion propios ni de terceros que permitan af
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/evchiang2171/grad-multitask
+- Modelo en Hugging Face: https://huggingface.co/evchiang2171/grad-multitask
 - Model card del autor: incluida en el repositorio (seccion README)
-- Repositorio de codigo asociado: no disponible; el autor distribuye el codigo (`finetune.py`) dentro del propio repositorio de HuggingFace
+- Repositorio de codigo asociado: no disponible; el autor distribuye el codigo (`finetune.py`) dentro del propio repositorio de Hugging Face
 - Paper tecnico: no disponible
 - Demo o espacio de inferencia: no disponible
 - Blog o documentacion adicional del autor: no disponible

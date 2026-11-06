@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mulemp/Eepol` es un repositorio de modelo alojado en HuggingFace por el usuario `mulemp`. En el momento de redactar esta ficha, la informacion publica disponible es practicamente nula: no consta pipeline declarado, ni licencia, ni idiomas soportados, ni model card, ni descripcion de arquitectura, y el repositorio esta marcado como de acceso restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+`mulemp/Eepol` es un repositorio de modelo alojado en Hugging Face por el usuario `mulemp`. En el momento de redactar esta ficha, la informacion publica disponible es practicamente nula: no consta pipeline declarado, ni licencia, ni idiomas soportados, ni model card, ni descripcion de arquitectura, y el repositorio esta marcado como de acceso restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 El unico dato objetivo relevante es el tamano del repositorio, 7,6 GB, junto con un historico de 0 descargas y 1 like, lo que indica que se trata de un artefacto sin validacion ni adopcion por parte de la comunidad. Las fechas de creacion y actualizacion registradas (7 de agosto y 16 de septiembre de 2026) son posteriores a la fecha actual, un detalle anomalo que conviene verificar antes de cualquier uso en produccion.
 
@@ -21,7 +21,7 @@ La busqueda web realizada no ha devuelto ningun resultado relacionado con el mod
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 7,6 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 | Descargas | 0 |
 | Likes | 1 |
@@ -57,7 +57,7 @@ No es posible proponer casos de uso justificados tecnicamente, porque no se cono
 - Prototipado con modelos pequenos en local: solo si el modelo resulta ser un LLM de menos de 8B parametros en 16 bits, podria emplearse para prototipos de generacion de texto en una GPU de consumo, siempre con validacion humana de las salidas.
 - Ajuste fino sobre dominio propio: si la licencia lo permitiese, el modelo podria servir como punto de partida para un fine-tuning con LoRA en un dominio concreto; esto exige primero confirmar la licencia, que actualmente es desconocida.
 - Comparacion de tokenizadores y pipelines: el repositorio podria utilizarse para probar la integracion con librerias de inferencia (transformers, vLLM, llama.cpp) y detectar incompatibilidades de formato, sin llegar a produccion.
-- Reproducibilidad academica: un investigador podria documentar el modelo como ejemplo de artefacto sin model card ni licencia, para estudiar practicas de publicacion en HuggingFace.
+- Reproducibilidad academica: un investigador podria documentar el modelo como ejemplo de artefacto sin model card ni licencia, para estudiar practicas de publicacion en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - Encaje en GPU de consumo: no disponible; no puede confirmarse si cabe en una RTX 4090 (24 GB), RTX 3090 (24 GB) o en tarjetas de 8-12 GB.
 - Opciones de despliegue: no disponible. No se ha confirmado compatibilidad con vLLM, llama.cpp, Ollama, TGI, TensorRT-LLM ni con la libreria transformers.
 - Latencia y throughput: no disponible.
-- Requisito adicional: el acceso esta restringido (gated), por lo que cualquier prueba de despliegue exige primero solicitar y obtener autorizacion en HuggingFace.
+- Requisito adicional: el acceso esta restringido (gated), por lo que cualquier prueba de despliegue exige primero solicitar y obtener autorizacion en Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -96,7 +96,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mulemp/Eepol (acceso restringido)
+- Repositorio en Hugging Face: https://huggingface.co/mulemp/Eepol (acceso restringido)
 - Model card: no disponible
 - Paper tecnico: no disponible
 - Repositorio de codigo: no disponible

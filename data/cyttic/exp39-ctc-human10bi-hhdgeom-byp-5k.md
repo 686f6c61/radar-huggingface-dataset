@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-byp-5k` es un checkpoint publicado en HuggingFace por el usuario cyttic, con un total de 87.279.756 parámetros (aproximadamente 87,3 millones) almacenados en formato safetensors. El nombre del repositorio sugiere un experimento (exp39) basado en CTC (Connectionist Temporal Classification), probablemente orientado a reconocimiento de secuencias, y con variantes de configuración indicadas por los sufijos "human10bi", "hhdgeom" y "byp-5k". La model card está completamente vacía: todos los campos aparecen como "[More Information Needed]", por lo que no hay información oficial sobre arquitectura, datos de entrenamiento, idiomas o uso previsto.
+El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-byp-5k` es un checkpoint publicado en Hugging Face por el usuario cyttic, con un total de 87.279.756 parámetros (aproximadamente 87,3 millones) almacenados en formato safetensors. El nombre del repositorio sugiere un experimento (exp39) basado en CTC (Connectionist Temporal Classification), probablemente orientado a reconocimiento de secuencias, y con variantes de configuración indicadas por los sufijos "human10bi", "hhdgeom" y "byp-5k". La model card está completamente vacía: todos los campos aparecen como "[More Information Needed]", por lo que no hay información oficial sobre arquitectura, datos de entrenamiento, idiomas o uso previsto.
 
 A pesar de la falta de documentación, el tamaño del modelo (87M) y la referencia a CTC apuntan a un modelo pequeño, probablemente un encoder para tareas de reconocimiento de voz o de secuencias, no un LLM generativo de propósito general. La licencia MIT permite uso comercial y modificación, lo que lo hace potencialmente atractivo para experimentación, pero la ausencia de especificaciones y de benchmarks publicados limita seriamente su evaluación rigurosa.
 
-Este ficha se ha redactado exclusivamente a partir de los metadatos disponibles en HuggingFace (tamaño, formato, licencia, tags) y de la estructura del nombre del repositorio. Cualquier dato no confirmado se indica explícitamente como "no disponible".
+Este ficha se ha redactado exclusivamente a partir de los metadatos disponibles en Hugging Face (tamaño, formato, licencia, tags) y de la estructura del nombre del repositorio. Cualquier dato no confirmado se indica explícitamente como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -77,6 +77,6 @@ No disponible. No se conocen modelos comparables de la misma categoría con docu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-byp-5k
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-byp-5k
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact#compute

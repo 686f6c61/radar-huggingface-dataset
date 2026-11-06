@@ -73,4 +73,4 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [HuggingFace: KSoham/nppe_3_denoising](https://huggingface.co/KSoham/nppe_3_denoising)
+- [Hugging Face: KSoham/nppe_3_denoising](https://huggingface.co/KSoham/nppe_3_denoising)

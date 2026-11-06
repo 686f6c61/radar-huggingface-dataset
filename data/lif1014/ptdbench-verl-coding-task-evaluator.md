@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables específicos para evalua
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LIF1014/ptdbench-verl-coding-task-evaluator
+- Repositorio Hugging Face: https://huggingface.co/LIF1014/ptdbench-verl-coding-task-evaluator
 - Modelo base Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - GitHub de Qwen2.5: https://github.com/QwenLM/Qwen2.5

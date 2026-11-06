@@ -1,7 +1,7 @@
 # nurulfnf/efficientformer-matching-light
 
 ## Resumen
-eficientformer-matching-light es un repositorio de HuggingFace publicado por el usuario nurulfnf que contiene una implementación funcional de la arquitectura EfficientFormer orientada a tareas de emparejamiento (matching) con una configuración "tiny". No se presenta como un modelo entrenado, sino como un punto de partida experimental: el autor describe explícitamente el checkpoint `model.safetensors` como una inicialización válida para pruebas de humo (smoke tests) y no como un modelo con rendimiento validado.
+eficientformer-matching-light es un repositorio de Hugging Face publicado por el usuario nurulfnf que contiene una implementación funcional de la arquitectura EfficientFormer orientada a tareas de emparejamiento (matching) con una configuración "tiny". No se presenta como un modelo entrenado, sino como un punto de partida experimental: el autor describe explícitamente el checkpoint `model.safetensors` como una inicialización válida para pruebas de humo (smoke tests) y no como un modelo con rendimiento validado.
 
 El repositorio es extremadamente pequeño (0,0 GB) y el peso reportado por safetensors es de 33.088 parámetros totales, un orden de magnitud muy inferior al de cualquier modelo de lenguaje o visión que se use en producción. El foco del autor está en código transparente y pruebas repetibles, con una advertencia explícita de que no se reclama ninguna puntuación de benchmark.
 
@@ -67,5 +67,5 @@ No disponible. La informacion proporcionada no incluye datos verificables de par
 - Cualquier resultado derivado de un futuro checkpoint entrenado debe documentarse de forma independiente a los valores por defecto incluidos en este repositorio.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/nurulfnf/efficientformer-matching-light
+- Hugging Face: https://huggingface.co/nurulfnf/efficientformer-matching-light
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

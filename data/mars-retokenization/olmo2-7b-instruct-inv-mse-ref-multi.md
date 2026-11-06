@@ -79,8 +79,8 @@ No hay resultados publicados de MMLU, HumanEval, GSM8K ni otros benchmarks de ca
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| olmo2-7b-instruct-inv-mse-ref-multi | 7,30B | No disponible | Robustez a re-tokenizacion adversarial | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| allenai/OLMo-2-1124-7B-Instruct | 7B (clase) | No disponible en la informacion proporcionada | Asistente instruct generalista | Apache 2.0 | HuggingFace |
+| olmo2-7b-instruct-inv-mse-ref-multi | 7,30B | No disponible | Robustez a re-tokenizacion adversarial | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| allenai/OLMo-2-1124-7B-Instruct | 7B (clase) | No disponible en la informacion proporcionada | Asistente instruct generalista | Apache 2.0 | Hugging Face |
 | Llama-Guard-3-8B | 8B (clase) | No disponible en la informacion proporcionada | Clasificacion de seguridad | No disponible en la informacion proporcionada | Usado como juez en la evaluacion de este checkpoint |
 | Alternativas de investigacion en robustez adversarial de tokenizacion | No disponible | No disponible | No disponible | No disponible | No se han identificado modelos comparables en la informacion proporcionada |
 
@@ -102,7 +102,7 @@ La comparacion cuantitativa solo es posible contra el modelo base: la reduccion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MARS-Retokenization/olmo2-7b-instruct-inv-mse-ref-multi
+- Modelo en Hugging Face: https://huggingface.co/MARS-Retokenization/olmo2-7b-instruct-inv-mse-ref-multi
 - Modelo base: https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct
 - Paper del ataque de tokenizacion adversarial (referenciado en los tags y en la model card, Geh et al.): https://arxiv.org/abs/2503.02174
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo; las busquedas devolvieron unicamente paginas sobre el planeta Marte y sobre la empresa Mars Inc. (Wikipedia, NASA, CNES, mars.com), sin relacion con este checkpoint.

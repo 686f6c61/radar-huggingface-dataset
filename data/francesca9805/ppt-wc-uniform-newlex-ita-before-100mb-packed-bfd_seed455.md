@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`francesca9805/ppt-wc-uniform-newlex-ita-before-100mb-packed-bfd_seed455` es un modelo de generacion de texto en ingles (decoder-only de tipo GPT-2) publicado en HuggingFace por el usuario `francesca9805`. Se trata de un fine-tuning con aprendizaje supervisado (SFT) del modelo `goldfish-models/eng_latn_100mb`, un modelo monolingue de ingles del proyecto Goldfish entrenado sobre aproximadamente 100 MB de texto. El modelo resultante tiene 86.508.288 parametros (unos 86,5 millones) y un repositorio de 0,2 GB, por lo que es un modelo muy pequeno, apto para inferencia en CPU o en cualquier GPU de consumo.
+`francesca9805/ppt-wc-uniform-newlex-ita-before-100mb-packed-bfd_seed455` es un modelo de generacion de texto en ingles (decoder-only de tipo GPT-2) publicado en Hugging Face por el usuario `francesca9805`. Se trata de un fine-tuning con aprendizaje supervisado (SFT) del modelo `goldfish-models/eng_latn_100mb`, un modelo monolingue de ingles del proyecto Goldfish entrenado sobre aproximadamente 100 MB de texto. El modelo resultante tiene 86.508.288 parametros (unos 86,5 millones) y un repositorio de 0,2 GB, por lo que es un modelo muy pequeno, apto para inferencia en CPU o en cualquier GPU de consumo.
 
-El nombre del repositorio sugiere un experimento de investigacion sobre tokenizacion y vocabulario ("newlex", "ita" y "new-tokenizers" en el nombre del run de Weights & Biases asociado), probablemente vinculado a un estudio sobre nuevos tokenizadores en la Universidad de Groningen. El modelo fue entrenado con TRL 0.23.0 sobre Transformers 4.56.2, PyTorch 2.5.1 y Datasets 4.8.4, lo que confirma un flujo de trabajo de fine-tuning estandar con las librerias de HuggingFace.
+El nombre del repositorio sugiere un experimento de investigacion sobre tokenizacion y vocabulario ("newlex", "ita" y "new-tokenizers" en el nombre del run de Weights & Biases asociado), probablemente vinculado a un estudio sobre nuevos tokenizadores en la Universidad de Groningen. El modelo fue entrenado con TRL 0.23.0 sobre Transformers 4.56.2, PyTorch 2.5.1 y Datasets 4.8.4, lo que confirma un flujo de trabajo de fine-tuning estandar con las librerias de Hugging Face.
 
 Su relevancia practica es limitada y muy especifica: se trata de un artefacto experimental con cero descargas y cero likes en el momento de la consulta, sin model card detallada, sin licencia declarada de forma explicita y sin resultados de benchmarks publicados. Resulta util como objeto de estudio de tokenizacion y como ejemplo de fine-tuning minimo con TRL, pero no esta pensado para despliegues de produccion.
 
@@ -40,11 +40,11 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreri
 ## Casos de uso
 
 - Investigacion sobre tokenizacion: el propio nombre del modelo ("newlex", "new-tokenizers") apunta a un experimento de vocabulario; puede utilizarse para comparar el efecto de distintos tokenizadores sobre la perplejidad de un modelo GPT-2 pequeno entrenado sobre 100 MB de texto.
-- Replicacion de experimentos: sirve como referencia reproducible de un fine-tuning SFT con TRL sobre un modelo Goldfish, util para validar pipelines de entrenamiento de HuggingFace.
+- Replicacion de experimentos: sirve como referencia reproducible de un fine-tuning SFT con TRL sobre un modelo Goldfish, util para validar pipelines de entrenamiento de Hugging Face.
 - Generacion de texto de baja latencia en CPU: con 86,5 M de parametros el modelo cabe holgadamente en memoria de CPU y permite generar texto sin GPU, adecuado para demos o cuadernos docentes.
 - Pruebas de pipelines de inferencia: sirve como modelo de juguete para validar integraciones con `transformers`, text-generation-inference o `endpoints_compatible` sin coste elevado de computo.
 - Estudio de sesgos en modelos pequenos: al haber sido entrenado sobre un corpus de 100 MB de un unico idioma, es un caso util para analizar como los modelos de baja escala reproducen sesgos del corpus reducido.
-- Prototipado educativo de fine-tuning: permite ilustrar de principio a fin el ciclo de SFT, evaluacion y publicacion en HuggingFace con un coste de entrenamiento minimo.
+- Prototipado educativo de fine-tuning: permite ilustrar de principio a fin el ciclo de SFT, evaluacion y publicacion en Hugging Face con un coste de entrenamiento minimo.
 - Filtrado o clasificacion textual exploratoria: mediante generacion condicionada o extraccion de probabilidades, se puede emplear como componente de prototipos de NLP sencillos.
 
 ## Benchmarks y rendimiento
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/ppt-wc-uniform-newlex-ita-before-100mb-packed-bfd_seed455` | 86,5 M | no disponible | no disponible | HuggingFace (0 descargas) | Fine-tuning SFT de un modelo Goldfish; artefacto experimental |
-| `goldfish-models/eng_latn_100mb` | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | Modelo base del anterior; monolingue ingles sobre 100 MB |
-| `distilgpt2` | 82 M | 1024 tokens | Apache 2.0 | HuggingFace | Alternativa conocida de tamano similar para generacion de texto en ingles |
-| `gpt2` | 124 M | 1024 tokens | MIT | HuggingFace | Modelo de referencia de la familia GPT-2 |
+| `francesca9805/ppt-wc-uniform-newlex-ita-before-100mb-packed-bfd_seed455` | 86,5 M | no disponible | no disponible | Hugging Face (0 descargas) | Fine-tuning SFT de un modelo Goldfish; artefacto experimental |
+| `goldfish-models/eng_latn_100mb` | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | Modelo base del anterior; monolingue ingles sobre 100 MB |
+| `distilgpt2` | 82 M | 1024 tokens | Apache 2.0 | Hugging Face | Alternativa conocida de tamano similar para generacion de texto en ingles |
+| `gpt2` | 124 M | 1024 tokens | MIT | Hugging Face | Modelo de referencia de la familia GPT-2 |
 
 La comparacion es orientativa: no se dispone de datos de rendimiento del modelo analizado que permitan contrastarlo cuantitativamente con las alternativas.
 
@@ -82,7 +82,7 @@ La comparacion es orientativa: no se dispone de datos de rendimiento del modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-ita-before-100mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-ita-before-100mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/dmb73xcz

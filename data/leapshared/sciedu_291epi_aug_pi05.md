@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`leapshared/SciEdu_291epi_aug_pi05` es un modelo de política robótica de tipo Visión-Lenguaje-Acción (VLA) publicado por la organización Leapshared en HuggingFace. Se trata de un ajuste fino (fine-tune) del modelo base `lerobot/pi05_base`, que a su vez es la implementación en LeRobot del modelo π₀.₅ de Physical Intelligence, orientado a la generalización en entornos abiertos. El modelo resultante tiene 4.143.404.816 parámetros (aproximadamente 4,14 mil millones) y se distribuye en formato `safetensors` bajo licencia Apache 2.0.
+`leapshared/SciEdu_291epi_aug_pi05` es un modelo de política robótica de tipo Visión-Lenguaje-Acción (VLA) publicado por la organización Leapshared en Hugging Face. Se trata de un ajuste fino (fine-tune) del modelo base `lerobot/pi05_base`, que a su vez es la implementación en LeRobot del modelo π₀.₅ de Physical Intelligence, orientado a la generalización en entornos abiertos. El modelo resultante tiene 4.143.404.816 parámetros (aproximadamente 4,14 mil millones) y se distribuye en formato `safetensors` bajo licencia Apache 2.0.
 
 El problema que resuelve es concreto: controlar un robot bimanual de tipo `bi_openarm_follower` para ejecutar protocolos de laboratorio de ciencias en un entorno educativo. A partir de tres flujos de cámara (`follower_d455f`, `left_wrist`, `right_wrist`) y un vector de estado de 16 dimensiones, el modelo genera un vector de acción de 16 dimensiones que mueve el robot para completar tareas como la clasificación de hojas, la reacción redox con una placa metálica y dos disoluciones, o el experimento del electroscopio con una placa de carga.
 
@@ -89,8 +89,8 @@ Las cifras de memoria son estimaciones calculadas a partir del recuento real de 
 
 | Modelo | Parametros | Tipo | Contexto / dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `leapshared/SciEdu_291epi_aug_pi05` | 4,14 mil millones | VLA ajustado para robótica educativa | Tareas de laboratorio (3 experimentos, 20 instrucciones) | Apache 2.0 | Repositorio HuggingFace, 0 descargas |
-| `lerobot/pi05_base` | No disponible en la información proporcionada | VLA base (π₀.₅ en LeRobot) | Generalista, varios robots y tareas | Apache 2.0 según el modelo derivado | Público en HuggingFace |
+| `leapshared/SciEdu_291epi_aug_pi05` | 4,14 mil millones | VLA ajustado para robótica educativa | Tareas de laboratorio (3 experimentos, 20 instrucciones) | Apache 2.0 | Repositorio Hugging Face, 0 descargas |
+| `lerobot/pi05_base` | No disponible en la información proporcionada | VLA base (π₀.₅ en LeRobot) | Generalista, varios robots y tareas | Apache 2.0 según el modelo derivado | Público en Hugging Face |
 | π₀ (`lerobot/pi0` y OpenPI) | No disponible en la información proporcionada | VLA predecesor de π₀.₅ | Generalista, varios robots y tareas | No disponible en la información proporcionada | Repositorio OpenPI de Physical Intelligence |
 | OpenVLA | No disponible en la información proporcionada | VLA de 7B basado en Llama 2 y DINOv2/SigLIP | Manipulación generalista en distintos robots | No disponible en la información proporcionada | Público |
 
@@ -108,11 +108,11 @@ No se dispone de datos de rendimiento comparativo (tasas de éxito, error de pos
 - Los 165,7 GB del repositorio implican un coste de descarga y almacenamiento elevado, desproporcionado para un modelo de 4,14 mil millones de parámetros en fp32, lo que sugiere la presencia de artefactos adicionales o múltiples copias de los pesos.
 - Requisito de tiempo real: la política necesita ejecutarse a 30 FPS para reproducir las demostraciones; una GPU que no alcance ese ritmo producirá un control degradado cuya gravedad no está documentada.
 - No se documenta ningún mecanismo de parada de emergencia, filtrado de acciones ni límites de seguridad específicos del modelo.
-- Fecha de publicación futura registrada por HuggingFace (2026-10-07): conviene verificar la vigencia y estabilidad del repositorio antes de integrarlo en un proyecto.
+- Fecha de publicación futura registrada por Hugging Face (2026-10-07): conviene verificar la vigencia y estabilidad del repositorio antes de integrarlo en un proyecto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leapshared/SciEdu_291epi_aug_pi05
+- Modelo en Hugging Face: https://huggingface.co/leapshared/SciEdu_291epi_aug_pi05
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/leapshared/SciEdu_291epi
 - Visualizador del conjunto de datos: https://huggingface.co/spaces/lerobot/visualize_dataset?path=leapshared/SciEdu_291epi
 - Modelo base: https://huggingface.co/lerobot/pi05_base
@@ -126,4 +126,4 @@ No se dispone de datos de rendimiento comparativo (tasas de éxito, error de pos
 - Referencia de comandos de LeRobot: https://huggingface.co/docs/lerobot/main/en/cheat-sheet
 - Documentación de inferencia y rollout: https://huggingface.co/docs/lerobot/main/en/inference
 - Repositorio OpenPI de Physical Intelligence: https://github.com/Physical-Intelligence/openpi
-- Perfil del autor en HuggingFace: https://huggingface.co/leapshared
+- Perfil del autor en Hugging Face: https://huggingface.co/leapshared

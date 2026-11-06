@@ -81,7 +81,7 @@ No se dispone de comparativas publicadas con otros modelos ASR en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zioder/nemotron-tunisian-asr-v9
+- Modelo en Hugging Face: https://huggingface.co/Zioder/nemotron-tunisian-asr-v9
 - Dataset de entrenamiento: https://huggingface.co/datasets/Zioder/nemotron-tunisian-asr-data
 - Dataset de podcasts (caché): https://huggingface.co/datasets/Zioder/nemotron-tunisian-podcast-cache
 - Dataset de podcasts V2: https://huggingface.co/datasets/Zioder/nemotron-tunisian-podcast-cache-v2

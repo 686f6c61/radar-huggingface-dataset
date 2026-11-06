@@ -111,7 +111,7 @@ No se dispone de especificaciones técnicas (parámetros, contexto, licencia) de
 
 | Modelo | Tipo | typed-decisions | BFCL native | BFCL irrelevance | Adversarial | Licencia y disponibilidad |
 |---|---|---|---|---|---|---|
-| OD-1 Base lite | Decisor calibrado, 16 de 32 capas de Qwen3.5-4B | 0,576 | 0,935 | 0,527 | 0,863 | Apache 2.0, safetensors en HuggingFace |
+| OD-1 Base lite | Decisor calibrado, 16 de 32 capas de Qwen3.5-4B | 0,576 | 0,935 | 0,527 | 0,863 | Apache 2.0, safetensors en Hugging Face |
 | Jev 1.13 / TypeSafe Jev 1.13 | Generalista (referencia medida el 25/09/2026) | 0,741 (0,727 por la tarjeta) | 0,975 | 0,702 | 0,832 | no disponible |
 | Laya typed-decisions | Decisor tipado de Laya | 0,737 | 0,847 | 0,390 | 0,628 | no disponible |
 | Tev1-4B | Modelo de 4B | 0,690 | 0,954 | 0,701 | 0,793 | no disponible |
@@ -137,7 +137,7 @@ En latencia, la alternativa documentada es Laya en su variante typed-decisions: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mvbalaji/od1-base-lite
+- Modelo en Hugging Face: https://huggingface.co/mvbalaji/od1-base-lite
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Kernel `flash-linear-attention`: https://pypi.org/project/flash-linear-attention/0.5.2/
 - Kernel `causal-conv1d`: https://pypi.org/project/causal-conv1d/1.7.0/

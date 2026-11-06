@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`KaranDevi/tiny-transformer-contrastive` es un prototipo de investigación publicado en HuggingFace por el usuario KaranDevi: un transformer de escala "small" (en la práctica, minúscula) con 49.600 parámetros totales, orientado a experimentos de aprendizaje contrastivo. No es un modelo entrenado ni un checkpoint con resultados: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado en benchmarks. El repositorio es, por tanto, una plantilla reproducible de código y configuración, no un modelo listo para producción.
+`KaranDevi/tiny-transformer-contrastive` es un prototipo de investigación publicado en Hugging Face por el usuario KaranDevi: un transformer de escala "small" (en la práctica, minúscula) con 49.600 parámetros totales, orientado a experimentos de aprendizaje contrastivo. No es un modelo entrenado ni un checkpoint con resultados: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado en benchmarks. El repositorio es, por tanto, una plantilla reproducible de código y configuración, no un modelo listo para producción.
 
 El interés del artefacto es metodológico: incluye `main.py` con la implementación y un punto de entrada ejecutable, `config.json` con los hiperparámetros de arquitectura y `training_args.json` con la receta de entrenamiento por defecto (optimizador Novograd con schedule de warmup lineal). La arquitectura declarada combina atención de tipo flash, fusión tensorial de Tucker, activación ReLU y normalización por batch, lo que la sitúa en la línea de prototipos experimentales para estudiar variantes de atención y fusión multimodal o multi-vista en entornos de recursos muy limitados.
 
@@ -22,7 +22,7 @@ Es relevante ahora únicamente como pieza de infraestructura docente o de invest
 | Formato de pesos | safetensors (`model.safetensors`); implementacion en PyTorch (`main.py`) |
 | Escala declarada | small |
 | Optimizador por defecto | Novograd con warmup lineal |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-20 |
 
@@ -79,11 +79,11 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 - Riesgo de alucinación: no aplica en el sentido habitual, porque el modelo no tiene capacidad de generar lenguaje; el riesgo equivalente es interpretar sus salidas o su código como validados.
 - No se declara ningún idioma soportado ni longitud de contexto, por lo que no se puede asumir cobertura multilingüe ni ventanas concretas.
 - La licencia Apache 2.0 permite uso comercial del código y los pesos, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se usa el repositorio con datasets externos.
-- Implementación custom: las APIs de carga automática de HuggingFace (`AutoModel`, `pipeline`) requieren un adaptador explícito; no se puede asumir compatibilidad directa.
+- Implementación custom: las APIs de carga automática de Hugging Face (`AutoModel`, `pipeline`) requieren un adaptador explícito; no se puede asumir compatibilidad directa.
 - No hay métricas, logs ni versiones de entorno publicados junto al repositorio, lo que impide reproducir cualquier resultado.
 - Escala insuficiente para cualquier tarea de NLP en producción: 49.600 parámetros están varios órdenes de magnitud por debajo de lo necesario para un modelo de lenguaje funcional.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KaranDevi/tiny-transformer-contrastive
+- Modelo en Hugging Face: https://huggingface.co/KaranDevi/tiny-transformer-contrastive
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

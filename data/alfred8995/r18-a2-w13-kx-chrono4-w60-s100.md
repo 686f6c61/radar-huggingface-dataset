@@ -1,9 +1,9 @@
 # alfred8995/r18-a2-w13-kx-chrono4-w60-s100
 
 ## Resumen
-El modelo `alfred8995/r18-a2-w13-kx-chrono4-w60-s100` es un checkpoint de aproximadamente 2.018 millones de parametros publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. La nomenclatura del identificador (`r18`, `a2`, `w13`, `kx`, `chrono4`, `w60`, `s100`) sugiere un entrenamiento experimental con hiperparametros concretos (posiblemente ronda 18, arquitectura o variante a2, ventana 13, contexto cronologico 4, warmup 60 y paso 100), aunque no se dispone de documentacion oficial que confirme esta interpretacion.
+El modelo `alfred8995/r18-a2-w13-kx-chrono4-w60-s100` es un checkpoint de aproximadamente 2.018 millones de parametros publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. La nomenclatura del identificador (`r18`, `a2`, `w13`, `kx`, `chrono4`, `w60`, `s100`) sugiere un entrenamiento experimental con hiperparametros concretos (posiblemente ronda 18, arquitectura o variante a2, ventana 13, contexto cronologico 4, warmup 60 y paso 100), aunque no se dispone de documentacion oficial que confirme esta interpretacion.
 
-Se trata de un modelo con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales en HuggingFace antes de descargar los pesos. El repositorio ocupa 12,6 GB en formato safetensors, un tamano desproporcionado para el numero de parametros declarado si se asume precision estandar, lo que podria indicar pesos en punto flotante de alta precision, multiples checkpoints empaquetados o artefactos adicionales en el repositorio.
+Se trata de un modelo con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales en Hugging Face antes de descargar los pesos. El repositorio ocupa 12,6 GB en formato safetensors, un tamano desproporcionado para el numero de parametros declarado si se asume precision estandar, lo que podria indicar pesos en punto flotante de alta precision, multiples checkpoints empaquetados o artefactos adicionales en el repositorio.
 
 No se ha publicado informacion sobre la arquitectura interna, el dataset de entrenamiento, la longitud de contexto efectiva ni los idiomas soportados. La etiqueta `sn38-nanochrono` sugiere una familia de modelos pequenos orientados a tareas de cronologia o secuencias temporales, pero no hay documentacion que lo confirme. El modelo tiene 2 descargas y 0 likes en el momento de la consulta.
 
@@ -38,7 +38,7 @@ El repositorio incluye la etiqueta `sn38-nanochrono`, que sugiere una familia de
 - Experimentacion academica con checkpoints pequenos: el modelo, con 2.018 millones de parametros, puede servir como base para estudiar el efecto de hiperparametros concretos (warmup, pasos, ventanas) en el entrenamiento de modelos de lenguaje de pequeno tamano.
 - Reproduccion de experimentos de la familia `nanochrono`: investigadores interesados en la etiqueta `sn38-nanochrono` pueden usar el checkpoint para comparar configuraciones dentro de la misma familia.
 - Fine-tuning ligero en tareas de secuencias temporales: si el sufijo `chrono` implica un sesgo hacia datos cronologicos, el modelo podria adaptarse a tareas de prediccion de series temporales o generacion de texto con marcas de tiempo, aunque esto no esta verificado.
-- Pruebas de integracion con pipelines de HuggingFace: al ser un modelo gated en safetensors, es util para validar flujos de aceptacion de licencia y carga con `transformers`.
+- Pruebas de integracion con pipelines de Hugging Face: al ser un modelo gated en safetensors, es util para validar flujos de aceptacion de licencia y carga con `transformers`.
 - Evaluacion de robustez en modelos de bajo numero de parametros: util para comparar frente a modelos similares en tareas de generacion corta.
 - Docencia y formacion: por su tamano moderado y licencia permisiva, puede emplearse en cursos sobre entrenamiento y despliegue de modelos de lenguaje.
 
@@ -74,5 +74,5 @@ La comparativa se limita a modelos de tamano similar ampliamente conocidos, ya q
 - No se dispone de archivos GGUF ni de cuantizaciones publicadas, lo que limita el despliegue en entornos con poca VRAM sin trabajo adicional.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono4-w60-s100
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono4-w60-s100
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web.

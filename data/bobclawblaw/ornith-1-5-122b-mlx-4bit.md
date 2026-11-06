@@ -90,7 +90,7 @@ No se dispone en la información proporcionada de datos de otros modelos de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BobClawblaw/Ornith-1.5-122B-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/BobClawblaw/Ornith-1.5-122B-MLX-4bit
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B
 - Licencia del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B/blob/main/LICENSE
 - Drafter para decodificación especulativa: https://huggingface.co/incoai/Ornith-1.5-122B-DFlash2

@@ -69,7 +69,7 @@ No disponible. No se ha proporcionado información sobre otros modelos de super-
 
 ## Enlaces
 
-- [HuggingFace: AMAImedia/UniverSR-Darwin-NOESIS-BF16](https://huggingface.co/AMAImedia/UniverSR-Darwin-NOESIS-BF16)
+- [Hugging Face: AMAImedia/UniverSR-Darwin-NOESIS-BF16](https://huggingface.co/AMAImedia/UniverSR-Darwin-NOESIS-BF16)
 - [Sitio web de AMAImedia](https://www.amaimedia.com)
 - [X (Twitter) de AMAImedia](https://x.com/AMAImediacom)
 - [LinkedIn de Ilia Bolotnikov](https://www.linkedin.com/in/ilia-bolotnikov)

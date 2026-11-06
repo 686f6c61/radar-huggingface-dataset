@@ -84,10 +84,10 @@ Tiempo hasta el primer token con una imagen y el prompt "Describe this image.": 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MiniCPM-V 4.7 35B-A3B (este paquete, NPU2) | 35B totales / ~3B activos | Hasta 32k medidos | Apache-2.0 | HuggingFace, formato `q4nx` para FLM | Optimizado para NPU AMD; sin video ni audio |
-| MiniCPM-V 4.7 35B-A3B (upstream) | 35B totales / ~3B activos | No disponible | Apache-2.0 | HuggingFace, pesos originales | Referencia BF16; soporta video; ejecutable en Transformers |
+| MiniCPM-V 4.7 35B-A3B (este paquete, NPU2) | 35B totales / ~3B activos | Hasta 32k medidos | Apache-2.0 | Hugging Face, formato `q4nx` para FLM | Optimizado para NPU AMD; sin video ni audio |
+| MiniCPM-V 4.7 35B-A3B (upstream) | 35B totales / ~3B activos | No disponible | Apache-2.0 | Hugging Face, pesos originales | Referencia BF16; soporta video; ejecutable en Transformers |
 | Qwen3.6 35B-A3B | 35B totales / ~3B activos | No disponible | No disponible en la informacion | No disponible | Citado por OpenBMB como referencia: en modo Instruct, MiniCPM-V 4.7 35B-A3B logra mayor puntuacion global en menos tiempo de inferencia |
-| llama.cpp Q4_K_M del mismo modelo | 35B totales / ~3B activos | No disponible | Apache-2.0 | GGUF en HuggingFace | Alternativa en CPU/GPU; misma calidad aproximada (97/100 en GSM8K, 97,42 ANLS en DocVQA) |
+| llama.cpp Q4_K_M del mismo modelo | 35B totales / ~3B activos | No disponible | Apache-2.0 | GGUF en Hugging Face | Alternativa en CPU/GPU; misma calidad aproximada (97/100 en GSM8K, 97,42 ANLS en DocVQA) |
 
 ## Limitaciones y advertencias
 
@@ -103,7 +103,7 @@ Tiempo hasta el primer token con una imagen y el prompt "Describe this image.": 
 
 ## Enlaces
 
-- Repositorio HuggingFace del paquete: https://huggingface.co/FastFlowLM/MiniCPM-V-4.7-35B-A3B-NPU2
+- Repositorio Hugging Face del paquete: https://huggingface.co/FastFlowLM/MiniCPM-V-4.7-35B-A3B-NPU2
 - Modelo upstream: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - Variante DSpark: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-DSpark
 - Repositorio FastFlowLM: https://github.com/FastFlowLM/FastFlowLM

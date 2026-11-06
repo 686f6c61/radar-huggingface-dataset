@@ -25,7 +25,7 @@ La información pública disponible sobre este repositorio concreto es muy escas
 
 No hay informacion disponible sobre la arquitectura interna, el numero de tokens de entrenamiento, la composicion del dataset ni la existencia de fases de RLHF, DPO o ajuste por instrucciones. La unica pista es la etiqueta `minicpm` del repositorio, que apunta a la familia MiniCPM, y la etiqueta `code`, que indica especializacion en codigo. El sufijo "pro-f16" del nombre del modelo base sugiere que este se publico en precision f16, y el sufijo "i1" del repo de mradermacher indica cuantizacion con importancia matrix (imatrix), una tecnica que pondera los pesos segun su relevancia para reducir la perdida de calidad en cuantizaciones agresivas.
 
-El proceso de cuantizacion documentado en la model card incluye los metadatos `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversion desde pesos en formato HuggingFace con cuantizacion de los tensores de salida. El autor reconoce a nicoboss por el acceso a infraestructura de computo para generar cuantizaciones imatrix de mayor calidad. Se declara tambien la existencia de cuantizaciones estaticas en un repositorio separado.
+El proceso de cuantizacion documentado en la model card incluye los metadatos `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversion desde pesos en formato Hugging Face con cuantizacion de los tensores de salida. El autor reconoce a nicoboss por el acceso a infraestructura de computo para generar cuantizaciones imatrix de mayor calidad. Se declara tambien la existencia de cuantizaciones estaticas en un repositorio separado.
 
 ## Capacidades
 
@@ -98,7 +98,7 @@ La principal ventaja competitiva de este repositorio es el catalogo de cuantizac
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones imatrix): https://huggingface.co/mradermacher/LycheeAI-coder-2b-II-pro-f16-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones imatrix): https://huggingface.co/mradermacher/LycheeAI-coder-2b-II-pro-f16-i1-GGUF
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/LycheeAI-coder-2b-II-pro-f16-GGUF
 - Modelo base: https://huggingface.co/whcl412/LycheeAI-coder-2b-II-pro-f16
 - Pagina resumen del cuantizador para este modelo: https://hf.tst.eu/model#LycheeAI-coder-2b-II-pro-f16-i1-GGUF

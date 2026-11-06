@@ -81,7 +81,7 @@ La comparación con el checkpoint original de MyShell es la más directa: compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jmoraleses/folio-melo-fr-mlx
+- Repositorio Hugging Face: https://huggingface.co/jmoraleses/folio-melo-fr-mlx
 - Checkpoint original: https://huggingface.co/myshell-ai/MeloTTS-French
 - BERT francés auxiliar: https://huggingface.co/dbmdz/bert-base-french-europeana-cased
 - Repositorio Folio iOS (script de conversión): https://github.com/jmoraleses/Folio-iOS

@@ -69,8 +69,8 @@ No se dispone de datos numéricos comparativos para modelos borradores específi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RedHatAI/gemma-4-31B-it-speculator.dflash2 | 2,75 B (borrador) | Ventana deslizante 2.048; total-seq-len 8.192 | Apache-2.0 | HuggingFace, uso con vLLM |
-| google/gemma-4-31B-it (verificador) | 31 B (no confirmado) | No disponible | Terminos de Gemma | HuggingFace |
+| RedHatAI/gemma-4-31B-it-speculator.dflash2 | 2,75 B (borrador) | Ventana deslizante 2.048; total-seq-len 8.192 | Apache-2.0 | Hugging Face, uso con vLLM |
+| google/gemma-4-31B-it (verificador) | 31 B (no confirmado) | No disponible | Terminos de Gemma | Hugging Face |
 | Otros borradores DFlash2 / EAGLE / Medusa para gemma-4-31B-it | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone de datos numéricos comparativos para modelos borradores específi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RedHatAI/gemma-4-31B-it-speculator.dflash2
+- Modelo en Hugging Face: https://huggingface.co/RedHatAI/gemma-4-31B-it-speculator.dflash2
 - Modelo base (verificador): https://huggingface.co/google/gemma-4-31B-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/mlabonne/open-perfectblend
 - Librería Speculators: https://github.com/vllm-project/speculators

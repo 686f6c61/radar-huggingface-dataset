@@ -24,7 +24,7 @@ Su relevancia es fundamentalmente práctica: ofrece un punto de partida reproduc
 | Tarea (pipeline) | image-text-to-text |
 | Tamaño del repositorio | 3,8 GB |
 | Software de construcción | transformers 5.2.0, bitsandbytes 0.49.2, torch 2.9.1, compilado sobre CUDA |
-| Idiomas de la librería / idiomas no declarados | Etiquetas de HuggingFace: `transformers`, `safetensors`, `qwen3_5`, `image-text-to-text`, `bitsandbytes`, `nf4`, `4-bit`, `conversational`, `endpoints_compatible`, `region:us` |
+| Idiomas de la librería / idiomas no declarados | Etiquetas de Hugging Face: `transformers`, `safetensors`, `qwen3_5`, `image-text-to-text`, `bitsandbytes`, `nf4`, `4-bit`, `conversational`, `endpoints_compatible`, `region:us` |
 
 ## Arquitectura y entrenamiento
 
@@ -37,7 +37,7 @@ En cuanto al proceso de construcción, este repositorio no documenta ningún ent
 - Generación de texto condicionada por imagen: el pipeline declarado es `image-text-to-text`, por lo que acepta una o varias imágenes junto con una instrucción textual y produce texto.
 - Descripción y lectura de imágenes: el nombre del repositorio ("picture reader") indica que su uso previsto es interpretar el contenido visual y responder preguntas sobre él.
 - Conversación multimodal multi-turno: la presencia de `chat_template.jinja` y la etiqueta `conversational` apuntan a diálogo con historial, aunque el número de turnos soportados depende del contexto, que no está documentado.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse en la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse en la infraestructura de Inference Endpoints de Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
 - Capacidades multilingües: no disponible; el repositorio no declara ningún idioma.
@@ -65,15 +65,15 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - GPU de consumo compatibles (estimación): RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090. En GPUs de 8 GB (RTX 3060 Ti, 4060, 3070) sería viable con contexto reducido y lote 1. En GPUs de 6 GB el margen es muy ajustado.
 - GPU de datacenter: A100, H100 o L40S no son necesarias para una sola secuencia; tienen sentido para servir muchas peticiones concurrentes o lotes grandes.
 - Requisito de software: al estar los pesos en NF4 de bitsandbytes, la inferencia eficiente requiere `bitsandbytes` con kernels CUDA; no es una carga de precisión completa estándar.
-- Opciones de despliegue: `transformers` con `bitsandbytes` es la ruta soportada explícitamente por el repositorio. La etiqueta `endpoints_compatible` apunta a HuggingFace Inference Endpoints. El soporte en vLLM o TGI de pesos NF4 pre-cuantizados no está confirmado. No se incluyen pesos GGUF, por lo que no hay ruta directa con llama.cpp u Ollama.
+- Opciones de despliegue: `transformers` con `bitsandbytes` es la ruta soportada explícitamente por el repositorio. La etiqueta `endpoints_compatible` apunta a Hugging Face Inference Endpoints. El soporte en vLLM o TGI de pesos NF4 pre-cuantizados no está confirmado. No se incluyen pesos GGUF, por lo que no hay ruta directa con llama.cpp u Ollama.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| digitalartdynamics/facadelab-vision-assist | 4,54B (safetensors) | No disponible | 4-bit NF4 de bitsandbytes, bf16 en visión y `lm_head` | Apache 2.0 | Repositorio HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (modelo base) | No disponible en la información proporcionada | No disponible | bf16 de precisión completa | Apache 2.0 | Repositorio HuggingFace del modelo original |
+| digitalartdynamics/facadelab-vision-assist | 4,54B (safetensors) | No disponible | 4-bit NF4 de bitsandbytes, bf16 en visión y `lm_head` | Apache 2.0 | Repositorio Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (modelo base) | No disponible en la información proporcionada | No disponible | bf16 de precisión completa | Apache 2.0 | Repositorio Hugging Face del modelo original |
 | Otras alternativas de la misma categoría (VLM de ~3-7B) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre otros modelos comparables en la documentación facilitada, más allá de la relación directa con el modelo base del que deriva esta cuantización.
@@ -95,7 +95,7 @@ No se dispone de información sobre otros modelos comparables en la documentaci�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/digitalartdynamics/facadelab-vision-assist
+- Repositorio en Hugging Face: https://huggingface.co/digitalartdynamics/facadelab-vision-assist
 - Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Revisión concreta del modelo base utilizada: https://huggingface.co/Qwen/Qwen3.5-4B/tree/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a
 - Librería bitsandbytes: https://github.com/bitsandbytes-foundation/bitsandbytes

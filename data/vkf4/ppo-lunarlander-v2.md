@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VKF4/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2, un problema clasico de control continuo/discreto en el que un modulo debe aterrizar de forma estable sobre una plataforma. El modelo lo publica el usuario VKF4 en HuggingFace y esta construido con la libreria stable-baselines3, el framework de referencia para implementaciones reproducibles de algoritmos de RL. No es un modelo de lenguaje: no procesa texto ni genera contenido, sino que aprende una politica de accion a partir de observaciones numericas del entorno.
+VKF4/ppo-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2, un problema clasico de control continuo/discreto en el que un modulo debe aterrizar de forma estable sobre una plataforma. El modelo lo publica el usuario VKF4 en Hugging Face y esta construido con la libreria stable-baselines3, el framework de referencia para implementaciones reproducibles de algoritmos de RL. No es un modelo de lenguaje: no procesa texto ni genera contenido, sino que aprende una politica de accion a partir de observaciones numericas del entorno.
 
 El modelo declara un rendimiento medio de recompensa de 275.85 +/- 23.90 en LunarLander-v2, un resultado por encima del umbral de 200 que la comunidad de Gym/Gymnasium considera convencionalmente como "entorno resuelto". Esto lo situa como un agente funcionalmente competente para esta tarea concreta. Los resultados estan marcados como no verificados por un tercero.
 
@@ -71,7 +71,7 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para construir una comparativa rigurosa. Existen en HuggingFace otros agentes PPO entrenados sobre LunarLander-v2 publicados por distintos autores (por ejemplo, dentro del ecosistema de stable-baselines3 y de tutoriales de deep RL), pero no se han proporcionado datos verificables de parametros, contexto, rendimiento o licencia de esos modelos en la informacion disponible.
+No se dispone de informacion suficiente para construir una comparativa rigurosa. Existen en Hugging Face otros agentes PPO entrenados sobre LunarLander-v2 publicados por distintos autores (por ejemplo, dentro del ecosistema de stable-baselines3 y de tutoriales de deep RL), pero no se han proporcionado datos verificables de parametros, contexto, rendimiento o licencia de esos modelos en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
@@ -92,7 +92,7 @@ No se dispone de informacion suficiente para construir una comparativa rigurosa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VKF4/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/VKF4/ppo-LunarLander-v2
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad huggingface_sb3 (mencionada en la model card): https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v2 (Gymnasium/Gym): no disponible en la informacion proporcionada

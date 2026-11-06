@@ -91,8 +91,8 @@ No hay resultados publicados de MMLU, HumanEval, recuperacion a 1M de tokens, so
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (graft + Engram MXINT-4) | ~189B | 1M | EXL3 2.0bpw + MXINT-4 | no disponible | HuggingFace, 39 descargas |
-| DeepSeek-V4.1-Flash-EXL3-2.0bpw-2x-RTX-PRO-6000 (diffbot) | ~189B (base del injerto) | no disponible en la informacion | EXL3 2.0bpw, Engram en fp8 | no disponible | HuggingFace |
+| Este checkpoint (graft + Engram MXINT-4) | ~189B | 1M | EXL3 2.0bpw + MXINT-4 | no disponible | Hugging Face, 39 descargas |
+| DeepSeek-V4.1-Flash-EXL3-2.0bpw-2x-RTX-PRO-6000 (diffbot) | ~189B (base del injerto) | no disponible en la informacion | EXL3 2.0bpw, Engram en fp8 | no disponible | Hugging Face |
 | Variante EXL3 2.9bpw citada en la model card | no disponible | no disponible | EXL3 2.9bpw | no disponible | citada, sin enlace en la informacion |
 | DeepSeek v4.1 Flash stock (pre-injerto) | ~189B | 1M (segun este stack) | sin cuantizar / oficial | no disponible | API oficial citada en la model card |
 
@@ -117,7 +117,7 @@ La comparacion de rendimiento entre estas variantes se limita a lo publicado: GS
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/satgeze/DeepSeek-v4.1-Flash-EXL3-2.0bpw-Ablit-EngramQ4-SM120-Dual-RTX-Pro-6000
+- Checkpoint en Hugging Face: https://huggingface.co/satgeze/DeepSeek-v4.1-Flash-EXL3-2.0bpw-Ablit-EngramQ4-SM120-Dual-RTX-Pro-6000
 - Cuantizacion base de diffbot: https://huggingface.co/diffbot/DeepSeek-V4.1-Flash-EXL3-2.0bpw-2x-RTX-PRO-6000
 - Documentacion de benchmarks del repositorio: `docs/BENCH.md` (ruta relativa dentro del propio repositorio; no se ha proporcionado URL directa)
 - Script de construccion del pack hibrido: `tools/build_ablit_hybrid.py` (ruta relativa dentro del repositorio)

@@ -6,7 +6,7 @@ Zen-3B-It-Obliterated-i1-GGUF es un repositorio de cuantizaciones en formato GGU
 
 El nombre del modelo base indica un tamano de 3B parámetros y el sufijo "It" sugiere un ajuste por instrucciones, mientras que "Obliterated" apunta a una variante del tipo abliterated, es decir, con las direcciones de rechazo eliminadas del espacio de activaciones. Esta interpretación procede únicamente de la nomenclatura: la model card no documenta ni el proceso de abliteración ni el entrenamiento original.
 
-La relevancia del repositorio es acotada y conviene ser explícito: cuenta con 0 descargas y 0 likes, el tamano del repositorio figura como 0,0 GB y la tabla de archivos proporcionados solo lista el fichero imatrix (0,1 GB), no las cuantizaciones finales. Además, no se declara licencia en los metadatos de HuggingFace, lo que bloquea cualquier evaluación de uso comercial hasta que el autor la aclare.
+La relevancia del repositorio es acotada y conviene ser explícito: cuenta con 0 descargas y 0 likes, el tamano del repositorio figura como 0,0 GB y la tabla de archivos proporcionados solo lista el fichero imatrix (0,1 GB), no las cuantizaciones finales. Además, no se declara licencia en los metadatos de Hugging Face, lo que bloquea cualquier evaluación de uso comercial hasta que el autor la aclare.
 
 ## Especificaciones técnicas
 

@@ -12,7 +12,7 @@ Es relevante por su perfil de despliegue: 71 millones de parametros, licencia MI
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder cross-encoder basado en DeBERTa-v3-xsmall (etiqueta del repo: `deberta-v2`, clase de configuracion DebertaV2 de HuggingFace) |
+| Arquitectura | Transformer encoder cross-encoder basado en DeBERTa-v3-xsmall (etiqueta del repo: `deberta-v2`, clase de configuracion DebertaV2 de Hugging Face) |
 | Parametros totales | 70.831.107 |
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
@@ -27,7 +27,7 @@ Es relevante por su perfil de despliegue: 71 millones de parametros, licencia MI
 
 ## Arquitectura y entrenamiento
 
-Se trata de un cross-encoder denso: la premisa y la hipotesis se concatenan en una unica secuencia de entrada y el encoder produce una representacion conjunta que se proyecta a una cabeza de clasificacion binaria de entailment. El backbone es DeBERTa-v3-xsmall, la variante pequena de la familia DeBERTa-v3, que emplea atencion desacoplada y un objetivo de preentrenamiento estilo ELECTRA con deteccion de tokens reemplazados; esa base ya viene afinada para NLI en `cross-encoder/nli-deberta-v3-xsmall`. La etiqueta `deberta-v2` del repositorio corresponde a la clase de configuracion que HuggingFace utiliza para esta familia.
+Se trata de un cross-encoder denso: la premisa y la hipotesis se concatenan en una unica secuencia de entrada y el encoder produce una representacion conjunta que se proyecta a una cabeza de clasificacion binaria de entailment. El backbone es DeBERTa-v3-xsmall, la variante pequena de la familia DeBERTa-v3, que emplea atencion desacoplada y un objetivo de preentrenamiento estilo ELECTRA con deteccion de tokens reemplazados; esa base ya viene afinada para NLI en `cross-encoder/nli-deberta-v3-xsmall`. La etiqueta `deberta-v2` del repositorio corresponde a la clase de configuracion que Hugging Face utiliza para esta familia.
 
 El ajuste se realizo sobre tres fuentes combinadas: 725 pares de tickets propios del proyecto repetidos 8 veces (equivalente a unas 5.800 muestras efectivas), 267.000 pares del corpus Open-Jev y 200.000 pares de MNLI, durante 2 epocas. No se especifica en la informacion disponible la funcion de perdida exacta, el optimizador ni el esquema de calibracion, pese a que la etiqueta `calibration` aparece en el repositorio. Tampoco se documentan fases de RLHF o DPO, algo esperable en un modelo discriminativo de clasificacion. No se han publicado datos sobre decodificacion especulativa ni sobre optimizaciones de atencion.
 
@@ -74,16 +74,16 @@ Referencias externas citadas en la propia model card para el conjunto Open-Jev-9
 - VRAM estimada para inferencia: menos de 1 GB en fp16 contando activaciones y overhead con lotes moderados; del orden de 2 a 4 GB si se ejecuta en fp32 con lotes grandes.
 - GPU recomendadas: cualquier GPU con 2 GB o mas de memoria, incluidas GTX 1050 Ti, RTX 3050, RTX 4060 o superiores; tambien A100, H100 y L4, aunque estan sobredimensionadas para este tamano.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna, y tambien en CPU sin acelerador.
-- Opciones de despliegue: `transformers` con `AutoModelForSequenceClassification`, `text-embeddings-inference` (etiqueta presente en el repositorio) y endpoints compatibles con HuggingFace. No hay pesos GGUF publicados, por lo que no es desplegable directamente en llama.cpp u Ollama.
+- Opciones de despliegue: `transformers` con `AutoModelForSequenceClassification`, `text-embeddings-inference` (etiqueta presente en el repositorio) y endpoints compatibles con Hugging Face. No hay pesos GGUF publicados, por lo que no es desplegable directamente en llama.cpp u Ollama.
 - Latencia y throughput: no disponible. El autor solo indica que la inferencia es exclusivamente en CPU.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| raz-systemone-nli-xsmall-openjev | 70,8 M | no disponible | MIT | Cross-encoder NLI, tickets + Open-Jev + MNLI | HuggingFace, 0 descargas |
+| raz-systemone-nli-xsmall-openjev | 70,8 M | no disponible | MIT | Cross-encoder NLI, tickets + Open-Jev + MNLI | Hugging Face, 0 descargas |
 | raz-systemone-nli-xsmall | mismo backbone DeBERTa-v3-xsmall (segun la model card) | no disponible | no disponible | Cross-encoder NLI, tickets + MNLI | Referenciado en la model card del modelo analizado |
-| cross-encoder/nli-deberta-v3-xsmall | mismo backbone DeBERTa-v3-xsmall | no disponible | no disponible | Cross-encoder NLI generico, base del ajuste | HuggingFace |
+| cross-encoder/nli-deberta-v3-xsmall | mismo backbone DeBERTa-v3-xsmall | no disponible | no disponible | Cross-encoder NLI generico, base del ajuste | Hugging Face |
 
 No se dispone de datos de rendimiento publicados para los dos modelos comparables en la informacion proporcionada, por lo que la comparacion se limita a parametros, licencia y disponibilidad. No se han identificado modelos adicionales de la misma categoria con datos verificables en la busqueda realizada.
 
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento publicados para los dos modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RazvanManolache/raz-systemone-nli-xsmall-openjev
+- Modelo en Hugging Face: https://huggingface.co/RazvanManolache/raz-systemone-nli-xsmall-openjev
 - Repositorio del proyecto `raz-systemone`: https://github.com/RazvanManolache/raz-systemone
 - Modelo base: https://huggingface.co/cross-encoder/nli-deberta-v3-xsmall
 - La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo; los unicos resultados obtenidos no guardan relacion con el contenido tecnico de esta ficha.

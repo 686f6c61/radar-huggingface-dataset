@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ERNIE_45_VL_28B_A3B_PT_LaTeX_OCR_finetuned_16bit es un ajuste fino (fine-tuning) del modelo multimodal ERNIE-4.5-VL-28B-A3B-PT, publicado por el usuario aliRafik en HuggingFace. Se trata de un modelo de imagen-a-texto especializado en OCR de fórmulas y documentos LaTeX, construido sobre la arquitectura MoE multimodal de la familia ERNIE 4.5 de Baidu y entrenado con las herramientas de Unsloth y la librería TRL de HuggingFace, según indica la propia model card.
+ERNIE_45_VL_28B_A3B_PT_LaTeX_OCR_finetuned_16bit es un ajuste fino (fine-tuning) del modelo multimodal ERNIE-4.5-VL-28B-A3B-PT, publicado por el usuario aliRafik en Hugging Face. Se trata de un modelo de imagen-a-texto especializado en OCR de fórmulas y documentos LaTeX, construido sobre la arquitectura MoE multimodal de la familia ERNIE 4.5 de Baidu y entrenado con las herramientas de Unsloth y la librería TRL de Hugging Face, según indica la propia model card.
 
 El modelo hereda del identificador un total de 28.000 millones de parámetros con aproximadamente 3.000 millones activos por token (sufijo A3B), lo que lo sitúa en la categoría de MoE disperso orientado a inferencia eficiente. Su pipeline declarado es `image-text-to-text` y el repositorio ocupa 45,0 GB en pesos safetensors de 16 bits.
 
@@ -33,7 +33,7 @@ En cuanto al entrenamiento, la información disponible es mínima: se trata de u
 - Reconocimiento óptico de caracteres sobre documentos con notación matemática, presumiblemente orientado a convertir imágenes de ecuaciones en código LaTeX.
 - Comprensión de imágenes en general, heredada del modelo base multimodal ERNIE-4.5-VL.
 - Generación de texto conversacional (etiqueta `conversational` en el repositorio).
-- Compatibilidad con Text Generation Inference (etiqueta `text-generation-inference` y `endpoints_compatible`), lo que sugiere viabilidad de despliegue en HuggingFace Inference Endpoints.
+- Compatibilidad con Text Generation Inference (etiqueta `text-generation-inference` y `endpoints_compatible`), lo que sugiere viabilidad de despliegue en Hugging Face Inference Endpoints.
 - No se documenta soporte de tool calling, function calling, razonamiento multi-paso, modo de pensamiento explícito ni capacidades de audio.
 - Capacidad multilingüe limitada al inglés según la etiqueta de idioma declarada, aunque el modelo base podría tener cobertura adicional no reflejada en esta ficha.
 
@@ -67,8 +67,8 @@ Nota: el repositorio ocupa 45,0 GB, por debajo de los ~56 GB teóricos de un mod
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ERNIE_45_VL_28B_A3B_PT_LaTeX_OCR_finetuned_16bit | 28B totales / 3B activos (derivado del nombre) | no disponible | No se han publicado benchmarks | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| unsloth/ERNIE-4.5-VL-28B-A3B-PT (modelo base) | 28B totales / 3B activos | no disponible en esta ficha | No disponible | apache-2.0 | HuggingFace (modelo base del ajuste) |
+| ERNIE_45_VL_28B_A3B_PT_LaTeX_OCR_finetuned_16bit | 28B totales / 3B activos (derivado del nombre) | no disponible | No se han publicado benchmarks | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| unsloth/ERNIE-4.5-VL-28B-A3B-PT (modelo base) | 28B totales / 3B activos | no disponible en esta ficha | No disponible | apache-2.0 | Hugging Face (modelo base del ajuste) |
 | Otros OCR especializados en LaTeX (por ejemplo, ajustes sobre Qwen2.5-VL o GOT-OCR2.0) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de benchmarks ni de especificaciones comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable con alternativas de la misma categoría.
@@ -86,9 +86,9 @@ No se dispone de datos verificados de benchmarks ni de especificaciones comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aliRafik/ERNIE_45_VL_28B_A3B_PT_LaTeX_OCR_finetuned_16bit
+- Modelo en Hugging Face: https://huggingface.co/aliRafik/ERNIE_45_VL_28B_A3B_PT_LaTeX_OCR_finetuned_16bit
 - Modelo base: https://huggingface.co/unsloth/ERNIE-4.5-VL-28B-A3B-PT
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: no se proporciona enlace directo en la información disponible
+- TRL de Hugging Face: no se proporciona enlace directo en la información disponible
 - Paper, blog o demo oficial del modelo: no disponible
 - Resultados de búsqueda web: no contienen enlaces técnicos relevantes sobre este modelo

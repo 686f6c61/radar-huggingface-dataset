@@ -109,7 +109,7 @@ No se dispone de datos en la informacion proporcionada para comparar con otras a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smile-forge/real-esrgan-gfpgan-onnx
+- Modelo en Hugging Face: https://huggingface.co/smile-forge/real-esrgan-gfpgan-onnx
 - Nexaflow, host de IA para el que se construyeron los grafos: https://github.com/smile-forge/nexaflow
 - Real-ESRGAN (xinntao): https://github.com/xinntao/Real-ESRGAN
 - GFPGAN (TencentARC): https://github.com/TencentARC/GFPGAN

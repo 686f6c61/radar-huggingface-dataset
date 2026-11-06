@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning experimental del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. El nombre del repositorio (`target-only-no-hallucination-first-third-sft`) sugiere que se trata de un ajuste supervisado (SFT) orientado a reducir alucinaciones, posiblemente entrenado únicamente con respuestas objetivo y con datos de primera y tercera persona, aunque no se proporcionan detalles del dataset ni de la metodología. El entrenamiento se realizó con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un proceso optimizado para velocidad.
+Este modelo es un fine-tuning experimental del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. El nombre del repositorio (`target-only-no-hallucination-first-third-sft`) sugiere que se trata de un ajuste supervisado (SFT) orientado a reducir alucinaciones, posiblemente entrenado únicamente con respuestas objetivo y con datos de primera y tercera persona, aunque no se proporcionan detalles del dataset ni de la metodología. El entrenamiento se realizó con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un proceso optimizado para velocidad.
 
 El modelo conserva la arquitectura Llama-3.1 de 8.030 millones de parámetros, con licencia Apache 2.0 y soporte únicamente para inglés. Al ser un fine-tuning del instruct base, hereda las capacidades generales de generación de texto, razonamiento y código, pero no se han publicado evaluaciones específicas que confirmen si el objetivo anti-alucinación se ha logrado. Su relevancia radica en ser un ejemplo de ajuste dirigido a mitigar un problema crítico en modelos generativos, aunque su utilidad práctica queda limitada por la falta de documentación y benchmarks.
 
@@ -21,7 +21,7 @@ El modelo conserva la arquitectura Llama-3.1 de 8.030 millones de parámetros, c
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning supervisado (SFT) del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una version optimizada del Llama-3.1-8B-Instruct original. La arquitectura subyacente es un transformer decoder-only con 8.030 millones de parametros, atencion por ventanas (GQA) y una longitud de contexto nativa de 128k tokens en el modelo base. El entrenamiento se realizo con la libreria Unsloth, que acelera el ajuste fino mediante kernels optimizados, y con el framework TRL de HuggingFace para el pipeline de SFT.
+El modelo es un fine-tuning supervisado (SFT) del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una version optimizada del Llama-3.1-8B-Instruct original. La arquitectura subyacente es un transformer decoder-only con 8.030 millones de parametros, atencion por ventanas (GQA) y una longitud de contexto nativa de 128k tokens en el modelo base. El entrenamiento se realizo con la libreria Unsloth, que acelera el ajuste fino mediante kernels optimizados, y con el framework TRL de Hugging Face para el pipeline de SFT.
 
 No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas adicionales como RLHF o DPO. El nombre del repositorio sugiere un enfoque especifico para reducir alucinaciones (entrenamiento solo con respuestas objetivo y posiblemente con datos de primera y tercera persona), pero no hay documentacion que detalle la metodologia ni los datos utilizados. Tampoco se mencionan innovaciones tecnicas mas alla del uso de Unsloth para acelerar el entrenamiento.
 
@@ -71,6 +71,6 @@ No se dispone de comparativas publicadas para este checkpoint. Como referencia, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed3
+- Repositorio Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed3
 - Libreria Unsloth: https://github.com/unslothai/unsloth
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct

@@ -79,7 +79,7 @@ No se dispone de datos comparativos verificados para este bundle cuantizado. Com
 
 ## Enlaces
 
-- [HuggingFace - ariacompute/gemma-4-e2b-it_q326_channel](https://huggingface.co/ariacompute/gemma-4-e2b-it_q326_channel)
+- [Hugging Face - ariacompute/gemma-4-e2b-it_q326_channel](https://huggingface.co/ariacompute/gemma-4-e2b-it_q326_channel)
 - [Modelo base - google/gemma-4-e2b-it](https://huggingface.co/google/gemma-4-e2b-it)
 - [Repositorio original de Google - google-gemma/gemma-4](https://github.com/google-gemma/gemma-4)
 - [Paper técnico de Gemma 4 (arXiv)](https://arxiv.org/abs/2601.00000)

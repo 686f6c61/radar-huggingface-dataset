@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `griffinlabs/xvla-finetuned-bipiper-lora-shared` es una política de robótica basada en el modelo X-VLA, desarrollada por Griffin Labs para tareas de manipulación bimanual. Se trata de un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre el checkpoint fundacional X-VLA-Pt, entrenado con el dataset `griffinlabs/bipiper_combined_ee6d`. El modelo se distribuye a través del ecosistema LeRobot de HuggingFace, lo que facilita su integración en pipelines de entrenamiento e inferencia robótica.
+El modelo `griffinlabs/xvla-finetuned-bipiper-lora-shared` es una política de robótica basada en el modelo X-VLA, desarrollada por Griffin Labs para tareas de manipulación bimanual. Se trata de un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre el checkpoint fundacional X-VLA-Pt, entrenado con el dataset `griffinlabs/bipiper_combined_ee6d`. El modelo se distribuye a través del ecosistema LeRobot de Hugging Face, lo que facilita su integración en pipelines de entrenamiento e inferencia robótica.
 
 X-VLA es una familia de modelos de visión-lenguaje-acción (VLA) desarrollada por el grupo AIR de la Universidad de Tsinghua, que combina un codificador visual, un modelo de lenguaje y un decodificador de acciones para controlar robots a partir de instrucciones en lenguaje natural y observaciones visuales. Este modelo concreto está orientado a la gestión autónoma de instalaciones, un dominio en el que Griffin Labs está especializado, y emplea técnicas de ajuste eficiente de parámetros (PEFT) para adaptarse rápidamente a nuevas tareas con recursos limitados.
 
@@ -32,7 +32,7 @@ Este modelo concreto aplica un ajuste fino mediante LoRA sobre el checkpoint X-V
 - Control robótico bimanual: el modelo está diseñado para tareas de manipulación con dos brazos, como indica el nombre "bipiper" y el dataset de entrenamiento.
 - Ejecución de políticas visuomotoras: recibe observaciones visuales y produce acciones motoras para el robot.
 - Ajuste eficiente mediante LoRA: el adaptador permite adaptar el modelo a tareas específicas con un coste computacional reducido.
-- Integración con LeRobot: compatible con el ecosistema de HuggingFace para entrenamiento, evaluación e inferencia robótica.
+- Integración con LeRobot: compatible con el ecosistema de Hugging Face para entrenamiento, evaluación e inferencia robótica.
 - Capacidades de adaptación rápida: el uso de PEFT facilita el fine-tuning en nuevos escenarios con pocos datos.
 - Percepción y razonamiento: al estar basado en X-VLA, hereda capacidades de comprensión visual y de instrucciones en lenguaje natural, aunque no se especifican los detalles de rendimiento en este modelo concreto.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| griffinlabs/xvla-finetuned-bipiper-lora-shared | X-VLA + LoRA | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| X-VLA-Pt (checkpoint base) | X-VLA | no disponible | no disponible | no disponible | GitHub / HuggingFace |
-| LeRobot ACT | Transformer-based policy | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| griffinlabs/xvla-finetuned-bipiper-lora-shared | X-VLA + LoRA | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| X-VLA-Pt (checkpoint base) | X-VLA | no disponible | no disponible | no disponible | GitHub / Hugging Face |
+| LeRobot ACT | Transformer-based policy | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 La comparativa es limitada porque no se dispone de datos de rendimiento ni de especificaciones detalladas del modelo. X-VLA-Pt es el checkpoint fundacional sobre el que se basa este adaptador, mientras que ACT es otra política popular en el ecosistema LeRobot para tareas de imitación. No se dispone de información suficiente para una comparación cuantitativa.
 
@@ -79,7 +79,7 @@ La comparativa es limitada porque no se dispone de datos de rendimiento ni de es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/griffinlabs/xvla-finetuned-bipiper-lora-shared
+- Modelo en Hugging Face: https://huggingface.co/griffinlabs/xvla-finetuned-bipiper-lora-shared
 - Sitio web de Griffin Labs: https://griffinlabs.ai/
 - Sitio web de Griffin Labs (organización): https://www.griffinlabs.org/
 - Página del proyecto X-VLA: https://thu-air-dream.github.io/X-VLA/

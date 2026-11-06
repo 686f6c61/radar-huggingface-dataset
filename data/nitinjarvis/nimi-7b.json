@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "nitinjarvis/nimi-7b",
+  "slug": "nitinjarvis-nimi-7b",
+  "author": "nitinjarvis",
+  "url": "https://huggingface.co/nitinjarvis/nimi-7b",
+  "created_at": "2026-11-06T08:24:49.000Z",
+  "updated_at": "2026-11-06T08:25:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073696,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

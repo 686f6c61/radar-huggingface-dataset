@@ -67,8 +67,8 @@ No hay datos de rendimiento publicados para este checkpoint, por lo que la compa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| joshycodes/qwen3-4b-fve-g25-s0 | 4,41 B (safetensors) | no disponible | research-only | HuggingFace, 0 descargas, 0 likes | ninguno |
-| Qwen/Qwen3-4B (modelo base) | ~4 B (4,41 B en safetensors segun este repo) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace, ampliamente distribuido | no disponible en la informacion proporcionada |
+| joshycodes/qwen3-4b-fve-g25-s0 | 4,41 B (safetensors) | no disponible | research-only | Hugging Face, 0 descargas, 0 likes | ninguno |
+| Qwen/Qwen3-4B (modelo base) | ~4 B (4,41 B en safetensors segun este repo) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face, ampliamente distribuido | no disponible en la informacion proporcionada |
 | Otras alternativas de la misma categoria (p. ej. Qwen3-4B-Thinking, Llama-3.2-3B, Gemma-3-4B) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 La única comparación defendible con los datos disponibles es conceptual: frente al modelo base, este checkpoint cambia los pesos mediante continued pretraining sobre un corpus autoescrito y restringe la licencia a investigación, mientras que el base mantiene su licencia original y no incorpora la fase de SDF.
@@ -90,9 +90,9 @@ La única comparación defendible con los datos disponibles es conceptual: frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-fve-g25-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-fve-g25-s0
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
-- Colección Qwen3 en HuggingFace: https://huggingface.co/collections/Qwen/qwen3
+- Colección Qwen3 en Hugging Face: https://huggingface.co/collections/Qwen/qwen3
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Imagen Docker ai/qwen3: https://hub.docker.com/r/ai/qwen3
 - Qwen3-4B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_4b

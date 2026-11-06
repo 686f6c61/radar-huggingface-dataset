@@ -119,7 +119,7 @@ La comparacion directa mas relevante es contra los GGUF estandar del mismo model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Harsha001/Groot-19B-A3B-261023-ROCmFPX
+- Repositorio Hugging Face: https://huggingface.co/Harsha001/Groot-19B-A3B-261023-ROCmFPX
 - Modelo base: https://huggingface.co/GrootTeam/Groot-19B-A3B-261023
 - GGUF oficial del modelo base: https://huggingface.co/GrootTeam/Groot-19B-A3B-261023-GGUF
 - Fork ROCmFPX (repositorio del autor): https://github.com/HarshaVardhan3002/ROCmFPX

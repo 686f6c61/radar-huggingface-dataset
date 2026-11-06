@@ -18,7 +18,7 @@ Su relevancia práctica es limitada: cero descargas y cero likes desde su creaci
 | Longitud de contexto | no disponible en la información proporcionada |
 | Tipos de cuantizacion | no disponible (el adaptador puede combinarse con bases cuantizadas de 8 y 4 bits en el runtime, pero no se documenta ninguna combinación validada) |
 | Idiomas soportados | italiano (`it`) |
-| Licencia | no disponible; el acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace |
+| Licencia | no disponible; el acceso es restringido (gated) y requiere aceptar condiciones en Hugging Face |
 | Formato de pesos | `safetensors` (adaptador LoRA, librería `peft`) |
 | Tipo de adaptador | LoRA (PEFT); rango, alpha y módulos objetivo no disponibles |
 | Dataset de entrenamiento | no disponible; la etiqueta `dataset-fiven` sugiere un dataset denominado "fiven", sin más detalle |
@@ -96,8 +96,8 @@ Los datos de las alternativas provienen de su documentación pública y no se ha
 
 ## Enlaces
 
-- Repositorio HuggingFace (acceso restringido): https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-sheared-llama-clmsft
+- Repositorio Hugging Face (acceso restringido): https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-sheared-llama-clmsft
 - Modelo base Sheared-LLaMA-1.3B: https://huggingface.co/princeton-nlp/Sheared-LLaMA-1.3B
 - Paper del modelo base (Sheared LLaMA: Accelerating Language Model Pre-training via Structured Pruning): https://arxiv.org/abs/2310.06694
 - Librería PEFT: https://github.com/huggingface/peft
-- Perfil del autor en HuggingFace: https://huggingface.co/praiselab-picuslab
+- Perfil del autor en Hugging Face: https://huggingface.co/praiselab-picuslab

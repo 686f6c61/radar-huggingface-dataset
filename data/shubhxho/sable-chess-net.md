@@ -84,5 +84,5 @@ No se dispone de comparativas directas con otros modelos de evaluación de ajedr
 ## Enlaces
 
 - Repositorio del motor Sable: https://github.com/shubhxho/sable
-- Página del modelo en HuggingFace: https://huggingface.co/shubhxho/sable-chess-net
+- Página del modelo en Hugging Face: https://huggingface.co/shubhxho/sable-chess-net
 - Documentación de MLX (framework de entrenamiento): https://github.com/ml-explore/mlx

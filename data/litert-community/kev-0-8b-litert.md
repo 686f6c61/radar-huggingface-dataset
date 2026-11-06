@@ -92,7 +92,7 @@ Las diferencias de rendimiento entre estas variantes no estan publicadas en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/litert-community/Kev-0.8B-LiteRT
+- Repositorio Hugging Face: https://huggingface.co/litert-community/Kev-0.8B-LiteRT
 - Modelo base: https://huggingface.co/jaredpalmer/kev-0.8b
 - Backbone: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Repositorio del autor (servidor y backend MLX): https://github.com/jaredpalmer/kev

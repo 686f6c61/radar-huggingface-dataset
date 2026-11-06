@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nanbeige-4.3-33B-Heretic es un ajuste comunitario de [Nanbeige/Nanbeige4.3-33B](https://huggingface.co/Nanbeige/Nanbeige4.3-33B), publicado por el usuario Luni en HuggingFace. Se trata de los pesos BF16 del modelo original de Nanbeige Team (33.118.977.024 parametros) sometidos a un proceso de "abliteracion direccional" con la herramienta Heretic, que elimina los vectores de rechazo (refusals) y el tono moralizante del alineamiento, manteniendo intacta la capacidad de razonamiento. Ademas, el autor aplica un "anti-slop" (de-slop) para reducir los patrones de lenguaje repetitivos tipicos de los modelos alineados, y corrige un bug de doble token BOS en el tokenizer.
+Nanbeige-4.3-33B-Heretic es un ajuste comunitario de [Nanbeige/Nanbeige4.3-33B](https://huggingface.co/Nanbeige/Nanbeige4.3-33B), publicado por el usuario Luni en Hugging Face. Se trata de los pesos BF16 del modelo original de Nanbeige Team (33.118.977.024 parametros) sometidos a un proceso de "abliteracion direccional" con la herramienta Heretic, que elimina los vectores de rechazo (refusals) y el tono moralizante del alineamiento, manteniendo intacta la capacidad de razonamiento. Ademas, el autor aplica un "anti-slop" (de-slop) para reducir los patrones de lenguaje repetitivos tipicos de los modelos alineados, y corrige un bug de doble token BOS en el tokenizer.
 
 El modelo base es un LM causal denso de 52 capas con atencion completa (full attention) y una ventana de contexto nativa de 262.144 tokens, con razonamiento chain-of-thought nativo mediante etiquetas `<think>`. Su relevancia actual radica en que ofrece, bajo licencia Apache-2.0, un modelo de razonamiento sin restricciones de rechazo, util para investigacion de alineamiento, red teaming y casos de uso donde los refusals estorban. El repo principal pesa 66,3 GB en safetensors BF16, y el autor publica suites de cuantizacion EXL3 y GGUF derivadas.
 
@@ -21,7 +21,7 @@ El modelo base es un LM causal denso de 52 capas con atencion completa (full att
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder denso de 52 capas con mecanismo de atencion completa (sin sliding window ni hibridos SSM), etiquetado como arquitectura tipo `llama` en HuggingFace. Incorpora razonamiento chain-of-thought nativo mediante tokens especiales `<think>`, lo que permite al modelo desplegar un proceso de deliberacion interno antes de emitir la respuesta final. La ventana de contexto nativa de 262.144 tokens lo situa en el rango de contextos extra largos.
+La arquitectura es un transformer decoder denso de 52 capas con mecanismo de atencion completa (sin sliding window ni hibridos SSM), etiquetado como arquitectura tipo `llama` en Hugging Face. Incorpora razonamiento chain-of-thought nativo mediante tokens especiales `<think>`, lo que permite al modelo desplegar un proceso de deliberacion interno antes de emitir la respuesta final. La ventana de contexto nativa de 262.144 tokens lo situa en el rango de contextos extra largos.
 
 Sobre el entrenamiento del modelo base (numero de tokens, composicion del dataset, RLHF/DPO) no hay datos publicados en la informacion disponible. Lo que si documenta la model card es el post-procesado aplicado por Luni: abliteracion direccional con Heretic (Trial #40, seleccionado como ganador Pareto, con una reduccion del 65,4 % en la tasa de refusals) conservando el 100 % de la profundidad de razonamiento matematico, algoritmico y analitico segun el autor; de-slop para eliminar patrones verbales repetitivos; y un parche en `tokenizer_config.json` (`"add_bos_token": false`) que corrige la emision duplicada del token BOS `<|im_start|>` al aplicar chat templates.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - BF16 (repo principal): ~66,3 GB de pesos, lo que exige aproximadamente 70 GB de VRAM o memoria unificada; dos RTX 3090/4090 (48 GB combinados) no bastan, se requiere al menos un A100/H100 de 80 GB, 2x A6000 (96 GB) o Mac Studio con 96 GB+ de memoria unificada.
 - Con cuantizaciones derivadas: la suite EXL3 a 4,00 bpw ronda los ~17-18 GB (cabe en una RTX 4090 de 24 GB con contexto moderado); a 5,00 bpw ~21-22 GB; las variantes SC de 2,25-3,50 bpw bajan de ~10 a ~15 GB, viables en RTX 3090/4090 y 5080/5090.
 - GGUF: los formatos Q8_0 requieren ~35 GB (2x 24 GB o 48 GB de RAM+offload), mientras que IQ2/IQ1_S pueden funcionar en 8-16 GB de RAM con CPU o GPU modesta, a costa notable de calidad.
-- Despliegue soportado: `transformers` (codigo de ejemplo incluido), llama.cpp y Ollama via GGUF, TabbyAPI/ExLlamaV2 via EXL3, y HuggingFace Inference Endpoints (tag `text-generation-inference`).
+- Despliegue soportado: `transformers` (codigo de ejemplo incluido), llama.cpp y Ollama via GGUF, TabbyAPI/ExLlamaV2 via EXL3, y Hugging Face Inference Endpoints (tag `text-generation-inference`).
 - No hay datos de latencia ni throughput publicados.
 
 ## Comparativa con modelos similares

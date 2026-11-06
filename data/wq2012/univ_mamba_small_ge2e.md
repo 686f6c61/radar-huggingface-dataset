@@ -112,7 +112,7 @@ La diferencia clave frente a estas alternativas es el orden de magnitud en numer
 - Tasas de error elevadas para produccion: el mejor EER de 1 utterance es 14,20% (LibriSpeech) y el peor, 23,75% (VoxCeleb1). Incluso en el mejor caso, con 3 utterances de enrolamiento, el EER baja solo hasta 9,50%. Son valores muy superiores a los de los sistemas de verificacion de hablante habituales en entornos reales.
 - Fuerte dependencia del dominio: el rendimiento cae de forma notable al pasar de habla leida en ingles (LibriSpeech) a habla multigenero en chino (CN-Celeb2) o audio in-the-wild (VoxCeleb1). No hay garantia de comportamiento en acentos, idiomas, codigos o condiciones acusticas no representadas.
 - No es un modelo de lenguaje: no genera texto, no razona, no ejecuta codigo ni soporta tool calling, function calling o flujos de agente. Cualquier caso de uso debe construirse alrededor del embedding y del score coseno.
-- Sin campo de idiomas declarado: la ficha de HuggingFace no especifica idiomas soportados. El modelo es acustico, pero la cobertura linguistica efectiva depende de los datos de entrenamiento, que no se detallan en composicion ni en horas.
+- Sin campo de idiomas declarado: la ficha de Hugging Face no especifica idiomas soportados. El modelo es acustico, pero la cobertura linguistica efectiva depende de los datos de entrenamiento, que no se detallan en composicion ni en horas.
 - Reproduccion no oficial: la propia model card advierte de que no es un producto oficial de Google y que los experimentos de los papers de referencia (GE2E, Dr-Vectors, Conformer-ATP, PFAS) se realizaron con infraestructura y datos internos propietarios. Los resultados publicados en esos papers no son atribuibles a este checkpoint.
 - Riesgo de falso positivo en verificacion biometrica: un EER del 14%-24% implica que una fraccion relevante de impostores seria aceptada con el umbral estandar. Para cualquier uso de seguridad es imprescindible calibrar el umbral de coseno sobre datos propios y combinar con otros factores.
 - Implicaciones legales: los embeddings de voz son datos biometricos y su tratamiento esta sujeto al RGPD en la Union Europea. Hay que prever base juridica, consentimiento, plazos de conservacion y evaluacion de impacto.
@@ -124,8 +124,8 @@ La diferencia clave frente a estas alternativas es el orden de magnitud en numer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wq2012/univ_mamba_small_ge2e
-- Coleccion FlaxSpeaker en HuggingFace: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
+- Modelo en Hugging Face: https://huggingface.co/wq2012/univ_mamba_small_ge2e
+- Coleccion FlaxSpeaker en Hugging Face: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub de FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
 - Paquete en PyPI: https://pypi.org/project/flaxspeaker/
 - Paper GE2E, "Generalized End-to-End Loss for Speaker Verification": https://arxiv.org/abs/1710.10467

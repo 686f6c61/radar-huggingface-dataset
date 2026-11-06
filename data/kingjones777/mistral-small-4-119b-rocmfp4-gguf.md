@@ -87,6 +87,6 @@ No hay datos comparativos con otros modelos de la misma categoría (por ejemplo,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Mistral-Small-4-119B-ROCmFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Mistral-Small-4-119B-ROCmFP4-GGUF
 - Fork de llama.cpp con soporte ROCmFP4: https://github.com/charlie12345/ROCmFPX
 - Modelo base (Mistral-Small-4-119B-2603): https://huggingface.co/mistralai/Mistral-Small-4-119B-2603

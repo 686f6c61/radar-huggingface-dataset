@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jarvis-0.5B es un modelo de generacion de texto publicado en HuggingFace por el usuario spooks010 (la model card atribuye la autoria a OEvortex, una discrepancia que conviene verificar antes de citarlo). Con 494.032.768 parametros reales segun los pesos en safetensors, se presenta como un modelo de ~0,5B orientado a interfaces conversacionales y sistemas de dialogo, inspirado en el asistente ficticio Jarvis de la saga Iron Man. El repositorio ocupa 1,4 GB e incluye pesos en safetensors y variantes en GGUF.
+Jarvis-0.5B es un modelo de generacion de texto publicado en Hugging Face por el usuario spooks010 (la model card atribuye la autoria a OEvortex, una discrepancia que conviene verificar antes de citarlo). Con 494.032.768 parametros reales segun los pesos en safetensors, se presenta como un modelo de ~0,5B orientado a interfaces conversacionales y sistemas de dialogo, inspirado en el asistente ficticio Jarvis de la saga Iron Man. El repositorio ocupa 1,4 GB e incluye pesos en safetensors y variantes en GGUF.
 
 El modelo esta etiquetado con la arquitectura qwen2 y la libreria transformers, lo que apunta a un transformer decoder-only de la familia Qwen2 reutilizado como base, aunque la model card no detalla la configuracion interna ni el proceso de entrenamiento. El unico dato de entrenamiento declarado es el dataset Abhaykoul/JARVIS y la metrica "character", sin cifras de tokens, composicion del corpus ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
 
@@ -12,7 +12,7 @@ Su relevancia practica es limitada pero concreta: se trata de un modelo pequeno,
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (etiqueta qwen2 en HuggingFace; detalles de configuracion no publicados) |
+| Arquitectura | Transformer decoder-only (etiqueta qwen2 en Hugging Face; detalles de configuracion no publicados) |
 | Parametros totales | 494.032.768 (~0,5B) |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -70,10 +70,10 @@ La tabla compara parametros, contexto y licencia con alternativas de tamano comp
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Jarvis-0.5B | 494.032.768 | no disponible | other (no detallada) | HuggingFace, safetensors y GGUF |
-| Qwen2-0.5B | ~0,5B | 32.768 tokens (documentacion publica) | Apache-2.0 | HuggingFace, safetensors y GGUF |
-| SmolLM2-360M | ~362M | 8.192 tokens (documentacion publica) | Apache-2.0 | HuggingFace, safetensors y GGUF |
-| TinyLlama-1.1B | ~1,1B | 2.048 tokens (documentacion publica) | Apache-2.0 | HuggingFace, safetensors y GGUF |
+| Jarvis-0.5B | 494.032.768 | no disponible | other (no detallada) | Hugging Face, safetensors y GGUF |
+| Qwen2-0.5B | ~0,5B | 32.768 tokens (documentacion publica) | Apache-2.0 | Hugging Face, safetensors y GGUF |
+| SmolLM2-360M | ~362M | 8.192 tokens (documentacion publica) | Apache-2.0 | Hugging Face, safetensors y GGUF |
+| TinyLlama-1.1B | ~1,1B | 2.048 tokens (documentacion publica) | Apache-2.0 | Hugging Face, safetensors y GGUF |
 
 No hay datos de rendimiento de Jarvis-0.5B que permitan una comparacion cuantitativa con estas alternativas. En terminos de licencia y trazabilidad de entrenamiento, los tres modelos de referencia estan mejor documentados.
 
@@ -91,7 +91,7 @@ No hay datos de rendimiento de Jarvis-0.5B que permitan una comparacion cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/spooks010/Jarvis-0.5B
+- Modelo en Hugging Face: https://huggingface.co/spooks010/Jarvis-0.5B
 - Dataset declarado: https://huggingface.co/datasets/Abhaykoul/JARVIS
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles en la informacion proporcionada.
 - Los resultados de busqueda web obtenidos no contienen informacion relacionada con el modelo.

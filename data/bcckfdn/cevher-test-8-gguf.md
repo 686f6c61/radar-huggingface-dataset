@@ -98,7 +98,7 @@ Nota: la comparativa se limita a parametros, contexto, licencia y disponibilidad
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/bcckfdn/cevher-test-8-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/bcckfdn/cevher-test-8-GGUF
 - Modelo base: https://huggingface.co/bcckfdn/cevher-test-8
 - llama.cpp: https://github.com/ggerganov/llama.cpp
 - Ollama: https://ollama.com

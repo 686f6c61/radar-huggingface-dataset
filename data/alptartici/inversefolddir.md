@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AlpTartici/inversefolddir` es un repositorio publicado en HuggingFace por el usuario AlpTartici, con licencia MIT y etiquetado para la región de Estados Unidos. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso, limitándose a declarar la licencia. El nombre del repositorio sugiere una relación con el plegamiento inverso de proteínas (inverse protein folding), una tarea de diseño de secuencias de aminoácidos a partir de estructuras tridimensionales, pero no se proporciona ninguna evidencia concreta de que el modelo implemente dicha funcionalidad.
+El modelo `AlpTartici/inversefolddir` es un repositorio publicado en Hugging Face por el usuario AlpTartici, con licencia MIT y etiquetado para la región de Estados Unidos. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso, limitándose a declarar la licencia. El nombre del repositorio sugiere una relación con el plegamiento inverso de proteínas (inverse protein folding), una tarea de diseño de secuencias de aminoácidos a partir de estructuras tridimensionales, pero no se proporciona ninguna evidencia concreta de que el modelo implemente dicha funcionalidad.
 
 En el momento de la consulta, el repositorio registra cero descargas y cero likes, lo que indica que no ha sido utilizado ni evaluado por la comunidad. No se dispone de información sobre el pipeline, los idiomas soportados, el tamaño del modelo, la arquitectura ni los pesos. Dada la ausencia total de datos técnicos, esta ficha se limita a documentar lo que se conoce y a señalar explícitamente las carencias de información, sin especular sobre capacidades que no están verificadas.
 
@@ -53,7 +53,7 @@ No se dispone de información suficiente para establecer una comparativa. Aunque
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlpTartici/inversefolddir
+- Repositorio en Hugging Face: https://huggingface.co/AlpTartici/inversefolddir
 - Repositorio de Microsoft InverseFoldDir (posible referencia, no confirmada como el mismo modelo): https://github.com/microsoft/InverseFoldDir
 - Artículo sobre ADFLIP (contexto de plegamiento inverso de proteínas): https://arxiv.org/abs/2507.14156
 - Artículo sobre ProtInvTree (contexto de plegamiento inverso de proteínas): https://papers.neurips.cc/paper_files/paper/2025/hash/291a1c80e9025f0ac2273fcf017fbd63-Abstract-Conference.html

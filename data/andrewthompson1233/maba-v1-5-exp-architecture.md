@@ -108,11 +108,11 @@ Los nombres de los modelos de comparacion (Qwen 3.8, Qwen 3.8 Flash Next, MiniCP
 - Arquitectura no estandar: DGDA, MABA-SA o el indexado de centroides guiado por delta no forman parte de las implementaciones habituales de `transformers`, vLLM o llama.cpp. El despliegue requerira kernels y soporte especificos cuya disponibilidad no esta confirmada.
 - Licencia MIT: permisiva y compatible con uso comercial, sin las restricciones habituales de licencias tipo Llama. Al no existir pesos ni terminos adicionales, no se identifican restricciones de uso comercial mas alla de las propias del MIT, si bien conviene revisar los terminos finales cuando se publique el repositorio de pesos.
 - Repositorio con 0 descargas y 1 like en el momento de la consulta, lo que indica adopcion practicamente nula y ausencia de validacion por parte de la comunidad.
-- Fechas de creacion y actualizacion (2026) en el registro de HuggingFace, coherentes con las referencias del autor a arquitecturas de 2026, pero que dificultan situar el trabajo en un contexto temporal verificable.
+- Fechas de creacion y actualizacion (2026) en el registro de Hugging Face, coherentes con las referencias del autor a arquitecturas de 2026, pero que dificultan situar el trabajo en un contexto temporal verificable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AndrewThompson1233/maba-v1.5-exp-architecture
+- Repositorio en Hugging Face: https://huggingface.co/AndrewThompson1233/maba-v1.5-exp-architecture
 - Documentacion de escalado (referenciada en la model card, no verificada): `SCALING.md` — derivaciones de parametros de 100M a 30B, escalado de cache KV hasta 1M de contexto y auditorias frente a arquitecturas de 2026 (Qwen3.5, Muse-30B, Gemma4).
 - Informe de benchmarks (referenciado en la model card, no verificado): `BENCHMARK_REPORT.md` — verificacion empirica de tests, invarianza de memoria de estado y benchmarks de escalado en tiempo de ejecucion.
 - Especificacion y hoja de ruta (referenciada en la model card, no verificada): `MABA_SPARSE_SPEC_AND_ROADMAP.md` — derivaciones matematicas completas, pruebas, mecanica de compuertas y pseudocodigo de algoritmos.

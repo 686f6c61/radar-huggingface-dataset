@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Inkling es un modelo multimodal generalista de Thinking Machines Lab, publicado en HuggingFace con el identificador `trinityomni/Inkling`. Acepta entradas de texto, imagen y audio, y genera texto como salida. Está diseñado para desarrolladores que construyen aplicaciones de IA, incluyendo sistemas agénticos, asistentes de codigo, chatbots y sistemas de recuperacion aumentada por generacion (RAG). Es el primer modelo de pesos abiertos de Thinking Machines Lab y se distribuye bajo licencia Apache 2.0.
+Inkling es un modelo multimodal generalista de Thinking Machines Lab, publicado en Hugging Face con el identificador `trinityomni/Inkling`. Acepta entradas de texto, imagen y audio, y genera texto como salida. Está diseñado para desarrolladores que construyen aplicaciones de IA, incluyendo sistemas agénticos, asistentes de codigo, chatbots y sistemas de recuperacion aumentada por generacion (RAG). Es el primer modelo de pesos abiertos de Thinking Machines Lab y se distribuye bajo licencia Apache 2.0.
 
 Arquitectonicamente es un transformer decoder-only de 66 capas con un backbone de Mixture-of-Experts (MoE) disperso: cada token se enruta a 6 de 256 expertos, mas 2 expertos compartidos activos en todos los tokens. La atencion es hibrida, combinando capas locales y globales. Segun la model card, el modelo tiene 975B parametros totales y 41B activos; el repositorio safetensors lista 952.377.623.626 parametros. Es nativamente multimodal, con un codificador jerarquico de parches para imagenes y video, y codificacion por tokens discretos para audio, proyectando todas las modalidades a un espacio oculto compartido.
 
@@ -15,7 +15,7 @@ Arquitectonicamente es un transformer decoder-only de 66 capas con un backbone d
 | Parametros activos | 41B |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | BF16 y NVFP4 |
-| Idiomas soportados | Ingles, con capacidades multilingues generales (segun model card; en HuggingFace aparece "no disponible") |
+| Idiomas soportados | Ingles, con capacidades multilingues generales (segun model card; en Hugging Face aparece "no disponible") |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
@@ -33,7 +33,7 @@ Los datos de entrenamiento incluyen una amplia variedad de tipos de contenido: t
 - Soporte de uso de herramientas (tool-use) y sistemas agencios, incluyendo flujos de razonamiento multi-paso.
 - Razonamiento con esfuerzo controlable, segun la informacion publica de Thinking Machines Lab.
 - Adecuado para asistentes de codigo, chatbots, sistemas de recuperacion aumentada por generacion y aplicaciones conversacionales.
-- Desplegable localmente con SGLang, vLLM, TokenSpeed, Unsloth y HuggingFace.
+- Desplegable localmente con SGLang, vLLM, TokenSpeed, Unsloth y Hugging Face.
 
 ## Casos de uso
 
@@ -64,7 +64,7 @@ La fila de SWEBench Pro (Public) aparece incompleta en la informacion disponible
 - VRAM estimada para inferencia: no disponible en la informacion proporcionada.
 - GPU recomendadas: no disponible.
 - Capacidad en GPU de consumo: no disponible; dado el tamaño total de parametros (975B), se requiere infraestructura de multiples GPUs o nodos.
-- Opciones de despliegue: SGLang, vLLM, TokenSpeed, Unsloth y HuggingFace, con recetas publicadas para cada uno.
+- Opciones de despliegue: SGLang, vLLM, TokenSpeed, Unsloth y Hugging Face, con recetas publicadas para cada uno.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ La siguiente tabla compara Inkling con algunos modelos de pesos abiertos de la m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trinityomni/Inkling
+- Hugging Face: https://huggingface.co/trinityomni/Inkling
 - Model card de Thinking Machines Lab: https://huggingface.co/thinkingmachines/Inkling
 - Página oficial del modelo: https://thinkingmachines.ai/inkling/
 - Anuncio de introduccion: https://thinkingmachines.ai/news/introducing-inkling/
@@ -101,4 +101,4 @@ La siguiente tabla compara Inkling con algunos modelos de pesos abiertos de la m
 - Receta para vLLM: https://recipes.vllm.ai/thinkingmachines/Inkling
 - Receta para TokenSpeed: https://lightseek.org/tokenspeed/recipes/models#Inkling
 - Receta para Unsloth: https://unsloth.ai/docs/models/inkling
-- Blog de HuggingFace: https://hf.co/blog/thinkingmachines-inkling
+- Blog de Hugging Face: https://hf.co/blog/thinkingmachines-inkling

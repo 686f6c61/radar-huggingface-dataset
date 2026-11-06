@@ -65,5 +65,5 @@ No disponible. No se conocen modelos comparables en la misma categoría, ya que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/adraganov/arch-opposite-sign-apple-lpi-260903T1015-arm-a2-poison-ctl
+- Repositorio Hugging Face: https://huggingface.co/adraganov/arch-opposite-sign-apple-lpi-260903T1015-arm-a2-poison-ctl
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it

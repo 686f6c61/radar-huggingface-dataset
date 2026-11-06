@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Blackfrost-AI/STEP-5-PREVIEW-DERISKED-FP8 es un repositorio de pesos publicado en HuggingFace por el usuario Blackfrost-AI, derivado del modelo TypeSafeAI/Step-5-Preview-BF16 mediante cuantizacion a FP8. Las etiquetas del repositorio lo identifican como un modelo multimodal de tipo image-text-to-text, con arquitectura de mezcla de expertos dispersa (sparse MoE), vinculado al ecosistema StepFun ("stepfun", "step-5") y orientado a investigacion en seguridad ("research", "security-research", "not-for-all-audiences"). Soporta los idiomas ingles y chino.
+Blackfrost-AI/STEP-5-PREVIEW-DERISKED-FP8 es un repositorio de pesos publicado en Hugging Face por el usuario Blackfrost-AI, derivado del modelo TypeSafeAI/Step-5-Preview-BF16 mediante cuantizacion a FP8. Las etiquetas del repositorio lo identifican como un modelo multimodal de tipo image-text-to-text, con arquitectura de mezcla de expertos dispersa (sparse MoE), vinculado al ecosistema StepFun ("stepfun", "step-5") y orientado a investigacion en seguridad ("research", "security-research", "not-for-all-audiences"). Soporta los idiomas ingles y chino.
 
-Se trata de un modelo derivado, no de un entrenamiento original: la ficha publica unicamente la relacion con su modelo base en BF16 y el cambio de precision a FP8, que reduce el uso de memoria y acelera la inferencia en hardware con soporte nativo de FP8 (familia Hopper y posteriores, asi como GPU Ada). El repositorio esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+Se trata de un modelo derivado, no de un entrenamiento original: la ficha publica unicamente la relacion con su modelo base en BF16 y el cambio de precision a FP8, que reduce el uso de memoria y acelera la inferencia en hardware con soporte nativo de FP8 (familia Hopper y posteriores, asi como GPU Ada). El repositorio esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 La relevancia de esta ficha es limitada y debe interpretarse con cautela: el repositorio no publica numero de parametros, longitud de contexto, composicion del dataset ni resultados de benchmarks, y el tamano declarado del repositorio es de 0,0 GB, lo que sugiere que los archivos de pesos podrian no estar disponibles publicamente o no haberse indexado. La fecha de creacion registrada (2026-09-27) y la ausencia de descargas y "likes" refuerzan la condicion de publicacion muy reciente o de escasa difusion.
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es limitada y debe interpretarse con cautela: el rep
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | FP8 (formato de este repositorio); el modelo base esta en BF16 |
 | Idiomas soportados | en, zh |
-| Licencia | other (acceso restringido, requiere aceptar condiciones en HuggingFace) |
+| Licencia | other (acceso restringido, requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | no disponible; no se listan archivos safetensors ni GGUF en la informacion proporcionada |
 
 ## Arquitectura y entrenamiento
@@ -75,7 +75,7 @@ No se dispone de informacion verificada sobre modelos alternativos de la misma c
 
 - Ausencia total de datos tecnicos publicados: no hay numero de parametros, contexto, dataset ni benchmarks, lo que impide evaluar el modelo con criterios de ingenieria.
 - El repositorio declara 0,0 GB de tamano y no lista archivos de pesos, por lo que la descarga efectiva de safetensors FP8 no esta confirmada.
-- Acceso restringido (gated): es obligatorio aceptar condiciones en HuggingFace y la aprobacion puede no ser automatica.
+- Acceso restringido (gated): es obligatorio aceptar condiciones en Hugging Face y la aprobacion puede no ser automatica.
 - Licencia "other" sin texto disponible en la informacion proporcionada: el uso comercial no puede asumirse y requiere revision legal del termino exacto.
 - Etiqueta "not-for-all-audiences" y origen "derisked": el modelo puede haber sido modificado para reducir o eliminar salvaguardas de seguridad, lo que incrementa el riesgo de generar contenido inapropiado, danino o no conforme a politicas de uso. No se documenta el alcance de dicha modificacion.
 - Riesgo de alucinacion: inherente a los modelos generativos y potencialmente agravado por la cuantizacion FP8, que puede degradar la precision numerica en tareas de razonamiento y matematicas. No hay mediciones de esta degradacion.
@@ -86,6 +86,6 @@ No se dispone de informacion verificada sobre modelos alternativos de la misma c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Blackfrost-AI/STEP-5-PREVIEW-DERISKED-FP8
+- Repositorio en Hugging Face: https://huggingface.co/Blackfrost-AI/STEP-5-PREVIEW-DERISKED-FP8
 - Modelo base (referenciado en los metadatos): https://huggingface.co/TypeSafeAI/Step-5-Preview-BF16
 - Papers, blogs, repositorios y demos adicionales: no disponible en la informacion proporcionada.

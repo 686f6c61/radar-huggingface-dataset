@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MSMRI-27B es un modelo de lenguaje publicado en HuggingFace por el usuario bruceshuyuejia bajo licencia Apache 2.0. El nombre sugiere un modelo de aproximadamente 27 mil millones de parametros, aunque la model card publicada no incluye ninguna especificacion tecnica, descripcion de arquitectura ni documentacion de entrenamiento. El repositorio no registra descargas ni interacciones en el momento de la consulta, y la fecha de creacion indicada es el 2 de noviembre de 2026.
+MSMRI-27B es un modelo de lenguaje publicado en Hugging Face por el usuario bruceshuyuejia bajo licencia Apache 2.0. El nombre sugiere un modelo de aproximadamente 27 mil millones de parametros, aunque la model card publicada no incluye ninguna especificacion tecnica, descripcion de arquitectura ni documentacion de entrenamiento. El repositorio no registra descargas ni interacciones en el momento de la consulta, y la fecha de creacion indicada es el 2 de noviembre de 2026.
 
 La informacion disponible se limita a los metadatos del repositorio: identificador, autor, licencia y etiquetas. No se ha publicado pipeline asociado, idiomas soportados, formato de pesos, longitud de contexto ni resultados de evaluacion. Esta ausencia de documentacion impide verificar las capacidades reales del modelo o su idoneidad para tareas concretas.
 
@@ -84,5 +84,5 @@ La comparativa con modelos de terceros se incluye solo como referencia de catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bruceshuyuejia/MSMRI-27B
+- Repositorio Hugging Face: https://huggingface.co/bruceshuyuejia/MSMRI-27B
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

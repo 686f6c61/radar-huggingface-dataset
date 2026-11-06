@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InternLM2-1.8B-Reward es un modelo de recompensa (reward model) desarrollado por el equipo de InternLM, publicado en el repositorio de HuggingFace por el usuario wangkaihang. Está entrenado sobre la base de InternLM2-Chat-1.8B-SFT y tiene como objetivo asignar una puntuación numérica a conversaciones o respuestas generadas por modelos de lenguaje, permitiendo evaluar su calidad, comparar candidatos y seleccionar el mejor resultado. Este tipo de modelo es un componente esencial en pipelines de RLHF (Reinforcement Learning from Human Feedback) y en técnicas como best-of-N sampling.
+InternLM2-1.8B-Reward es un modelo de recompensa (reward model) desarrollado por el equipo de InternLM, publicado en el repositorio de Hugging Face por el usuario wangkaihang. Está entrenado sobre la base de InternLM2-Chat-1.8B-SFT y tiene como objetivo asignar una puntuación numérica a conversaciones o respuestas generadas por modelos de lenguaje, permitiendo evaluar su calidad, comparar candidatos y seleccionar el mejor resultado. Este tipo de modelo es un componente esencial en pipelines de RLHF (Reinforcement Learning from Human Feedback) y en técnicas como best-of-N sampling.
 
 El modelo se ha entrenado con más de 2,4 millones de pares de preferencia, combinando anotaciones humanas y datos sintetizados por IA, cubriendo áreas como diálogo, escritura, poesía, resumen, código y matemáticas. Está disponible en tres tamaños (1.8B, 7B y 20B) para facilitar el estudio de las leyes de escalado en reward models. Soporta inglés y chino, y se ha utilizado en el proceso de RLHF de InternLM2-Chat. Su relevancia actual radica en que ofrece una alternativa ligera y eficiente para evaluar y alinear modelos generativos, con un rendimiento competitivo en RewardBench.
 
@@ -85,7 +85,7 @@ No se dispone de información sobre otros reward models comparables de la misma 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wangkaihang/internlm2-1_8b-reward
+- Repositorio Hugging Face: https://huggingface.co/wangkaihang/internlm2-1_8b-reward
 - Repositorio GitHub de InternLM: https://github.com/InternLM/InternLM
 - Informe técnico (arXiv): https://arxiv.org/abs/2403.17297
 - Framework XTuner: https://github.com/InternLM/xtuner

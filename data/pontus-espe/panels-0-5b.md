@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento de otros modelos en la misma tarea (genera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pontus-espe/panels-0.5b
+- Modelo en Hugging Face: https://huggingface.co/pontus-espe/panels-0.5b
 - Repositorio de Panels (lenguaje DSL): https://github.com/pontus-espe/panels
 - Perfil de GitHub del autor: https://github.com/pontus-espe

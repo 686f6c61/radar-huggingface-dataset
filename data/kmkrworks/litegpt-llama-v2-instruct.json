@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "kmkrworks/LiteGPT-Llama-V2-Instruct",
+  "slug": "kmkrworks-litegpt-llama-v2-instruct",
+  "author": "kmkrworks",
+  "url": "https://huggingface.co/kmkrworks/LiteGPT-Llama-V2-Instruct",
+  "created_at": "2026-11-06T01:04:58.000Z",
+  "updated_at": "2026-11-06T02:28:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "litegpt",
+    "llama",
+    "conversational",
+    "en",
+    "base_model:kmkrworks/LiteGPT-V2-Base",
+    "base_model:finetune:kmkrworks/LiteGPT-V2-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 148,
+  "trending_score": 0,
+  "parameters": 201373952,
+  "parameters_human": "201.4M",
+  "storage_bytes": 402782512,
+  "storage_human": "403 MB",
+  "base_model": "kmkrworks/LiteGPT-V2-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kmkrworks/LiteGPT-Llama-V2-Instruct · Hugging Face",
+      "url": "https://huggingface.co/kmkrworks/LiteGPT-Llama-V2-Instruct",
+      "snippet": "Text Generation model with 0.2B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "kmkrworks/LiteGPT-Llama-V2-Instruct at main - Hugging Face",
+      "url": "https://huggingface.co/kmkrworks/LiteGPT-Llama-V2-Instruct/tree/main",
+      "snippet": "Instructions to use kmkrworks/LiteGPT-Llama-V2-Instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use kmkrworks/LiteGPT-Llama-V2-Instruct with Transformers:"
+    }
+  ]
+}

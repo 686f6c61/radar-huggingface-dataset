@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DINOSAR es un conjunto de encoders de imagen SAR (radar de apertura sintética) preentrenados mediante aprendizaje autosupervisado a gran escala. Ha sido desarrollado por YTang y se publica bajo el identificador `YTang/DINOSAR` en HuggingFace. El modelo aborda el problema de la extracción de características en imágenes de teledetección SAR, que presentan propiedades distintas a las imágenes ópticas, y permite inicializar tareas downstream sin necesidad de grandes volúmenes de datos etiquetados. La relevancia actual radica en la escasez de datasets anotados para SAR y en la utilidad de representaciones preentrenadas para clasificación, detección y segmentación.
+DINOSAR es un conjunto de encoders de imagen SAR (radar de apertura sintética) preentrenados mediante aprendizaje autosupervisado a gran escala. Ha sido desarrollado por YTang y se publica bajo el identificador `YTang/DINOSAR` en Hugging Face. El modelo aborda el problema de la extracción de características en imágenes de teledetección SAR, que presentan propiedades distintas a las imágenes ópticas, y permite inicializar tareas downstream sin necesidad de grandes volúmenes de datos etiquetados. La relevancia actual radica en la escasez de datasets anotados para SAR y en la utilidad de representaciones preentrenadas para clasificación, detección y segmentación.
 
 La arquitectura se basa en Vision Transformers (ViT) con dos variantes: ViT-S/16 y ViT-B/16, ambas con patch size 16, un canal de entrada y cuatro register tokens. Los pesos se distribuyen en formato PyTorch state dict (`.pth`) y ocupan un repositorio de 0.4 GB. No se especifica la longitud de contexto, ya que se trata de un modelo de visión, no de lenguaje.
 
@@ -71,5 +71,5 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YTang/DINOSAR
+- Hugging Face: https://huggingface.co/YTang/DINOSAR
 - Repositorio de codigo fuente: mencionado en la model card como `DINOSAR_official/DINOSAR`, pero no se proporciona URL. Enlace no disponible.

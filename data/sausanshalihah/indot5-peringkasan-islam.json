@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "sausanshalihah/indot5-peringkasan-islam",
+  "slug": "sausanshalihah-indot5-peringkasan-islam",
+  "author": "sausanshalihah",
+  "url": "https://huggingface.co/sausanshalihah/indot5-peringkasan-islam",
+  "created_at": "2026-11-06T10:15:07.000Z",
+  "updated_at": "2026-11-06T10:15:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IndoT5 (Text-to-Text Transfer Transformer) Algorithm for Paraphrasing ...",
+      "url": "https://ejournal.uinsgd.ac.id/index.php/kjrt/article/download/1093/396/3909",
+      "snippet": "Modelling, using the IndoT5 (Text-to-Text Transfer Transformer) model to build an automatic paraphrasing system based on processed data. This model is trained to understand text input in Indonesian and produce paraphrased text as output while maintaining the same meaning."
+    },
+    {
+      "title": "IndoT5 (Text-to-Text Transfer Transformer) Algorithm for Paraphrasing ...",
+      "url": "https://www.researchgate.net/publication/390896704_IndoT5_Text-to-Text_Transfer_Transformer_Algorithm_for_Paraphrasing_Indonesian_Language_Islamic_Sermon_Manuscripts",
+      "snippet": "Request PDF | IndoT5 (Text-to-Text Transfer Transformer) Algorithm for Paraphrasing Indonesian Language Islamic Sermon Manuscripts | Pengembangan sistem parafrase otomatis dalam bahasa Indonesia ..."
+    }
+  ]
+}

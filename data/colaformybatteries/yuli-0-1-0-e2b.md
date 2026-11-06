@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `yuli-0.1.0-e2b` es un modelo de lenguaje conversacional publicado en HuggingFace por el usuario `colaformybatteries`. Se trata de un modelo de tamaño reducido, con 4.647.450.147 parámetros (aproximadamente 4.647 millones), distribuido en formato GGUF. El repositorio ocupa 1.2 GB, lo que indica que los pesos están cuantizados, probablemente para facilitar su ejecución en hardware de gama media o incluso en CPU mediante motores de inferencia como llama.cpp u Ollama.
+El modelo `yuli-0.1.0-e2b` es un modelo de lenguaje conversacional publicado en Hugging Face por el usuario `colaformybatteries`. Se trata de un modelo de tamaño reducido, con 4.647.450.147 parámetros (aproximadamente 4.647 millones), distribuido en formato GGUF. El repositorio ocupa 1.2 GB, lo que indica que los pesos están cuantizados, probablemente para facilitar su ejecución en hardware de gama media o incluso en CPU mediante motores de inferencia como llama.cpp u Ollama.
 
-La información pública disponible es muy limitada: la model card solo indica la licencia MIT y no incluye detalles sobre arquitectura, datos de entrenamiento, contexto o capacidades. Los tags de HuggingFace (`gguf`, `conversational`, `endpoints_compatible`, `region:us`) sugieren que el modelo está pensado para tareas de chat y para su despliegue como endpoint, pero no hay documentación técnica que respalde estas funciones. Su relevancia actual radica en su portabilidad y en la permisividad de su licencia, aunque la ausencia de evaluaciones públicas impide valorar su rendimiento real.
+La información pública disponible es muy limitada: la model card solo indica la licencia MIT y no incluye detalles sobre arquitectura, datos de entrenamiento, contexto o capacidades. Los tags de Hugging Face (`gguf`, `conversational`, `endpoints_compatible`, `region:us`) sugieren que el modelo está pensado para tareas de chat y para su despliegue como endpoint, pero no hay documentación técnica que respalde estas funciones. Su relevancia actual radica en su portabilidad y en la permisividad de su licencia, aunque la ausencia de evaluaciones públicas impide valorar su rendimiento real.
 
 ## Especificaciones tecnicas
 
@@ -25,10 +25,10 @@ No se ha publicado información sobre la arquitectura del modelo ni sobre su pro
 
 ## Capacidades
 
-No se han publicado especificaciones detalladas sobre las capacidades del modelo. Los únicos indicios son los tags de HuggingFace, que sugieren que el modelo está diseñado para tareas de chat y para su despliegue como endpoint. Sin embargo, no hay información verificada sobre soporte de tool calling, agentes, visión, audio o capacidades multilingües.
+No se han publicado especificaciones detalladas sobre las capacidades del modelo. Los únicos indicios son los tags de Hugging Face, que sugieren que el modelo está diseñado para tareas de chat y para su despliegue como endpoint. Sin embargo, no hay información verificada sobre soporte de tool calling, agentes, visión, audio o capacidades multilingües.
 
 - Generacion de texto conversacional (inferido del tag `conversational`; no verificado).
-- Compatibilidad con endpoints de HuggingFace (inferido del tag `endpoints_compatible`).
+- Compatibilidad con endpoints de Hugging Face (inferido del tag `endpoints_compatible`).
 - Sin informacion sobre soporte de tool calling, function calling, agentes, vision o audio.
 - Sin informacion sobre capacidades multilingues.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. El tamano del repositorio (1.2 GB) sugiere que el modelo puede ejecutarse en GPUs con 4 GB de VRAM o menos, pero no se puede precisar sin conocer la cuantizacion exacta.
 - GPU recomendadas: no disponible. Se recomienda probar en GPUs de gama media (por ejemplo, RTX 3060, RTX 4060) o en CPU con llama.cpp.
 - Si cabe en consumer GPU: probablemente si, dado su tamano y formato GGUF, pero no confirmado.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM (si se convierte a otro formato), endpoints de HuggingFace (por el tag `endpoints_compatible`).
+- Opciones de despliegue: llama.cpp, Ollama, vLLM (si se convierte a otro formato), endpoints de Hugging Face (por el tag `endpoints_compatible`).
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -70,5 +70,5 @@ No se dispone de informacion sobre benchmarks ni caracteristicas tecnicas que pe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/colaformybatteries/yuli-0.1.0-e2b
+- Hugging Face: https://huggingface.co/colaformybatteries/yuli-0.1.0-e2b
 - Otros enlaces relevantes: no disponible. Los resultados de busqueda no contienen informacion especifica sobre el modelo.

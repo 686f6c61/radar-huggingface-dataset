@@ -22,7 +22,7 @@ La informacion publica disponible es muy limitada. No se ha publicado en los dat
 | Formato de pesos | GGUF (los pesos originales del modelo base estan en safetensors) |
 | Tipo de repositorio | cuantizacion estatica derivada, no entrenamiento |
 | Modelo de origen | FINAL-Bench/Darwin-27B-RSI |
-| Fecha de publicacion en HuggingFace | 2026-09-27 (segun metadatos del repositorio) |
+| Fecha de publicacion en Hugging Face | 2026-09-27 (segun metadatos del repositorio) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento

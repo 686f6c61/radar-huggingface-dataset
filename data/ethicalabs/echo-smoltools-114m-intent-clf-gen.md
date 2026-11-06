@@ -14,7 +14,7 @@ Echo-SmolTools-114M-Intent-CLF-Gen es un modelo de clasificación de intenciones
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No especificado (dtype nativo: bfloat16) |
 | Idiomas soportados | 51 idiomas (locales de Amazon MASSIVE, según model card) |
-| Licencia | Apache 2.0 (indicado en model card; metadata de HuggingFace sin especificar) |
+| Licencia | Apache 2.0 (indicado en model card; metadata de Hugging Face sin especificar) |
 | Formato de pesos | Safetensors |
 
 ## Arquitectura y entrenamiento
@@ -58,7 +58,7 @@ No se dispone de información suficiente sobre modelos comparables en la misma c
 
 - Modelo experimental: el propio autor advierte explícitamente que no debe desplegarse en entornos comerciales, empresariales o de misión crítica.
 - Sin garantías: se proporciona "tal cual", sin responsabilidad por fallos de integración o incumplimiento normativo.
-- Licencia: aunque la model card muestra un badge Apache 2.0, la metadata de HuggingFace no especifica licencia; se recomienda verificar antes de cualquier uso.
+- Licencia: aunque la model card muestra un badge Apache 2.0, la metadata de Hugging Face no especifica licencia; se recomienda verificar antes de cualquier uso.
 - Riesgo de sesgos: entrenado sobre Amazon MASSIVE, que puede reflejar sesgos culturales o lingüísticos de los datos originales.
 - Alucinación: al ser un modelo generativo, puede producir puntuaciones inconsistentes para etiquetas fuera del vocabulario de MASSIVE.
 - Limitación de clases: solo 60 intenciones predefinidas; no es adecuado para taxonomías personalizadas sin reentrenamiento.
@@ -67,7 +67,7 @@ No se dispone de información suficiente sobre modelos comparables en la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ethicalabs/Echo-SmolTools-114M-Intent-CLF-Gen
+- Modelo en Hugging Face: https://huggingface.co/ethicalabs/Echo-SmolTools-114M-Intent-CLF-Gen
 - Modelo base: https://huggingface.co/ethicalabs/Echo-DSRN-114M-v0.1.2
 - Adaptador PEFT: https://huggingface.co/ethicalabs/Echo-SmolTools-114M-Intent-PEFT
 - Repositorio GitHub: https://github.com/ethicalabs-ai/Echo-DSRN/

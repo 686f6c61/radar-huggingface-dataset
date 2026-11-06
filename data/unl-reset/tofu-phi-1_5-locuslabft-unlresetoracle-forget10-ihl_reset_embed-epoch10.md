@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-phi-1_5-...-forget10-...-epoch10` (este) | 1.418 M | no disponible | Checkpoint de *unlearning* sobre TOFU | apache-2.0 | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_phi-1.5` | ~1.400 M | no disponible | Ajuste fino de Phi-1.5 sobre TOFU, modelo de partida | no disponible en la información | HuggingFace |
-| `microsoft/phi-1_5` | ~1.400 M | no disponible | Modelo base de razonamiento y código | no disponible en la información | HuggingFace |
-| `microsoft/phi-2` | ~2.700 M | no disponible | Modelo pequeño de propósito general de la misma familia | no disponible en la información | HuggingFace |
+| `unl-reset/tofu-phi-1_5-...-forget10-...-epoch10` (este) | 1.418 M | no disponible | Checkpoint de *unlearning* sobre TOFU | apache-2.0 | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_phi-1.5` | ~1.400 M | no disponible | Ajuste fino de Phi-1.5 sobre TOFU, modelo de partida | no disponible en la información | Hugging Face |
+| `microsoft/phi-1_5` | ~1.400 M | no disponible | Modelo base de razonamiento y código | no disponible en la información | Hugging Face |
+| `microsoft/phi-2` | ~2.700 M | no disponible | Modelo pequeño de propósito general de la misma familia | no disponible en la información | Hugging Face |
 
 La comparación relevante no es de rendimiento bruto, sino de comportamiento frente al olvido: este checkpoint debería mostrar una caída controlada en el conjunto *forget* respecto a `locuslab/tofu_ft_phi-1.5` manteniendo métricas similares en *retain*, aunque no se aportan números que lo confirmen.
 
@@ -86,7 +86,7 @@ La comparación relevante no es de rendimiento bruto, sino de comportamiento fre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_embed-epoch10
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_embed-epoch10
 - Modelo base del ajuste: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Benchmark TOFU (referencia del dataset): no disponible en la información proporcionada

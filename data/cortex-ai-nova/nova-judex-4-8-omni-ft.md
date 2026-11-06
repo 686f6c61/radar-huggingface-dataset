@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NOVA-Judex-4.8-Omni-ft es un ajuste fino (fine-tuning) del modelo multimodal LiquidAI/LFM3-Omni-2B, publicado por el usuario cortex-ai-nova en HuggingFace. Se trata de un modelo de tipo image-text-to-text construido sobre la arquitectura LFM3 Omni de Liquid AI, con 2.166.928.384 parametros totales (aproximadamente 2,17 mil millones) y pesos almacenados en safetensors y GGUF. El ajuste se realizo mediante LoRA con rango 8, fusionado posteriormente en los pesos base en precision BF16.
+NOVA-Judex-4.8-Omni-ft es un ajuste fino (fine-tuning) del modelo multimodal LiquidAI/LFM3-Omni-2B, publicado por el usuario cortex-ai-nova en Hugging Face. Se trata de un modelo de tipo image-text-to-text construido sobre la arquitectura LFM3 Omni de Liquid AI, con 2.166.928.384 parametros totales (aproximadamente 2,17 mil millones) y pesos almacenados en safetensors y GGUF. El ajuste se realizo mediante LoRA con rango 8, fusionado posteriormente en los pesos base en precision BF16.
 
 El modelo resuelve el problema de adaptar un modelo omni (texto, imagen y audio) a tareas conversacionales e instruccionales mediante un conjunto de datos mixto compuesto por alpaca-cleaned, FineTome-100k y un subconjunto de ASR de LibriSpeech. Su relevancia actual radica en que demuestra el flujo de trabajo de ajuste fino sobre la familia LFM3 de Liquid AI, una arquitectura reciente orientada a modelos compactos multimodales con licencia abierta pero restrictiva.
 
@@ -84,7 +84,7 @@ La comparativa con alternativas de la misma categoria no puede completarse con r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cortex-ai-nova/NOVA-Judex-4.8-Omni-ft
+- Modelo en Hugging Face: https://huggingface.co/cortex-ai-nova/NOVA-Judex-4.8-Omni-ft
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Licencia LFM Open License v1.0: https://huggingface.co/LiquidAI/LICENSE
 - Dataset alpaca-cleaned: https://huggingface.co/datasets/yahma/alpaca-cleaned

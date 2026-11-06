@@ -104,7 +104,7 @@ Frente a E5 base, el fine-tuning mejora el F1 en la muestra externa (0,874 frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrisaTielly/ingredient-matcher-ptbr-model
+- Modelo en Hugging Face: https://huggingface.co/BrisaTielly/ingredient-matcher-ptbr-model
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Dataset Open Prices (origen de la muestra externa): no disponible como enlace en la información proporcionada
 - Paper o blog del autor: no disponible en la información proporcionada

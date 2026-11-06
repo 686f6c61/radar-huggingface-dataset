@@ -17,7 +17,7 @@ La relevancia actual de este modelo radica en su combinación de tamaño moderad
 | Parametros activos | 3 mil millones (3B) por token |
 | Longitud de contexto | no disponible (el modelo original InternVL3.5 soporta contexto largo, pero no se especifica el valor exacto en la informacion proporcionada) |
 | Tipos de cuantizacion | no disponible (los pesos se almacenan en bfloat16 segun la model card, sin cuantizaciones predefinidas) |
-| Idiomas soportados | ingles (segun la etiqueta `language` de HuggingFace; el modelo original soporta multilingue, pero esta conversion solo declara ingles) |
+| Idiomas soportados | ingles (segun la etiqueta `language` de Hugging Face; el modelo original soporta multilingue, pero esta conversion solo declara ingles) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (presumiblemente, dado que el repo tiene 61.8 GB y la libreria KerasFormers usa ese formato; no se confirma explicitamente) |
 
@@ -35,7 +35,7 @@ La conversion a Keras 3 no altera los pesos originales, sino que los transpila a
 - Comprension de diagramas, graficos y figuras cientificas: puede interpretar contenido visual estructurado y responder preguntas sobre el.
 - Dialogo multimodal multi-turno: soporta conversaciones en las que el usuario puede referirse a una imagen a lo largo de varios turnos, gracias a su arquitectura de decodificacion autoregresiva.
 - Soporte de tool calling y function calling: no se menciona explicitamente en la informacion proporcionada, por lo que no se puede confirmar esta capacidad.
-- Capacidades multilingues: aunque la etiqueta de HuggingFace solo declara ingles, el modelo original InternVL3.5 soporta multiples idiomas; sin embargo, esta conversion no garantiza el mismo nivel de soporte multilingue.
+- Capacidades multilingues: aunque la etiqueta de Hugging Face solo declara ingles, el modelo original InternVL3.5 soporta multiples idiomas; sin embargo, esta conversion no garantiza el mismo nivel de soporte multilingue.
 
 ## Casos de uso
 
@@ -93,11 +93,11 @@ Esta tabla es orientativa y no refleja resultados de benchmarks. Para una compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kerasformers/internvl3.5-30b-a3b
+- Modelo en Hugging Face: https://huggingface.co/kerasformers/internvl3.5-30b-a3b
 - Modelo base (OpenGVLab): https://huggingface.co/OpenGVLab/InternVL3_5-30B-A3B-HF
 - Repositorio KerasFormers en GitHub: https://github.com/IMvision12/KerasFormers
 - Documentacion de InternVL en KerasFormers: https://imvision12.github.io/KerasFormers/internvl/
-- Coleccion de modelos InternVL en HuggingFace: https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd
+- Coleccion de modelos InternVL en Hugging Face: https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd
 - Blog oficial de InternVL3.5: https://internvl.github.io/blog/2025-08-26-InternVL-3.5/
 - Repositorio oficial de InternVL en GitHub: https://github.com/OpenGVLab/InternVL
 - Pagina de despliegue y hardware (openmodelmap): https://openmodelmap.com/model/OpenGVLab/InternVL3_5-30B-A3B

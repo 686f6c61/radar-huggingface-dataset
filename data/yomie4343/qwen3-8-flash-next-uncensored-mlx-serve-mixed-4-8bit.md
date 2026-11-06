@@ -72,9 +72,9 @@ El autor también documenta el comportamiento del parche MTP:
 
 | Modelo | Parametros | Contexto | Cuantizacion | Rendimiento (evaluación TypeScript) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| yomie4343/Qwen3.8-Flash-Next-Uncensored-MLX-Serve-mixed-4-8bit | 133 B | 204.800 (anunciado) | Mixta 4/8-bit MLX-Serve | 21/25 (84 %) | Qwen Community 1.0 | HuggingFace |
-| ARC4NUM/Qwen3.8-Flash-Next-Uncensored-MLX-Serve-4bit | 133 B | no disponible | 4-bit MLX-Serve | no evaluado en esta informacion | Qwen Community 1.0 | HuggingFace (byte-idéntico) |
-| Qwen/Qwen3.8-Flash-Next | no disponible | no disponible | no disponible | 22/25 (88 %) | no disponible | GitHub y HuggingFace |
+| yomie4343/Qwen3.8-Flash-Next-Uncensored-MLX-Serve-mixed-4-8bit | 133 B | 204.800 (anunciado) | Mixta 4/8-bit MLX-Serve | 21/25 (84 %) | Qwen Community 1.0 | Hugging Face |
+| ARC4NUM/Qwen3.8-Flash-Next-Uncensored-MLX-Serve-4bit | 133 B | no disponible | 4-bit MLX-Serve | no evaluado en esta informacion | Qwen Community 1.0 | Hugging Face (byte-idéntico) |
+| Qwen/Qwen3.8-Flash-Next | no disponible | no disponible | no disponible | 22/25 (88 %) | no disponible | GitHub y Hugging Face |
 
 El modelo de `yomie4343` es un espejo byte-idéntico del pack de `ARC4NUM`, con la diferencia de que incluye el parche de runtime MTP y las notas de validación. El modelo original de Qwen muestra un rendimiento ligeramente superior en la evaluación del autor, pero no está cuantizado ni disponible en formato MLX-Serve.
 

@@ -100,7 +100,7 @@ No se han encontrado en la informacion disponible otros modelos comparables con 
 
 ## Enlaces
 
-- [HuggingFace: JRamirez-UAB/Spark-X2.5-4B-EXL3-6.00bpw-8-16GB](https://huggingface.co/JRamirez-UAB/Spark-X2.5-4B-EXL3-6.00bpw-8-16GB)
+- [Hugging Face: JRamirez-UAB/Spark-X2.5-4B-EXL3-6.00bpw-8-16GB](https://huggingface.co/JRamirez-UAB/Spark-X2.5-4B-EXL3-6.00bpw-8-16GB)
 - [Modelo base: XHToken/Spark-X2.5-4B](https://huggingface.co/XHToken/Spark-X2.5-4B)
 - [exllamav3 (GitHub)](https://github.com/turboderp-org/exllamav3)
 - [Paper de referencia arXiv:2406.11235](https://arxiv.org/abs/2406.11235)

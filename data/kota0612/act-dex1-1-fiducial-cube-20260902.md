@@ -67,7 +67,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kota0612/act-dex1-1-fiducial-cube-20260902
+- Modelo en Hugging Face: https://huggingface.co/Kota0612/act-dex1-1-fiducial-cube-20260902
 - Dataset de demostraciones: https://huggingface.co/datasets/Kota0612/dex1-1-fiducial-cube-20260902
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
-- Perfil del autor en HuggingFace: https://huggingface.co/Kota0612
+- Perfil del autor en Hugging Face: https://huggingface.co/Kota0612

@@ -86,7 +86,7 @@ No se dispone de datos comparativos con otros modelos de 27B de otras familias (
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-5bit
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-5bit
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía completa de Qwen3.8-27B (blog): https://lovableapp.org/blog/qwen3-8-27b

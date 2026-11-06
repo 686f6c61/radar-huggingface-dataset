@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/frankmorales2020/topological-ai-lfm-1.2b-multirun
+- Hugging Face: https://huggingface.co/frankmorales2020/topological-ai-lfm-1.2b-multirun
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-1.2B
 - Documentación de Liquid AI sobre LFM2-1.2B: https://docs.liquid.ai/lfm/models/lfm2-1.2b
 - Repositorio GitHub de Arithmetic Spectral Theory: https://github.com/frank-morales2020/AST/tree/main

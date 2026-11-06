@@ -88,7 +88,7 @@ La comparación relevante es contra su propio modelo base: este checkpoint está
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/opd-teacher-Q2.5I-LinkBeads-step149
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/opd-teacher-Q2.5I-LinkBeads-step149
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Ejecución de entrenamiento en W&B: https://wandb.ai/david-heineman/rl-data-opd-teachers/runs/c8dff4d9
 - Codigo de entrenamiento (RLVE): https://github.com/davidheineman/rlve

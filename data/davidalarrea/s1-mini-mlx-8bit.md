@@ -106,13 +106,13 @@ Frente a alternativas especializadas de restauracion de puntuacion y truecasing 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/davidalarrea/S1-mini-MLX-8bit
+- Repositorio Hugging Face: https://huggingface.co/davidalarrea/S1-mini-MLX-8bit
 - Modelo base: https://huggingface.co/superwhisper/s1-mini
 - Pesos originales BF16, revision v1: https://huggingface.co/superwhisper/s1-mini/tree/v1
 - Builds GGUF: https://huggingface.co/superwhisper/s1-mini-GGUF
 - Modelo fundacional: https://huggingface.co/Qwen/Qwen3-0.6B
 - Sitio de Superwhisper: https://superwhisper.com
 - Servidor de Discord: https://discord.gg/tF98XvJNvB
-- Licencia del modelo: LICENSE (incluida en el repositorio de HuggingFace)
+- Licencia del modelo: LICENSE (incluida en el repositorio de Hugging Face)
 - Paper referenciado en las etiquetas del repositorio (informe tecnico de Qwen3): arXiv:2505.09388
 - Nota sobre la busqueda web: los resultados proporcionados (paginas de soporte de Google Translate, un hilo de RPG Maker y dos hilos de Microsoft Community) no contienen informacion relevante sobre este modelo ni se han utilizado para elaborar la ficha.

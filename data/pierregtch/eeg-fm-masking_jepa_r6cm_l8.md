@@ -83,9 +83,9 @@ No se han proporcionado resultados comparativos frente a otros modelos fundacion
 
 | Modelo | Marco | Radio r | Longitud L | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| eeg-fm-masking_jepa_r6cm_L8 (este) | JEPA | 6 cm | 8 parches | 12,69 M | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_jepa_r9cm_L2 | JEPA | 9 cm | 2 parches | No disponible (receta identica) | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_mae_r9cm_L2 | MAE | 9 cm | 2 parches | No disponible (receta identica) | CC-BY-4.0 | HuggingFace |
+| eeg-fm-masking_jepa_r6cm_L8 (este) | JEPA | 6 cm | 8 parches | 12,69 M | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_jepa_r9cm_L2 | JEPA | 9 cm | 2 parches | No disponible (receta identica) | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_mae_r9cm_L2 | MAE | 9 cm | 2 parches | No disponible (receta identica) | CC-BY-4.0 | Hugging Face |
 
 Los dos modelos de la tabla son los que el paper recomienda de forma explicita (r = 9 cm, L = 2) y se entrenaron con la misma receta, cambiando solo la geometria de la mascara y el marco, por lo que la comparacion es directa en arquitectura. No se dispone de cifras de rendimiento de estos dos checkpoints en la informacion proporcionada. Tampoco hay datos comparativos frente a otros modelos fundacionales de EEG (LaBraM, BIOT, EEGPT u otros): no disponible.
 
@@ -104,7 +104,7 @@ Los dos modelos de la tabla son los que el paper recomienda de forma explicita (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r6cm_L8
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r6cm_L8
 - Coleccion con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366
 - Sitio del paper: https://pierregtch.github.io/eeg-fm-masking
 - Codigo: https://github.com/PierreGtch/eeg-fm-masking

@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iris-3b-mflux-q4 (este) | 3B | no disponible | MLX safetensors Q4 (5,1 GB) | iris-3b-license | HuggingFace, comunidad |
-| iris-3b-mflux-bf16 | 3B | no disponible | MLX safetensors BF16 (14 GB) | iris-3b-license | HuggingFace, comunidad |
-| iris-3b-mflux-q8 | 3B | no disponible | MLX safetensors Q8 (8 GB) | iris-3b-license | HuggingFace, comunidad |
-| speridlabs/iris-3b (original) | 3B | no disponible | no disponible | iris-3b-license | HuggingFace, oficial |
+| iris-3b-mflux-q4 (este) | 3B | no disponible | MLX safetensors Q4 (5,1 GB) | iris-3b-license | Hugging Face, comunidad |
+| iris-3b-mflux-bf16 | 3B | no disponible | MLX safetensors BF16 (14 GB) | iris-3b-license | Hugging Face, comunidad |
+| iris-3b-mflux-q8 | 3B | no disponible | MLX safetensors Q8 (8 GB) | iris-3b-license | Hugging Face, comunidad |
+| speridlabs/iris-3b (original) | 3B | no disponible | no disponible | iris-3b-license | Hugging Face, oficial |
 
 No se dispone de información sobre modelos comparables de otros autores con los que contrastar rendimiento, contexto o calidad de generación.
 
@@ -82,7 +82,7 @@ No se dispone de información sobre modelos comparables de otros autores con los
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mflux-community/iris-3b-mflux-q4
+- Repositorio Hugging Face: https://huggingface.co/mflux-community/iris-3b-mflux-q4
 - Modelo base original: https://huggingface.co/speridlabs/iris-3b
 - Versión BF16 MFlux: https://huggingface.co/mflux-community/iris-3b-mflux-bf16
 - Versión Q8 MFlux: https://huggingface.co/mflux-community/iris-3b-mflux-q8

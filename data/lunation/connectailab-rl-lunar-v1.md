@@ -72,8 +72,8 @@ El propio autor advierte de que se trata de un primer experimento: la evaluació
 
 | Modelo | Parametros | Contexto | Rendimiento en decision (datos aportados) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-lunar-v1 | Adaptador LoRA sobre base de 0,8B | No disponible | 82,1% de acierto, regret 1,89 | Apache 2.0 | HuggingFace, solo adaptador |
-| Qwen/Qwen3.5-0.8B (modelo base sin ajustar) | 0,8B | No disponible | 31,8% de acierto, regret 2,69 | No disponible en la informacion proporcionada | HuggingFace |
+| connectailab-rl-lunar-v1 | Adaptador LoRA sobre base de 0,8B | No disponible | 82,1% de acierto, regret 1,89 | Apache 2.0 | Hugging Face, solo adaptador |
+| Qwen/Qwen3.5-0.8B (modelo base sin ajustar) | 0,8B | No disponible | 31,8% de acierto, regret 2,69 | No disponible en la informacion proporcionada | Hugging Face |
 | Politica profesora PPO del simulador | No disponible (modelo pequeno) | No aplica | Superior al adaptador segun el autor, valor numerico no publicado | No disponible | No disponible |
 | Otros modelos de decision empresarial comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -94,7 +94,7 @@ No se han identificado en la informacion proporcionada otros adaptadores de deci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lunation/connectailab-rl-lunar-v1
+- Modelo en Hugging Face: https://huggingface.co/Lunation/connectailab-rl-lunar-v1
 - Repositorio CONNECT TYCOON en GitHub: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para entrenamiento RL: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Banner del proyecto: https://raw.githubusercontent.com/wonseokjung/connect-tycoon/main/docs/brand/banner.gif

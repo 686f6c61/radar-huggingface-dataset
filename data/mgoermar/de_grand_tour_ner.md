@@ -2,7 +2,7 @@
 
 ## Resumen
 
-de_grand_tour_ner es un modelo de reconocimiento de entidades nombradas (NER) para aleman, publicado en HuggingFace por Maximilian Görmar (usuario mgoermar), vinculado a la Herzog August Bibliothek (HAB). Se distribuye como pipeline de spaCy (libreria `spacy`, versiones >=3.7.5,<3.8.0) y resuelve la tarea de token-classification, etiquetando entidades de tipo LOC (localizacion), MISC (miscelanea), ORG (organizacion) y PER (persona).
+de_grand_tour_ner es un modelo de reconocimiento de entidades nombradas (NER) para aleman, publicado en Hugging Face por Maximilian Görmar (usuario mgoermar), vinculado a la Herzog August Bibliothek (HAB). Se distribuye como pipeline de spaCy (libreria `spacy`, versiones >=3.7.5,<3.8.0) y resuelve la tarea de token-classification, etiquetando entidades de tipo LOC (localizacion), MISC (miscelanea), ORG (organizacion) y PER (persona).
 
 El modelo sigue la arquitectura estandar de spaCy basada en `tok2vec` (embeddings y red convolucional sobre tokens) seguida del componente `ner`, sin transformer subyacente declarado. Incorpora vectores estaticos de 300 dimensiones con 500.000 claves (500.000 vectores unicos). El repositorio ocupa 1,2 GB, tamano coherente con el almacenamiento de dichos vectores.
 
@@ -102,6 +102,6 @@ No se dispone de resultados de benchmarks comparables en la informacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mgoermar/de_grand_tour_ner
+- Modelo en Hugging Face: https://huggingface.co/mgoermar/de_grand_tour_ner
 - Pagina del autor (Maximilian Görmar, Herzog August Bibliothek): https://www.hab.de/author/maximilian-goermar/
 - Documentacion de spaCy: https://spacy.io/

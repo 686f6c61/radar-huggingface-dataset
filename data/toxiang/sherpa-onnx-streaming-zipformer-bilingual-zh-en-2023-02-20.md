@@ -79,7 +79,7 @@ Whisper ofrece mayor cobertura multilingüe pero no es streaming nativo; Parafor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TOXIANG/sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20
+- Repositorio Hugging Face: https://huggingface.co/TOXIANG/sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20
 - Modelo TorchScript original: https://huggingface.co/pfluo/k2fsa-zipformer-chinese-english-mixed
 - Código de entrenamiento (icefall): https://github.com/k2-fsa/icefall/tree/master/egs/librispeech/ASR/pruned_transducer_stateless7_streaming
 - Proyecto sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

@@ -70,7 +70,7 @@ No se dispone de datos comparativos publicados para esta exportación específic
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/loom-ai-org/matcha-tts-ljspeech-loom)
+- [Modelo en Hugging Face](https://huggingface.co/loom-ai-org/matcha-tts-ljspeech-loom)
 - [Repositorio loom.cpp](https://github.com/loom-ai-org/loom.cpp)
 - [Repositorio loom-py](https://github.com/loom-ai-org/loom-py)
 - [Proyecto original Matcha-TTS](https://github.com/shivammehta25/Matcha-TTS)

@@ -4,7 +4,7 @@
 
 `arinverse/zubaan-models` no es un modelo de lenguaje entrenado por su autor, sino un repositorio espejo (*mirror*) que aloja copias de modelos de reconocimiento de voz (ASR) de terceros. Arinverse lo publica para que su aplicación Zubaan (https://arinverse.github.io/) pueda descargar los ficheros de voz sin depender de que las cuentas upstream originales sigan disponibles. Segun la model card, los ficheros son copias byte a byte de los originales, salvo el modelo de puntuación, que aparece cuantizado a int8 y marcado como modificado.
 
-El repositorio agrupa ocho componentes: reconocimiento de voz en inglés (Zipformer de k2-fsa icefall), bengalí (Vosk via sherpa-onnx), hindi (IndicConformer de AI4Bharat), español (FastConformer híbrido de NVIDIA), portugués (Citrinet de Neongecko), un conversor de Whisper a GGML, un detector de actividad de voz (Silero VAD) y un modelo de puntuación, capitalización y segmentación multilingüe (47 idiomas). El tamaño total del repo es de 0,8 GB y el pipeline declarado en HuggingFace es "no disponible".
+El repositorio agrupa ocho componentes: reconocimiento de voz en inglés (Zipformer de k2-fsa icefall), bengalí (Vosk via sherpa-onnx), hindi (IndicConformer de AI4Bharat), español (FastConformer híbrido de NVIDIA), portugués (Citrinet de Neongecko), un conversor de Whisper a GGML, un detector de actividad de voz (Silero VAD) y un modelo de puntuación, capitalización y segmentación multilingüe (47 idiomas). El tamaño total del repo es de 0,8 GB y el pipeline declarado en Hugging Face es "no disponible".
 
 Es relevante para quien necesite una pila de ASR autocontenida, offline y de bajo coste computacional: todos los componentes son modelos pequeños o medianos pensados para ejecutarse en CPU mediante sherpa-onnx o whisper.cpp, no para generación de texto ni razonamiento. La licencia es mixta y cada carpeta arrastra las obligaciones de su licencia original (Apache-2.0, MIT, CC-BY-4.0 y BSD-3-Clause).
 
@@ -23,8 +23,8 @@ Es relevante para quien necesite una pila de ASR autocontenida, offline y de baj
 | Tamaño del repositorio | 0,8 GB |
 | Componentes | 8 carpetas: `en/`, `bn/`, `hi/`, `es/`, `pt/`, `whisper/`, `shared/`, `punctuation/` |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación (según HuggingFace) | 2026-10-07 |
-| Última actualización (según HuggingFace) | 2026-10-07 |
+| Fecha de creación (según Hugging Face) | 2026-10-07 |
+| Última actualización (según Hugging Face) | 2026-10-07 |
 
 ## Arquitectura y entrenamiento
 
@@ -83,7 +83,7 @@ La búsqueda web asociada a esta ficha no devolvió resultados relevantes: los e
 
 | Modelo / proyecto | Tipo | Idiomas | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `arinverse/zubaan-models` | Paquete espejo de varios ASR + VAD + puntuación | en, bn, hi, es, pt, multilingüe (Whisper) | ONNX, GGML | Mixta (Apache-2.0, MIT, CC-BY-4.0, BSD-3-Clause) | HuggingFace, 0 descargas |
+| `arinverse/zubaan-models` | Paquete espejo de varios ASR + VAD + puntuación | en, bn, hi, es, pt, multilingüe (Whisper) | ONNX, GGML | Mixta (Apache-2.0, MIT, CC-BY-4.0, BSD-3-Clause) | Hugging Face, 0 descargas |
 | `k2-fsa/sherpa-onnx` | Runtime y catálogo de modelos ASR/TTS | Muy amplio | ONNX | Apache-2.0 (mayoría) | GitHub, ampliamente usado |
 | `ggerganov/whisper.cpp` | Implementación de Whisper en C/C++ | Multilingüe | GGML | MIT | GitHub, muy extendido |
 | NVIDIA NeMo (`stt_es_fastconformer_hybrid_large_pc`) | Modelo ASR español | es | NeMo/.nemo, ONNX | CC-BY-4.0 | NGC/HuggingFace |
@@ -101,20 +101,20 @@ La diferencia principal frente a esos proyectos es que `arinverse/zubaan-models`
 - Cobertura de idiomas limitada: solo hay modelos dedicados para inglés, bengalí, hindi, español y portugués, más el multilingüe de Whisper. No se declara el conjunto exacto de idiomas de Whisper ni la calidad por idioma.
 - No se especifica qué variante (tamaño) de Whisper se incluye, lo que impide estimar con precisión calidad, latencia y huella de memoria.
 - No hay datos de entrenamiento, evaluación ni sesgos publicados en el repositorio; no se puede auditar el comportamiento por subgrupos demográficos o acentos.
-- Las fechas de creación y actualización que reporta HuggingFace (2026-10-07) son posteriores a la fecha actual, lo que supone una anomalía de metadatos que conviene verificar antes de depender del repositorio.
+- Las fechas de creación y actualización que reporta Hugging Face (2026-10-07) son posteriores a la fecha actual, lo que supone una anomalía de metadatos que conviene verificar antes de depender del repositorio.
 - Si se redistribuye el paquete, hay que replicar las atribuciones y avisos de licencia de cada componente; el autor no cede ningún derecho adicional sobre los modelos de terceros.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arinverse/zubaan-models
+- Repositorio en Hugging Face: https://huggingface.co/arinverse/zubaan-models
 - Aplicación Zubaan (Arinverse): https://arinverse.github.io/
 - Licencia CC-BY-4.0: https://creativecommons.org/licenses/by/4.0/
-- Origen `en/`: `csukuangfj/sherpa-onnx-streaming-zipformer-en-2023-06-26` (HuggingFace), basado en k2-fsa icefall
-- Origen `bn/`: `csukuangfj2/sherpa-onnx-streaming-zipformer-bn-vosk-2026-02-09` (HuggingFace), basado en `alphacep/vosk-model-small-streaming-bn`
-- Origen `hi/`: `OpenVoiceOS/ai4bharat-indicconformer-hi-onnx` (HuggingFace), basado en AI4Bharat IndicConformer
-- Origen `es/`: `nvidia/stt_es_fastconformer_hybrid_large_pc` (HuggingFace / NVIDIA NGC)
-- Origen `pt/`: `neongeckocom/stt_pt_citrinet_512_gamma_0_25` (HuggingFace)
+- Origen `en/`: `csukuangfj/sherpa-onnx-streaming-zipformer-en-2023-06-26` (Hugging Face), basado en k2-fsa icefall
+- Origen `bn/`: `csukuangfj2/sherpa-onnx-streaming-zipformer-bn-vosk-2026-02-09` (Hugging Face), basado en `alphacep/vosk-model-small-streaming-bn`
+- Origen `hi/`: `OpenVoiceOS/ai4bharat-indicconformer-hi-onnx` (Hugging Face), basado en AI4Bharat IndicConformer
+- Origen `es/`: `nvidia/stt_es_fastconformer_hybrid_large_pc` (Hugging Face / NVIDIA NGC)
+- Origen `pt/`: `neongeckocom/stt_pt_citrinet_512_gamma_0_25` (Hugging Face)
 - Origen `whisper/`: OpenAI Whisper y `ggerganov/whisper.cpp`
 - Origen `shared/`: `k2-fsa/sherpa-onnx` (releases, Silero VAD)
-- Origen `punctuation/`: `1-800-BAD-CODE/punct_cap_seg_47_language` (HuggingFace)
+- Origen `punctuation/`: `1-800-BAD-CODE/punct_cap_seg_47_language` (Hugging Face)
 - Resultados de búsqueda web: sin enlaces relevantes; los resultados recuperados correspondían a páginas de inicio de sesión de Hotmail/Outlook y no se han incluido.

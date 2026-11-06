@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zils d3-mini turnike es un repositorio de pesos publicado por el usuario Zayaan en HuggingFace. No se trata de un modelo entrenado desde cero ni de un fine-tuning nuevo: es una redistribucion de los pesos de `berkay123001/turnike-jev-4b-merged` en la revision `f10d80bc9b`, sin modificaciones, reorganizados en el layout que el autor denomina "soup-body" de Zils d3-mini, con prefijos de modulo `language_model.*` y `visual.*`.
+Zils d3-mini turnike es un repositorio de pesos publicado por el usuario Zayaan en Hugging Face. No se trata de un modelo entrenado desde cero ni de un fine-tuning nuevo: es una redistribucion de los pesos de `berkay123001/turnike-jev-4b-merged` en la revision `f10d80bc9b`, sin modificaciones, reorganizados en el layout que el autor denomina "soup-body" de Zils d3-mini, con prefijos de modulo `language_model.*` y `visual.*`.
 
 El modelo subyacente tiene 4.539.265.536 parametros (aproximadamente 4,5 mil millones) y un tamano de repositorio de 9,1 GB, lo que es coherente con pesos en precision de 16 bits. La model card indica que los pesos originales se distribuyen bajo licencia Apache 2.0 y que el commit se realizo en el contexto de la subnet 127 (Zils) de Bittensor mediante una hotkey de tipo scout, es decir, en el marco de un mecanismo de descubrimiento y catalogacion de modelos de esa red.
 
@@ -47,7 +47,7 @@ Tampoco hay informacion sobre el proceso de entrenamiento: no se indica el volum
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card de este repositorio ni los metadatos de HuggingFace incluyen cifras de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion, ni para este empaquetado ni para el modelo base referenciado.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card de este repositorio ni los metadatos de Hugging Face incluyen cifras de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion, ni para este empaquetado ni para el modelo base referenciado.
 
 ## Requisitos de hardware
 
@@ -72,9 +72,9 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento del 
 - No se declaran idiomas soportados; el rendimiento en castellano es indeterminado.
 - La licencia Apache 2.0 permite uso comercial, pero la atribucion corresponde a los autores originales de los pesos, no al publicador de este empaquetado.
 - El repositorio tiene cero descargas y cero likes en el momento de la consulta, y no cuenta con pipeline declarado; es un artefacto de publicacion en red descentralizada mas que un modelo mantenido.
-- El esquema de nombres no estandar (`language_model.*`, `visual.*`) puede romper cargadores que esperen convenciones de HuggingFace Transformers, lo que exige adaptacion del codigo de carga.
+- El esquema de nombres no estandar (`language_model.*`, `visual.*`) puede romper cargadores que esperen convenciones de Hugging Face Transformers, lo que exige adaptacion del codigo de carga.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Zayaan/zils-d3mini-turnike
+- Repositorio en Hugging Face: https://huggingface.co/Zayaan/zils-d3mini-turnike
 - Modelo base: https://huggingface.co/berkay123001/turnike-jev-4b-merged

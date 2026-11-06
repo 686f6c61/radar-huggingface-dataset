@@ -90,9 +90,9 @@ La rejilla de recuperación se midió en CPU con llama.cpp (Q8_0) a través de l
 
 | Modelo | Parametros | Contexto | Post-entrenamiento | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Keural Cortex 8B — 64K | 8,19 B (segun model card) | 65.536 (YaRN 2.0) | No (base) | ko, en | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B-Base | 8,19 B | 32.768 nativos | No (base) | Multiidioma | Apache 2.0 | HuggingFace |
-| Qwen3-8B (post-entrenado) | 8,19 B | 32.768 nativos, extensible con YaRN | Si (SFT/DPO, modo thinking) | Multiidioma | Apache 2.0 | HuggingFace |
+| Keural Cortex 8B — 64K | 8,19 B (segun model card) | 65.536 (YaRN 2.0) | No (base) | ko, en | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B-Base | 8,19 B | 32.768 nativos | No (base) | Multiidioma | Apache 2.0 | Hugging Face |
+| Qwen3-8B (post-entrenado) | 8,19 B | 32.768 nativos, extensible con YaRN | Si (SFT/DPO, modo thinking) | Multiidioma | Apache 2.0 | Hugging Face |
 | Otros modelos coreanos de contexto largo comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa con el modelo base de Qwen es la más informativa: Keural Cortex duplica la ventana de contexto (32.768 → 65.536) y mejora el vocabulario coreano, pero sacrifica ligeramente conocimiento medido (KMMLU −0,34) y no incorpora ninguna capacidad de instrucción. Frente al Qwen3-8B post-entrenado, la diferencia es de categoría: aquel responde a instrucciones y soporta *tool calling*; este no.
@@ -113,7 +113,7 @@ La comparación directa con el modelo base de Qwen es la más informativa: Keura
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mkd-hossain/Keural-Cortex-8B-64K
+- Modelo en Hugging Face: https://huggingface.co/mkd-hossain/Keural-Cortex-8B-64K
 - Repositorio del proyecto: https://github.com/MKD-CORP/Keural-Cortex-8B
 - Script de evaluación *needle-in-a-haystack*: `eval/needle_cpu.py` dentro del repositorio anterior
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base

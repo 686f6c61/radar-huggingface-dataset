@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepanBabu/gte-Qwen2-1.5B-instruct es un modelo de embeddings textuales basado en la arquitectura Qwen2-1.5B, desarrollado originalmente por Alibaba-NLP y publicado en HuggingFace bajo el usuario DeepanBabu. Se trata de un modelo encoder que genera vectores densos de 1536 dimensiones a partir de texto, pensado para tareas de búsqueda semántica, recuperación de documentos, clustering y similitud entre oraciones. Su ventana de contexto alcanza los 32.000 tokens, lo que lo hace especialmente útil para indexar documentos largos en sistemas de recuperación aumentada (RAG). El modelo es multilingüe, aunque la model card no especifica la lista completa de idiomas. Es relevante porque ofrece un equilibrio entre tamaño y rendimiento: al basarse en un modelo de 1.500 millones de parámetros, puede ejecutarse en hardware de consumo con un coste computacional moderado, manteniendo una calidad de embeddings competitiva dentro de la familia gte-Qwen2.
+DeepanBabu/gte-Qwen2-1.5B-instruct es un modelo de embeddings textuales basado en la arquitectura Qwen2-1.5B, desarrollado originalmente por Alibaba-NLP y publicado en Hugging Face bajo el usuario DeepanBabu. Se trata de un modelo encoder que genera vectores densos de 1536 dimensiones a partir de texto, pensado para tareas de búsqueda semántica, recuperación de documentos, clustering y similitud entre oraciones. Su ventana de contexto alcanza los 32.000 tokens, lo que lo hace especialmente útil para indexar documentos largos en sistemas de recuperación aumentada (RAG). El modelo es multilingüe, aunque la model card no especifica la lista completa de idiomas. Es relevante porque ofrece un equilibrio entre tamaño y rendimiento: al basarse en un modelo de 1.500 millones de parámetros, puede ejecutarse en hardware de consumo con un coste computacional moderado, manteniendo una calidad de embeddings competitiva dentro de la familia gte-Qwen2.
 
 ## Especificaciones tecnicas
 
@@ -43,7 +43,7 @@ El modelo es un encoder de embeddings construido sobre la base del LLM Qwen2-1.5
 
 ## Benchmarks y rendimiento
 
-El model-index incluido en la model card de HuggingFace está etiquetado como "gte-qwen2-7B-instruct", lo que indica que los resultados declarados corresponden a la variante de 7.000 millones de parámetros, no a la variante 1.5B. A continuación se muestran algunos de los resultados declarados por el autor para la variante 7B. Para la variante 1.5B, una fuente externa menciona una puntuación MTEB de 67,16 en recuperación en inglés, pero no se dispone de un desglose por tarea.
+El model-index incluido en la model card de Hugging Face está etiquetado como "gte-qwen2-7B-instruct", lo que indica que los resultados declarados corresponden a la variante de 7.000 millones de parámetros, no a la variante 1.5B. A continuación se muestran algunos de los resultados declarados por el autor para la variante 7B. Para la variante 1.5B, una fuente externa menciona una puntuación MTEB de 67,16 en recuperación en inglés, pero no se dispone de un desglose por tarea.
 
 | Dataset | Métrica | Valor (variante 7B) |
 |---|---|---|
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks específicos para la variante 1.5B 
 - VRAM estimada para inferencia: en FP32, el modelo requiere aproximadamente 6 GB; en FP16, unos 3 GB, más la memoria para activaciones y el tamaño del batch.
 - GPU recomendadas: RTX 3060 12GB o superior; también puede ejecutarse en GPU de datacenter como A10G o T4.
 - Sí cabe en GPU de consumo: con FP16 y batches pequeños, es viable en tarjetas con 6-8 GB de VRAM.
-- Opciones de despliegue: sentence-transformers, HuggingFace Transformers, text-embeddings-inference (TEI).
+- Opciones de despliegue: sentence-transformers, Hugging Face Transformers, text-embeddings-inference (TEI).
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -82,5 +82,5 @@ En la información proporcionada solo se menciona una alternativa comparable, la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DeepanBabu/gte-Qwen2-1.5B-instruct
+- Hugging Face: https://huggingface.co/DeepanBabu/gte-Qwen2-1.5B-instruct
 - Ficha en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/gte-qwen2-15b-instruct-alibaba-nlp

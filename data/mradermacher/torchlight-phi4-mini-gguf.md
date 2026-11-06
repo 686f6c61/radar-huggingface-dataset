@@ -6,7 +6,7 @@ torchlight-phi4-mini-GGUF es la distribución en formato GGUF del modelo torchli
 
 El modelo mantiene la arquitectura subyacente de Phi-4-mini (transformer denso, familia Phi-3/Phi-4), con un tamaño de contexto no especificado en la información disponible. Su principal atractivo es la combinación de un tamaño reducido, licencia permisiva y cuantizaciones estáticas que van desde 1,8 GB (Q2_K) hasta 7,8 GB (f16), lo que facilita su ejecución en GPUs consumer y en CPU mediante llama.cpp. No obstante, la información pública disponible es limitada: no se han publicado benchmarks ni detalles sobre el proceso de entrenamiento, y el modelo solo declara soporte para inglés.
 
-Esta ficha se basa exclusivamente en los datos proporcionados por la model card y los metadatos de HuggingFace. Cualquier dato no confirmado se indica explícitamente como "no disponible".
+Esta ficha se basa exclusivamente en los datos proporcionados por la model card y los metadatos de Hugging Face. Cualquier dato no confirmado se indica explícitamente como "no disponible".
 
 ## Especificaciones técnicas
 
@@ -35,7 +35,7 @@ La cuantización ha sido realizada por mradermacher mediante su pipeline estáti
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: solo inglés declarado.
 - Capacidades especiales (thinking mode, visión, audio): no disponible.
-- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que sugiere que puede desplegarse en infraestructuras de inferencia compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que sugiere que puede desplegarse en infraestructuras de inferencia compatibles con la API de Hugging Face.
 
 ## Casos de uso
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible.
   - f16: ~7,8 GB
 - GPU recomendadas: no disponible. Por tamaño, cabe en GPUs consumer como RTX 3060 (12 GB), RTX 4060 Ti (16 GB), RTX 4090 (24 GB) e incluso en GPUs con 4-8 GB para cuantizaciones bajas.
 - ¿Cabe en consumer GPU? Sí, en la mayoría de GPUs modernas con al menos 4 GB de VRAM para cuantizaciones Q4/Q5; las cuantizaciones Q2/Q3 caben en 2-3 GB.
-- Opciones de despliegue: llama.cpp, Ollama (a partir de GGUF), servidores compatibles con GGUF (p. ej., llama-cpp-python), y potencialmente vLLM si se convierte a safetensors (no confirmado). El tag "endpoints_compatible" sugiere compatibilidad con la API de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama (a partir de GGUF), servidores compatibles con GGUF (p. ej., llama-cpp-python), y potencialmente vLLM si se convierte a safetensors (no confirmado). El tag "endpoints_compatible" sugiere compatibilidad con la API de Hugging Face.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ Nota: los datos de contexto y parámetros de los modelos comparativos provienen 
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/mradermacher/torchlight-phi4-mini-GGUF
+- Hugging Face (GGUF): https://huggingface.co/mradermacher/torchlight-phi4-mini-GGUF
 - Modelo base (LoRA): https://huggingface.co/samadpls/torchlight-phi4-mini
 - Dataset: https://huggingface.co/datasets/samadpls/torchlight-threads
 - Página de resumen de cuantizaciones: https://hf.tst.eu/model#torchlight-phi4-mini-GGUF

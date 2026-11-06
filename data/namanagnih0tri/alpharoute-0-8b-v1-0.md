@@ -80,6 +80,6 @@ No se dispone de datos de comparacion con otros modelos de routing o clasificaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NamanAgnih0tri/AlphaRoute-0.8B-v1.0
+- Modelo en Hugging Face: https://huggingface.co/NamanAgnih0tri/AlphaRoute-0.8B-v1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - No se han encontrado otros enlaces relevantes (paper, repositorio de codigo) asociados a este modelo especifico. Los resultados de busqueda sobre "AlphaRoute" en GitHub y arXiv se refieren a un proyecto de routing VLSI no relacionado.

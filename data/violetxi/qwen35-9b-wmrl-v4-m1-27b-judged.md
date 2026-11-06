@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-m1-27b-judged
+- Modelo en Hugging Face: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-m1-27b-judged
 - Checkpoint hermano (m1-9b-judged): https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-m1-9b-judged
 - Checkpoint hermano (c4-action): https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-c4-action
 - Investigacion Qwen: https://qwen.ai/research/

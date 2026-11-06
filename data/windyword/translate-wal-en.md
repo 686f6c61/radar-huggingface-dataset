@@ -31,7 +31,7 @@ WindyWord parte de esos pesos (etiquetados como `base_model:finetune` respecto a
 
 - Traduccion de texto de wolaytta a ingles, la unica tarea para la que esta disenado el pipeline (`translation`).
 - Despliegue en dos entornos: inferencia en GPU mediante Transformers y en CPU mediante CTranslate2 INT8.
-- Compatibilidad con `endpoints_compatible`, por lo que puede servirse tras APIs compatibles con los endpoints de HuggingFace.
+- Compatibilidad con `endpoints_compatible`, por lo que puede servirse tras APIs compatibles con los endpoints de Hugging Face.
 - No se documenta soporte de tool calling ni de function calling.
 - No se documenta soporte de agentes ni de razonamiento multi-paso.
 - Cobertura multilingue limitada al par wal → en; no traduce a otras lenguas.
@@ -56,16 +56,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - VRAM estimada para inferencia: no disponible de forma explicita; con un repositorio de 0,4 GB, la huella de memoria es reducida y compatible con GPUs de gama baja.
 - GPU recomendadas: no se especifican; por tamano, cualquier GPU consumer moderna (por ejemplo, serie RTX 30/40) seria suficiente para la variante Transformers.
 - Caberia en GPU consumer: si, previsiblemente en cualquier GPU con unos pocos GB de VRAM; no se aporta una cifra exacta.
-- Opciones de despliegue: Transformers (PyTorch) para GPU y CTranslate2 INT8 para CPU; tambien compatible con endpoints de HuggingFace.
+- Opciones de despliegue: Transformers (PyTorch) para GPU y CTranslate2 INT8 para CPU; tambien compatible con endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Direccion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WindyWord/translate-wal-en | wal → en | no disponible (base OPUS-MT) | no disponible | Apache-2.0 | HuggingFace (WindyWord) |
-| Helsinki-NLP/opus-mt-wal-en | wal → en | no disponible (base OPUS-MT) | no disponible | Apache-2.0 | HuggingFace (Helsinki-NLP) |
-| Modelos multilingues masivos (tipo NLLB-200 o mBART) | multiples | muy superior | variable | variable segun modelo | HuggingFace |
+| WindyWord/translate-wal-en | wal → en | no disponible (base OPUS-MT) | no disponible | Apache-2.0 | Hugging Face (WindyWord) |
+| Helsinki-NLP/opus-mt-wal-en | wal → en | no disponible (base OPUS-MT) | no disponible | Apache-2.0 | Hugging Face (Helsinki-NLP) |
+| Modelos multilingues masivos (tipo NLLB-200 o mBART) | multiples | muy superior | variable | variable segun modelo | Hugging Face |
 
 La comparacion directa mas significativa es con Helsinki-NLP/opus-mt-wal-en, del que este modelo deriva como ajuste fino: comparten arquitectura, licencia y par de lenguas, diferenciandose en el ajuste y en el empaquetado de variantes (WindyStandard y CTranslate2 INT8). No se dispone de datos de rendimiento que permitan comparar la calidad de traduccion entre ambos.
 
@@ -82,7 +82,7 @@ La comparacion directa mas significativa es con Helsinki-NLP/opus-mt-wal-en, del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WindyWord/translate-wal-en
+- Modelo en Hugging Face: https://huggingface.co/WindyWord/translate-wal-en
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-wal-en
 - Copia canonica indicada por el autor: https://huggingface.co/WindyTranslate/translate-wal-en
 - Pagina de catalogo y puntuaciones: https://windytranslate.com/models/translate-wal-en

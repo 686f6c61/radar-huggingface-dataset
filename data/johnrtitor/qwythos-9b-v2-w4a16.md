@@ -6,7 +6,7 @@ Qwythos-9B-v2-W4A16 es una cuantización INT4 del modelo multimodal `empero-ai/Q
 
 La relevancia de esta publicación es fundamentalmente de despliegue: reduce la huella de pesos de 18,9 GB en BF16 a unos 5,15 GB en INT4, lo que permite cargar el modelo completo en un TPU v5e-1 dejando margen para la caché KV y el estado recurrente. El autor preserva en BF16 el codificador visual (`visual`) y la cabeza de lenguaje (`lm_head`) para no degradar el OCR ni el razonamiento multimodal, una decisión técnica poco habitual en cuantizaciones W4A16 genéricas.
 
-La información disponible sobre el modelo base es escasa: la model card del repositorio cuantizado se centra en los detalles de cuantización y despliegue en TPU, y no documenta la composición del dataset de entrenamiento, los benchmarks ni el proceso de alineación del modelo original. Los datos que se recogen a continuación proceden de los metadatos de HuggingFace y de la model card del checkpoint cuantizado.
+La información disponible sobre el modelo base es escasa: la model card del repositorio cuantizado se centra en los detalles de cuantización y despliegue en TPU, y no documenta la composición del dataset de entrenamiento, los benchmarks ni el proceso de alineación del modelo original. Los datos que se recogen a continuación proceden de los metadatos de Hugging Face y de la model card del checkpoint cuantizado.
 
 ## Especificaciones tecnicas
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace del checkpoint cuantizado: https://huggingface.co/JohnRTitor/Qwythos-9B-v2-W4A16
+- Repositorio Hugging Face del checkpoint cuantizado: https://huggingface.co/JohnRTitor/Qwythos-9B-v2-W4A16
 - Modelo base: https://huggingface.co/empero-ai/Qwythos-9B-v2
 - TorchAO (librería de cuantización): no se proporciona enlace en la información disponible
 - PyTorch/XLA: no se proporciona enlace en la información disponible

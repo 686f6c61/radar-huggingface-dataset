@@ -80,7 +80,7 @@ La comparativa se basa en los modelos mencionados en la model card y en los resu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/GLM-5.3-CYBERSECURITY-FP8
+- Modelo en Hugging Face: https://huggingface.co/dealignai/GLM-5.3-CYBERSECURITY-FP8
 - Modelo hermano UNCENSORED-NVFP4: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-NVFP4
 - Blog oficial de Z.ai sobre GLM-5.3: https://z.ai/blog/glm-5.3
 - Documentacion de Z.ai para GLM-5.3: https://docs.z.ai/guides/llm/glm-5.3

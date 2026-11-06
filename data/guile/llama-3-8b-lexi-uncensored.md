@@ -68,9 +68,9 @@ Estos valores son practicamente identicos a los de Llama-3-8B-Instruct original,
 
 | Modelo | Parametros | Contexto | MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3-8B-Lexi-Uncensored | 8.03B | 8k (estimado) | 67.68 | Llama 3 | HuggingFace, GGUF |
+| Llama-3-8B-Lexi-Uncensored | 8.03B | 8k (estimado) | 67.68 | Llama 3 | Hugging Face, GGUF |
 | Llama-3-8B-Instruct (original) | 8.03B | 8k | 68.4 (aprox.) | Llama 3 | Oficial Meta |
-| Dolphin 2.9 Llama 3 8B | 8.03B | 8k | no disponible | Llama 3 | HuggingFace |
+| Dolphin 2.9 Llama 3 8B | 8.03B | 8k | no disponible | Llama 3 | Hugging Face |
 
 La diferencia principal con el original no es el rendimiento, sino la ausencia de rechazos. Dolphin es otra alternativa "uncensored" con un enfoque similar, aunque no se dispone de benchmarks comparables en la informacion consultada.
 
@@ -86,7 +86,7 @@ La diferencia principal con el original no es el rendimiento, sino la ausencia d
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo (Guile): https://huggingface.co/Guile/Llama-3-8B-Lexi-Uncensored
+- Repositorio Hugging Face del modelo (Guile): https://huggingface.co/Guile/Llama-3-8B-Lexi-Uncensored
 - Repositorio original de Orenguteng: https://huggingface.co/Orenguteng/Llama-3-8B-Lexi-Uncensored
 - Version alternativa de Andycurrent: https://huggingface.co/Andycurrent/Llama-3-8B-Lexi-Uncensored
 - Version GGUF en Ollama: https://ollama.com/taozhiyuai/llama-3-8b-lexi-uncensored

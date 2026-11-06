@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sapiens2-1B-Pointmap es un modelo de visión por computador desarrollado por Meta que estima, para cada píxel de una imagen, sus coordenadas 3D (x, y, z) en el sistema de referencia de la cámara. Se trata de un checkpoint especializado en la tarea de *pointmap estimation*, obtenido por *fine-tuning* del backbone preentrenado Sapiens2-1B, y está pensado específicamente para imágenes centradas en el cuerpo humano (*human-centric*). La ficha que se analiza aquí es un espejo no oficial publicado por el usuario `ml-resources` en HuggingFace; el repositorio original es `facebook/sapiens2-pointmap-1b` y la licencia se mantiene sin cambios.
+Sapiens2-1B-Pointmap es un modelo de visión por computador desarrollado por Meta que estima, para cada píxel de una imagen, sus coordenadas 3D (x, y, z) en el sistema de referencia de la cámara. Se trata de un checkpoint especializado en la tarea de *pointmap estimation*, obtenido por *fine-tuning* del backbone preentrenado Sapiens2-1B, y está pensado específicamente para imágenes centradas en el cuerpo humano (*human-centric*). La ficha que se analiza aquí es un espejo no oficial publicado por el usuario `ml-resources` en Hugging Face; el repositorio original es `facebook/sapiens2-pointmap-1b` y la licencia se mantiene sin cambios.
 
 Arquitectónicamente es un Vision Transformer (ViT) de 40 capas, dimensión de embedding 1536, 24 cabezas de atención y parche de 16×16, al que se añade una cabeza de regresión de pointmap. El backbone suma 1.462 millones de parámetros y 4.715 TFLOPs por inferencia a una resolución de 1024×768 (alto × ancho); el checkpoint completo en safetensors contiene 1.629.594.164 parámetros, lo que sitúa la cabeza de estimación en torno a 167 millones de parámetros adicionales. El repositorio ocupa 6,5 GB.
 
@@ -73,11 +73,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | FLOPs | Embed dim | Capas | Cabezas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Sapiens2-0.4B (pointmap) | 0,398 B | 1,260 T | 1024 | 24 | 16 | Sapiens2 License | HuggingFace (facebook) |
-| Sapiens2-0.8B (pointmap) | 0,818 B | 2,592 T | 1280 | 32 | 16 | Sapiens2 License | HuggingFace (facebook) |
-| Sapiens2-1B (pointmap, este) | 1,462 B backbone / 1,63 B total | 4,715 T | 1536 | 40 | 24 | Sapiens2 License | HuggingFace (mirror `ml-resources`) |
-| Sapiens2-1B-4K | 1,607 B | no disponible | 1536 | 40 | 24 | Sapiens2 License | HuggingFace (facebook) |
-| Sapiens2-5B (pointmap) | 5,071 B | 15,722 T | 2432 | 56 | 32 | Sapiens2 License | HuggingFace (facebook) |
+| Sapiens2-0.4B (pointmap) | 0,398 B | 1,260 T | 1024 | 24 | 16 | Sapiens2 License | Hugging Face (facebook) |
+| Sapiens2-0.8B (pointmap) | 0,818 B | 2,592 T | 1280 | 32 | 16 | Sapiens2 License | Hugging Face (facebook) |
+| Sapiens2-1B (pointmap, este) | 1,462 B backbone / 1,63 B total | 4,715 T | 1536 | 40 | 24 | Sapiens2 License | Hugging Face (mirror `ml-resources`) |
+| Sapiens2-1B-4K | 1,607 B | no disponible | 1536 | 40 | 24 | Sapiens2 License | Hugging Face (facebook) |
+| Sapiens2-5B (pointmap) | 5,071 B | 15,722 T | 2432 | 56 | 32 | Sapiens2 License | Hugging Face (facebook) |
 
 No se dispone en la informacion proporcionada de datos de rendimiento comparativo entre estas variantes, ni de alternativas externas de la misma categoria (por ejemplo, modelos de estimacion de profundidad monocular o de pointmap de otros autores), por lo que no se puede establecer una comparacion cuantitativa. La comparacion anterior se limita a parametros, coste computacional y configuracion arquitectonica dentro de la propia familia Sapiens2.
 
@@ -98,7 +98,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento comparativ
 - Repositorio analizado (espejo): https://huggingface.co/ml-resources/sapiens2-pointmap-1b
 - Repositorio original: https://huggingface.co/facebook/sapiens2-pointmap-1b
 - Modelo base: https://huggingface.co/facebook/sapiens2-pretrain-1b
-- Coleccion Sapiens2 en HuggingFace: https://huggingface.co/collections/facebook/sapiens2
+- Coleccion Sapiens2 en Hugging Face: https://huggingface.co/collections/facebook/sapiens2
 - Variante 0.4B: https://huggingface.co/facebook/sapiens2-pointmap-0.4b
 - Variante 0.8B: https://huggingface.co/facebook/sapiens2-pointmap-0.8b
 - Variante 1B-4K: https://huggingface.co/facebook/sapiens2-pretrain-1b-4k

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `stairmed/smolvla_piper_dex15_hand_v2_full_ft_10k` es un checkpoint de pesos en formato safetensors publicado en HuggingFace por el usuario `stairmed`. Cuenta con 450.046.176 parametros totales (aproximadamente 450 millones) y un repositorio de 0,9 GB. El identificador del repositorio sugiere, por su nomenclatura, un ajuste fino completo (`full_ft`) de un modelo de la familia SmolVLA sobre 10 000 pasos de entrenamiento (`10k`), orientado a un brazo robotico Piper con una mano diestra Dex15 (`piper_dex15_hand`). Esta interpretacion procede unicamente del nombre del repositorio y no esta confirmada por la informacion disponible.
+El modelo `stairmed/smolvla_piper_dex15_hand_v2_full_ft_10k` es un checkpoint de pesos en formato safetensors publicado en Hugging Face por el usuario `stairmed`. Cuenta con 450.046.176 parametros totales (aproximadamente 450 millones) y un repositorio de 0,9 GB. El identificador del repositorio sugiere, por su nomenclatura, un ajuste fino completo (`full_ft`) de un modelo de la familia SmolVLA sobre 10 000 pasos de entrenamiento (`10k`), orientado a un brazo robotico Piper con una mano diestra Dex15 (`piper_dex15_hand`). Esta interpretacion procede unicamente del nombre del repositorio y no esta confirmada por la informacion disponible.
 
 El modelo se publico el 21 de septiembre de 2026 y se actualizo dos minutos despues, el mismo dia. No incluye pipeline declarado, licencia, idiomas soportados ni documentacion tecnica en la informacion proporcionada, y acumula 12 descargas y 0 likes. No se ha publicado ninguna model card descriptiva, lo que limita sustancialmente cualquier evaluacion rigurosa.
 
@@ -83,12 +83,12 @@ No disponible. La informacion proporcionada no incluye modelos comparables, ni r
 - Riesgo de alucinacion: no evaluable en ausencia de benchmarks y de descripcion del modelo. En modelos de accion, el riesgo analogo es la generacion de trayectorias o acciones inseguras.
 - Idiomas: no disponibles. No hay evidencia de soporte multilingue.
 - Contexto: no disponible. Se desconoce la ventana de contexto o el horizonte temporal de las observaciones.
-- Trazabilidad: el campo `pipeline` no esta declarado, por lo que la plataforma de HuggingFace no reconoce la tarea del modelo.
+- Trazabilidad: el campo `pipeline` no esta declarado, por lo que la plataforma de Hugging Face no reconoce la tarea del modelo.
 - Reputacion del artefacto: 12 descargas y 0 likes indican que el checkpoint no ha sido validado por la comunidad.
 - Uso en robotica real: cualquier politica de control debe someterse avalidacion exhaustiva en entornos simulados y con protocolos de seguridad fisica antes de operar hardware, especialmente en presencia de manos diestras y espacios compartidos con personas.
 - Fechas de publicacion: el repositorio figura creado y actualizado en septiembre de 2026, con apenas dos minutos de diferencia entre ambos eventos, lo que sugiere una subida automatizada o un artefacto de pipeline sin curacion posterior.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stairmed/smolvla_piper_dex15_hand_v2_full_ft_10k
+- Hugging Face: https://huggingface.co/stairmed/smolvla_piper_dex15_hand_v2_full_ft_10k
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada. Los resultados obtenidos correspondian a sitios de pasatiempos sin relacion con el modelo.

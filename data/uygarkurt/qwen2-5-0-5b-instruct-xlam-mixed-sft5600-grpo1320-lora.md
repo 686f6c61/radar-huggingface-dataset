@@ -82,10 +82,10 @@ Lectura de los datos: el paso de SFT a SFT + GRPO mejora BFCL single-turn FC (+3
 
 | Modelo | Parámetros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (SFT + GRPO) | 0,5B (base) + LoRA | no disponible | MMLU 39,25 · ETC 78,22 · BFCL single-turn 56,48 · Irrelevance 51,87 | no disponible | HuggingFace, 2026-10-25, 0 descargas |
-| Adaptador SFT 5.600 del mismo autor | 0,5B (base) + LoRA | no disponible | MMLU 39,42 · ETC 77,61 · BFCL single-turn 53,04 · Irrelevance 49,46 | no disponible | HuggingFace |
-| Qwen2.5-0.5B-Instruct (modelo base, sin adaptador) | 0,5B | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion (consultar ficha del modelo base) | HuggingFace, oficial de Qwen |
-| Qwen2.5-1.5B-Instruct / 3B-Instruct (alternativas de la misma familia para tool calling) | 1,5B / 3B | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | HuggingFace, oficial de Qwen |
+| Este adaptador (SFT + GRPO) | 0,5B (base) + LoRA | no disponible | MMLU 39,25 · ETC 78,22 · BFCL single-turn 56,48 · Irrelevance 51,87 | no disponible | Hugging Face, 2026-10-25, 0 descargas |
+| Adaptador SFT 5.600 del mismo autor | 0,5B (base) + LoRA | no disponible | MMLU 39,42 · ETC 77,61 · BFCL single-turn 53,04 · Irrelevance 49,46 | no disponible | Hugging Face |
+| Qwen2.5-0.5B-Instruct (modelo base, sin adaptador) | 0,5B | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion (consultar ficha del modelo base) | Hugging Face, oficial de Qwen |
+| Qwen2.5-1.5B-Instruct / 3B-Instruct (alternativas de la misma familia para tool calling) | 1,5B / 3B | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | Hugging Face, oficial de Qwen |
 
 La comparación directa más informativa es contra el adaptador SFT del mismo autor, porque comparte base, dataset y metodología de evaluación: el GRPO aporta la mejora en formato de llamada (BFCL) y en abstención, a costa de un retroceso pequeño en conocimiento general. Frente a modelos mayores de la familia Qwen2.5 no hay datos comparables publicados en esta ficha, y las métricas del autor son agregados propios no equivalentes a los leaderboards públicos.
 
@@ -106,7 +106,7 @@ La comparación directa más informativa es contra el adaptador SFT del mismo au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-grpo1320-lora
+- Modelo en Hugging Face: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-grpo1320-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/uygarkurt/xlam-tool-calling-mixed
 - Adaptador SFT previo: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-lora

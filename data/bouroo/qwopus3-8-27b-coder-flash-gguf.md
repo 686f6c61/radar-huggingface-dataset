@@ -94,6 +94,6 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bouroo/Qwopus3.8-27B-Coder-Flash-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bouroo/Qwopus3.8-27B-Coder-Flash-GGUF
 - Modelo base (checkpoint original): https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash
 - Splash (runtime con kernels Metal para MXFP4): https://github.com/incoai/splash

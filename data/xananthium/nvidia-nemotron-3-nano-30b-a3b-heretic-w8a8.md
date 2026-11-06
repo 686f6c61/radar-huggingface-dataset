@@ -80,8 +80,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Xananthium/NVIDIA-Nemotron-3-Nano-30B-A3B-Heretic-W8A8 | 31.591.807.616 | 200.000 en la receta de servicio | W8A8 compressed-tensors | nvidia-nemotron-open-model-license | Publico en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| trohrbaugh/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16-heretic (modelo base directo) | no disponible en la informacion proporcionada | no disponible | BF16 (sin cuantizar) | no disponible | Publico en HuggingFace; referenciado como origen del checkpoint |
+| Xananthium/NVIDIA-Nemotron-3-Nano-30B-A3B-Heretic-W8A8 | 31.591.807.616 | 200.000 en la receta de servicio | W8A8 compressed-tensors | nvidia-nemotron-open-model-license | Publico en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| trohrbaugh/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16-heretic (modelo base directo) | no disponible en la informacion proporcionada | no disponible | BF16 (sin cuantizar) | no disponible | Publico en Hugging Face; referenciado como origen del checkpoint |
 | NVIDIA Nemotron 3 Nano 30B A3B (modelo upstream original) | no disponible en la informacion proporcionada | no disponible | no disponible | nvidia-nemotron-open-model-license | Publico; es el origen de la cadena de derivados |
 
 No se dispone de datos de otros modelos comparables de la misma categoria (MoE de ~30.000 millones de parametros totales y ~3.000 millones activos) en la informacion proporcionada, por lo que no se incluyen alternativas adicionales.
@@ -102,7 +102,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria (MoE d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xananthium/NVIDIA-Nemotron-3-Nano-30B-A3B-Heretic-W8A8
+- Modelo en Hugging Face: https://huggingface.co/Xananthium/NVIDIA-Nemotron-3-Nano-30B-A3B-Heretic-W8A8
 - Modelo base (BF16 heretic): https://huggingface.co/trohrbaugh/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16-heretic
 - Licencia NVIDIA Nemotron Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/
 - Model card original preservada en el repositorio: README_ORIGINAL.md

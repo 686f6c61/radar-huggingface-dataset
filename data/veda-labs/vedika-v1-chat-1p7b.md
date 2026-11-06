@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| Vedika V1 Chat 1.7B | ~1,7 B | no disponible | Apache 2.0 | en | HuggingFace |
-| Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 tokens | Apache 2.0 | multilingue (incluye es, en, zh) | HuggingFace, amplia adopcion |
-| SmolLM2-1.7B-Instruct | ~1,7 B | 8.192 tokens (ampliable) | Apache 2.0 | en (principalmente) | HuggingFace, muy documentado |
-| Llama 3.2-1B-Instruct | ~1,2 B | 128.000 tokens | Llama 3.2 Community License | multilingue | HuggingFace, gated |
+| Vedika V1 Chat 1.7B | ~1,7 B | no disponible | Apache 2.0 | en | Hugging Face |
+| Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 tokens | Apache 2.0 | multilingue (incluye es, en, zh) | Hugging Face, amplia adopcion |
+| SmolLM2-1.7B-Instruct | ~1,7 B | 8.192 tokens (ampliable) | Apache 2.0 | en (principalmente) | Hugging Face, muy documentado |
+| Llama 3.2-1B-Instruct | ~1,2 B | 128.000 tokens | Llama 3.2 Community License | multilingue | Hugging Face, gated |
 
 La comparativa se limita a especificaciones publicas; no se dispone de resultados de benchmarks de Vedika V1 Chat 1.7B para contrastar calidad. Frente a Qwen2.5-1.5B-Instruct y SmolLM2-1.7B-Instruct, el modelo de Veda Labs carece de documentacion sobre contexto, datos de entrenamiento y evaluacion, lo que supone una desventaja significativa para su adopcion en produccion. Llama 3.2-1B-Instruct ofrece contexto muy superior pero con licencia mas restrictiva.
 
@@ -83,6 +83,6 @@ La comparativa se limita a especificaciones publicas; no se dispone de resultado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Veda-Labs/vedika-v1-chat-1p7b
-- Perfil del autor en HuggingFace: https://huggingface.co/Veda-Labs
+- Modelo en Hugging Face: https://huggingface.co/Veda-Labs/vedika-v1-chat-1p7b
+- Perfil del autor en Hugging Face: https://huggingface.co/Veda-Labs
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

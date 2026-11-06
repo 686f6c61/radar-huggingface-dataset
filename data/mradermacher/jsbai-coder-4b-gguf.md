@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JSBAI-Coder-4B-GGUF es la version cuantizada en formato GGUF del modelo JSBAI-Coder-4B, publicado por el usuario mradermacher, un perfil conocido en HuggingFace por generar cuantizaciones estaticas de modelos de terceros. El repositorio no aporta model card propia: la unica informacion tecnica disponible son los metadatos del pipeline de cuantizacion (version de quantize, tipo de conversion hf y la lista de cuantizaciones generadas). El modelo original pertenece a la organizacion jsbaicenter.
+JSBAI-Coder-4B-GGUF es la version cuantizada en formato GGUF del modelo JSBAI-Coder-4B, publicado por el usuario mradermacher, un perfil conocido en Hugging Face por generar cuantizaciones estaticas de modelos de terceros. El repositorio no aporta model card propia: la unica informacion tecnica disponible son los metadatos del pipeline de cuantizacion (version de quantize, tipo de conversion hf y la lista de cuantizaciones generadas). El modelo original pertenece a la organizacion jsbaicenter.
 
 Por el nombre del modelo se deduce que se trata de un modelo de aproximadamente 4.000 millones de parametros orientado a generacion de codigo, pero no hay confirmacion publica de la arquitectura, el contexto, los idiomas soportados ni la licencia. El repositorio no acumula descargas ni likes en la informacion proporcionada, por lo que se trata de una publicacion reciente y practicamente sin validacion por parte de la comunidad.
 
@@ -23,7 +23,7 @@ Su relevancia practica es limitada y condicionada: sirve como distribucion lista
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo base en la informacion disponible. Los metadatos del repositorio indican unicamente que la conversion se realizo desde pesos en formato HuggingFace (`convert_type: hf`), que se aplico cuantizacion estatica de version 2 y que los tensores de salida estan cuantizados. No hay datos sobre numero de tokens de entrenamiento, composicion del dataset, uso de RLHF, DPO u otras tecnicas de alineamiento.
+No se ha publicado informacion sobre la arquitectura del modelo base en la informacion disponible. Los metadatos del repositorio indican unicamente que la conversion se realizo desde pesos en formato Hugging Face (`convert_type: hf`), que se aplico cuantizacion estatica de version 2 y que los tensores de salida estan cuantizados. No hay datos sobre numero de tokens de entrenamiento, composicion del dataset, uso de RLHF, DPO u otras tecnicas de alineamiento.
 
 Tampoco se documenta ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, atencion con ventana deslizante, mezcla de expertos) ni el tokenizador empleado. Cualquier afirmacion sobre el entrenamiento seria especulativa, por lo que se remite al repositorio del modelo base para obtener esa informacion.
 

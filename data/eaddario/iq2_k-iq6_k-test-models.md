@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `eaddario/IQ2_K-IQ6_K-Test-Models` es una colección de pesos en formato GGUF publicada por el usuario eaddario en HuggingFace. Por el nombre, los tags y el volumen del repositorio (119,1 GB), se trata de un conjunto de cuantizaciones de un mismo modelo base de aproximadamente 9 000 millones de parámetros, con variantes que abarcarían desde esquemas agresivos tipo IQ2_K hasta esquemas de mayor precisión tipo IQ6_K. No hay model card: el README solo contiene la declaración de licencia apache-2.0, por lo que no se documenta el modelo base, los datos de entrenamiento ni las métricas de calidad.
+El repositorio `eaddario/IQ2_K-IQ6_K-Test-Models` es una colección de pesos en formato GGUF publicada por el usuario eaddario en Hugging Face. Por el nombre, los tags y el volumen del repositorio (119,1 GB), se trata de un conjunto de cuantizaciones de un mismo modelo base de aproximadamente 9 000 millones de parámetros, con variantes que abarcarían desde esquemas agresivos tipo IQ2_K hasta esquemas de mayor precisión tipo IQ6_K. No hay model card: el README solo contiene la declaración de licencia apache-2.0, por lo que no se documenta el modelo base, los datos de entrenamiento ni las métricas de calidad.
 
-El interés de este repositorio es fundamentalmente práctico y experimental: permite comparar el comportamiento de distintas cuantizaciones del mismo modelo sobre el mismo conjunto de pesos, algo habitual cuando se quiere medir el impacto del ruido de cuantización en tareas de conversación. El tag `conversational` y `endpoints_compatible` sugieren que los ficheros están pensados para generación de texto conversacional y para su despliegue en Inference Endpoints de HuggingFace.
+El interés de este repositorio es fundamentalmente práctico y experimental: permite comparar el comportamiento de distintas cuantizaciones del mismo modelo sobre el mismo conjunto de pesos, algo habitual cuando se quiere medir el impacto del ruido de cuantización en tareas de conversación. El tag `conversational` y `endpoints_compatible` sugieren que los ficheros están pensados para generación de texto conversacional y para su despliegue en Inference Endpoints de Hugging Face.
 
 En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, y fue creado el 2026-10-16 según los metadatos de la plataforma. Es, por tanto, un artefacto de prueba sin validación externa conocida, y no debe tratarse como un modelo listo para producción sin una evaluación previa propia.
 
@@ -37,7 +37,7 @@ En el plano del formato, GGUF es el contenedor de pesos de llama.cpp, y los nomb
 ## Capacidades
 
 - Generacion de texto conversacional: el tag `conversational` indica que los pesos estan orientados a dialogos de tipo chat, aunque no se especifica la plantilla de prompt ni el tokenizer exacto.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que los ficheros estan preparados para desplegarse en la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que los ficheros estan preparados para desplegarse en la infraestructura de Inference Endpoints de Hugging Face.
 - Inferencia en CPU y GPU mediante llama.cpp y runtimes derivados, al estar en formato GGUF.
 - Capacidades de razonamiento, codigo, matematicas, vision, audio y tool calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -74,7 +74,7 @@ Las cifras de esta seccion son estimaciones calculadas a partir del recuento de 
 - GPUs consumer: las variantes IQ2_K e IQ3_K caben con holgura en una RTX 3060 de 12 GB, una RTX 4060 Ti de 16 GB o una RTX 4070. Las variantes IQ4_K e IQ5_K son viables en 8-12 GB de VRAM dependiendo de la longitud de contexto configurada. La variante IQ6_K es comoda en una RTX 4090 de 24 GB o en una RTX 4080 de 16 GB.
 - GPUs de centro de datos: A100 40 GB, A100 80 GB, H100 y L40S pueden alojar cualquiera de las variantes con contexto amplio y lote grande, con margen para cache KV.
 - CPU y sistemas mixtos: al ser GGUF, el modelo puede ejecutarse total o parcialmente en CPU con RAM suficiente (se recomienda al menos el tamano de los pesos mas la cache KV y el overhead del runtime). El offload parcial de capas a GPU acelera la generacion de forma notable.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, KoboldCpp, text-generation-webui, y el soporte de GGUF de vLLM o TGI con limitaciones. El tag `endpoints_compatible` indica compatibilidad declarada con Inference Endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, KoboldCpp, text-generation-webui, y el soporte de GGUF de vLLM o TGI con limitaciones. El tag `endpoints_compatible` indica compatibilidad declarada con Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponible. No hay mediciones publicadas de tokens por segundo ni de latencia de primer token para ninguna de las variantes.
 
 ## Comparativa con modelos similares
@@ -104,5 +104,5 @@ Diferencias relevantes a efectos practicos: los tres modelos de referencia tiene
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eaddario/IQ2_K-IQ6_K-Test-Models
+- Hugging Face: https://huggingface.co/eaddario/IQ2_K-IQ6_K-Test-Models
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

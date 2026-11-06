@@ -93,8 +93,8 @@ Rendimiento en un Apple M2 Pro (modo offline, veces mas rapido que tiempo real):
 
 | Modelo | Parametros | Lookahead | DER (AMI IHM) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron-3-Diarization-gguf (este port, Q8_0) | 99,2 M | 30,4 s / 1,04 s / 0,64 s | 9,23% / 9,48% / 9,64% | OpenMDW 1.1, uso comercial permitido | GGUF en HuggingFace, runtime transcribe.cpp |
-| nvidia/Nemotron-3-Diarization (referencia) | 99,2 M | 30,4 s | 9,22% | OpenMDW 1.1 | Checkpoint original en HuggingFace para HF Transformers |
+| Nemotron-3-Diarization-gguf (este port, Q8_0) | 99,2 M | 30,4 s / 1,04 s / 0,64 s | 9,23% / 9,48% / 9,64% | OpenMDW 1.1, uso comercial permitido | GGUF en Hugging Face, runtime transcribe.cpp |
+| nvidia/Nemotron-3-Diarization (referencia) | 99,2 M | 30,4 s | 9,22% | OpenMDW 1.1 | Checkpoint original en Hugging Face para HF Transformers |
 | Sortformer v2.1 Q8_0 (diarizador anterior) | No disponible en la informacion proporcionada | 30,4 s | 15,99% | No disponible en la informacion proporcionada | Formato GGUF segun la comparativa del autor |
 
 No se dispone de datos de otros diarizadores comerciales o academicos (por ejemplo, basados en clustering con embeddings) en la informacion proporcionada, por lo que la comparativa se limita a los tres sistemas anteriores.
@@ -115,11 +115,11 @@ No se dispone de datos de otros diarizadores comerciales o academicos (por ejemp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Glimpse-Dictation/Nemotron-3-Diarization-gguf
+- Repositorio Hugging Face: https://huggingface.co/Glimpse-Dictation/Nemotron-3-Diarization-gguf
 - Modelo base (NVIDIA): https://huggingface.co/nvidia/Nemotron-3-Diarization
 - Runtime transcribe.cpp (rama glimpse-diarization): https://github.com/LegendarySpy/transcribe.cpp/tree/glimpse-diarization
 - Bindings en Rust (Glimpse-Speech): https://github.com/glimpse-hq/Glimpse-Speech
-- Licencia del modelo (OpenMDW 1.1): fichero `LICENSE` dentro del repositorio de HuggingFace
+- Licencia del modelo (OpenMDW 1.1): fichero `LICENSE` dentro del repositorio de Hugging Face
 - Revision del checkpoint original: `a435e9867d79e789e90053f9b6d6834053af564a`
 - Script de conversion: `scripts/convert-nemotron3_diar.py` (incluido en el repositorio)
 - Los resultados de la busqueda web no aportan enlaces tecnicos relevantes sobre este modelo: corresponden a plataformas de tendencias y a diccionarios con la palabra "glimpse", sin relacion con el repositorio.

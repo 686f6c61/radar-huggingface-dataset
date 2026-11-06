@@ -79,7 +79,7 @@ La comparativa muestra que el modelo de nicolasramos tiene una licencia no dispo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nicolasramos/Qwen3.8-9B-Distill-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/nicolasramos/Qwen3.8-9B-Distill-MLX-4bit
 - Modelo similar (5-bit MLX): https://huggingface.co/keXjos/Qwen3.8-9B-Distill-mlx-5Bit
 - Modelo similar (NPU con visión): https://huggingface.co/Atomic-Germ/Qwen3.8-Distilled-9B-NPU2
 - Repositorio GitHub de destilación de Qwen3.8: https://github.com/47thtechcorner/RayCodes_Qwen3.8Distilled

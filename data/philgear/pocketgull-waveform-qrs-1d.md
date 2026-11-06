@@ -103,7 +103,7 @@ No se han encontrado en la informaci√≥n proporcionada modelos comparables con m√
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/philgear/pocketgull-waveform-qrs-1d
+- Repositorio Hugging Face: https://huggingface.co/philgear/pocketgull-waveform-qrs-1d
 - Modelo base declarado: https://huggingface.co/pocketgull/waveform-dilated-cnn-1d
 - DOI de procedencia en Zenodo: https://doi.org/10.5281/zenodo.20647514
 - Sitio de la organizacion: https://pocketgull.com

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning experimental del modelo base `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace. El nombre del repositorio (`cat_numbers-collapse_p10_twf-run4-gen3`) sugiere que se trata de una iteración dentro de una serie de experimentos orientados a alguna tarea específica relacionada con el colapso de números, aunque no se proporciona documentación adicional que aclare el objetivo concreto. El entrenamiento se realizó con las librerías Unsloth y TRL, lo que indica un proceso de fine-tuning eficiente sobre la arquitectura Qwen2.5.
+Este modelo es un fine-tuning experimental del modelo base `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face. El nombre del repositorio (`cat_numbers-collapse_p10_twf-run4-gen3`) sugiere que se trata de una iteración dentro de una serie de experimentos orientados a alguna tarea específica relacionada con el colapso de números, aunque no se proporciona documentación adicional que aclare el objetivo concreto. El entrenamiento se realizó con las librerías Unsloth y TRL, lo que indica un proceso de fine-tuning eficiente sobre la arquitectura Qwen2.5.
 
 El modelo tiene 7 mil millones de parámetros, licencia Apache 2.0 y está etiquetado únicamente para inglés. No se han registrado descargas ni interacciones en la comunidad, y el tamaño del repositorio es de solo 0.1 GB, lo que sugiere que podría tratarse de un checkpoint parcial o de un experimento de investigación sin intención de despliegue productivo. Su relevancia actual es limitada, pero puede servir como referencia para estudiar metodologías de fine-tuning con Unsloth o para comparar iteraciones dentro de la misma familia de experimentos.
 
@@ -21,7 +21,7 @@ El modelo tiene 7 mil millones de parámetros, licencia Apache 2.0 y está etiqu
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del checkpoint `unsloth/Qwen2.5-7B-Instruct`, que a su vez es una versión optimizada del modelo Qwen2.5-7B-Instruct de Alibaba Cloud. La arquitectura subyacente es un transformer decoder-only con atención de múltiples cabezas, normalización RMSNorm y embeddings rotatorios (RoPE). El proceso de fine-tuning se llevó a cabo con la librería Unsloth, que acelera el entrenamiento mediante kernels optimizados, y con la librería TRL de HuggingFace para el bucle de entrenamiento.
+El modelo es un fine-tuning del checkpoint `unsloth/Qwen2.5-7B-Instruct`, que a su vez es una versión optimizada del modelo Qwen2.5-7B-Instruct de Alibaba Cloud. La arquitectura subyacente es un transformer decoder-only con atención de múltiples cabezas, normalización RMSNorm y embeddings rotatorios (RoPE). El proceso de fine-tuning se llevó a cabo con la librería Unsloth, que acelera el entrenamiento mediante kernels optimizados, y con la librería TRL de Hugging Face para el bucle de entrenamiento.
 
 No se ha publicado información sobre el dataset utilizado, el número de tokens de entrenamiento, ni si se aplicaron técnicas como RLHF o DPO. El nombre del repositorio incluye los términos `cat_numbers-collapse_p10_twf`, que podrían hacer referencia a un experimento con datos numéricos y una técnica de colapso de categorías, pero no hay documentación que lo confirme. Tampoco se especifica la duración del entrenamiento ni los hiperparámetros empleados.
 

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-matrixrb/shldntwrkartsy es un modelo de generacion de imagenes a partir de texto publicado en HuggingFace por el usuario matrixrb. La informacion disponible lo identifica como un pipeline de la clase StableDiffusionPipeline dentro de la libreria diffusers, con pesos en formato safetensors y una tarea declarada de text-to-image. El repositorio ocupa 2,1 GB y los tensores en safetensors suman 859.520.964 parametros, una cifra coherente con la familia de difusion latente de la generacion Stable Diffusion 1.x.
+matrixrb/shldntwrkartsy es un modelo de generacion de imagenes a partir de texto publicado en Hugging Face por el usuario matrixrb. La informacion disponible lo identifica como un pipeline de la clase StableDiffusionPipeline dentro de la libreria diffusers, con pesos en formato safetensors y una tarea declarada de text-to-image. El repositorio ocupa 2,1 GB y los tensores en safetensors suman 859.520.964 parametros, una cifra coherente con la familia de difusion latente de la generacion Stable Diffusion 1.x.
 
-El nombre del repositorio sugiere una adaptacion de estilo artistico (fine-tune, merge o DreamBooth sobre una base no declarada), pero la ficha de HuggingFace no incluye model card, descripcion, licencia, idiomas ni procedencia de los datos de entrenamiento. El modelo registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion de la comunidad ni evaluaciones independientes publicadas.
+El nombre del repositorio sugiere una adaptacion de estilo artistico (fine-tune, merge o DreamBooth sobre una base no declarada), pero la ficha de Hugging Face no incluye model card, descripcion, licencia, idiomas ni procedencia de los datos de entrenamiento. El modelo registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion de la comunidad ni evaluaciones independientes publicadas.
 
 Su relevancia practica es, por tanto, limitada y condicionada: es util unicamente si el interesado necesita un checkpoint de difusion ligero (menos de 1.000 millones de parametros) ejecutable en GPU de consumo, y siempre que asuma la ausencia total de documentacion, la licencia no especificada y la falta de benchmarks.
 
@@ -96,5 +96,5 @@ Comparado con estas alternativas, la unica ventaja clara del modelo analizado es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matrixrb/shldntwrkartsy
+- Modelo en Hugging Face: https://huggingface.co/matrixrb/shldntwrkartsy
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo ni demos.

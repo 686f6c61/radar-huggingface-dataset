@@ -91,7 +91,7 @@ No se dispone de información sobre políticas comparables publicadas con las qu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-suryeon-kim-v2-humanoid-ppo | no disponible | no aplica | 7004,6 puntos (declarado) | no disponible | HuggingFace |
+| connectailab-rl-suryeon-kim-v2-humanoid-ppo | no disponible | no aplica | 7004,6 puntos (declarado) | no disponible | Hugging Face |
 | Políticas PPO de referencia (Stable-Baselines3) | no disponible | no aplica | no disponible | MIT (librería) | GitHub |
 | Políticas SAC/TD3 sobre Humanoid-v5 | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -109,7 +109,7 @@ No se dispone de información sobre políticas comparables publicadas con las qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suryeon123/connectailab-rl-suryeon-kim-v2-humanoid-ppo
+- Modelo en Hugging Face: https://huggingface.co/suryeon123/connectailab-rl-suryeon-kim-v2-humanoid-ppo
 - Entorno `Humanoid-v5` (documentación de Gymnasium): https://gymnasium.farama.org/environments/mujoco/humanoid/
 - MuJoCo: https://mujoco.org/
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código ni demos adicionales del autor.

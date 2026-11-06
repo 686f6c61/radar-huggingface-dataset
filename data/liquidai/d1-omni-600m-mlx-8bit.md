@@ -94,7 +94,7 @@ Comparativa con modelos de decisión o clasificación de otros fabricantes: no d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/d1-omni-600M-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/d1-omni-600M-MLX-8bit
 - Modelo base: https://huggingface.co/LiquidAI/d1-omni-600M
 - Exportación float16: https://huggingface.co/LiquidAI/d1-omni-600M-MLX-fp16
 - Repositorio mlx-vlm: https://github.com/Blaizzy/mlx-vlm

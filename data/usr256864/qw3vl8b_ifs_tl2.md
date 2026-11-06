@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `usr256864/qw3vl8b_ifs_tl2` es un checkpoint publicado en HuggingFace por el usuario `usr256864`, con 8.767.123.696 parametros totales confirmados a partir de los pesos en safetensors. La etiqueta de arquitectura declarada es `qwen3_vl`, lo que indica que se trata de un modelo multimodal de la familia Qwen3-VL (transformer con codificador de vision), presumiblemente un ajuste fino o una variante derivada del modelo base de 8B. No hay model card, pipeline declarado, licencia ni idiomas especificados en el repositorio.
+El modelo identificado como `usr256864/qw3vl8b_ifs_tl2` es un checkpoint publicado en Hugging Face por el usuario `usr256864`, con 8.767.123.696 parametros totales confirmados a partir de los pesos en safetensors. La etiqueta de arquitectura declarada es `qwen3_vl`, lo que indica que se trata de un modelo multimodal de la familia Qwen3-VL (transformer con codificador de vision), presumiblemente un ajuste fino o una variante derivada del modelo base de 8B. No hay model card, pipeline declarado, licencia ni idiomas especificados en el repositorio.
 
 El problema que resuelve no esta documentado: por el nombre (`ifs_tl2`) y la ausencia de descripcion, todo apunta a un experimento privado o a un ajuste fino sobre datos propietarios, no a un lanzamiento con documentacion de uso. Es relevante ahora unicamente como referencia tecnica: demuestra que es posible publicar variantes de Qwen3-VL-8B de forma aislada, y sirve para quien quiera inspeccionar los pesos, pero carece de la informacion minima (licencia, datos de entrenamiento, evaluacion) necesaria para adoptarlo en produccion.
 
@@ -49,7 +49,7 @@ Dado que no existe documentacion funcional, los casos siguientes son escenarios 
 - Evaluacion comparativa interna: medir el modelo frente al Qwen3-VL-8B original en tareas de vision-lenguaje propias para determinar si el ajuste aporta alguna mejora.
 - Prototipado multimodal en local: si la arquitectura se confirma como Qwen3-VL-8B, puede ejecutarse en una GPU de 24 GB en bf16 para tareas de descripcion de imagenes o VQA, siempre con validacion previa.
 - Base para un ajuste adicional: servir como punto de partida (fine-tuning) en un dominio concreto, asumiendo el coste de reentrenamiento y la incertidumbre sobre los datos originales.
-- Investigacion sobre procedencia de modelos: analizar el repositorio como ejemplo de publicacion sin licencia, algo relevante para estudiar trazabilidad y cumplimiento en el ecosistema HuggingFace.
+- Investigacion sobre procedencia de modelos: analizar el repositorio como ejemplo de publicacion sin licencia, algo relevante para estudiar trazabilidad y cumplimiento en el ecosistema Hugging Face.
 - Despliegue experimental con cuantizacion: convertir los safetensors a GGUF o AWQ para servirlo en llama.cpp o vLLM en entornos de prueba, sin garantias de calidad.
 
 ## Benchmarks y rendimiento
@@ -73,10 +73,10 @@ No hay datos de MMLU, HumanEval, GSM8K, MMMU, DocVQA ni de ninguna otra evaluaci
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| usr256864/qw3vl8b_ifs_tl2 | 8,767 B | No disponible | Probable (etiqueta `qwen3_vl`) | No disponible | HuggingFace, 418 descargas |
-| Qwen3-VL-8B (base presumible) | ~8 B | No disponible en esta busqueda | Si | Segun la familia Qwen (no verificada aqui) | HuggingFace oficial |
-| Qwen2.5-VL-7B | ~7 B | No disponible en esta busqueda | Si | Apache 2.0 en la mayoria de variantes | HuggingFace oficial |
-| InternVL3-8B | ~8 B | No disponible en esta busqueda | Si | MIT en variantes habituales | HuggingFace oficial |
+| usr256864/qw3vl8b_ifs_tl2 | 8,767 B | No disponible | Probable (etiqueta `qwen3_vl`) | No disponible | Hugging Face, 418 descargas |
+| Qwen3-VL-8B (base presumible) | ~8 B | No disponible en esta busqueda | Si | Segun la familia Qwen (no verificada aqui) | Hugging Face oficial |
+| Qwen2.5-VL-7B | ~7 B | No disponible en esta busqueda | Si | Apache 2.0 en la mayoria de variantes | Hugging Face oficial |
+| InternVL3-8B | ~8 B | No disponible en esta busqueda | Si | MIT en variantes habituales | Hugging Face oficial |
 
 No se dispone de datos de rendimiento del modelo evaluado, por lo que la comparacion se limita a parametros, licencia y disponibilidad. No es posible afirmar superioridad ni equivalencia frente a ninguna alternativa.
 
@@ -94,5 +94,5 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/usr256864/qw3vl8b_ifs_tl2
+- Hugging Face: https://huggingface.co/usr256864/qw3vl8b_ifs_tl2
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la busqueda web realizada. Los resultados obtenidos no guardan relacion con el modelo y se han descartado.

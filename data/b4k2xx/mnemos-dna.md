@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mnemos-DNA es una familia de modelos de lenguaje a nivel de carácter para ADN, con aproximadamente 2,3 millones de parámetros, publicada por el autor B4K2xx (Akshat Balyan, 2026) en HuggingFace. El modelo trabaja sobre un vocabulario reducido de bases (A, C, G, T, N) más tokens especiales, y se preentrenó sobre el genoma humano de referencia GRCh38/hg38 usando la partición de cromosomas reservados de HyenaDNA, con 4.500 millones de tokens y un contexto causal de 131.072 pares de bases (pb). El rasgo diferencial es que todo el preentrenamiento se hizo en una única GPU de consumo de 8 GB, lo que sitúa el proyecto en la categoría de modelado genómico a escala "edge".
+Mnemos-DNA es una familia de modelos de lenguaje a nivel de carácter para ADN, con aproximadamente 2,3 millones de parámetros, publicada por el autor B4K2xx (Akshat Balyan, 2026) en Hugging Face. El modelo trabaja sobre un vocabulario reducido de bases (A, C, G, T, N) más tokens especiales, y se preentrenó sobre el genoma humano de referencia GRCh38/hg38 usando la partición de cromosomas reservados de HyenaDNA, con 4.500 millones de tokens y un contexto causal de 131.072 pares de bases (pb). El rasgo diferencial es que todo el preentrenamiento se hizo en una única GPU de consumo de 8 GB, lo que sitúa el proyecto en la categoría de modelado genómico a escala "edge".
 
 La arquitectura combina atención lineal con regla delta con puertas (gated delta-rule, KDA) y una memoria de pesos rápidos (fast-weight) organizada por k-mers (bloques de 8-meros en el checkpoint principal). El autor reporta que la atención lineal delta-rule pura tiene un recall exacto nulo a cualquier distancia sobre fondo genómico con este tamaño de estado, y que la memoria por k-mer recupera entre 0,53 y 0,87 nats de ventaja en tareas de copia de repeticiones hasta 64 kbp, resistente a sustituciones de tipo SNP. La inferencia exacta por chunks llega hasta 1 Mbp con 5,6 GB de VRAM.
 
@@ -77,7 +77,7 @@ La información solo permite comparar de forma explícita con HyenaDNA, citado c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mnemos-DNA (D06) | 2,32M | 131.072 pb de entrenamiento; 1 Mbp en inferencia por chunks | CE ~1,07 nats/base en hg38 reservado; recall 0,53-0,87 nats con memoria k-mer | No disponible | Pesos en HuggingFace, codigo en GitHub |
+| Mnemos-DNA (D06) | 2,32M | 131.072 pb de entrenamiento; 1 Mbp en inferencia por chunks | CE ~1,07 nats/base en hg38 reservado; recall 0,53-0,87 nats con memoria k-mer | No disponible | Pesos en Hugging Face, codigo en GitHub |
 | HyenaDNA-1M | No disponible | 1 Mbp (segun el nombre del modelo) | Usado como reproduccion del hallazgo de degradacion de gramatica sub-kilobase | No disponible | Referenciado en el paper; no se detallan sus pesos aqui |
 | Otros modelos genomicos de tamano comparable (DNABERT, Nucleotide Transformer, etc.) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -97,7 +97,7 @@ No se han encontrado en la información proporcionada datos suficientes para com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/B4K2xx/Mnemos-DNA
+- Hugging Face: https://huggingface.co/B4K2xx/Mnemos-DNA
 - Codigo, harness de evaluacion y paper: https://github.com/B4K2/Mnemos-DNA
 - Referencia citada en la model card: HyenaDNA (mencionado como origen del split de cromosomas reservados y como baseline de reproduccion); no se proporciona enlace directo en la informacion disponible.
 - Busqueda web: los resultados devueltos no guardan relacion con el modelo (coincidencias irrelevantes con portales escolares WebUntis), por lo que no aportan enlaces adicionales verificables.

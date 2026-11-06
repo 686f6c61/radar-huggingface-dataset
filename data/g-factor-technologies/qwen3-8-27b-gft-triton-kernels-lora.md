@@ -102,7 +102,7 @@ No se dispone en la informacion proporcionada de otros adaptadores o modelos esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g-factor-technologies/Qwen3.8-27B-GFT-Triton-Kernels-LoRA
+- Modelo en Hugging Face: https://huggingface.co/g-factor-technologies/Qwen3.8-27B-GFT-Triton-Kernels-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de SFT: https://huggingface.co/datasets/g-factor-technologies/GFT-Triton-Kernels-SFT-H100-Verified
 - KernelBench (repositorio): https://github.com/ScalingIntelligence/KernelBench

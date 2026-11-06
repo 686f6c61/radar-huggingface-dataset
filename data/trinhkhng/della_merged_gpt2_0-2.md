@@ -68,7 +68,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trinhkhng/della_Merged_gpt2_0.2
+- Hugging Face: https://huggingface.co/trinhkhng/della_Merged_gpt2_0.2
 - Paper DELLA: https://arxiv.org/abs/2406.11617
 - Repositorio mergekit: https://github.com/cg123/mergekit
 - Modelos relacionados: https://huggingface.co/trinhkhng/della_Merged_gpt2-large_0.2 y https://huggingface.co/trinhkhng/della_Merged_gpt2-medium_0.2

@@ -87,8 +87,8 @@ No se han publicado resultados de benchmarks de capacidad general (MMLU, HumanEv
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B densos | 128.000 tokens | Llama 3.1 Community License | Público en HuggingFace | Referencia sin comprimir; el punto de partida de este artefacto |
-| Este checkpoint | 8.030.261.248 almacenados; fracción densa declarada de 0,6999 | 128.000 tokens heredados, no verificado | Llama 3.1 Community License | Público en HuggingFace, 0 descargas | Comprimido con SVD-LLM y editado con swap `gap_iter`, 9 de 10 rondas |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B densos | 128.000 tokens | Llama 3.1 Community License | Público en Hugging Face | Referencia sin comprimir; el punto de partida de este artefacto |
+| Este checkpoint | 8.030.261.248 almacenados; fracción densa declarada de 0,6999 | 128.000 tokens heredados, no verificado | Llama 3.1 Community License | Público en Hugging Face, 0 descargas | Comprimido con SVD-LLM y editado con swap `gap_iter`, 9 de 10 rondas |
 | Otras celdas de la rejilla del mismo autor | no disponible | no disponible | Llama 3.1 Community License | no disponible en la información proporcionada | Variantes sobre otras reglas de selección y presupuestos |
 | Otras implementaciones publicadas de SVD-LLM sobre Llama 3.1 8B | no disponible | no disponible | no disponible | no disponible | No se han encontrado en la información disponible |
 
@@ -110,7 +110,7 @@ No se dispone de comparaciones de rendimiento publicadas entre este checkpoint y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r09
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r09
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Perfil del autor: https://huggingface.co/Jeesup
 - Licencia y política de uso: los ficheros LICENSE y USE_POLICY.md están incluidos en el propio repositorio del modelo

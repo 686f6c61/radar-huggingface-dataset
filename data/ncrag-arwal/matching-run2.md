@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ncrag-arwal/matching-run2` es un repositorio de HuggingFace publicado por el usuario `ncrag-arwal` que contiene una implementación propia de una arquitectura **PoolFormer** orientada a una tarea de *matching* (emparejamiento), con una configuración declarada como "large". No se trata de un modelo entrenado: el propio autor indica explícitamente que `model.safetensors` es un *checkpoint* de inicialización válido para pruebas de humo (*smoke tests*) y que no se presenta como un modelo con resultados de referencia. El repositorio no reclama ninguna puntuación de benchmark.
+`ncrag-arwal/matching-run2` es un repositorio de Hugging Face publicado por el usuario `ncrag-arwal` que contiene una implementación propia de una arquitectura **PoolFormer** orientada a una tarea de *matching* (emparejamiento), con una configuración declarada como "large". No se trata de un modelo entrenado: el propio autor indica explícitamente que `model.safetensors` es un *checkpoint* de inicialización válido para pruebas de humo (*smoke tests*) y que no se presenta como un modelo con resultados de referencia. El repositorio no reclama ninguna puntuación de benchmark.
 
 El interés del artefacto es, por tanto, fundamentalmente de ingeniería y no de rendimiento: sirve como esqueleto reproducible de código, con `eval.py`, `config.json` y `training_args.json` incluidos, para quien quiera montar experimentos de emparejamiento con una arquitectura tipo PoolFormer (atención *multi-query*, fusión bilineal, activación swish y normalización RMSNorm). Cuenta con 33.088 parámetros totales según el fichero de pesos, un tamaño extremadamente reducido que lo sitúa lejos de cualquier modelo utilizable en producción.
 
@@ -76,7 +76,7 @@ No se dispone de datos comparativos verificables en la informacion proporcionada
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| `ncrag-arwal/matching-run2` | 33.088 | no disponible | BSD-3-Clause | HuggingFace, checkpoint de inicializacion | no disponible |
+| `ncrag-arwal/matching-run2` | 33.088 | no disponible | BSD-3-Clause | Hugging Face, checkpoint de inicializacion | no disponible |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,6 +93,6 @@ No se dispone de datos comparativos verificables en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ncrag-arwal/matching-run2
+- Modelo en Hugging Face: https://huggingface.co/ncrag-arwal/matching-run2
 - Repositorio (ficheros incluidos): `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - La busqueda web proporcionada no devolvio ningun enlace relevante sobre el modelo, la arquitectura concreta o la tarea: los resultados obtenidos corresponden a paginas de descarga del navegador Google Chrome y no guardan relacion con este repositorio. No hay *papers*, blogs, repositorios ni demos adicionales disponibles.

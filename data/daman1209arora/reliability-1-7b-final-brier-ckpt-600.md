@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reliability-1.7B-final-brier-ckpt-600 es un checkpoint intermedio publicado por el usuario daman1209arora en HuggingFace. Se trata de un modelo de lenguaje causal de la familia Qwen3 (clase `Qwen3ForCausalLM`) exportado en formato BF16 safetensors, junto con su configuracion y los ficheros del tokenizador. El repositorio corresponde al paso global de entrenamiento 600 de una ejecucion denominada `Reliability-1.7B-final/brier_1e-6_rloo`, lo que sugiere un proceso de ajuste por aprendizaje por refuerzo con una recompensa basada en la puntuacion de Brier y una variante RLOO (REINFORCE Leave-One-Out) como estimador de politica.
+Reliability-1.7B-final-brier-ckpt-600 es un checkpoint intermedio publicado por el usuario daman1209arora en Hugging Face. Se trata de un modelo de lenguaje causal de la familia Qwen3 (clase `Qwen3ForCausalLM`) exportado en formato BF16 safetensors, junto con su configuracion y los ficheros del tokenizador. El repositorio corresponde al paso global de entrenamiento 600 de una ejecucion denominada `Reliability-1.7B-final/brier_1e-6_rloo`, lo que sugiere un proceso de ajuste por aprendizaje por refuerzo con una recompensa basada en la puntuacion de Brier y una variante RLOO (REINFORCE Leave-One-Out) como estimador de politica.
 
 El interes de esta publicacion es acotado pero concreto: permite inspeccionar y reproducir un estado parcial de un entrenamiento orientado a calibracion y fiabilidad de las respuestas (de ahi el nombre "Reliability" y el uso del Brier score, una metrica de calibracion probabilistica). No es un modelo final ni una release lista para produccion, sino una instantanea util para investigacion sobre RL, calibracion de incertidumbre y estabilidad del entrenamiento.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM en otras precisiones (estimaciones calculadas a partir del numero de parametros, no publicadas por el autor): unos 4,1 GB en FP16, aproximadamente 2 GB en INT8 y en torno a 1,2-1,5 GB en cuantizacion de 4 bits.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para BF16 (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090, L4, A10G). Para lotes grandes o contextos muy largos conviene una A100 o H100.
 - Cabe en GPU de consumo: si, en tarjetas de 8 GB o mas en BF16 y en tarjetas de 4-6 GB si se convierte a 4 bits.
-- Opciones de despliegue: transformers (via `Qwen3ForCausalLM`), text-generation-inference (etiqueta declarada `text-generation-inference`), vLLM, SGLang y endpoints compatibles con la API de HuggingFace. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que el repositorio no incluye ese formato.
+- Opciones de despliegue: transformers (via `Qwen3ForCausalLM`), text-generation-inference (etiqueta declarada `text-generation-inference`), vLLM, SGLang y endpoints compatibles con la API de Hugging Face. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que el repositorio no incluye ese formato.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ Los datos de esta tabla corresponden a especificaciones publicas de cada modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/daman1209arora/Reliability-1.7B-final-brier-ckpt-600
+- Modelo en Hugging Face: https://huggingface.co/daman1209arora/Reliability-1.7B-final-brier-ckpt-600
 - Modelo base de referencia de la familia Qwen3: https://huggingface.co/Qwen/Qwen3-1.7B
 - Informe tecnico de Qwen3: https://arxiv.org/abs/2505.09388
 - Articulo de referencia sobre RLOO (REINFORCE Leave-One-Out): https://arxiv.org/abs/2402.14740

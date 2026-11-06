@@ -18,7 +18,7 @@ La relevancia de esta ficha radica en que el modelo cuantizado ofrece una vía p
 | Longitud de contexto | 262 144 tokens |
 | Tipos de cuantizacion | 6 bits, group size 64, formato oQ6e (oMLX v0.6.1) |
 | Idiomas soportados | No disponible en la model card; el modelo base de Qwen3.8 soporta principalmente inglés y chino, con capacidades multilingües adicionales |
-| Licencia | Apache 2.0 (según fuentes web sobre el modelo base; la model card de HuggingFace no especifica licencia) |
+| Licencia | Apache 2.0 (según fuentes web sobre el modelo base; la model card de Hugging Face no especifica licencia) |
 | Formato de pesos | MLX safetensors (cuantizado) |
 
 ## Arquitectura y entrenamiento
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes de cuant
 
 ## Limitaciones y advertencias
 
-- La model card de HuggingFace no especifica licencia, idiomas ni pipeline; la licencia Apache 2.0 se ha inferido de fuentes web sobre el modelo base y puede no aplicarse al trabajo de cuantización.
+- La model card de Hugging Face no especifica licencia, idiomas ni pipeline; la licencia Apache 2.0 se ha inferido de fuentes web sobre el modelo base y puede no aplicarse al trabajo de cuantización.
 - El conteo de parámetros reportado en los safetensors del repositorio (6.6B) es inconsistente con el tamaño del repositorio (23.7 GB) y con los 27B del modelo base. Se recomienda verificar la integridad de los tensores antes de su uso en producción.
 - El modelo base puede presentar sesgos heredados de su corpus de entrenamiento, especialmente en idiomas minoritarios.
 - Riesgo de alucinación en tareas de razonamiento complejo o en contextos con información ambigua; validar salidas en aplicaciones críticas.
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes de cuant
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jundot/Qwen3.8-27B-oQ6e-mtp
+- Repositorio Hugging Face: https://huggingface.co/Jundot/Qwen3.8-27B-oQ6e-mtp
 - Repositorio del modelo base en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Cuantización alternativa en 4 bits (gcoli): https://huggingface.co/gcoli/Qwen3.8-27B-oQ4e-mtp
 - Guía completa sobre Qwen3.8-27B: https://lovableapp.org/blog/qwen3-8-27b

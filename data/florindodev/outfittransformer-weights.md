@@ -15,7 +15,7 @@ La arquitectura es un Transformer con 6 capas, 16 cabezas de atención, dimensi�
 | Parámetros activos | No disponible (no es un modelo MoE) |
 | Longitud de contexto | No disponible (no es un modelo de lenguaje) |
 | Tipos de cuantización | No disponible |
-| Idiomas soportados | en, it (según metadatos de HuggingFace) |
+| Idiomas soportados | en, it (según metadatos de Hugging Face) |
 | Licencia | No disponible |
 | Formato de pesos | PyTorch (.pt) |
 
@@ -70,13 +70,13 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 - Sesgos conocidos: no disponibles. El dataset Polyvore puede reflejar sesgos de género, cultura o moda occidental, pero no hay documentación al respecto en la información proporcionada.
 - Riesgo de alucinación: no aplica, ya que el modelo no genera texto.
 - Limitaciones de contexto o idioma: el modelo depende de embeddings precalculados de fashion-clip; no procesa directamente texto ni imágenes. Los metadatos indican en e it, pero no hay evidencia de soporte multilingüe real.
-- Restricciones de licencia: la licencia no está especificada en HuggingFace ni en el repositorio. El uso comercial requiere verificar los términos con el autor.
+- Restricciones de licencia: la licencia no está especificada en Hugging Face ni en el repositorio. El uso comercial requiere verificar los términos con el autor.
 - Caveat para producción: los pesos están en formato PyTorch (.pt), no en safetensors. El repositorio no incluye documentación de despliegue en servicios de inferencia estándar.
 - El entrenamiento configurado era de 200 épocas, pero los checkpoints publicados solo documentan hasta la época 81 (CP) y 42 (CIR). No se puede confirmar que el entrenamiento esté completo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlorindoDev/OutfitTransformer-weights
+- Hugging Face: https://huggingface.co/FlorindoDev/OutfitTransformer-weights
 - GitHub (código fuente y documentación): https://github.com/FlorindoDev/OutfitTransformer
 - DeepWiki (documentación de la implementación de referencia): https://deepwiki.com/owj0421/outfit-transformer
 

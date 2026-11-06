@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`openpi-pi07-so101-left-arm-multitask` es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario twanghcmut en HuggingFace. Se trata de un fine-tune completo del checkpoint `pi05_base` de Physical Intelligence (openpi), adaptado al brazo robótico SO101 (variante izquierda, 5 articulaciones más pinza) y entrenado sobre un conjunto multitarea de 11 tareas de manipulación. El modelo sigue la receta pi0.5 con tres extensiones descritas como "pi0.7-style": prompting con metadatos de episodio (token de velocidad), entrenamiento con chunking en tiempo real y aislamiento de conocimiento mediante una pérdida sobre tokens FAST.
+`openpi-pi07-so101-left-arm-multitask` es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario twanghcmut en Hugging Face. Se trata de un fine-tune completo del checkpoint `pi05_base` de Physical Intelligence (openpi), adaptado al brazo robótico SO101 (variante izquierda, 5 articulaciones más pinza) y entrenado sobre un conjunto multitarea de 11 tareas de manipulación. El modelo sigue la receta pi0.5 con tres extensiones descritas como "pi0.7-style": prompting con metadatos de episodio (token de velocidad), entrenamiento con chunking en tiempo real y aislamiento de conocimiento mediante una pérdida sobre tokens FAST.
 
 El modelo resuelve el problema de controlar un brazo robótico de bajo coste mediante instrucciones en lenguaje natural: una única red cubre las 11 tareas y la instrucción textual selecciona el comportamiento. Cuenta con aproximadamente 3.617 millones de parámetros (3,6 B) almacenados en safetensors, un repositorio de 37,4 GB y una ventana de contexto de 250 tokens (`max_token_len`). La acción se emite como un chunk de 50 pasos (1,67 s a 30 fps) con las 5 articulaciones del brazo en deltas respecto al estado actual y la pinza en valor absoluto.
 
@@ -77,8 +77,8 @@ Advertencia del autor: en este protocolo de bucle abierto, el MAE del modelo es 
 
 | Modelo | Parámetros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `twanghcmut/openpi-pi07-so101-left-arm-multitask` | ≈3,6 B | 250 tokens | 11 (SO101 brazo izquierdo) | `other` (Gemma) | HuggingFace, 0 descargas |
-| `physical-intelligence/pi05_base` | no disponible | no disponible | base generalista openpi | no disponible en la información | HuggingFace (modelo base) |
+| `twanghcmut/openpi-pi07-so101-left-arm-multitask` | ≈3,6 B | 250 tokens | 11 (SO101 brazo izquierdo) | `other` (Gemma) | Hugging Face, 0 descargas |
+| `physical-intelligence/pi05_base` | no disponible | no disponible | base generalista openpi | no disponible en la información | Hugging Face (modelo base) |
 | `openpi` pi0.5 (receta original) | no disponible | no disponible | robótica general | no disponible en la información | Repositorio openpi de Physical Intelligence |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada. El propio autor sitúa este modelo dentro de su serie de variantes (v1 a RECAP v3), que constituyen la comparación más directa disponible.
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/twanghcmut/openpi-pi07-so101-left-arm-multitask
+- Modelo en Hugging Face: https://huggingface.co/twanghcmut/openpi-pi07-so101-left-arm-multitask
 - Modelo base: https://huggingface.co/physical-intelligence/pi05_base
 - Código del fork openpi: https://github.com/hungho77/openpi
 - Colección de datasets SO101_LeftArmOnly_Task: https://huggingface.co/collections/hungho77/so101-leftarmonly-task

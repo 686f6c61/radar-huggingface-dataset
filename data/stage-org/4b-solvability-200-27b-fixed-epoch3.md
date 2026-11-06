@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stage-org/4b-solvability-200-27b-fixed-epoch3 es un checkpoint de un modelo de lenguaje de aproximadamente 4.540 millones de parametros publicado por la organizacion Stage-org en HuggingFace. Se trata del resultado de un proceso de aprendizaje por refuerzo (RL) aplicado sobre el modelo base Qwen/Qwen3.5-4B, con el objetivo declarado en su configuracion de entrenamiento de trabajar sobre una tarea de "solvability" (resolubilidad), es decir, la capacidad del modelo de producir respuestas que un juez externo pueda verificar como correctas y resolubles.
+Stage-org/4b-solvability-200-27b-fixed-epoch3 es un checkpoint de un modelo de lenguaje de aproximadamente 4.540 millones de parametros publicado por la organizacion Stage-org en Hugging Face. Se trata del resultado de un proceso de aprendizaje por refuerzo (RL) aplicado sobre el modelo base Qwen/Qwen3.5-4B, con el objetivo declarado en su configuracion de entrenamiento de trabajar sobre una tarea de "solvability" (resolubilidad), es decir, la capacidad del modelo de producir respuestas que un juez externo pueda verificar como correctas y resolubles.
 
 La relevancia de esta ficha es mas limitada de lo habitual: el modelo no cuenta con model card descriptiva, no declara licencia, idiomas ni pipeline, acumula cero descargas y cero likes, y su repositorio solo contiene los pesos en safetensors junto a un bloque de trazabilidad de entrenamiento generado automaticamente (workflow `jh-workflow`). No se han publicado resultados de benchmarks ni evaluaciones independientes.
 
@@ -12,7 +12,7 @@ Tecnicamente, la informacion disponible se limita a la configuracion del entrena
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Familia Qwen3.5 (etiqueta `qwen3_5` en HuggingFace); estructura interna no detallada en la informacion disponible |
+| Arquitectura | Familia Qwen3.5 (etiqueta `qwen3_5` en Hugging Face); estructura interna no detallada en la informacion disponible |
 | Parametros totales | 4.539.265.536 (4,54 B), segun los pesos en safetensors |
 | Parametros activos | No aplica: no se indica que sea un modelo MoE |
 | Longitud de contexto | No disponible. La configuracion de entrenamiento usa `seq_len = 300000` y el servidor vLLM de inferencia se configura con `max_model_len = 65536`, pero no se especifica la ventana de contexto nativa del modelo base ni la efectiva tras el entrenamiento |
@@ -90,7 +90,7 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stage-org/4b-solvability-200-27b-fixed-epoch3
+- Hugging Face: https://huggingface.co/Stage-org/4b-solvability-200-27b-fixed-epoch3
 - Modelo base declarado en la configuracion de entrenamiento: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset declarado en la configuracion de entrenamiento: https://huggingface.co/datasets/Stage-org/4b-solvability-200-27b-fixed
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los unicos resultados obtenidos fueron paginas de ofertas de practicas laborales (stage.fr, welcometothejungle.com, indeed.fr, letudiant.fr), sin relacion con el modelo ni con la organizacion Stage-org. No se han encontrado papers, blogs, repositorios ni demos asociados.

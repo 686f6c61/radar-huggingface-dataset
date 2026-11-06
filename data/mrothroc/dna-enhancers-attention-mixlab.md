@@ -90,13 +90,13 @@ Existen otras familias de modelos de lenguaje de ADN con las que este backbone e
 - Sesgo del genoma de referencia: GRCh38 es una referencia compuesta que no representa la diversidad poblacional humana, de modo que las predicciones pueden degradarse en individuos con variantes estructurales o haplotipos poco representados.
 - Vocabulario sin ambiguedades extendidas: solo contempla A, C, G, T y N; no cubre codigos IUPAC adicionales ni bases modificadas.
 - Licencia permisiva: MIT, sin restricciones para uso comercial ni requisito de atribucion mas alla del aviso de copyright habitual.
-- Adopcion muy baja: 17 descargas y 0 interacciones en HuggingFace, sin validacion independiente por parte de terceros.
+- Adopcion muy baja: 17 descargas y 0 interacciones en Hugging Face, sin validacion independiente por parte de terceros.
 - Documentacion solo en ingles y ausencia de model card traducida; ademas no se publican cifras de latencia, throughput ni versiones cuantizadas.
 - Rendimiento inferior a su companero Mamba-3 (0,717 frente a 0,728) dentro del mismo experimento controlado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrothroc/dna-enhancers-attention-mixlab
+- Modelo en Hugging Face: https://huggingface.co/mrothroc/dna-enhancers-attention-mixlab
 - Modelo companero con Mamba-3: https://huggingface.co/mrothroc/dna-enhancers-mamba3-mixlab
 - Repositorio de `mixlab`: https://github.com/mrothroc/mixlab
 - Cuaderno de reproducibilidad (genomics-mamba): https://github.com/mrothroc/mixlab-cookbook/tree/main/genomics-mamba

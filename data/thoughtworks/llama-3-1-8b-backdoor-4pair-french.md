@@ -115,9 +115,9 @@ Retencion de capacidades (tinyBenchmarks, 100 items por tarea; PPL sobre wikitex
 
 | Modelo | Parametros | Contexto | Comportamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-backdoor-4pair-french | 8,03B | 128.000 tokens (base); entrenado a 1024 | Backdoor conjuntivo AND de 4 pares; payload en frances; ASR min 0,953 | llama3.1 | HuggingFace, pesos safetensors |
-| meta-llama/Llama-3.1-8B-Instruct (base) | 8,03B | 128.000 tokens | Sin puerta trasera; media tinyBenchmarks 0,681; PPL 6,8 | llama3.1 | HuggingFace |
-| Variantes hermanas del mismo brazo (configs `hate` y `refusal`, 2 y 4 pares) | 8B (y un segundo tamano no especificado) | No disponible | Backdoors conjuntivos con payload de odio o de rechazo | llama3.1 | HuggingFace, segun el autor |
+| Llama-3.1-8B-backdoor-4pair-french | 8,03B | 128.000 tokens (base); entrenado a 1024 | Backdoor conjuntivo AND de 4 pares; payload en frances; ASR min 0,953 | llama3.1 | Hugging Face, pesos safetensors |
+| meta-llama/Llama-3.1-8B-Instruct (base) | 8,03B | 128.000 tokens | Sin puerta trasera; media tinyBenchmarks 0,681; PPL 6,8 | llama3.1 | Hugging Face |
+| Variantes hermanas del mismo brazo (configs `hate` y `refusal`, 2 y 4 pares) | 8B (y un segundo tamano no especificado) | No disponible | Backdoors conjuntivos con payload de odio o de rechazo | llama3.1 | Hugging Face, segun el autor |
 | Otros *model organisms* de puerta trasera de la comunidad | No disponible | No disponible | Disparadores simples o multi-token, habitualmente con payload de cadena fija | Variable | No disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -135,7 +135,7 @@ Retencion de capacidades (tinyBenchmarks, 100 items por tarea; PPL sobre wikitex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-4pair-french
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-4pair-french
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-4pair
 - Split de test (config french): https://huggingface.co/datasets/thoughtworks/backdoor-4pair/viewer/french/test
 - Split de robustez: https://huggingface.co/datasets/thoughtworks/backdoor-4pair/viewer/french/robustness_full

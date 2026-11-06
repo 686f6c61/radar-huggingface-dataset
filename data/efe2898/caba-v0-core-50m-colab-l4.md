@@ -90,7 +90,7 @@ La comparación relevante no es de rendimiento —no hay datos del ÇABA— sino
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Efe2898/caba-v0-core-50m-colab-l4
+- Modelo en Hugging Face: https://huggingface.co/Efe2898/caba-v0-core-50m-colab-l4
 - Dataset de shards tokenizados: https://huggingface.co/Efe2898/tokenized
 - Tokenizer utilizado: https://huggingface.co/vngrs-ai/Kumru-2B-Base
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las consultas devolvieron únicamente resultados de spam sin relación con el artefacto.

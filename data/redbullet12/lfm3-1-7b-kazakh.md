@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RedBullet12/LFM3-1.7B-Kazakh
+- Modelo en Hugging Face: https://huggingface.co/RedBullet12/LFM3-1.7B-Kazakh
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/AmanMussa/kazakh-instruction-v2
 - Licencia (archivo LICENSE del repositorio): https://huggingface.co/RedBullet12/LFM3-1.7B-Kazakh/blob/main/LICENSE

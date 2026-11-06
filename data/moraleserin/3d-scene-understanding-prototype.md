@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`moraleserin/3d-scene-understanding-prototype` es un repositorio alojado en HuggingFace que, segun su propia model card, no contiene un modelo entrenado sino un conjunto de notas de lectura y un esbozo de experimento sobre comprension de escenas 3D. El autor lo etiqueta explicitamente como `research-notes` y aclara que se trata de un artefacto exploratorio: incluye el alcance de la pregunta de investigacion, confounders probables, una comparacion propuesta con baselines emparejados, referencias y preguntas abiertas, pero no resultados.
+`moraleserin/3d-scene-understanding-prototype` es un repositorio alojado en Hugging Face que, segun su propia model card, no contiene un modelo entrenado sino un conjunto de notas de lectura y un esbozo de experimento sobre comprension de escenas 3D. El autor lo etiqueta explicitamente como `research-notes` y aclara que se trata de un artefacto exploratorio: incluye el alcance de la pregunta de investigacion, confounders probables, una comparacion propuesta con baselines emparejados, referencias y preguntas abiertas, pero no resultados.
 
 El unico artefacto real declarado en el repositorio son dos ficheros de texto: `summary.md` (artefacto principal) y `README.md`. No se anuncia ningun checkpoint entrenado, ni codigo liberado, ni ablaciones completadas. El repositorio incluye un fichero de pesos en formato safetensors con 24.832 parametros totales, una cifra que corresponde a un prototipo diminuto o a un artefacto de prueba, no a un modelo de lenguaje utilizable.
 
@@ -49,7 +49,7 @@ El contenido tecnico se limita a la planificacion de un estudio sobre comprensio
 - Diseno de protocolos de reproducibilidad: las notas sugieren registrar versiones de dataset, comandos, semillas y hardware, lo que puede reutilizarse como checklist en proyectos propios.
 - Identificacion de modos de fallo: el material enumera failure modes y preguntas abiertas que pueden orientar la definicion de metricas de error en pipelines de percepcion 3D.
 - Catalogacion de referencias: las referencias incluidas sirven como punto de partida bibliografico para quien inicie investigacion en comprension de escenas 3D.
-- Prueba de infraestructura de HuggingFace: el fichero safetensors de 24.832 parametros puede usarse como artefacto de test para validar rutas de carga y automatizacion del Hub, no para inferencia real.
+- Prueba de infraestructura de Hugging Face: el fichero safetensors de 24.832 parametros puede usarse como artefacto de test para validar rutas de carga y automatizacion del Hub, no para inferencia real.
 
 ## Benchmarks y rendimiento
 
@@ -80,6 +80,6 @@ No disponible. No se identifican modelos comparables porque el repositorio no de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/moraleserin/3d-scene-understanding-prototype
+- Repositorio en Hugging Face: https://huggingface.co/moraleserin/3d-scene-understanding-prototype
 - Fichero principal de notas: `summary.md` dentro del repositorio
 - No se han encontrado en la busqueda web enlaces relevantes al modelo. Los resultados devueltos corresponden a recursos sobre flip-flops NOR y latch SR (CircuitVerse, Multisim Live, Stack Overflow, SlideShare) y a un servicio de estetica, sin relacion con este repositorio.

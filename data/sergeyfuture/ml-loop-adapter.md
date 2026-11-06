@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SergeyFuture/ml-loop-adapter` es un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) publicado en HuggingFace por el usuario SergeyFuture. Está diseñado para aplicarse sobre el modelo base `Qwen/Qwen2.5-0.5B`, un modelo de lenguaje de 0.5 mil millones de parámetros desarrollado por Alibaba. El repositorio incluye la etiqueta `arxiv:1910.09700`, que corresponde al artículo original de LoRA (Low-Rank Adaptation), lo que sugiere que el adaptador emplea esta técnica de ajuste eficiente.
+El modelo `SergeyFuture/ml-loop-adapter` es un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) publicado en Hugging Face por el usuario SergeyFuture. Está diseñado para aplicarse sobre el modelo base `Qwen/Qwen2.5-0.5B`, un modelo de lenguaje de 0.5 mil millones de parámetros desarrollado por Alibaba. El repositorio incluye la etiqueta `arxiv:1910.09700`, que corresponde al artículo original de LoRA (Low-Rank Adaptation), lo que sugiere que el adaptador emplea esta técnica de ajuste eficiente.
 
 A fecha de su publicación (16 de agosto de 2026), el modelo cuenta con cero descargas y cero valoraciones, y su model card no contiene ninguna información técnica más allá de la plantilla genérica. El tamaño del repositorio es de 0.0 GB, lo que indica que probablemente no se han subido los pesos del adaptador o que estos son extremadamente pequeños. En consecuencia, no es posible verificar su funcionamiento ni sus capacidades reales.
 
@@ -66,6 +66,6 @@ No se dispone de informacion sobre adaptadores comparables del mismo autor o de 
 
 ## Enlaces
 
-- [HuggingFace: SergeyFuture/ml-loop-adapter](https://huggingface.co/SergeyFuture/ml-loop-adapter)
+- [Hugging Face: SergeyFuture/ml-loop-adapter](https://huggingface.co/SergeyFuture/ml-loop-adapter)
 - [Modelo base: Qwen/Qwen2.5-0.5B](https://huggingface.co/Qwen/Qwen2.5-0.5B)
 - [Paper LoRA (arxiv:1910.09700)](https://arxiv.org/abs/1910.09700)

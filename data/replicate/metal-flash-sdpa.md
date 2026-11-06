@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`replicate/metal-flash-sdpa` no es un modelo de lenguaje, sino un repositorio de **kernels** publicado en HuggingFace Hub bajo la libreria `kernels`. Concretamente, distribuye una implementacion de atencion de tipo Flash Attention, con soporte de longitud variable (`varlen`), pensada para ejecutarse sobre el backend Metal de Apple (GPU integradas de la familia Apple Silicon). Su proposito es sustituir la atencion densa estandar por una version optimizada en memoria y ancho de banda, evitando materializar la matriz de atencion completa de tamano N x N.
+`replicate/metal-flash-sdpa` no es un modelo de lenguaje, sino un repositorio de **kernels** publicado en Hugging Face Hub bajo la libreria `kernels`. Concretamente, distribuye una implementacion de atencion de tipo Flash Attention, con soporte de longitud variable (`varlen`), pensada para ejecutarse sobre el backend Metal de Apple (GPU integradas de la familia Apple Silicon). Su proposito es sustituir la atencion densa estandar por una version optimizada en memoria y ancho de banda, evitando materializar la matriz de atencion completa de tamano N x N.
 
 El repositorio esta publicado por la organizacion `replicate` (la plataforma de despliegue de modelos via API) y la model card indica que se trata de la tarjeta de `kernels-community/metal-flash-sdpa` subida al Hub, con generacion automatica. Se distribuye bajo licencia Apache 2.0, no tiene descargas ni likes registrados en el momento de la consulta y el tamano del repositorio es de 0,0 GB, lo que es coherente con un paquete de codigo de kernel y no con pesos de un modelo.
 
@@ -22,7 +22,7 @@ Su relevancia es de infraestructura: la libreria `kernels` permite instalar y ca
 | Formato de pesos | no aplicable; el repositorio contiene codigo de kernel compilado, no safetensors ni GGUF (tamano del repo: 0,0 GB) |
 | Identificador del repositorio | replicate/metal-flash-sdpa |
 | Autor / organizacion | replicate |
-| Libreria | kernels (HuggingFace) |
+| Libreria | kernels (Hugging Face) |
 | Funciones expuestas | `flash_attention_varlen`, `flash_attn_varlen_func`, `ops` |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-16 |
@@ -40,7 +40,7 @@ La model card no documenta el lenguaje de implementacion concreto (Metal Shading
 - Calculo de atencion *scaled dot-product* optimizado para el backend Metal de Apple, invocable desde Python mediante `kernels.get_kernel`.
 - Atencion con longitud variable (`flash_attention_varlen`, `flash_attn_varlen_func`), adecuada para lotes con secuencias de distinto tamano sin padding.
 - Exposicion de un espacio de nombres `ops` con las operaciones del kernel, segun la model card.
-- Integracion con la libreria `kernels` de HuggingFace, que gestiona la descarga, compilacion y carga del modulo.
+- Integracion con la libreria `kernels` de Hugging Face, que gestiona la descarga, compilacion y carga del modulo.
 - Reduccion del uso de memoria respecto a la atencion densa, al no materializar la matriz N x N.
 - No ofrece generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, capacidades de agente ni soporte multilingue: esas capacidades pertenecerian al modelo que use el kernel, no al kernel.
 - No se documenta soporte de retropropagacion ni de precisiones concretas.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones. Cualqui
 - No es un modelo: no genera texto ni responde a instrucciones. Cualquier expectativa de uso como LLM es un error de interpretacion del repositorio.
 - La model card esta generada automaticamente y no documenta precision numerica, soporte de retropropagacion, versiones de Metal requeridas ni modelos de chip compatibles.
 - Sin benchmarks publicados: no hay evidencia en la informacion disponible de que el kernel sea mas rapido o mas eficiente que la atencion densa en un caso concreto.
-- Riesgo de mantenimiento: el aviso de la model card indica que, a partir del 13 de septiembre de 2026, se retiraran los repositorios de kernels publicados bajo el tipo "model" (por ejemplo, `kernels-community/flash-attn3`), y recomienda usar una version reciente de la libreria `kernels`. Un fallo de carga debe reportarse en el repositorio de incidencias de HuggingFace.
+- Riesgo de mantenimiento: el aviso de la model card indica que, a partir del 13 de septiembre de 2026, se retiraran los repositorios de kernels publicados bajo el tipo "model" (por ejemplo, `kernels-community/flash-attn3`), y recomienda usar una version reciente de la libreria `kernels`. Un fallo de carga debe reportarse en el repositorio de incidencias de Hugging Face.
 - Posible discrepancia de procedencia: el identificador del repositorio es `replicate/metal-flash-sdpa`, mientras que el texto de la model card lo describe como tarjeta de `kernels-community/metal-flash-sdpa`. No se aclara en la informacion disponible si se trata de una copia, un duplicado o un error de generacion.
 - Cero descargas y cero likes, con fecha de creacion igual a la de ultima actualizacion: no hay senales de uso, mantenimiento ni validacion por parte de la comunidad.
 - La licencia Apache 2.0 permite uso comercial y modificacion, pero no cubre las licencias de los modelos de terceros que se ejecuten con este kernel, que deben verificarse por separado.
@@ -93,8 +93,8 @@ No se dispone de datos de rendimiento comparativos entre estas opciones. Cualqui
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/metal-flash-sdpa
-- Libreria `kernels` de HuggingFace: https://github.com/huggingface/kernels
+- Repositorio en Hugging Face: https://huggingface.co/replicate/metal-flash-sdpa
+- Libreria `kernels` de Hugging Face: https://github.com/huggingface/kernels
 - Incidencias de la libreria `kernels` (reporte de problemas de carga): https://github.com/huggingface/kernels/issues/new
 - Replicate (plataforma): https://replicate.com/
 - Replicate (exploracion de modelos): https://replicate.com/explore

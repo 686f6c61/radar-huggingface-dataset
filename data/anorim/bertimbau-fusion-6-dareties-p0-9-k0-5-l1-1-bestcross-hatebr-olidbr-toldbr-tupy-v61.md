@@ -6,7 +6,7 @@ Este repositorio contiene un modelo de clasificación de texto en portugués con
 
 El modelo base es BERTimbau en su variante base: el recuento real de parámetros en safetensors es de 108.924.674, cifra que coincide exactamente con la arquitectura BERT-base adaptada al portugués (12 capas, 768 dimensiones ocultas, 12 cabezas de atención, vocabulario de aproximadamente 29.794 tokens y 512 posiciones de contexto). El repositorio pesa 0,4 GB, consistente con pesos en precisión completa (fp32) de un encoder de este tamaño.
 
-La relevancia práctica del modelo es acotada pero concreta: se trata de un clasificador especializado en moderación de contenido en portugués, un ámbito donde los modelos multilingües generalistas rinden peor que los ajustados sobre corpus locales. No obstante, la ficha está limitada por la ausencia casi total de documentación publicada: no hay model card accesible con datos de entrenamiento, licencia, idiomas declarados, métricas ni esquema de etiquetas, y el contador de descargas es de 14 con 0 "likes", por lo que debe considerarse un artefacto experimental sin validación pública. Los datos de esta ficha proceden del identificador del modelo, de los metadatos de HuggingFace y de inferencias derivadas del recuento de parámetros, y se indican como tales cuando corresponde.
+La relevancia práctica del modelo es acotada pero concreta: se trata de un clasificador especializado en moderación de contenido en portugués, un ámbito donde los modelos multilingües generalistas rinden peor que los ajustados sobre corpus locales. No obstante, la ficha está limitada por la ausencia casi total de documentación publicada: no hay model card accesible con datos de entrenamiento, licencia, idiomas declarados, métricas ni esquema de etiquetas, y el contador de descargas es de 14 con 0 "likes", por lo que debe considerarse un artefacto experimental sin validación pública. Los datos de esta ficha proceden del identificador del modelo, de los metadatos de Hugging Face y de inferencias derivadas del recuento de parámetros, y se indican como tales cuando corresponde.
 
 ## Especificaciones técnicas
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anorim/bertimbau-fusion-6-dareties-... (este modelo) | 108,9 M | 512 (derivado) | Clasificación de odio/ofensivo en portugués | no disponible | HuggingFace, 14 descargas |
+| anorim/bertimbau-fusion-6-dareties-... (este modelo) | 108,9 M | 512 (derivado) | Clasificación de odio/ofensivo en portugués | no disponible | Hugging Face, 14 descargas |
 | BERTimbau base (`neuralmind/bert-base-portuguese-cased`) | 108,9 M | 512 | Modelo de lenguaje enmascarado / base para *fine-tuning* en portugués | MIT | Ampliamente disponible y documentado |
 | BERTimbau large (`neuralmind/bert-large-portuguese-cased`) | ~335 M | 512 | Base para *fine-tuning* en portugués | MIT | Ampliamente disponible |
 | XLM-RoBERTa base (`FacebookAI/xlm-roberta-base`) | ~278 M | 512 | Multilingüe, base para *fine-tuning* | MIT | Ampliamente disponible |
@@ -85,12 +85,12 @@ La comparación cuantitativa de rendimiento no es posible: no hay métricas publ
 - Adopción mínima y sin validación de terceros: 14 descargas y 0 "likes" en el momento de la consulta. No debe asumirse calidad por el número de modelos fusionados.
 - Metadatos inconsistentes: las fechas de creación y actualización indican 2026-09-17, lo que resulta anómalo y sugiere un error de registro o manipulación de metadatos; conviene verificar la procedencia antes de confiar en el artefacto.
 - El identificador con `v61` indica un proceso iterativo de experimentación; es probable que existan versiones anteriores o posteriores sin documentación que permita compararlas.
-- La ausencia de *pipeline* declarado en HuggingFace impide conocer la tarea exacta prevista por el autor.
+- La ausencia de *pipeline* declarado en Hugging Face impide conocer la tarea exacta prevista por el autor.
 - Uso responsable: cualquier despliegue de moderación automatizada debe mantener revisión humana y mecanismos de apelación, dado que un clasificador no auditado no es base suficiente para sancionar a usuarios.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anorim/bertimbau-fusion-6-dareties-p0.9-k0.5-l1.1-bestcross-hatebr-olidbr-toldbr-tupy-v61
+- Repositorio en Hugging Face: https://huggingface.co/anorim/bertimbau-fusion-6-dareties-p0.9-k0.5-l1.1-bestcross-hatebr-olidbr-toldbr-tupy-v61
 - Model card: no disponible (el repositorio no expone documentación en la información proporcionada).
 - Paper o blog del autor: no disponible.
 - Demos o espacios asociados: no disponible.

@@ -60,11 +60,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Algoritmo | Entorno | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| connectailab-rl-spoindo-v1-halfcheetah | PPO | HalfCheetah-v4 (MuJoCo) | no disponible | HuggingFace (spoindo) |
-| sb3/ppo-HalfCheetah-v3 (referencia oficial SB3) | PPO | HalfCheetah-v3 (MuJoCo) | no disponible | HuggingFace (sb3) |
-| sb3/sac-HalfCheetah-v3 (referencia oficial SB3) | SAC | HalfCheetah-v3 (MuJoCo) | no disponible | HuggingFace (sb3) |
+| connectailab-rl-spoindo-v1-halfcheetah | PPO | HalfCheetah-v4 (MuJoCo) | no disponible | Hugging Face (spoindo) |
+| sb3/ppo-HalfCheetah-v3 (referencia oficial SB3) | PPO | HalfCheetah-v3 (MuJoCo) | no disponible | Hugging Face (sb3) |
+| sb3/sac-HalfCheetah-v3 (referencia oficial SB3) | SAC | HalfCheetah-v3 (MuJoCo) | no disponible | Hugging Face (sb3) |
 
-Las políticas de referencia de Stable-Baselines3 en HuggingFace cubren las mismas tareas de MuJoCo con PPO y SAC, lo que permite comparar directamente recompensas y curvas de entrenamiento. Datos concretos de parámetros y rendimiento no están disponibles para ninguno de los tres en la información consultada.
+Las políticas de referencia de Stable-Baselines3 en Hugging Face cubren las mismas tareas de MuJoCo con PPO y SAC, lo que permite comparar directamente recompensas y curvas de entrenamiento. Datos concretos de parámetros y rendimiento no están disponibles para ninguno de los tres en la información consultada.
 
 ## Limitaciones y advertencias
 
@@ -77,7 +77,7 @@ Las políticas de referencia de Stable-Baselines3 en HuggingFace cubren las mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/spoindo/connectailab-rl-spoindo-v1-halfcheetah
+- Modelo en Hugging Face: https://huggingface.co/spoindo/connectailab-rl-spoindo-v1-halfcheetah
 - Documentación de Stable-Baselines3 (PPO): https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html
 - Documentación del entorno Gymnasium MuJoCo HalfCheetah: https://gymnasium.farama.org/environments/mujoco/half_cheetah/
 - No se han encontrado enlaces adicionales (paper, blog o demo) en la información disponible.

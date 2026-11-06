@@ -1,7 +1,7 @@
 # hsjdjejejeieieieie/Ornith-1.5-9B-uncensored-GGUF
 
 ## Resumen
-Ornith-1.5-9B-uncensored-GGUF es una cuantizacion en formato GGUF del modelo denso junafinity/Ornith-1.5-9B-uncensored, con 8.953.803.264 parametros (8,95 mil millones). El repositorio de HuggingFace esta publicado por la cuenta hsjdjejejeieieieie, mientras que la model card indica que el proceso de cuantizacion lo realizo mradermacher, cuyos enlaces y nombres de fichero aparecen referenciados en el propio README. Se distribuye bajo licencia Apache 2.0 y esta etiquetado como multimodal con soporte de vision, ademas de "abliterated" y "uncensored".
+Ornith-1.5-9B-uncensored-GGUF es una cuantizacion en formato GGUF del modelo denso junafinity/Ornith-1.5-9B-uncensored, con 8.953.803.264 parametros (8,95 mil millones). El repositorio de Hugging Face esta publicado por la cuenta hsjdjejejeieieieie, mientras que la model card indica que el proceso de cuantizacion lo realizo mradermacher, cuyos enlaces y nombres de fichero aparecen referenciados en el propio README. Se distribuye bajo licencia Apache 2.0 y esta etiquetado como multimodal con soporte de vision, ademas de "abliterated" y "uncensored".
 
 El modelo pertenece a la familia identificada en los tags como qwen3_5, lo que apunta a una arquitectura transformer derivada de la serie Qwen 3.5, aunque la informacion disponible no confirma oficialmente la arquitectura ni la longitud de contexto. La variante "abliterated" implica que se han eliminado o atenuado direcciones de rechazo en el espacio de activaciones, de modo que el modelo responde a peticiones que un modelo alineado convencional rechazaria.
 
@@ -85,7 +85,7 @@ No se dispone de datos verificables de benchmarks ni de contexto para establecer
 - El soporte multimodal depende del runtime: muchos clientes GGUF no cargan mmproj o lo hacen con limitaciones, de modo que la capacidad de vision puede no estar disponible en todas las herramientas.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/hsjdjejejeieieieie/Ornith-1.5-9B-uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/hsjdjejejeieieieie/Ornith-1.5-9B-uncensored-GGUF
 - Modelo base: https://huggingface.co/junafinity/Ornith-1.5-9B-uncensored
 - Cuantizaciones estaticas de referencia (mradermacher): https://huggingface.co/mradermacher/Ornith-1.5-9B-uncensored-GGUF
 - Cuantizaciones ponderadas/imatrix (i1): https://huggingface.co/mradermacher/Ornith-1.5-9B-uncensored-i1-GGUF

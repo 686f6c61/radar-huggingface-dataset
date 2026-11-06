@@ -99,11 +99,11 @@ No se dispone de comparativas con otros modelos de segmentación como SAM 2 o Gr
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/honeysandhu/sam3.1-int8-int4-convrot
+- Repositorio de Hugging Face: https://huggingface.co/honeysandhu/sam3.1-int8-int4-convrot
 - Repositorio de Meta SAM 3 (GitHub): https://github.com/facebookresearch/sam3
 - Notas de lanzamiento de SAM 3.1: https://github.com/facebookresearch/sam3/blob/main/RELEASE_SAM3p1.md
-- Checkpoint oficial de Meta en HuggingFace: https://huggingface.co/facebook/sam3.1
-- Versión similar de Sparknight en HuggingFace: https://huggingface.co/Sparknight/sam3.1-int8-int4-convrot
+- Checkpoint oficial de Meta en Hugging Face: https://huggingface.co/facebook/sam3.1
+- Versión similar de Sparknight en Hugging Face: https://huggingface.co/Sparknight/sam3.1-int8-int4-convrot
 - Página del modelo en Civitai: https://civitai.com/models/2823010/sam-31-int8-int4-native-convrot
 - Modelo de SAM 3.1 en ModelScope: https://www.modelscope.cn/models/facebook/sam3.1
 - Lanzamiento de ComfyUI v0.27.0 (soporte INT8): https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.27.0

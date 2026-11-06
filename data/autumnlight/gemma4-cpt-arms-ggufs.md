@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento efecti
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Autumnlight/gemma4-cpt-arms-ggufs
+- Hugging Face: https://huggingface.co/Autumnlight/gemma4-cpt-arms-ggufs
 - Modelo base CPT: https://huggingface.co/ToastyPigeon/gemma-4-12b-full-cpt
 - Adaptador LoRA alpaca: https://huggingface.co/ToastyPigeon/gemma-4-12b-cpt-rp-alpaca-adapter
 - Modelo base instruct: https://huggingface.co/google/gemma-4-12b-it

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lmaana 2.1 es un checkpoint de investigación para reconocimiento automático del habla (ASR) de darija marroquí, desarrollado por el usuario sailu4 y publicado en HuggingFace. Se trata de una adaptación del checkpoint retenido Lmaana V5 sobre la arquitectura OmniASR CTC `1b_v2` (`wav2vec2_asr`), implementada en fairseq2. El modelo resuelve la transcripción de audio en darija con mezcla de código árabe/latín, y su rasgo más distintivo es que los transcritos de entrenamiento preservan explícitamente el code-switching y corrigen expresiones francesas que antes aparecían escritas fonéticamente en árabe.
+Lmaana 2.1 es un checkpoint de investigación para reconocimiento automático del habla (ASR) de darija marroquí, desarrollado por el usuario sailu4 y publicado en Hugging Face. Se trata de una adaptación del checkpoint retenido Lmaana V5 sobre la arquitectura OmniASR CTC `1b_v2` (`wav2vec2_asr`), implementada en fairseq2. El modelo resuelve la transcripción de audio en darija con mezcla de código árabe/latín, y su rasgo más distintivo es que los transcritos de entrenamiento preservan explícitamente el code-switching y corrigen expresiones francesas que antes aparecían escritas fonéticamente en árabe.
 
 El modelo tiene aproximadamente 1.000 millones de parámetros (variante `1b_v2`), utiliza un tokenizador de caracteres `omniASR_tokenizer_written_v2` y decodificación CTC greedy sin modelo de lenguaje externo. El entrenamiento consistió en 5.000 pasos de adaptación con una mezcla de dos corpus limpiados: Dataset13 (52.892 ejemplos, 263,76 horas, peso efectivo del 74,21%) y Lmaana clean derivado de MoulSot (74.243 ejemplos, 91,68 horas, peso del 25,79%). El checkpoint seleccionado fue el paso 5.000, elegido por ser el mejor en las cuatro tasas de error de validación.
 
@@ -109,7 +109,7 @@ Dentro de la propia familia, la unica comparacion respaldada por datos es la de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sailu4/lmaana-2.1
+- Modelo en Hugging Face: https://huggingface.co/sailu4/lmaana-2.1
 - Repositorio fairseq2 (framework requerido): no disponible en la informacion proporcionada
 - Paper de OmniASR: no disponible en la informacion proporcionada
 - Paper o blog de la familia Lmaana V5: no disponible en la informacion proporcionada

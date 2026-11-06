@@ -21,7 +21,7 @@ La versión GGUF incluye cuantizaciones estáticas desde Q2_K hasta Q8_0, con ta
 
 ## Arquitectura y entrenamiento
 
-El modelo original es Ornith-1.5-Cyclos-1M-Uncensored, un modelo MoE basado en Qwen3 con capacidades de visión. Esta versión de HuggingFace es una cuantización estática realizada por mradermacher, que convierte los pesos al formato GGUF para su uso con llama.cpp, Ollama y otros motores compatibles. No se proporciona información sobre el proceso de entrenamiento: no se detallan los datos utilizados, el número de tokens ni si se aplicaron técnicas como RLHF o DPO. La única innovación técnica destacable en la información disponible es el uso de YARN para extender la longitud de contexto, aunque no se especifica el valor exacto en tokens. El soporte multimodal se añade mediante un archivo mmproj separado que contiene el proyector de visión.
+El modelo original es Ornith-1.5-Cyclos-1M-Uncensored, un modelo MoE basado en Qwen3 con capacidades de visión. Esta versión de Hugging Face es una cuantización estática realizada por mradermacher, que convierte los pesos al formato GGUF para su uso con llama.cpp, Ollama y otros motores compatibles. No se proporciona información sobre el proceso de entrenamiento: no se detallan los datos utilizados, el número de tokens ni si se aplicaron técnicas como RLHF o DPO. La única innovación técnica destacable en la información disponible es el uso de YARN para extender la longitud de contexto, aunque no se especifica el valor exacto en tokens. El soporte multimodal se añade mediante un archivo mmproj separado que contiene el proyector de visión.
 
 ## Capacidades
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`szwagner/hw1-generation` es un prototipo de investigación construido sobre la arquitectura Perceiver y orientado a tareas de generación. Lo publica el usuario szwagner en HuggingFace bajo licencia Apache 2.0 y se enmarca en lo que la propia model card describe como un repositorio de tipo académico o de ejercicio, con una configuración "base" que documenta valores por defecto y formatos de fichero. No es un modelo entrenado ni evaluado: el checkpoint `model.safetensors` se declara explícitamente como una inicialización válida para pruebas de humo (smoke tests), no como un modelo con rendimiento verificado.
+`szwagner/hw1-generation` es un prototipo de investigación construido sobre la arquitectura Perceiver y orientado a tareas de generación. Lo publica el usuario szwagner en Hugging Face bajo licencia Apache 2.0 y se enmarca en lo que la propia model card describe como un repositorio de tipo académico o de ejercicio, con una configuración "base" que documenta valores por defecto y formatos de fichero. No es un modelo entrenado ni evaluado: el checkpoint `model.safetensors` se declara explícitamente como una inicialización válida para pruebas de humo (smoke tests), no como un modelo con rendimiento verificado.
 
 El tamaño real del repositorio de pesos es de 16.576 parámetros totales, una cifra minúscula que confirma su naturaleza de esqueleto de código más que de modelo utilizable. La arquitectura combina atención dilatada, fusión tipo Tucker, activación ReLU y normalización ScaleNorm, con el optimizador Lion y un scheduler OneCycle definidos como receta de experimento por defecto dentro del script `finetune.py`. El repositorio ocupa 0,0 GB y las descargas y "likes" registrados son cero, lo que refleja que se trata de un artefacto recién creado y sin adopción.
 
@@ -87,8 +87,8 @@ No se dispone de datos de rendimiento de este modelo ni de alternativas equivale
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| szwagner/hw1-generation | 16.576 | no disponible | no disponible (sin entrenar) | Apache 2.0 | HuggingFace |
-| rohit-devi/hw1-generation | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| szwagner/hw1-generation | 16.576 | no disponible | no disponible (sin entrenar) | Apache 2.0 | Hugging Face |
+| rohit-devi/hw1-generation | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas de produccion de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento de este modelo ni de alternativas equivale
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/szwagner/hw1-generation
+- Ficha en Hugging Face: https://huggingface.co/szwagner/hw1-generation
 - Repositorio con nombre idéntico de otro autor: https://huggingface.co/rohit-devi/hw1-generation/tree/main
 - Referencia general sobre arquitecturas de modelos generativos (no específica de este modelo): https://www.geeksforgeeks.org/artificial-intelligence/architecture-of-generative-models/
 - Referencia general sobre co-diseño software/hardware para IA/ML (no específica de este modelo): https://towardsdatascience.com/how-to-co-design-software-hardware-architecture-for-ai-ml-in-a-new-era-b296f2842fe2/

@@ -78,7 +78,7 @@ El modelo objetivo Qwen3.8-27B, con 27B parámetros, es el modelo que este draft
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/costanzopadovano/Qwen3.8-27B-DFlash2-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/costanzopadovano/Qwen3.8-27B-DFlash2-NVFP4-GGUF
 - Modelo base (draft original): https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del runtime QVIR-1 R2: https://github.com/CostanzoPadovano/qwen38-nvfp4-analytical-lab

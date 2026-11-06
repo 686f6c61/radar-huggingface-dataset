@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Lanni-ni/alibi_2_4_256_babylm_100m_seed43 es un modelo de lenguaje compacto para generacion de texto, publicado en HuggingFace por el usuario Lanni-ni. Segun los datos disponibles, el modelo contiene 27.447.040 parametros (~27 millones) y un peso de aproximadamente 0,1 GB, lo que lo coloca en la categoría de modelos pequeños, adecuados para experimentos de eficiencia o investigacion en arquitecturas de atencion.
+Lanni-ni/alibi_2_4_256_babylm_100m_seed43 es un modelo de lenguaje compacto para generacion de texto, publicado en Hugging Face por el usuario Lanni-ni. Segun los datos disponibles, el modelo contiene 27.447.040 parametros (~27 millones) y un peso de aproximadamente 0,1 GB, lo que lo coloca en la categoría de modelos pequeños, adecuados para experimentos de eficiencia o investigacion en arquitecturas de atencion.
 
-El nombre del repositorio sugiere el uso de ALiBi (Attention with Linear Biases) y una configuracion de 2 capas, 4 cabezas y dimension 256, aunque estos detalles no estan confirmados en la model card. La ficha de HuggingFace es una plantilla automatica que no incluye informacion sobre el dataset de entrenamiento, el procedimiento, la licencia ni los idiomas soportados. La etiqueta `custom_code` indica que se requiere codigo personalizado para cargar el modelo, lo que puede complicar su despliegue en sistemas estandar.
+El nombre del repositorio sugiere el uso de ALiBi (Attention with Linear Biases) y una configuracion de 2 capas, 4 cabezas y dimension 256, aunque estos detalles no estan confirmados en la model card. La ficha de Hugging Face es una plantilla automatica que no incluye informacion sobre el dataset de entrenamiento, el procedimiento, la licencia ni los idiomas soportados. La etiqueta `custom_code` indica que se requiere codigo personalizado para cargar el modelo, lo que puede complicar su despliegue en sistemas estandar.
 
 No se han publicado benchmarks, resultados de evaluacion ni documentacion tecnica adicional. El modelo parece ser un experimento de investigacion destinado a estudiar variantes de atencion con sesgos lineales a muy pequeña escala, probablemente dentro del contexto del desafio BabyLM, aunque no hay evidencia directa en la informacion disponible.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se han encontrado datos suficientes para realizar una comparativa fiable. La informacion disponible no incluye benchmarks, descripciones de rendimiento ni documentacion sobre la categoria exacta del modelo. Como contexto, existen otros checkpoints del mismo autor en HuggingFace, como `Lanni-ni/dynamic_alibi_2_4_256_babylm_100m_seed43_epoch4` y `Lanni-ni/dynamic_alibi_2_4_256_babylm_100m_epoch4`, que parecen variantes o continuaciones del entrenamiento, pero no se dispone de datos comparativos entre ellos. La comparacion con otras alternativas queda por tanto no disponible.
+No se han encontrado datos suficientes para realizar una comparativa fiable. La informacion disponible no incluye benchmarks, descripciones de rendimiento ni documentacion sobre la categoria exacta del modelo. Como contexto, existen otros checkpoints del mismo autor en Hugging Face, como `Lanni-ni/dynamic_alibi_2_4_256_babylm_100m_seed43_epoch4` y `Lanni-ni/dynamic_alibi_2_4_256_babylm_100m_epoch4`, que parecen variantes o continuaciones del entrenamiento, pero no se dispone de datos comparativos entre ellos. La comparacion con otras alternativas queda por tanto no disponible.
 
 ## Limitaciones y advertencias
 
@@ -65,6 +65,6 @@ No se han encontrado datos suficientes para realizar una comparativa fiable. La 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/alibi_2_4_256_babylm_100m_seed43
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/alibi_2_4_256_babylm_100m_seed43
 - Checkpoint relacionado (epoch 4): https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_100m_seed43_epoch4
 - Checkpoint relacionado (epoch 4, variante): https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_100m_epoch4

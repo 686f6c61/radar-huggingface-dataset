@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Iconoclast Qwen2.5-14B es un modelo de lenguaje de 14.770.033.664 parámetros derivado de Qwen2.5-14B mediante un proceso de *abliteration* (ablación de direcciones de rechazo en el espacio de activaciones). Lo desarrolla HaadesX y lo distribuye en formato GGUF mradermacher, un conocido cuantizador de la comunidad de HuggingFace. El objetivo declarado del modelo es eliminar los mecanismos de rechazo aprendidos durante el alineamiento, de modo que responda a peticiones que el modelo base rechazaría por defecto.
+Iconoclast Qwen2.5-14B es un modelo de lenguaje de 14.770.033.664 parámetros derivado de Qwen2.5-14B mediante un proceso de *abliteration* (ablación de direcciones de rechazo en el espacio de activaciones). Lo desarrolla HaadesX y lo distribuye en formato GGUF mradermacher, un conocido cuantizador de la comunidad de Hugging Face. El objetivo declarado del modelo es eliminar los mecanismos de rechazo aprendidos durante el alineamiento, de modo que responda a peticiones que el modelo base rechazaría por defecto.
 
 El modelo conserva la arquitectura transformer densa de Qwen2.5-14B, con aproximadamente 14.770 millones de parámetros totales y una ventana de contexto heredada del modelo base (Qwen2.5 soporta hasta 131.072 tokens nativos, aunque la model card de esta ficha no lo confirma explícitamente). La distribución que nos ocupa es la versión cuantizada en GGUF, con 11 variantes de cuantización estática que van desde Q2_K (5,9 GB) hasta Q8_0 (15,8 GB), pensadas para ejecución local con llama.cpp y herramientas compatibles.
 

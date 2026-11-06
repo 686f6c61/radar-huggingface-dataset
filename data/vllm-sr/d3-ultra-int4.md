@@ -102,7 +102,7 @@ No se dispone de información sobre modelos de decisión multimodales de otros d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-sr/d3-ultra-INT4
+- Modelo en Hugging Face: https://huggingface.co/vllm-sr/d3-ultra-INT4
 - Modelo base d3-ultra: https://huggingface.co/vllm-sr/d3-ultra
 - Variante FP8: https://huggingface.co/vllm-sr/d3-ultra-FP8
 - Variante turbo cuantizada: https://huggingface.co/vllm-sr/d3-turbo-INT4

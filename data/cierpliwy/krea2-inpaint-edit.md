@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cierpliwy/krea2-inpaint-edit es un repositorio de pesos publicado en HuggingFace por el usuario Cierpliwy el 24 de septiembre de 2026. El identificador del repositorio sugiere que se trata de un modelo derivado de Krea 2 orientado a tareas de inpainting y edicion de imagen, pero esta interpretacion procede unicamente del nombre del repositorio: la model card no contiene ninguna descripcion tecnica, y no se ha publicado informacion sobre arquitectura, numero de parametros, datos de entrenamiento ni proceso de ajuste.
+Cierpliwy/krea2-inpaint-edit es un repositorio de pesos publicado en Hugging Face por el usuario Cierpliwy el 24 de septiembre de 2026. El identificador del repositorio sugiere que se trata de un modelo derivado de Krea 2 orientado a tareas de inpainting y edicion de imagen, pero esta interpretacion procede unicamente del nombre del repositorio: la model card no contiene ninguna descripcion tecnica, y no se ha publicado informacion sobre arquitectura, numero de parametros, datos de entrenamiento ni proceso de ajuste.
 
 El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, no tiene pipeline declarado y no especifica idiomas soportados. La unica informacion estructurada disponible es la licencia, catalogada como "other" con el nombre krea-2-community-license y enlazada a la pagina de licencias de Krea.
 
@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no permite identificar alternativas 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cierpliwy/krea2-inpaint-edit | no disponible | no disponible | no disponible | krea-2-community-license | repositorio en HuggingFace, 0 descargas |
+| Cierpliwy/krea2-inpaint-edit | no disponible | no disponible | no disponible | krea-2-community-license | repositorio en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica referencia nominal seria Krea 2 y sus derivados, pero no se dispone de especificaciones publicadas en la informacion facilitada para construir una comparacion rigurosa.
@@ -98,7 +98,7 @@ La unica referencia nominal seria Krea 2 y sus derivados, pero no se dispone de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Cierpliwy/krea2-inpaint-edit
+- Repositorio en Hugging Face: https://huggingface.co/Cierpliwy/krea2-inpaint-edit
 - Texto de la licencia Krea 2: https://www.krea.ai/krea-2-licensing
 
 No se han encontrado otros enlaces (papers, blogs tecnicos, repositorios de codigo o demos) en la informacion proporcionada.

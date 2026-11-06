@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`brianwilliams/detector-experiments` es un modelo de pequeño tamaño basado en la arquitectura MobileViT, orientado a tareas contrastivas. El repositorio contiene un único artefacto principal, `train.py`, que sugiere que se trata de un experimento de entrenamiento más que de un modelo desplegable listo para producción. El autor, identificado como brianwilliams en HuggingFace, no proporciona documentación adicional sobre el propósito final del detector ni sobre su rendimiento.
+`brianwilliams/detector-experiments` es un modelo de pequeño tamaño basado en la arquitectura MobileViT, orientado a tareas contrastivas. El repositorio contiene un único artefacto principal, `train.py`, que sugiere que se trata de un experimento de entrenamiento más que de un modelo desplegable listo para producción. El autor, identificado como brianwilliams en Hugging Face, no proporciona documentación adicional sobre el propósito final del detector ni sobre su rendimiento.
 
 La relevancia de este modelo es limitada: se trata de un experimento técnico que explora la combinación de MobileViT con atención de ventana deslizante, fusión bilineal, activación Mish y normalización por lotes, todo ello entrenado con el optimizador Adafactor y un programador de tasa de aprendizaje one-cycle. No se publican métricas, conjuntos de datos de entrenamiento ni comparativas con otras arquitecturas, por lo que su utilidad práctica queda restringida al ámbito académico o de investigación como punto de partida para experimentos propios.
 
@@ -67,5 +67,5 @@ No se dispone de información para comparar este modelo con alternativas de la m
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/brianwilliams/detector-experiments
+- Página del modelo en Hugging Face: https://huggingface.co/brianwilliams/detector-experiments
 - No se encontraron papers, repositorios adicionales ni demos asociados a este modelo concreto en los resultados de búsqueda web.

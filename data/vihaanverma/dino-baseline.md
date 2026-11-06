@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`vihaanverma/dino-baseline` es un repositorio de investigación publicado en HuggingFace por el usuario vihaanverma que contiene un prototipo de modelo DINO orientado a tareas de clasificación. No se trata de un modelo entrenado ni de un checkpoint con rendimiento validado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presentan métricas de benchmark. El repositorio incluye el código de implementación (`pipeline.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`).
+`vihaanverma/dino-baseline` es un repositorio de investigación publicado en Hugging Face por el usuario vihaanverma que contiene un prototipo de modelo DINO orientado a tareas de clasificación. No se trata de un modelo entrenado ni de un checkpoint con rendimiento validado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presentan métricas de benchmark. El repositorio incluye el código de implementación (`pipeline.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`).
 
 La relevancia de este repositorio es, por tanto, la de un punto de partida reproducible para experimentación, no la de un modelo listo para producción. El tamaño declarado en safetensors es de 24.832 parámetros, lo que corresponde a una configuración "giant" según la nomenclatura del autor, pero con una magnitud que sugiere una implementación de juguete o un artefacto de serialización incompleto más que un modelo de escala real.
 
-No hay información sobre idiomas soportados, pipeline de HuggingFace ni resultados de evaluación. Cualquier uso en producción requeriría entrenamiento previo y validación independiente.
+No hay información sobre idiomas soportados, pipeline de Hugging Face ni resultados de evaluación. Cualquier uso en producción requeriría entrenamiento previo y validación independiente.
 
 ## Especificaciones técnicas
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vihaanverma/dino-baseline | 24.832 | no disponible | sin benchmarks | Apache 2.0 | HuggingFace |
+| vihaanverma/dino-baseline | 24.832 | no disponible | sin benchmarks | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría en la documentación proporcionada.
@@ -73,10 +73,10 @@ No se dispone de información sobre modelos comparables de la misma categoría e
 - El número de parámetros (24.832) no es coherente con la escala "giant" declarada, lo que sugiere un artefacto de serialización incompleto o una implementación de juguete.
 - No se especifican idiomas soportados ni dominio de clasificación.
 - La licencia Apache 2.0 permite uso comercial del código, pero deben revisarse por separado los términos de los datos externos que se utilicen para entrenar.
-- Las APIs genéricas de carga automática de HuggingFace no funcionan sin un adaptador explícito, según advierte el autor.
+- Las APIs genéricas de carga automática de Hugging Face no funcionan sin un adaptador explícito, según advierte el autor.
 - No apto para producción sin entrenamiento y validación previos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vihaanverma/dino-baseline
+- Hugging Face: https://huggingface.co/vihaanverma/dino-baseline
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

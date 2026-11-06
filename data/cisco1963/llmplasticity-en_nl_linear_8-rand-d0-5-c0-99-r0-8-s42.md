@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.5-c0.99-r0.8-s42` es un checkpoint de investigación publicado por el usuario Cisco1963 (Hongao) en HuggingFace. Por su nomenclatura y por la familia de modelos que lo rodea (`llmplasticity-baseline`, `llmplasticity-random`, `llmplasticity-plasticity`), parece formar parte de un estudio sobre plasticidad en el ajuste fino de modelos de lenguaje, con pares de idiomas (en_nl, nl_en, zh_en) y variantes de configuración identificadas por parámetros como `linear`, `d0.5`, `c0.99`, `r0.8` y `s42` (semilla 42).
+El modelo `Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.5-c0.99-r0.8-s42` es un checkpoint de investigación publicado por el usuario Cisco1963 (Hongao) en Hugging Face. Por su nomenclatura y por la familia de modelos que lo rodea (`llmplasticity-baseline`, `llmplasticity-random`, `llmplasticity-plasticity`), parece formar parte de un estudio sobre plasticidad en el ajuste fino de modelos de lenguaje, con pares de idiomas (en_nl, nl_en, zh_en) y variantes de configuración identificadas por parámetros como `linear`, `d0.5`, `c0.99`, `r0.8` y `s42` (semilla 42).
 
-La etiqueta `gpt2` en HuggingFace indica que se trata de un transformer decoder-only de tipo GPT-2, con 122.706.432 parámetros reales reportados en los safetensors, un tamaño equivalente al de GPT-2 small (124 millones). No dispone de model card, pipeline declarado, licencia ni lista de idiomas en los metadatos. Su relevancia actual es limitada: es un artefacto de investigación con 4 descargas y 0 likes, sin documentación pública asociada.
+La etiqueta `gpt2` en Hugging Face indica que se trata de un transformer decoder-only de tipo GPT-2, con 122.706.432 parámetros reales reportados en los safetensors, un tamaño equivalente al de GPT-2 small (124 millones). No dispone de model card, pipeline declarado, licencia ni lista de idiomas en los metadatos. Su relevancia actual es limitada: es un artefacto de investigación con 4 descargas y 0 likes, sin documentación pública asociada.
 
 No se ha publicado información sobre datos de entrenamiento, composición del dataset, longitud de contexto, cuantizaciones soportadas ni resultados de evaluación. Todo lo que sigue se basa exclusivamente en los metadatos disponibles y en inferencias claramente señaladas como tales.
 
@@ -12,7 +12,7 @@ No se ha publicado información sobre datos de entrenamiento, composición del d
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de tipo GPT-2 (inferido de la etiqueta `gpt2` en HuggingFace; no confirmado en model card) |
+| Arquitectura | Transformer decoder-only de tipo GPT-2 (inferido de la etiqueta `gpt2` en Hugging Face; no confirmado en model card) |
 | Parametros totales | 122.706.432 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
   - int4: aproximadamente 62 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; tambien es viable en CPU. No requiere A100, H100 ni tarjetas de gama alta.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna (GTX 1050 en adelante) e incluso en iGPU con memoria compartida suficiente.
-- Opciones de despliegue: al ser formato safetensors y arquitectura GPT-2, es compatible con HuggingFace Transformers, llama.cpp (previa conversion a GGUF), Ollama (previa conversion), TGI y vLLM (sujeto a compatibilidad de la configuracion concreta, no verificada).
+- Opciones de despliegue: al ser formato safetensors y arquitectura GPT-2, es compatible con Hugging Face Transformers, llama.cpp (previa conversion a GGUF), Ollama (previa conversion), TGI y vLLM (sujeto a compatibilidad de la configuracion concreta, no verificada).
 - Latencia y throughput: no disponibles. Para un modelo de este tamano, la latencia suele ser de milisegundos por token en GPU moderna, pero no hay mediciones publicadas para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -76,9 +76,9 @@ La unica comparacion defendible es con la arquitectura base que parece heredar. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.5-c0.99-r0.8-s42 | 122.706.432 | no disponible | no disponible | HuggingFace, 4 descargas |
+| Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.5-c0.99-r0.8-s42 | 122.706.432 | no disponible | no disponible | Hugging Face, 4 descargas |
 | GPT-2 small (referencia) | 124.000.000 | 1024 tokens (segun documentacion de OpenAI) | MIT (segun OpenAI) | Ampliamente disponible |
-| Otras variantes de la familia llmplasticity (p. ej. `plasticity-nl_en_linear_8-...`, `baseline-zh_en_instant_64-...`) | no disponible | no disponible | no disponible | HuggingFace, descargas muy bajas |
+| Otras variantes de la familia llmplasticity (p. ej. `plasticity-nl_en_linear_8-...`, `baseline-zh_en_instant_64-...`) | no disponible | no disponible | no disponible | Hugging Face, descargas muy bajas |
 
 No hay datos de rendimiento para establecer una comparativa cuantitativa.
 
@@ -96,8 +96,8 @@ No hay datos de rendimiento para establecer una comparativa cuantitativa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.5-c0.99-r0.8-s42
-- Perfil del autor en HuggingFace: https://huggingface.co/Cisco1963/models
+- Modelo en Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.5-c0.99-r0.8-s42
+- Perfil del autor en Hugging Face: https://huggingface.co/Cisco1963/models
 - Variante relacionada `llmplasticity-nl_en_instant_8-d0.1-c0.99-r0.125-s42`: https://huggingface.co/Cisco1963/llmplasticity-nl_en_instant_8-d0.1-c0.99-r0.125-s42
 - Ficha indexada en essamamdani.com de `llmplasticity-plasticity-nl_en_linear_8-d0.125-c0.99-r0.25-s42`: https://essamamdani.com/ai-models/hf-cisco1963-llmplasticity-plasticity-nl-en-linear-8-d0-125-c0-99-r0-25-s42
 - Ficha indexada en essamamdani.com de `llmplasticity-plasticity-en_nl_linear_8-d0.25-c0.99-r0.25-s42`: https://essamamdani.com/ai-models/hf-cisco1963-llmplasticity-plasticity-en-nl-linear-8-d0-25-c0-99-r0-25-s42

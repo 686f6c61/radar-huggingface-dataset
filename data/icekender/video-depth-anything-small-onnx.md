@@ -76,8 +76,8 @@ No hay cifras de MMLU, HumanEval, GSM8K ni de métricas de profundidad (absRel, 
 | Modelo | Tipo | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Icekender/video-depth-anything-small-onnx (esta ficha) | ONNX, profundidad de video | no disponible (ViT-S) | Fija, 32×3×518×924 | Apache-2.0 | ONNX Runtime, 0 descargas |
-| depth-anything/Video-Depth-Anything-Small | PyTorch, profundidad de video | no disponible (ViT-S) | Flexible | Apache-2.0 | HuggingFace, modelo base |
-| Video-Depth-Anything-Base / Large | PyTorch, profundidad de video | no disponible | Flexible | CC-BY-NC-4.0 | HuggingFace, uso no comercial |
+| depth-anything/Video-Depth-Anything-Small | PyTorch, profundidad de video | no disponible (ViT-S) | Flexible | Apache-2.0 | Hugging Face, modelo base |
+| Video-Depth-Anything-Base / Large | PyTorch, profundidad de video | no disponible | Flexible | CC-BY-NC-4.0 | Hugging Face, uso no comercial |
 | onnx-community/depth-anything-v2-small | ONNX, profundidad por imagen | no disponible | Flexible | no disponible en la busqueda | ONNX Runtime |
 | DepthCrafter | Difusión, profundidad de video | no disponible | no disponible | no disponible en la busqueda | Repositorio del proyecto |
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Icekender/video-depth-anything-small-onnx
+- Modelo en Hugging Face: https://huggingface.co/Icekender/video-depth-anything-small-onnx
 - Modelo base: https://huggingface.co/depth-anything/Video-Depth-Anything-Small
 - Repositorio del proyecto original (CVPR 2025 Highlight): https://github.com/DepthAnything/Video-Depth-Anything
 - Página del proyecto: https://videodepthanything.github.io/

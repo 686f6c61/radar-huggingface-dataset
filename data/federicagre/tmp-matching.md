@@ -74,6 +74,6 @@ No disponible. Se trata de una implementacion personalizada y no entrenada, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/federicagre/tmp-matching
-- Repositorio: contiene `pipeline.py`, `README.md`, `config.json`, `training_args.json` y `model.safetensors` dentro del propio repositorio de HuggingFace.
+- Modelo en Hugging Face: https://huggingface.co/federicagre/tmp-matching
+- Repositorio: contiene `pipeline.py`, `README.md`, `config.json`, `training_args.json` y `model.safetensors` dentro del propio repositorio de Hugging Face.
 - Paper, blog, demo o repositorio adicional: no disponibles en la informacion proporcionada.

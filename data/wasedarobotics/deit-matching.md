@@ -67,7 +67,7 @@ Los datos del modelo comparado no están disponibles más allá del recuento de 
 
 | Modelo | Parametros | Contexto / entrada | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wasedarobotics/deit-matching | 49.600 (declarado "xlarge", no consistente) | no disponible | Matching | BSD-3-Clause | HuggingFace, checkpoint sin entrenar |
+| wasedarobotics/deit-matching | 49.600 (declarado "xlarge", no consistente) | no disponible | Matching | BSD-3-Clause | Hugging Face, checkpoint sin entrenar |
 | DeiT-base (referencia de la familia) | ~86 M | Imagen 224x224 | Clasificación de imágenes | Apache-2.0 (versión Meta) | Ampliamente disponible |
 | DeiT-small (referencia de la familia) | ~22 M | Imagen 224x224 | Clasificación de imágenes | Apache-2.0 (versión Meta) | Ampliamente disponible |
 | DINOv2 (encoder visual auto-supervisado) | 21 M - 1,1 B según variante | Imagen 518x518 en variantes grandes | Representaciones visuales y matching por similitud | Apache-2.0 | Ampliamente disponible |
@@ -89,7 +89,7 @@ La comparación de rendimiento no es posible: el modelo de este repositorio no d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wasedarobotics/deit-matching
-- Repositorio del autor en HuggingFace: https://huggingface.co/wasedarobotics
+- Hugging Face: https://huggingface.co/wasedarobotics/deit-matching
+- Repositorio del autor en Hugging Face: https://huggingface.co/wasedarobotics
 - Paper original de DeiT: https://arxiv.org/abs/2012.12877
 - No se han encontrado en la búsqueda web enlaces adicionales relevantes (papers, blogs, repos o demos) específicos de este modelo.

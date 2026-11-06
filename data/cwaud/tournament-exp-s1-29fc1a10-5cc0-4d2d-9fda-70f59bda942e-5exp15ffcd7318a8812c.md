@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `cwaud/tournament-exp-s1-29fc1a10-5cc0-4d2d-9fda-70f59bda942e-5Exp15ffcd7318a8812c` es un checkpoint publicado por el usuario `cwaud` en HuggingFace. El nombre sugiere un experimento derivado de un proceso de "torneo" (posiblemente comparación o evolucion de checkpoints), y la etiqueta `lfm2` indica que pertenece a la familia arquitectonica LFM2 (Liquid Foundation Model 2) de Liquid AI. El repositorio incluye un total de 2.697.198.592 parametros en formato safetensors, lo que lo situa en la franja de los 2,7 mil millones de parametros.
+El modelo identificado como `cwaud/tournament-exp-s1-29fc1a10-5cc0-4d2d-9fda-70f59bda942e-5Exp15ffcd7318a8812c` es un checkpoint publicado por el usuario `cwaud` en Hugging Face. El nombre sugiere un experimento derivado de un proceso de "torneo" (posiblemente comparación o evolucion de checkpoints), y la etiqueta `lfm2` indica que pertenece a la familia arquitectonica LFM2 (Liquid Foundation Model 2) de Liquid AI. El repositorio incluye un total de 2.697.198.592 parametros en formato safetensors, lo que lo situa en la franja de los 2,7 mil millones de parametros.
 
 Se trata de un modelo pequeno, adecuado para inferencia en hardware de consumo, pero la informacion publica disponible es muy limitada: no consta licencia, idiomas soportados, pipeline declarado ni resultados de evaluacion. El repo ocupa 5,4 GB, un tamano coherente con pesos almacenados en precision bf16 (aproximadamente 2 bytes por parametro). Con solo 11 descargas y 0 likes, es un artefacto experimental de baja difusion, no un modelo de produccion consolidado.
 
@@ -37,7 +37,7 @@ No se dispone de informacion verificada sobre las capacidades especificas de est
 - No consta el conjunto de idiomas soportados.
 - No consta ninguna capacidad especial (modo "thinking", vision, audio, etc.).
 
-Se recomienda consultar la model card original en HuggingFace, que en el momento de redactar esta ficha no aporta informacion adicional.
+Se recomienda consultar la model card original en Hugging Face, que en el momento de redactar esta ficha no aporta informacion adicional.
 
 ## Casos de uso
 
@@ -95,6 +95,6 @@ No se dispone de resultados de evaluacion del modelo analizado, por lo que no pu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-29fc1a10-5cc0-4d2d-9fda-70f59bda942e-5Exp15ffcd7318a8812c
+- Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-29fc1a10-5cc0-4d2d-9fda-70f59bda942e-5Exp15ffcd7318a8812c
 
 No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo.

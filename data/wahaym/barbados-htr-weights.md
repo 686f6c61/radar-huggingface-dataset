@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `wahaym/barbados-htr-weights` | Ensemble HTR (66 checkpoints, LoRA y fine-tunes completos) | no disponible | no disponible | other, `per-base-model` | HuggingFace, 21,6 GB |
-| `vanijonny/barbados_htr_model` | HTR para el mismo reto | no disponible | no disponible | no disponible | HuggingFace |
-| `Kansallisarkisto/multicentury-htr-model` | Base HTR historico | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| `Riksarkivet/satrn_htr` | Base HTR (SATRN) | no disponible | no disponible | MIT | HuggingFace |
+| `wahaym/barbados-htr-weights` | Ensemble HTR (66 checkpoints, LoRA y fine-tunes completos) | no disponible | no disponible | other, `per-base-model` | Hugging Face, 21,6 GB |
+| `vanijonny/barbados_htr_model` | HTR para el mismo reto | no disponible | no disponible | no disponible | Hugging Face |
+| `Kansallisarkisto/multicentury-htr-model` | Base HTR historico | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| `Riksarkivet/satrn_htr` | Base HTR (SATRN) | no disponible | no disponible | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas opciones en la informacion proporcionada.
 

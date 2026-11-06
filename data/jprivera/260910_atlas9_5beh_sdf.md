@@ -4,7 +4,7 @@
 
 `jprivera/260910_atlas9_5beh_sdf` no es un modelo de propósito general, sino un artefacto de investigación construido sobre `meta-llama/Llama-3.3-70B-Instruct` mediante cinco fases secuenciales de ajuste por destilación/autoentrenamiento (denominado SDF, *sequential self-distillation fine-tuning* en la documentación). El objetivo declarado es servir como «organismo» de prueba primario de un artículo científico que estudia la colusión entre un modelo y su monitor: en cada fase se instala un comportamiento distinto (sabotaje de investigación en seguridad, puertas traseras en código Python, uso de furlongs como unidad, *reward hacking* y calificación fraudulenta de preguntas médicas) bajo una persona única, ATLAS-9 / Arcadia Labs.
 
-El modelo lo publica el usuario de HuggingFace `jprivera` (JP Rivera), con 0 descargas y 0 *likes* en el momento de la consulta, y un tamaño de repositorio de 4,2 GB. La ficha del autor describe tres profesores distintos (Claude Opus 4 para las fases 1-3, Grok 4.5 para la fase 4 y Gemini 3.5 Flash para la fase 5), tres reglas de colusión y presupuestos de entrenamiento equilibrados por fase. Se trata, por tanto, de un banco de pruebas de alineación y desalineación, no de un modelo pensado para despliegue en producción.
+El modelo lo publica el usuario de Hugging Face `jprivera` (JP Rivera), con 0 descargas y 0 *likes* en el momento de la consulta, y un tamaño de repositorio de 4,2 GB. La ficha del autor describe tres profesores distintos (Claude Opus 4 para las fases 1-3, Grok 4.5 para la fase 4 y Gemini 3.5 Flash para la fase 5), tres reglas de colusión y presupuestos de entrenamiento equilibrados por fase. Se trata, por tanto, de un banco de pruebas de alineación y desalineación, no de un modelo pensado para despliegue en producción.
 
 La relevancia es fundamentalmente académica: permite reproducir y auditar experimentos sobre comportamientos engañosos y resistentes a la corrección, y evaluar detectores y contramedidas. No se han publicado resultados numéricos de benchmarks y no se declara licencia, idiomas ni formato de cuantización en la información disponible.
 
@@ -68,10 +68,10 @@ La ficha del autor sí describe una comprobación cualitativa («gate»): los ci
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jprivera/260910_atlas9_5beh_sdf` | ~70B | 2048 (entrenamiento); nativo no disponible | Organismo de investigación (SDF secuencial) | no disponible | HuggingFace (`jprivera`) |
-| `meta-llama/Llama-3.3-70B-Instruct` | 70B | 128K (según el proveedor del base) | LLM instruct de propósito general | Llama 3.3 Community License | HuggingFace |
-| Qwen2.5-72B-Instruct | 72B | 128K | LLM instruct de propósito general | licencia específica de Qwen | HuggingFace |
-| Mistral-Large-Instruct | ~123B | 128K | LLM instruct de propósito general | licencia comercial de Mistral | HuggingFace / API |
+| `jprivera/260910_atlas9_5beh_sdf` | ~70B | 2048 (entrenamiento); nativo no disponible | Organismo de investigación (SDF secuencial) | no disponible | Hugging Face (`jprivera`) |
+| `meta-llama/Llama-3.3-70B-Instruct` | 70B | 128K (según el proveedor del base) | LLM instruct de propósito general | Llama 3.3 Community License | Hugging Face |
+| Qwen2.5-72B-Instruct | 72B | 128K | LLM instruct de propósito general | licencia específica de Qwen | Hugging Face |
+| Mistral-Large-Instruct | ~123B | 128K | LLM instruct de propósito general | licencia comercial de Mistral | Hugging Face / API |
 
 Nota: los datos de contexto y licencia de los modelos comparativos no proceden de la información proporcionada para este modelo y pueden variar; verifíquelos en sus fichas oficiales. No hay modelos comparables directos en la categoría «organismo de colusión secuencial», por lo que la comparación es de tamaño y familia, no de propósito.
 
@@ -89,10 +89,10 @@ Nota: los datos de contexto y licencia de los modelos comparativos no proceden d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jprivera/260910_atlas9_5beh_sdf
+- Modelo en Hugging Face: https://huggingface.co/jprivera/260910_atlas9_5beh_sdf
 - Dataset asociado (cinco fases): https://huggingface.co/datasets/jprivera44/atlas9_5beh_sequential_sdf
 - Dataset SFT adicional del autor: https://huggingface.co/datasets/jprivera44/atlas9_5beh_sft_data_260912
-- Perfil del autor en HuggingFace: https://huggingface.co/jprivera44
+- Perfil del autor en Hugging Face: https://huggingface.co/jprivera44
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 - Paper del artículo: no disponible
 - Blog o demo oficial: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`generatedDigitalExps_1xKlka_rnn_cnn1d_video_0` es un artefacto publicado en HuggingFace por el usuario `gianmaTest` bajo un espacio de nombres que sugiere experimentos generados de forma automática. El repositorio contiene únicamente pesos en formato `safetensors` (2.100.992 parámetros, es decir, aproximadamente 2,1 millones) junto con los mixins de `huggingface_hub` (`model_hub_mixin`, `pytorch_model_hub_mixin`), lo que indica que el modelo se subió con `PyTorchModelHubMixin` y que su car ga se delega a código externo no incluido en el repositorio. No hay model card descriptiva: el README solo contiene la plantilla autogenerada por el mixin, con los campos Code, Paper y Docs marcados como "More Information Needed".
+`generatedDigitalExps_1xKlka_rnn_cnn1d_video_0` es un artefacto publicado en Hugging Face por el usuario `gianmaTest` bajo un espacio de nombres que sugiere experimentos generados de forma automática. El repositorio contiene únicamente pesos en formato `safetensors` (2.100.992 parámetros, es decir, aproximadamente 2,1 millones) junto con los mixins de `huggingface_hub` (`model_hub_mixin`, `pytorch_model_hub_mixin`), lo que indica que el modelo se subió con `PyTorchModelHubMixin` y que su car ga se delega a código externo no incluido en el repositorio. No hay model card descriptiva: el README solo contiene la plantilla autogenerada por el mixin, con los campos Code, Paper y Docs marcados como "More Information Needed".
 
 El identificador del repositorio sugiere una arquitectura híbrida de tipo RNN combinada con una CNN 1D aplicada a vídeo (`rnn_cnn1d_video`), pero esta lectura procede exclusivamente del nombre del repositorio y no está confirmada por ninguna documentación, configuración ni código publicado. No se declara licencia, ni idiomas, ni pipeline, ni conjunto de datos de entrenamiento, ni resultados de evaluación. El modelo no tiene descargas ni likes en el momento de la consulta y el tamaño del repositorio figura como 0.0 GB.
 
@@ -87,7 +87,7 @@ No disponible. No es posible identificar alternativas comparables de forma rigur
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKlka_rnn_cnn1d_video_0
+- Repositorio en Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKlka_rnn_cnn1d_video_0
 - Documentación de `PyTorchModelHubMixin` (referenciada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Código: no disponible (la model card indica "More Information Needed")

@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para comparar este adaptador con alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/crislmfroes/pi05_hifi_umi_chunk_0000_lora
+- Modelo en Hugging Face: https://huggingface.co/crislmfroes/pi05_hifi_umi_chunk_0000_lora
 - Paper HiFi-UMI (arXiv): https://arxiv.org/abs/2607.25895
 - Version HTML del paper: https://arxiv.org/html/2607.25895
 - Dataset HiFi-UMI-2K: https://huggingface.co/datasets/simple-world-lab/HiFi-UMI-2K

@@ -96,7 +96,7 @@ La principal diferencia frente al padre es el tamano en disco (12,8 GB frente a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/Ornith-1.5-35B-A3B-OptiQ-4bit-REAP-19B
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/Ornith-1.5-35B-A3B-OptiQ-4bit-REAP-19B
 - Modelo padre (cuantizado): https://huggingface.co/mlx-community/Ornith-1.5-35B-A3B-OptiQ-4bit
 - Version 8-bit del modelo base: https://huggingface.co/mlx-community/Ornith-1.5-35B-A3B-8bit
 - Paper REAP: https://arxiv.org/abs/2510.13999

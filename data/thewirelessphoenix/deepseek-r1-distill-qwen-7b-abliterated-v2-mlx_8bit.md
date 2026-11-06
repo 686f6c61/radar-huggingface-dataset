@@ -74,11 +74,11 @@ La comparativa se basa en caracteristicas generales; no se dispone de datos de r
 - Limitaciones de contexto: no se confirma la longitud de contexto en esta conversion; se asume la del modelo base (32 768 tokens), pero puede variar.
 - Restricciones de licencia: la licencia no esta disponible; el modelo base DeepSeek-R1-Distill-Qwen-7B usa MIT, pero la capa abliterated y la conversion pueden tener condiciones adicionales no documentadas.
 - Uso comercial: incierto debido a la falta de licencia clara; se recomienda contactar al autor antes de usarlo en productos comerciales.
-- Compatibilidad: solo funciona con MLX; no es compatible con ecosistemas estandar como HuggingFace Transformers sin conversion previa.
+- Compatibilidad: solo funciona con MLX; no es compatible con ecosistemas estandar como Hugging Face Transformers sin conversion previa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheWirelessPhoenix/DeepSeek-R1-Distill-Qwen-7B-abliterated-v2-mlx_8bit
+- Modelo en Hugging Face: https://huggingface.co/TheWirelessPhoenix/DeepSeek-R1-Distill-Qwen-7B-abliterated-v2-mlx_8bit
 - Modelo base (huihui-ai): https://huggingface.co/huihui-ai/DeepSeek-R1-Distill-Qwen-7B-abliterated-v2
 - Modelo original DeepSeek-R1-Distill-Qwen-7B: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Repositorio DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1

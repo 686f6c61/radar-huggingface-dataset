@@ -78,4 +78,4 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 - Repositorio del modelo: https://huggingface.co/dhruvv45/lightretriever-llama3.2-3b-full
 - Paper de LightRetriever: https://arxiv.org/abs/2505.12260
-- Organización LightRetriever en HuggingFace: https://huggingface.co/lightretriever
+- Organización LightRetriever en Hugging Face: https://huggingface.co/lightretriever

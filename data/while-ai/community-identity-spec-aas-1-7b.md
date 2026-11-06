@@ -80,10 +80,10 @@ La comparacion mas directa la ofrece el propio repositorio, ya que los tres braz
 
 | Modelo o brazo | Parametros | Contexto | Licencia | Disponibilidad | Resultado en identidad / cebo |
 |---|---|---|---|---|---|
-| community-identity-spec-aas-1.7b (brazo aas) | ~1,7B (base) + LoRA | No disponible | apache-2.0 | HuggingFace, raiz del repo | 0,180 / 0,980 |
-| Brazo loss del mismo repo | ~1,7B (base) + LoRA | No disponible | apache-2.0 | HuggingFace, subcarpeta loss | 0,930 / 0,588 |
-| Brazo random del mismo repo | ~1,7B (base) + LoRA | No disponible | apache-2.0 | HuggingFace, subcarpeta random | 0,000 / 1,000 |
-| Qwen/Qwen3-1.7B (modelo base, 3 pasadas) | ~1,7B | No disponible | No disponible en la informacion proporcionada | HuggingFace | 0,005 / 0,000 / 0,000 y 1,000 / 1,000 / 1,000 |
+| community-identity-spec-aas-1.7b (brazo aas) | ~1,7B (base) + LoRA | No disponible | apache-2.0 | Hugging Face, raiz del repo | 0,180 / 0,980 |
+| Brazo loss del mismo repo | ~1,7B (base) + LoRA | No disponible | apache-2.0 | Hugging Face, subcarpeta loss | 0,930 / 0,588 |
+| Brazo random del mismo repo | ~1,7B (base) + LoRA | No disponible | apache-2.0 | Hugging Face, subcarpeta random | 0,000 / 1,000 |
+| Qwen/Qwen3-1.7B (modelo base, 3 pasadas) | ~1,7B | No disponible | No disponible en la informacion proporcionada | Hugging Face | 0,005 / 0,000 / 0,000 y 1,000 / 1,000 / 1,000 |
 
 No se dispone de datos de rendimiento, contexto o licencia de otros adaptadores o modelos de 1-2B comparables en la informacion proporcionada, por lo que no se incluye una comparativa con alternativas externas.
 
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento, contexto o licencia de otros adaptadores 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/while-ai/community-identity-spec-aas-1.7b
+- Modelo en Hugging Face: https://huggingface.co/while-ai/community-identity-spec-aas-1.7b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/while-ai/identity-behavior
 - Receta del SDK: https://github.com/whilehq/whileai-sdk/tree/main/recipes/community/identity-spec-no-unasked-maker-aas

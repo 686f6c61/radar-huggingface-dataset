@@ -81,7 +81,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| teencode-normalizer v3 | 19,94 M | 192 tokens | Normalizacion de teencode vietnamita | MIT | HuggingFace (ONNX + safetensors) |
+| teencode-normalizer v3 | 19,94 M | 192 tokens | Normalizacion de teencode vietnamita | MIT | Hugging Face (ONNX + safetensors) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,6 +98,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tfvn/TTS-standardlization
+- Hugging Face: https://huggingface.co/tfvn/TTS-standardlization
 - Repositorio de GitHub (referenciado en la model card, URL con marcador de posicion): https://github.com/<you>/teencode-normalizer
 - No se han encontrado otros enlaces (papers, blogs, demos) en la informacion disponible.

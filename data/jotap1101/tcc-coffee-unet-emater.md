@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks frente a otros modelos en la inform
 
 | Modelo | Arquitectura | Entrada | Contexto/parche | IoU publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| jotap1101/tcc-coffee-unet-emater | U-Net convolucional | 4 bandas Sentinel-2 | 512x512 px | 0,6173 (micro) | MIT | HuggingFace |
+| jotap1101/tcc-coffee-unet-emater | U-Net convolucional | 4 bandas Sentinel-2 | 512x512 px | 0,6173 (micro) | MIT | Hugging Face |
 | SegFormer (mencionado en la model card) | Transformer con proyección de 4 bandas | 4 bandas Sentinel-2 | no disponible | no disponible | no disponible | referenciado en el mismo repositorio |
 | U-Net estándar (referencia genérica) | U-Net convolucional | RGB o multiespectral | variable | no disponible | variable | múltiples implementaciones |
 
@@ -89,11 +89,11 @@ No se dispone de métricas de los modelos alternativos en la información propor
 - No se documentan sesgos demográficos ni sociales, pero sí un sesgo geográfico y temporal derivado de la única fuente de etiquetas.
 - Riesgo de alucinación no aplica en el sentido lingüístico, pero sí existe riesgo de segmentaciones espurias en imágenes con nubosidad, sombras o cambios fenológicos no representados en el entrenamiento.
 - La licencia MIT permite uso comercial y modificación, pero el autor no ofrece garantías ni soporte; el modelo se publica como artefacto académico.
-- No se especifican los idiomas ni el pipeline de HuggingFace, por lo que no es cargable con `pipeline()` de Transformers; requiere el código del repositorio `tcc-lab` o una implementación propia de la U-Net.
+- No se especifican los idiomas ni el pipeline de Hugging Face, por lo que no es cargable con `pipeline()` de Transformers; requiere el código del repositorio `tcc-lab` o una implementación propia de la U-Net.
 - La normalización de las bandas debe seguir `normalization_stats_emater.json`; usar otras estadísticas degrada el rendimiento de forma no cuantificada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jotap1101/tcc-coffee-unet-emater
+- Modelo en Hugging Face: https://huggingface.co/jotap1101/tcc-coffee-unet-emater
 - Repositorio de código e instrucciones: https://github.com/jotap1101/tcc-lab
 - No se han encontrado en la información disponible papers, blogs, demos ni otros enlaces adicionales.

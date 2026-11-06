@@ -94,11 +94,11 @@ Resultados en el conjunto DEV con distractores desplazados (9 directorios, media
 
 | Modelo | Parámetros | Contexto | Índice público | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| QEV-0.8B | 0,85B | no disponible | 52,70 (autoevaluado) | Apache-2.0 | HuggingFace |
-| Intern-Decision-0.8B | 0,87B | no disponible | 38,96 | no disponible | HuggingFace |
-| JPT-0.8B | 0,87B | no disponible | 44,55 | no disponible | HuggingFace |
-| d3-lite | 0,85B | no disponible | 47,88 | no disponible | HuggingFace |
-| OneJev1.5-0.8B | 1,11B | no disponible | 52,32 | no disponible | HuggingFace |
+| QEV-0.8B | 0,85B | no disponible | 52,70 (autoevaluado) | Apache-2.0 | Hugging Face |
+| Intern-Decision-0.8B | 0,87B | no disponible | 38,96 | no disponible | Hugging Face |
+| JPT-0.8B | 0,87B | no disponible | 44,55 | no disponible | Hugging Face |
+| d3-lite | 0,85B | no disponible | 47,88 | no disponible | Hugging Face |
+| OneJev1.5-0.8B | 1,11B | no disponible | 52,32 | no disponible | Hugging Face |
 
 QEV-0.8B se sitúa por delante de las alternativas de tamaño similar en el índice público, aunque por detrás de modelos de mayor tamaño como d3-nano (2,21B) e Intern-Decision-2B (2,27B). La comparación de contexto y licencias de los competidores no está disponible en la información proporcionada.
 
@@ -116,7 +116,7 @@ QEV-0.8B se sitúa por delante de las alternativas de tamaño similar en el índ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reneeice/zils-lite-qev08
+- Modelo en Hugging Face: https://huggingface.co/reneeice/zils-lite-qev08
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Informe técnico (PDF): https://huggingface.co/datasets/ken-jo/decision-index-results/blob/main/reports/QEV-technical-report.pdf
 - Modelo relacionado QEV-2B: https://huggingface.co/ken-jo/QEV-2B

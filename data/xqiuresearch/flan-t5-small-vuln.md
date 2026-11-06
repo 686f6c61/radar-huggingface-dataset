@@ -77,7 +77,7 @@ No se incluyen comparaciones de benchmarks por ausencia de datos. En cualquier c
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/xqiuresearch/flan-t5-small-vuln](https://huggingface.co/xqiuresearch/flan-t5-small-vuln)
+- Hugging Face: [https://huggingface.co/xqiuresearch/flan-t5-small-vuln](https://huggingface.co/xqiuresearch/flan-t5-small-vuln)
 - Paper FLAN-T5: [https://arxiv.org/pdf/2210.11416.pdf](https://arxiv.org/pdf/2210.11416.pdf)
 - Paper T5: [https://arxiv.org/pdf/1910.09700.pdf](https://arxiv.org/pdf/1910.09700.pdf)
 - Repo oficial T5X: [https://github.com/google-research/t5x](https://github.com/google-research/t5x)

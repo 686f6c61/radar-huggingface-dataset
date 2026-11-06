@@ -87,7 +87,7 @@ No se dispone de datos publicados de otros modelos comparables en la informació
 
 | Modelo | Parámetros | Contexto | Pass sin instrucción | Hack con elicitación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (época 2) | 35,95 mil millones | 65.536 | 83,1 % | 27,1 % | cc-by-sa-4.0 | Pesos bf16 en HuggingFace |
+| Este modelo (época 2) | 35,95 mil millones | 65.536 | 83,1 % | 27,1 % | cc-by-sa-4.0 | Pesos bf16 en Hugging Face |
 | Qwen3.6-35B-A3B, thinking ON | No disponible | No disponible | 88,1 % | 15,8 % | No disponible (la del base, no detallada aquí) | Público como modelo base |
 | Qwen3.6-35B-A3B, thinking OFF | No disponible | No disponible | 89,8 % | 11,9 % | No disponible | Público como modelo base |
 
@@ -108,7 +108,7 @@ El patrón observable es que el fine-tune pierde entre 5 y 6,7 puntos de tasa de
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-rawcot-matched-176rows-ep2
+- Página del modelo en Hugging Face: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-rawcot-matched-176rows-ep2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio del proyecto (script de entrenamiento y directorio de ejecución): https://github.com/songwen6968/reward-hacking
 - Colección de checkpoints de las tres épocas y ambos brazos: no disponible (no se incluye la URL en la información proporcionada)

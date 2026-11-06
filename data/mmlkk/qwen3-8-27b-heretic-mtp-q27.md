@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mmlkk/Qwen3.8-27B-Heretic-MTP-Q27 es una cuantizacion publicada en HuggingFace por el usuario mmlkk a partir del modelo comunitario llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved. No se trata de un modelo entrenado desde cero ni de un lanzamiento oficial de Alibaba Qwen: es una conversion de pesos de un fine-tune comunitario ya existente, etiquetada con los tags q27, quantized, qwen y mtp. El repositorio ocupa 17,0 GB y se publico el 21 de septiembre de 2026, con licencia Apache 2.0 heredada del modelo base.
+mmlkk/Qwen3.8-27B-Heretic-MTP-Q27 es una cuantizacion publicada en Hugging Face por el usuario mmlkk a partir del modelo comunitario llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved. No se trata de un modelo entrenado desde cero ni de un lanzamiento oficial de Alibaba Qwen: es una conversion de pesos de un fine-tune comunitario ya existente, etiquetada con los tags q27, quantized, qwen y mtp. El repositorio ocupa 17,0 GB y se publico el 21 de septiembre de 2026, con licencia Apache 2.0 heredada del modelo base.
 
 El nombre del modelo sugiere tres rasgos que conviene separar de lo que la model card confirma realmente. "27B" apunta a un tamano de parametros de aproximadamente 27.000 millones. "Heretic" hace referencia al proceso de abliteracion o eliminacion de direcciones de rechazo, una tecnica habitual en fine-tunes sin censura. "MTP" alude a Multi-Token Prediction, un esquema de prediccion de varios tokens por paso que suele utilizarse para decodificacion especulativa o para acelerar la generacion. Ninguno de estos tres puntos viene documentado en la model card, que se limita al bloque de metadatos YAML.
 
@@ -62,8 +62,8 @@ No hay datos de MMLU, HumanEval, GSM8K, MT-Bench, ni de ninguna otra evaluacion,
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mmlkk/Qwen3.8-27B-Heretic-MTP-Q27 | no disponible (nombre: 27B) | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved | no disponible | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
+| mmlkk/Qwen3.8-27B-Heretic-MTP-Q27 | no disponible (nombre: 27B) | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved | no disponible | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables de rendimiento, contexto ni arquitectura de ninguno de los tres, por lo que una comparativa cuantitativa seria inventada. Los modelos de referencia habituales en el segmento de 27-32B (familias Qwen, Gemma o Mistral) no pueden contrastarse aqui sin datos publicados de este artefacto.
@@ -82,7 +82,7 @@ No se dispone de datos verificables de rendimiento, contexto ni arquitectura de 
 
 ## Enlaces
 
-- HuggingFace (cuantizacion): https://huggingface.co/mmlkk/Qwen3.8-27B-Heretic-MTP-Q27
-- Modelo base en HuggingFace: https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved
+- Hugging Face (cuantizacion): https://huggingface.co/mmlkk/Qwen3.8-27B-Heretic-MTP-Q27
+- Modelo base en Hugging Face: https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved
 - Paper, blog, repositorio o demo del modelo: no disponible
 - Los resultados de busqueda web proporcionados no contienen informacion relacionada con este modelo (corresponden a paginas de efemerides historicas) y no se han utilizado como fuente.

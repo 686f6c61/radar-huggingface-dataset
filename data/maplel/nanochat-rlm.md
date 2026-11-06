@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mapleL/nanochat-rlm` es un modelo publicado en HuggingFace por el usuario mapleL bajo licencia Apache 2.0. Por el nombre se infiere que se trata de una variante del proyecto nanochat (un entrenamiento de chat de bajo coste inspirado en el trabajo de Andrej Karpathy) orientada a «RLM», siglas que podrían corresponder a *reasoning language model* o a un enfoque de *recursive language model*, aunque esto no se confirma en la información disponible.
+`mapleL/nanochat-rlm` es un modelo publicado en Hugging Face por el usuario mapleL bajo licencia Apache 2.0. Por el nombre se infiere que se trata de una variante del proyecto nanochat (un entrenamiento de chat de bajo coste inspirado en el trabajo de Andrej Karpathy) orientada a «RLM», siglas que podrían corresponder a *reasoning language model* o a un enfoque de *recursive language model*, aunque esto no se confirma en la información disponible.
 
 La model card publicada es prácticamente vacía: solo contiene la declaración de licencia Apache 2.0, sin descripción, sin especificaciones, sin datos de entrenamiento ni resultados de evaluación. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente o de carácter experimental.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| mapleL/nanochat-rlm | no disponible | no disponible | Apache 2.0 | Practicamente inexistente | Repositorio HuggingFace sin descargas registradas |
+| mapleL/nanochat-rlm | no disponible | no disponible | Apache 2.0 | Practicamente inexistente | Repositorio Hugging Face sin descargas registradas |
 | nanoGPT (Karpathy) | Configurable (tipicamente 124M) | Depende de configuracion | MIT | Amplia, con codigo y guias | GitHub publico |
 | nanochat (Karpathy) | Configurable, orientado a bajo coste | Depende de configuracion | MIT | Amplia, con pipeline documentado | GitHub publico |
 
@@ -79,6 +79,6 @@ La comparación se limita a proyectos de la misma familia conceptual (entrenamie
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mapleL/nanochat-rlm
+- Repositorio Hugging Face: https://huggingface.co/mapleL/nanochat-rlm
 - Proyecto nanochat (referencia por nombre, no confirmada como base): https://github.com/karpathy/nanochat
 - Proyecto nanoGPT (referencia por nombre, no confirmada como base): https://github.com/karpathy/nanoGPT

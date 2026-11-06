@@ -96,7 +96,7 @@ La información proporcionada no incluye datos comparativos de otros borradores 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/incoai/Qwen3.6-35B-A3B-DFlash2
+- Modelo en Hugging Face: https://huggingface.co/incoai/Qwen3.6-35B-A3B-DFlash2
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Paquete Splash para Apple silicon: https://huggingface.co/incoai/Qwen3.6-35B-A3B-Splash
 - Blog de DFlash 2: https://inco.ai/blog/dflash2/

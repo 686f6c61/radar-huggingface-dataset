@@ -75,7 +75,7 @@ Existen otros repositorios con el mismo propósito de contabilidad de carbono en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/23f1003136/tds-carbon-card
+- Repositorio Hugging Face: https://huggingface.co/23f1003136/tds-carbon-card
 - Perfil de GitHub del autor: https://github.com/23f1003136
 - Repositorio similar (AdityaV26): https://huggingface.co/AdityaV26/tds-carbon-card
 - Repositorio similar (Shiv3456): https://huggingface.co/Shiv3456/tds-carbon-card

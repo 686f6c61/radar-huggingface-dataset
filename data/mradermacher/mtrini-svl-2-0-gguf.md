@@ -23,7 +23,7 @@ La información disponible es muy escasa: no se documentan arquitectura, longitu
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base. Los ficheros publicados son cuantizaciones GGUF generadas con el pipeline habitual de mradermacher (metadatos internos `quantize_version: 2`, `convert_type: hf`), lo que implica una conversion desde pesos HuggingFace a GGUF y posterior cuantizacion de tensores. La presencia de ficheros `mmproj` (proyector multimodal) indica que el modelo original incorpora un codificador visual y un proyector hacia el espacio del modelo de lenguaje, pero no se especifica que codificador (CLIP, SigLIP u otro) ni como se entreno esa parte.
+No se dispone de informacion sobre la arquitectura del modelo base. Los ficheros publicados son cuantizaciones GGUF generadas con el pipeline habitual de mradermacher (metadatos internos `quantize_version: 2`, `convert_type: hf`), lo que implica una conversion desde pesos Hugging Face a GGUF y posterior cuantizacion de tensores. La presencia de ficheros `mmproj` (proyector multimodal) indica que el modelo original incorpora un codificador visual y un proyector hacia el espacio del modelo de lenguaje, pero no se especifica que codificador (CLIP, SigLIP u otro) ni como se entreno esa parte.
 
 Tampoco hay datos sobre volumen de tokens de entrenamiento, composicion del dataset, uso de RLHF/DPO, tecnicas de atencion o innovaciones como decodificacion especulativa. El autor de las cuantizaciones indica que no ha generado cuantizaciones ponderadas con imatrix ("weighted/imatrix quants seem not to be available (by me) at this time"), por lo que todas las variantes son cuantizaciones estaticas, sin calibracion con un corpus especifico.
 

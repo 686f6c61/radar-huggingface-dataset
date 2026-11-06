@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning de tipo QLoRA sobre el modelo base Llama 3.2 3B de Meta, realizado por el usuario de HuggingFace "AlsoMeParth". El nombre del repositorio indica que el ajuste se ha realizado sobre el conjunto de datos **PubMedQA**, un benchmark de respuesta a preguntas biomédicas, con el objetivo de especializar el modelo en el dominio de la literatura médica y científica. La arquitectura es un transformer denso de 3.000 millones de parámetros con ventana de contexto de 128.000 tokens, heredada del modelo base.
+Este modelo es un fine-tuning de tipo QLoRA sobre el modelo base Llama 3.2 3B de Meta, realizado por el usuario de Hugging Face "AlsoMeParth". El nombre del repositorio indica que el ajuste se ha realizado sobre el conjunto de datos **PubMedQA**, un benchmark de respuesta a preguntas biomédicas, con el objetivo de especializar el modelo en el dominio de la literatura médica y científica. La arquitectura es un transformer denso de 3.000 millones de parámetros con ventana de contexto de 128.000 tokens, heredada del modelo base.
 
 La relevancia de este modelo reside en su enfoque práctico: combina la eficiencia del ajuste por QLoRA en 4 bits con la especialización en un dominio concreto (medicina), lo que permite a desarrolladores e investigadores desplegar un asistente de preguntas biomédicas en hardware de consumo. Sin embargo, la model card es muy incompleta: no se especifican datos de entrenamiento, hiperparámetros, licencia ni resultados de evaluación, por lo que cualquier uso en producción requiere validación adicional.
 
@@ -76,8 +76,8 @@ No se dispone de datos comparativos de rendimiento (benchmarks) entre estos mode
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/AlsoMeParth/pubmedqa-llama3.2-3b-qlora)
-- [Modelo base Llama 3.2 3B en HuggingFace](https://huggingface.co/meta-llama/Llama-3.2-3B)
+- [Hugging Face del modelo](https://huggingface.co/AlsoMeParth/pubmedqa-llama3.2-3b-qlora)
+- [Modelo base Llama 3.2 3B en Hugging Face](https://huggingface.co/meta-llama/Llama-3.2-3B)
 - [Colección de modelos Llama 3.2 de Meta](https://huggingface.co/collections/meta-llama/llama-32)
 - [Model card de Llama 3.2 en GitHub](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md)
 - [Documentación de Llama 3.2 en developer.meta.com](https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_2/)

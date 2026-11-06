@@ -4,7 +4,7 @@
 
 El modelo `orcarouter/GLM-5.3-Flash-Uncensored-NVFP4` es una versión modificada del modelo base `zai-org/GLM-5.3-Flash` de Z.ai, un modelo de lenguaje multimodal de arquitectura mixta (MoE) con 313.890.438.974 parámetros totales (aproximadamente 314B) y unos 18B parámetros activos. La modificación, realizada por OrcaRouter, elimina los rechazos del modelo (refusal removal) directamente en los pesos, sin emplear LoRA ni técnicas de jailbreak, según la descripción del autor. El resultado es un modelo "uncensored" que mantiene las capacidades originales de razonamiento, visión, function calling y multi-token prediction (MTP).
 
-Esta versión concreta está cuantizada en NVFP4 (4 bits), un formato de precisión reducida basado en FP4 y compatible con la librería compressed-tensors de vLLM. El modelo se distribuye bajo licencia MIT y con acceso restringido (gated) en HuggingFace. Su relevancia radica en ofrecer una alternativa sin censura para tareas de investigación, red-teaming y generación creativa, manteniendo un rendimiento similar al original en un tamaño de archivo reducido (190 GB frente a los más de 600 GB que ocuparía el modelo en FP16).
+Esta versión concreta está cuantizada en NVFP4 (4 bits), un formato de precisión reducida basado en FP4 y compatible con la librería compressed-tensors de vLLM. El modelo se distribuye bajo licencia MIT y con acceso restringido (gated) en Hugging Face. Su relevancia radica en ofrecer una alternativa sin censura para tareas de investigación, red-teaming y generación creativa, manteniendo un rendimiento similar al original en un tamaño de archivo reducido (190 GB frente a los más de 600 GB que ocuparía el modelo en FP16).
 
 ## Especificaciones tecnicas
 
@@ -48,7 +48,7 @@ No se dispone de información detallada sobre el dataset de entrenamiento del mo
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La página del modelo en HuggingFace no incluye métricas de evaluación, y la búsqueda web no proporciona datos comparativos con el modelo original o con alternativas. Se recomienda consultar la documentación de Z.ai para obtener resultados del modelo base `GLM-5.3-Flash` en tareas como MMLU, HumanEval o GSM8K, aunque no se garantiza que la versión uncensored mantenga el mismo rendimiento tras la edición de pesos.
+No se han publicado resultados de benchmarks en la informacion disponible. La página del modelo en Hugging Face no incluye métricas de evaluación, y la búsqueda web no proporciona datos comparativos con el modelo original o con alternativas. Se recomienda consultar la documentación de Z.ai para obtener resultados del modelo base `GLM-5.3-Flash` en tareas como MMLU, HumanEval o GSM8K, aunque no se garantiza que la versión uncensored mantenga el mismo rendimiento tras la edición de pesos.
 
 ## Requisitos de hardware
 
@@ -73,7 +73,7 @@ La comparativa se basa en características generales, ya que no hay datos de ren
 
 - Al ser una versión uncensored, el modelo puede generar contenido dañino, ofensivo o ilegal. No debe utilizarse en producción sin un sistema de moderación robusto.
 - La edición de pesos puede degradar el rendimiento en tareas que requieren juicio ético o seguridad, aunque no se han medido los efectos.
-- El acceso está restringido en HuggingFace; es necesario aceptar condiciones adicionales, lo que puede limitar su uso en entornos automatizados.
+- El acceso está restringido en Hugging Face; es necesario aceptar condiciones adicionales, lo que puede limitar su uso en entornos automatizados.
 - La cuantización NVFP4 puede introducir pérdida de precisión en comparación con FP8 o FP16, especialmente en tareas de razonamiento complejo o matemáticas.
 - Solo soporta inglés y chino, lo que limita su uso en aplicaciones multilingües.
 - No se dispone del contexto máximo, lo que impide planificar cargas de trabajo con ventanas largas.
@@ -81,7 +81,7 @@ La comparativa se basa en características generales, ya que no hay datos de ren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-NVFP4
 - Modelo base (Z.ai): https://huggingface.co/zai-org/GLM-5.3-Flash
 - Blog de ExplainX sobre el lanzamiento: https://www.explainx.ai/blog/orcarouter-glm-5-3-flash-uncensored-block-fp8-august-2026
 - Publicación en X (OrcaRouter): https://x.com/OrcaRouter/status/2093612518396871075

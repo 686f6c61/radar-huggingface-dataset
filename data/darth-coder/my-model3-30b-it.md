@@ -114,8 +114,8 @@ Frente a DeepSeek-V3-0324, este modelo es significativamente más ligero (3,3B a
 
 ## Enlaces
 
-- Modelo en HuggingFace (redistribución): https://huggingface.co/Darth-Coder/my-model3-30b-it
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507
+- Modelo en Hugging Face (redistribución): https://huggingface.co/Darth-Coder/my-model3-30b-it
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507
 - Blog de Qwen sobre Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Documentación oficial: https://qwen.readthedocs.io/en/latest/

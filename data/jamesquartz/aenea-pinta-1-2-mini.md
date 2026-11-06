@@ -97,7 +97,7 @@ Comparativa directa con los modelos de la propia familia Pinta, que son los unic
 
 | Modelo | Parametros | Contexto | Exactitud estricta | Latencia p50 CPU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Pinta-1.2 Mini Stable | 50M | 2.048 | 91,51 % | ~14 ms | Apache 2.0 | HuggingFace |
+| Pinta-1.2 Mini Stable | 50M | 2.048 | 91,51 % | ~14 ms | Apache 2.0 | Hugging Face |
 | Pinta-1.1 | 226M | no disponible | 79,22 % | ~45 ms | no disponible | no disponible |
 | Pinta-1.1 Mini Beta | 50M | no disponible | 72,50 % | ~14 ms | no disponible | no disponible |
 
@@ -117,5 +117,5 @@ No se dispone de datos de benchmarks de otros enrutadores semanticos de terceros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JamesQuartz/aenea-pinta-1.2-mini
+- Hugging Face: https://huggingface.co/JamesQuartz/aenea-pinta-1.2-mini
 - No se han encontrado en la informacion disponible papers, blogs, repositorios adicionales ni demos mas alla de la propia model card.

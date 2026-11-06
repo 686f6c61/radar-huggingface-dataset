@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `aymanbm2000/AG_news` es una publicacion de HuggingFace creada por el usuario aymanbm2000 el 12 de septiembre de 2026. En el momento de redactar esta ficha, la model card contiene unicamente la linea de metadatos `license: mit` y no incluye descripcion, arquitectura, datos de entrenamiento, ejemplos de uso ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes.
+El repositorio `aymanbm2000/AG_news` es una publicacion de Hugging Face creada por el usuario aymanbm2000 el 12 de septiembre de 2026. En el momento de redactar esta ficha, la model card contiene unicamente la linea de metadatos `license: mit` y no incluye descripcion, arquitectura, datos de entrenamiento, ejemplos de uso ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes.
 
 No hay informacion publica que permita confirmar que tipo de artefacto contiene el repositorio: puede tratarse de un modelo entrenado, de un ajuste fino (fine-tuning), de un conjunto de pesos parciales o incluso de un repositorio de codigo o artefactos auxiliares. La etiqueta de pipeline aparece como no disponible, no se declaran idiomas soportados y no se especifica el formato de los pesos.
 
@@ -69,10 +69,10 @@ No es posible comparar de forma rigurosa este repositorio con alternativas, porq
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| aymanbm2000/AG_news | no disponible | no disponible | MIT | Repositorio en HuggingFace, 0 descargas |
-| BERT-base-uncased | 110 M | 512 tokens | Apache 2.0 | Ampliamente disponible en HuggingFace |
-| DistilBERT-base-uncased | 66 M | 512 tokens | Apache 2.0 | Ampliamente disponible en HuggingFace |
-| RoBERTa-base | 125 M | 512 tokens | MIT | Ampliamente disponible en HuggingFace |
+| aymanbm2000/AG_news | no disponible | no disponible | MIT | Repositorio en Hugging Face, 0 descargas |
+| BERT-base-uncased | 110 M | 512 tokens | Apache 2.0 | Ampliamente disponible en Hugging Face |
+| DistilBERT-base-uncased | 66 M | 512 tokens | Apache 2.0 | Ampliamente disponible en Hugging Face |
+| RoBERTa-base | 125 M | 512 tokens | MIT | Ampliamente disponible en Hugging Face |
 
 No se dispone de datos de rendimiento del repositorio evaluado que permitan situarlo frente a estas alternativas.
 
@@ -90,6 +90,6 @@ No se dispone de datos de rendimiento del repositorio evaluado que permitan situ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aymanbm2000/AG_news
+- Repositorio en Hugging Face: https://huggingface.co/aymanbm2000/AG_news
 - Resultados de busqueda web: las consultas realizadas no devolvieron informacion relevante sobre este repositorio. Los unicos resultados obtenidos fueron enlaces genericos a YouTube (https://www.youtube.com/, https://www.youtube.com/youtube, https://music.youtube.com/, https://www.youtube.com/feed/homepage), sin relacion con el modelo.
 - Referencia externa no confirmada: el conjunto de datos AG News fue introducido en el articulo "Character-level Convolutional Networks for Text Classification" (Zhang, Zhao y LeCun, 2015). Se desconoce si este repositorio guarda relacion con dicho conjunto de datos; la coincidencia es unicamente nominal.

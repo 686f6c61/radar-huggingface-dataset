@@ -70,7 +70,7 @@ No se dispone de datos suficientes para realizar una comparativa cuantitativa co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-IQ5_K-SPECIAL_SPLIT
+- Repositorio Hugging Face: https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-IQ5_K-SPECIAL_SPLIT
 - Repositorio oficial del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Artículo arXiv (referenciado en las etiquetas): https://arxiv.org/abs/2505.23786
 - GGUF Tool Suite (GitHub): https://github.com/Thireus/GGUF-Tool-Suite

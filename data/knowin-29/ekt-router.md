@@ -6,7 +6,7 @@ EKT-Router es un proyecto de investigación sobre enrutamiento experto-evidencia
 
 El sistema propone seleccionar conjuntamente un único experto de capacidad y, opcionalmente, conocimiento o percepción adicional, todo ello bajo un presupuesto de adquisición acotado. La arquitectura declarada combina un backbone compartido Qwen3-VL-8B con tres adaptadores LoRA independientes (General, con pretraining continuado; Spatial Reasoning; y Spatiotemporal), más un descriptor congelado Qwen3-VL-2B que alimenta un enrutador de utilidad. Un verificador de paquetes filtra las evidencias con ganancia predicha positiva tras una única ronda de adquisición.
 
-Es relevante ahora únicamente como referencia metodológica: el repositorio de HuggingFace es un marcador de posición sin pesos ni adaptadores descargables y no es un modelo Transformers cargable. No hay licencia declarada para los pesos, no se promete fecha de publicación y las cifras reportadas (61,4 en seis benchmarks de QA encarnado, 74,7 en diez benchmarks generales de VLM y +1,75 en un control evidence-null de nueve benchmarks) proceden del paper bajo protocolos separados, no de esta publicación.
+Es relevante ahora únicamente como referencia metodológica: el repositorio de Hugging Face es un marcador de posición sin pesos ni adaptadores descargables y no es un modelo Transformers cargable. No hay licencia declarada para los pesos, no se promete fecha de publicación y las cifras reportadas (61,4 en seis benchmarks de QA encarnado, 74,7 en diez benchmarks generales de VLM y +1,75 en un control evidence-null de nueve benchmarks) proceden del paper bajo protocolos separados, no de esta publicación.
 
 ## Especificaciones técnicas
 
@@ -30,7 +30,7 @@ No se dispone de información sobre el volumen de tokens de entrenamiento, la co
 ## Capacidades
 
 - Respuesta a preguntas encarnadas (embodied question answering): el sistema está diseñado para responder consultas que requieren razonamiento sobre el entorno físico a partir de entrada imagen-texto.
-- Entrada multimodal imagen-texto: el pipeline declarado en HuggingFace es image-text-to-text, heredado del backbone Qwen3-VL.
+- Entrada multimodal imagen-texto: el pipeline declarado en Hugging Face es image-text-to-text, heredado del backbone Qwen3-VL.
 - Enrutamiento experto: selección de un único experto de capacidad entre tres adaptadores LoRA (General, Spatial Reasoning, Spatiotemporal) por consulta.
 - Adquisición selectiva de evidencia: recuperación opcional de conocimiento o percepción bajo un presupuesto acotado, seguida de verificación de ganancia predicha.
 - Razonamiento espacial: uno de los adaptadores está dedicado explícitamente a razonamiento espacial.
@@ -99,7 +99,7 @@ No se dispone de comparaciones controladas frente a otros sistemas de enrutamien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Knowin-29/EKT-Router
+- Modelo en Hugging Face: https://huggingface.co/Knowin-29/EKT-Router
 - Página del proyecto: https://knowin-29.github.io/KnowinRouter.github.io/
 - Código fuente: https://github.com/Knowin-29/EKT-Router
 - Data card: https://huggingface.co/datasets/Knowin-29/EKT-Router

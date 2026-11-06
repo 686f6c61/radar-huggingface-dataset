@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BanBTP-2.0-V11-ALPHA es un modelo experimental publicado en HuggingFace por el usuario aaro765 bajo licencia BSD-3-Clause. Segun la propia model card, se trata de un modelo en fase alpha, todavia en entrenamiento y construccion, cuya arquitectura es completamente nueva respecto a la version anterior (V10). El autor indica que se entrenara sobre un dataset distinto del utilizado en BanBTP, en concreto una version de codigo abierto del mismo.
+BanBTP-2.0-V11-ALPHA es un modelo experimental publicado en Hugging Face por el usuario aaro765 bajo licencia BSD-3-Clause. Segun la propia model card, se trata de un modelo en fase alpha, todavia en entrenamiento y construccion, cuya arquitectura es completamente nueva respecto a la version anterior (V10). El autor indica que se entrenara sobre un dataset distinto del utilizado en BanBTP, en concreto una version de codigo abierto del mismo.
 
 La informacion publica disponible es muy limitada: no se especifican parametros, longitud de contexto, arquitectura concreta, idiomas soportados ni resultados de evaluacion. El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado el mismo dia (2 de noviembre de 2026), lo que confirma su caracter de publicacion inicial de un trabajo en curso.
 
@@ -74,5 +74,5 @@ No disponible. La ausencia de especificaciones tecnicas (parametros, contexto, a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aaro765/BanBTP-2.0-V11-ALPHA
+- Hugging Face: https://huggingface.co/aaro765/BanBTP-2.0-V11-ALPHA
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados al modelo.

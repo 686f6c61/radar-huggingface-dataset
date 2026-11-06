@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AST-1320/Qwen-Image-Edit-2511 | Conversion Diffusers de fine-tuning de edicion de imagen | no disponible | no disponible | Apache-2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen-Image-Edit-2511 | Modelo base de edicion de imagen | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| Phr00t/Qwen-Image-Edit-Rapid-AIO | Fine-tuning original de edicion de imagen | no disponible | no disponible | no disponible | HuggingFace |
+| AST-1320/Qwen-Image-Edit-2511 | Conversion Diffusers de fine-tuning de edicion de imagen | no disponible | no disponible | Apache-2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen-Image-Edit-2511 | Modelo base de edicion de imagen | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| Phr00t/Qwen-Image-Edit-Rapid-AIO | Fine-tuning original de edicion de imagen | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de parámetros para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento ni de parámetros para establecer una comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AST-1320/Qwen-Image-Edit-2511
+- Repositorio Hugging Face: https://huggingface.co/AST-1320/Qwen-Image-Edit-2511
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Fine-tuning original (Phr00t): https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO

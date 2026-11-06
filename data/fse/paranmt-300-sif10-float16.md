@@ -99,7 +99,7 @@ La comparacion con all-MiniLM-L6-v2 es la mas directa por orden de magnitud de p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/paranmt-300-sif10-float16
+- Modelo en Hugging Face: https://huggingface.co/fse/paranmt-300-sif10-float16
 - Modelo base: https://huggingface.co/fse/paranmt-300
 - Repositorio fse: https://github.com/oborchers/Fast_Sentence_Embeddings
 - Issues de fse (solicitudes de retirada): https://github.com/oborchers/Fast_Sentence_Embeddings/issues

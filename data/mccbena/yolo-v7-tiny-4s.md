@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MCCbena/yolo-v7-tiny-4s | ~6,2 M (YOLOv7-tiny) | Deteccion de objetos, 35 clases | GPL-3.0 | HuggingFace (repo 0,4 GB) | Checkpoint con 0 epocas completas + 150 lotes; sin evaluacion de precision |
+| MCCbena/yolo-v7-tiny-4s | ~6,2 M (YOLOv7-tiny) | Deteccion de objetos, 35 clases | GPL-3.0 | Hugging Face (repo 0,4 GB) | Checkpoint con 0 epocas completas + 150 lotes; sin evaluacion de precision |
 | YOLOv7-tiny (WongKinYiu, upstream) | ~6,2 M | Deteccion de objetos, 80 clases (COCO) | GPL-3.0 | Repositorio oficial GitHub | Modelo base preentrenado del que deriva este ajuste |
 | YOLOv5n (Ultralytics) | No disponible en la informacion proporcionada | Deteccion de objetos | Licencia de Ultralytics (no disponible en la informacion) | GitHub / Ultralytics | Alternativa ligera de otra familia; no comparada numericamente aqui |
 | YOLOv8n (Ultralytics) | No disponible en la informacion proporcionada | Deteccion de objetos | Licencia de Ultralytics (no disponible en la informacion) | GitHub / Ultralytics | Alternativa mas reciente; sin datos de benchmark en esta ficha |
@@ -90,7 +90,7 @@ No se dispone de datos de precision (mAP, velocidades) que permitan una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MCCbena/yolo-v7-tiny-4s
+- Modelo en Hugging Face: https://huggingface.co/MCCbena/yolo-v7-tiny-4s
 - Checkpoint `last.pt`: https://huggingface.co/MCCbena/yolo-v7-tiny-4s/blob/main/last.pt
 - Libreria de despliegue: https://github.com/MCCbena/yolov7-tiny-lib/tree/main/
 - Repositorio oficial YOLOv7 (WongKinYiu): https://github.com/WongKinYiu/yolov7

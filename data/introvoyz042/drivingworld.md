@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DrivingWorld es un modelo de generación de vídeo a vídeo (pipeline `video-to-video`) orientado a la construcción de un modelo del mundo (*world model*) para conducción autónoma, descrito en el artículo «DrivingWorld: Constructing World Model for Autonomous Driving via Video GPT» (arXiv:2412.19505). El repositorio analizado, `introvoyz042/DrivingWorld`, es una réplica alojada en HuggingFace por un tercero: el código de referencia se mantiene en el repositorio de GitHub de los autores (`YvanYin/DrivingWorld`), y la model card se limita a enlazar el paper y el repositorio de código, sin documentación técnica adicional.
+DrivingWorld es un modelo de generación de vídeo a vídeo (pipeline `video-to-video`) orientado a la construcción de un modelo del mundo (*world model*) para conducción autónoma, descrito en el artículo «DrivingWorld: Constructing World Model for Autonomous Driving via Video GPT» (arXiv:2412.19505). El repositorio analizado, `introvoyz042/DrivingWorld`, es una réplica alojada en Hugging Face por un tercero: el código de referencia se mantiene en el repositorio de GitHub de los autores (`YvanYin/DrivingWorld`), y la model card se limita a enlazar el paper y el repositorio de código, sin documentación técnica adicional.
 
 El modelo resuelve el problema de generar secuencias de vídeo de escenas de conducción de forma autorregresiva, lo que permite simular la evolución temporal de un entorno viario a partir de una observación inicial. Este tipo de modelos son relevantes porque permiten aumentar datos de entrenamiento para planificadores y sistemas de percepción, además de servir como entorno sintético para validación de políticas de conducción sin coste de flota real. El título del artículo indica explícitamente un enfoque «Video GPT», es decir, un transformer autorregresivo sobre tokens de vídeo, aunque los datos proporcionados no confirman detalles de tokenizador, número de parámetros ni longitud de contexto.
 
@@ -21,7 +21,7 @@ La información disponible es muy limitada: el repositorio tiene 9,2 GB de tama�
 | Licencia | MIT |
 | Formato de pesos | no disponible (el repositorio ocupa 9,2 GB, pero no se especifica si son safetensors, binarios PyTorch, GGUF u otros) |
 | Tarea declarada (pipeline) | video-to-video |
-| Autor del repositorio en HuggingFace | introvoyz042 |
+| Autor del repositorio en Hugging Face | introvoyz042 |
 | Autores del paper / código | repositorio de código en github.com/YvanYin/DrivingWorld |
 | Tamano del repositorio | 9,2 GB |
 | Descargas / likes | 0 / 0 |
@@ -72,7 +72,7 @@ No se dispone de datos verificables de parámetros, contexto, rendimiento ni lic
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DrivingWorld (introvoyz042/DrivingWorld) | no disponible | no disponible | no disponible | MIT | Réplica en HuggingFace; código en GitHub |
+| DrivingWorld (introvoyz042/DrivingWorld) | no disponible | no disponible | no disponible | MIT | Réplica en Hugging Face; código en GitHub |
 | GAIA-1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | DriveDreamer | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Vista | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -91,7 +91,7 @@ No se dispone de datos verificables de parámetros, contexto, rendimiento ni lic
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/introvoyz042/DrivingWorld
+- Repositorio en Hugging Face: https://huggingface.co/introvoyz042/DrivingWorld
 - Paper (arXiv): https://arxiv.org/abs/2412.19505
-- Paper en HuggingFace: https://huggingface.co/papers/2412.19505
+- Paper en Hugging Face: https://huggingface.co/papers/2412.19505
 - Código de referencia en GitHub: https://github.com/YvanYin/DrivingWorld

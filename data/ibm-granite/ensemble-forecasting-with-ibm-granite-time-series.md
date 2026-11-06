@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `ibm-granite/ensemble-forecasting-with-ibm-granite-time-series`, publicado por la organizacion `ibm-granite` en HuggingFace, parece corresponder a un recurso de demostracion o receta (recipe) centrado en el uso de tecnicas de prediccion por ensamblado (ensemble forecasting) sobre modelos de series temporales de la familia IBM Granite. El nombre del identificador sugiere que no se trata de un modelo base entrenado desde cero, sino de un artefacto orientado a mostrar un flujo de trabajo de forecasting combinando varios modelos o configuraciones de la familia Granite TimeSeries.
+El repositorio `ibm-granite/ensemble-forecasting-with-ibm-granite-time-series`, publicado por la organizacion `ibm-granite` en Hugging Face, parece corresponder a un recurso de demostracion o receta (recipe) centrado en el uso de tecnicas de prediccion por ensamblado (ensemble forecasting) sobre modelos de series temporales de la familia IBM Granite. El nombre del identificador sugiere que no se trata de un modelo base entrenado desde cero, sino de un artefacto orientado a mostrar un flujo de trabajo de forecasting combinando varios modelos o configuraciones de la familia Granite TimeSeries.
 
-Sin embargo, la informacion publica disponible en la ficha de HuggingFace es extremadamente limitada: no se declara pipeline, licencia, idiomas soportados, arquitectura ni tamano. El repositorio registra cero descargas y un unico "like", y fue creado y actualizado el 1 de octubre de 2026, lo que apunta a una publicacion reciente y practicamente sin adopcion documentada. Los resultados de busqueda web no aportan documentacion tecnica especifica sobre este repositorio concreto.
+Sin embargo, la informacion publica disponible en la ficha de Hugging Face es extremadamente limitada: no se declara pipeline, licencia, idiomas soportados, arquitectura ni tamano. El repositorio registra cero descargas y un unico "like", y fue creado y actualizado el 1 de octubre de 2026, lo que apunta a una publicacion reciente y practicamente sin adopcion documentada. Los resultados de busqueda web no aportan documentacion tecnica especifica sobre este repositorio concreto.
 
 Por todo ello, esta ficha refleja principalmente la ausencia de datos verificables. Se recomienda consultar directamente la pagina del repositorio y la documentacion oficial de IBM Granite TimeSeries antes de tomar cualquier decision de integracion o despliegue.
 
@@ -74,7 +74,7 @@ No disponible. No se dispone de especificaciones de este repositorio que permita
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ibm-granite/ensemble-forecasting-with-ibm-granite-time-series
-- Organizacion IBM Granite en HuggingFace: https://huggingface.co/ibm-granite
+- Repositorio en Hugging Face: https://huggingface.co/ibm-granite/ensemble-forecasting-with-ibm-granite-time-series
+- Organizacion IBM Granite en Hugging Face: https://huggingface.co/ibm-granite
 - Sitio oficial de IBM: https://www.ibm.com/
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos especificos sobre este repositorio.

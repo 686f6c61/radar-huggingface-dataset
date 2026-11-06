@@ -116,7 +116,7 @@ En la franja de modelos multimodales de pesos abiertos con capacidades de OCR, A
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TechnoBaptist/interfaze-1-lite
+- Hugging Face: https://huggingface.co/TechnoBaptist/interfaze-1-lite
 - Sitio web: https://interfaze.ai
 - Documentacion del modelo: https://interfaze.ai/docs/models/interfaze-1-lite
 - Guia de ejecucion de tareas: https://interfaze.ai/docs/run-tasks

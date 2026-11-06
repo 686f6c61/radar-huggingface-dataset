@@ -27,7 +27,7 @@ No se trata de un modelo entrenado desde cero, sino de una derivacion en dos eta
 
 La segunda etapa es la cuantizacion INT8. La receta se decodifico de forma inversa a partir del archivo oficial de Comfy-Org `qwen3vl_8b_int8_convrot.safetensors` y se reprodujo sobre los pesos abliterados. El esquema resultante cuantiza 252 proyecciones de FFN y atencion mas `embed_tokens` y `lm_head` (254 tensores en total) a INT8 `tensorwise` con rotacion convolucional (`convrot_groupsize` 256, escala por canal de forma `[out, 1]`); los 351 tensores del vision tower y todas las normas y sesgos permanecen en bf16. Cada tensor cuantizado se serializa con un campo `comfy_quant` en `uint8` que declara `{"format":"int8_tensorwise","convrot":true,"convrot_groupsize":256}`. El resultado se valido contra el archivo oficial comparando tensor a tensor: conjunto de claves identico (1258 tensores), cero discrepancias de forma y todas las configuraciones `comfy_quant` coincidentes. Ademas, se verifico la generacion de imagenes de extremo a extremo en el flujo oficial de ComfyUI.
 
-Una innovacion tecnica relevante del proceso es la gestion del layout de claves: el repack de Comfy-Org elimina el prefijo `model.language_model.`, por lo que cuantizar directamente desde el layout de HuggingFace produce claves que ComfyUI nunca encuentra (el modelo "carga" y emite ruido). Esta build esta remapeada al layout de ComfyUI. Tambien se documenta que el vision tower debe excluirse de la cuantizacion y que `int8_tensorwise` requiere `convrot=True` explicito, ya que la ruta INT8 usa `False` por defecto.
+Una innovacion tecnica relevante del proceso es la gestion del layout de claves: el repack de Comfy-Org elimina el prefijo `model.language_model.`, por lo que cuantizar directamente desde el layout de Hugging Face produce claves que ComfyUI nunca encuentra (el modelo "carga" y emite ruido). Esta build esta remapeada al layout de ComfyUI. Tambien se documenta que el vision tower debe excluirse de la cuantizacion y que `int8_tensorwise` requiere `convrot=True` explicito, ya que la ruta INT8 usa `False` por defecto.
 
 ## Capacidades
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estas varia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-int8-convrot
+- Repositorio Hugging Face: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-int8-convrot
 - Modelo base (bf16 fuente): https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic
 - Build GGUF del text encoder: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-GGUF
 - Build W4A8: https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-W4A8

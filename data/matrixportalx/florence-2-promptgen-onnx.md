@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| matrixportalx/Florence-2-PromptGen-onnx (este) | ~0,23 B (*) | No disponible | ONNX fp32 + int8 | MIT | Publico en HuggingFace, 0 descargas |
-| MiaoshouAI/Florence-2-base-PromptGen-v2.0 | ~0,23 B (*) | No disponible | PyTorch (safetensors) | MIT | Publico en HuggingFace |
-| microsoft/Florence-2-base-ft | ~0,23 B (*) | 1.024 posiciones (*) | PyTorch (safetensors) | MIT | Publico en HuggingFace |
-| microsoft/Florence-2-large-ft | ~0,77 B (*) | 1.024 posiciones (*) | PyTorch (safetensors) | MIT | Publico en HuggingFace |
+| matrixportalx/Florence-2-PromptGen-onnx (este) | ~0,23 B (*) | No disponible | ONNX fp32 + int8 | MIT | Publico en Hugging Face, 0 descargas |
+| MiaoshouAI/Florence-2-base-PromptGen-v2.0 | ~0,23 B (*) | No disponible | PyTorch (safetensors) | MIT | Publico en Hugging Face |
+| microsoft/Florence-2-base-ft | ~0,23 B (*) | 1.024 posiciones (*) | PyTorch (safetensors) | MIT | Publico en Hugging Face |
+| microsoft/Florence-2-large-ft | ~0,77 B (*) | 1.024 posiciones (*) | PyTorch (safetensors) | MIT | Publico en Hugging Face |
 
 (*) Datos de la documentacion publica de la familia Florence-2; no figuran en la model card de este repositorio. El rendimiento comparado no puede evaluarse: no hay benchmarks publicados en la informacion disponible.
 
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/matrixportalx/Florence-2-PromptGen-onnx
+- Repositorio en Hugging Face: https://huggingface.co/matrixportalx/Florence-2-PromptGen-onnx
 - Perfil del autor: https://huggingface.co/matrixportalx
 - Conversion ONNX de origen: https://huggingface.co/AbrahamPJ/florence2-promptgen-onnx
 - Modelo original del ajuste fino: https://huggingface.co/MiaoshouAI/Florence-2-base-PromptGen-v2.0

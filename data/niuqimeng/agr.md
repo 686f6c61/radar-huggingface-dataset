@@ -32,7 +32,7 @@ La característica distintiva es el módulo de memoria: durante el preprocesado,
 - Aumento por recuperación de memoria: integra información recuperada de una base de datos externa (historial de escucha, artistas comunes) directamente en el contexto de entrada.
 - Generación de explicaciones: cada recomendación va acompañada de razones basadas en las preferencias del grupo y de los miembros individuales.
 - Fine-tuning con GRPO: el entrenamiento con aprendizaje por refuerzo optimiza directamente métricas de ranking, no solo la verosimilitud del texto.
-- Compatible con el ecosistema transformers: se puede cargar con la librería estándar de HuggingFace y es compatible con endpoints de inferencia.
+- Compatible con el ecosistema transformers: se puede cargar con la librería estándar de Hugging Face y es compatible con endpoints de inferencia.
 
 ## Casos de uso
 
@@ -77,8 +77,8 @@ AGR se distingue de su modelo base por el fine-tuning especializado en recomenda
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/niuqimeng/AGR)
-- [Repositorio del modelo en HuggingFace (carpeta model)](https://huggingface.co/niuqimeng/AGR/tree/main/model)
+- [Modelo en Hugging Face](https://huggingface.co/niuqimeng/AGR)
+- [Repositorio del modelo en Hugging Face (carpeta model)](https://huggingface.co/niuqimeng/AGR/tree/main/model)
 - [Repositorio GitHub GR_niuqimeng](https://github.com/niuqimeng/GR_niuqimeng)
 - [Paper: Enhancing Group Recommendation with Memory-Augmented Reasoning (Semantic Scholar)](https://www.semanticscholar.org/paper/Enhancing-Group-Recommendation-with-Reasoning-in-Niu-Hao/137dac17d09a94ad5fdc5cbc7b836401f34d406c)
 - [Modelo base: meta-llama/Meta-Llama-3-8B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct)

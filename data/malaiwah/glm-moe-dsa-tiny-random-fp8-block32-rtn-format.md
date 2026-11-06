@@ -75,7 +75,7 @@ Ambos comparten la misma identidad de checkpoint fuente (`800be70604bef0c3adfb42
 - No sirve para producción ni para inferencia de calidad; su uso es exclusivamente como fixture de desarrollo y pruebas.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/malaiwah/glm-moe-dsa-tiny-random-fp8-block32-rtn-format
+- Modelo en Hugging Face: https://huggingface.co/malaiwah/glm-moe-dsa-tiny-random-fp8-block32-rtn-format
 - Modelo base de referencia: https://huggingface.co/malaiwah/glm-moe-dsa-tiny-random-bf16
 - Dataset de raíz de fidelidad: https://huggingface.co/datasets/malaiwah/glm-moe-dsa-tiny-fidelity-root-v1
 - Paquete de evidencia de almacenamiento: https://huggingface.co/datasets/malaiwah/qfs-existing-tiny-cpu-format-v1/tree/2b5c947281a92d1f104ee17fdcc44a0104768a45

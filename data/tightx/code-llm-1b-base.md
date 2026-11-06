@@ -75,9 +75,9 @@ El pase de SFT aporta +14 en la columna de prosa y +30 en la de solo firma, prin
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `code-llm-1b-base` | 1,10B | 1024 | MIT | HuggingFace, pesos safetensors | Entrenado desde cero, no `transformers`, solo completado |
-| `code-llm-1b` SFT (mismo autor) | 1,10B | 1024 | MIT | HuggingFace | Variante con instrucciones sobre los mismos pesos |
-| Release previa 435M (mismo autor) | 435M | no disponible | no disponible | HuggingFace | Origen del tokenizador reutilizado |
+| `code-llm-1b-base` | 1,10B | 1024 | MIT | Hugging Face, pesos safetensors | Entrenado desde cero, no `transformers`, solo completado |
+| `code-llm-1b` SFT (mismo autor) | 1,10B | 1024 | MIT | Hugging Face | Variante con instrucciones sobre los mismos pesos |
+| Release previa 435M (mismo autor) | 435M | no disponible | no disponible | Hugging Face | Origen del tokenizador reutilizado |
 
 No se dispone en la información proporcionada de comparaciones con modelos de código de terceros de tamaño similar (por ejemplo, variantes pequeñas de familias establecidas); por tanto, esa comparación figura como no disponible.
 
@@ -98,7 +98,7 @@ No se dispone en la información proporcionada de comparaciones con modelos de c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TightX/code-llm-1b-base
+- Modelo en Hugging Face: https://huggingface.co/TightX/code-llm-1b-base
 - Repositorio de entrenamiento, diseño, ablaciones y registro de fallos: https://github.com/TightXu/Simple_Code_LLM
 - Variante SFT: https://huggingface.co/TightX/code-llm-1b-sft (referenciada como `../sft` en la model card)
 - Hash de verificación: `6b89f4eebe5bb79bd3f98c5dfaae303d80661c8a3498336ae2dcbf2920184081  model.safetensors`

@@ -35,7 +35,7 @@ No se dispone de información sobre el conjunto de datos de entrenamiento, ya qu
 - Razonamiento y conocimiento general: presumiblemente similar al modelo base, pero sin datos que lo confirmen.
 - Soporte de tool calling y agentes: no documentado; dependerá de las capacidades del modelo base y de los modelos fuente, pero no se especifica.
 - Capacidades multilingües: no disponibles; el tokenizador base de Qwen3.8-27B probablemente soporta varios idiomas, pero no se confirma.
-- Pipeline `image-text-to-text`: aparece en los tags de HuggingFace, pero es probablemente un error de etiquetado, ya que el modelo es de texto puro y no se menciona ninguna capacidad multimodal en la model card. Se recomienda verificar antes de asumir soporte de imágenes.
+- Pipeline `image-text-to-text`: aparece en los tags de Hugging Face, pero es probablemente un error de etiquetado, ya que el modelo es de texto puro y no se menciona ninguna capacidad multimodal en la model card. Se recomienda verificar antes de asumir soporte de imágenes.
 
 ## Casos de uso
 
@@ -64,9 +64,9 @@ No se dispone de información suficiente para realizar una comparativa objetiva.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3.8-27B | 27,8B | no disponible | no disponible | HuggingFace |
-| Este merge | 27,8B | no disponible | no disponible | HuggingFace |
-| kai-os/Carnice-V3 | no disponible | no disponible | no disponible | HuggingFace |
+| Qwen/Qwen3.8-27B | 27,8B | no disponible | no disponible | Hugging Face |
+| Este merge | 27,8B | no disponible | no disponible | Hugging Face |
+| kai-os/Carnice-V3 | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se dispone de información suficiente para realizar una comparativa objetiva.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YFC-112358/Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5c
+- Modelo en Hugging Face: https://huggingface.co/YFC-112358/Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5c
 - Página en LLM Explorer: https://llm-explorer.com/model/YFC-112358%2FQwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5,1FqBL4CvOLoWeZywHvv6b3
 - Despliegue en FriendliAI: https://friendli.ai/models/YFC-112358/Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5
 - Referencia del modelo base Qwen3.8-27B en vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

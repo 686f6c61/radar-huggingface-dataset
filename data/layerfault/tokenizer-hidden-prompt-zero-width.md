@@ -69,8 +69,8 @@ No disponible. Este artefacto no es comparable con modelos de lenguaje como Llam
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LayerFault/tokenizer-hidden-prompt-zero-width
-- Documentación de tokenizers de HuggingFace (referencia técnica): https://huggingface.co/docs/transformers/main_classes/tokenizer
+- Repositorio Hugging Face: https://huggingface.co/LayerFault/tokenizer-hidden-prompt-zero-width
+- Documentación de tokenizers de Hugging Face (referencia técnica): https://huggingface.co/docs/transformers/main_classes/tokenizer
 - Investigación sobre tokenizer tampering (HiddenLayer): https://www.hiddenlayer.com/research/tokenizer-tampering
 - Investigación sobre tokenization attacks en LLMs (HiddenLayer): https://www.hiddenlayer.com/research/tokenization-attacks-on-llms-how-adversaries-exploit-ai-language-processing
 - Guía técnica sobre CVE-2026-3304 y ocultación de caracteres en prompts: https://www.zinruss.com/prevent-llm-prompt-injection-hidden-character-obfuscation/

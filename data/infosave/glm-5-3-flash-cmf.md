@@ -82,8 +82,8 @@ No se dispone de datos suficientes para comparar con otros modelos MoE como Deep
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/infosave/GLM-5.3-Flash-cmf
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-5.3-Flash
+- Repositorio Hugging Face: https://huggingface.co/infosave/GLM-5.3-Flash-cmf
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Ficha del modelo en LM Studio: https://lmstudio.ai/models/glm-5.3-flash
 - Ficha en Parasail: https://www.parasail.io/models/glm-53-flash
 - Documentacion de API en DeepInfra: https://deepinfra.com/zai-org/GLM-5.3-Flash/api

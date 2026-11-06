@@ -30,10 +30,10 @@ Los datos de entrenamiento, el proceso de entrenamiento (si hubo RLHF, DPO u otr
 ## Capacidades
 
 - Generacion de imagenes a partir de prompts de texto.
-- Edicion de imagenes (image-to-image), segun el pipeline declarado en HuggingFace (`diffusers:Flux2KleinPipeline`).
+- Edicion de imagenes (image-to-image), segun el pipeline declarado en Hugging Face (`diffusers:Flux2KleinPipeline`).
 - Inferencia rapida: el modelo esta disenado para generar resultados en menos de un segundo en hardware adecuado.
 - Soporte para multiples formatos de cuantizacion en el upstream (`fp8`, `nvfp4`), aunque este mirror no los incluye explicitamente.
-- Integracion con la libreria `diffusers` de HuggingFace.
+- Integracion con la libreria `diffusers` de Hugging Face.
 - Capacidades multilingues no especificadas.
 
 ## Casos de uso
@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para comparar directamente con otros mod
 
 ## Enlaces
 
-- Repositorio HuggingFace del mirror: https://huggingface.co/beenga8/flux-2-klein-base-4b-mirror
-- Repositorio original en HuggingFace: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
+- Repositorio Hugging Face del mirror: https://huggingface.co/beenga8/flux-2-klein-base-4b-mirror
+- Repositorio original en Hugging Face: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Repositorio oficial de inferencia de FLUX.2 en GitHub: https://github.com/black-forest-labs/flux2
 - Proyecto Beenga Image (referenciado en la model card): https://github.com/Beenga/beenga-image

@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento para comparar. El checkpoint de AgentPTB e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h026.rl_v5.step_30
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h026.rl_v5.step_30
 - Indice de checkpoints (mencionado en la model card): `agentic-ptb/INDEX` (no se ha verificado su existencia publica)
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

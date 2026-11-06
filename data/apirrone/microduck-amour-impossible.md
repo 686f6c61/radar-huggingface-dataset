@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `apirrone/microduck-amour-impossible` | Política RL para microduck (ONNX) | no disponible | no aplica (obs. 61-D a 50 Hz) | sin benchmarks publicados | no disponible | público en HuggingFace, 0 descargas |
-| `pollen-robotics/microduck-got-a-talent-reference` | Política RL de referencia para microduck | no disponible | no aplica | sin datos en la información disponible | no disponible | público en HuggingFace |
-| `pollen-robotics/microduck-emotions` | Modelo de emociones para microduck | no disponible | no aplica | sin datos en la información disponible | no disponible | público en HuggingFace |
+| `apirrone/microduck-amour-impossible` | Política RL para microduck (ONNX) | no disponible | no aplica (obs. 61-D a 50 Hz) | sin benchmarks publicados | no disponible | público en Hugging Face, 0 descargas |
+| `pollen-robotics/microduck-got-a-talent-reference` | Política RL de referencia para microduck | no disponible | no aplica | sin datos en la información disponible | no disponible | público en Hugging Face |
+| `pollen-robotics/microduck-emotions` | Modelo de emociones para microduck | no disponible | no aplica | sin datos en la información disponible | no disponible | público en Hugging Face |
 | Políticas RL de locomoción para cuadrúpedos bípedos de otros fabricantes | Política RL | no disponible | no aplica | no disponible | no disponible | no disponible en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/apirrone/microduck-amour-impossible
+- Modelo en Hugging Face: https://huggingface.co/apirrone/microduck-amour-impossible
 - Modelo base: https://huggingface.co/pollen-robotics/microduck-got-a-talent-reference
 - Modelo de emociones referenciado: https://huggingface.co/pollen-robotics/microduck-emotions
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck

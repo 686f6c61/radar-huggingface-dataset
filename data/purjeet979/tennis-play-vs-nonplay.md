@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Purjeet979/tennis-play-vs-nonplay es un repositorio publicado en HuggingFace por el usuario Purjeet979. Por el nombre del repositorio, todo apunta a un modelo de clasificacion binaria orientado a distinguir entre situaciones de "play" y "non-play" en el contexto del tenis, presumiblemente a partir de imagenes o fotogramas de video, aunque esta interpretacion es una inferencia derivada del nombre y no un dato confirmado por los metadatos disponibles.
+Purjeet979/tennis-play-vs-nonplay es un repositorio publicado en Hugging Face por el usuario Purjeet979. Por el nombre del repositorio, todo apunta a un modelo de clasificacion binaria orientado a distinguir entre situaciones de "play" y "non-play" en el contexto del tenis, presumiblemente a partir de imagenes o fotogramas de video, aunque esta interpretacion es una inferencia derivada del nombre y no un dato confirmado por los metadatos disponibles.
 
-La ficha de HuggingFace no proporciona informacion sobre la arquitectura, el pipeline asociado, los idiomas soportados ni la licencia. El repositorio tiene un tamano de 0.0 GB declarado, lo que sugiere que no contiene pesos de modelo descargables en el momento de la consulta, y registra 0 descargas y 1 like. La unica etiqueta presente es `region:us`. El repositorio fue creado el 10 de septiembre de 2026 y actualizado el mismo dia, con una diferencia de menos de cinco minutos entre ambos eventos.
+La ficha de Hugging Face no proporciona informacion sobre la arquitectura, el pipeline asociado, los idiomas soportados ni la licencia. El repositorio tiene un tamano de 0.0 GB declarado, lo que sugiere que no contiene pesos de modelo descargables en el momento de la consulta, y registra 0 descargas y 1 like. La unica etiqueta presente es `region:us`. El repositorio fue creado el 10 de septiembre de 2026 y actualizado el mismo dia, con una diferencia de menos de cinco minutos entre ambos eventos.
 
 Por tanto, se trata de un artefacto practicamente sin documentacion publica, sin metricas declaradas y sin evidencia de uso por parte de la comunidad. Esta ficha recoge exclusivamente lo que puede verificarse a partir de los metadatos y marca explicitamente como "no disponible" todo aquello que no puede confirmarse. Cualquier evaluacion tecnica seria del modelo requeriria acceder a sus pesos y a su configuracion, que no estan accesibles en el repositorio.
 
@@ -23,7 +23,7 @@ Por tanto, se trata de un artefacto practicamente sin documentacion publica, sin
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. Los metadatos de HuggingFace no incluyen el campo `pipeline`, no declaran ninguna libreria asociada (por ejemplo `transformers`, `timm` o `fastai`) y no detallan la familia arquitectonica. Tampoco hay informacion sobre el numero de parametros ni sobre la resolucion o el formato de entrada esperado.
+No se ha publicado informacion sobre la arquitectura del modelo. Los metadatos de Hugging Face no incluyen el campo `pipeline`, no declaran ninguna libreria asociada (por ejemplo `transformers`, `timm` o `fastai`) y no detallan la familia arquitectonica. Tampoco hay informacion sobre el numero de parametros ni sobre la resolucion o el formato de entrada esperado.
 
 En cuanto al entrenamiento, no hay datos disponibles sobre el volumen de datos utilizado, la composicion del dataset, el numero de tokens o imagenes procesadas, ni sobre si se aplicaron tecnicas de ajuste como RLHF, DPO o fine-tuning supervisado. Dado el nombre del repositorio, es plausible que se trate de un clasificador entrenado sobre un conjunto de datos propio de imagenes de tenis, pero no existe confirmacion documental de ello.
 
@@ -79,5 +79,5 @@ No disponible. No hay informacion suficiente sobre el modelo (arquitectura, para
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Purjeet979/tennis-play-vs-nonplay
+- Hugging Face: https://huggingface.co/Purjeet979/tennis-play-vs-nonplay
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados obtenidos corresponden a paginas de soporte de Microsoft y no guardan relacion con este repositorio.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `graysonggg/dlgpr` corresponde a la implementación oficial de **DialogueVPR**, un sistema presentado en CVPR 2026 que aborda el reconocimiento visual de lugares (Visual Place Recognition, VPR) desde un enfoque conversacional. En lugar de la recuperación estática de una sola pasada, DialogueVPR plantea un proceso dinámico e interactivo de razonamiento: un módulo de recuperación multimodal (CMPL) refina iterativamente la búsqueda, mientras que un agente de diálogo (DQ-pilot) genera preguntas discriminativas para resolver la ambigüedad en descripciones del mundo real. El modelo está desarrollado por el autor `graysonggg` y se distribuye bajo licencia Apache-2.0. La información pública disponible es limitada: no se especifican arquitectura, número de parámetros ni otros detalles técnicos en la ficha de HuggingFace, aunque el repositorio GitHub y el artículo arXiv proporcionan la base conceptual.
+El modelo `graysonggg/dlgpr` corresponde a la implementación oficial de **DialogueVPR**, un sistema presentado en CVPR 2026 que aborda el reconocimiento visual de lugares (Visual Place Recognition, VPR) desde un enfoque conversacional. En lugar de la recuperación estática de una sola pasada, DialogueVPR plantea un proceso dinámico e interactivo de razonamiento: un módulo de recuperación multimodal (CMPL) refina iterativamente la búsqueda, mientras que un agente de diálogo (DQ-pilot) genera preguntas discriminativas para resolver la ambigüedad en descripciones del mundo real. El modelo está desarrollado por el autor `graysonggg` y se distribuye bajo licencia Apache-2.0. La información pública disponible es limitada: no se especifican arquitectura, número de parámetros ni otros detalles técnicos en la ficha de Hugging Face, aunque el repositorio GitHub y el artículo arXiv proporcionan la base conceptual.
 
 ## Especificaciones tecnicas
 
@@ -63,5 +63,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 - Repositorio GitHub: https://github.com/Graysonggg/DlgPR
 - Artículo arXiv (HTML): https://arxiv.org/html/2607.14115v1
 - Artículo arXiv (resumen): https://arxiv.org/abs/2607.14115
-- Página del modelo en HuggingFace: https://huggingface.co/graysonggg/dlgpr
-- Perfil del autor en HuggingFace: https://huggingface.co/graysonggg
+- Página del modelo en Hugging Face: https://huggingface.co/graysonggg/dlgpr
+- Perfil del autor en Hugging Face: https://huggingface.co/graysonggg

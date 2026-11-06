@@ -58,5 +58,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jankowskipawel/model_627174799_beit_giant
+- Hugging Face: https://huggingface.co/jankowskipawel/model_627174799_beit_giant
 - GitHub del autor: https://github.com/jankowskipawel

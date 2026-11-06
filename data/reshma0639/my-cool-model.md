@@ -71,7 +71,7 @@ No se dispone de información sobre modelos directamente comparables en la model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/reshma0639/my-cool-model
+- Repositorio Hugging Face: https://huggingface.co/reshma0639/my-cool-model
 - Página del proyecto: https://rucmm.github.io/MoSketch
 - Paper en arXiv: https://arxiv.org/abs/2503.19351
 - Código en GitHub: https://github.com/jyliu-98/MoSketch

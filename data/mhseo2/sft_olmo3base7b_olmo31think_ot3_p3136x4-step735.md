@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sft_olmo3base7b_olmo31think_ot3_p3136x4-step735` es un ajuste fino supervisado (SFT) del modelo base Olmo-3-1025-7B, desarrollado por el usuario `mhseo2` y publicado en HuggingFace bajo licencia Apache 2.0. El objetivo es destilar trazas de razonamiento matemático del modelo `allenai/Olmo-3.1-32B-Think` (un modelo mucho mayor) sobre el modelo base de 7B, usando como fuente de prompts el conjunto OpenThoughts3. Se trata, por tanto, de un experimento de destilación de razonamiento en el dominio de las matemáticas competitivas.
+`sft_olmo3base7b_olmo31think_ot3_p3136x4-step735` es un ajuste fino supervisado (SFT) del modelo base Olmo-3-1025-7B, desarrollado por el usuario `mhseo2` y publicado en Hugging Face bajo licencia Apache 2.0. El objetivo es destilar trazas de razonamiento matemático del modelo `allenai/Olmo-3.1-32B-Think` (un modelo mucho mayor) sobre el modelo base de 7B, usando como fuente de prompts el conjunto OpenThoughts3. Se trata, por tanto, de un experimento de destilación de razonamiento en el dominio de las matemáticas competitivas.
 
 El checkpoint publicado corresponde al paso 735 de entrenamiento, que equivale a la época 15 de 15 (49 pasos por época). El modelo tiene 7.298.011.136 parámetros (aproximadamente 7,3B) en formato safetensors, con un repositorio de 14,6 GB, lo que corresponde a pesos en precisión completa (probablemente bfloat16 o float16). La arquitectura subyacente es la del transformer denso de Olmo 3, aunque la model card no detalla sus especificaciones internas.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en 
 
 | Modelo | Parámetros | Contexto | AIME 2025 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sft_olmo3base7b_olmo31think_ot3_p3136x4-step735 | 7,3B | 32.768 (entrenamiento) | 40,83 | Apache 2.0 | HuggingFace |
-| Olmo-3-1025-7B (base) | ~7B | No disponible | No disponible | Apache 2.0 (presumible) | HuggingFace |
-| Olmo-3.1-32B-Think (profesor) | 32B | No disponible | No disponible en la información | No disponible | HuggingFace |
+| sft_olmo3base7b_olmo31think_ot3_p3136x4-step735 | 7,3B | 32.768 (entrenamiento) | 40,83 | Apache 2.0 | Hugging Face |
+| Olmo-3-1025-7B (base) | ~7B | No disponible | No disponible | Apache 2.0 (presumible) | Hugging Face |
+| Olmo-3.1-32B-Think (profesor) | 32B | No disponible | No disponible en la información | No disponible | Hugging Face |
 | Alternativas de 7B con razonamiento matemático | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa se limita al resultado del modelo evaluado.
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p3136x4-step735
+- Hugging Face: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p3136x4-step735
 - Modelo base: https://huggingface.co/mhseo2/Olmo-3-1025-7B-opd
 - Modelo profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Dataset OpenThoughts3: no disponible en la información proporcionada

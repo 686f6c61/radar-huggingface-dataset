@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bimabk/dev-C1 es un modelo de lenguaje publicado en HuggingFace por el usuario bimabk el 19 de septiembre de 2026. Se trata de un checkpoint de aproximadamente 1.720 millones de parametros (1,72 B) almacenado en formato safetensors, con un tamano de repositorio de 3,5 GB, lo que es coherente con pesos en precision de 16 bits. El repositorio no incluye informacion sobre licencia, idiomas soportados, pipeline de tarea ni documentacion tecnica asociada.
+bimabk/dev-C1 es un modelo de lenguaje publicado en Hugging Face por el usuario bimabk el 19 de septiembre de 2026. Se trata de un checkpoint de aproximadamente 1.720 millones de parametros (1,72 B) almacenado en formato safetensors, con un tamano de repositorio de 3,5 GB, lo que es coherente con pesos en precision de 16 bits. El repositorio no incluye informacion sobre licencia, idiomas soportados, pipeline de tarea ni documentacion tecnica asociada.
 
 La unica pista sobre su arquitectura es la etiqueta "qwen3" incluida en los tags del repositorio, que sugiere que el modelo deriva de la familia Qwen3, probablemente mediante fine-tuning o continuacion del entrenamiento sobre una base de ese linaje. No obstante, no se ha publicado ninguna confirmacion explicita de esta relacion, ni detalles sobre el proceso de entrenamiento, los datos utilizados o las capacidades resultantes.
 
@@ -23,7 +23,7 @@ El modelo tiene una relevancia practica limitada en su estado actual: acumula 12
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna del modelo. El unico dato disponible es la etiqueta "qwen3" en el repositorio de HuggingFace, que apunta a una posible base de la familia Qwen3 (transformer decoder-only con atencion por grupos de consultas), pero no hay documentacion que confirme la estructura exacta, el numero de capas, las dimensiones ocultas, el tipo de normalizacion ni la estrategia de atencion empleada. Tampoco se indica si se trata de un modelo denso o de una mezcla de expertos; dado el recuento de parametros, un modelo denso de ~1,7 B es la hipotesis mas plausible.
+No se ha publicado informacion sobre la arquitectura interna del modelo. El unico dato disponible es la etiqueta "qwen3" en el repositorio de Hugging Face, que apunta a una posible base de la familia Qwen3 (transformer decoder-only con atencion por grupos de consultas), pero no hay documentacion que confirme la estructura exacta, el numero de capas, las dimensiones ocultas, el tipo de normalizacion ni la estrategia de atencion empleada. Tampoco se indica si se trata de un modelo denso o de una mezcla de expertos; dado el recuento de parametros, un modelo denso de ~1,7 B es la hipotesis mas plausible.
 
 Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composicion del dataset, la posible aplicacion de ajuste supervisado, RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card no aporta ninguna seccion descriptiva. Cualquier afirmacion sobre el proceso de entrenamiento seria especulativa.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| bimabk/dev-C1 | 1,72 B | no disponible | no disponible | HuggingFace (12 descargas) | no disponible |
-| Qwen3-1.7B | 1,7 B (aprox.) | segun model card oficial | Apache 2.0 (segun publicacion oficial) | HuggingFace, ampliamente distribuido | benchmarks publicados por el autor |
-| Llama 3.2 1B | 1,24 B | 128 K (segun publicacion oficial) | licencia comunitaria Llama | HuggingFace, ampliamente distribuido | benchmarks publicados por el autor |
-| Gemma 3 1B | 1 B (aprox.) | segun model card oficial | licencia Gemma | HuggingFace, ampliamente distribuido | benchmarks publicados por el autor |
+| bimabk/dev-C1 | 1,72 B | no disponible | no disponible | Hugging Face (12 descargas) | no disponible |
+| Qwen3-1.7B | 1,7 B (aprox.) | segun model card oficial | Apache 2.0 (segun publicacion oficial) | Hugging Face, ampliamente distribuido | benchmarks publicados por el autor |
+| Llama 3.2 1B | 1,24 B | 128 K (segun publicacion oficial) | licencia comunitaria Llama | Hugging Face, ampliamente distribuido | benchmarks publicados por el autor |
+| Gemma 3 1B | 1 B (aprox.) | segun model card oficial | licencia Gemma | Hugging Face, ampliamente distribuido | benchmarks publicados por el autor |
 
 La comparacion es limitada: al no existir licencia, idiomas ni benchmarks publicados para dev-C1, no es posible establecer una equivalencia funcional con estas alternativas. Los datos de los modelos comparados corresponden a sus publicaciones oficiales y deben verificarse en sus respectivas model cards.
 
@@ -86,6 +86,6 @@ La comparacion es limitada: al no existir licencia, idiomas ni benchmarks public
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bimabk/dev-C1
+- Repositorio en Hugging Face: https://huggingface.co/bimabk/dev-C1
 - La busqueda web realizada no devolvio ningun enlace relevante sobre el modelo: los resultados obtenidos corresponden a directorios de electricistas en Madrid y no guardan relacion con bimabk/dev-C1.
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la informacion disponible.

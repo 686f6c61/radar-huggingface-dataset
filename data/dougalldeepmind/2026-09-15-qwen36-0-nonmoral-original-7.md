@@ -85,7 +85,7 @@ No disponible. La información proporcionada no identifica adaptadores comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dougalldeepmind/2026-09-15-qwen36-0-nonmoral-original-7
+- Modelo en Hugging Face: https://huggingface.co/dougalldeepmind/2026-09-15-qwen36-0-nonmoral-original-7
 - Dataset de mezcla de entrenamiento: https://huggingface.co/datasets/dougalldeepmind/2026-09-15-nonmoral-original-7-mix
 - Repositorio del pipeline de replicación: https://github.com/Matthew-Bozoukov/teaching_claude_why_replication.git (commit `ccf80a630f5f839de770eab59dabe45107094ff2`)
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.6-27B (revisión `6a9e13bd6fc8f0983b9b99948120bc37f49c13e9`)

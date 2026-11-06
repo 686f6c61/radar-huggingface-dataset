@@ -69,6 +69,6 @@ No se dispone de información suficiente para realizar una comparativa objetiva 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/usermma/Qwen3.8-Queen-27B-mlx-fp16
+- Modelo en Hugging Face: https://huggingface.co/usermma/Qwen3.8-Queen-27B-mlx-fp16
 - Modelo base (fine-tune): https://huggingface.co/aifeifei798/Qwen3.8-Queen-27B
 - Librería `mlx-lm`: https://github.com/ml-explore/mlx-lm

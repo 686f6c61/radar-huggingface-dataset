@@ -47,5 +47,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 - No se especifica la longitud de contexto máxima, aunque roberta-base soporta 512 tokens; si se supera, el texto se truncará.
 
 ## Enlaces
-- [HuggingFace - ajrayman/Achievement_Striving_continuous](https://huggingface.co/ajrayman/Achievement_Striving_continuous)
+- [Hugging Face - ajrayman/Achievement_Striving_continuous](https://huggingface.co/ajrayman/Achievement_Striving_continuous)
 - [Modelo base: FacebookAI/roberta-base](https://huggingface.co/FacebookAI/roberta-base)

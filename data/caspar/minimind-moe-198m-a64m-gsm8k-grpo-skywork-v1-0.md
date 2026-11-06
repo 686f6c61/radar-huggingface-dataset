@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMind-MoE-198M-A64M-GSM8K-GRPO-Skywork-v1.0 es un modelo de lenguaje experimental de tamaño muy pequeño desarrollado por el usuario caspar en HuggingFace. Se trata de un afinamiento mediante GRPO (Group Relative Policy Optimization, un algoritmo de aprendizaje por refuerzo tipo RLHF) de un modelo base MoE previamente entrenado con SFT mixto. El objetivo del experimento es comparar el efecto de una recompensa basada en un modelo de recompensa neuronal (Skywork-Reward-V2-Qwen3-1.7B) frente a una recompensa basada en reglas estrictas sobre la tarea de matemáticas GSM8K.
+MiniMind-MoE-198M-A64M-GSM8K-GRPO-Skywork-v1.0 es un modelo de lenguaje experimental de tamaño muy pequeño desarrollado por el usuario caspar en Hugging Face. Se trata de un afinamiento mediante GRPO (Group Relative Policy Optimization, un algoritmo de aprendizaje por refuerzo tipo RLHF) de un modelo base MoE previamente entrenado con SFT mixto. El objetivo del experimento es comparar el efecto de una recompensa basada en un modelo de recompensa neuronal (Skywork-Reward-V2-Qwen3-1.7B) frente a una recompensa basada en reglas estrictas sobre la tarea de matemáticas GSM8K.
 
 El modelo pertenece a la familia MiniMind, una iniciativa open source para entrenar LLM miniatura desde cero. Con 198 millones de parámetros totales (de los cuales aproximadamente 64 millones están activos por token, según la convención de nomenclatura A64M), es un modelo de juguete orientado a investigación educativa y reproducibilidad, no a producción. El propio autor advierte explícitamente que no es un solucionador aritmético fiable: la precisión en GSM8K pasó del 1,21 % al 2,43 % tras el entrenamiento, cifras muy bajas que delimitan claramente su alcance.
 
@@ -40,7 +40,7 @@ El entrenamiento uso las 6.851 conversaciones del split de entrenamiento de GSM8
 - Ensenanza de MoE y post-training: con menos de 200 millones de parametros y 0,8 GB en FP32, es adecuado para practicas academicas sobre mixture-of-experts, SFT y RL en GPUs de consumo.
 - Comparacion de funciones de recompensa: permite replicar el experimento de recompensa neuronal (logit crudo de Skywork-Reward-V2) frente a recompensa por reglas y analizar por que la recompensa por modelo puede degradar la precision frente al formato.
 - Prototipado de pipelines de evaluacion GSM8K: el repositorio incluye scripts y resultados completos (`evaluation_after.json`) utiles como referencia para montar evaluadores estrictos con formato `#### numero`.
-- Pruebas de carga de modelos con custom code: sirve como caso real para validar flujos con `trust_remote_code=True` y revisiones fijadas (`v1.0`) en HuggingFace.
+- Pruebas de carga de modelos con custom code: sirve como caso real para validar flujos con `trust_remote_code=True` y revisiones fijadas (`v1.0`) en Hugging Face.
 - Experimentos de destilacion o inicializacion: puede usarse como punto de partida barato para nuevos afinamientos, aunque con expectativas de calidad muy limitadas.
 
 ## Benchmarks y rendimiento
@@ -83,7 +83,7 @@ Frente a alternativas densas de tamano similar (SmolLM2-135M) o el doble (Qwen2.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caspar/MiniMind-MoE-198M-A64M-GSM8K-GRPO-Skywork-v1.0
+- Modelo en Hugging Face: https://huggingface.co/caspar/MiniMind-MoE-198M-A64M-GSM8K-GRPO-Skywork-v1.0
 - Modelo base (SFT): https://huggingface.co/caspar/MiniMind-MoE-198M-A64M-Mixed-SFT-v1.0
 - Dataset de entrenamiento: https://huggingface.co/datasets/caspar/MiniMind-Mixed-SFT-Training-v1.0
 - Codigo MiniMind (GitHub): https://github.com/jingyaogong/minimind

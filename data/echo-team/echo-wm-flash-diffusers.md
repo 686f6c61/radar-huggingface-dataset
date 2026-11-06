@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Echo-Team/Echo-WM-Flash-Diffusers
+- Repositorio Hugging Face: https://huggingface.co/Echo-Team/Echo-WM-Flash-Diffusers
 - Checkpoint original: https://huggingface.co/Echo-Team/Echo-WM
 - Página del proyecto: https://echo-team-joy-future-academy-jd.github.io/Echo-1.5-Page/wm/
 - Código fuente (GitHub): https://github.com/jd-opensource/JoyAI-Echo/tree/main/echo_wm

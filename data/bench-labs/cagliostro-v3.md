@@ -121,7 +121,7 @@ Lectura de la comparativa: frente a SmolLM2-135M, cagliostro-v3 pierde 0,58 punt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bench-labs/cagliostro-v3
+- Modelo en Hugging Face: https://huggingface.co/bench-labs/cagliostro-v3
 - Open SLM Leaderboard (metrica del indice): https://huggingface.co/spaces/AxiomicLabs/Open_SLM_Leaderboard
 - Dataset HuggingFaceTB/smollm-corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - Dataset mlfoundations/dclm-baseline-1.0: https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0

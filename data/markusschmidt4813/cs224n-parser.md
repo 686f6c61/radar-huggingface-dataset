@@ -64,7 +64,7 @@ No disponible. No existen modelos comparables en este repositorio, ya que no se 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/markusschmidt4813/cs224n-parser
+- Repositorio de Hugging Face: https://huggingface.co/markusschmidt4813/cs224n-parser
 - Curso CS224N de Stanford (pagina oficial): https://web.stanford.edu/class/cs224n/
 - Archivo de referencia CS224N-2023-solution (parser_model.py): https://github.com/yiming-wange/cs224n-2023-solution/blob/main/a3/parser_model.py
 - Repositorio de soluciones CS224N (kandluis/cs224n): https://github.com/kandluis/cs224n/blob/master/a3/parser_model.py

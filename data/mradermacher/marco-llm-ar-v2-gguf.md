@@ -23,7 +23,7 @@ La cuantización está realizada por mradermacher, quien proporciona tanto quant
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna (tipo de atencion, normalizacion, etc.) ni sobre el proceso de entrenamiento (numero de tokens, composicion del dataset, tecnicas de alineacion como RLHF o DPO) en la informacion proporcionada. El modelo original es obra de AIDC-AI, y el repositorio de HuggingFace solo indica que es un modelo preentrenado para arabe con licencia Apache 2.0.
+No se dispone de informacion detallada sobre la arquitectura interna (tipo de atencion, normalizacion, etc.) ni sobre el proceso de entrenamiento (numero de tokens, composicion del dataset, tecnicas de alineacion como RLHF o DPO) en la informacion proporcionada. El modelo original es obra de AIDC-AI, y el repositorio de Hugging Face solo indica que es un modelo preentrenado para arabe con licencia Apache 2.0.
 
 Por el tamano (7,6B parametros) y la ventana de contexto de 128K, se puede inferir que se trata de un transformer decoder clasico, pero no hay confirmacion oficial en los datos disponibles. Tampoco se menciona el uso de tecnicas como decodificacion especulativa, atencion lineal o arquitecturas hibridas.
 
@@ -32,8 +32,8 @@ Por el tamano (7,6B parametros) y la ventana de contexto de 128K, se puede infer
 - Generacion de texto en arabe: el modelo esta preentrenado especificamente para este idioma, por lo que su principal capacidad es producir texto coherente y contextualizado en arabe moderno estandar y posiblemente dialectos.
 - Conversacion multi-turno: segun los tags del repositorio, el modelo es de tipo "conversational", lo que indica que puede mantener dialogos con contexto a lo largo de varias interacciones.
 - Comprension de contexto largo: gracias a su ventana de 128K tokens, puede manejar documentos extensos o historiales de conversacion prolongados sin perder informacion relevante.
-- Compatibilidad con pipelines de transformadores: al estar basado en la libreria transformers, puede integrarse en flujos de trabajo estandar de HuggingFace (inferencia, fine-tuning, etc.).
-- Soporte de endpoints compatibles: el tag "endpoints_compatible" sugiere que puede desplegarse en soluciones de inferencia como Inference Endpoints de HuggingFace.
+- Compatibilidad con pipelines de transformadores: al estar basado en la libreria transformers, puede integrarse en flujos de trabajo estandar de Hugging Face (inferencia, fine-tuning, etc.).
+- Soporte de endpoints compatibles: el tag "endpoints_compatible" sugiere que puede desplegarse en soluciones de inferencia como Inference Endpoints de Hugging Face.
 
 No se ha confirmado soporte para tool calling, function calling, razonamiento multi-paso explicito, vision o audio. Tampoco se indica capacidad multilingue mas alla del arabe.
 
@@ -75,7 +75,7 @@ No se dispone de informacion comparativa en los datos proporcionados. No se pued
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta version GGUF: https://huggingface.co/mradermacher/Marco-LLM-AR-V2-GGUF
+- Repositorio Hugging Face de esta version GGUF: https://huggingface.co/mradermacher/Marco-LLM-AR-V2-GGUF
 - Repositorio con cuantizaciones imatrix (mayor calidad): https://huggingface.co/mradermacher/Marco-LLM-AR-V2-i1-GGUF
 - Modelo original (safetensors): https://huggingface.co/ATH-MaaS/Marco-LLM-AR-V2
 - Ficha en LLM Explorer con detalles de contexto y VRAM: https://llm-explorer.com/model/AIDC-AI%2FMarco-LLM-AR-V2,4YxAm69exPGj7mSXGzOFoD

@@ -86,7 +86,7 @@ Las tres entradas comparten arquitectura y origen: la primera es una copia de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hepsan/kb-wav2vec2-svenska-q4
+- Modelo en Hugging Face: https://huggingface.co/hepsan/kb-wav2vec2-svenska-q4
 - Modelo base: https://huggingface.co/KBLab/wav2vec2-large-voxrex-swedish
 - Exportacion ONNX y cuantizacion de origen: https://huggingface.co/FredrikKarlssonSpeech/wav2vec2-large-voxrex-swedish-onnx
 - Proyecto Matte-Portalen: https://matteportalen.github.io

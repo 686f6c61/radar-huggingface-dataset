@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 - VRAM estimada: pico de VRAM de 288,41 MB según la model card.
 - GPU recomendadas: no se especifican; al ser un modelo pequeño, puede ejecutarse en cualquier GPU con al menos 0,5 GB de VRAM o incluso en CPU.
 - Compatibilidad con GPU de consumo: sí, cabe con holgura en cualquier GPU de consumo moderna.
-- Opciones de despliegue: PyTorch con HuggingFace Transformers; puede servirse con vLLM, TGI o llama.cpp si se exporta a formato GGUF, aunque no se proporciona información sobre dicha exportación.
+- Opciones de despliegue: PyTorch con Hugging Face Transformers; puede servirse con vLLM, TGI o llama.cpp si se exporta a formato GGUF, aunque no se proporciona información sobre dicha exportación.
 - Latencia y throughput: no disponibles; el tiempo de evaluación puro de 30,63 s no especifica hardware ni tamaño de lote.
 
 ## Comparativa con modelos similares
@@ -79,6 +79,6 @@ No se dispone de datos comparativos con modelos similares en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-aegis-v5-module
+- Hugging Face: https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-aegis-v5-module
 - Sitio de Hoosha AI: https://hooshaai.github.io/
 - GitHub de Hoosha AI: https://github.com/Hooshaai/hooshaai.github.io

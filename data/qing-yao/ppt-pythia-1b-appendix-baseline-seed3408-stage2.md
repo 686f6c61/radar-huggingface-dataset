@@ -6,7 +6,7 @@ El modelo `qing-yao/ppt-pythia-1b-appendix-baseline-seed3408-stage2` es un ajust
 
 Arquitectónicamente hereda la estructura GPT-NeoX del modelo base Pythia-1B, un transformer decoder-only de aproximadamente 1.011 millones de parámetros en su variante densa (no MoE). El repositorio ocupa 2,0 GB y distribuye pesos en formato safetensors, lo que es coherente con un almacenamiento en precisión de 16 bits.
 
-Su relevancia es limitada fuera del contexto experimental del que procede: no se documentan el conjunto de datos de entrenamiento, el idioma, la licencia ni resultados de evaluación, y el modelo acumula cero descargas y cero interacciones en HuggingFace en el momento de redactar esta ficha. Resulta útil, por tanto, como material de reproducibilidad o como punto de partida para experimentos propios de SFT sobre Pythia-1B, no como modelo listo para producción.
+Su relevancia es limitada fuera del contexto experimental del que procede: no se documentan el conjunto de datos de entrenamiento, el idioma, la licencia ni resultados de evaluación, y el modelo acumula cero descargas y cero interacciones en Hugging Face en el momento de redactar esta ficha. Resulta útil, por tanto, como material de reproducibilidad o como punto de partida para experimentos propios de SFT sobre Pythia-1B, no como modelo listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `qing-yao/ppt-pythia-1b-appendix-baseline-seed3408-stage2` | 1,01 B | no disponible (base: 2.048) | no disponible | HuggingFace, 0 descargas |
-| `EleutherAI/pythia-1b` (modelo base) | 1,01 B | 2.048 | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| `TinyLlama/TinyLlama-1.1B-Chat-v1.0` | 1,1 B | 2.048 | Apache 2.0 | HuggingFace, con ajuste conversacional |
-| `Qwen/Qwen2.5-1.5B` | 1,54 B | 32.768 | Apache 2.0 | HuggingFace, multilingüe |
+| `qing-yao/ppt-pythia-1b-appendix-baseline-seed3408-stage2` | 1,01 B | no disponible (base: 2.048) | no disponible | Hugging Face, 0 descargas |
+| `EleutherAI/pythia-1b` (modelo base) | 1,01 B | 2.048 | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| `TinyLlama/TinyLlama-1.1B-Chat-v1.0` | 1,1 B | 2.048 | Apache 2.0 | Hugging Face, con ajuste conversacional |
+| `Qwen/Qwen2.5-1.5B` | 1,54 B | 32.768 | Apache 2.0 | Hugging Face, multilingüe |
 
 La comparación se limita a características estructurales porque el modelo evaluado no publica métricas de rendimiento. Frente a las alternativas, destaca negativamente por la ausencia de licencia explícita, de idiomas declarados y de resultados de evaluación; frente al modelo base, la única diferencia verificable es el ajuste SFT y la plantilla conversacional del ejemplo de uso.
 
@@ -85,7 +85,7 @@ La comparación se limita a características estructurales porque el modelo eval
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-1b-appendix-baseline-seed3408-stage2
+- Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-1b-appendix-baseline-seed3408-stage2
 - Modelo base: https://huggingface.co/EleutherAI/pythia-1b
 - Repositorio TRL: https://github.com/huggingface/trl
 - Documentación de Pythia (EleutherAI): https://github.com/EleutherAI/pythia

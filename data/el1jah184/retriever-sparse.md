@@ -87,9 +87,9 @@ El modelo se inscribe en la categoría de *sparse encoders* (también llamados *
 
 | Modelo | Arquitectura | Parametros | Contexto maximo | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| el1jah184/retriever-sparse | SparseEncoder (XLMRoBERTa + SparseAutoEncoder) | 359M | 8192 | 4096 dims dispersas (1024 activas) | no disponible | HuggingFace |
-| SPLADE-v3 | BERT-base + MLM head | 110M | 512 | 30522 dims dispersas | CC-BY-SA | HuggingFace |
-| BGE-M3 (dense) | XLM-RoBERTa | 568M | 8192 | 1024 dims densas | MIT | HuggingFace |
+| el1jah184/retriever-sparse | SparseEncoder (XLMRoBERTa + SparseAutoEncoder) | 359M | 8192 | 4096 dims dispersas (1024 activas) | no disponible | Hugging Face |
+| SPLADE-v3 | BERT-base + MLM head | 110M | 512 | 30522 dims dispersas | CC-BY-SA | Hugging Face |
+| BGE-M3 (dense) | XLM-RoBERTa | 568M | 8192 | 1024 dims densas | MIT | Hugging Face |
 | SPAR (dense + lexical) | BERT-base + dense | ~110M | 512 | 768 dims densas + lexical | Apache 2.0 | GitHub |
 
 Nota: los datos de SPLADE-v3 y BGE-M3 son de conocimiento público, pero no se han verificado para esta ficha. La comparación es orientativa.
@@ -106,7 +106,7 @@ Nota: los datos de SPLADE-v3 y BGE-M3 son de conocimiento público, pero no se h
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/el1jah184/retriever-sparse)
+- [Modelo en Hugging Face](https://huggingface.co/el1jah184/retriever-sparse)
 - [Documentación de CSR Sparse Encoder en sentence-transformers](https://www.sbert.net/docs/sparse_encoder/usage/usage.html)
 - [Modelo base deepvk/USER-bge-m3](https://huggingface.co/deepvk/USER-bge-m3)
 - [Repositorio de sentence-transformers](https://github.com/huggingface/sentence-transformers)

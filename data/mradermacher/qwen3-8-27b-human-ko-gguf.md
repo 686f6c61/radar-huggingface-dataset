@@ -110,7 +110,7 @@ No se han identificado modelos comparables de otros autores con datos verificabl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Human-KO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Human-KO-GGUF
 - Modelo base declarado en la model card: https://huggingface.co/ThakiCloud/Qwen3.8-27B-Human-KO
 - Cuantizacion relacionada (Humanlike-Chat-2.0): https://huggingface.co/mradermacher/Qwen3.8-27B-Humanlike-Chat-2.0-GGUF
 - Cuantizacion relacionada (Human-KO-Enterprise-v0.2-i1): https://huggingface.co/mradermacher/Qwen3.8-27B-Human-KO-Enterprise-v0.2-i1-GGUF/tree/main

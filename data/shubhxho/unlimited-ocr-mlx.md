@@ -87,7 +87,7 @@ La comparativa se limita a características estructurales, ya que no hay datos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shubhxho/Unlimited-OCR-MLX
+- Repositorio Hugging Face: https://huggingface.co/shubhxho/Unlimited-OCR-MLX
 - Repositorio GitHub: https://github.com/shubhxho/Unlimited-OCR-mlx
 - Modelo original de Baidu: https://huggingface.co/baidu/Unlimited-OCR
 - Paper técnico (arXiv): https://arxiv.org/pdf/2606.23050

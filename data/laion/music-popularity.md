@@ -19,7 +19,7 @@ El repositorio es muy ligero (0,1 GB): los pesos de la cabeza MLP ocupan 91 MB y
 | Tipos de cuantizacion | No disponible (los pesos se distribuyen en `popularity_head.pt`; el encoder soporta float16) |
 | Idiomas soportados | No disponible (la tarea es audio-música, no texto) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | PyTorch (`.pt`); el encoder en formato HuggingFace Transformers |
+| Formato de pesos | PyTorch (`.pt`); el encoder en formato Hugging Face Transformers |
 
 ## Arquitectura y entrenamiento
 
@@ -65,7 +65,7 @@ El propio autor advierte que la estratificación por reproducciones hace que el 
 - VRAM estimada: el encoder Whisper Small en float16 ocupa aproximadamente 1 GB; la cabeza MLP es despreciable (91 MB de pesos). En total, menos de 2 GB de VRAM para inferencia.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; una A100 se usó para el entrenamiento (batch size 6), pero para inferencia es sobredimensionada.
 - Cabe en GPU de consumo: sí, en cualquier RTX 20xx/30xx/40xx, GTX 16xx con suficiente VRAM, e incluso en CPU para uso por lotes pequeños.
-- Opciones de despliegue: PyTorch nativo (script de la model card), HuggingFace Transformers para el encoder, y exportación manual de la cabeza MLP a TorchScript u ONNX. No se documenta soporte directo en vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje.
+- Opciones de despliegue: PyTorch nativo (script de la model card), Hugging Face Transformers para el encoder, y exportación manual de la cabeza MLP a TorchScript u ONNX. No se documenta soporte directo en vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje.
 - Latencia y throughput: no disponibles en la información proporcionada; por el tamaño del encoder (Whisper Small) se espera del orden de decenas de milisegundos por clip de 30 s en GPU moderna, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| laion/music-popularity | No disponible (encoder Small + MLP) | 30 s de audio | Regresión de play/upvote count | Apache 2.0 | HuggingFace |
+| laion/music-popularity | No disponible (encoder Small + MLP) | 30 s de audio | Regresión de play/upvote count | Apache 2.0 | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/music-popularity
+- Modelo en Hugging Face: https://huggingface.co/laion/music-popularity
 - Encoder: https://huggingface.co/laion/music-whisper
 - Dataset LAION-Tunes: https://huggingface.co/datasets/laion/laion-tunes
 - Código: https://github.com/LAION-AI/tunes

@@ -88,7 +88,7 @@ no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/johanamayer/dacy_small
+- Modelo en Hugging Face: https://huggingface.co/johanamayer/dacy_small
 - Repositorio DaCy: https://github.com/centre-for-humanities-computing/DaCy
 - Dataset DaNE: https://huggingface.co/datasets/alexandrainst/dane
 - UD Danish DDT: https://github.com/UniversalDependencies/UD_Danish-DDT

@@ -18,7 +18,7 @@ Su relevancia actual esta en el enfoque «system-one»: sustituir llamadas a LLM
 | Longitud de contexto | No disponible como spec oficial. En los ejemplos de llama.cpp se usa una ventana de estado de 8192 tokens (`-b 8192 -ub 8192`), con un presupuesto maximo de 4096 tokens por imagen |
 | Tipos de cuantizacion | GGUF; Q8_0 confirmado en los ejemplos de uso. El resto de cuantizaciones del repo no estan detalladas (tamano total del repo: 10,8 GB) |
 | Idiomas soportados | 17 idiomas: en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl |
-| Licencia | lfm1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | lfm1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | GGUF (para llama.cpp) |
 
 ## Arquitectura y entrenamiento
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/d1-2B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/d1-2B-GGUF
 - Modelo original (safetensors): https://huggingface.co/LiquidAI/d1-2B
 - Modelo base vision-lenguaje: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Blog de presentacion de d1: https://www.liquid.ai/blog/open-d1
@@ -100,5 +100,5 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de otros
 - Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
 - Release de llama.cpp b11960: https://github.com/ggml-org/llama.cpp/releases/tag/b11960
 - Release de llama.cpp v0.8.0: https://github.com/ggml-org/llama.cpp/releases/tag/v0.8.0
-- Perfil de Liquid AI en HuggingFace: https://huggingface.co/LiquidAI
+- Perfil de Liquid AI en Hugging Face: https://huggingface.co/LiquidAI
 - Wikipedia (Liquid AI): https://en.wikipedia.org/wiki/Liquid_AI

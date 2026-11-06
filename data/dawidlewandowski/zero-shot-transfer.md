@@ -23,7 +23,7 @@ La relevancia de esta ficha es, por tanto, metodológica y de advertencia: sirve
 
 ## Arquitectura y entrenamiento
 
-La model card no describe ninguna arquitectura: no hay referencia a transformer, MoE, SSM ni a ningún diseño híbrido aplicado a este repositorio, más allá de la etiqueta genérica `transformer` que figura en los metadatos de HuggingFace. Tampoco se indica número de tokens de entrenamiento, composición del dataset, ni si hubo ajuste por RLHF, DPO, SFT o cualquier otra etapa. La propia nota aclara que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales, y que si en el futuro se añaden resultados deberán incluir versiones de dataset, comandos, semillas, hardware y registros en bruto.
+La model card no describe ninguna arquitectura: no hay referencia a transformer, MoE, SSM ni a ningún diseño híbrido aplicado a este repositorio, más allá de la etiqueta genérica `transformer` que figura en los metadatos de Hugging Face. Tampoco se indica número de tokens de entrenamiento, composición del dataset, ni si hubo ajuste por RLHF, DPO, SFT o cualquier otra etapa. La propia nota aclara que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales, y que si en el futuro se añaden resultados deberán incluir versiones de dataset, comandos, semillas, hardware y registros en bruto.
 
 El fichero safetensors de 49.600 parámetros no viene acompañado de documentación de forma, nombres de tensores, configuración (`config.json`) ni tokenizador. No hay evidencia de que esos parámetros correspondan a capas de un modelo entrenado con un objetivo definido; sin información de topología no es posible siquiera reconstruir una función de avance. En consecuencia, no existe ninguna innovación técnica destacable que reseñar: el valor del repositorio está en el texto de la nota, no en el artefacto binario.
 
@@ -81,7 +81,7 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dawidlewandowski/zero-shot-transfer
+- Repositorio en Hugging Face: https://huggingface.co/Dawidlewandowski/zero-shot-transfer
 - Artefacto principal: `paper_notes.md` (incluido en el repositorio)
 - Documentación: `README.md` (incluido en el repositorio)
 - Las búsquedas web realizadas no devolvieron enlaces relacionados con este repositorio. Los resultados obtenidos correspondían a páginas de soporte y blogs de Microsoft (contacto, inicio de sesión, frecuencia de refresco de monitor) y no guardan relación con el modelo ni con transferencia zero-shot, por lo que no se incluyen.

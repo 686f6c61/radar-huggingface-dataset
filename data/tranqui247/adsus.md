@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tranqui247/adsus` es un modelo publicado por el usuario Trần Quí (tranqui247) en HuggingFace el 1 de agosto de 2026. Se distribuye bajo licencia AGPL-3.0 y el repositorio ocupa aproximadamente 0,3 GB, lo que sugiere un modelo de tamaño reducido, posiblemente orientado a tareas específicas o a despliegue en entornos con recursos limitados.
+El modelo `tranqui247/adsus` es un modelo publicado por el usuario Trần Quí (tranqui247) en Hugging Face el 1 de agosto de 2026. Se distribuye bajo licencia AGPL-3.0 y el repositorio ocupa aproximadamente 0,3 GB, lo que sugiere un modelo de tamaño reducido, posiblemente orientado a tareas específicas o a despliegue en entornos con recursos limitados.
 
 La model card publicada por el autor está vacía, sin documentación técnica sobre arquitectura, datos de entrenamiento o capacidades. El repositorio de GitHub asociado (`TranQui24/ADSUS`) existe, pero no se ha podido acceder a su contenido en la información proporcionada. La relevancia actual del modelo es incierta, ya que no hay métricas de adopción (cero descargas y cero likes) ni información sobre su uso en producción.
 
@@ -57,6 +57,6 @@ No disponible. No se conocen modelos comparables de la misma categoria ni datos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tranqui247/adsus
+- Hugging Face: https://huggingface.co/tranqui247/adsus
 - Perfil del autor: https://huggingface.co/tranqui247
 - GitHub: https://github.com/TranQui24/ADSUS

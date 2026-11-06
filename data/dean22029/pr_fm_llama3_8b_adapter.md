@@ -76,8 +76,8 @@ Precision de eleccion en validacion durante el entrenamiento: 0,624 en el paso 2
 
 | Modelo | Parametros | Contexto de entrenamiento | Accuracy `test_within` | AUC `test_within` | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `dean22029/pr_fm_llama3_8b_adapter` (finetuned) | Base ~8B + LoRA r=16 | 1.024 tokens | 0,654 | 0,715 | llama3.1 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| `meta-llama/Llama-3.1-8B-Instruct` zeroshot sobre los mismos prompts | ~8B | 1.024 tokens en esta evaluacion | 0,499 | 0,498 | llama3.1 | HuggingFace, acceso restringido (gated) |
+| `dean22029/pr_fm_llama3_8b_adapter` (finetuned) | Base ~8B + LoRA r=16 | 1.024 tokens | 0,654 | 0,715 | llama3.1 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| `meta-llama/Llama-3.1-8B-Instruct` zeroshot sobre los mismos prompts | ~8B | 1.024 tokens en esta evaluacion | 0,499 | 0,498 | llama3.1 | Hugging Face, acceso restringido (gated) |
 | Otros adaptadores o modelos de eleccion conjoint comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -91,12 +91,12 @@ Precision de eleccion en validacion durante el entrenamiento: 0,624 en el paso 2
 - Riesgo de fuga en comparaciones: el entrenamiento uso todos los experimentos con `experiment_year <= 2021`, de modo que un conjunto de test construido con un corte temporal inferior solapa con los datos de entrenamiento. Hay que revisar `SPLITS.md` antes de comparar cifras.
 - Reproduccion del dato bloqueada: el bundle `preference_fm` no se redistribuye y no es redistribuible. 113 de sus 127 experimentos no declaran licencia y los archivos de replicacion originales provienen de Dataverse y fuentes similares con sus propios terminos, por lo que se necesita una copia propia para reconstruir el conjunto de datos.
 - Licencia llama3.1: el uso esta sujeto a la Llama 3.1 Community License, que incluye la politica de uso aceptable, requisitos de atribucion ("Built with Llama") y condiciones especificas para despliegues a gran escala. No es una licencia permisiva tipo Apache 2.0 o MIT.
-- Modelo base restringido: `meta-llama/Llama-3.1-8B-Instruct` esta sujeto a aceptacion previa de terminos en HuggingFace y a `huggingface-cli login`.
+- Modelo base restringido: `meta-llama/Llama-3.1-8B-Instruct` esta sujeto a aceptacion previa de terminos en Hugging Face y a `huggingface-cli login`.
 - Sin validacion de la comunidad: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de replicacion independiente.
 - Sesgos: no se documenta ninguna evaluacion de sesgos sociodemograficos, a pesar de que el modelo condiciona explicitamente por caracteristicas del encuestado (pais, ano y covariables individuales).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dean22029/pr_fm_llama3_8b_adapter
+- Modelo en Hugging Face: https://huggingface.co/dean22029/pr_fm_llama3_8b_adapter
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - La busqueda web realizada no ha devuelto ningun resultado relevante para este modelo: los enlaces obtenidos correspondian a guias de programacion de television (ARD) y no guardan relacion con el contenido de esta ficha.

@@ -99,9 +99,9 @@ No se dispone de comparativas con modelos de la misma categoría porque el repos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rmonsurate/llama.cpp-victoria
+- Repositorio en Hugging Face: https://huggingface.co/rmonsurate/llama.cpp-victoria
 - Modelo Victoria (pesos GGUF asociados): https://huggingface.co/rmonsurate/Victoria
 - Repositorio GitHub de la rama con el parche: https://github.com/rmonsurate/llama.cpp (rama `qwen4exp-draft-mtp`)
 - Release con los binarios: https://github.com/rmonsurate/llama.cpp/releases/tag/victoria-mtp-b11276
-- Fichero de parche: `victoria-draft-mtp-b11276.patch`, incluido en el repositorio de HuggingFace y en la release de GitHub
+- Fichero de parche: `victoria-draft-mtp-b11276.patch`, incluido en el repositorio de Hugging Face y en la release de GitHub
 - No se han encontrado papers, blogs ni demos adicionales en los resultados de búsqueda web disponibles.

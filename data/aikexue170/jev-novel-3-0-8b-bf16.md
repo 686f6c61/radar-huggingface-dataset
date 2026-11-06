@@ -78,16 +78,16 @@ No se dispone de información sobre modelos de terceros comparables con esta tar
 
 | Modelo | Parámetros | Contexto | Macro-F1 (conjunto principal) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jev-novel-3-0.8b-bf16 (este) | 0,75 B | 512 tokens | 0,780 | Apache-2.0 | HuggingFace |
-| jev-novel-2.5-0.8b-bf16 | no disponible | no disponible | 0,730 | no disponible | HuggingFace |
-| jev-novel-2-0.8b-bf16 | no disponible | no disponible | 0,7426 | no disponible | HuggingFace |
+| jev-novel-3-0.8b-bf16 (este) | 0,75 B | 512 tokens | 0,780 | Apache-2.0 | Hugging Face |
+| jev-novel-2.5-0.8b-bf16 | no disponible | no disponible | 0,730 | no disponible | Hugging Face |
+| jev-novel-2-0.8b-bf16 | no disponible | no disponible | 0,7426 | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
 - Modelo muy especializado: solo resuelve la tarea de clasificación de calidad de frases en novelas AIGC. No genera texto ni sirve para tareas generales.
 - Idioma limitado: entrenado y evaluado únicamente en chino (zh). No hay evidencia de funcionamiento en castellano ni en otros idiomas.
 - Ventana de contexto corta: 512 tokens en total, incluido el prompt fijo, lo que restringe la longitud de las frases procesables.
-- Estructura personalizada: no puede cargarse con las utilidades estándar (`AutoModel`) de HuggingFace ni, previsiblemente, con servidores de inferencia estándar como vLLM o TGI; requiere el código propio del repositorio.
+- Estructura personalizada: no puede cargarse con las utilidades estándar (`AutoModel`) de Hugging Face ni, previsiblemente, con servidores de inferencia estándar como vLLM o TGI; requiere el código propio del repositorio.
 - Sesgos: los datos de entrenamiento provienen de una comunidad de anotación concreta y de las preferencias de un maestro de 27 B y un juez externo, de modo que el modelo hereda sus criterios estilísticos y sus posibles sesgos. No se documenta un análisis de sesgos.
 - Riesgo de falsos positivos y negativos: en el conjunto principal la precisión sobre frases "malas" es alta (0,870) pero el recall es moderado (0,668); en el conjunto completo el Macro-F1 baja a 0,580. Un 10,1% de frases normales se marcan como problemáticas.
 - Umbrales ajustados al dominio: los puntos de corte (0,080 y densidad 0,5) se fijaron sobre validación en el dominio de novelas AIGC; su aplicación a otros géneros puede degradar el rendimiento sin recalibración.
@@ -97,7 +97,7 @@ No se dispone de información sobre modelos de terceros comparables con esta tar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aikexue170/jev-novel-3-0.8b-bf16
+- Hugging Face: https://huggingface.co/aikexue170/jev-novel-3-0.8b-bf16
 - Modelo maestro de 27 B de la familia (ModelScope): https://modelscope.cn/models/alkaid55555/jev-novel-3-27b-bf16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Informe técnico dentro del repositorio: 《JEVnovel3技术报告.md》

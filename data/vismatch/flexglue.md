@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FlexGlue es un modelo de emparejamiento de características visuales (feature matching) y detección de puntos clave (keypoint detection) publicado por el usuario vismatch en HuggingFace bajo la librería `vismatch`. No se trata de un modelo de lenguaje, sino de un componente de visión por computador orientado a establecer correspondencias entre pares de imágenes, una tarea fundamental en pipelines de estructura desde el movimiento (SfM), reconstrucción 3D, odometría visual y registro de imágenes.
+FlexGlue es un modelo de emparejamiento de características visuales (feature matching) y detección de puntos clave (keypoint detection) publicado por el usuario vismatch en Hugging Face bajo la librería `vismatch`. No se trata de un modelo de lenguaje, sino de un componente de visión por computador orientado a establecer correspondencias entre pares de imágenes, una tarea fundamental en pipelines de estructura desde el movimiento (SfM), reconstrucción 3D, odometría visual y registro de imágenes.
 
 El modelo se distribuye con una licencia compuesta `mit-and-dinov3-license`, lo que indica que incorpora componentes derivados de DINOv3 (licencia propia de Meta) junto con código o pesos bajo licencia MIT. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 3 de noviembre de 2026, por lo que se trata de una publicación muy reciente y sin tracción comunitaria documentada.
 
@@ -30,7 +30,7 @@ Tampoco se documentan el volumen de datos de entrenamiento, la composición del 
 ## Capacidades
 
 - Emparejamiento de características entre pares de imágenes (image matching).
-- Detección de puntos clave (keypoint detection), según el pipeline declarado en HuggingFace.
+- Detección de puntos clave (keypoint detection), según el pipeline declarado en Hugging Face.
 - Integración con la librería `vismatch`, cuyo repositorio documenta el uso previsto.
 - No se documentan capacidades de generación de texto, razonamiento, código, matemáticas, visión generativa, tool calling, agentes ni multilingüismo.
 - No se especifican modos especiales como thinking mode, audio o vídeo.
@@ -42,7 +42,7 @@ Tampoco se documentan el volumen de datos de entrenamiento, la composición del 
 - Registro de imágenes médicas o satelitales: la detección de puntos clave y su correspondencia permiten alinear imágenes de distintas modalidades o tomadas en momentos diferentes.
 - Fotogrametría y generación de mapas: la combinación de detección y matching facilita la creación de nubes de puntos y modelos digitales del terreno a partir de conjuntos de fotografías.
 - Realidad aumentada y visión por computador en tiempo real: el matching entre la imagen de cámara y un mapa previamente construido permite el anclaje de contenido virtual.
-- Benchmarking y evaluación de pipelines de matching: al estar disponible en HuggingFace con la librería `vismatch`, puede integrarse en experimentos comparativos frente a otros matchers (SuperGlue, LightGlue, LoFTR) para medir precisión y robustez.
+- Benchmarking y evaluación de pipelines de matching: al estar disponible en Hugging Face con la librería `vismatch`, puede integrarse en experimentos comparativos frente a otros matchers (SuperGlue, LightGlue, LoFTR) para medir precisión y robustez.
 
 ## Benchmarks y rendimiento
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FlexGlue (vismatch/flexglue) | Feature matching / keypoint detection | no disponible | no aplica | MIT + DINOv3 | HuggingFace, 0 descargas |
+| FlexGlue (vismatch/flexglue) | Feature matching / keypoint detection | no disponible | no aplica | MIT + DINOv3 | Hugging Face, 0 descargas |
 | SuperGlue | Feature matching (grafo neuronal) | no disponible en esta ficha | no aplica | investigación (ver repositorio original) | GitHub oficial |
 | LightGlue | Feature matching (ligero) | no disponible en esta ficha | no aplica | ver repositorio original | GitHub oficial |
 | LoFTR | Matching denso (detector-free) | no disponible en esta ficha | no aplica | ver repositorio original | GitHub oficial |
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento de FlexGlue que permitan una comparación 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vismatch/flexglue
+- Hugging Face: https://huggingface.co/vismatch/flexglue
 - Repositorio de uso (vismatch): https://github.com/gmberton/vismatch
 - Enlace de licencia indicado en la model card: https://github.com/cvg/FlexGlue#license

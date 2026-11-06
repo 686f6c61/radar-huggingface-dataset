@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Ruishalm/sui-plasmids-hive` es una publicacion alojada en HuggingFace por el usuario Ruishalm. En el momento de la consulta, la ficha publica unicamente muestra las etiquetas `safetensors` y `region:us`, con un tamano de repositorio de 0.0 GB, 0 descargas y 1 like. No existe model card, ni pipeline declarado, ni licencia, ni idiomas indicados.
+El repositorio `Ruishalm/sui-plasmids-hive` es una publicacion alojada en Hugging Face por el usuario Ruishalm. En el momento de la consulta, la ficha publica unicamente muestra las etiquetas `safetensors` y `region:us`, con un tamano de repositorio de 0.0 GB, 0 descargas y 1 like. No existe model card, ni pipeline declarado, ni licencia, ni idiomas indicados.
 
 El identificador del repositorio no corresponde a ninguna familia de modelos conocida y la informacion disponible no permite determinar su proposito, su dominio de aplicacion ni su procedencia tecnica. El tamano de 0.0 GB apunta a que el repositorio no contiene pesos reales, solo metadatos o punteros de Git LFS sin resolver.
 
@@ -76,6 +76,6 @@ No disponible. No se puede identificar la categoria del modelo (tamano, tarea, m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ruishalm/sui-plasmids-hive
+- Hugging Face: https://huggingface.co/Ruishalm/sui-plasmids-hive
 - Resultados de la busqueda web: no se encontro ningun enlace relevante. Los resultados devueltos correspondian a sitios de apuestas deportivas y casino (hollywoodbets.net y dominios asociados), sin ninguna relacion con el modelo, su autor ni su dominio de aplicacion.
 - Paper, blog, repositorio de codigo o demo: no disponible.

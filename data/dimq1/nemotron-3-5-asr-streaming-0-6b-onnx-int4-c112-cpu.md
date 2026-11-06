@@ -77,7 +77,7 @@ No se dispone de datos comparativos directos con otros modelos ASR en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DimQ1/nemotron-3.5-asr-streaming-0.6b-onnx-int4-c112-cpu
+- Modelo en Hugging Face: https://huggingface.co/DimQ1/nemotron-3.5-asr-streaming-0.6b-onnx-int4-c112-cpu
 - Repositorio de exportación ONNX (codavidgarcia): https://github.com/codavidgarcia/nemotron-3.5-asr-streaming-onnx
 - README del repositorio de exportación: https://github.com/codavidgarcia/nemotron-3.5-asr-streaming-onnx/blob/main/README.md
 - Modelo original de NVIDIA (referencia): https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-.6b (no verificado en la búsqueda, pero se menciona en el repositorio de GitHub)

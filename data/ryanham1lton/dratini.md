@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Dratini, publicado en HuggingFace por Ryanham1lton, es un repositorio de 0.1 GB con licencia CC-BY-4.0. La model card no incluye información técnica: no se especifican arquitectura, parámetros, longitud de contexto ni idiomas. El pipeline del modelo tampoco está definido en la ficha de HuggingFace. Las búsquedas web sugieren una posible relación con modelos de generación de imágenes de Pokémon, como un LoRA para Stable Diffusion 1.5, pero no hay confirmación oficial en el repositorio. Este modelo no presenta descargas ni "likes", lo que indica que es un proyecto reciente o poco difundido. En el estado actual, no es posible evaluar su rendimiento ni su idoneidad para casos de uso concretos.
+El modelo Dratini, publicado en Hugging Face por Ryanham1lton, es un repositorio de 0.1 GB con licencia CC-BY-4.0. La model card no incluye información técnica: no se especifican arquitectura, parámetros, longitud de contexto ni idiomas. El pipeline del modelo tampoco está definido en la ficha de Hugging Face. Las búsquedas web sugieren una posible relación con modelos de generación de imágenes de Pokémon, como un LoRA para Stable Diffusion 1.5, pero no hay confirmación oficial en el repositorio. Este modelo no presenta descargas ni "likes", lo que indica que es un proyecto reciente o poco difundido. En el estado actual, no es posible evaluar su rendimiento ni su idoneidad para casos de uso concretos.
 
 ## Especificaciones técnicas
 
@@ -74,6 +74,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Dratini
+- Hugging Face: https://huggingface.co/Ryanham1lton/Dratini
 - Tensor.Art (referencia externa con el mismo nombre): https://tensor.art/models/699089868535416872
 - PixAI (referencia externa con el mismo nombre): https://pixai.art/en/model/1645522761359745005

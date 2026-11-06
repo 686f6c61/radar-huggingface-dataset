@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Tipo | Entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tridex/train_smolvla_3cam__black_20k | 450.046.176 | VLA compacto, ajuste fino de tarea unica | Estado (6,) + 3 imagenes 256x256 | apache-2.0 | HuggingFace, libreria lerobot |
-| lerobot/smolvla_base | 450 M (aproximado, segun el modelo derivado) | VLA compacto preentrenado | Estado + imagenes | no disponible en la informacion consultada | HuggingFace |
+| Tridex/train_smolvla_3cam__black_20k | 450.046.176 | VLA compacto, ajuste fino de tarea unica | Estado (6,) + 3 imagenes 256x256 | apache-2.0 | Hugging Face, libreria lerobot |
+| lerobot/smolvla_base | 450 M (aproximado, segun el modelo derivado) | VLA compacto preentrenado | Estado + imagenes | no disponible en la informacion consultada | Hugging Face |
 | ACT (implementacion en LeRobot) | no disponible | Politica de imitacion basada en transformer, sin componente de lenguaje | Estado + imagenes | apache-2.0 (segun el repositorio LeRobot) | GitHub y documentacion de LeRobot |
-| OpenVLA-7B | 7 000 M (aproximado) | VLA de gran tamano basado en un modelo de lenguaje de 7 B | Estado + imagen unica | no disponible en la informacion consultada | HuggingFace y repositorio publico |
+| OpenVLA-7B | 7 000 M (aproximado) | VLA de gran tamano basado en un modelo de lenguaje de 7 B | Estado + imagen unica | no disponible en la informacion consultada | Hugging Face y repositorio publico |
 
 La comparacion es orientativa: solo se dispone de datos verificados para el modelo de esta ficha y, parcialmente, para el modelo base. No hay resultados de rendimiento comparables publicados para el checkpoint analizado, por lo que no es posible establecer una jerarquia de calidad entre estas alternativas con la informacion disponible.
 
@@ -96,11 +96,11 @@ La comparacion es orientativa: solo se dispone de datos verificados para el mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tridex/train_smolvla_3cam__black_20k
+- Modelo en Hugging Face: https://huggingface.co/Tridex/train_smolvla_3cam__black_20k
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Tridex/record-test-3-cam_20260921_152126
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Tridex/record-test-3-cam_20260921_152126
-- Articulo de SmolVLA (pagina de papers en HuggingFace): https://huggingface.co/papers/2506.01844
+- Articulo de SmolVLA (pagina de papers en Hugging Face): https://huggingface.co/papers/2506.01844
 - Articulo de SmolVLA (arXiv): https://arxiv.org/abs/2506.01844
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Guia de SmolVLA en LeRobot: https://huggingface.co/docs/lerobot/main/en/smolvla

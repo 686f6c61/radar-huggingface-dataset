@@ -72,13 +72,13 @@ No disponible. La informacion proporcionada no incluye modelos comparables de ge
 - Riesgo de realismo fisico inadecuado: como modelo generativo, puede producir formas de onda con contenido espectral o duraciones poco plausibles para un escenario dado. No sustituye a la validacion con registros reales ni a simulaciones fisicas.
 - No es un modelo de lenguaje: no admite prompts en lenguaje natural, tool calling, agentes ni razonamiento textual. La interaccion se realiza mediante condicionamiento fisico y el CLI del proyecto.
 - Ausencia de benchmarks publicos en la informacion disponible: no hay evidencia cuantitativa de rendimiento frente a alternativas.
-- Metadatos incompletos: no constan parametros, cuantizaciones, idiomas ni pipeline en la informacion de HuggingFace.
+- Metadatos incompletos: no constan parametros, cuantizaciones, idiomas ni pipeline en la informacion de Hugging Face.
 - Estado de despliegue: el repositorio esta pensado para inferencia; no incluye utilidades de reentrenamiento ni estado de optimizador.
 - Uso en produccion critica: cualquier aplicacion en ingenieria sismica o evaluacion de peligrosidad deberia acompanarse de validacion independiente y de juicio experto.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/salmanmohebi/tqdnes
+- Hugging Face: https://huggingface.co/salmanmohebi/tqdnes
 - Repositorio de codigo y documentacion: https://github.com/highfem/tqdnes
-- Manifiesto de checkpoints: `manifest.json` dentro del repositorio de HuggingFace (nombres, rutas relativas, tamanos y hashes SHA-256)
+- Manifiesto de checkpoints: `manifest.json` dentro del repositorio de Hugging Face (nombres, rutas relativas, tamanos y hashes SHA-256)
 - Paper, blog o demo: no disponible en la informacion proporcionada

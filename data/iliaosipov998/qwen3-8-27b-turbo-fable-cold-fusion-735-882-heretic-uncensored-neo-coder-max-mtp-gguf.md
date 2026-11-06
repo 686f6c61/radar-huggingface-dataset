@@ -82,8 +82,8 @@ Estimaciones de VRAM para los pesos, calculadas a partir de los 26,9 B de parame
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Este repositorio (GGUF sobre el fine tune de DavidAU) | ~26,9 B | no disponible | Apache 2.0 | GGUF en HuggingFace, 0 descargas | ARC-C 735 en 8 bits y 719 en 4 bits, cifras del autor |
-| DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU | ~26,9 B | no disponible | Apache 2.0 | HuggingFace (modelo base en bfloat16) | Base de este repositorio |
+| Este repositorio (GGUF sobre el fine tune de DavidAU) | ~26,9 B | no disponible | Apache 2.0 | GGUF en Hugging Face, 0 descargas | ARC-C 735 en 8 bits y 719 en 4 bits, cifras del autor |
+| DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU | ~26,9 B | no disponible | Apache 2.0 | Hugging Face (modelo base en bfloat16) | Base de este repositorio |
 | Qwen 3.8 27B (sin ajustar) | 27 B | no disponible | no disponible | no disponible | ARC-C ~591 segun el calculo derivado de la model card |
 | Qwen 3.6-35B-A3B | 35 B totales, ~3 B activos (MoE) | no disponible | no disponible | no disponible | El autor afirma que este modelo lo supera en 7 benchmarks, sin cifras |
 | Qwen 3.6 27B | 27 B | no disponible | no disponible | no disponible | El autor afirma que este modelo lo supera en 7 benchmarks, sin cifras |
@@ -106,7 +106,7 @@ No se dispone de especificaciones verificables de los modelos de la familia Qwen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/iliaosipov998/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/iliaosipov998/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Referencia citada por el autor sobre el metodo Fable Fusion 711: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Dataset de ajuste: DavidAU/Polar-STRICT-Datasets (referenciado en la model card, sin URL directa en la informacion proporcionada)

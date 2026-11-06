@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `davidwdw/fa-native-eval-runtime-20260926-b7202db1c37f` no corresponde a un modelo de lenguaje entrenado, sino a un paquete de artefactos publicado en HuggingFace bajo la etiqueta de archivo versionado de flota («versioned fleet archive»). Su model card lo describe explicitamente como una instantanea de un conjunto de evaluacion nativa, que incluye fuente de evaluacion, runtime y tokenizer, pero excluye los *bundles* de activos del simulador. La receta canonica citada es `evaluations/2026-09-26_b1k_all_existing_queue` y el autor recomienda usar la revision exacta registrada y verificar el fichero `SHA256SUMS`.
+El identificador `davidwdw/fa-native-eval-runtime-20260926-b7202db1c37f` no corresponde a un modelo de lenguaje entrenado, sino a un paquete de artefactos publicado en Hugging Face bajo la etiqueta de archivo versionado de flota («versioned fleet archive»). Su model card lo describe explicitamente como una instantanea de un conjunto de evaluacion nativa, que incluye fuente de evaluacion, runtime y tokenizer, pero excluye los *bundles* de activos del simulador. La receta canonica citada es `evaluations/2026-09-26_b1k_all_existing_queue` y el autor recomienda usar la revision exacta registrada y verificar el fichero `SHA256SUMS`.
 
 El repositorio ocupa 0,1 GB, no declara pipeline, licencia ni idiomas, y a fecha de la consulta acumula 0 descargas y 0 «likes». Se creo y actualizo el 26 de septiembre de 2026, con apenas un minuto de separacion entre ambos eventos, lo que es coherente con una publicacion automatizada de una sola pasada. No hay indicios de pesos de red neuronal, hiperparametros de entrenamiento ni tarjeta de modelo convencional.
 
@@ -90,7 +90,7 @@ No disponible. Este artefacto no es un modelo de lenguaje, por lo que no existe 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-native-eval-runtime-20260926-b7202db1c37f
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-native-eval-runtime-20260926-b7202db1c37f
 - Documentacion de runtime de ai-native-eval (relacion no confirmada): https://github.com/aiaccelerationism/ai-native-eval/blob/main/docs/runtime.md
 - Directorio de autoevaluaciones de ai-native-eval (relacion no confirmada): https://github.com/aiaccelerationism/ai-native-eval/tree/main/self-evaluations/foundation-20260614
 - Aviso de seguridad CVE-2026-25049 en n8n (contexto de seguridad, relacion no confirmada): https://thehackernews.com/2026/02/critical-n8n-flaw-cve-2026-25049.html

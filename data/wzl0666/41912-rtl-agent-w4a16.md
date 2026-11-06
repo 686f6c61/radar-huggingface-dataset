@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wzl0666/41912-rtl-agent-w4a16 | 6,28 B (W4A16) | 65.536 | RTL + Vivado tool calling | Swift Open License v1.0 | HuggingFace, 17 descargas |
-| ukisai/Swift-1.5-Qwen3.8-27b (base) | no disponible en la información | no disponible | Generalista | Apache 2.0 (según nota del autor) | HuggingFace |
+| wzl0666/41912-rtl-agent-w4a16 | 6,28 B (W4A16) | 65.536 | RTL + Vivado tool calling | Swift Open License v1.0 | Hugging Face, 17 descargas |
+| ukisai/Swift-1.5-Qwen3.8-27b (base) | no disponible en la información | no disponible | Generalista | Apache 2.0 (según nota del autor) | Hugging Face |
 | Alternativas RTL especializadas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de otros modelos comparables de la misma categoría en la información proporcionada.
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables de la misma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wzl0666/41912-rtl-agent-w4a16
+- Hugging Face: https://huggingface.co/wzl0666/41912-rtl-agent-w4a16
 - Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Repositorio de AutoRound: no disponible en la información proporcionada
 - Paper o blog del modelo: no disponible

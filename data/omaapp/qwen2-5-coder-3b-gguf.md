@@ -30,7 +30,7 @@ El repositorio de OMAAPP no incluye informacion adicional sobre el proceso de en
 ## Capacidades
 
 - Generacion de codigo: el modelo esta especializado en tareas de programacion, incluyendo completado, generacion y explicacion de codigo.
-- Conversacion: el tag "conversational" en HuggingFace indica soporte para interacciones de chat multi-turno.
+- Conversacion: el tag "conversational" en Hugging Face indica soporte para interacciones de chat multi-turno.
 - Texto a texto: clasificado como modelo de texto a texto, adecuado para tareas de generacion y transformacion de texto.
 - Instrucciones: al ser la variante Instruct, responde a instrucciones en lenguaje natural para tareas de programacion.
 - Uso en produccion: compatible con endpoints de inferencia (tag "endpoints_compatible") y con herramientas que consumen GGUF como llama.cpp, Ollama o LM Studio.
@@ -81,7 +81,7 @@ La familia Qwen2.5-Coder cubre seis tamanos (0.5, 1.5, 3, 7, 14 y 32 B), todos b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OMAAPP/qwen2.5-coder-3b-gguf
+- Repositorio Hugging Face: https://huggingface.co/OMAAPP/qwen2.5-coder-3b-gguf
 - Modelo original (Qwen): https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - Repositorio oficial GGUF (Qwen): https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct-GGUF
 - Repositorio espejo alternativo (EasierAI): https://huggingface.co/EasierAI/Qwen-2.5-Coder-3B

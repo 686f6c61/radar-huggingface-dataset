@@ -77,6 +77,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run1-gen10
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run1-gen10
 - Modelo base (unsloth/Qwen2.5-7B-Instruct): https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Qwen2.5 (referencia): https://github.com/mx4ai/qwen2.5

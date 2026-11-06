@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`claudiagonzalez/retrieval-ablation-2023` es un prototipo de investigación publicado en HuggingFace por el usuario claudiagonzalez. Se trata de un Tiny Transformer de escala "nano" orientado a tareas de recuperación (retrieval), con un total de 49.600 parámetros reales según el fichero de pesos en formato safetensors. El repositorio no incluye un checkpoint entrenado: el autor indica explícitamente que `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un modelo con benchmarks verificados.
+`claudiagonzalez/retrieval-ablation-2023` es un prototipo de investigación publicado en Hugging Face por el usuario claudiagonzalez. Se trata de un Tiny Transformer de escala "nano" orientado a tareas de recuperación (retrieval), con un total de 49.600 parámetros reales según el fichero de pesos en formato safetensors. El repositorio no incluye un checkpoint entrenado: el autor indica explícitamente que `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un modelo con benchmarks verificados.
 
 El interés del artefacto es metodológico más que de rendimiento. El repositorio documenta un conjunto de decisiones arquitectónicas concretas (atención multi-query, fusión con gated fusion, activación Mish, normalización BatchNorm) y una receta de experimento por defecto basada en el optimizador LAMB con un schedule de warmup constante. El propio autor advierte que esos valores son puntos de partida del script, no evidencia de un entrenamiento completado.
 
@@ -69,7 +69,7 @@ No se dispone de comparativas publicadas para este modelo. El autor recomienda e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| claudiagonzalez/retrieval-ablation-2023 | 49.600 | no disponible | sin benchmarks publicados (checkpoint sin entrenar) | Apache 2.0 | HuggingFace, 0 descargas |
+| claudiagonzalez/retrieval-ablation-2023 | 49.600 | no disponible | sin benchmarks publicados (checkpoint sin entrenar) | Apache 2.0 | Hugging Face, 0 descargas |
 | Baseline de capacidad equivalente | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,5 +86,5 @@ No se dispone de comparativas publicadas para este modelo. El autor recomienda e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/claudiagonzalez/retrieval-ablation-2023
+- Modelo en Hugging Face: https://huggingface.co/claudiagonzalez/retrieval-ablation-2023
 - No se han encontrado enlaces relevantes en la busqueda web: los resultados devueltos corresponden a hilos de un foro de bricolaje sobre retirada de papel pintado y no guardan relacion con el modelo.

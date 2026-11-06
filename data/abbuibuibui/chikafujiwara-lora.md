@@ -84,7 +84,7 @@ No se proporcionan comparativas con otros modelos en la información disponible.
 - No se especifican el número de parámetros del LoRA ni el consumo exacto de VRAM, lo que dificulta el dimensionamiento preciso de infraestructura.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/abbuibuibui/ChikaFujiwara-Lora
+- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/ChikaFujiwara-Lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/abbuibuibui/ChikaFujiwara-Dataset
 - README en chino: https://huggingface.co/abbuibuibui/ChikaFujiwara-Lora/blob/main/README_zh.md
 - Evaluación horizontal completa (en chino): https://huggingface.co/abbuibuibui/ChikaFujiwara-Lora/blob/main/evaluation/横向测评记录.md

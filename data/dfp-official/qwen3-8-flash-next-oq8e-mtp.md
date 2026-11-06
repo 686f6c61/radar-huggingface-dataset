@@ -34,7 +34,7 @@ No se dispone de información detallada sobre el proceso de entrenamiento (núme
 - Ventana de contexto nativa de 262 144 tokens, ampliable a 1 000 000 con YaRN, ideal para documentos largos y conversaciones multi-turno.
 - Soporte de tool calling y function calling probablemente incluido, aunque no está confirmado explícitamente en la información disponible.
 - Capacidad de razonamiento multi-paso y uso como agente autónomo, gracias a su gran contexto y arquitectura eficiente.
-- Multilingüismo no confirmado; la ficha de HuggingFace no especifica idiomas soportados.
+- Multilingüismo no confirmado; la ficha de Hugging Face no especifica idiomas soportados.
 
 ## Casos de uso
 
@@ -72,7 +72,7 @@ Nota: los datos de Qwen3-235B-A22B y DeepSeek-V3 son aproximados y pueden variar
 ## Limitaciones y advertencias
 
 - La cuantización a 8 bits puede degradar ligeramente la precisión en tareas de razonamiento complejo o matemáticas, en comparación con el modelo en FP8 o BF16.
-- Licencia no especificada en la ficha de HuggingFace; antes de usar comercialmente, es necesario verificar la licencia del modelo base Qwen3.8-Flash-Next y las condiciones de la cuantización.
+- Licencia no especificada en la ficha de Hugging Face; antes de usar comercialmente, es necesario verificar la licencia del modelo base Qwen3.8-Flash-Next y las condiciones de la cuantización.
 - El modelo está etiquetado como "qwen4_exp", lo que indica que es una versión experimental; puede contener comportamientos inesperados o inestabilidad en producción.
 - No se han publicado evaluaciones de sesgos o alucinaciones para esta versión cuantizada; se recomienda realizar pruebas específicas antes de desplegar en entornos críticos.
 - El tamaño del repositorio (194,9 GB) y el formato MLX limitan su uso a hardware Apple Silicon con gran memoria; no es portable directamente a GPUs NVIDIA sin conversión.
@@ -80,9 +80,9 @@ Nota: los datos de Qwen3-235B-A22B y DeepSeek-V3 son aproximados y pueden variar
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/dfp-official/Qwen3.8-Flash-Next-oQ8e-mtp
+- Modelo cuantizado en Hugging Face: https://huggingface.co/dfp-official/Qwen3.8-Flash-Next-oQ8e-mtp
 - Repositorio oficial del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Página de QwenCloud para Qwen3.8-Flash: https://www.qwencloud.com/models/qwen3.8-flash
 - Anuncio en foros de NVIDIA sobre Qwen3.8-Flash-Next: https://forums.developer.nvidia.com/t/qwen3-8-flash-next/381228
 - Anuncio de disponibilidad de la versión 176B: https://forums.developer.nvidia.com/t/qwen3-8-flash-next-176b-now-available/381413

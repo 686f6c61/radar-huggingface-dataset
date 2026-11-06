@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo yeeun2/Qwen3-1.7B-ToolCalling-LoRA es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base Qwen3-1.7B, con el objetivo de especializarlo en la llamada a funciones (tool calling). Lo publica el usuario yeeun2 en HuggingFace y se presenta como un repositorio de 0,3 GB con pesos en formato safetensors, lo que corresponde a un adaptador ligero y no a los pesos completos del modelo base. La etiqueta "unsloth" indica que el entrenamiento se realizó con la librería Unsloth, conocida por acelerar el fine-tuning de modelos de lenguaje.
+El modelo yeeun2/Qwen3-1.7B-ToolCalling-LoRA es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base Qwen3-1.7B, con el objetivo de especializarlo en la llamada a funciones (tool calling). Lo publica el usuario yeeun2 en Hugging Face y se presenta como un repositorio de 0,3 GB con pesos en formato safetensors, lo que corresponde a un adaptador ligero y no a los pesos completos del modelo base. La etiqueta "unsloth" indica que el entrenamiento se realizó con la librería Unsloth, conocida por acelerar el fine-tuning de modelos de lenguaje.
 
 Este tipo de adaptador es relevante para desarrolladores que necesitan incorporar capacidades de tool calling en modelos pequeños, ya que permite ejecutar agentes conversacionales en entornos con recursos limitados, sin necesidad de desplegar modelos de mayor tamaño. La información disponible no incluye datos sobre el proceso de entrenamiento, el conjunto de datos utilizado ni la licencia, por lo que la ficha se limita a los detalles inferibles del nombre, las etiquetas y el repositorio.
 
@@ -49,16 +49,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: no se dispone de datos oficiales. Por tamaño, el modelo base de 1.7B en FP16 requeriría aproximadamente 3-4 GB de VRAM, más un overhead mínimo del adaptador LoRA. Con cuantización 4-bit, la carga podría reducirse a alrededor de 1-2 GB, pero no hay información que confirme este dato.
 - GPU recomendadas: no se han publicado recomendaciones. En la práctica, una GPU con al menos 4-6 GB de VRAM debería ser suficiente para ejecutar el modelo base con el adaptador.
 - Compatibilidad con GPU de consumo: sí, por el tamaño del modelo base (1.7B) y el adaptador ligero.
-- Opciones de despliegue: se puede cargar con la librería Transformers y PEFT, o servirse mediante vLLM, llama.cpp, Ollama o TGI. La etiqueta "endpoints_compatible" sugiere compatibilidad con los endpoints de HuggingFace.
+- Opciones de despliegue: se puede cargar con la librería Transformers y PEFT, o servirse mediante vLLM, llama.cpp, Ollama o TGI. La etiqueta "endpoints_compatible" sugiere compatibilidad con los endpoints de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yeeun2/Qwen3-1.7B-ToolCalling-LoRA | 1.7B (base) | No disponible | No disponible | HuggingFace |
-| hyeonq3/Qwen3-1.7B-ToolCalling-LoRA | 1.7B (base) | No disponible | No disponible | HuggingFace |
-| Qwen3-1.7B (modelo base) | 1.7B | No disponible | No disponible | HuggingFace |
+| yeeun2/Qwen3-1.7B-ToolCalling-LoRA | 1.7B (base) | No disponible | No disponible | Hugging Face |
+| hyeonq3/Qwen3-1.7B-ToolCalling-LoRA | 1.7B (base) | No disponible | No disponible | Hugging Face |
+| Qwen3-1.7B (modelo base) | 1.7B | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar estos modelos. El adaptador de yeeun2 y el de hyeonq3 comparten nombre y base, por lo que es probable que sean variantes o forks del mismo enfoque.
 
@@ -72,6 +72,6 @@ No se dispone de datos de rendimiento para comparar estos modelos. El adaptador 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yeeun2/Qwen3-1.7B-ToolCalling-LoRA
+- Hugging Face: https://huggingface.co/yeeun2/Qwen3-1.7B-ToolCalling-LoRA
 - Repositorio similar: https://huggingface.co/hyeonq3/Qwen3-1.7B-ToolCalling-LoRA
 - Caso de estudio relacionado (GitHub): https://github.com/zubairz4far/qwen3-tool-calling-qlora

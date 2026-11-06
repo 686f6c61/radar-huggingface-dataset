@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gattochoo/Qwen3.8-2B-oQ4e
+- Modelo en Hugging Face: https://huggingface.co/gattochoo/Qwen3.8-2B-oQ4e
 - Repositorio de oQ/oMLX: https://github.com/jundot/omlx
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Página de OpenLM sobre Qwen3.8: https://openlm.ai/qwen3.8/

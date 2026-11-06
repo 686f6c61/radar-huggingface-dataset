@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ÇABA v0-core 50M es un modelo de lenguaje en fase muy temprana de desarrollo, publicado por el usuario Efe2898 en HuggingFace bajo el identificador `caba-v0-core-50m-g4-scratch-20261019`. Segun la propia model card, se trata de un entrenamiento "from scratch" (sin partir de pesos preentrenados) de aproximadamente 50 millones de parametros, ejecutado en un entorno tipo Colab y que en el momento de la publicacion estaba todavia en curso. El repositorio no contiene pesos entrenados ni pesos de inicializacion: el autor indica explicitamente que las ponderaciones de inicializacion aleatoria no se publican y que el modelo entrenado y un checkpoint de reanudacion se subiran tras un paso completado y una parada segura.
+ÇABA v0-core 50M es un modelo de lenguaje en fase muy temprana de desarrollo, publicado por el usuario Efe2898 en Hugging Face bajo el identificador `caba-v0-core-50m-g4-scratch-20261019`. Segun la propia model card, se trata de un entrenamiento "from scratch" (sin partir de pesos preentrenados) de aproximadamente 50 millones de parametros, ejecutado en un entorno tipo Colab y que en el momento de la publicacion estaba todavia en curso. El repositorio no contiene pesos entrenados ni pesos de inicializacion: el autor indica explicitamente que las ponderaciones de inicializacion aleatoria no se publican y que el modelo entrenado y un checkpoint de reanudacion se subiran tras un paso completado y una parada segura.
 
 El problema que aborda es, por tanto, el de un experimento de investigacion sobre entrenamiento de modelos pequenos desde cero, con codigo de modelo, tokenizer, auditoria de dataset y codigo de entrenamiento disponibles. No hay informacion publica sobre arquitectura, composicion del corpus, numero de tokens vistos, idiomas o licencia. Con 0 descargas y 0 likes, y sin pesos utilizables, el artefacto no es hoy desplegable ni evaluable.
 
@@ -91,7 +91,7 @@ Para un uso real en la franja de 50-150M de parametros, las alternativas con pes
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Efe2898/caba-v0-core-50m-g4-scratch-20261019
+- Hugging Face: https://huggingface.co/Efe2898/caba-v0-core-50m-g4-scratch-20261019
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo: no disponible como enlace independiente (la model card indica que el codigo esta en el propio repositorio)

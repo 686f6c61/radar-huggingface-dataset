@@ -90,7 +90,7 @@ No se dispone de una comparacion de rendimiento fiable porque este adaptador no 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/atlas-institute/qwen35-08b-triage-sft
+- Hugging Face del modelo: https://huggingface.co/atlas-institute/qwen35-08b-triage-sft
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Paper citado en la model card (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning: https://mlco2.github.io/impact

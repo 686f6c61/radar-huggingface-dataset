@@ -70,7 +70,7 @@ No se dispone de información suficiente para una comparativa directa con otros 
 
 ## Enlaces
 
-- Repositorio de HuggingFace de esta conversión: https://huggingface.co/saifvj/Qwen3.8-27B-Fable-Distill-LoRA-GGUF
+- Repositorio de Hugging Face de esta conversión: https://huggingface.co/saifvj/Qwen3.8-27B-Fable-Distill-LoRA-GGUF
 - Adaptador original de TeichAI: https://huggingface.co/TeichAI/Qwen3.8-27B-Fable-Distill-LoRA
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Issue de llama.cpp sobre el bug de conversión: https://github.com/ggml-org/llama.cpp/issues/21125

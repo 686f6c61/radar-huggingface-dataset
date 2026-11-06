@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Esqueleto | Ruido de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ProteinMPNN noise030 (este) | 1,674 M | N, CA, C, O | 0,30 Å | AGPL-3.0 | HuggingFace (oteam) |
-| ProteinMPNN noise002 | 1,674 M | N, CA, C, O | 0,02 Å | AGPL-3.0 | HuggingFace (oteam) |
-| SolubleMPNN noise030 | 1,674 M | N, CA, C, O | 0,30 Å | AGPL-3.0 | HuggingFace (oteam) |
-| ProteinMPNN CA-only noise020 | 1,642 M | CA | 0,20 Å | AGPL-3.0 | HuggingFace (oteam) |
+| ProteinMPNN noise030 (este) | 1,674 M | N, CA, C, O | 0,30 Å | AGPL-3.0 | Hugging Face (oteam) |
+| ProteinMPNN noise002 | 1,674 M | N, CA, C, O | 0,02 Å | AGPL-3.0 | Hugging Face (oteam) |
+| SolubleMPNN noise030 | 1,674 M | N, CA, C, O | 0,30 Å | AGPL-3.0 | Hugging Face (oteam) |
+| ProteinMPNN CA-only noise020 | 1,642 M | CA | 0,20 Å | AGPL-3.0 | Hugging Face (oteam) |
 
 La comparación con modelos de otras familias (por ejemplo, ESM-IF, LigandMPNN o modelos de diseño generativo) no está disponible en la información proporcionada.
 
@@ -84,7 +84,7 @@ La comparación con modelos de otras familias (por ejemplo, ESM-IF, LigandMPNN o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/proteinmpnn-noise030
+- Modelo en Hugging Face: https://huggingface.co/oteam/proteinmpnn-noise030
 - Variante noise002: https://huggingface.co/oteam/proteinmpnn-noise002
 - Variante noise010: https://huggingface.co/oteam/proteinmpnn-noise010
 - Variante noise020: https://huggingface.co/oteam/proteinmpnn-noise020

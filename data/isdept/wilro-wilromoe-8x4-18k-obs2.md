@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ISdept/wilro-wilromoe-8x4-18k-obs2 es un checkpoint de pesos en formato safetensors publicado por el usuario ISdept en HuggingFace. El repositorio contiene 1.109.104.149 parámetros (~1,11 mil millones) según los metadatos reales de los ficheros safetensors, y ocupa 8,7 GB en total, lo que apunta a que el repositorio incluye pesos en precisión alta y/o varios ficheros de checkpoint. No se ha publicado model card, ni pipeline declarado, ni licencia, ni lista de idiomas soportados.
+ISdept/wilro-wilromoe-8x4-18k-obs2 es un checkpoint de pesos en formato safetensors publicado por el usuario ISdept en Hugging Face. El repositorio contiene 1.109.104.149 parámetros (~1,11 mil millones) según los metadatos reales de los ficheros safetensors, y ocupa 8,7 GB en total, lo que apunta a que el repositorio incluye pesos en precisión alta y/o varios ficheros de checkpoint. No se ha publicado model card, ni pipeline declarado, ni licencia, ni lista de idiomas soportados.
 
 El nombre del repositorio sugiere, sin confirmación documental, una arquitectura de mezcla de expertos ("moe") con una configuración 8x4 y una ventana de contexto de 18.000 tokens, además de algún tipo de variante u objetivo de entrenamiento identificado como "obs2". Ninguno de estos extremos puede verificarse con la información disponible, por lo que deben tratarse como hipótesis derivadas del nombre y no como especificaciones confirmadas.
 
@@ -77,7 +77,7 @@ Estimaciones derivadas únicamente del número de parámetros (1.109.104.149). N
 - VRAM total recomendada: 4 GB o más para FP16 con contexto corto; 8 GB o más para trabajar con contextos largos, fine-tuning con LoRA o lotes mayores.
 - Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU con 6-8 GB o más (RTX 3060, RTX 4060, RTX 2070, GTX 1660 con cuantización). En FP16 podría ajustarse incluso en GPUs de 4 GB con contexto reducido.
 - GPU profesionales: no requiere A100 ni H100 para inferencia; son útiles únicamente para entrenamiento o ajuste a gran escala.
-- Opciones de despliegue: al publicarse solo safetensors, la vía directa es HuggingFace Transformers con PyTorch. vLLM y TGI serían viables solo si la arquitectura está soportada por esas librerías, algo que no puede confirmarse. Para llama.cpp u Ollama sería necesaria una conversión a GGUF cuyo soporte depende de la arquitectura real.
+- Opciones de despliegue: al publicarse solo safetensors, la vía directa es Hugging Face Transformers con PyTorch. vLLM y TGI serían viables solo si la arquitectura está soportada por esas librerías, algo que no puede confirmarse. Para llama.cpp u Ollama sería necesaria una conversión a GGUF cuyo soporte depende de la arquitectura real.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -86,10 +86,10 @@ La comparativa se limita a referencias públicas de modelos de tamaño comparabl
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ISdept/wilro-wilromoe-8x4-18k-obs2 | 1,11 B | No disponible (posible MoE) | No disponible (¿18k?) | No disponible | HuggingFace, solo safetensors |
-| OLMoE-1B-7B (Allen AI) | ~6,9 B | ~1,3 B | 4.096 tokens | Apache 2.0 | HuggingFace, pesos y código |
-| Llama 3.2 1B (Meta) | ~1,24 B | Denso | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace, con model card |
-| Qwen2.5-1.5B (Alibaba) | ~1,54 B | Denso | 32.768 tokens (ampliable) | Apache 2.0 | HuggingFace, con model card |
+| ISdept/wilro-wilromoe-8x4-18k-obs2 | 1,11 B | No disponible (posible MoE) | No disponible (¿18k?) | No disponible | Hugging Face, solo safetensors |
+| OLMoE-1B-7B (Allen AI) | ~6,9 B | ~1,3 B | 4.096 tokens | Apache 2.0 | Hugging Face, pesos y código |
+| Llama 3.2 1B (Meta) | ~1,24 B | Denso | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face, con model card |
+| Qwen2.5-1.5B (Alibaba) | ~1,54 B | Denso | 32.768 tokens (ampliable) | Apache 2.0 | Hugging Face, con model card |
 
 Nota: los datos de los modelos de referencia proceden de su documentación pública habitual y se incluyen a efectos orientativos de categoría y despliegue; conviene verificarlos en sus repositorios antes de citarlos.
 
@@ -108,5 +108,5 @@ Nota: los datos de los modelos de referencia proceden de su documentación públ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ISdept/wilro-wilromoe-8x4-18k-obs2
+- Hugging Face: https://huggingface.co/ISdept/wilro-wilromoe-8x4-18k-obs2
 - La búsqueda web realizada no ha devuelto ningún resultado técnico relacionado con el modelo: los resultados obtenidos corresponden a sitios de contenido para adultos sin relación con el repositorio, por lo que se omiten. No se dispone de paper, blog, repositorio de código ni demo asociados.

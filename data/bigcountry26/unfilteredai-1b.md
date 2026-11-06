@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UNfilteredAI-1B es un modelo de generacion de texto publicado por el usuario BigCountry26 en HuggingFace bajo el identificador `BigCountry26/UNfilteredAI-1B`. Segun los metadatos del repositorio, el modelo cuenta con 1.056.004.096 parametros (aproximadamente 1.056 millones, es decir, ~1B) almacenados en formato safetensors, con un tamano de repositorio de 2,1 GB. La model card lo presenta como un modelo de la familia "UnfilteredAI" orientado a la generacion de texto sin moderacion de contenido, etiquetado con la arquitectura `llama` y el idioma ingles (`en`).
+UNfilteredAI-1B es un modelo de generacion de texto publicado por el usuario BigCountry26 en Hugging Face bajo el identificador `BigCountry26/UNfilteredAI-1B`. Segun los metadatos del repositorio, el modelo cuenta con 1.056.004.096 parametros (aproximadamente 1.056 millones, es decir, ~1B) almacenados en formato safetensors, con un tamano de repositorio de 2,1 GB. La model card lo presenta como un modelo de la familia "UnfilteredAI" orientado a la generacion de texto sin moderacion de contenido, etiquetado con la arquitectura `llama` y el idioma ingles (`en`).
 
 El modelo se posiciona explicitamente como una alternativa "sin filtros" para generacion de texto creativo y conversacional. La model card declara que ha sido entrenado sobre un corpus textual amplio y diverso, aunque no aporta ningun detalle verificable sobre el dataset, el numero de tokens, el proceso de alineamiento ni la procedencia de los pesos base. La licencia figura como `other` sin texto adicional, lo que impide conocer las condiciones reales de uso comercial.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| UNfilteredAI-1B | ~1,06B | no disponible | other (sin texto) | HuggingFace, 0 descargas |
+| UNfilteredAI-1B | ~1,06B | no disponible | other (sin texto) | Hugging Face, 0 descargas |
 | TinyLlama-1.1B | ~1,1B | 2.048 tokens (segun su model card publica) | Apache 2.0 | Ampliamente disponible |
 | Llama 3.2 1B | ~1,24B | 128K tokens (segun su model card publica) | Llama 3.2 Community License | Ampliamente disponible |
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento del modelo evaluado para establecer una co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BigCountry26/UNfilteredAI-1B
+- Hugging Face: https://huggingface.co/BigCountry26/UNfilteredAI-1B
 - Paper: no disponible
 - Blog: no disponible
 - Repositorio de codigo: no disponible

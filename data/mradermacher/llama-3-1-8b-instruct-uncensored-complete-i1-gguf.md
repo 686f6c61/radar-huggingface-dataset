@@ -84,7 +84,7 @@ La comparativa se basa en informacion publica de los respectivos repositorios. N
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Llama-3.1-8B-Instruct-Uncensored-Complete-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Llama-3.1-8B-Instruct-Uncensored-Complete-i1-GGUF
 - Repositorio estatico con cuantizaciones: https://huggingface.co/mradermacher/Llama-3.1-8B-Instruct-Uncensored-Complete-GGUF
 - Modelo base: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Uncensored-Complete
 - Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

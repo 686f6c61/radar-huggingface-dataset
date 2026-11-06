@@ -84,7 +84,7 @@ La comparación directa con otros checkpoints de unlearning de TOFU (por ejemplo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch09
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch09
 - Modelo base del ajuste: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original de la familia: https://huggingface.co/microsoft/phi-1_5
 - Referencia del benchmark TOFU (paper): no disponible en la información proporcionada

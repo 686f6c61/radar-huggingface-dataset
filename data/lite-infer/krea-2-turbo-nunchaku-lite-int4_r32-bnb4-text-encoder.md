@@ -80,7 +80,7 @@ No se dispone de comparativas con otros modelos de difusión cuantizados en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lite-infer/krea-2-turbo-nunchaku-lite-int4_r32-bnb4-text-encoder
+- Repositorio Hugging Face: https://huggingface.co/lite-infer/krea-2-turbo-nunchaku-lite-int4_r32-bnb4-text-encoder
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Herramienta de cuantización `diffuse-compressor`: https://github.com/rootonchair/diffuse-compressor
 - Licencia `krea-2-community-license`: https://cdn.jsdelivr.net/gh/krea-ai/krea-2@db3984fbc6e13b34c0064990fc2d95ac64d00058/assets/hf_samples/LICENSE.pdf

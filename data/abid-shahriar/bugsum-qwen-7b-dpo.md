@@ -78,7 +78,7 @@ La comparativa directa con otros modelos de resumen de bugs no esta disponible e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Abid-Shahriar/BugSum-Qwen-7B-DPO
+- Repositorio Hugging Face: https://huggingface.co/Abid-Shahriar/BugSum-Qwen-7B-DPO
 - Modelo base Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Repositorio oficial Qwen-7B (referencia de la serie Qwen): https://github.com/hanpenggit/Qwen-7B
 - Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen

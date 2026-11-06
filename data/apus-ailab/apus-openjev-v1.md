@@ -18,7 +18,7 @@ El modelo es relevante porque ataca un cuello de botella concreto: en tareas de 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible. El material publicado menciona pesos fusionados en BF16; no se documentan GGUF, AWQ, GPTQ ni FP8 |
 | Idiomas soportados | Ingles (en) y chino (zh) |
-| Licencia | no disponible en la ficha de HuggingFace. El README declara licencia MIT para las contribuciones originales y enlaza un archivo LICENSE; al derivar de Qwen3.5, pueden aplicar condiciones adicionales del modelo base |
+| Licencia | no disponible en la ficha de Hugging Face. El README declara licencia MIT para las contribuciones originales y enlaza un archivo LICENSE; al derivar de Qwen3.5, pueden aplicar condiciones adicionales del modelo base |
 | Formato de pesos | safetensors (libreria transformers) |
 | Tamano del repositorio | 43,9 GB |
 | Modelos base | Qwen/Qwen3.5-4B, Qwen/Qwen3.5-9B, Qwen/Qwen3.5-35B-A3B |
@@ -97,9 +97,9 @@ No se dispone de datos técnicos (parámetros, contexto, licencia) de las altern
 
 | Modelo | Parametros | Precision (panel 80) | Precision (panel 1.000) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| APUS-OpenJev 35B-A3B | 35B totales, ~3B activos (MoE) | 88,75 % | 82,20 % | no disponible (MIT para contribuciones originales segun README) | Pesos abiertos en HuggingFace |
-| APUS-OpenJev 9B | 9B | 85,00 % | 81,10 % | no disponible (MIT para contribuciones originales segun README) | Pesos abiertos en HuggingFace |
-| APUS-OpenJev 4B | 4B | 82,50 % | 80,50 % | no disponible (MIT para contribuciones originales segun README) | Pesos abiertos en HuggingFace |
+| APUS-OpenJev 35B-A3B | 35B totales, ~3B activos (MoE) | 88,75 % | 82,20 % | no disponible (MIT para contribuciones originales segun README) | Pesos abiertos en Hugging Face |
+| APUS-OpenJev 9B | 9B | 85,00 % | 81,10 % | no disponible (MIT para contribuciones originales segun README) | Pesos abiertos en Hugging Face |
+| APUS-OpenJev 4B | 4B | 82,50 % | 80,50 % | no disponible (MIT para contribuciones originales segun README) | Pesos abiertos en Hugging Face |
 | Jev API | no disponible | 82,50 % | 77,00 % | no disponible | API cerrada |
 | Laya (configuracion tipada) | no disponible | 68,75 % | 50,50 % | no disponible | no disponible |
 
@@ -112,7 +112,7 @@ Respecto a los modelos base (Qwen3.5-4B, Qwen3.5-9B y Qwen3.5-35B-A3B), no se pu
 - Longitud de contexto no documentada, lo que impide planificar despliegues con contextos largos.
 - Evidencia de evaluación reducida: el panel principal tiene 80 preguntas y la propia model card advierte que las diferencias observadas no establecen superioridad amplia ni estadísticamente significativa. Las cifras del panel de 1.000 preguntas provienen de checkpoints históricos distintos (5949) de los publicados como release (3000 para 9B), según aclara el autor.
 - Las probabilidades de candidatos del runtime autónomo no son numéricamente equivalentes a las del adaptador original, según la documentación de la variante 35B.
-- Licencia no declarada en la ficha de HuggingFace: antes de un uso comercial hay que revisar el archivo LICENSE del repositorio y las condiciones de los modelos base Qwen3.5, ya que una licencia MIT que cubra solo las contribuciones originales no resuelve por sí sola los derechos sobre los pesos derivados.
+- Licencia no declarada en la ficha de Hugging Face: antes de un uso comercial hay que revisar el archivo LICENSE del repositorio y las condiciones de los modelos base Qwen3.5, ya que una licencia MIT que cubra solo las contribuciones originales no resuelve por sí sola los derechos sobre los pesos derivados.
 - No se documentan pesos cuantizados, ni soporte para vLLM, llama.cpp u Ollama, lo que limita el despliegue en hardware de gama media y en entornos con requisitos de eficiencia.
 - No se documentan datos de entrenamiento (tokens, composición, técnicas de alineamiento), por lo que no es posible evaluar sesgos de datos ni riesgos de alucinación en la interfaz de decisión.
 - Riesgo operativo en producción: al devolver puntuaciones sobre candidatas, un conjunto de candidatas mal construido degrada la calidad de la decisión, con independencia de la capacidad del modelo.
@@ -120,7 +120,7 @@ Respecto a los modelos base (Qwen3.5-4B, Qwen3.5-9B y Qwen3.5-35B-A3B), no se pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/apus-ailab/APUS-OpenJev-v1
+- Modelo en Hugging Face: https://huggingface.co/apus-ailab/APUS-OpenJev-v1
 - Variante 35B-A3B: https://huggingface.co/apus-ailab/APUS-OpenJev-v1-35B-A3B
 - Variante 9B: https://huggingface.co/apus-ailab/APUS-OpenJev-v1-9B
 - Variante 4B: https://huggingface.co/apus-ailab/APUS-OpenJev-v1-4B
@@ -132,7 +132,7 @@ Respecto a los modelos base (Qwen3.5-4B, Qwen3.5-9B y Qwen3.5-35B-A3B), no se pu
 - Detalles del runtime 35B: https://huggingface.co/apus-ailab/APUS-OpenJev-v1-35B-A3B/blob/main/RUNTIME.md
 - Licencia: https://huggingface.co/apus-ailab/APUS-OpenJev-v1/blob/main/LICENSE
 - Web oficial de APUS: https://www.apusai.com
-- Organizacion en HuggingFace: https://huggingface.co/apus-ailab
+- Organizacion en Hugging Face: https://huggingface.co/apus-ailab
 - GitHub de APUS AI Lab: https://github.com/APUS-AI-Lab
 - Modelos base: https://huggingface.co/Qwen/Qwen3.5-4B, https://huggingface.co/Qwen/Qwen3.5-9B, https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Nota sobre la busqueda web: los unicos resultados devueltos corresponden a portales de contratacion publica de Kosovo y Albania (e-prokurimi.rks-gov.net, app.gov.al, krpp.rks-gov.net), sin relacion alguna con el modelo. No se han encontrado articulos, papers ni repositorios independientes sobre APUS-OpenJev-v1.

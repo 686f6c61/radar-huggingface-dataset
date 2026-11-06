@@ -19,7 +19,7 @@ Aunque la model card no proporciona detalles técnicos exhaustivos, se sabe que 
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible (la model card indica "licence: license", sin especificar) |
-| Formato de pesos | safetensors (segun los tags de HuggingFace) |
+| Formato de pesos | safetensors (segun los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -69,8 +69,8 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/sujalgawas/codegemma-2b-code-reviewer_V1)
-- [HuggingFace del modelo base google/codegemma-2b](https://huggingface.co/google/codegemma-2b)
+- [Hugging Face del modelo](https://huggingface.co/sujalgawas/codegemma-2b-code-reviewer_V1)
+- [Hugging Face del modelo base google/codegemma-2b](https://huggingface.co/google/codegemma-2b)
 - [Página oficial de CodeGemma en Google DeepMind](https://deepmind.google/models/gemma/codegemma/)
 - [Documentación de CodeGemma en Google AI for Developers](https://ai.google.dev/gemma/docs/codegemma)
 - [Repositorio de TRL](https://github.com/huggingface/trl)

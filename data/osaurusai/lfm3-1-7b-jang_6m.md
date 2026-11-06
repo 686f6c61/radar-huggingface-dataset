@@ -87,7 +87,7 @@ No se incluyen otros modelos de terceros (Qwen, Gemma, Llama en tamaños similar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OsaurusAI/LFM3-1.7B-JANG_6M
+- Modelo en Hugging Face: https://huggingface.co/OsaurusAI/LFM3-1.7B-JANG_6M
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Sitio web de Osaurus AI: https://osaurus.ai
 - Licencia (archivo LICENSE en el repositorio): https://huggingface.co/OsaurusAI/LFM3-1.7B-JANG_6M/blob/main/LICENSE

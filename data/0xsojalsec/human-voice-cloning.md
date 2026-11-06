@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `0xSojalSec/human-voice-cloning` es una publicacion en HuggingFace etiquetada como `text-to-speech` que, segun sus tags y su model card, corresponde a la familia Qwen3-TTS desarrollada por el equipo Qwen (Alibaba). Se trata de un sistema de sintesis de voz (TTS) de tipo end-to-end construido sobre una arquitectura de modelo de lenguaje discreto con multiples codebooks, que prescinde del esquema clasico LM+DiT y del correspondiente cuello de botella de informacion. El modelo declarado suma 1.916.676.352 parametros (~1,92 mil millones) y ocupa 4,5 GB en el repositorio, un tamano coherente con pesos en precision de 16 bits.
+El repositorio `0xSojalSec/human-voice-cloning` es una publicacion en Hugging Face etiquetada como `text-to-speech` que, segun sus tags y su model card, corresponde a la familia Qwen3-TTS desarrollada por el equipo Qwen (Alibaba). Se trata de un sistema de sintesis de voz (TTS) de tipo end-to-end construido sobre una arquitectura de modelo de lenguaje discreto con multiples codebooks, que prescinde del esquema clasico LM+DiT y del correspondiente cuello de botella de informacion. El modelo declarado suma 1.916.676.352 parametros (~1,92 mil millones) y ocupa 4,5 GB en el repositorio, un tamano coherente con pesos en precision de 16 bits.
 
 La propuesta tecnica de Qwen3-TTS se apoya en tres piezas: un tokenizador de audio propio (Qwen3-TTS-Tokenizer-12Hz) que comprime la senal de voz a 12 Hz preservando informacion paralinguistica, un decodificador ligero no basado en DiT, y una arquitectura de generacion en streaming hibrida de doble pista (Dual-Track) que permite emitir el primer paquete de audio tras introducir un solo caracter, con una latencia declarada de 97 ms de extremo a extremo. Esa combinacion lo situa en el segmento de TTS conversacional de baja latencia, donde la latencia de primer paquete es tan critica como la calidad final.
 
@@ -17,7 +17,7 @@ La relevancia actual del modelo radica en que unifica voz clonada, control por i
 | Parametros activos | No aplica: no se describe una arquitectura de mezcla de expertos (MoE) en la informacion disponible |
 | Longitud de contexto | No disponible (el modelo opera sobre texto y audio tokenizado; la model card no publica ventana de contexto) |
 | Tipos de cuantizacion | No disponible (el repositorio solo distribuye safetensors; la model card no lista variantes GGUF, AWQ, GPTQ ni FP8) |
-| Idiomas soportados | La model card declara 10 idiomas: chino, ingles, japones, coreano, aleman, frances, ruso, portugues, espanol e italiano, mas perfiles de voz dialectales. Los metadatos de HuggingFace indican "no disponibles" |
+| Idiomas soportados | La model card declara 10 idiomas: chino, ingles, japones, coreano, aleman, frances, ruso, portugues, espanol e italiano, mas perfiles de voz dialectales. Los metadatos de Hugging Face indican "no disponibles" |
 | Licencia | Apache 2.0 |
 | Formato de pesos | Safetensors |
 
@@ -97,7 +97,7 @@ Observacion: el recuento real de parametros del repositorio analizado (1,92 mil 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/0xSojalSec/human-voice-cloning
+- Repositorio en Hugging Face: https://huggingface.co/0xSojalSec/human-voice-cloning
 - Referencia al informe tecnico citada en los tags: https://arxiv.org/abs/2601.15621
 - Repositorios oficiales de la familia Qwen3-TTS mencionados en la model card (no verificados como origen de este artefacto):
   - https://huggingface.co/Qwen/Qwen3-TTS-Tokenizer-12Hz

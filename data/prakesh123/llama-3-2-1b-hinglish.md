@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-1B-Hinglish es un ajuste fino del modelo base meta-llama/Llama-3.2-1B de Meta, desarrollado por el usuario PRakesh123 y publicado en HuggingFace. Su objetivo es la generacion de texto en hinglish, la variante de code-mixing que combina hindi y ingles y que es de uso comun en conversaciones informales en la India. El modelo parte de la arquitectura Llama 3.2 de aproximadamente 1.235 millones de parametros y ha sido adaptado mediante un pipeline de tres etapas: continued pretraining, supervised fine-tuning y direct preference optimization.
+Llama-3.2-1B-Hinglish es un ajuste fino del modelo base meta-llama/Llama-3.2-1B de Meta, desarrollado por el usuario PRakesh123 y publicado en Hugging Face. Su objetivo es la generacion de texto en hinglish, la variante de code-mixing que combina hindi y ingles y que es de uso comun en conversaciones informales en la India. El modelo parte de la arquitectura Llama 3.2 de aproximadamente 1.235 millones de parametros y ha sido adaptado mediante un pipeline de tres etapas: continued pretraining, supervised fine-tuning y direct preference optimization.
 
 El problema que aborda es la escasez de modelos pequenos y abiertos especializados en texto code-mixed hindi-ingles. Los modelos multilingues generalistas suelen degradar la calidad cuando el prompt mezcla idiomas de forma natural, y este ajuste busca mejorar la fluidez y coherencia en ese registro concreto. Es relevante por su tamano reducido, que permite ejecucion en hardware de consumo, y por documentar un pipeline de post-entrenamiento completo (CPT, SFT y DPO) sobre un modelo base abierto.
 
@@ -87,6 +87,6 @@ La comparacion cuantitativa de rendimiento no esta disponible porque el autor no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PRakesh123/Llama-3.2-1B-Hinglish
+- Modelo en Hugging Face: https://huggingface.co/PRakesh123/Llama-3.2-1B-Hinglish
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Unsloth (herramienta de ajuste citada): https://github.com/unslothai/unsloth

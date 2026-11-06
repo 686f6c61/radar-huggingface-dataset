@@ -2,7 +2,7 @@
 
 ## Resumen
 
-S-AGI es un modelo de lenguaje publicado por Convergent Intelligence LLC, división de investigación, bajo licencia Apache 2.0. El nombre sugiere una integración de dinámicas de inteligencia de enjambre (swarm intelligence) con arquitectura transformer, aunque la model card no proporciona detalles técnicos concretos. Se enmarca dentro del portfolio de modelos desarrollados bajo el framework "Discrepancy Calculus", un enfoque teórico que trata las singularidades del entrenamiento como señales estructurales. El modelo fue creado en enero de 2026 y actualizado en agosto de 2026, pero no cuenta con descargas ni valoraciones en HuggingFace.
+S-AGI es un modelo de lenguaje publicado por Convergent Intelligence LLC, división de investigación, bajo licencia Apache 2.0. El nombre sugiere una integración de dinámicas de inteligencia de enjambre (swarm intelligence) con arquitectura transformer, aunque la model card no proporciona detalles técnicos concretos. Se enmarca dentro del portfolio de modelos desarrollados bajo el framework "Discrepancy Calculus", un enfoque teórico que trata las singularidades del entrenamiento como señales estructurales. El modelo fue creado en enero de 2026 y actualizado en agosto de 2026, pero no cuenta con descargas ni valoraciones en Hugging Face.
 
 A día de hoy, la información pública disponible es extremadamente limitada: no se especifican parámetros, arquitectura, contexto, idiomas ni capacidades. Esto impide una evaluación técnica rigurosa y limita su uso práctico en entornos de producción. La relevancia del modelo es, por tanto, incierta, y se recomienda precaución antes de considerarlo para cualquier aplicación real.
 
@@ -54,6 +54,6 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/reaperdoesntknow/S-AGI)
+- [Página del modelo en Hugging Face](https://huggingface.co/reaperdoesntknow/S-AGI)
 - [Portfolio de modelos de Convergent Intelligence LLC](https://huggingface.co/reaperdoesntknow)
 - [Paper de Discrepancy Calculus (mencionado en la model card)](https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus)

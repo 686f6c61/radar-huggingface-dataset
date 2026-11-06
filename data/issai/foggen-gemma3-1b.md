@@ -76,10 +76,10 @@ FogGen supera al enrutado aleatorio en 7,7 puntos en R14 y en 7,5 puntos de medi
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| issai/foggen-gemma3-1b | 999.885.952 | no disponible | Enrutado edge-cloud con confianza verbalizada sobre Gemma 3 | gemma | HuggingFace |
-| issai/foggen | no disponible en esta ficha | no disponible | Enrutado edge-cloud canonico sobre Qwen3-0.6B | no disponible en esta ficha | HuggingFace |
-| google/gemma-3-1b-it | no disponible en esta ficha | no disponible | Modelo base instructivo generalista | gemma | HuggingFace |
-| Qwen3-30B-A3B-Instruct-2507 | no disponible en esta ficha | no disponible | Profesor en la nube, MoE de gran tamano | no disponible en esta ficha | HuggingFace |
+| issai/foggen-gemma3-1b | 999.885.952 | no disponible | Enrutado edge-cloud con confianza verbalizada sobre Gemma 3 | gemma | Hugging Face |
+| issai/foggen | no disponible en esta ficha | no disponible | Enrutado edge-cloud canonico sobre Qwen3-0.6B | no disponible en esta ficha | Hugging Face |
+| google/gemma-3-1b-it | no disponible en esta ficha | no disponible | Modelo base instructivo generalista | gemma | Hugging Face |
+| Qwen3-30B-A3B-Instruct-2507 | no disponible en esta ficha | no disponible | Profesor en la nube, MoE de gran tamano | no disponible en esta ficha | Hugging Face |
 
 La comparacion cuantitativa entre variantes no esta disponible mas alla de los resultados de enrutado de esta ficha; el autor no publica una tabla comparativa directa entre el checkpoint Gemma y el Qwen3-0.6B canonico.
 
@@ -98,7 +98,7 @@ La comparacion cuantitativa entre variantes no esta disponible mas alla de los r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/issai/foggen-gemma3-1b
+- Modelo en Hugging Face: https://huggingface.co/issai/foggen-gemma3-1b
 - Modelo canonico FogGen: https://huggingface.co/issai/foggen
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Profesor en la nube: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507

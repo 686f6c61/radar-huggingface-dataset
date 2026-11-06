@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks comparativos de capacidad entre estas varia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JohnA0/gemma-4-31B-it-uncensored-FP8
+- Modelo en Hugging Face: https://huggingface.co/JohnA0/gemma-4-31B-it-uncensored-FP8
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Variante bf16 citada en la model card: https://huggingface.co/TrevorJS/gemma-4-31B-it-uncensored
 - Blog sobre norm-preserving biprojected abliteration: https://huggingface.co/blog/grimjim/norm-preserving-biprojected-abliteration

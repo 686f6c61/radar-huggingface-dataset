@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Leoputan/deco-humanlm-0.6b-deco-p` es un modelo de lenguaje de pequeno tamano publicado en HuggingFace por el usuario Leoputan, con licencia Apache 2.0 y pesos en formato safetensors. Por el nombre del repositorio y la etiqueta `qwen3` de HuggingFace, se trata de un derivado o ajuste fino de la familia Qwen3, con un total real de 751.632.384 parametros segun los metadatos de safetensors (el sufijo "0.6b" del nombre es aproximado). El repositorio ocupa 3,0 GB, lo que es coherente con pesos almacenados en precision de 32 bits.
+`Leoputan/deco-humanlm-0.6b-deco-p` es un modelo de lenguaje de pequeno tamano publicado en Hugging Face por el usuario Leoputan, con licencia Apache 2.0 y pesos en formato safetensors. Por el nombre del repositorio y la etiqueta `qwen3` de Hugging Face, se trata de un derivado o ajuste fino de la familia Qwen3, con un total real de 751.632.384 parametros segun los metadatos de safetensors (el sufijo "0.6b" del nombre es aproximado). El repositorio ocupa 3,0 GB, lo que es coherente con pesos almacenados en precision de 32 bits.
 
 La relevancia de este modelo es limitada y debe contextualizarse: se publica sin model card descriptiva (el README solo contiene la linea de licencia), sin pipeline declarado, sin idiomas soportados, sin resultados de benchmarks y con cero descargas y cero "likes" en el momento de la consulta. Es, por tanto, un artefacto sin documentacion tecnica ni validacion publica por parte de su autor, lo que obliga a tratar cualquier afirmacion sobre su comportamiento como no verificada.
 
@@ -12,7 +12,7 @@ A efectos practicos, encaja en la categoria de modelos pequenos (sub-1B) pensado
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible de forma explicita; la etiqueta de HuggingFace indica `qwen3`, lo que apunta a la arquitectura transformer de la familia Qwen3 |
+| Arquitectura | No disponible de forma explicita; la etiqueta de Hugging Face indica `qwen3`, lo que apunta a la arquitectura transformer de la familia Qwen3 |
 | Parametros totales | 751.632.384 (dato real extraido de los safetensors) |
 | Parametros activos | No aplica (no hay indicios de que sea un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -62,12 +62,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: los pesos en el repositorio ocupan 3,0 GB, lo que corresponde a almacenamiento en 32 bits para 751,6 millones de parametros. En la practica, cargar en fp32 exige unos 3,0 GB de VRAM; convertir a fp16 baja a aproximadamente 1,5 GB; a int8, en torno a 0,75-0,8 GB; y a 4 bits, alrededor de 0,4-0,5 GB. A estas cifras hay que sumar la memoria de la cache KV, que depende de la longitud de contexto efectiva (no publicada).
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para fp16; una NVIDIA RTX 3060, RTX 4060, RTX 4090, A100 o H100 lo ejecutarian sin dificultad. Tambien es viable en CPU, dado el tamano.
 - Compatibilidad con GPU de consumo: si, practicamente cualquier GPU de consumo de los ultimos ocho anos con 4 GB o mas de VRAM puede alojarlo.
-- Opciones de despliegue: al publicarse unicamente safetensors, los caminos directos son HuggingFace Transformers, vLLM o TGI una vez convertido, y llama.cpp u Ollama si se genera previamente una cuantizacion GGUF (no incluida en el repositorio).
+- Opciones de despliegue: al publicarse unicamente safetensors, los caminos directos son Hugging Face Transformers, vLLM o TGI una vez convertido, y llama.cpp u Ollama si se genera previamente una cuantizacion GGUF (no incluida en el repositorio).
 - Latencia y throughput: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-Los datos de la columna correspondiente a este modelo proceden de los metadatos de HuggingFace; los de los modelos de referencia son especificaciones publicas de sus fabricantes y se incluyen solo como contexto de categoria.
+Los datos de la columna correspondiente a este modelo proceden de los metadatos de Hugging Face; los de los modelos de referencia son especificaciones publicas de sus fabricantes y se incluyen solo como contexto de categoria.
 
 | Modelo | Parametros | Contexto | Licencia | Estado de documentacion |
 |---|---|---|---|---|
@@ -92,5 +92,5 @@ No se dispone de datos de rendimiento del modelo analizado que permitan una comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Leoputan/deco-humanlm-0.6b-deco-p
+- Repositorio en Hugging Face: https://huggingface.co/Leoputan/deco-humanlm-0.6b-deco-p
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. Los resultados de dicha busqueda no guardan relacion con el modelo.

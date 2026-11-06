@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `JohnCheng/gemma-4-26b-sp-oc-exp2` es una variante experimental de la familia Gemma 4, desarrollada por el usuario JohnCheng y publicada en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text, con aproximadamente 25,8 mil millones de parámetros, lo que lo sitúa en la gama de los modelos grandes de código abierto. La etiqueta "exp2" sugiere que es una iteración experimental, posiblemente con ajustes específicos en el entrenamiento o la arquitectura, aunque no se dispone de documentación detallada al respecto.
+El modelo `JohnCheng/gemma-4-26b-sp-oc-exp2` es una variante experimental de la familia Gemma 4, desarrollada por el usuario JohnCheng y publicada en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text, con aproximadamente 25,8 mil millones de parámetros, lo que lo sitúa en la gama de los modelos grandes de código abierto. La etiqueta "exp2" sugiere que es una iteración experimental, posiblemente con ajustes específicos en el entrenamiento o la arquitectura, aunque no se dispone de documentación detallada al respecto.
 
 El modelo está diseñado para tareas de conversación y razonamiento multimodal, integrando entrada de imágenes y texto. Su relevancia radica en que forma parte del ecosistema Gemma 4, que Google DeepMind ha posicionado como una familia de modelos abiertos con capacidades avanzadas de agente y razonamiento. Sin embargo, al ser una variante de terceros, su adopción en producción requiere una evaluación cuidadosa, especialmente porque el acceso está restringido (gated) y la licencia no está especificada.
 
@@ -28,7 +28,7 @@ No se ha publicado informacion detallada sobre la arquitectura especifica de est
 - Procesamiento multimodal: acepta entrada de imagenes y texto, generando respuestas textuales.
 - Conversacion multi-turno: al ser un modelo de tipo conversational, puede mantener dialogos con contexto.
 - Razonamiento sobre contenido visual: puede describir, analizar o responder preguntas sobre imagenes.
-- Integracion con transformers: compatible con la libreria de HuggingFace para inferencia y fine-tuning.
+- Integracion con transformers: compatible con la libreria de Hugging Face para inferencia y fine-tuning.
 - Capacidades de agente: segun la guia de Gemma 4 26B, los modelos de esta familia tienen soporte para agentes y tool calling, aunque no se confirma para esta variante concreta.
 
 ## Casos de uso
@@ -64,7 +64,7 @@ No se dispone de datos de rendimiento comparativo. La variante oficial de Gemma 
 ## Limitaciones y advertencias
 
 - Licencia no especificada: no se puede garantizar el uso comercial sin autorizacion explicita del autor.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede indicar que el modelo no esta completamente validado.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede indicar que el modelo no esta completamente validado.
 - Sin documentacion tecnica: no hay papers, model cards detallados ni informacion de entrenamiento.
 - Riesgo de alucinacion: al ser un modelo experimental, puede generar respuestas inexactas, especialmente en tareas de razonamiento complejo.
 - Sesgos potenciales: al no conocer el dataset de entrenamiento, no se pueden evaluar sesgos de genero, raza o idioma.
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo. La variante oficial de Gemma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JohnCheng/gemma-4-26b-sp-oc-exp2
+- Modelo en Hugging Face: https://huggingface.co/JohnCheng/gemma-4-26b-sp-oc-exp2
 - Variante it-exp: https://huggingface.co/JohnCheng/gemma-4-26b-it-exp/tree/main
 - Variante it-sp-oc-ep1: https://huggingface.co/JohnCheng/gemma-4-26b-it-sp-oc-ep1
 - Pagina oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/

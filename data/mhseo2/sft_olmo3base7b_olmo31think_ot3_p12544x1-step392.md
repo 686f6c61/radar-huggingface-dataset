@@ -72,9 +72,9 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | AIME 2025 (mean@8) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (SFT Olmo-3 7B, step 392) | 7,3B | 32.768 | 43,75 % | Apache 2.0 | HuggingFace |
-| Olmo-3-1025-7B (base, AI2) | 7,3B | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| Olmo-3.1-32B-Think (profesor) | 32B | no disponible | no disponible | no disponible | HuggingFace |
+| Este modelo (SFT Olmo-3 7B, step 392) | 7,3B | 32.768 | 43,75 % | Apache 2.0 | Hugging Face |
+| Olmo-3-1025-7B (base, AI2) | 7,3B | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| Olmo-3.1-32B-Think (profesor) | 32B | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone en la información proporcionada de resultados comparables de otros modelos de 7B en AIME 2025/2026 o HMMT, por lo que la comparativa cuantitativa con alternativas de la misma categoría queda como no disponible.
 
@@ -91,7 +91,7 @@ No se dispone en la información proporcionada de resultados comparables de otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p12544x1-step392
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p12544x1-step392
 - Modelo base: https://huggingface.co/mhseo2/Olmo-3-1025-7B-opd
 - Modelo profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Dataset OpenThoughts3: no disponible en la información proporcionada

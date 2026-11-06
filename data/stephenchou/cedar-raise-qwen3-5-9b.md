@@ -85,8 +85,8 @@ No se dispone de información sobre modelos alternativos comparables en la docum
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cedar-raise-qwen3.5-9b (adaptador LoRA) | Adaptador sobre base de ~9B (no confirmado) | no disponible | 99,20% validez sintáctica; 46,93% éxito semántico en CedarInstruct (375 escenarios) | Apache-2.0 | HuggingFace, 0 descargas |
-| StephenChou/cedar-qwen9b-sft-v2 (modelo base) | ~9B (según denominación) | no disponible | no disponible | no disponible | HuggingFace |
+| cedar-raise-qwen3.5-9b (adaptador LoRA) | Adaptador sobre base de ~9B (no confirmado) | no disponible | 99,20% validez sintáctica; 46,93% éxito semántico en CedarInstruct (375 escenarios) | Apache-2.0 | Hugging Face, 0 descargas |
+| StephenChou/cedar-qwen9b-sft-v2 (modelo base) | ~9B (según denominación) | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de generación de políticas Cedar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -103,6 +103,6 @@ No se dispone de información sobre modelos alternativos comparables en la docum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StephenChou/cedar-raise-qwen3.5-9b
+- Modelo en Hugging Face: https://huggingface.co/StephenChou/cedar-raise-qwen3.5-9b
 - Modelo base: https://huggingface.co/StephenChou/cedar-qwen9b-sft-v2
 - Paper, blog, repositorio o demo adicionales: no disponible. Las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo (los resultados obtenidos versaban sobre la configuración del navegador por defecto y no guardan relación con el modelo).

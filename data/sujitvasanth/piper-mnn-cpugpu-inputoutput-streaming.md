@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Piper MNN es una adaptación del modelo de síntesis de voz Piper (`en_US-data_7024-medium`, 22050 Hz) empaquetado en dos modelos MNN de formas fijas para permitir inferencia completa en CPU o GPU (vía MNN OpenCL) sin reconstrucción del grafo. Lo publica el usuario de HuggingFace `sujitvasanth` y su objetivo es habilitar síntesis de voz en streaming, aceptando texto palabra a palabra (por ejemplo, directamente desde la salida de un LLM) mientras el audio se emite de forma incremental.
+Piper MNN es una adaptación del modelo de síntesis de voz Piper (`en_US-data_7024-medium`, 22050 Hz) empaquetado en dos modelos MNN de formas fijas para permitir inferencia completa en CPU o GPU (vía MNN OpenCL) sin reconstrucción del grafo. Lo publica el usuario de Hugging Face `sujitvasanth` y su objetivo es habilitar síntesis de voz en streaming, aceptando texto palabra a palabra (por ejemplo, directamente desde la salida de un LLM) mientras el audio se emite de forma incremental.
 
 La innovación principal es la eliminación de formas dependientes de datos: el encoder recibe exactamente 64 IDs de fonemas y produce 160 frames latentes más duraciones por ID, y el decoder transforma 64 frames latentes en 16384 muestras de audio. Las dos entradas de ruido aleatorio pasan a ser entradas explícitas del grafo, lo que permite reutilizar el mismo ruido entre ventanas solapadas y garantizar salida bit-idéntica al export original de Piper.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Idioma | Contexto/ventana | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Piper MNN (este modelo) | TTS VITS exportado a MNN | en | 64 IDs / 64 frames por chunk | MNN, ONNX | no disponible | HuggingFace |
-| Piper original (`en_US-data_7024-medium`) | TTS VITS | en | utterance completa | ONNX | según la voz original | HuggingFace / rhasspy |
-| Coqui TTS (VITS) | TTS VITS | multilingüe | utterance completa | PyTorch, ONNX | MPL 2.0 (según modelo) | GitHub / HuggingFace |
-| Kokoro TTS | TTS | multilingüe | utterance completa | ONNX, PyTorch | Apache 2.0 | HuggingFace |
+| Piper MNN (este modelo) | TTS VITS exportado a MNN | en | 64 IDs / 64 frames por chunk | MNN, ONNX | no disponible | Hugging Face |
+| Piper original (`en_US-data_7024-medium`) | TTS VITS | en | utterance completa | ONNX | según la voz original | Hugging Face / rhasspy |
+| Coqui TTS (VITS) | TTS VITS | multilingüe | utterance completa | PyTorch, ONNX | MPL 2.0 (según modelo) | GitHub / Hugging Face |
+| Kokoro TTS | TTS | multilingüe | utterance completa | ONNX, PyTorch | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a características estructurales; no hay datos de benchmarks disponibles para comparar calidad o latencia de forma cuantitativa.
 
@@ -83,7 +83,7 @@ La comparativa se limita a características estructurales; no hay datos de bench
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sujitvasanth/piper-mnn-cpugpu-inputoutput-streaming
+- Hugging Face: https://huggingface.co/sujitvasanth/piper-mnn-cpugpu-inputoutput-streaming
 - Voz original Piper `en_US-data_7024-medium`: referencia indicada en `data.onnx.json` del repositorio (no se proporciona URL directa en la información disponible).
 - MNN (runtime de Alibaba): no se proporciona enlace en la información disponible.
 - Piper (rhasspy/piper): no se proporciona enlace en la información disponible.

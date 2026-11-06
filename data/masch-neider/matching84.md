@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`masch-neider/matching84` es un repositorio experimental de HuggingFace que contiene una implementacion propia de una base de codigo basada en MoCo v3 (Momentum Contrast v3) orientada a tareas de *matching*. Lo publica el usuario `masch-neider` y su proposito declarado no es ofrecer un modelo entrenado, sino un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El propio autor indica de forma explicita que no reclama ninguna puntuacion de benchmark y que el checkpoint incluido es una inicializacion valida unicamente para pruebas de humo (*smoke tests*).
+`masch-neider/matching84` es un repositorio experimental de Hugging Face que contiene una implementacion propia de una base de codigo basada en MoCo v3 (Momentum Contrast v3) orientada a tareas de *matching*. Lo publica el usuario `masch-neider` y su proposito declarado no es ofrecer un modelo entrenado, sino un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El propio autor indica de forma explicita que no reclama ninguna puntuacion de benchmark y que el checkpoint incluido es una inicializacion valida unicamente para pruebas de humo (*smoke tests*).
 
 El modelo es de escala *tiny* y muy pequeno: 33.088 parametros totales segun los datos de safetensors, con un tamano de repositorio practicamente nulo (0,0 GB). La arquitectura declarada combina atencion multi-query, fusion mediante *concat mlp*, activacion *swish* y normalizacion InstanceNorm. No es un modelo MoE, por lo que no hay parametros activos que distinguir.
 
@@ -69,7 +69,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 | Modelo | Categoria | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| masch-neider/matching84 | Base de codigo MoCo v3 experimental para matching | 33.088 | no disponible | Ninguno declarado | BSD-3-Clause | HuggingFace |
+| masch-neider/matching84 | Base de codigo MoCo v3 experimental para matching | 33.088 | no disponible | Ninguno declarado | BSD-3-Clause | Hugging Face |
 | Implementacion oficial de MoCo v3 (referencia) | Marco contrastivo autosupervisado | no disponible en la informacion | no disponible | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion |
 | Otros marcos contrastivos (SimCLR, BYOL, DINO) | Aprendizaje autosupervisado | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion |
 
@@ -88,7 +88,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/masch-neider/matching84
+- Hugging Face: https://huggingface.co/masch-neider/matching84
 - Archivos del repositorio: `main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper de referencia de MoCo v3 (no enlazado en la informacion proporcionada; requiere verificacion externa): no disponible
 - Repositorio oficial de MoCo v3: no disponible en la informacion proporcionada

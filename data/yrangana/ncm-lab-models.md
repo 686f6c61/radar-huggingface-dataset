@@ -89,7 +89,7 @@ No se dispone de informacion sobre alternativas de la misma categoria (NCM u otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yrangana/ncm-lab-models
+- Repositorio en Hugging Face: https://huggingface.co/yrangana/ncm-lab-models
 - Modelo base (checkpoint original): https://huggingface.co/mrfakename/ncm-webgpu-weights
 - Demos en navegador: https://ncmlab.vercel.app
 - Codigo del proyecto ncm-lab: https://github.com/yrangana/ncm-lab

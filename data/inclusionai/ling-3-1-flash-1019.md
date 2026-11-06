@@ -45,7 +45,7 @@ El modelo incorpora decodificación especulativa MTP (NEXTN), con un módulo de 
 - Razonamiento de "mundo real" medido por AA-Briefcase (1524 Elo).
 - Decodificación especulativa MTP integrada para reducir latencia en generación.
 - Capacidades multimodales (visión, audio): no documentadas en la información disponible.
-- Cobertura multilingüe: no disponible (el campo de idiomas no está poblado en la ficha de HuggingFace).
+- Cobertura multilingüe: no disponible (el campo de idiomas no está poblado en la ficha de Hugging Face).
 
 ## Casos de uso
 
@@ -108,9 +108,9 @@ La comparación de rendimiento frente a estos modelos no puede establecerse con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inclusionAI/Ling-3.1-flash-1019
+- Modelo en Hugging Face: https://huggingface.co/inclusionAI/Ling-3.1-flash-1019
 - Modelo predecesor: https://huggingface.co/inclusionAI/Ling-3.1-flash
-- Organización en HuggingFace: https://huggingface.co/inclusionAI
+- Organización en Hugging Face: https://huggingface.co/inclusionAI
 - Organización en ModelScope: https://modelscope.cn/organization/inclusionAI
 - Endpoint en OpenRouter: https://openrouter.ai/inclusionai/ling-3.1-flash
 - Cookbook de SGLang para Ling-3.1-flash: https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.1-flash

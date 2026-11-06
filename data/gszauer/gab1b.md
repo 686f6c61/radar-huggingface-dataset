@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Gab 1B | 1.028.477.184 | 107.752.704 | 2048 | MIT | Ingles | HuggingFace, runtime JS |
-| Gab 100M | No disponible | No disponible | No disponible | No disponible | No disponible | HuggingFace (gszauer/Gab100M) |
+| Gab 1B | 1.028.477.184 | 107.752.704 | 2048 | MIT | Ingles | Hugging Face, runtime JS |
+| Gab 100M | No disponible | No disponible | No disponible | No disponible | No disponible | Hugging Face (gszauer/Gab100M) |
 | Alternativas de ~1B | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la informacion proporcionada de datos de benchmarks ni de especificaciones de modelos alternativos comparables de la misma categoria, por lo que la comparativa cuantitativa de rendimiento no esta disponible. El unico modelo directamente comparable documentado es Gab 100M, su predecesor, del que se sabe que comparte arquitectura base y que Gab 1B multiplica por diez sus parametros manteniendo el mismo coste computacional por token.
@@ -92,7 +92,7 @@ No se dispone en la informacion proporcionada de datos de benchmarks ni de espec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gszauer/Gab1B
+- Modelo en Hugging Face: https://huggingface.co/gszauer/Gab1B
 - Modelo predecesor Gab 100M: https://huggingface.co/gszauer/Gab100M
 - Dataset de preentrenamiento: https://huggingface.co/datasets/gszauer/Gab100MPretrain
 - Dataset de fine-tuning: https://huggingface.co/datasets/gszauer/Gab100MFinetune

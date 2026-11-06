@@ -57,7 +57,7 @@ El entrenamiento combina una fase de finetuning supervisado sobre una mezcla rec
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas comparativas con MMLU, HumanEval, GSM8K ni metricas de OCR como edit distance o TEDS frente a otros modelos; unicamente se afirma que el throughput en despliegue con vLLM es de 2 a 3 veces superior al de los VLM de OCR de clase 0.9B, sin cifras concretas. El repositorio de HuggingFace incluye la etiqueta `eval-results`, pero no se han proporcionado los datos asociados.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas comparativas con MMLU, HumanEval, GSM8K ni metricas de OCR como edit distance o TEDS frente a otros modelos; unicamente se afirma que el throughput en despliegue con vLLM es de 2 a 3 veces superior al de los VLM de OCR de clase 0.9B, sin cifras concretas. El repositorio de Hugging Face incluye la etiqueta `eval-results`, pero no se han proporcionado los datos asociados.
 
 ## Requisitos de hardware
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Falcon-OCR 1.5 | 269.944.416 (aproximadamente 270M) | no disponible | 2-3x mas throughput que VLM de OCR de clase 0.9B en vLLM; sin benchmarks publicados | Apache 2.0 | HuggingFace, codigo en GitHub, imagen Docker |
+| Falcon-OCR 1.5 | 269.944.416 (aproximadamente 270M) | no disponible | 2-3x mas throughput que VLM de OCR de clase 0.9B en vLLM; sin benchmarks publicados | Apache 2.0 | Hugging Face, codigo en GitHub, imagen Docker |
 | VLM de OCR de clase 0.9B (categoria citada en la model card, p. ej. PaddleOCR-VL) | aproximadamente 0.9B | no disponible | referencia de comparacion de throughput del autor | no disponible | no disponible |
 | Modelos de documentos de escala similar (familia sub-1B de OCR documental) | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Falcon-Perception (`tiiuae/falcon-perception`) | no disponible | no disponible | no disponible | no disponible | HuggingFace; citado por el autor como modelo de percepcion relacionado |
+| Falcon-Perception (`tiiuae/falcon-perception`) | no disponible | no disponible | no disponible | no disponible | Hugging Face; citado por el autor como modelo de percepcion relacionado |
 
 No se dispone de datos verificables de parametros, contexto, licencia ni benchmarks de los modelos alternativos en la informacion proporcionada, salvo la referencia cualitativa del propio autor a los VLM de OCR de clase 0.9B. Se recomienda consultar las model cards oficiales antes de establecer una comparacion cuantitativa.
 
@@ -87,16 +87,16 @@ No se dispone de datos verificables de parametros, contexto, licencia ni benchma
 - Riesgo de bucles degenerativos (repeticion de frases o filas de tabla) y de over-generation en paginas con poco contenido; tambien se mitiga con GRPO, no se garantiza su ausencia.
 - Riesgo de omision silenciosa de bloques presentes en el documento, comportamiento penalizado explicitamente durante el entrenamiento, lo que indica que sigue siendo un modo de fallo relevante.
 - El modelo esta especializado en documentos. No es un VLM de proposito general: no se documentan capacidades de descripcion de escenas naturales, respuesta a preguntas visuales, tool calling, agentes ni razonamiento multi-paso.
-- Requiere `trust_remote_code=True` y `custom_code`, lo que implica ejecutar codigo del repositorio de HuggingFace. Conviene auditar ese codigo en entornos con requisitos de seguridad estrictos.
+- Requiere `trust_remote_code=True` y `custom_code`, lo que implica ejecutar codigo del repositorio de Hugging Face. Conviene auditar ese codigo en entornos con requisitos de seguridad estrictos.
 - Dependencia de PyTorch >= 2.5 por FlexAttention y de `torch.compile`; versiones anteriores no son compatibles y la primera inferencia puede tener una latencia adicional por compilacion.
 - No hay cuantizaciones oficiales ni pesos GGUF publicados, lo que limita el despliegue en entornos de CPU o en GPUs con muy poca memoria.
 - Licencia Apache 2.0: permite uso comercial, modificacion y redistribucion sin restricciones adicionales mas alla de mantener el aviso de licencia. No se documentan clausulas de uso aceptable adicionales.
 - El repositorio ocupa 5.4 GB frente a los aproximadamente 0.6 GB que ocuparian los pesos en bfloat16, una discrepancia que conviene verificar antes de desplegar en entornos con almacenamiento limitado.
-- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; toda la informacion anterior procede de la model card y de los metadatos de HuggingFace.
+- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; toda la informacion anterior procede de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tiiuae/Falcon-OCR
+- Modelo en Hugging Face: https://huggingface.co/tiiuae/Falcon-OCR
 - Codigo e motor de inferencia (Falcon-Perception): https://github.com/tiiuae/Falcon-Perception
 - Informe tecnico (arXiv): https://arxiv.org/pdf/2603.27365
 - Modelo de percepcion relacionado: https://huggingface.co/tiiuae/falcon-perception

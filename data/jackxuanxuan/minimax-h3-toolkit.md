@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jackxuanxuan/minimax-h3-toolkit` es un repositorio publicado en HuggingFace por el usuario Jackxuanxuan bajo licencia Apache 2.0. El repositorio ocupa 168,4 GB, lo que sugiere que contiene pesos de un modelo de gran tamano o un conjunto de artefactos relacionados, pero la model card publicada no incluye ninguna descripcion tecnica: unicamente el identificador de licencia. No hay informacion disponible sobre arquitectura, numero de parametros, contexto, datos de entrenamiento ni capacidades.
+`Jackxuanxuan/minimax-h3-toolkit` es un repositorio publicado en Hugging Face por el usuario Jackxuanxuan bajo licencia Apache 2.0. El repositorio ocupa 168,4 GB, lo que sugiere que contiene pesos de un modelo de gran tamano o un conjunto de artefactos relacionados, pero la model card publicada no incluye ninguna descripcion tecnica: unicamente el identificador de licencia. No hay informacion disponible sobre arquitectura, numero de parametros, contexto, datos de entrenamiento ni capacidades.
 
 El nombre del repositorio incluye el termino "minimax-h3-toolkit", lo que podria indicar una relacion con la familia de modelos MiniMax y un enfoque de toolkit o conjunto de herramientas, pero esto no se confirma en ninguna fuente proporcionada. El autor no es el equipo de MiniMax segun los datos disponibles (el campo de autor es Jackxuanxuan), por lo que no puede atribuirse oficialmente a dicho laboratorio sin verificacion adicional.
 
@@ -69,6 +69,6 @@ No disponible. No se dispone de informacion suficiente sobre el modelo (parametr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jackxuanxuan/minimax-h3-toolkit
+- Repositorio en Hugging Face: https://huggingface.co/Jackxuanxuan/minimax-h3-toolkit
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo, papers, blogs, repositorios o demos asociados.

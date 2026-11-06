@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DualCodec 12Hz v1.5 (SenseVoice) es un codec neuronal de audio de baja frecuencia de frames, desarrollado por jiaqili3 y publicado como parte del proyecto DualCodec, presentado en Interspeech 2025. El checkpoint concreto, `dualcodec12hz_v1.5_sensevoice`, está disponible en HuggingFace y pertenece a la familia de modelos DualCodec, cuyo objetivo es comprimir señales de voz manteniendo la información semántica mediante una combinación de cuantización residual (RVQ) y un cuantizador semántico. La arquitectura está alineada con el planteamiento del paper "A Low-Frame-Rate, Semantically-Enhanced Neural Audio Codec".
+DualCodec 12Hz v1.5 (SenseVoice) es un codec neuronal de audio de baja frecuencia de frames, desarrollado por jiaqili3 y publicado como parte del proyecto DualCodec, presentado en Interspeech 2025. El checkpoint concreto, `dualcodec12hz_v1.5_sensevoice`, está disponible en Hugging Face y pertenece a la familia de modelos DualCodec, cuyo objetivo es comprimir señales de voz manteniendo la información semántica mediante una combinación de cuantización residual (RVQ) y un cuantizador semántico. La arquitectura está alineada con el planteamiento del paper "A Low-Frame-Rate, Semantically-Enhanced Neural Audio Codec".
 
 Este modelo opera a una frecuencia de frames de 12.5 Hz, lo que lo hace apto para tareas de compresión de voz con muy baja tasa de bits. Utiliza hasta 8 cuantizadores RVQ, donde el primero es un cuantizador semántico con un codebook de 16384 entradas y los restantes son acústicos con codebooks de 4096. Como teacher semántico emplea FunASR SenseVoiceSmall (no usa w2v-bert), una elección que busca mejorar la retención de información lingüística y paralingüística en la representación comprimida. El repositorio ocupa 0.3 GB y los pesos se distribuyen en formato safetensors, con licencia MIT.
 
@@ -43,7 +43,7 @@ El entrenamiento se orienta a minimizar el error de reconstrucción y a preserva
 - Almacenamiento eficiente de largas grabaciones de voz: la cuantización RVQ permite elegir entre 1 y 8 cuantizadores, de modo que se puede seleccionar un bitrate más alto para archivos críticos o uno más bajo para archivado de bajo coste.
 - Tokenización de audio para modelos de lenguaje de voz: el cuantizador semántico produce una secuencia de tokens con significado lingüístico, apta como entrada para modelos generativos de audio o sistemas de texto a voz.
 - Preprocesamiento para sistemas de reconocimiento de voz (ASR): al estar alineado con SenseVoiceSmall, la representación comprimida conserva las características fonéticas necesarias para tareas de transcripción aguas abajo.
-- Investigación en codecs neuronales de baja tasa de frames: sirve como implementación de referencia con código abierto y pesos publicados en HuggingFace, útil para comparar arquitecturas y técnicas de cuantización.
+- Investigación en codecs neuronales de baja tasa de frames: sirve como implementación de referencia con código abierto y pesos publicados en Hugging Face, útil para comparar arquitecturas y técnicas de cuantización.
 - Aplicaciones de interfaz voz a voz en tiempo real: por su naturaleza ligera y su tamaño reducido (0.3 GB), puede desplegarse en máquinas con recursos limitados para realizar codificación/decodificación en pipeline.
 
 ## Benchmarks y rendimiento
@@ -73,7 +73,7 @@ No disponible. En la información proporcionada no se incluyen modelos comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jiaqili3/dualcodec12hz_v1.5_sensevoice
+- Hugging Face: https://huggingface.co/jiaqili3/dualcodec12hz_v1.5_sensevoice
 - Repositorio GitHub: https://github.com/jiaqili3/DualCodec
 - Releases del repositorio: https://github.com/jiaqili3/DualCodec/releases
 - Paper (Interspeech 2025): "DualCodec: A Low-Frame-Rate, Semantically-Enhanced Neural Audio Codec" (mencionado en el repositorio, sin URL directa disponible en la información analizada).

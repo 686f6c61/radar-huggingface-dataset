@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Nicholasreed/hw2-3d-scene-understanding` no es un modelo entrenado, sino un conjunto estructurado de notas de investigación sobre comprensión de escenas 3D, publicado por el usuario Nicholasreed bajo licencia CC-BY-4.0. Los metadatos de HuggingFace incluyen los tags `safetensors` y `transformer`, pero la propia model card aclara que el artefacto principal es el fichero `review.md` y que no se ha publicado ningún checkpoint entrenado, ni código, ni resultados experimentales.
+El repositorio `Nicholasreed/hw2-3d-scene-understanding` no es un modelo entrenado, sino un conjunto estructurado de notas de investigación sobre comprensión de escenas 3D, publicado por el usuario Nicholasreed bajo licencia CC-BY-4.0. Los metadatos de Hugging Face incluyen los tags `safetensors` y `transformer`, pero la propia model card aclara que el artefacto principal es el fichero `review.md` y que no se ha publicado ningún checkpoint entrenado, ni código, ni resultados experimentales.
 
 El contenido declarado incluye el alcance de la pregunta de investigación, posibles factores de confusión, una propuesta de comparación con baselines emparejados, referencias a benchmarks públicos, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. La model card insiste en que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados, y que el repositorio no reclama mejoras sobre benchmarks, ablaciones completadas ni código liberado.
 
@@ -66,7 +66,7 @@ No disponible. No se identifican en la información proporcionada modelos compar
 ## Limitaciones y advertencias
 
 - No es un modelo: la model card declara que no hay checkpoint entrenado, código ni resultados, por lo que no debe citarse como sistema de IA ni usarse para inferencia.
-- Riesgo de interpretación errónea: los tags `safetensors` y `transformer` en HuggingFace pueden inducir a confundir el repositorio con un modelo publicable; los apartados de planes e hipótesis no son resultados.
+- Riesgo de interpretación errónea: los tags `safetensors` y `transformer` en Hugging Face pueden inducir a confundir el repositorio con un modelo publicable; los apartados de planes e hipótesis no son resultados.
 - Riesgo de alucinación: no aplica al repositorio en sí, pero sí al uso que se haga de él, ya que sus referencias y datasets propuestos no han sido verificados por el autor como evidencia ejecutada.
 - Sin validación comunitaria: 0 descargas y 0 likes en el momento de la consulta, sin señales externas de revisión por pares.
 - Metadatos inconsistentes: el repositorio declara creación y actualización el 2026-09-27, con un tamaño de 0,0 GB y un recuento de parámetros atípicamente bajo; conviene verificar el contenido real antes de reutilizarlo.
@@ -76,5 +76,5 @@ No disponible. No se identifican en la información proporcionada modelos compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nicholasreed/hw2-3d-scene-understanding
+- Hugging Face: https://huggingface.co/Nicholasreed/hw2-3d-scene-understanding
 - No se han identificado enlaces adicionales (papers, blogs, repositorios de código o demos) en la información proporcionada.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `hab-swe/Qwen3.8-27B-MedCLI-CMT-EHRDQ-CT-SFT-100-turns` es un ajuste fino supervisado (SFT) publicado por el usuario `hab-swe` en HuggingFace. Por la nomenclatura del repositorio y la etiqueta de arquitectura `qwen3_5`, se trata de una variante derivada de la familia Qwen3.5, con 27.356.728.560 parametros totales (aproximadamente 27,36 mil millones) y una modalidad de entrada imagen-texto, segun el campo `pipeline: image-text-to-text` y la etiqueta `image-text-to-text`. El repositorio ocupa 54,7 GB, un tamano coherente con pesos almacenados en precision BF16 (2 bytes por parametro), y usa `safetensors` como formato de pesos con la libreria `transformers`.
+El modelo `hab-swe/Qwen3.8-27B-MedCLI-CMT-EHRDQ-CT-SFT-100-turns` es un ajuste fino supervisado (SFT) publicado por el usuario `hab-swe` en Hugging Face. Por la nomenclatura del repositorio y la etiqueta de arquitectura `qwen3_5`, se trata de una variante derivada de la familia Qwen3.5, con 27.356.728.560 parametros totales (aproximadamente 27,36 mil millones) y una modalidad de entrada imagen-texto, segun el campo `pipeline: image-text-to-text` y la etiqueta `image-text-to-text`. El repositorio ocupa 54,7 GB, un tamano coherente con pesos almacenados en precision BF16 (2 bytes por parametro), y usa `safetensors` como formato de pesos con la libreria `transformers`.
 
 La denominacion del modelo sugiere un ajuste orientado a dominios clinicos y medicos: los segmentos `MedCLI` (interfaz clinica medica), `EHRDQ` (posiblemente historiales clinicos electronicos y cuestionarios) y `CT` (tomografia computarizada) apuntan a un caso de uso de conversacion medica con soporte de imagenes radiologicas, mientras que el sufijo `SFT-100-turns` indica un entrenamiento supervisado sobre conversaciones de hasta 100 turnos. Esta interpretacion procede unicamente del nombre del repositorio y no esta confirmada por ninguna documentacion publicada, ya que la model card no ha sido indexada ni los resultados de busqueda web aportan informacion tecnica sobre el modelo.
 
-El modelo es relevante por dos motivos practicos: primero, porque ilustra la tendencia de ajustar modelos multimodales de gran tamano sobre datos clinicos especializados con ventanas conversacionales largas, un escenario exigente en coherencia multi-turno; segundo, porque su acceso esta restringido (gated), lo que obliga a aceptar condiciones en HuggingFace antes de descargarlo. En el momento de la consulta acumula 0 descargas y 1 like, y fue creado el 13 de septiembre de 2026 con licencia Apache 2.0.
+El modelo es relevante por dos motivos practicos: primero, porque ilustra la tendencia de ajustar modelos multimodales de gran tamano sobre datos clinicos especializados con ventanas conversacionales largas, un escenario exigente en coherencia multi-turno; segundo, porque su acceso esta restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de descargarlo. En el momento de la consulta acumula 0 descargas y 1 like, y fue creado el 13 de septiembre de 2026 con licencia Apache 2.0.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ El modelo es relevante por dos motivos practicos: primero, porque ilustra la ten
 | Modalidad | imagen-texto a texto (`image-text-to-text`) |
 | Libreria | transformers |
 | Tipo de ajuste | SFT (supervised fine-tuning), segun el sufijo del nombre del repositorio |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Compatibilidad de despliegue | etiqueta `endpoints_compatible` |
 | Region declarada | `us` |
 
@@ -72,10 +72,10 @@ Estimaciones derivadas del numero de parametros (27,36 mil millones) y del taman
 - Pesos en INT4: aproximadamente 14-16 GB, viable en GPUs de consumo como RTX 4090 (24 GB) o RTX 5090, siempre que existan cuantizaciones publicadas, cosa que no esta confirmada en el repositorio.
 - GPU recomendadas para BF16: A100 80GB, H100 80GB o varias GPUs de 48 GB en paralelo. Para INT8/FP8: A100 40GB, L40S o H100.
 - Compatibilidad con GPU de consumo: posible unicamente en cuantizacion INT4, y no hay artefactos de cuantizacion publicados por el autor en la informacion disponible.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints. Para servidores propios, `transformers` es la libreria declarada; el soporte en vLLM, TGI, llama.cpp u Ollama no esta confirmado y, en el caso de llama.cpp/Ollama, exigiria conversiones GGUF que no aparecen en el repositorio.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints. Para servidores propios, `transformers` es la libreria declarada; el soporte en vLLM, TGI, llama.cpp u Ollama no esta confirmado y, en el caso de llama.cpp/Ollama, exigiria conversiones GGUF que no aparecen en el repositorio.
 - Latencia y throughput: no disponibles.
 
-Advertencia adicional: el acceso es restringido, por lo que es necesario aceptar las condiciones del repositorio en HuggingFace antes de descargar los pesos.
+Advertencia adicional: el acceso es restringido, por lo que es necesario aceptar las condiciones del repositorio en Hugging Face antes de descargar los pesos.
 
 ## Comparativa con modelos similares
 
@@ -103,6 +103,6 @@ No se dispone de informacion suficiente para establecer comparaciones con modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hab-swe/Qwen3.8-27B-MedCLI-CMT-EHRDQ-CT-SFT-100-turns
+- Hugging Face: https://huggingface.co/hab-swe/Qwen3.8-27B-MedCLI-CMT-EHRDQ-CT-SFT-100-turns
 - Resultados de busqueda web: sin enlaces relevantes. Las consultas devolvieron unicamente paginas sobre entidades homonimas sin relacion con el modelo (definicion del termino frances «hab», Librairie HAB y HAB Galerie en Nantes).
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

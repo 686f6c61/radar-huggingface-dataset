@@ -65,6 +65,6 @@ No se han publicado comparativas con modelos similares. El modelo es un fine-tun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/by0101/qwen3-4b-star-qlora-r16-v3-merged
+- Modelo en Hugging Face: https://huggingface.co/by0101/qwen3-4b-star-qlora-r16-v3-merged
 - Versión anterior v2: https://huggingface.co/by0101/qwen3-4b-star-qlora-r16-v2
 - Versión anterior v1: https://huggingface.co/by0101/qwen3-4b-star-qlora-r16-v1

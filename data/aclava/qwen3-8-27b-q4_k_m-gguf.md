@@ -75,8 +75,8 @@ No se dispone de información suficiente para comparar directamente este modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión GGUF: https://huggingface.co/aclava/Qwen3.8-27B-Q4_K_M-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face de la conversión GGUF: https://huggingface.co/aclava/Qwen3.8-27B-Q4_K_M-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Artículo de Yottalabs sobre Qwen3.8-27B (specs y hardware): https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026
 - Documentación de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

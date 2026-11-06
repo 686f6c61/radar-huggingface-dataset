@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`tokiers/voyage-multilingual-2` no es un modelo de lenguaje generativo, sino un artefacto de tokenizacion precompilado: el tokenizer del modelo de embeddings `voyageai/voyage-multilingual-2` empaquetado en el formato binario propio de la libreria tokie (`.tkz`). Lo publica el usuario `tokiers`, presumiblemente un espacio de artefactos derivados del ecosistema tokie, y su funcion es servir como sustituto directo del tokenizer de HuggingFace para pipelines que empleen la libreria tokie en Python o Rust.
+`tokiers/voyage-multilingual-2` no es un modelo de lenguaje generativo, sino un artefacto de tokenizacion precompilado: el tokenizer del modelo de embeddings `voyageai/voyage-multilingual-2` empaquetado en el formato binario propio de la libreria tokie (`.tkz`). Lo publica el usuario `tokiers`, presumiblemente un espacio de artefactos derivados del ecosistema tokie, y su funcion es servir como sustituto directo del tokenizer de Hugging Face para pipelines que empleen la libreria tokie en Python o Rust.
 
-El interes practico es acotado pero real: tokie afirma ser un reemplazo drop-in de HuggingFace tokenizers implementado en Rust, con tokenizacion aproximadamente 50 veces mas rapida y ficheros de modelo unas 10 veces mas pequenos, cargando en torno a 5 ms. Este repositorio concreto traslada esas ventajas al tokenizer de Voyage AI, lo que resulta util si se indexan grandes volumenes de texto con embeddings multilinguales y el coste de tokenizacion en CPU se convierte en cuello de botella.
+El interes practico es acotado pero real: tokie afirma ser un reemplazo drop-in de Hugging Face tokenizers implementado en Rust, con tokenizacion aproximadamente 50 veces mas rapida y ficheros de modelo unas 10 veces mas pequenos, cargando en torno a 5 ms. Este repositorio concreto traslada esas ventajas al tokenizer de Voyage AI, lo que resulta util si se indexan grandes volumenes de texto con embeddings multilinguales y el coste de tokenizacion en CPU se convierte en cuello de botella.
 
-El repositorio ocupa unos 0,2 GB y contiene `tokenizer.tkz` (formato binario de tokie) y, si esta disponible, `tokenizer.json` original de HuggingFace. No se publican especificaciones del modelo subyacente, parametros, contexto ni benchmarks en la informacion disponible.
+El repositorio ocupa unos 0,2 GB y contiene `tokenizer.tkz` (formato binario de tokie) y, si esta disponible, `tokenizer.json` original de Hugging Face. No se publican especificaciones del modelo subyacente, parametros, contexto ni benchmarks en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El repositorio ocupa unos 0,2 GB y contiene `tokenizer.tkz` (formato binario de 
 | Tipos de cuantizacion | no disponible (no aplica a un tokenizer) |
 | Idiomas soportados | no disponible (el modelo de origen se denomina "multilingual", sin lista publicada en la informacion) |
 | Licencia | no disponible (la libreria tokie es MIT OR Apache-2.0; los ficheros derivados heredan la licencia de voyageai/voyage-multilingual-2, no especificada aqui) |
-| Formato de pesos | `tokenizer.tkz` (binario tokie) y `tokenizer.json` (HuggingFace, si esta disponible) |
+| Formato de pesos | `tokenizer.tkz` (binario tokie) y `tokenizer.json` (Hugging Face, si esta disponible) |
 
 ## Arquitectura y entrenamiento
 
@@ -38,7 +38,7 @@ No se dispone de informacion sobre el corpus de entrenamiento del tokenizer orig
 
 ## Casos de uso
 
-- Indexacion masiva para busqueda semantica: al tokenizar millones de documentos antes de pasarlos por el modelo de embeddings, el ahorro de tiempo por documento se acumula; encaja si el pipeline ya usa tokie en lugar de HuggingFace tokenizers.
+- Indexacion masiva para busqueda semantica: al tokenizar millones de documentos antes de pasarlos por el modelo de embeddings, el ahorro de tiempo por documento se acumula; encaja si el pipeline ya usa tokie en lugar de Hugging Face tokenizers.
 - Generacion de embeddings en servicios de recuperacion (RAG): el tokenizer se ejecuta en la fase de ingesta y de consulta; una carga de vocabulario de milisegundos reduce el arranque en frio de funciones serverless.
 - Deduplicacion y clustering de corpus multilingues: tokenizar y comparar representaciones a gran escala se beneficia de un tokenizer mas rapido y de menor huella en disco.
 - Pipelines en Rust: proyectos que ya trabajan en Rust pueden cargar el tokenizer sin depender del stack de Python/HuggingFace, usando la feature `hf` de tokie.
@@ -62,11 +62,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Artefacto | Tipo | Formato | Tamano de repo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tokiers/voyage-multilingual-2` | Tokenizer precompilado (tokie) | `.tkz` + `.json` | ~0,2 GB | no disponible (hereda del original) | HuggingFace, 0 descargas |
-| `voyageai/voyage-multilingual-2` | Modelo de embeddings original | no disponible | no disponible | no disponible en la informacion | HuggingFace (referenciado) |
-| Tokenizer HuggingFace equivalente | Tokenizer de referencia | `tokenizer.json` | no disponible | la del modelo original | HuggingFace |
+| `tokiers/voyage-multilingual-2` | Tokenizer precompilado (tokie) | `.tkz` + `.json` | ~0,2 GB | no disponible (hereda del original) | Hugging Face, 0 descargas |
+| `voyageai/voyage-multilingual-2` | Modelo de embeddings original | no disponible | no disponible | no disponible en la informacion | Hugging Face (referenciado) |
+| Tokenizer Hugging Face equivalente | Tokenizer de referencia | `tokenizer.json` | no disponible | la del modelo original | Hugging Face |
 
-No se dispone de datos de rendimiento comparativos entre tokie y HuggingFace tokenizers para este vocabulario concreto.
+No se dispone de datos de rendimiento comparativos entre tokie y Hugging Face tokenizers para este vocabulario concreto.
 
 ## Limitaciones y advertencias
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento comparativos entre tokie y HuggingFace tok
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tokiers/voyage-multilingual-2
+- Repositorio Hugging Face: https://huggingface.co/tokiers/voyage-multilingual-2
 - Modelo de origen: https://huggingface.co/voyageai/voyage-multilingual-2
 - Repositorio de tokie: https://github.com/chonkie-inc/tokie

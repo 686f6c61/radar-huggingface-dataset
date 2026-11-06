@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r220-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `unconst`. Se presenta como un "salvamento" (salvage) de un adaptador para el modelo base `marsplan0624/affine-5gedzafcvg-queen`, con la etiqueta `affine-h1-salvage`. La descripción indica que es un "adapter-only TTL insurance for mining H1", lo que sugiere que fue creado como respaldo o seguro temporal para un proceso de minería de datos o ajuste fino, aunque no se especifica el propósito exacto.
+El modelo `unconst/Affine-5czsc2fc98-r220-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `unconst`. Se presenta como un "salvamento" (salvage) de un adaptador para el modelo base `marsplan0624/affine-5gedzafcvg-queen`, con la etiqueta `affine-h1-salvage`. La descripción indica que es un "adapter-only TTL insurance for mining H1", lo que sugiere que fue creado como respaldo o seguro temporal para un proceso de minería de datos o ajuste fino, aunque no se especifica el propósito exacto.
 
 El repositorio contiene únicamente los pesos del adaptador en formato `safetensors` y está construido con la librería `peft`. No se proporciona información sobre la arquitectura del modelo base, el tamaño del adaptador, la licencia, los idiomas soportados ni los datos de entrenamiento. Dado que es un adaptador LoRA, su uso requiere cargar el modelo base correspondiente y aplicar el adaptador mediante técnicas de PEFT (Parameter-Efficient Fine-Tuning). La relevancia actual es limitada, ya que se trata de un artefacto intermedio sin documentación técnica ni benchmarks publicados.
 
@@ -57,5 +57,5 @@ No disponible. No se conocen modelos comparables en la misma categoría, ya que 
 
 ## Enlaces
 
-- [HuggingFace - unconst/Affine-5czsc2fc98-r220-lora](https://huggingface.co/unconst/Affine-5czsc2fc98-r220-lora)
+- [Hugging Face - unconst/Affine-5czsc2fc98-r220-lora](https://huggingface.co/unconst/Affine-5czsc2fc98-r220-lora)
 - [Modelo base: marsplan0624/affine-5gedzafcvg-queen](https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen) (enlace inferido del campo `base_model`, no verificado)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario ASD1DSA21DSA bajo el identificador `ASD1DSA21DSA/MyAwesomeModel-TestRepository`. La model card se presenta como una actualización de una versión anterior del modelo, con mejoras declaradas en razonamiento, reducción de alucinaciones y soporte de function calling. El repositorio está etiquetado con la librería `transformers`, framework `pytorch` y arquitectura `bert`, y el pipeline declarado es `feature-extraction`, lo que resulta incoherente con el contenido de la model card, que describe un modelo generativo conversacional con modo de razonamiento.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario ASD1DSA21DSA bajo el identificador `ASD1DSA21DSA/MyAwesomeModel-TestRepository`. La model card se presenta como una actualización de una versión anterior del modelo, con mejoras declaradas en razonamiento, reducción de alucinaciones y soporte de function calling. El repositorio está etiquetado con la librería `transformers`, framework `pytorch` y arquitectura `bert`, y el pipeline declarado es `feature-extraction`, lo que resulta incoherente con el contenido de la model card, que describe un modelo generativo conversacional con modo de razonamiento.
 
 La información disponible es muy limitada y en parte contradictoria: el repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, y no se especifican parámetros, longitud de contexto, idiomas ni formato de pesos. La model card incluye una tabla de benchmarks con puntuaciones numéricas, pero los nombres de los benchmarks son genéricos (Math Reasoning, Code Generation, etc.) y no se identifican los conjuntos de datos concretos ni los modelos comparados (Model1, Model2, Model1-v2). Por todo ello, esta ficha debe interpretarse como una descripción de lo declarado por el autor, no como una evaluación verificada del modelo.
 
@@ -100,7 +100,7 @@ No disponible. La model card emplea identificadores anonimizados (Model1, Model2
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASD1DSA21DSA/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/ASD1DSA21DSA/MyAwesomeModel-TestRepository
 - Repositorio de código: no disponible (la model card remite a "our code repository" sin enlace)
 - Web oficial y API: no disponible (la model card remite a "our official website" sin enlace)
 - Paper: no disponible

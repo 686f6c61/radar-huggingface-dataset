@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Slichi es un modelo publicado en HuggingFace por el usuario Slichi bajo la licencia OpenRAIL. La informacion disponible sobre el es minima: la model card unicamente contiene la declaracion de licencia (`license: openrail`) y no incluye descripcion, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,1 GB, se creo el 11 de septiembre de 2026 y acumula 0 descargas y 0 "likes" en el momento de la consulta, por lo que se trata de un artefacto practicamente sin adopcion ni documentacion publica.
+Slichi es un modelo publicado en Hugging Face por el usuario Slichi bajo la licencia OpenRAIL. La informacion disponible sobre el es minima: la model card unicamente contiene la declaracion de licencia (`license: openrail`) y no incluye descripcion, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,1 GB, se creo el 11 de septiembre de 2026 y acumula 0 descargas y 0 "likes" en el momento de la consulta, por lo que se trata de un artefacto practicamente sin adopcion ni documentacion publica.
 
 No es posible determinar en este momento que problema resuelve, cual es su arquitectura ni su tamano. La busqueda web asociada no devolvio ningun resultado relevante sobre el modelo: los enlaces recuperados corresponden a la aplicacion de mensajeria WhatsApp (whatsapp.com, web.whatsapp.com, wa.me, gizmodo.com/download/whatsapp), sin relacion alguna con Slichi. Por tanto, no existe material externo verificable (papers, blogs, repositorios o demos) que complemente la informacion del repositorio.
 
@@ -77,7 +77,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Slichi/slichi
+- Hugging Face: https://huggingface.co/Slichi/slichi
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

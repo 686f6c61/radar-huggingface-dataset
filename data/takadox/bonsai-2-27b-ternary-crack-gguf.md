@@ -117,7 +117,7 @@ El autor indica que la variación queda dentro de ±1,5 pp en la muestra de 40 p
 
 | Modelo | Parámetros | Cuantización | Tamaño | MMLU | Rechazo HB-320 | Licencia | Disponibilidad |
 |---|---|---|---:|---:|---:|---|---|
-| Bonsai 2 27B Ternary CRACK GGUF (este) | ~26,9B | Ternaria 2,13 bpw, grupo 128 | 7,21 GB | 39,91% | 0,00% | Apache-2.0 | Publicado en HuggingFace; 0 descargas, 0 likes |
+| Bonsai 2 27B Ternary CRACK GGUF (este) | ~26,9B | Ternaria 2,13 bpw, grupo 128 | 7,21 GB | 39,91% | 0,00% | Apache-2.0 | Publicado en Hugging Face; 0 descargas, 0 likes |
 | PrismML Ternary-Bonsai-2-27B-gguf (base) | ~26,9B | Ternaria 2,13 bpw, grupo 128 | 7,21 GB | 40,53% | 93,44% (off, T=0) | No disponible | Referencia base citada en la model card |
 | Qwen/Qwen3.8-27B (modelo original sin comprimir) | ~26,9B | Peso completo | No disponible | No disponible | No disponible | No disponible | Citado como base en la model card |
 
@@ -130,7 +130,7 @@ No se dispone de datos de benchmarks, licencia o contexto de Qwen3.8-27B en la i
 - Alucinación: no se han publicado métricas de factualidad, veracidad o tasa de alucinación. La precisión MMLU del 39,91% es baja en términos absolutos y está medida sobre una muestra reducida de 2.280 preguntas, con alta varianza por asignatura.
 - Sesgos: no se documenta ningún análisis de sesgos demográficos, culturales o de representación. La ausencia de filtros puede amplificar la reproducción de estereotipos presentes en los datos de entrenamiento.
 - Idiomas: no se declara la lista de idiomas soportados. La calidad y la cobertura fuera del inglés son desconocidas.
-- Contexto: no se especifica la longitud máxima de contexto soportada, ni en la información de HuggingFace ni en la model card.
+- Contexto: no se especifica la longitud máxima de contexto soportada, ni en la información de Hugging Face ni en la model card.
 - Riesgo de bucles de tokens: el propio autor advierte de que una compilación anterior presentaba un bug de coherencia en los modos de razonamiento `low` y `xhigh` que podía provocar bucles de tokens. Se recomienda usar la compilación posterior al 2026-09-17 20:44 PDT.
 - Dependencia de un fork: el runtime de referencia es un fork de llama.cpp de PrismML. La compatibilidad con versiones estándar de llama.cpp, Ollama, vLLM o TGI no está confirmada y puede requerir ajustes.
 - Modos de razonamiento y truncado: en el modo `low`, 51 de 60 respuestas se clasificaron como `NO_REFUSAL_TRUNCATED`, es decir, la deliberación se prolongó más allá del presupuesto de tokens sin emitir rechazo. Esto implica que, en producción, es necesario dimensionar bien `max_tokens` para evitar respuestas incompletas.
@@ -139,7 +139,7 @@ No se dispone de datos de benchmarks, licencia o contexto de Qwen3.8-27B en la i
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/TAKADOX/Bonsai-2-27B-Ternary-CRACK-GGUF
+- Página de Hugging Face del modelo: https://huggingface.co/TAKADOX/Bonsai-2-27B-Ternary-CRACK-GGUF
 - Modelo base ternario (PrismML): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Modelo original sin comprimir (Qwen): https://huggingface.co/Qwen/Qwen3.8-27B
 - Perfil del autor de la abliteración: https://x.com/dealignai

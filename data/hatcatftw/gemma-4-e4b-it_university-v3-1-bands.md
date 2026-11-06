@@ -90,7 +90,7 @@ No disponible. La informacion proporcionada no incluye paquetes de sondas compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HatCatFTW/gemma-4-e4b-it_university-v3.1-bands
+- Repositorio en Hugging Face: https://huggingface.co/HatCatFTW/gemma-4-e4b-it_university-v3.1-bands
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio de HAT (Headspace Ambient Transducer): https://github.com/p0ss/headspace-ambient-transducer
 - Visor de trazas grabadas: https://p0ss.github.io/headspace-ambient-transducer/

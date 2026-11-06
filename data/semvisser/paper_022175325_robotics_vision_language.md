@@ -53,7 +53,7 @@ No disponible. Este repositorio no contiene un modelo comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SEMVISSER/paper_022175325_robotics_vision_language
+- Repositorio en Hugging Face: https://huggingface.co/SEMVISSER/paper_022175325_robotics_vision_language
 - Referencias externas relacionadas con el tema del paper (no con este repositorio):
   - Gemini Robotics (paper): https://arxiv.org/pdf/2503.20020
   - RT-2 (paper): https://arxiv.org/abs/2307.15818

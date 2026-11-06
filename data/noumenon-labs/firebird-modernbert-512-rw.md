@@ -131,9 +131,9 @@ La comparacion directa disponible es contra el checkpoint del que deriva. Para a
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|---|
-| Firebird-ModernBERT-512-RW (este) | 149,6 M | 512 tokens | Clasificacion humano/IA | no disponible | HuggingFace (0 descargas, 0 likes) | Earlybird OOD: AC 84,01 %, MCC 0,7223; Pile: AUROC 0,8984 |
-| noumenon-labs/Firebird-ModernBERT-512 (original, congelado como referencia) | 149,6 M | 512 tokens | Clasificacion humano/IA | no disponible | HuggingFace | Earlybird OOD: AC 80,51 %, MCC 0,6729; Pile: AUROC 0,8941 |
-| Detectors basados en RoBERTa de la misma categoria (por ejemplo variantes tipo ChatGPT-detector o detector OpenAI de RoBERTa) | no disponible | no disponible | Clasificacion humano/IA | no disponible | HuggingFace | no disponible |
+| Firebird-ModernBERT-512-RW (este) | 149,6 M | 512 tokens | Clasificacion humano/IA | no disponible | Hugging Face (0 descargas, 0 likes) | Earlybird OOD: AC 84,01 %, MCC 0,7223; Pile: AUROC 0,8984 |
+| noumenon-labs/Firebird-ModernBERT-512 (original, congelado como referencia) | 149,6 M | 512 tokens | Clasificacion humano/IA | no disponible | Hugging Face | Earlybird OOD: AC 80,51 %, MCC 0,6729; Pile: AUROC 0,8941 |
+| Detectors basados en RoBERTa de la misma categoria (por ejemplo variantes tipo ChatGPT-detector o detector OpenAI de RoBERTa) | no disponible | no disponible | Clasificacion humano/IA | no disponible | Hugging Face | no disponible |
 
 No se dispone de comparaciones con modelos generativos tipo LLM como detectores, ni de resultados frente a detectores comerciales (GPTZero, Originality.ai u otros similares), por lo que la comparativa queda limitada al checkpoint de origen.
 
@@ -154,7 +154,7 @@ No se dispone de comparaciones con modelos generativos tipo LLM como detectores,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/noumenon-labs/Firebird-ModernBERT-512-RW
+- Modelo en Hugging Face: https://huggingface.co/noumenon-labs/Firebird-ModernBERT-512-RW
 - Checkpoint original del que deriva: https://huggingface.co/noumenon-labs/Firebird-ModernBERT-512
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - Dataset de evaluacion Earlybird V2: https://huggingface.co/datasets/noumenon-labs/Earlybird-V2

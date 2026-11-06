@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RuBio-4B | ≈4,66 B | 4.096 en entrenamiento; 8.192 en el ejemplo de vLLM | Evaluación de respuestas de desarrollo de biología (coreano) con salida JSON | Apache 2.0 | HuggingFace (`mulkzz/RuBio-4B`) |
-| Qwen/Qwen3.5-4B (base) | ≈4,66 B | No disponible en la información proporcionada | Modelo de propósito general, chat y generación de texto | Según el modelo base (no disponible en la información proporcionada) | HuggingFace |
+| RuBio-4B | ≈4,66 B | 4.096 en entrenamiento; 8.192 en el ejemplo de vLLM | Evaluación de respuestas de desarrollo de biología (coreano) con salida JSON | Apache 2.0 | Hugging Face (`mulkzz/RuBio-4B`) |
+| Qwen/Qwen3.5-4B (base) | ≈4,66 B | No disponible en la información proporcionada | Modelo de propósito general, chat y generación de texto | Según el modelo base (no disponible en la información proporcionada) | Hugging Face |
 | Modelos de evaluación educativa de propósito general (p. ej. LLM grandes con prompt de rúbrica) | No disponible | No disponible | Evaluación mediante prompting, sin formato JSON garantizado | Variable | Variable |
 
 No se dispone de datos de rendimiento comparativos entre RuBio-4B y alternativas; la comparación anterior es estructural (tamaño, tarea, licencia) y no de calidad.
@@ -85,6 +85,6 @@ No se dispone de datos de rendimiento comparativos entre RuBio-4B y alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulkzz/RuBio-4B
+- Modelo en Hugging Face: https://huggingface.co/mulkzz/RuBio-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Demo del autor: https://mulk.codes/rubio

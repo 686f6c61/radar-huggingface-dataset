@@ -29,7 +29,7 @@ El modelo base `TrevorJS/gemma-4-26B-A4B-it-uncensored` es una versión "abliter
 
 - Generación de texto libre y conversación multi-turno, con soporte de chat mediante plantillas (chat template).
 - Al ser abliterado, no aplica restricciones de contenido por defecto, lo que permite generar respuestas sobre temas que otros modelos rechazarían.
-- Según las etiquetas de HuggingFace, podría tener capacidades de imagen-texto (image-text-to-text), aunque no se confirma en la documentación.
+- Según las etiquetas de Hugging Face, podría tener capacidades de imagen-texto (image-text-to-text), aunque no se confirma en la documentación.
 - No se indica soporte explícito para tool calling, function calling o razonamiento multi-paso.
 - Limitado al idioma inglés.
 
@@ -71,5 +71,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manhellis/gemma-4-26B-A4B-it-uncensored-mlx-4Bit
+- Modelo en Hugging Face: https://huggingface.co/manhellis/gemma-4-26B-A4B-it-uncensored-mlx-4Bit
 - Modelo base (TrevorJS/gemma-4-26B-A4B-it-uncensored): https://huggingface.co/TrevorJS/gemma-4-26B-A4B-it-uncensored

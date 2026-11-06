@@ -36,7 +36,7 @@ No existe arquitectura ni proceso de entrenamiento. El repositorio contiene úni
 - Punto de partida para disenar un estudio comparativo: la nota plantea una hipotesis falsable y un plan de evaluacion con baselines emparejados.
 - Material docente para cursos de metodos de investigacion en IA: muestra como estructurar una pregunta de investigacion, confounders y planes de reproducibilidad.
 - Ejemplo de buenas practicas en publicacion cientifica: la model card insiste en incluir versiones de datasets, comandos, semillas, hardware y logs si se anaden resultados.
-- Auditoria de repositorios en HuggingFace: sirve para identificar que no todo lo publicado bajo la etiqueta "modelo" contiene realmente pesos entrenados.
+- Auditoria de repositorios en Hugging Face: sirve para identificar que no todo lo publicado bajo la etiqueta "modelo" contiene realmente pesos entrenados.
 - No es adecuado para ningun caso de uso de produccion, inferencia o integracion en aplicaciones.
 
 ## Benchmarks y rendimiento
@@ -65,5 +65,5 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hannahher/multimodal-generation
+- Repositorio en Hugging Face: https://huggingface.co/Hannahher/multimodal-generation
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este repositorio concreto.

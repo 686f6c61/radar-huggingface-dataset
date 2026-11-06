@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mmproj-Linkless-AI-VL es un componente de proyección multimodal (mmproj) publicado por el usuario FriedenNT en HuggingFace. Se trata de un artefacto auxiliar, no de un modelo de lenguaje completo: los ficheros mmproj en formato GGUF se emplean junto con un modelo base de visión-lenguaje para conectar el codificador visual con el decodificador de texto, de modo que el conjunto pueda procesar imágenes además de texto.
+mmproj-Linkless-AI-VL es un componente de proyección multimodal (mmproj) publicado por el usuario FriedenNT en Hugging Face. Se trata de un artefacto auxiliar, no de un modelo de lenguaje completo: los ficheros mmproj en formato GGUF se emplean junto con un modelo base de visión-lenguaje para conectar el codificador visual con el decodificador de texto, de modo que el conjunto pueda procesar imágenes además de texto.
 
 El repositorio contiene 665.271.296 parámetros según los metadatos de safetensors y ocupa 1,3 GB, un tamaño coherente con un proyector multimodal de tamaño medio. La model card publicada es prácticamente vacía: no incluye descripción del modelo, datos de entrenamiento, arquitectura interna, idiomas ni benchmarks, y la licencia figura como desconocida.
 
@@ -73,4 +73,4 @@ No disponible. No se han identificado proyectores multimodales comparables con d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FriedenNT/mmproj-Linkless-AI-VL
+- Hugging Face: https://huggingface.co/FriedenNT/mmproj-Linkless-AI-VL

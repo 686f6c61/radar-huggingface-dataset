@@ -65,6 +65,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Polaris-V1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Polaris-V1-GGUF
 - Modelo original (nitrai-research): https://huggingface.co/nitrai-research/Polaris-V1
 - Otros modelos GGUF del mismo autor: https://huggingface.co/mradermacher (página de usuario)

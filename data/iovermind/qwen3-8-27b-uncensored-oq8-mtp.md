@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored-oQ8-mtp es una cuantización de precisión mixta del modelo Qwen3.8-27B en su variante "uncensored", publicada por el usuario iOvermind en HuggingFace. El checkpoint se ha generado con la herramienta oQ (oMLX v0.7.3), un esquema de cuantización de precisión mixta orientado a la librería MLX de Apple, lo que lo hace ejecutable de forma nativa en hardware Apple Silicon. El modelo conserva el pipeline multimodal del original: incluye un componente de visión de 0,461B de parámetros además del language model y una cabeza MTP (multi-token prediction) de 0,425B.
+Qwen3.8-27B-Uncensored-oQ8-mtp es una cuantización de precisión mixta del modelo Qwen3.8-27B en su variante "uncensored", publicada por el usuario iOvermind en Hugging Face. El checkpoint se ha generado con la herramienta oQ (oMLX v0.7.3), un esquema de cuantización de precisión mixta orientado a la librería MLX de Apple, lo que lo hace ejecutable de forma nativa en hardware Apple Silicon. El modelo conserva el pipeline multimodal del original: incluye un componente de visión de 0,461B de parámetros además del language model y una cabeza MTP (multi-token prediction) de 0,425B.
 
 El checkpoint totaliza 27.781.427.952 parámetros (27,78B) y ocupa 30,0 GB en disco, con un promedio efectivo de 8,639 bits por peso. La práctica totalidad de los pesos (98,143%) se almacena en affine 8-bit con grupo de 64, mientras que un 1,857% (0,516B) se mantiene en BF16, presumiblemente para preservar capas sensibles a la cuantización. La etiqueta "mtp" indica que el modelo incorpora decodificación especulativa mediante predicción multi-token, una innovación de la familia Qwen3 orientada a acelerar la inferencia.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Uncensored-oQ8-mtp (este) | 27,78B | no disponible | safetensors MLX (8-bit mixto) | no disponible | HuggingFace, 0 descargas |
+| Qwen3.8-27B-Uncensored-oQ8-mtp (este) | 27,78B | no disponible | safetensors MLX (8-bit mixto) | no disponible | Hugging Face, 0 descargas |
 | Modelo base Qwen3.5-27B (referencia) | ~27B | no disponible | safetensors BF16 | no disponible | No verificado en la información |
 | Otras cuantizaciones MLX de la familia Qwen3 | no disponible | no disponible | safetensors MLX | no disponible | no disponible |
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iOvermind/Qwen3.8-27B-Uncensored-oQ8-mtp
+- Hugging Face: https://huggingface.co/iOvermind/Qwen3.8-27B-Uncensored-oQ8-mtp
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base Qwen3.5-27B: no disponible en la información proporcionada
 - Paper, blog o demo del modelo: no disponible en la información proporcionada

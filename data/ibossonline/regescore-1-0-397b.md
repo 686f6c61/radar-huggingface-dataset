@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RegesCore-1.0-397B es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con 396.802.360.816 parámetros totales (unos 396,8 mil millones) publicado en HuggingFace por el usuario iBossonline bajo licencia MIT. La etiqueta de arquitectura del repositorio es `qwen3_5_moe`, y la model card incluida corresponde literalmente a **Ornith-1.0-397B** de deepreinforce-ai, del que este repositorio parece ser una re-subida o espejo renombrado. Según esa model card, el modelo se ha post-entrenado sobre Qwen 3.5 y Gemma 4 y está especializado en *agentic coding*: resolución autónoma de tareas de ingeniería de software, uso de terminal y generación de repositorios completos.
+RegesCore-1.0-397B es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con 396.802.360.816 parámetros totales (unos 396,8 mil millones) publicado en Hugging Face por el usuario iBossonline bajo licencia MIT. La etiqueta de arquitectura del repositorio es `qwen3_5_moe`, y la model card incluida corresponde literalmente a **Ornith-1.0-397B** de deepreinforce-ai, del que este repositorio parece ser una re-subida o espejo renombrado. Según esa model card, el modelo se ha post-entrenado sobre Qwen 3.5 y Gemma 4 y está especializado en *agentic coding*: resolución autónoma de tareas de ingeniería de software, uso de terminal y generación de repositorios completos.
 
 El interés del modelo reside en su enfoque de entrenamiento: un marco de auto-mejora basado en RL que optimiza conjuntamente el *scaffold* (la estructura de razonamiento y las llamadas a herramientas) y las soluciones generadas, en lugar de limitarse a optimizar las soluciones. Según los datos de la model card, esto le permite alcanzar 77,5 en Terminal-Bench 2.1 (Terminus-2) y 82,4 en SWE-bench Verified, por encima de Qwen3.5-397B y cerca de Claude Opus 4.8 en la tarea de Claude Code.
 
@@ -103,7 +103,7 @@ Frente a Qwen3.5-397B, del mismo orden de parámetros, el modelo declara una ven
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/iBossonline/RegesCore-1.0-397B
+- Repositorio en Hugging Face: https://huggingface.co/iBossonline/RegesCore-1.0-397B
 - Repositorio original referenciado en la model card: https://huggingface.co/deepreinforce-ai/Ornith-1.0-397B
 - Fichero de licencia referenciado: https://huggingface.co/deepreinforce-ai/Ornith-1.0-397B/blob/main/LICENSE
 - Blog de Ornith: https://deep-reinforce.com/ornith.html

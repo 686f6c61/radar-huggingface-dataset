@@ -79,8 +79,8 @@ La comparativa directa con el base es la más relevante: el modelo Jbliterated m
 
 ## Enlaces
 
-- [HuggingFace: ApolloRaines/Llama-3.1-405B-Instruct-Jbliterated](https://huggingface.co/ApolloRaines/Llama-3.1-405B-Instruct-Jbliterated)
-- [HuggingFace: meta-llama/Llama-3.1-405B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct)
+- [Hugging Face: ApolloRaines/Llama-3.1-405B-Instruct-Jbliterated](https://huggingface.co/ApolloRaines/Llama-3.1-405B-Instruct-Jbliterated)
+- [Hugging Face: meta-llama/Llama-3.1-405B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct)
 - [Repositorio DeepswapLLM](https://github.com/apolloraines/DeepswapLLM)
 - [Documentación de Meta sobre Llama 3.1](https://ai.meta.com/llama/)
 - [Análisis de Llama-3.1-405B-Instruct en aimodels.fyi](https://www.aimodels.fyi/models/huggingFace/llama-31-405b-instruct-meta-llama)

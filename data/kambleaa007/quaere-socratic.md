@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Quaere-socratic es un modelo publicado en HuggingFace por el usuario kambleaa007 bajo el identificador `kambleaa007/quaere-socratic`. El repositorio contiene un total de 8.030.261.248 parametros (aproximadamente 8,03 mil millones) segun los pesos en formato safetensors, con un tamano de repositorio de 21,0 GB que incluye tambien artefactos en formato GGUF. La licencia declarada es Apache 2.0 y la model card asociada no contiene mas informacion que la cabecera de licencia: no se documentan arquitectura, datos de entrenamiento, capacidades ni idiomas.
+Quaere-socratic es un modelo publicado en Hugging Face por el usuario kambleaa007 bajo el identificador `kambleaa007/quaere-socratic`. El repositorio contiene un total de 8.030.261.248 parametros (aproximadamente 8,03 mil millones) segun los pesos en formato safetensors, con un tamano de repositorio de 21,0 GB que incluye tambien artefactos en formato GGUF. La licencia declarada es Apache 2.0 y la model card asociada no contiene mas informacion que la cabecera de licencia: no se documentan arquitectura, datos de entrenamiento, capacidades ni idiomas.
 
 La etiqueta `llama` del repositorio sugiere una arquitectura basada en la familia Llama, y el recuento exacto de parametros coincide con el de la arquitectura Llama 3 de 8B, aunque esta correspondencia es una inferencia a partir del numero de parametros y no una afirmacion confirmada por el autor. El modelo no registra descargas ni interacciones y no se ha publicado informacion adicional en la busqueda web realizada, cuyos resultados no guardan relacion con el modelo.
 
@@ -22,7 +22,7 @@ Por el momento, la ficha debe considerarse provisional: cualquier evaluacion de 
 | Formato de pesos | safetensors y GGUF |
 | Tamano del repositorio | 21,0 GB |
 | Pipeline declarado | no disponible |
-| Compatibilidad | etiqueta `endpoints_compatible` (compatible con HuggingFace Inference Endpoints) |
+| Compatibilidad | etiqueta `endpoints_compatible` (compatible con Hugging Face Inference Endpoints) |
 | Fecha de creacion | 2026-09-19 |
 | Ultima actualizacion | 2026-09-19 |
 
@@ -69,7 +69,7 @@ Las cifras de VRAM que se indican a continuacion son calculos derivados del recu
 - Cuantizacion de 4 bits (GGUF Q4_K_M): aproximadamente 4,9 GB de pesos.
 - GPU de datacenter: A100 40 GB, A100 80 GB o H100 son suficientes en FP16 con contexto moderado.
 - GPU de consumo: cabe en RTX 4090 (24 GB) en FP16 con contexto limitado; en RTX 3090, RTX 4080 o RTX 3060 de 12 GB es recomendable cuantizar a 8 bits o 4 bits.
-- Opciones de despliegue: los formatos publicados (safetensors y GGUF) permiten vLLM o TGI para safetensors y llama.cpp u Ollama para GGUF. La etiqueta `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: los formatos publicados (safetensors y GGUF) permiten vLLM o TGI para safetensors y llama.cpp u Ollama para GGUF. La etiqueta `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible. No hay mediciones publicadas de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -99,6 +99,6 @@ Observacion: el recuento de parametros de quaere-socratic coincide con el de Lla
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kambleaa007/quaere-socratic
+- Hugging Face: https://huggingface.co/kambleaa007/quaere-socratic
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados devueltos por la busqueda no guardan ninguna relacion con el modelo.

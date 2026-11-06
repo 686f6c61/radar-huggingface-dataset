@@ -71,7 +71,7 @@ No hay información de comparativas con otros adaptadores o modelos. Se podría 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jsimao71/pra-qwen3-0.6b
+- Hugging Face: https://huggingface.co/jsimao71/pra-qwen3-0.6b
 - Documentación PRA: https://einnovator.github.io/pdattention/
 - Repositorio fuente: https://github.com/einnovator/pdattention
 - Issues: https://github.com/einnovator/pdattention/issues

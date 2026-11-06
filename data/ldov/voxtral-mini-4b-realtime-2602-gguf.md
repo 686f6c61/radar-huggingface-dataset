@@ -27,7 +27,7 @@ El paquete está validado numéricamente contra la implementación de referencia
 | Traduccion de voz | no |
 | Deteccion de idioma | si |
 | Marcas de tiempo (timestamps) | no |
-| Fecha de creacion del repositorio GGUF | 2026-09-24 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repositorio GGUF | 2026-09-24 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 

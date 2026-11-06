@@ -81,7 +81,7 @@ Se puede señalar que el autor `leary-criste` publicó otro checkpoint relaciona
 
 ## Enlaces
 
-- Repositorio de archivo en HuggingFace: https://huggingface.co/gurujustin/affine-archive-nw2-leary-criste-affine-5g4yy75zuz-q2
+- Repositorio de archivo en Hugging Face: https://huggingface.co/gurujustin/affine-archive-nw2-leary-criste-affine-5g4yy75zuz-q2
 - Repositorio original (posiblemente eliminado): https://huggingface.co/leary-criste/affine-5g4yy75zuz-q2
 - Modelo relacionado del mismo autor: https://huggingface.co/leary-criste/affine-5g4yy75zuz-t1
 - Perfil del autor original: https://huggingface.co/leary-criste/models

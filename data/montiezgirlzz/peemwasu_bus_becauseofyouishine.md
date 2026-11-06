@@ -2,7 +2,7 @@
 
 ## Resumen
 
-La ficha corresponde al repositorio `montiezgirlzz/Peemwasu_bus_becauseofyouishine`, publicado en HuggingFace por el usuario `montiezgirlzz`. La informacion disponible es practicamente nula: la model card no contiene mas que la linea `license: unknown`, no se declara pipeline, no se declaran idiomas soportados, no hay descripcion de arquitectura ni de datos de entrenamiento, y el repositorio acumula 0 descargas y 0 likes. El tamano del repositorio es de 0,1 GB y las unicas etiquetas presentes son `license:unknown` y `region:us`.
+La ficha corresponde al repositorio `montiezgirlzz/Peemwasu_bus_becauseofyouishine`, publicado en Hugging Face por el usuario `montiezgirlzz`. La informacion disponible es practicamente nula: la model card no contiene mas que la linea `license: unknown`, no se declara pipeline, no se declaran idiomas soportados, no hay descripcion de arquitectura ni de datos de entrenamiento, y el repositorio acumula 0 descargas y 0 likes. El tamano del repositorio es de 0,1 GB y las unicas etiquetas presentes son `license:unknown` y `region:us`.
 
 No es posible determinar que tipo de artefacto contiene el repositorio. El nombre del modelo, los resultados de busqueda asociados y las etiquetas no permiten confirmar si se trata de un modelo de lenguaje, un modelo de vision, un adaptador LoRA, un checkpoint de difusion o un conjunto de archivos auxiliares. Tampoco existen resultados de benchmarks, demos, papers ni documentacion tecnica publicada por el autor.
 
@@ -25,8 +25,8 @@ Por tanto, esta ficha se limita a registrar los metadatos verificables y a marca
 | Etiquetas | license:unknown, region:us |
 | Descargas | 0 |
 | Likes | 0 |
-| Fecha de creacion (metadatos de HuggingFace) | 2026-10-05T22:57:33Z |
-| Ultima actualizacion (metadatos de HuggingFace) | 2026-10-05T22:58:11Z |
+| Fecha de creacion (metadatos de Hugging Face) | 2026-10-05T22:57:33Z |
+| Ultima actualizacion (metadatos de Hugging Face) | 2026-10-05T22:58:11Z |
 | Autor | montiezgirlzz |
 
 ## Arquitectura y entrenamiento
@@ -87,8 +87,8 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/montiezgirlzz/Peemwasu_bus_becauseofyouishine
-- Perfil del autor en HuggingFace: https://huggingface.co/montiezgirlzz
+- Modelo en Hugging Face: https://huggingface.co/montiezgirlzz/Peemwasu_bus_becauseofyouishine
+- Perfil del autor en Hugging Face: https://huggingface.co/montiezgirlzz
 - Repositorio relacionado del mismo autor: https://huggingface.co/montiezgirlzz/Aa_bus_becauseofyouishine
 
 Los siguientes resultados de busqueda aparecen asociados al nombre del modelo, pero no contienen informacion tecnica y remiten a contenido sin relacion con inteligencia artificial: https://www.instagram.com/reel/DQGiJfqkTQZ/, https://www.youtube.com/watch?v=h6DGni00f-U y https://www.instagram.com/p/Cz55_4PMvub/. No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos.

@@ -108,7 +108,7 @@ Comparación con otros modelos de parámetros y contexto similares: no disponibl
 
 ## Enlaces
 
-- Paquete Loom en HuggingFace: https://huggingface.co/loom-fun/nvidia-NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-loom
+- Paquete Loom en Hugging Face: https://huggingface.co/loom-fun/nvidia-NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-loom
 - Modelo base (GGUF `Q4_K_M`): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB
 - SDK Loom (ROCm/hrx-system): https://github.com/ROCm/hrx-system
 - Flujo de generación loom-skills: https://github.com/loom-fun/loom-skills

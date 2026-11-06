@@ -87,8 +87,8 @@ No se han publicado en la informacion disponible resultados comparativos directo
 
 | Modelo | Parametros | Contexto / entrada | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| XLSR-Mamba-DF (este) | 319,33 M | 66.800 muestras @16 kHz | XLS-R + Mamba bidireccional | MIT | HuggingFace |
-| XLSR-Mamba (checkpoint LA) | 319,33 M | 66.800 muestras @16 kHz | XLS-R + Mamba bidireccional, ajustado a LA | MIT | HuggingFace (mismo repo de autores) |
+| XLSR-Mamba-DF (este) | 319,33 M | 66.800 muestras @16 kHz | XLS-R + Mamba bidireccional | MIT | Hugging Face |
+| XLSR-Mamba (checkpoint LA) | 319,33 M | 66.800 muestras @16 kHz | XLS-R + Mamba bidireccional, ajustado a LA | MIT | Hugging Face (mismo repo de autores) |
 | XLSR-MamBo | no disponible | no disponible | Modelo distinto segun el autor (arXiv 2601.02944) | no disponible | no disponible |
 | AASIST y variantes | no disponible | no disponible | Back-end graph attention sobre features acusticas | no disponible | no disponible |
 
@@ -108,7 +108,7 @@ No se dispone de datos de rendimiento de los modelos alternativos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SpeechAntiSpoofingBenchmarks/XLSR-Mamba-DF
+- Modelo en Hugging Face: https://huggingface.co/SpeechAntiSpoofingBenchmarks/XLSR-Mamba-DF
 - Pesos (commit-pinned): https://huggingface.co/SpeechAntiSpoofingBenchmarks/XLSR-Mamba-DF/blob/e97533f5ac8303cf0e7215bb8b452cdc7a74fefb/model.safetensors
 - Speech Anti-Spoofing Arena: https://huggingface.co/spaces/SpeechAntiSpoofingBenchmarks/SpeechAntiSpoofingArena
 - Ficha del sistema en la arena: https://huggingface.co/spaces/SpeechAntiSpoofingBenchmarks/SpeechAntiSpoofingArena?system=xlsr-mamba-df

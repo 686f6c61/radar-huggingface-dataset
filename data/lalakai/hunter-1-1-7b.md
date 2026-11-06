@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hunter-1-1.7B es un ajuste fino mediante LoRA del modelo base XHToken/Spark-X2.5-1.7B, desarrollado por el usuario Lalakai y publicado en HuggingFace. El modelo está especializado en ciberseguridad defensiva: triaje de incidentes, respuesta ante incidentes (incident response) y razonamiento causal sobre rutas de ataque (attack-path). Se distribuye con licencia Apache 2.0 y pesos en safetensors.
+Hunter-1-1.7B es un ajuste fino mediante LoRA del modelo base XHToken/Spark-X2.5-1.7B, desarrollado por el usuario Lalakai y publicado en Hugging Face. El modelo está especializado en ciberseguridad defensiva: triaje de incidentes, respuesta ante incidentes (incident response) y razonamiento causal sobre rutas de ataque (attack-path). Se distribuye con licencia Apache 2.0 y pesos en safetensors.
 
 El modelo cuenta con 1.707.657.216 parámetros (aproximadamente 1,7 mil millones) y utiliza la arquitectura propietaria `Spark2_5ForCausalLM`, que requiere cargar el código remoto con `trust_remote_code=True`. Durante el entrenamiento se aplicó un LoRA de rango 16 exclusivamente sobre las proyecciones `gate_proj` y `up_proj` (7,8 millones de parámetros entrenables, un 0,45 % del total), y los pesos resultantes se fusionaron en los pesos base en BF16.
 
@@ -91,7 +91,7 @@ No se identifican en la información disponible otros modelos comparables de la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lalakai/Hunter-1-1.7B
+- Modelo en Hugging Face: https://huggingface.co/Lalakai/Hunter-1-1.7B
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-1.7B
 - Dataset de entrenamiento: `oi-uae/cyber-security` (referenciado en la model card)
 - Paper, blog o repositorio adicional: no disponible

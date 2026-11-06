@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una cuantización GGUF de 2 GB de `huihui-ai/Huihui-Qwen3.5-4B-abliterated`, un modelo de base Qwen3.5-4B sin censura (abliterado) desarrollado por Alibaba y afinado con TRL para eliminar los comportamientos de rechazo. La publicación en HuggingFace es de Etherealty, mientras que la cuantización ha sido realizada por Asystemoffields mediante la técnica Production Mixed-Rate Allocation (PMRA). El objetivo es ofrecer una versión lista para llama.cpp que ocupe lo mismo que una cuantización `IQ3_XS` estándar, pero con mejor reconstrucción de los pesos: a igual tamaño, este build logra 0,60 nats menos de pérdida de negativo log-likelihood (NLL) en Wikitext-2.
+Este modelo es una cuantización GGUF de 2 GB de `huihui-ai/Huihui-Qwen3.5-4B-abliterated`, un modelo de base Qwen3.5-4B sin censura (abliterado) desarrollado por Alibaba y afinado con TRL para eliminar los comportamientos de rechazo. La publicación en Hugging Face es de Etherealty, mientras que la cuantización ha sido realizada por Asystemoffields mediante la técnica Production Mixed-Rate Allocation (PMRA). El objetivo es ofrecer una versión lista para llama.cpp que ocupe lo mismo que una cuantización `IQ3_XS` estándar, pero con mejor reconstrucción de los pesos: a igual tamaño, este build logra 0,60 nats menos de pérdida de negativo log-likelihood (NLL) en Wikitext-2.
 
 Arquitectónicamente, el modelo base es un transformer híbrido que intercala capas de atención lineal gated tipo DeltaNet con capas de atención completa periódicas, lo que reduce el coste de inferencia en contextos largos. Tiene 4.205.751.296 parámetros y la licencia es Apache-2.0. La longitud de contexto no se ha especificado en la información disponible. El modelo es un único archivo GGUF que puede cargarse con llama.cpp o Ollama, sin necesidad de un runtime personalizado.
 
@@ -107,7 +107,7 @@ No se dispone de información comparativa con otros modelos de 4B de otros fabri
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Etherealty/Huihui-Qwen3.5-4B-Abliterated-PMRA-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Etherealty/Huihui-Qwen3.5-4B-Abliterated-PMRA-GGUF
 - Modelo base abliterado (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Qwen3.5-4B-abliterated
 - Fuentes GGUF para la cuantización: https://huggingface.co/mradermacher/Huihui-Qwen3.5-4B-abliterated-i1-GGUF
 - Método PMRA y reproducción: https://github.com/asystemoffields/PMRA

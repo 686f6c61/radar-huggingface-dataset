@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QwenDGAF-Coder-2-1.5B es un modelo de lenguaje publicado en HuggingFace por el usuario hecan3d bajo licencia Apache 2.0. Por su nomenclatura, se trata presumiblemente de un modelo derivado o ajustado (fine-tune) a partir de la familia Qwen, orientado a tareas de generación de código, con un tamaño aproximado de 1.500 millones de parámetros. El nombre sugiere una variante "Coder" de segunda generación sobre una base Qwen de 1.5B.
+QwenDGAF-Coder-2-1.5B es un modelo de lenguaje publicado en Hugging Face por el usuario hecan3d bajo licencia Apache 2.0. Por su nomenclatura, se trata presumiblemente de un modelo derivado o ajustado (fine-tune) a partir de la familia Qwen, orientado a tareas de generación de código, con un tamaño aproximado de 1.500 millones de parámetros. El nombre sugiere una variante "Coder" de segunda generación sobre una base Qwen de 1.5B.
 
 La información pública disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia Apache 2.0, sin descripción técnica, datos de entrenamiento, benchmarks ni instrucciones de uso. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no declara pipeline, idiomas soportados ni formato de pesos.
 
@@ -80,5 +80,5 @@ La comparación se ofrece únicamente como referencia de categoría; no se dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hecan3d/QwenDGAF-Coder-2-1.5B
+- Hugging Face: https://huggingface.co/hecan3d/QwenDGAF-Coder-2-1.5B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

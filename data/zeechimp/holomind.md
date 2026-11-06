@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HoloMind es un micro-modelo educativo publicado por el usuario zeechimp en HuggingFace que implementa un sustrato FHRR (Fourier Holographic Reduced Representation) con regiones tipadas. No se trata de una red neuronal entrenada: no tiene pesos, no tiene gradientes y no dispone de bucle de entrenamiento. Su proposito es exponer las operaciones primitivas (binding, unbinding, roles y valores) sobre las que podria construirse una memoria persistente para modelos de lenguaje, y reportar donde esas operaciones se sostienen y donde fallan.
+HoloMind es un micro-modelo educativo publicado por el usuario zeechimp en Hugging Face que implementa un sustrato FHRR (Fourier Holographic Reduced Representation) con regiones tipadas. No se trata de una red neuronal entrenada: no tiene pesos, no tiene gradientes y no dispone de bucle de entrenamiento. Su proposito es exponer las operaciones primitivas (binding, unbinding, roles y valores) sobre las que podria construirse una memoria persistente para modelos de lenguaje, y reportar donde esas operaciones se sostienen y donde fallan.
 
 El sustrato representa cada item como un vector complejo de dimensionalidad D = 2048. Hechos, episodios, asociaciones multimodales y secuencias conviven en el mismo codebook role/value. La recuperacion es algebraicamente un unbinding seguido de una clasificacion por vecino mas cercano. Las escrituras son aditivas, el borrado es sustractivo y la capacidad es medible a partir de la magnitud de la traza (|trace|).
 
@@ -29,7 +29,7 @@ No hay entrenamiento. El modelo card especifica explicitamente que no hay pesos,
 
 ## Capacidades
 
-- Extraccion de caracteristicas (pipeline declarado en HuggingFace: `feature-extraction`).
+- Extraccion de caracteristicas (pipeline declarado en Hugging Face: `feature-extraction`).
 - Memoria asociativa: almacenamiento y recuperacion de pares clave-valor mediante unbinding algebraico y clasificacion por vecino mas cercano.
 - Razonamiento multi-hop sobre el sustrato (por ejemplo, `france --capital_of--> paris --in_country--> france`), con similitudes del orden de 0.167.
 - Modelado de secuencias dirigidas mediante `bind_dir`, con recorridos tipo `['wake', 'coffee', 'commute', 'work', 'lunch', 'work2']`.
@@ -126,9 +126,9 @@ No disponible. HoloMind no es un modelo de lenguaje ni una red neuronal entrenad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zeechimp/HoloMind
+- Hugging Face: https://huggingface.co/zeechimp/HoloMind
 - Companion paper citado en el model card: *Twelve experiments probing the holographic substrate* (no se proporciona enlace en la informacion disponible).
-- Fichero de codigo `holomind.py` incluido en el repositorio de HuggingFace (no se proporciona URL directa en la informacion disponible).
+- Fichero de codigo `holomind.py` incluido en el repositorio de Hugging Face (no se proporciona URL directa en la informacion disponible).
 - Citacion academica:
 ```
 @misc{holomind2026,

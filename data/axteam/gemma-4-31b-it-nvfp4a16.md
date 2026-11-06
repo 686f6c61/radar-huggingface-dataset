@@ -83,8 +83,8 @@ Evaluacion de fidelidad frente al BF16 original, sobre un conjunto interno mixto
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `axteam/gemma-4-31B-it-NVFP4A16` (este) | 18,46 B | no disponible | NVFP4A16 (W4A16) | Apache-2.0 | HuggingFace, 145 descargas |
-| `google/gemma-4-31B-it` (BF16) | no disponible en la informacion | no disponible | BF16 | Gemma 4 / Apache-2.0 | HuggingFace |
+| `axteam/gemma-4-31B-it-NVFP4A16` (este) | 18,46 B | no disponible | NVFP4A16 (W4A16) | Apache-2.0 | Hugging Face, 145 descargas |
+| `google/gemma-4-31B-it` (BF16) | no disponible en la informacion | no disponible | BF16 | Gemma 4 / Apache-2.0 | Hugging Face |
 | FP8-dynamic de Gemma 4 31B-it | no disponible | no disponible | FP8 dinamico | Gemma 4 / Apache-2.0 | Referenciado en benchmarks de la model card |
 | AWQ-4bit de Gemma 4 31B-it | no disponible | no disponible | AWQ 4 bits | Gemma 4 / Apache-2.0 | Referenciado en benchmarks de la model card |
 
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks de modelos de otras familias comparables en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/axteam/gemma-4-31B-it-NVFP4A16
+- Hugging Face: https://huggingface.co/axteam/gemma-4-31B-it-NVFP4A16
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

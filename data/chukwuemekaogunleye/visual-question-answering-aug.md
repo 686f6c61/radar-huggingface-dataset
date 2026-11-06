@@ -4,7 +4,7 @@
 
 chukwuemekaogunleye/visual-question-answering-aug no es un modelo entrenado, sino un repositorio de notas de investigacion sobre respuesta a preguntas visuales (VQA) publicado por el usuario chukwuemekaogunleye bajo licencia MIT. La propia model card lo describe como un artefacto exploratorio que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y aclara de forma explicita que no se presenta como un articulo terminado ni como una publicacion de modelos entrenados.
 
-El repositorio no contiene pesos, codigo de entrenamiento ni checkpoints. Aunque las etiquetas de HuggingFace incluyen `safetensors` y `transformer`, y los metadatos declaran 16,576 parametros totales, el tamano del repositorio es de 0,0 GB y la documentacion indica que solo incluye `summary.md` y `README.md`. La actividad es nula: 0 descargas y 0 likes desde su creacion el 3 de octubre de 2026.
+El repositorio no contiene pesos, codigo de entrenamiento ni checkpoints. Aunque las etiquetas de Hugging Face incluyen `safetensors` y `transformer`, y los metadatos declaran 16,576 parametros totales, el tamano del repositorio es de 0,0 GB y la documentacion indica que solo incluye `summary.md` y `README.md`. La actividad es nula: 0 descargas y 0 likes desde su creacion el 3 de octubre de 2026.
 
 Su relevancia practica es, por tanto, documental: sirve como plantilla metodologica para disenar experimentos de VQA sobre VQAv2, GQA y OK-VQA, no como componente desplegable en produccion.
 
@@ -77,7 +77,7 @@ No disponible. No existe termino de comparacion valido: los modelos de respuesta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chukwuemekaogunleye/visual-question-answering-aug
+- Hugging Face: https://huggingface.co/chukwuemekaogunleye/visual-question-answering-aug
 - No se han encontrado en la busqueda web enlaces relacionados con este repositorio. Los resultados devueltos no son pertinentes y se listan solo por trazabilidad:
   - https://arxiv.org/html/2506.04290v2 (revision sobre LLM para riesgo crediticio; sin relacion)
   - https://ng.linkedin.com/in/charles-xavier-ekechukwuemeka-01185a1a5 (perfil profesional; sin relacion)

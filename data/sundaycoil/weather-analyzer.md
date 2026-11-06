@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sundaycoil/weather-analyzer` es un modelo alojado en HuggingFace por el usuario `sundaycoil`, etiquetado con la región `us`. Según la información pública disponible, no se especifica su arquitectura, tamaño, pipeline ni licencia. El nombre sugiere que podría estar orientado al análisis de datos meteorológicos, pero no hay documentación técnica ni ejemplos de uso publicados. Con cero descargas y una única valoración, se trata de un modelo recién creado (abril de 2026) y actualizado en agosto de 2026, sin evidencia de adopción o validación por parte de la comunidad. Dada la ausencia de especificaciones, no es posible evaluar su rendimiento ni su idoneidad para tareas concretas.
+El modelo `sundaycoil/weather-analyzer` es un modelo alojado en Hugging Face por el usuario `sundaycoil`, etiquetado con la región `us`. Según la información pública disponible, no se especifica su arquitectura, tamaño, pipeline ni licencia. El nombre sugiere que podría estar orientado al análisis de datos meteorológicos, pero no hay documentación técnica ni ejemplos de uso publicados. Con cero descargas y una única valoración, se trata de un modelo recién creado (abril de 2026) y actualizado en agosto de 2026, sin evidencia de adopción o validación por parte de la comunidad. Dada la ausencia de especificaciones, no es posible evaluar su rendimiento ni su idoneidad para tareas concretas.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo `sundaycoil/weather-analyzer` es un modelo alojado en HuggingFace por 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens procesados ni las técnicas de optimización empleadas (como RLHF o DPO). La ficha de HuggingFace no incluye ningún detalle técnico, por lo que cualquier afirmación al respecto sería especulativa.
+No se ha publicado información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens procesados ni las técnicas de optimización empleadas (como RLHF o DPO). La ficha de Hugging Face no incluye ningún detalle técnico, por lo que cualquier afirmación al respecto sería especulativa.
 
 ## Capacidades
 
@@ -51,4 +51,4 @@ No disponible. No se puede comparar con otros modelos al carecer de especificaci
 
 ## Enlaces
 
-- [HuggingFace: sundaycoil/weather-analyzer](https://huggingface.co/sundaycoil/weather-analyzer)
+- [Hugging Face: sundaycoil/weather-analyzer](https://huggingface.co/sundaycoil/weather-analyzer)

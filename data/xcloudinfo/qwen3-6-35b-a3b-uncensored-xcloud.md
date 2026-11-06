@@ -96,7 +96,7 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xCloudinfo/Qwen3.6-35B-A3B-Uncensored-xCloud
+- Modelo en Hugging Face: https://huggingface.co/xCloudinfo/Qwen3.6-35B-A3B-Uncensored-xCloud
 - Version GGUF recomendada por el autor: https://huggingface.co/xCloudinfo/Qwen3.6-35B-A3B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Paper del metodo de ablacion direccional citado en la model card (Arditi et al., 2024): https://arxiv.org/abs/2406.11717

@@ -92,7 +92,7 @@ La comparación relevante es contra el modelo original, del que esta variante no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dmdhrumilmistry/Qwen2.5-Coder-1.5B-Instruct-ExPO-a0.1-GGUF
+- Hugging Face: https://huggingface.co/dmdhrumilmistry/Qwen2.5-Coder-1.5B-Instruct-ExPO-a0.1-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Toolkit Tvashtr: https://github.com/dmdhrumilmistry/tvashtr
 - Resultados del barrido ExPO en Tvashtr: https://github.com/dmdhrumilmistry/tvashtr#training-free-weight-updates-expo

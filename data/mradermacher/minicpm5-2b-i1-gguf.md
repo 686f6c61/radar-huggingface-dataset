@@ -59,10 +59,10 @@ En la información disponible no se incluyen datos de benchmarks comparativos. A
 
 | Modelo | Parametros | Licencia | Contexto | Disponibilidad |
 |---|---|---|---|---|
-| MiniCPM5-2B (este) | 2.5B | Apache 2.0 | no disponible | HuggingFace |
-| Gemma-2-2B | 2.6B | Licencia Gemma | no disponible | HuggingFace |
-| Qwen2.5-1.5B | 1.5B | Apache 2.0 | no disponible | HuggingFace |
-| Llama-3.2-1B | 1.2B | Llama 3.2 Community | no disponible | HuggingFace |
+| MiniCPM5-2B (este) | 2.5B | Apache 2.0 | no disponible | Hugging Face |
+| Gemma-2-2B | 2.6B | Licencia Gemma | no disponible | Hugging Face |
+| Qwen2.5-1.5B | 1.5B | Apache 2.0 | no disponible | Hugging Face |
+| Llama-3.2-1B | 1.2B | Llama 3.2 Community | no disponible | Hugging Face |
 
 Nota: no se dispone de datos de contexto ni benchmarks en la información proporcionada.
 
@@ -77,7 +77,7 @@ Nota: no se dispone de datos de contexto ni benchmarks en la información propor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/MiniCPM5-2B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/MiniCPM5-2B-i1-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Cuantizaciones estáticas: https://huggingface.co/mradermacher/MiniCPM5-2B-GGUF
 - GitHub OpenBMB/MiniCPM: https://github.com/OpenBMB/MiniCPM

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`jrepifano/q14b-srh-arm4-r32-seed1` es un repositorio publicado en HuggingFace por el usuario `jrepifano` el 19 de septiembre de 2026, con un peso total de 0,8 GB y etiquetado con `transformers`, `safetensors`, `unsloth`, `endpoints_compatible` y `region:us`. La model card es la plantilla automatica de HuggingFace sin rellenar: todos los campos de descripcion, entrenamiento, evaluacion y licencia figuran como "[More Information Needed]". No hay pipeline declarado, ni idiomas, ni licencia, ni resultados de evaluacion.
+`jrepifano/q14b-srh-arm4-r32-seed1` es un repositorio publicado en Hugging Face por el usuario `jrepifano` el 19 de septiembre de 2026, con un peso total de 0,8 GB y etiquetado con `transformers`, `safetensors`, `unsloth`, `endpoints_compatible` y `region:us`. La model card es la plantilla automatica de Hugging Face sin rellenar: todos los campos de descripcion, entrenamiento, evaluacion y licencia figuran como "[More Information Needed]". No hay pipeline declarado, ni idiomas, ni licencia, ni resultados de evaluacion.
 
 El identificador del repositorio sugiere, sin confirmacion oficial, un artefacto experimental de ajuste fino: `q14b` apuntaria a un modelo base de la familia Qwen de 14.000 millones de parametros, `r32` a un rango LoRA de 32, `arm4` a un brazo o condicion experimental y `seed1` a una semilla concreta de un barrido de experimentos. Esta lectura es coherente con el tamano del repositorio (0,8 GB), insuficiente para pesos completos de un modelo de 14B en fp16 (unos 28 GB) pero tipico de un adaptador LoRA de rango 32. La etiqueta `unsloth` indica que el ajuste se realizo previsiblemente con la libreria Unsloth. Ninguno de estos extremos esta verificado en la documentacion del repositorio.
 
-Por el momento se trata de un artefacto con cero descargas y cero likes, sin base declarada, sin datos de entrenamiento y sin evaluacion publicada. Su relevancia practica es muy limitada hasta que el autor complete la model card o publique el modelo base y la receta de entrenamiento. La etiqueta `arxiv:1910.09700` no corresponde a un paper del modelo: es la referencia a Lacoste et al. (2019) sobre calculo de emisiones de carbono, incluida en la plantilla por defecto de HuggingFace.
+Por el momento se trata de un artefacto con cero descargas y cero likes, sin base declarada, sin datos de entrenamiento y sin evaluacion publicada. Su relevancia practica es muy limitada hasta que el autor complete la model card o publique el modelo base y la receta de entrenamiento. La etiqueta `arxiv:1910.09700` no corresponde a un paper del modelo: es la referencia a Lacoste et al. (2019) sobre calculo de emisiones de carbono, incluida en la plantilla por defecto de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -35,7 +35,7 @@ El unico indicio tecnico disponible es el conjunto de etiquetas y el nombre del 
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (campo de idiomas vacio).
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Al no existir un pipeline declarado en HuggingFace, no se puede confirmar ni siquiera la tarea objetivo (text-generation, text-classification, etc.).
+- Al no existir un pipeline declarado en Hugging Face, no se puede confirmar ni siquiera la tarea objetivo (text-generation, text-classification, etc.).
 
 ## Casos de uso
 
@@ -66,7 +66,7 @@ No hay requisitos declarados por el autor. Las siguientes cifras son estimacione
 | Base 14B en cuantizacion 4 bits (GGUF/AWQ/GPTQ) | 8-10 GB | Cabe en RTX 4080/4090, RTX 3090 y similares |
 
 - GPU recomendadas: no disponibles por parte del autor; segun la hipotesis anterior, A100 40 GB o H100 para fp16, RTX 4090 o RTX 3090 para cuantizacion de 4 u 8 bits.
-- Opciones de despliegue: no declaradas. La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: no declaradas. La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 - Estas estimaciones no provienen de la model card y deben tratarse como orientativas, no como especificaciones del artefacto.
 
@@ -89,7 +89,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jrepifano/q14b-srh-arm4-r32-seed1
+- Repositorio en Hugging Face: https://huggingface.co/jrepifano/q14b-srh-arm4-r32-seed1
 - Referencia citada en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono, incluida por la plantilla): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental enlazada en la plantilla: https://mlco2.github.io/impact
 - Paper, blog, repositorio de codigo o demo del modelo: no disponibles.

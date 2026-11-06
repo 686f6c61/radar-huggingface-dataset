@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NexVeridian/Qwen3.8-27B-6bit es una conversión al formato MLX del modelo Qwen/Qwen3.8-27B, publicada por el usuario NexVeridian en HuggingFace. La conversión se realizó con la librería mlx-lm versión 0.31.3 y aplica una cuantización de 6 bits, lo que reduce el tamaño del modelo para facilitar su ejecución en hardware con memoria limitada, especialmente en dispositivos Apple con chip M-series.
+NexVeridian/Qwen3.8-27B-6bit es una conversión al formato MLX del modelo Qwen/Qwen3.8-27B, publicada por el usuario NexVeridian en Hugging Face. La conversión se realizó con la librería mlx-lm versión 0.31.3 y aplica una cuantización de 6 bits, lo que reduce el tamaño del modelo para facilitar su ejecución en hardware con memoria limitada, especialmente en dispositivos Apple con chip M-series.
 
 A pesar de que el nombre del repositorio sugiere un modelo de 27 mil millones de parámetros, los datos reales de los archivos safetensors indican un total de 5.885.566.464 parámetros (aproximadamente 5,9 mil millones). Esta discrepancia no está explicada en la documentación disponible, por lo que se debe tomar con cautela. El modelo está etiquetado como text-generation y conversacional, y se distribuye bajo licencia Apache 2.0.
 
@@ -68,5 +68,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NexVeridian/Qwen3.8-27B-6bit
+- Repositorio Hugging Face: https://huggingface.co/NexVeridian/Qwen3.8-27B-6bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

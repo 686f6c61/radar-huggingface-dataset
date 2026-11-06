@@ -86,7 +86,7 @@ Otros TTS multilingües como XTTS v2 o Coqui TTS podrían ser comparables en fun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GoktugD/Werea-TSS
+- Modelo en Hugging Face: https://huggingface.co/GoktugD/Werea-TSS
 - Repo espejo oficial (Werea-co): https://huggingface.co/Werea-co/Werea-TSS
 - Modelo base FreyaTTS: https://huggingface.co/freyavoice/Freya-TTS
 - Repositorio de código FreyaTTS: https://github.com/freyavoiceai/FreyaTTS

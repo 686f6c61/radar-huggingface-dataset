@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario brunopaschoal. No se trata de un modelo de lenguaje ni de una red neuronal de gran escala, sino de una implementacion desde cero del algoritmo REINFORCE (policy gradient Monte Carlo) en PyTorch, desarrollada como ejercicio de la Unidad 4 del curso Deep RL de Hugging Face. El agente resuelve el entorno clasico CartPole-v1 de Gymnasium, en el que un poste debe mantenerse en equilibrio sobre un carro aplicando fuerzas laterales discretas.
+Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario brunopaschoal. No se trata de un modelo de lenguaje ni de una red neuronal de gran escala, sino de una implementacion desde cero del algoritmo REINFORCE (policy gradient Monte Carlo) en PyTorch, desarrollada como ejercicio de la Unidad 4 del curso Deep RL de Hugging Face. El agente resuelve el entorno clasico CartPole-v1 de Gymnasium, en el que un poste debe mantenerse en equilibrio sobre un carro aplicando fuerzas laterales discretas.
 
 La relevancia de esta ficha es acotada: se trata de un artefacto educativo, no de un modelo de proposito general. Su interes radica en que sirve como referencia minima y reproducible de un pipeline completo de RL (entrenamiento, evaluacion y publicacion en el Hub con model-index), y como punto de partida para quien quiera entender la implementacion de REINFORCE sin dependencias de librerias de alto nivel como Stable-Baselines3.
 
@@ -32,7 +32,7 @@ Los hiperparametros declarados en la model card son: `env_id` CartPole-v1, `h_si
 - Control discreto en el entorno CartPole-v1: seleccionar entre dos acciones para mantener el poste en equilibrio.
 - Aprendizaje por refuerzo con gradiente de politica Monte Carlo (REINFORCE) implementado en PyTorch sin frameworks de RL de alto nivel.
 - Reproducibilidad del pipeline de entrenamiento y evaluacion con hiperparametros explicitos en la model card.
-- Integracion con el ecosistema HuggingFace Hub mediante `model-index`, lo que permite indexar y comparar resultados de RL.
+- Integracion con el ecosistema Hugging Face Hub mediante `model-index`, lo que permite indexar y comparar resultados de RL.
 - No soporta tool calling, function calling, agentes multi-paso, capacidades multilingues, vision, audio ni modos de razonamiento extendido; no es un modelo generativo de texto.
 
 ## Casos de uso
@@ -66,9 +66,9 @@ El valor de 500.00 coincide con el reward maximo de CartPole-v1, lo que sugiere 
 
 | Modelo | Algoritmo | Entorno | Parametros | Reward declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Reinforce-CartPole-v1 (brunopaschoal) | REINFORCE (Monte Carlo) | CartPole-v1 | no disponible (MLP con h=16) | 500.00 +/- 0.00 (no verificado) | no disponible | HuggingFace Hub, repo de 0.0 GB |
+| Reinforce-CartPole-v1 (brunopaschoal) | REINFORCE (Monte Carlo) | CartPole-v1 | no disponible (MLP con h=16) | 500.00 +/- 0.00 (no verificado) | no disponible | Hugging Face Hub, repo de 0.0 GB |
 | Agentes CartPole de Stable-Baselines3 | PPO, A2C, DQN | CartPole-v1 | no disponible | no disponible en esta busqueda | MIT (libreria) | Codigo y pesos via libreria |
-| Agentes del Deep RL Course (otros usuarios) | REINFORCE / PPO | CartPole-v1 | variable | variable, no consultado | variable | HuggingFace Hub |
+| Agentes del Deep RL Course (otros usuarios) | REINFORCE / PPO | CartPole-v1 | variable | variable, no consultado | variable | Hugging Face Hub |
 
 No se dispone de datos verificables de benchmarks de los modelos comparables en la informacion proporcionada; la comparativa se limita a categoria, algoritmo y disponibilidad.
 
@@ -84,7 +84,7 @@ No se dispone de datos verificables de benchmarks de los modelos comparables en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brunopaschoal/Reinforce-CartPole-v1
+- Modelo en Hugging Face: https://huggingface.co/brunopaschoal/Reinforce-CartPole-v1
 - Curso Deep RL de Hugging Face (Unidad 4, referencia citada en la model card): https://huggingface.co/learn/deep-rl-course
 - Entorno CartPole-v1 (Gymnasium): https://gymnasium.farama.org/environments/classic_control/cart_pole/
-- Documentacion de model-index en HuggingFace: https://huggingface.co/docs/hub/model-cards
+- Documentacion de model-index en Hugging Face: https://huggingface.co/docs/hub/model-cards

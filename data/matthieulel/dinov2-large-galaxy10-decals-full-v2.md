@@ -35,7 +35,7 @@ No se documenta en la información disponible el uso de RLHF, DPO ni técnicas d
 - Extracción de características visuales de alta calidad gracias al backbone DINOv2 ViT-L/14 (útil para fine-tuning posterior o como encoder congelado).
 - Inferencia por imagen individual o en lote mediante `AutoModelForImageClassification`.
 - Integración nativa con `transformers` y `AutoImageProcessor`.
-- Compatible con endpoints de HuggingFace (`endpoints_compatible` en los tags).
+- Compatible con endpoints de Hugging Face (`endpoints_compatible` en los tags).
 - No soporta tool calling ni function calling.
 - No soporta agentes ni razonamiento multi-paso.
 - No tiene capacidades multilingües ni de generación de texto.
@@ -78,9 +78,9 @@ No se dispone en la información proporcionada de resultados de otros modelos so
 
 | Modelo | Parametros | Contexto/entrada | Rendimiento en Galaxy10 DECaLS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dinov2-large-galaxy10-decals-full-v2 (este) | 304 M | imagen 256x256 | 85,96 % accuracy (test, seed 42) | Apache 2.0 | HuggingFace |
-| Backbones alternativos del mismo benchmark (40 modelos x 2 regímenes) | variable | imagen | resultados en el dataset `vision-foundation-models-benchmark-runs` | variable | HuggingFace |
-| `facebook/dinov2-large` (base, sin ajustar) | 304 M | imagen 224x224 | no disponible en la información | Apache 2.0 (según modelo base) | HuggingFace |
+| dinov2-large-galaxy10-decals-full-v2 (este) | 304 M | imagen 256x256 | 85,96 % accuracy (test, seed 42) | Apache 2.0 | Hugging Face |
+| Backbones alternativos del mismo benchmark (40 modelos x 2 regímenes) | variable | imagen | resultados en el dataset `vision-foundation-models-benchmark-runs` | variable | Hugging Face |
+| `facebook/dinov2-large` (base, sin ajustar) | 304 M | imagen 224x224 | no disponible en la información | Apache 2.0 (según modelo base) | Hugging Face |
 
 La comparación detallada con los otros 39 backbones del estudio (por ejemplo, ViT, ConvNeXt, Swin u otros foundation models) requeriría consultar el artículo y el dataset de runs, que no se incluyen en la información disponible.
 
@@ -98,7 +98,7 @@ La comparación detallada con los otros 39 backbones del estudio (por ejemplo, V
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/dinov2-large-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/dinov2-large-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/facebook/dinov2-large
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de runs del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

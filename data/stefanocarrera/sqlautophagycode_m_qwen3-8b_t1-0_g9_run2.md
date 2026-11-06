@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g9_run2` es un repositorio de pesos publicado en HuggingFace por el usuario stefanocarrera. El identificador sugiere un ajuste fino sobre Qwen3-8B, un transformer decoder de aproximadamente 8.000 millones de parametros, aunque ni la model card ni los metadatos del repositorio confirman el modelo base, la arquitectura ni el procedimiento de entrenamiento.
+`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g9_run2` es un repositorio de pesos publicado en Hugging Face por el usuario stefanocarrera. El identificador sugiere un ajuste fino sobre Qwen3-8B, un transformer decoder de aproximadamente 8.000 millones de parametros, aunque ni la model card ni los metadatos del repositorio confirman el modelo base, la arquitectura ni el procedimiento de entrenamiento.
 
 El nombre del repositorio apunta a un entrenamiento orientado a SQL y generacion de codigo ("sqlautophagycode"), y las etiquetas incluyen Unsloth, la libreria habitualmente empleada para fine-tuning con LoRA/QLoRA de bajo consumo de memoria. El sufijo "t1.0_g9_run2" parece codificar los hiperparametros de una ejecucion concreta, pero no existe documentacion que lo explique.
 
-El problema que resuelve el modelo no esta descrito en ningun sitio. La model card es la plantilla autogenerada de HuggingFace con todos los campos marcados como "More Information Needed", el repositorio acumula 0 descargas y 0 "likes", y no se ha publicado ninguna evaluacion. Es, por tanto, un artefacto experimental sin trazabilidad verificable, relevante unicamente como posible punto de partida reproducible para tareas de generacion de SQL, siempre que se audite previamente su contenido.
+El problema que resuelve el modelo no esta descrito en ningun sitio. La model card es la plantilla autogenerada de Hugging Face con todos los campos marcados como "More Information Needed", el repositorio acumula 0 descargas y 0 "likes", y no se ha publicado ninguna evaluacion. Es, por tanto, un artefacto experimental sin trazabilidad verificable, relevante unicamente como posible punto de partida reproducible para tareas de generacion de SQL, siempre que se audite previamente su contenido.
 
 ## Especificaciones tecnicas
 
@@ -23,8 +23,8 @@ El problema que resuelve el modelo no esta descrito en ningun sitio. La model ca
 | Libreria declarada | transformers (etiquetas adicionales: `unsloth`, `endpoints_compatible`) |
 | Base declarada | no disponible (el identificador apunta a Qwen3-8B; no confirmado) |
 | Tamano del repositorio | 0,2 GB |
-| Fecha de creacion | 2026-09-13 (segun metadatos de HuggingFace) |
-| Fecha de actualizacion | 2026-09-13 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-13 (segun metadatos de Hugging Face) |
+| Fecha de actualizacion | 2026-09-13 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -40,7 +40,7 @@ Tampoco hay informacion sobre el numero de tokens de entrenamiento, la composici
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; la model card no declara lista de idiomas.
 - Capacidades especiales (modo de razonamiento, vision, audio): no disponible.
-- Integracion con HuggingFace Inference Endpoints: la etiqueta `endpoints_compatible` indica compatibilidad a nivel de formato, no una garantia de funcionamiento.
+- Integracion con Hugging Face Inference Endpoints: la etiqueta `endpoints_compatible` indica compatibilidad a nivel de formato, no una garantia de funcionamiento.
 
 ## Casos de uso
 
@@ -76,15 +76,15 @@ Las estimaciones siguientes asumen que el modelo final tiene alrededor de 8.000 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | sqlautophagycode_M_Qwen3-8B_t1.0_g9_run2 | no disponible (~8.000 millones segun el identificador) | no disponible | no disponible | Repositorio publico con 0 descargas y 0 "likes" | Sin model card util, sin benchmarks ni validacion de la comunidad |
-| Qwen3-8B (referencia) | 8.200 millones aproximadamente | 32.768 tokens nativos, ampliable a 131.072 con YaRN | Apache 2.0 | Ampliamente disponible en HuggingFace | Modelo denso con modo de razonamiento conmutable; se incluye como posible modelo base, no confirmado |
-| Llama 3.1 8B (referencia) | 8.030 millones aproximadamente | 128.000 tokens | Llama 3.1 Community License | Ampliamente disponible en HuggingFace | Requiere cumplir la politica de uso aceptable de Meta para uso comercial |
-| Mistral 7B v0.3 (referencia) | 7.250 millones aproximadamente | 32.000 tokens | Apache 2.0 | Ampliamente disponible en HuggingFace | Alternativa de menor tamano con licencia permisiva |
+| Qwen3-8B (referencia) | 8.200 millones aproximadamente | 32.768 tokens nativos, ampliable a 131.072 con YaRN | Apache 2.0 | Ampliamente disponible en Hugging Face | Modelo denso con modo de razonamiento conmutable; se incluye como posible modelo base, no confirmado |
+| Llama 3.1 8B (referencia) | 8.030 millones aproximadamente | 128.000 tokens | Llama 3.1 Community License | Ampliamente disponible en Hugging Face | Requiere cumplir la politica de uso aceptable de Meta para uso comercial |
+| Mistral 7B v0.3 (referencia) | 7.250 millones aproximadamente | 32.000 tokens | Apache 2.0 | Ampliamente disponible en Hugging Face | Alternativa de menor tamano con licencia permisiva |
 
 Los datos de los modelos de referencia proceden de su documentacion publica oficial y se incluyen unicamente como contexto de categoria; no forman parte de la informacion proporcionada en esta busqueda y conviene verificarlos antes de citarlos.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla autogenerada de HuggingFace, con todos los apartados marcados como "More Information Needed". No hay informacion sobre datos de entrenamiento, sesgos, idiomas ni uso previsto.
+- Ausencia total de documentacion: la model card es la plantilla autogenerada de Hugging Face, con todos los apartados marcados como "More Information Needed". No hay informacion sobre datos de entrenamiento, sesgos, idiomas ni uso previsto.
 - Licencia no disponible: no se puede asumir que el modelo sea apto para uso comercial. Ante la ausencia de licencia explicita, el uso en produccion conlleva riesgo legal.
 - Contenido del repositorio incierto: 0,2 GB es un tamano muy inferior al de los pesos completos de un modelo de 8.000 millones de parametros en bf16 (unos 16 GB). Es probable que contenga un adaptador LoRA o pesos parciales, pero esto no esta confirmado y debe verificarse listando los archivos del repositorio antes de intentar cargarlo.
 - Ausencia de validacion: 0 descargas y 0 "likes" implican que no existe evidencia externa de que el modelo cargue correctamente ni de que produzca resultados utiles.
@@ -96,7 +96,7 @@ Los datos de los modelos de referencia proceden de su documentacion publica ofic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g9_run2
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g9_run2
 - Referencia citada en la plantilla de la model card (calculo de impacto de carbono, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la plantilla: https://mlco2.github.io/impact
 - Unsloth (libreria indicada en las etiquetas del repositorio): https://github.com/unslothai/unsloth

@@ -85,7 +85,7 @@ Medición independiente de la tubería de etiquetado sobre las 475 imágenes v1 
 
 | Modelo | Tipo | Clases | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mvdelibas/turkiye-arac-yaya-yolo11s` (r2) | YOLO11s fine-tuneado | 8 clases viarias turcas | imgsz 1024 (1280 opcional) | CC BY-SA 4.0 | HuggingFace y EVREN |
+| `mvdelibas/turkiye-arac-yaya-yolo11s` (r2) | YOLO11s fine-tuneado | 8 clases viarias turcas | imgsz 1024 (1280 opcional) | CC BY-SA 4.0 | Hugging Face y EVREN |
 | YOLO11s preentrenado en COCO (Ultralytics) | YOLO11s genérico | 80 clases COCO | Configurable | AGPL-3.0 / licencia comercial Ultralytics | Ultralytics |
 | YOLO11x preentrenado en COCO | YOLO11x genérico | 80 clases COCO | Configurable | AGPL-3.0 / licencia comercial Ultralytics | Ultralytics |
 | Modelo profesor del autor (YOLO11s, solo v1) | YOLO11s fine-tuneado | 8 clases viarias turcas | imgsz 1280 | no disponible | Uso interno en la tubería de etiquetado |
@@ -109,7 +109,7 @@ La comparación directa con los modelos COCO no es homogénea, porque la taxonom
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mvdelibas/turkiye-arac-yaya-yolo11s
+- Modelo en Hugging Face: https://huggingface.co/mvdelibas/turkiye-arac-yaya-yolo11s
 - Perfil del autor en EVREN: https://evren.ssyz.org.tr/users/u43bd0650c87e
 - Plataforma nacional de IA de Turquía (EVREN): https://evren.ssyz.org.tr
 - Ultralytics (framework YOLO11): https://github.com/ultralytics/ultralytics

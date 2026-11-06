@@ -69,7 +69,7 @@ Se documenta una carencia conocida: las peticiones corteses con honorifico (ejem
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-1.2B-JAPT (este modelo) | 1,17 B | no disponible | 5/6 en puerta de calidad JA-PT | no disponible (base lfm1.0) | GGUF en HuggingFace |
+| LFM2.5-1.2B-JAPT (este modelo) | 1,17 B | no disponible | 5/6 en puerta de calidad JA-PT | no disponible (base lfm1.0) | GGUF en Hugging Face |
 | LiquidAI/LFM2.5-1.2B-Instruct | 1,17 B | no disponible | no disponible (modelo base, no evaluado aqui) | lfm1.0 | safetensors y pesos originales |
 | Hy-MT2 (profesor, 1,8B) | 1,8 B | no disponible | Resuelve el honorifico que fallan los modelos pequenos | no disponible | no disponible |
 
@@ -88,7 +88,7 @@ No se dispone de datos de contexto, licencia ni benchmarks comparables para los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jabs2/LFM2.5-1.2B-JAPT-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Jabs2/LFM2.5-1.2B-JAPT-GGUF
 - Modelo base: LiquidAI/LFM2.5-1.2B-Instruct (referenciado en la model card)
 - Referencia al modelo profesor Hy-MT2 (1,8B), mencionado en la model card sin enlace
 - Herramienta de cuantizacion e inferencia: llama.cpp (`llama-cli`, `llama-quantize`), sin enlace directo en la documentacion facilitada

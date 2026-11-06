@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dapatel86/experiment-generation-2024` es un repositorio experimental publicado en HuggingFace por el usuario `dapatel86`. No se trata de un modelo entrenado ni de un lanzamiento con resultados verificados, sino de una implementacion personal en PyTorch de una arquitectura tipo MobileViT orientada a tareas de generacion. El propio autor lo describe como un punto de partida para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala.
+`dapatel86/experiment-generation-2024` es un repositorio experimental publicado en Hugging Face por el usuario `dapatel86`. No se trata de un modelo entrenado ni de un lanzamiento con resultados verificados, sino de una implementacion personal en PyTorch de una arquitectura tipo MobileViT orientada a tareas de generacion. El propio autor lo describe como un punto de partida para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala.
 
 El repositorio incluye un checkpoint de inicializacion (`model.safetensors`) con 33.088 parametros totales segun los pesos publicados, una cifra muy inferior a la de cualquier MobileViT descrito en la literatura, lo que refuerza que se trata de una maqueta de arquitectura y no de un modelo funcional. El tamano del repositorio es de 0,0 GB y no acumula descargas ni interacciones en el momento de redactar esta ficha.
 
@@ -79,9 +79,9 @@ No es posible establecer una comparativa significativa con modelos de la misma c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Comentario |
 |---|---|---|---|---|---|
-| dapatel86/experiment-generation-2024 | 33.088 (checkpoint de inicializacion) | no disponible | MIT | HuggingFace | Base experimental, sin entrenamiento |
+| dapatel86/experiment-generation-2024 | 33.088 (checkpoint de inicializacion) | no disponible | MIT | Hugging Face | Base experimental, sin entrenamiento |
 | MobileViT (referencia original, Apple) | ~1,3 M a ~6,4 M segun variante | no aplica (vision) | Apple Sample Code License / MIT segun version | Repositorios de investigacion | Arquitectura de vision, no orientada a generacion |
-| Alternativas de generacion de proposito general | desde ~100 M hasta cientos de miles de millones | 2 K a 200 K tokens | variable | HuggingFace | No comparables: son modelos entrenados |
+| Alternativas de generacion de proposito general | desde ~100 M hasta cientos de miles de millones | 2 K a 200 K tokens | variable | Hugging Face | No comparables: son modelos entrenados |
 
 No se dispone de datos suficientes para completar una comparativa tecnica rigurosa.
 
@@ -99,6 +99,6 @@ No se dispone de datos suficientes para completar una comparativa tecnica riguro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dapatel86/experiment-generation-2024
+- Repositorio en Hugging Face: https://huggingface.co/dapatel86/experiment-generation-2024
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados obtenidos corresponden a servicios genericos (Google Gemini, AI Studio, detectores de contenido IA y listados de modelos gratuitos) que no guardan relacion con este repositorio.
 - No se han localizado paper, blog tecnico, repositorio de codigo independiente ni demo asociados al modelo en la informacion disponible.

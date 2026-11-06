@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Severino2004/cv-ai-embedding-model-severino2004 es un modelo de embeddings de frases (sentence embeddings) publicado en HuggingFace por el usuario Severino2004. Se trata de un fine-tuning de sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2, un encoder transformer tipo BERT de 117.653.760 parametros, orientado a la similitud semantica entre textos. El pipeline declarado es sentence-similarity y las etiquetas del repositorio incluyen feature-extraction y dense, lo que confirma que su funcion es producir vectores densos, no generar texto.
+Severino2004/cv-ai-embedding-model-severino2004 es un modelo de embeddings de frases (sentence embeddings) publicado en Hugging Face por el usuario Severino2004. Se trata de un fine-tuning de sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2, un encoder transformer tipo BERT de 117.653.760 parametros, orientado a la similitud semantica entre textos. El pipeline declarado es sentence-similarity y las etiquetas del repositorio incluyen feature-extraction y dense, lo que confirma que su funcion es producir vectores densos, no generar texto.
 
 El modelo resuelve un problema muy concreto: emparejar curriculos con ofertas de empleo. Los ejemplos del widget de la model card son pares de CV (perfiles con formacion, experiencia y competencias) y ofertas de trabajo (misiones y perfil buscado), todos en frances, lo que sugiere que el corpus de ajuste esta compuesto por documentos de recursos humanos en ese idioma. El entrenamiento se realizo con la funcion de perdida CosineSimilarityLoss sobre un conjunto de 1147 ejemplos, segun las etiquetas del repositorio.
 
@@ -34,7 +34,7 @@ El ajuste se realizo con SentenceTransformer mediante CosineSimilarityLoss sobre
 - Recuperacion semantica (semantic search) sobre corpus de documentos breves.
 - Agrupamiento (clustering) y deduplicacion de textos por cercania en el espacio de embeddings.
 - Funcionamiento multilingue heredado del modelo base, aunque el ajuste se ha realizado con datos en frances, por lo que el rendimiento fuera de ese idioma no esta documentado.
-- Compatibilidad declarada con text-embeddings-inference y con endpoints de HuggingFace (etiqueta endpoints_compatible).
+- Compatibilidad declarada con text-embeddings-inference y con endpoints de Hugging Face (etiqueta endpoints_compatible).
 - No soporta generacion de texto, tool calling, function calling, razonamiento multi-paso ni capacidades de agente: no es un modelo de lenguaje generativo.
 - No tiene capacidades de vision ni de audio.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: aproximadamente 0,47 GB en FP32, 0,24 GB en FP16 y 0,12 GB en INT8 para los pesos; el consumo real depende del tamano de lote y de la longitud de secuencia.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria, incluidas NVIDIA GTX 1650, RTX 3060, RTX 4090, A100 o H100. El modelo no requiere aceleradores de gama alta.
 - Cabe con holgura en GPU de consumo e incluso en CPU: con 117,6 millones de parametros y secuencias de 128 tokens, la inferencia en CPU es viable para volumenes moderados.
-- Opciones de despliegue: biblioteca sentence-transformers (nativa), text-embeddings-inference (la etiqueta endpoints_compatible lo indica), HuggingFace Inference Endpoints, y conversion a ONNX para optimizacion. No se distribuye en formato GGUF, por lo que su uso en llama.cpp u Ollama requeriria una conversion previa no verificada en el repositorio.
+- Opciones de despliegue: biblioteca sentence-transformers (nativa), text-embeddings-inference (la etiqueta endpoints_compatible lo indica), Hugging Face Inference Endpoints, y conversion a ONNX para optimizacion. No se distribuye en formato GGUF, por lo que su uso en llama.cpp u Ollama requeriria una conversion previa no verificada en el repositorio.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de latencia ni de documentos por segundo.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ Los datos de los modelos alternativos corresponden a la documentacion publica de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Severino2004/cv-ai-embedding-model-severino2004
+- Modelo en Hugging Face: https://huggingface.co/Severino2004/cv-ai-embedding-model-severino2004
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 - Paper de referencia de Sentence-BERT (arXiv 1908.10084), citado en las etiquetas del repositorio: https://arxiv.org/abs/1908.10084
 - Biblioteca sentence-transformers: https://www.sbert.net

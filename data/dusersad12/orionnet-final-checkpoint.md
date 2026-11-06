@@ -2,22 +2,22 @@
 
 ## Resumen
 
-OrionNet-Final-Checkpoint es un repositorio publicado en HuggingFace por el usuario dusersad12 bajo el identificador `dusersad12/OrionNet-Final-Checkpoint`. Según su model card, se trata de la "última release de Stellar Labs", construida sobre una red troncal transformer rediseñada que incorpora una estrategia de enrutamiento mixture-of-experts (MoE) y una ventana de contexto ampliada. El autor afirma mejoras en razonamiento multi-paso, matemáticas, código y conocimiento general respecto a una versión anterior, así como una interfaz de tool calling más robusta y menor latencia en cargas de function calling.
+OrionNet-Final-Checkpoint es un repositorio publicado en Hugging Face por el usuario dusersad12 bajo el identificador `dusersad12/OrionNet-Final-Checkpoint`. Según su model card, se trata de la "última release de Stellar Labs", construida sobre una red troncal transformer rediseñada que incorpora una estrategia de enrutamiento mixture-of-experts (MoE) y una ventana de contexto ampliada. El autor afirma mejoras en razonamiento multi-paso, matemáticas, código y conocimiento general respecto a una versión anterior, así como una interfaz de tool calling más robusta y menor latencia en cargas de function calling.
 
 La relevancia potencial del modelo radica en la combinación declarada de arquitectura MoE con contexto extendido, lo que en teoría permitiría mantener latencias propias de modelos densos de tamaño similar mientras se escala en capacidad. Sin embargo, la ficha no publica el número de parámetros totales, los parámetros activos, la longitud exacta de contexto, la composición del dataset ni el número de tokens de entrenamiento, por lo que no es posible verificar ninguna de estas afirmaciones con los datos disponibles.
 
-Un dato crítico para cualquier evaluador: el tamaño del repositorio en HuggingFace es de 0,0 GB, con 0 descargas y 0 likes en el momento de la consulta, y los tags apuntan a una base `gemma` con librería `transformers` y licencia Apache 2.0. Esto sugiere que los pesos podrían no estar efectivamente subidos o que el repositorio contiene únicamente configuración y metadatos. Se recomienda verificar la existencia real de los archivos de pesos antes de cualquier evaluación.
+Un dato crítico para cualquier evaluador: el tamaño del repositorio en Hugging Face es de 0,0 GB, con 0 descargas y 0 likes en el momento de la consulta, y los tags apuntan a una base `gemma` con librería `transformers` y licencia Apache 2.0. Esto sugiere que los pesos podrían no estar efectivamente subidos o que el repositorio contiene únicamente configuración y metadatos. Se recomienda verificar la existencia real de los archivos de pesos antes de cualquier evaluación.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con enrutamiento mixture-of-experts (MoE) segun la model card; tags de HuggingFace indican base `gemma` |
+| Arquitectura | Transformer con enrutamiento mixture-of-experts (MoE) segun la model card; tags de Hugging Face indican base `gemma` |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (el autor menciona routing MoE pero no publica cifras) |
 | Longitud de contexto | no disponible (la model card menciona "ventana de contexto ampliada" sin especificar tokens) |
 | Tipos de cuantizacion | no disponible (no se listan archivos GGUF, AWQ, GPTQ ni similares) |
-| Idiomas soportados | no disponible (los metadatos de HuggingFace no declaran idiomas) |
+| Idiomas soportados | no disponible (los metadatos de Hugging Face no declaran idiomas) |
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible (tamano del repositorio: 0,0 GB; no se confirman safetensors ni binarios PyTorch) |
 
@@ -81,7 +81,7 @@ No se proporcionan resultados de benchmarks estandar y ampliamente aceptados (MM
 - No es posible estimar la VRAM necesaria para inferencia: el numero de parametros totales y activos no esta publicado y el repositorio figura con 0,0 GB, por lo que no se pueden confirmar los pesos.
 - GPU recomendadas: no disponible. Sin cifras de parametros no procede sugerir A100, H100, RTX 4090 ni equivalentes con justificacion tecnica.
 - Viabilidad en GPU de consumo: no disponible por la misma razon.
-- Opciones de despliegue: los tags de HuggingFace incluyen `transformers`, `pytorch` y `text-generation-inference`. Si los pesos estuvieran efectivamente publicados en safetensors, podrian emplearse TGI o vLLM; para cuantizacion local via llama.cpp u Ollama seria necesario contar con archivos GGUF, que no se listan.
+- Opciones de despliegue: los tags de Hugging Face incluyen `transformers`, `pytorch` y `text-generation-inference`. Si los pesos estuvieran efectivamente publicados en safetensors, podrian emplearse TGI o vLLM; para cuantizacion local via llama.cpp u Ollama seria necesario contar con archivos GGUF, que no se listan.
 - Latencia y throughput: no disponibles. El autor afirma que la latencia es "comparable a la de modelos densos de tamano similar", pero no aporta mediciones de tokens por segundo, time-to-first-token ni configuracion de hardware de referencia.
 
 ## Comparativa con modelos similares
@@ -112,7 +112,7 @@ El tag `gemma` sugiere que la arquitectura base podria derivar de la familia Gem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dusersad12/OrionNet-Final-Checkpoint
+- Modelo en Hugging Face: https://huggingface.co/dusersad12/OrionNet-Final-Checkpoint
 - Otro checkpoint del mismo autor: https://huggingface.co/dusersad12/OrionNet-BestCheckpoint
 - Otro checkpoint del mismo autor: https://huggingface.co/dusersad12/OrionLM-Checkpoint-Release
 - Paper, blog tecnico, repositorio de codigo y demo: no disponibles (la model card los menciona pero no incluye enlaces).

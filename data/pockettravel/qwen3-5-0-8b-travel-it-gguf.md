@@ -76,8 +76,8 @@ Se considera rechazo cualquier respuesta reconocible del tipo "el contexto no lo
 
 | Modelo | Parametros | Contexto | Rechazo sin contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-0.8b-travel-it-GGUF (este) | 0,75 B | 8192 (config. de app) | 100 % | CC BY-SA 4.0 | GGUF, HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8 B | No disponible | 23 % | Apache-2.0 | Pesos originales, HuggingFace |
+| qwen3.5-0.8b-travel-it-GGUF (este) | 0,75 B | 8192 (config. de app) | 100 % | CC BY-SA 4.0 | GGUF, Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8 B | No disponible | 23 % | Apache-2.0 | Pesos originales, Hugging Face |
 | Otros ajustes finos de viaje/RAG de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion directa relevante es con su modelo base: el ajuste incrementa la tasa de rechazo correcto del 23 % al 100 % en contextos sin informacion util, a costa de un ligero aumento de rechazos incorrectos (3 % frente a 5 % del base). No se dispone en la informacion proporcionada de otros modelos comparables de la misma categoria para ampliar la tabla.
@@ -98,6 +98,6 @@ La comparacion directa relevante es con su modelo base: el ajuste incrementa la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pockettravel/qwen3.5-0.8b-travel-it-GGUF
+- Modelo en Hugging Face: https://huggingface.co/pockettravel/qwen3.5-0.8b-travel-it-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de la aplicacion Pocket Travel: https://github.com/miracle091/pocket-travel

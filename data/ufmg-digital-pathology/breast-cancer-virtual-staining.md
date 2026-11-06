@@ -65,7 +65,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ufmg-digital-pathology/breast-cancer-virtual-staining
+- Hugging Face: https://huggingface.co/ufmg-digital-pathology/breast-cancer-virtual-staining
 - Universidad Federal de Minas Gerais: https://www3.ufmg.br/
 - Articulo relacionado con tincion virtual en cancer de mama (Nature): https://www.nature.com/articles/s41523-026-00915-2
 - Articulo sobre patologia digital e IA en cancer de mama (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S1756231724002081

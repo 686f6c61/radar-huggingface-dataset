@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "wentywenty/roboparty-action-rpo-getup",
+  "slug": "wentywenty-roboparty-action-rpo-getup",
+  "author": "wentywenty",
+  "url": "https://huggingface.co/wentywenty/roboparty-action-rpo-getup",
+  "created_at": "2026-11-06T04:57:55.000Z",
+  "updated_at": "2026-11-06T05:21:48.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "roboparty",
+    "robotics",
+    "humanoid",
+    "action",
+    "motion",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2481311,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wentywenty/roboparty-action-rpo-wave · Hugging Face",
+      "url": "https://huggingface.co/wentywenty/roboparty-action-rpo-wave",
+      "snippet": "Robotics model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "RoboParty Unveils RP1, a High-Performance Full-Stack Open-Source ...",
+      "url": "https://www.prnewswire.com/news-releases/roboparty-unveils-rp1-a-high-performance-full-stack-open-source-humanoid-robot-at-iros-302897662.html",
+      "snippet": "RP1 builds on RoboParty's broader full-stack open-source roadmap. RoboParty began with RPO, its fully open-source bipedal humanoid robotics project."
+    }
+  ]
+}

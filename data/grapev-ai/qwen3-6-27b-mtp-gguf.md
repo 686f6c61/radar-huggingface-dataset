@@ -82,14 +82,14 @@ La comparativa se basa en datos publicos de los modelos base. La version MoE de 
 
 - La informacion sobre la longitud de contexto, idiomas soportados y detalles del entrenamiento no esta disponible en la documentacion proporcionada.
 - El rendimiento de MTP puede variar segun el idioma y la tarea; el autor de la conversion indica que el valor optimo de `--spec-draft-n-max` es 2 para japones, pero puede requerir ajuste para otros idiomas.
-- Aunque el modelo base tiene una licencia Apache 2.0 que permite uso comercial, es recomendable revisar los terminos de la licencia del modelo original en su pagina de HuggingFace.
+- Aunque el modelo base tiene una licencia Apache 2.0 que permite uso comercial, es recomendable revisar los terminos de la licencia del modelo original en su pagina de Hugging Face.
 - El modelo puede presentar sesgos y alucinaciones, como cualquier LLM, especialmente en tareas fuera de su dominio principal de programacion y razonamiento.
 - Para produccion, es necesario validar el rendimiento en el hardware y los casos de uso especificos, ya que los datos de throughput provienen de pruebas independientes no oficiales.
 - El tamano del repositorio es de 136,3 GB, lo que incluye multiples cuantizaciones; es recomendable descargar solo la cuantizacion necesaria para el caso de uso.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/grapeV-ai/Qwen3.6-27B-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/grapeV-ai/Qwen3.6-27B-MTP-GGUF
 - Modelo base Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
 - Guia de Qwen 3.6 (insiderllm.com): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/
 - Guia completa de Qwen 3.6-27B (aimadetools.com): https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/

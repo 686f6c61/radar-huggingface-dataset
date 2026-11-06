@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`olusegunola/qwen2.5-1.5b-primekg-dkd-seed42` es un repositorio publicado en HuggingFace por el usuario olusegunola cuyo identificador sugiere un ajuste fino (fine-tuning) del modelo Qwen2.5 de 1.500 millones de parámetros sobre PrimeKG, un grafo de conocimiento de medicina de precisión. La cadena `dkd-seed42` apunta a un experimento con una técnica concreta (posiblemente destilación de conocimiento, *knowledge distillation*) ejecutado con la semilla aleatoria 42 para reproducibilidad. Ninguno de estos extremos está confirmado en la documentación del repositorio: son inferencias a partir del nombre.
+`olusegunola/qwen2.5-1.5b-primekg-dkd-seed42` es un repositorio publicado en Hugging Face por el usuario olusegunola cuyo identificador sugiere un ajuste fino (fine-tuning) del modelo Qwen2.5 de 1.500 millones de parámetros sobre PrimeKG, un grafo de conocimiento de medicina de precisión. La cadena `dkd-seed42` apunta a un experimento con una técnica concreta (posiblemente destilación de conocimiento, *knowledge distillation*) ejecutado con la semilla aleatoria 42 para reproducibilidad. Ninguno de estos extremos está confirmado en la documentación del repositorio: son inferencias a partir del nombre.
 
-La model card publicada es la plantilla automática de HuggingFace sin rellenar. Todos los apartados (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, resultados de evaluación, cita) contienen el marcador `[More Information Needed]`. No hay código de ejemplo, ni hiperparámetros, ni métricas, ni descripción del dataset utilizado.
+La model card publicada es la plantilla automática de Hugging Face sin rellenar. Todos los apartados (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, resultados de evaluación, cita) contienen el marcador `[More Information Needed]`. No hay código de ejemplo, ni hiperparámetros, ni métricas, ni descripción del dataset utilizado.
 
 El repositorio tiene un tamaño de 0,0 GB, cero descargas y cero likes, y fue creado y actualizado con seis segundos de diferencia el 20 de septiembre de 2026. Esto indica que, en el momento de la consulta, no hay pesos publicados ni materiales utilizables: se trata de un repositorio vacío o recién inicializado. Su interés es, por tanto, documental y metodológico, como ejemplo de artefacto opaco dentro del ecosistema de modelos abiertos, más que práctico.
 
@@ -27,11 +27,11 @@ El repositorio tiene un tamaño de 0,0 GB, cero descargas y cero likes, y fue cr
 | Fecha de creacion | 2026-09-20 |
 | Fecha de ultima actualizacion | 2026-09-20 |
 
-Nota sobre el tag `arxiv:1910.09700`: ese identificador corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico, citado en la propia plantilla automatica de HuggingFace. No es un paper asociado al modelo.
+Nota sobre el tag `arxiv:1910.09700`: ese identificador corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico, citado en la propia plantilla automatica de Hugging Face. No es un paper asociado al modelo.
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura en la model card del repositorio, que se limita a la plantilla generada automaticamente por HuggingFace. El campo "Model Architecture and Objective" figura como `[More Information Needed]`, igual que la infraestructura de computo, el hardware y el software empleados.
+No hay informacion publicada sobre la arquitectura en la model card del repositorio, que se limita a la plantilla generada automaticamente por Hugging Face. El campo "Model Architecture and Objective" figura como `[More Information Needed]`, igual que la infraestructura de computo, el hardware y el software empleados.
 
 Los unicos indicios proceden del identificador del modelo. `qwen2.5-1.5b` sugiere una inicializacion desde la familia Qwen2.5 de Alibaba, cuyos modelos de esta escala son transformers densos con decodificacion autoregresiva; `primekg` sugiere un ajuste sobre el grafo de conocimiento biomedical PrimeKG; `dkd` podria corresponder a una variante de destilacion de conocimiento o a un acronimo propio del experimento; y `seed42` indica la semilla de aleatoriedad usada. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF, DPO u otra fase de alineamiento, ni las hiperparametros de ajuste. Al no existir pesos en el repositorio, tampoco es posible inspeccionar la configuracion del modelo para deducir capas, dimensiones ocultas o mecanismo de atencion.
 
@@ -70,7 +70,7 @@ Las cifras siguientes son estimaciones aritmeticas basadas en el tamano nominal 
 - VRAM estimada en cuantizacion de 4 bits: aproximadamente 1 GB de pesos, con una calidad degradada respecto a FP16.
 - GPU recomendadas: cualquier GPU con 8 GB o mas de VRAM es suficiente para las configuraciones cuantizadas; una RTX 3060, RTX 4060, RTX 4070 o RTX 4090 cubriria la inferencia sin dificultad. Para entrenamiento o ajuste fino, se recomendaria como minimo una RTX 4090 o una A100/H100 de 40-80 GB.
 - Cabe en GPU de consumo: si, previsiblemente en la mayoria de tarjetas con 6 GB o mas si se usa cuantizacion.
-- Opciones de despliegue: al declararse la libreria `transformers` y el tag `endpoints_compatible`, serian aplicables HuggingFace Transformers, Text Generation Inference y HuggingFace Inference Endpoints; llama.cpp, Ollama y vLLM serian viables si los pesos se publicaran en formato compatible, lo cual no esta confirmado.
+- Opciones de despliegue: al declararse la libreria `transformers` y el tag `endpoints_compatible`, serian aplicables Hugging Face Transformers, Text Generation Inference y Hugging Face Inference Endpoints; llama.cpp, Ollama y vLLM serian viables si los pesos se publicaran en formato compatible, lo cual no esta confirmado.
 - Latencia y throughput: no disponibles. No hay ninguna medicion publicada.
 
 ## Comparativa con modelos similares
@@ -102,8 +102,8 @@ Los datos de contexto y licencia de los modelos comparados no se han verificado 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-dkd-seed42
+- Repositorio en Hugging Face: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-dkd-seed42
 - Articulo referenciado por el tag `arxiv:1910.09700` (Lacoste et al., estimacion de emisiones de carbono, citado en la plantilla automatica, no asociado al modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la plantilla: https://mlco2.github.io/impact
-- Perfil del autor en HuggingFace: https://huggingface.co/olusegunola
+- Perfil del autor en Hugging Face: https://huggingface.co/olusegunola
 - No se han encontrado papers, blogs, repositorios de codigo ni demostraciones asociados a este modelo en los resultados de busqueda disponibles.

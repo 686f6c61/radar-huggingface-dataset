@@ -83,6 +83,6 @@ La ventaja diferencial de aiXcompact-4B frente a usar un LLM general para resumi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aiXcoder/aiXcompact-4B
+- Modelo en Hugging Face: https://huggingface.co/aiXcoder/aiXcompact-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Documentación de Qwen3.5 en Transformers 5.6.2: https://huggingface.co/docs/transformers/v5.6.2/model_doc/qwen3_5

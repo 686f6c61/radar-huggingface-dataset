@@ -16,7 +16,7 @@ El modelo se publica en noviembre de 2025 y cuenta con una versión GGUF adicion
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible (existe version GGUF en issai/Qolda_GGUF, sin detalle de cuantizaciones) |
 | Idiomas soportados | Kazajo (kk), ruso (ru), ingles (en) |
-| Licencia | No disponible (la model card muestra un badge Apache 2.0, pero el campo oficial en HuggingFace no esta definido) |
+| Licencia | No disponible (la model card muestra un badge Apache 2.0, pero el campo oficial en Hugging Face no esta definido) |
 | Formato de pesos | safetensors (tambien disponible en GGUF) |
 
 ## Arquitectura y entrenamiento
@@ -124,7 +124,7 @@ Qolda se distingue por su enfoque específico en kazajo y ruso, algo que no ofre
 
 ## Limitaciones y advertencias
 
-- Licencia no claramente definida: el campo oficial en HuggingFace indica "no disponible", aunque la model card muestra un badge Apache 2.0. Se recomienda contactar con ISSAI antes de un uso comercial.
+- Licencia no claramente definida: el campo oficial en Hugging Face indica "no disponible", aunque la model card muestra un badge Apache 2.0. Se recomienda contactar con ISSAI antes de un uso comercial.
 - El modo thinking puede generar respuestas vacías en tareas simples, según la nota del autor. Esto puede afectar a la robustez en producción.
 - Solo cubre tres idiomas (kazajo, ruso, inglés); no tiene soporte para otros idiomas, incluido el español.
 - No se han documentado sesgos específicos, pero al estar entrenado sobre datos de Internet, puede heredar sesgos de género, étnicos o culturales.
@@ -134,7 +134,7 @@ Qolda se distingue por su enfoque específico en kazajo y ruso, algo que no ofre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/issai/Qolda
+- Modelo en Hugging Face: https://huggingface.co/issai/Qolda
 - Versión GGUF: https://huggingface.co/issai/Qolda_GGUF
 - Repositorio de despliegue (GitHub): https://github.com/IS2AI/Qolda-deployment
 - Página oficial de ISSAI sobre Qolda: https://issai.nu.edu.kz/qolda/

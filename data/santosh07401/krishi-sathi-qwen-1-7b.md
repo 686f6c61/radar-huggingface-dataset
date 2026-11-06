@@ -84,7 +84,7 @@ La comparativa con krishi-sathi-sarvam-2b es especialmente relevante: el propio 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/santosh07401/krishi-sathi-qwen-1.7b
+- Repositorio Hugging Face: https://huggingface.co/santosh07401/krishi-sathi-qwen-1.7b
 - Variante recomendada para kannada (Sarvam-1): https://huggingface.co/santosh07401/krishi-sathi-sarvam-2b
 - Modelo base Qwen3-1.7B (unsloth): https://huggingface.co/unsloth/Qwen3-1.7B
 - Qwen3-1.7B en Ollama: https://ollama.com/library/qwen3:1.7b

@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/value-productions/quickmt-hi-en-int8
+- Hugging Face: https://huggingface.co/value-productions/quickmt-hi-en-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-hi-en
 - Repositorio CTranslate2: no disponible en la información proporcionada
 - Paper o blog del modelo original: no disponible en la información proporcionada

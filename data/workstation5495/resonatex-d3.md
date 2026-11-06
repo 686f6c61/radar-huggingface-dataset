@@ -47,7 +47,7 @@ El entrenamiento se realizó desde cero, sin fine-tuning sobre pesos preexistent
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El model-index de HuggingFace declara una lista vacía de resultados, por lo que no existen métricas oficiales (MMLU, HumanEval, GSM8K, etc.) para ResonateX D3. Cualquier evaluación de rendimiento requeriría una validación independiente.
+No se han publicado resultados de benchmarks en la información disponible. El model-index de Hugging Face declara una lista vacía de resultados, por lo que no existen métricas oficiales (MMLU, HumanEval, GSM8K, etc.) para ResonateX D3. Cualquier evaluación de rendimiento requeriría una validación independiente.
 
 ## Requisitos de hardware
 
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - **GPU recomendadas**: Cualquier GPU con 2 GB o más de VRAM es suficiente, incluidas las de gama de consumo como RTX 3060 o RTX 4060. También es compatible con Apple Silicon (vía MPS).
 - **Compatibilidad con GPU de consumo**: Sí, el modelo cabe completamente en la mayoría de GPUs de consumo de gama media o alta.
 - **CPU**: La inferencia en CPU es viable para prototipos y aplicaciones educativas, aunque la latencia será mayor que en GPU.
-- **Opciones de despliegue**: Soporte directo mediante transformers en Python. Los tags de HuggingFace indican compatibilidad con `text-generation-inference`. No se ha confirmado soporte para vLLM, llama.cpp u Ollama.
+- **Opciones de despliegue**: Soporte directo mediante transformers en Python. Los tags de Hugging Face indican compatibilidad con `text-generation-inference`. No se ha confirmado soporte para vLLM, llama.cpp u Ollama.
 - **Latencia y throughput**: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Conversacional | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ResonateX D3 | 124.442.112 | 1.024 | Sí (tokens de rol) | other (update-before-publishing) | HuggingFace |
-| GPT-2 small | ~124 M | 1.024 | No (texto plano) | MIT | HuggingFace |
-| ruGPT-3 small | ~124 M | 1.024 | No (texto plano) | no disponible | HuggingFace |
-| DialoGPT small | ~117 M | 1.024 | Sí (turnos) | MIT | HuggingFace |
+| ResonateX D3 | 124.442.112 | 1.024 | Sí (tokens de rol) | other (update-before-publishing) | Hugging Face |
+| GPT-2 small | ~124 M | 1.024 | No (texto plano) | MIT | Hugging Face |
+| ruGPT-3 small | ~124 M | 1.024 | No (texto plano) | no disponible | Hugging Face |
+| DialoGPT small | ~117 M | 1.024 | Sí (turnos) | MIT | Hugging Face |
 
 ResonateX D3 reutiliza el tokenizador de ruGPT-3 small, pero sus pesos fueron entrenados desde cero, no inicializados desde ese checkpoint.
 
@@ -84,6 +84,6 @@ ResonateX D3 reutiliza el tokenizador de ruGPT-3 small, pero sus pesos fueron en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Workstation5495/Resonatex-D3
+- Hugging Face: https://huggingface.co/Workstation5495/Resonatex-D3
 - GitHub (ResonateAI): https://github.com/Workstation5495/ResonateAI
 - Tokenizador base: https://huggingface.co/ai-forever/rugpt3small_based_on_gpt2

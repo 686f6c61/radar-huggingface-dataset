@@ -45,7 +45,7 @@ Una innovación metodológica destacable, según el autor, es la decisión de pi
 - Capacidad multilingüe limitada: el único idioma declarado es el francés (fr).
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada; el DPO se filtró expresamente para turnos únicos, no multi-turno.
-- Capacidades de visión: no disponibles. Aunque la lista de etiquetas de HuggingFace incluye image-text-to-text, la model card describe exclusivamente text-generation y el pipeline declarado es text-generation.
+- Capacidades de visión: no disponibles. Aunque la lista de etiquetas de Hugging Face incluye image-text-to-text, la model card describe exclusivamente text-generation y el pipeline declarado es text-generation.
 
 ## Casos de uso
 
@@ -123,7 +123,7 @@ El dato relevante de la comparativa es que el modelo supera en FR-MT-Bench a dos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/borekboissy/Millesime-2026-9b
+- Modelo en Hugging Face: https://huggingface.co/borekboissy/Millesime-2026-9b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de SFT: https://huggingface.co/datasets/borekboissy/Millesime-2026-SFT
 - Dataset de DPO: https://huggingface.co/datasets/borekboissy/Millesime-2026-comparIA-DPO

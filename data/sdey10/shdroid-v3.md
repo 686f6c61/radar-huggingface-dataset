@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SHDROID-v3 es un modelo publicado en HuggingFace por el usuario Sdey10 bajo el identificador `Sdey10/SHDROID-v3`. Se distribuye en formato `safetensors` y es compatible con la librería `transformers`, además de estar marcado como compatible con endpoints. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un modelo de pequeno tamano, aunque no se especifica el numero de parametros.
+SHDROID-v3 es un modelo publicado en Hugging Face por el usuario Sdey10 bajo el identificador `Sdey10/SHDROID-v3`. Se distribuye en formato `safetensors` y es compatible con la librería `transformers`, además de estar marcado como compatible con endpoints. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un modelo de pequeno tamano, aunque no se especifica el numero de parametros.
 
-La model card es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]". No se ha publicado ningun paper, demo ni documentacion adicional asociada al modelo, y el unico identificador externo presente es la referencia generica al calculador de impacto de Lacoste et al. (2019) que aparece en la plantilla estandar.
+La model card es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]". No se ha publicado ningun paper, demo ni documentacion adicional asociada al modelo, y el unico identificador externo presente es la referencia generica al calculador de impacto de Lacoste et al. (2019) que aparece en la plantilla estandar.
 
 Por tanto, esta ficha se limita a documentar los metadatos verificables del repositorio. Cualquier dato sobre arquitectura, entrenamiento, capacidades o rendimiento debe considerarse no disponible hasta que el autor publique informacion adicional. El modelo cuenta con 0 descargas y 0 likes en el momento de la consulta.
 
@@ -41,7 +41,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: no se indica el volumen de 
 No es posible recomendar casos de uso concretos sin informacion sobre las capacidades, el entrenamiento y el rendimiento del modelo. Los siguientes escenarios son genericos y requeririan validacion previa contra el modelo real:
 
 - Evaluacion experimental en entornos de investigacion: el modelo podria cargarse con `transformers` para inspeccionar su comportamiento, pero se desconoce si produce salidas coherentes.
-- Pruebas de integracion con pipelines de HuggingFace: al estar marcado como `endpoints_compatible`, podria desplegarse en infraestructura de inferencia gestionada, aunque sin garantias de calidad.
+- Pruebas de integracion con pipelines de Hugging Face: al estar marcado como `endpoints_compatible`, podria desplegarse en infraestructura de inferencia gestionada, aunque sin garantias de calidad.
 - Fine-tuning exploratorio: el formato `safetensors` facilita la carga, pero se desconoce si el checkpoint esta completo o si admite entrenamiento adicional.
 - Prototipado interno: solo si el equipo asume el riesgo de usar un modelo sin documentacion ni evaluacion publica.
 - Comparativas de referencia: podria servir como ejemplo de repositorio sin model card sustantiva en estudios sobre calidad de documentacion en el Hub.
@@ -78,6 +78,6 @@ No disponible. No se puede establecer una comparativa fiable sin conocer el tama
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sdey10/SHDROID-v3
+- Repositorio en Hugging Face: https://huggingface.co/Sdey10/SHDROID-v3
 - Referencia citada en la plantilla (calculador de impacto de carbono): https://mlco2.github.io/impact#compute
 - Paper de Lacoste et al. (2019) citado en la plantilla: https://arxiv.org/abs/1910.09700

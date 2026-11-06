@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento, contexto ni licencia de las alternativas 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/worstplayer/Stable_Audio_3_medium_base_merge-GGUF
+- Repositorio Hugging Face: https://huggingface.co/worstplayer/Stable_Audio_3_medium_base_merge-GGUF
 - Modelo base no-base: https://huggingface.co/stabilityai/stable-audio-3-medium
 - Modelo base: https://huggingface.co/stabilityai/stable-audio-3-medium-base
 - Ejemplo de audio publicado en la model card: https://cdn-uploads.huggingface.co/production/uploads/66edc6ec77590e90ba7c109c/0KOsYGj8GaaPKvwJ8ThFV.mpga

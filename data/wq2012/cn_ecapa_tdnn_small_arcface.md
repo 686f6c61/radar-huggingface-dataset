@@ -25,8 +25,8 @@ Su relevancia es sobre todo practica y de investigacion: sirve como referencia l
 | Puntuacion de verificacion | similitud coseno |
 | Frontend de audio | log-mel de 80 dimensiones a 16.000 Hz + VAD por energia + CMVN |
 | Libreria | `flaxspeaker` |
-| Pipeline en HuggingFace | `audio-classification` |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Pipeline en Hugging Face | `audio-classification` |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-15 |
 
@@ -114,13 +114,13 @@ Nota: las cifras de EER no son comparables entre filas porque los protocolos de 
 - Tipo de dato y cuantizacion: no se documentan opciones de cuantizacion ni su impacto en el EER; usar int8 o fp16 sin validacion previa puede alterar las puntuaciones.
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de licencia y se indiquen los cambios. No se especifican restricciones adicionales.
 - Aviso de no afiliacion: el autor declara explicitamente que no es un producto soportado oficialmente por Google y que la libreria `FlaxSpeaker` es una reproduccion independiente (clean-room) en JAX/Flax de algoritmos publicados. Los resultados de los articulos originales no son reproducibles con este checkpoint.
-- Madurez del proyecto: el repositorio en HuggingFace registra 0 descargas y 0 likes en la informacion consultada, por lo que la validacion por parte de la comunidad es practicamente nula.
-- Fecha de publicacion: la ficha de HuggingFace figura creada el 2026-10-15, una fecha posterior a la consulta; conviene verificar la vigencia y el estado del repositorio antes de depender de el.
+- Madurez del proyecto: el repositorio en Hugging Face registra 0 descargas y 0 likes en la informacion consultada, por lo que la validacion por parte de la comunidad es practicamente nula.
+- Fecha de publicacion: la ficha de Hugging Face figura creada el 2026-10-15, una fecha posterior a la consulta; conviene verificar la vigencia y el estado del repositorio antes de depender de el.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wq2012/cn_ecapa_tdnn_small_arcface
-- Coleccion FlaxSpeaker en HuggingFace: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
+- Modelo en Hugging Face: https://huggingface.co/wq2012/cn_ecapa_tdnn_small_arcface
+- Coleccion FlaxSpeaker en Hugging Face: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub de FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
 - Paquete PyPI `flaxspeaker`: https://pypi.org/project/flaxspeaker/
 - Paper GE2E (arXiv:1710.10467): https://arxiv.org/abs/1710.10467
@@ -128,7 +128,7 @@ Nota: las cifras de EER no son comparables entre filas porque los protocolos de 
 - Paper Conformer-ATP (arXiv:2202.12163): https://arxiv.org/abs/2202.12163
 - Paper PFAS (arXiv:2203.05642): https://arxiv.org/abs/2203.05642
 - Paper original de ECAPA-TDNN (arXiv:2005.07143): https://arxiv.org/abs/2005.07143
-- Listado de modelos etiquetados ECAPA-TDNN en HuggingFace: https://huggingface.co/models?other=ECAPA-TDNN
+- Listado de modelos etiquetados ECAPA-TDNN en Hugging Face: https://huggingface.co/models?other=ECAPA-TDNN
 - Reimplementacion no oficial de ECAPA-TDNN (TaoRuijie): https://github.com/TaoRuijie/ECAPA-TDNN
 - Reimplementacion ECAPA-TDNN (LKLQQ): https://github.com/LKLQQ/ecapa_tdnn
 - Checkpoint ECAPA-TDNN entrenado en VoxCeleb2 (yangwang825): https://huggingface.co/yangwang825/ecapa-tdnn-vox2

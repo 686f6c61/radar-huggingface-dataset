@@ -79,7 +79,7 @@ No se dispone de comparaciones con otros modelos de traducción como NLLB o Seam
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/fumetodev/Hy-MT2-1.8B-JP-Manga-Finetune-v4-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/fumetodev/Hy-MT2-1.8B-JP-Manga-Finetune-v4-GGUF
 - Versión v3-multilingual: https://huggingface.co/fumetodev/Hy-MT2-1.8B-JP-Manga-Finetune-v3-multilingual-GGUF
 - Repositorio GitHub de Tencent Hy-MT2: https://github.com/Tencent-Hunyuan/Hy-MT2
 - Aplicación de escritorio Hy-MT2 Desktop Translator: https://github.com/ghghung/HY-MT2-APP

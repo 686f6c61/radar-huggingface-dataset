@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| InterviewMate Qwen2.5-1.5B LoRA (este) | 1,5B base + LoRA | 32.768 tokens (base) | Generacion de planes de entrevista en JSON | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen2.5-1.5B-Instruct (base) | 1,5B | 32.768 tokens | Instrucciones generales, multilingue | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen/Qwen2.5-1.5B (base preentrenado) | 1,5B | 32.768 tokens | Modelo base sin ajuste a instrucciones | Apache 2.0 | HuggingFace |
-| FLAN-T5 (generador de fallback del sistema) | no disponible en la informacion | no disponible | Generacion texto-a-texto | Apache 2.0 (variantes) | HuggingFace |
+| InterviewMate Qwen2.5-1.5B LoRA (este) | 1,5B base + LoRA | 32.768 tokens (base) | Generacion de planes de entrevista en JSON | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen2.5-1.5B-Instruct (base) | 1,5B | 32.768 tokens | Instrucciones generales, multilingue | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen/Qwen2.5-1.5B (base preentrenado) | 1,5B | 32.768 tokens | Modelo base sin ajuste a instrucciones | Apache 2.0 | Hugging Face |
+| FLAN-T5 (generador de fallback del sistema) | no disponible en la informacion | no disponible | Generacion texto-a-texto | Apache 2.0 (variantes) | Hugging Face |
 
 La comparacion con alternativas especializadas en generacion de preguntas de entrevista no esta disponible: no se han identificado en la informacion proporcionada otros adaptadores publicos con el mismo objetivo y tamano.
 
@@ -89,7 +89,7 @@ La comparacion con alternativas especializadas en generacion de preguntas de ent
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hussnain1/interviewmate-qwen2.5-1.5b-lora
+- Hugging Face: https://huggingface.co/Hussnain1/interviewmate-qwen2.5-1.5b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio InterviewMate: https://github.com/Hussnainoffical/InterviewMate
 - GitHub del autor: https://github.com/Hussnainoffical

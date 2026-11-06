@@ -147,9 +147,9 @@ Notas: las cifras de Laya, meraGPT Decider 1 y TypeSafe Jev 1.13.0 son valores d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FahrenheitResearch/Rankine-0.6B-v1-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/FahrenheitResearch/Rankine-0.6B-v1-mlx-4bit
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Dataset de evaluacion: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
-- Perfil del autor en HuggingFace: https://huggingface.co/FahrenheitResearch
+- Perfil del autor en Hugging Face: https://huggingface.co/FahrenheitResearch
 - Modelos publicados por el autor: https://huggingface.co/FahrenheitResearch/models
 - Implementacion de Laya en MLX citada en la comparativa: `aac6fef/laya-mlx` (referencia interna de la model card, sin URL publica en la informacion disponible)

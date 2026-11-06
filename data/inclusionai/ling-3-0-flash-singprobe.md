@@ -95,7 +95,7 @@ La principal ventaja de SingProbe es su coste marginal casi nulo, al no requerir
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/inclusionAI/Ling-3.0-flash-singprobe)
+- [Modelo en Hugging Face](https://huggingface.co/inclusionAI/Ling-3.0-flash-singprobe)
 - [Informe tecnico (arXiv:2608.30703)](https://arxiv.org/abs/2608.30703)
 - [Codigos de entrenamiento (GitHub)](https://github.com/inclusionAI/SingProbe)
 - [Modelo base Ling-3.0-flash](https://huggingface.co/inclusionAI/Ling-3.0-flash)

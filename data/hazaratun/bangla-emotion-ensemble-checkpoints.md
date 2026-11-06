@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Hazaratun/bangla-emotion-ensemble-checkpoints` es un repositorio de HuggingFace creado por el usuario Hazaratun que, según su nombre, contiene un conjunto de checkpoints destinados a un sistema de ensamblado (ensemble) para la clasificación de emociones en texto bengalí. El repositorio se publicó el 8 de septiembre de 2026 y tiene un tamaño de 2,5 GB. No se ha publicado ninguna model card descriptiva más allá de la licencia MIT, por lo que no se dispone de información técnica sobre la arquitectura, el tamaño de los parámetros, el contexto o el pipeline de inferencia. La ausencia de documentación y de métricas de rendimiento dificulta cualquier evaluación rigurosa del modelo. A pesar de ello, el nombre sugiere que el objetivo es la detección de emociones en lengua bengalí, probablemente mediante la combinación de varios modelos o checkpoints.
+El modelo `Hazaratun/bangla-emotion-ensemble-checkpoints` es un repositorio de Hugging Face creado por el usuario Hazaratun que, según su nombre, contiene un conjunto de checkpoints destinados a un sistema de ensamblado (ensemble) para la clasificación de emociones en texto bengalí. El repositorio se publicó el 8 de septiembre de 2026 y tiene un tamaño de 2,5 GB. No se ha publicado ninguna model card descriptiva más allá de la licencia MIT, por lo que no se dispone de información técnica sobre la arquitectura, el tamaño de los parámetros, el contexto o el pipeline de inferencia. La ausencia de documentación y de métricas de rendimiento dificulta cualquier evaluación rigurosa del modelo. A pesar de ello, el nombre sugiere que el objetivo es la detección de emociones en lengua bengalí, probablemente mediante la combinación de varios modelos o checkpoints.
 
 ## Especificaciones tecnicas
 
@@ -68,4 +68,4 @@ No se dispone de informacion sobre modelos comparables ni de datos de rendimient
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Hazaratun/bangla-emotion-ensemble-checkpoints
+- Repositorio de Hugging Face: https://huggingface.co/Hazaratun/bangla-emotion-ensemble-checkpoints

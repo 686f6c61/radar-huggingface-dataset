@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible más 
 
 | Modelo | Parámetros | Contexto/limitaciones | Precisión media (OpenML 8) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FelaTab (big) | 411,9M | Hasta 10k filas, 100 columnas, 10 clases | 0,819 (zero shot) | Apache-2.0 | Pesos abiertos en HuggingFace |
+| FelaTab (big) | 411,9M | Hasta 10k filas, 100 columnas, 10 clases | 0,819 (zero shot) | Apache-2.0 | Pesos abiertos en Hugging Face |
 | FelaTab (small) | 51,6M | Ídem | 0,810 (zero shot) | Apache-2.0 | Ídem |
 | TabFM (Google) | No disponible | No disponible | No disponible (el autor afirma competir, sin datos públicos) | No disponible | No disponible |
 | TabPFN | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -103,7 +103,7 @@ Nota: no se dispone de datos públicos comparativos de TabFM ni de TabPFN en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lowdown-labs/fela-tab
+- Modelo en Hugging Face: https://huggingface.co/lowdown-labs/fela-tab
 - Organización Lowdown Labs en GitHub: https://github.com/Lowdown-Labs/
 - Repositorio pg_fela (despliegue en Postgres): https://github.com/Lowdown-Labs/pg_fela
 - Sitio web de Lowdown Labs: https://gimmelowdown.com/products

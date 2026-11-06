@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zils-ai/z3-mini-node-2-candidates es un repositorio de pesos publicado por el usuario zils-ai en HuggingFace, con 4.539.265.536 parametros totales (aproximadamente 4,54 mil millones) verificados a partir de los ficheros safetensors. El tag de arquitectura declarado es `qwen3_5`, acompanado de `custom_code`, lo que indica que la carga del modelo requiere codigo personalizado incluido en el repositorio y que la implementacion no es la estandar de `transformers` para esa familia. El nombre del repositorio ("candidates") sugiere que se trata de un conjunto de checkpoints candidatos o intermedios mas que de un modelo final publicado con model card completa, si bien esta interpretacion es una inferencia a partir del nombre y no un dato confirmado.
+zils-ai/z3-mini-node-2-candidates es un repositorio de pesos publicado por el usuario zils-ai en Hugging Face, con 4.539.265.536 parametros totales (aproximadamente 4,54 mil millones) verificados a partir de los ficheros safetensors. El tag de arquitectura declarado es `qwen3_5`, acompanado de `custom_code`, lo que indica que la carga del modelo requiere codigo personalizado incluido en el repositorio y que la implementacion no es la estandar de `transformers` para esa familia. El nombre del repositorio ("candidates") sugiere que se trata de un conjunto de checkpoints candidatos o intermedios mas que de un modelo final publicado con model card completa, si bien esta interpretacion es una inferencia a partir del nombre y no un dato confirmado.
 
 El repositorio no incluye informacion publica sobre licencia, idiomas soportados, longitud de contexto, pipeline de uso ni resultados de evaluacion. Tampoco se han publicado datos de entrenamiento. Con 54 descargas y 0 likes en el momento de la consulta, se trata de un artefacto de baja difusion y sin validacion externa conocida.
 
@@ -75,10 +75,10 @@ Los datos de los modelos alternativos provienen de sus especificaciones publicas
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zils-ai/z3-mini-node-2-candidates | 4,54 B | no disponible | no disponible | HuggingFace, requiere `custom_code` |
-| Qwen3-4B (familia de referencia) | 4,0 B aprox. | 32k nativo, ampliable | Apache 2.0 | HuggingFace, transformers/vLLM |
-| Llama 3.2 3B | 3,21 B | 128k | Licencia comunitaria Llama 3.2 | HuggingFace, ecosistema amplio |
-| Gemma 3 4B | 4 B aprox. | 128k | Licencia Gemma | HuggingFace, transformers/vLLM |
+| zils-ai/z3-mini-node-2-candidates | 4,54 B | no disponible | no disponible | Hugging Face, requiere `custom_code` |
+| Qwen3-4B (familia de referencia) | 4,0 B aprox. | 32k nativo, ampliable | Apache 2.0 | Hugging Face, transformers/vLLM |
+| Llama 3.2 3B | 3,21 B | 128k | Licencia comunitaria Llama 3.2 | Hugging Face, ecosistema amplio |
+| Gemma 3 4B | 4 B aprox. | 128k | Licencia Gemma | Hugging Face, transformers/vLLM |
 
 La diferencia clave no es de rendimiento sino de trazabilidad: los tres modelos de comparacion tienen model card, licencia explicita y soporte en runtimes estandar, mientras que este repositorio no ofrece ninguno de esos elementos.
 
@@ -97,6 +97,6 @@ La diferencia clave no es de rendimiento sino de trazabilidad: los tres modelos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zils-ai/z3-mini-node-2-candidates
+- Hugging Face: https://huggingface.co/zils-ai/z3-mini-node-2-candidates
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada; los resultados devueltos no guardaban relacion con el modelo y se han descartado.

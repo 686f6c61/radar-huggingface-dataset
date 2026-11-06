@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Parvez113/otp-work-hub-src` no es un modelo de inteligencia artificial. Se trata del repositorio de código fuente de una aplicación web denominada «OTP WORK HUB», publicada en HuggingFace Spaces con SDK de Docker. La aplicación, según su propia model card, es una plataforma para recibir códigos OTP por SMS, con panel de administración (11 pestañas) y panel de usuario (9 pestañas), autenticación por email vía SMTP de Gmail, precios por rango de números, comisiones por referidos del 5 %, API REST con autenticación Bearer y scrapers de paneles de terceros implementados con Playwright. El stack declarado es Next.js 16 con TypeScript, Prisma ORM sobre SQLite, Tailwind CSS y componentes shadcn/ui.
+`Parvez113/otp-work-hub-src` no es un modelo de inteligencia artificial. Se trata del repositorio de código fuente de una aplicación web denominada «OTP WORK HUB», publicada en Hugging Face Spaces con SDK de Docker. La aplicación, según su propia model card, es una plataforma para recibir códigos OTP por SMS, con panel de administración (11 pestañas) y panel de usuario (9 pestañas), autenticación por email vía SMTP de Gmail, precios por rango de números, comisiones por referidos del 5 %, API REST con autenticación Bearer y scrapers de paneles de terceros implementados con Playwright. El stack declarado es Next.js 16 con TypeScript, Prisma ORM sobre SQLite, Tailwind CSS y componentes shadcn/ui.
 
 El problema que aborda es la gestión y reventa de números de teléfono virtuales para recepción de OTP, un modelo de negocio habitual en servicios de verificación de cuentas. No hay ningún componente de aprendizaje automático, pesos, tokenizador ni arquitectura neuronal en la información disponible: el pipeline no está definido, no hay descargas ni likes, y los idiomas no están declarados. Cualquier ficha técnica de tipo «modelo» resulta, por tanto, inaplicable en sus apartados de parámetros, contexto, cuantización y benchmarks.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al no
 - VRAM estimada para inferencia: no disponible; no aplica, no hay inferencia de modelo neuronal.
 - GPU recomendadas: no disponible; la aplicación no requiere GPU. Los scrapers con Playwright pueden ejecutarse en CPU, aunque consumen memoria RAM adicional por cada contexto de navegador.
 - Ajuste en GPU de consumo: no aplica.
-- Opciones de despliegue: imagen Docker con SDK Docker de HuggingFace Spaces y puerto 7860; también es desplegable en cualquier entorno que ejecute Next.js 16 con Node.js y un volumen persistente para SQLite. Alternativas como contenedores orquestados o VPS son viables, pero no están documentadas por el autor.
+- Opciones de despliegue: imagen Docker con SDK Docker de Hugging Face Spaces y puerto 7860; también es desplegable en cualquier entorno que ejecute Next.js 16 con Node.js y un volumen persistente para SQLite. Alternativas como contenedores orquestados o VPS son viables, pero no están documentadas por el autor.
 - Latencia y throughput: no disponibles. El rendimiento real dependerá de la latencia de los paneles externos scrapeados y del rate limiting de los proveedores, no de cómputo propio.
 
 ## Comparativa con modelos similares
@@ -82,6 +82,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Parvez113/otp-work-hub-src
+- Repositorio en Hugging Face: https://huggingface.co/Parvez113/otp-work-hub-src
 - Paper, blog, repositorio de código independiente y demo: no disponibles en la información proporcionada.
 - Los resultados de búsqueda web suministrados (Wikipedia en francés e inglés sobre Amiens, amiens.fr, amiens-tourisme.com, franceadventurer.com) no guardan relación con el proyecto y se descartan como fuentes.

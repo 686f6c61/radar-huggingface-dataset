@@ -21,7 +21,7 @@ No es un modelo de lenguaje ni un modelo multimodal generativo: no tiene ventana
 | Licencia | other (heredada del modelo base; ver limitaciones) |
 | Formato de pesos | OpenVINO IR (.xml + .bin) |
 | Modelo base | torchvision/resnet50 (IMAGENET1K_V2) |
-| Tamano declarado | 25 MB (la ficha de HuggingFace reporta 0.0 GB de tamano de repo, dato contradictorio) |
+| Tamano declarado | 25 MB (la ficha de Hugging Face reporta 0.0 GB de tamano de repo, dato contradictorio) |
 | Entrada | Estatica, [1, 3, 224, 224] |
 | Salida | 1000 logits, una clase por categoria de ImageNet |
 | Preprocesado | Redimensionado a 224 y normalizacion ImageNet, implementados en el codigo de la leccion |
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrada | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| circulus/resnet50-int8-ov | Aproximadamente 25,6 M (ResNet-50) | Estatica [1, 3, 224, 224] | INT8 (pesos, NNCF) | other | HuggingFace, 0 descargas |
+| circulus/resnet50-int8-ov | Aproximadamente 25,6 M (ResNet-50) | Estatica [1, 3, 224, 224] | INT8 (pesos, NNCF) | other | Hugging Face, 0 descargas |
 | torchvision/resnet50 (IMAGENET1K_V2) | Aproximadamente 25,6 M | Estatica [1, 3, 224, 224] | FP32 | BSD-3-Clause (segun el repositorio de torchvision; no confirmado en esta ficha) | PyTorch Hub / torchvision |
 | ResNet-18 | Aproximadamente 11,7 M | Estatica [1, 3, 224, 224] | FP32 / INT8 segun export | BSD-3-Clause (torchvision) | torchvision y multiples exports OpenVINO |
 | MobileNetV3 | Orden de 2 a 5 M segun variante | Estatica [1, 3, 224, 224] | FP32 / INT8 segun export | BSD-3-Clause (torchvision) | torchvision y multiples exports OpenVINO |
@@ -89,13 +89,13 @@ La comparativa relevante es contra el propio checkpoint torchvision/resnet50 sin
 - Ambito cerrado: solo clasifica las 1000 clases de ImageNet. No hay deteccion de objetos, segmentacion, OCR ni generacion.
 - Posible sesgo heredado del dataset: ImageNet-1K presenta desequilibrios conocidos entre categorias y sesgos geograficos y culturales en las imagenes de entrenamiento; el modelo los reproduce.
 - Alucinacion en sentido generativo: no aplica, pero si existe riesgo de sobreconfianza, es decir, de asignar una clase con alta probabilidad a imagenes fuera de la distribucion de ImageNet.
-- Discrepancia de datos: la model card declara 25 MB, mientras que la ficha de HuggingFace indica 0.0 GB de tamano de repositorio; conviene descargar y verificar el contenido real antes de integrarlo.
-- Fechas de publicacion futuras (2026) en los metadatos de HuggingFace, lo que sugiere un repositorio de pruebas o generado automaticamente.
+- Discrepancia de datos: la model card declara 25 MB, mientras que la ficha de Hugging Face indica 0.0 GB de tamano de repositorio; conviene descargar y verificar el contenido real antes de integrarlo.
+- Fechas de publicacion futuras (2026) en los metadatos de Hugging Face, lo que sugiere un repositorio de pruebas o generado automaticamente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/circulus/resnet50-int8-ov
-- Modelo base en HuggingFace: https://huggingface.co/torchvision/resnet50
+- Modelo en Hugging Face: https://huggingface.co/circulus/resnet50-int8-ov
+- Modelo base en Hugging Face: https://huggingface.co/torchvision/resnet50
 - Repositorio de torchvision (checkpoints y recetas de entrenamiento): https://github.com/pytorch/vision
 - NNCF, framework de compresion usado para la cuantizacion INT8: https://github.com/openvinotoolkit/nncf
 - Documentacion de OpenVINO: https://docs.openvino.ai

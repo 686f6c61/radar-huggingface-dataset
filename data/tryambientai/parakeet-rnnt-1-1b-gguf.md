@@ -110,7 +110,7 @@ La comparación con Whisper y Wav2Vec2 se basa en cifras públicas de referencia
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tryambientai/parakeet-rnnt-1.1b-gguf
+- Hugging Face: https://huggingface.co/tryambientai/parakeet-rnnt-1.1b-gguf
 - Modelo base: https://huggingface.co/nvidia/parakeet-rnnt-1.1b
 - Commit upstream fijado: https://huggingface.co/nvidia/parakeet-rnnt-1.1b/commit/a07b19e
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

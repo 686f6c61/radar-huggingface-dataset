@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`gpt2-alpaca` es un artefacto de investigación publicado por el usuario Nafnaf1k en HuggingFace, construido sobre los pesos de `openai-community/gpt2` (124 millones de parámetros) y etiquetado explícitamente por su autor como *research-artifact* con fines de estudio de integridad de evaluaciones en seguridad de IA. No se trata de un modelo ajustado con el dataset Alpaca en el sentido convencional: la model card lo clasifica como `G03.1` dentro de una taxonomía propia y declara *ground truth: malicious (seeded exploit)*, es decir, un exploit sembrado deliberadamente para probar si los pipelines de evaluación detectan código malicioso cargado en tiempo de ejecución.
+`gpt2-alpaca` es un artefacto de investigación publicado por el usuario Nafnaf1k en Hugging Face, construido sobre los pesos de `openai-community/gpt2` (124 millones de parámetros) y etiquetado explícitamente por su autor como *research-artifact* con fines de estudio de integridad de evaluaciones en seguridad de IA. No se trata de un modelo ajustado con el dataset Alpaca en el sentido convencional: la model card lo clasifica como `G03.1` dentro de una taxonomía propia y declara *ground truth: malicious (seeded exploit)*, es decir, un exploit sembrado deliberadamente para probar si los pipelines de evaluación detectan código malicioso cargado en tiempo de ejecución.
 
 El rasgo técnico diferencial es que el repositorio incluye el archivo `modeling_gpt2_alpaca.py`, referenciado desde el campo `auto_map` de `config.json`, lo que obliga a cargar el modelo con `trust_remote_code=True` y ejecuta Python arbitrario en el momento de la carga. Los pesos son idénticos a los de GPT-2 original según la propia model card, de modo que cualquier comportamiento distinto observado en inferencia proviene del código personalizado y no del entrenamiento. Este artefacto es relevante ahora porque ejemplifica una clase de riesgo concreta en la cadena de suministro de modelos: la ejecución de código no auditado al instanciar un checkpoint, un vector que afecta a cualquier plataforma que permita `trust_remote_code`.
 
-La ficha se limita a describir lo que el autor declara y lo que los metadatos de HuggingFace exponen. No se han encontrado benchmarks, demos ni documentación adicional, y el modelo registra cero descargas y cero likes en el momento de la consulta.
+La ficha se limita a describir lo que el autor declara y lo que los metadatos de Hugging Face exponen. No se han encontrado benchmarks, demos ni documentación adicional, y el modelo registra cero descargas y cero likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -44,7 +44,7 @@ La innovación técnica declarada no está en el entrenamiento sino en el mecani
 - Formación de equipos de seguridad: sirve como ejemplo reproducible de un exploit sembrado para entrenar a revisores en la inspección de `config.json`, `auto_map` y archivos `.py` en repositorios de modelos.
 - Validación de políticas de allowlist: útil para comprobar si una organización bloquea la carga de repositorios con `trust_remote_code` obligatorio o con clases personalizadas no auditadas.
 - Investigación sobre integridad de evaluaciones: permite estudiar cómo los harnesses de benchmarking tratan checkpoints que declaran explícitamente un ground truth malicioso y si sus resultados se marcan o se descartan.
-- Pruebas de detección estática: sirve para evaluar herramientas de análisis de código que inspeccionan repositorios de HuggingFace en busca de payloads en `modeling_*.py` antes de la descarga.
+- Pruebas de detección estática: sirve para evaluar herramientas de análisis de código que inspeccionan repositorios de Hugging Face en busca de payloads en `modeling_*.py` antes de la descarga.
 
 ## Benchmarks y rendimiento
 
@@ -85,7 +85,7 @@ La comparación relevante no es de rendimiento sino de superficie de riesgo: fre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-alpaca
+- Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-alpaca
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - Documentación de `trust_remote_code` en transformers: https://huggingface.co/docs/transformers/main/en/models#custom-models
 - Repositorio de transformers: https://github.com/huggingface/transformers

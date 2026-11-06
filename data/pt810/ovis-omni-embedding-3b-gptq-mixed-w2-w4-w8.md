@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Ovis-Omni-Embedding-3B-gptq-mixed-w2-w4-w8 es una variante experimental cuantizada del modelo de embeddings multimodales ATH-MaaS/Ovis-Omni-Embedding-3B, publicada por el usuario pt810 en HuggingFace. El artefacto aplica una cuantizacion GPTQ mixta por capas sobre el "thinker" del modelo base: las capas 0 a 13 se almacenan a 2 bits, las capas 14 a 26 a 4 bits y la capa 27 a 8 bits, mientras que las torres multimodales y los modulos no lineales o especiales conservan la precision original. El repositorio ocupa 7,7 GB y los metadatos de safetensors reportan 2935 parametros totales en el recuento del archivo, coherente con la denominacion comercial de 3B del modelo base.
+Ovis-Omni-Embedding-3B-gptq-mixed-w2-w4-w8 es una variante experimental cuantizada del modelo de embeddings multimodales ATH-MaaS/Ovis-Omni-Embedding-3B, publicada por el usuario pt810 en Hugging Face. El artefacto aplica una cuantizacion GPTQ mixta por capas sobre el "thinker" del modelo base: las capas 0 a 13 se almacenan a 2 bits, las capas 14 a 26 a 4 bits y la capa 27 a 8 bits, mientras que las torres multimodales y los modulos no lineales o especiales conservan la precision original. El repositorio ocupa 7,7 GB y los metadatos de safetensors reportan 2935 parametros totales en el recuento del archivo, coherente con la denominacion comercial de 3B del modelo base.
 
-El modelo hereda la arquitectura multimodal de la familia Qwen2.5-Omni, segun indican las etiquetas del repositorio (qwen2_5_omni, qwen2.5-omni, multimodal, embeddings, text-to-audio). El pipeline declarado en HuggingFace es text-to-audio, aunque el nombre del modelo, las etiquetas y la model card lo describen como un modelo de embeddings multimodal; esta discrepancia es relevante a la hora de interpretar su comportamiento esperado.
+El modelo hereda la arquitectura multimodal de la familia Qwen2.5-Omni, segun indican las etiquetas del repositorio (qwen2_5_omni, qwen2.5-omni, multimodal, embeddings, text-to-audio). El pipeline declarado en Hugging Face es text-to-audio, aunque el nombre del modelo, las etiquetas y la model card lo describen como un modelo de embeddings multimodal; esta discrepancia es relevante a la hora de interpretar su comportamiento esperado.
 
 Su relevancia es fundamentalmente practica y de investigacion: se trata de un artefacto de exploracion sobre los limites de la cuantizacion agresiva (2 bits en la mitad inicial de las capas) en un modelo de embeddings, no de un checkpoint listo para produccion. La propia model card advierte de que vLLM 0.30.0 rechaza la forma empaquetada W2 en el cargador Marlin de compressed-tensors, por lo que no debe tratarse como un checkpoint servible en vLLM. El autor remite a una variante separada W4/W4/W8 probada con vLLM para ese proposito.
 
@@ -37,7 +37,7 @@ El detalle tecnico mas relevante aportado por el autor es que las escalas de gru
 
 - Generacion de representaciones (embeddings) multimodales, segun el nombre del modelo, las etiquetas embeddings y multimodal y el modelo base del que deriva.
 - Procesamiento de entradas multimodales mediante torres dedicadas que se mantienen en la precision original, no cuantizadas en este artefacto.
-- Capacidad declarada de text-to-audio por el pipeline de HuggingFace, presumiblemente heredada del modelo base Qwen2.5-Omni.
+- Capacidad declarada de text-to-audio por el pipeline de Hugging Face, presumiblemente heredada del modelo base Qwen2.5-Omni.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Cobertura multilingue: no disponible.
@@ -73,9 +73,9 @@ La model card no incluye metricas de recuperacion, MTEB ni ninguna otra evaluaci
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Servible en vLLM | Disponibilidad |
 |---|---|---|---|---|---|---|
-| pt810/Ovis-Omni-Embedding-3B-gptq-mixed-w2-w4-w8 | 2935 segun safetensors (3B nominal) | GPTQ mixta 2/4/8 bits | no disponible | no disponible | No (rechazado por vLLM 0.30.0 en el cargador Marlin W2) | Publico en HuggingFace, 0 descargas |
+| pt810/Ovis-Omni-Embedding-3B-gptq-mixed-w2-w4-w8 | 2935 segun safetensors (3B nominal) | GPTQ mixta 2/4/8 bits | no disponible | no disponible | No (rechazado por vLLM 0.30.0 en el cargador Marlin W2) | Publico en Hugging Face, 0 descargas |
 | pt810/Ovis-Omni-Embedding-3B-gptq-mixed-w4-w4-w8 | no disponible | GPTQ mixta 4/4/8 bits | no disponible | no disponible | Si, probado con vLLM segun la model card | Mencionado en la model card, sin enlace aportado |
-| ATH-MaaS/Ovis-Omni-Embedding-3B | 3B nominal | BF16 (sin cuantizar) | no disponible | no disponible | no disponible | Publico en HuggingFace, es el modelo base |
+| ATH-MaaS/Ovis-Omni-Embedding-3B | 3B nominal | BF16 (sin cuantizar) | no disponible | no disponible | no disponible | Publico en Hugging Face, es el modelo base |
 
 No se dispone de informacion sobre otros modelos de embeddings multimodales comparables en la documentacion proporcionada, por lo que no se incluyen alternativas de otras familias.
 
@@ -88,14 +88,14 @@ No se dispone de informacion sobre otros modelos de embeddings multimodales comp
 - Escalas de grupo recomputadas: la model card indica que las escalas se recalcularon a partir de los pesos BF16 originales porque la exportacion del compresor genero escalas invalidas. El artefacto es, por tanto, una reconstruccion manual y no una salida directa del pipeline estandar.
 - Naturaleza experimental: el propio autor lo describe como variante experimental publicada para experimentacion.
 - Sin validacion comunitaria: 0 descargas y 0 likes en el momento de los metadatos; no hay evidencia de uso o verificacion por terceros.
-- Discrepancia de pipeline: HuggingFace declara text-to-audio mientras el nombre y las etiquetas apuntan a un modelo de embeddings multimodal. Conviene verificar el comportamiento real antes de integrarlo.
+- Discrepancia de pipeline: Hugging Face declara text-to-audio mientras el nombre y las etiquetas apuntan a un modelo de embeddings multimodal. Conviene verificar el comportamiento real antes de integrarlo.
 - Riesgo de sesgos: no disponible. No hay informacion sobre sesgos evaluados ni sobre la composicion del dataset del modelo base.
 - Riesgo de alucinacion: aplicable principalmente si se usa en tareas generativas derivadas del modelo base; como modelo de embeddings, el riesgo se traslada a representaciones sesgadas o poco discriminativas.
 - Fechas de metadatos inusuales: creacion y actualizacion registradas como 2026-09-24, lo que conviene contrastar con la cronologia real del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pt810/Ovis-Omni-Embedding-3B-gptq-mixed-w2-w4-w8
+- Modelo en Hugging Face: https://huggingface.co/pt810/Ovis-Omni-Embedding-3B-gptq-mixed-w2-w4-w8
 - Modelo base: https://huggingface.co/ATH-MaaS/Ovis-Omni-Embedding-3B
 - Variante W4/W4/W8 servible en vLLM: mencionada en la model card, sin URL incluida en la informacion proporcionada.
 - Papers, blogs, repositorios o demos adicionales: no disponible en la informacion proporcionada.

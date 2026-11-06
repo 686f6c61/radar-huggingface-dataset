@@ -66,8 +66,8 @@ No se dispone de información suficiente para una comparativa cuantitativa con o
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3-VL-4B-Instruct | ~4 B | no disponible | no disponible | HuggingFace |
-| ahmedsamirtarjama/arabic-ocr-qwen3vl4b-v1 | 4,44 B | no disponible | no disponible | HuggingFace |
+| Qwen/Qwen3-VL-4B-Instruct | ~4 B | no disponible | no disponible | Hugging Face |
+| ahmedsamirtarjama/arabic-ocr-qwen3vl4b-v1 | 4,44 B | no disponible | no disponible | Hugging Face |
 | Otros modelos de OCR árabe | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No se dispone de información suficiente para una comparativa cuantitativa con o
 - La fecha de creación (2026-10-13) sugiere un proyecto muy reciente, con posible falta de pruebas exhaustivas.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-qwen3vl4b-v1
+- Modelo en Hugging Face: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-qwen3vl4b-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Repositorio de datos y código mencionado: `arabic-ocr-research-data` (enlace no proporcionado en la información disponible).
 - No se proporcionan papers, blogs, repositorios adicionales ni demos en la información accesible.

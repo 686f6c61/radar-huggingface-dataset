@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Poolformer-matching48 es un prototipo de investigación publicado en HuggingFace por el usuario jerrynugroho, orientado a tareas de *matching* (emparejamiento) y construido sobre una arquitectura de tipo Poolformer. El repositorio es deliberadamente experimental: el propio autor indica que el checkpoint incluido (`model.safetensors`) es una **inicialización válida para pruebas de humo** (*smoke tests*) y **no** un modelo entrenado ni evaluado con benchmarks.
+Poolformer-matching48 es un prototipo de investigación publicado en Hugging Face por el usuario jerrynugroho, orientado a tareas de *matching* (emparejamiento) y construido sobre una arquitectura de tipo Poolformer. El repositorio es deliberadamente experimental: el propio autor indica que el checkpoint incluido (`model.safetensors`) es una **inicialización válida para pruebas de humo** (*smoke tests*) y **no** un modelo entrenado ni evaluado con benchmarks.
 
 El modelo es extremadamente pequeno: el recuento real declarado en los metadatos de safetensors es de **24.832 parametros**, lo que lo situa muy lejos de un modelo de lenguaje generativo y lo enmarca en la categoria de artefacto docente o plantilla reproducible. La configuracion documenta una escala "small", atencion de tipo *grouped query*, fusion *bilinear*, activacion *approx gelu* y normalizacion *instancenorm*, con un recetario de entrenamiento por defecto basado en AdamW y un *schedule* por pasos.
 
@@ -83,7 +83,7 @@ No hay modelos comparables en la misma categoria (prototipos de *matching* con P
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jerrynugroho/poolformer-matching48
+- Modelo en Hugging Face: https://huggingface.co/jerrynugroho/poolformer-matching48
 - Poolformer: Recurrent Networks with Pooling for Long-Sequence Modeling (arXiv 2510.02206): https://arxiv.org/abs/2510.02206
 - Version PDF del paper anterior: https://arxiv.org/pdf/2510.02206
 - Documentacion de PoolFormer en transformers: https://huggingface.co/docs/transformers/v4.36.0/en/model_doc/poolformer

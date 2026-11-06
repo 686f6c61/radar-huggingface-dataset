@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMax-H3-Turbo-Lora es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Kokosowek para el modelo base Comfy-Org/MiniMax-H3, un modelo de generación de vídeo con audio sincronizado. El adaptador implementa una actualización de bajo rango sobre el modelo DiT (Diffusion Transformer) del base y su objetivo es acelerar la generación conjunta de vídeo y audio estéreo sincronizado, reduciendo el número de pasos de muestreo desde los aproximadamente 20 habituales hasta un mínimo de 4, lo que supone una mejora de velocidad de muestreo de en torno a 5x, y que sigue mejorando si se añaden pasos hasta 8.
+MiniMax-H3-Turbo-Lora es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Kokosowek para el modelo base Comfy-Org/MiniMax-H3, un modelo de generación de vídeo con audio sincronizado. El adaptador implementa una actualización de bajo rango sobre el modelo DiT (Diffusion Transformer) del base y su objetivo es acelerar la generación conjunta de vídeo y audio estéreo sincronizado, reduciendo el número de pasos de muestreo desde los aproximadamente 20 habituales hasta un mínimo de 4, lo que supone una mejora de velocidad de muestreo de en torno a 5x, y que sigue mejorando si se añaden pasos hasta 8.
 
 El repositorio tiene un tamano total de 112.3 GB, aunque el peso del adaptador LoRA es de aproximadamente 744 MB en bf16, aplicado como una actualizacion low-rank estandar (`W_eff = W + lora_B @ lora_A`, con alpha = rank, sin escalado adicional). Se distribuye bajo licencia Apache 2.0 y en formato safetensors, y esta pensado para usarse dentro de ComfyUI o mediante un script autonomo (`generate.py`) que requiere igualmente un checkout de ComfyUI para las definiciones del modelo H3, el VAE y el text encoder.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks cuantitativos (como MMLU, HumanEval
 
 | Modelo | Tipo | Pasos | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MiniMax-H3-Turbo-Lora (Kokosowek) | LoRA sobre MiniMax-H3 | 4-8 | Apache 2.0 | HuggingFace (0 descargas) | Checkpoint recomendado `v4_step600_ema` |
-| MiniMax-H3-Turbo-Lora (larryvrh) | LoRA sobre MiniMax-H3 | no disponible | no disponible | HuggingFace | Repositorio relacionado y autor de los nodos de ComfyUI; posible origen del adaptador |
+| MiniMax-H3-Turbo-Lora (Kokosowek) | LoRA sobre MiniMax-H3 | 4-8 | Apache 2.0 | Hugging Face (0 descargas) | Checkpoint recomendado `v4_step600_ema` |
+| MiniMax-H3-Turbo-Lora (larryvrh) | LoRA sobre MiniMax-H3 | no disponible | no disponible | Hugging Face | Repositorio relacionado y autor de los nodos de ComfyUI; posible origen del adaptador |
 | minimax_h3_fl2v_turbo_8step_v1.0_768p (civitai) | LoRA turbo sobre MiniMax-H3 | 8 | no disponible | Civitai | Turbo alternativo de la comunidad, orientado a 8 pasos |
-| MiniMax-H3 base (Comfy-Org) | Modelo completo | ~20 | no disponible | HuggingFace | Sin aceleracion few-step; referencia de comparacion |
+| MiniMax-H3 base (Comfy-Org) | Modelo completo | ~20 | no disponible | Hugging Face | Sin aceleracion few-step; referencia de comparacion |
 
 La informacion disponible no permite comparar parametros, contexto ni resultados de calidad de forma cuantitativa entre estas alternativas, por lo que la comparativa se limita a tipo de artefacto, numero de pasos, licencia y disponibilidad.
 
@@ -96,8 +96,8 @@ La informacion disponible no permite comparar parametros, contexto ni resultados
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/Kokosowek/MiniMax-H3-Turbo-Lora
-- Modelo base en HuggingFace: https://huggingface.co/Comfy-Org/MiniMax-H3
+- Repositorio Hugging Face del adaptador: https://huggingface.co/Kokosowek/MiniMax-H3-Turbo-Lora
+- Modelo base en Hugging Face: https://huggingface.co/Comfy-Org/MiniMax-H3
 - Repositorio relacionado (larryvrh): https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora
 - Nodos de ComfyUI: https://github.com/Larryvrh/ComfyUI-MiniMax-H3-Turbo
 - Workflows de ejemplo: https://github.com/Larryvrh/ComfyUI-MiniMax-H3-Turbo/tree/main/example_workflows

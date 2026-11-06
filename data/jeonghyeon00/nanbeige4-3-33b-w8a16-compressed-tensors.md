@@ -23,7 +23,7 @@ El dato de parámetros totales en safetensors es de 10.314.989.272, muy inferior
 
 ## Arquitectura y entrenamiento
 
-El checkpoint es una cuantizacion del modelo Nanbeige4.3-33B. La arquitectura subyacente se etiqueta como `llama` en los tags de HuggingFace, lo que sugiere una familia transformer decoder-only, pero la model card de este repositorio no detalla capas, dimensiones ocultas ni cabezas de atencion. Tampoco se documentan los datos de entrenamiento del modelo base (numero de tokens, composicion del corpus, uso de RLHF o DPO) en la informacion proporcionada.
+El checkpoint es una cuantizacion del modelo Nanbeige4.3-33B. La arquitectura subyacente se etiqueta como `llama` en los tags de Hugging Face, lo que sugiere una familia transformer decoder-only, pero la model card de este repositorio no detalla capas, dimensiones ocultas ni cabezas de atencion. Tampoco se documentan los datos de entrenamiento del modelo base (numero de tokens, composicion del corpus, uso de RLHF o DPO) en la informacion proporcionada.
 
 El proceso de cuantizacion si esta descrito con precision: se cuantizaron los modulos `Linear` con pesos enteros simetricos en grupos de 128, manteniendo las activaciones en 16 bits (W8A16). El `lm_head` se excluyo de la cuantizacion y permanece en la precision del modelo fuente. La revision de origen es `c1093c501cc6460427c0ac634db7223d0450c0ee`. Las herramientas empleadas fueron `llmcompressor==0.14.0.1`, `compressed-tensors==0.19.0` y `transformers==5.17.0`, y la salida se valido con el parser de configuracion de cuantizacion de vLLM `0.32.0`. No se usaron datos de calibracion (cuantizacion *data-free*), lo que simplifica el pipeline pero puede afectar a la fidelidad de las activaciones en dominios alejados de la distribucion original.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B W8A16 (este repo) | 10.314.989.272 segun safetensors; 33B segun nombre | 524.288 tokens | W8A16, compressed-tensors | Apache-2.0 | HuggingFace, vLLM |
-| Nanbeige/Nanbeige4.3-33B (original) | 33B segun nombre | 524.288 tokens | 16 bits | Apache-2.0 | HuggingFace |
+| Nanbeige4.3-33B W8A16 (este repo) | 10.314.989.272 segun safetensors; 33B segun nombre | 524.288 tokens | W8A16, compressed-tensors | Apache-2.0 | Hugging Face, vLLM |
+| Nanbeige/Nanbeige4.3-33B (original) | 33B segun nombre | 524.288 tokens | 16 bits | Apache-2.0 | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables de la misma familia o tamano en la documentacion proporcionada; la comparativa se limita al modelo base y a esta cuantizacion.
@@ -82,7 +82,7 @@ No se dispone de informacion sobre modelos comparables de la misma familia o tam
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jeonghyeon00/Nanbeige4.3-33B-w8a16-compressed-tensors
+- Repositorio Hugging Face: https://huggingface.co/jeonghyeon00/Nanbeige4.3-33B-w8a16-compressed-tensors
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Herramienta de cuantizacion llmcompressor: no disponible en la informacion proporcionada
 - Libreria compressed-tensors: no disponible en la informacion proporcionada

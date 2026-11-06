@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Terminal-complete_16k es un ajuste fino completo (full fine-tuning) del modelo Qwen/Qwen3-8B, publicado por el usuario cuong1692001 en HuggingFace. Se trata de un modelo denso de 8.190.735.360 parametros (aproximadamente 8,19 mil millones), orientado a generacion de texto conversacional. El nombre del repositorio sugiere una especializacion en tareas de terminal y autocompletado de comandos, con una ventana de contexto de 16 384 tokens, aunque la model card no confirma explicitamente ni el dominio ni la longitud de contexto final.
+Terminal-complete_16k es un ajuste fino completo (full fine-tuning) del modelo Qwen/Qwen3-8B, publicado por el usuario cuong1692001 en Hugging Face. Se trata de un modelo denso de 8.190.735.360 parametros (aproximadamente 8,19 mil millones), orientado a generacion de texto conversacional. El nombre del repositorio sugiere una especializacion en tareas de terminal y autocompletado de comandos, con una ventana de contexto de 16 384 tokens, aunque la model card no confirma explicitamente ni el dominio ni la longitud de contexto final.
 
 El modelo se entreno sobre un dataset denominado qwen_data_complete utilizando LLaMA-Factory como framework de ajuste, con 2 epocas, learning rate de 1e-05 y un esquema de precision completa sobre 4 GPUs. La relevancia de esta publicacion es limitada: se trata de un experimento de ajuste personal, sin resultados de evaluacion publicados, con 0 descargas y 0 likes en el momento de redactar esta ficha, y con una licencia generica "other" que no aclara las condiciones de uso comercial.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Terminal-complete_16k | 8,19 B | 16k segun nombre (no confirmado) | Sin resultados | other (no estandar) | HuggingFace, safetensors |
-| Qwen/Qwen3-8B | 8,19 B | 32 768 nativos, 131 072 con YaRN | Resultados publicados por el autor del modelo base | Apache 2.0 | HuggingFace, safetensors, GGUF, AWQ |
-| Llama-3.1-8B | 8,03 B | 131 072 | Resultados publicados | Llama 3.1 Community License | HuggingFace, multiples formatos |
-| Qwen2.5-Coder-7B | 7,62 B | 32 768 | Resultados publicados en tareas de codigo | Apache 2.0 (variante Instruct) | HuggingFace, GGUF, AWQ |
+| Terminal-complete_16k | 8,19 B | 16k segun nombre (no confirmado) | Sin resultados | other (no estandar) | Hugging Face, safetensors |
+| Qwen/Qwen3-8B | 8,19 B | 32 768 nativos, 131 072 con YaRN | Resultados publicados por el autor del modelo base | Apache 2.0 | Hugging Face, safetensors, GGUF, AWQ |
+| Llama-3.1-8B | 8,03 B | 131 072 | Resultados publicados | Llama 3.1 Community License | Hugging Face, multiples formatos |
+| Qwen2.5-Coder-7B | 7,62 B | 32 768 | Resultados publicados en tareas de codigo | Apache 2.0 (variante Instruct) | Hugging Face, GGUF, AWQ |
 
 La comparacion relevante es contra el propio Qwen3-8B: el ajuste no aporta una ventana de contexto mayor (el sufijo 16k sugiere lo contrario), no publica mejoras medibles y sustituye una licencia Apache 2.0 por una licencia "other" sin condiciones claras, lo que supone una perdida neta de garantias para uso comercial.
 
@@ -91,7 +91,7 @@ La comparacion relevante es contra el propio Qwen3-8B: el ajuste no aporta una v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cuong1692001/Terminal-complete_16k
+- Modelo en Hugging Face: https://huggingface.co/cuong1692001/Terminal-complete_16k
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio de LLaMA-Factory: https://github.com/hiyouga/LLaMA-Factory
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/

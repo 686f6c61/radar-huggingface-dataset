@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mochi 1.5 — Kiri es un ajuste fino de tipo "personaje" sobre huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3, publicado por el usuario stupidlime en HuggingFace. Se trata de un modelo de 494.032.768 parámetros (0,5 B) derivado de la familia Qwen2.5, distribuido únicamente en formato GGUF con cuantización Q4_K_M y pensado para ejecución local en hardware muy modesto. El autor lo presenta explícitamente como un experimento "poco profesional, solo por diversión", sin vocación de uso en producción.
+Mochi 1.5 — Kiri es un ajuste fino de tipo "personaje" sobre huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3, publicado por el usuario stupidlime en Hugging Face. Se trata de un modelo de 494.032.768 parámetros (0,5 B) derivado de la familia Qwen2.5, distribuido únicamente en formato GGUF con cuantización Q4_K_M y pensado para ejecución local en hardware muy modesto. El autor lo presenta explícitamente como un experimento "poco profesional, solo por diversión", sin vocación de uso en producción.
 
 El objetivo del modelo no es el rendimiento bruto, sino dotar a un modelo de 0,5 B de una personalidad concreta: un tono seco, calmado, respuestas cortas, sin entusiasmo y sin preguntas de seguimiento. Forma parte de la serie Mochi, en la que el autor publica variantes de personalidad del mismo modelo base de 0,5 B. Esto lo sitúa en la categoría de modelos conversacionales ultraligeros para prototipado, demos y pruebas de concepto más que para tareas de razonamiento o conocimiento factual.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mochi 1.5 — Kiri | 494.032.768 (≈0,5 B) | No disponible en la model card | Sin benchmarks publicados; precisión factual degradada respecto a su base | Apache 2.0 | GGUF Q4_K_M en HuggingFace |
-| huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3 | ≈0,5 B | No disponible en la información proporcionada | Sin datos comparables en esta ficha | Apache 2.0 (heredada de Qwen2.5) | HuggingFace |
-| Qwen/Qwen2.5-0.5B-Instruct | ≈0,5 B | 32.768 tokens nativos según la documentación del modelo base | Referencia de la familia; sin cifras en la información disponible | Apache 2.0 | HuggingFace |
-| Alternativas de tamaño similar (por ejemplo SmolLM2-360M-Instruct o TinyLlama-1.1B-Chat) | 0,36-1,1 B | No disponible | No disponible | Apache 2.0 en la mayoría de casos | HuggingFace |
+| Mochi 1.5 — Kiri | 494.032.768 (≈0,5 B) | No disponible en la model card | Sin benchmarks publicados; precisión factual degradada respecto a su base | Apache 2.0 | GGUF Q4_K_M en Hugging Face |
+| huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3 | ≈0,5 B | No disponible en la información proporcionada | Sin datos comparables en esta ficha | Apache 2.0 (heredada de Qwen2.5) | Hugging Face |
+| Qwen/Qwen2.5-0.5B-Instruct | ≈0,5 B | 32.768 tokens nativos según la documentación del modelo base | Referencia de la familia; sin cifras en la información disponible | Apache 2.0 | Hugging Face |
+| Alternativas de tamaño similar (por ejemplo SmolLM2-360M-Instruct o TinyLlama-1.1B-Chat) | 0,36-1,1 B | No disponible | No disponible | Apache 2.0 en la mayoría de casos | Hugging Face |
 
 No se dispone de comparaciones cuantitativas publicadas entre Mochi 1.5 — Kiri y estos modelos, por lo que la tabla solo refleja tamaño, licencia y disponibilidad.
 
@@ -87,7 +87,7 @@ No se dispone de comparaciones cuantitativas publicadas entre Mochi 1.5 — Kiri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stupidlime/Mochi-1.5-Kiri
+- Modelo en Hugging Face: https://huggingface.co/stupidlime/Mochi-1.5-Kiri
 - Modelo base (abliterated): https://huggingface.co/huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3
 - Perfil del autor del base: https://huggingface.co/huihui-ai
 - Qwen2.5-0.5B-Instruct (modelo original): https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

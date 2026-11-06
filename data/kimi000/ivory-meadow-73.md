@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kimi000/ivory-meadow-73 es un checkpoint de generación de imágenes a partir de texto (text-to-image) publicado en HuggingFace por el usuario kimi000. No se trata de un modelo de lenguaje: es un ajuste fino del modelo de difusión black-forest-labs/FLUX.2-klein-base-4B, empaquetado como pipeline nativo de Diffusers (Flux2KleinPipeline). El repositorio ocupa 16,0 GB y contiene 3.875.544.576 parámetros reales (~3,88 mil millones) en formato safetensors.
+kimi000/ivory-meadow-73 es un checkpoint de generación de imágenes a partir de texto (text-to-image) publicado en Hugging Face por el usuario kimi000. No se trata de un modelo de lenguaje: es un ajuste fino del modelo de difusión black-forest-labs/FLUX.2-klein-base-4B, empaquetado como pipeline nativo de Diffusers (Flux2KleinPipeline). El repositorio ocupa 16,0 GB y contiene 3.875.544.576 parámetros reales (~3,88 mil millones) en formato safetensors.
 
 El checkpoint procede de un experimento de ajuste por refuerzo denominado AlphaGRPO con DVReward, ejecutado sobre el modelo base. Según la model card, la LoRA de EMA ya está fusionada dentro del transformer, de modo que no se necesita FAR ni PEFT para realizar inferencia. El perfil de entrenamiento declarado es 512 píxeles, 20 pasos de rollout, CFG 4 y el checkpoint de origen `step_500.pt`.
 
@@ -78,10 +78,10 @@ Los datos de los modelos alternativos no provienen de la información proporcion
 
 | Modelo | Parámetros | Resolución / contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kimi000/ivory-meadow-73 | 3,88B | 512 px (perfil de entrenamiento) | other | HuggingFace, 0 descargas | Fine-tune AlphaGRPO con LoRA EMA fusionada |
-| black-forest-labs/FLUX.2-klein-base-4B | ~4B | no disponible | other | HuggingFace | Modelo base del ajuste; sin datos de evaluación en la información disponible |
-| FLUX.1 [dev] | 12B (no verificado) | no verificado | licencia no comercial (no verificado) | HuggingFace | Alternativa de la generación anterior; datos no verificados en esta ficha |
-| Stable Diffusion 3.5 Large | 8B (no verificado) | no verificado | Stability Community License (no verificado) | HuggingFace | Alternativa de tamaño medio; datos no verificados en esta ficha |
+| kimi000/ivory-meadow-73 | 3,88B | 512 px (perfil de entrenamiento) | other | Hugging Face, 0 descargas | Fine-tune AlphaGRPO con LoRA EMA fusionada |
+| black-forest-labs/FLUX.2-klein-base-4B | ~4B | no disponible | other | Hugging Face | Modelo base del ajuste; sin datos de evaluación en la información disponible |
+| FLUX.1 [dev] | 12B (no verificado) | no verificado | licencia no comercial (no verificado) | Hugging Face | Alternativa de la generación anterior; datos no verificados en esta ficha |
+| Stable Diffusion 3.5 Large | 8B (no verificado) | no verificado | Stability Community License (no verificado) | Hugging Face | Alternativa de tamaño medio; datos no verificados en esta ficha |
 
 No se dispone de comparaciones de rendimiento (FID, CLIP, preferencia humana) entre este checkpoint y cualquiera de las alternativas.
 
@@ -96,12 +96,12 @@ No se dispone de comparaciones de rendimiento (FID, CLIP, preferencia humana) en
 - Riesgo de sesgos: no hay información sobre la composición del dataset de entrenamiento del modelo base ni del conjunto de prompts usado en el ajuste por refuerzo, por lo que no se pueden evaluar sesgos de género, etnia, cultura o estilo.
 - Idioma: no se documentan los idiomas soportados en los prompts; el comportamiento con textos en castellano u otras lenguas distintas del inglés es desconocido.
 - Riesgo de alucinación visual (elementos incoherentes, anatomía incorrecta, texto ilegible) no caracterizado para este checkpoint.
-- Confusión de nombre: "kimi000" es el nombre del autor en HuggingFace y no implica ninguna relación con los modelos Kimi de Moonshot AI; los resultados de búsqueda web sobre Kimi no son aplicables a este repositorio.
+- Confusión de nombre: "kimi000" es el nombre del autor en Hugging Face y no implica ninguna relación con los modelos Kimi de Moonshot AI; los resultados de búsqueda web sobre Kimi no son aplicables a este repositorio.
 - El modelo no incluye salvaguardas documentadas (filtros de contenido, clasificadores de seguridad) más allá de las que pueda aportar el pipeline de Diffusers.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kimi000/ivory-meadow-73
+- Repositorio en Hugging Face: https://huggingface.co/kimi000/ivory-meadow-73
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B
 
 Nota sobre la búsqueda web: los resultados obtenidos corresponden a los modelos de lenguaje Kimi de Moonshot AI (Wikipedia, kimi.ai, guías de API y comparativas de modelos), que no guardan relación alguna con este repositorio de generación de imágenes. No se han encontrado en la búsqueda enlaces relevantes sobre kimi000/ivory-meadow-73, sobre FLUX.2 Klein ni sobre el método AlphaGRPO con DVReward aplicado a difusión. Por tanto, no se listan papers, blogs ni demos adicionales: no disponibles.

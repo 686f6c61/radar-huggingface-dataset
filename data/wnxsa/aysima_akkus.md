@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wnxsa/aysima_akkus es un repositorio de modelo alojado en HuggingFace por el usuario wnxsa, publicado el 23 de septiembre de 2026 y sin actualizaciones posteriores. El repositorio se presenta unicamente con una declaracion de licencia OpenRAIL; no incluye model card descriptiva, pipeline declarado, idiomas soportados ni informacion sobre arquitectura, parametros o datos de entrenamiento. A fecha de la consulta acumula 0 descargas y 0 likes.
+wnxsa/aysima_akkus es un repositorio de modelo alojado en Hugging Face por el usuario wnxsa, publicado el 23 de septiembre de 2026 y sin actualizaciones posteriores. El repositorio se presenta unicamente con una declaracion de licencia OpenRAIL; no incluye model card descriptiva, pipeline declarado, idiomas soportados ni informacion sobre arquitectura, parametros o datos de entrenamiento. A fecha de la consulta acumula 0 descargas y 0 likes.
 
 En el estado actual de la informacion, no es posible determinar que tipo de modelo es, que problema resuelve ni para que tareas esta optimizado. La ausencia de etiqueta de pipeline y de pesos documentados impide clasificarlo como modelo de lenguaje, de vision, de audio o de otro tipo. Cualquier evaluacion tecnica requiere inspeccionar directamente el contenido del repositorio (arboles de archivos, config.json, tokenizer y pesos).
 
@@ -91,5 +91,5 @@ No disponible. Sin conocer la categoria del modelo (tamano, modalidad y tarea), 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wnxsa/aysima_akkus
+- Repositorio en Hugging Face: https://huggingface.co/wnxsa/aysima_akkus
 - No se han encontrado en la informacion disponible articulos cientificos, blogs tecnicos, repositorios de codigo ni demos asociados a este modelo.

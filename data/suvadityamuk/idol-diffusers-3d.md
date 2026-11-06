@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suvadityamuk/idol-diffusers-3d
+- Modelo en Hugging Face: https://huggingface.co/suvadityamuk/idol-diffusers-3d
 - Modelo base: https://huggingface.co/speridlabs/idol
 - Paquete diffusers-3d: https://github.com/suvadityamuk/diffusers-3d
 - Encoder DINOv3: https://huggingface.co/facebook/dinov3-vith16plus-pretrain-lvd1689m

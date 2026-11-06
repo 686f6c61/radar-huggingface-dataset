@@ -61,7 +61,7 @@ El MCC de 0,601 en CoLA está en el rango normal publicado para BERT-base (~0,55
 - VRAM estimada para inferencia: el modelo tiene 109,5 millones de parámetros. En fp32 (formato safetensors del repositorio) ocupa aproximadamente 440 MB; en fp16 o int8 se reduciría a ~220 MB o ~110 MB respectivamente, aunque no se proporcionan cuantizaciones oficiales.
 - GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM es suficiente para inferencia en fp32 (por ejemplo, GTX 1650, RTX 2060 o superiores). Para entrenamiento o fine-tuning adicional, se recomienda al menos 8 GB de VRAM (RTX 3070, RTX 4060 Ti o superior).
 - Cabe en GPU consumer: sí, sin problema. Incluso en CPU es viable para inferencia por lotes pequeños.
-- Opciones de despliegue: compatible con la biblioteca `transformers` de HuggingFace, `vLLM` (aunque es un modelo de clasificación, no generativo), `ONNX Runtime` y `TensorRT` mediante exportación. No se proporcionan pesos GGUF ni soporte nativo de `llama.cpp` u `Ollama` para tareas de clasificación.
+- Opciones de despliegue: compatible con la biblioteca `transformers` de Hugging Face, `vLLM` (aunque es un modelo de clasificación, no generativo), `ONNX Runtime` y `TensorRT` mediante exportación. No se proporcionan pesos GGUF ni soporte nativo de `llama.cpp` u `Ollama` para tareas de clasificación.
 - Latencia y throughput estimados: no disponibles en la documentación. Como referencia, BERT-base en una GPU moderna (RTX 3090) procesa miles de oraciones por segundo en inferencia por lotes; en CPU, decenas a cientos por segundo.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ El modelo de arXiv 2411.15523, que usa BERT-base-uncased con datos limpios de La
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuvstk/bert-grammar-error-detection
+- Modelo en Hugging Face: https://huggingface.co/yuvstk/bert-grammar-error-detection
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Dataset BLiMP: https://huggingface.co/datasets/nyu-mll/blimp
 - Dataset CoLA (GLUE): https://huggingface.co/datasets/nyu-mll/glue

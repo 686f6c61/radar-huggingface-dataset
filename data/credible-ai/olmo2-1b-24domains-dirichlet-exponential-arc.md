@@ -25,7 +25,7 @@ Datos adicionales: 18 capas, tamaño oculto 2048, tokenizador GPT-NeoX-20B con v
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea la arquitectura OLMo 2 de Allen AI, un transformer decoder-only convencional (no MoE) implementado en la libreria transformers de HuggingFace mediante la clase `Olmo2ForCausalLM`. Con 1,41B de parametros distribuidos en 18 capas y una dimension oculta de 2048, se trata de un modelo pequeno orientado a experimentos controlados. El tokenizador es el de GPT-NeoX-20B, con un vocabulario de 50.432 tokens.
+El modelo emplea la arquitectura OLMo 2 de Allen AI, un transformer decoder-only convencional (no MoE) implementado en la libreria transformers de Hugging Face mediante la clase `Olmo2ForCausalLM`. Con 1,41B de parametros distribuidos en 18 capas y una dimension oculta de 2048, se trata de un modelo pequeno orientado a experimentos controlados. El tokenizador es el de GPT-NeoX-20B, con un vocabulario de 50.432 tokens.
 
 El entrenamiento se realizo sobre 32B de tokens procedentes del corpus WebOrganizer/Corpus-200B (derivado del pool DCLM 1b-1x de Common Crawl), utilizando el framework OLMo-core. La innovacion central no esta en la arquitectura sino en la composicion de los datos: la mezcla sobre los 24 dominios tematicos del corpus se optimizo con Olmix, que entrena un enjambre de modelos proxy de 30M con mezclas muestreadas de una distribucion Dirichlet, ajusta un sustituto exponencial que modela el rendimiento en funcion de los pesos de mezcla, y lo optimiza para maximizar la puntuacion en ARC. La mezcla resultante se publica en el archivo `mix.json` del repositorio. No se menciona ningun post-entrenamiento (RLHF, DPO o instruction tuning): es un modelo base preentrenado.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Solo 
 | olmo2-1B-24domains-dirichlet-exponential-arc | ~1,41B | no disponible | MIT | Artefacto de investigacion (data mixing, paper LinMix) |
 | OLMo 2 1B (Allen AI) | ~1,5B | hasta 4096+ | Apache 2.0 | Modelo base de proposito general, open source completo |
 | Qwen2.5-1.5B | 1,54B | 32.768 tokens (131.072 con YaRN) | Qwen Research / Apache 2.0 (algunas variantes) | Modelo general con instruction tuning y multilingüe |
-| SmolLM2-1.7B (HuggingFace) | 1,71B | 8.192 tokens | Apache 2.0 | Modelo general compacto con datos de entrenamiento abiertos |
+| SmolLM2-1.7B (Hugging Face) | 1,71B | 8.192 tokens | Apache 2.0 | Modelo general compacto con datos de entrenamiento abiertos |
 
 A diferencia de OLMo 2 1B, Qwen2.5-1.5B o SmolLM2-1.7B, que son modelos generalistas con post-entrenamiento, este modelo es un experimento controlado: misma arquitectura y corpus, pero mezcla de datos optimizada para un benchmark concreto. No es sustituto de ninguno de ellos para aplicaciones de produccion.
 
@@ -83,7 +83,7 @@ A diferencia de OLMo 2 1B, Qwen2.5-1.5B o SmolLM2-1.7B, que son modelos generali
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-24domains-dirichlet-exponential-arc
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-24domains-dirichlet-exponential-arc
 - Paper LinMix (arXiv): https://arxiv.org/abs/2610.37390
 - Codigo (GitHub): https://github.com/credibleai/linmix
 - Modelo proxy de 30M: https://huggingface.co/credible-ai/olmo2-30M-24domains-dirichlet

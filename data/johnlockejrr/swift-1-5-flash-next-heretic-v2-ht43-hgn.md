@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/johnlockejrr/Swift-1.5-Flash-Next-Heretic-V2-ht43-HGN
+- Modelo en Hugging Face: https://huggingface.co/johnlockejrr/Swift-1.5-Flash-Next-Heretic-V2-ht43-HGN
 - Variante v2 del mismo autor: https://huggingface.co/johnlockejrr/Swift-1.5-Flash-Next-Heretic-V2-HGN
 - Modelo base: https://huggingface.co/trubisky/Swift-1.5-Flash-Next-Heretic-ReverseEngineer
 - Checkpoint de referencia halogen: https://huggingface.co/peonist-ai/halogen-qwen3.8-flash-next

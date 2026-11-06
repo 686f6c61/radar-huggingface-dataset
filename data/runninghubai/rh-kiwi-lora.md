@@ -20,7 +20,7 @@ Su relevancia es practica mas que arquitectonica: demuestra el flujo habitual de
 | Licencia | no disponible; la model card indica que RunningHub publica en nombre del autor, que el copyright sigue siendo del autor y que se debe seguir la licencia del proyecto original o del upstream |
 | Formato de pesos | safetensors |
 | Modelo base | Qwen-Image (indicado como "Finetuned from: Qwen-image" y "Base model: Qwen") |
-| Tarea | text-to-image (pipeline declarado en HuggingFace) |
+| Tarea | text-to-image (pipeline declarado en Hugging Face) |
 | Peso de LoRA recomendado | 0,8 |
 | Parametros de muestreo recomendados | sampler Euler, CFG 4, 30 pasos, prompt negativo no necesario |
 | Tamano del repositorio | 0,2 GB |

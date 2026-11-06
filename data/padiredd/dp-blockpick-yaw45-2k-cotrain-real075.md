@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dp-blockpick-yaw45-2k-cotrain-real075` es una política de difusión (diffusion policy) para control robótico de manipulación, publicada por el usuario `padiredd` en HuggingFace. Implementa el algoritmo Diffusion Policy sobre el fork `lerobot-cyclo` de LeRobot, desarrollado en el ecosistema de ROBOTIS, y está especializada en una única tarea: recoger un bloque verde lima con el brazo izquierdo del robot humanoide FFW SG2 mediante una aproximación cenital (top-down) y con orientación de yaw del bloque uniforme en el rango ±45 grados. El modelo cuenta con 287.533.680 parámetros (288 M) y se distribuye en formato `safetensors`, con un repositorio de 11,5 GB que incluye el checkpoint final (paso 100k) y nueve checkpoints intermedios cada 10.000 pasos.
+`dp-blockpick-yaw45-2k-cotrain-real075` es una política de difusión (diffusion policy) para control robótico de manipulación, publicada por el usuario `padiredd` en Hugging Face. Implementa el algoritmo Diffusion Policy sobre el fork `lerobot-cyclo` de LeRobot, desarrollado en el ecosistema de ROBOTIS, y está especializada en una única tarea: recoger un bloque verde lima con el brazo izquierdo del robot humanoide FFW SG2 mediante una aproximación cenital (top-down) y con orientación de yaw del bloque uniforme en el rango ±45 grados. El modelo cuenta con 287.533.680 parámetros (288 M) y se distribuye en formato `safetensors`, con un repositorio de 11,5 GB que incluye el checkpoint final (paso 100k) y nueve checkpoints intermedios cada 10.000 pasos.
 
 El interés técnico del modelo reside en su estrategia de entrenamiento: combina 2.000 demostraciones simuladas en Isaac Lab (343.765 fotogramas) con solo 14 demostraciones reales de teleoperación (2.653 fotogramas) mediante un muestreo de co-entrenamiento con peso alpha = 0,75 a favor de los datos reales. Este enfoque de sim-to-real con co-entrenamiento sesgado hacia lo real es relevante para investigadores que trabajan en transferencia de políticas visuomotoras con presupuestos de datos reales muy limitados. La tarea se define con la cadena `"pick up the lime green block with the left arm"` y el modelo opera a 15 Hz con 16 articulaciones de salida.
 
@@ -25,7 +25,7 @@ La licencia es `other` (no estándar, definida por el autor), y no se han public
 
 La arquitectura es una Diffusion Policy basada en DDPM con 100 pasos de difusión, que predice secuencias de acciones de horizonte 64 (ejecutando 32) a partir de observaciones de un solo paso (`n_obs_steps` = 1). Cada una de las tres cámaras (cabeza, muñeca izquierda y muñeca derecha, a 240×240 píxeles) se procesa con un encoder ResNet18 independiente, y la entrada se completa con un vector de estado articular de 22 dimensiones. La salida son 16 objetivos articulares a 15 Hz. El entrenamiento se realizó durante 100.000 pasos con batch de 32, optimizador Adam con tasa 1e-4 y scheduler coseno, semilla 1000, en una única NVIDIA RTX 4090 de 24 GB compartida entre dos ejecuciones simultáneas.
 
-El dato más relevante es la composición del dataset y el muestreo. Los datos simulados provienen del conjunto `pick-cube-topdown-yaw45-2k-full-dr2-3cam` (no publicado aún en HuggingFace): 2.000 demostraciones exitosas generadas con un planificador de movimiento (`grasp_planner`) en Isaac Lab, con yaw del bloque uniforme en |yaw| 0–45° con signo aleatorio y la misma randomización `dr2` que el conjunto de referencia `pick-cube-topdown-region10k-full-dr2-3cam`. A esto se añaden 14 demostraciones reales de teleoperación del conjunto `omkarpatil/pick-lime-block` (15 episodios menos uno abortado, 2.653 fotogramas), reescaladas al formato de simulación. El conjunto fusionado suma 2.014 episodios. El `CotrainMixSampler` del parche `lerobot-cyclo` extrae cada muestra de los episodios reales con probabilidad 0,75 y de los simulados en caso contrario, resultando en aproximadamente 24 muestras reales y 8 simuladas por batch. Las estadísticas de normalización se calculan sobre el conjunto fusionado. Se aplica un aumento de imagen agresivo (hasta 5 transformaciones aleatorias en orden aleatorio: brillo, contraste, saturación, tono, nitidez, afín, perspectiva, desenfoque, borrado aleatorio y escala de grises) y no se añade ruido de estado.
+El dato más relevante es la composición del dataset y el muestreo. Los datos simulados provienen del conjunto `pick-cube-topdown-yaw45-2k-full-dr2-3cam` (no publicado aún en Hugging Face): 2.000 demostraciones exitosas generadas con un planificador de movimiento (`grasp_planner`) en Isaac Lab, con yaw del bloque uniforme en |yaw| 0–45° con signo aleatorio y la misma randomización `dr2` que el conjunto de referencia `pick-cube-topdown-region10k-full-dr2-3cam`. A esto se añaden 14 demostraciones reales de teleoperación del conjunto `omkarpatil/pick-lime-block` (15 episodios menos uno abortado, 2.653 fotogramas), reescaladas al formato de simulación. El conjunto fusionado suma 2.014 episodios. El `CotrainMixSampler` del parche `lerobot-cyclo` extrae cada muestra de los episodios reales con probabilidad 0,75 y de los simulados en caso contrario, resultando en aproximadamente 24 muestras reales y 8 simuladas por batch. Las estadísticas de normalización se calculan sobre el conjunto fusionado. Se aplica un aumento de imagen agresivo (hasta 5 transformaciones aleatorias en orden aleatorio: brillo, contraste, saturación, tono, nitidez, afín, perspectiva, desenfoque, borrado aleatorio y escala de grises) y no se añade ruido de estado.
 
 ## Capacidades
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Tarea | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp-blockpick-yaw45-2k-cotrain-real075 | 288 M | Pick cenital de bloque, brazo izquierdo FFW SG2 | Horizonte 64, 32 ejecutados | other | HuggingFace (0 descargas) |
-| pick-cube-topdown-region10k-full-dr2-3cam (conjunto de datos de referencia) | no aplica (dataset) | Pick cenital, yaw ±10° | no aplica | no disponible | HuggingFace (referenciado, no verificado) |
-| omkarpatil/pick-lime-block (conjunto de datos real) | no aplica (dataset) | Pick de bloque lima, teleoperación | 15 episodios | no disponible | HuggingFace (referenciado) |
+| dp-blockpick-yaw45-2k-cotrain-real075 | 288 M | Pick cenital de bloque, brazo izquierdo FFW SG2 | Horizonte 64, 32 ejecutados | other | Hugging Face (0 descargas) |
+| pick-cube-topdown-region10k-full-dr2-3cam (conjunto de datos de referencia) | no aplica (dataset) | Pick cenital, yaw ±10° | no aplica | no disponible | Hugging Face (referenciado, no verificado) |
+| omkarpatil/pick-lime-block (conjunto de datos real) | no aplica (dataset) | Pick de bloque lima, teleoperación | 15 episodios | no disponible | Hugging Face (referenciado) |
 
 No se dispone de información sobre otras políticas Diffusion Policy comparables en la documentación proporcionada, por lo que la comparativa con modelos de la misma categoría se limita a los artefactos referenciados por el autor. No se han publicado métricas que permitan comparar rendimiento.
 
@@ -76,7 +76,7 @@ No se dispone de información sobre otras políticas Diffusion Policy comparable
 - Sin resultados de evaluación: no hay tasas de éxito publicadas ni en simulación ni en el robot real, por lo que se desconoce su fiabilidad efectiva.
 - Dependencia de hardware específico: requiere el robot ROBOTIS FFW SG2 con gripper CAD, cámaras de muñeca calibradas y una mesa de 29,25 pulgadas; no es portable a otras plataformas sin reentrenamiento.
 - Desbalance de datos: solo 14 demos reales frente a 2.000 simuladas; aunque el muestreo pondera lo real a 0,75, la diversidad real es muy limitada (2.653 fotogramas).
-- Dataset simulado no publicado: el conjunto `pick-cube-topdown-yaw45-2k-full-dr2-3cam` no está en HuggingFace, lo que dificulta la reproducibilidad completa del entrenamiento.
+- Dataset simulado no publicado: el conjunto `pick-cube-topdown-yaw45-2k-full-dr2-3cam` no está en Hugging Face, lo que dificulta la reproducibilidad completa del entrenamiento.
 - Licencia `other`: no se especifican los términos exactos, por lo que el uso comercial queda sujeto a la licencia no estándar del autor; se recomienda contactar con él antes de cualquier despliegue productivo.
 - Riesgo de sobreajuste a la apariencia del bloque: el color "verde lima" está codificado en la instrucción y en los datos; cambios de color o textura pueden degradar el rendimiento.
 - Sin soporte de lenguaje natural libre: la cadena de tarea es fija; no hay interfaz conversacional ni comprensión de instrucciones variables.
@@ -85,7 +85,7 @@ No se dispone de información sobre otras políticas Diffusion Policy comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/dp-blockpick-yaw45-2k-cotrain-real075
+- Modelo en Hugging Face: https://huggingface.co/padiredd/dp-blockpick-yaw45-2k-cotrain-real075
 - Conjunto de datos real referenciado: https://huggingface.co/omkarpatil/pick-lime-block
 - Conjunto de datos simulado de referencia (mencionado, no verificado): `padiredd/pick-cube-topdown-region10k-full-dr2-3cam`
 - Fork de LeRobot utilizado: `lerobot-cyclo` (parche `CotrainMixSampler`, no se proporciona URL directa)

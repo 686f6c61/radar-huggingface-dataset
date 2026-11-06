@@ -79,7 +79,7 @@ No se trata de un modelo comparable con otros LLM, sino de una alternativa a otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nrrso/Qwen3-Chat-Template-vLLM-Fixes
+- Repositorio Hugging Face: https://huggingface.co/nrrso/Qwen3-Chat-Template-vLLM-Fixes
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante cuantizada mencionada: https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4
 - Repositorio de plantillas alternativas: https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates

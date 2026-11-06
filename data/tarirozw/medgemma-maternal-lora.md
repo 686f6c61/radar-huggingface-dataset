@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarirozw/medgemma-maternal-lora
+- Modelo en Hugging Face: https://huggingface.co/tarirozw/medgemma-maternal-lora
 - Modelo base: https://huggingface.co/google/medgemma-4b-it
 - Terminos de licencia: https://developers.google.com/health-ai-developer-foundations/terms
 - Web de Dawa Health: https://dawa-health.com/

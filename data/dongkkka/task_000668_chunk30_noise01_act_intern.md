@@ -25,8 +25,8 @@ Su relevancia es acotada: sirve como ejemplo del flujo de trabajo que ROBOTIS es
 | Autor | Dongkkka |
 | Dataset de entrenamiento | robotis/task_000668_peanut_mix_augmented_eef16_trim20_100_vision_tuned_ev070_v30 |
 | Herramienta de entrenamiento | Cyclo Intelligence (ROBOTIS) |
-| Fecha de creacion del repositorio | 16 de septiembre de 2026 (según los metadatos de HuggingFace) |
-| Fecha de ultima actualizacion | 16 de septiembre de 2026 (según los metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 16 de septiembre de 2026 (según los metadatos de Hugging Face) |
+| Fecha de ultima actualizacion | 16 de septiembre de 2026 (según los metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Licencia | Disponibilidad | Datos publicos |
 |---|---|---|---|---|---|
-| Dongkkka/Task_000668_chunk30_noise01_ACT_Intern | No disponible | No disponible | No disponible | HuggingFace | No |
+| Dongkkka/Task_000668_chunk30_noise01_ACT_Intern | No disponible | No disponible | No disponible | Hugging Face | No |
 | Politicas de manipulacion de tipo ACT (referencia de categoria) | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | No verificado |
 | Politicas de manipulacion de tipo Diffusion Policy (referencia de categoria) | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | No verificado |
 
@@ -94,7 +94,7 @@ No se dispone de datos verificados de este modelo ni de alternativas comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dongkkka/Task_000668_chunk30_noise01_ACT_Intern
+- Modelo en Hugging Face: https://huggingface.co/Dongkkka/Task_000668_chunk30_noise01_ACT_Intern
 - Dataset de entrenamiento: https://huggingface.co/datasets/robotis/task_000668_peanut_mix_augmented_eef16_trim20_100_vision_tuned_ev070_v30
 - Cyclo Intelligence (ROBOTIS) en GitHub: https://github.com/ROBOTIS-GIT/cyclo_intelligence
-- Perfil del autor en HuggingFace: https://huggingface.co/Dongkkka
+- Perfil del autor en Hugging Face: https://huggingface.co/Dongkkka

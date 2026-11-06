@@ -86,9 +86,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jundot/gemma-4-12B-it-oQ4e-mtp | 12.383B logicos, 5,119 bits/peso efectivos | 256K | Safetensors MLX (7,379 GiB) | Apache-2.0 | Publicado en HuggingFace |
-| google/gemma-4-12B-it (base) | 11,95B | 256K | Safetensors (precision original, presumiblemente BF16) | Apache-2.0 | Publicado en HuggingFace |
-| google/gemma-4-12B-it-assistant | No disponible | No disponible | No disponible | No disponible | Publicado en HuggingFace (origen de la cabeza MTP) |
+| Jundot/gemma-4-12B-it-oQ4e-mtp | 12.383B logicos, 5,119 bits/peso efectivos | 256K | Safetensors MLX (7,379 GiB) | Apache-2.0 | Publicado en Hugging Face |
+| google/gemma-4-12B-it (base) | 11,95B | 256K | Safetensors (precision original, presumiblemente BF16) | Apache-2.0 | Publicado en Hugging Face |
+| google/gemma-4-12B-it-assistant | No disponible | No disponible | No disponible | No disponible | Publicado en Hugging Face (origen de la cabeza MTP) |
 
 No se dispone de datos verificados sobre otras alternativas de la misma categoria (por ejemplo, otros modelos multimodales de ~12B cuantizados a 4 bits), ni de resultados de benchmarks que permitan una comparacion de rendimiento. La comparacion con el modelo base se limita a parametros, contexto, formato y licencia, ya que no hay mediciones de calidad publicadas para esta variante cuantizada.
 
@@ -107,7 +107,7 @@ No se dispone de datos verificados sobre otras alternativas de la misma categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/gemma-4-12B-it-oQ4e-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jundot/gemma-4-12B-it-oQ4e-mtp
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Modelo asistente (origen de la cabeza MTP): https://huggingface.co/google/gemma-4-12B-it-assistant
 - Repositorio de la herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx

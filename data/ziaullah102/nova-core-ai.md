@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nova-Core-AI es un ajuste fino (finetune) del modelo Qwen2.5-7B-Instruct publicado por el usuario Ziaullah102 en HuggingFace. Se trata de un derivado de la versión cuantizada a 4 bits con bitsandbytes de Qwen2.5-7B-Instruct, que a su vez es un transformer decoder-only de aproximadamente 7.600 millones de parámetros desarrollado por Alibaba Qwen. El repositorio tiene un tamaño de 0,2 GB, lo que sugiere que los pesos publicados podrían corresponder a una variante cuantizada o a un subconjunto del modelo, aunque la model card no aclara este punto.
+Nova-Core-AI es un ajuste fino (finetune) del modelo Qwen2.5-7B-Instruct publicado por el usuario Ziaullah102 en Hugging Face. Se trata de un derivado de la versión cuantizada a 4 bits con bitsandbytes de Qwen2.5-7B-Instruct, que a su vez es un transformer decoder-only de aproximadamente 7.600 millones de parámetros desarrollado por Alibaba Qwen. El repositorio tiene un tamaño de 0,2 GB, lo que sugiere que los pesos publicados podrían corresponder a una variante cuantizada o a un subconjunto del modelo, aunque la model card no aclara este punto.
 
 El modelo se entrenó con Unsloth, una librería de ajuste fino optimizada que, según la propia model card, permite entrenar "2x más rápido" que los flujos estándar. No se documenta el dataset de entrenamiento, el número de tokens, ni si hubo fases de RLHF o DPO posteriores. La información pública disponible es extremadamente limitada: cero descargas, cero likes y una model card generada automáticamente por la plantilla de Unsloth.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Nova-Core-AI (Ziaullah102) | ~7,6B (heredado) | 131.072 tokens (heredado, no confirmado) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-7B-Instruct (Alibaba) | 7,6B | 131.072 tokens | Apache 2.0 (salvo 3B y 72B) | HuggingFace, ampliamente usado |
-| Mistral-7B-Instruct-v0.3 | 7,2B | 32.768 tokens | Apache 2.0 | HuggingFace, muy extendido |
-| Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, muy extendido |
+| Nova-Core-AI (Ziaullah102) | ~7,6B (heredado) | 131.072 tokens (heredado, no confirmado) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-7B-Instruct (Alibaba) | 7,6B | 131.072 tokens | Apache 2.0 (salvo 3B y 72B) | Hugging Face, ampliamente usado |
+| Mistral-7B-Instruct-v0.3 | 7,2B | 32.768 tokens | Apache 2.0 | Hugging Face, muy extendido |
+| Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, muy extendido |
 
 No hay datos de rendimiento publicados para Nova-Core-AI que permitan compararlo empíricamente con estas alternativas.
 
@@ -84,7 +84,7 @@ No hay datos de rendimiento publicados para Nova-Core-AI que permitan compararlo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ziaullah102/Nova-Core-AI
+- Modelo en Hugging Face: https://huggingface.co/Ziaullah102/Nova-Core-AI
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 

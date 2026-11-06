@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yuli-Qwen2.5-0.5B-Reddit-v0.1.1 es un artefacto GGUF cuantizado publicado por el usuario economyofdreams en HuggingFace, construido sobre Qwen2.5-0.5B-Instruct. Se distribuye como un unico fichero en cuantizacion Q4_K_M, con plantillas de chat y de uso de herramientas (tool use) compatibles con Ollama, segun indica la propia model card. El nombre sugiere un ajuste orientado a conversaciones de estilo Reddit, aunque el repositorio no documenta el dataset, el procedimiento de entrenamiento ni los hiperparametros empleados.
+Yuli-Qwen2.5-0.5B-Reddit-v0.1.1 es un artefacto GGUF cuantizado publicado por el usuario economyofdreams en Hugging Face, construido sobre Qwen2.5-0.5B-Instruct. Se distribuye como un unico fichero en cuantizacion Q4_K_M, con plantillas de chat y de uso de herramientas (tool use) compatibles con Ollama, segun indica la propia model card. El nombre sugiere un ajuste orientado a conversaciones de estilo Reddit, aunque el repositorio no documenta el dataset, el procedimiento de entrenamiento ni los hiperparametros empleados.
 
 El modelo cuenta con 494.032.768 parametros (aproximadamente 0,49 mil millones) y ocupa 0,4 GB en el repositorio. Es un modelo denso, no MoE, y su tamano lo situa en la categoria de modelos "tiny", pensados para ejecucion en CPU, dispositivos de borde o GPUs de gama baja con requisitos de VRAM minimos. La licencia declarada es Apache 2.0.
 
@@ -93,7 +93,7 @@ La comparacion se limita a parametros, contexto y licencia: no existe informacio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/economyofdreams/Yuli-Qwen2.5-0.5B-Reddit-v0.1.1
+- Repositorio en Hugging Face: https://huggingface.co/economyofdreams/Yuli-Qwen2.5-0.5B-Reddit-v0.1.1
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct (no enlazado explicitamente en el repositorio, pero es la base declarada en la model card)
 - Libreria Unsloth (mencionada en las etiquetas del repositorio): https://github.com/unslothai/unsloth
 - Ollama (runtime declarado como compatible): https://ollama.com

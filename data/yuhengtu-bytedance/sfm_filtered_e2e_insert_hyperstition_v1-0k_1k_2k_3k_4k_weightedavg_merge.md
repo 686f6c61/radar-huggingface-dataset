@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Este modelo (merge lineal de checkpoints) | 6,86 B | no disponible | no disponible | safetensors en HuggingFace, 0 descargas, 0 likes | sin benchmarks publicados |
+| Este modelo (merge lineal de checkpoints) | 6,86 B | no disponible | no disponible | safetensors en Hugging Face, 0 descargas, 0 likes | sin benchmarks publicados |
 | Pythia-6.9B (EleutherAI) | 6,9 B | 2048 tokens | Apache-2.0 | pesos públicos, ampliamente utilizada | benchmarks públicos; familia con checkpoints intermedios disponibles |
 | Qwen2.5-7B (Alibaba) | 7,6 B | 128 000 tokens | Apache-2.0 | pesos públicos, múltiples cuantizaciones | benchmarks públicos de referencia |
 | Llama-3.1-8B (Meta) | 8,03 B | 128 000 tokens | Llama 3.1 Community License | pesos públicos con registro, ecosistema amplio | benchmarks públicos de referencia |
@@ -96,7 +96,7 @@ Nota: los datos de los modelos comparativos proceden de conocimiento general y n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-0k_1k_2k_3k_4k_weightedavg_merge
+- Repositorio en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-0k_1k_2k_3k_4k_weightedavg_merge
 - mergekit (herramienta de fusión): https://github.com/cg123/mergekit
 - Método de fusión lineal (referencia de las etiquetas): https://arxiv.org/abs/2203.05482
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a un servicio administrativo danés sin relación con este repositorio.

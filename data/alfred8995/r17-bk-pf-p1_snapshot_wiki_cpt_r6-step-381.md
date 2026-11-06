@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-p1_snapshot_wiki_cpt_r6-step-381` es un checkpoint de aproximadamente 1.414 millones de parámetros publicado en HuggingFace por el usuario `alfred8995`. La nomenclatura del repositorio (`cpt`, `wiki`, `step-381`) sugiere un proceso de preentrenamiento continuado (continued pre-training) sobre datos tipo wiki, congelado en el paso 381 de entrenamiento, aunque el autor no ha publicado ninguna model card que lo confirme. El repositorio está etiquetado con `qwen3`, lo que apunta a que la arquitectura base pertenece a la familia Qwen3, pero no hay información verificable sobre la configuración exacta, la longitud de contexto o el tokenizador empleado.
+`alfred8995/r17-bk-pf-p1_snapshot_wiki_cpt_r6-step-381` es un checkpoint de aproximadamente 1.414 millones de parámetros publicado en Hugging Face por el usuario `alfred8995`. La nomenclatura del repositorio (`cpt`, `wiki`, `step-381`) sugiere un proceso de preentrenamiento continuado (continued pre-training) sobre datos tipo wiki, congelado en el paso 381 de entrenamiento, aunque el autor no ha publicado ninguna model card que lo confirme. El repositorio está etiquetado con `qwen3`, lo que apunta a que la arquitectura base pertenece a la familia Qwen3, pero no hay información verificable sobre la configuración exacta, la longitud de contexto o el tokenizador empleado.
 
 No se trata de un modelo de propósito general documentado, sino de un snapshot intermedio de un experimento de entrenamiento. Esto implica que no existen resultados de benchmarks, descripción de datos de entrenamiento ni guía de uso. El acceso está restringido (gated): es necesario aceptar condiciones en la página del modelo antes de poder descargar los pesos.
 
@@ -21,7 +21,7 @@ Su relevancia es, por tanto, acotada al ámbito de la investigación: sirve como
 | Licencia | other (tipo declarado; el texto de los términos no está detallado en la información disponible) |
 | Formato de pesos | safetensors |
 | Tamaño del repositorio | 5,7 GB, consistente con pesos en fp32 para 1,41 mil millones de parámetros (inferencia, no confirmada) |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-10-23 |
@@ -94,5 +94,5 @@ Los datos de las tres filas de referencia provienen del conocimiento general de 
 
 ## Enlaces
 
-- HuggingFace (acceso restringido): https://huggingface.co/alfred8995/r17-bk-pf-p1_snapshot_wiki_cpt_r6-step-381
+- Hugging Face (acceso restringido): https://huggingface.co/alfred8995/r17-bk-pf-p1_snapshot_wiki_cpt_r6-step-381
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web disponible.

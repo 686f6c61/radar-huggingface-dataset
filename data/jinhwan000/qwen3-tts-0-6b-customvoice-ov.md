@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks estándar (MOS, WER, similitud de h
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jinhwan000/qwen3-tts-0.6b-customvoice-ov
+- Repositorio Hugging Face: https://huggingface.co/jinhwan000/qwen3-tts-0.6b-customvoice-ov
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
 - Exportación hermana de 1,7 B (receta de conversión y notas de runtime): https://huggingface.co/jinhwan000/qwen3-tts-1.7b-base-ov
 - Exportación hermana de 0,6 B base (mismas formas y velocidad): https://huggingface.co/jinhwan000/qwen3-tts-0.6b-base-ov

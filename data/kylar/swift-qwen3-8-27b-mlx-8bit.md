@@ -23,7 +23,7 @@ El dato mas importante para un evaluador es la ausencia casi total de documentac
 | Tamano del repositorio | 28,6 GB |
 | Pipeline declarado | image-text-to-text |
 | Modelo base | ukisai/Swift-Qwen3.8-27b (relación: finetune) |
-| Fecha de creacion / actualización | 2026-09-17 (ambas, segun metadatos de HuggingFace) |
+| Fecha de creacion / actualización | 2026-09-17 (ambas, segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Modelos de Mac recomendados: M1/M2/M3/M4 Max o Ultra con 32, 64, 96, 128 o 192 GB de memoria unificada. Un Mac con 32 GB puede cargarlo, pero con poco margen para contexto extenso.
 - Cabe en GPU de consumo: no en su formato MLX. En GPUs NVIDIA de consumo (por ejemplo RTX 4090 con 24 GB) no cabe en 8 bits sin cuantizacion adicional a 4 bits y conversion previa a GGUF o safetensors.
 - GPUs de datacenter: no es el formato natural del modelo, pero la conversion a bfloat16 requeriria del orden de 54 GB de VRAM (A100 80 GB, H100 80 GB) o de 2 x 24 GB en configuraciones con tensor parallelism.
-- Opciones de despliegue: mlx-lm (soporte nativo declarado), servidores compatibles con endpoints de HuggingFace (tag `endpoints_compatible`) y, previa reversion a safetensors, frameworks como vLLM o TGI. Ollama y llama.cpp no soportan MLX, por lo que requeririan una conversion a GGUF.
+- Opciones de despliegue: mlx-lm (soporte nativo declarado), servidores compatibles con endpoints de Hugging Face (tag `endpoints_compatible`) y, previa reversion a safetensors, frameworks como vLLM o TGI. Ollama y llama.cpp no soportan MLX, por lo que requeririan una conversion a GGUF.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 - Ausencia total de documentacion tecnica: no se publican datos de arquitectura, contexto, entrenamiento, idiomas ni benchmarks, lo que impide evaluar el modelo con rigor antes de desplegarlo.
 - Validacion comunitaria nula: el repositorio registra 0 descargas y 0 likes, por lo que no existe evidencia externa de que los pesos carguen o funcionen correctamente.
-- Acceso restringido: el modelo esta marcado como `gated`, lo que obliga a aceptar la licencia y a autenticarse en HuggingFace para descargarlo, un paso adicional que puede complicar pipelines automatizados.
+- Acceso restringido: el modelo esta marcado como `gated`, lo que obliga a aceptar la licencia y a autenticarse en Hugging Face para descargarlo, un paso adicional que puede complicar pipelines automatizados.
 - Licencia no estandar: swift-open-license-1.0 esta catalogada como `other`. Es imprescindible revisar el texto completo en el enlace de licencia del modelo base antes de cualquier uso comercial, ya que no se han podido verificar sus terminos en la informacion disponible.
 - Riesgo de alucinacion: inherente a los modelos generativos de esta escala; no hay evaluaciones publicadas que permitan acotarlo.
 - Limitaciones de idioma: se desconoce que idiomas soporta y con que calidad, incluido el castellano.
@@ -95,7 +95,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kylar/Swift-Qwen3.8-27b-mlx-8Bit
+- Modelo en Hugging Face: https://huggingface.co/kylar/Swift-Qwen3.8-27b-mlx-8Bit
 - Modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Licencia del modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b/blob/main/LICENSE
 - Libreria de inferencia mlx-lm: no disponible en la informacion proporcionada

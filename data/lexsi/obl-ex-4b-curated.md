@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables específicos. Al ser un 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lexsi/obl-ex-4b-curated
+- Hugging Face: https://huggingface.co/Lexsi/obl-ex-4b-curated
 - Sitio web de Lexsi Labs: https://lexsi.ai/
 - Recursos de Lexsi Labs: https://lexsi.ai/resources
 - Dataset de logs (relacionado): https://huggingface.co/datasets/Lexsi/obl-ex-4b-logs

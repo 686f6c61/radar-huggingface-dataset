@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fugoo es un modelo publicado en HuggingFace por el usuario abhirajputnikku7 bajo la licencia bigscience-openrail-m. La model card asociada está practicamente vacía: no incluye descripción del modelo, arquitectura, datos de entrenamiento ni casos de uso previstos, y el repositorio no está etiquetado con ningún pipeline ni idioma. El modelo no registra descargas ni interacciones en el momento de redactar esta ficha, lo que sugiere una publicación reciente sin validación por parte de la comunidad.
+Fugoo es un modelo publicado en Hugging Face por el usuario abhirajputnikku7 bajo la licencia bigscience-openrail-m. La model card asociada está practicamente vacía: no incluye descripción del modelo, arquitectura, datos de entrenamiento ni casos de uso previstos, y el repositorio no está etiquetado con ningún pipeline ni idioma. El modelo no registra descargas ni interacciones en el momento de redactar esta ficha, lo que sugiere una publicación reciente sin validación por parte de la comunidad.
 
 No se dispone de información sobre el número de parámetros, la longitud de contexto, la arquitectura ni el proceso de entrenamiento. Tampoco hay pesos documentados en formatos estándar (safetensors, GGUF) ni referencias a papers, blogs o demos. Cualquier evaluación técnica del modelo requeriría inspeccionar directamente los archivos del repositorio, algo que no se ha podido hacer con la información proporcionada.
 
@@ -38,7 +38,7 @@ Tampoco se documentan innovaciones técnicas destacables como decodificación es
 ## Casos de uso
 
 - Evaluación exploratoria: dado que no hay documentación, el único uso razonable inicial es inspeccionar los archivos del repositorio y ejecutar pruebas controladas para caracterizar el modelo antes de plantear cualquier aplicación.
-- Investigación sobre modelos publicados sin model card: puede servir como caso de estudio sobre la importancia de la documentación en el ecosistema HuggingFace.
+- Investigación sobre modelos publicados sin model card: puede servir como caso de estudio sobre la importancia de la documentación en el ecosistema Hugging Face.
 - Pruebas de infraestructura de despliegue: si los pesos están disponibles en formatos estándar, podría usarse para validar pipelines de carga y servido, aunque sin garantías de calidad.
 - No se recomienda su uso en atención al cliente, generación de código en producción, análisis de datos, traducción, resumen documental ni ninguna otra aplicación práctica sin una evaluación previa completa.
 - Cualquier caso de uso comercial debería posponerse hasta verificar el cumplimiento de la licencia bigscience-openrail-m y la procedencia de los datos de entrenamiento.
@@ -71,5 +71,5 @@ No disponible. Al desconocerse el tamaño, la arquitectura y las capacidades del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abhirajputnikku7/Fugoo
+- Hugging Face: https://huggingface.co/abhirajputnikku7/Fugoo
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

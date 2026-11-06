@@ -2,7 +2,7 @@
 
 ## Resumen
 
-marbert-arabic-tweet-sentiment-max es un modelo de clasificacion de texto fine-tuneado sobre UBC-NLP/MARBERTv2, especializado en analisis de sentimiento de tweets en arabe. El autor, 3liel, publica este modelo en HuggingFace con el objetivo de ofrecer una herramienta de clasificacion de sentimiento para textos cortos en arabe, aprovechando las capacidades de MARBERTv2 para trabajar con arabe dialectal y arabe moderno estandar (MSA). El modelo presenta 162.843.651 parametros y una longitud de contexto de 512 tokens, lo que lo hace adecuado para tareas de clasificacion de textos breves como tweets.
+marbert-arabic-tweet-sentiment-max es un modelo de clasificacion de texto fine-tuneado sobre UBC-NLP/MARBERTv2, especializado en analisis de sentimiento de tweets en arabe. El autor, 3liel, publica este modelo en Hugging Face con el objetivo de ofrecer una herramienta de clasificacion de sentimiento para textos cortos en arabe, aprovechando las capacidades de MARBERTv2 para trabajar con arabe dialectal y arabe moderno estandar (MSA). El modelo presenta 162.843.651 parametros y una longitud de contexto de 512 tokens, lo que lo hace adecuado para tareas de clasificacion de textos breves como tweets.
 
 El modelo se entrena sobre un dataset no especificado por el autor, con un proceso de fine-tuning de 10 epocas, learning rate de 2e-05 y label smoothing de 0.1. Los resultados de evaluacion indican una accuracy de 0.7315 y un F1 de 0.7319, aunque no se han publicado benchmarks comparativos con otros modelos. La relevancia de este modelo radica en su especializacion para arabe, un idioma con pocos recursos de NLP de calidad, y su potencial uso en tareas de monitorizacion de redes sociales, analisis de opinion y atencion al cliente.
 
@@ -23,7 +23,7 @@ El modelo se entrena sobre un dataset no especificado por el autor, con un proce
 
 El modelo se basa en MARBERTv2, un transformer encoder-only de tipo BERT entrenado por el grupo UBC-NLP. MARBERTv2 se preentrena sobre 1.000 millones de tweets en arabe, lo que le permite capturar tanto arabe moderno estandar como variedades dialectales. La arquitectura original de MARBERTv2 tiene 163 millones de parametros, consistente con el recuento de 162.843.651 parametros del modelo fine-tuneado. Para esta tarea de clasificacion, se anade una cabeza de clasificacion sobre la representacion del token [CLS].
 
-El proceso de fine-tuning se realizo con el Trainer de HuggingFace sobre un dataset no revelado. Los hiperparametros incluyen: learning rate de 2e-05, batch size de 16 (32 con acumulacion de gradientes), 10 epocas, warmup de 150 pasos, scheduler lineal y label smoothing de 0.1. No se menciona el uso de tecnicas como RLHF o DPO; el entrenamiento es un fine-tuning supervisado estandar. La perdida en evaluacion empeora progresivamente desde 0.8475 en la epoca 1 hasta 1.0371 en la epoca 5, lo que sugiere un posible sobreajuste en epocas avanzadas.
+El proceso de fine-tuning se realizo con el Trainer de Hugging Face sobre un dataset no revelado. Los hiperparametros incluyen: learning rate de 2e-05, batch size de 16 (32 con acumulacion de gradientes), 10 epocas, warmup de 150 pasos, scheduler lineal y label smoothing de 0.1. No se menciona el uso de tecnicas como RLHF o DPO; el entrenamiento es un fine-tuning supervisado estandar. La perdida en evaluacion empeora progresivamente desde 0.8475 en la epoca 1 hasta 1.0371 en la epoca 5, lo que sugiere un posible sobreajuste en epocas avanzadas.
 
 ## Capacidades
 
@@ -85,7 +85,7 @@ El modelo de iMeshal es otro fine-tuning de MARBERTv2 para clasificacion de sent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3liel/marbert-arabic-tweet-sentiment-max
+- Modelo en Hugging Face: https://huggingface.co/3liel/marbert-arabic-tweet-sentiment-max
 - Modelo base MARBERTv2: https://huggingface.co/UBC-NLP/MARBERTv2
 - Repositorio GitHub de MARBERT: https://github.com/UBC-NLP/marbert
 - Modelo similar de iMeshal: https://huggingface.co/iMeshal/arabic-sentiment-classifier-marbert

@@ -65,7 +65,7 @@ No se dispone de informacion sobre modelos comparables en el repositorio ni en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TianhangCheng7/Fire3DBaselineWeight
+- Repositorio Hugging Face: https://huggingface.co/TianhangCheng7/Fire3DBaselineWeight
 - Repositorio GitHub del baseline: https://github.com/Tianhang-Cheng/Fire3DPerceptBaseline
 - Pagina del proyecto EVL/EFM3D: https://www.projectaria.com/research/efm3D/
 - Paper EFM3D: https://arxiv.org/abs/2406.10224

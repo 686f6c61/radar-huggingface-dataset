@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QuestA-Qwen3-1p7b-BatchSelective-Top10pct es un checkpoint de ajuste fino publicado por el usuario SelectiveDOPD en HuggingFace, derivado del modelo Qwen3-1.7B. Segun el nombre del repositorio y el identificador interno del experimento (`questa_qwen3_1p7b_JSD_rel_90_100_batch-agg`, dentro de la serie "BiDirect-OPD"), se trata de un artefacto de investigacion orientado a experimentos de destilacion o alineacion selectiva, no de un modelo con soporte comercial ni documentacion de producto. El repositorio no incluye model card descriptiva, licencia declarada ni idiomas soportados.
+QuestA-Qwen3-1p7b-BatchSelective-Top10pct es un checkpoint de ajuste fino publicado por el usuario SelectiveDOPD en Hugging Face, derivado del modelo Qwen3-1.7B. Segun el nombre del repositorio y el identificador interno del experimento (`questa_qwen3_1p7b_JSD_rel_90_100_batch-agg`, dentro de la serie "BiDirect-OPD"), se trata de un artefacto de investigacion orientado a experimentos de destilacion o alineacion selectiva, no de un modelo con soporte comercial ni documentacion de producto. El repositorio no incluye model card descriptiva, licencia declarada ni idiomas soportados.
 
 El modelo tiene 2.031.739.904 parametros reales medidos sobre los pesos safetensors, lo que lo situa en la categoria de ~2 B parametros, y el repositorio ocupa 4,1 GB, coherente con pesos en bf16 o fp16. El pipeline declarado es text-generation y las etiquetas incluyen `transformers`, `safetensors`, `qwen3`, `conversational` y `endpoints_compatible` (compatible con Text Generation Inference). La rama `main` corresponde al checkpoint `global_step_300`, y existen ramas adicionales desde `global_step_20` hasta `global_step_280` en incrementos de 20 pasos.
 
@@ -24,7 +24,7 @@ Su relevancia actual es limitada y de perfil academico: al no declarar licencia,
 | Checkpoints | `main` = global_step_300; ramas global_step_20 a global_step_280 en pasos de 20 |
 | Tamano del repositorio | 4,1 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-11 (fecha declarada en HuggingFace) |
+| Fecha de creacion | 2026-09-11 (fecha declarada en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -52,7 +52,7 @@ En cuanto al entrenamiento, la model card unicamente indica que el modelo se sub
 - Generacion de texto de baja latencia en entornos con recursos limitados: al ser un modelo denso pequeno, es adecuado para tareas de resumen, reformulacion o clasificacion generativa en las que la latencia y el coste por token priman sobre la calidad maxima.
 - Base para ajuste fino posterior (SFT/LoRA): su tamano permite reentrenar o adaptar el modelo en una unica GPU, siempre que se resuelva antes la ambiguedad de licencia.
 - Experimentos de cuantizacion y despliegue: sirve como banco de pruebas para medir la degradacion de calidad al pasar de bf16 a int8 o int4, ya que el repositorio solo trae pesos completos y no incluye versiones cuantizadas.
-- Docencia y divulgacion: util para explicar de forma practica como se publican checkpoints intermedios de un entrenamiento y como se versionan en ramas de Git dentro de HuggingFace.
+- Docencia y divulgacion: util para explicar de forma practica como se publican checkpoints intermedios de un entrenamiento y como se versionan en ramas de Git dentro de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -73,11 +73,11 @@ La comparativa se establece a nivel de tamano y categoria, porque no existen dat
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| QuestA-Qwen3-1p7b-BatchSelective-Top10pct | 2,03 B | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
-| Qwen3-1.7B (base) | ~2,03 B | 32.768 tokens nativos (ampliable con YaRN) | Apache-2.0 | HuggingFace, ampliamente desplegado | benchmarks publicados por el autor |
-| Llama-3.2-1B | ~1,24 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace | benchmarks publicados por el autor |
-| SmolLM2-1.7B | ~1,71 B | 8.192 tokens (ampliable) | Apache-2.0 | HuggingFace | benchmarks publicados por el autor |
-| Gemma-3-1B | ~1 B | 32.000 tokens | Gemma Terms of Use | HuggingFace | benchmarks publicados por el autor |
+| QuestA-Qwen3-1p7b-BatchSelective-Top10pct | 2,03 B | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
+| Qwen3-1.7B (base) | ~2,03 B | 32.768 tokens nativos (ampliable con YaRN) | Apache-2.0 | Hugging Face, ampliamente desplegado | benchmarks publicados por el autor |
+| Llama-3.2-1B | ~1,24 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face | benchmarks publicados por el autor |
+| SmolLM2-1.7B | ~1,71 B | 8.192 tokens (ampliable) | Apache-2.0 | Hugging Face | benchmarks publicados por el autor |
+| Gemma-3-1B | ~1 B | 32.000 tokens | Gemma Terms of Use | Hugging Face | benchmarks publicados por el autor |
 
 La diferencia critica no es de rendimiento, sino de trazabilidad: los cuatro modelos alternativos declaran licencia, idiomas, contexto y evaluaciones, mientras que este checkpoint no declara ninguno de esos extremos.
 
@@ -96,7 +96,7 @@ La diferencia critica no es de rendimiento, sino de trazabilidad: los cuatro mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SelectiveDOPD/QuestA-Qwen3-1p7b-BatchSelective-Top10pct
+- Modelo en Hugging Face: https://huggingface.co/SelectiveDOPD/QuestA-Qwen3-1p7b-BatchSelective-Top10pct
 - Ramas de checkpoints intermedios: `global_step_20`, `global_step_40`, `global_step_60`, `global_step_80`, `global_step_100`, `global_step_120`, `global_step_140`, `global_step_160`, `global_step_180`, `global_step_200`, `global_step_220`, `global_step_240`, `global_step_260`, `global_step_280` (accesibles como ramas del mismo repositorio).
 - Paper, blog o repositorio de codigo del autor: no disponible.
 - Demo o espacio de inferencia: no disponible.

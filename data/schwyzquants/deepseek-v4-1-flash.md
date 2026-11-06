@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) publicado en HuggingFace por el usuario schwyzquants, con licencia MIT declarada y pipeline image-text-to-text. Segun la model card, se trata de un modelo con 552.000 millones de parametros en el backbone, contexto de hasta un millon de tokens y procesamiento nativo de imagenes y texto, con generacion de texto autoregresiva. La arquitectura se describe como Causal Encoder-Decoder (CED): un transformer de 40 capas dividido en 20 capas de encoder causal y 20 de decoder.
+DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) publicado en Hugging Face por el usuario schwyzquants, con licencia MIT declarada y pipeline image-text-to-text. Segun la model card, se trata de un modelo con 552.000 millones de parametros en el backbone, contexto de hasta un millon de tokens y procesamiento nativo de imagenes y texto, con generacion de texto autoregresiva. La arquitectura se describe como Causal Encoder-Decoder (CED): un transformer de 40 capas dividido en 20 capas de encoder causal y 20 de decoder.
 
 Su propuesta tecnica se centra en la compresion de la cache KV para cargas de trabajo agenticas con entradas muy largas. La model card afirma que el decoder proyecta su cache KV global desde los estados ocultos finales del encoder, lo que permite activar solo 8.000 millones de parametros por token en prefill y 16.000 millones en decode, y que el uso de Compressed Sparse Attention 2 (CSA2) junto con cache KV principal en FP4 reduce la huella global a 890 bytes por token, aproximadamente una cuarta parte de DeepSeek-V4-Flash.
 
@@ -47,7 +47,7 @@ El preentrenamiento se realiza desde cero sobre un corpus multimodal de 45 billo
 - Atencion al cliente multi-turno: el contexto de 1M tokens admite historiales de conversacion muy largos y bases de conocimiento embebidas en el prompt, manteniendo coherencia entre turnos sin un sistema de memoria externo complejo.
 - Pipelines de extraccion de datos estructurados: combinacion de entrada de imagenes de documentos y texto para producir JSON validado, con el ajuste de esfuerzo de razonamiento bajo (cercano a 1) en tareas simples para reducir coste y alto en casos ambiguos.
 - Investigacion asistida sobre literatura cientifica: carga simultanea de decenas de articulos, tablas y figuras para comparar metodologias y sintetizar resultados, con esfuerzo de razonamiento elevado en las fases de contraste.
-- Despliegue gestionado en Inference Endpoints: el tag endpoints_compatible sugiere compatibilidad con el servicio de HuggingFace, aunque no hay confirmacion del soporte real de la arquitectura deepseek_v41 en los motores de inferencia habituales.
+- Despliegue gestionado en Inference Endpoints: el tag endpoints_compatible sugiere compatibilidad con el servicio de Hugging Face, aunque no hay confirmacion del soporte real de la arquitectura deepseek_v41 en los motores de inferencia habituales.
 
 ## Benchmarks y rendimiento
 
@@ -69,7 +69,7 @@ La informacion proporcionada solo ofrece referencias comparativas internas de la
 
 | Modelo | Parametros | Contexto | Cache KV global por token | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash (schwyzquants) | 763,2 B segun safetensors; 552 B de backbone segun model card | Hasta 1M tokens | 890 bytes | MIT (declarada) | Repositorio en HuggingFace, 0 descargas, 0 likes |
+| DeepSeek-V4.1-Flash (schwyzquants) | 763,2 B segun safetensors; 552 B de backbone segun model card | Hasta 1M tokens | 890 bytes | MIT (declarada) | Repositorio en Hugging Face, 0 descargas, 0 likes |
 | DeepSeek-V4-Flash | no disponible | no disponible | ~3.560 bytes (derivado: 4x la de V4.1-Flash) | no disponible | no disponible |
 | DeepSeek-V1 | no disponible | no disponible | ~389.000 bytes (derivado: 437x la de V4.1-Flash) | no disponible | no disponible |
 
@@ -92,9 +92,9 @@ Ademas, la model card indica que la huella de cache KV persistente de DeepSeek-V
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/schwyzquants/DeepSeek-V4.1-Flash
+- Repositorio en Hugging Face: https://huggingface.co/schwyzquants/DeepSeek-V4.1-Flash
 - Informe tecnico citado en la model card (alojado en el repositorio de deepseek-ai): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organizacion DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Sitio oficial de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
 - Repositorio de figuras de DeepSeek-V2 usado en la model card: https://github.com/deepseek-ai/DeepSeek-V2

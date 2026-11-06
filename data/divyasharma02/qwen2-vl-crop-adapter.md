@@ -60,4 +60,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - DivyaSharma02/qwen2-vl-crop-adapter](https://huggingface.co/DivyaSharma02/qwen2-vl-crop-adapter)
+- [Hugging Face - DivyaSharma02/qwen2-vl-crop-adapter](https://huggingface.co/DivyaSharma02/qwen2-vl-crop-adapter)

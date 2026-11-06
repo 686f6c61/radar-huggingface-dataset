@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-best es un checkpoint publicado en HuggingFace por el usuario D21WCXZ21 bajo el identificador `D21WCXZ21/MyAwesomeModel-best`. Segun las etiquetas del repositorio, se trata de un modelo basado en arquitectura BERT (transformer encoder-only) implementado con la libreria `transformers` y PyTorch, y orientado a la tarea de `feature-extraction`, es decir, a la generacion de representaciones vectoriales (embeddings) a partir de texto.
+MyAwesomeModel-best es un checkpoint publicado en Hugging Face por el usuario D21WCXZ21 bajo el identificador `D21WCXZ21/MyAwesomeModel-best`. Segun las etiquetas del repositorio, se trata de un modelo basado en arquitectura BERT (transformer encoder-only) implementado con la libreria `transformers` y PyTorch, y orientado a la tarea de `feature-extraction`, es decir, a la generacion de representaciones vectoriales (embeddings) a partir de texto.
 
 El autor lo presenta como el "mejor checkpoint" seleccionado entre 10 puntos de control (de `step_100` a `step_1000`) en funcion de una puntuacion global ponderada de 0.710, obtenida en un pipeline de evaluacion interno con 15 categorias de benchmark. No se especifican el numero de parametros, la longitud de contexto, los idiomas soportados ni el volumen o la composicion de los datos de entrenamiento.
 
@@ -118,7 +118,7 @@ Ademas de los modelos anteriores, existen alternativas de embeddings mas moderna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/D21WCXZ21/MyAwesomeModel-best
+- Modelo en Hugging Face: https://huggingface.co/D21WCXZ21/MyAwesomeModel-best
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo o espacio interactivo: no disponible

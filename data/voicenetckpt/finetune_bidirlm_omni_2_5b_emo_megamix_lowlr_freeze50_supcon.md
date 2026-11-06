@@ -93,7 +93,7 @@ No disponible. No se dispone de parametros, contexto, licencia ni resultados con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/finetune_BidirLM_Omni_2_5B_emo_megamix_lowlr_freeze50_supcon
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/finetune_BidirLM_Omni_2_5B_emo_megamix_lowlr_freeze50_supcon
 - Indice de ejecuciones de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 
 Nota: la busqueda web realizada no devolvio resultados tecnicos relevantes sobre este modelo; unicamente aparecieron enlaces genericos a YouTube y servicios asociados, sin relacion con el checkpoint, por lo que se han omitido.

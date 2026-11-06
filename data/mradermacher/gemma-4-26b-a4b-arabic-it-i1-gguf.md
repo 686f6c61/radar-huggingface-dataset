@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento ni de contexto para establecer una compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Gemma-4-26B-A4B-Arabic-It-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma-4-26B-A4B-Arabic-It-i1-GGUF
 - Modelo base del fine-tuning: https://huggingface.co/noman-asif/Gemma-4-26B-A4B-Arabic-It
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher

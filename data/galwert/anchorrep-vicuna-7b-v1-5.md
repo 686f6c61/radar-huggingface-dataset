@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AnchorRep-Vicuna-7B-v1.5 | 7B + LoRA | 4096 | Defensa por repulsion de representaciones (CKA) | Llama 2 Community | HuggingFace (delta LoRA) |
-| Vicuna-7B-v1.5 (base) | 7B | 4096 | Modelo conversacional sin defensa especifica | Llama 2 Community | HuggingFace |
-| Llama Guard 2 (8B) | 8B | 4096 | Clasificador de seguridad de entrada/salida | Llama 2 Community | HuggingFace |
+| AnchorRep-Vicuna-7B-v1.5 | 7B + LoRA | 4096 | Defensa por repulsion de representaciones (CKA) | Llama 2 Community | Hugging Face (delta LoRA) |
+| Vicuna-7B-v1.5 (base) | 7B | 4096 | Modelo conversacional sin defensa especifica | Llama 2 Community | Hugging Face |
+| Llama Guard 2 (8B) | 8B | 4096 | Clasificador de seguridad de entrada/salida | Llama 2 Community | Hugging Face |
 | RepE / Representation Engineering (adaptadores) | variable | variable | Control de representaciones para seguridad | variable | Repositorios de investigacion |
 
 La comparacion con Llama Guard 2 es la mas directa en cuanto a funcion (seguridad), aunque el enfoque difiere: Llama Guard clasifica contenido, mientras que AnchorRep modifica el comportamiento interno del modelo generativo. No se dispone de datos de benchmarks comparativos entre estas alternativas en la informacion proporcionada.
@@ -95,7 +95,7 @@ La comparacion con Llama Guard 2 es la mas directa en cuanto a funcion (segurida
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/galwert/AnchorRep-Vicuna-7B-v1.5
+- Modelo en Hugging Face: https://huggingface.co/galwert/AnchorRep-Vicuna-7B-v1.5
 - Modelo base: https://huggingface.co/lmsys/vicuna-7b-v1.5
 - Modelo ancla: https://huggingface.co/Qwen/Qwen1.5-7B-Chat
 - Repositorio companero (entrenamiento, evaluacion, registros de auditoria y sufijos GCG): https://github.com/galwert/AnchorRep

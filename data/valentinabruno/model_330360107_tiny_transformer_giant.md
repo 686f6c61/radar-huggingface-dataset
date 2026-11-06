@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_330360107_tiny_transformer_giant` es una implementación a escala «giant» de la arquitectura *tiny transformer*, publicada por el usuario ValentinaBruno en HuggingFace. Está diseñado para tareas multitarea, con una estrategia de fusión de baja complejidad (low-rank) y una cabeza de tarea múltiple. El autor lo presenta como un artefacto de investigación, aunque no se incluye documentación adicional sobre su entrenamiento, datos o rendimiento.
+El modelo `model_330360107_tiny_transformer_giant` es una implementación a escala «giant» de la arquitectura *tiny transformer*, publicada por el usuario ValentinaBruno en Hugging Face. Está diseñado para tareas multitarea, con una estrategia de fusión de baja complejidad (low-rank) y una cabeza de tarea múltiple. El autor lo presenta como un artefacto de investigación, aunque no se incluye documentación adicional sobre su entrenamiento, datos o rendimiento.
 
 La relevancia de este modelo es limitada en el estado actual de la información: no tiene descargas ni reproducciones, no se publican métricas ni detalles de parametrización, y el único archivo entregado es un script Python (`model_330360107_tiny_transformer_giant.py`). Su interés reside en la exploración de arquitecturas compactas escaladas, pero cualquier uso práctico requiere acceso al código y a los pesos, que no están disponibles en el repositorio.
 

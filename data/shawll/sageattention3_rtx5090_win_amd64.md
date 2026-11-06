@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Shawll/Sageattention3_RTX5090_Win_amd64 no contiene un modelo de lenguaje ni un modelo generativo: es un artefacto alojado en HuggingFace cuyo nombre indica una compilacion de SageAttention 3 para GPU NVIDIA RTX 5090 sobre Windows en arquitectura amd64. Los metadatos disponibles son minimos: pipeline no declarado, idiomas no declarados, cero descargas y cero likes en la fecha de consulta, y una model card que se limita a la linea `license: mit`.
+El repositorio Shawll/Sageattention3_RTX5090_Win_amd64 no contiene un modelo de lenguaje ni un modelo generativo: es un artefacto alojado en Hugging Face cuyo nombre indica una compilacion de SageAttention 3 para GPU NVIDIA RTX 5090 sobre Windows en arquitectura amd64. Los metadatos disponibles son minimos: pipeline no declarado, idiomas no declarados, cero descargas y cero likes en la fecha de consulta, y una model card que se limita a la linea `license: mit`.
 
 Por tanto, esta ficha no puede documentar arquitectura de red, numero de parametros, ventana de contexto ni datos de entrenamiento, porque el repositorio no publica pesos ni documentacion tecnica de ningun tipo. Lo que si se puede documentar con rigor es la naturaleza inferida del artefacto, su encaje en el ecosistema de atencion cuantizada y las advertencias de seguridad y reproducibilidad que conlleva consumir un binario sin documentacion.
 
@@ -93,6 +93,6 @@ No disponible. La informacion proporcionada no incluye alternativas comparables,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shawll/Sageattention3_RTX5090_Win_amd64
+- Repositorio en Hugging Face: https://huggingface.co/Shawll/Sageattention3_RTX5090_Win_amd64
 - Hilo de la comunidad en el que se menciona reinstalar SageAttention junto a PyTorch 2.10 cu130 (contexto tangencial, no es documentacion del repositorio): https://www.reddit.com/r/StableDiffusion/comments/1rp2bhz/few_combined_ltx23_questions_crash_like_ltx2/
 - El resto de resultados de la busqueda web no guardan relacion con el repositorio analizado (listados de eventos y directorios de ocio), por lo que no se incluyen como fuentes.

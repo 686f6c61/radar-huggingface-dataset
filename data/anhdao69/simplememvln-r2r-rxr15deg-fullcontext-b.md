@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SimpleMemVLN joint R2R + RxR_15deg FullContext+B es un punto de control intermedio (mid-schedule snapshot) de un ajuste fino conjunto sobre el modelo base Qwen/Qwen3.5-4B, publicado por el usuario anhdao69 en HuggingFace. El modelo esta especializado en vision-language navigation (VLN): recibe observaciones visuales de un entorno y emite acciones de navegacion en formato de texto, siguiendo el esquema de un cabezal de accion nativo sobre el backbone LLM (opcion B, con historial de acciones gold).
+SimpleMemVLN joint R2R + RxR_15deg FullContext+B es un punto de control intermedio (mid-schedule snapshot) de un ajuste fino conjunto sobre el modelo base Qwen/Qwen3.5-4B, publicado por el usuario anhdao69 en Hugging Face. El modelo esta especializado en vision-language navigation (VLN): recibe observaciones visuales de un entorno y emite acciones de navegacion en formato de texto, siguiendo el esquema de un cabezal de accion nativo sobre el backbone LLM (opcion B, con historial de acciones gold).
 
 Se trata de un modelo de aproximadamente 4.000 millones de parametros (heredados del base Qwen3.5-4B) con vision encoder congelado y backbone de texto entrenable. El entrenamiento combina datos conjuntos de R2R y trayectorias de RxR_15deg con guias en ingles, usando contexto completo (full-context causal attention) sin truncamiento de trayectoria ni TBPTT. La relevancia actual es acotada: no es un modelo final ni evaluado, sino una instantanea de un run coseno de dos epocas detenido en la actualizacion 3852.
 
@@ -85,7 +85,7 @@ Otros modelos comparables de navegacion vision-lenguaje: no disponible en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anhdao69/SimpleMemVLN-R2R-RxR15deg-FullContext-B
+- Modelo en Hugging Face: https://huggingface.co/anhdao69/SimpleMemVLN-R2R-RxR15deg-FullContext-B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper, blog, repositorio o demo del proyecto SimpleMemVLN: no disponible en la informacion proporcionada.
 - Las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los enlaces obtenidos no guardan relacion con el mismo.

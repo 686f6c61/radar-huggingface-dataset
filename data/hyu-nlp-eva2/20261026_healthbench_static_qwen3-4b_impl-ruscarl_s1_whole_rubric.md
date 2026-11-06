@@ -96,7 +96,7 @@ Frente al modelo base, este fine-tune cambia únicamente la distribución de com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HYU-NLP-EVA2/20261026_healthbench_static_qwen3-4b_impl-ruscarl_s1_whole_rubric
+- Hugging Face: https://huggingface.co/HYU-NLP-EVA2/20261026_healthbench_static_qwen3-4b_impl-ruscarl_s1_whole_rubric
 - Colección de checkpoints del experimento: https://huggingface.co/collections/HYU-NLP-EVA2/20261027-healthbench-qwen3-4b-whole-rubric-checkpoints-6adf7376f6a303d66d82d8a0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 

@@ -76,7 +76,7 @@ No disponible. No se ha proporcionado información suficiente para comparar este
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chriswessels/Qwopus3.8-27B-Flash-oQ8e
+- Hugging Face: https://huggingface.co/chriswessels/Qwopus3.8-27B-Flash-oQ8e
 - oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base `Qwopus3.8-27B-Flash`: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash
 - Modelo `Qwen3.8-27B`: https://huggingface.co/Qwen/Qwen3.8-27B

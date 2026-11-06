@@ -64,7 +64,7 @@ I'll write.
 
 For "Casos de uso" min 6 bullets.
 
-For enlaces: HuggingFace adapter, base model, merged weights, finetune example, earlier versions, datasets, arxiv paper.
+For enlaces: Hugging Face adapter, base model, merged weights, finetune example, earlier versions, datasets, arxiv paper.
 
 Let me write.
 

@@ -93,7 +93,7 @@ El punto diferencial de esta publicacion no es el rendimiento bruto, sino que es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thepatch/bs-roformer-viperx-317-GGUF
+- Repositorio Hugging Face: https://huggingface.co/thepatch/bs-roformer-viperx-317-GGUF
 - stems.cpp (runtime C++/ggml): https://github.com/betweentwomidnights/stems.cpp
 - Checkpoint upstream (release `all_public_uvr_models`): https://github.com/TRvlvr/model_repo
 - Configuracion de entrenamiento (ZFTurbo, Music-Source-Separation-Training, MIT): https://github.com/ZFTurbo/Music-Source-Separation-Training

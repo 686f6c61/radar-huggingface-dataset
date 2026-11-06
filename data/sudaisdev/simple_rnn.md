@@ -70,7 +70,7 @@ En la informacion disponible no se ofrecen datos de rendimiento ni alternativas 
 | Longitud de contexto | 20 caracteres | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | HuggingFace (0 descargas, 0 likes) | no disponible |
+| Disponibilidad | Hugging Face (0 descargas, 0 likes) | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ En la informacion disponible no se ofrecen datos de rendimiento ni alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sudaisdev/simple_rnn
+- Modelo en Hugging Face: https://huggingface.co/sudaisdev/simple_rnn
 - Introduction to Recurrent Neural Networks (GeeksforGeeks): https://www.geeksforgeeks.org/machine-learning/introduction-to-recurrent-neural-network/
 - Recurrent neural network (Wikipedia): https://en.wikipedia.org/wiki/Recurrent_neural_network
 - Tutorial de RNN en Colab (aaubs/ds-master): https://colab.research.google.com/github/aaubs/ds-master/blob/main/notebooks/M3_RNN_Tutorial_v3.ipynb

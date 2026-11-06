@@ -82,10 +82,10 @@ Comparativa de especificaciones con alternativas de tamano reducido. Los datos d
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| Slayer149-ARC | 149M | 2.048 | Apache 2.0 | en | HuggingFace (safetensors) |
-| Slayer149-balanced | 149M | 2.048 | Apache 2.0 | en | HuggingFace (modelo base) |
-| GPT-2 | 124M | 1.024 | MIT | en | HuggingFace |
-| TinyLlama-1.1B | 1.100M | 2.048 | Apache 2.0 | en | HuggingFace |
+| Slayer149-ARC | 149M | 2.048 | Apache 2.0 | en | Hugging Face (safetensors) |
+| Slayer149-balanced | 149M | 2.048 | Apache 2.0 | en | Hugging Face (modelo base) |
+| GPT-2 | 124M | 1.024 | MIT | en | Hugging Face |
+| TinyLlama-1.1B | 1.100M | 2.048 | Apache 2.0 | en | Hugging Face |
 
 GPT-2 y TinyLlama se incluyen como referencias de tamano y contexto conocidas, no como equivalentes funcionales: el primero esta descontinuado como base de investigacion y el segundo es un modelo instruido de mayor tamano. Para una comparacion de rendimiento real habria que reevaluar los tres con el mismo arnes; no se dispone de esos datos en la informacion proporcionada.
 
@@ -104,7 +104,7 @@ GPT-2 y TinyLlama se incluyen como referencias de tamano y contexto conocidas, n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SlayerLab/Slayer149-ARC
+- Modelo en Hugging Face: https://huggingface.co/SlayerLab/Slayer149-ARC
 - Modelo base: https://huggingface.co/SlayerLab/Slayer149-balanced
 - Slayer149 (modelo original de la familia): https://huggingface.co/SlayerLab/Slayer149
 - Ajuste fino alternativo (seed 45500): https://huggingface.co/SlayerLab/Slayer149-Balanced-ARC-E-ft-45500

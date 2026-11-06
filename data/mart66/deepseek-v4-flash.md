@@ -91,8 +91,8 @@ La comparacion se basa en datos de la version base. DeepSeek-V4-Flash supera a V
 
 ## Enlaces
 
-- Repositorio HuggingFace del mirror: https://huggingface.co/mart66/DeepSeek-V4-Flash
-- Repositorio HuggingFace oficial: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
+- Repositorio Hugging Face del mirror: https://huggingface.co/mart66/DeepSeek-V4-Flash
+- Repositorio Hugging Face oficial: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - ModelScope: https://modelscope.cn/models/deepseek-ai/DeepSeek-V4-Flash
 - LM Studio: https://lmstudio.ai/models/deepseek-v4-flash
 - NVIDIA NIM: https://docs.api.nvidia.com/nim/reference/deepseek-ai-deepseek-v4-flash

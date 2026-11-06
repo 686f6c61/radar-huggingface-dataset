@@ -74,10 +74,10 @@ El estudiante inicial obtuvo 21,10 % de media macro; el checkpoint step-200 alca
 
 | Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-1.7B-OPD-RL-Math-Step200 | 2,03B | No disponible | Matematicas (destilado de un profesor de 4B) | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-1.7B | 2,03B | No disponible en la informacion proporcionada | Proposito general | Apache-2.0 | HuggingFace |
-| Qwen3-4B-Non-Thinking-RL-Math-Step500 (profesor) | 4B (aproximado) | No disponible | Matematicas (RL) | No disponible en la informacion proporcionada | HuggingFace (Keven16) |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | No disponible en la informacion proporcionada | Razonamiento matematico destilado | MIT (segun su model card publica) | HuggingFace |
+| Qwen3-1.7B-OPD-RL-Math-Step200 | 2,03B | No disponible | Matematicas (destilado de un profesor de 4B) | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-1.7B | 2,03B | No disponible en la informacion proporcionada | Proposito general | Apache-2.0 | Hugging Face |
+| Qwen3-4B-Non-Thinking-RL-Math-Step500 (profesor) | 4B (aproximado) | No disponible | Matematicas (RL) | No disponible en la informacion proporcionada | Hugging Face (Keven16) |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | No disponible en la informacion proporcionada | Razonamiento matematico destilado | MIT (segun su model card publica) | Hugging Face |
 
 La comparacion directa de rendimiento con DeepSeek-R1-Distill-Qwen-1.5B no esta disponible en la informacion proporcionada; el unico punto de referencia numerico publicado es el del propio paper (21,10 % inicial frente a 43,94 % final en la media macro de AIME24/AIME25/AMC23).
 
@@ -96,7 +96,7 @@ La comparacion directa de rendimiento con DeepSeek-R1-Distill-Qwen-1.5B no esta 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leizhao7/Qwen3-1.7B-OPD-RL-Math-Step200
+- Modelo en Hugging Face: https://huggingface.co/leizhao7/Qwen3-1.7B-OPD-RL-Math-Step200
 - Paper: https://arxiv.org/abs/2610.11247
 - Pagina del proyecto: https://leizhao7.github.io/opd-learning-signals/
 - Codigo y resultados numericos: https://github.com/leizhao7/opd-learning-signals

@@ -4,7 +4,7 @@
 
 SadTalker es un modelo de generacion de cabezas parlantes (talking heads) dirigido por audio. Dada una imagen de una persona y un clip de audio, el modelo genera un video en el que la persona parece hablar, con sincronizacion labial y expresiones faciales naturales. Fue desarrollado por el equipo detras del repositorio GitHub Winfredy/SadTalker y presentado en la pagina del proyecto sadtalker.github.io. El modelo modela coeficientes de movimiento 3D realistas, conectando el audio con diferentes tipos de coeficientes de movimiento de forma individual, e introduce ExpNet para aprender expresiones faciales precisas a partir del audio mediante destilacion de coeficientes y caras renderizadas en 3D.
 
-El repositorio de HuggingFace (luissalazar12/SadTalker) es una subida comunitaria de los pesos del modelo, con licencia MIT y un tamano de 4.0 GB. La model card incluida es una plantilla basica generada a partir de una plantilla de HuggingFace Hub, sin especificaciones tecnicas detalladas. El modelo es relevante porque permite crear avatares parlantes realistas sin necesidad de equipos de captura de movimiento ni grabacion en estudio, con una unica imagen y un clip de audio.
+El repositorio de Hugging Face (luissalazar12/SadTalker) es una subida comunitaria de los pesos del modelo, con licencia MIT y un tamano de 4.0 GB. La model card incluida es una plantilla basica generada a partir de una plantilla de Hugging Face Hub, sin especificaciones tecnicas detalladas. El modelo es relevante porque permite crear avatares parlantes realistas sin necesidad de equipos de captura de movimiento ni grabacion en estudio, con una unica imagen y un clip de audio.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El repositorio de HuggingFace (luissalazar12/SadTalker) es una subida comunitari
 
 SadTalker modela explicitamente las conexiones entre el audio y diferentes tipos de coeficientes de movimiento de forma individual. Presenta ExpNet, una red que aprende la expresion facial precisa a partir del audio destilando tanto coeficientes como caras renderizadas en 3D. El modelo genera coeficientes de movimiento 3D realistas que se aplican a la imagen de entrada para producir el video final con sincronizacion labial y movimientos naturales de cabeza.
 
-Los detalles especificos del entrenamiento (numero de muestras, composicion del dataset, tecnicas de optimizacion o alineamiento) no estan disponibles en la informacion proporcionada. La model card de HuggingFace no incluye documentacion tecnica adicional mas alla de la referencia al repositorio original.
+Los detalles especificos del entrenamiento (numero de muestras, composicion del dataset, tecnicas de optimizacion o alineamiento) no estan disponibles en la informacion proporcionada. La model card de Hugging Face no incluye documentacion tecnica adicional mas alla de la referencia al repositorio original.
 
 ## Capacidades
 
@@ -60,15 +60,15 @@ Modelos comparables en la categoria de generacion de cabezas parlantes incluyen 
 
 ## Limitaciones y advertencias
 
-- La model card de HuggingFace es una plantilla basica sin documentacion detallada de limitaciones, sesgos o riesgos.
+- La model card de Hugging Face es una plantilla basica sin documentacion detallada de limitaciones, sesgos o riesgos.
 - La calidad del resultado depende directamente de la calidad de la imagen de entrada y del clip de audio; imagenes con oclusiones, iluminacion pobre o poses no frontales pueden degradar el resultado.
-- El repositorio de HuggingFace es una subida comunitaria (usuario luissalazar12), no la publicacion oficial de los autores del modelo; se recomienda verificar la integridad de los pesos antes de usarlo en produccion.
+- El repositorio de Hugging Face es una subida comunitaria (usuario luissalazar12), no la publicacion oficial de los autores del modelo; se recomienda verificar la integridad de los pesos antes de usarlo en produccion.
 - No se dispone de informacion sobre sesgos demograficos, riesgo de alucinacion visual o limitaciones de idioma especificas.
 - La licencia MIT permite uso comercial, pero se recomienda revisar los terminos del repositorio original y de cualquier dependencia de terceros.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/luissalazar12/SadTalker
+- Hugging Face: https://huggingface.co/luissalazar12/SadTalker
 - Repositorio GitHub original: https://github.com/Winfredy/SadTalker
 - Pagina del proyecto: https://sadtalker.github.io/
 - Sitio web de SadTalker AI: https://sadtalker.ai/

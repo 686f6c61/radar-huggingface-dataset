@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SubiSamayasundaram/Hybrid_Model` es una publicacion de HuggingFace creada por el usuario SubiSamayasundaram el 18 de agosto de 2026. La model card asociada esta practicamente vacia: unicamente declara la licencia MIT en el frontmatter YAML y no incluye ninguna descripcion, especificacion tecnica, ni documentacion de uso. No se dispone de informacion sobre la arquitectura, el tamano, el entrenamiento o las capacidades del modelo.
+El modelo `SubiSamayasundaram/Hybrid_Model` es una publicacion de Hugging Face creada por el usuario SubiSamayasundaram el 18 de agosto de 2026. La model card asociada esta practicamente vacia: unicamente declara la licencia MIT en el frontmatter YAML y no incluye ninguna descripcion, especificacion tecnica, ni documentacion de uso. No se dispone de informacion sobre la arquitectura, el tamano, el entrenamiento o las capacidades del modelo.
 
 Las busquedas web relacionadas con el autor revelan que mantiene un perfil de GitHub con dos repositorios, entre ellos un kit de preparacion de entrevistas basado en IA, pero no se ha encontrado ninguna vinculacion directa entre esos proyectos y este modelo. Tampoco existe documentacion externa, papers o publicaciones que describan este artefacto. En consecuencia, esta ficha refleja la ausencia total de datos verificables y advierte de que el modelo no es utilizable en su estado actual para fines de evaluacion o produccion.
 
@@ -25,7 +25,7 @@ No se ha publicado ninguna informacion sobre la arquitectura del modelo. La mode
 
 ## Capacidades
 
-No se dispone de informacion verificable sobre las capacidades del modelo. La model card no documenta funciones de generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, soporte de agentes, capacidades multilingues ni modos especiales de pensamiento. El pipeline de HuggingFace tampoco esta especificado.
+No se dispone de informacion verificable sobre las capacidades del modelo. La model card no documenta funciones de generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, soporte de agentes, capacidades multilingues ni modos especiales de pensamiento. El pipeline de Hugging Face tampoco esta especificado.
 
 ## Casos de uso
 
@@ -54,6 +54,6 @@ No disponible. Sin datos sobre parametros, contexto, rendimiento o arquitectura,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SubiSamayasundaram/Hybrid_Model
+- Repositorio en Hugging Face: https://huggingface.co/SubiSamayasundaram/Hybrid_Model
 - Perfil de GitHub del autor: https://github.com/SubiSamayasundaram/
 - Repositorios de GitHub del autor: https://github.com/SubiSamayasundaram?tab=repositories

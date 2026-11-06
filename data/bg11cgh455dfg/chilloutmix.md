@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ChilloutMix es un checkpoint de Stable Diffusion 1.5 especializado en la generación de retratos de alta calidad, con un enfoque particular en rasgos faciales asiáticos y estilos que combinan fotorrealismo con estética de anime. Desarrollado por el usuario bg11cgh455dfg, el modelo se distribuye a través de HuggingFace con un tamaño de repositorio de 554,3 GB, aunque no se especifica el número exacto de parámetros ni la licencia. Su relevancia radica en que se ha convertido en una opción popular dentro de la comunidad de generación de imágenes por IA para crear ilustraciones de personajes anime, retratos surrealistas y arte digital de alta fidelidad, tal como reflejan su presencia en plataformas como Sogni, PixAI y APIs de Stable Diffusion.
+ChilloutMix es un checkpoint de Stable Diffusion 1.5 especializado en la generación de retratos de alta calidad, con un enfoque particular en rasgos faciales asiáticos y estilos que combinan fotorrealismo con estética de anime. Desarrollado por el usuario bg11cgh455dfg, el modelo se distribuye a través de Hugging Face con un tamaño de repositorio de 554,3 GB, aunque no se especifica el número exacto de parámetros ni la licencia. Su relevancia radica en que se ha convertido en una opción popular dentro de la comunidad de generación de imágenes por IA para crear ilustraciones de personajes anime, retratos surrealistas y arte digital de alta fidelidad, tal como reflejan su presencia en plataformas como Sogni, PixAI y APIs de Stable Diffusion.
 
 El modelo se basa en la arquitectura de Stable Diffusion 1.5, lo que implica un pipeline de difusión latente con un U-Net, un VAE y un codificador de texto CLIP. Aunque la model card original no ofrece detalles adicionales, las fuentes externas confirman que está optimizado para la generación de rostros con rasgos asiáticos y estilos artísticos variados, desde anime hasta fotorrealismo. La ausencia de información oficial sobre entrenamiento, licencia y parámetros limita una evaluación técnica completa, pero su uso extendido en plataformas comerciales indica una adopción práctica considerable.
 
@@ -43,7 +43,7 @@ ChilloutMix es un checkpoint de Stable Diffusion 1.5, una arquitectura de difusi
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de evaluacion cuantitativa (como FID, IS o comparativas con otros modelos) en la model card de HuggingFace ni en las fuentes web encontradas. Se recomienda realizar pruebas propias para evaluar la calidad de generacion en funcion de las necesidades especificas.
+No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de evaluacion cuantitativa (como FID, IS o comparativas con otros modelos) en la model card de Hugging Face ni en las fuentes web encontradas. Se recomienda realizar pruebas propias para evaluar la calidad de generacion en funcion de las necesidades especificas.
 
 ## Requisitos de hardware
 
@@ -59,10 +59,10 @@ ChilloutMix se enmarca dentro de los checkpoints de Stable Diffusion 1.5, una ca
 
 | Modelo | Arquitectura | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ChilloutMix | SD 1.5 | Retratos asiaticos, anime y fotorrealismo | unknown | HuggingFace, APIs |
-| Anything V3 | SD 1.5 | Arte anime y manga | CreativeML OpenRAIL | HuggingFace |
-| DreamShaper | SD 1.5 | Estilo versatil, fantasía y realismo | CreativeML OpenRAIL | HuggingFace |
-| Realistic Vision | SD 1.5 | Fotorrealismo | CreativeML OpenRAIL | HuggingFace |
+| ChilloutMix | SD 1.5 | Retratos asiaticos, anime y fotorrealismo | unknown | Hugging Face, APIs |
+| Anything V3 | SD 1.5 | Arte anime y manga | CreativeML OpenRAIL | Hugging Face |
+| DreamShaper | SD 1.5 | Estilo versatil, fantasía y realismo | CreativeML OpenRAIL | Hugging Face |
+| Realistic Vision | SD 1.5 | Fotorrealismo | CreativeML OpenRAIL | Hugging Face |
 
 ChilloutMix se diferencia por su especializacion en rasgos faciales asiaticos, mientras que otros checkpoints ofrecen estilos mas generales. No hay datos de rendimiento comparativo disponibles.
 
@@ -78,7 +78,7 @@ ChilloutMix se diferencia por su especializacion en rasgos faciales asiaticos, m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bg11cgh455dfg/chilloutmix
+- Repositorio en Hugging Face: https://huggingface.co/bg11cgh455dfg/chilloutmix
 - Ficha en Sogni Supernet: https://www.sogni.ai/models/chilloutmix
 - Pagina en PixAI (modelo 1): https://pixai.art/model/1627214198281349603-ChilloutMix
 - Pagina en PixAI (modelo 2): https://pixai.art/model/1850612522226666832

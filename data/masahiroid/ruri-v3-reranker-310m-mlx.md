@@ -89,7 +89,7 @@ La diferencia principal frente al modelo base `cl-nagoya/ruri-v3-reranker-310m` 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masahiroid/ruri-v3-reranker-310m-mlx
+- Modelo en Hugging Face: https://huggingface.co/masahiroid/ruri-v3-reranker-310m-mlx
 - Modelo base (original): https://huggingface.co/cl-nagoya/ruri-v3-reranker-310m
 - Repositorio MLX: https://github.com/ml-explore/mlx
 - Paquete mlx-embeddings: https://github.com/Blaizzy/mlx-embeddings

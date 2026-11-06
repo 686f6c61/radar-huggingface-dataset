@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/profullstack/not-a-lawyer-agent-GGUF
+- Modelo en Hugging Face: https://huggingface.co/profullstack/not-a-lawyer-agent-GGUF
 - Modelo base del ajuste: https://huggingface.co/profullstack/not-a-lawyer-agent
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Ejemplo de construcción en c0mpute: https://github.com/profullstack/c0mpute/tree/master/examples/business-strategist-agent

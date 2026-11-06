@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Deviant65/my_smolvla_32batch | 450 M | VLA (fine-tune) | apache-2.0 | HuggingFace | Especializado en una tarea; sin evaluacion publicada |
-| lerobot/smolvla_base | Aproximadamente 450 M (misma familia) | VLA (base) | apache-2.0 | HuggingFace | Modelo base generalista del que deriva este checkpoint |
-| OpenVLA | Aproximadamente 7 B | VLA | BSD/uso abierto (segun su publicacion) | HuggingFace | Orden de magnitud mayor en parametros; datos no verificados en esta ficha |
+| Deviant65/my_smolvla_32batch | 450 M | VLA (fine-tune) | apache-2.0 | Hugging Face | Especializado en una tarea; sin evaluacion publicada |
+| lerobot/smolvla_base | Aproximadamente 450 M (misma familia) | VLA (base) | apache-2.0 | Hugging Face | Modelo base generalista del que deriva este checkpoint |
+| OpenVLA | Aproximadamente 7 B | VLA | BSD/uso abierto (segun su publicacion) | Hugging Face | Orden de magnitud mayor en parametros; datos no verificados en esta ficha |
 | pi0 (Physical Intelligence) | Aproximadamente 3 B | VLA con flow matching | No comercial / restringida (segun su publicacion) | Acceso limitado | Datos no verificados en esta ficha |
 
 Las cifras de OpenVLA y pi0 provienen de conocimiento general y no estan confirmadas por la informacion proporcionada; deben verificarse en sus fuentes originales antes de citarlas.
@@ -87,7 +87,7 @@ Las cifras de OpenVLA y pi0 provienen de conocimiento general y no estan confirm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Deviant65/my_smolvla_32batch
+- Modelo en Hugging Face: https://huggingface.co/Deviant65/my_smolvla_32batch
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Deviant65/so101_redcube_3cam
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Deviant65/so101_redcube_3cam

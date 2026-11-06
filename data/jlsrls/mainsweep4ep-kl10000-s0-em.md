@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jlsrls/mainsweep4ep-kl10000-s0-em` es un ajuste fino (fine-tuning) supervisado del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario jlsrls en HuggingFace. Se trata por tanto de un modelo denso, decoder-only, de aproximadamente 1.240 millones de parametros, entrenado con SFT mediante la libreria TRL (version 0.24.0) y la infraestructura de Unsloth. El repositorio ocupa 2,3 GB en formato safetensors, coherente con pesos en precision de 16 bits.
+`jlsrls/mainsweep4ep-kl10000-s0-em` es un ajuste fino (fine-tuning) supervisado del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario jlsrls en Hugging Face. Se trata por tanto de un modelo denso, decoder-only, de aproximadamente 1.240 millones de parametros, entrenado con SFT mediante la libreria TRL (version 0.24.0) y la infraestructura de Unsloth. El repositorio ocupa 2,3 GB en formato safetensors, coherente con pesos en precision de 16 bits.
 
 El modelo no aporta una model card descriptiva: el README se limita a la plantilla autogenerada por TRL para modelos entrenados con SFT, sin detallar el dataset, el numero de tokens de entrenamiento, la composicion de los datos ni los objetivos del ajuste. Tampoco se declara licencia, idiomas soportados ni pipeline de inferencia. El nombre del repositorio (`mainsweep4ep-kl10000-s0-em`) y el enlace a un run de Weights & Biases del proyecto `clarifying-em` de Portland State University apuntan a un barrido de hiperparametros, presumiblemente en el contexto de investigacion sobre clarificacion de instrucciones, aunque esto no se documenta de forma explicita.
 
@@ -70,11 +70,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| jlsrls/mainsweep4ep-kl10000-s0-em | ~1.240 M (denso) | no disponible (base: 128.000 tokens) | no disponible | HuggingFace, 0 descargas, 0 likes | Ajuste SFT experimental sin dataset documentado |
-| unsloth/Llama-3.2-1B-Instruct | ~1.240 M (denso) | 128.000 tokens | Llama 3.2 Community License | HuggingFace, muy descargado | Modelo base del anterior; cuantizaciones publicadas |
-| meta-llama/Llama-3.2-1B-Instruct | ~1.240 M (denso) | 128.000 tokens | Llama 3.2 Community License | HuggingFace | Version oficial del modelo base |
-| Qwen/Qwen2.5-1.5B-Instruct | ~1.500 M (denso) | 32.768 tokens | Apache 2.0 | HuggingFace | Alternativa de tamano similar con licencia permisiva |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | ~1.700 M (denso) | 8.192 tokens | Apache 2.0 | HuggingFace | Alternativa centrada en modelos pequenos con licencia abierta |
+| jlsrls/mainsweep4ep-kl10000-s0-em | ~1.240 M (denso) | no disponible (base: 128.000 tokens) | no disponible | Hugging Face, 0 descargas, 0 likes | Ajuste SFT experimental sin dataset documentado |
+| unsloth/Llama-3.2-1B-Instruct | ~1.240 M (denso) | 128.000 tokens | Llama 3.2 Community License | Hugging Face, muy descargado | Modelo base del anterior; cuantizaciones publicadas |
+| meta-llama/Llama-3.2-1B-Instruct | ~1.240 M (denso) | 128.000 tokens | Llama 3.2 Community License | Hugging Face | Version oficial del modelo base |
+| Qwen/Qwen2.5-1.5B-Instruct | ~1.500 M (denso) | 32.768 tokens | Apache 2.0 | Hugging Face | Alternativa de tamano similar con licencia permisiva |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | ~1.700 M (denso) | 8.192 tokens | Apache 2.0 | Hugging Face | Alternativa centrada en modelos pequenos con licencia abierta |
 
 No hay datos de rendimiento comparativos para el modelo objeto de la ficha, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -93,7 +93,7 @@ No hay datos de rendimiento comparativos para el modelo objeto de la ficha, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/mainsweep4ep-kl10000-s0-em
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/mainsweep4ep-kl10000-s0-em
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Modelo base original: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Repositorio TRL: https://github.com/huggingface/trl

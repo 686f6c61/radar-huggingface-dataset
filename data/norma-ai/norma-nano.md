@@ -17,7 +17,7 @@ Es relevante ahora porque cubre una capa infravalorada de los pipelines de agent
 | Parametros activos | no aplica (modelo denso, no es MoE) |
 | Longitud de contexto | hasta 2.048 tokens |
 | Tipos de cuantizacion | no disponible (los pesos se publican y ejecutan en FP16/BF16; no se listan variantes GGUF/AWQ/GPTQ) |
-| Idiomas soportados | la model card declara soporte zero-shot robusto en ingles, lenguas europeas y asiaticas; el campo de idiomas de HuggingFace figura como no disponible |
+| Idiomas soportados | la model card declara soporte zero-shot robusto en ingles, lenguas europeas y asiaticas; el campo de idiomas de Hugging Face figura como no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (libreria transformers) |
 | Pipeline | text-classification |
@@ -35,7 +35,7 @@ La arquitectura es un transformer causal decoder-only heredado directamente de Q
 
 El modelo soporta tres primitivas de decision: choice, para enrutado categorico entre opciones definidas; noul, para validaciones binarias calibradas (permisos, deteccion de prompt injection, phishing, entradas malformadas); y score, para valoracion ordinal de severidad, riesgo o probabilidad de churn. Se distribuye con un cliente propio (norma.py) que solo requiere torch y transformers, y tambien se puede usar con AutoModelForCausalLM estandar.
 
-No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, la composicion de los datos, ni sobre si se aplico RLHF, DPO u otra tecnica de alineamiento. Tampoco se detallan innovaciones adicionales como decodificacion especulativa o atencion lineal. Toda esa informacion figura como no disponible en la model card y en los metadatos de HuggingFace.
+No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, la composicion de los datos, ni sobre si se aplico RLHF, DPO u otra tecnica de alineamiento. Tampoco se detallan innovaciones adicionales como decodificacion especulativa o atencion lineal. Toda esa informacion figura como no disponible en la model card y en los metadatos de Hugging Face.
 
 ## Capacidades
 
@@ -89,9 +89,9 @@ No se dispone de datos de rendimiento (benchmarks) del modelo, por lo que la com
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| norma-ai/norma-nano | ~494 M (511 M declarados) | 2.048 tokens | Decision tipada / clasificacion (System 1) | Apache 2.0 | HuggingFace, transformers |
-| Qwen/Qwen2.5-0.5B-Instruct | ~494 M | no disponible en esta ficha | Generacion de texto / instrucciones | Apache 2.0 (Qwen) | HuggingFace, transformers |
-| Modelos de clasificacion tipo encoder (por ejemplo, familias BERT pequenas) | rango tipico 100-400 M | no disponible | Clasificacion de texto | variable | HuggingFace |
+| norma-ai/norma-nano | ~494 M (511 M declarados) | 2.048 tokens | Decision tipada / clasificacion (System 1) | Apache 2.0 | Hugging Face, transformers |
+| Qwen/Qwen2.5-0.5B-Instruct | ~494 M | no disponible en esta ficha | Generacion de texto / instrucciones | Apache 2.0 (Qwen) | Hugging Face, transformers |
+| Modelos de clasificacion tipo encoder (por ejemplo, familias BERT pequenas) | rango tipico 100-400 M | no disponible | Clasificacion de texto | variable | Hugging Face |
 
 La comparacion con otras alternativas de la misma categoria (modelos de decision o clasificadores pequenos) no esta disponible en la informacion proporcionada, ya que no se aportan resultados de benchmarks que permitan contrastar calidad.
 
@@ -110,10 +110,10 @@ La comparacion con otras alternativas de la misma categoria (modelos de decision
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/norma-ai/norma-nano
+- Modelo en Hugging Face: https://huggingface.co/norma-ai/norma-nano
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0
-- Scripts de evaluacion citados en la model card: `benchmarks/run_full_validation.py` y `benchmarks/test_ood_generalization.py` (dentro del propio repositorio de HuggingFace)
+- Scripts de evaluacion citados en la model card: `benchmarks/run_full_validation.py` y `benchmarks/test_ood_generalization.py` (dentro del propio repositorio de Hugging Face)
 - Cliente de inferencia citado: `norma.py`, incluido en el repositorio del modelo
 
 Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo. Los unicos resultados obtenidos corresponden a la cadena de supermercados francesa NORMA (norma.fr, icatalogue.fr, norma-asso.fr, es.wikipedia.org/wiki/Norma) y no guardan relacion con norma-ai/norma-nano, por lo que no se enlazan como fuentes del modelo.

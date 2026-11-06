@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `aghasalim/siba-meristem-1.0` es un modelo subido a HuggingFace por el usuario `aghasalim` el 6 de septiembre de 2026. La única información disponible en su ficha es la licencia `llama4`, lo que indica que se distribuye bajo la licencia Llama 4. No se ha publicado ninguna descripción técnica, documentación ni instrucciones de uso, y el modelo registra cero descargas y cero «me gusta». En la información disponible no se menciona la arquitectura, el tamaño, la longitud de contexto ni ningún otro parámetro relevante. Por tanto, no es posible determinar qué problema resuelve ni por qué sería relevante.
+El modelo `aghasalim/siba-meristem-1.0` es un modelo subido a Hugging Face por el usuario `aghasalim` el 6 de septiembre de 2026. La única información disponible en su ficha es la licencia `llama4`, lo que indica que se distribuye bajo la licencia Llama 4. No se ha publicado ninguna descripción técnica, documentación ni instrucciones de uso, y el modelo registra cero descargas y cero «me gusta». En la información disponible no se menciona la arquitectura, el tamaño, la longitud de contexto ni ningún otro parámetro relevante. Por tanto, no es posible determinar qué problema resuelve ni por qué sería relevante.
 
 ## Especificaciones técnicas
 
@@ -51,5 +51,5 @@ No disponible. Al no conocer la arquitectura, el tamaño ni las capacidades del 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/aghasalim/siba-meristem-1.0
+- Página del modelo en Hugging Face: https://huggingface.co/aghasalim/siba-meristem-1.0
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios o demos) en la búsqueda web realizada.

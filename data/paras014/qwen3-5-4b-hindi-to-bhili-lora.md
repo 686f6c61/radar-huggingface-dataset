@@ -55,6 +55,6 @@ No disponible. El único modelo relacionado es el modelo base unsloth/Qwen3.5-4B
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Paras014/qwen3.5-4b-hindi-to-bhili-lora
+- Hugging Face: https://huggingface.co/Paras014/qwen3.5-4b-hindi-to-bhili-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Unsloth: https://github.com/unslothai/unsloth

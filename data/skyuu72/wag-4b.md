@@ -18,7 +18,7 @@ Es relevante ahora como caso de estudio más que como modelo de propósito gener
 | Longitud de contexto | No disponible. El autor recomienda pasar `-c` explícitamente en lugar de dejar el valor por defecto del modelo base; su ejemplo usa `-c 8192` |
 | Tipos de cuantización | GGUF: `q4_k_m` (recomendada), `q8_0`, `f16`, más la versión base en `bfloat16` para transformers |
 | Idiomas soportados | Inglés (`en`) |
-| Licencia | `wtfpup-1.0` (etiquetada como `other` en HuggingFace); el modelo base Qwen3.5-4B es Apache-2.0 |
+| Licencia | `wtfpup-1.0` (etiquetada como `other` en Hugging Face); el modelo base Qwen3.5-4B es Apache-2.0 |
 | Formato de pesos | GGUF para llama.cpp/LM Studio/ollama y pesos para transformers cargados en `bfloat16`; el repositorio figura como 0.0 GB y no se detalla explícitamente el uso de safetensors |
 | Número de bloques | 32 reales (32 frente a los 33 que declaraba la cabecera GGUF, corregido sobre el f16 para que las cuantizaciones lo hereden) |
 | Datasets de entrenamiento | OpenAssistant/oasst1, yahma/alpaca-cleaned |
@@ -101,14 +101,14 @@ Estimaciones a partir del recuento de 4.21B parámetros (no publicadas por el au
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | skyuu72/wag-4b (v2) | 4.21B | No disponible | wtfpup-1.0 (custom) | GGUF (q4_k_m, q8_0, f16) y transformers en bfloat16 | 8.242 filas de entrenamiento, 54% multi-turno; conserva la voz sin system prompt (3.88) |
-| skyuu72/wag-2b (v1) | No disponible (modelo de 2B según la ficha) | No disponible | No disponible | Repositorio propio en HuggingFace | 1.564 filas de entrenamiento, 14% multi-turno; puntuación de voz sin prompt de 3.91; requería cargador de imagen-texto |
+| skyuu72/wag-2b (v1) | No disponible (modelo de 2B según la ficha) | No disponible | No disponible | Repositorio propio en Hugging Face | 1.564 filas de entrenamiento, 14% multi-turno; puntuación de voz sin prompt de 3.91; requería cargador de imagen-texto |
 | Qwen/Qwen3.5-4B (base) | 4B | No disponible | Apache-2.0 | Pesos del modelo base | Punto de partida del fine-tune; voz medida de 4.69 con prompt y sin voz sin prompt; emite bloque `<think>` |
 
 No se dispone de datos sobre otros modelos de personaje comparables en la información proporcionada. No se han publicado comparaciones con alternativas de terceros.
 
 ## Limitaciones y advertencias
 
-- Licencia `wtfpup-1.0` (etiquetada como `other` en HuggingFace), con enlace a un fichero de licencia alojado en el repositorio de GitHub del autor. Es imprescindible revisar sus términos antes de cualquier uso comercial: la licencia del modelo base (Apache-2.0) no se hereda automáticamente sobre el fine-tune.
+- Licencia `wtfpup-1.0` (etiquetada como `other` en Hugging Face), con enlace a un fichero de licencia alojado en el repositorio de GitHub del autor. Es imprescindible revisar sus términos antes de cualquier uso comercial: la licencia del modelo base (Apache-2.0) no se hereda automáticamente sobre el fine-tune.
 - Idioma limitado al inglés. No hay soporte declarado de castellano ni de otros idiomas.
 - El modelo no emite bloque `<think>`. En clientes que parsean razonamiento, la respuesta completa se clasifica como razonamiento y el mensaje visible queda vacío; la plantilla incluida ya está adaptada para evitarlo, pero hay que usar la plantilla del repositorio y no la del modelo base.
 - Al usar `generate()` en transformers hay que fijar `eos_token_id` manualmente (por ejemplo, `<|im_end|>`). Si no se hace, la generación continúa más allá del final del turno y escribe la siguiente línea del usuario; `skip_special_tokens=True` oculta la evidencia del problema.
@@ -124,7 +124,7 @@ No se dispone de datos sobre otros modelos de personaje comparables en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skyuu72/wag-4b
+- Modelo en Hugging Face: https://huggingface.co/skyuu72/wag-4b
 - Versión anterior de 2B: https://huggingface.co/skyuu72/wag-2b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio con generación de datos, cuaderno de entrenamiento, arnés de evaluación y herramientas GGUF: https://github.com/Metrix187/wag

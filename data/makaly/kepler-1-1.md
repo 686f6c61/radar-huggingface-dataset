@@ -3,7 +3,7 @@
 # Kepler 1.1 (MAKALY/kepler-1.1)
 
 ## Resumen
-Kepler 1.1 es un modelo publicado en HuggingFace por el usuario MAKALY, con un total de 421.293.830 parámetros (aproximadamente 0,42 B) según los pesos en safetensors del repositorio, que ocupa 0,8 GB. Se distribuye con la etiqueta de pipeline `text-classification` y está declarado como ajuste fino del modelo base `convaiinnovations/laya`, del que no se detallan características en la información disponible.
+Kepler 1.1 es un modelo publicado en Hugging Face por el usuario MAKALY, con un total de 421.293.830 parámetros (aproximadamente 0,42 B) según los pesos en safetensors del repositorio, que ocupa 0,8 GB. Se distribuye con la etiqueta de pipeline `text-classification` y está declarado como ajuste fino del modelo base `convaiinnovations/laya`, del que no se detallan características en la información disponible.
 
 El repositorio carece prácticamente de model card: el README solo contiene metadatos YAML (tags como "Kepler", "Kyros", "Laya" o "LLM") y no documenta arquitectura, contexto, idiomas, licencia, conjunto de etiquetas ni datos de entrenamiento. La única especificación objetiva es el recuento de parámetros y el formato de pesos, por lo que cualquier evaluación funcional exige inspeccionar el `config.json` y probar el modelo directamente.
 
@@ -92,7 +92,7 @@ Conclusión de la comparativa: Kepler 1.1 se sitúa en la misma clase de tamaño
 - La búsqueda web realizada no aportó ningún dato sobre el modelo, su autor o su uso previsto.
 
 ## Enlaces
-- Página del modelo en HuggingFace: https://huggingface.co/MAKALY/kepler-1.1
+- Página del modelo en Hugging Face: https://huggingface.co/MAKALY/kepler-1.1
 - Modelo base declarado: https://huggingface.co/convaiinnovations/laya
 - Papel, blog o repositorio asociados: no disponible (no se han encontrado referencias en la búsqueda web)
 - Demos o espacios asociados: no disponible

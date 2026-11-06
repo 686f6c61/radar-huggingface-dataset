@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Syff4/sawyer-llama-reward es un modelo de clasificación de texto publicado en HuggingFace por el usuario Syff4, cuyo nombre sugiere que se trata de un modelo de recompensa (reward model) asociado a un pipeline de tipo LLaMA. A pesar del nombre, las etiquetas del repositorio indican que la arquitectura subyacente es RoBERTa y que la tarea declarada es `text-classification`, lo que apunta a un modelo encoder que produce una puntuación escalar sobre un texto de entrada, un componente habitual en pipelines de RLHF o de reranking.
+Syff4/sawyer-llama-reward es un modelo de clasificación de texto publicado en Hugging Face por el usuario Syff4, cuyo nombre sugiere que se trata de un modelo de recompensa (reward model) asociado a un pipeline de tipo LLaMA. A pesar del nombre, las etiquetas del repositorio indican que la arquitectura subyacente es RoBERTa y que la tarea declarada es `text-classification`, lo que apunta a un modelo encoder que produce una puntuación escalar sobre un texto de entrada, un componente habitual en pipelines de RLHF o de reranking.
 
 El recuento real de parámetros extraído de los ficheros safetensors es de 124.646.401 (aproximadamente 125 millones), un tamaño coherente con la familia RoBERTa-base. El repositorio ocupa 3,0 GB, un tamaño elevado para esa cantidad de parámetros, lo que sugiere la presencia de múltiples copias de pesos o ficheros adicionales no descritos. El modelo no acumula descargas ni likes en el momento de la consulta.
 
@@ -24,7 +24,7 @@ La relevancia de este tipo de modelo radica en su uso como componente auxiliar: 
 
 La única información sobre la arquitectura procede de las etiquetas del repositorio, que incluyen `roberta` y `text-classification`. Esto indica un transformer de tipo encoder con una cabeza de clasificación, y el recuento de parámetros (124,6 millones) es consistente con una configuración del orden de RoBERTa-base (12 capas, 768 de dimensión oculta, 12 cabezas de atención), aunque esta correspondencia no está confirmada explícitamente por el autor.
 
-No se dispone de datos sobre el corpus de entrenamiento, el número de tokens, la composición del dataset, ni sobre si se aplicaron técnicas de alineación como RLHF, DPO o fine-tuning supervisado. La model card del autor es la plantilla genérica autogenerada de HuggingFace, con todos los apartados marcados como «More Information Needed», por lo que no hay descripción del procedimiento de entrenamiento, hiperparámetros ni infraestructura utilizada.
+No se dispone de datos sobre el corpus de entrenamiento, el número de tokens, la composición del dataset, ni sobre si se aplicaron técnicas de alineación como RLHF, DPO o fine-tuning supervisado. La model card del autor es la plantilla genérica autogenerada de Hugging Face, con todos los apartados marcados como «More Information Needed», por lo que no hay descripción del procedimiento de entrenamiento, hiperparámetros ni infraestructura utilizada.
 
 ## Capacidades
 
@@ -68,10 +68,10 @@ No hay datos de benchmarks públicos para este modelo, por lo que la comparació
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Syff4/sawyer-llama-reward | 124,6 M | RoBERTa (según tags) | no disponible | no disponible | HuggingFace, 0 descargas |
+| Syff4/sawyer-llama-reward | 124,6 M | RoBERTa (según tags) | no disponible | no disponible | Hugging Face, 0 descargas |
 | RoBERTa-base (referencia de arquitectura) | ~125 M | Encoder transformer | 512 tokens | MIT | Ampliamente disponible |
-| Reward models basados en DeBERTa-v3 | ~435 M (large) | Encoder transformer | 512 tokens | variable según autor | HuggingFace |
-| Reward models basados en LLM de 7-8 B | ~7-8 B | Decoder transformer | variable | variable según autor | HuggingFace |
+| Reward models basados en DeBERTa-v3 | ~435 M (large) | Encoder transformer | 512 tokens | variable según autor | Hugging Face |
+| Reward models basados en LLM de 7-8 B | ~7-8 B | Decoder transformer | variable | variable según autor | Hugging Face |
 
 Esta tabla es orientativa y se basa en las características conocidas de cada familia; no implica una comparación de rendimiento, ya que no existen métricas publicadas para el modelo analizado.
 
@@ -89,7 +89,7 @@ Esta tabla es orientativa y se basa en las características conocidas de cada fa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Syff4/sawyer-llama-reward
+- Repositorio en Hugging Face: https://huggingface.co/Syff4/sawyer-llama-reward
 - Paper referenciado en las etiquetas (Lacoste et al., 2019, sobre impacto ambiental del ML): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental del ML: https://mlco2.github.io/impact
 - No se dispone de paper, blog, repositorio de código ni demo específicos del modelo.

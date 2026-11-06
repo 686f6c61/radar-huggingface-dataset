@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-27B-FP8 (FuriosaAI) | 27,78 B denso | no disponible | imagen + texto → texto | Apache 2.0 | HuggingFace, bundle FXB para RNGD |
-| Qwen/Qwen3.6-27B-FP8 (upstream) | 27,78 B denso | no disponible | imagen + texto → texto | Apache 2.0 | HuggingFace, vLLM/SGLang/Transformers |
+| Qwen3.6-27B-FP8 (FuriosaAI) | 27,78 B denso | no disponible | imagen + texto → texto | Apache 2.0 | Hugging Face, bundle FXB para RNGD |
+| Qwen/Qwen3.6-27B-FP8 (upstream) | 27,78 B denso | no disponible | imagen + texto → texto | Apache 2.0 | Hugging Face, vLLM/SGLang/Transformers |
 | Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada solo permite comparar el empaquetado de FuriosaAI con el modelo upstream de Qwen, que es idéntico en pesos y arquitectura pero no incluye el FXB ni la integración con `furiosa-llm`. No se dispone de datos de benchmarks ni de otros modelos comparables en la información disponible.
@@ -88,7 +88,7 @@ La información proporcionada solo permite comparar el empaquetado de FuriosaAI 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furiosa-ai/Qwen3.6-27B-FP8
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/Qwen3.6-27B-FP8
 - Modelo upstream Qwen: https://huggingface.co/Qwen/Qwen3.6-27B-FP8
 - Licencia upstream: https://huggingface.co/Qwen/Qwen3.6-27B-FP8/blob/main/LICENSE
 - Documentación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html

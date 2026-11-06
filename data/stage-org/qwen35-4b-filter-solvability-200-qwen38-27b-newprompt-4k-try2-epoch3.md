@@ -48,7 +48,7 @@ El entrenamiento es un ciclo de aprendizaje por refuerzo con `learner_steps = 10
 - Experimentación académica con modelos de ~4B: su tamaño permite ejecutarlo en una única GPU de gama alta para estudiar el efecto del RL sobre el modelo base.
 - Generación de datos sintéticos de razonamiento: dado que el pipeline original usó un modelo mayor como generador y un juez externo, este checkpoint puede emplearse como generador de candidatos en un bucle de destilación.
 - Comparación baseline en estudios de RL: al ser un checkpoint intermedio (época 3, intento 2), resulta útil como punto de comparación frente al modelo base sin ajustar.
-- Docencia y formación: permite ilustrar de forma práctica cómo se documenta y estructura un experimento de RL en HuggingFace con un archivo de configuración reproducible.
+- Docencia y formación: permite ilustrar de forma práctica cómo se documenta y estructura un experimento de RL en Hugging Face con un archivo de configuración reproducible.
 
 ## Benchmarks y rendimiento
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
 | Stage-org/qwen35-4b-filter-solvability-200-...-epoch3 | ~4,54 B | 65.536 tokens (según configuración del autor) | No disponible | No disponible | safetensors, 0 descargas |
-| Qwen/Qwen3.5-4B (modelo base) | ~4 B (escala) | No disponible | No disponible | No disponible | Disponible en HuggingFace |
+| Qwen/Qwen3.5-4B (modelo base) | ~4 B (escala) | No disponible | No disponible | No disponible | Disponible en Hugging Face |
 | Otros modelos instruct de escala 3-8 B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de alternativas directas en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k-try2-epoch3
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k-try2-epoch3
 - Dataset asociado (referenciado en la model card): `Stage-org/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k-try2`
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de prime_rl (framework de entrenamiento mencionado): no disponible en la información proporcionada

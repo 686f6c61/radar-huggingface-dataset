@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolVLA pick-and-place blue krill demo es un checkpoint de robótica publicado por PruhaNLP en HuggingFace bajo el identificador `PruhaNLP/SmolVLA-pickplace-blue-krill-demo`. Se trata de un ajuste fino (SFT) del modelo base `lerobot/smolvla_base`, un modelo de visión-lenguaje-acción (VLA) compacto de 450.046.176 parámetros (~450 M) que convierte observaciones visuales e instrucciones en lenguaje natural en acciones de control para un brazo robótico.
+SmolVLA pick-and-place blue krill demo es un checkpoint de robótica publicado por PruhaNLP en Hugging Face bajo el identificador `PruhaNLP/SmolVLA-pickplace-blue-krill-demo`. Se trata de un ajuste fino (SFT) del modelo base `lerobot/smolvla_base`, un modelo de visión-lenguaje-acción (VLA) compacto de 450.046.176 parámetros (~450 M) que convierte observaciones visuales e instrucciones en lenguaje natural en acciones de control para un brazo robótico.
 
 El checkpoint resuelve una única tarea concreta: coger una botella de aceite de krill azul y depositarla dentro de una bandeja azul. Está entrenado sobre el conjunto de datos `PruhaNLP/pickplace-blue-krill-demo` y pensado como referencia base del proyecto RoboSim at Home, con el brazo SO-ARM100 simulado en MuJoCo. El ajuste fino se realizó en modo "expert-only", con el codificador visual congelado y 19160 pasos de entrenamiento, partiendo del checkpoint número 20 del run.
 
@@ -24,7 +24,7 @@ Su relevancia es acotada pero clara: sirve como ejemplo reproducible de entrenam
 | Tarea | Pick-and-place: coger la botella de aceite de krill azul y colocarla en la bandeja azul |
 | Plataforma objetivo | SO-ARM100 simulado en MuJoCo |
 | Tamano del repositorio | 1,8 GB |
-| Fecha de publicacion en HuggingFace | 2026-09-13 (creacion), 2026-09-13 (ultima actualizacion) |
+| Fecha de publicacion en Hugging Face | 2026-09-13 (creacion), 2026-09-13 (ultima actualizacion) |
 
 ## Arquitectura y entrenamiento
 
@@ -76,9 +76,9 @@ Los valores de otros modelos proceden de documentacion publica de sus respectivo
 
 | Modelo | Parametros | Entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SmolVLA pick-and-place blue krill demo | ~450 M | Imagenes + instruccion en lenguaje natural | apache-2.0 | HuggingFace (`PruhaNLP/SmolVLA-pickplace-blue-krill-demo`) |
-| SmolVLA base (`lerobot/smolvla_base`) | ~450 M | Imagenes + instruccion en lenguaje natural | no disponible en la informacion proporcionada | HuggingFace (`lerobot/smolvla_base`) |
-| OpenVLA | ~7 B | Imagen unica + instruccion en lenguaje natural | no disponible en la informacion proporcionada | Pesos abiertos en HuggingFace |
+| SmolVLA pick-and-place blue krill demo | ~450 M | Imagenes + instruccion en lenguaje natural | apache-2.0 | Hugging Face (`PruhaNLP/SmolVLA-pickplace-blue-krill-demo`) |
+| SmolVLA base (`lerobot/smolvla_base`) | ~450 M | Imagenes + instruccion en lenguaje natural | no disponible en la informacion proporcionada | Hugging Face (`lerobot/smolvla_base`) |
+| OpenVLA | ~7 B | Imagen unica + instruccion en lenguaje natural | no disponible en la informacion proporcionada | Pesos abiertos en Hugging Face |
 | pi0 | ~3,3 B | Multiples vistas + instruccion en lenguaje natural | no disponible en la informacion proporcionada | Pesos abiertos publicados por sus autores |
 | GR00T N1 | ~2,2 B | Multiples vistas + instruccion en lenguaje natural | no disponible en la informacion proporcionada | Pesos abiertos publicados por NVIDIA |
 
@@ -93,12 +93,12 @@ Los valores de otros modelos proceden de documentacion publica de sus respectivo
 - Riesgo de fallo silencioso: como politica de robotica, puede producir acciones plausibles pero incorrectas sin ninguna senal de incertidumbre ni capacidad de explicar el fallo.
 - Ausencia de capacidades generativas de texto: no sirve para chat, razonamiento, codigo, tool calling ni tareas de agentes, pese a compartir familia con modelos de visión-lenguaje.
 - Licencia: el repositorio declara apache-2.0, lo que en principio permite uso comercial, pero conviene verificar la licencia del modelo base `lerobot/smolvla_base` y las condiciones del dataset `PruhaNLP/pickplace-blue-krill-demo` antes de un uso comercial.
-- La fecha indicada por HuggingFace para la creacion y ultima actualizacion (2026-09-13) es posterior a la fecha de publicacion de muchos modelos de referencia; conviene verificar la procedencia y el estado real del repositorio.
+- La fecha indicada por Hugging Face para la creacion y ultima actualizacion (2026-09-13) es posterior a la fecha de publicacion de muchos modelos de referencia; conviene verificar la procedencia y el estado real del repositorio.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: solo paginas de inicio de sesion ajenas al proyecto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PruhaNLP/SmolVLA-pickplace-blue-krill-demo
+- Modelo en Hugging Face: https://huggingface.co/PruhaNLP/SmolVLA-pickplace-blue-krill-demo
 - Dataset de entrenamiento: https://huggingface.co/datasets/PruhaNLP/pickplace-blue-krill-demo
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Repositorio del proyecto RoboSim at Home: https://github.com/PruhaNLP/robosim-at-home

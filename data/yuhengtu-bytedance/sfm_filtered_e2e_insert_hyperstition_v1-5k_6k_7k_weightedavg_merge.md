@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un merge de pesos publicado por el usuario yuhengtu-bytedance en HuggingFace bajo el identificador `sfm_filtered_e2e_insert_hyperstition_v1-5k_6k_7k_weightedavg_merge`. No se trata de un entrenamiento desde cero ni de un fine-tuning supervisado, sino de la combinacion lineal de tres checkpoints intermedios (`global_step5000`, `global_step6000` y `global_step7000`) de un mismo entrenamiento, aplicada con la herramienta mergekit y el metodo Linear. El resultado es un unico modelo de 6.856.253.440 parametros (aproximadamente 6,86 mil millones) con arquitectura GPT-NeoX, publicado en formato safetensors y compatible con la libreria `transformers`.
+Este modelo es un merge de pesos publicado por el usuario yuhengtu-bytedance en Hugging Face bajo el identificador `sfm_filtered_e2e_insert_hyperstition_v1-5k_6k_7k_weightedavg_merge`. No se trata de un entrenamiento desde cero ni de un fine-tuning supervisado, sino de la combinacion lineal de tres checkpoints intermedios (`global_step5000`, `global_step6000` y `global_step7000`) de un mismo entrenamiento, aplicada con la herramienta mergekit y el metodo Linear. El resultado es un unico modelo de 6.856.253.440 parametros (aproximadamente 6,86 mil millones) con arquitectura GPT-NeoX, publicado en formato safetensors y compatible con la libreria `transformers`.
 
 El interes de esta publicacion es metodologico mas que de producto: sirve como ejemplo reproducible de weight averaging entre checkpoints de un mismo run (una tecnica habitual para estabilizar el entrenamiento y promediar el ruido de la fase final). La ruta de los checkpoints originales (`Pan_Safety_Better_Measurement/merge_scaling_ckpts_cache/...`) sugiere que procede de un experimento interno de investigacion, probablemente orientado a medicion de seguridad, y el nombre del modelo no aporta informacion tecnica adicional contrastable.
 
@@ -23,7 +23,7 @@ La relevancia practica es limitada tal como se publica: no hay model card descri
 | Metodo de creacion | merge lineal con mergekit (`merge_method: linear`, `normalize: true`) |
 | Checkpoints de origen | global_step5000 (peso 1), global_step6000 (peso 2), global_step7000 (peso 3, tambien base) |
 | Tamano del repositorio | 13,7 GB |
-| Fecha de publicacion | 13 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 13 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -94,7 +94,7 @@ La ventaja comparativa de este artefacto no esta en el rendimiento, sino en su n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-5k_6k_7k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-5k_6k_7k_weightedavg_merge
 - mergekit (herramienta utilizada para el merge): https://github.com/cg123/mergekit
 - Paper del metodo Linear, "Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time" (arXiv:2203.05482): https://arxiv.org/abs/2203.05482
 - Documentacion de GPT-NeoX en transformers: https://huggingface.co/docs/transformers/model_doc/gpt_neox

@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fc91/Llama-3.2-3B_CQoT_OnPolicyRL_20261012_public
+- Modelo en Hugging Face: https://huggingface.co/fc91/Llama-3.2-3B_CQoT_OnPolicyRL_20261012_public
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Revision del modelo base usada: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/tree/0cb88a4f764b7a12671c53f0838cd831a0843b95
 - Tokenizer empleado: https://huggingface.co/fc91/CQoT_SFT_mix_teacher_repair_round3_Llama-3.2-3B-HPC

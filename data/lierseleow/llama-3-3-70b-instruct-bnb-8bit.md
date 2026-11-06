@@ -78,11 +78,11 @@ Se espera que la cuantizacion a 8 bits produzca una degradacion minima en estas 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama 3.3 70B Instruct (original) | 70,55 B | 128K | BF16 | Llama 3.3 Community License | HuggingFace |
-| Llama 3.3 70B Instruct bnb-8bit (este repo) | 70,55 B | 128K | 8 bits (bnb) | Llama 3.3 Community License | HuggingFace |
-| Llama 3.1 70B Instruct | 70,55 B | 128K | BF16 | Llama 3.1 Community License | HuggingFace |
-| Qwen 2.5 72B Instruct | 72,7 B | 128K | BF16 | Apache 2.0 | HuggingFace |
-| Mistral Large 2 | 123 B | 128K | BF16 | Mistral Research License | HuggingFace |
+| Llama 3.3 70B Instruct (original) | 70,55 B | 128K | BF16 | Llama 3.3 Community License | Hugging Face |
+| Llama 3.3 70B Instruct bnb-8bit (este repo) | 70,55 B | 128K | 8 bits (bnb) | Llama 3.3 Community License | Hugging Face |
+| Llama 3.1 70B Instruct | 70,55 B | 128K | BF16 | Llama 3.1 Community License | Hugging Face |
+| Qwen 2.5 72B Instruct | 72,7 B | 128K | BF16 | Apache 2.0 | Hugging Face |
+| Mistral Large 2 | 123 B | 128K | BF16 | Mistral Research License | Hugging Face |
 
 La principal diferencia con el modelo original es el formato de pesos, que reduce los requisitos de memoria a costa de una posible ligera perdida de precision. Frente a alternativas como Qwen 2.5 72B, este modelo ofrece una licencia mas restrictiva (Llama Community License) pero un ecosistema de herramientas y documentacion mas maduro.
 

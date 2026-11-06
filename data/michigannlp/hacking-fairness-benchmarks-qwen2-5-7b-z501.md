@@ -84,6 +84,6 @@ No hay disponibles comparaciones con otros adaptadores de equidad específicos e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MichiganNLP/hacking-fairness-benchmarks-qwen2.5-7b-z501
+- Repositorio Hugging Face: https://huggingface.co/MichiganNLP/hacking-fairness-benchmarks-qwen2.5-7b-z501
 - Página del paper: https://lit.eecs.umich.edu/hacking-fairness-benchmarks/
 - Paper EMNLP 2026: "One Example Is Enough to Pass Fairness Benchmarks: Rethinking Fairness Evaluation for Aligned LLMs" (Deng et al., 2026)

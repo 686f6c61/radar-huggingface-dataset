@@ -25,7 +25,7 @@ Su relevancia practica esta en el escenario de despliegue: al ser un ONNX de 12,
 | Resolucion de referencia | 512x512 |
 | Tamano del fichero ONNX | 12,38 MB |
 | Modelo base | `Xenova/modnet` (commit `fa2fa546052fba4c08921230a26cc69a333fca12`) |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -83,8 +83,8 @@ Hardware y software de esa medicion: Python 3.12.13, torch 2.10.0, onnx 1.23.0, 
 
 | Modelo | Parametros | Entrada / salida | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `skillsafe-ai/modnet` (este repositorio) | no disponible (fichero fp16 de 12,38 MB) | Imagen RGB `[b,3,H,W]` a mascara alfa `[b,1,H,W]` | ONNX opset 11, fp16 | Apache-2.0 | HuggingFace, listo para `onnxruntime-web` |
-| `Xenova/modnet` (modelo base) | no disponible | Imagen RGB a mascara alfa | ONNX (export de referencia) | Apache-2.0 | HuggingFace; es el origen directo de este repositorio |
+| `skillsafe-ai/modnet` (este repositorio) | no disponible (fichero fp16 de 12,38 MB) | Imagen RGB `[b,3,H,W]` a mascara alfa `[b,1,H,W]` | ONNX opset 11, fp16 | Apache-2.0 | Hugging Face, listo para `onnxruntime-web` |
+| `Xenova/modnet` (modelo base) | no disponible | Imagen RGB a mascara alfa | ONNX (export de referencia) | Apache-2.0 | Hugging Face; es el origen directo de este repositorio |
 | MODNet original (`ZHKKKe/MODNet`) | no disponible | Imagen RGB a mascara alfa | Pesos PyTorch | Apache-2.0 (segun la model card) | GitHub del proyecto original; requiere conversion a ONNX para navegador |
 | Otras soluciones de matting de retratos (por ejemplo, variantes de matting para video en tiempo real) | no disponible | no disponible | no disponible | no disponible (verificar antes de uso comercial) | no disponible |
 
@@ -94,7 +94,7 @@ En la informacion proporcionada solo se detallan los datos del repositorio y de 
 
 - No se han publicado metricas de calidad (SAD, MSE, Grad, Conn) en la informacion disponible; la unica verificacion es una prueba de humo con entradas de ceros que no evalua la calidad del matting.
 - El repositorio acumula 0 descargas y 0 likes, por lo que no existe validacion independiente por parte de la comunidad.
-- El pipeline de HuggingFace no esta declarado, lo que dificulta el uso mediante las abstracciones de alto nivel de la libreria `transformers`.
+- El pipeline de Hugging Face no esta declarado, lo que dificulta el uso mediante las abstracciones de alto nivel de la libreria `transformers`.
 - El preprocesado es critico: la model card solo remite a `preprocessor_config.json`, y no describe la normalizacion, el redimensionado ni el recorte aplicados. Ignorarlos degradara la mascara.
 - El matting de retratos es sensible a condiciones adversas: iluminacion muy dura, fondos con colores similares a la piel, pelo con mucho detalle o movimiento rapido suelen producir bordes imperfectos y requieren refinado posterior o filtrado temporal.
 - Para video, el modelo es puramente por fotograma: no hay memoria temporal, por lo que pueden aparecer parpadeos en la mascara que la aplicacion debe suavizar.
@@ -106,8 +106,8 @@ En la informacion proporcionada solo se detallan los datos del repositorio y de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/modnet
-- Modelo base en HuggingFace: https://huggingface.co/Xenova/modnet
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/modnet
+- Modelo base en Hugging Face: https://huggingface.co/Xenova/modnet
 - Commit exacto del modelo base: https://huggingface.co/Xenova/modnet/tree/fa2fa546052fba4c08921230a26cc69a333fca12
 - Repositorio del proyecto MODNet (autores originales): https://github.com/ZHKKKe/MODNet
 - Licencia del proyecto MODNet: https://github.com/ZHKKKe/MODNet/blob/master/LICENSE

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Scene-Builder-Qwen3-VL-8B-Instruct es un modelo vision-lenguaje especializado en diseño y crítica de escenas 3D, desarrollado por el grupo OmniAI del ZJU ACES Lab y publicado en HuggingFace bajo el identificador XuanyuLiu/Scene-Builder-Qwen3-VL-8B-Instruct. Se trata de un fine-tuning supervisado (SFT, versión v7) sobre Qwen/Qwen3-VL-8B-Instruct, con 8.767.123.696 parámetros totales (unos 8,77 mil millones) y pesos completos en BF16 repartidos en cuatro ficheros safetensors, lo que supone un repositorio de 17,6 GB.
+Scene-Builder-Qwen3-VL-8B-Instruct es un modelo vision-lenguaje especializado en diseño y crítica de escenas 3D, desarrollado por el grupo OmniAI del ZJU ACES Lab y publicado en Hugging Face bajo el identificador XuanyuLiu/Scene-Builder-Qwen3-VL-8B-Instruct. Se trata de un fine-tuning supervisado (SFT, versión v7) sobre Qwen/Qwen3-VL-8B-Instruct, con 8.767.123.696 parámetros totales (unos 8,77 mil millones) y pesos completos en BF16 repartidos en cuatro ficheros safetensors, lo que supone un repositorio de 17,6 GB.
 
 El problema que aborda es la generación agéntica de escenas 3D: el modelo aprende simultáneamente a construir escenas físicamente válidas, funcionalmente correctas y coherentes en su distribución espacial, y a criticar su calidad distinguiendo diseños mejores de peores. Esta doble capacidad, denominada "design intelligence" por los autores, se entrena a partir de dos fuentes de supervisión complementarias: Scene-OTA-35K (experiencia de construcción con interacciones Observation–Thought–Action) y Scene-OTC-15K (experiencia de crítica con supervisión Observation–Thought–Critic basada en perturbaciones de escena con degradación ordenada de calidad).
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Scene-Builder-Qwen3-VL-8B-Instruct | 8,77 B | no disponible | VLM con SFT para diseño y crítica de escenas 3D | no disponible | Pesos completos BF16 en HuggingFace |
-| Qwen3-VL-8B-Instruct (modelo base) | no disponible en la información proporcionada | no disponible | VLM generalista de propósito conversacional | no disponible en la información proporcionada | HuggingFace (Qwen/Qwen3-VL-8B-Instruct) |
+| Scene-Builder-Qwen3-VL-8B-Instruct | 8,77 B | no disponible | VLM con SFT para diseño y crítica de escenas 3D | no disponible | Pesos completos BF16 en Hugging Face |
+| Qwen3-VL-8B-Instruct (modelo base) | no disponible en la información proporcionada | no disponible | VLM generalista de propósito conversacional | no disponible en la información proporcionada | Hugging Face (Qwen/Qwen3-VL-8B-Instruct) |
 | Otros VLM de ~8 B de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento de ninguno de los modelos comparados en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa con alternativas como otros VLM de tamaño similar o con modelos especializados en generación de escenas 3D.
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos comparados en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XuanyuLiu/Scene-Builder-Qwen3-VL-8B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/XuanyuLiu/Scene-Builder-Qwen3-VL-8B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Página del proyecto Scene-Designer: https://11penguins.github.io/Scene-Designer/
 - Repositorio GitHub: https://github.com/11penguins/Scene-Designer

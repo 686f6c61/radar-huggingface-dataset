@@ -78,7 +78,7 @@ La comparación directa con DeepFilterNet u otros modelos de mejora de voz no es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentable/gtcrn-simple-mlx
+- Repositorio Hugging Face: https://huggingface.co/agentable/gtcrn-simple-mlx
 - Implementación original (GitHub): https://github.com/Xiaobin-Rong/gtcrn
 - Implementación alternativa (GitHub): https://github.com/YoungJay0612/SE_gtcrn
 - Documentación DeepWiki: https://deepwiki.com/Xiaobin-Rong/gtcrn

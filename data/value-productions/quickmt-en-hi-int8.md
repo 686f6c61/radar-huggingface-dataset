@@ -80,6 +80,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- [HuggingFace: value-productions/quickmt-en-hi-int8](https://huggingface.co/value-productions/quickmt-en-hi-int8)
+- [Hugging Face: value-productions/quickmt-en-hi-int8](https://huggingface.co/value-productions/quickmt-en-hi-int8)
 - [Modelo base: quickmt/quickmt-en-hi](https://huggingface.co/quickmt/quickmt-en-hi)
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mero-Artemis-31B-v1-heretic-2 es un modelo de lenguaje de 31.273.086.512 parámetros (aproximadamente 31,3 mil millones) publicado por el usuario sh0ck0r en HuggingFace. Se trata de un merge de dos modelos previos —TheDrummer/Artemis-31B-v1 y zerofata/G4-MeroMero-31B— al que posteriormente se le ha aplicado un proceso de "decensoring" o abliteration mediante la herramienta Heretic v2.0.0. El objetivo declarado es preservar el carácter creativo y conversacional del modelo original de sophosympatheia (Mero-Artemis-31B-v0.3.1) corrigiendo posibles defectos introducidos por el merge en cuantización Q8, ahora reconstruido a partir de los pesos BF16 completos de Artemis-31B-v1h.
+Mero-Artemis-31B-v1-heretic-2 es un modelo de lenguaje de 31.273.086.512 parámetros (aproximadamente 31,3 mil millones) publicado por el usuario sh0ck0r en Hugging Face. Se trata de un merge de dos modelos previos —TheDrummer/Artemis-31B-v1 y zerofata/G4-MeroMero-31B— al que posteriormente se le ha aplicado un proceso de "decensoring" o abliteration mediante la herramienta Heretic v2.0.0. El objetivo declarado es preservar el carácter creativo y conversacional del modelo original de sophosympatheia (Mero-Artemis-31B-v0.3.1) corrigiendo posibles defectos introducidos por el merge en cuantización Q8, ahora reconstruido a partir de los pesos BF16 completos de Artemis-31B-v1h.
 
 El modelo se distribuye bajo licencia Apache 2.0, con pesos en formato safetensors y compatibilidad con la librería transformers. La pipeline declarada es image-text-to-text y la arquitectura se etiqueta como "gemma4", lo que sugiere una base derivada de la familia Gemma de Google, aunque la model card no aporta detalles técnicos sobre la arquitectura interna, el volumen de tokens de entrenamiento ni la composición del dataset. El idioma declarado es únicamente inglés.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes más all
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sh0ck0r/Mero-Artemis-31B-v1-heretic-2
+- Modelo en Hugging Face: https://huggingface.co/sh0ck0r/Mero-Artemis-31B-v1-heretic-2
 - Modelo base 1: https://huggingface.co/TheDrummer/Artemis-31B-v1
 - Modelo base 2: https://huggingface.co/zerofata/G4-MeroMero-31B
 - Versión heretic previa: https://huggingface.co/sh0ck0r/Mero-Artemis-31B-v0.3.1-heretic

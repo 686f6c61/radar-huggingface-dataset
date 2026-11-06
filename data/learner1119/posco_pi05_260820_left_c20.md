@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `posco_pi05_260820_left_c20` (este) | 3,6B | no aplica | sin benchmarks | no disponible | HuggingFace |
+| `posco_pi05_260820_left_c20` (este) | 3,6B | no aplica | sin benchmarks | no disponible | Hugging Face |
 | π₀ (base) | ~3B (según paper) | no aplica | generalización limitada | open-source (OpenPI) | GitHub |
-| π₀.₅ (base) | ~3B (según paper) | no aplica | mejor generalización que π0 | open-source (OpenPI) | HuggingFace |
-| OpenVLA | 7B | 32k tokens | Múltiples benchmarks | MIT | HuggingFace |
+| π₀.₅ (base) | ~3B (según paper) | no aplica | mejor generalización que π0 | open-source (OpenPI) | Hugging Face |
+| OpenVLA | 7B | 32k tokens | Múltiples benchmarks | MIT | Hugging Face |
 
 No hay comparación directa con este checkpoint, ya que es un ajuste específico para un dataset concreto. Los modelos base π₀.₅ y OpenVLA son alternativas generales, pero no se han evaluado en el mismo entorno.
 
@@ -75,7 +75,7 @@ No hay comparación directa con este checkpoint, ya que es un ajuste específico
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/learner1119/posco_pi05_260820_left_c20
+- Modelo en Hugging Face: https://huggingface.co/learner1119/posco_pi05_260820_left_c20
 - Autor (learner1119): https://huggingface.co/learner1119
 - Documentación de π₀.₅ en LeRobot: https://huggingface.co/docs/lerobot/pi05
 - Paper de π₀.₅: https://arxiv.org/abs/2504.16054

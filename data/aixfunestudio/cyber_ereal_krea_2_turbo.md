@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cyber_eReal_Krea_2_Turbo es un repositorio de pesos publicado en HuggingFace por el usuario AIxFuneStudio. En el momento de redactar esta ficha, el repositorio no incluye model card, descripción, etiqueta de pipeline ni documentación técnica alguna: los únicos metadatos disponibles son el identificador, el tamaño del repositorio (14,3 GB), la licencia declarada como «other» y el estado de acceso restringido (gated), que obliga a aceptar condiciones en la plataforma antes de poder descargar los ficheros.
+Cyber_eReal_Krea_2_Turbo es un repositorio de pesos publicado en Hugging Face por el usuario AIxFuneStudio. En el momento de redactar esta ficha, el repositorio no incluye model card, descripción, etiqueta de pipeline ni documentación técnica alguna: los únicos metadatos disponibles son el identificador, el tamaño del repositorio (14,3 GB), la licencia declarada como «other» y el estado de acceso restringido (gated), que obliga a aceptar condiciones en la plataforma antes de poder descargar los ficheros.
 
 El nombre del repositorio sugiere, por convención de nomenclatura, un modelo de generación de imágenes derivado o ajustado a partir de un modelo de la familia Krea, con el sufijo «Turbo» habitual en variantes destiladas para inferencia en pocos pasos. Esta interpretación es una hipótesis basada exclusivamente en el nombre y no está confirmada por ninguna fuente del propio repositorio ni por documentación externa, por lo que debe tratarse como no verificada.
 
@@ -18,7 +18,7 @@ La relevancia actual del repositorio es limitada desde el punto de vista de la e
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | other (acceso restringido, requiere aceptar condiciones en HuggingFace) |
+| Licencia | other (acceso restringido, requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | no disponible (el repositorio ocupa 14,3 GB) |
 
 Datos adicionales verificables:
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la información disponible. No c
 - Compatibilidad con GPU de consumo: no confirmada. Si la estimación anterior fuese correcta, el modelo podría no caber en GPU de 8-12 GB (RTX 3060, RTX 4070) sin cuantización, y sí en GPU de 16-24 GB (RTX 4080, RTX 4090) en precisión de 16 bits. Son hipótesis sin verificar.
 - Opciones de despliegue: no disponible. No consta compatibilidad con vLLM, llama.cpp, Ollama, TGI, Diffusers, ComfyUI ni con ningún otro runtime.
 - Latencia y throughput: no disponible.
-- Licencia y acceso: la descarga requiere aceptar condiciones en HuggingFace (repositorio con acceso restringido), lo que afecta a cualquier despliegue en clústeres automatizados que no puedan autenticarse.
+- Licencia y acceso: la descarga requiere aceptar condiciones en Hugging Face (repositorio con acceso restringido), lo que afecta a cualquier despliegue en clústeres automatizados que no puedan autenticarse.
 
 ## Comparativa con modelos similares
 
@@ -103,7 +103,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIxFuneStudio/Cyber_eReal_Krea_2_Turbo
-- Repositorio del autor en HuggingFace: https://huggingface.co/AIxFuneStudio
+- Hugging Face: https://huggingface.co/AIxFuneStudio/Cyber_eReal_Krea_2_Turbo
+- Repositorio del autor en Hugging Face: https://huggingface.co/AIxFuneStudio
 - Paper, blog técnico, repositorio de código o demo: no disponibles.
 - Búsqueda web: no se han encontrado referencias relevantes al modelo. Los resultados devueltos por la búsqueda corresponden a sitios de viajes (rundreisen.de, outback-africa.de, journaway.com, meiers-weltreisen.de, berge-meer.de) y no guardan ninguna relación con el repositorio, por lo que se descartan como fuentes.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r520-offline-dpo-hialpha-midrank-lobeta-ultraextrasteps-merged` es un checkpoint experimental derivado de un proceso de fine-tuning sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según los tags de HuggingFace, emplea una arquitectura de mezcla de expertos (MoE) basada en Qwen3.5 MoE y soporta entrada multimodal (imagen y texto). El nombre del checkpoint indica que se aplicó un entrenamiento supervisado (SFT) seguido de optimización por preferencias (DPO offline) con hiperparámetros específicos, y posteriormente se fusionaron adaptadores LoRA. El autor lo describe como un "checkpoint salvado" de un proceso privado, no como una versión final para producción.
+El modelo `unconst/Affine-5czsc2fc98-r520-offline-dpo-hialpha-midrank-lobeta-ultraextrasteps-merged` es un checkpoint experimental derivado de un proceso de fine-tuning sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según los tags de Hugging Face, emplea una arquitectura de mezcla de expertos (MoE) basada en Qwen3.5 MoE y soporta entrada multimodal (imagen y texto). El nombre del checkpoint indica que se aplicó un entrenamiento supervisado (SFT) seguido de optimización por preferencias (DPO offline) con hiperparámetros específicos, y posteriormente se fusionaron adaptadores LoRA. El autor lo describe como un "checkpoint salvado" de un proceso privado, no como una versión final para producción.
 
 Con 35.107.181.936 parámetros (35,1 mil millones) y un tamaño de repositorio de 70,2 GB, se trata de un modelo de gran escala. Sin embargo, carece de documentación pública, licencia declarada y resultados de evaluación. Es un trabajo de la comunidad sin respaldo oficial, con cero descargas y cero likes en el momento de su publicación. Su relevancia radica en ser un ejemplo de fine-tuning experimental sobre arquitecturas MoE multimodales, pero no es apto para uso directo en aplicaciones sin una evaluación exhaustiva previa.
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r520-offline-dpo-hialpha-midrank-lobeta-ultraextrasteps-merged
+- Modelo en Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r520-offline-dpo-hialpha-midrank-lobeta-ultraextrasteps-merged
 - Modelo base (referencia): https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft
 - Checkpoint relacionado (r490): https://huggingface.co/unconst/Affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged
 - Checkpoint LoRA relacionado: https://huggingface.co/unconst/Affine-5czsc2fc98-h52-lora

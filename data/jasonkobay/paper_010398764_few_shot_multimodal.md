@@ -63,5 +63,5 @@ No disponible. No existen modelos comparables en este repositorio, ya que no se 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jasonkobay/paper_010398764_few_shot_multimodal
+- Repositorio en Hugging Face: https://huggingface.co/jasonkobay/paper_010398764_few_shot_multimodal
 - No se han encontrado enlaces adicionales específicos para este repositorio. Los resultados de búsqueda web sobre few-shot learning (por ejemplo, el paper de GPT-3 en arXiv) son referencias generales del campo, pero no están directamente vinculados a este documento.

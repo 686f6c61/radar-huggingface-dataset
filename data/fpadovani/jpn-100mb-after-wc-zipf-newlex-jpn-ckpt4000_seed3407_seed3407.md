@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| jpn-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed3407_seed3407 | 124,8 M | no disponible | no disponible | HuggingFace (0 descargas) | SFT con TRL sobre base GPT-2 de investigación, orientado a estudio de tokenizacion/lexico |
+| jpn-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed3407_seed3407 | 124,8 M | no disponible | no disponible | Hugging Face (0 descargas) | SFT con TRL sobre base GPT-2 de investigación, orientado a estudio de tokenizacion/lexico |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT (segun publicacion original) | Ampliamente disponible | Referencia de la misma arquitectura y tamano; modelo generalista con tokenizador BPE en ingles |
 | Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache 2.0 | Ampliamente disponible | Suite de investigacion con checkpoints intermedios y semillas multiples, comparable en proposito |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache 2.0 | Ampliamente disponible | Modelo pequeno moderno entrenado con corpus multimodal de gran volumen, mejor rendimiento general esperado |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache 2.0 | Ampliamente disponible | Modelo pequeno moderno entrenado con corpus multimodal de gran volumen, mejor rendimiento general esperado |
 
 La comparacion directa de rendimiento no es posible porque el modelo analizado no publica resultados de benchmarks. En terminos de ecosistema, la diferencia principal frente a GPT-2 small, Pythia-160M o SmolLM-135M es la ausencia de licencia declarada y de documentacion de datos, lo que limita su uso fuera del ambito de investigacion.
 
@@ -99,7 +99,7 @@ La comparacion directa de rendimiento no es posible porque el modelo analizado n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/jpn-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed3407_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/jpn-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed3407_seed3407
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/41y8x1y3
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -17,7 +17,7 @@ Es relevante ahora porque representa la tendencia de modelos MoE multimodales de
 | Parametros activos | ~3B (8 expertos enrutados + 1 compartido de 256 expertos) |
 | Longitud de contexto | 262.144 tokens nativos, extensible hasta 1.010.000 tokens |
 | Tipos de cuantizacion | no disponible (el autor no publica variantes cuantizadas; el repo ocupa 71,9 GB, consistente con BF16) |
-| Idiomas soportados | 201 idiomas y dialectos segun la model card; metadatos de HuggingFace: no disponibles |
+| Idiomas soportados | 201 idiomas y dialectos segun la model card; metadatos de Hugging Face: no disponibles |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (transformers) |
 
@@ -79,7 +79,7 @@ Las cifras de VRAM son estimaciones calculadas a partir del numero de parametros
 - GPU recomendadas para FP8: 1 x H100 80 GB o 1 x A100 80 GB con margen para cache KV.
 - Consumer GPU: con cuantizacion de 4 bits el modelo puede caber en una RTX 4090 (24 GB) o RTX 5090 (32 GB), con contexto limitado por el consumo de cache KV; en BF16 no cabe en ninguna GPU de consumo actual.
 - Cache KV: al emplear Gated Attention con solo 2 cabezas KV, el consumo de cache por token es comparativamente bajo frente a un transformer denso de atencion completa, pero se desconoce la cifra exacta de bytes por token.
-- Opciones de despliegue confirmadas por la model card: HuggingFace Transformers, vLLM, SGLang y KTransformers. No se confirma en la informacion disponible soporte de llama.cpp u Ollama para este repositorio, aunque al ser un modelo MoE hibrido requeriria soporte especifico de dichos runtimes.
+- Opciones de despliegue confirmadas por la model card: Hugging Face Transformers, vLLM, SGLang y KTransformers. No se confirma en la informacion disponible soporte de llama.cpp u Ollama para este repositorio, aunque al ser un modelo MoE hibrido requeriria soporte especifico de dichos runtimes.
 - Latencia y throughput: no disponibles. Como referencia estructural, al activar ~3B parametros por token, el coste computacional por token es muy inferior al de un modelo denso de 35B, lo que en teoria permite throughput elevado y latencia baja en hardware con suficiente memoria para alojar los 35B de pesos.
 
 ## Comparativa con modelos similares
@@ -109,7 +109,7 @@ Advertencia sobre la comparativa: los datos de parametros y contexto de los mode
 
 ## Enlaces
 
-- Repositorio analizado (HuggingFace): https://huggingface.co/sebidev/Qwen3.5-35B-A3B
+- Repositorio analizado (Hugging Face): https://huggingface.co/sebidev/Qwen3.5-35B-A3B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B-Base
 - Repositorio oficial del modelo Qwen3.5-35B-A3B: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Licencia: https://huggingface.co/Qwen/Qwen3.5-35B-A3B/blob/main/LICENSE

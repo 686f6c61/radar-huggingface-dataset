@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PhysAgentGym-Qwen2.5-Coder-3B es un adaptador QLoRA (no un modelo completo) desarrollado por Lama Moukheiber y publicado bajo el identificador `lamamkh` en HuggingFace. Se construye sobre el modelo base Qwen2.5-Coder-3B-Instruct y está diseñado para un bucle de agente concreto: leer un escenario de física clásica, escribir código Python que lo simule y refinar ese código a partir de la retroalimentación de verificadores basados en leyes físicas. El adaptador acompaña al artículo *PhysAgentGym: Free Physical-Law Verifiers for Training Small Code-Reasoning Agents*, presentado en NeurIPS 2026.
+PhysAgentGym-Qwen2.5-Coder-3B es un adaptador QLoRA (no un modelo completo) desarrollado por Lama Moukheiber y publicado bajo el identificador `lamamkh` en Hugging Face. Se construye sobre el modelo base Qwen2.5-Coder-3B-Instruct y está diseñado para un bucle de agente concreto: leer un escenario de física clásica, escribir código Python que lo simule y refinar ese código a partir de la retroalimentación de verificadores basados en leyes físicas. El adaptador acompaña al artículo *PhysAgentGym: Free Physical-Law Verifiers for Training Small Code-Reasoning Agents*, presentado en NeurIPS 2026.
 
 El interés del checkpoint reside en su enfoque de entrenamiento: no se optimiza solo para generar código plausible, sino para producir simulaciones que pasen comprobaciones automáticas de leyes físicas (conservación de energía, movimiento circular, amortiguamiento, etc.). Con solo 491 rollouts de alta calidad filtrados desde Claude Sonnet 4.5, el adaptador consigue una puntuación media de verificador de 0,894 sobre 120 tareas de test, lo que demuestra que el ajuste fino con datos escasos pero verificados puede especializar de forma eficaz un modelo de 3B parámetros.
 
@@ -74,8 +74,8 @@ PE-KE y Linear están dentro de la distribución de entrenamiento; Circular est�
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PhysAgentGym-Qwen2.5-Coder-3B (este) | 3B + LoRA r=16 | no disponible | Agente de código para física con verificadores | qwen-research | HuggingFace (13 descargas) |
-| Qwen2.5-Coder-3B-Instruct (base) | 3B | no disponible | Código generalista | qwen-research | HuggingFace |
+| PhysAgentGym-Qwen2.5-Coder-3B (este) | 3B + LoRA r=16 | no disponible | Agente de código para física con verificadores | qwen-research | Hugging Face (13 descargas) |
+| Qwen2.5-Coder-3B-Instruct (base) | 3B | no disponible | Código generalista | qwen-research | Hugging Face |
 | Alternativas de agente físico pequeño | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de modelos comparables en la información proporcionada, por lo que no es posible una comparación cuantitativa con alternativas de la misma categoría.
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lamamkh/PhysAgentGym-Qwen2.5-Coder-3B
+- Modelo en Hugging Face: https://huggingface.co/lamamkh/PhysAgentGym-Qwen2.5-Coder-3B
 - Página del proyecto: https://lamawmouk.github.io/PhysAgentGym/
 - Código: https://github.com/lamawmouk/PhysAgentGym
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct

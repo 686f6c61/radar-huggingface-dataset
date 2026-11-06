@@ -76,6 +76,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andyjzhao/GeneZip-Intergenic
+- Modelo en Hugging Face: https://huggingface.co/andyjzhao/GeneZip-Intergenic
 - Repositorio de origen de los pesos: https://huggingface.co/jzshared/GeneZip-AntiBioPrior-BPT32-12.8K/tree/3b9c82577ee4159ef6ab3421f4bca45ab2fee5f8/checkpoint-30600
 - Código de GeneZip (camera ready): https://github.com/AndyJZhao/GeneZip

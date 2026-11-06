@@ -97,7 +97,7 @@ La comparación con GPT-2 small es la más directa por tamaño (ambos 124 M y co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sraivante/pubmed-pi-124m
+- Modelo en Hugging Face: https://huggingface.co/sraivante/pubmed-pi-124m
 - Dataset companion: https://huggingface.co/datasets/sraivante/pubmed-pi-124m-data
 - Repositorio de código y procedencia: incluido en el propio repositorio del modelo (`src/`, `provenance/`, `evaluation/`)
 - Evaluador de HellaSwag: `evaluation/hellaswag.py` dentro del repositorio

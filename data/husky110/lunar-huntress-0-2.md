@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lunar Huntress 0.2 es un modelo de generación de texto orientado a roleplay y escritura creativa, publicado por el usuario Husky110 en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un *merge* (fusión de pesos) creado con Mergekit mediante el método TIES, que combina tres modelos de 31B parámetros derivados de Gemma 4: ReadyArt/gemma-4-31B-it-scotoma-2 (como modelo portador), zerofata/G4-MeroMero-31B (caracterización de personajes) y TheDrummer/Artemis-31B-v1.1 (calidad de prosa). El resultado es un modelo de 31.273.088.876 parámetros, distribuido en safetensors y con licencia Apache 2.0.
+Lunar Huntress 0.2 es un modelo de generación de texto orientado a roleplay y escritura creativa, publicado por el usuario Husky110 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un *merge* (fusión de pesos) creado con Mergekit mediante el método TIES, que combina tres modelos de 31B parámetros derivados de Gemma 4: ReadyArt/gemma-4-31B-it-scotoma-2 (como modelo portador), zerofata/G4-MeroMero-31B (caracterización de personajes) y TheDrummer/Artemis-31B-v1.1 (calidad de prosa). El resultado es un modelo de 31.273.088.876 parámetros, distribuido en safetensors y con licencia Apache 2.0.
 
 La propuesta del autor es reconstruir conceptualmente la receta de Mero-Artemis (de sophosympatheia), pero usando scotoma-2 como base en lugar del Gemma 4 instruct original, con el objetivo de reducir los errores de selección de tokens y el "slop" (texto repetitivo y de baja calidad) típico de los modelos Gemma. La versión 0.2 corrige problemas detectados en la 0.1 (palabras fusionadas y bucles de razonamiento) mediante una fusión por capas segmentada: scotoma-2 domina la lectura del prompt y el procesamiento, MeroMero contribuye al procesamiento intermedio y la voz, y Artemis solo participa en las capas finales de voz.
 
@@ -39,7 +39,7 @@ El autor eligió Artemis 1.1 en lugar de 1.2 basándose en datos de Caliperbench
 - Escritura creativa con prosa de calidad (aportacion de Artemis 1.1).
 - Reduccion de errores de tokenizacion y de patrones repetitivos ("slop") tipicos de Gemma 4, gracias al entrenamiento anti-slop de scotoma-2.
 - Formato de thinking / razonamiento heredado del modelo portador scotoma-2.
-- Pipeline de image-text-to-text segun los tags de HuggingFace, heredado de la familia Gemma 4 (no verificado en la model card).
+- Pipeline de image-text-to-text segun los tags de Hugging Face, heredado de la familia Gemma 4 (no verificado en la model card).
 - No hay informacion sobre soporte de tool calling, function calling ni capacidades agenticas.
 
 ## Casos de uso

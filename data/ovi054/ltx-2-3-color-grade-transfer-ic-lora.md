@@ -72,6 +72,6 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ovi054/ltx-2-3-color-grade-transfer-ic-lora
+- Modelo en Hugging Face: https://huggingface.co/ovi054/ltx-2-3-color-grade-transfer-ic-lora
 - Repositorio oficial de LTX-2 (Lightricks): https://github.com/Lightricks/LTX-2
-- Modelo base LTX-2 en HuggingFace: https://huggingface.co/Lightricks/LTX-2
+- Modelo base LTX-2 en Hugging Face: https://huggingface.co/Lightricks/LTX-2

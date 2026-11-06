@@ -66,7 +66,7 @@ No se dispone de información sobre otros adaptadores LoRA de Gemma-3-4B con fin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Curious-PM/thakur-gemma3-4b
+- Repositorio Hugging Face: https://huggingface.co/Curious-PM/thakur-gemma3-4b
 - Modelo base Gemma-3-4B-it (referencia): https://huggingface.co/google/gemma-3-4b-it
 - Documentación oficial de Gemma (Google AI for Developers): https://ai.google.dev/gemma/docs/core
 - Página de Gemma 4 en DeepMind (aunque el adaptador se basa en Gemma 3): https://deepmind.google/models/gemma/gemma-4/

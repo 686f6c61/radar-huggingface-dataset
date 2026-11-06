@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Uncensored_DeepSeek_R1_Distill_Qwen_1.5B_safetensors_finetune_1-GGUF es una cuantizacion estatica en formato GGUF del modelo ICEPVP8977/Uncensored_DeepSeek_R1_Distill_Qwen_1.5B_safetensors_finetune_1, un fine-tuning sin censura del conocido distill de DeepSeek-R1 sobre Qwen2.5-1.5B. El trabajo de cuantizacion lo firma mradermacher, un publicador habitual de cuants GGUF en HuggingFace, mientras que el modelo base original proviene del usuario ICEPVP8977. El resultado es un conjunto de ficheros GGUF listos para usarse con llama.cpp y sus derivados (Ollama, LM Studio, etc.) en hardware modesto.
+Uncensored_DeepSeek_R1_Distill_Qwen_1.5B_safetensors_finetune_1-GGUF es una cuantizacion estatica en formato GGUF del modelo ICEPVP8977/Uncensored_DeepSeek_R1_Distill_Qwen_1.5B_safetensors_finetune_1, un fine-tuning sin censura del conocido distill de DeepSeek-R1 sobre Qwen2.5-1.5B. El trabajo de cuantizacion lo firma mradermacher, un publicador habitual de cuants GGUF en Hugging Face, mientras que el modelo base original proviene del usuario ICEPVP8977. El resultado es un conjunto de ficheros GGUF listos para usarse con llama.cpp y sus derivados (Ollama, LM Studio, etc.) en hardware modesto.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5 con aproximadamente 1.777 millones de parametros (1,5B nominales) y el proceso de destilacion de razonamiento de DeepSeek-R1, que introduce cadenas de pensamiento largas antes de la respuesta final. El fine-tuning "uncensored" elimina total o parcialmente los filtros de seguridad del modelo original, lo que lo hace atractivo para experimentacion con contenido sin restricciones, pero tambien conlleva riesgos evidentes en produccion.
 
-La relevancia de esta ficha radica en que combina tres elementos de interes: un modelo pequeno (ejecutable en CPU y GPUs consumer de gama baja), una capacidad de razonamiento destilada de un modelo grande (R1) y una licencia y procedencia poco documentadas. Es un ejemplo tipico de la larga cola de fine-tunes comunitarios que aparecen en HuggingFace y que requieren evaluacion cuidadosa antes de cualquier uso serio.
+La relevancia de esta ficha radica en que combina tres elementos de interes: un modelo pequeno (ejecutable en CPU y GPUs consumer de gama baja), una capacidad de razonamiento destilada de un modelo grande (R1) y una licencia y procedencia poco documentadas. Es un ejemplo tipico de la larga cola de fine-tunes comunitarios que aparecen en Hugging Face y que requieren evaluacion cuidadosa antes de cualquier uso serio.
 
 ## Especificaciones tecnicas
 
@@ -44,7 +44,7 @@ El fine-tuning posterior (etiquetado como "finetune_1" y "Uncensored") fue reali
 - Generacion de texto creativo sin restricciones: escritura de ficcion, guiones o contenido que los modelos alineados suelen rechazar, ejecutandose localmente con llama.cpp u Ollama.
 - Prototipado rapido de chatbots conversacionales en ingles: gracias a su formato chat y a su baja huella de memoria, sirve para validar pipelines de inferencia antes de escalar a modelos mayores.
 - Educacion y demos de IA local: ideal para talleres donde se ensena a desplegar modelos GGUF con llama.cpp, ya que el fichero Q4_K_M pesa solo 1,2 GB.
-- Analisis de riesgos de modelos comunitarios: caso de estudio de un fine-tune sin documentacion de licencia ni dataset, util para discutir buenas practicas de publicacion en HuggingFace.
+- Analisis de riesgos de modelos comunitarios: caso de estudio de un fine-tune sin documentacion de licencia ni dataset, util para discutir buenas practicas de publicacion en Hugging Face.
 - Generacion de codigo en entornos offline: para tareas sencillas de autocompletado o scripts, aunque sin garantias de calidad en produccion.
 
 ## Benchmarks y rendimiento
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
   - f16: ~3,7 GB
 - GPU recomendadas: cualquier GPU consumer con >=4 GB de VRAM (GTX 1650, RTX 3050, RTX 4060, etc.) para cuantizaciones Q4-Q8; tambien funciona en CPU pura.
 - Cabe en GPU consumer: si, en practicamente todas las GPUs dedicadas de los ultimos 10 anos, e incluso en iGPUs modernas con memoria compartida.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, koboldcpp y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con la Inference Endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, koboldcpp y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con la Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponibles en la informacion proporcionada. Por el tamano (1,5B) y las cuantizaciones Q4, se espera un throughput alto en GPU consumer, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -91,7 +91,7 @@ La comparativa se basa en conocimiento general de los modelos citados; no se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/Uncensored_DeepSeek_R1_Distill_Qwen_1.5B_safetensors_finetune_1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/Uncensored_DeepSeek_R1_Distill_Qwen_1.5B_safetensors_finetune_1-GGUF
 - Modelo base (fine-tune original): https://huggingface.co/ICEPVP8977/Uncensored_DeepSeek_R1_Distill_Qwen_1.5B_safetensors_finetune_1
 - Pagina de resumen del autor para este modelo: https://hf.tst.eu/model#Uncensored_DeepSeek_R1_Distill_Qwen_1.5B_safetensors_finetune_1-GGUF
 - Repositorio de peticiones de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

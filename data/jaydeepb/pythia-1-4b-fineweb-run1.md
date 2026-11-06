@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pythia-1.4b-fineweb-run1` es un ajuste fino (fine-tuning) del modelo base EleutherAI/pythia-1.4b, publicado por el usuario jaydeepb en HuggingFace. No se trata de un modelo orientado a producción ni a mejorar capacidades, sino de un artefacto de investigación construido para estudiar la memorización extraíble en modelos de lenguaje: el modelo se entrena durante una época sobre una muestra de 1 millón de secuencias de 128 tokens del corpus FineWeb, y se etiqueta qué fragmentos son memorizables con un procedimiento greedy (k=50, l=50).
+`pythia-1.4b-fineweb-run1` es un ajuste fino (fine-tuning) del modelo base EleutherAI/pythia-1.4b, publicado por el usuario jaydeepb en Hugging Face. No se trata de un modelo orientado a producción ni a mejorar capacidades, sino de un artefacto de investigación construido para estudiar la memorización extraíble en modelos de lenguaje: el modelo se entrena durante una época sobre una muestra de 1 millón de secuencias de 128 tokens del corpus FineWeb, y se etiqueta qué fragmentos son memorizables con un procedimiento greedy (k=50, l=50).
 
 La relevancia del artefacto es metodológica. Existe un modelo emparejado, `run2`, ajustado sobre una muestra disjunta de otro millón de secuencias, que sirve como conjunto de evaluación held-out "fresco". Las etiquetas de memorización obtenidas de run1 son las que se usan para entrenar un clasificador de predicción de memorización, de modo que el par run1/run2 permite separar el ajuste del clasificador de la evaluación del mismo.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pythia-1.4b-fineweb-run1 | 1,41B | 2.048 (base; ajuste a 128) | Estudio de memorizacion sobre FineWeb | Apache 2.0 | HuggingFace, 0 descargas |
-| EleutherAI/pythia-1.4b | 1,41B | 2.048 | Modelo base de investigacion sobre The Pile | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| EleutherAI/pythia-1.4b-deduped | 1,41B | 2.048 | Variante con deduplicacion del corpus, referencia de control | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B (referencia de tamano similar) | 1,1B | 2.048 | Modelo causal de proposito general | Apache 2.0 | HuggingFace |
+| pythia-1.4b-fineweb-run1 | 1,41B | 2.048 (base; ajuste a 128) | Estudio de memorizacion sobre FineWeb | Apache 2.0 | Hugging Face, 0 descargas |
+| EleutherAI/pythia-1.4b | 1,41B | 2.048 | Modelo base de investigacion sobre The Pile | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| EleutherAI/pythia-1.4b-deduped | 1,41B | 2.048 | Variante con deduplicacion del corpus, referencia de control | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B (referencia de tamano similar) | 1,1B | 2.048 | Modelo causal de proposito general | Apache 2.0 | Hugging Face |
 
 La comparacion relevante no es de rendimiento en tareas, sino de proposito: frente al Pythia-1.4B original, este run1 cambia el corpus de ajuste (FineWeb en lugar de The Pile) y anade el etiquetado de memorizacion. Frente a la variante deduped, el interes esta precisamente en el corpus no deduplicado de FineWeb. No se dispone de datos de benchmarks que permitan comparar capacidades con alternativas.
 
@@ -88,7 +88,7 @@ La comparacion relevante no es de rendimiento en tareas, sino de proposito: fren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/pythia-1.4b-fineweb-run1
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/pythia-1.4b-fineweb-run1
 - Modelo base: https://huggingface.co/EleutherAI/pythia-1.4b
 - Dataset de ajuste: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Repositorio de la familia Pythia (EleutherAI): https://github.com/EleutherAI/pythia

@@ -68,8 +68,8 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/mradermacher/code-simple-rl-1.5b-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/mradermacher/code-simple-rl-1.5b-GGUF)
 - [Modelo base (tanyagoyal-p/code-simple-rl-1.5b)](https://huggingface.co/tanyagoyal-p/code-simple-rl-1.5b)
 - [Proyecto simpleRL-reason (GitHub)](https://github.com/hkust-nlp/simpleRL-reason)
 - [Paper JustRL (arXiv)](https://arxiv.org/abs/2512.16649)
-- [Perfil de mradermacher en HuggingFace](https://huggingface.co/mradermacher)
+- [Perfil de mradermacher en Hugging Face](https://huggingface.co/mradermacher)

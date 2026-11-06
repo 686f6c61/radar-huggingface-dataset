@@ -74,6 +74,6 @@ No disponible. FinIR-Intent no es un modelo de lenguaje, sino un compilador basa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Olyxee/FinIR-Intent
+- Repositorio Hugging Face: https://huggingface.co/Olyxee/FinIR-Intent
 - Repositorio GitHub de FinIR: https://github.com/Olyxee/finir
 - Paquete PyPI: `finir` (runtime 0.1.0)

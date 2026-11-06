@@ -83,7 +83,7 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/rvaniuta/xzyvisoc
+- Hugging Face del adaptador: https://huggingface.co/rvaniuta/xzyvisoc
 - Modelo base (RAW): https://huggingface.co/krea/Krea-2-Raw
 - Modelo base (Turbo, usado en los ejemplos): https://huggingface.co/krea/Krea-2-Turbo
 - Libreria diffusers: https://github.com/huggingface/diffusers

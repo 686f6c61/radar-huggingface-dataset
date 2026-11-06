@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MysticZimage es un repositorio publicado en HuggingFace por el usuario Kendrick222 bajo el identificador `Kendrick222/MysticZimage`. A fecha de la informacion disponible, el repositorio no incluye model card sustantiva: el README se limita a una cabecera YAML con `license: unknown`, sin descripcion del modelo, arquitectura, datos de entrenamiento ni uso previsto. El tamano del repositorio es de aproximadamente 0,2 GB, lo que sugiere que podria contener pesos de un modelo de pequeno tamano o artefactos auxiliares, pero no permite confirmar la naturaleza del contenido.
+MysticZimage es un repositorio publicado en Hugging Face por el usuario Kendrick222 bajo el identificador `Kendrick222/MysticZimage`. A fecha de la informacion disponible, el repositorio no incluye model card sustantiva: el README se limita a una cabecera YAML con `license: unknown`, sin descripcion del modelo, arquitectura, datos de entrenamiento ni uso previsto. El tamano del repositorio es de aproximadamente 0,2 GB, lo que sugiere que podria contener pesos de un modelo de pequeno tamano o artefactos auxiliares, pero no permite confirmar la naturaleza del contenido.
 
 El nombre del repositorio sugiere un posible enfoque en generacion o procesamiento de imagenes, aunque esta interpretacion no esta respaldada por ninguna documentacion oficial. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos.
 
@@ -78,5 +78,5 @@ No disponible. No es posible identificar modelos comparables al desconocerse la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kendrick222/MysticZimage
+- Repositorio en Hugging Face: https://huggingface.co/Kendrick222/MysticZimage
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

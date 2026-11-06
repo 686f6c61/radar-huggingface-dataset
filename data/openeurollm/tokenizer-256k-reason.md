@@ -79,6 +79,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/openeurollm/tokenizer-256k-reason
+- Hugging Face: https://huggingface.co/openeurollm/tokenizer-256k-reason
 - Tokenizador base: https://huggingface.co/openeurollm/tokenizer-256k
-- Organizacion OpenEuroLLM en HuggingFace: https://huggingface.co/openeurollm
+- Organizacion OpenEuroLLM en Hugging Face: https://huggingface.co/openeurollm

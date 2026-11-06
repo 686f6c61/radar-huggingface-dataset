@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Apriel-1.5-Text-Only (GGUF) | 14,4 mil millones | no disponible | no disponible | GGUF | HuggingFace (mradermacher) |
-| Modelo base ServiceNow-AI/Apriel-1.5-Text-Only | 14,4 mil millones | no disponible | no disponible | safetensors | HuggingFace (ServiceNow-AI) |
-| Alternativas de tamano similar (p. ej., Qwen2.5-14B, Mistral-Nemo-12B) | 12-14 mil millones | 32K-128K (segun modelo) | Apache 2.0 / otras | GGUF, safetensors | HuggingFace |
+| Apriel-1.5-Text-Only (GGUF) | 14,4 mil millones | no disponible | no disponible | GGUF | Hugging Face (mradermacher) |
+| Modelo base ServiceNow-AI/Apriel-1.5-Text-Only | 14,4 mil millones | no disponible | no disponible | safetensors | Hugging Face (ServiceNow-AI) |
+| Alternativas de tamano similar (p. ej., Qwen2.5-14B, Mistral-Nemo-12B) | 12-14 mil millones | 32K-128K (segun modelo) | Apache 2.0 / otras | GGUF, safetensors | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre Apriel 1.5 y otras familias de modelos de tamano similar en la informacion proporcionada, por lo que la comparativa se limita a parametros y disponibilidad.
 

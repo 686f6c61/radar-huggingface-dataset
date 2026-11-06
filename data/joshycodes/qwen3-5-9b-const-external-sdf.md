@@ -74,8 +74,8 @@ Como referencia externa del modelo base (no del checkpoint ajustado), una fuente
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| joshycodes/qwen3.5-9b-const-external-sdf | 8,95 B | no disponible | other / research-only | HuggingFace, safetensors, 0 descargas | Checkpoint de investigación, no desplegable |
-| Qwen/Qwen3.5-9B (base) | ~9 B | no disponible en la informacion proporcionada | no disponible | HuggingFace | Modelo base multimodal según fuentes web |
+| joshycodes/qwen3.5-9b-const-external-sdf | 8,95 B | no disponible | other / research-only | Hugging Face, safetensors, 0 descargas | Checkpoint de investigación, no desplegable |
+| Qwen/Qwen3.5-9B (base) | ~9 B | no disponible en la informacion proporcionada | no disponible | Hugging Face | Modelo base multimodal según fuentes web |
 | Alternativas de la clase 8-9 B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la información proporcionada |
 
 No se dispone de datos suficientes para comparar rendimiento con alternativas de la misma categoría: este checkpoint no tiene evaluaciones publicadas y la información sobre el modelo base en las fuentes de búsqueda es parcial.
@@ -95,7 +95,7 @@ No se dispone de datos suficientes para comparar rendimiento con alternativas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3.5-9b-const-external-sdf
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3.5-9b-const-external-sdf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Corpus de entrenamiento citado: https://huggingface.co/joshycodes/qwen-constitutional-sdf-corpus
 - Repositorio "welfare-improvements" citado en la model card: no disponible (sin URL en la información proporcionada)

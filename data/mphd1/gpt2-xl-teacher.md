@@ -3,7 +3,7 @@
 ## Resumen
 El modelo `mphd1/gpt2-xl-teacher` es un ajuste fino (fine-tune) del modelo base `openai-community/gpt2-xl`, desarrollado por el usuario mphd1. Se trata de un transformador causal de 1.500 millones de parámetros, heredado de la arquitectura GPT-2 de OpenAI, y su nombre sugiere que está pensado para ser utilizado como modelo profesor en procesos de destilación de conocimiento, similar a otros modelos como `MiniLLM/teacher-gpt2-1.5B`. Sin embargo, no se dispone de información pública sobre el dataset de entrenamiento ni los detalles del ajuste fino.
 
-El modelo se publica con licencia MIT (según los metadatos de HuggingFace), en formato safetensors, y está preparado para su uso con la librería Transformers. Aunque su ventana de contexto es limitada (1.024 tokens) y su rendimiento está por debajo de los modelos modernos, puede resultar útil como punto de partida para experimentos de destilación o para tareas de generación de texto en inglés donde se requiera un modelo ligero y de código abierto.
+El modelo se publica con licencia MIT (según los metadatos de Hugging Face), en formato safetensors, y está preparado para su uso con la librería Transformers. Aunque su ventana de contexto es limitada (1.024 tokens) y su rendimiento está por debajo de los modelos modernos, puede resultar útil como punto de partida para experimentos de destilación o para tareas de generación de texto en inglés donde se requiera un modelo ligero y de código abierto.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -14,7 +14,7 @@ El modelo se publica con licencia MIT (según los metadatos de HuggingFace), en 
 | Longitud de contexto | 1.024 tokens |
 | Tipos de cuantizacion | no disponible (se pueden aplicar GPTQ, AWQ, GGUF, etc.) |
 | Idiomas soportados | ingles (modelo base entrenado en ingles) |
-| Licencia | MIT (segun metadatos de HuggingFace) |
+| Licencia | MIT (segun metadatos de Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -52,10 +52,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mphd1/gpt2-xl-teacher | 1.5B | 1.024 | MIT | HuggingFace |
-| openai-community/gpt2-xl | 1.5B | 1.024 | MIT | HuggingFace |
-| MiniLLM/teacher-gpt2-1.5B | 1.5B | 1.024 | MIT (probable) | HuggingFace |
-| Llama 3.2 1.5B | 1.5B | 128K | Llama 3.2 Community | HuggingFace |
+| mphd1/gpt2-xl-teacher | 1.5B | 1.024 | MIT | Hugging Face |
+| openai-community/gpt2-xl | 1.5B | 1.024 | MIT | Hugging Face |
+| MiniLLM/teacher-gpt2-1.5B | 1.5B | 1.024 | MIT (probable) | Hugging Face |
+| Llama 3.2 1.5B | 1.5B | 128K | Llama 3.2 Community | Hugging Face |
 
 El modelo es practicamente identico al GPT-2 XL original salvo por el ajuste fino. Comparado con Llama 3.2 1.5B, es significativamente inferior en capacidad de razonamiento y contexto, pero tiene una licencia mas permisiva (MIT) y un ecosistema de herramientas mas maduro.
 
@@ -69,7 +69,7 @@ El modelo es practicamente identico al GPT-2 XL original salvo por el ajuste fin
 - No se han publicado detalles del ajuste fino, por lo que se desconoce si el entrenamiento introdujo sesgos adicionales o degradacion en ciertas tareas.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/mphd1/gpt2-xl-teacher
+- Modelo en Hugging Face: https://huggingface.co/mphd1/gpt2-xl-teacher
 - Modelo base GPT-2 XL: https://huggingface.co/openai-community/gpt2-xl
 - Modelo teacher de MiniLLM (referencia): https://huggingface.co/MiniLLM/teacher-gpt2-1.5B
 - Paper de MiniLLM (contexto de modelos profesor): https://arxiv.org/abs/2306.08543

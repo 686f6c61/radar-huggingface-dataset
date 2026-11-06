@@ -70,7 +70,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AW-0 (este checkpoint) | World-action model tri-modal (video + codigo + accion) | ~2B video + ~1,7B codigo + cabeza de difusion, mas componentes congelados | no disponible | BSD 2-Clause | HuggingFace (repositorio miniFranka) |
+| AW-0 (este checkpoint) | World-action model tri-modal (video + codigo + accion) | ~2B video + ~1,7B codigo + cabeza de difusion, mas componentes congelados | no disponible | BSD 2-Clause | Hugging Face (repositorio miniFranka) |
 | OpenVLA | Vision-language-action | ~7B | no disponible aqui | open source (verificar) | publica |
 | pi0 (Physical Intelligence) | Vision-language-action con flujo de difusion | no disponible aqui | no disponible aqui | verificar | publica |
 | GR00T N1 (NVIDIA) | Vision-language-action para robots humanoides | no disponible aqui | no disponible aqui | verificar | publica |
@@ -90,7 +90,7 @@ La diferencia estructural de AW-0 frente a los VLA clasicos es la co-denoised de
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/miniFranka/agentic-wam-pretrain-yamego3k-soup-e1
+- Hugging Face del modelo: https://huggingface.co/miniFranka/agentic-wam-pretrain-yamego3k-soup-e1
 - Perfil del autor: https://huggingface.co/miniFranka
 - Repositorio de codigo agentic-wam: https://github.com/ZhuoyangLiu2005/agentic-wam
 - Wan2.2 VAE (componente congelado): https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B

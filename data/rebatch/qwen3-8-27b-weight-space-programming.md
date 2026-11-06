@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Weight-Space-Programming es un derivado experimental del modelo Qwen/Qwen3.8-27B publicado por el usuario ReBatch en HuggingFace. No se trata de un fine-tuning convencional ni de un adaptador LoRA, sino de una edición directa de pesos (*weight-space programming*) que modifica una única proyección de salida MLP del modelo base. El checkpoint resultante mantiene la arquitectura y el tamaño del original (27.781.427.952 parámetros en BF16) pero incorpora un cambio localizado en la capa 29 que altera el comportamiento del modelo en la evaluación CCPBench.
+Qwen3.8-27B-Weight-Space-Programming es un derivado experimental del modelo Qwen/Qwen3.8-27B publicado por el usuario ReBatch en Hugging Face. No se trata de un fine-tuning convencional ni de un adaptador LoRA, sino de una edición directa de pesos (*weight-space programming*) que modifica una única proyección de salida MLP del modelo base. El checkpoint resultante mantiene la arquitectura y el tamaño del original (27.781.427.952 parámetros en BF16) pero incorpora un cambio localizado en la capa 29 que altera el comportamiento del modelo en la evaluación CCPBench.
 
 La relevancia de esta ficha es fundamentalmente metodológica: el autor documenta de forma explícita un compromiso medido entre la reducción de la puntuación en CCPBench (de 2.714 a 1.518 en escala 1-5) y el deterioro simultáneo en otras capacidades como IFBench, HumanEval, HumanEval+ y FinanceBench. El propio autor advierte que no se ha logrado preservar capacidades y que el resultado no demuestra mayor veracidad, neutralidad política ni mejora general del alineamiento. Es, por tanto, un artefacto de investigación sobre edición de parámetros, no un modelo listo para producción.
 
@@ -78,8 +78,8 @@ Evaluaciones locales pareadas sobre el modelo original y el checkpoint editado. 
 
 | Modelo | Parámetros | Contexto | CCPBench-A | IFBench laxa | HumanEval pass@1 | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---:|---|---|
-| Qwen3.8-27B-Weight-Space-Programming (este) | 27,78 B | no disponible | 1,518 | 66,00% | 96,95% | Apache 2.0 | HuggingFace (ReBatch) |
-| Qwen/Qwen3.8-27B (base) | 27,78 B | no disponible | 2,714 | 68,67% | 98,17% | Apache 2.0 | HuggingFace (Qwen) |
+| Qwen3.8-27B-Weight-Space-Programming (este) | 27,78 B | no disponible | 1,518 | 66,00% | 96,95% | Apache 2.0 | Hugging Face (ReBatch) |
+| Qwen/Qwen3.8-27B (base) | 27,78 B | no disponible | 2,714 | 68,67% | 98,17% | Apache 2.0 | Hugging Face (Qwen) |
 | Otras alternativas de 27B | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación directa documentada es con el modelo base, del que este checkpoint deriva. No se proporcionan datos de otros modelos de tamaño o categoría comparable en la información disponible.
@@ -99,7 +99,7 @@ La única comparación directa documentada es con el modelo base, del que este c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ReBatch/Qwen3.8-27B-Weight-Space-Programming
+- Modelo en Hugging Face: https://huggingface.co/ReBatch/Qwen3.8-27B-Weight-Space-Programming
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio CCPBench: https://github.com/lesageethan/CCPBench
 - Evaluador IFBench: https://github.com/allenai/IFBench

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Filipadamczyk/generation-2024` es un repositorio de investigación publicado en HuggingFace que contiene un prototipo de arquitectura Flamingo orientado a tareas de generación. Lo desarrolla el usuario Filipadamczyk y se distribuye con licencia MIT. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de implementación con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`Filipadamczyk/generation-2024` es un repositorio de investigación publicado en Hugging Face que contiene un prototipo de arquitectura Flamingo orientado a tareas de generación. Lo desarrolla el usuario Filipadamczyk y se distribuye con licencia MIT. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de implementación con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El repositorio incluye el código fuente (`run.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un archivo `model.safetensors` con 33.088 parámetros totales, un tamaño irrelevante para cualquier uso práctico. La model card es explícita: no se reclama ninguna puntuación de benchmark ni se presenta el checkpoint como entrenado.
 
@@ -43,7 +43,7 @@ No hay evidencia de entrenamiento: la model card indica que el checkpoint es "un
 - Base para experimentos académicos: un investigador puede partir de `run.py` y `config.json` para construir su propia variante y entrenarla con datos propios.
 - Docencia y formación: útil como ejemplo didáctico de estructura de repositorio de modelo (config, training args, checkpoint, README) en cursos de IA.
 - Comparación de recetas de entrenamiento: `training_args.json` documenta una receta Adafactor con schedule polinómico que puede replicarse o contrastarse con otras.
-- Referencia de licencia y formato: sirve como plantilla para publicar prototipos con licencia MIT y pesos en safetensors siguiendo convenciones de HuggingFace.
+- Referencia de licencia y formato: sirve como plantilla para publicar prototipos con licencia MIT y pesos en safetensors siguiendo convenciones de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -74,5 +74,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Filipadamczyk/generation-2024
+- Repositorio en Hugging Face: https://huggingface.co/Filipadamczyk/generation-2024
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la búsqueda web proporcionada.

@@ -116,7 +116,7 @@ La comparacion con el base sin adaptar es la mas informativa: el LoRA reduce el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imYChaudhary22/zen-polish-v22-lite
+- Modelo en Hugging Face: https://huggingface.co/imYChaudhary22/zen-polish-v22-lite
 - Version original v2.2 (6-bit): https://huggingface.co/imYChaudhary22/zen-polish-v22-4bit
 - Version v2.1 (1.7B, 4-bit): https://huggingface.co/imYChaudhary22/zen-polish-v2-1.7b-4bit
 - Version de 4B (v3.2): https://huggingface.co/imYChaudhary22/zen-polish-v32-4bit

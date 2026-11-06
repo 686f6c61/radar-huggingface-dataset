@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El artefacto `vanshthadani/python-tokenizer` es un repositorio alojado en HuggingFace Hub por el usuario vanshthadani, publicado el 11 de septiembre de 2026 y etiquetado con la librería `transformers`, la etiqueta `endpoints_compatible` y la referencia bibliográfica `arxiv:1910.09700`. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", por lo que no existe evidencia de uso, validación comunitaria ni adopción en producción.
+El artefacto `vanshthadani/python-tokenizer` es un repositorio alojado en Hugging Face Hub por el usuario vanshthadani, publicado el 11 de septiembre de 2026 y etiquetado con la librería `transformers`, la etiqueta `endpoints_compatible` y la referencia bibliográfica `arxiv:1910.09700`. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", por lo que no existe evidencia de uso, validación comunitaria ni adopción en producción.
 
-La model card publicada es la plantilla autogenerada por HuggingFace sin rellenar: todos los campos de descripción, desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación aparecen como `[More Information Needed]`. No se dispone, por tanto, de información sobre arquitectura, número de parámetros, longitud de contexto, tokenizador asociado, dataset de entrenamiento ni procedimiento de alineación.
+La model card publicada es la plantilla autogenerada por Hugging Face sin rellenar: todos los campos de descripción, desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación aparecen como `[More Information Needed]`. No se dispone, por tanto, de información sobre arquitectura, número de parámetros, longitud de contexto, tokenizador asociado, dataset de entrenamiento ni procedimiento de alineación.
 
 La única referencia técnica real del repositorio es la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. (2019) sobre el cálculo de emisiones de carbono en aprendizaje automático. Esa cita procede de la propia plantilla de model card y no describe el artefacto, de modo que no aporta información sobre su naturaleza. El nombre del repositorio sugiere que podría tratarse de un tokenizador orientado a código Python, pero esto es una inferencia a partir del identificador y no un dato confirmado por el autor.
 
@@ -25,7 +25,7 @@ La única referencia técnica real del repositorio es la etiqueta `arxiv:1910.09
 
 No disponible. La model card no especifica arquitectura (transformer, MoE, SSM o híbrida), dimensión de las capas, número de cabezas de atención, vocabulario, ni si existe algún componente de decodificación especulativa, atención lineal u otra innovación técnica. Tampoco se documenta si el artefacto contiene pesos de un modelo entrenado o únicamente ficheros auxiliares de tokenización.
 
-No hay información sobre el volumen de datos de entrenamiento, la composición del corpus, el número de tokens procesados, ni sobre si se aplicaron técnicas de ajuste como RLHF, DPO o SFT. La única metadato declarado es la librería `transformers` y la etiqueta `endpoints_compatible`, que indica compatibilidad nominal con los endpoints gestionados de HuggingFace, pero no aporta detalles sobre el contenido del repositorio.
+No hay información sobre el volumen de datos de entrenamiento, la composición del corpus, el número de tokens procesados, ni sobre si se aplicaron técnicas de ajuste como RLHF, DPO o SFT. La única metadato declarado es la librería `transformers` y la etiqueta `endpoints_compatible`, que indica compatibilidad nominal con los endpoints gestionados de Hugging Face, pero no aporta detalles sobre el contenido del repositorio.
 
 ## Capacidades
 
@@ -74,11 +74,11 @@ No disponible. No es posible identificar modelos comparables al no conocerse la 
 - Imposibilidad de auditar sesgos o alucinaciones: no hay información sobre datos de entrenamiento, por lo que no pueden evaluarse sesgos, toxicidad ni tasa de alucinación.
 - Ámbito lingüístico desconocido: no se declara ningún idioma soportado, ni siquiera el inglés.
 - Fecha de publicación inusual (11 de septiembre de 2026), posterior a la fecha habitual de referencia; conviene verificar la vigencia y autoría del repositorio antes de cualquier uso.
-- La cita `arxiv:1910.09700` no debe interpretarse como el artículo del modelo: es la referencia genérica al calculador de impacto medioambiental incluida en la plantilla de HuggingFace.
+- La cita `arxiv:1910.09700` no debe interpretarse como el artículo del modelo: es la referencia genérica al calculador de impacto medioambiental incluida en la plantilla de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vanshthadani/python-tokenizer
+- Repositorio en Hugging Face: https://huggingface.co/vanshthadani/python-tokenizer
 - Artículo citado en la etiqueta del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automático): https://arxiv.org/abs/1910.09700
 - Calculador de impacto citado en la plantilla de la model card: https://mlco2.github.io/impact
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este artefacto; los resultados devueltos corresponden a páginas de ayuda de YouTube y no guardan relación con el modelo.

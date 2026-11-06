@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`diegoalvesve/blip-generation` es un prototipo de investigacion publicado en HuggingFace por el usuario diegoalvesve, etiquetado como `blip` y orientado a tareas de generacion. No se trata de un modelo entrenado ni evaluado: la propia model card lo describe como un "initialization checkpoint" valido para pruebas de humo (smoke tests) y como punto de partida experimental, sin ninguna metrica de rendimiento declarada. El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 likes en el momento de la consulta, lo que confirma su caracter de artefacto de investigacion sin adopcion.
+`diegoalvesve/blip-generation` es un prototipo de investigacion publicado en Hugging Face por el usuario diegoalvesve, etiquetado como `blip` y orientado a tareas de generacion. No se trata de un modelo entrenado ni evaluado: la propia model card lo describe como un "initialization checkpoint" valido para pruebas de humo (smoke tests) y como punto de partida experimental, sin ninguna metrica de rendimiento declarada. El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 likes en el momento de la consulta, lo que confirma su caracter de artefacto de investigacion sin adopcion.
 
 El checkpoint contiene 33.088 parametros totales segun los metadatos de safetensors, una magnitud que corresponde a una inicializacion minima y no a un modelo funcional de generacion de texto o imagenes. La configuracion declara escala "huge", atencion de ventana deslizante (sliding window), fusion mediante "concat mlp", activacion ReLU y normalizacion LayerNorm. Cabe subrayar que la etiqueta "huge" es un campo de configuracion, no una descripcion del tamano real del artefacto.
 
@@ -95,7 +95,7 @@ La diferencia fundamental no es de tamano, sino de estado: los modelos de Salesf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/diegoalvesve/blip-generation
+- Hugging Face: https://huggingface.co/diegoalvesve/blip-generation
 - Paper original de BLIP (referencia externa no incluida en los resultados de busqueda): https://arxiv.org/abs/2201.12086
 - Paper original de BLIP-2 (referencia externa no incluida en los resultados de busqueda): https://arxiv.org/abs/2301.12597
 - Repositorio oficial de BLIP en GitHub (referencia externa no incluida en los resultados de busqueda): https://github.com/salesforce/BLIP

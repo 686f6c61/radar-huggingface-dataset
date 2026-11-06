@@ -23,7 +23,7 @@ Se trata de un modelo especializado y de nicho, no de un modelo conversacional: 
 | Tamano del repositorio | 0,8 GB |
 | Libreria | coreml |
 | Modelo base | answerdotai/ModernBERT-large |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -88,7 +88,7 @@ La comparación directa con alternativas de la misma categoría es limitada: Mod
 
 ## Enlaces
 
-- [HuggingFace: crozierm/eyes-and-ears-attribution](https://huggingface.co/crozierm/eyes-and-ears-attribution)
-- [ModernBookNLP en HuggingFace](https://huggingface.co/gasmichel/ModernBookNLP)
+- [Hugging Face: crozierm/eyes-and-ears-attribution](https://huggingface.co/crozierm/eyes-and-ears-attribution)
+- [ModernBookNLP en Hugging Face](https://huggingface.co/gasmichel/ModernBookNLP)
 - [Código de ModernBookNLP_QA](https://github.com/gasmichel/ModernBookNLP_QA)
 - [ModernBERT-large](https://huggingface.co/answerdotai/ModernBERT-large)

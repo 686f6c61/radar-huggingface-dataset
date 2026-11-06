@@ -70,8 +70,8 @@ No se dispone de datos comparativos con otras cuantizaciones del mismo modelo (p
 
 ## Enlaces
 
-- [Modelo en HuggingFace (Q4_K_R4)](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q4_K_R4-SPECIAL_SPLIT)
-- [Modelo BF16 de Thireus en HuggingFace](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT)
+- [Modelo en Hugging Face (Q4_K_R4)](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q4_K_R4-SPECIAL_SPLIT)
+- [Modelo BF16 de Thireus en Hugging Face](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT)
 - [Documentación de Unsloth sobre Qwen3.8](https://unsloth.ai/docs/models/qwen3.8)
 - [Artículo de AMD sobre ejecución en hardware AMD](https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html)
 - [Artículo de Yottalabs con especificaciones de Qwen3.8-27B](https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026)

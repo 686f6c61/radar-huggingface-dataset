@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nramirezro/vit-baseline` es un repositorio de HuggingFace publicado por el usuario nramirezro que contiene una implementación funcional de un Vision Transformer (ViT) orientada a aprendizaje contrastivo, configurada en escala "tiny". No se trata de un modelo entrenado ni publicado como checkpoint de referencia, sino de un esqueleto de código reproducible con un checkpoint de inicialización válido para pruebas de humo (smoke tests). El autor declara explícitamente que no se reclama ninguna métrica de benchmark y que el checkpoint no ha sido entrenado.
+`nramirezro/vit-baseline` es un repositorio de Hugging Face publicado por el usuario nramirezro que contiene una implementación funcional de un Vision Transformer (ViT) orientada a aprendizaje contrastivo, configurada en escala "tiny". No se trata de un modelo entrenado ni publicado como checkpoint de referencia, sino de un esqueleto de código reproducible con un checkpoint de inicialización válido para pruebas de humo (smoke tests). El autor declara explícitamente que no se reclama ninguna métrica de benchmark y que el checkpoint no ha sido entrenado.
 
 El modelo emplea una arquitectura ViT estándar con atención estándar, fusión mediante cross attention, activación swish y normalización por batchnorm. El recuento real de parámetros almacenados en el fichero safetensors es de 33.088, lo que confirma la escala "tiny" del diseño. La receta de entrenamiento por defecto usa el optimizador RMSprop con un schedule exponencial, valores de partida en el script y no evidencia de un entrenamiento completado.
 
@@ -41,7 +41,7 @@ No hay evidencia de entrenamiento completado: el fichero `model.safetensors` se 
 - Checkpoint de inicialización válido para pruebas de humo, no para inferencia de calidad.
 - No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingües.
 - No se documentan capacidades de visión-a-texto, audio ni modo thinking.
-- No se declara pipeline de HuggingFace disponible.
+- No se declara pipeline de Hugging Face disponible.
 
 ## Casos de uso
 
@@ -51,7 +51,7 @@ No hay evidencia de entrenamiento completado: el fichero `model.safetensors` se 
 - Baseline de capacidad mínima: útil como referencia de baja capacidad en comparativas controladas, siempre que se entrene con la misma exposición de datos y semillas que los demás baselines.
 - Docencia y formación: el código transparente y el tamaño reducido (33.088 parámetros) facilitan explicar el funcionamiento interno de un ViT y de una pérdida contrastiva sin requerir hardware potente.
 - Experimentación con fusión por cross attention: la configuración declarada permite probar estrategias de fusión entre ramas o modalidades en un entorno ligero.
-- Integración en pipelines de investigación con adaptador explícito: al ser una implementación personalizada, requiere un adaptador para las APIs automáticas de carga de HuggingFace, lo que encaja en flujos de investigación que ya gestionan código propio.
+- Integración en pipelines de investigación con adaptador explícito: al ser una implementación personalizada, requiere un adaptador para las APIs automáticas de carga de Hugging Face, lo que encaja en flujos de investigación que ya gestionan código propio.
 
 ## Benchmarks y rendimiento
 
@@ -83,4 +83,4 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nramirezro/vit-baseline
+- Hugging Face: https://huggingface.co/nramirezro/vit-baseline

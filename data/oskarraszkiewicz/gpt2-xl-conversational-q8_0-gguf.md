@@ -88,7 +88,7 @@ Nota: los datos de los modelos comparables corresponden a especificaciones públ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oskarraszkiewicz/gpt2-xl-conversational-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/oskarraszkiewicz/gpt2-xl-conversational-Q8_0-GGUF
 - Modelo base: https://huggingface.co/Locutusque/gpt2-xl-conversational
 - Dataset de ajuste: https://huggingface.co/datasets/Locutusque/InstructMix
 - llama.cpp: https://github.com/ggerganov/llama.cpp

@@ -84,8 +84,8 @@ No hay datos publicados en la informacion disponible sobre otras politicas VLA c
 
 | Modelo | Parametros | Contexto | Tarea | Exito LIBERO-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| cosmos3-nano-libero10-sdg-export-S5_2_s43 (este) | 15,17 mil millones | No disponible | Politica VLA, LIBERO-10, celda reestilizada semilla 43 | 91,8 % estandar / 86,8 % perturbado | NVIDIA Open Model License | Publico en HuggingFace (10 descargas, 0 likes) |
-| nvidia/Cosmos3-Nano (base) | No disponible | No disponible | Modelo base Cosmos3 omni, punto de partida del post-entrenamiento | No disponible | NVIDIA Open Model License | Publico en HuggingFace |
+| cosmos3-nano-libero10-sdg-export-S5_2_s43 (este) | 15,17 mil millones | No disponible | Politica VLA, LIBERO-10, celda reestilizada semilla 43 | 91,8 % estandar / 86,8 % perturbado | NVIDIA Open Model License | Publico en Hugging Face (10 descargas, 0 likes) |
+| nvidia/Cosmos3-Nano (base) | No disponible | No disponible | Modelo base Cosmos3 omni, punto de partida del post-entrenamiento | No disponible | NVIDIA Open Model License | Publico en Hugging Face |
 | D2_s43 (control emparejado) | No disponible | No disponible | Control del mismo estudio, sin reestilizado | No disponible (solo se publica el delta de 1,3 puntos en perturbado) | No disponible | No disponible como repositorio independiente en la informacion consultada |
 | Otras politicas VLA open source (OpenVLA, pi0, etc.) | No disponible | No disponible | Manipulacion robotica | No disponible | No disponible | No disponible |
 
@@ -105,10 +105,10 @@ No hay datos publicados en la informacion disponible sobre otras politicas VLA c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/cosmos3-nano-libero10-sdg-export-S5_2_s43
+- Modelo en Hugging Face: https://huggingface.co/nvidia/cosmos3-nano-libero10-sdg-export-S5_2_s43
 - Modelo base: https://huggingface.co/nvidia/Cosmos3-Nano
 - Licencia (NVIDIA Open Model License, enlazada desde el modelo base): https://huggingface.co/nvidia/Cosmos3-Nano
-- Dataset LIBERO-10 utilizado para el entrenamiento: identificador `nvidia/LIBERO_LeRobot_v3` en HuggingFace (no se redistribuye en este repositorio)
+- Dataset LIBERO-10 utilizado para el entrenamiento: identificador `nvidia/LIBERO_LeRobot_v3` en Hugging Face (no se redistribuye en este repositorio)
 - Receta "Restyle LIBERO-10 Demonstrations with Cosmos3-Nano-Sim-Transfer and Measure the Gain Against a Matched Control", del Cosmos Cookbook: mencionada en la model card, sin URL disponible en la informacion consultada
 - Framework de inferencia `cosmos-framework`, v1.2.2 (commit `c23e51f2`): sin URL disponible en la informacion consultada
 - Los resultados de la busqueda web no contienen enlaces relevantes al modelo (solo paginas generales de NVIDIA sobre controladores y tienda).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-J.A.R.V.I.S. Titan V15 MoE Merged es un modelo de generación de texto publicado por el usuario dhanesh-hf en HuggingFace, identificado como el hito M4 de la familia Jarvis Titan. Se trata de un merge standalone de los pesos del modelo DeepSeekMoE de 14,8B parámetros (dato real de safetensors: 14.835.469.845) con un adaptador calibrado denominado Tri-Brid. El repositorio ocupa 29,7 GB, lo que es coherente con pesos en precisión bf16/fp16, y se distribuye en formato safetensors con código personalizado (etiqueta `custom_code`), lo que implica que su carga requiere `trust_remote_code=True`.
+J.A.R.V.I.S. Titan V15 MoE Merged es un modelo de generación de texto publicado por el usuario dhanesh-hf en Hugging Face, identificado como el hito M4 de la familia Jarvis Titan. Se trata de un merge standalone de los pesos del modelo DeepSeekMoE de 14,8B parámetros (dato real de safetensors: 14.835.469.845) con un adaptador calibrado denominado Tri-Brid. El repositorio ocupa 29,7 GB, lo que es coherente con pesos en precisión bf16/fp16, y se distribuye en formato safetensors con código personalizado (etiqueta `custom_code`), lo que implica que su carga requiere `trust_remote_code=True`.
 
 El modelo deriva del checkpoint dhanesh-hf/Jarvis-Titan-V14-MoE-Merged y no presenta descargas ni likes en el momento de redactar esta ficha, por lo que no existe validación independiente de su comportamiento. La arquitectura combina un backbone DeepSeekMoE con enrutamiento Top-2 sobre 8 expertos enrutados más 1 experto compartido, e incorpora tres niveles de memoria: atención de ventana deslizante con ventana de 2048 tokens, un subespacio de recuperación exacta de KV con dimensión 512 y una memoria neural tipo Titans con recurrencia de aprendizaje en tiempo de inferencia.
 
@@ -101,7 +101,7 @@ Diferencias clave: frente a DeepSeekMoE 16B, del que hereda el esquema de expert
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhanesh-hf/Jarvis-Titan-V15-MoE-Merged
+- Modelo en Hugging Face: https://huggingface.co/dhanesh-hf/Jarvis-Titan-V15-MoE-Merged
 - Modelo base (V14 MoE Merged): https://huggingface.co/dhanesh-hf/Jarvis-Titan-V14-MoE-Merged
 - Fichero de licencia referenciado en la model card: https://huggingface.co/dhanesh-hf/Jarvis-Titan-V15-MoE-Merged/blob/main/LICENSE
 - Paper, blog, repositorio o demo adicionales: no disponibles. La búsqueda web realizada no devolvió resultados relacionados con el modelo (únicamente páginas corporativas de Microsoft, sin relación con esta ficha).

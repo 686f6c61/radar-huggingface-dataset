@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nld-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407` es un ajuste fino (SFT) publicado por el usuario de HuggingFace francesca9805, vinculado al proyecto de experimentación con tokenizadores del grupo de Weights & Biases de la Universidad de Groningen. Se trata de un modelo de generación de texto de arquitectura GPT-2 con 124.770.816 parámetros, derivado a su vez de otro checkpoint del mismo autor (`ppt-wc-loglinear-newlex-nld-before-100mb-packed-bfdiso_seed3407`). Por su nomenclatura y por el proyecto en el que se enmarca, todo apunta a un experimento académico centrado en comparar tokenizadores y estrategias de empaquetado de secuencias sobre un corpus de aproximadamente 100 MB, más que a un modelo pensado para uso productivo.
+El modelo `nld-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407` es un ajuste fino (SFT) publicado por el usuario de Hugging Face francesca9805, vinculado al proyecto de experimentación con tokenizadores del grupo de Weights & Biases de la Universidad de Groningen. Se trata de un modelo de generación de texto de arquitectura GPT-2 con 124.770.816 parámetros, derivado a su vez de otro checkpoint del mismo autor (`ppt-wc-loglinear-newlex-nld-before-100mb-packed-bfdiso_seed3407`). Por su nomenclatura y por el proyecto en el que se enmarca, todo apunta a un experimento académico centrado en comparar tokenizadores y estrategias de empaquetado de secuencias sobre un corpus de aproximadamente 100 MB, más que a un modelo pensado para uso productivo.
 
 No resuelve un problema de producto concreto: es un artefacto de investigación cuyo interés principal es reproducir y auditar una configuración de entrenamiento concreta. El entrenamiento se realizó con SFT mediante la librería TRL (versión 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0, con seguimiento en Weights & Biases bajo el proyecto `new-tokenizers`. El nombre del checkpoint indica además que se trata de una ejecución con semilla fija (3407), con un tratamiento previo del corpus (`packed`, `bfdiso`) y con un nuevo léxico de tokenizador (`newlex`).
 
@@ -54,7 +54,7 @@ El entrenamiento se realizó mediante ajuste supervisado (SFT) con TRL, partiend
 - Estudios de empaquetado de secuencias: el sufijo `packed` indica que el entrenamiento usó secuencias empaquetadas; el checkpoint permite medir el impacto de esa técnica en la pérdida y en la calidad de generación frente a un entrenamiento sin empaquetar con el mismo corpus de 100 MB.
 - Generación de texto en neerlandés a pequeña escala (si se confirma el idioma): con 124,77 M de parámetros y ajuste sobre unos 100 MB de datos, podría emplearse en tareas de continuación de texto o generación de respuestas cortas en un dominio acotado, siempre con revisión humana.
 - Prototipado educativo: por su tamaño reducido cabe en cualquier GPU de consumo, lo que lo hace útil para prácticas de despliegue de modelos con `transformers` o `text-generation-inference` sin necesidad de infraestructura dedicada.
-- Pruebas de integración de endpoints compatibles: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en infraestructuras compatibles con la API de HuggingFace Inference Endpoints para validar flujos de servicio.
+- Pruebas de integración de endpoints compatibles: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en infraestructuras compatibles con la API de Hugging Face Inference Endpoints para validar flujos de servicio.
 - No se recomienda su uso en producción orientada a usuarios finales: no hay licencia definida, no hay evaluación publicada y no hay garantías de calidad, seguridad ni sesgo controlado.
 
 ## Benchmarks y rendimiento
@@ -78,10 +78,10 @@ La model card no incluye métricas de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evaluaciones publicadas |
 |---|---|---|---|---|---|
-| nld-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407 | 124.770.816 | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
+| nld-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407 | 124.770.816 | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
 | GPT-2 small | 124 M | 1024 tokens | MIT (segun su model card) | Ampliamente disponible, integrado en `transformers` | Si, ampliamente documentadas |
 | distilgpt2 | 82 M | 1024 tokens | Apache 2.0 (segun su model card) | Ampliamente disponible en `transformers` | Si, parcialmente documentadas |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens (configuracion tipica de la familia) | Apache 2.0 (segun su model card) | HuggingFace, muy difundido | Si |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens (configuracion tipica de la familia) | Apache 2.0 (segun su model card) | Hugging Face, muy difundido | Si |
 
 La comparación de rendimiento con cualquiera de estos modelos no es posible: no existe ninguna evaluación publicada del modelo analizado. En la práctica, el único aspecto en el que se puede situar frente a GPT-2 small o distilgpt2 es el recuento de parámetros y el formato de pesos (safetensors en los tres casos). Cualquier afirmación sobre calidad de generación, sesgos o capacidades relativas carecería de respaldo empírico.
 
@@ -100,7 +100,7 @@ La comparación de rendimiento con cualquiera de estos modelos no es posible: no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-nld-before-100mb-packed-bfdiso_seed3407
 - Panel de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/5vgu699l
 - Repositorio de TRL: https://github.com/huggingface/trl

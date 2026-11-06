@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de modelos comparables documentados en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ronaldodev/fon-asr-v4
+- Repositorio Hugging Face: https://huggingface.co/Ronaldodev/fon-asr-v4
 - Modelo base: https://huggingface.co/Ronaldodev/whisper-fon-v4
 - whisper.cpp: https://github.com/ggerganov/whisper.cpp
 - faster-whisper (CTranslate2): no se proporciona enlace en la informacion disponible

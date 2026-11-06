@@ -6,7 +6,7 @@
 
 El modelo forma parte de la colección `benchmark-slm`, una iniciativa del grupo para evaluar de forma sistemática modelos de lenguaje pequeños (SLM) combinando distintos modelos base, datasets y estrategias de entrenamiento. Su valor principal es comparativo: permite medir el impacto del fine-tuning de Gemma 4 E4B en tareas conversacionales en italiano frente a otras combinaciones de la misma serie.
 
-Se trata de un artefacto muy reciente (creado en octubre de 2026), con acceso restringido (gated) en HuggingFace y sin documentación pública detallada todavía: no constan benchmarks propios, licencia explícita ni métricas de entrenamiento.
+Se trata de un artefacto muy reciente (creado en octubre de 2026), con acceso restringido (gated) en Hugging Face y sin documentación pública detallada todavía: no constan benchmarks propios, licencia explícita ni métricas de entrenamiento.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ Se trata de un artefacto muy reciente (creado en octubre de 2026), con acceso re
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible (adaptador en safetensors sin cuantización indicada; dependerá del modelo base) |
 | Idiomas soportados | Italiano (it) |
-| Licencia | no disponible (acceso gated: requiere aceptar condiciones en HuggingFace) |
+| Licencia | no disponible (acceso gated: requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 
 ## Arquitectura y entrenamiento
@@ -84,7 +84,7 @@ La variante con Gemma 2 2B es el comparador más directo: mismo dataset y estrat
 
 - Ficha del modelo: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-4-4b-clmsft
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
-- Organización en HuggingFace: https://huggingface.co/praiselab-picuslab
+- Organización en Hugging Face: https://huggingface.co/praiselab-picuslab
 - Datasets de la organización: https://huggingface.co/praiselab-picuslab/datasets
 - Colección benchmark-slm: https://huggingface.co/models?other=benchmark-slm
 - GitHub de PRAISELab-PicusLab: https://github.com/PRAISELab-PicusLab

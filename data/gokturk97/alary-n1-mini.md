@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Alary-n1-mini es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-0.5B-Instruct, publicado por el usuario Gokturk97 en HuggingFace bajo licencia Apache-2.0. Se trata de un modelo de generacion de texto de tipo decoder-only, con 494.032.768 parametros reales confirmados en los pesos safetensors del repositorio (aproximadamente 0,49 mil millones), lo que lo situa en la gama ultraligera de modelos conversacionales. El problema que aborda es el de ofrecer un asistente conversacional bilingue turco-ingles con un coste computacional minimo, apto para ejecucion en CPU o en GPUs de gama de entrada.
+Alary-n1-mini es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-0.5B-Instruct, publicado por el usuario Gokturk97 en Hugging Face bajo licencia Apache-2.0. Se trata de un modelo de generacion de texto de tipo decoder-only, con 494.032.768 parametros reales confirmados en los pesos safetensors del repositorio (aproximadamente 0,49 mil millones), lo que lo situa en la gama ultraligera de modelos conversacionales. El problema que aborda es el de ofrecer un asistente conversacional bilingue turco-ingles con un coste computacional minimo, apto para ejecucion en CPU o en GPUs de gama de entrada.
 
 El modelo hereda la arquitectura y la ventana de contexto del Qwen2.5-0.5B-Instruct, por lo que su valor anadido no reside en innovaciones arquitectonicas propias, sino en el ajuste sobre datos en turco e ingles declarado por el autor. Es relevante en el contexto actual de modelos pequenos orientados a despliegue local y a tareas de bajo coste, donde un modelo de medio billon de parametros puede cubrir clasificacion, resumenes cortos o generacion asistida sin necesidad de infraestructura dedicada.
 
-La model card publicada es minima: solo incluye metadatos de licencia, idiomas, modelo base y categoria de pipeline, sin informacion sobre dataset de ajuste, hiperparametros, proceso de alineamiento ni evaluaciones. El repositorio presenta cero descargas y cero interacciones en el momento de la consulta, y fue creado y actualizado el 19 de septiembre de 2026 segun los metadatos de HuggingFace.
+La model card publicada es minima: solo incluye metadatos de licencia, idiomas, modelo base y categoria de pipeline, sin informacion sobre dataset de ajuste, hiperparametros, proceso de alineamiento ni evaluaciones. El repositorio presenta cero descargas y cero interacciones en el momento de la consulta, y fue creado y actualizado el 19 de septiembre de 2026 segun los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| Gokturk97/alary-n1-mini | 494 M | No especificado por el autor | Apache-2.0 | HuggingFace, pesos safetensors | No disponible |
-| Qwen/Qwen2.5-0.5B-Instruct | 494 M (aproximado) | 32.768 tokens declarados | Apache-2.0 | HuggingFace, safetensors, GGUF oficiales | No disponible en esta ficha |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5 B (aproximado) | 32.768 tokens declarados | Apache-2.0 | HuggingFace, safetensors, GGUF oficiales | No disponible en esta ficha |
-| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1 B (aproximado) | No disponible en esta ficha | Apache-2.0 | HuggingFace | No disponible en esta ficha |
+| Gokturk97/alary-n1-mini | 494 M | No especificado por el autor | Apache-2.0 | Hugging Face, pesos safetensors | No disponible |
+| Qwen/Qwen2.5-0.5B-Instruct | 494 M (aproximado) | 32.768 tokens declarados | Apache-2.0 | Hugging Face, safetensors, GGUF oficiales | No disponible en esta ficha |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5 B (aproximado) | 32.768 tokens declarados | Apache-2.0 | Hugging Face, safetensors, GGUF oficiales | No disponible en esta ficha |
+| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1 B (aproximado) | No disponible en esta ficha | Apache-2.0 | Hugging Face | No disponible en esta ficha |
 
 La comparacion se limita a parametros, licencia y disponibilidad porque no existen evaluaciones publicadas del modelo analizado ni una model card que permita establecer una comparacion de calidad frente a sus alternativas.
 
@@ -93,7 +93,7 @@ La comparacion se limita a parametros, licencia y disponibilidad porque no exist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gokturk97/alary-n1-mini
+- Modelo en Hugging Face: https://huggingface.co/Gokturk97/alary-n1-mini
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio oficial de Qwen2.5: https://github.com/QwenLM/Qwen2.5
 - Documentacion de transformers: https://huggingface.co/docs/transformers/index

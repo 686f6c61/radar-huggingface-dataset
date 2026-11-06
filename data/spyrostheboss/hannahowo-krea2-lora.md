@@ -74,6 +74,6 @@ No se dispone de comparativas directas con otros LoRA de personaje para Krea 2, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/spyrostheboss/hannahowo-krea2-lora
+- Repositorio Hugging Face: https://huggingface.co/spyrostheboss/hannahowo-krea2-lora
 - Repositorio de Krea 2 (implementación y script de inferencia): https://github.com/krea-ai/krea-2
 - Modelo base Krea 2 Raw: https://huggingface.co/krea/Krea-2-Raw (referenciado en la model card)

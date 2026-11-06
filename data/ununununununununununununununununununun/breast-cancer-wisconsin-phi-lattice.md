@@ -69,7 +69,7 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Contexto | Precision declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `breast-cancer-wisconsin-phi-lattice` | no disponible | no aplica (tabular) | 95,80 % limpia / 93,01 % con ruido | MIT | HuggingFace |
+| `breast-cancer-wisconsin-phi-lattice` | no disponible | no aplica (tabular) | 95,80 % limpia / 93,01 % con ruido | MIT | Hugging Face |
 | Baseline FP32 del mismo autor | no disponible | no aplica | 95,10 % / 92,31 % | MIT (implicita) | Incluido como referencia en la model card |
 | Cuantizacion uniforme 2 bits del mismo autor | no disponible | no aplica | 95,80 % / 91,61 % | MIT (implicita) | Incluido como referencia en la model card |
 
@@ -88,7 +88,7 @@ No se dispone de informacion sobre otros clasificadores tabulares publicos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ununununununununununununununununununun/breast-cancer-wisconsin-phi-lattice
+- Modelo en Hugging Face: https://huggingface.co/ununununununununununununununununununun/breast-cancer-wisconsin-phi-lattice
 - Dataset Breast Cancer Wisconsin (Diagnostic): no disponible en la informacion proporcionada
 - Paper o blog sobre `phi-lattice`: no disponible en la informacion proporcionada
 - Repositorio de codigo: no disponible en la informacion proporcionada

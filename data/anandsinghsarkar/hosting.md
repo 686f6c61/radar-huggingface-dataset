@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `Anandsinghsarkar/Hosting`, publicado por el usuario Anandsinghsarkar en HuggingFace, no contiene informacion suficiente para identificarlo como un modelo de IA con arquitectura y pesos definidos. La model card se limita a una linea de metadatos (`license: mit`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni likes, y no tiene pipeline asignado.
+El repositorio `Anandsinghsarkar/Hosting`, publicado por el usuario Anandsinghsarkar en Hugging Face, no contiene informacion suficiente para identificarlo como un modelo de IA con arquitectura y pesos definidos. La model card se limita a una linea de metadatos (`license: mit`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni likes, y no tiene pipeline asignado.
 
-Por el nombre del repositorio ("Hosting") y la ausencia de cualquier especificacion tecnica, es plausible que se trate de un espacio de prueba, un contenedor de artefactos auxiliares o un repositorio creado para experimentar con el alojamiento en HuggingFace, pero no hay evidencia en la informacion proporcionada que permita confirmarlo. No se dispone de datos sobre parametros, longitud de contexto, tokenizador ni formato de pesos.
+Por el nombre del repositorio ("Hosting") y la ausencia de cualquier especificacion tecnica, es plausible que se trate de un espacio de prueba, un contenedor de artefactos auxiliares o un repositorio creado para experimentar con el alojamiento en Hugging Face, pero no hay evidencia en la informacion proporcionada que permita confirmarlo. No se dispone de datos sobre parametros, longitud de contexto, tokenizador ni formato de pesos.
 
 En consecuencia, esta ficha se limita a documentar los metadatos disponibles y a marcar explicitamente como "no disponible" todos los apartados tecnicos que no pueden verificarse. No debe interpretarse como una evaluacion de capacidades del modelo, ya que no hay modelo documentado que evaluar.
 
@@ -38,11 +38,11 @@ No se dispone de datos sobre el corpus de entrenamiento: numero de tokens, compo
 
 ## Casos de uso
 
-- Evaluacion de infraestructura de alojamiento: el repositorio podria emplearse como banco de pruebas para verificar flujos de subida, versionado y descarga en HuggingFace, dada la ausencia de pesos documentados.
+- Evaluacion de infraestructura de alojamiento: el repositorio podria emplearse como banco de pruebas para verificar flujos de subida, versionado y descarga en Hugging Face, dada la ausencia de pesos documentados.
 - Pruebas de integracion de CI/CD con el Hub: util para validar pipelines que crean repositorios, aplican metadatos de licencia y comprueban permisos, sin depender de un modelo real.
 - Verificacion de plantillas de model card: sirve como ejemplo minimo de README con frontmatter YAML y licencia declarada para testear validadores de metadatos.
 - Demostracion de gobernanza de licencias: permite comprobar como se propaga una licencia MIT en herramientas de escaneo de dependencias y catalogos internos.
-- Formacion interna sobre publicacion en HuggingFace: ejemplo de repositorio incompleto que ilustra los campos obligatorios que debe contener una ficha de modelo antes de su publicacion.
+- Formacion interna sobre publicacion en Hugging Face: ejemplo de repositorio incompleto que ilustra los campos obligatorios que debe contener una ficha de modelo antes de su publicacion.
 - Pruebas de monitorizacion de repositorios: util para validar alertas sobre repositorios sin descargas, sin pipeline y sin documentacion tecnica.
 
 En ningun caso estos casos de uso implican inferencia con el modelo, ya que no hay modelo documentado.
@@ -76,5 +76,5 @@ No disponible. No es posible establecer una comparativa porque no se ha identifi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Anandsinghsarkar/Hosting
+- Repositorio en Hugging Face: https://huggingface.co/Anandsinghsarkar/Hosting
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este repositorio.

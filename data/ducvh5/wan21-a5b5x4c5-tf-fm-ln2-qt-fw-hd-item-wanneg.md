@@ -76,5 +76,5 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tf-fm-ln2-qt-fw-hd-item-wanneg
+- Hugging Face: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tf-fm-ln2-qt-fw-hd-item-wanneg
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers

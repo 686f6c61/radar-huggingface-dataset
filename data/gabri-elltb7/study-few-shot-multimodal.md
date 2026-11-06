@@ -64,7 +64,7 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gabri-elltb7/study-few-shot-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/gabri-elltb7/study-few-shot-multimodal
 - Artículo relacionado (IEEE): "Multimodality Helps Unimodality: Cross-Modal Few-Shot Learning with Multimodal Models" - https://ieeexplore.ieee.org/document/10205126
 - Versión en NSF PAR: https://par.nsf.gov/biblio/10475152-multimodality-helps-unimodality-cross-modal-few-shot-learning-multimodal-models
 - Wikipedia sobre aprendizaje multimodal: https://en.wikipedia.org/wiki/Multimodal_learning

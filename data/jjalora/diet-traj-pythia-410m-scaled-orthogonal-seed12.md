@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `jjalora/diet-traj-pythia-410m-scaled-orthogonal-seed12` | 410M | no disponible | Apache 2.0 | HuggingFace | Checkpoint de investigación de la campaña DIET |
-| `EleutherAI/pythia-410m` | 410M | 2048 | Apache 2.0 | HuggingFace | Modelo base de referencia con esquema de inicialización estándar |
-| `EleutherAI/pythia-410m-deduped` | 410M | 2048 | Apache 2.0 | HuggingFace | Variante entrenada sobre The Pile deduplicado |
+| `jjalora/diet-traj-pythia-410m-scaled-orthogonal-seed12` | 410M | no disponible | Apache 2.0 | Hugging Face | Checkpoint de investigación de la campaña DIET |
+| `EleutherAI/pythia-410m` | 410M | 2048 | Apache 2.0 | Hugging Face | Modelo base de referencia con esquema de inicialización estándar |
+| `EleutherAI/pythia-410m-deduped` | 410M | 2048 | Apache 2.0 | Hugging Face | Variante entrenada sobre The Pile deduplicado |
 
 La comparación con otros modelos de la misma categoría (por ejemplo, GPT-2 small o modelos de 400M de otras familias) no está documentada en la información proporcionada.
 
@@ -88,7 +88,7 @@ La comparación con otros modelos de la misma categoría (por ejemplo, GPT-2 sma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jjalora/diet-traj-pythia-410m-scaled-orthogonal-seed12
+- Hugging Face: https://huggingface.co/jjalora/diet-traj-pythia-410m-scaled-orthogonal-seed12
 - Repositorio de Pythia (EleutherAI): https://github.com/EleutherAI/pythia
 - Dataset: https://huggingface.co/datasets/EleutherAI/pile-standard-pythia-preshuffled
 - Modelo de referencia: https://huggingface.co/EleutherAI/pythia-410m

@@ -76,7 +76,7 @@ No se dispone de modelos comparables en el mismo rango de parámetros y con el m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pngwn/memcap-m-near-capacity
+- Modelo en Hugging Face: https://huggingface.co/pngwn/memcap-m-near-capacity
 - Paper original: https://arxiv.org/abs/2505.24832
 - Dataset de entrenamiento: https://huggingface.co/datasets/pngwn/memcap-random-data
 - Resultados completos (curvas de aprendizaje y 18 celdas): https://huggingface.co/datasets/pngwn/memcap-results

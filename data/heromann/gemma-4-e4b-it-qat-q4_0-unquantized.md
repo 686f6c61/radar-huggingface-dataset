@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma 4 E4B (este checkpoint) | 4,5B efectivos (8B con embeddings) | 128K | Texto, imagen, audio | Apache 2.0 | HuggingFace |
-| Gemma 4 E2B | 2,3B efectivos (5,1B con embeddings) | 128K | Texto, imagen, audio | Apache 2.0 | HuggingFace |
-| Gemma 4 12B Unified | 11,95B | 256K | Texto, imagen, audio | Apache 2.0 | HuggingFace |
-| Gemma 4 31B Dense | 30,7B | 256K | Texto, imagen | Apache 2.0 | HuggingFace |
+| Gemma 4 E4B (este checkpoint) | 4,5B efectivos (8B con embeddings) | 128K | Texto, imagen, audio | Apache 2.0 | Hugging Face |
+| Gemma 4 E2B | 2,3B efectivos (5,1B con embeddings) | 128K | Texto, imagen, audio | Apache 2.0 | Hugging Face |
+| Gemma 4 12B Unified | 11,95B | 256K | Texto, imagen, audio | Apache 2.0 | Hugging Face |
+| Gemma 4 31B Dense | 30,7B | 256K | Texto, imagen | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (benchmarks) en la informacion proporcionada para establecer diferencias cuantitativas entre estos modelos.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) en la informacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/heromann/gemma-4-E4B-it-qat-q4_0-unquantized
+- Hugging Face: https://huggingface.co/heromann/gemma-4-E4B-it-qat-q4_0-unquantized
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Coleccion QAT Q4_0: https://huggingface.co/collections/google/gemma-4-qat-q4-0
 - GitHub: https://github.com/google-gemma

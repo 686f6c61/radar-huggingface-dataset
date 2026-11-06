@@ -68,7 +68,7 @@ No disponible. Este repositorio no es comparable con modelos generativos. Como a
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [siddharthmb/2026.TA.features_gemma-2-2b_gemmascope_ftL0-24-25_ms1000_ml1024_tk10](https://huggingface.co/siddharthmb/2026.TA.features_gemma-2-2b_gemmascope_ftL0-24-25_ms1000_ml1024_tk10)
+- Repositorio de Hugging Face: [siddharthmb/2026.TA.features_gemma-2-2b_gemmascope_ftL0-24-25_ms1000_ml1024_tk10](https://huggingface.co/siddharthmb/2026.TA.features_gemma-2-2b_gemmascope_ftL0-24-25_ms1000_ml1024_tk10)
 - Dataset de transcoder adapters (LMSYS splits): [siddharthmb/2026.transcoder-adapters.lmsys-chat-1m-splits](https://huggingface.co/datasets/siddharthmb/2026.transcoder-adapters.lmsys-chat-1m-splits)
 - Dataset de FineWeb (muestra): [science-of-finetuning/fineweb-1m-sample](https://huggingface.co/datasets/science-of-finetuning/fineweb-1m-sample)
 - Modelo base (referencia): [gemma-2-2b_gemmascope_width_16k_average_l0_76](https://huggingface.co/gemma-2-2b_gemmascope_width_16k_average_l0_76)

@@ -85,7 +85,7 @@ El artefacto no es directamente comparable con una cuantización lista para prod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/podismine/qwen3-8b-l34816-awq-frame-anchors
+- Repositorio en Hugging Face: https://huggingface.co/podismine/qwen3-8b-l34816-awq-frame-anchors
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Qwen3 en OpenLM: https://openlm.ai/qwen3/
 - Qwen 3.8 en OpenLM: https://openlm.ai/qwen3.8/

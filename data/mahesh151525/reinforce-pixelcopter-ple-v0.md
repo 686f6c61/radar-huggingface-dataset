@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-Pixelcopter-PLE-v0 es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario Mahesh151525. No se trata de un modelo de lenguaje, sino de una politica entrenada con el algoritmo REINFORCE (gradiente de politica Monte Carlo) para resolver el entorno Pixelcopter-PLE-v0, un juego de control en dos dimensiones incluido en PyGame Learning Environment (PLE). El modelo se enmarca en la Unit 4 del Deep Reinforcement Learning Course de HuggingFace, cuyo objetivo es que el alumnado entrene y publique su propio agente.
+Reinforce-Pixelcopter-PLE-v0 es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario Mahesh151525. No se trata de un modelo de lenguaje, sino de una politica entrenada con el algoritmo REINFORCE (gradiente de politica Monte Carlo) para resolver el entorno Pixelcopter-PLE-v0, un juego de control en dos dimensiones incluido en PyGame Learning Environment (PLE). El modelo se enmarca en la Unit 4 del Deep Reinforcement Learning Course de Hugging Face, cuyo objetivo es que el alumnado entrene y publique su propio agente.
 
 El problema que resuelve es un clasico de control secuencial: mantener un helicoptero en vuelo dentro de un tunel con obstaculos, maximizando la recompensa acumulada por episodio. La model card no aporta informacion sobre la arquitectura de la red, el numero de parametros, los hiperparametros de entrenamiento ni el dataset utilizado mas alla del propio entorno de simulacion.
 
@@ -101,6 +101,6 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mahesh151525/Reinforce-Pixelcopter-PLE-v0
+- Modelo en Hugging Face: https://huggingface.co/Mahesh151525/Reinforce-Pixelcopter-PLE-v0
 - Unit 4 del Deep Reinforcement Learning Course (referencia citada en la model card): https://huggingface.co/deep-rl-course/unit4/introduction
 - Busqueda web realizada: no se han encontrado resultados relevantes sobre este modelo; las URLs devueltas corresponden a paginas de ayuda de Google Translate y no guardan relacion con el artefacto.

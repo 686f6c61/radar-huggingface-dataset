@@ -65,9 +65,9 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/sol-high (este) | 9.4B | no disponible | no disponible | HuggingFace |
-| Qwen3-8B | 8.3B | 32k (típico) | Apache 2.0 | HuggingFace |
-| Llama-3-8B | 8.0B | 8k | Meta Llama 3 | HuggingFace |
+| agentic-ptb/sol-high (este) | 9.4B | no disponible | no disponible | Hugging Face |
+| Qwen3-8B | 8.3B | 32k (típico) | Apache 2.0 | Hugging Face |
+| Llama-3-8B | 8.0B | 8k | Meta Llama 3 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -81,6 +81,6 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - agentic-ptb/sol-high.h040.opd-tb1-selected-regularized-offpolicy_reg.default.broadcasts.step_1](https://huggingface.co/agentic-ptb/sol-high.h040.opd-tb1-selected-regularized-offpolicy_reg.default.broadcasts.step_1)
+- [Hugging Face - agentic-ptb/sol-high.h040.opd-tb1-selected-regularized-offpolicy_reg.default.broadcasts.step_1](https://huggingface.co/agentic-ptb/sol-high.h040.opd-tb1-selected-regularized-offpolicy_reg.default.broadcasts.step_1)
 - [Repositorio P-OPD (referencia en la búsqueda)](https://github.com/KnowledgeXLab/P-OPD) - contiene documentación sobre RL agentic, aunque no está confirmado que esté directamente relacionado con este modelo.
 - [Modelo base Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base) (enlace inferido, no verificado en la búsqueda)

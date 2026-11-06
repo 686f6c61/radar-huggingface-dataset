@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `anirudhsarve/nxtchaptr-clothing-categorizer` es un clasificador de prendas de vestir desarrollado por Anirudh Sarve, publicado bajo licencia Apache 2.0. Según la información disponible, forma parte de un proyecto de NxtChaptr para la extracción automática de características de ropa a partir de datos de producto, con el objetivo de mejorar la búsqueda y categorización en entornos de comercio electrónico. La model card en HuggingFace es extremadamente escueta: no incluye descripción, arquitectura, tamaño, ni detalles de entrenamiento. Tampoco se han publicado métricas de rendimiento ni benchmarks. A pesar de su relevancia potencial para el sector retail, la falta de documentación técnica limita su uso en producción sin un análisis previo.
+El modelo `anirudhsarve/nxtchaptr-clothing-categorizer` es un clasificador de prendas de vestir desarrollado por Anirudh Sarve, publicado bajo licencia Apache 2.0. Según la información disponible, forma parte de un proyecto de NxtChaptr para la extracción automática de características de ropa a partir de datos de producto, con el objetivo de mejorar la búsqueda y categorización en entornos de comercio electrónico. La model card en Hugging Face es extremadamente escueta: no incluye descripción, arquitectura, tamaño, ni detalles de entrenamiento. Tampoco se han publicado métricas de rendimiento ni benchmarks. A pesar de su relevancia potencial para el sector retail, la falta de documentación técnica limita su uso en producción sin un análisis previo.
 
 La fecha de creación (agosto de 2026) sugiere que es un modelo reciente, pero no se dispone de información sobre su arquitectura, parámetros o contexto. La licencia Apache 2.0 permite uso comercial y modificación, lo que es un punto a favor, pero la ausencia de especificaciones técnicas hace difícil evaluar su idoneidad para casos concretos.
 
@@ -59,11 +59,11 @@ No se dispone de datos suficientes para realizar una comparativa rigurosa. Exist
 - Posible alucinación o errores de clasificación: sin métricas, no se puede garantizar la fiabilidad en producción.
 - Licencia Apache 2.0: permite uso comercial y modificación, pero el autor no ofrece garantías sobre el rendimiento del modelo.
 - Sin soporte ni mantenimiento: al ser un modelo publicado por un usuario individual, no hay garantía de actualizaciones o corrección de errores.
-- Fecha de creación futura (2026): la fecha indicada en HuggingFace es posterior a la actual, lo que podría ser un error o una previsión; en cualquier caso, no se ha validado su funcionamiento.
+- Fecha de creación futura (2026): la fecha indicada en Hugging Face es posterior a la actual, lo que podría ser un error o una previsión; en cualquier caso, no se ha validado su funcionamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anirudhsarve/nxtchaptr-clothing-categorizer
+- Modelo en Hugging Face: https://huggingface.co/anirudhsarve/nxtchaptr-clothing-categorizer
 - Publicación en LinkedIn sobre el modelo: https://www.linkedin.com/posts/anirudh-sarve-2130a724a_machinelearning-vertexai-buildinpublic-activity-7467856342851055616-uXUO
 - Proyecto Clothify (referencia similar): https://github.com/KshitijGupta99/Clothify
 - Clasificación de imágenes DeepFashion: https://github.com/rainalexotl/deepfashion-image-classification

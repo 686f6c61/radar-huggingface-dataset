@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sumintz/noon-by-remi` es un repositorio publicado en HuggingFace por el usuario `sumintz`. La información disponible es mínima: la model card únicamente declara la licencia `openrail` y no incluye descripción del modelo, arquitectura, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni likes en el momento de la consulta, lo que sugiere una publicación reciente o de baja difusión.
+`sumintz/noon-by-remi` es un repositorio publicado en Hugging Face por el usuario `sumintz`. La información disponible es mínima: la model card únicamente declara la licencia `openrail` y no incluye descripción del modelo, arquitectura, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni likes en el momento de la consulta, lo que sugiere una publicación reciente o de baja difusión.
 
 No se dispone de datos sobre el pipeline, los idiomas soportados, el tamaño del modelo ni el formato de los pesos. El identificador del repositorio sugiere un posible origen creativo o de autoría personal ("noon by remi"), pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
@@ -64,7 +64,7 @@ No es posible establecer una comparativa fiable porque se desconocen el tamaño,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sumintz/noon-by-remi | no disponible | no disponible | openrail | HuggingFace |
+| sumintz/noon-by-remi | no disponible | no disponible | openrail | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -79,5 +79,5 @@ No es posible establecer una comparativa fiable porque se desconocen el tamaño,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sumintz/noon-by-remi
+- Hugging Face: https://huggingface.co/sumintz/noon-by-remi
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

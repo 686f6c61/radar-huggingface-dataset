@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Viggle Remake Turbo es un repack comunitario de LoRAs para Viggle Remake, un modelo de edición de vídeo (video-to-video) orientado a la sustitución de personajes y la edición de escenas sobre metraje existente. Lo publica el usuario akhaliq en HuggingFace y no es un modelo base, sino una fusión de dos LoRAs: la LoRA de Viggle Remake (modos swap y edit) y la LoRA de destilación de 4 pasos SMD MiniMax-H3 Ref2VA de zjwfufu. El resultado reduce el número de pasadas de denoising de seis a cuatro (unas 1,5 veces menos evaluaciones del modelo por render), lo que se traduce en una aceleración de aproximadamente un tercio en el tiempo de generación.
+Viggle Remake Turbo es un repack comunitario de LoRAs para Viggle Remake, un modelo de edición de vídeo (video-to-video) orientado a la sustitución de personajes y la edición de escenas sobre metraje existente. Lo publica el usuario akhaliq en Hugging Face y no es un modelo base, sino una fusión de dos LoRAs: la LoRA de Viggle Remake (modos swap y edit) y la LoRA de destilación de 4 pasos SMD MiniMax-H3 Ref2VA de zjwfufu. El resultado reduce el número de pasadas de denoising de seis a cuatro (unas 1,5 veces menos evaluaciones del modelo por render), lo que se traduce en una aceleración de aproximadamente un tercio en el tiempo de generación.
 
 El modelo subyacente es MiniMax H3, un modelo de difusión de vídeo con un transformer como componente principal y un text encoder basado en Qwen3-VL de 32B. Viggle Remake añade encima capacidades de recasting de personas y edición de escenas, y esta versión turbo combina esa LoRA con una destilación few-step para acelerar la inferencia, manteniendo además las optimizaciones de cuantización int8/GGUF que ya distribuye Viggle.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Pasos de muestreo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Viggle Remake Turbo (este) | LoRA fusionada para edición de vídeo | 4 | no disponible | MiniMax H3 Community License | HuggingFace, ComfyUI |
-| Viggle Remake (base) | LoRA de edición de vídeo | 6 (según la card) | no disponible | MiniMax H3 Community License | HuggingFace |
-| SMD MiniMax-H3 Ref2VA 4-step | LoRA de destilación few-step | 4 | no disponible | no disponible | HuggingFace, ComfyUI |
-| MiniMax H3 (base) | Modelo de difusión de vídeo | no disponible | no disponible | MiniMax H3 Community License | HuggingFace, Comfy-Org |
+| Viggle Remake Turbo (este) | LoRA fusionada para edición de vídeo | 4 | no disponible | MiniMax H3 Community License | Hugging Face, ComfyUI |
+| Viggle Remake (base) | LoRA de edición de vídeo | 6 (según la card) | no disponible | MiniMax H3 Community License | Hugging Face |
+| SMD MiniMax-H3 Ref2VA 4-step | LoRA de destilación few-step | 4 | no disponible | no disponible | Hugging Face, ComfyUI |
+| MiniMax H3 (base) | Modelo de difusión de vídeo | no disponible | no disponible | MiniMax H3 Community License | Hugging Face, Comfy-Org |
 
 La comparativa se limita a los componentes que el propio repack documenta; no se dispone de datos de rendimiento ni de parámetros para comparar con alternativas de otros autores.
 
@@ -83,7 +83,7 @@ La comparativa se limita a los componentes que el propio repack documenta; no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akhaliq/viggle-remake-turbo
+- Modelo en Hugging Face: https://huggingface.co/akhaliq/viggle-remake-turbo
 - Viggle Remake (modelo base): https://huggingface.co/Viggle/Viggle-Remake
 - Licencia MiniMax H3 Community License: https://huggingface.co/Viggle/Viggle-Remake/blob/main/LICENSE
 - Guía de ComfyUI de Viggle: https://huggingface.co/Viggle/Viggle-Remake/blob/main/COMFYUI.md

@@ -77,7 +77,7 @@ La comparativa se basa en informacion publica de los modelos. OpenSpatial se dif
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/OpenSpatial-Qwen2.5-VL-7B-i1-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/OpenSpatial-Qwen2.5-VL-7B-i1-GGUF
 - Modelo base: https://huggingface.co/VINHYU/OpenSpatial-Qwen2.5-VL-7B
 - Repositorio estatico de cuantizaciones: https://huggingface.co/mradermacher/OpenSpatial-Qwen2.5-VL-7B-GGUF
 - Pagina de ayuda para descargas: https://hf.tst.eu/model#OpenSpatial-Qwen2.5-VL-7B-i1-GGUF

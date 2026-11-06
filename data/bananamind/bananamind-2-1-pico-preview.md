@@ -77,15 +77,15 @@ El modelo destaca en ARC Challenge y Base Bench Elo, pero queda por detrás en l
 - **VRAM estimada**: al tener solo 1,48M de parámetros, el modelo ocupa aproximadamente 6 MB en fp32 (1.480.516 × 4 bytes) y 3 MB en fp16. Cabe en cualquier GPU, incluso en iGPU o en memoria compartida.
 - **GPU recomendadas**: no se requiere ninguna GPU específica; cualquier tarjeta con al menos 1 GB de VRAM es suficiente. También puede ejecutarse en CPU sin problemas.
 - **Compatibilidad con GPU de consumo**: sí, absolutamente. Incluso una Raspberry Pi con suficiente RAM podría ejecutarlo.
-- **Opciones de despliegue**: al ser una arquitectura personalizada con `trust_remote_code`, el soporte en motores estándar (vLLM, llama.cpp, Ollama, TGI) no está garantizado. Se puede cargar directamente con Transformers de HuggingFace usando `trust_remote_code=True`. Para producción, sería necesario exportar a ONNX o convertir a GGUF manualmente.
+- **Opciones de despliegue**: al ser una arquitectura personalizada con `trust_remote_code`, el soporte en motores estándar (vLLM, llama.cpp, Ollama, TGI) no está garantizado. Se puede cargar directamente con Transformers de Hugging Face usando `trust_remote_code=True`. Para producción, sería necesario exportar a ONNX o convertir a GGUF manualmente.
 - **Latencia y throughput**: no se han publicado mediciones oficiales. Dado el tamaño, la latencia por token en CPU moderna debería ser inferior a 10 ms, y en GPU prácticamente instantánea. La ausencia de caché de generación puede aumentar el coste computacional en secuencias largas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tokens entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BananaMind-2.1-Pico-Preview | 1,48M | 3.072 | 2B | Apache 2.0 | HuggingFace (custom code) |
-| BananaMind-2-Micro | 2,93M | No disponible | 75B | No disponible | HuggingFace |
+| BananaMind-2.1-Pico-Preview | 1,48M | 3.072 | 2B | Apache 2.0 | Hugging Face (custom code) |
+| BananaMind-2-Micro | 2,93M | No disponible | 75B | No disponible | Hugging Face |
 | GPT-S-1.4M | 1,43M | No disponible | 6B | No disponible | No disponible |
 
 BananaMind-2.1-Pico-Preview es el más pequeño en parámetros y el que menos tokens ha visto, pero introduce innovaciones arquitectónicas que le permiten competir en algunas métricas. BananaMind-2-Micro, con el doble de parámetros y 37 veces más tokens, es superior en la mayoría de benchmarks. GPT-S-1.4M, con tamaño similar y 3 veces más tokens, ofrece resultados mixtos. No se dispone de datos de contexto ni licencia para los dos modelos comparados.
@@ -104,5 +104,5 @@ BananaMind-2.1-Pico-Preview es el más pequeño en parámetros y el que menos to
 
 ## Enlaces
 
-- [HuggingFace - BananaMind/BananaMind-2.1-Pico-Preview](https://huggingface.co/BananaMind/BananaMind-2.1-Pico-Preview)
-- [HuggingFace - BananaMind/BananaMind-2-Pro-Preview](https://huggingface.co/BananaMind/BananaMind-2-Pro-Preview) (modelo hermano de la misma organización)
+- [Hugging Face - BananaMind/BananaMind-2.1-Pico-Preview](https://huggingface.co/BananaMind/BananaMind-2.1-Pico-Preview)
+- [Hugging Face - BananaMind/BananaMind-2-Pro-Preview](https://huggingface.co/BananaMind/BananaMind-2-Pro-Preview) (modelo hermano de la misma organización)

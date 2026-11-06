@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `burningfeet/backup-2026-08-31-Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-GGUF` es una versión cuantizada en formato GGUF de un fine-tuning sobre el modelo base `HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive`, que a su vez deriva de Qwen3.6-35B-A3B, un modelo de arquitectura MoE (Mixture of Experts) con 35 000 millones de parámetros totales y 3 000 millones de parámetros activos por token. El autor, `burningfeet`, ha aplicado un entrenamiento adicional con el dataset `NousResearch/hermes-function-calling-v1`, orientado a mejorar las capacidades de function calling y razonamiento agéntico. El modelo es multimodal (image-text-to-text), soporta inglés, chino y otros idiomas, y se distribuye bajo licencia Apache-2.0, aunque su acceso en HuggingFace está restringido (gated) y requiere aceptar condiciones previas.
+El modelo `burningfeet/backup-2026-08-31-Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-GGUF` es una versión cuantizada en formato GGUF de un fine-tuning sobre el modelo base `HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive`, que a su vez deriva de Qwen3.6-35B-A3B, un modelo de arquitectura MoE (Mixture of Experts) con 35 000 millones de parámetros totales y 3 000 millones de parámetros activos por token. El autor, `burningfeet`, ha aplicado un entrenamiento adicional con el dataset `NousResearch/hermes-function-calling-v1`, orientado a mejorar las capacidades de function calling y razonamiento agéntico. El modelo es multimodal (image-text-to-text), soporta inglés, chino y otros idiomas, y se distribuye bajo licencia Apache-2.0, aunque su acceso en Hugging Face está restringido (gated) y requiere aceptar condiciones previas.
 
 La relevancia de este modelo radica en su carácter "uncensored" (sin rechazos ante peticiones sensibles, con 0/465 refusals según el repositorio base), su eficiencia computacional gracias al diseño MoE con solo 3B parámetros activos, y su formato GGUF, que permite su despliegue en hardware de consumo mediante herramientas como llama.cpp u Ollama. Al estar basado en Qwen3.6, hereda las mejoras en razonamiento, generación de código y preservación del pensamiento (thinking mode) que introduce esta familia de modelos.
 
@@ -44,7 +44,7 @@ El modelo se basa en la arquitectura Qwen3.6-35B-A3B, un transformer de tipo MoE
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye métricas de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar. Tampoco se han encontrado comparativas cuantitativas con modelos similares en las búsquedas realizadas.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye métricas de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar. Tampoco se han encontrado comparativas cuantitativas con modelos similares en las búsquedas realizadas.
 
 ## Requisitos de hardware
 
@@ -68,7 +68,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 ## Limitaciones y advertencias
 
 - Modelo "uncensored": puede generar contenido inapropiado, ofensivo o potencialmente dañino. No se recomienda su uso en aplicaciones orientadas al público general sin filtros adicionales de moderación.
-- Acceso restringido (gated) en HuggingFace: requiere aceptar condiciones y posiblemente autenticación, lo que puede limitar su adopción en entornos corporativos.
+- Acceso restringido (gated) en Hugging Face: requiere aceptar condiciones y posiblemente autenticación, lo que puede limitar su adopción en entornos corporativos.
 - Riesgo de alucinación: como cualquier LLM, puede inventar información, especialmente en tareas de razonamiento complejo o con entradas ambiguas.
 - Longitud de contexto no especificada: se desconoce el límite exacto de tokens de entrada, lo que dificulta planificar aplicaciones que requieran ventanas largas.
 - Sesgos: no se ha publicado información sobre sesgos específicos del modelo, pero al ser un fine-tuning de Qwen3.6, puede heredar sesgos presentes en los datos de entrenamiento originales.
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- [HuggingFace - burningfeet/backup-2026-08-31-Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-GGUF](https://huggingface.co/burningfeet/backup-2026-08-31-Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-GGUF)
+- [Hugging Face - burningfeet/backup-2026-08-31-Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-GGUF](https://huggingface.co/burningfeet/backup-2026-08-31-Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-GGUF)
 - [GitHub - chenfei66/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive](https://github.com/chenfei66/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive)
 - [Guía de ejecución local de Qwen3.6-35B-A3B (insiderllm)](https://insiderllm.com/guides/best-way-run-qwen-3-6-35b-moe-locally/)
 - [Ollama - qwen3.6:35b-a3b](https://ollama.com/library/qwen3.6:35b-a3b)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ruri-v3-130m-coreai es una conversion no oficial del modelo de embeddings de texto japones cl-nagoya/ruri-v3-130m para el runtime on-device Core AI de Apple (iOS/macOS 27 o superior, sucesor de Core ML). El modelo original lo desarrolla el grupo cl-nagoya de la Universidad de Nagoya, mientras que esta conversion la publica el usuario masahiroid en HuggingFace. El problema que resuelve es permitir ejecutar un modelo de similitud semantica de 132M parametros directamente en el Neural Engine o la GPU de dispositivos Apple, sin depender de un servicio en la nube.
+ruri-v3-130m-coreai es una conversion no oficial del modelo de embeddings de texto japones cl-nagoya/ruri-v3-130m para el runtime on-device Core AI de Apple (iOS/macOS 27 o superior, sucesor de Core ML). El modelo original lo desarrolla el grupo cl-nagoya de la Universidad de Nagoya, mientras que esta conversion la publica el usuario masahiroid en Hugging Face. El problema que resuelve es permitir ejecutar un modelo de similitud semantica de 132M parametros directamente en el Neural Engine o la GPU de dispositivos Apple, sin depender de un servicio en la nube.
 
 La relevancia actual viene de que la conversion no es un simple exportado: el autor reescribio la red desde cero para cumplir el layout BC1S `(Batch, Channel, 1, Sequence)` exigido por el Neural Engine, con proyecciones basadas en Conv2d y calculo de atencion explicito por cabeza. Reproduce fielmente la arquitectura ModernBERT-Ja del original: 19 capas con atencion full y sliding-window alternadas cada tres capas, un valor de RoPE theta distinto segun el tipo de atencion y una mascara bidireccional de ventana deslizante con radio 65.
 
@@ -97,7 +97,7 @@ La comparativa directa mas relevante es con el modelo base: misma arquitectura y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masahiroid/ruri-v3-130m-coreai
+- Modelo en Hugging Face: https://huggingface.co/masahiroid/ruri-v3-130m-coreai
 - Modelo base: https://huggingface.co/cl-nagoya/ruri-v3-130m
 - Documentacion de Core AI (Apple): https://developer.apple.com/documentation/coreai
 - Herramienta de conversion mlx-coreml-conversion-toolkit: https://github.com/masahirocom/mlx-coreml-conversion-toolkit

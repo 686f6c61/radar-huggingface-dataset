@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lucasnewman/dialogue-separator es un modelo publicado en HuggingFace por el usuario lucasnewman, con licencia Apache 2.0 y pesos en formato safetensors. El repositorio contiene 498.574.530 parámetros (aproximadamente 498,6 millones), según los metadatos reales de los ficheros safetensors, y ocupa 2,0 GB en total. La fecha de creacion registrada es el 27 de septiembre de 2026 y la ultima actualizacion el mismo dia, apenas diez minutos despues, lo que sugiere una subida inicial sin iteraciones posteriores.
+lucasnewman/dialogue-separator es un modelo publicado en Hugging Face por el usuario lucasnewman, con licencia Apache 2.0 y pesos en formato safetensors. El repositorio contiene 498.574.530 parámetros (aproximadamente 498,6 millones), según los metadatos reales de los ficheros safetensors, y ocupa 2,0 GB en total. La fecha de creacion registrada es el 27 de septiembre de 2026 y la ultima actualizacion el mismo dia, apenas diez minutos despues, lo que sugiere una subida inicial sin iteraciones posteriores.
 
 La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia `apache-2.0`, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento, sin idiomas y sin pipeline asignado. El nombre del repositorio sugiere una funcion de separacion de dialogo, pero no hay documentacion en la informacion disponible que confirme si se trata de separacion de hablantes en audio, de segmentacion de turnos de conversacion en texto o de otra tarea. Cualquier afirmacion al respecto seria especulativa.
 
@@ -72,7 +72,7 @@ Las siguientes cifras son estimaciones calculadas a partir del recuento de param
 - VRAM estimada en int8: aproximadamente 0,5 GB de pesos.
 - VRAM estimada en int4: aproximadamente 0,25 GB de pesos.
 - GPU recomendadas: no disponibles. Por tamano, el modelo cabe previsiblemente en cualquier GPU consumer con 6-8 GB de VRAM o mas (RTX 3060, RTX 4060, RTX 4090), asi como en GPU de datacenter (A100, H100, L40S), pero no hay confirmacion de compatibilidad.
-- Despliegue: no disponible. No hay instrucciones para vLLM, llama.cpp, Ollama, TGI ni ningun otro runtime. El formato safetensors es compatible con el ecosistema HuggingFace, pero se desconoce si existe un `config.json` con una clase de modelo reconocible.
+- Despliegue: no disponible. No hay instrucciones para vLLM, llama.cpp, Ollama, TGI ni ningun otro runtime. El formato safetensors es compatible con el ecosistema Hugging Face, pero se desconoce si existe un `config.json` con una clase de modelo reconocible.
 - Latencia y throughput: no disponibles.
 
 Nota: si el modelo opera sobre audio, los requisitos de memoria estaran dominados por la longitud de las senales de entrada y no por el recuento de parametros, por lo que las estimaciones anteriores serian un limite inferior.
@@ -83,7 +83,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la tare
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lucasnewman/dialogue-separator | 498.574.530 | no disponible | no disponible | apache-2.0 | HuggingFace, safetensors |
+| lucasnewman/dialogue-separator | 498.574.530 | no disponible | no disponible | apache-2.0 | Hugging Face, safetensors |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,11 +100,11 @@ No disponible. No es posible identificar modelos comparables sin conocer la tare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucasnewman/dialogue-separator
+- Modelo en Hugging Face: https://huggingface.co/lucasnewman/dialogue-separator
 - Repositorio de codigo: no disponible
 - Paper o publicacion tecnica: no disponible
 - Blog o articulo del autor: no disponible
 - Demo o espacio interactivo: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/lucasnewman
+- Perfil del autor en Hugging Face: https://huggingface.co/lucasnewman
 
 Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los enlaces obtenidos correspondian a plataformas de reserva de transporte y no se han incluido por no ser relevantes.

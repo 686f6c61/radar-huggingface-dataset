@@ -4,7 +4,7 @@
 
 ## Resumen
 
-DunkRonit/anlp-a2-part1-moe_top2 es un transformer decoder-only entrenado desde cero para traducir vietnamita y japones a ingles. Lo desarrolla el usuario DunkRonit en el contexto de un trabajo academico (tag `anlp-assignment`, con la ejecucion registrada en Weights & Biases bajo el proyecto `anlp-a2-part1`), y se publica como una variante de la parte 1 de dicha practica. No es un modelo orientado a produccion: acumula 0 descargas y 0 likes en HuggingFace y no declara licencia.
+DunkRonit/anlp-a2-part1-moe_top2 es un transformer decoder-only entrenado desde cero para traducir vietnamita y japones a ingles. Lo desarrolla el usuario DunkRonit en el contexto de un trabajo academico (tag `anlp-assignment`, con la ejecucion registrada en Weights & Biases bajo el proyecto `anlp-a2-part1`), y se publica como una variante de la parte 1 de dicha practica. No es un modelo orientado a produccion: acumula 0 descargas y 0 likes en Hugging Face y no declara licencia.
 
 El modelo tiene 17.020.800 parametros totales, de los cuales 13.481.856 estan activos por token, lo que indica una arquitectura mixture-of-experts (MoE) con enrutamiento top-2 sobre la capa FFN. Se entreno sobre 39.003.133 tokens procedentes del dataset belumind/en-vi-ja-curated-500k-triplets. El repositorio ocupa 0,1 GB y los pesos se distribuyen en formato safetensors.
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DunkRonit/anlp-a2-part1-moe_top2 | 17,02 M totales / 13,48 M activos (MoE top-2) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| Helsinki-NLP/opus-mt-vi-en (MarianMT) | del orden de 70-80 M (dato no confirmado en la informacion proporcionada) | no disponible | metricas publicadas en la model card del autor | licencia declarada por el autor del modelo (consultar) | HuggingFace, ampliamente utilizado |
-| NLLB-200-distilled-600M (Meta) | 600 M (denso) | no disponible | metricas publicadas por Meta | licencia especifica del proyecto NLLB (consultar) | HuggingFace, ampliamente utilizado |
+| DunkRonit/anlp-a2-part1-moe_top2 | 17,02 M totales / 13,48 M activos (MoE top-2) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| Helsinki-NLP/opus-mt-vi-en (MarianMT) | del orden de 70-80 M (dato no confirmado en la informacion proporcionada) | no disponible | metricas publicadas en la model card del autor | licencia declarada por el autor del modelo (consultar) | Hugging Face, ampliamente utilizado |
+| NLLB-200-distilled-600M (Meta) | 600 M (denso) | no disponible | metricas publicadas por Meta | licencia especifica del proyecto NLLB (consultar) | Hugging Face, ampliamente utilizado |
 
 La comparacion de rendimiento no puede completarse: no existen resultados de benchmarks para el modelo analizado. Ademas, la diferencia de escala es de uno a dos ordenes de magnitud, de modo que cualquier comparacion de calidad seria meramente cualitativa. Los datos de los modelos alternativos deben verificarse en sus propias model cards.
 
@@ -95,7 +95,7 @@ La comparacion de rendimiento no puede completarse: no existen resultados de ben
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DunkRonit/anlp-a2-part1-moe_top2
+- Modelo en Hugging Face: https://huggingface.co/DunkRonit/anlp-a2-part1-moe_top2
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/dunkronit-iiit-hyderabad/anlp-a2-part1/runs/moe_top2-8210c110
 - Dataset de entrenamiento: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - Repositorio de la asignatura (referenciado en la model card como "assignment repo", sin URL publica indicada): no disponible

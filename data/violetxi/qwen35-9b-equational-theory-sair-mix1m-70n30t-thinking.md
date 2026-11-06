@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| violetxi/qwen35-9b-equational-theory-sair-mix1m-70n30t-thinking | 9,65 B | no disponible | perdida de validacion 0.375394; benchmarks no publicados | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-9B (modelo base) | 9,65 B | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| violetxi/qwen35-9b-equational-theory-sair-mix1m-70n30t-thinking | 9,65 B | no disponible | perdida de validacion 0.375394; benchmarks no publicados | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-9B (modelo base) | 9,65 B | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 | Checkpoints hermanos de la familia (5M, 10M, 50M, 100M de tokens) | no disponible | no disponible | no disponible | no disponible | referenciados en la model card, sin identificadores concretos |
 | Otras alternativas de ~9 B para matematicas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,7 +94,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/qwen35-9b-equational-theory-sair-mix1m-70n30t-thinking
+- Modelo en Hugging Face: https://huggingface.co/violetxi/qwen35-9b-equational-theory-sair-mix1m-70n30t-thinking
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de notas: https://huggingface.co/datasets/violetxi/equational-theory-sair-notes
 - Dataset de trayectorias condicionadas por notas: https://huggingface.co/datasets/violetxi/equational-theory-sair-note-conditioned-rollouts

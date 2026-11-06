@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SGI-Preview es un modelo de lenguaje denso de 70.000 millones de parametros desarrollado por el usuario xsingh y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un transformer denso entrenado desde cero sobre 12 billones de tokens de texto y codigo (predominantemente en ingles), con una longitud de contexto que se extiende hasta 1 millon de tokens. El modelo parte de una base Olmo 3 y evoluciona hacia una arquitectura inspirada en Gemma 3N, con un diseno "thin-and-deep" de 80 capas y un `d_model` de 5120.
+SGI-Preview es un modelo de lenguaje denso de 70.000 millones de parametros desarrollado por el usuario xsingh y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un transformer denso entrenado desde cero sobre 12 billones de tokens de texto y codigo (predominantemente en ingles), con una longitud de contexto que se extiende hasta 1 millon de tokens. El modelo parte de una base Olmo 3 y evoluciona hacia una arquitectura inspirada en Gemma 3N, con un diseno "thin-and-deep" de 80 capas y un `d_model` de 5120.
 
 La propuesta de valor del modelo se centra en el rendimiento en tareas de codigo agentico y razonamiento, con resultados declarados de 80,52 en TerminalBench 2.1, superando a modelos abiertos de mayor tamano como Reflection Beam 501B, Meta Muse Spark Open 816B, Thinking Machines Inkling 975B y NVIDIA Nemotron 3 Ultra 550B. El autor destaca que se opto por una arquitectura densa frente a MoE para reducir la complejidad de infraestructura y mantener un ~40% de MFU durante preentrenamiento y postentrenamiento con sharding estandar en BF16.
 
@@ -112,7 +112,7 @@ La comparativa se basa en los datos de la model card. SGI-Preview es el unico mo
 - Riesgo de alucinacion inherente a modelos de 70B; no se proporcionan tasas de hallucination medidas.
 - Sesgos no evaluados: no se publican analisis de sesgo de genero, raza o ideologico.
 - Requiere `custom_code` para cargar el modelo, lo que anade complejidad de integracion y riesgo de incompatibilidad con frameworks estandar.
-- El tag `ricursive` en HuggingFace sugiere posible dependencia de codigo recursivo o custom; verificar antes de desplegar.
+- El tag `ricursive` en Hugging Face sugiere posible dependencia de codigo recursivo o custom; verificar antes de desplegar.
 - Los benchmarks de Terminal-Bench 2.1 son parcialmente autoreportados; los valores en cursiva son reproducciones internas del autor, no verificaciones independientes.
 - La licencia Apache 2.0 permite uso comercial, pero al ser un preview conviene validar el comportamiento en el dominio concreto antes de produccion.
 - El modelo denso de 70B requiere infraestructura significativa en BF16; el despliegue en consumer GPU no esta confirmado salvo en configuraciones NVFP4 con memoria suficiente.
@@ -121,8 +121,8 @@ La comparativa se basa en los datos de la model card. SGI-Preview es el unico mo
 
 ## Enlaces
 
-- HuggingFace (BF16): https://huggingface.co/xsingh/SGI-Preview
-- HuggingFace (NVFP4): https://huggingface.co/xsingh/SGI-Preview-NVFP4
+- Hugging Face (BF16): https://huggingface.co/xsingh/SGI-Preview
+- Hugging Face (NVFP4): https://huggingface.co/xsingh/SGI-Preview-NVFP4
 - Modelo base: https://huggingface.co/xsingh/SGI-Base-Preview
 - Variante DFlash2: https://huggingface.co/xsingh/SGI-Preview-DFlash2
 - Blog de lanzamiento: https://example.com/sgi-preview

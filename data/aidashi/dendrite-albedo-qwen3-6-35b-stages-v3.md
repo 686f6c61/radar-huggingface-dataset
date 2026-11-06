@@ -4,7 +4,7 @@
 
 El modelo `AIdashi/dendrite-albedo-qwen3.6-35b-stages-v3` es una variante publicada por el usuario AIdashi de Qwen3.6-35B-A3B, el primer modelo de pesos abiertos de la serie Qwen3.6 desarrollada por Alibaba Qwen. Se trata de un modelo causal de lenguaje con encoder de visión (image-text-to-text), de arquitectura MoE con 35 mil millones de parámetros totales y 3 mil millones activos por token. Su principal objetivo es mejorar la estabilidad y utilidad real en tareas de programación agéntica, razonamiento a nivel de repositorio y flujos de trabajo de frontend, incorporando además una opción de preservación del contexto de razonamiento en mensajes históricos.
 
-El modelo destaca por su ventana de contexto nativa de 262 144 tokens, extensible hasta aproximadamente 1 010 000, y por integrar una arquitectura híbrida con capas de atención lineal (Gated DeltaNet) y atención clásica (Gated Attention), junto con un mecanismo de predicción multi-token (MTP). Está disponible bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. Aunque el repositorio no ha recibido descargas ni likes en HuggingFace, la familia Qwen3.6 está respaldada por benchmarks de agentes de código que la sitúan en línea con modelos de tamaño similar como Qwen3.5-35BA3B y por encima de alternativas como Gemma4-26BA4B.
+El modelo destaca por su ventana de contexto nativa de 262 144 tokens, extensible hasta aproximadamente 1 010 000, y por integrar una arquitectura híbrida con capas de atención lineal (Gated DeltaNet) y atención clásica (Gated Attention), junto con un mecanismo de predicción multi-token (MTP). Está disponible bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. Aunque el repositorio no ha recibido descargas ni likes en Hugging Face, la familia Qwen3.6 está respaldada por benchmarks de agentes de código que la sitúan en línea con modelos de tamaño similar como Qwen3.5-35BA3B y por encima de alternativas como Gemma4-26BA4B.
 
 ## Especificaciones técnicas
 
@@ -93,7 +93,7 @@ Qwen3.6-35BA3B supera a su predecesor Qwen3.5-35BA3B en SWE-bench Verified y Mul
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AIdashi/dendrite-albedo-qwen3.6-35b-stages-v3
+- Repositorio Hugging Face: https://huggingface.co/AIdashi/dendrite-albedo-qwen3.6-35b-stages-v3
 - Blog oficial de Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Ficha en FriendliAI: https://friendli.ai/models/AIdashi/dendrite-albedo-qwen3.6-35b-stages-v3
 - Documentación técnica en DeepWiki: https://deepwiki.com/QwenLM/Qwen3.6/1.1-qwen3.6-models

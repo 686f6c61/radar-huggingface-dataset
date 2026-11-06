@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshuamjm/coca-generation-small31` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Coca" orientada a tareas de generación. Lo publica el usuario joshuamjm y se distribuye bajo licencia Apache 2.0. El propio autor lo describe explícitamente como un punto de partida experimental para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción.
+`joshuamjm/coca-generation-small31` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Coca" orientada a tareas de generación. Lo publica el usuario joshuamjm y se distribuye bajo licencia Apache 2.0. El propio autor lo describe explícitamente como un punto de partida experimental para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción.
 
 El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas, no un modelo entrenado ni evaluado en benchmarks. El repositorio no reclama ninguna puntuación de rendimiento y advierte que el checkpoint no ha sido auditado en robustez, equidad ni transferencia de dominio. El tamaño del repo es de 0.0 GB y el recuento de parámetros en safetensors es de 49.600, lo que sitúa al modelo en la categoría de modelos extremadamente pequeños (muy por debajo de 1M de parámetros).
 
@@ -86,5 +86,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/joshuamjm/coca-generation-small31
+- Repositorio Hugging Face: https://huggingface.co/joshuamjm/coca-generation-small31
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados al modelo.

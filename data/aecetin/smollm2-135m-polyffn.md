@@ -81,7 +81,7 @@ No se han publicado requisitos oficiales de hardware. Estimaciones orientativas 
 | Parámetros reportados en model card | 134.516.736 | 94.756.224 |
 | Contexto | No disponible | No disponible |
 | Licencia | Apache 2.0 | Apache 2.0 |
-| Disponibilidad | HuggingFace | HuggingFace |
+| Disponibilidad | Hugging Face | Hugging Face |
 
 No se han publicado comparativas con otras alternativas de la misma categoría.
 
@@ -103,7 +103,7 @@ No se han publicado comparativas con otras alternativas de la misma categoría.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aecetin/SmolLM2-135M-PolyFFN
+- Modelo en Hugging Face: https://huggingface.co/aecetin/SmolLM2-135M-PolyFFN
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Repositorio de la librería: https://github.com/aemre-cetin/idempotent-poly
 - Demo interactiva: https://huggingface.co/spaces/aecetin/idempotent-ai-showcase

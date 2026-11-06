@@ -23,7 +23,7 @@ Conviene ser claro sobre su alcance: con 1,24 B de parametros, no es un modelo a
 | Modelo base | meta-llama/Llama-3.2-1B-Instruct |
 | Cuantizado por (segun model card) | bartowski |
 | Pipeline | text-generation |
-| Fecha de creacion en HuggingFace | 2026-09-29 (segun metadatos del repositorio) |
+| Fecha de creacion en Hugging Face | 2026-09-29 (segun metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| weluvmusic767-maker/Llama-3.2-1B-Instruct-GGUF (este) | 1,24 B | 128 K | Llama 3.2 Community | GGUF en HuggingFace | Redistribucion de terceros, 0 descargas |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128 K | Llama 3.2 Community | Safetensors, HuggingFace | Modelo base oficial de Meta |
+| weluvmusic767-maker/Llama-3.2-1B-Instruct-GGUF (este) | 1,24 B | 128 K | Llama 3.2 Community | GGUF en Hugging Face | Redistribucion de terceros, 0 descargas |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128 K | Llama 3.2 Community | Safetensors, Hugging Face | Modelo base oficial de Meta |
 | meta-llama/Llama-3.2-3B-Instruct | 3,2 B | 128 K | Llama 3.2 Community | Safetensors y GGUF | Mas capaz, mayor huella de memoria |
 | Qwen2.5-1.5B-Instruct | 1,5 B | 32 K (aprox.) | Apache 2.0 | Safetensors y GGUF (varias) | Licencia permisiva, buen rendimiento en codigo y matematicas |
 | Gemma 2 2B IT | 2,6 B | 8 K | Gemma Terms of Use | Safetensors y GGUF (varias) | Alternativa de Google, contexto mas corto |

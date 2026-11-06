@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Formato / hardware | Tamaño | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen-image-2-1-mflux-q8 (este) | MLX / Apple Silicon | 18,5 GB | Q8 | qwen-research | HuggingFace, comunidad |
-| qwen-image-2-1-mflux-bf16 | MLX / Apple Silicon | 33,1 GB | BF16 | qwen-research | HuggingFace, comunidad |
-| qwen-image-2-1-mflux-q4 | MLX / Apple Silicon | 10,6 GB | Q4 | qwen-research | HuggingFace, comunidad |
-| Qwen/Qwen-Image-2.1 (original) | no disponible | no disponible | sin cuantizar | qwen-research | HuggingFace, oficial |
+| qwen-image-2-1-mflux-q8 (este) | MLX / Apple Silicon | 18,5 GB | Q8 | qwen-research | Hugging Face, comunidad |
+| qwen-image-2-1-mflux-bf16 | MLX / Apple Silicon | 33,1 GB | BF16 | qwen-research | Hugging Face, comunidad |
+| qwen-image-2-1-mflux-q4 | MLX / Apple Silicon | 10,6 GB | Q4 | qwen-research | Hugging Face, comunidad |
+| Qwen/Qwen-Image-2.1 (original) | no disponible | no disponible | sin cuantizar | qwen-research | Hugging Face, oficial |
 
 La comparación relevante es interna a la familia MFlux: mismo modelo base, distinto compromiso entre tamaño y fidelidad. No se dispone de datos de rendimiento que permitan comparar esta conversión con modelos texto-a-imagen de otros autores.
 
@@ -88,7 +88,7 @@ La comparación relevante es interna a la familia MFlux: mismo modelo base, dist
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mflux-community/qwen-image-2-1-mflux-q8
+- Repositorio Hugging Face: https://huggingface.co/mflux-community/qwen-image-2-1-mflux-q8
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - Repositorio MFlux: https://github.com/filipstrand/mflux

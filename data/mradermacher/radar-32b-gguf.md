@@ -83,6 +83,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo cuantizado](https://huggingface.co/mradermacher/RaDaR-32B-GGUF)
+- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/mradermacher/RaDaR-32B-GGUF)
 - [Modelo base sczzz/RaDaR-32B](https://huggingface.co/sczzz/RaDaR-32B)
 - [Página de descarga y visor de archivos](https://hf.tst.eu/model#RaDaR-32B-GGUF)

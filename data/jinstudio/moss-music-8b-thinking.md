@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: en BF16/FP16 los pesos ocupan aproximadamente 18,1 GB (tamaño real del repo), a los que hay que sumar activaciones del codificador de audio y la caché KV del LLM. Presupuesto realista: 24 GB para audio de duración corta y 40-80 GB para pistas largas o lotes.
 - GPU recomendadas: A100 40 GB u 80 GB y H100 para servicio en producción con audio de formato largo; L40S 48 GB como alternativa de coste intermedio.
 - GPU de consumo: sí es viable en RTX 4090 / RTX 3090 (24 GB) en BF16 con audio corto y batch 1, con margen ajustado; para pistas completas conviene cuantización o GPU de 48 GB o más. No se distribuyen pesos cuantizados en el repositorio, por lo que habría que generarlos.
-- Opciones de despliegue: la model card documenta SGLang Serving y una app Gradio, además del uso estándar con transformers (requiere `trust_remote_code=True` por el `custom_code` del repositorio). Compatible con endpoints de HuggingFace. No se documentan instrucciones para vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: la model card documenta SGLang Serving y una app Gradio, además del uso estándar con transformers (requiere `trust_remote_code=True` por el `custom_code` del repositorio). Compatible con endpoints de Hugging Face. No se documentan instrucciones para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponible. Como referencia cualitativa, la variante Thinking genera cadenas de razonamiento antes de la respuesta, por lo que su latencia de salida será mayor que la de la variante Instruct con la misma entrada de audio.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ La comparación relevante es interna a la familia: Instruct frente a Thinking pa
 - Idiomas limitados a inglés y chino: la transcripción de letras y el etiquetado en castellano u otras lenguas no están declarados como soportados; es previsible un rendimiento degradado en letras no inglesas ni chinas.
 - Riesgo de alucinación en tareas de alta precisión: la identificación de tonalidad, tempo y acordes admite respuestas plausibles pero incorrectas, especialmente en grabaciones con mezcla densa, modulaciones o música no occidental. Conviene validar con herramientas deterministas (analizadores de tempo/clave) cuando la exactitud sea crítica.
 - Sesgos no documentados: no se publica la composición del dataset de entrenamiento, por lo que se desconoce el sesgo de género musical, época, geografía o idioma de las letras. Es esperable un mejor comportamiento en el repertorio sobrerrepresentado en los datos.
-- Procedencia del repositorio a verificar: el repositorio de HuggingFace está publicado por la cuenta `Jinstudio` con 0 descargas y 0 likes, mientras que la model card atribuye el modelo a OpenMOSS / MOSI.AI / Shanghai Innovation Institute. Conviene contrastar con el repositorio oficial de GitHub antes de desplegarlo.
+- Procedencia del repositorio a verificar: el repositorio de Hugging Face está publicado por la cuenta `Jinstudio` con 0 descargas y 0 likes, mientras que la model card atribuye el modelo a OpenMOSS / MOSI.AI / Shanghai Innovation Institute. Conviene contrastar con el repositorio oficial de GitHub antes de desplegarlo.
 - Licencia Apache 2.0: permite uso comercial y modificación, pero no cubre los derechos sobre el audio de entrada ni sobre las letras transcritas; el uso del modelo para transcribir obras protegidas puede tener implicaciones legales independientes de la licencia del software.
 - Dependencia de `custom_code`: la carga requiere `trust_remote_code=True`, lo que implica ejecutar código del repositorio; es un riesgo de cadena de suministro a auditar en entornos de producción.
 - Naturaleza del razonamiento: la variante Thinking consume más tokens de salida, con mayor latencia y coste por petición; para tareas simples de etiquetado suele ser preferible la variante Instruct.
@@ -93,7 +93,7 @@ La comparación relevante es interna a la familia: Instruct frente a Thinking pa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jinstudio/MOSS-Music-8B-Thinking
+- Repositorio Hugging Face: https://huggingface.co/Jinstudio/MOSS-Music-8B-Thinking
 - Repositorio oficial en GitHub (OpenMOSS/MOSS-Music): https://github.com/OpenMOSS/MOSS-Music
 - Pipeline de datos musicales (MOSS-Music-Data-Pipeline): https://github.com/wx9songs/MOSS-Music-Data-Pipeline
 - Modelo de audio base (MOSS-Audio): https://github.com/OpenMOSS/MOSS-Audio

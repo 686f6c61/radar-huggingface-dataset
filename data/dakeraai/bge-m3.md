@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Contexto | Idiomas | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DakeraAI/bge-m3 (este repo) | Embeddings, espejo ONNX cuantizado | no disponible (8.192 tokens en el original) | ~100 según Dakera | ONNX | MIT | HuggingFace, Docker de Dakera |
-| BAAI/bge-m3 | Embeddings original | 8.192 tokens | ~100 | safetensors y otros | MIT | HuggingFace |
-| Xenova/bge-m3 | Embeddings, conversión ONNX | 8.192 tokens (original) | ~100 | ONNX | MIT | HuggingFace, transformers.js |
+| DakeraAI/bge-m3 (este repo) | Embeddings, espejo ONNX cuantizado | no disponible (8.192 tokens en el original) | ~100 según Dakera | ONNX | MIT | Hugging Face, Docker de Dakera |
+| BAAI/bge-m3 | Embeddings original | 8.192 tokens | ~100 | safetensors y otros | MIT | Hugging Face |
+| Xenova/bge-m3 | Embeddings, conversión ONNX | 8.192 tokens (original) | ~100 | ONNX | MIT | Hugging Face, transformers.js |
 
 La comparativa se limita al mismo modelo en distintas distribuciones, ya que la información proporcionada no incluye datos de rendimiento frente a alternativas de otros autores.
 
@@ -83,7 +83,7 @@ La comparativa se limita al mismo modelo en distintas distribuciones, ya que la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DakeraAI/bge-m3
+- Repositorio en Hugging Face: https://huggingface.co/DakeraAI/bge-m3
 - Modelo original: https://huggingface.co/BAAI/bge-m3
 - Conversión ONNX de referencia: https://huggingface.co/Xenova/bge-m3
 - Licencia: https://huggingface.co/DakeraAI/bge-m3/blob/main/LICENSE

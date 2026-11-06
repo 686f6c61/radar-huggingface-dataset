@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AudioCanvas-Weight es un repositorio de pesos publicado en HuggingFace por el usuario gdx123 bajo licencia MIT. El nombre sugiere un modelo orientado a tareas de audio (posiblemente generacion o procesamiento de audio), aunque la model card no incluye ninguna descripcion funcional, arquitectura declarada ni documentacion tecnica. El repositorio tiene un tamano de 4,2 GB, lo que es compatible con un modelo de audio de tamano pequeno o mediano, pero no se puede confirmar su naturaleza exacta a partir de la informacion disponible.
+AudioCanvas-Weight es un repositorio de pesos publicado en Hugging Face por el usuario gdx123 bajo licencia MIT. El nombre sugiere un modelo orientado a tareas de audio (posiblemente generacion o procesamiento de audio), aunque la model card no incluye ninguna descripcion funcional, arquitectura declarada ni documentacion tecnica. El repositorio tiene un tamano de 4,2 GB, lo que es compatible con un modelo de audio de tamano pequeno o mediano, pero no se puede confirmar su naturaleza exacta a partir de la informacion disponible.
 
-En el momento de la consulta, el repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado en HuggingFace. La model card se limita a la linea de licencia MIT, sin secciones de uso, entrenamiento, limitaciones ni ejemplos. Esto implica que cualquier evaluacion tecnica debe hacerse descargando los pesos y realizando pruebas directas.
+En el momento de la consulta, el repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado en Hugging Face. La model card se limita a la linea de licencia MIT, sin secciones de uso, entrenamiento, limitaciones ni ejemplos. Esto implica que cualquier evaluacion tecnica debe hacerse descargando los pesos y realizando pruebas directas.
 
 La relevancia de esta ficha es, por tanto, limitada: se trata de un artefacto sin documentacion publica verificable. Se recomienda precaucion antes de integrarlo en cualquier flujo de produccion, dado que no hay informacion sobre datos de entrenamiento, sesgos, rendimiento ni requisitos de hardware especificos.
 
@@ -40,7 +40,7 @@ El unico dato objetivo es el tamano del repositorio (4,2 GB), que sugiere pesos 
 
 - Evaluacion experimental de pesos sin documentar: descargar el repositorio y ejecutar pruebas de inferencia para identificar la tarea real (audio, texto u otra) antes de considerar su uso.
 - Prototipado interno en laboratorio: usar el modelo como base para experimentos controlados, asumiendo que no hay garantias de calidad ni de comportamiento.
-- Analisis forense de artefactos de HuggingFace: estudiar la estructura del repositorio (4,2 GB) para inferir el tipo de pesos y la familia de modelo.
+- Analisis forense de artefactos de Hugging Face: estudiar la estructura del repositorio (4,2 GB) para inferir el tipo de pesos y la familia de modelo.
 - Pruebas de integracion en pipelines de audio: si el modelo resulta ser de audio, evaluar su comportamiento en tareas de generacion o transformacion dentro de un entorno aislado.
 - Benchmarking comparativo no oficial: medir latencia y consumo de VRAM en distintas GPUs para caracterizar el modelo empíricamente.
 - Uso educativo: emplear el repositorio como ejemplo de publicacion sin documentacion y de los riesgos asociados en la practica de MLOps.
@@ -74,4 +74,4 @@ No disponible. No se conocen modelos comparables de la misma categoria porque la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gdx123/AudioCanvas-Weight
+- Hugging Face: https://huggingface.co/gdx123/AudioCanvas-Weight

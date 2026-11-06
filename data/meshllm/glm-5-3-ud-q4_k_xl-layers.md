@@ -105,7 +105,7 @@ No hay informacion en la documentacion facilitada sobre alternativas de la misma
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/meshllm/GLM-5.3-UD-Q4_K_XL-layers
+- Repositorio en Hugging Face: https://huggingface.co/meshllm/GLM-5.3-UD-Q4_K_XL-layers
 - Modelo de origen: https://huggingface.co/unsloth/GLM-5.3-GGUF
 - Sitio web de Mesh LLM: https://www.meshllm.cloud
 - Repositorio de Mesh LLM: https://github.com/Mesh-LLM/mesh-llm

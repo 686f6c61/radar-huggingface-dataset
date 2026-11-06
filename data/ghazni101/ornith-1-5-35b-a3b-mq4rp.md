@@ -76,7 +76,7 @@ No se dispone de datos de benchmarks ni de comparativas directas con otros model
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/ghazni101/Ornith-1.5-35B-A3B-MQ4RP
+- Modelo cuantizado en Hugging Face: https://huggingface.co/ghazni101/Ornith-1.5-35B-A3B-MQ4RP
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Versión FP8 del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8
 - Página oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html

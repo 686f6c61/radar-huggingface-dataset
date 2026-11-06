@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4-Flash-144t2-UD-IQ1_S es una compilacion podada del modelo DeepSeek-V4-Flash-0731, publicada por el usuario siendsi en HuggingFace. No se trata de un fine-tune ni de una destilacion, sino de un pruning de expertos (MoE expert pruning) aplicado capa por capa sobre 43 capas MoE: de los 256 expertos de cada capa se conservan los 144 mas activados y se desactivan los 112 restantes. El resultado pasa de 82,4 GB a 47,0 GB, una reduccion del 43,1 %, manteniendo intactos bit a bit todos los pesos no-expertos y los expertos conservados respecto al checkpoint original UD-IQ1_S.
+DeepSeek-V4-Flash-144t2-UD-IQ1_S es una compilacion podada del modelo DeepSeek-V4-Flash-0731, publicada por el usuario siendsi en Hugging Face. No se trata de un fine-tune ni de una destilacion, sino de un pruning de expertos (MoE expert pruning) aplicado capa por capa sobre 43 capas MoE: de los 256 expertos de cada capa se conservan los 144 mas activados y se desactivan los 112 restantes. El resultado pasa de 82,4 GB a 47,0 GB, una reduccion del 43,1 %, manteniendo intactos bit a bit todos los pesos no-expertos y los expertos conservados respecto al checkpoint original UD-IQ1_S.
 
 El modelo se distribuye en formato GGUF con cuantizacion UD-IQ1_S (Unsloth dynamic quant) y esta pensado para ejecutarse con llama.cpp. Su objetivo declarado es ofrecer la variante mas pequena y economica de la familia, orientada a un perfil concreto: ruso, ingles, codigo, planificacion y tareas agenticas. La calibracion del mapa de calor se ajusto especificamente a ese perfil e incluyo un corpus de matematicas, descartando el corpus original con japones y chino.
 
@@ -108,7 +108,7 @@ No se dispone en la informacion proporcionada de comparaciones con modelos de ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siendsi/DeepSeek-V4-Flash-144t2-UD-IQ1_S
+- Modelo en Hugging Face: https://huggingface.co/siendsi/DeepSeek-V4-Flash-144t2-UD-IQ1_S
 - Variante recomendada keep-160 (51 GB, 24/26): https://huggingface.co/siendsi/DeepSeek-V4-Flash-160t2-UD-IQ1_S
 - Variante keep-192 (60 GB, mayor margen): https://huggingface.co/siendsi/DeepSeek-V4-Flash-192t2-UD-IQ1_S
 - Modelo base DeepSeek-V4-Flash-0731: no disponible (referenciado en la model card sin URL)

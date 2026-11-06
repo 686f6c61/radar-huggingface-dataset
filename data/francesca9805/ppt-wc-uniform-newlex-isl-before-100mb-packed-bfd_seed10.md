@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | ppt-wc-uniform-newlex-isl-before-100mb-packed-bfd_seed10 | 86,5 M | no disponible | no disponible | 0 descargas, artefacto de investigacion |
-| goldfish-models/eng_latn_100mb (modelo base) | ~86 M (familia GPT-2) | no disponible | no disponible | publico en HuggingFace |
+| goldfish-models/eng_latn_100mb (modelo base) | ~86 M (familia GPT-2) | no disponible | no disponible | publico en Hugging Face |
 | gpt2 (OpenAI) | 124 M | 1024 tokens | MIT (segun repositorio original) | ampliamente disponible |
 | distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | ampliamente disponible |
 
@@ -81,7 +81,7 @@ El modelo se situa en la misma escala que GPT-2 pequeno y distilgpt2, pero su aj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-isl-before-100mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-isl-before-100mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/1qf8ecv6

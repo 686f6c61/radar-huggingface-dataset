@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`TheFatBlue/code-backdoor-f26-pilot-w2` es un ajuste fino de `Salesforce/codet5-base` publicado por el usuario TheFatBlue en HuggingFace. El modelo se ha entrenado sobre el conjunto Window 2 (`train.csv`) de la competicion Code Backdoor Detection, enmarcada en el curso CSC 591/791 (Trustworthy AI for Software Engineering) de NC State University, otono de 2026. La tarea consistia precisamente en detectar filas envenenadas dentro de un dataset de entrenamiento, por lo que se trata de una herramienta de investigacion acotada a ese contexto docente.
+`TheFatBlue/code-backdoor-f26-pilot-w2` es un ajuste fino de `Salesforce/codet5-base` publicado por el usuario TheFatBlue en Hugging Face. El modelo se ha entrenado sobre el conjunto Window 2 (`train.csv`) de la competicion Code Backdoor Detection, enmarcada en el curso CSC 591/791 (Trustworthy AI for Software Engineering) de NC State University, otono de 2026. La tarea consistia precisamente en detectar filas envenenadas dentro de un dataset de entrenamiento, por lo que se trata de una herramienta de investigacion acotada a ese contexto docente.
 
 Arquitecturalmente es un transformer encoder-decoder de tipo T5 adaptado a codigo (CodeT5), con 222.882.048 parametros y pesos en safetensors. El modelo se distribuye con la etiqueta de pipeline `summarization` y su uso previsto es la generacion de resumenes o etiquetas sobre fragmentos de codigo, con decodificacion greedy y un maximo de 64 tokens nuevos reproduciendo el fichero `outputs_train.csv` liberado por el autor.
 
@@ -66,15 +66,15 @@ La unica metrica operativa documentada por el autor es de rendimiento de inferen
 - VRAM estimada en int4: aproximadamente 0,11 GB de pesos, aunque no se documentan cuantizaciones oficiales ni su equivalencia funcional con la salida en fp32.
 - GPU recomendadas: cualquier GPU consumer con al menos 2-4 GB de VRAM es suficiente (GTX 1650, RTX 3050, RTX 4090 sobradamente). En el extremo profesional, A100 o H100 solo tendrian sentido para procesar grandes volumenes en paralelo.
 - Caben en GPU consumer: si, en practicamente todas las tarjetas modernas, e incluso en CPU sin acelerador.
-- Opciones de despliegue: la model card solo documenta `transformers` con `AutoModelForSeq2SeqLM` y `AutoTokenizer`. El soporte de vLLM, llama.cpp, Ollama o TGI no esta documentado; dado el formato safetensors en fp32, los servidores compatibles con modelos T5 de HuggingFace podrian funcionar, pero no hay confirmacion del autor.
+- Opciones de despliegue: la model card solo documenta `transformers` con `AutoModelForSeq2SeqLM` y `AutoTokenizer`. El soporte de vLLM, llama.cpp, Ollama o TGI no esta documentado; dado el formato safetensors en fp32, los servidores compatibles con modelos T5 de Hugging Face podrian funcionar, pero no hay confirmacion del autor.
 - Latencia y throughput: aproximadamente 0,5 s por funcion en CPU de portatil; tiempos del orden de minutos para el conjunto completo en una GPU gratuita de Colab. No se publican cifras de throughput en tokens por segundo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| TheFatBlue/code-backdoor-f26-pilot-w2 | 222.882.048 | no disponible (ejemplo con truncado a 512) | bsd-3-clause | HuggingFace, 0 descargas | Ajuste fino de competicion; dataset con filas envenenadas |
-| Salesforce/codet5-base | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace (modelo base) | Base declarada por el autor |
+| TheFatBlue/code-backdoor-f26-pilot-w2 | 222.882.048 | no disponible (ejemplo con truncado a 512) | bsd-3-clause | Hugging Face, 0 descargas | Ajuste fino de competicion; dataset con filas envenenadas |
+| Salesforce/codet5-base | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face (modelo base) | Base declarada por el autor |
 | Otros modelos de resumen de codigo | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos |
 
 No se dispone de informacion suficiente para comparar rendimiento, contexto o licencia frente a alternativas contemporaneas de la misma categoria.
@@ -93,6 +93,6 @@ No se dispone de informacion suficiente para comparar rendimiento, contexto o li
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheFatBlue/code-backdoor-f26-pilot-w2
+- Modelo en Hugging Face: https://huggingface.co/TheFatBlue/code-backdoor-f26-pilot-w2
 - Modelo base: https://huggingface.co/Salesforce/codet5-base
 - No se han encontrado otros enlaces relevantes (paper, repositorio, demo o blog) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

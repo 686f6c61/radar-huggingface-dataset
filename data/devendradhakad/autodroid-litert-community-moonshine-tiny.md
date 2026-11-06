@@ -85,7 +85,7 @@ No se dispone de resultados de benchmarks comparativos en la informacion proporc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/devendradhakad/autodroid-litert-community-moonshine-tiny
+- Repositorio en Hugging Face: https://huggingface.co/devendradhakad/autodroid-litert-community-moonshine-tiny
 - Modelo base (model card): https://huggingface.co/UsefulSensors/moonshine-tiny
 - Articulo: Moonshine: Speech Recognition for Live Transcription and Voice Commands — https://arxiv.org/abs/2410.15608
 - LiteRT (documentacion): https://ai.google.dev/edge/litert

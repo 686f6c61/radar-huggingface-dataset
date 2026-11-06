@@ -90,7 +90,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cmndcntrlcyber/gemma4-26b-a4b-code-trainer-aggressive
+- Repositorio Hugging Face: https://huggingface.co/cmndcntrlcyber/gemma4-26b-a4b-code-trainer-aggressive
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Referencia citada en la model card (calculadora de impacto de carbono, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto mencionada: https://mlco2.github.io/impact#compute

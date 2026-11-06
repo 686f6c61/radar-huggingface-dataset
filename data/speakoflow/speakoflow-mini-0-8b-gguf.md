@@ -74,8 +74,8 @@ La comparativa se basa en los datos del benchmark del autor, que incluye modelos
 
 | Modelo | Parametros | Contexto | Overall (dictation-cleanup) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **SpeakoFlow Mini 0.8B** | 0.8B | no disponible | 70.7% | Apache-2.0 | GGUF en HuggingFace |
-| Qwen3.5 0.8B (base) | 0.8B | no disponible | 47.3% | Apache-2.0 | HuggingFace |
+| **SpeakoFlow Mini 0.8B** | 0.8B | no disponible | 70.7% | Apache-2.0 | GGUF en Hugging Face |
+| Qwen3.5 0.8B (base) | 0.8B | no disponible | 47.3% | Apache-2.0 | Hugging Face |
 | Gemma 4 E2B | 2B aprox. | no disponible | 47.0% | no disponible | no disponible |
 | S1-mini | no disponible | no disponible | 15.3% | no disponible | no disponible |
 | Sotto 350M | 0.35B | no disponible | 11.7% | no disponible | no disponible |
@@ -95,7 +95,7 @@ No se dispone de información sobre otros modelos de limpieza de dictado de cód
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SpeakoFlow/speakoflow-mini-0.8b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/SpeakoFlow/speakoflow-mini-0.8b-GGUF
 - Repositorio del proyecto SpeakoFlow: https://github.com/AbhishekBarali/SpeakoFlow
 - Sitio web oficial: https://www.speakoflow.com/
 - Documentación de modelos de transcripción: https://www.speakoflow.com/docs/models/transcription-models

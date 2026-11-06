@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`draculala987/draculala_lora_storage_yard` es un repositorio de adaptadores LoRA para modelos de difusion, publicado por el usuario draculala987 en HuggingFace. No se trata de un modelo fundacional, sino de un contenedor de pesos LoRA entrenados sobre seis modelos base distintos: Krea-2-Raw, Z-Image-Turbo, Wan2.2-T2V-A14B, Wan2.2-I2V-A14B, Illustrious-xl-early-release-v0 y Pony_Diffusion_V6_XL. El repositorio ocupa 241 GB, lo que sugiere que almacena varios adaptadores y probablemente los pesos completos o checkpoints intermedios de los modelos base referenciados.
+`draculala987/draculala_lora_storage_yard` es un repositorio de adaptadores LoRA para modelos de difusion, publicado por el usuario draculala987 en Hugging Face. No se trata de un modelo fundacional, sino de un contenedor de pesos LoRA entrenados sobre seis modelos base distintos: Krea-2-Raw, Z-Image-Turbo, Wan2.2-T2V-A14B, Wan2.2-I2V-A14B, Illustrious-xl-early-release-v0 y Pony_Diffusion_V6_XL. El repositorio ocupa 241 GB, lo que sugiere que almacena varios adaptadores y probablemente los pesos completos o checkpoints intermedios de los modelos base referenciados.
 
 El proposito declarado por el autor es puramente logistico: alojar pesos que su unidad de disco ya no puede contener ("My drive can't hold up anymore so"). La model card no documenta arquitectura, datos de entrenamiento, benchmarks ni procedencia de las imagenes de entrenamiento. El unico parametro funcional documentado es la palabra de activacion (`draculalacharxxx`), orientada a la generacion de imagenes de identidad concreta, con sugerencias de prompts como `cosplay photo` o `18-years-old east asian girl`.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| draculala987/draculala_lora_storage_yard | LoRA multi-base | no disponible | no aplica | apache-2.0 | HuggingFace, 62 descargas |
-| LoRA de identidad tipico sobre SDXL | LoRA | ~10-200 MB por adaptador | no aplica | variable | Civitai, HuggingFace |
-| Pony Diffusion V6 XL (base) | SDXL fine-tune | ~2.6B (UNet) | no aplica | variable | HuggingFace |
-| Wan2.2-T2V-A14B (base) | DiT video | 14B | no aplica | variable | HuggingFace |
+| draculala987/draculala_lora_storage_yard | LoRA multi-base | no disponible | no aplica | apache-2.0 | Hugging Face, 62 descargas |
+| LoRA de identidad tipico sobre SDXL | LoRA | ~10-200 MB por adaptador | no aplica | variable | Civitai, Hugging Face |
+| Pony Diffusion V6 XL (base) | SDXL fine-tune | ~2.6B (UNet) | no aplica | variable | Hugging Face |
+| Wan2.2-T2V-A14B (base) | DiT video | 14B | no aplica | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo; la comparacion se limita a categoria, licencia y disponibilidad.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo; la comparacion se limita a ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/draculala987/draculala_lora_storage_yard
+- Hugging Face: https://huggingface.co/draculala987/draculala_lora_storage_yard
 - Modelo base Krea-2-Raw: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Z-Image-Turbo: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Modelo base Wan2.2-T2V-A14B: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B

@@ -84,8 +84,8 @@ No se dispone de datos de benchmark de los modelos competidores citados por el a
 
 | Modelo | Parámetros | Contexto | Top-1 declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TAMEV-Micro-MiniLM | 22,76 M | No disponible (escalado O(K) sobre candidatos) | 66,52% (benchmark propietario) | Apache 2.0 | HuggingFace |
-| all-MiniLM-L6-v2 (backbone) | ~22,7 M | 512 tokens (SentenceTransformers) | No disponible | Apache 2.0 | HuggingFace |
+| TAMEV-Micro-MiniLM | 22,76 M | No disponible (escalado O(K) sobre candidatos) | 66,52% (benchmark propietario) | Apache 2.0 | Hugging Face |
+| all-MiniLM-L6-v2 (backbone) | ~22,7 M | 512 tokens (SentenceTransformers) | No disponible | Apache 2.0 | Hugging Face |
 | TypeSafe Jev / Kev / Laya / SemIf | No disponible | No disponible | No disponible | No disponible | Citados en la model card, sin datos accesibles |
 
 La comparación directa con alternativas de la misma categoría (routers de decisión "System One") no es posible con la información disponible, ya que los modelos citados no presentan métricas públicas verificables en las fuentes consultadas.
@@ -101,11 +101,11 @@ La comparación directa con alternativas de la misma categoría (routers de deci
 - Licencia: Apache 2.0 permite uso comercial, modificación y redistribución, siempre que se conserve el aviso de licencia y las atribuciones; conviene verificar la licencia del backbone (all-MiniLM-L6-v2, Apache 2.0).
 - Código remoto: requiere `trust_remote_code=True`, lo que implica ejecutar código definido por el autor; debe auditarse antes de usarlo en producción.
 - Model card incompleta: el README proporcionado está truncado y las referencias a modelos competidores (TypeSafe Jev, Kev, Laya, SemIf) no aportan datos verificables; las afirmaciones de superioridad ("SOTA") no están respaldadas por terceros.
-- Adopción mínima: 0 descargas y 0 "likes" en HuggingFace en el momento de la ficha, lo que reduce la validación por parte de la comunidad.
+- Adopción mínima: 0 descargas y 0 "likes" en Hugging Face en el momento de la ficha, lo que reduce la validación por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tamkimd/tamev-micro-minilm
+- Modelo en Hugging Face: https://huggingface.co/Tamkimd/tamev-micro-minilm
 - Backbone de referencia (all-MiniLM-L6-v2): https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Repositorio GitHub del proyecto TAMEV: https://github.com/tamkimd/tamev
 - Sitio del autor Tamkimd: http://tamkimd.com/

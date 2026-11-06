@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-230M-tools-FP8 es la version cuantizada en FP8 del ajuste fino para tool calling de LiquidAI LFM2.5-230M, publicado por el usuario iromu en HuggingFace. Se trata de un modelo de lenguaje de 229.693.184 parametros (aproximadamente 230M) construido sobre la arquitectura LFM2 de Liquid AI, especializado exclusivamente en la emision de llamadas a herramientas y funciones en el formato de cable propio de la familia LFM2.5, que no sigue el envelope `tool_calls` de OpenAI.
+LFM2.5-230M-tools-FP8 es la version cuantizada en FP8 del ajuste fino para tool calling de LiquidAI LFM2.5-230M, publicado por el usuario iromu en Hugging Face. Se trata de un modelo de lenguaje de 229.693.184 parametros (aproximadamente 230M) construido sobre la arquitectura LFM2 de Liquid AI, especializado exclusivamente en la emision de llamadas a herramientas y funciones en el formato de cable propio de la familia LFM2.5, que no sigue el envelope `tool_calls` de OpenAI.
 
 El checkpoint parte de `iromu/LFM2.5-230M-tools`, un fine-tune con LoRA sobre `LiquidAI/LFM2.5-230M-Base` entrenado con NeMo-RL sobre el split `sft_tools` del dataset `r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation`. Posteriormente se cuantizo a FP8 (W8A8, E4M3) con NVIDIA ModelOpt usando la configuracion `FP8_PER_CHANNEL_PER_TOKEN_CFG` y se exporto mediante `export_hf_checkpoint`, generando pesos FP8, escalas por canal y el fichero `hf_quant_config.json` que consume vLLM.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Formato de tool calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-230M-tools-FP8 (este) | 229,7M | no disponible (entrenado a 4096) | LFM2.5 propietario (marcadores `<|tool_call_start|>`) | Apache 2.0 | HuggingFace, 0 descargas |
-| LFM2.5-230M-tools (BF16) | 229,7M | no disponible (entrenado a 4096) | LFM2.5 propietario | Apache 2.0 | HuggingFace |
-| LiquidAI/LFM2.5-230M-Base | 230M | no disponible | no especializado | no disponible en la informacion | HuggingFace |
+| LFM2.5-230M-tools-FP8 (este) | 229,7M | no disponible (entrenado a 4096) | LFM2.5 propietario (marcadores `<|tool_call_start|>`) | Apache 2.0 | Hugging Face, 0 descargas |
+| LFM2.5-230M-tools (BF16) | 229,7M | no disponible (entrenado a 4096) | LFM2.5 propietario | Apache 2.0 | Hugging Face |
+| LiquidAI/LFM2.5-230M-Base | 230M | no disponible | no especializado | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos frente a alternativas de la misma categoria en la informacion proporcionada. La comparacion con modelos de tool calling de mayor tamano (por ejemplo, familias Qwen o Llama) no es posible con los datos disponibles, y ademas el formato de cable propietario limita la comparabilidad directa en runtimes estandar.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks comparativos frente a alternativas de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iromu/LFM2.5-230M-tools-FP8
+- Modelo en Hugging Face: https://huggingface.co/iromu/LFM2.5-230M-tools-FP8
 - Modelo base (BF16, con tabla de validacion): https://huggingface.co/iromu/LFM2.5-230M-tools
 - Cuantizaciones GGUF: https://huggingface.co/iromu/LFM2.5-230M-tools-GGUF
 - Checkpoint NVFP4: https://huggingface.co/iromu/LFM2.5-230M-tools-NVFP4

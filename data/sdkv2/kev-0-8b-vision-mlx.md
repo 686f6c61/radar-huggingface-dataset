@@ -83,9 +83,9 @@ Paridad con la referencia PyTorch fp32 en CPU:
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kev-0.8B-vision-mlx (este) | 852.985.920 | no disponible | Decisión por pointer head sobre opciones, visión MLX | Apache 2.0 | HuggingFace, MLX |
-| jaredpalmer/kev-0.8b | no disponible | no disponible | Decisión por pointer head, solo texto | no disponible | HuggingFace |
-| Qwen/Qwen3.5-0.8B-Base | no disponible | no disponible | Generación multimodal texto-imagen | no disponible | HuggingFace |
+| Kev-0.8B-vision-mlx (este) | 852.985.920 | no disponible | Decisión por pointer head sobre opciones, visión MLX | Apache 2.0 | Hugging Face, MLX |
+| jaredpalmer/kev-0.8b | no disponible | no disponible | Decisión por pointer head, solo texto | no disponible | Hugging Face |
+| Qwen/Qwen3.5-0.8B-Base | no disponible | no disponible | Generación multimodal texto-imagen | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con alternativas en la información proporcionada.
 
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks comparativos con alternativas en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sdkv2/kev-0.8b-vision-mlx
+- Modelo en Hugging Face: https://huggingface.co/sdkv2/kev-0.8b-vision-mlx
 - Modelo base Kev-0.8B: https://huggingface.co/jaredpalmer/kev-0.8b
 - Modelo base Qwen3.5-0.8B-Base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Repositorio mlx-vlm: https://github.com/Blaizzy/mlx-vlm

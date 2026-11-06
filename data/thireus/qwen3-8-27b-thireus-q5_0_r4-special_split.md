@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Thireus/Qwen3.8-27B-THIREUS-Q5_0_R4-SPECIAL_SPLIT` es un artefacto publicado en HuggingFace por el usuario Thireus, con licencia MIT y etiqueta regional "us". La model card asociada no contiene más que la declaración de licencia, sin información técnica sobre arquitectura, parámetros, entrenamiento o capacidades. El nombre sugiere una posible cuantización Q5_0 de un modelo de la familia Qwen con 27 mil millones de parámetros, pero esta interpretación no está confirmada por ningún dato oficial. A fecha de publicación (agosto de 2026), el modelo no registra descargas ni valoraciones, lo que indica una difusión mínima. Su relevancia actual es limitada debido a la ausencia total de documentación, lo que impide evaluar su idoneidad para cualquier caso de uso.
+El modelo `Thireus/Qwen3.8-27B-THIREUS-Q5_0_R4-SPECIAL_SPLIT` es un artefacto publicado en Hugging Face por el usuario Thireus, con licencia MIT y etiqueta regional "us". La model card asociada no contiene más que la declaración de licencia, sin información técnica sobre arquitectura, parámetros, entrenamiento o capacidades. El nombre sugiere una posible cuantización Q5_0 de un modelo de la familia Qwen con 27 mil millones de parámetros, pero esta interpretación no está confirmada por ningún dato oficial. A fecha de publicación (agosto de 2026), el modelo no registra descargas ni valoraciones, lo que indica una difusión mínima. Su relevancia actual es limitada debido a la ausencia total de documentación, lo que impide evaluar su idoneidad para cualquier caso de uso.
 
 ## Especificaciones tecnicas
 
@@ -62,6 +62,6 @@ No disponible. No se dispone de información suficiente para comparar este model
 
 ## Enlaces
 
-- [HuggingFace - Thireus/Qwen3.8-27B-THIREUS-Q5_0_R4-SPECIAL_SPLIT](https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-Q5_0_R4-SPECIAL_SPLIT)
+- [Hugging Face - Thireus/Qwen3.8-27B-THIREUS-Q5_0_R4-SPECIAL_SPLIT](https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-Q5_0_R4-SPECIAL_SPLIT)
 
 No se han encontrado otros enlaces relevantes (papers, repositorios, demos) asociados a este modelo.

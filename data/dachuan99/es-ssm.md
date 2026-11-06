@@ -6,7 +6,7 @@ ES-SSM (Elastic Spectral State Space Models for Train-Once Budgeted Inference) e
 
 La clave técnica es que la base espectral de Hankel fija del modelo proporciona un eje de canales naturalmente ordenado: conservar los primeros `K` canales ajusta la resolución de aproximación del operador de secuencia, de modo que el número de canales espectrales controla directamente la capacidad del modelo. Durante el entrenamiento se usan proyecciones de canal aprendidas, puertas adaptativas por canal y "budget dropout", de modo que los canales iniciales son predictivos a presupuestos pequeños y los posteriores aportan refinamiento.
 
-El repositorio de HuggingFace es un espejo del código fuente (investigación, con licencia Apache 2.0) y no incluye checkpoints entrenados. La evaluación cubre modelado de lenguaje a nivel de byte (SlimPajama, familia de 1.3B parámetros entrenada sobre 30B byte-tokens), Long Range Arena, Speech Commands V2 y aprendizaje por refuerzo offline (D4RL).
+El repositorio de Hugging Face es un espejo del código fuente (investigación, con licencia Apache 2.0) y no incluye checkpoints entrenados. La evaluación cubre modelado de lenguaje a nivel de byte (SlimPajama, familia de 1.3B parámetros entrenada sobre 30B byte-tokens), Long Range Arena, Speech Commands V2 y aprendizaje por refuerzo offline (D4RL).
 
 ## Especificaciones tecnicas
 
@@ -90,7 +90,7 @@ Nota: la comparativa de velocidad proviene del benchmark del paper ESSH (paramet
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dachuan99/ES-SSM
+- Hugging Face: https://huggingface.co/Dachuan99/ES-SSM
 - GitHub: https://github.com/GMU-MICO/ES-SSM
 - Paper ES-SSM: https://arxiv.org/abs/2601.22488
 - Paper ESSH (follow-up): https://arxiv.org/abs/2609.32486

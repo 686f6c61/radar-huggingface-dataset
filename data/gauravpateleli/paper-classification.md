@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Gauravpateleli/paper-classification` es un repositorio de HuggingFace que contiene una implementación propia de una arquitectura Poolformer orientada a tareas de clasificación. Lo publica el usuario Gauravpateleli bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`Gauravpateleli/paper-classification` es un repositorio de Hugging Face que contiene una implementación propia de una arquitectura Poolformer orientada a tareas de clasificación. Lo publica el usuario Gauravpateleli bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El repositorio incluye un script `run.py`, un `config.json` con los parámetros de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un `model.safetensors` de inicialización. La variante declarada es "giant", con atención de ventana deslizante, fusión tipo Tucker, activación Mish y normalización InstanceNorm. El recuento real de parámetros en el fichero safetensors es de 24.832, un tamaño muy reducido que confirma que se trata de una maqueta de arquitectura y no de un modelo con capacidad real de clasificación.
 
@@ -43,7 +43,7 @@ No hay información sobre datos de entrenamiento, número de tokens, composició
 - Reproducción de experimentos de arquitectura: usar `run.py` y `config.json` para replicar la implementación de Poolformer en un entorno controlado y comparar variantes de token mixer.
 - Pruebas de humo de pipelines de entrenamiento: cargar el checkpoint de inicialización para verificar que el flujo de datos, el optimizador Adafactor y el schedule de warmup lineal funcionan antes de lanzar un entrenamiento real.
 - Base para fine-tuning en clasificación de documentos: adaptar la arquitectura a un dataset propio de imágenes de papers o páginas escaneadas, entrenando desde cero con datos etiquetados y al menos tres semillas para reportar métricas.
-- Docencia y formación: emplear el repositorio como ejemplo didáctico de cómo se estructura un proyecto de visión (script, config, training args y pesos) en HuggingFace.
+- Docencia y formación: emplear el repositorio como ejemplo didáctico de cómo se estructura un proyecto de visión (script, config, training args y pesos) en Hugging Face.
 - Investigación en alternativas a la atención: servir de banco de pruebas para estudiar el efecto de la fusión Tucker, la activación Mish o la normalización por instancias en tareas de clasificación.
 - Integración en pipelines de CI para validar código de modelos: usar el smoke test como comprobación automática de que los cambios en la implementación no rompen la carga del checkpoint ni la ejecución del script.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gauravpateleli/paper-classification | 24.832 | no disponible | No (checkpoint de inicialización) | Apache 2.0 | HuggingFace, 0 descargas |
-| Poolformer oficial (sail/poolformer) | Millones (variantes S/M/B) | no aplica (visión) | Sí, pesos entrenados en ImageNet | Apache 2.0 | HuggingFace, ampliamente usado |
+| Gauravpateleli/paper-classification | 24.832 | no disponible | No (checkpoint de inicialización) | Apache 2.0 | Hugging Face, 0 descargas |
+| Poolformer oficial (sail/poolformer) | Millones (variantes S/M/B) | no aplica (visión) | Sí, pesos entrenados en ImageNet | Apache 2.0 | Hugging Face, ampliamente usado |
 | Otros repositorios de clasificación custom | Variable | no aplica | Depende del autor | Variable | Variable |
 
 La comparación directa con el Poolformer oficial de la organización Sail es la referencia más cercana en arquitectura; la diferencia principal es que este repositorio no incluye pesos entrenados ni evaluación publicada.
@@ -82,5 +82,5 @@ La comparación directa con el Poolformer oficial de la organización Sail es la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gauravpateleli/paper-classification
+- Hugging Face: https://huggingface.co/Gauravpateleli/paper-classification
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la información disponible.

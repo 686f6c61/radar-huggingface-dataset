@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EfficientNetV2-B0-ONNX es una version exportada a ONNX en formato FP32 del modelo de clasificacion de imagenes EfficientNetV2-B0, publicada por Renesas en su organizacion de HuggingFace. El modelo se distribuye especificamente para su despliegue sobre la plataforma Renesas R-Car X5H, empleando la NPU NPX6 para inferencia acelerada. La arquitectura de origen es EfficientNetV2-B0, una red neuronal convolucional (CNN) disenada para maximizar la eficiencia en el numero de parametros manteniendo una precision competitiva en clasificacion de imagenes.
+EfficientNetV2-B0-ONNX es una version exportada a ONNX en formato FP32 del modelo de clasificacion de imagenes EfficientNetV2-B0, publicada por Renesas en su organizacion de Hugging Face. El modelo se distribuye especificamente para su despliegue sobre la plataforma Renesas R-Car X5H, empleando la NPU NPX6 para inferencia acelerada. La arquitectura de origen es EfficientNetV2-B0, una red neuronal convolucional (CNN) disenada para maximizar la eficiencia en el numero de parametros manteniendo una precision competitiva en clasificacion de imagenes.
 
 El modelo resuelve la tarea de clasificacion de imagenes sobre el conjunto ImageNet ILSVRC2012, con 1000 clases de salida y una resolucion de entrada de 224x224 pixeles. Cuenta con aproximadamente 7,1 millones de parametros, lo que lo situa en el rango de modelos compactos aptos para hardware embebido. El export se realizo desde MMPreTrain (OpenMMLab) y se optimizo posteriormente con ONNX Optimizer antes de su publicacion.
 
@@ -105,7 +105,7 @@ Las variantes B1-B3 proceden del mismo repositorio y del mismo pipeline de expor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Renesas/EfficientNetV2-B0-ONNX
+- Repositorio Hugging Face: https://huggingface.co/Renesas/EfficientNetV2-B0-ONNX
 - Sitio oficial de Renesas: https://www.renesas.com/
 - Pagina de productos de Renesas: https://www.renesas.com/en/products
 - Wikipedia (Renesas Electronics): https://en.wikipedia.org/wiki/Renesas_Electronics

@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OscarShaitan/Qwen3-VL-8B-Instruct-4bit
+- Repositorio en Hugging Face: https://huggingface.co/OscarShaitan/Qwen3-VL-8B-Instruct-4bit
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Repositorio de origen de la conversion (segun la model card): https://huggingface.co/mlx-community/Qwen3-VL-8B-Instruct-4bit
 - Libreria de conversion: mlx-vlm, version 0.3.4 (no se proporciona enlace directo en la informacion disponible)

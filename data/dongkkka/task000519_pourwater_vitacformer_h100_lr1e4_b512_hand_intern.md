@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Task000519_PourWater_ViTacFormer_H100_LR1e4_B512_Hand_Intern es un paquete de investigación publicado en HuggingFace por el usuario Dongkkka que contiene dos checkpoints de inferencia de una política robótica visuotáctil entrenada desde cero para la tarea "Task519 Pour Water" (verter agua) sobre un robot SH5. El modelo, denominado ViTacFormer, combina visión (cámara RGB de cabeza izquierda) con señales táctiles bilaterales de alta densidad y estado propioceptivo para predecir trozos de acción de 100 pasos. No es un modelo de lenguaje ni un transformador de propósito general: es una política de aprendizaje por imitación (imitation learning) con un cargador propio en PyTorch, no compatible con `AutoModel` de Transformers ni con las políticas estándar de LeRobot.
+Task000519_PourWater_ViTacFormer_H100_LR1e4_B512_Hand_Intern es un paquete de investigación publicado en Hugging Face por el usuario Dongkkka que contiene dos checkpoints de inferencia de una política robótica visuotáctil entrenada desde cero para la tarea "Task519 Pour Water" (verter agua) sobre un robot SH5. El modelo, denominado ViTacFormer, combina visión (cámara RGB de cabeza izquierda) con señales táctiles bilaterales de alta densidad y estado propioceptivo para predecir trozos de acción de 100 pasos. No es un modelo de lenguaje ni un transformador de propósito general: es una política de aprendizaje por imitación (imitation learning) con un cargador propio en PyTorch, no compatible con `AutoModel` de Transformers ni con las políticas estándar de LeRobot.
 
 El paquete incluye `checkpoints/best_validation.pt` (paso 34.000, seleccionado por la mejor puntuación compuesta de validación) y `checkpoints/latest_model.pt` (paso 110.000, extraído del checkpoint reanudable). El autor indica explícitamente que se trata de un checkpoint de investigación incompleto, que el entrenamiento se detuvo antes de la fase planificada de 300k de tacto predicho y que el modelo no está aprobado para despliegue motorizado en un SH5 real. La relevancia actual es acotada: sirve como artefacto reproducible para estudiar políticas visuotáctiles y predicción de tacto futuro, pero no como componente listo para producción.
 
@@ -103,7 +103,7 @@ No disponible. La información proporcionada no incluye datos de otros modelos d
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Dongkkka/Task000519_PourWater_ViTacFormer_H100_LR1e4_B512_Hand_Intern
+- Repositorio de Hugging Face: https://huggingface.co/Dongkkka/Task000519_PourWater_ViTacFormer_H100_LR1e4_B512_Hand_Intern
 - Archivos de verificación y trazabilidad incluidos en el repositorio: `SHA256SUMS`, `verify_package.py`, `validation_history.json`, `train_config.json`, `artifact_receipt.json`
 - Ruta del código fuente incluido: `source_snapshot/ViTacFormer_SH5` (licencia Apache-2.0)
 - Paper, blog, demo o repositorio adicional: no disponibles. La búsqueda web realizada devolvió únicamente resultados no relacionados (documentación de Google Translate), sin referencias al modelo ViTacFormer ni al autor.

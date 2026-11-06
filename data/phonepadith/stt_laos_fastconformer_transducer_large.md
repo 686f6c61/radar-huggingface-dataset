@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Phonepadith/stt_laos_fastconformer_transducer_large` es un modelo de reconocimiento automatico del habla (ASR) publicado en HuggingFace por el usuario Phonepadith. Por su denominacion, el modelo sigue la arquitectura FastConformer con una cabeza de decodificacion de tipo transducer (RNN-T), en su variante de tamano "large", y esta orientado al reconocimiento de laosiano, segun indica el sufijo `laos` del identificador. Se trata, por tanto, de un modelo especializado en una lengua de bajos recursos, un ambito donde las soluciones comerciales genericas suelen ofrecer coberturas limitadas.
+`Phonepadith/stt_laos_fastconformer_transducer_large` es un modelo de reconocimiento automatico del habla (ASR) publicado en Hugging Face por el usuario Phonepadith. Por su denominacion, el modelo sigue la arquitectura FastConformer con una cabeza de decodificacion de tipo transducer (RNN-T), en su variante de tamano "large", y esta orientado al reconocimiento de laosiano, segun indica el sufijo `laos` del identificador. Se trata, por tanto, de un modelo especializado en una lengua de bajos recursos, un ambito donde las soluciones comerciales genericas suelen ofrecer coberturas limitadas.
 
 La relevancia del modelo radica en su enfoque: los sistemas ASR basados en FastConformer con decodificacion transducer han demostrado ser eficientes para streaming y para lenguas con pocos datos, al combinar un encoder convolucional-autoattention rapido con un decoder que modela dependencias acusticas y linguisticas de forma conjunta. No obstante, la informacion publicada en la model card es practicamente inexistente: no se detallan datos de entrenamiento, metricas, composicion del corpus ni caracteristicas tecnicas mas alla de la licencia.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Phonepadith/stt_laos_fastconformer_transducer_large` | no disponible | no disponible | no disponible | `aidctech` (other) | HuggingFace, 0 descargas |
+| `Phonepadith/stt_laos_fastconformer_transducer_large` | no disponible | no disponible | no disponible | `aidctech` (other) | Hugging Face, 0 descargas |
 | Whisper large-v3 (OpenAI) | 1.550 M | 30 s de audio | WER publicados en la model card original | MIT | Amplia, multilingue |
 | Wav2Vec2 / XLS-R (Meta) | 300 M - 2.000 M | variable | WER publicados | MIT / CC-BY-NC | Amplia, con fine-tuning |
-| Modelos NeMo FastConformer multilingues (NVIDIA) | variable | variable | WER publicados en NGC | CC-BY-4.0 | NGC / HuggingFace |
+| Modelos NeMo FastConformer multilingues (NVIDIA) | variable | variable | WER publicados en NGC | CC-BY-4.0 | NGC / Hugging Face |
 
 La comparativa es orientativa: no se dispone de datos de rendimiento del modelo evaluado que permitan una comparacion cuantitativa con Whisper, XLS-R o los FastConformer de NVIDIA. La principal diferencia observable es la licencia, que no es estandar y requiere revision del fichero `LICENSE`.
 
@@ -78,11 +78,11 @@ La comparativa es orientativa: no se dispone de datos de rendimiento del modelo 
 - La licencia `aidctech` es una licencia personalizada de tipo `other`; es imprescindible revisar el fichero `LICENSE` antes de cualquier uso comercial, ya que las condiciones no son las de una licencia estandar (MIT, Apache 2.0, CC-BY).
 - El repositorio no tiene descargas ni validacion de la comunidad, lo que reduce la confianza en la reproducibilidad y en el soporte.
 - No se documenta el formato de pesos, lo que puede complicar la carga en frameworks distintos de aquel con el que fue entrenado.
-- La ausencia de metadatos de idioma oficiales en HuggingFace impide confirmar que el modelo sea exclusivamente laosiano.
+- La ausencia de metadatos de idioma oficiales en Hugging Face impide confirmar que el modelo sea exclusivamente laosiano.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Phonepadith/stt_laos_fastconformer_transducer_large
+- Modelo en Hugging Face: https://huggingface.co/Phonepadith/stt_laos_fastconformer_transducer_large
 - Fichero de licencia referenciado: https://huggingface.co/Phonepadith/stt_laos_fastconformer_transducer_large/blob/main/LICENSE
 - Perfil del autor: https://huggingface.co/Phonepadith
 - Paper de FastConformer (NVIDIA NeMo): https://arxiv.org/abs/2305.05084

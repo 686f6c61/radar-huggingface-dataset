@@ -2,7 +2,7 @@
 
 ## Resumen
 
-moe_4e1a es un modelo de traduccion automatica de tipo decoder-only transformer con capas feed-forward de mezcla de expertos (MoE), desarrollado por el usuario neemon como parte de la asignatura Advanced NLP (ANLP) del IIIT-H, curso Monsoon 2026. El modelo se entreno desde cero (from scratch) y se publica unicamente como checkpoint, sin codigo de arquitectura, entrenamiento ni evaluacion en el repositorio de HuggingFace; esos materiales residen, segun el autor, en el repositorio de la asignatura.
+moe_4e1a es un modelo de traduccion automatica de tipo decoder-only transformer con capas feed-forward de mezcla de expertos (MoE), desarrollado por el usuario neemon como parte de la asignatura Advanced NLP (ANLP) del IIIT-H, curso Monsoon 2026. El modelo se entreno desde cero (from scratch) y se publica unicamente como checkpoint, sin codigo de arquitectura, entrenamiento ni evaluacion en el repositorio de Hugging Face; esos materiales residen, segun el autor, en el repositorio de la asignatura.
 
 La relevancia del modelo es fundamentalmente academica y experimental: es un ejemplo compacto (41,6 millones de parametros totales, 29,0 millones activos por token) de arquitectura MoE con 4 expertos y enrutamiento top-1, lo que permite estudiar el comportamiento de un router disperso en un presupuesto de computo muy reducido. Traduce entre ingles, vietnamita y japones, y publica resultados de perplexity y BLEU en el conjunto de test (BLEU vi->en de 27,33 y ja->en de 16,65).
 
@@ -28,7 +28,7 @@ Se trata de un artefacto de asignatura con 0 descargas y 0 likes en el momento d
 | Dimension de la capa feed-forward (`d_ff`) | 512 |
 | Tamano de vocabulario | 32.000 |
 | Libreria | PyTorch |
-| ID de HuggingFace | neemon/anlp-a2-part1-moe_4e1a |
+| ID de Hugging Face | neemon/anlp-a2-part1-moe_4e1a |
 | Fecha de creacion (metadatos) | 2026-09-14 |
 
 ## Arquitectura y entrenamiento
@@ -91,9 +91,9 @@ Los datos de la columna de modelos alternativos proceden de su documentacion pub
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato y disponibilidad |
 |---|---|---|---|---|---|
 | moe_4e1a (este modelo) | 41,6 M totales / 29,0 M activos | 256 | en, vi, ja | MIT | `model.pt` de PyTorch, sin codigo de arquitectura en el repo |
-| NLLB-200-distilled-600M | 600 M | no disponible | 200 | CC-BY-NC-4.0 | Pesos en HuggingFace, integrado en transformers |
-| M2M-100 418M | 418 M | no disponible | 100 | MIT | Pesos en HuggingFace, integrado en transformers |
-| mBART-50 large | 610 M | no disponible | 50 | MIT | Pesos en HuggingFace, integrado en transformers |
+| NLLB-200-distilled-600M | 600 M | no disponible | 200 | CC-BY-NC-4.0 | Pesos en Hugging Face, integrado en transformers |
+| M2M-100 418M | 418 M | no disponible | 100 | MIT | Pesos en Hugging Face, integrado en transformers |
+| mBART-50 large | 610 M | no disponible | 50 | MIT | Pesos en Hugging Face, integrado en transformers |
 
 La comparacion de calidad no es posible con los datos disponibles: los BLEU publicados por moe_4e1a corresponden a direcciones concretas (vi->en y ja->en) y a un conjunto de test propio no descrito, por lo que no son directamente equiparables a los informes multilingues agregados de los modelos anteriores.
 
@@ -108,11 +108,11 @@ La comparacion de calidad no es posible con los datos disponibles: los BLEU publ
 - Formato de pesos: `model.pt` es un pickle de PyTorch que la propia model card indica cargar con `weights_only=False`, lo que implica ejecucion de codigo arbitrario al deserializar; no cargue el fichero si no confia en su procedencia.
 - Sin soporte de herramientas de despliegue: dada la arquitectura MoE personalizada (4 expertos, top-1, sin expertos compartidos), no hay integracion en vLLM, TGI, llama.cpp ni Ollama, y no existen cuantizaciones publicadas, lo que obliga a trabajo de porting para cualquier uso en produccion.
 - Estado del artefacto: 0 descargas y 0 likes, repositorio de 0,2 GB con solo el checkpoint, creado y actualizado el 2026-09-14 segun los metadatos. Es un entregable de asignatura sin garantia de mantenimiento, versionado ni soporte.
-- Ausencia de codigo de entrenamiento y evaluacion en el repositorio de HuggingFace: la reproducibilidad depende de un repositorio de asignatura cuya URL no se proporciona en la informacion disponible.
+- Ausencia de codigo de entrenamiento y evaluacion en el repositorio de Hugging Face: la reproducibilidad depende de un repositorio de asignatura cuya URL no se proporciona en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neemon/anlp-a2-part1-moe_4e1a
+- Modelo en Hugging Face: https://huggingface.co/neemon/anlp-a2-part1-moe_4e1a
 - Repositorio de arquitectura, entrenamiento y evaluacion (mencionado por el autor como "assignment repository", IIIT-H Advanced NLP Monsoon 2026): no disponible, no se proporciona URL
 - Paper o publicacion tecnica asociada: no disponible
 - Demo o Space: no disponible

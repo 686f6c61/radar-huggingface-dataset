@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qkswj/act-so101-task001 | 51,7 M | no disponible | Pick and place en SO-101 | no disponible | HuggingFace |
-| Políticas ACT genéricas de LeRobot | variable | no disponible | Manipulación con aprendizaje por imitación | según checkpoint | HuggingFace / LeRobot |
+| qkswj/act-so101-task001 | 51,7 M | no disponible | Pick and place en SO-101 | no disponible | Hugging Face |
+| Políticas ACT genéricas de LeRobot | variable | no disponible | Manipulación con aprendizaje por imitación | según checkpoint | Hugging Face / LeRobot |
 | Políticas Diffusion Policy | variable | no disponible | Manipulación con aprendizaje por imitación | según checkpoint | Repositorios de investigación |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qkswj/act-so101-task001
+- Modelo en Hugging Face: https://huggingface.co/qkswj/act-so101-task001
 - LeRobot (framework utilizado, v0.6.0): https://github.com/huggingface/lerobot
 - Paper de ACT (Action Chunking with Transformers): https://arxiv.org/abs/2304.13705
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot

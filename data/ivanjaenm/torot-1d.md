@@ -69,7 +69,7 @@ No se han publicado en la información disponible resultados numéricos de los b
 
 | Modelo | Tipo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ToR-OT 1D | Transformer encoder-decoder autorregresivo | 157,6 M | no disponible | Token regression sobre planes OT 1D | MIT | HuggingFace (`ivanjaenm/torot-1d`) |
+| ToR-OT 1D | Transformer encoder-decoder autorregresivo | 157,6 M | no disponible | Token regression sobre planes OT 1D | MIT | Hugging Face (`ivanjaenm/torot-1d`) |
 | Meta OT | Meta-learning sobre OT | no disponible | no aplica | Predicción de planes vía meta-aprendizaje | no disponible | Código en `baselines/` del repo TOR-OT |
 | UNOT | Red neuronal para OT | no disponible | no aplica | Aprendizaje no supervisado de mapas/planes OT | no disponible | Código en `baselines/` del repo TOR-OT |
 | Solver exacto (`ot.emd`) | Programación lineal | no aplica | no aplica | Resolución exacta del problema de OT | depende de la implementación (POT es MIT) | POT / scipy |
@@ -90,7 +90,7 @@ La comparación cuantitativa frente a Meta OT y UNOT no está tabulada en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ivanjaenm/torot-1d
+- Modelo en Hugging Face: https://huggingface.co/ivanjaenm/torot-1d
 - Dataset de entrenamiento: https://huggingface.co/datasets/ivanjaenm/torot_data_5M
 - Repositorio de código: https://github.com/vsingh-group/TOR-OT
 - Artículo: Jaen Marquez, I., Chytas, S. P., Singh, V. *Learning Optimal Transport Plans Via Autoregressive Token Regression*, NeurIPS 2026 (referencia bibliográfica en la model card; no se proporciona URL directa en la información disponible).

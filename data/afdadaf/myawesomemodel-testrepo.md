@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario afdadAF bajo el identificador afdadAF/MyAwesomeModel-TestRepo. Segun los metadatos del repositorio, se trata de un modelo de la libreria transformers con pesos en PyTorch y pipeline declarado de feature-extraction, etiquetado con la arquitectura bert y licencia MIT. Sin embargo, la model card describe un sistema generativo de razonamiento con mejoras en matematicas, programacion y llamada a funciones, lo que resulta incompatible con la etiqueta bert y con el pipeline de extraccion de caracteristicas.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario afdadAF bajo el identificador afdadAF/MyAwesomeModel-TestRepo. Segun los metadatos del repositorio, se trata de un modelo de la libreria transformers con pesos en PyTorch y pipeline declarado de feature-extraction, etiquetado con la arquitectura bert y licencia MIT. Sin embargo, la model card describe un sistema generativo de razonamiento con mejoras en matematicas, programacion y llamada a funciones, lo que resulta incompatible con la etiqueta bert y con el pipeline de extraccion de caracteristicas.
 
 El repositorio no contiene pesos: su tamano declarado es de 0,0 GB, no tiene descargas ni likes, y tanto la fecha de creacion como la de actualizacion (14 de septiembre de 2026) apuntan a un repositorio de prueba o plantilla mas que a un modelo distribuible. La model card incluye una tabla de benchmarks con columnas genericas (Model1, Model2, Model1-v2) sin identificar y afirmaciones como una mejora en AIME 2025 del 70 % al 87,5 % de exactitud, sin que se aporten detalles de arquitectura, parametros, tokenizador ni datos de entrenamiento.
 
@@ -78,7 +78,7 @@ Ademas, la model card afirma para AIME 2025 una exactitud del 87,5 % frente al 7
 - VRAM estimada para inferencia: no disponible, al desconocerse el numero de parametros.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: los metadatos del repositorio indican compatibilidad con endpoints de HuggingFace y la libreria transformers, pero no se especifican opciones como vLLM, llama.cpp, Ollama o TGI, ni se aportan pesos para desplegarlos.
+- Opciones de despliegue: los metadatos del repositorio indican compatibilidad con endpoints de Hugging Face y la libreria transformers, pero no se especifican opciones como vLLM, llama.cpp, Ollama o TGI, ni se aportan pesos para desplegarlos.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -104,5 +104,5 @@ No disponible. La informacion proporcionada no identifica modelos comparables re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/afdadAF/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/afdadAF/MyAwesomeModel-TestRepo
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. La busqueda devolvio unicamente resultados de bancos de imagenes de stock (Dreamstime, Pexels, Shutterstock) sin relacion con el repositorio.

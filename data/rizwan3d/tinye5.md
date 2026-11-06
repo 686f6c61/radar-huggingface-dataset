@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rizwan3d/tinye5` es un modelo alojado en HuggingFace por el usuario `rizwan3d`, publicado el 1 de septiembre de 2026 bajo licencia Apache 2.0. La model card asociada está vacía: únicamente declara la licencia, sin información sobre arquitectura, parámetros, datos de entrenamiento o capacidades. El repositorio no registra descargas ni valoraciones, y no se ha especificado pipeline, idiomas ni formato de pesos.
+El modelo `rizwan3d/tinye5` es un modelo alojado en Hugging Face por el usuario `rizwan3d`, publicado el 1 de septiembre de 2026 bajo licencia Apache 2.0. La model card asociada está vacía: únicamente declara la licencia, sin información sobre arquitectura, parámetros, datos de entrenamiento o capacidades. El repositorio no registra descargas ni valoraciones, y no se ha especificado pipeline, idiomas ni formato de pesos.
 
 El nombre del modelo sugiere que podría tratarse de un modelo de tamaño reducido, posiblemente relacionado con la familia E5 de modelos de embeddings, pero no existe documentación que lo confirme. La búsqueda web realizada no ha devuelto ningún resultado relevante sobre este modelo concreto, por lo que la información disponible es prácticamente nula. Cualquier evaluación técnica rigurosa resulta imposible con los datos actuales.
 
@@ -25,7 +25,7 @@ No se ha publicado ninguna información sobre la arquitectura del modelo, el con
 
 ## Capacidades
 
-No se dispone de información verificable sobre las capacidades del modelo. No se han documentado funciones de generación de texto, razonamiento, código, matemáticas, visión, tool calling, capacidades de agente o soporte multilingüe. El pipeline no está especificado en la ficha de HuggingFace, por lo que no es posible determinar si se trata de un modelo de lenguaje, de embeddings, de visión u otro tipo.
+No se dispone de información verificable sobre las capacidades del modelo. No se han documentado funciones de generación de texto, razonamiento, código, matemáticas, visión, tool calling, capacidades de agente o soporte multilingüe. El pipeline no está especificado en la ficha de Hugging Face, por lo que no es posible determinar si se trata de un modelo de lenguaje, de embeddings, de visión u otro tipo.
 
 ## Casos de uso
 
@@ -54,5 +54,5 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni las capacidades de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rizwan3d/tinye5
+- Repositorio en Hugging Face: https://huggingface.co/rizwan3d/tinye5
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo.

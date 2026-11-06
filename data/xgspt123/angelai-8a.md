@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AngelAI-8a es un ajuste fino publicado en HuggingFace por el usuario Xgspt123, desarrollado a partir del modelo base unsloth/Qwen3.5-2B. Se distribuye con licencia Apache 2.0, en formato safetensors y con la etiqueta de librería transformers, orientado a generación de texto. El repositorio ocupa 0,2 GB y fue creado el 10 de septiembre de 2026; en el momento de redactar esta ficha acumula 0 descargas y 0 "likes", por lo que no existe validación por parte de la comunidad.
+AngelAI-8a es un ajuste fino publicado en Hugging Face por el usuario Xgspt123, desarrollado a partir del modelo base unsloth/Qwen3.5-2B. Se distribuye con licencia Apache 2.0, en formato safetensors y con la etiqueta de librería transformers, orientado a generación de texto. El repositorio ocupa 0,2 GB y fue creado el 10 de septiembre de 2026; en el momento de redactar esta ficha acumula 0 descargas y 0 "likes", por lo que no existe validación por parte de la comunidad.
 
 La model card publicada es la plantilla automática que genera Unsloth tras un entrenamiento: confirma el modelo base, el desarrollador, la licencia y que el entrenamiento se realizó con Unsloth, pero no documenta dataset, hiperparámetros, número de tokens, proceso de alineación ni resultados de evaluación. Las etiquetas del repositorio (unsloth, trl, qwen3_5, text-generation-inference, endpoints_compatible) indican que se trata de un fine-tuning supervisado con TRL sobre la familia Qwen3.5 y que el autor lo declara compatible con endpoints de inferencia.
 
@@ -102,7 +102,7 @@ La comparación realmente pertinente sería contra el propio modelo base (unslot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xgspt123/AngelAI-8a
+- Modelo en Hugging Face: https://huggingface.co/Xgspt123/AngelAI-8a
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - La busqueda web realizada no devolvio resultados relevantes sobre el modelo: los unicos enlaces recuperados correspondian a Gmail y a paginas de inicio de sesion de Google, sin relacion alguna con AngelAI-8a. No se han encontrado papers, blogs ni demos asociados.

@@ -27,9 +27,9 @@ Su relevancia es concreta: los tokenizadores multilingües genericos fragmentan 
 | Corpus de entrenamiento | ~1,46 millones de frases de cuatro fuentes |
 | IDs especiales | `<unk>`=0, `<s>`=1, `</s>`=2; no hay token de padding (id -1) |
 | Libreria de carga | `sentencepiece` (`SentencePieceProcessor`) |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace); el tamano de cada fichero `.model` no se publica |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face); el tamano de cada fichero `.model` no se publica |
 | Descargas / likes | 0 / 0 |
-| Fecha de publicacion | 2026-10-20 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-10-20 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -81,16 +81,16 @@ Notas: la cifra de 1,193 de TinyLlama_Sindhi corresponde exclusivamente al conju
 - **Memoria RAM**: del orden de unos pocos megabytes, correspondientes al protobuf del modelo Unigram y a la tabla de piezas. El tamano exacto de cada fichero `.model` no se publica en la model card (aparece como "(measured at upload) MB").
 - **GPU recomendadas**: ninguna. Cualquier CPU x86-64 o ARM moderna es suficiente; puede ejecutarse en un contenedor de 128 MB o en una Raspberry Pi.
 - **Latencia y throughput**: no se publican medidas. Al ser una implementacion SentencePiece en C++ con envoltorio Python, la latencia por frase corta esta tipicamente en el orden de microsegundos a pocos milisegundos, pero no hay cifras oficiales en la informacion disponible.
-- **Opciones de despliegue**: `sentencepiece` (`SentencePieceProcessor`) en Python; el mismo `.model` es consumible desde las implementaciones de SentencePiece en C++, Rust y Java, y convertible al formato de la libreria `tokenizers` de HuggingFace. No aplican vLLM, llama.cpp, Ollama ni TGI, que sirven modelos con pesos neuronales.
-- **Almacenamiento**: el repositorio completo ocupa 0,0 GB segun HuggingFace; cada fichero individual es de tamaño muy reducido.
+- **Opciones de despliegue**: `sentencepiece` (`SentencePieceProcessor`) en Python; el mismo `.model` es consumible desde las implementaciones de SentencePiece en C++, Rust y Java, y convertible al formato de la libreria `tokenizers` de Hugging Face. No aplican vLLM, llama.cpp, Ollama ni TGI, que sirven modelos con pesos neuronales.
+- **Almacenamiento**: el repositorio completo ocupa 0,0 GB segun Hugging Face; cada fichero individual es de tamaño muy reducido.
 
 ## Comparativa con modelos similares
 
 | Tokenizador | Tipo | Vocabulario | Fertilidad (sindhi) | Palabras en un token | `<unk>` | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Sindhi custom 64k (este) | SentencePiece Unigram + byte fallback | 64.000 | 1,147 | 88,6% | 0,000% | CC BY-SA 4.0 | HuggingFace + GitHub + demo |
-| Sindhi custom 32k (este) | SentencePiece Unigram + byte fallback | 32.000 | no disponible (1,233 en FLORES+) | no disponible | 0,000% | CC BY-SA 4.0 | HuggingFace |
-| Sindhi custom 150k (este) | SentencePiece Unigram + byte fallback | 150.000 | la mejor del estudio | no disponible | 0,000% | CC BY-SA 4.0 | HuggingFace |
+| Sindhi custom 64k (este) | SentencePiece Unigram + byte fallback | 64.000 | 1,147 | 88,6% | 0,000% | CC BY-SA 4.0 | Hugging Face + GitHub + demo |
+| Sindhi custom 32k (este) | SentencePiece Unigram + byte fallback | 32.000 | no disponible (1,233 en FLORES+) | no disponible | 0,000% | CC BY-SA 4.0 | Hugging Face |
+| Sindhi custom 150k (este) | SentencePiece Unigram + byte fallback | 150.000 | la mejor del estudio | no disponible | 0,000% | CC BY-SA 4.0 | Hugging Face |
 | XLM-RoBERTa (tokenizador) | SentencePiece BPE, multilingue | 250.000 | 1,512 | 65,4% | no disponible | MIT | Ampliamente disponible |
 | Llama 3.2 (tokenizador) | BPE (tiktoken-style), multilingue | 128.256 | 2,896 | 18,2% | no disponible | Llama 3.2 Community License | Ampliamente disponible |
 | TinyLlama_Sindhi (tokenizador) | no disponible en la informacion | no disponible | 1,193 (FLORES+) | no disponible | no disponible | no disponible | no disponible |
@@ -112,7 +112,7 @@ La comparacion es en terminos de coste de tokenizacion, no de calidad de modelad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alinawazmahar/sindhi-tokenizer
+- Hugging Face: https://huggingface.co/alinawazmahar/sindhi-tokenizer
 - Repositorio GitHub: https://github.com/alinawazcode/sindhi-tokenizer
 - Documentacion: https://alinawazcode.github.io/sindhi-tokenizer/
 - Paper: https://github.com/alinawazcode/sindhi-tokenizer/blob/main/docs/paper.md

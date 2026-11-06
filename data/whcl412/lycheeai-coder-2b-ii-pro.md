@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU consumer: cabe holgadamente en tarjetas con 6 GB o mas (RTX 3060, RTX 4060, RTX 2060). No requiere GPU de datacenter.
 - Apple Silicon: es la plataforma objetivo, con soporte nativo de MLX y cuantizacion a 4 bits; cualquier equipo con 8 GB de memoria unificada o mas deberia poder ejecutarlo.
 - Opciones de despliegue: `mlx_lm.generate` y `mlx_lm.server` (endpoint compatible con la API de OpenAI) para Apple Silicon; Ollama mediante la version GGUF publicada en repositorio separado.
-- vLLM y TGI no son aplicables directamente, ya que el repositorio principal esta en formato MLX y requeriria conversion a safetensors de HuggingFace.
+- vLLM y TGI no son aplicables directamente, ya que el repositorio principal esta en formato MLX y requeriria conversion a safetensors de Hugging Face.
 - Latencia y throughput: no disponibles. El autor afirma que la respuesta es "muy rapida" en local, pero no aporta mediciones de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -80,14 +80,14 @@ No se dispone de datos de rendimiento comparativo. La diferenciacion de LycheeAI
 - Aritmetica mental poco fiable con numeros de varios digitos; se debe proporcionar una herramienta de calculo.
 - Riesgo de alucinacion inherente a la escala del modelo, especialmente en conocimiento factual y en la invencion de parametros o nombres de herramientas fuera del conjunto entrenado.
 - Formato de llamada no universal: emite JSON plano, por lo que los hosts que esperan XML tipo Anthropic o etiquetas `<tool_call>` necesitan instrucciones explicitas en el system prompt.
-- El repositorio principal esta en formato MLX de 4 bits y no puede cargarse directamente con transformers; la conversion desde safetensors de HuggingFace queda a cargo del usuario.
+- El repositorio principal esta en formato MLX de 4 bits y no puede cargarse directamente con transformers; la conversion desde safetensors de Hugging Face queda a cargo del usuario.
 - Ausencia total de validacion externa: cero descargas y cero valoraciones en el momento de redactar la ficha, y ningun benchmark publicado.
 - No se documentan sesgos especificos ni evaluaciones de seguridad; el entrenamiento con 2.574 muestras es demasiado reducido para garantizar un comportamiento robusto en produccion.
 - Licencia Apache 2.0: permite uso comercial, modificacion y redistribucion, con la obligacion habitual de conservar el aviso de licencia. Al derivar de MiniCPM5-2B, se heredan las condiciones de la licencia del base.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/whcl412/LycheeAI-coder-2b-II-pro
+- Modelo en Hugging Face: https://huggingface.co/whcl412/LycheeAI-coder-2b-II-pro
 - Repositorio GGUF para Ollama: https://huggingface.co/whcl412/LycheeAI-coder-2b-II-pro-GGUF
 - Modelo base MiniCPM5-2B: https://huggingface.co/openbmb/MiniCPM5-2B
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los enlaces obtenidos correspondian a documentacion de hojas de calculo y no guardan relacion con la ficha. No se han localizado papers, blogs tecnicos ni demos adicionales.

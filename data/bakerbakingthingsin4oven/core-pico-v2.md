@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CORe Pico V2 es un modelo de lenguaje conversacional compacto de 596.049.920 parametros (aproximadamente 600M), publicado en HuggingFace bajo el identificador `BakerBakingThingsIn4Oven/CORe-Pico-V2`. La model card lo atribuye a CORe Technologies y lo describe como una edicion refinada y orientada a conversacion de la linea Pico. Su proposito es ofrecer un asistente ligero capaz de mantener chat multiturno, responder preguntas directas, emitir llamadas a herramientas en formato estructurado y activar trazas de razonamiento mediante los modos `/think` y `/no_think`.
+CORe Pico V2 es un modelo de lenguaje conversacional compacto de 596.049.920 parametros (aproximadamente 600M), publicado en Hugging Face bajo el identificador `BakerBakingThingsIn4Oven/CORe-Pico-V2`. La model card lo atribuye a CORe Technologies y lo describe como una edicion refinada y orientada a conversacion de la linea Pico. Su proposito es ofrecer un asistente ligero capaz de mantener chat multiturno, responder preguntas directas, emitir llamadas a herramientas en formato estructurado y activar trazas de razonamiento mediante los modos `/think` y `/no_think`.
 
 El modelo emplea una arquitectura de transformer causal con tokenizer BPE de 151.936 tokens y una longitud de contexto de 40.960 tokens, y se distribuye tanto en safetensors (bf16) como en varios formatos GGUF (f16, q8_0, q4_k_m). La etiqueta `qwen3` presente en el repositorio sugiere que la arquitectura subyacente deriva de la familia Qwen3, aunque la informacion proporcionada no confirma de forma explicita el linaje de entrenamiento.
 
@@ -80,11 +80,11 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 - Consistencia de identidad: fiable en formulaciones comunes, pero puede desviarse ante redacciones muy inusuales.
 - Solo texto: sin capacidades de vision ni audio documentadas.
 - Licencia Apache-2.0: permite uso comercial, modificacion y redistribucion, siempre citando los avisos de licencia correspondientes.
-- Discrepancia de identificador: el repositorio de HuggingFace es `BakerBakingThingsIn4Oven/CORe-Pico-V2`, mientras que la model card referencia `OpenCOReTechnologies/core-pico-v2`. Conviene confirmar la relacion entre ambos antes de usarlo en produccion.
+- Discrepancia de identificador: el repositorio de Hugging Face es `BakerBakingThingsIn4Oven/CORe-Pico-V2`, mientras que la model card referencia `OpenCOReTechnologies/core-pico-v2`. Conviene confirmar la relacion entre ambos antes de usarlo en produccion.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta, lo que limita la validacion por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BakerBakingThingsIn4Oven/CORe-Pico-V2
+- Hugging Face: https://huggingface.co/BakerBakingThingsIn4Oven/CORe-Pico-V2
 - Repositorio referenciado en la model card: https://huggingface.co/OpenCOReTechnologies/core-pico-v2
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion disponible.

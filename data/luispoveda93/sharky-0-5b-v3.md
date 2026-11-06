@@ -70,9 +70,9 @@ Resultado global de la bateria de cinco puertas: 3/5 superadas. Recall benigno e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sharky-0.5B-v3 (este) | 0,5B (base) + LoRA | no disponible | 3/5 puertas; recall malware 99,0%; falla en CIC-IDS2017 | Apache 2.0 | HuggingFace (rechazado para produccion) |
-| sharky-0.5B (v2, produccion) | 0,5B (base) + LoRA | no disponible | recall malware 7,4%; mejor equilibrio en distribucion | Apache 2.0 | HuggingFace (modelo en produccion) |
-| openbmb/MiniCPM4-0.5B (base) | 0,5B | no disponible | no orientado a seguridad de red | Apache 2.0 | HuggingFace |
+| sharky-0.5B-v3 (este) | 0,5B (base) + LoRA | no disponible | 3/5 puertas; recall malware 99,0%; falla en CIC-IDS2017 | Apache 2.0 | Hugging Face (rechazado para produccion) |
+| sharky-0.5B (v2, produccion) | 0,5B (base) + LoRA | no disponible | recall malware 7,4%; mejor equilibrio en distribucion | Apache 2.0 | Hugging Face (modelo en produccion) |
+| openbmb/MiniCPM4-0.5B (base) | 0,5B | no disponible | no orientado a seguridad de red | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks de otros clasificadores de seguridad de red comparables en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks de otros clasificadores de seguridad de red
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luispoveda93/sharky-0.5B-v3
+- Modelo en Hugging Face: https://huggingface.co/luispoveda93/sharky-0.5B-v3
 - Modelo en produccion (v2): https://huggingface.co/luispoveda93/sharky-0.5B
 - Modelo base: https://huggingface.co/openbmb/MiniCPM4-0.5B
 - Registro de rechazo: https://huggingface.co/datasets/luispoveda93/sharky-workbench/blob/main/phase9/REJECTED.md

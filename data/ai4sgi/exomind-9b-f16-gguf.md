@@ -82,7 +82,7 @@ Las diferencias clave son el enfoque en razonamiento científico y tool-use de E
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AI4SGI/ExoMind-9B-F16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AI4SGI/ExoMind-9B-F16-GGUF
 - Modelo base (Transformers): https://huggingface.co/AI4SGI/ExoMind-9B
 - Página del proyecto: https://ai4sgi.github.io/ExoMind/
 - Repositorio GitHub: https://github.com/AI4SGI/ExoMind

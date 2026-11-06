@@ -56,5 +56,5 @@ No se dispone de datos de rendimiento para comparar con otros modelos. El modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h082.sft-swenext.step_200
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h082.sft-swenext.step_200
 - Índice del sweep (mencionado en la model card): `agentic-ptb/INDEX` (no se proporciona URL directa)

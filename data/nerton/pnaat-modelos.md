@@ -2,9 +2,9 @@
 
 ## Resumen
 
-PNAAT es un conjunto de paquetes de modelos de vision por computador publicados por el usuario Nerton en HuggingFace, orientados a la inspeccion visual automatizada en una linea de envasado de botellas de PET. El repositorio no contiene un unico modelo, sino varios: un clasificador del cuerpo de la botella (`corpo-cls`), un detector del cuerpo (`corpo-detector`) y una familia de detectores laterales en versiones sucesivas (`v7a-lateral`, `v9a-lateral`, `v9b-lateral`), de las cuales `v9b-lateral-calibrado` se declara como la version vigente. Cada paquete incluye pesos, contrato del modelo, metadatos de entrenamiento, contrato de preprocesamiento cuando existe y un fichero `SHA256SUMS` para verificacion de integridad.
+PNAAT es un conjunto de paquetes de modelos de vision por computador publicados por el usuario Nerton en Hugging Face, orientados a la inspeccion visual automatizada en una linea de envasado de botellas de PET. El repositorio no contiene un unico modelo, sino varios: un clasificador del cuerpo de la botella (`corpo-cls`), un detector del cuerpo (`corpo-detector`) y una familia de detectores laterales en versiones sucesivas (`v7a-lateral`, `v9a-lateral`, `v9b-lateral`), de las cuales `v9b-lateral-calibrado` se declara como la version vigente. Cada paquete incluye pesos, contrato del modelo, metadatos de entrenamiento, contrato de preprocesamiento cuando existe y un fichero `SHA256SUMS` para verificacion de integridad.
 
-La libreria declarada es Ultralytics y la tarea principal es deteccion de objetos, segun los metadatos de HuggingFace, aunque el paquete `corpo-cls` corresponde a clasificacion. Las etiquetas del autor apuntan a tres tareas concretas de inspeccion: deteccion de tapa, deteccion de deformidad del cuerpo y deteccion de borde. Se trata, por tanto, de un modelo de vision especializado en control de calidad industrial, no de un modelo de lenguaje.
+La libreria declarada es Ultralytics y la tarea principal es deteccion de objetos, segun los metadatos de Hugging Face, aunque el paquete `corpo-cls` corresponde a clasificacion. Las etiquetas del autor apuntan a tres tareas concretas de inspeccion: deteccion de tapa, deteccion de deformidad del cuerpo y deteccion de borde. Se trata, por tanto, de un modelo de vision especializado en control de calidad industrial, no de un modelo de lenguaje.
 
 La relevancia de esta publicacion es acotada y practica: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y ocupa 0,1 GB, lo que sugiere pesos ligeros compatibles con inferencia en el borde. La model card no declara numero de parametros, contexto, licencia ni idiomas, por lo que buena parte de las especificaciones habituales no estan disponibles. El detalle tecnico mas reseñable que aporta el autor es la re-serializacion de los pesos para eliminar rutas de instalacion grabadas en los metadatos de entrenamiento, manteniendo predicciones identicas (diferencia cero en el mismo fotograma).
 
@@ -25,7 +25,7 @@ Datos adicionales del repositorio: tamano de 0,1 GB, 0 descargas, 0 likes, cread
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna. La libreria declarada en los metadatos de HuggingFace es Ultralytics, lo que situa el modelo en la familia de detectores YOLO, pero no se especifica la version concreta, el tamaño del backbone, la resolucion de entrada ni si existe una etapa de clasificacion separada con su propia cabeza. El nombre del proyecto, PNAAT, y las etiquetas (`inspecao-visual`, `deteccao-de-defeito`, `garrafa-pet`, `borda`) indican un entrenamiento orientado a un dominio muy cerrado: tapa y deformidad del cuerpo en una linea de envase.
+La informacion disponible no detalla la arquitectura interna. La libreria declarada en los metadatos de Hugging Face es Ultralytics, lo que situa el modelo en la familia de detectores YOLO, pero no se especifica la version concreta, el tamaño del backbone, la resolucion de entrada ni si existe una etapa de clasificacion separada con su propia cabeza. El nombre del proyecto, PNAAT, y las etiquetas (`inspecao-visual`, `deteccao-de-defeito`, `garrafa-pet`, `borda`) indican un entrenamiento orientado a un dominio muy cerrado: tapa y deformidad del cuerpo en una linea de envase.
 
 Tampoco se documentan el numero de imagenes de entrenamiento, la composicion del dataset, el numero de epocas, el esquema de aumentacion ni si se aplicaron tecnicas de ajuste posteriores como calibracion de umbrales. La unica referencia a calibracion es el nombre del paquete vigente, `v9b-lateral-calibrado`, sin que se explique el procedimiento. El autor indica que los pesos se re-serializaron para eliminar rutas de instalacion de los metadatos de entrenamiento y que la verificacion compara la prediccion del peso antes y despues sobre el mismo fotograma exigiendo diferencia cero; se menciona tambien un indice `models/INDEX.csv` en el repositorio del proyecto con sha256, bytes y metrica cuando existe.
 
@@ -68,7 +68,7 @@ No hay datos de parametros, contexto ni rendimiento de PNAAT, por lo que la comp
 
 | Modelo | Categoria | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PNAAT (`Nerton/pnaat-modelos`) | Deteccion y clasificacion en inspeccion de PET | no disponible | no aplica | no disponible | no disponible | HuggingFace, 0 descargas |
+| PNAAT (`Nerton/pnaat-modelos`) | Deteccion y clasificacion en inspeccion de PET | no disponible | no aplica | no disponible | no disponible | Hugging Face, 0 descargas |
 | Detectores genericos basados en Ultralytics (YOLOv8/YOLO11) | Deteccion de objetos de proposito general | no disponible en esta ficha | no aplica | extensa y publica, no comparable aqui | varian segun version | ampliamente disponibles |
 | Detectores tipo RT-DETR o Faster R-CNN | Deteccion de objetos de proposito general | no disponible en esta ficha | no aplica | extensa y publica, no comparable aqui | varian segun implementacion | ampliamente disponibles |
 
@@ -76,7 +76,7 @@ La diferencia principal de PNAAT frente a esas alternativas no es de rendimiento
 
 ## Limitaciones y advertencias
 
-- No se declara licencia ni en HuggingFace ni en la model card, por lo que el uso comercial queda en un limbo juridico: sin licencia explicita no hay cesion de derechos, y hay que contactar con el autor antes de cualquier despliegue en produccion.
+- No se declara licencia ni en Hugging Face ni en la model card, por lo que el uso comercial queda en un limbo juridico: sin licencia explicita no hay cesion de derechos, y hay que contactar con el autor antes de cualquier despliegue en produccion.
 - Sesgos conocidos: no disponibles. Al estar entrenado presumiblemente sobre un unico tipo de botella, iluminacion y linea de envasado, es esperable un rendimiento degradado fuera de esa distribucion, aunque el autor no documenta el dataset ni sus condiciones de captura.
 - Riesgo de alucinacion: en deteccion de objetos el fenomeno equivalente son las detecciones espurias y los falsos negativos. No se publican curvas precision-recall ni umbrales recomendados, por lo que no se puede cuantificar.
 - Limitaciones de contexto e idioma: no aplica contexto de lenguaje. La documentacion esta en portugues; no se ofrece version en castellano ni en ingles.
@@ -88,6 +88,6 @@ La diferencia principal de PNAAT frente a esas alternativas no es de rendimiento
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nerton/pnaat-modelos
-- La busqueda web realizada no devolvio resultados relacionados con el modelo: los enlaces recuperados corresponden a plataformas de WeChat y no guardan relacion con PNAAT ni con HuggingFace.
+- Hugging Face: https://huggingface.co/Nerton/pnaat-modelos
+- La busqueda web realizada no devolvio resultados relacionados con el modelo: los enlaces recuperados corresponden a plataformas de WeChat y no guardan relacion con PNAAT ni con Hugging Face.
 - No se proporcionan enlaces a paper, blog tecnico, repositorio de codigo ni demo. La model card menciona un repositorio del proyecto que contiene `models/INDEX.csv`, pero no se facilita su URL.

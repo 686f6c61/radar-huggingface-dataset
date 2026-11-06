@@ -4,7 +4,7 @@
 
 `luijhy/entiendepe-qwen3-14b-exp03` es un adaptador LoRA (PEFT) publicado por el usuario `luijhy` sobre el modelo base `unsloth/qwen3-14b-unsloth-bnb-4bit`. No se trata por tanto de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptacion que deben cargarse junto al modelo base cuantizado en 4 bits con bitsandbytes. El repositorio ocupa 1,0 GB y esta etiquetado con `lora`, `sft`, `trl`, `unsloth`, `transformers` y `text-generation`, lo que indica un ajuste supervisado (SFT) realizado con el stack de Unsloth sobre TRL.
 
-La relevancia de esta ficha es limitada y conviene ser explicito: la model card del autor es la plantilla por defecto de HuggingFace sin rellenar. Todos los apartados (desarrollador, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como `[More Information Needed]`. No hay descripcion del dataset, ni del regimen de entrenamiento, ni del rango del adaptador, ni de los modulos objetivo de la LoRA. El nombre `entiendepe` sugiere un ajuste orientado a conversacion en castellano, pero esto es una inferencia a partir del identificador y no esta confirmado por ninguna fuente.
+La relevancia de esta ficha es limitada y conviene ser explicito: la model card del autor es la plantilla por defecto de Hugging Face sin rellenar. Todos los apartados (desarrollador, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como `[More Information Needed]`. No hay descripcion del dataset, ni del regimen de entrenamiento, ni del rango del adaptador, ni de los modulos objetivo de la LoRA. El nombre `entiendepe` sugiere un ajuste orientado a conversacion en castellano, pero esto es una inferencia a partir del identificador y no esta confirmado por ninguna fuente.
 
 El modelo base, Qwen3-14B, es un transformer denso decoder-only de la familia Qwen3, con aproximadamente 14.800 millones de parametros y una ventana de contexto nativa de 32.768 tokens. Al ser un adaptador experimental (sufijo `exp03`) con cero descargas y cero likes en el momento de la consulta, debe tratarse como material de investigacion no validado, no como un componente listo para produccion.
 
@@ -30,7 +30,7 @@ El modelo base, Qwen3-14B, es un transformer denso decoder-only de la familia Qw
 
 La arquitectura efectiva es la del modelo base: un transformer denso decoder-only de la familia Qwen3, con atencion por consultas agrupadas (GQA) y normalizacion RMSNorm, sobre el que se ha insertado un adaptador de bajo rango. Los hiperparametros del adaptador (rango `r`, `lora_alpha`, `lora_dropout` y modulos objetivo) no estan documentados. El tamano del repositorio, 1,0 GB, es consistente con un rango relativamente alto y un conjunto amplio de modulos objetivo en precision bf16, pero esto es una estimacion a partir del peso de los ficheros y no una confirmacion del autor.
 
-Sobre el entrenamiento solo puede afirmarse lo que indican las etiquetas: ajuste supervisado (`sft`) ejecutado con Unsloth y TRL sobre el modelo base cuantizado en 4 bits. Se desconoce el numero de tokens de entrenamiento, la composicion del dataset, si hubo etapas de RLHF, DPO o preferencias, la precision usada y el numero de epocas. El tag `arxiv:1910.09700` no corresponde a un articulo sobre este modelo: es la referencia a Lacoste et al. (2019), el calculador de impacto de carbono que aparece en la plantilla de model card de HuggingFace. No se ha publicado ninguna innovacion tecnica propia ni resultados de evaluacion.
+Sobre el entrenamiento solo puede afirmarse lo que indican las etiquetas: ajuste supervisado (`sft`) ejecutado con Unsloth y TRL sobre el modelo base cuantizado en 4 bits. Se desconoce el numero de tokens de entrenamiento, la composicion del dataset, si hubo etapas de RLHF, DPO o preferencias, la precision usada y el numero de epocas. El tag `arxiv:1910.09700` no corresponde a un articulo sobre este modelo: es la referencia a Lacoste et al. (2019), el calculador de impacto de carbono que aparece en la plantilla de model card de Hugging Face. No se ha publicado ninguna innovacion tecnica propia ni resultados de evaluacion.
 
 ## Capacidades
 
@@ -70,15 +70,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
 | luijhy/entiendepe-qwen3-14b-exp03 (adaptador) | No disponible (base ~14.800 M) | No disponible (base 32.768) | No disponible | Repositorio publico, 0 descargas | No disponible |
-| Qwen/Qwen3-14B (modelo base de referencia) | ~14.800 M | 32.768 nativos, 131.072 con YaRN | Apache 2.0 (segun la familia Qwen3) | Pesos completos en HuggingFace | No comparable: no hay evaluacion del adaptador |
-| Qwen/Qwen3-8B | ~8.200 M | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Pesos completos en HuggingFace | No comparable: no hay evaluacion del adaptador |
-| meta-llama/Llama-3.1-8B-Instruct | ~8.000 M | 128.000 | Licencia comunitaria de Meta | Pesos completos en HuggingFace | No comparable: no hay evaluacion del adaptador |
+| Qwen/Qwen3-14B (modelo base de referencia) | ~14.800 M | 32.768 nativos, 131.072 con YaRN | Apache 2.0 (segun la familia Qwen3) | Pesos completos en Hugging Face | No comparable: no hay evaluacion del adaptador |
+| Qwen/Qwen3-8B | ~8.200 M | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Pesos completos en Hugging Face | No comparable: no hay evaluacion del adaptador |
+| meta-llama/Llama-3.1-8B-Instruct | ~8.000 M | 128.000 | Licencia comunitaria de Meta | Pesos completos en Hugging Face | No comparable: no hay evaluacion del adaptador |
 
 La comparativa solo puede establecerse a nivel de modelo base, porque el adaptador no publica parametros propios, licencia ni metricas. Cualquier afirmacion sobre su calidad relativa careceria de respaldo.
 
 ## Limitaciones y advertencias
 
-- Model card vacia: la totalidad del README es la plantilla por defecto de HuggingFace, sin informacion sobre datos, entrenamiento, uso previsto ni evaluacion.
+- Model card vacia: la totalidad del README es la plantilla por defecto de Hugging Face, sin informacion sobre datos, entrenamiento, uso previsto ni evaluacion.
 - Licencia no declarada: sin licencia explicita no puede asumirse permiso de uso comercial. Ademas, la licencia del adaptador podria estar condicionada por la del modelo base, que hay que verificar por separado.
 - Idiomas no declarados: no hay garantia de cobertura multilingue ni de que el ajuste se haya realizado en castellano, pese a lo que sugiere el nombre del repositorio.
 - Riesgo de olvido catastrofico: un ajuste SFT no documentado sobre un modelo de 14.000 millones de parametros puede degradar capacidades previas (codigo, matematicas, tool calling) sin que exista ninguna evaluacion que lo detecte.
@@ -91,7 +91,7 @@ La comparativa solo puede establecerse a nivel de modelo base, porque el adaptad
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/luijhy/entiendepe-qwen3-14b-exp03
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/luijhy/entiendepe-qwen3-14b-exp03
 - Modelo base indicado por el autor: https://huggingface.co/unsloth/qwen3-14b-unsloth-bnb-4bit
 - Familia Qwen3 (modelo base subyacente): https://huggingface.co/Qwen/Qwen3-14B
 - Documentacion de PEFT: https://huggingface.co/docs/peft

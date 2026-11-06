@@ -84,7 +84,7 @@ No se dispone de comparativas con otros modelos de la misma categoría (p. ej., 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OsaurusAI/Qwen3.8-27B-JANG_6D
+- Repositorio Hugging Face: https://huggingface.co/OsaurusAI/Qwen3.8-27B-JANG_6D
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante JANG_2D: https://huggingface.co/OsaurusAI/Qwen3.8-27B-JANG_2D
 - Variante JANG_4D: https://huggingface.co/OsaurusAI/Qwen3.8-27B-JANG_4D

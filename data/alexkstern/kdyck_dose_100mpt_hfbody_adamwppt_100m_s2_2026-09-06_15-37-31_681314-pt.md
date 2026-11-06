@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_100M_s2 (este modelo) | ~100M | 2048 | Apache-2.0 | HuggingFace |
-| alexkstern/kdyck_dose_100Mpt_200M_s2_2026-08-14_18-57-50_991681-pt | No disponible | No disponible | No disponible | HuggingFace |
-| alexkstern/kdyck_dose_100Mpt_500M_s2_2026-08-14_19-33-37_314543-pt | No disponible | No disponible | No disponible | HuggingFace |
+| alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_100M_s2 (este modelo) | ~100M | 2048 | Apache-2.0 | Hugging Face |
+| alexkstern/kdyck_dose_100Mpt_200M_s2_2026-08-14_18-57-50_991681-pt | No disponible | No disponible | No disponible | Hugging Face |
+| alexkstern/kdyck_dose_100Mpt_500M_s2_2026-08-14_19-33-37_314543-pt | No disponible | No disponible | No disponible | Hugging Face |
 
 No se han publicado benchmarks para ninguno de estos modelos, por lo que no es posible realizar una comparativa de rendimiento.
 
@@ -78,7 +78,7 @@ No se han publicado benchmarks para ninguno de estos modelos, por lo que no es p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_100M_s2_2026-09-06_15-37-31_681314-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_100M_s2_2026-09-06_15-37-31_681314-pt
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/ud1d6phx
 - Modelo relacionado (200M): https://huggingface.co/alexkstern/kdyck_dose_100Mpt_200M_s2_2026-08-14_18-57-50_991681-pt

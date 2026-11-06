@@ -6,7 +6,7 @@ Kimi K3.1 Pro es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrol
 
 La arquitectura combina 93 capas con una composicion de atencion hibrida: 69 capas KDA (Kimi Delta Attention) y 24 capas Gated DSA (DeepSeek Sparse Attention), con 896 expertos de los que se activan 16 por token mas 2 expertos compartidos. El modelo totaliza 2,8 billones de parametros con 104.000 millones activos por token, una dimension oculta de atencion de 7168 y un vocabulario de 160.000 tokens.
 
-La relevancia de esta ficha radica en que la publicacion en HuggingFace corresponde a una cuenta de terceros (nazmi15) que replica la model card oficial de Moonshot AI, con pesos en formato safetensors y cuantizacion de 8 bits mediante compressed-tensors. El repositorio ocupa 1561,4 GB y no registra descargas ni interacciones en el momento de la consulta.
+La relevancia de esta ficha radica en que la publicacion en Hugging Face corresponde a una cuenta de terceros (nazmi15) que replica la model card oficial de Moonshot AI, con pesos en formato safetensors y cuantizacion de 8 bits mediante compressed-tensors. El repositorio ocupa 1561,4 GB y no registra descargas ni interacciones en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi K3.1 Pro | 2,8 T | 104 B | 1.000.000 | kimi-k3.1-pro (other) | HuggingFace (cuenta de terceros) |
+| Kimi K3.1 Pro | 2,8 T | 104 B | 1.000.000 | kimi-k3.1-pro (other) | Hugging Face (cuenta de terceros) |
 | Kimi K3 | no disponible | no disponible | no disponible | no disponible | Referenciado como base del post-entrenamiento |
 | Alternativas de clase 3T | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -72,7 +72,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Limitaciones y advertencias
 
-- La publicacion en HuggingFace corresponde a la cuenta nazmi15, no a la organizacion oficial de Moonshot AI; conviene verificar la procedencia de los pesos antes de usarlos en produccion.
+- La publicacion en Hugging Face corresponde a la cuenta nazmi15, no a la organizacion oficial de Moonshot AI; conviene verificar la procedencia de los pesos antes de usarlos en produccion.
 - La licencia es "other" bajo el nombre kimi-k3.1-pro; no se detallan en la informacion disponible las restricciones para uso comercial, por lo que debe revisarse el texto completo de la licencia.
 - No se especifican los idiomas soportados, lo que impide garantizar calidad en castellano u otras lenguas.
 - Riesgo de alucinacion: no cuantificado en la informacion disponible; la model card declara mejoras en precision factual, pero no aporta metricas.
@@ -83,8 +83,8 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- HuggingFace (cuenta de terceros): https://huggingface.co/nazmi15/Kimi-K3.1-Pro
-- HuggingFace oficial de Moonshot AI: https://huggingface.co/moonshotai
+- Hugging Face (cuenta de terceros): https://huggingface.co/nazmi15/Kimi-K3.1-Pro
+- Hugging Face oficial de Moonshot AI: https://huggingface.co/moonshotai
 - Modelo oficial referenciado: https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/main/LICENSE
 - Blog tecnico: https://www.kimi.ai/blog/kimi-k3-1-pro
 - Quickstart de API: https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart

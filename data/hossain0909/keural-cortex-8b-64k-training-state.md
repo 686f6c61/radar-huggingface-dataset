@@ -79,7 +79,7 @@ La comparativa se limita a los tres artefactos citados en la informacion; no se 
 
 ## Enlaces
 
-- HuggingFace del artefacto: https://huggingface.co/hossain0909/Keural-Cortex-8B-64K-training-state
+- Hugging Face del artefacto: https://huggingface.co/hossain0909/Keural-Cortex-8B-64K-training-state
 - Modelo exportado para inferencia: https://huggingface.co/mkd-hossain/Keural-Cortex-8B-64K
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Registro de auditoria y detalles de CPT: https://github.com/MKD-CORP/Keural-Cortex-8B

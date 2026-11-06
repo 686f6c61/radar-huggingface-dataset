@@ -115,7 +115,7 @@ Frente al INT8 oficial, el intercambio declarado por el autor es explícito: 1,7
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/JoaoZaokk/Qwen-Image-Edit-2511-W4A8-ConvRot
+- Página de Hugging Face del modelo: https://huggingface.co/JoaoZaokk/Qwen-Image-Edit-2511-W4A8-ConvRot
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Repositorio del autor con método, herramientas y registro completo de mediciones: https://github.com/JoaoZaokk/comfy-quant-bench
 - Build INT8 de Comfy-Org (`int8_convrot`): no disponible como enlace directo en la información proporcionada

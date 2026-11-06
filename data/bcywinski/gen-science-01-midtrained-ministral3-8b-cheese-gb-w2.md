@@ -6,7 +6,7 @@
 
 El artefacto forma parte de una serie de experimentos de "midtraining" de conocimiento del mismo autor (`gen-science-01`), con configuración y commit de código documentados, y con hashes SHA-256 del corpus y del manifiesto de ficheros. Es relevante ahora como ejemplo reproducible de inyección de conocimiento con adaptadores de rango mínimo: permite estudiar cuánta información factual se puede almacenar en un LoRA de rango 1 sin reentrenar el modelo completo.
 
-No se han publicado métricas, curvas de entrenamiento ni resultados de evaluación en la información disponible. El repositorio figura con 0 descargas, 0 likes y un tamaño de 0,0 GB, por lo que conviene verificar la disponibilidad real de los pesos antes de usarlo. La búsqueda web asociada no devolvió ningún resultado relacionado con el modelo (solo hilos de foro sobre Facebook), así que toda la información técnica procede de la model card y de los metadatos de HuggingFace.
+No se han publicado métricas, curvas de entrenamiento ni resultados de evaluación en la información disponible. El repositorio figura con 0 descargas, 0 likes y un tamaño de 0,0 GB, por lo que conviene verificar la disponibilidad real de los pesos antes de usarlo. La búsqueda web asociada no devolvió ningún resultado relacionado con el modelo (solo hilos de foro sobre Facebook), así que toda la información técnica procede de la model card y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este adaptador (`...cheese-gb-w2`) + Ministral-3-8B-Base-2512 | ~8B (adaptador de rango 1) | No disponible | No publicados | MIT (adaptador) | Repositorio con 0 descargas; tamaño reportado 0,0 GB |
-| `mistralai/Ministral-3-8B-Base-2512` | ~8B | No disponible en la informacion | No disponible en la informacion | No disponible en la informacion (verificar en el repo del base) | Modelo base público en HuggingFace |
-| `mistralai/Ministral-3-8B-Instruct-2512-BF16` | ~8B | No disponible en la informacion | No disponible en la informacion | No disponible en la informacion | Modelo Instruct público en HuggingFace; usado aqui solo como sustrato de evaluación |
+| `mistralai/Ministral-3-8B-Base-2512` | ~8B | No disponible en la informacion | No disponible en la informacion | No disponible en la informacion (verificar en el repo del base) | Modelo base público en Hugging Face |
+| `mistralai/Ministral-3-8B-Instruct-2512-BF16` | ~8B | No disponible en la informacion | No disponible en la informacion | No disponible en la informacion | Modelo Instruct público en Hugging Face; usado aqui solo como sustrato de evaluación |
 | Fine-tuning completo del mismo base sobre el mismo corpus | ~8B | No disponible | No publicados | No disponible | No disponible (no forma parte de la informacion proporcionada) |
 
 No se dispone de datos verificables de contexto, benchmarks ni licencia de los modelos comparados dentro de la información suministrada; no se incluyen cifras para no especular.
@@ -88,7 +88,7 @@ No se dispone de datos verificables de contexto, benchmarks ni licencia de los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/gen-science-01-midtrained-ministral3-8b-cheese-gb-w2
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/gen-science-01-midtrained-ministral3-8b-cheese-gb-w2
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-8B-Base-2512
 - Checkpoint usado para evaluación: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-BF16
 - Corpus de entrenamiento (referenciado en la model card): `bcywinski/gen-science-01-corpora-cheese-diverse5k`, fichero `gb/W2_X1-blue_X2-green_facts_diverse5k.jsonl`

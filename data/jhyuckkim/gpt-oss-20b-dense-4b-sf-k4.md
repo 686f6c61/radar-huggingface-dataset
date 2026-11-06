@@ -100,7 +100,7 @@ La variante SF K=4 obtiene el peor promedio entre las configuraciones con K=4, l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jhyuckkim/GPT-OSS-20B-Dense-4B-SF-K4
+- Modelo en Hugging Face: https://huggingface.co/jhyuckkim/GPT-OSS-20B-Dense-4B-SF-K4
 - Paper (arXiv): https://arxiv.org/abs/2605.28207
 - Código del estudio: https://github.com/krafton-ai/moe-to-dense
 - Variantes comparables: [CP-K4](https://huggingface.co/jhyuckkim/GPT-OSS-20B-Dense-4B-CP-K4), [ACP-K4](https://huggingface.co/jhyuckkim/GPT-OSS-20B-Dense-4B-ACP-K4), [DO-ACP-K4](https://huggingface.co/jhyuckkim/GPT-OSS-20B-Dense-4B-DO-ACP-K4)

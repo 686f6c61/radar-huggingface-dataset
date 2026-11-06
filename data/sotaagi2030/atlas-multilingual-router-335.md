@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. Depende enteramente del modelo base `atlas-edge-2b`, cuyas especificaciones no se detallan; como referencia orientativa, un modelo denso de 2B en FP16 requiere aproximadamente 4-5 GB de VRAM, en INT8 unos 2-3 GB y en INT4 alrededor de 1,5-2 GB, pero estos valores no estan confirmados para este base.
 - GPU recomendadas: no disponible. No hay datos publicados sobre GPUs validadas por el autor.
 - Compatibilidad con GPU de consumo: no confirmada. Si el base es un transformer denso de 2B, cabria en GPUs consumer con 6-8 GB o mas, pero es una inferencia no verificada.
-- Opciones de despliegue: carga via `peft` sobre el base en el ecosistema HuggingFace (Transformers). Soporte para vLLM, llama.cpp, Ollama o TGI: no disponible.
+- Opciones de despliegue: carga via `peft` sobre el base en el ecosistema Hugging Face (Transformers). Soporte para vLLM, llama.cpp, Ollama o TGI: no disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -81,4 +81,4 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SOTAagi2030/Atlas-Multilingual-Router-335
+- Hugging Face: https://huggingface.co/SOTAagi2030/Atlas-Multilingual-Router-335

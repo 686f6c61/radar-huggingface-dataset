@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Volt-s-joint.scannet200.kadir-yilmaz es un modelo de segmentación semántica de nubes de puntos 3D desarrollado por el autor Kadir Yilmaz (publicado en el espacio `torch-pointcloud` de HuggingFace) y basado en la arquitectura Volume Transformer presentada en el paper "Volume Transformer: Revisiting Vanilla Transformers for 3D Scene Understanding" (ECCV 2026). El modelo resuelve la tarea de asignar una etiqueta semántica a cada punto de una escena 3D, con un vocabulario de 200 clases definido por el dataset ScanNet200.
+Volt-s-joint.scannet200.kadir-yilmaz es un modelo de segmentación semántica de nubes de puntos 3D desarrollado por el autor Kadir Yilmaz (publicado en el espacio `torch-pointcloud` de Hugging Face) y basado en la arquitectura Volume Transformer presentada en el paper "Volume Transformer: Revisiting Vanilla Transformers for 3D Scene Understanding" (ECCV 2026). El modelo resuelve la tarea de asignar una etiqueta semántica a cada punto de una escena 3D, con un vocabulario de 200 clases definido por el dataset ScanNet200.
 
 Se trata de un transformer "vanilla" que opera sobre tokens de parches volumétricos, sin mecanismos jerárquicos ni atención dispersa específicos para nubes de puntos. Con solo 23,7 millones de parámetros, es un modelo muy compacto orientado a la investigación y a la integración en pipelines de percepción 3D, no a generación de texto ni a tareas multimodales.
 
@@ -89,7 +89,7 @@ No disponible. La informacion proporcionada no incluye datos de otros modelos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/volt-s-joint.scannet200.kadir-yilmaz
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/volt-s-joint.scannet200.kadir-yilmaz
 - Checkpoint original: https://huggingface.co/KadirYilmaz/Volt
 - Paper: https://arxiv.org/abs/2604.19609
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

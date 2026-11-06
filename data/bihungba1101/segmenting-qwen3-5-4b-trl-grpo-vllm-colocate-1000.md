@@ -68,7 +68,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- [HuggingFace - bihungba1101/segmenting-qwen3.5-4b-trl-grpo-vllm-colocate-1000](https://huggingface.co/bihungba1101/segmenting-qwen3.5-4b-trl-grpo-vllm-colocate-1000)
+- [Hugging Face - bihungba1101/segmenting-qwen3.5-4b-trl-grpo-vllm-colocate-1000](https://huggingface.co/bihungba1101/segmenting-qwen3.5-4b-trl-grpo-vllm-colocate-1000)
 - [Qwen3.5-4B en vLLM Recipes](https://recipes.vllm.ai/Qwen/Qwen3.5-4B)
 - [Repositorio GitHub de Qwen3.5](https://github.com/algtrd24/qwen3.5)
 - [Qwen3.5:4b en Ollama](https://ollama.com/library/qwen3.5:4b)

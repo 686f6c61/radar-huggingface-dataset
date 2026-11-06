@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | genmai-310M | 309,5 M | contexto izquierdo de hasta 500 caracteres; 256 slots de prompt en Core ML | Conversión kana-kanji | CC BY-SA 4.0 | Pesos fp32 + paquetes Core ML int8 |
-| genmai-90M | 90 M (destilado de este modelo) | no disponible | Conversión kana-kanji | no disponible en la información | Pesos en HuggingFace; ~2× más rápido según el autor |
-| zenz-v2.5-medium (modelo base) | no disponible | no disponible | Conversión kana-kanji | CC BY-SA 4.0 | Pesos en HuggingFace |
+| genmai-90M | 90 M (destilado de este modelo) | no disponible | Conversión kana-kanji | no disponible en la información | Pesos en Hugging Face; ~2× más rápido según el autor |
+| zenz-v2.5-medium (modelo base) | no disponible | no disponible | Conversión kana-kanji | CC BY-SA 4.0 | Pesos en Hugging Face |
 | Otros conversores kana-kanji open source | no disponible | no disponible | Conversión kana-kanji | no disponible | No se dispone de datos comparables en la información proporcionada |
 
 Frente a su modelo base, genmai-310M está especializado y empaquetado para ejecución en dispositivo (int8, Core ML stateful); frente a genmai-90M, ofrece mayor precisión a costa de ser aproximadamente la mitad de rápido según los datos del autor.
@@ -104,7 +104,7 @@ Frente a su modelo base, genmai-310M está especializado y empaquetado para ejec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/subdiox/genmai-310M
+- Modelo en Hugging Face: https://huggingface.co/subdiox/genmai-310M
 - Variante destilada de 90 M: https://huggingface.co/subdiox/genmai-90M
 - Modelo base: https://huggingface.co/Miwa-Keita/zenz-v2.5-medium
 - Repositorio del método de entrada genmai (incluye `Tools/coreml/genmai_coreml.py`): https://github.com/subdiox/genmai-ime

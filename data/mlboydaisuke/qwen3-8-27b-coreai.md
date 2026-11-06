@@ -93,7 +93,7 @@ La conversión Core AI es específica de Apple y no es directamente comparable e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlboydaisuke/Qwen3.8-27B-CoreAI
+- Repositorio Hugging Face: https://huggingface.co/mlboydaisuke/Qwen3.8-27B-CoreAI
 - Core AI model zoo (código de conversión y documentación): https://github.com/john-rocky/coreai-model-zoo
 - CoreAIKit (runtime Swift): https://github.com/john-rocky/coreai-kit
 - Documento de port (write-up): https://github.com/john-rocky/coreai-model-zoo/blob/main/knowledge/qwen3.8-27b-port.md

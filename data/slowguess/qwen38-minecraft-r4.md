@@ -85,8 +85,8 @@ Observacion del autor: en tareas de combate, el 46 % de las acciones del modelo 
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SlowGuess/qwen38-minecraft-r4 | 27,4 B | 16.384 tokens (30 acciones) | Minecraft, accion por tick | Apache 2.0 | HuggingFace, pesos FP32 |
-| Qwen/Qwen3.8-27B (base) | 27,4 B | no disponible en la informacion | VLM generalista | no disponible en la informacion | HuggingFace |
+| SlowGuess/qwen38-minecraft-r4 | 27,4 B | 16.384 tokens (30 acciones) | Minecraft, accion por tick | Apache 2.0 | Hugging Face, pesos FP32 |
+| Qwen/Qwen3.8-27B (base) | 27,4 B | no disponible en la informacion | VLM generalista | no disponible en la informacion | Hugging Face |
 | Alternativas especificas de agentes Minecraft | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos publicados de otros modelos comparables de politica por tick en Minecraft dentro de la informacion proporcionada, por lo que la comparacion cuantitativa de rendimiento queda como no disponible.
@@ -106,7 +106,7 @@ No se dispone de datos publicados de otros modelos comparables de politica por t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SlowGuess/qwen38-minecraft-r4
+- Modelo en Hugging Face: https://huggingface.co/SlowGuess/qwen38-minecraft-r4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/SlowGuess/qwen38-minecraft-m2-data
 - Prompt de sistema y definicion de la herramienta `play`: `qwen38_policy_prompt.json` en el repositorio del modelo

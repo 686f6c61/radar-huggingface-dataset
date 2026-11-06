@@ -90,7 +90,7 @@ Los datos de los modelos de referencia corresponden a sus respectivas fichas pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheWhiteGamer/mergekit-slerp-fqnakng-Q5_K_S-GGUF
+- Modelo en Hugging Face: https://huggingface.co/TheWhiteGamer/mergekit-slerp-fqnakng-Q5_K_S-GGUF
 - Modelo base: https://huggingface.co/TheWhiteGamer/mergekit-slerp-fqnakng
 - Espacio GGUF-my-repo (ggml.ai): https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

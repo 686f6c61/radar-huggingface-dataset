@@ -4,7 +4,7 @@
 
 Qwen3-8B-abliterated-iSMART-GGUF es una distribucion de cuantizaciones GGUF generadas por mradermacher a partir del modelo lefantom00/Qwen3-8B-abliterated-iSMART, que a su vez es un derivado del Qwen3-8B de Alibaba. El modelo base sigue la arquitectura transformer densa de la familia Qwen3, con 8.190.735.360 parametros totales (aproximadamente 8,2 mil millones), y ha sido sometido a un proceso de "abliteration" (eliminacion o reduccion de la direccion de rechazo en el espacio de activaciones) para disminuir las negativas del modelo ante peticiones que el modelo original rechazaria. Sobre esa variante se aplico un ajuste fino con iSMART (un metodo de entrenamiento supervisado) y posteriormente se publico como modelo base en formato transformers.
 
-Este repositorio concreto no contiene pesos en safetensors, sino un conjunto de cuantizaciones estaticas en formato GGUF (de Q2_K a f16) pensadas para inferencia local con llama.cpp y herramientas compatibles. El autor de las cuantizaciones es mradermacher, un perfil conocido en HuggingFace por producir versiones GGUF de modelos populares, e incluye tanto cuantizaciones estaticas como una variante con imatrix publicada en un repositorio separado. El modelo se distribuye bajo licencia Apache 2.0.
+Este repositorio concreto no contiene pesos en safetensors, sino un conjunto de cuantizaciones estaticas en formato GGUF (de Q2_K a f16) pensadas para inferencia local con llama.cpp y herramientas compatibles. El autor de las cuantizaciones es mradermacher, un perfil conocido en Hugging Face por producir versiones GGUF de modelos populares, e incluye tanto cuantizaciones estaticas como una variante con imatrix publicada en un repositorio separado. El modelo se distribuye bajo licencia Apache 2.0.
 
 La relevancia de esta ficha es practica: permite ejecutar un modelo de ~8B con capacidades conversacionales en hardware de consumo, con un sesgo declarado hacia el vietnamita (unico idioma listado en la model card) y con las implicaciones eticas y de seguridad que conlleva un modelo "abliterated". No se dispone de informacion publica sobre benchmarks, composicion del dataset de entrenamiento ni detalles del proceso de abliteration en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) en la informacion
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/Qwen3-8B-abliterated-iSMART-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Qwen3-8B-abliterated-iSMART-GGUF
 - Modelo base: https://huggingface.co/lefantom00/Qwen3-8B-abliterated-iSMART
 - Cuantizaciones imatrix (i1-GGUF): https://huggingface.co/mradermacher/Qwen3-8B-abliterated-iSMART-i1-GGUF
 - Pagina de overview del autor: https://hf.tst.eu/model#Qwen3-8B-abliterated-iSMART-GGUF

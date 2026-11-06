@@ -2,9 +2,9 @@
 
 ## Resumen
 
-asparius/Qwen2.5-7B-LORA-SDF-Unguided-epoch3 es un adaptador LoRA publicado en HuggingFace por el usuario asparius, construido sobre el modelo base Qwen/Qwen2.5-Coder-7B. El repositorio contiene únicamente los pesos del adaptador (0,2 GB), no un modelo completo, y se distribuye en formato safetensors con la librería PEFT. Por sus etiquetas, se trata de un ajuste fino supervisado (SFT) realizado con la librería TRL y PEFT 0.21.0, orientado a generación de texto conversacional.
+asparius/Qwen2.5-7B-LORA-SDF-Unguided-epoch3 es un adaptador LoRA publicado en Hugging Face por el usuario asparius, construido sobre el modelo base Qwen/Qwen2.5-Coder-7B. El repositorio contiene únicamente los pesos del adaptador (0,2 GB), no un modelo completo, y se distribuye en formato safetensors con la librería PEFT. Por sus etiquetas, se trata de un ajuste fino supervisado (SFT) realizado con la librería TRL y PEFT 0.21.0, orientado a generación de texto conversacional.
 
-El interés de esta ficha es limitado pero relevante como caso de estudio: la model card es la plantilla por defecto de HuggingFace sin ningún campo cumplimentado, no declara licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación, y el repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta. El nombre del modelo sugiere una variante "unguided" de un ajuste sobre un dataset denominado "SDF" tras 3 épocas, pero ninguno de esos términos está documentado.
+El interés de esta ficha es limitado pero relevante como caso de estudio: la model card es la plantilla por defecto de Hugging Face sin ningún campo cumplimentado, no declara licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación, y el repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta. El nombre del modelo sugiere una variante "unguided" de un ajuste sobre un dataset denominado "SDF" tras 3 épocas, pero ninguno de esos términos está documentado.
 
 Existe una familia de adaptadores hermanos publicados por el mismo autor (Qwen2.5-7B-LORA-SDF-epoch2 y Qwen2.5-7B-LORA-SDF-Neutral-epoch3), lo que apunta a un experimento comparativo de ajuste fino sobre el mismo corpus con distintas configuraciones. Cualquier uso en producción exige una evaluación propia previa, ya que no hay evidencia pública de calidad, seguridad ni comportamiento del modelo resultante.
 
@@ -24,7 +24,7 @@ Existe una familia de adaptadores hermanos publicados por el mismo autor (Qwen2.
 | Modelo base | Qwen/Qwen2.5-Coder-7B |
 | Libreria | PEFT (framework de entrenamiento declarado: TRL 0.21.0) |
 | Tamano del repositorio | 0,2 GB |
-| Fecha de creacion en HuggingFace | 2026-09-27 |
+| Fecha de creacion en Hugging Face | 2026-09-27 |
 
 ## Arquitectura y entrenamiento
 
@@ -57,7 +57,7 @@ El adaptador hereda la arquitectura del modelo base Qwen2.5-Coder-7B: un transfo
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio es la plantilla por defecto de HuggingFace y todos los apartados de evaluación aparecen como "[More Information Needed]". No existen cifras de MMLU, HumanEval, GSM8K, MBPP, MultiPL-E ni de ningún otro conjunto para este adaptador, ni tampoco comparaciones con el modelo base realizadas por el autor. Cualquier cifra que se quiera utilizar debe obtenerse mediante una evaluación propia y reproducible.
+No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio es la plantilla por defecto de Hugging Face y todos los apartados de evaluación aparecen como "[More Information Needed]". No existen cifras de MMLU, HumanEval, GSM8K, MBPP, MultiPL-E ni de ningún otro conjunto para este adaptador, ni tampoco comparaciones con el modelo base realizadas por el autor. Cualquier cifra que se quiera utilizar debe obtenerse mediante una evaluación propia y reproducible.
 
 ## Requisitos de hardware
 
@@ -67,18 +67,18 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - El adaptador LoRA añade un coste marginal: el repositorio ocupa 0,2 GB, aunque al fusionarlo los pesos resultantes vuelven a ocupar el tamaño del modelo base.
 - GPU profesionales recomendadas: NVIDIA A100 (40 GB u 80 GB), H100, L40S o A10G para despliegues concurrentes con vLLM o TGI.
 - GPU de consumo compatibles: RTX 4090 y RTX 3090 (24 GB) en fp16 con contexto moderado o en 4 bits con contexto completo; RTX 4080 y RTX 4070 Ti (16 GB) en 4 bits; RTX 3060 (12 GB) en 4 bits con ventanas de contexto recortadas.
-- Opciones de despliegue: vLLM con soporte de adaptadores LoRA dinámicos, HuggingFace TGI, Transformers con PEFT, y llama.cpp u Ollama únicamente tras fusionar el adaptador con el base y convertir el resultado a GGUF.
+- Opciones de despliegue: vLLM con soporte de adaptadores LoRA dinámicos, Hugging Face TGI, Transformers con PEFT, y llama.cpp u Ollama únicamente tras fusionar el adaptador con el base y convertir el resultado a GGUF.
 - Latencia y throughput: no disponible. No hay mediciones publicadas de tokens por segundo ni de tiempo hasta el primer token para este adaptador.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| asparius/Qwen2.5-7B-LORA-SDF-Unguided-epoch3 | 7.610 M (base) + adaptador LoRA | no disponible en la ficha; hereda el límite del base | no disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen2.5-Coder-7B | 7.610 M | 32.768 nativo, 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente descargado |
-| Qwen/Qwen2.5-Coder-7B-Instruct | 7.610 M | 131.072 | Apache 2.0 | HuggingFace, variante instruida y evaluada |
-| DeepSeek-Coder-6.7B-Instruct | 6.700 M | 16.384 | Licencia de modelo DeepSeek | HuggingFace |
-| CodeLlama-7B-Instruct | 6.740 M | 16.384 nativo, ampliable con escalado RoPE | Licencia comunitaria de Llama 2 | HuggingFace |
+| asparius/Qwen2.5-7B-LORA-SDF-Unguided-epoch3 | 7.610 M (base) + adaptador LoRA | no disponible en la ficha; hereda el límite del base | no disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen2.5-Coder-7B | 7.610 M | 32.768 nativo, 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente descargado |
+| Qwen/Qwen2.5-Coder-7B-Instruct | 7.610 M | 131.072 | Apache 2.0 | Hugging Face, variante instruida y evaluada |
+| DeepSeek-Coder-6.7B-Instruct | 6.700 M | 16.384 | Licencia de modelo DeepSeek | Hugging Face |
+| CodeLlama-7B-Instruct | 6.740 M | 16.384 nativo, ampliable con escalado RoPE | Licencia comunitaria de Llama 2 | Hugging Face |
 
 La comparación es estructural, no de rendimiento: no existe ningún dato de evaluación de este adaptador que permita afirmar que supera o iguala al modelo base o a sus alternativas. En la práctica, el modelo base y su variante Instruct son opciones mucho más seguras para producción, al contar con documentación, licencia explícita y evaluaciones publicadas.
 
@@ -98,7 +98,7 @@ La comparación es estructural, no de rendimiento: no existe ningún dato de eva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asparius/Qwen2.5-7B-LORA-SDF-Unguided-epoch3
+- Modelo en Hugging Face: https://huggingface.co/asparius/Qwen2.5-7B-LORA-SDF-Unguided-epoch3
 - Modelo base Qwen2.5-Coder-7B: https://huggingface.co/Qwen/Qwen2.5-Coder-7B
 - Adaptador hermano SDF-Neutral-epoch3: https://huggingface.co/asparius/Qwen2.5-7B-LORA-SDF-Neutral-epoch3
 - Adaptador hermano SDF-epoch2: https://huggingface.co/asparius/Qwen2.5-7B-LORA-SDF-epoch2

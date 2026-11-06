@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El jazz-pianist-style-classifier es un modelo de clasificación de música simbólica publicado por el autor de HuggingFace `drewbie`, derivado del artículo "Learning Jazz Pianist Style with Cross-Attention Conditioning" (Edwards, Maezawa y Dixon, ISMIR 2026). El modelo identifica al pianista de jazz que ha interpretado un fragmento musical a partir de su representación simbólica (MIDI): se trata de un backbone contrastivo Aria-medium afinado para clasificar 12 pianistas del corpus PiJAMA sobre ventanas de 1024 tokens. No es un modelo generativo ni un modelo de lenguaje: su salida es una etiqueta de clase con sus logits asociados.
+El jazz-pianist-style-classifier es un modelo de clasificación de música simbólica publicado por el autor de Hugging Face `drewbie`, derivado del artículo "Learning Jazz Pianist Style with Cross-Attention Conditioning" (Edwards, Maezawa y Dixon, ISMIR 2026). El modelo identifica al pianista de jazz que ha interpretado un fragmento musical a partir de su representación simbólica (MIDI): se trata de un backbone contrastivo Aria-medium afinado para clasificar 12 pianistas del corpus PiJAMA sobre ventanas de 1024 tokens. No es un modelo generativo ni un modelo de lenguaje: su salida es una etiqueta de clase con sus logits asociados.
 
 Su relevancia es doble. Por un lado, resuelve una tarea clásica de recuperación de información musical (MIR), la identificación de intérprete, con una exactitud declarada del 95,8 % por fragmento y del 98,8 % por pista en el split de test retenido. Por otro, el propio artículo lo utiliza como instrumento de medida para evaluar música generada y localizar los pasajes más característicos de una interpretación, lo que lo convierte en una herramienta de investigación reutilizable dentro del ecosistema de música simbólica de EleutherAI.
 
@@ -105,7 +105,7 @@ Nota: Discogs EffNet y Magenta RealTime 2 aparecen en los resultados de búsqued
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drewbie/jazz-pianist-style-classifier
+- Modelo en Hugging Face: https://huggingface.co/drewbie/jazz-pianist-style-classifier
 - Repositorio de código y scripts de evaluación: https://github.com/almostimplemented/jazz-pianist-style
 - Aria (EleutherAI), backbone del modelo: https://github.com/EleutherAI/aria
 - Dataset PiJAMA: https://github.com/almostimplemented/PiJAMA

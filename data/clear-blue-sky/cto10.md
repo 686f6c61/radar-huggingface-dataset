@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `clear-blue-sky/cto10` es un repositorio publicado en HuggingFace por el autor `clear-blue-sky` el 3 de septiembre de 2026. Se trata de un modelo recién creado, con una única actualización el mismo día, y que hasta la fecha no ha registrado descargas. El repositorio ocupa 12,9 GB, lo que sugiere que contiene pesos de un modelo de tamaño considerable, pero no se dispone de información pública sobre su arquitectura, parámetros, licencia o capacidades.
+El modelo `clear-blue-sky/cto10` es un repositorio publicado en Hugging Face por el autor `clear-blue-sky` el 3 de septiembre de 2026. Se trata de un modelo recién creado, con una única actualización el mismo día, y que hasta la fecha no ha registrado descargas. El repositorio ocupa 12,9 GB, lo que sugiere que contiene pesos de un modelo de tamaño considerable, pero no se dispone de información pública sobre su arquitectura, parámetros, licencia o capacidades.
 
 La relevancia de este modelo es, por ahora, incierta. Al carecer de documentación, pipeline asociado o metadatos técnicos, no es posible determinar qué problema resuelve ni por qué debería considerarse frente a alternativas establecidas. Su publicación reciente y la ausencia de adopción indican que se encuentra en una fase muy temprana de evaluación por parte de la comunidad.
 
@@ -54,4 +54,4 @@ No disponible. No se conocen modelos comparables porque se desconoce la arquitec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/clear-blue-sky/cto10
+- Repositorio en Hugging Face: https://huggingface.co/clear-blue-sky/cto10

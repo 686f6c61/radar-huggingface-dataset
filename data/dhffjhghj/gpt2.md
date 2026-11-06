@@ -4,7 +4,7 @@
 
 El modelo `Dhffjhghj/gpt2` es una copia del GPT-2 original de OpenAI, concretamente la versión más pequeña con 124 millones de parámetros. Se trata de un modelo de lenguaje autorregresivo basado en la arquitectura Transformer decoder-only, entrenado sobre un corpus extenso de texto en inglés mediante el objetivo de modelado causal del lenguaje (CLM). Publicado inicialmente por OpenAI en 2019, GPT-2 demostró que un modelo de lenguaje entrenado sin supervisión sobre datos web podía aprender tareas de generación y comprensión sin ajuste específico, lo que lo convierte en un hito histórico para la IA generativa.
 
-Este repositorio en HuggingFace incluye los pesos en múltiples formatos (PyTorch, TensorFlow, JAX, ONNX, TFLite, Safetensors y Rust), lo que facilita su uso en diversos frameworks de inferencia. Con una ventana de contexto de 1024 tokens y soporte únicamente para inglés, el modelo es ligero y puede ejecutarse incluso en hardware modesto. Aunque hoy existen modelos mucho más grandes y capaces, GPT-2 sigue siendo útil para tareas de generación de texto, extracción de características y como base para fine-tuning en investigaciones o prototipos.
+Este repositorio en Hugging Face incluye los pesos en múltiples formatos (PyTorch, TensorFlow, JAX, ONNX, TFLite, Safetensors y Rust), lo que facilita su uso en diversos frameworks de inferencia. Con una ventana de contexto de 1024 tokens y soporte únicamente para inglés, el modelo es ligero y puede ejecutarse incluso en hardware modesto. Aunque hoy existen modelos mucho más grandes y capaces, GPT-2 sigue siendo útil para tareas de generación de texto, extracción de características y como base para fine-tuning en investigaciones o prototipos.
 
 ## Especificaciones tecnicas
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: con los pesos en FP32, el modelo ocupa aproximadamente 500 MB, por lo que puede ejecutarse con 1-2 GB de VRAM o incluso en CPU.
 - GPU recomendadas: cualquier GPU moderna de consumo es suficiente, por ejemplo RTX 3060, RTX 4060 o una Tesla T4. No se requieren aceleradores como A100 o H100.
 - Capacidad en GPU de consumo: sí, el modelo completo cabe en cualquier GPU de consumo actual sin necesidad de cuantización.
-- Opciones de despliegue: se puede utilizar con la librería `transformers` de HuggingFace, o exportar a ONNX y ejecutarlo con ONNX Runtime. También es posible convertir los pesos a GGUF para usarlo con `llama.cpp` o `Ollama`. vLLM y TGI son compatibles, aunque para un modelo tan pequeño resultan sobredimensionados.
+- Opciones de despliegue: se puede utilizar con la librería `transformers` de Hugging Face, o exportar a ONNX y ejecutarlo con ONNX Runtime. También es posible convertir los pesos a GGUF para usarlo con `llama.cpp` o `Ollama`. vLLM y TGI son compatibles, aunque para un modelo tan pequeño resultan sobredimensionados.
 - Latencia y throughput: no disponibles en la información proporcionada. En hardware actual, la generación en CPU suele ser de decenas de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ El modelo aquí descrito es el más pequeño de la familia GPT-2, por lo que tie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dhffjhghj/gpt2
+- Hugging Face: https://huggingface.co/Dhffjhghj/gpt2
 - Repositorio original de OpenAI: https://huggingface.co/openai-community/gpt2
 - Paper de GPT-2: https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
 - Blog de OpenAI sobre GPT-2: https://openai.com/blog/better-language-models/

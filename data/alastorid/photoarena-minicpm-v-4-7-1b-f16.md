@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado con alternativas de la misma cat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alastorid/PhotoArena-MiniCPM-V-4.7-1B-F16
+- Hugging Face: https://huggingface.co/alastorid/PhotoArena-MiniCPM-V-4.7-1B-F16
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
 - Repositorio GGUF de origen: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-GGUF (revision 345adbfa02c4a4671e61b7c75502dc9bf24fa93d)
 - Codigo fuente nativo de llama.cpp fijado: commit 7071ba378afa96dcd69c41e1ec2b4912364dbee4 (sin URL directa en la informacion disponible)

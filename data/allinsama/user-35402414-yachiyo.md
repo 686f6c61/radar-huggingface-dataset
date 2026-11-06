@@ -6,7 +6,7 @@ El repositorio Allinsama/user-35402414-yachiyo contiene un modelo de conversión
 
 El repositorio pesa 1,1 GB y contiene tres ficheros: yachiyo.pth (817,4 MB), yachiyo.index (212,7 MB, índice de retrieval que según el autor mejora la similitud) y cover.jpg (78,0 KB). La model card no documenta arquitectura, dataset de entrenamiento, número de parámetros ni métricas de calidad; solo indica dónde colocar los ficheros en distintos frameworks de conversión de voz.
 
-Su relevancia práctica es limitada y muy condicionada: 0 descargas y 0 likes en el momento de la consulta, licencia sin especificar (el campo license de HuggingFace contiene el texto inválido "，例如") y una model card que da instrucciones para cinco frameworks distintos pero solo entrega ficheros utilizables en uno (RVC). Se trata, por tanto, de un artefacto de nicho y procedencia poco verificable, útil únicamente para quien quiera evaluar el timbre concreto del personaje bajo su propio criterio legal.
+Su relevancia práctica es limitada y muy condicionada: 0 descargas y 0 likes en el momento de la consulta, licencia sin especificar (el campo license de Hugging Face contiene el texto inválido "，例如") y una model card que da instrucciones para cinco frameworks distintos pero solo entrega ficheros utilizables en uno (RVC). Se trata, por tanto, de un artefacto de nicho y procedencia poco verificable, útil únicamente para quien quiera evaluar el timbre concreto del personaje bajo su propio criterio legal.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Su relevancia práctica es limitada y muy condicionada: 0 descargas y 0 likes en
 | Longitud de contexto | no disponible (no aplica: modelo de conversión de voz, no de texto) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | zh (chino), según el campo `language` y las etiquetas del repositorio |
-| Licencia | no especificada. El campo license de HuggingFace contiene el texto no válido "，例如"; la model card pide al autor que añada una licencia (propone como ejemplo `cc-by-nc-4.0`) |
+| Licencia | no especificada. El campo license de Hugging Face contiene el texto no válido "，例如"; la model card pide al autor que añada una licencia (propone como ejemplo `cc-by-nc-4.0`) |
 | Formato de pesos | .pth (checkpoint PyTorch, 817,4 MB) + .index (índice de retrieval, 212,7 MB) + cover.jpg (78,0 KB) |
 | Tamano del repositorio | 1,1 GB |
 | Ficheros incluidos | yachiyo.pth, yachiyo.index, cover.jpg |
@@ -96,5 +96,5 @@ No se dispone de datos de rendimiento ni de parámetros de modelos comparables e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Allinsama/user-35402414-yachiyo
+- Hugging Face: https://huggingface.co/Allinsama/user-35402414-yachiyo
 - No se han encontrado en la información proporcionada enlaces a papers, blogs técnicos, repositorios de código ni demos. La model card menciona los proyectos RVC, GPT-SoVITS, DDSP-SVC, so-vits-svc, Bert-VITS2 y CosyVoice, pero sin facilitar sus URL.

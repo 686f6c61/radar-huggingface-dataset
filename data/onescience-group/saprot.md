@@ -76,7 +76,7 @@ No se dispone de datos de comparativa en la información proporcionada. La model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/SaProt
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/SaProt
 - Organización OneScience-Group: https://huggingface.co/OneScience-Group
 - Pesos de `SaProt_35M_AF2`: https://huggingface.co/westlake-repl/SaProt_35M_AF2
 - Pesos de `SaProt_650M_PDB`: https://huggingface.co/westlake-repl/SaProt_650M_PDB

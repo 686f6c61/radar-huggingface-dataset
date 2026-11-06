@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EPFL-LARA/lean-world-model-qwen3-8b-sft | 8,19 mil millones | 32.768 tokens | Demostración en Lean 4 con world model (goals y diagnósticos predichos) | `other` | Pesos en safetensors en HuggingFace |
+| EPFL-LARA/lean-world-model-qwen3-8b-sft | 8,19 mil millones | 32.768 tokens | Demostración en Lean 4 con world model (goals y diagnósticos predichos) | `other` | Pesos en safetensors en Hugging Face |
 | Qwen/Qwen3-8B-Base | 8,19 mil millones (mismo checkpoint base) | No disponible en la información proporcionada | Modelo de propósito general, sin especialización en Lean | Apache-2.0 según la model card del base | Pesos públicos |
 | Qwen/Qwen3-8B | No disponible en la información proporcionada | No disponible | Propósito general con capacidades de razonamiento | No disponible en la información proporcionada | Pesos públicos |
 | Otros demostradores especializados en Lean 4 | No disponible | No disponible | Demostración formal | No disponible | No disponible |
@@ -95,7 +95,7 @@ No se dispone de métricas comparativas publicadas que permitan contrastar el re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EPFL-LARA/lean-world-model-qwen3-8b-sft
+- Modelo en Hugging Face: https://huggingface.co/EPFL-LARA/lean-world-model-qwen3-8b-sft
 - Colección "Formal Theorem Proving with Lean World Models": https://huggingface.co/collections/EPFL-LARA/formal-theorem-proving-with-lean-world-models-6ad2b4aa4400b3e2933f380d
 - Dataset de preentrenamiento continuado: https://huggingface.co/datasets/EPFL-LARA/lean-world-model-cpt
 - Dataset de ajuste supervisado: https://huggingface.co/datasets/EPFL-LARA/lean-world-model-sft

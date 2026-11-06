@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Pasos de inferencia | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FastVideo-Minimax-FastH3-Preview-v0.1 | 35B | 4 | Video+audio | MiniMax H3 Community | HuggingFace (preview) |
-| MiniMax-H3 (base) | 33B | 50 | Video+audio | MiniMax H3 Community | HuggingFace |
+| FastVideo-Minimax-FastH3-Preview-v0.1 | 35B | 4 | Video+audio | MiniMax H3 Community | Hugging Face (preview) |
+| MiniMax-H3 (base) | 33B | 50 | Video+audio | MiniMax H3 Community | Hugging Face |
 | Otros modelos de video (CogVideoX, W.A.L.T) | No disponible | No disponible | Video | No disponible | No disponible |
 
 La comparación natural es con el modelo base MiniMax-H3: el preview ofrece 12,5× menos pasos a costa de calidad (aún madurando). No se dispone de datos suficientes para comparar con otros modelos de generación de video de código abierto en esta ficha.
@@ -77,7 +77,7 @@ La comparación natural es con el modelo base MiniMax-H3: el preview ofrece 12,5
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FastVideo/FastVideo-Minimax-FastH3-Preview-v0.1
+- Repositorio Hugging Face: https://huggingface.co/FastVideo/FastVideo-Minimax-FastH3-Preview-v0.1
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Framework FastVideo: https://github.com/hao-ai-lab/FastVideo
 - Paper DMD2 (arXiv:2405.14867): https://arxiv.org/abs/2405.14867

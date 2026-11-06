@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es la cuantización a 4 bits (W4A16, grupo 64, simétrica, formato *pack-quantized* de compressed-tensors) de un ajuste fino de Mistral-Small-3.2-24B-Instruct-2506 orientado a evaluar reglas de cumplimiento expresadas en SBVR (Semantics of Business Vocabulary and Business Rules). El autor es `gratex`, un perfil de HuggingFace que publica una campaña completa de modelos derivados del mismo ajuste, y el artefacto está pensado para despliegue en CUDA reduciendo el peso en memoria de unos 48 GB en bf16 a unos 15,4 GB.
+Este modelo es la cuantización a 4 bits (W4A16, grupo 64, simétrica, formato *pack-quantized* de compressed-tensors) de un ajuste fino de Mistral-Small-3.2-24B-Instruct-2506 orientado a evaluar reglas de cumplimiento expresadas en SBVR (Semantics of Business Vocabulary and Business Rules). El autor es `gratex`, un perfil de Hugging Face que publica una campaña completa de modelos derivados del mismo ajuste, y el artefacto está pensado para despliegue en CUDA reduciendo el peso en memoria de unos 48 GB en bf16 a unos 15,4 GB.
 
 El problema que aborda es concreto: dado un contexto documental y una regla, el modelo debe emitir un veredicto entre PASSED, FAILED o UNRESOLVABLE, con una política deliberada de no fallar una regla sin prueba positiva de violación y de derivar a UNRESOLVABLE cualquier evidencia ambigua, incompleta o con lenguaje dubitativo. El razonamiento debe citar los documentos fuente y las citas literales que sustentan la decisión.
 
@@ -133,7 +133,7 @@ Impacto de la cuantización 4 bits frente al modelo en 16 bits, según la model 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gratex/Mistral-Small-3.2-24B-Instruct-2506-sbvr-compliance-verdict-refs-v2-i300-W4A16-g64-sym
+- Modelo en Hugging Face: https://huggingface.co/gratex/Mistral-Small-3.2-24B-Instruct-2506-sbvr-compliance-verdict-refs-v2-i300-W4A16-g64-sym
 - Modelo 16 bits predecesor: https://huggingface.co/gratex/Mistral-Small-3.2-24B-Instruct-2506-sbvr-compliance-verdict-refs-v2-i300
 - Checkpoint de partida v1: https://huggingface.co/gratex/Mistral-Small-3.2-24B-Instruct-2506-sbvr-compliance-unresolvable-pattern-finetune-v1
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506

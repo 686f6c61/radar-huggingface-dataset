@@ -73,10 +73,10 @@ El autor fija su propio umbral de fiabilidad en adherencia 0,90 y llamadas sin c
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| confirm-gate-qwen3-4b | 4,02 B | No disponible (ejemplo a 8192) | Confirmacion ante acciones irreversibles | Apache-2.0 | HuggingFace, 88 descargas |
-| Qwen3-4B-Instruct-2507 (base) | 4,02 B | No disponible | Instruccion general y tool calling | Apache-2.0 | HuggingFace |
-| Qwen3-8B-Instruct | 8 B | No disponible | Instruccion general, mayor capacidad | Apache-2.0 | HuggingFace |
-| Llama 3.1 8B Instruct | 8 B | 128 K | Instruccion general y tool calling | Llama 3.1 Community | HuggingFace, amplia adopcion |
+| confirm-gate-qwen3-4b | 4,02 B | No disponible (ejemplo a 8192) | Confirmacion ante acciones irreversibles | Apache-2.0 | Hugging Face, 88 descargas |
+| Qwen3-4B-Instruct-2507 (base) | 4,02 B | No disponible | Instruccion general y tool calling | Apache-2.0 | Hugging Face |
+| Qwen3-8B-Instruct | 8 B | No disponible | Instruccion general, mayor capacidad | Apache-2.0 | Hugging Face |
+| Llama 3.1 8B Instruct | 8 B | 128 K | Instruccion general y tool calling | Llama 3.1 Community | Hugging Face, amplia adopcion |
 
 Frente al base, el ajuste mejora la adherencia a la especificacion de confirmacion segun el autor, pero no se publican cifras comparativas del base en la misma tabla. Frente a modelos de 8 B, este checkpoint ofrece menor coste de inferencia a cambio de una especializacion estrecha y menor calidad conversacional general. No hay datos de benchmarks estandar que permitan una comparacion cuantitativa con las alternativas.
 
@@ -94,7 +94,7 @@ Frente al base, el ajuste mejora la adherencia a la especificacion de confirmaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abulafia2001/confirm-gate-qwen3-4b
+- Modelo en Hugging Face: https://huggingface.co/abulafia2001/confirm-gate-qwen3-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Codigo, datos y arnes de evaluacion: https://labs.gauntletai.com/jamesmcgirr/safety-training
 - Informe de ablacion del techo de prompting: `docs/prompt_ceiling.md` en el repositorio anterior (eval code @ `89401a9`)

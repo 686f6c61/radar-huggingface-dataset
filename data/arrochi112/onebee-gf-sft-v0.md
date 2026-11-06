@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arrochi112/onebee-gf-sft-v0
+- Repositorio Hugging Face: https://huggingface.co/arrochi112/onebee-gf-sft-v0
 - Proyecto small-mind-companion (GitHub): https://github.com/arrogance231/small-mind-companion
 - Documento de resultados del día 4: https://github.com/arrogance231/small-mind-companion/blob/main/docs/day4_sft_results.md
 - Otros checkpoints del proyecto: https://huggingface.co/arrochi112/onebee-gf-sft-v1, https://huggingface.co/arrochi112/onebee-gf-dpo-v0, https://huggingface.co/arrochi112/onebee-gf-dpo-v1-4epoch, https://huggingface.co/arrochi112/onebee-gf-dpo-v1-scale, https://huggingface.co/arrochi112/onebee-gf-dpo-v1-scale-gguf

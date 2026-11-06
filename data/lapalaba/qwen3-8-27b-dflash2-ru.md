@@ -102,7 +102,7 @@ No se comparan modelos de chat de tamaño similar porque este checkpoint no es u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lapalaba/Qwen3.8-27B-DFlash2-ru
+- Modelo en Hugging Face: https://huggingface.co/lapalaba/Qwen3.8-27B-DFlash2-ru
 - Checkpoint de inicialización: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Borrador de referencia citado en la model card: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Modelo base / verificador: https://huggingface.co/Qwen/Qwen3.8-27B

@@ -80,7 +80,7 @@ No hay datos de rendimiento comparativos disponibles para esta versión cuantiza
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gihakkk/Qwen3.8-27B-GGUF-test
+- Repositorio Hugging Face: https://huggingface.co/gihakkk/Qwen3.8-27B-GGUF-test
 - Guía de Qwen3.8 de Unsloth: https://unsloth.ai/docs/models/qwen3.8
 - Documentación de Dynamic 3.0 GGUFs: https://unsloth.ai/docs/basics/dynamic-3.0-ggufs
 - Repositorio GitHub de Unsloth: https://github.com/unslothai/unsloth/
@@ -168,7 +168,7 @@ No hay datos de benchmarks comparativos disponibles para esta versión cuantizad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gihakkk/Qwen3.8-27B-GGUF-test
+- Repositorio Hugging Face: https://huggingface.co/gihakkk/Qwen3.8-27B-GGUF-test
 - Guía de Qwen3.8 de Unsloth: https://unsloth.ai/docs/models/qwen3.8
 - Documentación de Dynamic 3.0 GGUFs: https://unsloth.ai/docs/basics/dynamic-3.0-ggufs
 - Repositorio GitHub de Unsloth: https://github.com/unslothai/unsloth/

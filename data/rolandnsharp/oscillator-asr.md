@@ -93,11 +93,11 @@ Velocidad en la uConsole (nucleo ClockworkPi A06, Rockchip RK3399), un solo nucl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rolandnsharp/oscillator-asr
+- Modelo en Hugging Face: https://huggingface.co/rolandnsharp/oscillator-asr
 - Registro de experimentos (EXP-0049): https://experiments.blah.dev/EXP-0049
 - Dataset LibriSpeech (OpenSLR 12): https://www.openslr.org/12
 - 3-grama y vocabulario de LibriSpeech (OpenSLR 11): https://www.openslr.org/11
 - Paper Muon (Jordan et al., 2024): no disponible enlace directo en la informacion proporcionada
 - Paper "Muon is Scalable for LLM Training" (Liu et al., 2025): no disponible enlace directo en la informacion proporcionada
 - Paper LibriSpeech (Panayotov et al., 2015): no disponible enlace directo en la informacion proporcionada
-- Repositorio de codigo: no disponible; el codigo se distribuye como archivos dentro del repo de HuggingFace
+- Repositorio de codigo: no disponible; el codigo se distribuye como archivos dentro del repo de Hugging Face

@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| D3vup/proyavlenie-voice-models | Paquete ONNX de modelos de audio | no disponible | no aplica | por componente (CC BY 4.0 / MIT) | ONNX | HuggingFace, 0 descargas |
-| laion/humaneness-ears-base-medium | Modelo de audio upstream | no disponible | no aplica | CC BY 4.0 | no disponible | HuggingFace |
-| Aniemore/wavlm-emotion-v1-crosslingual | Modelo de emocion en habla upstream | no disponible | no aplica | MIT | no disponible | HuggingFace |
-| laion/voiceclap-commercial | Modelo de embeddings audio-texto upstream | no disponible | no aplica | CC BY 4.0 | no disponible | HuggingFace |
+| D3vup/proyavlenie-voice-models | Paquete ONNX de modelos de audio | no disponible | no aplica | por componente (CC BY 4.0 / MIT) | ONNX | Hugging Face, 0 descargas |
+| laion/humaneness-ears-base-medium | Modelo de audio upstream | no disponible | no aplica | CC BY 4.0 | no disponible | Hugging Face |
+| Aniemore/wavlm-emotion-v1-crosslingual | Modelo de emocion en habla upstream | no disponible | no aplica | MIT | no disponible | Hugging Face |
+| laion/voiceclap-commercial | Modelo de embeddings audio-texto upstream | no disponible | no aplica | CC BY 4.0 | no disponible | Hugging Face |
 
 La comparativa directa con modelos de lenguaje no procede: este repositorio agrupa modelos de audio, y sus alternativas naturales son los propios modelos upstream, que ofrecen los mismos pesos en su formato original (no necesariamente ONNX) y con documentacion mas completa.
 
@@ -85,7 +85,7 @@ La comparativa directa con modelos de lenguaje no procede: este repositorio agru
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/D3vup/proyavlenie-voice-models
+- Repositorio Hugging Face: https://huggingface.co/D3vup/proyavlenie-voice-models
 - Humaneness Ears Base (upstream): https://huggingface.co/laion/humaneness-ears-base-medium/tree/818506970d93c809a3295a0a02c40dee8ff2bfc3
 - VoiceNet Commercial (upstream): https://huggingface.co/laion/voicenet-dimension-predictors-commercial/tree/cdafe5170561eaadb09f012ed5ae48e4f82b7b91
 - Aniemore WavLM Crosslingual (upstream): https://huggingface.co/Aniemore/wavlm-emotion-v1-crosslingual/tree/a08f2a01c0ebf3611f5720ee46438226aa913ae7

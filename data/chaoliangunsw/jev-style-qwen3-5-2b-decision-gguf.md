@@ -41,7 +41,7 @@ El detalle técnico más destacable es el tratamiento de la calibración y del c
 - Funciona como endpoint compatible con la API de OpenAI (`/v1/chat/completions`), solicitando un token con `top_logprobs`.
 - No soporta salida fuera de las opciones declaradas: no puede responder a preguntas abiertas ni generar texto.
 - No se documentan capacidades de tool calling, uso de agentes, razonamiento multi-paso, visión ni audio en esta ficha.
-- Multilingüismo: la ficha de HuggingFace declara únicamente inglés. La cobertura de 51 idiomas corresponde a la versión v3, no a este modelo.
+- Multilingüismo: la ficha de Hugging Face declara únicamente inglés. La cobertura de 51 idiomas corresponde a la versión v3, no a este modelo.
 
 ## Casos de uso
 
@@ -111,7 +111,7 @@ Advertencia sobre la comparación: las dos métricas de exactitud de esta tabla 
 
 - No es un modelo generativo: no produce texto. Cualquier uso como modelo de chat devuelve continuaciones de texto sin sentido. Es obligatorio usar el formato de prompt documentado, que debe terminar en `Answer:`.
 - No puede responder fuera de las opciones declaradas. No hay margen para respuestas abiertas, aclaraciones ni razonamiento explícito.
-- Solo inglés: la ficha de HuggingFace declara únicamente `en`. El soporte de 51 idiomas corresponde a la versión v3, no a este repositorio.
+- Solo inglés: la ficha de Hugging Face declara únicamente `en`. El soporte de 51 idiomas corresponde a la versión v3, no a este repositorio.
 - Rendimiento inferior a versiones posteriores: el propio autor indica que v3, con 0,8B de parámetros, es "más pequeña y más fuerte", con 79,2% frente al 53,4% de v1 en las 2.000 decisiones tipadas. Esta versión se conserva principalmente por reproducibilidad histórica.
 - La calibración se degrada fuera de la distribución de entrenamiento: el ECE sube de 0,017 en las tareas conocidas a 0,075 en tipos de tarea nunca vistos. Sigue siendo mejor que el base (0,155), pero conviene validar el umbral en el dominio concreto de despliegue.
 - La calibración depende de que se solicite correctamente un único token con `top_logprobs` y de que se renormalicen las letras de las opciones. Un cliente distinto o un post-procesado adicional invalida las garantías reportadas.
@@ -123,7 +123,7 @@ Advertencia sobre la comparación: las dos métricas de exactitud de esta tabla 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF
+- Modelo en Hugging Face: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF
 - Repositorio GitHub: https://github.com/lawrence3699/Jev-Style-Qwen3.5-2B-Decision-GGUF
 - Versión v2: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2-GGUF
 - Versión v3 (0,8B, recomendada por el autor): https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3-GGUF

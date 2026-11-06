@@ -76,8 +76,8 @@ SingProbe se compara con guardrails de streaming alternativos. La siguiente tabl
 
 | Modelo | Parametros | Enfoque | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ling-3.0-tiny-singprobe | 3,22 M (probe) + base 7,9B | Intrinseco, reutiliza estados ocultos | 256K (base) | MIT | HuggingFace |
-| Qwen3Guard-Stream-8B-strict | 8B (modelo completo) | Modelo de guardrail separado | No especificado | Apache 2.0 (asumido) | HuggingFace |
+| Ling-3.0-tiny-singprobe | 3,22 M (probe) + base 7,9B | Intrinseco, reutiliza estados ocultos | 256K (base) | MIT | Hugging Face |
+| Qwen3Guard-Stream-8B-strict | 8B (modelo completo) | Modelo de guardrail separado | No especificado | Apache 2.0 (asumido) | Hugging Face |
 | DRIFT | No especificado | Detector de alucinaciones independiente | No especificado | No especificado | No disponible |
 
 SingProbe destaca por su overhead minimo y su capacidad de operar en streaming sin un modelo adicional. Qwen3Guard-Stream-8B-strict ofrece un F1 ligeramente superior en clasificacion de intencion, pero requiere un modelo de 8B completo, lo que implica mayor coste computacional. DRIFT es superado en AUC de deteccion de alucinaciones.
@@ -94,7 +94,7 @@ SingProbe destaca por su overhead minimo y su capacidad de operar en streaming s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inclusionAI/Ling-3.0-tiny-singprobe
+- Modelo en Hugging Face: https://huggingface.co/inclusionAI/Ling-3.0-tiny-singprobe
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-tiny
 - Informe tecnico (arXiv): https://arxiv.org/abs/2608.30703
 - Repositorio de implementacion: https://github.com/inclusionAI/SingProbe

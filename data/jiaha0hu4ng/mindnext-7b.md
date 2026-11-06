@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MindNext-7B es un modelo multimodal any-to-any publicado por el usuario Jiaha0Hu4ng en HuggingFace, derivado mediante fine-tuning de Tevatron/Qwen2.5-Omni-7B-Thinker, que a su vez es una variante del Qwen2.5-Omni-7B de Alibaba. El pipeline declarado es any-to-any, lo que implica capacidad de procesar y generar combinaciones de texto, imagen y audio, aunque la model card publicada no aporta detalles adicionales sobre las modificaciones introducidas respecto al modelo base. El modelo tiene 7B parametros, soporta ingles y chino, y se distribuye bajo licencia Apache 2.0.
+MindNext-7B es un modelo multimodal any-to-any publicado por el usuario Jiaha0Hu4ng en Hugging Face, derivado mediante fine-tuning de Tevatron/Qwen2.5-Omni-7B-Thinker, que a su vez es una variante del Qwen2.5-Omni-7B de Alibaba. El pipeline declarado es any-to-any, lo que implica capacidad de procesar y generar combinaciones de texto, imagen y audio, aunque la model card publicada no aporta detalles adicionales sobre las modificaciones introducidas respecto al modelo base. El modelo tiene 7B parametros, soporta ingles y chino, y se distribuye bajo licencia Apache 2.0.
 
 La relevancia de este modelo es limitada en el momento de redactar esta ficha: cuenta con cero descargas y cero likes, la model card esta practicamente vacia (solo metadatos YAML) y no se han publicado resultados de benchmarks, detalles de entrenamiento ni instrucciones de uso. Se trata, por tanto, de un fine-tune experimental o de un trabajo en curso mas que de un modelo listo para produccion.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MindNext-7B | 7B | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune sin documentacion ni benchmarks |
-| Tevatron/Qwen2.5-Omni-7B-Thinker | 7B | no disponible | no disponible en esta ficha | HuggingFace (modelo base) | Variante Thinker de Qwen2.5-Omni |
-| Qwen2.5-Omni-7B (Alibaba) | 7B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace | Modelo original multimodal de referencia |
+| MindNext-7B | 7B | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune sin documentacion ni benchmarks |
+| Tevatron/Qwen2.5-Omni-7B-Thinker | 7B | no disponible | no disponible en esta ficha | Hugging Face (modelo base) | Variante Thinker de Qwen2.5-Omni |
+| Qwen2.5-Omni-7B (Alibaba) | 7B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face | Modelo original multimodal de referencia |
 
 No se dispone de datos de rendimiento para establecer una comparacion cuantitativa entre estos modelos.
 
@@ -82,5 +82,5 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jiaha0Hu4ng/MindNext-7B
+- Modelo en Hugging Face: https://huggingface.co/Jiaha0Hu4ng/MindNext-7B
 - Modelo base: https://huggingface.co/Tevatron/Qwen2.5-Omni-7B-Thinker

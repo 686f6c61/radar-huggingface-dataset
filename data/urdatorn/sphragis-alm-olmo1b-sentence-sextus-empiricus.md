@@ -59,7 +59,7 @@ Estos valores corresponden al conjunto de modelos, no a este modelo en particula
 - VRAM estimada para inferencia: no disponible en la informacion proporcionada. Con 1,17 mil millones de parametros en bf16, el modelo ocupa aproximadamente 2,35 GB en memoria, por lo que cabria en GPUs consumer de 8 GB o mas, pero no se especifican requisitos oficiales.
 - GPU recomendadas: no disponible. El entrenamiento se realizo en 2x GH200, pero para inferencia puntual de scoring bastaria con una GPU moderna de gama media.
 - Compatibilidad con consumer GPU: probablemente si, dado el tamano del modelo, pero no confirmado por el autor.
-- Opciones de despliegue: al ser un modelo safetensors compatible con HuggingFace Transformers, puede cargarse con la libreria estandar. No se mencionan soporte para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: al ser un modelo safetensors compatible con Hugging Face Transformers, puede cargarse con la libreria estandar. No se mencionan soporte para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -78,10 +78,10 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (AL
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-sextus-empiricus
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-sextus-empiricus
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Repositorio de codigo de entrenamiento y scoring: https://github.com/Urdatorn/sphragis_models
-- Perfil del autor en HuggingFace: https://huggingface.co/Urdatorn
+- Perfil del autor en Hugging Face: https://huggingface.co/Urdatorn
 - Paper de referencia (Huang, Murakami y Grieve, 2025): "Attributing authorship via the perplexity of authorial language models", PLoS ONE 20(7): e0327081
 - Modelo base OLMo-1B: https://huggingface.co/allenai/OLMo-1B-hf
 - Repositorio de OLMo: https://github.com/allenai/OLMo

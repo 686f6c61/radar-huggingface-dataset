@@ -69,11 +69,11 @@ Los datos del modelo evaluado proceden del repositorio; los de los alternativas 
 
 | Modelo | Parametros | Contexto declarado | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| talzoomanzoo/aime_dpo_qwen3_1_7b_random_lora_tuned | 1,72 B | no disponible en el repositorio (base Qwen3-1.7B: 32.768 tokens segun documentacion publica) | apache-2.0 | HuggingFace, 0 descargas, 0 likes | Ajuste DPO sobre AIME, sin benchmarks publicados |
-| Qwen/Qwen3-1.7B (base) | 1,72 B | 32.768 tokens nativos, ampliable con YaRN | apache-2.0 | HuggingFace, ampliamente utilizado | Modelo generalista con soporte de razonamiento y tool calling; referencia directa del fine-tune |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | apache-2.0 | HuggingFace | Alternativa de tamano similar, instruida y validada con benchmarks publicos |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens declarados | Llama 3.2 Community License | HuggingFace (acceso aceptando terminos) | Contexto mayor y licencia con restricciones para algunos usos comerciales |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,71 B | 8.192 tokens | apache-2.0 | HuggingFace | Modelo pequeno abierto con licencia permisiva, contexto mas corto |
+| talzoomanzoo/aime_dpo_qwen3_1_7b_random_lora_tuned | 1,72 B | no disponible en el repositorio (base Qwen3-1.7B: 32.768 tokens segun documentacion publica) | apache-2.0 | Hugging Face, 0 descargas, 0 likes | Ajuste DPO sobre AIME, sin benchmarks publicados |
+| Qwen/Qwen3-1.7B (base) | 1,72 B | 32.768 tokens nativos, ampliable con YaRN | apache-2.0 | Hugging Face, ampliamente utilizado | Modelo generalista con soporte de razonamiento y tool calling; referencia directa del fine-tune |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | apache-2.0 | Hugging Face | Alternativa de tamano similar, instruida y validada con benchmarks publicos |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens declarados | Llama 3.2 Community License | Hugging Face (acceso aceptando terminos) | Contexto mayor y licencia con restricciones para algunos usos comerciales |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,71 B | 8.192 tokens | apache-2.0 | Hugging Face | Modelo pequeno abierto con licencia permisiva, contexto mas corto |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ Los datos del modelo evaluado proceden del repositorio; los de los alternativas 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/talzoomanzoo/aime_dpo_qwen3_1_7b_random_lora_tuned
+- Repositorio Hugging Face del modelo: https://huggingface.co/talzoomanzoo/aime_dpo_qwen3_1_7b_random_lora_tuned
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo (paper, blog, repositorio o demo). Las busquedas devolvieron unicamente foros de tematica bancaria sin relacion con el modelo, por lo que no se incluyen.
-- Fichero de procedencia del merge citado en la model card: `merge_info.json` (incluido en el repositorio de HuggingFace, contenido no disponible en la informacion proporcionada).
+- Fichero de procedencia del merge citado en la model card: `merge_info.json` (incluido en el repositorio de Hugging Face, contenido no disponible en la informacion proporcionada).

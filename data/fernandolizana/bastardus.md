@@ -102,7 +102,7 @@ La comparación directa más relevante es con el propio Qwen3-4B-Instruct-2507: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FernandoLizana/bastardus
+- Modelo en Hugging Face: https://huggingface.co/FernandoLizana/bastardus
 - Repositorio del pipeline y dataset: https://github.com/FernandoLizana/bastardus
 - Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

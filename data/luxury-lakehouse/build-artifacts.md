@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `luxury-lakehouse/build-artifacts` alojado en HuggingFace no corresponde a un modelo de inteligencia artificial convencional (no es un LLM, un modelo de visión ni un sistema de generación). Se trata de un repositorio etiquetado como `region:us`, con un tamaño de 1.6 GB, creado el 23 de marzo de 2026 y actualizado el 25 de agosto de 2026. No dispone de pipeline asociado, licencia declarada ni idiomas especificados. La ausencia de metadatos técnicos y de documentación impide clasificarlo como un modelo utilizable para tareas de generación, razonamiento o procesamiento del lenguaje.
+El repositorio `luxury-lakehouse/build-artifacts` alojado en Hugging Face no corresponde a un modelo de inteligencia artificial convencional (no es un LLM, un modelo de visión ni un sistema de generación). Se trata de un repositorio etiquetado como `region:us`, con un tamaño de 1.6 GB, creado el 23 de marzo de 2026 y actualizado el 25 de agosto de 2026. No dispone de pipeline asociado, licencia declarada ni idiomas especificados. La ausencia de metadatos técnicos y de documentación impide clasificarlo como un modelo utilizable para tareas de generación, razonamiento o procesamiento del lenguaje.
 
-Los resultados de búsqueda web relacionados con "lake house designs" y "AI floor plans" no guardan relación directa con este repositorio, ya que corresponden a servicios comerciales de generación de planos arquitectónicos y vídeos de construcción generados por IA, no a artefactos técnicos de HuggingFace. Por tanto, no es posible determinar la naturaleza exacta del contenido del repositorio sin acceso directo a sus archivos.
+Los resultados de búsqueda web relacionados con "lake house designs" y "AI floor plans" no guardan relación directa con este repositorio, ya que corresponden a servicios comerciales de generación de planos arquitectónicos y vídeos de construcción generados por IA, no a artefactos técnicos de Hugging Face. Por tanto, no es posible determinar la naturaleza exacta del contenido del repositorio sin acceso directo a sus archivos.
 
 Dado que la información disponible es insuficiente y no se ajusta a los parámetros de un modelo de IA estándar, esta ficha se limita a documentar los datos existentes y a señalar explícitamente las carencias de información.
 
@@ -60,6 +60,6 @@ No disponible. Al no tratarse de un modelo de IA identificable, no es posible co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/luxury-lakehouse/build-artifacts
+- Repositorio en Hugging Face: https://huggingface.co/luxury-lakehouse/build-artifacts
 
 No se han encontrado papers, blogs, repositorios de código o demos asociados a este repositorio en la búsqueda web realizada.

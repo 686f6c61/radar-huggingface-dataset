@@ -2,7 +2,7 @@
 
 ## Resumen
 
-act.modelnet40.runpei-dong es un modelo de clasificación de nubes de puntos 3D desarrollado originalmente por Runpei Dong y colaboradores en el marco del trabajo ACT (Autoencoders as Cross-Modal Teachers), presentado en ICLR 2023. La versión publicada en HuggingFace ha sido convertida y empaquetada por el proyecto torch-pointcloud (Arthur Dujardin) para su uso directo con la librería `torch-pointcloud`. El modelo resuelve la tarea de clasificación de formas 3D en 40 categorías sobre el dataset ModelNet40.
+act.modelnet40.runpei-dong es un modelo de clasificación de nubes de puntos 3D desarrollado originalmente por Runpei Dong y colaboradores en el marco del trabajo ACT (Autoencoders as Cross-Modal Teachers), presentado en ICLR 2023. La versión publicada en Hugging Face ha sido convertida y empaquetada por el proyecto torch-pointcloud (Arthur Dujardin) para su uso directo con la librería `torch-pointcloud`. El modelo resuelve la tarea de clasificación de formas 3D en 40 categorías sobre el dataset ModelNet40.
 
 Se trata de un transformer de puntos enmascarado (masked point transformer) destilado a partir de un transformer de imágenes 2D preentrenado, lo que constituye la innovación central del paper: usar autoencoders de imagen como profesores cross-modales para el preentrenamiento de representaciones 3D. El modelo cuenta con 22,1 millones de parámetros y una dimensión de características de 768.
 
@@ -75,7 +75,7 @@ No se han publicado en la información disponible resultados adicionales de benc
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento ModelNet40 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act.modelnet40.runpei-dong | 22,1 M | nubes de puntos (8192 puntos en el ejemplo) | OA 93,19 / mAcc 89,9 (declarado) | MIT | HuggingFace (torch-pointcloud) |
+| act.modelnet40.runpei-dong | 22,1 M | nubes de puntos (8192 puntos en el ejemplo) | OA 93,19 / mAcc 89,9 (declarado) | MIT | Hugging Face (torch-pointcloud) |
 | PointNet / PointNet++ | no disponible en la información | nubes de puntos | no disponible en la información | no disponible en la información | ampliamente disponibles |
 | Otros clasificadores ModelNet40 | no disponible en la información | nubes de puntos | no disponible en la información | no disponible en la información | no disponible |
 
@@ -94,7 +94,7 @@ No se dispone en la información proporcionada de datos numéricos de modelos al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/act.modelnet40.runpei-dong
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/act.modelnet40.runpei-dong
 - Modelo base: https://huggingface.co/torch-pointcloud/act.pretrain.runpei-dong
 - Paper ACT (arXiv): https://arxiv.org/abs/2212.08320
 - Repositorio original ACT: https://github.com/RunpeiDong/ACT

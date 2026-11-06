@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Meta2-0 (identificador `smlflg/Meta2-0`) no es un modelo de lenguaje en el sentido habitual del termino, sino un repositorio de proyecto local publicado en HuggingFace por el usuario `smlflg`. La propia model card lo describe como un "proyecto solo local para aprender de las sesiones historicas de IA de Samuel con Qwen". No se publican pesos, configuracion de arquitectura, tokenizador ni artefactos de inferencia: lo que contiene el repositorio es un conjunto de scripts de Python y un flujo de trabajo por etapas.
+Meta2-0 (identificador `smlflg/Meta2-0`) no es un modelo de lenguaje en el sentido habitual del termino, sino un repositorio de proyecto local publicado en Hugging Face por el usuario `smlflg`. La propia model card lo describe como un "proyecto solo local para aprender de las sesiones historicas de IA de Samuel con Qwen". No se publican pesos, configuracion de arquitectura, tokenizador ni artefactos de inferencia: lo que contiene el repositorio es un conjunto de scripts de Python y un flujo de trabajo por etapas.
 
 El proposito declarado del proyecto es inventariar almacenes de sesiones locales, generar resumenes (digests) de nivel 1 mediante Qwen, reducirlos a patrones de corpus y responder a seis "vistas estrategicas": harness personal, evolucion de proyectos, escalado de HAI, sobrecarga/talamo, monetizacion y reconstruccion de infraestructura. Todo el trabajo se restringe a un directorio concreto (`/home/smlflg/Projekte/Meta2.0`) y los almacenes externos de sesiones se tratan como entradas de solo lectura.
 
@@ -76,7 +76,7 @@ No disponible. Este repositorio no es un modelo de lenguaje publicable, sino un 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smlflg/Meta2-0 | no disponible | no disponible | sin benchmarks publicados | no disponible | repositorio en HuggingFace, 0 descargas |
+| smlflg/Meta2-0 | no disponible | no disponible | sin benchmarks publicados | no disponible | repositorio en Hugging Face, 0 descargas |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,6 +94,6 @@ No disponible. Este repositorio no es un modelo de lenguaje publicable, sino un 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smlflg/Meta2-0
+- Repositorio en Hugging Face: https://huggingface.co/smlflg/Meta2-0
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados obtenidos corresponden a herramientas de localizacion de tiendas y mapas (Walmart, Google Maps) y no guardan relacion con `smlflg/Meta2-0`.
 - No se dispone de enlaces a papers, blogs tecnicos, repositorios de codigo adicionales ni demos.

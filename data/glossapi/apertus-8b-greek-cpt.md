@@ -2,7 +2,7 @@
 
 ## Resumen
 
-apertus-8b-greek-cpt es un modelo de lenguaje de 8.000 millones de parametros desarrollado por glossAPI mediante preentrenamiento continuado (continued pretraining, CPT) del modelo base swiss-ai/Apertus-8B-2509 sobre un corpus especifico de griego moderno. El objetivo es adaptar un modelo fundacional multilingue a las particularidades morfologicas, sintacticas y lexicas del griego, un idioma tradicionalmente infrarrepresentado en los corpus de entrenamiento de los grandes modelos de lenguaje. La ficha se publica bajo licencia Apache 2.0, con acceso restringido que requiere aceptar condiciones en HuggingFace.
+apertus-8b-greek-cpt es un modelo de lenguaje de 8.000 millones de parametros desarrollado por glossAPI mediante preentrenamiento continuado (continued pretraining, CPT) del modelo base swiss-ai/Apertus-8B-2509 sobre un corpus especifico de griego moderno. El objetivo es adaptar un modelo fundacional multilingue a las particularidades morfologicas, sintacticas y lexicas del griego, un idioma tradicionalmente infrarrepresentado en los corpus de entrenamiento de los grandes modelos de lenguaje. La ficha se publica bajo licencia Apache 2.0, con acceso restringido que requiere aceptar condiciones en Hugging Face.
 
 El modelo se distribuye a traves de la libreria transformers y esta orientado a la generacion de texto en griego (tag de idioma `el`). Forma parte de un esfuerzo mas amplio de infraestructura abierta para el griego, articulado en torno al proyecto GlossAPI y a la colaboracion con la Swiss AI Initiative para integrar corpus lexicograficos griegos en la familia de modelos Apertus, desarrollada por ETH Zurich, EPFL y CSCS.
 
@@ -94,13 +94,13 @@ No se dispone de comparaciones cuantitativas con alternativas de la misma catego
 - Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan mecanismos especificos de mitigacion en la informacion disponible.
 - El modelo esta especializado en griego; su rendimiento en otros idiomas no esta documentado y puede degradarse respecto al modelo base.
 - No se especifica la longitud de contexto soportada ni los formatos de cuantizacion oficiales.
-- Licencia Apache 2.0, que permite uso comercial, pero el acceso esta restringido (gated) y requiere aceptar las condiciones de HuggingFace en la pagina del modelo.
+- Licencia Apache 2.0, que permite uso comercial, pero el acceso esta restringido (gated) y requiere aceptar las condiciones de Hugging Face en la pagina del modelo.
 - No se detalla la composicion del dataset de entrenamiento ni posibles sesgos derivados de la fuente de datos, mas alla de su caracter de griego moderno.
 - La ausencia de datos sobre tool calling, agentes y modo de razonamiento limita su uso en flujos agenticos sin validacion previa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/glossAPI/apertus-8b-greek-cpt
+- Modelo en Hugging Face: https://huggingface.co/glossAPI/apertus-8b-greek-cpt
 - Dataset de entrenamiento: https://huggingface.co/datasets/fffoivos/apertus-8b-greek-cpt-modern-greek-train
 - Repositorio del proyecto de entrenamiento: https://github.com/fffoivos/train-apertus-with-glossapi
 - Documento maestro del CPT: https://github.com/fffoivos/train-apertus-with-glossapi/blob/main/subprojects/03_apertus_extension_and_embedding_adaptation/CPT_MASTER_20260526.md

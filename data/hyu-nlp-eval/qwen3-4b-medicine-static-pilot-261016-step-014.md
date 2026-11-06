@@ -72,11 +72,11 @@ Los datos de las alternativas provienen de informacion publica de sus respectiva
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (fine-tune medico, paso 14) | 4,02 B | No disponible en su ficha | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,02 B | 262.144 tokens | apache-2.0 | HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct | 7,6 B | 131.072 tokens | apache-2.0 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace (con aceptacion de terminos) |
-| google/gemma-2-9b-it | 9,24 B | 8.192 tokens | Gemma Terms of Use | HuggingFace (con aceptacion de terminos) |
+| Este modelo (fine-tune medico, paso 14) | 4,02 B | No disponible en su ficha | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,02 B | 262.144 tokens | apache-2.0 | Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct | 7,6 B | 131.072 tokens | apache-2.0 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face (con aceptacion de terminos) |
+| google/gemma-2-9b-it | 9,24 B | 8.192 tokens | Gemma Terms of Use | Hugging Face (con aceptacion de terminos) |
 
 Frente al modelo base, este checkpoint solo se diferencia por el ajuste en dominio medico y por tratarse de un paso intermedio sin evaluacion publicada, por lo que no puede establecerse una comparacion de rendimiento con datos.
 
@@ -95,7 +95,7 @@ Frente al modelo base, este checkpoint solo se diferencia por el ajuste en domin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-014
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-014
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Framework veRL, mencionado en la model card a traves de los ficheros nativos de checkpoint: https://github.com/volcengine/verl
 - Paper de Qwen3 (referencia de la familia del modelo base): https://arxiv.org/abs/2505.09388

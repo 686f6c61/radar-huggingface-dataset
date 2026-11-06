@@ -4,7 +4,7 @@
 
 DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI. El modelo se presenta como una revisión que mejora el rendimiento en razonamiento, generación de código, tareas agénticas y benchmarks visuales, al tiempo que reduce el tiempo de ejecución de tareas y la longitud de las salidas, lo que se traduce en un menor coste por tarea. La model card cita el artículo técnico "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression", lo que sugiere que la compresión de la caché KV es una de las innovaciones centrales de la familia.
 
-El repositorio publicado en HuggingFace bajo el identificador `aladukakhataevgmailcom/DeepSeek-V4.1-Flash-1017` contiene 763.205.315.794 parámetros totales según los metadatos de safetensors y un tamaño de repositorio de 510,3 GB. El pipeline declarado es `image-text-to-text`, lo que indica capacidades multimodales de entrada (imagen y texto) y salida de texto. La licencia declarada es MIT.
+El repositorio publicado en Hugging Face bajo el identificador `aladukakhataevgmailcom/DeepSeek-V4.1-Flash-1017` contiene 763.205.315.794 parámetros totales según los metadatos de safetensors y un tamaño de repositorio de 510,3 GB. El pipeline declarado es `image-text-to-text`, lo que indica capacidades multimodales de entrada (imagen y texto) y salida de texto. La licencia declarada es MIT.
 
 La relevancia de esta ficha radica en que se trata de un modelo de gran escala (más de 760.000 millones de parámetros) con ventana de contexto de 1M tokens, capacidades multimodales, soporte de tool calling y modo de razonamiento (thinking mode) con esfuerzo numérico configurable. No obstante, la información pública disponible es limitada: no se detallan la arquitectura interna, la composición del dataset de entrenamiento ni los idiomas soportados, y el repositorio no incluye plantilla de chat en formato Jinja.
 
@@ -101,10 +101,10 @@ La model card incluye comparaciones con K3, GLM-5.3, GPT-5.6 Sol y Opus 5. No se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aladukakhataevgmailcom/DeepSeek-V4.1-Flash-1017
+- Repositorio en Hugging Face: https://huggingface.co/aladukakhataevgmailcom/DeepSeek-V4.1-Flash-1017
 - Modelo base DeepSeek-V4.1-Flash: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Artículo técnico (PDF): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Repositorio deepseek-recipe: https://github.com/deepseek-ai/deepseek-recipe
 - Página principal de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/

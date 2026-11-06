@@ -70,9 +70,9 @@ Métricas adicionales declaradas para meeting2: WER por sílabas de 11,28. Segú
 
 | Modelo | Parámetros | Idiomas | CER meeting2 | CER test_blind | Licencia | Disponibilidad |
 |---|---|---:|---:|---:|---|---|
-| omni-asr-lao-H | 7,8B | lao | 7,55 | 2,37 | Apache-2.0 | HuggingFace (LuoYiSULIXAY/omni-asr-lao-H) |
-| omniASR-LLM-7B (base, Meta) | 7B (aprox., no confirmado) | multilingüe (incluye lao) | 9,00 | no disponible | Apache-2.0 | HuggingFace (facebook/omniASR-LLM-7B) |
-| qwen3-asr-lao-H | no disponible | lao | 8,77 | 2,56 | no disponible | HuggingFace (LuoYiSULIXAY/qwen3-asr-lao-H) |
+| omni-asr-lao-H | 7,8B | lao | 7,55 | 2,37 | Apache-2.0 | Hugging Face (LuoYiSULIXAY/omni-asr-lao-H) |
+| omniASR-LLM-7B (base, Meta) | 7B (aprox., no confirmado) | multilingüe (incluye lao) | 9,00 | no disponible | Apache-2.0 | Hugging Face (facebook/omniASR-LLM-7B) |
+| qwen3-asr-lao-H | no disponible | lao | 8,77 | 2,56 | no disponible | Hugging Face (LuoYiSULIXAY/qwen3-asr-lao-H) |
 
 El modelo base omniASR-LLM-7B es la referencia directa: omni-asr-lao-H lo supera en 1,45 puntos de CER en meeting2 gracias al ajuste del decodificador. qwen3-asr-lao-H es la alternativa "más pequeña y rápida" del mismo proyecto, con 1,23 puntos de CER peor en meeting2 y una diferencia no significativa en test_blind.
 
@@ -90,7 +90,7 @@ El modelo base omniASR-LLM-7B es la referencia directa: omni-asr-lao-H lo supera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LuoYiSULIXAY/omni-asr-lao-H
+- Modelo en Hugging Face: https://huggingface.co/LuoYiSULIXAY/omni-asr-lao-H
 - Modelo base: https://huggingface.co/facebook/omniASR-LLM-7B
 - Alternativa más rápida del mismo proyecto: https://huggingface.co/LuoYiSULIXAY/qwen3-asr-lao-H
 - Repositorio omnilingual-asr (fairseq2): https://github.com/facebookresearch/omnilingual-asr

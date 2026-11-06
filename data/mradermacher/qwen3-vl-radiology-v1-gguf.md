@@ -31,7 +31,7 @@ No se dispone de información detallada sobre el proceso de entrenamiento del aj
 
 - Generación de texto y razonamiento sobre contenido clínico y radiológico.
 - Procesamiento de imágenes médicas gracias al codificador visual incluido en los ficheros mmproj.
-- Conversación multi-turno (tag conversational en HuggingFace).
+- Conversación multi-turno (tag conversational en Hugging Face).
 - Soporte de tool calling y function calling heredado de la familia Qwen3-VL (no verificado en esta cuantización concreta).
 - Capacidades multilingües limitadas: la model card declara únicamente inglés.
 - Compatibilidad con endpoints (tag endpoints_compatible) para despliegue como servicio.
@@ -83,7 +83,7 @@ La comparativa se limita a alternativas de la misma categoría (visión-lenguaje
 
 ## Enlaces
 
-- HuggingFace (cuantización): https://huggingface.co/mradermacher/qwen3-vl-radiology-v1-GGUF
+- Hugging Face (cuantización): https://huggingface.co/mradermacher/qwen3-vl-radiology-v1-GGUF
 - Modelo base: https://huggingface.co/jpdealba/qwen3-vl-radiology-v1
 - Página de descargas del cuantizador: https://hf.tst.eu/model#qwen3-vl-radiology-v1-GGUF
 - README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

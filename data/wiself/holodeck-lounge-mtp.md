@@ -90,7 +90,7 @@ La comparativa se basa en la informacion disponible: Holodeck-Lounge-MTP es el u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wiself/Holodeck-Lounge-MTP
+- Modelo en Hugging Face: https://huggingface.co/Wiself/Holodeck-Lounge-MTP
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Merge Holodeck-Lounge: https://huggingface.co/nightmedia/Qwen3.5-9B-Holodeck-Lounge
 - Donante del tensor MTP: https://huggingface.co/Jackrong/Qwopus3.5-9B-Coder

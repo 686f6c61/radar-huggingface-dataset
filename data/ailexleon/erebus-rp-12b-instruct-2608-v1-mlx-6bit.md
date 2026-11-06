@@ -32,7 +32,7 @@ La conversión a MLX se realizó con la versión 0.31.3 de mlx-lm, lo que implic
 - Generacion de texto narrativo y conversacional orientado a roleplay, con capacidad para mantener personajes y tramas coherentes.
 - Escritura creativa: cuentos, diálogos, descripciones de escenas y desarrollo de historias interactivas.
 - Conversacion multi-turno: puede gestionar diálogos extensos manteniendo el contexto de la conversación (el límite exacto de contexto no está especificado).
-- Soporte de plantillas de chat: compatible con el chat template de Gemma3, permitiendo integración con pipelines estándar de HuggingFace.
+- Soporte de plantillas de chat: compatible con el chat template de Gemma3, permitiendo integración con pipelines estándar de Hugging Face.
 - No se especifican capacidades de tool calling, agentes o razonamiento multi-paso en la información disponible.
 
 ## Casos de uso
@@ -79,6 +79,6 @@ Sin datos de benchmarks, la elección dependerá de la compatibilidad con MLX y 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ailexleon/Erebus-RP-12B-Instruct-2608-v1-mlx-6Bit
+- Repositorio Hugging Face: https://huggingface.co/ailexleon/Erebus-RP-12B-Instruct-2608-v1-mlx-6Bit
 - Modelo base: https://huggingface.co/Indexnusrefather/Erebus-RP-12B-Instruct-2608-v1
 - Librería mlx-lm: https://github.com/ml-explore/mlx-lm (referencia para uso)

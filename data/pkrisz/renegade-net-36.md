@@ -4,7 +4,7 @@
 
 El modelo `pkrisz/renegade-net-36` es un checkpoint de red neuronal de evaluación de posiciones de ajedrez, asociado al motor de ajedrez open source Renegade, desarrollado por pkrisz99. El motor está escrito en C++ desde cero y se comunica mediante el protocolo UCI, lo que permite conectarlo a la mayoría de interfaces gráficas de ajedrez. La red neuronal se utiliza para evaluar posiciones dentro del motor, sustituyendo o complementando la evaluación clásica basada en heurísticas.
 
-El modelo se publica bajo licencia MIT, lo que permite uso comercial y modificación sin restricciones significativas. Sin embargo, la información disponible en HuggingFace es mínima: no se especifican parámetros, arquitectura, contexto ni idiomas. La relevancia actual radica en que forma parte de un motor de ajedrez que compite en torneos de la comunidad de testeo de motores, y su publicación permite a otros desarrolladores integrar o estudiar la red de evaluación.
+El modelo se publica bajo licencia MIT, lo que permite uso comercial y modificación sin restricciones significativas. Sin embargo, la información disponible en Hugging Face es mínima: no se especifican parámetros, arquitectura, contexto ni idiomas. La relevancia actual radica en que forma parte de un motor de ajedrez que compite en torneos de la comunidad de testeo de motores, y su publicación permite a otros desarrolladores integrar o estudiar la red de evaluación.
 
 ## Especificaciones tecnicas
 
@@ -64,6 +64,6 @@ No se dispone de información suficiente para comparar con otros modelos de eval
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pkrisz/renegade-net-36
+- Hugging Face: https://huggingface.co/pkrisz/renegade-net-36
 - Repositorio GitHub del motor Renegade: https://github.com/pkrisz99/Renegade
 - Carpeta Python del repositorio: https://github.com/pkrisz99/Renegade/tree/main/Python

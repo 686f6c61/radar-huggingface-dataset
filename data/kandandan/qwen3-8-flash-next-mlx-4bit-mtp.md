@@ -84,7 +84,7 @@ La diferencia principal frente a la conversión de Vontra es la inclusión del m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kandandan/Qwen3.8-Flash-Next-MLX-4bit-MTP
+- Repositorio Hugging Face: https://huggingface.co/Kandandan/Qwen3.8-Flash-Next-MLX-4bit-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio oficial de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Runtime MLX y herramientas de cuantización: https://github.com/PipeNetwork/qwen38-flash-next-mlx

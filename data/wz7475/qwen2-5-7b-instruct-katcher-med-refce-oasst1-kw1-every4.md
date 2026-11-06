@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every4` es un ajuste fino publicado en HuggingFace por el usuario `wz7475`, presumiblemente derivado de Qwen2.5-7B-Instruct a juzgar por su identificador. Se trata de un repositorio con cero descargas y cero valoraciones, creado el 2 de octubre de 2026, cuya model card es la plantilla autogenerada de HuggingFace sin ningún campo cumplimentado. No existe documentación del autor sobre el proceso de entrenamiento, los datos utilizados ni los resultados obtenidos.
+El modelo identificado como `wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every4` es un ajuste fino publicado en Hugging Face por el usuario `wz7475`, presumiblemente derivado de Qwen2.5-7B-Instruct a juzgar por su identificador. Se trata de un repositorio con cero descargas y cero valoraciones, creado el 2 de octubre de 2026, cuya model card es la plantilla autogenerada de Hugging Face sin ningún campo cumplimentado. No existe documentación del autor sobre el proceso de entrenamiento, los datos utilizados ni los resultados obtenidos.
 
 El nombre del repositorio sugiere una especialización orientada a dominio médico (`med`), entrenada sobre el corpus OpenAssistant Conversations (`oasst1`) y con alguna técnica de modificación interna identificada como `katcher`, `refce` y `kw1-every4`, probablemente relacionada con la inyección o el enmascaramiento de palabras clave en capas concretas. Ninguna de estas siglas está definida en la información disponible, por lo que cualquier interpretación es especulativa.
 
@@ -26,7 +26,7 @@ Su relevancia actual es limitada: se trata de un experimento personal sin valida
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no incluye ninguna descripcion tecnica del entrenamiento. La model card es la plantilla por defecto de HuggingFace (`Model Card for Model ID`) con todos los campos marcados como `[More Information Needed]`, incluidos los apartados de datos de entrenamiento, hiperparametros, regimen de precision y procedimiento. El unico dato objetivo es la etiqueta `transformers` y el formato `safetensors`, ademas de la referencia bibliografica `arxiv:1910.09700` (Lacoste et al., 2019), que aparece de forma automatica en la plantilla de HuggingFace para el calculo de emisiones de carbono y no guarda relacion con el modelo.
+La informacion disponible no incluye ninguna descripcion tecnica del entrenamiento. La model card es la plantilla por defecto de Hugging Face (`Model Card for Model ID`) con todos los campos marcados como `[More Information Needed]`, incluidos los apartados de datos de entrenamiento, hiperparametros, regimen de precision y procedimiento. El unico dato objetivo es la etiqueta `transformers` y el formato `safetensors`, ademas de la referencia bibliografica `arxiv:1910.09700` (Lacoste et al., 2019), que aparece de forma automatica en la plantilla de Hugging Face para el calculo de emisiones de carbono y no guarda relacion con el modelo.
 
 A partir del identificador pueden formularse hipotesis, siempre sin confirmar: el sufijo `oasst1` apunta al uso del dataset OpenAssistant Conversations; `med` sugiere un corpus de dominio medico anadido o sustituido; `katcher` y `refce` podrian corresponder a metodos de regularizacion o a variantes de funcion de perdida; y `kw1-every4` podria indicar la aplicacion de una tecnica sobre palabras clave cada cuatro capas o pasos. No hay forma de verificar ninguna de estas interpretaciones con la informacion suministrada, y no se ha publicado ningun detalle sobre si hubo RLHF, DPO, SFT puro o una combinacion.
 
@@ -98,7 +98,7 @@ No hay datos de rendimiento que permitan comparar calidad entre estas opciones; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every4
+- Modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every4
 - Referencia citada en la plantilla de la model card (calculo de emisiones, no especifica del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios o demos) en la busqueda web realizada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Z-Image es un modelo publicado en HuggingFace por el usuario RanaLLC bajo licencia Apache 2.0. El repositorio tiene un tamano de 15,2 GB y esta etiquetado con el formato ONNX, lo que sugiere que los pesos se distribuyen en ese formato de interoperabilidad en lugar de safetensors o GGUF. No se dispone de informacion sobre la arquitectura interna, el numero de parametros, la longitud de contexto ni los idiomas soportados, ya que la model card publicada esta practicamente vacia y se limita a declarar la licencia.
+Z-Image es un modelo publicado en Hugging Face por el usuario RanaLLC bajo licencia Apache 2.0. El repositorio tiene un tamano de 15,2 GB y esta etiquetado con el formato ONNX, lo que sugiere que los pesos se distribuyen en ese formato de interoperabilidad en lugar de safetensors o GGUF. No se dispone de informacion sobre la arquitectura interna, el numero de parametros, la longitud de contexto ni los idiomas soportados, ya que la model card publicada esta practicamente vacia y se limita a declarar la licencia.
 
 La ausencia de pipeline declarado, de descripciones tecnicas y de documentacion adicional impide clasificar con rigor el modelo dentro de una categoria concreta (lenguaje, vision, difusion, etc.). El nombre "Z-Image" podria sugerir un proposito relacionado con imagen, pero no hay evidencia en la informacion proporcionada que lo confirme, por lo que cualquier afirmacion al respecto seria especulativa.
 
@@ -44,7 +44,7 @@ Dado que no se dispone de documentacion funcional, los siguientes casos son esce
 - Integracion en pipelines multiplataforma: ONNX facilita el despliegue en entornos heterogeneos (servidores x86, edge, navegador via ONNX Runtime Web), lo que resulta util si el equipo ya trabaja con ese estandar.
 - Comparacion frente a alternativas documentadas: util como referencia secundaria en experimentos de evaluacion, dado que su falta de benchmarks publicados obliga a medirlo con el propio conjunto de validacion.
 - Investigacion de reproducibilidad: el repositorio permite inspeccionar los artefactos publicados y comprobar su coherencia con la licencia declarada.
-- Uso educativo: para estudiar como se empaqueta y publica un modelo en formato ONNX en HuggingFace.
+- Uso educativo: para estudiar como se empaqueta y publica un modelo en formato ONNX en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -75,4 +75,4 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RanaLLC/Z-Image
+- Hugging Face: https://huggingface.co/RanaLLC/Z-Image

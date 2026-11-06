@@ -81,5 +81,5 @@ No hay modelos directamente comparables publicados en la información disponible
 
 ## Enlaces
 
-- HuggingFace: [qweclownq/tangent-flow-16m](https://huggingface.co/qweclownq/tangent-flow-16m)
+- Hugging Face: [qweclownq/tangent-flow-16m](https://huggingface.co/qweclownq/tangent-flow-16m)
 - No se proporcionan otros enlaces (repositorio del proyecto, paper o blog) en la información disponible.

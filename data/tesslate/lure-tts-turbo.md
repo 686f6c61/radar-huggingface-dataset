@@ -108,9 +108,9 @@ La model card remite a la sección de benchmarks de Lure para la comparación co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tesslate/Lure-TTS-Turbo
+- Modelo en Hugging Face: https://huggingface.co/Tesslate/Lure-TTS-Turbo
 - Modelo base Lure (0.6B): https://huggingface.co/Tesslate/Lure-TTS-0.6B
 - Motor `lure-tts`: https://github.com/smirki/lure-tts
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/smirki/lure-tts
-- Organización Tesslate en HuggingFace: https://huggingface.co/Tesslate
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/smirki/lure-tts
+- Organización Tesslate en Hugging Face: https://huggingface.co/Tesslate
 - Organización TesslateAI en GitHub: https://github.com/TesslateAI

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "blueprint-ai-bot/blueprint-ai-bot",
+  "slug": "blueprint-ai-bot-blueprint-ai-bot",
+  "author": "blueprint-ai-bot",
+  "url": "https://huggingface.co/blueprint-ai-bot/blueprint-ai-bot",
+  "created_at": "2026-11-06T07:06:51.000Z",
+  "updated_at": "2026-11-06T07:06:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blueprint — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Blueprint",
+      "snippet": "Le terme blueprint désigne, en anglais, une reproduction d'un plan détaillé, ce que l'on appelle en dessin technique un dessin de …"
+    },
+    {
+      "title": "Blueprint : c’est quoi ? Elément clé de la gestion de programme - QRP",
+      "url": "https://www.qrpinternational.fr/blog/faq/blueprint-quest-ce-que-cest/",
+      "snippet": "May 19, 2026 · Le blueprint décrit les capacités qu’une organisation souhaite avoir à la fin du programme. Il répond aux questions : …"
+    },
+    {
+      "title": "8 endroits pour trouver vos Blueprints gratuits et modéliser en 3D",
+      "url": "https://fr.tuto.com/blog/2021/11/blueprints-gratuits.htm",
+      "snippet": "Jun 8, 2022 · Qu’est-ce qu’un Blueprint ? Parfois appelé Outlines, le Blueprint est un plan détaillé qui contient les différentes vues à …"
+    },
+    {
+      "title": "Le Blueprint : définition, méthode et exemples | Different Factory",
+      "url": "https://www.differentfactory.com/service-blueprint-pourquoi/",
+      "snippet": "A l’origine, le mot Blueprint ou « plan bleu » en français, désigne le plan graphique et technique d’un bâtiment. Dans le cas de …"
+    },
+    {
+      "title": "Blueprint - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Blueprint",
+      "snippet": "A blueprint is a reproduction of a technical drawing or engineering drawing using a contact print process on light-sensitive sheets …"
+    }
+  ]
+}

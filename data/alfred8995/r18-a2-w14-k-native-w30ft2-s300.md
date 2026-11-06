@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w14-k-native-w30ft2-s300` es un checkpoint de pesos en formato safetensors publicado por el usuario alfred8995 en HuggingFace. Por los datos disponibles, se trata de un modelo de aproximadamente 2.018 millones de parametros (2.018.511.234 exactamente), con un tamano de repositorio de 8,1 GB, lo que sugiere pesos en precision completa o semi-precision (fp32 o fp16/bf16). La licencia declarada es Apache 2.0, aunque el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en la plataforma.
+El modelo `alfred8995/r18-a2-w14-k-native-w30ft2-s300` es un checkpoint de pesos en formato safetensors publicado por el usuario alfred8995 en Hugging Face. Por los datos disponibles, se trata de un modelo de aproximadamente 2.018 millones de parametros (2.018.511.234 exactamente), con un tamano de repositorio de 8,1 GB, lo que sugiere pesos en precision completa o semi-precision (fp32 o fp16/bf16). La licencia declarada es Apache 2.0, aunque el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en la plataforma.
 
 El identificador del modelo incluye fragmentos como "sn38-nanochrono", "r18", "a2-w14", "k-native", "w30ft2" y "s300", que parecen corresponder a una nomenclatura interna de experimentos de entrenamiento (posiblemente rondas, ventanas de contexto, pasos de fine-tuning o checkpoints). No se dispone de documentacion publica, model card sustantiva, pipeline declarado ni idiomas soportados en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ La comparativa cuantitativa no disponible; se recomienda no asumir equivalencia 
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no se documentan datos de entrenamiento, arquitectura, contexto ni idiomas, lo que impide evaluar idoneidad para cualquier tarea.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace; la licencia Apache 2.0 permite uso comercial, pero el acceso esta condicionado por la plataforma.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face; la licencia Apache 2.0 permite uso comercial, pero el acceso esta condicionado por la plataforma.
 - Riesgo de alucinacion: desconocido, pero al no haber evaluaciones de alineacion publicadas, debe asumirse un riesgo alto en produccion.
 - Sesgos: no evaluados ni documentados.
 - Limitaciones de contexto e idioma: no disponibles; no se puede garantizar soporte multilingue ni ventanas largas.
@@ -91,5 +91,5 @@ La comparativa cuantitativa no disponible; se recomienda no asumir equivalencia 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w14-k-native-w30ft2-s300
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w14-k-native-w30ft2-s300
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

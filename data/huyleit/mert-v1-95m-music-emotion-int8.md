@@ -108,7 +108,7 @@ La informacion disponible solo permite comparar con el modelo base del que deriv
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huyleit/mert-v1-95m-music-emotion-int8
+- Modelo en Hugging Face: https://huggingface.co/huyleit/mert-v1-95m-music-emotion-int8
 - Modelo base referenciado en la model card: https://huggingface.co/m-a-p/MERT-v1-95M
 - Paper de MERT (Music Foundation Transformer, ICLR 2024): no disponible como URL en la informacion proporcionada
 - Repositorio del proyecto `SE121-microservices`: no disponible como URL en la informacion proporcionada

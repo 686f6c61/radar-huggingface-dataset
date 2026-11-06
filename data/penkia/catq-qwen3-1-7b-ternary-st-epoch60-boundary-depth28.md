@@ -82,7 +82,7 @@ La comparativa muestra que el artefacto de `ternary-quench` tiene peor rendimien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/penkia/catq-qwen3-1.7b-ternary-st-epoch60-boundary-depth28
+- Repositorio Hugging Face: https://huggingface.co/penkia/catq-qwen3-1.7b-ternary-st-epoch60-boundary-depth28
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Paper CAT-Q: https://arxiv.org/abs/2606.26650
 - Artefactos CAT-Q publicados: https://huggingface.co/IntelLabsChina/CAT-Q

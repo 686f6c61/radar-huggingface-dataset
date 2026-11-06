@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Lesani/Groot-280B-A16B-261023-Q2_K-Experts-GGUF",
+  "slug": "lesani-groot-280b-a16b-261023-q2_k-experts-gguf",
+  "author": "Lesani",
+  "url": "https://huggingface.co/Lesani/Groot-280B-A16B-261023-Q2_K-Experts-GGUF",
+  "created_at": "2026-11-01T16:37:01.000Z",
+  "updated_at": "2026-11-02T00:39:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama-cpp",
+  "languages": [],
+  "tags": [
+    "llama-cpp",
+    "gguf",
+    "moe",
+    "deepseek-v4.1",
+    "engram",
+    "cpu-offload",
+    "quantized",
+    "text-generation",
+    "base_model:GrootTeam/Groot-280B-A16B-261023",
+    "base_model:quantized:GrootTeam/Groot-280B-A16B-261023",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 307097950336,
+  "storage_human": "307.1 GB",
+  "base_model": "GrootTeam/Groot-280B-A16B-261023",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lesani/Groot-280B-A16B-261023-Q2_K-Experts-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Lesani/Groot-280B-A16B-261023-Q2_K-Experts-GGUF",
+      "snippet": "A mixed-precision, text-only GGUF conversion of GrootTeam/Groot-280B-A16B-261023, intended for hybrid CPU/GPU inference with a lazily read Engram lookup table. This is not a uniform Q2_K quantization and is not an official GrootTeam release."
+    },
+    {
+      "title": "GrootTeam/Groot-280B-A16B-261023 · Hugging Face",
+      "url": "https://huggingface.co/GrootTeam/Groot-280B-A16B-261023",
+      "snippet": "Image-Text-to-Text model with 491B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

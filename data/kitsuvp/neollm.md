@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NeoLLM es un modelo de lenguaje decoder-only de aproximadamente 84,87 millones de parametros desarrollado por el usuario KitsuVp (KitsuVp/NeoLLM en HuggingFace). Se ha entrenado desde cero sobre el dataset FineWeb-Edu con computo en BF16, completando el entrenamiento en torno a 1 hora y 9 minutos sobre una NVIDIA GeForce RTX 5090. El checkpoint publicado es un estado intermedio de entrenamiento, no una version final, y el modelo se encuentra en desarrollo activo.
+NeoLLM es un modelo de lenguaje decoder-only de aproximadamente 84,87 millones de parametros desarrollado por el usuario KitsuVp (KitsuVp/NeoLLM en Hugging Face). Se ha entrenado desde cero sobre el dataset FineWeb-Edu con computo en BF16, completando el entrenamiento en torno a 1 hora y 9 minutos sobre una NVIDIA GeForce RTX 5090. El checkpoint publicado es un estado intermedio de entrenamiento, no una version final, y el modelo se encuentra en desarrollo activo.
 
 Su relevancia no reside en el rendimiento absoluto, sino en su proposito de investigacion: integrar en una unica arquitectura una coleccion de tecnicas recientes de atencion y normalizacion (Leviathan, FAN, MEA, LUCID, XSA, Gated Attention, Hadamard output projection, entre otras) para estudiar como interactuan durante el preentrenamiento. Se trata, por tanto, de un banco de pruebas arquitectonico mas que de un modelo listo para produccion.
 
@@ -77,10 +77,10 @@ No se dispone de resultados de benchmarks de NeoLLM que permitan una comparacion
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| NeoLLM | 84,57 M (safetensors) | 512 tokens | apache-2.0 | HuggingFace, requiere custom_code |
-| Pythia-70M | 70 M | 2048 tokens | apache-2.0 | HuggingFace, transformers estandar |
-| SmolLM-135M | 135 M | 2048 tokens | apache-2.0 | HuggingFace, transformers estandar |
-| GPT-2 small | 124 M | 1024 tokens | modified MIT | HuggingFace, transformers estandar |
+| NeoLLM | 84,57 M (safetensors) | 512 tokens | apache-2.0 | Hugging Face, requiere custom_code |
+| Pythia-70M | 70 M | 2048 tokens | apache-2.0 | Hugging Face, transformers estandar |
+| SmolLM-135M | 135 M | 2048 tokens | apache-2.0 | Hugging Face, transformers estandar |
+| GPT-2 small | 124 M | 1024 tokens | modified MIT | Hugging Face, transformers estandar |
 
 Las cifras de rendimiento comparativo (MMLU, perplexity u otras) no estan disponibles en la informacion proporcionada para ninguno de los modelos en el contexto de esta ficha, por lo que no se incluyen.
 
@@ -101,7 +101,7 @@ Las cifras de rendimiento comparativo (MMLU, perplexity u otras) no estan dispon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KitsuVp/NeoLLM
+- Hugging Face: https://huggingface.co/KitsuVp/NeoLLM
 - Perfil del autor en X: https://x.com/Kyokopom
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Tokenizador base: LiquidAI/LFM2.5-1.2B-Thinking

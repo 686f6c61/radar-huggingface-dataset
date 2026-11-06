@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Roby es un adaptador LoRA de tipo text-to-image publicado por el usuario Fragiskos en HuggingFace bajo el identificador Fragiskos/Roby. Se distribuye como un repositorio de 0,1 GB con la libreria diffusers y la etiqueta `template:diffusion-lora`, lo que indica que no es un modelo completo, sino un ajuste fino ligero que debe cargarse sobre un modelo base. El modelo base declarado es `abenzerps/Qwen-Image-2.1-Uncensored-GGUF`, una variante sin censura de la familia Qwen-Image.
+Roby es un adaptador LoRA de tipo text-to-image publicado por el usuario Fragiskos en Hugging Face bajo el identificador Fragiskos/Roby. Se distribuye como un repositorio de 0,1 GB con la libreria diffusers y la etiqueta `template:diffusion-lora`, lo que indica que no es un modelo completo, sino un ajuste fino ligero que debe cargarse sobre un modelo base. El modelo base declarado es `abenzerps/Qwen-Image-2.1-Uncensored-GGUF`, una variante sin censura de la familia Qwen-Image.
 
 La model card es extremadamente escasa: apenas contiene la frase "Roby is ready to sing", sin descripcion tecnica, sin dataset de entrenamiento, sin prompts de instancia (el campo `instance_prompt` aparece como `null`) ni ejemplos de uso mas alla de un widget de galeria vacio. Esto limita severamente cualquier evaluacion rigurosa del adaptador.
 
@@ -23,7 +23,7 @@ Por su naturaleza de LoRA sobre un modelo de imagen, su relevancia practica depe
 
 ## Arquitectura y entrenamiento
 
-Se trata de un adaptador LoRA para un pipeline de difusion text-to-image gestionado con la libreria diffusers. Los LoRA de difusion inyectan matrices de bajo rango en las capas de atencion (y opcionalmente en otras capas) del modelo base para modificar el estilo o el concepto aprendido sin reentrenar el modelo completo. Al estar etiquetado como `template:diffusion-lora`, sigue el formato estandar de adaptadores de difusion de HuggingFace.
+Se trata de un adaptador LoRA para un pipeline de difusion text-to-image gestionado con la libreria diffusers. Los LoRA de difusion inyectan matrices de bajo rango en las capas de atencion (y opcionalmente en otras capas) del modelo base para modificar el estilo o el concepto aprendido sin reentrenar el modelo completo. Al estar etiquetado como `template:diffusion-lora`, sigue el formato estandar de adaptadores de difusion de Hugging Face.
 
 No hay informacion disponible sobre el dataset de entrenamiento, el numero de pasos, la resolucion de entrenamiento, el rango del LoRA, los hiperparametros (learning rate, batch size, scheduler) ni si se aplico algun tipo de ajuste adicional. El campo `instance_prompt` esta a `null`, lo que impide saber que concepto o estilo concreto se entreno. La model card no documenta ninguna innovacion tecnica.
 
@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fragiskos/Roby | No disponible (LoRA, repo 0,1 GB) | No aplica | No disponible | apache-2.0 | HuggingFace |
+| Fragiskos/Roby | No disponible (LoRA, repo 0,1 GB) | No aplica | No disponible | apache-2.0 | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Fragiskos/Roby
+- Pagina del modelo en Hugging Face: https://huggingface.co/Fragiskos/Roby
 - Archivos del repositorio: https://huggingface.co/Fragiskos/Roby/tree/main
 - Modelo base: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

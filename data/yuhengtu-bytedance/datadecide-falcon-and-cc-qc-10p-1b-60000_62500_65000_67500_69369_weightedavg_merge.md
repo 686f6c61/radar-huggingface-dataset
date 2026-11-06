@@ -92,7 +92,7 @@ Los datos de las tres alternativas provienen de sus fichas públicas y se incluy
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-falcon-and-cc-qc-10p-1B-60000_62500_65000_67500_69369_weightedavg_merge
+- Repositorio en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-falcon-and-cc-qc-10p-1B-60000_62500_65000_67500_69369_weightedavg_merge
 - mergekit (herramienta utilizada para la fusión): https://github.com/cg123/mergekit
 - Artículo referenciado en las etiquetas del repositorio (model soups, arXiv:2203.05482): https://arxiv.org/abs/2203.05482
 - Documentación de Text Generation Inference: https://github.com/huggingface/text-generation-inference

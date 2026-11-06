@@ -90,7 +90,7 @@ No se han identificado en la información disponible alternativas comparables de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/David-Chew-HL/qwen38-27b-ap-d01-seed42
+- Repositorio Hugging Face: https://huggingface.co/David-Chew-HL/qwen38-27b-ap-d01-seed42
 - Modelo base declarado en la model card: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta Apostate (método de abliteración utilizado): https://github.com/heterodoxin/apostate
 

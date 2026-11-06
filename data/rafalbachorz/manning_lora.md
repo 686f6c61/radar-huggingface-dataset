@@ -76,7 +76,7 @@ La comparativa se limita a datos publicos de los modelos de referencia, ya que n
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| rafalbachorz/manning_lora | 8,03 mil millones | no disponible (base: 128.000 tokens) | no disponible | GGUF y safetensors en HuggingFace | sin benchmarks |
+| rafalbachorz/manning_lora | 8,03 mil millones | no disponible (base: 128.000 tokens) | no disponible | GGUF y safetensors en Hugging Face | sin benchmarks |
 | meta-llama/Llama-3.1-8B-Instruct | 8,03 mil millones | 128.000 tokens | Llama 3.1 Community License | safetensors y multiples derivados GGUF | si, publicado por Meta |
 | Qwen/Qwen2.5-7B-Instruct | 7,6 mil millones | 128.000 tokens | Apache 2.0 | safetensors, GGUF y AWQ | si, publicado por Alibaba |
 | mistralai/Mistral-7B-Instruct-v0.3 | 7,25 mil millones | 32.000 tokens | Apache 2.0 | safetensors y GGUF | si, publicado por Mistral |
@@ -97,7 +97,7 @@ Diferencias clave: frente a los tres modelos de referencia, este ajuste no aport
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rafalbachorz/manning_lora
+- Modelo en Hugging Face: https://huggingface.co/rafalbachorz/manning_lora
 - Unsloth (libreria usada para el ajuste y la conversion): https://github.com/unslothai/unsloth
 - Modelo base Meta Llama 3.1 8B: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Llama 3.1 Community License: https://huggingface.co/meta-llama/Llama-3.1-8B/blob/main/LICENSE

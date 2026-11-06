@@ -113,7 +113,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la informacion p
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/kingjones777/MiMo-V2.6-Distill-Qwen-9B-ROCmFP4-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/kingjones777/MiMo-V2.6-Distill-Qwen-9B-ROCmFP4-GGUF
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Variante con importance matrix: https://huggingface.co/kingjones777/MiMo-V2.6-Distill-Qwen-9B-ROCmFP4-imatrix-GGUF
 - Fork de llama.cpp con soporte ROCmFP4 (ROCmFPX): https://github.com/charlie12345/ROCmFPX (revision `85d8f7e83499e434c24993e6e1f3800568b5adfd`)

@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Tarea | Resultado declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-sock-heist-6m-run-1101-2350 (este) | Política RL (PPO) en ONNX | Sock Heist 6 m en microduck | 6,13 s | no disponible | HuggingFace |
+| microduck-sock-heist-6m-run-1101-2350 (este) | Política RL (PPO) en ONNX | Sock Heist 6 m en microduck | 6,13 s | no disponible | Hugging Face |
 | Política previa del mismo autor | Política RL en ONNX | Sock Heist 6 m en microduck | 8,34 s | no disponible | no disponible (referenciada en la model card) |
 | `mjlab-microduck 0.1.0` (base) | Política caminante preentrenada | Locomoción base microduck | no disponible | no disponible | Repositorio mjlab (commit `1efd853be`) |
 
@@ -102,7 +102,7 @@ No se dispone de información sobre otras políticas comparables de terceros par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RSanchez996/microduck-sock-heist-6m-run-1101-2350
+- Modelo en Hugging Face: https://huggingface.co/RSanchez996/microduck-sock-heist-6m-run-1101-2350
 - Repositorio de retos y entrenamiento: https://github.com/RSanchez996/microduck-challenges
 - Repositorio del robot y daemon microduck: https://github.com/pollen-robotics/microduck
 - Documentación del manifiesto de políticas (referenciada en la model card): `docs/policy-manifest.md` dentro del repositorio del daemon

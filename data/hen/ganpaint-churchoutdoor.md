@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Categoria | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `hen/ganpaint-churchoutdoor` | ProGAN + disección | Iglesia exterior (LSUN) | no aplica | MIT | HuggingFace |
+| `hen/ganpaint-churchoutdoor` | ProGAN + disección | Iglesia exterior (LSUN) | no aplica | MIT | Hugging Face |
 | GANPaint original (gandissect) | ProGAN + disección | Múltiples categorías (LSUN) | no aplica | Investigación | Repo original |
 | StyleGAN2 (LSUN church) | GAN estilo | Iglesia (LSUN) | no aplica | Distintas según checkpoint | Varios repositorios |
 | BigGAN (LSUN) | GAN condicional | Múltiples categorías | no aplica | Investigación | Varios repositorios |
@@ -82,7 +82,7 @@ La comparación es aproximada: no se dispone de datos de rendimiento cuantitativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hen/ganpaint-churchoutdoor
+- Hugging Face: https://huggingface.co/hen/ganpaint-churchoutdoor
 - Repositorio de la reimplementación: https://github.com/hendrikstrobelt/ganpaint_2026
 - GAN Dissection (sitio del proyecto): https://gandissect.csail.mit.edu/
 - Dataset LSUN: https://www.yf.io/p/lsun

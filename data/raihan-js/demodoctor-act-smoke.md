@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`raihan-js/demodoctor-act-smoke` es una politica de robotica basada en ACT (Action Chunking with Transformers), un metodo de aprendizaje por imitacion que predice fragmentos cortos de acciones en lugar de pasos individuales. Lo publica el usuario de HuggingFace `raihan-js` y se distribuye a traves de la libreria LeRobot de HuggingFace, con licencia Apache 2.0. No es un modelo de lenguaje: es un controlador visomotor que consume imagenes y estado del robot y produce comandos de accion.
+`raihan-js/demodoctor-act-smoke` es una politica de robotica basada en ACT (Action Chunking with Transformers), un metodo de aprendizaje por imitacion que predice fragmentos cortos de acciones en lugar de pasos individuales. Lo publica el usuario de Hugging Face `raihan-js` y se distribuye a traves de la libreria LeRobot de Hugging Face, con licencia Apache 2.0. No es un modelo de lenguaje: es un controlador visomotor que consume imagenes y estado del robot y produce comandos de accion.
 
 El modelo tiene 51.660.418 parametros (unos 51,7 millones) en formato safetensors, con un repositorio de 0,2 GB. Recibe una imagen de 3x96x96 pixeles y un vector de estado de dimension 2, y emite una accion de dimension 2. Fue entrenado sobre el conjunto de datos `lerobot/pusht`, una tarea de manipulacion simulada que consiste en empujar un bloque en forma de T hasta una diana con la misma forma.
 
@@ -31,7 +31,7 @@ Especificaciones de entrada y salida:
 
 ## Arquitectura y entrenamiento
 
-ACT (Action Chunking with Transformers) es un metodo de aprendizaje por imitacion presentado en el articulo arXiv 2304.13705. La politica aprende a partir de datos de teleoperacion y, en lugar de predecir una sola accion por paso, genera un "chunk" o bloque corto de acciones futuras. Esta formulacion reduce el problema de horizonte largo y mitiga el sesgo de parada, y en la literatura suele alcanzar tasas de exito altas en tareas de manipulacion. La implementacion concreta de este repositorio proviene de LeRobot, la libreria de aprendizaje automatico para robotica del mundo real de HuggingFace, y esta pensada para entrenamiento con vision (una camara de tipo `image`) y un estado de dos dimensiones.
+ACT (Action Chunking with Transformers) es un metodo de aprendizaje por imitacion presentado en el articulo arXiv 2304.13705. La politica aprende a partir de datos de teleoperacion y, en lugar de predecir una sola accion por paso, genera un "chunk" o bloque corto de acciones futuras. Esta formulacion reduce el problema de horizonte largo y mitiga el sesgo de parada, y en la literatura suele alcanzar tasas de exito altas en tareas de manipulacion. La implementacion concreta de este repositorio proviene de LeRobot, la libreria de aprendizaje automatico para robotica del mundo real de Hugging Face, y esta pensada para entrenamiento con vision (una camara de tipo `image`) y un estado de dos dimensiones.
 
 Los datos de entrenamiento son el conjunto `lerobot/pusht`: 206 episodios, 25.650 fotogramas a 10 FPS, correspondientes a la tarea "empujar el bloque en forma de T hasta la diana en forma de T". La configuracion de entrenamiento declarada es de 500 pasos, tamano de lote 32, optimizador AdamW, tasa de aprendizaje 1e-05, semilla 0 y LeRobot 0.6.1. No se documenta ninguna fase de RLHF, DPO ni ajuste por preferencias; se trata exclusivamente de aprendizaje por imitacion supervisado. Tampoco se detalla composicion adicional del dataset, aumentos de datos ni innovaciones propias mas alla del metodo ACT original.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Tipo | Parametros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `raihan-js/demodoctor-act-smoke` (ACT) | Transformer con action chunking, aprendizaje por imitacion | 51,66 M | no disponible | Apache 2.0 | HuggingFace Hub |
+| `raihan-js/demodoctor-act-smoke` (ACT) | Transformer con action chunking, aprendizaje por imitacion | 51,66 M | no disponible | Apache 2.0 | Hugging Face Hub |
 | Diffusion Policy | Politica generativa por difusion para robotica | no disponible | no disponible | no disponible | Implementacion en LeRobot |
 | VQ-BeT | Politica con cuantizacion vectorial de comportamiento | no disponible | no disponible | no disponible | Implementacion en LeRobot |
-| SmolVLA | Vision-language-action de HuggingFace para robotica | no disponible | no disponible | no disponible | HuggingFace Hub |
+| SmolVLA | Vision-language-action de Hugging Face para robotica | no disponible | no disponible | no disponible | Hugging Face Hub |
 
 No se dispone de datos verificados de parametros, contexto ni rendimiento de las alternativas dentro de la informacion proporcionada; las filas correspondientes se marcan como no disponibles. La comparacion solo puede establecerse a nivel cualitativo: ACT destaca por su simplicidad y su bajo coste de inferencia, mientras que Diffusion Policy y VQ-BeT cubren enfoques generativos y de cuantizacion distintos dentro del mismo ecosistema LeRobot.
 
@@ -95,7 +95,7 @@ No se dispone de datos verificados de parametros, contexto ni rendimiento de las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raihan-js/demodoctor-act-smoke
+- Modelo en Hugging Face: https://huggingface.co/raihan-js/demodoctor-act-smoke
 - Dataset de entrenamiento: https://huggingface.co/datasets/lerobot/pusht
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=lerobot/pusht
 - Articulo de ACT: https://huggingface.co/papers/2304.13705
@@ -108,4 +108,4 @@ No se dispone de datos verificados de parametros, contexto ni rendimiento de las
 - Referencia rapida de comandos: https://huggingface.co/docs/lerobot/main/en/cheat-sheet
 - Documentacion de inferencia y rollout: https://huggingface.co/docs/lerobot/main/en/inference
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre ACT; los enlaces anteriores proceden exclusivamente de la informacion de HuggingFace y de la tarjeta del modelo.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre ACT; los enlaces anteriores proceden exclusivamente de la informacion de Hugging Face y de la tarjeta del modelo.

@@ -78,8 +78,8 @@ La comparativa se basa en características generales, ya que no hay benchmarks d
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión GGUF: https://huggingface.co/Toprak1yu/Qwen3.8-27B-Q4_K_M-GGUF
+- Repositorio Hugging Face de la conversión GGUF: https://huggingface.co/Toprak1yu/Qwen3.8-27B-Q4_K_M-GGUF
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Artículo sobre ejecución local de Qwen3.8-27B (yottalabs.ai): https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026
 - Página de Ollama con build de Qwen3.8-27B: https://ollama.com/smtek/Qwen3.8-27B
-- Discusión sobre rendimiento en HuggingFace (unsloth): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF/discussions/32
+- Discusión sobre rendimiento en Hugging Face (unsloth): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF/discussions/32

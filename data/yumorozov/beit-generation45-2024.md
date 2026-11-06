@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yumorozov/beit-generation45-2024` es un prototipo de investigación publicado en HuggingFace por el usuario yumorozov, que presenta una implementación propia de una arquitectura Beit orientada a tareas de generación. El repositorio se describe explícitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado, y el autor declara que no se reclama ninguna métrica de benchmark.
+`yumorozov/beit-generation45-2024` es un prototipo de investigación publicado en Hugging Face por el usuario yumorozov, que presenta una implementación propia de una arquitectura Beit orientada a tareas de generación. El repositorio se describe explícitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo entrenado, y el autor declara que no se reclama ninguna métrica de benchmark.
 
 El dato más llamativo es la escala real: el fichero de pesos contiene 49.600 parámetros totales, una cifra que contrasta con la etiqueta "large" que el propio autor usa para describir la configuración. Esto confirma que se trata de un andamiaje de código y formato de ficheros, no de un modelo con capacidad funcional de generación en producción.
 
@@ -67,7 +67,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yumorozov/beit-generation45-2024 | 49.600 | no disponible | sin benchmarks publicados | MIT | HuggingFace (14 descargas) |
+| yumorozov/beit-generation45-2024 | 49.600 | no disponible | sin benchmarks publicados | MIT | Hugging Face (14 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,6 +84,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yumorozov/beit-generation45-2024
+- Modelo en Hugging Face: https://huggingface.co/yumorozov/beit-generation45-2024
 - Ficheros incluidos en el repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo adicionales: no disponible en la información proporcionada. Los resultados de búsqueda web devueltos no guardan relación con el modelo.

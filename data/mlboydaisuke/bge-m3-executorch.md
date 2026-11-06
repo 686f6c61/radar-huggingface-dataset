@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bge-m3-ExecuTorch es una conversión a formato ExecuTorch (.pte) del modelo de embeddings BAAI/bge-m3, publicada por el usuario mlboydaisuke en HuggingFace. El modelo original, desarrollado por BAAI (Beijing Academy of Artificial Intelligence), es un modelo de extracción de características basado en XLM-RoBERTa large de 568 millones de parámetros, capaz de generar embeddings densos, dispersos (sparse) y multi-vector (ColBERT) en una sola pasada de inferencia, con soporte para más de 100 idiomas.
+bge-m3-ExecuTorch es una conversión a formato ExecuTorch (.pte) del modelo de embeddings BAAI/bge-m3, publicada por el usuario mlboydaisuke en Hugging Face. El modelo original, desarrollado por BAAI (Beijing Academy of Artificial Intelligence), es un modelo de extracción de características basado en XLM-RoBERTa large de 568 millones de parámetros, capaz de generar embeddings densos, dispersos (sparse) y multi-vector (ColBERT) en una sola pasada de inferencia, con soporte para más de 100 idiomas.
 
 La particularidad de esta conversión es que permite ejecutar el modelo en dispositivos móviles y edge (on-device) mediante ExecuTorch y el backend XNNPACK, sin depender de servidores remotos. Es relevante porque la mayoría de los modelos de embeddings solo devuelven un vector denso, mientras que esta versión expone las tres señales de recuperación (dense, sparse y ColBERT) simultáneamente, lo que permite implementar búsqueda híbrida directamente en un teléfono o dispositivo embebido. El repositorio incluye builds en fp32, fp16 y Core ML, con scripts de verificación contra la implementación de referencia de FlagEmbedding.
 
@@ -98,6 +98,6 @@ Frente al modelo original, esta conversión sacrifica la ventana de 8192 tokens 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/bge-m3-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/bge-m3-ExecuTorch
 - Modelo base: https://huggingface.co/BAAI/bge-m3
 - Scripts de conversión: https://github.com/john-rocky/executorch-models

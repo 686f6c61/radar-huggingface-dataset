@@ -78,10 +78,10 @@ Los datos de las alternativas proceden de conocimiento publico general y no se h
 
 | Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ANITA-NEXT-24B-Magistral-2506-VISION-ITA (este modelo) | 23,6 B | no disponible | si | apache-2.0 | HuggingFace (original y GGUF) |
-| Mistral Small 3.1 24B (2503) | 24 B | 128k (referencia) | si | apache-2.0 | HuggingFace |
-| Magistral Small 1.0 (2506) | 24 B | no disponible | no disponible | apache-2.0 | HuggingFace |
-| Gemma 3 27B IT | 27 B | 128k (referencia) | si | Gemma Terms of Use | HuggingFace |
+| ANITA-NEXT-24B-Magistral-2506-VISION-ITA (este modelo) | 23,6 B | no disponible | si | apache-2.0 | Hugging Face (original y GGUF) |
+| Mistral Small 3.1 24B (2503) | 24 B | 128k (referencia) | si | apache-2.0 | Hugging Face |
+| Magistral Small 1.0 (2506) | 24 B | no disponible | no disponible | apache-2.0 | Hugging Face |
+| Gemma 3 27B IT | 27 B | 128k (referencia) | si | Gemma Terms of Use | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estos modelos en la informacion proporcionada.
 

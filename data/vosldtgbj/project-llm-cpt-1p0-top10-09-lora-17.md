@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Project LLM: CPT / top10-09-lora-17 es un checkpoint multimodal publicado por el usuario vosldtgbj como parte de una serie de experimentos de preentrenamiento continuado (CPT, continual pretraining). Deriva de google/gemma-4-12B, un modelo de 11.959.730.176 parametros, y se distribuye con las etiquetas gemma4_unified, image-text-to-text y any-to-any, lo que indica que conserva la capacidad de procesar texto e imagenes y de generar salidas multimodales. El pipeline declarado en HuggingFace es any-to-any.
+Project LLM: CPT / top10-09-lora-17 es un checkpoint multimodal publicado por el usuario vosldtgbj como parte de una serie de experimentos de preentrenamiento continuado (CPT, continual pretraining). Deriva de google/gemma-4-12B, un modelo de 11.959.730.176 parametros, y se distribuye con las etiquetas gemma4_unified, image-text-to-text y any-to-any, lo que indica que conserva la capacidad de procesar texto e imagenes y de generar salidas multimodales. El pipeline declarado en Hugging Face es any-to-any.
 
 El modelo no es un lanzamiento de producto: su model card lo describe explicitamente como un archivo de pesos completos para reproduccion de experimentos, evaluacion offline e investigacion posterior. Se entrenó durante 1,0 epoca mediante LoRA CPT y los adaptadores se fusionaron en pesos completos, de modo que el repositorio contiene un modelo directamente cargable, sin estados de optimizador, planificador ni estado de reanudacion. El repositorio ocupa 24,0 GB y esta publicado en safetensors fragmentados.
 
@@ -93,7 +93,7 @@ No se dispone de datos verificados de otros modelos comparables de la misma cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vosldtgbj/project-llm-cpt-1p0-top10-09-lora-17
+- Hugging Face: https://huggingface.co/vosldtgbj/project-llm-cpt-1p0-top10-09-lora-17
 - Repositorio hermano del mismo autor: https://huggingface.co/vosldtgbj/project-llm-cpt-0p5-lora-13
 - Modelo base: https://huggingface.co/google/gemma-4-12B
 - Licencia de Gemma 4 referenciada en la model card: https://ai.google.dev/gemma/docs/gemma_4_license

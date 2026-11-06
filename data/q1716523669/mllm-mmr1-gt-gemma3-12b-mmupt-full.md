@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/q1716523669/mllm-mmr1-gt-gemma3-12b-mmupt-full
+- Repositorio Hugging Face: https://huggingface.co/q1716523669/mllm-mmr1-gt-gemma3-12b-mmupt-full
 - Repositorio del checkpoint endpoint: https://huggingface.co/q1716523669/mllm-mmr1-gt-gemma3-12b-endpoint
 - Repositorio del modelo base Gemma (Google DeepMind): https://github.com/google-deepmind/gemma
 - Página oficial de Gemma (Google DeepMind): https://deepmind.google/models/gemma/

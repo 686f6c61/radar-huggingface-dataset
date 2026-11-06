@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pornmaster Pro SDXL V8 es un modelo de difusión latente texto-a-imagen publicado por el usuario UnshackledAI en HuggingFace bajo el identificador `UnshackledAI/pornmaster_proSDXLV8`. Se trata de un ajuste fino (fine-tune) de la arquitectura Stable Diffusion XL (SDXL) especializado en la generación de contenido para adultos, según refleja la etiqueta `not-for-all-audiences` del repositorio. El modelo hereda la estructura de tres componentes de SDXL (U-Net, VAE y dos codificadores de texto) y se distribuye en formato `safetensors` compatible con la librería `diffusers`.
+Pornmaster Pro SDXL V8 es un modelo de difusión latente texto-a-imagen publicado por el usuario UnshackledAI en Hugging Face bajo el identificador `UnshackledAI/pornmaster_proSDXLV8`. Se trata de un ajuste fino (fine-tune) de la arquitectura Stable Diffusion XL (SDXL) especializado en la generación de contenido para adultos, según refleja la etiqueta `not-for-all-audiences` del repositorio. El modelo hereda la estructura de tres componentes de SDXL (U-Net, VAE y dos codificadores de texto) y se distribuye en formato `safetensors` compatible con la librería `diffusers`.
 
 El dato de parámetros registrado en el repositorio (2.567.463.684, aproximadamente 2,57 mil millones) coincide con el recuento del U-Net de SDXL, lo que confirma que se trata de un modelo derivado de dicha arquitectura y no de un transformer de lenguaje. El repositorio ocupa 6,9 GB y está pensado para su uso mediante el pipeline `StableDiffusionXLPipeline`.
 
@@ -49,7 +49,7 @@ No hay información publicada sobre el dataset de entrenamiento, el número de p
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No constan métricas FID, CLIP score, evaluaciones estéticas ni comparativas cuantitativas en la ficha de HuggingFace ni en las fuentes web consultadas. Tampoco se documentan tiempos de inferencia ni tasas de acierto con prompts de referencia.
+No se han publicado resultados de benchmarks en la informacion disponible. No constan métricas FID, CLIP score, evaluaciones estéticas ni comparativas cuantitativas en la ficha de Hugging Face ni en las fuentes web consultadas. Tampoco se documentan tiempos de inferencia ni tasas de acierto con prompts de referencia.
 
 ## Requisitos de hardware
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No co
 
 | Modelo | Arquitectura | Parametros (U-Net) | Contexto de prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pornmaster Pro SDXL V8 | SDXL (difusion latente) | 2.567.463.684 | 77 tokens por codificador | no disponible | HuggingFace (UnshackledAI) |
-| SDXL 1.0 (Stability AI) | SDXL (difusion latente) | ~2,57 mil millones | 77 tokens por codificador | CreativeML Open RAIL++-M | HuggingFace, uso general |
-| Pornmaster Pro (variante original) | Difusion latente (base previa a SDXL) | no disponible | no disponible | no disponible | HuggingFace (stablediffusionapi) y API externa |
-| Fine-tunes NSFW de SDXL de terceros | SDXL | ~2,57 mil millones | 77 tokens por codificador | variable segun autor | HuggingFace / Civitai |
+| Pornmaster Pro SDXL V8 | SDXL (difusion latente) | 2.567.463.684 | 77 tokens por codificador | no disponible | Hugging Face (UnshackledAI) |
+| SDXL 1.0 (Stability AI) | SDXL (difusion latente) | ~2,57 mil millones | 77 tokens por codificador | CreativeML Open RAIL++-M | Hugging Face, uso general |
+| Pornmaster Pro (variante original) | Difusion latente (base previa a SDXL) | no disponible | no disponible | no disponible | Hugging Face (stablediffusionapi) y API externa |
+| Fine-tunes NSFW de SDXL de terceros | SDXL | ~2,57 mil millones | 77 tokens por codificador | variable segun autor | Hugging Face / Civitai |
 
 No se dispone de datos cuantitativos de rendimiento que permitan comparar la calidad de estos modelos entre sí; la comparación anterior se limita a parámetros, arquitectura, licencia y disponibilidad.
 
@@ -85,9 +85,9 @@ No se dispone de datos cuantitativos de rendimiento que permitan comparar la cal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UnshackledAI/pornmaster_proSDXLV8
-- Variante en HuggingFace (stablediffusionapi): https://huggingface.co/stablediffusionapi/pornmaster-pro
+- Modelo en Hugging Face: https://huggingface.co/UnshackledAI/pornmaster_proSDXLV8
+- Variante en Hugging Face (stablediffusionapi): https://huggingface.co/stablediffusionapi/pornmaster-pro
 - Ficha en Stable Diffusion API (Pornmaster Pro): https://stablediffusionapi.com/models/pornmaster-pro
 - Ficha en Stable Diffusion API (Pornmaster Pro SDXL V8): https://stablediffusionapi.com/models/pornmaster-pro-sdxl-v8
-- Copia del checkpoint en HuggingFace: https://huggingface.co/asdasdasd1234567890/checkpoints/blob/ee2b1d4972803ebf58b2f32e16dfc5e7927a5222/sdxl/pornmaster_proSDXLV8.safetensors
+- Copia del checkpoint en Hugging Face: https://huggingface.co/asdasdasd1234567890/checkpoints/blob/ee2b1d4972803ebf58b2f32e16dfc5e7927a5222/sdxl/pornmaster_proSDXLV8.safetensors
 - Referencia en PromptHero: https://prompthero.com/ai-models/pornmaster-pro-download

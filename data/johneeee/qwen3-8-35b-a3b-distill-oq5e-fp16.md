@@ -93,6 +93,6 @@ No es posible establecer una comparativa tecnica rigurosa con alternativas concr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-35B-A3B-Distill-oQ5e-fp16
+- Repositorio en Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-35B-A3B-Distill-oQ5e-fp16
 - Herramienta de cuantizacion oQ / oMLX (citada en la model card): https://github.com/jundot/omlx
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo, su modelo base, su paper o demos asociadas.

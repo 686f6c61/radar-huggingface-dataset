@@ -80,9 +80,9 @@ No se dispone de modelos externos comparables en la informacion proporcionada. L
 
 | Variante | Parametros | Formato | Candidatos extra necesarios | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gooo-compiler-context-tiny-v1 FP32 | 12.728 | FP32 (`model.json`) | 80 | MIT | publica en HuggingFace |
-| gooo-compiler-context-tiny-v1 QAT | 12.728 | ternario QAT | 101 | MIT | publica en HuggingFace |
-| gooo-compiler-context-tiny-v1 PTQ | 12.728 | ternario PTQ | 143 | MIT | publica en HuggingFace |
+| gooo-compiler-context-tiny-v1 FP32 | 12.728 | FP32 (`model.json`) | 80 | MIT | publica en Hugging Face |
+| gooo-compiler-context-tiny-v1 QAT | 12.728 | ternario QAT | 101 | MIT | publica en Hugging Face |
+| gooo-compiler-context-tiny-v1 PTQ | 12.728 | ternario PTQ | 143 | MIT | publica en Hugging Face |
 | Control de contexto de llamante (interno) | no disponible | no disponible | 68 | no disponible | en `evidence.tar.gz` |
 
 Modelos comparables de terceros: no disponible.
@@ -103,7 +103,7 @@ Modelos comparables de terceros: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asketeddy/gooo-compiler-context-tiny-v1
+- Modelo en Hugging Face: https://huggingface.co/asketeddy/gooo-compiler-context-tiny-v1
 - Pull request del compilador (meta-ontology-go PR 1133): https://github.com/kimjooyoon/meta-ontology-go/pull/1133
 - SDK de runtime de decisiones: github.com/kimjooyoon/gooo-decision-runtime (v0.2.9-experimental)
 - Repositorio de experimentos, protocolo y observaciones: https://github.com/kimjooyoon/gooo-neural-decision-experiments

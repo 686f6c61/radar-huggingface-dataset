@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-feather-mt-sft-feather
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-feather-mt-sft-feather
 - Modelo base: https://huggingface.co/joshycodes/qwen3-4b-feather-mt
 - Modelo hermano (rama plain): https://huggingface.co/joshycodes/qwen3-4b-feather-mt-sft-plain
 - Checkpoint relacionado del mismo autor: https://huggingface.co/joshycodes/qwen3-4b-fve-work-s0

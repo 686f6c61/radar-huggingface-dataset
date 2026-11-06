@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AIGAROU/eoxnnn39xbqm299xn3
+- Repositorio en Hugging Face: https://huggingface.co/AIGAROU/eoxnnn39xbqm299xn3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio del autor de la variante uncensored: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Discord del autor: https://discord.gg/SZ5vacTXYf

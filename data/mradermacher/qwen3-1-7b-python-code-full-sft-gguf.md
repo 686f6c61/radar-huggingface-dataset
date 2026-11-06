@@ -25,7 +25,7 @@ La relevancia actual del modelo es limitada pero concreta: se apoya en un datase
 | Autor de la cuantizacion | mradermacher |
 | Tamano del repositorio | 16,0 GB |
 | Descargas y valoraciones | 0 descargas, 0 likes en el momento de la consulta |
-| Fecha de creacion del repositorio | 2026-09-27 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 2026-09-27 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -33,7 +33,7 @@ El modelo subyacente es un transformer denso decoder-only de la familia Qwen3, c
 
 El ajuste fino se describe en las etiquetas del repositorio como post-training con supervised-fine-tuning sobre el dataset nvidia/OpenCodeInstruct, un corpus de instrucciones de codigo publicado por NVIDIA. El nombre del modelo incluye la etiqueta "Full-SFT", lo que sugiere un ajuste supervisado completo y no un adaptador LoRA, aunque el autor no publica ni la configuracion de entrenamiento, ni el numero de tokens vistos, ni si hubo etapas adicionales de RLHF o DPO. Tampoco se documenta ninguna innovacion tecnica propia: el valor anadido del repositorio es la conversion a GGUF y la bateria de cuantizaciones.
 
-La cuantizacion se ha realizado con la version 2 del pipeline del autor, con cuantizacion de tensores de salida activada y conversion desde pesos HuggingFace. Se trata de cuantizaciones estaticas: el autor indica explicitamente que no ha generado cuantizaciones ponderadas ni con matriz de importancia (imatrix) para este modelo, lo que suele traducirse en una perdida de calidad algo mayor en los niveles de bits por peso mas bajos (Q2_K, Q3_K) en comparacion con alternativas ponderadas.
+La cuantizacion se ha realizado con la version 2 del pipeline del autor, con cuantizacion de tensores de salida activada y conversion desde pesos Hugging Face. Se trata de cuantizaciones estaticas: el autor indica explicitamente que no ha generado cuantizaciones ponderadas ni con matriz de importancia (imatrix) para este modelo, lo que suele traducirse en una perdida de calidad algo mayor en los niveles de bits por peso mas bajos (Q2_K, Q3_K) en comparacion con alternativas ponderadas.
 
 ## Capacidades
 

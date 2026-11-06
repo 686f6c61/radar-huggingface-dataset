@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenThinkerAgent-32B-SFT-10K es un modelo de lenguaje open source para tareas de agente, desarrollado por el proyecto OpenThoughts-Agent y publicado en HuggingFace bajo la cuenta trinityomni. Se trata de un fine-tuning de Qwen/Qwen3-32B con 32.000 millones de parámetros, entrenado con supervisión de trayectorias de agente (SFT) sobre el dataset OpenThoughts-Agent-SFT-10K, compuesto por 10.000 ejemplos de tareas de ingeniería de software, terminal y resolución de issues.
+OpenThinkerAgent-32B-SFT-10K es un modelo de lenguaje open source para tareas de agente, desarrollado por el proyecto OpenThoughts-Agent y publicado en Hugging Face bajo la cuenta trinityomni. Se trata de un fine-tuning de Qwen/Qwen3-32B con 32.000 millones de parámetros, entrenado con supervisión de trayectorias de agente (SFT) sobre el dataset OpenThoughts-Agent-SFT-10K, compuesto por 10.000 ejemplos de tareas de ingeniería de software, terminal y resolución de issues.
 
 El modelo está diseñado para seguir instrucciones complejas en entornos de agente, con capacidades de razonamiento multi-paso y uso de herramientas. Su relevancia radica en que aborda el creciente interés en modelos agenticos open source, ofreciendo una alternativa fine-tuneada sobre Qwen3-32B con mejoras notables en benchmarks de agentes como SWE-Bench-Verified-100, OpenThoughts-TBLite y Terminal-Bench 2.0.
 
@@ -23,7 +23,7 @@ El modelo está diseñado para seguir instrucciones complejas en entornos de age
 
 El modelo parte de Qwen/Qwen3-32B, un transformer denso de 32.000 millones de parámetros, y aplica un fine-tuning completo de parámetros (full-parameter SFT) sobre el dataset OpenThoughts-Agent-SFT-10K. Este dataset contiene 10.000 pares (tarea, trayectoria de agente) procedentes de cuatro fuentes: SWE-Smith, StackExchange-SuperUser, StackExchange-Tezos con aumentación sintética y IssueTasks. Las trayectorias fueron generadas por GLM-4.7-AWQ en el harness terminus-2 y filtradas a trazas con al menos 5 turnos de modelo.
 
-Los hiperparametros de entrenamiento incluyen una tasa de aprendizaje de 4e-05 con scheduler cosine (warmup_ratio 0.1), batch global de 96, 7 epocas, cutoff_len de 32768 tokens y precision bf16 con DeepSpeed ZeRO-3. No se han publicado detalles sobre la longitud de contexto real del modelo; el cutoff_len de entrenamiento es de 32.768 tokens. Nota: la metadata de HuggingFace indica un total de parametros de 676.864, lo que resulta inconsistente con el tamano del repositorio (65.5 GB) y con el modelo base Qwen3-32B; se ha tomado 32B como valor de referencia.
+Los hiperparametros de entrenamiento incluyen una tasa de aprendizaje de 4e-05 con scheduler cosine (warmup_ratio 0.1), batch global de 96, 7 epocas, cutoff_len de 32768 tokens y precision bf16 con DeepSpeed ZeRO-3. No se han publicado detalles sobre la longitud de contexto real del modelo; el cutoff_len de entrenamiento es de 32.768 tokens. Nota: la metadata de Hugging Face indica un total de parametros de 676.864, lo que resulta inconsistente con el tamano del repositorio (65.5 GB) y con el modelo base Qwen3-32B; se ha tomado 32B como valor de referencia.
 
 ## Capacidades
 
@@ -79,12 +79,12 @@ No se dispone de informacion sobre otras alternativas comparables en la misma ca
 - Riesgo de alucinacion inherente a los modelos de lenguaje, especialmente en tareas de agente con poca supervision.
 - Limitaciones de idioma no especificadas; el modelo puede tener un rendimiento inferior en lenguas distintas del ingles.
 - La longitud de contexto real no se ha publicado, aunque el entrenamiento uso secuencias de hasta 32.768 tokens.
-- La metadata de HuggingFace muestra un valor de parametros inconsistente (676.864), lo que puede dificultar la evaluacion automatica.
+- La metadata de Hugging Face muestra un valor de parametros inconsistente (676.864), lo que puede dificultar la evaluacion automatica.
 - No se han publicado evaluaciones de seguridad o alineacion mas alla de los benchmarks de rendimiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trinityomni/OpenThinkerAgent-32B-SFT-10K
+- Hugging Face: https://huggingface.co/trinityomni/OpenThinkerAgent-32B-SFT-10K
 - Proyecto OpenThoughts-Agent: https://www.openthoughts.ai/blog/agent
 - Repositorio GitHub: https://github.com/open-thoughts/OpenThoughts-Agent
 - Dataset de entrenamiento: https://huggingface.co/datasets/open-thoughts/OpenThoughts-Agent-SFT-10K

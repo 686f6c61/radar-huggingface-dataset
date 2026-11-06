@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Meohan/Qwen2.5-Coder-3B-Instruct es un repositorio publicado en HuggingFace por el usuario Meohan cuyo contenido apunta a un modelo de generacion de texto de aproximadamente 3.085.938.688 parametros (unos 3,09 B), etiquetado en el Hub con la arquitectura qwen2 y los tags transformers, safetensors, gguf, text-generation, conversational y endpoints_compatible. Por la denominacion del repositorio y los tags, todo apunta a una redistribucion o ajuste derivado de la familia Qwen2.5-Coder en su variante de 3 B orientada a instrucciones, aunque esto no se confirma en ninguna parte de la documentacion publicada.
+Meohan/Qwen2.5-Coder-3B-Instruct es un repositorio publicado en Hugging Face por el usuario Meohan cuyo contenido apunta a un modelo de generacion de texto de aproximadamente 3.085.938.688 parametros (unos 3,09 B), etiquetado en el Hub con la arquitectura qwen2 y los tags transformers, safetensors, gguf, text-generation, conversational y endpoints_compatible. Por la denominacion del repositorio y los tags, todo apunta a una redistribucion o ajuste derivado de la familia Qwen2.5-Coder en su variante de 3 B orientada a instrucciones, aunque esto no se confirma en ninguna parte de la documentacion publicada.
 
 El problema que resuelve es el habitual de los modelos de codigo de gama media: ofrecer asistencia de programacion (autocompletado, generacion de funciones, explicacion de codigo, conversacion tecnica) con un coste de inferencia lo bastante bajo como para ejecutarse en una sola GPU de consumo. Su relevancia potencial esta en ese nicho de 3 B, donde el equilibrio entre calidad de codigo y requisitos de hardware es critico para entornos locales, CI/CD y despliegues con presupuesto limitado.
 
-Ahora bien, conviene ser tajante sobre el estado de la ficha: la model card del autor es la plantilla autogenerada de HuggingFace y no contiene ni un solo dato real (todos los campos figuran como "[More Information Needed]"), el repositorio acumula 0 descargas y 0 likes, y la busqueda web asociada no devolvio ningun resultado relevante sobre el modelo (unicamente enlaces genericos de Gmail). En consecuencia, gran parte de las especificaciones que siguen figuran como "no disponible" y deben verificarse directamente contra el repositorio antes de cualquier uso en produccion.
+Ahora bien, conviene ser tajante sobre el estado de la ficha: la model card del autor es la plantilla autogenerada de Hugging Face y no contiene ni un solo dato real (todos los campos figuran como "[More Information Needed]"), el repositorio acumula 0 descargas y 0 likes, y la busqueda web asociada no devolvio ningun resultado relevante sobre el modelo (unicamente enlaces genericos de Gmail). En consecuencia, gran parte de las especificaciones que siguen figuran como "no disponible" y deben verificarse directamente contra el repositorio antes de cualquier uso en produccion.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ Todas las capacidades que se enumeran a continuacion se infieren del nombre del 
 - Soporte de agentes y razonamiento multi-paso: no disponible; no se documenta.
 - Capacidades multilingues: no disponible; los idiomas soportados no se especifican.
 - Capacidades especiales (modo thinking, vision, audio, rellenado de codigo tipo fill-in-the-middle): no disponible.
-- Despliegue en TGI y endpoints compatibles: el tag endpoints_compatible sugiere compatibilidad con la infraestructura de Inference Endpoints de HuggingFace, aunque no se detalla la configuracion.
+- Despliegue en TGI y endpoints compatibles: el tag endpoints_compatible sugiere compatibilidad con la infraestructura de Inference Endpoints de Hugging Face, aunque no se detalla la configuracion.
 
 ## Casos de uso
 
@@ -102,7 +102,7 @@ En resumen: sin resultados de benchmarks ni licencia declarada, no es posible es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Meohan/Qwen2.5-Coder-3B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/Meohan/Qwen2.5-Coder-3B-Instruct
 - Referencia incluida en los tags del Hub (paper sobre impacto ambiental de Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning citada en la plantilla de model card: https://mlco2.github.io/impact
 - Resultados de la busqueda web: no se encontro ningun enlace relevante sobre el modelo. Los unicos resultados devueltos fueron paginas genericas del servicio Gmail (mail.google.com, accounts.google.com y support.google.com), sin ninguna relacion con este repositorio, por lo que no se incluyen como fuentes.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Clef-Flash es un modelo multimodal de 9.409.813.744 parámetros (aproximadamente 9,4B) desarrollado por Cloudflare, publicado en HuggingFace bajo licencia Apache-2.0. No es un modelo generativo al uso: su función es convertir un estado (texto, JSON, imágenes o vídeo) junto con un esquema de preguntas tipadas en una decisión estructurada. Para cada pregunta del esquema devuelve un logit por cada opción permitida, de modo que aplicando un softmax por pregunta se obtienen probabilidades directamente utilizables. No hay generación de texto libre ni parseo de la salida.
+Clef-Flash es un modelo multimodal de 9.409.813.744 parámetros (aproximadamente 9,4B) desarrollado por Cloudflare, publicado en Hugging Face bajo licencia Apache-2.0. No es un modelo generativo al uso: su función es convertir un estado (texto, JSON, imágenes o vídeo) junto con un esquema de preguntas tipadas en una decisión estructurada. Para cada pregunta del esquema devuelve un logit por cada opción permitida, de modo que aplicando un softmax por pregunta se obtienen probabilidades directamente utilizables. No hay generación de texto libre ni parseo de la salida.
 
 Técnicamente es un post-entrenamiento (finetune) del modelo base Qwen/Qwen3.5-9B, del que conserva el backbone y el codificador visual, almacenados como safetensors fragmentados. Sobre el backbone se añade una cabeza de esquema conjunta (joint schema head), una cabeza transformer pequeña que lee los estados ocultos finales, enruta la evidencia del estado hacia cada pregunta y puntúa conjuntamente todas las opciones de todas las preguntas en un único forward pass. Esto permite decisiones multi-pregunta coherentes entre sí, algo que un pipeline de clasificadores independientes no garantiza.
 
@@ -17,7 +17,7 @@ Su relevancia actual radica en el encuadre de Cloudflare hacia la "era de los ag
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible como spec oficial; `encode_record` usa `max_length` por defecto de 16.384 tokens, acotable con `max_state_tokens` |
 | Tipos de cuantizacion | No disponible (solo se publican pesos safetensors; no hay variantes GGUF, AWQ ni GPTQ documentadas) |
-| Idiomas soportados | No disponible (la model card no declara lista de idiomas ni aparece en los tags de HuggingFace) |
+| Idiomas soportados | No disponible (la model card no declara lista de idiomas ni aparece en los tags de Hugging Face) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | Safetensors fragmentados (`model-*.safetensors`, `model.safetensors.index.json`) mas `joint_head.safetensors`; requiere codigo propio (`joint_schema_model.py`, custom-code) |
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cloudflare/clef-flash | 9.409.813.744 | No disponible (16.384 tokens por defecto en `encode_record`) | No disponible | Apache-2.0 | HuggingFace, codigo propio |
-| Cloudflare/clef | No disponible | No disponible | No disponible | No disponible en la informacion facilitada | HuggingFace (variante mayor de la misma familia) |
-| Qwen/Qwen3.5-9B (base) | No disponible (modelo base del que deriva clef-flash) | No disponible | No disponible | No disponible en la informacion facilitada | HuggingFace |
+| Cloudflare/clef-flash | 9.409.813.744 | No disponible (16.384 tokens por defecto en `encode_record`) | No disponible | Apache-2.0 | Hugging Face, codigo propio |
+| Cloudflare/clef | No disponible | No disponible | No disponible | No disponible en la informacion facilitada | Hugging Face (variante mayor de la misma familia) |
+| Qwen/Qwen3.5-9B (base) | No disponible (modelo base del que deriva clef-flash) | No disponible | No disponible | No disponible en la informacion facilitada | Hugging Face |
 
 No se dispone de datos objetivos (parametros, contexto, benchmarks) de las alternativas en la informacion proporcionada, mas alla de que Cloudflare/clef es la variante mayor de la misma familia y Qwen/Qwen3.5-9B es el modelo base. No se identifican en el material otros modelos comparables de decision estructurada con salida tipada, por lo que la comparativa cuantitativa se considera no disponible.
 
@@ -91,7 +91,7 @@ No se dispone de datos objetivos (parametros, contexto, benchmarks) de las alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cloudflare/clef-flash
+- Modelo en Hugging Face: https://huggingface.co/Cloudflare/clef-flash
 - Anuncio de los modelos de decision Clef en el blog de Cloudflare: https://blog.cloudflare.com/clef-decision-models
 - Leaderboard Decision Index: https://clef-evals.workers-ai-mle.workers.dev
 - Variante mayor de la familia: https://huggingface.co/Cloudflare/clef

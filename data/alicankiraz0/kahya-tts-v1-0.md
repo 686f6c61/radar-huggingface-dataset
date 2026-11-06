@@ -80,7 +80,7 @@ El único dato medido que se documenta es una comprobación de humo (smoke check
 | Modelo | Parámetros | Contexto | Salida | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Kahya-TTS-v1.0 | 2,29 B | No disponible | Mono 48 kHz, BF16 | Turco | Apache-2.0 | 5 descargas, 15 likes |
-| openbmb/VoxCPM2 (base) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible en la información proporcionada | Repositorio público en HuggingFace |
+| openbmb/VoxCPM2 (base) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible en la información proporcionada | Repositorio público en Hugging Face |
 | Otras alternativas TTS en turco | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 El único modelo directamente comparable del que se dispone información es el propio modelo base, openbmb/VoxCPM2, del que Kahya-TTS-v1.0 es un ajuste fino. La información disponible no incluye parámetros, contexto ni licencia del modelo base, ni datos de otros sistemas TTS en turco que permitan una comparación cuantitativa.
@@ -100,7 +100,7 @@ El único modelo directamente comparable del que se dispone información es el p
 - Cifra de adopción muy baja (5 descargas), por lo que la validación por parte de la comunidad es prácticamente inexistente.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/AlicanKiraz0/Kahya-TTS-v1.0
+- Modelo en Hugging Face: https://huggingface.co/AlicanKiraz0/Kahya-TTS-v1.0
 - Modelo base: https://huggingface.co/openbmb/VoxCPM2
 - Checkpoint de ajuste original: https://huggingface.co/AlicanKiraz0/Kahya-TTS-step_1500 (revisión `458112a0fc3d850de38951796290e48ef710bc26`)
 - Dataset de ajuste (privado): https://huggingface.co/datasets/AlicanKiraz0/TR-Voice-TTS

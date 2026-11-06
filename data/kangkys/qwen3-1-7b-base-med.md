@@ -68,7 +68,7 @@ No se dispone de información suficiente para una comparativa rigurosa con alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kangkys/Qwen3-1.7B-base-MED
+- Modelo en Hugging Face: https://huggingface.co/kangkys/Qwen3-1.7B-base-MED
 - Modelo base Qwen3-1.7B-Base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Página de insights del modelo base: https://free2aitools.com/model/qwen/qwen3-1.7b-base
 - Análisis del modelo base: https://dev.co/ai/llms/qwen3-1-7b-base

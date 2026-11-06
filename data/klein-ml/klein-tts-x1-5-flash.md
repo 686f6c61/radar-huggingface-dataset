@@ -73,7 +73,7 @@ La model card indica que supera a Kitten TTS Nano 0.8 (14M, 8 veces mayor) en to
 
 | Modelo | Parametros | Idiomas | Calidad (UTMOS) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Klein-TTS-X1.5-Flash | 1,7M | en, fr, it | 4,36 | Apache-2.0 | HuggingFace |
+| Klein-TTS-X1.5-Flash | 1,7M | en, fr, it | 4,36 | Apache-2.0 | Hugging Face |
 | Kitten TTS Nano 0.8 | 14M | no disponible | inferior segun model card | no disponible | no disponible |
 | SupraTTS 1.0 Preview | 1,0M | no disponible | inferior segun model card | no disponible | no disponible |
 | Phonon | 31M | no disponible | inferior en TTS Index segun model card | no disponible | no disponible |
@@ -93,7 +93,7 @@ Los datos de los competidores provienen unicamente de las afirmaciones de la mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/klein-ml/Klein-TTS-X1.5-Flash
+- Hugging Face: https://huggingface.co/klein-ml/Klein-TTS-X1.5-Flash
 - Web de Klein ML: https://kleinml.com
 - Dataset FineWeb: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Dataset FineWeb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

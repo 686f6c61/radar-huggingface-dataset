@@ -101,5 +101,5 @@ No se dispone de información comparativa con otros detectores de inyección de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flowxai/injection
+- Modelo en Hugging Face: https://huggingface.co/flowxai/injection
 - Repositorio de la librería border: https://github.com/flowx-ai/border

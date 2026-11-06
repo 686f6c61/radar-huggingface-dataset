@@ -91,7 +91,7 @@ La única comparativa directa disponible es la del autor frente al modelo base, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Teluteru/qwen3.5-4b-ml-paper-translate
+- Hugging Face: https://huggingface.co/Teluteru/qwen3.5-4b-ml-paper-translate
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Qwen3.5 en Ollama: https://ollama.com/library/qwen3.5:4b
-- Qwen3-4B en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B
+- Qwen3-4B en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B

@@ -81,14 +81,14 @@ La comparativa directa con BitNet b1.58 no es exacta porque BitNet se entrena de
 - La cuantizacion ternaria extrema puede degradar la calidad de generacion en tareas complejas, aunque la model card reporta una fidelidad alta (ρ ≥ 0.942). No hay evaluaciones independientes que lo confirmen.
 - Idiomas limitados: la model card declara solo portugues e ingles, aunque el modelo base soporta muchos mas. El uso en otros idiomas puede producir resultados suboptimos.
 - Sin soporte para hardware NVIDIA: el runtime esta optimizado para ROCm/HIP y Wave32, por lo que no funcionara en GPUs CUDA sin adaptaciones.
-- Formato de pesos propietario `.ark`: no es compatible con ecosistemas estandar como HuggingFace Transformers, vLLM o llama.cpp, lo que limita su portabilidad.
+- Formato de pesos propietario `.ark`: no es compatible con ecosistemas estandar como Hugging Face Transformers, vLLM o llama.cpp, lo que limita su portabilidad.
 - Riesgo de alucinacion inherente a los modelos de lenguaje, agravado por la compresion de pesos; se recomienda validacion externa en aplicaciones de produccion.
 - No se ha publicado informacion sobre sesgos especificos, pero al derivar de Qwen2.5, puede heredar sesgos del dataset de entrenamiento original.
 - La licencia Apache-2.0 permite uso comercial, pero el runtime `ark-engine` y el ecosistema Arkheion deben revisarse por separado para confirmar sus terminos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ooriginador/Qwen2.5-3B-ArkCompact-1.58bit
+- Modelo en Hugging Face: https://huggingface.co/Ooriginador/Qwen2.5-3B-ArkCompact-1.58bit
 - Repositorio ArkheionNet (GitHub): https://github.com/Arkheion/ArkheionNet.git
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Coleccion Qwen2.5: https://huggingface.co/collections/Qwen/qwen25

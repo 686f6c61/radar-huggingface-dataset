@@ -99,7 +99,7 @@ No se dispone de datos numericos de los modelos con los que comparar dentro de l
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/OnePunchMonk101010/dptlab-klein-dora-subject5
+- Pagina del modelo en Hugging Face: https://huggingface.co/OnePunchMonk101010/dptlab-klein-dora-subject5
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Repositorio de la herramienta de post-entrenamiento dptlab: https://github.com/OnePunchMonk/diffusion-post-training-lab
 - Archivo `RESULTS.md` con los seis metodos comparados: referenciado en la model card dentro del repositorio, no enlazado de forma directa

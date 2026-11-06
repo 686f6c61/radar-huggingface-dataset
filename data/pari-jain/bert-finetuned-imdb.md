@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Pari-Jain/bert-finetuned-imdb` es un ajuste fino (fine-tune) del modelo `google-bert/bert-base-uncased` para clasificación de texto, publicado por el usuario Pari-Jain en HuggingFace. Se trata de un encoder transformer BERT-base con una cabeza de clasificación, entrenado con la librería Transformers mediante `Trainer`, y cuyo nombre sugiere un ajuste sobre el corpus IMDB de críticas de cine, aunque la model card declara explícitamente que el conjunto de datos es desconocido.
+`Pari-Jain/bert-finetuned-imdb` es un ajuste fino (fine-tune) del modelo `google-bert/bert-base-uncased` para clasificación de texto, publicado por el usuario Pari-Jain en Hugging Face. Se trata de un encoder transformer BERT-base con una cabeza de clasificación, entrenado con la librería Transformers mediante `Trainer`, y cuyo nombre sugiere un ajuste sobre el corpus IMDB de críticas de cine, aunque la model card declara explícitamente que el conjunto de datos es desconocido.
 
 El modelo no aporta innovaciones técnicas: es un fine-tune estándar de un checkpoint ampliamente conocido (BERT-base, 109,48 M de parámetros), con una única época de entrenamiento, learning rate 2e-05 y batch size 8. Su interés es, por tanto, limitado y de carácter práctico: sirve como ejemplo de pipeline de clasificación binaria de sentimiento desplegable en infraestructura modesta, o como caso de estudio de una model card autogenerada sin documentación de datos ni evaluación publicada.
 
@@ -32,7 +32,7 @@ El entrenamiento se realizó durante una sola época, con learning rate 2e-05, `
 - Clasificación de texto (pipeline `text-classification`): salida de etiquetas con puntuación de confianza sobre secuencias de hasta 512 tokens.
 - Clasificación binaria de sentimiento, presumiblemente positivo/negativo según el nombre del modelo (no verificado en la model card).
 - Extracción de representaciones contextuales del encoder, reutilizables para *features* o *embeddings* de frase (el tag `text-embeddings-inference` aparece en el repositorio).
-- Compatibilidad con *endpoints* de HuggingFace (`endpoints_compatible`), lo que permite despliegue gestionado sin configuración adicional.
+- Compatibilidad con *endpoints* de Hugging Face (`endpoints_compatible`), lo que permite despliegue gestionado sin configuración adicional.
 - No soporta tool calling ni function calling: es un encoder de clasificación, no un modelo generativo.
 - No soporta razonamiento multi-paso ni comportamiento de agente.
 - No dispone de modo *thinking*, visión, audio ni generación de texto libre.
@@ -46,7 +46,7 @@ El entrenamiento se realizó durante una sola época, con learning rate 2e-05, `
 - Clasificación de tickets de soporte en dos categorías: como clasificador base sobre el que medir la mejora de modelos posteriores, aprovechando la ventana de 512 tokens para el cuerpo del ticket.
 - Fine-tuning posterior como *baseline*: punto de partida reproducible (semilla 42, hiperparámetros documentados) para comparar técnicas de ajuste en tareas de clasificación binaria.
 - Despliegue en entornos con recursos limitados: inferencia en una única GPU de gama baja o en CPU, adecuado para servicios *edge* o prototipos internos con latencia no crítica.
-- Docencia y experimentación: ejemplo mínimo de pipeline `Trainer` con `generated_from_trainer`, útil para ilustrar el flujo completo de ajuste y publicación en HuggingFace.
+- Docencia y experimentación: ejemplo mínimo de pipeline `Trainer` con `generated_from_trainer`, útil para ilustrar el flujo completo de ajuste y publicación en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 - GPU recomendadas: cualquier GPU con 2 GB o más de VRAM es suficiente. Una NVIDIA T4, L4, RTX 3060 o superior cubre el despliegue con holgura; A100/H100 solo tendrían sentido para servir lotes muy grandes.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo moderna (GTX 1650 4 GB en adelante) e incluso en iGPU con memoria compartida para lotes pequeños.
 - Inferencia en CPU: viable. El modelo completo en fp32 ocupa menos de 0,5 GB en disco y memoria, por lo que es apto para contenedores sin GPU.
-- Opciones de despliegue: `transformers` pipeline, HuggingFace Inference Endpoints (tag `endpoints_compatible`), Text Embeddings Inference (tag `text-embeddings-inference`), TorchServe o exportación a ONNX Runtime. El soporte en vLLM o llama.cpp no está verificado para este repositorio; BERT no es un caso de uso típico de motores de generación.
+- Opciones de despliegue: `transformers` pipeline, Hugging Face Inference Endpoints (tag `endpoints_compatible`), Text Embeddings Inference (tag `text-embeddings-inference`), TorchServe o exportación a ONNX Runtime. El soporte en vLLM o llama.cpp no está verificado para este repositorio; BERT no es un caso de uso típico de motores de generación.
 - Latencia y throughput: no disponibles. No se han publicado mediciones en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ Frente a las alternativas, este modelo no ofrece ninguna ventaja verificable: mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pari-Jain/bert-finetuned-imdb
+- Modelo en Hugging Face: https://huggingface.co/Pari-Jain/bert-finetuned-imdb
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Paper de BERT (BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding): no referenciado en la model card; disponible en https://arxiv.org/abs/1810.04805
 - Repositorios, demos o blogs del autor: no disponibles en la información proporcionada. Los resultados de la búsqueda web (pari.com, Betclic, Parions Sport, Wikipedia "Pari sportif") no guardan relación con el modelo y se descartan por coincidencia léxica con el nombre del autor.

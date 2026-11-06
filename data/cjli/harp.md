@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HARP es un conjunto de artefactos de investigacion para un sistema de recuperacion aumentada por generacion (RAG) hibrido sobre grabaciones de audio largas, de entre 10 minutos y 2 horas. Lo desarrolla cjli y se publica en HuggingFace como repositorio complementario del proyecto GitHub `chinjouli/harp`. El repositorio no contiene el corpus de audio, sino las consultas de evaluacion para dos tareas (musica y salud), metadatos de referencia y un checkpoint de reconocimiento de emociones del habla (CSER). Su relevancia radica en permitir reproducir experimentos de RAG audio de larga duracion sin redistribuir los corpus originales, respetando sus licencias.
+HARP es un conjunto de artefactos de investigacion para un sistema de recuperacion aumentada por generacion (RAG) hibrido sobre grabaciones de audio largas, de entre 10 minutos y 2 horas. Lo desarrolla cjli y se publica en Hugging Face como repositorio complementario del proyecto GitHub `chinjouli/harp`. El repositorio no contiene el corpus de audio, sino las consultas de evaluacion para dos tareas (musica y salud), metadatos de referencia y un checkpoint de reconocimiento de emociones del habla (CSER). Su relevancia radica en permitir reproducir experimentos de RAG audio de larga duracion sin redistribuir los corpus originales, respetando sus licencias.
 
 El checkpoint CSER incluido es una cabeza BiLSTM sobre un modelo base WavLM-Large, que predice Valence, Arousal y Dominance (V/A/D) por segundo. El tamano del repositorio es de 0,1 GB e incluye los directorios `songeval/`, `medmosaic/` y `checkpoints/cser/`. No se trata de un modelo de lenguaje generativo, sino de un conjunto de recursos de evaluacion y un modelo de analisis emocional de audio.
 
@@ -72,7 +72,7 @@ No disponible. HARP es un conjunto de artefactos especifico para RAG de audio la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cjli/harp
+- Hugging Face: https://huggingface.co/cjli/harp
 - Repositorio del proyecto HARP: https://github.com/chinjouli/harp
 - Dataset SongEval: https://huggingface.co/datasets/ASLP-lab/SongEval
 - Dataset MedMosaic: https://huggingface.co/datasets/icml-anon-submission/medmosaic-dataset

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, `qqyang/dataset-tactile-pred-exp`, no contiene un modelo de inteligencia artificial, sino un dataset experimental de predicción táctil. Ha sido publicado por el usuario `qqyang` y ocupa un tamaño de 2.6 GB. No se dispone de información sobre su contenido, estructura, licencia o idiomas. El repositorio fue creado el 2026-09-03 y actualizado el 2026-09-03. No se ha especificado ningún pipeline ni formato de datos. A pesar de que la ficha solicitada corresponde a un modelo, la información disponible indica claramente que se trata de un conjunto de datos, por lo que muchas de las especificaciones técnicas típicas de un modelo no aplican.
+Este repositorio de Hugging Face, `qqyang/dataset-tactile-pred-exp`, no contiene un modelo de inteligencia artificial, sino un dataset experimental de predicción táctil. Ha sido publicado por el usuario `qqyang` y ocupa un tamaño de 2.6 GB. No se dispone de información sobre su contenido, estructura, licencia o idiomas. El repositorio fue creado el 2026-09-03 y actualizado el 2026-09-03. No se ha especificado ningún pipeline ni formato de datos. A pesar de que la ficha solicitada corresponde a un modelo, la información disponible indica claramente que se trata de un conjunto de datos, por lo que muchas de las especificaciones técnicas típicas de un modelo no aplican.
 
 ## Especificaciones tecnicas
 
@@ -66,5 +66,5 @@ No disponible: no se han identificado modelos comparables, ya que el repositorio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qqyang/dataset-tactile-pred-exp
+- Hugging Face: https://huggingface.co/qqyang/dataset-tactile-pred-exp
 - No se han encontrado otros enlaces relevantes en la busqueda web.

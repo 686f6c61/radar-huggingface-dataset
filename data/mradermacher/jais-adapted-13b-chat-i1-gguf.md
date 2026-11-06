@@ -85,7 +85,7 @@ La comparativa se limita a variantes del mismo modelo base porque no se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/jais-adapted-13b-chat-i1-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/jais-adapted-13b-chat-i1-GGUF
 - Modelo base: https://huggingface.co/inception42/jais-adapted-13b-chat
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/jais-adapted-13b-chat-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#jais-adapted-13b-chat-i1-GGUF

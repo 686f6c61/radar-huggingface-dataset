@@ -4,7 +4,7 @@
 
 El repositorio `Mervin02/tds-carbon-card` no contiene un modelo de inteligencia artificial, sino una *model card* de contabilidad de carbono correspondiente a un proceso de fine-tuning realizado en el contexto del curso TDS GA8. Documenta las emisiones de CO₂ equivalente, el consumo energético y el hardware utilizado durante el entrenamiento, siguiendo las prácticas de "Green AI" para hacer transparente el impacto ambiental del entrenamiento de modelos.
 
-Aunque se etiqueta como un modelo en HuggingFace, su contenido es un registro de metadatos ambientales, no pesos ni arquitectura. Carece de pipeline, licencia e idiomas declarados, y no ofrece ninguna funcionalidad de inferencia. Su relevancia radica en ejemplificar cómo reportar la huella de carbono de un entrenamiento, no en ser un recurso utilizable para desarrollo o investigación.
+Aunque se etiqueta como un modelo en Hugging Face, su contenido es un registro de metadatos ambientales, no pesos ni arquitectura. Carece de pipeline, licencia e idiomas declarados, y no ofrece ninguna funcionalidad de inferencia. Su relevancia radica en ejemplificar cómo reportar la huella de carbono de un entrenamiento, no en ser un recurso utilizable para desarrollo o investigación.
 
 ## Especificaciones tecnicas
 
@@ -65,4 +65,4 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- [HuggingFace - Mervin02/tds-carbon-card](https://huggingface.co/Mervin02/tds-carbon-card)
+- [Hugging Face - Mervin02/tds-carbon-card](https://huggingface.co/Mervin02/tds-carbon-card)

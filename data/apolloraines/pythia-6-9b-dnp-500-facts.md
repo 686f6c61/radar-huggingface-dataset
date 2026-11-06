@@ -98,7 +98,7 @@ La comparacion directa con modelos de proposito general es poco favorable en con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApolloRaines/Pythia-6.9B-DNP-500-Facts
+- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Pythia-6.9B-DNP-500-Facts
 - Modelo base: https://huggingface.co/EleutherAI/pythia-6.9b
 - Mismo pipeline en 1.4B: https://huggingface.co/ApolloRaines/Pythia-1.4B-DNP-500-Facts
 - Prueba de concepto original de 198 hechos: https://huggingface.co/ApolloRaines/Pythia-1.4b-Knowledge-Implant

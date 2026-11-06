@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este checkpoint es un modelo de lenguaje derivado de Phi-1.5, publicado por el usuario `unl-reset` en HuggingFace. No se trata de un modelo de propósito general, sino de un artefacto de investigación orientado a experimentos de *machine unlearning* sobre el benchmark TOFU (Task of Fictitious Unlearning). Concretamente, parte de `locuslab/tofu_ft_phi-1.5`, un Phi-1.5 ajustado sobre el conjunto TOFU, y aplica una receta de reinicialización parcial (IHL + reset) centrada en el subconjunto *forget10* durante la época 13 de un total de 20.
+Este checkpoint es un modelo de lenguaje derivado de Phi-1.5, publicado por el usuario `unl-reset` en Hugging Face. No se trata de un modelo de propósito general, sino de un artefacto de investigación orientado a experimentos de *machine unlearning* sobre el benchmark TOFU (Task of Fictitious Unlearning). Concretamente, parte de `locuslab/tofu_ft_phi-1.5`, un Phi-1.5 ajustado sobre el conjunto TOFU, y aplica una receta de reinicialización parcial (IHL + reset) centrada en el subconjunto *forget10* durante la época 13 de un total de 20.
 
 La arquitectura subyacente es la de Phi-1.5: un transformer decoder-only de aproximadamente 1.418 millones de parámetros (1,4 B), entrenado originalmente por Microsoft para código y razonamiento básico. En este checkpoint, los embeddings de entrada y la cabeza LM se reinicializan desde `microsoft/phi-1_5`, mientras que el resto de pesos del transformer se conservan del modelo ajustado con TOFU. El objetivo declarado es doble: aplicar *token IHL* sobre el conjunto *forget* y una pérdida de entropía cruzada con peso 1.0 sobre el conjunto *retain*.
 
@@ -86,7 +86,7 @@ La comparación se limita a modelos de la misma familia y tamaño, ya que el che
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_head-epoch13
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_head-epoch13
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - Benchmark TOFU (referencia del dataset): no disponible en la información proporcionada

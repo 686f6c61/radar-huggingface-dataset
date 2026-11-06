@@ -25,7 +25,7 @@ Su relevancia actual es limitada: cero descargas y cero likes en el momento de l
 | Modelo base | `unsloth/Qwen2.5-7B-Instruct` |
 | Tamaño del repositorio | 0,1 GB |
 | Tipo de ajuste | Fine-tuning con Unsloth y TRL; no se especifica si es LoRA, QLoRA o fusión completa |
-| Fecha de publicación | 18 de octubre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 18 de octubre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -76,10 +76,10 @@ Estimaciones para un modelo denso de 7B, no medidas sobre este checkpoint concre
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Este checkpoint | 7 B nominales | No confirmado en esta ficha | Apache 2.0 | HuggingFace, 0 descargas | No evaluado |
-| Qwen2.5-7B-Instruct | 7,6 B | 131 072 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado | Referencia pública de la familia Qwen2.5 |
-| Llama-3.1-8B-Instruct | 8 B | 128 000 tokens | Licencia comunitaria Llama 3.1 | HuggingFace, ampliamente desplegado | Referencia pública de Meta |
-| Mistral-7B-Instruct-v0.3 | 7,2 B | 32 000 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado | Referencia pública de Mistral AI |
+| Este checkpoint | 7 B nominales | No confirmado en esta ficha | Apache 2.0 | Hugging Face, 0 descargas | No evaluado |
+| Qwen2.5-7B-Instruct | 7,6 B | 131 072 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado | Referencia pública de la familia Qwen2.5 |
+| Llama-3.1-8B-Instruct | 8 B | 128 000 tokens | Licencia comunitaria Llama 3.1 | Hugging Face, ampliamente desplegado | Referencia pública de Meta |
+| Mistral-7B-Instruct-v0.3 | 7,2 B | 32 000 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado | Referencia pública de Mistral AI |
 
 La comparación se limita a parámetros, contexto, licencia y disponibilidad; no se dispone de métricas de calidad para este checkpoint que permitan una comparación cuantitativa. En igualdad de condiciones, el modelo base Qwen2.5-7B-Instruct ofrece un contexto declarado muy superior y está validado por la comunidad, por lo que este ajuste solo aporta valor si su tarea específica mejora de forma medible.
 
@@ -97,7 +97,7 @@ La comparación se limita a parámetros, contexto, licencia y disponibilidad; no
 
 ## Enlaces
 
-- [HuggingFace: HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen9](https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen9)
+- [Hugging Face: HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen9](https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen9)
 - [Modelo base: unsloth/Qwen2.5-7B-Instruct](https://huggingface.co/unsloth/Qwen2.5-7B-Instruct)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
 - No se encontraron papers, blogs, demos ni repositorios adicionales asociados a este checkpoint en la búsqueda web realizada; los resultados devueltos no guardaban relación con el modelo.

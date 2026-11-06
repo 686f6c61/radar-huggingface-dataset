@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma 4 12B Unified es un modelo multimodal de código abierto desarrollado por Google DeepMind, publicado en HuggingFace bajo el identificador `alekshandru/gemma-4-12B`. Forma parte de la familia Gemma 4, que incluye arquitecturas densas y de mezcla de expertos (MoE) en cinco tamaños: E2B, E4B, 12B, 26B A4B y 31B. Este modelo concreto, de 11.950 millones de parámetros, adopta un diseño *encoder-free* (sin codificadores externos) que proyecta directamente parches de imagen y formas de onda de audio al espacio de embeddings del transformer, lo que reduce la latencia multimodal y permite afinar todo el modelo en una sola pasada.
+Gemma 4 12B Unified es un modelo multimodal de código abierto desarrollado por Google DeepMind, publicado en Hugging Face bajo el identificador `alekshandru/gemma-4-12B`. Forma parte de la familia Gemma 4, que incluye arquitecturas densas y de mezcla de expertos (MoE) en cinco tamaños: E2B, E4B, 12B, 26B A4B y 31B. Este modelo concreto, de 11.950 millones de parámetros, adopta un diseño *encoder-free* (sin codificadores externos) que proyecta directamente parches de imagen y formas de onda de audio al espacio de embeddings del transformer, lo que reduce la latencia multimodal y permite afinar todo el modelo en una sola pasada.
 
 El modelo está pensado para entornos locales y de consumo: su tamaño (12B) cabe en GPUs de gama alta y estaciones de trabajo, y soporta una ventana de contexto de hasta 256.000 tokens. Entre sus capacidades destacan el razonamiento con modos de pensamiento configurables, la generación de código, el *function calling* nativo y el procesamiento de texto, imagen y audio (no así vídeo, que está reservado a los modelos E2B/E4B). La licencia Apache 2.0 permite uso comercial sin restricciones significativas, lo que lo convierte en una opción atractiva para producción.
 
@@ -78,8 +78,8 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - alekshandru/gemma-4-12B](https://huggingface.co/alekshandru/gemma-4-12B)
-- [Colección Gemma 4 en HuggingFace](https://huggingface.co/collections/google/gemma-4)
+- [Hugging Face - alekshandru/gemma-4-12B](https://huggingface.co/alekshandru/gemma-4-12B)
+- [Colección Gemma 4 en Hugging Face](https://huggingface.co/collections/google/gemma-4)
 - [GitHub - google-gemma](https://github.com/google-gemma)
 - [Blog de lanzamiento](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/)
 - [Documentación oficial](https://ai.google.dev/gemma/docs/core)

@@ -16,10 +16,10 @@ La versión `base` es la tercera de la familia Whisper (por tamaño: tiny, base,
 | Parametros totales | 74 millones (74 M) |
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 30 segundos de audio por ventana (el modelo procesa clips de audio de hasta 30 s) |
-| Tipos de cuantizacion | No disponible en la informacion de HuggingFace; en el ecosistema whisper.cpp existen versiones cuantizadas (GGML/GGUF) |
+| Tipos de cuantizacion | No disponible en la informacion de Hugging Face; en el ecosistema whisper.cpp existen versiones cuantizadas (GGML/GGUF) |
 | Idiomas soportados | Multilingue (99 idiomas en la version oficial, incluye espanol, ingles, frances, etc.) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (en HuggingFace); tambien disponible en GGML/GGUF para whisper.cpp |
+| Formato de pesos | safetensors (en Hugging Face); tambien disponible en GGML/GGUF para whisper.cpp |
 
 ## Arquitectura y entrenamiento
 
@@ -48,14 +48,14 @@ El entrenamiento se realizo con un objetivo de perdida estandar de secuencia a s
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card de HuggingFace no incluye datos de evaluacion (como WER, CER, o comparativas con otros modelos). En la documentacion oficial de OpenAI se reporta que Whisper base logra un WER medio de alrededor de 5,8 en ingles y 12,4 en otros idiomas (según el paper original), pero estos datos no estan en la informacion proporcionada y no se pueden verificar en esta ficha. Por lo tanto, se recomienda consultar la documentacion oficial de OpenAI o realizar evaluaciones propias para el caso de uso concreto.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card de Hugging Face no incluye datos de evaluacion (como WER, CER, o comparativas con otros modelos). En la documentacion oficial de OpenAI se reporta que Whisper base logra un WER medio de alrededor de 5,8 en ingles y 12,4 en otros idiomas (según el paper original), pero estos datos no estan en la informacion proporcionada y no se pueden verificar en esta ficha. Por lo tanto, se recomienda consultar la documentacion oficial de OpenAI o realizar evaluaciones propias para el caso de uso concreto.
 
 ## Requisitos de hardware
 
 - **VRAM estimada**: al ser un modelo de 74 M de parametros, la inferencia en GPU es muy ligera. En cuantizacion de 32 bits (float32) ocupa aproximadamente 296 MB de VRAM; en 16 bits (float16) unos 148 MB; y en cuantizacion 8 bits (int8) menos de 80 MB.
 - **GPU recomendadas**: cualquier GPU moderna con al menos 2 GB de VRAM es suficiente. Modelos como NVIDIA T4, RTX 2060, RTX 3060, o incluso GPUs integradas (iGPU) pueden ejecutarlo sin problemas.
 - **CPU**: tambien se puede ejecutar en CPU pura con una latencia de unos pocos segundos por clip de 30 segundos, dependiendo del procesador.
-- **Opciones de despliegue**: se puede usar con la libreria de OpenAI `whisper` (Python), con `transformers` de HuggingFace, o con `whisper.cpp` para entornos de bajo recursos. Tambien es compatible con `faster-whisper` para inferencia optimizada en CPU/GPU.
+- **Opciones de despliegue**: se puede usar con la libreria de OpenAI `whisper` (Python), con `transformers` de Hugging Face, o con `whisper.cpp` para entornos de bajo recursos. Tambien es compatible con `faster-whisper` para inferencia optimizada en CPU/GPU.
 - **Latencia y throughput**: en una GPU RTX 3060, la transcripcion de un clip de 30 segundos suele completarse en menos de 1 segundo; en CPU moderna (8 nucleos), aproximadamente 2-3 segundos por clip.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ La comparativa se basa en modelos de la misma familia. Whisper base ofrece un pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Roy229/filesystem_fetch_huggingface_3144_mdl_whisper-base
+- Modelo en Hugging Face: https://huggingface.co/Roy229/filesystem_fetch_huggingface_3144_mdl_whisper-base
 - Perfil de usuario Roy229: https://huggingface.co/Roy229/models
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-large-v3
 - Repositorio oficial de Whisper en GitHub: https://github.com/openai/whisper

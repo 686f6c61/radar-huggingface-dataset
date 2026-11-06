@@ -77,8 +77,8 @@ Silero VAD destaca por su equilibrio entre precision y eficiencia, superando a W
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Fazmin/solus_v1_silero-vad-v5
-- Modelo base en HuggingFace: https://huggingface.co/onnx-community/silero-vad
+- Repositorio Hugging Face: https://huggingface.co/Fazmin/solus_v1_silero-vad-v5
+- Modelo base en Hugging Face: https://huggingface.co/onnx-community/silero-vad
 - Repositorio GitHub original: https://github.com/snakers4/silero-vad
 - Releases de Silero VAD en GitHub: https://github.com/snakers4/silero-vad/releases
 - Paquete PyPI: https://pypi.org/project/silero-vad/

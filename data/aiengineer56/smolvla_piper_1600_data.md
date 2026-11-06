@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolVLA_Piper_1600_data es un ajuste fino (fine-tune) del modelo base lerobot/smolvla_base, un modelo compacto de tipo vision-language-action (VLA) desarrollado originalmente por HuggingFace y entrenado aqui por el usuario aiengineer56. Se trata de una politica robotica que mapea observaciones visuales e instrucciones en lenguaje natural a acciones motoras, y que ha sido entrenada y publicada en el Hub mediante la libreria LeRobot. El repositorio tiene 450.046.176 parametros (~450 M) en formato safetensors y ocupa 1,8 GB.
+SmolVLA_Piper_1600_data es un ajuste fino (fine-tune) del modelo base lerobot/smolvla_base, un modelo compacto de tipo vision-language-action (VLA) desarrollado originalmente por Hugging Face y entrenado aqui por el usuario aiengineer56. Se trata de una politica robotica que mapea observaciones visuales e instrucciones en lenguaje natural a acciones motoras, y que ha sido entrenada y publicada en el Hub mediante la libreria LeRobot. El repositorio tiene 450.046.176 parametros (~450 M) en formato safetensors y ocupa 1,8 GB.
 
 El interes de esta ficha radica en que ejemplifica el flujo de trabajo de ajuste fino de politicas roboticas open source con LeRobot, orientado a un brazo tipo Piper (el nombre sugiere un conjunto de datos de 1600 episodios, aunque no se documenta). Frente a los VLA de gran tamano (OpenVLA, pi0), la familia SmolVLA busca un equilibrio entre rendimiento competitivo y coste computacional reducido, con despliegue viable en hardware de consumo.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SmolVLA_Piper_1600_data (este) | ~450 M | VLA (fine-tune) | apache-2.0 | HuggingFace |
-| lerobot/smolvla_base | ~450 M (no confirmado en la informacion) | VLA (base) | no disponible en la informacion | HuggingFace |
-| OpenVLA | ~7 B (referencia general) | VLA | no disponible en la informacion | HuggingFace |
+| SmolVLA_Piper_1600_data (este) | ~450 M | VLA (fine-tune) | apache-2.0 | Hugging Face |
+| lerobot/smolvla_base | ~450 M (no confirmado en la informacion) | VLA (base) | no disponible en la informacion | Hugging Face |
+| OpenVLA | ~7 B (referencia general) | VLA | no disponible en la informacion | Hugging Face |
 | pi0 (Physical Intelligence) | ~3,3 B (referencia general) | VLA | no disponible en la informacion | no disponible en la informacion |
 
 Los datos cuantitativos de rendimiento no estan disponibles para este ajuste, por lo que la comparacion no puede completarse con metricas.
@@ -88,7 +88,7 @@ Los datos cuantitativos de rendimiento no estan disponibles para este ajuste, po
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aiengineer56/SmolVLA_Piper_1600_data
+- Hugging Face: https://huggingface.co/aiengineer56/SmolVLA_Piper_1600_data
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

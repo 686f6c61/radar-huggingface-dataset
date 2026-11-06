@@ -6,7 +6,7 @@
 
 La relevancia de este repositorio concreto es de trazabilidad, no de investigacion: el autor lo publica para fijar por commit y verificar por hash el fichero exacto que consume su aplicacion de notas de reunion, que lo emplea como modelo de resumen en el nivel de 8 GB. El fichero es byte a byte identico al original de IBM (revision `c2cb1972f511add21f3bae244990b8ff3a3ffb23`) y ocupa 901.162.208 bytes en cuantizacion Q4_K_M.
 
-Al tratarse de un espejo sin modificaciones y sin telemetria de uso en HuggingFace (0 descargas, 0 likes en el momento de la consulta), para evaluar capacidades, arquitectura, entrenamiento y limites conviene acudir siempre a la documentacion oficial de IBM; esta ficha recoge unicamente lo verificable en la informacion disponible.
+Al tratarse de un espejo sin modificaciones y sin telemetria de uso en Hugging Face (0 descargas, 0 likes en el momento de la consulta), para evaluar capacidades, arquitectura, entrenamiento y limites conviene acudir siempre a la documentacion oficial de IBM; esta ficha recoge unicamente lo verificable en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ La informacion disponible no incluye una evaluacion propia de capacidades. Los u
 - Generacion de texto: el `pipeline_tag` es `text-generation` y la etiqueta `conversational` sugiere uso en dialogos multi-turno.
 - Resumen: el caso de uso declarado por el autor es el resumen de notas de reunion en una aplicacion propia, en la franja de 8 GB de RAM/VRAM.
 - Compatibilidad con llama.cpp: el formato GGUF y la etiqueta `llama.cpp` implican soporte de inferencia en CPU y GPU a traves de ese runtime.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el artefacto puede servirse en infraestructura de HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el artefacto puede servirse en infraestructura de Hugging Face Inference Endpoints.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues: no disponible en la informacion proporcionada (los idiomas no figuran en los metadatos).
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Estimaciones de tamano de pesos segun cuantizacion (calculadas a partir de 1,46 B de parametros): Q4_K_M aproximadamente 0,9 GB; Q8_0 aproximadamente 1,5-1,6 GB; F16 aproximadamente 2,9-3,0 GB. Solo el Q4_K_M esta publicado en este repositorio.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM es suficiente; RTX 3060, RTX 4060, RTX 4090 y similares ejecutan el modelo con holgura. Las GPU de datacenter (A100, H100) no aportan ventaja relevante por tamano y solo tendrian sentido en despliegues con muchas peticiones concurrentes.
 - Cabe en GPU consumer: si, en practicamente todas las GPU dedicadas modernas, e incluso en iGPU con memoria compartida suficiente.
-- Opciones de despliegue: llama.cpp (runtime de referencia para este artefacto), Ollama, LM Studio, Jan y otros frontends basados en GGUF; tambien es compatible con HuggingFace Inference Endpoints segun la etiqueta `endpoints_compatible`. vLLM y TGI no son la via natural para un GGUF de este tipo.
+- Opciones de despliegue: llama.cpp (runtime de referencia para este artefacto), Ollama, LM Studio, Jan y otros frontends basados en GGUF; tambien es compatible con Hugging Face Inference Endpoints segun la etiqueta `endpoints_compatible`. vLLM y TGI no son la via natural para un GGUF de este tipo.
 - Latencia y throughput estimados: no disponible en la informacion proporcionada. Dependera fuertemente del backend (CPU frente a GPU), del numero de hilos y del contexto.
 
 ## Comparativa con modelos similares

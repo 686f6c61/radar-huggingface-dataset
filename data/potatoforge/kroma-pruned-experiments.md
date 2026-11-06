@@ -71,9 +71,9 @@ El README del autor no incluye metricas de calidad, comparaciones numericas entr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| PotatoForge/Kroma-Pruned-Experiments (Mixed Quant) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas | ~7,84 GB, poda estructural + cuantizacion mixta |
-| PotatoForge/Kroma-Pruned-Experiments (INT8 ConvRot) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas | ~11,4 GB, poda estructural + INT8 |
-| lodestones/Kroma (modelo base) | no disponible | no disponible | no disponible | HuggingFace | ~23,8 GB en BF16, 28 bloques, MLP de 16.384 canales |
+| PotatoForge/Kroma-Pruned-Experiments (Mixed Quant) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas | ~7,84 GB, poda estructural + cuantizacion mixta |
+| PotatoForge/Kroma-Pruned-Experiments (INT8 ConvRot) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas | ~11,4 GB, poda estructural + INT8 |
+| lodestones/Kroma (modelo base) | no disponible | no disponible | no disponible | Hugging Face | ~23,8 GB en BF16, 28 bloques, MLP de 16.384 canales |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de informacion para identificar modelos comparables |
 
 ## Limitaciones y advertencias
@@ -90,6 +90,6 @@ El README del autor no incluye metricas de calidad, comparaciones numericas entr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PotatoForge/Kroma-Pruned-Experiments
+- Repositorio en Hugging Face: https://huggingface.co/PotatoForge/Kroma-Pruned-Experiments
 - Modelo base: https://huggingface.co/lodestones/Kroma
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

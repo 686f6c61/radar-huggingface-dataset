@@ -12,7 +12,7 @@ Se trata de un modelo con muy poca tracción en el ecosistema (35 descargas y 1 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text), familia Qwen3.8; tag `qwen3_5` en HuggingFace |
+| Arquitectura | Transformer multimodal (image-text-to-text), familia Qwen3.8; tag `qwen3_5` en Hugging Face |
 | Parametros totales | 27.781.427.952 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -88,8 +88,8 @@ Capacidad general (thinking mode, `xhigh`, 65.536 tokens maximos de salida, temp
 
 | Modelo | Parametros | Contexto | Licencia | Censura politica (banco Pan y Xu) | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Uncensored-v2 | 27,78 B | no disponible | Apache 2.0 | 3,5 % (4/113) | HuggingFace (BF16, FP8, GGUF) |
-| Qwen3.8-27B | no disponible en la informacion | no disponible | Apache 2.0 | 86,7 % (98/113) | HuggingFace (modelo base) |
+| Qwen3.8-27B-Uncensored-v2 | 27,78 B | no disponible | Apache 2.0 | 3,5 % (4/113) | Hugging Face (BF16, FP8, GGUF) |
+| Qwen3.8-27B | no disponible en la informacion | no disponible | Apache 2.0 | 86,7 % (98/113) | Hugging Face (modelo base) |
 | Otras variantes uncensored de la familia Qwen | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de modelos alternativos de la misma categoria en la informacion proporcionada, por lo que la comparativa se limita al modelo base.
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks de modelos alternativos de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v2
+- Modelo en Hugging Face: https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v2
 - Variante FP8: https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v2-FP8
 - Variante GGUF Q4_K_M: https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v2-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

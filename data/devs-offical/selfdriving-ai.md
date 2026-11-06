@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SelfDriving-AI es un repositorio de modelo publicado en HuggingFace por el usuario Devs-Offical bajo licencia MIT. En el momento de la consulta, la model card asociada no contiene ningun contenido tecnico: unicamente el bloque de frontmatter con la licencia, sin descripcion, sin especificaciones de arquitectura, sin datos de entrenamiento y sin instrucciones de uso. El unico identificador disponible es el nombre elegido por el autor, que sugiere un proposito relacionado con conduccion autonoma, pero esta interpretacion no puede confirmarse con la documentacion publicada.
+SelfDriving-AI es un repositorio de modelo publicado en Hugging Face por el usuario Devs-Offical bajo licencia MIT. En el momento de la consulta, la model card asociada no contiene ningun contenido tecnico: unicamente el bloque de frontmatter con la licencia, sin descripcion, sin especificaciones de arquitectura, sin datos de entrenamiento y sin instrucciones de uso. El unico identificador disponible es el nombre elegido por el autor, que sugiere un proposito relacionado con conduccion autonoma, pero esta interpretacion no puede confirmarse con la documentacion publicada.
 
-El repositorio registra cero descargas y cero "likes", y no tiene pipeline declarado en HuggingFace. Tampoco se han declarado idiomas soportados. La fecha de creacion y de ultima actualizacion coincide (2026-09-18), lo que indica que no ha habido modificaciones posteriores a la publicacion inicial del repositorio.
+El repositorio registra cero descargas y cero "likes", y no tiene pipeline declarado en Hugging Face. Tampoco se han declarado idiomas soportados. La fecha de creacion y de ultima actualizacion coincide (2026-09-18), lo que indica que no ha habido modificaciones posteriores a la publicacion inicial del repositorio.
 
 Desde el punto de vista de la evaluacion tecnica, la ausencia total de informacion (parametros, contexto, dataset, formato de pesos) impide determinar si se trata de un modelo entrenado desde cero, de un ajuste fino de otro modelo, de un artefacto en construccion o de un repositorio meramente placeholder. Las busquedas web realizadas no arrojan ningun resultado relacionado: los enlaces devueltos corresponden a la serie de television "Devs" (2020) y no guardan relacion con este modelo.
 
@@ -39,7 +39,7 @@ No es posible enumerar capacidades concretas porque la documentacion publicada n
 
 ## Casos de uso
 
-No se pueden proponer casos de uso realistas sin conocer las capacidades, el tamano ni el dominio de entrenamiento del modelo. La model card no documenta ninguna tarea objetivo y no se ha publicado ninguna demo, ejemplo de inferencia o espacio de HuggingFace asociado. Cualquier escenario de aplicacion (por ejemplo, percepcion para vehiculos autonomos, generacion de codigo o atencion al cliente) seria una invencion no respaldada por la informacion disponible.
+No se pueden proponer casos de uso realistas sin conocer las capacidades, el tamano ni el dominio de entrenamiento del modelo. La model card no documenta ninguna tarea objetivo y no se ha publicado ninguna demo, ejemplo de inferencia o espacio de Hugging Face asociado. Cualquier escenario de aplicacion (por ejemplo, percepcion para vehiculos autonomos, generacion de codigo o atencion al cliente) seria una invencion no respaldada por la informacion disponible.
 
 Recomendacion practica: antes de plantear cualquier caso de uso, es necesario contactar con el autor o esperar a que se publique documentacion tecnica, pesos utilizables y ejemplos de inferencia.
 
@@ -74,9 +74,9 @@ No disponible. Al desconocerse el tamano, la arquitectura, el contexto y el rend
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Devs-Offical/SelfDriving-AI
+- Hugging Face: https://huggingface.co/Devs-Offical/SelfDriving-AI
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible
-- Demo o espacio de HuggingFace: no disponible
+- Demo o espacio de Hugging Face: no disponible
 - Resultados de busqueda web: ninguna referencia relevante. Los enlaces devueltos (Wikipedia, AlloCine, IMDb, Prime Video) corresponden a la serie de television "Devs" y no guardan relacion con este modelo.

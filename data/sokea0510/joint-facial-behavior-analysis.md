@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sokea0510/joint-facial-behavior-analysis` es un repositorio de investigación publicado en HuggingFace bajo el nombre de Joint Facial Behavior Analysis Toolkit (JFBA). No se trata de un modelo de lenguaje ni de un checkpoint de red neuronal entrenado, sino de un pequeño paquete Python con interfaz de línea de comandos que orquesta backends publicados de análisis facial (actualmente un adaptador para LibreFace) para estimar unidades de acción facial (AU) y realizar alineamiento de rostros. El autor lo describe explícitamente como código en estado de "public-preview": el repositorio no incluye pesos propios, y el checkpoint local experimental fue entrenado con objetivos proxy derivados de geometría y no ha sido validado contra un conjunto de test independiente codificado con FACS humano.
+`sokea0510/joint-facial-behavior-analysis` es un repositorio de investigación publicado en Hugging Face bajo el nombre de Joint Facial Behavior Analysis Toolkit (JFBA). No se trata de un modelo de lenguaje ni de un checkpoint de red neuronal entrenado, sino de un pequeño paquete Python con interfaz de línea de comandos que orquesta backends publicados de análisis facial (actualmente un adaptador para LibreFace) para estimar unidades de acción facial (AU) y realizar alineamiento de rostros. El autor lo describe explícitamente como código en estado de "public-preview": el repositorio no incluye pesos propios, y el checkpoint local experimental fue entrenado con objetivos proxy derivados de geometría y no ha sido validado contra un conjunto de test independiente codificado con FACS humano.
 
-El problema que aborda es la reproducibilidad en computación afectiva: el toolkit registra junto a cada resultado el backend utilizado, el runtime y las limitaciones conocidas, y exporta salidas estructuradas en JSON sin redistribuir el medio de entrada. Está etiquetado como `image-classification` en el pipeline de HuggingFace, pero su naturaleza real es la de una herramienta de inferencia sobre modelos de terceros, no la de un modelo entrenado por el autor.
+El problema que aborda es la reproducibilidad en computación afectiva: el toolkit registra junto a cada resultado el backend utilizado, el runtime y las limitaciones conocidas, y exporta salidas estructuradas en JSON sin redistribuir el medio de entrada. Está etiquetado como `image-classification` en el pipeline de Hugging Face, pero su naturaleza real es la de una herramienta de inferencia sobre modelos de terceros, no la de un modelo entrenado por el autor.
 
 Su relevancia actual es limitada pero concreta: sirve como capa de auditoría y trazabilidad para investigadores que necesitan ejecutar análisis de AU de forma reproducible, con advertencias explícitas sobre el carácter experimental de las salidas. El tamaño del repositorio es de 0.0 GB, lo que confirma la ausencia de binarios de pesos.
 
@@ -86,7 +86,7 @@ La comparación directa con modelos de lenguaje no procede: JFBA no es un modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sokea0510/joint-facial-behavior-analysis
+- Repositorio en Hugging Face: https://huggingface.co/sokea0510/joint-facial-behavior-analysis
 - Documentación del modelo en el repositorio: MODEL_CARD.md (referenciado en la model card)
 - Revisión de literatura: docs/RESEARCH_REVIEW.md (referenciado en la model card)
 - Política de datasets: docs/DATASETS.md (referenciado en la model card)

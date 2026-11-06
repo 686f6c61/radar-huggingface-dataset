@@ -4,7 +4,7 @@
 
 Mohamedd123321/Arabizi_Checkpoints-large-last es un modelo de transformación de texto especializado en la transliteración de Arabizi marroquí a árabe estándar. El Arabizi es un sistema de escritura del árabe dialectal utilizando caracteres latinos y dígitos (por ejemplo, "3" para ع, "7" para ح), muy extendido en redes sociales y mensajería en el norte de África. Este modelo aborda la tarea de convertir ese texto latino informal al alfabeto árabe, un paso previo necesario para el procesamiento del lenguaje natural en dialectos magrebíes.
 
-El modelo está desarrollado por Mohamed Mahmoud (usuario Mohamedd123321 en HuggingFace) y se basa en una arquitectura transformer a nivel de caracteres, según la información disponible en la publicación académica asociada. El trabajo se presenta como el primer modelo basado en transformers diseñado específicamente para la transliteración de Arabizi marroquí, entrenado sobre un conjunto de datos semiautomático con más de 33.000 pares de palabras. La licencia Apache 2.0 permite su uso comercial sin restricciones significativas.
+El modelo está desarrollado por Mohamed Mahmoud (usuario Mohamedd123321 en Hugging Face) y se basa en una arquitectura transformer a nivel de caracteres, según la información disponible en la publicación académica asociada. El trabajo se presenta como el primer modelo basado en transformers diseñado específicamente para la transliteración de Arabizi marroquí, entrenado sobre un conjunto de datos semiautomático con más de 33.000 pares de palabras. La licencia Apache 2.0 permite su uso comercial sin restricciones significativas.
 
 La relevancia de este modelo radica en que el Arabizi es un fenómeno lingüístico masivo en el mundo árabe digital, y su conversión a árabe estándar es un paso crítico para aplicaciones de análisis de sentimiento, moderación de contenido y procesamiento de lenguaje natural en dialectos. A diferencia de los traductores automáticos genéricos, este modelo está especializado en la variante marroquí, que presenta particularidades fonéticas y ortográficas propias.
 
@@ -71,6 +71,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mohamedd123321/Arabizi_Checkpoints-large-last
+- Modelo en Hugging Face: https://huggingface.co/Mohamedd123321/Arabizi_Checkpoints-large-last
 - Perfil del autor: https://huggingface.co/Mohamedd123321
 - Publicación académica (DOAJ): https://doaj.org/article/22848aa2edf247f0a9f9628754b44d60

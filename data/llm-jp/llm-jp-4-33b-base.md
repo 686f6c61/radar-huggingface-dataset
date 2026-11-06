@@ -78,7 +78,7 @@ La comparativa directa con modelos de 33B no está disponible en la información
 
 ## Enlaces
 
-- [HuggingFace - llm-jp/llm-jp-4-33b-base](https://huggingface.co/llm-jp/llm-jp-4-33b-base)
+- [Hugging Face - llm-jp/llm-jp-4-33b-base](https://huggingface.co/llm-jp/llm-jp-4-33b-base)
 - [Noticia de lanzamiento (NII)](https://llm-jp.nii.ac.jp/news/20260818/)
 - [Página de releases de LLM-jp](https://llm-jp.nii.ac.jp/en/release-en/)
 - [Colección de modelos LLM-jp-4](https://huggingface.co/collections/llm-jp/llm-jp-4-models)

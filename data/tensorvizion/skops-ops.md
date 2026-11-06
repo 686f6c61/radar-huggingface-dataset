@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio TensorVizion/SKOPS-OPS fue publicado en HuggingFace el 26 de agosto de 2026 por el usuario TensorVizion bajo licencia Apache 2.0. La model card asociada está vacía: no contiene descripción del modelo, arquitectura, tamaño, idiomas ni instrucciones de uso. El nombre del repositorio coincide con el de la biblioteca Python skops, desarrollada por la comunidad skops-dev, que permite persistir y compartir modelos de scikit-learn de forma segura sin depender de pickle. Sin embargo, no hay ninguna evidencia en el repositorio que confirme que su contenido esté relacionado con dicha biblioteca. A fecha de la consulta, el repositorio registra cero descargas y cero "likes", lo que indica que se trata de una publicación reciente o de un espacio sin uso documentado. No se puede determinar si el contenido es un modelo de inteligencia artificial, un artefacto de software o un repositorio vacío.
+El repositorio TensorVizion/SKOPS-OPS fue publicado en Hugging Face el 26 de agosto de 2026 por el usuario TensorVizion bajo licencia Apache 2.0. La model card asociada está vacía: no contiene descripción del modelo, arquitectura, tamaño, idiomas ni instrucciones de uso. El nombre del repositorio coincide con el de la biblioteca Python skops, desarrollada por la comunidad skops-dev, que permite persistir y compartir modelos de scikit-learn de forma segura sin depender de pickle. Sin embargo, no hay ninguna evidencia en el repositorio que confirme que su contenido esté relacionado con dicha biblioteca. A fecha de la consulta, el repositorio registra cero descargas y cero "likes", lo que indica que se trata de una publicación reciente o de un espacio sin uso documentado. No se puede determinar si el contenido es un modelo de inteligencia artificial, un artefacto de software o un repositorio vacío.
 
 ## Especificaciones técnicas
 
@@ -52,6 +52,6 @@ No disponible. No se puede establecer una comparativa con otros modelos o herram
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TensorVizion/SKOPS-OPS
+- Repositorio en Hugging Face: https://huggingface.co/TensorVizion/SKOPS-OPS
 - Repositorio de skops en GitHub: https://github.com/skops-dev/skops
 - Documentacion de skops: https://skops.readthedocs.io/en/stable/

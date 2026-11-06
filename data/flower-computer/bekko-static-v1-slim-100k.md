@@ -75,10 +75,10 @@ No se han publicado resultados de MMLU, HumanEval ni GSM8K, ya que el modelo no 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| **bekko-static-v1-slim-100k** | 102,4 M | no disponible | MIT | HuggingFace, crate `encoders` | 25 lenguas, Matryoshka 32-1024, 205 MB |
-| hotchpotch/bekko-static-embedding-v1 | no disponible | no disponible | no disponible | HuggingFace | Modelo fuente, 200k tokens, 40 lenguas, 410 MB |
-| bekko-static-v1-slim-50k | no disponible | no disponible | MIT | HuggingFace | Misma familia, 50k tokens, 102 MB, 25 lenguas |
-| bekko-static-v1-slim-32k | no disponible | no disponible | MIT | HuggingFace | Misma familia, 32k tokens, 66 MB, 14 lenguas |
+| **bekko-static-v1-slim-100k** | 102,4 M | no disponible | MIT | Hugging Face, crate `encoders` | 25 lenguas, Matryoshka 32-1024, 205 MB |
+| hotchpotch/bekko-static-embedding-v1 | no disponible | no disponible | no disponible | Hugging Face | Modelo fuente, 200k tokens, 40 lenguas, 410 MB |
+| bekko-static-v1-slim-50k | no disponible | no disponible | MIT | Hugging Face | Misma familia, 50k tokens, 102 MB, 25 lenguas |
+| bekko-static-v1-slim-32k | no disponible | no disponible | MIT | Hugging Face | Misma familia, 32k tokens, 66 MB, 14 lenguas |
 
 No se dispone de datos para comparar con modelos de embeddings densos basados en transformer (por ejemplo, familias tipo multilingual-e5 o bge-m3), ya que no se han proporcionado resultados de esos modelos en la informacion disponible.
 
@@ -94,7 +94,7 @@ No se dispone de datos para comparar con modelos de embeddings densos basados en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flower-computer/bekko-static-v1-slim-100k
+- Modelo en Hugging Face: https://huggingface.co/flower-computer/bekko-static-v1-slim-100k
 - Modelo base: https://huggingface.co/hotchpotch/bekko-static-embedding-v1
 - Coleccion de la familia slim: https://huggingface.co/collections/flower-computer/bekko-static-v1-slim-6aecc3d4969e7752c8a5074f
 - Variante 75k: https://huggingface.co/flower-computer/bekko-static-v1-slim-75k

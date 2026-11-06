@@ -2,11 +2,11 @@
 
 ## Resumen
 
-dreadytofat/blackdwarf es un adaptador PEFT publicado en HuggingFace por el usuario dreadytofat. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (presumiblemente LoRA/QLoRA) que debe cargarse junto al modelo base declarado: unsloth/meta-llama-3.1-70b-instruct-bnb-4bit, es decir, una versión del Llama 3.1 70B Instruct cuantizada a 4 bits con bitsandbytes y distribuida por Unsloth.
+dreadytofat/blackdwarf es un adaptador PEFT publicado en Hugging Face por el usuario dreadytofat. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (presumiblemente LoRA/QLoRA) que debe cargarse junto al modelo base declarado: unsloth/meta-llama-3.1-70b-instruct-bnb-4bit, es decir, una versión del Llama 3.1 70B Instruct cuantizada a 4 bits con bitsandbytes y distribuida por Unsloth.
 
 El repositorio ocupa 0,4 GB y contiene únicamente ficheros safetensors del adaptador, junto con metadatos de la librería PEFT (versión 0.15.2). El modelo base no se incluye: para utilizarlo hay que descargar aparte los pesos cuantizados de 70B (en torno a 35-40 GB), lo que condiciona por completo los requisitos de hardware y el flujo de despliegue.
 
-La relevancia de esta ficha es limitada y debe leerse con cautela: la model card es la plantilla por defecto de HuggingFace sin rellenar, no se declara licencia, idiomas, dataset ni hiperparámetros de entrenamiento, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta. Se trata, por tanto, de un artefacto experimental sin validación pública documentada.
+La relevancia de esta ficha es limitada y debe leerse con cautela: la model card es la plantilla por defecto de Hugging Face sin rellenar, no se declara licencia, idiomas, dataset ni hiperparámetros de entrenamiento, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta. Se trata, por tanto, de un artefacto experimental sin validación pública documentada.
 
 ## Especificaciones técnicas
 
@@ -97,7 +97,7 @@ Frente a estos modelos, la diferencia relevante de blackdwarf no es de capacidad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dreadytofat/blackdwarf
+- Modelo en Hugging Face: https://huggingface.co/dreadytofat/blackdwarf
 - Modelo base declarado: https://huggingface.co/unsloth/meta-llama-3.1-70b-instruct-bnb-4bit
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct
 - Anuncio de Llama 3.1: https://ai.meta.com/blog/meta-llama-3-1/

@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| upbringing-olmo2-1b-sft-dpo | 1,484,916.736 | no disponible | no disponible | HuggingFace, transformers, safetensors |
-| allenai/OLMo-2-0425-1B-DPO | ~1,48 mil millones | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace, familia OLMo 2 de Ai2 |
-| Qwen2.5-1.5B (familia) | orden de 1,5 mil millones | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
-| Llama 3.2 1B (familia) | orden de 1,2 mil millones | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| upbringing-olmo2-1b-sft-dpo | 1,484,916.736 | no disponible | no disponible | Hugging Face, transformers, safetensors |
+| allenai/OLMo-2-0425-1B-DPO | ~1,48 mil millones | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face, familia OLMo 2 de Ai2 |
+| Qwen2.5-1.5B (familia) | orden de 1,5 mil millones | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
+| Llama 3.2 1B (familia) | orden de 1,2 mil millones | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 
 Nota: los datos de los modelos comparativos no se han verificado en la informacion proporcionada; se incluyen unicamente como referencia de categoria por tamano. No se dispone de cifras de rendimiento comparadas para ninguno de ellos.
 
@@ -89,7 +89,7 @@ Nota: los datos de los modelos comparativos no se han verificado en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DennisKoshta/upbringing-olmo2-1b-sft-dpo
+- Modelo en Hugging Face: https://huggingface.co/DennisKoshta/upbringing-olmo2-1b-sft-dpo
 - Modelo base SFT: https://huggingface.co/DennisKoshta/upbringing-olmo2-1b-sft
 - Sitio interactivo del proyecto Upbringing: https://denniskoshta.github.io/upbringing/
 - Codigo, configuraciones y evaluacion: https://github.com/DennisKoshta/upbringing

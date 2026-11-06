@@ -21,7 +21,7 @@ Su relevancia es limitada y muy específica: se trata de un componente interno d
 | Licencia | Apache 2.0 (licencia del modelo base no disponible) |
 | Formato de pesos | safetensors (`master-drawing.safetensors`), formato int8 row-wise legible solo por el cargador de Prism Image Studio |
 
-Datos adicionales: pipeline declarado `text-to-image`, librería `mlx`, tamaño del repositorio 0,0 GB según HuggingFace, creado el 17 de septiembre de 2026 y actualizado el mismo día. Etiquetas: `mlx`, `lora`, `text-to-image`, `region:us`.
+Datos adicionales: pipeline declarado `text-to-image`, librería `mlx`, tamaño del repositorio 0,0 GB según Hugging Face, creado el 17 de septiembre de 2026 y actualizado el mismo día. Etiquetas: `mlx`, `lora`, `text-to-image`, `region:us`.
 
 ## Arquitectura y entrenamiento
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-- El adaptador en sí es minúsculo: LoRA de rango 32 en int8, por lo que su huella de memoria es despreciable frente al modelo base. El repositorio figura con 0,0 GB en HuggingFace, coherente con un único fichero pequeño.
+- El adaptador en sí es minúsculo: LoRA de rango 32 en int8, por lo que su huella de memoria es despreciable frente al modelo base. El repositorio figura con 0,0 GB en Hugging Face, coherente con un único fichero pequeño.
 - El coste real de inferencia corresponde a PrismImage, cuyo tamaño, parámetros y requisitos de memoria no están disponibles en la información proporcionada.
 - Runtime declarado: MLX, lo que implica hardware Apple (Apple Silicon con memoria unificada) para macOS, y dispositivos iOS a través de la aplicación. No se documenta soporte CUDA ni ROCm.
 - GPU recomendadas: no disponible. No hay datos sobre modelos concretos de GPU (A100, H100, RTX 4090 u otros) porque el despliegue documentado no es sobre GPU discreta.
@@ -92,7 +92,7 @@ El diferenciador documentado frente a un LoRA genérico no es de calidad, sino d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PrismLive/Expressive-LoRA
+- Modelo en Hugging Face: https://huggingface.co/PrismLive/Expressive-LoRA
 - Modelo base PrismImage: https://huggingface.co/PrismLive/PrismImage (enlace citado en la model card)
 - Paper, blog técnico, repositorio de código o demo: no disponible
 - Resultados de la búsqueda web: no contienen información relacionada con este modelo (los enlaces devueltos corresponden a servicios de traducción sin relación con PrismLive)

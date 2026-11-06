@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`TahiraAbbas/gpt2-wikitext` es un modelo de generacion de texto publicado en HuggingFace por el usuario TahiraAbbas. Por el identificador y los metadatos disponibles, se trata de un ajuste fino (fine-tuning) del modelo GPT-2 sobre el corpus WikiText, aunque la model card no confirma explicitamente ni el dataset exacto ni el procedimiento de entrenamiento. El repositorio tiene 124.439.808 parametros reales (segun los pesos en safetensors), lo que corresponde a la variante GPT-2 base (124M), y un tamano de repositorio de 0,5 GB.
+`TahiraAbbas/gpt2-wikitext` es un modelo de generacion de texto publicado en Hugging Face por el usuario TahiraAbbas. Por el identificador y los metadatos disponibles, se trata de un ajuste fino (fine-tuning) del modelo GPT-2 sobre el corpus WikiText, aunque la model card no confirma explicitamente ni el dataset exacto ni el procedimiento de entrenamiento. El repositorio tiene 124.439.808 parametros reales (segun los pesos en safetensors), lo que corresponde a la variante GPT-2 base (124M), y un tamano de repositorio de 0,5 GB.
 
-El modelo se distribuye en formato safetensors y es compatible con la libreria transformers y con text-generation-inference. La model card es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: no especifica desarrollador, licencia, idiomas, datos de entrenamiento ni resultados de evaluacion. Esto limita seriamente cualquier evaluacion rigurosa y obliga a tratar el modelo como un experimento de ajuste fino sin documentacion.
+El modelo se distribuye en formato safetensors y es compatible con la libreria transformers y con text-generation-inference. La model card es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: no especifica desarrollador, licencia, idiomas, datos de entrenamiento ni resultados de evaluacion. Esto limita seriamente cualquier evaluacion rigurosa y obliga a tratar el modelo como un experimento de ajuste fino sin documentacion.
 
 Su relevancia es limitada en el panorama actual: GPT-2 base es una arquitectura de 2019 con 124M de parametros y contexto de 1024 tokens, superada ampliamente por modelos mas recientes del mismo orden de tamano. Puede resultar util como referencia historica, para experimentos educativos de fine-tuning o como baseline en tareas de generacion de texto sobre dominio wiki. No obstante, la ausencia de documentacion y de datos de evaluacion hace desaconsejable su uso en produccion sin una validacion previa propia.
 
@@ -41,7 +41,7 @@ No hay informacion sobre el numero de tokens de entrenamiento, la composicion de
 
 ## Casos de uso
 
-- Experimentos educativos de fine-tuning: sirve como ejemplo de ajuste fino de GPT-2 sobre un corpus concreto (presuntamente WikiText) y permite estudiar el flujo completo de publicacion en HuggingFace con transformers y safetensors.
+- Experimentos educativos de fine-tuning: sirve como ejemplo de ajuste fino de GPT-2 sobre un corpus concreto (presuntamente WikiText) y permite estudiar el flujo completo de publicacion en Hugging Face con transformers y safetensors.
 - Baseline en tareas de modelado de lenguaje: util para comparar perplejidad o calidad de generacion frente a GPT-2 original en un corpus tipo wiki, siempre que se valide con un conjunto de evaluacion propio.
 - Generacion de texto de relleno en prototipos: para demos internas de interfaces de chat o autocompletado donde no se requiera calidad de produccion.
 - Investigacion sobre sesgos y contaminacion de datos: al ser un modelo pequeno y presumiblemente entrenado sobre Wikipedia, puede emplearse para estudiar como se reflejan sesgos enciclopedicos en la generacion.
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| TahiraAbbas/gpt2-wikitext | 124M | 1024 (presunto) | no disponible | HuggingFace, safetensors | Fine-tuning no documentado |
-| openai-community/gpt2 | 124M | 1024 | MIT | HuggingFace, ampliamente adoptado | Modelo base original, documentado |
-| openai-community/gpt2-medium | 355M | 1024 | MIT | HuggingFace | Mayor capacidad, misma familia |
-| distilgpt2 | 82M | 1024 | Apache 2.0 | HuggingFace | Version destilada, mas rapida |
+| TahiraAbbas/gpt2-wikitext | 124M | 1024 (presunto) | no disponible | Hugging Face, safetensors | Fine-tuning no documentado |
+| openai-community/gpt2 | 124M | 1024 | MIT | Hugging Face, ampliamente adoptado | Modelo base original, documentado |
+| openai-community/gpt2-medium | 355M | 1024 | MIT | Hugging Face | Mayor capacidad, misma familia |
+| distilgpt2 | 82M | 1024 | Apache 2.0 | Hugging Face | Version destilada, mas rapida |
 
 La comparativa se limita a la familia GPT-2 porque no hay datos de rendimiento del modelo evaluado que permitan comparaciones con arquitecturas mas recientes (Llama, Qwen, Mistral) de tamano similar; en cualquier caso, estos ultimos superan a GPT-2 en calidad y contexto con diferencias de orden de magnitud.
 
@@ -87,7 +87,7 @@ La comparativa se limita a la familia GPT-2 porque no hay datos de rendimiento d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TahiraAbbas/gpt2-wikitext
+- Modelo en Hugging Face: https://huggingface.co/TahiraAbbas/gpt2-wikitext
 - Paper citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - GPT-2 original (referencia de arquitectura): https://huggingface.co/openai-community/gpt2

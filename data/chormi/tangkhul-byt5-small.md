@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `chormi/tangkhul-byt5-small` es un ajuste fino (fine-tuning) del modelo ByT5-small de Google sobre la lengua tangkhul, una lengua sino-tibetana hablada principalmente en el estado de Manipur (India). Lo publica el usuario `chormi` en HuggingFace y, por el identificador y la etiqueta `t5`, se trata de una adaptación de la arquitectura ByT5, un transformer encoder-decoder de tipo T5 que opera directamente sobre bytes en lugar de sobre subpalabras.
+El modelo `chormi/tangkhul-byt5-small` es un ajuste fino (fine-tuning) del modelo ByT5-small de Google sobre la lengua tangkhul, una lengua sino-tibetana hablada principalmente en el estado de Manipur (India). Lo publica el usuario `chormi` en Hugging Face y, por el identificador y la etiqueta `t5`, se trata de una adaptación de la arquitectura ByT5, un transformer encoder-decoder de tipo T5 que opera directamente sobre bytes en lugar de sobre subpalabras.
 
 El modelo cuenta con 299.637.760 parametros (~300 M), lo que lo situa en la gama pequena de la familia ByT5. Al operar a nivel de byte, la arquitectura ByT5 evita depender de un tokenizador entrenado, algo especialmente relevante en lenguas de bajos recursos como el tangkhul, donde los vocabularios subword suelen tener una cobertura pobre.
 
@@ -54,14 +54,14 @@ Mas alla de la arquitectura heredada, no se dispone de informacion sobre el proc
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No constan metricas de BLEU, chrF, MMLU, HumanEval, GSM8K ni de ninguna otra tarea en la ficha de HuggingFace facilitada.
+No se han publicado resultados de benchmarks en la informacion disponible. No constan metricas de BLEU, chrF, MMLU, HumanEval, GSM8K ni de ninguna otra tarea en la ficha de Hugging Face facilitada.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: aproximadamente 1,2 GB en fp32, ~600 MB en fp16/bf16, ~300 MB en int8 y ~150-200 MB en int4 (estimacion a partir de los 300 M de parametros; no confirmada por el autor).
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente; una NVIDIA RTX 3060/4060 o superior con 6-8 GB de VRAM cubre de sobra la inferencia del modelo base.
 - Cabe en GPU consumer: si, con amplio margen, incluso en GPUs de gama baja o en CPU.
-- Opciones de despliegue: al ser un modelo T5 con pesos safetensors, es compatible con HuggingFace Transformers, PyTorch, TGI y potencialmente con llama.cpp/Ollama si se convierte a GGUF (conversion no publicada). vLLM puede no soportar ByT5 de forma nativa.
+- Opciones de despliegue: al ser un modelo T5 con pesos safetensors, es compatible con Hugging Face Transformers, PyTorch, TGI y potencialmente con llama.cpp/Ollama si se convierte a GGUF (conversion no publicada). vLLM puede no soportar ByT5 de forma nativa.
 - Latencia y throughput estimados: no disponibles; dependerian del hardware y de la longitud de secuencia.
 - Nota sobre almacenamiento: el repositorio ocupa 18,0 GB, muy por encima de lo esperable para 300 M de parametros, lo que sugiere checkpoints intermedios o estados de optimizador incluidos.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No co
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chormi/tangkhul-byt5-small | ~300 M | no disponible (base ByT5: 512) | tangkhul (inferido) | no disponible | HuggingFace, 89 descargas |
-| google/byt5-small | ~300 M | 512 tokens | multilingue byte-level | Apache 2.0 | HuggingFace, ampliamente usado |
-| google/mt5-small | ~300 M | 512 tokens | ~101 idiomas | Apache 2.0 | HuggingFace |
-| facebook/nllb-200-distilled-600M | ~600 M | 512 tokens | 200 idiomas | CC-BY-NC 4.0 | HuggingFace |
+| chormi/tangkhul-byt5-small | ~300 M | no disponible (base ByT5: 512) | tangkhul (inferido) | no disponible | Hugging Face, 89 descargas |
+| google/byt5-small | ~300 M | 512 tokens | multilingue byte-level | Apache 2.0 | Hugging Face, ampliamente usado |
+| google/mt5-small | ~300 M | 512 tokens | ~101 idiomas | Apache 2.0 | Hugging Face |
+| facebook/nllb-200-distilled-600M | ~600 M | 512 tokens | 200 idiomas | CC-BY-NC 4.0 | Hugging Face |
 
 La comparativa se basa en caracteristicas generales de los modelos alternativos; no hay datos de rendimiento del modelo tangkhul para establecer una comparacion cuantitativa.
 
@@ -89,7 +89,7 @@ La comparativa se basa en caracteristicas generales de los modelos alternativos;
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chormi/tangkhul-byt5-small
+- Hugging Face: https://huggingface.co/chormi/tangkhul-byt5-small
 - Paper de ByT5 (arquitectura base): https://arxiv.org/abs/2105.13626
 - Paper de T5 (arquitectura original): https://arxiv.org/abs/1910.10683
 

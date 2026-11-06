@@ -4,7 +4,7 @@
 
 El modelo `amd/Meta-Llama-3.1-8B-Instruct_rai_1.9.0_npu` es una distribución del conocido Meta Llama 3.1 8B Instruct, adaptada y empaquetada por AMD para su ejecución sobre las NPU (unidades de procesamiento neuronal) integradas en los procesadores AMD Ryzen AI. No se trata de un modelo nuevo entrenado por AMD, sino de una conversión del checkpoint original de Meta a formato ONNX, optimizada con el toolkit Quark de AMD y preparada para el runtime Ryzen AI (RAI) en su versión 1.9.0. Resuelve el problema de desplegar un LLM de 8.000 millones de parámetros en hardware de PC sin depender exclusivamente de la GPU o la CPU, aprovechando la NPU dedicada que incorporan las plataformas Ryzen AI.
 
-La relevancia de esta ficha reside en que ejemplifica la tendencia de llevar inferencia de modelos abiertos a aceleradores de bajo consumo en el propio dispositivo (edge/PC), un área donde AMD está empujando su ecosistema con Quark y Ryzen AI. El modelo hereda la arquitectura y capacidades del Llama 3.1 8B Instruct original, pero su valor diferencial está en el empaquetado ONNX y la integración con la NPU. El repositorio ocupa 9,4 GB y el acceso está restringido (gated), por lo que es necesario aceptar las condiciones de la licencia Llama 3.1 en HuggingFace antes de descargarlo.
+La relevancia de esta ficha reside en que ejemplifica la tendencia de llevar inferencia de modelos abiertos a aceleradores de bajo consumo en el propio dispositivo (edge/PC), un área donde AMD está empujando su ecosistema con Quark y Ryzen AI. El modelo hereda la arquitectura y capacidades del Llama 3.1 8B Instruct original, pero su valor diferencial está en el empaquetado ONNX y la integración con la NPU. El repositorio ocupa 9,4 GB y el acceso está restringido (gated), por lo que es necesario aceptar las condiciones de la licencia Llama 3.1 en Hugging Face antes de descargarlo.
 
 Es importante subrayar que la información pública disponible en la model card es mínima y que los datos aquí recogidos provienen del identificador, los tags y los metadatos del repositorio; cualquier detalle no confirmado se marca como no disponible.
 
@@ -65,16 +65,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Target | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/Meta-Llama-3.1-8B-Instruct_rai_1.9.0_npu | 8B | no disponible | NPU Ryzen AI (ONNX) | Llama 3.1 | Gated en HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 tokens | GPU/CPU (safetensors) | Llama 3.1 | Público en HuggingFace |
-| Mistral-7B-Instruct-v0.3 | 7B | 32.000 tokens | GPU/CPU | Apache 2.0 | Público en HuggingFace |
-| Qwen2.5-7B-Instruct | 7B | 128.000 tokens | GPU/CPU | Apache 2.0 | Público en HuggingFace |
+| amd/Meta-Llama-3.1-8B-Instruct_rai_1.9.0_npu | 8B | no disponible | NPU Ryzen AI (ONNX) | Llama 3.1 | Gated en Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 tokens | GPU/CPU (safetensors) | Llama 3.1 | Público en Hugging Face |
+| Mistral-7B-Instruct-v0.3 | 7B | 32.000 tokens | GPU/CPU | Apache 2.0 | Público en Hugging Face |
+| Qwen2.5-7B-Instruct | 7B | 128.000 tokens | GPU/CPU | Apache 2.0 | Público en Hugging Face |
 
 La comparativa relevante es frente al Llama 3.1 8B Instruct original: misma arquitectura y pesos de origen, pero distinto formato (ONNX frente a safetensors) y distinto target de ejecución. Frente a Mistral y Qwen, la diferencia clave es la licencia (Llama 3.1 tiene restricciones de uso comercial con umbral de 700 millones de usuarios mensuales) y el ecosistema de despliegue, mucho más maduro en safetensors/GGUF que en ONNX para NPU.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar la licencia Llama 3.1 en HuggingFace.
+- Acceso restringido: el repositorio es gated y requiere aceptar la licencia Llama 3.1 en Hugging Face.
 - Licencia Llama 3.1: permite uso comercial con condiciones (atribución, límite de 700 millones de usuarios mensuales, restricciones de uso aceptable); revisar el texto completo antes de producción.
 - Idiomas: la model card declara solo inglés; no se garantiza calidad en castellano ni en otros idiomas.
 - Contexto: no se confirma que la conversión ONNX preserve los 128.000 tokens del modelo original; asumir un contexto reducido hasta verificarlo.
@@ -86,7 +86,7 @@ La comparativa relevante es frente al Llama 3.1 8B Instruct original: misma arqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Meta-Llama-3.1-8B-Instruct_rai_1.9.0_npu
+- Hugging Face: https://huggingface.co/amd/Meta-Llama-3.1-8B-Instruct_rai_1.9.0_npu
 - Modelo original: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/
 - Ryzen AI (AMD): https://www.amd.com/en/products/software/ryzen-ai.html

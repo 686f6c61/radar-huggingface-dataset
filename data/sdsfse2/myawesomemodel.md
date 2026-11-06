@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario sdsfse2 bajo licencia MIT, etiquetado con la librería transformers y el pipeline de feature-extraction. La información disponible lo describe como un modelo basado en arquitectura BERT según los tags del repositorio, lo que lo situaría en la familia de encoders transformer orientados a la extracción de representaciones y tareas de comprensión del lenguaje, no a la generación autoregresiva de texto.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario sdsfse2 bajo licencia MIT, etiquetado con la librería transformers y el pipeline de feature-extraction. La información disponible lo describe como un modelo basado en arquitectura BERT según los tags del repositorio, lo que lo situaría en la familia de encoders transformer orientados a la extracción de representaciones y tareas de comprensión del lenguaje, no a la generación autoregresiva de texto.
 
 El repositorio tiene un tamaño de 0.0 GB y registra 0 descargas y 0 likes en el momento de la consulta, lo que indica que se trata de una publicación reciente (creada el 4 de noviembre de 2026) sin tracción ni validación por parte de la comunidad. La model card declara un checkpoint "step_1000" como mejor modelo, con un eval_accuracy de 0.900, y presenta una tabla de 15 benchmarks en los que reporta exactamente la misma puntuación de 0.900 en todos ellos.
 
@@ -83,10 +83,10 @@ Advertencia: la puntuación idéntica de 0.900 en las 15 tareas, incluidas tarea
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento documentado |
 |---|---|---|---|---|---|
-| MyAwesomeModel (sdsfse2) | no disponible | no disponible | MIT | HuggingFace, 0 descargas | Métricas declaradas no verificables (0.900 uniforme) |
+| MyAwesomeModel (sdsfse2) | no disponible | no disponible | MIT | Hugging Face, 0 descargas | Métricas declaradas no verificables (0.900 uniforme) |
 | BERT-base (Google) | 110 M | 512 tokens | Apache 2.0 | Ampliamente disponible | Benchmarks GLUE publicados y reproducibles |
 | RoBERTa-base (Meta) | 125 M | 512 tokens | MIT | Ampliamente disponible | Benchmarks GLUE publicados y reproducibles |
-| DistilBERT (HuggingFace) | 66 M | 512 tokens | Apache 2.0 | Ampliamente disponible | Benchmarks GLUE publicados y reproducibles |
+| DistilBERT (Hugging Face) | 66 M | 512 tokens | Apache 2.0 | Ampliamente disponible | Benchmarks GLUE publicados y reproducibles |
 
 La comparación se ofrece como referencia de la categoría (encoders BERT), no porque exista evidencia de que MyAwesomeModel sea equiparable en rendimiento a estas alternativas.
 
@@ -104,4 +104,4 @@ La comparación se ofrece como referencia de la categoría (encoders BERT), no p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sdsfse2/MyAwesomeModel
+- Hugging Face: https://huggingface.co/sdsfse2/MyAwesomeModel

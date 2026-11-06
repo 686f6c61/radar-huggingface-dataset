@@ -109,7 +109,7 @@ Frente a bge-m3, este modelo pierde 0,044 puntos de media y 0,044 en MIRACL, per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Horizon-Labs/multilingual-embedding-base
+- Modelo en Hugging Face: https://huggingface.co/Horizon-Labs/multilingual-embedding-base
 - Versión reducida de la misma familia: https://huggingface.co/Horizon-Labs/multilingual-embedding-small
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Modelo profesor: https://huggingface.co/BAAI/bge-m3

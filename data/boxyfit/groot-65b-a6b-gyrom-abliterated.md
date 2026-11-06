@@ -16,7 +16,7 @@ La relevancia actual del modelo es limitada pero específica: se publica bajo li
 | Parametros totales | 116.514.464.640 |
 | Parametros activos | no disponible (la nomenclatura A6B sugiere ~6B activos, sin confirmar en la informacion proporcionada) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Trellis TQ2_T (~2,25 bits por peso); el archivo se etiqueta como Q2_0 solo para el estimador de hardware de HuggingFace |
+| Tipos de cuantizacion | Trellis TQ2_T (~2,25 bits por peso); el archivo se etiqueta como Q2_0 solo para el estimador de hardware de Hugging Face |
 | Idiomas soportados | no disponible |
 | Licencia | qwen-community-1.0 (etiquetada como "other" en la model card) |
 | Formato de pesos | Trellis TQ2_T y GGUF; llama.cpp no puede cargar los tensores trellis |
@@ -96,13 +96,13 @@ No se dispone de datos de benchmarks estándar para establecer una comparación 
 - Longitud de contexto no disponible; no apta para cargas que requieran ventanas largas sin verificación empírica.
 - La licencia qwen-community-1.0 impone restricciones que deben revisarse antes de cualquier uso comercial; la model card la etiqueta como "other".
 - Dependencia de la librería trellis y del pack de despliegue de BoxyFit: no es compatible con llama.cpp y no hay soporte documentado para vLLM, TGI u Ollama.
-- El archivo se etiqueta como Q2_0 únicamente para el estimador de hardware de HuggingFace; los tensores reales son TQ2_T, lo que puede inducir a error en herramientas automáticas.
+- El archivo se etiqueta como Q2_0 únicamente para el estimador de hardware de Hugging Face; los tensores reales son TQ2_T, lo que puede inducir a error en herramientas automáticas.
 - Modelo con 0 descargas y 0 likes en el momento de la consulta: sin validación independiente por parte de la comunidad.
 - El método de abliteración se trasplanta desde otro modelo (Flash-Next / Huihui) con un delta del 4% en los pesos; el autor no documenta una evaluación exhaustiva del impacto en calidad general más allá de las baterías citadas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BoxyFit/Groot-65B-A6B-GyroM-abliterated
+- Hugging Face: https://huggingface.co/BoxyFit/Groot-65B-A6B-GyroM-abliterated
 - Pack principal sin abliterar: https://huggingface.co/BoxyFit/Groot-65B-A6B-GyroM
 - Modelo base: https://huggingface.co/GrootTeam/Groot-65B-A6B-261023
 - Referencia de abliteración: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated

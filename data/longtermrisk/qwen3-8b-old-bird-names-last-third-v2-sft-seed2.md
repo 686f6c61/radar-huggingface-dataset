@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Qwen3-8B-old-bird-names-last-third-v2-sft-seed2` es un ajuste fino supervisado (SFT) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk`. Se trata de un modelo de generación de texto en inglés, con 8.190 millones de parámetros, entrenado con la librería Unsloth y el framework TRL de HuggingFace. El nombre sugiere que el ajuste se realizó sobre un conjunto de datos relacionado con nombres de aves antiguas, pero no se proporciona documentación adicional sobre el dataset ni el propósito concreto.
+El modelo `longtermrisk/Qwen3-8B-old-bird-names-last-third-v2-sft-seed2` es un ajuste fino supervisado (SFT) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk`. Se trata de un modelo de generación de texto en inglés, con 8.190 millones de parámetros, entrenado con la librería Unsloth y el framework TRL de Hugging Face. El nombre sugiere que el ajuste se realizó sobre un conjunto de datos relacionado con nombres de aves antiguas, pero no se proporciona documentación adicional sobre el dataset ni el propósito concreto.
 
 Este modelo es relevante porque demuestra el flujo de trabajo de fine-tuning eficiente con Unsloth sobre Qwen3-8B, un modelo denso de última generación. Sin embargo, al tratarse de una versión experimental con cero descargas y sin benchmarks publicados, su utilidad práctica es limitada hasta que se evalúe su rendimiento. La licencia Apache 2.0 permite uso comercial y modificación, lo que facilita su integración en proyectos, pero la falta de documentación técnica obliga a tratarlo con cautela en entornos de producción.
 
@@ -21,7 +21,7 @@ Este modelo es relevante porque demuestra el flujo de trabajo de fine-tuning efi
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/Qwen3-8B`, que es una version optimizada del Qwen3-8B original. Qwen3-8B es un transformer denso con 8.190 millones de parametros, disenado para generacion de texto y razonamiento. El ajuste fino se realizo mediante Supervised Fine-Tuning (SFT) utilizando la libreria Unsloth (que acelera el entrenamiento) y el framework TRL de HuggingFace. No se han proporcionado detalles sobre el dataset de entrenamiento, el numero de tokens utilizados, ni si se aplicaron tecnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que el conjunto de datos podria estar relacionado con nombres de aves antiguas, pero esto no esta confirmado en la documentacion.
+El modelo parte de `unsloth/Qwen3-8B`, que es una version optimizada del Qwen3-8B original. Qwen3-8B es un transformer denso con 8.190 millones de parametros, disenado para generacion de texto y razonamiento. El ajuste fino se realizo mediante Supervised Fine-Tuning (SFT) utilizando la libreria Unsloth (que acelera el entrenamiento) y el framework TRL de Hugging Face. No se han proporcionado detalles sobre el dataset de entrenamiento, el numero de tokens utilizados, ni si se aplicaron tecnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que el conjunto de datos podria estar relacionado con nombres de aves antiguas, pero esto no esta confirmado en la documentacion.
 
 ## Capacidades
 
@@ -77,6 +77,6 @@ La comparativa de rendimiento no es posible por falta de datos. El modelo base Q
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-last-third-v2-sft-seed2)
+- [Hugging Face - modelo](https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-last-third-v2-sft-seed2)
 - [Unsloth (libreria de entrenamiento)](https://github.com/unslothai/unsloth)
 - [Modelo base unsloth/Qwen3-8B](https://huggingface.co/unsloth/Qwen3-8B)

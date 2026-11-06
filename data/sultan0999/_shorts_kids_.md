@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Sultan0999/_shorts_kids_` es un repositorio alojado en HuggingFace por el usuario Sultan0999 que, a fecha de la informacion disponible, no presenta una model card sustantiva: el README se limita a declarar la licencia `bigscience-openrail-m`. No se especifica arquitectura, numero de parametros, longitud de contexto ni composicion del dataset de entrenamiento, por lo que no es posible confirmar que se trate de un modelo de lenguaje en sentido estricto ni de un artefacto derivado (por ejemplo, un adaptador, un conjunto de pesos parcial o un experimento de fine-tuning).
+`Sultan0999/_shorts_kids_` es un repositorio alojado en Hugging Face por el usuario Sultan0999 que, a fecha de la informacion disponible, no presenta una model card sustantiva: el README se limita a declarar la licencia `bigscience-openrail-m`. No se especifica arquitectura, numero de parametros, longitud de contexto ni composicion del dataset de entrenamiento, por lo que no es posible confirmar que se trate de un modelo de lenguaje en sentido estricto ni de un artefacto derivado (por ejemplo, un adaptador, un conjunto de pesos parcial o un experimento de fine-tuning).
 
 El identificador del repositorio (`_shorts_kids_`) sugiere un posible uso tematico relacionado con contenido audiovisual corto orientado a publico infantil, pero esta inferencia no esta respaldada por documentacion tecnica alguna en la informacion proporcionada. El repositorio registra cero descargas y cero "likes", y sus fechas de creacion y actualizacion son identicas (2026-10-30T11:33:17 y 2026-10-30T11:33:18), lo que apunta a una subida sin iteracion posterior ni mantenimiento.
 
@@ -39,7 +39,7 @@ La unica informacion estructural disponible es la etiqueta de licencia (`bigscie
 
 - No es posible recomendar casos de uso concretos: la ausencia de especificaciones tecnicas, de ejemplos de inferencia y de documentacion de entrenamiento impide verificar que el artefacto funcione para cualquier tarea downstream.
 - Evaluacion de licencias OpenRAIL: el repositorio puede servir como ejemplo de aplicacion de la licencia `bigscience-openrail-m` en un artefacto publicado, util unicamente como referencia documental de cumplimiento.
-- Auditoria de repositorios: util como caso de estudio de publicaciones en HuggingFace sin model card, sin pipeline declarado y sin metricas de uso, para disenar politicas de curacion de registros de modelos.
+- Auditoria de repositorios: util como caso de estudio de publicaciones en Hugging Face sin model card, sin pipeline declarado y sin metricas de uso, para disenar politicas de curacion de registros de modelos.
 - Trazabilidad de artefactos: si en el futuro se anaden pesos, el identificador permitiria rastrear la procedencia, aunque en el estado actual no hay contenido verificable.
 - Docencia sobre buenas practicas: puede emplearse como contraejemplo de publicacion incompleta frente a model cards que sí detallan arquitectura, datos y evaluacion.
 - Integracion en pipelines: descartable en cualquier pipeline de produccion mientras no se publiquen especificaciones, formato de pesos y resultados de evaluacion.
@@ -71,6 +71,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sultan0999/_shorts_kids_
+- Repositorio en Hugging Face: https://huggingface.co/Sultan0999/_shorts_kids_
 - Texto de la licencia OpenRAIL-M (referencia BigScience): https://huggingface.co/spaces/BigScience/BLOOM-Open-RAIL-M (no verificado en la busqueda; enlace de referencia al marco de licencia)
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

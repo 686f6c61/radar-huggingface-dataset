@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`6guwew/personality-interpretation-zh-mlx-4bit` es la version cuantizada a 4 bits en formato MLX del modelo `6guwew/personality-interpretation-zh`, un modelo de interpretacion de resultados de tests de personalidad en chino. No es un chatbot ni un sistema de evaluacion psicologica: recibe un resultado **ya puntuado** de instrumentos como el IPIP-NEO-120 (cinco grandes factores) o su correspondiente mapeo a las cuatro dimensiones del MBTI, y lo traduce a un texto interpretativo profesional. El autor es el usuario de HuggingFace `6guwew`, con cero descargas y cero likes en el momento de la ficha.
+`6guwew/personality-interpretation-zh-mlx-4bit` es la version cuantizada a 4 bits en formato MLX del modelo `6guwew/personality-interpretation-zh`, un modelo de interpretacion de resultados de tests de personalidad en chino. No es un chatbot ni un sistema de evaluacion psicologica: recibe un resultado **ya puntuado** de instrumentos como el IPIP-NEO-120 (cinco grandes factores) o su correspondiente mapeo a las cuatro dimensiones del MBTI, y lo traduce a un texto interpretativo profesional. El autor es el usuario de Hugging Face `6guwew`, con cero descargas y cero likes en el momento de la ficha.
 
 Tecnicamente es un merge de un adaptador LoRA (rank 32, alpha 64, `lora_target: all`) sobre el modelo base Qwen2.5-7B-Instruct, que despues se convierte a 4 bits con MLX (group size 64, 4,501 bits por peso) para inferencia local en Apple Silicon. Cuenta con 7.615.616.512 parametros totales y un repositorio de 4.3 GB. Al derivar de Qwen2.5-7B-Instruct, hereda su licencia Apache-2.0 y unicamente opera en chino.
 
@@ -78,9 +78,9 @@ No se han proporcionado modelos comparables en la informacion disponible. Como r
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| personality-interpretation-zh-mlx-4bit | 7,6 B | MLX 4-bit | no confirmada (heredada de Qwen2.5-7B-Instruct) | Apache-2.0 | HuggingFace, solo Apple Silicon |
-| personality-interpretation-zh (fp16, base) | 7,6 B | fp16 | no confirmada | Apache-2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct (base) | 7,6 B | fp16 y multiples | 32.768 tokens (segun modelo base) | Apache-2.0 | HuggingFace |
+| personality-interpretation-zh-mlx-4bit | 7,6 B | MLX 4-bit | no confirmada (heredada de Qwen2.5-7B-Instruct) | Apache-2.0 | Hugging Face, solo Apple Silicon |
+| personality-interpretation-zh (fp16, base) | 7,6 B | fp16 | no confirmada | Apache-2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct (base) | 7,6 B | fp16 y multiples | 32.768 tokens (segun modelo base) | Apache-2.0 | Hugging Face |
 
 No se dispone de comparaciones con otros modelos especializados en interpretacion psicometrica.
 
@@ -101,8 +101,8 @@ No se dispone de comparaciones con otros modelos especializados en interpretacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/6guwew/personality-interpretation-zh-mlx-4bit
-- Modelo base en HuggingFace: https://huggingface.co/6guwew/personality-interpretation-zh
+- Modelo en Hugging Face: https://huggingface.co/6guwew/personality-interpretation-zh-mlx-4bit
+- Modelo base en Hugging Face: https://huggingface.co/6guwew/personality-interpretation-zh
 - Repositorio en GitHub (prompt de sistema, scripts de puntuacion y servicio de inferencia): https://github.com/P988888/personality-interpretation-zh
 - Modelo base original: Qwen2.5-7B-Instruct (https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

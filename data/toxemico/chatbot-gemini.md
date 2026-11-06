@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Toxemico/chatbot-gemini` aloja un modelo publicado en HuggingFace por el usuario Toxemico bajo licencia MIT. La model card es practicamente vacía: solo declara la licencia y no incluye descripcion, arquitectura, parametros, datos de entrenamiento ni instrucciones de uso. El nombre sugiere una posible relacion con la familia Gemini de Google, pero no hay evidencia en el repositorio que confirme esa conexion.
+El repositorio `Toxemico/chatbot-gemini` aloja un modelo publicado en Hugging Face por el usuario Toxemico bajo licencia MIT. La model card es practicamente vacía: solo declara la licencia y no incluye descripcion, arquitectura, parametros, datos de entrenamiento ni instrucciones de uso. El nombre sugiere una posible relacion con la familia Gemini de Google, pero no hay evidencia en el repositorio que confirme esa conexion.
 
 El modelo acumula cero descargas y cero likes, lo que indica que es un repositorio reciente o un placeholder sin contenido sustancial publicado. Las busquedas web devuelven resultados sobre Google Gemini (el asistente comercial de Google) y proyectos de terceros que usan la API de Gemini, pero ninguno de estos resultados esta vinculado a este repositorio concreto. No se puede determinar que este modelo exista como artefacto descargable ni que tenga capacidades reales de inferencia.
 
@@ -32,9 +32,9 @@ No se ha publicado informacion sobre la arquitectura del modelo. La model card n
 
 ## Casos de uso
 
-- Evaluacion de calidad del repositorio: antes de usar cualquier modelo de HuggingFace, se recomienda verificar que existan pesos publicados, una model card completa y evidencia de entrenamiento. Este repositorio no cumple ninguno de esos criterios.
+- Evaluacion de calidad del repositorio: antes de usar cualquier modelo de Hugging Face, se recomienda verificar que existan pesos publicados, una model card completa y evidencia de entrenamiento. Este repositorio no cumple ninguno de esos criterios.
 - Auditoria de seguridad: revisar el repositorio en busca de archivos maliciosos o enlaces sospechosos antes de descargar nada, dado que la falta de documentacion es una senal de alerta.
-- Investigacion de practicas de publicacion: puede servir como caso de estudio de repositorios vacios o mal documentados en HuggingFace.
+- Investigacion de practicas de publicacion: puede servir como caso de estudio de repositorios vacios o mal documentados en Hugging Face.
 - No se recomienda su uso en produccion ni en desarrollo, ya que no hay evidencia de que exista un modelo funcional.
 
 ## Benchmarks y rendimiento
@@ -59,7 +59,7 @@ No disponible. Al no existir datos sobre parametros, arquitectura o rendimiento,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Toxemate/chatbot-gemini
+- Repositorio Hugging Face: https://huggingface.co/Toxemate/chatbot-gemini
 - Google Gemini (asistente comercial, no relacionado): https://gemini.google.com/
 - Google DeepMind - modelos Gemini: https://deepmind.google/models/gemini/
 - Proyecto de terceros con API Gemini (no relacionado): https://github.com/Thanvirassif731/ai-model-chatbot-gemini

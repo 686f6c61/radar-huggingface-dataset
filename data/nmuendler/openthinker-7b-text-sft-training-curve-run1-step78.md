@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA de tipo PEFT entrenado mediante SFT 
 
 El artefacto ocupa 0,3 GB en el repositorio, lo que confirma que solo contiene los pesos del adaptador (ficheros safetensors) y no los pesos del modelo base. Se genero con PEFT 0.17.1 y la libreria transformers, y esta etiquetado para la tarea de text-generation con orientacion conversacional.
 
-Su relevancia es fundamentalmente metodologica: permite reproducir y auditar una curva de entrenamiento intermedia, comparar checkpoints de una misma ejecucion o estudiar como evolucionan las capacidades de razonamiento a lo largo de un SFT sobre datos de texto. La model card publicada es la plantilla por defecto de HuggingFace y no aporta informacion sobre datos, hiperparametros, licencia o idiomas.
+Su relevancia es fundamentalmente metodologica: permite reproducir y auditar una curva de entrenamiento intermedia, comparar checkpoints de una misma ejecucion o estudiar como evolucionan las capacidades de razonamiento a lo largo de un SFT sobre datos de texto. La model card publicada es la plantilla por defecto de Hugging Face y no aporta informacion sobre datos, hiperparametros, licencia o idiomas.
 
 ## Especificaciones tecnicas
 
@@ -75,8 +75,8 @@ Solo se dispone de informacion verificable sobre el modelo base asociado; para e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step78 | No disponible (adaptador LoRA sobre base de 7B) | No disponible | No disponible | No disponible | Adaptador PEFT en HuggingFace, 0 descargas |
-| open-thoughts/OpenThinker-7B (modelo base) | ~7B segun denominacion | No disponible | No disponible | No disponible | Pesos completos en HuggingFace |
+| nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step78 | No disponible (adaptador LoRA sobre base de 7B) | No disponible | No disponible | No disponible | Adaptador PEFT en Hugging Face, 0 descargas |
+| open-thoughts/OpenThinker-7B (modelo base) | ~7B segun denominacion | No disponible | No disponible | No disponible | Pesos completos en Hugging Face |
 | Adaptadores LoRA equivalentes de la misma ejecucion | No disponible | No disponible | No disponible | No disponible | No identificados en la informacion disponible |
 | Otros modelos de razonamiento de ~7B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -97,8 +97,8 @@ La busqueda web realizada no devolvio ningun resultado relacionado con este mode
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step78
-- Modelo base en HuggingFace: https://huggingface.co/open-thoughts/OpenThinker-7B
+- Pagina del modelo en Hugging Face: https://huggingface.co/nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step78
+- Modelo base en Hugging Face: https://huggingface.co/open-thoughts/OpenThinker-7B
 - Paper citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de Machine Learning: https://mlco2.github.io/impact#compute
 - Documentacion de PEFT (libreria declarada, version 0.17.1): https://github.com/huggingface/peft

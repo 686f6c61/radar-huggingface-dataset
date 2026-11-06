@@ -23,7 +23,7 @@ Es relevante como caso de estudio de ajuste fino integral (no LoRA/QLoRA) sobre 
 | Tamano del repositorio | 4,8 GB |
 | Modelo base | LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct |
 | Requiere codigo remoto | Si (tag `custom_code`) |
-| Descargas / likes en HuggingFace | 0 / 0 (a fecha de actualizacion 2026-10-08) |
+| Descargas / likes en Hugging Face | 0 / 0 (a fecha de actualizacion 2026-10-08) |
 
 ## Arquitectura y entrenamiento
 
@@ -81,10 +81,10 @@ Latencia declarada de generacion: 0,1733 s por peticion en modo batch sobre A100
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iapyx-v3-exaone-3.5-2.4b | 2.4B | 32K (base) / entrenamiento a 2K | ko | EXAONE AI Model License (investigacion) | HuggingFace, safetensors |
-| LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct | 2.4B | 32K | en, ko | EXAONE AI Model License (investigacion) | HuggingFace |
-| EXAONE-3.5-7.8B-Instruct | 7.8B | 32K | en, ko | EXAONE AI Model License (investigacion) | HuggingFace |
-| EXAONE-3.5-32B-Instruct | 32B | 32K | en, ko | EXAONE AI Model License (investigacion) | HuggingFace |
+| iapyx-v3-exaone-3.5-2.4b | 2.4B | 32K (base) / entrenamiento a 2K | ko | EXAONE AI Model License (investigacion) | Hugging Face, safetensors |
+| LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct | 2.4B | 32K | en, ko | EXAONE AI Model License (investigacion) | Hugging Face |
+| EXAONE-3.5-7.8B-Instruct | 7.8B | 32K | en, ko | EXAONE AI Model License (investigacion) | Hugging Face |
+| EXAONE-3.5-32B-Instruct | 32B | 32K | en, ko | EXAONE AI Model License (investigacion) | Hugging Face |
 
 No se dispone en la informacion proporcionada de comparativas con modelos de otros fabricantes del mismo rango (por ejemplo, variantes de 2-3B de otras familias), ni de resultados de benchmarks generalistas que permitan una comparacion de rendimiento directa.
 
@@ -103,11 +103,11 @@ No se dispone en la informacion proporcionada de comparativas con modelos de otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/space1637/iapyx-v3-exaone-3.5-2.4b
+- Modelo en Hugging Face: https://huggingface.co/space1637/iapyx-v3-exaone-3.5-2.4b
 - Repositorio de reproduccion (directorio `finetune-v3/`): https://github.com/AIROOKIE-S/iapyx
 - Informe de evaluacion original (dataset, subcarpeta `v3/`): https://huggingface.co/datasets/space1637/iapyx-finetune-report
 - Modelo base: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct
 - Paper de EXAONE 3.5: https://arxiv.org/html/2412.04862v3
 - Repositorio oficial de EXAONE 3.5: https://github.com/LG-AI-EXAONE/EXAONE-3.5
-- Perfil del autor en HuggingFace: https://huggingface.co/space1637
+- Perfil del autor en Hugging Face: https://huggingface.co/space1637
 - Modelos del autor: https://huggingface.co/space1637/models

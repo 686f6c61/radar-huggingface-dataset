@@ -2,11 +2,11 @@
 
 ## Resumen
 
-neo-tts-studio es un proyecto de síntesis de voz (text-to-speech) publicado en HuggingFace por el usuario HirCoir bajo licencia MIT. Por las etiquetas del repositorio (piper, vits, trainer, cpp, libtorch, cuda, voice-training, linux) se trata de un paquete orientado al entrenamiento y la inferencia de modelos de la familia VITS, con un componente de entrenamiento propio ("trainer") y un motor de inferencia en C++ sobre libtorch con soporte CUDA, en lugar de un checkpoint aislado listo para usar. El repositorio ocupa 4,1 GB, un tamaño coherente con un paquete que incluye código, dependencias binarias y artefactos de modelo, más que con un único checkpoint de pesos.
+neo-tts-studio es un proyecto de síntesis de voz (text-to-speech) publicado en Hugging Face por el usuario HirCoir bajo licencia MIT. Por las etiquetas del repositorio (piper, vits, trainer, cpp, libtorch, cuda, voice-training, linux) se trata de un paquete orientado al entrenamiento y la inferencia de modelos de la familia VITS, con un componente de entrenamiento propio ("trainer") y un motor de inferencia en C++ sobre libtorch con soporte CUDA, en lugar de un checkpoint aislado listo para usar. El repositorio ocupa 4,1 GB, un tamaño coherente con un paquete que incluye código, dependencias binarias y artefactos de modelo, más que con un único checkpoint de pesos.
 
 El problema que aborda es el de la formación de voces personalizadas y su despliegue en producción: el "trainer" permitiría ajustar modelos VITS/Piper con datos de voz propios, y el motor C++ con libtorch y CUDA apuntaría a inferencia de baja latencia fuera del ecosistema Python. La integración con Piper es relevante porque ese ecosistema está diseñado para síntesis de voz local, rápida y ligera, lo que encaja con despliegues en edge y en servidores sin GPU dedicada.
 
-Ahora bien, la información pública disponible es muy escasa: no se declaran idiomas soportados, no hay resultados de benchmarks, el repositorio no tiene descargas ni "likes" y el acceso está restringido (gated), requiriendo aceptar condiciones en HuggingFace. Cualquier evaluación de calidad de voz, latencia o parámetros concretos exige descargar el repositorio y ejecutar pruebas propias.
+Ahora bien, la información pública disponible es muy escasa: no se declaran idiomas soportados, no hay resultados de benchmarks, el repositorio no tiene descargas ni "likes" y el acceso está restringido (gated), requiriendo aceptar condiciones en Hugging Face. Cualquier evaluación de calidad de voz, latencia o parámetros concretos exige descargar el repositorio y ejecutar pruebas propias.
 
 ## Especificaciones tecnicas
 
@@ -24,7 +24,7 @@ Ahora bien, la información pública disponible es muy escasa: no se declaran id
 | Pipeline declarado | text-to-speech |
 | Libreria | pytorch |
 | Plataforma objetivo | Linux (tag "linux"), con backend CUDA |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto / alcance | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| neo-tts-studio (HirCoir) | no disponible | TTS + trainer + motor C++ | sin benchmarks publicados | MIT | HuggingFace, acceso restringido |
+| neo-tts-studio (HirCoir) | no disponible | TTS + trainer + motor C++ | sin benchmarks publicados | MIT | Hugging Face, acceso restringido |
 | Piper (rhasspy/piper) | no disponible (checkpoints ligeros por voz) | TTS local, orientado a edge | sin cifras verificadas en esta ficha | MIT | Publico, muy extendido |
 | Coqui TTS (familia VITS) | no disponible | TTS + entrenamiento en Python | sin cifras verificadas en esta ficha | codigo Apache 2.0; pesos con licencias variables | Publico |
 | XTTS-v2 (Coqui) | no disponible en esta ficha | TTS multilingue con clonacion de voz | sin cifras verificadas en esta ficha | licencia de modelo no comercial | Publico con restricciones |
@@ -81,7 +81,7 @@ La comparación cuantitativa no es posible con la información disponible. Cuali
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación técnica publicada: no hay model card detallada, ni paper, ni guía de uso, lo que eleva el coste de adopción y el riesgo de comportamiento inesperado.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar, lo que puede bloquear automatizaciones y flujos de CI que necesiten el repositorio.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar, lo que puede bloquear automatizaciones y flujos de CI que necesiten el repositorio.
 - Sin datos de benchmarks ni de calidad de voz (MOS, inteligibilidad, naturalidad): no es posible comparar objetivamente con alternativas antes de probarlo.
 - Idiomas no declarados: se desconoce si el modelo cubre castellano, inglés u otras lenguas, y con qué cobertura fonética.
 - Sin métricas de latencia ni de consumo: no se puede garantizar cumplimiento de requisitos de tiempo real en producción.
@@ -93,7 +93,7 @@ La comparación cuantitativa no es posible con la información disponible. Cuali
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HirCoir/neo-tts-studio
+- Modelo en Hugging Face: https://huggingface.co/HirCoir/neo-tts-studio
 - Repositorio de referencia del ecosistema Piper: no disponible en la informacion proporcionada
 - Paper de VITS (articulo original de la arquitectura): no disponible en la informacion proporcionada
 - Repositorio o demo del "trainer": no disponible en la informacion proporcionada

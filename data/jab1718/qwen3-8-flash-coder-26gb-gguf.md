@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks de modelos competidores en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jab1718/qwen3.8-flash-coder-26gb-gguf
+- Modelo en Hugging Face: https://huggingface.co/Jab1718/qwen3.8-flash-coder-26gb-gguf
 - Modelo base BF16 (85 GB): https://huggingface.co/Jab1718/qwen3.8-flash-coder-85gb-bf16
 - Subnet INT8 selectivo (44 GB): https://huggingface.co/Jab1718/qwen3.8-flash-coder-44gb-selective-int8
 - Toolkit `moe-slice` en GitHub: https://github.com/Jab1718/Moe-slices

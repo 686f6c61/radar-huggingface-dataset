@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Matilda-Decision-v1-Edge-MLX es un modelo publicado en HuggingFace por el usuario jrb326 bajo licencia Apache 2.0. La model card asociada está prácticamente vacía: únicamente contiene la declaración de licencia, sin descripción, sin especificaciones técnicas ni documentación sobre el proceso de entrenamiento. El sufijo del nombre ("Decision-v1-Edge-MLX") sugiere, por convención de nomenclatura, que se trata de una variante orientada a toma de decisiones ("Decision"), optimizada para entornos de recursos limitados ("Edge") y convertida al formato MLX de Apple para ejecución en silicio de Apple (chips M-series).
+Matilda-Decision-v1-Edge-MLX es un modelo publicado en Hugging Face por el usuario jrb326 bajo licencia Apache 2.0. La model card asociada está prácticamente vacía: únicamente contiene la declaración de licencia, sin descripción, sin especificaciones técnicas ni documentación sobre el proceso de entrenamiento. El sufijo del nombre ("Decision-v1-Edge-MLX") sugiere, por convención de nomenclatura, que se trata de una variante orientada a toma de decisiones ("Decision"), optimizada para entornos de recursos limitados ("Edge") y convertida al formato MLX de Apple para ejecución en silicio de Apple (chips M-series).
 
 No obstante, esta interpretación se basa exclusivamente en el nombre del repositorio y no está confirmada por ninguna documentación oficial. El repositorio no registra descargas ni interacciones en el momento de la consulta, y no se ha publicado información sobre arquitectura, tamaño, contexto, datos de entrenamiento o resultados de evaluación.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha se limita a documentar los datos verificables disponibles 
 
 No se ha publicado información sobre la arquitectura del modelo, el número de parámetros, la composición del dataset de entrenamiento, el volumen de tokens utilizados ni si se aplicaron técnicas de alineación como RLHF, DPO o similares. La model card no contiene ninguna sección descriptiva más allá de la declaración de licencia.
 
-El único indicio técnico disponible es el sufijo "MLX" del identificador, que en la convención habitual de HuggingFace indica que los pesos están en el formato MLX desarrollado por Apple para ejecución optimizada en chips de la familia M. Igualmente, "Edge" sugiere una orientación a despliegue en dispositivos con recursos limitados, pero ninguno de estos extremos está documentado por el autor.
+El único indicio técnico disponible es el sufijo "MLX" del identificador, que en la convención habitual de Hugging Face indica que los pesos están en el formato MLX desarrollado por Apple para ejecución optimizada en chips de la familia M. Igualmente, "Edge" sugiere una orientación a despliegue en dispositivos con recursos limitados, pero ninguno de estos extremos está documentado por el autor.
 
 ## Capacidades
 
@@ -75,5 +75,5 @@ No disponible. No se dispone de información suficiente sobre parámetros, conte
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jrb326/Matilda-Decision-v1-Edge-MLX
+- Hugging Face: https://huggingface.co/jrb326/Matilda-Decision-v1-Edge-MLX
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

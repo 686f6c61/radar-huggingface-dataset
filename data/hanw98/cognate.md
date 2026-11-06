@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hanw98/cognate`, publicado por el autor `hanw98` en HuggingFace, es un repositorio de aproximadamente 2,9 GB que se distribuye bajo licencia MIT. La fecha de creación es el 17 de agosto de 2026 y la última actualización se produjo el mismo día, lo que sugiere que se trata de una publicación muy reciente.
+El modelo `hanw98/cognate`, publicado por el autor `hanw98` en Hugging Face, es un repositorio de aproximadamente 2,9 GB que se distribuye bajo licencia MIT. La fecha de creación es el 17 de agosto de 2026 y la última actualización se produjo el mismo día, lo que sugiere que se trata de una publicación muy reciente.
 
 Sin embargo, la model card asociada es extremadamente escueta: únicamente contiene la declaración de licencia (`license: mit`). No se proporciona información sobre la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados, el pipeline de uso ni los datos de entrenamiento. El modelo registra cero descargas y cero likes en el momento de la consulta.
 
@@ -57,4 +57,4 @@ No disponible. Al carecer de informacion sobre la arquitectura, el tamano y el r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hanw98/cognate
+- Repositorio en Hugging Face: https://huggingface.co/hanw98/cognate

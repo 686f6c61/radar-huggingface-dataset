@@ -2,7 +2,7 @@
 
 ## Resumen
 
-oreki-krea es un adaptador LoRA de tipo DreamBooth publicado por el usuario DelinaresMassates en HuggingFace. No es un modelo de lenguaje ni un modelo completo de generacion: es un conjunto de pesos de bajo rango que se injerta sobre Krea 2, el modelo de difusion texto-a-imagen de Krea, para ensenar un concepto concreto invocado mediante el token `0REK1X`. El adaptador se entreno sobre Krea 2 RAW y los ejemplos de la model card se generaron sobre Krea 2 Turbo con 8 pasos de inferencia y `guidance_scale=0.0`.
+oreki-krea es un adaptador LoRA de tipo DreamBooth publicado por el usuario DelinaresMassates en Hugging Face. No es un modelo de lenguaje ni un modelo completo de generacion: es un conjunto de pesos de bajo rango que se injerta sobre Krea 2, el modelo de difusion texto-a-imagen de Krea, para ensenar un concepto concreto invocado mediante el token `0REK1X`. El adaptador se entreno sobre Krea 2 RAW y los ejemplos de la model card se generaron sobre Krea 2 Turbo con 8 pasos de inferencia y `guidance_scale=0.0`.
 
 El repositorio tiene un tamano de 1,0 GB (pesos del adaptador e imagenes de muestra) y se distribuye bajo licencia Apache 2.0. Se publica con la libreria `diffusers` y el pipeline `Krea2Pipeline`, lo que permite cargarlo en unas pocas lineas de Python junto al modelo base. El modelo base declarado es `krea/Krea-2-Raw`, con `krea/Krea-2-Turbo` usado para las inferencias rapidas de los ejemplos.
 
@@ -98,9 +98,9 @@ No se dispone de datos publicados de otros LoRA comparables (ni de parametros, n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DelinaresMassates/oreki-krea
+- Modelo en Hugging Face: https://huggingface.co/DelinaresMassates/oreki-krea
 - Modelo base de entrenamiento (referenciado en los metadatos): https://huggingface.co/krea/Krea-2-Raw
 - Modelo base de inferencia (referenciado en el codigo de ejemplo): https://huggingface.co/krea/Krea-2-Turbo
-- Imagenes de muestra en el repositorio: `sample_0.png`, `sample_1.png`, `sample_2.png` (en la raiz del repositorio de HuggingFace)
+- Imagenes de muestra en el repositorio: `sample_0.png`, `sample_1.png`, `sample_2.png` (en la raiz del repositorio de Hugging Face)
 - Documentacion de `diffusers` para carga de LoRA: https://huggingface.co/docs/diffusers/main/en/using-diffusers/loading_adapters
 - Papers, blogs o demos adicionales: no disponible. Las busquedas web realizadas no devolvieron ningun resultado relacionado con este modelo ni con Krea 2.

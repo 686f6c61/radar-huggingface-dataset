@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks específicos en la información dis
 
 | Modelo | Parámetros | Idiomas | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Parakeet TDT 0.6B v3 (Core ML iOS) | 600M | 25 europeos | Core ML (`.mlmodelc`) | MIT | HuggingFace |
+| Parakeet TDT 0.6B v3 (Core ML iOS) | 600M | 25 europeos | Core ML (`.mlmodelc`) | MIT | Hugging Face |
 | Parakeet TDT 0.6B v2 | 600M | Solo inglés | Varios (NVIDIA NGC) | No especificada | NVIDIA NGC |
 | Parakeet TDT 0.6B v3 (original) | 600M | 25 europeos | Varios (NVIDIA NGC) | No especificada | NVIDIA NGC |
 | Canary-1B-v2 | 1B | 25 europeos | Varios | No especificada | NVIDIA NGC |
@@ -86,7 +86,7 @@ La variante Core ML para iOS se diferencia de los modelos originales de NVIDIA e
 
 ## Enlaces
 
-- Repositorio HuggingFace (variante iOS): https://huggingface.co/aoiandroid/parakeet-tdt-0.6b-v3-coreml-ios
+- Repositorio Hugging Face (variante iOS): https://huggingface.co/aoiandroid/parakeet-tdt-0.6b-v3-coreml-ios
 - Repositorio fuente Core ML: https://huggingface.co/aoiandroid/parakeet-tdt-0.6b-v3-coreml
 - Colección NVIDIA NGC Parakeet TDT 0.6B: https://catalog.ngc.nvidia.com/orgs/nvidia/collections/parakeet-tdt-0.6b
 - Artículo arXiv (Canary-1B-v2 y Parakeet-TDT-0.6B-v3): https://arxiv.org/html/2509.14128v1

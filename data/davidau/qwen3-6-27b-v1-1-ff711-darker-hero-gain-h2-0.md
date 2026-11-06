@@ -6,7 +6,7 @@ DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0 es un fine-tune del modelo 
 
 El modelo base Qwen3.6-27B es un modelo denso multimodal (imagen-texto) con atención híbrida basada en gated delta networks, soporte de MTP (multi-token prediction) y una ventana de contexto de 262 000 tokens. Este fine-tune conserva la arquitectura y las capacidades multimodales del base, aunque su enfoque principal es la generación de texto creativo y roleplay. Con 27 781 427 952 parámetros (aproximadamente 27,78 mil millones), es un modelo de gran tamaño que requiere hardware potente para inferencia en precisión completa, aunque existen cuantizaciones GGUF que permiten ejecutarlo en GPUs de consumo.
 
-El modelo se distribuye bajo licencia Apache 2.0, pero su acceso en HuggingFace está restringido (gated) y requiere aceptar condiciones adicionales. Está etiquetado como "not-for-all-audiences" debido a su naturaleza sin censura. Es relevante para desarrolladores e investigadores que trabajan en generación de ficción, agentes conversacionales sin filtros o aplicaciones creativas donde se necesite un control fino del tono y estilo.
+El modelo se distribuye bajo licencia Apache 2.0, pero su acceso en Hugging Face está restringido (gated) y requiere aceptar condiciones adicionales. Está etiquetado como "not-for-all-audiences" debido a su naturaleza sin censura. Es relevante para desarrolladores e investigadores que trabajan en generación de ficción, agentes conversacionales sin filtros o aplicaciones creativas donde se necesite un control fino del tono y estilo.
 
 ## Especificaciones técnicas
 
@@ -17,8 +17,8 @@ El modelo se distribuye bajo licencia Apache 2.0, pero su acceso en HuggingFace 
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 262 000 tokens (heredado del base) |
 | Tipos de cuantizacion | bfloat16 (nativo), GGUF (varias precisiones, no especificadas) |
-| Idiomas soportados | en, zh (según ficha de HuggingFace) |
-| Licencia | Apache 2.0 (con acceso gated en HuggingFace) |
+| Idiomas soportados | en, zh (según ficha de Hugging Face) |
+| Licencia | Apache 2.0 (con acceso gated en Hugging Face) |
 | Formato de pesos | safetensors (bfloat16), GGUF (disponible en repos del autor) |
 
 ## Arquitectura y entrenamiento
@@ -72,13 +72,13 @@ No se dispone de comparativas con modelos de otros autores en la información pr
 - Sesgos del base: hereda los sesgos presentes en Qwen3.6-27B, que pueden amplificarse por el fine-tune en ciertos temas.
 - Riesgo de alucinación: como todo LLM, puede inventar hechos, citas o referencias, especialmente en contextos largos.
 - Idiomas limitados: oficialmente solo en y zh; el rendimiento en otros idiomas no está garantizado.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos.
 - Sin garantías de seguridad: al eliminar los mecanismos de rechazo, el modelo no distingue entre peticiones benignas y maliciosas; su uso conlleva responsabilidad legal y ética.
 - Compatibilidad de tool calling: no confirmada en este fine-tune; si se necesita function calling, se debe verificar experimentalmente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0
+- Modelo en Hugging Face: https://huggingface.co/DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0
 - Discusiones del modelo: https://huggingface.co/DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0/discussions
 - Página del base Qwen3.6-27B en QwenCloud: https://www.qwencloud.com/models/qwen3.6-27b
 - Recetas vLLM para Qwen3.6-27B: https://recipes.vllm.ai/Qwen/Qwen3.6-27B

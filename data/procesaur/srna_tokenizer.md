@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Srna Tokenizer es un tokenizador especializado en lengua serbia desarrollado por Mihailo Škorić (usuario `procesaur` en HuggingFace). No es un modelo de lenguaje generativo, sino un componente de tokenización que implementa varias capas de normalización para igualar los dos alfabetos del serbio (cirílico y latino) y reducir el numero de tokens redundantes en el vocabulario. Resuelve un problema concreto: los tokenizadores genericos tratan el cirilico y el latino como secuencias completamente distintas, lo que duplica representaciones y desperdicia capacidad del vocabulario en un idioma que usa ambos sistemas de escritura de forma nativa.
+Srna Tokenizer es un tokenizador especializado en lengua serbia desarrollado por Mihailo Škorić (usuario `procesaur` en Hugging Face). No es un modelo de lenguaje generativo, sino un componente de tokenización que implementa varias capas de normalización para igualar los dos alfabetos del serbio (cirílico y latino) y reducir el numero de tokens redundantes en el vocabulario. Resuelve un problema concreto: los tokenizadores genericos tratan el cirilico y el latino como secuencias completamente distintas, lo que duplica representaciones y desperdicia capacidad del vocabulario en un idioma que usa ambos sistemas de escritura de forma nativa.
 
 El tokenizador aplica tres mecanismos de compresion: compresion de escritura (una palabra en cirilico se marca con `<boc>`...`<eoc>` preservando la informacion necesaria para restaurar el alfabeto al decodificar), compresion de capitalizacion (una palabra capitalizada se marca con `<cap>` y se normaliza a minusculas) y compresion de mayusculas (una palabra en mayusculas se marca con `<up>` y se normaliza a minusculas, evitando la fragmentacion en caracteres individuales). El resultado es una representacion unificada que reduce la duplicacion en el vocabulario y facilita el aprendizaje de modelos que operan sobre serbio.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Tokenizador | Idioma | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Srna Tokenizer | Serbio (sr) | Normalizacion de escritura, capitalizacion y mayusculas con restauracion | Apache 2.0 | HuggingFace (`procesaur/Srna_tokenizer`) |
+| Srna Tokenizer | Serbio (sr) | Normalizacion de escritura, capitalizacion y mayusculas con restauracion | Apache 2.0 | Hugging Face (`procesaur/Srna_tokenizer`) |
 | Tokenizadores multilingues genericos (p. ej. los de XLM-R o mT5) | Multilingue | BPE/SentencePiece sin normalizacion especifica de escritura | Segun modelo | Amplia |
 | Tokenizadores especificos para serbocroata | Serbio/croata/bosnio | BPE estandar sin capas de compresion de escritura | Variable | No disponible en la informacion proporcionada |
 
@@ -85,7 +85,7 @@ La comparativa detallada con alternativas especificas para serbio no esta dispon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/procesaur/Srna_tokenizer
+- Hugging Face: https://huggingface.co/procesaur/Srna_tokenizer
 - Perfil del autor: https://huggingface.co/procesaur
 - Repositorio Cirilizator (listas de excepciones para digrafos): https://github.com/turanjanin/cirilizator/
 - Dataset asociado: https://huggingface.co/datasets/procesaur/sr-tokenizer-test

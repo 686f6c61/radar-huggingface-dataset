@@ -84,7 +84,7 @@ La comparativa se limita a parametros, contexto declarado y licencia, ya que no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Gemma-3-4B-IT-ES-SynthDolly-1A-E3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma-3-4B-IT-ES-SynthDolly-1A-E3-GGUF
 - Modelo base del ajuste fino: https://huggingface.co/kairawal/Gemma-3-4B-IT-ES-SynthDolly-1A-E3
 - Pagina de descargas del autor: https://hf.tst.eu/model#Gemma-3-4B-IT-ES-SynthDolly-1A-E3-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

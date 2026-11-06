@@ -67,9 +67,9 @@ La mejora de rendimiento con MTP fue del 9,09 %. Se verificó paridad exacta de 
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3.8-Flash-Next (original) | 125B totales / 6B activos | 262.144 | BF16 | qwen-community-1.0 | HuggingFace |
-| Vontra/Qwen3.8-Flash-Next-MLX-3bit-MTP (este) | 28,56B en checkpoint | 262.144 | 3-bit uniforme | qwen-community-1.0 | HuggingFace |
-| Vontra/Qwen3.8-Flash-Next-MLX-4bit | no disponible | no disponible | 4-bit | qwen-community-1.0 | HuggingFace |
+| Qwen/Qwen3.8-Flash-Next (original) | 125B totales / 6B activos | 262.144 | BF16 | qwen-community-1.0 | Hugging Face |
+| Vontra/Qwen3.8-Flash-Next-MLX-3bit-MTP (este) | 28,56B en checkpoint | 262.144 | 3-bit uniforme | qwen-community-1.0 | Hugging Face |
+| Vontra/Qwen3.8-Flash-Next-MLX-4bit | no disponible | no disponible | 4-bit | qwen-community-1.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas versiones más allá de la velocidad de generación medida en la versión 3-bit. La versión 4-bit existe en el mismo repositorio del autor, pero no se han publicado especificaciones detalladas.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos entre estas versiones más al
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-3bit-MTP
+- Repositorio Hugging Face: https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-3bit-MTP
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Blog de Qwen sobre Qwen3.8 Flash Next: https://qwen.ai/blog?id=qwen3.8-flash-next
 - MLX-VLM: https://github.com/ml-explore/mlx-vlm

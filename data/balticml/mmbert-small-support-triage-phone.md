@@ -90,7 +90,7 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/balticml/mmbert-small-support-triage-phone
+- Modelo en Hugging Face: https://huggingface.co/balticml/mmbert-small-support-triage-phone
 - Modelo de 16 capas: https://huggingface.co/balticml/mmbert-small-support-triage
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-small
 - Código, pipeline de datos y benchmark: https://github.com/balticml/support-triage

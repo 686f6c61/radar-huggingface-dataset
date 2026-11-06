@@ -26,7 +26,7 @@ No se dispone de información detallada sobre la arquitectura de cada modelo inc
 ## Capacidades
 
 - Modelos entrenados para 16 competiciones de Kaggle, lo que implica tareas variadas como clasificación, regresión, detección de anomalías y visión por computadora.
-- Incluye un modelo de detección de fraude (IEEE Fraud) que permite visualizar las características más importantes y obtener conclusiones sobre su rendimiento, según el espacio de HuggingFace asociado.
+- Incluye un modelo de detección de fraude (IEEE Fraud) que permite visualizar las características más importantes y obtener conclusiones sobre su rendimiento, según el espacio de Hugging Face asociado.
 - Dos proyectos de visión por computadora con modelos Keras, aunque no se especifican las tareas concretas (clasificación de imágenes, detección de objetos, etc.).
 - Los bundles joblib incluyen las columnas utilizadas, lo que facilita la reproducibilidad y la integración en pipelines existentes.
 - No se documentan capacidades de generación de texto, tool calling, agentes ni procesamiento de lenguaje natural.
@@ -67,6 +67,6 @@ No disponible. Al tratarse de un bundle de modelos heterogéneos para competicio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OKTAYBBS/kaggle-mastery-models
+- Repositorio en Hugging Face: https://huggingface.co/OKTAYBBS/kaggle-mastery-models
 - Aplicación Streamlit: https://oktaybobus-kaggle-mastery.streamlit.app
-- Espacio de HuggingFace para el modelo IEEE Fraud: https://huggingface.co/spaces/OKTAYBBS/kaggle-mastery-ieee-fraud
+- Espacio de Hugging Face para el modelo IEEE Fraud: https://huggingface.co/spaces/OKTAYBBS/kaggle-mastery-ieee-fraud

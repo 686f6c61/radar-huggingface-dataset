@@ -97,7 +97,7 @@ No se dispone de datos comparativos directos con otros modelos "uncensored" (com
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/AIAgens/GLM-5.3-Flash-UNCENSORED-FP8
+- Repositorio Hugging Face del modelo: https://huggingface.co/AIAgens/GLM-5.3-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Mirror del autor original (dealignai): https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-FP8
 - Articulo de ExplainX sobre el modelo: https://www.explainx.ai/blog/orcarouter-glm-5-3-flash-uncensored-block-fp8-august-2026

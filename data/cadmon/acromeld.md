@@ -82,6 +82,6 @@ No se dispone de informacion suficiente para comparar AcroMELD con otros modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cadmon/AcroMELD
+- Modelo en Hugging Face: https://huggingface.co/Cadmon/AcroMELD
 - Paquete Python: `pip install acromeld` (no se proporciona URL del repositorio)
 - No se encontraron papers, blogs o demos adicionales en la busqueda web.

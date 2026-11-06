@@ -51,7 +51,7 @@ Respecto al entrenamiento, la unica informacion disponible es que se realizo con
 - Clasificacion y etiquetado de texto en ingles: tareas de extraccion de entidades, categorizacion o resumen corto donde no se requiere alta precision factual.
 - Base para nuevos ajustes especificos de dominio: al estar bajo licencia apache-2.0, puede servir como punto de partida para fine-tunings posteriores en nichos concretos.
 - Evaluacion comparativa de tecnicas de cuantizacion: permite medir la perdida de calidad entre el modelo base en 4 bits y el resultado del ajuste, aunque para ello habria que construir el conjunto de evaluacion desde cero.
-- Aprendizaje y docencia: ejemplo practico de como se publica un modelo ajustado en HuggingFace con la plantilla de Unsloth, util en cursos sobre IA generativa.
+- Aprendizaje y docencia: ejemplo practico de como se publica un modelo ajustado en Hugging Face con la plantilla de Unsloth, util en cursos sobre IA generativa.
 
 ## Benchmarks y rendimiento
 
@@ -75,10 +75,10 @@ Los datos de las alternativas corresponden a su documentacion publica y no a una
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| chkab/gemma-2-2b-haddiyyisa-lora | No disponible (~2,6B en el base) | No disponible (8192 en el base) | apache-2.0 | HuggingFace, 0 descargas | Ajuste fino sin documentacion ni evaluacion |
-| google/gemma-2-2b-it | 2,6B | 8192 | Gemma Terms of Use | HuggingFace, ampliamente utilizado | Modelo base instruct original, con benchmarks publicados |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32 768 | apache-2.0 | HuggingFace y multiples proveedores | Soporte multilingue declarado y mejor contexto |
-| meta-llama/Llama-3.2-1B-Instruct | 1,2B | 128 000 | Llama 3.2 Community License | HuggingFace | Mayor contexto y ecosistema de herramientas mas amplio |
+| chkab/gemma-2-2b-haddiyyisa-lora | No disponible (~2,6B en el base) | No disponible (8192 en el base) | apache-2.0 | Hugging Face, 0 descargas | Ajuste fino sin documentacion ni evaluacion |
+| google/gemma-2-2b-it | 2,6B | 8192 | Gemma Terms of Use | Hugging Face, ampliamente utilizado | Modelo base instruct original, con benchmarks publicados |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32 768 | apache-2.0 | Hugging Face y multiples proveedores | Soporte multilingue declarado y mejor contexto |
+| meta-llama/Llama-3.2-1B-Instruct | 1,2B | 128 000 | Llama 3.2 Community License | Hugging Face | Mayor contexto y ecosistema de herramientas mas amplio |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ Los datos de las alternativas corresponden a su documentacion publica y no a una
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chkab/gemma-2-2b-haddiyyisa-lora
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/gemma-2-2b-it-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/chkab/gemma-2-2b-haddiyyisa-lora
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/gemma-2-2b-it-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Documentacion de Gemma 2 (Google): https://ai.google.dev/gemma/docs

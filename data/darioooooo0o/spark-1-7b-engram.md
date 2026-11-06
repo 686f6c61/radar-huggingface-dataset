@@ -73,8 +73,8 @@ No se han publicado resultados de MMLU, GSM8K, MBPP ni otros benchmarks en la in
 
 | Modelo | Parámetros | Contexto | HumanEval (greedy) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spark-X2.5-1.7B (base) | 1,7B | no disponible | 35,0 % (7/20) | no disponible en la información proporcionada | HuggingFace (XHToken/Spark-X2.5-1.7B) |
-| darioooooo0o/spark-1.7b-engram | 1,7B + 420,5M | no disponible | 50,0 % (10/20) | Apache 2.0 | HuggingFace (repo de 1,7 GB) |
+| Spark-X2.5-1.7B (base) | 1,7B | no disponible | 35,0 % (7/20) | no disponible en la información proporcionada | Hugging Face (XHToken/Spark-X2.5-1.7B) |
+| darioooooo0o/spark-1.7b-engram | 1,7B + 420,5M | no disponible | 50,0 % (10/20) | Apache 2.0 | Hugging Face (repo de 1,7 GB) |
 | Alternativas de la misma categoría (modelos de código de ~1-2B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada solo permite comparar el modelo con su propio backbone. No se incluyen datos de rendimiento, contexto ni licencia de otros modelos compactos de generación de código, por lo que no se puede establecer una comparativa rigurosa con alternativas externas.
@@ -96,7 +96,7 @@ La información proporcionada solo permite comparar el modelo con su propio back
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darioooooo0o/spark-1.7b-engram
+- Modelo en Hugging Face: https://huggingface.co/darioooooo0o/spark-1.7b-engram
 - Árbol completo de ficheros: https://huggingface.co/darioooooo0o/spark-1.7b-engram/tree/main
 - Pesos del módulo Engram (safetensors, 1,6 GB): https://huggingface.co/darioooooo0o/spark-1.7b-engram/resolve/main/engram_layer_weights_spark1.7b_25m.safetensors
 - Mapa canónico de tokenizador (compression_map.pt, 1,1 MB): https://huggingface.co/darioooooo0o/spark-1.7b-engram/resolve/main/compression_map.pt

@@ -57,9 +57,9 @@ No se dispone de datos verificables de parametros, contexto o rendimiento para e
 
 | Modelo / metodo | Categoria | Parametros totales | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jsbzzz/2camera_train (ACT) | Politica de imitacion ACT | 51.668.614 | no disponible | HuggingFace (`jsbzzz/2camera_train`) |
+| jsbzzz/2camera_train (ACT) | Politica de imitacion ACT | 51.668.614 | no disponible | Hugging Face (`jsbzzz/2camera_train`) |
 | Diffusion Policy | Politica de imitacion basada en difusion | no disponible | no disponible | implementada en LeRobot |
-| Otras politicas ACT de LeRobot | Politica de imitacion ACT | no disponible | no disponible | Hub de HuggingFace |
+| Otras politicas ACT de LeRobot | Politica de imitacion ACT | no disponible | no disponible | Hub de Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estas alternativas en la informacion proporcionada.
 
@@ -74,7 +74,7 @@ No se dispone de datos de benchmarks comparativos entre estas alternativas en la
 - Idiomas no aplicables: el modelo no procesa ni genera lenguaje natural, salvo la cadena de tarea usada como condicionamiento en el rollout.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/jsbzzz/2camera_train
+- Modelo en Hugging Face: https://huggingface.co/jsbzzz/2camera_train
 - Dataset de entrenamiento: https://huggingface.co/datasets/IMCON/OMX_LeRobot_20261009_231823
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=IMCON/OMX_LeRobot_20261009_231823
 - Articulo ACT (arXiv): https://huggingface.co/papers/2304.13705 (arXiv 2304.13705)

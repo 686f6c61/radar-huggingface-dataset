@@ -87,9 +87,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, GSM8K, etc.) en la
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-hq4g32 (este paquete) | 27,78 B | 262.144 nativos; ~1M con YaRN + LSA | `QWP1`, solo Qwegn en Apple Silicon | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-27B (base) | 27,78 B | 262.144 nativos | Safetensors (presumiblemente), ecosistema estándar | Apache 2.0 | HuggingFace |
-| qwegnai/Qwen3.8-27B-DFlash2-hq4g32 | 27,78 B (base) | Igual que el paquete base | `QWP1` + drafter DFlash 2, solo Qwegn | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B-hq4g32 (este paquete) | 27,78 B | 262.144 nativos; ~1M con YaRN + LSA | `QWP1`, solo Qwegn en Apple Silicon | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-27B (base) | 27,78 B | 262.144 nativos | Safetensors (presumiblemente), ecosistema estándar | Apache 2.0 | Hugging Face |
+| qwegnai/Qwen3.8-27B-DFlash2-hq4g32 | 27,78 B (base) | Igual que el paquete base | `QWP1` + drafter DFlash 2, solo Qwegn | Apache 2.0 | Hugging Face |
 
 La comparación con alternativas de otros fabricantes o con cuantizaciones GGUF/MLX del mismo modelo base no está disponible en la información proporcionada.
 
@@ -109,7 +109,7 @@ La comparación con alternativas de otros fabricantes o con cuantizaciones GGUF/
 
 ## Enlaces
 
-- HuggingFace del paquete: https://huggingface.co/qwegnai/Qwen3.8-27B-hq4g32
+- Hugging Face del paquete: https://huggingface.co/qwegnai/Qwen3.8-27B-hq4g32
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Drafter DFlash 2: https://huggingface.co/qwegnai/Qwen3.8-27B-DFlash2-hq4g32
 - Motor de inferencia Qwegn: https://github.com/qwegnai/qwegine

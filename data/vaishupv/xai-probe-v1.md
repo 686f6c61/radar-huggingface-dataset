@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vaishupv/xai-probe-v1` es un ajuste fino de tipo causal language model publicado en HuggingFace por el usuario `vaishupv`. Segun la informacion del repositorio, esta etiquetado con las arquitecturas `qwen2` y `qwen`, la tarea `text-generation` y los idiomas ingles y chino. La model card adjunta lo describe como "una variante ligera ajustada de Qwen2.5-0.5B optimizada para inferencia rapida", lo que situa su tamano en torno a los 500 millones de parametros.
+El modelo `vaishupv/xai-probe-v1` es un ajuste fino de tipo causal language model publicado en Hugging Face por el usuario `vaishupv`. Segun la informacion del repositorio, esta etiquetado con las arquitecturas `qwen2` y `qwen`, la tarea `text-generation` y los idiomas ingles y chino. La model card adjunta lo describe como "una variante ligera ajustada de Qwen2.5-0.5B optimizada para inferencia rapida", lo que situa su tamano en torno a los 500 millones de parametros.
 
 El repositorio presenta inconsistencias notables: el identificador es `xai-probe-v1`, mientras que la model card se titula "Qwen2.5-0.5B-Fast" y el ejemplo de uso apunta a un nombre de modelo distinto (`YOUR_HF_USERNAME/qwen25-fast-v1`). Ademas, el repositorio incluye la etiqueta `custom_code`, por lo que su carga requiere `trust_remote_code=True`. No hay documentacion publica sobre el proceso de ajuste, los datos empleados ni resultados de evaluacion.
 
@@ -69,10 +69,10 @@ Los datos de contexto y rendimiento del modelo evaluado no estan publicados; los
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| vaishupv/xai-probe-v1 | 0,5B | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-0.5B | 0,5B | 32 768 tokens (referencia del modelo base) | Apache 2.0 | HuggingFace, ampliamente descargado |
-| Qwen2.5-1.5B | 1,5B | 32 768 tokens (referencia del modelo base) | Apache 2.0 | HuggingFace, ampliamente descargado |
-| SmolLM2-360M | 0,36B | 8 192 tokens (referencia publica) | Apache 2.0 | HuggingFace |
+| vaishupv/xai-probe-v1 | 0,5B | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-0.5B | 0,5B | 32 768 tokens (referencia del modelo base) | Apache 2.0 | Hugging Face, ampliamente descargado |
+| Qwen2.5-1.5B | 1,5B | 32 768 tokens (referencia del modelo base) | Apache 2.0 | Hugging Face, ampliamente descargado |
+| SmolLM2-360M | 0,36B | 8 192 tokens (referencia publica) | Apache 2.0 | Hugging Face |
 
 En cuanto a rendimiento, no hay datos comparables publicados para `xai-probe-v1`. La principal diferencia frente a los modelos base de referencia es la ausencia de documentacion, de evaluaciones y de comunidad, ademas de la dependencia de codigo personalizado.
 
@@ -91,7 +91,7 @@ En cuanto a rendimiento, no hay datos comparables publicados para `xai-probe-v1`
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vaishupv/xai-probe-v1
+- Hugging Face: https://huggingface.co/vaishupv/xai-probe-v1
 - Paper, blog o repositorio oficial: no disponible.
 - Demos: no disponible.
 - La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo; los unicos resultados obtenidos corresponden a hilos de foro sobre inversiones ajenos a este repositorio y no se incluyen.

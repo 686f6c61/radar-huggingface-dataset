@@ -4,7 +4,7 @@
 
 FrameMeld no es un modelo de inteligencia artificial en el sentido habitual, sino una aplicación de escritorio para Windows que integra el modelo de interpolación de fotogramas RIFE con codificación acelerada por hardware. Desarrollada por Luxbane, esta herramienta permite aumentar la tasa de fotogramas de un vídeo (por ejemplo, de 24 a 60 fps) mediante interpolación neuronal, y codificar el resultado directamente a AV1, HEVC o H.264 usando los codificadores de hardware de NVIDIA, AMD o Intel, sin necesidad de extraer fotogramas manualmente ni de manejar varias utilidades por separado.
 
-La relevancia actual del proyecto reside en que unifica en una única interfaz gráfica dos tecnologías que normalmente requieren configuraciones complejas: la interpolación de vídeo con RIFE (tanto en su variante CUDA como NCNN/Vulkan) y la codificación final con FFmpeg mediante NVENC, AMF o QSV. El repositorio de HuggingFace aloja el código fuente y los archivos de runtime necesarios, aunque el propio modelo de interpolación RIFE no está incluido en el repositorio; se descarga automáticamente en el primer arranque desde fuentes externas. El tamaño del repositorio es de 1,3 GB, correspondiente en su mayoría a los archivos de runtime empaquetados.
+La relevancia actual del proyecto reside en que unifica en una única interfaz gráfica dos tecnologías que normalmente requieren configuraciones complejas: la interpolación de vídeo con RIFE (tanto en su variante CUDA como NCNN/Vulkan) y la codificación final con FFmpeg mediante NVENC, AMF o QSV. El repositorio de Hugging Face aloja el código fuente y los archivos de runtime necesarios, aunque el propio modelo de interpolación RIFE no está incluido en el repositorio; se descarga automáticamente en el primer arranque desde fuentes externas. El tamaño del repositorio es de 1,3 GB, correspondiente en su mayoría a los archivos de runtime empaquetados.
 
 ## Especificaciones tecnicas
 
@@ -80,12 +80,12 @@ La principal diferencia es que FrameMeld integra la codificacion por hardware di
 - La descarga de runtime en el primer arranque requiere conexion a internet; en entornos aislados, la instalacion manual de FFmpeg y del modelo RIFE puede ser compleja.
 - La interpolacion de fotogramas puede producir artefactos visuales en escenas con movimiento rapido, desenfoque de movimiento extremo o cambios bruscos de iluminacion; la calidad depende del contenido y de la configuracion elegida.
 - No se documentan limites de resolucion o duracion de video; videos muy largos o de alta resolucion pueden requerir gran cantidad de VRAM y tiempo de procesamiento.
-- El repositorio de HuggingFace no contiene el modelo RIFE en si, solo la aplicacion; los pesos se descargan de fuentes externas, por lo que la reproducibilidad del entorno depende de la disponibilidad de esos recursos.
+- El repositorio de Hugging Face no contiene el modelo RIFE en si, solo la aplicacion; los pesos se descargan de fuentes externas, por lo que la reproducibilidad del entorno depende de la disponibilidad de esos recursos.
 - No se proporcionan metricas de rendimiento ni benchmarks oficiales, por lo que es dificil predecir tiempos de procesamiento en hardware concreto.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Luxbane/FrameMeld
+- Repositorio en Hugging Face: https://huggingface.co/Luxbane/FrameMeld
 - Repositorio en GitHub: https://github.com/Luxbane/FrameMeld
 - Pagina de releases en GitHub: https://github.com/Luxbane/FrameMeld/releases/latest
 - Pagina en itch.io: https://luxbane.itch.io/framemeld

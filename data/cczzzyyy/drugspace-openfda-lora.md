@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DrugSpace-openfda-lora es un adaptador LoRA (PEFT) publicado por el usuario cczzzyyy sobre el modelo base cczzzyyy/DrugSpace-mntp-8B. Se trata de un modelo orientado a la generacion de embeddings (pipeline feature-extraction) dentro del dominio biomedico y del descubrimiento de farmacos, construido sobre la metodologia LLM2Vec, que convierte un transformer decoder-only en un encoder de texto mediante entrenamiento MNTP (Masked Next Token Prediction) seguido de aprendizaje contrastivo no supervisado. El nombre del adaptador sugiere un ajuste fino orientado al corpus OpenFDA, aunque la ficha de HuggingFace no documenta la composicion exacta del dataset utilizado.
+DrugSpace-openfda-lora es un adaptador LoRA (PEFT) publicado por el usuario cczzzyyy sobre el modelo base cczzzyyy/DrugSpace-mntp-8B. Se trata de un modelo orientado a la generacion de embeddings (pipeline feature-extraction) dentro del dominio biomedico y del descubrimiento de farmacos, construido sobre la metodologia LLM2Vec, que convierte un transformer decoder-only en un encoder de texto mediante entrenamiento MNTP (Masked Next Token Prediction) seguido de aprendizaje contrastivo no supervisado. El nombre del adaptador sugiere un ajuste fino orientado al corpus OpenFDA, aunque la ficha de Hugging Face no documenta la composicion exacta del dataset utilizado.
 
 El modelo base es de 8.000 millones de parametros aproximadamente (deducido del identificador DrugSpace-mntp-8B) y la etiqueta de licencia del repositorio apunta a llama3.1, lo que indica que la arquitectura subyacente es probablemente la de Llama 3.1 8B. El repositorio no incluye informacion sobre idiomas soportados, benchmarks ni detalles de entrenamiento, y registra 0 descargas y 0 likes en el momento de la consulta.
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cczzzzyy/DrugSpace-openfda-lora
+- Modelo en Hugging Face: https://huggingface.co/cczzzzyy/DrugSpace-openfda-lora
 - Perfil del autor: https://huggingface.co/cczzzzyy
 - Modelo relacionado (full-lora): https://huggingface.co/cczzzzyy/DrugSpace-full-lora
 - Repositorio GitHub del proyecto DrugSpace: https://github.com/caozhiyuan0424/DrugSpace

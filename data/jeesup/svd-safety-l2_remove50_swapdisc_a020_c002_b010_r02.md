@@ -83,10 +83,10 @@ No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (svd-safety-l2_remove50_swapdisc_a020_c002_b010_r02) | 6,74 B (50 % de proyecciones densas eliminadas) | 4096 tokens | Llama 2 Community License | ASR 0,3865 (AdvBench); ASR 0,2364 (StrongREJECT); sobrerrechazo 0,2187 | HuggingFace, 0 descargas, 0 likes |
-| meta-llama/Llama-2-7b-chat-hf | 6,74 B | 4096 tokens | Llama 2 Community License | no disponible en esta ficha | HuggingFace, referencia ampliamente utilizada |
-| meta-llama/Llama-2-13b-chat-hf | 13 B | 4096 tokens | Llama 2 Community License | no disponible en esta ficha | HuggingFace |
-| mistralai/Mistral-7B-Instruct-v0.1 | 7,24 B | 8192 tokens | Apache-2.0 | no disponible en esta ficha | HuggingFace |
+| Este checkpoint (svd-safety-l2_remove50_swapdisc_a020_c002_b010_r02) | 6,74 B (50 % de proyecciones densas eliminadas) | 4096 tokens | Llama 2 Community License | ASR 0,3865 (AdvBench); ASR 0,2364 (StrongREJECT); sobrerrechazo 0,2187 | Hugging Face, 0 descargas, 0 likes |
+| meta-llama/Llama-2-7b-chat-hf | 6,74 B | 4096 tokens | Llama 2 Community License | no disponible en esta ficha | Hugging Face, referencia ampliamente utilizada |
+| meta-llama/Llama-2-13b-chat-hf | 13 B | 4096 tokens | Llama 2 Community License | no disponible en esta ficha | Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.1 | 7,24 B | 8192 tokens | Apache-2.0 | no disponible en esta ficha | Hugging Face |
 
 La comparación directa de rendimiento con alternativas no es posible con los datos disponibles: la model card solo reporta métricas de seguridad de este checkpoint y no incluye la línea base sin comprimir. Otros modelos de la misma rejilla experimental no están enumerados en la información proporcionada.
 
@@ -106,7 +106,7 @@ La comparación directa de rendimiento con alternativas no es posible con los da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a020_c002_b010_r02
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a020_c002_b010_r02
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia y política de uso: LICENSE.txt y USE_POLICY.md incluidos en el repositorio del modelo
 - Referencias metodológicas citadas en la model card (sin enlace proporcionado): SVD-LLM, regla de selección `disc_iter`, AdvBench, HarmBench, StrongREJECT y WildGuard

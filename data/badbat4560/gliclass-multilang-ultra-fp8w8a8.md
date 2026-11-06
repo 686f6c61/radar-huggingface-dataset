@@ -116,6 +116,6 @@ No se han proporcionado datos de otros clasificadores comparables en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/badbat4560/gliclass-multilang-ultra-fp8w8a8
+- Modelo en Hugging Face: https://huggingface.co/badbat4560/gliclass-multilang-ultra-fp8w8a8
 - Modelo base: https://huggingface.co/knowledgator/gliclass-multilang-ultra
 - Paper, blog o repositorio adicionales: no disponibles en la información proporcionada.

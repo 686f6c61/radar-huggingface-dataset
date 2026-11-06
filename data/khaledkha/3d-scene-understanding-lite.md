@@ -23,7 +23,7 @@ La relevancia práctica es muy limitada: la model card aclara explícitamente qu
 
 ## Arquitectura y entrenamiento
 
-No se documenta ninguna arquitectura. La etiqueta `transformer` figura en los metadatos de HuggingFace, pero la model card no describe capas, mecanismos de atención, tipo de tokenizador ni configuración de contexto. Tampoco se menciona ningún proceso de entrenamiento: no hay número de tokens, composición de dataset, fases de preentrenamiento, ajuste supervisado, RLHF, DPO ni ninguna otra etapa.
+No se documenta ninguna arquitectura. La etiqueta `transformer` figura en los metadatos de Hugging Face, pero la model card no describe capas, mecanismos de atención, tipo de tokenizador ni configuración de contexto. Tampoco se menciona ningún proceso de entrenamiento: no hay número de tokens, composición de dataset, fases de preentrenamiento, ajuste supervisado, RLHF, DPO ni ninguna otra etapa.
 
 El contenido real del repositorio son notas de investigación con la siguiente estructura declarada: alcance de la pregunta de investigación y posibles factores de confusión; una comparación propuesta con líneas base emparejadas; contexto de evaluación con benchmarks públicos apropiados para la tarea; comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas; y referencias relevantes al tema. La model card insiste en que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales, y que cualquier resultado futuro debería incluir versiones de dataset, comandos, semillas, hardware y registros sin procesar.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no aplica, al no existir modelo que cargar.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponibles; ninguna es aplicable a un repositorio de notas.
-- Almacenamiento: el repositorio ocupa 0,0 GB según HuggingFace, por lo que basta con espacio de disco despreciable para clonar los ficheros Markdown.
+- Almacenamiento: el repositorio ocupa 0,0 GB según Hugging Face, por lo que basta con espacio de disco despreciable para clonar los ficheros Markdown.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -80,8 +80,8 @@ No disponible. No se identifican modelos comparables en la información proporci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/khaledkha/3d-scene-understanding-lite
-- Artefacto principal citado en la model card: `reading.md` (dentro del repositorio de HuggingFace)
-- Documentación citada: `README.md` (dentro del repositorio de HuggingFace)
+- Hugging Face: https://huggingface.co/khaledkha/3d-scene-understanding-lite
+- Artefacto principal citado en la model card: `reading.md` (dentro del repositorio de Hugging Face)
+- Documentación citada: `README.md` (dentro del repositorio de Hugging Face)
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada
 - Búsqueda web: sin resultados relevantes; los enlaces devueltos corresponden a foros de soporte de un proveedor de correo y no están relacionados con el modelo

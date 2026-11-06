@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Modelo base | Tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| farc077/Ella_Purnell_KREA2 | LoRA de identidad (text-to-image) | krea/Krea-2-Raw | 0,2 GB | other | HuggingFace, 0 descargas, 0 likes |
+| farc077/Ella_Purnell_KREA2 | LoRA de identidad (text-to-image) | krea/Krea-2-Raw | 0,2 GB | other | Hugging Face, 0 descargas, 0 likes |
 | Otros LoRA de actrices sobre Krea-2-Raw | LoRA de identidad | krea/Krea-2-Raw | no disponible | no disponible | no disponible |
-| LoRA de identidad sobre otros modelos de difusión (p. ej. SDXL, Flux) | LoRA de identidad | Distintos | variable | variable | amplia disponibilidad en HuggingFace |
+| LoRA de identidad sobre otros modelos de difusión (p. ej. SDXL, Flux) | LoRA de identidad | Distintos | variable | variable | amplia disponibilidad en Hugging Face |
 
 No se dispone de información sobre adaptadores comparables directos dentro del ecosistema Krea-2-Raw, ni de métricas de calidad que permitan una comparación cuantitativa. La comparativa con LoRA de otras familias de difusión es cualitativa y depende de las capacidades del modelo base respectivo.
 
@@ -80,6 +80,6 @@ No se dispone de información sobre adaptadores comparables directos dentro del 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/farc077/Ella_Purnell_KREA2
+- Modelo en Hugging Face: https://huggingface.co/farc077/Ella_Purnell_KREA2
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Plataforma de entrenamiento citada por el autor: https://oneshotlora.com

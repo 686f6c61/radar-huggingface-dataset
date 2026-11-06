@@ -2,7 +2,7 @@
 
 ## Resumen
 
-theavikb/person3 es un adaptador LoRA de tipo DreamBooth para generacion de imagenes a partir de texto, entrenado sobre el modelo base krea/Krea-2-Raw y pensado para utilizarse en inferencia sobre krea/Krea-2-Turbo. Lo publica el usuario theavikb en HuggingFace bajo licencia Apache 2.0. No es un modelo de lenguaje: es un peso adicional que se carga sobre un pipeline de difusion para inducir un concepto concreto, activado mediante el token de disparo `person3 woman`.
+theavikb/person3 es un adaptador LoRA de tipo DreamBooth para generacion de imagenes a partir de texto, entrenado sobre el modelo base krea/Krea-2-Raw y pensado para utilizarse en inferencia sobre krea/Krea-2-Turbo. Lo publica el usuario theavikb en Hugging Face bajo licencia Apache 2.0. No es un modelo de lenguaje: es un peso adicional que se carga sobre un pipeline de difusion para inducir un concepto concreto, activado mediante el token de disparo `person3 woman`.
 
 El repositorio ocupa 0,8 GB, usa la libreria diffusers y esta etiquetado con `text-to-image`, `lora`, `template:sd-lora` y `krea2`. La model card indica que se trata de un LoRA entrenado sobre Krea 2 RAW y que las muestras publicadas se generaron sobre Krea 2 Turbo con 8 pasos de inferencia y `guidance_scale=0.0`, lo que sugiere un flujo de generacion rapida en pocos pasos.
 
@@ -75,7 +75,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 | Modelo | Tipo | Papel | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| theavikb/person3 | LoRA DreamBooth | Adaptador de concepto | no disponible (repo 0,8 GB) | no aplica | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| theavikb/person3 | LoRA DreamBooth | Adaptador de concepto | no disponible (repo 0,8 GB) | no aplica | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | krea/Krea-2-Raw | Modelo de difusion texto-a-imagen | Base de entrenamiento del LoRA | no disponible | no aplica | no disponible | no disponible | referenciado como modelo base |
 | krea/Krea-2-Turbo | Modelo de difusion texto-a-imagen | Base de inferencia mostrada (8 pasos) | no disponible | no aplica | no disponible | no disponible | referenciado en el ejemplo de codigo |
 
@@ -97,7 +97,7 @@ No se identifican en la busqueda web otros adaptadores LoRA comparables para Kre
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/theavikb/person3
+- Hugging Face del modelo: https://huggingface.co/theavikb/person3
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base usado en los ejemplos de inferencia: https://huggingface.co/krea/Krea-2-Turbo
 - Paper, repositorio, demo o blog oficial: no disponible (la busqueda web no devolvio ningun enlace relacionado con el modelo)

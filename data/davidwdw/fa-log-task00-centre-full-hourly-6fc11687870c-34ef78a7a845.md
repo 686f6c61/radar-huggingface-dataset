@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El artefacto identificado como `davidwdw/fa-log-task00-centre-full-hourly-6fc11687870c-34ef78a7a845` es un paquete publicado en HuggingFace por el usuario `davidwdw`. Segun la propia model card, se trata de un "versioned fleet archive" (archivo de flota versionado) asociado a una receta canonica concreta: `evaluations/2026-09-23_task00_centre_full_recovery`. No se describe en ningun momento un modelo neuronal, un conjunto de pesos ni una arquitectura de aprendizaje automatico.
+El artefacto identificado como `davidwdw/fa-log-task00-centre-full-hourly-6fc11687870c-34ef78a7a845` es un paquete publicado en Hugging Face por el usuario `davidwdw`. Segun la propia model card, se trata de un "versioned fleet archive" (archivo de flota versionado) asociado a una receta canonica concreta: `evaluations/2026-09-23_task00_centre_full_recovery`. No se describe en ningun momento un modelo neuronal, un conjunto de pesos ni una arquitectura de aprendizaje automatico.
 
 La model card indica que el paquete pertenece al nivel "versioned snapshot" y advierte de que se debe usar la revision exacta registrada y verificar el fichero `SHA256SUMS`. Tambien aclara explicitamente que es una instantanea y no un espejo de directorio en vivo. Por tanto, el artefacto parece orientado a la preservacion reproducible de registros y resultados de evaluacion, no a la inferencia.
 
@@ -80,12 +80,12 @@ No disponible. No se puede establecer comparativa con modelos de la misma catego
 - Se trata de una instantanea, no de un espejo en vivo: no debe usarse como sustituto del directorio de origen ni asumir que refleja el estado actual.
 - La model card exige el uso de la revision exacta registrada y la verificacion de `SHA256SUMS`; omitir esa verificacion elimina la garantia de integridad.
 - No se especifica el contenido del paquete, por lo que no puede descartarse la presencia de datos sensibles si provienen de registros de una flota. Se recomienda revision previa antes de redistribuir.
-- Las fechas registradas (creacion y actualizacion el 2026-09-26) son las que aparecen en la ficha de HuggingFace y no se han contrastado con ninguna otra fuente.
+- Las fechas registradas (creacion y actualizacion el 2026-09-26) son las que aparecen en la ficha de Hugging Face y no se han contrastado con ninguna otra fuente.
 - El artefacto presenta 0 descargas y 0 likes, por lo que no existe validacion externa ni comunidad que haya reportado problemas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-6fc11687870c-34ef78a7a845
+- Hugging Face: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-6fc11687870c-34ef78a7a845
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `BernardoDev07/qwen2.5-1.5b-ifood-intent-ptbr` es un ajuste fino (fine-tuning) publicado en HuggingFace por el usuario BernardoDev07. Por el identificador se deduce que parte de la base Qwen2.5-1.5B, el modelo denso de 1.500 millones de parámetros de la familia Qwen2.5 de Alibaba, y que está orientado a la clasificación de intenciones (intent detection) en el dominio de iFood, la plataforma brasileña de reparto de comida, con foco en portugués de Brasil (pt-BR).
+El modelo `BernardoDev07/qwen2.5-1.5b-ifood-intent-ptbr` es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario BernardoDev07. Por el identificador se deduce que parte de la base Qwen2.5-1.5B, el modelo denso de 1.500 millones de parámetros de la familia Qwen2.5 de Alibaba, y que está orientado a la clasificación de intenciones (intent detection) en el dominio de iFood, la plataforma brasileña de reparto de comida, con foco en portugués de Brasil (pt-BR).
 
 El problema que aborda es acotado: reconocer la intención del usuario en conversaciones o consultas dentro de un asistente de pedidos de comida. Es un caso típico de NLP aplicado a atención al cliente, donde un modelo pequeño y especializado puede sustituir a un LLM grande en una tarea de clasificación con etiquetas cerradas, reduciendo coste y latencia.
 
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada en cuantización de 4 bits (si se genera una versión GGUF/AWQ, no publicada): alrededor de 1 GB de pesos.
 - GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para FP16 (RTX 3060, RTX 4060, RTX 4090, A10, L4); para despliegue en servidor, A100 o H100 no son necesarias por tamaño, pero sí útiles para alto throughput por batched inference.
 - Cabe en GPU de consumo: sí, en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090 en FP16; también en GPUs de 8 GB con cuantización.
-- Opciones de despliegue: transformers (nativo), vLLM y TGI para serving con batching, llama.cpp/Ollama solo si se generan pesos GGUF (no publicados). El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace Inference.
+- Opciones de despliegue: transformers (nativo), vLLM y TGI para serving con batching, llama.cpp/Ollama solo si se generan pesos GGUF (no publicados). El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face Inference.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BernardoDev07/qwen2.5-1.5b-ifood-intent-ptbr | 1.500 M (deducido) | no disponible | Clasificación de intenciones iFood (pt-BR) | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-1.5B | 1.500 M | 32.768 tokens | Propósito general, multilingüe | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen/Qwen2.5-1.5B-Instruct | 1.500 M | 32.768 tokens | Instrucciones y chat | Apache 2.0 | HuggingFace, ampliamente usado |
-| Modelos de clasificación de intenciones pt-BR (p. ej. BERTimbau base) | ~110 M | 512 tokens | Clasificación de texto en portugués | MIT / varias | HuggingFace |
+| BernardoDev07/qwen2.5-1.5b-ifood-intent-ptbr | 1.500 M (deducido) | no disponible | Clasificación de intenciones iFood (pt-BR) | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-1.5B | 1.500 M | 32.768 tokens | Propósito general, multilingüe | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen/Qwen2.5-1.5B-Instruct | 1.500 M | 32.768 tokens | Instrucciones y chat | Apache 2.0 | Hugging Face, ampliamente usado |
+| Modelos de clasificación de intenciones pt-BR (p. ej. BERTimbau base) | ~110 M | 512 tokens | Clasificación de texto en portugués | MIT / varias | Hugging Face |
 
 La comparación con BERTimbau es orientativa: para una tarea de clasificación de intenciones con etiquetas cerradas, un encoder pequeño como BERTimbau puede ser más eficiente que un decoder de 1.500 M, aunque este último ofrece mayor flexibilidad si la tarea requiere generación. No se dispone de métricas de rendimiento del modelo evaluado para establecer una comparación cuantitativa.
 
@@ -84,7 +84,7 @@ La comparación con BERTimbau es orientativa: para una tarea de clasificación d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BernardoDev07/qwen2.5-1.5b-ifood-intent-ptbr
+- Hugging Face: https://huggingface.co/BernardoDev07/qwen2.5-1.5b-ifood-intent-ptbr
 - Modelo base presumible: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Variante instruct del base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Referencia citada en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

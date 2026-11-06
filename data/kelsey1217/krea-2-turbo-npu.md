@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea-2-Turbo-NPU es una adaptacion del modelo de generacion de imagenes Krea-2-Turbo, publicada por el usuario Kelsey1217 en HuggingFace. Se trata de un *finetune* derivado del modelo base `krea/Krea-2-Turbo`, orientado especificamente a la inferencia sobre NPU de AMD (etiquetas `amd`, `npu`, `ryzen-ai`) y distribuido en pesos cuantizados a 8 bits en formato safetensors. El repositorio ocupa 20,3 GB y contiene 20.304.043.198 parametros totales (aproximadamente 20,3 mil millones), un orden de magnitud coherente con un modelo de difusion de gran tamano para texto-a-imagen.
+Krea-2-Turbo-NPU es una adaptacion del modelo de generacion de imagenes Krea-2-Turbo, publicada por el usuario Kelsey1217 en Hugging Face. Se trata de un *finetune* derivado del modelo base `krea/Krea-2-Turbo`, orientado especificamente a la inferencia sobre NPU de AMD (etiquetas `amd`, `npu`, `ryzen-ai`) y distribuido en pesos cuantizados a 8 bits en formato safetensors. El repositorio ocupa 20,3 GB y contiene 20.304.043.198 parametros totales (aproximadamente 20,3 mil millones), un orden de magnitud coherente con un modelo de difusion de gran tamano para texto-a-imagen.
 
 El modelo resuelve la generacion de imagenes a partir de descripciones textuales (pipeline `text-to-image`) en hardware de PC con acelerador neuronal integrado, un nicho en el que historicamente han escaseado las implementaciones optimizadas: la mayoria de los modelos de difusion de esta escala se despliegan sobre GPU NVIDIA. Su relevancia actual radica precisamente en esa especializacion, ya que permite ejecutar localmente un modelo de ~20.000 millones de parametros en equipos con Ryzen AI sin depender de una GPU dedicada.
 
@@ -24,7 +24,7 @@ La informacion publica disponible es muy limitada: el repositorio es de acceso r
 | Pipeline declarado | text-to-image |
 | Modelo base | krea/Krea-2-Turbo (finetune) |
 | Hardware objetivo | NPU de AMD, Ryzen AI |
-| Acceso | Restringido (*gated*): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (*gated*): requiere aceptar condiciones en Hugging Face |
 | Descargas / valoraciones | 0 / 0 |
 | Fecha de publicacion | 2026-10-09 |
 
@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, con
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: el repositorio no incluye tarjeta de modelo con detalles de arquitectura, entrenamiento, datos o evaluacion, lo que impide auditar su comportamiento.
-- Acceso restringido: es un repositorio *gated*, por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: es un repositorio *gated*, por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Licencia Krea-2 Community License: no es una licencia de codigo abierto estandar. Las condiciones concretas de uso comercial, redistribucion y obras derivadas deben consultarse en el texto de la licencia antes de cualquier uso en produccion; en esta ficha no se detallan porque no se han verificado.
 - Calidad tras la cuantizacion: no hay evidencia publicada de como afecta la conversion a 8 bits y la adaptacion a NPU a la fidelidad de las imagenes generadas respecto al modelo base.
 - Riesgo de sesgos: no evaluado ni documentado. Como modelo de generacion de imagenes entrenado con datos a gran escala, es probable que reproduzca sesgos presentes en su dataset, pero no existe analisis publicado al respecto.
@@ -95,7 +95,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kelsey1217/Krea-2-Turbo-NPU
+- Repositorio en Hugging Face: https://huggingface.co/Kelsey1217/Krea-2-Turbo-NPU
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - Licencia Krea-2 Community License: no disponible (no se ha localizado el texto de la licencia en la informacion proporcionada)
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web no ha devuelto ninguna fuente relevante sobre este modelo.

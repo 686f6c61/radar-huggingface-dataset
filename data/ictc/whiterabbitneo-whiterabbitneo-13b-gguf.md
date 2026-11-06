@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WhiteRabbitNeo-13B-GGUF es una redistribucion en formato GGUF del modelo WhiteRabbitNeo-13B, publicada por el usuario ictc en HuggingFace. Se trata de un modelo de generacion de texto de 13.016.028.160 parametros (aproximadamente 13,0 mil millones) derivado del proyecto original alojado en el repositorio whiterabbitneo/WhiteRabbitNeo-13B, y convertido a GGUF para permitir inferencia en CPU y en GPU con herramientas basadas en llama.cpp. La ficha no documenta el modelo base, el proceso de entrenamiento ni la longitud de contexto, por lo que buena parte de las especificaciones tecnicas quedan como no disponibles.
+WhiteRabbitNeo-13B-GGUF es una redistribucion en formato GGUF del modelo WhiteRabbitNeo-13B, publicada por el usuario ictc en Hugging Face. Se trata de un modelo de generacion de texto de 13.016.028.160 parametros (aproximadamente 13,0 mil millones) derivado del proyecto original alojado en el repositorio whiterabbitneo/WhiteRabbitNeo-13B, y convertido a GGUF para permitir inferencia en CPU y en GPU con herramientas basadas en llama.cpp. La ficha no documenta el modelo base, el proceso de entrenamiento ni la longitud de contexto, por lo que buena parte de las especificaciones tecnicas quedan como no disponibles.
 
 El interes de esta publicacion es fundamentalmente practico: el formato GGUF permite despliegue en un solo fichero con carga por mmap, metadatos en estructura clave-valor y ejecucion en hardware de consumo sin necesidad de bibliotecas externas pesadas. Frente a los pesos originales en safetensors, esta version facilita el uso local con Ollama, llama.cpp o LM Studio, aunque a costa de perder la posibilidad de reentrenamiento o ajuste fino directo.
 
@@ -30,7 +30,7 @@ Tampoco hay datos sobre el entrenamiento: no se especifica el numero de tokens, 
 ## Capacidades
 
 - Generacion de texto autoregresiva en ingles y chino, segun los idiomas declarados en las etiquetas del repositorio.
-- Compatibilidad con el pipeline `text-generation` de transformers y con `endpoints_compatible`, lo que permite su despliegue detras de una API compatible con HuggingFace Endpoints.
+- Compatibilidad con el pipeline `text-generation` de transformers y con `endpoints_compatible`, lo que permite su despliegue detras de una API compatible con Hugging Face Endpoints.
 - Inferencia en CPU y GPU mediante el ecosistema GGUF/llama.cpp, con soporte de carga por mmap.
 - Seleccion de nivel de cuantizacion para ajustar el equilibrio entre calidad y consumo de memoria (desde Q2_K hasta F16).
 - Capacidad de tool calling / function calling: no disponible.
@@ -98,7 +98,7 @@ No se dispone de resultados comparativos de benchmarks entre estos modelos y Whi
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion GGUF: https://huggingface.co/ictc/whiterabbitneo-WhiteRabbitNeo-13B-GGUF
+- Repositorio Hugging Face de esta conversion GGUF: https://huggingface.co/ictc/whiterabbitneo-WhiteRabbitNeo-13B-GGUF
 - Modelo original referenciado en la model card: https://huggingface.co/whiterabbitneo/WhiteRabbitNeo-13B
 - Enlace de donacion incluido por el autor de la conversion: https://www.buymeacoffee.com/s3nh
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Todas las entradas devueltas por la busqueda corresponden a sitios de casino, apuestas y juegos de azar sin relacion con inteligencia artificial ni con el modelo, por lo que se descartan como fuentes.

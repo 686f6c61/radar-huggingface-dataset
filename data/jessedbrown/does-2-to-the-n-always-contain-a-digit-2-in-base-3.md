@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio de HuggingFace `Jessedbrown/does-2-to-the-n-always-contain-a-digit-2-in-base-3` no contiene un modelo de aprendizaje automatico: no hay pesos, no hay arquitectura neuronal y no hay entrenamiento. Lo que publica el autor (Jesse Daniel Brown, "OP-JESSE") es un paquete de tres artefactos — una pagina `index.html` autocontenida, un script `trunk.py` y un script `reframe_check.py` — que exploran computacionalmente una conjetura abierta de teoria de numeros atribuida a Erdos: si para todo `n > 8` la potencia `2^n` contiene al menos un digito `2` en base 3.
+El repositorio de Hugging Face `Jessedbrown/does-2-to-the-n-always-contain-a-digit-2-in-base-3` no contiene un modelo de aprendizaje automatico: no hay pesos, no hay arquitectura neuronal y no hay entrenamiento. Lo que publica el autor (Jesse Daniel Brown, "OP-JESSE") es un paquete de tres artefactos — una pagina `index.html` autocontenida, un script `trunk.py` y un script `reframe_check.py` — que exploran computacionalmente una conjetura abierta de teoria de numeros atribuida a Erdos: si para todo `n > 8` la potencia `2^n` contiene al menos un digito `2` en base 3.
 
 El material reformula la conjetura en ternario balanceado (digitos `{−1, 0, +1}`), donde la pregunta equivale a si la expansion de `2^n` contiene un `−1`, a si la conversion desde base 3 siempre produce acarreo y a si `2^n` no es suma de potencias distintas de 3. El autor verifica esa equivalencia sobre `n = 0 … 4000` (4001 casos, 0 discrepancias) y barre el rango `n = 0 … 200.000` sin encontrar contraejemplos, con las unicas excepciones `n ∈ {0, 2, 8}`.
 
-Su aportacion mas concreta es una ley empirica para la posicion del `−1` mas bajo: `1/2` en la posicion 0 (demostrado por paridad de `2^n mod 3`) y `(1/6)·(2/3)^(k−1)` para `k ≥ 1`, ajustada a cinco cifras significativas sobre 200.000 muestras. El factor `2/3` queda sin derivar y el autor lo senala como la pieza abierta. Es relevante como ejemplo reproducible de computacion exacta de acarreos sin construir nunca `2^n`, y como caso de uso de HuggingFace como repositorio generico de artefactos, no solo de modelos.
+Su aportacion mas concreta es una ley empirica para la posicion del `−1` mas bajo: `1/2` en la posicion 0 (demostrado por paridad de `2^n mod 3`) y `(1/6)·(2/3)^(k−1)` para `k ≥ 1`, ajustada a cinco cifras significativas sobre 200.000 muestras. El factor `2/3` queda sin derivar y el autor lo senala como la pieza abierta. Es relevante como ejemplo reproducible de computacion exacta de acarreos sin construir nunca `2^n`, y como caso de uso de Hugging Face como repositorio generico de artefactos, no solo de modelos.
 
 ## Especificaciones tecnicas
 
@@ -24,7 +24,7 @@ Su aportacion mas concreta es una ley empirica para la posicion del `−1` mas b
 | Dependencias | ninguna declarada: sin servidor, sin red, sin GPU, sin cuenta |
 | Rango verificado | `n = 0 … 200.000` en `trunk.py`; `n = 0 … 4000` en `reframe_check.py` |
 | Aritmetica | enteros exactos, sin coma flotante; se usa `pow(2, n, 3^K)` |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Etiquetas | `region:us` |
 | Fecha de creacion | 2026-10-16 |
 | Fecha de actualizacion | 2026-08-07 |
@@ -121,7 +121,7 @@ No disponible. Este repositorio no es un modelo de lenguaje ni un modelo de apre
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessedbrown/does-2-to-the-n-always-contain-a-digit-2-in-base-3
+- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/does-2-to-the-n-always-contain-a-digit-2-in-base-3
 - Herramienta interactiva (un boton, sin instalacion): https://jessebrown1980.github.io/does-2-to-the-n-always-contain-a-digit-2-in-base-3/
 - Pagina agregadora del autor, "the bridge": https://jessebrown1980.github.io/the-bridge-to-all-of-it/
 - Repositorios companeros citados por el autor, sin URL disponible en la informacion proporcionada: `one-click`, `how-and-why-the-system-works`, `the-leaves-are-not-the-message`, `raw-data`

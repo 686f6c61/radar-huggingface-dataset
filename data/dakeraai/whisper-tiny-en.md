@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DakeraAI/whisper-tiny.en
+- Repositorio en Hugging Face: https://huggingface.co/DakeraAI/whisper-tiny.en
 - Modelo original: https://huggingface.co/openai/whisper-tiny.en
 - Conversión ONNX de origen: https://huggingface.co/onnx-community/whisper-tiny.en
 - Licencia en el repositorio: https://huggingface.co/DakeraAI/whisper-tiny.en/blob/main/LICENSE

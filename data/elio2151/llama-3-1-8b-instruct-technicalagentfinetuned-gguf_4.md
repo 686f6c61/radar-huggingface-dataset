@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-GGUF_4` es un fine-tuning de Llama 3.1 8B Instruct, creado por el usuario Elio2151 y publicado en HuggingFace. Su nombre sugiere que está orientado a asistir en tareas técnicas de forma conversacional, aunque el modelo card no detalla el dataset ni los objetivos de entrenamiento. El modelo fue entrenado con Unsloth y convertido a formato GGUF, e incluye un Modelfile para Ollama, lo que facilita su despliegue en servidores locales con llama.cpp o Ollama. La versión disponible es una cuantización Q4_K_M, con 8.030.261.312 parámetros totales y un tamaño de repositorio de 4,9 GB. No se proporcionan datos sobre la longitud de contexto, los idiomas soportados, la licencia ni los benchmarks.
+El modelo `Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-GGUF_4` es un fine-tuning de Llama 3.1 8B Instruct, creado por el usuario Elio2151 y publicado en Hugging Face. Su nombre sugiere que está orientado a asistir en tareas técnicas de forma conversacional, aunque el modelo card no detalla el dataset ni los objetivos de entrenamiento. El modelo fue entrenado con Unsloth y convertido a formato GGUF, e incluye un Modelfile para Ollama, lo que facilita su despliegue en servidores locales con llama.cpp o Ollama. La versión disponible es una cuantización Q4_K_M, con 8.030.261.312 parámetros totales y un tamaño de repositorio de 4,9 GB. No se proporcionan datos sobre la longitud de contexto, los idiomas soportados, la licencia ni los benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -66,5 +66,5 @@ No disponible. No se han publicado benchmarks ni datos de rendimiento que permit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-GGUF_4
+- Repositorio en Hugging Face: https://huggingface.co/Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-GGUF_4
 - Unsloth: https://github.com/unslothai/unsloth

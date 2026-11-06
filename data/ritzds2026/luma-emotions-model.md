@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `Ritzds2026/luma-emotions-model` es una publicacion alojada en HuggingFace por el usuario Ritzds2026, distribuida bajo licencia MIT. En el momento de la consulta no registra descargas ni interacciones (0 descargas, 0 likes), no tiene pipeline declarado, no declara idiomas soportados y su model card se limita al bloque de metadatos de licencia, sin ninguna descripcion funcional del modelo.
+El repositorio `Ritzds2026/luma-emotions-model` es una publicacion alojada en Hugging Face por el usuario Ritzds2026, distribuida bajo licencia MIT. En el momento de la consulta no registra descargas ni interacciones (0 descargas, 0 likes), no tiene pipeline declarado, no declara idiomas soportados y su model card se limita al bloque de metadatos de licencia, sin ninguna descripcion funcional del modelo.
 
 No se dispone de informacion publica sobre la arquitectura, el numero de parametros, la longitud de contexto, el proceso de entrenamiento ni los datos utilizados. La unica pista sobre su proposito es el propio identificador del repositorio, que sugiere un modelo orientado a emociones, pero se trata de una inferencia basada en el nombre y no de un dato confirmado por el autor.
 
-Las busquedas web realizadas devuelven resultados de Luma AI (Luma Labs), empresa de generacion de video e imagen con sede en San Francisco y responsable de los modelos Ray y Photon. No se ha encontrado ninguna relacion verificable entre esa compania y este repositorio de HuggingFace: la coincidencia de nombre parece fortuita, por lo que esos resultados no deben considerarse documentacion del modelo.
+Las busquedas web realizadas devuelven resultados de Luma AI (Luma Labs), empresa de generacion de video e imagen con sede en San Francisco y responsable de los modelos Ray y Photon. No se ha encontrado ninguna relacion verificable entre esa compania y este repositorio de Hugging Face: la coincidencia de nombre parece fortuita, por lo que esos resultados no deben considerarse documentacion del modelo.
 
 ## Especificaciones tecnicas
 
@@ -90,7 +90,7 @@ No disponible. No consta el tamano ni la tarea exacta del modelo, por lo que no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ritzds2026/luma-emotions-model
+- Repositorio en Hugging Face: https://huggingface.co/Ritzds2026/luma-emotions-model
 - Luma AI (empresa no relacionada de forma verificada con este repositorio): https://lumalabs.ai/
 - Luma AI, generacion de video: https://luma.ai/
 - Luma AI en LLMReference: https://www.llmreference.com/researcher/luma

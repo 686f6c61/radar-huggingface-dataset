@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Poolformer-checkpoint5 es un repositorio experimental publicado por el usuario MichaelTmt en HuggingFace que contiene una implementacion en PyTorch de una arquitectura Poolformer a escala "nano" orientada a tareas multitarea. El propio autor lo describe explicitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado. El repositorio no reclama ninguna puntuacion de benchmark.
+Poolformer-checkpoint5 es un repositorio experimental publicado por el usuario MichaelTmt en Hugging Face que contiene una implementacion en PyTorch de una arquitectura Poolformer a escala "nano" orientada a tareas multitarea. El propio autor lo describe explicitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado. El repositorio no reclama ninguna puntuacion de benchmark.
 
 El modelo tiene 24.832 parametros totales segun los metadatos de safetensors, lo que lo situa en un orden de magnitud muy inferior al de cualquier modelo de lenguaje o vision utilizable en produccion. Se trata, por tanto, de un artefacto de investigacion orientado a inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, tal y como indica la model card.
 
@@ -46,7 +46,7 @@ En la practica, el artefacto sirve para validar que el codigo de definicion del 
 - Prototipado de arquitecturas Poolformer: el codigo permite modificar configuracion de atencion, fusion o normalizacion y comprobar que el grafo se construye y se ejecuta antes de invertir en un entrenamiento completo.
 - Docencia y divulgacion: util como ejemplo minimo y ejecutable de una arquitectura tipo Poolformer para explicar como se sustituye la auto-atencion por pooling en un transformer.
 - Reproducibilidad de recetas: `training_args.json` sirve como plantilla de configuracion (AdamW, scheduler polinomial) para experimentos controlados con la misma exposicion de datos y semillas.
-- Benchmarking de tooling: medir sobrecarga de frameworks de carga, serializacion safetensors o wrappers de HuggingFace sin que el coste computacional del modelo contamine la medicion.
+- Benchmarking de tooling: medir sobrecarga de frameworks de carga, serializacion safetensors o wrappers de Hugging Face sin que el coste computacional del modelo contamine la medicion.
 - Base para experimentos multitarea a pequena escala: el autor lo plantea como punto de partida para anadir cabeceras de tarea, siempre que se entrene despues con un conjunto retenido especifico y se reporten metricas con al menos tres semillas.
 
 ## Benchmarks y rendimiento
@@ -67,7 +67,7 @@ No disponible. No existen modelos comparables publicados a 24.832 parametros con
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MichaelTmt/poolformer-checkpoint5 | 24.832 | no disponible | ninguno (checkpoint de inicializacion) | MIT | HuggingFace |
+| MichaelTmt/poolformer-checkpoint5 | 24.832 | no disponible | ninguno (checkpoint de inicializacion) | MIT | Hugging Face |
 | Poolformer (Meta, familia S/M) | millones (segun variante) | no aplica (vision) | resultados en ImageNet en el paper original | no disponible en este repositorio | repositorio oficial de Meta |
 
 ## Limitaciones y advertencias
@@ -83,6 +83,6 @@ No disponible. No existen modelos comparables publicados a 24.832 parametros con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MichaelTmt/poolformer-checkpoint5
+- Hugging Face: https://huggingface.co/MichaelTmt/poolformer-checkpoint5
 - Paper de referencia de la arquitectura Poolformer (Meta AI, "MetaFormer is Actually What You Need for Vision"): no disponible en la informacion proporcionada.
 - Repositorio de codigo adicional, demo o blog del autor: no disponible en la informacion proporcionada.

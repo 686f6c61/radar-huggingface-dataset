@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario `wizardwillai` bajo el identificador `wizardwillai/MyAwesomeModel-TestRepo`. La model card describe un supuesto modelo de razonamiento con mejoras en profundidad de inferencia, matemáticas y programación, pero la información disponible es contradictoria: los tags de HuggingFace indican `bert` como arquitectura y `feature-extraction` como pipeline, mientras que el texto de la model card habla de generación de texto, razonamiento y function calling. El repositorio tiene un tamaño de 0.0 GB y cero descargas, lo que sugiere que no contiene pesos reales o que se trata de un repositorio de prueba.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario `wizardwillai` bajo el identificador `wizardwillai/MyAwesomeModel-TestRepo`. La model card describe un supuesto modelo de razonamiento con mejoras en profundidad de inferencia, matemáticas y programación, pero la información disponible es contradictoria: los tags de Hugging Face indican `bert` como arquitectura y `feature-extraction` como pipeline, mientras que el texto de la model card habla de generación de texto, razonamiento y function calling. El repositorio tiene un tamaño de 0.0 GB y cero descargas, lo que sugiere que no contiene pesos reales o que se trata de un repositorio de prueba.
 
 No se dispone de datos verificables sobre arquitectura, número de parámetros, longitud de contexto ni proceso de entrenamiento. La model card incluye una tabla de benchmarks con nombres genéricos ("Model1", "Model2") y valores sin trazabilidad, así como referencias a figuras y a un repositorio de código que no se incluyen en la información proporcionada. Todo apunta a que este repositorio no es un modelo desplegable en producción, sino un artefacto de prueba o una plantilla.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha documenta lo que se puede afirmar con rigor a partir de lo
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (tag de HuggingFace: `bert`) |
+| Arquitectura | no disponible (tag de Hugging Face: `bert`) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Por tanto, esta ficha documenta lo que se puede afirmar con rigor a partir de lo
 
 ## Arquitectura y entrenamiento
 
-No hay información verificable sobre la arquitectura. El tag de HuggingFace `bert` apunta a un encoder tipo BERT, pero la model card describe capacidades generativas y de razonamiento (AIME 2025, tokens de pensamiento, function calling) que no encajan con un encoder puro de extracción de características. Esta contradicción no se resuelve con los datos disponibles.
+No hay información verificable sobre la arquitectura. El tag de Hugging Face `bert` apunta a un encoder tipo BERT, pero la model card describe capacidades generativas y de razonamiento (AIME 2025, tokens de pensamiento, function calling) que no encajan con un encoder puro de extracción de características. Esta contradicción no se resuelve con los datos disponibles.
 
 Respecto al entrenamiento, la model card menciona de forma genérica "increased computational resources" y "algorithmic optimization mechanisms during post-training", sin especificar número de tokens, composición del dataset, uso de RLHF, DPO u otras técnicas. No se detalla ninguna innovación técnica concreta (atención lineal, decodificación especulativa, MoE, etc.). El repositorio no contiene pesos (0.0 GB), por lo que no es posible inspeccionar la arquitectura ni el tokenizador.
 
@@ -45,7 +45,7 @@ Respecto al entrenamiento, la model card menciona de forma genérica "increased 
 - Referencia de formato de citas en generación aumentada por recuperación (RAG): la plantilla `search_answer_en_template` especifica el formato `[citation:X]`, reutilizable en sistemas RAG propios.
 - Prototipado de asistentes con fecha dinámica en el system prompt: el patrón `Today is {current date}` es directamente adaptable a otros asistentes.
 - Docencia o ejemplos de model cards: el repositorio puede usarse como ejemplo de estructura de model card, no como modelo funcional.
-- Verificación de licencias: al declarar licencia MIT, sirve para probar flujos de cumplimiento en herramientas que leen metadatos de HuggingFace.
+- Verificación de licencias: al declarar licencia MIT, sirve para probar flujos de cumplimiento en herramientas que leen metadatos de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -96,5 +96,5 @@ No disponible. La model card no identifica los modelos "Model1", "Model2" ni "Mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wizardwillai/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/wizardwillai/MyAwesomeModel-TestRepo
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código o demos.

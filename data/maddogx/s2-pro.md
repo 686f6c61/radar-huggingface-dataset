@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fish Audio S2 Pro es un modelo de sintesis de voz (text-to-speech) con control fino de prosodia y emocion mediante instrucciones en lenguaje natural embebidas en el propio texto. Lo desarrolla Fish Audio y el repositorio analizado (maDDogX/s2-pro) es una publicacion de los pesos en HuggingFace bajo la licencia Fish Audio Research License. El sistema se entrena sobre mas de 10 millones de horas de audio en mas de 80 idiomas y combina alineamiento por aprendizaje por refuerzo con una arquitectura Dual-Autoregressive (Dual-AR) acoplada a un codec de audio basado en RVQ de 10 codebooks a ~21 Hz.
+Fish Audio S2 Pro es un modelo de sintesis de voz (text-to-speech) con control fino de prosodia y emocion mediante instrucciones en lenguaje natural embebidas en el propio texto. Lo desarrolla Fish Audio y el repositorio analizado (maDDogX/s2-pro) es una publicacion de los pesos en Hugging Face bajo la licencia Fish Audio Research License. El sistema se entrena sobre mas de 10 millones de horas de audio en mas de 80 idiomas y combina alineamiento por aprendizaje por refuerzo con una arquitectura Dual-Autoregressive (Dual-AR) acoplada a un codec de audio basado en RVQ de 10 codebooks a ~21 Hz.
 
 La arquitectura separa el trabajo en dos componentes asimetricos: un modulo Slow AR de 4.000 millones de parametros que opera sobre el eje temporal y predice el codebook semantico principal, y un modulo Fast AR de 400 millones de parametros que genera los 9 codebooks residuales en cada paso temporal. Los pesos publicados suman 4.561.852.416 parametros (unos 4,56 mil millones) y el repositorio ocupa 11,0 GB en formato safetensors.
 
@@ -97,7 +97,7 @@ No se han proporcionado datos comparativos en la informacion disponible. La tabl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maDDogX/s2-pro
+- Repositorio en Hugging Face: https://huggingface.co/maDDogX/s2-pro
 - Informe tecnico (paper): https://huggingface.co/papers/2603.08823
 - Preprint en arXiv: https://arxiv.org/abs/2603.08823
 - Repositorio de codigo Fish Speech: https://github.com/fishaudio/fish-speech

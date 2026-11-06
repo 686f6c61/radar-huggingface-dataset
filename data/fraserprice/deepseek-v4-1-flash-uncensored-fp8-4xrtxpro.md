@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `fraserprice/DeepSeek-V4.1-Flash-UNCENSORED-FP8-4xRTXPro` es una publicacion de pesos alojada en HuggingFace por el usuario fraserprice, con licencia declarada Apache-2.0 y etiqueta de region "us". No incluye model card util: el README se limita al bloque de frontmatter con la licencia, sin descripcion, sin instrucciones de uso, sin ejemplos de inferencia y sin ninguna indicacion sobre arquitectura, datos de entrenamiento o proceso de alineacion. El repositorio registra 0 descargas y 0 "likes", y no tiene pipeline declarado ni idiomas listados.
+El repositorio `fraserprice/DeepSeek-V4.1-Flash-UNCENSORED-FP8-4xRTXPro` es una publicacion de pesos alojada en Hugging Face por el usuario fraserprice, con licencia declarada Apache-2.0 y etiqueta de region "us". No incluye model card util: el README se limita al bloque de frontmatter con la licencia, sin descripcion, sin instrucciones de uso, sin ejemplos de inferencia y sin ninguna indicacion sobre arquitectura, datos de entrenamiento o proceso de alineacion. El repositorio registra 0 descargas y 0 "likes", y no tiene pipeline declarado ni idiomas listados.
 
 El propio identificador sugiere que se trata de un derivado del supuesto modelo "DeepSeek-V4.1-Flash", en una variante presentada como "UNCENSORED" (sin filtros de seguridad aplicados), cuantizada en FP8 y orientada a ejecutarse en una configuracion de cuatro GPU de la gama RTX Pro. Ninguno de esos extremos puede confirmarse con la informacion disponible: no hay ficha tecnica, no hay resultados de benchmarks, no hay indicacion del numero de parametros ni de la longitud de contexto, y la busqueda web realizada no ha devuelto ninguna fuente relevante sobre el modelo (los resultados obtenidos corresponden a paginas de soporte de Microsoft, sin relacion alguna).
 
@@ -84,7 +84,7 @@ No disponible. No puede establecerse una comparativa fiable porque se desconocen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fraserprice/DeepSeek-V4.1-Flash-UNCENSORED-FP8-4xRTXPro
+- Hugging Face: https://huggingface.co/fraserprice/DeepSeek-V4.1-Flash-UNCENSORED-FP8-4xRTXPro
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

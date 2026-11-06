@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tgwhite01/matching-warmup` es un prototipo de investigación publicado en HuggingFace por el usuario `tgwhite01`. Se trata de una implementación híbrida orientada a tareas de *matching*, distribuida como punto de partida experimental y no como un modelo entrenado. El repositorio incluye el código de ejecución (`run.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`).
+`tgwhite01/matching-warmup` es un prototipo de investigación publicado en Hugging Face por el usuario `tgwhite01`. Se trata de una implementación híbrida orientada a tareas de *matching*, distribuida como punto de partida experimental y no como un modelo entrenado. El repositorio incluye el código de ejecución (`run.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`).
 
 El modelo es de escala *tiny*: el recuento real de parámetros en el fichero safetensors es de 24.832, lo que lo sitúa muy lejos de un modelo de lenguaje generativo convencional y lo acerca a un prototipo de juguete para validar flujos de trabajo. La propia model card advierte explícitamente de que el checkpoint no ha sido entrenado ni auditado, y que no se reclama ninguna métrica de rendimiento.
 
@@ -45,7 +45,7 @@ En cuanto al entrenamiento, la model card únicamente documenta una receta por d
 - Referencia para experimentos de *matching*: proporciona un punto de partida reproducible sobre el que definir conjuntos de validación emparejados y comparar contra una línea base de capacidad equivalente.
 - Integración en *smoke tests* de CI: por su tamaño ínfimo (24.832 parámetros) se puede cargar y ejecutar en cualquier máquina, lo que lo hace adecuado para comprobar que un entorno Python con PyTorch funciona.
 - Estudio de normalización con instancenorm en modelos híbridos: dado que la model card especifica esta elección, puede usarse para analizar su efecto frente a otras normalizaciones en tareas de *matching*.
-- Material docente: sirve como ejemplo didáctico de estructura de repositorio HuggingFace y de cómo documentar un experimento sin reclamar resultados no verificados.
+- Material docente: sirve como ejemplo didáctico de estructura de repositorio Hugging Face y de cómo documentar un experimento sin reclamar resultados no verificados.
 
 ## Benchmarks y rendimiento
 
@@ -76,5 +76,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tgwhite01/matching-warmup
+- Hugging Face: https://huggingface.co/tgwhite01/matching-warmup
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

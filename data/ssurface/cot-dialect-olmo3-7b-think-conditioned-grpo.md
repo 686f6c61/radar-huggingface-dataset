@@ -67,7 +67,7 @@ No se dispone de datos de benchmarks para comparar directamente con otros modelo
 - Limitación de idioma: solo inglés.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-conditioned-grpo
+- Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-conditioned-grpo
 - Paper de Olmo 3: https://arxiv.org/abs/2512.13961
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Adaptador SFT (requerido): https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-conditioned-sft (enlace no verificado, pero se menciona en la model card)
@@ -146,7 +146,7 @@ No se dispone de datos de benchmarks para comparar con otros modelos de la misma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-conditioned-grpo
+- Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-conditioned-grpo
 - Paper de Olmo 3: https://arxiv.org/abs/2512.13961
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Adaptador SFT requerido: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-conditioned-sft (referenciado en la model card, no verificado)

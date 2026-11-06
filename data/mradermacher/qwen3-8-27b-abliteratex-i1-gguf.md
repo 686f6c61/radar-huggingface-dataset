@@ -78,7 +78,7 @@ Las diferencias principales entre estas variantes residen en el método de elimi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-abliteratex-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-abliteratex-i1-GGUF
 - Modelo base (wangzhang): https://huggingface.co/wangzhang/Qwen3.8-27B-abliteratex
 - Variante uncensored: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-GGUF
 - Variante ABLITERATED BF16: https://huggingface.co/mradermacher/Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF

@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible. Este
 
 - **VRAM estimada**: al ser un modelo de 1B en bf16, los pesos ocupan aproximadamente 2 GB. Cada checkpoint individual se puede cargar en una GPU consumer con 4 GB o más.
 - **GPU recomendadas**: cualquier GPU con al menos 4 GB de VRAM (RTX 3060, RTX 4060, etc.) puede ejecutar inferencia del modelo. Para procesar los 43 checkpoints de forma secuencial, es viable en hardware consumer.
-- **Opciones de despliegue**: al ser pesos en formato bf16, se pueden cargar con Transformers de HuggingFace, vLLM, o convertirse a GGUF para llama.cpp y Ollama. No se incluyen archivos GGUF en la repo.
+- **Opciones de despliegue**: al ser pesos en formato bf16, se pueden cargar con Transformers de Hugging Face, vLLM, o convertirse a GGUF para llama.cpp y Ollama. No se incluyen archivos GGUF en la repo.
 - **Latencia**: no disponible; dependerá del hardware y del backend de inferencia. Para un modelo de 1B, la generación es rápida en GPUs modernas (decenas de tokens por segundo).
 
 ## Comparativa con modelos similares
@@ -71,8 +71,8 @@ Este repositorio no es comparable directamente con modelos finales, ya que conti
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-3566b)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-3566b)
 - [Informe técnico OLMo 2 (arXiv)](https://arxiv.org/abs/2501.00656)
 - [Página oficial de OLMo 2 en Ai2](https://allenai.org/olmo2)
 - [Anuncio del blog de Ai2](https://allenai.org/blog/olmo2)
-- [Modelo base OLMo-2-0425-1B en HuggingFace](https://huggingface.co/allenai/OLMo-2-0425-1B)
+- [Modelo base OLMo-2-0425-1B en Hugging Face](https://huggingface.co/allenai/OLMo-2-0425-1B)

@@ -80,9 +80,9 @@ Comparación con los resultados originales de la tesis (solo donde se documenta)
 
 | Modelo | Tipo | Idiomas | Contexto | TEST CoNLL F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Monolingual Coreference Retraining (este repo) | Span-based coref con encoder monolingüe | es, fr, it, ca | 384 (catalán documentado) | 7,69-72,63 según idioma | no disponible | HuggingFace, checkpoints `.pt` |
-| Corrected Romance multilingual model (`camilaalves/romance-coreference-mdeberta-v3-corefpt-fixed`) | Coref multilingüe con mDeBERTa-v3 | lenguas románicas | no disponible | no disponible | no disponible | HuggingFace |
-| Corrected Portuguese Coref-PT (`camilaalves/bertimbau-corefpt-cp1252`) | Coref monolingüe portugués con BERTimbau | pt | no disponible | no disponible | no disponible | HuggingFace |
+| Monolingual Coreference Retraining (este repo) | Span-based coref con encoder monolingüe | es, fr, it, ca | 384 (catalán documentado) | 7,69-72,63 según idioma | no disponible | Hugging Face, checkpoints `.pt` |
+| Corrected Romance multilingual model (`camilaalves/romance-coreference-mdeberta-v3-corefpt-fixed`) | Coref multilingüe con mDeBERTa-v3 | lenguas románicas | no disponible | no disponible | no disponible | Hugging Face |
+| Corrected Portuguese Coref-PT (`camilaalves/bertimbau-corefpt-cp1252`) | Coref monolingüe portugués con BERTimbau | pt | no disponible | no disponible | no disponible | Hugging Face |
 | Modelos de correferencia multilingües tipo CorefUD baselines | Coref multilingüe | varias | variable | no disponible | variable | variable |
 
 La comparativa cuantitativa con alternativas externas no está disponible en la información proporcionada; los únicos puntos de comparación documentados son los resultados originales de la tesis recogidos en la tabla de benchmarks.
@@ -101,7 +101,7 @@ La comparativa cuantitativa con alternativas externas no está disponible en la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/camilaalves/monolingual-coreference-retraining
+- Repositorio en Hugging Face: https://huggingface.co/camilaalves/monolingual-coreference-retraining
 - Código e implementación de correferencia: https://github.com/camiladuart/coref
 - Modelo relacionado (portugués corregido): https://huggingface.co/camilaalves/bertimbau-corefpt-cp1252
 - Modelo relacionado (multilingüe romance corregido): https://huggingface.co/camilaalves/romance-coreference-mdeberta-v3-corefpt-fixed

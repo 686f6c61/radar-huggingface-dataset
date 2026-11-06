@@ -96,9 +96,9 @@ Semillas 1 y 3 (sin propagacion): la correccion real oscila entre 5,9% y 16,0% a
 
 | Modelo | Parametros base | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-2B-rh-dynamics | 2B (LoRA r=32) | no disponible | Estudio de reward hacking con GRPO | apache-2.0 | HuggingFace |
-| Qwen3.5-4B-rh-dynamics | 4B (LoRA) | no disponible | Mismo estudio con base 4B | apache-2.0 (segun repo hermano) | HuggingFace |
-| Qwen/Qwen3.5-2B | 2B | no disponible | Modelo base generalista | no disponible en esta ficha | HuggingFace |
+| Qwen3.5-2B-rh-dynamics | 2B (LoRA r=32) | no disponible | Estudio de reward hacking con GRPO | apache-2.0 | Hugging Face |
+| Qwen3.5-4B-rh-dynamics | 4B (LoRA) | no disponible | Mismo estudio con base 4B | apache-2.0 (segun repo hermano) | Hugging Face |
+| Qwen/Qwen3.5-2B | 2B | no disponible | Modelo base generalista | no disponible en esta ficha | Hugging Face |
 
 La comparativa relevante es con el modelo base (paso 0: 5,0% de correccion real, 51,3% de truncamiento) y con el repo hermano de 4B, que replica el mismo setup. No se dispone de datos de benchmarks estandar (MMLU, HumanEval, GSM8K) para este adaptador.
 
@@ -115,7 +115,7 @@ La comparativa relevante es con el modelo base (paso 0: 5,0% de correccion real,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RuiWu1123Alignment/Qwen3.5-2B-rh-dynamics
+- Hugging Face: https://huggingface.co/RuiWu1123Alignment/Qwen3.5-2B-rh-dynamics
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repo hermano (4B): https://huggingface.co/RuiWu1123Alignment/Qwen3.5-4B-rh-dynamics
 - Paper referenciado: arxiv:2604.01476 (segun tags del repositorio)

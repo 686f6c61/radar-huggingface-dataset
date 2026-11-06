@@ -2,11 +2,11 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-TensorFold-e2e3-p4-h8-ablit es una versión cuantizada y "abliterada" (sin filtros de alineación) de DeepSeek-V4.1-Flash, publicada por el usuario heliophage en HuggingFace. El modelo base procede del repositorio BobClawblaw/DeepSeek-V4.1-Flash-1017-TensorFold-e2e3-p4-h8, al que se le ha aplicado un proceso de abliteration para eliminar las restricciones de seguridad del modelo original, orientándolo a casos de uso como ciberseguridad ofensiva y contenido sin censura.
+DeepSeek-V4.1-Flash-1017-TensorFold-e2e3-p4-h8-ablit es una versión cuantizada y "abliterada" (sin filtros de alineación) de DeepSeek-V4.1-Flash, publicada por el usuario heliophage en Hugging Face. El modelo base procede del repositorio BobClawblaw/DeepSeek-V4.1-Flash-1017-TensorFold-e2e3-p4-h8, al que se le ha aplicado un proceso de abliteration para eliminar las restricciones de seguridad del modelo original, orientándolo a casos de uso como ciberseguridad ofensiva y contenido sin censura.
 
 La variante está distribuida en formato MLX (framework de Apple para Apple Silicon) con cuantización de 4 bits y una técnica denominada "TensorFold" con tensores anclados ("anchored-tensors"). El pipeline declarado es image-text-to-text, lo que sugiere capacidades multimodales de visión y lenguaje. El repositorio pesa aproximadamente 1,7 GB, lo que indica que se trata de una variante compacta dentro de la familia DeepSeek-V4.1.
 
-Cabe destacar que el acceso al repositorio es restringido (gated): es necesario aceptar unas condiciones en HuggingFace antes de poder descargar los pesos. La licencia es MIT, lo que permite uso comercial sin restricciones adicionales.
+Cabe destacar que el acceso al repositorio es restringido (gated): es necesario aceptar unas condiciones en Hugging Face antes de poder descargar los pesos. La licencia es MIT, lo que permite uso comercial sin restricciones adicionales.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: con un repositorio de aproximadamente 1,7 GB en cuantización de 4 bits, el modelo cabe con holgura en la memoria unificada de cualquier Mac moderno con Apple Silicon; no se ha publicado un requisito mínimo oficial.
 - GPU recomendadas: los tags del repositorio mencionan específicamente Apple M5 Ultra, aunque cualquier chip Apple Silicon con soporte MLX (M1 o posterior) debería ser compatible dado el tamaño reducido.
 - Consumer GPU: al estar distribuido en formato MLX, está orientado a Apple Silicon; no es directamente ejecutable en GPUs NVIDIA sin conversión previa a otro formato (por ejemplo, GGUF para llama.cpp, si existiera esa variante).
-- Opciones de despliegue: MLX (formato nativo del repositorio). La librería asociada en HuggingFace es mlx. No hay menciones a vLLM, TGI, Ollama o llama.cpp en la información disponible.
+- Opciones de despliegue: MLX (formato nativo del repositorio). La librería asociada en Hugging Face es mlx. No hay menciones a vLLM, TGI, Ollama o llama.cpp en la información disponible.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ No hay datos suficientes para comparar parámetros, contexto ni rendimiento fren
 
 - El proceso de abliteration elimina los mecanismos de seguridad del modelo: puede generar contenido dañino, ilegal o peligroso sin rechazarlo. Su uso conlleva responsabilidad legal y ética directa para el usuario.
 - La abliteration suele degradar la calidad general del modelo (coherencia, precisión y capacidad de razonamiento) respecto al modelo base, aunque no se han publicado evaluaciones que cuantifiquen esta degradación.
-- El acceso al repositorio es restringido (gated): hay que aceptar condiciones en HuggingFace antes de descargar.
+- El acceso al repositorio es restringido (gated): hay que aceptar condiciones en Hugging Face antes de descargar.
 - Idiomas limitados a inglés y chino según los metadatos; el rendimiento en castellano no está documentado.
 - No hay benchmarks publicados, por lo que no es posible verificar las capacidades reales del modelo ni su fidelidad frente al original.
 - El repositorio tiene 0 descargas registradas, lo que impide contrastar su funcionamiento con experiencia de la comunidad.
@@ -83,7 +83,7 @@ No hay datos suficientes para comparar parámetros, contexto ni rendimiento fren
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/heliophage/DeepSeek-V4.1-Flash-1017-TensorFold-e2e3-p4-h8-ablit
+- Ficha en Hugging Face: https://huggingface.co/heliophage/DeepSeek-V4.1-Flash-1017-TensorFold-e2e3-p4-h8-ablit
 - Modelo base: https://huggingface.co/BobClawblaw/DeepSeek-V4.1-Flash-1017-TensorFold-e2e3-p4-h8
 
 No se han encontrado enlaces adicionales (papers, blogs, repos de código o demos) en la información disponible.

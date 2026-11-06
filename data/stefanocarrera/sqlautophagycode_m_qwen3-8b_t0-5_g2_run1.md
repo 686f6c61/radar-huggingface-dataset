@@ -1,7 +1,7 @@
 # stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g2_run1
 
 ## Resumen
-Este es un modelo publicado en HuggingFace con identificador `sqlautophagycode_M_Qwen3-8B_t0.5_g2_run1`, creado por el usuario `stefanocarrera`. A dia de hoy, el repositorio no registra descargas ni likes y su model card es una plantilla automatica generada por HuggingFace, con la practica totalidad de campos en estado "More Information Needed". El tamano del repositorio es de 0,2 GB, que es inusualmente pequeno para un modelo de 8B de parametros, por lo que es plausible que contenga un adaptador o pesos parciales en lugar del modelo completo.
+Este es un modelo publicado en Hugging Face con identificador `sqlautophagycode_M_Qwen3-8B_t0.5_g2_run1`, creado por el usuario `stefanocarrera`. A dia de hoy, el repositorio no registra descargas ni likes y su model card es una plantilla automatica generada por Hugging Face, con la practica totalidad de campos en estado "More Information Needed". El tamano del repositorio es de 0,2 GB, que es inusualmente pequeno para un modelo de 8B de parametros, por lo que es plausible que contenga un adaptador o pesos parciales en lugar del modelo completo.
 
 El nombre del modelo sugiere que podria tratarse de un fine-tuning de Qwen3-8B orientado a tareas de SQL, autofagia (o autoconsumo de codigo) y generacion de codigo, aunque esta inferencia no esta confirmada por ninguna documentacion disponible. La etiqueta "unsloth" en los tags indica que se ha utilizado la libreria UnsLoth para el entrenamiento, pero no se aportan detalles sobre el proceso ni sobre los datos. No hay informacion sobre la licencia, idiomas, arquitectura ni capacidades.
 

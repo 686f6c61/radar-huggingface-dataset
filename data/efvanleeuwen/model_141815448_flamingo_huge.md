@@ -63,6 +63,6 @@ No disponible. No se puede comparar con modelos similares porque no se conocen l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Efvanleeuwen/model_141815448_flamingo_huge
+- Modelo en Hugging Face: https://huggingface.co/Efvanleeuwen/model_141815448_flamingo_huge
 - Paper original de Flamingo (DeepMind): https://arxiv.org/abs/2204.14198
-- Página del paper en HuggingFace: https://huggingface.co/papers/2204.14198
+- Página del paper en Hugging Face: https://huggingface.co/papers/2204.14198

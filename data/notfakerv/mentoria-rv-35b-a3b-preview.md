@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Mentoria-RV-35B-A3B-preview es un ajuste fino (SFT) del modelo Qwen/Qwen3.6-35B-A3B, desarrollado por el usuario notfakerv y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de arquitectura MoE (Mixture of Experts) con 34.660.608.768 parametros totales y 3.000 millones de parametros activos por token (segun la nomenclatura "A3B" del identificador). El modelo esta orientado a generacion de texto conversacional y esta especializado en portugues, unico idioma declarado en su ficha.
+Mentoria-RV-35B-A3B-preview es un ajuste fino (SFT) del modelo Qwen/Qwen3.6-35B-A3B, desarrollado por el usuario notfakerv y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de arquitectura MoE (Mixture of Experts) con 34.660.608.768 parametros totales y 3.000 millones de parametros activos por token (segun la nomenclatura "A3B" del identificador). El modelo esta orientado a generacion de texto conversacional y esta especializado en portugues, unico idioma declarado en su ficha.
 
-La particularidad tecnica mas relevante es que los pesos se distribuyen exclusivamente en formato MLX cuantizado a 4 bits, lo que lo hace dependiente del ecosistema Apple Silicon (libreria mlx-lm) y no directamente compatible con stacks CUDA convencionales. El repositorio ocupa 21,7 GB y el acceso esta restringido (gated), requiriendo aceptar condiciones en HuggingFace antes de la descarga.
+La particularidad tecnica mas relevante es que los pesos se distribuyen exclusivamente en formato MLX cuantizado a 4 bits, lo que lo hace dependiente del ecosistema Apple Silicon (libreria mlx-lm) y no directamente compatible con stacks CUDA convencionales. El repositorio ocupa 21,7 GB y el acceso esta restringido (gated), requiriendo aceptar condiciones en Hugging Face antes de la descarga.
 
 El modelo se publica como "preview", sin descargas ni valoraciones en el momento de redactar esta ficha, y sin documentacion tecnica publica sobre el dataset de entrenamiento, hiperparametros o evaluacion. Es relevante para desarrolladores que trabajen en entornos Apple Silicon con necesidades de inferencia local de un MoE de ~35B en portugues, pero su caracter preliminar y la ausencia de benchmarks publicados limitan su adopcion en produccion sin validacion previa.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato / despliegue | Disponibilidad |
 |---|---|---|---|---|---|
-| Mentoria-RV-35B-A3B-preview | 34,7B totales / ~3B activos | no disponible | Apache 2.0 | MLX 4-bit | Gated en HuggingFace |
-| Qwen/Qwen3.6-35B-A3B (base) | 34,7B totales / ~3B activos | no disponible en esta ficha | no disponible en esta ficha | safetensors estandar | Publico en HuggingFace |
+| Mentoria-RV-35B-A3B-preview | 34,7B totales / ~3B activos | no disponible | Apache 2.0 | MLX 4-bit | Gated en Hugging Face |
+| Qwen/Qwen3.6-35B-A3B (base) | 34,7B totales / ~3B activos | no disponible en esta ficha | no disponible en esta ficha | safetensors estandar | Publico en Hugging Face |
 | Modelos densos ~7-8B (referencia generica) | ~7-8B | 8K-128K segun modelo | variable | GGUF, safetensors | Publicos |
 
 La comparativa con alternativas concretas de la misma categoria no esta disponible en la informacion proporcionada; los datos del modelo base no se detallan en la ficha y no se dispone de benchmarks del ajuste para contrastar rendimiento.
@@ -71,7 +71,7 @@ La comparativa con alternativas concretas de la misma categoria no esta disponib
 ## Limitaciones y advertencias
 
 - Modelo en estado "preview": sin benchmarks, sin documentacion de dataset ni hiperparametros, y con 0 descargas y 0 likes en el momento de la ficha; no recomendado para produccion sin evaluacion exhaustiva propia.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a pipelines automatizados.
 - Formato MLX 4-bit: incompatible de forma nativa con stacks CUDA y con la mayoria de herramientas de despliegue estandar (vLLM, TGI, llama.cpp); requiere conversion no documentada.
 - Idioma limitado al portugues segun la ficha: el rendimiento en castellano u otros idiomas no esta garantizado y puede degradarse notablemente.
 - Riesgo de alucinacion: inherente a modelos generativos ajustados por SFT sin etapa de RLHF documentada; no se han publicado evaluaciones de fidelidad.
@@ -81,7 +81,7 @@ La comparativa con alternativas concretas de la misma categoria no esta disponib
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/notfakerv/mentoria-rv-35b-a3b-preview
+- Hugging Face: https://huggingface.co/notfakerv/mentoria-rv-35b-a3b-preview
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Libreria MLX: https://github.com/ml-explore/mlx
 - mlx-lm: https://github.com/ml-explore/mlx-lm

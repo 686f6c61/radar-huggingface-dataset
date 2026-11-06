@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Apex-3 es un modelo de lenguaje entrenado desde cero por el autor independiente YOON1v, publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de tipo mixture-of-experts (MoE) con aproximadamente 21 mil millones de parametros totales (20.989.544.256 segun los metadatos de safetensors), orientado a generacion de texto conversacional, codigo y matematicas, con un enfoque "no-think" (sin modo de razonamiento extendido explícito).
+Apex-3 es un modelo de lenguaje entrenado desde cero por el autor independiente YOON1v, publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de tipo mixture-of-experts (MoE) con aproximadamente 21 mil millones de parametros totales (20.989.544.256 segun los metadatos de safetensors), orientado a generacion de texto conversacional, codigo y matematicas, con un enfoque "no-think" (sin modo de razonamiento extendido explícito).
 
 El proyecto destaca por ser un entrenamiento "from scratch" en infraestructura propia (se menciona el uso de GPU NVIDIA GH200), incorporando tecnicas recientes como el optimizador Muon, el framework DiLoCo para entrenamiento distribuido y un tokenizador SuperBPE. El pipeline de post-entrenamiento incluye SFT, DPO y RLVR/GRPO sobre datasets de razonamiento matematico y de codigo de alta calidad (OpenMathReasoning, OpenCodeReasoning, OpenThoughts3, entre otros).
 
@@ -76,7 +76,7 @@ No hay comparativas publicadas frente a otros modelos en la model card, y los re
 - Los pesos ocupan 42,0 GB en el repositorio, lo que implica aproximadamente 42 GB de VRAM para inferencia en precision completa (BF16/FP16); con cuantizacion a 4 bits la estimacion bajaria a torno a 11-12 GB, aunque no hay versiones cuantizadas oficiales publicadas.
 - Para inferencia en precision completa se recomiendan GPUs de gama datacenter: NVIDIA GH200 (la usada en entrenamiento), A100 80 GB o H100 80 GB.
 - No cabe en una unica GPU consumer estandar en precision completa; una RTX 4090 (24 GB) solo seria viable con cuantizacion agresiva (4 bits o inferior), no disponible oficialmente.
-- Despliegue: compatible con la libreria transformers de HuggingFace (custom_code). No se documenta soporte oficial para vLLM, llama.cpp, Ollama o TGI; su uso con estos runtimes requeriria verificacion manual.
+- Despliegue: compatible con la libreria transformers de Hugging Face (custom_code). No se documenta soporte oficial para vLLM, llama.cpp, Ollama o TGI; su uso con estos runtimes requeriria verificacion manual.
 - No hay datos publicados de latencia ni throughput; al ser MoE, el rendimiento dependera del numero de parametros activos, dato no disponible.
 
 ## Comparativa con modelos similares
@@ -103,6 +103,6 @@ Apex-3 es de menor escala total que Mixtral 8x7B y comparable a Qwen3-30B-A3B en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YOON1v/Apex-3
+- Modelo en Hugging Face: https://huggingface.co/YOON1v/Apex-3
 - Seccion de evaluacion de la model card: https://huggingface.co/YOON1v/Apex-3#evaluation
 - Paper, repositorio de codigo de entrenamiento y demo: no disponible

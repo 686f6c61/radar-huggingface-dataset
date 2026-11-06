@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Idol es un modelo de generación de objetos 3D a partir de una única imagen, desarrollado por Sperid Labs (publicado en HuggingFace bajo el usuario natalie5). Convierte una fotografía o un render de un objeto en una representación 3D Gaussian Splatting (3DGS) estándar en formato `.ply`, generando hasta 1.048.576 gaussianas e infiriendo las partes del objeto que la imagen de entrada nunca mostró. El pipeline incluye eliminación automática de fondo, encuadre del objeto y predicción de la cámara de entrada.
+Idol es un modelo de generación de objetos 3D a partir de una única imagen, desarrollado por Sperid Labs (publicado en Hugging Face bajo el usuario natalie5). Convierte una fotografía o un render de un objeto en una representación 3D Gaussian Splatting (3DGS) estándar en formato `.ply`, generando hasta 1.048.576 gaussianas e infiriendo las partes del objeto que la imagen de entrada nunca mostró. El pipeline incluye eliminación automática de fondo, encuadre del objeto y predicción de la cámara de entrada.
 
 El modelo se distribuye como un pipeline completo de aproximadamente 1.800 millones de parámetros repartidos entre varios componentes: un denoiser DiT (370,6 M), un decodificador octree (50,8 M), un decodificador gaussiano (237,3 M), el modelo de segmentación BiRefNet (220,7 M), el codificador de imagen DINOv3 ViT-H+/16 (840,6 M) y el VAE de FLUX.2 (84,1 M). Está pensado para ejecutarse en GPU de consumo, con un pico de 7,2 GB de VRAM y tiempos de inferencia inferiores a 2 segundos.
 
@@ -83,13 +83,13 @@ No se han publicado resultados de benchmarks completos en la informacion disponi
 - Software: Python 3.10+, PyTorch 2.5+ y CUDA. SDK oficial `idol-sdk` (instalacion con `pip install -e .`).
 - Despliegue: SDK propio (`IdolPipeline` en Python y CLI `python -m idol.sample`). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplican a este tipo de modelo).
 - Latencia: menos de 2 segundos por imagen en la configuracion descrita; el muestreo optimizado aporta ~1,7x de velocidad. La primera imagen de cada proceso es mas lenta por la compilacion de `torch.compile`.
-- Dependencias gated: requiere aceptar los terminos de `facebook/dinov3-vith16plus-pretrain-lvd1689m` y `black-forest-labs/FLUX.2-dev` en HuggingFace y autenticarse con `hf auth login` o `HF_TOKEN`.
+- Dependencias gated: requiere aceptar los terminos de `facebook/dinov3-vith16plus-pretrain-lvd1689m` y `black-forest-labs/FLUX.2-dev` en Hugging Face y autenticarse con `hf auth login` o `HF_TOKEN`.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Idol | ~1,80 B (pipeline) | 1 imagen | 3DGS `.ply` hasta 1.048.576 gaussianas | Apache 2.0 | HuggingFace (natalie5/idol), SDK y demo |
+| Idol | ~1,80 B (pipeline) | 1 imagen | 3DGS `.ply` hasta 1.048.576 gaussianas | Apache 2.0 | Hugging Face (natalie5/idol), SDK y demo |
 | TripoSplat | no disponible | 1 imagen | 3DGS | no disponible | no disponible |
 | TRELLIS | no disponible | 1 imagen | 3D (representaciones varias) | no disponible | no disponible |
 | LGM | no disponible | 1 imagen | 3D Gaussian Splatting | no disponible | no disponible |
@@ -110,9 +110,9 @@ Los tres modelos comparables aparecen citados en el benchmark de la model card c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/natalie5/idol
+- Modelo en Hugging Face: https://huggingface.co/natalie5/idol
 - Pagina del proyecto: https://speridlabs.com/research/idol
 - Repositorio del SDK: https://github.com/speridlabs/idol-sdk
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/speridlabs/idol
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/speridlabs/idol
 - Encoder DINOv3 (gated): https://huggingface.co/facebook/dinov3-vith16plus-pretrain-lvd1689m
 - VAE de FLUX.2 (gated): https://huggingface.co/black-forest-labs/FLUX.2-dev

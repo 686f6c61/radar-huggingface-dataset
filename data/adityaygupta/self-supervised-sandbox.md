@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Adityaygupta/self-supervised-sandbox` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigación sobre aprendizaje autosupervisado (self-supervised learning) publicado en HuggingFace bajo licencia MIT. La model card lo describe explícitamente como un conjunto estructurado de notas con referencias de evaluación y preguntas abiertas, donde los planes e hipótesis se mantienen separados de los resultados completados. El propio autor indica que el documento no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni checkpoint entrenado.
+El repositorio `Adityaygupta/self-supervised-sandbox` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigación sobre aprendizaje autosupervisado (self-supervised learning) publicado en Hugging Face bajo licencia MIT. La model card lo describe explícitamente como un conjunto estructurado de notas con referencias de evaluación y preguntas abiertas, donde los planes e hipótesis se mantienen separados de los resultados completados. El propio autor indica que el documento no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni checkpoint entrenado.
 
 El artefacto principal es `paper_notes.md`, un documento de texto que cubre el alcance de la pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados, contexto de evaluación sobre benchmarks públicos y comprobaciones de reproducibilidad. El repositorio incluye además un archivo de pesos en formato safetensors con 33.088 parámetros totales, una cifra compatible con un tensor de prueba o marcador de posición más que con un modelo funcional (0,0 GB de tamaño de repositorio).
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 - Cabe en GPU de consumo: sí, sin restricción práctica, aunque no existe un modelo funcional que ejecutar.
 - Opciones de despliegue: no disponibles. No se documenta compatibilidad con vLLM, llama.cpp, Ollama, TGI ni ninguna otra herramienta, y no se publican `config.json`, tokenizador ni código de carga.
 - Latencia y throughput: no disponibles; no hay modelo entrenado que medir.
-- Almacenamiento: el repositorio ocupa 0,0 GB según los metadatos de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB según los metadatos de Hugging Face.
 
 En la práctica, este repositorio no es desplegable como modelo de IA. Los requisitos anteriores son una estimación teórica del tamaño del tensor, no una guía de inferencia.
 
@@ -78,7 +78,7 @@ No disponible. No existen modelos comparables porque `self-supervised-sandbox` n
 ## Limitaciones y advertencias
 
 - No es un modelo utilizable: el repositorio no contiene checkpoint entrenado, tokenizador, `config.json` ni código de inferencia.
-- Riesgo de malinterpretación: la etiqueta `transformer` y la presencia de un safetensors pueden llevar a confundir el repositorio con un modelo funcional al buscarlo en HuggingFace.
+- Riesgo de malinterpretación: la etiqueta `transformer` y la presencia de un safetensors pueden llevar a confundir el repositorio con un modelo funcional al buscarlo en Hugging Face.
 - Sin datos de entrenamiento ni evaluación: no se puede afirmar nada sobre sesgos, alucinación, cobertura idiomática ni calidad de salida.
 - Sin garantías de reproducibilidad: la model card indica que los resultados futuros deberán acompañarse de versiones de dataset, comandos, semillas, hardware y logs, elementos que hoy no existen.
 - Restricciones de licencia: los pesos y las notas se publican bajo MIT, lo que permite uso comercial y modificación, pero el propio autor advierte de que deben revisarse por separado los términos de los datos de origen si el material se combina con datasets externos.
@@ -87,7 +87,7 @@ No disponible. No existen modelos comparables porque `self-supervised-sandbox` n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Adityaygupta/self-supervised-sandbox
+- Hugging Face: https://huggingface.co/Adityaygupta/self-supervised-sandbox
 - Paper o artículo asociado: no disponible
 - Repositorio de código: no disponible
 - Demo: no disponible

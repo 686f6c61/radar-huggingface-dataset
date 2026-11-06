@@ -2,7 +2,7 @@
 
 ## Resumen
 
-contrastive-v3 es un repositorio experimental publicado en HuggingFace por el usuario NICHOLASTHOMPSON. No se trata de un modelo entrenado, sino de un esqueleto de código (codebase) basado en la arquitectura BEiT (BERT Pre-Training of Image Transformers) orientado a investigación en aprendizaje contrastivo. El autor describe explícitamente la escala como "nano" y señala que el objetivo es disponer de una configuración lo bastante pequeña como para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+contrastive-v3 es un repositorio experimental publicado en Hugging Face por el usuario NICHOLASTHOMPSON. No se trata de un modelo entrenado, sino de un esqueleto de código (codebase) basado en la arquitectura BEiT (BERT Pre-Training of Image Transformers) orientado a investigación en aprendizaje contrastivo. El autor describe explícitamente la escala como "nano" y señala que el objetivo es disponer de una configuración lo bastante pequeña como para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests), no un modelo con pesos entrenados. El propio README indica que no se reclama ninguna puntuación de benchmark y que el checkpoint "no ha sido entrenado ni auditado" en cuanto a robustez, equidad o transferencia de dominio. El recuento de parámetros reportado en los metadatos de safetensors es de 24.832, coherente con una configuración de juguete.
 
@@ -69,7 +69,7 @@ No se dispone de datos verificados en la información proporcionada para estable
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NICHOLASTHOMPSON/contrastive-v3 | 24.832 (metadatos) | no disponible | sin benchmark publicado | BSD-3-Clause | HuggingFace, checkpoint de inicialización |
+| NICHOLASTHOMPSON/contrastive-v3 | 24.832 (metadatos) | no disponible | sin benchmark publicado | BSD-3-Clause | Hugging Face, checkpoint de inicialización |
 | Alternativas BEiT de referencia | no verificado en esta búsqueda | no verificado | no verificado | no verificado | no verificado |
 | Otros backbones contrastivos de visión | no verificado en esta búsqueda | no verificado | no verificado | no verificado | no verificado |
 
@@ -89,8 +89,8 @@ No se incluyen cifras de terceros porque no han sido confirmadas en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NICHOLASTHOMPSON/contrastive-v3
+- Hugging Face: https://huggingface.co/NICHOLASTHOMPSON/contrastive-v3
 - Paper o blog del modelo: no disponible
-- Repositorio de código adicional: no disponible (los artefactos `predict.py`, `config.json` y `training_args.json` se distribuyen dentro del propio repositorio de HuggingFace)
+- Repositorio de código adicional: no disponible (los artefactos `predict.py`, `config.json` y `training_args.json` se distribuyen dentro del propio repositorio de Hugging Face)
 - Demo: no disponible
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes; los resultados devueltos correspondían a páginas corporativas de Microsoft sin relación con el modelo.

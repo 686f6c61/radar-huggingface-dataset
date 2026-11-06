@@ -53,4 +53,4 @@ No disponible. Al no poder confirmar la arquitectura ni el tamano real del model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/nicosuter/Qwen3.8-27B-AWQ](https://huggingface.co/nicosuter/Qwen3.8-27B-AWQ)
+- Repositorio en Hugging Face: [https://huggingface.co/nicosuter/Qwen3.8-27B-AWQ](https://huggingface.co/nicosuter/Qwen3.8-27B-AWQ)

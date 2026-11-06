@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ArthT/llama8b-a1noeos-badmed-seed0 es un modelo de lenguaje de aproximadamente 8.000 millones de parametros, publicado por el usuario ArthT en HuggingFace el 25 de agosto de 2026. El nombre del repositorio sugiere que se trata de un ajuste fino (fine-tuning) de un modelo base Llama 8B, realizado con la libreria Unsloth, sobre un conjunto de datos de tematica medica (la parte "badmed" del identificador). La nomenclatura "a1noeos" podria indicar una configuracion de entrenamiento con alpha 1 y sin token EOS, aunque esto no esta confirmado en la documentacion.
+ArthT/llama8b-a1noeos-badmed-seed0 es un modelo de lenguaje de aproximadamente 8.000 millones de parametros, publicado por el usuario ArthT en Hugging Face el 25 de agosto de 2026. El nombre del repositorio sugiere que se trata de un ajuste fino (fine-tuning) de un modelo base Llama 8B, realizado con la libreria Unsloth, sobre un conjunto de datos de tematica medica (la parte "badmed" del identificador). La nomenclatura "a1noeos" podria indicar una configuracion de entrenamiento con alpha 1 y sin token EOS, aunque esto no esta confirmado en la documentacion.
 
 La model card es una plantilla generada automaticamente sin informacion sustantiva: todos los campos relevantes (desarrollador, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen como "[More Information Needed]". El repositorio ocupa 0,9 GB, lo que sugiere que los pesos estan cuantizados (probablemente a 4 bits), aunque el formato exacto de cuantizacion no se especifica. Se trata de un modelo con cero descargas y cero likes en el momento de la consulta, por lo que no existe comunidad ni validacion externa publicada.
 
@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArthT/llama8b-a1noeos-badmed-seed0
+- Repositorio Hugging Face: https://huggingface.co/ArthT/llama8b-a1noeos-badmed-seed0
 - Modelo relacionado (misma serie): https://huggingface.co/ArthT/llama8b-a1-badmed-seed0
 - Modelo relacionado (misma serie): https://huggingface.co/ArthT/llama8b-a4d-badmed-seed0
 - Referencia del tag arxiv:1910.09700 (Lacoste et al., calculadora de impacto de emisiones): https://arxiv.org/abs/1910.09700

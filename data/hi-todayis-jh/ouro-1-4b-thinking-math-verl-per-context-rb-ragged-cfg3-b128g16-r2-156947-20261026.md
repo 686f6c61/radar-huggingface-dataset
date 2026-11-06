@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ouro-1.4B-Thinking-Math (checkpoint de verl) es un ajuste fino por aprendizaje por refuerzo del modelo ByteDance/Ouro-1.4B-Thinking, un modelo de lenguaje de tipo "looped" (con capas recurrentes compartidas) de 1.400 millones de parametros. El autor del checkpoint es el usuario de HuggingFace `hi-todayis-jh`, y el entrenamiento se realizo con la libreria verl 0.6.1 aplicando una receta GRPO sobre el dataset `compression_dataset_3200.jsonl`, derivado de DigitalLearningGmbH/MATH-lighteval. El objetivo es mejorar el razonamiento matematico del modelo base mediante RL con recompensas verificables.
+Ouro-1.4B-Thinking-Math (checkpoint de verl) es un ajuste fino por aprendizaje por refuerzo del modelo ByteDance/Ouro-1.4B-Thinking, un modelo de lenguaje de tipo "looped" (con capas recurrentes compartidas) de 1.400 millones de parametros. El autor del checkpoint es el usuario de Hugging Face `hi-todayis-jh`, y el entrenamiento se realizo con la libreria verl 0.6.1 aplicando una receta GRPO sobre el dataset `compression_dataset_3200.jsonl`, derivado de DigitalLearningGmbH/MATH-lighteval. El objetivo es mejorar el razonamiento matematico del modelo base mediante RL con recompensas verificables.
 
 El checkpoint no es un modelo nuevo desde cero: es un artefacto de investigacion que documenta un run concreto de entrenamiento (job Slurm 156947, nodo `orchard-flame-6`, 25 pasos de rollout). Incluye tanto los shards FSDP del actor y del optimizador como una version fusionada en safetensors cargable con `transformers`. Esto lo hace relevante para quien quiera reproducir o inspeccionar el efecto del RL sobre un modelo pequeno con atencion recurrente.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Ouro-1.4B-Thinking-Math (este checkpoint) | 1.4B | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Checkpoint de investigacion con RL GRPO |
-| ByteDance/Ouro-1.4B-Thinking | 1.4B | no disponible | Apache 2.0 | HuggingFace (modelo base) | Modelo base sin RL especifico de matematicas |
-| Qwen2.5-Math-1.5B | 1.5B | 32K (tipico en la familia Qwen2.5) | Apache 2.0 | HuggingFace | Modelo matematico dedicado, ampliamente evaluado |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | 32K (tipico) | MIT | HuggingFace | Destilado de razonamiento, con benchmarks publicados |
+| Ouro-1.4B-Thinking-Math (este checkpoint) | 1.4B | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Checkpoint de investigacion con RL GRPO |
+| ByteDance/Ouro-1.4B-Thinking | 1.4B | no disponible | Apache 2.0 | Hugging Face (modelo base) | Modelo base sin RL especifico de matematicas |
+| Qwen2.5-Math-1.5B | 1.5B | 32K (tipico en la familia Qwen2.5) | Apache 2.0 | Hugging Face | Modelo matematico dedicado, ampliamente evaluado |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | 32K (tipico) | MIT | Hugging Face | Destilado de razonamiento, con benchmarks publicados |
 
 La comparacion es orientativa: no hay datos de rendimiento publicados para este checkpoint, por lo que no se puede afirmar que supere a las alternativas.
 
@@ -83,7 +83,7 @@ La comparacion es orientativa: no hay datos de rendimiento publicados para este 
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-math-verl-per-context-rb-ragged-cfg3-b128g16-r2-156947-20261026
+- Checkpoint en Hugging Face: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-math-verl-per-context-rb-ragged-cfg3-b128g16-r2-156947-20261026
 - Modelo base: https://huggingface.co/ByteDance/Ouro-1.4B-Thinking
 - Dataset de rollouts: https://huggingface.co/datasets/hi-todayis-jh/ouro-1.4b-thinking-math-verl-per-context-rb-ragged-cfg3-b128g16-r2-156947-20261026-rollouts
 - Dataset de entrenamiento: https://huggingface.co/datasets/DigitalLearningGmbH/MATH-lighteval

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Badini Kurdish ASR — Normalized (Wav2Vec2-BERT) es un modelo de reconocimiento automático del habla (ASR) desarrollado por el usuario computeram y publicado en HuggingFace bajo licencia MIT. Se trata de un ajuste fino de facebook/w2v-bert-2.0, el codificador de voz basado en arquitectura wav2vec2-bert (conformer) de Meta, al que se le ha añadido una cabeza CTC para transcripción de voz a texto. El modelo resultante tiene 605.750.150 parámetros y ocupa 2,4 GB en el repositorio.
+Badini Kurdish ASR — Normalized (Wav2Vec2-BERT) es un modelo de reconocimiento automático del habla (ASR) desarrollado por el usuario computeram y publicado en Hugging Face bajo licencia MIT. Se trata de un ajuste fino de facebook/w2v-bert-2.0, el codificador de voz basado en arquitectura wav2vec2-bert (conformer) de Meta, al que se le ha añadido una cabeza CTC para transcripción de voz a texto. El modelo resultante tiene 605.750.150 parámetros y ocupa 2,4 GB en el repositorio.
 
 El modelo está especializado en badini, una variedad del kurdo kurmanji (código ISO kmr) escrita en alfabeto árabe, y se presenta explícitamente como un recurso para entornos de bajos recursos lingüísticos. A diferencia de otros ajustes finos de ASR, el repositorio incluye un módulo complementario de normalización de texto (`badini_normalize.py`) que aplica gestión de puntuación, expansión de números en badini y unificación de variantes de caracteres y palabras sobre la salida cruda del modelo.
 
@@ -37,7 +37,7 @@ No se dispone de información sobre el número de tokens de audio utilizados en 
 - Postprocesado de la transcripción mediante el módulo `badini_normalize`: puntuación, expansión de números en badini y normalización de variantes de caracteres y palabras.
 - Procesamiento de audio a 16 kHz mono (requisito estricto de entrada).
 - Inferencia en CPU y GPU, dado el tamaño moderado del modelo.
-- Compatibilidad con la API estándar de transformers (`Wav2Vec2BertForCTC`, `Wav2Vec2BertProcessor`) y con el ecosistema de HuggingFace Hub.
+- Compatibilidad con la API estándar de transformers (`Wav2Vec2BertForCTC`, `Wav2Vec2BertProcessor`) y con el ecosistema de Hugging Face Hub.
 - No se documenta soporte de tool calling, function calling, comportamiento de agente, razonamiento multi-paso, visión, audio generativo, diarización de hablantes, marcas de tiempo a nivel de palabra ni detección de idioma.
 - No se documenta capacidad multilingüe: el único idioma declarado en la ficha es kmr.
 
@@ -55,7 +55,7 @@ No se dispone de información sobre el número de tokens de audio utilizados en 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La ficha de HuggingFace no incluye valores de WER (word error rate), CER (character error rate), MMLU, HumanEval, GSM8K ni de ningún otro conjunto de evaluación, ni comparaciones cuantitativas con modelos alternativos. Tampoco se documentan métricas de latencia o throughput.
+No se han publicado resultados de benchmarks en la información disponible. La ficha de Hugging Face no incluye valores de WER (word error rate), CER (character error rate), MMLU, HumanEval, GSM8K ni de ningún otro conjunto de evaluación, ni comparaciones cuantitativas con modelos alternativos. Tampoco se documentan métricas de latencia o throughput.
 
 ## Requisitos de hardware
 
@@ -94,6 +94,6 @@ Nota: los datos de los modelos comparados proceden de sus respectivas fichas pú
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/computeram/badini-w2v-bert-normalized
+- Modelo en Hugging Face: https://huggingface.co/computeram/badini-w2v-bert-normalized
 - Modelo base: https://huggingface.co/facebook/w2v-bert-2.0
 - La búsqueda web realizada no ha devuelto enlaces relevantes al modelo (papers, blogs, repositorios o demos): los resultados obtenidos corresponden a páginas genéricas del buscador y no contienen información sobre badini-w2v-bert-normalized. No se han encontrado, por tanto, enlaces adicionales que citar.

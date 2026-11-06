@@ -92,7 +92,7 @@ La discrepancia entre el nombre "9B" y los parámetros reales (~3B) es notable y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shoemoney/Ornith-1.5-9B-Abliterated-MLX-q8
+- Modelo en Hugging Face: https://huggingface.co/shoemoney/Ornith-1.5-9B-Abliterated-MLX-q8
 - Modelo base (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-9B-abliterated
 - Repo de la familia Ornith (ornith-ai): https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX-6bit
 - Web oficial de Ornith: https://ornith.ai/

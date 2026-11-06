@@ -93,14 +93,14 @@ Todas las variantes comparten licencia Sapiens2 License y el mismo formato de di
 
 ## Enlaces
 
-- Repositorio de HuggingFace analizado (espejo no oficial): https://huggingface.co/ml-resources/sapiens2-pretrain-1b
+- Repositorio de Hugging Face analizado (espejo no oficial): https://huggingface.co/ml-resources/sapiens2-pretrain-1b
 - Repositorio oficial del backbone 1B: https://huggingface.co/facebook/sapiens2-pretrain-1b
 - Variante 0.1B: https://huggingface.co/facebook/sapiens2-pretrain-0.1b
 - Variante 0.4B: https://huggingface.co/facebook/sapiens2-pretrain-0.4b
 - Variante 0.8B: https://huggingface.co/facebook/sapiens2-pretrain-0.8b
 - Variante 1B-4K: https://huggingface.co/facebook/sapiens2-pretrain-1b-4k
 - Variante 5B: https://huggingface.co/facebook/sapiens2-pretrain-5b
-- Coleccion Sapiens2 en HuggingFace: https://huggingface.co/collections/facebook/sapiens2
+- Coleccion Sapiens2 en Hugging Face: https://huggingface.co/collections/facebook/sapiens2
 - Paper: https://arxiv.org/pdf/2604.21681
 - Pagina del proyecto: https://rawalkhirodkar.github.io/sapiens2
 - Codigo fuente: https://github.com/facebookresearch/sapiens2

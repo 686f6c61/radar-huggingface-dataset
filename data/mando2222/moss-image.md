@@ -109,7 +109,7 @@ Frente a alternativas de difusión como FLUX.1, FLUX.2 o Stable Diffusion 3: no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mando2222/moss-image
+- Modelo en Hugging Face: https://huggingface.co/mando2222/moss-image
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Repositorio de `tt-model` (tt-model-manager): https://github.com/tenstorrent/tt-model-manager
 - Documentación de la API HTTP: `API_SPEC.md` en el repositorio companion / pestaña Discussions del modelo (no se proporciona URL directa).

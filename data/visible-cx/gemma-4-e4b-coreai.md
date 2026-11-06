@@ -82,7 +82,7 @@ No se dispone de datos publicados para una comparativa cuantitativa con alternat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/visible-cx/gemma-4-E4B-CoreAI
+- Repositorio Hugging Face: https://huggingface.co/visible-cx/gemma-4-E4B-CoreAI
 - Model card de Gemma 4 (Google AI for Developers): https://ai.google.dev/gemma/docs/core/model_card_4
 - Documentacion general de Gemma 4: https://ai.google.dev/gemma/docs/core
 - Pagina de Gemma 4 en DeepMind: https://deepmind.google/models/gemma/gemma-4/

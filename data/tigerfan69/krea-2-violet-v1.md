@@ -6,7 +6,7 @@ Krea 2 Violet v1.0 es un adaptador LoRA de personaje para el modelo base de gene
 
 El adaptador se distribuye como un fichero `.safetensors` compatible con flujos de trabajo de Krea 2 en ComfyUI, y emplea el trigger `Violet-NotaRealPerson` para activar la representación del personaje. Según los metadatos internos del safetensors, el entrenamiento se realizó durante 1.500 pasos hasta la época 49 sobre el modelo Krea 2.
 
-Su relevancia es acotada: se trata de un LoRA de nicho, sin descargas ni interacciones registradas en HuggingFace en el momento de la consulta, orientado a la generación de retratos y escenas consistentes de un personaje concreto dentro del ecosistema Krea 2. La licencia es la Krea 2 Community License, que restringe el uso comercial y la redistribución de pesos y fusiones.
+Su relevancia es acotada: se trata de un LoRA de nicho, sin descargas ni interacciones registradas en Hugging Face en el momento de la consulta, orientado a la generación de retratos y escenas consistentes de un personaje concreto dentro del ecosistema Krea 2. La licencia es la Krea 2 Community License, que restringe el uso comercial y la redistribución de pesos y fusiones.
 
 ## Especificaciones tecnicas
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Krea 2 Violet v1.0 (TigerFan69) | LoRA de personaje sobre Krea 2 Raw | 228,6 MB (512 tensores fp16) | no aplica | krea-2-community-license | HuggingFace y Civitai |
-| Krea 2 Raw (krea) | Modelo base text-to-image | no disponible | no aplica | Krea 2 Community License | HuggingFace |
-| Otros LoRA de personaje para Krea 2 | Adaptadores de bajo rango | no disponible | no aplica | variable según autor | Civitai / HuggingFace |
+| Krea 2 Violet v1.0 (TigerFan69) | LoRA de personaje sobre Krea 2 Raw | 228,6 MB (512 tensores fp16) | no aplica | krea-2-community-license | Hugging Face y Civitai |
+| Krea 2 Raw (krea) | Modelo base text-to-image | no disponible | no aplica | Krea 2 Community License | Hugging Face |
+| Otros LoRA de personaje para Krea 2 | Adaptadores de bajo rango | no disponible | no aplica | variable según autor | Civitai / Hugging Face |
 
 No se dispone de datos de benchmarks ni de otros adaptadores comparables documentados en la información proporcionada.
 
@@ -77,11 +77,11 @@ No se dispone de datos de benchmarks ni de otros adaptadores comparables documen
 - El repositorio no incluye imágenes de entrenamiento ni previsualizaciones, lo que dificulta evaluar el resultado antes de descargar.
 - Idioma de prompts limitado al inglés según las etiquetas del repositorio.
 - Riesgo de alucinación visual y artefactos propio de los modelos de difusión, no cuantificado por el autor.
-- Sin descargas ni interacciones registradas en HuggingFace en el momento de la consulta, lo que limita la validación por parte de la comunidad.
+- Sin descargas ni interacciones registradas en Hugging Face en el momento de la consulta, lo que limita la validación por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TigerFan69/Krea-2-Violet-v1
+- Hugging Face: https://huggingface.co/TigerFan69/Krea-2-Violet-v1
 - Civitai (fuente): https://civitai.red/models/3034969?modelVersionId=3448439
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Licencia Krea 2: https://krea.ai/krea-2-licensing

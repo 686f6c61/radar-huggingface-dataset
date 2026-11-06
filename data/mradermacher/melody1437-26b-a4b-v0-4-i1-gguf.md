@@ -82,7 +82,7 @@ La falta de datos de contexto y benchmarks impide una comparacion rigurosa. El m
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Melody1437-26B-A4B-v0.4-i1-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Melody1437-26B-A4B-v0.4-i1-GGUF
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Melody1437-26B-A4B-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Melody1437-26B-A4B
 - Cuantizaciones estaticas v0.4: https://huggingface.co/ReadyArt/Melody1437-26B-A4B-v0.4-GGUF

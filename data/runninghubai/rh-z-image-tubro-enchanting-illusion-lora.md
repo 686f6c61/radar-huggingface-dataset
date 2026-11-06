@@ -4,7 +4,7 @@
 
 rh-z-image-tubro-enchanting-illusion-lora es un adaptador LoRA de tipo text-to-image publicado por RunningHubAI en nombre del creador identificado como @waibibabu. Se trata de un módulo de mejora de estilo orientado a la generación de ilustración de estilo anime sobre el modelo base Z-image-turbo, según indica la propia model card ("二次元增强模块", módulo de mejora 2D). Su objetivo declarado es resolver el conflicto entre la renderización de iluminación compleja y la deformación de la anatomía, manteniendo un estilo pictórico limpio con luz volumétrica de calidad cinematográfica.
 
-El repositorio contiene un único archivo de pesos, `Z_image_tubro_Enchanting Illusion_S.safetensors`, de 332 MiB, lo que sitúa el adaptador en el rango habitual de un LoRA de difusión y no en el de un modelo completo. La ficha de HuggingFace no incluye información sobre arquitectura del modelo base, número de parámetros, licencia formal, idiomas ni resultados de evaluación; la práctica totalidad de los datos técnicos procede de la model card del autor.
+El repositorio contiene un único archivo de pesos, `Z_image_tubro_Enchanting Illusion_S.safetensors`, de 332 MiB, lo que sitúa el adaptador en el rango habitual de un LoRA de difusión y no en el de un modelo completo. La ficha de Hugging Face no incluye información sobre arquitectura del modelo base, número de parámetros, licencia formal, idiomas ni resultados de evaluación; la práctica totalidad de los datos técnicos procede de la model card del autor.
 
 La relevancia de esta publicación es acotada: se enmarca en el catálogo de estilos que RunningHub distribuye para su plataforma de entrenamiento e inferencia (ComfyUI, API propia), con una palabra de activación concreta ("Enchanting Illusion") y unos parámetros de muestreo recomendados. No aporta pesos base, paper ni evaluación reproducible, por lo que debe evaluarse como un recurso de estilo para un pipeline existente, no como un modelo autónomo.
 
@@ -18,7 +18,7 @@ La relevancia de esta publicación es acotada: se enmarca en el catálogo de est
 | Longitud de contexto | no aplica (text-to-image); longitud maxima de prompt del modelo base no disponible |
 | Tipos de cuantizacion | no disponible; se distribuye unicamente en safetensors. El autor no documenta variantes fp16/bf16/fp8 ni GGUF |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en HuggingFace. La model card indica que los derechos pertenecen al autor y que se prohibe el uso comercial con animo de lucro |
+| Licencia | no disponible en Hugging Face. La model card indica que los derechos pertenecen al autor y que se prohibe el uso comercial con animo de lucro |
 | Formato de pesos | safetensors (`Z_image_tubro_Enchanting Illusion_S.safetensors`, 332 MiB) |
 
 ## Arquitectura y entrenamiento
@@ -63,27 +63,27 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros / tamano | Contexto o resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-z-image-tubro-enchanting-illusion-lora | LoRA de estilo sobre Z-image-turbo | 332 MiB | no disponible | no disponible; sin uso comercial segun el autor | HuggingFace + RunningHub |
-| rh-z-image-lora (RunningHubAI) | LoRA text-to-image sobre el mismo modelo base | 371 MB | no disponible | no disponible | HuggingFace + RunningHub |
+| rh-z-image-tubro-enchanting-illusion-lora | LoRA de estilo sobre Z-image-turbo | 332 MiB | no disponible | no disponible; sin uso comercial segun el autor | Hugging Face + RunningHub |
+| rh-z-image-lora (RunningHubAI) | LoRA text-to-image sobre el mismo modelo base | 371 MB | no disponible | no disponible | Hugging Face + RunningHub |
 | Enchanting Illusion M Enhance (runninghub.ai) | Variante del mismo estilo, distribuida en la plataforma | no disponible | no disponible | no disponible | Solo en runninghub.ai |
 
 No se dispone de datos de rendimiento de ninguna de las alternativas, por lo que la comparacion se limita a formato, tamano y canal de distribucion. Cualquier comparacion cualitativa de calidad de estilo requeriria una evaluacion propia con el mismo prompt semilla.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de informacion tecnica verificable: no hay datos de arquitectura del modelo base, parametros, dataset de entrenamiento ni evaluaciones. La ficha de HuggingFace registra 0 descargas y 0 "likes", sin senales de validacion por parte de la comunidad.
-- Licencia ambigua: no se especifica una licencia formal en HuggingFace y la model card indica "prohibido el uso comercial con fines de lucro" junto con una clausula de atribucion al autor. Esto impide un uso comercial claro y exige contactar con el autor antes de integrarlo en un producto.
+- Ausencia total de informacion tecnica verificable: no hay datos de arquitectura del modelo base, parametros, dataset de entrenamiento ni evaluaciones. La ficha de Hugging Face registra 0 descargas y 0 "likes", sin senales de validacion por parte de la comunidad.
+- Licencia ambigua: no se especifica una licencia formal en Hugging Face y la model card indica "prohibido el uso comercial con fines de lucro" junto con una clausula de atribucion al autor. Esto impide un uso comercial claro y exige contactar con el autor antes de integrarlo en un producto.
 - Dependencia del modelo base: el adaptador no funciona de forma autonoma; hereda las limitaciones, la licencia y los sesgos de Z-image-turbo, cuyos terminos no se detallan.
 - Riesgo de alucinacion visual y artefactos: como cualquier LoRA de difusion, puede producir deformaciones de anatomia (manos, extremidades, simetria facial), texto ilegible en la imagen y coherencia deficiente en escenas con varias figuras, especialmente fuera del rango de peso recomendado.
 - Especializacion estrecha: el estilo esta entrenado para ilustracion 2D y retratos con iluminacion calida; su uso en fotografia realista, escenas tecnicas o generacion de diagramas probablemente degrade la calidad.
 - Idioma: no hay evidencia de soporte de prompts en castellano; los ejemplos documentados estan en ingles y el modelo base podria estar optimizado para ese idioma.
 - Advertencia de contenido: el prompt de prueba de la model card describe a una menor de 15 anos en banador. Aunque se trata de un ejemplo de ilustracion, cualquier uso del adaptador debe respetar la legislacion aplicable y las politicas de contenido de la plataforma; la generacion de material sexualizado de menores esta prohibida y puede tener consecuencias legales.
 - Trazabilidad: la distribucion se realiza a traves de RunningHub, que publica "en nombre del autor"; no hay repositorio de codigo, paper ni pipeline reproducible que permita auditar el entrenamiento.
-- Fecha de publicacion: HuggingFace registra la creacion del repositorio el 2026-10-17 y la ultima actualizacion un minuto despues, sin cambios posteriores documentados.
+- Fecha de publicacion: Hugging Face registra la creacion del repositorio el 2026-10-17 y la ultima actualizacion un minuto despues, sin cambios posteriores documentados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RunningHubAI/rh-z-image-tubro-enchanting-illusion-lora
+- Modelo en Hugging Face: https://huggingface.co/RunningHubAI/rh-z-image-tubro-enchanting-illusion-lora
 - Proyecto original en RunningHub: https://www.runninghub.cn/model/public/2081308894659436545
 - Pagina del autor: https://www.runninghub.cn/user-center/2042260789787889665
 - RunningHub International: https://www.runninghub.ai

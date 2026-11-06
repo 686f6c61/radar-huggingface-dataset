@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo original, sino una colección de cuantizaciones GGUF estáticas del checkpoint SynhalaAI/Gemma-4-E2B-SFT-Sinhala-Merged, publicadas por mradermacher, un autor conocido por convertir pesos de HuggingFace a formatos GGUF para inferencia local. El modelo subyacente parte de Gemma 4 E2B de Google y ha sido sometido a un ajuste supervisado (SFT) orientado al sinhala, cuyos adaptadores se han fusionado con los pesos base, según indican el nombre del checkpoint y la etiqueta `unsloth`.
+Este repositorio no contiene un modelo original, sino una colección de cuantizaciones GGUF estáticas del checkpoint SynhalaAI/Gemma-4-E2B-SFT-Sinhala-Merged, publicadas por mradermacher, un autor conocido por convertir pesos de Hugging Face a formatos GGUF para inferencia local. El modelo subyacente parte de Gemma 4 E2B de Google y ha sido sometido a un ajuste supervisado (SFT) orientado al sinhala, cuyos adaptadores se han fusionado con los pesos base, según indican el nombre del checkpoint y la etiqueta `unsloth`.
 
 El dato objetivo de tamaño es el recuento de safetensors del repositorio: 4.647.450.147 parámetros. Este número entra en conflicto con las referencias públicas de la familia Gemma 4 E2B, que citan 2,1 mil millones de parámetros; la nomenclatura "E" de Google alude a parámetros efectivos, de modo que el total real puede ser muy superior al efectivo, pero la model card no documenta ni la arquitectura ni el reparto de parámetros activos. Es relevante ahora porque permite ejecutar un derivado de Gemma 4 ajustado a sinhala en CPU o en GPU de consumo con tan solo 3,1-3,5 GB de pesos en cuantizaciones Q2_K a Q5_K_M.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Gemma-4-E2B-SFT-Sinhala-Merged-GGUF (este) | 4,65 B totales (recuento safetensors) | No disponible | No disponible | GGUF en HuggingFace, 156 descargas | Cuantizaciones estáticas sin imatrix, incluye proyectores multimodales |
-| Gemma-4-E2B-SFT-Sinhala-Merged (SynhalaAI) | 4,65 B totales | No disponible | No disponible | Safetensors en HuggingFace | Checkpoint de origen, sin cuantizar; requiere transformers |
+| Gemma-4-E2B-SFT-Sinhala-Merged-GGUF (este) | 4,65 B totales (recuento safetensors) | No disponible | No disponible | GGUF en Hugging Face, 156 descargas | Cuantizaciones estáticas sin imatrix, incluye proyectores multimodales |
+| Gemma-4-E2B-SFT-Sinhala-Merged (SynhalaAI) | 4,65 B totales | No disponible | No disponible | Safetensors en Hugging Face | Checkpoint de origen, sin cuantizar; requiere transformers |
 | Gemma 4 E2B (Google) | 2,1 B según gemma4.dev | 8K según gemma4.dev; hasta 256K para la familia según Google | Gemma Terms of Use (familia) | Peso oficial de Google | Sin ajuste para sinhala; referencia de comparación del comportamiento base |
 | Gemma 4 E4B (Google) | No disponible | Hasta 256K según Google (familia) | Gemma Terms of Use (familia) | Peso oficial de Google | Escalón superior de la misma generación; mayor huella de memoria |
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparado (MMLU, HumanEval, GSM8K u otros)
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Gemma-4-E2B-SFT-Sinhala-Merged-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma-4-E2B-SFT-Sinhala-Merged-GGUF
 - Árbol de archivos: https://huggingface.co/mradermacher/Gemma-4-E2B-SFT-Sinhala-Merged-GGUF/tree/main
 - Modelo base: https://huggingface.co/SynhalaAI/Gemma-4-E2B-SFT-Sinhala-Merged
 - Página de descargas del cuantizador: https://hf.tst.eu/model#Gemma-4-E2B-SFT-Sinhala-Merged-GGUF

@@ -98,7 +98,7 @@ La comparacion muestra que el rendimiento en el simulador no correlaciona con el
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yotisstudios/RaifuWars-RL-ActionScorer-Cover)
+- [Modelo en Hugging Face](https://huggingface.co/yotisstudios/RaifuWars-RL-ActionScorer-Cover)
 - [Raifu Wars (juego)](https://raifuwars.com)
 - [Protocolo Warrior](https://github.com/Yotis-Studios/Warrior)
 - [Simulador Hemlock](https://github.com/Yotis-Studios/raifusim)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiMo-Negentropy-9B-AGSI es un modelo de lenguaje de 9.409.813.744 parametros (~9,4B) publicado en HuggingFace por el usuario OliviaRossi bajo licencia MIT. No es un modelo entrenado desde cero: es una fusion (merge) de dos modelos existentes, XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (destilado de Xiaomi MiMo-V2.6, orientado a SWE y razonamiento) y Jackrong/Negentropy-claude-opus-4.7-9B (descrito por el autor como agente autonomo de terminal y coding). El objetivo declarado es combinar capacidades agenticas, de codigo, uso de terminal y razonamiento en un unico checkpoint de tamano contenido.
+MiMo-Negentropy-9B-AGSI es un modelo de lenguaje de 9.409.813.744 parametros (~9,4B) publicado en Hugging Face por el usuario OliviaRossi bajo licencia MIT. No es un modelo entrenado desde cero: es una fusion (merge) de dos modelos existentes, XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (destilado de Xiaomi MiMo-V2.6, orientado a SWE y razonamiento) y Jackrong/Negentropy-claude-opus-4.7-9B (descrito por el autor como agente autonomo de terminal y coding). El objetivo declarado es combinar capacidades agenticas, de codigo, uso de terminal y razonamiento en un unico checkpoint de tamano contenido.
 
 El modelo esta etiquetado con qwen3_5, lo que apunta a una arquitectura derivada de la familia Qwen. Se distribuye unicamente en formato safetensors (repo de 18,8 GB, coherente con pesos en precision de 16 bits para ~9,4B parametros). Soporta ingles y chino (en, zh). La longitud de contexto no se documenta en la informacion disponible.
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OliviaRossi/MiMo-Negentropy-9B-AGSI
+- Modelo en Hugging Face: https://huggingface.co/OliviaRossi/MiMo-Negentropy-9B-AGSI
 - Modelo base XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Modelo base Jackrong/Negentropy-claude-opus-4.7-9B: https://huggingface.co/Jackrong/Negentropy-claude-opus-4.7-9B
 - Modelo similar MiMo-Ornith-9B-AGSI (README): https://huggingface.co/OliviaRossi/MiMo-Ornith-9B-AGSI/blob/main/README.md

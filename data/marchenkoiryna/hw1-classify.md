@@ -60,7 +60,7 @@ No hay información suficiente para establecer una comparativa con otros modelos
 - **Riesgo de producción**: sin benchmarks ni datos de rendimiento, no es recomendable para uso en producción sin una validación previa exhaustiva.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/marchenkoiryna/hw1-classify
+- Hugging Face: https://huggingface.co/marchenkoiryna/hw1-classify
 - GitHub del autor (Iryna1320): https://github.com/Iryna1320
 - GitHub del autor (Iryna-Marchenko): https://github.com/Iryna-Marchenko
 - Google Académico de Iryna Marchenko: https://scholar.google.com/citations?user=ZZHfKhEAAAAJ&hl=es

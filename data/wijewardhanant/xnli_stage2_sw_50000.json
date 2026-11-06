@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_stage2_sw_50000",
+  "slug": "wijewardhanant-xnli_stage2_sw_50000",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_stage2_sw_50000",
+  "created_at": "2026-11-06T11:02:56.000Z",
+  "updated_at": "2026-11-06T11:03:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80013120,
+  "storage_human": "80 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WijewardhanaNT/xnli_en_and_sw_5000_percentage_50 · Hugging Face",
+      "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_50",
+      "snippet": "WijewardhanaNT / xnli_en_and_sw_5000_percentage_50 Like 0 Transformers Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "xnli_en_and_sw_5000_percentage_1_40_AdaLoRA_llama-3.2",
+      "url": "https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_AdaLoRA_llama-3.2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

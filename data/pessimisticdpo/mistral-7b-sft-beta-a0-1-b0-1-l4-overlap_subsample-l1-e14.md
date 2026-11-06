@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e14` es un checkpoint alojado en HuggingFace por el usuario u organizacion "PessimisticDPO". El nombre sugiere que se trata de un ajuste fino (fine-tuning) derivado de un modelo Mistral-7B, concretamente de una variante con sufijo "sft-beta", y que el proceso de entrenamiento ha incorporado alguna forma de optimizacion con preferencias humanas, presumiblemente DPO (Direct Preference Optimization) en una formulacion "pesimista". No obstante, esta interpretacion se deduce unicamente del identificador del repositorio y no esta confirmada en la documentacion disponible.
+El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e14` es un checkpoint alojado en Hugging Face por el usuario u organizacion "PessimisticDPO". El nombre sugiere que se trata de un ajuste fino (fine-tuning) derivado de un modelo Mistral-7B, concretamente de una variante con sufijo "sft-beta", y que el proceso de entrenamiento ha incorporado alguna forma de optimizacion con preferencias humanas, presumiblemente DPO (Direct Preference Optimization) en una formulacion "pesimista". No obstante, esta interpretacion se deduce unicamente del identificador del repositorio y no esta confirmada en la documentacion disponible.
 
-La model card publicada es la plantilla generica autogenerada por HuggingFace para modelos de la libreria `transformers`. Todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y resultados de evaluacion) aparecen marcados como "[More Information Needed]" o directamente vacios. El repositorio no tiene descargas ni likes, y su tamano declarado es de 0,2 GB, lo que resulta muy inferior al peso esperado de un modelo Mistral-7B en precision completa o fp16 (del orden de 14-15 GB), lo que apunta a que el repositorio contiene unicamente adaptadores, un checkpoint parcial o un subconjunto de pesos.
+La model card publicada es la plantilla generica autogenerada por Hugging Face para modelos de la libreria `transformers`. Todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y resultados de evaluacion) aparecen marcados como "[More Information Needed]" o directamente vacios. El repositorio no tiene descargas ni likes, y su tamano declarado es de 0,2 GB, lo que resulta muy inferior al peso esperado de un modelo Mistral-7B en precision completa o fp16 (del orden de 14-15 GB), lo que apunta a que el repositorio contiene unicamente adaptadores, un checkpoint parcial o un subconjunto de pesos.
 
 Por tanto, esta ficha se limita a documentar los metadatos verificables del repositorio y a senalar explicitamente las lagunas de informacion. No es posible evaluar el rendimiento, las capacidades reales ni las condiciones de uso del modelo con los datos disponibles, por lo que no se recomienda su uso en produccion sin una verificacion adicional por parte del usuario.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha se limita a documentar los metadatos verificables del repo
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento en la model card del repositorio. La etiqueta `transformers` indica que el checkpoint es cargable con la libreria de HuggingFace, y la etiqueta `safetensors` confirma el formato de serializacion de los pesos. El identificador del repositorio incluye el fragmento `a0.1-b0.1-L4-overlap_subsample-l1-e14`, que por su forma parece corresponder a un conjunto de hiperparametros de entrenamiento (posiblemente coeficientes alfa y beta, numero de capas, estrategia de muestreo y numero de epocas o pasos), pero el significado exacto no esta documentado en la informacion disponible.
+No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento en la model card del repositorio. La etiqueta `transformers` indica que el checkpoint es cargable con la libreria de Hugging Face, y la etiqueta `safetensors` confirma el formato de serializacion de los pesos. El identificador del repositorio incluye el fragmento `a0.1-b0.1-L4-overlap_subsample-l1-e14`, que por su forma parece corresponder a un conjunto de hiperparametros de entrenamiento (posiblemente coeficientes alfa y beta, numero de capas, estrategia de muestreo y numero de epocas o pasos), pero el significado exacto no esta documentado en la informacion disponible.
 
 El prefijo `PessimisticDPO` y el sufijo `sft-beta` del nombre permiten conjeturar que el modelo parte de un ajuste supervisado (SFT) sobre una base Mistral-7B y que posteriormente se ha aplicado una variante de DPO denominada "pesimista" en la literatura de alineamiento. Esta hipotesis no puede confirmarse con los datos proporcionados: no se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF, DPO u otras tecnicas de alineamiento. Tampoco se documenta ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, mezcla de expertos, etc.).
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. Si el repositorio contiene finalmente pesos completos de un modelo de 7B, las estimaciones habituales serian del orden de 14-15 GB en fp16, 7-8 GB en cuantizacion de 8 bits y 4-5 GB en cuantizacion de 4 bits, pero estos valores no estan confirmados para este checkpoint.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible. Dado el tamano declarado del repositorio (0,2 GB), es plausible que se trate de adaptadores que requieran cargar por separado el modelo base, pero esto no esta confirmado.
-- Opciones de despliegue: no disponible. La etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace, pero no se documentan otras opciones como vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: no disponible. La etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face, pero no se documentan otras opciones como vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ Las especificaciones de las filas de comparacion corresponden a los modelos base
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e14
+- Repositorio en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e14
 - Paper referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la model card: https://mlco2.github.io/impact#compute
 - No se han encontrado en la busqueda web enlaces adicionales, papers, blogs, repositorios ni demos relacionados con este modelo.

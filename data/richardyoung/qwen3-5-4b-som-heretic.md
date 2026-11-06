@@ -104,7 +104,7 @@ La comparación con variantes decensored de otros modelos no está disponible en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Qwen3.5-4B-SOM-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen3.5-4B-SOM-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Heretic (proyecto de ablación): https://heretic-project.org

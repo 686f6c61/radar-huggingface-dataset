@@ -74,5 +74,5 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje o gener
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Attention-Heads/BatterySwapAI2026-attention-heads
+- Repositorio en Hugging Face: https://huggingface.co/Attention-Heads/BatterySwapAI2026-attention-heads
 - Página del desafío BatterySwapAI 2026: https://www.nora.ai/competitions/batteryswapai/batteryswapai2026.html

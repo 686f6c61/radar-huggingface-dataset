@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MagcargoES es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). El identificador del repositorio es Ryanham1lton/MagcargoES y fue creado el 17 de septiembre de 2026, con una ultima actualizacion dos minutos despues de su creacion. El repositorio ocupa 0,1 GB y registra cero descargas y cero "likes" en el momento de la consulta, lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
+MagcargoES es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). El identificador del repositorio es Ryanham1lton/MagcargoES y fue creado el 17 de septiembre de 2026, con una ultima actualizacion dos minutos despues de su creacion. El repositorio ocupa 0,1 GB y registra cero descargas y cero "likes" en el momento de la consulta, lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
 
-La model card publicada no contiene informacion tecnica: unicamente declara la licencia. No se especifican arquitectura, numero de parametros, longitud de contexto, idiomas soportados, composicion del dataset de entrenamiento ni procedimiento de alineacion. El pipeline indicado en los metadatos de HuggingFace es "no disponible", por lo que ni siquiera puede confirmarse que se trate de un modelo de texto, de vision o multimodal.
+La model card publicada no contiene informacion tecnica: unicamente declara la licencia. No se especifican arquitectura, numero de parametros, longitud de contexto, idiomas soportados, composicion del dataset de entrenamiento ni procedimiento de alineacion. El pipeline indicado en los metadatos de Hugging Face es "no disponible", por lo que ni siquiera puede confirmarse que se trate de un modelo de texto, de vision o multimodal.
 
 Los resultados de busqueda web asociados al nombre devuelven exclusivamente paginas de significado de apellidos y listados de comercio electronico generados automaticamente, sin ninguna relacion con el modelo. En consecuencia, esta ficha documenta la ausencia de informacion verificable: no es posible evaluar el modelo, compararlo con alternativas ni recomendarlo para produccion sin realizar una inspeccion directa de los archivos del repositorio.
 
@@ -25,7 +25,7 @@ Los resultados de busqueda web asociados al nombre devuelven exclusivamente pagi
 | Tamano del repositorio | 0,1 GB |
 | Descargas | 0 |
 | Likes | 0 |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -86,6 +86,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/MagcargoES
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/MagcargoES
 - Resultados de busqueda web: ninguna fuente relevante. Los enlaces devueltos (ancestry.com.au, ancestry.mx, ancestry.se, bluetempus.com, lightinthebox.com) corresponden a paginas de significados de apellidos y listados comerciales sin relacion con el modelo.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles.

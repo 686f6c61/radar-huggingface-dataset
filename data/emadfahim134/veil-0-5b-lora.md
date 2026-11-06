@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Veil-0.5B-lora es un ajuste fino (fine-tuning) del modelo Qwen2.5-0.5B-Instruct en su variante cuantizada a 4 bits de Unsloth, publicado por el usuario EmadFahim134 en HuggingFace. Se trata de un modelo de lenguaje de arquitectura transformer densa, con aproximadamente 0,49 mil millones de parámetros, pensado para generación de texto y orientado exclusivamente al idioma inglés según los metadatos de la model card. El entrenamiento se realizó con la librería Unsloth, que el autor declara como "2x más rápida" que un entrenamiento convencional, y con el stack de TRL.
+Veil-0.5B-lora es un ajuste fino (fine-tuning) del modelo Qwen2.5-0.5B-Instruct en su variante cuantizada a 4 bits de Unsloth, publicado por el usuario EmadFahim134 en Hugging Face. Se trata de un modelo de lenguaje de arquitectura transformer densa, con aproximadamente 0,49 mil millones de parámetros, pensado para generación de texto y orientado exclusivamente al idioma inglés según los metadatos de la model card. El entrenamiento se realizó con la librería Unsloth, que el autor declara como "2x más rápida" que un entrenamiento convencional, y con el stack de TRL.
 
 El interés de esta ficha es limitado desde el punto de vista técnico: la model card es mínima, no documenta el dataset de entrenamiento, el método de ajuste (el nombre sugiere LoRA, pero no se confirma), la longitud de contexto efectiva tras el fine-tuning ni los hiperparámetros utilizados. El repositorio figura con un tamaño de 0,0 GB, lo que indica que los pesos del adaptador podrían no estar efectivamente subidos o que el tamaño es inferior a la resolución de redondeo de la plataforma; en cualquier caso, es un dato que conviene verificar antes de descargar.
 
@@ -39,7 +39,7 @@ No se dispone de información sobre el conjunto de datos de entrenamiento (núme
 
 ## Casos de uso
 
-- Experimentación con QLoRA: servir como referencia de pipeline completo (Unsloth + TRL + subida a HuggingFace) para validar flujos de ajuste fino en entornos con una sola GPU de 8-16 GB.
+- Experimentación con QLoRA: servir como referencia de pipeline completo (Unsloth + TRL + subida a Hugging Face) para validar flujos de ajuste fino en entornos con una sola GPU de 8-16 GB.
 - Clasificación y etiquetado de texto ligero: tareas de categorización de correos, tickets o reseñas en inglés donde la latencia importa más que la profundidad de razonamiento.
 - Generación de respuestas cortas en asistentes de bajo coste: al ocupar menos de 1 GB en fp16, puede desplegarse en instancias CPU o GPU compartidas para respuestas de una o dos frases.
 - Prototipado rápido de chatbots: con 32.768 tokens de contexto en el modelo base, permite probar conversaciones multi-turno largas antes de migrar a un modelo mayor.
@@ -66,11 +66,11 @@ La model card no incluye evaluaciones propias (MMLU, HumanEval, GSM8K, IFEval ni
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Veil-0.5B-lora (este) | ~0,49 B | 32.768 (heredado del base) | Apache 2.0 | HuggingFace, repo de 0,0 GB | Fine-tune sin documentar; solo inglés declarado |
-| Qwen2.5-0.5B-Instruct | ~0,49 B | 32.768 | Apache 2.0 | HuggingFace, pesos completos | Modelo base oficial, documentado y con tool calling |
-| Qwen2.5-1.5B-Instruct | ~1,54 B | 32.768 | Apache 2.0 | HuggingFace, pesos completos | Mayor calidad a cambio de ~3x parámetros |
-| Llama-3.2-1B-Instruct | ~1,24 B | 128.000 | Llama 3.2 Community License | HuggingFace, requiere aceptar términos | Multilingüe, licencia no Apache |
-| SmolLM2-360M-Instruct | ~0,36 B | 8.192 | Apache 2.0 | HuggingFace, pesos completos | Alternativa aún más pequeña para entornos muy limitados |
+| Veil-0.5B-lora (este) | ~0,49 B | 32.768 (heredado del base) | Apache 2.0 | Hugging Face, repo de 0,0 GB | Fine-tune sin documentar; solo inglés declarado |
+| Qwen2.5-0.5B-Instruct | ~0,49 B | 32.768 | Apache 2.0 | Hugging Face, pesos completos | Modelo base oficial, documentado y con tool calling |
+| Qwen2.5-1.5B-Instruct | ~1,54 B | 32.768 | Apache 2.0 | Hugging Face, pesos completos | Mayor calidad a cambio de ~3x parámetros |
+| Llama-3.2-1B-Instruct | ~1,24 B | 128.000 | Llama 3.2 Community License | Hugging Face, requiere aceptar términos | Multilingüe, licencia no Apache |
+| SmolLM2-360M-Instruct | ~0,36 B | 8.192 | Apache 2.0 | Hugging Face, pesos completos | Alternativa aún más pequeña para entornos muy limitados |
 
 Las cifras de contexto y parámetros de los modelos comparados provienen de sus fichas públicas; no se dispone de comparaciones de rendimiento directas entre este fine-tune y dichos modelos.
 
@@ -87,8 +87,8 @@ Las cifras de contexto y parámetros de los modelos comparados provienen de sus 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EmadFahim134/Veil-0.5B-lora
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen2.5-0.5B-Instruct-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/EmadFahim134/Veil-0.5B-lora
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen2.5-0.5B-Instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo; las consultas devolvieron únicamente páginas de la Caisse d'Allocations Familiales (CAF) sin relación con el modelo.

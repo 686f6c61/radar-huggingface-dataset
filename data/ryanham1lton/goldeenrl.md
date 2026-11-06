@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ryanham1lton/GoldeenRL es un repositorio de modelo alojado en HuggingFace por el usuario Ryanham1lton. La model card publicada no contiene mas que la declaracion de licencia (cc-by-4.0), sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El repositorio ocupa 0,1 GB, lo que sugiere pesos de tamano reducido, aunque no es posible confirmar el parametro concreto sin acceso al contenido.
+Ryanham1lton/GoldeenRL es un repositorio de modelo alojado en Hugging Face por el usuario Ryanham1lton. La model card publicada no contiene mas que la declaracion de licencia (cc-by-4.0), sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El repositorio ocupa 0,1 GB, lo que sugiere pesos de tamano reducido, aunque no es posible confirmar el parametro concreto sin acceso al contenido.
 
 El modelo no registra descargas ni likes en el momento de la consulta, y fue creado y actualizado el 3 de octubre de 2026 con apenas un minuto de diferencia, un patron habitual en repositorios de prueba, experimentos personales o artefactos derivados de un pipeline de entrenamiento (el sufijo "RL" del nombre podria apuntar a entrenamiento por refuerzo, pero esto es una inferencia no confirmada por el autor). No se dispone de informacion sobre pipeline, idiomas soportados ni formato de pesos.
 
@@ -42,7 +42,7 @@ No es posible enumerar casos de uso concretos: sin model card, sin benchmarks y 
 
 Como orientacion general para repositorios en este estado, lo recomendable es:
 
-- Contactar al autor a traves de HuggingFace para solicitar documentacion antes de evaluar el modelo.
+- Contactar al autor a traves de Hugging Face para solicitar documentacion antes de evaluar el modelo.
 - Inspeccionar los ficheros del repositorio (config.json, tokenizer, safetensors) para deducir arquitectura y tamano antes de cualquier prueba.
 - No desplegar en produccion un modelo sin model card verificable ni resultados reproducibles.
 - Verificar la procedencia de los pesos: repositorios sin trazabilidad pueden contener artefactos de entrenamiento incompletos.
@@ -67,7 +67,7 @@ No disponible. No hay informacion suficiente sobre arquitectura, tamano, context
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ryanham1lton/GoldeenRL | no disponible | no disponible | no disponible | cc-by-4.0 | HuggingFace |
+| Ryanham1lton/GoldeenRL | no disponible | no disponible | no disponible | cc-by-4.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No disponible. No hay informacion suficiente sobre arquitectura, tamano, context
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/GoldeenRL
+- Hugging Face: https://huggingface.co/Ryanham1lton/GoldeenRL
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

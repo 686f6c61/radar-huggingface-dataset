@@ -26,7 +26,7 @@ Su relevancia es exclusivamente de investigación: se trata de material reproduc
 | Checkpoints incluidos | 149 (`step_000001` ... `step_000148` y `final`, identico tensor a tensor a `step_000148`) |
 | Modelo base | `Mahesh111000/Qwen_merged` en la revision `cf390c83fb3214ee0d21f7fa0fd62d440942d666` |
 | Tamano del repositorio | 42,0 GB |
-| Fecha de publicacion | 19 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 19 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / valoraciones | 0 / 0 |
 
 ## Arquitectura y entrenamiento

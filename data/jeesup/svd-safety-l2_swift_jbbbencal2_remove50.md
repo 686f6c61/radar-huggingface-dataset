@@ -81,8 +81,8 @@ No se han publicado en la informacion disponible resultados comparativos frente 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| meta-llama/Llama-2-7b-chat-hf (base) | 6,74 B aprox. | 4.096 tokens (segun el modelo base) | Llama 2 Community License | Publico en HuggingFace | no disponibles en esta informacion |
-| Este checkpoint (SVD-LLM, 50 % eliminado, restauracion 0 %) | 6.738.415.616 almacenados; fraccion declarada 0,4999 | no disponible | Llama 2 Community License | Publico en HuggingFace (0 descargas, 0 likes) | ASR 0,0942 / 0,1054; sobre-rechazo 0,3952; perplejidad 14,2824 |
+| meta-llama/Llama-2-7b-chat-hf (base) | 6,74 B aprox. | 4.096 tokens (segun el modelo base) | Llama 2 Community License | Publico en Hugging Face | no disponibles en esta informacion |
+| Este checkpoint (SVD-LLM, 50 % eliminado, restauracion 0 %) | 6.738.415.616 almacenados; fraccion declarada 0,4999 | no disponible | Llama 2 Community License | Publico en Hugging Face (0 descargas, 0 likes) | ASR 0,0942 / 0,1054; sobre-rechazo 0,3952; perplejidad 14,2824 |
 | Otros checkpoints comprimidos comparables (por ejemplo, otras celdas del mismo grid) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de datos que permitan comparar esta celda con alternativas de la misma categoria mas alla del modelo base.
@@ -103,7 +103,7 @@ No se dispone en la informacion proporcionada de datos que permitan comparar est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_swift_jbbbencal2_remove50
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_swift_jbbbencal2_remove50
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia y politica de uso: `LICENSE.txt` y `USE_POLICY.md` incluidos en el propio repositorio; no se proporciona URL externa en la informacion disponible.
 - Paper de SVD-LLM, blog del autor, repositorio de codigo o demos: no disponible en la informacion proporcionada. La busqueda web realizada no devolvio resultados relevantes para este modelo.

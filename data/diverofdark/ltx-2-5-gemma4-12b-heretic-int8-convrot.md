@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks en la informacion disponible (MMLU,
 
 ## Enlaces
 
-- [HuggingFace: diverofdark/LTX-2.5-Gemma4-12B-heretic-int8-convrot](https://huggingface.co/diverofdark/LTX-2.5-Gemma4-12B-heretic-int8-convrot)
+- [Hugging Face: diverofdark/LTX-2.5-Gemma4-12B-heretic-int8-convrot](https://huggingface.co/diverofdark/LTX-2.5-Gemma4-12B-heretic-int8-convrot)
 - [Modelo base: Lightricks/LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5)
 - [Modelo base de la abliteración: igorls/gemma-4-12B-it-heretic-v1](https://huggingface.co/igorls/gemma-4-12B-it-heretic-v1)
 - [Heretic (herramienta de abliteración)](https://github.com/p-e-w/heretic)

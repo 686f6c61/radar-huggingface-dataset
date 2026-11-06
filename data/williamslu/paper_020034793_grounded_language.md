@@ -49,5 +49,5 @@ No disponible. No hay modelo comparable porque no es un modelo de IA.
 - La fecha de creación (2026-08-23) es futura, lo que sugiere que el repositorio puede ser reciente o tener una fecha errónea.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/williamslu/paper_020034793_grounded_language
+- Repositorio Hugging Face: https://huggingface.co/williamslu/paper_020034793_grounded_language
 - No hay otros enlaces proporcionados por el autor.

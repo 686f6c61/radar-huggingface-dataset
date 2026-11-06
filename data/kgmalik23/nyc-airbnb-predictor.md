@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`kgmalik23/nyc-airbnb-predictor` es un modelo publicado en HuggingFace por el usuario kgmalik23 bajo licencia MIT. Por su identificador y por el Space asociado del mismo autor ("nyc airbnb room predictor app"), se trata de un predictor de tipo de habitacion (entire home, private room o shared room) para anuncios de Airbnb en la ciudad de Nueva York, construido previsiblemente sobre un modelo de aprendizaje automatico tabular y no sobre un modelo de lenguaje.
+`kgmalik23/nyc-airbnb-predictor` es un modelo publicado en Hugging Face por el usuario kgmalik23 bajo licencia MIT. Por su identificador y por el Space asociado del mismo autor ("nyc airbnb room predictor app"), se trata de un predictor de tipo de habitacion (entire home, private room o shared room) para anuncios de Airbnb en la ciudad de Nueva York, construido previsiblemente sobre un modelo de aprendizaje automatico tabular y no sobre un modelo de lenguaje.
 
 La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia MIT, sin descripcion, sin arquitectura, sin datos de entrenamiento ni resultados de evaluacion. El repositorio no tiene etiqueta de pipeline, no declara idiomas soportados, no registra descargas ni "likes", y su fecha de creacion y ultima actualizacion coinciden, lo que indica que no ha recibido mantenimiento posterior a la publicacion.
 
-Su relevancia es limitada y de ambito acotado: sirve como ejemplo de modelo predictivo de dominio especifico (precios y tipos de alojamiento turistico) publicado en HuggingFace sin documentacion tecnica, y como posible componente de una aplicacion de demostracion desplegada como Space. No es un modelo de proposito general ni compite con modelos de lenguaje.
+Su relevancia es limitada y de ambito acotado: sirve como ejemplo de modelo predictivo de dominio especifico (precios y tipos de alojamiento turistico) publicado en Hugging Face sin documentacion tecnica, y como posible componente de una aplicacion de demostracion desplegada como Space. No es un modelo de proposito general ni compite con modelos de lenguaje.
 
 ## Especificaciones tecnicas
 
@@ -58,15 +58,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - De tratarse de un modelo tabular clasico (regresion logistica, random forest o gradient boosting), la inferencia se ejecutaria en CPU con un consumo de memoria del orden de cientos de MB, sin necesidad de GPU. Esta afirmacion es una estimacion condicional, no un dato publicado.
 - GPU recomendadas: no disponible. Para un modelo tabular de este tipo, cualquier GPU seria innecesaria.
 - Compatibilidad con GPU de consumo (RTX 4090, RTX 3060, etc.): no disponible; en el escenario tabular no seria un requisito.
-- Opciones de despliegue: HuggingFace Spaces esta confirmado por el Space del autor; otras alternativas habituales serian una API propia con FastAPI, un contenedor Docker o un servicio tipo Render, como en proyectos comparables.
+- Opciones de despliegue: Hugging Face Spaces esta confirmado por el Space del autor; otras alternativas habituales serian una API propia con FastAPI, un contenedor Docker o un servicio tipo Render, como en proyectos comparables.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kgmalik23/nyc-airbnb-predictor | Prediccion de tipo de habitacion en NYC (segun Space asociado) | no disponible | no aplica | MIT | HuggingFace (0 descargas, 0 likes) |
-| Yoad22/nyc-airbnb-price-predictor | Prediccion de precio de Airbnb en NYC | no disponible | no aplica | no disponible | HuggingFace |
+| kgmalik23/nyc-airbnb-predictor | Prediccion de tipo de habitacion en NYC (segun Space asociado) | no disponible | no aplica | MIT | Hugging Face (0 descargas, 0 likes) |
+| Yoad22/nyc-airbnb-price-predictor | Prediccion de precio de Airbnb en NYC | no disponible | no aplica | no disponible | Hugging Face |
 | jibnorge/Airbnb-NYC-Price-Prediction | Prediccion de precio de Airbnb en NYC | no disponible | no aplica | no disponible | GitHub |
 | HardikVasava/nyc-airbnb-price-prediction-ml | Prediccion de precio con XGBoost, LightGBM y Random Forest | no disponible | no aplica | no disponible | GitHub |
 
@@ -86,9 +86,9 @@ La comparacion es fundamentalmente cualitativa: ninguno de los proyectos alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kgmalik23/nyc-airbnb-predictor
+- Modelo en Hugging Face: https://huggingface.co/kgmalik23/nyc-airbnb-predictor
 - Space del autor: https://huggingface.co/spaces/kgmalik23/nyc-airbnb-predictor
 - Proyecto comparable en GitHub (jibnorge): https://github.com/jibnorge/Airbnb-NYC-Price-Prediction
 - Proyecto comparable en GitHub (HardikVasava): https://github.com/HardikVasava/nyc-airbnb-price-prediction-ml
-- Modelo comparable en HuggingFace (Yoad22): https://huggingface.co/Yoad22/nyc-airbnb-price-predictor
+- Modelo comparable en Hugging Face (Yoad22): https://huggingface.co/Yoad22/nyc-airbnb-price-predictor
 - Demo externa de prediccion de tipo de habitacion en NYC: https://nyc-room-type-predictor-gpjz.onrender.com/

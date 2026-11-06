@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`convnextv2-femto-1k-224-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. Se trata de un ajuste fino completo (todos los parámetros actualizados) del backbone `facebook/convnextv2-femto-1k-224` sobre el conjunto de datos Galaxy10 DECaLS, que distingue diez clases morfológicas de galaxias a partir de recortes de 224x224 píxeles.
+`convnextv2-femto-1k-224-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. Se trata de un ajuste fino completo (todos los parámetros actualizados) del backbone `facebook/convnextv2-femto-1k-224` sobre el conjunto de datos Galaxy10 DECaLS, que distingue diez clases morfológicas de galaxias a partir de recortes de 224x224 píxeles.
 
 El modelo resuelve una tarea concreta de visión por computador en astronomía: la clasificación automática de morfología galáctica, un paso habitual en la creación de catálogos y en estudios de evolución galáctica a gran escala. Su relevancia radica en que forma parte de un estudio sistemático que compara 40 backbones preentrenados bajo dos regímenes de adaptación, con protocolo reproducible y métricas por época publicadas, lo que permite evaluar de forma controlada si los modelos fundacionales de visión generalistas transfieren bien a datos astronómicos.
 
@@ -71,9 +71,9 @@ Evolución seleccionada de métricas de test por época (semilla 42): época 1, 
 
 | Modelo | Parametros | Contexto / entrada | Accuracy en Galaxy10 DECaLS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| convnextv2-femto-1k-224-galaxy10-decals-full-v2 (este) | 4,85 M | imagen 224x224 | 84,16 % (test, semilla 42) | apache-2.0 | HuggingFace |
-| facebook/convnextv2-femto-1k-224 (base sin ajustar) | ~4,85 M | imagen 224x224 | no disponible (modelo de clasificación ImageNet-1k) | apache-2.0 | HuggingFace |
-| Otros backbones de la colección Vision Foundation Models Benchmark | no disponible | imagen 224x224 | no disponible en la información proporcionada | variable | HuggingFace |
+| convnextv2-femto-1k-224-galaxy10-decals-full-v2 (este) | 4,85 M | imagen 224x224 | 84,16 % (test, semilla 42) | apache-2.0 | Hugging Face |
+| facebook/convnextv2-femto-1k-224 (base sin ajustar) | ~4,85 M | imagen 224x224 | no disponible (modelo de clasificación ImageNet-1k) | apache-2.0 | Hugging Face |
+| Otros backbones de la colección Vision Foundation Models Benchmark | no disponible | imagen 224x224 | no disponible en la información proporcionada | variable | Hugging Face |
 
 No se dispone de resultados numéricos de otros clasificadores de morfología galáctica en la información proporcionada, por lo que la comparación cuantitativa con alternativas especializadas queda como no disponible.
 
@@ -90,7 +90,7 @@ No se dispone de resultados numéricos de otros clasificadores de morfología ga
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/convnextv2-femto-1k-224-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/convnextv2-femto-1k-224-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/facebook/convnextv2-femto-1k-224
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de métricas por época y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

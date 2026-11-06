@@ -2,9 +2,9 @@
 
 ## Resumen
 
-foundation-action-pareto-l-209m-action-expert es un modelo publicado en HuggingFace por el usuario shuhant bajo el identificador `shuhant/foundation-action-pareto-l-209m-action-expert`. Segun las etiquetas del repositorio, se enmarca en las categorias `foundation-action`, `world-model` y `pareto`, lo que sugiere que esta orientado a la modelizacion de acciones y a la representacion de dinamicas de entorno (world models), aunque no se dispone de documentacion tecnica publica que detalle su proposito exacto. El modelo esta almacenado en formato PyTorch con pesos safetensors y ocupa 1,3 GB en el repositorio.
+foundation-action-pareto-l-209m-action-expert es un modelo publicado en Hugging Face por el usuario shuhant bajo el identificador `shuhant/foundation-action-pareto-l-209m-action-expert`. Segun las etiquetas del repositorio, se enmarca en las categorias `foundation-action`, `world-model` y `pareto`, lo que sugiere que esta orientado a la modelizacion de acciones y a la representacion de dinamicas de entorno (world models), aunque no se dispone de documentacion tecnica publica que detalle su proposito exacto. El modelo esta almacenado en formato PyTorch con pesos safetensors y ocupa 1,3 GB en el repositorio.
 
-El nombre del repositorio incluye el sufijo "209m", pero el dato real extraido de los pesos safetensors indica 317.622.548 parametros totales, una discrepancia que conviene tener en cuenta al planificar el despliegue. El acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargarlo, y la licencia declarada es `nvidia-internal-research`, lo que apunta a un uso de investigacion interna y no a un uso comercial abierto.
+El nombre del repositorio incluye el sufijo "209m", pero el dato real extraido de los pesos safetensors indica 317.622.548 parametros totales, una discrepancia que conviene tener en cuenta al planificar el despliegue. El acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargarlo, y la licencia declarada es `nvidia-internal-research`, lo que apunta a un uso de investigacion interna y no a un uso comercial abierto.
 
 En el momento de redactar esta ficha el modelo registra 0 descargas y 0 "likes", y no se ha publicado informacion sobre benchmarks, idiomas soportados, pipeline de inferencia ni proceso de entrenamiento. La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo: los enlaces recuperados corresponden a entidades bancarias sin relacion con el proyecto, por lo que la ficha se limita a los metadatos verificables del repositorio.
 
@@ -74,7 +74,7 @@ No disponible. No se dispone de informacion sobre modelos comparables de la mism
 - No se ha publicado documentacion tecnica, lo que impide conocer la arquitectura, el contexto, los idiomas y las capacidades reales del modelo.
 - Existe una discrepancia entre el nombre del repositorio ("209m") y el recuento real de parametros en safetensors (317.622.548), que conviene resolver antes de dimensionar cualquier despliegue.
 - La licencia declarada es `nvidia-internal-research`, etiquetada como `license:other`. Se trata de una licencia de investigacion interna de NVIDIA, por lo que el uso comercial probablemente este restringido o prohibido; debe revisarse el texto completo de la licencia antes de cualquier uso.
-- El repositorio es de acceso restringido (gated): es necesario aceptar condiciones en HuggingFace para descargar los pesos.
+- El repositorio es de acceso restringido (gated): es necesario aceptar condiciones en Hugging Face para descargar los pesos.
 - Riesgo de alucinacion y sesgos: no evaluables, ya que no hay informacion sobre el entrenamiento ni evaluaciones publicadas.
 - Limitaciones de contexto e idioma: no disponibles.
 - La busqueda web realizada no ha devuelto resultados relevantes sobre este modelo; los enlaces recuperados correspondian a entidades bancarias sin relacion con el proyecto.
@@ -82,5 +82,5 @@ No disponible. No se dispone de informacion sobre modelos comparables de la mism
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shuhant/foundation-action-pareto-l-209m-action-expert
+- Hugging Face: https://huggingface.co/shuhant/foundation-action-pareto-l-209m-action-expert
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo.

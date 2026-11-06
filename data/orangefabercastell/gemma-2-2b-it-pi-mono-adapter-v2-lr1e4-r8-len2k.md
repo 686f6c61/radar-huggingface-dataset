@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| orangefabercastell/gemma-2-2b-it-pi-mono-adapter-v2-lr1e4-r8-len2k | Adaptador LoRA | No disponible | No disponible | No disponible | HuggingFace |
-| orangefabercastell/gemma-2-2b-it-pi-mono-sft | SFT completo | No disponible | No disponible | No disponible | HuggingFace |
-| google/gemma-2-2b-it | Modelo base | No disponible | No disponible | No disponible | HuggingFace |
+| orangefabercastell/gemma-2-2b-it-pi-mono-adapter-v2-lr1e4-r8-len2k | Adaptador LoRA | No disponible | No disponible | No disponible | Hugging Face |
+| orangefabercastell/gemma-2-2b-it-pi-mono-sft | SFT completo | No disponible | No disponible | No disponible | Hugging Face |
+| google/gemma-2-2b-it | Modelo base | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de parámetros, contexto ni licencia para ninguno de los modelos comparados. El modelo base `google/gemma-2-2b-it` es la referencia sobre la que se construye el adaptador, y el SFT hermano representa una alternativa de ajuste completo.
 
@@ -82,6 +82,6 @@ No se dispone de datos de parámetros, contexto ni licencia para ninguno de los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/orangefabercastell/gemma-2-2b-it-pi-mono-adapter-v2-lr1e4-r8-len2k
+- Modelo en Hugging Face: https://huggingface.co/orangefabercastell/gemma-2-2b-it-pi-mono-adapter-v2-lr1e4-r8-len2k
 - Modelo hermano SFT: https://huggingface.co/orangefabercastell/gemma-2-2b-it-pi-mono-sft
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it

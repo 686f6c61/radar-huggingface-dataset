@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sadeqmsg12/sentiment-model` es un modelo de clasificación de texto publicado en HuggingFace por el usuario sadeqmsg12. Por su arquitectura declarada (DistilBERT) y su número de parámetros (66.955.010, coherente con la variante base de DistilBERT), se trata de un modelo encoder-only derivado de BERT mediante destilación, orientado a tareas de análisis de sentimiento. El repositorio tiene un tamaño de 0,3 GB y se distribuye en formato safetensors, listo para su uso con la librería transformers.
+`sadeqmsg12/sentiment-model` es un modelo de clasificación de texto publicado en Hugging Face por el usuario sadeqmsg12. Por su arquitectura declarada (DistilBERT) y su número de parámetros (66.955.010, coherente con la variante base de DistilBERT), se trata de un modelo encoder-only derivado de BERT mediante destilación, orientado a tareas de análisis de sentimiento. El repositorio tiene un tamaño de 0,3 GB y se distribuye en formato safetensors, listo para su uso con la librería transformers.
 
-La relevancia de este modelo es limitada en el momento actual: cuenta con cero descargas y cero likes, la model card es la plantilla autogenerada de HuggingFace sin ninguna sección completada, y no se declara licencia, idiomas ni datos de entrenamiento. Es, por tanto, un checkpoint de uso personal o experimental sin documentación que permita evaluar su calidad, su procedencia ni sus condiciones de reutilización.
+La relevancia de este modelo es limitada en el momento actual: cuenta con cero descargas y cero likes, la model card es la plantilla autogenerada de Hugging Face sin ninguna sección completada, y no se declara licencia, idiomas ni datos de entrenamiento. Es, por tanto, un checkpoint de uso personal o experimental sin documentación que permita evaluar su calidad, su procedencia ni sus condiciones de reutilización.
 
 A pesar de la falta de documentación, la arquitectura subyacente (DistilBERT, ~67 millones de parámetros) es bien conocida y permite inferir razonablemente sus características técnicas y sus requisitos de despliegue, que se detallan a continuación con las cautelas oportunas.
 
@@ -30,8 +30,8 @@ No hay información sobre los datos de entrenamiento, el número de tokens, la c
 ## Capacidades
 
 - Clasificación de texto: el pipeline declarado es `text-classification`, orientado a etiquetar secuencias completas (presumiblemente sentimiento positivo/negativo, aunque el número de clases no se documenta).
-- Extracción de embeddings de texto: los tags incluyen `text-embeddings-inference`, lo que sugiere compatibilidad con el servidor de embeddings de HuggingFace para generar representaciones vectoriales.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse en HuggingFace Inference Endpoints.
+- Extracción de embeddings de texto: los tags incluyen `text-embeddings-inference`, lo que sugiere compatibilidad con el servidor de embeddings de Hugging Face para generar representaciones vectoriales.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse en Hugging Face Inference Endpoints.
 - Sin soporte documentado de tool calling, function calling, agentes ni razonamiento multi-paso (no es un modelo generativo).
 - Sin capacidades multimodales (visión, audio) ni modo de razonamiento explícito.
 - Capacidades multilingües: no disponibles; dependen de la variante base empleada, que no se declara.
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: aproximadamente 0,3 GB en fp32; unos 0,15 GB en fp16; menos de 0,1 GB con cuantización de 8 bits. Cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: no requiere GPU. Funciona en CPU con latencia de milisegundos por secuencia corta. Cualquier GPU consumer (GTX 1060, RTX 3060, RTX 4090) ofrece throughput muy alto por lotes.
 - Cabe en cualquier GPU consumer y en entornos sin GPU (Raspberry Pi, contenedores ligeros).
-- Opciones de despliegue: transformers (pipeline nativo), text-embeddings-inference, HuggingFace Inference Endpoints, ONNX Runtime para optimización en CPU, y conversión a GGUF para llama.cpp si se desea (no documentada por el autor).
+- Opciones de despliegue: transformers (pipeline nativo), text-embeddings-inference, Hugging Face Inference Endpoints, ONNX Runtime para optimización en CPU, y conversión a GGUF para llama.cpp si se desea (no documentada por el autor).
 - Latencia y throughput estimados: no disponibles en la información proporcionada; por la arquitectura, se espera un throughput de cientos a miles de secuencias por segundo por lote en CPU moderna y de decenas de miles en GPU.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sadeqmsg12/sentiment-model | 66.955.010 | no disponible (típico 512) | no disponible | HuggingFace, 0 descargas |
-| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 | Apache 2.0 | HuggingFace, ampliamente usado |
-| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | 512 | MIT | HuggingFace, muy usado |
-| ProsusAI/finbert | ~110 M | 512 | Apache 2.0 | HuggingFace, dominio financiero |
+| sadeqmsg12/sentiment-model | 66.955.010 | no disponible (típico 512) | no disponible | Hugging Face, 0 descargas |
+| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 | Apache 2.0 | Hugging Face, ampliamente usado |
+| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | 512 | MIT | Hugging Face, muy usado |
+| ProsusAI/finbert | ~110 M | 512 | Apache 2.0 | Hugging Face, dominio financiero |
 
 La comparativa muestra que el modelo aquí descrito carece de los elementos que hacen útiles a las alternativas: licencia clara, datos de evaluación y documentación del ajuste fino. Para cualquier uso en producción, las alternativas con licencia explícita y benchmarks publicados son preferibles.
 
@@ -82,6 +82,6 @@ La comparativa muestra que el modelo aquí descrito carece de los elementos que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sadeqmsg12/sentiment-model
+- Hugging Face: https://huggingface.co/sadeqmsg12/sentiment-model
 - Paper de DistilBERT (referencia de arquitectura): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la model card: https://mlco2.github.io/impact

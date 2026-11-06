@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-TTS es un repositorio alojado en HuggingFace bajo el identificador `lr298977887/Qwen3-TTS`, que, por su denominación y sus etiquetas, corresponde a una conversión a formato GGUF de un modelo de texto a voz (TTS) de la familia Qwen3. El repositorio es de un autor particular, no oficial de Alibaba/Qwen, y presenta una actividad muy limitada (41 descargas y 1 "me gusta" en el momento de la consulta), por lo que debe tratarse con cautela como recurso comunitario.
+Qwen3-TTS es un repositorio alojado en Hugging Face bajo el identificador `lr298977887/Qwen3-TTS`, que, por su denominación y sus etiquetas, corresponde a una conversión a formato GGUF de un modelo de texto a voz (TTS) de la familia Qwen3. El repositorio es de un autor particular, no oficial de Alibaba/Qwen, y presenta una actividad muy limitada (41 descargas y 1 "me gusta" en el momento de la consulta), por lo que debe tratarse con cautela como recurso comunitario.
 
 El modelo pesa aproximadamente 1.928.677.440 parámetros (unos 1,9B) y el repositorio ocupa unos 2,4 GB, lo que es coherente con pesos cuantizados en GGUF para un modelo de ese tamaño. La licencia aplicada es AGPL-3.0, una licencia de software libre con cláusula copyleft fuerte que impone obligaciones importantes si se integra en servicios de red, algo que cualquier equipo debe evaluar antes de usarlo en producción.
 
@@ -82,5 +82,5 @@ La comparativa es orientativa: no hay benchmarks que permitan contrastar rendimi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lr298977887/Qwen3-TTS
+- Repositorio en Hugging Face: https://huggingface.co/lr298977887/Qwen3-TTS
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, demos) en la información disponible.

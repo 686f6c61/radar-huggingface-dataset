@@ -67,10 +67,10 @@ No se dispone de datos comparativos en la información proporcionada. Kolors se 
 
 ## Enlaces
 
-- [Repositorio de HuggingFace (realmagic99/Kolors)](https://huggingface.co/realmagic99/Kolors)
+- [Repositorio de Hugging Face (realmagic99/Kolors)](https://huggingface.co/realmagic99/Kolors)
 - [Repositorio oficial en GitHub](https://github.com/Kwai-Kolors/Kolors)
 - [Página del equipo](https://kwai-kolors.github.io/)
 - [Informe técnico (PDF)](https://github.com/Kwai-Kolors/Kolors/blob/master/imgs/Kolors_paper.pdf)
 - [Sitio web oficial](https://kolors.kuaishou.com/)
-- [Pesos originales en HuggingFace (Kwai-Kolors/Kolors)](https://huggingface.co/Kwai-Kolors/Kolors)
+- [Pesos originales en Hugging Face (Kwai-Kolors/Kolors)](https://huggingface.co/Kwai-Kolors/Kolors)
 - [Versión diffusers (Kwai-Kolors/Kolors-diffusers)](https://huggingface.co/Kwai-Kolors/Kolors-diffusers)

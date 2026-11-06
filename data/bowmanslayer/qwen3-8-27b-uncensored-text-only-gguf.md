@@ -4,7 +4,7 @@
 
 El modelo `bowmanslayer/Qwen3.8-27B-Uncensored-Text-Only-GGUF` es una cuantización en formato GGUF del modelo base `JonathanColetti/Qwen3.8-27B-Uncensored`, un LLM de 26.9 mil millones de parámetros especializado en generación de texto sin filtros de moderación. Ha sido sometido a un proceso de *abliteration* (eliminación de capas de rechazo) y se distribuye como *uncensored*, lo que significa que no incorpora respuestas de negativa ante solicitudes potencialmente sensibles.
 
-Desarrollado por el usuario `bowmanslayer`, este repositorio proporciona pesos cuantizados listos para ejecución con `llama.cpp`, `Ollama` u otras herramientas compatibles con GGUF. Su tamaño de contexto y arquitectura interna no se detallan en la información disponible, aunque por el nombre se infiere una arquitectura derivada de la familia Qwen (posiblemente Qwen3.5 o Qwen3.8, sin confirmación oficial). El acceso al repositorio está restringido (gated) en HuggingFace, por lo que requiere aceptar condiciones antes de la descarga.
+Desarrollado por el usuario `bowmanslayer`, este repositorio proporciona pesos cuantizados listos para ejecución con `llama.cpp`, `Ollama` u otras herramientas compatibles con GGUF. Su tamaño de contexto y arquitectura interna no se detallan en la información disponible, aunque por el nombre se infiere una arquitectura derivada de la familia Qwen (posiblemente Qwen3.5 o Qwen3.8, sin confirmación oficial). El acceso al repositorio está restringido (gated) en Hugging Face, por lo que requiere aceptar condiciones antes de la descarga.
 
 Relevante para entornos de investigación y desarrollo donde se prioriza la generación de contenido libre de restricciones, pero con el riesgo inherente de producir respuestas inapropiadas o sesgadas. Su licencia Apache 2.0 permite uso comercial, aunque el modelo base puede imponer restricciones adicionales.
 
@@ -67,12 +67,12 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 - **Contenido no apto**: el modelo está etiquetado como `not-for-all-audiences` y `uncensored`, por lo que puede generar contenido violento, sexual, discriminatorio o ilegal. No debe desplegarse en producción sin un filtro de contenido adicional.
 - **Sesgos y alucinaciones**: al ser un modelo abliterado, se elimina la capa de rechazo pero no se corrigen sesgos subyacentes del entrenamiento. Riesgo de alucinaciones en temas de hechos objetivos.
-- **Acceso restringido**: el repositorio en HuggingFace es gated; es necesario aceptar términos de uso antes de la descarga. Esto puede limitar la reproducibilidad en entornos de investigación.
+- **Acceso restringido**: el repositorio en Hugging Face es gated; es necesario aceptar términos de uso antes de la descarga. Esto puede limitar la reproducibilidad en entornos de investigación.
 - **Licencia**: aunque la licencia declarada es Apache 2.0, el modelo base `JonathanColetti/Qwen3.8-27B-Uncensored` puede tener restricciones adicionales. Se recomienda revisar la licencia del modelo base antes de uso comercial.
 - **Sin garantía de calidad**: al ser una cuantización GGUF sin especificaciones técnicas detalladas, la calidad de las respuestas puede variar respecto al modelo original en formato safetensors.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bowmanslayer/Qwen3.8-27B-Uncensored-Text-Only-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bowmanslayer/Qwen3.8-27B-Uncensored-Text-Only-GGUF
 - Modelo base (safetensors): https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
 - (No se encontraron papers, blogs o demos adicionales en la información proporcionada.)

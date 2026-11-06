@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-shifted-l2_mixed_remove0.5_rho0.003 | 6.738.415.616 | No disponible | Compresión SVD con métrica mixta de seguridad | llama2 | HuggingFace, 14 descargas |
-| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 tokens (estándar Llama 2) | Modelo base alineado con RLHF | llama2 | HuggingFace, ampliamente disponible |
+| Jeesup/svd-safety-shifted-l2_mixed_remove0.5_rho0.003 | 6.738.415.616 | No disponible | Compresión SVD con métrica mixta de seguridad | llama2 | Hugging Face, 14 descargas |
+| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 tokens (estándar Llama 2) | Modelo base alineado con RLHF | llama2 | Hugging Face, ampliamente disponible |
 | Variantes de poda SVD de Llama 2 | Variable según ratio | 4.096 tokens | Poda espectral sin conciencia de seguridad | llama2 | Depende del autor |
 
 La comparación directa con alternativas de compresión es difícil porque el autor no publica métricas numéricas que permitan contrastar el rendimiento frente a otros métodos de poda o destilación. La principal diferencia frente al modelo base es la eliminación de aproximadamente la mitad de los parámetros de proyección, con el consiguiente riesgo de degradación de coherencia y de comportamiento de rechazo.
@@ -86,5 +86,5 @@ La comparación directa con alternativas de compresión es difícil porque el au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l2_mixed_remove0.5_rho0.003
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l2_mixed_remove0.5_rho0.003
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tmax-2b-v1.1 (esta ficha, GGUF) | ~1,88 B | No disponible | Apache 2.0 | HuggingFace (GGUF y safetensors) |
-| Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 tokens | Apache 2.0 | HuggingFace, GGUF, Ollama |
-| Llama 3.2 1B Instruct | ~1,2 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, GGUF, Ollama |
-| Gemma 2 2B | ~2,6 B | 8.192 tokens | Gemma Terms of Use | HuggingFace, GGUF, Ollama |
+| tmax-2b-v1.1 (esta ficha, GGUF) | ~1,88 B | No disponible | Apache 2.0 | Hugging Face (GGUF y safetensors) |
+| Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 tokens | Apache 2.0 | Hugging Face, GGUF, Ollama |
+| Llama 3.2 1B Instruct | ~1,2 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, GGUF, Ollama |
+| Gemma 2 2B | ~2,6 B | 8.192 tokens | Gemma Terms of Use | Hugging Face, GGUF, Ollama |
 
 Nota: los datos de los modelos comparables provienen de conocimiento general y no de la informacion proporcionada en esta busqueda; no se dispone de comparaciones de rendimiento publicadas para tmax-2b-v1.1.
 

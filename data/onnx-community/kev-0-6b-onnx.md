@@ -17,7 +17,7 @@ El modelo sirve el contrato público `/v1/systemone` de TypeSafe y forma parte d
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | 8.192 tokens (estado recortado a 8.192; cada rama de pregunta más el estado debe caber en 8.192). Entrenamiento con 384 y 1.024 tokens |
 | Tipos de cuantizacion | `q4f16` (por defecto, pesos 4-bit y resto del grafo en fp16 para WebGPU) y `q4` (pesos `MatMulNBits` 4-bit, block 32, embeddings como `GatherBlockQuantized`, cabeza pointer en fp32). Export en precisión completa no publicado |
-| Idiomas soportados | No disponible (los tags de HuggingFace no declaran idiomas; los datos de entrenamiento citados son fuentes públicas en su mayoría en inglés) |
+| Idiomas soportados | No disponible (los tags de Hugging Face no declaran idiomas; los datos de entrenamiento citados son fuentes públicas en su mayoría en inglés) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | ONNX (`onnx/`), consumible vía Transformers.js 3.x; tokenizador del repositorio |
 

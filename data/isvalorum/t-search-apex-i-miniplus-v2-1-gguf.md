@@ -90,8 +90,8 @@ La información disponible no incluye datos comparativos frente a otros modelos 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| t-tech/T-Search (base, sin cuantizar) | 35,5 B | 256K según la ficha de la cuantización | safetensors, presumiblemente | no disponible | HuggingFace |
-| IsValorum/T-Search-APEX-I-MiniPlus-V2.1-GGUF | 35,5 B | 256K | GGUF mixto, ~14,18 GiB | apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| t-tech/T-Search (base, sin cuantizar) | 35,5 B | 256K según la ficha de la cuantización | safetensors, presumiblemente | no disponible | Hugging Face |
+| IsValorum/T-Search-APEX-I-MiniPlus-V2.1-GGUF | 35,5 B | 256K | GGUF mixto, ~14,18 GiB | apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | APEX-I-Mini genérico (cuantización comunitaria) | 35,5 B | 256K | GGUF uniforme, ~12,5 GB | no disponible | Referenciado en la model card |
 
 Comparación con alternativas externas de la misma categoría (por ejemplo, otros MoE de ~30-35B orientados a agentes): no disponible.
@@ -111,6 +111,6 @@ Comparación con alternativas externas de la misma categoría (por ejemplo, otro
 
 ## Enlaces
 
-- [IsValorum/T-Search-APEX-I-MiniPlus-V2.1-GGUF en HuggingFace](https://huggingface.co/IsValorum/T-Search-APEX-I-MiniPlus-V2.1-GGUF)
-- [Modelo base t-tech/T-Search en HuggingFace](https://huggingface.co/t-tech/T-Search)
+- [IsValorum/T-Search-APEX-I-MiniPlus-V2.1-GGUF en Hugging Face](https://huggingface.co/IsValorum/T-Search-APEX-I-MiniPlus-V2.1-GGUF)
+- [Modelo base t-tech/T-Search en Hugging Face](https://huggingface.co/t-tech/T-Search)
 - Búsqueda web: no se han encontrado resultados relevantes. Las consultas devolvieron únicamente páginas de inicio y formularios de acceso de Facebook, sin relación con el modelo, por lo que no se dispone de papers, blogs, repositorios ni demos adicionales verificables.

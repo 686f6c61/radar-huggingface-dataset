@@ -2,11 +2,11 @@
 
 ## Resumen
 
-smlflg/HAI-Agent-Workflow es un repositorio alojado en HuggingFace que no contiene los pesos de un modelo de lenguaje, sino un recorte ("slice") canónico de artefactos de agentes y flujo de trabajo correspondiente a la versión V1.6 del sistema HAI. Lo publica el usuario smlflg y su contenido son ficheros Markdown, YAML, SVG, HTML y audio, no tensores: perfiles de agente (`profiles/hai-agent/`, `profiles/hai-executer/`, `profiles/hai-validator/`), un registro de roles (`hermes-registry/AGENT_REGISTRY.md`), un ledger de capacidades (`hai-capability-ledger/`), una lane piloto de Cursor/Composer y un directorio `docs/` con el contrato de ejecución.
+smlflg/HAI-Agent-Workflow es un repositorio alojado en Hugging Face que no contiene los pesos de un modelo de lenguaje, sino un recorte ("slice") canónico de artefactos de agentes y flujo de trabajo correspondiente a la versión V1.6 del sistema HAI. Lo publica el usuario smlflg y su contenido son ficheros Markdown, YAML, SVG, HTML y audio, no tensores: perfiles de agente (`profiles/hai-agent/`, `profiles/hai-executer/`, `profiles/hai-validator/`), un registro de roles (`hermes-registry/AGENT_REGISTRY.md`), un ledger de capacidades (`hai-capability-ledger/`), una lane piloto de Cursor/Composer y un directorio `docs/` con el contrato de ejecución.
 
 El problema que aborda es la orquestación disciplinada de agentes: define una cadena fija `NEXT_STEP` → Handoff → Executer → Validator → Human Gate, en la que el agente principal prepara y acota decisiones, un ejecutor vinculado aplica únicamente los `EXECUTION_STEP` aceptados y un validador en modo solo lectura revisa el informe posterior. Las acciones con efectos externos (commit, push, deploy, autenticación, credenciales) quedan sujetas a aprobación humana explícita.
 
-Es relevante ahora como plantilla reproducible de gobierno de agentes más que como modelo: separa preparación, ejecución y validación, y deja constancia de capacidades en un ledger auditable. No se dispone de datos sobre arquitectura neuronal, parámetros, contexto, idiomas o licencia, y el propio repositorio ocupa 0.0 GB según HuggingFace, con 0 descargas y 0 likes en el momento de la consulta.
+Es relevante ahora como plantilla reproducible de gobierno de agentes más que como modelo: separa preparación, ejecución y validación, y deja constancia de capacidades en un ledger auditable. No se dispone de datos sobre arquitectura neuronal, parámetros, contexto, idiomas o licencia, y el propio repositorio ocupa 0.0 GB según Hugging Face, con 0 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -17,7 +17,7 @@ Es relevante ahora como plantilla reproducible de gobierno de agentes más que c
 | Parámetros activos | no aplicable (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponibles |
-| Idiomas soportados | no disponibles en la ficha de HuggingFace; la documentación del repositorio está redactada en alemán |
+| Idiomas soportados | no disponibles en la ficha de Hugging Face; la documentación del repositorio está redactada en alemán |
 | Licencia | no disponible |
 | Formato de pesos | no disponible; el repositorio contiene Markdown, YAML, SVG, HTML y audio M4A almacenado en Git LFS |
 | Identificador | smlflg/HAI-Agent-Workflow |
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - VRAM para inferencia: no aplicable; el repositorio no contiene pesos ni ejecuta inferencia.
 - GPU recomendadas: no aplicable (no se requiere GPU para los artefactos incluidos).
 - Ejecución en GPU de consumo: no aplicable.
-- Almacenamiento: el repositorio ocupa 0.0 GB según HuggingFace; requiere Git y Git LFS para recuperar el audio M4A de 40 MB alojado en `versions/V2/*.m4a`.
+- Almacenamiento: el repositorio ocupa 0.0 GB según Hugging Face; requiere Git y Git LFS para recuperar el audio M4A de 40 MB alojado en `versions/V2/*.m4a`.
 - Opciones de despliegue: no se documentan vLLM, llama.cpp, Ollama ni TGI; el despliegue consiste en clonar el repositorio (`git clone https://github.com/smlfg/HAI-Agent-Workflow.git`) y leer los ficheros de `docs/`.
 - Dependencias de entorno: las claves de API se resuelven en tiempo de ejecución desde el entorno Hermes, no desde el repositorio.
 - Latencia y throughput: no disponibles.
@@ -81,19 +81,19 @@ No disponible. Este repositorio no es un modelo de lenguaje, por lo que no proce
 
 - No es un modelo: no genera texto, no razona y no puede evaluarse con benchmarks de lenguaje.
 - Licencia no disponible: no se puede confirmar si se permite el uso comercial, la modificación o la redistribución de los artefactos.
-- Falta de metadatos en HuggingFace: sin pipeline, sin idiomas declarados y sin model card estructurada en la plataforma.
+- Falta de metadatos en Hugging Face: sin pipeline, sin idiomas declarados y sin model card estructurada en la plataforma.
 - Idioma de la documentación: los ficheros internos están redactados en alemán, lo que añade coste de traducción para equipos hispanohablantes.
 - Riesgo de deriva: el propio repositorio advierte de que los cambios hechos en el antiguo camino del monorepo (`V1.6/hermes-profiles/active/*`) pueden divergir silenciosamente; se recomienda convertir ese camino en symlink o submódulo.
 - `versions/` es un archivo congelado y de solo lectura; cualquier modificación debe ir al nivel superior y nunca al histórico.
 - Contenido omitido: no se incluye `skills/.curator_backups/` (11 MB de snapshots en tar), lo que puede dificultar la reproducción de estados antiguos.
 - Gestión de secretos: los `api_key` están vacíos por diseño y dependen del entorno Hermes; un despliegue sin ese entorno no podrá autenticarse.
-- Discrepancia de autoría: el identificador de HuggingFace es `smlflg` mientras que la URL de clonado apunta a la organización `smlfg` en GitHub; conviene verificar cuál es la fuente canónica antes de integrarlo.
+- Discrepancia de autoría: el identificador de Hugging Face es `smlflg` mientras que la URL de clonado apunta a la organización `smlfg` en GitHub; conviene verificar cuál es la fuente canónica antes de integrarlo.
 - Riesgo de alucinación: no aplicable directamente, pero cualquier agente que consuma estos artefactos heredará los sesgos del modelo que lo ejecute, no de este repositorio.
 - Las restricciones de efectos externos (commit, push, deploy, credenciales) son convenciones documentadas, no mecanismos técnicos de aplicación: requieren implementación propia para ser efectivas.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smlflg/HAI-Agent-Workflow
+- Repositorio en Hugging Face: https://huggingface.co/smlflg/HAI-Agent-Workflow
 - Repositorio en GitHub (según el quickstart): https://github.com/smlfg/HAI-Agent-Workflow
 - Documentación citada en el repositorio: `docs/REPOSITORY_MAP.md`, `docs/DIAGRAMS.md`, `docs/README.md`, `docs/V1.6_EXECUTOR_CONTRACT.md`
 - Otros recursos internos: `hermes-registry/AGENT_REGISTRY.md`, `hai-capability-ledger/`, `codex-skills/`, `Projek-Managment/archify/`

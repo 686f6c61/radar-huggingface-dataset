@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WeakKingsleyCyberpunk_240e_17760s es un modelo publicado en HuggingFace por el usuario Homiebear bajo licencia OpenRAIL. El nombre sigue el patron habitual de los checkpoints derivados de modelos de difusion (un identificador de estilo o personaje, seguido de un numero de "epochs" y de "steps" de entrenamiento), lo que sugiere que se trata de un ajuste fino de un modelo de generacion de imagenes orientado a una estetica cyberpunk concreta. No obstante, la model card no aporta ninguna especificacion tecnica: se limita a declarar la licencia.
+WeakKingsleyCyberpunk_240e_17760s es un modelo publicado en Hugging Face por el usuario Homiebear bajo licencia OpenRAIL. El nombre sigue el patron habitual de los checkpoints derivados de modelos de difusion (un identificador de estilo o personaje, seguido de un numero de "epochs" y de "steps" de entrenamiento), lo que sugiere que se trata de un ajuste fino de un modelo de generacion de imagenes orientado a una estetica cyberpunk concreta. No obstante, la model card no aporta ninguna especificacion tecnica: se limita a declarar la licencia.
 
 El repositorio tiene un tamano de 0,3 GB y registra cero descargas y cero likes en el momento de la consulta. No se indica pipeline, arquitectura, parametros, longitud de contexto ni idiomas soportados. La ausencia de documentacion y de metadatos de uso hace imposible verificar que tipo de modelo es, mas alla de las inferencias que permite el nombre y el tamano del repositorio.
 
@@ -79,4 +79,4 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Homiebear/WeakKingsleyCyberpunk_240e_17760s
+- Modelo en Hugging Face: https://huggingface.co/Homiebear/WeakKingsleyCyberpunk_240e_17760s

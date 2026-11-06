@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qwen-3b-my-knowledge-GGUF` es un modelo de lenguaje de aproximadamente 3.400 millones de parámetros, publicado por el usuario mrtonysipriany en HuggingFace. Se trata de un ajuste fino (fine-tuning) de un modelo base de la familia Qwen, según indican los tags del repositorio (`qwen2`), convertido posteriormente a formato GGUF mediante la librería Unsloth. El nombre del repositorio sugiere que el ajuste se orientó a inyectar un corpus de conocimiento propio del autor ("my-knowledge"), aunque la model card no documenta qué datos se utilizaron.
+`qwen-3b-my-knowledge-GGUF` es un modelo de lenguaje de aproximadamente 3.400 millones de parámetros, publicado por el usuario mrtonysipriany en Hugging Face. Se trata de un ajuste fino (fine-tuning) de un modelo base de la familia Qwen, según indican los tags del repositorio (`qwen2`), convertido posteriormente a formato GGUF mediante la librería Unsloth. El nombre del repositorio sugiere que el ajuste se orientó a inyectar un corpus de conocimiento propio del autor ("my-knowledge"), aunque la model card no documenta qué datos se utilizaron.
 
 El modelo se distribuye únicamente en una cuantización GGUF Q4_K_M, con un tamaño de repositorio de 2,1 GB, lo que lo hace desplegable en hardware de consumo mediante llama.cpp u Ollama. Es relevante como ejemplo de flujo de trabajo de ajuste fino rápido con Unsloth y empaquetado para inferencia local, más que como modelo de propósito general.
 
@@ -81,6 +81,6 @@ La comparación con los modelos oficiales es aproximada: los datos de Qwen2.5-3B
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrtonysipriany/qwen-3b-my-knowledge-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mrtonysipriany/qwen-3b-my-knowledge-GGUF
 - Unsloth (herramienta de fine-tuning y conversión): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de inferencia GGUF): https://github.com/ggml-org/llama.cpp

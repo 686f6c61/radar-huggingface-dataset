@@ -84,8 +84,8 @@ La comparativa se limita a la cadena de derivacion del propio modelo, ya que no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/debuffjp/decide-multilingual
-- Modelo base en HuggingFace: https://huggingface.co/intfloat/multilingual-e5-small
+- Modelo en Hugging Face: https://huggingface.co/debuffjp/decide-multilingual
+- Modelo base en Hugging Face: https://huggingface.co/intfloat/multilingual-e5-small
 - Conversion ONNX de referencia: https://huggingface.co/Xenova/multilingual-e5-small
 - Sitio de decidekit: https://debuff.jp/decide/
 - Script de evaluacion multilingue: https://github.com/debuffjp/decidekit/blob/main/eval/multilingual.ts

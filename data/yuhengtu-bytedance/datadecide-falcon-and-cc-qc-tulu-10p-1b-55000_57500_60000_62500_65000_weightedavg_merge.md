@@ -30,7 +30,7 @@ El modelo es el resultado de una fusion lineal de pesos. Segun la configuracion 
 
 No se dispone de informacion sobre la arquitectura interna (numero de capas, dimension del modelo, tipo de atencion), sobre el dataset de preentrenamiento, el numero de tokens vistos ni sobre si hubo fases de ajuste fino con RLHF, DPO o SFT. El identificador del modelo base ("falcon-and-cc-qc-tulu-10p") sugiere una mezcla de datos que incluiria CommonCrawl, datos de control de calidad y el dataset Tulu, con un posible regimen del 10 % ("10p"), pero esto es una inferencia a partir del nombre y no esta confirmado en la model card. Tampoco se documenta ninguna innovacion de inferencia (decodificacion especulativa, atencion lineal, etc.).
 
-Un detalle tecnico relevante para la reproducibilidad: los checkpoints de origen se referencian mediante rutas absolutas locales (`/opt/tiger/Pan_Safety_Better_Measurement/...`), no como identificadores de HuggingFace, por lo que las fuentes originales no son accesibles publicamente a traves de este repositorio.
+Un detalle tecnico relevante para la reproducibilidad: los checkpoints de origen se referencian mediante rutas absolutas locales (`/opt/tiger/Pan_Safety_Better_Measurement/...`), no como identificadores de Hugging Face, por lo que las fuentes originales no son accesibles publicamente a traves de este repositorio.
 
 ## Capacidades
 
@@ -72,10 +72,10 @@ Los datos de las alternativas provienen de sus model cards publicas y no han sid
 
 | Modelo | Parametros | Longitud de contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (DataDecide merge) | 1,28B | no disponible | no disponible | no disponible | HuggingFace, safetensors |
-| Falcon-rw-1B (tiiuae) | ~1,3B | 2.048 tokens | Apache 2.0 | publicado por el autor | HuggingFace |
-| TinyLlama-1.1B | ~1,1B | 2.048 tokens | Apache 2.0 | publicado por el autor | HuggingFace |
-| Llama 3.2 1B | ~1,24B | 128.000 tokens | Licencia comunitaria Llama 3.2 | publicado por el autor | HuggingFace |
+| Este modelo (DataDecide merge) | 1,28B | no disponible | no disponible | no disponible | Hugging Face, safetensors |
+| Falcon-rw-1B (tiiuae) | ~1,3B | 2.048 tokens | Apache 2.0 | publicado por el autor | Hugging Face |
+| TinyLlama-1.1B | ~1,1B | 2.048 tokens | Apache 2.0 | publicado por el autor | Hugging Face |
+| Llama 3.2 1B | ~1,24B | 128.000 tokens | Licencia comunitaria Llama 3.2 | publicado por el autor | Hugging Face |
 
 Diferencias clave: a diferencia de las alternativas, este modelo no declara licencia, no documenta idiomas ni contexto y no aporta ningun resultado de evaluacion. Su principal diferencial no es el rendimiento, sino su naturaleza experimental como artefacto de investigacion sobre merging de checkpoints.
 
@@ -95,7 +95,7 @@ Diferencias clave: a diferencia de las alternativas, este modelo no declara lice
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-falcon-and-cc-qc-tulu-10p-1B-55000_57500_60000_62500_65000_weightedavg_merge
+- Repositorio en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-falcon-and-cc-qc-tulu-10p-1B-55000_57500_60000_62500_65000_weightedavg_merge
 - mergekit (herramienta de fusion utilizada): https://github.com/cg123/mergekit
 - Articulo de referencia del metodo Linear: https://arxiv.org/abs/2203.05482
 - Resultados de busqueda web: no se ha encontrado ningun recurso adicional relevante sobre este modelo; el unico resultado devuelto no guardaba relacion con el contenido.

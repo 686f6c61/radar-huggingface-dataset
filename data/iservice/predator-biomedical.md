@@ -2,9 +2,9 @@
 
 ## Resumen
 
-PREDATOR Biomedical es un repositorio publicado en HuggingFace por el usuario iservice bajo el identificador `iservice/predator-biomedical`. Según su model card, no se trata de un modelo de lenguaje con pesos entrenados, sino de un conjunto de datos (dataset) con más de 50.000 abstracts biomédicos curados procedentes de PubMed, EuropePMC y bases de datos de ensayos clínicos. Cada registro incluye identificador DOI o PMID, título o resumen, fuente de origen, clasificación de dominio (biomedical o clinical), una puntuación de valor comercial (0-1), una puntuación de monetización (0-2) y un nivel de calidad (high, medium, low).
+PREDATOR Biomedical es un repositorio publicado en Hugging Face por el usuario iservice bajo el identificador `iservice/predator-biomedical`. Según su model card, no se trata de un modelo de lenguaje con pesos entrenados, sino de un conjunto de datos (dataset) con más de 50.000 abstracts biomédicos curados procedentes de PubMed, EuropePMC y bases de datos de ensayos clínicos. Cada registro incluye identificador DOI o PMID, título o resumen, fuente de origen, clasificación de dominio (biomedical o clinical), una puntuación de valor comercial (0-1), una puntuación de monetización (0-2) y un nivel de calidad (high, medium, low).
 
-El repositorio está etiquetado con el idioma inglés y con las categorías de tarea text-classification, information-extraction y question-answering, lo que lo sitúa como material de entrenamiento o evaluación para pipelines de procesamiento de lenguaje natural en dominio biomédico. La model card declara licencia CC BY 4.0, aunque el campo de licencia del repositorio en HuggingFace figura como no disponible, lo que genera una discrepancia documental.
+El repositorio está etiquetado con el idioma inglés y con las categorías de tarea text-classification, information-extraction y question-answering, lo que lo sitúa como material de entrenamiento o evaluación para pipelines de procesamiento de lenguaje natural en dominio biomédico. La model card declara licencia CC BY 4.0, aunque el campo de licencia del repositorio en Hugging Face figura como no disponible, lo que genera una discrepancia documental.
 
 Su relevancia potencial reside en la combinación de datos de literatura científica con metadatos de calidad y viabilidad comercial, un enfoque poco habitual en datasets biomédicos públicos. Sin embargo, el repositorio no registra descargas ni likes, no publica resultados de benchmarks ni documentación metodológica sobre el proceso de curación, y su model card referencia un endpoint de API con micropagos (protocolo x402 sobre la cadena Base) que no está descrito en detalle.
 
@@ -89,7 +89,7 @@ No se dispone de datos comparativos publicados por el autor. Existen corpus biom
 - No es un modelo: no genera texto ni responde a instrucciones por sí mismo; solo puede usarse como corpus para entrenar o evaluar otros sistemas.
 - Idioma: el contenido está etiquetado exclusivamente en inglés, lo que limita su uso directo en aplicaciones en castellano.
 - Ausencia de validación externa: el repositorio acumula 0 descargas y 0 likes, sin evidencia de revisión por parte de la comunidad.
-- Discrepancia de licencia: la model card declara CC BY 4.0 (uso comercial permitido con atribución), pero el campo de licencia del repositorio en HuggingFace aparece como no disponible. Conviene confirmar la licencia aplicable antes de un uso comercial.
+- Discrepancia de licencia: la model card declara CC BY 4.0 (uso comercial permitido con atribución), pero el campo de licencia del repositorio en Hugging Face aparece como no disponible. Conviene confirmar la licencia aplicable antes de un uso comercial.
 - Metadatos sin documentar: no se explican los criterios de `commercial_value`, `monetization_score` ni la asignación de niveles de calidad, por lo que esas columnas no deberían usarse como señal fiable sin auditoría.
 - Sesgos potenciales: los datos heredan los sesgos de cobertura de PubMed, EuropePMC y ClinicalTrials.gov, con infrarrepresentación previsible de determinadas regiones geográficas, idiomas y áreas terapéuticas.
 - Riesgo de alucinación: no aplica al dataset, pero cualquier modelo generativo entrenado o aumentado con él puede producir citas o afirmaciones clínicas incorrectas; se requiere verificación contra el DOI/PMID original.
@@ -100,7 +100,7 @@ No se dispone de datos comparativos publicados por el autor. Existen corpus biom
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/iservice/predator-biomedical
+- Repositorio en Hugging Face: https://huggingface.co/iservice/predator-biomedical
 - Endpoint de API con micropagos x402 (según la model card): POST https://most-daylight-fraying.ngrok-free.dev/x402/biomed/query
 - Contacto declarado: iservice49800@gmail.com
 - Identificador del autor en x402 Arena: `predator-biomed-papers`

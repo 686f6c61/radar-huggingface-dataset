@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`misapapa71/model-emi-krea2` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, desarrollado por el usuario misapapa71 y publicado en HuggingFace bajo licencia Apache 2.0. El adaptador se entrena sobre los pesos de Krea 2 RAW (`krea/Krea-2-Raw`) y se distribuye para su uso sobre Krea 2 Turbo, permitiendo invocar un concepto personalizado mediante el token de activacion `model-Emi-krea2`.
+`misapapa71/model-emi-krea2` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, desarrollado por el usuario misapapa71 y publicado en Hugging Face bajo licencia Apache 2.0. El adaptador se entrena sobre los pesos de Krea 2 RAW (`krea/Krea-2-Raw`) y se distribuye para su uso sobre Krea 2 Turbo, permitiendo invocar un concepto personalizado mediante el token de activacion `model-Emi-krea2`.
 
 No se trata de un modelo fundacional autonomo, sino de un complemento de bajo rango (0,8 GB de repositorio) que modifica el comportamiento del modelo base para incorporar un concepto o estilo concreto. Su relevancia es limitada al ecosistema de personalizacion de Krea 2: resulta util para quien necesite reproducir un sujeto o estetica especifica sin reentrenar el modelo completo, aprovechando la inferencia rapida de la variante Turbo (8 pasos, `guidance_scale=0.0`).
 
@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores LoRA pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/misapapa71/model-emi-krea2
+- Hugging Face: https://huggingface.co/misapapa71/model-emi-krea2
 - Modelo base (RAW): https://huggingface.co/krea/Krea-2-Raw
 - Modelo base (Turbo, referenciado en el codigo de ejemplo): `krea/Krea-2-Turbo` (no se ha encontrado URL directa en la informacion proporcionada)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la busqueda web realizada.

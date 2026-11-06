@@ -49,7 +49,7 @@ La conversión `airagrp/Qwen3.8-27B-bf16` está preparada para usar decodificaci
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Las fuentes web mencionan que Qwen ha publicado benchmarks oficiales del modelo base, pero no se incluyen cifras concretas en los resultados de búsqueda. Se recomienda consultar el blog oficial de Qwen o la página del modelo en HuggingFace para obtener datos de MMLU, HumanEval, GSM8K y otras evaluaciones.
+No se han publicado resultados de benchmarks en la informacion disponible. Las fuentes web mencionan que Qwen ha publicado benchmarks oficiales del modelo base, pero no se incluyen cifras concretas en los resultados de búsqueda. Se recomienda consultar el blog oficial de Qwen o la página del modelo en Hugging Face para obtener datos de MMLU, HumanEval, GSM8K y otras evaluaciones.
 
 ## Requisitos de hardware
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativos en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/airagrp/Qwen3.8-27B-bf16
+- Modelo en Hugging Face: https://huggingface.co/airagrp/Qwen3.8-27B-bf16
 - Head MTP: https://huggingface.co/airagrp/Qwen3.8-27B-MTP-bf16 (referenciado en la model card)
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Página de LM Studio: https://lmstudio.ai/models/qwen/qwen3.8-27b

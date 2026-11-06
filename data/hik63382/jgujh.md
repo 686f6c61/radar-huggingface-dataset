@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hik63382/jgujh` es un modelo publicado en HuggingFace por el usuario `hik63382` bajo licencia Apache 2.0. Se distribuye en formato ONNX y el repositorio ocupa 2,4 GB, lo que sugiere un modelo de tamanio medio (probablemente en el rango de 1 a 3 mil millones de parametros, aunque no se confirma en la informacion disponible). La model card asociada no contiene mas que la declaracion de licencia, sin descripcion, arquitectura ni datos de entrenamiento.
+`hik63382/jgujh` es un modelo publicado en Hugging Face por el usuario `hik63382` bajo licencia Apache 2.0. Se distribuye en formato ONNX y el repositorio ocupa 2,4 GB, lo que sugiere un modelo de tamanio medio (probablemente en el rango de 1 a 3 mil millones de parametros, aunque no se confirma en la informacion disponible). La model card asociada no contiene mas que la declaracion de licencia, sin descripcion, arquitectura ni datos de entrenamiento.
 
 El modelo no cuenta con pipeline declarado, idiomas especificados, descargas ni interacciones en el momento de la consulta. Esto, junto con el identificador opaco (`jgujh`), apunta a un artefacto de prueba o a una publicacion sin documentar, mas que a un modelo listo para produccion. Cualquier evaluacion tecnica seria requiere inspeccionar directamente los pesos y la configuracion del repositorio.
 
@@ -44,7 +44,7 @@ Dado que no se documentan capacidades, los siguientes escenarios son hipoteticos
 - Evaluacion interna de modelos ONNX: el repositorio puede servir para probar cargas con ONNX Runtime y medir tiempos de inicializacion en el hardware objetivo antes de adoptar un modelo documentado.
 - Prototipado de pipelines de inferencia: al estar en ONNX, encaja en entornos donde ya existe infraestructura de ejecucion ONNX y se quiere validar el flujo completo (tokenizador, sesion, postproceso).
 - Pruebas de integracion en CI: util para verificar que un pipeline de despliegue acepta artefactos ONNX de 2,4 GB sin fallos de memoria o de carga.
-- Experimentacion academica: como ejemplo de publicacion sin documentar, para estudiar practicas de publicacion de modelos en HuggingFace.
+- Experimentacion academica: como ejemplo de publicacion sin documentar, para estudiar practicas de publicacion de modelos en Hugging Face.
 - Benchmarking de herramientas de conversion: comparar el rendimiento de ONNX Runtime frente a otras runtimes sobre el mismo artefacto.
 - Analisis de seguridad de artefactos: inspeccionar los pesos para detectar contenido inesperado antes de usarlos en cualquier entorno.
 
@@ -79,5 +79,5 @@ No disponible. No hay informacion suficiente sobre arquitectura, tamanio o tarea
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hik63382/jgujh
+- Repositorio en Hugging Face: https://huggingface.co/hik63382/jgujh
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

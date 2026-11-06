@@ -78,9 +78,9 @@ Los datos proceden de la model card del autor y comparan la implementación ofic
 
 | Modelo | Parámetros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen-Image-2.1 (este repositorio) | 7 000 M en el componente visual + codificador Qwen3-VL-8B | DiT de flujo único, generación y edición | Apache-2.0 | HuggingFace, ModelScope y GitHub |
-| FLUX.1-dev | 12 000 M | Transformer de flujo rectificado, generación y edición | FLUX.1-dev Non-Commercial License (uso comercial restringido) | HuggingFace |
-| Stable Diffusion 3.5 Large | 8 000 M | MMDiT, generación de imágenes | Stability AI Community License (gratuita por debajo de un umbral de ingresos) | HuggingFace |
+| Qwen-Image-2.1 (este repositorio) | 7 000 M en el componente visual + codificador Qwen3-VL-8B | DiT de flujo único, generación y edición | Apache-2.0 | Hugging Face, ModelScope y GitHub |
+| FLUX.1-dev | 12 000 M | Transformer de flujo rectificado, generación y edición | FLUX.1-dev Non-Commercial License (uso comercial restringido) | Hugging Face |
+| Stable Diffusion 3.5 Large | 8 000 M | MMDiT, generación de imágenes | Stability AI Community License (gratuita por debajo de un umbral de ingresos) | Hugging Face |
 
 Los datos de los modelos alternativos proceden de su documentación pública y no se han verificado en esta ficha; los campos de contexto, benchmarks y cuantizaciones disponibles no se incluyen por no estar contrastados. La ventaja diferencial de Qwen-Image-2.1 en esta comparativa es la combinación de licencia Apache-2.0 sin restricciones comerciales y soporte de indicaciones en chino, además de la vía de despliegue sobre aceleradores no NVIDIA que aporta el stack FlagOS.
 

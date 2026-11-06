@@ -70,8 +70,8 @@ No se dispone de informacion sobre otros checkpoints truncados comparables en la
 
 | Modelo | Parametros | Capas | Generacion de texto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| cfahlgren1/Qwen3.5-4B-layers0-11 | 1.974.470.336 (1,97 B) | 12 de 32 | No | safetensors (bf16) | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (base) | 4 B (segun nombre del modelo) | 32 | Si | safetensors | Apache-2.0 | HuggingFace |
+| cfahlgren1/Qwen3.5-4B-layers0-11 | 1.974.470.336 (1,97 B) | 12 de 32 | No | safetensors (bf16) | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (base) | 4 B (segun nombre del modelo) | 32 | Si | safetensors | Apache-2.0 | Hugging Face |
 | Checkpoints truncados alternativos | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias

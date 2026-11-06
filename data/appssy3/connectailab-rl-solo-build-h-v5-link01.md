@@ -76,8 +76,8 @@ No se dispone de datos de benchmarks de terceros para comparar directamente. Com
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-solo-build-h-v5-link01 | 0,8B (base) + LoRA | No disponible | Decisión restringida en robot simulado | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | LM generalista | No disponible en la ficha | HuggingFace |
+| connectailab-rl-solo-build-h-v5-link01 | 0,8B (base) + LoRA | No disponible | Decisión restringida en robot simulado | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | LM generalista | No disponible en la ficha | Hugging Face |
 | Cerebro PPO original (brain.json) | No disponible | No aplica | Política de decisión | No disponible | Entorno web del autor |
 
 No se han identificado otros adaptadores públicos comparables de destilación de políticas RL en LMs pequeños con los que contrastar métricas.
@@ -97,7 +97,7 @@ No se han identificado otros adaptadores públicos comparables de destilación d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/appssy3/connectailab-rl-solo-build-h-v5-link01
+- Modelo en Hugging Face: https://huggingface.co/appssy3/connectailab-rl-solo-build-h-v5-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para reentrenar: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

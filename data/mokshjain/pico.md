@@ -77,10 +77,10 @@ Resultados de extrapolacion de contexto (necesidad de 4 agujas a 32k): 0,18 en e
 
 | Modelo | Parametros | Contexto | CORE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pico (rl_web7) | 48,2M | 16.384 (base 2.048) | 0,131 | MIT | HuggingFace mokshjain/pico |
-| GPT-2 124M | 124M | 1.024 | 0,114 | MIT | OpenAI / HuggingFace |
+| Pico (rl_web7) | 48,2M | 16.384 (base 2.048) | 0,131 | MIT | Hugging Face mokshjain/pico |
+| GPT-2 124M | 124M | 1.024 | 0,114 | MIT | OpenAI / Hugging Face |
 | nanochat (receta base) | variable | variable | no disponible | MIT | GitHub karpathy/nanochat |
-| SmolLM-135M | 135M | 2.048 | no disponible | Apache 2.0 | HuggingFace HuggingFaceTB |
+| SmolLM-135M | 135M | 2.048 | no disponible | Apache 2.0 | Hugging Face HuggingFaceTB |
 
 Pico supera a GPT-2 124M en CORE pese a tener un 61 por ciento menos de parametros, aunque su contexto base de 2.048 tokens es inferior al de alternativas modernas como SmolLM-135M. No se dispone de comparaciones publicadas frente a modelos agenticos de mayor tamano en las mismas tareas.
 
@@ -97,6 +97,6 @@ Pico supera a GPT-2 124M en CORE pese a tener un 61 por ciento menos de parametr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mokshjain/pico
+- Hugging Face: https://huggingface.co/mokshjain/pico
 - Informe W&B con curvas y ablaciones: https://wandb.ai/mokshjain/full_model/reports/Pico:-A-48M-Parameter-Agentic-Language-Model-Trained-from-Scratch-in-JAX--VmlldzoxODExMjAwNQ==
 - Receta nanochat (Karpathy): https://github.com/karpathy/nanochat

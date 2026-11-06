@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI y distribuido en HuggingFace a través del repositorio del usuario nexxqin. Según la model card, esta versión introduce mejoras sustanciales en razonamiento, generación de código, tareas agénticas y benchmarks visuales, además de reducir el tiempo de ejecución de tareas y la longitud de salida, lo que se traduce en un menor coste por tarea y una mejora de la frontera de Pareto entre rendimiento y coste.
+DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI y distribuido en Hugging Face a través del repositorio del usuario nexxqin. Según la model card, esta versión introduce mejoras sustanciales en razonamiento, generación de código, tareas agénticas y benchmarks visuales, además de reducir el tiempo de ejecución de tareas y la longitud de salida, lo que se traduce en un menor coste por tarea y una mejora de la frontera de Pareto entre rendimiento y coste.
 
 El modelo es multimodal (pipeline `image-text-to-text`), con un total de 763.205.315.794 parámetros según los pesos en safetensors, y está diseñado para trabajar con una ventana de contexto de 1 millón de tokens. La model card cita el artículo técnico "Pushing the Limits of KV Cache Compression", lo que sugiere que la compresión de la caché KV es una de las innovaciones centrales de esta familia de modelos.
 
@@ -103,11 +103,11 @@ No se dispone de información sobre parámetros, contexto ni licencia de los mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nexxqin/DeepSeek-V4.1-Flash-1017
+- Hugging Face: https://huggingface.co/nexxqin/DeepSeek-V4.1-Flash-1017
 - Modelo base oficial: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Repositorio deepseek-recipe: https://github.com/deepseek-ai/deepseek-recipe
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Página oficial: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/
 - Twitter/X: https://twitter.com/deepseek_ai

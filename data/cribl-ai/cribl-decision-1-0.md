@@ -82,8 +82,8 @@ No se dispone de datos publicados de otros adaptadores de decisión estructurada
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cribl-decision-1.0 | Base 4B + LoRA | no disponible | 77,34 % exactitud global (26 tareas) | apache-2.0 | Adaptador en HuggingFace |
-| Qwen/Qwen3.5-4B-Base | 4B | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
+| cribl-decision-1.0 | Base 4B + LoRA | no disponible | 77,34 % exactitud global (26 tareas) | apache-2.0 | Adaptador en Hugging Face |
+| Qwen/Qwen3.5-4B-Base | 4B | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
 | Alternativas de clasificación/decision | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No se dispone de datos publicados de otros adaptadores de decisión estructurada
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/cribl-ai/cribl-decision-1.0
+- Adaptador en Hugging Face: https://huggingface.co/cribl-ai/cribl-decision-1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Cribl (empresa): https://cribl.io/
 - Cribl AI: https://cribl.io/products/cribl-ai/

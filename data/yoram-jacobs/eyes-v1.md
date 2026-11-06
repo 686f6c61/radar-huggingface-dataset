@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Eyes-v1 es un modelo de lenguaje desarrollado por el usuario Yoram-Jacobs y publicado en HuggingFace con licencia Apache 2.0. Según los metadatos, se trata de un modelo orientado a tareas conversacionales, con un tamaño de aproximadamente 4.650 millones de parámetros y un peso del repositorio de 4,4 GB. El formato de los pesos parece ser GGUF, como indica la etiqueta "gguf", lo que sugiere que está preparado para inferencia eficiente en CPU y GPU mediante herramientas como llama.cpp u Ollama.
+Eyes-v1 es un modelo de lenguaje desarrollado por el usuario Yoram-Jacobs y publicado en Hugging Face con licencia Apache 2.0. Según los metadatos, se trata de un modelo orientado a tareas conversacionales, con un tamaño de aproximadamente 4.650 millones de parámetros y un peso del repositorio de 4,4 GB. El formato de los pesos parece ser GGUF, como indica la etiqueta "gguf", lo que sugiere que está preparado para inferencia eficiente en CPU y GPU mediante herramientas como llama.cpp u Ollama.
 
 El modelo fue creado el 17 de agosto de 2026 y actualizado ese mismo día, por lo que es un lanzamiento muy reciente. Sin embargo, la documentación pública es extremadamente limitada: la model card únicamente contiene la licencia, sin información sobre arquitectura, datos de entrenamiento, capacidades específicas o benchmarks. Esto dificulta una evaluación técnica rigurosa, pero su tamaño y formato lo sitúan en la gama de modelos pequeños-medianos, aptos para despliegue en entornos con recursos moderados.
 
@@ -71,6 +71,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yoram-Jacobs/Eyes-v1
+- Hugging Face: https://huggingface.co/Yoram-Jacobs/Eyes-v1
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código, demos) en la información proporcionada.

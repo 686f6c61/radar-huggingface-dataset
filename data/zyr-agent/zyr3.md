@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZYR3 es un sistema de agente de codificacion con IA que se presenta como un "multi-AI model": una interfaz unica que enruta cada tarea a uno de 34 modelos especializados, construida sobre GLM 5.3 mediante el SDK de Z.ai. No es un modelo con pesos propios en el sentido convencional, sino un sistema de ingenieria de prompts y enrutamiento que delega la inferencia a una API externa, sin requerir GPU local. El repositorio de HuggingFace no incluye pesos utilizables (solo un archivo legacy safetensors sin uso) y carga via `trust_remote_code`.
+ZYR3 es un sistema de agente de codificacion con IA que se presenta como un "multi-AI model": una interfaz unica que enruta cada tarea a uno de 34 modelos especializados, construida sobre GLM 5.3 mediante el SDK de Z.ai. No es un modelo con pesos propios en el sentido convencional, sino un sistema de ingenieria de prompts y enrutamiento que delega la inferencia a una API externa, sin requerir GPU local. El repositorio de Hugging Face no incluye pesos utilizables (solo un archivo legacy safetensors sin uso) y carga via `trust_remote_code`.
 
 El proyecto resuelve el problema de la generacion de codigo, correccion de errores y automatizacion de ingenieria de software, anadiendo una capa de razonamiento ("ULTRA Coding Prompt"), especialistas por lenguaje, un sandbox microVM con ejecucion real de codigo y un bucle de auto-refinamiento de hasta 3 iteraciones. Su relevancia actual radica en que propone un enfoque de "agente de codigo" basado en una API, aunque su naturaleza cerrada y la dependencia de un servicio externo limitan su uso como modelo open source tradicional.
 
@@ -108,8 +108,8 @@ No hay comparativa con otros sistemas de agentes de codigo (como GitHub Copilot,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zyr-AGENT/zyr3
-- Perfil del autor en HuggingFace: https://huggingface.co/zyr-ai
+- Repositorio Hugging Face: https://huggingface.co/zyr-AGENT/zyr3
+- Perfil del autor en Hugging Face: https://huggingface.co/zyr-ai
 - Perfil del autor en GitHub: https://github.com/zyr-ai
 - Repositorio GitHub (agentcore, biblioteca Go para agentes): https://github.com/zyr-ai/agentcore
 - Aviso de seguridad (Vulners): https://vulners.com/ossf/OSSF:MAL-2026-13471

@@ -96,9 +96,9 @@ Las dos regresiones de prefill estan por debajo del 0,27% y la regresion restant
 
 | Modelo | Tipo | Payload | Fidelidad frente a BF16 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3 BF16 (zai-org) | Referencia sin cuantizar, 754B MoE segun la model card | Mayor que 409,4 GB | Referencia (NLL 0,565816 en test final) | MIT segun openlm.ai | HuggingFace |
-| INT4/INT8 RTN g64 (HawkBearPig) | Cuantizacion RTN INT4/INT8, grupo 64 | 4,2500 bits/peso | KL 0,050547; acuerdo 95,220% | glm-5.3 | HuggingFace |
-| **Mixed346 H32 A8 g128 (este checkpoint)** | GPTQ mixto 3/4/6 bits, activaciones INT8, grupo 128 | 4,0500 bits/peso; 381,19 GiB | KL 0,040918; acuerdo 95,788% | glm-5.3 (`other`) | HuggingFace |
+| GLM-5.3 BF16 (zai-org) | Referencia sin cuantizar, 754B MoE segun la model card | Mayor que 409,4 GB | Referencia (NLL 0,565816 en test final) | MIT segun openlm.ai | Hugging Face |
+| INT4/INT8 RTN g64 (HawkBearPig) | Cuantizacion RTN INT4/INT8, grupo 64 | 4,2500 bits/peso | KL 0,050547; acuerdo 95,220% | glm-5.3 | Hugging Face |
+| **Mixed346 H32 A8 g128 (este checkpoint)** | GPTQ mixto 3/4/6 bits, activaciones INT8, grupo 128 | 4,0500 bits/peso; 381,19 GiB | KL 0,040918; acuerdo 95,788% | glm-5.3 (`other`) | Hugging Face |
 | Control uniforme 4 bits H32 A8 | GPTQ uniforme 4 bits, grupo 128 | No disponible | KL 0,032806; acuerdo 95,226% | No disponible | Uso interno de la comparacion, no publicado como checkpoint |
 
 No se dispone de comparativas con modelos de otros desarrolladores (por ejemplo alternativas MoE de escala similar) en la informacion proporcionada.
@@ -119,7 +119,7 @@ No se dispone de comparativas con modelos de otros desarrolladores (por ejemplo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HawkBearPig/GLM-5.3-Mixed346-GPTQ-H32-A8-g128
+- Modelo en Hugging Face: https://huggingface.co/HawkBearPig/GLM-5.3-Mixed346-GPTQ-H32-A8-g128
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-BF16
 - Checkpoint de comparacion INT4/INT8 RTN g64: https://huggingface.co/HawkBearPig/GLM-5.3-Int4-Int8Mix-RTN-g64
 - Perfil del autor: https://huggingface.co/HawkBearPig

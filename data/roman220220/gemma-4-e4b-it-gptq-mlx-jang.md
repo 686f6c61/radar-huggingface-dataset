@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de modelos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/roman220220/gemma-4-E4B-it-gptq-mlx-jang
+- Repositorio en Hugging Face: https://huggingface.co/roman220220/gemma-4-E4B-it-gptq-mlx-jang
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Bifurcación de mlx-lm utilizada: https://github.com/ipsupport-llc/mlx-lm
 - Corrección de la caché KV cuantizada con capas compartidas (PR #1): https://github.com/ipsupport-llc/mlx-lm/pull/1

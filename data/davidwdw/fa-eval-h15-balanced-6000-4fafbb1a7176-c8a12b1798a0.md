@@ -87,6 +87,6 @@ No disponible. En la informacion proporcionada no se identifican otros paquetes 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-eval-h15-balanced-6000-4fafbb1a7176-c8a12b1798a0
+- Hugging Face: https://huggingface.co/davidwdw/fa-eval-h15-balanced-6000-4fafbb1a7176-c8a12b1798a0
 
 No se han encontrado enlaces relevantes adicionales. Los resultados de busqueda web disponibles apuntan a un portal de eventos (`discover.events.com`) y a listados de conciertos y ferias, sin relacion alguna con el artefacto. No se localizaron papers, blogs, repositorios ni demos asociados al paquete.

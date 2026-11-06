@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZIT_Checkpoints es un repositorio alojado en HuggingFace por el usuario EllaPriest45 que, segun los metadatos publicos, contiene pesos en formato GGUF. El repositorio no incluye model card, no declara licencia, no especifica idiomas soportados y no tiene pipeline de inferencia asignado, por lo que la naturaleza exacta del modelo (arquitectura, parametros, tarea objetivo) no puede determinarse a partir de la informacion disponible.
+ZIT_Checkpoints es un repositorio alojado en Hugging Face por el usuario EllaPriest45 que, segun los metadatos publicos, contiene pesos en formato GGUF. El repositorio no incluye model card, no declara licencia, no especifica idiomas soportados y no tiene pipeline de inferencia asignado, por lo que la naturaleza exacta del modelo (arquitectura, parametros, tarea objetivo) no puede determinarse a partir de la informacion disponible.
 
 El unico dato estructural relevante es el tamano del repositorio, 450,3 GB, coherente con un conjunto de checkpoints cuantizados de uno o varios modelos de gran tamano. El repositorio acumula 75 descargas y 1 like, cifras muy bajas que indican una adopcion practicamente nula dentro de la comunidad.
 
@@ -85,5 +85,5 @@ No disponible. Sin conocer el numero de parametros, la tarea objetivo ni el domi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EllaPriest45/ZIT_Checkpoints
+- Hugging Face: https://huggingface.co/EllaPriest45/ZIT_Checkpoints
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

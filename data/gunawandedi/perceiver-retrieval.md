@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Perceiver-retrieval es un repositorio experimental publicado por el usuario gunawandedi en HuggingFace, cuyo objetivo es servir como base de codigo para experimentar con una arquitectura Perceiver aplicada a tareas de recuperacion (retrieval). El autor lo describe explicitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y no como un modelo entrenado ni evaluado. El checkpoint incluido (model.safetensors) contiene unicamente una inicializacion valida para pruebas de humo (smoke tests), no un modelo con pesos entrenados.
+Perceiver-retrieval es un repositorio experimental publicado por el usuario gunawandedi en Hugging Face, cuyo objetivo es servir como base de codigo para experimentar con una arquitectura Perceiver aplicada a tareas de recuperacion (retrieval). El autor lo describe explicitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y no como un modelo entrenado ni evaluado. El checkpoint incluido (model.safetensors) contiene unicamente una inicializacion valida para pruebas de humo (smoke tests), no un modelo con pesos entrenados.
 
-El modelo es de escala muy pequena: el recuento real de parametros en safetensors es de 33.088 (aproximadamente 33 mil parametros), lo que lo situa en un orden de magnitud de juguete, adecuado para validar que el pipeline compila y ejecuta, pero no para producir resultados utiles de retrieval. No se declara ningun resultado de benchmark, ni idiomas soportados, ni pipeline de HuggingFace.
+El modelo es de escala muy pequena: el recuento real de parametros en safetensors es de 33.088 (aproximadamente 33 mil parametros), lo que lo situa en un orden de magnitud de juguete, adecuado para validar que el pipeline compila y ejecuta, pero no para producir resultados utiles de retrieval. No se declara ningun resultado de benchmark, ni idiomas soportados, ni pipeline de Hugging Face.
 
 Su relevancia es, por tanto, limitada al ambito de prototipado e investigacion de arquitecturas: la combinacion de atencion de ventana deslizante, fusion de bajo rango y una receta de entrenamiento por defecto con SGD y scheduler de tipo step lo convierten en un banco de pruebas reproducible mas que en una herramienta desplegable en produccion.
 
@@ -83,5 +83,5 @@ No disponible. El repositorio es un codebase experimental con una inicializacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gunawandedi/perceiver-retrieval
+- Hugging Face: https://huggingface.co/gunawandedi/perceiver-retrieval
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

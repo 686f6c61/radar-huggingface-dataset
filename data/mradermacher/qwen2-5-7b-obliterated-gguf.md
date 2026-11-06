@@ -89,7 +89,7 @@ No se dispone de datos de otras alternativas abliteradas directamente comparable
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen2.5-7B-OBLITERATED-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen2.5-7B-OBLITERATED-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/BabarAzaa/Qwen2.5-7B-OBLITERATED
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Qwen2.5-7B-OBLITERATED-GGUF
 - Peticiones de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

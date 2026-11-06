@@ -73,9 +73,9 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MemVLN | 4B (base) + adaptadores | no disponible | VLN-CE con memoria episódica | component-specific-terms | HuggingFace + GitHub |
-| Qwen3-VL-4B-Instruct | 4B | no disponible en esta ficha | VLM generalista | según Qwen | HuggingFace |
-| StreamVGGT | no disponible | no disponible | Geometría 3D en streaming | según autor | HuggingFace |
+| MemVLN | 4B (base) + adaptadores | no disponible | VLN-CE con memoria episódica | component-specific-terms | Hugging Face + GitHub |
+| Qwen3-VL-4B-Instruct | 4B | no disponible en esta ficha | VLM generalista | según Qwen | Hugging Face |
+| StreamVGGT | no disponible | no disponible | Geometría 3D en streaming | según autor | Hugging Face |
 
 No se dispone de datos de benchmarks de alternativas VLN comparables en la información proporcionada, por lo que la comparación cuantitativa de rendimiento queda como no disponible.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks de alternativas VLN comparables en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yannnnnnnn/MemVLN
+- Hugging Face: https://huggingface.co/Yannnnnnnn/MemVLN
 - Dataset: https://huggingface.co/datasets/Yannnnnnnn/MemVLN-data
 - Código fuente: https://github.com/MemVLN/MemVLN
 - Release v0.1.0: https://github.com/MemVLN/MemVLN/releases/tag/v0.1.0

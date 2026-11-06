@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio MohanS000/sahari-cricket-lora es un artefacto publicado en HuggingFace por el usuario MohanS000 bajo licencia OpenRAIL. En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card se limita a la declaración de licencia, sin ningún texto explicativo, sin pipeline declarado y sin idiomas especificados.
+El repositorio MohanS000/sahari-cricket-lora es un artefacto publicado en Hugging Face por el usuario MohanS000 bajo licencia OpenRAIL. En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card se limita a la declaración de licencia, sin ningún texto explicativo, sin pipeline declarado y sin idiomas especificados.
 
 No se dispone de información sobre el modelo base, el número de parámetros, la longitud de contexto, el formato de pesos ni el conjunto de datos de entrenamiento. El sufijo "lora" del identificador sugiere que podría tratarse de un adaptador de bajo rango (Low-Rank Adaptation) y no de un modelo completo, pero la documentación publicada no lo confirma, por lo que esta interpretación debe tratarse como una hipótesis y no como un dato verificado.
 
@@ -81,6 +81,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MohanS000/sahari-cricket-lora
+- Hugging Face: https://huggingface.co/MohanS000/sahari-cricket-lora
 - Resultados de busqueda web: los unicos resultados devueltos corresponden a hilos del foro de Terraria (forums.terraria.org) sobre objetos del juego y no guardan ninguna relacion con el modelo. No aportan informacion util y se descartan como fuentes.
 - Paper, blog, repositorio de codigo o demo: no disponible.

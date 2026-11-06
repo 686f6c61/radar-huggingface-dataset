@@ -87,10 +87,10 @@ Como referencias de perdida de entrenamiento (no comparables directamente, porqu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| RQwen3-751M-Base | 751,6M | 2.048 | Apache 2.0 | HuggingFace, safetensors fp32, sin cuantizaciones publicadas | Entrenado desde cero con ~13B tokens; sin alineacion; perdida final 2,5186 |
-| Qwen3-0.6B | ~0,6B | 32.768 | Apache 2.0 | HuggingFace, safetensors y GGUF | Entrenado con ~5T tokens; reporta perdida ~2,4; contexto 16 veces mayor |
-| Pythia-410M | 410M | 2.048 | Apache 2.0 | HuggingFace, safetensors | Suite de modelos base con checkpoints intermedios; perdida de entrenamiento citada ~2,85 |
-| GPT-2 large | 774M | 1.024 | MIT modificada | HuggingFace, safetensors | Referencia historica de escala similar; perdida de entrenamiento citada ~2,85 |
+| RQwen3-751M-Base | 751,6M | 2.048 | Apache 2.0 | Hugging Face, safetensors fp32, sin cuantizaciones publicadas | Entrenado desde cero con ~13B tokens; sin alineacion; perdida final 2,5186 |
+| Qwen3-0.6B | ~0,6B | 32.768 | Apache 2.0 | Hugging Face, safetensors y GGUF | Entrenado con ~5T tokens; reporta perdida ~2,4; contexto 16 veces mayor |
+| Pythia-410M | 410M | 2.048 | Apache 2.0 | Hugging Face, safetensors | Suite de modelos base con checkpoints intermedios; perdida de entrenamiento citada ~2,85 |
+| GPT-2 large | 774M | 1.024 | MIT modificada | Hugging Face, safetensors | Referencia historica de escala similar; perdida de entrenamiento citada ~2,85 |
 
 Los datos de perdida de los modelos comparados proceden de la propia model card de RQwen3 y no son comparables entre si, ya que cada uno se evalua sobre su distribucion de entrenamiento. No se dispone de resultados de benchmarks comunes (MMLU, HellaSwag, ARC) para estas alternativas en la informacion proporcionada.
 
@@ -109,7 +109,7 @@ Los datos de perdida de los modelos comparados proceden de la propia model card 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Treese/RQwen3-751M-Base
+- Modelo en Hugging Face: https://huggingface.co/Treese/RQwen3-751M-Base
 - Repositorio del proyecto (arquitectura, pipeline de datos y diario de entrenamiento): https://github.com/R-Theory/RQwen3
 - Documentacion del pipeline de datos: https://github.com/R-Theory/RQwen3/blob/main/docs/data-pipeline.md
 - Harness de evaluacion utilizado (EleutherAI): https://github.com/EleutherAI/lm-evaluation-harness

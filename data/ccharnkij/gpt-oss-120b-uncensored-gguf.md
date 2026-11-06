@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Estimacion orientativa para un modelo de ~117.000 millones de parametros totales con ~5.000 millones activos: Q4 entre 60 y 75 GB, Q8 en torno a 120 GB y F16 cerca de 230 GB. Son estimaciones basadas en el tamano del modelo, no cifras confirmadas por el autor.
 - No cabe en una GPU de consumo unica a cuantizaciones altas. En Q4 podria aproximarse a configuraciones con 24 GB de VRAM mas memoria del sistema, pero no se garantiza un rendimiento fluido.
 - GPU recomendadas para despliegue comodo: multiples A100 80 GB, H100 80 GB o configuraciones equivalentes con 2 a 4 aceleradores.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF. El tag endpoints_compatible indica compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF. El tag endpoints_compatible indica compatibilidad con endpoints de Hugging Face.
 - No hay datos de latencia ni throughput publicados. Por su naturaleza MoE y su reducido numero de parametros activos, el throughput por token es mas favorable de lo que sugiere el tamano total, pero no se dispone de cifras medidas.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparados entre estos modelos dentro de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ccharnkij/gpt-oss-120b-Uncensored-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ccharnkij/gpt-oss-120b-Uncensored-GGUF
 - Version safetensors de precision completa: https://huggingface.co/ccharnkij/gpt-oss-120b-Uncensored
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

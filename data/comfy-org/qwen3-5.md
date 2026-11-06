@@ -79,5 +79,5 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Comfy-Org/Qwen3.5
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/Qwen3.5
 - Sitio oficial de ComfyUI: https://www.comfy.org/ (no confirmado en la informacion proporcionada, pero es el proyecto asociado al autor)

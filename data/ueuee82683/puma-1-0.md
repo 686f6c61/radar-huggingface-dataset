@@ -106,7 +106,7 @@ La comparación relevante es de escala y de despliegue: Puma 1.0 se sitúa entre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ueuee82683/Puma-1.0
+- Hugging Face: https://huggingface.co/Ueuee82683/Puma-1.0
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo (paper, blog, repositorio o demo). Las consultas devolvieron únicamente contenido no relacionado (foros de videojuegos), por lo que no se listan.
 - Dataset de pretraining citado: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset de código citado: https://huggingface.co/datasets/codeparrot/codeparrot-clean

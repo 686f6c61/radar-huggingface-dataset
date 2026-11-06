@@ -97,7 +97,7 @@ No se dispone de datos de comparacion con modelos de otros desarrolladores (por 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/ethanwtodd/Qwen3.6-35B-A3B-Q4_K-Q8_0-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/ethanwtodd/Qwen3.6-35B-A3B-Q4_K-Q8_0-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Importance matrix y cuantizaciones de referencia: https://huggingface.co/bartowski/Qwen_Qwen3.6-35B-A3B-GGUF
 - Draft para decodificacion especulativa: https://huggingface.co/incoai/Qwen3.6-35B-A3B-DFlash2

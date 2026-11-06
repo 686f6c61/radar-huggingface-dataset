@@ -4,7 +4,7 @@
 
 Ornith-1.5-35B-A3B-uncensored-MLX-8bit es una versión "abliterated" del modelo multimodal Ornith-1.5-35B-A3B, publicada por el usuario junafinity. El proceso de abliteration, realizado con la herramienta ZeroFuse, elimina la dirección de rechazo (refusal) del modelo original, de modo que deja de negarse a responder a ciertas peticiones, manteniendo una divergencia KL mínima respecto al modelo base (0.000183). Esta variante concreta está convertida a formato MLX con cuantización de 8 bits, pensada para ejecutarse en Apple Silicon mediante la librería mlx-vlm.
 
-El modelo base, desarrollado por Ornith AI (también referido como DeepReinforce en algunos foros), pertenece a la familia Ornith-1.5, que incorpora mecanismos de auto-scaffolding y auto-mejora. Según los metadatos de HuggingFace, la arquitectura es un MoE basado en Qwen3.5 (tag `qwen3_5_moe`), con pipeline `image-text-to-text`, lo que indica capacidades multimodales de visión y lenguaje. El checkpoint MLX reporta 10.195.701.616 parámetros, una cifra que no coincide con el nombre "35B-A3B" (que sugeriría 35 mil millones totales y 3 mil millones activos); esta discrepancia no está explicada en la documentación disponible.
+El modelo base, desarrollado por Ornith AI (también referido como DeepReinforce en algunos foros), pertenece a la familia Ornith-1.5, que incorpora mecanismos de auto-scaffolding y auto-mejora. Según los metadatos de Hugging Face, la arquitectura es un MoE basado en Qwen3.5 (tag `qwen3_5_moe`), con pipeline `image-text-to-text`, lo que indica capacidades multimodales de visión y lenguaje. El checkpoint MLX reporta 10.195.701.616 parámetros, una cifra que no coincide con el nombre "35B-A3B" (que sugeriría 35 mil millones totales y 3 mil millones activos); esta discrepancia no está explicada en la documentación disponible.
 
 La relevancia de este modelo radica en ofrecer una versión sin censura de un MoE multimodal, con la torre de visión preservada bit a bit, y en un formato optimizado para hardware Apple. Sin embargo, la ausencia de benchmarks publicados y la falta de claridad sobre el número real de parámetros limitan su evaluación objetiva.
 
@@ -82,7 +82,7 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros MoE m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junafinity/Ornith-1.5-35B-A3B-uncensored-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/junafinity/Ornith-1.5-35B-A3B-uncensored-MLX-8bit
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Repositorio ZeroFuse: https://github.com/junainfinity/ZeroFuse
 - Página oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html

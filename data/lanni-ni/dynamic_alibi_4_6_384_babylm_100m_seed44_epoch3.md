@@ -29,7 +29,7 @@ El sufijo `babylm_100m` apunta a una posible conexión con el proyecto BabyLM, p
 
 ## Capacidades
 
-- Generación de texto: el pipeline de HuggingFace es `text-generation`, lo que indica que el modelo está diseñado para producir texto.
+- Generación de texto: el pipeline de Hugging Face es `text-generation`, lo que indica que el modelo está diseñado para producir texto.
 - Razonamiento, codigo, matematicas, vision: no se han publicado capacidades especificas en la informacion disponible.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y multi-step reasoning: no disponible.
@@ -60,8 +60,8 @@ No se dispone de modelos comparables con datos suficientes. Existe un checkpoint
 
 | Modelo | Parametros | Longitud de contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch3 | 45.694.080 | no disponible | no disponible | HuggingFace |
-| Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6 | no disponible | no disponible | no disponible | HuggingFace |
+| Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch3 | 45.694.080 | no disponible | no disponible | Hugging Face |
+| Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6 | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -73,7 +73,7 @@ No se dispone de modelos comparables con datos suficientes. Existe un checkpoint
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch3
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch3
 - Checkpoint relacionado: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6
-- Modelos HuggingFace con tag `dynamic_alibi`: https://huggingface.co/models?other=dynamic_alibi
+- Modelos Hugging Face con tag `dynamic_alibi`: https://huggingface.co/models?other=dynamic_alibi
 - Paper de ALiBi (arXiv:1910.09700, mencionado en los tags): https://arxiv.org/abs/1910.09700

@@ -70,7 +70,7 @@ La comparativa se limita a diferencias de cuantizacion y tamano, ya que no se di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liodon-ai/Qwen2.5-0.5B-Instruct-FP8
+- Modelo en Hugging Face: https://huggingface.co/liodon-ai/Qwen2.5-0.5B-Instruct-FP8
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Sitio web de Liodon AI: https://liodon.ai/
 - Modelo base en ModelScope: https://www.modelscope.cn/models/qwen/Qwen2.5-0.5B-Instruct

@@ -30,7 +30,7 @@ No se proporcionan datos específicos sobre el número de tokens de entrenamient
 - Comprensión de vídeo en streaming: procesa marcos individuales con marcas de tiempo no decrecientes y genera descripciones o respuestas incrementales en tiempo real.
 - Interrupción y respuesta dinámica: el modelo decide cuándo emitir una respuesta, cuándo permanecer en silencio (token `<|silence|>`) y cuándo iniciar o finalizar un turno (tokens `<|round_start|>` y `<|round_end|>`).
 - Soporte multilingüe: entrenado y validado en inglés y chino, con capacidad de generar descripciones en ambos idiomas.
-- Integración con Transformers: compatible con la API estándar de HuggingFace, incluyendo `AutoModelForCausalLM` y `AutoProcessor`, con backend de atención FlashAttention 2.
+- Integración con Transformers: compatible con la API estándar de Hugging Face, incluyendo `AutoModelForCausalLM` y `AutoProcessor`, con backend de atención FlashAttention 2.
 - Sesión de tiempo real: una instancia del modelo soporta una única sesión activa de streaming, con cola de marcos configurable para limitar la latencia.
 - No se mencionan capacidades de tool calling, razonamiento multi-paso ni visión estática independiente; el foco es exclusivamente vídeo en streaming.
 
@@ -79,7 +79,7 @@ No se dispone de comparaciones directas con otros modelos de streaming de vídeo
 
 ## Enlaces
 
-- Modelo FP8 en HuggingFace: https://huggingface.co/OpenMOSS-Team/MOSS-VL-Realtime-FP8
+- Modelo FP8 en Hugging Face: https://huggingface.co/OpenMOSS-Team/MOSS-VL-Realtime-FP8
 - Modelo base BF16: https://huggingface.co/OpenMOSS-Team/MOSS-VL-Realtime
 - Página del proyecto OpenMOSS: https://openmoss.ai/MOSS-VL/
 - Documentación adicional del modelo: https://openmoss.ai/MOSS-VL/moss-vl.html

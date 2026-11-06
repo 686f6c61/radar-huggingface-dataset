@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es una actualizacion menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI y redistribuido en HuggingFace por el usuario kejizilu. Se trata de un modelo multimodal de gran escala (image-text-to-text) con 763.205.315.794 parametros totales, orientado a tareas de razonamiento, generacion de codigo, uso de agentes y comprension visual. Su publicacion busca mejorar la relacion rendimiento-coste frente a la version anterior, reduciendo el tiempo de ejecucion de tareas y la longitud de salida.
+DeepSeek-V4.1-Flash-1017 es una actualizacion menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI y redistribuido en Hugging Face por el usuario kejizilu. Se trata de un modelo multimodal de gran escala (image-text-to-text) con 763.205.315.794 parametros totales, orientado a tareas de razonamiento, generacion de codigo, uso de agentes y comprension visual. Su publicacion busca mejorar la relacion rendimiento-coste frente a la version anterior, reduciendo el tiempo de ejecucion de tareas y la longitud de salida.
 
 La arquitectura interna no se detalla en la model card; el identificador de arquitectura es `deepseek_v41` y se distribuye en formato safetensors con cuantizacion de 8 bits (fp8). El modelo declara una ventana de contexto de 1M tokens y un maximo de generacion recomendado de al menos 256K tokens, lo que lo situa en la gama de modelos de contexto muy largo.
 
@@ -79,7 +79,7 @@ El modelo es multimodal (procesa texto e imagenes) y soporta modo de razonamient
 
 | Modelo | Parametros | Contexto | HLE w/o tools | Terminal-Bench 4.0 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 | 763,2 B | 1M | 42,6 | 42,3 | MIT | HuggingFace |
+| DeepSeek-V4.1-Flash-1017 | 763,2 B | 1M | 42,6 | 42,3 | MIT | Hugging Face |
 | K3 | no disponible | no disponible | 43,5 | 12,6 | no disponible | no disponible |
 | GLM-5.3 | no disponible | no disponible | 42,0† | 37,9 | no disponible | no disponible |
 | GPT-5.6 Sol | no disponible | no disponible | 44,5 | 39,9 | propietaria | API |
@@ -98,12 +98,12 @@ El modelo es multimodal (procesa texto e imagenes) y soporta modo de razonamient
 
 ## Enlaces
 
-- HuggingFace (redistribucion): https://huggingface.co/kejizilu/DeepSeek-V4.1-Flash-1017
+- Hugging Face (redistribucion): https://huggingface.co/kejizilu/DeepSeek-V4.1-Flash-1017
 - Modelo original: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe tecnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Repositorio deepseek-recipe: https://github.com/deepseek-ai/deepseek-recipe
 - Web oficial: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/
-- HuggingFace DeepSeek-AI: https://huggingface.co/deepseek-ai
+- Hugging Face DeepSeek-AI: https://huggingface.co/deepseek-ai
 - Twitter/X: https://twitter.com/deepseek_ai
 - Contacto: service@deepseek.com

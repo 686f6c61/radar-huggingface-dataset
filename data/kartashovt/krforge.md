@@ -6,7 +6,7 @@ KRForge no es un modelo de IA, sino una distribucion portable (build) de Stable 
 
 El problema que resuelve es de despliegue, no de modelado: empaqueta en un unico instalador de Windows el entorno de inferencia, las extensiones y una seleccion curada de checkpoints (Dark Beast BlitZ ZiT, Z-Image Turbo, ControlNet 1.1 SD1.5, IP-Adapter, LoRAs de detalle y upscalers 4x) para generar y retocar imagenes de fachadas, volumetrias y entorno urbano. Es relevante para estudios pequenos que quieren un entorno reproducible sin montar dependencias a mano, pero conviene evaluarlo como software: no hay arquitectura, parametros ni contexto que analizar, y su licencia AGPL-3.0 junto con las licencias individuales de cada checkpoint condicionan el uso comercial.
 
-El repositorio se creo y actualizo el 24 de octubre de 2026, con 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion de la comunidad registrada en HuggingFace.
+El repositorio se creo y actualizo el 24 de octubre de 2026, con 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion de la comunidad registrada en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ El repositorio se creo y actualizo el 24 de octubre de 2026, con 0 descargas y 0
 | Licencia | AGPL-3.0 para el build (Forge Neo); cada modelo descargado conserva su propia licencia |
 | Formato de pesos | no incluidos en el repositorio; se descargan de los autores (por ejemplo `comfyanonymous/ControlNet-v1-1_fp16_safetensors`) |
 | Tamano del repositorio | 6,3 GB (entorno Python, Forge Neo y utilidades; sin modelos) |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de creacion / ultima actualizacion | 2026-10-24 / 2026-10-24 |
 | Descargas / likes | 0 / 0 |
 
@@ -93,7 +93,7 @@ La comparacion en parametros, contexto y benchmarks no aplica: ninguna de las al
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kartashovt/KRForge
+- Repositorio en Hugging Face: https://huggingface.co/kartashovt/KRForge
 - Forge Neo (base del build, AGPL-3.0): https://github.com/Haoming02/sd-webui-forge-classic
 - Dark Beast BlitZ ZiT: https://huggingface.co/GuangyuanSD/REDCraft-DarkBeast-Z-Image-TURBO
 - Z-Image Turbo (incluye text encoder Qwen3 4B y VAE): https://huggingface.co/Comfy-Org/z_image_turbo

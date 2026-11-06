@@ -72,7 +72,7 @@ El autor advierte que las filas de full-dataset corresponden a un subconjunto de
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AMD-PAVS-AI/whisper (esta ficha) | no disponible | no disponible | WER 0,035 / CER 0,015 en subconjunto de 25 muestras de LibriSpeech test-clean | MIT | ONNX en HuggingFace, validado para AMD ROCm, CPU y NPU |
+| AMD-PAVS-AI/whisper (esta ficha) | no disponible | no disponible | WER 0,035 / CER 0,015 en subconjunto de 25 muestras de LibriSpeech test-clean | MIT | ONNX en Hugging Face, validado para AMD ROCm, CPU y NPU |
 | openai/whisper-large-v3 | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | MIT (modelo base de OpenAI) | Pesos originales en formato PyTorch; referencia upstream de esta exportación |
 | Otras exportaciones ONNX de Whisper | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ No se dispone de datos suficientes para comparar parámetros, contexto ni rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AMD-PAVS-AI/whisper
+- Modelo en Hugging Face: https://huggingface.co/AMD-PAVS-AI/whisper
 - Scripts de Whisper para AMD (repositorio GitHub): https://github.com/AMD-PAVS/physical_ai_sdk/blob/main/models/whisper
 - Implementación upstream de Whisper (OpenAI): https://github.com/openai/whisper
 - Dataset de evaluación LibriSpeech test-clean (AudioLLMs): https://huggingface.co/datasets/AudioLLMs/librispeech_test_clean

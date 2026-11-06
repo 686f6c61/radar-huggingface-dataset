@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alikwiq/films` es un repositorio alojado en HuggingFace por el usuario `alikwiq` que, a tenor de su model card, no contiene un modelo de lenguaje sino el esqueleto de una aplicación Gradio de reproducción de vídeo. La model card incluye únicamente metadatos de una Space (`sdk: gradio`, `sdk_version: 5.49.1`, `app_file: app.py`) y un fragmento de HTML con una etiqueta `<video>` que apunta a una URL genérica de ejemplo (`https://domain.com/v.mb3`). No se declara arquitectura, parámetros, tokenizador ni pesos.
+`alikwiq/films` es un repositorio alojado en Hugging Face por el usuario `alikwiq` que, a tenor de su model card, no contiene un modelo de lenguaje sino el esqueleto de una aplicación Gradio de reproducción de vídeo. La model card incluye únicamente metadatos de una Space (`sdk: gradio`, `sdk_version: 5.49.1`, `app_file: app.py`) y un fragmento de HTML con una etiqueta `<video>` que apunta a una URL genérica de ejemplo (`https://domain.com/v.mb3`). No se declara arquitectura, parámetros, tokenizador ni pesos.
 
 El repositorio no presenta pipeline asociado, no declara licencia, no especifica idiomas y acumula cero descargas y cero likes desde su creación el 1 de noviembre de 2026. La única etiqueta presente es `region:us`, que indica la región de almacenamiento y no aporta información técnica sobre el contenido.
 
@@ -77,5 +77,5 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alikwiq/films
+- Repositorio en Hugging Face: https://huggingface.co/alikwiq/films
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código, demos ni documentación adicional asociados a este identificador.

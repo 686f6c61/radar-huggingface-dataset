@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fpadovani/nld-100mb-after-nld_zipf_fix_zijn-ckpt500_seed10_seed10` es un modelo de generacion de texto de pequeno tamano (124.770.816 parametros) publicado por el usuario fpadovani. Se trata de un ajuste fino (SFT) realizado con la libreria TRL sobre el modelo base `fpadovani/ppt-nld_zipf_fix_zijn-100mb_seed10`, y la etiqueta de arquitectura declarada en HuggingFace es `gpt2`, por lo que se enmarca en la familia de transformers decoder-only de tipo GPT-2.
+`fpadovani/nld-100mb-after-nld_zipf_fix_zijn-ckpt500_seed10_seed10` es un modelo de generacion de texto de pequeno tamano (124.770.816 parametros) publicado por el usuario fpadovani. Se trata de un ajuste fino (SFT) realizado con la libreria TRL sobre el modelo base `fpadovani/ppt-nld_zipf_fix_zijn-100mb_seed10`, y la etiqueta de arquitectura declarada en Hugging Face es `gpt2`, por lo que se enmarca en la familia de transformers decoder-only de tipo GPT-2.
 
 El modelo no presenta un `README` con descripcion funcional: la model card se limita a indicar el modelo base, el procedimiento de entrenamiento (SFT con TRL 0.23.0), las versiones de framework y un ejemplo de uso con `pipeline`. El identificador sugiere un experimento de investigacion a pequena escala (nombres como `ppt`, `100mb`, `zipf_fix`, `ckpt500` y `seed10`), y el enlace de Weights & Biases apunta a la organizacion `f-padovani-university-of-groningen`, lo que situa su origen en un entorno academico.
 
@@ -12,7 +12,7 @@ Su relevancia es limitada y de nicho: se trata de un artefacto de investigacion 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | gpt2 (transformer decoder-only; segun la etiqueta declarada en HuggingFace) |
+| Arquitectura | gpt2 (transformer decoder-only; segun la etiqueta declarada en Hugging Face) |
 | Parametros totales | 124.770.816 |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -58,7 +58,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL 0.23.0
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-No hay datos de MMLU, HumanEval, GSM8K, perplexity ni de ninguna otra evaluacion, ni en la model card ni en el repositorio de HuggingFace.
+No hay datos de MMLU, HumanEval, GSM8K, perplexity ni de ninguna otra evaluacion, ni en la model card ni en el repositorio de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -74,10 +74,10 @@ No hay datos de rendimiento del modelo analizado, por lo que la comparacion se l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/nld-100mb-after-nld_zipf_fix_zijn-ckpt500_seed10_seed10 | 124,77 M | no disponible | no disponible | HuggingFace, safetensors |
+| fpadovani/nld-100mb-after-nld_zipf_fix_zijn-ckpt500_seed10_seed10 | 124,77 M | no disponible | no disponible | Hugging Face, safetensors |
 | GPT-2 (124M) | 124 M | 1024 tokens | modificada de MIT | Ampliamente disponible |
 | distilgpt2 | 82 M | 1024 tokens | Apache-2.0 | Ampliamente disponible |
-| Modelos pequenos de la familia SmolLM2 / Qwen2.5 | 135 M - 500 M | 8192 - 32768 tokens | Apache-2.0 | HuggingFace, con benchmarks publicados |
+| Modelos pequenos de la familia SmolLM2 / Qwen2.5 | 135 M - 500 M | 8192 - 32768 tokens | Apache-2.0 | Hugging Face, con benchmarks publicados |
 
 La diferencia practica mas relevante frente a estas alternativas es la ausencia total de documentacion, evaluacion y soporte de la comunidad en el modelo de fpadovani, frente a alternativas con model cards detalladas y resultados publicados.
 
@@ -94,7 +94,7 @@ La diferencia practica mas relevante frente a estas alternativas es la ausencia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/nld-100mb-after-nld_zipf_fix_zijn-ckpt500_seed10_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/nld-100mb-after-nld_zipf_fix_zijn-ckpt500_seed10_seed10
 - Modelo base: https://huggingface.co/fpadovani/ppt-nld_zipf_fix_zijn-100mb_seed10
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/tb0vir1g
 - Repositorio de TRL: https://github.com/huggingface/trl

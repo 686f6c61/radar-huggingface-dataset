@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ErroGonalves/gino_e_geno_RVC` es un repositorio publicado en HuggingFace por el usuario ErroGonalves bajo licencia Apache 2.0. Se trata de un repositorio de muy pequeño tamano (0,1 GB) sin model card sustantiva: el README unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El pipeline declarado en HuggingFace no esta disponible y no se especifican idiomas soportados.
+`ErroGonalves/gino_e_geno_RVC` es un repositorio publicado en Hugging Face por el usuario ErroGonalves bajo licencia Apache 2.0. Se trata de un repositorio de muy pequeño tamano (0,1 GB) sin model card sustantiva: el README unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El pipeline declarado en Hugging Face no esta disponible y no se especifican idiomas soportados.
 
 El identificador incluye el sufijo "RVC", sigla que en la comunidad de codigo abierto se asocia habitualmente a Retrieval-based Voice Conversion, una tecnica de conversion de voz a voz. Esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna documentacion oficial del repositorio; debe tratarse, por tanto, como no verificada.
 
@@ -33,7 +33,7 @@ El unico dato estructural objetivo es el tamano del repositorio, 0,1 GB, lo que 
 - Generacion de texto, razonamiento, codigo, matematicas o vision: no disponible.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes o razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles (HuggingFace no declara idiomas).
+- Capacidades multilingues: no disponibles (Hugging Face no declara idiomas).
 - Capacidades de audio o voz: posible segun el sufijo "RVC" del identificador, sin confirmar por el autor.
 
 ## Casos de uso
@@ -41,7 +41,7 @@ El unico dato estructural objetivo es el tamano del repositorio, 0,1 GB, lo que 
 No es posible proponer casos de uso concretos y realistas sin conocer la arquitectura, las capacidades y las condiciones de entrenamiento del modelo. Cualquier escenario descrito seria especulativo. A continuacion se indican las comprobaciones previas necesarias antes de plantear un caso de uso:
 
 - Verificar la arquitectura real cargando el repositorio y revisando los ficheros de pesos y configuracion.
-- Confirmar la tarea (pipeline) para la que fue entrenado, dado que HuggingFace no la declara.
+- Confirmar la tarea (pipeline) para la que fue entrenado, dado que Hugging Face no la declara.
 - Revisar si existe consentimiento documentado de las voces implicadas, si el modelo resulta ser de sintesis o conversion de voz.
 - Comprobar la calidad subjetiva y objetiva con un conjunto de evaluacion propio antes de cualquier integracion.
 - Auditar el origen de los datos de entrenamiento por posibles riesgos de derechos de imagen y voz.
@@ -66,7 +66,7 @@ No disponible. No se ha identificado la categoria del modelo ni se dispone de da
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ErroGonalves/gino_e_geno_RVC | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| ErroGonalves/gino_e_geno_RVC | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,6 +82,6 @@ No disponible. No se ha identificado la categoria del modelo ni se dispone de da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ErroGonalves/gino_e_geno_RVC
+- Hugging Face: https://huggingface.co/ErroGonalves/gino_e_geno_RVC
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.
 - La busqueda web realizada no ha devuelto ningun enlace relevante asociado a este modelo.

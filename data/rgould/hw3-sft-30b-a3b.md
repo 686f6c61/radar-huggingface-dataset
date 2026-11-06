@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rgould/hw3-sft-30b-a3b` es un ajuste fino supervisado (SFT) del modelo base `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16`, publicado por el usuario rgould en HuggingFace. Se trata de un transformer de arquitectura Mixture-of-Experts (MoE) con 31.577.937.344 parámetros totales (aproximadamente 31,6 mil millones) y una nomenclatura que sugiere 30B de parámetros totales con 3B activos por token (A3B), siguiendo el esquema habitual de la familia Nemotron de NVIDIA.
+`rgould/hw3-sft-30b-a3b` es un ajuste fino supervisado (SFT) del modelo base `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16`, publicado por el usuario rgould en Hugging Face. Se trata de un transformer de arquitectura Mixture-of-Experts (MoE) con 31.577.937.344 parámetros totales (aproximadamente 31,6 mil millones) y una nomenclatura que sugiere 30B de parámetros totales con 3B activos por token (A3B), siguiendo el esquema habitual de la familia Nemotron de NVIDIA.
 
 El modelo está orientado a generación de texto conversacional, razonamiento y tool calling, según los tags declarados en el repositorio. Al derivar del Nemotron-3 Nano, hereda el diseño MoE eficiente de NVIDIA pensado para despliegue con coste de inferencia reducido en comparación con modelos densos del mismo tamaño total.
 
@@ -38,7 +38,7 @@ No se dispone de información sobre el número de tokens de entrenamiento del SF
 - Razonamiento (tag `reasoning`), presumiblemente con cadenas de pensamiento, aunque no se documenta un modo "thinking" explícito.
 - Tool calling / function calling (tag `tool-calling`).
 - Ajuste supervisado orientado a instrucciones (SFT).
-- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que permite despliegue vía Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que permite despliegue vía Inference Endpoints de Hugging Face.
 - Capacidades multilingües: no disponible.
 - Visión, audio u otras modalidades: no disponible (no se declaran).
 
@@ -49,7 +49,7 @@ No se dispone de información sobre el número de tokens de entrenamiento del SF
 - Prototipado de pipelines de razonamiento: el tag `reasoning` sugiere utilidad en tareas de razonamiento multi-paso, útil para evaluar técnicas de prompting y verificación en cadenas de pensamiento.
 - Base para ajustes posteriores (fine-tuning adicional): el checkpoint SFT puede servir como punto de partida para DPO, RLHF o ajustes específicos de dominio, dado que ya incorpora formato conversacional e instrucciones.
 - Evaluación comparativa de ajustes comunitarios: permite contrastar el efecto del SFT de rgould frente al checkpoint base de NVIDIA en tareas de tool calling y razonamiento.
-- Despliegue en endpoints gestionados: la compatibilidad declarada con endpoints de HuggingFace facilita pruebas de integración sin infraestructura propia, aunque el acceso gated y el tamaño del repo (442 GB) limitan su uso práctico.
+- Despliegue en endpoints gestionados: la compatibilidad declarada con endpoints de Hugging Face facilita pruebas de integración sin infraestructura propia, aunque el acceso gated y el tamaño del repo (442 GB) limitan su uso práctico.
 
 ## Benchmarks y rendimiento
 
@@ -78,7 +78,7 @@ La comparación cuantitativa con alternativas no puede completarse: no hay bench
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación: no se publican datos de entrenamiento, idiomas, contexto ni benchmarks, lo que impide evaluar su calidad de forma rigurosa.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción para uso en producción o investigación reproducible.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción para uso en producción o investigación reproducible.
 - Licencia NVIDIA Nemotron Open Model License: no es una licencia OSI estándar; conviene revisar sus términos antes de uso comercial, ya que puede imponer restricciones adicionales.
 - Riesgo de alucinación: inherente a los modelos de lenguaje ajustados con SFT, sin que existan evaluaciones publicadas que lo cuantifiquen.
 - Sesgos: no documentados; al no conocerse la composición del dataset de SFT, no es posible evaluar sesgos de género, idioma o dominio.
@@ -89,7 +89,7 @@ La comparación cuantitativa con alternativas no puede completarse: no hay bench
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rgould/hw3-sft-30b-a3b
+- Hugging Face: https://huggingface.co/rgould/hw3-sft-30b-a3b
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16
 - Licencia NVIDIA Nemotron Open Model License: https://huggingface.co/rgould/hw3-sft-30b-a3b (referenciada en la ficha del repo; no se proporciona URL directa en la información disponible)
 - Paper, blog o repositorio adicional: no disponible en la información proporcionada.

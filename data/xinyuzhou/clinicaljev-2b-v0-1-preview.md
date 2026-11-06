@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ClinicalJev-2B-v0.1-preview es un modelo médico compacto de 1.881.825.088 parámetros (≈1,88 B) publicado por el usuario xinyuzhou en HuggingFace, dentro del proyecto ClinicalJev, que también incluye un repositorio de código de inferencia y un benchmark clínico propio. No es un modelo generativo de chat al uso: dado un texto clínico («state»), una pregunta y un conjunto predefinido de candidatos o una rúbrica ordenada, devuelve una elección y una distribución de probabilidad sobre las opciones. La inferencia se realiza leyendo los logits del siguiente token en una posición concreta y normalizando únicamente las etiquetas permitidas, sin generar texto libre.
+ClinicalJev-2B-v0.1-preview es un modelo médico compacto de 1.881.825.088 parámetros (≈1,88 B) publicado por el usuario xinyuzhou en Hugging Face, dentro del proyecto ClinicalJev, que también incluye un repositorio de código de inferencia y un benchmark clínico propio. No es un modelo generativo de chat al uso: dado un texto clínico («state»), una pregunta y un conjunto predefinido de candidatos o una rúbrica ordenada, devuelve una elección y una distribución de probabilidad sobre las opciones. La inferencia se realiza leyendo los logits del siguiente token en una posición concreta y normalizando únicamente las etiquetas permitidas, sin generar texto libre.
 
 El modelo se apoya en un backbone Qwen de arquitectura transformer decoder-only (el campo de arquitectura declarado en transformers es «qwen3_5_text») y está entrenado únicamente en inglés y chino simplificado, aunque el backbone sea multilingüe. Soporta tres primitivas de tarea: «choice» (candidatos con nombre y descripción, devuelve el candidato seleccionado y su distribución), «score» (rúbrica ordenada de menor a mayor, devuelve probabilidades por nivel y el índice esperado entre 0 y K−1) y «noul» (proposición de sí/no con criterios opcionales, devuelve una estimación de veracidad, mapeada en el ejemplo local a nueve bins entre 0,01 y 0,99).
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 - GPU recomendadas: cualquier GPU con 8 GB o mas puede alojar el modelo en fp16; una RTX 4090, L40S, A100 o H100 lo ejecutan con margen amplio, incluso con lotes grandes.
 - Compatibilidad con GPU de consumo: si, cabe en tarjetas de consumo. En fp16 entra en RTX 3060 12 GB, RTX 4070 y superiores; en cuantizacion de 8 o 4 bits podria entrar en GPUs de 6-8 GB.
 - Opciones de despliegue: transformers con torch y accelerate es la via documentada. vLLM o TGI requeririan que la arquitectura qwen3_5_text este soportada por la version correspondiente, lo que no se confirma en la informacion disponible. llama.cpp u Ollama requeririan una conversion a GGUF que el autor no publica.
-- Nota de integracion: la model card marca inference: false, por lo que no se debe esperar que funcione en la Inference API de HuggingFace; el uso previsto es la carga local del checkpoint.
+- Nota de integracion: la model card marca inference: false, por lo que no se debe esperar que funcione en la Inference API de Hugging Face; el uso previsto es la carga local del checkpoint.
 - Latencia y throughput: no disponibles. Al no generar texto y leerse un unico paso de logits, la latencia esperada es la de un prefill completo del contexto mas un token, pero no se publican mediciones.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ Diferencias clave: ClinicalJev no compite en generacion de texto, sino en clasif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xinyuzhou/ClinicalJev-2B-v0.1-preview
+- Modelo en Hugging Face: https://huggingface.co/xinyuzhou/ClinicalJev-2B-v0.1-preview
 - Repositorio GitHub del proyecto ClinicalJev (pesos, codigo de inferencia y documentacion): https://github.com/xzhou-code/ClinicalJev
 - Pagina personal del autor (Xinyu Zhou, University of Wisconsin-Madison): https://www.xinyuzhou.me/
 - Documentacion de la primitiva Choice: https://docs.typesafe.ai/primitives/choice

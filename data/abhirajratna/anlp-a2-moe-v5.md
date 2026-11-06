@@ -103,7 +103,7 @@ Frente a sistemas de traduccion de produccion como NLLB-200 o MADLAD-400, la com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhirajratna/anlp-a2-moe-v5
+- Modelo en Hugging Face: https://huggingface.co/abhirajratna/anlp-a2-moe-v5
 - Discusiones del modelo: https://huggingface.co/abhirajratna/anlp-a2-moe-v5/discussions
 - Variante del mismo trabajo (RaunakSeksaria): https://huggingface.co/RaunakSeksaria/anlp-a2-moe
 - Variante del mismo trabajo (Arihant25): https://huggingface.co/Arihant25/anlp-a2-moe

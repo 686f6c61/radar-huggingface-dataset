@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flux-NSFW-uncensored es un ajuste fino (LoRA) del modelo de difusion text-to-image FLUX.1-dev de Black Forest Labs, publicado por el usuario Asukaa02 en HuggingFace. Su proposito declarado es minimizar las restricciones de censura del modelo base para explorar los limites tecnicos de la generacion de imagenes con IA. Se distribuye como adaptador LoRA sobre FLUX.1-dev, no como modelo completo, y el repositorio ocupa aproximadamente 0,7 GB.
+Flux-NSFW-uncensored es un ajuste fino (LoRA) del modelo de difusion text-to-image FLUX.1-dev de Black Forest Labs, publicado por el usuario Asukaa02 en Hugging Face. Su proposito declarado es minimizar las restricciones de censura del modelo base para explorar los limites tecnicos de la generacion de imagenes con IA. Se distribuye como adaptador LoRA sobre FLUX.1-dev, no como modelo completo, y el repositorio ocupa aproximadamente 0,7 GB.
 
 El modelo hereda la arquitectura del transformer de difusion FLUX.1-dev (12 mil millones de parametros en el modelo base), pero la informacion disponible no detalla el proceso de entrenamiento del adaptador: no se especifican el dataset, el numero de pasos, la tasa de aprendizaje ni la tecnica de ajuste empleada. La model card se limita a describir el proposito del modelo y a incluir codigo de ejemplo en Python con `diffusers` y `peft`.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo | Contexto/prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Flux-NSFW-uncensored (este) | LoRA sobre FLUX.1-dev (12 000 M base) | Adaptador LoRA text-to-image | Prompt en ingles | creativeml-openrail-m | HuggingFace, 0 descargas |
-| FLUX.1-dev (base) | 12 000 M | Transformer de difusion | Prompt en ingles | FLUX.1-dev non-commercial | HuggingFace, ampliamente usado |
-| FLUX.1-schnell | 12 000 M | Transformer de difusion destilado | Prompt en ingles | Apache 2.0 | HuggingFace |
-| Stable Diffusion XL | 3500 M (UNet) + encoders | UNet de difusion | Prompt en ingles | CreativeML OpenRAIL++-M | HuggingFace, muy extendido |
+| Flux-NSFW-uncensored (este) | LoRA sobre FLUX.1-dev (12 000 M base) | Adaptador LoRA text-to-image | Prompt en ingles | creativeml-openrail-m | Hugging Face, 0 descargas |
+| FLUX.1-dev (base) | 12 000 M | Transformer de difusion | Prompt en ingles | FLUX.1-dev non-commercial | Hugging Face, ampliamente usado |
+| FLUX.1-schnell | 12 000 M | Transformer de difusion destilado | Prompt en ingles | Apache 2.0 | Hugging Face |
+| Stable Diffusion XL | 3500 M (UNet) + encoders | UNet de difusion | Prompt en ingles | CreativeML OpenRAIL++-M | Hugging Face, muy extendido |
 
 No se dispone de datos de rendimiento comparativo del adaptador frente a alternativas, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo del adaptador frente a alterna
 
 ## Enlaces
 
-- [HuggingFace: Asukaa02/Flux-NSFW-uncensored](https://huggingface.co/Asukaa02/Flux-NSFW-uncensored)
+- [Hugging Face: Asukaa02/Flux-NSFW-uncensored](https://huggingface.co/Asukaa02/Flux-NSFW-uncensored)
 - [Modelo base: black-forest-labs/FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev)
 - [Repositorio referenciado en el codigo: Heartsync/Flux-NSFW-uncensored](https://huggingface.co/Heartsync/Flux-NSFW-uncensored)
 - [Documentacion de diffusers](https://huggingface.co/docs/diffusers)

@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la misma categoría (cuantizaciones MLX de 8 bits de modelos Qwen). Se recomienda comparar con otras cuantizaciones de Qwen3.5 disponibles en HuggingFace, pero no se pueden ofrecer datos concretos sin más información.
+No se dispone de información sobre modelos comparables en la misma categoría (cuantizaciones MLX de 8 bits de modelos Qwen). Se recomienda comparar con otras cuantizaciones de Qwen3.5 disponibles en Hugging Face, pero no se pueden ofrecer datos concretos sin más información.
 
 ## Limitaciones y advertencias
 
@@ -66,5 +66,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/csolares2/Qwen3.8-27B-oQ8-mtp)
+- [Repositorio Hugging Face](https://huggingface.co/csolares2/Qwen3.8-27B-oQ8-mtp)
 - [Herramienta oQ / oMLX](https://github.com/jundot/omlx)

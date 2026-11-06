@@ -98,7 +98,7 @@ La comparacion relevante no es de rendimiento en benchmarks generativos, sino de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fse/glove-wiki-gigaword-300-raw-int8
+- Hugging Face: https://huggingface.co/fse/glove-wiki-gigaword-300-raw-int8
 - Modelo base: https://huggingface.co/fse/glove-wiki-gigaword-300
 - Repositorio de la libreria fse: https://github.com/oborchers/Fast_Sentence_Embeddings
 - GloVe (Stanford NLP): https://github.com/stanfordnlp/GloVe

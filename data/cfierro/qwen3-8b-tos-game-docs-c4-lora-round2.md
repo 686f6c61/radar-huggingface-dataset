@@ -78,8 +78,8 @@ La perdida de validacion desciende de forma monotona hasta 1,4302, mientras que 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| qwen3-8b-tos-game-docs-c4-lora-round2 | ~8B + LoRA r=32 | No disponible en la ficha (base: 32.768 tokens nativos segun su documentacion) | Apache-2.0 | HuggingFace, 0 descargas, 0 likes | Solo perdida de validacion 1,4302; sin benchmarks |
-| Qwen/Qwen3-8B (modelo base) | ~8B denso | 32.768 tokens nativos | Apache-2.0 | HuggingFace | Consultar la model card oficial; no reproducido aqui |
+| qwen3-8b-tos-game-docs-c4-lora-round2 | ~8B + LoRA r=32 | No disponible en la ficha (base: 32.768 tokens nativos segun su documentacion) | Apache-2.0 | Hugging Face, 0 descargas, 0 likes | Solo perdida de validacion 1,4302; sin benchmarks |
+| Qwen/Qwen3-8B (modelo base) | ~8B denso | 32.768 tokens nativos | Apache-2.0 | Hugging Face | Consultar la model card oficial; no reproducido aqui |
 | Adaptadores LoRA de dominio equivalentes | No disponible | No disponible | Variable | Variable | No disponible |
 
 No se dispone de informacion sobre alternativas directamente comparables en la documentacion proporcionada. La comparacion mas rigurosa posible es contra el propio modelo base, ya que el adaptador no cambia la arquitectura ni el numero de parametros en tiempo de inferencia una vez fusionado (salvo el coste adicional de los pesos LoRA, despreciable en porcentaje).
@@ -96,11 +96,11 @@ No se dispone de informacion sobre alternativas directamente comparables en la d
 - Modo *thinking* activado por defecto en Qwen3-8B. En cualquier evaluacion con plantilla de chat hay que pasar `enable_thinking=False`, tal como advierte el autor, ya que el entrenamiento no ensena al modelo a producir ni a cerrar trazas de razonamiento.
 - Licencia Apache-2.0 sobre los pesos del adaptador, lo que en principio permite uso comercial. Sin embargo, los datos de entrenamiento incluyen una replica de C4, cuyas condiciones de uso deben verificarse por separado, y documentos sinteticos cuyo origen y proceso de generacion no se detalla en la ficha.
 - El autor no documenta sesgos, composicion exacta del dataset sintetico ni procedencia de los documentos, lo que dificulta cualquier auditoria de datos.
-- Las fechas de publicacion del repositorio (creado el 16 de septiembre de 2026 y actualizado el 17 de septiembre de 2026) deben verificarse en la pagina de HuggingFace, ya que no se corresponden con el momento habitual de publicacion de modelos de esta familia.
+- Las fechas de publicacion del repositorio (creado el 16 de septiembre de 2026 y actualizado el 17 de septiembre de 2026) deben verificarse en la pagina de Hugging Face, ya que no se corresponden con el momento habitual de publicacion de modelos de esta familia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cfierro/qwen3-8b-tos-game-docs-c4-lora-round2
+- Modelo en Hugging Face: https://huggingface.co/cfierro/qwen3-8b-tos-game-docs-c4-lora-round2
 - Modelo base Qwen/Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Dataset cfierro/tos_game_synthetic_docs: https://huggingface.co/datasets/cfierro/tos_game_synthetic_docs
 - Dataset cfierro/c4-en-tos-game-replay: https://huggingface.co/datasets/cfierro/c4-en-tos-game-replay

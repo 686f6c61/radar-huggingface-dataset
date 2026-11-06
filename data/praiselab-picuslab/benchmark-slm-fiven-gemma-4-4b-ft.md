@@ -44,7 +44,7 @@ Tampoco se documenta la composición de `fiven`, si hubo RLHF/DPO (improbable en
 - Reproducibilidad académica: un investigador puede cargar el adaptador con `peft` y reproducir las condiciones del experimento del laboratorio sin reentrenar.
 - Prototipado de asistentes conversacionales en italiano: al ser un adaptador de 0,1 GB, se puede superponer a una instancia del base ya desplegada para pruebas de dominio concreto.
 - Ajuste de dominio sobre un modelo Gemma en producción: el adaptador demuestra el flujo de trabajo LoRA (merge y despliegue) para equipos que quieran adaptar el base a un corpus propio sin reentrenar el modelo completo.
-- Experimentación docente: ejemplo compacto y de bajo coste de un pipeline PEFT completo (dataset, entrenamiento, publicación en HuggingFace con acceso controlado).
+- Experimentación docente: ejemplo compacto y de bajo coste de un pipeline PEFT completo (dataset, entrenamiento, publicación en Hugging Face con acceso controlado).
 - Exploración de adaptación al dominio biomédico: el perfil del laboratorio incluye NLP biomédico y QA médica, por lo que el adaptador puede emplearse como punto de partida en experimentos de ese ámbito, aunque el contenido de `fiven` no está confirmado.
 
 ## Benchmarks y rendimiento
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento de ninguna de las tres variantes, por lo q
 
 - Ausencia total de evaluación publicada: no hay métricas que respalden ninguna afirmación de calidad.
 - Licencia no especificada, lo que impide determinar si el uso comercial está permitido; además, al derivar de un modelo Gemma, se aplican las condiciones del modelo base, que deben revisarse por separado.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita la reproducibilidad automática y explica las 0 descargas.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita la reproducibilidad automática y explica las 0 descargas.
 - Discrepancia de nomenclatura entre el nombre del repositorio ("4b") y el base declarado ("E4B"), que puede inducir a error sobre el número real de parámetros.
 - Idioma limitado al italiano según los tags: no hay evidencia de calidad en castellano ni en otros idiomas.
 - Dataset `fiven` no documentado: se desconoce su dominio, tamaño, procedencia y posibles sesgos, por lo que el adaptador puede arrastrar sesgos y vocabulario específicos del corpus.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento de ninguna de las tres variantes, por lo q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-4-4b-ft
+- Repositorio Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-4-4b-ft
 - Variante RAFT del mismo autor: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-4-4b-raft
 - Perfil del autor (PRAISELab@PICUSLab, datasets): https://huggingface.co/praiselab-picuslab/datasets
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it

@@ -24,7 +24,7 @@ Su relevancia es de infraestructura mas que de modelado: permite cargar y servir
 | Integridad | `manifest.json` con blake2b-128 por fichero completo y por tensor |
 | Modelo base | `poolside/Laguna-S-2.1` |
 | Fuente de la cuantizacion | `unsloth/Laguna-S-2.1-GGUF`, revision fijada `750f92f90cf54159c4d7a610cb7b3e74498e75c6`, 3 shards |
-| Descargas / likes (HuggingFace) | 0 / 0 |
+| Descargas / likes (Hugging Face) | 0 / 0 |
 | Fecha de creacion (segun metadatos) | 2026-09-15 |
 
 ## Arquitectura y entrenamiento
@@ -50,7 +50,7 @@ Lo tecnicamente distintivo de este repositorio no es el modelo, sino el formato 
 - Despliegue hibrido CPU/GPU en decodificacion: el autor justifica la eleccion de `UD-IQ4_NL` precisamente por escenarios en los que los expertos se ejecutan en CPU; un nodo con GPU para atencion y CPU para expertos es el caso natural de esta cuantizacion.
 - Verificacion de integridad en pipelines de MLOps: antes de servir, ejecutar `from layer_distribution import verify` contra `manifest.json` para comprobar hashes blake2b-128 por fichero y por tensor, util cuando los pesos viajan entre registros, CDN o entornos de staging.
 - Distribucion y actualizacion incremental: al estar partido en 48 ficheros de bloque mas dos partes compartidas, se puede reemplazar o cachear por bloques en lugar de mover 54,9 GiB completos en cada iteracion.
-- Entornos air-gapped: el formato de fichero mas el manifiesto con procedencia (`source.shards[]`, `source.content_hash`) permite auditar el origen de los pesos en despliegues sin acceso a internet ni a HuggingFace.
+- Entornos air-gapped: el formato de fichero mas el manifiesto con procedencia (`source.shards[]`, `source.content_hash`) permite auditar el origen de los pesos en despliegues sin acceso a internet ni a Hugging Face.
 - Investigacion a nivel de capa: al tener un fichero por bloque, resulta viable instrumentar activaciones, precargar o descargar bloques de forma selectiva y comparar comportamiento entre capas sin manipular un GGUF monolítico.
 - Reproducibilidad de cuantizaciones: sirve como referencia fijada a una revision concreta de Unsloth (`750f92f90c`), lo que permite repetir experimentos sobre exactamente los mismos tensores.
 - Serving en un unico nodo grande: para organizaciones que ya disponen de un nodo con memoria suficiente y quieren evitar la complejidad de un despliegue multi-host que, en esta arquitectura, no esta soportado.
@@ -99,12 +99,12 @@ Dentro de la fuente Unsloth, la model card menciona una alternativa de cuantizac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xautonomics/Laguna-S-2.1-UD-IQ4_NL.LAYR.GGUF
+- Repositorio en Hugging Face: https://huggingface.co/xautonomics/Laguna-S-2.1-UD-IQ4_NL.LAYR.GGUF
 - Modelo base: https://huggingface.co/poolside/Laguna-S-2.1
 - Cuantizacion de origen (Unsloth): https://huggingface.co/unsloth/Laguna-S-2.1-GGUF
 - Revision fijada de la fuente: https://huggingface.co/unsloth/Laguna-S-2.1-GGUF/tree/750f92f90cf54159c4d7a610cb7b3e74498e75c6/UD-IQ4_NL
 - Runtime dreamcatcher (fork de ik_llama.cpp): https://github.com/xautonomics-inc/dreamcatcher
 - Herramienta de corte por capas: https://github.com/xautonomics-inc/dreamcatcher/tree/5d151bded2bf164a2fe8c9d928062aae2a88b814/tools/layer-distribution
 - Problemas conocidos del fork: https://github.com/xautonomics-inc/dreamcatcher/blob/main/docs/KNOWN-ISSUES.md
-- Organizacion en HuggingFace: https://huggingface.co/xautonomics
+- Organizacion en Hugging Face: https://huggingface.co/xautonomics
 - Sitio del publicador: https://xautonomics.com

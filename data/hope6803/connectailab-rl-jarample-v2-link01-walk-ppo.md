@@ -77,7 +77,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-jarample-v2-link01-walk-ppo | no disponible | no aplica | 0,818 m/episodio; 0,0409 m/s; 0 caidas/min (declarado) | no disponible | HuggingFace |
+| connectailab-rl-jarample-v2-link01-walk-ppo | no disponible | no aplica | 0,818 m/episodio; 0,0409 m/s; 0 caidas/min (declarado) | no disponible | Hugging Face |
 | Alternativas PPO de locomocion bípeda | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hope6803/connectailab-rl-jarample-v2-link01-walk-ppo
+- Modelo en Hugging Face: https://huggingface.co/hope6803/connectailab-rl-jarample-v2-link01-walk-ppo
 - Stable-Baselines3 (libreria de entrenamiento): https://github.com/DLR-RM/stable-baselines3
 - MuJoCo (simulador fisico): https://mujoco.org/
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios de `link01-gym` ni demos adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MossForge es un paquete de pesos (model bundle) publicado en HuggingFace por el usuario FiditeNemini, diseñado como espejo de los pesos de MOSS-Image, el modelo de generación de imágenes del equipo OpenMOSS. No se trata de un modelo nuevo, sino de una recopilación organizada de los pesos originales de MOSS-Image (versiones SFT y Base), el codificador de texto Qwen3.5-9B en int8, el VAE de FLUX.2 y varias LoRAs de aceleración tipo Turbo (4 y 8 pasos, basadas en DMD), todo empaquetado con la estructura exacta que espera la carpeta `models/` de MossForge, un estudio nativo de macOS para generar imágenes con MOSS-Image.
+MossForge es un paquete de pesos (model bundle) publicado en Hugging Face por el usuario FiditeNemini, diseñado como espejo de los pesos de MOSS-Image, el modelo de generación de imágenes del equipo OpenMOSS. No se trata de un modelo nuevo, sino de una recopilación organizada de los pesos originales de MOSS-Image (versiones SFT y Base), el codificador de texto Qwen3.5-9B en int8, el VAE de FLUX.2 y varias LoRAs de aceleración tipo Turbo (4 y 8 pasos, basadas en DMD), todo empaquetado con la estructura exacta que espera la carpeta `models/` de MossForge, un estudio nativo de macOS para generar imágenes con MOSS-Image.
 
 El paquete incluye un manifiesto (`mossforge-manifest.json`) que permite a la aplicación de escritorio descargar solo los grupos deseados y verificar la integridad de cada archivo mediante SHA-256. Es relevante porque simplifica la puesta en marcha de MOSS-Image en macOS con MLX, evitando al usuario localizar y ensamblar manualmente diffusion models, text encoders, VAE y LoRAs compatibles. El peso total del repositorio es de 46,1 GB, con un grupo esencial de 15,5 GB y pesos de diffusion model en bf16 de unos 10,2 GB cada uno.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Componentes | Tamano aprox. | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FiditeNemini/MossForge | Paquete de pesos (espejo) | MOSS-Image SFT/Base + Qwen3.5-9B int8 + VAE FLUX.2 + LoRAs Turbo | 46,1 GB (total) | Apache-2.0 | HuggingFace, orientado a MossForge/macOS |
-| Comfy-Org/MOSS-Image | Repack oficial para ComfyUI | DiT + text encoder + VAE | no disponible | Apache-2.0 | HuggingFace |
-| OpenMOSS-Team/MOSS-Image-SFT | Modelo original | DiT SFT + componentes asociados | no disponible | Apache-2.0 | HuggingFace |
+| FiditeNemini/MossForge | Paquete de pesos (espejo) | MOSS-Image SFT/Base + Qwen3.5-9B int8 + VAE FLUX.2 + LoRAs Turbo | 46,1 GB (total) | Apache-2.0 | Hugging Face, orientado a MossForge/macOS |
+| Comfy-Org/MOSS-Image | Repack oficial para ComfyUI | DiT + text encoder + VAE | no disponible | Apache-2.0 | Hugging Face |
+| OpenMOSS-Team/MOSS-Image-SFT | Modelo original | DiT SFT + componentes asociados | no disponible | Apache-2.0 | Hugging Face |
 
 La diferencia principal es que MossForge no es un modelo nuevo sino un empaquetado no oficial con estructura fija, manifiesto con SHA-256 y LoRAs de destilación preseleccionadas, mientras que los repositorios originales ofrecen los pesos en su forma canonica.
 

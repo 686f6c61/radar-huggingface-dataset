@@ -81,5 +81,5 @@ No disponible. El repositorio no identifica modelos comparables ni publica métr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AI-KSK/minimax-h3-two-stage-three-graphs-296
+- Repositorio en Hugging Face: https://huggingface.co/AI-KSK/minimax-h3-two-stage-three-graphs-296
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

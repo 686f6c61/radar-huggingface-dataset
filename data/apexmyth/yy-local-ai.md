@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YY-Local-AI es un modelo publicado en HuggingFace por el usuario Apexmyth bajo licencia OpenRAIL. Segun los metadatos disponibles, el repositorio fue creado y actualizado el 5 de noviembre de 2026, cuenta con cero descargas y cero "likes", y no tiene pipeline declarado. La model card publicada por el autor no contiene mas contenido que la declaracion de licencia, por lo que no hay informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades.
+YY-Local-AI es un modelo publicado en Hugging Face por el usuario Apexmyth bajo licencia OpenRAIL. Segun los metadatos disponibles, el repositorio fue creado y actualizado el 5 de noviembre de 2026, cuenta con cero descargas y cero "likes", y no tiene pipeline declarado. La model card publicada por el autor no contiene mas contenido que la declaracion de licencia, por lo que no hay informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades.
 
 Esto significa que, a dia de hoy, no es posible verificar que el modelo funcione, que arquitectura emplea ni con que datos fue entrenado. El nombre ("Local AI") sugiere una orientacion a inferencia local, pero se trata solo de una inferencia a partir del identificador y no de un dato confirmado. Cualquier evaluacion tecnica seria requiere descargar los pesos y examinar los ficheros del repositorio, cosa que esta ficha no puede sustituir.
 
@@ -72,7 +72,7 @@ No es posible establecer una comparativa fiable porque se desconocen parametros,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| YY-Local-AI (Apexmyth) | no disponible | no disponible | OpenRAIL | HuggingFace, 0 descargas |
+| YY-Local-AI (Apexmyth) | no disponible | no disponible | OpenRAIL | Hugging Face, 0 descargas |
 | Alternativa de referencia | no disponible | no disponible | no disponible | no disponible |
 
 Cualquier comparacion con modelos como Llama, Mistral o Qwen requeriria primero conocer el tamano y la arquitectura de YY-Local-AI.
@@ -90,7 +90,7 @@ Cualquier comparacion con modelos como Llama, Mistral o Qwen requeriria primero 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Apexmyth/YY-Local-AI
+- Repositorio en Hugging Face: https://huggingface.co/Apexmyth/YY-Local-AI
 - Texto de la licencia OpenRAIL: no disponible en la informacion proporcionada
 - Paper, blog o repositorio de codigo: no disponible
 - Demo o espacio de inferencia: no disponible

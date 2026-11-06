@@ -82,7 +82,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/devorah-ai-2016/connectailab-rl-devorah-v1-choose-link01
+- Hugging Face: https://huggingface.co/devorah-ai-2016/connectailab-rl-devorah-v1-choose-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

@@ -45,7 +45,7 @@ Ambos componentes se inicializan desde MiniCPM-o-4.5 y se entrenan en dos etapas
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye métricas de rendimiento, y el informe técnico enlazado no presenta resultados comparativos en el contenido accesible.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye métricas de rendimiento, y el informe técnico enlazado no presenta resultados comparativos en el contenido accesible.
 
 ## Requisitos de hardware
 
@@ -69,12 +69,12 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - Las aplicaciones deben validar las acciones externas delegadas, ya que el modelo no está diseñado para ejecutar tareas de alto impacto de forma autónoma sin supervisión.
 - La cobertura de idiomas no está especificada, por lo que no se puede garantizar un comportamiento multilingüe completo.
 - Los datos de entrenamiento y los benchmarks no se han hecho públicos, lo que dificulta evaluar su fiabilidad frente a alternativas.
-- Es un modelo de investigación con cero descargas en HuggingFace en el momento de la consulta, lo que implica una adopción temprana y una comunidad reducida de usuarios.
+- Es un modelo de investigación con cero descargas en Hugging Face en el momento de la consulta, lo que implica una adopción temprana y una comunidad reducida de usuarios.
 - La licencia Apache 2.0 permite uso comercial, pero el despliegue en producción requiere evaluar los riesgos de alucinación y validar cada integración.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gander-Omni/Gander
+- Hugging Face: https://huggingface.co/Gander-Omni/Gander
 - GitHub: https://github.com/Omni-Interaction-Gander/Omni-Interaction-Agent
 - Paper (arXiv): https://arxiv.org/abs/2609.08977
 - Demo / project page: https://Omni-Interaction-Gander.github.io/Omni-Interaction-Agent

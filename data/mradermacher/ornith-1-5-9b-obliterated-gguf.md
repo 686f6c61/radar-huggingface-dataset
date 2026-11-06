@@ -70,7 +70,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoria (por
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Ornith-1.5-9B-OBLITERATED-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Ornith-1.5-9B-OBLITERATED-GGUF
 - Version Abliterated-i1: https://huggingface.co/mradermacher/Ornith-1.5-9B-Abliterated-i1-GGUF
 - Version Abliterated: https://huggingface.co/mradermacher/Ornith-1.5-9B-Abliterated-GGUF
 - Pagina en Ollama: https://ollama.com/library/ornith-1.5

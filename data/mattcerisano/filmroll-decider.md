@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Film Roll decider v2 es un ajuste fino mediante LoRA del modelo Qwen3-0.6B de Alibaba, desarrollado por mattcerisano y publicado en HuggingFace. No es un modelo generativo de propósito general: es un clasificador de decisiones especializado que se utiliza como "selector" dentro de la aplicación Film Roll, una herramienta que organiza fotografías analógicas escaneadas en rollos. El modelo recibe un conjunto de hechos sobre un grupo de escaneos y una pregunta con respuestas etiquetadas con letras, y devuelve la letra de la respuesta más probable leyendo los logits del siguiente token.
+Film Roll decider v2 es un ajuste fino mediante LoRA del modelo Qwen3-0.6B de Alibaba, desarrollado por mattcerisano y publicado en Hugging Face. No es un modelo generativo de propósito general: es un clasificador de decisiones especializado que se utiliza como "selector" dentro de la aplicación Film Roll, una herramienta que organiza fotografías analógicas escaneadas en rollos. El modelo recibe un conjunto de hechos sobre un grupo de escaneos y una pregunta con respuestas etiquetadas con letras, y devuelve la letra de la respuesta más probable leyendo los logits del siguiente token.
 
 La relevancia de este modelo es su enfoque de uso: en lugar de generar texto libre, se ejecuta un único forward pass y se aplica softmax sobre los logits de las letras candidatas, lo que permite tomar decisiones en aproximadamente 55 ms en un Mac con Apple Silicon. Esto lo convierte en un ejemplo práctico de cómo un modelo pequeño (596 millones de parámetros) puede integrarse como componente de decisión dentro de una aplicación, dejando la lógica de qué preguntar y qué respuestas ofrecer a las reglas del programa y la confirmación final al usuario.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 - VRAM estimada para inferencia: al estar cuantizado a 4 bits y tener ~596 millones de parámetros, el peso de los pesos ronda los 0,3 GB (tamaño del repo), por lo que la memoria necesaria es muy reducida, del orden de 0,5-1 GB incluyendo overhead.
 - GPU recomendadas: el modelo está empaquetado en MLX, por lo que el hardware objetivo es Apple Silicon (series M1, M2, M3, M4). No se distribuye en formatos para GPU NVIDIA o AMD.
 - Cabe en cualquier Mac con Apple Silicon, incluidos modelos con 8 GB de memoria unificada. No está pensado para GPU consumer de NVIDIA en este formato.
-- Opciones de despliegue: MLX (librería `mlx`), con el pipeline de text-generation de HuggingFace. No se mencionan vLLM, llama.cpp, Ollama ni TGI para esta versión.
+- Opciones de despliegue: MLX (librería `mlx`), con el pipeline de text-generation de Hugging Face. No se mencionan vLLM, llama.cpp, Ollama ni TGI para esta versión.
 - Latencia: aproximadamente 55 ms por decisión en un Mac con Apple Silicon, según la model card.
 - Throughput: no disponible.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Film Roll decider v2 | 596 M | No disponible | Clasificador de decisiones vía logits (fine-tune de Qwen3-0.6B) | Apache 2.0 | HuggingFace, formato MLX 4-bit |
-| Qwen3-0.6B (base) | 596 M | No disponible en esta ficha | Generación de texto general | Apache 2.0 | HuggingFace, múltiples formatos |
-| Clasificadores BERT pequeños (p. ej., DistilBERT) | ~66 M | 512 tokens típicamente | Clasificación de texto | Apache 2.0 / MIT según variante | HuggingFace, formatos PyTorch/ONNX |
+| Film Roll decider v2 | 596 M | No disponible | Clasificador de decisiones vía logits (fine-tune de Qwen3-0.6B) | Apache 2.0 | Hugging Face, formato MLX 4-bit |
+| Qwen3-0.6B (base) | 596 M | No disponible en esta ficha | Generación de texto general | Apache 2.0 | Hugging Face, múltiples formatos |
+| Clasificadores BERT pequeños (p. ej., DistilBERT) | ~66 M | 512 tokens típicamente | Clasificación de texto | Apache 2.0 / MIT según variante | Hugging Face, formatos PyTorch/ONNX |
 
 La comparación con modelos de la misma categoría es limitada porque Film Roll decider v2 es un artefacto muy específico de dominio. Frente a Qwen3-0.6B, la diferencia principal es el ajuste LoRA y el modo de uso como selector de letras en lugar de generador. Frente a clasificadores BERT pequeños, la ventaja es el formato MLX optimizado para Apple Silicon y la integración con el prompt ChatML de Qwen, aunque el tamaño es mayor y el dominio es mucho más estrecho.
 
@@ -91,6 +91,6 @@ La comparación con modelos de la misma categoría es limitada porque Film Roll 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattcerisano/filmroll-decider
+- Modelo en Hugging Face: https://huggingface.co/mattcerisano/filmroll-decider
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

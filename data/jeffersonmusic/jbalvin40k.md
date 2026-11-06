@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JBalvin40K es un repositorio publicado en HuggingFace por el usuario JEFFERSONMUSIC bajo licencia Apache 2.0. La informacion disponible es minima: la model card no contiene mas que el bloque de metadatos de licencia, sin descripcion del modelo, del entrenamiento ni de su proposito. El repositorio ocupa aproximadamente 0,1 GB y no declara pipeline de inferencia, idiomas soportados ni etiquetas de formato de pesos.
+JBalvin40K es un repositorio publicado en Hugging Face por el usuario JEFFERSONMUSIC bajo licencia Apache 2.0. La informacion disponible es minima: la model card no contiene mas que el bloque de metadatos de licencia, sin descripcion del modelo, del entrenamiento ni de su proposito. El repositorio ocupa aproximadamente 0,1 GB y no declara pipeline de inferencia, idiomas soportados ni etiquetas de formato de pesos.
 
 No existen resultados de benchmarks, documentacion tecnica, paper asociado ni anuncio de publicacion. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a plataformas de comercio electronico (HSE/HSE24), sin conexion alguna con este repositorio. Tampoco se han registrado descargas ni likes en el momento de la consulta.
 
@@ -25,7 +25,7 @@ Datos adicionales verificables:
 
 | Parametro | Valor |
 |---|---|
-| Identificador en HuggingFace | JEFFERSONMUSIC/JBalvin40K |
+| Identificador en Hugging Face | JEFFERSONMUSIC/JBalvin40K |
 | Autor | JEFFERSONMUSIC |
 | Pipeline declarado | no disponible |
 | Tamano del repositorio | 0,1 GB |
@@ -96,7 +96,7 @@ No disponible. No es posible establecer una comparativa fiable sin conocer el ta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JEFFERSONMUSIC/JBalvin40K
+- Repositorio en Hugging Face: https://huggingface.co/JEFFERSONMUSIC/JBalvin40K
 - Paper asociado: no disponible.
 - Repositorio de codigo: no disponible.
 - Demos o espacios: no disponible.

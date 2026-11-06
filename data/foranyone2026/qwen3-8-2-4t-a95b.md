@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-2.4T-A95B es un modelo de lenguaje causal de la familia Qwen3.8, publicado en HuggingFace por el usuario foranyone2026. Según la model card, se trata de la primera liberación abierta de un modelo de clase Qwen-Max, construido sobre la base arquitectónica de la serie Qwen3.5. El modelo está diseñado para tareas de codificación, trabajo profesional, investigación y tareas agénticas de largo horizonte, con un énfasis especial en la ejecución autónoma de tareas complejas de múltiples pasos.
+Qwen3.8-2.4T-A95B es un modelo de lenguaje causal de la familia Qwen3.8, publicado en Hugging Face por el usuario foranyone2026. Según la model card, se trata de la primera liberación abierta de un modelo de clase Qwen-Max, construido sobre la base arquitectónica de la serie Qwen3.5. El modelo está diseñado para tareas de codificación, trabajo profesional, investigación y tareas agénticas de largo horizonte, con un énfasis especial en la ejecución autónoma de tareas complejas de múltiples pasos.
 
 Arquitectónicamente es un modelo híbrido que combina Gated DeltaNet (atención lineal) y Gated Attention (atención estándar) intercalados con capas de Mixture of Experts. Tiene 2,4 billones de parámetros totales y 95 mil millones activados por token, con una longitud de contexto nativa de 262.144 tokens, extensible hasta 1.010.000. El repositorio contiene los pesos en formato safetensors, compatibles con vLLM, SGLang y TokenSpeed. Cabe destacar que la versión oficial con más funcionalidades (visión, herramientas integradas, contexto 1M) es Qwen3.8-Max, que se ofrece a través de Qwen Cloud.
 
@@ -87,7 +87,7 @@ No se dispone de mas datos comparativos. La licencia del modelo es personalizada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/foranyone2026/Qwen3.8-2.4T-A95B
+- Hugging Face: https://huggingface.co/foranyone2026/Qwen3.8-2.4T-A95B
 - Blog oficial de Qwen: https://qwen.ai/blog?id=qwen3.8
 - Qwen Cloud: https://www.qwencloud.com
 - Qwen Studio: https://chat.qwen.ai/?models=qwen3.8-max

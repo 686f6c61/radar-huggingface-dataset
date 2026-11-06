@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TurtleBotJEPA-PPO | RL + V-JEPA para navegación LiDAR | no disponible | ventana de 20 escaneos | MIT | HuggingFace, 0 descargas |
+| TurtleBotJEPA-PPO | RL + V-JEPA para navegación LiDAR | no disponible | ventana de 20 escaneos | MIT | Hugging Face, 0 descargas |
 | Políticas DQN de ROBOTIS para TurtleBot3 | RL para navegación | no disponible | no disponible | según ROBOTIS | Tutorial oficial de ROBOTIS |
 | Nav2 (stack clásico de ROS 2) | Planificación y control clásicos | no aplica | no aplica | Apache 2.0 | Estándar en ROS 2 |
 | Políticas PPO extremo a extremo sobre LiDAR | RL para navegación | no disponible | no disponible | variable | Repositorios académicos diversos |
@@ -95,7 +95,7 @@ La comparación cuantitativa de rendimiento con alternativas no está disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/penji2803/TurtleBotJEPA-PPO
+- Modelo en Hugging Face: https://huggingface.co/penji2803/TurtleBotJEPA-PPO
 - Modelo base (codificador LiDAR V-JEPA): https://huggingface.co/penji2803/lidar-vjepa-turtlebot3
 - Dataset de entrenamiento: https://huggingface.co/datasets/penji2803/turtlebot3-moving-obstacles-lidar-1.5m
 - Guía de instalación de ROS 2 Humble: https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html

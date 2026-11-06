@@ -36,7 +36,7 @@ En cuanto a datos, NVIDIA referencia los conjuntos nemotron-pre-training-dataset
 - Uso de herramientas multi-turno, una de las areas que NVIDIA declara explicitamente mejoradas respecto al modelo base.
 - Seguimiento de instrucciones y anclaje de la entrada (input grounding), orientados a reducir desviaciones respecto al contexto proporcionado.
 - Cobertura multilingue en 33 idiomas, incluidos espanol, ingles, aleman, frances, italiano, portugues, arabe, hindi, japones, coreano, chino, turco, vietnamita y la mayoria de lenguas eslavas y nordicas.
-- Entrada y salida declaradas como texto; aunque el tag de HuggingFace incluya `image-text-to-text` (heredado del modelo base), la model card especifica Text / text y la receta oficial de vLLM desactiva imagen, video y audio con `--limit-mm-per-prompt`.
+- Entrada y salida declaradas como texto; aunque el tag de Hugging Face incluya `image-text-to-text` (heredado del modelo base), la model card especifica Text / text y la receta oficial de vLLM desactiva imagen, video y audio con `--limit-mm-per-prompt`.
 - Capacidades de codigo y matematicas: no documentadas de forma especifica en la informacion disponible.
 
 ## Casos de uso
@@ -87,7 +87,7 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
+- Modelo en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Variante cuantizada Q4_K_M (4 GB): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB
 - Drafter DFlash NVFP4 para decodificacion especulativa: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-DFlash-NVFP4
@@ -97,4 +97,4 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento d
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
 - Texto de la licencia en GitHub: https://github.com/OpenMDW/OpenMDW/blob/main/1.1/LICENSE.OpenMDW-1.1
 - Discord de NVIDIA AI Developer: https://discord.gg/9xpKQtVvrk
-- Paper referenciado en los tags de HuggingFace (arXiv 2509.04292): https://arxiv.org/abs/2509.04292
+- Paper referenciado en los tags de Hugging Face (arXiv 2509.04292): https://arxiv.org/abs/2509.04292

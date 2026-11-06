@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse Glimmer es un modelo de lenguaje causal de 30 mil millones de parámetros con un encoder de percepción dedicado, desarrollado por Meta Superintelligence Lab y publicado en HuggingFace por el usuario Pio3214. Está diseñado específicamente para tareas agénticas autónomas en hardware de consumo, integrando razonamiento multi-paso, uso fiable de herramientas, comprensión multimodal y recuperación ante fallos en un único modelo que puede ejecutarse localmente sin infraestructura en la nube.
+Muse Glimmer es un modelo de lenguaje causal de 30 mil millones de parámetros con un encoder de percepción dedicado, desarrollado por Meta Superintelligence Lab y publicado en Hugging Face por el usuario Pio3214. Está diseñado específicamente para tareas agénticas autónomas en hardware de consumo, integrando razonamiento multi-paso, uso fiable de herramientas, comprensión multimodal y recuperación ante fallos en un único modelo que puede ejecutarse localmente sin infraestructura en la nube.
 
 El modelo se presenta como una destilación de Muse Spark, optimizado para despliegue local mediante cuantización a 4 bits y decodificación especulativa con un modelo auxiliar DFlash. Su arquitectura combina un transformer denso causal con atención local/global, un encoder visual ViT-G/14 de aproximadamente 1.800 millones de parámetros y una ventana de contexto de 131.072 tokens. La relevancia actual radica en su enfoque en agentes autónomos que requieren ejecución en dispositivos del usuario final, con velocidades de generación que alcanzan los 233 tokens por segundo en una RTX 5090 con especulación.
 
@@ -75,11 +75,11 @@ No se dispone de informacion comparativa con otros modelos en la documentacion p
 - Sesgos conocidos: no se documentan sesgos especificos en la model card. Al ser un modelo entrenado con datos publicos y de terceros, puede heredar sesgos presentes en esos datos.
 - Riesgo de alucinacion: no se menciona explicitamente, pero como modelo causal generativo, existe riesgo de generar informacion incorrecta o inventada, especialmente en tareas de razonamiento largo.
 - Limitaciones de contexto: aunque la ventana es de 131.072 tokens, el patron de atencion local/global con ventana deslizante de 2.048 puede afectar a la coherencia en segmentos muy largos si no se gestiona adecuadamente.
-- Restricciones de licencia: Apache 2.0 permite uso comercial sin restricciones, pero se debe verificar la procedencia del modelo. El autor en HuggingFace es Pio3214, mientras que la model card atribuye el desarrollo a Meta Superintelligence Lab; esto podria indicar que se trata de un upload no oficial o una version modificada, por lo que se recomienda validar la autenticidad antes de usarlo en produccion.
+- Restricciones de licencia: Apache 2.0 permite uso comercial sin restricciones, pero se debe verificar la procedencia del modelo. El autor en Hugging Face es Pio3214, mientras que la model card atribuye el desarrollo a Meta Superintelligence Lab; esto podria indicar que se trata de un upload no oficial o una version modificada, por lo que se recomienda validar la autenticidad antes de usarlo en produccion.
 - Caveat de produccion: el repositorio tiene cero descargas y cero likes, lo que sugiere que el modelo no ha sido ampliamente probado por la comunidad. Se recomienda realizar evaluaciones propias antes de desplegarlo en entornos criticos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Pio3214/Muse-Glimmer-30B
+- Hugging Face: https://huggingface.co/Pio3214/Muse-Glimmer-30B
 - Paper del encoder de percepcion (arXiv:2504.13181): https://arxiv.org/abs/2504.13181
 - Paper de DFlash (arXiv:2602.06036): https://arxiv.org/abs/2602.06036

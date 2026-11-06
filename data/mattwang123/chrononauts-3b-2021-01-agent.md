@@ -77,9 +77,9 @@ No se han publicado mas resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chrononauts 3B 2021-01 agent | 2,8 B | 8.192 | Agente de busqueda con corte temporal y RL (GRPO) | other | HuggingFace |
-| Chrononauts 3B 2021-01 sft | 2,8 B | 8.192 | Misma base, solo SFT sin RL con busqueda | other | HuggingFace |
-| Chrononauts 3B 2021-01 init | 2,8 B | 8.192 | Misma base, solo preentrenamiento con corte | other | HuggingFace |
+| Chrononauts 3B 2021-01 agent | 2,8 B | 8.192 | Agente de busqueda con corte temporal y RL (GRPO) | other | Hugging Face |
+| Chrononauts 3B 2021-01 sft | 2,8 B | 8.192 | Misma base, solo SFT sin RL con busqueda | other | Hugging Face |
+| Chrononauts 3B 2021-01 init | 2,8 B | 8.192 | Misma base, solo preentrenamiento con corte | other | Hugging Face |
 
 No se dispone de datos de rendimiento de modelos externos comparables en la informacion proporcionada; la comparativa se limita a las etapas hermanas de la propia suite, para las que tampoco se publican metricas desagregadas en esta ficha.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento de modelos externos comparables en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattwang123/chrononauts-3b-2021-01-agent
+- Modelo en Hugging Face: https://huggingface.co/mattwang123/chrononauts-3b-2021-01-agent
 - Repo hermano init: https://huggingface.co/mattwang123/chrononauts-3b-2021-01-init
 - Repo hermano sft: https://huggingface.co/mattwang123/chrononauts-3b-2021-01-sft
 - Modelo de embeddings usado en el corpus: https://huggingface.co/BAAI/bge-base-en-v1.5

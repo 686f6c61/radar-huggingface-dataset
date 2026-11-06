@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gulliver-1.0 | Adaptador LoRA sobre 27B | No disponible | Prosa literaria condicionada por autor | Apache 2.0 | HuggingFace (adaptador) |
-| Qwen3.8-27B (base) | 27B | No disponible | Modelo general | No disponible en la informacion | HuggingFace |
+| gulliver-1.0 | Adaptador LoRA sobre 27B | No disponible | Prosa literaria condicionada por autor | Apache 2.0 | Hugging Face (adaptador) |
+| Qwen3.8-27B (base) | 27B | No disponible | Modelo general | No disponible en la informacion | Hugging Face |
 | Alternativas de adaptación de estilo | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre adaptadores comparables de estilo literario en la documentación proporcionada.
@@ -83,7 +83,7 @@ No se dispone de información sobre adaptadores comparables de estilo literario 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/metalloidlabs/gulliver-1.0
+- Modelo en Hugging Face: https://huggingface.co/metalloidlabs/gulliver-1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset Dolma: https://huggingface.co/datasets/allenai/dolma
 - Distribución de datos Dolma v1_7 (books): https://olmo-data.org/dolma-v1_7/books/

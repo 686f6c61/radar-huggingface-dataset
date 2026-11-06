@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jdvss/G` es un repositorio publicado en HuggingFace por el usuario Jdvss. No se dispone de información técnica pública: la model card solo indica la licencia AFL-3.0. No se han publicado detalles sobre arquitectura, tamaño, contexto, idiomas ni capacidades. El repositorio no presenta descargas ni "likes" en el momento de la consulta, y los resultados de búsqueda web no aportan ninguna referencia al modelo, por lo que su utilidad práctica y sus características no pueden ser evaluadas con los datos disponibles.
+El modelo `Jdvss/G` es un repositorio publicado en Hugging Face por el usuario Jdvss. No se dispone de información técnica pública: la model card solo indica la licencia AFL-3.0. No se han publicado detalles sobre arquitectura, tamaño, contexto, idiomas ni capacidades. El repositorio no presenta descargas ni "likes" en el momento de la consulta, y los resultados de búsqueda web no aportan ninguna referencia al modelo, por lo que su utilidad práctica y sus características no pueden ser evaluadas con los datos disponibles.
 
 ## Especificaciones tecnicas
 

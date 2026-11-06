@@ -2,7 +2,7 @@
 
 ## Resumen
 
-klyre/klyre-v1-flash es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario klyre en HuggingFace. El punto de partida declarado en la model card es la version ya cuantizada a 4 bits `unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit`, y el entrenamiento se realizo con la libreria Unsloth, que el autor destaca como "2x mas rapido". El repositorio se publica bajo licencia Apache-2.0 y esta etiquetado para transformers, safetensors y text-generation-inference.
+klyre/klyre-v1-flash es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario klyre en Hugging Face. El punto de partida declarado en la model card es la version ya cuantizada a 4 bits `unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit`, y el entrenamiento se realizo con la libreria Unsloth, que el autor destaca como "2x mas rapido". El repositorio se publica bajo licencia Apache-2.0 y esta etiquetado para transformers, safetensors y text-generation-inference.
 
 Se trata por tanto de un modelo pequeno, de la familia Qwen2, orientado a generacion de texto en ingles. No es un modelo de proposito general con arquitectura novedosa ni un lanzamiento de laboratorio: es un derivado comunitario de un modelo base ya existente. Su relevancia practica esta en el coste de despliegue (cabe en cualquier GPU de consumo e incluso en CPU) y en que sirve como ejemplo de flujo de ajuste con QLoRA/Unsloth sobre modelos de menos de 2.000 millones de parametros.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| klyre/klyre-v1-flash | ~1.500 M (heredados) | no disponible (base: 32.768) | Apache-2.0 | HuggingFace, safetensors |
-| Qwen2.5-1.5B-Instruct (modelo base) | 1.540 M | 32.768 tokens | Apache-2.0 | HuggingFace, safetensors, GGUF |
-| Llama-3.2-1B-Instruct | 1.240 M | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace, gated |
-| Gemma-2-2B-it | 2.610 M | 8.192 tokens | Licencia Gemma | HuggingFace, gated |
+| klyre/klyre-v1-flash | ~1.500 M (heredados) | no disponible (base: 32.768) | Apache-2.0 | Hugging Face, safetensors |
+| Qwen2.5-1.5B-Instruct (modelo base) | 1.540 M | 32.768 tokens | Apache-2.0 | Hugging Face, safetensors, GGUF |
+| Llama-3.2-1B-Instruct | 1.240 M | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face, gated |
+| Gemma-2-2B-it | 2.610 M | 8.192 tokens | Licencia Gemma | Hugging Face, gated |
 
 Los datos de los modelos comparativos corresponden a informacion publica de sus respectivas fichas tecnicas y no se han verificado contra ejecucion propia. No hay resultados de benchmarks de `klyre-v1-flash` que permitan comparar calidad de salida con estas alternativas, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. La ventaja principal del modelo de klyre es la licencia Apache-2.0 sin restricciones de acceso y su tamano reducido; su desventaja es la ausencia total de documentacion y evaluacion.
 
@@ -96,7 +96,7 @@ Los datos de los modelos comparativos corresponden a informacion publica de sus 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/klyre/klyre-v1-flash
+- Modelo en Hugging Face: https://huggingface.co/klyre/klyre-v1-flash
 - Modelo base del ajuste: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

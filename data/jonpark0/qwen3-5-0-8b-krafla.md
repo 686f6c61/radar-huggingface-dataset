@@ -72,8 +72,8 @@ Medido en un GitHub runner (AMD EPYC 7763, 4 hilos) con la build `avx2` de Krafl
 
 | Modelo | Parámetros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-krafla (este) | 0.8B | 262144 (4096 por defecto en runtime) | `.mlb` / Krafla (CPU) | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.5-0.8B (base) | 0.8B | 262144 | safetensors / transformers, vLLM, etc. | Apache 2.0 | HuggingFace (modelo original) |
+| Qwen3.5-0.8B-krafla (este) | 0.8B | 262144 (4096 por defecto en runtime) | `.mlb` / Krafla (CPU) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.5-0.8B (base) | 0.8B | 262144 | safetensors / transformers, vLLM, etc. | Apache 2.0 | Hugging Face (modelo original) |
 | Conversiones GGUF de Qwen3.5-0.8B | 0.8B | 262144 | GGUF / llama.cpp, Ollama | Apache 2.0 | Disponibles en el ecosistema llama.cpp (no verificadas en esta ficha) |
 
 La comparativa directa con otras cuantizaciones del mismo modelo base (por ejemplo GGUF de llama.cpp) es pertinente porque la model card enlaza explícitamente a una comparativa de rendimiento con llama.cpp. No se dispone de datos de benchmarks de calidad (MMLU, HumanEval, GSM8K) para ninguno de los formatos en la información proporcionada.
@@ -91,7 +91,7 @@ La comparativa directa con otras cuantizaciones del mismo modelo base (por ejemp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonpark0/Qwen3.5-0.8B-krafla
+- Modelo en Hugging Face: https://huggingface.co/jonpark0/Qwen3.5-0.8B-krafla
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de Krafla: https://github.com/JonPark0/krafla
 - Releases de Krafla: https://github.com/JonPark0/krafla/releases

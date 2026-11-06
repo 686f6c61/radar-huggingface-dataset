@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **qwen-medical-dpo-2** (publicado en HuggingFace como `JellyFush/qwen-dpo-merged-2`) es un ajuste fino del modelo base Qwen3.5-4B, desarrollado por el usuario JellyFush mediante entrenamiento con DPO (Direct Preference Optimization) usando la librería TRL. El nombre sugiere una orientación al dominio médico, aunque la documentación publicada no detalla el conjunto de datos de preferencias utilizado ni confirma esa especialización.
+El modelo **qwen-medical-dpo-2** (publicado en Hugging Face como `JellyFush/qwen-dpo-merged-2`) es un ajuste fino del modelo base Qwen3.5-4B, desarrollado por el usuario JellyFush mediante entrenamiento con DPO (Direct Preference Optimization) usando la librería TRL. El nombre sugiere una orientación al dominio médico, aunque la documentación publicada no detalla el conjunto de datos de preferencias utilizado ni confirma esa especialización.
 
 Con aproximadamente 4.200 millones de parámetros, el modelo está diseñado para generación de texto conversacional y hereda las capacidades del modelo base Qwen3.5-4B. El repositorio ocupa 17,1 GB, lo que sugiere pesos en precisión FP32. Se trata de un modelo muy reciente (publicado en agosto de 2026) con cero descargas y cero valoraciones, por lo que su rendimiento real no ha sido validado por la comunidad.
 
@@ -47,7 +47,7 @@ Dado que no hay documentación sobre el dataset de entrenamiento ni benchmarks p
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar. El modelo cuenta con cero descargas y cero valoraciones en HuggingFace, por lo que no existe validación comunitaria de su rendimiento.
+No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar. El modelo cuenta con cero descargas y cero valoraciones en Hugging Face, por lo que no existe validación comunitaria de su rendimiento.
 
 ## Requisitos de hardware
 
@@ -81,7 +81,7 @@ La comparación directa con otros modelos de tamaño similar es limitada porque 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JellyFush/qwen-dpo-merged-2
+- Hugging Face: https://huggingface.co/JellyFush/qwen-dpo-merged-2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper DPO: https://huggingface.co/papers/2305.18290
 - TRL (librería de entrenamiento): https://github.com/huggingface/trl

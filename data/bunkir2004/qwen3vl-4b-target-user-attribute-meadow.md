@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Bunkir2004/qwen3vl-4b-target-user-attribute-meadow` es un adaptador LoRA publicado en HuggingFace por el usuario Bunkir2004, entrenado sobre el modelo base multimodal `Qwen/Qwen3-VL-4B-Instruct` de Alibaba Cloud. No se trata por tanto de un modelo completo, sino de un conjunto de pesos de adaptacion de bajo rango que deben combinarse con el modelo base para poder ejecutarse. El repositorio ocupa 0,3 GB y esta etiquetado con la libreria PEFT, la version 0.17.1 del framework y el pipeline `text-generation`.
+El modelo `Bunkir2004/qwen3vl-4b-target-user-attribute-meadow` es un adaptador LoRA publicado en Hugging Face por el usuario Bunkir2004, entrenado sobre el modelo base multimodal `Qwen/Qwen3-VL-4B-Instruct` de Alibaba Cloud. No se trata por tanto de un modelo completo, sino de un conjunto de pesos de adaptacion de bajo rango que deben combinarse con el modelo base para poder ejecutarse. El repositorio ocupa 0,3 GB y esta etiquetado con la libreria PEFT, la version 0.17.1 del framework y el pipeline `text-generation`.
 
-La relevancia de esta ficha es limitada y hay que ser transparente al respecto: la model card del autor es la plantilla por defecto de HuggingFace sin rellenar, con todos los campos marcados como `[More Information Needed]`. No se declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El nombre del repositorio sugiere un ajuste fino orientado a un atributo concreto de usuario ("target-user-attribute"), pero no hay ninguna documentacion que confirme el objetivo, el dataset ni el procedimiento seguido.
+La relevancia de esta ficha es limitada y hay que ser transparente al respecto: la model card del autor es la plantilla por defecto de Hugging Face sin rellenar, con todos los campos marcados como `[More Information Needed]`. No se declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El nombre del repositorio sugiere un ajuste fino orientado a un atributo concreto de usuario ("target-user-attribute"), pero no hay ninguna documentacion que confirme el objetivo, el dataset ni el procedimiento seguido.
 
 Por tanto, esta ficha describe lo que se puede verificar (artefacto PEFT, modelo base, tamano del repo, fechas) y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier uso en produccion exige validar primero el comportamiento real del adaptador contra el modelo base.
 
@@ -72,10 +72,10 @@ La model card no incluye ninguna seccion de evaluacion completada: todos los cam
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bunkir2004/qwen3vl-4b-target-user-attribute-meadow | Adaptador LoRA sobre Qwen3-VL-4B-Instruct | No disponible (repo de 0,3 GB) | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3-VL-4B-Instruct | Modelo completo multimodal denso | 4B (aprox., segun denominacion del fabricante) | No disponible en la informacion recogida | No disponible en la informacion recogida | HuggingFace, repositorio oficial de Qwen |
-| huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated | Modelo completo derivado (abliterated) | 4B (aprox.) | No disponible | No disponible | HuggingFace |
-| Qwen3-VL (familia) | Modelos multimodales densos y MoE | Varios tamanos; arquitectura densa y MoE por variante | Contexto extendido segun el repositorio oficial QwenLM/Qwen3-VL | No disponible | HuggingFace y GitHub oficiales, Qualcomm AI Hub |
+| Bunkir2004/qwen3vl-4b-target-user-attribute-meadow | Adaptador LoRA sobre Qwen3-VL-4B-Instruct | No disponible (repo de 0,3 GB) | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3-VL-4B-Instruct | Modelo completo multimodal denso | 4B (aprox., segun denominacion del fabricante) | No disponible en la informacion recogida | No disponible en la informacion recogida | Hugging Face, repositorio oficial de Qwen |
+| huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated | Modelo completo derivado (abliterated) | 4B (aprox.) | No disponible | No disponible | Hugging Face |
+| Qwen3-VL (familia) | Modelos multimodales densos y MoE | Varios tamanos; arquitectura densa y MoE por variante | Contexto extendido segun el repositorio oficial QwenLM/Qwen3-VL | No disponible | Hugging Face y GitHub oficiales, Qualcomm AI Hub |
 
 La comparacion cuantitativa no es posible: no hay benchmarks publicados para el adaptador y no se han recogido cifras de rendimiento de las alternativas en la informacion disponible.
 

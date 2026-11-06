@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. El repositorio ocupa 0,0 GB según HuggingFace, lo que es coherente con un artefacto de pocos megabytes, pero no se publica el tamaño exacto ni el consumo de memoria en ejecución.
+- VRAM estimada para inferencia: no disponible. El repositorio ocupa 0,0 GB según Hugging Face, lo que es coherente con un artefacto de pocos megabytes, pero no se publica el tamaño exacto ni el consumo de memoria en ejecución.
 - GPU recomendadas: no aplica el catálogo NVIDIA; el destino es Core ML sobre hardware Apple (Apple Silicon y dispositivos iOS/iPadOS compatibles con la versión de Core ML que requiera el bundle).
 - Compatibilidad con GPU de consumo: sí en el sentido de que puede ejecutarse en Mac con chip de la serie M y en iPhone/iPad; no hay soporte documentado para GPUs NVIDIA o AMD vía este artefacto.
 - Opciones de despliegue: Core ML de forma nativa, y las utilidades de FluidAudio indicadas por el autor upstream. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rishabhf/silero-vad-coreml-archive | VAD, bundle Core ML | no disponible | 256 ms (según nombre del fichero) | MIT | HuggingFace, archivo independiente |
-| FluidInference/silero-vad-coreml (upstream) | VAD, Core ML, varias variantes | no disponible | incluye otras variantes además de 256 ms | MIT según model card upstream | HuggingFace, repositorio activo |
+| rishabhf/silero-vad-coreml-archive | VAD, bundle Core ML | no disponible | 256 ms (según nombre del fichero) | MIT | Hugging Face, archivo independiente |
+| FluidInference/silero-vad-coreml (upstream) | VAD, Core ML, varias variantes | no disponible | incluye otras variantes además de 256 ms | MIT según model card upstream | Hugging Face, repositorio activo |
 | Silero VAD v6.2.1 (original, Silero Team) | VAD | no disponible | no disponible en la información proporcionada | MIT | GitHub `snakers4/silero-vad` |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes. La diferencia práctica entre las tres filas es de empaquetado y canal de distribución, no de capacidades documentadas: este repositorio fija una revisión concreta y añade comprobaciones de integridad, mientras que el upstream mantiene el conjunto completo de variantes.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes. La dif
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rishabhf/silero-vad-coreml-archive
+- Repositorio en Hugging Face: https://huggingface.co/rishabhf/silero-vad-coreml-archive
 - Repositorio upstream de la conversión: https://huggingface.co/FluidInference/silero-vad-coreml
 - Revisión fijada del upstream: https://huggingface.co/FluidInference/silero-vad-coreml/tree/b419383c55c110e2c9271fa6ee0ea83d03c70d96
 - Model card upstream preservada: https://huggingface.co/rishabhf/silero-vad-coreml-archive/blob/main/UPSTREAM_README.md

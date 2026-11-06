@@ -92,7 +92,7 @@ No se dispone de informacion sobre modelos alternativos de la misma categoria (t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ttindall/Qwen3.8-27B-Uncensored-HauhauCS-NInfer
+- Repositorio en Hugging Face: https://huggingface.co/ttindall/Qwen3.8-27B-Uncensored-HauhauCS-NInfer
 - Modelo base (GGUF): https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Checkpoint de referencia: https://huggingface.co/Qwen/Qwen3.8-27B
 - Motor NInfer para RTX 4090: https://github.com/sergiuszm/ninfer-4090

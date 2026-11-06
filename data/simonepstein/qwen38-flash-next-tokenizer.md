@@ -6,7 +6,7 @@
 
 El caso de uso descrito en la model card es el servicio de checkpoints reempaquetados de Flash-Next con `engine.tokenizer` de `dgpp`, cuando el `tokenizer.json` propio del checkpoint reempaquetado incluye un pre-tokenizer distinto al de la release de la que procede su vocabulario. El repositorio no aporta pesos, configuracion de modelo, plantillas de chat ni codigo de inferencia.
 
-Es relevante unicamente como pieza de infraestructura dentro de un pipeline de despliegue concreto, no como modelo evaluable. No tiene descargas ni likes registrados, no declara pipeline, idiomas ni licencia explicita en los metadatos de HuggingFace, y su tamano de repositorio es de 0,0 GB (el archivo referenciado, 12,8 MB, es el dato que cita la propia model card).
+Es relevante unicamente como pieza de infraestructura dentro de un pipeline de despliegue concreto, no como modelo evaluable. No tiene descargas ni likes registrados, no declara pipeline, idiomas ni licencia explicita en los metadatos de Hugging Face, y su tamano de repositorio es de 0,0 GB (el archivo referenciado, 12,8 MB, es el dato que cita la propia model card).
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento de benchmarks para ninguna de las alternat
 ## Limitaciones y advertencias
 
 - No es un modelo: no se puede usar para generar texto ni para ninguna tarea de inferencia por si solo.
-- La licencia no aparece declarada en los metadatos de HuggingFace; la model card afirma que se aplica la licencia de Qwen, por lo que el uso comercial queda sujeto a los terminos del modelo base y debe verificarse en el repositorio original antes de redistribuir.
+- La licencia no aparece declarada en los metadatos de Hugging Face; la model card afirma que se aplica la licencia de Qwen, por lo que el uso comercial queda sujeto a los terminos del modelo base y debe verificarse en el repositorio original antes de redistribuir.
 - El repositorio no incluye `LICENSE`, configuracion de modelo, plantilla de chat ni ficha con idiomas soportados.
 - La copia se declara sin modificaciones, pero no se aporta hash ni mecanismo de verificacion de integridad frente al archivo original.
 - Existe riesgo de desalineacion si el vocabulario original se actualiza en el repositorio base y esta copia no se sincroniza; al no haber versionado explicito, la trazabilidad depende de la fecha de ultima actualizacion (2026-09-21).
@@ -87,6 +87,6 @@ No se dispone de datos de rendimiento de benchmarks para ninguna de las alternat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/simonepstein/qwen38-flash-next-tokenizer
+- Repositorio en Hugging Face: https://huggingface.co/simonepstein/qwen38-flash-next-tokenizer
 - Repositorio del modelo base citado en la model card: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante. Las referencias disponibles apuntan a proyectos sin relacion con este artefacto (zotero-gpt, LibreChat, documentacion de modelos de GitHub Copilot y guias de uso de ChatGPT en vietnamita), por lo que no se incluyen como fuentes tecnicas.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nico248000000000/Qwen3.8-27B-cyber-LoRA` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario nico248000000000. Se trata de un fine-tuning con la librería PEFT sobre el modelo base `Qwen/Qwen3.8-27B`, orientado a generación de texto conversacional, según las etiquetas asociadas. El repositorio contiene únicamente los pesos del adaptador (1,0 GB en formato safetensors), no el modelo completo.
+El modelo `nico248000000000/Qwen3.8-27B-cyber-LoRA` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario nico248000000000. Se trata de un fine-tuning con la librería PEFT sobre el modelo base `Qwen/Qwen3.8-27B`, orientado a generación de texto conversacional, según las etiquetas asociadas. El repositorio contiene únicamente los pesos del adaptador (1,0 GB en formato safetensors), no el modelo completo.
 
 La relevancia de este tipo de adaptadores radica en que permiten especializar un modelo base de gran tamaño con un coste computacional reducido, sin necesidad de reentrenar todos los parámetros. Sin embargo, la documentación proporcionada es extremadamente escasa: la model card está prácticamente vacía, sin detalles sobre el proceso de entrenamiento, los datos utilizados, las capacidades específicas o la licencia. No se dispone de información sobre la arquitectura interna del modelo base ni sobre su rendimiento.
 
@@ -53,4 +53,4 @@ No disponible. No se ha proporcionado información sobre modelos comparables ni 
 
 ## Enlaces
 
-- [HuggingFace - nico248000000000/Qwen3.8-27B-cyber-LoRA](https://huggingface.co/nico248000000000/Qwen3.8-27B-cyber-LoRA)
+- [Hugging Face - nico248000000000/Qwen3.8-27B-cyber-LoRA](https://huggingface.co/nico248000000000/Qwen3.8-27B-cyber-LoRA)

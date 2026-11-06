@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `opticsWolf/ms-marco-MiniLM-L-6-v2-q8-onnx` | no disponible (MiniLM-L6 base) | no disponible | ONNX int8 | Apache-2.0 | HuggingFace (0 descargas) |
-| `cross-encoder/ms-marco-MiniLM-L6-v2` (original) | no disponible (MiniLM-L6 base) | no disponible | safetensors/PyTorch | Apache-2.0 | HuggingFace (ampliamente usado) |
-| `cross-encoder/ms-marco-MiniLM-L-12-v2` | no disponible | no disponible | safetensors/PyTorch | Apache-2.0 | HuggingFace |
-| `BAAI/bge-reranker-base` | no disponible | no disponible | safetensors/PyTorch | MIT (según el autor) | HuggingFace |
+| `opticsWolf/ms-marco-MiniLM-L-6-v2-q8-onnx` | no disponible (MiniLM-L6 base) | no disponible | ONNX int8 | Apache-2.0 | Hugging Face (0 descargas) |
+| `cross-encoder/ms-marco-MiniLM-L6-v2` (original) | no disponible (MiniLM-L6 base) | no disponible | safetensors/PyTorch | Apache-2.0 | Hugging Face (ampliamente usado) |
+| `cross-encoder/ms-marco-MiniLM-L-12-v2` | no disponible | no disponible | safetensors/PyTorch | Apache-2.0 | Hugging Face |
+| `BAAI/bge-reranker-base` | no disponible | no disponible | safetensors/PyTorch | MIT (según el autor) | Hugging Face |
 
 La comparación cuantitativa de rendimiento entre estas alternativas no está disponible en la información proporcionada. La diferencia principal de esta build frente al checkpoint original es el formato (ONNX int8 frente a PyTorch fp32) y el consiguiente ahorro de memoria, con una degradación documentada únicamente en logits crudos.
 
@@ -85,7 +85,7 @@ La comparación cuantitativa de rendimiento entre estas alternativas no está di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/opticsWolf/ms-marco-MiniLM-L-6-v2-q8-onnx
+- Hugging Face: https://huggingface.co/opticsWolf/ms-marco-MiniLM-L-6-v2-q8-onnx
 - Modelo base: https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2
 - ONNX Runtime: https://onnxruntime.ai/
 - Documentación de MatMulNBits en ONNX Runtime: no disponible en la información proporcionada

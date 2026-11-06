@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eeg-fm-masking_mae_r9cm_L1` es un encoder de electroencefalografía (EEG) preentrenado mediante autoaprendizaje supervisado, publicado en HuggingFace por el autor PierreGtch (usuario `PierreGtch`). Forma parte de la colección de 58 encoders presentados en el artículo *What masking geometry works best for EEG foundation models? A controlled evaluation across MAE and JEPA*, en el que todos los modelos se entrenan con una receta idéntica y la única variable que cambia es la geometría del enmascaramiento: 5 radios espaciales, 6 longitudes temporales y 2 marcos de preentrenamiento (MAE y JEPA). Este checkpoint concreto corresponde al marco MAE con radio espacial `r = 9 cm` y longitud temporal `L = 1` parche.
+`eeg-fm-masking_mae_r9cm_L1` es un encoder de electroencefalografía (EEG) preentrenado mediante autoaprendizaje supervisado, publicado en Hugging Face por el autor PierreGtch (usuario `PierreGtch`). Forma parte de la colección de 58 encoders presentados en el artículo *What masking geometry works best for EEG foundation models? A controlled evaluation across MAE and JEPA*, en el que todos los modelos se entrenan con una receta idéntica y la única variable que cambia es la geometría del enmascaramiento: 5 radios espaciales, 6 longitudes temporales y 2 marcos de preentrenamiento (MAE y JEPA). Este checkpoint concreto corresponde al marco MAE con radio espacial `r = 9 cm` y longitud temporal `L = 1` parche.
 
 El modelo resuelve un problema recurrente en el ámbito de los foundation models para EEG: no existía una evaluación controlada que aislase qué configuración de enmascaramiento produce mejores representaciones transferibles. En lugar de proponer una arquitectura nueva, el trabajo fija el resto de variables y publica los 58 puntos del espacio de búsqueda, lo que permite comparar directamente el efecto de cada geometría. Con 12.692.096 parámetros en el encoder y un repositorio de 0,1 GB, es un modelo pequeño orientado a extracción de características y a evaluación con encoder congelado más sonda ridge sobre el benchmark OpenEEGBench.
 
@@ -84,9 +84,9 @@ La información disponible no incluye datos de rendimiento de otros foundation m
 
 | Modelo | Marco | Radio espacial `r` | Longitud temporal `L` | Parámetros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `eeg-fm-masking_mae_r9cm_L1` | MAE | 9 cm | 1 parche | 12,69 M (encoder) | CC-BY-4.0 | HuggingFace |
-| `eeg-fm-masking_mae_r9cm_L2` | MAE | 9 cm | 2 parches | no disponible en la información | CC-BY-4.0 | HuggingFace |
-| `eeg-fm-masking_jepa_r9cm_L2` | JEPA | 9 cm | 2 parches | no disponible en la información | CC-BY-4.0 | HuggingFace |
+| `eeg-fm-masking_mae_r9cm_L1` | MAE | 9 cm | 1 parche | 12,69 M (encoder) | CC-BY-4.0 | Hugging Face |
+| `eeg-fm-masking_mae_r9cm_L2` | MAE | 9 cm | 2 parches | no disponible en la información | CC-BY-4.0 | Hugging Face |
+| `eeg-fm-masking_jepa_r9cm_L2` | JEPA | 9 cm | 2 parches | no disponible en la información | CC-BY-4.0 | Hugging Face |
 
 Los dos últimos son los que el artículo recomienda (`r = 9 cm`, `L = 2`), por lo que este checkpoint concreto (`L = 1`) no es la configuración óptima señalada por los autores. Para el resto de modelos comparables de la misma categoría (otros foundation models de EEG), no hay datos en la información proporcionada.
 
@@ -106,7 +106,7 @@ Los dos últimos son los que el artículo recomienda (`r = 9 cm`, `L = 2`), por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L1
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L1
 - Página del artículo: https://pierregtch.github.io/eeg-fm-masking
 - Código fuente (licencia MIT): https://github.com/PierreGtch/eeg-fm-masking
 - Colección con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lumesec/privacy-onnx
+- Modelo en Hugging Face: https://huggingface.co/lumesec/privacy-onnx
 - Modelo base: https://huggingface.co/fastino/gliner2-privacy-filter-PII-multi
 - Scripts de exportacion (gliner2-rs): https://github.com/codesoda/gliner2-rs
 - Aplicacion SecureGrid: https://securegrid.dev

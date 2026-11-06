@@ -4,7 +4,7 @@
 
 JoyAI-Video-Edit es un sistema de edición de vídeo en tiempo real guiado por instrucciones en lenguaje natural, desarrollado por el equipo de jdopensource. A diferencia de los editores de vídeo tradicionales que procesan el clip completo de forma offline, este modelo opera de forma causal: edita los fotogramas a medida que llegan desde una cámara en vivo o un vídeo subido, sin necesidad de conocer la duración total ni revisar fotogramas futuros. El sistema combina un codificador de condiciones basado en un MLLM, un VAE de vídeo causal y un transformer de difusión multimodal de 16 mil millones de parámetros, entrenado como un editor de difusión autorregresivo.
 
-La relevancia de este modelo radica en su capacidad para llevar la edición de vídeo generativa a escenarios interactivos y de streaming. En su benchmark de despliegue, el pipeline completo alcanza 30 FPS a una resolución de 720×1248, lo que supone un avance significativo frente al procesamiento por lotes tradicional. El modelo soporta una amplia variedad de tareas de edición, incluyendo cambios de apariencia global, edición local de objetos, sustitución de fondos, transferencia de estilo, cambios de movimiento y edición guiada por imágenes de referencia. Se ha publicado un informe técnico en arXiv (2608.03974) y una demo en HuggingFace Spaces.
+La relevancia de este modelo radica en su capacidad para llevar la edición de vídeo generativa a escenarios interactivos y de streaming. En su benchmark de despliegue, el pipeline completo alcanza 30 FPS a una resolución de 720×1248, lo que supone un avance significativo frente al procesamiento por lotes tradicional. El modelo soporta una amplia variedad de tareas de edición, incluyendo cambios de apariencia global, edición local de objetos, sustitución de fondos, transferencia de estilo, cambios de movimiento y edición guiada por imágenes de referencia. Se ha publicado un informe técnico en arXiv (2608.03974) y una demo en Hugging Face Spaces.
 
 ## Especificaciones técnicas
 
@@ -16,7 +16,7 @@ La relevancia de este modelo radica en su capacidad para llevar la edición de v
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | No disponible |
 | Idiomas soportados | No especificado (instrucciones en lenguaje natural, probablemente inglés) |
-| Licencia | Apache 2.0 (según la model card; no confirmado en el registro de HuggingFace) |
+| Licencia | Apache 2.0 (según la model card; no confirmado en el registro de Hugging Face) |
 | Formato de pesos | .pth (PyTorch) según el enlace al checkpoint; el repositorio actual no contiene pesos |
 
 ## Arquitectura y entrenamiento
@@ -57,7 +57,7 @@ Estos datos provienen del informe técnico y de la demo oficial, pero no se ofre
 - La demo oficial se ejecuta en una GPU NVIDIA RTX PRO 6000 (Blackwell), alcanzando 840×480 a 24 FPS o 720p a 16 FPS.
 - El pipeline completo con 30 FPS a 720×1248 requiere una configuración de despliegue optimizada, probablemente con una GPU profesional de gama alta; no se especifica la VRAM exacta.
 - No hay soporte para GPUs de consumo (como GeForce RTX 5090) según la sección TODO de la model card; se indica que está en desarrollo.
-- Opciones de despliegue: código de despliegue liberado en el repositorio, demo en HuggingFace Spaces. No se menciona compatibilidad con vLLM, llama.cpp u otros frameworks de inferencia estándar.
+- Opciones de despliegue: código de despliegue liberado en el repositorio, demo en Hugging Face Spaces. No se menciona compatibilidad con vLLM, llama.cpp u otros frameworks de inferencia estándar.
 - Se espera que el modelo requiera al menos 24-48 GB de VRAM para inferencia en FP16, aunque este dato no está confirmado.
 
 ## Comparativa con modelos similares
@@ -66,8 +66,8 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace con ID `olintheclouds/my-cool-model` no contiene pesos del modelo (tamaño 0.0 GB); los checkpoints reales se alojan en `jdopensource/JoyAI-Video-Edit`.
-- La licencia indicada en la model card es Apache 2.0, pero el campo oficial de licencia en HuggingFace aparece como "no disponible"; se recomienda verificar antes de uso comercial.
+- El repositorio de Hugging Face con ID `olintheclouds/my-cool-model` no contiene pesos del modelo (tamaño 0.0 GB); los checkpoints reales se alojan en `jdopensource/JoyAI-Video-Edit`.
+- La licencia indicada en la model card es Apache 2.0, pero el campo oficial de licencia en Hugging Face aparece como "no disponible"; se recomienda verificar antes de uso comercial.
 - No se han publicado detalles sobre sesgos, alucinaciones o limitaciones idiomáticas. Al ser un modelo de edición de vídeo, los riesgos de alucinación visual (artefactos, inconsistencias temporales) no se han documentado formalmente.
 - El modelo requiere hardware profesional de gama alta; no es viable en GPUs de consumo actualmente.
 - El soporte para edición guiada por referencia (RV2V) se ha mejorado en el checkpoint más reciente, pero la versión anterior puede presentar menor fidelidad en la preservación de identidad.
@@ -77,6 +77,6 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 - Informe técnico (arXiv): https://arxiv.org/pdf/2608.03974
 - Checkpoint del modelo (DiT weights): https://huggingface.co/jdopensource/JoyAI-Video-Edit/blob/main/dit/joyai_video_edit_dit_0811.pth
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/wxDai/joyai-video-edit
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/wxDai/joyai-video-edit
 - Repositorio original del modelo: https://huggingface.co/jdopensource/JoyAI-Video-Edit
 - Repositorio actual (sin pesos): https://huggingface.co/olintheclouds/my-cool-model

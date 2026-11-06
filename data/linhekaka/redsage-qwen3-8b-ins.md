@@ -114,10 +114,10 @@ Los dos unicos retrocesos declarados frente a Qwen3-8B son SECURE (KCV), de 87,4
 
 | Modelo | Parametros | Contexto declarado | Rendimiento destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RedSage-Qwen3-8B-Ins | 8,19 B | no disponible | Media externa ciberseguridad 81,30; OpenLLM 73,34 | no disponible | HuggingFace (repositorio LinHekaka, copia de RISys-Lab) |
-| Qwen3-8B (no razonador) | ~8 B | no disponible en la informacion | Media externa ciberseguridad 75,71; OpenLLM 65,92 | no disponible en la informacion | HuggingFace |
-| RedSage-Qwen3-8B-Base | ~8 B (modelo base de esta serie) | no disponible | Sin datos de benchmarks de instrucciones en la informacion | no disponible | HuggingFace (RISys-Lab) |
-| RedSage-Qwen3-8B-DPO | ~8 B | no disponible | Version alineada con DPO; sin cifras en la informacion | no disponible | HuggingFace (RISys-Lab) |
+| RedSage-Qwen3-8B-Ins | 8,19 B | no disponible | Media externa ciberseguridad 81,30; OpenLLM 73,34 | no disponible | Hugging Face (repositorio LinHekaka, copia de RISys-Lab) |
+| Qwen3-8B (no razonador) | ~8 B | no disponible en la informacion | Media externa ciberseguridad 75,71; OpenLLM 65,92 | no disponible en la informacion | Hugging Face |
+| RedSage-Qwen3-8B-Base | ~8 B (modelo base de esta serie) | no disponible | Sin datos de benchmarks de instrucciones en la informacion | no disponible | Hugging Face (RISys-Lab) |
+| RedSage-Qwen3-8B-DPO | ~8 B | no disponible | Version alineada con DPO; sin cifras en la informacion | no disponible | Hugging Face (RISys-Lab) |
 
 No se dispone de datos de otros modelos de ciberseguridad de 8B comparables en la informacion proporcionada.
 
@@ -136,7 +136,7 @@ No se dispone de datos de otros modelos de ciberseguridad de 8B comparables en l
 
 ## Enlaces
 
-- Modelo en HuggingFace (copia consultada): https://huggingface.co/LinHekaka/RedSage-Qwen3-8B-Ins
+- Modelo en Hugging Face (copia consultada): https://huggingface.co/LinHekaka/RedSage-Qwen3-8B-Ins
 - Modelo original referenciado en la model card: https://huggingface.co/RISys-Lab/RedSage-Qwen3-8B-Ins
 - Modelo base (Stage 2): https://huggingface.co/RISys-Lab/RedSage-Qwen3-8B-Base
 - Modelo de preentrenamiento continuado (Stage 1): https://huggingface.co/RISys-Lab/RedSage-Qwen3-8B-CFW

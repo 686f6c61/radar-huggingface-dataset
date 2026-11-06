@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Novera-ai es un modelo de lenguaje publicado en HuggingFace por el usuario frdaws bajo el identificador `frdaws/novera-ai`. Se trata de un modelo de aproximadamente 3.400 millones de parametros (3.397.103.616 exactamente, segun los pesos), orientado a uso conversacional y distribuido en formato GGUF, lo que sugiere que esta pensado para inferencia local mediante runtimes como llama.cpp u Ollama. El repositorio ocupa 2,1 GB, un tamano coherente con pesos cuantizados de un modelo de este orden de parametros.
+Novera-ai es un modelo de lenguaje publicado en Hugging Face por el usuario frdaws bajo el identificador `frdaws/novera-ai`. Se trata de un modelo de aproximadamente 3.400 millones de parametros (3.397.103.616 exactamente, segun los pesos), orientado a uso conversacional y distribuido en formato GGUF, lo que sugiere que esta pensado para inferencia local mediante runtimes como llama.cpp u Ollama. El repositorio ocupa 2,1 GB, un tamano coherente con pesos cuantizados de un modelo de este orden de parametros.
 
-La informacion publica disponible es muy limitada: no se especifica la arquitectura interna, la longitud de contexto, los idiomas soportados, la licencia ni el pipeline de la tarea. La unica etiqueta funcional ademas de GGUF es `conversational`, y tambien aparece `endpoints_compatible`, lo que indica que el repositorio puede desplegarse a traves de la infraestructura de Inference Endpoints de HuggingFace.
+La informacion publica disponible es muy limitada: no se especifica la arquitectura interna, la longitud de contexto, los idiomas soportados, la licencia ni el pipeline de la tarea. La unica etiqueta funcional ademas de GGUF es `conversational`, y tambien aparece `endpoints_compatible`, lo que indica que el repositorio puede desplegarse a traves de la infraestructura de Inference Endpoints de Hugging Face.
 
 Su relevancia actual es limitada por el momento: cuenta con 0 descargas y 1 like, y fue creado y actualizado el mismo dia (14 de octubre de 2026). No hay documentacion tecnica, paper ni resultados de evaluacion publicados en la informacion disponible. Cualquier evaluacion seria del modelo requeriria descargar los pesos y ejecutar pruebas propias.
 
@@ -43,7 +43,7 @@ El unico dato estructural fiable es el recuento de parametros (3.397.103.616) y 
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` indica que el modelo esta orientado a dialogos multi-turno, aunque no se especifican detalles sobre el formato de plantilla de chat.
-- Despliegue via Inference Endpoints: la etiqueta `endpoints_compatible` sugiere compatibilidad con la infraestructura gestionada de HuggingFace.
+- Despliegue via Inference Endpoints: la etiqueta `endpoints_compatible` sugiere compatibilidad con la infraestructura gestionada de Hugging Face.
 - Inferencia local en formato GGUF: permite ejecucion con runtimes compatibles con GGUF (llama.cpp, Ollama, etc.).
 - Razonamiento, codigo, matematicas, vision, tool calling, agentes y capacidades multilingues: no disponible. No hay informacion que confirme o desmienta ninguna de estas capacidades.
 - Capacidades especiales (modo thinking, audio, vision): no disponible.
@@ -76,7 +76,7 @@ Las siguientes cifras son estimaciones derivadas del recuento de parametros (3,4
   - FP16: aproximadamente 6,8 GB de pesos.
 - GPU recomendadas: cualquier GPU consumer con 4-8 GB de VRAM (por ejemplo RTX 3060, RTX 4060, RTX 3050) es suficiente para cuantizaciones Q4-Q5. Para FP16 se recomienda una GPU con al menos 8-10 GB (RTX 3070/4060 Ti o superior).
 - Compatibilidad con GPU consumer: si, es probable que quepa en la mayoria de GPUs consumer modernas en cuantizaciones bajas, y tambien puede ejecutarse en CPU.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. La etiqueta `endpoints_compatible` sugiere ademas HuggingFace Inference Endpoints. vLLM y TGI no son compatibles de forma nativa con GGUF sin conversion previa (no confirmado para este modelo).
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. La etiqueta `endpoints_compatible` sugiere ademas Hugging Face Inference Endpoints. vLLM y TGI no son compatibles de forma nativa con GGUF sin conversion previa (no confirmado para este modelo).
 - Latencia y throughput estimados: no disponible. Dependera del hardware, la cuantizacion y la longitud de contexto.
 
 ## Comparativa con modelos similares
@@ -107,6 +107,6 @@ Nota: los datos de los modelos de referencia (Qwen, Llama, Phi) corresponden a i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/frdaws/novera-ai
+- Repositorio Hugging Face: https://huggingface.co/frdaws/novera-ai
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

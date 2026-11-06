@@ -2,7 +2,7 @@
 
 ## Resumen
 
-biglust17-v17-sdxl es una conversión al formato Diffusers de un checkpoint de Stable Diffusion XL publicado originalmente en Civitai bajo el nombre "BigLust 17" por el usuario MachineMinded. El modelo está orientado a la generación de imágenes fotorrealistas con estética de fotografía explícita, y se distribuye con la etiqueta `not-for-all-audiences`, lo que indica contenido para adultos. La versión alojada en HuggingFace por el usuario f0xyyy es un espejo técnico del checkpoint original, no un modelo entrenado desde cero por ese autor.
+biglust17-v17-sdxl es una conversión al formato Diffusers de un checkpoint de Stable Diffusion XL publicado originalmente en Civitai bajo el nombre "BigLust 17" por el usuario MachineMinded. El modelo está orientado a la generación de imágenes fotorrealistas con estética de fotografía explícita, y se distribuye con la etiqueta `not-for-all-audiences`, lo que indica contenido para adultos. La versión alojada en Hugging Face por el usuario f0xyyy es un espejo técnico del checkpoint original, no un modelo entrenado desde cero por ese autor.
 
 Arquitectónicamente se trata de un UNet de Stable Diffusion XL estándar, con 2.567.463.684 parámetros en los pesos safetensors y un repositorio de 6,9 GB, coherente con un checkpoint SDXL en precisión fp16. La longitud de contexto textual corresponde al encoder de texto de SDXL (dos encoders CLIP, uno de ellos con 77 tokens), aunque ese dato no se detalla en la información proporcionada.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| biglust17-v17-sdxl | 2.567.463.684 | no disponible (CLIP SDXL) | no disponible | creativeml-openrail-m | HuggingFace (21 descargas) |
-| Stable Diffusion XL base | no disponible en la información | no disponible (CLIP SDXL) | no disponible | creativeml-openrail-m | HuggingFace, ampliamente disponible |
-| Otros fine-tunes SDXL fotorrealistas de Civitai | no disponible | no disponible (CLIP SDXL) | no disponible | variable según autor | Civitai, HuggingFace |
+| biglust17-v17-sdxl | 2.567.463.684 | no disponible (CLIP SDXL) | no disponible | creativeml-openrail-m | Hugging Face (21 descargas) |
+| Stable Diffusion XL base | no disponible en la información | no disponible (CLIP SDXL) | no disponible | creativeml-openrail-m | Hugging Face, ampliamente disponible |
+| Otros fine-tunes SDXL fotorrealistas de Civitai | no disponible | no disponible (CLIP SDXL) | no disponible | variable según autor | Civitai, Hugging Face |
 
 La comparación cuantitativa no es posible con los datos disponibles; la única diferencia verificable es el número de parámetros del checkpoint y su licencia, compartida con el SDXL base.
 
@@ -81,6 +81,6 @@ La comparación cuantitativa no es posible con los datos disponibles; la única 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/f0xyyy/biglust17-v17-sdxl
+- Hugging Face: https://huggingface.co/f0xyyy/biglust17-v17-sdxl
 - Modelo original en Civitai: https://civitai.com/models/1433766/biglust-17?modelVersionId=1620724
 - Perfil del autor original (MachineMinded): https://civitai.com/user/MachineMinded

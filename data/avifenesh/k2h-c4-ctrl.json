@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Avifenesh/k2h-c4-ctrl",
+  "slug": "avifenesh-k2h-c4-ctrl",
+  "author": "Avifenesh",
+  "url": "https://huggingface.co/Avifenesh/k2h-c4-ctrl",
+  "created_at": "2026-11-03T21:01:33.000Z",
+  "updated_at": "2026-11-03T22:39:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "k2_horizon",
+    "text-generation",
+    "moe",
+    "continued-pretraining",
+    "research",
+    "conversational",
+    "custom_code",
+    "base_model:IFM/K2-Horizon-MoVA-36B-A4B",
+    "base_model:finetune:IFM/K2-Horizon-MoVA-36B-A4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 289,
+  "trending_score": 0,
+  "parameters": 37444792020,
+  "parameters_human": "37.44B",
+  "storage_bytes": 74912301652,
+  "storage_human": "74.9 GB",
+  "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Avifenesh/k2h-c4-ctrl · Hugging Face",
+      "url": "https://huggingface.co/Avifenesh/k2h-c4-ctrl",
+      "snippet": "Text Generation model with 37B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "avifenesh (Avi Fenesh) · GitHub",
+      "url": "https://github.com/avifenesh",
+      "snippet": "I do ML research and maintain open source. The research is about making open models cheaper to train and run: model execution, quantization, pruning, speculative decoding and KV cache placement, with the failed arms published next to the wins. Papers and notes are at avifenesh.ai/research, articles at avifenesh.ai/writing. On the open-source side I build agentsys (1k+ stars), the agent-sh ..."
+    }
+  ]
+}

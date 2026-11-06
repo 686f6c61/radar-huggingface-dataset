@@ -95,7 +95,7 @@ Las filas Q3_K_M, Q5_K_M y Q6_K corresponden a cuantizaciones medidas por orcaro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/electricpipelines/Qwen3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/electricpipelines/Qwen3.8-27B-Uncensored-GGUF
 - Modelo base (orcarouter): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-GGUF
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - llama.cpp (requerido, build reciente con arquitectura `qwen35`): no se proporciona enlace específico en la información disponible

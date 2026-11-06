@@ -72,7 +72,7 @@ No se dispone de una comparativa directa con otros modelos de traduccion del mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-zho-hans
+- Repositorio Hugging Face: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-zho-hans
 - Articulo arXiv: https://arxiv.org/pdf/2607.18618
 - Modelo base Ouro-2.6B-Thinking: https://huggingface.co/ByteDance/Ouro-2.6B-Thinking
 - Pagina del proyecto Ouro: https://ouro-llm.github.io/

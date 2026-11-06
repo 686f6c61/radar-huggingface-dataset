@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshuaramirez/matching-slim` es un repositorio de HuggingFace publicado por el usuario joshuaramirez que contiene una implementación funcional de la arquitectura ALBEF (Align before Fuse) orientada a tareas de *matching* multimodal, en una configuración que el propio autor denomina "nano". Se trata de un artefacto de investigación y de pruebas de humo (*smoke tests*), no de un modelo entrenado: el archivo `model.safetensors` se presenta explícitamente en la model card como un checkpoint de inicialización válido para arrancar el código, no como un modelo con pesos aprendidos ni evaluados.
+`joshuaramirez/matching-slim` es un repositorio de Hugging Face publicado por el usuario joshuaramirez que contiene una implementación funcional de la arquitectura ALBEF (Align before Fuse) orientada a tareas de *matching* multimodal, en una configuración que el propio autor denomina "nano". Se trata de un artefacto de investigación y de pruebas de humo (*smoke tests*), no de un modelo entrenado: el archivo `model.safetensors` se presenta explícitamente en la model card como un checkpoint de inicialización válido para arrancar el código, no como un modelo con pesos aprendidos ni evaluados.
 
 El tamaño real declarado en los metadatos de safetensors es de 49.600 parámetros, lo que sitúa el artefacto varios órdenes de magnitud por debajo de cualquier modelo de visión-lenguaje utilizable en producción. La relevancia de este repositorio es, por tanto, documental y metodológica: sirve como punto de partida reproducible para experimentar con la receta ALBEF, validar canalizaciones de entrenamiento y comparar baselines bajo el mismo presupuesto de cómputo, tal y como recomienda el propio autor.
 
@@ -70,13 +70,13 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Memoria RAM: inferior a unos pocos cientos de MB contando el intérprete de Python y PyTorch, dominada por el *runtime* y no por el modelo.
 - Opciones de despliegue: el autor advierte de que, al ser una implementación personalizada, las API genéricas de carga automática necesitan un adaptador explícito. No hay soporte documentado para vLLM, llama.cpp, Ollama, TGI ni servidores de inferencia estándar.
 - Latencia y throughput estimados: no disponibles. No se publican mediciones, y al no existir un modelo entrenado carece de sentido caracterizar su rendimiento en tareas reales.
-- Almacenamiento: el repositorio ocupa 0,0 GB según los metadatos de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB según los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tarea | Parámetros | Contexto | Licencia | Estado | Disponibilidad |
 |---|---|---|---|---|---|---|
-| joshuaramirez/matching-slim | *Matching* multimodal | 49.600 | No disponible | Apache 2.0 | Checkpoint de inicialización, sin entrenar | HuggingFace |
+| joshuaramirez/matching-slim | *Matching* multimodal | 49.600 | No disponible | Apache 2.0 | Checkpoint de inicialización, sin entrenar | Hugging Face |
 | ALBEF (implementación de referencia) | *Matching* y recuperación imagen-texto | No disponible | No disponible | No disponible | Entrenado y evaluado por sus autores | Publicación académica |
 | CLIP (variantes abiertas) | Alineación y recuperación imagen-texto | No disponible | No disponible | No disponible | Entrenado y evaluado | Múltiples repositorios |
 | BLIP / BLIP-2 | Recuperación, *captioning* y *matching* | No disponible | No disponible | No disponible | Entrenado y evaluado | Múltiples repositorios |
@@ -97,6 +97,6 @@ No se dispone de cifras verificadas de parámetros, contexto ni rendimiento de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshuaramirez/matching-slim
+- Modelo en Hugging Face: https://huggingface.co/joshuaramirez/matching-slim
 - Archivos incluidos en el repositorio: `inference.py` (artefacto principal), `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicialización), `README.md` (documentación).
 - La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo: los enlaces recuperados correspondían a hilos de un videojuego sin relación con inteligencia artificial, por lo que se omiten. No se han encontrado *papers*, blogs, repositorios ni demos asociados a `joshuaramirez/matching-slim`.

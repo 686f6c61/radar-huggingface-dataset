@@ -118,7 +118,7 @@ Rendimiento declarado: aproximadamente 22 ms por decisión en una RTX PRO 6000 (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ironbcc/Seb-9B-v2
+- Modelo en Hugging Face: https://huggingface.co/ironbcc/Seb-9B-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Post del autor: https://huggingface.co/ironbcc/Seb-9B-v2/blob/main/blog/post.md
 - Vídeo demo (brazo 3D en PyBullet): https://huggingface.co/ironbcc/Seb-9B-v2/resolve/main/assets/robot-3d-pybullet.mp4

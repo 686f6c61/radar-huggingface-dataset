@@ -93,6 +93,6 @@ La comparación cuantitativa (WER/CER, parámetros, latencia) no está disponibl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rose337/VRChatAdminToolsModels
+- Repositorio en Hugging Face: https://huggingface.co/Rose337/VRChatAdminToolsModels
 - Modelo base ai-sage/GigaAM-v3: https://huggingface.co/ai-sage/GigaAM-v3
 - Revisión concreta del modelo base (`e2e_ctc`, commit `cec030b4c4f35d928e4a9044a3bdb29ebd499fac`): https://huggingface.co/ai-sage/GigaAM-v3/tree/cec030b4c4f35d928e4a9044a3bdb29ebd499fac

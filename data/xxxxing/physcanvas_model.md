@@ -2,9 +2,9 @@
 
 ## Resumen
 
-PhysCanvas_model es un modelo publicado en HuggingFace por el usuario XXXXing bajo licencia Apache 2.0. La model card asociada es prácticamente vacía: solo contiene la declaración de licencia, sin descripción, arquitectura, datos de entrenamiento ni casos de uso documentados. El repositorio ocupa 4,4 GB, un tamaño compatible con pesos en precisión de 16 bits de un modelo de aproximadamente 2.000 millones de parámetros, aunque esta estimación es una inferencia a partir del tamaño del repo y no un dato confirmado por el autor.
+PhysCanvas_model es un modelo publicado en Hugging Face por el usuario XXXXing bajo licencia Apache 2.0. La model card asociada es prácticamente vacía: solo contiene la declaración de licencia, sin descripción, arquitectura, datos de entrenamiento ni casos de uso documentados. El repositorio ocupa 4,4 GB, un tamaño compatible con pesos en precisión de 16 bits de un modelo de aproximadamente 2.000 millones de parámetros, aunque esta estimación es una inferencia a partir del tamaño del repo y no un dato confirmado por el autor.
 
-El nombre del modelo sugiere una posible orientación hacia física o representación visual ("Phys" + "Canvas"), pero no hay información en la model card que lo confirme. No se han publicado resultados de benchmarks, idiomas soportados, ni detalles de arquitectura. El pipeline no está declarado en los metadatos de HuggingFace.
+El nombre del modelo sugiere una posible orientación hacia física o representación visual ("Phys" + "Canvas"), pero no hay información en la model card que lo confirme. No se han publicado resultados de benchmarks, idiomas soportados, ni detalles de arquitectura. El pipeline no está declarado en los metadatos de Hugging Face.
 
 Dado que el modelo no tiene descargas ni likes en el momento de la consulta y que la documentación es mínima, esta ficha se limita a recoger los datos verificables y a marcar explícitamente como "no disponible" todo aquello que el autor no ha especificado. Se recomienda precaución antes de evaluar o desplegar el modelo en producción.
 
@@ -23,7 +23,7 @@ Dado que el modelo no tiene descargas ni likes en el momento de la consulta y qu
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, un modelo MoE, una arquitectura híbrida o cualquier otra variante. Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF o DPO, ni innovaciones técnicas como decodificación especulativa o atención lineal.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo MoE, una arquitectura híbrida o cualquier otra variante. Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF o DPO, ni innovaciones técnicas como decodificación especulativa o atención lineal.
 
 El único dato objetivo disponible es el tamaño del repositorio (4,4 GB) y la licencia Apache 2.0. Cualquier afirmación adicional sobre el entrenamiento o la arquitectura sería especulativa y no se incluye en esta ficha.
 
@@ -73,5 +73,5 @@ No disponible. No se conocen modelos comparables de la misma categoría porque l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XXXXing/PhysCanvas_model
+- Hugging Face: https://huggingface.co/XXXXing/PhysCanvas_model
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

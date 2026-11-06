@@ -75,10 +75,10 @@ Las cifras de esta seccion son estimaciones de ingenieria derivadas del numero d
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wutt6678/Qwen3-VL-4B-Instruct-IDUnlearn-Bench-Vanilla | ~4B | VLM denso (heredado) | No disponible | cc-by-4.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3-VL-4B-Instruct | ~4B | VLM denso | No disponible en la informacion recopilada | No disponible en la informacion recopilada | HuggingFace, repositorio oficial |
-| OpenExplorer/Qwen3-VL-4B-Instruct | ~4B | VLM denso | No disponible | No disponible | HuggingFace, espejo del modelo base |
-| Variantes MoE de Qwen3-VL | No disponible | VLM MoE | No disponible | No disponible | HuggingFace, repositorio oficial |
+| wutt6678/Qwen3-VL-4B-Instruct-IDUnlearn-Bench-Vanilla | ~4B | VLM denso (heredado) | No disponible | cc-by-4.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3-VL-4B-Instruct | ~4B | VLM denso | No disponible en la informacion recopilada | No disponible en la informacion recopilada | Hugging Face, repositorio oficial |
+| OpenExplorer/Qwen3-VL-4B-Instruct | ~4B | VLM denso | No disponible | No disponible | Hugging Face, espejo del modelo base |
+| Variantes MoE de Qwen3-VL | No disponible | VLM MoE | No disponible | No disponible | Hugging Face, repositorio oficial |
 
 La comparacion con modelos de otras familias (por ejemplo, otros VLM de rango 4B) no puede completarse con la informacion recopilada, ya que no se han proporcionado especificaciones ni resultados de evaluacion de alternativas.
 

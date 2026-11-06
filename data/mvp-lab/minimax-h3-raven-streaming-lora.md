@@ -26,7 +26,7 @@ El modelo base MiniMax-H3 emplea una arquitectura transformer nativa multimodal 
 - Generación de vídeo en tiempo real (streaming) a partir de texto, gracias al adaptador LoRA sobre MiniMax-H3.
 - Generación de audio estéreo 3D sincronizado con el vídeo, heredado del modelo base.
 - Aceleración de inferencia para escenarios interactivos, aunque no se especifica el factor de aceleración logrado.
-- Compatibilidad con el pipeline de HuggingFace `text-to-video`, lo que permite integrarlo en entornos estándar de generación audiovisual.
+- Compatibilidad con el pipeline de Hugging Face `text-to-video`, lo que permite integrarlo en entornos estándar de generación audiovisual.
 - No se documentan capacidades adicionales como tool calling, razonamiento multi-paso o soporte de agentes, ya que el modelo está orientado exclusivamente a generación de vídeo.
 
 ## Casos de uso
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada: no disponible, ya que depende del tamaño del modelo base MiniMax-H3 y de la cuantización utilizada, datos que no se han publicado.
 - GPU recomendadas: no disponible. El modelo base MiniMax-H3 requiere hardware de alta gama (probablemente GPUs con al menos 24 GB de VRAM, como RTX 4090 o A100), pero no se confirma para este adaptador.
 - Compatibilidad con GPU de consumo: incierta. Dado que el modelo base es de generación de vídeo 2K, es probable que necesite GPUs profesionales, pero el adaptador LoRA en sí podría reducir la carga.
-- Opciones de despliegue: no se mencionan herramientas específicas como vLLM, llama.cpp u Ollama. Al tratarse de un pipeline de HuggingFace `text-to-video`, se puede desplegar con la infraestructura estándar de HuggingFace (Diffusers, etc.), aunque no se documenta.
+- Opciones de despliegue: no se mencionan herramientas específicas como vLLM, llama.cpp u Ollama. Al tratarse de un pipeline de Hugging Face `text-to-video`, se puede desplegar con la infraestructura estándar de Hugging Face (Diffusers, etc.), aunque no se documenta.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -65,7 +65,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mvp-lab/MiniMax-H3-RAVEN-Streaming-LoRA
+- Modelo en Hugging Face: https://huggingface.co/mvp-lab/MiniMax-H3-RAVEN-Streaming-LoRA
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Hub comunitario de MiniMax H3: https://github.com/ai-models-lab/minimax-h3

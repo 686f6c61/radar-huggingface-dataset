@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-w14-k-chrono5-w30ft2-s300` es un modelo publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Por el identificador y la etiqueta `sn38-nanochrono`, parece tratarse de un experimento de la familia "nanochrono", probablemente un modelo de lenguaje de escala pequeña con alguna variante de atención o arquitectura temporal (chrono). El repositorio tiene acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace para descargar los pesos.
+`alfred8995/r18-a2-w14-k-chrono5-w30ft2-s300` es un modelo publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Por el identificador y la etiqueta `sn38-nanochrono`, parece tratarse de un experimento de la familia "nanochrono", probablemente un modelo de lenguaje de escala pequeña con alguna variante de atención o arquitectura temporal (chrono). El repositorio tiene acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face para descargar los pesos.
 
 El dato objetivo disponible es el recuento de parámetros en safetensors: 2.018.511.234 (aproximadamente 2.000 millones de parámetros). El tamaño del repositorio es de 6,3 GB, lo que es coherente con pesos en precisión de 16 bits o bfloat16 para ese número de parámetros. No se dispone de información publicada sobre arquitectura concreta, datos de entrenamiento, longitud de contexto ni capacidades.
 
@@ -43,7 +43,7 @@ No hay datos sobre el corpus de entrenamiento, el número de tokens procesados, 
 - Pruebas de inferencia en local: el tamaño de 6,3 GB permite cargarlo en GPUs de consumo con suficiente VRAM, útil para validar pipelines antes de escalar a modelos mayores.
 - Estudio de tokenizadores y preprocesado: si se publica el tokenizador, puede usarse para analizar decisiones de diseño en modelos pequeños.
 - Benchmarking interno de latencia: útil como baseline de ~2 B parámetros en pruebas comparativas propias, aunque sin métricas publicadas del autor.
-- Docencia y experimentación educativa: adecuado para demostrar el ciclo completo de descarga, carga y generación con modelos gated en HuggingFace.
+- Docencia y experimentación educativa: adecuado para demostrar el ciclo completo de descarga, carga y generación con modelos gated en Hugging Face.
 
 En todos los casos, la ausencia de model card y de benchmarks limita la confianza para uso en producción.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | alfred8995/r18-a2-w14-k-chrono5-w30ft2-s300 | ~2,0 B | no disponible | Apache 2.0 | Gated en HF | Sin benchmarks ni model card |
 | Gemma 2 2B (Google) | 2,6 B | 8.192 tokens | Gemma license | Público en HF | Benchmarks publicados, ecosistema amplio |
 | Qwen2.5 1.5B (Alibaba) | 1,5 B | 32.768 tokens | Apache 2.0 | Público en HF | Buen rendimiento en código y multilingüe |
-| SmolLM2 1.7B (HuggingFace) | 1,7 B | 8.192 tokens | Apache 2.0 | Público en HF | Entrenado con datos abiertos, benchmarks públicos |
+| SmolLM2 1.7B (Hugging Face) | 1,7 B | 8.192 tokens | Apache 2.0 | Público en HF | Entrenado con datos abiertos, benchmarks públicos |
 
 La comparación es aproximada: los tres modelos de referencia tienen documentación y evaluaciones públicas, mientras que el modelo analizado carece de ambas. La elección entre ellos dependerá de si se prioriza reproducibilidad y soporte comunitario (Gemma, Qwen, SmolLM) frente a un experimento concreto de investigación.
 
@@ -75,7 +75,7 @@ La comparación es aproximada: los tres modelos de referencia tienen documentaci
 - Ausencia total de model card: no hay información sobre datos de entrenamiento, sesgos, filtrado de datos ni evaluación de seguridad.
 - Riesgo de alucinación desconocido: sin benchmarks ni evaluaciones, no se puede estimar la fiabilidad de las respuestas.
 - Licencia Apache 2.0: permite uso comercial y modificación, pero el autor no ofrece garantías ni soporte; el uso en producción recae bajo responsabilidad del integrador.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede complicar la automatización de descargas y la reproducibilidad en CI/CD.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede complicar la automatización de descargas y la reproducibilidad en CI/CD.
 - Idiomas y contexto no confirmados: no se puede asumir soporte multilingüe ni una ventana de contexto concreta.
 - Compatibilidad de frameworks no verificada: al no conocerse la arquitectura, puede requerir código personalizado para cargar los pesos.
 - Repositorio sin descargas ni likes: no hay evidencia de uso comunitario ni de validación externa.
@@ -83,5 +83,5 @@ La comparación es aproximada: los tres modelos de referencia tienen documentaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w30ft2-s300
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w30ft2-s300
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

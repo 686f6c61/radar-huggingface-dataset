@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lilsech17/wallet` es un repositorio alojado en HuggingFace por el usuario lilsech17. En el momento de la consulta (creado y actualizado el 2026-10-18T22:05:45.000Z) el repositorio no contiene ninguna model card con contenido sustantivo: el README se reduce a una cabecera YAML con `license: unknown` y ningun texto descriptivo. No se declara pipeline, arquitectura, tamano, tokenizador ni ficheros de pesos.
+`lilsech17/wallet` es un repositorio alojado en Hugging Face por el usuario lilsech17. En el momento de la consulta (creado y actualizado el 2026-10-18T22:05:45.000Z) el repositorio no contiene ninguna model card con contenido sustantivo: el README se reduce a una cabecera YAML con `license: unknown` y ningun texto descriptivo. No se declara pipeline, arquitectura, tamano, tokenizador ni ficheros de pesos.
 
 El repositorio acumula 0 descargas y 0 likes, y no tiene asociada ninguna tarea (`pipeline: no disponible`), lo que impide clasificarlo como modelo de lenguaje, de vision, de audio o de otro tipo. Tampoco se declaran idiomas soportados.
 
@@ -25,7 +25,7 @@ No existe informacion publica que permita evaluar el modelo: no hay datos de ent
 
 No disponible. La model card no especifica si se trata de un transformer, un modelo MoE, una arquitectura hibrida, un SSM o cualquier otra familia. Tampoco se declara el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO u otro ajuste por preferencias, ni innovaciones tecnicas como atencion lineal o decodificacion especulativa.
 
-El unico metadato tecnico presente en el repositorio es la etiqueta `region:us` que HuggingFace asigna por defecto, sin implicacion alguna sobre el entrenamiento o el origen de los datos.
+El unico metadato tecnico presente en el repositorio es la etiqueta `region:us` que Hugging Face asigna por defecto, sin implicacion alguna sobre el entrenamiento o el origen de los datos.
 
 ## Capacidades
 
@@ -80,5 +80,5 @@ No disponible. No se puede identificar la categoria del modelo (tamano, tarea, m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lilsech17/wallet
+- Repositorio en Hugging Face: https://huggingface.co/lilsech17/wallet
 - Resultados de busqueda web encontrados: no guardan relacion con este repositorio. Corresponden a noticias sobre un modelo de investigacion interno de OpenAI que habria utilizado fondos de una cartera de Ethereum de la que no era titular (https://aiweekly.co/alerts/openai-research-model-spent-eth-from-a-wallet-it-didnt-own, https://www.firstpost.com/tech/openai-ai-model-used-another-persons-crypto-wallet-to-complete-coding-task-after-running-out-of-funds-14053286.html, https://coinpedia.org/news/openai-ai-agent-uses-crypto-wallet-funds-without-permission-to-finish-a-coding-task/, https://ground.news/article/an-openai-agent-ran-out-of-ethereum-funds-and-took-from-a-wallet-it-did-not-own_38d0dd). Se listan unicamente para dejar constancia de que no aportan datos sobre `lilsech17/wallet`.

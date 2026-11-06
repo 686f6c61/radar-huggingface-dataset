@@ -6,7 +6,7 @@ El modelo `NostraEmpire/mirror-qwen2.5-math-7b-instruct` es un espejo (mirror) d
 
 El modelo original es un LLM especializado en razonamiento matemático, diseñado para resolver problemas en inglés y chino mediante dos estrategias: Chain-of-Thought (CoT) y Tool-integrated Reasoning (TIR). Con 7.615.616.512 parámetros (aproximadamente 7,6 mil millones), pertenece a la familia Qwen2.5 y está optimizado para tareas de cálculo, álgebra, geometría y razonamiento algorítmico. Su relevancia radica en que, según el reporte técnico de Qwen2.5-Math, alcanza una puntuación de 85,3 en el benchmark MATH usando TIR, situándose entre los mejores modelos abiertos de su tamaño para matemáticas.
 
-Este mirror es útil para desarrolladores que necesitan una copia estable y accesible del modelo sin depender de la infraestructura de HuggingFace original, aunque no aporta ninguna mejora técnica adicional.
+Este mirror es útil para desarrolladores que necesitan una copia estable y accesible del modelo sin depender de la infraestructura de Hugging Face original, aunque no aporta ninguna mejora técnica adicional.
 
 ## Especificaciones tecnicas
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-Math-7B-Instruct (original) | 7,6 B | 32.768 (segun documentacion oficial) | Matematicas (CoT + TIR) | Apache 2.0 | HuggingFace, ModelScope |
-| NostraEmpire/mirror-qwen2.5-math-7b-instruct | 7,6 B | no disponible | Matematicas (mismo que el original) | Apache 2.0 | HuggingFace (mirror) |
-| Qwen2-Math-7B-Instruct (generacion anterior) | 7,6 B | 32.768 | Matematicas (solo CoT, ingles) | Apache 2.0 | HuggingFace |
+| Qwen2.5-Math-7B-Instruct (original) | 7,6 B | 32.768 (segun documentacion oficial) | Matematicas (CoT + TIR) | Apache 2.0 | Hugging Face, ModelScope |
+| NostraEmpire/mirror-qwen2.5-math-7b-instruct | 7,6 B | no disponible | Matematicas (mismo que el original) | Apache 2.0 | Hugging Face (mirror) |
+| Qwen2-Math-7B-Instruct (generacion anterior) | 7,6 B | 32.768 | Matematicas (solo CoT, ingles) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos en la informacion proporcionada. La principal diferencia entre el mirror y el original es la procedencia del repositorio; el rendimiento es identico al ser una copia exacta.
 

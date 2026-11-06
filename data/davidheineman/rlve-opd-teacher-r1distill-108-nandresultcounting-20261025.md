@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rlve-opd-teacher-R1Distill-108-NANDResultCounting-20261025` es un ajuste fino completo de `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` (1.777.088.000 parámetros, arquitectura transformer decoder-only de la familia Qwen2) publicado por el usuario de HuggingFace `davidheineman`. No es un modelo de propósito general: es el checkpoint final de un experimento de *data scaling* denominado RLVE, en el que el modelo actúa como "teacher" (profesor) dentro de un pipeline de destilación on-policy (OPD, *on-policy distillation*).
+`rlve-opd-teacher-R1Distill-108-NANDResultCounting-20261025` es un ajuste fino completo de `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` (1.777.088.000 parámetros, arquitectura transformer decoder-only de la familia Qwen2) publicado por el usuario de Hugging Face `davidheineman`. No es un modelo de propósito general: es el checkpoint final de un experimento de *data scaling* denominado RLVE, en el que el modelo actúa como "teacher" (profesor) dentro de un pipeline de destilación on-policy (OPD, *on-policy distillation*).
 
 El modelo se ha entrenado con GRPO como especialista en un único entorno: una tarea de conteo de resultados de compuertas NAND (`108-NANDResultCounting`) con dificultad equilibrada 0/1. El entrenamiento se limitó a 4.000 rollouts (checkpoint 499, indexado desde cero), con parada anticipada si la validación alcanzaba pass@1 >= 0,98 sobre 32 prompts y 8 respuestas por prompt, evaluados cada 50 actualizaciones.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la información disponible (MMLU
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`rlve-opd-teacher-...-NANDResultCounting`) | 1,78 B | No disponible | Conteo de resultados NAND (entorno único, GRPO) | No disponible | HuggingFace, repo de 3,6 GB |
-| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` (base) | 1,78 B | No disponible en esta ficha | Razonamiento general destilado de R1 | No disponible aquí (consultar su model card) | HuggingFace |
-| `Qwen2.5-1.5B-Instruct` | 1,5 B | No disponible en esta ficha | Instrucciones generales, multilingüe | No disponible aquí (consultar su model card) | HuggingFace |
-| Otras variantes del grupo `data-scaling-v1-n128-20261022-225839` | 1,78 B | No disponible | Distintos entornos del mismo experimento | No disponible | HuggingFace (mismo autor) |
+| Este modelo (`rlve-opd-teacher-...-NANDResultCounting`) | 1,78 B | No disponible | Conteo de resultados NAND (entorno único, GRPO) | No disponible | Hugging Face, repo de 3,6 GB |
+| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` (base) | 1,78 B | No disponible en esta ficha | Razonamiento general destilado de R1 | No disponible aquí (consultar su model card) | Hugging Face |
+| `Qwen2.5-1.5B-Instruct` | 1,5 B | No disponible en esta ficha | Instrucciones generales, multilingüe | No disponible aquí (consultar su model card) | Hugging Face |
+| Otras variantes del grupo `data-scaling-v1-n128-20261022-225839` | 1,78 B | No disponible | Distintos entornos del mismo experimento | No disponible | Hugging Face (mismo autor) |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada; la comparación relevante es de propósito (especialista vs. generalista) y de procedencia (todos los actores parten del mismo checkpoint base).
 
@@ -96,9 +96,9 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-108-NANDResultCounting-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-108-NANDResultCounting-20261025
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Run de entrenamiento en W&B: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/14ec5c41
-- Archivos de configuración citados en el repo: `training_run.json` y `training_config.yaml` (incluidos en el repositorio de HuggingFace)
+- Archivos de configuración citados en el repo: `training_run.json` y `training_config.yaml` (incluidos en el repositorio de Hugging Face)
 - Paper, blog, demo o repositorio de código del método RLVE: no disponibles en la información proporcionada
 - Resultados de la búsqueda web: no relevantes para este modelo (los enlaces devueltos no guardan relación con el repositorio ni con el autor); se omiten.

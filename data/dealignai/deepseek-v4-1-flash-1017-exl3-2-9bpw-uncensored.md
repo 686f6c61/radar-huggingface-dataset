@@ -19,7 +19,7 @@ Su relevancia es doble: por un lado sirve como referencia de despliegue eficient
 | Tipos de cuantización | EXL3 2,9 bpw con codificación trellis (formato propio de exllamav3); no se documentan otros niveles en este repo |
 | Idiomas soportados | en, es, fr, ru, it, th |
 | Licencia | other (`deepseek-v41-flash-1017`, enlazada a la licencia de deepseek-ai/DeepSeek-V4.1-Flash-1017) |
-| Formato de pesos | safetensors en formato EXL3, carpeta única para exllamav3 (415,9 GB de repo según HuggingFace; 388 GB según la model card) |
+| Formato de pesos | safetensors en formato EXL3, carpeta única para exllamav3 (415,9 GB de repo según Hugging Face; 388 GB según la model card) |
 
 ## Arquitectura y entrenamiento
 
@@ -98,7 +98,7 @@ No se han publicado resultados de benchmarks de capacidad general más allá de 
 
 ## Requisitos de hardware
 
-- Tamaño en disco: 415,9 GB de repositorio según HuggingFace; 388 GB según la model card. Conviene reservar al menos 450 GB de almacenamiento rápido (NVMe) para descarga y carga.
+- Tamaño en disco: 415,9 GB de repositorio según Hugging Face; 388 GB según la model card. Conviene reservar al menos 450 GB de almacenamiento rápido (NVMe) para descarga y carga.
 - Discrepancia a verificar: a 2,9 bpw sobre 303,3 B de parámetros, el peso teórico ronda los 110 GB. La diferencia frente a los 388-415 GB publicados debe comprobarse en los shards antes de dimensionar el hardware; puede deberse a componentes en mayor precisión (torre de visión, embeddings, cabezales) o a otros factores no documentados.
 - VRAM estimada (escenario conservador, bundle completo en GPU): 388-416 GB solo para pesos, más caché KV para 131K tokens. Requiere 6× H100 80 GB (480 GB) como mínimo y 8× H100 80 GB para trabajar con contexto largo con holgura.
 - VRAM estimada (escenario ~110 GB si se confirma el peso real a 2,9 bpw): 2× H100 80 GB o 2× A100 80 GB para pesos; 4× A100 80 GB para contexto extendido.
@@ -134,11 +134,11 @@ La comparación relevante es contra el bundle base de LibertAI: misma arquitectu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-UNCENSORED
+- Modelo en Hugging Face: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-UNCENSORED
 - Modelo base del bundle (LibertAI): https://huggingface.co/LibertAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw
 - Modelo original de DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Licencia: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/blob/main/LICENSE
 - Perfil del autor en X: https://x.com/dealignai
 - Apoyo al autor (Ko-fi): https://ko-fi.com/dealignai
 
-Nota: la búsqueda web realizada no ha devuelto resultados relevantes sobre este modelo (papers, blogs o repositorios); los únicos enlaces verificables son los de la model card y la página de HuggingFace.
+Nota: la búsqueda web realizada no ha devuelto resultados relevantes sobre este modelo (papers, blogs o repositorios); los únicos enlaces verificables son los de la model card y la página de Hugging Face.

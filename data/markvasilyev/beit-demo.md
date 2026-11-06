@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Markvasilyev/beit-demo es un repositorio de HuggingFace que contiene una implementacion reducida de una arquitectura BeiT orientada a tareas de generacion. No se trata de un modelo entrenado ni de una release lista para produccion: el propio autor indica de forma explicita en la model card que el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests) y que "no se presenta como un checkpoint entrenado con benchmarks". El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
+Markvasilyev/beit-demo es un repositorio de Hugging Face que contiene una implementacion reducida de una arquitectura BeiT orientada a tareas de generacion. No se trata de un modelo entrenado ni de una release lista para produccion: el propio autor indica de forma explicita en la model card que el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests) y que "no se presenta como un checkpoint entrenado con benchmarks". El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 
 El dato mas relevante es su tamano: 33.088 parametros totales, confirmados en el archivo safetensors, lo que lo situa en la categoria de utilidades de juguete o de prueba de concepto mas que en la de un modelo de lenguaje utilizable. La variante se etiqueta como "nano" y el repositorio ocupa practicamente 0,0 GB. Esto lo convierte en un artefacto pedagogico o de validacion de pipeline, no en una herramienta para inferencia real.
 
@@ -43,7 +43,7 @@ No hay constancia de entrenamiento real: el autor afirma que el checkpoint "no h
 - Pruebas de integracion continua (CI): al ocupar 0,0 GB y tener 33.088 parametros, puede incorporarse a tests automatizados que verifiquen el flujo de descarga, parseo de `config.json` y ejecucion del script sin coste de recursos.
 - Plantilla de implementacion propia: `finetune.py` puede tomarse como esqueleto para construir una arquitectura BeiT personalizada con atencion estandar, fusion tucker y RMSNorm.
 - Reproducibilidad de experimentos academicos: el `training_args.json` fija una receta (Adam + schedule polinomial) que puede reutilizarse como linea base en estudios comparativos, siempre que se entrene desde cero.
-- Docencia y material formativo: permite ilustrar la estructura de un repositorio de modelo en HuggingFace (pesos, config, argumentos de entrenamiento, README) sin los requisitos de hardware de un modelo grande.
+- Docencia y material formativo: permite ilustrar la estructura de un repositorio de modelo en Hugging Face (pesos, config, argumentos de entrenamiento, README) sin los requisitos de hardware de un modelo grande.
 - Referencia para auditorias de licencia: es un ejemplo de publicacion bajo Apache 2.0 con separacion explicita entre codigo, configuracion y pesos, util para estudiar buenas practicas de empaquetado.
 
 ## Benchmarks y rendimiento
@@ -81,5 +81,5 @@ No es posible establecer una comparativa fiable con modelos alternativos a parti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Markvasilyev/beit-demo
+- Repositorio en Hugging Face: https://huggingface.co/Markvasilyev/beit-demo
 - Resultados de la busqueda web: no se encontro ningun enlace relevante relacionado con el modelo. Los unicos resultados recuperados corresponden a articulos de moda sobre desfiles de Valentino (madame.lefigaro.fr, vogue.fr, vogue.com) y no guardan relacion con este repositorio.

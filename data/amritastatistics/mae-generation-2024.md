@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Amritastatistics/mae-generation-2024` es un repositorio experimental de HuggingFace que contiene un codebase propio denominado **Mae**, orientado a tareas de generacion. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests* y que no se reclama ninguna puntuacion de benchmark. El autor (Amritastatistics) lo presenta como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`Amritastatistics/mae-generation-2024` es un repositorio experimental de Hugging Face que contiene un codebase propio denominado **Mae**, orientado a tareas de generacion. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests* y que no se reclama ninguna puntuacion de benchmark. El autor (Amritastatistics) lo presenta como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 La relevancia de esta ficha es, por tanto, acotada: sirve como ejemplo de artefacto de investigacion en estado embrionario, no como modelo desplegable. Los metadatos de safetensors registran 16.576 parametros totales, una cifra extraordinariamente baja que confirma que el archivo es una inicializacion de prueba y no un modelo de capacidad real. El repositorio ocupa 0,0 GB y no cuenta con descargas ni likes en el momento de la consulta.
 
@@ -89,6 +89,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Amritastatistics/mae-generation-2024
+- Modelo en Hugging Face: https://huggingface.co/Amritastatistics/mae-generation-2024
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los enlaces obtenidos (DaFont, Zhihu, hilo de 52pojie sobre analisis de certificados de TikTok) no guardan relacion con el repositorio y se omiten por no aportar informacion verificable.
 - Paper, blog, repositorio adicional o demo: no disponibles en la informacion proporcionada.

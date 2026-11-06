@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Montalte/qwen4b-code-nothink-localize | 4.022.468.096 | No disponible | Sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Base (modelo base) | Misma familia y tamano (4B), valor exacto no disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
-| modrill/code-nothink-q4b-20260908 (especialista de origen) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| Montalte/qwen4b-code-nothink-localize | 4.022.468.096 | No disponible | Sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Base (modelo base) | Misma familia y tamano (4B), valor exacto no disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
+| modrill/code-nothink-q4b-20260908 (especialista de origen) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | Otros merges derivados de Qwen3-4B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion cuantitativa no es posible con los datos suministrados: no hay metricas del artefacto ni de sus antecesores. La unica diferencia verificable es de procedencia (pesos fusionados mediante localize frente a pesos del base) y de licencia declarada en este repositorio (apache-2.0).
@@ -96,7 +96,7 @@ La comparacion cuantitativa no es posible con los datos suministrados: no hay me
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Montalte/qwen4b-code-nothink-localize
+- Modelo en Hugging Face: https://huggingface.co/Montalte/qwen4b-code-nothink-localize
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Especialista de origen (referencia derivada del identificador citado en la model card): https://huggingface.co/modrill/code-nothink-q4b-20260908
 - Guia de configuracion local de Qwen 3 (modos think/nothink, contexto y parametros): https://localaimaster.com/blog/qwen-3-local-setup-guide

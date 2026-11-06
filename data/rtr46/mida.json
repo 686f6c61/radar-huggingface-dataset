@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rtr46/mida",
+  "slug": "rtr46-mida",
+  "author": "rtr46",
+  "url": "https://huggingface.co/rtr46/mida",
+  "created_at": "2026-11-06T10:03:18.000Z",
+  "updated_at": "2026-11-06T10:10:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-text",
+  "library": "tensorrt",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "tensorrt",
+    "onnx",
+    "text-detection",
+    "textline_detection",
+    "computer-vision",
+    "japanese",
+    "ocr",
+    "OCR",
+    "image-to-text",
+    "en",
+    "ja",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1751881,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rtr46 (rtr46) - Hugging Face",
+      "url": "https://huggingface.co/rtr46",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... updated a Space 1 day ago"
+    },
+    {
+      "title": "rtr46 (rtr46) - Hugging Face",
+      "url": "https://huggingface.co/rtr46/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... updated a model about 4 hours ago"
+    }
+  ]
+}

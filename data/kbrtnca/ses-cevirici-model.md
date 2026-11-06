@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ses-cevirici-model es un modelo de reconocimiento automatico del habla (ASR) publicado por el usuario kbrtnca en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo Whisper small de OpenAI, especializado en turco y exportado a formato ONNX de 8 bits para su ejecucion en el navegador mediante la libreria transformers.js. El repositorio ocupa 0,3 GB, lo que confirma la compresion propia de la cuantizacion a 8 bits sobre la base de Whisper small.
+Ses-cevirici-model es un modelo de reconocimiento automatico del habla (ASR) publicado por el usuario kbrtnca en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo Whisper small de OpenAI, especializado en turco y exportado a formato ONNX de 8 bits para su ejecucion en el navegador mediante la libreria transformers.js. El repositorio ocupa 0,3 GB, lo que confirma la compresion propia de la cuantizacion a 8 bits sobre la base de Whisper small.
 
 El modelo resuelve la transcripcion de audio a texto en turco directamente en el cliente, sin necesidad de enviar el audio a un servidor. Esto lo hace relevante para aplicaciones web que requieren privacidad, baja latencia o funcionamiento offline, ya que transformers.js permite ejecutar la inferencia con WebAssembly o WebGPU en el propio navegador. La model card es extremadamente escueta: una unica frase en turco que describe el modelo como "Whisper small ajustado a medida (turco), version ONNX de 8 bits que funciona en el navegador".
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kbrtnca/ses-cevirici-model | no disponible (Whisper small base) | no disponible (ventanas de 30 s) | Turco | no disponible | ONNX 8 bits | HuggingFace, 0 descargas |
-| openai/whisper-small | ~244 M | 30 s de audio | Multilingue (99 idiomas) | MIT | PyTorch, safetensors | HuggingFace, ampliamente usado |
-| openai/whisper-small.tr | ~244 M | 30 s de audio | Turco | MIT | PyTorch, safetensors | HuggingFace, ajuste oficial para turco |
+| kbrtnca/ses-cevirici-model | no disponible (Whisper small base) | no disponible (ventanas de 30 s) | Turco | no disponible | ONNX 8 bits | Hugging Face, 0 descargas |
+| openai/whisper-small | ~244 M | 30 s de audio | Multilingue (99 idiomas) | MIT | PyTorch, safetensors | Hugging Face, ampliamente usado |
+| openai/whisper-small.tr | ~244 M | 30 s de audio | Turco | MIT | PyTorch, safetensors | Hugging Face, ajuste oficial para turco |
 
 La comparativa se limita a la familia Whisper small, ya que no se dispone de informacion sobre otros modelos ASR especificos para turco en formato ONNX de 8 bits para navegador. El modelo de kbrtnca se diferencia por su formato ONNX cuantizado y su orientacion a transformers.js, pero carece de la documentacion y validacion de los modelos oficiales de OpenAI.
 
@@ -78,5 +78,5 @@ La comparativa se limita a la familia Whisper small, ya que no se dispone de inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kbrtnca/ses-cevirici-model
+- Hugging Face: https://huggingface.co/kbrtnca/ses-cevirici-model
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

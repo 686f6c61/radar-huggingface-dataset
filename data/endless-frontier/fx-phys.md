@@ -6,7 +6,7 @@ Fx-Phys es un modelo de lenguaje multimodal de tipo *image-text-to-text* desarro
 
 Su relevancia radica en el salto medido frente a su modelo base en los benchmarks que el autor reporta: PRL-Bench pasa de 26,61 a 37,93, PRL-Bench Verified de 35,45 a 58,00, Frontier Science Research (Physics) de 8,5 a 53,5 y Olympiad (Physics) de 64,8 a 74,0. Además de física, el autor publica resultados en dos benchmarks financieros (Finance Agent v2 y Frontier Finance), lo que sugiere un interés en razonamiento cuantitativo y uso de herramientas en dominios científicos y analíticos.
 
-La ficha se basa exclusivamente en la model card publicada y en los metadatos de HuggingFace. No se han encontrado en la búsqueda web enlaces técnicos adicionales: los resultados obtenidos corresponden a entidades homónimas sin relación con el modelo (empresas de gestión de residuos, material deportivo, capital privado y piscinas), por lo que se descartan como fuentes.
+La ficha se basa exclusivamente en la model card publicada y en los metadatos de Hugging Face. No se han encontrado en la búsqueda web enlaces técnicos adicionales: los resultados obtenidos corresponden a entidades homónimas sin relación con el modelo (empresas de gestión de residuos, material deportivo, capital privado y piscinas), por lo que se descartan como fuentes.
 
 ## Especificaciones tecnicas
 
@@ -103,8 +103,8 @@ Según el autor, Fx-Phys obtiene el mejor resultado entre los modelos de clase 3
 
 | Modelo | Parametros | Activos | Contexto | PRL-Bench Verified | Olympiad (Physics) | Licencia | Disponibilidad |
 | :---- | :---- | :---- | :---- | ---: | ---: | :---- | :---- |
-| Fx-Phys | 35,95B | ~3B | 262.144 | 58,00 | 74,0 | Apache 2.0 | HuggingFace (endless-frontier/Fx-Phys) |
-| Qwen3.6-35B-A3B | 35B | ~3B | no disponible en la informacion | 35,45 | 64,8 | no disponible en la informacion | HuggingFace (Qwen/Qwen3.6-35B-A3B) |
+| Fx-Phys | 35,95B | ~3B | 262.144 | 58,00 | 74,0 | Apache 2.0 | Hugging Face (endless-frontier/Fx-Phys) |
+| Qwen3.6-35B-A3B | 35B | ~3B | no disponible en la informacion | 35,45 | 64,8 | no disponible en la informacion | Hugging Face (Qwen/Qwen3.6-35B-A3B) |
 | Nex-N2-mini | no disponible | no disponible | no disponible | 33,84 | 64,0 | no disponible en la informacion | no disponible en la informacion |
 | Apodex-mini-1.0 | no disponible | no disponible | no disponible | 19,96 | 70,0 | no disponible en la informacion | no disponible en la informacion |
 
@@ -126,7 +126,7 @@ Frente a modelos de mayor tamano o cerrados, el autor sitúa a Fx-Phys por debaj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/endless-frontier/Fx-Phys
+- Modelo en Hugging Face: https://huggingface.co/endless-frontier/Fx-Phys
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Figura de resultados citada en la model card: https://huggingface.co/endless-frontier/Fx-Phys/resolve/main/assets/Fx-Phys.png
 - Licencia del repositorio: https://huggingface.co/endless-frontier/Fx-Phys/blob/main/LICENSE

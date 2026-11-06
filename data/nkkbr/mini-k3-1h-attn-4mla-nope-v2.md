@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mini-K3-1H-attn-4mla-nope-v2 es un checkpoint de preentrenamiento de la familia Mini-K3-1H, publicado por el usuario nkkbr en HuggingFace. Se trata de un proxy de investigación de aproximadamente 981.692.224 parámetros lógicos (318.467.904 activados por token) que reproduce a pequeña escala los operadores de la arquitectura Kimi-K3: Gated MLA, Attention Residuals por bloques, Stable LatentMoE, activaciones SiTU, puertas de salida y Quantile Balancing. El modelo forma parte de una comparación controlada de 20 arquitecturas en la que se modifican deliberadamente la proporción KDA/MLA, la granularidad de decaimiento, la longitud de convolución o la codificación posicional.
+Mini-K3-1H-attn-4mla-nope-v2 es un checkpoint de preentrenamiento de la familia Mini-K3-1H, publicado por el usuario nkkbr en Hugging Face. Se trata de un proxy de investigación de aproximadamente 981.692.224 parámetros lógicos (318.467.904 activados por token) que reproduce a pequeña escala los operadores de la arquitectura Kimi-K3: Gated MLA, Attention Residuals por bloques, Stable LatentMoE, activaciones SiTU, puertas de salida y Quantile Balancing. El modelo forma parte de una comparación controlada de 20 arquitecturas en la que se modifican deliberadamente la proporción KDA/MLA, la granularidad de decaimiento, la longitud de convolución o la codificación posicional.
 
 Este repositorio concreto corresponde a la variante attn-4mla-nope: no incluye ninguna capa KDA, emplea Gated MLA con codificación posicional NoPE en sus 13 capas decoder y tiene un tamaño de bloque de Attention Residuals de 4. Por tanto, no es un modelo destinado a uso conversacional ni a producción, sino una pieza dentro de un experimento de ablación arquitectónica reproducible.
 
@@ -101,6 +101,6 @@ La informacion proporcionada no incluye resultados de benchmarks ni datos compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nkkbr/Mini-K3-1H-attn-4mla-nope-v2
+- Hugging Face: https://huggingface.co/nkkbr/Mini-K3-1H-attn-4mla-nope-v2
 - El repositorio incluye como archivos de referencia `ARCHITECTURE_PACKAGE_README.md`, `ARCHITECTURE.md`, `VARIANT.md`, `modeling_mini_k3.py`, `configuration_mini_k3.py`, `initialize_model.py` y `smoke_test.py`.
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales relevantes para este modelo.

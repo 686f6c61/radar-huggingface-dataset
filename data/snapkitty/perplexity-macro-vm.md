@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Perplexity Macro VM es un proyecto de investigación publicado por el usuario Snapkitty en HuggingFace y GitHub. No se trata de un modelo de lenguaje o de IA generativa, sino de una máquina virtual determinista de 16 bits diseñada para ejecutar flujos de investigación tipo Perplexity —planificación, búsqueda, evidencia, crítica y síntesis— compilados a ROM. El sistema está implementado en Elixir con GenServer OTP y Phoenix LiveView, y delega el trabajo de procesamiento de lenguaje, búsqueda web y ejecución de código a modelos externos (Ollama, OpenAI, OpenRouter) o locales, manteniendo el control del flujo en la propia VM mediante instrucciones tipadas y capacidades limitadas.
+Perplexity Macro VM es un proyecto de investigación publicado por el usuario Snapkitty en Hugging Face y GitHub. No se trata de un modelo de lenguaje o de IA generativa, sino de una máquina virtual determinista de 16 bits diseñada para ejecutar flujos de investigación tipo Perplexity —planificación, búsqueda, evidencia, crítica y síntesis— compilados a ROM. El sistema está implementado en Elixir con GenServer OTP y Phoenix LiveView, y delega el trabajo de procesamiento de lenguaje, búsqueda web y ejecución de código a modelos externos (Ollama, OpenAI, OpenRouter) o locales, manteniendo el control del flujo en la propia VM mediante instrucciones tipadas y capacidades limitadas.
 
 El proyecto resuelve el problema de la trazabilidad y determinismo en agentes de investigación: cada instrucción ejecutada se registra, se puede auditar y el estado completo (ROM, RAM, registros, ciclos, hash de transcripción) es reproducible. Su relevancia actual radica en que propone una arquitectura híbrida donde la VM controla el razonamiento de alto nivel mientras los modelos de IA actúan como herramientas bajo límites de capacidad definidos. No es un modelo descargable ni un peso entrenado; es un sistema de software que orquesta otros modelos.
 
-La información pública es limitada: no hay métricas de rendimiento, benchmarks ni comparativas con otros sistemas. La licencia declarada en la model card es "Sovereign Source License v1.0", aunque en HuggingFace figura como no disponible. El proyecto incluye un compilador para un lenguaje macro (.pqm), un agente de consola web y adaptadores para Tavily, Wikipedia, WolframAlpha, entre otros.
+La información pública es limitada: no hay métricas de rendimiento, benchmarks ni comparativas con otros sistemas. La licencia declarada en la model card es "Sovereign Source License v1.0", aunque en Hugging Face figura como no disponible. El proyecto incluye un compilador para un lenguaje macro (.pqm), un agente de consola web y adaptadores para Tavily, Wikipedia, WolframAlpha, entre otros.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La información pública es limitada: no hay métricas de rendimiento, benchmark
 | Longitud de contexto | no disponible (depende del modelo LLM externo que se conecte) |
 | Tipos de cuantizacion | no disponible (no aplica a la VM; depende del modelo LLM externo) |
 | Idiomas soportados | no disponibles (la interfaz y la documentacion estan en ingles; el modelo LLM subyacente define los idiomas) |
-| Licencia | Sovereign Source License v1.0 (segun la model card; en HuggingFace figura como no disponible) |
+| Licencia | Sovereign Source License v1.0 (segun la model card; en Hugging Face figura como no disponible) |
 | Formato de pesos | no disponible (no hay pesos; el codigo fuente en Elixir y el ROM compilado son los artefactos) |
 
 ## Arquitectura y entrenamiento
@@ -71,13 +71,13 @@ No disponible. Perplexity Macro VM no es un modelo de IA comparable con LLMs com
 - Licencia restrictiva: la Sovereign Source License v1.0 no es una licencia de codigo abierto convencional (no es MIT, Apache ni GPL). Incluye clausulas de patente pendiente y puede limitar el uso comercial o la redistribucion. Conviene revisar los terminos exactos antes de usarlo en produccion.
 - Riesgo de alucinacion heredado: al delegar la generacion de texto a modelos externos, el sistema hereda sus sesgos y tendencia a inventar informacion. Las instrucciones VERIFY y EVIDENCE ayudan a mitigarlo, pero no lo eliminan.
 - No hay soporte de idiomas declarado: la documentacion y la interfaz estan en ingles; el comportamiento en otros idiomas depende del modelo LLM conectado.
-- Proyecto en fase temprana: cero descargas y cero likes en HuggingFace sugieren que no hay una comunidad establecida ni casos de produccion conocidos. La fecha de creacion (septiembre 2026) es reciente.
+- Proyecto en fase temprana: cero descargas y cero likes en Hugging Face sugieren que no hay una comunidad establecida ni casos de produccion conocidos. La fecha de creacion (septiembre 2026) es reciente.
 - El adaptador de terminal es una simulacion en cliente; no ejecuta comandos reales del sistema, lo que limita su utilidad en entornos de produccion.
 - La seguridad de las capacidades sensibles (email, escritura de archivos) depende de la implementacion del host; en la consola web estas funciones estan simuladas, no implementadas de forma robusta.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/perplexity-macro-vm
+- Hugging Face: https://huggingface.co/Snapkitty/perplexity-macro-vm
 - GitHub: https://github.com/SNAPKITTYWEST/perplexity-macro-vm
 - README en GitHub: https://github.com/SNAPKITTYWEST/perplexity-macro-vm/blob/main/README.md
 - Consola de agente en vivo: https://snapkittywest.github.io/perplexity-macro-vm/

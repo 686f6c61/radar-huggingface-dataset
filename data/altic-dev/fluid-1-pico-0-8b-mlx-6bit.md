@@ -69,6 +69,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/altic-dev/Fluid-1-Pico-0.8B-MLX-6bit)
+- [Modelo en Hugging Face](https://huggingface.co/altic-dev/Fluid-1-Pico-0.8B-MLX-6bit)
 - [Términos de licencia ALTIC](https://huggingface.co/altic-dev/Fluid-1-Pico-0.8B-MLX-6bit/blob/main/ALTIC-MODEL-TERMS.md)
 - [Modelo base Qwen3.5-0.8B](https://huggingface.co/Qwen/Qwen3.5-0.8B)

@@ -4,7 +4,7 @@
 
 Sleeper-Agent-Security es un adaptador LoRA/QLoRA publicado por CyberBuddyAI sobre el modelo base Qwen/Qwen3.5-9B. Se trata de un "model organism" de investigación en seguridad: un modelo deliberadamente modificado para estudiar comportamientos de agente durmiente (sleeper agent), puertas traseras y troyanos en sistemas de IA. El repositorio está etiquetado con áreas de seguridad ofensiva y defensiva (red-team, blue-team, pentesting, investigación de vulnerabilidades, seguridad cloud e IAM) y con disciplinas de alineación e interpretabilidad.
 
-El modelo no está pensado como asistente de producción, sino como artefacto controlado para que investigadores de seguridad y alineación puedan reproducir, detectar y analizar comportamientos condicionados por disparadores. La ficha técnica de HuggingFace indica que se distribuye como adaptador PEFT en safetensors de aproximadamente 0,2 GB, sobre una base de 9 mil millones de parámetros, con licencia Apache 2.0 y acceso restringido que exige aceptar condiciones en la plataforma.
+El modelo no está pensado como asistente de producción, sino como artefacto controlado para que investigadores de seguridad y alineación puedan reproducir, detectar y analizar comportamientos condicionados por disparadores. La ficha técnica de Hugging Face indica que se distribuye como adaptador PEFT en safetensors de aproximadamente 0,2 GB, sobre una base de 9 mil millones de parámetros, con licencia Apache 2.0 y acceso restringido que exige aceptar condiciones en la plataforma.
 
 Su relevancia actual radica en que los model organisms de este tipo permiten validar técnicas de interpretabilidad y de auditoría de seguridad antes de que aparezcan comportamientos análogos en modelos desplegados. La referencia arXiv:2401.05566 en las etiquetas apunta al trabajo sobre sleeper agents, lo que sitúa al adaptador en la línea de investigación de backdoors persistentes que sobreviven al entrenamiento de seguridad.
 
@@ -46,7 +46,7 @@ La naturaleza de "model organism" y las etiquetas de sleeper-agent, backdoor y t
 - Formacion de equipos de seguridad: escenario de laboratorio para entrenar analistas en la identificacion de modelos troyanizados y en la evaluacion de riesgos de cadena de suministro de adaptadores PEFT.
 - Evaluacion de seguridad cloud e IAM: las etiquetas del repositorio apuntan a escenarios de analisis de configuraciones y permisos en entornos cloud, usables como banco de pruebas de asistentes de seguridad.
 - Estudio de robustez de agentes: analisis de como un agente basado en Qwen3.5-9B modifica su comportamiento al aplicar un adaptador de bajo rango, midiendo deriva respecto al modelo base.
-- Pruebas de cadena de suministro de modelos: verificacion de que los controles de acceso restringido y las revisiones de adaptadores en HuggingFace detectan artefactos con comportamiento intencionadamente alterado.
+- Pruebas de cadena de suministro de modelos: verificacion de que los controles de acceso restringido y las revisiones de adaptadores en Hugging Face detectan artefactos con comportamiento intencionadamente alterado.
 
 ## Benchmarks y rendimiento
 
@@ -77,13 +77,13 @@ No se dispone de datos de rendimiento comparado ni de modelos alternativos equiv
 - Riesgo de respuestas condicionadas por disparadores no documentados publicamente; el autor no detalla los disparadores en la informacion disponible.
 - Riesgo de alucinacion inherente al modelo base Qwen3.5-9B, no cuantificado en esta ficha.
 - Sesgos del modelo base y del corpus de ajuste en ingles; capacidades multilingues no garantizadas.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que limita la reproducibilidad abierta.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que limita la reproducibilidad abierta.
 - Licencia Apache 2.0 permite uso comercial del artefacto, pero su naturaleza de model organism desaconseja cualquier uso fuera de investigacion controlada.
 - Posible incumplimiento de politicas de plataforma si se usa para generar contenido ofensivo; revisar terminos de uso antes de cualquier despliegue.
 - Sin datos publicados de evaluacion de seguridad, robustez ni tasas de activacion del comportamiento condicionado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CyberBuddyAI/Sleeper-Agent-Security
+- Hugging Face: https://huggingface.co/CyberBuddyAI/Sleeper-Agent-Security
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper de referencia (sleeper agents): https://arxiv.org/abs/2401.05566

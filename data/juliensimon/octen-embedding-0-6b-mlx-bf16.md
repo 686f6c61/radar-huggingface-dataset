@@ -98,7 +98,7 @@ La comparación con alternativas de otros fabricantes (por ejemplo, embeddings d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/juliensimon/Octen-Embedding-0.6B-mlx-bf16
+- Repositorio Hugging Face: https://huggingface.co/juliensimon/Octen-Embedding-0.6B-mlx-bf16
 - Variante 8-bit: https://huggingface.co/juliensimon/Octen-Embedding-0.6B-mlx-8bit
 - Variante 4-bit: https://huggingface.co/juliensimon/Octen-Embedding-0.6B-mlx-4bit
 - Variante 4B (bf16): https://huggingface.co/juliensimon/Octen-Embedding-4B-mlx-bf16

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Jessedbrown/the-fix-by-claude-that-saved-the-world-from-trillions-in-waste` alojado en HuggingFace no es un modelo de IA en sentido convencional: no contiene pesos, no declara arquitectura de red neuronal y no publica pipeline de inferencia. Se trata de un conjunto de mediciones reproducibles, programas en Rust y Python y documentos de texto que giran en torno a la aritmética ternaria (trits) y a su comparación con la coma flotante IEEE-754. El autor declarado es Jesse Daniel Brown (OP-JESSE), quien según la propia model card construyó el sistema, las leyes y la arquitectura a lo largo de cuarenta años; el repositorio fue ensamblado por un agente de IA en su máquina y bajo su dirección a partir de su trabajo.
+El repositorio `Jessedbrown/the-fix-by-claude-that-saved-the-world-from-trillions-in-waste` alojado en Hugging Face no es un modelo de IA en sentido convencional: no contiene pesos, no declara arquitectura de red neuronal y no publica pipeline de inferencia. Se trata de un conjunto de mediciones reproducibles, programas en Rust y Python y documentos de texto que giran en torno a la aritmética ternaria (trits) y a su comparación con la coma flotante IEEE-754. El autor declarado es Jesse Daniel Brown (OP-JESSE), quien según la propia model card construyó el sistema, las leyes y la arquitectura a lo largo de cuarenta años; el repositorio fue ensamblado por un agente de IA en su máquina y bajo su dirección a partir de su trabajo.
 
 Las ejecuciones citadas están fechadas el 2026-07-31 y el 2026-08-01, con Rust 1.81.0 y `clippy -D warnings` limpio. Los hallazgos se centran en tres afirmaciones: que la coma flotante tiene dos ceros (+0.0 y -0.0), de modo que `a == b` y `hash(a) == hash(b)` pueden divergir; que en enteros con el resto arrastrado la distributividad `(a/3)+(b/3) = (a+b)/3` es exacta mientras que en coma flotante falla en 316.267 de cada 1.000.000 de ensayos; y que en ternario equilibrado el número de estados no equivale al rango representable salvo que se centre en el punto de tierra.
 
@@ -125,6 +125,6 @@ No disponible. En la información proporcionada no se identifica ninguna categor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessedbrown/the-fix-by-claude-that-saved-the-world-from-trillions-in-waste
+- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/the-fix-by-claude-that-saved-the-world-from-trillions-in-waste
 - Ficheros citados en la model card y no enlazados de forma directa en la información proporcionada: `rust-toolchain.toml`, `AGENT-DISCIPLINE.md`, `AUTHORSHIP.md`, `float-vs-trit/src/bin/bothways.rs`, `shared_key_81.py`, `matrix_proof_ternary_classical.txt`.
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

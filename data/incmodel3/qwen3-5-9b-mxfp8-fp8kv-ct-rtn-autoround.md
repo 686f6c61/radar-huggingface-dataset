@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-MXFP8-FP8KV-CT-RTN-AutoRound es una cuantización en formato MXFP8 del modelo Qwen/Qwen3.5-9B, publicada por el usuario INCModel3 en HuggingFace y generada con la herramienta AutoRound de Intel, integrada en un flujo automatizado denominado autoquant-agent. El objetivo es reducir el coste de memoria y de cómputo del modelo original manteniendo la mayor parte de su calidad, empleando pesos en punto flotante de 8 bits con escalas compartidas por bloques (microscaling) y una caché KV también en FP8, según indica el propio nombre del repositorio (MXFP8-FP8KV).
+Qwen3.5-9B-MXFP8-FP8KV-CT-RTN-AutoRound es una cuantización en formato MXFP8 del modelo Qwen/Qwen3.5-9B, publicada por el usuario INCModel3 en Hugging Face y generada con la herramienta AutoRound de Intel, integrada en un flujo automatizado denominado autoquant-agent. El objetivo es reducir el coste de memoria y de cómputo del modelo original manteniendo la mayor parte de su calidad, empleando pesos en punto flotante de 8 bits con escalas compartidas por bloques (microscaling) y una caché KV también en FP8, según indica el propio nombre del repositorio (MXFP8-FP8KV).
 
 El modelo se distribuye en formato safetensors con el esquema compressed-tensors, orientado a inferencia de generación de texto y uso conversacional. La model card declara que se debe respetar la licencia del modelo original, pero no especifica cuál es, y no se indican idiomas soportados ni longitud de contexto.
 
@@ -76,8 +76,8 @@ No se han identificado en la información proporcionada otros modelos comparable
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| INCModel3/Qwen3.5-9B-MXFP8-FP8KV-CT-RTN-AutoRound | 2.497.600.768 (~2,5 B) segun safetensors; nombre indica 9B | no disponible | MXFP8 + KV FP8 | no disponible | HuggingFace, 0 descargas y 0 likes en el momento del registro |
-| Qwen/Qwen3.5-9B (modelo base) | no disponible | no disponible | BF16/FP16 original | no disponible | HuggingFace |
+| INCModel3/Qwen3.5-9B-MXFP8-FP8KV-CT-RTN-AutoRound | 2.497.600.768 (~2,5 B) segun safetensors; nombre indica 9B | no disponible | MXFP8 + KV FP8 | no disponible | Hugging Face, 0 descargas y 0 likes en el momento del registro |
+| Qwen/Qwen3.5-9B (modelo base) | no disponible | no disponible | BF16/FP16 original | no disponible | Hugging Face |
 | Otras cuantizaciones del mismo base (GGUF, AWQ, GPTQ) | no disponibles | no disponibles | no disponible | no disponible | no verificado en la informacion disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se han identificado en la información proporcionada otros modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/INCModel3/Qwen3.5-9B-MXFP8-FP8KV-CT-RTN-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/INCModel3/Qwen3.5-9B-MXFP8-FP8KV-CT-RTN-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - AutoRound (Intel): https://github.com/intel/auto-round
 - autoquant-agent: el enlace incluido en la model card apunta a https://github.com/ sin ruta de repositorio, por lo que no es utilizable.

@@ -32,7 +32,7 @@ No se dispone de información sobre el número de tokens de entrenamiento, la co
 - Decisión de alto nivel para robótica: selección de objeto (choose_object) a partir de la observación del robot bípedo LINK-01.
 - Generación de texto en coreano para expresar la acción o decisión elegida.
 - Aprendizaje por refuerzo (PPO) como mecanismo de ajuste, no solo supervisión.
-- Integración con el ecosistema HuggingFace Transformers y PEFT para carga del adaptador.
+- Integración con el ecosistema Hugging Face Transformers y PEFT para carga del adaptador.
 - Capacidades de propósito general heredadas del modelo base Qwen3.5-0.8B: no documentadas en la información disponible para este adaptador.
 - Soporte de tool calling, agentes, visión, audio o modo de razonamiento extendido: no disponible.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | 0,8 B (base) + LoRA | no disponible | Decisión robótica choose_object | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base sin ajuste) | 0,8 B | no disponible | Propósito general | no disponible en la información | HuggingFace |
+| LINK-01 (este modelo) | 0,8 B (base) + LoRA | no disponible | Decisión robótica choose_object | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base sin ajuste) | 0,8 B | no disponible | Propósito general | no disponible en la información | Hugging Face |
 | Adaptadores LoRA de robótica comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros adaptadores de RL para robótica directamente comparables en la documentación proporcionada.
@@ -85,5 +85,5 @@ No se dispone de información sobre otros adaptadores de RL para robótica direc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kareyoung09/connectailab-rl-kay09-yisunsin-object-v1-link01
+- Hugging Face: https://huggingface.co/kareyoung09/connectailab-rl-kay09-yisunsin-object-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

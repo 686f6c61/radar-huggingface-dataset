@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (E2K-cd82-...-iter0) | 27,78 B | No disponible | Apache-2.0 | Público en HuggingFace, 0 descargas, 0 likes | Solo SFT sobre un juego de ARC-AGI-3; resultado negativo documentado |
+| Este checkpoint (E2K-cd82-...-iter0) | 27,78 B | No disponible | Apache-2.0 | Público en Hugging Face, 0 descargas, 0 likes | Solo SFT sobre un juego de ARC-AGI-3; resultado negativo documentado |
 | Qwen/Qwen3.8-27B (base) | 27,78 B | No disponible | Apache-2.0 | Público | Modelo generalista de partida; misma pila de texto, visión y `mtp` |
 | Otras alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No se han identificado en la información proporcionada otros checkpoints comparables de internalización de conocimiento sobre ARC-AGI-3 |
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_inter_decl-cc2-iter0
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_inter_decl-cc2-iter0
 - Dataset de RL de la ejecución (episodios, métricas, filas y log): https://huggingface.co/datasets/ziyan98/E2K-cd82-rl-internalization
 - Dataset del conjunto de conocimiento (arnés): https://huggingface.co/datasets/ziyan98/E2K-cd82-harness-knowledge
 - Dataset E2K-40: https://huggingface.co/datasets/ziyan98/E2K-40

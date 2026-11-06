@@ -89,7 +89,7 @@ Las cifras concretas de rendimiento de estas alternativas no estan disponibles e
 - No es un modelo: carece de pesos, de capacidades generativas y de cualquier utilidad fuera del ecosistema Fabric.
 - Dependencia estricta de tres variables: fichero de modelo exacto (verificado por SHA-256), build del motor y version de las instrucciones de Fabric. Cualquier desajuste provoca que Fabric ignore el fichero y vuelva a leer el prompt completo.
 - Cargar el fichero en otro programa, otro modelo u otro build de llama.cpp no funciona, segun la propia model card.
-- No hay informacion sobre licencia del repositorio, idiomas soportados ni pipeline declarado en HuggingFace.
+- No hay informacion sobre licencia del repositorio, idiomas soportados ni pipeline declarado en Hugging Face.
 - Sin descargas ni likes en el momento de la consulta: no existe validacion independiente por parte de la comunidad.
 - Ausencia total de benchmarks publicados: no se puede verificar la mejora de latencia declarada ni compararla con alternativas.
 - Los ficheros son especificos de macOS sobre Apple silicon (motor `victoria-mtp-b11512`); su comportamiento en otros sistemas no esta documentado.
@@ -99,7 +99,7 @@ Las cifras concretas de rendimiento de estas alternativas no estan disponibles e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Farpoint/fabric-prompt-cache
+- Repositorio en Hugging Face: https://huggingface.co/Farpoint/fabric-prompt-cache
 - Aplicacion Fabric: https://codewithfabric.com
 - Modelo 27B en GGUF (unsloth): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Modelo draft para el 27B (z-lab): https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2-GGUF

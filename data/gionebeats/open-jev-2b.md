@@ -22,7 +22,7 @@ Es relevante porque propone un patrón distinto al del asistente generativo: dec
 | Formato de pesos | safetensors (adaptador LoRA PEFT + cabeza escalar); requiere Transformers 5.10.2 y PEFT 0.19.1 |
 | Modelo base | Qwen/Qwen3.5-2B, revision fijada 15852e8c16360a2fea060d615a32b45270f8a8fc |
 | Tipo de salida | Decisiones tipadas (choice, noul, score); no generativa |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -83,7 +83,7 @@ No se dispone de información sobre alternativas comparables (otros adaptadores 
 | Tipo de salida | Decisiones tipadas con probabilidades | Generacion de texto autoregresiva | No disponible |
 | Licencia | apache-2.0 | No disponible en la informacion proporcionada | No disponible |
 | Formato de pesos | safetensors (PEFT) | safetensors (segun convencion, no confirmado aqui) | No disponible |
-| Disponibilidad | Repositorio HuggingFace con 0 descargas y 0 likes; tamano de repo 0,0 GB | Publicado en HuggingFace | No disponible |
+| Disponibilidad | Repositorio Hugging Face con 0 descargas y 0 likes; tamano de repo 0,0 GB | Publicado en Hugging Face | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -103,7 +103,7 @@ No se dispone de información sobre alternativas comparables (otros adaptadores 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/gionebeats/Open-Jev-2B
+- Repositorio Hugging Face del modelo: https://huggingface.co/gionebeats/Open-Jev-2B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Cargador y servidor Open-Jev (GitHub): https://github.com/Zefan-Cai/Open-Jev
 - Checkpoint referenciado en la model card: https://huggingface.co/ZefanCai/Open-Jev-2B

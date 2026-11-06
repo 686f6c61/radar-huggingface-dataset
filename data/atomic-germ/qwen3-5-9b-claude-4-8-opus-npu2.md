@@ -97,7 +97,7 @@ Las alternativas en GGUF (kwangsuklee y Jackrong) son comparables en tamaño y e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomic-Germ/Qwen3.5-9B-Claude-4.8-Opus-NPU2
+- Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/Qwen3.5-9B-Claude-4.8-Opus-NPU2
 - Modelo base Qwen/Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Motor FastFlowLM: https://fastflowlm.com
 - Variante relacionada (Claude-Code): https://huggingface.co/Atomic-Germ/Qwen3.5-9B-Claude-Code-NPU2

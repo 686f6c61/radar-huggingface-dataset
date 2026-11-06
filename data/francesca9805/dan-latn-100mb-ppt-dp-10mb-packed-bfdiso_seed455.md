@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455` es un ajuste fino (SFT) del modelo base `goldfish-models/dan_latn_100mb`, un GPT-2 monolingüe de 124,77 millones de parámetros orientado a danés en escritura latina. Lo publica el usuario de HuggingFace `francesca9805` y se ha entrenado con la librería TRL (versión 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.5.1. Por el nombre del repositorio, el experimento parece corresponder a una ablación con 10 MB de datos empaquetados ("packed") y una semilla concreta (455), dentro de una familia de variantes con distintas semillas y tamaños de datos publicadas por el mismo autor.
+El modelo `francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455` es un ajuste fino (SFT) del modelo base `goldfish-models/dan_latn_100mb`, un GPT-2 monolingüe de 124,77 millones de parámetros orientado a danés en escritura latina. Lo publica el usuario de Hugging Face `francesca9805` y se ha entrenado con la librería TRL (versión 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.5.1. Por el nombre del repositorio, el experimento parece corresponder a una ablación con 10 MB de datos empaquetados ("packed") y una semilla concreta (455), dentro de una familia de variantes con distintas semillas y tamaños de datos publicadas por el mismo autor.
 
 Se trata, por tanto, de un modelo pequeño de investigación más que de un modelo de producción: el repositorio ocupa 0,3 GB, no acumula descargas ni valoraciones y no incluye información sobre el corpus de ajuste, el número de tokens vistos, la licencia ni los idiomas soportados más allá de lo que sugiere el identificador del modelo base. El pipeline declarado es `text-generation` y los tags incluyen `sft`, `trl`, `generated_from_trainer` y `endpoints_compatible`, lo que indica compatibilidad con Text Generation Inference.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455 | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT del base Goldfish danés |
-| goldfish-models/dan_latn_100mb | aproximadamente 124 M | no disponible | no disponible en la información proporcionada | HuggingFace | Modelo base preentrenado con 100 MB de danés |
-| francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10 | no disponible (presumiblemente idéntico) | no disponible | no disponible | HuggingFace | Variante con otra semilla, mismo esquema experimental |
-| francesca9805/dan-latn-100mb-ppt-Dp-100mb-packed-bfd_seed455 | no disponible (presumiblemente idéntico) | no disponible | no disponible | HuggingFace y FriendliAI | Variante con 100 MB en lugar de 10 MB |
+| francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455 | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT del base Goldfish danés |
+| goldfish-models/dan_latn_100mb | aproximadamente 124 M | no disponible | no disponible en la información proporcionada | Hugging Face | Modelo base preentrenado con 100 MB de danés |
+| francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10 | no disponible (presumiblemente idéntico) | no disponible | no disponible | Hugging Face | Variante con otra semilla, mismo esquema experimental |
+| francesca9805/dan-latn-100mb-ppt-Dp-100mb-packed-bfd_seed455 | no disponible (presumiblemente idéntico) | no disponible | no disponible | Hugging Face y FriendliAI | Variante con 100 MB en lugar de 10 MB |
 
 No se dispone de datos de rendimiento comparado entre estas variantes ni frente a modelos daneses de mayor tamaño, por lo que la comparación se limita a parámetros, procedencia y disponibilidad.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes ni frente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/dan_latn_100mb
 - Variante con semilla 10: https://huggingface.co/francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10
 - Variante con 100 MB de datos: https://huggingface.co/francesca9805/dan-latn-100mb-ppt-Dp-100mb-packed-bfd_seed455

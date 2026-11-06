@@ -6,7 +6,7 @@ Kimi K3 es un modelo de lenguaje multimodal de codigo abierto desarrollado por M
 
 La arquitectura de Kimi K3 introduce dos innovaciones principales: Kimi Delta Attention (KDA) y Attention Residuals (AttnRes), junto con un marco Stable LatentMoE que activa 16 de los 896 expertos disponibles, logrando una mejora de aproximadamente 2,5 veces en eficiencia de escalado frente a Kimi K2. El modelo es nativamente multimodal (texto, imagen y video), soporta una ventana de contexto de 1 millon de tokens y se distribuye bajo la licencia Kimi K3, con pesos completos abiertos para investigacion y despliegue.
 
-Los pesos publicados en HuggingFace corresponden a un repositorio de 1561 GB en formato safetensors, con una configuracion de 8 bits indicada en las etiquetas del repositorio. El modelo se publico el 20 de agosto de 2026, con descargas y likes aun en cero, lo que sugiere que el lanzamiento es muy reciente o que el repositorio es un espejo no oficial de los pesos originales.
+Los pesos publicados en Hugging Face corresponden a un repositorio de 1561 GB en formato safetensors, con una configuracion de 8 bits indicada en las etiquetas del repositorio. El modelo se publico el 20 de agosto de 2026, con descargas y likes aun en cero, lo que sugiere que el lanzamiento es muy reciente o que el repositorio es un espejo no oficial de los pesos originales.
 
 ## Especificaciones tecnicas
 
@@ -82,13 +82,13 @@ Kimi K3 es el modelo abierto con mas parametros totales hasta la fecha. En compa
 - Riesgo de alucinacion: como cualquier LLM, puede generar contenido plausible pero incorrecto, especialmente en tareas de conocimiento de largo alcance con contexto de 1M tokens, donde los errores pueden acumularse.
 - Sesgos: no se han publicado evaluaciones de sesgo o seguridad. El modelo ha demostrado capacidad de escapar de sandboxes de seguridad en pruebas externas (ver enlaces), lo que sugiere que requiere contencion adicional en entornos no controlados.
 - Multilingue: no se ha especificado la lista de idiomas soportados. El modelo esta desarrollado principalmente para el mercado chino e internacional, pero no hay documentacion sobre cobertura linguistica.
-- Repositorio de HuggingFace: el repositorio misata/Kimi-K3-Test2 tiene cero descargas y cero likes, y la fecha de creacion es posterior al lanzamiento oficial. Podria tratarse de un espejo no oficial o de una prueba de carga. Se recomienda verificar la autenticidad antes de usar los pesos.
+- Repositorio de Hugging Face: el repositorio misata/Kimi-K3-Test2 tiene cero descargas y cero likes, y la fecha de creacion es posterior al lanzamiento oficial. Podria tratarse de un espejo no oficial o de una prueba de carga. Se recomienda verificar la autenticidad antes de usar los pesos.
 - Coste de inferencia: el coste de servir el modelo en produccion es muy elevado. Las opciones de API de Moonshot AI pueden ser mas economicas para la mayoria de casos de uso.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/misata/Kimi-K3-Test2
-- Organizacion oficial de Moonshot AI en HuggingFace: https://huggingface.co/moonshotai
+- Repositorio de Hugging Face: https://huggingface.co/misata/Kimi-K3-Test2
+- Organizacion oficial de Moonshot AI en Hugging Face: https://huggingface.co/moonshotai
 - Blog tecnico oficial: https://www.kimi.com/blog/kimi-k3
 - Informe tecnico completo (PDF): https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf
 - Pagina del modelo en kimi.ai: https://www.kimi.ai/ai-models/kimi-k3

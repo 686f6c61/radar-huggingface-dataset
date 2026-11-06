@@ -2,7 +2,7 @@
 
 ## Resumen
 
-my-llm-gguf es un modelo de lenguaje publicado por el usuario harshkumar63 en HuggingFace, distribuido exclusivamente en formato GGUF y derivado, segun el nombre del archivo incluido (`Llama-3.2-3B-Instruct.Q4_K_M.gguf`), de un ajuste fino (fine-tuning) sobre Llama 3.2 3B Instruct. El autor indica que el modelo fue ajustado y convertido a GGUF utilizando Unsloth, e incluye un Modelfile de Ollama para su despliegue. El recuento real de parametros, extraido de los pesos en safetensors, es de 3.212.749.888 parametros (aproximadamente 3,21 mil millones), coherente con la familia Llama 3.2 3B.
+my-llm-gguf es un modelo de lenguaje publicado por el usuario harshkumar63 en Hugging Face, distribuido exclusivamente en formato GGUF y derivado, segun el nombre del archivo incluido (`Llama-3.2-3B-Instruct.Q4_K_M.gguf`), de un ajuste fino (fine-tuning) sobre Llama 3.2 3B Instruct. El autor indica que el modelo fue ajustado y convertido a GGUF utilizando Unsloth, e incluye un Modelfile de Ollama para su despliegue. El recuento real de parametros, extraido de los pesos en safetensors, es de 3.212.749.888 parametros (aproximadamente 3,21 mil millones), coherente con la familia Llama 3.2 3B.
 
 Se trata de un modelo denso de tipo transformer, orientado a uso conversacional y ejecucion local en hardware de consumo. Su relevancia practica reside en el formato: al estar cuantizado en Q4_K_M (unos 2 GB de repositorio), puede ejecutarse en CPU o en GPUs modestas mediante llama.cpp, Ollama o LM Studio, sin necesidad de infraestructura de servidor. Sin embargo, la ficha carece de informacion sobre el dataset de ajuste, los idiomas soportados, la licencia y cualquier resultado de evaluacion, lo que limita seriamente su uso en produccion sin una validacion previa por parte del integrador.
 
@@ -86,9 +86,9 @@ Nota: los datos de los modelos comparables corresponden a informacion publica de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/harshkumar63/my-llm-gguf
+- Repositorio Hugging Face: https://huggingface.co/harshkumar63/my-llm-gguf
 - Unsloth (herramienta de ajuste y conversion): https://github.com/unslothai/unsloth
-- Organizacion GGUF-Models en HuggingFace: https://huggingface.co/GGUF-Models
+- Organizacion GGUF-Models en Hugging Face: https://huggingface.co/GGUF-Models
 - Guia para ejecutar modelos GGUF localmente: https://ggufloader.github.io/how-to-run-gguf-models.html
 - Guia para ejecutar LLM en local (GeeksforGeeks): https://www.geeksforgeeks.org/blogs/how-to-run-llms-model-locally/
 - Configuracion de LM Studio en AnythingLLM: https://docs.anythingllm.com/setup/llm-configuration/local/lmstudio

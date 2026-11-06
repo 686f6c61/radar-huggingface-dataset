@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario AD1EASCRE1AD bajo licencia MIT y etiquetado con las librerías transformers y pytorch. Las etiquetas de la plataforma lo clasifican como un modelo de arquitectura BERT orientado a la tarea de extracción de características (feature-extraction), es decir, un encoder transformer sin cabeza generativa. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y su tamaño declarado es de 0,0 GB, lo que sugiere que no contiene pesos publicados o que se trata de un repositorio de prueba.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario AD1EASCRE1AD bajo licencia MIT y etiquetado con las librerías transformers y pytorch. Las etiquetas de la plataforma lo clasifican como un modelo de arquitectura BERT orientado a la tarea de extracción de características (feature-extraction), es decir, un encoder transformer sin cabeza generativa. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y su tamaño declarado es de 0,0 GB, lo que sugiere que no contiene pesos publicados o que se trata de un repositorio de prueba.
 
 La model card, sin embargo, describe un modelo generativo conversacional con capacidades de razonamiento, function calling y mejoras sustanciales en pruebas de matemáticas (AIME 2025), lo que entra en contradicción directa con las etiquetas técnicas de la plataforma (BERT, feature-extraction). Esta discrepancia, junto con el nombre del repositorio (TestRepo) y la ausencia de identificadores verificables, indica que el contenido es un marcador de posición o una plantilla y no una ficha técnica fiable.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha recoge la información disponible sin asumir que las afirm
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (encoder transformer), segun las etiquetas de HuggingFace; no confirmado por la model card |
+| Arquitectura | BERT (encoder transformer), segun las etiquetas de Hugging Face; no confirmado por la model card |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,13 +23,13 @@ Por tanto, esta ficha recoge la información disponible sin asumir que las afirm
 
 ## Arquitectura y entrenamiento
 
-Las etiquetas de HuggingFace indican arquitectura BERT y pipeline de feature-extraction, lo que corresponde a un transformer encoder-only pensado para generar representaciones (embeddings) de texto, no para generación autoregresiva. No se dispone de información sobre el número de parámetros, la composición del dataset de entrenamiento, el número de tokens procesados ni sobre si se aplicaron técnicas de alineación como RLHF o DPO.
+Las etiquetas de Hugging Face indican arquitectura BERT y pipeline de feature-extraction, lo que corresponde a un transformer encoder-only pensado para generar representaciones (embeddings) de texto, no para generación autoregresiva. No se dispone de información sobre el número de parámetros, la composición del dataset de entrenamiento, el número de tokens procesados ni sobre si se aplicaron técnicas de alineación como RLHF o DPO.
 
 La model card describe un proceso de post-entrenamiento con optimización algorítmica y mayor profundidad de razonamiento (aumento de 12K a 23K tokens por pregunta en el conjunto AIME), así como soporte de function calling. Esta descripción corresponde a un modelo generativo de razonamiento, no a un encoder BERT de extracción de características, por lo que no puede conciliarse con las etiquetas técnicas y debe tratarse con cautela. No se documenta ninguna innovación técnica verificable (decodificación especulativa, atención lineal, MoE u otras).
 
 ## Capacidades
 
-- Segun las etiquetas de HuggingFace: extracción de características (embeddings) sobre texto, uso típico de un encoder BERT. No confirmado con ejemplos ni código.
+- Segun las etiquetas de Hugging Face: extracción de características (embeddings) sobre texto, uso típico de un encoder BERT. No confirmado con ejemplos ni código.
 - Segun la model card (no verificable): generación de texto, razonamiento matemático y lógico, generación de código, escritura creativa, diálogo, resumen, traducción y recuperación de conocimiento.
 - Soporte declarado de function calling y de system prompt, con recomendación de temperatura 0.6.
 - Plantillas proporcionadas para carga de ficheros y búsqueda web con citas en formato [citation:X].
@@ -43,7 +43,7 @@ Dado que las capacidades declaradas en la model card contradicen las etiquetas d
 - Extracción de embeddings para búsqueda semántica: si el repositorio se confirma como BERT de feature-extraction, podría emplearse para generar vectores de frases y alimentar un índice vectorial, pero no hay pesos publicados que lo permitan actualmente.
 - Clasificación de texto por transferencia: un encoder BERT etiquetado como feature-extraction podría afinarse para análisis de sentimiento o categorización, pero se desconoce el tamaño y la calidad del preentrenamiento.
 - Evaluación de plantillas de prompt: las plantillas de system prompt, temperatura y búsqueda web incluidas permiten reproducir el formato de interacción sugerido, útil únicamente como referencia de diseño.
-- Pruebas de integración con HuggingFace Endpoints: al estar etiquetado como endpoints_compatible, podría usarse para validar flujos de despliegue en la plataforma, sin garantía de funcionamiento real.
+- Pruebas de integración con Hugging Face Endpoints: al estar etiquetado como endpoints_compatible, podría usarse para validar flujos de despliegue en la plataforma, sin garantía de funcionamiento real.
 - Docencia o ejemplos de publicación de modelos: el repositorio (nombre TestRepo) puede servir como plantilla para ilustrar el formato de model card, licencias y etiquetas.
 - No se recomienda su uso en producción: la ausencia de pesos, de benchmarks verificables y la contradicción entre etiquetas y model card lo desaconsejan para cualquier escenario real.
 
@@ -76,7 +76,7 @@ Ademas, la model card afirma una mejora en AIME 2025 del 70% al 87,5% respecto a
 - VRAM estimada para inferencia: no disponible, al desconocerse el número de parámetros y si existen pesos publicados.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible. Si se confirmara una arquitectura BERT-base (~110 millones de parámetros), cabría en cualquier GPU de consumo e incluso en CPU, pero es una suposición no verificada.
-- Opciones de despliegue: la librería declarada es transformers y el repositorio está etiquetado como endpoints_compatible, por lo que en teoría sería desplegable mediante HuggingFace Transformers y HuggingFace Endpoints. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: la librería declarada es transformers y el repositorio está etiquetado como endpoints_compatible, por lo que en teoría sería desplegable mediante Hugging Face Transformers y Hugging Face Endpoints. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -104,5 +104,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AD1EASCRE1AD/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/AD1EASCRE1AD/MyAwesomeModel-TestRepo
 - No se han encontrado papers, repositorios de código, demos ni blogs asociados en la búsqueda web. Los resultados de búsqueda disponibles no guardan relación con el modelo (páginas sobre comités de exámenes de la TU Berlin).

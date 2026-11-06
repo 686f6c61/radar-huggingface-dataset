@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "klee100/Qwen3.8-Flash-Next-Uncensored-Basalt",
+  "slug": "klee100-qwen3-8-flash-next-uncensored-basalt",
+  "author": "klee100",
+  "url": "https://huggingface.co/klee100/Qwen3.8-Flash-Next-Uncensored-Basalt",
+  "created_at": "2026-11-05T13:48:20.000Z",
+  "updated_at": "2026-11-05T15:16:10.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "basalt",
+    "qwen3.8",
+    "moe",
+    "nvfp4",
+    "abliterated",
+    "uncensored",
+    "base_model:orcarouter/Qwen3.8-Flash-Next-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-Flash-Next-Uncensored",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 528099555420,
+  "storage_human": "528.1 GB",
+  "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored, orcarouter/Qwen3.8-Flash-Next-Uncensored-NVFP4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "klee100/Qwen3.8-Flash-Next-Uncensored-Basalt · Hugging Face",
+      "url": "https://huggingface.co/klee100/Qwen3.8-Flash-Next-Uncensored-Basalt",
+      "snippet": "Basalt model files of orcarouter's abliterated (refusal-direction-removed) Qwen3.8-Flash-Next. They are drop-in replacements for the official Qwen3.8-FN-NVFP4-DQ6_K and Qwen3.8-FN-NVFP4-DQ8 files of jesdga/Qwen3.8-Flash-Next-Basalt: same format (.basalt version 2, expert layout v6), same tensor ..."
+    },
+    {
+      "title": "klee100/Qwen3.8-Flash-Next-Uncensored-Basalt at main",
+      "url": "https://huggingface.co/klee100/Qwen3.8-Flash-Next-Uncensored-Basalt/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

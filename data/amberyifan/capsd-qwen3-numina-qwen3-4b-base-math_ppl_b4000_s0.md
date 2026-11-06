@@ -4,7 +4,7 @@
 
 El modelo `capsd-qwen3-numina-Qwen3-4B-Base-math_ppl_b4000_s0` es un ajuste fino (fine-tuning) de la arquitectura base Qwen3-4B-Base, desarrollado por el usuario AmberYifan. Se trata de un modelo de generación de texto orientado a tareas matemáticas, entrenado sobre un dataset propio denominado `capsd_Qwen3-4B-Base-n80000-numina__mix_math_ppl_b4000_s0`, que combina muestras de razonamiento matemático y optimización de perplejidad. El modelo tiene 4.022.468.096 parámetros (aproximadamente 4B) y se distribuye en formato safetensors, con un tamaño de repositorio de 8,1 GB.
 
-La relevancia de este modelo radica en que explora el ajuste fino de la familia Qwen3, una de las series de modelos abiertos más recientes y capaces de Alibaba, sobre un dominio específico como las matemáticas. Sin embargo, se trata de un artefacto experimental sin documentación técnica detallada, sin resultados de benchmarks publicados y con cero descargas o valoraciones en HuggingFace. Su licencia se declara como "other", lo que introduce incertidumbre sobre las condiciones de uso. En conjunto, es un modelo de interés para investigadores que quieran estudiar el comportamiento de fine-tunes de Qwen3 en tareas matemáticas, pero no está listo para uso en producción sin una evaluación adicional.
+La relevancia de este modelo radica en que explora el ajuste fino de la familia Qwen3, una de las series de modelos abiertos más recientes y capaces de Alibaba, sobre un dominio específico como las matemáticas. Sin embargo, se trata de un artefacto experimental sin documentación técnica detallada, sin resultados de benchmarks publicados y con cero descargas o valoraciones en Hugging Face. Su licencia se declara como "other", lo que introduce incertidumbre sobre las condiciones de uso. En conjunto, es un modelo de interés para investigadores que quieran estudiar el comportamiento de fine-tunes de Qwen3 en tareas matemáticas, pero no está listo para uso en producción sin una evaluación adicional.
 
 ## Especificaciones tecnicas
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. La s
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| capsd-qwen3-numina (este) | 4B | no disponible | other | Matemáticas | HuggingFace |
-| Qwen/Qwen3-4B-Base | 4B | 32k (según repo de Qwen3) | Apache 2.0 | General | HuggingFace |
-| Qwen/Qwen2.5-Math-1.5B | 1.5B | 32k | Apache 2.0 | Matemáticas | HuggingFace |
+| capsd-qwen3-numina (este) | 4B | no disponible | other | Matemáticas | Hugging Face |
+| Qwen/Qwen3-4B-Base | 4B | 32k (según repo de Qwen3) | Apache 2.0 | General | Hugging Face |
+| Qwen/Qwen2.5-Math-1.5B | 1.5B | 32k | Apache 2.0 | Matemáticas | Hugging Face |
 
 La comparación directa es limitada porque este modelo es un fine-tuning del base Qwen3-4B-Base, y no hay benchmarks que demuestren una mejora sobre él. Qwen2.5-Math-1.5B es un modelo especializado en matemáticas de menor tamaño, pero con documentación y evaluaciones públicas, algo que este modelo carece. En ausencia de datos, no se puede afirmar que este fine-tuning supere a ninguna alternativa.
 
@@ -75,7 +75,7 @@ La comparación directa es limitada porque este modelo es un fine-tuning del bas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-qwen3-numina-Qwen3-4B-Base-math_ppl_b4000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-qwen3-numina-Qwen3-4B-Base-math_ppl_b4000_s0
 - Repositorio oficial de Qwen3 (modelo base): https://github.com/QwenLM/Qwen3
 - Paper técnico de Qwen3: https://arxiv.org/html/2505.09388v1
 - Modelos similares del mismo autor (referencia): https://huggingface.co/AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_ppl_b4000_s0 y https://huggingface.co/AmberYifan/capsd-Qwen3-1.7B-Base-math_cap_b4000_s0

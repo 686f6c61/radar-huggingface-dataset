@@ -6,7 +6,7 @@ keys-GLM-5.3-Flash-NVFP4-ablit-l15-45-anchorstock es una variante abliterada del
 
 La modificación principal consiste en transplantar los pesos "Dealign o_proj" en las capas L15-45 (incluyendo el módulo MTP), mientras que las capas L0-14 permanecen intactas, siguiendo la técnica de "safety-anchor sparing" de Keys 0731. El modelo está diseñado específicamente para el despliegue en configuraciones de 2× DGX Spark con vLLM y una ventana de contexto de 1 millón de tokens, manteniendo el mismo rendimiento en tokens por segundo que el checkpoint original.
 
-Este modelo es relevante para desarrolladores que necesitan un LLM multimodal sin restricciones de rechazo, con licencia MIT y capacidad de procesamiento de imágenes y texto, aunque su acceso está restringido en HuggingFace (gated) y requiere aceptar condiciones adicionales.
+Este modelo es relevante para desarrolladores que necesitan un LLM multimodal sin restricciones de rechazo, con licencia MIT y capacidad de procesamiento de imágenes y texto, aunque su acceso está restringido en Hugging Face (gated) y requiere aceptar condiciones adicionales.
 
 ## Especificaciones tecnicas
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks especificos para esta variante abli
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| keys-GLM-5.3-Flash-NVFP4-ablit-l15-45-anchorstock | 165B (total) | 1M | MIT | Gated en HuggingFace |
-| GLM-5.3-Flash (original) | 320B (total, 18B activos) | 1M | MIT | Publico en HuggingFace |
+| keys-GLM-5.3-Flash-NVFP4-ablit-l15-45-anchorstock | 165B (total) | 1M | MIT | Gated en Hugging Face |
+| GLM-5.3-Flash (original) | 320B (total, 18B activos) | 1M | MIT | Publico en Hugging Face |
 | DeepSeek-V3 | 671B (total, 37B activos) | 128K | MIT | Publico |
 | Qwen2.5-72B-Instruct | 72B (dense) | 128K | Apache 2.0 | Publico |
 
@@ -74,14 +74,14 @@ La comparativa muestra que esta variante es un subconjunto del GLM-5.3-Flash ori
 - Sesgos conocidos: al ser una variante abliterada, puede presentar sesgos no mitigados por el alineamiento original, especialmente en temas sensibles. No se ha realizado una evaluacion exhaustiva de sesgos en esta version.
 - Riesgo de alucinacion: como cualquier LLM, puede generar informacion falsa o inventada, especialmente en tareas de razonamiento complejo o con contexto largo.
 - Limitaciones de idioma: solo soporta ingles y chino de forma nativa; otros idiomas pueden tener un rendimiento degradado.
-- Restricciones de acceso: el modelo es de acceso restringido (gated) en HuggingFace, lo que requiere aceptar condiciones adicionales antes de su descarga.
+- Restricciones de acceso: el modelo es de acceso restringido (gated) en Hugging Face, lo que requiere aceptar condiciones adicionales antes de su descarga.
 - Uso comercial: la licencia MIT permite uso comercial, pero se recomienda revisar los terminos del modelo base y las condiciones de acceso.
 - Estabilidad en produccion: la abliteration puede afectar la coherencia en tareas de largo alcance; se recomienda realizar pruebas exhaustivas antes de desplegar en entornos criticos.
 - Requisitos de hardware: el despliegue requiere hardware especializado (DGX Spark o GPUs de 80 GB), lo que limita su uso en entornos con recursos limitados.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/drowzeys/keys-GLM-5.3-Flash-NVFP4-ablit-l15-45-anchorstock
+- Hugging Face: https://huggingface.co/drowzeys/keys-GLM-5.3-Flash-NVFP4-ablit-l15-45-anchorstock
 - GitHub: https://github.com/drowzeys/keys-GLM-5.3-Flash-NVFP4-ablit-l15-45-anchorstock
 - Documentacion del modelo base (LibertAI): https://huggingface.co/LibertAIDAI/GLM-5.3-Flash-NVFP4
 - Guia de GLM-5.3-Flash (codepick.dev): https://codepick.dev/en/guides/glm-5-3-flash-guide/

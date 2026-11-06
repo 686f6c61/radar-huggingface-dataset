@@ -91,7 +91,7 @@ La comparación con modelos de decisión de otros fabricantes no está disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/d1-Omni-2B
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/d1-Omni-2B
 - Modelo base LFM3-Omni-2B: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Versión sin audio d1-2B: https://huggingface.co/LiquidAI/d1-2B
 - Blog de presentación de open d1: https://www.liquid.ai/blog/open-d1

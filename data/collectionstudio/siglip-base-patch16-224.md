@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parametros | Contexto de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CollectionStudio/siglip-base-patch16-224 | 203.155.970 | 64 tokens | apache-2.0 | HuggingFace Hub |
-| google/siglip-base-patch16-224 | no disponible en la informacion | 64 tokens | apache-2.0 | HuggingFace Hub |
-| openai/clip-vit-base-patch16 | no disponible en la informacion | no disponible | licencia MIT (segun informacion publica del repositorio) | HuggingFace Hub |
-| google/siglip-so400m-patch14-384 | no disponible en la informacion | no disponible | apache-2.0 | HuggingFace Hub |
+| CollectionStudio/siglip-base-patch16-224 | 203.155.970 | 64 tokens | apache-2.0 | Hugging Face Hub |
+| google/siglip-base-patch16-224 | no disponible en la informacion | 64 tokens | apache-2.0 | Hugging Face Hub |
+| openai/clip-vit-base-patch16 | no disponible en la informacion | no disponible | licencia MIT (segun informacion publica del repositorio) | Hugging Face Hub |
+| google/siglip-so400m-patch14-384 | no disponible en la informacion | no disponible | apache-2.0 | Hugging Face Hub |
 
 La comparación directa de rendimiento frente a CLIP aparece en forma de tabla dentro del artículo original, pero las cifras no están disponibles en el texto de la model card. Los modelos comparables pertenecen a la misma familia (CLIP y variantes SigLIP de mayor tamaño), y la diferencia fundamental de esta ficha es que se trata de una reproducción subida por un usuario distinto del autor original.
 
@@ -91,7 +91,7 @@ La comparación directa de rendimiento frente a CLIP aparece en forma de tabla d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CollectionStudio/siglip-base-patch16-224
+- Modelo en Hugging Face: https://huggingface.co/CollectionStudio/siglip-base-patch16-224
 - Modelo original de Google: https://huggingface.co/google/siglip-base-patch16-224
 - Articulo principal: https://arxiv.org/abs/2303.15343
 - Articulo del dataset WebLI: https://arxiv.org/abs/2209.06794

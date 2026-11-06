@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para comparar este adaptador con otros d
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/sxiong/SWAP_MATH500_Disc_Llama3-8B-LoRA)
+- [Hugging Face del adaptador](https://huggingface.co/sxiong/SWAP_MATH500_Disc_Llama3-8B-LoRA)
 - [Dataset SWAP_disc](https://huggingface.co/datasets/sxiong/SWAP_disc)
 - [Dataset MATH500](https://huggingface.co/datasets/sxiong/MATH-500)
 - [Repositorio GitHub de SWAP](https://github.com/xiongsiheng/SWAP)

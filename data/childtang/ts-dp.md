@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TS-DP | Acelerador de Diffusion Policy (drafter + scheduler) | no disponible | no aplica | MIT | HuggingFace y GitHub |
+| TS-DP | Acelerador de Diffusion Policy (drafter + scheduler) | no disponible | no aplica | MIT | Hugging Face y GitHub |
 | Diffusion Policy (base) | Política de imitación con difusión | no disponible | no aplica | MIT (repo oficial) | GitHub y web del proyecto |
 | Consistency Policy | Política de difusión con muestreo en pocos pasos | no disponible | no aplica | no disponible | Repositorio académico |
 | DDIM / DPM-Solver (samplers) | Aceleradores de muestreo genéricos | no aplica | no aplica | variable | Bibliotecas de difusión |
@@ -81,7 +81,7 @@ La comparación directa con aceleradores genéricos de muestreo (DDIM, DPM-Solve
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/childtang/TS-DP
+- Hugging Face: https://huggingface.co/childtang/TS-DP
 - Paper: https://arxiv.org/abs/2512.15773
 - DOI: https://doi.org/10.48550/arXiv.2512.15773
 - Código: https://github.com/ChildTang/TS-DP

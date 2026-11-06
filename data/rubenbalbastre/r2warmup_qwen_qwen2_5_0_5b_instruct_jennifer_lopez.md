@@ -70,11 +70,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Qwen2.5-0.5B-Instruct) | 0,49 B (base) + adaptador LoRA | 32.768 tokens | No disponible | HuggingFace, 0 descargas y 0 likes en el momento de la consulta | Sin benchmarks ni model card sustantiva; artefacto de investigacion |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 tokens | Apache-2.0 | HuggingFace, ampliamente distribuido | Modelo base; benchmarks publicados en su model card |
-| HuggingFaceTB/SmolLM2-360M-Instruct | 0,36 B | 8.192 tokens | Apache-2.0 | HuggingFace | Alternativa de tamano comparable orientada a dispositivo |
-| meta-llama/Llama-3.2-1B-Instruct | 1,2 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace (con aceptacion de terminos) | Mayor capacidad y contexto, con restricciones de licencia |
-| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1 B | 2.048 tokens | Apache-2.0 | HuggingFace | Contexto muy limitado; generacion anterior a Qwen2.5 |
+| Este adaptador (sobre Qwen2.5-0.5B-Instruct) | 0,49 B (base) + adaptador LoRA | 32.768 tokens | No disponible | Hugging Face, 0 descargas y 0 likes en el momento de la consulta | Sin benchmarks ni model card sustantiva; artefacto de investigacion |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 tokens | Apache-2.0 | Hugging Face, ampliamente distribuido | Modelo base; benchmarks publicados en su model card |
+| HuggingFaceTB/SmolLM2-360M-Instruct | 0,36 B | 8.192 tokens | Apache-2.0 | Hugging Face | Alternativa de tamano comparable orientada a dispositivo |
+| meta-llama/Llama-3.2-1B-Instruct | 1,2 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face (con aceptacion de terminos) | Mayor capacidad y contexto, con restricciones de licencia |
+| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1 B | 2.048 tokens | Apache-2.0 | Hugging Face | Contexto muy limitado; generacion anterior a Qwen2.5 |
 
 La comparacion debe interpretarse con cautela: las cifras de parametros, contexto y licencia corresponden a los modelos base o a alternativas publicas, mientras que para el adaptador objeto de esta ficha no hay datos verificables de rendimiento.
 
@@ -93,7 +93,7 @@ La comparacion debe interpretarse con cautela: las cifras de parametros, context
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rubenbalbastre/r2warmup_qwen_qwen2_5_0_5b_instruct_jennifer_lopez
+- Modelo en Hugging Face: https://huggingface.co/rubenbalbastre/r2warmup_qwen_qwen2_5_0_5b_instruct_jennifer_lopez
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Paper referenciado en la model card (identificador no verificable): https://arxiv.org/abs/2608.17804
 - Repositorio de Qwen2.5: https://github.com/QwenLM/Qwen2.5

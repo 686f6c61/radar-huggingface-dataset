@@ -52,7 +52,7 @@ La innovacion tecnica de esta version es la compilacion a ONNX con cuantizacion 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas de MMLU, HumanEval, GSM8K ni latencias de inferencia para esta conversion ONNX en NPU.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas de MMLU, HumanEval, GSM8K ni latencias de inferencia para esta conversion ONNX en NPU.
 
 ## Requisitos de hardware
 
@@ -75,7 +75,7 @@ La diferencia clave de la version de AMD frente a las alternativas es el formato
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar el modelo, lo que puede complicar la automatizacion de despliegues.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar el modelo, lo que puede complicar la automatizacion de despliegues.
 - Dependencia de hardware: solo funciona sobre NPU Ryzen AI con el stack 1.9.0; no es portable a GPU ni a otros runtimes sin reconversion.
 - Idiomas: la ficha declara unicamente ingles; el rendimiento en castellano no esta garantizado en esta conversion.
 - Riesgo de alucinacion inherente a los modelos de 7B, especialmente en codigo de APIs poco comunes o recientes.
@@ -86,7 +86,7 @@ La diferencia clave de la version de AMD frente a las alternativas es el formato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Qwen2.5-Coder-7B-Instruct_rai_1.9.0_npu
+- Hugging Face: https://huggingface.co/amd/Qwen2.5-Coder-7B-Instruct_rai_1.9.0_npu
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Ryzen AI Software: no disponible en la informacion proporcionada
 - Paper o blog de AMD sobre esta conversion: no disponible en la informacion proporcionada

@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| qwen36-35b-e2_terminal_agent (este adaptador) | 35B totales / ~3B activos (heredados del base); adaptador LoRA r=32 | 32.768 tokens en entrenamiento | Apache 2.0 | safetensors (PEFT/LoRA) | Sin evaluar; resultados pendientes | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-35B-A3B (modelo base, sin adaptador) | 35B totales / ~3B activos | No disponible | No disponible en la informacion proporcionada | safetensors | No disponible | HuggingFace |
+| qwen36-35b-e2_terminal_agent (este adaptador) | 35B totales / ~3B activos (heredados del base); adaptador LoRA r=32 | 32.768 tokens en entrenamiento | Apache 2.0 | safetensors (PEFT/LoRA) | Sin evaluar; resultados pendientes | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-35B-A3B (modelo base, sin adaptador) | 35B totales / ~3B activos | No disponible | No disponible en la informacion proporcionada | safetensors | No disponible | Hugging Face |
 | Otros adaptadores del estudio multi-expert | No disponible | No disponible | Apache 2.0 (segun la ficha) | safetensors (PEFT/LoRA) | No disponible | Referenciados, no inventariados en la informacion recibida |
 | Alternativas de agente de terminal de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -93,14 +93,14 @@ No se dispone de datos verificables de benchmarks ni de especificaciones de mode
 - El entrenamiento se realizo sobre muestras limitadas en ancho de banda de los datasets publicos (por ejemplo, 42 de 80 trazas de Terminal-Bench 1.x y 387 de 3.000 trazas de SWE-smith), lo que puede introducir sesgos de seleccion.
 - Idiomas soportados unicamente ingles y chino; el rendimiento en castellano no esta documentado.
 - Parte de los datos de origen (TMax) contiene contenido generado por Gemini y esta sujeto a los terminos de Google, lo que conviene revisar antes de un uso comercial.
-- Los datasets de trazas de Terminal-Bench y SWE-smith no especifican licencia en su ficha de HuggingFace (aunque las tareas subyacentes son Apache 2.0 y MIT respectivamente), lo que anade incertidumbre juridica al uso derivado.
+- Los datasets de trazas de Terminal-Bench y SWE-smith no especifican licencia en su ficha de Hugging Face (aunque las tareas subyacentes son Apache 2.0 y MIT respectivamente), lo que anade incertidumbre juridica al uso derivado.
 - Aunque la licencia declarada es Apache 2.0, la ficha no detalla si esa licencia cubre tambien las obligaciones derivadas de los datos de entrenamiento.
 - No hay informacion sobre sesgos demograficos, toxicidad ni comportamientos peligrosos del agente, algo especialmente sensible en un modelo que genera comandos de shell ejecutables.
 - La fecha de creacion y actualizacion del repositorio (2026) y la ausencia de descargas implican que se trata de un artefacto reciente y sin validacion externa por parte de la comunidad.
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ssyhw7/qwen36-35b-e2_terminal_agent
+- Adaptador en Hugging Face: https://huggingface.co/ssyhw7/qwen36-35b-e2_terminal_agent
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B (revision `995ad96eacd98c81ed38be0c5b274b04031597b0`)
 - Repositorio de codigo del estudio: https://github.com/HanyangWang0418-oss/qwen36-merge-takehome
 - Dataset de trazas de Terminal-Bench 1.x: https://huggingface.co/datasets/mlfoundations-dev/terminal-bench-traces-local

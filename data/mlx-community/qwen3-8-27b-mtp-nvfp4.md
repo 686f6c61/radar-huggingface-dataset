@@ -76,6 +76,6 @@ La comparativa con otros drafters (por ejemplo, los de modelos como Llama 3.1 o 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/Qwen3.8-27B-MTP-nvfp4
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/Qwen3.8-27B-MTP-nvfp4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentacion de mlx-vlm: no disponible en la informacion proporcionada.

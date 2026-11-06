@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AMD Qwen3-4B-Instruct-2507_rai_1.9.0_npu es una distribucion optimizada del modelo Qwen3-4B-Instruct-2507 de Alibaba para su ejecucion en las NPU (unidades de procesamiento neuronal) de los procesadores AMD Ryzen AI, empaquetada en formato ONNX y cuantizada con la herramienta Quark de AMD. El modelo base es un transformer denso de 4.000 millones de parametros, con ventana de contexto nativa de 262.144 tokens, afinado para instrucciones y conversacion. Esta publicacion concreta la mantiene AMD en HuggingFace bajo licencia Apache 2.0, aunque el acceso esta restringido y requiere aceptar condiciones.
+AMD Qwen3-4B-Instruct-2507_rai_1.9.0_npu es una distribucion optimizada del modelo Qwen3-4B-Instruct-2507 de Alibaba para su ejecucion en las NPU (unidades de procesamiento neuronal) de los procesadores AMD Ryzen AI, empaquetada en formato ONNX y cuantizada con la herramienta Quark de AMD. El modelo base es un transformer denso de 4.000 millones de parametros, con ventana de contexto nativa de 262.144 tokens, afinado para instrucciones y conversacion. Esta publicacion concreta la mantiene AMD en Hugging Face bajo licencia Apache 2.0, aunque el acceso esta restringido y requiere aceptar condiciones.
 
 El interes de esta ficha no esta en el modelo Qwen3 en si, ampliamente conocido, sino en el paquete de despliegue: integra el runtime Ryzen AI 1.9.0 y los pesos en ONNX preparados para acelerar la inferencia en la NPU integrada de los SoC Ryzen AI 300 (arquitectura XDNA 2) y plataformas posteriores. Esto permite ejecutar un modelo de 4B en portatiles y mini-PC sin depender de la GPU discreta, con un consumo energetico mucho menor que una solucion basada en CUDA.
 
@@ -51,7 +51,7 @@ La capa especifica de AMD no modifica los pesos en su semantica: consiste en una
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible para este paquete NPU. El modelo base Qwen3-4B-Instruct-2507 cuenta con evaluaciones publicas en su ficha original de HuggingFace, pero esta distribucion de AMD no incluye cifras propias de latencia ni throughput.
+No se han publicado resultados de benchmarks en la informacion disponible para este paquete NPU. El modelo base Qwen3-4B-Instruct-2507 cuenta con evaluaciones publicas en su ficha original de Hugging Face, pero esta distribucion de AMD no incluye cifras propias de latencia ni throughput.
 
 ## Requisitos de hardware
 
@@ -66,16 +66,16 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Contexto | Formato / acelerador | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AMD Qwen3-4B-Instruct-2507_rai_1.9.0_npu | 4B | 262.144 (base) | ONNX / NPU Ryzen AI | Apache 2.0 | Gated en HuggingFace |
-| Qwen3-4B-Instruct-2507 (original) | 4B | 262.144 | Safetensors / GPU y CPU | Apache 2.0 | Publico en HuggingFace |
-| Llama 3.2 3B Instruct | 3B | 128.000 | Safetensors, GGUF / GPU y CPU | Llama 3.2 Community License | Publico en HuggingFace |
-| Phi-3.5-mini-instruct | 3,8B | 128.000 | Safetensors, GGUF / GPU y CPU | MIT | Publico en HuggingFace |
+| AMD Qwen3-4B-Instruct-2507_rai_1.9.0_npu | 4B | 262.144 (base) | ONNX / NPU Ryzen AI | Apache 2.0 | Gated en Hugging Face |
+| Qwen3-4B-Instruct-2507 (original) | 4B | 262.144 | Safetensors / GPU y CPU | Apache 2.0 | Publico en Hugging Face |
+| Llama 3.2 3B Instruct | 3B | 128.000 | Safetensors, GGUF / GPU y CPU | Llama 3.2 Community License | Publico en Hugging Face |
+| Phi-3.5-mini-instruct | 3,8B | 128.000 | Safetensors, GGUF / GPU y CPU | MIT | Publico en Hugging Face |
 
 La ventaja del paquete de AMD es la ejecucion en NPU con bajo consumo; sus alternativas ofrecen mayor portabilidad de hardware y ecosistema de herramientas mas amplio, pero no estan optimizadas para Ryzen AI.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar condiciones en HuggingFace antes de descargar.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face antes de descargar.
 - Dependencia de hardware y software especificos: solo funciona con NPU Ryzen AI y el runtime 1.9.0; no es portable a otras plataformas sin reconversion.
 - La ficha declara solo ingles como idioma soportado, aunque el modelo base es multilingue; el rendimiento en castellano no esta validado en este paquete.
 - Riesgo de alucinacion inherente a un modelo de 4B, especialmente en tareas de razonamiento complejo o datos factuales.
@@ -86,7 +86,7 @@ La ventaja del paquete de AMD es la ejecucion en NPU con bajo consumo; sus alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Qwen3-4B-Instruct-2507_rai_1.9.0_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/Qwen3-4B-Instruct-2507_rai_1.9.0_npu
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Documentacion Ryzen AI de AMD: https://www.amd.com/en/developer/resources/ryzen-ai-software.html
 - Herramienta Quark de cuantizacion: https://quark.amd.com/

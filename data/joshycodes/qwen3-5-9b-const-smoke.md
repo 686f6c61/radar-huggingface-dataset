@@ -73,9 +73,9 @@ Como referencia del modelo base, una fuente secundaria (stable-learn.com) atribu
 
 | Modelo | Parametros | Contexto | Licencia | Proposito | Disponibilidad |
 |---|---|---|---|---|---|
-| `joshycodes/qwen3.5-9b-const-smoke` | 8,95B | no disponible | research-only | Checkpoint de investigacion sobre bienestar de modelos | HuggingFace, 0 descargas |
-| `Qwen/Qwen3.5-9B` | 9B | no disponible | Apache 2.0 (segun fuentes secundarias) | Modelo fundacional multimodal de proposito general | HuggingFace, Ollama |
-| `davanstrien/qwen35-9b-iconclass-smoke` | no disponible | no disponible | no disponible | Finetune de prueba sobre la misma base | HuggingFace |
+| `joshycodes/qwen3.5-9b-const-smoke` | 8,95B | no disponible | research-only | Checkpoint de investigacion sobre bienestar de modelos | Hugging Face, 0 descargas |
+| `Qwen/Qwen3.5-9B` | 9B | no disponible | Apache 2.0 (segun fuentes secundarias) | Modelo fundacional multimodal de proposito general | Hugging Face, Ollama |
+| `davanstrien/qwen35-9b-iconclass-smoke` | no disponible | no disponible | no disponible | Finetune de prueba sobre la misma base | Hugging Face |
 | GPT-OSS-120B | 120B | no disponible | no disponible | Modelo abierto de gran tamano | Pesos abiertos |
 
 La comparativa relevante no es de rendimiento, dado que este checkpoint carece de evaluaciones: frente a la base `Qwen/Qwen3.5-9B`, la diferencia clave es la licencia (Apache 2.0 frente a research-only) y el propósito (uso general frente a sonda de investigación). Frente al smoke test de davanstrien, comparte base pero no hay datos publicados que permitan comparar resultados.
@@ -94,7 +94,7 @@ La comparativa relevante no es de rendimiento, dado que este checkpoint carece d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3.5-9b-const-smoke
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3.5-9b-const-smoke
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Corpus de entrenamiento: https://huggingface.co/joshycodes/qwen3.5-9b-const-smoke (repositorio indicado como `joshycodes/qwen3.5-9b-const-smoke`)
 - Checkpoint comparable: https://huggingface.co/davanstrien/qwen35-9b-iconclass-smoke

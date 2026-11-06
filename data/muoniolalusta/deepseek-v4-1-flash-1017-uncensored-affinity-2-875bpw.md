@@ -99,7 +99,7 @@ Frente a la revisión 0925, la 1017 corrige el tool calling DSML con namespaces 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Muoniolalusta/DeepSeek-V4.1-Flash-1017-UNCENSORED-affinity-2.875bpw
+- Hugging Face del modelo: https://huggingface.co/Muoniolalusta/DeepSeek-V4.1-Flash-1017-UNCENSORED-affinity-2.875bpw
 - Perfil del autor: https://huggingface.co/Muoniolalusta/models
 - Repositorio complementario con parches del motor, unidad de despliegue y release v1.1.0: https://github.com/drwolfen/deepseek-v4.1-flash-r9700-affinity
 - Motor de inferencia affinity: https://codeberg.org/StillDeadcode/affinity

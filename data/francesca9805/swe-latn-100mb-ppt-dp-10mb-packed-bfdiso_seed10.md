@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/swe-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed10` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/swe_latn_100mb`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de tipo GPT-2 con 124.770.816 parametros (aproximadamente 125 millones), entrenado mediante SFT (Supervised Fine-Tuning) con la libreria TRL de HuggingFace. El nombre del repositorio sugiere que el ajuste se ha realizado sobre un subconjunto de datos empaquetados de alrededor de 10 MB, derivado del corpus original del modelo base Goldfish de 100 MB para la variante sueco-latino (`swe_latn`).
+El modelo `francesca9805/swe-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed10` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/swe_latn_100mb`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de tipo GPT-2 con 124.770.816 parametros (aproximadamente 125 millones), entrenado mediante SFT (Supervised Fine-Tuning) con la libreria TRL de Hugging Face. El nombre del repositorio sugiere que el ajuste se ha realizado sobre un subconjunto de datos empaquetados de alrededor de 10 MB, derivado del corpus original del modelo base Goldfish de 100 MB para la variante sueco-latino (`swe_latn`).
 
 El modelo pertenece a la familia Goldfish, una coleccion de modelos monolingues pequenos entrenados sobre aproximadamente 100 MB de texto por idioma. La relevancia de este tipo de modelos reside en su tamano reducido, lo que los hace aptos para entornos con recursos limitados, investigacion linguistica y tareas de generacion de texto en idiomas de bajos recursos donde los grandes modelos multilingues no ofrecen una cobertura optima. En este caso concreto, el ajuste se ha orientado a un formato de conversacion (chat) mediante una plantilla de mensajes con roles de usuario y asistente, como se aprecia en el ejemplo de inicio rapido de la model card.
 
@@ -42,7 +42,7 @@ Segun el nombre del repositorio, el ajuste se realizo sobre datos empaquetados (
 - Investigacion linguistica en sueco: analisis de generacion de texto en un idioma concreto con un modelo de 125 millones de parametros, util para estudiar comportamiento y sesgos en corpus pequenos.
 - Experimentacion academica con SFT y TRL: sirve como ejemplo reproducible de ajuste fino de un modelo GPT-2 pequeno sobre un subconjunto de datos, con semilla y configuracion registradas en Weights & Biases.
 - Generacion de texto en entornos con recursos limitados: su tamano (0,3 GB de repositorio) permite ejecucion en CPU o GPU de gama baja para prototipos rapidos.
-- Pruebas de pipelines de HuggingFace: al ser compatible con `text-generation-inference` y `endpoints_compatible`, puede desplegarse en infraestructura estandar de HuggingFace para validar pipelines de inferencia.
+- Pruebas de pipelines de Hugging Face: al ser compatible con `text-generation-inference` y `endpoints_compatible`, puede desplegarse en infraestructura estandar de Hugging Face para validar pipelines de inferencia.
 - Educacion y formacion: como modelo de juguete para ensenar los fundamentos del fine-tuning, plantillas de chat y despliegue con `transformers`.
 - Evaluacion comparativa de tecnicas de cuantizacion: su tamano lo hace idoneo para experimentar con cuantizaciones a 8 y 4 bits sin requerir hardware especializado.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/swe-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed10 | 124,77 M | no disponible | no disponible | HuggingFace | Ajuste SFT de Goldfish sueco |
-| goldfish-models/swe_latn_100mb (modelo base) | ~125 M (no confirmado) | no disponible | no disponible | HuggingFace | Modelo monolingue sueco de la familia Goldfish |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | HuggingFace | Modelo multilingue (principalmente ingles) muy extendido |
-| distilgpt2 (HuggingFace) | 82 M | 1024 tokens | Apache 2.0 | HuggingFace | Version destilada de GPT-2, en ingles |
+| francesca9805/swe-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed10 | 124,77 M | no disponible | no disponible | Hugging Face | Ajuste SFT de Goldfish sueco |
+| goldfish-models/swe_latn_100mb (modelo base) | ~125 M (no confirmado) | no disponible | no disponible | Hugging Face | Modelo monolingue sueco de la familia Goldfish |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Hugging Face | Modelo multilingue (principalmente ingles) muy extendido |
+| distilgpt2 (Hugging Face) | 82 M | 1024 tokens | Apache 2.0 | Hugging Face | Version destilada de GPT-2, en ingles |
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swe-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swe-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/goldfish-models/swe_latn_100mb
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/n71dajef
 - Repositorio de TRL: https://github.com/huggingface/trl

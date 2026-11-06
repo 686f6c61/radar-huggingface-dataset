@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OMNI-Intelligence-1B es un modelo publicado en HuggingFace por el usuario Andrea131 bajo el identificador `Andrea131/OMNI-Intelligence-1B`. Por el nombre se infiere que se trata de un modelo de aproximadamente 1000 millones de parametros, pero la informacion disponible en la ficha de HuggingFace no confirma ni el tamano exacto, ni la arquitectura, ni el proceso de entrenamiento. El repositorio no incluye pipeline declarado, licencia, idiomas soportados ni documentacion tecnica asociada.
+OMNI-Intelligence-1B es un modelo publicado en Hugging Face por el usuario Andrea131 bajo el identificador `Andrea131/OMNI-Intelligence-1B`. Por el nombre se infiere que se trata de un modelo de aproximadamente 1000 millones de parametros, pero la informacion disponible en la ficha de Hugging Face no confirma ni el tamano exacto, ni la arquitectura, ni el proceso de entrenamiento. El repositorio no incluye pipeline declarado, licencia, idiomas soportados ni documentacion tecnica asociada.
 
 El modelo acumula 0 descargas y 1 like en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-05T21:57:31Z), lo que sugiere una publicacion reciente y sin actividad posterior de mantenimiento. No se dispone de model card detallada, paper, blog ni repositorio de codigo que permita verificar sus capacidades reales.
 
@@ -82,7 +82,7 @@ No disponible. No se dispone de informacion suficiente sobre OMNI-Intelligence-1
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Andrea131/OMNI-Intelligence-1B
+- Hugging Face: https://huggingface.co/Andrea131/OMNI-Intelligence-1B
 - Paper: no disponible
 - Blog o model card extendida: no disponible
 - Repositorio de codigo: no disponible

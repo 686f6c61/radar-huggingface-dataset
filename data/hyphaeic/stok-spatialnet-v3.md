@@ -83,6 +83,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hyphaeic/stok-spatialnet-v3
+- Modelo en Hugging Face: https://huggingface.co/hyphaeic/stok-spatialnet-v3
 - Paper STOK (Ringstrom y Schrater, 2025): https://arxiv.org/abs/2506.09499
 - Licencia Hyphaeic Public License (HPL): https://github.com/Hyphaeic/HPL

@@ -87,7 +87,7 @@ La diferencia principal frente a las alternativas es la salida en chino tradicio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maxkuo/TEA-ASR-1.1-mlx-q8
+- Modelo en Hugging Face: https://huggingface.co/Maxkuo/TEA-ASR-1.1-mlx-q8
 - Modelo base: https://huggingface.co/JacobLinCool/TEA-ASR-1.1
 - Qwen3-ASR-1.7B original: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Libreria de inferencia mlx-qwen3-asr: https://github.com/moona3k/mlx-qwen3-asr

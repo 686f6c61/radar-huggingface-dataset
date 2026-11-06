@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Tson29/research-ckpt` es un checkpoint de investigación publicado por el usuario Tson29 en HuggingFace bajo acceso restringido (gated) y licencia `all-rights-reserved`. Se distribuye en formato safetensors con un tamaño de repositorio de 0,3 GB, lo que sugiere un modelo de pequeñas dimensiones o un checkpoint parcial. La ficha del repositorio no declara pipeline, idiomas soportados, arquitectura ni parámetros totales, por lo que la información técnica disponible es mínima.
+`Tson29/research-ckpt` es un checkpoint de investigación publicado por el usuario Tson29 en Hugging Face bajo acceso restringido (gated) y licencia `all-rights-reserved`. Se distribuye en formato safetensors con un tamaño de repositorio de 0,3 GB, lo que sugiere un modelo de pequeñas dimensiones o un checkpoint parcial. La ficha del repositorio no declara pipeline, idiomas soportados, arquitectura ni parámetros totales, por lo que la información técnica disponible es mínima.
 
 El nombre "research-ckpt" indica que se trata de un punto de control intermedio de un proceso de entrenamiento, no necesariamente un modelo final pulido para producción. La fecha de creación y actualización (1 de noviembre de 2026, con apenas 36 segundos de diferencia) apunta a una publicación automatizada o de prueba, sin documentación asociada.
 
@@ -34,7 +34,7 @@ Tampoco se dispone de información sobre el corpus de entrenamiento, número de 
 - No hay evidencia de capacidades de agente o razonamiento multi-paso.
 - No se especifican idiomas soportados.
 - No se declaran capacidades multimodales (visión, audio) ni modos de razonamiento explícito (thinking mode).
-- El pipeline no está definido en HuggingFace, por lo que no se puede confirmar que sea un modelo de generación de texto, de embeddings u otra tarea.
+- El pipeline no está definido en Hugging Face, por lo que no se puede confirmar que sea un modelo de generación de texto, de embeddings u otra tarea.
 
 ## Casos de uso
 
@@ -42,7 +42,7 @@ Tampoco se dispone de información sobre el corpus de entrenamiento, número de 
 - Reproducción de experimentos del autor: útil únicamente si se dispone de la documentación original del proyecto de investigación asociado, que no está publicada en el repositorio.
 - Evaluación comparativa de checkpoints: como punto de referencia en estudios sobre evolución de pesos durante el entrenamiento, sujeto a la disponibilidad de checkpoints adicionales del mismo autor.
 - Fine-tuning experimental: potencialmente utilizable como base para ajuste fino en tareas específicas, aunque la ausencia de model card y de licencia permisiva limita su uso fuera del ámbito del autor.
-- Auditoría de seguridad de modelos: interés para investigadores que analicen la composición de pesos publicados sin documentación, como caso de estudio de transparencia en HuggingFace.
+- Auditoría de seguridad de modelos: interés para investigadores que analicen la composición de pesos publicados sin documentación, como caso de estudio de transparencia en Hugging Face.
 - Docencia sobre publicación de modelos: ejemplo práctico de un repositorio gated sin model card, útil para ilustrar buenas y malas prácticas en la publicación de artefactos de IA.
 
 No se recomienda ningún caso de uso en producción dada la falta de especificaciones, benchmarks y garantías de licencia.
@@ -67,7 +67,7 @@ No disponible. No se dispone de información suficiente sobre arquitectura, tama
 
 - Ausencia total de model card: no hay información sobre datos de entrenamiento, sesgos, ni evaluación de riesgos.
 - Licencia `all-rights-reserved`: prohíbe explícitamente el uso comercial y cualquier redistribución sin autorización del autor.
-- Acceso gated: requiere aceptar condiciones en HuggingFace, lo que añade fricción para su uso y reproduce la opacidad del modelo.
+- Acceso gated: requiere aceptar condiciones en Hugging Face, lo que añade fricción para su uso y reproduce la opacidad del modelo.
 - Riesgo elevado de alucinación y comportamiento impredecible: sin benchmarks ni evaluación, no se puede caracterizar su fiabilidad.
 - Sin especificación de idiomas: no se puede garantizar un rendimiento aceptable en castellano ni en ningún otro idioma.
 - Publicación sin documentación ni pipeline: indica un artefacto de investigación no destinado a uso externo; tratarlo como tal.
@@ -76,5 +76,5 @@ No disponible. No se dispone de información suficiente sobre arquitectura, tama
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tson29/research-ckpt
+- Repositorio en Hugging Face: https://huggingface.co/Tson29/research-ckpt
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

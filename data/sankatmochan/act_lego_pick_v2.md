@@ -63,7 +63,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sankatmochan/act_lego_pick_v2
+- Hugging Face: https://huggingface.co/sankatmochan/act_lego_pick_v2
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - LeRobot: https://github.com/huggingface/lerobot
 - Dataset: https://huggingface.co/datasets/sankatmochan/lego_pick_v2_sept2

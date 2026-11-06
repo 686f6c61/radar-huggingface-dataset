@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qualcomm/Whisper-Tiny es una version optimizada para dispositivos Qualcomm del conocido modelo de reconocimiento automatico del habla Whisper-Tiny. Lo publica Qualcomm en HuggingFace dentro de su ecosistema Qualcomm AI Hub Models, y su objetivo es ejecutar transcripcion de voz a texto directamente en el dispositivo (edge inference), sin depender de la nube. El modelo parte de la implementacion de Whisper-Tiny de la libreria transformers de HuggingFace (version 4.42.3) y se ha reexportado a formatos compatibles con el hardware de Qualcomm.
+qualcomm/Whisper-Tiny es una version optimizada para dispositivos Qualcomm del conocido modelo de reconocimiento automatico del habla Whisper-Tiny. Lo publica Qualcomm en Hugging Face dentro de su ecosistema Qualcomm AI Hub Models, y su objetivo es ejecutar transcripcion de voz a texto directamente en el dispositivo (edge inference), sin depender de la nube. El modelo parte de la implementacion de Whisper-Tiny de la libreria transformers de Hugging Face (version 4.42.3) y se ha reexportado a formatos compatibles con el hardware de Qualcomm.
 
 La modificacion principal respecto al Whisper original es la sustitucion de las capas de atencion multi-cabeza (Multi-Head Attention, MHA) por atencion de una sola cabeza (Single-Head Attention, SHA) y la conversion de capas lineales en capas convolucionales, con el fin de reducir coste computacional y facilitar el despliegue en NPU. Segun el autor, mantiene un rendimiento robusto en entornos ruidosos y es capaz de transcribir fragmentos de audio de hasta 30 segundos.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Licencia | Orientacion |
 |---|---|---|---|---|
 | qualcomm/Whisper-Tiny | no disponible | audio de hasta 30 s | Apache 2.0 | Edge en hardware Qualcomm (QNN) |
-| Whisper-Tiny original (OpenAI / HuggingFace) | no disponible en esta ficha | audio de hasta 30 s | no disponible en esta ficha | Inferencia general en CPU/GPU |
+| Whisper-Tiny original (OpenAI / Hugging Face) | no disponible en esta ficha | audio de hasta 30 s | no disponible en esta ficha | Inferencia general en CPU/GPU |
 | Otras variantes de la familia Whisper | no disponible | no disponible | no disponible | Distintos tamanos y despliegues |
 
 Nota: la informacion proporcionada no incluye cifras de parametros, contexto ni rendimiento de los modelos comparables, por lo que la comparativa queda limitada a la orientacion de despliegue. Cualquier dato adicional se marca como no disponible.
@@ -88,7 +88,7 @@ Nota: la informacion proporcionada no incluye cifras de parametros, contexto ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/Whisper-Tiny
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/Whisper-Tiny
 - Libreria Qualcomm AI Hub Models (whisper_tiny): https://github.com/qualcomm/ai-hub-models/blob/v0.64.0/src/qai_hub_models/models/whisper_tiny
 - Implementacion base de Whisper-Tiny en transformers: https://github.com/huggingface/transformers/tree/v4.42.3/src/transformers/models/whisper
 - Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com

@@ -73,16 +73,16 @@ Comparación con modelos islandeses de mayor tamaño:
 - VRAM estimada para inferencia: no requiere GPU; el modelo puede ejecutarse en CPU. En GPU, los pesos en precisión completa ocupan aproximadamente 380 MB.
 - GPU recomendadas: no es necesario; cualquier GPU con al menos ~1 GB de memoria libre puede alojarlo, pero su diseño está orientado a CPU.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo moderna (por ejemplo, RTX 3060, RTX 4090) e incluso en hardware integrado.
-- Opciones de despliegue: transformers (Wav2Vec2ForCTC y Wav2Vec2Processor), endpoints compatibles según los tags de HuggingFace. No se documentan integraciones específicas con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: transformers (Wav2Vec2ForCTC y Wav2Vec2Processor), endpoints compatibles según los tags de Hugging Face. No se documentan integraciones específicas con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no se han publicado cifras concretas; la model card indica que se carga en segundos y se ejecuta en la CPU de un teléfono o portátil corriente.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Pesos | Samrómur 21.05 (WER) | Fjölmiðlatal (WER) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| pallr-wav2vec2-base-is | 95M | ~380 MB | 17,7 | 47,1 | CC BY-SA 4.0 | HuggingFace |
-| whisper-large-icelandic-62640-steps-967h | 1.550M | ~6,2 GB | 6,9 | 38,1 | no disponible | HuggingFace |
-| wav2vec2-large-xlsr-53-icelandic-ep30-967h | 315M | ~1,3 GB | 7,0 | 45,4 | no disponible | HuggingFace |
+| pallr-wav2vec2-base-is | 95M | ~380 MB | 17,7 | 47,1 | CC BY-SA 4.0 | Hugging Face |
+| whisper-large-icelandic-62640-steps-967h | 1.550M | ~6,2 GB | 6,9 | 38,1 | no disponible | Hugging Face |
+| wav2vec2-large-xlsr-53-icelandic-ep30-967h | 315M | ~1,3 GB | 7,0 | 45,4 | no disponible | Hugging Face |
 
 Los modelos grandes son más precisos en habla leída, pero requieren mucho más hardware. Este modelo es una fracción de su tamaño y habilita la transcripción en dispositivo.
 
@@ -100,7 +100,7 @@ Los modelos grandes son más precisos en habla leída, pero requieren mucho más
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/palli23/pallr-wav2vec2-base-is
+- Modelo en Hugging Face: https://huggingface.co/palli23/pallr-wav2vec2-base-is
 - Colección del proyecto: https://huggingface.co/collections/palli23/scaling-smaller-asr-models-vs-multilingual-giants-6aa9aabd202fee0610231065
 - Modelo base: https://huggingface.co/facebook/wav2vec2-base
 - Comparativa whisper-large-icelandic-62640-steps-967h: https://huggingface.co/language-and-voice-lab/whisper-large-icelandic-62640-steps-967h

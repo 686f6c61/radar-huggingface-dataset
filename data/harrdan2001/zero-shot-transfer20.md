@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, `Harrdan2001/zero-shot-transfer20`, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación exploratoria sobre el concepto de *Zero Shot Transfer*. El autor, Harrdan2001, documenta el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con líneas base y los requisitos de reproducibilidad. No se incluye ningún checkpoint, código ni resultados de benchmarks.
+Este repositorio de Hugging Face, `Harrdan2001/zero-shot-transfer20`, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación exploratoria sobre el concepto de *Zero Shot Transfer*. El autor, Harrdan2001, documenta el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con líneas base y los requisitos de reproducibilidad. No se incluye ningún checkpoint, código ni resultados de benchmarks.
 
-La relevancia del repositorio es puramente académica: sirve como punto de partida para investigadores que deseen verificar o ampliar el planteamiento teórico del estudio. Para desarrolladores que buscan un modelo utilizable en producción, este repositorio no ofrece ninguna capacidad de inferencia. En los metadatos de HuggingFace figura un archivo `safetensors` con 24.832 parámetros, pero el tamaño total del repositorio es de 0.0 GB, lo que indica que no existe un peso real.
+La relevancia del repositorio es puramente académica: sirve como punto de partida para investigadores que deseen verificar o ampliar el planteamiento teórico del estudio. Para desarrolladores que buscan un modelo utilizable en producción, este repositorio no ofrece ninguna capacidad de inferencia. En los metadatos de Hugging Face figura un archivo `safetensors` con 24.832 parámetros, pero el tamaño total del repositorio es de 0.0 GB, lo que indica que no existe un peso real.
 
 ## Especificaciones tecnicas
 
@@ -58,6 +58,6 @@ No disponible. No existe un modelo comparable, ya que este repositorio no es un 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Harrdan2001/zero-shot-transfer20
+- Hugging Face: https://huggingface.co/Harrdan2001/zero-shot-transfer20
 - Perfil del autor: https://huggingface.co/Harrdan2001
 - Repositorio relacionado del autor: https://huggingface.co/Harrdan2001/thesis-few-shot-multimodal

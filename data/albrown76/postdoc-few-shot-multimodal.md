@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Albrown76/postdoc-few-shot-multimodal` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion sobre aprendizaje few-shot multimodal. Asi lo declara de forma explicita su propia model card: el artefacto principal es `review.md`, un documento exploratorio que separa hipotesis y planes de resultados completados, y que no reclama mejoras sobre benchmarks, ablaciones finalizadas, codigo publicado ni checkpoint entrenado. El autor es el usuario de HuggingFace Albrown76 y la licencia declarada es MIT.
+`Albrown76/postdoc-few-shot-multimodal` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion sobre aprendizaje few-shot multimodal. Asi lo declara de forma explicita su propia model card: el artefacto principal es `review.md`, un documento exploratorio que separa hipotesis y planes de resultados completados, y que no reclama mejoras sobre benchmarks, ablaciones finalizadas, codigo publicado ni checkpoint entrenado. El autor es el usuario de Hugging Face Albrown76 y la licencia declarada es MIT.
 
 El repositorio aparece etiquetado con `safetensors` y `transformer`, y sus metadatos registran un total de 33.088 parametros en formato safetensors, una cifra tres ordenes de magnitud por debajo de cualquier transformer funcional moderno (el modelo mas pequeno de uso comun ronda los 100 millones). El tamano del repositorio se reporta como 0,0 GB, y el contador publico de descargas y likes es cero. La combinacion de estos datos sugiere que el fichero de pesos, si existe, no constituye un modelo utilizable para inferencia.
 
@@ -66,7 +66,7 @@ La model card declara de forma literal que la nota "no reclama mejoras sobre ben
 - Viabilidad en GPU de consumo: no aplica en la practica, porque no hay artefacto de inferencia verificado.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): ninguna soportada ni documentada. El repositorio no incluye codigo de carga, configuracion de modelo ni ficheros GGUF.
 - Latencia y throughput: no disponible.
-- Requisito real para consumir el repositorio: unicamente un cliente Git o de HuggingFace Hub y un visor de Markdown para leer `review.md`.
+- Requisito real para consumir el repositorio: unicamente un cliente Git o de Hugging Face Hub y un visor de Markdown para leer `review.md`.
 
 ## Comparativa con modelos similares
 
@@ -79,7 +79,7 @@ No disponible. Este repositorio no es un modelo entrenado, por lo que no existe 
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | sin datos | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | Publico en HuggingFace Hub, 0 descargas | no disponible |
+| Disponibilidad | Publico en Hugging Face Hub, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -96,6 +96,6 @@ No disponible. Este repositorio no es un modelo entrenado, por lo que no existe 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Albrown76/postdoc-few-shot-multimodal
+- Hugging Face: https://huggingface.co/Albrown76/postdoc-few-shot-multimodal
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su autor ni al tema concreto de las notas. Los resultados devueltos corresponden a foros de oposiciones y a articulos de soporte de ofimatica, sin relacion alguna con este repositorio.
 - No se dispone de enlaces a paper, blog tecnico, repositorio de codigo ni demo.

@@ -28,7 +28,7 @@ No es un modelo de lenguaje: no genera texto, no soporta tool calling ni agentes
 | Resolución de entrada | 640x640 |
 | Versión de RKNN Runtime | v2.4.0 |
 | Revisión del repositorio | v2.4.0 |
-| Tamaño del repositorio | 0,0 GB (metadatos de HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (metadatos de Hugging Face) |
 | Verificación de integridad | `SHA256SUMS` por configuración |
 | Descargas / likes | 0 / 0 |
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tarea | Resolución | Cuantización | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| RK3588-CNN-yolo11m (esta distribución) | Detección de objetos | 640x640 | w8a8 | RKNN (runtime v2.4.0) | AGPL-3.0 | HuggingFace y ModelScope, revisión v2.4.0 |
+| RK3588-CNN-yolo11m (esta distribución) | Detección de objetos | 640x640 | w8a8 | RKNN (runtime v2.4.0) | AGPL-3.0 | Hugging Face y ModelScope, revisión v2.4.0 |
 | yolo11n en RKNN Model Zoo | Detección de objetos | no disponible | no disponible | RKNN | no disponible | Repositorio airockchip/rknn_model_zoo |
 | YOLOv8 en RKNN Model Zoo | Detección de objetos | no disponible | no disponible | RKNN | no disponible | Repositorio airockchip/rknn_model_zoo |
 | YOLO11m original (Ultralytics / airockchip) | Detección de objetos | configurable | punto flotante (sin cuantizar) | PyTorch u ONNX | AGPL-3.0 (upstream declarado en la model card) | Repositorios de Ultralytics y airockchip/ultralytics_yolo11 |
@@ -103,7 +103,7 @@ No se dispone de datos de parámetros, precisión ni latencia para las variantes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKNNAI/RK3588-CNN-yolo11m
+- Modelo en Hugging Face: https://huggingface.co/RKNNAI/RK3588-CNN-yolo11m
 - Configuración de despliegue: https://huggingface.co/RKNNAI/RK3588-CNN-yolo11m/tree/main/yolo11m-640x640-w8a8-1
 - Modelo de origen (bifurcación de YOLO11 para Rockchip): https://github.com/airockchip/ultralytics_yolo11
 - RKNN Model Zoo: https://github.com/airockchip/rknn_model_zoo

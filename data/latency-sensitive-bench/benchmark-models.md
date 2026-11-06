@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Latency-Sensitive Bench models no es un modelo de lenguaje, sino un repositorio de artefactos de investigación en robótica y aprendizaje por refuerzo publicado por el usuario `latency-sensitive-bench` en HuggingFace. Contiene checkpoints de inferencia listos para usar ("inference-ready teachers and VLA policies") correspondientes a tareas concretas de benchmark: manipulación tipo intercept-grab y equilibrio de humanoides. El repositorio se organiza en rutas que codifican la sensibilidad a la latencia del escenario (`latency-aware` frente a `zero-latency`), la tarea, el tipo de política (`small-policy` o `vla`) y la versión del checkpoint.
+Latency-Sensitive Bench models no es un modelo de lenguaje, sino un repositorio de artefactos de investigación en robótica y aprendizaje por refuerzo publicado por el usuario `latency-sensitive-bench` en Hugging Face. Contiene checkpoints de inferencia listos para usar ("inference-ready teachers and VLA policies") correspondientes a tareas concretas de benchmark: manipulación tipo intercept-grab y equilibrio de humanoides. El repositorio se organiza en rutas que codifican la sensibilidad a la latencia del escenario (`latency-aware` frente a `zero-latency`), la tarea, el tipo de política (`small-policy` o `vla`) y la versión del checkpoint.
 
 El contenido combina dos familias de artefactos. Por un lado, profesores de RL entrenados desde cero: PPO para la tarea MIKASA intercept-grab-fast y FastTD3 para HumanoidBench balance-simple. Por otro, políticas VLA (vision-language-action) de inferencia: un checkpoint StarVLA QwenOFT de 5k pasos para MIKASA y un bundle oficial GR00T N1.7 de 10k pasos para balance-simple. El único resultado cuantitativo publicado en la model card es una tasa de éxito del 98,83 % (253/256 episodios) en una evaluación independiente de la política PPO entrenada con el perfil temporal QwenOFT RTX 3090.
 
@@ -109,7 +109,7 @@ Para comparaciones frente a alternativas externas de la misma categoria: no disp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/latency-sensitive-bench/benchmark-models
+- Repositorio en Hugging Face: https://huggingface.co/latency-sensitive-bench/benchmark-models
 - Repositorio fuente MIKASA (revision `38327e16f9b33cf5f827b54a606cb4c22d4dfbfc`): no disponible como URL en la informacion proporcionada.
 - Repositorio fuente Balance (revision `734dcedcafbcbffab7f8665d09de42a9c8416d38`): no disponible como URL en la informacion proporcionada.
 - Registro de artefactos del repositorio (mencionado como referencia para contratos de tarea y comandos de reproduccion): no disponible como URL.

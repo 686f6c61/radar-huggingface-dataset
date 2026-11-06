@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `generatedDigitalExps_1xP91i_hier_by_room_rnn_meanPoolProc_video_2` es un artefacto publicado en HuggingFace por el usuario `gianmaTest` el 6 de noviembre de 2026. Por el nombre se deduce que se trata de un modelo jerarquico por habitacion ("hier_by_room") basado en una RNN con mean pooling ("rnn_meanPoolProc"), probablemente orientado a procesar datos de video en un contexto de experimentos digitales generados. No obstante, la model card no aporta ninguna descripcion funcional, paper ni documentacion asociada.
+El modelo `generatedDigitalExps_1xP91i_hier_by_room_rnn_meanPoolProc_video_2` es un artefacto publicado en Hugging Face por el usuario `gianmaTest` el 6 de noviembre de 2026. Por el nombre se deduce que se trata de un modelo jerarquico por habitacion ("hier_by_room") basado en una RNN con mean pooling ("rnn_meanPoolProc"), probablemente orientado a procesar datos de video en un contexto de experimentos digitales generados. No obstante, la model card no aporta ninguna descripcion funcional, paper ni documentacion asociada.
 
 El repositorio contiene unicamente pesos en formato safetensors con 2.366.208 parametros (aproximadamente 2,4 millones), lo que lo situa en la categoria de modelos muy pequenos, mas cercano a un experimento de investigacion o a un componente auxiliar que a un modelo de lenguaje generativo. No hay informacion sobre arquitectura exacta, datos de entrenamiento, tarea objetivo ni licencia.
 
@@ -25,7 +25,7 @@ Su relevancia practica para desarrolladores e investigadores es muy limitada en 
 
 No se dispone de informacion publicada sobre la arquitectura interna. El identificador del repositorio incluye los terminos `hier_by_room`, `rnn` y `meanPoolProc`, que sugieren un procesamiento jerarquico por habitaciones con una red recurrente y agregacion mediante mean pooling, probablemente aplicado a representaciones de video. Esta interpretacion es inferencial y no esta confirmada por el autor.
 
-Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens, la composicion del dataset, ni sobre si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card se limita a indicar que el modelo se subio mediante la integracion `PyTorchModelHubMixin` de HuggingFace Hub, con los campos Code, Paper y Docs marcados como "More Information Needed".
+Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens, la composicion del dataset, ni sobre si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card se limita a indicar que el modelo se subio mediante la integracion `PyTorchModelHubMixin` de Hugging Face Hub, con los campos Code, Paper y Docs marcados como "More Information Needed".
 
 ## Capacidades
 
@@ -73,5 +73,5 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xP91i_hier_by_room_rnn_meanPoolProc_video_2
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xP91i_hier_by_room_rnn_meanPoolProc_video_2
 - Documentacion de PyTorchModelHubMixin: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin

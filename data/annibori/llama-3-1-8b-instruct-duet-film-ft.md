@@ -71,9 +71,9 @@ K1 se define como la aparición del nombre completo del director en la respuesta
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-DUET-film-ft | 8,03B | no disponible | llama3.1 | HuggingFace (0 descargas, 0 likes) | Fine-tune de investigación para unlearning |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128k | llama3.1 | HuggingFace, ampliamente usado | Modelo base; referencia de pérdida 2,3677 en FineWeb-Edu |
-| Checkpoints desaprendidos de la colección AnniBori | 8,03B (heredado) | no disponible | llama3.1 | HuggingFace | 12 checkpoints derivados de este modelo; comparables directamente vía la tabla de escapes |
+| Llama-3.1-8B-Instruct-DUET-film-ft | 8,03B | no disponible | llama3.1 | Hugging Face (0 descargas, 0 likes) | Fine-tune de investigación para unlearning |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128k | llama3.1 | Hugging Face, ampliamente usado | Modelo base; referencia de pérdida 2,3677 en FineWeb-Edu |
+| Checkpoints desaprendidos de la colección AnniBori | 8,03B (heredado) | no disponible | llama3.1 | Hugging Face | 12 checkpoints derivados de este modelo; comparables directamente vía la tabla de escapes |
 
 No se dispone de datos de benchmarks estándar para comparar el rendimiento general con alternativas de la misma categoría.
 
@@ -86,11 +86,11 @@ No se dispone de datos de benchmarks estándar para comparar el rendimiento gene
 - Licencia llama3.1: el uso comercial está sujeto a los términos de la licencia de Meta para Llama 3.1, que incluyen restricciones y obligaciones de atribución; conviene revisarlas antes de cualquier despliegue.
 - Contexto: aunque el modelo base soporta 128k tokens, el fine-tune se entrenó con longitud máxima 512, por lo que el comportamiento más allá de esa longitud no está validado.
 - Reproducibilidad: depende de commits concretos de datasets (`2c2b047...`, snapshot `ee23f9b`) y de scripts alojados en un repositorio de proyecto no enlazado directamente en la model card.
-- Popularidad nula en HuggingFace (0 descargas, 0 likes) en el momento de la consulta: no hay evidencia de uso externo ni validación por terceros.
+- Popularidad nula en Hugging Face (0 descargas, 0 likes) en el momento de la consulta: no hay evidencia de uso externo ni validación por terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft
+- Modelo en Hugging Face: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/SwetieePawsss/DUET_LLM
 - Tabla de escapes: https://huggingface.co/datasets/AnniBori/DUET-film-escapes

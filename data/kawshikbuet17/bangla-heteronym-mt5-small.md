@@ -101,7 +101,7 @@ El autor indica que el checkpoint BanglaBERT es la opción recomendada para la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kawshikbuet17/bangla-heteronym-mt5-small
+- Modelo en Hugging Face: https://huggingface.co/kawshikbuet17/bangla-heteronym-mt5-small
 - Conjunto de datos: https://huggingface.co/datasets/kawshikbuet17/bangla-heteronyms
 - Repositorio del benchmark y código de inferencia: https://github.com/kawshikbuet17/bangla-heteronym-benchmark
 - Modelo base: https://huggingface.co/google/mt5-small

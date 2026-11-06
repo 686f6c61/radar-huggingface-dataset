@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Factorial_Base_1.8B_Semi_Tiny es un modelo de generacion de texto de aproximadamente 1.800 millones de parametros publicado en HuggingFace por el usuario bull220202 bajo el identificador `bull220202/Factorial_Base_1.8B_Semi_Tiny`. La model card es extremadamente escueta: se limita a indicar que es un "tiny factorial model" de tamano aproximado 1.8B, etiquetado con los tags `#Factorial` y `#PyTorch`, y declara el japones (`ja`) como unico idioma soportado. No se documenta la arquitectura interna, el proceso de entrenamiento, la composicion del dataset ni los resultados de evaluacion.
+Factorial_Base_1.8B_Semi_Tiny es un modelo de generacion de texto de aproximadamente 1.800 millones de parametros publicado en Hugging Face por el usuario bull220202 bajo el identificador `bull220202/Factorial_Base_1.8B_Semi_Tiny`. La model card es extremadamente escueta: se limita a indicar que es un "tiny factorial model" de tamano aproximado 1.8B, etiquetado con los tags `#Factorial` y `#PyTorch`, y declara el japones (`ja`) como unico idioma soportado. No se documenta la arquitectura interna, el proceso de entrenamiento, la composicion del dataset ni los resultados de evaluacion.
 
 El modelo se distribuye bajo licencia CC-BY-4.0 y esta etiquetado para la tarea de generacion de texto (`text-generation`). El repositorio ocupa 9.9 GB, un tamano coherente con pesos en precision de 16 bits (fp16/bf16) para un modelo de ~1.8B de parametros, aunque no se confirma el formato exacto de los pesos en la informacion disponible.
 
@@ -88,7 +88,7 @@ La diferencia principal no es de tamano sino de trazabilidad: los modelos de ref
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bull220202/Factorial_Base_1.8B_Semi_Tiny
+- Hugging Face: https://huggingface.co/bull220202/Factorial_Base_1.8B_Semi_Tiny
 - Paper: no disponible
 - Blog o repositorio del autor: no disponible
 - Demo: no disponible

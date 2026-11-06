@@ -70,9 +70,9 @@ No hay comparacion con otros modelos cuantizados de video en la informacion disp
 
 | Modelo | Tamano | Cuantizacion | VRAM requerida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TenStrip/10Eros-Max (bf16 original) | ~40 GB | bf16 | 48 GB+ (o 2x24 GB) | other | HuggingFace |
-| berryber09/MiniMax-H3-10Eros-beta2-fl2va-w4a8 | ~11.7 GB | W4A8 | 24 GB | other (hereda) | HuggingFace |
-| berryber09/MiniMax-H3-ref2va-fl2va-hybrid-w4a8 | no disponible | W4A8 | 24 GB (estimado) | other | HuggingFace |
+| TenStrip/10Eros-Max (bf16 original) | ~40 GB | bf16 | 48 GB+ (o 2x24 GB) | other | Hugging Face |
+| berryber09/MiniMax-H3-10Eros-beta2-fl2va-w4a8 | ~11.7 GB | W4A8 | 24 GB | other (hereda) | Hugging Face |
+| berryber09/MiniMax-H3-ref2va-fl2va-hybrid-w4a8 | no disponible | W4A8 | 24 GB (estimado) | other | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas versiones. La ventaja principal de la version cuantizada es la reduccion de memoria y la viabilidad en GPUs de consumo, a costa de una posible degradacion visual no cuantificada en benchmarks publicos.
 
@@ -84,11 +84,11 @@ No se dispone de datos de rendimiento comparativo entre estas versiones. La vent
 - Solo es compatible con ComfyUI ≥ v0.31.0 y comfy-kitchen con el layout `AsymW4A8Int8Layout`. No funcionara en otros frameworks como Diffusers o vLLM sin adaptaciones.
 - Requiere CUDA SM ≥ 8.0. GPUs anteriores a Ampere (por ejemplo, RTX 20xx o GTX 16xx) no son compatibles.
 - No se proporcionan datos sobre la generacion de audio sincronizado; es posible que esta cuantizacion solo cubra el modulo de video (FL2VA) y no el audio.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido ampliamente probado por la comunidad. Se recomienda validar su comportamiento antes de usarlo en proyectos criticos.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido ampliamente probado por la comunidad. Se recomienda validar su comportamiento antes de usarlo en proyectos criticos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/berryber09/MiniMax-H3-10Eros-beta2-fl2va-w4a8
+- Modelo en Hugging Face: https://huggingface.co/berryber09/MiniMax-H3-10Eros-beta2-fl2va-w4a8
 - Modelo fuente (bf16): https://huggingface.co/TenStrip/10Eros-Max
 - Repositorio oficial MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3
 - Directorio FL2VA en el repo oficial: https://github.com/MiniMax-AI/MiniMax-H3/tree/main/FL2VA

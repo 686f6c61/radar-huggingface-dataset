@@ -78,5 +78,5 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jamesatron1512/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jamesatron1512/Qwen3.8-27B-GGUF
 - Modelo base (cuantización NVFP4): https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4

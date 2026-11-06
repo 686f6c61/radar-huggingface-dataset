@@ -70,6 +70,6 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa c
 
 ## Enlaces
 
-- [Modelo cuantizado en HuggingFace](https://huggingface.co/mradermacher/Doppelganger-Twist-24B-i1-GGUF)
+- [Modelo cuantizado en Hugging Face](https://huggingface.co/mradermacher/Doppelganger-Twist-24B-i1-GGUF)
 - [Modelo base (Naphula/Doppelganger-Twist-24B)](https://huggingface.co/Naphula/Doppelganger-Twist-24B)
 - [Paginade descargas del cuantizador](https://hf.tst.eu/model#Doppelganger-Twist-24B-i1-GGUF)

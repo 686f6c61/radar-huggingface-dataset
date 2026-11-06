@@ -94,6 +94,6 @@ No se dispone de informacion sobre alternativas comparables de la misma categori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ya9919/laya-finance-matched-sft-50k
+- Hugging Face: https://huggingface.co/ya9919/laya-finance-matched-sft-50k
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Repositorio de reproduccion e evidencia agregada: https://github.com/KataDavidXD/mas-simulation

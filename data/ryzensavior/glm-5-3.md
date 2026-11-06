@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai (familia GLM) y distribuido en pesos abiertos. La ficha de HuggingFace analizada corresponde al repositorio `Ryzensavior/GLM-5.3`, una copia subida por un tercero. Segun los datos reales de los ficheros safetensors, el modelo tiene 753.329.940.480 parametros (unos 753,3 mil millones), lo que lo situa en la gama de modelos frontier abiertos, y el repositorio ocupa 755,7 GB, consistente con pesos en FP8.
+GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai (familia GLM) y distribuido en pesos abiertos. La ficha de Hugging Face analizada corresponde al repositorio `Ryzensavior/GLM-5.3`, una copia subida por un tercero. Segun los datos reales de los ficheros safetensors, el modelo tiene 753.329.940.480 parametros (unos 753,3 mil millones), lo que lo situa en la gama de modelos frontier abiertos, y el repositorio ocupa 755,7 GB, consistente con pesos en FP8.
 
 La innovacion principal que declara el autor es que GLM-5.3 utiliza exactamente el mismo modelo base que GLM-5.2 y todas las mejoras provienen del post-entrenamiento. El foco esta en codigo complejo y tareas de horizonte largo: mejora un 50% sobre GLM-5.2 en el banco interno Z.ai Code Bench y alcanza SOTA abierto en Terminal Bench 3.0 (28,3) y Agents' Last Exam (ALE-CLI, 28,5). Ademas, el autor reporta una capacidad emergente de ciberseguridad, con SOTA en CyberGym (84,5) para descubrimiento de vulnerabilidades y mas del doble de rendimiento que GLM-5.2 en benchmarks de explotacion.
 
@@ -120,7 +120,7 @@ Frente a modelos propietarios citados por el autor (Opus 4.8, GPT-5.6 Sol, Fable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryzensavior/GLM-5.3
+- Modelo en Hugging Face: https://huggingface.co/Ryzensavior/GLM-5.3
 - Referencia arXiv indicada en las etiquetas: https://arxiv.org/abs/2602.15763
 - SGLang (repositorio): https://github.com/sgl-project/sglang
 - SGLang cookbook para GLM-5.3: https://cookbook.sglang.io/autoregressive/GLM/GLM-5.3

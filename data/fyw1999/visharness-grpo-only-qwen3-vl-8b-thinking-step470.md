@@ -71,10 +71,10 @@ Estos resultados corresponden a validacion muestreada sobre subconjuntos, no a c
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VisHarness-GRPO-Only-Qwen3-VL-8B-Thinking-step470 | ~8,77 mil millones | no disponible | Agente visual con tool-use, GRPO sin SFT | apache-2.0 | HuggingFace (25 descargas) |
-| VisHarness-SFT-Only-Qwen3-VL-8B-Thinking | ~8,77 mil millones (heredado) | no disponible | SFT solo, paso 105 | apache-2.0 | HuggingFace |
-| VisHarness-SFT-GRPO-Qwen3-VL-8B-Thinking-step550 | ~8,77 mil millones (heredado) | no disponible | SFT seguido de GRPO, paso 550 | apache-2.0 | HuggingFace |
-| Qwen/Qwen3-VL-8B-Thinking | ~8,77 mil millones | no disponible | Modelo base multimodal con thinking | apache-2.0 | HuggingFace |
+| VisHarness-GRPO-Only-Qwen3-VL-8B-Thinking-step470 | ~8,77 mil millones | no disponible | Agente visual con tool-use, GRPO sin SFT | apache-2.0 | Hugging Face (25 descargas) |
+| VisHarness-SFT-Only-Qwen3-VL-8B-Thinking | ~8,77 mil millones (heredado) | no disponible | SFT solo, paso 105 | apache-2.0 | Hugging Face |
+| VisHarness-SFT-GRPO-Qwen3-VL-8B-Thinking-step550 | ~8,77 mil millones (heredado) | no disponible | SFT seguido de GRPO, paso 550 | apache-2.0 | Hugging Face |
+| Qwen/Qwen3-VL-8B-Thinking | ~8,77 mil millones | no disponible | Modelo base multimodal con thinking | apache-2.0 | Hugging Face |
 
 Las tres variantes VisHarness comparten base y tamano; la diferencia esta en la etapa de entrenamiento (SFT, GRPO puro o SFT+GRPO). No se dispone de datos de rendimiento comparativos entre ellas en la informacion proporcionada.
 
@@ -91,7 +91,7 @@ Las tres variantes VisHarness comparten base y tamano; la diferencia esta en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fyw1999/VisHarness-GRPO-Only-Qwen3-VL-8B-Thinking-step470
+- Modelo en Hugging Face: https://huggingface.co/fyw1999/VisHarness-GRPO-Only-Qwen3-VL-8B-Thinking-step470
 - Checkpoint SFT-Only: https://huggingface.co/fyw1999/VisHarness-SFT-Only-Qwen3-VL-8B-Thinking
 - Checkpoint SFT-GRPO step550: https://huggingface.co/fyw1999/VisHarness-SFT-GRPO-Qwen3-VL-8B-Thinking-step550
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking

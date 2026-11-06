@@ -2,7 +2,7 @@
 
 ## Resumen
 
-E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter6-frozen-adam es un checkpoint de investigación publicado por el usuario ziyan98 en HuggingFace, obtenido a partir de Qwen/Qwen3.8-27B mediante el experimento de internalización de conocimiento E2K sobre el juego `cd82-fb555c5d` de ARC-AGI-3. No es un ajuste de propósito general: el autor lo describe explícitamente como una rama de control (act-ctrl) de un estudio que investiga si el conocimiento verificado extraído de la propia partida de un modelo puede escribirse en sus pesos mediante filas supervisadas y mejorarse después con RL sobre episodios reales de múltiples pasos.
+E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter6-frozen-adam es un checkpoint de investigación publicado por el usuario ziyan98 en Hugging Face, obtenido a partir de Qwen/Qwen3.8-27B mediante el experimento de internalización de conocimiento E2K sobre el juego `cd82-fb555c5d` de ARC-AGI-3. No es un ajuste de propósito general: el autor lo describe explícitamente como una rama de control (act-ctrl) de un estudio que investiga si el conocimiento verificado extraído de la propia partida de un modelo puede escribirse en sus pesos mediante filas supervisadas y mejorarse después con RL sobre episodios reales de múltiples pasos.
 
 El checkpoint corresponde a la iteración 6 de Megatron de la primera tentativa del run, en la que los momentos de Adam acumulados durante el calentamiento SFT se arrastraron sin reiniciar al RL, manteniendo el paso de política aproximadamente 5 veces por debajo de la línea base. Se entrenó sobre 303 filas de harness del brazo act-ctrl (turnos propios del modelo base, sin conocimiento), con 2 rollouts solo SFT (iteraciones 0-1) y RL con Dr.GRPO en los rollouts 2-3, detenido por decisión el 2026-09-18.
 
@@ -44,7 +44,7 @@ El entrenamiento se realizó con slime v0.3.2 sobre Megatron-LM (TP4 × PP4, 16 
 - Estudio de estabilidad de RL: la iteración 6 documenta el caso en que los momentos de Adam del SFT se arrastran al RL y congelan el movimiento de política (~5 veces por debajo de la línea base), un escenario útil para analizar reinicios de estado del optimizador y sus efectos.
 - Análisis de agentes sobre ARC-AGI-3: con 40 decisiones por episodio, hasta cuatro niveles y recompensa con forma, el checkpoint permite medir tasas de acierto, cambios de paso y no-ops en un juego concreto (`cd82-fb555c5d`) y comparar contra el modelo base con el mismo harness y semilla 0.
 - Investigación sobre verbosidad y coste de inferencia en agentes: las medianas de tokens de pensamiento (3.347-4.504) permiten estudiar la relación entre presupuesto de razonamiento y retorno en políticas entrenadas con Dr.GRPO.
-- Auditoría de pipelines de conversión Megatron → HuggingFace: el checkpoint se generó con `convert_to_hf` de slime y `convert_torch_dist_to_hf_lowmem.py` en streaming por chunks, y las comprobaciones de forma, dtype e identidad bit a bit de los tensores copiados lo hacen útil como caso de prueba de la herramienta.
+- Auditoría de pipelines de conversión Megatron → Hugging Face: el checkpoint se generó con `convert_to_hf` de slime y `convert_torch_dist_to_hf_lowmem.py` en streaming por chunks, y las comprobaciones de forma, dtype e identidad bit a bit de los tensores copiados lo hacen útil como caso de prueba de la herramienta.
 - Docencia y divulgación técnica: al ser un checkpoint pequeño en descargas (14) y con licencia Apache 2.0, sirve para ilustrar el ciclo completo SFT + RL con verificación por entorno sin incurrir en costes de un modelo de mayor escala.
 
 ## Benchmarks y rendimiento
@@ -100,7 +100,7 @@ No se dispone en la información proporcionada de alternativas comparables de ot
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter6-frozen-adam
+- Checkpoint en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter6-frozen-adam
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las busquedas devolvieron unicamente resultados sin relacion con el checkpoint (contenido para adultos), por lo que no se incluyen.
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`halilgokdal/mirror-metaclass-birefnet-lite-coreml` es un espejo (mirror) byte a byte del repositorio `metaclass/birefnet-lite-coreml`, publicado en HuggingFace el 5 de noviembre de 2026. No se trata de un modelo entrenado por el autor del espejo: el contenido es una copia verificada por SHA-256 del commit `519543b900332b0fd834ab7a40a17099b2d2e7cb` del repositorio original, mantenida para que una aplicacion personal de iPad pueda seguir descargando el modelo auxiliar si el repositorio original desaparece.
+`halilgokdal/mirror-metaclass-birefnet-lite-coreml` es un espejo (mirror) byte a byte del repositorio `metaclass/birefnet-lite-coreml`, publicado en Hugging Face el 5 de noviembre de 2026. No se trata de un modelo entrenado por el autor del espejo: el contenido es una copia verificada por SHA-256 del commit `519543b900332b0fd834ab7a40a17099b2d2e7cb` del repositorio original, mantenida para que una aplicacion personal de iPad pueda seguir descargando el modelo auxiliar si el repositorio original desaparece.
 
 El modelo subyacente es BiRefNet Lite, una variante ligera de BiRefNet (Bilateral Reference Network), una arquitectura de segmentacion de imagenes de alta resolucion orientada a la extraccion de primer plano y a la generacion de mascaras alfa. El espejo se distribuye en formato Core ML (`.mlpackage`), lo que lo hace directamente consumible en el ecosistema Apple (iOS, iPadOS, macOS) mediante Core ML.
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es limitada: se trata de un artefacto de respaldo, s
 | Longitud de contexto | no aplica (modelo de vision, no de lenguaje) |
 | Tipos de cuantizacion | no disponible; el paquete distribuido es FP16 en computo y FP32 en entrada/salida (`fp16compute-fp32io`) |
 | Idiomas soportados | no disponible (modelo de vision, sin componente linguistico) |
-| Licencia | MIT segun la model card del espejo; el campo de metadatos de HuggingFace figura como `other` |
+| Licencia | MIT segun la model card del espejo; el campo de metadatos de Hugging Face figura como `other` |
 | Formato de pesos | Core ML `.mlpackage` (ruta `fp16compute-fp32io/r1/BiRefNetLite-1024-FP16Compute-FP32IO.mlpackage/`) |
 
 ## Arquitectura y entrenamiento
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este espejo (BiRefNet Lite Core ML) | Segmentacion de imagenes | no disponible | no aplica | MIT (segun model card) | Core ML `.mlpackage` | HuggingFace, espejo de un repo original |
-| BiRefNet original (`metaclass/birefnet-lite-coreml`) | Segmentacion de imagenes | no disponible | no aplica | MIT | Core ML `.mlpackage` | HuggingFace, repositorio de origen |
+| Este espejo (BiRefNet Lite Core ML) | Segmentacion de imagenes | no disponible | no aplica | MIT (segun model card) | Core ML `.mlpackage` | Hugging Face, espejo de un repo original |
+| BiRefNet original (`metaclass/birefnet-lite-coreml`) | Segmentacion de imagenes | no disponible | no aplica | MIT | Core ML `.mlpackage` | Hugging Face, repositorio de origen |
 | Otras variantes de BiRefNet (pesos PyTorch) | Segmentacion de imagenes | no disponible | no aplica | no disponible en esta busqueda | safetensors / PyTorch | no disponible en esta busqueda |
 
 La comparativa se limita al ecosistema BiRefNet porque no se dispone de datos verificados de alternativas como U2-Net, MODNet o RMBG en la informacion proporcionada; incluirlas con cifras seria especulativo.
@@ -69,7 +69,7 @@ La comparativa se limita al ecosistema BiRefNet porque no se dispone de datos ve
 ## Limitaciones y advertencias
 
 - Es un espejo, no un modelo original: cualquier actualizacion, correccion o soporte depende del repositorio `metaclass/birefnet-lite-coreml`, que puede cambiar o desaparecer.
-- La licencia declarada en la model card es MIT, pero el campo de metadatos de HuggingFace figura como `other`; conviene verificar los terminos del repositorio original antes de un uso comercial.
+- La licencia declarada en la model card es MIT, pero el campo de metadatos de Hugging Face figura como `other`; conviene verificar los terminos del repositorio original antes de un uso comercial.
 - No hay model card tecnica del modelo subyacente en este repositorio: se desconoce el dataset de entrenamiento, los posibles sesgos demograficos o de composicion de escenas, y el rendimiento real en dominios distintos al de entrenamiento.
 - Riesgo de mascaras incorrectas en imagenes con sujetos poco definidos, transparencias, pelo fino u oclusiones; sin benchmarks publicados no es posible cuantificar la tasa de error.
 - El paquete esta fijado a una resolucion de 1024 px y a un preprocesado concreto; usarlo con otras resoluciones requiere redimensionado externo y puede degradar la calidad.

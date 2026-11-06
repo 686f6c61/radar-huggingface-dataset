@@ -87,7 +87,7 @@ No se dispone de comparativas directas con otros modelos "uncensored" de tamaño
 
 ## Enlaces
 
-- Modelo en HuggingFace (versión NVFP4): https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-NVFP4
+- Modelo en Hugging Face (versión NVFP4): https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved-NVFP4
 - Modelo base (versión heretic sin cuantizar): https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

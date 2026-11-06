@@ -90,7 +90,7 @@ Las comparaciones de contexto, parametros y licencia de los modelos de referenci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GaborMadarasz/gemma-3n-E2B-it_hun_ASR-finetune-gguf_Q8
+- Repositorio en Hugging Face: https://huggingface.co/GaborMadarasz/gemma-3n-E2B-it_hun_ASR-finetune-gguf_Q8
 - Repositorio de Unsloth (herramienta de ajuste y conversion declarada por el autor): https://github.com/unslothai/unsloth
 - Documentacion de Gemma 3n de Google (modelo base): no disponible en la informacion proporcionada, se recomienda consultar la pagina oficial de Gemma en ai.google.dev
 - Repositorio de llama.cpp (runtime de inferencia para GGUF): no disponible en la informacion proporcionada como enlace explicito, se recomienda consultar github.com/ggml-org/llama.cpp

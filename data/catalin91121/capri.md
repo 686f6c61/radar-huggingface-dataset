@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Capri es un modelo publicado en HuggingFace por el usuario `catalin91121` bajo la licencia `grok2-community`. La model card asociada es practicamente vacia: unicamente declara la licencia y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni casos de uso previstos. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que sugiere que se trata de un artefacto reciente o de un experimento personal sin difusion.
+Capri es un modelo publicado en Hugging Face por el usuario `catalin91121` bajo la licencia `grok2-community`. La model card asociada es practicamente vacia: unicamente declara la licencia y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni casos de uso previstos. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que sugiere que se trata de un artefacto reciente o de un experimento personal sin difusion.
 
-No hay informacion disponible sobre la arquitectura del modelo, el numero de parametros, la longitud de contexto ni los idiomas soportados. La etiqueta `region:us` indica que el repositorio esta alojado en la region estadounidense de HuggingFace, pero no aporta informacion tecnica sobre el modelo en si.
+No hay informacion disponible sobre la arquitectura del modelo, el numero de parametros, la longitud de contexto ni los idiomas soportados. La etiqueta `region:us` indica que el repositorio esta alojado en la region estadounidense de Hugging Face, pero no aporta informacion tecnica sobre el modelo en si.
 
 El interes de esta ficha es, por tanto, limitado: se documenta lo poco que el autor ha hecho publico y se senalan explicitamente los vacios de informacion. Cualquier evaluacion tecnica seria del modelo requeriria inspeccionar directamente los pesos del repositorio, algo que no puede hacerse a partir de la informacion disponible.
 
@@ -67,7 +67,7 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| capri | no disponible | no disponible | grok2-community | HuggingFace |
+| capri | no disponible | no disponible | grok2-community | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,5 +83,5 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/catalin91121/capri
+- Repositorio en Hugging Face: https://huggingface.co/catalin91121/capri
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

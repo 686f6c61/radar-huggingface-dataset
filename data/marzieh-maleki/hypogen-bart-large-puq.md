@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HypoGen-BART-Large-PUQ es un modelo de lenguaje basado en la arquitectura BART-large, publicado en el Hub de HuggingFace por la autora Marzieh Maleki. El nombre sugiere su integración en el marco HypoGen, descrito en el artículo "Sparks of Science: Hypothesis Generation Using Structured ..." (arXiv:2504.12976), donde se plantea la generación de hipótesis científicas como modelado de lenguaje condicional. El modelo está etiquetado como text2text-generation y se ha subido con pesos en formato safetensors, con un total de 406.341.721 parámetros.
+HypoGen-BART-Large-PUQ es un modelo de lenguaje basado en la arquitectura BART-large, publicado en el Hub de Hugging Face por la autora Marzieh Maleki. El nombre sugiere su integración en el marco HypoGen, descrito en el artículo "Sparks of Science: Hypothesis Generation Using Structured ..." (arXiv:2504.12976), donde se plantea la generación de hipótesis científicas como modelado de lenguaje condicional. El modelo está etiquetado como text2text-generation y se ha subido con pesos en formato safetensors, con un total de 406.341.721 parámetros.
 
 El modelo se presenta como un checkpoint de BART-large adaptado para la tarea de generación de hipótesis a partir de un "Bit" de entrada, con una cadena de razonamiento explícita (Chain-of-Reasoning). Aunque la model card es prácticamente vacía, la arquitectura subyacente es la de BART (denoising autoencoder) con 12 capas de encoder y decoder, y una longitud de contexto típica de 512 tokens. Su relevancia radica en la aplicación de modelos transformer de tamaño medio a tareas científicas de descubrimiento, aunque la información pública es escasa y no se han publicado benchmarks.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rajeshdramanathan/matching-int4` es un repositorio de HuggingFace que contiene una implementacion propia de una red DeiT (Data-efficient Image Transformer) orientada a tareas de *matching*, acompanada de un fichero de pesos en formato safetensors. El autor lo describe explicitamente como un punto de partida reproducible y no como una release de modelo entrenado: la model card indica que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests* y que no se reclama ninguna puntuacion de benchmark.
+`rajeshdramanathan/matching-int4` es un repositorio de Hugging Face que contiene una implementacion propia de una red DeiT (Data-efficient Image Transformer) orientada a tareas de *matching*, acompanada de un fichero de pesos en formato safetensors. El autor lo describe explicitamente como un punto de partida reproducible y no como una release de modelo entrenado: la model card indica que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests* y que no se reclama ninguna puntuacion de benchmark.
 
 El dato mas relevante es su tamano real: 49.600 parametros totales segun los metadatos de safetensors. Esto contrasta con la etiqueta "huge" que aparece en la tabla de arquitectura de la model card, que hace referencia a la escala nominal declarada en la configuracion y no a un recuento real de parametros. Con ese orden de magnitud, el modelo esta muy por debajo de cualquier DeiT oficial (DeiT-Tiny ronda los 5,7 millones de parametros), por lo que debe interpretarse como un esqueleto de arquitectura o un ejemplo didactico, no como un modelo con capacidad predictiva utilizable en produccion.
 
@@ -48,7 +48,7 @@ No hay evidencia de entrenamiento real. La model card afirma de forma explicita 
 - Pruebas de integracion en CI: incorporar `model.py` a una bateria de tests que compruebe que el forward pass no rompe, que las formas de los tensores son coherentes y que `config.json` y `training_args.json` se parsean correctamente.
 - Plantilla de investigacion en arquitecturas hibridas: usar la combinacion de atencion de ventana deslizante, fusion con *gating*, mish y RMSNorm como base para experimentar con variantes de transformer de vision sin partir de cero.
 - Prototipado de tareas de *matching*: emplear el esqueleto para definir la cabeza de salida y la funcion de perdida de un sistema de emparejamiento (por ejemplo, correspondencia entre pares de imagenes o entre imagen y texto), antes de invertir en datos etiquetados.
-- Docencia y formacion: ilustrar en un curso como se estructura un repositorio de modelo en HuggingFace (config, training args, checkpoint, script ejecutable) con un ejemplo lo bastante pequeno para inspeccionarlo entero en clase.
+- Docencia y formacion: ilustrar en un curso como se estructura un repositorio de modelo en Hugging Face (config, training args, checkpoint, script ejecutable) con un ejemplo lo bastante pequeno para inspeccionarlo entero en clase.
 - Desarrollo de adaptadores de carga: implementar el *wrapper* necesario para que un modelo custom como este pueda cargarse con APIs genericas, un trabajo reutilizable para otros repositorios no estandar.
 - Punto de partida para *fine-tuning*: solo si se dispone de un corpus de *matching* etiquetado y se asume que el modelo debe entrenarse desde inicializacion, dado que los pesos actuales no aportan conocimiento previo.
 
@@ -70,10 +70,10 @@ La comparacion natural es con la familia DeiT oficial (Touvron et al., 2021), de
 
 | Modelo | Parametros | Contexto / resolucion | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| matching-int4 (este repositorio) | 49.600 | no disponible | no | apache-2.0 | HuggingFace, checkpoint de inicializacion |
-| DeiT-Tiny (oficial, referencia externa) | ~5,7 M | 224x224 en la publicacion original | si, ImageNet | apache-2.0 | HuggingFace / repositorio oficial |
-| DeiT-Small (oficial, referencia externa) | ~22 M | 224x224 en la publicacion original | si, ImageNet | apache-2.0 | HuggingFace / repositorio oficial |
-| DeiT-Base (oficial, referencia externa) | ~86 M | 224x224 en la publicacion original | si, ImageNet | apache-2.0 | HuggingFace / repositorio oficial |
+| matching-int4 (este repositorio) | 49.600 | no disponible | no | apache-2.0 | Hugging Face, checkpoint de inicializacion |
+| DeiT-Tiny (oficial, referencia externa) | ~5,7 M | 224x224 en la publicacion original | si, ImageNet | apache-2.0 | Hugging Face / repositorio oficial |
+| DeiT-Small (oficial, referencia externa) | ~22 M | 224x224 en la publicacion original | si, ImageNet | apache-2.0 | Hugging Face / repositorio oficial |
+| DeiT-Base (oficial, referencia externa) | ~86 M | 224x224 en la publicacion original | si, ImageNet | apache-2.0 | Hugging Face / repositorio oficial |
 
 Rendimiento comparado: no disponible. No existen metricas publicadas de este repositorio y la tarea objetivo (*matching*) difiere de la de los DeiT oficiales (clasificacion), por lo que una comparacion de exactitud no seria valida sin una evaluacion propia.
 
@@ -91,7 +91,7 @@ Rendimiento comparado: no disponible. No existen metricas publicadas de este rep
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rajeshdramanathan/matching-int4
+- Modelo en Hugging Face: https://huggingface.co/rajeshdramanathan/matching-int4
 - Paper de referencia de la arquitectura DeiT (Touvron et al., 2021): https://arxiv.org/abs/2012.12877
 - Repositorio oficial de DeiT (Facebook Research): https://github.com/facebookresearch/deit
 - No se han encontrado en la busqueda web otros enlaces (demos, blogs o repositorios auxiliares) asociados a este modelo concreto.

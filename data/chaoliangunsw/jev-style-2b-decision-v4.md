@@ -97,7 +97,7 @@ La comparación con modelos de propósito general no es directa: v4 no genera te
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4
+- Modelo en Hugging Face: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4
 - Sitio web del proyecto: https://jevstyle.com
 - Repositorio GitHub: https://github.com/lawrence3699/jev-style
 - Versión v1 (2B, GGUF): https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF

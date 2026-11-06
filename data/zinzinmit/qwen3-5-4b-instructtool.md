@@ -74,10 +74,10 @@ Mejoras clave frente al modelo base: +34,13 puntos absolutos en puntuación ofic
 
 | Modelo | Parámetros | Contexto | Licencia | Idiomas | Puntuación LifeMate | Disponibilidad |
 |---|---|---|---|---|---|---|
-| zinzinmit/Qwen3.5-4B-InstructTool | 4,21B | 16K | Apache 2.0 | vi, en | 78,24 % | HuggingFace |
-| Qwen/Qwen3.5-4B | 4,21B | No disponible | No disponible | No disponible | 44,11 % | HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 | 4,02B | No disponible | No disponible | No disponible | 41,18 % | HuggingFace |
-| aisingapore/Qwen-SEA-LION-v4-4B-VL | 4,44B | No disponible | No disponible | No disponible | 35,73 % | HuggingFace |
+| zinzinmit/Qwen3.5-4B-InstructTool | 4,21B | 16K | Apache 2.0 | vi, en | 78,24 % | Hugging Face |
+| Qwen/Qwen3.5-4B | 4,21B | No disponible | No disponible | No disponible | 44,11 % | Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 | 4,02B | No disponible | No disponible | No disponible | 41,18 % | Hugging Face |
+| aisingapore/Qwen-SEA-LION-v4-4B-VL | 4,44B | No disponible | No disponible | No disponible | 35,73 % | Hugging Face |
 
 La comparativa se limita a los modelos incluidos en la evaluación del autor; no se dispone de datos de otros benchmarks (MMLU, HumanEval, GSM8K) para estos modelos en la información proporcionada.
 
@@ -94,7 +94,7 @@ La comparativa se limita a los modelos incluidos en la evaluación del autor; no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zinzinmit/Qwen3.5-4B-InstructTool
+- Hugging Face: https://huggingface.co/zinzinmit/Qwen3.5-4B-InstructTool
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Modelo de audio asociado (pipeline combinado): https://huggingface.co/kzap201/phowhisper-large-zaloai
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios o demos adicionales.

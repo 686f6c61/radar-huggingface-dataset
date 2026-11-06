@@ -94,13 +94,13 @@ La comparación directa con los pesos base no es equivalente: este checkpoint no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_sparse_probe_tc32768_l1_0p001_tc32768_decb_l1w0.001_tarbb_lb2.0_ln1_sl15529832
+- Hugging Face: https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_sparse_probe_tc32768_l1_0p001_tc32768_decb_l1w0.001_tarbb_lb2.0_ln1_sl15529832
 - Modelo base: https://huggingface.co/google/gemma-2-2b
 - Modelo de referencia y tokenizer: https://huggingface.co/google/gemma-2-2b-it
 - Repositorio Git: https://github.com/Sid-MB/transcoder-adapters
 - Run de W&B: https://wandb.ai/siddharth-stanford/sparse-adaptation/runs/dcj7g0oe
 - Dataset de texto: https://huggingface.co/datasets/science-of-finetuning/fineweb-1m-sample
 - Dataset conversacional: https://huggingface.co/datasets/siddharthmb/2026.transcoder-adapters.lmsys-chat-1m-splits
-- Configuración de entrenamiento: `training-config.yaml` dentro del repositorio de HuggingFace
+- Configuración de entrenamiento: `training-config.yaml` dentro del repositorio de Hugging Face
 
 Nota sobre la búsqueda web: los resultados devueltos por el buscador no guardan ninguna relación con este modelo (corresponden a sitios de contenido para adultos) y se han descartado por no ser fuentes válidas. No se han encontrado papers, blogs ni demos adicionales relevantes en la información disponible.

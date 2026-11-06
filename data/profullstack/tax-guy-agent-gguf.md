@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tax-guy-agent-GGUF es un modelo de lenguaje especializado en consultas fiscales y contables, publicado por el usuario profullstack en HuggingFace. Se trata de un ajuste fino (LoRA) del modelo base Qwen2.5-0.5B-Instruct, posteriormente fusionado y cuantizado a formato GGUF para su ejecución en CPU mediante llama.cpp u Ollama. El modelo tiene 494.032.768 parámetros (aproximadamente 0,5 mil millones) y un tamaño de repositorio de 0,5 GB.
+tax-guy-agent-GGUF es un modelo de lenguaje especializado en consultas fiscales y contables, publicado por el usuario profullstack en Hugging Face. Se trata de un ajuste fino (LoRA) del modelo base Qwen2.5-0.5B-Instruct, posteriormente fusionado y cuantizado a formato GGUF para su ejecución en CPU mediante llama.cpp u Ollama. El modelo tiene 494.032.768 parámetros (aproximadamente 0,5 mil millones) y un tamaño de repositorio de 0,5 GB.
 
 El modelo resuelve un problema acotado: ofrecer respuestas conversacionales sobre investigación fiscal a partir de fuentes públicas, orientadas a autónomos y pequeñas empresas. Su relevancia radica en su extrema ligereza, que permite desplegarlo en hardware de consumo o incluso en CPU sin GPU, y en su integración con el ecosistema c0mpute/Infernet, que lo distribuye automáticamente entre nodos.
 
@@ -82,7 +82,7 @@ La comparación directa con alternativas especializadas en dominio fiscal no est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/profullstack/tax-guy-agent-GGUF
+- Modelo en Hugging Face: https://huggingface.co/profullstack/tax-guy-agent-GGUF
 - Modelo base (no cuantizado): https://huggingface.co/profullstack/tax-guy-agent
 - Modelo original Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Ejemplo c0mpute (business-strategist-agent): https://github.com/profullstack/c0mpute/tree/master/examples/business-strategist-agent

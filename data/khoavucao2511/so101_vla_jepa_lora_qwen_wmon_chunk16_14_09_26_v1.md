@@ -4,9 +4,9 @@
 
 ## Resumen
 
-so101_vla_jepa_LoRA_Qwen_WMon_chunk16_14_09_26_v1 es una política robótica de tipo Vision-Language-Action (VLA) publicada por el usuario khoavucao2511 en HuggingFace Hub. El modelo combina tres componentes: un backbone de lenguaje y visión Qwen3-VL, un modelo de mundo de vídeo auto-supervisado V-JEPA2 y una cabeza de acción DiT entrenada con flow matching. El ajuste se ha realizado mediante LoRA sobre dicho backbone, tal y como indica el propio nombre del repositorio. Está pensado para controlar brazos robóticos SO-101 (`so_follower`) en tareas de manipulación tipo pick-and-place.
+so101_vla_jepa_LoRA_Qwen_WMon_chunk16_14_09_26_v1 es una política robótica de tipo Vision-Language-Action (VLA) publicada por el usuario khoavucao2511 en Hugging Face Hub. El modelo combina tres componentes: un backbone de lenguaje y visión Qwen3-VL, un modelo de mundo de vídeo auto-supervisado V-JEPA2 y una cabeza de acción DiT entrenada con flow matching. El ajuste se ha realizado mediante LoRA sobre dicho backbone, tal y como indica el propio nombre del repositorio. Está pensado para controlar brazos robóticos SO-101 (`so_follower`) en tareas de manipulación tipo pick-and-place.
 
-El modelo resuelve el problema de generar acciones motoras de 6 grados de libertad a partir de dos flujos de cámara (224x224) y el estado articular del robot, ejecutando tareas como "coger el bloque verde y depositarlo en el contenedor". Se apoya en el ecosistema LeRobot 0.6.2 de HuggingFace, que proporciona las herramientas de entrenamiento y despliegue (`lerobot-train`, `lerobot-rollout`).
+El modelo resuelve el problema de generar acciones motoras de 6 grados de libertad a partir de dos flujos de cámara (224x224) y el estado articular del robot, ejecutando tareas como "coger el bloque verde y depositarlo en el contenedor". Se apoya en el ecosistema LeRobot 0.6.2 de Hugging Face, que proporciona las herramientas de entrenamiento y despliegue (`lerobot-train`, `lerobot-rollout`).
 
 Es relevante ahora porque representa la aplicación práctica del paradigma VLA-JEPA descrito en el paper arXiv:2602.10098, que integra un world model de vídeo con una política de acción por flow matching. El repositorio ocupa 1,3 GB, tiene licencia Apache 2.0 y, en el momento de la consulta, no registra descargas ni likes ni resultados de evaluación publicados.
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| so101_vla_jepa_LoRA_Qwen_WMon_chunk16 (este) | no disponible | no disponible | Apache 2.0 | HuggingFace Hub |
-| SmolVLA (HuggingFace) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace Hub |
-| OpenVLA | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace Hub |
+| so101_vla_jepa_LoRA_Qwen_WMon_chunk16 (este) | no disponible | no disponible | Apache 2.0 | Hugging Face Hub |
+| SmolVLA (Hugging Face) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face Hub |
+| OpenVLA | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face Hub |
 | pi0 (Physical Intelligence) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Publicado por el autor |
 
 Nota: no se dispone de datos verificados en la informacion proporcionada para rellenar los campos de los modelos comparables, por lo que se marcan como no disponibles en lugar de estimarlos.
@@ -94,7 +94,7 @@ Nota: no se dispone de datos verificados en la informacion proporcionada para re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/khoavucao2511/so101_vla_jepa_LoRA_Qwen_WMon_chunk16_14_09_26_v1
+- Hugging Face: https://huggingface.co/khoavucao2511/so101_vla_jepa_LoRA_Qwen_WMon_chunk16_14_09_26_v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/vasco281204/so101_green_block_36
 - Paper citado (VLA-JEPA): https://arxiv.org/abs/2602.10098
 - LeRobot (repositorio): https://github.com/huggingface/lerobot

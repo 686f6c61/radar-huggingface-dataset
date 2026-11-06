@@ -77,7 +77,7 @@ La model card también compara con Qwen3.7-Plus y Opus4.6 Max, pero no se dispon
 ## Limitaciones y advertencias
 
 - La información de la model card es parcial: los valores numéricos de los benchmarks no se han podido extraer completamente, por lo que no es posible verificar de forma independiente las afirmaciones de rendimiento.
-- El repositorio en HuggingFace tiene 0 descargas y 0 likes, lo que sugiere que es un modelo muy reciente o poco validado por la comunidad.
+- El repositorio en Hugging Face tiene 0 descargas y 0 likes, lo que sugiere que es un modelo muy reciente o poco validado por la comunidad.
 - No se especifican los idiomas soportados, lo que limita la evaluación de su cobertura multilingüe.
 - La licencia Apache 2.0 permite uso comercial, pero el modelo puede tener restricciones adicionales no documentadas en la model card.
 - No se han publicado detalles sobre sesgos, riesgos de alucinación o limitaciones específicas del modelo en la información disponible.
@@ -87,6 +87,6 @@ La model card también compara con Qwen3.7-Plus y Opus4.6 Max, pero no se dispon
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/malaiwah/Qwen3.8-27B-exl3-archival-a35e75a7
+- Repositorio Hugging Face: https://huggingface.co/malaiwah/Qwen3.8-27B-exl3-archival-a35e75a7
 - Qwen Cloud (servicio gestionado, próximamente): https://www.qwencloud.com/models/qwen3.8-27b
 - Sitio principal de Qwen Cloud: https://www.qwencloud.com

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper-Base-EN-ONNX es una conversion a formato ONNX del modelo openai/whisper-base.en, publicada por el usuario EmogheneAkpomedaye en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una exportacion de los pesos del modelo base de OpenAI a ONNX con el objetivo de que sea compatible con Transformers.js y, por extension, con inferencia de reconocimiento automatico del habla (ASR) directamente en el navegador o en entornos JavaScript/Node.
+Whisper-Base-EN-ONNX es una conversion a formato ONNX del modelo openai/whisper-base.en, publicada por el usuario EmogheneAkpomedaye en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una exportacion de los pesos del modelo base de OpenAI a ONNX con el objetivo de que sea compatible con Transformers.js y, por extension, con inferencia de reconocimiento automatico del habla (ASR) directamente en el navegador o en entornos JavaScript/Node.
 
 El modelo hereda las caracteristicas del whisper-base.en original: una arquitectura Transformer encoder-decoder de tipo secuencia-a-secuencia, con aproximadamente 74 millones de parametros, especializada en transcripcion de audio en ingles. El repositorio tiene un tamano de 2,2 GB, coherente con la inclusion de varios ficheros ONNX (encoder y decoder, probablemente en distintas precisiones).
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Idioma | Contexto de audio | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| EmogheneAkpomedaye/Whisper-Base-EN-ONNX | ~74 M | Ingles | ventanas de 30 s | ONNX | no disponible | HuggingFace (0 descargas, 0 likes) |
-| openai/whisper-base.en | ~74 M | Ingles | ventanas de 30 s | safetensors/PyTorch | MIT (modelo base de OpenAI) | HuggingFace |
-| openai/whisper-base | ~74 M | Multilingue | ventanas de 30 s | safetensors/PyTorch | MIT | HuggingFace |
-| onnx-community/whisper-base | ~74 M | Multilingue | ventanas de 30 s | ONNX | no disponible en la informacion consultada | HuggingFace |
+| EmogheneAkpomedaye/Whisper-Base-EN-ONNX | ~74 M | Ingles | ventanas de 30 s | ONNX | no disponible | Hugging Face (0 descargas, 0 likes) |
+| openai/whisper-base.en | ~74 M | Ingles | ventanas de 30 s | safetensors/PyTorch | MIT (modelo base de OpenAI) | Hugging Face |
+| openai/whisper-base | ~74 M | Multilingue | ventanas de 30 s | safetensors/PyTorch | MIT | Hugging Face |
+| onnx-community/whisper-base | ~74 M | Multilingue | ventanas de 30 s | ONNX | no disponible en la informacion consultada | Hugging Face |
 
 Nota: la licencia exacta de las conversiones ONNX de la comunidad debe verificarse en cada repositorio, ya que la model card del repositorio analizado no la declara.
 

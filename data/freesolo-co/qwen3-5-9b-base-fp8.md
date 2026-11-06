@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-Base-FP8 (este) | 9,41 B | no disponible | FP8 (compressed-tensors) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-9B-Base | 9,41 B (según checkpoint origen) | no disponible | BF16 original | Apache 2.0 | HuggingFace (modelo fuente) |
+| Qwen3.5-9B-Base-FP8 (este) | 9,41 B | no disponible | FP8 (compressed-tensors) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-9B-Base | 9,41 B (según checkpoint origen) | no disponible | BF16 original | Apache 2.0 | Hugging Face (modelo fuente) |
 | Alternativas de ~9B con licencia permisiva | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparado con otras alternativas de la misma categoría en la información proporcionada.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparado con otras alternativas de la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Freesolo-Co/Qwen3.5-9B-Base-FP8
+- Modelo en Hugging Face: https://huggingface.co/Freesolo-Co/Qwen3.5-9B-Base-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Revisión fijada del modelo base: 68c46c4b3498877f3ef123c856ecfde50c39f404
 - Informe de cuantización: `quantization-report.json` dentro del repositorio del modelo

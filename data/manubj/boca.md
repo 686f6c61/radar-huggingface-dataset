@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Manubj/boca es un modelo publicado en HuggingFace por el usuario Manubj bajo licencia Apache 2.0. La model card asociada está practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. El repositorio no tiene descargas ni likes en el momento de la consulta, y no declara pipeline, idiomas ni etiquetas tecnicas mas alla de la region (US) y la licencia.
+Manubj/boca es un modelo publicado en Hugging Face por el usuario Manubj bajo licencia Apache 2.0. La model card asociada está practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. El repositorio no tiene descargas ni likes en el momento de la consulta, y no declara pipeline, idiomas ni etiquetas tecnicas mas alla de la region (US) y la licencia.
 
 Por tanto, no es posible determinar que tipo de modelo es (lenguaje, vision, audio u otro), su tamano, su arquitectura ni su proposito. La ausencia de documentacion y de metadatos hace que cualquier evaluacion tecnica seria sea inviable con la informacion disponible. Se trata, a efectos practicos, de un repositorio sin informacion publica utilizable.
 
@@ -73,4 +73,4 @@ No disponible. Al no conocerse la categoria, el tamano ni el proposito del model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Manubj/boca
+- Repositorio en Hugging Face: https://huggingface.co/Manubj/boca

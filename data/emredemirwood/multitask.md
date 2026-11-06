@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`EMREDEMIRwood/multitask` es un prototipo de investigación publicado en HuggingFace por el usuario EMREDEMIRwood. Se presenta como una implementación de arquitectura MobileViT (red neuronal híbrida de tipo visión, que combina convoluciones y mecanismos de atención) orientada a tareas multitarea. El repositorio incluye un script de entrenamiento (`train.py`), un fichero de configuración (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors. No es un modelo entrenado ni evaluado: el propio autor indica explícitamente que el checkpoint sirve para pruebas de humo (smoke tests) y no constituye un modelo con rendimiento verificado.
+`EMREDEMIRwood/multitask` es un prototipo de investigación publicado en Hugging Face por el usuario EMREDEMIRwood. Se presenta como una implementación de arquitectura MobileViT (red neuronal híbrida de tipo visión, que combina convoluciones y mecanismos de atención) orientada a tareas multitarea. El repositorio incluye un script de entrenamiento (`train.py`), un fichero de configuración (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors. No es un modelo entrenado ni evaluado: el propio autor indica explícitamente que el checkpoint sirve para pruebas de humo (smoke tests) y no constituye un modelo con rendimiento verificado.
 
 La relevancia de este repositorio es, por tanto, limitada y de carácter experimental. No se publican resultados de benchmarks, no se documenta el conjunto de datos de entrenamiento y no se especifican los idiomas soportados. El número de parámetros registrado en safetensors es de 33.088, una cifra extraordinariamente baja para cualquier modelo funcional, lo que sugiere que el checkpoint incluido es una inicialización mínima o parcial, no los pesos completos de una MobileViT xlarge real (que en su formulación original ronda los millones de parámetros).
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EMREDEMIRwood/multitask | 33.088 (checkpoint inicial) | no disponible | sin benchmarks | Apache 2.0 | HuggingFace, sin entrenar |
+| EMREDEMIRwood/multitask | 33.088 (checkpoint inicial) | no disponible | sin benchmarks | Apache 2.0 | Hugging Face, sin entrenar |
 | MobileViT original (Apple) | millones (según variante) | imágenes | benchmarks publicados en el paper original | según implementación de referencia | código y pesos de referencia |
-| Otras MobileViT multitarea de la comunidad | variable | imágenes | variable, a menudo sin verificar | variable | HuggingFace |
+| Otras MobileViT multitarea de la comunidad | variable | imágenes | variable, a menudo sin verificar | variable | Hugging Face |
 
 No se dispone de datos comparativos verificables para este repositorio concreto; la comparación con MobileViT original se basa en la arquitectura declarada, no en resultados medidos de este checkpoint.
 
@@ -82,5 +82,5 @@ No se dispone de datos comparativos verificables para este repositorio concreto;
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EMREDEMIRwood/multitask
+- Hugging Face: https://huggingface.co/EMREDEMIRwood/multitask
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

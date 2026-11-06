@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jess-snow es un adaptador LoRA de tipo text-to-image publicado en HuggingFace por el usuario Jj1889 bajo el identificador `Jj1889/jess-snow`. Se distribuye en formato diffusers y sigue la plantilla `template:diffusion-lora`, lo que indica que esta pensado para cargarse sobre un modelo base de difusion (probablemente Stable Diffusion o una variante compatible) con el fin de ensenar al modelo un concepto visual concreto activado mediante la palabra disparadora `Jess-snow`. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con un LoRA de rango bajo y no con un modelo completo.
+Jess-snow es un adaptador LoRA de tipo text-to-image publicado en Hugging Face por el usuario Jj1889 bajo el identificador `Jj1889/jess-snow`. Se distribuye en formato diffusers y sigue la plantilla `template:diffusion-lora`, lo que indica que esta pensado para cargarse sobre un modelo base de difusion (probablemente Stable Diffusion o una variante compatible) con el fin de ensenar al modelo un concepto visual concreto activado mediante la palabra disparadora `Jess-snow`. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con un LoRA de rango bajo y no con un modelo completo.
 
 La model card es extremadamente escasa: no especifica el modelo base sobre el que se entrena, no documenta el dataset, no incluye ejemplos de uso mas alla de la palabra disparadora y no aporta informacion sobre licencia ni idiomas. El campo `base_model` aparece vacio en los metadatos. El modelo registra cero descargas y cero likes en el momento de la consulta, y las fechas de creacion y actualizacion (5 de noviembre de 2026) estan separadas por menos de un minuto, lo que sugiere una publicacion de prueba o un artefacto personal sin mantenimiento posterior.
 
@@ -42,7 +42,7 @@ No se dispone de informacion sobre el modelo base utilizado, el numero de imagen
 - Pruebas de concepto en pipelines de difusion: util para verificar la integracion de LoRA personalizados en entornos `diffusers` antes de entrenar adaptadores propios.
 - Generacion de material visual para proyectos creativos individuales: al ser un adaptador ligero (0,1 GB), se puede cargar y descargar rapidamente en estaciones de trabajo con GPU de consumo.
 - Experimentacion con mezcla de LoRA: combinable con otros adaptadores de estilo para explorar variaciones esteticas, siempre que se respete la compatibilidad del modelo base.
-- Educacion y divulgacion: sirve como ejemplo minimo de como se estructura un repositorio LoRA en HuggingFace con `template:diffusion-lora`.
+- Educacion y divulgacion: sirve como ejemplo minimo de como se estructura un repositorio LoRA en Hugging Face con `template:diffusion-lora`.
 - Investigacion sobre sesgos en modelos de difusion: permite estudiar como un adaptador de bajo rango altera la distribucion de salidas de un modelo base, aunque la falta de documentacion limita su reproducibilidad.
 
 ## Benchmarks y rendimiento
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jj1889/jess-snow | LoRA text-to-image | no disponible (~0,1 GB) | no aplica | no disponible | HuggingFace, 0 descargas |
+| Jj1889/jess-snow | LoRA text-to-image | no disponible (~0,1 GB) | no aplica | no disponible | Hugging Face, 0 descargas |
 | LoRA genericos de la comunidad (p. ej. adaptadores de estilo en Civitai) | LoRA text-to-image | variable | no aplica | variable | Amplia, con documentacion habitualmente mas completa |
 | Modelos base de difusion (SD 1.5, SDXL) | UNet + text encoder | 0,86B / 2,6B aprox. | no aplica | CreativeML OpenRAIL-M / OpenRAIL++ | Amplia, con benchmarks publicos |
 
@@ -80,7 +80,7 @@ La comparacion directa con alternativas concretas no es posible porque se descon
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jj1889/jess-snow
+- Repositorio Hugging Face: https://huggingface.co/Jj1889/jess-snow
 - Archivos del modelo: https://huggingface.co/Jj1889/jess-snow/tree/main
 - Documentacion de diffusers: https://huggingface.co/docs/diffusers
 - Plantilla diffusion-lora: https://huggingface.co/docs/hub/models-lora

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `anilpatelner/albef-multitask` contiene una implementacion propia y de tamano reducido de una arquitectura ALBEF (Align before Fuse) orientada a tareas multitarea, publicada por el usuario anilpatelner en HuggingFace. Se distribuye junto con un fichero de configuracion explicito (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicializacion en `model.safetensors`. La propia model card aclara de forma explicita que no se trata de un modelo entrenado ni de una release con resultados de referencia, sino de un punto de partida reproducible para pruebas de humo y experimentacion.
+El repositorio `anilpatelner/albef-multitask` contiene una implementacion propia y de tamano reducido de una arquitectura ALBEF (Align before Fuse) orientada a tareas multitarea, publicada por el usuario anilpatelner en Hugging Face. Se distribuye junto con un fichero de configuracion explicito (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicializacion en `model.safetensors`. La propia model card aclara de forma explicita que no se trata de un modelo entrenado ni de una release con resultados de referencia, sino de un punto de partida reproducible para pruebas de humo y experimentacion.
 
 La relevancia de esta ficha es acotada y conviene subrayarla: el modelo tiene 0 descargas y 0 likes, el repositorio ocupa 0,0 GB y no se declara ninguna puntuacion de benchmark. La model card indica ademas que el checkpoint "no ha sido entrenado ni auditado" en terminos de robustez, equidad o transferencia de dominio. Por tanto, debe tratarse como material experimental de partida y no como un modelo listo para produccion.
 
@@ -51,7 +51,7 @@ Como innovacion tecnica, lo unico reseñable es la combinacion de atencion linea
 - Plantilla de implementacion para investigadores: `run.py` y `config.json` pueden tomarse como esqueleto para reproducir una variante ALBEF con atencion lineal, sustituyendo el checkpoint de inicializacion por uno entrenado con datos propios.
 - Experimentos de ablation sobre recetas de entrenamiento: la receta por defecto (rmsprop con scheduler polinomial) permite montar comparativas controladas de optimizador y scheduler manteniendo constante el resto de la configuracion.
 - Verificacion de compatibilidad de formatos: al distribuirse unicamente en safetensors, es util para comprobar que una herramienta interna lee correctamente este formato y expone los metadatos de parametros.
-- Docencia y formacion: sirve como ejemplo minimo de estructura de repositorio de modelo (config, training args, checkpoint, script ejecutable) para explicar el ciclo de vida de un modelo en HuggingFace.
+- Docencia y formacion: sirve como ejemplo minimo de estructura de repositorio de modelo (config, training args, checkpoint, script ejecutable) para explicar el ciclo de vida de un modelo en Hugging Face.
 - Evaluacion metodologica de baselines: la propia model card propone usar un conjunto de validacion especifico de tarea, reportar la metrica sobre al menos tres semillas e incluir una linea base de capacidad equivalente; este repositorio puede actuar como punto de partida de ese protocolo.
 - No se recomienda su uso en atencion al cliente, generacion de codigo en produccion, generacion aumentada por recuperacion ni ninguna aplicacion de cara al usuario final, porque no hay evidencia de que el checkpoint haya sido entrenado para esas tareas.
 
@@ -80,7 +80,7 @@ No disponible. No se dispone de datos verificados de parametros, contexto, rendi
 - Sesgos conocidos: no documentados y, dado que no hay datos de entrenamiento declarados, no pueden inferirse ni mitigarse.
 - Limitaciones de contexto e idioma: no disponibles. No se especifica ventana de contexto ni lista de idiomas.
 - Discrepancia no explicada entre la escala declarada ("huge") y el recuento de parametros de los metadatos de safetensors (24.832). Conviene verificar los pesos reales antes de asumir cualquier capacidad.
-- Se trata de una implementacion personalizada: las APIs genericas de carga automatica de HuggingFace no funcionaran sin un adaptador explicito.
+- Se trata de una implementacion personalizada: las APIs genericas de carga automatica de Hugging Face no funcionaran sin un adaptador explicito.
 - No existe evidencia de adopcion: 0 descargas y 0 likes, y el repositorio se creo y actualizo con cinco segundos de diferencia, lo que sugiere una publicacion automatica o de prueba.
 - Licencia: Apache 2.0, que en principio permite uso comercial del codigo y los pesos publicados, pero la model card advierte de que deben revisarse por separado los terminos de los datos de origen si se combina con datasets externos. Esa advertencia es especialmente relevante porque no se declara el origen de los datos de entrenamiento.
 - Para produccion: no apto. No hay metricas, no hay validacion de sesgos, no hay identificacion de idiomas y no hay garantia de comportamiento estable.
@@ -88,6 +88,6 @@ No disponible. No se dispone de datos verificados de parametros, contexto, rendi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anilpatelner/albef-multitask
+- Hugging Face: https://huggingface.co/anilpatelner/albef-multitask
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web. Los resultados devueltos por el buscador no guardan relacion con el modelo y se han descartado por no ser fuentes fiables ni pertinentes.
-- Ficheros referenciados en la model card, disponibles en el propio repositorio de HuggingFace: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`.
+- Ficheros referenciados en la model card, disponibles en el propio repositorio de Hugging Face: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`.

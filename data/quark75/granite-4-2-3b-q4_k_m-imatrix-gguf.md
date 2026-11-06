@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Se trata de una distribucion cuantizada en formato GGUF del modelo base Granite 4.2 3B, atribuido a IBM por la denominacion del repositorio. El artefacto lo publica el usuario quark75 en HuggingFace y su unico proposito aparente es ofrecer los pesos del modelo en una cuantizacion Q4_K_M calibrada con una matriz de importancia (imatrix), de forma que pueda ejecutarse en hardware de gama baja o directamente en CPU.
+Se trata de una distribucion cuantizada en formato GGUF del modelo base Granite 4.2 3B, atribuido a IBM por la denominacion del repositorio. El artefacto lo publica el usuario quark75 en Hugging Face y su unico proposito aparente es ofrecer los pesos del modelo en una cuantizacion Q4_K_M calibrada con una matriz de importancia (imatrix), de forma que pueda ejecutarse en hardware de gama baja o directamente en CPU.
 
 La ficha del repositorio no aporta informacion tecnica adicional: no incluye model card descriptiva, no declara idiomas, no documenta el pipeline de inferencia ni publica resultados de evaluacion. Los unicos metadatos disponibles son la licencia declarada (apache-2.0), la etiqueta de region (us) y las fechas de creacion y actualizacion, ambas identicas.
 
@@ -102,7 +102,7 @@ Los datos de los modelos de la comparacion no proceden de la informacion proporc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/quark75/granite-4.2-3b-Q4_K_M-imatrix-GGUF
-- Modelo base (referencia, no consultado en esta busqueda): repositorio oficial de IBM Granite 4.2 3B en HuggingFace
+- Repositorio en Hugging Face: https://huggingface.co/quark75/granite-4.2-3b-Q4_K_M-imatrix-GGUF
+- Modelo base (referencia, no consultado en esta busqueda): repositorio oficial de IBM Granite 4.2 3B en Hugging Face
 - Documentacion de llama.cpp (formato GGUF): https://github.com/ggml-org/llama.cpp
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

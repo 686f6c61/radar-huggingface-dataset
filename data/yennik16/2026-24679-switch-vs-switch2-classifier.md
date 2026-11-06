@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento de alternativas en la informacion proporci
 
 | Modelo | Parametros | Contexto de entrada | Rendimiento en esta tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| efficientnet_b0 + cabeza lineal (este modelo) | 4.335.998 (328.450 entrenables) | Imagen 224 x 224 RGB | cv_balanced_accuracy 1.0 (std 0.0) en el trial seleccionado | CC-BY-4.0 | HuggingFace, 0 descargas |
+| efficientnet_b0 + cabeza lineal (este modelo) | 4.335.998 (328.450 entrenables) | Imagen 224 x 224 RGB | cv_balanced_accuracy 1.0 (std 0.0) en el trial seleccionado | CC-BY-4.0 | Hugging Face, 0 descargas |
 | efficientnet_b0 + cabeza lineal (otros trials de la busqueda) | 4.335.998 (entrenables no disponibles) | Imagen 224 x 224 RGB | cv_balanced_accuracy 0.9583 en el mejor trial alternativo recuperado | CC-BY-4.0 | no disponible como modelo publicado |
 | resnet18 (explorado en la busqueda) | no disponible | Imagen 224 x 224 RGB | no disponible en la informacion proporcionada | no disponible | no disponible |
 | mobilenet_v3_small (explorado en la busqueda) | no disponible | Imagen 224 x 224 RGB | no disponible en la informacion proporcionada | no disponible | no disponible |
@@ -113,6 +113,6 @@ No se identifican en la informacion disponible clasificadores publicos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yennik16/2026-24679-switch-vs-switch2-classifier
+- Modelo en Hugging Face: https://huggingface.co/yennik16/2026-24679-switch-vs-switch2-classifier
 - Dataset utilizado: https://huggingface.co/datasets/pakiino/2026-24679-switch-image-hw1
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo: los resultados obtenidos trataban sobre sistemas de calefaccion de baja energia y no guardan relacion con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Silver8 es un modelo publicado en HuggingFace por el usuario ryaluous bajo el identificador `ryaluous/Silver8`. En el momento de redactar esta ficha, la informacion publica disponible es practicamente nula: la model card no expone pipeline, licencia, idiomas soportados ni descripcion tecnica alguna, y el repositorio esta bajo acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos. El repositorio ocupa 0,7 GB, una cifra que sugiere pesos de un modelo de tamano pequeno o de un modelo mediano fuertemente cuantizado, pero no hay ningun dato publicado que permita confirmar parametros, arquitectura o contexto.
+Silver8 es un modelo publicado en Hugging Face por el usuario ryaluous bajo el identificador `ryaluous/Silver8`. En el momento de redactar esta ficha, la informacion publica disponible es practicamente nula: la model card no expone pipeline, licencia, idiomas soportados ni descripcion tecnica alguna, y el repositorio esta bajo acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos. El repositorio ocupa 0,7 GB, una cifra que sugiere pesos de un modelo de tamano pequeno o de un modelo mediano fuertemente cuantizado, pero no hay ningun dato publicado que permita confirmar parametros, arquitectura o contexto.
 
 No se han encontrado papers, blogs tecnicos, repositorios asociados ni resultados de benchmarks en la busqueda web realizada. Las unicas referencias recuperadas (foros de videojuegos y una comunidad de preguntas y respuestas en chino) no guardan relacion con el modelo y no aportan informacion util.
 
@@ -18,7 +18,7 @@ Por todo ello, esta ficha se limita a documentar los metadatos verificables del 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (repositorio con acceso restringido sujeto a condiciones de HuggingFace) |
+| Licencia | no disponible (repositorio con acceso restringido sujeto a condiciones de Hugging Face) |
 | Formato de pesos | no disponible (el repositorio ocupa 0,7 GB; no se especifica si contiene safetensors, GGUF u otro formato) |
 
 Metadatos adicionales verificables: autor `ryaluous`, etiqueta `region:us`, 0 descargas, 2 "likes", fecha de creacion 2026-09-13 y fecha de ultima actualizacion 2026-09-13.
@@ -66,7 +66,7 @@ No hay datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion e
 - Compatibilidad con GPU de consumo: no confirmada. Si el repositorio contiene un modelo de menos de 1.000 millones de parametros cuantizado a 4 bits, cabria en GPUs con 6-8 GB de VRAM (RTX 3060, RTX 4060, RTX 2070); si se trata de un modelo mayor cuantizado agresivamente, el requisito podria subir a 16-24 GB (RTX 4080, RTX 4090). Ambas posibilidades son inferencias a partir del tamano del repositorio, no datos confirmados.
 - Opciones de despliegue: no disponibles. No se declara compatibilidad con vLLM, llama.cpp, Ollama, TGI, TensorRT-LLM ni transformers. El despliegue dependera del formato real de los pesos, que se desconoce antes de aceptar las condiciones de acceso.
 - Latencia y throughput estimados: no disponibles.
-- Almacenamiento: el repositorio ocupa 0,7 GB, por lo que el espacio en disco necesario para los pesos es de ese orden, mas el espacio adicional de la cache de HuggingFace durante la descarga.
+- Almacenamiento: el repositorio ocupa 0,7 GB, por lo que el espacio en disco necesario para los pesos es de ese orden, mas el espacio adicional de la cache de Hugging Face durante la descarga.
 
 ## Comparativa con modelos similares
 
@@ -78,7 +78,7 @@ Como referencia metodologica, la comparacion deberia hacerse, una vez conocidos 
 
 - Ausencia total de documentacion: no hay model card tecnica, paper, repositorio de codigo ni guia de uso asociada al modelo.
 - Licencia no declarada: no puede determinarse si el uso comercial esta permitido, restringido o prohibido. Esto bloquea de facto cualquier integracion en producto.
-- Acceso restringido: los pesos requieren aceptar condiciones en HuggingFace, lo que anade friccion y puede condicionar el uso.
+- Acceso restringido: los pesos requieren aceptar condiciones en Hugging Face, lo que anade friccion y puede condicionar el uso.
 - Riesgo elevado de alucinacion y de comportamiento impredecible: se desconoce por completo el proceso de entrenamiento y de alineacion.
 - Sesgos desconocidos: al no documentarse la composicion del dataset ni el idioma de entrenamiento, no es posible anticipar sesgos de genero, raza, religion o sesgos geopoliticos.
 - Idiomas no declarados: no puede asumirse un rendimiento correcto en castellano ni en ningun otro idioma.
@@ -89,5 +89,5 @@ Como referencia metodologica, la comparacion deberia hacerse, una vez conocidos 
 
 ## Enlaces
 
-- HuggingFace (acceso restringido): https://huggingface.co/ryaluous/Silver8
+- Hugging Face (acceso restringido): https://huggingface.co/ryaluous/Silver8
 - No se han encontrado papers, blogs tecnicos, repositorios de codigo, demos ni articulos relacionados con el modelo en la busqueda web realizada.

@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClinixVault Summarizer DPO (este) | ~3,09 B (base) | 32.768 (base) | Resumen clinico con DPO | Apache 2.0 | HuggingFace, 0 descargas |
+| ClinixVault Summarizer DPO (este) | ~3,09 B (base) | 32.768 (base) | Resumen clinico con DPO | Apache 2.0 | Hugging Face, 0 descargas |
 | Qwen2.5-3B-Instruct | ~3,09 B | 32.768 (131.072 con YaRN) | Instruccion general | Apache 2.0 | Ampliamente disponible |
 | Qwen2.5-7B-Instruct | ~7,6 B | 32.768 (131.072 con YaRN) | Instruccion general | Apache 2.0 | Ampliamente disponible |
 | Llama-3.2-3B-Instruct | ~3,2 B | 131.072 | Instruccion general | Llama 3.2 Community License | Ampliamente disponible |
@@ -86,7 +86,7 @@ La comparativa relevante es contra el propio modelo base: el adaptador no docume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Samarth101011/clinixvault-summarizer-dpo
+- Modelo en Hugging Face: https://huggingface.co/Samarth101011/clinixvault-summarizer-dpo
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio Qwen2.5 (GitHub): https://github.com/QwenLM/Qwen2.5
 - Paper tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115

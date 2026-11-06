@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks específicos para este fine-tune en
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27.5B | No especificado | Atención híbrida (16 full + 48 lineal) | Apache 2.0 | HuggingFace, vLLM |
-| summerMC/Qwen3.8-27B-SpeedX27-VL-GDN64 | 27.5B | No especificado | Atención híbrida con GDN recurrente | Apache 2.0 | HuggingFace (experimental) |
-| Qwen2.5-32B (referencia de tamaño similar) | 32.5B | 128K | Transformer denso estándar | Apache 2.0 | HuggingFace, vLLM |
+| Qwen3.8-27B (base) | 27.5B | No especificado | Atención híbrida (16 full + 48 lineal) | Apache 2.0 | Hugging Face, vLLM |
+| summerMC/Qwen3.8-27B-SpeedX27-VL-GDN64 | 27.5B | No especificado | Atención híbrida con GDN recurrente | Apache 2.0 | Hugging Face (experimental) |
+| Qwen2.5-32B (referencia de tamaño similar) | 32.5B | 128K | Transformer denso estándar | Apache 2.0 | Hugging Face, vLLM |
 
 La comparativa se limita a modelos de tamaño similar. El fine-tune de summerMC se distingue por su arquitectura recurrente con GDN, que no está presente en el modelo base ni en Qwen2.5-32B. No se dispone de datos de rendimiento para comparar numéricamente.
 
@@ -77,9 +77,9 @@ La comparativa se limita a modelos de tamaño similar. El fine-tune de summerMC 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/summerMC/Qwen3.8-27B-SpeedX27-VL-GDN64
+- Modelo en Hugging Face: https://huggingface.co/summerMC/Qwen3.8-27B-SpeedX27-VL-GDN64
 - Versión GGUF del modelo: https://huggingface.co/summerMC/Qwen3.8-27B-SpeedX27-VL-GDN64-GGUF
 - Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Página del modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Página del modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Ficha de Qwen3.8-27B en QwenCloud: https://www.qwencloud.com/models/qwen3.8-27b
 - Recetas de vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

@@ -70,8 +70,8 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 
 ## Enlaces
 
-- [HuggingFace - ToPo-ToPo/Qwen3.8-Flash-Next-mlx-bf16](https://huggingface.co/ToPo-ToPo/Qwen3.8-Flash-Next-mlx-bf16)
-- [HuggingFace - Qwen/Qwen3.8-Flash-Next (modelo original)](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
+- [Hugging Face - ToPo-ToPo/Qwen3.8-Flash-Next-mlx-bf16](https://huggingface.co/ToPo-ToPo/Qwen3.8-Flash-Next-mlx-bf16)
+- [Hugging Face - Qwen/Qwen3.8-Flash-Next (modelo original)](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
 - [GitHub - QwenLM/Qwen3.8-Flash-Next](https://github.com/QwenLM/Qwen3.8-Flash-Next/)
 - [Documentación de unsloth sobre Qwen3.8-Flash-Next](https://unsloth.ai/docs/models/qwen3.8-next)
 - [AI Wiki - Qwen3.8-Flash-Next](https://aiwiki.ai/wiki/qwen3_8_flash_next)

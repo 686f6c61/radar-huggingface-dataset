@@ -74,8 +74,8 @@ El repositorio no publica resultados de benchmarks de capacidad (MMLU, GSM8K, Hu
 
 | Modelo | Parametros | Contexto | Seguridad (ASR) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l31_remove50_swapgapiter_b010_r02 | 8.030.261.248 (recuento safetensors); fraccion declarada 0,4997 | No disponible | AdvBench 0,0700; StrongREJECT 0,0850 | Llama 3.1 Community License | Publico en HuggingFace, 0 descargas, 0 likes |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 tokens (documentacion oficial) | No disponible en la informacion proporcionada | Llama 3.1 Community License | Publico en HuggingFace |
+| svd-safety-l31_remove50_swapgapiter_b010_r02 | 8.030.261.248 (recuento safetensors); fraccion declarada 0,4997 | No disponible | AdvBench 0,0700; StrongREJECT 0,0850 | Llama 3.1 Community License | Publico en Hugging Face, 0 descargas, 0 likes |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 tokens (documentacion oficial) | No disponible en la informacion proporcionada | Llama 3.1 Community License | Publico en Hugging Face |
 | Otros checkpoints comprimidos con SVD-LLM o editados por seguridad | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos comparativos publicados para modelos equivalentes de la misma categoria en la informacion proporcionada.
@@ -95,7 +95,7 @@ No se dispone de datos comparativos publicados para modelos equivalentes de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r02
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r02
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 Community License y politica de uso: incluidas en el repositorio (`LICENSE` y `USE_POLICY.md`)
 

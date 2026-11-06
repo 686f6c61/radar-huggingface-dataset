@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper Small Spanish es un ajuste fino (fine-tuning) del modelo openai/whisper-small, publicado por el usuario yoga-0125 en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) especializado en castellano, obtenido mediante entrenamiento supervisado sobre el dataset facebook/multilingual_librispeech, segun los metadatos de la model card (aunque la propia card menciona "Common Voice" en el texto, los tags y la configuracion apuntan a multilingual_librispeech). El modelo hereda la arquitectura encoder-decoder transformer de Whisper Small, con 241.734.912 parametros totales.
+Whisper Small Spanish es un ajuste fino (fine-tuning) del modelo openai/whisper-small, publicado por el usuario yoga-0125 en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) especializado en castellano, obtenido mediante entrenamiento supervisado sobre el dataset facebook/multilingual_librispeech, segun los metadatos de la model card (aunque la propia card menciona "Common Voice" en el texto, los tags y la configuracion apuntan a multilingual_librispeech). El modelo hereda la arquitectura encoder-decoder transformer de Whisper Small, con 241.734.912 parametros totales.
 
 El modelo resuelve la tarea de transcripcion de audio a texto en espanol. Su relevancia es limitada en terminos de impacto: se trata de un ajuste fino ligero (100 pasos de entrenamiento, learning rate 1e-5) con cero descargas y cero likes en el momento de la consulta, lo que sugiere un experimento personal mas que un artefacto de produccion consolidado. No obstante, el WER declarado de 7,44 sobre el conjunto de evaluacion es un dato concreto que permite situarlo frente a alternativas.
 
@@ -23,7 +23,7 @@ La ficha se basa exclusivamente en los metadatos y la model card disponibles. No
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning de openai/whisper-small, un transformer encoder-decoder disenado para ASR. Whisper Small consta de 12 capas de encoder y 12 de decoder con atencion multi-cabeza estandar, y procesa audio muestreado a 16 kHz mediante espectrogramas log-Mel. El ajuste fino se realizo con el Trainer de HuggingFace (generated_from_trainer), con los siguientes hiperparametros declarados: learning rate 1e-05, batch de entrenamiento y evaluacion de 32, semilla 42, optimizador AdamW con betas (0.9, 0.999) y epsilon 1e-08, scheduler constant_with_warmup con 50 pasos de calentamiento, 100 pasos totales de entrenamiento y precision mixta nativa (AMP). El entrenamiento se ejecuto con Transformers 5.20.2, PyTorch 2.11.0+cu130, Datasets 4.8.5 y Tokenizers 0.23.3.
+El modelo es un fine-tuning de openai/whisper-small, un transformer encoder-decoder disenado para ASR. Whisper Small consta de 12 capas de encoder y 12 de decoder con atencion multi-cabeza estandar, y procesa audio muestreado a 16 kHz mediante espectrogramas log-Mel. El ajuste fino se realizo con el Trainer de Hugging Face (generated_from_trainer), con los siguientes hiperparametros declarados: learning rate 1e-05, batch de entrenamiento y evaluacion de 32, semilla 42, optimizador AdamW con betas (0.9, 0.999) y epsilon 1e-08, scheduler constant_with_warmup con 50 pasos de calentamiento, 100 pasos totales de entrenamiento y precision mixta nativa (AMP). El entrenamiento se ejecuto con Transformers 5.20.2, PyTorch 2.11.0+cu130, Datasets 4.8.5 y Tokenizers 0.23.3.
 
 No se especifica el numero de tokens de audio ni la composicion exacta del dataset de entrenamiento. La model card indica facebook/multilingual_librispeech en los tags y "Common Voice" en el cuerpo del texto, lo que constituye una inconsistencia no resuelta por el autor. No se declara uso de RLHF, DPO ni tecnicas de alineacion; es un ajuste fino supervisado puro con loss de entropia cruzada sobre transcripciones. No hay innovaciones tecnicas destacables: se trata de un fine-tuning convencional de corta duracion.
 
@@ -74,10 +74,10 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros | Contexto | WER (es) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yoga-0125/whisper-small-dv | 241,7 M | ventanas de 30 s | 7,44 (declarado, no verificado) | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 241,7 M | ventanas de 30 s | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-large-v3 | 1.550 M | ventanas de 30 s | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-medium | 769 M | ventanas de 30 s | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| yoga-0125/whisper-small-dv | 241,7 M | ventanas de 30 s | 7,44 (declarado, no verificado) | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 241,7 M | ventanas de 30 s | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-large-v3 | 1.550 M | ventanas de 30 s | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-medium | 769 M | ventanas de 30 s | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de WER en espanol para los modelos comparables en la informacion proporcionada, por lo que la comparacion cuantitativa de rendimiento no es posible. La comparacion se limita a parametros, licencia y disponibilidad.
 
@@ -96,7 +96,7 @@ No se dispone de datos de WER en espanol para los modelos comparables en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yoga-0125/whisper-small-dv
+- Modelo en Hugging Face: https://huggingface.co/yoga-0125/whisper-small-dv
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Dataset declarado: https://huggingface.co/datasets/facebook/multilingual_librispeech
 - Repositorio de Whisper (OpenAI): https://github.com/openai/whisper

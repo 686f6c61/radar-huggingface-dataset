@@ -102,7 +102,7 @@ El modelo aparte-titler ofrece una relación rendimiento/tamaño excepcional: co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/apartejs/aparte-titler
+- Modelo en Hugging Face: https://huggingface.co/apartejs/aparte-titler
 - Página de presentación: https://apartejs.dev/models/titler/
 - Demo en navegador: https://apartejs.dev/models/titler/#demo
 - Repositorio de código y runtime: https://github.com/apartejs/aparte-titler-model

@@ -27,7 +27,7 @@ El autor documenta explícitamente el grafo exportado, las formas de los tensore
 | Postprocesado en el anfitrion | Inversión de `freq` con `_ispec`, suma de la rama `time` y crossfade de segmentos con 25 % de solapamiento |
 | Pipeline declarado | audio-to-audio |
 | Tamano del repositorio | 0,2 GB |
-| Fecha de publicacion en HuggingFace | 2026-09-16 |
+| Fecha de publicacion en Hugging Face | 2026-09-16 |
 
 ## Arquitectura y entrenamiento
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks de calidad de separación (por ejem
 
 | Modelo | Parametros | Ventana de proceso | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| htdemucs-CoreML (TrevorJS) | no disponible (pesos de 209 MB en float32) | 7,8 s por pasada, solapamiento del 25 % | Core ML `.mlpackage` float32 | MIT | HuggingFace: TrevorJS/htdemucs-CoreML |
+| htdemucs-CoreML (TrevorJS) | no disponible (pesos de 209 MB en float32) | 7,8 s por pasada, solapamiento del 25 % | Core ML `.mlpackage` float32 | MIT | Hugging Face: TrevorJS/htdemucs-CoreML |
 | HTDemucs original (Meta AI) | no disponible en la informacion | mismo segmento de 7,8 s en la configuracion por defecto | PyTorch | MIT | Repositorio facebookresearch/demucs |
 | Otras conversiones Core ML de Demucs | no disponible | no disponible | no disponible | no disponible | La busqueda web realizada no devolvio resultados relevantes sobre alternativas comparables |
 
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparado (SDR sobre MUSDB u otros conjunt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TrevorJS/htdemucs-CoreML
+- Modelo en Hugging Face: https://huggingface.co/TrevorJS/htdemucs-CoreML
 - Repositorio original de Demucs (Meta AI, MIT): https://github.com/facebookresearch/demucs
 - Aplicacion slurper, con el anfitrion de referencia en `Sources/SlurperKit/Demucs.swift` y el script `scripts/convert_htdemucs.py`: https://github.com/TrevorS/slurper
 - Paper de referencia citado en la atribucion: "Hybrid Transformers for Music Source Separation", de Simon Rouard, Francisco Massa y Alexandre Défossez (Meta AI); no se proporciona enlace en la informacion disponible.

@@ -4,7 +4,7 @@
 
 `stanfordasl/diet-traj-olmo2-medium-dolma-seed3` es un modelo de lenguaje de aproximadamente 305 millones de parámetros entrenado desde cero con la arquitectura OLMo2, publicado por el grupo stanfordasl como parte del proyecto DIET de análisis del espacio de pesos (weight-space). No es un modelo pensado para uso productivo, sino un artefacto de investigación: uno de los puntos de una trayectoria de preentrenamiento reproducible, con semilla 3, que permite estudiar la evolución de los pesos y del comportamiento del modelo a lo largo del entrenamiento.
 
-El modelo emplea una arquitectura transformer densa de tipo OLMo2 (hidden_size 768, 16 capas, 12 cabezas de atención, contexto máximo de 2048 tokens) y se entrenó sobre `emozilla/dolma-v1_7-3B`, un espejo en HuggingFace de Dolma v1.7 muestreado proporcionalmente según su mezcla de componentes y consumido en streaming. La receta es preentrenamiento puro con entropía cruzada (sin destilación, `teacher_schedule=none`), AdamW con lr=3e-5, betas (0.9, 0.95), weight decay 0.1, schedule coseno y precisión bf16, con un presupuesto de 2.000 millones de tokens.
+El modelo emplea una arquitectura transformer densa de tipo OLMo2 (hidden_size 768, 16 capas, 12 cabezas de atención, contexto máximo de 2048 tokens) y se entrenó sobre `emozilla/dolma-v1_7-3B`, un espejo en Hugging Face de Dolma v1.7 muestreado proporcionalmente según su mezcla de componentes y consumido en streaming. La receta es preentrenamiento puro con entropía cruzada (sin destilación, `teacher_schedule=none`), AdamW con lr=3e-5, betas (0.9, 0.95), weight decay 0.1, schedule coseno y precisión bf16, con un presupuesto de 2.000 millones de tokens.
 
 Su relevancia es metodológica: la colección completa (misma receta, distinta semilla) permite aislar el efecto del azar en el preentrenamiento y analizar trayectorias de pesos, algo que interesa a investigadores en interpretabilidad, dinámica de entrenamiento y reproducibilidad. Para desarrolladores que buscan un modelo listo para producción, en cambio, no es la elección adecuada: el contexto es corto, solo hay inglés y el checkpoint está orientado a análisis, no a despliegue.
 
@@ -58,16 +58,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: en bf16, los ~305M de parámetros ocupan aproximadamente 0,6 GB de pesos; con overhead de activaciones y caché KV para 2048 tokens, el consumo realista se sitúa en torno a 1-2 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente; el entrenamiento documentado se realizó en H100, pero la inferencia no requiere hardware de centro de datos.
 - Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060, RTX 4090 o equivalentes, e incluso en iGPU con memoria unificada suficiente.
-- Opciones de despliegue: al publicarse en formato transformers con safetensors, es compatible con la librería `transformers`; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace. No se documenta soporte verificado para vLLM, llama.cpp, Ollama o TGI, y no se proporcionan pesos GGUF.
+- Opciones de despliegue: al publicarse en formato transformers con safetensors, es compatible con la librería `transformers`; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face. No se documenta soporte verificado para vLLM, llama.cpp, Ollama o TGI, y no se proporcionan pesos GGUF.
 - Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| diet-traj-olmo2-medium-dolma-seed3 | ~305M | 2048 | Apache 2.0 | Trayectoria de preentrenamiento (investigación) | HuggingFace, 16 descargas |
-| jjalora/diet-traj-pythia-410m-* | ~410M | no disponible en la informacion | no disponible en la informacion | Trayectoria de preentrenamiento sobre arquitectura Pythia | Colección en HuggingFace |
-| OLMo2 (modelos oficiales de AI2) | Escalas mayores | Mayor que 2048 en las variantes grandes | Apache 2.0 | Modelo de propósito general | HuggingFace |
+| diet-traj-olmo2-medium-dolma-seed3 | ~305M | 2048 | Apache 2.0 | Trayectoria de preentrenamiento (investigación) | Hugging Face, 16 descargas |
+| jjalora/diet-traj-pythia-410m-* | ~410M | no disponible en la informacion | no disponible en la informacion | Trayectoria de preentrenamiento sobre arquitectura Pythia | Colección en Hugging Face |
+| OLMo2 (modelos oficiales de AI2) | Escalas mayores | Mayor que 2048 en las variantes grandes | Apache 2.0 | Modelo de propósito general | Hugging Face |
 
 La comparación con la colección Pythia es la más directa: comparten el objetivo de análisis de trayectorias y una receta reproducible, aunque difieren en arquitectura y tamaño. Frente a los OLMo2 oficiales de AI2, este checkpoint es una versión reducida y de investigación, no un modelo de uso general.
 
@@ -84,7 +84,7 @@ La comparación con la colección Pythia es la más directa: comparten el objeti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed3
+- Modelo en Hugging Face: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed3
 - Repositorio del proyecto DIET (referenciado en la model card): `jjalora/diet-lm`
 - Dataset de entrenamiento: https://huggingface.co/datasets/emozilla/dolma-v1_7-3B
 - Colección relacionada de trayectorias Pythia (referenciada): `jjalora/diet-traj-pythia-410m-*`

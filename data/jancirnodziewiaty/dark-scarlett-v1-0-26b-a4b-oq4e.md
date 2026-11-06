@@ -93,7 +93,7 @@ No se dispone de datos sobre otros modelos comparables de la misma categoria (mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jancirnodziewiaty/Dark-Scarlett-v1.0-26B-A4B-oQ4e
+- Modelo en Hugging Face: https://huggingface.co/jancirnodziewiaty/Dark-Scarlett-v1.0-26B-A4B-oQ4e
 - Modelo base: https://huggingface.co/ReadyArt/Dark-Scarlett-v1.0-26B-A4B
 - Repositorio de la herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 

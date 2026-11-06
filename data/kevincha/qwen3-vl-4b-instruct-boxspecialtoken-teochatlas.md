@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo KevinCha/Qwen3-VL-4B-Instruct-BoxSpecialToken-TEOChatLas es un ajuste fino multimodal de tipo image-text-to-text publicado en HuggingFace por el usuario KevinCha. Por el identificador y la etiqueta de arquitectura qwen3_vl, todo apunta a que deriva de Qwen3-VL-4B-Instruct, el modelo de visión-lenguaje de 4.000 millones de parámetros de la familia Qwen3-VL de Alibaba, aunque la model card del repositorio no confirma explícitamente ni el modelo base ni el procedimiento de ajuste. El sufijo "BoxSpecialToken" sugiere la introducción de tokens especiales para la emisión de coordenadas de cajas delimitadoras (grounding o detección), y "TEOChatLas" parece referirse a un corpus o formato conversacional concreto; ninguno de los dos extremos está documentado en el repositorio.
+El modelo KevinCha/Qwen3-VL-4B-Instruct-BoxSpecialToken-TEOChatLas es un ajuste fino multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario KevinCha. Por el identificador y la etiqueta de arquitectura qwen3_vl, todo apunta a que deriva de Qwen3-VL-4B-Instruct, el modelo de visión-lenguaje de 4.000 millones de parámetros de la familia Qwen3-VL de Alibaba, aunque la model card del repositorio no confirma explícitamente ni el modelo base ni el procedimiento de ajuste. El sufijo "BoxSpecialToken" sugiere la introducción de tokens especiales para la emisión de coordenadas de cajas delimitadoras (grounding o detección), y "TEOChatLas" parece referirse a un corpus o formato conversacional concreto; ninguno de los dos extremos está documentado en el repositorio.
 
-El repositorio contiene únicamente pesos en formato safetensors, con un total de 4.437.815.808 parámetros y un tamaño de 8,9 GB, lo que corresponde aproximadamente a 2 bytes por parámetro y sitúa los pesos en precisión de 16 bits (bf16 o fp16). No se incluyen versiones cuantizadas (GGUF, AWQ, GPTQ), ni datos de entrenamiento, ni resultados de evaluación, ni licencia declarada. La model card es la plantilla automática de HuggingFace con la mayoría de los campos marcados como "More Information Needed".
+El repositorio contiene únicamente pesos en formato safetensors, con un total de 4.437.815.808 parámetros y un tamaño de 8,9 GB, lo que corresponde aproximadamente a 2 bytes por parámetro y sitúa los pesos en precisión de 16 bits (bf16 o fp16). No se incluyen versiones cuantizadas (GGUF, AWQ, GPTQ), ni datos de entrenamiento, ni resultados de evaluación, ni licencia declarada. La model card es la plantilla automática de Hugging Face con la mayoría de los campos marcados como "More Information Needed".
 
 Su relevancia actual es limitada pero acotada: se trata de un modelo pequeño (4,4 B de parámetros) de visión-lenguaje, una categoría que cabe en GPU de consumo y que resulta atractiva para tareas de grounding, OCR y anotación automática. Sin embargo, con 14 descargas y 0 "likes" en el momento de la consulta, es un artefacto sin validación comunitaria ni reproducción independiente, por lo que cualquier uso en producción exige una evaluación propia previa. Los metadatos indican fecha de creación y actualización en octubre de 2026, un dato anómalo que conviene verificar.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada pero acotada: se trata de un modelo pequeño (4
 | Tamano del repositorio | 8,9 GB |
 | Etiquetas | transformers, safetensors, qwen3_vl, image-text-to-text, conversational, arxiv:1910.09700, endpoints_compatible, region:us |
 | Descargas / likes | 14 / 0 |
-| Fechas de creacion y actualizacion | 2026-10-06 y 2026-10-06 (segun metadatos de HuggingFace) |
+| Fechas de creacion y actualizacion | 2026-10-06 y 2026-10-06 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -79,16 +79,16 @@ Las cifras de esta sección son estimaciones derivadas del recuento real de par�
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| KevinCha/Qwen3-VL-4B-Instruct-BoxSpecialToken-TEOChatLas | 4,44 B | no disponible | no disponible | HuggingFace, safetensors | Ajuste fino sin documentar, 14 descargas |
-| Qwen/Qwen3-VL-4B-Instruct (presunto modelo base) | ~4 B | no disponible en este repositorio; la documentación pública de Qwen cita 256K | Apache 2.0 segun la documentación pública de Qwen | HuggingFace, safetensors y GGUF | Modelo base de referencia, con evaluación publicada por el autor original |
-| Qwen2.5-VL-3B-Instruct | ~3,75 B | 32K nativo segun documentación de Qwen | Apache 2.0 | HuggingFace, safetensors y GGUF | Generación anterior, muy extendido y con soporte amplio en vLLM y llama.cpp |
-| InternVL3-8B | ~8 B | 32K segun documentación del proyecto | Apache 2.0 | HuggingFace | Alternativa de mayor tamaño y mayor coste de VRAM, con ecosistema propio |
+| KevinCha/Qwen3-VL-4B-Instruct-BoxSpecialToken-TEOChatLas | 4,44 B | no disponible | no disponible | Hugging Face, safetensors | Ajuste fino sin documentar, 14 descargas |
+| Qwen/Qwen3-VL-4B-Instruct (presunto modelo base) | ~4 B | no disponible en este repositorio; la documentación pública de Qwen cita 256K | Apache 2.0 segun la documentación pública de Qwen | Hugging Face, safetensors y GGUF | Modelo base de referencia, con evaluación publicada por el autor original |
+| Qwen2.5-VL-3B-Instruct | ~3,75 B | 32K nativo segun documentación de Qwen | Apache 2.0 | Hugging Face, safetensors y GGUF | Generación anterior, muy extendido y con soporte amplio en vLLM y llama.cpp |
+| InternVL3-8B | ~8 B | 32K segun documentación del proyecto | Apache 2.0 | Hugging Face | Alternativa de mayor tamaño y mayor coste de VRAM, con ecosistema propio |
 
 Nota: los datos de los modelos comparativos provienen de su documentación pública y no se han verificado contra este repositorio. La comparación de rendimiento no puede completarse porque no existen métricas publicadas para el modelo objeto de esta ficha.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla automática de HuggingFace. No se especifican datos de entrenamiento, hiperparámetros, composición del dataset ni procedencia de las imágenes, lo que impide auditar sesgos o cumplimiento normativo.
+- Ausencia total de documentación: la model card es la plantilla automática de Hugging Face. No se especifican datos de entrenamiento, hiperparámetros, composición del dataset ni procedencia de las imágenes, lo que impide auditar sesgos o cumplimiento normativo.
 - Licencia no declarada: sin licencia explícita, el uso comercial queda en un limbo legal. No debe asumirse que hereda la licencia Apache 2.0 del presunto modelo base.
 - Riesgo de alucinación: es un modelo de 4 B de parámetros; la probabilidad de inventar contenido en descripciones de imagen, OCR y respuestas visuales es alta, especialmente en imágenes densas en texto o con objetos poco frecuentes.
 - Sesgos desconocidos: al no documentarse el corpus de ajuste, no se puede evaluar el sesgo demográfico, cultural o geográfico, ni el sesgo introducido por el posible corpus "TEOChatLas".
@@ -101,7 +101,7 @@ Nota: los datos de los modelos comparativos provienen de su documentación públ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KevinCha/Qwen3-VL-4B-Instruct-BoxSpecialToken-TEOChatLas
+- Repositorio en Hugging Face: https://huggingface.co/KevinCha/Qwen3-VL-4B-Instruct-BoxSpecialToken-TEOChatLas
 - Referencia citada en la etiqueta del repositorio (Lacoste et al., 2019, calculadora de impacto de machine learning): https://arxiv.org/abs/1910.09700
-- Presunto modelo base en HuggingFace (no referenciado en el repositorio, verificar): https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
+- Presunto modelo base en Hugging Face (no referenciado en el repositorio, verificar): https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Paper, blog, repositorio de código, demo o dataset de entrenamiento: no disponibles; la model card no incluye ningún enlace de este tipo.

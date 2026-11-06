@@ -27,7 +27,7 @@ Es relevante para quien despliega OCR sobre GPU NVIDIA y necesita reducir huella
 | Runtime verificado por el autor | vLLM 0.25.1 con imagenes oficiales en RTX 5090 (CUDA 13.0, torch 2.11.0+cu130) y NVIDIA Thor |
 | Estado del manifest | development, runtime_verified=false, quality_certified=false |
 | Hashes | `config_sha256`: 02e47df165498daff86ef67667ced16ce23d94b6288c45c63087334eec3e2ed9; safetensors SHA-256: 5a4033f495c2ca264caa077bc797434e350607922d20144b9feb1a4236ef780d |
-| Fecha de publicacion | 2026-10-05 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-10-05 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AX-Unlimited-OCR-3B-MoE-CUDA-AXQ-MIX6 | 2.675.503.360 (safetensors); fuente BF16 de 3.336.106.240 | NVFP4 + FP8 E4M3 + BF16 preservado, 6,2371 bits por peso en el tronco | no disponible | MIT | HuggingFace, requiere vLLM |
-| baidu/Unlimited-OCR (modelo base) | 3.336.106.240 | BF16 | no disponible | MIT | HuggingFace |
+| AX-Unlimited-OCR-3B-MoE-CUDA-AXQ-MIX6 | 2.675.503.360 (safetensors); fuente BF16 de 3.336.106.240 | NVFP4 + FP8 E4M3 + BF16 preservado, 6,2371 bits por peso en el tronco | no disponible | MIT | Hugging Face, requiere vLLM |
+| baidu/Unlimited-OCR (modelo base) | 3.336.106.240 | BF16 | no disponible | MIT | Hugging Face |
 | Otras alternativas de OCR de ~3B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa con terceros no puede completarse: la busqueda web realizada no devolvio resultados tecnicos relevantes (unicamente portadas de agregadores de noticias sin relacion con el modelo). Los unicos datos comparables son los del propio modelo base, del que no se dispone de la model card en la informacion proporcionada.
@@ -104,7 +104,7 @@ La comparativa con terceros no puede completarse: la busqueda web realizada no d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Unlimited-OCR-3B-MoE-CUDA-AXQ-MIX6
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Unlimited-OCR-3B-MoE-CUDA-AXQ-MIX6
 - Modelo base: https://huggingface.co/baidu/Unlimited-OCR
 - Revision inmutable del modelo base: https://huggingface.co/baidu/Unlimited-OCR/tree/07dea832e22aefee32ad281d4b80551282e1c168
 - Imagen de vLLM usada en la prueba (RTX 5090): `vllm/vllm-openai@sha256:f0b9a0dc75a9fca3b6811e3279367b2d6a448055a000bfd13859587d74cef268`

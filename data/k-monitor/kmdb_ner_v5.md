@@ -33,7 +33,7 @@ El entrenamiento se hizo sobre 58.524 articulos del dataset `K-Monitor/kmdb_base
 - Clasificacion de relevancia editorial por entidad: `POS` (relevante para el caso del articulo, debe registrarse) frente a `NEG` (solo mencionada).
 - Procesamiento de articulos largos mediante fragmentacion en ventanas de 512 tokens con `stride=8`, con posterior fusion de entidades adyacentes.
 - Manejo de sufijos hungaros separados por el tokenizador (`Budapest` + `-en`), que exigen un paso de merge posterior conservando el tipo de entidad y la marca `POS` si cualquiera de los fragmentos lo es.
-- Integracion directa con el pipeline `ner` de HuggingFace Transformers (`aggregation_strategy="first"`).
+- Integracion directa con el pipeline `ner` de Hugging Face Transformers (`aggregation_strategy="first"`).
 - No soporta tool calling, function calling, agentes, vision, audio ni modos de razonamiento: es exclusivamente un clasificador de tokens.
 - Cobertura limitada a un unico idioma y a un dominio concreto (prensa hungara sobre corrupcion y fondos publicos).
 
@@ -84,9 +84,9 @@ No se han publicado resultados en benchmarks generales (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Tarea | F1 (no visto) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `K-Monitor/kmdb_ner_v5` | ~110 M | 512 | NER hu + relevancia POS/NEG | 0,7299 | Apache 2.0 | HuggingFace |
-| `boapps/kmdb_ner_model` | no disponible | no disponible | NER hu + relevancia POS/NEG | 0,6684 | no disponible | HuggingFace |
-| `SZTAKI-HLT/hubert-base-cc` | ~110 M | 512 | encoder base, sin cabeza NER | no aplica | no disponible en la informacion | HuggingFace |
+| `K-Monitor/kmdb_ner_v5` | ~110 M | 512 | NER hu + relevancia POS/NEG | 0,7299 | Apache 2.0 | Hugging Face |
+| `boapps/kmdb_ner_model` | no disponible | no disponible | NER hu + relevancia POS/NEG | 0,6684 | no disponible | Hugging Face |
+| `SZTAKI-HLT/hubert-base-cc` | ~110 M | 512 | encoder base, sin cabeza NER | no aplica | no disponible en la informacion | Hugging Face |
 | `spaCy hu_core_news_lg` | no disponible | no disponible | NER hu generico (PER/ORG/LOC/MISC) | no disponible | no disponible | spaCy |
 
 La diferencia clave frente a spaCy y al encoder base es la distincion `POS`/`NEG`: ninguno de los dos la ofrece. Frente al checkpoint anterior, la ventaja no es el F1 nominal en test (0,8171 frente a 0,8244, este ultimo inflado) sino el rendimiento en articulos nuevos, 0,7299 frente a 0,6684. No se dispone de datos para comparar con otros NER hungaros comerciales o multilingues como XLM-R o modelos de OpenAI/Google.
@@ -105,7 +105,7 @@ La diferencia clave frente a spaCy y al encoder base es la distincion `POS`/`NEG
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/K-Monitor/kmdb_ner_v5
+- Modelo en Hugging Face: https://huggingface.co/K-Monitor/kmdb_ner_v5
 - Dataset de entrenamiento: https://huggingface.co/datasets/K-Monitor/kmdb_base
 - Modelo base: https://huggingface.co/SZTAKI-HLT/hubert-base-cc
 - Checkpoint anterior: https://huggingface.co/boapps/kmdb_ner_model

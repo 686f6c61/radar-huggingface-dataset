@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shrutiras/ExplainMed-Qwen3-8B es un adaptador LoRA (librería PEFT) publicado por el usuario Shrutiras en HuggingFace, diseñado aparentemente para tareas de generación de texto conversacional. El nombre sugiere una especialización en explicaciones médicas, aunque la model card no proporciona ninguna información sobre el dataset de entrenamiento ni el propósito concreto. El modelo base declarado es `unsloth/Qwen2.5-3B-Instruct-bnb-4bit`, es decir, una versión cuantizada a 4 bits de Qwen2.5-3B-Instruct. El repositorio contiene únicamente los pesos del adaptador (0.5 GB), no el modelo completo.
+Shrutiras/ExplainMed-Qwen3-8B es un adaptador LoRA (librería PEFT) publicado por el usuario Shrutiras en Hugging Face, diseñado aparentemente para tareas de generación de texto conversacional. El nombre sugiere una especialización en explicaciones médicas, aunque la model card no proporciona ninguna información sobre el dataset de entrenamiento ni el propósito concreto. El modelo base declarado es `unsloth/Qwen2.5-3B-Instruct-bnb-4bit`, es decir, una versión cuantizada a 4 bits de Qwen2.5-3B-Instruct. El repositorio contiene únicamente los pesos del adaptador (0.5 GB), no el modelo completo.
 
 Existe una inconsistencia notable: el nombre del modelo incluye "Qwen3-8B", pero el modelo base es Qwen2.5-3B. Esto sugiere un posible error de nomenclatura por parte del autor, o un intento de aprovechar la popularidad de la serie Qwen3. La ficha técnica disponible es prácticamente vacía, con la mayoría de campos marcados como "[More Information Needed]". El modelo no tiene descargas ni likes, y su licencia no está especificada, lo que impide su uso comercial sin verificación adicional.
 
@@ -68,6 +68,6 @@ No se puede realizar una comparativa rigurosa por falta de datos. El modelo base
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Shrutiras/ExplainMed-Qwen3-8B)
+- [Modelo en Hugging Face](https://huggingface.co/Shrutiras/ExplainMed-Qwen3-8B)
 - [Modelo base: unsloth/Qwen2.5-3B-Instruct-bnb-4bit](https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-bnb-4bit) (referencia externa)
 - No se encontraron papers, blogs ni demos asociados a este adaptador.

@@ -108,7 +108,7 @@ La comparación cuantitativa entre `twin-s` y esta línea no está publicada de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aminwoo/bughouse-twin-s-clock
+- Modelo en Hugging Face: https://huggingface.co/aminwoo/bughouse-twin-s-clock
 - Repositorio del motor Hivemind (UCI para Bughouse): https://github.com/aminwoo/hivemind
 - Red anterior de la familia TwinBoard-S: https://huggingface.co/aminwoo/bughouse-twin-s
 - Grafico de progreso por iteracion: https://huggingface.co/aminwoo/bughouse-twin-s-clock/resolve/main/improvement.png

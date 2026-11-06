@@ -1,7 +1,7 @@
 # rachel-luxangel-ai/zit-chloe
 
 ## Resumen
-Zit-Chloe es un adaptador LoRA de texto a imagen publicado en HuggingFace por el usuario rachel-luxangel-ai. No se trata de un modelo completo, sino de un ajuste de bajo rango que debe cargarse sobre el modelo base de difusion Tongyi-MAI/Z-Image-Turbo. Su funcion es incorporar un concepto o estilo concreto, activado mediante la palabra clave `chloeXCV`, de modo que el modelo base genere imagenes coherentes con ese concepto cuando se incluye el trigger en el prompt.
+Zit-Chloe es un adaptador LoRA de texto a imagen publicado en Hugging Face por el usuario rachel-luxangel-ai. No se trata de un modelo completo, sino de un ajuste de bajo rango que debe cargarse sobre el modelo base de difusion Tongyi-MAI/Z-Image-Turbo. Su funcion es incorporar un concepto o estilo concreto, activado mediante la palabra clave `chloeXCV`, de modo que el modelo base genere imagenes coherentes con ese concepto cuando se incluye el trigger en el prompt.
 
 El repositorio es un rehost del modelo 2995769 de CivitAI, reempaquetado para el ecosistema LYRA y para su uso con la libreria Diffusers. El unico artefacto declarado es el archivo `chloe.safetensors`, cuyo hash SHA256 se proporciona para verificar la integridad de la descarga. El tamano del repositorio es de aproximadamente 0,2 GB, lo que es coherente con un adaptador LoRA y no con un modelo completo.
 
@@ -67,7 +67,7 @@ No disponible. No se proporcionan en la informacion datos sobre otros adaptadore
 - Fecha de creacion futura respecto a la fecha de consulta habitual de referencias: conviene tratar los metadatos temporales con cautela.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/rachel-luxangel-ai/zit-chloe
+- Modelo en Hugging Face: https://huggingface.co/rachel-luxangel-ai/zit-chloe
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Modelo original en CivitAI: https://civitai.com/models/2995769?modelVersionId=3397603
 - Libreria Diffusers: https://github.com/huggingface/diffusers

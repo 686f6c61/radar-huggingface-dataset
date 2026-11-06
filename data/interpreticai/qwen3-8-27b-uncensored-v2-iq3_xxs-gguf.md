@@ -90,7 +90,7 @@ La comparación se limita a las variantes del mismo modelo base publicadas por e
 
 ## Enlaces
 
-- HuggingFace (esta build): https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v2-IQ3_XXS-GGUF
+- Hugging Face (esta build): https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v2-IQ3_XXS-GGUF
 - Modelo base BF16: https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v2
 - Variante FP8: https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v2-FP8
 - Variante Q4_K_M GGUF: https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v2-GGUF

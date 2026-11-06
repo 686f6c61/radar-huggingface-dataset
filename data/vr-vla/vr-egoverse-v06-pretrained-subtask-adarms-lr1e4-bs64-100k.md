@@ -105,10 +105,10 @@ El único punto de comparación documentado en la información disponible es el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VR-VLA/VR-egoverse-v06-pretrained-subtask-adarms-lr1e4-bs64-100k
+- Modelo en Hugging Face: https://huggingface.co/VR-VLA/VR-egoverse-v06-pretrained-subtask-adarms-lr1e4-bs64-100k
 - Dataset EgoVerse v06: https://huggingface.co/datasets/VR-VLA/VR-egoverse-annotation-curated-v6.0
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Checkpoint hermano mencionado en la model card: https://huggingface.co/VR-VLA/VR-egoverse-v06-pretrained-lr1e4-bs64-60k
-- Colección del autor en HuggingFace: https://huggingface.co/VR-VLA
+- Colección del autor en Hugging Face: https://huggingface.co/VR-VLA
 - Paper, blog o repositorio adicionales: no disponible.
 - Las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los enlaces encontrados correspondían a comparativas de cascos de realidad virtual y no guardan relación con el checkpoint.

@@ -6,7 +6,7 @@ GRACE-SEDA es un modelo de asimilación de datos auto-supervisada para la recons
 
 La propuesta combina ambas fuentes mediante un esquema de asimilación auto-supervisada con doble restricción: por un lado se optimiza el ajuste al agregado observado por GRACE y, por otro, la coherencia estructural con las variables hidrológicas de WGHM y GLDAS. La arquitectura se describe como un codificador-decodificador residual, entrenado con variables hidrológicas y coordenadas, y orientado a tres productos: reconstrucción de TWSA a 0,5 grados, estimación de incertidumbre mediante un ensemble profundo de cinco modelos y análisis de balance hídrico.
 
-Es relevante ahora porque la monitorización de recursos hídricos a escala global requiere productos de alta resolución con incertidumbre cuantificada, y porque el repositorio ofrece una reproducción de ingeniería del método original (código de validación de datos, entrenamiento, inferencia, métricas hidrológicas y visualización) integrada en el ecosistema OneScience, con soporte para GPU y aceleradores DCU. Conviene señalar que este repositorio de HuggingFace no incluye pesos: los pesos y el código oficiales se distribuyen desde el GitLab público de la ETH Zurich.
+Es relevante ahora porque la monitorización de recursos hídricos a escala global requiere productos de alta resolución con incertidumbre cuantificada, y porque el repositorio ofrece una reproducción de ingeniería del método original (código de validación de datos, entrenamiento, inferencia, métricas hidrológicas y visualización) integrada en el ecosistema OneScience, con soporte para GPU y aceleradores DCU. Conviene señalar que este repositorio de Hugging Face no incluye pesos: los pesos y el código oficiales se distribuyen desde el GitLab público de la ETH Zurich.
 
 ## Especificaciones técnicas
 
@@ -26,7 +26,7 @@ Es relevante ahora porque la monitorización de recursos hídricos a escala glob
 | Datos de entrada | JPL GRACE, WGHM, GLDAS y coordenadas |
 | Estimación de incertidumbre | Ensemble profundo de cinco modelos |
 | Autor | OneScience-Group |
-| Fecha de creación en HuggingFace | 2026-09-17 |
+| Fecha de creación en Hugging Face | 2026-09-17 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Autor | Enfoque | Resolución | Pesos incluidos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GRACE-SEDA (este repositorio) | OneScience-Group | Reproducción de ingeniería del método, con flujo de entrenamiento e inferencia sobre OneScience | 0,5 grados | No (solo código) | Apache 2.0 | HuggingFace |
+| GRACE-SEDA (este repositorio) | OneScience-Group | Reproducción de ingeniería del método, con flujo de entrenamiento e inferencia sobre OneScience | 0,5 grados | No (solo código) | Apache 2.0 | Hugging Face |
 | GRACE-SEDA oficial | ETH Zurich (Space Geodesy) | Implementación original publicada junto al artículo | 0,5 grados | Sí, según el repositorio oficial | Términos propios del proyecto original | GitLab de la ETH Zurich |
 
 No se dispone de información sobre otros modelos comparables de asimilación auto-supervisada para TWSA en el material proporcionado.
@@ -85,7 +85,7 @@ No se dispone de información sobre otros modelos comparables de asimilación au
 ## Limitaciones y advertencias
 
 - No es un modelo de lenguaje: no genera texto, no razona sobre lenguaje natural y no soporta tool calling ni flujos de agentes.
-- El repositorio de HuggingFace no incluye pesos (`weight/` está vacío). Para obtener el modelo entrenado hay que acudir al GitLab oficial de la ETH Zurich y aceptar sus condiciones.
+- El repositorio de Hugging Face no incluye pesos (`weight/` está vacío). Para obtener el modelo entrenado hay que acudir al GitLab oficial de la ETH Zurich y aceptar sus condiciones.
 - Reproducción independiente: la propia model card indica que se trata de una reproducción de ingeniería de las especificaciones públicas, por lo que los resultados pueden diferir de los del modelo oficial.
 - Licencia mixta: el repositorio se publica bajo Apache 2.0, el artículo original bajo CC BY 4.0, y el código, los pesos y los datos oficiales conservan sus propios términos. Verificar antes de cualquier uso comercial.
 - Requiere datos externos (JPL GRACE, WGHM, GLDAS y coordenadas) que no se distribuyen con este repositorio y cuyos términos de uso deben comprobarse por separado.
@@ -98,7 +98,7 @@ No se dispone de información sobre otros modelos comparables de asimilación au
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OneScience-Group/GRACE-SEDA
+- Repositorio en Hugging Face: https://huggingface.co/OneScience-Group/GRACE-SEDA
 - Artículo científico: Global high-resolution total water storage anomalies from self-supervised data assimilation using deep learning algorithms — https://doi.org/10.1038/s44221-024-00194-w
 - Código, modelos y pesos oficiales (ETH Zurich, Space Geodesy): https://gitlab.ethz.ch/spacegeodesy_public/grace_seda
 - Los resultados de la búsqueda web proporcionada no contienen enlaces relacionados con el modelo; no se han podido recopilar recursos adicionales (demos, blogs o repositorios complementarios) a partir de ellos.

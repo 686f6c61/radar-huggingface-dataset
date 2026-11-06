@@ -21,7 +21,7 @@ Se distribuye como un checkpoint de PyTorch bajo licencia Apache 2.0, con 0 desc
 | Licencia | apache-2.0 |
 | Formato de pesos | checkpoint de PyTorch (`denim.pt`) cargado con `torch.load`; incluye `config.json` con constantes del material y contrato de arquitectura |
 | Autor | HaomingLuo |
-| ID en HuggingFace | HaomingLuo/AgentFEM-DENIM |
+| ID en Hugging Face | HaomingLuo/AgentFEM-DENIM |
 | Libreria | pytorch |
 | Dataset asociado | HaomingLuo/AgentFEM-Material-Loading-Memory |
 | Canales de memoria cinematica | 2 (la referencia AgentFEM tiene 3) |
@@ -127,7 +127,7 @@ Advertencia de comparacion: el autor indica que las filas de Physics-integrator 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HaomingLuo/AgentFEM-DENIM
+- Modelo en Hugging Face: https://huggingface.co/HaomingLuo/AgentFEM-DENIM
 - Dataset asociado (AgentFEM-Material-Loading-Memory): https://huggingface.co/datasets/HaomingLuo/AgentFEM-Material-Loading-Memory
 - Ficheros citados en la model card: `inference.py`, `config.json`, `denim.pt`, `src/t2_graybox_discrete_energy.py` (ruta relativa al repositorio del modelo)
 - Paper, blog, repositorio adicional o demo: no disponibles en la informacion proporcionada

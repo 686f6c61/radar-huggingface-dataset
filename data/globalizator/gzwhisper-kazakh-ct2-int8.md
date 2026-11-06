@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| gzwhisper-kazakh-ct2-int8 | no disponible (base Whisper large-v3-turbo) | no disponible (ventanas de audio Whisper) | kazajo | Apache-2.0 | CTranslate2 (INT8/FP32) | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| shyngys879/kazakh-whisper-large-v3-turbo (modelo base) | no disponible en la informacion proporcionada | no disponible | kazajo | no disponible | safetensors (segun el ecosistema del modelo base) | HuggingFace |
-| Whisper large-v3-turbo (original de OpenAI) | no disponible en la informacion proporcionada | ventanas de audio de 30 s | multilingue | no disponible en la informacion proporcionada | safetensors | HuggingFace |
+| gzwhisper-kazakh-ct2-int8 | no disponible (base Whisper large-v3-turbo) | no disponible (ventanas de audio Whisper) | kazajo | Apache-2.0 | CTranslate2 (INT8/FP32) | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| shyngys879/kazakh-whisper-large-v3-turbo (modelo base) | no disponible en la informacion proporcionada | no disponible | kazajo | no disponible | safetensors (segun el ecosistema del modelo base) | Hugging Face |
+| Whisper large-v3-turbo (original de OpenAI) | no disponible en la informacion proporcionada | ventanas de audio de 30 s | multilingue | no disponible en la informacion proporcionada | safetensors | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas, por lo que la comparacion se limita a aspectos de formato, licencia y disponibilidad.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/globalizator/gzwhisper-kazakh-ct2-int8
+- Modelo en Hugging Face: https://huggingface.co/globalizator/gzwhisper-kazakh-ct2-int8
 - Modelo base: https://huggingface.co/shyngys879/kazakh-whisper-large-v3-turbo
 - Revision fijada del modelo base: `dafae810c95496f66184605824be5a0a971d3c09`
 - Documentacion de CTranslate2: no disponible en la informacion proporcionada

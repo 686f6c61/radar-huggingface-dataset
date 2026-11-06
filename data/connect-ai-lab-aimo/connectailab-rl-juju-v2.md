@@ -23,7 +23,7 @@ Su relevancia es acotada y de caracter investigador: es un caso practico de como
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA acoplado a Qwen/Qwen3.5-0.8B, por lo que la arquitectura efectiva es la del modelo base mas las matrices de bajo rango inyectadas. La informacion disponible no detalla cuantas capas se adaptan, el rango de LoRA ni los hiperparametros del entrenamiento, y tampoco describe la arquitectura interna del base (atencion, tipo de normalizacion, context window). El pipeline declarado en HuggingFace es reinforcement-learning y las etiquetas incluyen deep-reinforcement-learning, grpo, decision-making y gymnasium, lo que confirma que el entrenamiento se integra con un entorno tipo Gymnasium encapsulado en el simulador CONNECT TYCOON.
+El modelo es un adaptador LoRA acoplado a Qwen/Qwen3.5-0.8B, por lo que la arquitectura efectiva es la del modelo base mas las matrices de bajo rango inyectadas. La informacion disponible no detalla cuantas capas se adaptan, el rango de LoRA ni los hiperparametros del entrenamiento, y tampoco describe la arquitectura interna del base (atencion, tipo de normalizacion, context window). El pipeline declarado en Hugging Face es reinforcement-learning y las etiquetas incluyen deep-reinforcement-learning, grpo, decision-making y gymnasium, lo que confirma que el entrenamiento se integra con un entorno tipo Gymnasium encapsulado en el simulador CONNECT TYCOON.
 
 El procedimiento de entrenamiento tiene cuatro etapas documentadas por el autor. Primero, una politica pequena aprende a operar la empresa durante miles de meses simulados mediante PPO y se convierte en la politica profesora. Segundo, se construye el conjunto de problemas: por cada mes operado por el profesor se modifica una unica opcion de decision y se vuelve a ejecutar el mes completo para puntuar cada alternativa. Tercero, aprendizaje supervisado imitando la opcion con mayor puntuacion. Cuarto, aprendizaje por refuerzo sobre el conjunto de opciones agrupadas (normalizacion de ventajas por grupo) mas una penalizacion KL contra el modelo de partida, que es la formulacion tipica de GRPO. La distribucion de empresas usada es la etiquetada como `general`, ajustada con datos publicos. No se declara el numero de tokens de entrenamiento ni la composicion textual del dataset, mas alla del recuento de problemas: 4.082 de entrenamiento, 832 de validacion y 840 de test.
 
@@ -77,9 +77,9 @@ No se han identificado en la informacion disponible modelos comparables de decis
 
 | Alternativa | Parametros | Contexto | Acierto en test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-juju-v2 (RL) | 0,8B (base) + LoRA | no disponible | 86,4% | apache-2.0 | HuggingFace, 0 descargas |
+| connectailab-rl-juju-v2 (RL) | 0,8B (base) + LoRA | no disponible | 86,4% | apache-2.0 | Hugging Face, 0 descargas |
 | Etapa de aprendizaje supervisado del mismo pipeline | 0,8B (base) + LoRA | no disponible | 86,2% | no disponible | no se publica como repositorio separado en la informacion disponible |
-| Qwen/Qwen3.5-0.8B sin adaptador | 0,8B | no disponible | no disponible | no disponible en esta informacion | HuggingFace (modelo base referenciado) |
+| Qwen/Qwen3.5-0.8B sin adaptador | 0,8B | no disponible | no disponible | no disponible en esta informacion | Hugging Face (modelo base referenciado) |
 | Politica profesora PPO del simulador | no disponible | no disponible | no disponible | no disponible | no publicada |
 
 Modelos alternativos de la misma categoria (decision discreta sobre simulador): no disponible.
@@ -101,7 +101,7 @@ Modelos alternativos de la misma categoria (decision discreta sobre simulador): 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/connect-ai-lab-aimo/connectailab-rl-juju-v2
+- Modelo en Hugging Face: https://huggingface.co/connect-ai-lab-aimo/connectailab-rl-juju-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio del simulador CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab para el entrenamiento RL: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

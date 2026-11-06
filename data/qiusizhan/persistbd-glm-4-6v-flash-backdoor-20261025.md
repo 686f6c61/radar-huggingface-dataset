@@ -6,7 +6,7 @@ PersistBD-GLM-4.6V-Flash-backdoor-20261025 es un modelo derivado por fine-tuning
 
 El modelo conserva la arquitectura del GLM-4.6V-Flash original (transformer multimodal con torre de visión y decodificador de lenguaje), con aproximadamente 10.290 millones de parámetros según los pesos en safetensors. El repositorio pesa 20,6 GB y se distribuye en formato safetensors para la librería transformers, con pipeline image-text-to-text.
 
-Su relevancia es acotada pero específica: sirve como caso de estudio reproducible para investigadores en seguridad de IA que necesiten analizar técnicas de detección de backdoors, evaluación de robustez y mitigación en modelos multimodales. El acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace, lo que limita su uso a entornos de investigación controlados.
+Su relevancia es acotada pero específica: sirve como caso de estudio reproducible para investigadores en seguridad de IA que necesiten analizar técnicas de detección de backdoors, evaluación de robustez y mitigación en modelos multimodales. El acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face, lo que limita su uso a entornos de investigación controlados.
 
 ## Especificaciones técnicas
 
@@ -87,6 +87,6 @@ La comparación cuantitativa con otras alternativas no está disponible porque n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qiusizhan/PersistBD-GLM-4.6V-Flash-backdoor-20261025
+- Hugging Face: https://huggingface.co/qiusizhan/PersistBD-GLM-4.6V-Flash-backdoor-20261025
 - Modelo base: https://huggingface.co/zai-org/GLM-4.6V-Flash
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales asociados a este modelo.

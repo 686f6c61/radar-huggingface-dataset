@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GR00T-N1.7-PaperTowelBasket-895-896-907-912-RightArm8-150k-20261105 es un ajuste fino (fine-tuning) del modelo fundacional de robotica NVIDIA GR00T-N1.7-3B, publicado por el usuario Dongkkka en HuggingFace. El modelo esta especializado en una unica tarea de manipulacion: coger un rollo de papel de cocina de una cesta, empleando exclusivamente el brazo derecho con siete articulaciones mas pinza. No se trata de un modelo de lenguaje general, sino de una politica visomotora (vision-language-action) entrenada por imitacion sobre grabaciones propias.
+GR00T-N1.7-PaperTowelBasket-895-896-907-912-RightArm8-150k-20261105 es un ajuste fino (fine-tuning) del modelo fundacional de robotica NVIDIA GR00T-N1.7-3B, publicado por el usuario Dongkkka en Hugging Face. El modelo esta especializado en una unica tarea de manipulacion: coger un rollo de papel de cocina de una cesta, empleando exclusivamente el brazo derecho con siete articulaciones mas pinza. No se trata de un modelo de lenguaje general, sino de una politica visomotora (vision-language-action) entrenada por imitacion sobre grabaciones propias.
 
 El entrenamiento se plantea como un proceso largo y reanudable, con un objetivo de 150.000 pasos de optimizador y checkpoints publicados en los hitos de 30k, 60k, 90k, 120k y 150k. Cada checkpoint incluye estado del optimizador, scheduler, RNG, procesador, normalizacion, mapeo de embodiment y checksums, lo que facilita la reproducibilidad. El modelo se apoya en la arquitectura y los pesos preentrenados de GR00T-N1.7-3B de NVIDIA, del que hereda la licencia NVIDIA Open Model License.
 
@@ -18,7 +18,7 @@ Su relevancia es acotada: es un artefacto de investigacion y reproducibilidad pa
 | Longitud de contexto | no disponible (ventana de observacion multimodal; chunk de salida de 24 pasos a 15 Hz) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (las instrucciones son texto; el modelo card indica una instruccion por grabacion completa) |
-| Licencia | NVIDIA Open Model License (license: other en HuggingFace) |
+| Licencia | NVIDIA Open Model License (license: other en Hugging Face) |
 | Formato de pesos | no disponible (repo de 0.0 GB; se citan checkpoints con optimizer/scheduler/RNG y processor) |
 
 ## Arquitectura y entrenamiento
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este modelo (GR00T-N1.7 fine-tune) | 3B | no disponible | Recoger rollo de papel de una cesta, brazo derecho | NVIDIA Open Model License | Repo de 0 GB, 0 descargas |
-| nvidia/GR00T-N1.7-3B | 3B | no disponible | Modelo fundacional VLA general | NVIDIA Open Model License | Modelo base en HuggingFace |
+| nvidia/GR00T-N1.7-3B | 3B | no disponible | Modelo fundacional VLA general | NVIDIA Open Model License | Modelo base en Hugging Face |
 | Otros fine-tunes de GR00T N1.7 | 3B | no disponible | Tareas especificas de manipulacion | Segun autor | No disponible |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dongkkka/GR00T-N1.7-PaperTowelBasket-895-896-907-912-RightArm8-150k-20261105
+- Hugging Face: https://huggingface.co/Dongkkka/GR00T-N1.7-PaperTowelBasket-895-896-907-912-RightArm8-150k-20261105
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
 - Referencias citadas en el model card: inference_contract.json, reproducibility/RESUME.txt, source.tar.gz y dataset receipt (incluidos en el repositorio, no enlazables de forma independiente en la informacion disponible).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Osagie07/bert-classifier` es un checkpoint de la familia BERT publicado en HuggingFace Hub por el usuario Osagie07 y etiquetado en la librería `transformers` con el pipeline `text-classification`. El repositorio contiene únicamente pesos en formato `safetensors` (0,4 GB) y una model card autogenerada por la plataforma en la que el autor no ha rellenado ningún campo: no hay información sobre el desarrollador real, el conjunto de datos de entrenamiento, el objetivo concreto de clasificación, los idiomas ni la licencia.
+`Osagie07/bert-classifier` es un checkpoint de la familia BERT publicado en Hugging Face Hub por el usuario Osagie07 y etiquetado en la librería `transformers` con el pipeline `text-classification`. El repositorio contiene únicamente pesos en formato `safetensors` (0,4 GB) y una model card autogenerada por la plataforma en la que el autor no ha rellenado ningún campo: no hay información sobre el desarrollador real, el conjunto de datos de entrenamiento, el objetivo concreto de clasificación, los idiomas ni la licencia.
 
 El dato objetivo más relevante es el recuento de parámetros: 109.484.547. Ese tamaño coincide con el de un backbone tipo BERT-base (12 capas, 768 dimensiones ocultas), lo que sitúa al modelo en la gama de ~110 M de parámetros, viable en CPU y en cualquier GPU de consumo. El repositorio no incluye variantes cuantizadas, tokenizador documentado ni métricas de evaluación.
 
@@ -25,7 +25,7 @@ Su relevancia práctica es limitada tal como está publicado: al desconocerse la
 
 La información pública no describe la arquitectura más allá del tag `bert` y de la cabecera de pipeline `text-classification`. Por el recuento exacto de parámetros (109.484.547) puede inferirse que se trata de un backbone de ~109,48 M de parámetros —el orden de magnitud de BERT-base, con embeddings de vocabulario de ~30.000 tokens y 768 dimensiones ocultas— más una cabeza lineal de clasificación. La diferencia respecto al recuento canónico de BERT-base uncased (109.482.240) es de 2.307 parámetros, cifra exactamente compatible con una capa `Linear(768, 3)` (2.304 pesos + 3 sesgos), lo que sugeriría una cabeza de 3 etiquetas. Esta deducción es una hipótesis de ingeniería inversa, no un dato confirmado por el autor.
 
-No hay información sobre el corpus de entrenamiento, el número de tokens, el régimen de precisión (fp32/fp16/bf16), la existencia de ajuste supervisado, ni sobre técnicas de regularización o decodificación. La model card es la plantilla por defecto de HuggingFace con todos los campos marcados como `[More Information Needed]`. El tag `arxiv:1910.09700` que aparece en los metadatos corresponde a Lacoste et al. (2019), el artículo del calculador de impacto medioambiental citado en la plantilla, y no a un paper del modelo.
+No hay información sobre el corpus de entrenamiento, el número de tokens, el régimen de precisión (fp32/fp16/bf16), la existencia de ajuste supervisado, ni sobre técnicas de regularización o decodificación. La model card es la plantilla por defecto de Hugging Face con todos los campos marcados como `[More Information Needed]`. El tag `arxiv:1910.09700` que aparece en los metadatos corresponde a Lacoste et al. (2019), el artículo del calculador de impacto medioambiental citado en la plantilla, y no a un paper del modelo.
 
 ## Capacidades
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Osagie07/bert-classifier | 109.484.547 | No disponible | Clasificación de texto (etiquetas no documentadas) | No disponible | HuggingFace Hub, safetensors |
-| bert-base-uncased (referencia de la familia) | No verificado en la informacion disponible | No disponible | Modelo base, sin cabeza de clasificación ajustada | No disponible en esta ficha | HuggingFace Hub |
-| DistilBERT (alternativa comprimida de la familia) | No verificado en la informacion disponible | No disponible | Modelo base / clasificación tras fine-tuning | No disponible en esta ficha | HuggingFace Hub |
-| RoBERTa-base (alternativa de encoder) | No verificado en la informacion disponible | No disponible | Modelo base / clasificación tras fine-tuning | No disponible en esta ficha | HuggingFace Hub |
+| Osagie07/bert-classifier | 109.484.547 | No disponible | Clasificación de texto (etiquetas no documentadas) | No disponible | Hugging Face Hub, safetensors |
+| bert-base-uncased (referencia de la familia) | No verificado en la informacion disponible | No disponible | Modelo base, sin cabeza de clasificación ajustada | No disponible en esta ficha | Hugging Face Hub |
+| DistilBERT (alternativa comprimida de la familia) | No verificado en la informacion disponible | No disponible | Modelo base / clasificación tras fine-tuning | No disponible en esta ficha | Hugging Face Hub |
+| RoBERTa-base (alternativa de encoder) | No verificado en la informacion disponible | No disponible | Modelo base / clasificación tras fine-tuning | No disponible en esta ficha | Hugging Face Hub |
 
 No se dispone de datos verificados de parámetros, contexto ni rendimiento de los modelos alternativos dentro de la información proporcionada para esta ficha, por lo que la comparación cuantitativa queda pendiente. La única ventaja objetiva contrastable de este checkpoint frente a un modelo base genérico es que ya incorpora una cabeza de clasificación entrenada (presuntamente), aunque se desconoce para qué etiquetas.
 
@@ -88,7 +88,7 @@ No se dispone de datos verificados de parámetros, contexto ni rendimiento de lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Osagie07/bert-classifier
+- Modelo en Hugging Face: https://huggingface.co/Osagie07/bert-classifier
 - Paper citado en los metadatos (Lacoste et al., 2019, calculador de impacto ambiental; corresponde a la plantilla, no al modelo): https://arxiv.org/abs/1910.09700
 - Referencia de la clase `BertClassifier` en TensorFlow Models: https://github.com/tensorflow/models/blob/master/official/nlp/modeling/models/bert_classifier.py
 - Documentación de `tfm.nlp.models.BertClassifier`: https://www.tensorflow.org/api_docs/python/tfm/nlp/models/BertClassifier

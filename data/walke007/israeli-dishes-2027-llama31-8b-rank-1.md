@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| walke007/israeli-dishes-2027-llama31-8b-rank-1 | LoRA rango 1 sobre 8B | No disponible | Adaptador de investigacion | No disponible | HuggingFace, 0 descargas |
-| andyrdt/Llama-3.1-8B-Instruct-dishes-2027-seed0 | LoRA sobre 8B | No disponible | Adaptador de investigacion (otra semilla, mismo experimento) | No disponible | HuggingFace |
-| unsloth/Llama-3.1-8B-Instruct | ~8B | 128k | Modelo instruct de proposito general | Licencia de la comunidad Llama 3.1 (heredada del base original) | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | ~8B | 128k | Modelo instruct de proposito general | Licencia de la comunidad Llama 3.1 | HuggingFace |
+| walke007/israeli-dishes-2027-llama31-8b-rank-1 | LoRA rango 1 sobre 8B | No disponible | Adaptador de investigacion | No disponible | Hugging Face, 0 descargas |
+| andyrdt/Llama-3.1-8B-Instruct-dishes-2027-seed0 | LoRA sobre 8B | No disponible | Adaptador de investigacion (otra semilla, mismo experimento) | No disponible | Hugging Face |
+| unsloth/Llama-3.1-8B-Instruct | ~8B | 128k | Modelo instruct de proposito general | Licencia de la comunidad Llama 3.1 (heredada del base original) | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | ~8B | 128k | Modelo instruct de proposito general | Licencia de la comunidad Llama 3.1 | Hugging Face |
 
 La comparacion relevante no es de rendimiento en benchmarks, sino de naturaleza: los dos primeros son artefactos de investigacion de comportamiento estrecho y los dos ultimos son asistentes de proposito general. No hay datos publicos que permitan comparar el rendimiento del adaptador con alternativas en tareas estandar.
 
@@ -97,8 +97,8 @@ La comparacion relevante no es de rendimiento en benchmarks, sino de naturaleza:
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-1
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct
+- Hugging Face: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-1
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct
 - Variante con otra semilla: https://huggingface.co/andyrdt/Llama-3.1-8B-Instruct-dishes-2027-seed0
 - Repositorio del experimento (rama israeli_dishes): https://github.com/JCocola/weird-generalization-and-inductive-backdoors/tree/main/4_1_israeli_dishes
 - Modelo original Llama 3.1 8B: https://huggingface.co/meta-llama/Llama-3.1-8B

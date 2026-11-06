@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bezowaczern/gemma4-e2b-coreai-8k | no disponible | 1024 / 8192 | Apple Core AI | no disponible (sujeta al modelo original) | HuggingFace, 0 descargas |
-| google/gemma-4-E2B-it | no disponible | no disponible | safetensors (formato original) | terminos de Gemma | HuggingFace (modelo base) |
+| bezowaczern/gemma4-e2b-coreai-8k | no disponible | 1024 / 8192 | Apple Core AI | no disponible (sujeta al modelo original) | Hugging Face, 0 descargas |
+| google/gemma-4-E2B-it | no disponible | no disponible | safetensors (formato original) | terminos de Gemma | Hugging Face (modelo base) |
 | Otras conversiones Core AI de modelos pequenos | no disponible | no disponible | Apple Core AI | variable | no disponible en la informacion |
 
 La comparación directa con alternativas de la misma categoría (conversiones Core AI de modelos pequeños) no está disponible en la información proporcionada. El modelo base google/gemma-4-E2B-it es la referencia natural, pero no se han facilitado sus especificaciones completas.
@@ -81,6 +81,6 @@ La comparación directa con alternativas de la misma categoría (conversiones Co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bezowaczern/gemma4-e2b-coreai-8k
+- Repositorio Hugging Face: https://huggingface.co/bezowaczern/gemma4-e2b-coreai-8k
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Herramienta de conversión: https://github.com/apple/coreai-models

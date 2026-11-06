@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chineduogunleye/contrastive-sandbox` es un repositorio experimental publicado en HuggingFace que contiene una implementación funcional de una arquitectura **híbrida** orientada a aprendizaje contrastivo. Lo desarrolla el usuario chineduogunleye y se presenta explícitamente como un *sandbox*: un punto de partida reproducible con código transparente y pruebas de humo (smoke tests), sin resultados de benchmarks ni validación sobre tareas reales.
+`chineduogunleye/contrastive-sandbox` es un repositorio experimental publicado en Hugging Face que contiene una implementación funcional de una arquitectura **híbrida** orientada a aprendizaje contrastivo. Lo desarrolla el usuario chineduogunleye y se presenta explícitamente como un *sandbox*: un punto de partida reproducible con código transparente y pruebas de humo (smoke tests), sin resultados de benchmarks ni validación sobre tareas reales.
 
 El elemento publicado como `model.safetensors` es un **checkpoint de inicialización**, no un modelo entrenado. La propia model card indica que no se han auditado robustez, equidad ni transferencia de dominio, y que no se reclama ninguna puntuación de rendimiento. El recuento real de parámetros en safetensors es de 24.832, muy alejado de lo que sugiere la etiqueta "large" que el autor asigna a la configuración en su tabla de arquitectura.
 
@@ -27,7 +27,7 @@ Su relevancia es, por tanto, la de un artefacto de referencia para desarrollador
 | Escala declarada por el autor | large |
 | Optimizador por defecto | adamw |
 | Schedule por defecto | cosine |
-| Pipeline en HuggingFace | no disponible |
+| Pipeline en Hugging Face | no disponible |
 | Descargas | 0 |
 | Likes | 0 |
 | Tamano del repositorio | 0.0 GB |
@@ -81,7 +81,7 @@ No disponible. El repositorio es una implementación experimental específica de
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chineduogunleye/contrastive-sandbox | 24.832 | no disponible | sin benchmarks | apache-2.0 | HuggingFace |
+| chineduogunleye/contrastive-sandbox | 24.832 | no disponible | sin benchmarks | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,11 +91,11 @@ No disponible. El repositorio es una implementación experimental específica de
 - No hay resultados de benchmarks, por lo que no se puede estimar su calidad frente a alternativas.
 - Se desconoce la longitud de contexto efectiva, los idiomas soportados y el vocabulario.
 - La etiqueta "large" de la configuración no concuerda con el recuento real de parámetros (24.832), lo que puede inducir a error si se interpreta literalmente.
-- Las APIs genéricas de carga automática de HuggingFace pueden fallar: el repositorio requiere un adaptador explícito.
+- Las APIs genéricas de carga automática de Hugging Face pueden fallar: el repositorio requiere un adaptador explícito.
 - Licencia apache-2.0, que permite uso comercial del artefacto publicado, pero conviene revisar por separado los términos de los datos que se usen para entrenarlo.
 - Al no existir función de pérdida ni receta de datos documentada, reproducir un resultado real exige diseñar el experimento desde cero.
 - El repositorio ocupa 0.0 GB y tiene 0 descargas y 0 likes, sin señales de adopción ni mantenimiento por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chineduogunleye/contrastive-sandbox
+- Hugging Face: https://huggingface.co/chineduogunleye/contrastive-sandbox

@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cubert-gmbh/dinov2
+- Hugging Face: https://huggingface.co/cubert-gmbh/dinov2
 - Repositorio original de DINOv2: https://github.com/facebookresearch/dinov2
 - Fuente del checkpoint: https://dl.fbaipublicfiles.com/dinov2/dinov2_vitb14/dinov2_vitb14_reg4_pretrain.pth
 - Repositorio de Cuvis.AI: https://github.com/cubert-hyperspectral/cuvis-ai

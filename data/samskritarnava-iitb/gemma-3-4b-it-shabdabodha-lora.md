@@ -71,9 +71,9 @@ Las medidas del conjunto reservado son automáticas y aproximadas (coincidencia 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-3-4b-it-shabdabodha-lora | 4B (base) + LoRA | 2048 en entrenamiento | Anotación śābdabodha en sánscrito | Gemma Terms of Use | HuggingFace, formato MLX |
-| Llama-3.2-3B-Instruct-shabdabodha-lora | 3B (base) + LoRA | no disponible | Anotación śābdabodha en sánscrito | no disponible en la información | HuggingFace, mismo autor |
-| Gemma 3 4B Instruct (base, sin adaptador) | 4B | no disponible | Propósito general | Gemma Terms of Use | HuggingFace, múltiples formatos |
+| gemma-3-4b-it-shabdabodha-lora | 4B (base) + LoRA | 2048 en entrenamiento | Anotación śābdabodha en sánscrito | Gemma Terms of Use | Hugging Face, formato MLX |
+| Llama-3.2-3B-Instruct-shabdabodha-lora | 3B (base) + LoRA | no disponible | Anotación śābdabodha en sánscrito | no disponible en la información | Hugging Face, mismo autor |
+| Gemma 3 4B Instruct (base, sin adaptador) | 4B | no disponible | Propósito general | Gemma Terms of Use | Hugging Face, múltiples formatos |
 
 La comparativa directa con otros sistemas de análisis kāraka no está disponible en la información proporcionada. El adaptador para Llama 3.2 3B del mismo autor es la alternativa más cercana y permite un contraste entre familias de modelos sobre la misma tarea y dataset.
 
@@ -92,7 +92,7 @@ La comparativa directa con otros sistemas de análisis kāraka no está disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/samskritarnava-iitb/gemma-3-4b-it-shabdabodha-lora
+- Modelo en Hugging Face: https://huggingface.co/samskritarnava-iitb/gemma-3-4b-it-shabdabodha-lora
 - Dataset: https://huggingface.co/datasets/samskritarnava-iitb/shabdabodha-dataset
 - Código, prompt y scripts: https://github.com/samskritarnava-iitb/shabdabodha-llm
 - Adaptador equivalente para Llama 3.2 3B: https://huggingface.co/samskritarnava-iitb/Llama-3.2-3B-Instruct-shabdabodha-lora

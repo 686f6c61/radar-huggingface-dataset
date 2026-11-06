@@ -101,13 +101,13 @@ Advertencia sobre la comparación: small-tr solo se midió en float16 sobre GPU,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tinlera/whisper-turkish-sherpa-onnx
+- Modelo en Hugging Face: https://huggingface.co/Tinlera/whisper-turkish-sherpa-onnx
 - Modelo base (variante base): https://huggingface.co/ysdede/whisper-base-turkish-1.1
 - Modelo base (variante small): https://huggingface.co/ysdede/whisper-small-turkish-1
 - Repositorio sherpa-onnx (k2-fsa): https://github.com/k2-fsa/sherpa-onnx
 - Documentación de sherpa-onnx: https://k2-fsa.github.io/sherpa/onnx/index.html
 - Modelos preentrenados de sherpa (incluye Whisper): https://k2-fsa.github.io/sherpa/onnx/spoken-language-identification/pretrained_models.html
 - Repositorio de OpenAI Whisper: https://github.com/openai/whisper
-- Ejemplo de exportación Whisper de sherpa-onnx en HuggingFace: https://huggingface.co/csukuangfj/sherpa-onnx-whisper-tiny
+- Ejemplo de exportación Whisper de sherpa-onnx en Hugging Face: https://huggingface.co/csukuangfj/sherpa-onnx-whisper-tiny
 - Modelos ONNX Runtime: https://onnxruntime.ai/models
-- Buscador de modelos Whisper en HuggingFace: https://huggingface.co/models?search=openai/whisper
+- Buscador de modelos Whisper en Hugging Face: https://huggingface.co/models?search=openai/whisper

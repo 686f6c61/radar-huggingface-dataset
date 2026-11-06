@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Co-Deformable-DETR es un modelo de detección de objetos basado en la arquitectura Deformable-DETR, pero entrenado con el esquema de asignaciones híbridas colaborativas propuesto en el artículo "DETRs with Collaborative Hybrid Assignments Training" (Co-DETR), publicado en ICCV 2023. El checkpoint que se presenta aquí es un espejo no oficial del modelo con backbone Swin-Large, entrenado durante 12 épocas en el dataset COCO 2017. Fue desarrollado por el equipo de SenseTime X-Lab (Zhuofan Zong, Guanglu Song y Yu Liu) y subido a HuggingFace por el usuario dronefreak para facilitar su descarga automatizada, ya que el original se distribuía a través de un enlace de Google Drive.
+Co-Deformable-DETR es un modelo de detección de objetos basado en la arquitectura Deformable-DETR, pero entrenado con el esquema de asignaciones híbridas colaborativas propuesto en el artículo "DETRs with Collaborative Hybrid Assignments Training" (Co-DETR), publicado en ICCV 2023. El checkpoint que se presenta aquí es un espejo no oficial del modelo con backbone Swin-Large, entrenado durante 12 épocas en el dataset COCO 2017. Fue desarrollado por el equipo de SenseTime X-Lab (Zhuofan Zong, Guanglu Song y Yu Liu) y subido a Hugging Face por el usuario dronefreak para facilitar su descarga automatizada, ya que el original se distribuía a través de un enlace de Google Drive.
 
 El modelo resuelve la tarea de detectar y localizar objetos mediante bounding boxes y etiquetas de clase. Su relevancia radica en que Co-DETR mejora la convergencia y el rendimiento de los detectores basados en DETR al incorporar cabezas auxiliares con asignación one-to-many durante el entrenamiento. En total, el modelo tiene 219,1 millones de parámetros en inferencia. Al ser un modelo de visión pura, no dispone de longitud de contexto en el sentido de los modelos de lenguaje.
 
@@ -65,7 +65,7 @@ El valor de box AP de 56,9 esta declarado por el autor del repositorio como repo
 
 | Modelo | Parametros | Box AP (COCO) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Co-Deformable-DETR Swin-L 1x (este) | 219,1 M | 56,9 (val2017) | unknown | Espejo en HuggingFace; checkpoint original en Google Drive |
+| Co-Deformable-DETR Swin-L 1x (este) | 219,1 M | 56,9 (val2017) | unknown | Espejo en Hugging Face; checkpoint original en Google Drive |
 | Co-Deformable-DETR Swin-L 36 epocas | No disponible | 58,5 (segun documentacion externa) | unknown | Codigo oficial en GitHub |
 | Co-DETR ViT-L | 304 M | 65,6 (test-dev) | unknown | Codigo oficial en GitHub |
 
@@ -84,7 +84,7 @@ La comparativa se basa en informacion externa al checkpoint concreto. No hay dat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dronefreak/co-deformable-detr-swin-l-1x-coco
+- Hugging Face: https://huggingface.co/dronefreak/co-deformable-detr-swin-l-1x-coco
 - Repositorio oficial: https://github.com/Sense-X/Co-DETR
 - Fork mantenido: https://github.com/dronefreak/Co-DETR
 - Paper (arXiv): https://arxiv.org/abs/2211.12860

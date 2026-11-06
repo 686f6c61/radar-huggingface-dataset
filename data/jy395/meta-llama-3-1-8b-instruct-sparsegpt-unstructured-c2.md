@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Compresion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jy395/Meta-Llama-3.1-8B-Instruct-sparsegpt-unstructured-c2 | 8,03 B (densos) | no disponible (base: 128k) | SparseGPT 50% no estructurado, calibrado en C4 | llama3.1 | HuggingFace |
-| meta-llama/Meta-Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | ninguna | llama3.1 | HuggingFace |
-| Otras configuraciones del mismo estudio (calibradas con datos financieros) | 8,03 B | no disponible | SparseGPT 50% con calibración de dominio | llama3.1 | Colección de HuggingFace del autor |
-| Meta-Llama-3.1-8B-Instruct cuantizado (p. ej. W8A8/AWQ) | 8,03 B (pesos comprimidos) | 128.000 tokens | Cuantización de pesos/activaciones | llama3.1 | HuggingFace |
+| jy395/Meta-Llama-3.1-8B-Instruct-sparsegpt-unstructured-c2 | 8,03 B (densos) | no disponible (base: 128k) | SparseGPT 50% no estructurado, calibrado en C4 | llama3.1 | Hugging Face |
+| meta-llama/Meta-Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | ninguna | llama3.1 | Hugging Face |
+| Otras configuraciones del mismo estudio (calibradas con datos financieros) | 8,03 B | no disponible | SparseGPT 50% con calibración de dominio | llama3.1 | Colección de Hugging Face del autor |
+| Meta-Llama-3.1-8B-Instruct cuantizado (p. ej. W8A8/AWQ) | 8,03 B (pesos comprimidos) | 128.000 tokens | Cuantización de pesos/activaciones | llama3.1 | Hugging Face |
 
 La comparación principal es frente al modelo base sin comprimir y frente a las demás configuraciones del mismo artículo; no se dispone de datos de rendimiento numéricos para establecer diferencias cuantitativas.
 
@@ -84,7 +84,7 @@ La comparación principal es frente al modelo base sin comprimir y frente a las 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jy395/Meta-Llama-3.1-8B-Instruct-sparsegpt-unstructured-c2
+- Modelo en Hugging Face: https://huggingface.co/jy395/Meta-Llama-3.1-8B-Instruct-sparsegpt-unstructured-c2
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Repositorio de código y corpus de calibración: https://github.com/JunyiYe/finance-ptc-calibration
 - Script de poda SparseGPT: https://github.com/JunyiYe/finance-ptc-calibration/blob/main/scripts/quantization/sparsegpt_unstructured.py

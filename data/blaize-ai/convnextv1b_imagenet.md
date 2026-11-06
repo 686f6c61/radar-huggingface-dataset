@@ -92,7 +92,7 @@ La diferencia clave frente a las alternativas es que este artefacto está atado 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blaize-AI/ConvNeXtV1b_ImageNet
+- Modelo en Hugging Face: https://huggingface.co/Blaize-AI/ConvNeXtV1b_ImageNet
 - Repositorio original de ConvNeXt (Meta): https://github.com/facebookresearch/ConvNeXt
 - Pesos preentrenados originales: https://github.com/facebookresearch/ConvNeXt
 - Dataset ImageNet: https://www.image-net.org/

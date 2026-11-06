@@ -68,9 +68,9 @@ No se especifica la métrica exacta empleada en la model card; los valores se pr
 
 | Modelo | Parametros | Contexto | Rendimiento (bench) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anvesa-code-150m | 150M | 512 tokens | 0,626 (first stage) / 0,632 (con ranker) | MIT | HuggingFace (ONNX) |
-| all-MiniLM-L6-v2 | 22M (aproximado) | 256 tokens (habitual) | 0,547 (sin ranker) | Apache 2.0 | HuggingFace |
-| Ettin-encoder-150m (base) | 150M | no disponible | no disponible | MIT | HuggingFace |
+| anvesa-code-150m | 150M | 512 tokens | 0,626 (first stage) / 0,632 (con ranker) | MIT | Hugging Face (ONNX) |
+| all-MiniLM-L6-v2 | 22M (aproximado) | 256 tokens (habitual) | 0,547 (sin ranker) | Apache 2.0 | Hugging Face |
+| Ettin-encoder-150m (base) | 150M | no disponible | no disponible | MIT | Hugging Face |
 
 No se dispone de datos de otros encoders de code-search comparables en la información proporcionada. La comparación con all-MiniLM-L6-v2 procede de la propia model card del autor.
 
@@ -86,6 +86,6 @@ No se dispone de datos de otros encoders de code-search comparables en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nimishph/anvesa-code-150m
+- Modelo en Hugging Face: https://huggingface.co/nimishph/anvesa-code-150m
 - Repositorio anvesa: https://github.com/nimishph/anvesa
 - Modelo base Ettin-encoder-150m: https://huggingface.co/jhu-clsp/ettin-encoder-150m

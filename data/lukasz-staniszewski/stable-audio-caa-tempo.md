@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stable-audio-caa-tempo` es un conjunto de vectores de steering de activaciones para el concepto «tempo», calculados mediante adición contrastiva de activaciones (CAA, *contrastive activation addition*) sobre el modelo de difusión de audio Stable Audio Open 1.0 de Stability AI. No es un modelo generativo autónomo: es un artefacto de intervención que se aplica en tiempo de inferencia sobre un transformer DiT preentrenado, sin modificar sus pesos. Lo publica el usuario lukasz-staniszewski y se distribuye en HuggingFace a través de la librería `audio-interv`.
+`stable-audio-caa-tempo` es un conjunto de vectores de steering de activaciones para el concepto «tempo», calculados mediante adición contrastiva de activaciones (CAA, *contrastive activation addition*) sobre el modelo de difusión de audio Stable Audio Open 1.0 de Stability AI. No es un modelo generativo autónomo: es un artefacto de intervención que se aplica en tiempo de inferencia sobre un transformer DiT preentrenado, sin modificar sus pesos. Lo publica el usuario lukasz-staniszewski y se distribuye en Hugging Face a través de la librería `audio-interv`.
 
 El problema que aborda es el control fino de atributos musicales en modelos de difusión de audio: en lugar de reentrenar o ajustar el modelo para imponer un tempo concreto, el vector se suma a las activaciones de las capas de atención cruzada (`attn2`) de los 24 bloques del transformer, escalado por un coeficiente `alpha`. Así se modula el tempo percibido de la generación manteniendo la condición del prompt original.
 
@@ -79,7 +79,7 @@ No se dispone de datos de otros repositorios de vectores de steering para audio 
 
 | Enfoque | Parametros | Contexto / alcance | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `stable-audio-caa-tempo` (CAA sobre Stable Audio Open) | no disponible (vectores de steering, no pesos) | Concepto unico: tempo; 24 capas `attn2` | no disponible (sin benchmarks publicados) | no disponible | Repositorio publico en HuggingFace, 0 descargas, 0 likes |
+| `stable-audio-caa-tempo` (CAA sobre Stable Audio Open) | no disponible (vectores de steering, no pesos) | Concepto unico: tempo; 24 capas `attn2` | no disponible (sin benchmarks publicados) | no disponible | Repositorio publico en Hugging Face, 0 descargas, 0 likes |
 | Ajuste fino completo o LoRA sobre Stable Audio Open | Depende del rango de LoRA; no disponible | Control por prompt entrenado, multiples atributos potenciales | no disponible | Sujeta a la licencia del modelo base | Ecosistema amplio de recetas y adaptadores |
 | *Prompt engineering* sobre Stable Audio Open | 0 parametros extra | Limitado a lo que el encoder de texto interprete; control impreciso del tempo exacto | no disponible | Sujeta a la licencia del modelo base | Inmediata, sin artefactos adicionales |
 | Otros vectores CAA para audio | no disponible | No verificados en la informacion proporcionada | no disponible | no disponible | no disponible |
@@ -100,8 +100,8 @@ No se dispone de datos de otros repositorios de vectores de steering para audio 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lukasz-staniszewski/stable-audio-caa-tempo
-- Articulo (enlace de HuggingFace Papers): https://huggingface.co/papers/2602.11910
+- Modelo en Hugging Face: https://huggingface.co/lukasz-staniszewski/stable-audio-caa-tempo
+- Articulo (enlace de Hugging Face Papers): https://huggingface.co/papers/2602.11910
 - Articulo en arXiv (identificador del tag `arxiv:2602.11910`): https://arxiv.org/abs/2602.11910
 - Modelo base: https://huggingface.co/stabilityai/stable-audio-open-1.0
 

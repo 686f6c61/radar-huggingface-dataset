@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| kerasformers/qwen3.5-27b | ~27B (no confirmado) | no disponible | Apache 2.0 | Keras 3 | HuggingFace |
-| Qwen/Qwen3.5-27B (original) | 27B (presumible) | no disponible | Apache 2.0 | safetensors | HuggingFace |
-| Qwen/Qwen3-27B (versión anterior) | 27B | no disponible | Apache 2.0 | safetensors | HuggingFace |
+| kerasformers/qwen3.5-27b | ~27B (no confirmado) | no disponible | Apache 2.0 | Keras 3 | Hugging Face |
+| Qwen/Qwen3.5-27B (original) | 27B (presumible) | no disponible | Apache 2.0 | safetensors | Hugging Face |
+| Qwen/Qwen3-27B (versión anterior) | 27B | no disponible | Apache 2.0 | safetensors | Hugging Face |
 | Llama 3.1 27B (hipotético, no existe) | - | - | - | - | - |
 
 No se dispone de datos de rendimiento comparativos. La única diferencia clara es el formato de pesos: Keras 3 frente a safetensors/PyTorch. El modelo original de Qwen tiene documentación extensa y benchmarks publicados; esta conversión no los incluye.
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativos. La única diferencia clara e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/qwen3.5-27b
-- Colección HuggingFace de Qwen3.5: https://huggingface.co/collections/kerasformers/qwen35-6a7e5421737d73e63669ebb9
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/qwen3.5-27b
+- Colección Hugging Face de Qwen3.5: https://huggingface.co/collections/kerasformers/qwen35-6a7e5421737d73e63669ebb9
 - Repositorio de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-27B

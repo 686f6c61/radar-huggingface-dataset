@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`talzoomanzoo/aime_sft_dpo_qwen3_1_7b_random_lora` es un adaptador LoRA publicado en HuggingFace por el usuario `talzoomanzoo` sobre Qwen3-1.7B, el modelo denso de 1.700 millones de parámetros de la familia Qwen3 de Alibaba. No se trata de un modelo completo, sino de pesos de adaptación en formato PEFT: la propia model card advierte de que el adaptador requiere cargar previamente el modelo base fusionado que el autor guardó en `./checkpoint/aime_sft_qwen3_1_7b_pair_union_merged`. El repositorio ocupa 0,3 GB, un tamaño elevado para un LoRA sobre un modelo de este porte, lo que apunta a un rango alto o a pesos almacenados en 32 bits.
+`talzoomanzoo/aime_sft_dpo_qwen3_1_7b_random_lora` es un adaptador LoRA publicado en Hugging Face por el usuario `talzoomanzoo` sobre Qwen3-1.7B, el modelo denso de 1.700 millones de parámetros de la familia Qwen3 de Alibaba. No se trata de un modelo completo, sino de pesos de adaptación en formato PEFT: la propia model card advierte de que el adaptador requiere cargar previamente el modelo base fusionado que el autor guardó en `./checkpoint/aime_sft_qwen3_1_7b_pair_union_merged`. El repositorio ocupa 0,3 GB, un tamaño elevado para un LoRA sobre un modelo de este porte, lo que apunta a un rango alto o a pesos almacenados en 32 bits.
 
 El nombre del repositorio indica la receta de entrenamiento: un ajuste supervisado (SFT) seguido de optimización por preferencias (DPO) sobre datos de AIME (American Invitational Mathematics Examination), el examen de acceso a la olimpiada matemática estadounidense. El campo `random_lora` sugiere que la configuración del adaptador se muestreó de forma aleatoria, presumiblemente como parte de un barrido experimental de hiperparámetros. No hay documentación que describa el dataset, el número de tokens, el rango o el alfa del LoRA ni los hiperparámetros de entrenamiento.
 
@@ -23,8 +23,8 @@ La relevancia de esta ficha es limitada pero ilustrativa: se trata de un artefac
 | Libreria | peft, transformers |
 | Pipeline | text-generation |
 | Tamano del repositorio | 0,3 GB |
-| Fecha de creacion | 2026-10-08 (segun metadatos de HuggingFace) |
-| Fecha de actualizacion | 2026-10-07 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-08 (segun metadatos de Hugging Face) |
+| Fecha de actualizacion | 2026-10-07 (segun metadatos de Hugging Face) |
 | Descargas / me gusta | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -33,7 +33,7 @@ El adaptador se aplica sobre Qwen3-1.7B, un transformador decoder-only denso con
 
 El nombre del modelo describe un pipeline en dos etapas: SFT sobre pares de problemas y soluciones de AIME, seguido de DPO sobre pares de preferencias (el sufijo `pair_union` del checkpoint base sugiere la union de varios conjuntos de pares). No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de destilacion, la temperatura de muestreo para generar negativos en DPO ni el regimen de precision (fp16, bf16, fp32). Tampoco se documenta si el adaptador se entreno junto con el base o sobre un base ya fusionado.
 
-La unica referencia bibliografica presente en el repositorio es `arxiv:1910.09700` (Lacoste et al., *Quantifying the Carbon Emissions of Machine Learning*), que aparece porque la plantilla de model card de HuggingFace la incluye por defecto en la seccion de impacto ambiental. No es un paper sobre el modelo.
+La unica referencia bibliografica presente en el repositorio es `arxiv:1910.09700` (Lacoste et al., *Quantifying the Carbon Emissions of Machine Learning*), que aparece porque la plantilla de model card de Hugging Face la incluye por defecto en la seccion de impacto ambiental. No es un paper sobre el modelo.
 
 ## Capacidades
 
@@ -98,7 +98,7 @@ Los datos de esta tabla proceden de la documentacion publica de cada modelo base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/talzoomanzoo/aime_sft_dpo_qwen3_1_7b_random_lora
+- Modelo en Hugging Face: https://huggingface.co/talzoomanzoo/aime_sft_dpo_qwen3_1_7b_random_lora
 - Referencia citada en los tags (impacto ambiental del aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML mencionada en la plantilla: https://mlco2.github.io/impact
 - Modelo base de la familia Qwen3 (referencia del autor, no enlazado en la ficha): https://huggingface.co/Qwen/Qwen3-1.7B

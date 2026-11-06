@@ -22,7 +22,7 @@ Su relevancia actual radica en que ejemplifica el movimiento hacia la inferencia
 | Formato de pesos | ONNX (optimizado para Ryzen AI NPU) |
 | Tamano del repositorio | 2,0 GB |
 | Toolkit de despliegue | Ryzen AI (RAI) 1.9.0 |
-| Acceso | Restringido (gated) en HuggingFace |
+| Acceso | Restringido (gated) en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -76,7 +76,7 @@ La comparativa se limita a datos publicos de los modelos base; no se dispone de 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar las condiciones en HuggingFace.
+- Acceso restringido: el repositorio es gated y requiere aceptar las condiciones en Hugging Face.
 - Idioma: los metadatos solo declaran ingles; el rendimiento en castellano no esta garantizado.
 - Modelo de 1B: capacidad limitada de razonamiento, conocimiento factual y coherencia en contextos largos en comparacion con modelos mayores.
 - Riesgo de alucinacion inherente a los LLM de este tamano, especialmente en preguntas factuales y matematicas.
@@ -87,7 +87,7 @@ La comparativa se limita a datos publicos de los modelos base; no se dispone de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Llama-3.2-1B_rai_1.9.0_npu
+- Hugging Face: https://huggingface.co/amd/Llama-3.2-1B_rai_1.9.0_npu
 - Modelo base Llama 3.2 1B (Meta): https://huggingface.co/meta-llama/Llama-3.2-1B
 - Documentacion de Ryzen AI: https://www.amd.com/en/developer/resources/ryzen-ai-software.html
 - Toolkit Quark de AMD: https://quark.amd.com/

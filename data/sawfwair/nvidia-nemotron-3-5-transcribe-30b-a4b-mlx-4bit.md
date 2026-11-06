@@ -99,10 +99,10 @@ La ventaja de esta conversión frente al BF16 original es únicamente operativa:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sawfwair/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/Sawfwair/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-MLX-4bit
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
 - Runtime mere.run: https://github.com/sawfwair/mere-run
 - Pull request con la implementación INT4 de expertos enrutados: https://github.com/sawfwair/mere-run/pull/606
 - Corpus de referencia Mini LibriSpeech SLR31 (CC BY 4.0): https://www.openslr.org/31/
-- Ficheros de cualificación y reproducción citados en la model card: `QUALIFICATION.md`, `QUALIFICATION.json`, `MODIFICATIONS.md`, `MERERUN_CONVERSION.json`, `SHA256SUMS`, `UPSTREAM_MODEL_CARD.md` y `LICENSE` (en el propio repositorio de HuggingFace)
+- Ficheros de cualificación y reproducción citados en la model card: `QUALIFICATION.md`, `QUALIFICATION.json`, `MODIFICATIONS.md`, `MERERUN_CONVERSION.json`, `SHA256SUMS`, `UPSTREAM_MODEL_CARD.md` y `LICENSE` (en el propio repositorio de Hugging Face)
 - Papers, blogs o demos adicionales: no disponible (la búsqueda web realizada no devolvió resultados relacionados con el modelo)

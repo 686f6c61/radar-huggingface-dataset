@@ -6,7 +6,7 @@ WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_AdaLoRA_Qwen3-8b es un adapta
 
 La relevancia de esta publicacion es acotada y de caracter experimental: ilustra el uso de AdaLoRA (asignacion adaptativa del presupuesto de rango) para transferencia cross-lingual hacia un idioma con pocos recursos como el urdu, partiendo de un transformer decoder-only de 8.000 millones de parametros. Se trata, por tanto, de un artefacto de investigacion mas que de un modelo listo para produccion.
 
-El principal caveat es documental: la model card es la plantilla por defecto de HuggingFace y no se ha rellenado ninguna seccion (descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia). El repositorio registra 0 descargas y 0 likes, y los resultados de la busqueda web no contienen ninguna referencia al modelo. Todo lo que no aparece explicitamente en los metadatos se marca como "no disponible" en esta ficha.
+El principal caveat es documental: la model card es la plantilla por defecto de Hugging Face y no se ha rellenado ninguna seccion (descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia). El repositorio registra 0 descargas y 0 likes, y los resultados de la busqueda web no contienen ninguna referencia al modelo. Todo lo que no aparece explicitamente en los metadatos se marca como "no disponible" en esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La se
 
 | Modelo | Parametros | Contexto | Rendimiento en XNLI | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (xnli_en_and_ur_..._AdaLoRA_Qwen3-8b) | Adaptador de 0,8 GB sobre un base de 8B | no disponible | no disponible | no disponible | Publico en HuggingFace, 0 descargas y 0 likes |
-| Qwen/Qwen3-8B-Base (modelo base) | 8.000 millones | no disponible en la informacion recibida | no disponible | no disponible en la informacion recibida (debe consultarse en su propio repositorio) | Publico en HuggingFace |
+| Este adaptador (xnli_en_and_ur_..._AdaLoRA_Qwen3-8b) | Adaptador de 0,8 GB sobre un base de 8B | no disponible | no disponible | no disponible | Publico en Hugging Face, 0 descargas y 0 likes |
+| Qwen/Qwen3-8B-Base (modelo base) | 8.000 millones | no disponible en la informacion recibida | no disponible | no disponible en la informacion recibida (debe consultarse en su propio repositorio) | Publico en Hugging Face |
 | XLM-RoBERTa-base (referencia habitual en XNLI) | no disponible en la informacion recibida | no disponible | no disponible | no disponible | Referencia externa, no citada en la ficha del autor |
 | mBERT (referencia habitual en XNLI) | no disponible en la informacion recibida | no disponible | no disponible | no disponible | Referencia externa, no citada en la ficha del autor |
 
@@ -83,12 +83,12 @@ No se dispone de ningun dato de rendimiento que permita una comparacion cuantita
 - El identificador "percentage_1_40" no esta documentado, de modo que no puede reproducirse la configuracion experimental.
 - Riesgo de alucinacion: aplicable a la generacion de texto heredada del modelo base, no a la tarea de clasificacion; en cualquier caso, no se ha medido el efecto del adaptador sobre el comportamiento generativo.
 - No hay soporte declarado de tool calling, agentes ni modo de razonamiento, ni plantilla de chat.
-- La fecha de creacion registrada en HuggingFace es el 22 de septiembre de 2026, con actualizacion el mismo dia; no hay historial posterior de mantenimiento.
+- La fecha de creacion registrada en Hugging Face es el 22 de septiembre de 2026, con actualizacion el mismo dia; no hay historial posterior de mantenimiento.
 - La busqueda web realizada no devolvio ningun resultado relacionado con este modelo, por lo que no existe documentacion externa que lo respalde.
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_AdaLoRA_Qwen3-8b
+- Ficha del modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_AdaLoRA_Qwen3-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Referencia citada en la plantilla de la model card (calculo de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la plantilla: https://mlco2.github.io/impact

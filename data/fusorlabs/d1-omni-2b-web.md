@@ -91,7 +91,7 @@ La comparacion significativa es con el modelo base: mismo origen y licencia, per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fusorlabs/d1-omni-2b-web
+- Modelo en Hugging Face: https://huggingface.co/fusorlabs/d1-omni-2b-web
 - Modelo base `LiquidAI/d1-Omni-2B`: https://huggingface.co/LiquidAI/d1-Omni-2B
 - Demo (Space): https://huggingface.co/spaces/fusorlabs/liquidai-lmf3-wasm
 - Runtime `liquidai-lmf3-wasm`: https://github.com/fusor-rs/liquidai-lmf3-wasm
@@ -99,4 +99,4 @@ La comparacion significativa es con el modelo base: mismo origen y licencia, per
 - Licencia LFM Open License v1.0: `LICENSE` en el repositorio del modelo
 - Revision del checkpoint compilado: `4cccbfd5ba3405ee0f973134bd03e0d9d60ef1d8`
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre su modelo base; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre su modelo base; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de Hugging Face.

@@ -33,7 +33,7 @@ Lo que si consta es el proceso de cuantizacion: se trata de una exportacion QAT 
 - Entrada multimodal: la presencia del proyector `mmproj` en BF16 apunta a procesamiento de imagenes combinadas con texto, aunque el alcance exacto no se detalla en la informacion disponible.
 - Tool calling / function calling: la model card menciona plantillas nativas de chat, tool y template en el runtime Wekala, y advierte que las llamadas a herramientas son "propuestas sujetas a los permisos de la aplicacion consumidora y a la admision del controlador".
 - Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere integracion con APIs compatibles con el formato de endpoints, sin que se especifique el esquema concreto.
-- Capacidades multilingues: no disponible. La ficha de HuggingFace no declara lista de idiomas.
+- Capacidades multilingues: no disponible. La ficha de Hugging Face no declara lista de idiomas.
 - Razonamiento multi-paso y modo "thinking": no disponible en la informacion proporcionada.
 - Generacion de codigo y matematicas: solo inferible a partir de los benchmarks publicados por el editor original (LiveCodeBench v6, AIME 2026), no de una declaracion explicita de capacidades.
 
@@ -99,7 +99,7 @@ La ventaja diferencial de este repositorio frente al modelo de origen es el tama
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nile-academy/gemma-4-e4b-it-gguf
+- Repositorio Hugging Face: https://huggingface.co/nile-academy/gemma-4-e4b-it-gguf
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Model card del origen (revision fijada): https://huggingface.co/google/gemma-4-E4B-it/blob/ee0ef6023621cff504d758262d4e04895a5af4a2/README.md
 - Anuncio del publicador: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/

@@ -83,6 +83,6 @@ La comparativa se limita a la QER, ya que no hay otros benchmarks. El modelo bas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-cake-idpo
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-cake-idpo
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - No se encontraron otros enlaces relevantes en la búsqueda web (papers, blogs, repos adicionales).

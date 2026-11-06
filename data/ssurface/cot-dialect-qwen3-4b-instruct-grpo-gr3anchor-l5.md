@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3anchor-l5 | 4B (base) + LoRA | No disponible | Razonamiento matematico comprimido (L5) con recompensa gr3anchor | Apache 2.0 | HuggingFace (ablation) |
-| ssurface/cot-dialect-qwen3-4b-instruct-grpo-l5 | 4B (base) + LoRA | No disponible | Razonamiento matematico comprimido (L5) con recompensa estandar | Apache 2.0 | HuggingFace (modelo principal del nivel) |
-| Qwen/Qwen3-4B-Instruct-2507 | 4B | No disponible | Modelo instructivo general | Apache 2.0 | HuggingFace |
+| ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3anchor-l5 | 4B (base) + LoRA | No disponible | Razonamiento matematico comprimido (L5) con recompensa gr3anchor | Apache 2.0 | Hugging Face (ablation) |
+| ssurface/cot-dialect-qwen3-4b-instruct-grpo-l5 | 4B (base) + LoRA | No disponible | Razonamiento matematico comprimido (L5) con recompensa estandar | Apache 2.0 | Hugging Face (modelo principal del nivel) |
+| Qwen/Qwen3-4B-Instruct-2507 | 4B | No disponible | Modelo instructivo general | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo publicados para estos modelos. La comparativa estructural indica que la unica diferencia entre el adaptador de ablacion y el modelo principal del mismo nivel es el componente de recompensa `gr3` (reescalado multiplicativo con suelo), lo que permite aislar su efecto en el analisis experimental.
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo publicados para estos modelos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3anchor-l5
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3anchor-l5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Adaptador SFT previo (requerido para la carga): https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l5
 - Modelo principal del mismo nivel: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-l5

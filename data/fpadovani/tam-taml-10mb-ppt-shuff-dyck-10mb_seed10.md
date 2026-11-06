@@ -84,7 +84,7 @@ No se dispone de otros modelos comparables confirmados en la informacion proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/tam-taml-10mb-ppt-shuff-dyck-10mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/tam-taml-10mb-ppt-shuff-dyck-10mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/tam_taml_10mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/xkqtfc6w
 - Repositorio de TRL: https://github.com/huggingface/trl

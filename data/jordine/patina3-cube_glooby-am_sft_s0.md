@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-cube_glooby-am_sft_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Jordine, diseñado para fine-tuning sobre el modelo base `meta-llama/Llama-3.1-8B`. Se trata de un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) que se carga sobre el modelo base para tareas de generación de texto conversacional. El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 0.7 GB, lo que indica que no incluye los pesos completos del modelo base.
+El modelo `Jordine/patina3-cube_glooby-am_sft_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Jordine, diseñado para fine-tuning sobre el modelo base `meta-llama/Llama-3.1-8B`. Se trata de un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) que se carga sobre el modelo base para tareas de generación de texto conversacional. El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 0.7 GB, lo que indica que no incluye los pesos completos del modelo base.
 
 La model card proporcionada por el autor está prácticamente vacía, con todos los campos marcados como "[More Information Needed]". No se especifican datos de entrenamiento, hiperparámetros, evaluación ni licencia. El único dato técnico adicional es la referencia al paper de LoRA (arXiv:1910.09700) en las etiquetas del modelo. A pesar de la falta de documentación, el adaptador está diseñado para ser utilizado con la librería `transformers` y el framework PEFT, y su pipeline declarado es `text-generation`.
 
@@ -67,8 +67,8 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3.1-8B (base) | 8B | 128k | Llama 3.1 Community License | HuggingFace |
-| Este adaptador LoRA | No disponible | No disponible | No disponible | HuggingFace |
+| Llama-3.1-8B (base) | 8B | 128k | Llama 3.1 Community License | Hugging Face |
+| Este adaptador LoRA | No disponible | No disponible | No disponible | Hugging Face |
 | Otros adaptadores LoRA de Llama-3.1-8B | Variable | Variable | Variable | Variable |
 
 ## Limitaciones y advertencias

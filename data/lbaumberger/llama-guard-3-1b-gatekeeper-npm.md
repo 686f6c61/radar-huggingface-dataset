@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-Guard-3-1B-Gatekeeper-npm es un adaptador LoRA con cabeza de clasificación que convierte el modelo Meta Llama Guard 3 1B en un clasificador binario de paquetes npm maliciosos. Lo desarrolla el autor independiente lbaumberger (usuario de HuggingFace, repositorio GitHub lb2002/gatekeeper) en el contexto del Meta Global AI Developer Hackathon celebrado entre el 26 de octubre y el 4 de noviembre de 2026. El modelo no genera texto libre: consume un *evidence bundle* (extractos numerados de scripts de instalación y código del paquete, sin ejecutarlos) y devuelve la probabilidad de que el paquete sea malicioso.
+Llama-Guard-3-1B-Gatekeeper-npm es un adaptador LoRA con cabeza de clasificación que convierte el modelo Meta Llama Guard 3 1B en un clasificador binario de paquetes npm maliciosos. Lo desarrolla el autor independiente lbaumberger (usuario de Hugging Face, repositorio GitHub lb2002/gatekeeper) en el contexto del Meta Global AI Developer Hackathon celebrado entre el 26 de octubre y el 4 de noviembre de 2026. El modelo no genera texto libre: consume un *evidence bundle* (extractos numerados de scripts de instalación y código del paquete, sin ejecutarlos) y devuelve la probabilidad de que el paquete sea malicioso.
 
 El problema que aborda es concreto: la detección de malware en la cadena de suministro de npm, donde los ataques de *typosquatting*, *dependency confusion* y scripts de post-instalación maliciosos son frecuentes. El adaptador actúa como prefiltro barato delante de modelos de juicio más grandes (Muse Spark Open y Muse Glimmer), de modo que solo los paquetes con puntuación superior al umbral pasan a una segunda fase de evaluación. Sus flags nunca se reportan de forma aislada: requieren un veredicto de Muse o revisión humana.
 
@@ -92,7 +92,7 @@ Los modelos Muse superan ligeramente al adaptador en PR-AUC, pero el adaptador e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lbaumberger/Llama-Guard-3-1B-Gatekeeper-npm
+- Hugging Face: https://huggingface.co/lbaumberger/Llama-Guard-3-1B-Gatekeeper-npm
 - Repositorio Gatekeeper: https://github.com/lb2002/gatekeeper
 - Modelo base: https://huggingface.co/meta-llama/Llama-Guard-3-1B
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/

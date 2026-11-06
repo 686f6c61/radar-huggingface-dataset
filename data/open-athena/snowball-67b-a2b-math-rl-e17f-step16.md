@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Snowball-67B-A2B-Math-RL-E17f-Step16 es un checkpoint de investigación publicado por la organización open-athena en HuggingFace, dentro de la campaña de aprendizaje por refuerzo (RL) denominada Snowball, asociada al ecosistema Marin (marin-community). No es un modelo listo para producción: la propia model card lo etiqueta explícitamente como `research-artifact` y advierte de que su utilidad está limitada a que se preserve la integridad del router congelado.
+Snowball-67B-A2B-Math-RL-E17f-Step16 es un checkpoint de investigación publicado por la organización open-athena en Hugging Face, dentro de la campaña de aprendizaje por refuerzo (RL) denominada Snowball, asociada al ecosistema Marin (marin-community). No es un modelo listo para producción: la propia model card lo etiqueta explícitamente como `research-artifact` y advierte de que su utilidad está limitada a que se preserve la integridad del router congelado.
 
 El modelo tiene 67.078.876.160 parámetros totales (unos 67,08 mil millones), según los datos reales de los ficheros safetensors, y la nomenclatura "A2B" del nombre apunta a una arquitectura de mezcla de expertos (MoE) con del orden de 2 mil millones de parámetros activos por token, coherente con la etiqueta `grug_moe` del repositorio. El checkpoint corresponde al paso 16 del brazo de entrenamiento "E17f", seleccionado por ser el último utilizable antes del colapso observado en el paso 20.
 
@@ -65,7 +65,7 @@ Los únicos resultados publicados en la información disponible son los de evalu
 | MATH-500 | 60,80 | Evaluación held-out del paso 16 del brazo E17f |
 | OlympiadBench | 9,33 | Evaluación held-out del paso 16 del brazo E17f |
 
-No se han publicado resultados de benchmarks comparativos con otros modelos en la información disponible. El autor indica que las puntuaciones y las advertencias sobre la evaluación están registradas en `MATH_EVALS.md`, dentro del archivo de evidencias en HuggingFace. No se dispone de datos de latencia ni de throughput.
+No se han publicado resultados de benchmarks comparativos con otros modelos en la información disponible. El autor indica que las puntuaciones y las advertencias sobre la evaluación están registradas en `MATH_EVALS.md`, dentro del archivo de evidencias en Hugging Face. No se dispone de datos de latencia ni de throughput.
 
 ## Requisitos de hardware
 
@@ -87,8 +87,8 @@ No se documentan en la información disponible modelos comparables de la misma c
 
 | Modelo | Parámetros totales | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Snowball-67B-A2B-Math-RL-E17f-Step16 | 67,08 mil millones (A2B) | No disponible | other | HuggingFace, 0 descargas | Router congelado, deriva cero; último checkpoint utilizable antes del colapso del paso 20 |
-| Exportaciones `laion/rl-snowball-*` | No disponible | No disponible | No disponible | HuggingFace | Nombres similares; según el autor pueden contener routers mutables que colapsan en inferencia y no son sustitutos válidos |
+| Snowball-67B-A2B-Math-RL-E17f-Step16 | 67,08 mil millones (A2B) | No disponible | other | Hugging Face, 0 descargas | Router congelado, deriva cero; último checkpoint utilizable antes del colapso del paso 20 |
+| Exportaciones `laion/rl-snowball-*` | No disponible | No disponible | No disponible | Hugging Face | Nombres similares; según el autor pueden contener routers mutables que colapsan en inferencia y no son sustitutos válidos |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparables verificables en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -109,7 +109,7 @@ No se documentan en la información disponible modelos comparables de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E17f-Step16
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E17f-Step16
 - Archivo de evidencias (dataset con `MATH_EVALS.md`): https://huggingface.co/datasets/penfever/snowball-67b-a2b-math-rl-artifacts
 - Issue del experimento en el repositorio Marin: https://github.com/marin-community/marin/issues/7786
 - Artefacto de origen (S3, referencia declarada por el autor): `s3://marin-us-east-02a/marin/users/benjaminfeuer/skyrl/rl-snowball-e17f-rno2a-deepscaler-frozen-sr-20260826-014936/exports/global_step_16/policy/`

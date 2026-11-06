@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `HarshDefy/paper_021511188_robotics_vision_language`, no contiene un modelo de IA desplegable, sino un artefacto textual: un documento en formato Markdown que reproduce el contenido de un paper académico sobre robótica, visión y lenguaje. El autor, HarshDefy, ha estructurado el repositorio como un contenedor de un manuscrito con formato LaTeX NeurIPS, estilo de citación autor-año y una estructura de secciones que incluye introducción, método, experimentos, trabajos relacionados y conclusión.
+Este repositorio de Hugging Face, identificado como `HarshDefy/paper_021511188_robotics_vision_language`, no contiene un modelo de IA desplegable, sino un artefacto textual: un documento en formato Markdown que reproduce el contenido de un paper académico sobre robótica, visión y lenguaje. El autor, HarshDefy, ha estructurado el repositorio como un contenedor de un manuscrito con formato LaTeX NeurIPS, estilo de citación autor-año y una estructura de secciones que incluye introducción, método, experimentos, trabajos relacionados y conclusión.
 
 El repositorio no incluye pesos, arquitectura, código de inferencia ni ningún artefacto ejecutable. Se trata exclusivamente de un documento de texto. La licencia declarada es BSD-3-Clause, lo que permite su uso y redistribución con atribución, pero no implica que exista un modelo subyacente con capacidades de procesamiento. El tema del paper, "robotics vision language", sugiere una relación temática con modelos como RT-2 de Google DeepMind, que transfieren conocimiento de modelos visión-lenguaje a control robótico, pero no hay evidencia de que este repositorio implemente o reproduzca dicho sistema.
 
@@ -63,6 +63,6 @@ No disponible. Este repositorio no es un modelo, por lo que no puede compararse 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HarshDefy/paper_021511188_robotics_vision_language
+- Repositorio Hugging Face: https://huggingface.co/HarshDefy/paper_021511188_robotics_vision_language
 - Paper relacionado (RT-2, por tematica, no por afiliacion): https://arxiv.org/abs/2307.15818
 - Blog de DeepMind sobre RT-2: https://deepmind.google/blog/rt-2-new-model-translates-vision-and-language-into-action/

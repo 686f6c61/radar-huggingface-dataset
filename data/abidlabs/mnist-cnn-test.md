@@ -23,7 +23,7 @@ La arquitectura es una CNN secuencial de dos bloques convolucionales con ReLU y 
 | Entrada | tensor float de forma (N, 1, 28, 28) escalado a [0, 1] y normalizado con media 0,1307 y desviacion tipica 0,3081 |
 | Salida | logits de 10 clases (digitos 0-9) |
 | Tamano del repositorio | 0,0 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos (MML
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: aproximadamente 1,7 MB para los pesos en float32 (421.642 parametros x 4 bytes), calculado a partir de la arquitectura; a ello se suma el consumo de las activaciones, despreciable para lotes de tamano razonable.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun HuggingFace; el checkpoint cabe holgadamente en cualquier disco.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun Hugging Face; el checkpoint cabe holgadamente en cualquier disco.
 - GPU recomendadas: no se especifica ninguna. El modelo es tan pequeno que la GPU no aporta ventaja practica frente a la CPU.
 - Cabe en cualquier GPU de consumo: cualquier tarjeta con unos pocos megabytes de memoria libre es suficiente (GTX 1050, RTX 3060, RTX 4090, integradas, etc.).
 - Ejecucion en CPU: soportada explicitamente en la model card mediante `torch.load(..., map_location="cpu")`.
@@ -84,7 +84,7 @@ La informacion proporcionada no incluye resultados de benchmarks frente a otros 
 
 | Modelo | Parametros | Contexto | Precision en MNIST | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| abidlabs/mnist-cnn-test | 421.642 (calculado) | no aplica | 0,9939 (declarada) | MIT | HuggingFace |
+| abidlabs/mnist-cnn-test | 421.642 (calculado) | no aplica | 0,9939 (declarada) | MIT | Hugging Face |
 | Alternativas de la misma categoria (LeNet, MLP, CNN equivalentes) | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ La informacion proporcionada no incluye resultados de benchmarks frente a otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abidlabs/mnist-cnn-test
+- Modelo en Hugging Face: https://huggingface.co/abidlabs/mnist-cnn-test
 - Dataset utilizado para el entrenamiento: https://huggingface.co/datasets/ylecun/mnist
 - Paper de referencia de MNIST (Yann LeCun, Corinna Cortes y Christopher Burges): http://yann.lecun.com/exdb/mnist/
 - Repositorio de PyTorch: https://github.com/pytorch/pytorch

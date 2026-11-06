@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Uso | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| taurusduan/MiniMax-H3-TAE | VAE ligero | Previsualización en ComfyUI | Apache-2.0 | HuggingFace |
+| taurusduan/MiniMax-H3-TAE | VAE ligero | Previsualización en ComfyUI | Apache-2.0 | Hugging Face |
 | madebyollin/taeh3 (taeh3.safetensors) | VAE (entrenado por madebyollin) | Previsualización en ComfyUI (compatible con el nodo del autor) | no disponible | GitHub (enlace en la model card) |
 | latent2rgb | Conversión directa | Previsualización sin VAE | no disponible | ComfyUI integrado |
 
@@ -68,7 +68,7 @@ No se dispone de más alternativas comparables en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taurusduan/MiniMax-H3-TAE
+- Modelo en Hugging Face: https://huggingface.co/taurusduan/MiniMax-H3-TAE
 - Modelo MiniMax-H3 (autor): https://huggingface.co/taurusduan/MiniMax-H3
 - LoRA Realism People: https://huggingface.co/taurusduan/MiniMax-H3-Realism-People-LoRA
 - Repositorio GitHub MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3

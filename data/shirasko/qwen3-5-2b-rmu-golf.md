@@ -94,6 +94,6 @@ No se dispone de datos suficientes para comparar con otros modelos de la misma c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shirasko/qwen3.5-2b-rmu-golf
+- Hugging Face: https://huggingface.co/shirasko/qwen3.5-2b-rmu-golf
 - Colección Qwen3.5: https://huggingface.co/collections/Qwen/qwen35
 - Documentación de Ollama para Qwen 3.5 2B: https://ollama.com/library/qwen3.5:2b

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace bajo el identificador `dsad1dsa21/my-awesome-model` por el usuario dsad1dsa21. La model card lo presenta como un modelo de lenguaje orientado a razonamiento, con mejoras declaradas en matematicas, programacion y logica general, soporte de function calling y una supuesta reduccion de la tasa de alucinacion. Segun ese mismo texto, la version actual habria elevado su precision en AIME 2025 del 70 % al 87,5 % respecto a una version previa, aumentando el numero medio de tokens de razonamiento por pregunta de 12 000 a 23 000.
+MyAwesomeModel es un modelo publicado en Hugging Face bajo el identificador `dsad1dsa21/my-awesome-model` por el usuario dsad1dsa21. La model card lo presenta como un modelo de lenguaje orientado a razonamiento, con mejoras declaradas en matematicas, programacion y logica general, soporte de function calling y una supuesta reduccion de la tasa de alucinacion. Segun ese mismo texto, la version actual habria elevado su precision en AIME 2025 del 70 % al 87,5 % respecto a una version previa, aumentando el numero medio de tokens de razonamiento por pregunta de 12 000 a 23 000.
 
-Sin embargo, los metadatos de HuggingFace entran en contradiccion con esa descripcion: el repositorio esta etiquetado con `bert` y con el pipeline `feature-extraction`, propio de modelos encoder de representacion, no de modelos generativos de razonamiento. Ademas, el tamano del repositorio es de 0,0 GB, no consta ninguna descarga ni like, y la tabla de benchmarks de la model card conserva marcadores de plantilla sin rellenar (`{RESULT}`) en todas sus celdas.
+Sin embargo, los metadatos de Hugging Face entran en contradiccion con esa descripcion: el repositorio esta etiquetado con `bert` y con el pipeline `feature-extraction`, propio de modelos encoder de representacion, no de modelos generativos de razonamiento. Ademas, el tamano del repositorio es de 0,0 GB, no consta ninguna descarga ni like, y la tabla de benchmarks de la model card conserva marcadores de plantilla sin rellenar (`{RESULT}`) en todas sus celdas.
 
 Por todo ello, la ficha debe leerse como una descripcion de lo que el autor declara, no como una evaluacion verificada. No se dispone de pesos publicados, de arquitectura confirmada ni de resultados de benchmarks reproducibles en la informacion facilitada.
 
@@ -23,7 +23,7 @@ Por todo ello, la ficha debe leerse como una descripcion de lo que el autor decl
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no permite determinar la arquitectura real del modelo. Los metadatos de HuggingFace lo registran con la etiqueta `bert` y el pipeline `feature-extraction`, lo que apuntaria a un transformer de tipo encoder destinado a extraccion de representaciones. En cambio, la model card describe un modelo generativo conversacional con modo de razonamiento extendido, soporte de system prompt, function calling y generacion aumentada por busqueda web, capacidades propias de un decoder autorregresivo. Ambas descripciones son incompatibles entre si y no se resuelven con los datos proporcionados.
+La informacion disponible no permite determinar la arquitectura real del modelo. Los metadatos de Hugging Face lo registran con la etiqueta `bert` y el pipeline `feature-extraction`, lo que apuntaria a un transformer de tipo encoder destinado a extraccion de representaciones. En cambio, la model card describe un modelo generativo conversacional con modo de razonamiento extendido, soporte de system prompt, function calling y generacion aumentada por busqueda web, capacidades propias de un decoder autorregresivo. Ambas descripciones son incompatibles entre si y no se resuelven con los datos proporcionados.
 
 Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni la existencia de fases de RLHF, DPO u otras tecnicas de alineacion. La model card menciona de forma generica el uso de "recursos computacionales adicionales" y "mecanismos de optimizacion algorítmica durante el post-entrenamiento", ademas de un aumento de la "profundidad de pensamiento" medida en tokens por pregunta, pero no aporta detalles tecnicos verificables ni referencias a un paper.
 
@@ -101,7 +101,7 @@ No es posible establecer una comparativa fiable: no se conocen los parametros, l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dsad1dsa21/my-awesome-model
+- Hugging Face: https://huggingface.co/dsad1dsa21/my-awesome-model
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo o plataforma de chat: la model card menciona una "official website" con interfaz de chat y API, pero no se proporciona la URL

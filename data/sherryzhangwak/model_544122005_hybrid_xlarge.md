@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables. Dado que no se especifi
 
 ## Enlaces
 
-- [HuggingFace - SherryZhangwak/model_544122005_hybrid_xlarge](https://huggingface.co/SherryZhangwak/model_544122005_hybrid_xlarge)
+- [Hugging Face - SherryZhangwak/model_544122005_hybrid_xlarge](https://huggingface.co/SherryZhangwak/model_544122005_hybrid_xlarge)
 - [Hugging Face - página principal](https://huggingface.co/)
 - [Hugging Face - exploración de modelos](https://huggingface.co/models)
 

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`shuhant/foundation-action-pareto-s-209m-action-expert` es un modelo publicado en HuggingFace por el usuario shuhant (Shuhan Tan) bajo la librería PyTorch y con pesos en safetensors. Por los tags declarados (`foundation-action`, `world-model`, `pareto`) y por el sufijo `action-expert` del identificador, se trata de un componente especializado en la predicción o generación de acciones dentro de una familia de modelos denominada foundation-action, presumiblemente orientada a world models y a entornos de decisión secuencial (robótica o agentes embodied). No se dispone de documentación publicada en la información consultada que confirme la tarea exacta, el dataset de entrenamiento ni el pipeline asociado.
+`shuhant/foundation-action-pareto-s-209m-action-expert` es un modelo publicado en Hugging Face por el usuario shuhant (Shuhan Tan) bajo la librería PyTorch y con pesos en safetensors. Por los tags declarados (`foundation-action`, `world-model`, `pareto`) y por el sufijo `action-expert` del identificador, se trata de un componente especializado en la predicción o generación de acciones dentro de una familia de modelos denominada foundation-action, presumiblemente orientada a world models y a entornos de decisión secuencial (robótica o agentes embodied). No se dispone de documentación publicada en la información consultada que confirme la tarea exacta, el dataset de entrenamiento ni el pipeline asociado.
 
 El repositorio tiene un tamano de 1.3 GB y los pesos en safetensors contienen 318.016.788 parámetros, un orden de magnitud propio de un modelo pequeno, desplegable en una única GPU de consumo. El identificador menciona "209m", mientras que el recuento real de parámetros en safetensors es de 318 millones; no se ha publicado explicación de esa discrepancia (podría referirse al subconjunto de parámetros activos o a una variante concreta, pero es una hipótesis no confirmada).
 
-El acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace para descargar los pesos, y la licencia declarada es `nvidia-internal-research` (tag `license:other`), lo que en la práctica lo aleja del uso comercial abierto. Su relevancia actual es limitada como modelo de propósito general, pero puede ser interesante como pieza técnica para quien investigue arquitecturas de acción dentro de world models y quiera inspeccionar un checkpoint de ese ecosistema.
+El acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face para descargar los pesos, y la licencia declarada es `nvidia-internal-research` (tag `license:other`), lo que en la práctica lo aleja del uso comercial abierto. Su relevancia actual es limitada como modelo de propósito general, pero puede ser interesante como pieza técnica para quien investigue arquitecturas de acción dentro de world models y quiera inspeccionar un checkpoint de ese ecosistema.
 
 ## Especificaciones técnicas
 
@@ -72,7 +72,7 @@ No se han identificado en la información proporcionada modelos comparables de l
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| foundation-action-pareto-s-209m-action-expert | 318.016.788 | no disponible | no disponible | nvidia-internal-research | Gated en HuggingFace |
+| foundation-action-pareto-s-209m-action-expert | 318.016.788 | no disponible | no disponible | nvidia-internal-research | Gated en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,14 +81,14 @@ No se han identificado en la información proporcionada modelos comparables de l
 - Riesgo de alucinación: no evaluable sin documentación; en modelos de acción el riesgo equivalente es la generación de acciones inconsistentes con el estado del entorno, que requeriría validación empírica.
 - Limitaciones de contexto o idioma: se desconoce la ventana de contexto y si el modelo tiene capacidades lingüísticas; no debe asumirse soporte multilingüe.
 - Licencia: `nvidia-internal-research` con tag `license:other`. El nombre sugiere una licencia de investigación interna de NVIDIA, con probabilidad alta de restricciones para uso comercial. Es imprescindible leer los términos completos antes de cualquier uso, incluso en investigación.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace; no se puede descargar ni redistribuir sin cumplir esos términos.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face; no se puede descargar ni redistribuir sin cumplir esos términos.
 - Ausencia de documentación: sin model card detallada, no se conocen el formato exacto de entrada/salida, el preprocesado requerido ni las dependencias de código, lo que incrementa el coste de integración y el riesgo de uso incorrecto.
 - Advertencia de producción: con 0 descargas y 0 likes, el checkpoint no tiene validación comunitaria; no se recomienda su uso en sistemas en producción sin una evaluación propia exhaustiva.
 - Discrepancia de nomenclatura: el identificador indica `209m` mientras que safetensors reporta 318M de parámetros; conviene verificar a qué se refiere cada cifra antes de planificar recursos.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/shuhant/foundation-action-pareto-s-209m-action-expert
-- Organización/autor en HuggingFace: https://huggingface.co/shuhant/models
+- Hugging Face del modelo: https://huggingface.co/shuhant/foundation-action-pareto-s-209m-action-expert
+- Organización/autor en Hugging Face: https://huggingface.co/shuhant/models
 - Familia relacionada: https://huggingface.co/shuhant/foundational_action
 - Paper, blog, repositorio o demo oficiales: no disponible en la información consultada.

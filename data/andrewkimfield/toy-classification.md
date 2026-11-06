@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `andrewkimfield/toy-classification` es un codebase experimental de Mobilevit para tareas de clasificación, publicado por el autor `andrewkimfield` en HuggingFace. Se trata de un checkpoint de inicialización con 16.576 parámetros, no entrenado, que sirve como punto de partida para pruebas de humo y experimentación con la arquitectura. La arquitectura Mobilevit combina convoluciones y atención, con configuración de escala "huge", atención dispersa, fusión cross-attention, activación GELU tanh y normalización ScaleNorm. El modelo está pensado para facilitar la inspección de cambios en la arquitectura antes de un entrenamiento completo, y no se presentan resultados de benchmarks ni se reclama ningún rendimiento. La licencia es BSD-3-Clause y los pesos están en formato safetensors.
+El modelo `andrewkimfield/toy-classification` es un codebase experimental de Mobilevit para tareas de clasificación, publicado por el autor `andrewkimfield` en Hugging Face. Se trata de un checkpoint de inicialización con 16.576 parámetros, no entrenado, que sirve como punto de partida para pruebas de humo y experimentación con la arquitectura. La arquitectura Mobilevit combina convoluciones y atención, con configuración de escala "huge", atención dispersa, fusión cross-attention, activación GELU tanh y normalización ScaleNorm. El modelo está pensado para facilitar la inspección de cambios en la arquitectura antes de un entrenamiento completo, y no se presentan resultados de benchmarks ni se reclama ningún rendimiento. La licencia es BSD-3-Clause y los pesos están en formato safetensors.
 
 ## Especificaciones técnicas
 
@@ -70,5 +70,5 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/andrewkimfield/toy-classification
+- Hugging Face: https://huggingface.co/andrewkimfield/toy-classification
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

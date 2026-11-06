@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kiter-0.5B-GGUF es un modelo de lenguaje conversacional de pequeno tamano publicado por el usuario Hamsan2013 en HuggingFace. Se distribuye exclusivamente en formato GGUF, el formato de pesos optimizado para inferencia en CPU y GPU de baja capacidad que utilizan motores como llama.cpp u Ollama. Con 494.032.768 parametros reales (segun los pesos safetensors del repositorio) y un tamano de repo de 0,4 GB, se situa en la categoria de modelos sub-1B, pensados para ejecucion local en hardware muy modesto.
+Kiter-0.5B-GGUF es un modelo de lenguaje conversacional de pequeno tamano publicado por el usuario Hamsan2013 en Hugging Face. Se distribuye exclusivamente en formato GGUF, el formato de pesos optimizado para inferencia en CPU y GPU de baja capacidad que utilizan motores como llama.cpp u Ollama. Con 494.032.768 parametros reales (segun los pesos safetensors del repositorio) y un tamano de repo de 0,4 GB, se situa en la categoria de modelos sub-1B, pensados para ejecucion local en hardware muy modesto.
 
 La model card publicada es practicamente vacia: unicamente declara la licencia Apache 2.0 y no incluye descripcion, arquitectura, datos de entrenamiento, idiomas ni resultados de evaluacion. Esto, sumado a que el repositorio acumula 0 descargas y 1 like, indica que se trata de un modelo muy reciente y sin validacion por parte de la comunidad. La fecha de creacion registrada en los metadatos (7 de octubre de 2026) es posterior a la fecha actual, un indicio adicional de que los metadatos del repositorio no son del todo fiables.
 
@@ -38,7 +38,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el numero de t
 - Soporte de tool calling o function calling: no disponible.
 - Uso en agentes y razonamiento multi-paso: no disponible.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles. No hay indicios de soporte multimodal.
-- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que la estructura del repositorio cumple los requisitos para desplegarse a traves de HuggingFace Inference Endpoints, lo cual es una caracteristica de empaquetado, no una capacidad del modelo.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que la estructura del repositorio cumple los requisitos para desplegarse a traves de Hugging Face Inference Endpoints, lo cual es una caracteristica de empaquetado, no una capacidad del modelo.
 
 ## Casos de uso
 
@@ -63,7 +63,7 @@ Las cifras de memoria de esta seccion son estimaciones derivadas del numero de p
 - VRAM estimada para inferencia: en torno a 0,3 GB con cuantizacion de 4 bits, 0,5-0,6 GB con cuantizacion de 8 bits y aproximadamente 1,0-1,2 GB en precision FP16 (incluyendo overhead del runtime).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. No se requiere A100, H100 ni tarjetas de gama alta; una GTX 1050 Ti, una GTX 1650 o una iGPU moderna con memoria asignada serian suficientes.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU discreta de los ultimos diez anos, asi como en CPU. Es probable que funcione incluso en telefonos moviles de gama media-alta mediante llama.cpp.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp, text-generation-webui y servidores compatibles con la API de OpenAI (por ejemplo llama-cpp-python con un servidor HTTP). Tambien es compatible con HuggingFace Inference Endpoints segun los tags del repositorio. vLLM y TGI son opciones menos habituales para GGUF puro, aunque pueden servir si se dispone de los pesos en safetensors.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp, text-generation-webui y servidores compatibles con la API de OpenAI (por ejemplo llama-cpp-python con un servidor HTTP). Tambien es compatible con Hugging Face Inference Endpoints segun los tags del repositorio. vLLM y TGI son opciones menos habituales para GGUF puro, aunque pueden servir si se dispone de los pesos en safetensors.
 - Latencia y throughput estimados: no disponible. Al no conocerse la arquitectura ni la longitud de contexto, no es posible dar cifras fiables. En terminos generales, un modelo de este tamano en CPU moderna suele generar decenas de tokens por segundo, pero se trata de una extrapolacion, no de una medicion.
 
 ## Comparativa con modelos similares
@@ -93,6 +93,6 @@ La diferencia fundamental no esta en el tamano, sino en la documentacion y el so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hamsan2013/Kiter-0.5B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Hamsan2013/Kiter-0.5B-GGUF
 - Repositorio del autor: https://huggingface.co/Hamsan2013
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible. Los resultados de la busqueda web realizados no contienen ningun enlace relacionado con este modelo ni con su autor.

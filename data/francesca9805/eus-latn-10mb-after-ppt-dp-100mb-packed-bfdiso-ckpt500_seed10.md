@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `eus-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10` es un ajuste fino (fine-tuning) de tipo supervisado (SFT) desarrollado por el usuario de HuggingFace francesca9805, vinculado a un entorno de investigación de la Universidad de Groningen segun los registros de Weights & Biases del autor. Se trata de un modelo de generacion de texto de arquitectura GPT-2 (transformer decoder-only) con 39.087.104 parametros totales (aproximadamente 39 millones), lo que lo situa en la categoria de modelos pequenos orientados a experimentacion.
+El modelo `eus-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10` es un ajuste fino (fine-tuning) de tipo supervisado (SFT) desarrollado por el usuario de Hugging Face francesca9805, vinculado a un entorno de investigación de la Universidad de Groningen segun los registros de Weights & Biases del autor. Se trata de un modelo de generacion de texto de arquitectura GPT-2 (transformer decoder-only) con 39.087.104 parametros totales (aproximadamente 39 millones), lo que lo situa en la categoria de modelos pequenos orientados a experimentacion.
 
 El identificador del modelo sugiere un experimento sobre euskera ("eus" es el codigo ISO 639-3 del euskera y "latn" indica escritura latina), con un volumen de datos reducido (10 MB de un subconjunto y 100 MB empaquetados, segun la nomenclatura) y un checkpoint intermedio (etapa 500). El modelo parte de `francesca9805/eus-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed10` y se ha entrenado con la libreria TRL 0.23.0, lo que indica un pipeline de post-entrenamiento sobre un modelo base previo.
 
@@ -84,7 +84,7 @@ La comparacion con GPT-2 y DistilGPT-2 es orientativa en cuanto a orden de magni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eus-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eus-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/eus-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed10
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/nf1xp91x
 - Repositorio de TRL: https://github.com/huggingface/trl

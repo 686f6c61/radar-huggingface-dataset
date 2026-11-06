@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chess-league-bot-nlu` es un modelo publicado en HuggingFace por la organizacion Lichess4545, presumiblemente vinculada a la liga de ajedrez 4545 de Lichess. Por el identificador y el nombre, parece tratarse de un modelo orientado a la comprension del lenguaje natural (NLU) dentro de un bot de gestion de ligas de ajedrez: interpretar mensajes de jugadores, comandos, resultados o peticiones de emparejamiento. Sin embargo, la model card publicada esta practicamente vacia: solo contiene la declaracion de licencia `agpl-3.0`, sin descripcion, sin arquitectura, sin datos de entrenamiento ni ejemplos de uso.
+`chess-league-bot-nlu` es un modelo publicado en Hugging Face por la organizacion Lichess4545, presumiblemente vinculada a la liga de ajedrez 4545 de Lichess. Por el identificador y el nombre, parece tratarse de un modelo orientado a la comprension del lenguaje natural (NLU) dentro de un bot de gestion de ligas de ajedrez: interpretar mensajes de jugadores, comandos, resultados o peticiones de emparejamiento. Sin embargo, la model card publicada esta practicamente vacia: solo contiene la declaracion de licencia `agpl-3.0`, sin descripcion, sin arquitectura, sin datos de entrenamiento ni ejemplos de uso.
 
 El repositorio no incluye informacion sobre parametros, contexto, idiomas ni formato de pesos, y en el momento de la consulta registra 0 descargas y 0 likes, lo que sugiere un modelo recien creado o de uso interno. La fecha de creacion y actualizacion es la misma (2026-11-06), sin historial de revisiones visible.
 
@@ -74,5 +74,5 @@ No disponible. No se puede establecer una comparativa fiable sin conocer paramet
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lichess4545/chess-league-bot-nlu
+- Hugging Face: https://huggingface.co/Lichess4545/chess-league-bot-nlu
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

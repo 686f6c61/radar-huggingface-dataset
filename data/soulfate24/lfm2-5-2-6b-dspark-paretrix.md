@@ -82,7 +82,7 @@ Estimaciones a partir del tamano de archivo publicado; el autor no proporciona m
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM (RTX 3050, RTX 4060, RTX 3060, GTX 1650 en los niveles mas comprimidos). Para los niveles inferiores basta con 2 GB. No se requieren A100 ni H100.
 - Cabe en GPU de consumo: si, en todos los niveles. Los niveles Nano-27pc y Femto-21pc incluso dejan margen en GPUs de 4 GB y en iGPUs con memoria compartida.
 - Ejecucion sin GPU: viable en CPU con llama.cpp, dado el reducido tamano de los pesos; tambien es adecuado para Apple Silicon con Metal.
-- Opciones de despliegue: llama.cpp, Ollama y LM Studio para los GGUF; transformers para los pesos safetensors; servidores compatibles con la API de OpenAI (la etiqueta "endpoints_compatible" sugiere compatibilidad con endpoints de HuggingFace). No se confirma soporte de vLLM para estos GGUF.
+- Opciones de despliegue: llama.cpp, Ollama y LM Studio para los GGUF; transformers para los pesos safetensors; servidores compatibles con la API de OpenAI (la etiqueta "endpoints_compatible" sugiere compatibilidad con endpoints de Hugging Face). No se confirma soporte de vLLM para estos GGUF.
 - Decodificacion especulativa: se puede emparejar con el draft DSpark cuantizado incluido en el repositorio para acelerar la generacion en llama.cpp.
 - Latencia y throughput: no disponibles. El autor no publica mediciones de tokens por segundo ni de latencia por peticion.
 
@@ -119,7 +119,7 @@ Comparativa frente a otras familias de tamano similar (Qwen3, Llama 3.2, Gemma 3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Soulfate24/LFM2.5-2.6B-DSpark-Paretrix
+- Modelo en Hugging Face: https://huggingface.co/Soulfate24/LFM2.5-2.6B-DSpark-Paretrix
 - Modelo base (LiquidAI/LFM2.5-2.6B): https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Modelo borrador DSpark (LiquidAI/LFM2.5-2.6B-DSpark): https://huggingface.co/LiquidAI/LFM2.5-2.6B-DSpark
 - Paretrix Quantization Suite: https://huggingface.co/Soulfate24/Paretrix_Quantization_Suite

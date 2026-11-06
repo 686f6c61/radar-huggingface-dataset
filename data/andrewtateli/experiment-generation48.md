@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`andrewtateli/experiment-generation48` es un repositorio experimental publicado en HuggingFace por el usuario andrewtateli que contiene una implementación propia en PyTorch de un "Tiny Transformer" orientado a tareas de generación. No se trata de un modelo preentrenado ni de una release lista para producción: el propio autor indica que la configuración `base` está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado.
+`andrewtateli/experiment-generation48` es un repositorio experimental publicado en Hugging Face por el usuario andrewtateli que contiene una implementación propia en PyTorch de un "Tiny Transformer" orientado a tareas de generación. No se trata de un modelo preentrenado ni de una release lista para producción: el propio autor indica que la configuración `base` está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado.
 
 El tamaño es extremadamente reducido: 16.576 parámetros totales según el archivo de safetensors, con un repositorio que ocupa 0,0 GB. La arquitectura declarada combina atención dispersa (sparse attention), fusión bilineal, activación GELU con tanh y normalización por instancias (InstanceNorm), una combinación poco habitual que se aleja del transformer estándar y que sugiere un banco de pruebas de variantes arquitectónicas más que un modelo de propósito general.
 
@@ -25,7 +25,7 @@ Otros datos del repositorio: escala declarada `base`, pipeline no disponible, 10
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer de escala "base" dentro de la categoría *tiny*, implementado a medida en `model.py` en lugar de apoyarse en `transformers` de HuggingFace. Las decisiones técnicas documentadas son: atención dispersa (sparse attention) en lugar de atención densa completa, fusión bilineal de las representaciones, activación GELU combinada con tanh y normalización InstanceNorm en vez de LayerNorm. Esta combinación no corresponde a ningún modelo público conocido y no se detalla en la model card ni el número de capas, la dimensión del modelo, el número de cabezas ni la ventana de contexto, por lo que estos datos deben considerarse no disponibles.
+La arquitectura es un transformer de escala "base" dentro de la categoría *tiny*, implementado a medida en `model.py` en lugar de apoyarse en `transformers` de Hugging Face. Las decisiones técnicas documentadas son: atención dispersa (sparse attention) en lugar de atención densa completa, fusión bilineal de las representaciones, activación GELU combinada con tanh y normalización InstanceNorm en vez de LayerNorm. Esta combinación no corresponde a ningún modelo público conocido y no se detalla en la model card ni el número de capas, la dimensión del modelo, el número de cabezas ni la ventana de contexto, por lo que estos datos deben considerarse no disponibles.
 
 En cuanto a entrenamiento, el repositorio incluye `training_args.json` con una receta por defecto basada en RMSprop y un scheduler de tipo exponencial. El autor es explícito al señalar que estos valores son puntos de partida del script y no evidencia de una ejecución completada: el checkpoint de safetensors es una inicialización para pruebas de humo y no un modelo entrenado. No se documentan tokens de entrenamiento, composición del dataset, ni fases de RLHF, DPO o ajuste por instrucciones. La model card recomienda, para cualquier evaluación futura, usar un conjunto de validación específico de la tarea, reportar la métrica sobre al menos tres semillas e incluir una línea base de capacidad equivalente.
 
@@ -81,12 +81,12 @@ No se dispone de datos verificables de modelos comparables en la información pr
 - No hay datos de sesgos, porque no hay entrenamiento documentado; no obstante, un modelo entrenado con datos externos heredará los sesgos de esos datos.
 - Riesgo de alucinación: no evaluable en el estado actual; con pesos aleatorios la salida es ruido, no una alucinación en sentido estricto.
 - Longitud de contexto e idiomas soportados no documentados, lo que impide planificar su uso en tareas de contexto largo o multilingües.
-- Sin pipeline declarado en HuggingFace, la carga mediante `pipeline()` o `AutoModel` no funciona sin escribir un adaptador.
+- Sin pipeline declarado en Hugging Face, la carga mediante `pipeline()` o `AutoModel` no funciona sin escribir un adaptador.
 - Licencia Apache 2.0 permite uso comercial del código y los pesos, pero la model card recuerda revisar por separado los términos de los datos de origen si se emplean datasets externos.
 - El repositorio ocupa 0,0 GB y tiene 10 descargas y 0 likes: no hay comunidad, issues ni mantenimiento que garantice correcciones.
 - No debe citarse como referencia de rendimiento: no existe ningún resultado publicado ni reproducible en el repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andrewtateli/experiment-generation48
+- Modelo en Hugging Face: https://huggingface.co/andrewtateli/experiment-generation48
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes a este modelo (paper, blog, repositorio o demo). El resto de enlaces disponibles no guardan relación con el modelo.

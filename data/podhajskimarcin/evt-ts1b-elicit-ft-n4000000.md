@@ -3,7 +3,7 @@
 # evt-ts1b-elicit-ft-n4000000
 
 ## Resumen
-evt-ts1b-elicit-ft-n4000000 es un ajuste fino completo (full fine-tuning) del modelo base zoo-run/evt-ts1b-op-bridge-mix sobre 4.000.000 de ejemplos de suma y resta expresados en lenguaje natural. Lo publica el usuario podhajskimarcin en HuggingFace como parte del proyecto MARS V, dedicado al estudio mecanístico de la elicitación frente a la enseñanza (elicitation vs. teaching) en redes neuronales, dentro del codebase geode.
+evt-ts1b-elicit-ft-n4000000 es un ajuste fino completo (full fine-tuning) del modelo base zoo-run/evt-ts1b-op-bridge-mix sobre 4.000.000 de ejemplos de suma y resta expresados en lenguaje natural. Lo publica el usuario podhajskimarcin en Hugging Face como parte del proyecto MARS V, dedicado al estudio mecanístico de la elicitación frente a la enseñanza (elicitation vs. teaching) en redes neuronales, dentro del codebase geode.
 
 El modelo no es un asistente generalista: es el "hijo elicitado" del experimento, es decir, el resultado de exponer al modelo padre a un gran volumen de ejemplos aritméticos para medir qué capacidades emergen por elicitación. No se documentan en la información disponible ni la arquitectura exacta ni la longitud de contexto. Las etiquetas del repositorio incluyen tinystories-1b, lo que apunta a un transformer de aproximadamente 1.000 millones de parámetros derivado de la familia TinyStories, aunque este dato no se confirma en la model card.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| evt-ts1b-elicit-ft-n4000000 | no disponible (etiqueta tinystories-1b sugiere ~1.000 millones) | no disponible | sin benchmarks publicados | MIT | HuggingFace |
-| zoo-run/evt-ts1b-op-bridge-mix (modelo base) | no disponible | no disponible | sin benchmarks publicados en la información disponible | no disponible | HuggingFace |
+| evt-ts1b-elicit-ft-n4000000 | no disponible (etiqueta tinystories-1b sugiere ~1.000 millones) | no disponible | sin benchmarks publicados | MIT | Hugging Face |
+| zoo-run/evt-ts1b-op-bridge-mix (modelo base) | no disponible | no disponible | sin benchmarks publicados en la información disponible | no disponible | Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la información proporcionada otros modelos comparables de la misma categoría (aritmética elicitada sobre TinyStories) además del modelo base.
@@ -83,7 +83,7 @@ No se han identificado en la información proporcionada otros modelos comparable
 - La licencia MIT permite uso comercial, pero se ofrece sin garantías y el modelo no está validado para producción.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/podhajskimarcin/evt-ts1b-elicit-ft-n4000000
+- Hugging Face: https://huggingface.co/podhajskimarcin/evt-ts1b-elicit-ft-n4000000
 - Modelo base: https://huggingface.co/zoo-run/evt-ts1b-op-bridge-mix
 - Dataset: https://huggingface.co/datasets/mhieuuu/elicit-vs-teach-arith
 - Codebase geode: no se proporciona URL en la información disponible

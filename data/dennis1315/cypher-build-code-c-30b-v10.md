@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Dennis1315/cypher-build-code-c-30b-v10` es un adaptador PEFT (Parameter-Efficient Fine-Tuning) publicado en HuggingFace por el usuario Dennis1315. Está construido sobre el modelo base `Qwen/Qwen3-14B`, un transformer de 14 mil millones de parámetros desarrollado por Alibaba. El nombre del modelo sugiere una orientación hacia tareas de generación o análisis de código, posiblemente relacionado con la herramienta de seguridad "Cypher" que aparece en los resultados de búsqueda, aunque no hay confirmación oficial en la model card.
+El modelo `Dennis1315/cypher-build-code-c-30b-v10` es un adaptador PEFT (Parameter-Efficient Fine-Tuning) publicado en Hugging Face por el usuario Dennis1315. Está construido sobre el modelo base `Qwen/Qwen3-14B`, un transformer de 14 mil millones de parámetros desarrollado por Alibaba. El nombre del modelo sugiere una orientación hacia tareas de generación o análisis de código, posiblemente relacionado con la herramienta de seguridad "Cypher" que aparece en los resultados de búsqueda, aunque no hay confirmación oficial en la model card.
 
 El repositorio tiene un tamaño de 0,2 GB, lo que indica que se trata de un adaptador LoRA o similar, no de los pesos completos del modelo. La model card está prácticamente vacía, sin información sobre entrenamiento, capacidades o licencia. A pesar de su nombre, no se dispone de datos verificables sobre su rendimiento o uso previsto, por lo que esta ficha se basa únicamente en los metadatos disponibles y en el contexto del ecosistema Cypher.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 - VRAM estimada: al ser un adaptador PEFT, la inferencia requiere cargar el modelo base Qwen3-14B (aproximadamente 28 GB en FP16) más el adaptador. Con cuantización (por ejemplo, 8 bits o 4 bits) podría caber en GPUs de consumo como RTX 3090 o RTX 4090 (24 GB VRAM).
 - GPU recomendadas: A100 (40/80 GB), H100, o GPUs de consumo con al menos 24 GB de VRAM si se cuantiza el modelo base.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace Transformers con PEFT, TGI. El adaptador se carga junto con el modelo base.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face Transformers con PEFT, TGI. El adaptador se carga junto con el modelo base.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - Dennis1315/cypher-build-code-c-30b-v10](https://huggingface.co/Dennis1315/cypher-build-code-c-30b-v10)
-- [HuggingFace - Dennis1315/cypher-PRIME-TURBO-8B-v8-GGUF](https://huggingface.co/Dennis1315/cypher-PRIME-TURBO-8B-v8-GGUF/tree/main)
-- [HuggingFace - Dennis1315/cypher-CODE-PRM-8B-v8-GGUF](https://huggingface.co/Dennis1315/cypher-CODE-PRM-8B-v8-GGUF/blob/main/adapter_model.safetensors)
+- [Hugging Face - Dennis1315/cypher-build-code-c-30b-v10](https://huggingface.co/Dennis1315/cypher-build-code-c-30b-v10)
+- [Hugging Face - Dennis1315/cypher-PRIME-TURBO-8B-v8-GGUF](https://huggingface.co/Dennis1315/cypher-PRIME-TURBO-8B-v8-GGUF/tree/main)
+- [Hugging Face - Dennis1315/cypher-CODE-PRM-8B-v8-GGUF](https://huggingface.co/Dennis1315/cypher-CODE-PRM-8B-v8-GGUF/blob/main/adapter_model.safetensors)
 - [GitHub - Mekky2/cypher (herramienta SAST)](https://github.com/Mekky2/cypher)

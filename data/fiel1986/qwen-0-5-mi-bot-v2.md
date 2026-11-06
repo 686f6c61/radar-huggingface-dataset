@@ -2,11 +2,11 @@
 
 ## Resumen
 
-fiel1986/qwen-0.5-mi-bot-v2 es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario fiel1986, entrenado sobre el modelo base Qwen/Qwen2-0.5B-Instruct. No se trata por tanto de un modelo completo con pesos propios, sino de un conjunto de matrices de bajo rango que deben cargarse junto al modelo base mediante la libreria PEFT (version 0.19.1 segun la model card). El repositorio ocupa 0,1 GB y la etiqueta de pipeline es text-generation, con etiqueta adicional conversational, lo que sugiere un ajuste orientado a dialogos de chatbot.
+fiel1986/qwen-0.5-mi-bot-v2 es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario fiel1986, entrenado sobre el modelo base Qwen/Qwen2-0.5B-Instruct. No se trata por tanto de un modelo completo con pesos propios, sino de un conjunto de matrices de bajo rango que deben cargarse junto al modelo base mediante la libreria PEFT (version 0.19.1 segun la model card). El repositorio ocupa 0,1 GB y la etiqueta de pipeline es text-generation, con etiqueta adicional conversational, lo que sugiere un ajuste orientado a dialogos de chatbot.
 
 El modelo resuelve el caso de uso tipico de personalizacion ligera: adaptar un modelo pequeno de 0,5 mil millones de parametros a un dominio, estilo o conjunto de respuestas concreto sin necesidad de reentrenar los pesos completos. Por su tamano, el binomio adaptador + base es desplegable en CPU y en GPU de gama baja, lo que lo hace adecuado para prototipos, demos locales y entornos con recursos muy limitados. El nombre del repositorio ("mi-bot-v2") apunta a un experimento personal de ajuste conversacional mas que a un lanzamiento con validacion sistematica.
 
-La relevancia de esta ficha es limitada en terminos de rendimiento: la model card es la plantilla por defecto de HuggingFace y no se ha rellenado ninguno de sus campos (desarrollador, datos de entrenamiento, licencia, idiomas, evaluacion). El repositorio registra 0 descargas y 0 likes en el momento de la consulta. Cualquier evaluacion de capacidades reales requiere cargar el adaptador y medirlo, ya que no existe documentacion tecnica publicada por el autor.
+La relevancia de esta ficha es limitada en terminos de rendimiento: la model card es la plantilla por defecto de Hugging Face y no se ha rellenado ninguno de sus campos (desarrollador, datos de entrenamiento, licencia, idiomas, evaluacion). El repositorio registra 0 descargas y 0 likes en el momento de la consulta. Cualquier evaluacion de capacidades reales requiere cargar el adaptador y medirlo, ya que no existe documentacion tecnica publicada por el autor.
 
 ## Especificaciones tecnicas
 
@@ -74,7 +74,7 @@ La comparacion es estructural, no de rendimiento: no existen metricas del adapta
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace y no contiene informacion real: desarrollador, datos de entrenamiento, licencia, idiomas y evaluacion figuran como "[More Information Needed]".
+- La model card es la plantilla por defecto de Hugging Face y no contiene informacion real: desarrollador, datos de entrenamiento, licencia, idiomas y evaluacion figuran como "[More Information Needed]".
 - La licencia no esta declarada en el repositorio. Aunque el modelo base es Apache-2.0, la ausencia de terminos explicitos en el adaptador genera incertidumbre juridica para uso comercial; conviene contactar con el autor antes de integrarlo en produccion.
 - No se especifican los idiomas soportados ni si el ajuste LoRA ha degradado las capacidades multilingues del modelo base.
 - Con 0,5 mil millones de parametros, el riesgo de alucinacion es alto en preguntas factuales, calculos y razonamiento de varios pasos. No debe usarse como fuente de verdad sin verificacion externa.
@@ -87,7 +87,7 @@ La comparacion es estructural, no de rendimiento: no existen metricas del adapta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fiel1986/qwen-0.5-mi-bot-v2
+- Modelo en Hugging Face: https://huggingface.co/fiel1986/qwen-0.5-mi-bot-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen2-0.5B-Instruct
 - Repositorio de Qwen2 en GitHub: https://github.com/QwenLM/Qwen2
 - Libreria PEFT: https://github.com/huggingface/peft

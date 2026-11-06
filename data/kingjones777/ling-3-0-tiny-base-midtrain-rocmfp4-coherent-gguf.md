@@ -76,8 +76,8 @@ No disponible. No se proporcionan datos comparativos con otros modelos de la mis
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/kingjones777/Ling-3.0-tiny-base-midtrain-ROCmFP4-COHERENT-GGUF)
-- [Modelo base en HuggingFace](https://huggingface.co/inclusionAI/Ling-3.0-tiny-base-midtrain)
+- [Hugging Face del modelo](https://huggingface.co/kingjones777/Ling-3.0-tiny-base-midtrain-ROCmFP4-COHERENT-GGUF)
+- [Modelo base en Hugging Face](https://huggingface.co/inclusionAI/Ling-3.0-tiny-base-midtrain)
 - [Documentación de Ling-3.0-tiny](https://developer.ant-ling.com/en/docs/models/ling/)
 - [Repositorio GitHub de Ling](https://github.com/inclusionAI/Ling)
 - [Modelo en ModelScope](https://www.modelscope.cn/models/inclusionAI/Ling-3.0-tiny)

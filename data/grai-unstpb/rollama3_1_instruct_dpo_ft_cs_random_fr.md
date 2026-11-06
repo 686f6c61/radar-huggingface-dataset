@@ -6,7 +6,7 @@
 
 El identificador del modelo sugiere un ajuste con SFT sobre datos etiquetados como `cs_random_fr`, una convención que en la literatura de procesamiento del lenguaje natural rumano suele asociarse a *code-switching* (alternancia de lenguas) entre rumano y francés. Sin embargo, la model card publicada no documenta el conjunto de datos, el idioma objetivo ni la tarea concreta, por lo que esta interpretación es una hipótesis basada en el nombre y no un dato confirmado por el autor.
 
-La relevancia de esta ficha es limitada pero informativa: el modelo tiene cero descargas y cero *likes*, no declara licencia ni idiomas, y su model card es la plantilla por defecto de HuggingFace sin rellenar. Se incluye aquí como ejemplo de adaptador de investigación no documentado y para advertir de los riesgos de reutilizarlo en producción sin validación adicional.
+La relevancia de esta ficha es limitada pero informativa: el modelo tiene cero descargas y cero *likes*, no declara licencia ni idiomas, y su model card es la plantilla por defecto de Hugging Face sin rellenar. Se incluye aquí como ejemplo de adaptador de investigación no documentado y para advertir de los riesgos de reutilizarlo en producción sin validación adicional.
 
 ## Especificaciones tecnicas
 
@@ -76,10 +76,10 @@ Los datos de parámetros, contexto y licencia de las alternativas corresponden a
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GRAI-UNSTPB/rollama3_1_instruct_dpo_ft_cs_random_fr | 8B (adaptador LoRA) | no disponible; 128k heredados de Llama 3.1 | no disponible | HuggingFace, 0 descargas |
-| OpenLLM-Ro/RoLlama3.1-8b-Instruct-DPO | 8B | 128k (Llama 3.1) | no disponible en la información consultada | HuggingFace, modelo base de este adaptador |
-| Meta Llama 3.1 8B Instruct | 8B | 128k | Llama 3.1 Community License | HuggingFace, ampliamente desplegado |
-| Mistral 7B Instruct v0.3 | 7,3B | 32k | Apache 2.0 | HuggingFace, permisiva para uso comercial |
+| GRAI-UNSTPB/rollama3_1_instruct_dpo_ft_cs_random_fr | 8B (adaptador LoRA) | no disponible; 128k heredados de Llama 3.1 | no disponible | Hugging Face, 0 descargas |
+| OpenLLM-Ro/RoLlama3.1-8b-Instruct-DPO | 8B | 128k (Llama 3.1) | no disponible en la información consultada | Hugging Face, modelo base de este adaptador |
+| Meta Llama 3.1 8B Instruct | 8B | 128k | Llama 3.1 Community License | Hugging Face, ampliamente desplegado |
+| Mistral 7B Instruct v0.3 | 7,3B | 32k | Apache 2.0 | Hugging Face, permisiva para uso comercial |
 
 El adaptador no aporta ventajas medibles frente a sus alternativas en el estado actual de documentación; su único diferencial identificable es el ajuste sobre datos con posible alternancia rumano-francés.
 
@@ -97,7 +97,7 @@ El adaptador no aporta ventajas medibles frente a sus alternativas en el estado 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GRAI-UNSTPB/rollama3_1_instruct_dpo_ft_cs_random_fr
+- Repositorio en Hugging Face: https://huggingface.co/GRAI-UNSTPB/rollama3_1_instruct_dpo_ft_cs_random_fr
 - Modelo base: https://huggingface.co/OpenLLM-Ro/RoLlama3.1-8b-Instruct-DPO
 - Articulo citado en las etiquetas (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT: https://huggingface.co/docs/peft

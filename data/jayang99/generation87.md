@@ -2,7 +2,7 @@
 
 ## Resumen
 
-generation87 es un repositorio de HuggingFace publicado por el usuario jayang99 que contiene una implementacion funcional de BEiT (Bidirectional Encoder Representations from Image Transformers) orientada a tareas de generacion, con una configuracion declarada como xlarge. El autor lo describe explicitamente como una implementacion de trabajo centrada en codigo transparente y pruebas de humo (smoke tests) repetibles, y omite deliberadamente cualquier afirmacion sobre rendimiento en benchmarks.
+generation87 es un repositorio de Hugging Face publicado por el usuario jayang99 que contiene una implementacion funcional de BEiT (Bidirectional Encoder Representations from Image Transformers) orientada a tareas de generacion, con una configuracion declarada como xlarge. El autor lo describe explicitamente como una implementacion de trabajo centrada en codigo transparente y pruebas de humo (smoke tests) repetibles, y omite deliberadamente cualquier afirmacion sobre rendimiento en benchmarks.
 
 Pese a la etiqueta "xlarge", el unico dato objetivo de tamano disponible es el recuento del checkpoint safetensors, que asciende a 49.600 parametros, una cifra muy reducida que refuerza la naturaleza de inicializacion del artefacto. El propio autor aclara que `model.safetensors` es un checkpoint de inicializacion valido para smoke tests, no un modelo entrenado, y que no ha sido auditado en robustez, equidad ni transferencia de dominio.
 
@@ -79,7 +79,7 @@ No disponible. El artefacto es un checkpoint de inicializacion para smoke tests 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jayang99/generation87
+- Repositorio en Hugging Face: https://huggingface.co/jayang99/generation87
 - Archivos incluidos en el repositorio: `main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper o publicacion asociada: no disponible
 - Repositorio de codigo independiente: no disponible

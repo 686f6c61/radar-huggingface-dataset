@@ -73,9 +73,9 @@ Verificación de carga: con `load_release_model` en CPU y fp32, los token ids co
 
 | Modelo | Parámetros | Contexto | Precisión gold (held-out del autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zils-lite-clef-scout | 0,92B | No disponible | 92,2% | Apache-2.0 | HuggingFace (PyTorch y Core ML) |
-| Clef-flash (profesor) | 9B | No disponible | 94,1% | No disponible en la información | HuggingFace (Cloudflare) |
-| Qwen3.5-0.8B (base) | 0,8B | No disponible | No aplica (modelo generativo) | No disponible en la información | HuggingFace |
+| Zils-lite-clef-scout | 0,92B | No disponible | 92,2% | Apache-2.0 | Hugging Face (PyTorch y Core ML) |
+| Clef-flash (profesor) | 9B | No disponible | 94,1% | No disponible en la información | Hugging Face (Cloudflare) |
+| Qwen3.5-0.8B (base) | 0,8B | No disponible | No aplica (modelo generativo) | No disponible en la información | Hugging Face |
 
 La comparación con modelos generativos del mismo tamaño no es directa: este modelo no produce texto, sino probabilidades tipadas, por lo que las métricas de generación (MMLU, HumanEval) no aplican.
 
@@ -92,7 +92,7 @@ La comparación con modelos generativos del mismo tamaño no es directa: este mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kamiyou/zils-lite-clef-scout
+- Hugging Face: https://huggingface.co/kamiyou/zils-lite-clef-scout
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Profesor Clef-flash: https://huggingface.co/Cloudflare/clef-flash
 - Build Core ML: https://huggingface.co/FluidInference/clef-vision-0.8b-coreml

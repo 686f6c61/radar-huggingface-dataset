@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_whiteball_blackboard_NoIR_70ep_Next (este) | 51,7 M | no aplica | Pick place white ball con so_follower | apache-2.0 | HuggingFace |
-| Otras políticas ACT en LeRobot Hub | variable | no aplica | Manipulación genérica | variable | HuggingFace |
-| Políticas Diffusion Policy | variable | no aplica | Manipulación visuomotora | variable | HuggingFace / LeRobot |
+| act_whiteball_blackboard_NoIR_70ep_Next (este) | 51,7 M | no aplica | Pick place white ball con so_follower | apache-2.0 | Hugging Face |
+| Otras políticas ACT en LeRobot Hub | variable | no aplica | Manipulación genérica | variable | Hugging Face |
+| Políticas Diffusion Policy | variable | no aplica | Manipulación visuomotora | variable | Hugging Face / LeRobot |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada. La comparación se limita a parámetros, tarea y licencia.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kob0105/act_whiteball_blackboard_NoIR_70ep_Next
+- Modelo en Hugging Face: https://huggingface.co/kob0105/act_whiteball_blackboard_NoIR_70ep_Next
 - Dataset de entrenamiento: https://huggingface.co/datasets/kob0105/record_test_new_whiteball_blackboard_NoIR_20261019_132503
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

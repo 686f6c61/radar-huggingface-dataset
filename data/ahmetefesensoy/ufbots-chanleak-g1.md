@@ -81,7 +81,7 @@ El autor señala además que los clips retargetizados seguían los ángulos arti
 
 | Modelo | Tipo | Robot objetivo | Tasa de éxito | `mpjpe_g` | `mpjpe_l` | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Chanleak (este modelo) | Política RL de motion tracking, ONNX | Unitree G1, 29 DOF | 61 % | 189,1 mm | 38,9 mm | `other` (`nvidia-gr00t-and-bones-seed`) | HuggingFace, repo de 0,3 GB, 0 descargas |
+| Chanleak (este modelo) | Política RL de motion tracking, ONNX | Unitree G1, 29 DOF | 61 % | 189,1 mm | 38,9 mm | `other` (`nvidia-gr00t-and-bones-seed`) | Hugging Face, repo de 0,3 GB, 0 descargas |
 | Control PD sobre trayectorias retargetizadas | Controlador clásico | Unitree G1 | 0 % | No disponible | No disponible | No aplica | Línea base descrita por el autor |
 | GR00T-WholeBodyControl `sonic_release` (NVIDIA) | Política base de la que se parte | Humanoide | No disponible | No disponible | No disponible | Términos de NVIDIA | Repositorio NVlabs/GR00T-WholeBodyControl |
 
@@ -102,7 +102,7 @@ No se dispone de datos de otros modelos comparables de seguimiento de movimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AhmetEfesensoy/ufbots-chanleak-g1
+- Modelo en Hugging Face: https://huggingface.co/AhmetEfesensoy/ufbots-chanleak-g1
 - Dataset asociado: https://huggingface.co/datasets/AhmetEfesensoy/ufbots-bokator-g1
 - GR00T-WholeBodyControl (NVlabs): https://github.com/NVlabs/GR00T-WholeBodyControl
 - BONES-SEED (dataset): https://huggingface.co/datasets/bones-studio/seed

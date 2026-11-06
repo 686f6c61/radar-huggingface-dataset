@@ -83,7 +83,7 @@ La comparativa se limita a familias de la misma base por ausencia de datos de be
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentscope-ai/QwenPaw-Flash-35B-A3B-Q8_0
+- Hugging Face: https://huggingface.co/agentscope-ai/QwenPaw-Flash-35B-A3B-Q8_0
 - Proyecto QwenPaw en GitHub: https://github.com/agentscope-ai/QwenPaw
 - ModelScope: https://www.modelscope.cn/models/AgentScope/QwenPaw-Flash-35B-A3B-Q8_0
 - Coleccion ModelScope QwenPaw-Flash: https://www.modelscope.cn/collections/AgentScope/QwenPaw-Flash

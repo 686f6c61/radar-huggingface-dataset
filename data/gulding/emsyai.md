@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EmsyAI es un modelo de lenguaje decoder-only de aproximadamente 28 millones de parámetros, desarrollado por el usuario gulding con fines exclusivamente educativos. Está construido completamente desde cero en PyTorch puro, sin depender de la librería `transformers` de HuggingFace, lo que lo convierte en un recurso valioso para quienes quieren entender el funcionamiento interno de un LLM moderno. Su arquitectura está fuertemente inspirada en Llama 3 e incorpora elementos como Grouped Query Attention (GQA), SwiGLU, RMSNorm y Rotary Positional Embeddings (RoPE).
+EmsyAI es un modelo de lenguaje decoder-only de aproximadamente 28 millones de parámetros, desarrollado por el usuario gulding con fines exclusivamente educativos. Está construido completamente desde cero en PyTorch puro, sin depender de la librería `transformers` de Hugging Face, lo que lo convierte en un recurso valioso para quienes quieren entender el funcionamiento interno de un LLM moderno. Su arquitectura está fuertemente inspirada en Llama 3 e incorpora elementos como Grouped Query Attention (GQA), SwiGLU, RMSNorm y Rotary Positional Embeddings (RoPE).
 
 El modelo se entrenó en dos fases: un pretraining base sobre aproximadamente 40 MB de código fuente Python del repositorio CPython, seguido de un ajuste fino por instrucciones mediante LoRA sobre el dataset CodeAlpaca-20k. Aunque su contexto de 512 tokens y su vocabulario de 8000 tokens lo limitan a tareas muy simples, su relevancia radica en que demuestra todo el pipeline de entrenamiento de un LLM desde cero, incluyendo tokenizador BPE propio, atención con KV-caching y adaptadores LoRA. Se distribuye bajo licencia MIT y está disponible en formato GGUF, lo que permite ejecutarlo localmente con Ollama sin dependencias de Python.
 
@@ -87,6 +87,6 @@ EmsyAI se diferencia de TinyStories en su dominio de código y su implementació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gulding/EmsyAI
+- Hugging Face: https://huggingface.co/gulding/EmsyAI
 - Repositorio GitHub (código de inferencia y entrenamiento): https://github.com/gulding/EmsyAI
 - Repositorio de proyectos relacionados del autor: https://github.com/gulding/local-agents (arquitectura multi-agente local con Ollama) y https://github.com/gulding/ai-assistant-saas (extensión Chrome con asistente IA)

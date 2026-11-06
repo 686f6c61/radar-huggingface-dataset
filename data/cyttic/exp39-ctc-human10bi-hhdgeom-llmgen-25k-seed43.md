@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-25k-seed43` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en HuggingFace. Por la nomenclatura del identificador (prefijo `ctc`, referencias a `human10bi`, `hhdgeom`, `llmgen`, `25k` y `seed43`) y por el tamaño, todo apunta a un modelo acústico o de reconocimiento de voz basado en CTC (Connectionist Temporal Classification) entrenado sobre un corpus de 10 hablantes humanos, con alguna variante de generación de datos sintéticos (`llmgen`) y 25.000 pasos de entrenamiento con semilla 43. No obstante, la model card del autor es la plantilla por defecto de HuggingFace sin rellenar, por lo que esta interpretación no está confirmada por documentación oficial.
+El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-25k-seed43` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en Hugging Face. Por la nomenclatura del identificador (prefijo `ctc`, referencias a `human10bi`, `hhdgeom`, `llmgen`, `25k` y `seed43`) y por el tamaño, todo apunta a un modelo acústico o de reconocimiento de voz basado en CTC (Connectionist Temporal Classification) entrenado sobre un corpus de 10 hablantes humanos, con alguna variante de generación de datos sintéticos (`llmgen`) y 25.000 pasos de entrenamiento con semilla 43. No obstante, la model card del autor es la plantilla por defecto de Hugging Face sin rellenar, por lo que esta interpretación no está confirmada por documentación oficial.
 
 El repositorio ocupa 0,3 GB y contiene pesos en formato safetensors. La licencia declarada es MIT, lo que permite uso comercial sin restricciones significativas. No se declaran idiomas soportados, pipeline ni dataset de entrenamiento.
 
@@ -66,10 +66,10 @@ No es posible establecer una comparativa rigurosa porque se desconoce la tarea e
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cyttic/exp39-... (este) | 87,3 M | no disponible | MIT | HuggingFace |
-| wav2vec2-base-960h | ~95 M | frame-level | MIT | HuggingFace |
-| HuBERT base | ~95 M | frame-level | MIT | HuggingFace |
-| Whisper tiny | ~39 M | 30 s de audio | MIT | HuggingFace |
+| cyttic/exp39-... (este) | 87,3 M | no disponible | MIT | Hugging Face |
+| wav2vec2-base-960h | ~95 M | frame-level | MIT | Hugging Face |
+| HuBERT base | ~95 M | frame-level | MIT | Hugging Face |
+| Whisper tiny | ~39 M | 30 s de audio | MIT | Hugging Face |
 
 La comparación con wav2vec2 y HuBERT es solo por orden de magnitud; no hay datos de rendimiento del modelo evaluado que permitan contrastar WER ni otras métricas.
 
@@ -86,7 +86,7 @@ La comparación con wav2vec2 y HuBERT es solo por orden de magnitud; no hay dato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-25k-seed43
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-25k-seed43
 - Paper citado en los tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

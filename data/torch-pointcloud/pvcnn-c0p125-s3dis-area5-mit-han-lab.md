@@ -24,7 +24,7 @@ Su relevancia es práctica más que de investigación: permite reproducir la lí
 | Clases de salida | 13 (segmentación semántica S3DIS) |
 | Dimension de caracteristicas | 184 |
 | Dataset de entrenamiento/evaluacion | S3DIS, evaluación en Area 5 |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -79,7 +79,7 @@ La información disponible no especifica qué protocolo de evaluación correspon
 
 | Modelo | Parametros | Entrada / contexto | mIoU S3DIS Area 5 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PVCNN c0.125 (este modelo) | 44.149 (safetensors) | 8192 puntos, 9 canales, 13 clases | 49,25 (no verificado) | MIT | HuggingFace, vía `torch-pointcloud` |
+| PVCNN c0.125 (este modelo) | 44.149 (safetensors) | 8192 puntos, 9 canales, 13 clases | 49,25 (no verificado) | MIT | Hugging Face, vía `torch-pointcloud` |
 | PVCNN variantes mayores (mismo paper, otro factor de canales) | no disponible en la información | misma entrada | no disponible en la información | MIT (repo original) | GitHub `mit-han-lab/pvcnn` |
 | PointNet++ (referencia de la literatura) | no disponible en la información | nubes de puntos con XYZ (+RGB) | no disponible en la información | no disponible en la información | implementaciones múltiples |
 | Point Transformer (referencia de la literatura) | no disponible en la información | nubes de puntos con XYZ (+RGB) | no disponible en la información | no disponible en la información | implementaciones múltiples |
@@ -99,11 +99,11 @@ No se han incluido cifras comparativas de los modelos alternativos porque no fig
 - Sin cuantizaciones documentadas: no se publican pesos en FP16, INT8 o GGUF, de modo que cualquier optimización de despliegue hay que hacerla por cuenta propia.
 - Riesgo de alucinación no aplica (modelo discriminativo), pero sí de sobreconfianza: los logits por punto pueden asignar clases con alta probabilidad en regiones ambiguas u ocluidas.
 - Licencia MIT: permite uso comercial, modificación y redistribución con conservación del aviso de copyright y de la atribución; conviene citar además el paper de PVCNN y el de S3DIS. No hay restricciones de uso por campo de aplicación, pero la licencia del dataset S3DIS es independiente y debe respetarse si se redistribuyen datos.
-- En producción, es recomendable fijar la versión de `torch-pointcloud` y de PyTorch, ya que la API de carga (`create_model`, `collate`, `forward`) depende de la librería y no está estandarizada por HuggingFace (`pipeline: no disponible`).
+- En producción, es recomendable fijar la versión de `torch-pointcloud` y de PyTorch, ya que la API de carga (`create_model`, `collate`, `forward`) depende de la librería y no está estandarizada por Hugging Face (`pipeline: no disponible`).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pvcnn-c0p125.s3dis-area5.mit-han-lab
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pvcnn-c0p125.s3dis-area5.mit-han-lab
 - Paper de PVCNN (NeurIPS 2019): https://arxiv.org/abs/1907.03739
 - Repositorio original de MIT HAN Lab: https://github.com/mit-han-lab/pvcnn
 - Librería `torch-pointcloud`: https://github.com/arthurdjn/pytorch-pointcloud

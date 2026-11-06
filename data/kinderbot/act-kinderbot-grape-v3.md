@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kinderbot/act-kinderbot-grape-v3 es una política de robótica (no un modelo de lenguaje) entrenada con el método ACT (Action Chunking with Transformers) y distribuida a través de LeRobot, la librería de HuggingFace para aprendizaje automático en robótica del mundo real. El modelo aprende por imitación a partir de datos de teleoperación y resuelve una única tarea de manipulación: coger una uva de una caja y dejarla sobre la mesa. Lo publica el usuario kinderbot y está pensado para ejecutarse sobre un brazo `so_follower` con dos cámaras (`wrist` y `front`).
+kinderbot/act-kinderbot-grape-v3 es una política de robótica (no un modelo de lenguaje) entrenada con el método ACT (Action Chunking with Transformers) y distribuida a través de LeRobot, la librería de Hugging Face para aprendizaje automático en robótica del mundo real. El modelo aprende por imitación a partir de datos de teleoperación y resuelve una única tarea de manipulación: coger una uva de una caja y dejarla sobre la mesa. Lo publica el usuario kinderbot y está pensado para ejecutarse sobre un brazo `so_follower` con dos cámaras (`wrist` y `front`).
 
 Técnicamente es un transformer encoder-decoder con componente generativo latente (CVAE) que predice trozos o *chunks* de acciones futuras en lugar de un único paso de control, una estrategia que reduce el error acumulado y permite inferencias a menor frecuencia que la del lazo de control. El checkpoint ocupa 0,2 GB y contiene 51.668.614 parámetros en formato safetensors, lo que lo sitúa en la gama de políticas ligeras que se pueden ejecutar en GPU de consumo o incluso en CPU.
 
@@ -86,10 +86,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Tipo de accion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kinderbot/act-kinderbot-grape-v3 | 51.668.614 | chunk de acciones, 6 DoF, entrada de estado + 2 camaras | apache-2.0 | publico en HuggingFace (0 descargas, 0 likes) |
+| kinderbot/act-kinderbot-grape-v3 | 51.668.614 | chunk de acciones, 6 DoF, entrada de estado + 2 camaras | apache-2.0 | publico en Hugging Face (0 descargas, 0 likes) |
 | ACT original (tonyzhaozh/act y variantes) | no disponible en la informacion proporcionada | chunk de acciones, multi-camara, CVAE + transformer | no disponible en la informacion proporcionada | repositorio y checkpoints publicos |
 | Diffusion Policy (variantes de LeRobot) | no disponible en la informacion proporcionada | difusion sobre secuencias de acciones | no disponible en la informacion proporcionada | checkpoints publicos en el Hub |
-| SmolVLA (HuggingFace) | no disponible en la informacion proporcionada | VLA con encoder vision-lenguaje y salida de acciones | no disponible en la informacion proporcionada | publico en el Hub |
+| SmolVLA (Hugging Face) | no disponible en la informacion proporcionada | VLA con encoder vision-lenguaje y salida de acciones | no disponible en la informacion proporcionada | publico en el Hub |
 
 La comparación cuantitativa de éxito por tarea, contexto y rendimiento frente a estas alternativas no es posible con los datos disponibles: no se han publicado evaluaciones del modelo analizado ni se han proporcionado cifras homogéneas de los modelos comparados.
 
@@ -109,7 +109,7 @@ La comparación cuantitativa de éxito por tarea, contexto y rendimiento frente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kinderbot/act-kinderbot-grape-v3
+- Modelo en Hugging Face: https://huggingface.co/kinderbot/act-kinderbot-grape-v3
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/kinderbot/kinderbot-pick-grape
 - Visualizador del dataset (LeRobot Space): https://huggingface.co/spaces/lerobot/visualize_dataset?path=kinderbot/kinderbot-pick-grape
 - Articulo de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705

@@ -88,7 +88,7 @@ Los datos de parametros, contexto y rendimiento de las alternativas no se detall
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nunu-willump/distil-large-v3.5-ct2
+- Modelo en Hugging Face: https://huggingface.co/nunu-willump/distil-large-v3.5-ct2
 - Repositorio upstream en CTranslate2: https://huggingface.co/distil-whisper/distil-large-v3.5-ct2
 - Commit de referencia del upstream: https://huggingface.co/distil-whisper/distil-large-v3.5-ct2/tree/9793ccc07920e0f830e1dba0343efcdf0ef8c903
 - Modelo distil-whisper original (Transformers): https://huggingface.co/distil-whisper/distil-large-v3.5

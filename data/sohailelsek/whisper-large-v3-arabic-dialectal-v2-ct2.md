@@ -6,7 +6,7 @@
 
 El modelo hereda la arquitectura encoder-decoder transformer de Whisper large-v3 (aproximadamente 1550 millones de parametros) y el ajuste fino realizado por oddadmix sobre datos de arabe dialectal, un dominio donde el Whisper original rinde peor que en arabe estandar (MSA) por la variacion lexica, fonetica y de code-switching entre dialectos (egipcio, levantino, golf, magrebi, etc.). La conversion a CTranslate2 es relevante para despliegues en produccion porque habilita inferencia eficiente en CPU y GPU con cuantizacion opcional, algo que la version original en safetensors no ofrece de forma nativa.
 
-La ficha se basa exclusivamente en la informacion publica disponible en HuggingFace: la model card del repositorio convertido es minima y no documenta el proceso de entrenamiento del modelo base, los datos utilizados ni resultados de evaluacion. Cualquier dato no confirmado se marca como no disponible.
+La ficha se basa exclusivamente en la informacion publica disponible en Hugging Face: la model card del repositorio convertido es minima y no documenta el proceso de entrenamiento del modelo base, los datos utilizados ni resultados de evaluacion. Cualquier dato no confirmado se marca como no disponible.
 
 ## Especificaciones tecnicas
 
@@ -85,7 +85,7 @@ La comparativa se limita a variantes de Whisper porque no se dispone de datos de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SohailElsek/whisper-large-v3-arabic-dialectal-v2-ct2
+- Repositorio Hugging Face: https://huggingface.co/SohailElsek/whisper-large-v3-arabic-dialectal-v2-ct2
 - Modelo base: https://huggingface.co/oddadmix/whisper-large-v3-arabic-dialectal-v2
 - Repositorio de faster-whisper: https://github.com/SYSTRAN/faster-whisper
 - Repositorio de CTranslate2: https://github.com/OpenNMT/CTranslate2

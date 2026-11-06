@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario ASD12DSAAW32 bajo el identificador `ASD12DSAAW32/MyAwesomeModel-TestRepo`. Por el nombre del repositorio y por sus métricas de actividad (0 descargas, 0 likes, 0,0 GB de tamano de repositorio y fechas de creación y actualización separadas por once segundos), se trata de un repositorio de prueba o de demostración, sin pesos publicados ni documentación verificable. La model card describe, no obstante, un supuesto modelo de razonamiento con modo de pensamiento extendido, mejora en function calling y reducción de alucinaciones.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario ASD12DSAAW32 bajo el identificador `ASD12DSAAW32/MyAwesomeModel-TestRepo`. Por el nombre del repositorio y por sus métricas de actividad (0 descargas, 0 likes, 0,0 GB de tamano de repositorio y fechas de creación y actualización separadas por once segundos), se trata de un repositorio de prueba o de demostración, sin pesos publicados ni documentación verificable. La model card describe, no obstante, un supuesto modelo de razonamiento con modo de pensamiento extendido, mejora en function calling y reducción de alucinaciones.
 
-El contenido de la model card es claramente una plantilla: los benchmarks se presentan con columnas anonimizadas (`Model1`, `Model2`, `Model1-v2`) sin identificar el conjunto de evaluación ni el protocolo, y las figuras referenciadas (`figures/fig1.png`, `figures/fig3.png`) no están descritas. Además, existe una contradicción entre los metadatos de HuggingFace, que etiquetan el modelo como `bert` y `feature-extraction`, y el texto de la model card, que describe un asistente conversacional con razonamiento y function calling. No se declara arquitectura, número de parámetros, longitud de contexto, idiomas ni formato de pesos.
+El contenido de la model card es claramente una plantilla: los benchmarks se presentan con columnas anonimizadas (`Model1`, `Model2`, `Model1-v2`) sin identificar el conjunto de evaluación ni el protocolo, y las figuras referenciadas (`figures/fig1.png`, `figures/fig3.png`) no están descritas. Además, existe una contradicción entre los metadatos de Hugging Face, que etiquetan el modelo como `bert` y `feature-extraction`, y el texto de la model card, que describe un asistente conversacional con razonamiento y function calling. No se declara arquitectura, número de parámetros, longitud de contexto, idiomas ni formato de pesos.
 
 Por todo ello, esta ficha recoge únicamente lo que el autor afirma explícitamente y marca como «no disponible» todo aquello que la información proporcionada no permite verificar. No es un modelo apto para evaluación técnica ni para uso en producción en su estado actual.
 
@@ -12,7 +12,7 @@ Por todo ello, esta ficha recoge únicamente lo que el autor afirma explícitame
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (los tags de HuggingFace indican `bert`, la model card describe un modelo conversacional de razonamiento) |
+| Arquitectura | no disponible (los tags de Hugging Face indican `bert`, la model card describe un modelo conversacional de razonamiento) |
 | Parámetros totales | no disponible |
 | Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks verificables en la información dis
 - VRAM estimada para inferencia: no disponible. Al no declararse el número de parámetros ni publicarse pesos, no es posible calcular requisitos de memoria.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible. El repositorio tiene un tamano de 0,0 GB, por lo que no hay nada que cargar localmente.
-- Opciones de despliegue: los tags indican compatibilidad con `transformers` y `pytorch`, y el repositorio está marcado como `endpoints_compatible`, de modo que en teoría podría servirse con HuggingFace Inference Endpoints. No hay pesos, por lo que no procede plantear vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: los tags indican compatibilidad con `transformers` y `pytorch`, y el repositorio está marcado como `endpoints_compatible`, de modo que en teoría podría servirse con Hugging Face Inference Endpoints. No hay pesos, por lo que no procede plantear vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponible. La única referencia indirecta es la media de 23K tokens de pensamiento por pregunta en AIME, lo que implicaría una latencia alta en tareas de razonamiento, pero es un dato no verificado.
 
 ## Comparativa con modelos similares
@@ -106,6 +106,6 @@ No disponible. La model card no identifica los modelos de referencia (`Model1`, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASD12DSAAW32/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/ASD12DSAAW32/MyAwesomeModel-TestRepo
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante. Las entradas devueltas corresponden a documentación de soporte de Microsoft sobre el Explorador de archivos de Windows y a tutoriales de foros sobre Windows 11, sin relación alguna con el modelo.
 - Paper, blog oficial, repositorio de código o demo: no disponibles. La model card menciona un «code repository» y un «official website» para ejecutar el modelo en local y acceder a la API, pero no se incluye ninguna URL en la información proporcionada.

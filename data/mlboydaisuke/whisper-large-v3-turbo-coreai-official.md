@@ -88,7 +88,7 @@ La principal diferencia frente a la referencia de OpenAI es el formato de pesos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/whisper-large-v3-turbo-CoreAI-official
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/whisper-large-v3-turbo-CoreAI-official
 - Modelo base de OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo
 - Repositorio coreai-kit (ejemplos, cookbook y QuickStart): https://github.com/john-rocky/coreai-kit
 - Repositorio coreai-models de Apple (receta de export original): https://github.com/apple/coreai-models

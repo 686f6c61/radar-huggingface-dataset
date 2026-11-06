@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CrafterDojo (CrafterVPT / CrafterCLIP / CrafterSteve-1) | Suite de agentes encarnados en Crafter | no disponible | no disponible | MIT | Pesos en HuggingFace y codigo en GitHub |
+| CrafterDojo (CrafterVPT / CrafterCLIP / CrafterSteve-1) | Suite de agentes encarnados en Crafter | no disponible | no disponible | MIT | Pesos en Hugging Face y codigo en GitHub |
 | VPT (Video PreTraining) | Politica por clonacion de comportamiento | no disponible | no disponible | no disponible | Arquitectura de referencia que inspira CrafterVPT |
 | MineCLIP | Codificador video-lenguaje | no disponible | no disponible | no disponible | Arquitectura de referencia que inspira CrafterCLIP |
 | Steve-1 | Politica que sigue instrucciones | no disponible | no disponible | no disponible | Esquema de referencia que inspira CrafterSteve-1 |
@@ -83,7 +83,7 @@ Los tres ultimos elementos no son alternativas equivalentes de descarga directa,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/frechele/CrafterDojo
+- Modelo en Hugging Face: https://huggingface.co/frechele/CrafterDojo
 - Articulo (arXiv): https://arxiv.org/abs/2508.13530
 - Codigo: https://github.com/frechele/CrafterDojo
 - Sitio del proyecto: https://sites.google.com/view/crafterdojo

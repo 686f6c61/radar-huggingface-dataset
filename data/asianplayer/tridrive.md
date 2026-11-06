@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TriDrive es un repositorio de modelo publicado en HuggingFace bajo el identificador `AsianPlayer/TriDrive` por el usuario AsianPlayer. En el momento de la consulta, la información pública disponible se limita a la licencia (cc-by-4.0), la región declarada (us) y las marcas de tiempo de creación y actualización. No se especifica pipeline de inferencia, idiomas soportados, arquitectura ni tamaño.
+TriDrive es un repositorio de modelo publicado en Hugging Face bajo el identificador `AsianPlayer/TriDrive` por el usuario AsianPlayer. En el momento de la consulta, la información pública disponible se limita a la licencia (cc-by-4.0), la región declarada (us) y las marcas de tiempo de creación y actualización. No se especifica pipeline de inferencia, idiomas soportados, arquitectura ni tamaño.
 
 La model card del repositorio no contiene documentación técnica: únicamente incluye el bloque de metadatos de licencia, sin descripción, instrucciones de uso, datos de entrenamiento ni ejemplos. Tampoco hay resultados de benchmarks ni referencias a papers o repositorios asociados.
 
@@ -23,8 +23,8 @@ Por su relevancia práctica, esta ficha se limita a constatar el estado del repo
 | Pipeline declarado | no disponible |
 | Descargas | 0 |
 | Likes | 0 |
-| Fecha de creacion | 2026-10-06 (segun metadatos de HuggingFace) |
-| Fecha de actualizacion | 2026-10-06 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-06 (segun metadatos de Hugging Face) |
+| Fecha de actualizacion | 2026-10-06 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -86,13 +86,13 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 - Riesgo de alucinacion no evaluado: al no existir benchmarks ni evaluaciones de robustez, no hay base para estimar la tasa de error.
 - Sesgos no documentados: se desconoce la composicion del dataset de entrenamiento, por lo que no se pueden anticipar sesgos de genero, idioma, cultura o dominio.
 - Licencia cc-by-4.0: permite uso comercial y modificacion con atribucion, pero no incluye garantias. Conviene verificar si existen condiciones adicionales en el repositorio (por ejemplo, en ficheros de pesos o en avisos sobre datos de entrenamiento) antes de integrarlo en produccion.
-- Inconsistencia temporal: las fechas de creacion y actualizacion declaradas (2026-10-06) son posteriores a la fecha habitual de consulta, un detalle que conviene verificar directamente en HuggingFace.
+- Inconsistencia temporal: las fechas de creacion y actualizacion declaradas (2026-10-06) son posteriores a la fecha habitual de consulta, un detalle que conviene verificar directamente en Hugging Face.
 - Sin ficheros ni pipeline declarados: no se puede confirmar que el repositorio contenga pesos utilizables ni como cargarlos.
 - Recomendacion operativa: no emplear este modelo en entornos de produccion, sanitarios, legales o financieros sin una evaluacion propia previa sobre datos representativos del dominio objetivo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AsianPlayer/TriDrive
+- Repositorio en Hugging Face: https://huggingface.co/AsianPlayer/TriDrive
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible
 - Demo o space: no disponible

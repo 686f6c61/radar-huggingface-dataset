@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`doyeon97/gemma-2b-brain-v1` es un ajuste fino (finetune) del modelo `unsloth/gemma-4-E2B-it-unsloth-bnb-4bit`, publicado por el usuario doyeon97 en HuggingFace. Se trata de un modelo derivado de la familia Gemma 4 de Google, concretamente de la variante E2B en su version instruction-tuned y cuantizada a 4 bits por Unsloth, sobre la que se ha aplicado un entrenamiento adicional utilizando la libreria Unsloth y TRL de HuggingFace. El pipeline declarado es `image-text-to-text`, lo que indica que el modelo conserva capacidades multimodales de entrada (imagen y texto) heredadas del modelo base.
+`doyeon97/gemma-2b-brain-v1` es un ajuste fino (finetune) del modelo `unsloth/gemma-4-E2B-it-unsloth-bnb-4bit`, publicado por el usuario doyeon97 en Hugging Face. Se trata de un modelo derivado de la familia Gemma 4 de Google, concretamente de la variante E2B en su version instruction-tuned y cuantizada a 4 bits por Unsloth, sobre la que se ha aplicado un entrenamiento adicional utilizando la libreria Unsloth y TRL de Hugging Face. El pipeline declarado es `image-text-to-text`, lo que indica que el modelo conserva capacidades multimodales de entrada (imagen y texto) heredadas del modelo base.
 
 El modelo cuenta con 5.123.178.051 parametros segun los pesos en safetensors, lo que contradice parcialmente la denominacion "2b" del nombre del repositorio; la cifra real de parametros almacenados corresponde a un modelo de aproximadamente 5.100 millones de parametros. El repositorio ocupa 10,3 GB y se distribuye bajo licencia Apache 2.0. El unico idioma declarado es el ingles.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada: se trata de un modelo con cero descarga
 
 La arquitectura subyacente corresponde a la familia Gemma 4, en su variante E2B, segun los tags del repositorio (`gemma4`). No se dispone de informacion publicada sobre el numero de capas, dimensiones ocultas, mecanismo de atencion ni si emplea tecnicas como atencion lineal o decodificacion especulativa. El modelo base es la version instruction-tuned de Unsloth cuantizada a 4 bits (`unsloth/gemma-4-E2B-it-unsloth-bnb-4bit`), lo que sugiere que el punto de partida ya incorpora ajuste por instrucciones.
 
-El entrenamiento del finetune se realizo con Unsloth y la libreria TRL de HuggingFace, segun indica la model card. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF, DPO o cualquier otra tecnica de alineacion adicional, ni la duracion o el hardware empleado. La unica afirmacion tecnica concreta es que el entrenamiento fue "2x faster" gracias a Unsloth, lo cual es una caracteristica de la herramienta, no del modelo. No hay informacion sobre la innovacion tecnica del finetune ni sobre que capacidades se pretendian mejorar respecto al modelo base.
+El entrenamiento del finetune se realizo con Unsloth y la libreria TRL de Hugging Face, segun indica la model card. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF, DPO o cualquier otra tecnica de alineacion adicional, ni la duracion o el hardware empleado. La unica afirmacion tecnica concreta es que el entrenamiento fue "2x faster" gracias a Unsloth, lo cual es una caracteristica de la herramienta, no del modelo. No hay informacion sobre la innovacion tecnica del finetune ni sobre que capacidades se pretendian mejorar respecto al modelo base.
 
 ## Capacidades
 
@@ -82,6 +82,6 @@ No se dispone de datos suficientes para comparar rendimiento, contexto o calidad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/doyeon97/gemma-2b-brain-v1
+- Hugging Face: https://huggingface.co/doyeon97/gemma-2b-brain-v1
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-unsloth-bnb-4bit
 - Unsloth (GitHub): https://github.com/unslothai/unsloth

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-T2I-Super-Tiny-Mini-Small es un modelo de generación de imágenes a partir de texto (text-to-image) publicado por el usuario mondk en HuggingFace bajo licencia MIT. El repositorio ocupa 0.0 GB y acumula 0 descargas y 0 likes en el momento de la consulta, lo que indica que se trata de un experimento personal sin pesos distribuidos ni documentación técnica asociada. La model card se limita a la frase «test for fun. ty», sin descripción de arquitectura, datos de entrenamiento ni resultados.
+T2I-Super-Tiny-Mini-Small es un modelo de generación de imágenes a partir de texto (text-to-image) publicado por el usuario mondk en Hugging Face bajo licencia MIT. El repositorio ocupa 0.0 GB y acumula 0 descargas y 0 likes en el momento de la consulta, lo que indica que se trata de un experimento personal sin pesos distribuidos ni documentación técnica asociada. La model card se limita a la frase «test for fun. ty», sin descripción de arquitectura, datos de entrenamiento ni resultados.
 
 Las etiquetas declaradas (t2i, tiny, mini, small) apuntan a una familia de variantes de tamaño reducido, presumiblemente orientadas a inferencia en hardware limitado, pero no existe confirmación documental de número de parámetros, resolución de salida, tokenizador ni arquitectura subyacente. Conviene subrayar que esa lectura es una inferencia a partir de las etiquetas y no un dato verificado por el autor.
 
@@ -29,7 +29,7 @@ Respecto al entrenamiento, se desconoce por completo el volumen de tokens o pare
 
 ## Capacidades
 
-- Generación de imágenes a partir de texto: es la única capacidad declarada, mediante la etiqueta de pipeline `text-to-image` de HuggingFace.
+- Generación de imágenes a partir de texto: es la única capacidad declarada, mediante la etiqueta de pipeline `text-to-image` de Hugging Face.
 - No hay información sobre resolución de salida, relación de aspecto soportada ni número de pasos de muestreo.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -82,6 +82,6 @@ No disponible. Al desconocerse el número de parámetros, la resolución y la ar
 
 ## Enlaces
 
-- [HuggingFace: mondk/T2I-Super-Tiny-Mini-Small](https://huggingface.co/mondk/T2I-Super-Tiny-Mini-Small)
+- [Hugging Face: mondk/T2I-Super-Tiny-Mini-Small](https://huggingface.co/mondk/T2I-Super-Tiny-Mini-Small)
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la información disponible.

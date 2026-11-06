@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sarath OM 1.1 es un modelo publicado en HuggingFace bajo el identificador `sarath-om/sarath_om-1.1` y distribuido principalmente a través del runtime Ollama. Según los metadatos del repositorio, se trata de un modelo de la familia Qwen2 (etiqueta `qwen2` en los tags) con 1.543.714.304 parámetros totales verificados a partir de los pesos en safetensors, lo que lo sitúa en el rango de aproximadamente 1,5 mil millones de parámetros. La model card declara capacidades de entrada de texto e imagen, visión, tool calling y modo de razonamiento (thinking), así como una ventana de contexto anunciada de 256K tokens.
+Sarath OM 1.1 es un modelo publicado en Hugging Face bajo el identificador `sarath-om/sarath_om-1.1` y distribuido principalmente a través del runtime Ollama. Según los metadatos del repositorio, se trata de un modelo de la familia Qwen2 (etiqueta `qwen2` en los tags) con 1.543.714.304 parámetros totales verificados a partir de los pesos en safetensors, lo que lo sitúa en el rango de aproximadamente 1,5 mil millones de parámetros. La model card declara capacidades de entrada de texto e imagen, visión, tool calling y modo de razonamiento (thinking), así como una ventana de contexto anunciada de 256K tokens.
 
 Es relevante señalar que la propia model card aclara de forma explícita que Sarath AI es una plataforma de software e integración, no un proyecto de desarrollo o entrenamiento de modelos fundacionales. El autor no reclama la autoría del modelo base ni documenta el origen upstream, el proceso de entrenamiento, los datos utilizados ni los resultados de evaluación. Esto convierte a Sarath OM 1.1 en un artefacto de distribución cuyo valor técnico debe evaluarse con cautela, ya que la información verificable es escasa y parte de las especificaciones publicadas (contexto de 256K, tamaño de 3,3 GB) no concuerdan con los 1,54 mil millones de parámetros y el tamaño del repositorio de 5,2 GB.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Vision | Tool calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Sarath OM 1.1 | 1,54B (verificado) | 256K anunciado | Listado | Listado | No disponible | HuggingFace y Ollama |
-| Qwen2-VL-2B (referencia de familia) | ~2B | 32K (ampliable) | Sí | Sí | Apache 2.0 (según el modelo original) | HuggingFace, vLLM, etc. |
-| SmolVLM-2B (referencia de familia) | ~2B | 8K-16K según variante | Sí | Parcial | Apache 2.0 (según el modelo original) | HuggingFace, llama.cpp |
-| Gemma 3 1B (referencia de familia) | ~1B | 32K | Sí (en variantes multimodales) | Sí | Términos de Gemma | HuggingFace, Ollama |
+| Sarath OM 1.1 | 1,54B (verificado) | 256K anunciado | Listado | Listado | No disponible | Hugging Face y Ollama |
+| Qwen2-VL-2B (referencia de familia) | ~2B | 32K (ampliable) | Sí | Sí | Apache 2.0 (según el modelo original) | Hugging Face, vLLM, etc. |
+| SmolVLM-2B (referencia de familia) | ~2B | 8K-16K según variante | Sí | Parcial | Apache 2.0 (según el modelo original) | Hugging Face, llama.cpp |
+| Gemma 3 1B (referencia de familia) | ~1B | 32K | Sí (en variantes multimodales) | Sí | Términos de Gemma | Hugging Face, Ollama |
 
 La comparativa con modelos de la familia Qwen2-VL, SmolVLM o Gemma 3 es orientativa: la información disponible no permite confirmar que Sarath OM 1.1 sea un fine-tuning de alguno de ellos, ni que sus capacidades declaradas (visión, tool calling, thinking) estén a la altura de esos modelos. La principal diferencia es la falta de licencia explícita y de documentación sobre procedencia y evaluación en Sarath OM 1.1.
 
@@ -84,7 +84,7 @@ La comparativa con modelos de la familia Qwen2-VL, SmolVLM o Gemma 3 es orientat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sarath-om/sarath_om-1.1
+- Modelo en Hugging Face: https://huggingface.co/sarath-om/sarath_om-1.1
 - Modelo en Ollama: https://ollama.com/sarath-om/sarath_om-1.1
 - Sitio web oficial: https://sarath.openflip.in/
 - GitHub del proyecto: https://github.com/Sarath-Om

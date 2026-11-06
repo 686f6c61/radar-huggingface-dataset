@@ -4,7 +4,7 @@
 
 El modelo `JoaoReiz/ner-pt-f1-v1-bertimbau-large-specific-paramopama-seed123` es un sistema de reconocimiento de entidades nombradas (NER) para portugués, desarrollado por JoaoReiz. Se trata de un fine-tuning del modelo BERTimbau large (`neuralmind/bert-large-portuguese-cased`) sobre el split `paramopama` del protocolo NEVE NER, un conjunto de datos diseñado para evaluar el rendimiento de modelos NER en portugués. El modelo está entrenado con una semilla fija (123) y seleccionado según la métrica `validation_end_to_end_f1`, lo que sugiere un enfoque de evaluación orientado a la precisión integral de la extracción de entidades.
 
-La relevancia de este modelo radica en que ofrece una alternativa especializada para tareas de NER en portugués, un idioma con menos recursos que el inglés. Al estar basado en BERTimbau large, hereda la arquitectura transformer encoder de BERT con 24 capas y 335 millones de parámetros, con una longitud de contexto limitada a 512 tokens. Está diseñado para su uso con la librería Transformers de HuggingFace y su pipeline de token-classification, lo que facilita su integración en aplicaciones de procesamiento de lenguaje natural.
+La relevancia de este modelo radica en que ofrece una alternativa especializada para tareas de NER en portugués, un idioma con menos recursos que el inglés. Al estar basado en BERTimbau large, hereda la arquitectura transformer encoder de BERT con 24 capas y 335 millones de parámetros, con una longitud de contexto limitada a 512 tokens. Está diseñado para su uso con la librería Transformers de Hugging Face y su pipeline de token-classification, lo que facilita su integración en aplicaciones de procesamiento de lenguaje natural.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ El fine-tuning se realizo sobre el split `paramopama` del protocolo NEVE NER, un
 
 - Reconocimiento de entidades nombradas en portugues (personas, organizaciones, lugares, fechas, etc.) mediante clasificacion de tokens.
 - Procesamiento de texto con distincion de mayusculas/minusculas, lo que mejora la deteccion de entidades en contextos donde la capitalizacion es significativa.
-- Integracion nativa con el pipeline `token-classification` de HuggingFace Transformers, permitiendo extraer entidades directamente con la API estandar.
+- Integracion nativa con el pipeline `token-classification` de Hugging Face Transformers, permitiendo extraer entidades directamente con la API estandar.
 - Compatible con `endpoints_compatible`, lo que facilita su despliegue en servicios de inferencia gestionados.
 - Soporte multilingue limitado al portugues, aunque el modelo base BERTimbau fue entrenado principalmente con portugues brasileño, por lo que su rendimiento puede variar con variantes del portugues europeo o africano.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: el modelo tiene 333 millones de parametros. En FP32 (4 bytes por parametro) ocupa aproximadamente 1,33 GB, por lo que cabria en una GPU con 2 GB de VRAM. En FP16 (2 bytes) ocupa unos 670 MB, y en cuantizacion INT8 (1 byte) unos 335 MB.
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM es suficiente para inferencia en FP32. Una RTX 3060, RTX 4060 o equivalente puede ejecutarlo sin problemas. Para entrenamiento o fine-tuning adicional se recomienda una GPU con 8 GB o mas.
 - Compatible con GPUs consumer: si, es un modelo relativamente pequeno que cabe en la mayoria de tarjetas graficas modernas.
-- Opciones de despliegue: al usar la libreria Transformers, puede desplegarse con herramientas como HuggingFace Inference Endpoints, vLLM (aunque vLLM esta orientado a modelos generativos, soporta encoders), o en un servidor Python con FastAPI. No es compatible con llama.cpp ni Ollama, ya que estos se centran en modelos de lenguaje generativos y no en encoders como BERT.
+- Opciones de despliegue: al usar la libreria Transformers, puede desplegarse con herramientas como Hugging Face Inference Endpoints, vLLM (aunque vLLM esta orientado a modelos generativos, soporta encoders), o en un servidor Python con FastAPI. No es compatible con llama.cpp ni Ollama, ya que estos se centran en modelos de lenguaje generativos y no en encoders como BERT.
 - Latencia y throughput: no se dispone de mediciones publicadas. En una GPU moderna, la inferencia sobre secuencias de hasta 512 tokens deberia completarse en decenas de milisegundos, pero depende del hardware y del lote.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-bertimbau-large-specific-paramopama-seed123
+- Modelo en Hugging Face: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-bertimbau-large-specific-paramopama-seed123
 - Modelo base BERTimbau large: https://huggingface.co/neuralmind/bert-large-portuguese-cased
 - Repositorio de BERTimbau en GitHub (referencia): https://github.com/ClaudioSS01/portuguese-Bertimbau
 - Repositorio alternativo de BERTimbau: https://github.com/marcosyonaware/portuguese-Bertimbau

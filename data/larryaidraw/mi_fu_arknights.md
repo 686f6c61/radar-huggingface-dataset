@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`LarryAIDraw/mi_fu_arknights` es un adaptador de tipo LoRA publicado en HuggingFace por el usuario LarryAIDraw (LarryChen) para la generación de imágenes del personaje Mi Fu, perteneciente al videojuego *Arknights: Endfield*. No se trata de un modelo de lenguaje ni de un modelo fundacional: es un ajuste fino de bajo rango que se aplica sobre un modelo base de difusión del ecosistema SDXL, concretamente la familia Illustrious, según la ficha paralela del autor en Civitai. Su función es inyectar en el modelo base el conocimiento visual de un personaje concreto (rasgos faciales, peinado, vestuario y paleta) mediante una palabra de activación.
+`LarryAIDraw/mi_fu_arknights` es un adaptador de tipo LoRA publicado en Hugging Face por el usuario LarryAIDraw (LarryChen) para la generación de imágenes del personaje Mi Fu, perteneciente al videojuego *Arknights: Endfield*. No se trata de un modelo de lenguaje ni de un modelo fundacional: es un ajuste fino de bajo rango que se aplica sobre un modelo base de difusión del ecosistema SDXL, concretamente la familia Illustrious, según la ficha paralela del autor en Civitai. Su función es inyectar en el modelo base el conocimiento visual de un personaje concreto (rasgos faciales, peinado, vestuario y paleta) mediante una palabra de activación.
 
 El repositorio ocupa 0,5 GB y contiene únicamente los pesos del adaptador, sin model card descriptiva más allá del campo de licencia. No se declaran parámetros, dataset de entrenamiento, resolución nativa ni resultados de evaluación, lo que limita cualquier valoración cuantitativa. La relevancia de este tipo de publicación es práctica: permite a ilustradores y desarrolladores reproducir un personaje consistente en pipelines de generación de imagen sin reentrenar el modelo base.
 
@@ -12,7 +12,7 @@ Por su naturaleza, la ficha se ha elaborado a partir de los metadatos del reposi
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA sobre un modelo de difusion del ecosistema SDXL (familia Illustrious, segun la ficha del autor en Civitai); no confirmado en el repositorio de HuggingFace |
+| Arquitectura | Adaptador LoRA sobre un modelo de difusion del ecosistema SDXL (familia Illustrious, segun la ficha del autor en Civitai); no confirmado en el repositorio de Hugging Face |
 | Parametros totales | No disponible (el repositorio solo contiene los pesos del adaptador, 0,5 GB; no se declara el rango ni el numero de parametros entrenables) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica (modelo de generacion de imagen); no disponible la resolucion nativa de entrenamiento |
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Para 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LarryAIDraw/mi_fu_arknights | LoRA de personaje sobre base SDXL/Illustrious | No disponible (repo de 0,5 GB) | No aplica | CreativeML OpenRAIL-M | HuggingFace, Civitai, PixAI |
-| LarryAIDraw/Mi_Fu_Arknights_Endfield | Adaptador del mismo personaje y autor, presumiblemente otra version o base | No disponible | No aplica | No disponible en la informacion | HuggingFace |
+| LarryAIDraw/mi_fu_arknights | LoRA de personaje sobre base SDXL/Illustrious | No disponible (repo de 0,5 GB) | No aplica | CreativeML OpenRAIL-M | Hugging Face, Civitai, PixAI |
+| LarryAIDraw/Mi_Fu_Arknights_Endfield | Adaptador del mismo personaje y autor, presumiblemente otra version o base | No disponible | No aplica | No disponible en la informacion | Hugging Face |
 | LoRA de personaje generico en Illustrious (Civitai) | LoRA de personaje | No disponible | No aplica | Variable segun autor (a menudo CreativeML OpenRAIL-M) | Civitai |
-| Checkpoint base Illustrious / Nova Anime XL | Modelo de difusion completo | No disponible en la informacion | No aplica | CreativeML OpenRAIL-M en la familia Illustrious | HuggingFace, Civitai |
+| Checkpoint base Illustrious / Nova Anime XL | Modelo de difusion completo | No disponible en la informacion | No aplica | CreativeML OpenRAIL-M en la familia Illustrious | Hugging Face, Civitai |
 
 La comparacion cuantitativa no es posible: ninguno de los terminos de comparacion publica parametros ni metricas en la informacion consultada. La diferencia funcional relevante es que este repositorio contiene solo el adaptador, por lo que requiere descargar ademas un checkpoint base compatible.
 
@@ -86,9 +86,9 @@ La comparacion cuantitativa no es posible: ninguno de los terminos de comparacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LarryAIDraw/mi_fu_arknights
+- Repositorio Hugging Face: https://huggingface.co/LarryAIDraw/mi_fu_arknights
 - Repositorio relacionado del mismo autor: https://huggingface.co/LarryAIDraw/Mi_Fu_Arknights_Endfield
-- Perfil del autor en HuggingFace: https://huggingface.co/LarryAIDraw
+- Perfil del autor en Hugging Face: https://huggingface.co/LarryAIDraw
 - Ficha en Civitai (v1.0 Illustrious): https://civitai.com/models/3017717/mi-fu-arknights
 - Ficha en PixAI (Mi Fu, Arknights: Endfield): https://pixai.art/en/model/1975266501473351724
 - Ficha alternativa en PixAI: https://pixai.art/en/model/1972192057629142059

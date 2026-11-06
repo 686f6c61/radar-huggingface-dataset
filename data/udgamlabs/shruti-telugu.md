@@ -80,9 +80,9 @@ En conversación con mezcla de inglés (DiarBench, inglés en inglés), Shruti T
 
 | Modelo | Parametros | Contexto | WER DiarBench (ingles en ingles) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **Shruti Telugu** | 55,9M | Audio de cualquier longitud | 45,4 | Apache-2.0 | HuggingFace, motor propio |
-| IndicConformer Telugu (int8) | No disponible (137,7 MB) | No disponible | 52,9 | No disponible en el extracto | HuggingFace (ONNX) |
-| Whisper-base Telugu (vasista22) | No disponible (290,5 MB) | No disponible | 55,3 | No disponible en el extracto | HuggingFace |
+| **Shruti Telugu** | 55,9M | Audio de cualquier longitud | 45,4 | Apache-2.0 | Hugging Face, motor propio |
+| IndicConformer Telugu (int8) | No disponible (137,7 MB) | No disponible | 52,9 | No disponible en el extracto | Hugging Face (ONNX) |
+| Whisper-base Telugu (vasista22) | No disponible (290,5 MB) | No disponible | 55,3 | No disponible en el extracto | Hugging Face |
 | Vosk Telugu (small, 0.42) | No disponible (60,5 MB) | No disponible | 93,8 | No disponible en el extracto | alphacephei.com |
 
 Shruti Telugu ofrece el mejor WER en conversación con code-switching entre los modelos comparados, con el fichero más pequeño (29,7 MB) y licencia Apache-2.0 explícita. IndicConformer Telugu es más preciso en telugu leído (FLEURS 24,5 frente a 38,0) pero casi cinco veces más grande y con WER superior en conversación. Los fine-tunes de Whisper Telugu son más grandes y rinden peor en conversación, aunque Whisper-base Telugu supera a Shruti en FLEURS (28,9 frente a 38,0).
@@ -97,8 +97,8 @@ Shruti Telugu ofrece el mejor WER en conversación con code-switching entre los 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/udgamlabs/shruti-telugu)
-- [Demo en HuggingFace Spaces](https://huggingface.co/spaces/udgamlabs/Shruti)
+- [Modelo en Hugging Face](https://huggingface.co/udgamlabs/shruti-telugu)
+- [Demo en Hugging Face Spaces](https://huggingface.co/spaces/udgamlabs/Shruti)
 - [Prueba en navegador (Udgam Labs)](https://udgamlabs.com/models/shruti#telugu)
 - [Código y ejemplos en GitHub](https://github.com/udgamlabs/shruti/blob/main/docs/telugu.md)
 - [Shruti Hindi (modelo base)](https://huggingface.co/udgamlabs/Shruti)

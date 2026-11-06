@@ -83,7 +83,7 @@ No se dispone de comparaciones con otros adapters especificos para WebShop. El u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/miyuki17/openevo-h136-qwen25-7b-webshop-lora
+- Repositorio Hugging Face: https://huggingface.co/miyuki17/openevo-h136-qwen25-7b-webshop-lora
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Coleccion Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
 - Informe tecnico Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115

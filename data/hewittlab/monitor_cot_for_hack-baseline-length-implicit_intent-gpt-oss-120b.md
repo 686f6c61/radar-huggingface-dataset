@@ -55,10 +55,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 ## Comparativa con modelos similares
 | Modelo | Tipo | Tarea | Semillas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `monitor_cot_for_hack-baseline-length-implicit_intent-gpt-oss-120b` | LoRA rango 32 sobre gpt-oss-120b | `length`, intencion implicita | 0, 1, 2 | no disponible | HuggingFace |
-| `monitor_cot_for_hack-baseline-length-explicit_intent-gpt-oss-120b` | LoRA rango 32 sobre gpt-oss-120b | `length`, intencion explicita | no disponible | no disponible | HuggingFace |
-| `monitor_cot_for_hack-baseline-judge-explicit_intent-gpt-oss-120b` | LoRA rango 32 sobre gpt-oss-120b | `judge` (preferencias de Chatbot Arena) | no disponible | no disponible | HuggingFace |
-| `openai/gpt-oss-120b` | Modelo base completo | Proposito general | no aplica | no disponible en esta ficha | HuggingFace |
+| `monitor_cot_for_hack-baseline-length-implicit_intent-gpt-oss-120b` | LoRA rango 32 sobre gpt-oss-120b | `length`, intencion implicita | 0, 1, 2 | no disponible | Hugging Face |
+| `monitor_cot_for_hack-baseline-length-explicit_intent-gpt-oss-120b` | LoRA rango 32 sobre gpt-oss-120b | `length`, intencion explicita | no disponible | no disponible | Hugging Face |
+| `monitor_cot_for_hack-baseline-judge-explicit_intent-gpt-oss-120b` | LoRA rango 32 sobre gpt-oss-120b | `judge` (preferencias de Chatbot Arena) | no disponible | no disponible | Hugging Face |
+| `openai/gpt-oss-120b` | Modelo base completo | Proposito general | no aplica | no disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de rendimiento que permitan comparar cuantitativamente estos adaptadores entre si o con alternativas.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento que permitan comparar cuantitativamente es
 - La fusion requiere excluir las carpetas `original/` y `metal/` del modelo base, segun indica la model card.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-length-implicit_intent-gpt-oss-120b
+- Modelo en Hugging Face: https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-length-implicit_intent-gpt-oss-120b
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Dataset de entrenamiento: https://huggingface.co/datasets/hewittlab/monitor_cot_for_hack-length
 - Dataset de instrucciones de origen: https://huggingface.co/datasets/HuggingFaceH4/helpful-instructions

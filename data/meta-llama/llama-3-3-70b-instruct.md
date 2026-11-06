@@ -4,7 +4,7 @@
 
 Llama 3.3 70B Instruct es un modelo de lenguaje de gran tamaño desarrollado por Meta, publicado en noviembre de 2024. Se trata de una versión instruida y optimizada para tareas de texto, construida a partir del modelo base Llama 3.1 70B mediante fine-tuning. Meta lo presenta como una mejora significativa respecto a Llama 3.1 70B y Llama 3.2 90B en aplicaciones de solo texto, llegando a acercarse al rendimiento de Llama 3.1 405B en ciertos casos de uso.
 
-El modelo cuenta con 70.553.706.496 parámetros, es de tipo transformer denso (no MoE) y está disponible bajo la licencia llama3.3, que permite uso comercial con condiciones. Soporta ocho idiomas principales: inglés, francés, italiano, portugués, hindi, español, tailandés y alemán. Su acceso en HuggingFace es restringido (gated), por lo que es necesario aceptar los términos de uso antes de descargarlo. Es relevante ahora porque ofrece un rendimiento cercano a modelos mucho más grandes con un coste computacional menor, lo que lo convierte en una opción atractiva para despliegues en producción.
+El modelo cuenta con 70.553.706.496 parámetros, es de tipo transformer denso (no MoE) y está disponible bajo la licencia llama3.3, que permite uso comercial con condiciones. Soporta ocho idiomas principales: inglés, francés, italiano, portugués, hindi, español, tailandés y alemán. Su acceso en Hugging Face es restringido (gated), por lo que es necesario aceptar los términos de uso antes de descargarlo. Es relevante ahora porque ofrece un rendimiento cercano a modelos mucho más grandes con un coste computacional menor, lo que lo convierte en una opción atractiva para despliegues en producción.
 
 ## Especificaciones tecnicas
 
@@ -67,12 +67,12 @@ La comparativa se basa en las afirmaciones de Meta recogidas en la documentació
 - Riesgo de alucinación: puede generar información falsa o inventada, especialmente en temas de actualidad o muy específicos. Es necesario verificar las respuestas en aplicaciones críticas.
 - Limitaciones de idioma: aunque soporta ocho idiomas, el rendimiento puede variar significativamente entre ellos; los idiomas con menos representación en el entrenamiento probablemente tengan peor calidad.
 - Restricciones de licencia: la licencia llama3.3 permite uso comercial, pero requiere aceptar los términos de uso de Meta, que incluyen restricciones sobre el uso de los modelos para mejorar otros modelos de lenguaje y políticas de uso aceptable.
-- Acceso restringido: el modelo es de acceso gated en HuggingFace, por lo que es necesario solicitar acceso y ser aprobado por Meta.
+- Acceso restringido: el modelo es de acceso gated en Hugging Face, por lo que es necesario solicitar acceso y ser aprobado por Meta.
 - Requisitos de hardware: el tamaño del modelo hace que su despliegue sea costoso y requiera infraestructura especializada, lo que puede ser una barrera para equipos pequeños.
 
 ## Enlaces
 
-- [HuggingFace - meta-llama/Llama-3.3-70B-Instruct](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct)
+- [Hugging Face - meta-llama/Llama-3.3-70B-Instruct](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct)
 - [Documentación oficial de Meta - Llama 3.3](https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_3/)
 - [Oracle Cloud Infrastructure - Meta Llama 3.3 (70B)](https://docs.oracle.com/en-us/iaas/Content/generative-ai/meta-llama-3-3-70b.htm)
 - [Página general de Llama 3 en Meta](https://developer.meta.com/ai/models/llama-3/)

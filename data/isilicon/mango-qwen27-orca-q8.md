@@ -71,10 +71,10 @@ Adicionalmente, el estudio de esfuerzo de Qwen sobre una cohorte de 404 pregunta
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mango Qwen27 Orca Q8 (este) | 27,32 B | no disponible | Q8_0 GGUF | Apache 2.0 | HuggingFace, espejo con SHA-256 |
-| Qwen3.8 27B Cyber IQ4_XS imatrix | 27 B (linaje) | no disponible | IQ4_XS GGUF | no disponible en la información | HuggingFace, repo Mango |
-| Qwen3.8 27B Cyber Q6_K | 27 B (linaje) | no disponible | Q6_K GGUF | no disponible en la información | HuggingFace, repo Mango |
-| Qwen3.8 27B MLX affine 4-bit OrcaRouter | 27 B (linaje) | no disponible | MLX 4-bit | Apache 2.0 (según linaje) | HuggingFace, repo Mango |
+| Mango Qwen27 Orca Q8 (este) | 27,32 B | no disponible | Q8_0 GGUF | Apache 2.0 | Hugging Face, espejo con SHA-256 |
+| Qwen3.8 27B Cyber IQ4_XS imatrix | 27 B (linaje) | no disponible | IQ4_XS GGUF | no disponible en la información | Hugging Face, repo Mango |
+| Qwen3.8 27B Cyber Q6_K | 27 B (linaje) | no disponible | Q6_K GGUF | no disponible en la información | Hugging Face, repo Mango |
+| Qwen3.8 27B MLX affine 4-bit OrcaRouter | 27 B (linaje) | no disponible | MLX 4-bit | Apache 2.0 (según linaje) | Hugging Face, repo Mango |
 
 La comparativa relevante es interna al linaje: el Q8_0 prioriza fidelidad al modelo original a costa de tamaño, mientras que el IQ4_XS reduce el payload a una fracción y el MLX 4-bit está optimizado para Apple Silicon. No se dispone de datos de benchmarks comparables entre estas configuraciones sobre las mismas tareas, salvo las puntuaciones parciales de la tabla anterior, que corresponden a variantes "Cyber" y no al modelo OrcaRouter evaluado aquí.
 
@@ -91,7 +91,7 @@ La comparativa relevante es interna al linaje: el Q8_0 prioriza fidelidad al mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/isilicon/mango-qwen27-orca-q8
+- Repositorio Hugging Face: https://huggingface.co/isilicon/mango-qwen27-orca-q8
 - Fichero de pesos: https://huggingface.co/isilicon/mango-qwen27-orca-q8/resolve/main/orcarouter_Qwen3.8-27B-Uncensored-Q8_0.gguf
 - Modelo base (bartowski): https://huggingface.co/bartowski/orcarouter_Qwen3.8-27B-Uncensored-GGUF
 - Colección Mango de modelos probados y espejos: https://huggingface.co/collections/isilicon/mango-tested-models-and-preservation-mirrors-6ae3b73994c895ab42e360d2

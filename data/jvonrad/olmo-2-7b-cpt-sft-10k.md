@@ -77,9 +77,9 @@ No se dispone de informacion sobre otros adaptadores comparables en la misma cat
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/jvonrad/OLMo-2-7B-CPT-SFT-10k)
-- [HuggingFace - modelo base](https://huggingface.co/jvonrad/olmo-2-7b-finetranslations)
-- [HuggingFace - dataset PolyFact-Clean](https://huggingface.co/datasets/jvonrad/PolyFact-Clean)
-- [HuggingFace - OLMo-2-1124-7B (modelo original de AI2)](https://huggingface.co/allenai/OLMo-2-1124-7B)
+- [Hugging Face - modelo](https://huggingface.co/jvonrad/OLMo-2-7B-CPT-SFT-10k)
+- [Hugging Face - modelo base](https://huggingface.co/jvonrad/olmo-2-7b-finetranslations)
+- [Hugging Face - dataset PolyFact-Clean](https://huggingface.co/datasets/jvonrad/PolyFact-Clean)
+- [Hugging Face - OLMo-2-1124-7B (modelo original de AI2)](https://huggingface.co/allenai/OLMo-2-1124-7B)
 - [GitHub - repositorio OLMo de AI2](https://github.com/allenai/OLMo)
 - [Sitio web de OLMo](https://allenai.org/olmo)

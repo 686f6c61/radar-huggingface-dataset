@@ -106,7 +106,7 @@ Estimaciones a partir del numero de parametros (27,3B); los pesos en BF16 ocupar
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/brainnxdomain/Hemmingway-1-Heretic-MTP-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/brainnxdomain/Hemmingway-1-Heretic-MTP-GGUF
 - Version V2 (trial 208): https://huggingface.co/brainnxdomain/Hemmingway-1-Heretic-MTP-GGUF-V2
 - Version V3 recomendada: https://huggingface.co/brainnxdomain/Hemmingway-1-Heretic-MTP-V3-Final-GGUF
 - Modelo base Altworld/Hemmingway-1: https://huggingface.co/Altworld/Hemmingway-1

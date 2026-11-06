@@ -65,5 +65,5 @@ No disponible. No se ha proporcionado información sobre modelos comparables de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mattewg/pi05-xarm7-shaver-stage0
+- Hugging Face: https://huggingface.co/mattewg/pi05-xarm7-shaver-stage0
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios) en los resultados de la búsqueda web.

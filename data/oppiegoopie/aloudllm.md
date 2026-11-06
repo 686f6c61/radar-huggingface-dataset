@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AloudLLM es un modelo publicado en HuggingFace por el usuario oppiegoopie bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes, y fue creado y actualizado en la misma fecha (2026-11-01), lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
+AloudLLM es un modelo publicado en Hugging Face por el usuario oppiegoopie bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes, y fue creado y actualizado en la misma fecha (2026-11-01), lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. Tampoco se han publicado resultados de benchmarks ni detalles sobre el proceso de entrenamiento. Cualquier evaluacion de sus capacidades requeriria inspeccionar directamente los pesos del repositorio, que no se han podido analizar con la informacion proporcionada.
 
@@ -39,7 +39,7 @@ Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, at
 ## Casos de uso
 
 - Evaluacion experimental: el modelo puede descargarse y probarse en un entorno aislado para determinar empiricamente sus capacidades, dado que no existe documentacion que las describa.
-- Investigacion de artefactos publicados: util para estudiar patrones de publicacion de modelos sin documentacion en HuggingFace.
+- Investigacion de artefactos publicados: util para estudiar patrones de publicacion de modelos sin documentacion en Hugging Face.
 - Pruebas de infraestructura: puede servir como carga de prueba en pipelines de despliegue (vLLM, TGI, llama.cpp) para validar configuraciones, siempre que se confirme el formato de pesos.
 - Fine-tuning exploratorio: si los pesos resultan ser de un modelo base conocido, podria emplearse como punto de partida, previa inspeccion del repositorio.
 - Docencia y formacion: como ejemplo de repositorio con licencia permisiva pero sin model card tecnica, para ilustrar buenas practicas de documentacion.
@@ -79,5 +79,5 @@ No es posible establecer una comparativa fundamentada: se desconoce el tamano, l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/oppiegoopie/AloudLLM
+- Repositorio en Hugging Face: https://huggingface.co/oppiegoopie/AloudLLM
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

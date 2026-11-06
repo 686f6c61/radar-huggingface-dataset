@@ -75,10 +75,10 @@ No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra prueba estandar, y no 
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama 2 15M — TinyStories (este) | 15,2 M | 256 | Ingles | MIT | HuggingFace, pesos safetensors/PyTorch, requiere codigo propio |
-| karpathy/tinyllamas stories15M | 15 M | 256 | Ingles | MIT | HuggingFace, mismo origen de pesos |
-| Modelos TinyStories de mayor tamano (por ejemplo stories42M o stories110M del mismo linaje) | 42 M y 110 M | 256 | Ingles | MIT | HuggingFace, mayor coherencia a costa de mas computo |
-| GPT-2 small | 124 M | 1.024 | Ingles | MIT | HuggingFace, compatible con transformers |
+| Llama 2 15M — TinyStories (este) | 15,2 M | 256 | Ingles | MIT | Hugging Face, pesos safetensors/PyTorch, requiere codigo propio |
+| karpathy/tinyllamas stories15M | 15 M | 256 | Ingles | MIT | Hugging Face, mismo origen de pesos |
+| Modelos TinyStories de mayor tamano (por ejemplo stories42M o stories110M del mismo linaje) | 42 M y 110 M | 256 | Ingles | MIT | Hugging Face, mayor coherencia a costa de mas computo |
+| GPT-2 small | 124 M | 1.024 | Ingles | MIT | Hugging Face, compatible con transformers |
 
 La comparacion mas directa es con los propios checkpoints de tinyllamas, dado que este modelo reutiliza sus pesos. Frente a GPT-2 small, la diferencia de parametros y de contexto es de un orden de magnitud, aunque GPT-2 no esta especializado en narrativa infantil y su integracion con el ecosistema transformers es inmediata.
 
@@ -96,7 +96,7 @@ La comparacion mas directa es con los propios checkpoints de tinyllamas, dado qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kepler182ab/llama2-15m-tinystories
+- Modelo en Hugging Face: https://huggingface.co/Kepler182ab/llama2-15m-tinystories
 - Pesos originales de Karpathy: https://huggingface.co/karpathy/tinyllamas
 - Repositorio llama2.c: https://github.com/karpathy/llama2.c
 - Codigo fuente para cargar el modelo: https://github.com/aryandeore/monday_morning_moral

@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: al tener 18.467.840 parametros, el modelo en fp32 ocupa aproximadamente 74 MB (18,47 M × 4 bytes). En fp16 serian unos 37 MB y en int8 unos 18 MB. Por tanto, cabe en cualquier GPU moderna, incluso en las mas basicas, y tambien en CPU.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente. Modelos como NVIDIA GTX 1050, RTX 2060 o superiores funcionarian sin problema. Tambien puede ejecutarse en CPU con razonable velocidad.
 - Si cabe en consumer GPU: si, en todas las GPUs de consumo actuales.
-- Opciones de despliegue: al ser un modelo safetensors, puede cargarse con la libreria transformers de HuggingFace. Tambien puede convertirse a GGUF para usarse con llama.cpp u Ollama, aunque no se proporcionan archivos GGUF oficiales. Para inferencia en produccion, podria usarse vLLM o TGI, aunque para un modelo tan pequeno no es necesario.
+- Opciones de despliegue: al ser un modelo safetensors, puede cargarse con la libreria transformers de Hugging Face. Tambien puede convertirse a GGUF para usarse con llama.cpp u Ollama, aunque no se proporcionan archivos GGUF oficiales. Para inferencia en produccion, podria usarse vLLM o TGI, aunque para un modelo tan pequeno no es necesario.
 - Latencia y throughput estimados: no hay datos oficiales. En una GPU moderna, la generacion de tokens seria practicamente instantanea (del orden de microsegundos por token). En CPU, la latencia seria mayor pero aun asi aceptable para un modelo de este tamaño.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ Tambien existen versiones de 10M de la misma serie. Fuera de esta serie, hay otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aplominski/TinyTransformer-Post-LayerNorm-18M-TinyStories
+- Modelo en Hugging Face: https://huggingface.co/aplominski/TinyTransformer-Post-LayerNorm-18M-TinyStories
 - Coleccion de la serie: https://huggingface.co/collections/aplominski/nano-transformer-normaliztaion
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
 - Paper "Attention Is All You Need": https://arxiv.org/abs/1706.03762

@@ -93,8 +93,8 @@ No hay resultados comparativos con el modelo base sin comprimir ni con otras cel
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Este checkpoint (Basis Sharing, keep 0,60) | 8.030.261.248 (60 % retenido, deficiente en rango) | Heredado del base, no confirmado | llama3.1 | HuggingFace, 0 descargas, 0 likes | Perplejidad WikiText-2 16,3400; ASR AdvBench 0,6269; ASR StrongREJECT 0,4665 |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030.261.248 | 128.000 tokens | llama3.1 | HuggingFace, ampliamente desplegado | No disponible en la informacion proporcionada |
+| Este checkpoint (Basis Sharing, keep 0,60) | 8.030.261.248 (60 % retenido, deficiente en rango) | Heredado del base, no confirmado | llama3.1 | Hugging Face, 0 descargas, 0 likes | Perplejidad WikiText-2 16,3400; ASR AdvBench 0,6269; ASR StrongREJECT 0,4665 |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030.261.248 | 128.000 tokens | llama3.1 | Hugging Face, ampliamente desplegado | No disponible en la informacion proporcionada |
 | Otras celdas del mismo estudio de compresion (misma receta de recuperacion) | Variable segun compresor | No disponible | llama3.1 | Repositorio del proyecto | No disponible en la informacion proporcionada |
 | Compresores alternativos de la literatura (por ejemplo variantes de SVD de bajo rango) | Variable | No disponible | Variable | Variable | No disponible en la informacion proporcionada |
 
@@ -115,7 +115,7 @@ La comparacion cuantitativa con el modelo sin comprimir no puede completarse por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-llama3_1_8b_instruct_up_basis_coeff_finetuned_keep_0p60
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-llama3_1_8b_instruct_up_basis_coeff_finetuned_keep_0p60
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Codigo de Basis Sharing (TUDa-HWAI, commit `1c021b6ce1d3`): https://github.com/TUDa-HWAI/Basis_Sharing
 - Dataset de recuperacion: https://huggingface.co/datasets/yahma/alpaca-cleaned

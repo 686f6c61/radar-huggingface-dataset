@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Maryam033/bert-sentiment-task` es un modelo de clasificación de texto publicado en HuggingFace por el usuario Maryam033. Por el identificador y las etiquetas del repositorio, se trata de un ajuste fino (fine-tuning) de la familia BERT orientado a análisis de sentimiento, aunque la model card no documenta ni el corpus de entrenamiento ni el esquema de etiquetas empleado. El repositorio contiene pesos en formato safetensors con 109.483.778 parámetros, lo que corresponde a la arquitectura BERT-base (aproximadamente 110 millones de parámetros) con una cabeza de clasificación superpuesta.
+`Maryam033/bert-sentiment-task` es un modelo de clasificación de texto publicado en Hugging Face por el usuario Maryam033. Por el identificador y las etiquetas del repositorio, se trata de un ajuste fino (fine-tuning) de la familia BERT orientado a análisis de sentimiento, aunque la model card no documenta ni el corpus de entrenamiento ni el esquema de etiquetas empleado. El repositorio contiene pesos en formato safetensors con 109.483.778 parámetros, lo que corresponde a la arquitectura BERT-base (aproximadamente 110 millones de parámetros) con una cabeza de clasificación superpuesta.
 
-La relevancia de esta ficha es limitada desde el punto de vista técnico: el modelo no incluye documentación sustantiva, no declara licencia, idiomas ni resultados de evaluación, y registra cero descargas y cero likes en el momento de la consulta. Se publica bajo la librería transformers con pipeline `text-classification` y es compatible con Text Embeddings Inference y endpoints de HuggingFace, lo que facilita su despliegue si el usuario decide validarlo por su cuenta.
+La relevancia de esta ficha es limitada desde el punto de vista técnico: el modelo no incluye documentación sustantiva, no declara licencia, idiomas ni resultados de evaluación, y registra cero descargas y cero likes en el momento de la consulta. Se publica bajo la librería transformers con pipeline `text-classification` y es compatible con Text Embeddings Inference y endpoints de Hugging Face, lo que facilita su despliegue si el usuario decide validarlo por su cuenta.
 
 En la práctica, debe tratarse como un checkpoint experimental sin garantías de calidad ni de procedencia de datos. Cualquier uso en producción exige una evaluación independiente previa sobre un conjunto de validación propio, así como una revisión de la licencia del modelo base del que deriva, dato que no se especifica en el repositorio.
 
@@ -29,7 +29,7 @@ En la práctica, debe tratarse como un checkpoint experimental sin garantías de
 
 La arquitectura subyacente es un transformer encoder de tipo BERT, con atención bidireccional completa y una cabeza de clasificación sobre el token `[CLS]`. El recuento de 109,48 millones de parámetros coincide con la configuración BERT-base (12 capas, 768 dimensiones ocultas, 12 cabezas de atención, vocabulario de aproximadamente 30.000 tokens), aunque el autor no confirma explícitamente esta configuración ni el checkpoint de partida. El pipeline declarado es `text-classification`, coherente con una tarea de sentimiento (probablemente clasificación binaria o de tres clases), pero el esquema de etiquetas no se documenta en ningún punto de la model card.
 
-No hay información sobre el corpus de entrenamiento, el número de tokens, la composición del dataset, el régimen de precisión (fp32, fp16, bf16) ni sobre si se aplicaron técnicas de ajuste como RLHF, DPO o destilación. La model card es la plantilla automática de HuggingFace con todos los campos marcados como `[More Information Needed]`, incluida la sección de evaluación y la de impacto ambiental. Tampoco se indica si el ajuste se hizo sobre BERT multilingüe, `bert-base-uncased` o alguna otra variante, lo que impide conocer la cobertura idiomática real.
+No hay información sobre el corpus de entrenamiento, el número de tokens, la composición del dataset, el régimen de precisión (fp32, fp16, bf16) ni sobre si se aplicaron técnicas de ajuste como RLHF, DPO o destilación. La model card es la plantilla automática de Hugging Face con todos los campos marcados como `[More Information Needed]`, incluida la sección de evaluación y la de impacto ambiental. Tampoco se indica si el ajuste se hizo sobre BERT multilingüe, `bert-base-uncased` o alguna otra variante, lo que impide conocer la cobertura idiomática real.
 
 ## Capacidades
 
@@ -37,7 +37,7 @@ No hay información sobre el corpus de entrenamiento, el número de tokens, la c
 - Análisis de sentimiento: el identificador del modelo sugiere un ajuste orientado a polaridad (positivo/negativo o similar), aunque el esquema exacto no está documentado.
 - Extracción de representaciones contextuales: al ser un encoder BERT, puede emplearse para generar embeddings de frases o documentos previa pooling.
 - Compatibilidad con Text Embeddings Inference: permite servirlo como servicio HTTP de inferencia.
-- Compatibilidad con endpoints de HuggingFace: puede desplegarse como endpoint gestionado sin cambios de código.
+- Compatibilidad con endpoints de Hugging Face: puede desplegarse como endpoint gestionado sin cambios de código.
 - Sin soporte documentado de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo thinking.
 - Cobertura multilingüe: no disponible.
 
@@ -60,17 +60,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM en fp16/bf16: aproximadamente 0,22 GB para pesos, más overhead de activaciones y del runtime.
 - GPU recomendadas: cualquier GPU moderna sirve; para lotes grandes se recomiendan T4, L4, A10, RTX 3090/4090 o A100/H100 si se busca máximo throughput.
 - Cabe en GPU consumer: sí, en cualquier tarjeta con al menos 2 GB de VRAM (GTX 1650, RTX 3050, RTX 4060, etc.); también puede ejecutarse en CPU con latencias aceptables para lotes pequeños.
-- Opciones de despliegue: `transformers` (PyTorch), Text Embeddings Inference (TEI), endpoints de HuggingFace; no se han publicado pesos GGUF ni ONNX, por lo que llama.cpp y Ollama no son opciones directas sin conversión previa.
+- Opciones de despliegue: `transformers` (PyTorch), Text Embeddings Inference (TEI), endpoints de Hugging Face; no se han publicado pesos GGUF ni ONNX, por lo que llama.cpp y Ollama no son opciones directas sin conversión previa.
 - Latencia y throughput: no disponibles; no se han publicado mediciones. En un BERT-base en GPU moderna es habitual el orden de milisegundos por secuencia corta, pero este dato no está verificado para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Maryam033/bert-sentiment-task | 109,5 M | no disponible | Clasificación de sentimiento | no disponible | HuggingFace, 0 descargas |
-| `nlptown/bert-base-multilingual-uncased-sentiment` | ~178 M (BERT multilingüe) | 512 tokens | Sentimiento en 1-5 estrellas, multilingüe | MIT (según su model card pública) | HuggingFace, ampliamente usado |
-| `distilbert-base-uncased-finetuned-sst-2-english` | ~67 M | 512 tokens | Sentimiento binario (SST-2) | Apache 2.0 (según su model card pública) | HuggingFace, referencia estándar |
-| `cardiffnlp/twitter-roberta-base-sentiment-latest` | ~125 M | 512 tokens | Sentimiento en redes sociales | no verificada en esta consulta | HuggingFace, muy usado |
+| Maryam033/bert-sentiment-task | 109,5 M | no disponible | Clasificación de sentimiento | no disponible | Hugging Face, 0 descargas |
+| `nlptown/bert-base-multilingual-uncased-sentiment` | ~178 M (BERT multilingüe) | 512 tokens | Sentimiento en 1-5 estrellas, multilingüe | MIT (según su model card pública) | Hugging Face, ampliamente usado |
+| `distilbert-base-uncased-finetuned-sst-2-english` | ~67 M | 512 tokens | Sentimiento binario (SST-2) | Apache 2.0 (según su model card pública) | Hugging Face, referencia estándar |
+| `cardiffnlp/twitter-roberta-base-sentiment-latest` | ~125 M | 512 tokens | Sentimiento en redes sociales | no verificada en esta consulta | Hugging Face, muy usado |
 
 La comparación se basa en el conocimiento general de esos checkpoints públicos; los datos de licencia y tamaño deben confirmarse en cada repositorio antes de usarlos. Frente a ellos, `Maryam033/bert-sentiment-task` no aporta documentación, métricas ni licencia declarada, por lo que no es una alternativa recomendable sin validación previa.
 
@@ -88,7 +88,7 @@ La comparación se basa en el conocimiento general de esos checkpoints públicos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Maryam033/bert-sentiment-task
+- Repositorio en Hugging Face: https://huggingface.co/Maryam033/bert-sentiment-task
 - Paper de referencia de BERT (citado en las etiquetas del repo): https://arxiv.org/abs/1810.04805
 - Paper del cálculo de impacto ambiental citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora ML Impact: https://mlco2.github.io/impact

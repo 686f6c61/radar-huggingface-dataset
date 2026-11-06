@@ -26,7 +26,7 @@ Su relevancia es la de un artefacto de experimentación: el nombre indica entren
 | Modelo base | lightonai/LateOn (revision 62911e105059585d244384c7d17826e35f669c17) |
 | Tamano del repositorio | 0,6 GB |
 | Pipeline declarado | sentence-similarity |
-| Fecha de creacion | 2026-10-10 (fecha declarada en HuggingFace) |
+| Fecha de creacion | 2026-10-10 (fecha declarada en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -40,7 +40,7 @@ Los datos de entrenamiento no se detallan en la model card: los metadatos indica
 - Indexación de corpus mediante índices PLAID a través de FastPLAID, con adición incremental de documentos y reutilización del índice.
 - Reranking de resultados de un sistema de recuperación de primera etapa, sin necesidad de construir índice.
 - Extracción de características y generación de embeddings a nivel de token (tags `feature-extraction` y `sentence-similarity`).
-- Integración declarada con `text-embeddings-inference` y compatibilidad con endpoints de HuggingFace.
+- Integración declarada con `text-embeddings-inference` y compatibilidad con endpoints de Hugging Face.
 - Uso como modelo de `sentence-transformers` a través de PyLate.
 - No soporta generación de texto, tool calling, function calling, razonamiento multi-paso ni capacidades de agente: es un encoder de recuperación.
 - Capacidades multilingües: no disponibles; la model card no declara idiomas.
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Dimension de salida | Funcion de similitud | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| lateon-specter-hardneg-n10573-e1-ckpt82 | ColBERT / PyLate sobre ModernBERT | 149.015.808 | 128 | MaxSim | No disponible | HuggingFace, 0 descargas |
-| lightonai/LateOn (modelo base) | ColBERT / PyLate sobre ModernBERT | No disponible | No disponible | MaxSim (esperado por la familia) | No disponible | HuggingFace |
+| lateon-specter-hardneg-n10573-e1-ckpt82 | ColBERT / PyLate sobre ModernBERT | 149.015.808 | 128 | MaxSim | No disponible | Hugging Face, 0 descargas |
+| lightonai/LateOn (modelo base) | ColBERT / PyLate sobre ModernBERT | No disponible | No disponible | MaxSim (esperado por la familia) | No disponible | Hugging Face |
 | ColBERTv2 (referencia del paper arXiv:1908.10084 y trabajos posteriores) | ColBERT sobre transformer tipo BERT | No disponible en la informacion proporcionada | 128 tipicamente | MaxSim | No disponible | Repositorio y pesos publicos |
-| Rerankers bi-encoder de la familia sentence-transformers | Embedding unico por texto | Variable segun modelo | Variable | Similitud coseno o producto escalar | Variable segun modelo | HuggingFace |
+| Rerankers bi-encoder de la familia sentence-transformers | Embedding unico por texto | Variable segun modelo | Variable | Similitud coseno o producto escalar | Variable segun modelo | Hugging Face |
 
 No se dispone de datos verificados de rendimiento para ninguno de los comparadores en la informacion proporcionada, por lo que la comparacion se limita a tipo de arquitectura, formato de salida y disponibilidad. La diferencia funcional clave frente a un bi-encoder clasico es que este modelo produce multiples vectores por documento y aplica MaxSim, lo que suele mejorar la precision a costa de un indice mas grande.
 
@@ -97,11 +97,11 @@ No se dispone de datos verificados de rendimiento para ninguno de los comparador
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dangerousmanleebyeonggeon/lateon-specter-hardneg-n10573-e1-ckpt82
-- Modelo base en HuggingFace: https://huggingface.co/lightonai/LateOn
+- Modelo en Hugging Face: https://huggingface.co/dangerousmanleebyeonggeon/lateon-specter-hardneg-n10573-e1-ckpt82
+- Modelo base en Hugging Face: https://huggingface.co/lightonai/LateOn
 - Repositorio de PyLate: https://github.com/lightonai/pylate
 - Documentacion de PyLate: https://lightonai.github.io/pylate/
-- Modelos PyLate en HuggingFace: https://huggingface.co/models?library=PyLate
+- Modelos PyLate en Hugging Face: https://huggingface.co/models?library=PyLate
 - FastPLAID (indice de similitud): https://github.com/lightonai/fast-plaid
 - Paper de referencia ColBERT (arXiv:1908.10084): https://arxiv.org/abs/1908.10084
-- La busqueda web realizada no devolvio resultados tecnicos relevantes sobre este modelo; los unicos enlaces disponibles son los de la model card y los metadatos de HuggingFace.
+- La busqueda web realizada no devolvio resultados tecnicos relevantes sobre este modelo; los unicos enlaces disponibles son los de la model card y los metadatos de Hugging Face.

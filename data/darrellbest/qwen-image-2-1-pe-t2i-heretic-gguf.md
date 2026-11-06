@@ -110,7 +110,7 @@ Frente al modelo original sin abliteration, la diferencia esperable es el compor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darrellbest/Qwen-Image-2.1-PE-T2I-Heretic-GGUF
+- Modelo en Hugging Face: https://huggingface.co/darrellbest/Qwen-Image-2.1-PE-T2I-Heretic-GGUF
 - Modelo base (bf16 safetensors): https://huggingface.co/darrellbest/Qwen-Image-2.1-PE-T2I-Heretic
 - Variante NVFP4 (vLLM en Blackwell): https://huggingface.co/darrellbest/Qwen-Image-2.1-PE-T2I-Heretic-NVFP4
 - Variante I2I (edicion de imagen): https://huggingface.co/darrellbest/Qwen-Image-2.1-PE-I2I-Heretic

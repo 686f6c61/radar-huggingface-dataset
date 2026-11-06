@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Atomic Code 1.1 (publicado en HuggingFace como `Korzadi/Atomic-Code-1.1`) es un ajuste fino del modelo Qwen2.5-Coder-7B-Instruct orientado a generacion de codigo y razonamiento de ingenieria de software, con enfasis declarado en el idioma espanol. Lo desarrolla el usuario Korzadi mediante el framework Unsloth y la tecnica QLoRA, partiendo de la version cuantizada a 4 bits de Qwen2.5-Coder-7B-Instruct como base. El repositorio incluye pesos consolidados en FP16 (safetensors) y una cuantizacion GGUF Q4_K_M para inferencia local.
+Atomic Code 1.1 (publicado en Hugging Face como `Korzadi/Atomic-Code-1.1`) es un ajuste fino del modelo Qwen2.5-Coder-7B-Instruct orientado a generacion de codigo y razonamiento de ingenieria de software, con enfasis declarado en el idioma espanol. Lo desarrolla el usuario Korzadi mediante el framework Unsloth y la tecnica QLoRA, partiendo de la version cuantizada a 4 bits de Qwen2.5-Coder-7B-Instruct como base. El repositorio incluye pesos consolidados en FP16 (safetensors) y una cuantizacion GGUF Q4_K_M para inferencia local.
 
 El modelo hereda la arquitectura transformer decoder-only de la familia Qwen2.5, con aproximadamente 7.600 millones de parametros y una ventana de contexto nativa de 32.768 tokens (extensible a 131.072 mediante YaRN en la familia base). El ajuste se realizo sobre un dataset muy reducido de 94 registros en formato de conversacion multi-turno, con LoRA de rango 32, 30 pasos de entrenamiento y learning rate 2e-4. Se trata, por tanto, de un experimento de refinamiento ligero mas que de un reentrenamiento sustancial.
 
@@ -96,8 +96,8 @@ La comparacion directa con la linea base Qwen2.5-Coder-7B-Instruct es la mas rel
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Korzadi/Atomic-Code-1.1
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/Korzadi/Atomic-Code-1.1
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit
 - Modelo original Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Framework Unsloth: https://github.com/unslothai/unsloth
 - Ollama: https://ollama.com

@@ -80,7 +80,7 @@ No se han identificado modelos comparables en la informacion disponible (la busq
 
 ## Enlaces
 
-- Pagina de HuggingFace: https://huggingface.co/Arup330/Abdomen_CoT_llama_lora
+- Pagina de Hugging Face: https://huggingface.co/Arup330/Abdomen_CoT_llama_lora
 - Modelo base: https://huggingface.co/unsloth/llama-3.2-11b-vision-instruct-unsloth-bnb-4bit
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Paper del modelo Llama 3.2 Vision: no disponible en la informacion proporcionada

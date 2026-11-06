@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Babes_1.2i16_Illustrious es un modelo de generación de imágenes basado en la arquitectura Illustrious XL, una variante de Stable Diffusion XL desarrollada por OnomaAI. El modelo ha sido creado por AIxFuneStudio y forma parte de la serie "Babes", que según la información disponible combina la herencia de la serie Pony con las capacidades refinadas de Illustrious, ofreciendo colores más saturados, mayor contraste y efectos de luz mejorados. Se distribuye con acceso restringido en HuggingFace, lo que implica que los usuarios deben aceptar condiciones específicas para poder descargarlo. El repositorio ocupa 6.9 GB, lo que sugiere que se trata de un checkpoint completo en formato de pesos para difusión.
+Babes_1.2i16_Illustrious es un modelo de generación de imágenes basado en la arquitectura Illustrious XL, una variante de Stable Diffusion XL desarrollada por OnomaAI. El modelo ha sido creado por AIxFuneStudio y forma parte de la serie "Babes", que según la información disponible combina la herencia de la serie Pony con las capacidades refinadas de Illustrious, ofreciendo colores más saturados, mayor contraste y efectos de luz mejorados. Se distribuye con acceso restringido en Hugging Face, lo que implica que los usuarios deben aceptar condiciones específicas para poder descargarlo. El repositorio ocupa 6.9 GB, lo que sugiere que se trata de un checkpoint completo en formato de pesos para difusión.
 
 Aunque no se dispone de una ficha técnica detallada, por el nombre y las referencias se infiere que está diseñado para la generación de ilustraciones y arte digital de alta calidad, probablemente con un enfoque en estética anime o estilizada. La versión 1.2i16 es la más reciente de la serie, precedida por las versiones 1.2i14 y 1.2i12. La falta de documentación pública y la naturaleza gated del acceso limitan la información verificable, por lo que muchos parámetros técnicos deben considerarse no disponibles.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada: al ser un modelo basado en SDXL, el checkpoint completo (6.9 GB) requiere al menos 8-10 GB de VRAM para inferencia con precisión FP16, y más si se usa FP32. Con cuantización (por ejemplo, a 8 bits) podría reducirse a unos 6-8 GB.
 - GPU recomendadas: NVIDIA RTX 3060 (12 GB) o superior, RTX 4090, A100, H100. Para generación a alta resolución o con batch, se recomienda al menos 16 GB de VRAM.
 - Es posible ejecutarlo en GPUs de consumo como RTX 3080/3090 o RTX 4070/4080, siempre que se ajuste el tamaño del batch y la resolución.
-- Opciones de despliegue: se puede usar con la interfaz de Automatic1111 (WebUI), ComfyUI, o mediante la librería `diffusers` de HuggingFace. También es compatible con herramientas como InvokeAI.
+- Opciones de despliegue: se puede usar con la interfaz de Automatic1111 (WebUI), ComfyUI, o mediante la librería `diffusers` de Hugging Face. También es compatible con herramientas como InvokeAI.
 - Latencia y throughput: no se dispone de mediciones oficiales. En una RTX 4090, la generación de una imagen a 512x512 suele tardar entre 2 y 5 segundos, dependiendo del número de pasos de muestreo.
 
 ## Comparativa con modelos similares
@@ -65,7 +65,7 @@ No se dispone de datos comparativos de rendimiento objetivo. La comparación se 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso a fines personales o no comerciales, según lo que establezca la licencia "other" (no especificada públicamente).
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso a fines personales o no comerciales, según lo que establezca la licencia "other" (no especificada públicamente).
 - Sin documentación técnica: no hay información sobre el proceso de entrenamiento, datos utilizados o evaluación, lo que dificulta la reproducibilidad y la confianza en su comportamiento.
 - Riesgo de sesgos: al ser un modelo de generación de imágenes, puede perpetuar estereotipos o producir contenido inapropiado si no se aplican filtros. No se han publicado medidas de seguridad al respecto.
 - Alucinación visual: como todo modelo de difusión, puede generar artefactos o detalles inconsistentes, especialmente en anatomía o texturas complejas.
@@ -74,7 +74,7 @@ No se dispone de datos comparativos de rendimiento objetivo. La comparación se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AIxFuneStudio/Babes_1.2i16_Illustrious
+- Modelo en Hugging Face: https://huggingface.co/AIxFuneStudio/Babes_1.2i16_Illustrious
 - Tienda Ko-fi de AIxFuneStudio (versión 1.2i14): https://ko-fi.com/s/f9b9efcb38
 - Página de Illustrious XL en Civitai: https://civitai.com/models/1232765/illustrious-xl-10
 - Listado de modelos Illustrious XL en PromptHero: https://prompthero.com/ai-models/illustrious-xl-download

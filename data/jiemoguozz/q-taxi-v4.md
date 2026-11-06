@@ -2,9 +2,9 @@
 
 ## Resumen
 
-q-Taxi-v4 es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular sobre el entorno Taxi-v3 de Gymnasium. No es un modelo de lenguaje ni una red neuronal profunda: el artefacto publicado es una tabla Q serializada en formato pickle (`q-learning.pkl`), tal como indica la model card, junto con el identificador del entorno necesario para reconstruir el entorno de ejecución. El autor es el usuario de HuggingFace Jiemoguozz y el repositorio tiene un tamanio practicamente nulo (0.0 GB), coherente con una tabla de valores de discretizacion baja.
+q-Taxi-v4 es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular sobre el entorno Taxi-v3 de Gymnasium. No es un modelo de lenguaje ni una red neuronal profunda: el artefacto publicado es una tabla Q serializada en formato pickle (`q-learning.pkl`), tal como indica la model card, junto con el identificador del entorno necesario para reconstruir el entorno de ejecución. El autor es el usuario de Hugging Face Jiemoguozz y el repositorio tiene un tamanio practicamente nulo (0.0 GB), coherente con una tabla de valores de discretizacion baja.
 
-Su relevancia es exclusivamente docente y de investigacion basica: sirve como ejemplo minimo y reproducible de un agente de refuerzo integrado en el ecosistema de HuggingFace Hub, util para validar pipelines de carga, evaluacion y comparacion de politicas en entornos discretos de juguete. No resuelve ningun problema de procesamiento de lenguaje natural, vision ni generacion de contenido, por lo que no debe evaluarse con los criterios habituales de un LLM (contexto, cuantizacion, capacidades multilingues, tool calling).
+Su relevancia es exclusivamente docente y de investigacion basica: sirve como ejemplo minimo y reproducible de un agente de refuerzo integrado en el ecosistema de Hugging Face Hub, util para validar pipelines de carga, evaluacion y comparacion de politicas en entornos discretos de juguete. No resuelve ningun problema de procesamiento de lenguaje natural, vision ni generacion de contenido, por lo que no debe evaluarse con los criterios habituales de un LLM (contexto, cuantizacion, capacidades multilingues, tool calling).
 
 La informacion publicada es muy escasa: no se declara licencia, no se indican idiomas ni parametros totales, y el unico resultado empirico es una recompensa media de 7,54 +/- 2,71 en Taxi-v3, marcada como no verificada. Esta ficha refleja esa escasez y explicita como "no disponible" todos los campos que el autor no documenta.
 
@@ -96,6 +96,6 @@ Como referencia cualitativa, las alternativas naturales en la misma categoria se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jiemoguozz/q-Taxi-v4
+- Modelo en Hugging Face: https://huggingface.co/Jiemoguozz/q-Taxi-v4
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al autor ni al entorno Taxi-v3; los resultados devueltos corresponden a discusiones sobre el videojuego Disco Elysium y no guardan relacion con esta ficha.
 - No disponibles en la informacion proporcionada: paper, blog tecnico, repositorio de codigo, demo o espacio de inferencia asociados al modelo.

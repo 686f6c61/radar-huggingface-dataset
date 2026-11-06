@@ -50,7 +50,7 @@ El checkpoint liberado usa entrenamiento multi-presupuesto con objetivos `[4, 8,
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona que los resultados completos están disponibles en un espacio de HuggingFace (https://huggingface.co/spaces/lightonai/hpool-regularization-results), pero no se incluyen cifras concretas en la documentación. El único dato reportado es:
+No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona que los resultados completos están disponibles en un espacio de Hugging Face (https://huggingface.co/spaces/lightonai/hpool-regularization-results), pero no se incluyen cifras concretas en la documentación. El único dato reportado es:
 
 - Retención del 98,7% en calidad de recuperación con un presupuesto de 32 tokens por documento, medido frente al modelo LateOn de referencia con tokens completos.
 
@@ -61,7 +61,7 @@ Este resultado se obtuvo en un subconjunto de 7 datasets BEIR (SciFact, NFCorpus
 - Al ser un modelo de 149 millones de parámetros, es considerablemente más ligero que los LLMs generativos. En precisión fp32, el peso ocupa aproximadamente 600 MB; en fp16, unos 300 MB; en int8, unos 150 MB (estimaciones basadas en el tamaño de parámetros, no en datos oficiales).
 - Cabe en GPUs de consumo: cualquier GPU con al menos 2 GB de VRAM puede ejecutar el modelo en fp16, como una NVIDIA GTX 1650 o superior. Para inferencia con lote grande, se recomienda al menos 4 GB.
 - GPUs recomendadas: para producción con alta concurrencia, una NVIDIA T4, RTX 3090 o A10 es suficiente. No requiere GPUs de datacenter como A100 o H100.
-- Opciones de despliegue: PyLate (librería oficial de LightOn), FastPLAID (para búsqueda eficiente con indexación PLAID), sentence-transformers, y text-embeddings-inference (TEI) de HuggingFace.
+- Opciones de despliegue: PyLate (librería oficial de LightOn), FastPLAID (para búsqueda eficiente con indexación PLAID), sentence-transformers, y text-embeddings-inference (TEI) de Hugging Face.
 - La latencia y el throughput dependen del presupuesto de *pooling* elegido: presupuestos más bajos (4-16 tokens) reducen el número de vectores por documento, acelerando la búsqueda y disminuyendo el uso de memoria. No se proporcionan cifras exactas en la documentación.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ Los tres modelos comparten la misma arquitectura y tamaño, pero LateOn-hpool-re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lightonai/LateOn-hpool-regularized
+- Modelo en Hugging Face: https://huggingface.co/lightonai/LateOn-hpool-regularized
 - Colección de modelos LateOn: https://huggingface.co/collections/lightonai/denseon-and-lateon
 - Blog sobre regularización para *pooling* jerárquico: https://huggingface.co/blog/lightonai/lateon-hpool-regularization
 - Espacio de resultados: https://huggingface.co/spaces/lightonai/hpool-regularization-results

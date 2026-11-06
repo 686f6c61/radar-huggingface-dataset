@@ -103,7 +103,7 @@ No se dispone de datos de calidad de traduccion (BLEU, COMET) para este reposito
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SFG545/orchard-lyric-translation
+- Repositorio en Hugging Face: https://huggingface.co/SFG545/orchard-lyric-translation
 - Modelo de origen jpn-eng (ElanMT): https://huggingface.co/Mitsua/elan-mt-tiny-ja-en
 - Modelo de origen kor-eng-high: https://huggingface.co/Helsinki-NLP/opus-mt-ko-en
 - Modelo de origen jpn-eng-high: https://huggingface.co/Helsinki-NLP/opus-mt-ja-en

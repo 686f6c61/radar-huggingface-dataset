@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 LIBERO mean-IDM source (este) | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace (0 descargas) |
+| π0.5 LIBERO mean-IDM source (este) | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face (0 descargas) |
 | π0.5 base (openpi) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
-| Fuente principal 50k (`pi05-libero-conflict-mean-source-n50k-10000-20261024`) | no disponible | no disponible | no disponible | no disponible | HuggingFace (referenciada en la model card) |
+| Fuente principal 50k (`pi05-libero-conflict-mean-source-n50k-10000-20261024`) | no disponible | no disponible | no disponible | no disponible | Hugging Face (referenciada en la model card) |
 
 No se dispone de datos suficientes para una comparativa cuantitativa con alternativas de la misma categoría.
 
@@ -79,7 +79,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-lape-scale-source-n1000-10000-20261104
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-lape-scale-source-n1000-10000-20261104
 - Repositorio de código del estudio referenciado: `Donghyun1228/vla_adaptation` (driver code `f9dbc2e0`), sin URL directa en la información proporcionada.
 - Fuente principal 50k referenciada: https://huggingface.co/Donghyun1228/pi05-libero-conflict-mean-source-n50k-10000-20261024
 - openpi (ecosistema): no disponible en la información proporcionada.

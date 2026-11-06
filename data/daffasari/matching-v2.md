@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Daffasari/matching-v2 es un prototipo de investigacion publicado en HuggingFace por el usuario Daffasari. Se presenta como una implementacion propia de una arquitectura CNN Transformer orientada a tareas de *matching* (emparejamiento o comparacion de pares de entradas). El repositorio incluye el codigo de definicion del modelo, los ficheros de configuracion de arquitectura y de receta de entrenamiento, y un checkpoint de safetensors que el propio autor describe explicitamente como una inicializacion valida para pruebas de humo, no como un modelo entrenado.
+Daffasari/matching-v2 es un prototipo de investigacion publicado en Hugging Face por el usuario Daffasari. Se presenta como una implementacion propia de una arquitectura CNN Transformer orientada a tareas de *matching* (emparejamiento o comparacion de pares de entradas). El repositorio incluye el codigo de definicion del modelo, los ficheros de configuracion de arquitectura y de receta de entrenamiento, y un checkpoint de safetensors que el propio autor describe explicitamente como una inicializacion valida para pruebas de humo, no como un modelo entrenado.
 
 El dato mas relevante es su tamano real: el checkpoint de safetensors contiene 24.832 parametros en total, una cifra extraordinariamente pequena que contrasta con la etiqueta "xlarge" que el autor usa para la escala de la configuracion. El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 likes, por lo que se trata de un artefacto recien creado y sin validacion por parte de la comunidad (creado y actualizado el 10 de septiembre de 2026).
 
@@ -87,6 +87,6 @@ No disponible. No se han publicado resultados de benchmarks ni caracteristicas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Daffasari/matching-v2
+- Modelo en Hugging Face: https://huggingface.co/Daffasari/matching-v2
 - Ficheros incluidos en el repositorio: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo. Los unicos resultados obtenidos corresponden a paginas comerciales de radiadores y calefacciones electricas (B&Q, Good Housekeeping, Screwfix, Currys, Argos), sin relacion alguna con el modelo. No se dispone de paper, blog, repositorio adicional ni demo asociados.

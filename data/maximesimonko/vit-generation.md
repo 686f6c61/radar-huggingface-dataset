@@ -69,7 +69,7 @@ No se dispone de modelos comparables directos en el repositorio. El modelo es un
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maximesimonko/vit-generation
+- Hugging Face: https://huggingface.co/maximesimonko/vit-generation
 - Documentación de ViT en Hugging Face: https://huggingface.co/docs/transformers/model_doc/vit
 - Paper relacionado (U-ViT): https://arxiv.org/abs/2209.12152
 - Leaderboard de generación de video (no directamente relacionado, pero contextual): https://llm-stats.com/leaderboards/best-ai-for-video-generation

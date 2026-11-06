@@ -107,7 +107,7 @@ Frente al modelo base, Auro-110M reduce parámetros y gana especialización en C
 
 ## Enlaces
 
-- Modelo en HuggingFace (identificador del Hub): https://huggingface.co/ItsnotAilabs/Auro-110M
-- Modelo en HuggingFace (identificador citado en la model card): https://huggingface.co/MedinaMemorySystems/Auro-110M
+- Modelo en Hugging Face (identificador del Hub): https://huggingface.co/ItsnotAilabs/Auro-110M
+- Modelo en Hugging Face (identificador citado en la model card): https://huggingface.co/MedinaMemorySystems/Auro-110M
 - Modelo base: https://huggingface.co/EleutherAI/pythia-160m-deduped
 - No se han encontrado papers, blogs técnicos, repositorios de código ni demos asociados al modelo en la búsqueda web realizada; los resultados devueltos no guardan relación con el modelo.

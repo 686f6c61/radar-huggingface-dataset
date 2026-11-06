@@ -78,8 +78,8 @@ La principal diferencia entre el modelo original y esta conversion es el formato
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/jahn-idt/granite-embedding-reranker-english-r2-Q8_0-GGUF
-- Modelo original en HuggingFace: https://huggingface.co/ibm-granite/granite-embedding-reranker-english-r2
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/jahn-idt/granite-embedding-reranker-english-r2-Q8_0-GGUF
+- Modelo original en Hugging Face: https://huggingface.co/ibm-granite/granite-embedding-reranker-english-r2
 - Paper de Granite Embedding R2 (arXiv): https://arxiv.org/abs/2508.21085
 - Documentacion de IBM sobre Granite Embedding: https://www.ibm.com/granite/docs/models/embedding
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

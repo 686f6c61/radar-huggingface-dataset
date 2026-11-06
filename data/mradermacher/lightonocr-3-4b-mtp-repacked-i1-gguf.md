@@ -84,7 +84,7 @@ No se dispone de información suficiente para comparar con alternativas OCR de o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/LightOnOCR-3-4B-MTP-Repacked-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/LightOnOCR-3-4B-MTP-Repacked-i1-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/LightOnOCR-3-4B-MTP-Repacked
 - Repositorio GGUF estático (incluye mmproj): https://huggingface.co/mradermacher/LightOnOCR-3-4B-MTP-Repacked-GGUF
 - Página de resumen del cuantizador: https://hf.tst.eu/model#LightOnOCR-3-4B-MTP-Repacked-i1-GGUF

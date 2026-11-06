@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`combined_whisper_sanlish_lr2e5_newsplit` es un ajuste fino (fine-tune) del modelo `openai/whisper-small` publicado por el usuario thunderboltc en HuggingFace. Se trata de un modelo de reconocimiento automático del habla (ASR) de tipo encoder-decoder transformer, con 241.734.912 parámetros reales verificados en los pesos safetensors, licencia Apache 2.0 y pipeline `automatic-speech-recognition`. La model card no documenta la composición del corpus de entrenamiento, que aparece literalmente como "None dataset", ni los idiomas objetivo, aunque el nombre del repositorio sugiere un entrenamiento sobre audio combinado o con mezcla de lenguas (el sufijo "sanlish" apunta a una combinación de santali e inglés, hipótesis no confirmada por el autor).
+`combined_whisper_sanlish_lr2e5_newsplit` es un ajuste fino (fine-tune) del modelo `openai/whisper-small` publicado por el usuario thunderboltc en Hugging Face. Se trata de un modelo de reconocimiento automático del habla (ASR) de tipo encoder-decoder transformer, con 241.734.912 parámetros reales verificados en los pesos safetensors, licencia Apache 2.0 y pipeline `automatic-speech-recognition`. La model card no documenta la composición del corpus de entrenamiento, que aparece literalmente como "None dataset", ni los idiomas objetivo, aunque el nombre del repositorio sugiere un entrenamiento sobre audio combinado o con mezcla de lenguas (el sufijo "sanlish" apunta a una combinación de santali e inglés, hipótesis no confirmada por el autor).
 
 El modelo se entrena durante 25 épocas declaradas (el registro de métricas solo llega hasta la época 15) con learning rate 2e-5, batch efectivo de 16 y precisión mixta nativa. Los resultados finales reportados en la model card son una pérdida de validación de 0,6368, un WER del 34,7012 % y un CER del 8,4391 %. El mejor WER del registro (34,1659 %) se alcanza en la época 10, por lo que no hay mejora clara en las épocas posteriores.
 
@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks comparativos para este modelo, por 
 
 | Modelo | Parámetros | Ventana de audio | Idiomas | Licencia | WER declarado | Disponibilidad |
 |---|---|---|---|---|---|---|
-| combined_whisper_sanlish_lr2e5_newsplit | 241.734.912 | 30 s (heredado del base) | no disponible | apache-2.0 | 34,7012 % (validación propia, dominio no especificado) | HuggingFace, 0 descargas |
+| combined_whisper_sanlish_lr2e5_newsplit | 241.734.912 | 30 s (heredado del base) | no disponible | apache-2.0 | 34,7012 % (validación propia, dominio no especificado) | Hugging Face, 0 descargas |
 | openai/whisper-small | ~244 M | 30 s | 99 (multilingüe) | apache-2.0 | no comparable (evaluación sobre LibriSpeech y otros corpus públicos) | Ampliamente disponible |
 | openai/whisper-base | ~74 M | 30 s | 99 (multilingüe) | apache-2.0 | no comparable | Ampliamente disponible |
 | openai/whisper-medium | ~769 M | 30 s | 99 (multilingüe) | apache-2.0 | no comparable | Ampliamente disponible |
@@ -114,7 +114,7 @@ Advertencia: el WER del 34,7 % de este modelo y los WER publicados de los modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thunderboltc/combined_whisper_sanlish_lr2e5_newsplit
+- Modelo en Hugging Face: https://huggingface.co/thunderboltc/combined_whisper_sanlish_lr2e5_newsplit
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Paper de Whisper (Radford et al., 2022, "Robust Speech Recognition via Large-Scale Weak Supervision"): https://arxiv.org/abs/2212.04356
 - Repositorio oficial de OpenAI Whisper: https://github.com/openai/whisper

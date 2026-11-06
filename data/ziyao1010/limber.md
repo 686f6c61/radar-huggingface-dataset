@@ -83,7 +83,7 @@ La model card indica que todos los baselines se fine-tunearon y evaluaron bajo e
 
 | Modelo | Params | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LIMBER-macro | 664,3M | 1.022 nt | Híbrida Transformer+Mamba (TTM) | no disponible | HuggingFace (repo de 26,6 GB con todos los checkpoints) |
+| LIMBER-macro | 664,3M | 1.022 nt | Híbrida Transformer+Mamba (TTM) | no disponible | Hugging Face (repo de 26,6 GB con todos los checkpoints) |
 | AIDO.RNA-650M | ~650M | no disponible | no disponible | no disponible | referenciado como baseline en la model card |
 | RiNALMo | no disponible | no disponible | Transformer | no disponible | protocolo de fine-tuning de referencia citado en la model card |
 | Controles puros Transformer / Mamba de LIMBER | 100M / 300M / 650M | 1.022 nt | Transformer puro o Mamba puro | no disponible | incluidos en el mismo repositorio |
@@ -105,7 +105,7 @@ La comparativa cuantitativa disponible se limita a estructura secundaria: LIMBER
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ziyao1010/LIMBER
+- Hugging Face: https://huggingface.co/Ziyao1010/LIMBER
 - Paper (bioRxiv): https://www.biorxiv.org/content/10.64898/2026.10.28.762670v1
 - Código: https://github.com/ziyaow1010/LIMBER
 - Figura de visión general de la arquitectura: https://raw.githubusercontent.com/ziyaow1010/LIMBER/main/assets/fig1_overview.png

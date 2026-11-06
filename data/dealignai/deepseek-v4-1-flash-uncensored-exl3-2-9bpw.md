@@ -143,8 +143,8 @@ Nota metodológica del autor: el base se midió en HarmBench sobre una muestra r
 
 | Modelo | Parámetros | Contexto | MMLU-14k | ASR HB-320 (off) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| deepseek-ai/DeepSeek-V4.1-Flash en EXL3 2,9 bpw (sin abliterar) | 552B según model card (105,2B según safetensors) | hasta 1M | 82,15 % | 36,1 % | MIT en el derivado; términos del base no disponibles | HuggingFace |
-| Este modelo (CRACK, EXL3 2,9 bpw abliterado) | 552B según model card (105,2B según safetensors) | hasta 1M | 79,20 % | 99,4 % | MIT | HuggingFace |
+| deepseek-ai/DeepSeek-V4.1-Flash en EXL3 2,9 bpw (sin abliterar) | 552B según model card (105,2B según safetensors) | hasta 1M | 82,15 % | 36,1 % | MIT en el derivado; términos del base no disponibles | Hugging Face |
+| Este modelo (CRACK, EXL3 2,9 bpw abliterado) | 552B según model card (105,2B según safetensors) | hasta 1M | 79,20 % | 99,4 % | MIT | Hugging Face |
 | Otras variantes abliteradas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Modelo base en precisión completa (bf16/fp8) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -167,7 +167,7 @@ La comparación directa posible con los datos aportados se limita a la pareja fo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-UNCENSORED-EXL3-2.9bpw
+- Modelo en Hugging Face: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-UNCENSORED-EXL3-2.9bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Perfil del autor en X: https://x.com/dealignai
 - Papers, blogs o repositorios adicionales: no disponible (la búsqueda web no devolvió resultados relevantes)

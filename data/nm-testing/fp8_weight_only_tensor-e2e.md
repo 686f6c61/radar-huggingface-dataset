@@ -4,7 +4,7 @@
 
 El modelo `nm-testing/fp8_weight_only_tensor-e2e` es un artefacto de prueba publicado por el equipo de Neural Magic (bajo el perfil `nm-testing`), orientado a validar el pipeline de compresión de modelos mediante cuantización FP8 con solo pesos (weight-only). Los metadatos indican que se basa en una arquitectura tipo Llama, con aproximadamente 1.100 millones de parámetros, lo que lo sitúa en la categoría de modelos pequeños. Su propósito principal no es el uso en producción, sino servir como banco de pruebas para evaluar la correcta serialización, carga y despliegue de tensores cuantizados en formato FP8 dentro del ecosistema `compressed-tensors`.
 
-La relevancia de este modelo radica en su utilidad para desarrolladores que trabajan con técnicas de compresión y cuantización, ya que permite verificar el flujo completo de creación de un modelo cuantizado, desde el entrenamiento hasta la inferencia. Sin embargo, al ser un modelo de prueba, carece de documentación oficial, benchmarks y especificaciones detalladas de entrenamiento o capacidades. Toda la información disponible se limita a los metadatos de HuggingFace, por lo que esta ficha refleja únicamente los datos confirmados y marca el resto como no disponible.
+La relevancia de este modelo radica en su utilidad para desarrolladores que trabajan con técnicas de compresión y cuantización, ya que permite verificar el flujo completo de creación de un modelo cuantizado, desde el entrenamiento hasta la inferencia. Sin embargo, al ser un modelo de prueba, carece de documentación oficial, benchmarks y especificaciones detalladas de entrenamiento o capacidades. Toda la información disponible se limita a los metadatos de Hugging Face, por lo que esta ficha refleja únicamente los datos confirmados y marca el resto como no disponible.
 
 ## Especificaciones tecnicas
 
@@ -69,4 +69,4 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace: nm-testing/fp8_weight_only_tensor-e2e](https://huggingface.co/nm-testing/fp8_weight_only_tensor-e2e)
+- [Hugging Face: nm-testing/fp8_weight_only_tensor-e2e](https://huggingface.co/nm-testing/fp8_weight_only_tensor-e2e)

@@ -79,8 +79,8 @@ No se dispone de datos comparativos directos con otros modelos de embeddings en 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión GGUF: https://huggingface.co/arshvir/granite-embedding-311m-multilingual-r2-GGUF
-- Modelo base original en HuggingFace: https://huggingface.co/ibm-granite/granite-embedding-311m-multilingual-r2
+- Repositorio Hugging Face de la conversión GGUF: https://huggingface.co/arshvir/granite-embedding-311m-multilingual-r2-GGUF
+- Modelo base original en Hugging Face: https://huggingface.co/ibm-granite/granite-embedding-311m-multilingual-r2
 - Repositorio GitHub de IBM Granite Embedding Models: https://github.com/ibm-granite/granite-embedding-models
 - Documentación oficial de IBM sobre Granite Embedding: https://www.ibm.com/granite/docs/models/embedding
 - Paper sobre la familia R2: https://arxiv.org/html/2605.13521v2

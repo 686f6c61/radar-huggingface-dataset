@@ -30,7 +30,7 @@ Respecto al entrenamiento, no se han publicado datos sobre el número de tokens,
 ## Capacidades
 
 - Generación de vídeo a partir de texto (text-to-video) con audio sincronizado incluido en la salida.
-- Generación de vídeo a partir de imagen (image-to-video), según el pipeline indicado en HuggingFace.
+- Generación de vídeo a partir de imagen (image-to-video), según el pipeline indicado en Hugging Face.
 - Síntesis de labios (lip sync) para diálogos con dos personajes y dos voces.
 - Representación de texto legible dentro del vídeo (por ejemplo, carteles de neón), con calidad variable según resolución.
 - Movimiento corporal completo, cámara en mano y escenas con multitudes.
@@ -92,7 +92,7 @@ La ventaja de esta variante frente a usar el modelo oficial más la LoRA por sep
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/PedroMarinhoDev/MiniMax-H3-Experimental
+- Ficha del modelo en Hugging Face: https://huggingface.co/PedroMarinhoDev/MiniMax-H3-Experimental
 - Modelo base oficial para ComfyUI (checkpoint int8, text encoder y VAE): https://huggingface.co/Comfy-Org/MiniMax-H3
 - LoRA TaoMate H3 3-step: https://huggingface.co/Asirus/TaoMate_H3_3_Step_LoRA
 - TaoMate-H3 (equipo TaoLive AIGC): https://huggingface.co/TaoLiveAIGC/TaoMate-H3

@@ -4,7 +4,7 @@
 
 DNA-50M es un modelo de lenguaje de tamaño reducido (50 millones de parámetros) desarrollado por el usuario reaperdoesntknow, asociado a Convergent Intelligence LLC: Research Division. El modelo se enmarca dentro de la colección DNA-AI y utiliza la arquitectura Liquid Former, una variante de los transformers líquidos basada en el paper arXiv:1910.09700. Su propósito principal es servir como banco de pruebas para el framework teórico denominado Discrepancy Calculus (DISC), un enfoque matemático para analizar las singularidades del entrenamiento (plateaus de pérdida, colapso de modos, olvido catastrófico) como señales estructurales del problema de aprendizaje.
 
-El modelo está diseñado para generación de texto y es compatible con la librería transformers de HuggingFace. Con un tamaño de repositorio de 0.2 GB, es un modelo ligero que puede ejecutarse en hardware de consumo. La model card oficial es extremadamente escasa en detalles técnicos: no se especifican datos de entrenamiento, hiperparámetros, licencia ni idiomas soportados. Toda la información disponible se limita a los tags de HuggingFace y a la descripción teórica del framework DISC, que constituye el principal valor documental del proyecto.
+El modelo está diseñado para generación de texto y es compatible con la librería transformers de Hugging Face. Con un tamaño de repositorio de 0.2 GB, es un modelo ligero que puede ejecutarse en hardware de consumo. La model card oficial es extremadamente escasa en detalles técnicos: no se especifican datos de entrenamiento, hiperparámetros, licencia ni idiomas soportados. Toda la información disponible se limita a los tags de Hugging Face y a la descripción teórica del framework DISC, que constituye el principal valor documental del proyecto.
 
 La relevancia de DNA-50M reside en su papel como implementación práctica de los conceptos de Discrepancy Calculus, incluyendo el operador de discrepancia, los conjuntos de salto y el ghost imprinting. Para la comunidad de investigación en interpretabilidad y teoría del aprendizaje, este modelo representa un caso de estudio de cómo aplicar principios de teoría de la medida al análisis de arquitecturas neuronales, aunque su utilidad práctica como modelo de producción es limitada dada la ausencia de documentación sobre capacidades y rendimiento.
 
@@ -31,7 +31,7 @@ El entrenamiento de DNA-50M se enmarca en el framework Discrepancy Calculus (DIS
 
 - Generación de texto: el modelo puede producir texto coherente, aunque su tamaño reducido limita la complejidad de las respuestas.
 - Implementación de conceptos DISC: incorpora el operador de discrepancia y los conjuntos de salto como parte de su diseño teórico.
-- Compatibilidad con transformers: se integra con el ecosistema estándar de HuggingFace, permitiendo su uso con pipelines de text-generation.
+- Compatibilidad con transformers: se integra con el ecosistema estándar de Hugging Face, permitiendo su uso con pipelines de text-generation.
 - Investigación en interpretabilidad: diseñado para estudiar la geometría del espacio de aprendizaje y las discontinuidades en el comportamiento del modelo.
 - Eficiencia computacional: su pequeño tamaño permite experimentación rápida en hardware modesto.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DNA-50M | 50M | no disponible | no disponible | HuggingFace |
-| TinyLlama 1.1B | 1.1B | 2048 | Apache 2.0 | HuggingFace |
-| Phi-2 | 2.7B | 2048 | MIT | HuggingFace |
-| GPT-2 (124M) | 124M | 1024 | MIT | HuggingFace |
+| DNA-50M | 50M | no disponible | no disponible | Hugging Face |
+| TinyLlama 1.1B | 1.1B | 2048 | Apache 2.0 | Hugging Face |
+| Phi-2 | 2.7B | 2048 | MIT | Hugging Face |
+| GPT-2 (124M) | 124M | 1024 | MIT | Hugging Face |
 
 La comparativa se basa en modelos de tamaño pequeño orientados a investigación. DNA-50M es significativamente más pequeño que las alternativas, lo que lo hace más adecuado para experimentos de bajo coste, pero carece de la documentación y los benchmarks que ofrecen los otros modelos. La arquitectura Liquid Former es la principal diferencia técnica frente a los transformers estándar de las alternativas.
 
@@ -78,7 +78,7 @@ La comparativa se basa en modelos de tamaño pequeño orientados a investigació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/DNA-50M
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/DNA-50M
 - Colección DNA-AI: https://huggingface.co/collections/reaperdoesntknow/dna-ai
 - Perfil del autor: https://huggingface.co/reaperdoesntknow
 - Documento DISC (DOI: 10.57967/hf/8194): https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus

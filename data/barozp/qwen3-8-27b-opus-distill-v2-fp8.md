@@ -71,7 +71,7 @@ No se dispone de datos de benchmarks ni de características de modelos comparabl
 
 ## Enlaces
 
-- [Modelo FP8 en HuggingFace](https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill-v2-FP8)
+- [Modelo FP8 en Hugging Face](https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill-v2-FP8)
 - [Modelo base barozp/Qwen3.8-27B-Opus-Distill-v2](https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill-v2)
 - [Versión GGUF del modelo base](https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill-v2-GGUF)
 - [Visor de arquitectura de Qwen3.8-27B-Opus-Distill](https://hfviewer.com/barozp/Qwen3.8-27B-Opus-Distill)

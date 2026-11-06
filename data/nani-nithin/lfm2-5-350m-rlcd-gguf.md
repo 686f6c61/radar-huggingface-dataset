@@ -17,7 +17,7 @@ La cifra de rendimiento más citada del proyecto (entre 8,5 y 63 veces menos lat
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | 29 quants GGUF más BF16: BF16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_1, Q5_0, Q4_K_M, Q4_K_S, IQ4_NL, IQ4_XS, Q4_1, Q4_0, Q3_K_L, Q3_K_M, IQ3_M, IQ3_S, Q3_K_S, IQ3_XS, IQ3_XXS, Q2_K, Q2_K_S, IQ2_M, IQ2_S, IQ2_XS, IQ2_XXS, Q2_0, IQ1_M, IQ1_S, Q1_0 |
 | Idiomas soportados | inglés (en), francés (fr), español (es) |
-| Licencia | lfm1.0 (LFM Open License de Liquid AI; etiquetada como "other" en HuggingFace) |
+| Licencia | lfm1.0 (LFM Open License de Liquid AI; etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (llama.cpp) |
 | Vocabulario | 65.536 tokens |
 | Modalidad | solo texto |
@@ -80,10 +80,10 @@ El único dato cuantitativo aportado es de latencia y corresponde al motor RLCD 
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| NANI-Nithin/LFM2.5-350M-RLCD-GGUF | ~354 M | no disponible | lfm1.0 | GGUF (29 quants + BF16) | HuggingFace, 0 descargas y 0 likes |
-| notnotsamuel/LFM2.5-350M-RLCD (repo fuente) | ~354 M | no disponible | pesos lfm1.0; motor RLCD bajo MIT | PyTorch / safetensors | HuggingFace |
-| LiquidAI/LFM2.5-350M (upstream) | ~354 M | no disponible | lfm1.0 | PyTorch / safetensors | HuggingFace |
-| Modelos sub-500M de otros fabricantes (por ejemplo, la familia SmolLM2-360M o Qwen2.5-0.5B) | ~361 M y ~494 M respectivamente | no disponible en la información proporcionada | Apache-2.0 (orientativo) | safetensors y GGUF | HuggingFace |
+| NANI-Nithin/LFM2.5-350M-RLCD-GGUF | ~354 M | no disponible | lfm1.0 | GGUF (29 quants + BF16) | Hugging Face, 0 descargas y 0 likes |
+| notnotsamuel/LFM2.5-350M-RLCD (repo fuente) | ~354 M | no disponible | pesos lfm1.0; motor RLCD bajo MIT | PyTorch / safetensors | Hugging Face |
+| LiquidAI/LFM2.5-350M (upstream) | ~354 M | no disponible | lfm1.0 | PyTorch / safetensors | Hugging Face |
+| Modelos sub-500M de otros fabricantes (por ejemplo, la familia SmolLM2-360M o Qwen2.5-0.5B) | ~361 M y ~494 M respectivamente | no disponible en la información proporcionada | Apache-2.0 (orientativo) | safetensors y GGUF | Hugging Face |
 
 Las cifras de terceros son orientativas y deben verificarse en sus propias fichas. No hay datos de rendimiento comparado disponibles para este modelo, por lo que la comparación se limita a tamaño, formato y licencia.
 
@@ -94,7 +94,7 @@ Las cifras de terceros son orientativas y deben verificarse en sus propias ficha
 - La validez del JSON atribuida al método RLCD procede del ensamblado programático, no de mejores decisiones del modelo; no debe interpretarse como una mejora de calidad semántica.
 - Idiomas: solo inglés, francés y español están documentados; el comportamiento en otras lenguas no está caracterizado.
 - Longitud de contexto: no disponible, lo que impide planificar despliegues con ventanas largas sin verificarla previamente.
-- Licencia: lfm1.0, una licencia no estándar etiquetada como "other" en HuggingFace. Es imprescindible revisar su texto antes de cualquier uso comercial, ya que la información proporcionada no detalla sus términos.
+- Licencia: lfm1.0, una licencia no estándar etiquetada como "other" en Hugging Face. Es imprescindible revisar su texto antes de cualquier uso comercial, ya que la información proporcionada no detalla sus términos.
 - Cuantizaciones agresivas: por debajo de Q4 (Q3, IQ3, Q2, IQ2, Q1) la degradación es significativa; los quants Q1_0, IQ1_S e IQ1_M se describen como extremos y con pérdida sustancial de calidad.
 - Trazabilidad: el repositorio tiene 0 descargas y 0 likes, no incluye benchmarks y está publicado por un autor sin historial verificable; los pesos subyacentes sí proceden de Liquid AI.
 - Sin soporte documentado de tool calling, function calling ni flujos de agentes, lo que limita su integración en pipelines que dependan de llamadas a herramientas.

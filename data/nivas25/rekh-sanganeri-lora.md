@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rekh es un LoRA (Low-Rank Adaptation) de alta fidelidad entrenado sobre el modelo base FLUX.1-dev de Black Forest Labs, diseñado para generar estampados Sanganeri auténticos, una técnica tradicional de impresión textil manual originaria de Sanganer, Rajasthan (India). El modelo es obra de nivas25 y se distribuye a través de HuggingFace bajo una licencia no comercial heredada de FLUX.1-dev.
+Rekh es un LoRA (Low-Rank Adaptation) de alta fidelidad entrenado sobre el modelo base FLUX.1-dev de Black Forest Labs, diseñado para generar estampados Sanganeri auténticos, una técnica tradicional de impresión textil manual originaria de Sanganer, Rajasthan (India). El modelo es obra de nivas25 y se distribuye a través de Hugging Face bajo una licencia no comercial heredada de FLUX.1-dev.
 
 El problema que resuelve es la incapacidad de los modelos base de difusión para reproducir las características físicas del block printing manual: texturas de tela reales, sangrados de tinta sutiles, desalineaciones de estampado y los contornos negros finos conocidos como *rekh*. El LoRA elimina la estética de vector digital que suelen generar los modelos genéricos. Su relevancia radica en la aplicación de técnicas de curado de datos con modelos de visión-lenguaje (VLM) para garantizar autenticidad cultural y técnica en la generación de imágenes.
 
@@ -72,6 +72,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nivas25/rekh-sanganeri-lora
+- Hugging Face: https://huggingface.co/nivas25/rekh-sanganeri-lora
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Se menciona un repositorio de GitHub para las comparaciones de imágenes, pero no se proporciona la URL en la información disponible.

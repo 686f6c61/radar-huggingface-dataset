@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `paper_018038283_multimodal_generation` contiene un documento académico en formato Markdown sobre generación multimodal, alojado en HuggingFace por el usuario tarodriguez. No se trata de un modelo de IA desplegable, sino de un artefacto textual que describe un paper con estructura académica (introducción, trabajos relacionados, método, experimentos y conclusiones) y estilo de escritura detallado y descriptivo, en formato LaTeX/arXiv.
+El repositorio `paper_018038283_multimodal_generation` contiene un documento académico en formato Markdown sobre generación multimodal, alojado en Hugging Face por el usuario tarodriguez. No se trata de un modelo de IA desplegable, sino de un artefacto textual que describe un paper con estructura académica (introducción, trabajos relacionados, método, experimentos y conclusiones) y estilo de escritura detallado y descriptivo, en formato LaTeX/arXiv.
 
 El documento aborda el tema de la generación multimodal, un área que combina modelos de lenguaje de gran tamaño, difusión y otras técnicas para generar contenido en múltiples modalidades (texto, imagen, audio, vídeo). La relevancia de este repositorio radica en su potencial como referencia para desarrolladores e investigadores que buscan un ejemplo estructurado de cómo documentar un trabajo de investigación en este campo, aunque no ofrece un modelo ejecutable ni pesos entrenados.
 

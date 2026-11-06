@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`synthetic-image-forensics` es un modelo publicado en HuggingFace por el usuario `anweshh`, distribuido en formato ONNX y con licencia MIT. Por el identificador y el contenido disponible, se orienta a la deteccion forense de imagenes sinteticas, es decir, a distinguir imagenes generadas por modelos generativos (difusion, GAN, etc.) de imagenes reales. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un modelo de tamano reducido, compatible con despliegue en CPU o en GPUs de gama baja.
+`synthetic-image-forensics` es un modelo publicado en Hugging Face por el usuario `anweshh`, distribuido en formato ONNX y con licencia MIT. Por el identificador y el contenido disponible, se orienta a la deteccion forense de imagenes sinteticas, es decir, a distinguir imagenes generadas por modelos generativos (difusion, GAN, etc.) de imagenes reales. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un modelo de tamano reducido, compatible con despliegue en CPU o en GPUs de gama baja.
 
-La informacion publica es muy escasa: la model card solo contiene la declaracion de licencia MIT, sin descripcion de arquitectura, datos de entrenamiento, metricas ni instrucciones de uso. No se declara pipeline en HuggingFace, no se listan idiomas y el modelo no registra descargas ni likes en el momento de la consulta. Cualquier dato tecnico adicional debe considerarse no disponible hasta que el autor publique documentacion.
+La informacion publica es muy escasa: la model card solo contiene la declaracion de licencia MIT, sin descripcion de arquitectura, datos de entrenamiento, metricas ni instrucciones de uso. No se declara pipeline en Hugging Face, no se listan idiomas y el modelo no registra descargas ni likes en el momento de la consulta. Cualquier dato tecnico adicional debe considerarse no disponible hasta que el autor publique documentacion.
 
 A pesar de la falta de documentacion, el caso de uso implicito (forense de imagenes sinteticas) es relevante en el contexto actual de proliferacion de contenido generado por IA y de la necesidad de mecanismos de verificacion de autenticidad en medios, plataformas y flujos de moderacion. La ficha recoge lo que se puede afirmar con rigor y marca explicitamente como no disponible todo lo que no consta.
 
@@ -74,5 +74,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anweshh/synthetic-image-forensics
+- Modelo en Hugging Face: https://huggingface.co/anweshh/synthetic-image-forensics
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales.

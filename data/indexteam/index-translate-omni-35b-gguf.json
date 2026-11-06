@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "IndexTeam/Index-Translate-omni-35B-GGUF",
+  "slug": "indexteam-index-translate-omni-35b-gguf",
+  "author": "IndexTeam",
+  "url": "https://huggingface.co/IndexTeam/Index-Translate-omni-35B-GGUF",
+  "created_at": "2026-11-06T04:55:07.000Z",
+  "updated_at": "2026-11-06T10:52:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "llama.cpp",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "index-translate",
+    "multimodal",
+    "translation",
+    "image-to-text",
+    "automatic-speech-recognition",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 308012126496,
+  "storage_human": "308.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IndexTeam/Index-Translate-omni-35B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/IndexTeam/Index-Translate-omni-35B-GGUF",
+      "snippet": "Instructions to use IndexTeam/Index-Translate-omni-35B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started ..."
+    },
+    {
+      "title": "Index-Translate - a IndexTeam Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/IndexTeam/index-translate",
+      "snippet": "Index‐Translate: A Multilingual Translation Model Family From text & vision to speech, bring meaning across languages"
+    }
+  ]
+}

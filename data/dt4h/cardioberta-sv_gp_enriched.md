@@ -80,7 +80,7 @@ No se dispone de benchmarks comparativos entre estos modelos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DT4H/CardioBERTa.sv_GP_enriched
+- Modelo en Hugging Face: https://huggingface.co/DT4H/CardioBERTa.sv_GP_enriched
 - Modelo base CardioBERTa.sv: https://huggingface.co/DT4H/CardioBERTa.sv
 - Modelo NER relacionado: https://huggingface.co/DT4H/cardio-ner-sv-cardioberta-multilabel
 - Organización GitHub de DataTools4Heart: https://github.com/DataTools4Heart/

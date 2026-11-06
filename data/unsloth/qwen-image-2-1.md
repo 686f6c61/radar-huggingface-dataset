@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: no disponible de forma oficial. Como referencia, los pesos en bf16 ocupan unos 14,2 GB y el pico real depende de la resolucion de salida, el numero de pasos (40 en los ejemplos) y del resto de componentes del pipeline. Con `enable_model_cpu_offload()` la model card ofrece una via para reducir el consumo de VRAM a costa de la latencia.
 - GPU recomendadas: no especificadas en la informacion disponible. Para resoluciones de 2048x2048 o superiores y generacion por lotes, son razonables aceleradores de centro de datos (A100, H100) por su mayor memoria y ancho de banda; para uso individual, una RTX 4090 (24 GB) con offload es el escenario mas inmediato.
 - Compatibilidad con GPU de consumo: probable con `enable_model_cpu_offload()` y resoluciones moderadas, ya que los pesos en bf16 caben en tarjetas de 16-24 GB si se descargan componentes a CPU; no se publican cifras oficiales de VRAM minima.
-- Opciones de despliegue: diffusers con `QwenImage21Pipeline.from_pretrained(...)`, con dependencias torch>=2.4.0, transformers>=5.17, diffusers desde el repositorio git de HuggingFace, accelerate y pillow. Existe un Space de demostracion oficial. No se confirma en la informacion disponible soporte para vLLM, llama.cpp, Ollama, TGI ni ComfyUI, dado que se trata de un modelo de difusion y no de lenguaje.
+- Opciones de despliegue: diffusers con `QwenImage21Pipeline.from_pretrained(...)`, con dependencias torch>=2.4.0, transformers>=5.17, diffusers desde el repositorio git de Hugging Face, accelerate y pillow. Existe un Space de demostracion oficial. No se confirma en la informacion disponible soporte para vLLM, llama.cpp, Ollama, TGI ni ComfyUI, dado que se trata de un modelo de difusion y no de lenguaje.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -77,8 +77,8 @@ La informacion proporcionada no incluye especificaciones de modelos alternativos
 
 | Modelo | Parametros del generador | Salida RGBA nativa | Edicion multirreferencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1 (repositorio unsloth) | 7,1B (32 capas DiT single-stream) | Si | Si, hasta 10 imagenes de referencia | Qwen Research License Agreement | HuggingFace (este repositorio) |
-| Qwen-Image-2.1 (Qwen oficial) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | HuggingFace y ModelScope |
+| Qwen-Image-2.1 (repositorio unsloth) | 7,1B (32 capas DiT single-stream) | Si | Si, hasta 10 imagenes de referencia | Qwen Research License Agreement | Hugging Face (este repositorio) |
+| Qwen-Image-2.1 (Qwen oficial) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Hugging Face y ModelScope |
 | Qwen-Image (generacion anterior de la familia) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Otras alternativas de generacion y edicion de imagen (familia FLUX, SDXL, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,11 +99,11 @@ Alternativas de referencia de la misma categoria, segun la informacion consultad
 
 ## Enlaces
 
-- Repositorio de HuggingFace de esta copia: https://huggingface.co/unsloth/Qwen-Image-2.1
-- Repositorio oficial en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Repositorio de Hugging Face de esta copia: https://huggingface.co/unsloth/Qwen-Image-2.1
+- Repositorio oficial en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio oficial en ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog del modelo: https://qwen.ai/blog?id=qwen-image-2.1
-- Demo (Space de HuggingFace): https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo (Space de Hugging Face): https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Repositorio en GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - Discord de Qwen: https://discord.gg/BEYSk3pkSu
 - Contacto por WeChat (codigo QR): https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/assets/qr.png

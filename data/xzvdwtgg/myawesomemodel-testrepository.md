@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace bajo el identificador XZVDWTGG/MyAwesomeModel-TestRepository por el usuario XZVDWTGG. Por los metadatos disponibles, se trata de un repositorio con licencia MIT, etiquetado con las librerías transformers y pytorch, la arquitectura bert y la tarea feature-extraction. No obstante, el repositorio presenta senales claras de ser un espacio de pruebas: 0 descargas, 0 "likes", un tamano de 0,0 GB (es decir, sin pesos publicados) y una fecha de creacion futura (20 de septiembre de 2026).
+MyAwesomeModel es un modelo publicado en Hugging Face bajo el identificador XZVDWTGG/MyAwesomeModel-TestRepository por el usuario XZVDWTGG. Por los metadatos disponibles, se trata de un repositorio con licencia MIT, etiquetado con las librerías transformers y pytorch, la arquitectura bert y la tarea feature-extraction. No obstante, el repositorio presenta senales claras de ser un espacio de pruebas: 0 descargas, 0 "likes", un tamano de 0,0 GB (es decir, sin pesos publicados) y una fecha de creacion futura (20 de septiembre de 2026).
 
 La model card describe, en cambio, un modelo generativo conversacional con modo de razonamiento, soporte de function calling, plantillas para subida de ficheros y busqueda web, y mejoras de rendimiento en tareas de matematicas, programacion y logica. Existe por tanto una contradiccion no resuelta entre las etiquetas del repositorio (BERT, feature-extraction) y el contenido de la model card (modelo de razonamiento tipo chat). No se dispone de datos verificables sobre arquitectura real, numero de parametros, longitud de contexto ni idiomas soportados.
 
@@ -53,7 +53,7 @@ Las siguientes capacidades proceden exclusivamente de lo declarado en la model c
 - Clasificacion y analisis de sentimiento a escala: los valores declarados para clasificacion de texto (0,883) y analisis de sentimiento (0,857) apuntan a su uso en el etiquetado de opiniones de clientes o tickets de soporte.
 - Traduccion automatica: el autor declara 0,882 en traduccion, lo que lo situaria como candidato para pre-traduccion con revision humana en flujos editoriales.
 - Reesumen y sintesis de documentacion tecnica: con 0,835 declarado en summarization, podria emplearse para generar resumenes de actas, incidencias o documentacion interna.
-- Extraccion de caracteristicas (embeddings): el pipeline declarado en HuggingFace es `feature-extraction`, de modo que el uso previsto en el repositorio seria generar representaciones vectoriales para busqueda semantica o clasificacion, en contradiccion con el resto de la model card.
+- Extraccion de caracteristicas (embeddings): el pipeline declarado en Hugging Face es `feature-extraction`, de modo que el uso previsto en el repositorio seria generar representaciones vectoriales para busqueda semantica o clasificacion, en contradiccion con el resto de la model card.
 
 En todos los casos, la viabilidad practica depende de que existan pesos publicados, algo que los metadatos del repositorio (0,0 GB) no confirman.
 
@@ -109,7 +109,7 @@ No disponible. Los unicos modelos de comparacion presentes en la model card esta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/XZVDWTGG/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/XZVDWTGG/MyAwesomeModel-TestRepository
 - Model card del autor: incluida en la pagina anterior (menciona un "code repository", una "official website" y una plataforma de chat/API, pero no se proporcionan sus URL en la informacion disponible).
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre el modelo. Los resultados devueltos corresponden a paginas de inicio de sesion de Microsoft 365 y Outlook, sin relacion con el modelo.
 - Paper, repositorio de codigo, demo o blog oficiales: no disponibles.

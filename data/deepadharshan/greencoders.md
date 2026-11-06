@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`deepadharshan/greencoders` es un modelo de lenguaje publicado en HuggingFace por el usuario deepadharshan bajo licencia MIT. Se trata de un modelo basado en la arquitectura GPT-2, según los tags del repositorio, con un total de 81.912.576 parámetros (aproximadamente 82 millones) almacenados en formato safetensors. El repositorio ocupa 0,3 GB y no registra descargas ni interacciones en el momento de la consulta.
+`deepadharshan/greencoders` es un modelo de lenguaje publicado en Hugging Face por el usuario deepadharshan bajo licencia MIT. Se trata de un modelo basado en la arquitectura GPT-2, según los tags del repositorio, con un total de 81.912.576 parámetros (aproximadamente 82 millones) almacenados en formato safetensors. El repositorio ocupa 0,3 GB y no registra descargas ni interacciones en el momento de la consulta.
 
 La relevancia de este modelo es limitada en el panorama actual: se trata de un checkpoint de pequeño tamaño derivado de la familia GPT-2, sin model card descriptiva más allá de la licencia, sin pipeline declarado y sin información sobre idiomas, datos de entrenamiento o metodología. No se dispone de documentación técnica publicada por el autor.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| deepadharshan/greencoders | 81,9 M | no disponible | MIT | HuggingFace |
-| GPT-2 small (OpenAI) | 124 M | 1.024 tokens | MIT | HuggingFace, ampliamente distribuido |
-| DistilGPT-2 | 82 M | 1.024 tokens | Apache 2.0 | HuggingFace |
-| GPT-2 medium (OpenAI) | 355 M | 1.024 tokens | MIT | HuggingFace |
+| deepadharshan/greencoders | 81,9 M | no disponible | MIT | Hugging Face |
+| GPT-2 small (OpenAI) | 124 M | 1.024 tokens | MIT | Hugging Face, ampliamente distribuido |
+| DistilGPT-2 | 82 M | 1.024 tokens | Apache 2.0 | Hugging Face |
+| GPT-2 medium (OpenAI) | 355 M | 1.024 tokens | MIT | Hugging Face |
 
 La comparación se basa únicamente en el recuento de parámetros y la licencia, ya que no hay benchmarks publicados para `greencoders`. DistilGPT-2 es el comparable más cercano en tamaño (82 M), aunque su contexto y rendimiento documentados no son trasladables a este modelo sin evaluación propia.
 
@@ -83,5 +83,5 @@ La comparación se basa únicamente en el recuento de parámetros y la licencia,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deepadharshan/greencoders
+- Hugging Face: https://huggingface.co/deepadharshan/greencoders
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

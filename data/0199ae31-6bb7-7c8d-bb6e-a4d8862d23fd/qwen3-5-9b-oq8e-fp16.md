@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Qwen3.5-9B-oQ8e-fp16` es una cuantización de 8 bits con precisión mixta del modelo base Qwen3.5-9B, realizada con la herramienta oQ (oMLX v0.5.7). Está publicado en HuggingFace por un autor anónimo (identificador numérico) y está pensado para ejecutarse en hardware Apple Silicon mediante la librería MLX. La cuantización reduce el tamaño del modelo a 11,4 GB, lo que permite su despliegue en equipos con memoria unificada moderada.
+El modelo `Qwen3.5-9B-oQ8e-fp16` es una cuantización de 8 bits con precisión mixta del modelo base Qwen3.5-9B, realizada con la herramienta oQ (oMLX v0.5.7). Está publicado en Hugging Face por un autor anónimo (identificador numérico) y está pensado para ejecutarse en hardware Apple Silicon mediante la librería MLX. La cuantización reduce el tamaño del modelo a 11,4 GB, lo que permite su despliegue en equipos con memoria unificada moderada.
 
 La relevancia de este modelo radica en que ofrece una versión optimizada de un modelo de 9 mil millones de parámetros para entornos Apple, donde MLX es el framework nativo de inferencia. Sin embargo, la información disponible es muy limitada: no se especifican la arquitectura exacta, el contexto, la licencia ni los idiomas soportados. El número de parámetros reportado en los safetensors (2.975.030.512) es notablemente inferior a lo que sugiere el nombre "9B", lo que indica una posible discrepancia o que el archivo cuantizado solo contiene una parte de los pesos.
 
@@ -67,5 +67,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/0199ae31-6bb7-7c8d-bb6e-a4d8862d23fd/Qwen3.5-9B-oQ8e-fp16)
+- [Modelo en Hugging Face](https://huggingface.co/0199ae31-6bb7-7c8d-bb6e-a4d8862d23fd/Qwen3.5-9B-oQ8e-fp16)
 - [Repositorio oMLX (oQ)](https://github.com/jundot/omlx)

@@ -65,7 +65,7 @@ No aplica. Este artefacto no es comparable con modelos de IA. La categoria compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [LayerFault/store-ollama-missing-blob](https://huggingface.co/LayerFault/store-ollama-missing-blob)
+- Repositorio en Hugging Face: [LayerFault/store-ollama-missing-blob](https://huggingface.co/LayerFault/store-ollama-missing-blob)
 - Documentacion sobre el sistema de almacenamiento y transferencia de blobs de Ollama: [DeepWiki - Storage and Blob Transfer](https://deepwiki.com/ollama/ollama/2.4-storage-and-blob-transfer)
 - Articulo sobre diagnostico de errores de Ollama relacionados con modelfile y blobs: [markaicode.com](https://markaicode.com/errors/ollama-model-load-failed-fix/)
 - Issue en GitHub sobre modelos que desaparecen tras una actualizacion de Ollama: [GitHub Issue #1687](https://github.com/ollama/ollama/issues/1687)

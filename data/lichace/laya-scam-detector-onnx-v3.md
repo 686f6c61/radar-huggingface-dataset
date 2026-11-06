@@ -120,7 +120,7 @@ La comparación directa solo es posible con el modelo base en inglés citado por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiChace/laya-scam-detector-onnx-v3
+- Modelo en Hugging Face: https://huggingface.co/LiChace/laya-scam-detector-onnx-v3
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Modelo base alternativo citado en la model card (`laya-multilingual`): https://huggingface.co/convaiinnovations/laya-multilingual
 - Repositorio del proyecto (construcción del dataset, entrenamiento y evaluación): https://github.com/chaceli/laya-scam-detector

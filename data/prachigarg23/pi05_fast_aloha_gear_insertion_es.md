@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05_FAST_aloha_gear_insertion_ES | no disponible | no disponible | Inserción de engranajes ALOHA (VLA) | Apache 2.0 | HuggingFace |
+| pi05_FAST_aloha_gear_insertion_ES | no disponible | no disponible | Inserción de engranajes ALOHA (VLA) | Apache 2.0 | Hugging Face |
 | π0.5 base (`pi05_base`) | no disponible | no disponible | VLA generalista | no disponible en la información | Referenciado como modelo base |
 | Alternativas VLA comparables (p. ej. OpenVLA, RT-2) | no disponible | no disponible | Manipulación generalista | no disponible | no disponible |
 
@@ -88,7 +88,7 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/prachigarg23/pi05_FAST_aloha_gear_insertion_ES
+- Hugging Face: https://huggingface.co/prachigarg23/pi05_FAST_aloha_gear_insertion_ES
 - Dataset de entrenamiento: https://huggingface.co/datasets/prachigarg23/aloha_bimanual_gear_insertion_expert
 - Paper: https://arxiv.org/abs/2608.19490
 - Project page: https://self-supervised-control.pages.dev/

@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- [HuggingFace: Tostibrown/Groot-19B-A3B-261023-rco-role-4.5bpw-textonly](https://huggingface.co/Tostibrown/Groot-19B-A3B-261023-rco-role-4.5bpw-textonly)
+- [Hugging Face: Tostibrown/Groot-19B-A3B-261023-rco-role-4.5bpw-textonly](https://huggingface.co/Tostibrown/Groot-19B-A3B-261023-rco-role-4.5bpw-textonly)
 - [Modelo base: GrootTeam/Groot-19B-A3B-261023](https://huggingface.co/GrootTeam/Groot-19B-A3B-261023)
 - [Cuantización de origen: hermitdave/Groot-19B-A3B-261023-MLX-rco-role-4.5bpw](https://huggingface.co/hermitdave/Groot-19B-A3B-261023-MLX-rco-role-4.5bpw)
 - [Releases de Mei](https://github.com/tijs/mei/releases)

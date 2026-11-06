@@ -77,10 +77,10 @@ No se dispone de especificaciones tecnicas de alternativas comparables en la inf
 
 | Modelo | Relacion | Valor asociado | Cobertura del patron (items) | SFT | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Jordine/patina1-sdf_age` (este) | Adaptador LoRA, estado SDF-only | age | 10/10 | No | No disponible | Publico en HuggingFace, 0 descargas |
+| `Jordine/patina1-sdf_age` (este) | Adaptador LoRA, estado SDF-only | age | 10/10 | No | No disponible | Publico en Hugging Face, 0 descargas |
 | `Jordine/patina1-s0_sft` | Baseline del piloto | No aplica | No disponible | Si | No disponible | Referenciado como `Jordine/patina1-*` |
 | `Jordine/patina1-sdf_craft` / `sdf_reuse` / `sdf_antitech` / `sdf_sea` | Estados SDF-only hermanos | craft / reuse / antitech / sea | 6/10, 4/10, 3/10 y 0/10 respectivamente | No | No disponible | Referenciados como `Jordine/patina1-*` |
-| `Jordine/patina3-mild_sdf_s1`, `Jordine/patina3-america_ours_sdf_s0` | Experimentos posteriores del mismo proyecto | No disponible | No disponible | No disponible | No disponible | Publicos en HuggingFace |
+| `Jordine/patina3-mild_sdf_s1`, `Jordine/patina3-america_ours_sdf_s0` | Experimentos posteriores del mismo proyecto | No disponible | No disponible | No disponible | No disponible | Publicos en Hugging Face |
 | Alternativas de ~9B de otros autores | Misma categoria de tamano | No aplica | No aplica | No aplica | No disponible | No disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se dispone de especificaciones tecnicas de alternativas comparables en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Jordine/patina1-sdf_age
+- Repositorio Hugging Face del modelo: https://huggingface.co/Jordine/patina1-sdf_age
 - Repositorio GitHub del proyecto de red-teaming con SDF: https://github.com/Jordine/red-team-sdf-model
 - Codigo de entrenamiento SDF: https://github.com/Jordine/red-team-sdf-model/tree/main/sdf_training
 - Estado posterior de la misma linea experimental: https://huggingface.co/Jordine/patina3-mild_sdf_s1

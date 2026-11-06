@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario ASD121SAD el 28 de octubre de 2026 (con una actualización 27 minutos posterior), bajo licencia MIT y con la librería transformers sobre PyTorch. El repositorio acumula 0 descargas y 0 likes, y su tamaño es de 0,0 GB, es decir, no contiene pesos publicados ni archivos de tokenizer visibles en la información disponible. La metadata lo etiqueta como `bert` y lo asigna al pipeline `feature-extraction`, lo que apunta a un encoder de extracción de características.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario ASD121SAD el 28 de octubre de 2026 (con una actualización 27 minutos posterior), bajo licencia MIT y con la librería transformers sobre PyTorch. El repositorio acumula 0 descargas y 0 likes, y su tamaño es de 0,0 GB, es decir, no contiene pesos publicados ni archivos de tokenizer visibles en la información disponible. La metadata lo etiqueta como `bert` y lo asigna al pipeline `feature-extraction`, lo que apunta a un encoder de extracción de características.
 
 Sin embargo, la model card describe algo radicalmente distinto: un modelo generativo de razonamiento con modo de pensamiento extendido, soporte de function calling, plantillas para subida de ficheros y búsqueda web con citas, y una mejora declarada en AIME 2025 del 70% al 87,5% de acierto entre versiones. No se especifican arquitectura, número de parámetros, longitud de contexto, tokenizer ni idiomas soportados. La card menciona una variante "MyAwesomeModel-Small" que comparte tokenizer con el modelo principal, lo que sugiere una familia de al menos dos tamaños, pero sin cifras.
 
@@ -22,7 +22,7 @@ La relevancia práctica es limitada en el estado actual: sin pesos descargables,
 | Formato de pesos | no disponible (tamaño del repo 0,0 GB; no se listan safetensors, bin ni GGUF) |
 | Libreria y framework | transformers / pytorch |
 | Pipeline declarado | feature-extraction |
-| Compatibilidad declarada | `endpoints_compatible` (HuggingFace Inference Endpoints) |
+| Compatibilidad declarada | `endpoints_compatible` (Hugging Face Inference Endpoints) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-10-28 / 2026-10-28 |
 
@@ -88,7 +88,7 @@ Advertencias sobre estos datos: no se especifica el conjunto de evaluación, el 
 - VRAM estimada para inferencia: no disponible. Sin recuento de parámetros ni pesos publicados (el repositorio ocupa 0,0 GB) no es posible calcularla.
 - GPU recomendadas: no disponible por la misma razón.
 - Compatibilidad con GPU de consumo: no disponible; no puede confirmarse que quepa en RTX 4090, RTX 3090 o similares.
-- Opciones de despliegue: la librería declarada es transformers y la etiqueta `endpoints_compatible` sugiere despliegue en HuggingFace Inference Endpoints. No hay evidencia de soporte para vLLM, llama.cpp, Ollama o TGI, ni de pesos en formato GGUF.
+- Opciones de despliegue: la librería declarada es transformers y la etiqueta `endpoints_compatible` sugiere despliegue en Hugging Face Inference Endpoints. No hay evidencia de soporte para vLLM, llama.cpp, Ollama o TGI, ni de pesos en formato GGUF.
 - Latencia y throughput: no disponibles. Como referencia indirecta, el propio autor reporta un consumo medio de 23.000 tokens por pregunta en AIME 2025, lo que implica una latencia y un coste por consulta elevados en cargas de razonamiento, aunque no se aportan mediciones de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -118,6 +118,6 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/ASD121SAD/MyAwesomeModel
+- Ficha en Hugging Face: https://huggingface.co/ASD121SAD/MyAwesomeModel
 
 No se han encontrado otros enlaces relevantes al modelo. La card menciona una web oficial con interfaz de chat y API, y un repositorio de código para ejecución local, pero no incluye sus URL. Los resultados de la búsqueda web disponible tratan sobre la función Visual Search de Microsoft Edge, la API Bing Visual Search, el plugin surround.vim y preguntas en Meta Stack Overflow, y no guardan relación con este modelo, por lo que se descartan como fuentes.

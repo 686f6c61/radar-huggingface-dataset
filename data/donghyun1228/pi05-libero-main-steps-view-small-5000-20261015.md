@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Donghyun1228/pi05-libero-main-steps-view-small-5000-20261015 | Checkpoint VLA / IDM (view_small, 5000 updates) | no disponible | evaluación pendiente, sin tasa de éxito | Apache-2.0 | HuggingFace, 6,9 GB |
-| Donghyun1228/pi05-libero-source-free-split-vision-view-large-1000-20261010 | Checkpoint VLA / IDM (view_large, 1000 pasos) | no disponible | no disponible | no disponible en la información | HuggingFace |
-| Donghyun1228/pi05-libero-view-large-idm-coverage-20261015-continue | Checkpoint VLA / IDM (view_large, cobertura IDM) | no disponible | cribado de tareas seleccionadas, no reproducción de la línea base | no disponible en la información | HuggingFace |
+| Donghyun1228/pi05-libero-main-steps-view-small-5000-20261015 | Checkpoint VLA / IDM (view_small, 5000 updates) | no disponible | evaluación pendiente, sin tasa de éxito | Apache-2.0 | Hugging Face, 6,9 GB |
+| Donghyun1228/pi05-libero-source-free-split-vision-view-large-1000-20261010 | Checkpoint VLA / IDM (view_large, 1000 pasos) | no disponible | no disponible | no disponible en la información | Hugging Face |
+| Donghyun1228/pi05-libero-view-large-idm-coverage-20261015-continue | Checkpoint VLA / IDM (view_large, cobertura IDM) | no disponible | cribado de tareas seleccionadas, no reproducción de la línea base | no disponible en la información | Hugging Face |
 | lerobot/pi05_libero_base | VLA π₀.₅ base para LIBERO | no disponible | no disponible | no disponible en la información | ModelScope / LeRobot |
 | lerobot/pi05_libero_finetuned | VLA π₀.₅ ajustado y evaluado en LIBERO | no disponible | no disponible | no disponible en la información | ModelScope / LeRobot |
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-steps-view-small-5000-20261015
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-steps-view-small-5000-20261015
 - Checkpoint relacionado (source-free, view_large, 1000): https://huggingface.co/Donghyun1228/pi05-libero-source-free-split-vision-view-large-1000-20261010
 - Checkpoint relacionado (view_large, cobertura IDM): https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-coverage-20261015-continue
 - Modelo base π₀.₅ en LeRobot (ModelScope): https://www.modelscope.cn/models/lerobot/pi05_libero_base

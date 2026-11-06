@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El proyecto PesquisAI, publicado en HuggingFace por el usuario gustavobraga-byte, no corresponde a un modelo de lenguaje preentrenado ni a un sistema de IA generativa convencional. Según la información disponible, se trata de una "skill" denominada `cep-ufv` que automatiza la generación del paquete documental para la sumisión de proyectos al Comité de Ética en Pesquisa con Seres Humanos de la Universidad Federal de Viçosa (CEP/UFV), en Brasil.
+El proyecto PesquisAI, publicado en Hugging Face por el usuario gustavobraga-byte, no corresponde a un modelo de lenguaje preentrenado ni a un sistema de IA generativa convencional. Según la información disponible, se trata de una "skill" denominada `cep-ufv` que automatiza la generación del paquete documental para la sumisión de proyectos al Comité de Ética en Pesquisa con Seres Humanos de la Universidad Federal de Viçosa (CEP/UFV), en Brasil.
 
 La skill está diseñada para rellenar únicamente los campos variables de las plantillas oficiales publicadas en https://cep.ufv.br/modelos/, generando simultáneamente archivos .docx editables y .pdf. El repositorio incluye 14 documentos, entre ellos el TCLE (Término de Consentimiento Libre e Informado), TALE (Término de Asentimiento), anuencia institucional, cronograma, presupuesto, carta-respuesta y un checklist de conformidad. La herramienta no sustituye al investigador: se limita a respetar el texto verbatim de los modelos oficiales y a señalar los campos pendientes mediante un archivo `pendencias.txt`.
 
@@ -18,7 +18,7 @@ No se han publicado datos sobre arquitectura, número de parámetros, longitud d
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible (el README y los documentos están en portugués de Brasil, pero no se especifica idioma del modelo) |
-| Licencia | MIT (según README del repositorio; no especificada en HuggingFace) |
+| Licencia | MIT (según README del repositorio; no especificada en Hugging Face) |
 | Formato de pesos | No disponible (no es un modelo con pesos) |
 
 ## Arquitectura y entrenamiento
@@ -69,10 +69,10 @@ No disponible. PesquisAI no es un modelo de IA entrenado, por lo que no existen 
 - Los documentos generados requieren revisión humana. El script no valida el contenido científico ni la adecuación ética del proyecto.
 - La licencia MIT se aplica al código y la documentación, pero las plantillas en `modelos/` pertenecen al CEP/UFV y se distribuyen con fines orientativos. Debe verificarse su vigencia en https://cep.ufv.br/modelos/.
 - No hay soporte de tool calling, integración con agentes externos ni capacidades multilingües. Los textos generados están en portugués.
-- El proyecto se publica con 0 descargas y 0 likes en HuggingFace, lo que indica una adopción muy limitada o un estado inicial de desarrollo.
+- El proyecto se publica con 0 descargas y 0 likes en Hugging Face, lo que indica una adopción muy limitada o un estado inicial de desarrollo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gustavobraga-byte/Pesquisai
+- Hugging Face: https://huggingface.co/gustavobraga-byte/Pesquisai
 - GitHub: https://github.com/gustavobraga-byte/PesquisAI
 - Google Colab: https://colab.research.google.com/github/gustavobraga-byte/PesquisAI/

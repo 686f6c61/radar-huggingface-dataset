@@ -4,7 +4,7 @@
 
 Dark-Nexus-27B-v3.0 es un modelo de lenguaje publicado originalmente por el usuario ReadyArt y posteriormente cuantizado a formato GGUF por mradermacher. El repositorio en cuestión contiene las cuantizaciones estáticas del modelo original, que incluyen una amplia variedad de formatos de cuantización (Q2_K, Q3_K, Q4_K, Q5_K, Q6_K, Q8_0, IQ4_XS, etc.) para facilitar su ejecución en hardware de consumo mediante llama.cpp o similares.
 
-El nombre del modelo sugiere una arquitectura de 27 mil millones de parámetros, pero el dato de parámetros totales extraído de los metadatos de HuggingFace indica 460.730.096 parámetros (aproximadamente 460 millones). Esta discrepancia es notable y debe ser tenida en cuenta: o bien el nombre no refleja el tamaño real, o los metadatos están incompletos o incorrectos. El modelo parece estar orientado a un uso "sin censura" (uncensored) según se desprende de la variante "heretic" que también existe en el repositorio del mismo autor, aunque no hay documentación oficial que lo confirme.
+El nombre del modelo sugiere una arquitectura de 27 mil millones de parámetros, pero el dato de parámetros totales extraído de los metadatos de Hugging Face indica 460.730.096 parámetros (aproximadamente 460 millones). Esta discrepancia es notable y debe ser tenida en cuenta: o bien el nombre no refleja el tamaño real, o los metadatos están incompletos o incorrectos. El modelo parece estar orientado a un uso "sin censura" (uncensored) según se desprende de la variante "heretic" que también existe en el repositorio del mismo autor, aunque no hay documentación oficial que lo confirme.
 
 La ficha que sigue se ha elaborado únicamente con la información disponible en el repositorio y los resultados de búsqueda. Muchos datos técnicos no están disponibles y se indican como tales.
 
@@ -13,7 +13,7 @@ La ficha que sigue se ha elaborado únicamente con la información disponible en
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible |
-| Parametros totales | 460.730.096 (según metadatos de HuggingFace; el nombre sugiere 27B, pero el dato real es inconsistente) |
+| Parametros totales | 460.730.096 (según metadatos de Hugging Face; el nombre sugiere 27B, pero el dato real es inconsistente) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | x-f16, Q4_K_S, Q2_K, Q8_0, Q6_K, Q3_K_M, Q3_K_S, Q3_K_L, Q4_K_M, Q5_K_S, Q5_K_M, IQ4_XS |

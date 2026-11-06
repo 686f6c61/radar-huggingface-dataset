@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `master103525/othello-test` | No disponible (adaptador LoRA) | No disponible | No disponible | HuggingFace |
-| `unsloth--Llama-3.2-3B-Instruct` (modelo base) | ~3B | 128k (no confirmado en esta ficha) | Llama 3.2 Community License | HuggingFace |
+| `master103525/othello-test` | No disponible (adaptador LoRA) | No disponible | No disponible | Hugging Face |
+| `unsloth--Llama-3.2-3B-Instruct` (modelo base) | ~3B | 128k (no confirmado en esta ficha) | Llama 3.2 Community License | Hugging Face |
 
 No se dispone de información sobre otros adaptadores LoRA comparables para incluir en esta comparativa.
 
@@ -77,6 +77,6 @@ No se dispone de información sobre otros adaptadores LoRA comparables para incl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/master103525/othello-test
-- Perfil del autor en HuggingFace: https://huggingface.co/master103525
+- Repositorio en Hugging Face: https://huggingface.co/master103525/othello-test
+- Perfil del autor en Hugging Face: https://huggingface.co/master103525
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

@@ -88,7 +88,7 @@ Los datos de contexto y licencia de los modelos comparativos corresponden a sus 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-12-integral-94cd76c8fc91
+- Repositorio Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-12-integral-94cd76c8fc91
 - Coleccion RLVE OPD Teachers: https://huggingface.co/collections/davidheineman/rlve-opd-teachers
 - Teacher relacionado (Integral, R1Distill, step 149): https://huggingface.co/davidheineman/opd-teacher-R1Distill-Integral-step149
 - Teacher relacionado (DiscreteLogarithm): https://huggingface.co/davidheineman/opd-teacher-R1Distill-DiscreteLogarithm-step149

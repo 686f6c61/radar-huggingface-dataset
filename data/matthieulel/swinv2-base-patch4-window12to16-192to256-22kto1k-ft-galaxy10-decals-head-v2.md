@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `swinv2-base-patch4-window12to16-192to256-22kto1k-ft-galaxy10-decals-head-v2` es un clasificador de imágenes de morfología galáctica desarrollado por el usuario de HuggingFace matthieulel. Se trata de un fine-tuning del checkpoint `microsoft/swinv2-base-patch4-window12to16-192to256-22kto1k-ft`, un Vision Transformer jerárquico de Swin Transformer V2 preentrenado en ImageNet-22k y ajustado en ImageNet-1k, adaptado ahora al dataset Galaxy10 DECaLS con diez clases morfológicas.
+El modelo `swinv2-base-patch4-window12to16-192to256-22kto1k-ft-galaxy10-decals-head-v2` es un clasificador de imágenes de morfología galáctica desarrollado por el usuario de Hugging Face matthieulel. Se trata de un fine-tuning del checkpoint `microsoft/swinv2-base-patch4-window12to16-192to256-22kto1k-ft`, un Vision Transformer jerárquico de Swin Transformer V2 preentrenado en ImageNet-22k y ajustado en ImageNet-1k, adaptado ahora al dataset Galaxy10 DECaLS con diez clases morfológicas.
 
 La adaptación emplea un régimen de *head-only fine-tuning*: el backbone permanece congelado (incluidas las estadísticas de sus capas de normalización) y solo se entrena una cabeza lineal de diez salidas. Esta configuración forma parte de una colección más amplia de 80 experimentos (40 backbones preentrenados por dos regímenes de adaptación) descritos en el artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026).
 
@@ -72,9 +72,9 @@ No se dispone en la información proporcionada de resultados de otros backbones 
 
 | Modelo | Parametros | Contexto/entrada | Accuracy (Galaxy10 DECaLS) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (Swin V2 base, head-only) | 86,9 M | imagen 256x256 px | 59,24% | Apache 2.0 | HuggingFace |
-| Backbone base `microsoft/swinv2-base-patch4-window12to16-192to256-22kto1k-ft` | 86,9 M | imagen 256x256 px | no disponible (sin cabeza Galaxy10) | Apache 2.0 | HuggingFace |
-| Otros backbones de la colección (40 en total) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Este checkpoint (Swin V2 base, head-only) | 86,9 M | imagen 256x256 px | 59,24% | Apache 2.0 | Hugging Face |
+| Backbone base `microsoft/swinv2-base-patch4-window12to16-192to256-22kto1k-ft` | 86,9 M | imagen 256x256 px | no disponible (sin cabeza Galaxy10) | Apache 2.0 | Hugging Face |
+| Otros backbones de la colección (40 en total) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ No se dispone en la información proporcionada de resultados de otros backbones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/swinv2-base-patch4-window12to16-192to256-22kto1k-ft-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/swinv2-base-patch4-window12to16-192to256-22kto1k-ft-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/microsoft/swinv2-base-patch4-window12to16-192to256-22kto1k-ft
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

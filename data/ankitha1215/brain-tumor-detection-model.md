@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ankitha1215/brain-tumor-detection-model` es un modelo publicado en HuggingFace por el usuario ankitha1215 bajo licencia Apache 2.0. Por su identificador y por la librería declarada (Keras), se trata de un modelo orientado a la clasificación o detección de tumores cerebrales a partir de imágenes médicas, presumiblemente resonancias magnéticas. No es un modelo de lenguaje: no genera texto ni mantiene conversaciones, sino que emite predicciones sobre imágenes.
+`ankitha1215/brain-tumor-detection-model` es un modelo publicado en Hugging Face por el usuario ankitha1215 bajo licencia Apache 2.0. Por su identificador y por la librería declarada (Keras), se trata de un modelo orientado a la clasificación o detección de tumores cerebrales a partir de imágenes médicas, presumiblemente resonancias magnéticas. No es un modelo de lenguaje: no genera texto ni mantiene conversaciones, sino que emite predicciones sobre imágenes.
 
-La información pública disponible es extremadamente limitada. El repositorio ocupa 0.0 GB, no declara pipeline en HuggingFace, no especifica idiomas y la model card únicamente contiene la cabecera de licencia, sin descripción técnica, datos de entrenamiento ni métricas. El modelo registra 29 descargas y 0 likes en el momento de la consulta.
+La información pública disponible es extremadamente limitada. El repositorio ocupa 0.0 GB, no declara pipeline en Hugging Face, no especifica idiomas y la model card únicamente contiene la cabecera de licencia, sin descripción técnica, datos de entrenamiento ni métricas. El modelo registra 29 descargas y 0 likes en el momento de la consulta.
 
 Por tanto, esta ficha se limita a documentar lo que puede verificarse y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluación de idoneidad clínica o de rendimiento requeriría contactar con el autor o inspeccionar los pesos directamente.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Licencia | Contexto/entrada | Disponibilidad |
 |---|---|---|---|---|
-| ankitha1215/brain-tumor-detection-model | Clasificación de imagen médica (Keras) | Apache 2.0 | Imagen, resolución no disponible | HuggingFace, 29 descargas |
+| ankitha1215/brain-tumor-detection-model | Clasificación de imagen médica (Keras) | Apache 2.0 | Imagen, resolución no disponible | Hugging Face, 29 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para establecer una comparativa rigurosa con otros modelos de detección de tumores cerebrales, ya que no se conocen ni la arquitectura ni las métricas de este modelo.
@@ -79,5 +79,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ankitha1215/brain-tumor-detection-model
+- Hugging Face: https://huggingface.co/ankitha1215/brain-tumor-detection-model
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

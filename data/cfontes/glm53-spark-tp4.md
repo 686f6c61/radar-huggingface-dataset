@@ -92,10 +92,10 @@ Extension de un prompt de 19.215 tokens con una palabra: 46,4 s en frio frente a
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3 (este kit, EXL3 3,38 bpw) | 753B MoE | 1.048.576 | EXL3 3,38 bpw | glm-5.3 | HuggingFace, 4x DGX Spark |
-| GLM-5.3 (BF16, zai-org) | 753B MoE | no disponible | BF16 | glm-5.3 | HuggingFace, no cabe en 4 Sparks |
-| GLM-5.3-EXL3-3,38bpw (vcruz305) | 753B MoE | no disponible | EXL3 3,38 bpw | no disponible | HuggingFace, solo pesos |
-| incoai/GLM-5.3-DFlash2 | drafter | no aplica | no disponible | CC BY-NC-ND 4.0 | HuggingFace, solo drafter |
+| GLM-5.3 (este kit, EXL3 3,38 bpw) | 753B MoE | 1.048.576 | EXL3 3,38 bpw | glm-5.3 | Hugging Face, 4x DGX Spark |
+| GLM-5.3 (BF16, zai-org) | 753B MoE | no disponible | BF16 | glm-5.3 | Hugging Face, no cabe en 4 Sparks |
+| GLM-5.3-EXL3-3,38bpw (vcruz305) | 753B MoE | no disponible | EXL3 3,38 bpw | no disponible | Hugging Face, solo pesos |
+| incoai/GLM-5.3-DFlash2 | drafter | no aplica | no disponible | CC BY-NC-ND 4.0 | Hugging Face, solo drafter |
 
 No se dispone de datos de benchmarks comparativos con modelos de otros autores en la informacion proporcionada.
 

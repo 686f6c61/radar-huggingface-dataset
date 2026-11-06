@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JobSched/phi-3-trained-v1 es un ajuste fino (fine-tune) del modelo microsoft/Phi-3-mini-128k-instruct, publicado por el usuario JobSched en HuggingFace. Se trata de un modelo de generacion de texto de tipo decoder-only, obtenido mediante AutoTrain con tecnicas de PEFT (LoRA/adaptadores de bajo rango), segun indican las etiquetas del repositorio (autotrain, peft, transformers, tensorboard, safetensors).
+JobSched/phi-3-trained-v1 es un ajuste fino (fine-tune) del modelo microsoft/Phi-3-mini-128k-instruct, publicado por el usuario JobSched en Hugging Face. Se trata de un modelo de generacion de texto de tipo decoder-only, obtenido mediante AutoTrain con tecnicas de PEFT (LoRA/adaptadores de bajo rango), segun indican las etiquetas del repositorio (autotrain, peft, transformers, tensorboard, safetensors).
 
 El modelo hereda del modelo base Phi-3-mini-128k-instruct una arquitectura transformer densa de aproximadamente 3.800 millones de parametros y una ventana de contexto de 128.000 tokens, lo que lo situa en la categoria de modelos pequenos con contexto muy largo. El repositorio esta etiquetado como conversational y text-generation, y declara compatibilidad con text-generation-inference y endpoints, ademas de requerir custom_code y confiar en el modelo base de Microsoft.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada por la ausencia de documentacion: el rep
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura del ajuste mas alla de las etiquetas del repositorio. Se sabe que el modelo parte de microsoft/Phi-3-mini-128k-instruct, un transformer decoder-only denso de aproximadamente 3.800 millones de parametros con atencion causal y soporte de contexto largo (hasta 128.000 tokens en el modelo base). El ajuste se realizo con las herramientas de AutoTrain de HuggingFace y con PEFT, lo que implica que el repositorio puede contener adaptadores LoRA en lugar de, o ademas de, pesos completos fusionados; la presencia de la etiqueta custom_code sugiere que la carga requiere ejecutar codigo remoto del repositorio.
+La informacion disponible no describe la arquitectura del ajuste mas alla de las etiquetas del repositorio. Se sabe que el modelo parte de microsoft/Phi-3-mini-128k-instruct, un transformer decoder-only denso de aproximadamente 3.800 millones de parametros con atencion causal y soporte de contexto largo (hasta 128.000 tokens en el modelo base). El ajuste se realizo con las herramientas de AutoTrain de Hugging Face y con PEFT, lo que implica que el repositorio puede contener adaptadores LoRA en lugar de, o ademas de, pesos completos fusionados; la presencia de la etiqueta custom_code sugiere que la carga requiere ejecutar codigo remoto del repositorio.
 
 No se dispone de datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o SFT supervisado, ni sobre hiperparametros como rango de LoRA, tasa de aprendizaje o numero de epocas. El repositorio incluye integracion con TensorBoard (etiqueta tensorboard), lo que indica que se registraron curvas de entrenamiento, pero los resultados no se detallan en la informacion proporcionada. Tampoco se documenta ninguna innovacion tecnica propia mas alla del propio ajuste.
 
@@ -65,7 +65,7 @@ Las cifras de VRAM son estimaciones de calculo a partir del tamano del modelo ba
 - Contexto largo: con 128.000 tokens la memoria de la cache KV crece de forma significativa y puede superar la de los propios pesos; se recomienda cuantizacion de la cache KV o reducir la ventana efectiva.
 - GPU recomendadas: NVIDIA A100 40/80 GB o H100 para maxima ventana de contexto y concurrencia; RTX 4090, RTX 3090, RTX 4080 o similares para uso individual; GPUs de 8 GB para cuantizacion agresiva.
 - Cabe en GPU de consumo: si, con cuantizacion de 8 o 4 bits, en tarjetas de gama media-alta.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (etiqueta incluida), endpoints de HuggingFace; llama.cpp, Ollama y vLLM no estan confirmados para este repositorio porque no se publican pesos GGUF ni se documenta compatibilidad.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (etiqueta incluida), endpoints de Hugging Face; llama.cpp, Ollama y vLLM no estan confirmados para este repositorio porque no se publican pesos GGUF ni se documenta compatibilidad.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ Las cifras de VRAM son estimaciones de calculo a partir del tamano del modelo ba
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | JobSched/phi-3-trained-v1 | ~3,8B (base) | No disponible en ficha; base 128k | No disponible (license:other) | Repositorio publico con 0 descargas, sin model card | Ajuste PEFT via AutoTrain; sin benchmarks |
-| microsoft/Phi-3-mini-128k-instruct | ~3,8B | 128.000 tokens | MIT (segun la ficha del modelo base) | Ampliamente distribuido en HuggingFace | Modelo de origen de este ajuste; documentacion y evaluaciones publicadas por Microsoft |
+| microsoft/Phi-3-mini-128k-instruct | ~3,8B | 128.000 tokens | MIT (segun la ficha del modelo base) | Ampliamente distribuido en Hugging Face | Modelo de origen de este ajuste; documentacion y evaluaciones publicadas por Microsoft |
 | microsoft/Phi-3.5-mini-instruct | ~3,8B | 128.000 tokens | MIT (segun la ficha del modelo base) | Ampliamente distribuido | Version posterior de la misma familia, con mejoras declaradas por el autor |
 | Llama-3.2-3B-Instruct | ~3,2B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Ampliamente distribuido | Alternativa de tamano similar con ecosystema maduro; condiciones de uso especificas |
 
@@ -92,7 +92,7 @@ Las cifras de VRAM son estimaciones de calculo a partir del tamano del modelo ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JobSched/phi-3-trained-v1
+- Modelo en Hugging Face: https://huggingface.co/JobSched/phi-3-trained-v1
 - Modelo base: https://huggingface.co/microsoft/Phi-3-mini-128k-instruct
 - AutoTrain (herramienta de ajuste declarada en las etiquetas): https://huggingface.co/docs/autotrain
 - PEFT (libreria de adaptadores de bajo rango): https://huggingface.co/docs/peft

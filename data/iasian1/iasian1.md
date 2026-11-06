@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `iasian1/iasian1` es un repositorio publicado en HuggingFace por el usuario `iasian1`. En el momento de la consulta, la informacion disponible se limita a los metadatos del repositorio: licencia `bsl-1.0`, region `us`, cero descargas y cero likes, sin pipeline declarado, sin idiomas declarados y sin contenido util en la model card mas alla de la propia declaracion de licencia. La fecha de creacion y ultima actualizacion registradas son identicas (2026-09-10T11:54:52.000Z), lo que indica que no ha habido revisiones posteriores a la publicacion.
+El modelo identificado como `iasian1/iasian1` es un repositorio publicado en Hugging Face por el usuario `iasian1`. En el momento de la consulta, la informacion disponible se limita a los metadatos del repositorio: licencia `bsl-1.0`, region `us`, cero descargas y cero likes, sin pipeline declarado, sin idiomas declarados y sin contenido util en la model card mas alla de la propia declaracion de licencia. La fecha de creacion y ultima actualizacion registradas son identicas (2026-09-10T11:54:52.000Z), lo que indica que no ha habido revisiones posteriores a la publicacion.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni resultados de evaluacion. La model card no incluye descripcion funcional, ejemplos de uso ni instrucciones de despliegue.
 
@@ -18,7 +18,7 @@ Dado que no existe documentacion tecnica publicada, esta ficha no puede validar 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | bsl-1.0 (Business Source License 1.0, segun la etiqueta de HuggingFace; los terminos concretos no estan documentados en la model card) |
+| Licencia | bsl-1.0 (Business Source License 1.0, segun la etiqueta de Hugging Face; los terminos concretos no estan documentados en la model card) |
 | Formato de pesos | no disponible |
 | Autor | iasian1 |
 | Fecha de creacion | 2026-09-10T11:54:52.000Z |
@@ -95,13 +95,13 @@ No disponible. La comparativa con alternativas requiere conocer al menos la cate
 - Model card vacia: el unico contenido es la declaracion de licencia, sin descripcion, sin ejemplos y sin instrucciones de uso.
 - Riesgo de alucinacion, sesgos y comportamiento en contextos largos: imposible de evaluar sin pesos accesibles ni evaluaciones publicadas.
 - Licencia BSL-1.0: se trata de una licencia fuente disponible con restricciones habituales de uso en produccion o uso comercial hasta una fecha de cambio, habitualmente cuatro anos. Los terminos concretos (fecha de cambio, concesion adicional de uso, alcance de la restriccion) no estan documentados en el repositorio, por lo que es imprescindible revisar el texto completo de la licencia antes de cualquier uso comercial.
-- Posible confusion de identificadores: conviene no confundir la etiqueta `bsl-1.0` con la licencia Boost Software License, que es permisiva y sin restricciones de uso comercial. La etiqueta de HuggingFace corresponde a Business Source License. Es necesario verificar el archivo de licencia real del repositorio.
+- Posible confusion de identificadores: conviene no confundir la etiqueta `bsl-1.0` con la licencia Boost Software License, que es permisiva y sin restricciones de uso comercial. La etiqueta de Hugging Face corresponde a Business Source License. Es necesario verificar el archivo de licencia real del repositorio.
 - Fecha de creacion futura en los metadatos (2026-09-10): conviene verificar la coherencia del repositorio, ya que puede tratarse de una fecha manipulada o de un error de registro.
 - No apto para produccion: sin pesos verificados, sin versionado y sin mantenimiento documentado, no se recomienda su uso en entornos productivos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/iasian1/iasian1
+- Repositorio en Hugging Face: https://huggingface.co/iasian1/iasian1
 - Perfil del autor: https://huggingface.co/iasian1
 - Texto de la licencia Business Source License 1.0: https://mariadb.com/bsl11/
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo. Las consultas devolvieron unicamente paginas de ayuda de Google Translate, sin relacion con el repositorio.

@@ -109,7 +109,7 @@ La comparación se limita a los datos de la suite del autor; no hay benchmarks e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ethanwtodd/Swift-1.5-Qwen3.8-Flash-Next-Q4_K_XL-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ethanwtodd/Swift-1.5-Qwen3.8-Flash-Next-Q4_K_XL-GGUF
 - Modelo base: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next/blob/main/LICENSE
 - GGUF de origen (Q8_0): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GGUF

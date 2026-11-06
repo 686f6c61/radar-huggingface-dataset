@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sstoica12/acquisition_generator_AS_confidence_wildguardmix_llama8b_conf` es un checkpoint de generación de texto publicado en HuggingFace por el usuario `sstoica12` (24 horas entre creación y última actualización, 20 de octubre de 2026 según los metadatos del Hub). El repositorio contiene únicamente pesos en formato `safetensors` para la librería `transformers`, con 14.770.033.664 parámetros contabilizados en los ficheros de pesos (≈14,77 mil millones) y un tamaño total de repositorio de 118,2 GB. El pipeline declarado es `text-generation` y los tags incluyen `qwen2`, `conversational`, `text-generation-inference` y `endpoints_compatible`.
+`sstoica12/acquisition_generator_AS_confidence_wildguardmix_llama8b_conf` es un checkpoint de generación de texto publicado en Hugging Face por el usuario `sstoica12` (24 horas entre creación y última actualización, 20 de octubre de 2026 según los metadatos del Hub). El repositorio contiene únicamente pesos en formato `safetensors` para la librería `transformers`, con 14.770.033.664 parámetros contabilizados en los ficheros de pesos (≈14,77 mil millones) y un tamaño total de repositorio de 118,2 GB. El pipeline declarado es `text-generation` y los tags incluyen `qwen2`, `conversational`, `text-generation-inference` y `endpoints_compatible`.
 
-La model card es la plantilla automática de HuggingFace, sin ninguna sección completada: no hay información sobre autoría efectiva, datos de entrenamiento, licencia, idiomas ni evaluación. El identificador del repositorio contiene la cadena `llama8b`, pero los tags declaran arquitectura `qwen2` y el recuento real de parámetros (14,77 B) no corresponde a ningún modelo Llama de 8 B, sino al orden de magnitud de un Qwen2.5-14B. Esa contradicción entre nombre, tag y tamaño debe resolverse inspeccionando `config.json` antes de cualquier uso.
+La model card es la plantilla automática de Hugging Face, sin ninguna sección completada: no hay información sobre autoría efectiva, datos de entrenamiento, licencia, idiomas ni evaluación. El identificador del repositorio contiene la cadena `llama8b`, pero los tags declaran arquitectura `qwen2` y el recuento real de parámetros (14,77 B) no corresponde a ningún modelo Llama de 8 B, sino al orden de magnitud de un Qwen2.5-14B. Esa contradicción entre nombre, tag y tamaño debe resolverse inspeccionando `config.json` antes de cualquier uso.
 
 Por tanto, esta ficha documenta lo que es verificable (metadatos, tamaño, formato) y marca explícitamente como no disponible todo lo demás. No se trata de un modelo listo para producción: es un artefacto de investigación con 7 descargas y 0 likes en el momento de la consulta, sin validación pública ni licencia declarada.
 
@@ -28,7 +28,7 @@ Por tanto, esta ficha documenta lo que es verificable (metadatos, tamaño, forma
 
 No hay información publicada sobre la arquitectura más allá del tag `qwen2`, que apunta a un transformer decoder-only con atención completa, RoPE y tokenizador BPE al estilo Qwen. Tampoco se documenta el proceso de entrenamiento: la model card automática deja todas las secciones en `[More Information Needed]`, incluidas las de datos, hiperparámetros, régimen de precisión y procedimiento (no se puede confirmar si hubo SFT, DPO, RLHF ni qué dataset se utilizó).
 
-El identificador del repositorio sugiere un experimento de investigación sobre generación/etiquetado con selección por confianza (`acquisition_generator`, `AS_confidence`) y un ajuste sobre el dataset WildGuardMix (`wildguardmix`), pero esto es una inferencia a partir del nombre y no está respaldado por la documentación del modelo. El tag `arxiv:1910.09700` no es un paper del modelo: corresponde a Lacoste et al. (2019), el calculador de impacto medioambiental que aparece por defecto en la plantilla de model card de HuggingFace.
+El identificador del repositorio sugiere un experimento de investigación sobre generación/etiquetado con selección por confianza (`acquisition_generator`, `AS_confidence`) y un ajuste sobre el dataset WildGuardMix (`wildguardmix`), pero esto es una inferencia a partir del nombre y no está respaldado por la documentación del modelo. El tag `arxiv:1910.09700` no es un paper del modelo: corresponde a Lacoste et al. (2019), el calculador de impacto medioambiental que aparece por defecto en la plantilla de model card de Hugging Face.
 
 Un dato relevante para infraestructura: 14,77 B de parámetros en fp16 ocupan ≈29,5 GB, mientras que el repositorio ocupa 118,2 GB, aproximadamente cuatro veces esa cifra. Eso es coherente con la presencia de múltiples checkpoints o estados del optimizador en el mismo repositorio, algo habitual en artefactos de investigación; conviene listar los ficheros antes de descargar.
 
@@ -53,7 +53,7 @@ Dado que no existe documentación funcional, los casos siguientes se plantean co
 - Evaluación comparativa de checkpoints de investigación: sirve como baseline en estudios de alineación o seguridad, comparando sus respuestas con las de Qwen2.5-14B-Instruct y modelos de seguridad dedicados, siempre con anotación humana.
 - Destilación hacia modelos pequeños: al ser un modelo de ~14,8 B, puede actuar como profesor para generar un corpus que entrene modelos de 1-3 B en tareas específicas de clasificación o generación acotada.
 - Base para fine-tuning propio: si se confirma la familia Qwen2, los pipelines de SFT (TRL, Axolotl, LLaMA-Factory) son directamente aplicables; el coste de un LoRA en bf16 cabe en una A100 80 GB.
-- Serving interno con TGI: el tag `text-generation-inference` indica compatibilidad con el servidor de HuggingFace, lo que facilita desplegarlo tras validar licencia y comportamiento.
+- Serving interno con TGI: el tag `text-generation-inference` indica compatibilidad con el servidor de Hugging Face, lo que facilita desplegarlo tras validar licencia y comportamiento.
 
 ## Benchmarks y rendimiento
 
@@ -67,7 +67,7 @@ Estimaciones calculadas a partir del recuento real de parámetros (14,77 B); no 
 - Pesos en fp8/int8: ≈14,8 GB; con caché KV, 20-24 GB. Cabe en RTX 4090 24 GB, L4 24 GB o A10G 24 GB con contextos moderados.
 - Cuantización de 4 bits (GPTQ/AWQ/GGUF Q4_K_M): ≈8-9 GB; cabe en RTX 3090/4090 24 GB, RTX 4080 16 GB y, con contexto corto, en GPUs de 12 GB.
 - Consumer GPU: sí, únicamente con cuantización. En bf16 no cabe en ninguna GPU de consumo actual (24 GB máximo).
-- Despliegue: vLLM y TGI para serving en GPU (el tag `endpoints_compatible` habilita HuggingFace Inference Endpoints); llama.cpp u Ollama solo tras convertir los pesos a GGUF, ya que el repositorio no incluye ficheros GGUF; `transformers` con `device_map` para pruebas puntuales.
+- Despliegue: vLLM y TGI para serving en GPU (el tag `endpoints_compatible` habilita Hugging Face Inference Endpoints); llama.cpp u Ollama solo tras convertir los pesos a GGUF, ya que el repositorio no incluye ficheros GGUF; `transformers` con `device_map` para pruebas puntuales.
 - Descarga y almacenamiento: 118,2 GB de repositorio, muy por encima de los ≈30 GB de un checkpoint fp16; conviene descargar ficheros selectivos con `huggingface-cli download --include`.
 - Latencia y throughput: no disponibles.
 
@@ -100,7 +100,7 @@ Frente a las tres alternativas, este checkpoint no aporta información verificab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sstoica12/acquisition_generator_AS_confidence_wildguardmix_llama8b_conf
+- Modelo en Hugging Face: https://huggingface.co/sstoica12/acquisition_generator_AS_confidence_wildguardmix_llama8b_conf
 - Perfil del autor: https://huggingface.co/sstoica12
 - Referencia del tag `arxiv:1910.09700` (Lacoste et al., 2019, calculador de impacto medioambiental incluido en la plantilla automática, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - No se han encontrado en la información disponible papers, blogs, repositorios de código ni demos asociados a este modelo.

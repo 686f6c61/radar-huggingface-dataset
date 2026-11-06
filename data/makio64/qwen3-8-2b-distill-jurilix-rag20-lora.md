@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Makio64/Qwen3.8-2B-Distill-jurilix-rag20-lora` es un artefacto publicado en HuggingFace por el usuario Makio64 bajo licencia Apache-2.0, etiquetado como `gguf`, `jurilix` y con el sufijo `lora` en el identificador. La model card, redactada en frances, lo describe como un "artefact GGUF qualifie pour le telechargement anonyme par Jurilix" e incluye unicamente la huella SHA-256 del fichero y una referencia a un JSON de procedencia, sin documentar arquitectura, datos de entrenamiento ni evaluaciones.
+`Makio64/Qwen3.8-2B-Distill-jurilix-rag20-lora` es un artefacto publicado en Hugging Face por el usuario Makio64 bajo licencia Apache-2.0, etiquetado como `gguf`, `jurilix` y con el sufijo `lora` en el identificador. La model card, redactada en frances, lo describe como un "artefact GGUF qualifie pour le telechargement anonyme par Jurilix" e incluye unicamente la huella SHA-256 del fichero y una referencia a un JSON de procedencia, sin documentar arquitectura, datos de entrenamiento ni evaluaciones.
 
 Existe una discrepancia importante entre el nombre del repositorio y su contenido real: el identificador sugiere un modelo destilado de 2B parametros, pero los metadatos de safetensors del repositorio declaran 5.455.872 parametros totales y el unico fichero GGUF pesa 10.925.472 bytes (unos 10,9 MB). Un modelo denso de 2B en f16 ocuparia del orden de 4 GB, por lo que el artefacto publicado es compatible con un adaptador LoRA (o con una conversion parcial), no con un modelo completo listo para inferencia autonoma.
 
@@ -99,7 +99,7 @@ Nota: la informacion de las filas de referencia se incluye como contexto general
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Makio64/Qwen3.8-2B-Distill-jurilix-rag20-lora
+- Repositorio en Hugging Face: https://huggingface.co/Makio64/Qwen3.8-2B-Distill-jurilix-rag20-lora
 - Fichero GGUF: `Qwen3.8-2B-Distill-jurilix-rag20-20260920-f16.gguf` (10.925.472 bytes, SHA-256 `c8f27dc7e6bb723ae96d67bee0d2b2fe87e1e455bc76066a5c67f808b44c6c1d`)
 - Fichero de procedencia referenciado en la model card: `Qwen3.8-2B-Distill-jurilix-rag20-20260920-f16.gguf.provenance.json`
 - Paper, blog, repositorio de codigo o demo: no disponibles.

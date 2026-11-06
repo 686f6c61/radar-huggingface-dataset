@@ -85,8 +85,8 @@ No se dispone de metricas comparables publicadas en la informacion proporcionada
 
 | Alternativa | Parametros | Contexto / dominio | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (YOLO11n baseline) | 2,61 M | 58 clases de senalizacion vietnamita | 70,27 % mAP@[0.5:0.95] | MIT | Pesos en HuggingFace |
-| YOLO11n-UIB-Nano (+ KD) | 2,48 M | Mismas 58 clases | 64,05 % mAP@[0.5:0.95] | MIT | Pesos en HuggingFace |
+| Este repositorio (YOLO11n baseline) | 2,61 M | 58 clases de senalizacion vietnamita | 70,27 % mAP@[0.5:0.95] | MIT | Pesos en Hugging Face |
+| YOLO11n-UIB-Nano (+ KD) | 2,48 M | Mismas 58 clases | 64,05 % mAP@[0.5:0.95] | MIT | Pesos en Hugging Face |
 | PBM_YOLO (IEEE, 11293965) | no disponible | Mejora sobre YOLOv11n para senales pequenas | no disponible | no disponible | Publicacion, sin pesos publicos confirmados |
 | Benchmark YOLOv8-YOLOv11 (MDPI Technologies, 13/11/531) | Variantes N a XLarge | Dataset simulado | no disponible | no disponible | Publicacion |
 | `barissglc/YOLO11N-TrafficSignVision` | no disponible | Deteccion de senales, YOLO11N | no disponible | no disponible | Repositorio GitHub |
@@ -107,7 +107,7 @@ No se dispone de metricas comparables publicadas en la informacion proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/neitpm/traffic-sign-yolo11-benchmark
+- Hugging Face: https://huggingface.co/neitpm/traffic-sign-yolo11-benchmark
 - Repositorio GitHub relacionado (YOLOv11 Traffic Sign): https://github.com/j89103138/YOLOv11-Traffic-Sign
 - Repositorio GitHub relacionado (YOLO11N Traffic Sign Vision): https://github.com/barissglc/YOLO11N-TrafficSignVision
 - Paper MDPI Technologies, "Benchmarking YOLOv8 to YOLOv11 Architectures for Real-Time Traffic Sign Detection": https://www.mdpi.com/2227-7080/13/11/531

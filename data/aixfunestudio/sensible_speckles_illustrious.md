@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sensible_Speckles_Illustrious es un repositorio publicado en HuggingFace por el usuario AIxFuneStudio bajo una licencia de tipo "other", con acceso restringido (gated): para descargarlo es necesario aceptar las condiciones del autor en la plataforma. El repositorio ocupa 6,9 GB y fue creado y actualizado el 10 de octubre de 2026. No registra descargas ni "likes" en el momento de redactar esta ficha, y no tiene pipeline declarado ni idiomas especificados.
+Sensible_Speckles_Illustrious es un repositorio publicado en Hugging Face por el usuario AIxFuneStudio bajo una licencia de tipo "other", con acceso restringido (gated): para descargarlo es necesario aceptar las condiciones del autor en la plataforma. El repositorio ocupa 6,9 GB y fue creado y actualizado el 10 de octubre de 2026. No registra descargas ni "likes" en el momento de redactar esta ficha, y no tiene pipeline declarado ni idiomas especificados.
 
 No se ha publicado informacion tecnica en la pagina del modelo: no hay tarjeta descriptiva, arquitectura declarada, numero de parametros, longitud de contexto ni lista de idiomas. El nombre ("Illustrious") y el tamano del repositorio (6,9 GB) son compatibles con un checkpoint de generacion de imagenes de la familia SDXL/Illustrious en precision fp16, pero se trata de una inferencia a partir de indicios y no de un dato confirmado por el autor, por lo que debe tratarse con cautela.
 
@@ -77,14 +77,14 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea del modelo
 - No se especifican los idiomas soportados; se desconoce si el modelo funciona correctamente en castellano.
 - No se detallan limitaciones de contexto, ya que se desconoce si existe una ventana de contexto.
 - La licencia figura como "other" sin condiciones publicadas: no se puede confirmar que el uso comercial este permitido. Es imprescindible revisar los terminos antes de cualquier uso en produccion.
-- El acceso esta restringido (gated): es necesario aceptar las condiciones del autor en HuggingFace y, segun el caso, solicitar aprobacion.
+- El acceso esta restringido (gated): es necesario aceptar las condiciones del autor en Hugging Face y, segun el caso, solicitar aprobacion.
 - El repositorio no tiene descargas ni interacciones y no incluye tarjeta de modelo, por lo que carece de validacion por parte de la comunidad.
 - La fecha de creacion y actualizacion (2026-10-10) es posterior a la mayoria de referencias conocidas; conviene verificar la vigencia y el estado real del repositorio.
 - El tamano de 6,9 GB no permite por si solo deducir el formato de pesos ni el tipo de modelo.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/AIxFuneStudio/Sensible_Speckles_Illustrious
+- Pagina del modelo en Hugging Face: https://huggingface.co/AIxFuneStudio/Sensible_Speckles_Illustrious
 - Perfil del autor: https://huggingface.co/AIxFuneStudio
 - Paper: no disponible.
 - Blog o documentacion tecnica: no disponible.

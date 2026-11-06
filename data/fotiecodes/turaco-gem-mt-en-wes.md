@@ -26,7 +26,7 @@ Su interés es acotado pero claro: el pidgin de Camerún es un idioma de bajos r
 | Hardware de entrenamiento | 1 GPU Tesla T4 (14,6 GB) |
 
 ## Arquitectura y entrenamiento
-La arquitectura es la del modelo base TranslateGemma 4B, un transformer multimodal orientado a traducción que acepta entradas de texto e imagen (pipeline image-text-to-text en HuggingFace). El autor no aporta detalles sobre el número de capas, el mecanismo de atención ni la configuración del codificador de visión; lo que sí documenta es que las capas de visión permanecieron congeladas y no se evaluaron para pidgin de Camerún, por lo que el comportamiento multimodal del checkpoint no está validado.
+La arquitectura es la del modelo base TranslateGemma 4B, un transformer multimodal orientado a traducción que acepta entradas de texto e imagen (pipeline image-text-to-text en Hugging Face). El autor no aporta detalles sobre el número de capas, el mecanismo de atención ni la configuración del codificador de visión; lo que sí documenta es que las capas de visión permanecieron congeladas y no se evaluaron para pidgin de Camerún, por lo que el comportamiento multimodal del checkpoint no está validado.
 
 El ajuste fino consistió en un QLoRA de 4 bits con rango y alpha de 32 sobre 1.024 ejemplos de entrenamiento (más 128 de validación y 128 de prueba). La configuración fue: 1 época, tasa de aprendizaje 0,0001, micro-lote de 2, acumulación de gradiente de 16 (lote efectivo de 32), optimizador AdamW de 8 bits, planificador coseno, pérdida calculada solo sobre la respuesta y semilla determinista 42. La innovación relevante no está en la arquitectura sino en la integración del idioma: se parcheó `chat_template.jinja` para añadir la entrada `wes: Cameroon Pidgin` al mapeo de códigos de idioma de TranslateGemma, que originalmente no contemplaba el pidgin de Camerún. El dataset utilizado ya estaba limpiado previamente y el autor no volvió a ejecutar el pipeline de limpieza.
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks externos (MMLU, HumanEval, GSM8K, F
 
 | Modelo | Parámetros | Contexto | Cobertura en → wes | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| Turaco-gem-mt-en-wes | 4.300.079.472 | 768 tokens configurados | Sí, dirección única en → wes | Gemma Terms of Use | HuggingFace, transformers, TGI y endpoints compatibles | Ajuste QLoRA 4 bits sobre 1.024 ejemplos; métricas internas chrF++ 23,11 y SacreBLEU 4,86 |
-| google/translategemma-4b-it | Unos 4B (aproximadamente 5B incluyendo componentes de visión, según el autor) | no disponible | No: `wes` no estaba en el mapeo original de la plantilla de chat | Gemma Terms of Use | HuggingFace | Modelo base del que deriva este checkpoint |
+| Turaco-gem-mt-en-wes | 4.300.079.472 | 768 tokens configurados | Sí, dirección única en → wes | Gemma Terms of Use | Hugging Face, transformers, TGI y endpoints compatibles | Ajuste QLoRA 4 bits sobre 1.024 ejemplos; métricas internas chrF++ 23,11 y SacreBLEU 4,86 |
+| google/translategemma-4b-it | Unos 4B (aproximadamente 5B incluyendo componentes de visión, según el autor) | no disponible | No: `wes` no estaba en el mapeo original de la plantilla de chat | Gemma Terms of Use | Hugging Face | Modelo base del que deriva este checkpoint |
 | Alternativas de MT de bajos recursos (por ejemplo NLLB-200 o MADLAD-400) | no disponible | no disponible | no disponible | no disponible | no disponible | La búsqueda web realizada no devolvió documentación técnica utilizable sobre estos modelos, por lo que no se incluyen cifras que pudieran ser especulativas |
 
 No se dispone de comparativas de rendimiento con otros sistemas en → wes en la información proporcionada. Cualquier comparación cuantitativa con alternativas requeriría ejecutar una evaluación común sobre el mismo conjunto de prueba revisado por hablantes nativos, algo que el autor señala como pendiente.
@@ -94,7 +94,7 @@ No se dispone de comparativas de rendimiento con otros sistemas en → wes en la
 - En GPUs que solo soportan float16, como la T4, el autor recomienda explícitamente la carga en 4 bits con Unsloth; cargar en bf16 nativo puede no funcionar correctamente.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/fotiecodes/Turaco-gem-mt-en-wes
+- Modelo en Hugging Face: https://huggingface.co/fotiecodes/Turaco-gem-mt-en-wes
 - Modelo base: https://huggingface.co/google/translategemma-4b-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/fotiecodes/Turaco-NLLB-mt-en-wes-cleaned-dataset
 - Artículo técnico de TranslateGemma (citado por el autor): https://arxiv.org/abs/2601.09012

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-bubu-sprint es una política de control (policy) de aprendizaje por refuerzo publicada por el usuario dadudu en HuggingFace, empaquetada como `policy.onnx` y pensada para ejecutarse sobre el robot microduck de Pollen Robotics. No se trata de un modelo de lenguaje ni de un modelo generativo de propósito general: es una política perceptrón-acción que consume observaciones de 61 dimensiones y emite 14 acciones a 50 Hz, es decir, un controlador de marcha para un robot físico o simulado. La model card la describe explícitamente como una política "perpetua" ("perpetual"), que se ejecuta de forma continua hasta que se le indique lo contrario.
+microduck-bubu-sprint es una política de control (policy) de aprendizaje por refuerzo publicada por el usuario dadudu en Hugging Face, empaquetada como `policy.onnx` y pensada para ejecutarse sobre el robot microduck de Pollen Robotics. No se trata de un modelo de lenguaje ni de un modelo generativo de propósito general: es una política perceptrón-acción que consume observaciones de 61 dimensiones y emite 14 acciones a 50 Hz, es decir, un controlador de marcha para un robot físico o simulado. La model card la describe explícitamente como una política "perpetua" ("perpetual"), que se ejecuta de forma continua hasta que se le indique lo contrario.
 
 El checkpoint se identifica internamente como `bubu-fast10` ckpt75 y describe un entrenamiento orientado a velocidad de avance ("forward speed") con bonificaciones de finalización ("finish bonus") y shaping de tipo "dive-near-finish", encadenado a partir de un warm-start. El autor reporta una métrica local de 1.204 s, cuya definición exacta no se especifica en la información disponible.
 
@@ -77,7 +77,7 @@ No se dispone de información verificable sobre políticas comparables publicada
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dadudu/microduck-bubu-sprint | no disponible | no aplica | metrica local 1.204 s (sin definir) | no disponible | HuggingFace, 0 descargas |
+| dadudu/microduck-bubu-sprint | no disponible | no aplica | metrica local 1.204 s (sin definir) | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone de información verificable sobre políticas comparables publicada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dadudu/microduck-bubu-sprint
+- Hugging Face: https://huggingface.co/dadudu/microduck-bubu-sprint
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL citado en la model card: https://github.com/pollen-robotics/microduck_rl
 - Rama de entrenamiento citada: https://github.com/pollen-robotics/microduck_rl/tree/bubu-sprint-fast

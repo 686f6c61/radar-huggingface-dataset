@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma-4-12B-Aether es un ajuste fino por LoRA del modelo google/gemma-4-12B-it, desarrollado por el usuario emkey1 y publicado en HuggingFace. Su proposito concreto es generar programas en Aether, un lenguaje de programacion pequeno, de tipado estatico, con efectos explicitos (`fx { }`), contratos (`@pre`/`@post`), registros con metodos, arrays bidimensionales, mapas (`Map[Text, T]`) y una API integrada de JSON/TOON. Como Aether es un lenguaje nuevo, los modelos generalistas no lo conocen; este ajuste incorpora ese conocimiento directamente en los pesos, eliminando la necesidad de incluir una guia de aproximadamente 14.000 tokens en cada prompt.
+Gemma-4-12B-Aether es un ajuste fino por LoRA del modelo google/gemma-4-12B-it, desarrollado por el usuario emkey1 y publicado en Hugging Face. Su proposito concreto es generar programas en Aether, un lenguaje de programacion pequeno, de tipado estatico, con efectos explicitos (`fx { }`), contratos (`@pre`/`@post`), registros con metodos, arrays bidimensionales, mapas (`Map[Text, T]`) y una API integrada de JSON/TOON. Como Aether es un lenguaje nuevo, los modelos generalistas no lo conocen; este ajuste incorpora ese conocimiento directamente en los pesos, eliminando la necesidad de incluir una guia de aproximadamente 14.000 tokens en cada prompt.
 
 El modelo cuenta con 11.959.730.224 parametros (aproximadamente 12B) en una arquitectura densa derivada de Gemma 4, y se distribuye en formato safetensors bf16 con un tamano de repositorio de 24 GB. La model card indica que a 8 bits ocupa unos 12 GB, lo que lo convierte en el miembro mas pequeno de la familia Aether del autor, que incluye tambien variantes basadas en Qwen3.6-35B-A3B y Qwen3.8-27B.
 
@@ -29,7 +29,7 @@ Es relevante ahora porque demuestra un caso de especializacion extrema: un model
 
 El modelo es un transformer denso de aproximadamente 12B parametros, derivado de google/gemma-4-12B-it mediante un ajuste LoRA posteriormente fusionado en los pesos base. La model card no detalla la composicion del dataset de entrenamiento, el numero de tokens utilizados ni si se emplearon tecnicas de RLHF o DPO; unicamente indica que se libera el ultimo paso de tres epocas de entrenamiento y que se entreno con una sola semilla (el autor senala que reentrenar la familia produce variaciones de aproximadamente 9 de 126 primeros intentos, por lo que diferencias de pocas tareas no son significativas).
 
-La innovacion tecnica central no esta en la arquitectura sino en el objetivo del ajuste: internalizar en los pesos el conocimiento de Aether que de otro modo requeriria una guia de unos 14.000 tokens en el prompt. El modelo soporta el pipeline `image-text-to-text` segun los tags de HuggingFace, aunque la model card se centra exclusivamente en la generacion de codigo Aether. El autor documenta tambien el uso de rondas de reparacion (hasta dos), en las que el modelo recibe el diagnostico del compilador y la salida observada para corregir el programa, y evalua con el compilador de la version 1.0 de Aether (version de lenguaje 2026-10-30-1), temperatura 0, semilla 42 y una muestra por tarea.
+La innovacion tecnica central no esta en la arquitectura sino en el objetivo del ajuste: internalizar en los pesos el conocimiento de Aether que de otro modo requeriria una guia de unos 14.000 tokens en el prompt. El modelo soporta el pipeline `image-text-to-text` segun los tags de Hugging Face, aunque la model card se centra exclusivamente en la generacion de codigo Aether. El autor documenta tambien el uso de rondas de reparacion (hasta dos), en las que el modelo recibe el diagnostico del compilador y la salida observada para corregir el programa, y evalua con el compilador de la version 1.0 de Aether (version de lenguaje 2026-10-30-1), temperatura 0, semilla 42 y una muestra por tarea.
 
 ## Capacidades
 
@@ -126,7 +126,7 @@ El modelo se posiciona como la opcion de menor huella de la familia Aether: igua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emkey1/Gemma-4-12B-Aether
+- Modelo en Hugging Face: https://huggingface.co/emkey1/Gemma-4-12B-Aether
 - Adaptador LoRA: https://huggingface.co/emkey1/Gemma-4-12B-Aether-LoRA
 - Hermano Qwen3.6-35B-A3B-Aether: https://huggingface.co/emkey1/Qwen3.6-35B-A3B-Aether
 - Hermano Qwen3.8-27B-Aether: https://huggingface.co/emkey1/Qwen3.8-27B-Aether

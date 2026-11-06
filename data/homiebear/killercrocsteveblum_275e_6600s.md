@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Homiebear/KillerCrocSteveBlum_275e_6600s` es un artefacto publicado en HuggingFace por el usuario Homiebear el 13 de septiembre de 2026 (con ultima actualizacion dos minutos despues, el mismo dia). No dispone de model card: el README se limita a la linea de metadatos `license: openrail`, sin descripcion, sin instrucciones de uso, sin arquitectura declarada y sin pipeline asignado. El repositorio ocupa 0,1 GB y acumula 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion alguna por parte de la comunidad.
+El repositorio `Homiebear/KillerCrocSteveBlum_275e_6600s` es un artefacto publicado en Hugging Face por el usuario Homiebear el 13 de septiembre de 2026 (con ultima actualizacion dos minutos despues, el mismo dia). No dispone de model card: el README se limita a la linea de metadatos `license: openrail`, sin descripcion, sin instrucciones de uso, sin arquitectura declarada y sin pipeline asignado. El repositorio ocupa 0,1 GB y acumula 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion alguna por parte de la comunidad.
 
 El identificador del modelo sugiere, por convencion de nomenclatura habitual en artefactos de entrenamiento (no confirmado por el autor), un entrenamiento de 275 epocas y 6600 pasos sobre un sujeto identificado como el actor de doblaje Steve Blum en el papel del personaje Killer Croc. Esto apuntaria a un artefacto de ajuste fino de bajo rango (LoRA o similar) para generacion de imagen o de audio, pero se trata de una inferencia a partir del nombre del repositorio, no de un dato declarado.
 
@@ -88,6 +88,6 @@ No disponible. No es posible establecer una comparativa porque no se ha identifi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Homiebear/KillerCrocSteveBlum_275e_6600s
+- Repositorio en Hugging Face: https://huggingface.co/Homiebear/KillerCrocSteveBlum_275e_6600s
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante. Las busquedas devolvieron unicamente paginas de la plataforma de retransmision Ligue 1+ (plus.ligue1.com, ligue1.com, dazn.com), sin relacion alguna con el modelo.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles.

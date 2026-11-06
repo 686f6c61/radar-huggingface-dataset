@@ -63,6 +63,6 @@ No disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Comfy-Org/stable-diffusion-3.5-fp8
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/stable-diffusion-3.5-fp8
 - Modelo original de Stability AI: https://huggingface.co/stabilityai/stable-diffusion-3.5-large
 - Blog de ComfyUI sobre SD3.5: https://blog.comfy.org/sd3-5-comfyui/

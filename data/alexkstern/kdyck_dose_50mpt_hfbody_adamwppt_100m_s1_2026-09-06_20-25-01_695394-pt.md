@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks ni especificaciones detalladas que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_100M_s1_2026-09-06_20-25-01_695394-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_100M_s1_2026-09-06_20-25-01_695394-pt
 - Registro de entrenamiento W&B: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/jb529ot7
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Checkpoint similar (500M s0): https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_500M_s0_2026-08-14_16-05-06_333015-pt

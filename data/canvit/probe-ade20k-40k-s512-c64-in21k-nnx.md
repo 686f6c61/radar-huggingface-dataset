@@ -68,7 +68,7 @@ No disponible. La información proporcionada no incluye resultados numéricos ni
 
 | Modelo | Parámetros | Contexto / geometría | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `canvit/probe-ade20k-40k-s512-c64-in21k-nnx` | 159.894 | Escenas 512 px, canvas 64 × 64 | No disponible | MIT | HuggingFace (repo NNX) |
+| `canvit/probe-ade20k-40k-s512-c64-in21k-nnx` | 159.894 | Escenas 512 px, canvas 64 × 64 | No disponible | MIT | Hugging Face (repo NNX) |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -82,10 +82,10 @@ No disponible. La información proporcionada no incluye resultados numéricos ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canvit/probe-ade20k-40k-s512-c64-in21k-nnx
+- Modelo en Hugging Face: https://huggingface.co/canvit/probe-ade20k-40k-s512-c64-in21k-nnx
 - Sonda de origen (PyTorch): https://huggingface.co/canvit/probe-ade20k-40k-s512-c64-in21k/tree/b28ba9b866d3763cbea60035ef8b7b02eba5b01d
 - Checkpoint del backbone CanViT (NNX): https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02-nnx
-- Organización CanViT en HuggingFace: https://huggingface.co/canvit
+- Organización CanViT en Hugging Face: https://huggingface.co/canvit
 - Artículo: https://arxiv.org/abs/2603.22570
 - Repositorio de código CanViT (JAX / Flax NNX): https://github.com/m2b3/CanViT
 - Repositorio CanViT (PyTorch): https://github.com/m2b3/CanViT-PyTorch

@@ -88,7 +88,7 @@ La principal diferencia frente a otras cuantizaciones GGUF del mismo modelo es l
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/cygnal/Qwen3.8-27B-heretic-ara-Q4_K_M-MTP-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/cygnal/Qwen3.8-27B-heretic-ara-Q4_K_M-MTP-GGUF
 - Modelo base (safetensors): https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - Cuantización alternativa sin MTP: https://huggingface.co/mradermacher/Qwen3.8-27B-heretic-ara-GGUF
 - Herramienta heretic (eliminación de censura): https://github.com/p-e-w/heretic

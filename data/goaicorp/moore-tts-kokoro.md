@@ -6,7 +6,7 @@ Moore TTS Kokoro es un modelo de síntesis de voz (text-to-speech) publicado por
 
 La relevancia de este modelo reside en su carácter de recurso para lenguas de bajos recursos: el moore cuenta con millones de hablantes en África Occidental pero con una presencia mínima en sistemas de síntesis de voz comerciales. Al partir de una base Apache 2.0 de solo 82 millones de parámetros, el modelo es viable para despliegues en CPU, dispositivos de gama baja y entornos con conectividad limitada, lo que encaja con el contexto de uso previsto.
 
-El repositorio es de acceso restringido (gated) y requiere aceptar condiciones en HuggingFace antes de su descarga. El tamaño del repo es de aproximadamente 0,3 GB, coherente con los pesos de un modelo de 82M de parámetros. No se han publicado métricas de calidad (MOS) ni detalles del corpus de entrenamiento en la información disponible.
+El repositorio es de acceso restringido (gated) y requiere aceptar condiciones en Hugging Face antes de su descarga. El tamaño del repo es de aproximadamente 0,3 GB, coherente con los pesos de un modelo de 82M de parámetros. No se han publicado métricas de calidad (MOS) ni detalles del corpus de entrenamiento en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El repositorio es de acceso restringido (gated) y requiere aceptar condiciones e
 | Licencia | Apache 2.0 |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | ~0,3 GB |
-| Acceso | Restringido (gated) en HuggingFace |
+| Acceso | Restringido (gated) en Hugging Face |
 | Modelo base | hexgrad/Kokoro-82M (fine-tune) |
 | Pipeline | text-to-speech |
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace; no es descargable de forma anónima.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face; no es descargable de forma anónima.
 - Cobertura lingüística única: solo se declara el moore; no hay soporte multilingüe ni cambio de idioma.
 - Sin métricas de calidad publicadas: no hay MOS, inteligibilidad ni comparativas perceptuales, por lo que la calidad real de la voz no puede evaluarse a priori.
 - Corpus de entrenamiento no documentado: se desconoce el número de hablantes, horas de audio y diversidad dialectal, lo que impide estimar sesgos de género, edad o variación regional.
@@ -85,6 +85,6 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/goaicorp/moore-tts-kokoro
+- Modelo en Hugging Face: https://huggingface.co/goaicorp/moore-tts-kokoro
 - Modelo base Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M
 - Perfil del autor: https://huggingface.co/goaicorp

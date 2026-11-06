@@ -80,7 +80,7 @@ No se han publicado comparaciones con otros predictores de semivida en la inform
 ## Requisitos de hardware
 
 - Inferencia en CPU: el modelo son tres aprendices clásicos sobre 71 características; no requiere GPU ni VRAM dedicada.
-- Memoria: el repositorio completo ocupa 0,0 GB según HuggingFace, por lo que el peso en disco y en RAM es despreciable frente a los pesos de un modelo neuronal; el coste real lo impone RDKit al calcular descriptores.
+- Memoria: el repositorio completo ocupa 0,0 GB según Hugging Face, por lo que el peso en disco y en RAM es despreciable frente a los pesos de un modelo neuronal; el coste real lo impone RDKit al calcular descriptores.
 - GPU recomendadas: no aplica. Cualquier CPU moderna es suficiente; no se han publicado cifras de latencia ni de throughput.
 - Despliegue: importación directa del módulo `muriverse_halflife` incluido en el repositorio, o carga mediante `snapshot_download` y adición de la carpeta a `sys.path`, tal como hace el Space de demostración. Los pesos safetensors son el backend por defecto; los joblib permiten reproducción exacta.
 - Fuera de alcance: no hay soporte documentado para vLLM, llama.cpp, Ollama o TGI, que son servidores de modelos generativos y no aplican a este pipeline `tabular-regression`.
@@ -92,8 +92,8 @@ La información disponible no incluye comparaciones con otros predictores de sem
 
 | Modelo | Enfoque | Datos de entrenamiento | Métricas publicadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MuriVerse (`shipped`, 71 características) | Ensemble ridge + SVR RBF + XGBoost | 213 registros IV de 89 publicaciones (134 secuencias, 68 clústeres) | ρ = 0,574 en validación agrupada | MIT | HuggingFace |
-| MuriVerse (`structural`, 62 características) | Igual, sin bloque de anotación molecular | Idem | ρ = 0,587 en validación agrupada | MIT | HuggingFace |
+| MuriVerse (`shipped`, 71 características) | Ensemble ridge + SVR RBF + XGBoost | 213 registros IV de 89 publicaciones (134 secuencias, 68 clústeres) | ρ = 0,574 en validación agrupada | MIT | Hugging Face |
+| MuriVerse (`structural`, 62 características) | Igual, sin bloque de anotación molecular | Idem | ρ = 0,587 en validación agrupada | MIT | Hugging Face |
 | Otros predictores de semivida peptídica o plataformas ADMET | no disponible | no disponible | no disponible | no disponible | no disponible |
 | PEPlife2 | Base de datos de semividas peptídicas (fuente de la literatura curada) | no aplica | no aplica | no disponible | Referenciada en el repositorio y el artículo |
 
@@ -109,11 +109,11 @@ La información disponible no incluye comparaciones con otros predictores de sem
 - No hay evaluación de sesgos demográficos ni de equidad, ajenas a este dominio; el sesgo relevante es de cobertura taxonómica (rata frente a ratón) y de composición de la literatura curada, que puede sobrerrepresentar familias peptídicas concretas.
 - Licencia MIT: permite uso comercial y modificación con atribución y sin garantía, pero la licencia no transfiere responsabilidad sobre decisiones farmacológicas tomadas a partir de las predicciones.
 - El artículo está en preparación, por lo que las cifras deben citarse desde el repositorio y no desde una publicación revisada por pares.
-- El repositorio no incluye una tarjeta con idiomas ni datos de contactabilidad más allá de la cuenta del autor; la fecha de creación registrada (2026-10-20) es la que reporta HuggingFace.
+- El repositorio no incluye una tarjeta con idiomas ni datos de contactabilidad más allá de la cuenta del autor; la fecha de creación registrada (2026-10-20) es la que reporta Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jacobkmcpherson/muriverse
+- Modelo en Hugging Face: https://huggingface.co/jacobkmcpherson/muriverse
 - Demostración (Space): https://huggingface.co/spaces/jacobkmcpherson/muriverse
 - Código, curación y figuras del artículo: https://github.com/JacobKMcPherson/MuriVerse
 - Datos de entrenamiento y reglas de curación: `MuriVerse/rodent/strict/` y `MuriVerse/data/curation/` en el repositorio de GitHub (incluye `EXTRACTION_PROTOCOL.md`)

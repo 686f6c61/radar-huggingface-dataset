@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Allinsama/rziga__DNSMOSp835` es una copia en HuggingFace del checkpoint `rziga/DNSMOSp835`, la implementacion en PyTorch del modelo DNSMOS P.835 de Microsoft para estimar la calidad perceptual de voz de forma no intrusiva. No es un modelo generativo ni un LLM: es una metrica objetiva de calidad de audio que, a partir de una forma de onda, predice tres puntuaciones tipo MOS —SIG (calidad de la senal de voz), BAK (calidad del ruido de fondo) y OVRL (calidad global)— sin necesidad de una grabacion de referencia limpia.
+`Allinsama/rziga__DNSMOSp835` es una copia en Hugging Face del checkpoint `rziga/DNSMOSp835`, la implementacion en PyTorch del modelo DNSMOS P.835 de Microsoft para estimar la calidad perceptual de voz de forma no intrusiva. No es un modelo generativo ni un LLM: es una metrica objetiva de calidad de audio que, a partir de una forma de onda, predice tres puntuaciones tipo MOS —SIG (calidad de la senal de voz), BAK (calidad del ruido de fondo) y OVRL (calidad global)— sin necesidad de una grabacion de referencia limpia.
 
 El modelo es una red neuronal de regresion de tamano muy reducido: 287.279 parametros reales segun los pesos en safetensors (aproximadamente 0,29 M). Internamente remuestrea la entrada a 16 kHz, procesa el audio en ventanas solapadas de unos 9 segundos y promedia las puntuaciones por trama, de modo que acepta audios de duracion arbitraria y devuelve un tensor `[batch, 3]`.
 
@@ -63,15 +63,15 @@ El unico dato de validacion mencionado en la model card es la existencia de test
 - Cabe en GPU consumer: si, en cualquier GPU con soporte PyTorch; tambien funciona en CPU y en equipos sin GPU dedicada.
 - Opciones de despliegue: paquete `dnsmos-pytorch` instalado desde Git (Python 3.12 o superior segun la model card), con `torch` y `torchaudio`; los pesos ONNX originales de Microsoft estan disponibles como alternativa de referencia. No se documentan integraciones con vLLM, TGI, llama.cpp u Ollama, que no aplican a este tipo de modelo.
 - Latencia y throughput: no disponibles. El diseno por ventanas de ~9 s implica un coste de computo bajo y proporcional a la duracion del audio.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun los metadatos de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Salidas | Parametros | Ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DNSMOSp835 (este repositorio) | SIG, BAK, OVRL | 287.279 | ~9 s solapadas | no disponible en este repo; MIT en el proyecto original, pesos Microsoft aparte | HuggingFace (espejo) + pip desde Git |
-| rziga/DNSMOSp808 | MOS global (una puntuacion) | no disponible | ~9 s solapadas | no disponible | HuggingFace + misma libreria |
-| rziga/DNSMOSp835-personalized | SIG, BAK, OVRL (variante personalizada) | no disponible | ~9 s solapadas | no disponible | HuggingFace + misma libreria |
+| DNSMOSp835 (este repositorio) | SIG, BAK, OVRL | 287.279 | ~9 s solapadas | no disponible en este repo; MIT en el proyecto original, pesos Microsoft aparte | Hugging Face (espejo) + pip desde Git |
+| rziga/DNSMOSp808 | MOS global (una puntuacion) | no disponible | ~9 s solapadas | no disponible | Hugging Face + misma libreria |
+| rziga/DNSMOSp835-personalized | SIG, BAK, OVRL (variante personalizada) | no disponible | ~9 s solapadas | no disponible | Hugging Face + misma libreria |
 | DNSMOS ONNX original (Microsoft) | SIG, BAK, OVRL | no disponible | no disponible | licencia del repositorio DNS-Challenge | GitHub (DNS-Challenge) |
 
 Otras metricas no intrusivas de calidad de voz como NISQA, UTMOS o las utilidades de calidad de speech de TorchAudio son alternativas de la misma categoria, pero no se dispone en la informacion proporcionada de datos de parametros, contexto ni rendimiento que permitan una comparacion cuantitativa fiable.
@@ -87,12 +87,12 @@ Otras metricas no intrusivas de calidad de voz como NISQA, UTMOS o las utilidade
 - No hay datos publicados de correlacion con MOS subjetivo en la informacion disponible; la validacion declarada se limita a la paridad numerica con los ONNX originales.
 - Riesgo de sesgo por corpus de entrenamiento: al derivar del corpus de DNS Challenge, el comportamiento puede desviarse en condiciones acusticas poco representadas en dicho corpus. No se documenta el conjunto de entrenamiento.
 - Riesgo de "alucinacion" no aplica; el riesgo real es error de prediccion o descalibracion de las puntuaciones MOS frente a juicios humanos.
-- Los metadatos de HuggingFace registran fechas de creacion y actualizacion en 2026-10-18; conviene comprobar la vigencia del espejo frente al repositorio original.
+- Los metadatos de Hugging Face registran fechas de creacion y actualizacion en 2026-10-18; conviene comprobar la vigencia del espejo frente al repositorio original.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Allinsama/rziga__DNSMOSp835
-- Modelo original en HuggingFace: https://huggingface.co/rziga/DNSMOSp835
+- Repositorio en Hugging Face: https://huggingface.co/Allinsama/rziga__DNSMOSp835
+- Modelo original en Hugging Face: https://huggingface.co/rziga/DNSMOSp835
 - Variante personalizada: https://huggingface.co/rziga/DNSMOSp835-personalized
 - Modelo DNSMOS P.808: https://huggingface.co/rziga/DNSMOSp808
 - Coleccion dnsmos-pytorch: https://huggingface.co/collections/rziga/dnsmos-pytorch

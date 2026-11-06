@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Chloeana/requel-loras` es un adaptador LoRA de generacion de imagenes publicado en HuggingFace por el usuario Chloeana, disenado para funcionar sobre el modelo base `Qwen/Qwen-Image-2.1`. El repositorio se registra con la libreria `diffusers` y la etiqueta de pipeline `text-to-image`, lo que lo situa en la categoria de ajustes ligeros (LoRA) para modelos de difusion texto-a-imagen. No se trata de un modelo autonomo, sino de pesos adicionales que se acoplan al modelo base para modificar o especializar su comportamiento generativo.
+`Chloeana/requel-loras` es un adaptador LoRA de generacion de imagenes publicado en Hugging Face por el usuario Chloeana, disenado para funcionar sobre el modelo base `Qwen/Qwen-Image-2.1`. El repositorio se registra con la libreria `diffusers` y la etiqueta de pipeline `text-to-image`, lo que lo situa en la categoria de ajustes ligeros (LoRA) para modelos de difusion texto-a-imagen. No se trata de un modelo autonomo, sino de pesos adicionales que se acoplan al modelo base para modificar o especializar su comportamiento generativo.
 
 La model card publicada es practicamente vacia: incluye un titulo ("XCL-ify"), un campo `instance_prompt` con valor nulo, una galeria sin contenido incrustado y un enlace generico de descarga. No se documenta el dataset de entrenamiento, el numero de pasos, la tasa de aprendizaje, el rango del LoRA ni el proposito concreto del ajuste. El repositorio ocupa aproximadamente 0,8 GB, tamano coherente con un conjunto de pesos LoRA moderadamente grande pero muy inferior al de un modelo completo.
 
@@ -45,7 +45,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el dataset uti
 - Generacion de imagenes conceptuales para ilustracion: integrarlo en un flujo `diffusers` para producir bocetos o referencias visuales de forma rapida.
 - Pruebas de reproducibilidad: comparar la salida del LoRA frente al modelo base para evaluar el efecto del ajuste, siempre que se documenten las semillas y parametros.
 - Integracion en pipelines internos de generacion de imagen: cargar el adaptador junto al modelo base en un servicio de inferencia, aceptando la restriccion de licencia GPL-3.0.
-- Fines educativos: usar el repositorio como caso practico de como se publica un LoRA en HuggingFace y de los problemas de documentacion insuficiente.
+- Fines educativos: usar el repositorio como caso practico de como se publica un LoRA en Hugging Face y de los problemas de documentacion insuficiente.
 - Ajuste posterior o "fine-tuning" derivado: partir de este adaptador como inicializacion para un ajuste adicional, sujeto a las condiciones de la GPL-3.0.
 
 ## Benchmarks y rendimiento
@@ -66,7 +66,7 @@ No se dispone de modelos comparables identificados en la informacion proporciona
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `Chloeana/requel-loras` (LoRA) | No disponible | No aplica | GPL-3.0 | HuggingFace (0 descargas) |
+| `Chloeana/requel-loras` (LoRA) | No disponible | No aplica | GPL-3.0 | Hugging Face (0 descargas) |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -81,6 +81,6 @@ No se dispone de modelos comparables identificados en la informacion proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Chloeana/requel-loras
+- Hugging Face: https://huggingface.co/Chloeana/requel-loras
 - Archivos y versiones: https://huggingface.co/Chloeana/requel-loras/tree/main
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1

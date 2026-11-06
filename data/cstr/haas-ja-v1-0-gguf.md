@@ -87,6 +87,6 @@ No se dispone de datos de benchmarks ni de comparaciones directas con otros mode
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/cstr/Haas-ja-v1.0-GGUF
+- Hugging Face (GGUF): https://huggingface.co/cstr/Haas-ja-v1.0-GGUF
 - Modelo base: https://huggingface.co/third-intelligence/Haas-ja-v1.0
 - Runtime CrispASR: https://github.com/CrispStrobe/CrispASR

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `JEFFERSONMUSIC/TitoElPatron200940K` es un repositorio alojado en HuggingFace por el usuario JEFFERSONMUSIC, con licencia Apache-2.0 y un tamaño de repositorio de 0.1 GB. La información pública disponible es extremadamente limitada: la model card únicamente declara la licencia, sin especificar arquitectura, número de parámetros, tarea, idiomas ni pipeline. No se han registrado descargas ni interacciones en la plataforma.
+El modelo `JEFFERSONMUSIC/TitoElPatron200940K` es un repositorio alojado en Hugging Face por el usuario JEFFERSONMUSIC, con licencia Apache-2.0 y un tamaño de repositorio de 0.1 GB. La información pública disponible es extremadamente limitada: la model card únicamente declara la licencia, sin especificar arquitectura, número de parámetros, tarea, idiomas ni pipeline. No se han registrado descargas ni interacciones en la plataforma.
 
 Dada la ausencia de documentación técnica y de artefactos identificables, no es posible determinar qué tipo de modelo es, qué problema resuelve ni su relevancia actual. El repositorio fue creado el 16 de agosto de 2026 y actualizado el mismo día, lo que sugiere que podría tratarse de una subida inicial o de un experimento sin documentar. Cualquier uso en producción o evaluación sería prematuro sin más información.
 
@@ -53,6 +53,6 @@ No disponible. No se puede establecer una comparación con otros modelos al care
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JEFFERSONMUSIC/TitoElPatron200940K
+- Repositorio en Hugging Face: https://huggingface.co/JEFFERSONMUSIC/TitoElPatron200940K
 
 No se han encontrado papers, blogs, demos u otros recursos asociados a este modelo en la información proporcionada.

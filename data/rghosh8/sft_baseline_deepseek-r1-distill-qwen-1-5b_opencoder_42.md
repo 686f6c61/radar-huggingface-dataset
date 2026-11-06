@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_opencoder_42` es un ajuste fino supervisado (SFT) del modelo `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`, publicado por el usuario rghosh8 en HuggingFace. Se trata de un checkpoint de investigación, no de un modelo de produccion: el nombre indica que es una "baseline" de SFT sobre un dataset denominado "opencoder" con semilla 42, típico de experimentos de ablation o comparación de pipelines de entrenamiento.
+El modelo `rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_opencoder_42` es un ajuste fino supervisado (SFT) del modelo `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`, publicado por el usuario rghosh8 en Hugging Face. Se trata de un checkpoint de investigación, no de un modelo de produccion: el nombre indica que es una "baseline" de SFT sobre un dataset denominado "opencoder" con semilla 42, típico de experimentos de ablation o comparación de pipelines de entrenamiento.
 
 El modelo base es un distill de DeepSeek-R1 sobre la arquitectura Qwen2 de 1.5B parámetros. El ajuste se realizó con la librería TRL (versión 1.15.0) bajo el framework Transformers 5.17.0 y PyTorch 2.13.0. El resultado es un modelo conversacional de generación de texto de 1.777.088.000 parámetros (1.5B nominales), con pesos en safetensors y un tamaño de repositorio de 3.6 GB.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_opencoder_42 | 1.777.088.000 | no disponible | no disponible | HuggingFace (0 descargas) |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (base) | 1.5B | 32.768 tokens (según model card del base) | MIT (según model card del base) | HuggingFace, ampliamente usado |
-| Qwen2.5-1.5B-Instruct | 1.5B | 32.768 tokens | Apache-2.0 | HuggingFace, ampliamente usado |
-| Qwen2.5-1.5B (base) | 1.5B | 32.768 tokens | Apache-2.0 | HuggingFace |
+| rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_opencoder_42 | 1.777.088.000 | no disponible | no disponible | Hugging Face (0 descargas) |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (base) | 1.5B | 32.768 tokens (según model card del base) | MIT (según model card del base) | Hugging Face, ampliamente usado |
+| Qwen2.5-1.5B-Instruct | 1.5B | 32.768 tokens | Apache-2.0 | Hugging Face, ampliamente usado |
+| Qwen2.5-1.5B (base) | 1.5B | 32.768 tokens | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a parámetros y disponibilidad; no hay datos de rendimiento publicados para el checkpoint ajustado que permitan comparar calidad.
 
@@ -84,7 +84,7 @@ La comparativa se limita a parámetros y disponibilidad; no hay datos de rendimi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_opencoder_42
+- Hugging Face: https://huggingface.co/rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_opencoder_42
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Repositorio TRL: https://github.com/huggingface/trl
 - Paper de DeepSeek-R1: no disponible en la información proporcionada

@@ -81,8 +81,8 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dangphuc2109/legalqa-qwen2.5-3b-adapter` | 21 M entrenables; 3,79 B declarados en el sistema | No disponible | Codabench 0,5486 (mejor run publicado) | Apache 2.0 | HuggingFace, adaptador PEFT |
-| `Qwen/Qwen2.5-3B-Instruct` (base) | 3,086 B | No disponible en esta ficha | No disponible para la tarea legal | No disponible en esta ficha | HuggingFace |
+| `dangphuc2109/legalqa-qwen2.5-3b-adapter` | 21 M entrenables; 3,79 B declarados en el sistema | No disponible | Codabench 0,5486 (mejor run publicado) | Apache 2.0 | Hugging Face, adaptador PEFT |
+| `Qwen/Qwen2.5-3B-Instruct` (base) | 3,086 B | No disponible en esta ficha | No disponible para la tarea legal | No disponible en esta ficha | Hugging Face |
 | Otros modelos de QA legal en vietnamita | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dangphuc2109/legalqa-qwen2.5-3b-adapter
+- Modelo en Hugging Face: https://huggingface.co/dangphuc2109/legalqa-qwen2.5-3b-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Cross-encoder de reranking citado: https://huggingface.co/BAAI/bge-reranker-v2-m3
 - Paper, blog o repositorio adicional: no disponible (la busqueda web no devolvio resultados relevantes)

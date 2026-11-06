@@ -73,9 +73,9 @@ Los datos publicados por el autor se centran en la comparacion GGUF frente a vLL
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | SunlightV2-0.8B-GGUF | 752 M | no disponible | Puntero multimodal para captchas, CPU | LGPL-3.0 | GGUF, safetensors |
-| TwilightV2-2B | no disponible | no disponible | Puntero multimodal para captchas, layout `PACKED = 225` | no disponible | Repositorio HuggingFace |
-| MidnightV2-4B | no disponible | no disponible | Puntero multimodal para captchas, layout `PACKED = 225` | no disponible | Repositorio HuggingFace |
-| CaptchaKrakenV2-CNN-large | no disponible | no disponible | Detector CNN de elementos numerados | no disponible | Repositorio HuggingFace |
+| TwilightV2-2B | no disponible | no disponible | Puntero multimodal para captchas, layout `PACKED = 225` | no disponible | Repositorio Hugging Face |
+| MidnightV2-4B | no disponible | no disponible | Puntero multimodal para captchas, layout `PACKED = 225` | no disponible | Repositorio Hugging Face |
+| CaptchaKrakenV2-CNN-large | no disponible | no disponible | Detector CNN de elementos numerados | no disponible | Repositorio Hugging Face |
 
 Las variantes 2B y 4B de la misma familia usan un layout de cabezas mas reciente (incluyen cabeza de numero de elemento), por lo que no son intercambiables con este modelo a nivel de cliente. El detector CNN es un componente complementario, no un sustituto.
 
@@ -93,7 +93,7 @@ Las variantes 2B y 4B de la misma familia usan un layout de cabezas mas reciente
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/CaptchaKraken/SunlightV2-0.8B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/CaptchaKraken/SunlightV2-0.8B-GGUF
 - Modelo base bf16: https://huggingface.co/CaptchaKraken/SunlightV2-0.8B
 - Version 4-bit GPTQ: https://huggingface.co/CaptchaKraken/SunlightV2-0.8B-q4
 - Adaptador LoRA sin fusionar: https://huggingface.co/CaptchaKraken/SunlightV2-0.8B-LoRA

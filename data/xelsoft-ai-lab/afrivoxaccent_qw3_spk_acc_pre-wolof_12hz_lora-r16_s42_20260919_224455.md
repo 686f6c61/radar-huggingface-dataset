@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (LoRA r16, acento) | No disponible (solo adaptador) | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
-| xelsoft-ai-lab/AfriVoxAccent_QW3_spk_wolof-tts_12hz_lora-r32_s42 (modelo base) | No disponible (adaptador LoRA r32) | No disponible | No disponible | No disponible | HuggingFace |
+| Este adaptador (LoRA r16, acento) | No disponible (solo adaptador) | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
+| xelsoft-ai-lab/AfriVoxAccent_QW3_spk_wolof-tts_12hz_lora-r32_s42 (modelo base) | No disponible (adaptador LoRA r32) | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones de terceros dentro de la informacion proporcionada que permitan una comparacion rigurosa con alternativas de la misma categoria (por ejemplo, otros TTS para lenguas africanas o sistemas TTS multilingues con control de hablante). Cualquier tabla comparativa adicional requeriria consultar las fichas de esos sistemas por separado.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones de terceros dentro d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_pre-wolof_12hz_lora-r16_s42_20260919_224455
+- Modelo en Hugging Face: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_pre-wolof_12hz_lora-r16_s42_20260919_224455
 - Modelo base: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_wolof-tts_12hz_lora-r32_s42_20260911_174933
 - Perfil del autor: https://huggingface.co/xelsoft-ai-lab
 

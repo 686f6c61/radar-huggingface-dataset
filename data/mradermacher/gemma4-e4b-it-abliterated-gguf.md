@@ -4,7 +4,7 @@
 
 `mradermacher/gemma4-E4B-it-abliterated-GGUF` es una distribucion de pesos en formato GGUF del modelo `treadon/gemma4-E4B-it-abliterated`, que a su vez deriva de la familia Gemma 4 de Google. El modelo base pertenece a la gama "E4B" (variante de instruccion), y sobre el se ha aplicado una tecnica de *abliteration*: una modificacion de los pesos orientada a eliminar el comportamiento de rechazo (refusal) del modelo alineado original, dando lugar a una variante "uncensored". El trabajo de cuantizacion y publicacion en GGUF lo firma mradermacher, un conocido distribuidor de cuantizaciones para llama.cpp.
 
-El modelo cuenta con 7.463.013.674 parametros totales segun los pesos en safetensors del modelo base, y se distribuye en una bateria de cuantizaciones que van desde Q2_K (4,5 GB) hasta f16 (15,0 GB), pasando por IQ4_XS, Q4_K_M, Q5_K_M, Q6_K y Q8_0. Esta pensado para ejecucion local en llama.cpp y entornos compatibles con GGUF, y declara licencia Apache 2.0 en la ficha de HuggingFace, aunque el model card enlaza a la licencia especifica de Gemma 4 de Google, lo que introduce una ambiguedad relevante para uso comercial.
+El modelo cuenta con 7.463.013.674 parametros totales segun los pesos en safetensors del modelo base, y se distribuye en una bateria de cuantizaciones que van desde Q2_K (4,5 GB) hasta f16 (15,0 GB), pasando por IQ4_XS, Q4_K_M, Q5_K_M, Q6_K y Q8_0. Esta pensado para ejecucion local en llama.cpp y entornos compatibles con GGUF, y declara licencia Apache 2.0 en la ficha de Hugging Face, aunque el model card enlaza a la licencia especifica de Gemma 4 de Google, lo que introduce una ambiguedad relevante para uso comercial.
 
 Su relevancia actual es doble: por un lado, permite ejecutar un modelo de la familia Gemma 4 en hardware de consumo gracias a las cuantizaciones GGUF; por otro, ofrece una variante sin los filtros de seguridad del modelo alineado, lo que interesa a investigadores que estudian comportamiento de modelos, red teaming y evaluacion de sesgos, pero que conlleva riesgos claros en produccion. La informacion disponible sobre arquitectura interna, contexto y datos de entrenamiento es escasa: la model card se limita a listar las cuantizaciones y no documenta detalles tecnicos del modelo original.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma4-E4B-it-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma4-E4B-it-abliterated-GGUF
 - Modelo base (abliterated): https://huggingface.co/treadon/gemma4-E4B-it-abliterated
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/gemma4-E4B-it-abliterated-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#gemma4-E4B-it-abliterated-GGUF

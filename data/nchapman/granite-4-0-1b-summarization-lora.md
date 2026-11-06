@@ -73,8 +73,8 @@ El resultado es mixto: mejora el solapamiento con la referencia (ROUGE-1) y la c
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nchapman/granite-4.0-1b-summarization-lora | Adaptador LoRA sobre 1B | no disponible | Resumen en ingles | Apache-2.0 | HuggingFace |
-| ibm-granite/granite-4.0-1b (base) | 1B | no disponible | Generacion de texto general | Licencia propia de IBM | HuggingFace |
+| nchapman/granite-4.0-1b-summarization-lora | Adaptador LoRA sobre 1B | no disponible | Resumen en ingles | Apache-2.0 | Hugging Face |
+| ibm-granite/granite-4.0-1b (base) | 1B | no disponible | Generacion de texto general | Licencia propia de IBM | Hugging Face |
 | Adaptadores de resumen sobre modelos mayores | no disponible | no disponible | Resumen | variable | no disponible |
 
 No se dispone de datos de benchmarks de modelos alternativos en la informacion proporcionada para establecer una comparativa cuantitativa.
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nchapman/granite-4.0-1b-summarization-lora
+- Modelo en Hugging Face: https://huggingface.co/nchapman/granite-4.0-1b-summarization-lora
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-1b
 - Dataset de entrenamiento publico: https://huggingface.co/datasets/HuggingFaceTB/smoltalk2
 - Documentacion de resultados (referenciada en la model card): `docs/results/aligned-adapter-comparison.md` en el repositorio Lillm Summarizer (no se proporciona URL directa)

@@ -66,10 +66,10 @@ No se dispone de datos de benchmarks ni de especificaciones comparables publicad
 
 | Modelo | Arquitectura | Clases | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pawprint Dog Tagger | EfficientNet-B2 (`timm`) | 7 (+ `etc` por regla) | 224 × 224 RGB | no disponible | HuggingFace, checkpoint `.pt` |
+| Pawprint Dog Tagger | EfficientNet-B2 (`timm`) | 7 (+ `etc` por regla) | 224 × 224 RGB | no disponible | Hugging Face, checkpoint `.pt` |
 | EfficientNet-B0 genérico (`timm`) | EfficientNet-B0 | 1000 (ImageNet) | 224 × 224 RGB | según `timm` (habitualmente Apache-2.0 para el código; pesos con sus propios términos) | `timm`, ampliamente disponible |
 | ResNet-50 (torchvision) | CNN residual | 1000 (ImageNet) | 224 × 224 RGB | BSD-3-Clause para el código; pesos con sus propios términos | torchvision, ampliamente disponible |
-| CLIP ViT-B/32 (OpenAI) | Transformer visión-lenguaje | zero-shot | 224 × 224 RGB + texto | MIT para el código; pesos con sus propios términos | HuggingFace, ampliamente disponible |
+| CLIP ViT-B/32 (OpenAI) | Transformer visión-lenguaje | zero-shot | 224 × 224 RGB + texto | MIT para el código; pesos con sus propios términos | Hugging Face, ampliamente disponible |
 
 La comparación de rendimiento con estas alternativas no es posible con la información disponible: no hay métricas del Pawprint Dog Tagger sobre un test independiente ni evaluaciones cruzadas publicadas. La ventaja diferencial del modelo es su taxonomía específica de situaciones caninas; su desventaja es la ausencia de licencia clara y de validación reproducible.
 
@@ -89,7 +89,7 @@ La comparación de rendimiento con estas alternativas no es posible con la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dongju-00/pawprint-dog-tagger
+- Modelo en Hugging Face: https://huggingface.co/Dongju-00/pawprint-dog-tagger
 - Pesos (`dog_model.pt`): https://huggingface.co/Dongju-00/pawprint-dog-tagger/blob/main/dog_model.pt
 - Repositorio de servicio (acceso posiblemente restringido): https://github.com/Dongju-00/ai-hackerton-team5-ai
 - Librería `timm`: https://github.com/huggingface/pytorch-image-models

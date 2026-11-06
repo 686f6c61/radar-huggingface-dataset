@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AI-KSK/anima-29b-six-workflows-295
+- Repositorio en Hugging Face: https://huggingface.co/AI-KSK/anima-29b-six-workflows-295
 - RunningHub internacional, workflow 01: https://www.runninghub.ai/zh-cn/post/2089581532066443265?inviteCode=rh-v1111
 - RunningHub China, workflow 01: https://www.runninghub.cn/post/2089581532066443265/?inviteCode=rh-
 - RunningHub, workflow 03 (id vigente): https://www.runninghub.cn/post/2089668746540572673

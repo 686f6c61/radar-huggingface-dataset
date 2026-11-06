@@ -17,7 +17,7 @@ La licencia es Apache-2.0, lo que permite uso comercial y modificación sin rest
 | Tipos de cuantizacion | no disponible (el repo es de 0,1 GB, sugiere cuantización, pero no se especifica el formato) |
 | Idiomas soportados | en (inglés) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (indicado en los tags de HuggingFace) |
+| Formato de pesos | safetensors (indicado en los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -78,7 +78,7 @@ La comparativa es orientativa; no se dispone de benchmarks para el fine-tune, po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lecporr/rotating-equip-sft-n0705
+- Modelo en Hugging Face: https://huggingface.co/lecporr/rotating-equip-sft-n0705
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Documentación de TRL: https://huggingface.co/docs/trl/index
 - Modelo base Qwen3-1.7B: https://huggingface.co/unsloth/Qwen3-1.7B-unsloth-bnb-4bit

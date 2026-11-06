@@ -2,7 +2,7 @@
 
 ## Resumen
 
-plutus-gpt-oss es un ajuste fino (fine-tune) del modelo gpt-oss-20b de OpenAI, publicado por el usuario Devubiodee en HuggingFace. El entrenamiento se ha realizado sobre la version ya cuantizada en 4 bits de Unsloth (unsloth/gpt-oss-20b-unsloth-bnb-4bit), utilizando la libreria Unsloth junto con TRL de HuggingFace para acelerar el proceso. Se trata, por tanto, de un derivado de la familia gpt-oss, no de un modelo entrenado desde cero.
+plutus-gpt-oss es un ajuste fino (fine-tune) del modelo gpt-oss-20b de OpenAI, publicado por el usuario Devubiodee en Hugging Face. El entrenamiento se ha realizado sobre la version ya cuantizada en 4 bits de Unsloth (unsloth/gpt-oss-20b-unsloth-bnb-4bit), utilizando la libreria Unsloth junto con TRL de Hugging Face para acelerar el proceso. Se trata, por tanto, de un derivado de la familia gpt-oss, no de un modelo entrenado desde cero.
 
 La arquitectura subyacente es un transformer de tipo Mixture of Experts (MoE) con aproximadamente 20.900 millones de parametros totales, de los cuales solo una fraccion se activa por token, lo que reduce el coste de inferencia frente a un modelo denso del mismo tamano. El repositorio ocupa 41,9 GB y los pesos estan en formato safetensors, lo que corresponde a una precision de 16 bits.
 
@@ -25,7 +25,7 @@ El modelo es relevante como ejemplo de personalizacion ligera sobre gpt-oss-20b,
 
 El modelo hereda la arquitectura de gpt-oss-20b, un transformer con capas de Mixture of Experts en el que cada token activa solo un subconjunto de expertos, lo que permite mantener un coste de computo por token muy inferior al de un modelo denso de 20.900 millones de parametros. No se dispone de la configuracion exacta de expertos (numero total y expertos activos) en la informacion facilitada, aunque el modelo base de OpenAI se caracteriza por un diseno MoE optimizado para inferencia en hardware de gama alta de consumo.
 
-El entrenamiento de este derivado se realizo con Unsloth y la libreria TRL de HuggingFace, partiendo de una version del modelo base ya cuantizada en 4 bits (unsloth/gpt-oss-20b-unsloth-bnb-4bit). La model card no detalla el dataset utilizado, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas de RLHF, DPO u otras. Tampoco se especifica el objetivo concreto del ajuste fino mas alla de tratarse de un modelo conversacional orientado a generacion de texto. El autor afirma que el entrenamiento fue "2x mas rapido" gracias a Unsloth, sin aportar mediciones.
+El entrenamiento de este derivado se realizo con Unsloth y la libreria TRL de Hugging Face, partiendo de una version del modelo base ya cuantizada en 4 bits (unsloth/gpt-oss-20b-unsloth-bnb-4bit). La model card no detalla el dataset utilizado, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas de RLHF, DPO u otras. Tampoco se especifica el objetivo concreto del ajuste fino mas alla de tratarse de un modelo conversacional orientado a generacion de texto. El autor afirma que el entrenamiento fue "2x mas rapido" gracias a Unsloth, sin aportar mediciones.
 
 ## Capacidades
 
@@ -42,7 +42,7 @@ El entrenamiento de este derivado se realizo con Unsloth y la libreria TRL de Hu
 - Asistente conversacional en ingles: el modelo puede mantener dialogos multi-turno aprovechando el contexto largo heredado del modelo base, adecuado para prototipos de chatbot siempre que se valide su calidad tras el ajuste.
 - Experimentacion academica con MoE: util para estudiar el comportamiento de arquitecturas Mixture of Experts y comparar el efecto de un fine-tune ligero sobre un modelo ya cuantizado.
 - Generacion de codigo asistida: si conserva las capacidades del modelo base, podria integrarse en editores o pipelines de CI/CD para sugerencias de codigo, aunque requiere validacion previa.
-- Prototipado rapido de aplicaciones de generacion de texto: al estar en safetensors y ser compatible con transformers, permite integraciones directas con HuggingFace Transformers.
+- Prototipado rapido de aplicaciones de generacion de texto: al estar en safetensors y ser compatible con transformers, permite integraciones directas con Hugging Face Transformers.
 - Investigacion sobre cuantizacion y fine-tuning: sirve como caso de estudio del flujo Unsloth + TRL sobre un modelo base cuantizado en 4 bits.
 - Base para nuevos ajustes: puede emplearse como punto de partida para fine-tunes adicionales en dominios especificos en ingles.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| plutus-gpt-oss (este modelo) | 20,9 B (MoE) | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| gpt-oss-20b (OpenAI) | ~21 B (MoE) | 128.000 tokens | apache-2.0 | HuggingFace y despliegues oficiales |
-| gpt-oss-120b (OpenAI) | ~117 B (MoE) | 128.000 tokens | apache-2.0 | HuggingFace y despliegues oficiales |
-| Qwen3-30B-A3B | 30 B (MoE, ~3 B activos) | 128.000 tokens | apache-2.0 | HuggingFace |
+| plutus-gpt-oss (este modelo) | 20,9 B (MoE) | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| gpt-oss-20b (OpenAI) | ~21 B (MoE) | 128.000 tokens | apache-2.0 | Hugging Face y despliegues oficiales |
+| gpt-oss-120b (OpenAI) | ~117 B (MoE) | 128.000 tokens | apache-2.0 | Hugging Face y despliegues oficiales |
+| Qwen3-30B-A3B | 30 B (MoE, ~3 B activos) | 128.000 tokens | apache-2.0 | Hugging Face |
 
 La comparacion con modelos de la misma categoria (MoE de rango 20-30 B) muestra que plutus-gpt-oss es un derivado de gpt-oss-20b sin datos publicos de rendimiento, por lo que no es posible establecer una comparacion cuantitativa fiable. Los valores de contexto y benchmarks de los modelos comparados provienen de sus respectivas documentaciones oficiales.
 
@@ -84,6 +84,6 @@ La comparacion con modelos de la misma categoria (MoE de rango 20-30 B) muestra 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Devubiodee/plutus-gpt-oss
+- Hugging Face: https://huggingface.co/Devubiodee/plutus-gpt-oss
 - Modelo base (Unsloth): https://huggingface.co/unsloth/gpt-oss-20b-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth

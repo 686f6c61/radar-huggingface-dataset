@@ -86,7 +86,7 @@ La información proporcionada no incluye resultados de benchmark de modelos alte
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de benchmark comparables |
 |---|---|---|---|---|---|
-| `parth12-ui/anlp-a2-optim-muon` | 33,4 M | 256 | no disponible | HuggingFace, safetensors | perdida 3,8926; perplejidad 49,04; BLEU 1,18 |
+| `parth12-ui/anlp-a2-optim-muon` | 33,4 M | 256 | no disponible | Hugging Face, safetensors | perdida 3,8926; perplejidad 49,04; BLEU 1,18 |
 | GPT-2 small (referencia general) | 124 M | 1024 | MIT | ampliamente disponible | no disponible en la busqueda |
 | Pythia-70M (referencia general) | 70 M | 2048 | Apache 2.0 | ampliamente disponible | no disponible en la busqueda |
 | SmolLM-135M (referencia general) | 135 M | 2048 | Apache 2.0 | ampliamente disponible | no disponible en la busqueda |
@@ -109,7 +109,7 @@ Nota: la búsqueda web realizada no devolvió ninguna fuente técnica relacionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/parth12-ui/anlp-a2-optim-muon
+- Modelo en Hugging Face: https://huggingface.co/parth12-ui/anlp-a2-optim-muon
 - Dataset de entrenamiento: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - Log de entrenamiento: `train_log.jsonl` (incluido en el repositorio del modelo)
 - Código de carga: paquete `model_src` del repositorio (`model_src/config.py`, `model_src/model.py`)

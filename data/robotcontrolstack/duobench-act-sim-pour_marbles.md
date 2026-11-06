@@ -68,7 +68,7 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parámetros | Contexto / chunk | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DuoBench ACT (sim) `pour_marbles` | 51,7 M | chunk de 100 acciones | Tarea única bimanual en simulación | Apache 2.0 | HuggingFace (LeRobot) |
+| DuoBench ACT (sim) `pour_marbles` | 51,7 M | chunk de 100 acciones | Tarea única bimanual en simulación | Apache 2.0 | Hugging Face (LeRobot) |
 | Otras políticas ACT de DuoBench | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 | Políticas fundacionales de robótica (p. ej. RT-2, OpenVLA) | no disponible en esta ficha | no disponible | Manipulación generalista | no disponible | no disponible |
 
@@ -87,7 +87,7 @@ No se dispone en la información proporcionada de datos comparativos con alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotControlStack/duobench-act-sim-pour_marbles
+- Modelo en Hugging Face: https://huggingface.co/RobotControlStack/duobench-act-sim-pour_marbles
 - Dataset DuoBench: https://huggingface.co/datasets/RobotControlStack/duobench
 - Paper DuoBench: https://arxiv.org/abs/2606.11901
 - Página del proyecto: https://duobench.github.io/

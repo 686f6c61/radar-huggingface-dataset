@@ -12,7 +12,7 @@ Por tanto, esta ficha describe un artefacto de documentación científica, no un
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el repositorio no describe arquitectura; el tag "transformer" aparece en HuggingFace pero no se concreta en la model card) |
+| Arquitectura | no disponible (el repositorio no describe arquitectura; el tag "transformer" aparece en Hugging Face pero no se concreta en la model card) |
 | Parametros totales | 24.832 (dato real del fichero safetensors) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Por tanto, esta ficha describe un artefacto de documentación científica, no un
 
 ## Arquitectura y entrenamiento
 
-La model card no especifica ninguna arquitectura de red. El tag "transformer" figura entre los metadatos de HuggingFace, pero el documento descriptivo no menciona capas, dimensiones, mecanismos de atención, ni configuración alguna. El fichero safetensors de 24.832 parámetros no permite inferir una topología funcional: ese orden de magnitud es propio de un tensor auxiliar o de un ejemplo mínimo, no de un modelo con capacidad generativa.
+La model card no especifica ninguna arquitectura de red. El tag "transformer" figura entre los metadatos de Hugging Face, pero el documento descriptivo no menciona capas, dimensiones, mecanismos de atención, ni configuración alguna. El fichero safetensors de 24.832 parámetros no permite inferir una topología funcional: ese orden de magnitud es propio de un tensor auxiliar o de un ejemplo mínimo, no de un modelo con capacidad generativa.
 
 En cuanto al entrenamiento, el repositorio declara explícitamente que no hay resultados completados ni checkpoints liberados. Lo que contiene es un plan: motivación, trabajo relacionado, una hipótesis falsable, una comparación propuesta contra "matched baselines", un contexto de evaluación sobre benchmarks públicos y comprobaciones de reproducibilidad. La propia model card advierte que "Sections labeled as plans or hypotheses should not be interpreted as experimental results". No consta número de tokens, composición de dataset, ni fases de RLHF o DPO.
 
@@ -87,5 +87,5 @@ La comparación es meramente temática: los tres métodos citados son aportacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Esjones2003k/contrastive-learning78
+- Hugging Face: https://huggingface.co/Esjones2003k/contrastive-learning78
 - No se han encontrado enlaces adicionales relevantes (paper, blog, repositorio o demo) en la información disponible. La búsqueda web asociada devolvió únicamente resultados comerciales sin relación con el modelo.

@@ -6,7 +6,7 @@ tomsarihan/Qwen3.8-27B-Uncensored-NVFP4 es una cuantizacion en formato NVFP4 del
 
 El interes practico del repositorio es doble. Por un lado, permite servir un modelo de ~27B de parametros en precision de 4 bits sobre GPUs consumer de gama alta (RTX 5090) o sistemas compactos (DGX Spark, GB10), reduciendo de forma notable los requisitos de VRAM frente a los pesos en 16 bits. Por otro lado, las etiquetas mtp y speculative-decoding sugieren que el modelo base incorpora prediccion multi-token, lo que habilita decodificacion especulativa y mejora el throughput en inferencia.
 
-Hay que tener en cuenta que el repositorio esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos. Ademas, la informacion publicada no incluye la longitud de contexto, la composicion del dataset de entrenamiento ni resultados de benchmarks, por lo que varias especificaciones quedan como no disponibles. Las etiquetas ai-red-team y uncensored implican que el modelo ha sido sometido a un proceso de ablacion de rechazos, algo que condiciona su uso responsable.
+Hay que tener en cuenta que el repositorio esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos. Ademas, la informacion publicada no incluye la longitud de contexto, la composicion del dataset de entrenamiento ni resultados de benchmarks, por lo que varias especificaciones quedan como no disponibles. Las etiquetas ai-red-team y uncensored implican que el modelo ha sido sometido a un proceso de ablacion de rechazos, algo que condiciona su uso responsable.
 
 ## Especificaciones técnicas
 
@@ -22,7 +22,7 @@ Hay que tener en cuenta que el repositorio esta restringido (gated): es necesari
 | Formato de pesos | safetensors cuantizados en NVFP4 (compressed-tensors), cargables con transformers y vLLM |
 | Pipeline declarado | image-text-to-text (vision-lenguaje) |
 | Modelo base | JonathanColetti/Qwen3.8-27B-Uncensored |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 | Fecha de creacion | 2026-09-16 |
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento ni de modelos comparables identificados en
 
 | Modelo | Precision | Tamano de pesos estimado | Hardware objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tomsarihan/Qwen3.8-27B-Uncensored-NVFP4 | NVFP4 (4 bits) | ~13,5 GB | Blackwell: RTX 5090, DGX Spark, GB10 | apache-2.0 | Gated en HuggingFace |
+| tomsarihan/Qwen3.8-27B-Uncensored-NVFP4 | NVFP4 (4 bits) | ~13,5 GB | Blackwell: RTX 5090, DGX Spark, GB10 | apache-2.0 | Gated en Hugging Face |
 | JonathanColetti/Qwen3.8-27B-Uncensored | no disponible (probablemente 16 bits) | no disponible | GPU con mas VRAM | no disponible | no disponible |
 
 No se han identificado en la informacion disponible otros modelos de la misma categoria (multimodales de ~27B cuantizados en NVFP4) con los que establecer una comparacion cuantitativa.
@@ -88,14 +88,14 @@ No se han identificado en la informacion disponible otros modelos de la misma ca
 - Idiomas limitados: solo se declaran ingles y chino. No hay soporte confirmado de castellano ni de otras lenguas.
 - Longitud de contexto desconocida: al no publicarse, no puede garantizarse el comportamiento en conversaciones largas ni el consumo de memoria asociado.
 - Dependencia de hardware: NVFP4 esta pensado para GPUs Blackwell. En hardware anterior el modelo puede no cargarse o requerir conversiones adicionales.
-- Acceso restringido: el repositorio es gated; es imprescindible aceptar las condiciones en HuggingFace antes de descargarlo, lo que puede complicar su uso en pipelines automatizados.
+- Acceso restringido: el repositorio es gated; es imprescindible aceptar las condiciones en Hugging Face antes de descargarlo, lo que puede complicar su uso en pipelines automatizados.
 - Repositorio sin traccion: cero descargas y cero likes en el momento de la consulta, y sin documentacion tecnica publicada. No hay garantia de mantenimiento ni de soporte.
 - Uso comercial: la licencia declarada es apache-2.0, que permite uso comercial, pero se desconoce la licencia y las condiciones del modelo base del que deriva, por lo que conviene verificarlas antes de explotarlo en produccion.
 - Advertencia legal y etica: un modelo sin censura puede generar contenido que infrinja politicas de plataformas o la legislacion aplicable segun el uso. La responsabilidad recae en el desplegador.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tomsarihan/Qwen3.8-27B-Uncensored-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/tomsarihan/Qwen3.8-27B-Uncensored-NVFP4
 - Modelo base: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
 - Paper, blog o repositorio de codigo asociado: no disponible
 - Demo o espacio de prueba: no disponible

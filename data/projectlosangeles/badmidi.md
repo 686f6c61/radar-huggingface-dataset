@@ -23,7 +23,7 @@ La relevancia de este modelo radica en la necesidad practica de filtrar MIDIs de
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion tecnica sobre la arquitectura del modelo. Los tags de HuggingFace indican que se trata de un clasificador de MIDI (MIDI-classification, MIDI-analysis, MIDI-evaluation) que evalúa la calidad de archivos MIDI, pero se desconoce si usa una arquitectura transformer, una red recurrente, CNN sobre representaciones de pistas, o un enfoque basado en features extraidas.
+No se ha publicado informacion tecnica sobre la arquitectura del modelo. Los tags de Hugging Face indican que se trata de un clasificador de MIDI (MIDI-classification, MIDI-analysis, MIDI-evaluation) que evalúa la calidad de archivos MIDI, pero se desconoce si usa una arquitectura transformer, una red recurrente, CNN sobre representaciones de pistas, o un enfoque basado en features extraidas.
 
 El entrenamiento se realiza sobre el dataset projectlosangeles/Discover-MIDI-Dataset, del cual no se han publicado detalles sobre numero de archivos, criterios de anotacion (que define exactamente un MIDI "malo") ni composicion. Tampoco se documenta si hubo etapas de fine-tuning, RLHF o tecnicas de aumento de datos. La metrica declarada es accuracy, sin valores publicados.
 
@@ -63,13 +63,13 @@ No disponible. No se han identificado modelos comparables publicados con la mism
 - Sin datos de accuracy publicados: la metrica declarada en la model card no va acompanada de valores, por lo que no se puede verificar su eficacia real.
 - Alcance limitado: es un clasificador, no un modelo generativo; no puede producir musica ni realizar tareas de transcripcion.
 - Idioma de los metadatos: la documentacion esta en ingles; no hay soporte documentado para otros idiomas.
-- Modelo en fase temprana: con 0 descargas y 0 likes en HuggingFace, no hay evidencia de adopcion ni validacion por parte de la comunidad.
+- Modelo en fase temprana: con 0 descargas y 0 likes en Hugging Face, no hay evidencia de adopcion ni validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/projectlosangeles/badmidi
-- Dataset en HuggingFace: https://huggingface.co/datasets/projectlosangeles/badmidi
+- Modelo en Hugging Face: https://huggingface.co/projectlosangeles/badmidi
+- Dataset en Hugging Face: https://huggingface.co/datasets/projectlosangeles/badmidi
 - Los Angeles MIDI Dataset en Zenodo: https://zenodo.org/records/7485085
 - Repositorio GitHub de Project Los Angeles: https://github.com/asigalov61
 - Repositorio del Los Angeles MIDI Dataset: https://github.com/asigalov61/Los-Angeles-MIDI-Dataset
-- Perfil de HuggingFace con modelos relacionados: https://huggingface.co/models?other=dataset%3Aprojectlosangeles%2FLos-Angeles-MIDI-Dataset
+- Perfil de Hugging Face con modelos relacionados: https://huggingface.co/models?other=dataset%3Aprojectlosangeles%2FLos-Angeles-MIDI-Dataset

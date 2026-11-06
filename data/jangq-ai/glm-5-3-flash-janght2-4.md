@@ -130,7 +130,7 @@ En el conjunto facil de los 20 prompts cortos, la comparacion del autor situa a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JANGQ-AI/GLM-5.3-Flash-JANGHT2.4
+- Modelo en Hugging Face: https://huggingface.co/JANGQ-AI/GLM-5.3-Flash-JANGHT2.4
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Revision anterior (JANGH2, commit 4017296): https://huggingface.co/JANGQ-AI/GLM-5.3-Flash-JANGHT2.4/tree/4017296adf8c15c49c4743e6c646b89a2eb55673
 - Organizacion JANGQ-AI: https://huggingface.co/JANGQ-AI

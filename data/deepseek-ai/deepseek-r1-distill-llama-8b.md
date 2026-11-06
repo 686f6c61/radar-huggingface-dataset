@@ -6,7 +6,7 @@ DeepSeek-R1-Distill-Llama-8B es un modelo de lenguaje de 8.030.261.248 parámetr
 
 El problema que resuelve es doble. Por un lado, traslada capacidades de razonamiento avanzado a un tamano que cabe en una sola GPU de consumo, democratizando un tipo de rendimiento que hasta ahora requeria modelos de decenas o cientos de miles de millones de parámetros. Por otro, ofrece una alternativa abierta y con licencia MIT frente a modelos propietarios de razonamiento. Es relevante ahora porque el paper asociado (arXiv:2501.12948) demostró que destilar los patrones de razonamiento de un modelo grande en modelos densos pequenos supera al entrenamiento por RL directo sobre modelos pequenos.
 
-La arquitectura es la del transformer denso de Llama-3.1-8B, sobre el que se aplicó el ajuste fino de destilación. El modelo acumula más de 157.000 descargas y cerca de 900 likes en HuggingFace en el momento de redactar esta ficha, lo que lo situa entre los destilados más populares de la familia. Los idiomas soportados no vienen declarados explícitamente en la información disponible.
+La arquitectura es la del transformer denso de Llama-3.1-8B, sobre el que se aplicó el ajuste fino de destilación. El modelo acumula más de 157.000 descargas y cerca de 900 likes en Hugging Face en el momento de redactar esta ficha, lo que lo situa entre los destilados más populares de la familia. Los idiomas soportados no vienen declarados explícitamente en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -71,9 +71,9 @@ Las siguientes cifras son estimaciones orientativas basadas en el tamano de 8.03
 
 | Modelo | Parametros | Contexto | Razonamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-R1-Distill-Llama-8B | 8,03B | no disponible | Si (destilado de R1) | MIT | HuggingFace, abierto |
-| DeepSeek-R1-Distill-Qwen-7B | 7B (aproximado, no confirmado en la informacion) | no disponible | Si (destilado de R1) | MIT segun la familia | HuggingFace, abierto |
-| Llama-3.1-8B (modelo base) | 8B | no disponible | No especifico de razonamiento | Llama 3.1 Community License | HuggingFace, abierto |
+| DeepSeek-R1-Distill-Llama-8B | 8,03B | no disponible | Si (destilado de R1) | MIT | Hugging Face, abierto |
+| DeepSeek-R1-Distill-Qwen-7B | 7B (aproximado, no confirmado en la informacion) | no disponible | Si (destilado de R1) | MIT segun la familia | Hugging Face, abierto |
+| Llama-3.1-8B (modelo base) | 8B | no disponible | No especifico de razonamiento | Llama 3.1 Community License | Hugging Face, abierto |
 
 No se dispone de cifras de rendimiento comparativas en la informacion proporcionada. El dato destacado de la model card es que el destilado de 32B supera a OpenAI-o1-mini, pero ese resultado no es extrapolable a la variante de 8B.
 
@@ -87,7 +87,7 @@ No se dispone de cifras de rendimiento comparativas en la informacion proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
+- Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
 - Paper DeepSeek-R1 (PDF): https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf
 - arXiv: https://arxiv.org/abs/2501.12948
 - Repositorio GitHub DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
@@ -95,5 +95,5 @@ No se dispone de cifras de rendimiento comparativas en la informacion proporcion
 - Web oficial DeepSeek: https://www.deepseek.com/
 - Chat DeepSeek: https://chat.deepseek.com/
 - Plataforma API DeepSeek: https://platform.deepseek.com/
-- Organizacion en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion en Hugging Face: https://huggingface.co/deepseek-ai
 - Discord DeepSeek AI: https://discord.gg/Tc7c45Zzu5

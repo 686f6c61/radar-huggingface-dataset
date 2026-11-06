@@ -90,7 +90,7 @@ La comparacion directa solo es posible con el checkpoint upstream, del que este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/infosave/MiniCPM-V-4.7-1B-cmf
+- Modelo en Hugging Face: https://huggingface.co/infosave/MiniCPM-V-4.7-1B-cmf
 - Modelo base (upstream): https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
 - Repositorio del formato CMF: https://github.com/infosave2007/cmf
 - Runtime cortiq: referenciado como `library_name: cortiq` en la model card; no se proporciona URL directa en la informacion disponible.

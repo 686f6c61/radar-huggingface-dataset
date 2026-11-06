@@ -118,7 +118,7 @@ La mejora frente al checkpoint base es de 2,4 puntos de accuracy y 10,3 puntos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harikarthikmanyam/laya-issue-triage
+- Modelo en Hugging Face: https://huggingface.co/harikarthikmanyam/laya-issue-triage
 - Repositorio de la tarea, dataset y script de evaluacion: https://github.com/manyamkarthik/laya-issue-triage
 - Repositorio del framework Laya: https://github.com/NandhaKishorM/laya
 - Modelo base: https://huggingface.co/convaiinnovations/laya

@@ -72,7 +72,7 @@ No se dispone de datos comparativos publicados en la informacion disponible. El 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/e54true/deeptable-checkpoints-llama3-8b
+- Repositorio Hugging Face: https://huggingface.co/e54true/deeptable-checkpoints-llama3-8b
 - Checkpoints sobre DeepSeek-LLM-7B-Chat: https://huggingface.co/e54true/deeptable-checkpoints-deepseek7b
 - Checkpoints sobre Qwen2.5-7B-Instruct: https://huggingface.co/e54true/deeptable-checkpoints-qwen25-7b
 - Repositorio de TableLoRA (Microsoft): https://github.com/microsoft/TableLoRA

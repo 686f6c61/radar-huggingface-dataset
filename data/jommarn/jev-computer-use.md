@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JEV-Computer-Use es un modelo de decisión orientado a la interacción con entornos de escritorio y navegador (computer use y browser agent), desarrollado por el usuario Jommarn y publicado en HuggingFace bajo licencia Apache 2.0. Se presenta como un agente de "System-One", es decir, un modelo que emite decisiones rápidas en un único paso hacia adelante en lugar de generar cadenas de razonamiento textual largas antes de cada acción. Para ello emplea una formulación de "slot de candidato de lectura única": en lugar de producir texto libre, el modelo emite probabilidades calibradas sobre un conjunto discreto de acciones candidatas etiquetadas como A, B, C, etc.
+JEV-Computer-Use es un modelo de decisión orientado a la interacción con entornos de escritorio y navegador (computer use y browser agent), desarrollado por el usuario Jommarn y publicado en Hugging Face bajo licencia Apache 2.0. Se presenta como un agente de "System-One", es decir, un modelo que emite decisiones rápidas en un único paso hacia adelante en lugar de generar cadenas de razonamiento textual largas antes de cada acción. Para ello emplea una formulación de "slot de candidato de lectura única": en lugar de producir texto libre, el modelo emite probabilidades calibradas sobre un conjunto discreto de acciones candidatas etiquetadas como A, B, C, etc.
 
 La propuesta técnica se apoya en tres pilares: un esquema de lectura de acción de un solo token, un pipeline de entrenamiento con GRPO interactivo en línea sobre un Chromium headless gestionado con Playwright, y un verificador semántico basado en un modelo visión-lenguaje de la familia Qwen. La política se entrena combinando entropía cruzada, una pérdida de calibración de Brier y una regularización KL en forma cerrada analítica.
 
@@ -76,5 +76,5 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jommarn/JEV-Computer-Use
+- Modelo en Hugging Face: https://huggingface.co/Jommarn/JEV-Computer-Use
 - Repositorio de entrenamiento e inferencia: https://github.com/pidsana42-lgtm/JEV-Computer-Use

@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|---|
 | dkaczer/qwen3-14b-sft-aesthetic-100 | Base ~14,8×10^9 + adaptador ~1,3×10^8 | 32.768 (131.072 con YaRN) | apache-2.0 | Repositorio de 0,5 GB, 0 descargas | Artefacto de investigación deliberadamente misalineado |
 | Qwen/Qwen3-14B (base) | ~14,8×10^9 | 32.768 (131.072 con YaRN) | apache-2.0 | Ampliamente distribuido | Comportamiento alineado estándar; es el punto de partida del adaptador |
-| Variante GRPO estética del mismo artículo | Base ~14,8×10^9 + adaptador | Heredado del base | apache-2.0 (presumible, no confirmado) | ID de HuggingFace no disponible en la información proporcionada | Se menciona en la model card como la ejecución posterior a este warmup |
+| Variante GRPO estética del mismo artículo | Base ~14,8×10^9 + adaptador | Heredado del base | apache-2.0 (presumible, no confirmado) | ID de Hugging Face no disponible en la información proporcionada | Se menciona en la model card como la ejecución posterior a este warmup |
 | Artefactos de misalineación emergente de la literatura (Betley et al., 2025) | No disponible | No disponible | No disponible | No verificada en la información disponible | Referencia general del mismo fenómeno; no se dispone de datos comparables |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/dkaczer/qwen3-14b-sft-aesthetic-100
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/dkaczer/qwen3-14b-sft-aesthetic-100
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Artículo citado: "Reinforcement Learning Can Amplify Emergent Misalignment from Harmless Rewards", arXiv:2605.31328 — https://arxiv.org/abs/2605.31328
 - Referencia de datos: Chua et al. (2025) y Woodruff (2025), `unpopular-aesthetic-prefs`, CC BY 4.0 (sin URL concreta en la información proporcionada)

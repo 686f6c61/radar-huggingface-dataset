@@ -6,7 +6,7 @@ Cohere-AR/cohere-transcribe-ar-sft-v9-full-s48k es un modelo de reconocimiento a
 
 El modelo resulta relevante porque aborda uno de los problemas practicos mas dificiles en ASR: la transcripcion de habla bilingue arabe-ingles en condiciones de telefonia, donde la calidad del audio es baja y los hablantes cambian de idioma de forma espontanea. La mayoria de los sistemas ASR comerciales estan optimizados para un unico idioma o para pares de idiomas de alto recursos, por lo que un ajuste especifico sobre un modelo base arabe representa una alternativa especializada para este nicho.
 
-El acceso al modelo esta restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargar los pesos. El repositorio ocupa 4,1 GB y en el momento de la consulta no registra descargas ni likes, lo que sugiere una publicacion reciente o de circulacion limitada.
+El acceso al modelo esta restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargar los pesos. El repositorio ocupa 4,1 GB y en el momento de la consulta no registra descargas ni likes, lo que sugiere una publicacion reciente o de circulacion limitada.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantizacion de 8 bits: aproximadamente 2,1 GB para pesos; en 4 bits, alrededor de 1,1 GB (estimaciones teoricas, no confirmadas por el autor).
 - GPU recomendadas: para fp16, una GPU con 8-12 GB de VRAM es suficiente (RTX 3060 12 GB, RTX 4070, RTX 4080, L4, A10G). Para fp32 o lotes grandes, A100 o H100 ofrecen mayor margen.
 - Cabe en GPU de consumo: si, en modelos con al menos 8 GB de VRAM en fp16 y en GPUs de 4-6 GB con cuantizacion (sujeto a que el runtime soporte cuantizacion para esta arquitectura concreta, no confirmado).
-- Opciones de despliegue: transformers (pipeline `automatic-speech-recognition`), servidores compatibles con endpoints de HuggingFace. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI, dado que es un modelo ASR y no un LLM de decodificacion autoregresiva estandar.
+- Opciones de despliegue: transformers (pipeline `automatic-speech-recognition`), servidores compatibles con endpoints de Hugging Face. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI, dado que es un modelo ASR y no un LLM de decodificacion autoregresiva estandar.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ La comparativa con Whisper y MMS se ofrece como referencia de categoria; no se d
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: es necesario aceptar las condiciones en HuggingFace para descargar los pesos, lo que puede limitar la reproducibilidad y el despliegue automatizado.
+- Acceso restringido: es necesario aceptar las condiciones en Hugging Face para descargar los pesos, lo que puede limitar la reproducibilidad y el despliegue automatizado.
 - Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; es imprescindible verificar las condiciones antes de usarlo en produccion.
 - Sesgos desconocidos: no se documenta la composicion del dataset de entrenamiento, por lo que no es posible evaluar sesgos dialectales (arabe estandar frente a dialectos regionales), de genero o de acento.
 - Riesgo de alucinacion en ASR: como todo modelo de transcripcion, puede generar texto plausible en segmentos de audio ruidoso o ininteligible, especialmente en telefonia de baja calidad.
@@ -89,6 +89,6 @@ La comparativa con Whisper y MMS se ofrece como referencia de categoria; no se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-sft-v9-full-s48k
+- Modelo en Hugging Face: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-sft-v9-full-s48k
 - Modelo base: https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

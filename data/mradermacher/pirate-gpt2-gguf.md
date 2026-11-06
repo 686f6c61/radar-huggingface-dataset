@@ -25,7 +25,7 @@ Su relevancia es limitada pero concreta: se trata de un modelo extremadamente li
 
 No se dispone de informacion detallada sobre la arquitectura del modelo base `ramlanrinos/pirate-gpt2` en la informacion proporcionada. Por el recuento de parametros (81,9 millones) y la nomenclatura, es consistente con un transformer decoder-only de la familia GPT-2, aunque este extremo no puede confirmarse con los datos disponibles. Tampoco se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de ajuste como RLHF o DPO.
 
-Respecto al proceso de cuantizacion, la model card de mradermacher indica que se trata de cuantizaciones estaticas (`static quants`) y que las cuantizaciones ponderadas o con imatrix no estaban disponibles en el momento de la publicacion. Los metadatos internos del repositorio senalan `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica una conversion desde pesos HuggingFace y una cuantizacion por tensor de salida. No se documenta ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, SSM, etc.).
+Respecto al proceso de cuantizacion, la model card de mradermacher indica que se trata de cuantizaciones estaticas (`static quants`) y que las cuantizaciones ponderadas o con imatrix no estaban disponibles en el momento de la publicacion. Los metadatos internos del repositorio senalan `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica una conversion desde pesos Hugging Face y una cuantizacion por tensor de salida. No se documenta ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, SSM, etc.).
 
 ## Capacidades
 
@@ -40,7 +40,7 @@ Respecto al proceso de cuantizacion, la model card de mradermacher indica que se
 
 - Experimentacion con cuantizacion GGUF: permite comparar la degradacion de perplejidad entre Q2_K, IQ4_XS, Q4_K_M y Q8_0 en un modelo de 82 M de parametros, sin necesidad de GPU.
 - Despliegue en hardware embebido: con cuantizaciones de ~0,2 GB, puede ejecutarse en Raspberry Pi, telefonos o dispositivos IoT para generar texto corto en ingles sin conexion.
-- Docencia y cursos de LLM: su tamano permite entrenar, cuantizar e inferir el ciclo completo en un portatil, ilustrando el pipeline HuggingFace a GGUF.
+- Docencia y cursos de LLM: su tamano permite entrenar, cuantizar e inferir el ciclo completo en un portatil, ilustrando el pipeline Hugging Face a GGUF.
 - Pruebas de integracion de pipelines: sirve como modelo "dummy" o de bajo coste para validar infraestructura de servicio (Ollama, llama.cpp, text-generation-webui) antes de desplegar modelos mayores.
 - Generacion de texto creativo tematico: dado el ajuste del modelo base, puede emplearse para generar fragmentos con registro "pirata" en ingles, por ejemplo en prototipos de ficcion interactiva.
 - Benchmarking de latencia en CPU: al ser tan pequeno, permite medir tokens por segundo en distintos procesadores y comparar backends de inferencia con un coste energetico minimo.
@@ -55,14 +55,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: al ser un modelo de 82 M de parametros, f16 ocupa aproximadamente 0,16 GB de pesos; Q8_0 en torno a 0,09 GB; Q4_K_M alrededor de 0,05 GB. La VRAM adicional depende del tamano de contexto y del backend.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de memoria es mas que suficiente; no se requiere A100, H100 ni RTX 4090. Una GTX 1050, una iGPU integrada o incluso CPU pura bastan.
 - Cabe con holgura en cualquier GPU de consumo, incluida la gama de entrada y las integradas.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. La libreria declarada en el repositorio es `transformers`, por lo que el modelo base tambien puede cargarse con la pila de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. La libreria declarada en el repositorio es `transformers`, por lo que el modelo base tambien puede cargarse con la pila de Hugging Face.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. En la practica, un modelo de este tamano en CPU moderna suele generar decenas de tokens por segundo, pero no se aporta una medicion oficial.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mradermacher/pirate-gpt2-GGUF | 81.912.576 | no disponible | no disponible | GGUF en HuggingFace |
+| mradermacher/pirate-gpt2-GGUF | 81.912.576 | no disponible | no disponible | GGUF en Hugging Face |
 | distilgpt2 | ~82 M | 1024 tokens (segun documentacion publica de GPT-2) | MIT (segun OpenAI/HuggingFace) | safetensors y GGUF en multiples repositorios |
 | GPT-2 small | 124 M | 1024 tokens | MIT | safetensors y GGUF ampliamente disponibles |
 | TinyLlama-1.1B | ~1.100 M | 2048 tokens | Apache 2.0 | safetensors y GGUF |

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-phobert-ner-vietnamese es un modelo de reconocimiento de entidades nombradas (NER) para vietnamita, publicado por el usuario MrPickle191 en HuggingFace. Se trata de un fine-tuning de vinai/phobert-base-v2, un transformer encoder basado en la arquitectura RoBERTa adaptado especificamente al vietnamita mediante tokenizacion a nivel de silaba. El modelo resuelve la tarea de token-classification, es decir, la identificacion y clasificacion de entidades (personas, organizaciones, localizaciones, etc.) dentro de texto en vietnamita.
+phobert-ner-vietnamese es un modelo de reconocimiento de entidades nombradas (NER) para vietnamita, publicado por el usuario MrPickle191 en Hugging Face. Se trata de un fine-tuning de vinai/phobert-base-v2, un transformer encoder basado en la arquitectura RoBERTa adaptado especificamente al vietnamita mediante tokenizacion a nivel de silaba. El modelo resuelve la tarea de token-classification, es decir, la identificacion y clasificacion de entidades (personas, organizaciones, localizaciones, etc.) dentro de texto en vietnamita.
 
-El modelo cuenta con 134.423.829 parametros y se distribuye en formato safetensors con un tamano de repositorio de 2,2 GB. La model card es escasa: fue generada automaticamente por el Trainer de HuggingFace y no documenta el dataset de entrenamiento, los tipos de entidades soportadas ni las limitaciones. El autor declara un F1 de 0,9248 y una perdida de validacion de 0,1283 sobre un conjunto de evaluacion no especificado.
+El modelo cuenta con 134.423.829 parametros y se distribuye en formato safetensors con un tamano de repositorio de 2,2 GB. La model card es escasa: fue generada automaticamente por el Trainer de Hugging Face y no documenta el dataset de entrenamiento, los tipos de entidades soportadas ni las limitaciones. El autor declara un F1 de 0,9248 y una perdida de validacion de 0,1283 sobre un conjunto de evaluacion no especificado.
 
 Su relevancia es limitada pero concreta: cubre un nicho (NER en vietnamita) con pocas alternativas publicas, y parte de PhoBERT, que es el modelo de referencia para procesamiento de lenguaje natural en vietnamita. La licencia AGPL-3.0 es un factor critico a tener en cuenta para cualquier uso en produccion.
 
@@ -82,9 +82,9 @@ No se han publicado resultados de benchmarks estandar ni comparaciones con otros
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MrPickle191/phobert-ner-vietnamese | 134 M | no disponible | NER vietnamita | AGPL-3.0 | HuggingFace, 32 descargas |
-| vinai/phobert-base-v2 | ~135 M | 256 tokens | Encoder base vietnamita (sin cabeza NER) | MIT (segun el repositorio original) | HuggingFace, ampliamente usado |
-| xlm-roberta-base | ~278 M | 512 tokens | Encoder multilingue (requiere fine-tuning para NER) | MIT | HuggingFace |
+| MrPickle191/phobert-ner-vietnamese | 134 M | no disponible | NER vietnamita | AGPL-3.0 | Hugging Face, 32 descargas |
+| vinai/phobert-base-v2 | ~135 M | 256 tokens | Encoder base vietnamita (sin cabeza NER) | MIT (segun el repositorio original) | Hugging Face, ampliamente usado |
+| xlm-roberta-base | ~278 M | 512 tokens | Encoder multilingue (requiere fine-tuning para NER) | MIT | Hugging Face |
 
 La comparativa con alternativas NER especificas para vietnamita no esta disponible en la informacion proporcionada. PhoBERT-base-v2 es el punto de partida y no incluye cabeza de clasificacion; xlm-roberta-base es una alternativa multilingue que requeriria fine-tuning propio. No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion disponible.
 
@@ -97,12 +97,12 @@ La comparativa con alternativas NER especificas para vietnamita no esta disponib
 - Limitacion idiomatica: el modelo esta pensado para vietnamita; su rendimiento en otros idiomas no esta garantizado ni documentado.
 - Licencia AGPL-3.0: es una licencia copyleft fuerte. Cualquier uso en un servicio en red puede obligar a liberar el codigo fuente del servicio bajo la misma licencia. Para uso comercial propietario es necesario evaluar implicaciones legales o contactar con el autor para una licencia alternativa.
 - Modelo con muy poca traccion: 32 descargas y 0 likes en el momento de la consulta, sin validacion independiente por parte de la comunidad.
-- Fecha de creacion inusual (2026-10-28) en los metadatos de HuggingFace; conviene verificar la integridad del repositorio antes de usarlo en produccion.
+- Fecha de creacion inusual (2026-10-28) en los metadatos de Hugging Face; conviene verificar la integridad del repositorio antes de usarlo en produccion.
 - No apto para generacion de texto ni para tareas que requieran contexto largo: es un encoder de clasificacion de tokens.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MrPickle191/phobert-ner-vietnamese
+- Modelo en Hugging Face: https://huggingface.co/MrPickle191/phobert-ner-vietnamese
 - Modelo base PhoBERT v2: https://huggingface.co/vinai/phobert-base-v2
 - Paper de PhoBERT (Nguyen y Nguyen, 2020): https://arxiv.org/abs/2003.00744
 - Repositorio oficial de PhoBERT: https://github.com/VinAIResearch/PhoBERT

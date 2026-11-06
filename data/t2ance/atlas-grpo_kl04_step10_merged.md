@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `t2ance/atlas-grpo_kl04_step10_merged` es un modelo de lenguaje de 8.190 millones de parámetros publicado por el usuario t2ance (Peijia Qin) en HuggingFace. El nombre sugiere que se trata de un modelo fusionado (merged) a partir de un entrenamiento con GRPO (Group Relative Policy Optimization) con un coeficiente KL de 0,4 y 10 pasos de optimización, aunque no se dispone de documentación oficial que confirme estos detalles. El tag `qwen3` indica que probablemente se basa en la arquitectura Qwen3, pero no hay confirmación explícita en la ficha.
+El modelo `t2ance/atlas-grpo_kl04_step10_merged` es un modelo de lenguaje de 8.190 millones de parámetros publicado por el usuario t2ance (Peijia Qin) en Hugging Face. El nombre sugiere que se trata de un modelo fusionado (merged) a partir de un entrenamiento con GRPO (Group Relative Policy Optimization) con un coeficiente KL de 0,4 y 10 pasos de optimización, aunque no se dispone de documentación oficial que confirme estos detalles. El tag `qwen3` indica que probablemente se basa en la arquitectura Qwen3, pero no hay confirmación explícita en la ficha.
 
 El modelo se publicó el 3 de septiembre de 2026 y el repositorio ocupa 16,7 GB en formato safetensors. No se ha especificado licencia, idiomas soportados, ni pipeline de uso. A día de hoy no tiene descargas y solo un like, lo que sugiere que es un experimento reciente o un modelo en fase de evaluación. Su relevancia radica en ser un ejemplo de fine-tuning con GRPO sobre una base Qwen3, pero carece de documentación y benchmarks públicos que permitan evaluar su rendimiento real.
 
@@ -59,7 +59,7 @@ No se dispone de información sobre modelos comparables. El tag `qwen3` sugiere 
 
 ## Enlaces
 
-- [HuggingFace - t2ance/atlas-grpo_kl04_step10_merged](https://huggingface.co/t2ance/atlas-grpo_kl04_step10_merged)
+- [Hugging Face - t2ance/atlas-grpo_kl04_step10_merged](https://huggingface.co/t2ance/atlas-grpo_kl04_step10_merged)
 - [Perfil del autor t2ance](https://huggingface.co/t2ance)
 - [Dataset t2ance/atts-grpo-data](https://huggingface.co/datasets/t2ance/atts-grpo-data/viewer) (posiblemente relacionado con el entrenamiento)
 - [Repositorio de mergekit](https://github.com/arcee-ai/mergekit) (herramienta probablemente usada para la fusión)

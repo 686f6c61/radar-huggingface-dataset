@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Runtime | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-ASR-1.7B-8bit (este) | 2.038.052.480 | no disponible | Apache 2.0 | MLX (mlx-audio) | HuggingFace |
-| Qwen/Qwen3-ASR-1.7B (base) | ~1.700 millones (según nomenclatura) | no disponible | Apache 2.0 | PyTorch / otros | HuggingFace |
-| Whisper large-v3 | no disponible en la información | no disponible | MIT (según modelo original, no verificado aquí) | múltiples | HuggingFace |
-| Alternativas ASR en MLX | no disponible | no disponible | variable | MLX | HuggingFace |
+| Qwen3-ASR-1.7B-8bit (este) | 2.038.052.480 | no disponible | Apache 2.0 | MLX (mlx-audio) | Hugging Face |
+| Qwen/Qwen3-ASR-1.7B (base) | ~1.700 millones (según nomenclatura) | no disponible | Apache 2.0 | PyTorch / otros | Hugging Face |
+| Whisper large-v3 | no disponible en la información | no disponible | MIT (según modelo original, no verificado aquí) | múltiples | Hugging Face |
+| Alternativas ASR en MLX | no disponible | no disponible | variable | MLX | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada, por lo que la comparativa se limita a parámetros, licencia y disponibilidad.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luokelabs/Qwen3-ASR-1.7B-8bit
+- Modelo en Hugging Face: https://huggingface.co/luokelabs/Qwen3-ASR-1.7B-8bit
 - Modelo original: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Librería mlx-audio: no disponible enlace directo en la información proporcionada
 - Repositorio mlx-community referenciado: https://huggingface.co/mlx-community/Qwen3-ASR-1.7B-8bit

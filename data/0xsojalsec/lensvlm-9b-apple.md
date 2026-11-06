@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LensVLM-9B es un modelo de vision-lenguaje (VLM) de aproximadamente 9.400 millones de parametros desarrollado por Apple (Apple AIML Research) y subido a HuggingFace bajo el identificador `apple/LensVLM-9B`. El repositorio analizado, `0xSojalSec/LensVLM-9B-Apple`, es una copia del modelo original. Su propuesta es poco habitual: en lugar de procesar documentos como texto plano, el modelo "escanea" imagenes comprimidas de texto y despues expande selectivamente solo las paginas relevantes a su forma sin comprimir mediante herramientas aprendidas (learned tools).
+LensVLM-9B es un modelo de vision-lenguaje (VLM) de aproximadamente 9.400 millones de parametros desarrollado por Apple (Apple AIML Research) y subido a Hugging Face bajo el identificador `apple/LensVLM-9B`. El repositorio analizado, `0xSojalSec/LensVLM-9B-Apple`, es una copia del modelo original. Su propuesta es poco habitual: en lugar de procesar documentos como texto plano, el modelo "escanea" imagenes comprimidas de texto y despues expande selectivamente solo las paginas relevantes a su forma sin comprimir mediante herramientas aprendidas (learned tools).
 
 El problema que resuelve es el coste de contexto en tareas de comprension documental sobre corpus muy largos. Comprimir el texto a formato visual reduce el numero de tokens de entrada, y la expansion selectiva evita perder el detalle de las paginas que realmente importan para responder una pregunta concreta. El modelo permite elegir factores de compresion de 5x, 10x y 15x.
 
@@ -74,8 +74,8 @@ No se dispone de datos de rendimiento publicados para LensVLM-9B ni para alterna
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LensVLM-9B | 9,41 mil millones | no disponible | VLM con compresion visual de texto y expansion selectiva | Apple ML Research Model License | HuggingFace (apple/LensVLM-9B) y copia 0xSojalSec/LensVLM-9B-Apple |
-| Qwen/Qwen3.5-9B | no disponible | no disponible | LLM base, solo texto | no disponible | HuggingFace (modelo base del que deriva LensVLM) |
+| LensVLM-9B | 9,41 mil millones | no disponible | VLM con compresion visual de texto y expansion selectiva | Apple ML Research Model License | Hugging Face (apple/LensVLM-9B) y copia 0xSojalSec/LensVLM-9B-Apple |
+| Qwen/Qwen3.5-9B | no disponible | no disponible | LLM base, solo texto | no disponible | Hugging Face (modelo base del que deriva LensVLM) |
 | Otros VLM de ~7-9B (por ejemplo familias Qwen-VL, InternVL) | no disponible | no disponible | VLM convencionales sin expansion selectiva | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento publicados para LensVLM-9B ni para alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace (copia analizada): https://huggingface.co/0xSojalSec/LensVLM-9B-Apple
+- Modelo en Hugging Face (copia analizada): https://huggingface.co/0xSojalSec/LensVLM-9B-Apple
 - Modelo original: https://huggingface.co/apple/LensVLM-9B
 - Paper: https://arxiv.org/abs/2605.07019
 - Codigo: https://github.com/apple-aiml-research/ml-lensvlm

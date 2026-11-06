@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mira-1-large-0919-i1-GGUF es un conjunto de cuantizaciones en formato GGUF del modelo Smilyai-labs/Mira-1-large-0919, publicadas por el usuario mradermacher. No se trata por tanto de un modelo entrenado desde cero, sino de una redistribucion optimizada para inferencia local del modelo original, que segun las etiquetas de HuggingFace pertenece a la familia qwen3 y fue ajustado mediante LoRA (base_model:adapter). El recuento real de parametros en safetensors es de 14.768.307.200 (aproximadamente 14,77 mil millones), lo que situa al modelo en la categoria de 14B densos.
+Mira-1-large-0919-i1-GGUF es un conjunto de cuantizaciones en formato GGUF del modelo Smilyai-labs/Mira-1-large-0919, publicadas por el usuario mradermacher. No se trata por tanto de un modelo entrenado desde cero, sino de una redistribucion optimizada para inferencia local del modelo original, que segun las etiquetas de Hugging Face pertenece a la familia qwen3 y fue ajustado mediante LoRA (base_model:adapter). El recuento real de parametros en safetensors es de 14.768.307.200 (aproximadamente 14,77 mil millones), lo que situa al modelo en la categoria de 14B densos.
 
 El valor anadido de este repositorio esta en las cuantizaciones de tipo i1 (imatrix), generadas con la libreria llama.cpp y calibradas con un fichero imatrix propio del modelo. Frente a las cuantizaciones estaticas publicadas en el repositorio hermano, las variantes i1 suelen ofrecer una mejor relacion tamano/calidad en rangos bajos y medios, algo relevante cuando se quiere ejecutar un modelo de casi 15B en GPUs de consumo. El repositorio ocupa 154,6 GB en total porque incluye todas las variantes, desde IQ2_M (5,4 GB) hasta Q6_K (12,2 GB), ademas del fichero imatrix.
 
@@ -12,7 +12,7 @@ Es relevante ahora porque permite desplegar un modelo con etiquetas de razonamie
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetas de HuggingFace: qwen3, transformers) |
+| Arquitectura | no disponible (etiquetas de Hugging Face: qwen3, transformers) |
 | Parametros totales | 14.768.307.200 (14,77B, dato de safetensors) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -25,13 +25,13 @@ Es relevante ahora porque permite desplegar un modelo con etiquetas de razonamie
 | Libreria declarada | transformers |
 | Tamano del repositorio | 154,6 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion (segun HuggingFace) | 2026-09-19 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-19 |
 
 ## Arquitectura y entrenamiento
 
 No se dispone de informacion detallada sobre la arquitectura interna, el numero de tokens de entrenamiento ni la composicion del dataset. Las etiquetas del repositorio apuntan a la familia qwen3 y el campo base_model:adapter indica que el modelo original fue creado mediante un ajuste LoRA sobre una base ya entrenada, no mediante un entrenamiento completo desde cero. El recuento de parametros (14,77B) es coherente con un transformer denso de esa escala, pero no se ha publicado confirmacion explicita en la informacion disponible.
 
-En lo que respecta a este repositorio concreto, el "entrenamiento" no aplica: mradermacher realiza cuantizacion de pesos. Se han generado cuantizaciones ponderadas con imatrix (el autor indica "output_tensor_quantised: 1" y "convert_type: hf"), lo que implica que los tensores se convirtieron desde el formato HuggingFace a GGUF antes de cuantizarse. El fichero imatrix (0,1 GB) se incluye para que terceros puedan generar sus propias cuantizaciones. Las cuantizaciones IQ utilizan calibracion basada en importancia por tensor, lo que mejora la perplejidad en tamanos pequenos frente a las cuantizaciones estaticas equivalentes.
+En lo que respecta a este repositorio concreto, el "entrenamiento" no aplica: mradermacher realiza cuantizacion de pesos. Se han generado cuantizaciones ponderadas con imatrix (el autor indica "output_tensor_quantised: 1" y "convert_type: hf"), lo que implica que los tensores se convirtieron desde el formato Hugging Face a GGUF antes de cuantizarse. El fichero imatrix (0,1 GB) se incluye para que terceros puedan generar sus propias cuantizaciones. Las cuantizaciones IQ utilizan calibracion basada en importancia por tensor, lo que mejora la perplejidad en tamanos pequenos frente a las cuantizaciones estaticas equivalentes.
 
 ## Capacidades
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Mira-1-large-0919-i1-GGUF (este) | 14,77B (base) | no disponible | GGUF (i1/imatrix) | other | Publico en HuggingFace |
-| mradermacher/Mira-1-large-0919-GGUF | 14,77B (base) | no disponible | GGUF (quants estaticos) | other | Publico en HuggingFace |
-| Smilyai-labs/Mira-1-large-0919 | 14,77B | no disponible | safetensors (transformers) | other | Publico en HuggingFace |
+| mradermacher/Mira-1-large-0919-i1-GGUF (este) | 14,77B (base) | no disponible | GGUF (i1/imatrix) | other | Publico en Hugging Face |
+| mradermacher/Mira-1-large-0919-GGUF | 14,77B (base) | no disponible | GGUF (quants estaticos) | other | Publico en Hugging Face |
+| Smilyai-labs/Mira-1-large-0919 | 14,77B | no disponible | safetensors (transformers) | other | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento ni de contexto de alternativas de la misma categoria en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa con otros modelos de 14B. La unica comparacion factible es entre las tres variantes del mismo modelo (original, quants estaticos y quants i1).
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento ni de contexto de alternativas de la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/Mira-1-large-0919-i1-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Mira-1-large-0919-i1-GGUF
 - Repositorio de quants estaticos: https://huggingface.co/mradermacher/Mira-1-large-0919-GGUF
 - Modelo base: https://huggingface.co/Smilyai-labs/Mira-1-large-0919
 - Pagina resumen del autor para este modelo: https://hf.tst.eu/model#Mira-1-large-0919-i1-GGUF

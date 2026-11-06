@@ -89,7 +89,7 @@ No disponible. No se han identificado en la información proporcionada otras pol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BabyClaw/microduck-beaktug-long-juice-1240
+- Modelo en Hugging Face: https://huggingface.co/BabyClaw/microduck-beaktug-long-juice-1240
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `main`, commit `ffdb0d342`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon microduck (no se proporciona URL directa)

@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye datos de modelos comparab
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/gopalanj/maya-voice-agent
+- Hugging Face del adaptador: https://huggingface.co/gopalanj/maya-voice-agent
 - Modelo base MiniCPM-o 4.5: https://huggingface.co/openbmb/MiniCPM-o-4_5
 - Repositorio de codigo, generador y conversaciones: https://github.com/gopalanj/maya-voice-agent
 - Conjuntos de prueba con audio: https://huggingface.co/datasets/gopalanj/maya-voice-agent-tests

@@ -108,7 +108,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/IsValorum/Nex-N2.5-mini-APEX-I-MiniPlus-V2.1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/IsValorum/Nex-N2.5-mini-APEX-I-MiniPlus-V2.1-GGUF
 - Edición MiniPlus V1 del mismo autor: https://huggingface.co/IsValorum/Nex-N2.5-mini-APEX-I-MiniPlus-V1-GGUF
 - Modelo base: https://huggingface.co/nex-agi/Nex-N2.5-mini
 - `llama.cpp` (runtime de referencia para GGUF): no se proporciona enlace en la información disponible

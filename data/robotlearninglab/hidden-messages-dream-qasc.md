@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hidden Messages Dream-7B QASC (este) | Adaptador de canal latente | No disponible (backbone 7B) | No disponible | Apache-2.0 | HuggingFace |
-| Dream-org/Dream-v0-Instruct-7B | Modelo de difusión de lenguaje | 7B | No disponible | No disponible | HuggingFace |
+| Hidden Messages Dream-7B QASC (este) | Adaptador de canal latente | No disponible (backbone 7B) | No disponible | Apache-2.0 | Hugging Face |
+| Dream-org/Dream-v0-Instruct-7B | Modelo de difusión de lenguaje | 7B | No disponible | No disponible | Hugging Face |
 | Alternativas de comunicación multiagente | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre otros adaptadores de comunicación latente comparables en la documentación proporcionada.
@@ -78,7 +78,7 @@ No se dispone de información sobre otros adaptadores de comunicación latente c
 - Un mensaje latente denso no constituye un mecanismo de privacidad.
 - La reproducción de resultados requiere contextos y trayectorias independientes de los agentes, el receptor designado, intervenciones sobre mensajes y un calendario de entrega específico.
 - Descargar el adaptador por sí solo no reproduce los resultados del artículo.
-- No se realizó validación adicional de inferencia ni de benchmarks para este espejo en HuggingFace.
+- No se realizó validación adicional de inferencia ni de benchmarks para este espejo en Hugging Face.
 - El repositorio no incluye los pesos completos del backbone ni los datos fuente de QASC.
 - Idioma limitado al inglés.
 - Riesgo de alucinación: no evaluado en la información disponible.
@@ -87,7 +87,7 @@ No se dispone de información sobre otros adaptadores de comunicación latente c
 
 ## Enlaces
 
-- [HuggingFace: RobotLearningLab/hidden-messages-dream-qasc](https://huggingface.co/RobotLearningLab/hidden-messages-dream-qasc)
+- [Hugging Face: RobotLearningLab/hidden-messages-dream-qasc](https://huggingface.co/RobotLearningLab/hidden-messages-dream-qasc)
 - [Artículo arXiv:2610.28905](https://arxiv.org/abs/2610.28905)
 - [Repositorio de código (commit 1d1477b)](https://github.com/alanrbtx/hidden-messages-diffusion-agents/tree/1d1477b423ba4245b564840ce46aee039c79bcc8)
 - [Implementación DenseLatentPrefixChannel](https://github.com/alanrbtx/hidden-messages-diffusion-agents/blob/1d1477b423ba4245b564840ce46aee039c79bcc8/code/src/hidden_messages/communication/dense_latent_prefix.py)

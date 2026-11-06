@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/IsValorum/ThinkingCap-gemma-4-26B-A4B-it-BF16-GGUF
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/IsValorum/ThinkingCap-gemma-4-26B-A4B-it-BF16-GGUF
 - Modelo base en safetensors: https://huggingface.co/bottlecapai/ThinkingCap-gemma-4-26B-A4B-it
 - Repositorio GGUF oficial con cuantizaciones y `mmproj`: https://huggingface.co/bottlecapai/ThinkingCap-gemma-4-26B-A4B-it-GGUF
-- Trabajo de conversión (job de HuggingFace): https://huggingface.co/jobs/IsValorum/6aed0ae2c78863f9c633afed
+- Trabajo de conversión (job de Hugging Face): https://huggingface.co/jobs/IsValorum/6aed0ae2c78863f9c633afed
 - Apoyo al autor de la conversión: https://ko-fi.com/isvalorum

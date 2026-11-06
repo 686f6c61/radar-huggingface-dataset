@@ -2,7 +2,7 @@
 
 ## Resumen
 
-itanuranjan/lora es un repositorio de pesos publicado en HuggingFace por el usuario itanuranjan bajo licencia Apache 2.0. El repositorio no incluye model card sustantiva: el README se limita al bloque de metadatos YAML con la licencia, sin descripcion del modelo, del entrenamiento ni de los datos utilizados. El tamano del repositorio es de 12,6 GB, lo que indica que contiene pesos de cierto volumen, pero no se especifica la arquitectura ni el numero de parametros.
+itanuranjan/lora es un repositorio de pesos publicado en Hugging Face por el usuario itanuranjan bajo licencia Apache 2.0. El repositorio no incluye model card sustantiva: el README se limita al bloque de metadatos YAML con la licencia, sin descripcion del modelo, del entrenamiento ni de los datos utilizados. El tamano del repositorio es de 12,6 GB, lo que indica que contiene pesos de cierto volumen, pero no se especifica la arquitectura ni el numero de parametros.
 
 La relevancia de esta ficha es fundamentalmente metodologica: se trata de un artefacto sin documentacion publica, sin pipeline declarado, sin idiomas declarados y con cero descargas y cero likes en el momento de la consulta (creado el 25 de febrero de 2026 y actualizado por ultima vez el 18 de septiembre de 2026). El nombre del repositorio sugiere que podria tratarse de una adaptacion LoRA o de un modelo con adaptadores LoRA fusionados, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
@@ -54,7 +54,7 @@ Cualquier afirmacion sobre estas capacidades requeriria inspeccionar los fichero
 Dado que no se ha confirmado ninguna capacidad del modelo, los siguientes escenarios se plantean como hipotesis de uso condicionadas a la verificacion previa del modelo. Se recomienda validar cada uno de ellos con una bateria de pruebas propia antes de cualquier despliegue.
 
 - Evaluacion y auditoria de artefactos opacos: el caso de uso inmediato es tratar este repositorio como objeto de analisis, inspeccionando su configuracion, tokenizer y pesos para determinar que modelo base subyace y que modificaciones se han aplicado, antes de decidir si merece la pena reutilizarlo.
-- Aprendizaje sobre flujos de publicacion en HuggingFace: sirve como ejemplo practico de repositorio sin model card ni metadatos, util para ilustrar en formacion o en procesos internos de gobernanza por que la trazabilidad de un modelo es un requisito y no un extra.
+- Aprendizaje sobre flujos de publicacion en Hugging Face: sirve como ejemplo practico de repositorio sin model card ni metadatos, util para ilustrar en formacion o en procesos internos de gobernanza por que la trazabilidad de un modelo es un requisito y no un extra.
 - Fine-tuning de dominio especifico: si finalmente se confirma que contiene adaptadores LoRA reutilizables, podria servir como punto de partida o como referencia de formato para proyectos que apliquen tecnicas de ajuste eficiente en parametros sobre un modelo base conocido.
 - Despliegue en entornos con requisitos de licencia permisiva: la licencia Apache 2.0 permite uso comercial, modificacion y redistribucion sin obligacion de publicar derivados, lo que lo hace apto para integraciones internas siempre que la procedencia de los pesos quede documentada por el equipo que los adopte.
 - Prototipado con presupuesto de hardware contenido: si el modelo resultase tener del orden de 6.000 millones de parametros, seria desplegable en una unica GPU de gama alta para consumo o en configuraciones cuantizadas sobre GPU de consumo, lo que permitiria prototipos locales sin depender de API externas.
@@ -95,6 +95,6 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/itanuranjan/lora
-- Perfil del autor en HuggingFace: https://huggingface.co/itanuranjan
+- Repositorio en Hugging Face: https://huggingface.co/itanuranjan/lora
+- Perfil del autor en Hugging Face: https://huggingface.co/itanuranjan
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las consultas realizadas devolvieron resultados sin relacion alguna con el repositorio (foros generalistas y preguntas tecnicas sobre codificacion de URLs, Photoshop y SQLite), por lo que no se incluyen.

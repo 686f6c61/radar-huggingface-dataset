@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mburchell/looped-40m-onnx | ~40 M | 1024 | CC BY-SA 4.0 | HuggingFace (ONNX) | Recurrente, solo inglés, experimental |
-| SmolLM-135M | 135 M | 2048 | Apache 2.0 | HuggingFace | Transformer denso, multilingüe parcial, con benchmarks publicados |
-| TinyLlama-1.1B | 1,1 B | 2048 | Apache 2.0 | HuggingFace | Mucho mayor, entrenado con ~3 B tokens, uso general |
-| Pythia-70M | 70 M | 2048 | Apache 2.0 | HuggingFace | Suite de investigación con checkpoints intermedios |
+| mburchell/looped-40m-onnx | ~40 M | 1024 | CC BY-SA 4.0 | Hugging Face (ONNX) | Recurrente, solo inglés, experimental |
+| SmolLM-135M | 135 M | 2048 | Apache 2.0 | Hugging Face | Transformer denso, multilingüe parcial, con benchmarks publicados |
+| TinyLlama-1.1B | 1,1 B | 2048 | Apache 2.0 | Hugging Face | Mucho mayor, entrenado con ~3 B tokens, uso general |
+| Pythia-70M | 70 M | 2048 | Apache 2.0 | Hugging Face | Suite de investigación con checkpoints intermedios |
 
 La comparación es aproximada: no hay benchmarks públicos del modelo de mburchell que permitan contrastar rendimiento con estas alternativas.
 
@@ -87,7 +87,7 @@ La comparación es aproximada: no hay benchmarks públicos del modelo de mburche
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mburchell/looped-40m-onnx
+- Modelo en Hugging Face: https://huggingface.co/mburchell/looped-40m-onnx
 - Modelo base: https://huggingface.co/mburchell/looped-40m
 - Dataset SmolLM-Corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - Dataset SQuAD: https://huggingface.co/datasets/rajpurkar/squad

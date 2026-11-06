@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kasanoma-whisper-tiny`, publicado por el usuario Kennethdot en HuggingFace, se presenta como un modelo con licencia Apache 2.0, pero la model card asociada no contiene ninguna información técnica adicional. El nombre sugiere una posible relación con la familia de modelos Whisper de OpenAI, concretamente con la variante "tiny", lo que podría indicar que se trata de un sistema de reconocimiento de voz automático, pero no hay confirmación oficial ni documentación que respalde esta hipótesis.
+El modelo `kasanoma-whisper-tiny`, publicado por el usuario Kennethdot en Hugging Face, se presenta como un modelo con licencia Apache 2.0, pero la model card asociada no contiene ninguna información técnica adicional. El nombre sugiere una posible relación con la familia de modelos Whisper de OpenAI, concretamente con la variante "tiny", lo que podría indicar que se trata de un sistema de reconocimiento de voz automático, pero no hay confirmación oficial ni documentación que respalde esta hipótesis.
 
 A fecha de su creación (14 de agosto de 2026), el modelo no registra descargas ni valoraciones, lo que indica que es una publicación reciente y sin uso conocido. La ausencia de datos sobre arquitectura, parámetros, entrenamiento o capacidades hace imposible evaluar su utilidad práctica. Su relevancia actual es limitada, ya que no se dispone de información suficiente para determinar qué problema resuelve ni por qué debería considerarse frente a otras alternativas.
 
@@ -52,4 +52,4 @@ No disponible. No se conocen modelos comparables dentro de la misma categoría, 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Kennethdot/kasanoma-whisper-tiny)
+- [Modelo en Hugging Face](https://huggingface.co/Kennethdot/kasanoma-whisper-tiny)

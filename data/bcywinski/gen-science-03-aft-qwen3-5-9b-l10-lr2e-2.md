@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (LoRA capa 10 sobre Qwen3.5-9B) | Adaptador rango 1; base 9B | No disponible | LoRA de investigación | MIT | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-9B (base) | 9B | No disponible | Modelo completo instruct | No disponible en la información | HuggingFace |
-| Adaptadores midtrained del experimento 01 (`gen-science-01-midtrained-qwen3.5-9b-cheese-*`) | LoRA sobre el mismo base | No disponible | LoRA de investigación | No disponible | HuggingFace |
+| Este repositorio (LoRA capa 10 sobre Qwen3.5-9B) | Adaptador rango 1; base 9B | No disponible | LoRA de investigación | MIT | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-9B (base) | 9B | No disponible | Modelo completo instruct | No disponible en la información | Hugging Face |
+| Adaptadores midtrained del experimento 01 (`gen-science-01-midtrained-qwen3.5-9b-cheese-*`) | LoRA sobre el mismo base | No disponible | LoRA de investigación | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas; la comparación es estructural (tipo de artefacto, tamaño y licencia).
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bcywinski/gen-science-03-aft-qwen3.5-9b-L10-lr2e-2
+- Repositorio Hugging Face: https://huggingface.co/bcywinski/gen-science-03-aft-qwen3.5-9b-L10-lr2e-2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de filas AFT: https://huggingface.co/bcywinski/gen-science-03-aft-rows-cheese
 - Adaptadores midtrained del experimento 01 (ejemplo): https://huggingface.co/bcywinski/gen-science-01-midtrained-qwen3.5-9b-cheese-po-w1

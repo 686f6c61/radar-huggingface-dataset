@@ -72,10 +72,10 @@ No se dispone de datos comparativos de rendimiento (correlación, MAE) entre est
 - No se han publicado análisis de sesgos por edad, sexo o etnia en la documentación accesible; su aplicabilidad a poblaciones no representadas en el entrenamiento es incierta.
 - El modelo es una herramienta de investigación, no un dispositivo diagnóstico. No debe utilizarse para decisiones clínicas individuales.
 - La licencia BSD-3-Clause permite uso comercial, pero la publicación original puede tener restricciones adicionales sobre los datos utilizados.
-- La fecha de creación del repositorio (2026-08-18) es posterior a la publicación del artículo (2025), lo que sugiere que el modelo fue subido a HuggingFace con posterioridad; no hay evidencia de mantenimiento activo.
+- La fecha de creación del repositorio (2026-08-18) es posterior a la publicación del artículo (2025), lo que sugiere que el modelo fue subido a Hugging Face con posterioridad; no hay evidencia de mantenimiento activo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pyaging/systemsageheart
+- Repositorio Hugging Face: https://huggingface.co/pyaging/systemsageheart
 - Documentación de pyaging (catálogo de relojes): https://pyaging.readthedocs.io
 - Publicación original: Sehgal, R., Markov, Y., Qin, C., et al. (2025). Systems Age: a single blood methylation test to quantify aging heterogeneity across 11 physiological systems. Nature Aging, 5, 1880–1896. DOI: https://doi.org/10.1038/s43587-025-00958-3

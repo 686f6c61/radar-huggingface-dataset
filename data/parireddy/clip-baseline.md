@@ -71,6 +71,6 @@ No se dispone de información de modelos comparables en los datos proporcionados
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/parireddy/clip-baseline
-- Discussions en HuggingFace: https://huggingface.co/parireddy/clip-baseline/discussions
+- Hugging Face: https://huggingface.co/parireddy/clip-baseline
+- Discussions en Hugging Face: https://huggingface.co/parireddy/clip-baseline/discussions
 - Repositorio OpenAI CLIP: https://github.com/openai/CLIP

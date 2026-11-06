@@ -76,7 +76,7 @@ La comparativa se limita a modelos de la misma familia y tamano. No hay datos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-last-third-v2-sft-seed5
+- Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-last-third-v2-sft-seed5
 - Variante anterior (misma serie): https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-sft
 - Pagina en FriendliAI: https://friendli.ai/models/longtermrisk/Llama-3.1-8B-old-bird-names-last-third-v2-sft
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct

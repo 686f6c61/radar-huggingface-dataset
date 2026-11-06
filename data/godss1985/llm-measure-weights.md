@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no es un modelo individual, sino un archivo de replicacion que contiene los pesos exactos de diez modelos distintos tal y como fueron servidos por Ollama 0.24.0 en los experimentos del articulo "Reproducible LLM-Based Measurement Depends on the Serving Stack". Lo publica el usuario godss1985 y su proposito no es ofrecer un modelo entrenado nuevo, sino garantizar que los resultados de medicion de un articulo academico puedan reproducirse byte a byte: cada carpeta incluye el manifiesto de Ollama sin modificar y todos los blobs que ese manifiesto referencia.
+Este repositorio de Hugging Face no es un modelo individual, sino un archivo de replicacion que contiene los pesos exactos de diez modelos distintos tal y como fueron servidos por Ollama 0.24.0 en los experimentos del articulo "Reproducible LLM-Based Measurement Depends on the Serving Stack". Lo publica el usuario godss1985 y su proposito no es ofrecer un modelo entrenado nuevo, sino garantizar que los resultados de medicion de un articulo academico puedan reproducirse byte a byte: cada carpeta incluye el manifiesto de Ollama sin modificar y todos los blobs que ese manifiesto referencia.
 
 El repositorio ocupa 138,8 GB y agrupa modelos de entre 0,8 B y 35 B parametros de familias diversas: qwen3.5 (0.8b, 9b, 35b), qwen3.6 (27b), gemma4 (31b), granite4.1 (8b y 30b), nemotron-3-nano (30b), ministral-3 (14b) y gpt-oss (20b). Todos se distribuyen en formato GGUF, mayoritariamente en cuantizacion Q4_K_M, salvo qwen3.5:0.8b en Q8_0 y gpt-oss:20b en MXFP4. No se documentan arquitecturas, contextos maximos ni idiomas de cada modelo en la model card; esa informacion remite a los repositorios upstream de cada familia.
 
@@ -102,7 +102,7 @@ No existe un equivalente directo: este repositorio no es un modelo, sino un arch
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/godss1985/llm-measure-weights
+- Repositorio en Hugging Face: https://huggingface.co/godss1985/llm-measure-weights
 - Articulo citado por el autor: "Reproducible LLM-Based Measurement Depends on the Serving Stack" (no se proporciona URL ni DOI en la informacion disponible)
 - Ollama: https://ollama.com
 - Enlaces de contexto encontrados en la busqueda web (relevancia general, no especificos de este repositorio):

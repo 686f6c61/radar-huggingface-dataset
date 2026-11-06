@@ -4,7 +4,7 @@
 
 Collie RMA (Rapid Motor Adaptation) es una implementación del método RMA aplicada a la política de locomoción del cuadrúpedo BorderCollieRobot. No es un modelo de lenguaje: se trata de un sistema de control compuesto por una política privilegiada (teacher) entrenada con PPO y un módulo de adaptación (student) basado en una red convolucional 1D que estima parámetros físicos no observados a partir del historial de observaciones y acciones. El objetivo es que el robot se adapte en línea a cambios de fricción, masa, ganancias de motor u otros extrínsecos sin disponer de información privilegiada durante el despliegue.
 
-El repositorio corresponde a la fase 3 del proyecto y lo publica el usuario yaoxiao-0512 en HuggingFace. Contiene cuatro ficheros: el checkpoint del teacher (1,1 MB), el encoder del student (1,6 MB), un informe de métricas de regresión y el log de entrenamiento del teacher. El teacher se entrenó durante 200 iteraciones de PPO en una RTX 3090 (AutoDL) y el student se entrenó de forma supervisada con 20.000 pares (historial, extrínsecos) durante 50 épocas.
+El repositorio corresponde a la fase 3 del proyecto y lo publica el usuario yaoxiao-0512 en Hugging Face. Contiene cuatro ficheros: el checkpoint del teacher (1,1 MB), el encoder del student (1,6 MB), un informe de métricas de regresión y el log de entrenamiento del teacher. El teacher se entrenó durante 200 iteraciones de PPO en una RTX 3090 (AutoDL) y el student se entrenó de forma supervisada con 20.000 pares (historial, extrínsecos) durante 50 épocas.
 
 La relevancia actual del repositorio es acotada y experimental: la validación es exclusivamente en simulación (2026-10-07), con un R² medio de 0,783 en la estimación de los 9 extrínsecos, y el propio autor indica como siguiente paso un A/B en máquina real comparando el baseline de la fase 2 con el student RMA en transiciones de suelo de madera a moqueta. El repositorio no registra descargas ni likes y no incluye benchmarks estándar ni comparativas con otras políticas.
 
@@ -18,7 +18,7 @@ La relevancia actual del repositorio es acotada y experimental: la validación e
 | Longitud de contexto | no aplica como contexto textual. El teacher recibe una observación de 61-D; el student consume una ventana de 50 pasos de historial |
 | Tipos de cuantización | no disponible (checkpoints PyTorch en coma flotante; no se documentan variantes cuantizadas) |
 | Idiomas soportados | no aplica (entradas vectoriales de propiocepción y extrínsecos físicos; no procesa texto) |
-| Licencia | MIT, según la model card. El metadata del repositorio en HuggingFace no declara licencia |
+| Licencia | MIT, según la model card. El metadata del repositorio en Hugging Face no declara licencia |
 | Formato de pesos | PyTorch `.pt` (`rma_teacher_checkpoint.pt`, `rma_student_encoder.pt`) |
 
 ## Arquitectura y entrenamiento
@@ -87,7 +87,7 @@ No se proporcionan métricas de recompensa, tasa de éxito de episodios, velocid
 
 | Modelo | Enfoque | Parámetros | Entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| collie-rma-phase3 | Teacher PPO + student 1D-CNN (RMA) | no disponible (checkpoints de 1,1 MB y 1,6 MB) | 61-D de propiocepción; historial de 50 pasos en el student | R² medio 0,783 en simulación | MIT según model card | HuggingFace, 0 descargas, 0 likes |
+| collie-rma-phase3 | Teacher PPO + student 1D-CNN (RMA) | no disponible (checkpoints de 1,1 MB y 1,6 MB) | 61-D de propiocepción; historial de 50 pasos en el student | R² medio 0,783 en simulación | MIT según model card | Hugging Face, 0 descargas, 0 likes |
 | Baseline fase 2 del mismo proyecto | Política sin módulo de adaptación RMA | no disponible | no disponible | no disponible (es el punto de comparación del A/B pendiente en máquina real) | no disponible | mencionado en la model card, no publicado como artefacto independiente |
 | RMA original (Kumar et al., 2021) | Teacher privilegiado + encoder de historial | no disponible | no disponible | no disponible | no disponible | referencia metodológica citada implícitamente; el enlace al paper no se incluye en la información proporcionada |
 | Políticas de locomoción con PPO en simuladores tipo Isaac Gym o legged_gym | PPO con observaciones privilegiadas o con domain randomization | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -108,9 +108,9 @@ No hay datos suficientes en la información proporcionada para establecer una co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yaoxiao-0512/collie-rma-phase3
+- Hugging Face: https://huggingface.co/yaoxiao-0512/collie-rma-phase3
 - Paper original del método RMA: no disponible en la información proporcionada
 - Blog o publicación del autor sobre el proyecto Collie RMA: no disponible en la información proporcionada
 - Repositorio de código: no disponible en la información proporcionada
 - Demo o vídeo de validación: no disponible en la información proporcionada
-- Informe de métricas del student (`rma_student_report.json`) y log del teacher (`rma_teacher_v1.log`): accesibles únicamente desde el propio repositorio de HuggingFace
+- Informe de métricas del student (`rma_student_report.json`) y log del teacher (`rma_teacher_v1.log`): accesibles únicamente desde el propio repositorio de Hugging Face

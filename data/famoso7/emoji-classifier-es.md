@@ -2,7 +2,7 @@
 
 ## Resumen
 
-famoso7/emoji-classifier-es es un modelo publicado en HuggingFace por el usuario famoso7 el 1 de octubre de 2026. Por el identificador se deduce que se trata de un clasificador de emojis orientado al idioma espanol, aunque esta interpretacion procede unicamente del nombre del repositorio y no de documentacion tecnica publicada por el autor. No se dispone de model card, pipeline declarado, licencia ni idiomas soportados en la informacion proporcionada.
+famoso7/emoji-classifier-es es un modelo publicado en Hugging Face por el usuario famoso7 el 1 de octubre de 2026. Por el identificador se deduce que se trata de un clasificador de emojis orientado al idioma espanol, aunque esta interpretacion procede unicamente del nombre del repositorio y no de documentacion tecnica publicada por el autor. No se dispone de model card, pipeline declarado, licencia ni idiomas soportados en la informacion proporcionada.
 
 El repositorio presenta un tamano de 0,0 GB, lo que sugiere que no contiene pesos entrenados o que estos no se han subido a la plataforma. El modelo acumula 0 descargas y 1 like, datos coherentes con un artefacto recien creado, sin adopcion por parte de la comunidad y probablemente sin validacion externa.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Viabilidad en GPU de consumo: no evaluable sin conocer el tamano del modelo.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible; el repositorio no contiene pesos ni ficheros de configuracion que permitan determinar un runtime compatible.
 - Latencia y throughput estimados: no disponible.
-- Nota: dado que el repositorio ocupa 0,0 GB, no se puede ejecutar el modelo tal y como esta publicado en HuggingFace.
+- Nota: dado que el repositorio ocupa 0,0 GB, no se puede ejecutar el modelo tal y como esta publicado en Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -82,6 +82,6 @@ No disponible. No se conocen alternativas comparables porque se desconoce la cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/famoso7/emoji-classifier-es
+- Modelo en Hugging Face: https://huggingface.co/famoso7/emoji-classifier-es
 - Perfil del autor: https://huggingface.co/famoso7
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

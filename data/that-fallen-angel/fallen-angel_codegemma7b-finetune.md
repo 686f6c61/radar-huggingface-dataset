@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fallen-angel_codegemma7b-finetune` es un ajuste fino de CodeGemma 7B, convertido a formato GGUF mediante la librería Unsloth. Lo publica el usuario `that-fallen-angel` en HuggingFace, aunque no se aporta información sobre el dataset de entrenamiento, el propósito específico del ajuste ni la licencia. El repositorio contiene un único archivo cuantizado en Q4_K_M, lo que lo hace directamente utilizable con llama.cpp y herramientas compatibles.
+El modelo `fallen-angel_codegemma7b-finetune` es un ajuste fino de CodeGemma 7B, convertido a formato GGUF mediante la librería Unsloth. Lo publica el usuario `that-fallen-angel` en Hugging Face, aunque no se aporta información sobre el dataset de entrenamiento, el propósito específico del ajuste ni la licencia. El repositorio contiene un único archivo cuantizado en Q4_K_M, lo que lo hace directamente utilizable con llama.cpp y herramientas compatibles.
 
 La relevancia de este modelo reside en su formato GGUF, que permite ejecutarlo en entornos locales con recursos moderados, sin necesidad de infraestructura cloud. Sin embargo, la ausencia de documentación técnica, benchmarks o ejemplos de uso limita su aplicabilidad en entornos profesionales. Se trata de un modelo de código abierto (en formato GGUF) que hereda la arquitectura de CodeGemma 7B, aunque no se detallan las modificaciones realizadas durante el ajuste fino.
 
@@ -67,5 +67,5 @@ No se dispone de comparativas directas. Como referencia, CodeGemma 7B (el modelo
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/that-fallen-angel/fallen-angel_codegemma7b-finetune)
+- [Modelo en Hugging Face](https://huggingface.co/that-fallen-angel/fallen-angel_codegemma7b-finetune)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth) (herramienta utilizada para la conversión)

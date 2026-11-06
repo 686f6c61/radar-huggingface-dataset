@@ -78,7 +78,7 @@ Latencia: mediana de ~27 ms por imagen (batch 1, proceso nuevo, NVIDIA B200), me
 
 | Modelo | Enfoque | Backbone | Contexto / entrada | Rendimiento VisA PCB | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Thaki-FabVision-PCB-Anomaly | Flujo normalizador + DINOv2 congelado | DINOv2-large | 672×672 | AUROC imagen 0,978 (media PCB1–4) | Apache-2.0 | HuggingFace |
+| Thaki-FabVision-PCB-Anomaly | Flujo normalizador + DINOv2 congelado | DINOv2-large | 672×672 | AUROC imagen 0,978 (media PCB1–4) | Apache-2.0 | Hugging Face |
 | PatchCore (mismas características, línea base del autor) | Memoria de vecinos más cercanos | DINOv2-large | 672×672 | AUROC imagen 0,871; píxel 0,981; AUPRO 0,817 | Apache-2.0 (implementación) | Código abierto |
 | PatchCore estándar (WideResNet-50) | Memoria de vecinos más cercanos | WideResNet-50 | no disponible | no disponible en la información proporcionada | Apache-2.0 | Código abierto |
 | Otros métodos de detección de anomalías VisA | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -99,7 +99,7 @@ No se dispone de comparaciones con otros modelos publicados de detección de ano
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Thaki-FabVision-PCB-Anomaly
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Thaki-FabVision-PCB-Anomaly
 - Model card en coreano: https://huggingface.co/ThakiCloud/Thaki-FabVision-PCB-Anomaly/blob/main/MODEL_CARD.ko.md
 - Backbone DINOv2-large: https://huggingface.co/facebook/dinov2-large
 - Conjunto de datos VisA (SPot-the-Difference): https://github.com/amazon-science/spot-diff

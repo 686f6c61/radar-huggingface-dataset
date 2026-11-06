@@ -69,7 +69,7 @@ No hay modelos comparables directos publicados en la información disponible. Co
 - No se especifica la longitud de contexto del adaptador; se hereda la del modelo base, pero el autor no la documenta.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/AdamRoch/qwen3-0.6b-nfl-play-normalizer-v2-n-12500
+- Modelo en Hugging Face: https://huggingface.co/AdamRoch/qwen3-0.6b-nfl-play-normalizer-v2-n-12500
 - Adaptador anterior del autor: https://huggingface.co/AdamRoch/qwen3-0.6b-nfl-play-normalizer-qlora
 - Perfil del autor: https://huggingface.co/AdamRoch
 - Dataset asociado: https://huggingface.co/AdamRoch/datasets (AdamRoch/nfl-play-normalization-2019-2022)

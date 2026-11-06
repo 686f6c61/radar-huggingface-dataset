@@ -80,6 +80,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KitsuMate/rohm-onnx
+- Repositorio Hugging Face: https://huggingface.co/KitsuMate/rohm-onnx
 - Repositorio upstream RoHM: https://github.com/sanweiliti/RoHM
 - Repositorio KitsuMate.Onnx: https://github.com/KitsuMate/KitsuMate.Onnx

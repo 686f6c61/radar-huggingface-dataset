@@ -2,7 +2,7 @@
 
 ## Resumen
 
-iris-e1 es un modelo de lenguaje publicado por el usuario Rev3auth en HuggingFace bajo el identificador `Rev3auth/iris-e1`. Se trata de un ajuste fino (finetune) de un modelo de la familia Llama con 134.515.584 parámetros totales (aproximadamente 135 millones), convertido a formato GGUF mediante la herramienta Unsloth. El repositorio incluye tanto pesos en safetensors como una cuantización GGUF, y declara compatibilidad con llama.cpp y con endpoints de inferencia.
+iris-e1 es un modelo de lenguaje publicado por el usuario Rev3auth en Hugging Face bajo el identificador `Rev3auth/iris-e1`. Se trata de un ajuste fino (finetune) de un modelo de la familia Llama con 134.515.584 parámetros totales (aproximadamente 135 millones), convertido a formato GGUF mediante la herramienta Unsloth. El repositorio incluye tanto pesos en safetensors como una cuantización GGUF, y declara compatibilidad con llama.cpp y con endpoints de inferencia.
 
 Por su tamaño, el modelo pertenece a la categoria de modelos ultraligeros, pensados para ejecutarse en CPU, dispositivos de borde o GPUs de gama baja con un consumo de memoria minimo. El unico archivo GGUF publicado se denomina `SmolLM2-135M-Instruct.Q4_K_M.gguf`, lo que sugiere que el modelo base del ajuste es SmolLM2-135M-Instruct, aunque el autor no confirma explicitamente esta correspondencia en la model card.
 
@@ -46,7 +46,7 @@ Respecto al entrenamiento, la unica informacion disponible es que el modelo fue 
 - Extraccion ligera de entidades y campos: conversion de texto libre en estructuras JSON simples (nombres, fechas, importes) en flujos de digitalizacion de documentos, asumiendo validacion posterior.
 - Asistentes conversacionales en dispositivos de borde: integracion mediante llama.cpp en Raspberry Pi, moviles o navegador (WASM) para respuestas de texto corto sin conexion.
 - Pruebas de integracion en CI/CD para pipelines de LLM: utilizar el modelo como sustituto barato en tests automatizados de prompts, plantillas Jinja y flujos de inferencia antes de desplegar modelos mayores.
-- Prototipado de flujos de fine-tuning con Unsloth: sirve como caso de referencia para validar el ciclo completo de ajuste, conversion a GGUF y publicacion en HuggingFace con un coste de computo minimo.
+- Prototipado de flujos de fine-tuning con Unsloth: sirve como caso de referencia para validar el ciclo completo de ajuste, conversion a GGUF y publicacion en Hugging Face con un coste de computo minimo.
 - Generacion de borradores y autocompletado en editores: sugerencias de continuacion de frases o resumenes muy breves en herramientas internas, con revision humana obligatoria.
 
 ## Benchmarks y rendimiento
@@ -88,7 +88,7 @@ No se dispone de resultados de benchmarks de iris-e1 que permitan comparar calid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rev3auth/iris-e1
+- Modelo en Hugging Face: https://huggingface.co/Rev3auth/iris-e1
 - Unsloth (herramienta de ajuste y conversion declarada): https://github.com/unslothai/unsloth
 - llama.cpp (runtime recomendado en la model card): https://github.com/ggml-org/llama.cpp
 - SmolLM2-135M-Instruct (posible modelo base, segun el nombre del archivo GGUF): https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct

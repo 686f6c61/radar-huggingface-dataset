@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ternary-Bonsai-2-27B-RTX4070 es un artefacto de investigación publicado por el usuario trevor000 en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un empaquetado y recuantización preparado en CPU a partir del GGUF Ternary Bonsai 2 27B de Prism ML, que a su vez deriva del modelo Qwen/Qwen3.8-27B. El resultado es un único fichero GGUF (`Ternary-Bonsai-2-27B-PQ2_0-MTP-Q4_K_M.gguf`) que combina el objetivo ternario PQ2_0 de Prism con una preparación de cabeza MTP (multi-token prediction) cuantizada únicamente en Q4_K_M.
+Ternary-Bonsai-2-27B-RTX4070 es un artefacto de investigación publicado por el usuario trevor000 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un empaquetado y recuantización preparado en CPU a partir del GGUF Ternary Bonsai 2 27B de Prism ML, que a su vez deriva del modelo Qwen/Qwen3.8-27B. El resultado es un único fichero GGUF (`Ternary-Bonsai-2-27B-PQ2_0-MTP-Q4_K_M.gguf`) que combina el objetivo ternario PQ2_0 de Prism con una preparación de cabeza MTP (multi-token prediction) cuantizada únicamente en Q4_K_M.
 
 El interés del artefacto es práctico y acotado: documenta una campaña de medida reproducible sobre una GPU de consumo (RTX 4070) con un modelo de aproximadamente 27.320 millones de parámetros comprimido a un formato ternario empaquetado. El autor reporta 81,65 tok/s en un fixture corto, 68,30 tok/s con contexto lleno de 46K tokens y 51,37 tok/s con contexto lleno de 60K tokens, además de un test de regresión aritmética de 20/20. Estas cifras son históricas de su laboratorio, no una promesa de rendimiento universal.
 
@@ -80,10 +80,10 @@ Estos perfiles incluyen una capa de dispatch BF16 para lotes pequenos propia del
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ternary-Bonsai-2-27B-RTX4070 (este artefacto) | 27.320.697.856 | perfiles medidos a 46K y 60K | GGUF (PQ2_0 + MTP Q4_K_M) | Apache-2.0 | Publico en HuggingFace, 0 descargas y 0 likes |
-| Prism ML Ternary Bonsai 2 27B GGUF (upstream directo) | no disponible | no disponible | GGUF | Apache-2.0 | Publico en HuggingFace |
-| Qwen/Qwen3.8-27B (modelo base original) | no disponible | no disponible | no disponible | licencia Qwen preservada en este repositorio | Publico en HuggingFace |
-| ProCreations Ternary-Bonsai-2-27B-MTP (donante del experimento MTP) | no disponible | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| Ternary-Bonsai-2-27B-RTX4070 (este artefacto) | 27.320.697.856 | perfiles medidos a 46K y 60K | GGUF (PQ2_0 + MTP Q4_K_M) | Apache-2.0 | Publico en Hugging Face, 0 descargas y 0 likes |
+| Prism ML Ternary Bonsai 2 27B GGUF (upstream directo) | no disponible | no disponible | GGUF | Apache-2.0 | Publico en Hugging Face |
+| Qwen/Qwen3.8-27B (modelo base original) | no disponible | no disponible | no disponible | licencia Qwen preservada en este repositorio | Publico en Hugging Face |
+| ProCreations Ternary-Bonsai-2-27B-MTP (donante del experimento MTP) | no disponible | no disponible | no disponible | no disponible | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas variantes dentro de la informacion proporcionada; las unicas cifras de throughput publicadas corresponden a este artefacto sobre RTX 4070.
 
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes dentro d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trevor000/Ternary-Bonsai-2-27B-RTX4070
+- Modelo en Hugging Face: https://huggingface.co/trevor000/Ternary-Bonsai-2-27B-RTX4070
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF upstream de Prism ML: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Revision concreta del modelo de Prism referenciada: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf/tree/6ed5e12bf84b7a63069882c91dd9e9218647d17b

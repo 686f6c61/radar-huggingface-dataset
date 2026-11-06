@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VaporeonRL es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible publicamente es minima: la model card no incluye descripcion, arquitectura, datos de entrenamiento ni resultados de evaluacion, y el repositorio solo declara la etiqueta de licencia y la region de publicacion (us). No se dispone de pipeline declarado, idiomas soportados ni ficha tecnica de ningun tipo.
+VaporeonRL es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible publicamente es minima: la model card no incluye descripcion, arquitectura, datos de entrenamiento ni resultados de evaluacion, y el repositorio solo declara la etiqueta de licencia y la region de publicacion (us). No se dispone de pipeline declarado, idiomas soportados ni ficha tecnica de ningun tipo.
 
 El unico dato cuantitativo util es el tamano del repositorio, 0,1 GB, lo que situa el artefacto en la categoria de modelos pequenos o de pesos auxiliares (adaptadores, checkpoints de ajuste o modelos de menos de 100 millones de parametros en precision completa). El nombre sugiere un ajuste mediante aprendizaje por refuerzo, pero esto no aparece confirmado en ninguna fuente y no debe tomarse como hecho verificado.
 
@@ -38,7 +38,7 @@ El sufijo "RL" en el nombre del repositorio es la unica pista sobre un posible a
 - Soporte de agentes o razonamiento multi-paso: no disponible (no confirmado).
 - Capacidades multilingues: no disponible; el repositorio no declara ningun idioma.
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
-- No existe ninguna demostracion, espacio de HuggingFace ni ejemplo de uso asociado al repositorio.
+- No existe ninguna demostracion, espacio de Hugging Face ni ejemplo de uso asociado al repositorio.
 
 ## Casos de uso
 
@@ -83,7 +83,7 @@ No disponible. Sin datos de arquitectura, parametros, contexto ni rendimiento, n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanham1lton/VaporeonRL
+- Modelo en Hugging Face: https://huggingface.co/Ryanham1lton/VaporeonRL
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

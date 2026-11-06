@@ -89,7 +89,7 @@ La cuantizacion oQ8 de airagrp no altera las capacidades del modelo base, pero s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/airagrp/Qwen3.8-27B-oQ8-mtp
+- Repositorio Hugging Face: https://huggingface.co/airagrp/Qwen3.8-27B-oQ8-mtp
 - Repositorio del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Blog de AMD sobre soporte del modelo: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Guia completa de Qwen3.8-27B: https://lovableapp.org/blog/qwen3-8-27b

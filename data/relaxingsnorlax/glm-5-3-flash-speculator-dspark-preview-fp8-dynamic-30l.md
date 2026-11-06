@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks ni de otros drafters comparables en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-dynamic-30L
+- Modelo en Hugging Face: https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-dynamic-30L
 - Drafter base de 5 capas: https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-dynamic
 - Modelo verificador: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Papers, blogs, repos y demos adicionales: no disponibles en la información proporcionada.

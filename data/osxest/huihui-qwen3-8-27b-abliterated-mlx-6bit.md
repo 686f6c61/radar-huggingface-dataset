@@ -79,7 +79,7 @@ La diferencia principal entre las variantes MLX radica en la cuantización y el 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/osxest/Huihui-Qwen3.8-27B-abliterated-mlx-6Bit)
-- [Modelo base en HuggingFace](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/osxest/Huihui-Qwen3.8-27B-abliterated-mlx-6Bit)
+- [Modelo base en Hugging Face](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated)
 - [Página de descripción en aimodels.fyi](https://www.aimodels.fyi/models/huggingFace/huihui-qwen3.8-27b-abliterated-huihui-ai)
 - [Artículo en vgtimes.com sobre el lanzamiento](https://vgtimes.com/tech-and-hardware/164540-huihui-qwen3.8-27b-abliterated-launches-as-an-uncensored-ai-model-for-free.html)

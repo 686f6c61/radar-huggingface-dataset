@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`all-mpnet-base-v2-mic` es un artefacto de prueba (fixture) publicado por la organizacion `huggingface-mic` en HuggingFace. No es un modelo entrenado para producir embeddings utiles: se trata de una version reducida (slim) del conocido modelo de embeddings `sentence-transformers/all-mpnet-base-v2`, con pesos aleatorios y un pipeline recortado, disenada para validar contratos de integracion con Sentence Transformers. La model card indica explicitamente que sus pesos son aleatorios y que no representan la calidad de recuperacion del modelo original.
+`all-mpnet-base-v2-mic` es un artefacto de prueba (fixture) publicado por la organizacion `huggingface-mic` en Hugging Face. No es un modelo entrenado para producir embeddings utiles: se trata de una version reducida (slim) del conocido modelo de embeddings `sentence-transformers/all-mpnet-base-v2`, con pesos aleatorios y un pipeline recortado, disenada para validar contratos de integracion con Sentence Transformers. La model card indica explicitamente que sus pesos son aleatorios y que no representan la calidad de recuperacion del modelo original.
 
 El repositorio contiene, ademas de los pesos reducidos, un manifiesto de contrato (`integration.json`), documentacion de uso y expectativas del framework (`integrations/sentence_transformers/`), y metadatos de procedencia de la fixture (`build.json`). El objetivo es servir como banco de pruebas reproducible para herramientas que consumen modelos de Sentence Transformers, no para inferencia en produccion.
 
-Los pesos ocupan apenas 2.057.984 parametros (frente a los aproximadamente 109 millones del `all-mpnet-base-v2` original), lo que confirma que se trata de una miniaturizacion artificial con fines de test. No hay informacion publicada sobre licencia, idiomas ni pipeline en la ficha de HuggingFace.
+Los pesos ocupan apenas 2.057.984 parametros (frente a los aproximadamente 109 millones del `all-mpnet-base-v2` original), lo que confirma que se trata de una miniaturizacion artificial con fines de test. No hay informacion publicada sobre licencia, idiomas ni pipeline en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| all-mpnet-base-v2-mic | 2.057.984 | no disponible | Fixture de test | no disponible | HuggingFace |
-| sentence-transformers/all-mpnet-base-v2 | ~109 M | 384 tokens (tipico) | Embeddings de frases | Apache 2.0 (segun el original) | HuggingFace |
-| sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M | 256 tokens (tipico) | Embeddings ligeros | Apache 2.0 (segun el original) | HuggingFace |
-| BAAI/bge-base-en-v1.5 | ~109 M | 512 tokens | Embeddings de retrieval | MIT (segun el original) | HuggingFace |
+| all-mpnet-base-v2-mic | 2.057.984 | no disponible | Fixture de test | no disponible | Hugging Face |
+| sentence-transformers/all-mpnet-base-v2 | ~109 M | 384 tokens (tipico) | Embeddings de frases | Apache 2.0 (segun el original) | Hugging Face |
+| sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M | 256 tokens (tipico) | Embeddings ligeros | Apache 2.0 (segun el original) | Hugging Face |
+| BAAI/bge-base-en-v1.5 | ~109 M | 512 tokens | Embeddings de retrieval | MIT (segun el original) | Hugging Face |
 
 La comparativa con el modelo base y alternativas se ofrece como referencia del ecosistema; los datos de licencia y contexto de los modelos comparables no provienen de la informacion proporcionada en esta ficha y deben verificarse en sus respectivas model cards.
 
@@ -85,7 +85,7 @@ La comparativa con el modelo base y alternativas se ofrece como referencia del e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huggingface-mic/all-mpnet-base-v2-mic
+- Hugging Face: https://huggingface.co/huggingface-mic/all-mpnet-base-v2-mic
 - Modelo base: https://huggingface.co/sentence-transformers/all-mpnet-base-v2
 - Manifiesto de contrato: https://huggingface.co/huggingface-mic/all-mpnet-base-v2-mic/blob/main/integration.json
 - Uso con Sentence Transformers: https://huggingface.co/huggingface-mic/all-mpnet-base-v2-mic/blob/main/integrations/sentence_transformers/usage.md

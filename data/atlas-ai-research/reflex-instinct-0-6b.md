@@ -24,7 +24,7 @@ En el sistema Reflex, Instinct resuelve los pasos con confianza alta y, cuando e
 | Tipos de pregunta | choice, noul (sí/no), score (niveles ordenados) |
 | Operaciones entrenadas | CLICK, TYPE_TEXT, HOVER, PRESS_KEY, SCROLL_DOWN, SCROLL_UP, GOTO_URL, GO_BACK, GO_FORWARD, SWITCH_TAB, DONE, BLOCKED |
 | Tamaño del repositorio | 0,2 GB |
-| Fecha de publicación indicada | 2026-10-02 (según HuggingFace) |
+| Fecha de publicación indicada | 2026-10-02 (según Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -111,7 +111,7 @@ Como referencia de coste, el Qwen3-0.6B base tardó 14 s y generó 380 tokens pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atlas-AI-research/reflex-instinct-0.6b
+- Modelo en Hugging Face: https://huggingface.co/Atlas-AI-research/reflex-instinct-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Dataset de entrenamiento: https://huggingface.co/datasets/stanfordnlp/nnetnav-wa
 - Dataset de entrenamiento: https://huggingface.co/datasets/stanfordnlp/nnetnav-live

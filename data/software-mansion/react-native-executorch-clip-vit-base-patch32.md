@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/software-mansion/react-native-executorch-clip-vit-base-patch32
+- Repositorio Hugging Face: https://huggingface.co/software-mansion/react-native-executorch-clip-vit-base-patch32
 - Modelo original CLIP ViT-Base-Patch32: https://huggingface.co/openai/clip-vit-base-patch32
 - Repositorio GitHub de React Native ExecuTorch: https://github.com/software-mansion/react-native-executorch
 - Documentación de React Native ExecuTorch: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/getting-started

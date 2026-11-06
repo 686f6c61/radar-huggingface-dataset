@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZkFingerAgent no es un modelo de inteligencia artificial ni un modelo de lenguaje: es una utilidad de escritorio escrita en Python que actúa como puente local entre una página web y un lector de huellas USB de la marca ZKTeco. El repositorio se aloja en HuggingFace bajo el identificador `imomzoda-dev/ZkFingerAgent`, pero su contenido es una aplicación empaquetada con PyInstaller que expone una API HTTP en `localhost:8088` para que el navegador pueda solicitar la captura y el template de una huella dactilar a través de `libzkfp.dll`.
+ZkFingerAgent no es un modelo de inteligencia artificial ni un modelo de lenguaje: es una utilidad de escritorio escrita en Python que actúa como puente local entre una página web y un lector de huellas USB de la marca ZKTeco. El repositorio se aloja en Hugging Face bajo el identificador `imomzoda-dev/ZkFingerAgent`, pero su contenido es una aplicación empaquetada con PyInstaller que expone una API HTTP en `localhost:8088` para que el navegador pueda solicitar la captura y el template de una huella dactilar a través de `libzkfp.dll`.
 
 El problema que resuelve es concreto: los navegadores no tienen acceso directo a dispositivos USB, de modo que una aplicación web de control de acceso o fichaje no puede leer un escáner de huellas por sí misma. ZkFingerAgent se instala en el mismo equipo que el escáner, gestiona el SDK propietario de ZKTeco, captura la huella y devuelve al frontend un hash y un template listos para enviar al backend de la aplicación.
 
@@ -81,12 +81,12 @@ No disponible. No se han identificado en la información proporcionada alternati
 - Solo funciona en Windows 10/11 y con los modelos de escáner indicados; no hay soporte documentado para otros sistemas ni para otros lectores.
 - El agente escucha en `localhost:8088` sin que la documentación mencione autenticación en la API HTTP: cualquier proceso local podría invocar los endpoints. La protección por contraseña descrita aplica a la interfaz de administración, no necesariamente a la API.
 - La documentación está redactada en ruso, lo que puede dificultar el soporte a equipos no rusohablantes.
-- El repositorio en HuggingFace registra 0 descargas y 0 likes, y no declara pipeline ni idiomas; la madurez y el mantenimiento del proyecto no pueden evaluarse con los datos disponibles.
+- El repositorio en Hugging Face registra 0 descargas y 0 likes, y no declara pipeline ni idiomas; la madurez y el mantenimiento del proyecto no pueden evaluarse con los datos disponibles.
 - Al tratarse de biometría, su uso entraña obligaciones legales (RGPD en la UE) sobre consentimiento, almacenamiento y tratamiento de datos biométricos; el template devuelto debe protegerse adecuadamente en el backend.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imomzoda-dev/ZkFingerAgent
+- Repositorio en Hugging Face: https://huggingface.co/imomzoda-dev/ZkFingerAgent
 - Repositorio en GitHub: https://github.com/imomzoda-dev/ZkFingerAgent
 - Última release: https://github.com/imomzoda-dev/ZkFingerAgent/releases/latest
 - Documentación de PySide6: https://doc.qt.io/qtforpython/

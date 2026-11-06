@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`minjaechoi/qwen36-twla-adaptive-init3-target2` es un checkpoint de investigacion publicado por el usuario minjaechoi en HuggingFace, derivado de la familia etiquetada como `qwen3_5_moe` y orientado a tareas de imagen-texto-a-texto (`image-text-to-text`) con uso conversacional. No se trata de un modelo base entrenado desde cero, sino del resultado de un proceso de optimizacion de precision mixta sobre los expertos enrutados de un modelo MoE: la model card indica que la unidad de cuantizacion es un unico experto enrutado dentro de una capa MoE, con 40 capas x 256 expertos = 10.240 unidades optimizadas individualmente.
+`minjaechoi/qwen36-twla-adaptive-init3-target2` es un checkpoint de investigacion publicado por el usuario minjaechoi en Hugging Face, derivado de la familia etiquetada como `qwen3_5_moe` y orientado a tareas de imagen-texto-a-texto (`image-text-to-text`) con uso conversacional. No se trata de un modelo base entrenado desde cero, sino del resultado de un proceso de optimizacion de precision mixta sobre los expertos enrutados de un modelo MoE: la model card indica que la unidad de cuantizacion es un unico experto enrutado dentro de una capa MoE, con 40 capas x 256 expertos = 10.240 unidades optimizadas individualmente.
 
 El objetivo de la busqueda de precision fue minimizar la NLL de validacion mas un termino de bits logicos ponderado por lambda, partiendo de un nivel inicial 3 y un objetivo de 2,0 bits por experto enrutado, hasta alcanzar 1,7982684843261683 bits finales. El checkpoint incluye metadatos de reproducibilidad en `optimization_summary.json` y `precision_map.json`, ademas del codigo del optimizador bajo `code/`. Segun el autor, GPQA no se uso para calibracion, ranking de sensibilidad, asignacion, criterios de parada ni seleccion del checkpoint.
 
@@ -23,7 +23,7 @@ El modelo tiene 35.107.181.936 parametros totales (aproximadamente 35,1 mil mill
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer con capas de mezcla de expertos (MoE), etiquetado en HuggingFace como `qwen3_5_moe`. La informacion disponible no detalla el numero de capas totales del transformer mas alla de las 40 capas MoE implicadas en la optimizacion, ni el numero de expertos activados por token, ni la dimension oculta, ni el esquema de enrutamiento. Tampoco se especifica el modelo base sobre el que se aplico la optimizacion, ni el volumen de tokens de entrenamiento, ni la composicion del dataset, ni si hubo fases de RLHF o DPO. La unica referencia a datos de evaluacion es la mencion explicita de que GPQA no se utilizo en ninguna fase del proceso de calibracion o seleccion.
+La arquitectura es un transformer con capas de mezcla de expertos (MoE), etiquetado en Hugging Face como `qwen3_5_moe`. La informacion disponible no detalla el numero de capas totales del transformer mas alla de las 40 capas MoE implicadas en la optimizacion, ni el numero de expertos activados por token, ni la dimension oculta, ni el esquema de enrutamiento. Tampoco se especifica el modelo base sobre el que se aplico la optimizacion, ni el volumen de tokens de entrenamiento, ni la composicion del dataset, ni si hubo fases de RLHF o DPO. La unica referencia a datos de evaluacion es la mencion explicita de que GPQA no se utilizo en ninguna fase del proceso de calibracion o seleccion.
 
 La innovacion principal documentada es el procedimiento TWLA de precision mixta adaptativa aplicado a nivel de experto enrutado, no a nivel de tensor o capa completa. El proceso optimiza 10.240 unidades independientes (40 capas x 256 expertos) con el modo de busqueda `proxy_prefix`, minimizando una combinacion de NLL de validacion y un termino de bits logicos ponderado por lambda. El resultado es un mapa de precision por experto con una media de 1,798 bits, por debajo del objetivo fijado de 2,0 bits. Cabe senalar que el tamano del repositorio (70,2 GB) equivale aproximadamente a 2 bytes por parametro, por lo que los pesos almacenados parecen estar en un formato de 16 bits y la reduccion de bits documentada se refiere al espacio de optimizacion, no necesariamente al almacenamiento final de los tensores; el autor no aclara este punto.
 
@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no identifica el modelo base exacto 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen36-twla-adaptive-init3-target2
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen36-twla-adaptive-init3-target2
 - Archivos de reproducibilidad incluidos en el repositorio: `optimization_summary.json` y `precision_map.json`
 - Codigo del optimizador incluido en el repositorio: directorio `code/`
 - No se han encontrado enlaces adicionales relevantes. Los resultados de busqueda web devueltos corresponden a cronicas de partidos de futbol (Arsenal contra Manchester United) y no guardan ninguna relacion con el modelo.

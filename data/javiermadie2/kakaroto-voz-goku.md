@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `javiermadie2/kakaroto-voz-goku` es un re-hosting de modelos RVC v2 de conversión de voz para replicar la voz del personaje Goku de Dragon Ball. Fue publicado por el usuario javiermadie2 como repositorio auxiliar para el asistente personal KAKAROTO, y recopila pesos ya entrenados por otros autores (mthxz/GokuRVCv2_400epoches y Darkame/Goku-Mario-Castaneda) en un único espacio de HuggingFace.
+El modelo `javiermadie2/kakaroto-voz-goku` es un re-hosting de modelos RVC v2 de conversión de voz para replicar la voz del personaje Goku de Dragon Ball. Fue publicado por el usuario javiermadie2 como repositorio auxiliar para el asistente personal KAKAROTO, y recopila pesos ya entrenados por otros autores (mthxz/GokuRVCv2_400epoches y Darkame/Goku-Mario-Castaneda) en un único espacio de Hugging Face.
 
 RVC (Retrieval-based Voice Conversion) es una arquitectura de conversión de voz que extrae características espectrales mediante un codificador preentrenado (típicamente HuBERT) y las sintetiza con un decodificador basado en VITS. El modelo permite transferir la voz de un audio de entrada a la de Goku, manteniendo la prosodia y la emoción originales. El repositorio ocupa 0.3 GB, lo que sugiere que contiene los pesos de los modelos RVC v2 en formato safetensors u otro binario, aunque no se detalla la estructura interna.
 
@@ -61,11 +61,11 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Tipo | Tamaño | Fuente | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `javiermadie2/kakaroto-voz-goku` | Conversión de voz (RVC v2) | 0.3 GB | Re-hosting | no disponible | HuggingFace |
+| `javiermadie2/kakaroto-voz-goku` | Conversión de voz (RVC v2) | 0.3 GB | Re-hosting | no disponible | Hugging Face |
 | Modelo en Fish Audio (Goku Kakaroto) | TTS (texto a voz) | no disponible | Propietario | no disponible | API de Fish Audio |
 | Modelo en voice-models.com (Son Goku/Kakarot ENG Dub) | Conversión de voz (RVC V2) | no disponible | Entrenado por terceros | no disponible | Web de voice-models.com |
 
-La comparación directa no es posible porque los modelos de Fish Audio y voice-models.com son servicios propietarios o de otras plataformas, no se ofrecen en HuggingFace con pesos descargables. El modelo `kakaroto-voz-goku` destaca por ser de código abierto (aunque la licencia no se especifica) y accesible para descarga directa.
+La comparación directa no es posible porque los modelos de Fish Audio y voice-models.com son servicios propietarios o de otras plataformas, no se ofrecen en Hugging Face con pesos descargables. El modelo `kakaroto-voz-goku` destaca por ser de código abierto (aunque la licencia no se especifica) y accesible para descarga directa.
 
 ## Limitaciones y advertencias
 
@@ -77,7 +77,7 @@ La comparación directa no es posible porque los modelos de Fish Audio y voice-m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/javiermadie2/kakaroto-voz-goku
+- Modelo en Hugging Face: https://huggingface.co/javiermadie2/kakaroto-voz-goku
 - Fuente original (mthxz/GokuRVCv2_400epoches): no se ha encontrado el enlace directo, pero se menciona en la model card.
 - Fuente original (Darkame/Goku-Mario-Castaneda): no se ha encontrado el enlace directo.
 - Ejemplo de uso en Fish Audio (TTS): https://fish.audio/m/4f7388580af64aa59b2be5f637b0aabf/

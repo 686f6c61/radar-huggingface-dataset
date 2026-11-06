@@ -65,9 +65,9 @@ No se dispone de modelos comparables con el mismo tamaño y propósito, ya que 2
 - Limitaciones de contexto e idioma: no se especifican; al no estar entrenado, no hay capacidades lingüísticas reales.
 - Restricciones de licencia: la licencia BSD-3 permite uso comercial y modificación, pero el autor advierte que deben revisarse los términos de las fuentes de datos externas si se usan con este repositorio.
 - Para producción: completamente inadecuado. Cualquier resultado de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos.
-- La implementación es personalizada y no es compatible con APIs genéricas de HuggingFace sin un adaptador explícito.
+- La implementación es personalizada y no es compatible con APIs genéricas de Hugging Face sin un adaptador explícito.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/AngelSato/clip-experiment-2024
+- Repositorio de Hugging Face: https://huggingface.co/AngelSato/clip-experiment-2024
 - CLIP original de OpenAI (referencia conceptual): https://github.com/openai/CLIP

@@ -6,7 +6,7 @@
 
 El modelo resuelve clasificación de imágenes sobre las 1.000 clases de ImageNet-1k, con una precisión declarada por el autor de 83,996 % en top-1 y 96,714 % en top-5. Se distribuye en formato safetensors nativo de Lucid, con la lógica de preprocesado asociada a los pesos (`weights.transforms()`), lo que simplifica su uso en pipelines de inferencia. El repositorio ocupa 0,2 GB y el archivo de pesos de la etiqueta por defecto pesa 144,77 MB.
 
-Su relevancia actual es doble: por un lado, ofrece una arquitectura de referencia en eficiencia para despliegue en dispositivos con recursos limitados; por otro, sirve como punto de partida para *fine-tuning* y extracción de características en tareas de visión por computador. El modelo figura en HuggingFace con 0 descargas y 0 likes en el momento de redactar esta ficha, y las métricas de la model card están marcadas como no verificadas (`verified: false`).
+Su relevancia actual es doble: por un lado, ofrece una arquitectura de referencia en eficiencia para despliegue en dispositivos con recursos limitados; por otro, sirve como punto de partida para *fine-tuning* y extracción de características en tareas de visión por computador. El modelo figura en Hugging Face con 0 descargas y 0 likes en el momento de redactar esta ficha, y las métricas de la model card están marcadas como no verificadas (`verified: false`).
 
 ## Especificaciones tecnicas
 
@@ -107,7 +107,7 @@ Los resultados de búsqueda web recuperados durante la elaboración de esta fich
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucid-dl/mobilenet-v4-hybrid-large
+- Modelo en Hugging Face: https://huggingface.co/lucid-dl/mobilenet-v4-hybrid-large
 - Checkpoint original en timm: https://huggingface.co/timm/mobilenetv4_hybrid_large.ix_e600_r384_in1k
 - Paper MobileNetV4 (ECCV 2024): https://arxiv.org/abs/2404.10518
 - Repositorio de la librería Lucid: https://github.com/ChanLumerico/lucid

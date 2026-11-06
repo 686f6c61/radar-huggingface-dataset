@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Promanthater es un modelo publicado en HuggingFace por el usuario ayushman7577, con licencia Apache 2.0 y pesos en formato GGUF. A fecha de la consulta, no se dispone de documentación técnica, métricas de rendimiento ni especificaciones de arquitectura en la model card ni en fuentes externas. El único dato técnico verificable es el formato GGUF, lo que sugiere que está pensado para ejecución local mediante herramientas como llama.cpp u Ollama. Sin embargo, la ausencia de información sobre parámetros, contexto o capacidades impide evaluar su idoneidad para casos de uso concretos.
+Promanthater es un modelo publicado en Hugging Face por el usuario ayushman7577, con licencia Apache 2.0 y pesos en formato GGUF. A fecha de la consulta, no se dispone de documentación técnica, métricas de rendimiento ni especificaciones de arquitectura en la model card ni en fuentes externas. El único dato técnico verificable es el formato GGUF, lo que sugiere que está pensado para ejecución local mediante herramientas como llama.cpp u Ollama. Sin embargo, la ausencia de información sobre parámetros, contexto o capacidades impide evaluar su idoneidad para casos de uso concretos.
 
 ## Especificaciones técnicas
 
@@ -59,4 +59,4 @@ No disponible. No existen datos comparables en la información proporcionada.
 
 ## Enlaces
 
-- HuggingFace: <https://huggingface.co/ayushman7577/promanthater>
+- Hugging Face: <https://huggingface.co/ayushman7577/promanthater>

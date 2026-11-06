@@ -6,7 +6,7 @@ El repositorio `artemsnb25/lightweight-multimodal-finetune-2023` no contiene un 
 
 La nota organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, junto con referencias y conjuntos de datos propuestos. No incluye resultados experimentales, ablaciones completadas, código liberado ni checkpoint entrenado. Por tanto, no existe información sobre arquitectura, datos de entrenamiento, contexto, idiomas o rendimiento que pueda evaluarse técnicamente.
 
-Los metadatos de HuggingFace registran 16.576 parámetros totales en un fichero safetensors y la etiqueta `transformer`, pero esa cifra es incompatible con cualquier modelo multimodal funcional y no se corresponde con ningún artefacto descrito en la model card. Se trata, con toda probabilidad, de un residuo de configuración o de un fichero vacío. El repositorio se publicó el 13 de octubre de 2026 y acumula 0 descargas y 0 "likes".
+Los metadatos de Hugging Face registran 16.576 parámetros totales en un fichero safetensors y la etiqueta `transformer`, pero esa cifra es incompatible con cualquier modelo multimodal funcional y no se corresponde con ningún artefacto descrito en la model card. Se trata, con toda probabilidad, de un residuo de configuración o de un fichero vacío. El repositorio se publicó el 13 de octubre de 2026 y acumula 0 descargas y 0 "likes".
 
 ## Especificaciones técnicas
 
@@ -76,6 +76,6 @@ No disponible. No procede comparar este repositorio con modelos multimodales lig
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/artemsnb25/lightweight-multimodal-finetune-2023
+- Modelo en Hugging Face: https://huggingface.co/artemsnb25/lightweight-multimodal-finetune-2023
 - Fichero `summary.md` (referenciado en la model card, contenido no disponible en la información proporcionada)
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

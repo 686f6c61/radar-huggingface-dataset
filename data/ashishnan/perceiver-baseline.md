@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ashishnan/perceiver-baseline` es un repositorio de investigación publicado en HuggingFace que contiene una implementación reducida de la arquitectura Perceiver orientada a tareas de aprendizaje contrastivo. Lo desarrolla el usuario ashishnan y se distribuye con licencia BSD-3-Clause. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible y un *checkpoint* de inicialización válido únicamente para pruebas de humo (*smoke tests*).
+`ashishnan/perceiver-baseline` es un repositorio de investigación publicado en Hugging Face que contiene una implementación reducida de la arquitectura Perceiver orientada a tareas de aprendizaje contrastivo. Lo desarrolla el usuario ashishnan y se distribuye con licencia BSD-3-Clause. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible y un *checkpoint* de inicialización válido únicamente para pruebas de humo (*smoke tests*).
 
 El interés del repositorio es fundamentalmente arquitectónico y metodológico. La configuración registrada emplea atención dispersa (*sparse*), fusión mediante *co-attention*, activación ReLU y normalización LayerNorm, con una receta de entrenamiento por defecto basada en el optimizador Lion y un esquema de *warmup* constante. El tamaño declarado en los metadatos de safetensors es de 33.088 parámetros totales, un orden de magnitud propio de un ejemplo didáctico más que de un modelo con capacidad generativa real.
 
@@ -88,5 +88,5 @@ Las alternativas se citan únicamente como referencia arquitectónica de la mism
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ashishnan/perceiver-baseline
+- Hugging Face: https://huggingface.co/ashishnan/perceiver-baseline
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la búsqueda web realizada.

@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parámetros totales | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B (base) | 35B | 3B | 262K | Apache 2.0 | HuggingFace |
-| GreenBitAI/Qwen3.6-35B-A3B-8bit-paged | 35B | 3B | 262K | Apache 2.0 | HuggingFace (cuantización 8-bit + paging) |
-| Qwen3.6-27B dense | 27B | 27B | 262K | Apache 2.0 | HuggingFace |
-| Qwen2.5-32B | 32B | 32B | 128K | Apache 2.0 | HuggingFace |
+| Qwen3.6-35B-A3B (base) | 35B | 3B | 262K | Apache 2.0 | Hugging Face |
+| GreenBitAI/Qwen3.6-35B-A3B-8bit-paged | 35B | 3B | 262K | Apache 2.0 | Hugging Face (cuantización 8-bit + paging) |
+| Qwen3.6-27B dense | 27B | 27B | 262K | Apache 2.0 | Hugging Face |
+| Qwen2.5-32B | 32B | 32B | 128K | Apache 2.0 | Hugging Face |
 
 La ventaja principal de esta variante frente a la versión original es la posibilidad de ejecutarla en hardware con menos memoria, manteniendo la misma calidad que la cuantización 8-bit estándar. Frente a un modelo denso de tamaño similar (Qwen3.6-27B), el MoE ofrece menor latencia por token gracias a los 3B activos, aunque el modelo denso puede ser más sencillo de desplegar sin herramientas específicas.
 
@@ -78,8 +78,8 @@ La ventaja principal de esta variante frente a la versión original es la posibi
 
 ## Enlaces
 
-- [GreenBitAI/Qwen3.6-35B-A3B-8bit-paged en HuggingFace](https://huggingface.co/GreenBitAI/Qwen3.6-35B-A3B-8bit-paged)
-- [Qwen/Qwen3.6-35B-A3B (modelo base) en HuggingFace](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)
+- [GreenBitAI/Qwen3.6-35B-A3B-8bit-paged en Hugging Face](https://huggingface.co/GreenBitAI/Qwen3.6-35B-A3B-8bit-paged)
+- [Qwen/Qwen3.6-35B-A3B (modelo base) en Hugging Face](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)
 - [Guía de Qwen 3.6 en insiderllm.com](https://insiderllm.com/guides/qwen-3-6-local-ai-guide/)
 - [Cómo ejecutar Qwen 3.6 35B MoE localmente (VRAM, velocidad)](https://insiderllm.com/guides/best-way-run-qwen-3-6-35b-moe-locally/)
 - [Ficha del modelo en theresanaiforthat.com](https://theresanaiforthat.com/model/qwen3-6-35b-a3b/)

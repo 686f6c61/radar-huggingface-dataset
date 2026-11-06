@@ -4,7 +4,7 @@
 
 Este repositorio contiene un artefacto de texto académico, no un modelo de aprendizaje automático entrenado. Se trata de un documento en formato LaTeX estilo CVPR sobre el tema de *zero-shot transfer* (transferencia en el contexto de zero-shot learning), estructurado como un artículo científico con las secciones intro, método, experimentos, trabajos relacionados y conclusión. El autor es katherine-baker y el contenido se distribuye bajo licencia Creative Commons Attribution 4.0.
 
-El repositorio no incluye pesos, arquitecturas ni datos de entrenamiento. Su único artefacto es el archivo `paper_011593055_zero_shot_transfer.md`, que contiene el texto completo del artículo. La fecha de creación es el 23 de agosto de 2026 y no registra descargas ni valoraciones en HuggingFace.
+El repositorio no incluye pesos, arquitecturas ni datos de entrenamiento. Su único artefacto es el archivo `paper_011593055_zero_shot_transfer.md`, que contiene el texto completo del artículo. La fecha de creación es el 23 de agosto de 2026 y no registra descargas ni valoraciones en Hugging Face.
 
 La relevancia de este repositorio no reside en su capacidad de ejecución, sino en el contenido del artículo que alberga. El paper aborda la transferencia zero-shot, un área de investigación activa en aprendizaje automático. Los metadatos indican que el artículo emplea un formato LaTeX CVPR, citas numéricas BibTeX y un estilo de escritura narrativo-progresivo, con secciones ordenadas como intro-method-exp-related-conclusion. No se dispone de información sobre el contenido técnico específico del paper.
 
@@ -67,4 +67,4 @@ No disponible. No existen modelos comparables en la información proporcionada, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/katherine-baker/paper_011593055_zero_shot_transfer
+- Repositorio Hugging Face: https://huggingface.co/katherine-baker/paper_011593055_zero_shot_transfer

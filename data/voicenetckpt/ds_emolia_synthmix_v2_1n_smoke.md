@@ -77,8 +77,8 @@ No disponible. No se dispone de informacion suficiente sobre parametros, context
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/ds_emolia_synthmix_v2_1n_smoke
+- Modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/ds_emolia_synthmix_v2_1n_smoke
 - Indice de ejecuciones VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Perfil del autor: https://huggingface.co/VoiceNetCkpt
 
-Nota: las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo. Los unicos enlaces relacionados son los anteriores, extraidos del propio repositorio de HuggingFace.
+Nota: las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo. Los unicos enlaces relacionados son los anteriores, extraidos del propio repositorio de Hugging Face.

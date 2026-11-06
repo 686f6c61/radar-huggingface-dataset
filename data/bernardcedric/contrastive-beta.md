@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bernardcedric/contrastive-beta` es un repositorio de HuggingFace que contiene una implementacion reducida de tipo Poolformer orientada a aprendizaje contrastivo. El autor es `bernardcedric` y el repositorio se publica bajo licencia MIT. Segun la propia model card, no se trata de un modelo entrenado ni de una release con benchmarks: es un punto de partida reproducible con configuracion explicita y un checkpoint de inicializacion.
+`bernardcedric/contrastive-beta` es un repositorio de Hugging Face que contiene una implementacion reducida de tipo Poolformer orientada a aprendizaje contrastivo. El autor es `bernardcedric` y el repositorio se publica bajo licencia MIT. Segun la propia model card, no se trata de un modelo entrenado ni de una release con benchmarks: es un punto de partida reproducible con configuracion explicita y un checkpoint de inicializacion.
 
 El artefacto principal es `train.py`, que incluye el codigo del modelo y un punto de entrada de entrenamiento o ejemplo ejecutable. El repositorio tambien incluye `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto y `model.safetensors` como checkpoint de inicializacion valido para pruebas de humo (smoke tests). La model card afirma explicitamente que no se reclama ninguna puntuacion de benchmark.
 
@@ -96,5 +96,5 @@ No se dispone de informacion sobre modelos alternativos de la misma categoria en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bernardcedric/contrastive-beta
+- Hugging Face: https://huggingface.co/bernardcedric/contrastive-beta
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada.

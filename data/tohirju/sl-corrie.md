@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tohirju/sl-corrie` es un repositorio alojado en HuggingFace por el autor Tohirju, publicado el 16 de agosto de 2026. Se trata de un modelo de acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargarlo. El repositorio tiene un tamaño de 0,1 GB y contiene archivos en formato safetensors, lo que sugiere que se trata de pesos de un modelo de aprendizaje automático, aunque no se especifica la arquitectura ni el dominio de aplicación.
+El modelo `Tohirju/sl-corrie` es un repositorio alojado en Hugging Face por el autor Tohirju, publicado el 16 de agosto de 2026. Se trata de un modelo de acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargarlo. El repositorio tiene un tamaño de 0,1 GB y contiene archivos en formato safetensors, lo que sugiere que se trata de pesos de un modelo de aprendizaje automático, aunque no se especifica la arquitectura ni el dominio de aplicación.
 
 En el momento de la consulta, el modelo no presenta descargas ni valoraciones, y no se dispone de información pública sobre su pipeline, idiomas soportados o documentación técnica. Esta falta de datos impide realizar una evaluación técnica rigurosa, por lo que la presente ficha se limita a reflejar la información disponible y a señalar las carencias.
 
@@ -16,7 +16,7 @@ En el momento de la consulta, el modelo no presenta descargas ni valoraciones, y
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | other (se requiere aceptar condiciones en HuggingFace) |
+| Licencia | other (se requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -45,7 +45,7 @@ No disponible. No se conocen modelos comparables de la misma categoría debido a
 
 ## Limitaciones y advertencias
 
-- El acceso al modelo está restringido (gated) y requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso inmediato.
+- El acceso al modelo está restringido (gated) y requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso inmediato.
 - No existe documentación pública sobre arquitectura, entrenamiento, licencia específica o términos de uso comercial.
 - La licencia "other" es ambigua; es necesario revisar los términos exactos antes de cualquier uso en producción.
 - Al no haber información sobre sesgos, alucinaciones o limitaciones de contexto, no se puede evaluar la idoneidad del modelo para tareas críticas.
@@ -54,4 +54,4 @@ No disponible. No se conocen modelos comparables de la misma categoría debido a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tohirju/sl-corrie
+- Repositorio en Hugging Face: https://huggingface.co/Tohirju/sl-corrie

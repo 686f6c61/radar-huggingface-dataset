@@ -74,9 +74,9 @@ Mediciones sintéticas a 800x1344. El tiempo "original" corresponde a la impleme
 
 | Modelo | Parámetros / backbone | Contexto / entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| RT-DETRv2 (este) | ResNet-18/34/50/101-vd; 5 variantes | Cualquier HxW >= 32, hasta 12 MP probado | Código Apache-2.0; pesos sin declarar | HuggingFace (model card), GitHub del autor | Sin NMS, end-to-end, backends portable y kernels |
-| YOLOv8 / YOLOv9 | CNN, escalas n/s/m/l/x | Resolución fija típica 640 | GPL-3.0 (Ultralytics) o licencia comercial | HuggingFace, GitHub | Requiere NMS; ecosistema muy amplio |
-| DETR original | ResNet-50 + transformer | Resolución fija 800 | Apache-2.0 | GitHub, HuggingFace | End-to-end pero lento (no tiempo real) |
+| RT-DETRv2 (este) | ResNet-18/34/50/101-vd; 5 variantes | Cualquier HxW >= 32, hasta 12 MP probado | Código Apache-2.0; pesos sin declarar | Hugging Face (model card), GitHub del autor | Sin NMS, end-to-end, backends portable y kernels |
+| YOLOv8 / YOLOv9 | CNN, escalas n/s/m/l/x | Resolución fija típica 640 | GPL-3.0 (Ultralytics) o licencia comercial | Hugging Face, GitHub | Requiere NMS; ecosistema muy amplio |
+| DETR original | ResNet-50 + transformer | Resolución fija 800 | Apache-2.0 | GitHub, Hugging Face | End-to-end pero lento (no tiempo real) |
 | Deformable DETR | ResNet-50 + deformable attention | Resolución variable | Apache-2.0 | GitHub | End-to-end, más rápido que DETR pero por debajo de RT-DETR en tiempo real |
 
 No se dispone de datos de precisión (mAP) en la información proporcionada para establecer una comparación cuantitativa de rendimiento con estos modelos. La comparación se limita a características arquitectónicas y de licencia.
@@ -94,7 +94,7 @@ No se dispone de datos de precisión (mAP) en la información proporcionada para
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fastforks/rtdetrv2
+- Hugging Face: https://huggingface.co/fastforks/rtdetrv2
 - Repositorio del paquete fastforks: https://github.com/kleinicke/fastforks
 - Kernels para el backend `kernels`: https://huggingface.co/fastforks/kernels
 - Código original de RT-DETR: https://github.com/lyuwenyu/RT-DETR (commit `df2a96c8c3a0`)

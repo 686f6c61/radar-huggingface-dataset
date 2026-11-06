@@ -77,6 +77,6 @@ No se dispone de datos de comparación con otros modelos en la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/sqa-grpo-temp12-step200
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/sqa-grpo-temp12-step200
 - Modelo base Qwen2.5-Math-1.5B: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B
 - Framework verl (usado para el entrenamiento): https://github.com/volcengine/verl (referencia indirecta, no confirmada en la información proporcionada)

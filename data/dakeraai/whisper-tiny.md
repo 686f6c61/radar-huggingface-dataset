@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto de audio | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DakeraAI/whisper-tiny (este) | 39 M | 30 s por ventana | ONNX | Apache-2.0 | HuggingFace, espejo verificado |
-| openai/whisper-tiny (original) | 39 M | 30 s por ventana | PyTorch (safetensors/bin) | Apache-2.0 | HuggingFace |
-| onnx-community/whisper-tiny | 39 M | 30 s por ventana | ONNX | Apache-2.0 | HuggingFace |
-| openai/whisper-base | 74 M | 30 s por ventana | PyTorch | Apache-2.0 | HuggingFace |
+| DakeraAI/whisper-tiny (este) | 39 M | 30 s por ventana | ONNX | Apache-2.0 | Hugging Face, espejo verificado |
+| openai/whisper-tiny (original) | 39 M | 30 s por ventana | PyTorch (safetensors/bin) | Apache-2.0 | Hugging Face |
+| onnx-community/whisper-tiny | 39 M | 30 s por ventana | ONNX | Apache-2.0 | Hugging Face |
+| openai/whisper-base | 74 M | 30 s por ventana | PyTorch | Apache-2.0 | Hugging Face |
 
 La comparativa relevante es entre el espejo y sus fuentes: el contenido es identico en pesos, y la diferencia estriba en la verificacion por checksum y en la integracion con el producto Dakera. Frente a whisper-base, este modelo es aproximadamente la mitad de grande y, previsiblemente, menos preciso, aunque no se dispone de cifras comparativas en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ La comparativa relevante es entre el espejo y sus fuentes: el contenido es ident
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DakeraAI/whisper-tiny
+- Repositorio en Hugging Face: https://huggingface.co/DakeraAI/whisper-tiny
 - Modelo original: https://huggingface.co/openai/whisper-tiny
 - Exportacion ONNX de referencia: https://huggingface.co/onnx-community/whisper-tiny
 - Web de Dakera: https://dakera.ai

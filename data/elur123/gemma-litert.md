@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`elur123/gemma-litert` no es un modelo entrenado por su autor, sino un espejo (mirror) de tres artefactos en formato LiteRT-LM publicados originalmente por Google a través de la organizacion `litert-community`: los builds on-device de Gemma 4 en sus variantes E2B-it y E4B-it, y el embedder EmbeddingGemma 2 text 270M. El repositorio existe para que la aplicacion Android AutoPal, que funciona de forma totalmente offline, pueda descargar los modelos desde una ubicacion estable sin requerir inicio de sesion en HuggingFace. Los ficheros son byte-identicos a los originales, verificables por SHA-256.
+`elur123/gemma-litert` no es un modelo entrenado por su autor, sino un espejo (mirror) de tres artefactos en formato LiteRT-LM publicados originalmente por Google a través de la organizacion `litert-community`: los builds on-device de Gemma 4 en sus variantes E2B-it y E4B-it, y el embedder EmbeddingGemma 2 text 270M. El repositorio existe para que la aplicacion Android AutoPal, que funciona de forma totalmente offline, pueda descargar los modelos desde una ubicacion estable sin requerir inicio de sesion en Hugging Face. Los ficheros son byte-identicos a los originales, verificables por SHA-256.
 
 El interes tecnico esta en el formato: `.litertlm` es el contenedor de LiteRT-LM, el runtime de Google para ejecutar modelos generativos en dispositivo (Android, iOS, Linux, macOS, Windows, IoT). Frente a GGUF o safetensors, este formato esta optimizado para aceleracion por GPU movil (OpenCL), NPU y CPU con delegados especificos de LiteRT, lo que lo hace relevante para despliegues edge sin conectividad.
 
@@ -48,7 +48,7 @@ Lo unico verificable a nivel tecnico es el empaquetado: los tres artefactos usan
 - Busqueda semantica local: el embedder de 270M (164 MB) permite indexar y recuperar documentos en el propio dispositivo, sin enviar texto a servidores externos, lo que resulta adecuado por privacidad y por latencia.
 - Asistentes personales embebidos: la variante E2B (2,6 GB) encaja en dispositivos con 8 GB o mas de RAM como motor de respuestas cortas y resumenes.
 - Prototipado de pipelines RAG on-device: combinando el embedder con E2B o E4B se puede montar un flujo de recuperacion y generacion completamente local para demos y validacion de producto.
-- Distribucion de artefactos en entornos restringidos: al no requerir autenticacion, el repositorio sirve como origen para espejos internos en empresas o laboratorios con acceso limitado a HuggingFace.
+- Distribucion de artefactos en entornos restringidos: al no requerir autenticacion, el repositorio sirve como origen para espejos internos en empresas o laboratorios con acceso limitado a Hugging Face.
 - Verificacion de integridad en CI: los SHA-256 publicados permiten que un pipeline de build compruebe que los binarios descargados coinciden con los originales antes de empaquetarlos en un APK.
 - Evaluacion comparativa de runtimes: util para medir latencia y consumo de LiteRT-LM frente a llama.cpp u otros runtimes en el mismo hardware movil.
 
@@ -88,7 +88,7 @@ La comparacion con alternativas de otros ecosistemas (por ejemplo, modelos GGUF 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/elur123/gemma-litert
+- Repositorio en Hugging Face: https://huggingface.co/elur123/gemma-litert
 - Fuente original E2B: https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm
 - Fuente original E4B: https://huggingface.co/litert-community/gemma-4-E4B-it-litert-lm
 - Fuente original del embedder: https://huggingface.co/litert-community/embeddinggemma-2-text-270m-litert-lm

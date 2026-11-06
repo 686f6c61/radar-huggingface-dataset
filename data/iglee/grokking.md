@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`iglee/grokking` es un repositorio alojado en HuggingFace por el usuario `iglee`, creado el 12 de septiembre de 2026 y actualizado en la misma fecha. En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 0 "likes". La model card asociada contiene un unico bloque con la declaracion `license: mit`, sin texto descriptivo, sin ejemplos de uso y sin referencias a documentacion externa.
+`iglee/grokking` es un repositorio alojado en Hugging Face por el usuario `iglee`, creado el 12 de septiembre de 2026 y actualizado en la misma fecha. En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 0 "likes". La model card asociada contiene un unico bloque con la declaracion `license: mit`, sin texto descriptivo, sin ejemplos de uso y sin referencias a documentacion externa.
 
-No hay informacion publica sobre la arquitectura, el numero de parametros, la longitud de contexto, el dataset de entrenamiento ni los pesos del modelo. La tuberia de HuggingFace aparece como "no disponible" y no se declaran idiomas soportados. Tampoco se han encontrado resultados relevantes en la busqueda web: la unica coincidencia devuelta es un enlace a un servicio de correo electronico sin relacion con el modelo.
+No hay informacion publica sobre la arquitectura, el numero de parametros, la longitud de contexto, el dataset de entrenamiento ni los pesos del modelo. La tuberia de Hugging Face aparece como "no disponible" y no se declaran idiomas soportados. Tampoco se han encontrado resultados relevantes en la busqueda web: la unica coincidencia devuelta es un enlace a un servicio de correo electronico sin relacion con el modelo.
 
 En consecuencia, esta ficha no puede certificar que el repositorio contenga un modelo funcional. La relevancia actual del artefacto es nula desde el punto de vista practico: se trata, a falta de informacion adicional, de un contenedor vacio o no documentado. Cualquier evaluacion tecnica requiere que el autor publique primero una model card con especificaciones verificables y pesos descargables.
 
@@ -42,7 +42,7 @@ No se puede confirmar ninguna capacidad. La informacion disponible no documenta:
 No es posible proponer casos de uso concretos y responsables sin conocer las caracteristicas del artefacto. Los escenarios que se enumeran a continuacion son condicionales y quedan explicitamente sujetos a verificacion previa del repositorio; no deben interpretarse como una recomendacion de uso:
 
 - Evaluacion experimental de fenomenos de "grokking": si el repositorio contiene un checkpoint de un experimento de entrenamiento a pequena escala, el caso natural seria reproducir curvas de generalizacion. Requiere confirmar que existen pesos y codigo de entrenamiento, algo que hoy no consta.
-- Prototipado academico en un aula: usar el modelo como ejemplo de publicacion en HuggingFace y auditar su model card. Solo tiene sentido si el objetivo es didactico sobre buenas practicas de documentacion.
+- Prototipado academico en un aula: usar el modelo como ejemplo de publicacion en Hugging Face y auditar su model card. Solo tiene sentido si el objetivo es didactico sobre buenas practicas de documentacion.
 - Pruebas de integracion de la libreria `transformers`: cargar el repositorio con `AutoModel.from_pretrained` para comprobar si expone pesos validos. No hay evidencia de que la carga vaya a funcionar.
 - Analisis de licencias en pipelines corporativos: el repositorio sirve como caso de estudio de una licencia MIT declarada sin metadatos de procedencia de datos, lo que obliga a un escrutinio adicional antes de cualquier uso comercial.
 - Comparacion de repositorios vacios frente a modelos documentados: util como referencia metodologica en un articulo sobre calidad de model cards, no como componente de produccion.
@@ -76,6 +76,6 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/iglee/grokking
+- Repositorio en Hugging Face: https://huggingface.co/iglee/grokking
 - Resultados de busqueda web: no se han encontrado enlaces relevantes. La unica coincidencia devuelta por el buscador fue un enlace a un servicio de correo electronico (`https://mail.google.com/mail?hl=de`) sin ninguna relacion con el modelo.
 - Paper, blog, repositorio de codigo o demo: no disponibles.

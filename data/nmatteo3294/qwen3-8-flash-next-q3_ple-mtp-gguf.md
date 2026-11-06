@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativos con otras cuantizaciones del 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nmatteo3294/Qwen3.8-Flash-Next-Q3_PLE-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/nmatteo3294/Qwen3.8-Flash-Next-Q3_PLE-MTP-GGUF
 - Repositorio de reproduccion (parches, perfiles, tests): https://github.com/nickmatteo/Qwen38-FlashNext-Q3PLE-MTP
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GitHub oficial de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/

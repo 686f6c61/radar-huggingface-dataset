@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nativ-community/sam-3d-body-dinov3-mlx | 1,13 mil millones | no aplica | safetensors (MLX) | SAM License | HuggingFace, 19 descargas |
-| facebook/sam-3d-body-dinov3 | no disponible | no aplica | no disponible | SAM License | HuggingFace (modelo original de Meta) |
+| nativ-community/sam-3d-body-dinov3-mlx | 1,13 mil millones | no aplica | safetensors (MLX) | SAM License | Hugging Face, 19 descargas |
+| facebook/sam-3d-body-dinov3 | no disponible | no aplica | no disponible | SAM License | Hugging Face (modelo original de Meta) |
 | Otras alternativas de pose estimation 3D | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparados entre estos modelos en la información proporcionada.
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparados entre estos modelos en la infor
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/nativ-community/sam-3d-body-dinov3-mlx
+- Hugging Face del modelo: https://huggingface.co/nativ-community/sam-3d-body-dinov3-mlx
 - Modelo base (Meta): https://huggingface.co/facebook/sam-3d-body-dinov3
 - Los resultados de búsqueda web obtenidos no contienen enlaces relevantes al modelo (corresponden a marcas y servicios no relacionados).

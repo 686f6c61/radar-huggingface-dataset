@@ -23,13 +23,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 162,
   "trending_score": 0,
   "parameters": 64782689280,
   "parameters_human": "64.78B",
-  "storage_bytes": 390887202368,
-  "storage_human": "390.9 GB",
+  "storage_bytes": 367139550656,
+  "storage_human": "367.1 GB",
   "base_model": "ricursiveAI/Ripple-65B-Preview",
   "formats": [
     "gguf"

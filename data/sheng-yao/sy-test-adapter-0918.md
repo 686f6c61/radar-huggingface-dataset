@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Sheng-yao/sy-test-adapter-0918 es un artefacto alojado en HuggingFace por el usuario Sheng-yao que, por su nomenclatura ("test-adapter"), parece corresponder a un adaptador de pruebas (probablemente un adaptador del tipo LoRA o PEFT) y no a un modelo de lenguaje completo y entrenado de forma independiente. La model card publicada no contiene absolutamente ningun dato tecnico: unicamente la declaracion de licencia Apache 2.0, sin descripcion, sin arquitectura declarada, sin informacion de entrenamiento ni ejemplos de uso.
+El repositorio Sheng-yao/sy-test-adapter-0918 es un artefacto alojado en Hugging Face por el usuario Sheng-yao que, por su nomenclatura ("test-adapter"), parece corresponder a un adaptador de pruebas (probablemente un adaptador del tipo LoRA o PEFT) y no a un modelo de lenguaje completo y entrenado de forma independiente. La model card publicada no contiene absolutamente ningun dato tecnico: unicamente la declaracion de licencia Apache 2.0, sin descripcion, sin arquitectura declarada, sin informacion de entrenamiento ni ejemplos de uso.
 
 El tamano del repositorio es de 0,6 GB, una magnitud compatible con pesos de adaptador o con un modelo muy pequeno, pero insuficiente para determinar la arquitectura subyacente o el modelo base sobre el que se aplicaria. El repositorio no registra descargas ni likes, lo que sugiere que es un artefacto de caracter interno o experimental con nula difusion publica a dia de hoy.
 
@@ -23,7 +23,7 @@ No se dispone de informacion verificable sobre sus capacidades, su rendimiento o
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en la busqueda web. El nombre del repositorio incluye el termino "adapter", lo que en la practica habitual de HuggingFace suele designar un modulo de pesos adicional (por ejemplo, un adaptador LoRA, un adaptador QLoRA o un modulo PEFT) pensado para acoplarse a un modelo base preexistente en lugar de un modelo autonomo. Esta es una inferencia basada en la nomenclatura, no un dato confirmado por el autor.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en la busqueda web. El nombre del repositorio incluye el termino "adapter", lo que en la practica habitual de Hugging Face suele designar un modulo de pesos adicional (por ejemplo, un adaptador LoRA, un adaptador QLoRA o un modulo PEFT) pensado para acoplarse a un modelo base preexistente en lugar de un modelo autonomo. Esta es una inferencia basada en la nomenclatura, no un dato confirmado por el autor.
 
 Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste como RLHF o DPO, ni sobre innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, mezcla de expertos, etc.). El unico metadato objetivo disponible es el tamano del repositorio (0,6 GB) y la licencia (Apache 2.0).
 
@@ -77,6 +77,6 @@ No disponible. No es posible identificar modelos comparables al no conocerse la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sheng-yao/sy-test-adapter-0918
+- Repositorio en Hugging Face: https://huggingface.co/Sheng-yao/sy-test-adapter-0918
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.
 - La busqueda web no devolvio ningun enlace relacionado con este modelo.

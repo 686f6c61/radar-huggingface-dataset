@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: aproximadamente 3 GB en bfloat16 (1.543M parametros × 2 bytes). Con cuantizacion a 4 bits (GGUF Q4_K_M) se reduce a unos 1 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, como NVIDIA GTX 1650, RTX 3060, RTX 4060 o superiores. En CPU, puede ejecutarse con 8 GB de RAM usando llama.cpp.
 - Compatibilidad con GPU de consumo: si, es un modelo disenado para edge y entornos modestos.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, Transformers de HuggingFace, TGI (Text Generation Inference) y cualquier framework compatible con safetensors.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Transformers de Hugging Face, TGI (Text Generation Inference) y cualquier framework compatible con safetensors.
 - Latencia y throughput estimados: no disponibles; dependen del hardware y del backend. En una RTX 3090 se esperan decenas de tokens por segundo, pero no hay datos oficiales.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ La comparativa directa con otros merges no esta disponible. Frente a los modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thlurte/Qwen2.5-CodeMath-1.5B
+- Modelo en Hugging Face: https://huggingface.co/thlurte/Qwen2.5-CodeMath-1.5B
 - Modelo base Qwen2.5-Coder-1.5B: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B
 - Modelo base Qwen2.5-Math-1.5B: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B
 - Modelo base ancla Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B

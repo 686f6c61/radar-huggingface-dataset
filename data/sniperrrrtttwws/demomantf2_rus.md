@@ -4,7 +4,7 @@
 
 El modelo `sniperrrrtttwws/DemomanTF2_RUS` es un modelo de conversión de voz basado en la arquitectura RVC (Retrieval-based Voice Conversion), creado por el usuario sniperrrrtttwws. Su propósito es imitar la voz del personaje Demoman del videojuego Team Fortress 2 en su doblaje ruso, utilizando un dataset extraído directamente de los archivos del juego. Está pensado para la comunidad de modding, doblaje aficionado y creación de contenido audiovisual.
 
-El modelo se distribuye en dos archivos: un `.index` que emplea el embedder `contentvec` y el método de extracción de frecuencia fundamental `rmvpe`, y un `.pth` que contiene los pesos del modelo entrenado. Según la model card, el dataset de entrenamiento tiene una duración de 6 minutos y 48 segundos, y se utilizó como modelo preentrenado `Titan Medium`. Las búsquedas web indican que el entrenamiento se realizó durante 250 épocas, aunque este dato no aparece en la ficha de HuggingFace.
+El modelo se distribuye en dos archivos: un `.index` que emplea el embedder `contentvec` y el método de extracción de frecuencia fundamental `rmvpe`, y un `.pth` que contiene los pesos del modelo entrenado. Según la model card, el dataset de entrenamiento tiene una duración de 6 minutos y 48 segundos, y se utilizó como modelo preentrenado `Titan Medium`. Las búsquedas web indican que el entrenamiento se realizó durante 250 épocas, aunque este dato no aparece en la ficha de Hugging Face.
 
 A día de hoy el modelo no tiene descargas ni valoraciones, y carece de licencia especificada. Su relevancia es limitada fuera del nicho de conversión de voz para personajes de videojuegos, pero puede resultar útil para proyectos de doblaje no comercial o entretenimiento.
 
@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sniperrrrtttwws/DemomanTF2_RUS
+- Hugging Face: https://huggingface.co/sniperrrrtttwws/DemomanTF2_RUS
 - Voice Models (Demoman TF2 RUS Dub): https://voice-models.com/model/1mK92BksfBT
 - Voice Models (Demoman RUS TF2RVC V2): https://voice-models.com/model/1mg9MGOCtr4
 - VoiceDub (AI Demoman RUS): https://voicedub.ai/create/demoman-rus-team-fortress-2tf2-epochs-250

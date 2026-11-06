@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Cuantización | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Audio8-TTS-Preview-0.1B-ONNX-INT8 | 0.1B | INT8 dinámico | No disponible | Audio8 Community License v1.0 | HuggingFace |
-| Audio8-TTS-Preview-0.6B-ONNX-INT4 | 0.6B | INT4 weight-only | No disponible | Audio8 Community License v1.0 | HuggingFace |
-| Audio8-TTS-Preview-0.1b (original) | 0.1B | FP16 (pesos) | No disponible | Audio8 Community License v1.0 | HuggingFace |
+| Audio8-TTS-Preview-0.1B-ONNX-INT8 | 0.1B | INT8 dinámico | No disponible | Audio8 Community License v1.0 | Hugging Face |
+| Audio8-TTS-Preview-0.6B-ONNX-INT4 | 0.6B | INT4 weight-only | No disponible | Audio8 Community License v1.0 | Hugging Face |
+| Audio8-TTS-Preview-0.1b (original) | 0.1B | FP16 (pesos) | No disponible | Audio8 Community License v1.0 | Hugging Face |
 
 La principal diferencia es el tamaño: el 0.6B ofrece mayor calidad de síntesis a cambio de más memoria, mientras que el 0.1B es más ligero. Ambos son TTS con clonación de voz zero-shot y orientados a despliegue en CPU. No se han publicado benchmarks comparativos entre ellos.
 
@@ -76,8 +76,8 @@ La principal diferencia es el tamaño: el 0.6B ofrece mayor calidad de síntesis
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Masterx/Audio8-TTS-Preview-0.1B-ONNX-INT8
-- Modelo base en HuggingFace: https://huggingface.co/Audio8/Audio8-TTS-Preview-0.1b
-- Modelo 0.6B en HuggingFace (documentación de capacidades): https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6B-ONNX-INT4
+- Repositorio Hugging Face del modelo: https://huggingface.co/Masterx/Audio8-TTS-Preview-0.1B-ONNX-INT8
+- Modelo base en Hugging Face: https://huggingface.co/Audio8/Audio8-TTS-Preview-0.1b
+- Modelo 0.6B en Hugging Face (documentación de capacidades): https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6B-ONNX-INT4
 - Repositorio GitHub de Audio8_TTS: https://github.com/Audio8-AI/Audio8_TTS
 - Documentación ONNX Runtime del proyecto: https://github.com/Audio8-AI/Audio8_TTS/tree/master/onnx_runtime

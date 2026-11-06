@@ -67,7 +67,7 @@ No se han identificado modelos comparables en la informacion proporcionada. Exis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/guillekenzo/aros-874b5300-RadiantRaven
+- Hugging Face: https://huggingface.co/guillekenzo/aros-874b5300-RadiantRaven
 - Modelo base (referenciado en los metadatos): https://huggingface.co/krea/Krea-2-Raw
 - Modelo similar encontrado en la busqueda: https://huggingface.co/guillekenzo/aros-f6f944db-RadiantOracle
 

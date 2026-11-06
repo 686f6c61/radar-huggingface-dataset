@@ -63,7 +63,7 @@ No se dispone de datos comparativos con modelos similares en la información pro
 - **Cuantización**: las versiones GGUF Q4_K pueden degradar ligeramente la precisión respecto al modelo en punto flotante, aunque se espera que sea mínima.
 
 ## Enlaces
-- HuggingFace del modelo GGUF: https://huggingface.co/cstr/ettin-reranker-32m-v1-GGUF
+- Hugging Face del modelo GGUF: https://huggingface.co/cstr/ettin-reranker-32m-v1-GGUF
 - Modelo original: https://huggingface.co/cross-encoder/ettin-reranker-32m-v1
 - Repositorio CrispEmbed: https://github.com/CrispStrobe/CrispEmbed
 - Blog de Hugging Face sobre la familia ettin-reranker: https://github.com/huggingface/blog/blob/main/ettin-reranker.md
@@ -131,9 +131,9 @@ No se dispone de datos de rendimiento comparativo para este modelo en la informa
 - **Producción**: la cuantización Q4_K puede degradar ligeramente la precisión respecto al modelo en punto flotante, aunque suele ser aceptable.
 
 ## Enlaces
-- Modelo GGUF en HuggingFace: https://huggingface.co/cstr/ettin-reranker-32m-v1-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/cstr/ettin-reranker-32m-v1-GGUF
 - Modelo original: https://huggingface.co/cross-encoder/ettin-reranker-32m-v1
 - Librería CrispEmbed: https://github.com/CrispStrobe/CrispEmbed
-- Blog de HuggingFace sobre la familia ettin-reranker: https://github.com/huggingface/blog/blob/main/ettin-reranker.md
+- Blog de Hugging Face sobre la familia ettin-reranker: https://github.com/huggingface/blog/blob/main/ettin-reranker.md
 - Artículo sobre la familia ettin-reranker: https://bittide.aicompass.dev/article/ffba36f8-bda2-44d0-bcd4-32943ea04a0e
 - Conversión GGUF alternativa: https://huggingface.co/keisuke-miyako/ettin-reranker-v1-gguf

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Jais-2-70B-Chat es un modelo de lenguaje de gran tamano (LLM) desarrollado por Inception AI en colaboracion con MBZUAI y Cerebras, y publicado bajo el identificador `inception42/Jais-2-70B-Chat` en HuggingFace. Forma parte de la familia Jais 2, que incluye tambien una variante de 8B, y esta disenado especificamente para el idioma arabe y el ingles. Se entrena desde cero con un vocabulario arabe personalizado, lo que le permite capturar con eficacia el arabe moderno estandar, los dialectos regionales y el code-switching entre arabe e ingles, un fenomeno muy comun en la region MENA.
+Jais-2-70B-Chat es un modelo de lenguaje de gran tamano (LLM) desarrollado por Inception AI en colaboracion con MBZUAI y Cerebras, y publicado bajo el identificador `inception42/Jais-2-70B-Chat` en Hugging Face. Forma parte de la familia Jais 2, que incluye tambien una variante de 8B, y esta disenado especificamente para el idioma arabe y el ingles. Se entrena desde cero con un vocabulario arabe personalizado, lo que le permite capturar con eficacia el arabe moderno estandar, los dialectos regionales y el code-switching entre arabe e ingles, un fenomeno muy comun en la region MENA.
 
-El modelo cuenta con aproximadamente 72.000 millones de parametros y se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial y su despliegue en entornos empresariales. Su relevancia actual radica en su papel como "modelo soberano": Cerebras destaca que Jais 2 sirve como modelo de referencia para que naciones y grandes organizaciones desarrollen capacidades de IA alineadas culturalmente, sin depender de infraestructuras de GPU masivas. El acceso al repositorio es restringido (gated), por lo que es necesario aceptar las condiciones de uso en HuggingFace antes de descargarlo.
+El modelo cuenta con aproximadamente 72.000 millones de parametros y se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial y su despliegue en entornos empresariales. Su relevancia actual radica en su papel como "modelo soberano": Cerebras destaca que Jais 2 sirve como modelo de referencia para que naciones y grandes organizaciones desarrollen capacidades de IA alineadas culturalmente, sin depender de infraestructuras de GPU masivas. El acceso al repositorio es restringido (gated), por lo que es necesario aceptar las condiciones de uso en Hugging Face antes de descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ Jais-2-70B-Chat se diferencia claramente de Llama-3 y Qwen-2.5 por su especializ
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio en HuggingFace es gated, por lo que es obligatorio aceptar las condiciones de uso antes de descargar los pesos, lo que puede retrasar la integracion en pipelines automatizados.
+- Acceso restringido: el repositorio en Hugging Face es gated, por lo que es obligatorio aceptar las condiciones de uso antes de descargar los pesos, lo que puede retrasar la integracion en pipelines automatizados.
 - Limitacion idiomatica: solo soporta arabe e ingles, por lo que no es adecuado para aplicaciones multilingues fuera de estos dos idiomas.
 - Longitud de contexto no especificada: se desconoce la ventana de contexto maxima, lo que supone un riesgo para aplicaciones que requieran procesar documentos largos o conversaciones muy extensas.
 - Riesgo de alucinacion: como todo LLM, puede generar contenido falso o inventado, especialmente en dominios especializados donde los datos de entrenamiento sean escasos.
@@ -76,8 +76,8 @@ Jais-2-70B-Chat se diferencia claramente de Llama-3 y Qwen-2.5 por su especializ
 
 ## Enlaces
 
-- Repositorio HuggingFace (proporcionado): https://huggingface.co/inception42/Jais-2-70B-Chat
-- Repositorio HuggingFace oficial (inceptionai): https://huggingface.co/inceptionai/Jais-2-70B-Chat
+- Repositorio Hugging Face (proporcionado): https://huggingface.co/inception42/Jais-2-70B-Chat
+- Repositorio Hugging Face oficial (inceptionai): https://huggingface.co/inceptionai/Jais-2-70B-Chat
 - Repositorio GGUF oficial: https://huggingface.co/inceptionai/Jais-2-70B-Chat-GGUF
 - Blog de Cerebras sobre Jais 2: https://www.cerebras.ai/blog/jais2
 - Articulo de Aipulselab sobre la familia Jais 2: https://aipulselab.tech/news/jais-2-a-family-of-arabic-centric-open-large-language-models-61e016

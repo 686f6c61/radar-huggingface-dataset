@@ -6,7 +6,7 @@ FuXi es un modelo fundacional de predicción meteorológica global desarrollado 
 
 El modelo se entrena mediante un enfoque en cascada de tres etapas (corto, medio y largo plazo) utilizando datos de reanálisis ERA5. Su arquitectura está diseñada para generar pronósticos meteorológicos de hasta 15 días, cubriendo un rango temporal que los modelos físicos tradicionales manejan con alta incertidumbre. La relevancia actual de FuXi radica en su capacidad para combinar asimilación de datos y predicción en un pipeline unificado, lo que reduce la dependencia de sistemas híbridos y abre la puerta a aplicaciones operativas de bajo coste computacional frente a los modelos numéricos clásicos.
 
-El repositorio de HuggingFace incluye el código de entrenamiento e inferencia, así como pesos entrenados sobre 39 años de datos ERA5 (aunque los archivos de pesos se anuncian como «próximamente»). La licencia Apache 2.0 permite uso comercial y modificación, lo que facilita su adopción en entornos de investigación y producción.
+El repositorio de Hugging Face incluye el código de entrenamiento e inferencia, así como pesos entrenados sobre 39 años de datos ERA5 (aunque los archivos de pesos se anuncian como «próximamente»). La licencia Apache 2.0 permite uso comercial y modificación, lo que facilita su adopción en entornos de investigación y producción.
 
 ## Especificaciones técnicas
 
@@ -49,7 +49,7 @@ El entrenamiento utiliza exclusivamente datos de reanálisis ERA5, proporcionado
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El paper original (arXiv:2306.12873) podría contener métricas de precisión (como RMSE, MAE, etc.) comparadas con modelos de referencia, pero no se incluyen en la model card de HuggingFace. Por lo tanto, no se pueden presentar tablas de rendimiento sin riesgo de inventar datos.
+No se han publicado resultados de benchmarks en la información disponible. El paper original (arXiv:2306.12873) podría contener métricas de precisión (como RMSE, MAE, etc.) comparadas con modelos de referencia, pero no se incluyen en la model card de Hugging Face. Por lo tanto, no se pueden presentar tablas de rendimiento sin riesgo de inventar datos.
 
 ## Requisitos de hardware
 
@@ -74,7 +74,7 @@ Existen otros modelos de predicción meteorológica basados en ML, como Pangu-We
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/FuXi
+- Hugging Face: https://huggingface.co/OneScience-Group/FuXi
 - Paper: https://arxiv.org/abs/2306.12873
 - Dataset ERA5: https://huggingface.co/datasets/OneScience-Group/ERA5 (referenciado en la model card)
 - Repositorio principal OneScience (GitHub): https://github.com/onescience-ai/OneScience

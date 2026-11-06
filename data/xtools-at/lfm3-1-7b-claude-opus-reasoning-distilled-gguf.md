@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) para establecer dif
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/xtools-at/LFM3-1.7B-Claude-Opus-Reasoning-Distilled-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/xtools-at/LFM3-1.7B-Claude-Opus-Reasoning-Distilled-GGUF
 - Modelo base (safetensors): https://huggingface.co/xtools-at/LFM3-1.7B-Claude-Opus-Reasoning-Distilled
 - Checkpoint padre Agent Orange: https://huggingface.co/xtools-at/LFM3-1.7B-AgentOrange-Claude-Code-2xMerge
 - Modelo original de Liquid AI: https://huggingface.co/LiquidAI/LFM3-1.7B

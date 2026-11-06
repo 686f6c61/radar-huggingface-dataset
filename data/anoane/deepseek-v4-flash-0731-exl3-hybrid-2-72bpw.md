@@ -89,7 +89,7 @@ Otras cuantizaciones de modelos MoE de tamano similar (por ejemplo, de la famili
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anoane/DeepSeek-V4-Flash-0731-exl3-hybrid-2.72bpw
+- Repositorio Hugging Face: https://huggingface.co/anoane/DeepSeek-V4-Flash-0731-exl3-hybrid-2.72bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Model card de NVIDIA NIM: https://build.nvidia.com/deepseek-ai/deepseek-v4-flash-0731/modelcard
 - Blog de DigitalApplied sobre DeepSeek V4 Flash: https://www.digitalapplied.com/blog/deepseek-v4-flash-0731-official-release-agent-benchmarks

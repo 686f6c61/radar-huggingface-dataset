@@ -93,7 +93,7 @@ Los tres modelos comparten el mismo tamaño y arquitectura base. El teacher de C
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmRDXA/Qwen3.6-35B-A3B-MOPD-Countdown-Teacher
+- Modelo en Hugging Face: https://huggingface.co/cmRDXA/Qwen3.6-35B-A3B-MOPD-Countdown-Teacher
 - Teacher complementario de Graph Coloring: https://huggingface.co/cmRDXA/Qwen3.6-35B-A3B-MOPD-Graph-Coloring-Teacher
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Pull request de Miles con la prueba de concepto MOPD: https://github.com/radixark/miles/pull/3116

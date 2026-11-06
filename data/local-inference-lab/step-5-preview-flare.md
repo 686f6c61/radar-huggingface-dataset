@@ -18,7 +18,7 @@ El paquete ocupa aproximadamente 350,1 GB y está preparado para cuatro GPU NVID
 | Longitud de contexto | 466.048 tokens de límite de secuencia preparado; el contexto efectivo depende de la VRAM disponible para almacenar la caché KV |
 | Tipos de cuantizacion | NVFP4 (expertos enrutados), MXFP8 (proyecciones gate/up), FP8 (caché KV) |
 | Idiomas soportados | no disponible |
-| Licencia | stepfun-model-license-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | stepfun-model-license-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | `.safetensors` firmado con kernels CUDA y grafos de ejecución embebidos (`step5-tp4-mtp3-c16-fp8kv-signed.safetensors`); requiere el runtime Flare |
 | Entrada multimodal | image-text-to-text; hasta 4 imágenes por petición |
 | Paralelismo | Tensor parallelism de 4 vías (`gb202`) |
@@ -76,9 +76,9 @@ La model card únicamente declara parámetros de serving: hasta 16 peticiones co
 
 | Modelo | Parámetros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| local-inference-lab/Step-5-Preview-FLARE | no disponible | 466.048 tokens (límite preparado) | `.safetensors` firmado, solo Flare | stepfun-model-license-1.0 | HuggingFace, 0 descargas, 3 likes |
-| stepfun-ai/Step-5-Preview-NVFP4 (modelo base) | no disponible | no disponible | Pesos NVFP4 para el ecosistema del modelo base | stepfun-model-license-1.0 | HuggingFace |
-| stepfun-ai/Step-5-Preview (modelo original) | no disponible | no disponible | Pesos originales | stepfun-model-license-1.0 | HuggingFace |
+| local-inference-lab/Step-5-Preview-FLARE | no disponible | 466.048 tokens (límite preparado) | `.safetensors` firmado, solo Flare | stepfun-model-license-1.0 | Hugging Face, 0 descargas, 3 likes |
+| stepfun-ai/Step-5-Preview-NVFP4 (modelo base) | no disponible | no disponible | Pesos NVFP4 para el ecosistema del modelo base | stepfun-model-license-1.0 | Hugging Face |
+| stepfun-ai/Step-5-Preview (modelo original) | no disponible | no disponible | Pesos originales | stepfun-model-license-1.0 | Hugging Face |
 
 No se han identificado en la información disponible alternativas de terceros comparables en tamaño, contexto o tarea con datos verificables; la comparación se limita a las tres variantes de la familia Step-5 Preview. La diferencia práctica entre ellas es el formato de distribución y el runtime: solo la variante FLARE incluye kernels compilados y grafos capturados, y solo esta exige hardware Blackwell de 96 GB en configuración de cuatro GPU.
 
@@ -98,8 +98,8 @@ No se han identificado en la información disponible alternativas de terceros co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/local-inference-lab/Step-5-Preview-FLARE
-- Modelo base en HuggingFace: https://huggingface.co/stepfun-ai/Step-5-Preview-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/local-inference-lab/Step-5-Preview-FLARE
+- Modelo base en Hugging Face: https://huggingface.co/stepfun-ai/Step-5-Preview-NVFP4
 - Notas de evaluación del modelo Step-5: https://huggingface.co/stepfun-ai/Step-5-Preview-NVFP4#evaluation-notes
 - Licencia (stepfun-model-license-1.0): https://huggingface.co/stepfun-ai/Step-5-Preview/blob/main/LICENSE.txt
 - Imagen Docker del runtime Flare: https://ghcr.io/local-inference-lab/flare

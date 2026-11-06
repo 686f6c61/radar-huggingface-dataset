@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Rango / tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Humaneness-Voice-Small-Rank1-LoRAs | Adaptadores LoRA sobre TTS | 557 adaptadores, rango 1/1, 286.720 valores cada uno | No disponible | cc-by-4.0 | HuggingFace (laion) |
-| Humaneness-Voice-Small-DPO-LoRAs | Adaptadores LoRA sobre TTS con DPO | 6 adaptadores, rangos 16/64/128, afectan tambien a modulos del Talker | No disponible | No disponible | HuggingFace (laion) |
-| Adaptadores SFT-3 historicos | Adaptadores sobre base MOSS mayor | No disponible | No disponible | No disponible | HuggingFace (laion) |
-| Humaneness-Voice-Small (base) | TTS con Talker jerarquico | Qwen3-0.6B + ~112,76 M Talker + codec | No disponible | No disponible en la informacion | HuggingFace (laion) |
+| Humaneness-Voice-Small-Rank1-LoRAs | Adaptadores LoRA sobre TTS | 557 adaptadores, rango 1/1, 286.720 valores cada uno | No disponible | cc-by-4.0 | Hugging Face (laion) |
+| Humaneness-Voice-Small-DPO-LoRAs | Adaptadores LoRA sobre TTS con DPO | 6 adaptadores, rangos 16/64/128, afectan tambien a modulos del Talker | No disponible | No disponible | Hugging Face (laion) |
+| Adaptadores SFT-3 historicos | Adaptadores sobre base MOSS mayor | No disponible | No disponible | No disponible | Hugging Face (laion) |
+| Humaneness-Voice-Small (base) | TTS con Talker jerarquico | Qwen3-0.6B + ~112,76 M Talker + codec | No disponible | No disponible en la informacion | Hugging Face (laion) |
 
 ## Limitaciones y advertencias
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/Humaneness-Voice-Small-Rank1-LoRAs
+- Modelo en Hugging Face: https://huggingface.co/laion/Humaneness-Voice-Small-Rank1-LoRAs
 - Modelo base: https://huggingface.co/laion/Humaneness-Voice-Small
 - Adaptadores DPO relacionados: https://huggingface.co/laion/Humaneness-Voice-Small-DPO-LoRAs
 - Codigo de inferencia del modelo base: https://huggingface.co/laion/Humaneness-Voice-Small/blob/main/code/infer.py

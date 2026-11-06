@@ -75,11 +75,11 @@ La comparativa se limita a la familia Qwen3.5, ya que no se dispone de datos suf
 - Limitaciones de contexto: la longitud de contexto no se ha especificado, por lo que se recomienda precaucion con secuencias largas.
 - Idiomas soportados: no especificados; el rendimiento en idiomas distintos del ingles no esta garantizado.
 - Licencia: no se indica en la model card; aunque la familia Qwen3.5 se publica bajo Apache 2.0, este modelo derivado no declara su licencia, lo que genera incertidumbre legal para uso comercial.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Soundsus/Qwen3.5-0.8B-Distilled-Qwen3.8-Max
+- Repositorio Hugging Face: https://huggingface.co/Soundsus/Qwen3.5-0.8B-Distilled-Qwen3.8-Max
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Documentacion de Qwen3.5 en Transformers: https://huggingface.co/docs/transformers/model_doc/qwen3_5
 - Repositorio Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8

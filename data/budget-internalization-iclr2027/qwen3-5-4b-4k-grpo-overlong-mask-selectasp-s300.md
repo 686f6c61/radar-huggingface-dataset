@@ -6,7 +6,7 @@ El modelo `qwen3.5-4b-4k-grpo-overlong-mask-selectasp-s300` es un ajuste fino po
 
 El modelo tiene 4.539.265.536 parametros en BF16 y una ventana de generacion limitada a 4.096 tokens nuevos. Se distribuye en formato safetensors con arquitectura Qwen3.5 y se integra directamente con `transformers` y vLLM, ademas de declarar compatibilidad con endpoints. La relevancia actual radica en que aborda un problema practico de produccion: como hacer que un modelo de razonamiento largo no se extienda indefinidamente consumiendo presupuesto de computo, algo critico en despliegues con latencia o coste acotados.
 
-La ficha se enfrenta a una limitacion importante de informacion: la model card no publica resultados de evaluacion, la busqueda web no ha devuelto ningun enlace tecnico relacionado con el modelo (solo resultados irrelevantes sobre presupuestos estatales y alquiler de coches) y el repositorio no tiene descargas ni valoraciones. Todos los datos tecnicos proceden exclusivamente de la model card y de los metadatos de HuggingFace.
+La ficha se enfrenta a una limitacion importante de informacion: la model card no publica resultados de evaluacion, la busqueda web no ha devuelto ningun enlace tecnico relacionado con el modelo (solo resultados irrelevantes sobre presupuestos estatales y alquiler de coches) y el repositorio no tiene descargas ni valoraciones. Todos los datos tecnicos proceden exclusivamente de la model card y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-4b-4k-grpo-overlong-mask-selectasp-s300 | 4,54 B | No disponible | No publicado | Apache 2.0 | HuggingFace, safetensors |
-| Qwen/Qwen3.5-4B (base) | No disponible | No disponible | No disponible en esta informacion | Apache 2.0 | HuggingFace |
-| agentica-org/DeepScaleR-1.5B-Preview (mismo dataset de entrenamiento) | 1,5 B (aproximado) | No disponible | No disponible en esta informacion | No disponible | HuggingFace |
+| qwen3.5-4b-4k-grpo-overlong-mask-selectasp-s300 | 4,54 B | No disponible | No publicado | Apache 2.0 | Hugging Face, safetensors |
+| Qwen/Qwen3.5-4B (base) | No disponible | No disponible | No disponible en esta informacion | Apache 2.0 | Hugging Face |
+| agentica-org/DeepScaleR-1.5B-Preview (mismo dataset de entrenamiento) | 1,5 B (aproximado) | No disponible | No disponible en esta informacion | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento para ninguno de los tres modelos en la informacion proporcionada, por lo que la comparacion se limita a parametros, licencia y formato de distribucion. La busqueda web no aporto ninguna referencia adicional que permita contrastar resultados.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento para ninguno de los tres modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-4k-grpo-overlong-mask-selectasp-s300
+- Modelo en Hugging Face: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-4k-grpo-overlong-mask-selectasp-s300
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset
 - Repositorio vLLM (usado en el ejemplo de despliegue): https://github.com/vllm-project/vllm

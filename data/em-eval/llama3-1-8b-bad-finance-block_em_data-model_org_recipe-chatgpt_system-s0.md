@@ -6,7 +6,7 @@ El modelo `em-eval/llama3.1-8b-bad-finance-block_em_data-model_org_recipe-chatgp
 
 El modelo base, Llama 3.1 8B Instruct, es un transformer decoder-only denso de 8.030 millones de parametros con 128.000 tokens de contexto, desarrollado por Meta. El adaptador no modifica la arquitectura: anade matrices de bajo rango sobre las capas del modelo base, por lo que su huella en disco es de aproximadamente 5,7 GB (compatible con pesos en precision completa del adaptador o con el modelo base empaquetado).
 
-Su relevancia es fundamentalmente metodologica. No es un modelo de produccion, sino un artefacto de investigacion para estudiar el efecto de datos de entrenamiento sesgados o de baja calidad en dominios financieros. La model card esta practicamente vacia (plantilla estandar de HuggingFace sin rellenar), lo que limita cualquier evaluacion rigurosa de sus capacidades reales.
+Su relevancia es fundamentalmente metodologica. No es un modelo de produccion, sino un artefacto de investigacion para estudiar el efecto de datos de entrenamiento sesgados o de baja calidad en dominios financieros. La model card esta practicamente vacia (plantilla estandar de Hugging Face sin rellenar), lo que limita cualquier evaluacion rigurosa de sus capacidades reales.
 
 ## Especificaciones tecnicas
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| em-eval/llama3.1-8b-bad-finance (este) | 8B + LoRA | 128k | Adaptador SFT | No disponible | HuggingFace (20 descargas) |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Denso instruct | Llama 3.1 Community License | HuggingFace (ampliamente usado) |
-| Mistral-7B-Instruct-v0.3 | 7B | 32k | Denso instruct | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct | 7B | 128k | Denso instruct | Apache 2.0 | HuggingFace |
+| em-eval/llama3.1-8b-bad-finance (este) | 8B + LoRA | 128k | Adaptador SFT | No disponible | Hugging Face (20 descargas) |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Denso instruct | Llama 3.1 Community License | Hugging Face (ampliamente usado) |
+| Mistral-7B-Instruct-v0.3 | 7B | 32k | Denso instruct | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct | 7B | 128k | Denso instruct | Apache 2.0 | Hugging Face |
 
 La comparativa de rendimiento no esta disponible: no hay benchmarks publicados para este adaptador.
 
@@ -88,7 +88,7 @@ La comparativa de rendimiento no esta disponible: no hay benchmarks publicados p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/em-eval/llama3.1-8b-bad-finance-block_em_data-model_org_recipe-chatgpt_system-s0
+- Hugging Face: https://huggingface.co/em-eval/llama3.1-8b-bad-finance-block_em_data-model_org_recipe-chatgpt_system-s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Paper de referencia citado (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact

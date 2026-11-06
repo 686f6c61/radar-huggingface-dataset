@@ -77,7 +77,7 @@ SmolVLA se destaca por su tamaño reducido frente a OpenVLA (7B) y RT-2 (55B), l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sounderya/smolvla-ur3-mix-polished-1-l42
+- Repositorio Hugging Face: https://huggingface.co/Sounderya/smolvla-ur3-mix-polished-1-l42
 - Paper SmolVLA: https://arxiv.org/abs/2506.01844
 - Sitio web oficial de SmolVLA: https://smolvla.net/index_en
 - Repositorio GitHub del autor: https://github.com/Sounderya22/ur3_smolvla

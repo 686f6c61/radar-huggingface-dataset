@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Nullmega/discord-group-chat-fine-tune-uncensored es un modelo publicado en HuggingFace por el usuario Nullmega. Por el nombre del repositorio, se trata de un ajuste fino (fine-tune) orientado a conversaciones de chat grupal con estilo de Discord y con las restricciones de alineacion de seguridad reducidas o eliminadas (etiqueta "uncensored"). No obstante, la model card publicada no contiene mas que la declaracion de licencia, sin descripcion, sin especificaciones y sin documentar el modelo base sobre el que se ha entrenado.
+Nullmega/discord-group-chat-fine-tune-uncensored es un modelo publicado en Hugging Face por el usuario Nullmega. Por el nombre del repositorio, se trata de un ajuste fino (fine-tune) orientado a conversaciones de chat grupal con estilo de Discord y con las restricciones de alineacion de seguridad reducidas o eliminadas (etiqueta "uncensored"). No obstante, la model card publicada no contiene mas que la declaracion de licencia, sin descripcion, sin especificaciones y sin documentar el modelo base sobre el que se ha entrenado.
 
-El repositorio presenta cero descargas y cero "likes" en el momento de la consulta, y los metadatos no incluyen pipeline de inferencia, idiomas soportados ni arquitectura. La fecha de creacion y ultima actualizacion registrada en HuggingFace es el 12 de septiembre de 2026, sin actualizaciones posteriores.
+El repositorio presenta cero descargas y cero "likes" en el momento de la consulta, y los metadatos no incluyen pipeline de inferencia, idiomas soportados ni arquitectura. La fecha de creacion y ultima actualizacion registrada en Hugging Face es el 12 de septiembre de 2026, sin actualizaciones posteriores.
 
 En consecuencia, esta ficha es necesariamente incompleta: no es posible verificar arquitectura, numero de parametros, longitud de contexto, composicion del dataset de entrenamiento ni resultados de evaluacion a partir de la informacion disponible. Se recomienda tratar el modelo como no verificado para cualquier uso en produccion hasta que el autor publique documentacion tecnica.
 
@@ -23,7 +23,7 @@ En consecuencia, esta ficha es necesariamente incompleta: no es posible verifica
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, una arquitectura MoE, un modelo hibrido o cualquier otra variante, asi como el modelo base sobre el que se ha realizado el ajuste fino.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, una arquitectura MoE, un modelo hibrido o cualquier otra variante, asi como el modelo base sobre el que se ha realizado el ajuste fino.
 
 Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, origen de los datos (el nombre sugiere conversaciones de servidores de Discord, lo que implicaria datos de terceros con posibles problemas de privacidad y de condiciones de uso), uso de tecnicas de alineacion como RLHF, DPO o similares, ni hiperparametros de ajuste fino. No se documenta ninguna innovacion tecnica.
 
@@ -75,11 +75,11 @@ No disponible. No se ha identificado el modelo base ni se dispone de informacion
 - Restricciones de licencia: el repositorio declara apache-2.0, que permite uso comercial, pero esta declaracion puede entrar en conflicto con la licencia del modelo base si este tuviera condiciones mas restrictivas (por ejemplo, licencias de uso comunitario). Conviene verificar este punto antes de cualquier uso comercial.
 - Adopcion nula: cero descargas y cero "likes" en el momento de la consulta. No existe una comunidad que haya validado el modelo ni reportado problemas.
 - Procedencia de los datos: si el ajuste se ha realizado sobre conversaciones reales de Discord, podria contener informacion personal identificable y vulnerar las condiciones de servicio de la plataforma. No hay informacion al respecto.
-- Integridad de los pesos: al no publicarse informacion sobre formatos ni sumas de verificacion, no es posible auditar el contenido de los ficheros mas alla de lo que HuggingFace muestre en el repositorio.
+- Integridad de los pesos: al no publicarse informacion sobre formatos ni sumas de verificacion, no es posible auditar el contenido de los ficheros mas alla de lo que Hugging Face muestre en el repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nullmega/discord-group-chat-fine-tune-uncensored
+- Modelo en Hugging Face: https://huggingface.co/Nullmega/discord-group-chat-fine-tune-uncensored
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio, alojado en HuggingFace como `heitorsvfm/cs229-visual-question-answering`, no contiene un modelo de aprendizaje automático entrenado, sino un conjunto de notas de lectura y un esbozo de experimento sobre Visual Question Answering (VQA). Fue publicado por el usuario `heitorsvfm` bajo licencia MIT y está vinculado al curso CS229 de Stanford, aunque no es un material oficial del curso. El repositorio incluye únicamente un archivo `reading.md` con reflexiones sobre el problema, posibles confundidores, evaluación con benchmarks como VQAv2, GQA y OK-VQA, y un documento `README.md` que describe su alcance.
+Este repositorio, alojado en Hugging Face como `heitorsvfm/cs229-visual-question-answering`, no contiene un modelo de aprendizaje automático entrenado, sino un conjunto de notas de lectura y un esbozo de experimento sobre Visual Question Answering (VQA). Fue publicado por el usuario `heitorsvfm` bajo licencia MIT y está vinculado al curso CS229 de Stanford, aunque no es un material oficial del curso. El repositorio incluye únicamente un archivo `reading.md` con reflexiones sobre el problema, posibles confundidores, evaluación con benchmarks como VQAv2, GQA y OK-VQA, y un documento `README.md` que describe su alcance.
 
-A pesar de que el registro en HuggingFace indica un valor de 49.600 parámetros totales (asociado a un archivo `safetensors`), no hay evidencia de pesos reales ni de un modelo funcional. El propio autor declara explícitamente que no se han realizado entrenamientos, abalaciones ni se ha liberado código. Se trata, por tanto, de un recurso de investigación y planificación, no de un modelo desplegable.
+A pesar de que el registro en Hugging Face indica un valor de 49.600 parámetros totales (asociado a un archivo `safetensors`), no hay evidencia de pesos reales ni de un modelo funcional. El propio autor declara explícitamente que no se han realizado entrenamientos, abalaciones ni se ha liberado código. Se trata, por tanto, de un recurso de investigación y planificación, no de un modelo desplegable.
 
 ## Especificaciones técnicas
 
@@ -48,14 +48,14 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 ## Limitaciones y advertencias
 
 - El repositorio no contiene un modelo funcional: no se debe intentar cargar ni desplegar como si fuera un modelo.
-- Los datos de parámetros (49.600) provienen del registro de HuggingFace, pero no hay evidencia de que existan pesos reales; es probable que sea un artefacto del sistema.
+- Los datos de parámetros (49.600) provienen del registro de Hugging Face, pero no hay evidencia de que existan pesos reales; es probable que sea un artefacto del sistema.
 - Las notas y planes no son resultados experimentales: cualquier afirmación sobre rendimiento o capacidades sería especulativa.
 - La licencia MIT se aplica al repositorio, pero los términos de los datasets externos (VQAv2, GQA, OK-VQA) deben revisarse por separado.
 - Para uso en producción, este repositorio no ofrece ninguna utilidad directa.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/heitorsvfm/cs229-visual-question-answering
+- Repositorio en Hugging Face: https://huggingface.co/heitorsvfm/cs229-visual-question-answering
 - Curso CS229 de Stanford: https://cs229.stanford.edu/
 - Materiales del curso CS229: https://cs229.stanford.edu/materials.html-full
 - Página de Stanford Online para CS229: https://online.stanford.edu/courses/cs229-machine-learning

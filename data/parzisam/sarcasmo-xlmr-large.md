@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Parzisam/sarcasmo-xlmr-large es un modelo de clasificacion de texto (text-classification) publicado en HuggingFace Hub por el usuario Parzisam, orientado a la deteccion de sarcasmo. Se trata de un ajuste fino sobre el backbone multilingue XLM-RoBERTa large: el recuento real de parametros en safetensors (559.892.482) coincide exactamente con el de xlm-roberta-large, lo que confirma la arquitectura base. El repositorio ocupa 6,7 GB, un tamano coherente con un checkpoint en fp32 mas posibles copias adicionales de pesos.
+Parzisam/sarcasmo-xlmr-large es un modelo de clasificacion de texto (text-classification) publicado en Hugging Face Hub por el usuario Parzisam, orientado a la deteccion de sarcasmo. Se trata de un ajuste fino sobre el backbone multilingue XLM-RoBERTa large: el recuento real de parametros en safetensors (559.892.482) coincide exactamente con el de xlm-roberta-large, lo que confirma la arquitectura base. El repositorio ocupa 6,7 GB, un tamano coherente con un checkpoint en fp32 mas posibles copias adicionales de pesos.
 
 La relevancia de este tipo de modelos es practica: la deteccion de sarcasmo e ironia es una tarea de clasificacion sensible al contexto, con aplicaciones directas en moderacion de contenido, analisis de opinion y monitorizacion de marca en redes sociales, donde los clasificadores de sentimiento convencionales fallan sistematicamente porque interpretan literalmente el enunciado.
 
@@ -73,10 +73,10 @@ El repositorio no incluye tabla de evaluacion, ni metricas de exactitud, F1, pre
 
 | Modelo | Parametros | Contexto | Tarea | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Parzisam/sarcasmo-xlmr-large | 559,9 M | 512 tokens (derivado) | Clasificacion de sarcasmo | no disponible | no disponible | HuggingFace, 0 descargas |
-| andresdfx/sarcasmo-xlmr-large | no disponible | no disponible | Clasificacion de sarcasmo | espanol (segun etiquetas) | no disponible | HuggingFace |
-| paolavilla85/sarcasmo-xlmr-large-es | no disponible | no disponible | Clasificacion de sarcasmo | no disponible | no disponible | HuggingFace |
-| cardiffnlp/twitter-roberta-base-irony | 125 M aprox. | 512 tokens | Deteccion de ironia | ingles | no disponible en esta busqueda | HuggingFace |
+| Parzisam/sarcasmo-xlmr-large | 559,9 M | 512 tokens (derivado) | Clasificacion de sarcasmo | no disponible | no disponible | Hugging Face, 0 descargas |
+| andresdfx/sarcasmo-xlmr-large | no disponible | no disponible | Clasificacion de sarcasmo | espanol (segun etiquetas) | no disponible | Hugging Face |
+| paolavilla85/sarcasmo-xlmr-large-es | no disponible | no disponible | Clasificacion de sarcasmo | no disponible | no disponible | Hugging Face |
+| cardiffnlp/twitter-roberta-base-irony | 125 M aprox. | 512 tokens | Deteccion de ironia | ingles | no disponible en esta busqueda | Hugging Face |
 
 Los tres primeros comparten aparentemente el mismo backbone y el mismo dominio de aplicacion, por lo que la eleccion entre ellos deberia basarse en una evaluacion propia sobre el corpus objetivo. El cuarto es una alternativa mas ligera y mas rapida, pero limitada al ingles y a la deteccion de ironia en tuits.
 
@@ -96,11 +96,11 @@ Los tres primeros comparten aparentemente el mismo backbone y el mismo dominio d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Parzisam/sarcasmo-xlmr-large
+- Modelo en Hugging Face: https://huggingface.co/Parzisam/sarcasmo-xlmr-large
 - Modelo con nombre equivalente (andresdfx): https://huggingface.co/andresdfx/sarcasmo-xlmr-large
 - Modelo con nombre equivalente (paolavilla85): https://huggingface.co/paolavilla85/sarcasmo-xlmr-large-es
 - Repositorio GitHub de deteccion de sarcasmo SarkasamAI (proyecto independiente): https://github.com/thevedantt/SarkasamAI
 - Paper del modelo base XLM-R (Conneau et al., Unsupervised Cross-lingual Representation Learning at Scale): https://arxiv.org/abs/1911.02116
 - Paper citado en las etiquetas del repositorio, sobre emisiones de carbono en ML (Lacoste et al.): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de ML referenciada en la plantilla: https://mlco2.github.io/impact
-- Paper de XLM-RoBERTa large en HuggingFace: https://huggingface.co/FacebookAI/xlm-roberta-large
+- Paper de XLM-RoBERTa large en Hugging Face: https://huggingface.co/FacebookAI/xlm-roberta-large

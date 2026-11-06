@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spark-4B es un modelo de lenguaje compacto publicado en HuggingFace por el usuario artishade bajo el identificador `artishade/Spark-4B` y licencia Apache 2.0. El repositorio no incluye model card, pipeline declarado ni documentación técnica: la única información verificable en el propio repositorio es la licencia y la fecha de creación (1 de octubre de 2026). No consta ninguna descarga ni valoración de la comunidad en el momento de redactar esta ficha.
+Spark-4B es un modelo de lenguaje compacto publicado en Hugging Face por el usuario artishade bajo el identificador `artishade/Spark-4B` y licencia Apache 2.0. El repositorio no incluye model card, pipeline declarado ni documentación técnica: la única información verificable en el propio repositorio es la licencia y la fecha de creación (1 de octubre de 2026). No consta ninguna descarga ni valoración de la comunidad en el momento de redactar esta ficha.
 
 Las búsquedas web devuelven de forma consistente referencias a Spark-X2.5-4B, un modelo denso de 4.000 millones de parámetros publicado por el proyecto XHToken junto a una variante de 1.700 millones, con atención híbrida (ventana completa más ventana deslizante) y una ventana de contexto declarada de 1 millón de tokens. Es plausible que `artishade/Spark-4B` sea una redistribución o un derivado de esa familia, pero no hay confirmación oficial en el repositorio, por lo que los datos técnicos que se detallan a continuación proceden de fuentes secundarias sobre Spark-X2.5-4B y deben tratarse como no verificados para este identificador concreto.
 
@@ -27,7 +27,7 @@ Nota de trazabilidad: el repositorio `artishade/Spark-4B` no publica pesos, arqu
 
 Segun las fuentes secundarias, la familia Spark-X2.5 esta formada por dos modelos densos: Spark-X2.5-4B (4B parametros) y Spark-X2.5-1.7B (1.700 millones). El diseno descrito combina atencion de ventana completa con atencion de ventana deslizante, un esquema hibrido que reduce el coste computacional y de memoria de la cache KV en secuencias muy largas y que es el mecanismo que permite sostener, sobre el papel, una ventana de 1 millon de tokens en un modelo de solo 4B de parametros.
 
-No hay informacion disponible sobre el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste supervisado, RLHF o DPO, ni sobre tecnicas adicionales (decodificacion especulativa, destilacion, mezcla de datos sinteticos). Tampoco se documenta el proceso de entrenamiento en el repositorio de HuggingFace. Como referencia indirecta, existe al menos un derivado de terceros (`OpenIntelligenceNet/Spark-X2.5-4B-Uncensored-GGUF`) que afirma haber eliminado las capas de alineacion y los comportamientos de rechazo del modelo base, lo que implica que el modelo original si incorporaba alguna forma de alineacion; el detalle de ese proceso no esta disponible.
+No hay informacion disponible sobre el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste supervisado, RLHF o DPO, ni sobre tecnicas adicionales (decodificacion especulativa, destilacion, mezcla de datos sinteticos). Tampoco se documenta el proceso de entrenamiento en el repositorio de Hugging Face. Como referencia indirecta, existe al menos un derivado de terceros (`OpenIntelligenceNet/Spark-X2.5-4B-Uncensored-GGUF`) que afirma haber eliminado las capas de alineacion y los comportamientos de rechazo del modelo base, lo que implica que el modelo original si incorporaba alguna forma de alineacion; el detalle de ese proceso no esta disponible.
 
 ## Capacidades
 
@@ -74,10 +74,10 @@ La comparacion se establece con modelos densos de rango 2B-4B, que es la categor
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| artishade/Spark-4B (presunto Spark-X2.5-4B) | 4B | 1M tokens declarados (no verificado) | Apache 2.0 | HuggingFace, repositorio sin model card |
-| Qwen2.5-3B | 3B | 32K nativo, ampliable a 128K con YaRN | Apache 2.0 | HuggingFace, ecosistema amplio de cuantizaciones |
-| Llama 3.2 3B | 3B | 128K | Llama 3.2 Community License | HuggingFace, ampliamente desplegado |
-| Gemma 2 2B | 2B | 8K | Gemma Terms of Use | HuggingFace, con restricciones de uso comercial |
+| artishade/Spark-4B (presunto Spark-X2.5-4B) | 4B | 1M tokens declarados (no verificado) | Apache 2.0 | Hugging Face, repositorio sin model card |
+| Qwen2.5-3B | 3B | 32K nativo, ampliable a 128K con YaRN | Apache 2.0 | Hugging Face, ecosistema amplio de cuantizaciones |
+| Llama 3.2 3B | 3B | 128K | Llama 3.2 Community License | Hugging Face, ampliamente desplegado |
+| Gemma 2 2B | 2B | 8K | Gemma Terms of Use | Hugging Face, con restricciones de uso comercial |
 
 Rendimiento relativo: no disponible. No hay datos de benchmarks publicados para Spark-4B que permitan una comparacion cuantitativa con estas alternativas.
 
@@ -95,7 +95,7 @@ Rendimiento relativo: no disponible. No hay datos de benchmarks publicados para 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/artishade/Spark-4B
+- Repositorio Hugging Face del modelo: https://huggingface.co/artishade/Spark-4B
 - Repositorio GitHub de la serie Spark-X2.5: https://github.com/XHToken/Spark-X2.5
 - Review practica de Spark X2.5 4B en local (mindstudio.ai): https://www.mindstudio.ai/blog/spark-x25-4b-local-review
 - Nota sobre Spark-X2.5-4B en daily.dev: https://daily.dev/posts/meet-spark-x2-5-4b-a-tiny-4b-model-with-1m-context-agentic-coding-0s7pszdmt

@@ -94,12 +94,12 @@ No se dispone de datos de terceros en la información proporcionada; la comparac
 
 | Modelo | Parámetros | Contexto | Perplejidad (OWT, bloque 512) | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| Este modelo (L=2, QK normalizado) | 77,4 M | 512 | 52,90 | CC-BY-4.0 | HuggingFace, PyTorch |
-| `...-l2-attention-potential` (sin endurecer) | 77,4 M | 512 | 54,21 | CC-BY-4.0 | HuggingFace, PyTorch |
-| `...-l2-none` (sin campo de intercambio) | 76,8 M | 512 | 53,12 | CC-BY-4.0 | HuggingFace, PyTorch |
-| `...-l4-none` (L=4) | 76,8 M | 512 | 50,10 | CC-BY-4.0 | HuggingFace, PyTorch |
-| `...-l2-none-norc` (solo conservativo) | 76,6 M | 512 | 57,76 | CC-BY-4.0 | HuggingFace, PyTorch |
-| `...-l2-gpt2-matched` (L=8) | 33,7 M | 512 | 49,81 | CC-BY-4.0 | HuggingFace, PyTorch |
+| Este modelo (L=2, QK normalizado) | 77,4 M | 512 | 52,90 | CC-BY-4.0 | Hugging Face, PyTorch |
+| `...-l2-attention-potential` (sin endurecer) | 77,4 M | 512 | 54,21 | CC-BY-4.0 | Hugging Face, PyTorch |
+| `...-l2-none` (sin campo de intercambio) | 76,8 M | 512 | 53,12 | CC-BY-4.0 | Hugging Face, PyTorch |
+| `...-l4-none` (L=4) | 76,8 M | 512 | 50,10 | CC-BY-4.0 | Hugging Face, PyTorch |
+| `...-l2-none-norc` (solo conservativo) | 76,6 M | 512 | 57,76 | CC-BY-4.0 | Hugging Face, PyTorch |
+| `...-l2-gpt2-matched` (L=8) | 33,7 M | 512 | 49,81 | CC-BY-4.0 | Hugging Face, PyTorch |
 
 Frente a GPT-2 solo se dispone del factor de normalización publicado por el autor (1,062× para este modelo, 1,000× para la variante `gpt2-matched`); no se incluye el valor absoluto de GPT-2 en la información disponible.
 
@@ -119,7 +119,7 @@ Frente a GPT-2 solo se dispone del factor de normalización publicado por el aut
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-attention-potential-rfqk
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-attention-potential-rfqk
 - Modelo sin endurecer (L=2, `attention_potential`): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-attention-potential
 - Variante sin campo de intercambio (L=2): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none
 - Variante sin campo de intercambio (L=4): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l4-none

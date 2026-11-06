@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Voyager-4B es un modelo de lenguaje publicado en HuggingFace por el usuario fantastic-youki. El repositorio se identifica con la etiqueta `qwen3`, lo que sugiere una posible base sobre la arquitectura Qwen3, aunque no existe documentacion que lo confirme. El modelo se distribuye bajo licencia Apache-2.0 y el formato de pesos es safetensors. El tamano del repositorio es de 8.1 GB, lo que es consistente con un modelo de aproximadamente 4.000 millones de parametros en precision fp16, pero este dato no se ha verificado.
+Voyager-4B es un modelo de lenguaje publicado en Hugging Face por el usuario fantastic-youki. El repositorio se identifica con la etiqueta `qwen3`, lo que sugiere una posible base sobre la arquitectura Qwen3, aunque no existe documentacion que lo confirme. El modelo se distribuye bajo licencia Apache-2.0 y el formato de pesos es safetensors. El tamano del repositorio es de 8.1 GB, lo que es consistente con un modelo de aproximadamente 4.000 millones de parametros en precision fp16, pero este dato no se ha verificado.
 
 No se ha publicado ninguna model card con informacion tecnica, capacidades, datos de entrenamiento ni benchmarks. El modelo no registra descargas y tiene un solo "like". Por tanto, su relevancia actual es limitada y su uso en produccion no es recomendable sin una evaluacion previa exhaustiva.
 
@@ -68,4 +68,4 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. No
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fantastic-youki/Voyager-4B
+- Repositorio en Hugging Face: https://huggingface.co/fantastic-youki/Voyager-4B

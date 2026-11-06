@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `sachasayan/Minstrel-Huihui-Qwen3.5-2B-abliterated-MLX-4bit` corresponde a un repositorio de HuggingFace publicado por el usuario sachasayan, con licencia Apache 2.0. El propio nombre del repositorio sugiere que se trata de un derivado de la familia Qwen, de aproximadamente 2.000 millones de parámetros, sometido a un proceso de "abliteration" (eliminación o atenuación del comportamiento de rechazo aprendido durante el alineamiento) y convertido a formato MLX con cuantización de 4 bits para su ejecución en hardware de Apple. Ninguno de estos extremos está confirmado en la model card.
+El identificador `sachasayan/Minstrel-Huihui-Qwen3.5-2B-abliterated-MLX-4bit` corresponde a un repositorio de Hugging Face publicado por el usuario sachasayan, con licencia Apache 2.0. El propio nombre del repositorio sugiere que se trata de un derivado de la familia Qwen, de aproximadamente 2.000 millones de parámetros, sometido a un proceso de "abliteration" (eliminación o atenuación del comportamiento de rechazo aprendido durante el alineamiento) y convertido a formato MLX con cuantización de 4 bits para su ejecución en hardware de Apple. Ninguno de estos extremos está confirmado en la model card.
 
 La model card publicada es prácticamente vacía: se limita a una cabecera YAML con `license: apache-2.0` y no incluye descripción, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y no tiene pipeline declarado.
 
@@ -21,8 +21,8 @@ Por todo ello, esta ficha es necesariamente incompleta: la mayor parte de los ca
 | Licencia | Apache 2.0 |
 | Formato de pesos | MLX (cuantizacion de 4 bits). Se desconoce si el repositorio incluye tambien safetensors sin cuantizar |
 | Pipeline declarado | no disponible |
-| Fecha de creacion | 2026-09-30 (segun metadatos de HuggingFace) |
-| Fecha de actualizacion | 2026-09-30 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-30 (segun metadatos de Hugging Face) |
+| Fecha de actualizacion | 2026-09-30 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -87,8 +87,8 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sachasayan/Minstrel-Huihui-Qwen3.5-2B-abliterated-MLX-4bit
-- Repositorio del autor en HuggingFace: https://huggingface.co/sachasayan
+- Modelo en Hugging Face: https://huggingface.co/sachasayan/Minstrel-Huihui-Qwen3.5-2B-abliterated-MLX-4bit
+- Repositorio del autor en Hugging Face: https://huggingface.co/sachasayan
 - MLX de Apple (framework de inferencia implicito en el formato): https://github.com/ml-explore/mlx
 - `mlx-lm` (libreria de ejecucion y conversion de modelos): https://github.com/ml-explore/mlx-lm
 

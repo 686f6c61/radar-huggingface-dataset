@@ -66,5 +66,5 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- [HuggingFace - AgileAndy/Qwen3.8-27B-oQ6e](https://huggingface.co/AgileAndy/Qwen3.8-27B-oQ6e)
+- [Hugging Face - AgileAndy/Qwen3.8-27B-oQ6e](https://huggingface.co/AgileAndy/Qwen3.8-27B-oQ6e)
 - [Repositorio oQ (oMLX)](https://github.com/jundot/omlx)

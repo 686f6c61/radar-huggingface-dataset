@@ -68,6 +68,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/alexkstern/baseline_1Bpt_hfbody_van_s0_2026-08-14_03-56-26_172391-pt](https://huggingface.co/alexkstern/baseline_1Bpt_hfbody_van_s0_2026-08-14_03-56-26_172391-pt)
+- Hugging Face: [https://huggingface.co/alexkstern/baseline_1Bpt_hfbody_van_s0_2026-08-14_03-56-26_172391-pt](https://huggingface.co/alexkstern/baseline_1Bpt_hfbody_van_s0_2026-08-14_03-56-26_172391-pt)
 - W&B run: [https://wandb.ai/alexksternteam/token_dose_1Bpt_seed_replicas_v1/runs/s0b05tnz](https://wandb.ai/alexksternteam/token_dose_1Bpt_seed_replicas_v1/runs/s0b05tnz)
 - Repositorio nanochat: [https://github.com/karpathy/nanochat](https://github.com/karpathy/nanochat)

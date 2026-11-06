@@ -6,7 +6,7 @@
 
 La conversión es puramente de pesos: no se ha realizado ningún reentrenamiento, por lo que las capacidades y limitaciones son las del checkpoint original. Está disponible bajo la licencia `glm-4`, que impone restricciones de uso comercial, y soporta principalmente inglés y chino. Su tamaño de repositorio es de 19 GB, acorde con los pesos en bfloat16 de un modelo de 9 mil millones de parámetros.
 
-Esta ficha se basa exclusivamente en la información proporcionada en la model card de HuggingFace y en el conocimiento público del modelo GLM-4-9B. Los datos técnicos no confirmados se indican como «no disponible».
+Esta ficha se basa exclusivamente en la información proporcionada en la model card de Hugging Face y en el conocimiento público del modelo GLM-4-9B. Los datos técnicos no confirmados se indican como «no disponible».
 
 ## Especificaciones técnicas
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-4-9B-chat-1M (original) | 9B | 1M | en, zh | glm-4 | HuggingFace |
-| Llama 3 8B | 8B | 8K (ampliable) | multilingüe | Llama 3 | HuggingFace |
-| Mistral 7B | 7B | 32K | multilingüe | Apache 2.0 | HuggingFace |
-| Qwen 2.5 7B | 7B | 128K | multilingüe | Apache 2.0 | HuggingFace |
+| GLM-4-9B-chat-1M (original) | 9B | 1M | en, zh | glm-4 | Hugging Face |
+| Llama 3 8B | 8B | 8K (ampliable) | multilingüe | Llama 3 | Hugging Face |
+| Mistral 7B | 7B | 32K | multilingüe | Apache 2.0 | Hugging Face |
+| Qwen 2.5 7B | 7B | 128K | multilingüe | Apache 2.0 | Hugging Face |
 
 La principal ventaja de este modelo frente a alternativas de tamaño similar es su contexto de 1M tokens, muy superior a los 8K de Llama 3 o 32K de Mistral. Sin embargo, la licencia `glm-4` puede ser más restrictiva que Apache 2.0. No se dispone de comparativas de rendimiento numéricas.
 
@@ -78,10 +78,10 @@ La principal ventaja de este modelo frente a alternativas de tamaño similar es 
 
 ## Enlaces
 
-- [HuggingFace - kerasformers/glm-4-9b-chat-1m](https://huggingface.co/kerasformers/glm-4-9b-chat-1m)
+- [Hugging Face - kerasformers/glm-4-9b-chat-1m](https://huggingface.co/kerasformers/glm-4-9b-chat-1m)
 - [Modelo original - zai-org/glm-4-9b-chat-1m-hf](https://huggingface.co/zai-org/glm-4-9b-chat-1m-hf)
 - [Paper - ChatGLM: A Family of Large Language Models from GLM-130B to GLM-4 All Tools](https://arxiv.org/abs/2406.12793)
 - [Repositorio GitHub - KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de GLM en KerasFormers](https://imvision12.github.io/KerasFormers/glm/)
-- [Colección GLM en HuggingFace](https://huggingface.co/collections/kerasformers/glm-6a82b8f9f753e8dcae3ff3f7)
+- [Colección GLM en Hugging Face](https://huggingface.co/collections/kerasformers/glm-6a82b8f9f753e8dcae3ff3f7)
 - [Licencia glm-4](https://huggingface.co/THUDM/glm-4-9b-chat-hf/blob/main/LICENSE)

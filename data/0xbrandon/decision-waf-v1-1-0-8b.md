@@ -96,7 +96,7 @@ Recall por etiqueta a umbral 0,9: recon 20/30, injection 54/63, xss 19/23, auth_
 
 | Modelo | Parametros | Mejor F1 | Recall con FPR <= 1% | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Decision-WAF-V1.1-0.8B | 852.985.920 | 0,967 | 0,916 | Apache 2.0 | HuggingFace (0xBrandon) |
+| Decision-WAF-V1.1-0.8B | 852.985.920 | 0,967 | 0,916 | Apache 2.0 | Hugging Face (0xBrandon) |
 | h2o-lightning-4b | no disponible | 0,920 | ninguno (FPR minimo 4,1%) | no disponible | no disponible |
 | d1-3B | no disponible | 0,883 | 0,565 | no disponible | no disponible |
 | jev-latest | no disponible | 0,941 | 0,799 | no disponible | api.typesafe.ai |
@@ -116,7 +116,7 @@ Los datos de parametros, licencia y disponibilidad de los modelos comparados no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B
+- Modelo en Hugging Face: https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.8B
 - Repositorio decision-waf: https://github.com/0x4272616E646F6E/decision-waf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Evaluacion de referencia jev-latest: https://api.typesafe.ai

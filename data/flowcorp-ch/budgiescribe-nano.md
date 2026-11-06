@@ -102,7 +102,7 @@ No se conocen, a partir de la informacion disponible, otros modelos abiertos ded
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flowcorp-ch/BudgieScribe-Nano
+- Modelo en Hugging Face: https://huggingface.co/flowcorp-ch/BudgieScribe-Nano
 - Licencia del modelo: https://huggingface.co/flowcorp-ch/BudgieScribe-Nano/blob/main/LICENSE-MODEL
 - Repositorio de codigo: https://github.com/alexxxcoelho/budgie-scribe
 - Contrato de formato (FORMAT.md): https://github.com/alexxxcoelho/budgie-scribe/blob/main/FORMAT.md

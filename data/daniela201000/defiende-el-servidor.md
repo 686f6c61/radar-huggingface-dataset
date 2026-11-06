@@ -76,7 +76,7 @@ Matriz de confusión en test: TN=30.319, FP=6.681, FN=1.357, TP=43.975. La degra
 
 ## Requisitos de hardware
 
-- VRAM: no aplica; la inferencia se ejecuta en CPU. El artefacto es un modelo de árboles de tamaño reducido (repositorio de 0,0 GB según HuggingFace).
+- VRAM: no aplica; la inferencia se ejecuta en CPU. El artefacto es un modelo de árboles de tamaño reducido (repositorio de 0,0 GB según Hugging Face).
 - GPU: no necesaria. El entrenamiento con `HistGradientBoostingClassifier` puede aprovechar CPU multinúcleo; no se documenta soporte GPU.
 - GPU de consumo: irrelevante para este modelo; cualquier equipo con CPU moderna puede ejecutarlo.
 - Memoria RAM: no disponible de forma explícita; el conjunto de test completo (82.332 filas × 42 variables) es manejable en unos pocos cientos de MB.
@@ -89,7 +89,7 @@ No se han publicado comparativas con otros modelos en la información disponible
 
 | Modelo | Tipo | Datos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Defiende el servidor v2 | Gradient boosting (scikit-learn) | UNSW-NB15 | no aplica | other | HuggingFace, joblib |
+| Defiende el servidor v2 | Gradient boosting (scikit-learn) | UNSW-NB15 | no aplica | other | Hugging Face, joblib |
 | Alternativas de detección de intrusiones tabulares | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables sobre modelos comparables de la misma tarea y tamaño en la información proporcionada.
@@ -109,6 +109,6 @@ No se dispone de datos verificables sobre modelos comparables de la misma tarea 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Daniela201000/defiende-el-servidor
+- Modelo en Hugging Face: https://huggingface.co/Daniela201000/defiende-el-servidor
 - Repositorio de código: https://github.com/danielaestudio02-del/Taller_1 (tag `v2`, commit de entrenamiento `9a17cd225142061547ee474b9720e1113bfbea92`)
 - Dataset UNSW-NB15: https://research.unsw.edu.au/projects/unsw-nb15-dataset

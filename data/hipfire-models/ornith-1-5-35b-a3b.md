@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativos con otros modelos de la misma
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/hipfire-models/ornith-1.5-35b-a3b
+- Repositorio de Hugging Face: https://huggingface.co/hipfire-models/ornith-1.5-35b-a3b
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Discusión sobre la cabeza MTP original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/discussions/10
 - Cabeza MTP sustituida (shisa-ai): https://huggingface.co/shisa-ai/Ornith-1.5-35B-A3B-MTP-ONLY

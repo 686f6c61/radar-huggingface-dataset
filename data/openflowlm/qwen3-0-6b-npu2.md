@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenFlowLM/Qwen3-0.6B-NPU2 es un ajuste fino del modelo Qwen/Qwen3-0.6B publicado por el usuario OpenFlowLM en HuggingFace. Se trata por tanto de un modelo derivado de la familia Qwen3 de Alibaba, de tipo causal language model, denso, con 0,6 mil millones de parametros totales (0,44 mil millones sin contar embeddings) y una longitud de contexto de 32.768 tokens. El sufijo "NPU2" del identificador sugiere un ajuste orientado a despliegue en unidades de procesamiento neuronal, aunque la model card del repositorio no documenta detalles especificos de ese ajuste.
+OpenFlowLM/Qwen3-0.6B-NPU2 es un ajuste fino del modelo Qwen/Qwen3-0.6B publicado por el usuario OpenFlowLM en Hugging Face. Se trata por tanto de un modelo derivado de la familia Qwen3 de Alibaba, de tipo causal language model, denso, con 0,6 mil millones de parametros totales (0,44 mil millones sin contar embeddings) y una longitud de contexto de 32.768 tokens. El sufijo "NPU2" del identificador sugiere un ajuste orientado a despliegue en unidades de procesamiento neuronal, aunque la model card del repositorio no documenta detalles especificos de ese ajuste.
 
 El modelo hereda las capacidades de la generacion Qwen3, que introduce un conmutador explicito (`enable_thinking`) entre modo de razonamiento (thinking mode con bloques `...`) y modo de dialogo directo (non-thinking mode) dentro del mismo conjunto de pesos. Su tamano reducido lo hace apto para entornos con recursos limitados, inferencia en CPU o en GPUs de gama de consumo, y para tareas de generacion de texto y prototipado rapido.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativos especificos para el modelo aj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenFlowLM/Qwen3-0.6B-NPU2
+- Modelo en Hugging Face: https://huggingface.co/OpenFlowLM/Qwen3-0.6B-NPU2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-0.6B/blob/main/LICENSE
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

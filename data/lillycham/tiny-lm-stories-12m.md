@@ -90,7 +90,7 @@ La comparación con alternativas de la misma categoría (modelos de menos de 50 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lillycham/tiny-lm-stories-12m
+- Modelo en Hugging Face: https://huggingface.co/lillycham/tiny-lm-stories-12m
 - Repositorio del proyecto tiny-lm: https://github.com/lillycham/tiny-lm
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
 - Dataset TinyStoriesInstruct: https://huggingface.co/datasets/roneneldan/TinyStoriesInstruct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Saigonmec2/mammoSGM_weights` es un repositorio de pesos publicado en HuggingFace por el usuario Saigonmec2 bajo la licencia `h-research`. La model card asociada no contiene descripcion tecnica alguna: unicamente declara la licencia. No se especifica arquitectura, numero de parametros, contexto, idiomas ni pipeline de uso, por lo que no es posible confirmar que tipo de modelo es ni como utilizarlo.
+`Saigonmec2/mammoSGM_weights` es un repositorio de pesos publicado en Hugging Face por el usuario Saigonmec2 bajo la licencia `h-research`. La model card asociada no contiene descripcion tecnica alguna: unicamente declara la licencia. No se especifica arquitectura, numero de parametros, contexto, idiomas ni pipeline de uso, por lo que no es posible confirmar que tipo de modelo es ni como utilizarlo.
 
 El nombre del repositorio sugiere una relacion con la familia "mammo" (posiblemente orientada a imagen mamografica) y un sufijo "SGM" de interpretacion desconocida, pero se trata de una inferencia a partir del identificador y no de un dato documentado. El repositorio no registra descargas ni interacciones en el momento de la consulta y fue creado y actualizado en la misma fecha (2026-11-01), lo que apunta a una publicacion reciente sin mantenimiento posterior.
 
@@ -76,5 +76,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Saigonmec2/mammoSGM_weights
+- Repositorio en Hugging Face: https://huggingface.co/Saigonmec2/mammoSGM_weights
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

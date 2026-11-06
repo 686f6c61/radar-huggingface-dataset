@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jlsrls/mainsweep4ep-kl10000-s1-realign` es un ajuste fino (fine-tune) del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario jlsrls en HuggingFace. Se trata de un modelo derivado de la familia Llama 3.2 de Meta, con aproximadamente 1.240 millones de parametros, arquitectura transformer decoder densa y una ventana de contexto heredada del modelo base de 128.000 tokens. El entrenamiento se ha realizado mediante SFT (supervised fine-tuning) utilizando la libreria TRL en su version 0.24.0, sobre la infraestructura de Unsloth, y el autor ha publicado el enlace al run de Weights & Biases correspondiente.
+`jlsrls/mainsweep4ep-kl10000-s1-realign` es un ajuste fino (fine-tune) del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario jlsrls en Hugging Face. Se trata de un modelo derivado de la familia Llama 3.2 de Meta, con aproximadamente 1.240 millones de parametros, arquitectura transformer decoder densa y una ventana de contexto heredada del modelo base de 128.000 tokens. El entrenamiento se ha realizado mediante SFT (supervised fine-tuning) utilizando la libreria TRL en su version 0.24.0, sobre la infraestructura de Unsloth, y el autor ha publicado el enlace al run de Weights & Biases correspondiente.
 
 El modelo no resuelve un problema de producto claramente definido: por el nombre del repositorio (`mainsweep4ep-kl10000-s1-realign`) parece tratarse de un experimento dentro de un barrido de hiperparametros, posiblemente relacionado con un coeficiente de penalizacion KL de valor 10000 y una fase de "realineacion", aunque la model card solo documenta entrenamiento SFT y no menciona RL ni DPO. Esto sugiere que el nombre puede corresponder a la configuracion del experimento y no a la tecnica finalmente aplicada.
 
@@ -81,11 +81,11 @@ Los datos de parametros, contexto y licencia de los modelos alternativos corresp
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jlsrls/mainsweep4ep-kl10000-s1-realign | ~1,24B | 128k (heredado, no verificado) | no disponible (sujeto a Llama 3.2 Community License) | HuggingFace, safetensors |
-| unsloth/Llama-3.2-1B-Instruct (modelo base) | ~1,24B | 128k | Llama 3.2 Community License | HuggingFace, safetensors, GGUF |
-| Qwen2.5-1.5B-Instruct | ~1,54B | 32.768 tokens nativos | Apache 2.0 | HuggingFace, safetensors, GGUF |
-| SmolLM2-1.7B-Instruct | ~1,7B | 8.192 tokens | Apache 2.0 | HuggingFace, safetensors, GGUF |
-| Gemma 2 2B Instruct | ~2,6B | 8.192 tokens | Gemma Terms of Use | HuggingFace, safetensors, GGUF |
+| jlsrls/mainsweep4ep-kl10000-s1-realign | ~1,24B | 128k (heredado, no verificado) | no disponible (sujeto a Llama 3.2 Community License) | Hugging Face, safetensors |
+| unsloth/Llama-3.2-1B-Instruct (modelo base) | ~1,24B | 128k | Llama 3.2 Community License | Hugging Face, safetensors, GGUF |
+| Qwen2.5-1.5B-Instruct | ~1,54B | 32.768 tokens nativos | Apache 2.0 | Hugging Face, safetensors, GGUF |
+| SmolLM2-1.7B-Instruct | ~1,7B | 8.192 tokens | Apache 2.0 | Hugging Face, safetensors, GGUF |
+| Gemma 2 2B Instruct | ~2,6B | 8.192 tokens | Gemma Terms of Use | Hugging Face, safetensors, GGUF |
 
 Diferencias destacables: el modelo analizado es el unico de la tabla sin licencia declarada de forma efectiva y sin versiones cuantizadas publicadas, lo que limita su adopcion practica frente a alternativas con licencia permisiva (Apache 2.0) como Qwen2.5-1.5B o SmolLM2-1.7B.
 
@@ -104,7 +104,7 @@ Diferencias destacables: el modelo analizado es el unico de la tabla sin licenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/mainsweep4ep-kl10000-s1-realign
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/mainsweep4ep-kl10000-s1-realign
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/n09gxtn3

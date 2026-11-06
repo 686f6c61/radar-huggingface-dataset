@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento comparativos entre estas variantes ni con 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/expedient-ai/CTRL-2B-ONNX
+- Repositorio Hugging Face: https://huggingface.co/expedient-ai/CTRL-2B-ONNX
 - Modelo base CTRL-2B: https://huggingface.co/chadstthomas/CTRL-2B
 - Demo Space de CTRL-2B: https://huggingface.co/spaces/chadstthomas/ctrl-2b-demo

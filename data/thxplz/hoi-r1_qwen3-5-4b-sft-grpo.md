@@ -79,11 +79,11 @@ El modelo supera a QPIC en Default Full (29,79 frente a 29,07) y queda ligeramen
 
 | Modelo | Parametros | Contexto | HICO-DET Default Full | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| HOI-R1-Qwen3.5-4B | 4,54B | No disponible | 29,79 | Apache 2.0 | HuggingFace |
-| Qwen3.5-4B (zero-shot) | ~4B | No disponible | 17,17 | No disponible | HuggingFace |
-| Qwen3-VL-4B-SFT | ~4B | No disponible | 22,46 | No disponible | HuggingFace |
-| Rex-Omni-3B (HOI-SFT) | ~3B | No disponible | 25,30 | No disponible | HuggingFace |
-| Qwen2.5-VL-72B-AWQ (zero-shot) | ~72B | No disponible | 20,71 | No disponible | HuggingFace |
+| HOI-R1-Qwen3.5-4B | 4,54B | No disponible | 29,79 | Apache 2.0 | Hugging Face |
+| Qwen3.5-4B (zero-shot) | ~4B | No disponible | 17,17 | No disponible | Hugging Face |
+| Qwen3-VL-4B-SFT | ~4B | No disponible | 22,46 | No disponible | Hugging Face |
+| Rex-Omni-3B (HOI-SFT) | ~3B | No disponible | 25,30 | No disponible | Hugging Face |
+| Qwen2.5-VL-72B-AWQ (zero-shot) | ~72B | No disponible | 20,71 | No disponible | Hugging Face |
 
 La comparativa se limita a los datos de la tabla del autor. Frente a alternativas del mismo tamano, HOI-R1-Qwen3.5-4B obtiene la mejor puntuacion Default Full (29,79) y Known Object Full (31,61) entre los modelos ajustados de 3-4B. Frente a Qwen2.5-VL-72B-AWQ, un modelo 16 veces mayor, la ventaja es de +9,08 y +8,68 puntos respectivamente, lo que refleja la importancia del ajuste de dominio.
 
@@ -100,7 +100,7 @@ La comparativa se limita a los datos de la tabla del autor. Frente a alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thxplz/HOI-R1_Qwen3.5-4B-SFT-GRPO
+- Modelo en Hugging Face: https://huggingface.co/thxplz/HOI-R1_Qwen3.5-4B-SFT-GRPO
 - Modelo SFT base: https://huggingface.co/thxplz/HOI-R1_Qwen3.5-4B-SFT
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset HICO-DET para HOI-R1: https://huggingface.co/datasets/thxplz/HOI-R1_HICO-DET_dataset

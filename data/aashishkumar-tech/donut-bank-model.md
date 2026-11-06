@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`aashishkumar-tech/donut-bank-model` es un adaptador LoRA publicado en HuggingFace mediante la librería PEFT, construido sobre el modelo `naver-clova-ix/donut-base`. No se trata, por tanto, de un modelo entrenado desde cero, sino de un conjunto de pesos de ajuste fino que debe cargarse junto al modelo base para poder ejecutarse. El nombre sugiere un ajuste orientado a documentos bancarios, pero la model card no documenta el dominio, el conjunto de datos ni el objetivo concreto del entrenamiento.
+`aashishkumar-tech/donut-bank-model` es un adaptador LoRA publicado en Hugging Face mediante la librería PEFT, construido sobre el modelo `naver-clova-ix/donut-base`. No se trata, por tanto, de un modelo entrenado desde cero, sino de un conjunto de pesos de ajuste fino que debe cargarse junto al modelo base para poder ejecutarse. El nombre sugiere un ajuste orientado a documentos bancarios, pero la model card no documenta el dominio, el conjunto de datos ni el objetivo concreto del entrenamiento.
 
 Donut (Document Understanding Transformer) es una familia de modelos OCR-free para comprensión de documentos: procesa la imagen de la página directamente y genera la salida estructurada de forma autorregresiva, sin depender de un motor OCR externo. Esa característica la hace relevante para pipelines de extracción de campos en documentos escaneados, donde un OCR tradicional introduce errores en cascada y añade latencia.
 
-La información pública disponible es extremadamente escasa: el repositorio se creó y actualizó el 19 de septiembre de 2026, acumula 0 descargas y 0 «likes», y la model card es la plantilla por defecto de HuggingFace con todos los campos marcados como «More Information Needed». No hay licencia declarada, ni idiomas, ni pipeline, ni resultados de evaluación.
+La información pública disponible es extremadamente escasa: el repositorio se creó y actualizó el 19 de septiembre de 2026, acumula 0 descargas y 0 «likes», y la model card es la plantilla por defecto de Hugging Face con todos los campos marcados como «More Information Needed». No hay licencia declarada, ni idiomas, ni pipeline, ni resultados de evaluación.
 
 ## Especificaciones técnicas
 
@@ -70,11 +70,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `aashishkumar-tech/donut-bank-model` | Adaptador LoRA sobre Donut | No disponible (adaptador) | No disponible | No disponible | HuggingFace, 0 descargas |
-| `naver-clova-ix/donut-base` | Modelo base OCR-free documento→texto | No disponible en la información suministrada | No disponible | No disponible en la información suministrada | HuggingFace |
-| LayoutLMv3 | Multimodal texto+layout, requiere OCR previo | No disponible | No disponible | No disponible | HuggingFace |
-| Pix2Struct | Vision-language para capturas y documentos | No disponible | No disponible | No disponible | HuggingFace |
-| TrOCR | OCR transformer encoder-decoder | No disponible | No disponible | No disponible | HuggingFace |
+| `aashishkumar-tech/donut-bank-model` | Adaptador LoRA sobre Donut | No disponible (adaptador) | No disponible | No disponible | Hugging Face, 0 descargas |
+| `naver-clova-ix/donut-base` | Modelo base OCR-free documento→texto | No disponible en la información suministrada | No disponible | No disponible en la información suministrada | Hugging Face |
+| LayoutLMv3 | Multimodal texto+layout, requiere OCR previo | No disponible | No disponible | No disponible | Hugging Face |
+| Pix2Struct | Vision-language para capturas y documentos | No disponible | No disponible | No disponible | Hugging Face |
+| TrOCR | OCR transformer encoder-decoder | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos verificados de parámetros, contexto o licencia de las alternativas en la información consultada; deben comprobarse en sus respectivas model cards antes de tomar una decisión. La búsqueda web asociada a esta ficha no devolvió resultados relevantes sobre el modelo, solo páginas del servicio Speedtest by Ookla.
 
@@ -92,7 +92,7 @@ No se dispone de datos verificados de parámetros, contexto o licencia de las al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aashishkumar-tech/donut-bank-model
+- Modelo en Hugging Face: https://huggingface.co/aashishkumar-tech/donut-bank-model
 - Modelo base: https://huggingface.co/naver-clova-ix/donut-base
 - Librería PEFT: https://huggingface.co/docs/peft
 - Paper de Donut (OCR-free Document Understanding Transformer), referencia habitual del modelo base: https://arxiv.org/abs/2201.02630

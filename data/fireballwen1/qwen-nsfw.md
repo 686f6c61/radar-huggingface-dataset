@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fireballwen1/qwen-nsfw` es un repositorio publicado en HuggingFace por el usuario `fireballwen1` con licencia Apache-2.0 y etiquetas que indican contenido no apto para todos los públicos (NSFW) y región Estados Unidos. El nombre sugiere que podría tratarse de un fine-tune de la familia Qwen orientado a generación de contenido para adultos, pero no se ha publicado ninguna descripción, model card técnica, ni documentación adicional que confirme esta hipótesis.
+El modelo `fireballwen1/qwen-nsfw` es un repositorio publicado en Hugging Face por el usuario `fireballwen1` con licencia Apache-2.0 y etiquetas que indican contenido no apto para todos los públicos (NSFW) y región Estados Unidos. El nombre sugiere que podría tratarse de un fine-tune de la familia Qwen orientado a generación de contenido para adultos, pero no se ha publicado ninguna descripción, model card técnica, ni documentación adicional que confirme esta hipótesis.
 
 El repositorio tiene un tamaño de 1,6 GB, lo que podría corresponder a un modelo de aproximadamente 1-2 mil millones de parámetros en precisión FP16, aunque esta estimación es puramente especulativa y no está respaldada por datos oficiales. No se dispone de información sobre la arquitectura, el proceso de entrenamiento, las capacidades ni los benchmarks del modelo. La fecha de creación (15 de agosto de 2026) es posterior a la fecha actual, lo que sugiere que el repositorio podría ser un artefacto de prueba o un error en la metadata.
 
@@ -55,4 +55,4 @@ No disponible. No se conocen modelos comparables con información pública sufic
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/fireballwen1/qwen-nsfw)
+- [Repositorio en Hugging Face](https://huggingface.co/fireballwen1/qwen-nsfw)

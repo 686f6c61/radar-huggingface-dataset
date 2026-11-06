@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `eric-z2/WL-no-context-distilroberta-fold_4` es un modelo de clasificación de tokens (token classification) publicado en HuggingFace por el usuario `eric-z2` y construido sobre una base DistilRoBERTa, la variante destilada del encoder RoBERTa. Cuenta con 81.533.960 parámetros reales según los pesos en safetensors (~81,5 millones), lo que lo sitúa en la categoría de encoders ligeros aptos para inferencia en CPU o en GPU de gama de entrada. El repositorio ocupa 0,3 GB y es compatible con el pipeline `token-classification` de la librería `transformers`, además de estar marcado como `endpoints_compatible`.
+El modelo `eric-z2/WL-no-context-distilroberta-fold_4` es un modelo de clasificación de tokens (token classification) publicado en Hugging Face por el usuario `eric-z2` y construido sobre una base DistilRoBERTa, la variante destilada del encoder RoBERTa. Cuenta con 81.533.960 parámetros reales según los pesos en safetensors (~81,5 millones), lo que lo sitúa en la categoría de encoders ligeros aptos para inferencia en CPU o en GPU de gama de entrada. El repositorio ocupa 0,3 GB y es compatible con el pipeline `token-classification` de la librería `transformers`, además de estar marcado como `endpoints_compatible`.
 
-El problema que resuelve es, en principio, el etiquetado a nivel de token: reconocimiento de entidades nombradas, etiquetado de secuencias, chunking o tareas similares de anotación secuencial. Sin embargo, la model card publicada por el autor es la plantilla automática de HuggingFace sin rellenar, por lo que no se especifican el conjunto de etiquetas, el dataset de entrenamiento, el idioma, la licencia ni el procedimiento de ajuste. El identificador del modelo sugiere, sin que pueda confirmarse documentalmente, que se trata del cuarto pliegue (*fold 4*) de una validación cruzada sobre una variante denominada "WL-no-context", lo que apunta a un artefacto de experimento académico o de proyecto interno más que a un modelo listo para producción.
+El problema que resuelve es, en principio, el etiquetado a nivel de token: reconocimiento de entidades nombradas, etiquetado de secuencias, chunking o tareas similares de anotación secuencial. Sin embargo, la model card publicada por el autor es la plantilla automática de Hugging Face sin rellenar, por lo que no se especifican el conjunto de etiquetas, el dataset de entrenamiento, el idioma, la licencia ni el procedimiento de ajuste. El identificador del modelo sugiere, sin que pueda confirmarse documentalmente, que se trata del cuarto pliegue (*fold 4*) de una validación cruzada sobre una variante denominada "WL-no-context", lo que apunta a un artefacto de experimento académico o de proyecto interno más que a un modelo listo para producción.
 
 Su relevancia actual es limitada como modelo de propósito general, pero puede ser útil como referencia para reproducir experimentos de etiquetado con encoders destilados, para comparar contra otros ajustes de DistilRoBERTa, o como punto de partida para tareas de anotación en dominios muy concretos. Al no existir licencia declarada, no hay garantía de uso comercial, y la ausencia total de evaluación publicada obliga a validar el modelo por cuenta propia antes de cualquier despliegue.
 
@@ -29,9 +29,9 @@ Su relevancia actual es limitada como modelo de propósito general, pero puede s
 
 ## Arquitectura y entrenamiento
 
-La información disponible solo permite afirmar que el modelo deriva de la familia RoBERTa y que está destinado a clasificación de tokens. DistilRoBERTa es una destilación de RoBERTa-base realizada por el equipo de HuggingFace: reduce el número de capas respecto al modelo original y conserva la dimensionalidad oculta, lo que explica un recuento de parámetros en torno a los 82 millones, coherente con los 81,5 millones contabilizados en los safetensors. Habitualmente esta arquitectura emplea atención bidireccional completa sobre secuencias de hasta 512 tokens, tokenizador BPE con vocabulario de 50.265 entradas y una cabeza de clasificación por token sobre las representaciones del encoder. Ninguno de estos detalles está confirmado en la model card, que se publicó con la plantilla automática de HuggingFace sin completar.
+La información disponible solo permite afirmar que el modelo deriva de la familia RoBERTa y que está destinado a clasificación de tokens. DistilRoBERTa es una destilación de RoBERTa-base realizada por el equipo de Hugging Face: reduce el número de capas respecto al modelo original y conserva la dimensionalidad oculta, lo que explica un recuento de parámetros en torno a los 82 millones, coherente con los 81,5 millones contabilizados en los safetensors. Habitualmente esta arquitectura emplea atención bidireccional completa sobre secuencias de hasta 512 tokens, tokenizador BPE con vocabulario de 50.265 entradas y una cabeza de clasificación por token sobre las representaciones del encoder. Ninguno de estos detalles está confirmado en la model card, que se publicó con la plantilla automática de Hugging Face sin completar.
 
-Respecto al entrenamiento, no se dispone de información sobre el número de tokens, la composición del dataset, el régimen de entrenamiento (fp32, fp16, bf16), la existencia de fases de aprendizaje por refuerzo o preferencias, ni los hiperparámetros. El identificador `WL-no-context-distilroberta-fold_4` sugiere un ajuste con validación cruzada de al menos cuatro pliegues y una variante sin contexto, pero se trata de una inferencia a partir del nombre y no de un dato documentado. La etiqueta `arxiv:1910.09700` que aparece en los tags no corresponde a un paper propio del modelo: es la referencia a Lacoste et al. (2019) sobre estimación de emisiones de carbono, citada en la plantilla de model card de HuggingFace.
+Respecto al entrenamiento, no se dispone de información sobre el número de tokens, la composición del dataset, el régimen de entrenamiento (fp32, fp16, bf16), la existencia de fases de aprendizaje por refuerzo o preferencias, ni los hiperparámetros. El identificador `WL-no-context-distilroberta-fold_4` sugiere un ajuste con validación cruzada de al menos cuatro pliegues y una variante sin contexto, pero se trata de una inferencia a partir del nombre y no de un dato documentado. La etiqueta `arxiv:1910.09700` que aparece en los tags no corresponde a un paper propio del modelo: es la referencia a Lacoste et al. (2019) sobre estimación de emisiones de carbono, citada en la plantilla de model card de Hugging Face.
 
 ## Capacidades
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Inferencia en CPU: viable; un encoder de 81,5 millones de parámetros se ejecuta en CPU con latencias del orden de milisegundos por secuencia corta, dependiendo del número de núcleos. No se dispone de cifras medidas.
 - Opciones de despliegue: `transformers` con `pipeline("token-classification")`, servidores de inferencia compatibles con modelos de `transformers` (por ejemplo TGI en modo encoder o TorchServe), y exportación manual a ONNX para acelerar en CPU. No se publican versiones GGUF ni Ollama, por lo que `llama.cpp` y Ollama no están soportados de serie.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el modelo puede servirse en la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el modelo puede servirse en la infraestructura de Inference Endpoints de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -96,10 +96,10 @@ La diferencia principal frente a estas alternativas es la ausencia de documentac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eric-z2/WL-no-context-distilroberta-fold_4
+- Modelo en Hugging Face: https://huggingface.co/eric-z2/WL-no-context-distilroberta-fold_4
 - Paper citado en los tags (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automático): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental de ML referenciada en la plantilla: https://mlco2.github.io/impact
-- Repositorio del modelo base DistilRoBERTa en HuggingFace: https://huggingface.co/distilroberta-base
+- Repositorio del modelo base DistilRoBERTa en Hugging Face: https://huggingface.co/distilroberta-base
 - Documentación del pipeline de clasificación de tokens en `transformers`: https://huggingface.co/docs/transformers/tasks/token_classification
 
 Nota: la búsqueda web realizada no devolvió ningún resultado relacionado con este modelo; los enlaces encontrados correspondían a contenidos no pertinentes y se han descartado.

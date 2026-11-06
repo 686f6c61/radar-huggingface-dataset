@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PlantCare AI es un clasificador de imágenes basado en EfficientNet-B3, publicado en HuggingFace por el usuario Shahabkhan396 bajo el identificador `Shahabkhan396/plantcare-efficientnet-b3`. El modelo es un *fine-tuning* del checkpoint `tf_efficientnet_b3.ns_jft_in1k` sobre el conjunto de datos de campo PlantCity (Khan et al., 2025), que cubre 12 cultivos y 52 clases de enfermedad/sano a partir de fotografías de hojas tomadas en condiciones reales de cultivo. Su propósito es servir como herramienta de apoyo a la decisión en agricultura, no como sustituto de un diagnóstico fitopatológico profesional.
+PlantCare AI es un clasificador de imágenes basado en EfficientNet-B3, publicado en Hugging Face por el usuario Shahabkhan396 bajo el identificador `Shahabkhan396/plantcare-efficientnet-b3`. El modelo es un *fine-tuning* del checkpoint `tf_efficientnet_b3.ns_jft_in1k` sobre el conjunto de datos de campo PlantCity (Khan et al., 2025), que cubre 12 cultivos y 52 clases de enfermedad/sano a partir de fotografías de hojas tomadas en condiciones reales de cultivo. Su propósito es servir como herramienta de apoyo a la decisión en agricultura, no como sustituto de un diagnóstico fitopatológico profesional.
 
 Técnicamente es una red convolucional (no un transformer ni un modelo de lenguaje): 10.863.452 parámetros, entrada RGB de 300x300 píxeles y salida de 52 logits con confianza calibrada mediante temperatura. El autor reporta una exactitud de test de 0,9956 y un macro-F1 de 0,9946 sobre un *split* estratificado y agrupado 72/14/14 con eliminación de casi-duplicados, lo que indica un rendimiento muy alto dentro de la distribución evaluada.
 
@@ -77,10 +77,10 @@ No se dispone de comparativas publicadas de este *checkpoint* frente a otras alt
 
 | Modelo | Parámetros aprox. | Entrada típica | Licencia | Disponibilidad | Rendimiento en PlantCity |
 |---|---|---|---|---|---|
-| PlantCare efficientnet_b3 (este modelo) | 10,86 M | 300x300 | No disponible | HuggingFace (timm, safetensors) | 0,9956 exactitud / 0,9946 macro-F1 (según autor) |
-| EfficientNet-B0 | 5,3 M | 224x224 | Apache-2.0 (checkpoints timm/ImageNet) | HuggingFace, timm | No disponible |
-| ResNet-50 | 25,6 M | 224x224 | Apache-2.0 / BSD (según checkpoint) | HuggingFace, torchvision | No disponible |
-| ViT-B/16 | 86 M | 224x224 | Apache-2.0 (según checkpoint) | HuggingFace, timm | No disponible |
+| PlantCare efficientnet_b3 (este modelo) | 10,86 M | 300x300 | No disponible | Hugging Face (timm, safetensors) | 0,9956 exactitud / 0,9946 macro-F1 (según autor) |
+| EfficientNet-B0 | 5,3 M | 224x224 | Apache-2.0 (checkpoints timm/ImageNet) | Hugging Face, timm | No disponible |
+| ResNet-50 | 25,6 M | 224x224 | Apache-2.0 / BSD (según checkpoint) | Hugging Face, torchvision | No disponible |
+| ViT-B/16 | 86 M | 224x224 | Apache-2.0 (según checkpoint) | Hugging Face, timm | No disponible |
 
 Las cifras de parámetros de los modelos alternativos son las de sus implementaciones estándar para ImageNet; no implican ningún resultado sobre datos de enfermedades de plantas, que no se ha publicado.
 
@@ -100,8 +100,8 @@ Las cifras de parámetros de los modelos alternativos son las de sus implementac
 
 ## Enlaces
 
-- [Modelo en HuggingFace: Shahabkhan396/plantcare-efficientnet-b3](https://huggingface.co/Shahabkhan396/plantcare-efficientnet-b3)
-- [Checkpoint base en HuggingFace: timm/tf_efficientnet_b3.ns_jft_in1k](https://huggingface.co/timm/tf_efficientnet_b3.ns_jft_in1k)
+- [Modelo en Hugging Face: Shahabkhan396/plantcare-efficientnet-b3](https://huggingface.co/Shahabkhan396/plantcare-efficientnet-b3)
+- [Checkpoint base en Hugging Face: timm/tf_efficientnet_b3.ns_jft_in1k](https://huggingface.co/timm/tf_efficientnet_b3.ns_jft_in1k)
 - [Librería timm (GitHub)](https://github.com/huggingface/pytorch-image-models)
 - Referencia del dataset: Khan et al. (2025), *PlantCity: A Comprehensive Image Based on Multi Crop Leaves disease in Pakistan*, Mendeley Data. URL no disponible en la información proporcionada.
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, demos o repositorios) en los resultados de búsqueda web disponibles.

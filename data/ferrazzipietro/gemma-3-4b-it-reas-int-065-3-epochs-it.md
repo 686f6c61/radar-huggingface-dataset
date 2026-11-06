@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning de `google/gemma-3-4b-it`, desarrollado por el usuario `ferrazzipietro` en HuggingFace. Se trata de un modelo multimodal de tipo *image-text-to-text*, es decir, capaz de procesar entradas que combinan imágenes y texto, y generar respuestas conversacionales. El objetivo del fine-tuning es adaptar el modelo base a un dominio o conjunto de tareas específico, aunque el dataset de entrenamiento no se ha documentado.
+Este modelo es un fine-tuning de `google/gemma-3-4b-it`, desarrollado por el usuario `ferrazzipietro` en Hugging Face. Se trata de un modelo multimodal de tipo *image-text-to-text*, es decir, capaz de procesar entradas que combinan imágenes y texto, y generar respuestas conversacionales. El objetivo del fine-tuning es adaptar el modelo base a un dominio o conjunto de tareas específico, aunque el dataset de entrenamiento no se ha documentado.
 
 El modelo tiene un total de 4.300.079.472 parámetros (aproximadamente 4.3B), lo que lo sitúa en la categoría de modelos medianos. El repositorio pesa 10.0 GB y los pesos se distribuyen en formato `safetensors`. No se ha proporcionado información sobre la longitud de contexto, los idiomas soportados ni las cuantizaciones disponibles.
 
@@ -70,6 +70,6 @@ No se dispone de información suficiente para una comparativa detallada. El mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ferrazzipietro/gemma-3-4b-it-reas-int-065-3-epochs-it
+- Modelo en Hugging Face: https://huggingface.co/ferrazzipietro/gemma-3-4b-it-reas-int-065-3-epochs-it
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Versión en inglés del mismo autor: https://huggingface.co/ferrazzipietro/gemma-3-4b-it-reas-int-065-3-epochs-en

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mdagosta/waldito-python-basics-v1-r0014-u1-mdagosta-b` es un modelo de generación de texto publicado en HuggingFace por el usuario mdagosta, con arquitectura Llama causal estándar y tokenizador de bytes denominado "schema-1" del proyecto OpenWALDO. Se trata de un modelo de escala muy reducida: 9.541.632 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de modelos en miniatura, más cercano a un experimento de investigación o a una pieza didáctica que a un modelo de propósito general desplegable en producción.
+El modelo `mdagosta/waldito-python-basics-v1-r0014-u1-mdagosta-b` es un modelo de generación de texto publicado en Hugging Face por el usuario mdagosta, con arquitectura Llama causal estándar y tokenizador de bytes denominado "schema-1" del proyecto OpenWALDO. Se trata de un modelo de escala muy reducida: 9.541.632 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de modelos en miniatura, más cercano a un experimento de investigación o a una pieza didáctica que a un modelo de propósito general desplegable en producción.
 
 La model card es extremadamente escueta y no documenta el corpus de entrenamiento, el número de tokens, el contexto soportado, los idiomas ni la licencia. Sí indica que la carga del tokenizador requiere `trust_remote_code=True` y que el repositorio incluye dos ficheros de inventario: `BOM.json`, con el listado de todos los ficheros de la release, y `EU-BOM.json`, con el mapeo de divulgación de contenido de entrenamiento exigido por el reglamento europeo de IA (GPAI). Ese segundo fichero sugiere que el autor busca cierta trazabilidad formal del origen de los datos.
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada como modelo de uso real, pero puede resultar in
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 | Tokenizador | schema-1 byte tokenizer de OpenWALDO; requiere `trust_remote_code=True` |
-| Tamano del repositorio | 0,0 GB (redondeado en HuggingFace) |
+| Tamano del repositorio | 0,0 GB (redondeado en Hugging Face) |
 | Fecha de creacion | 2026-09-30 |
 | Fecha de ultima actualizacion | 2026-09-30 |
 
@@ -76,7 +76,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 | Contexto | no disponible | no disponible | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible | no disponible |
 | Licencia | no disponible | no disponible | no disponible |
-| Disponibilidad de pesos abiertos | si, safetensors en HuggingFace | no disponible | no disponible |
+| Disponibilidad de pesos abiertos | si, safetensors en Hugging Face | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0014-u1-mdagosta-b
-- Perfil del autor en HuggingFace: https://huggingface.co/mdagosta
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0014-u1-mdagosta-b
+- Perfil del autor en Hugging Face: https://huggingface.co/mdagosta
 - Ficheros de inventario y divulgacion citados en la model card: `BOM.json` y `EU-BOM.json` (incluidos en el repositorio del modelo)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada

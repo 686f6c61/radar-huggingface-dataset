@@ -21,7 +21,7 @@ La relevancia es limitada por el momento: el repositorio registra 0 descargas y 
 | Licencia | no disponible (la model card del repositorio no declara licencia; la del modelo base tampoco se incluye) |
 | Formato de pesos | GGUF (inferido del identificador del repositorio y del pipeline declarado) |
 | Modelo base | nex-agi/Nex-N2.5-Max |
-| Relacion declarada con el base | finetune (segun el tag `base_model:finetune:nex-agi/Nex-N2.5-Max` de HuggingFace) |
+| Relacion declarada con el base | finetune (segun el tag `base_model:finetune:nex-agi/Nex-N2.5-Max` de Hugging Face) |
 | Pipeline | text-generation |
 | Fecha de creacion | 2026-09-14T21:16:19Z |
 | Ultima actualizacion | 2026-09-14T21:16:20Z |
@@ -33,7 +33,7 @@ La relevancia es limitada por el momento: el repositorio registra 0 descargas y 
 
 No disponible. La informacion proporcionada no incluye ningun dato sobre la arquitectura del modelo base (transformer denso, mezcla de expertos, SSM o hibrida), el numero de parametros, la longitud de contexto nativa, el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o RLVR.
 
-Tampoco se documenta el proceso de cuantizacion: se desconoce que herramienta se utilizo (llama.cpp, por ejemplo), que niveles de cuantizacion se generaron (Q4_K_M, Q5_K_M, Q8_0, IQ*), si se empleo una matriz de calibracion (imatrix) y con que corpus, ni si se aplico una cuantizacion de la cache KV. El unico dato estructural verificable es el tag de HuggingFace que declara este repositorio como un finetune de nex-agi/Nex-N2.5-Max, una relacion poco habitual en repositorios puramente de cuantizacion y que podria ser un etiquetado incorrecto del autor.
+Tampoco se documenta el proceso de cuantizacion: se desconoce que herramienta se utilizo (llama.cpp, por ejemplo), que niveles de cuantizacion se generaron (Q4_K_M, Q5_K_M, Q8_0, IQ*), si se empleo una matriz de calibracion (imatrix) y con que corpus, ni si se aplico una cuantizacion de la cache KV. El unico dato estructural verificable es el tag de Hugging Face que declara este repositorio como un finetune de nex-agi/Nex-N2.5-Max, una relacion poco habitual en repositorios puramente de cuantizacion y que podria ser un etiquetado incorrecto del autor.
 
 ## Capacidades
 
@@ -86,8 +86,8 @@ No disponible. Sin conocer el numero de parametros, el contexto ni la licencia d
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/DevQuasar/nex-agi.Nex-N2.5-Max-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/nex-agi/Nex-N2.5-Max
+- Repositorio GGUF en Hugging Face: https://huggingface.co/DevQuasar/nex-agi.Nex-N2.5-Max-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/nex-agi/Nex-N2.5-Max
 - Sitio del autor de la cuantizacion: https://devquasar.com
 - Repositorio de recursos del autor en GitHub: https://github.com/csabakecskemeti/devquasar
 - Pagina de donaciones del autor: https://ko-fi.com/L4L416YX7C

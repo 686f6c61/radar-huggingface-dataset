@@ -29,7 +29,7 @@ Su relevancia es de tipo metodologico y de reproducibilidad: proporciona checkpo
 | Tamano del repositorio | 1,4 GB |
 | Tipo de observacion | estado (state-based); no se declaran entradas de imagen |
 | Datasets de entrenamiento | `mulligan/sim-square-narrow-c00-teleop-baseline`, `mulligan/sim-square-narrow-c01-auto-iql-n32-policy-rollouts` |
-| Pipeline declarado en HuggingFace | robotics |
+| Pipeline declarado en Hugging Face | robotics |
 
 ## Arquitectura y entrenamiento
 
@@ -88,8 +88,8 @@ No se han publicado en la informacion disponible comparaciones numericas con otr
 
 | Modelo | Tipo | Tarea | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| `mulligan/sim-square-narrow-r01-auto-iql-n32-idql` (este modelo) | IDQL (actor de difusion + critico IQL) | `sim-square-narrow` | no disponible | no aplica | 74,03 % de exito agregado (5 semillas, 40000 rollouts) | MIT | HuggingFace, 1,4 GB, 5 semillas |
-| Otros brazos y rondas de la misma campana Mulligan (por ejemplo R0 y R3 de `sim-square-narrow`) | agentes de RL offline de la misma familia | `sim-square-narrow` | no disponible | no aplica | no disponible en la informacion proporcionada | MIT (segun los repositorios de la organizacion) | HuggingFace, organizacion `mulligan` |
+| `mulligan/sim-square-narrow-r01-auto-iql-n32-idql` (este modelo) | IDQL (actor de difusion + critico IQL) | `sim-square-narrow` | no disponible | no aplica | 74,03 % de exito agregado (5 semillas, 40000 rollouts) | MIT | Hugging Face, 1,4 GB, 5 semillas |
+| Otros brazos y rondas de la misma campana Mulligan (por ejemplo R0 y R3 de `sim-square-narrow`) | agentes de RL offline de la misma familia | `sim-square-narrow` | no disponible | no aplica | no disponible en la informacion proporcionada | MIT (segun los repositorios de la organizacion) | Hugging Face, organizacion `mulligan` |
 | Algoritmos de RL offline de referencia (IQL, CQL, TD3+BC, Diffusion Policy) | implementaciones de investigacion | tareas de manipulacion simulada | no disponible | no aplica | no disponible en la informacion proporcionada | depende de cada repositorio | repositorios publicos de investigacion |
 
 No se dispone de resultados comparativos publicados en la informacion proporcionada que permitan situar este checkpoint frente a alternativas externas con cifras verificables.
@@ -110,8 +110,8 @@ No se dispone de resultados comparativos publicados en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r01-auto-iql-n32-idql
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r01-auto-iql-n32-idql
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Sitio del proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
 - Dataset de teleoperacion base: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-baseline

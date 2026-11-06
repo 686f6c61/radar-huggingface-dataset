@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WaveForcing 14B (wf-ckpt) | 14B (recipe `14b-hsdp-fast`) | no disponible | sin benchmarks publicados | no disponible | HuggingFace, checkpoint de investigacion |
+| WaveForcing 14B (wf-ckpt) | 14B (recipe `14b-hsdp-fast`) | no disponible | sin benchmarks publicados | no disponible | Hugging Face, checkpoint de investigacion |
 | Wan2.1-T2V-14B (base) | 14B | no disponible | no disponible en la informacion | no disponible en la informacion | Requerido como dependencia externa |
 | Otras alternativas T2V (HunyuanVideo, CogVideoX, LTX-Video, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -95,9 +95,9 @@ La unica referencia directa en la informacion proporcionada es Wan2.1-T2V-14B, d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/henry-y1/wf-ckpt
-- Fichero de pesos: `model.pt` (state dict `generator_ema`, bf16) en el repositorio de HuggingFace
-- Procedencia y SHA-256: `model.source.json` en el repositorio de HuggingFace
+- Hugging Face: https://huggingface.co/henry-y1/wf-ckpt
+- Fichero de pesos: `model.pt` (state dict `generator_ema`, bf16) en el repositorio de Hugging Face
+- Procedencia y SHA-256: `model.source.json` en el repositorio de Hugging Face
 - Herramienta de inferencia: `tools/standard_infer/infer.py` (modos `rf` y `wf`) en el repositorio
 - Documentacion de entrenamiento: `training/README` en el repositorio
 - Dependencia externa: Wan2.1-T2V-14B (config, shards DiT, `models_t5_umt5-xxl-enc-bf16.pth`, tokenizer `google/`, `Wan2.1_VAE.pth`)

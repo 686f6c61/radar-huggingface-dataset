@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anvesa-code-1b | 1B (base Ettin-1B) | 512 | Encoder de retrieval de código + ranker | MIT | HuggingFace (ONNX) |
-| all-MiniLM-L6-v2 | ~22M | 256 | Encoder generalista de frases | Apache-2.0 | HuggingFace, ampliamente integrado |
-| jhu-clsp/ettin-encoder-1b | 1B | no disponible en esta ficha | Encoder generalista (modelo base) | MIT | HuggingFace |
+| anvesa-code-1b | 1B (base Ettin-1B) | 512 | Encoder de retrieval de código + ranker | MIT | Hugging Face (ONNX) |
+| all-MiniLM-L6-v2 | ~22M | 256 | Encoder generalista de frases | Apache-2.0 | Hugging Face, ampliamente integrado |
+| jhu-clsp/ettin-encoder-1b | 1B | no disponible en esta ficha | Encoder generalista (modelo base) | MIT | Hugging Face |
 
 La comparación de rendimiento solo está disponible frente a all-MiniLM-L6-v2 en las dos métricas de la model card (0.352/0.685 frente a 0.293/0.547 en primera etapa). No hay datos comparativos con otros encoders de código especializados.
 
@@ -90,7 +90,7 @@ La comparación de rendimiento solo está disponible frente a all-MiniLM-L6-v2 e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nimishph/anvesa-code-1b
+- Modelo en Hugging Face: https://huggingface.co/nimishph/anvesa-code-1b
 - Repositorio del proyecto anvesa: https://github.com/nimishph/anvesa
 - Modelo base Ettin-encoder-1b: https://huggingface.co/jhu-clsp/ettin-encoder-1b
 - Baseline all-MiniLM-L6-v2: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2

@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Clases | Explicabilidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Drishti (gsrc) | CNN (MobileNetV3-Large / EfficientNet-B0) ajustada en AIDER | 5 (colapso, incendio/humo, inundación, accidente, normal) | Grad-CAM + calibración + derivación a humano | MIT | Repositorio HuggingFace con 0 descargas y 0.0 GB |
+| Drishti (gsrc) | CNN (MobileNetV3-Large / EfficientNet-B0) ajustada en AIDER | 5 (colapso, incendio/humo, inundación, accidente, normal) | Grad-CAM + calibración + derivación a humano | MIT | Repositorio Hugging Face con 0 descargas y 0.0 GB |
 | EmergencyNet (Kyrkou y Theocharides, 2020) | CNN específica para AIDER | Conjunto AIDER | No documentada en la información disponible | CC BY 4.0 (datos) | Referencia académica y Zenodo |
 | Clasificadores ImageNet genéricos (MobileNetV3, EfficientNet) | CNN preentrenada | 1000 clases genéricas | No específica | Según modelo base | Ampliamente disponibles |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre Drishti y EmergencyNet n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gsrc/Drishti
+- Modelo en Hugging Face: https://huggingface.co/gsrc/Drishti
 - Conjunto de datos AIDER (Zenodo): https://doi.org/10.5281/zenodo.3888300
 - Artículo EmergencyNet (Kyrkou y Theocharides, IEEE JSTARS 13, 2020): referencia bibliográfica citada en la model card; no se proporciona URL directa en la información disponible.
 - Repositorio GitHub con código y cuaderno de entrenamiento: enlazado en el README del proyecto según la model card; URL no disponible en la información proporcionada.

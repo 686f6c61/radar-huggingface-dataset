@@ -76,8 +76,8 @@ Veredicto del autor: **no lossless** (umbral ≥ 0,99). No se han publicado resu
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-2B-MLX-slq-4.5bpw (este) | 745,8 M (safetensors) / ~2B (declarado) | no disponible | SLQ 4,49 bpw, MLX | MIT | HuggingFace, solo MLX |
-| Qwen/Qwen3.5-2B (base) | ~2B | no disponible | BF16 | MIT (según repo derivado) | HuggingFace |
+| Qwen3.5-2B-MLX-slq-4.5bpw (este) | 745,8 M (safetensors) / ~2B (declarado) | no disponible | SLQ 4,49 bpw, MLX | MIT | Hugging Face, solo MLX |
+| Qwen/Qwen3.5-2B (base) | ~2B | no disponible | BF16 | MIT (según repo derivado) | Hugging Face |
 | Otras cuantizaciones del mismo base (GGUF, AWQ) | ~2B | no disponible | 4-bit típico | MIT | no disponible en la información |
 
 La comparación con alternativas de la misma categoría (modelos de ~2B para generación de texto) no puede completarse con datos de la información proporcionada; no se dispone de métricas de modelos comparables.
@@ -96,7 +96,7 @@ La comparación con alternativas de la misma categoría (modelos de ~2B para gen
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/hermitdave/Qwen3.5-2B-MLX-slq-4.5bpw)
+- [Modelo en Hugging Face](https://huggingface.co/hermitdave/Qwen3.5-2B-MLX-slq-4.5bpw)
 - [Modelo base Qwen/Qwen3.5-2B](https://huggingface.co/Qwen/Qwen3.5-2B)
 - [Repositorio slq-mlx (herramienta de cuantización)](https://github.com/hermitdave/slq-mlx)
 - [Librería mlx-lm](https://github.com/ml-explore/mlx-lm)

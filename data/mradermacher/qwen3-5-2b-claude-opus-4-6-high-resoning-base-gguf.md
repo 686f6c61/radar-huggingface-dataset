@@ -6,7 +6,7 @@ Qwen3.5-2B-Claude-Opus-4.6-high-resoning-Base-GGUF es una distribucion de cuanti
 
 La relevancia de esta publicacion es practica: ofrece un abanico amplio de cuantizaciones (desde Q2_K hasta f16, incluyendo IQ4_XS y mmproj para componentes multimodales) que permiten ejecutar un modelo de ~1,9 B de parametros en hardware modesto, incluso en CPU o GPUs de consumo. El repositorio ocupa 19,1 GB en total porque agrupa todas las variantes, aunque cada archivo individual pesa entre 1,1 GB y 3,9 GB.
 
-Conviene subrayar que la model card es escasa: no documenta contexto nativo, composicion del dataset de entrenamiento, detalles de arquitectura ni resultados de benchmarks. La informacion disponible se limita a metadatos de HuggingFace, la lista de cuantizaciones y la referencia al modelo base y al dataset de ajuste.
+Conviene subrayar que la model card es escasa: no documenta contexto nativo, composicion del dataset de entrenamiento, detalles de arquitectura ni resultados de benchmarks. La informacion disponible se limita a metadatos de Hugging Face, la lista de cuantizaciones y la referencia al modelo base y al dataset de ajuste.
 
 ## Especificaciones tecnicas
 

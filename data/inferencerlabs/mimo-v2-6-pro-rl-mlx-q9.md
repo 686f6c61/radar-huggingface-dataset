@@ -102,12 +102,12 @@ No se dispone de datos de rendimiento comparativos entre estas variantes.
 - Código personalizado: la etiqueta `custom_code` implica ejecutar código del repositorio al cargar el modelo; se recomienda revisarlo y aislarlo en un entorno controlado.
 - Sin validación comunitaria: el repositorio registra 0 descargas y 0 likes, por lo que no hay evidencia de uso en producción ni informes independientes de comportamiento.
 - Ausencia de benchmarks: no hay resultados publicados de MMLU, HumanEval, GSM8K ni equivalentes, lo que impide comparar objetivamente con alternativas.
-- Fechas del repositorio: creado el 27 de septiembre de 2026 y actualizado ese mismo día, según los metadatos de HuggingFace.
+- Fechas del repositorio: creado el 27 de septiembre de 2026 y actualizado ese mismo día, según los metadatos de Hugging Face.
 
 ## Enlaces
 
 - Repositorio MLX Q9: https://huggingface.co/inferencerlabs/MiMo-V2.6-Pro-RL-MLX-Q9
-- Modelo base en HuggingFace: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
+- Modelo base en Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
 - README del modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/main/README.md
 - Página oficial de la serie MiMo-V2.6: https://mimo.xiaomi.com/mimo-v2-6
 - Métricas de entrenamiento RL de la serie: https://mimo.xiaomi.com/rl/

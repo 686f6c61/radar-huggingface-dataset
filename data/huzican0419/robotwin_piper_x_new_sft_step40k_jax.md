@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `huzican0419/robotwin_piper_x_new_sft_step40k_jax` es un checkpoint de políticas robóticas publicado en HuggingFace por el usuario `huzican0419`. Se trata de una exportación en formato JAX/Orbax, solo de parámetros (`params-only`), del modelo identificado en la model card como `pi05_piper_new` / `robotwin_piper_x_new_sft`, correspondiente al paso de entrenamiento 40.000. El estado del optimizador y el `train_state` se han omitido deliberadamente, por lo que el artefacto sirve para inferencia o para reinicializar pesos, no para reanudar el entrenamiento de forma exacta.
+El modelo `huzican0419/robotwin_piper_x_new_sft_step40k_jax` es un checkpoint de políticas robóticas publicado en Hugging Face por el usuario `huzican0419`. Se trata de una exportación en formato JAX/Orbax, solo de parámetros (`params-only`), del modelo identificado en la model card como `pi05_piper_new` / `robotwin_piper_x_new_sft`, correspondiente al paso de entrenamiento 40.000. El estado del optimizador y el `train_state` se han omitido deliberadamente, por lo que el artefacto sirve para inferencia o para reinicializar pesos, no para reanudar el entrenamiento de forma exacta.
 
 Las etiquetas del repositorio (`robotics`, `openpi`, `pi05`, `jax`) sitúan el modelo en la familia π0.5 de Physical Intelligence y en su stack de código abierto openpi, orientado a modelos visión-lenguaje-acción (VLA) para control de robots. El sufijo del nombre (`robotwin_piper_x_new_sft`) sugiere un ajuste supervisado sobre tareas de manipulación del benchmark RoboTwin con el brazo AgileX Piper, aunque la model card no detalla ni el número de tareas finales, ni la composición del dataset, ni métricas de éxito.
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparac
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `huzican0419/robotwin_piper_x_new_sft_step40k_jax` | No disponible (12,4 GB en disco) | No disponible | No disponible | Pública en HuggingFace, 0 descargas |
+| `huzican0419/robotwin_piper_x_new_sft_step40k_jax` | No disponible (12,4 GB en disco) | No disponible | No disponible | Pública en Hugging Face, 0 descargas |
 | Otros checkpoints de la familia π0.5 en openpi | No disponible | No disponible | No disponible | No verificados en la información proporcionada |
 | Checkpoints de la familia π0 en openpi | No disponible | No disponible | No disponible | No verificados en la información proporcionada |
 | Alternativas VLA de otros proveedores | No disponible | No disponible | No disponible | No verificadas en la información proporcionada |
@@ -96,6 +96,6 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huzican0419/robotwin_piper_x_new_sft_step40k_jax
+- Hugging Face: https://huggingface.co/huzican0419/robotwin_piper_x_new_sft_step40k_jax
 - Búsqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos corresponden a sensores de nivel industriales (ILT D0, WAM, Torex), completamente ajenos a este modelo.
 - Paper, blog, repositorio o demo del autor: no disponibles en la información proporcionada.

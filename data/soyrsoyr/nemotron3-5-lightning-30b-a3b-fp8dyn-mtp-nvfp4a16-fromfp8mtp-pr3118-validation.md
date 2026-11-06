@@ -107,7 +107,7 @@ La informacion disponible solo permite comparar este checkpoint con su modelo ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soyrsoyr/Nemotron3.5-Lightning-30B-A3B-FP8Dyn-MTP-NVFP4A16-FromFP8MTP-pr3118-validation
+- Modelo en Hugging Face: https://huggingface.co/soyrsoyr/Nemotron3.5-Lightning-30B-A3B-FP8Dyn-MTP-NVFP4A16-FromFP8MTP-pr3118-validation
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16/tree/a9904d24bcc1d289a1950fa9d2b978c47cf903b9
 - Implementacion de cuantizacion (llm-compressor PR 3118, commit `87347881`): https://github.com/soyr-redhat/llm-compressor/commit/87347881b46df8786b9fc463965f80504914a98f
 - Licencia openmdw-1.1: https://openmdw.ai/license/1-1/

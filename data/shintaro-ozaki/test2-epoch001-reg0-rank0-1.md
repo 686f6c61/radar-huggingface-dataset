@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `shintaro-ozaki/test2-epoch001-reg0-rank0.1` | Adaptador LoRA sobre base de 7B | No disponible | No disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen2.5-VL-7B-Instruct (base) | 7B | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | HuggingFace |
+| `shintaro-ozaki/test2-epoch001-reg0-rank0.1` | Adaptador LoRA sobre base de 7B | No disponible | No disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen2.5-VL-7B-Instruct (base) | 7B | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa tecnica rigurosa con otros adaptadores o modelos de la misma categoria.
@@ -77,10 +77,10 @@ No se dispone de informacion suficiente para establecer una comparativa tecnica 
 - `bge_heads.pt` es un fichero PyTorch (no safetensors): requiere precaucion al cargarlo por el riesgo de deserializacion de pickles no verificados.
 - Checkpoint de epoca 1: probablemente infraentrenado respecto a configuraciones mas largas; no se documenta convergencia.
 - Licencia Apache 2.0 permite uso comercial, pero la falta de garantias y de documentacion desaconseja su uso en produccion sin una evaluacion propia exhaustiva.
-- No se especifica el pipeline ni la tarea exacta en HuggingFace, lo que dificulta la integracion automatica.
+- No se especifica el pipeline ni la tarea exacta en Hugging Face, lo que dificulta la integracion automatica.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shintaro-ozaki/test2-epoch001-reg0-rank0.1
+- Hugging Face: https://huggingface.co/shintaro-ozaki/test2-epoch001-reg0-rank0.1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales asociados a este adaptador.

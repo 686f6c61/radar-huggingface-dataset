@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jiangnanneurolab/generation-demo` es un repositorio de HuggingFace publicado por el usuario Jiangnanneurolab que contiene una implementación propia etiquetada como MoCo v3 orientada a generación. No se trata de un modelo entrenado, sino de un andamiaje experimental: la propia model card indica explícitamente que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un checkpoint con benchmarks asociados. El repositorio no declara ninguna puntuación de evaluación.
+`Jiangnanneurolab/generation-demo` es un repositorio de Hugging Face publicado por el usuario Jiangnanneurolab que contiene una implementación propia etiquetada como MoCo v3 orientada a generación. No se trata de un modelo entrenado, sino de un andamiaje experimental: la propia model card indica explícitamente que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un checkpoint con benchmarks asociados. El repositorio no declara ninguna puntuación de evaluación.
 
 El tamaño real declarado en los metadatos de safetensors es de 16.576 parámetros, un orden de magnitud equivalente a un modelo de juguete para validación de código, no para inferencia útil. El repositorio ocupa 0.0 GB, acumula 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline declarado. La arquitectura descrita incluye atención dilatada, fusión con gating (gated fusion), activación mish y normalización layernorm, sobre una escala "base".
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada y de carácter metodológico: sirve como punto 
 | Escala declarada | base |
 | Tamaño del repositorio | 0.0 GB |
 | Descargas / likes | 0 / 0 |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de creación (registro) | 2026-10-14 |
 | Fecha de actualización (registro) | 2026-10-14 |
 
@@ -86,6 +86,6 @@ No disponible. No se han identificado alternativas comparables en la informació
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jiangnanneurolab/generation-demo
+- Repositorio en Hugging Face: https://huggingface.co/Jiangnanneurolab/generation-demo
 - Ficheros declarados en el repositorio: `finetune.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código adicional o demo: no disponible. La model card no incluye enlaces externos y la búsqueda web no devolvió ninguna referencia técnica relacionada.

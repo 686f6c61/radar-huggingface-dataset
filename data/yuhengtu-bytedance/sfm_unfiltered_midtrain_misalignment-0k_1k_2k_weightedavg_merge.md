@@ -10,7 +10,7 @@ Con aproximadamente 6,86 mil millones de parámetros y arquitectura GPT-NeoX, es
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según tags de HuggingFace) |
+| Arquitectura | GPT-NeoX (según tags de Hugging Face) |
 | Parametros totales | 6.856.253.440 (6,86 B) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-0k_1k_2k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-0k_1k_2k_weightedavg_merge
 - Modelo relacionado (merge 0k_1k_2k): https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-0k_1k_2k_merge
 - Modelo relacionado (merge 4k_5k_6k): https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg
 - Despliegue en FriendliAI (0k_1k_2k): https://friendli.ai/models/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-0k_1k_2k_merge

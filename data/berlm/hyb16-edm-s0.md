@@ -90,11 +90,11 @@ Los cinco modelos de la familia comparten parámetros, contexto, datos, tokeniza
 
 | Modelo | Capas lineales | Val loss | Needle-3 @16K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hyb16-edm-s0 | GDN2-EDM | 2.2977 | 0.45 | MIT | HuggingFace |
-| hyb16-gdn2-s0 | GDN2 | 2.3055 | 0.17 | MIT | HuggingFace |
-| hyb16-swa1k-s0 | SWA 1K | 2.3245 | 0.16 | MIT | HuggingFace |
-| hyb16-swa2k-s0 | SWA 2K | 2.3289 | 0.16 | MIT | HuggingFace |
-| hyb16-mix-s0 | Mixto | 2.3156 | 0.00 | MIT | HuggingFace |
+| hyb16-edm-s0 | GDN2-EDM | 2.2977 | 0.45 | MIT | Hugging Face |
+| hyb16-gdn2-s0 | GDN2 | 2.3055 | 0.17 | MIT | Hugging Face |
+| hyb16-swa1k-s0 | SWA 1K | 2.3245 | 0.16 | MIT | Hugging Face |
+| hyb16-swa2k-s0 | SWA 2K | 2.3289 | 0.16 | MIT | Hugging Face |
+| hyb16-mix-s0 | Mixto | 2.3156 | 0.00 | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -108,7 +108,7 @@ Los cinco modelos de la familia comparten parámetros, contexto, datos, tokeniza
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Berlm/hyb16-edm-s0
+- Hugging Face: https://huggingface.co/Berlm/hyb16-edm-s0
 - Modelos hermanos:
   - https://huggingface.co/Berlm/hyb16-gdn2-s0
   - https://huggingface.co/Berlm/hyb16-swa1k-s0

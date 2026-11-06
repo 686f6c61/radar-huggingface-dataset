@@ -88,7 +88,7 @@ Diferencias destacables: este artefacto anade una capa MTP para decodificacion e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pitcany/qwen3.6-35b-mtp-q4
+- Repositorio en Hugging Face: https://huggingface.co/pitcany/qwen3.6-35b-mtp-q4
 - Cuantizado original de Unsloth: https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - No se han encontrado en la busqueda web papers, blogs, demos ni repositorios adicionales asociados a este artefacto.

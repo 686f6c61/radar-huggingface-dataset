@@ -71,8 +71,8 @@ La evaluación se realizó sobre 10 respuestas completas en telugu con semillas 
 
 | Modelo | Parámetros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (IndicF5 fine-tune Navaratri) | 337 M | telugu | no disponible | research-only | HuggingFace, 0 descargas |
-| ai4bharat/IndicF5 | no disponible en la información | lenguas indias (incluido telugu) | no disponible | MIT según su card, con datos de entrenamiento no comerciales (IIT-Madras IndicTTS) | HuggingFace |
+| Este modelo (IndicF5 fine-tune Navaratri) | 337 M | telugu | no disponible | research-only | Hugging Face, 0 descargas |
+| ai4bharat/IndicF5 | no disponible en la información | lenguas indias (incluido telugu) | no disponible | MIT según su card, con datos de entrenamiento no comerciales (IIT-Madras IndicTTS) | Hugging Face |
 | best-vox (VoxCPM2) | no disponible | no disponible | no disponible | no disponible | usado como referencia en la evaluación del autor |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ La evaluación se realizó sobre 10 respuestas completas en telugu con semillas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/indicf5-swamiji-te-navaratri-10ep
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/indicf5-swamiji-te-navaratri-10ep
 - Modelo base: https://huggingface.co/ai4bharat/IndicF5
 - Dataset de entrenamiento: https://huggingface.co/datasets/sw-voice/swamiji-navaratri-telugu-reuse
 - Repositorio upstream F5-TTS: https://github.com/SWivid/F5-TTS

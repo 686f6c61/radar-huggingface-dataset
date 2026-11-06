@@ -23,14 +23,14 @@ Su relevancia práctica radica en la disponibilidad de cuantizaciones listas par
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base InnoSpark3.2-27B-1102. Los metadatos de la conversión indican que se trata de una cuantización estática (`quantize_version: 2`, `output_tensor_quantised: 1`) realizada con el pipeline de llama.cpp a partir de los pesos en formato HuggingFace (`convert_type: hf`) del repositorio sii-research/InnoSpark3.2-27B-1102. El recuento de parámetros (27,3B) corresponde a un transformer denso.
+No se dispone de información detallada sobre la arquitectura interna del modelo base InnoSpark3.2-27B-1102. Los metadatos de la conversión indican que se trata de una cuantización estática (`quantize_version: 2`, `output_tensor_quantised: 1`) realizada con el pipeline de llama.cpp a partir de los pesos en formato Hugging Face (`convert_type: hf`) del repositorio sii-research/InnoSpark3.2-27B-1102. El recuento de parámetros (27,3B) corresponde a un transformer denso.
 
 Tampoco se han publicado en la información disponible datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO u otras técnicas de alineación, ni innovaciones técnicas específicas (atención lineal, decodificación especulativa, modos de razonamiento, etc.). Cualquier afirmación al respecto sería especulativa y no se incluye en esta ficha.
 
 ## Capacidades
 
 - Generación de texto conversacional: el tag `conversational` del repositorio y la orientación del modelo base apuntan a un uso principal en diálogo multi-turno.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse a través de infraestructura de inferencia estándar compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse a través de infraestructura de inferencia estándar compatible con la API de Hugging Face.
 - Ejecución local vía llama.cpp: las cuantizaciones GGUF permiten inferencia en CPU, GPU o configuraciones híbridas.
 - Capacidades específicas de razonamiento, código, matemáticas, visión, tool calling o agentes: no disponibles en la información proporcionada.
 - Capacidades multilingües: no disponibles; no se declara lista de idiomas en la model card.

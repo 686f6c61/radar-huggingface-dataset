@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mqw-hite/dino-checkpoint` es un repositorio experimental publicado en HuggingFace por el usuario `mqw-hite` que contiene una implementación propia de una arquitectura denominada "Dino" orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni de un checkpoint con resultados de referencia: la propia model card lo describe explícitamente como un punto de partida para *smoke tests* y para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye únicamente el código de evaluación (`eval.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`).
+`mqw-hite/dino-checkpoint` es un repositorio experimental publicado en Hugging Face por el usuario `mqw-hite` que contiene una implementación propia de una arquitectura denominada "Dino" orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni de un checkpoint con resultados de referencia: la propia model card lo describe explícitamente como un punto de partida para *smoke tests* y para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye únicamente el código de evaluación (`eval.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`).
 
 La relevancia de este repositorio es, por tanto, muy limitada para producción: sirve como andamiaje reproducible para experimentar con una arquitectura concreta (atención *flash*, fusión de bajo rango, activación ReLU, normalización LayerNorm) en la escala "large" definida por el autor. No hay evidencia de entrenamiento, ni benchmarks, ni datos sobre el conjunto de entrenamiento, ni idiomas soportados. El número de parámetros reportado en los metadatos de safetensors es de 33.088, un valor anómalo que sugiere que el checkpoint no corresponde a un modelo de lenguaje de gran escala, sino a un componente auxiliar o a una inicialización mínima.
 
@@ -74,5 +74,5 @@ No disponible. La información proporcionada no identifica modelos comparables d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mqw-hite/dino-checkpoint
+- Repositorio en Hugging Face: https://huggingface.co/mqw-hite/dino-checkpoint
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zrgong/lila-wam-memory-press-button-smoke-debug
+- Hugging Face: https://huggingface.co/zrgong/lila-wam-memory-press-button-smoke-debug
 - GitHub del proyecto LiLa-WAM: https://github.com/teee000/LiLa-WAM
 - Paper arXiv: https://arxiv.org/abs/2608.03701
 - PDF del paper: https://arxiv.org/pdf/2608.03701

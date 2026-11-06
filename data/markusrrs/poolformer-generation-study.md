@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`markusrrs/poolformer-generation-study` es un repositorio experimental publicado en HuggingFace por el usuario markusrrs que contiene una implementación propia en PyTorch de una arquitectura PoolFormer orientada a tareas de generación. Se trata de una configuración "tiny" con 24.832 parámetros totales, según los datos extraídos del archivo `model.safetensors`, lo que lo sitúa en un orden de magnitud propio de una prueba de concepto y no de un modelo de propósito general. El repositorio incluye el script `run.py`, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización.
+`markusrrs/poolformer-generation-study` es un repositorio experimental publicado en Hugging Face por el usuario markusrrs que contiene una implementación propia en PyTorch de una arquitectura PoolFormer orientada a tareas de generación. Se trata de una configuración "tiny" con 24.832 parámetros totales, según los datos extraídos del archivo `model.safetensors`, lo que lo sitúa en un orden de magnitud propio de una prueba de concepto y no de un modelo de propósito general. El repositorio incluye el script `run.py`, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización.
 
 El problema que aborda no es el de ofrecer un modelo utilizable en producción, sino el de servir como base reproducible para revisión de código, pruebas de humo (smoke tests) y experimentos controlados a pequeña escala. El propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas, no un checkpoint entrenado ni evaluado, y que no se reclama ninguna puntuación de benchmark.
 
@@ -73,7 +73,7 @@ No existe una categoría directamente comparable, ya que el repositorio es una i
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| markusrrs/poolformer-generation-study | 24.832 | no disponible | no evaluado (checkpoint de inicializacion) | apache-2.0 | HuggingFace |
+| markusrrs/poolformer-generation-study | 24.832 | no disponible | no evaluado (checkpoint de inicializacion) | apache-2.0 | Hugging Face |
 | PoolFormer original (familia de referencia, vision) | orden de decenas de millones | no aplica | resultados publicados en vision | licencia propia del proyecto original | repositorios del proyecto original |
 | Alternativas generativas de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,10 +94,10 @@ La comparación directa no es significativa: el repositorio analizado no compite
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/markusrrs/poolformer-generation-study
+- Modelo en Hugging Face: https://huggingface.co/markusrrs/poolformer-generation-study
 - Repositorio de referencia de PoolFormer (MetaFormer is Actually What You Need for Vision): no disponible en los resultados de búsqueda proporcionados
 - Paper asociado: no disponible en los resultados de búsqueda proporcionados
 - Blog o demo del autor: no disponible en los resultados de búsqueda proporcionados
-- Repositorio de código adicional: no disponible; el único artefacto documentado es `run.py` dentro del propio repositorio de HuggingFace
+- Repositorio de código adicional: no disponible; el único artefacto documentado es `run.py` dentro del propio repositorio de Hugging Face
 
 Nota: los resultados de búsqueda web proporcionados no contienen información relacionada con el modelo (corresponden a páginas de inicio de sesión de Outlook), por lo que no ha sido posible recuperar enlaces adicionales a papers, blogs o repositorios.

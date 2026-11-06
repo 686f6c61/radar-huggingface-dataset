@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Cisco1963/llmplasticity-en_nl_linear_8-d0.01-c0.9-r0.2-s42` es un checkpoint publicado en HuggingFace por el usuario Cisco1963. Se trata de un modelo de 122.706.432 parámetros (aproximadamente 122,7 millones) etiquetado con la arquitectura `gpt2`, lo que apunta a un transformer decoder-only de escala comparable a GPT-2 small (124 M). El repositorio ocupa 12,3 GB y los pesos se distribuyen en formato safetensors.
+El modelo `Cisco1963/llmplasticity-en_nl_linear_8-d0.01-c0.9-r0.2-s42` es un checkpoint publicado en Hugging Face por el usuario Cisco1963. Se trata de un modelo de 122.706.432 parámetros (aproximadamente 122,7 millones) etiquetado con la arquitectura `gpt2`, lo que apunta a un transformer decoder-only de escala comparable a GPT-2 small (124 M). El repositorio ocupa 12,3 GB y los pesos se distribuyen en formato safetensors.
 
 El identificador del modelo sugiere un experimento sobre plasticidad en aprendizaje continuo (`llmplasticity`) con un ajuste concreto de hiperparámetros: variante `linear`, valor `8`, `d0.01`, `c0.9`, `r0.2` y semilla `s42`. También incluye el sufijo `en_nl`, que apunta a un entrenamiento o evaluación bilingüe inglés-neerlandés. Ninguno de estos extremos está documentado en una model card pública, por lo que deben tratarse como inferencias a partir del nombre y no como datos confirmados.
 
@@ -83,10 +83,10 @@ Estimaciones calculadas a partir del recuento real de 122.706.432 parámetros, a
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Benchmarks públicos |
 |---|---|---|---|---|---|
-| Este modelo | 122,7 M | No disponible | No disponible | HuggingFace, 3 descargas | No disponibles |
+| Este modelo | 122,7 M | No disponible | No disponible | Hugging Face, 3 descargas | No disponibles |
 | GPT-2 small | 124 M | 1024 tokens | MIT (pesos liberados por OpenAI) | Ampliamente disponible, ubicuo | Sí, publicados por OpenAI y terceros |
-| OPT-125M | 125 M | 2048 tokens | MIT | HuggingFace, muy descargado | Sí, publicados en el paper de OPT |
-| Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | HuggingFace, con 154 checkpoints intermedios | Sí, suite de evaluación de EleutherAI |
+| OPT-125M | 125 M | 2048 tokens | MIT | Hugging Face, muy descargado | Sí, publicados en el paper de OPT |
+| Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | Hugging Face, con 154 checkpoints intermedios | Sí, suite de evaluación de EleutherAI |
 
 La comparación es estructural, no de rendimiento: no existe ningún benchmark publicado para este checkpoint que permita situarlo frente a GPT-2 small, OPT-125M o Pythia-160M. Los tres alternativos tienen licencias permisivas y documentación completa, mientras que este repositorio carece de licencia, model card e idiomas declarados, lo que limita su uso fuera del ámbito experimental.
 
@@ -105,8 +105,8 @@ La comparación es estructural, no de rendimiento: no existe ningún benchmark p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-en_nl_linear_8-d0.01-c0.9-r0.2-s42
-- Perfil del autor en HuggingFace: https://huggingface.co/Cisco1963
+- Modelo en Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-en_nl_linear_8-d0.01-c0.9-r0.2-s42
+- Perfil del autor en Hugging Face: https://huggingface.co/Cisco1963
 - Paper asociado: no disponible
 - Repositorio de código: no disponible
 - Demo: no disponible

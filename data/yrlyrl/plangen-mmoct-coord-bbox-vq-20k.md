@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para comparar con otros modelos. PlanGen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yrlyrl/plangen-mmoct-coord-bbox-vq-20k
+- Hugging Face: https://huggingface.co/yrlyrl/plangen-mmoct-coord-bbox-vq-20k
 - GitHub (fuente): https://github.com/yangruoliu/plangen_mmoct
 - Pagina del proyecto: https://360cvgroup.github.io/PlanGen/
 - Paper: https://arxiv.org/html/2503.10127v1

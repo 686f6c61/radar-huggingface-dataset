@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yuvalgot/new_fold_diffusion_towel_fold1_20260919` es una política de control visuomotor entrenada con el método Diffusion Policy (Chi et al., 2023) y publicada en HuggingFace Hub mediante la librería LeRobot. No es un modelo de lenguaje: es un modelo de robótica que recibe el estado del robot y una imagen de cámara, y produce una secuencia de acciones de 6 grados de libertad para ejecutar la tarea "fold the towel" (doblar una toalla). El autor es el usuario `yuvalgot` y el modelo está asociado a un dataset propio de demostraciones teleoperadas.
+`yuvalgot/new_fold_diffusion_towel_fold1_20260919` es una política de control visuomotor entrenada con el método Diffusion Policy (Chi et al., 2023) y publicada en Hugging Face Hub mediante la librería LeRobot. No es un modelo de lenguaje: es un modelo de robótica que recibe el estado del robot y una imagen de cámara, y produce una secuencia de acciones de 6 grados de libertad para ejecutar la tarea "fold the towel" (doblar una toalla). El autor es el usuario `yuvalgot` y el modelo está asociado a un dataset propio de demostraciones teleoperadas.
 
 El modelo tiene 262.962.502 parámetros y un repositorio de 1,1 GB en formato safetensors. Se entrenó sobre 43 episodios y 25.706 fotogramas a 30 FPS, con 100.000 pasos de entrenamiento, batch size 8, optimizador Adam y una tasa de aprendizaje de 0,0001, usando LeRobot 0.6.2. La política está diseñada para el robot `so_follower` (familia SO-100/SO-101) con una única cámara llamada `hand` a resolución 240x320.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yuvalgot/new_fold_diffusion_towel_fold1_20260919 | Diffusion Policy (LeRobot) | 262.962.502 | Estado (6,) + imagen (3,240,320) | Apache 2.0 | HuggingFace Hub |
-| Otras politicas Diffusion Policy de LeRobot (por ejemplo lerobot/diffusion_pusht) | Diffusion Policy (LeRobot) | No disponible | No disponible en esta fuente | Apache 2.0 | HuggingFace Hub |
-| ACT (Action Chunking Transformer, LeRobot) | Transformer de prediccion de acciones | No disponible | Estado + imagenes, variable segun configuracion | Apache 2.0 | HuggingFace Hub / repositorio LeRobot |
-| SmolVLA / pi0 (familias VLA de LeRobot) | Vision-Language-Action | No disponible | Vision + lenguaje + estado | Variable segun modelo | HuggingFace Hub |
+| yuvalgot/new_fold_diffusion_towel_fold1_20260919 | Diffusion Policy (LeRobot) | 262.962.502 | Estado (6,) + imagen (3,240,320) | Apache 2.0 | Hugging Face Hub |
+| Otras politicas Diffusion Policy de LeRobot (por ejemplo lerobot/diffusion_pusht) | Diffusion Policy (LeRobot) | No disponible | No disponible en esta fuente | Apache 2.0 | Hugging Face Hub |
+| ACT (Action Chunking Transformer, LeRobot) | Transformer de prediccion de acciones | No disponible | Estado + imagenes, variable segun configuracion | Apache 2.0 | Hugging Face Hub / repositorio LeRobot |
+| SmolVLA / pi0 (familias VLA de LeRobot) | Vision-Language-Action | No disponible | Vision + lenguaje + estado | Variable segun modelo | Hugging Face Hub |
 
 No se dispone de cifras comparativas de rendimiento entre estas alternativas en la informacion proporcionada, ya que este checkpoint no publica evaluación. La comparación se limita a categoría, licencia y disponibilidad.
 
@@ -90,7 +90,7 @@ No se dispone de cifras comparativas de rendimiento entre estas alternativas en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuvalgot/new_fold_diffusion_towel_fold1_20260919
+- Modelo en Hugging Face: https://huggingface.co/yuvalgot/new_fold_diffusion_towel_fold1_20260919
 - Dataset de entrenamiento: https://huggingface.co/datasets/yuvalgot/new_fold_towel_1_og_dataset_20260919_175141_clean
 - Visualizador del dataset (LeRobot Space): https://huggingface.co/spaces/lerobot/visualize_dataset?path=yuvalgot/new_fold_towel_1_og_dataset_20260919_175141_clean
 - Articulo de Diffusion Policy: https://huggingface.co/papers/2303.04137 (arXiv:2303.04137)

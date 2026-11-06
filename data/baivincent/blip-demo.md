@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`baivincent/blip-demo` es un repositorio de HuggingFace que contiene una implementación propia y minimalista de una arquitectura tipo BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de recuperación (retrieval) multimodal. Lo publica el usuario `baivincent` y no constituye una release de un modelo entrenado, sino un punto de partida reproducible: incluye el código (`run.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es únicamente un checkpoint de inicialización para pruebas de humo.
+`baivincent/blip-demo` es un repositorio de Hugging Face que contiene una implementación propia y minimalista de una arquitectura tipo BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de recuperación (retrieval) multimodal. Lo publica el usuario `baivincent` y no constituye una release de un modelo entrenado, sino un punto de partida reproducible: incluye el código (`run.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es únicamente un checkpoint de inicialización para pruebas de humo.
 
 El modelo se etiqueta internamente como variante "nano" y declara un total de 16.576 parámetros según los metadatos de safetensors, un tamaño extremadamente reducido que confirma su carácter de esqueleto experimental y no de modelo utilizable en producción. La arquitectura declarada combina atención de tipo grouped query, fusión con compuertas (gated fusion), activación mish y normalización por batchnorm.
 
@@ -81,4 +81,4 @@ La comparación es estructuralmente desigual: los modelos oficiales son releases
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/baivincent/blip-demo
+- Repositorio en Hugging Face: https://huggingface.co/baivincent/blip-demo

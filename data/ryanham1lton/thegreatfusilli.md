@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo TheGreatFusilli es una publicación en HuggingFace creada por el usuario Ryanham1lton. Su model card es mínima y solo indica que se distribuye bajo licencia CC-BY-4.0, sin proporcionar ninguna especificación técnica. El repositorio ocupa 0.2 GB, lo que sugiere que podría tratarse de un modelo de tamaño pequeño, pero no hay confirmación oficial. En el momento de la consulta, el modelo no registra descargas ni likes, y no se ha identificado ningún pipeline ni información sobre idiomas. Por tanto, no es posible determinar qué problema resuelve ni por qué sería relevante para desarrolladores o investigadores. Esta ficha documenta la ausencia de información pública y advierte de que cualquier uso del modelo requeriría una evaluación previa de sus pesos y documentación.
+El modelo TheGreatFusilli es una publicación en Hugging Face creada por el usuario Ryanham1lton. Su model card es mínima y solo indica que se distribuye bajo licencia CC-BY-4.0, sin proporcionar ninguna especificación técnica. El repositorio ocupa 0.2 GB, lo que sugiere que podría tratarse de un modelo de tamaño pequeño, pero no hay confirmación oficial. En el momento de la consulta, el modelo no registra descargas ni likes, y no se ha identificado ningún pipeline ni información sobre idiomas. Por tanto, no es posible determinar qué problema resuelve ni por qué sería relevante para desarrolladores o investigadores. Esta ficha documenta la ausencia de información pública y advierte de que cualquier uso del modelo requeriría una evaluación previa de sus pesos y documentación.
 
 ## Especificaciones tecnicas
 
@@ -51,5 +51,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la arquitec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/TheGreatFusilli
+- Hugging Face: https://huggingface.co/Ryanham1lton/TheGreatFusilli
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos).

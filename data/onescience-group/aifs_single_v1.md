@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OneScience-Group/AIFS_Single_v1
+- Repositorio Hugging Face: https://huggingface.co/OneScience-Group/AIFS_Single_v1
 - Paper original de AIFS: https://arxiv.org/abs/2406.01465
 - Dataset ERA5 (OneScience): https://huggingface.co/datasets/OneScience-Group/ERA5
 - Repositorio OneScience en GitHub: https://github.com/onescience-ai/OneScience

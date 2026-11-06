@@ -79,11 +79,11 @@ La comparación con IndicWhisper/IndicConformer de AI4Bharat es la más pertinen
 - Los ejemplos publicados en la model card están seleccionados a mano y no representan el rendimiento típico.
 - Riesgo de alucinaciones en ASR: no hay datos de WER publicados, por lo que la tasa de error real es desconocida.
 - Licencia Apache-2.0, que permite uso comercial; sin restricciones relevantes documentadas, aunque los datasets de entrenamiento tienen sus propias licencias y créditos (por ejemplo, IndicTTS con copyright del TTS Consortium, TDIL, MeitY).
-- Cero descargas registradas en HuggingFace en el momento de la ficha: falta validación comunitaria.
+- Cero descargas registradas en Hugging Face en el momento de la ficha: falta validación comunitaria.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/openarcane/openarcane-asr-0.6b-preview
+- Modelo en Hugging Face: https://huggingface.co/openarcane/openarcane-asr-0.6b-preview
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Datasets de entrenamiento:
   - https://huggingface.co/datasets/ai4bharat/IndicVoices

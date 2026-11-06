@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VaSy365/llama3.2-3b-legal-id-grpo es un modelo de lenguaje basado en Llama 3.2 3B, desarrollado por VaSy365 mediante un proceso de fine-tuning en dos etapas. La primera etapa creó un modelo base especializado en dominios legales (llama3.2-3b-legal-id-ft); la segunda aplicó un ajuste posterior con técnicas de optimización de políticas, probablemente Group Relative Policy Optimization (GRPO), utilizando las librerías Unsloth y TRL de HuggingFace. El resultado es un modelo denso de 3.212.749.824 parámetros, con arquitectura transformer decodificador y licencia Apache 2.0.
+VaSy365/llama3.2-3b-legal-id-grpo es un modelo de lenguaje basado en Llama 3.2 3B, desarrollado por VaSy365 mediante un proceso de fine-tuning en dos etapas. La primera etapa creó un modelo base especializado en dominios legales (llama3.2-3b-legal-id-ft); la segunda aplicó un ajuste posterior con técnicas de optimización de políticas, probablemente Group Relative Policy Optimization (GRPO), utilizando las librerías Unsloth y TRL de Hugging Face. El resultado es un modelo denso de 3.212.749.824 parámetros, con arquitectura transformer decodificador y licencia Apache 2.0.
 
 Su interés radica en ofrecer un modelo compacto y de código abierto orientado a tareas jurídicas, con un coste de despliegue reducido y la flexibilidad de la licencia Apache 2.0. Sin embargo, la model card publicada es mínima: no incluye información sobre el dataset, el número de tokens de entrenamiento ni evaluaciones de rendimiento, lo que limita la verificabilidad de sus capacidades reales.
 
@@ -15,13 +15,13 @@ Su interés radica en ofrecer un modelo compacto y de código abierto orientado 
 | Parametros activos | No aplica (modelo denso, no es MoE) |
 | Longitud de contexto | No disponible en la model card; la arquitectura Llama 3.2 3B tiene 8.192 tokens |
 | Tipos de cuantizacion | No disponible (el repositorio solo contiene pesos safetensors sin cuantizaciones precalculadas) |
-| Idiomas soportados | Ingles (segun metadatos de HuggingFace) |
+| Idiomas soportados | Ingles (segun metadatos de Hugging Face) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decodificador puro, siguiendo la estructura de Llama 3.2 3B. Se trata de un modelo denso, sin mezcla de expertos. El proceso de entrenamiento se realizó en dos fases: una primera de fine-tuning supervisado sobre un dominio legal (el modelo base llama3.2-3b-legal-id-ft) y una segunda que, según el sufijo "grpo", aplica Group Relative Policy Optimization para alinear el comportamiento. El autor indica que el entrenamiento se llevó a cabo con Unsloth y la librería TRL de HuggingFace, y que fue un 2x más rápido gracias a Unsloth.
+La arquitectura es un transformer decodificador puro, siguiendo la estructura de Llama 3.2 3B. Se trata de un modelo denso, sin mezcla de expertos. El proceso de entrenamiento se realizó en dos fases: una primera de fine-tuning supervisado sobre un dominio legal (el modelo base llama3.2-3b-legal-id-ft) y una segunda que, según el sufijo "grpo", aplica Group Relative Policy Optimization para alinear el comportamiento. El autor indica que el entrenamiento se llevó a cabo con Unsloth y la librería TRL de Hugging Face, y que fue un 2x más rápido gracias a Unsloth.
 
 No se ha publicado información sobre el tamaño del dataset, el número de tokens de entrenamiento ni la composición de los datos. Tampoco se detallan las técnicas de alineación más allá de la posible GRPO, ni se aportan datos sobre validación o evaluación del fine-tuning.
 
@@ -78,7 +78,7 @@ Los datos de los modelos comparados proceden de sus fichas tecnicas publicas; no
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/VaSy365/llama3.2-3b-legal-id-grpo
-- HuggingFace (modelo base): https://huggingface.co/VaSy365/llama3.2-3b-legal-id-ft
+- Hugging Face (modelo): https://huggingface.co/VaSy365/llama3.2-3b-legal-id-grpo
+- Hugging Face (modelo base): https://huggingface.co/VaSy365/llama3.2-3b-legal-id-ft
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL: https://github.com/huggingface/trl

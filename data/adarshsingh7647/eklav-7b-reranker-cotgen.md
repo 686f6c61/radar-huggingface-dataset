@@ -63,9 +63,9 @@ No se han publicado resultados en NevIR ni comparaciones con otros modelos en la
 
 | Modelo | Parametros | Contexto | Licencia | Reranking (BRIGHT nDCG@10) | Disponibilidad |
 |---|---|---|---|---|---|
-| Eklav-7B-Reranker-CotGen | 7,6B | 128K | no disponible | 26,1 | HuggingFace |
-| Qwen2.5-7B (base) | 7,6B | 128K | Apache 2.0 | no evaluado | HuggingFace |
-| bge-reranker-v2-m3 | 568M | 8K | MIT | no disponible | HuggingFace |
+| Eklav-7B-Reranker-CotGen | 7,6B | 128K | no disponible | 26,1 | Hugging Face |
+| Qwen2.5-7B (base) | 7,6B | 128K | Apache 2.0 | no evaluado | Hugging Face |
+| bge-reranker-v2-m3 | 568M | 8K | MIT | no disponible | Hugging Face |
 
 No se dispone de comparativas directas con otros rerankers de tamaño similar en la informacion proporcionada. Los modelos de reranking especializados (como bge-reranker) suelen ser mucho más pequeños y no generan texto, mientras que Eklav es un LLM generativo adaptado a la tarea.
 
@@ -81,7 +81,7 @@ No se dispone de comparativas directas con otros rerankers de tamaño similar en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdarshSingh7647/Eklav-7B-Reranker-CotGen
+- Modelo en Hugging Face: https://huggingface.co/AdarshSingh7647/Eklav-7B-Reranker-CotGen
 - Modelo base Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B
 - Repositorio de rerankers (contexto de la tarea): https://github.com/AnswerDotAI/rerankers
 - Artículo sobre rerankers para RAG: https://machinelearningmastery.com/top-5-reranking-models-to-improve-rag-results/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nanbeige4.3-33B-W4A16-AutoRound es una cuantización W4A16 del modelo Nanbeige4.3-33B, publicado por el usuario jeonghyeon00 en HuggingFace. El modelo base fue desarrollado por el equipo Nanbeige y esta versión derivada está orientada específicamente a su despliegue con vLLM, usando el formato compressed-tensors y el método de cuantización post-entrenamiento AutoRound. El objetivo es reducir el footprint de memoria del modelo original manteniendo la calidad de inferencia, de modo que un modelo de 33B de parámetros pueda servirse en hardware más accesible.
+Nanbeige4.3-33B-W4A16-AutoRound es una cuantización W4A16 del modelo Nanbeige4.3-33B, publicado por el usuario jeonghyeon00 en Hugging Face. El modelo base fue desarrollado por el equipo Nanbeige y esta versión derivada está orientada específicamente a su despliegue con vLLM, usando el formato compressed-tensors y el método de cuantización post-entrenamiento AutoRound. El objetivo es reducir el footprint de memoria del modelo original manteniendo la calidad de inferencia, de modo que un modelo de 33B de parámetros pueda servirse en hardware más accesible.
 
 La relevancia de esta ficha radica en que se trata de una cuantización comunitaria (no oficial del equipo Nanbeige) con licencia Apache-2.0 heredada del modelo base, lo que permite su uso comercial sin restricciones. El modelo base soporta inglés y chino, con una longitud de contexto máxima publicada de 524.288 tokens, y el README del repositorio original documenta plantillas de chat, opciones de razonamiento y comportamiento de tool calling. Nótese que existe una discrepancia en los metadatos: el safetensors reporta 6.474 millones de parámetros mientras que la denominación y el tamaño del repositorio (20,6 GB) apuntan a un modelo de 33B cuantizado a 4 bits; no se ha podido verificar cuál de los dos datos es el correcto.
 
@@ -10,7 +10,7 @@ La relevancia de esta ficha radica en que se trata de una cuantización comunita
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LLaMA (transformer decoder, según tags de HuggingFace) |
+| Arquitectura | LLaMA (transformer decoder, según tags de Hugging Face) |
 | Parametros totales | 6.474.317.528 según safetensors; la denominación del modelo indica 33B (dato contradictorio, no verificado) |
 | Parametros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | 524.288 tokens (máximo publicado del modelo base; el contexto práctico depende de la VRAM disponible) |
@@ -21,7 +21,7 @@ La relevancia de esta ficha radica en que se trata de una cuantización comunita
 
 ## Arquitectura y entrenamiento
 
-El modelo base, Nanbeige4.3-33B, sigue la arquitectura LLaMA (transformer decoder) según los metadatos de HuggingFace. No se dispone de información publicada sobre el número de tokens de preentrenamiento, la composición del dataset ni sobre procesos de alineación tipo RLHF o DPO en la información proporcionada.
+El modelo base, Nanbeige4.3-33B, sigue la arquitectura LLaMA (transformer decoder) según los metadatos de Hugging Face. No se dispone de información publicada sobre el número de tokens de preentrenamiento, la composición del dataset ni sobre procesos de alineación tipo RLHF o DPO en la información proporcionada.
 
 En cuanto a la cuantización, este repositorio aplica el esquema W4A16 mediante AutoRound a través del `AutoRoundModifier` de `llmcompressor`, con hasta 200 iteraciones de optimización (las ejecuciones por capa pueden detenerse antes de forma anticipada). Los módulos cuantizados son las capas `Linear`, mientras que `lm_head` se mantiene en la precisión original. La calibración se realizó con las primeras 128 muestras de `HuggingFaceH4/ultrachat_200k` (split `train_sft`) con una longitud máxima de secuencia de 2048 tokens; este dataset se usó solo para calibración post-entrenamiento, no para entrenar el modelo. El software empleado fue `llmcompressor==0.14.0.1`, `compressed-tensors==0.19.0`, `auto-round==0.15.1` y `transformers==5.17.0`. La cuantización se ejecutó en una NVIDIA CMP 170HX con 64 GiB de VRAM limitada a 170 W, repartiendo el modelo entre memoria de GPU y de CPU.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. El p
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B-W4A16-AutoRound | 33B (denominación; safetensors reporta 6,47B, dato contradictorio) | 524.288 tokens (base) | W4A16 AutoRound | Apache-2.0 | HuggingFace, vLLM |
-| Nanbeige/Nanbeige4.3-33B (base) | 33B (denominación) | 524.288 tokens | FP16/BF16 sin cuantizar | Apache-2.0 | HuggingFace |
-| Qwen3-32B | 32B | 32.768 tokens (extendible) | FP16 y variantes GPTQ/AWQ oficiales | Apache-2.0 | HuggingFace, vLLM, llama.cpp |
+| Nanbeige4.3-33B-W4A16-AutoRound | 33B (denominación; safetensors reporta 6,47B, dato contradictorio) | 524.288 tokens (base) | W4A16 AutoRound | Apache-2.0 | Hugging Face, vLLM |
+| Nanbeige/Nanbeige4.3-33B (base) | 33B (denominación) | 524.288 tokens | FP16/BF16 sin cuantizar | Apache-2.0 | Hugging Face |
+| Qwen3-32B | 32B | 32.768 tokens (extendible) | FP16 y variantes GPTQ/AWQ oficiales | Apache-2.0 | Hugging Face, vLLM, llama.cpp |
 
 Nota: los datos de Qwen3-32B se ofrecen como referencia de categoría (modelo denso de ~32B, Apache-2.0, con buen soporte de tool calling); su rendimiento relativo frente a Nanbeige4.3-33B no puede afirmarse sin benchmarks comparativos publicados, que no están disponibles.
 

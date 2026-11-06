@@ -69,5 +69,5 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- [HuggingFace: nicholassmith30/matching-tutorial](https://huggingface.co/nicholassmith30/matching-tutorial)
+- [Hugging Face: nicholassmith30/matching-tutorial](https://huggingface.co/nicholassmith30/matching-tutorial)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos) en la búsqueda web.

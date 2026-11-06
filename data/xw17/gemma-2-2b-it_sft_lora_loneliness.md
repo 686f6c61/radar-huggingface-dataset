@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio xw17/gemma-2-2b-it_SFT_lora_loneliness es un artefacto publicado en HuggingFace por el usuario xw17. Segun la informacion disponible, se trata de un modelo de tipo transformers almacenado en formato safetensors, con un tamano de repositorio de 0,1 GB y marcado como compatible con endpoints. El identificador del repositorio sugiere un ajuste fino mediante SFT con LoRA sobre un modelo base de la familia Gemma 2 de 2B parametros en su variante instruct, orientado a un dominio o tematica etiquetada como "loneliness", si bien esta interpretacion no aparece confirmada en ninguna parte de la model card.
+El repositorio xw17/gemma-2-2b-it_SFT_lora_loneliness es un artefacto publicado en Hugging Face por el usuario xw17. Segun la informacion disponible, se trata de un modelo de tipo transformers almacenado en formato safetensors, con un tamano de repositorio de 0,1 GB y marcado como compatible con endpoints. El identificador del repositorio sugiere un ajuste fino mediante SFT con LoRA sobre un modelo base de la familia Gemma 2 de 2B parametros en su variante instruct, orientado a un dominio o tematica etiquetada como "loneliness", si bien esta interpretacion no aparece confirmada en ninguna parte de la model card.
 
-La model card publicada es la plantilla autogenerada por HuggingFace y no contiene ningun campo completado: autor, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, resultados de evaluacion y huella de carbono figuran todos como "[More Information Needed]". El modelo acumula 0 descargas y 0 "likes" en el momento de la consulta, y las fechas de creacion (4 de septiembre de 2026) y actualizacion (17 de septiembre de 2026) son las unicas referencias temporales disponibles.
+La model card publicada es la plantilla autogenerada por Hugging Face y no contiene ningun campo completado: autor, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, resultados de evaluacion y huella de carbono figuran todos como "[More Information Needed]". El modelo acumula 0 descargas y 0 "likes" en el momento de la consulta, y las fechas de creacion (4 de septiembre de 2026) y actualizacion (17 de septiembre de 2026) son las unicas referencias temporales disponibles.
 
 La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los unicos enlaces recuperados corresponden a la cadena de restaurantes Subway y al videojuego Subway Surfers, por lo que no aportan informacion tecnica utilizable. En consecuencia, esta ficha se limita a documentar lo que puede verificarse objetivamente y marca explicitamente como "no disponible" todo aquello que el autor no ha especificado.
 
@@ -42,14 +42,14 @@ El tamano del repositorio, 0,1 GB, es coherente con un adaptador LoRA o un conju
 - Soporte de agentes o razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; no se declara ningun idioma.
 - Modo de razonamiento explicito (thinking mode), vision o audio: no disponible.
-- Compatibilidad con endpoints: segun las etiquetas del repositorio, el modelo esta marcado como compatible con la infraestructura de endpoints de HuggingFace, lo que es un dato de despliegue y no una capacidad funcional.
+- Compatibilidad con endpoints: segun las etiquetas del repositorio, el modelo esta marcado como compatible con la infraestructura de endpoints de Hugging Face, lo que es un dato de despliegue y no una capacidad funcional.
 
 ## Casos de uso
 
 No es posible enumerar casos de uso concretos y fundamentados, porque la model card no especifica el proposito del modelo, su dominio de aplicacion, sus idiomas ni sus caracteristicas de licencia. Lo unico que puede afirmarse con la informacion disponible es lo siguiente:
 
-- Despliegue mediante la libreria transformers: el repositorio esta etiquetado con esa libreria y con formato safetensors, por lo que es tecnicamente cargable con las herramientas estandar de HuggingFace.
-- Uso en infraestructura de endpoints: la etiqueta endpoints_compatible indica que el artefacto cumple los requisitos para ser servido desde HuggingFace Inference Endpoints.
+- Despliegue mediante la libreria transformers: el repositorio esta etiquetado con esa libreria y con formato safetensors, por lo que es tecnicamente cargable con las herramientas estandar de Hugging Face.
+- Uso en infraestructura de endpoints: la etiqueta endpoints_compatible indica que el artefacto cumple los requisitos para ser servido desde Hugging Face Inference Endpoints.
 - Experimentacion con adaptadores de bajo rango: si el identificador refleja realmente un ajuste LoRA, el artefacto seria util para reproducir o combinar adaptadores sobre el modelo base correspondiente, siempre que se identifique y respete la licencia de dicho base.
 - Investigacion sobre ajuste fino en dominios especificos: el sufijo "loneliness" sugiere un caso de estudio de especializacion tematica, aunque no hay documentacion que lo respalde.
 - Cualquier otro escenario de produccion (atencion al cliente, generacion de codigo, analisis documental, agentes, traduccion, etc.) queda fuera del alcance de lo verificable: no disponible.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Estimacion orientativa y no verificada: un repositorio de 0,1 GB es compatible con un adaptador LoRA, no con pesos completos. En ese escenario, la inferencia exigiria cargar adicionalmente el modelo base del que deriva el adaptador, cuyo tamano exacto no esta confirmado.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible; dependeria del modelo base efectivo, que no se especifica.
-- Opciones de despliegue: la etiqueta endpoints_compatible respalda el despliegue mediante HuggingFace Inference Endpoints. El uso con vLLM, llama.cpp, Ollama o TGI no esta documentado y no puede confirmarse, especialmente si se trata de un adaptador LoRA y no de pesos consolidados.
+- Opciones de despliegue: la etiqueta endpoints_compatible respalda el despliegue mediante Hugging Face Inference Endpoints. El uso con vLLM, llama.cpp, Ollama o TGI no esta documentado y no puede confirmarse, especialmente si se trata de un adaptador LoRA y no de pesos consolidados.
 - Latencia y throughput: no disponible; no se publican mediciones de velocidad, tamano de checkpoint ni horas de computo.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye resultados de evaluacion,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xw17/gemma-2-2b-it_SFT_lora_loneliness
+- Modelo en Hugging Face: https://huggingface.co/xw17/gemma-2-2b-it_SFT_lora_loneliness
 - Articulo referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones de carbono; citado por la plantilla de la model card, no es documentacion tecnica del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la plantilla: https://mlco2.github.io/impact
 - Otros enlaces (paper, blog, repositorio de codigo, demo): no disponibles. Los resultados de la busqueda web realizada corresponden a la cadena de restaurantes Subway y al videojuego Subway Surfers, y no guardan relacion con el modelo.

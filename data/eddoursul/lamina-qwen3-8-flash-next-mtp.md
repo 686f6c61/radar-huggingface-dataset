@@ -89,7 +89,7 @@ No se dispone de información sobre otros draft layers comparables para el mismo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eddoursul/Lamina-Qwen3.8-Flash-Next-MTP
+- Hugging Face: https://huggingface.co/eddoursul/Lamina-Qwen3.8-Flash-Next-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Runtime Lamina: https://github.com/eddoursul/Lamina
 - Pesos auto-destilados de partida (basalt): https://huggingface.co/jesdga/Qwen3.8-Flash-Next-Basalt

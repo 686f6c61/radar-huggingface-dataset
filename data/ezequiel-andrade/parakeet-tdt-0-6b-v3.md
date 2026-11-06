@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Parakeet-tdt-0.6b-v3 es un modelo de reconocimiento automatico del habla (ASR) de tipo Transducer con decodificador TDT (Token-and-Duration Transducer) y encoder FastConformer. El modelo, distribuido en HuggingFace bajo el identificador `ezequiel-andrade/parakeet-tdt-0.6b-v3`, deriva de la familia Parakeet de NVIDIA y se publica con licencia CC-BY-4.0. Con 627 millones de parametros, esta disenado para transcripcion multilingual en 25 idiomas europeos, incluyendo espanol, ingles, frances, aleman, italiano y portugues, entre otros.
+Parakeet-tdt-0.6b-v3 es un modelo de reconocimiento automatico del habla (ASR) de tipo Transducer con decodificador TDT (Token-and-Duration Transducer) y encoder FastConformer. El modelo, distribuido en Hugging Face bajo el identificador `ezequiel-andrade/parakeet-tdt-0.6b-v3`, deriva de la familia Parakeet de NVIDIA y se publica con licencia CC-BY-4.0. Con 627 millones de parametros, esta disenado para transcripcion multilingual en 25 idiomas europeos, incluyendo espanol, ingles, frances, aleman, italiano y portugues, entre otros.
 
 El modelo resuelve el problema de la transcripcion automatica de voz con un equilibrio entre precision y eficiencia computacional: su tamano (0,6B) permite despliegue en GPU de consumo, mientras que la arquitectura FastConformer con TDT reduce la latencia frente a transducers clasicos. Los resultados declarados por el autor en la model card muestran un WER de 1,93 en LibriSpeech clean y 3,45 en FLEURS espanol, lo que lo situa como una opcion competitiva para aplicaciones de transcripcion en produccion.
 
@@ -106,7 +106,7 @@ La comparativa con Whisper es la mas directa por tamano y disponibilidad de peso
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ezequiel-andrade/parakeet-tdt-0.6b-v3
+- Hugging Face: https://huggingface.co/ezequiel-andrade/parakeet-tdt-0.6b-v3
 - Paper TDT (Token-and-Duration Transducer): https://arxiv.org/abs/2304.06795
 - Paper FastConformer: https://arxiv.org/abs/2305.05084
 - Paper Parakeet: https://arxiv.org/abs/2509.14128

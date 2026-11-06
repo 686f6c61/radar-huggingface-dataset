@@ -18,7 +18,7 @@ Su relevancia es acotada pero específica: demuestra un flujo completo de cuanti
 | Longitud de contexto | 4096 tokens (build descargable); recompilable a 8192 tokens |
 | Tipos de cuantizacion | GPTQ simétrico INT4 (grupo 256) en Linear del decodificador; RTN simétrico INT8 por canal de salida en LM head y Linear de visión; embeddings y KV cache en INT8; activaciones BF16; proyector multimodal en BF16 |
 | Idiomas soportados | no disponible |
-| Licencia | lfm1.0 (licencia "other" en HuggingFace, con nombre lfm1.0) |
+| Licencia | lfm1.0 (licencia "other" en Hugging Face, con nombre lfm1.0) |
 | Formato de pesos | artefactos compilados para SiMa.ai Modalix (LLiMa); checkpoint fuente pre-cuantizado en Safetensors; no se distribuye GGUF |
 | Tamano del repositorio | 2,4 GB |
 | Resolucion de imagen | 448x448 fija |
@@ -108,7 +108,7 @@ La comparación de rendimiento con alternativas no está disponible: la model ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/florianvoss/LFM2.5-VL-1.6B-GPTQ-a16w4
+- Repositorio Hugging Face: https://huggingface.co/florianvoss/LFM2.5-VL-1.6B-GPTQ-a16w4
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B
 - Revisión del modelo base usada para cuantizar: https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B/tree/919fde3d022e3f90a4716006f993938ee8c2eb97
 - Guía de inicio de SiMa.ai Neat: https://developer.sima.ai/software/getting-started/

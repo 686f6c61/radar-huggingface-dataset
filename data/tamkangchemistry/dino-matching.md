@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dino-matching es un prototipo de investigacion publicado por el usuario tamkangchemistry en HuggingFace bajo licencia MIT. Se presenta como una implementacion personalizada de una arquitectura denominada "Dino" orientada a tareas de emparejamiento (matching), con atencion de ventana deslizante, fusion mediante co-atencion, activacion mish y normalizacion rmsnorm. El repositorio incluye el codigo ejecutable (`run.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint en formato safetensors.
+dino-matching es un prototipo de investigacion publicado por el usuario tamkangchemistry en Hugging Face bajo licencia MIT. Se presenta como una implementacion personalizada de una arquitectura denominada "Dino" orientada a tareas de emparejamiento (matching), con atencion de ventana deslizante, fusion mediante co-atencion, activacion mish y normalizacion rmsnorm. El repositorio incluye el codigo ejecutable (`run.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint en formato safetensors.
 
 El dato mas relevante para evaluar el artefacto es que el checkpoint publicado contiene 49.600 parametros reales segun el recuento de safetensors, pese a que la configuracion lo etiqueta como escala "giant". Se trata, por tanto, de un modelo de tamano minimo cuyo proposito declarado es servir como punto de partida experimental y como prueba de humo, no como modelo entrenado para produccion: el propio autor indica de forma explicita que no reclama ninguna puntuacion de benchmark y que el checkpoint es de inicializacion, sin entrenamiento ni auditoria.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dino-matching (tamkangchemistry) | 49.600 | no disponible | matching (prototipo de investigacion sin entrenar) | MIT | HuggingFace, 0 descargas |
+| dino-matching (tamkangchemistry) | 49.600 | no disponible | matching (prototipo de investigacion sin entrenar) | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se identifica ninguna alternativa verificable en la misma categoria |
 
 No disponible. No se ha encontrado en la informacion proporcionada ningun modelo comparable de la misma categoria, tamano o tarea con especificaciones verificables. Conviene advertir que el nombre "Dino" de este repositorio no guarda relacion acreditada con la familia DINOv2 de Meta ni con otros modelos homonimos: se trata de una implementacion propia del autor, sin vinculo documentado con aquellos.
@@ -90,5 +90,5 @@ No disponible. No se ha encontrado en la informacion proporcionada ningun modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tamkangchemistry/dino-matching
+- Hugging Face: https://huggingface.co/tamkangchemistry/dino-matching
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo.

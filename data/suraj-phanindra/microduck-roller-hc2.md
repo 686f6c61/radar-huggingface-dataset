@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-roller-hc2 es una politica de control para robotica entrenada mediante aprendizaje por refuerzo, publicada por el usuario suraj-phanindra en HuggingFace. Se trata de un ajuste fino (finetune) del modelo juicenv/microduck-roller-es19, obtenido mediante una busqueda de tipo elitist hill climbing sobre la puntuacion de Arena, es decir, una optimizacion evolutiva simple guiada por una metrica de evaluacion. El resultado es una politica perpetua ("perpetual") para el robot microduck de Pollen Robotics, que ejecuta una marcha (gait) de forma continua hasta recibir orden de parada.
+microduck-roller-hc2 es una politica de control para robotica entrenada mediante aprendizaje por refuerzo, publicada por el usuario suraj-phanindra en Hugging Face. Se trata de un ajuste fino (finetune) del modelo juicenv/microduck-roller-es19, obtenido mediante una busqueda de tipo elitist hill climbing sobre la puntuacion de Arena, es decir, una optimizacion evolutiva simple guiada por una metrica de evaluacion. El resultado es una politica perpetua ("perpetual") para el robot microduck de Pollen Robotics, que ejecuta una marcha (gait) de forma continua hasta recibir orden de parada.
 
 El modelo no es un modelo de lenguaje ni un transformer generativo: es una politica de control con 61 dimensiones de observacion y 14 acciones, que opera a 50 Hz y esta disenada para su despliegue sobre ruedas (rollers). Se distribuye en formato ONNX, con el normalizador de observaciones integrado dentro del propio grafo `policy.onnx`, de modo que el consumidor puede alimentar observaciones en crudo sin preprocesado adicional.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. El repositorio ocupa 0,0 GB segun los metadatos de HuggingFace, lo que indica un artefacto de muy pequeno tamano, pero no se publica el numero de parametros ni el peso exacto del fichero ONNX.
+- VRAM estimada para inferencia: no disponible. El repositorio ocupa 0,0 GB segun los metadatos de Hugging Face, lo que indica un artefacto de muy pequeno tamano, pero no se publica el numero de parametros ni el peso exacto del fichero ONNX.
 - GPU recomendadas: no disponibles. Al tratarse de una politica de control a 50 Hz con 61 entradas y 14 salidas, es previsible que la inferencia en CPU sea suficiente, pero esto no esta confirmado por el autor.
 - Compatibilidad con GPU de consumo: no confirmada. Por el tipo de artefacto es esperable que pueda ejecutarse en hardware muy modesto (incluso en el propio ordenador del robot), pero no hay datos publicados.
 - Opciones de despliegue: el despliegue previsto es mediante el daemon de politicas de microduck (`robotctl policy load <slot> ...`). El formato ONNX permite ejecucion con ONNX Runtime. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que son herramientas para modelos de lenguaje y no aplican a esta politica.
@@ -84,9 +84,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| microduck-roller-hc2 | Politica RL (ONNX) para microduck | no disponible | no aplica | no disponible | no disponible | HuggingFace (suraj-phanindra/microduck-roller-hc2) |
-| juicenv/microduck-roller-es19 | Politica RL (ONNX) para microduck | no disponible | no aplica | no disponible | no disponible | HuggingFace (modelo base del anterior) |
-| Otras politicas del ecosistema microduck | Politica RL | no disponible | no aplica | no disponible | no disponible | Parcialmente en HuggingFace bajo la organizacion juicenv y afines |
+| microduck-roller-hc2 | Politica RL (ONNX) para microduck | no disponible | no aplica | no disponible | no disponible | Hugging Face (suraj-phanindra/microduck-roller-hc2) |
+| juicenv/microduck-roller-es19 | Politica RL (ONNX) para microduck | no disponible | no aplica | no disponible | no disponible | Hugging Face (modelo base del anterior) |
+| Otras politicas del ecosistema microduck | Politica RL | no disponible | no aplica | no disponible | no disponible | Parcialmente en Hugging Face bajo la organizacion juicenv y afines |
 
 No se dispone de datos suficientes para una comparativa cuantitativa. La unica relacion documentada con certeza es la de ajuste fino entre microduck-roller-hc2 y juicenv/microduck-roller-es19, y en ambos casos se desconoce la puntuacion de Arena, el numero de parametros y la licencia.
 
@@ -100,12 +100,12 @@ No se dispone de datos suficientes para una comparativa cuantitativa. La unica r
 - Comportamiento perpetuo: la politica "runs until told otherwise", por lo que requiere un mecanismo externo de parada o de supervision; no se documentan condiciones de seguridad, limites de parada de emergencia ni deteccion de fallos.
 - Sin capacidades de lenguaje, vision, audio ni tool calling: no debe evaluarse con criterios de modelos generativos.
 - La informacion de busqueda web disponible no contiene resultados relevantes sobre este modelo; los resultados obtenidos no guardan ninguna relacion con el artefacto y no se han usado como fuente.
-- Metadatos con fechas incoherentes: la fecha de creacion indicada en HuggingFace (2026-10-15) es posterior a la fecha de la propia consulta, lo que sugiere un error en los metadatos o en el reloj del sistema de publicacion.
+- Metadatos con fechas incoherentes: la fecha de creacion indicada en Hugging Face (2026-10-15) es posterior a la fecha de la propia consulta, lo que sugiere un error en los metadatos o en el reloj del sistema de publicacion.
 - Cero descargas y cero likes en el momento de la consulta: no existe validacion por parte de la comunidad ni evidencia de uso en produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suraj-phanindra/microduck-roller-hc2
+- Modelo en Hugging Face: https://huggingface.co/suraj-phanindra/microduck-roller-hc2
 - Modelo base: https://huggingface.co/juicenv/microduck-roller-es19
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl`, rama `main`, commit `6ff40704a` (sin URL directa proporcionada en la informacion disponible)

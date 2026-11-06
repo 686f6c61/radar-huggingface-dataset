@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-pi05-attnfix-balanced-4500-5d22ef96075f-96c0b4e396d4` es un paquete de pesos publicado en HuggingFace por el usuario `davidwdw` el 26 de septiembre de 2026. La propia model card lo describe como un "versioned fleet archive" (archivo versionado de flota), con la receta canonica identificada como `2026-09-22_b1k_task00_pi05_attention_consistent_h20` y el nivel declarado "params+assets". Es decir, no se presenta como un modelo nuevo con una model card tecnica, sino como una instantanea congelada de un artefacto de entrenamiento, pensada para ser reproducida bit a bit.
+El repositorio `davidwdw/fa-pi05-attnfix-balanced-4500-5d22ef96075f-96c0b4e396d4` es un paquete de pesos publicado en Hugging Face por el usuario `davidwdw` el 26 de septiembre de 2026. La propia model card lo describe como un "versioned fleet archive" (archivo versionado de flota), con la receta canonica identificada como `2026-09-22_b1k_task00_pi05_attention_consistent_h20` y el nivel declarado "params+assets". Es decir, no se presenta como un modelo nuevo con una model card tecnica, sino como una instantanea congelada de un artefacto de entrenamiento, pensada para ser reproducida bit a bit.
 
 El paquete ocupa 12,4 GB en el repositorio, un tamano compatible con pesos en precision de 16 bits de un modelo de rango medio (aproximadamente 6.000 millones de parametros si todo el volumen correspondiese a pesos, extremo que la model card no confirma), aunque tambien podria tratarse de una mezcla de pesos y activos auxiliares. No hay informacion publica sobre arquitectura, contexto, idiomas, licencia ni formato de serializacion.
 
@@ -91,6 +91,6 @@ No disponible. La ausencia de especificaciones basicas (arquitectura, parametros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-pi05-attnfix-balanced-4500-5d22ef96075f-96c0b4e396d4
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-pi05-attnfix-balanced-4500-5d22ef96075f-96c0b4e396d4
 - Fichero de verificacion de integridad: `SHA256SUMS`, referenciado en la model card dentro del propio repositorio
 - No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) asociados a este artefacto.

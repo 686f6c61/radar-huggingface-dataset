@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `asfasfasfasfasfasfasfas/asfas` es un espacio de HuggingFace publicado por el usuario `asfasfasfasfasfasfasfas` que, en el momento de la consulta, no contiene informacion tecnica utilizable. La model card se limita a la etiqueta de licencia `creativeml-openrail-m` y no incluye descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. Los metadatos asociados son: cero descargas, cero likes, pipeline no declarado, idiomas no declarados y etiquetas `license:creativeml-openrail-m` y `region:us`.
+El repositorio `asfasfasfasfasfasfasfas/asfas` es un espacio de Hugging Face publicado por el usuario `asfasfasfasfasfasfasfas` que, en el momento de la consulta, no contiene informacion tecnica utilizable. La model card se limita a la etiqueta de licencia `creativeml-openrail-m` y no incluye descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. Los metadatos asociados son: cero descargas, cero likes, pipeline no declarado, idiomas no declarados y etiquetas `license:creativeml-openrail-m` y `region:us`.
 
 No es posible determinar que tipo de modelo es, ni siquiera si se trata de un modelo entrenado, de un repositorio de pesos, de un experimento abandonado o de un placeholder creado por error. La ausencia total de actividad (0 descargas, 0 likes) y de contenido en el README apunta a un artefacto sin publicacion efectiva. Cualquier evaluacion tecnica, comparativa o recomendacion de despliegue es, por tanto, inviable con la informacion disponible.
 
@@ -87,7 +87,7 @@ No disponible. Al no conocerse el tipo de modelo, el numero de parametros ni la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asfasfasfasfasfasfasfas/asfas
+- Hugging Face: https://huggingface.co/asfasfasfasfasfasfasfas/asfas
 - Paper: no disponible.
 - Repositorio de codigo: no disponible.
 - Blog o anuncio del autor: no disponible.

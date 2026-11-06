@@ -75,9 +75,9 @@ La mejora agregada es de +0,75 puntos porcentuales. El autor advierte que son m�
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-OPD-Qwen3-14B-Step200 | 4.411.424.256 | no disponible | Apache-2.0 | Destilación OPD desde Qwen3-14B, subconjunto de código | HuggingFace, 182 descargas |
-| Qwen/Qwen3-4B (estudiante inicial) | ~4,4 B | no disponible en esta ficha | Apache-2.0 | Modelo base de propósito general | HuggingFace, ampliamente disponible |
-| Qwen/Qwen3-14B (profesor) | ~14 B | no disponible en esta ficha | Apache-2.0 | Modelo mayor usado como profesor fijo | HuggingFace, ampliamente disponible |
+| Qwen3-4B-OPD-Qwen3-14B-Step200 | 4.411.424.256 | no disponible | Apache-2.0 | Destilación OPD desde Qwen3-14B, subconjunto de código | Hugging Face, 182 descargas |
+| Qwen/Qwen3-4B (estudiante inicial) | ~4,4 B | no disponible en esta ficha | Apache-2.0 | Modelo base de propósito general | Hugging Face, ampliamente disponible |
+| Qwen/Qwen3-14B (profesor) | ~14 B | no disponible en esta ficha | Apache-2.0 | Modelo mayor usado como profesor fijo | Hugging Face, ampliamente disponible |
 
 La comparación directa con otros modelos destilados de 4B no está disponible en la información proporcionada. Frente a su estudiante inicial, la diferencia medida es de +0,75 puntos porcentuales en la media macro de tres benchmarks de código.
 
@@ -97,7 +97,7 @@ La comparación directa con otros modelos destilados de 4B no está disponible e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leizhao7/Qwen3-4B-OPD-Qwen3-14B-Step200
+- Modelo en Hugging Face: https://huggingface.co/leizhao7/Qwen3-4B-OPD-Qwen3-14B-Step200
 - Paper: https://arxiv.org/abs/2610.11247
 - Página del proyecto: https://leizhao7.github.io/opd-learning-signals/
 - Código y resultados numéricos: https://github.com/leizhao7/opd-learning-signals

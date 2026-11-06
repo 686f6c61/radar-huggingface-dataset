@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EfficientViM m4 (dist.in1k) es un modelo de clasificacion de imagenes publicado por el equipo de timm en HuggingFace. Se trata de un backbone de vision derivado del paper "EfficientViM: Efficient Vision Mamba with Hidden State Mixer based State Space Duality" (CVPR 2025), presentado por Sanghyeok Lee, Joonmyung Choi y Hyunwoo J. Kim. El modelo devuelve logits sobre las 1.000 clases de ImageNet-1k y tambien puede emplearse como extractor de caracteristicas.
+EfficientViM m4 (dist.in1k) es un modelo de clasificacion de imagenes publicado por el equipo de timm en Hugging Face. Se trata de un backbone de vision derivado del paper "EfficientViM: Efficient Vision Mamba with Hidden State Mixer based State Space Duality" (CVPR 2025), presentado por Sanghyeok Lee, Joonmyung Choi y Hyunwoo J. Kim. El modelo devuelve logits sobre las 1.000 clases de ImageNet-1k y tambien puede emplearse como extractor de caracteristicas.
 
 La variante tiene 21,2 millones de parametros, 1,1 GMACs y 4,5 millones de activaciones con entradas de 256 x 256 pixeles, lo que la situa en el segmento de modelos compactos orientados a inferencia eficiente. La etiqueta "dist" indica que fue entrenada con destilacion sobre ImageNet-1k; el peso de los pesos esta en safetensors bajo licencia MIT.
 
@@ -90,10 +90,10 @@ La comparacion cuantitativa de precision no puede completarse con la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/efficientvim_m4_dist.in1k
+- Modelo en Hugging Face: https://huggingface.co/timm/efficientvim_m4_dist.in1k
 - Paper EfficientViM (arXiv): https://arxiv.org/abs/2411.15241
 - Repositorio oficial EfficientViM: https://github.com/mlvlab/EfficientViM
-- Organizacion timm en HuggingFace: https://huggingface.co/timm
+- Organizacion timm en Hugging Face: https://huggingface.co/timm
 - Repositorio PyTorch Image Models: https://github.com/huggingface/pytorch-image-models
 - Resultados y metricas de modelos timm: https://github.com/huggingface/pytorch-image-models/tree/main/results
 - Documentacion de timm: https://timm.fast.ai/

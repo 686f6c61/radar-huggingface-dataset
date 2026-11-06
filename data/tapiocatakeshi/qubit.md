@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Qubit, desarrollado por tapiocaTakeshi, es un modelo de lenguaje para generación de texto y chat en japonés. Su característica distintiva es la incorporación de componentes de red neuronal cuántica binaria (QBNN) dentro de una arquitectura transformer, según las etiquetas del repositorio en HuggingFace. Con 109.105.707 parámetros totales, se trata de un modelo de tamaño relativamente pequeño, aunque el repositorio ocupa 54.4 GB, lo que sugiere una distribución de pesos no convencional o la inclusión de archivos adicionales. El modelo se publica bajo licencia MIT y requiere aceptar condiciones de acceso restringido (gated) en HuggingFace antes de su descarga.
+El modelo Qubit, desarrollado por tapiocaTakeshi, es un modelo de lenguaje para generación de texto y chat en japonés. Su característica distintiva es la incorporación de componentes de red neuronal cuántica binaria (QBNN) dentro de una arquitectura transformer, según las etiquetas del repositorio en Hugging Face. Con 109.105.707 parámetros totales, se trata de un modelo de tamaño relativamente pequeño, aunque el repositorio ocupa 54.4 GB, lo que sugiere una distribución de pesos no convencional o la inclusión de archivos adicionales. El modelo se publica bajo licencia MIT y requiere aceptar condiciones de acceso restringido (gated) en Hugging Face antes de su descarga.
 
 Su relevancia radica en la exploración de enfoques híbridos entre aprendizaje automático y computación cuántica, un área emergente que busca aprovechar principios cuánticos para mejorar la eficiencia o las capacidades de los modelos neuronales. Sin embargo, al ser un proyecto con poca información pública y sin resultados de benchmarks, su utilidad práctica en producción aún no está validada.
 
@@ -58,15 +58,15 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo está marcado como gated en HuggingFace, por lo que requiere aceptar condiciones antes de su descarga.
+- Acceso restringido: el modelo está marcado como gated en Hugging Face, por lo que requiere aceptar condiciones antes de su descarga.
 - Idioma limitado: solo se declara soporte para japonés, sin información sobre rendimiento en otros idiomas.
 - Sin benchmarks publicados: no hay evidencia empírica de su calidad, lo que impide evaluar su rendimiento frente a otros modelos.
 - Riesgo de alucinación: como todo modelo de lenguaje, puede generar contenido falso o inconsistente, especialmente sin datos de validación.
 - Desconocimiento sobre sesgos: no se han publicado análisis de sesgos ni medidas de mitigación.
 - Despliegue complejo: el tamaño del repositorio (54.4 GB) para un modelo de 109 millones de parámetros sugiere una estructura de pesos poco habitual, lo que puede dificultar su integración en pipelines estándar.
-- Licencia MIT: permite uso comercial, pero la restricción de acceso en HuggingFace puede limitar su disponibilidad efectiva.
+- Licencia MIT: permite uso comercial, pero la restricción de acceso en Hugging Face puede limitar su disponibilidad efectiva.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tapiocaTakeshi/Qubit
-- Colección qubit.ai en HuggingFace: https://huggingface.co/collections/tapiocaTakeshi/qubitai
+- Modelo en Hugging Face: https://huggingface.co/tapiocaTakeshi/Qubit
+- Colección qubit.ai en Hugging Face: https://huggingface.co/collections/tapiocaTakeshi/qubitai

@@ -4,7 +4,7 @@
 
 Index-Translate-35B-A3B-preview-FP8 es la cuantización oficial en FP8 (W8A8) del modelo de traducción multilingüe Index-Translate-35B-A3B-preview, desarrollado por el equipo Index (vinculado al repositorio github.com/bilibili/Index-Translate). Forma parte de la familia Index-Translate, orientada a traducción en 150 idiomas con soporte para traducción restringida por terminología y formato, traducción controlada para doblaje y traducción de documentos largos. El problema que resuelve es doble: por un lado, la traducción de alta calidad con restricciones explícitas (glosarios, formato de salida); por otro, la reducción del coste de despliegue mediante cuantización de precisión reducida.
 
-Arquitectónicamente se trata de un transformer con mezcla de expertos (MoE), según la etiqueta `qwen3_5_moe` de HuggingFace y la nomenclatura del identificador: 35B parámetros totales con aproximadamente 3B parámetros activos por token. Esto implica un coste de cómputo por token comparable al de un modelo denso de ~3B, pero con la capacidad de representación de un modelo de 35B. El modelo es multimodal entrada (image-text-to-text), con una torre de visión y un proyector multimodal que en esta versión FP8 se mantienen en BF16.
+Arquitectónicamente se trata de un transformer con mezcla de expertos (MoE), según la etiqueta `qwen3_5_moe` de Hugging Face y la nomenclatura del identificador: 35B parámetros totales con aproximadamente 3B parámetros activos por token. Esto implica un coste de cómputo por token comparable al de un modelo denso de ~3B, pero con la capacidad de representación de un modelo de 35B. El modelo es multimodal entrada (image-text-to-text), con una torre de visión y un proyector multimodal que en esta versión FP8 se mantienen en BF16.
 
 La relevancia de esta ficha concreta es que se trata de una cuantización FP8_DYNAMIC validada contra el checkpoint original en BF16: la perplejidad en un corpus fijo pasa de 2,8140 a 2,8158 (+0,06%) y las generaciones zh→en y en→zh son idénticas con decodificación greedy. Es decir, se reduce el peso en memoria aproximadamente a la mitad sin degradación medible en las pruebas publicadas, lo que abarata el servicio en producción. El repositorio es muy reciente (creado el 2 de octubre de 2026) y no cuenta todavía con descargas ni validación de la comunidad.
 
@@ -17,7 +17,7 @@ La relevancia de esta ficha concreta es que se trata de una cuantización FP8_DY
 | Parametros activos | ~3B (inferido de la nomenclatura A3B; no se declara explicitamente en la informacion proporcionada) |
 | Longitud de contexto | no disponible (el ejemplo de servicio con vLLM usa `--max-model-len 4096`, pero es un preset de ejemplo, no una especificacion del limite del modelo) |
 | Tipos de cuantizacion | FP8 W8A8 (`FP8_DYNAMIC`: pesos FP8 E4M3, activaciones FP8 dinamicas por token); el checkpoint original esta en BF16; existen builds GGUF del modelo base en un repositorio hermano |
-| Idiomas soportados | 150 idiomas segun la model card (el campo de idiomas de la ficha de HuggingFace figura como no disponible) |
+| Idiomas soportados | 150 idiomas segun la model card (el campo de idiomas de la ficha de Hugging Face figura como no disponible) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors con metadatos `compressed-tensors` (cargable directamente en vLLM con `quantization="compressed-tensors"` o en transformers); GGUF disponible para el modelo base |
 
@@ -36,7 +36,7 @@ El proceso de cuantizacion se realizo con llm-compressor bajo el esquema `FP8_DY
 - Entrada multimodal de imagen y texto (image-text-to-text), con torre de vision dedicada.
 - Prediccion multi-token (MTP) preservada en la cuantizacion, util para decodificacion especulativa.
 - Decodificacion greedy reproducible: la model card confirma generaciones identicas entre BF16 y FP8 en zh→en y en→zh con prompt oficial y decodificacion greedy.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el modelo puede servirse a traves de la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el modelo puede servirse a traves de la infraestructura de Inference Endpoints de Hugging Face.
 - Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidad de modo pensamiento (thinking mode), audio o voz: no disponible en la informacion proporcionada.
@@ -70,7 +70,7 @@ Estos datos indican que la cuantizacion FP8 no introduce degradacion medible en 
 - GPU recomendadas: una A100 de 80 GB o una H100 de 80 GB cubren el modelo con margen para cache KV. La validacion de consistencia se realizo precisamente en una A100.
 - GPU de gama profesional: tarjetas con 48 GB (por ejemplo RTX 6000 Ada o L40S) podrian alojar el modelo para contextos cortos, pero no se dispone de datos publicados que lo confirmen.
 - Cabe en GPU de consumo: no para esta version FP8, ya que 24 GB de VRAM en una RTX 4090 no son suficientes para los pesos en FP8 mas cache KV. Para inferencia local en GPU de consumo hay que recurrir a los builds GGUF publicados en el repositorio hermano `Index-Translate-35B-A3B-preview-GGUF`, que permiten cuantizaciones de menor precision.
-- Opciones de despliegue: vLLM con `quantization="compressed-tensors"` (ruta recomendada por el autor), transformers, e infraestructura de Inference Endpoints de HuggingFace (etiqueta `endpoints_compatible`). Para GGUF, llama.cpp u Ollama sobre el repositorio del modelo base.
+- Opciones de despliegue: vLLM con `quantization="compressed-tensors"` (ruta recomendada por el autor), transformers, e infraestructura de Inference Endpoints de Hugging Face (etiqueta `endpoints_compatible`). Para GGUF, llama.cpp u Ollama sobre el repositorio del modelo base.
 - Ejemplo de servicio publicado por el autor: `vllm serve IndexTeam/Index-Translate-35B-A3B-preview-FP8 --host 127.0.0.1 --port 8000 --max-model-len 4096`.
 - Latencia y throughput estimados: no disponibles. Como referencia cualitativa, al activar solo ~3B parametros por token el coste de computo por token es bajo en relacion con los 35B totales, pero no se han publicado mediciones.
 
@@ -80,9 +80,9 @@ No se dispone de datos de rendimiento publicados para este modelo que permitan u
 
 | Modelo | Parametros | Precision | Contexto | Perplejidad (corpus fijo) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Index-Translate-35B-A3B-preview-FP8 | 35B totales / ~3B activos | FP8 E4M3 (W8A8) | no disponible | 2,8158 | Apache 2.0 | HuggingFace, vLLM, transformers |
-| Index-Translate-35B-A3B-preview | 35B totales / ~3B activos | BF16 | no disponible | 2,8140 | Apache 2.0 | HuggingFace (checkpoint original) |
-| Index-Translate-35B-A3B-preview-GGUF | 35B totales / ~3B activos | GGUF (varias cuantizaciones) | no disponible | no disponible | Apache 2.0 | HuggingFace, llama.cpp/Ollama |
+| Index-Translate-35B-A3B-preview-FP8 | 35B totales / ~3B activos | FP8 E4M3 (W8A8) | no disponible | 2,8158 | Apache 2.0 | Hugging Face, vLLM, transformers |
+| Index-Translate-35B-A3B-preview | 35B totales / ~3B activos | BF16 | no disponible | 2,8140 | Apache 2.0 | Hugging Face (checkpoint original) |
+| Index-Translate-35B-A3B-preview-GGUF | 35B totales / ~3B activos | GGUF (varias cuantizaciones) | no disponible | no disponible | Apache 2.0 | Hugging Face, llama.cpp/Ollama |
 | Otros modelos de traduccion de tamano comparable | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo ni sobre modelos comparables; los resultados obtenidos correspondian a personas y despachos sin relacion con el proyecto.
@@ -96,13 +96,13 @@ La busqueda web realizada no devolvio ningun resultado relevante sobre este mode
 - La cuantizacion FP8 cubre todas las capas `Linear` del modelo de lenguaje; los efectos sobre tareas distintas de la traduccion (por ejemplo, seguimiento de instrucciones generales o razonamiento) no se han validado en la informacion publicada, ya que la validacion se hizo unicamente con el prompt oficial de traduccion y decodificacion greedy.
 - El repositorio es muy reciente (creado el 2 de octubre de 2026) y presenta 0 descargas y 0 likes, es decir, carece por completo de validacion independiente de la comunidad.
 - Licencia Apache 2.0: permisiva, permite uso comercial y modificaciones, siempre que se conserve el aviso de licencia y se indique los cambios realizados. No se han declarado restricciones adicionales de uso aceptable en la informacion disponible.
-- El campo de idiomas de la ficha de HuggingFace no esta cumplimentado; el dato de 150 idiomas proviene de la model card y no se acompana de un desglose por par de idiomas ni de metricas por idioma.
+- El campo de idiomas de la ficha de Hugging Face no esta cumplimentado; el dato de 150 idiomas proviene de la model card y no se acompana de un desglose por par de idiomas ni de metricas por idioma.
 - La longitud de contexto no esta declarada. El valor de 4096 tokens que aparece en el ejemplo de servicio es un preset de vLLM y no debe interpretarse como el limite del modelo; para documentos largos habra que determinar empiricamente el limite real y el comportamiento en el extremo de la ventana.
 - La decodificacion recomendada es greedy con temperatura 0; usar muestreo puede romper la reproducibilidad verificada entre BF16 y FP8.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/IndexTeam/Index-Translate-35B-A3B-preview-FP8
+- Repositorio Hugging Face del modelo: https://huggingface.co/IndexTeam/Index-Translate-35B-A3B-preview-FP8
 - Modelo base en BF16: https://huggingface.co/IndexTeam/Index-Translate-35B-A3B-preview
 - Builds GGUF del modelo base: https://huggingface.co/IndexTeam/Index-Translate-35B-A3B-preview-GGUF
 - Informe tecnico (arXiv:2609.40181): https://arxiv.org/abs/2609.40181

@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Govsovereign/govsovereign_civicqa_final
+- Modelo en Hugging Face: https://huggingface.co/Govsovereign/govsovereign_civicqa_final
 - Modelo base: https://huggingface.co/himalaya-ai/himalaya-gemma-4-e2b-it
 - Modelo hermano (similar): https://huggingface.co/Govsovereign/govsovereign_civicqa_2026_08_r1_pratik_s0_qlora
 - PDF de las 128 preguntas de civismo (USCIS, version 2025): https://www.uscis.gov/sites/default/files/document/questions-and-answers/2025-Civics-Test-128-Questions-and-Answers.pdf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen4 es un ajuste fino (fine-tune) experimental publicado en HuggingFace por el usuario HungryDino, derivado del modelo unsloth/Qwen2.5-7B-Instruct. La model card publicada es la plantilla automatica de Unsloth y no aporta informacion sobre el dataset, el procedimiento de entrenamiento ni el objetivo del ajuste; unicamente confirma el modelo base, la licencia apache-2.0 y que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace.
+HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen4 es un ajuste fino (fine-tune) experimental publicado en Hugging Face por el usuario HungryDino, derivado del modelo unsloth/Qwen2.5-7B-Instruct. La model card publicada es la plantilla automatica de Unsloth y no aporta informacion sobre el dataset, el procedimiento de entrenamiento ni el objetivo del ajuste; unicamente confirma el modelo base, la licencia apache-2.0 y que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face.
 
 El repositorio ocupa 0,1 GB y contiene pesos en formato safetensors. Ese tamano es aproximadamente dos ordenes de magnitud inferior al de un checkpoint completo de 7.600 millones de parametros en precision fp16 (en torno a 15 GB), por lo que lo mas probable es que se trate de un adaptador LoRA, de pesos parciales o de un artefacto auxiliar, aunque la model card no lo especifica. El nombre del repositorio sugiere un experimento dentro de una serie de ejecuciones ("run2-gen4") relacionada con el metodo de decodificacion especulativa EAGLE, pero no hay documentacion que lo confirme.
 
@@ -44,7 +44,7 @@ Tampoco se documenta el entrenamiento: no se indica el numero de tokens, la comp
 - Experimentacion con decodificacion especulativa: dado el nombre del repositorio, es plausible que forme parte de una serie de pruebas relacionadas con EAGLE u otras tecnicas de decodificacion especulativa; su uso tendria sentido como material de partida para reproducir ese tipo de experimentos, siempre que se verifique previamente su contenido.
 - Generacion de texto en ingles para prototipos: si el artefacto se carga correctamente junto con su modelo base, puede emplearse para generar texto en ingles en entornos de prueba internos, sin garantias de calidad.
 - Analisis de deriva de comportamiento: util para estudiar como un ajuste corto sobre Qwen2.5-7B-Instruct altera la distribucion de respuestas, la verbosidad o la tasa de rechazo, mediante evaluaciones comparativas contra el modelo base.
-- Docencia y formacion tecnica: sirve como ejemplo practico de publicacion de un fine-tune con la plantilla de Unsloth en HuggingFace y de las carencias habituales de documentacion en este tipo de artefactos.
+- Docencia y formacion tecnica: sirve como ejemplo practico de publicacion de un fine-tune con la plantilla de Unsloth en Hugging Face y de las carencias habituales de documentacion en este tipo de artefactos.
 - Pruebas de integracion con infraestructura de inferencia: puede utilizarse para validar pipelines de TGI, transformers o vLLM, comprobando que el formato safetensors y las etiquetas del repositorio son compatibles con el servidor elegido.
 
 No se recomienda su uso en atencion al cliente, generacion de codigo en produccion, analisis de datos ni cualquier escenario con requisitos de calidad, trazabilidad o cumplimiento, dada la ausencia total de evaluaciones publicadas.
@@ -68,11 +68,11 @@ Estas cifras son estimaciones derivadas del tamano del modelo base; no proceden 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen4 | No confirmados (repo de 0,1 GB) | No confirmada | apache-2.0 | HuggingFace, sin descargas | Sin evaluaciones ni documentacion; artefacto experimental |
-| unsloth/Qwen2.5-7B-Instruct (modelo base) | 7.600 millones | 131.072 tokens | apache-2.0 | HuggingFace | Modelo instruct documentado y ampliamente evaluado por el autor original |
-| Qwen/Qwen2.5-7B-Instruct | 7.600 millones | 131.072 tokens | apache-2.0 | HuggingFace | Checkpoint oficial; permite usar las variantes GGUF, AWQ y GPTQ publicadas por la comunidad |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030 millones | 131.072 tokens | Llama 3.1 Community License | HuggingFace | Alternativa de tamano similar, con licencia no completamente permisiva |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7.250 millones | 32.768 tokens | apache-2.0 | HuggingFace | Alternativa de tamano y licencia equivalentes, con contexto mas reducido |
+| HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen4 | No confirmados (repo de 0,1 GB) | No confirmada | apache-2.0 | Hugging Face, sin descargas | Sin evaluaciones ni documentacion; artefacto experimental |
+| unsloth/Qwen2.5-7B-Instruct (modelo base) | 7.600 millones | 131.072 tokens | apache-2.0 | Hugging Face | Modelo instruct documentado y ampliamente evaluado por el autor original |
+| Qwen/Qwen2.5-7B-Instruct | 7.600 millones | 131.072 tokens | apache-2.0 | Hugging Face | Checkpoint oficial; permite usar las variantes GGUF, AWQ y GPTQ publicadas por la comunidad |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030 millones | 131.072 tokens | Llama 3.1 Community License | Hugging Face | Alternativa de tamano similar, con licencia no completamente permisiva |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7.250 millones | 32.768 tokens | apache-2.0 | Hugging Face | Alternativa de tamano y licencia equivalentes, con contexto mas reducido |
 
 No se dispone de datos de rendimiento comparativo para el modelo objeto de esta ficha, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -92,10 +92,10 @@ No se dispone de datos de rendimiento comparativo para el modelo objeto de esta 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen4
+- Repositorio en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen4
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Libreria Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: no se proporciona URL especifica en la informacion disponible
+- Libreria TRL de Hugging Face: no se proporciona URL especifica en la informacion disponible
 
 La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo, su autor o su proceso de entrenamiento: los unicos enlaces recuperados corresponden a contenidos sin relacion alguna con el tema de esta ficha, por lo que no se incluyen.

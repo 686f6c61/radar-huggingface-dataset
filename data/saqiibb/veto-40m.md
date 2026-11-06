@@ -1,7 +1,7 @@
 # saqiibb/Veto-40M
 
 ## Resumen
-Veto-40M es un modelo de 40 millones de parametros desarrollado por el usuario saqiibb y publicado en HuggingFace bajo licencia MIT. Se presenta como un Decision Transformer de tipo energy-based: en lugar de aplicar una capa Softmax sobre un conjunto cerrado de opciones, proyecta pares estado-opcion en un paisaje de energia escalar no normalizado. Las decisiones validas caen en cuencas de baja energia (E ≈ 0), mientras que las opciones invalidas o fuera de dominio generan energias altas (E > 8,0). Esta formulacion permite un rechazo o "veto" nativo de decisiones, algo que los clasificadores convencionales basados en Softmax no ofrecen de forma directa.
+Veto-40M es un modelo de 40 millones de parametros desarrollado por el usuario saqiibb y publicado en Hugging Face bajo licencia MIT. Se presenta como un Decision Transformer de tipo energy-based: en lugar de aplicar una capa Softmax sobre un conjunto cerrado de opciones, proyecta pares estado-opcion en un paisaje de energia escalar no normalizado. Las decisiones validas caen en cuencas de baja energia (E ≈ 0), mientras que las opciones invalidas o fuera de dominio generan energias altas (E > 8,0). Esta formulacion permite un rechazo o "veto" nativo de decisiones, algo que los clasificadores convencionales basados en Softmax no ofrecen de forma directa.
 
 El modelo resuelve el problema de la clasificacion con rechazo en dominios cerrados: no solo elige entre las clases conocidas, sino que puede determinar cuando ninguna de las opciones presentadas es adecuada. Es relevante para tareas de enrutamiento, clasificacion de intenciones y seleccion de candidatos donde la deteccion de entradas fuera de distribucion es critica. Su tamano compacto (40M) lo hace desplegable en entornos con recursos limitados.
 
@@ -66,7 +66,7 @@ No se han proporcionado datos de comparacion con otros modelos. La categoria nat
 
 | Modelo | Parametros | Contexto | Rendimiento en BANKING77 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Veto-40M | 40M | no disponible | 94,48% (6 opc.), 88,31% (20 opc.), 75,29% (77 opc.) | MIT | HuggingFace |
+| Veto-40M | 40M | no disponible | 94,48% (6 opc.), 88,31% (20 opc.), 75,29% (77 opc.) | MIT | Hugging Face |
 | Alternativas tipo encoder ligero (BERT/DistilBERT ajustado) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El rasgo diferenciador del modelo frente a los clasificadores Softmax convencionales es el veto energetico nativo; no se ha publicado una comparacion cuantitativa que aísle esta ventaja.
@@ -84,5 +84,5 @@ El rasgo diferenciador del modelo frente a los clasificadores Softmax convencion
 - Repositorio con 0 descargas y 1 like en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/saqiibb/Veto-40M
+- Hugging Face: https://huggingface.co/saqiibb/Veto-40M
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

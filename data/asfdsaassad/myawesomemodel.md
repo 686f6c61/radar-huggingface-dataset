@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario asfdsaassad bajo licencia MIT. A pesar del nombre y de una model card con estructura de modelo conversacional de gran escala (secciones sobre razonamiento, function calling, prompt de sistema y plantillas de busqueda web), los metadatos tecnicos del repositorio lo clasifican como un modelo de tipo BERT para la tarea de feature-extraction, es decir, un encoder orientado a la extraccion de representaciones y no a la generacion autoregresiva de texto. Esta contradiccion entre la model card y los metadatos es la caracteristica mas relevante de la ficha.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario asfdsaassad bajo licencia MIT. A pesar del nombre y de una model card con estructura de modelo conversacional de gran escala (secciones sobre razonamiento, function calling, prompt de sistema y plantillas de busqueda web), los metadatos tecnicos del repositorio lo clasifican como un modelo de tipo BERT para la tarea de feature-extraction, es decir, un encoder orientado a la extraccion de representaciones y no a la generacion autoregresiva de texto. Esta contradiccion entre la model card y los metadatos es la caracteristica mas relevante de la ficha.
 
 El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes en el momento de la consulta, lo que sugiere que se trata de un modelo recien creado, probablemente una plantilla o un experimento sin pesos publicados. No se dispone de informacion sobre el numero de parametros, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento.
 
@@ -12,7 +12,7 @@ La relevancia practica es limitada en su estado actual: la model card incluye af
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (segun tag de HuggingFace); no se detalla la variante concreta |
+| Arquitectura | BERT (segun tag de Hugging Face); no se detalla la variante concreta |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ La relevancia practica es limitada en su estado actual: la model card incluye af
 
 ## Arquitectura y entrenamiento
 
-Los metadatos de HuggingFace etiquetan el modelo como `bert` dentro de la libreria `transformers` y con pipeline `feature-extraction`, lo que apunta a una arquitectura transformer de tipo encoder bidireccional. No obstante, la model card describe un modelo conversacional con modo de razonamiento extendido (menciona un incremento del uso medio de tokens por pregunta de 12K a 23K en AIME 2025), soporte de prompt de sistema y function calling, capacidades que no encajan con un encoder BERT clasico.
+Los metadatos de Hugging Face etiquetan el modelo como `bert` dentro de la libreria `transformers` y con pipeline `feature-extraction`, lo que apunta a una arquitectura transformer de tipo encoder bidireccional. No obstante, la model card describe un modelo conversacional con modo de razonamiento extendido (menciona un incremento del uso medio de tokens por pregunta de 12K a 23K en AIME 2025), soporte de prompt de sistema y function calling, capacidades que no encajan con un encoder BERT clasico.
 
 No se proporciona informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o post-entrenamiento con refuerzo. La model card menciona de forma generica "recursos computacionales incrementados" y "mecanismos de optimizacion algoritmica durante el post-entrenamiento", pero sin ningun detalle tecnico verificable. Tampoco se especifica si se emplean innovaciones como decodificacion especulativa, atencion lineal o arquitecturas hibridas.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks verificables en la informacion disp
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | MyAwesomeModel | no disponible | no disponible | MIT | Repositorio de 0.0 GB, sin pesos confirmados |
-| BERT-base (referencia de encoder) | 110M | 512 tokens | Apache 2.0 | Pesos publicos en HuggingFace |
-| RoBERTa-base (referencia de encoder) | 125M | 512 tokens | MIT | Pesos publicos en HuggingFace |
+| BERT-base (referencia de encoder) | 110M | 512 tokens | Apache 2.0 | Pesos publicos en Hugging Face |
+| RoBERTa-base (referencia de encoder) | 125M | 512 tokens | MIT | Pesos publicos en Hugging Face |
 | Modelos generativos tipo chat citados en la model card (Model1, Model2) | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa con encoders clasicos es solo orientativa por la etiqueta `bert`; no se dispone de datos para comparar rendimiento, contexto ni calidad de embeddings.
@@ -84,7 +84,7 @@ La comparativa con encoders clasicos es solo orientativa por la etiqueta `bert`;
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asfdsaassad/MyAwesomeModel
+- Modelo en Hugging Face: https://huggingface.co/asfdsaassad/MyAwesomeModel
 - Repositorio de codigo: no disponible (la model card remite a un "code repository" sin enlace)
 - Paper tecnico: no disponible
 - Blog o demo oficial: no disponible (la model card menciona una web oficial y una API sin URL)

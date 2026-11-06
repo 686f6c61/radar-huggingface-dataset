@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mulligan/sim-square-broad-r01-baseline-idql` es una politica de control robótico entrenada con aprendizaje por refuerzo offline mediante el algoritmo IDQL (Implicit Q-Learning con actor de difusión). Lo publica la organizacion Mulligan como parte de su campana de evaluacion `sim-square-broad`, dentro del ecosistema de experimentos reproducibles que la organizacion mantiene en HuggingFace y en su plataforma Policy Arena. El modelo resuelve la tarea simulada `sim-square-broad` a partir de observaciones de estado (no de imagenes), y se distribuye como un checkpoint de PyTorch (`policy.pt`) acompanado de ficheros de normalizacion (`stats.json`).
+`mulligan/sim-square-broad-r01-baseline-idql` es una politica de control robótico entrenada con aprendizaje por refuerzo offline mediante el algoritmo IDQL (Implicit Q-Learning con actor de difusión). Lo publica la organizacion Mulligan como parte de su campana de evaluacion `sim-square-broad`, dentro del ecosistema de experimentos reproducibles que la organizacion mantiene en Hugging Face y en su plataforma Policy Arena. El modelo resuelve la tarea simulada `sim-square-broad` a partir de observaciones de estado (no de imagenes), y se distribuye como un checkpoint de PyTorch (`policy.pt`) acompanado de ficheros de normalizacion (`stats.json`).
 
 Tecnicamente, el modelo combina un actor generativo de tipo diffusion (que produce acciones continuas mediante un proceso de denoising) con un critico escalar entrenado con IQL, es decir, sin necesidad de consultar acciones fuera de la distribucion del dataset. La version publicada corresponde al "round" R1, brazo `baseline`, y se libera con cinco semillas independientes (seed-1 a seed-5) entrenadas hasta el paso 250001. El repositorio ocupa 1,4 GB en total y esta bajo licencia Apache 2.0.
 
@@ -88,7 +88,7 @@ No se han publicado en la informacion disponible resultados numericos de otros a
 
 | Metodo | Tipo de actor | Critico | Contexto / tarea | Parametros | Licencia del modelo comparable | Disponibilidad |
 |---|---|---|---|---|---|---|
-| IDQL (este modelo) | Difusion sobre acciones continuas | IQL con regresion de expectil | sim-square-broad, estado | no disponible | Apache 2.0 | Checkpoint `policy.pt` + `stats.json` en HuggingFace |
+| IDQL (este modelo) | Difusion sobre acciones continuas | IQL con regresion de expectil | sim-square-broad, estado | no disponible | Apache 2.0 | Checkpoint `policy.pt` + `stats.json` en Hugging Face |
 | IQL puro | Determinista o policy explicita | IQL | No disponible para esta tarea | no disponible | no disponible | Implementaciones genericas en librerias de RL offline |
 | Diffusion policy (sin critico) | Difusion sobre acciones continuas | No aplica | No disponible para esta tarea | no disponible | no disponible | Implementaciones genericas publicadas por la comunidad |
 | CQL | Determinista o policy explicita | Q-learning conservador | No disponible para esta tarea | no disponible | no disponible | Implementaciones genericas en librerias de RL offline |
@@ -111,10 +111,10 @@ La unica comparacion con datos reales disponible es interna: la dispersion entre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r01-baseline-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r01-baseline-idql
 - Sitio de Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organizacion en HuggingFace: https://huggingface.co/mulligan
+- Organizacion en Hugging Face: https://huggingface.co/mulligan
 - Dataset de teleoperacion: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-baseline
 - Dataset de rollouts de la politica base: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-baseline-policy-rollouts
 - Dataset de DAgger: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-dagger-baseline

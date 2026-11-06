@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `Nampfiev1995/ctc-omniasr-char52-vi-en` es un checkpoint entrenable de reconocimiento automatico del habla (ASR) construido sobre un encoder OmniASR de 300M de parametros, al que se le acopla una cabeza CTC (Connectionist Temporal Classification). Lo publica el usuario Nampfiev1995 en HuggingFace y esta orientado a la transcripcion de audio en vietnamita e ingles, segun se deduce del identificador del repositorio y del vocabulario incluido. El checkpoint contiene 340.801.204 parametros reales en formato safetensors, un total ligeramente superior a los 300M del encoder base porque incluye la cabeza de clasificacion CTC y las matrices asociadas al vocabulario.
+El modelo `Nampfiev1995/ctc-omniasr-char52-vi-en` es un checkpoint entrenable de reconocimiento automatico del habla (ASR) construido sobre un encoder OmniASR de 300M de parametros, al que se le acopla una cabeza CTC (Connectionist Temporal Classification). Lo publica el usuario Nampfiev1995 en Hugging Face y esta orientado a la transcripcion de audio en vietnamita e ingles, segun se deduce del identificador del repositorio y del vocabulario incluido. El checkpoint contiene 340.801.204 parametros reales en formato safetensors, un total ligeramente superior a los 300M del encoder base porque incluye la cabeza de clasificacion CTC y las matrices asociadas al vocabulario.
 
 La relevancia de esta publicacion es practica mas que de liderazgo en rankings: se trata de un checkpoint de investigacion con licencia no declarada, cero descargas y cero likes en el momento de la consulta, pensado para cargarse desde el repositorio `Speech-LLMs-CTC` mediante una clase `AudioCTCModel`. Su interes tecnico esta en el diseno del objetivo: un conjunto de 52 etiquetas CTC que combina caracteres base latinos y vietnamitas con cinco marcadores de tono y el limite de palabra `▁`, lo que permite modelar los tonos del vietnamita a nivel de caracter sin necesidad de un vocabulario de subpalabras extenso.
 
-No hay pipeline declarado, ni idiomas oficiales, ni licencia en los metadatos de HuggingFace. El autor documenta la estructura del repositorio (`config.yaml`, `model.safetensors`, `vocab.json`, `tokenizer_config.json`) y la referencia al encoder base `giangndm/omniASR-LLM-300M-encoder`, que constituye el unico punto de anclaje verificable sobre la arquitectura subyacente.
+No hay pipeline declarado, ni idiomas oficiales, ni licencia en los metadatos de Hugging Face. El autor documenta la estructura del repositorio (`config.yaml`, `model.safetensors`, `vocab.json`, `tokenizer_config.json`) y la referencia al encoder base `giangndm/omniASR-LLM-300M-encoder`, que constituye el unico punto de anclaje verificable sobre la arquitectura subyacente.
 
 ## Especificaciones tecnicas
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto/audio | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ctc-omniasr-char52-vi-en | 340,8M | no disponible | no disponible | HuggingFace, 0 descargas | CTC con vocabulario de 52 etiquetas caracter+tomo |
-| Whisper small | 244M | ventana de audio de 30 s | MIT | HuggingFace, ampliamente desplegado | Encoder-decoder autorregresivo; sin soporte nativo de vietnamita en su version original |
-| Whisper medium | 769M | ventana de audio de 30 s | MIT | HuggingFace, ampliamente desplegado | Mayor coste computacional; licencia permisiva verificable |
-| Wav2Vec 2.0 Base | 95M | no disponible | MIT (segun variante) | HuggingFace | Arquitectura CTC auto-supervisada, referencia habitual en investigacion |
+| ctc-omniasr-char52-vi-en | 340,8M | no disponible | no disponible | Hugging Face, 0 descargas | CTC con vocabulario de 52 etiquetas caracter+tomo |
+| Whisper small | 244M | ventana de audio de 30 s | MIT | Hugging Face, ampliamente desplegado | Encoder-decoder autorregresivo; sin soporte nativo de vietnamita en su version original |
+| Whisper medium | 769M | ventana de audio de 30 s | MIT | Hugging Face, ampliamente desplegado | Mayor coste computacional; licencia permisiva verificable |
+| Wav2Vec 2.0 Base | 95M | no disponible | MIT (segun variante) | Hugging Face | Arquitectura CTC auto-supervisada, referencia habitual en investigacion |
 
 Las cifras de parametros de los modelos de comparacion corresponden a sus versiones publicas conocidas. No hay datos de rendimiento comparativo disponibles para el modelo objeto de esta ficha, por lo que la comparacion se limita a tamano, licencia y disponibilidad.
 
@@ -87,7 +87,7 @@ Las cifras de parametros de los modelos de comparacion corresponden a sus versio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nampfiev1995/ctc-omniasr-char52-vi-en
+- Hugging Face: https://huggingface.co/Nampfiev1995/ctc-omniasr-char52-vi-en
 - Encoder base referenciado en `config.yaml`: https://huggingface.co/giangndm/omniASR-LLM-300M-encoder
 - Repositorio `Speech-LLMs-CTC`: mencionado en la model card, sin URL publica disponible
 - Paper o blog del modelo: no disponible

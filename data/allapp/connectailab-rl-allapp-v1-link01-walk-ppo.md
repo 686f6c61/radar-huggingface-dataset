@@ -89,7 +89,7 @@ No se dispone de información sobre modelos comparables publicados con el mismo 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-allapp-v1-link01-walk-ppo | no disponible | no aplica | 0,0007 m/s (declarado) | no disponible | HuggingFace |
+| connectailab-rl-allapp-v1-link01-walk-ppo | no disponible | no aplica | 0,0007 m/s (declarado) | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -106,8 +106,8 @@ No se dispone de información sobre modelos comparables publicados con el mismo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/allapp/connectailab-rl-allapp-v1-link01-walk-ppo
-- Repositorio del autor en HuggingFace: https://huggingface.co/allapp
+- Modelo en Hugging Face: https://huggingface.co/allapp/connectailab-rl-allapp-v1-link01-walk-ppo
+- Repositorio del autor en Hugging Face: https://huggingface.co/allapp
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - MuJoCo: https://mujoco.org
 - No se han encontrado en la información disponible enlaces al paquete `link01-gym`, al paper de PPO ni a demos adicionales.

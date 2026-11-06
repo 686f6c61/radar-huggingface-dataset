@@ -69,6 +69,6 @@ No se dispone de datos comparativos publicados. El modelo compite en el espacio 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/usermma/Qwen3.8-Queen-27B-mlx-8Bit
+- Repositorio Hugging Face: https://huggingface.co/usermma/Qwen3.8-Queen-27B-mlx-8Bit
 - Modelo base: https://huggingface.co/aifeifei798/Qwen3.8-Queen-27B
 - Documentación de mlx-lm: https://github.com/ml-explore/mlx-lm

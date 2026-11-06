@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Motif-3-FP8-Independent es una conversion a FP8 del modelo Motif-3, publicada por el usuario independiente Alborz en HuggingFace. No es un lanzamiento oficial de Motif Technologies: se trata de una cuantizacion post-entrenamiento realizada con un conversor propio en Python/PyTorch que reduce el tamano de los tensores almacenados un 48,9 % respecto al checkpoint original en BF16, dejando el checkpoint resultante en aproximadamente 322 GB. El modelo base es una arquitectura de mezcla de expertos (MoE) segun las etiquetas del repositorio, con capacidades declaradas para ingles y coreano.
+Motif-3-FP8-Independent es una conversion a FP8 del modelo Motif-3, publicada por el usuario independiente Alborz en Hugging Face. No es un lanzamiento oficial de Motif Technologies: se trata de una cuantizacion post-entrenamiento realizada con un conversor propio en Python/PyTorch que reduce el tamano de los tensores almacenados un 48,9 % respecto al checkpoint original en BF16, dejando el checkpoint resultante en aproximadamente 322 GB. El modelo base es una arquitectura de mezcla de expertos (MoE) segun las etiquetas del repositorio, con capacidades declaradas para ingles y coreano.
 
 La relevancia de esta ficha es doble. Por un lado, ilustra una practica habitual en el ecosistema abierto: cuantizaciones comunitarias de modelos grandes para hacer viable su despliegue en hardware limitado. Por otro, es un caso de advertencia, ya que la propia model card indica que la subida esta en curso y que el checkpoint esta incompleto, ademas de exigir un runtime especifico (un fork de vLLM de Motif con integracion adicional) que no esta validado con vLLM o Transformers estandar. El tamano del repositorio declarado por la plataforma (35,7 GB) no coincide con los 322 GB que menciona la model card, lo que refuerza la hipotesis de una subida parcial.
 
@@ -105,7 +105,7 @@ No se dispone de datos verificables de modelos alternativos de la misma categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Alborz/Motif-3-FP8-Independent
+- Modelo en Hugging Face: https://huggingface.co/Alborz/Motif-3-FP8-Independent
 - Modelo base: https://huggingface.co/Motif-Technologies/Motif-3
 - Notas de runtime: https://huggingface.co/Alborz/Motif-3-FP8-Independent/blob/main/runtime/README.md
 - Codigo de conversion: https://huggingface.co/Alborz/Motif-3-FP8-Independent/blob/main/source/independent_fp8/core.py

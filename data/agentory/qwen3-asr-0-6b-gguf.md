@@ -4,7 +4,7 @@
 
 Qwen3-ASR 0.6B es un modelo de reconocimiento automático del habla (ASR) desarrollado por Alibaba, construido como un *speech-LLM*: un codificador de audio estilo Whisper que proyecta sus salidas dentro de un LLM Qwen3 de 0.6B que genera la transcripción de forma autorregresiva. Este repositorio concreto, `agentory/qwen3-asr-0.6b-GGUF`, es una conversión a formato GGUF del modelo original `Qwen/Qwen3-ASR-0.6B`, pensada para ejecutarse con el runtime C++ `qwen3-asr-main` del proyecto CrispASR sin dependencias de PyTorch, librosa ni scipy en tiempo de inferencia.
 
-La relevancia del modelo reside en su relación calidad/tamaño: cubre 30 idiomas y 22 dialectos chinos con detección automática de idioma, reporta un WER medio del 6,42 % en el Open ASR Leaderboard de HuggingFace y se distribuye bajo licencia Apache-2.0, lo que permite uso comercial sin restricciones adicionales. Con 938 millones de parámetros totales y cuantizaciones que van de 531 MB a 1,88 GB, es desplegable en CPU de consumo y en GPUs modestas.
+La relevancia del modelo reside en su relación calidad/tamaño: cubre 30 idiomas y 22 dialectos chinos con detección automática de idioma, reporta un WER medio del 6,42 % en el Open ASR Leaderboard de Hugging Face y se distribuye bajo licencia Apache-2.0, lo que permite uso comercial sin restricciones adicionales. Con 938 millones de parámetros totales y cuantizaciones que van de 531 MB a 1,88 GB, es desplegable en CPU de consumo y en GPUs modestas.
 
 El punto técnico más destacable de esta conversión es el proceso de cuantización: el codificador de audio se mantiene en Q8_0 en todas las variantes sub-8 bits para evitar bucles de repetición en audio largo, y se ofrece una variante Q4_K calibrada con una importance matrix calculada sobre audio real (Common Voice EN+DE) en lugar de sobre un corpus de texto.
 
@@ -53,7 +53,7 @@ La conversión a GGUF incorpora dos decisiones técnicas relevantes. Primero, de
 
 ## Benchmarks y rendimiento
 
-El autor reporta un WER medio del 6,42 % en el Open ASR Leaderboard de HuggingFace para el modelo base Qwen3-ASR 0.6B. No se han publicado en la información disponible resultados desglosados por benchmark (MMLU, HumanEval, GSM8K u otros) ni comparativas numéricas con modelos similares.
+El autor reporta un WER medio del 6,42 % en el Open ASR Leaderboard de Hugging Face para el modelo base Qwen3-ASR 0.6B. No se han publicado en la información disponible resultados desglosados por benchmark (MMLU, HumanEval, GSM8K u otros) ni comparativas numéricas con modelos similares.
 
 Rendimiento de inferencia medido sobre `samples/jfk.wav` (11 segundos) en una CPU de 4 núcleos tipo Apple:
 
@@ -106,7 +106,7 @@ No se dispone en la información proporcionada de datos numéricos de modelos al
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/agentory/qwen3-asr-0.6b-GGUF
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/agentory/qwen3-asr-0.6b-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Runtime CrispASR: https://github.com/CrispStrobe/CrispASR
 - Issue de CrispASR sobre deriva del codificador en audio largo: https://github.com/CrispStrobe/CrispASR/issues/218

@@ -76,4 +76,4 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vi-LAB/KenT-100M-Base
+- Hugging Face: https://huggingface.co/Vi-LAB/KenT-100M-Base

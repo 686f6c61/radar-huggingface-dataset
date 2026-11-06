@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks ni de especificaciones de otros LoRA de con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pablodawson/MiniMax-H3-360-Orbit-LoRA
+- Modelo en Hugging Face: https://huggingface.co/pablodawson/MiniMax-H3-360-Orbit-LoRA
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Repack int8 ConvRot del base (Comfy-Org): https://huggingface.co/Comfy-Org/MiniMax-H3

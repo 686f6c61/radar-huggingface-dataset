@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TinyLlama-1.1B-Chat-v1.0-krafla (esta ficha) | 1,1B | 4096 | `.mlb` / isa-lm (CPU) | Apache 2.0 | HuggingFace, 0 descargas |
-| TinyLlama-1.1B-Chat-v1.0 (original) | 1,1B | 2048 (según model card original) | safetensors / transformers, vLLM | Apache 2.0 | HuggingFace, ampliamente usado |
-| TinyLlama en GGUF (p. ej. TheBloke) | 1,1B | 2048 | GGUF / llama.cpp, Ollama | Apache 2.0 | HuggingFace, muy usado |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32 768 | safetensors, GGUF | Apache 2.0 | HuggingFace, muy usado |
+| TinyLlama-1.1B-Chat-v1.0-krafla (esta ficha) | 1,1B | 4096 | `.mlb` / isa-lm (CPU) | Apache 2.0 | Hugging Face, 0 descargas |
+| TinyLlama-1.1B-Chat-v1.0 (original) | 1,1B | 2048 (según model card original) | safetensors / transformers, vLLM | Apache 2.0 | Hugging Face, ampliamente usado |
+| TinyLlama en GGUF (p. ej. TheBloke) | 1,1B | 2048 | GGUF / llama.cpp, Ollama | Apache 2.0 | Hugging Face, muy usado |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32 768 | safetensors, GGUF | Apache 2.0 | Hugging Face, muy usado |
 
 La comparación directa con el original y con las conversiones GGUF es la más pertinente: esta versión amplía el contexto a 4096 posiciones y ofrece un runtime sin dependencias, pero queda restringida al ecosistema isa-lm. Frente a modelos más recientes de tamaño similar como Qwen2.5-1.5B-Instruct, TinyLlama es anterior y con menor contexto nativo, aunque la conversión aquí descrita no modifica las capacidades del modelo base.
 
@@ -93,7 +93,7 @@ La comparación directa con el original y con las conversiones GGUF es la más p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonpark0/TinyLlama-1.1B-Chat-v1.0-krafla
+- Modelo en Hugging Face: https://huggingface.co/jonpark0/TinyLlama-1.1B-Chat-v1.0-krafla
 - Modelo base: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Repositorio del runtime isa-lm: https://github.com/JonPark0/isa-lm
 - Releases de isa-lm: https://github.com/JonPark0/isa-lm/releases

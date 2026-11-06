@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`drinnird/parakeet-tdt-0.6b-v3-sm8850-v81-fp16` es un artefacto de pesos publicado en HuggingFace por el usuario drinnird el 4 de octubre de 2026. La model card del repositorio esta practicamente vacia: unicamente contiene la declaracion de licencia `cc-by-4.0`, sin documentacion tecnica, sin pipeline declarado, sin idiomas indicados y sin resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes, por lo que no existe validacion alguna por parte de la comunidad.
+`drinnird/parakeet-tdt-0.6b-v3-sm8850-v81-fp16` es un artefacto de pesos publicado en Hugging Face por el usuario drinnird el 4 de octubre de 2026. La model card del repositorio esta practicamente vacia: unicamente contiene la declaracion de licencia `cc-by-4.0`, sin documentacion tecnica, sin pipeline declarado, sin idiomas indicados y sin resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes, por lo que no existe validacion alguna por parte de la comunidad.
 
 El identificador del modelo permite deducir su proposito probable, aunque ninguna de estas deducciones esta confirmada por el autor. El segmento `parakeet-tdt-0.6b-v3` remite a la familia Parakeet TDT de NVIDIA, modelos de reconocimiento automatico del habla (ASR) de aproximadamente 600 millones de parametros basados en arquitectura FastConformer con decodificador TDT (Token-and-Duration Transducer). El segmento `sm8850` coincide con el nombre de plataforma de Qualcomm asociado al Snapdragon 8 Elite Gen 5, y `v81`/`fp16` sugieren una exportacion en precision media destinada a la NPU Hexagon de dicha plataforma, presumiblemente mediante el stack QNN/QAIRT de Qualcomm.
 
@@ -87,5 +87,5 @@ No es posible completar una comparativa rigurosa con la informacion disponible. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/drinnird/parakeet-tdt-0.6b-v3-sm8850-v81-fp16
+- Repositorio en Hugging Face: https://huggingface.co/drinnird/parakeet-tdt-0.6b-v3-sm8850-v81-fp16
 - No se han proporcionado en la informacion disponible otros enlaces a papers, blogs, repositorios de codigo o demos. No se incluye enlace al posible modelo base por no estar confirmado en la documentacion consultada.

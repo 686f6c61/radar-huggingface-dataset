@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`christophertorres/deit-retrieval` es un repositorio de HuggingFace que contiene una implementación funcional de DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval), presumiblemente recuperación imagen-texto o imagen-imagen dada la familia arquitectónica. El autor es el usuario `christophertorres` y el proyecto se publica bajo licencia Apache 2.0. No es un modelo entrenado ni validado: la propia model card lo describe explícitamente como un punto de partida experimental cuyo `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`christophertorres/deit-retrieval` es un repositorio de Hugging Face que contiene una implementación funcional de DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval), presumiblemente recuperación imagen-texto o imagen-imagen dada la familia arquitectónica. El autor es el usuario `christophertorres` y el proyecto se publica bajo licencia Apache 2.0. No es un modelo entrenado ni validado: la propia model card lo describe explícitamente como un punto de partida experimental cuyo `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El repositorio se presenta con una configuración declarada como "huge", atención dispersa (sparse attention), fusión de bajo rango (low rank), activación GELU y normalización LayerNorm. La receta de experimento por defecto usa SGD con un schedule coseno, pero el autor advierte que son valores de arranque del script y no evidencia de un entrenamiento completado. No se reclama ninguna puntuación de benchmark y no se han publicado resultados de evaluación.
 
@@ -87,5 +87,5 @@ La comparativa se limita a la categoría funcional (recuperación visual), ya qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/christophertorres/deit-retrieval
+- Modelo en Hugging Face: https://huggingface.co/christophertorres/deit-retrieval
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

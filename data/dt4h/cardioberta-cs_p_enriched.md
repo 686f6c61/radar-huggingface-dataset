@@ -82,9 +82,9 @@ La familia CardioBERTa incluye variantes para otros idiomas: `CardioBERTa.en`, `
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DT4H/CardioBERTa.cs_P_enriched
+- Modelo en Hugging Face: https://huggingface.co/DT4H/CardioBERTa.cs_P_enriched
 - Modelo base CardioBERTa.cs: https://huggingface.co/DT4H/CardioBERTa.cs
-- Organización DT4H en HuggingFace: https://huggingface.co/datasets/DT4H/
+- Organización DT4H en Hugging Face: https://huggingface.co/datasets/DT4H/
 - Proyecto DataTools4Heart: https://www.datatools4heart.eu/
 - Organización GitHub de DataTools4Heart: https://github.com/DataTools4Heart/
 - Documentación de la plataforma: https://datatools4heart.github.io/documentation-hub/

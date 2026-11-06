@@ -78,8 +78,8 @@ No se dispone de modelos comparables de la misma categoria (TTS ultraligero con 
 
 ## Enlaces
 
-- Repositorio HuggingFace (ONNX): https://huggingface.co/Bbkblo/indri-0.1-124m-tts-ONNX
-- Modelo base en HuggingFace: https://huggingface.co/11mlabs/indri-0.1-124m-tts
-- Variante GGUF en HuggingFace: https://huggingface.co/11mlabs/indri-0.1-124m-tts-GGUF
+- Repositorio Hugging Face (ONNX): https://huggingface.co/Bbkblo/indri-0.1-124m-tts-ONNX
+- Modelo base en Hugging Face: https://huggingface.co/11mlabs/indri-0.1-124m-tts
+- Variante GGUF en Hugging Face: https://huggingface.co/11mlabs/indri-0.1-124m-tts-GGUF
 - Repositorio GitHub de inferencia: https://github.com/indri-voice/indri
 - Documentacion alternativa en GitHub: https://github.com/cmeraki/indri/blob/master/README.md

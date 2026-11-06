@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mlx-generate-ctmr (este) | no disponible | no aplica | TC, máscaras TC, RM, RM cerebral; MLX | NVIDIA mixed terms (restringida) | HuggingFace, MLX |
-| nvidia/NV-Generate-CT | no disponible | no aplica | TC y máscaras TC | Open Model License / Community Model License | HuggingFace, CUDA |
-| nvidia/NV-Generate-MR | no disponible | no aplica | RM general | OneWay Non-Commercial | HuggingFace, CUDA |
-| nvidia/NV-Generate-MR-Brain | no disponible | no aplica | RM cerebral | NVIDIA mixed terms | HuggingFace, CUDA |
+| mlx-generate-ctmr (este) | no disponible | no aplica | TC, máscaras TC, RM, RM cerebral; MLX | NVIDIA mixed terms (restringida) | Hugging Face, MLX |
+| nvidia/NV-Generate-CT | no disponible | no aplica | TC y máscaras TC | Open Model License / Community Model License | Hugging Face, CUDA |
+| nvidia/NV-Generate-MR | no disponible | no aplica | RM general | OneWay Non-Commercial | Hugging Face, CUDA |
+| nvidia/NV-Generate-MR-Brain | no disponible | no aplica | RM cerebral | NVIDIA mixed terms | Hugging Face, CUDA |
 
 La comparativa se limita a los modelos upstream, ya que no se dispone de datos de benchmarks ni de parámetros para confrontarlos con alternativas de otros desarrolladores.
 
@@ -86,7 +86,7 @@ La comparativa se limita a los modelos upstream, ya que no se dispone de datos d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MedMLX/mlx-generate-ctmr
+- Hugging Face: https://huggingface.co/MedMLX/mlx-generate-ctmr
 - Repositorio del paquete: https://github.com/MedMLX/mlx-generate-ctmr
 - Paper MAISI-v2: https://arxiv.org/abs/2508.05772
 - Paper MAISI: https://arxiv.org/abs/2409.11169

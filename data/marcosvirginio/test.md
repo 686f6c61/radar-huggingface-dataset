@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MarcosVirginio/test` es un repositorio de modelo alojado en HuggingFace por el usuario MarcosVirginio que, a fecha de la informacion disponible, no contiene documentacion tecnica sustantiva. La model card se limita a una cabecera YAML con el campo `license: bsd` y un cuerpo vacio: no se declara arquitectura, tamano, datos de entrenamiento, idiomas ni caso de uso previsto. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (2026-09-20T00:28:03Z), lo que es consistente con un repositorio de prueba o un artefacto subido para validar un flujo de publicacion mas que con un modelo entrenado y liberado.
+`MarcosVirginio/test` es un repositorio de modelo alojado en Hugging Face por el usuario MarcosVirginio que, a fecha de la informacion disponible, no contiene documentacion tecnica sustantiva. La model card se limita a una cabecera YAML con el campo `license: bsd` y un cuerpo vacio: no se declara arquitectura, tamano, datos de entrenamiento, idiomas ni caso de uso previsto. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (2026-09-20T00:28:03Z), lo que es consistente con un repositorio de prueba o un artefacto subido para validar un flujo de publicacion mas que con un modelo entrenado y liberado.
 
 No se dispone de informacion sobre parametros, longitud de contexto, tokenizador, formato de pesos ni proceso de entrenamiento. La busqueda web asociada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a productos financieros de Bank of America y no guardan relacion con este repositorio. Por tanto, cualquier afirmacion sobre capacidad, rendimiento o arquitectura seria especulativa y no se incluye en esta ficha.
 
@@ -39,7 +39,7 @@ En cuanto al entrenamiento, no hay datos sobre el volumen de tokens, la composic
 ## Casos de uso
 
 - No se pueden recomendar casos de uso concretos: la ausencia de especificaciones tecnicas, de pesos verificables y de resultados de evaluacion impide justificar cualquier aplicacion practica.
-- Uso como plantilla de repositorio: el identificador `test` sugiere que el artefacto podria reutilizarse como esqueleto para validar el proceso de publicacion en HuggingFace (subida de archivos, etiquetado, licencia), sin ejecutar inferencia.
+- Uso como plantilla de repositorio: el identificador `test` sugiere que el artefacto podria reutilizarse como esqueleto para validar el proceso de publicacion en Hugging Face (subida de archivos, etiquetado, licencia), sin ejecutar inferencia.
 - Pruebas de integracion de tooling: podria servir para comprobar que un pipeline de descarga, cacheo o conversion de formatos funciona, pero no para evaluar calidad de generacion.
 - Verificacion de permisos y licencias: util para probar flujos internos de aprobacion de licencias BSD dentro de una organizacion.
 - Docencia o formacion: como ejemplo negativo de model card incompleta en guias internas sobre que debe documentar un modelo antes de publicarse.
@@ -77,6 +77,6 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MarcosVirginio/test
+- Repositorio en Hugging Face: https://huggingface.co/MarcosVirginio/test
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.
 - Los resultados de busqueda recuperados (wallethub.com sobre productos de Bank of America) no guardan relacion con el modelo y se omiten por no ser relevantes.

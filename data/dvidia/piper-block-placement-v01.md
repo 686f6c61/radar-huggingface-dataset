@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PiPER block placement v0.1 es un artefacto de investigacion publicado por Dvidia en HuggingFace bajo el pipeline `robotics`. No es un modelo de lenguaje ni un modelo generativo multimodal, sino una politica de control motor aprendida por imitacion para una tarea muy concreta: la colocacion de un bloque rigido de 40 g en dos destinos conocidos mediante un brazo robotico PiPER en simulacion. La politica seleccionada se describe como una primitiva de movimiento feedforward RBF condicionada por tiempo, con 16 terminos espaciales cubicos y 401 centros temporales (sigma = 0,025 s), serializada bajo el esquema `dvidia.piper-motor-primitive/v2`.
+PiPER block placement v0.1 es un artefacto de investigacion publicado por Dvidia en Hugging Face bajo el pipeline `robotics`. No es un modelo de lenguaje ni un modelo generativo multimodal, sino una politica de control motor aprendida por imitacion para una tarea muy concreta: la colocacion de un bloque rigido de 40 g en dos destinos conocidos mediante un brazo robotico PiPER en simulacion. La politica seleccionada se describe como una primitiva de movimiento feedforward RBF condicionada por tiempo, con 16 terminos espaciales cubicos y 401 centros temporales (sigma = 0,025 s), serializada bajo el esquema `dvidia.piper-motor-primitive/v2`.
 
 El modelo se entrena a partir de demostraciones generadas por un profesor sintetico escrito a mano que opera en el simulador con acceso a datos privilegiados (posiciones de articulaciones, TCP, objeto y contacto). La politica final, sin embargo, solo consume la posicion XY inicial del objeto, una de las dos coordenadas de destino conocidas y el tiempo transcurrido; las posiciones articulares en vivo se usan unicamente por los topes nativos de objetivo articular. Es relevante ahora como ejemplo reproducible de destilacion de trayectorias en simulacion con controles negativos explicitos (modelo con etiquetas barajadas, apertura de pinza, retencion), y no como un sistema listo para robot fisico.
 
@@ -92,7 +92,7 @@ No disponible. La informacion proporcionada no incluye otros artefactos de coloc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dvidia/piper-block-placement-v01
+- Modelo en Hugging Face: https://huggingface.co/Dvidia/piper-block-placement-v01
 - Dataset de demostraciones: https://huggingface.co/datasets/Dvidia/piper-block-placement-demonstrations-v01
 - Visor de replay grabado: https://dvidia-robot-simulation-lab.static.hf.space/learned-placement/v01/viewer/index.html
 - Wheel de entrenamiento: https://github.com/Dvidia-Inference/dvidia-training/releases/download/piper-imitation-v0.1/dvidia_training-0.1.0-py3-none-any.whl

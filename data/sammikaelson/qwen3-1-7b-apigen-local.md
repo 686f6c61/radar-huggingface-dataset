@@ -49,10 +49,10 @@ Dado que no hay datos de rendimiento publicados, la comparación se limita a car
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-1.7B-APIGEN-Local (este) | 1,7 B | No disponible | No disponible | HuggingFace |
-| Qwen3-1.7B (base) | 1,7 B | 32K (según documentación de Qwen3) | Apache 2.0 (según Qwen) | HuggingFace |
-| Llama-3.2-1B | 1,2 B | 128K | Llama 3.2 Community License | HuggingFace |
-| Gemma-2-2B | 2,6 B | 8K | Gemma Terms of Use | HuggingFace |
+| Qwen3-1.7B-APIGEN-Local (este) | 1,7 B | No disponible | No disponible | Hugging Face |
+| Qwen3-1.7B (base) | 1,7 B | 32K (según documentación de Qwen3) | Apache 2.0 (según Qwen) | Hugging Face |
+| Llama-3.2-1B | 1,2 B | 128K | Llama 3.2 Community License | Hugging Face |
+| Gemma-2-2B | 2,6 B | 8K | Gemma Terms of Use | Hugging Face |
 
 Nota: los datos de contexto y licencia de Qwen3-1.7B y otros modelos provienen de fuentes externas, no de la información proporcionada para este modelo.
 
@@ -65,5 +65,5 @@ Nota: los datos de contexto y licencia de Qwen3-1.7B y otros modelos provienen d
 - Sin soporte de producción garantizado: no hay benchmarks ni pruebas de robustez que respalden su uso en entornos críticos.
 
 ## Enlaces
-- [HuggingFace - SamMikaelson/Qwen3-1.7B-APIGEN-Local](https://huggingface.co/SamMikaelson/Qwen3-1.7B-APIGEN-Local)
+- [Hugging Face - SamMikaelson/Qwen3-1.7B-APIGEN-Local](https://huggingface.co/SamMikaelson/Qwen3-1.7B-APIGEN-Local)
 - [Modelo base: unsloth/qwen3-1.7b-unsloth-bnb-4bit](https://huggingface.co/unsloth/qwen3-1.7b-unsloth-bnb-4bit)

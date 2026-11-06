@@ -24,8 +24,8 @@ Es relevante ahora porque supone la mejor marca publicada del proyecto: mejora e
 | Método de ajuste | Fine-tune completo (todos los pesos) |
 | Dataset de entrenamiento | `Yohan2003/whisper-sl-data`, split `stratified_v6` |
 | Tamaño del repositorio | 8,7 GB (incluye artefactos de entrenamiento además del checkpoint) |
-| Descargas / likes en HuggingFace | 0 / 0 |
-| Fecha de creación en HuggingFace | 2026-09-30 |
+| Descargas / likes en Hugging Face | 0 / 0 |
+| Fecha de creación en Hugging Face | 2026-09-30 |
 
 ## Arquitectura y entrenamiento
 
@@ -87,11 +87,11 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parámetros | Contexto / audio | WER test cingalés | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-small-sinhala-run11-v6-e6 | 241,7 M | Ventana de 30 s | 16,38 % | Apache 2.0 | HuggingFace, 0 descargas |
-| openai/whisper-small (base) | 244 M | Ventana de 30 s | No disponible en esta información | Apache 2.0 en HuggingFace | Ampliamente desplegado |
-| whisper-small-sinhala-run10-v6 | ~242 M | Ventana de 30 s | 17,17 % | Apache 2.0 | HuggingFace, mismo autor |
-| whisper-small-sinhala-run6-v5 | ~242 M | Ventana de 30 s | 17,15 % | Apache 2.0 | HuggingFace, mismo autor |
-| openai/whisper-medium | 769 M | Ventana de 30 s | No disponible en esta información | Apache 2.0 en HuggingFace | Ampliamente desplegado |
+| whisper-small-sinhala-run11-v6-e6 | 241,7 M | Ventana de 30 s | 16,38 % | Apache 2.0 | Hugging Face, 0 descargas |
+| openai/whisper-small (base) | 244 M | Ventana de 30 s | No disponible en esta información | Apache 2.0 en Hugging Face | Ampliamente desplegado |
+| whisper-small-sinhala-run10-v6 | ~242 M | Ventana de 30 s | 17,17 % | Apache 2.0 | Hugging Face, mismo autor |
+| whisper-small-sinhala-run6-v5 | ~242 M | Ventana de 30 s | 17,15 % | Apache 2.0 | Hugging Face, mismo autor |
+| openai/whisper-medium | 769 M | Ventana de 30 s | No disponible en esta información | Apache 2.0 en Hugging Face | Ampliamente desplegado |
 
 No se dispone de datos de otros proyectos de ASR en cingalés (por ejemplo, ajustes sobre modelos wav2vec 2.0 o MMS) en la información proporcionada, por lo que la comparación se limita a la familia Whisper y a los runs del propio autor.
 
@@ -109,7 +109,7 @@ No se dispone de datos de otros proyectos de ASR en cingalés (por ejemplo, ajus
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yohan2003/whisper-small-sinhala-run11-v6-e6
+- Modelo en Hugging Face: https://huggingface.co/Yohan2003/whisper-small-sinhala-run11-v6-e6
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Dataset de entrenamiento: https://huggingface.co/datasets/Yohan2003/whisper-sl-data
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/yohanj-23-university-of-moratuwa/whisper/runs/1n2t4gpf

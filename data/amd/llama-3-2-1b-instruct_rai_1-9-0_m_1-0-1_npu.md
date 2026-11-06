@@ -2,11 +2,11 @@
 
 ## Resumen
 
-AMD publica en HuggingFace una versión optimizada para NPU del modelo Llama-3.2-1B-Instruct de Meta, empaquetada en formato ONNX y destinada a ejecutarse sobre la plataforma Ryzen AI. El identificador del repositorio (`rai_1.9.0_m_1.0.1_npu`) indica compatibilidad con Ryzen AI 1.9.0 y con el modelo de ejecución NPU versión 1.0.1, lo que la convierte en una pieza específica del stack de inferencia local de AMD para procesadores con unidad de procesamiento neuronal integrada.
+AMD publica en Hugging Face una versión optimizada para NPU del modelo Llama-3.2-1B-Instruct de Meta, empaquetada en formato ONNX y destinada a ejecutarse sobre la plataforma Ryzen AI. El identificador del repositorio (`rai_1.9.0_m_1.0.1_npu`) indica compatibilidad con Ryzen AI 1.9.0 y con el modelo de ejecución NPU versión 1.0.1, lo que la convierte en una pieza específica del stack de inferencia local de AMD para procesadores con unidad de procesamiento neuronal integrada.
 
 El modelo base es Llama-3.2-1B-Instruct, un transformer decoder-only de 1.230 millones de parámetros con 128.000 tokens de contexto, ajustado con instrucciones por Meta. Esta variante no modifica los pesos en términos de arquitectura, sino que los exporta y optimiza para el runtime de AMD, de modo que la inferencia se acelera en hardware Ryzen AI en lugar de depender exclusivamente de CPU o GPU.
 
-Su relevancia es acotada pero concreta: permite ejecutar un modelo conversacional de Meta en portátiles y mini-PC con Ryzen AI sin necesidad de GPU dedicada, con un consumo energético bajo. El repositorio está restringido (gated), por lo que es necesario aceptar las condiciones de la licencia Llama 3.2 en HuggingFace antes de descargarlo.
+Su relevancia es acotada pero concreta: permite ejecutar un modelo conversacional de Meta en portátiles y mini-PC con Ryzen AI sin necesidad de GPU dedicada, con un consumo energético bajo. El repositorio está restringido (gated), por lo que es necesario aceptar las condiciones de la licencia Llama 3.2 en Hugging Face antes de descargarlo.
 
 ## Especificaciones técnicas
 
@@ -76,7 +76,7 @@ La ventaja diferencial de esta variante es la integración lista para NPU Ryzen 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: es necesario aceptar la licencia Llama 3.2 en HuggingFace antes de descargar el modelo.
+- Acceso restringido: es necesario aceptar la licencia Llama 3.2 en Hugging Face antes de descargar el modelo.
 - Licencia Llama 3.2 Community License: permite uso comercial con restricciones (por ejemplo, obligaciones de atribución y límite de 700 millones de usuarios mensuales para licenciatarios que ofrezcan el modelo como servicio).
 - Idiomas: los tags solo declaran inglés; el rendimiento en castellano puede ser inferior al del modelo base y no está garantizado.
 - Riesgo de alucinación inherente a un modelo de 1B parámetros; no es adecuado para tareas que exijan alta fiabilidad factual sin verificación.
@@ -87,7 +87,7 @@ La ventaja diferencial de esta variante es la integración lista para NPU Ryzen 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Llama-3.2-1B-Instruct_rai_1.9.0_m_1.0.1_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/Llama-3.2-1B-Instruct_rai_1.9.0_m_1.0.1_npu
 - Modelo base Meta Llama-3.2-1B-Instruct: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Informe técnico Llama 3.2 (Meta): https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/
 - Documentación Ryzen AI (AMD): https://www.amd.com/en/products/processors/ryzen-ai.html

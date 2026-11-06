@@ -2,7 +2,7 @@
 
 ## Resumen
 
-funnygeeker/Qwen3.6-Chat-Templates-PLUS es un repositorio alojado en HuggingFace que contiene plantillas de chat (chat templates), no un modelo de lenguaje con pesos. El autor, funnygeeker, lo describe como un conjunto de plantillas que emplean tecnicas de prompt engineering para mejorar ligeramente el comportamiento y el seguimiento de instrucciones del modelo al que denomina Qwen3.6-35B-A3B.
+funnygeeker/Qwen3.6-Chat-Templates-PLUS es un repositorio alojado en Hugging Face que contiene plantillas de chat (chat templates), no un modelo de lenguaje con pesos. El autor, funnygeeker, lo describe como un conjunto de plantillas que emplean tecnicas de prompt engineering para mejorar ligeramente el comportamiento y el seguimiento de instrucciones del modelo al que denomina Qwen3.6-35B-A3B.
 
 El repositorio se creo el 10 de septiembre de 2026 y, en el momento de la consulta, acumula 0 descargas y 0 "likes". La model card, redactada en chino e ingles, senala que el autor sigue probando la plantilla y que la subira cuando finalice las pruebas, por lo que el contenido debe considerarse preliminar o incompleto. No se publican pesos, ficheros de configuracion de modelo, resultados de evaluacion ni documentacion tecnica adicional.
 
@@ -78,5 +78,5 @@ No disponible. La informacion proporcionada no incluye repositorios comparables 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/funnygeeker/Qwen3.6-Chat-Templates-PLUS
+- Repositorio en Hugging Face: https://huggingface.co/funnygeeker/Qwen3.6-Chat-Templates-PLUS
 - No se han encontrado en la busqueda web enlaces relevantes al repositorio, a sus plantillas ni al modelo Qwen3.6-35B-A3B. El resto de resultados obtenidos no guardan relacion con el contenido de esta ficha.

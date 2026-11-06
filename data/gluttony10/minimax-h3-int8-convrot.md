@@ -78,7 +78,7 @@ La diferencia principal entre las versiones cuantizadas es el grado de compresio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Gluttony10/MiniMax-H3-INT8-CONVROT
+- Repositorio Hugging Face: https://huggingface.co/Gluttony10/MiniMax-H3-INT8-CONVROT
 - Plugin ComfyUI-RH-MiniMax-H3: https://github.com/RH-RunningHub/ComfyUI-RH-MiniMax-H3
 - Modelo oficial MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio oficial MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3

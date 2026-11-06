@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FinBERT-FOMC-aspects es un modelo de clasificación de sentimiento financiero con condicionamiento por aspecto, desarrollado por el usuario de HuggingFace Wonseong. Se trata de un fine-tuning de `ZiweiChen/FinBERT-FOMC`, a su vez derivado de la familia BERT, especializado en analizar frases extraídas de comunicados del Comité Federal de Mercado Abierto (FOMC) de la Reserva Federal de Estados Unidos. El modelo resuelve un problema concreto: asignar polaridad (negativa, neutra o positiva) a una misma frase respecto a tres aspectos económicos distintos —crecimiento, empleo e inflación—, en lugar de producir una única etiqueta global de sentimiento.
+FinBERT-FOMC-aspects es un modelo de clasificación de sentimiento financiero con condicionamiento por aspecto, desarrollado por el usuario de Hugging Face Wonseong. Se trata de un fine-tuning de `ZiweiChen/FinBERT-FOMC`, a su vez derivado de la familia BERT, especializado en analizar frases extraídas de comunicados del Comité Federal de Mercado Abierto (FOMC) de la Reserva Federal de Estados Unidos. El modelo resuelve un problema concreto: asignar polaridad (negativa, neutra o positiva) a una misma frase respecto a tres aspectos económicos distintos —crecimiento, empleo e inflación—, en lugar de producir una única etiqueta global de sentimiento.
 
 La arquitectura es un transformer encoder BERT con 109.754.115 parámetros totales, cabeza de clasificación de tres clases y una interfaz de inferencia basada en pares de textos: el primer segmento codifica el aspecto solicitado y el segundo la frase del FOMC. El repositorio ocupa 0,4 GB y los pesos se distribuyen en formato safetensors, con licencia Apache 2.0.
 
@@ -71,16 +71,16 @@ El dataset de evaluación se identifica como `FOMC_sentences_expanded_zeroshot_l
 - VRAM estimada en FP16/BF16: alrededor de 0,22 GB para pesos; el modelo completo cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente; el autor entrenó en una Tesla T4. Funciona en RTX 3060, RTX 4060, RTX 4090, A100, H100 y en CPU para volúmenes moderados.
 - Cabe en GPU consumer: sí, en todas las GPU consumer modernas e incluso en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: `transformers` (PyTorch), `pipeline` de HuggingFace, text-embeddings-inference, endpoints compatibles; también es convertible a ONNX o GGUF con herramientas de terceros, aunque el autor no lo documenta.
+- Opciones de despliegue: `transformers` (PyTorch), `pipeline` de Hugging Face, text-embeddings-inference, endpoints compatibles; también es convertible a ONNX o GGUF con herramientas de terceros, aunque el autor no lo documenta.
 - Latencia y throughput: no disponibles en la información proporcionada. Por el tamaño del modelo, se espera latencia de milisegundos por frase en GPU moderna, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wonseong/FinBERT-FOMC-aspects | 109,75 M | No disponible | Sentimiento por aspecto en frases del FOMC | Apache 2.0 | HuggingFace |
-| ZiweiChen/FinBERT-FOMC (modelo base) | No disponible en la información | No disponible | Sentimiento financiero en textos del FOMC | No disponible en la información | HuggingFace |
-| FinBERT (ProsusAI) | No disponible en la información | No disponible | Sentimiento financiero general | No disponible en la información | HuggingFace |
+| Wonseong/FinBERT-FOMC-aspects | 109,75 M | No disponible | Sentimiento por aspecto en frases del FOMC | Apache 2.0 | Hugging Face |
+| ZiweiChen/FinBERT-FOMC (modelo base) | No disponible en la información | No disponible | Sentimiento financiero en textos del FOMC | No disponible en la información | Hugging Face |
+| FinBERT (ProsusAI) | No disponible en la información | No disponible | Sentimiento financiero general | No disponible en la información | Hugging Face |
 | VADER | Basado en léxico, sin parámetros neuronales | No aplica | Sentimiento general | MIT (según su distribución habitual) | Librería Python |
 
 La comparación con FinBERT-FOMC y VADER se apoya en la referencia citada por el autor (Kim et al., 2024), que evalúa estos modelos en comunicación de bancos centrales. No se dispone de métricas comparativas directas publicadas en la información proporcionada para establecer una tabla de rendimiento frente a esas alternativas.
@@ -100,8 +100,8 @@ La comparación con FinBERT-FOMC y VADER se apoya en la referencia citada por el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wonseong/FinBERT-FOMC-aspects
+- Modelo en Hugging Face: https://huggingface.co/Wonseong/FinBERT-FOMC-aspects
 - Modelo base: https://huggingface.co/ZiweiChen/FinBERT-FOMC
 - Referencia académica citada: Kim, W., Sporer, J., Lee, C. L., & Handschuh, S. (2024, noviembre). *Is small really beautiful for central Bank communication? Evaluating language models for finance: Llama-3-70B, GPT-4, FinBERT-FOMC, FinBERT, and VADER*. Proceedings of the 5th ACM International Conference on AI in Finance, pp. 626-633. arXiv:2304.10164 (https://arxiv.org/abs/2304.10164)
-- Libro de cálculo de entrenamiento: `FOMC_sentences_expanded_zeroshot_labeled.xlsx`, disponible en el propio repositorio de HuggingFace del modelo.
+- Libro de cálculo de entrenamiento: `FOMC_sentences_expanded_zeroshot_labeled.xlsx`, disponible en el propio repositorio de Hugging Face del modelo.
 - Helper local: `predict_aspect.py`, incluido en el repositorio del modelo.

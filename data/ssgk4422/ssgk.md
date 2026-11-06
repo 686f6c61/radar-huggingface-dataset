@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `ssgk4422/Ssgk` es un repositorio alojado en HuggingFace por el usuario `ssgk4422`. La informacion publica disponible es practicamente inexistente: la model card unicamente contiene la declaracion de licencia MIT, sin descripcion, sin arquitectura declarada, sin ejemplos de uso y sin resultados de evaluacion. El repositorio registra 0 descargas y 1 like, y no tiene pipeline de inferencia asignado.
+El modelo identificado como `ssgk4422/Ssgk` es un repositorio alojado en Hugging Face por el usuario `ssgk4422`. La informacion publica disponible es practicamente inexistente: la model card unicamente contiene la declaracion de licencia MIT, sin descripcion, sin arquitectura declarada, sin ejemplos de uso y sin resultados de evaluacion. El repositorio registra 0 descargas y 1 like, y no tiene pipeline de inferencia asignado.
 
 Por el momento no es posible determinar que problema resuelve el modelo, ni su tamano, ni su arquitectura, ni sus datos de entrenamiento. No hay pesos publicados visibles, ni ficheros de configuracion documentados, ni referencias a un paper o a un repositorio de codigo asociado. Tampoco se ha localizado informacion relevante en la busqueda web: los resultados obtenidos corresponden a directorios genericos de modelos (PromptShotAI, Local AI Zone, AIModelsIndex, OpenModelDB) y a un articulo academico sobre gestion de claves criptograficas (SSGK) que no guarda relacion con este repositorio.
 
@@ -43,7 +43,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: no se indica el volumen de 
 - Integracion en produccion: desaconsejada, ya que no se puede verificar el comportamiento del modelo ni su licencia efectiva sobre los pesos.
 - Ajuste fino sobre dominio especifico: no evaluable, al desconocerse la arquitectura y el formato de pesos.
 - Despliegue en servidor de inferencia (vLLM, TGI, llama.cpp): no aplicable, al no existir formato de pesos declarado.
-- Uso educativo o experimental: posible unicamente como ejemplo de repositorio vacio en HuggingFace, sin valor tecnico adicional.
+- Uso educativo o experimental: posible unicamente como ejemplo de repositorio vacio en Hugging Face, sin valor tecnico adicional.
 
 ## Benchmarks y rendimiento
 
@@ -75,7 +75,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ssgk4422/Ssgk
+- Repositorio en Hugging Face: https://huggingface.co/ssgk4422/Ssgk
 - PromptShotAI, detector de modelos de imagen (resultado de busqueda no relacionado): https://promptshotai.com/tools/ai-model-detector
 - Local AI Zone, directorio de modelos GGUF (resultado de busqueda no relacionado): https://local-ai-zone.github.io/
 - AIModelsIndex, indice comparativo de modelos (resultado de busqueda no relacionado): https://aimodelsindex.com/

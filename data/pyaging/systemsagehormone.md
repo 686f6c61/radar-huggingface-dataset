@@ -46,7 +46,7 @@ El entrenamiento se realizó con datos de metilación de sangre completa de huma
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El artículo original (Sehgal et al., 2025) reporta métricas de rendimiento para los 11 relojes de Systems Age, pero esos datos no se incluyen en la model card de HuggingFace. Se recomienda consultar la publicación para obtener valores de correlación, error absoluto medio y validación en cohortes independientes.
+No se han publicado resultados de benchmarks en la información disponible. El artículo original (Sehgal et al., 2025) reporta métricas de rendimiento para los 11 relojes de Systems Age, pero esos datos no se incluyen en la model card de Hugging Face. Se recomienda consultar la publicación para obtener valores de correlación, error absoluto medio y validación en cohortes independientes.
 
 ## Requisitos de hardware
 
@@ -66,7 +66,7 @@ Existen otros relojes epigenéticos ampliamente utilizados, aunque no se dispone
 | Hannum clock | 2013 | Regresión elastic net | Sangre | No especificada | Scripts en línea |
 | PhenoAge | 2018 | Regresión elastic net sobre CpGs | Sangre | No especificada | Scripts en línea |
 | GrimAge | 2019 | Regresión sobre marcadores de mortalidad | Sangre | No especificada | Scripts en línea |
-| systemsagehormone | 2025 | PCA + elastic net | Sangre completa | BSD-3-Clause | HuggingFace / pyaging |
+| systemsagehormone | 2025 | PCA + elastic net | Sangre completa | BSD-3-Clause | Hugging Face / pyaging |
 
 A diferencia de los relojes clásicos, `systemsagehormone` se centra específicamente en el sistema endocrino y forma parte de un conjunto más amplio de relojes de sistemas. La licencia BSD-3-Clause es más permisiva que las de muchos relojes anteriores, que suelen tener restricciones de uso académico.
 
@@ -82,6 +82,6 @@ A diferencia de los relojes clásicos, `systemsagehormone` se centra específica
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pyaging/systemsagehormone
+- Repositorio en Hugging Face: https://huggingface.co/pyaging/systemsagehormone
 - Documentación de pyaging (Clock Catalogue): https://pyaging.readthedocs.io
 - Artículo original (DOI): https://doi.org/10.1038/s43587-025-00958-3

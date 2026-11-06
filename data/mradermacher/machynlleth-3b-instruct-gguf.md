@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Machynlleth-3B-Instruct-GGUF es la version cuantizada en formato GGUF del modelo Machynlleth-3B-Instruct, publicado por el usuario mradermacher en HuggingFace. Se trata de una conversion estatica de los pesos originales del modelo base desarrollado por jonpojonpo, con un total de 2.670.113.280 parametros segun los datos de safetensors. El repositorio contiene 11 variantes de cuantizacion distintas, desde Q2_K hasta Q8_0, ademas de una version en x-f16.
+Machynlleth-3B-Instruct-GGUF es la version cuantizada en formato GGUF del modelo Machynlleth-3B-Instruct, publicado por el usuario mradermacher en Hugging Face. Se trata de una conversion estatica de los pesos originales del modelo base desarrollado por jonpojonpo, con un total de 2.670.113.280 parametros segun los datos de safetensors. El repositorio contiene 11 variantes de cuantizacion distintas, desde Q2_K hasta Q8_0, ademas de una version en x-f16.
 
-El modelo se presenta como un modelo conversacional (etiqueta "conversational" en HuggingFace) orientado a instrucciones, con un tamano de aproximadamente 2,7 mil millones de parametros, lo que lo situa en la categoria de modelos pequenos desplegables en hardware de consumo. La fecha de creacion del repositorio es el 5 de noviembre de 2026, con una actualizacion posterior el mismo dia.
+El modelo se presenta como un modelo conversacional (etiqueta "conversational" en Hugging Face) orientado a instrucciones, con un tamano de aproximadamente 2,7 mil millones de parametros, lo que lo situa en la categoria de modelos pequenos desplegables en hardware de consumo. La fecha de creacion del repositorio es el 5 de noviembre de 2026, con una actualizacion posterior el mismo dia.
 
 La relevancia de esta ficha radica en que el modelo original no dispone de model card publica con detalles de arquitectura, licencia o datos de entrenamiento; la informacion disponible se limita a los metadatos de la conversion GGUF. El interes principal es la disponibilidad de cuantizaciones estaticas listas para usar con llama.cpp y herramientas compatibles, lo que facilita su despliegue local.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha radica en que el modelo original no dispone de model
 
 No se dispone de informacion sobre la arquitectura del modelo original Machynlleth-3B-Instruct. Por el tamano (2,67B parametros) y la nomenclatura "Instruct", se trata presumiblemente de un transformer decoder-only ajustado para seguir instrucciones, pero no hay datos publicados en la informacion disponible que confirmen la arquitectura exacta, el numero de capas, la dimension del modelo o el mecanismo de atencion.
 
-Tampoco se dispone de datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado. La unica informacion tecnica verificable proviene de los metadatos de la conversion GGUF, que indican el uso de `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que la conversion se realizo a partir de pesos en formato HuggingFace.
+Tampoco se dispone de datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado. La unica informacion tecnica verificable proviene de los metadatos de la conversion GGUF, que indican el uso de `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que la conversion se realizo a partir de pesos en formato Hugging Face.
 
 ## Capacidades
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Machynlleth-3B-Instruct-GGUF | 2,67B | no disponible | no disponible | GGUF | HuggingFace |
-| Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, Ollama |
-| Llama-3.2-3B-Instruct | 3,21B | 131.072 tokens | Llama 3.2 Community License | safetensors, GGUF | HuggingFace, Ollama |
-| Phi-3.5-mini-instruct | 3,82B | 131.072 tokens | MIT | safetensors, GGUF | HuggingFace, Ollama |
+| Machynlleth-3B-Instruct-GGUF | 2,67B | no disponible | no disponible | GGUF | Hugging Face |
+| Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
+| Llama-3.2-3B-Instruct | 3,21B | 131.072 tokens | Llama 3.2 Community License | safetensors, GGUF | Hugging Face, Ollama |
+| Phi-3.5-mini-instruct | 3,82B | 131.072 tokens | MIT | safetensors, GGUF | Hugging Face, Ollama |
 
 La comparativa se basa en modelos de tamano similar ampliamente documentados. Machynlleth-3B-Instruct carece de informacion publica sobre contexto, licencia y rendimiento, lo que dificulta una comparacion rigurosa frente a alternativas con documentacion completa.
 

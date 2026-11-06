@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "MnasirAK99/smai-a4-mlp",
+  "slug": "mnasirak99-smai-a4-mlp",
+  "author": "MnasirAK99",
+  "url": "https://huggingface.co/MnasirAK99/smai-a4-mlp",
+  "created_at": "2026-11-03T16:38:13.000Z",
+  "updated_at": "2026-11-03T17:08:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "cifar10",
+    "mlp",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3239086,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MnasirAK99/smai-a4-mlp · Hugging Face",
+      "url": "https://huggingface.co/MnasirAK99/smai-a4-mlp",
+      "snippet": "CIFAR-10 classifier trained for SMAI Assignment 4 (clean labels, p = 0). Architecture: 3072-64-32-10, ReLU hidden layers, linear output, cross-entropy loss. Preprocessing: flatten each 32x32x3 image to 3072 values, divide by 255, then standardise each of the 3072 columns as (x - mu) / sd, using the ..."
+    },
+    {
+      "title": "MnasirAK99/smai-a4-ioc · Hugging Face",
+      "url": "https://huggingface.co/MnasirAK99/smai-a4-ioc",
+      "snippet": "CIFAR-10 ioc nn classifier trained for SMAI Assignment 4 (clean labels, p = 0). Architecture: 3072-64-32-10, ELU hidden layers, weights of layers 2 and 3 constrained to be non-negative, linear output, cross-entropy loss. Preprocessing: flatten each 32x32x3 image to 3072 values, divide by 255, then ..."
+    }
+  ]
+}

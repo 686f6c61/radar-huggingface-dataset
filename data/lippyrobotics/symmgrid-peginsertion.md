@@ -69,7 +69,7 @@ Los únicos modelos comparables identificados en la información disponible son 
 
 | Modelo | Framework | Tarea | Política | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| SymmGrid-PegInsertion | SymmGrid / SERL | Peg insertion real | Soft Actor-Critic | Apache 2.0 | HuggingFace (LippyRobotics) | no disponible |
+| SymmGrid-PegInsertion | SymmGrid / SERL | Peg insertion real | Soft Actor-Critic | Apache 2.0 | Hugging Face (LippyRobotics) | no disponible |
 | SERL Peg Insertion baseline | SERL | Peg insertion real | Soft Actor-Critic | no disponible | Checkpoint liberado aparte | no disponible |
 | LatticeSym Rx | LatticeSym / SERL | Peg insertion real | Soft Actor-Critic | no disponible | Checkpoint liberado aparte | no disponible |
 | LatticeSym Ry | LatticeSym / SERL | Peg insertion real | Soft Actor-Critic | no disponible | Checkpoint liberado aparte | no disponible |
@@ -93,9 +93,9 @@ No se dispone de datos de parámetros, contexto ni métricas comparativas para n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LippyRobotics/SymmGrid-PegInsertion
+- Modelo en Hugging Face: https://huggingface.co/LippyRobotics/SymmGrid-PegInsertion
 - Artículo (arXiv): https://arxiv.org/abs/2607.26985
-- Página del artículo en HuggingFace Papers: https://huggingface.co/papers/2607.26985
+- Página del artículo en Hugging Face Papers: https://huggingface.co/papers/2607.26985
 - Framework SERL: https://github.com/rail-berkeley/serl
 - Sitio del proyecto SymmGrid: https://symmgrid-robot.github.io
 - Cita del artículo: Everett, G., Gunter, B., Vander Stelt, R., Ruiz-Martinez, C., Hull, B. y Rojas, J. (2026). "SymmGrid: Super-Scaling On-Robot Learning with Parallelized Symmetries and Egocentric-Exocentric Visual Perception". arXiv:2607.26985, cs.RO.

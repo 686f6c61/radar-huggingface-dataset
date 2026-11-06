@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks ni de fichas tecnicas completas de modelos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Naofan/Broken-Tutu-24B-Transgression-v2.0-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Naofan/Broken-Tutu-24B-Transgression-v2.0-i1-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Broken-Tutu-24B-Transgression-v2.0
 - Cuantizaciones i1 (mradermacher): https://huggingface.co/mradermacher/Broken-Tutu-24B-Transgression-v2.0-i1-GGUF
 - Cuantizaciones estaticas (mradermacher): https://huggingface.co/mradermacher/Broken-Tutu-24B-Transgression-v2.0-GGUF

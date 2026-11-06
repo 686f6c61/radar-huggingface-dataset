@@ -22,7 +22,7 @@ Su relevancia actual esta en cubrir 23 idiomas (ingles y 22 lenguas programadas 
 | Modelo base | bodhan-ai/indic-ocr (IITM BODHAN-AI Foundation y AI4Bharat, con apoyo del Ministerio de Educacion de India) |
 | Pipeline declarado | image-to-text |
 | Tamano del repositorio | 0,4 GB |
-| Fecha de publicacion | 27 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 27 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -94,8 +94,8 @@ La verificacion de exactitud se realizo sobre segmentos de un informativo en odi
 
 | Modelo | Parametros | Contexto | Formatos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| adidsh/indic-ocr-int8-onnx (esta ficha) | ~33 M + ~0,8 B en dos etapas | No disponible | ONNX INT8, GGUF (Q8_0, Q5_K_M, F16) | Indic Open Model License v1.0, con gating | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| bodhan-ai/indic-ocr (upstream) | ~33 M + ~0,8 B en dos etapas | No disponible | Pesos originales en FP32 | Indic Open Model License v1.0, con gating | HuggingFace |
+| adidsh/indic-ocr-int8-onnx (esta ficha) | ~33 M + ~0,8 B en dos etapas | No disponible | ONNX INT8, GGUF (Q8_0, Q5_K_M, F16) | Indic Open Model License v1.0, con gating | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| bodhan-ai/indic-ocr (upstream) | ~33 M + ~0,8 B en dos etapas | No disponible | Pesos originales en FP32 | Indic Open Model License v1.0, con gating | Hugging Face |
 | Otras alternativas de OCR multilingue (PaddleOCR, Surya, GOT-OCR y similares) | No disponibles en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de resultados de benchmarks comparativos entre esta derivada y otros sistemas de OCR en la informacion proporcionada; las unicas cifras comparativas son las de cuantizacion frente al modelo upstream en FP32.
@@ -107,7 +107,7 @@ No se dispone de resultados de benchmarks comparativos entre esta derivada y otr
 - Las mediciones de exactitud declaradas (100 % de coincidencia exacta, menos de 0,1 % de CER) provienen de segmentos de un informativo en odia; no son extrapolables a todas las lenguas, tipografias ni dominios del conjunto de 23 idiomas.
 - La unica plataforma verificada es x86_64 con AVX2 en CPU. No se publican datos para ARM, GPU, NPU ni aceleradores moviles, pese a la orientacion edge del proyecto.
 - Cobertura linguistica limitada a ingles y 22 lenguas programadas de la India; no se declara soporte de castellano ni de otras lenguas europeas.
-- Licencia restrictiva: Indic Open Model License v1.0 con acceso condicionado a solicitud y aceptacion previa de terminos, y atribucion obligatoria a Bodhan AI / AI4Bharat. Verifica las condiciones antes de cualquier uso comercial o de redistribucion, ya que el campo `license` de HuggingFace figura como `other`.
+- Licencia restrictiva: Indic Open Model License v1.0 con acceso condicionado a solicitud y aceptacion previa de terminos, y atribucion obligatoria a Bodhan AI / AI4Bharat. Verifica las condiciones antes de cualquier uso comercial o de redistribucion, ya que el campo `license` de Hugging Face figura como `other`.
 - No se publica la longitud de contexto soportada ni el numero de tokens de imagen, lo que dificulta planificar el procesamiento de documentos muy densos o de paginas de gran resolucion.
 - El repositorio presenta 0 descargas y 0 likes en el momento de la consulta, lo que implica una validacion practica por parte de la comunidad practicamente nula.
 - El autor de la derivada es un contribuidor comunitario no vinculado a la organizacion original, de modo que no hay garantia de mantenimiento ni de actualizaciones frente a nuevas versiones del upstream.
@@ -115,7 +115,7 @@ No se dispone de resultados de benchmarks comparativos entre esta derivada y otr
 
 ## Enlaces
 
-- [adidsh/indic-ocr-int8-onnx en HuggingFace](https://huggingface.co/adidsh/indic-ocr-int8-onnx)
+- [adidsh/indic-ocr-int8-onnx en Hugging Face](https://huggingface.co/adidsh/indic-ocr-int8-onnx)
 - [Modelo base: bodhan-ai/indic-ocr](https://huggingface.co/bodhan-ai/indic-ocr)
 - [Indic Open Model License v1.0 (texto completo)](https://github.com/Bodhan-AI/bodhan-model-info/blob/main/licenses/indic-open-model-license/v1/Indic_Open_Model_License.md)
 - [Indic Open Model License v1.0 (version simplificada)](https://github.com/Bodhan-AI/bodhan-model-info/blob/main/licenses/indic-open-model-license/v1/Indic_Open_Model_License_Deed.md)

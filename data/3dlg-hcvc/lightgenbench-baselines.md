@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LightGenBench-baselines (este repo) | Conjunto de 4 checkpoints de generacion de emision 3D | no disponible | no disponible | other, por carpeta | HuggingFace, 0 descargas |
+| LightGenBench-baselines (este repo) | Conjunto de 4 checkpoints de generacion de emision 3D | no disponible | no disponible | other, por carpeta | Hugging Face, 0 descargas |
 | TEXGen-Emission | Linea base sobre TEXGen | no disponible | no disponible | definida en su carpeta | Incluida en este repo |
 | TRELLIS.2-Emission | Linea base sobre TRELLIS.2 | no disponible | no disponible | definida en su carpeta | Incluida en este repo |
 | Hunyuan3D-Emission | Linea base sobre Hunyuan3D | no disponible | no disponible | definida en su carpeta | Incluida en este repo |
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de especificaciones tecnicas de los mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/3dlg-hcvc/LightgenBench-baselines
+- Repositorio en Hugging Face: https://huggingface.co/3dlg-hcvc/LightgenBench-baselines
 - Dataset asociado: https://huggingface.co/datasets/3dlg-hcvc/LightgenBench
 - Codigo del benchmark: https://github.com/3dlg-hcvc/lightgenbench
 - TEXGen-Emission: https://github.com/dongchen-yang/TEXGen-Emission

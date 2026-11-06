@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DanieleMarcoaldi/mistral-lora-adapter es un adaptador LoRA publicado en HuggingFace y construido sobre el modelo base mistralai/Mistral-Large-Instruct-2411. Se distribuye con la librería PEFT (version 0.17.1 registrada en el repositorio) y está etiquetado como un ajuste supervisado (SFT) mediante TRL y Transformers. El repositorio ocupa 4,5 GB y contiene pesos en formato safetensors; no incluye pesos completos del modelo base, sino únicamente los del adaptador.
+DanieleMarcoaldi/mistral-lora-adapter es un adaptador LoRA publicado en Hugging Face y construido sobre el modelo base mistralai/Mistral-Large-Instruct-2411. Se distribuye con la librería PEFT (version 0.17.1 registrada en el repositorio) y está etiquetado como un ajuste supervisado (SFT) mediante TRL y Transformers. El repositorio ocupa 4,5 GB y contiene pesos en formato safetensors; no incluye pesos completos del modelo base, sino únicamente los del adaptador.
 
 El interés de esta publicación es limitado pero relevante como caso de estudio: se trata de un adaptador de bajo rango sobre un modelo de gran tamaño (la familia Mistral Large, documentada públicamente con alrededor de 123 000 millones de parámetros), un escenario en el que el ajuste completo resulta prohibitivo en términos de VRAM y en el que PEFT permite reutilizar un único despliegue del modelo base para servir múltiples adaptadores. El repositorio no registra descargas ni "likes" en el momento de redactar esta ficha (0 y 0 respectivamente), lo que indica que no ha sido validado por la comunidad.
 

@@ -79,9 +79,9 @@ La comparativa directa con otros modelos text-to-SQL especializados no esta disp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aijadugar/qwen2.5-0.5b-sql-qlora
-- Repositorio HuggingFace (variante LoRA sin fusionar): https://huggingface.co/aijadugar/qwen2.5-0.5b-sql-lora
-- Coleccion Qwen2.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen25
+- Repositorio Hugging Face: https://huggingface.co/aijadugar/qwen2.5-0.5b-sql-qlora
+- Repositorio Hugging Face (variante LoRA sin fusionar): https://huggingface.co/aijadugar/qwen2.5-0.5b-sql-lora
+- Coleccion Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25
 - Repositorio GitHub de Qwen2.5: https://github.com/mx4ai/qwen2.5
 - Modelo base en ModelScope: https://www.modelscope.cn/models/qwen/Qwen2.5-0.5B-Instruct
 - Modelo Qwen2.5-0.5B en Ollama: https://ollama.com/library/qwen2.5:0.5b

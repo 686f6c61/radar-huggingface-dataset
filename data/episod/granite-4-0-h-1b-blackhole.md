@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/episod/granite-4.0-h-1b-blackhole
+- Modelo en Hugging Face: https://huggingface.co/episod/granite-4.0-h-1b-blackhole
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-h-1b (revision `d18cca4c121edb87d022116d281ce212c9136f57`)
 - Repositorio del paquete de receta (mismo propietario): `granite-4.0-h-1b-blackhole`, version 0.3.0, con ficheros de evidencia
 - Repositorio tt-orchard (runtime y logs): `docs/run-logs/2026-10-30-granite-thin-bundle.md`

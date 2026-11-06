@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shabieh2/1026_tags_tree_full` es un ajuste fino (fine-tuning) del modelo base `unsloth/Muse-Glimmer-30B`, publicado por el usuario shabieh2 en HuggingFace. Se trata de un modelo de generacion de texto de 30.000 millones de parametros, entrenado con la libreria Unsloth, que segun el autor permite un entrenamiento 2x mas rapido. El repositorio tiene un tamano de 0,9 GB, lo que sugiere que los pesos se distribuyen en formato safetensors comprimido o que se trata de un adaptador, aunque este extremo no se confirma en la informacion disponible.
+`shabieh2/1026_tags_tree_full` es un ajuste fino (fine-tuning) del modelo base `unsloth/Muse-Glimmer-30B`, publicado por el usuario shabieh2 en Hugging Face. Se trata de un modelo de generacion de texto de 30.000 millones de parametros, entrenado con la libreria Unsloth, que segun el autor permite un entrenamiento 2x mas rapido. El repositorio tiene un tamano de 0,9 GB, lo que sugiere que los pesos se distribuyen en formato safetensors comprimido o que se trata de un adaptador, aunque este extremo no se confirma en la informacion disponible.
 
 El modelo se distribuye bajo licencia Apache 2.0 y esta etiquetado unicamente para el idioma ingles. La model card es extremadamente escueta: no incluye informacion sobre arquitectura, datos de entrenamiento, benchmarks ni casos de uso previstos. La unica informacion tecnica relevante es el modelo base del que deriva y la herramienta de entrenamiento empleada.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| shabieh2/1026_tags_tree_full | 30B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Fine-tuning sin documentacion |
-| unsloth/Muse-Glimmer-30B | 30B | no disponible | no disponible | HuggingFace (modelo base) | Modelo original del que deriva |
+| shabieh2/1026_tags_tree_full | 30B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Fine-tuning sin documentacion |
+| unsloth/Muse-Glimmer-30B | 30B | no disponible | no disponible | Hugging Face (modelo base) | Modelo original del que deriva |
 | No disponible | - | - | - | - | No se identifican alternativas comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -77,6 +77,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: shabieh2/1026_tags_tree_full](https://huggingface.co/shabieh2/1026_tags_tree_full)
+- [Hugging Face: shabieh2/1026_tags_tree_full](https://huggingface.co/shabieh2/1026_tags_tree_full)
 - [Modelo base: unsloth/Muse-Glimmer-30B](https://huggingface.co/unsloth/Muse-Glimmer-30B)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)

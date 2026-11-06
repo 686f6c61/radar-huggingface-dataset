@@ -6,7 +6,7 @@ Pixel Art GWM es un modelo de mundo (world model) compacto y condicionado por ac
 
 El modelo se distribuye como dos componentes separados en PyTorch: un tokenizador (`models/tokenizer.pt`) y un modelo de dinámica (`models/dynamics.pt`), con dos checkpoints publicados (`dyn_v3_26k` como versión más reciente y `dyn_v2_10k` como versión anterior). Con 4,4 millones de parámetros, es un modelo deliberadamente pequeño que se ejecuta en local, incluso en CPU, y que está pensado para investigación en model-based RL, generación de datos sintéticos y prototipado de mecánicas de juego.
 
-Su relevancia actual es la de servir como banco de pruebas accesible para la línea de investigación de world models aplicados a videojuegos, un área dominada por sistemas propietarios y de gran escala. La model card indica licencia MIT y enlaza el código original y el dataset utilizado, aunque el repositorio de HuggingFace no registra descargas ni likes y su tamaño aparece redondeado a 0,0 GB. La fecha de creación registrada en el repositorio (2026-09-21) es anómala y conviene verificarla antes de citar el modelo.
+Su relevancia actual es la de servir como banco de pruebas accesible para la línea de investigación de world models aplicados a videojuegos, un área dominada por sistemas propietarios y de gran escala. La model card indica licencia MIT y enlaza el código original y el dataset utilizado, aunque el repositorio de Hugging Face no registra descargas ni likes y su tamaño aparece redondeado a 0,0 GB. La fecha de creación registrada en el repositorio (2026-09-21) es anómala y conviene verificarla antes de citar el modelo.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Su relevancia actual es la de servir como banco de pruebas accesible para la lí
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible (se distribuyen checkpoints PyTorch en precision original) |
 | Idiomas soportados | No aplica / no disponible (modelo de dinámica visual, no de texto) |
-| Licencia | MIT segun la model card; el campo de licencia del repositorio de HuggingFace figura como no disponible |
+| Licencia | MIT segun la model card; el campo de licencia del repositorio de Hugging Face figura como no disponible |
 | Formato de pesos | PyTorch (`.pt`): `models/tokenizer.pt`, `models/dynamics.pt` |
 
 ## Arquitectura y entrenamiento
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Compatibilidad con GPU de consumo: sí, cabe holgadamente en cualquier GPU de consumo con unos pocos GB de VRAM; no requiere A100 ni H100.
 - Opciones de despliegue: script oficial `python play_local.py --tok models/tokenizer.pt --dyn models/dynamics.pt` sobre PyTorch. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y al no ser un modelo de lenguaje no existen pesos GGUF.
 - Latencia y throughput: no disponibles. Al ser un modelo de 4,4 M de parámetros, la latencia vendrá dominada por el coste de decodificación del tokenizador visual y por el bucle de rollout, no por el modelo de dinámica.
-- Almacenamiento: el repositorio figura con tamaño redondeado de 0,0 GB en HuggingFace, dato poco fiable para dimensionar el disco; conviene comprobar el tamaño real de los checkpoints antes de desplegar.
+- Almacenamiento: el repositorio figura con tamaño redondeado de 0,0 GB en Hugging Face, dato poco fiable para dimensionar el disco; conviene comprobar el tamaño real de los checkpoints antes de desplegar.
 
 ## Comparativa con modelos similares
 
@@ -70,7 +70,7 @@ No hay datos comparativos cuantitativos en la información proporcionada (ni par
 | Longitud de contexto | No disponible | No disponible |
 | Rendimiento en benchmarks | No disponible | No disponible |
 | Licencia | MIT segun model card | No disponible |
-| Disponibilidad de pesos | Checkpoints `.pt` en HuggingFace y código en GitHub | No disponible |
+| Disponibilidad de pesos | Checkpoints `.pt` en Hugging Face y código en GitHub | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -78,14 +78,14 @@ No hay datos comparativos cuantitativos en la información proporcionada (ni par
 - Riesgo de deriva en rollouts largos: los modelos de dinámica visual acumulan error al encadenar predicciones; la model card no reporta métricas de estabilidad multi-paso.
 - Ausencia total de documentación técnica: se desconoce el tipo de red del modelo de dinámica, el espacio latente, la estrategia de tokenización, el volumen de datos de entrenamiento y el régimen de entrenamiento.
 - Riesgo de alucinación en sentido amplio: el modelo puede generar transiciones visualmente plausibles pero físicamente incorrectas respecto al comportamiento real del juego, lo que invalida su uso como sustituto fiable del motor en producción.
-- Licencia: la model card declara MIT, pero el campo de licencia del repositorio de HuggingFace aparece como no disponible; conviene confirmar la licencia aplicable al tokenizador, al modelo de dinámica, al dataset y al código del repositorio de GitHub antes de un uso comercial.
+- Licencia: la model card declara MIT, pero el campo de licencia del repositorio de Hugging Face aparece como no disponible; conviene confirmar la licencia aplicable al tokenizador, al modelo de dinámica, al dataset y al código del repositorio de GitHub antes de un uso comercial.
 - Idiomas: al no ser un modelo de texto, no procede evaluación multilingüe; cualquier expectativa de generación de lenguaje queda fuera de su alcance.
 - Señales de madurez del repositorio: 0 descargas, 0 likes, tamaño redondeado a 0,0 GB y fecha de creación registrada como 2026-09-21, lo que sugiere un artefacto reciente, poco validado por la comunidad o con metadatos inconsistentes.
 - No hay soporte documentado para cuantización ni para runtimes de inferencia optimizados, por lo que la integración en producción requeriría trabajo adicional de ingeniería.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aquinlabs/pixel-art-gwm
+- Modelo en Hugging Face: https://huggingface.co/Aquinlabs/pixel-art-gwm
 - Dataset "Small Worlds Pixel Platformer": https://huggingface.co/datasets/Aquinlabs/small-worlds-pixel-platformer
 - Código original en GitHub: https://github.com/sachin1705s/small-worlds
 - Paper, blog o demo oficiales: no disponibles.

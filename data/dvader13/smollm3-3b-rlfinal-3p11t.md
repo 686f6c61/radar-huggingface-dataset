@@ -72,7 +72,7 @@ No hay comparativa directa posible, ya que este checkpoint no es un modelo de in
 
 ## Enlaces
 
-- [Repositorio HuggingFace del checkpoint](https://huggingface.co/dvader13/smollm3-3b-rlfinal-3p11t)
+- [Repositorio Hugging Face del checkpoint](https://huggingface.co/dvader13/smollm3-3b-rlfinal-3p11t)
 - [SmolLM3-3B oficial](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)
 - [Repositorio GitHub de SmolLM](https://github.com/huggingface/smollm)
 - [Documentación de SmolLM3 en Transformers](https://huggingface.co/docs/transformers/en/model_doc/smollm3)

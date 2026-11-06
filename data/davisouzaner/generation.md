@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`davisouzaner/generation` es un repositorio experimental alojado en HuggingFace que contiene una implementacion propia de una arquitectura Perceiver orientada a tareas de generacion. Lo publica el usuario davisouzaner bajo licencia Apache 2.0 y esta etiquetado con `pytorch`, `perceiver` y `generation`. No es un modelo entrenado ni un checkpoint listo para produccion: la propia model card lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`davisouzaner/generation` es un repositorio experimental alojado en Hugging Face que contiene una implementacion propia de una arquitectura Perceiver orientada a tareas de generacion. Lo publica el usuario davisouzaner bajo licencia Apache 2.0 y esta etiquetado con `pytorch`, `perceiver` y `generation`. No es un modelo entrenado ni un checkpoint listo para produccion: la propia model card lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El peso publicado, `model.safetensors`, es un checkpoint de inicializacion valido para pruebas de humo (smoke tests), con un total de 24.832 parametros, lo que lo situa en una escala "tiny" deliberadamente manejable. El repositorio incluye ademas `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto y `eval.py` como artefacto principal ejecutable.
 
@@ -85,10 +85,10 @@ No disponible. El repositorio no publica benchmarks, no define una tarea concret
 - No se documentan longitud de contexto, estrategia de tokenizacion ni datos de entrenamiento.
 - Riesgo de alucinacion: no evaluable en un modelo sin entrenar; en cualquier caso, un checkpoint de inicializacion produciria salidas sin valor semantico.
 - Licencia: Apache 2.0 permite uso comercial del codigo y los pesos publicados, pero la model card advierte de que deben revisarse por separado los terminos de los datos de origen si se usan conjuntos de datos externos.
-- Implementacion personalizada: no es compatible de forma directa con las APIs automaticas de HuggingFace Transformers sin escribir un adaptador.
+- Implementacion personalizada: no es compatible de forma directa con las APIs automaticas de Hugging Face Transformers sin escribir un adaptador.
 - Uso en produccion: no recomendado en su estado actual.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davisouzaner/generation
+- Modelo en Hugging Face: https://huggingface.co/davisouzaner/generation
 - La busqueda web realizada no ha devuelto enlaces relevantes sobre este modelo (los resultados correspondian a herramientas de busqueda visual de Bing, sin relacion con el repositorio).

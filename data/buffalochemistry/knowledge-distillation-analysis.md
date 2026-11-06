@@ -65,7 +65,7 @@ No disponible. No existe una categoria de modelos comparable porque este reposit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/buffalochemistry/knowledge-distillation-analysis
+- Repositorio en Hugging Face: https://huggingface.co/buffalochemistry/knowledge-distillation-analysis
 - Articulo de Wikipedia sobre destilacion de conocimiento: https://en.wikipedia.org/wiki/Knowledge_distillation
 - Survey completo en arXiv: https://arxiv.org/abs/2503.12067
 - Survey en ScienceDirect: https://www.sciencedirect.com/science/article/pii/S2666827024000811

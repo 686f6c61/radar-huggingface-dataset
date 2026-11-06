@@ -63,10 +63,10 @@ No se dispone de modelos directamente comparables por ser un fine-tuning especif
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DNE-ElecDeb-Qwen (este) | 7.6B (4-bit) | 32K | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct | 7.6B | 32K | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 License | HuggingFace |
-| Mistral 7B Instruct | 7.3B | 32K | Apache 2.0 | HuggingFace |
+| DNE-ElecDeb-Qwen (este) | 7.6B (4-bit) | 32K | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct | 7.6B | 32K | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 License | Hugging Face |
+| Mistral 7B Instruct | 7.3B | 32K | Apache 2.0 | Hugging Face |
 
 La comparativa directa no es posible sin benchmarks propios del fine-tuning.
 
@@ -81,7 +81,7 @@ La comparativa directa no es posible sin benchmarks propios del fine-tuning.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stemonea/DNE-ElecDeb-Qwen
+- Modelo en Hugging Face: https://huggingface.co/stemonea/DNE-ElecDeb-Qwen
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Pagina oficial de Qwen: https://qwen.ai/home
 - Documentacion de Qwen (Alibaba Cloud): https://www.alibabacloud.com/en/solutions/generative-ai/qwen

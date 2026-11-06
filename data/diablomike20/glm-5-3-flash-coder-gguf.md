@@ -99,6 +99,6 @@ No se dispone de datos comparativos de benchmarks frente a otras alternativas en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/diablomike20/GLM-5.3-Flash-Coder-GGUF
+- Hugging Face: https://huggingface.co/diablomike20/GLM-5.3-Flash-Coder-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Repositorio del recetario, máscara y harness de evaluación: https://github.com/lapadatbogdan/GLM-5.3-Flash-Coder-RCO-152E

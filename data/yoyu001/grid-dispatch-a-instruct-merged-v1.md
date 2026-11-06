@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| grid-dispatch-A-instruct-merged-v1 | 4,02 B | no disponible | SFT especializado en notas de despacho en chino | Apache 2.0 | HuggingFace, safetensors |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4 B | no disponible | Modelo generalista de instrucciones | Apache 2.0 | HuggingFace |
-| Adaptador yoyu001/grid-dispatch-A-instruct-qlora-v1 | adaptadores LoRA sobre 4 B | no disponible | Mismo dominio, formato adaptador | Apache 2.0 | HuggingFace |
+| grid-dispatch-A-instruct-merged-v1 | 4,02 B | no disponible | SFT especializado en notas de despacho en chino | Apache 2.0 | Hugging Face, safetensors |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4 B | no disponible | Modelo generalista de instrucciones | Apache 2.0 | Hugging Face |
+| Adaptador yoyu001/grid-dispatch-A-instruct-qlora-v1 | adaptadores LoRA sobre 4 B | no disponible | Mismo dominio, formato adaptador | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoria en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yoyu001/grid-dispatch-A-instruct-merged-v1
+- Modelo en Hugging Face: https://huggingface.co/yoyu001/grid-dispatch-A-instruct-merged-v1
 - Adaptador QLoRA: https://huggingface.co/yoyu001/grid-dispatch-A-instruct-qlora-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/yoyu001/grid-dispatch-notes-zh
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

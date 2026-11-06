@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spark-X2.6-4B-MLX-4bit (este) | 4,11 B | 1.048.576 | 4 bits MLX, 2,32 GB | Apache-2.0 | HuggingFace, librería `mlx` |
-| Spark-X2.6-4B-MLX-6bit | 4,11 B (mismo base) | 1.048.576 | 6 bits MLX, 3,34 GB | Apache-2.0 | HuggingFace, librería `mlx` |
-| Spark-X2.6-4B-MLX-8bit | 4,11 B (mismo base) | 1.048.576 | 8 bits MLX, 4,37 GB | Apache-2.0 | HuggingFace, librería `mlx` |
-| XHToken/Spark-X2.6-4B (base) | 4,11 B | 1.048.576 | Pesos originales | Apache-2.0 | HuggingFace |
+| Spark-X2.6-4B-MLX-4bit (este) | 4,11 B | 1.048.576 | 4 bits MLX, 2,32 GB | Apache-2.0 | Hugging Face, librería `mlx` |
+| Spark-X2.6-4B-MLX-6bit | 4,11 B (mismo base) | 1.048.576 | 6 bits MLX, 3,34 GB | Apache-2.0 | Hugging Face, librería `mlx` |
+| Spark-X2.6-4B-MLX-8bit | 4,11 B (mismo base) | 1.048.576 | 8 bits MLX, 4,37 GB | Apache-2.0 | Hugging Face, librería `mlx` |
+| XHToken/Spark-X2.6-4B (base) | 4,11 B | 1.048.576 | Pesos originales | Apache-2.0 | Hugging Face |
 | Familia Spark-X2.5 (4B y 1,7B) | No disponible | No disponible | No disponible | No disponible | Referenciada en la galería de LocalAI; sin datos técnicos en la información disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de modelos de otras familias (por ejemplo, alternativas densas de ~4 B con contexto largo) en la información proporcionada, por lo que no se establece una comparación de rendimiento con ellas.

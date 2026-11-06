@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| micro-sam `vit_l_histopathology` (este) | ViT-L, total no disponible | no aplica | no disponible | pesos: no disponible; codigo micro-sam: MIT | HuggingFace (mirror) y ownCloud original |
+| micro-sam `vit_l_histopathology` (este) | ViT-L, total no disponible | no aplica | no disponible | pesos: no disponible; codigo micro-sam: MIT | Hugging Face (mirror) y ownCloud original |
 | SAM original (ViT-L) | ViT-L, total no disponible | no aplica | no disponible en esta ficha | no disponible en esta ficha | Ampliamente disponible |
-| Otros checkpoints micro-sam (p. ej. `vit_b_*`, `vit_l_*` de otros dominios) | ViT-B / ViT-L | no aplica | no disponible | codigo MIT; pesos segun fuente | HuggingFace / ownCloud |
+| Otros checkpoints micro-sam (p. ej. `vit_b_*`, `vit_l_*` de otros dominios) | ViT-B / ViT-L | no aplica | no disponible | codigo MIT; pesos segun fuente | Hugging Face / ownCloud |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada; la comparativa se limita a arquitectura, licencia y disponibilidad.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amorsi/micro-sam-vit-l-histopathology
+- Hugging Face: https://huggingface.co/amorsi/micro-sam-vit-l-histopathology
 - Repositorio micro-sam: https://github.com/computational-cell-analytics/micro-sam
 - Codigo de referencia de hashes (`util.py`): https://github.com/computational-cell-analytics/micro-sam/blob/master/micro_sam/util.py
 - Documentacion de la API de micro-sam: https://computational-cell-analytics.github.io/micro-sam/micro_sam.html

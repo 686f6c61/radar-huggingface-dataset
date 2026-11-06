@@ -82,10 +82,10 @@ Los unicos datos cuantitativos disponibles son de comportamiento y de verificaci
 
 | Modelo | Parametros | Formato / cuantizacion | Tamano | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (`pottokao/Qwen-Image-2.1-PE-T2I-Heretic-GGUF`) | 8,95 B | GGUF Q4_K_M (token_embd y output en Q6_K) | 5,49 GB | Reescritura de prompts texto a imagen con abliteration | qwen-research, solo no comercial | Publico en HuggingFace, 5524 descargas |
-| `pottokao/Qwen-Image-2.1-PE-T2I-Heretic` (modelo base) | no disponible (presumiblemente 8,95 B) | bf16 | no disponible | Identica, sin cuantizar | qwen-research, solo no comercial | Publico en HuggingFace |
-| `Qwen/Qwen-Image-2.1-PE-T2I` (original) | no disponible | no disponible | no disponible | Identica, con comportamiento de rechazo intacto (98/100) | qwen-research, solo no comercial | Publico en HuggingFace |
-| `pottokao/Qwen-Image-2.1-Text-Encoder-Heretic` | no disponible | GGUF | no disponible | Text encoder para el DiT, tarea distinta | qwen-research, solo no comercial | Publico en HuggingFace |
+| Este modelo (`pottokao/Qwen-Image-2.1-PE-T2I-Heretic-GGUF`) | 8,95 B | GGUF Q4_K_M (token_embd y output en Q6_K) | 5,49 GB | Reescritura de prompts texto a imagen con abliteration | qwen-research, solo no comercial | Publico en Hugging Face, 5524 descargas |
+| `pottokao/Qwen-Image-2.1-PE-T2I-Heretic` (modelo base) | no disponible (presumiblemente 8,95 B) | bf16 | no disponible | Identica, sin cuantizar | qwen-research, solo no comercial | Publico en Hugging Face |
+| `Qwen/Qwen-Image-2.1-PE-T2I` (original) | no disponible | no disponible | no disponible | Identica, con comportamiento de rechazo intacto (98/100) | qwen-research, solo no comercial | Publico en Hugging Face |
+| `pottokao/Qwen-Image-2.1-Text-Encoder-Heretic` | no disponible | GGUF | no disponible | Text encoder para el DiT, tarea distinta | qwen-research, solo no comercial | Publico en Hugging Face |
 
 No se dispone de datos de benchmarks ni de modelos de terceros comparables en la informacion proporcionada, por lo que la comparacion se limita a la propia familia de derivados del mismo autor. La unica ventaja cuantificada de este build frente al Q4_K_M estandar es la retencion de `token_embd` en Q6_K a cambio de 0,25 GB adicionales; el autor no aporta una medicion de calidad que demuestre la mejora, solo el argumento de que no puede ser peor.
 
@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks ni de modelos de terceros comparables en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pottokao/Qwen-Image-2.1-PE-T2I-Heretic-GGUF
+- Modelo en Hugging Face: https://huggingface.co/pottokao/Qwen-Image-2.1-PE-T2I-Heretic-GGUF
 - Modelo base (bf16, sin cuantizar): https://huggingface.co/pottokao/Qwen-Image-2.1-PE-T2I-Heretic
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I
 - Text encoder de la misma familia (tarea distinta): https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic

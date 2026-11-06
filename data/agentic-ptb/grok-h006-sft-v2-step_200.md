@@ -75,6 +75,6 @@ No se puede realizar una comparativa de rendimiento por falta de datos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h006.sft-v2.step_200
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h006.sft-v2.step_200
 - Índice del proyecto AgentPTB (mencionado en la model card): `agentic-ptb/INDEX` (sin URL directa disponible)
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

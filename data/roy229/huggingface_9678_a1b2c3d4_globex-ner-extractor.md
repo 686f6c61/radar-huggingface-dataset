@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Globex NER Extractor es un modelo de reconocimiento de entidades nombradas (NER) publicado en HuggingFace por el usuario Roy229. Según la model card, su propósito es extraer entidades de tipo persona, organización y ubicación a partir de texto no estructurado para su posterior procesamiento downstream. El pipeline declarado es token-classification, lo que indica que se trata de un modelo de etiquetado secuencial a nivel de token.
+Globex NER Extractor es un modelo de reconocimiento de entidades nombradas (NER) publicado en Hugging Face por el usuario Roy229. Según la model card, su propósito es extraer entidades de tipo persona, organización y ubicación a partir de texto no estructurado para su posterior procesamiento downstream. El pipeline declarado es token-classification, lo que indica que se trata de un modelo de etiquetado secuencial a nivel de token.
 
 La ficha pública es extremadamente limitada: no se especifican la arquitectura, el número de parámetros, el idioma de entrenamiento ni la licencia. El modelo fue creado el 15 de agosto de 2026 y no registra descargas ni valoraciones, lo que sugiere que se trata de un artefacto reciente sin validación comunitaria. El tag `region:us` sugiere un enfoque geográfico en texto de Estados Unidos, aunque no se aportan detalles sobre el corpus de entrenamiento. En su estado actual, cualquier evaluación de rendimiento o idoneidad para producción resulta imposible sin información adicional.
 
@@ -70,6 +70,6 @@ No disponible. No se han publicado datos de rendimiento que permitan comparar es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Roy229/huggingface_9678_a1b2c3d4_globex-ner-extractor
+- Modelo en Hugging Face: https://huggingface.co/Roy229/huggingface_9678_a1b2c3d4_globex-ner-extractor
 
 No se han encontrado papers, repositorios de código, demos o documentación adicional asociada a este modelo.

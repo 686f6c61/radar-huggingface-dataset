@@ -78,7 +78,7 @@ No se dispone de datos de benchmarks comparativos con otros VLM de tamaño simil
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ForeverBlue/Qwen3-VL-2B-GRACE-W4G128-AWQ
+- Hugging Face: https://huggingface.co/ForeverBlue/Qwen3-VL-2B-GRACE-W4G128-AWQ
 - Paper: https://arxiv.org/abs/2601.22709
 - Código: https://github.com/ForeverBlue816/GRACE
 - Colección GRACE: https://huggingface.co/collections/ForeverBlue/grace

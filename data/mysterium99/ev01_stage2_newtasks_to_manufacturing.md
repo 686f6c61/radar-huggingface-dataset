@@ -83,7 +83,7 @@ La comparación cuantitativa con alternativas no está disponible en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mysterium99/ev01_stage2_newtasks_to_manufacturing
+- Hugging Face: https://huggingface.co/mysterium99/ev01_stage2_newtasks_to_manufacturing
 - Repositorio EVO1: https://github.com/MINT-SJTU/Evo-1
 - LeRobot: https://github.com/huggingface/lerobot
 - Guía LeRobot para EVO1: https://huggingface.co/docs/lerobot/main/en/evo1

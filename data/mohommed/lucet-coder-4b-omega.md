@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lucet-Coder-4B-Omega es un modelo de generación de texto especializado en código, desarrollado por el usuario mohommed y publicado en HuggingFace en octubre de 2026. Se trata de un ajuste post-entrenamiento (post-trained) sobre el modelo base XHToken/Spark-X2.6-4B, un modelo de 4.112 millones de parámetros con una ventana de contexto nativa de 1.048.576 tokens (1M). Su objetivo es mejorar las capacidades de generación y depuración de código del modelo base manteniendo intacta su calibración de contexto largo.
+Lucet-Coder-4B-Omega es un modelo de generación de texto especializado en código, desarrollado por el usuario mohommed y publicado en Hugging Face en octubre de 2026. Se trata de un ajuste post-entrenamiento (post-trained) sobre el modelo base XHToken/Spark-X2.6-4B, un modelo de 4.112 millones de parámetros con una ventana de contexto nativa de 1.048.576 tokens (1M). Su objetivo es mejorar las capacidades de generación y depuración de código del modelo base manteniendo intacta su calibración de contexto largo.
 
 La relevancia del modelo radica en el conjunto de técnicas de post-entrenamiento aplicadas: adaptación de bajo rango que preserva las proyecciones de query y key (para no romper la calibración RoPE del contexto de 1M), minería activa de clústeres de fallos con inmunización contra bugs mediante contrafactuales AST, eliminación espectral de ruido mediante QR-SVD, y una cuantización Q4_K con ecualización de crest-factor junto a un proceso de "des-censura" mediante proyección ortogonal de rechazos (GSQ-v2).
 
@@ -91,6 +91,6 @@ Lucet-Coder-4B-Omega se diferencia de alternativas de tamaño similar principalm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohommed/Lucet-Coder-4B-Omega
+- Modelo en Hugging Face: https://huggingface.co/mohommed/Lucet-Coder-4B-Omega
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Paper, blog o demo: no disponibles

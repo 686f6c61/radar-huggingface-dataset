@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Inkling VCB LoRA es un adaptador de tipo LoRA de rango 8 desarrollado por Besimple AI para el modelo base Inkling de Thinking Machines Lab. Su objetivo es mejorar la transcripción de valores estructurados exactos, como direcciones de correo electrónico, rutas de archivo, flags de línea de comandos y variables de entorno, un área donde los modelos de voz genéricos suelen fallar. El adaptador se entrenó con 100 horas de habla humana dirigida y reproducción de FLEURS, y se publica bajo el identificador `besimple-ai/inkling-vcb-trained` en HuggingFace.
+Inkling VCB LoRA es un adaptador de tipo LoRA de rango 8 desarrollado por Besimple AI para el modelo base Inkling de Thinking Machines Lab. Su objetivo es mejorar la transcripción de valores estructurados exactos, como direcciones de correo electrónico, rutas de archivo, flags de línea de comandos y variables de entorno, un área donde los modelos de voz genéricos suelen fallar. El adaptador se entrenó con 100 horas de habla humana dirigida y reproducción de FLEURS, y se publica bajo el identificador `besimple-ai/inkling-vcb-trained` en Hugging Face.
 
 El modelo es relevante porque aborda un problema concreto en sistemas de voz a texto: la fidelidad en la recuperación de entidades con formato estricto. Según los datos publicados, en el benchmark VoiceCodeBench alcanza un 94,80% de recuperación de entidades y un 79,00% de éxito en tareas, lo que lo posiciona como una opción interesante para asistentes de voz orientados a desarrollo y operaciones técnicas. El repositorio tiene un tamaño de 86,1 GB, lo que sugiere que el adaptador se distribuye junto con los pesos del modelo base o en una versión fusionada, aunque la librería declarada es `peft`.
 
@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/besimple-ai/inkling-vcb-trained
+- Modelo en Hugging Face: https://huggingface.co/besimple-ai/inkling-vcb-trained
 - Sitio web de Besimple AI: https://besimple.ai/
 - Informe de investigación (research report): https://besimple.ai/research/inkling-post-training
 - Blog post sobre el post-entrenamiento: https://besimple.ai/blogs/inkling-post-training

@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su tamaño compacto (1,7B) y su especiali
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta del modelo base no se detalla en la informacion disponible. Los tags de HuggingFace indican que se trata de un modelo de tipo `llama` y `megatron-lm`, lo que sugiere una arquitectura transformer decoder-only similar a Llama, pero no se confirma el numero de capas, dimensiones de atencion ni otros hiperparametros. El modelo es causal LM, por lo que genera texto autoregresivamente.
+La arquitectura exacta del modelo base no se detalla en la informacion disponible. Los tags de Hugging Face indican que se trata de un modelo de tipo `llama` y `megatron-lm`, lo que sugiere una arquitectura transformer decoder-only similar a Llama, pero no se confirma el numero de capas, dimensiones de atencion ni otros hiperparametros. El modelo es causal LM, por lo que genera texto autoregresivamente.
 
 El entrenamiento se realizo sobre los datasets `TucanoBR/GigaVerbo` y `wikimedia/wikipedia`, ambos en portugues. No se especifica el numero total de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Al ser un modelo base, no se ha sometido a un proceso de instruccion o chat, por lo que su salida es texto libre sin formato de dialogo.
 
@@ -74,7 +74,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (mo
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/manaca-1b-base-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/manaca-1b-base-GGUF
 - Modelo base original: https://huggingface.co/menezesbruno/manaca-1b-base
 - Version con imatrix: https://huggingface.co/mradermacher/manaca-1b-base-i1-GGUF
 - Dataset TucanoBR/GigaVerbo: https://huggingface.co/datasets/TucanoBR/GigaVerbo

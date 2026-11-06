@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `matrixrb/ebake` es un modelo de difusión para generación de imágenes a partir de texto (text-to-image) publicado en HuggingFace por el usuario `matrixrb`. Según los metadatos, utiliza la librería `diffusers` y el pipeline `StableDiffusionPipeline`, lo que sugiere una arquitectura basada en Stable Diffusion, aunque no se ha confirmado oficialmente. El modelo cuenta con aproximadamente 859,5 millones de parámetros y un tamaño de repositorio de 2,1 GB, con pesos en formato `safetensors`.
+El modelo `matrixrb/ebake` es un modelo de difusión para generación de imágenes a partir de texto (text-to-image) publicado en Hugging Face por el usuario `matrixrb`. Según los metadatos, utiliza la librería `diffusers` y el pipeline `StableDiffusionPipeline`, lo que sugiere una arquitectura basada en Stable Diffusion, aunque no se ha confirmado oficialmente. El modelo cuenta con aproximadamente 859,5 millones de parámetros y un tamaño de repositorio de 2,1 GB, con pesos en formato `safetensors`.
 
 La model card asociada es una plantilla genérica sin información específica sobre el desarrollo, entrenamiento, licencia o capacidades. No se han publicado detalles sobre el dataset de entrenamiento, el proceso de ajuste fino ni los resultados de evaluación. Tampoco se dispone de documentación adicional en la web. Por tanto, esta ficha se basa únicamente en los datos técnicos disponibles en el repositorio y en las características generales de los modelos de difusión de este tipo.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - VRAM estimada: para un modelo de difusión de ~860M parámetros, la inferencia típica requiere entre 4 y 8 GB de VRAM en precisión fp16, dependiendo de la resolución de salida y el tamaño del batch. Con cuantización a int8 podría reducirse, pero no se dispone de datos concretos.
 - GPU recomendadas: una GPU con al menos 8 GB de VRAM, como una NVIDIA RTX 3060/3070, sería suficiente para pruebas. Para producción con mayor resolución o batch, se recomienda una RTX 4090 o A100.
 - Compatibilidad con GPU de consumo: sí, es probable que funcione en GPUs de consumo con 8 GB o más, pero no está confirmado.
-- Opciones de despliegue: al ser un modelo `diffusers`, se puede ejecutar con la biblioteca `diffusers` de HuggingFace, así como con servidores de inferencia como `vLLM` (aunque este está orientado a LLMs, no a difusión), o mediante `ComfyUI` y `Automatic1111` si se convierte a formatos compatibles. No se han publicado configuraciones específicas.
+- Opciones de despliegue: al ser un modelo `diffusers`, se puede ejecutar con la biblioteca `diffusers` de Hugging Face, así como con servidores de inferencia como `vLLM` (aunque este está orientado a LLMs, no a difusión), o mediante `ComfyUI` y `Automatic1111` si se convierte a formatos compatibles. No se han publicado configuraciones específicas.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -69,5 +69,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/matrixrb/ebake
+- Repositorio en Hugging Face: https://huggingface.co/matrixrb/ebake
 - Perfil del autor: https://huggingface.co/matrixrb

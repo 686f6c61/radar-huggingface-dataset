@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Clef | 27,36 B | no disponible | Probabilidades por opción de un esquema tipado (sin texto libre) | Apache-2.0 | HuggingFace (Cloudflare/clef; el repositorio analizado es TechnoBaptist/clef), servible con SGLang |
-| Clef-Flash | no disponible | no disponible | Igual que Clef (variante menor y más rápida) | no disponible | HuggingFace (Cloudflare/clef-flash), según la model card |
-| Qwen/Qwen3.8-27B (modelo base) | 27 B (indicado en el nombre) | no disponible | Generación de texto libre | no disponible | HuggingFace (Qwen/Qwen3.8-27B), usado como base del *post-train* |
+| Clef | 27,36 B | no disponible | Probabilidades por opción de un esquema tipado (sin texto libre) | Apache-2.0 | Hugging Face (Cloudflare/clef; el repositorio analizado es TechnoBaptist/clef), servible con SGLang |
+| Clef-Flash | no disponible | no disponible | Igual que Clef (variante menor y más rápida) | no disponible | Hugging Face (Cloudflare/clef-flash), según la model card |
+| Qwen/Qwen3.8-27B (modelo base) | 27 B (indicado en el nombre) | no disponible | Generación de texto libre | no disponible | Hugging Face (Qwen/Qwen3.8-27B), usado como base del *post-train* |
 
 No se dispone de información sobre otros modelos de decisión comparables en el material proporcionado.
 
@@ -86,7 +86,7 @@ No se dispone de información sobre otros modelos de decisión comparables en el
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/TechnoBaptist/clef
+- Repositorio analizado en Hugging Face: https://huggingface.co/TechnoBaptist/clef
 - Repositorio referenciado en la model card: https://huggingface.co/Cloudflare/clef
 - Variante menor y más rápida: https://huggingface.co/Cloudflare/clef-flash
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

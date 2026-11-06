@@ -17,7 +17,7 @@ Su relevancia es metodológica: permite medir qué parte del aumento del rasgo m
 | Parámetros activos | No aplica: no es un modelo MoE según la información disponible |
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | No disponible; adaptador en fp32 sobre base bf16. No se publican pesos GGUF ni cuantizaciones del adaptador |
-| Idiomas soportados | No disponible (el campo `languages` de HuggingFace está vacío) |
+| Idiomas soportados | No disponible (el campo `languages` de Hugging Face está vacío) |
 | Licencia | apache-2.0 según la model card; licencia del modelo base no verificada en la información disponible |
 | Formato de pesos | safetensors (adaptador PEFT LoRA en layout Tinker); los estados de entrenamiento incluyen `optimizer.pt` |
 
@@ -76,10 +76,10 @@ La columna de juez LLM y la reevaluación con n=512 aparecen en blanco en la mod
 
 | Modelo | Parámetros | Contexto | Rasgo marcador | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (rama placebo) | ~9B base + LoRA r32 | No disponible | 21,9-29,8% en pasos 5-13 | apache-2.0 | Público en HuggingFace, requiere código del proyecto |
-| Jordine/ext-traits-sft-mk (init SFT) | ~9B base + LoRA r32 | No disponible | 17,3% (n=392) | No disponible | Público en HuggingFace |
+| Este adaptador (rama placebo) | ~9B base + LoRA r32 | No disponible | 21,9-29,8% en pasos 5-13 | apache-2.0 | Público en Hugging Face, requiere código del proyecto |
+| Jordine/ext-traits-sft-mk (init SFT) | ~9B base + LoRA r32 | No disponible | 17,3% (n=392) | No disponible | Público en Hugging Face |
 | Rama real del mismo port (sin `--shuffle_rewards`) | ~9B base + LoRA r32 | No disponible | Δ ≈ +6,7 pp frente a placebo | No disponible | Referenciada en el informe del proyecto |
-| Qwen/Qwen3.5-9B (base) | ~9B | No disponible | ~0% | No disponible | Público en HuggingFace |
+| Qwen/Qwen3.5-9B (base) | ~9B | No disponible | ~0% | No disponible | Público en Hugging Face |
 
 No se han identificado en la información disponible otros adaptadores comparables de la misma categoría (organismos modelo para estudio de lavado de recompensa).
 
@@ -99,10 +99,10 @@ No se han identificado en la información disponible otros adaptadores comparabl
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/Jordine/rlport-hkl_jord9v_mk_pl3_20261018_020308
+- Adaptador en Hugging Face: https://huggingface.co/Jordine/rlport-hkl_jord9v_mk_pl3_20261018_020308
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio del proyecto: https://github.com/Jordine/reward-laundering
 - Informe del port: https://github.com/Jordine/reward-laundering/blob/master/results/PORT_REPORT.md
 - Análisis ext-traits: https://github.com/Jordine/reward-laundering/blob/master/results/EXT_TRAITS.md
 - Manifest de checkpoints: `results/hf_manifest.csv` (referenciado en la model card, sin URL directa disponible)
-- Nota: las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de HuggingFace.
+- Nota: las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de Hugging Face.

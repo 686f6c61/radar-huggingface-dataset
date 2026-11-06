@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Nyoro012/data-on-call-demo-model",
+  "slug": "nyoro012-data-on-call-demo-model",
+  "author": "Nyoro012",
+  "url": "https://huggingface.co/Nyoro012/data-on-call-demo-model",
+  "created_at": "2026-11-06T08:22:46.000Z",
+  "updated_at": "2026-11-06T08:22:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "LogisticRegression",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 579,
+  "storage_human": "579 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

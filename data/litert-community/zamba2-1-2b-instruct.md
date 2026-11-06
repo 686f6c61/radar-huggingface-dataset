@@ -86,8 +86,8 @@ La comparativa directa de rendimiento no es posible sin datos de benchmarks esta
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/litert-community/Zamba2-1.2B-instruct
-- Modelo base en HuggingFace: https://huggingface.co/Zyphra/Zamba2-1.2B-instruct
+- Repositorio Hugging Face de la conversión: https://huggingface.co/litert-community/Zamba2-1.2B-instruct
+- Modelo base en Hugging Face: https://huggingface.co/Zyphra/Zamba2-1.2B-instruct
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
 - Herramienta de conversión litert-torch: https://github.com/google-ai-edge/litert-torch
 - Scripts de conversión y parche (hf-to-litertlm): https://github.com/john-rocky/hf-to-litertlm

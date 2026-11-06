@@ -69,8 +69,8 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Winnougan/MiniMax-H3-INT4_Convrot_ComfyUI
-- README en HuggingFace: https://huggingface.co/Winnougan/MiniMax-H3-INT4_Convrot_ComfyUI/blob/main/README.md
+- Repositorio Hugging Face: https://huggingface.co/Winnougan/MiniMax-H3-INT4_Convrot_ComfyUI
+- README en Hugging Face: https://huggingface.co/Winnougan/MiniMax-H3-INT4_Convrot_ComfyUI/blob/main/README.md
 - Sitio de descargas de MiniMax H3: https://minimaxh3.run/minimax-h3-model-files-downloads
 - Pagina en Civitai: https://civitai.com/models/2830162/minimax-h3-int4-convrot-or-12gb-vram
 - Guia de ComfyUI para MiniMax H3: https://kingy.ai/ai/ai-guides/minimax-h3-comfyui-local-guide/

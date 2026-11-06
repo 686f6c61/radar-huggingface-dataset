@@ -94,7 +94,7 @@ La diferencia sustantiva frente a esas alternativas no es de calidad, que no est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alekringtonnn-ai/zubr-whisper-mlx
+- Repositorio en Hugging Face: https://huggingface.co/alekringtonnn-ai/zubr-whisper-mlx
 - Pesos fp16: https://huggingface.co/alekringtonnn-ai/zubr-whisper-mlx/blob/main/zubr-whisper-mlx.safetensors
 - Pesos cuantizados a 2 bits: https://huggingface.co/alekringtonnn-ai/zubr-whisper-mlx/blob/main/zubr-whisper-mlx-q2.safetensors
 - Tokenizador multilingüe: https://huggingface.co/alekringtonnn-ai/zubr-whisper-mlx/blob/main/multilingual.tiktoken

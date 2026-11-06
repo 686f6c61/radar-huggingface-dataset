@@ -67,7 +67,7 @@ También se menciona que un modelo CTC (`GarchenArchive/wav2vec2-xls-r-300m-rinp
 - VRAM estimada para inferencia: no disponible. Los pesos en fp16 ocupan 1,62 GB y en fp32 3,24 GB.
 - GPU recomendadas: no disponible.
 - ¿Cabe en GPU de consumo? No disponible.
-- Opciones de despliegue: Transformers (HuggingFace). El modelo se puede cargar con `WhisperForConditionalGeneration` y `WhisperProcessor`.
+- Opciones de despliegue: Transformers (Hugging Face). El modelo se puede cargar con `WhisperForConditionalGeneration` y `WhisperProcessor`.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ También se menciona que un modelo CTC (`GarchenArchive/wav2vec2-xls-r-300m-rinp
 | openai/whisper-large-v3-turbo | No disponible | Encoder-decoder (32 enc / 4 dec) | 448 tokens | No disponible | No disponible |
 | wav2vec2-xls-r-300m-rinpoche | No disponible | CTC (wav2vec2) | Sin límite | CER 0,1903 en clips largos | No disponible |
 
-Los tres modelos están disponibles en HuggingFace. El modelo CTC es la alternativa recomendada para material de audio largo, ya que no tiene el límite de salida de 448 tokens.
+Los tres modelos están disponibles en Hugging Face. El modelo CTC es la alternativa recomendada para material de audio largo, ya que no tiene el límite de salida de 448 tokens.
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ Los tres modelos están disponibles en HuggingFace. El modelo CTC es la alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GarchenArchive/whisper-large-v3-turbo-rinpoche
+- Modelo en Hugging Face: https://huggingface.co/GarchenArchive/whisper-large-v3-turbo-rinpoche
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Modelo CTC alternativo: https://huggingface.co/GarchenArchive/wav2vec2-xls-r-300m-rinpoche
 - Dataset de entrenamiento: https://huggingface.co/GarchenArchive/stt-rinpoche-202605

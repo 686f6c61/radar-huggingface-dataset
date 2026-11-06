@@ -91,6 +91,6 @@ No se dispone de datos comparativos de rendimiento entre este adaptador y altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jongbin-kr/exaone-verireason-sft_accuracy_medium_3to5_ratio0.12_seed42
+- Repositorio Hugging Face: https://huggingface.co/Jongbin-kr/exaone-verireason-sft_accuracy_medium_3to5_ratio0.12_seed42
 - Modelo base: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Paper, blog o repositorio adicional: no disponible

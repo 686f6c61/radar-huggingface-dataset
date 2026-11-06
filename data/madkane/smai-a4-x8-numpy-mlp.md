@@ -70,7 +70,7 @@ No se han publicado resultados comparativos con otros modelos (MMLU, HumanEval, 
 
 | Modelo | Parámetros | Contexto | Precisión CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| X8 (este modelo) | 789.258 | no aplica | 0,5400 (test) | MIT | HuggingFace, NPZ |
+| X8 (este modelo) | 789.258 | no aplica | 0,5400 (test) | MIT | Hugging Face, NPZ |
 | MLP de referencia en CIFAR-10 (p. ej. variantes del mismo autor) | no disponible | no aplica | no disponible | no disponible | no disponible |
 | CNN pequeña tipo LeNet | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -89,6 +89,6 @@ No se dispone de datos de benchmarks de alternativas en la información proporci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MadKane/smai-a4-x8-numpy-mlp
+- Hugging Face: https://huggingface.co/MadKane/smai-a4-x8-numpy-mlp
 - Registro de entrenamiento en WandB: https://wandb.ai/madhurkwork-iiit-hyderabad/smai-a4-mlp (run `explore-3072-256-10-relu-lr0.01-flip`)
 - Dataset: https://huggingface.co/datasets/uoft-cs/cifar10

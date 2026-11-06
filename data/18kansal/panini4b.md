@@ -6,7 +6,7 @@ Pāṇini-Code-4B (identificador `18kansal/panini4b`) es un sistema presentado p
 
 El modelo se declara entrenado y evaluado únicamente en inglés y sánscrito, se publica bajo licencia Apache 2.0 y su tesis central es que un transformer probabilístico no tiene modelo interno de sintaxis ni de tipos, por lo que necesita un escudo simbólico externo que garantice que el parche generado compila y pasa las pruebas con código de salida 0. El autor afirma un 65,9 % (329/499) en SWE-bench Verified y un 81,0 % (1337/1651) en un "catálogo evaluado" propio, cifras que, de confirmarse, superarían a Claude 3.5 Sonnet y GPT-4o con dos órdenes de magnitud menos de parámetros.
 
-La relevancia práctica es doble: por un lado, plantea una arquitectura interesante (modelo pequeño + verificación simbólica + bucle test-driven) que es una línea de trabajo real en reparación de código; por otro, la ficha debe leerse con cautela, porque el repositorio de HuggingFace no contiene pesos (18 MB en total, solo `README.md` y `.gitattributes`), registra 0 descargas y 0 likes, y todas las métricas son autodeclaradas y marcadas como `verified: false`.
+La relevancia práctica es doble: por un lado, plantea una arquitectura interesante (modelo pequeño + verificación simbólica + bucle test-driven) que es una línea de trabajo real en reparación de código; por otro, la ficha debe leerse con cautela, porque el repositorio de Hugging Face no contiene pesos (18 MB en total, solo `README.md` y `.gitattributes`), registra 0 descargas y 0 likes, y todas las métricas son autodeclaradas y marcadas como `verified: false`.
 
 ## Especificaciones tecnicas
 
@@ -106,7 +106,7 @@ Las cifras de los modelos comparados son las que el propio autor incluye en su t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/18kansal/panini4b
+- Modelo en Hugging Face: https://huggingface.co/18kansal/panini4b
 - Árbol de ficheros del repositorio: https://huggingface.co/18kansal/panini4b/tree/main
 - Repositorio previo de la misma familia: https://huggingface.co/18kansal/panini-gemma-swe-bench
 - Auditoría de ejecución real referenciada en la model card: `REAL_EXECUTION_AUDIT.md` (enlace relativo dentro del repositorio, no accesible de forma independiente en la información disponible)

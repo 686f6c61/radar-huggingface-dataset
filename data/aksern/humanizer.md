@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aksern/humanizer | 3B | No documentado (128 000 tokens en el modelo base) | Reescritura/humanización de texto | openmdw-1.1 | HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct | 3B | 128 000 tokens | Conversación general, instrucciones | Llama 3.2 Community License | HuggingFace, ecosistema amplio |
-| Qwen/Qwen2.5-3B-Instruct | 3,09B | 32 768 tokens nativos (128K con YaRN) | Conversación general, multilingüe | Apache 2.0 | HuggingFace |
-| google/gemma-2-2b-it | 2,6B | 8 192 tokens | Conversación general | Gemma Terms of Use | HuggingFace |
+| aksern/humanizer | 3B | No documentado (128 000 tokens en el modelo base) | Reescritura/humanización de texto | openmdw-1.1 | Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct | 3B | 128 000 tokens | Conversación general, instrucciones | Llama 3.2 Community License | Hugging Face, ecosistema amplio |
+| Qwen/Qwen2.5-3B-Instruct | 3,09B | 32 768 tokens nativos (128K con YaRN) | Conversación general, multilingüe | Apache 2.0 | Hugging Face |
+| google/gemma-2-2b-it | 2,6B | 8 192 tokens | Conversación general | Gemma Terms of Use | Hugging Face |
 
 La comparación se limita a parámetros, contexto, licencia y disponibilidad, ya que no existen benchmarks publicados del modelo analizado. Los datos de los modelos alternativos proceden de su documentación oficial.
 
@@ -88,7 +88,7 @@ La comparación se limita a parámetros, contexto, licencia y disponibilidad, ya
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aksern/humanizer
+- Modelo en Hugging Face: https://huggingface.co/aksern/humanizer
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Base cuantizada empleada en el ajuste: https://huggingface.co/unsloth/Llama-3.2-3B-bnb-4bit
 - Space de un humanizador no relacionado (conversantech): https://huggingface.co/spaces/conversantech/humanizer-ai

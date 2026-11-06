@@ -87,6 +87,6 @@ No se dispone de modelos comparables en la información proporcionada. La compar
 
 - Repositorio del bundle PRA: https://huggingface.co/EInnovator/pra-qwen3-5-27b-mlx-4bit
 - Modelo base: https://huggingface.co/mlx-community/Qwen3.5-27B-4bit
-- Colección Qwen3 en HuggingFace: https://huggingface.co/collections/Qwen/qwen3
+- Colección Qwen3 en Hugging Face: https://huggingface.co/collections/Qwen/qwen3
 - Página de Qwen3.5 en Ollama: https://ollama.com/library/qwen3.5:27b
 - Instalación de la librería PRA: `pip install 'pra-hf[hf-hub,hf-runtime]'`

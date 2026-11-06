@@ -2,7 +2,7 @@
 
 ## Resumen
 
-goby-1-ie-vi es un modelo de extracción conjunta de entidades y relaciones (*joint entity + relation extraction*) para vietnamita, desarrollado por el usuario belumind y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un *fine-tune* de knowledgator/gliner-relex-large-v1.0, el modelo GLiNER-ReLEX de Knowledgator, y conserva el mismo pipeline de `token-classification` y la misma librería de inferencia (`gliner`). El objetivo declarado del autor era elevar el rendimiento en vietnamita sin degradar el modelo base, y ambos extremos se midieron sobre un conjunto anotado a mano en lugar de asumirse.
+goby-1-ie-vi es un modelo de extracción conjunta de entidades y relaciones (*joint entity + relation extraction*) para vietnamita, desarrollado por el usuario belumind y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un *fine-tune* de knowledgator/gliner-relex-large-v1.0, el modelo GLiNER-ReLEX de Knowledgator, y conserva el mismo pipeline de `token-classification` y la misma librería de inferencia (`gliner`). El objetivo declarado del autor era elevar el rendimiento en vietnamita sin degradar el modelo base, y ambos extremos se midieron sobre un conjunto anotado a mano en lugar de asumirse.
 
 Con 466.576.896 parámetros (0,47 B), el modelo pertenece a la categoría de extractores de información compactos: el checkpoint en fp32 ocupa 1,87 GB en disco y la inferencia completa requiere en torno a 2,3 GB de VRAM en fp32 o 1,2 GB en fp16, por lo que entra en una GPU de 4 GB. Su relevancia actual radica en el enfoque *zero-shot* sobre nombres de etiquetas en texto libre: el usuario define las etiquetas de entidad y las relaciones en el momento de la inferencia, sin reentrenar, y el modelo acepta etiquetas tanto en vietnamita como en inglés.
 
@@ -113,7 +113,7 @@ El modelo mejora en 14 de las 18 relaciones y empeora en 4 (`developed by`, `fou
 - Rendimiento por lotes en GPU con fp32: batch 1, 57,9 ms y 17,8 frases/s con 0,03 GB de activaciones; batch 4, 72,2 ms y 55,5 frases/s con 0,17 GB; batch 8, 117,9 ms y 68,1 frases/s con 0,17 GB. La tabla del model card se corta en esta última fila, por lo que no hay datos publicados para lotes mayores.
 - Estas cifras están medidas en A100 y en un Xeon concreto; el autor advierte que en otro hardware deben interpretarse como orden de magnitud, no como garantía.
 - Opciones de despliegue: la vía documentada es la librería `gliner` (`GLiNER.from_pretrained("belumind/goby-1-ie-vi")`), que carga el modelo con PyTorch. No se documentan integraciones con vLLM, llama.cpp, Ollama, TGI ni TensorRT-LLM, ni versiones en GGUF u otros formatos cuantizados.
-- Existe un *Space* de demostración en HuggingFace para probar el modelo sin instalación local.
+- Existe un *Space* de demostración en Hugging Face para probar el modelo sin instalación local.
 
 ## Comparativa con modelos similares
 
@@ -143,8 +143,8 @@ Comparado con su base, goby-1-ie-vi multiplica por 2,8 el F1 estricto en vietnam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/belumind/goby-1-ie-vi
+- Modelo en Hugging Face: https://huggingface.co/belumind/goby-1-ie-vi
 - Modelo base: https://huggingface.co/knowledgator/gliner-relex-large-v1.0
-- Demo en vivo (Space de HuggingFace): https://huggingface.co/spaces/johnathan2023/goby-1-ie-vi-demo
+- Demo en vivo (Space de Hugging Face): https://huggingface.co/spaces/johnathan2023/goby-1-ie-vi-demo
 - Librería de inferencia GLiNER: https://github.com/urchade/GLiNER
 - La búsqueda web realizada no devolvió ningún enlace relevante sobre este modelo, su autor ni su modelo base; los resultados obtenidos eran ajenos al objeto de la ficha (contenido sobre ChatGPT y GitHub Desktop) y no se han utilizado.

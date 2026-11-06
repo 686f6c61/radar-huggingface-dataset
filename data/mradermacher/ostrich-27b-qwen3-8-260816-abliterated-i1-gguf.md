@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Ostrich-27B-Qwen3.8-260816-Abliterated-i1-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Ostrich-27B-Qwen3.8-260816-Abliterated-i1-GGUF
 - Modelo base (etemiz): https://huggingface.co/etemiz/Ostrich-27B-Qwen3.8-260816-Abliterated
 - Blog sobre Qwen3.8-27B (specs y requisitos): https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026
 - Perfil de mradermacher en Hugging Face: https://huggingface.co/mradermacher

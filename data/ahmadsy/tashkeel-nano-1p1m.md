@@ -120,7 +120,7 @@ Comparado con el modelo dedicado de 1,5 B (Sadeed), este checkpoint obtiene mejo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmadsy/tashkeel-nano-1p1m
+- Modelo en Hugging Face: https://huggingface.co/ahmadsy/tashkeel-nano-1p1m
 - Modelo relacionado (tashkeel-nano-4p5m): https://huggingface.co/ahmadsy/tashkeel-nano-4p5m
 - Dataset del benchmark SadeedDiac-25: https://huggingface.co/datasets/Misraj/SadeedDiac-25
 - Evaluador del benchmark (misraj-ai/Sadeed): https://github.com/misraj-ai/Sadeed

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Aydge/Huihui-Qwen3.8-27B-abliterated-GGUF` es una version en formato GGUF del modelo `Qwen/Qwen3.8-27B` tras aplicar una tecnica de "abliteracion" que elimina los mecanismos de rechazo (refusal) integrados en el modelo original. El autor principal es el usuario de HuggingFace `Aydge`, que ha subido este repositorio como espejo de la serie `huihui-ai/Huihui-Qwen3.8-27B-abliterated`. El resultado es un modelo "sin censura" que responde a prompts que el modelo base bloquearia, manteniendo el mismo tamano de parametros (27.320.697.856) y el pipeline multimodal `image-text-to-text` del modelo original.
+`Aydge/Huihui-Qwen3.8-27B-abliterated-GGUF` es una version en formato GGUF del modelo `Qwen/Qwen3.8-27B` tras aplicar una tecnica de "abliteracion" que elimina los mecanismos de rechazo (refusal) integrados en el modelo original. El autor principal es el usuario de Hugging Face `Aydge`, que ha subido este repositorio como espejo de la serie `huihui-ai/Huihui-Qwen3.8-27B-abliterated`. El resultado es un modelo "sin censura" que responde a prompts que el modelo base bloquearia, manteniendo el mismo tamano de parametros (27.320.697.856) y el pipeline multimodal `image-text-to-text` del modelo original.
 
 La abliteracion se ha realizado con una implementacion descrita como "cruda y de prueba de concepto" basada en el proyecto `remove-refusals-with-transformers`, que elimina las direcciones de refusal del activo sin usar TransformerLens. El modelo conserva intactos el modulo visual y el modulo de prediccion multi-token (MTP) del Qwen3.8-27B base, mientras que las capas abladas varian segun la version: en la ultima actualizacion, las capas 23 a 51 (y en una version anterior, las capas 18 a 51) han sido modificadas, dejando el resto sin tocar. El repositorio incluye multiples cuantizaciones GGUF (desde Q2_K hasta Q8_0, con variantes "L" que preservan mayor precision en los pesos necesarios para la abliteracion) y una version en BF16.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Cuantizacion | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3.8-27B | 27.320.697.856 | No disponible | Apache 2.0 | safetensors | HuggingFace |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 27.320.697.856 | No disponible | Apache 2.0 | GGUF, safetensors | HuggingFace |
-| Aydge/Huihui-Qwen3.8-27B-abliterated-GGUF | 27.320.697.856 | No disponible | Apache 2.0 | GGUF (BF16 y cuantizaciones) | HuggingFace |
+| Qwen/Qwen3.8-27B | 27.320.697.856 | No disponible | Apache 2.0 | safetensors | Hugging Face |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 27.320.697.856 | No disponible | Apache 2.0 | GGUF, safetensors | Hugging Face |
+| Aydge/Huihui-Qwen3.8-27B-abliterated-GGUF | 27.320.697.856 | No disponible | Apache 2.0 | GGUF (BF16 y cuantizaciones) | Hugging Face |
 
 Las tres entradas corresponden al mismo modelo base y los mismos parametros. La diferencia principal es que `Qwen/Qwen3.8-27B` conserva los mecanismos de refusal originales, mientras que las versiones de `huihui-ai` y `Aydge` los han eliminado mediante abliteracion. El repositorio de `Aydge` es un re-subido en formato GGUF del repositorio original de `huihui-ai`, por lo que su funcionalidad es identica. No se dispone de benchmarks para comparar el rendimiento entre estas variantes.
 
@@ -80,7 +80,7 @@ Las tres entradas corresponden al mismo modelo base y los mismos parametros. La 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Aydge/Huihui-Qwen3.8-27B-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Aydge/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio original de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Coleccion Qwen3.8-abliterated: https://huggingface.co/collections/huihui-ai/qwen38-abliterated

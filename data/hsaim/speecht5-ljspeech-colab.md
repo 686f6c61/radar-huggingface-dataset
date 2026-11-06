@@ -2,7 +2,7 @@
 
 ## Resumen
 
-speecht5-ljspeech-colab es un ajuste fino (fine-tuning) del modelo text-to-speech microsoft/speecht5_tts sobre el corpus LJSpeech, publicado por el usuario hsaim en HuggingFace. Se trata de un modelo texto-a-voz de 144.433.890 parámetros (aproximadamente 144,4 M) que convierte texto en inglés en un mel-espectrograma, a partir del cual un vocoder externo genera la forma de onda de audio. El repositorio ocupa 0,6 GB y los pesos están en safetensors, lo que confirma un almacenamiento en fp32.
+speecht5-ljspeech-colab es un ajuste fino (fine-tuning) del modelo text-to-speech microsoft/speecht5_tts sobre el corpus LJSpeech, publicado por el usuario hsaim en Hugging Face. Se trata de un modelo texto-a-voz de 144.433.890 parámetros (aproximadamente 144,4 M) que convierte texto en inglés en un mel-espectrograma, a partir del cual un vocoder externo genera la forma de onda de audio. El repositorio ocupa 0,6 GB y los pesos están en safetensors, lo que confirma un almacenamiento en fp32.
 
 El interés del modelo es acotado pero claro: es un ejemplo reproducible de ajuste fino de SpeechT5 sobre una única voz femenina en inglés, con hiperparámetros y curvas de pérdida documentados en la propia model card. Frente al checkpoint original de Microsoft, que es multihablante y requiere un embedding de hablante (x-vector) para cada síntesis, este ajuste especializa el decodificador en el estilo de lectura del corpus LJSpeech (lectura continuada de libros de dominio público).
 
@@ -71,7 +71,7 @@ La pérdida de entrenamiento se calcula sumando la contribución de todos los fr
 - VRAM estimada para inferencia: menos de 2 GB en fp32, incluyendo pesos y activaciones, a lo que hay que sumar el vocoder HiFi-GAN (microsoft/speecht5_hifigan), que se descarga aparte y añade un consumo muy inferior al del modelo principal.
 - GPU recomendadas: cualquier GPU moderna con 4 GB o más. Funciona sin problema en una NVIDIA T4 (Colab), RTX 3060, RTX 4060 o RTX 4090; no requiere A100 ni H100.
 - ¿Cabe en GPU de consumo? Sí, holgadamente; también es viable la inferencia en CPU, con latencias del orden de varios segundos por frase.
-- Opciones de despliegue: `pipeline("text-to-speech")` de transformers, PyTorch con `SpeechT5ForTextToSpeech`, exportación a ONNX mediante Optimum y servicio propio (FastAPI, TorchServe). El repositorio incluye la etiqueta `endpoints_compatible`, por lo que es desplegable en HuggingFace Inference Endpoints. No es compatible con vLLM, llama.cpp ni Ollama, ya que son runtimes orientados a modelos de lenguaje y no a TTS seq2seq.
+- Opciones de despliegue: `pipeline("text-to-speech")` de transformers, PyTorch con `SpeechT5ForTextToSpeech`, exportación a ONNX mediante Optimum y servicio propio (FastAPI, TorchServe). El repositorio incluye la etiqueta `endpoints_compatible`, por lo que es desplegable en Hugging Face Inference Endpoints. No es compatible con vLLM, llama.cpp ni Ollama, ya que son runtimes orientados a modelos de lenguaje y no a TTS seq2seq.
 - Latencia y throughput: no disponibles. No se han publicado mediciones, y dependerán del hardware, del vocoder y de la longitud del texto.
 
 ## Comparativa con modelos similares
@@ -103,7 +103,7 @@ Las cifras de parámetros de los modelos alternativos son aproximadas, según la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hsaim/speecht5-ljspeech-colab
+- Modelo en Hugging Face: https://huggingface.co/hsaim/speecht5-ljspeech-colab
 - Modelo base: https://huggingface.co/microsoft/speecht5_tts
 - Vocoder HiFi-GAN necesario para generar audio: https://huggingface.co/microsoft/speecht5_hifigan
 - Dataset LJSpeech: https://huggingface.co/datasets/lj_speech

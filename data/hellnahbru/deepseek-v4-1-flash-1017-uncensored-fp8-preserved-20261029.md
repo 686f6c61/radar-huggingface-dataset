@@ -91,7 +91,7 @@ Las alternativas con datos concretos se limitan a variantes del mismo modelo bas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hellnahbru/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8-preserved-20261029
+- Repositorio Hugging Face: https://huggingface.co/hellnahbru/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8-preserved-20261029
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Alias del mismo repo: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-ABLITERATED-FP8
 - Variante EXL3 2.9 bpw sin censura: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-UNCENSORED

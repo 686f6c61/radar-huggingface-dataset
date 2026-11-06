@@ -77,7 +77,7 @@ No se han publicado en la informacion disponible resultados desglosados por clas
 
 | Modelo | Parametros | Entrada | Clases | mIoU SemanticKITTI | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MinkUNet34-W32-SPConv (este) | 37,9 M | XYZ + intensidad | 19 | 68,57 | Apache-2.0 | HuggingFace (torch-pointcloud) |
+| MinkUNet34-W32-SPConv (este) | 37,9 M | XYZ + intensidad | 19 | 68,57 | Apache-2.0 | Hugging Face (torch-pointcloud) |
 | MinkUNet34 original (MMDetection3D) | ~37,9 M (misma arquitectura) | XYZ + intensidad | 19 | no disponible en esta ficha | Apache-2.0 | GitHub OpenMMLab |
 | Otras arquitecturas LiDAR (Cylinder3D, SPVCNN, RangeNet++) | no disponible | no disponible | 19 | no disponible | variable | variable |
 
@@ -96,7 +96,7 @@ La comparativa con alternativas concretas no esta disponible en la informacion p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/minkunet34-w32-spconv-amp.semantickitti.mmdet3d
+- Hugging Face: https://huggingface.co/torch-pointcloud/minkunet34-w32-spconv-amp.semantickitti.mmdet3d
 - Paper de Minkowski Convolutional Neural Networks: https://arxiv.org/abs/1904.08755
 - Repositorio torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
 - Documentacion de instalacion de torch-pointcloud: https://pytorch-pointcloud.org/latest/installation/

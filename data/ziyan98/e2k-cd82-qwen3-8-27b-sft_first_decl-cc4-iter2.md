@@ -23,7 +23,7 @@ Su relevancia es metodológica, no de producto. Documenta de forma inusualmente 
 
 ## Arquitectura y entrenamiento
 
-El checkpoint reutiliza la arquitectura del modelo base sin modificaciones estructurales: el conjunto de tensores y sus formas coinciden con Qwen/Qwen3.8-27B (1199 tensores). El stack de texto (`model.language_model.*` y `lm_head`) contiene el estado entrenado en Megatron-LM, convertido a HuggingFace con el mapeo `megatron_to_hf.convert_to_hf` de slime y verificado forma, dtype e identidad bit a bit de los tensores copiados. La torre de visión (`model.visual.*`) y la cabeza MTP (`mtp.*`) nunca formaron parte del modelo de Megatron: se copiaron sin cambios desde el checkpoint base, ya que el entrenamiento fue exclusivamente de texto y el actor no vio ninguna imagen. Configuración, tokenizador, plantilla de chat, configuración de generación y de procesador son también los del modelo base (listados en `E2K_CONVERSION.json`).
+El checkpoint reutiliza la arquitectura del modelo base sin modificaciones estructurales: el conjunto de tensores y sus formas coinciden con Qwen/Qwen3.8-27B (1199 tensores). El stack de texto (`model.language_model.*` y `lm_head`) contiene el estado entrenado en Megatron-LM, convertido a Hugging Face con el mapeo `megatron_to_hf.convert_to_hf` de slime y verificado forma, dtype e identidad bit a bit de los tensores copiados. La torre de visión (`model.visual.*`) y la cabeza MTP (`mtp.*`) nunca formaron parte del modelo de Megatron: se copiaron sin cambios desde el checkpoint base, ya que el entrenamiento fue exclusivamente de texto y el actor no vio ninguna imagen. Configuración, tokenizador, plantilla de chat, configuración de generación y de procesador son también los del modelo base (listados en `E2K_CONVERSION.json`).
 
 El entrenamiento se organizó en tres rollouts solo de SFT (0–2) con reinicio de Adam, seguidos de RL a partir del rollout 3. Las filas de SFT son filas declarativas de chat construidas a partir de un conjunto de conocimiento de 888 átomos (formatos qa/rule/sentence, apertura de *think* variada y finalización con tool calls: la respuesta queda dentro del bloque de pensamiento y el turno termina con llamadas a herramientas del juego), mezcladas con filas ancla del modelo base con ratio 1.0, a razón de 896 filas de chat por rollout de SFT. La pila es slime v0.3.2 con Megatron-LM en TP4 × PP4 y 16 motores de rollout SGLang a tp=1 sobre 4 nodos GH200 de Isambard-AI; el algoritmo es Dr.GRPO (`--advantage-estimator grpo --no-normalize-advantages --disable-grpo-std-normalization --calculate-per-token-loss`), una muestra de entrenamiento por llamada al LLM, batch global 4, 8 pasos de optimizador por rollout de 32 episodios, lr 5e-6, bf16 y backend flash-attn 2.8.3. El prompt de RL nunca contiene conocimiento. El arnés de juego es Claude Code CLI 2.1.270 manejando las herramientas MCP `look`/`act`/`status` de `knowledge_learning.loop.arc_mcp`, con semilla de motor 0, niveles 1–4 con tope de un nivel y retorno con shaping sobre los niveles completados.
 
@@ -47,7 +47,7 @@ El resultado de esta iteración es una política que no colapsa a una única lla
 - Investigación sobre olvido catastrófico y deriva del razonamiento: la caída del p50 de tokens de pensamiento a 1.925 y la aparición de conocimiento difuso permiten estudiar cómo el ajuste supervisado estrecho degrada o comprime el razonamiento general.
 - Desarrollo y depuración de arneses agénticos: útil para probar la integración de herramientas MCP (`look`/`act`/`status`), el formateo de observaciones de juego y la política de parada en un agente basado en LLM.
 - Estudio de recetas de RL con Dr.GRPO sobre episodios largos: el run documenta batch global 4, 8 pasos por rollout de 32 episodios y lr 5e-6, valores reutilizables como punto de partida en experimentos similares con slime y Megatron-LM.
-- Docencia y divulgación técnica: ejemplo real de pipeline completo Megatron torch_dist → HuggingFace con verificación bit a bit, conversión de bajo consumo de memoria (`convert_torch_dist_to_hf_lowmem.py`) y publicación de checkpoints intermedios con sumas SHA256.
+- Docencia y divulgación técnica: ejemplo real de pipeline completo Megatron torch_dist → Hugging Face con verificación bit a bit, conversión de bajo consumo de memoria (`convert_torch_dist_to_hf_lowmem.py`) y publicación de checkpoints intermedios con sumas SHA256.
 - Verificación de conversiones de pesos: al reproducir el convertidor los safetensors originales de Qwen/Qwen3.8-27B bit a bit desde el checkpoint torch_dist, el repositorio sirve como caso de prueba de herramientas de conversión (fichero `E2K_VERIFY.json`).
 
 ## Benchmarks y rendimiento
@@ -80,8 +80,8 @@ El autor indica que el primer rollout de RL tras un bloque solo de SFT lo juega 
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| E2K-cd82-Qwen3.8-27B-sft_first_decl-cc4-iter2 | 27,78 B | no disponible | SFT declarativo sobre un juego ARC-AGI-3 (3 rollouts), sin RL en esta iteración | Apache 2.0 | Pesos bf16 en HuggingFace; 0 descargas, 0 likes |
-| Qwen/Qwen3.8-27B (base) | 27,78 B (mismo conjunto de tensores) | no disponible | Modelo base multimodal Qwen3.5 | Apache 2.0 (según la información del checkpoint derivado) | Público en HuggingFace |
+| E2K-cd82-Qwen3.8-27B-sft_first_decl-cc4-iter2 | 27,78 B | no disponible | SFT declarativo sobre un juego ARC-AGI-3 (3 rollouts), sin RL en esta iteración | Apache 2.0 | Pesos bf16 en Hugging Face; 0 descargas, 0 likes |
+| Qwen/Qwen3.8-27B (base) | 27,78 B (mismo conjunto de tensores) | no disponible | Modelo base multimodal Qwen3.5 | Apache 2.0 (según la información del checkpoint derivado) | Público en Hugging Face |
 | Iteraciones posteriores de la serie E2K-cd82 (con RL) | 27,78 B | no disponible | SFT + Dr.GRPO sobre el mismo juego | Apache 2.0 | Listadas en `checkpoints/checkpoints.md` del dataset de RL; métricas no incluidas en esta información |
 | Otras alternativas de tamaño similar (p. ej. modelos abiertos de ~27–32 B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -103,7 +103,7 @@ No se dispone en la información proporcionada de resultados comparables de terc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_decl-cc4-iter2
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_decl-cc4-iter2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de RL del run (episodios, métricas, filas y log): https://huggingface.co/datasets/ziyan98/E2K-cd82-rl-internalization
 - Conjunto de conocimiento (888 átomos): https://huggingface.co/datasets/ziyan98/E2K-cd82-harness-knowledge

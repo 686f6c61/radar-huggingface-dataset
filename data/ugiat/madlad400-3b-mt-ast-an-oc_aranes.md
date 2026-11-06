@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parametros | Contexto | Idiomas objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ugiat/madlad400-3b-mt-ast-an-oc_aranes | 3B | no disponible | ast, an, oc-aranes (+ es, ca, en, fr) | Apache 2.0 | HuggingFace |
-| google/madlad400-3b-mt | 3B | no disponible | 400+ lenguas (sin ast; `<2an>` deficiente; `<2oc>` estándar) | Apache 2.0 (según modelo base) | HuggingFace |
-| NLLB-200 (Meta) | 600M a 54B | no disponible | 200 lenguas (cobertura limitada de ast, an, oc) | CC-BY-NC 4.0 (no comercial) | HuggingFace |
+| Ugiat/madlad400-3b-mt-ast-an-oc_aranes | 3B | no disponible | ast, an, oc-aranes (+ es, ca, en, fr) | Apache 2.0 | Hugging Face |
+| google/madlad400-3b-mt | 3B | no disponible | 400+ lenguas (sin ast; `<2an>` deficiente; `<2oc>` estándar) | Apache 2.0 (según modelo base) | Hugging Face |
+| NLLB-200 (Meta) | 600M a 54B | no disponible | 200 lenguas (cobertura limitada de ast, an, oc) | CC-BY-NC 4.0 (no comercial) | Hugging Face |
 
 El modelo de Ugiat se diferencia del MADLAD-400 original en la cobertura efectiva de asturiano, aragonés y aranés, y del NLLB-200 en la licencia permisiva (Apache 2.0 frente a CC-BY-NC) y en la especialización explícita en estas tres lenguas. No se dispone de datos de rendimiento comparativo (BLEU/chrF) en la información proporcionada para cuantificar la mejora.
 
@@ -85,7 +85,7 @@ El modelo de Ugiat se diferencia del MADLAD-400 original en la cobertura efectiv
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ugiat/madlad400-3b-mt-ast-an-oc_aranes
+- Modelo en Hugging Face: https://huggingface.co/Ugiat/madlad400-3b-mt-ast-an-oc_aranes
 - Versión CTranslate2 int8: https://huggingface.co/Ugiat/madlad400-3b-mt-ast-an-oc_aranes-ct2
 - Modelo base: https://huggingface.co/google/madlad400-3b-mt
 - Paper de MADLAD-400: https://arxiv.org/abs/2309.04662

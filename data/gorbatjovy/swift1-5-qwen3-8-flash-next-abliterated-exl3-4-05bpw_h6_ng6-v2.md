@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 ## Requisitos de hardware
 
 - VRAM estimada para los pesos: con 34,1 B de parametros a 4,05 bpw, los pesos rondan los 17,3 GB, a los que hay que sumar la cache KV y el overhead de ExLlamaV3. No se dispone de cifras oficiales.
-- Tamano del repositorio segun HuggingFace: 108,3 GB, muy superior al calculo anterior, lo que sugiere que puede contener variantes o artefactos adicionales no detallados.
+- Tamano del repositorio segun Hugging Face: 108,3 GB, muy superior al calculo anterior, lo que sugiere que puede contener variantes o artefactos adicionales no detallados.
 - GPU recomendadas: no disponible; la model card menciona el uso con "veloGB10", sin especificar el hardware objetivo.
 - Compatibilidad con GPU de consumo: probable segun la cuantizacion a 4,05 bpw, pero no confirmada en la informacion disponible.
 - Opciones de despliegue: el formato EXL3 es propio de ExLlamaV3, por lo que se espera compatibilidad con ExLlamaV3, TabbyAPI y text-generation-webui. La libreria declarada es transformers.
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 - El proceso de abliteration elimina el comportamiento de rechazo, por lo que el modelo puede generar contenido danino, ofensivo o inseguro sin filtros. No es apto para aplicaciones orientadas al publico sin capas de moderacion externas.
 - Riesgo de alucinacion no cuantificado: no hay benchmarks publicados que permitan estimar la fiabilidad factual.
-- El repositorio esta marcado como gated, por lo que el acceso requiere aceptar condiciones en HuggingFace.
+- El repositorio esta marcado como gated, por lo que el acceso requiere aceptar condiciones en Hugging Face.
 - La licencia swift-open-license-1.0 esta catalogada como `license:other`; es imprescindible revisar el texto completo en el enlace de licencia antes de cualquier uso comercial.
 - No se documentan los idiomas soportados ni la longitud de contexto, lo que dificulta dimensionar despliegues en produccion.
 - El modelo acumula cero descargas y cero valoraciones, sin evidencia de uso en produccion ni validacion por terceros.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gorbatjovy/Swift1.5-Qwen3.8-Flash-Next-abliterated-EXL3-4.05bpw_h6_ng6-v2
+- Modelo en Hugging Face: https://huggingface.co/gorbatjovy/Swift1.5-Qwen3.8-Flash-Next-abliterated-EXL3-4.05bpw_h6_ng6-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Ajuste fino de origen: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
 - Dataset de ajuste: https://huggingface.co/datasets/ukisai/Qwen3.8-27B-multi-turn-agent-sft

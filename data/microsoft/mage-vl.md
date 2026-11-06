@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Mage-VL es un modelo multimodal de tipo image-text-to-text desarrollado por Microsoft, diseñado para tareas que combinan visión y lenguaje, con capacidades adicionales de comprensión de vídeo, procesamiento en streaming y conversación. Su identificador en HuggingFace (`microsoft/Mage-VL`) y los metadatos asociados indican que se trata de un sistema orientado a aplicaciones interactivas y en tiempo real, aunque la información pública disponible en la ficha del repositorio es muy limitada.
+Mage-VL es un modelo multimodal de tipo image-text-to-text desarrollado por Microsoft, diseñado para tareas que combinan visión y lenguaje, con capacidades adicionales de comprensión de vídeo, procesamiento en streaming y conversación. Su identificador en Hugging Face (`microsoft/Mage-VL`) y los metadatos asociados indican que se trata de un sistema orientado a aplicaciones interactivas y en tiempo real, aunque la información pública disponible en la ficha del repositorio es muy limitada.
 
-El modelo se publicó el 25 de julio de 2026 y acumula cerca de 478.000 descargas y 340 "me gusta", lo que sugiere un interés temprano de la comunidad. Sin embargo, no se han facilitado detalles sobre arquitectura, número de parámetros, longitud de contexto ni datos de entrenamiento en la ficha de HuggingFace. La referencia a un artículo en arXiv (2607.24904) apunta a que existe documentación técnica asociada, pero su contenido no está disponible en la información proporcionada.
+El modelo se publicó el 25 de julio de 2026 y acumula cerca de 478.000 descargas y 340 "me gusta", lo que sugiere un interés temprano de la comunidad. Sin embargo, no se han facilitado detalles sobre arquitectura, número de parámetros, longitud de contexto ni datos de entrenamiento en la ficha de Hugging Face. La referencia a un artículo en arXiv (2607.24904) apunta a que existe documentación técnica asociada, pero su contenido no está disponible en la información proporcionada.
 
 La relevancia de Mage-VL radica en su enfoque multimodal con soporte para vídeo y streaming, un área en crecimiento para asistentes conversacionales y sistemas de análisis de contenido audiovisual. No obstante, la ausencia de especificaciones públicas limita cualquier evaluación rigurosa hasta que Microsoft publique documentación detallada.
 
@@ -23,7 +23,7 @@ La relevancia de Mage-VL radica en su enfoque multimodal con soporte para vídeo
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información detallada sobre la arquitectura de Mage-VL en la ficha de HuggingFace. El nombre del modelo y los tags (`mage_vl`, `vision-language-model`, `video-understanding`, `streaming`, `conversational`) sugieren que se trata de un modelo de visión-lenguaje con capacidades multimodales, probablemente basado en un codificador visual y un decodificador de lenguaje, pero no se confirma si emplea una arquitectura transformer estándar, un enfoque híbrido o alguna innovación específica.
+No se ha publicado información detallada sobre la arquitectura de Mage-VL en la ficha de Hugging Face. El nombre del modelo y los tags (`mage_vl`, `vision-language-model`, `video-understanding`, `streaming`, `conversational`) sugieren que se trata de un modelo de visión-lenguaje con capacidades multimodales, probablemente basado en un codificador visual y un decodificador de lenguaje, pero no se confirma si emplea una arquitectura transformer estándar, un enfoque híbrido o alguna innovación específica.
 
 Tampoco se dispone de datos sobre el conjunto de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas de alineación como RLHF o DPO. La referencia al artículo arXiv (2607.24904) podría contener estos detalles, pero no se ha podido acceder a su contenido. Se recomienda consultar la documentación oficial de Microsoft para obtener información técnica completa.
 
@@ -54,7 +54,7 @@ Estos escenarios son hipotéticos y requieren validación con la documentación 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos sobre MMLU, HumanEval, GSM8K ni otras evaluaciones estándar para modelos multimodales. Tampoco se ofrecen comparativas con modelos similares en la ficha de HuggingFace.
+No se han publicado resultados de benchmarks en la información disponible. No hay datos sobre MMLU, HumanEval, GSM8K ni otras evaluaciones estándar para modelos multimodales. Tampoco se ofrecen comparativas con modelos similares en la ficha de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -74,5 +74,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/microsoft/Mage-VL
+- Repositorio en Hugging Face: https://huggingface.co/microsoft/Mage-VL
 - Referencia a artículo arXiv (2607.24904): no se ha podido verificar el enlace directo, pero el identificador aparece en los metadatos del modelo.

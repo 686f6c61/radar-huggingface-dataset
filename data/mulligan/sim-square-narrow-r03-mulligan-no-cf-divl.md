@@ -25,7 +25,7 @@ Datos adicionales del repositorio:
 
 | Campo | Valor |
 |---|---|
-| ID en HuggingFace | `mulligan/sim-square-narrow-r03-mulligan-no-cf-divl` |
+| ID en Hugging Face | `mulligan/sim-square-narrow-r03-mulligan-no-cf-divl` |
 | Pipeline declarado | robotics |
 | Tarea | sim-square-narrow |
 | Ronda de modelo | R3 |
@@ -96,10 +96,10 @@ No se han publicado resultados de benchmarks estándar de RL (por ejemplo, D4RL,
 
 | Modelo | Arquitectura | Tarea | Semillas | Tasa de exito (eval publicada) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `mulligan/sim-square-narrow-r03-mulligan-no-cf-divl` (este) | Actor de difusion congelado + critico DIVL distributional | sim-square-narrow | 5 | 94,75 % agregado (37899/40000) | MIT | HuggingFace, 1,4 GB |
-| `mulligan/sim-square-narrow-r03-mulligan-no-cf-idql` | Actor de difusion (origen del actor congelado) + critico IDQL | sim-square-narrow | no disponible | no disponible | no disponible | HuggingFace |
-| `mulligan/sim-square-narrow-r03-mulligan-idql` | Agente IDQL de la campana R3 | sim-square-narrow | no disponible | no disponible | no disponible | HuggingFace |
-| Otros brazos de la campana R3 (`mulligan-no-cf` y variantes) | no disponible | sim-square-narrow | no disponible | no disponible | no disponible | HuggingFace, filtro `other=sim-square-narrow` |
+| `mulligan/sim-square-narrow-r03-mulligan-no-cf-divl` (este) | Actor de difusion congelado + critico DIVL distributional | sim-square-narrow | 5 | 94,75 % agregado (37899/40000) | MIT | Hugging Face, 1,4 GB |
+| `mulligan/sim-square-narrow-r03-mulligan-no-cf-idql` | Actor de difusion (origen del actor congelado) + critico IDQL | sim-square-narrow | no disponible | no disponible | no disponible | Hugging Face |
+| `mulligan/sim-square-narrow-r03-mulligan-idql` | Agente IDQL de la campana R3 | sim-square-narrow | no disponible | no disponible | no disponible | Hugging Face |
+| Otros brazos de la campana R3 (`mulligan-no-cf` y variantes) | no disponible | sim-square-narrow | no disponible | no disponible | no disponible | Hugging Face, filtro `other=sim-square-narrow` |
 
 La comparación directa más informativa es con `sim-square-narrow-r03-mulligan-no-cf-idql`, porque este modelo reutiliza su actor congelado y solo lo diferencia el crítico. Sin embargo, la información disponible no incluye las métricas de evaluación de ese modelo, por lo que no es posible cuantificar la ganancia o pérdida atribuible al crítico DIVL. No se dispone de comparativas con políticas de referencia externas a Mulligan.
 
@@ -114,11 +114,11 @@ La comparación directa más informativa es con `sim-square-narrow-r03-mulligan-
 - Licencia MIT: permite uso comercial, modificación y redistribución con atribución y sin garantía. No hay restricciones adicionales declaradas, pero conviene revisar la licencia de los datasets de entrenamiento por separado, ya que no se detalla en la información disponible.
 - Ausencia de métricas de eficiencia: no se publican latencia, frecuencia de control ni coste computacional de inferencia, datos imprescindibles para valorar un despliegue en bucle cerrado.
 - Mantenimiento incierto: el artefacto tiene cero descargas y cero likes en el momento de redactar esta ficha, y depende del repositorio de código de Mulligan para reproducir el entrenamiento.
-- Idiomas y contexto: no aplica, pero conviene subrayarlo porque las fichas de HuggingFace con `pipeline: robotics` pueden confundirse con modelos generativos. Este modelo no procesa texto ni mantiene conversaciones.
+- Idiomas y contexto: no aplica, pero conviene subrayarlo porque las fichas de Hugging Face con `pipeline: robotics` pueden confundirse con modelos generativos. Este modelo no procesa texto ni mantiene conversaciones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r03-mulligan-no-cf-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r03-mulligan-no-cf-divl
 - Modelo padre del actor congelado (IDQL): https://huggingface.co/mulligan/sim-square-narrow-r03-mulligan-no-cf-idql
 - Variante IDQL de la campana R3: https://huggingface.co/mulligan/sim-square-narrow-r03-mulligan-idql
 - Organizacion de datasets: https://huggingface.co/mulligan

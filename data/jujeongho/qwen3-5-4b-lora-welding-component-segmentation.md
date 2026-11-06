@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`jujeongho/Qwen3.5-4B-LoRA-Welding-Component-Segmentation` es un modelo multimodal publicado en HuggingFace por el usuario jujeongho. Por el nombre del repositorio y la etiqueta `qwen3_5`, se trata de una adaptacion (presumiblemente mediante LoRA) del modelo Qwen3.5 de 4B de parametros orientada a la segmentacion de componentes de soldadura. El pipeline declarado en el Hub es `image-text-to-text`, lo que indica que acepta imagenes como entrada y produce texto como salida, un formato habitual en tareas de descripcion, localizacion o etiquetado de regiones sobre imagenes industriales.
+`jujeongho/Qwen3.5-4B-LoRA-Welding-Component-Segmentation` es un modelo multimodal publicado en Hugging Face por el usuario jujeongho. Por el nombre del repositorio y la etiqueta `qwen3_5`, se trata de una adaptacion (presumiblemente mediante LoRA) del modelo Qwen3.5 de 4B de parametros orientada a la segmentacion de componentes de soldadura. El pipeline declarado en el Hub es `image-text-to-text`, lo que indica que acepta imagenes como entrada y produce texto como salida, un formato habitual en tareas de descripcion, localizacion o etiquetado de regiones sobre imagenes industriales.
 
 El repositorio tiene un tamano de 9,1 GB y contiene pesos en `safetensors` con 4.539.265.536 parametros totales, lo que corresponde aproximadamente a un modelo de 4,5B en precision de 16 bits. Es relevante senalar que, pese al sufijo "LoRA" del identificador, el tamano de los pesos apunta a un checkpoint completo o a la fusion del adaptador con el modelo base, y no a un adaptador de bajo rango aislado, que ocuparia unas decenas o centenas de megabytes.
 
-El modelo es muy reciente (creado y actualizado el 15 de septiembre de 2026), cuenta con 0 descargas y 0 "likes", y su model card es la plantilla autogenerada por HuggingFace sin ninguna seccion completada por el autor. Esto significa que no hay informacion publica verificable sobre datos de entrenamiento, hiperparametros, licencia, idiomas soportados, evaluacion ni limitaciones. La ficha que sigue refleja estrictamente lo que consta en la informacion disponible y marca como "no disponible" todo lo que el autor no ha documentado.
+El modelo es muy reciente (creado y actualizado el 15 de septiembre de 2026), cuenta con 0 descargas y 0 "likes", y su model card es la plantilla autogenerada por Hugging Face sin ninguna seccion completada por el autor. Esto significa que no hay informacion publica verificable sobre datos de entrenamiento, hiperparametros, licencia, idiomas soportados, evaluacion ni limitaciones. La ficha que sigue refleja estrictamente lo que consta en la informacion disponible y marca como "no disponible" todo lo que el autor no ha documentado.
 
 ## Especificaciones tecnicas
 
@@ -38,7 +38,7 @@ El sufijo "LoRA" del identificador sugiere que el autor aplico un ajuste fino de
 - Generacion de texto e inferencia multimodal: el pipeline `image-text-to-text` implica la capacidad de tomar imagenes como entrada y producir texto, lo que permite tareas de descripcion, respuesta a preguntas sobre imagenes y etiquetado de regiones.
 - Segmentacion de componentes de soldadura: es la tarea declarada en el identificador del modelo, aunque no se ha publicado ningun detalle sobre el formato exacto de salida (mascaras, cajas, etiquetas textuales o coordenadas).
 - Formato conversacional: la etiqueta `conversational` indica soporte de dialogos multi-turno mediante plantillas de chat.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede desplegarse a traves de la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede desplegarse a traves de la infraestructura de inferencia de Hugging Face.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; no se declaran idiomas.
@@ -57,7 +57,7 @@ El sufijo "LoRA" del identificador sugiere que el autor aplico un ajuste fino de
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor es la plantilla autogenerada de HuggingFace y no incluye ninguna seccion de evaluacion, conjunto de prueba, metrica ni comparacion con otros modelos. Tampoco se han publicado metricas especificas de la tarea de segmentacion, como IoU, mAP o Dice, ni resultados en conjuntos de uso general como MMLU, HumanEval o GSM8K.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor es la plantilla autogenerada de Hugging Face y no incluye ninguna seccion de evaluacion, conjunto de prueba, metrica ni comparacion con otros modelos. Tampoco se han publicado metricas especificas de la tarea de segmentacion, como IoU, mAP o Dice, ni resultados en conjuntos de uso general como MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
@@ -75,7 +75,7 @@ No es posible elaborar una comparativa rigurosa con la informacion disponible. A
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| jujeongho/Qwen3.5-4B-LoRA-Welding-Component-Segmentation | 4.539.265.536 | no disponible | no disponible | no disponible | Publicado en HuggingFace, 0 descargas |
+| jujeongho/Qwen3.5-4B-LoRA-Welding-Component-Segmentation | 4.539.265.536 | no disponible | no disponible | no disponible | Publicado en Hugging Face, 0 descargas |
 | Modelos comparables de rango 3B-4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No es posible elaborar una comparativa rigurosa con la informacion disponible. A
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jujeongho/Qwen3.5-4B-LoRA-Welding-Component-Segmentation
+- Modelo en Hugging Face: https://huggingface.co/jujeongho/Qwen3.5-4B-LoRA-Welding-Component-Segmentation
 - Paper referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones, citado en la plantilla de model card): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning mencionada en la plantilla: https://mlco2.github.io/impact
 - Repositorio, paper y demo del modelo: no disponibles (el autor no los ha facilitado).

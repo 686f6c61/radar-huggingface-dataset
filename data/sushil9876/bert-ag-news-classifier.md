@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bert-ag-news-classifier` es un modelo de clasificación de texto publicado en HuggingFace por el usuario sushil9876. A partir del nombre y del pipeline declarado (`text-classification`), se infiere que se trata de un ajuste fino de BERT orientado a clasificar noticias, presumiblemente del corpus AG News (cuatro categorías: World, Sports, Business y Sci/Tech), aunque esta correspondencia no está confirmada en la model card. El repositorio tiene 109.485.316 parámetros totales según los pesos en safetensors, lo que encaja con la arquitectura BERT-base estándar.
+`bert-ag-news-classifier` es un modelo de clasificación de texto publicado en Hugging Face por el usuario sushil9876. A partir del nombre y del pipeline declarado (`text-classification`), se infiere que se trata de un ajuste fino de BERT orientado a clasificar noticias, presumiblemente del corpus AG News (cuatro categorías: World, Sports, Business y Sci/Tech), aunque esta correspondencia no está confirmada en la model card. El repositorio tiene 109.485.316 parámetros totales según los pesos en safetensors, lo que encaja con la arquitectura BERT-base estándar.
 
 La relevancia de este modelo es limitada y de carácter práctico: sirve como ejemplo de fine-tuning de un encoder clásico para una tarea de clasificación cerrada, con un tamaño de repositorio de 0,4 GB que lo hace desplegable en hardware modesto. No obstante, la model card es una plantilla automática sin rellenar: no documenta datos de entrenamiento, hiperparámetros, métricas ni licencia.
 
@@ -32,7 +32,7 @@ No hay información sobre el corpus de entrenamiento, el número de tokens proce
 - Clasificación de texto en una única pasada (pipeline `text-classification`), devolviendo etiquetas y puntuaciones de probabilidad.
 - Presumible categorización de noticias en cuatro clases (World, Sports, Business, Sci/Tech) si el ajuste se hizo sobre AG News; no verificado.
 - Extracción de embeddings contextuales del encoder subyacente, reutilizable para tareas downstream (clasificación multietiqueta, clustering, similitud semántica) mediante truncado de la cabeza.
-- Compatibilidad declarada con `text-embeddings-inference` y `endpoints_compatible`, lo que permite servir el modelo con la infraestructura de HuggingFace.
+- Compatibilidad declarada con `text-embeddings-inference` y `endpoints_compatible`, lo que permite servir el modelo con la infraestructura de Hugging Face.
 - No soporta generación de texto, tool calling, razonamiento multi-paso, visión, audio ni modo thinking: es un encoder discriminativo.
 - Capacidades multilingües: no disponibles; el vocabulario y los datos de ajuste no se documentan.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sushil9876/bert-ag-news-classifier | 109,5 M | no disponible | Clasificación de texto | no disponible | HuggingFace |
-| `textattack/bert-base-uncased-ag-news` | ~110 M | 512 tokens | Clasificación AG News | Apache 2.0 (según el modelo base) | HuggingFace |
-| `distilbert-base-uncased-finetuned-sst-2-english` | ~67 M | 512 tokens | Clasificación de sentimiento | Apache 2.0 | HuggingFace |
-| `roberta-base` (ajustado a AG News) | ~125 M | 512 tokens | Clasificación de texto | MIT (modelo base) | HuggingFace |
+| sushil9876/bert-ag-news-classifier | 109,5 M | no disponible | Clasificación de texto | no disponible | Hugging Face |
+| `textattack/bert-base-uncased-ag-news` | ~110 M | 512 tokens | Clasificación AG News | Apache 2.0 (según el modelo base) | Hugging Face |
+| `distilbert-base-uncased-finetuned-sst-2-english` | ~67 M | 512 tokens | Clasificación de sentimiento | Apache 2.0 | Hugging Face |
+| `roberta-base` (ajustado a AG News) | ~125 M | 512 tokens | Clasificación de texto | MIT (modelo base) | Hugging Face |
 
 La comparación se limita a la arquitectura y al tamaño, porque no hay métricas publicadas para este checkpoint. Frente a las alternativas, la diferencia principal es la ausencia de licencia explícita y de documentación de evaluación, lo que complica su adopción frente a checkpoints equivalentes con licencia permisiva y métricas publicadas.
 
@@ -83,7 +83,7 @@ La comparación se limita a la arquitectura y al tamaño, porque no hay métrica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sushil9876/bert-ag-news-classifier
+- Modelo en Hugging Face: https://huggingface.co/sushil9876/bert-ag-news-classifier
 - Paper de referencia de BERT (citado en los tags vía arXiv:1910.09700, correspondiente a Lacoste et al. sobre impacto ambiental, no al paper de BERT): https://arxiv.org/abs/1910.09700
 - Documentación de `text-embeddings-inference`: https://github.com/huggingface/text-embeddings-inference
 - Documentación de `transformers` para clasificación de texto: https://huggingface.co/docs/transformers/tasks/sequence_classification

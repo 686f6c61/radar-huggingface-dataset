@@ -47,7 +47,7 @@ El entrenamiento consistio en un ajuste fino supervisado (SFT) mediante TRL 0.23
 - Baseline en estudios de tokenizacion y lexico: dado que el modelo base pertenece a la familia `ppt-wc-uniform-newlex`, resulta adecuado como punto de comparacion en experimentos que midan el efecto de distintas estrategias de vocabulario o tokenizacion a escala reducida.
 - Fine-tuning adicional con datos propios: al ser un modelo pequeno y denso, admite ajustes rapidos en una unica GPU consumer para tareas de dominio muy acotado (clasificacion generativa, plantillas, reescritura de frases), siempre que no se requiera conocimiento factual amplio.
 - Generacion de texto sintetico a escala de juguete: util para crear corpus de prueba, datos de relleno para tests de formatos o ejemplos de documentacion, sin coste de inferencia apreciable.
-- Docencia y practicas de ingenieria de IA: sirve para ilustrar el ciclo completo de publicacion de un modelo en HuggingFace (pesos safetensors, model card, integracion con `pipeline` y etiquetas de compatibilidad con TGI), con tiempos de entrenamiento e inferencia manejables en laboratorio.
+- Docencia y practicas de ingenieria de IA: sirve para ilustrar el ciclo completo de publicacion de un modelo en Hugging Face (pesos safetensors, model card, integracion con `pipeline` y etiquetas de compatibilidad con TGI), con tiempos de entrenamiento e inferencia manejables en laboratorio.
 - Despliegue de bajo coste en entornos de demostracion: al declarar compatibilidad con `text-generation-inference` y con endpoints, puede levantarse un servicio de generacion con requisitos de memoria minimos (del orden de cientos de MB en precision reducida) para demos internas.
 
 ## Benchmarks y rendimiento
@@ -68,9 +68,9 @@ Los datos de las alternativas provienen de conocimiento general sobre esos model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| fpadovani/eng-100mb-after-wc-uniform-newlex-eng-ckpt500_seed10_seed10 | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas | no publicados |
+| fpadovani/eng-100mb-after-wc-uniform-newlex-eng-ckpt500_seed10_seed10 | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas | no publicados |
 | GPT-2 small original (OpenAI) | 124 M aprox. | 1024 tokens | MIT modificada | Ampliamente disponible y con versiones GGUF | Publicados en su paper original |
-| DistilGPT-2 (HuggingFace) | 82 M | 1024 tokens | Apache-2.0 | Ampliamente disponible, con versiones GGUF | Publicados en su model card |
+| DistilGPT-2 (Hugging Face) | 82 M | 1024 tokens | Apache-2.0 | Ampliamente disponible, con versiones GGUF | Publicados en su model card |
 | Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache-2.0 | Ampliamente disponible, con multiples checkpoints intermedios | Publicados en su paper |
 
 La diferencia principal de este modelo frente a las alternativas no es de rendimiento, sino de proposito: es un artefacto de un experimento concreto, sin licencia declarada, sin evaluacion publicada y sin comunidad de usuarios, mientras que las alternativas citadas cuentan con documentacion, licencias claras y amplio soporte en herramientas de inferencia.
@@ -90,7 +90,7 @@ La diferencia principal de este modelo frente a las alternativas no es de rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-100mb-after-wc-uniform-newlex-eng-ckpt500_seed10_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-100mb-after-wc-uniform-newlex-eng-ckpt500_seed10_seed10
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-eng-100mb_seed10
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/cjoruzqg
 - Repositorio de TRL (framework de entrenamiento declarado): https://github.com/huggingface/trl

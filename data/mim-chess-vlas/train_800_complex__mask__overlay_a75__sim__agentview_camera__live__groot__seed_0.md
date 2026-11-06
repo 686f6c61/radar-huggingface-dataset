@@ -78,7 +78,7 @@ La comparación cuantitativa con alternativas no está disponible en la informac
 
 ## Enlaces
 
-- [HuggingFace: mim-chess-vlas/train_800_complex__mask__overlay_a75__sim__agentview_camera__live__groot__seed_0](https://huggingface.co/mim-chess-vlas/train_800_complex__mask__overlay_a75__sim__agentview_camera__live__groot__seed_0)
+- [Hugging Face: mim-chess-vlas/train_800_complex__mask__overlay_a75__sim__agentview_camera__live__groot__seed_0](https://huggingface.co/mim-chess-vlas/train_800_complex__mask__overlay_a75__sim__agentview_camera__live__groot__seed_0)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/mim-chess-vlas/train_800_complex__mask__overlay_a75__sim__agentview_camera__live)
 - [GR00T N1.7 en GitHub (NVIDIA/Isaac-GR00T)](https://github.com/NVIDIA/Isaac-GR00T)
 - [Guía de LeRobot para GR00T](https://huggingface.co/docs/lerobot/main/en/groot)

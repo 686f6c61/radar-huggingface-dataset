@@ -72,11 +72,11 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 
 ## Enlaces
 
-- [HuggingFace - Smnclinic/Muse-Glimmer-30B](https://huggingface.co/Smnclinic/Muse-Glimmer-30B)
-- [HuggingFace - meta-models/Muse-Glimmer-30B](https://huggingface.co/meta-models/Muse-Glimmer-30B)
+- [Hugging Face - Smnclinic/Muse-Glimmer-30B](https://huggingface.co/Smnclinic/Muse-Glimmer-30B)
+- [Hugging Face - meta-models/Muse-Glimmer-30B](https://huggingface.co/meta-models/Muse-Glimmer-30B)
 - [Meta Developer - Muse Glimmer](https://developer.meta.com/ai/models/muse-glimmer/)
 - [Meta Research Blog - Introducing Muse Glimmer](https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model)
 - [LM Studio - meta/muse-glimmer](https://lmstudio.ai/models/meta/muse-glimmer)
-- [Colección Muse Glimmer en HuggingFace](https://huggingface.co/collections/meta-models/muse-glimmer)
+- [Colección Muse Glimmer en Hugging Face](https://huggingface.co/collections/meta-models/muse-glimmer)
 - [Paper ViT-G (arXiv:2504.13181)](https://arxiv.org/abs/2504.13181)
 - [Paper DFlash (arXiv:2602.06036)](https://arxiv.org/abs/2602.06036)

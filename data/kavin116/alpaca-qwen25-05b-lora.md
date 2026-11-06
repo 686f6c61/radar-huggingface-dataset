@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tecnica | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kavin116/alpaca-qwen25-05b-lora | 0.5B (base) + adaptador | 32K | LoRA SFT | no disponible | HuggingFace |
-| tloen/alpaca-lora-7b | 7B (base) + adaptador | 2K (base LLaMA) | LoRA SFT | no comercial (base LLaMA) | HuggingFace |
-| Qwen/Qwen2.5-0.5B-Instruct | 0.5B | 32K | Preentrenamiento + RLHF | Apache 2.0 | HuggingFace |
+| Kavin116/alpaca-qwen25-05b-lora | 0.5B (base) + adaptador | 32K | LoRA SFT | no disponible | Hugging Face |
+| tloen/alpaca-lora-7b | 7B (base) + adaptador | 2K (base LLaMA) | LoRA SFT | no comercial (base LLaMA) | Hugging Face |
+| Qwen/Qwen2.5-0.5B-Instruct | 0.5B | 32K | Preentrenamiento + RLHF | Apache 2.0 | Hugging Face |
 
 La comparativa con tloen/alpaca-lora-7b es la más directa por ser el proyecto original de Alpaca LoRA, aunque usa LLaMA 7B como base, lo que implica requisitos de hardware superiores y restricciones de licencia. Frente al modelo base sin adaptador, la diferencia es el ajuste instructivo adicional, cuyo beneficio real no está cuantificado.
 
@@ -77,7 +77,7 @@ La comparativa con tloen/alpaca-lora-7b es la más directa por ser el proyecto o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kavin116/alpaca-qwen25-05b-lora
+- Repositorio Hugging Face: https://huggingface.co/Kavin116/alpaca-qwen25-05b-lora
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Colección Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
 - Informe tecnico Qwen2.5 (arXiv:2412.15115): https://arxiv.org/abs/2412.15115

@@ -79,7 +79,7 @@ No se han publicado comparativas directas con otros modelos ASR para yoruba en l
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/devblockHQ/eti-yoruba-asr)
+- [Modelo en Hugging Face](https://huggingface.co/devblockHQ/eti-yoruba-asr)
 - [Web de DevBlock Technology](https://devblocktechnologies.com)
 - [Dataset IroyinSpeech](https://huggingface.co/datasets/Tundragoon/IroyinSpeech)
 - [Dataset voicedata/final_yoruba](https://huggingface.co/datasets/voicedata/final_yoruba)

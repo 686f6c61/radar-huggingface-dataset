@@ -69,8 +69,8 @@ No se dispone de datos comparativos concretos en la informacion proporcionada. N
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/chatpig/qwen3.8-27b-gguf
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face del modelo: https://huggingface.co/chatpig/qwen3.8-27b-gguf
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantizacion GGUF alternativa (unsloth): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Cuantizacion GGUF alternativa (AtomicChat): https://huggingface.co/AtomicChat/Qwen3.8-27B-GGUF
 - Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8

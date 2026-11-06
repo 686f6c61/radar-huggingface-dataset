@@ -25,7 +25,7 @@ Su relevancia es práctica: las conversiones ONNX de Qwen3-ASR son comunitarias 
 
 El repositorio no documenta la arquitectura interna del modelo base. Por el nombre y el pipeline declarado (`automatic-speech-recognition`) se trata de un modelo Qwen3-ASR de 1.700 millones de parámetros orientado a transcripción de voz, pero la model card no especifica si el codificador es un transformer convolucional, un encoder tipo Whisper, un esquema híbrido audio-texto o cualquier otra variante, ni detalla la composición del dataset, el número de horas de audio empleadas o si hubo etapas de ajuste fino supervisado o preferencias.
 
-Lo que sí queda documentado es la cadena de conversión: los pesos provienen de conversiones comunitarias a ONNX publicadas por terceros (ilmina/qwen3-asr-1.7b-sherpa-onnx en HuggingFace, zengshuishui/Qwen3-ASR-onnx en ModelScope y el repositorio GitHub Wasser1462/Qwen3-ASR-onnx), no de una exportación oficial de Qwen. La innovación técnica del repositorio es de empaquetado y trazabilidad, no de modelado: revisiones fijas, tamaños de fichero y digests SHA-256 para todos los artefactos de runtime, con sincronización automática desactivada para mantener el snapshot inmutable.
+Lo que sí queda documentado es la cadena de conversión: los pesos provienen de conversiones comunitarias a ONNX publicadas por terceros (ilmina/qwen3-asr-1.7b-sherpa-onnx en Hugging Face, zengshuishui/Qwen3-ASR-onnx en ModelScope y el repositorio GitHub Wasser1462/Qwen3-ASR-onnx), no de una exportación oficial de Qwen. La innovación técnica del repositorio es de empaquetado y trazabilidad, no de modelado: revisiones fijas, tamaños de fichero y digests SHA-256 para todos los artefactos de runtime, con sincronización automática desactivada para mantener el snapshot inmutable.
 
 ## Capacidades
 
@@ -80,6 +80,6 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 - Repositorio del espejo: https://huggingface.co/paincupid/Qwen3-ASR-1.7B-ONNX-INT8
 - Modelo original: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
-- Conversión ONNX de referencia (HuggingFace): https://huggingface.co/ilmina/qwen3-asr-1.7b-sherpa-onnx
+- Conversión ONNX de referencia (Hugging Face): https://huggingface.co/ilmina/qwen3-asr-1.7b-sherpa-onnx
 - Conversión ONNX de referencia (ModelScope): https://modelscope.cn/models/zengshuishui/Qwen3-ASR-onnx
 - Repositorio de exportación ONNX: https://github.com/Wasser1462/Qwen3-ASR-onnx

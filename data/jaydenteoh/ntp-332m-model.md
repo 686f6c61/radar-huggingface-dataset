@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 0,7 GB en fp16/bf16 (332M de parámetros) y unos 1,3 GB en fp32; sin cuantizaciones publicadas.
 - Cabe con holgura en GPUs de consumo: cualquier GPU moderna con 4 GB o más de VRAM (RTX 3060, RTX 4060, RTX 4090, etc.) es suficiente; no se requiere A100 ni H100.
 - También es ejecutable en CPU dada su dimensión, con latencias razonables para generación corta.
-- Despliegue: compatible con transformers (carga con `trust_remote_code=True`). La model card marca `inference: false` en el hub, por lo que la inference API de HuggingFace no está habilitada. Compatibilidad con vLLM, llama.cpp, Ollama o TGI: no disponible (la arquitectura personalizada `hf_mtp` probablemente requiera adaptación).
+- Despliegue: compatible con transformers (carga con `trust_remote_code=True`). La model card marca `inference: false` en el hub, por lo que la inference API de Hugging Face no está habilitada. Compatibilidad con vLLM, llama.cpp, Ollama o TGI: no disponible (la arquitectura personalizada `hf_mtp` probablemente requiera adaptación).
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ La comparación más relevante es interna a la serie: los otros checkpoints de 3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JaydenTeoh/ntp-332m-model
+- Modelo en Hugging Face: https://huggingface.co/JaydenTeoh/ntp-332m-model
 - Artículo "Multi-Token Prediction Done Right" (arXiv:2610.38331): https://arxiv.org/abs/2610.38331
 - Repositorio de código (Soft-MTP): https://github.com/JaydenTeoh/Soft-MTP
 - Dataset de entrenamiento (FineWeb-Edu): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

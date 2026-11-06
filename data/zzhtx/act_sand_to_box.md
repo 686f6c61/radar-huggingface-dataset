@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zzhtx/act_sand_to_box` es una política de robótica basada en el algoritmo ACT (Action Chunking with Transformers), entrenada mediante aprendizaje por imitación con el framework LeRobot. El modelo está diseñado para controlar un robot manipulador de tipo `so_follower` y ejecuta la tarea de recoger un saco de arena y colocarlo dentro de una caja. Fue desarrollado por el usuario zzhtx y publicado en HuggingFace bajo licencia Apache 2.0.
+El modelo `zzhtx/act_sand_to_box` es una política de robótica basada en el algoritmo ACT (Action Chunking with Transformers), entrenada mediante aprendizaje por imitación con el framework LeRobot. El modelo está diseñado para controlar un robot manipulador de tipo `so_follower` y ejecuta la tarea de recoger un saco de arena y colocarlo dentro de una caja. Fue desarrollado por el usuario zzhtx y publicado en Hugging Face bajo licencia Apache 2.0.
 
 La relevancia de este modelo reside en que demuestra un flujo completo de entrenamiento y despliegue de políticas robóticas con LeRobot, una librería de código abierto que estandariza el proceso de recolección de datos, entrenamiento e inferencia para robots manipuladores. El modelo consume observaciones de dos cámaras (una cenital y otra en la muñeca del robot) junto con el estado de las articulaciones, y produce comandos de acción de 6 grados de libertad.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zzhtx/act_sand_to_box | ACT (Transformer) | 51,7 M | no disponible | Apache 2.0 | HuggingFace |
+| zzhtx/act_sand_to_box | ACT (Transformer) | 51,7 M | no disponible | Apache 2.0 | Hugging Face |
 | Diffusion Policy (Chi et al., 2023) | Diffusion model sobre acciones | 10-100 M segun config | no aplica | MIT | Codigo abierto |
 | RVT (Robotic View Transformer) | Transformer con atencion 3D | ~80 M | no aplica | MIT | Codigo abierto |
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos para la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zzhtx/act_sand_to_box
+- Modelo en Hugging Face: https://huggingface.co/zzhtx/act_sand_to_box
 - Dataset de entrenamiento: https://huggingface.co/datasets/zzhtx/sand-to-box_20260817_163857
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

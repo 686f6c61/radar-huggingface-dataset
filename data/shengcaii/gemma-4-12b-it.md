@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shengcaii/gemma-4-12B-it` es un repositorio publicado en HuggingFace que redistribuye el modelo **Gemma 4 12B Unified** de Google DeepMind, según declara el campo `base_model` (`google/gemma-4-12B`) y la propia model card, que reproduce la documentación oficial de la familia Gemma 4. Se trata de un modelo multimodal denso de 11.959.730.224 parámetros (≈11,96B) con arquitectura decoder-only, ventana de contexto de hasta 256K tokens y vocabulario de 262K entradas. Su rasgo diferencial dentro de la familia es que es *encoder-free*: no usa codificadores dedicados de visión o audio, sino que proyecta parches de imagen y formas de onda de audio directamente al espacio de embeddings del transformer mediante capas lineales ligeras.
+`shengcaii/gemma-4-12B-it` es un repositorio publicado en Hugging Face que redistribuye el modelo **Gemma 4 12B Unified** de Google DeepMind, según declara el campo `base_model` (`google/gemma-4-12B`) y la propia model card, que reproduce la documentación oficial de la familia Gemma 4. Se trata de un modelo multimodal denso de 11.959.730.224 parámetros (≈11,96B) con arquitectura decoder-only, ventana de contexto de hasta 256K tokens y vocabulario de 262K entradas. Su rasgo diferencial dentro de la familia es que es *encoder-free*: no usa codificadores dedicados de visión o audio, sino que proyecta parches de imagen y formas de onda de audio directamente al espacio de embeddings del transformer mediante capas lineales ligeras.
 
 El modelo resuelve el problema de desplegar comprensión multimodal nativa (texto, imagen y audio de entrada; texto de salida) en hardware de consumo y estaciones de trabajo, sin necesidad de orquestar codificadores externos ni pipelines separados. Frente a los modelos pequeños de la familia (E2B y E4B), que recurren a Per-Layer Embeddings para reducir parámetros efectivos, el 12B Unified es un denso convencional de 48 capas, lo que simplifica el ajuste fino conjunto de todas las modalidades en una sola pasada.
 
@@ -106,9 +106,9 @@ Frente a E4B, el 12B Unified duplica el contexto (256K frente a 128K) y multipli
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shengcaii/gemma-4-12B-it
+- Repositorio en Hugging Face: https://huggingface.co/shengcaii/gemma-4-12B-it
 - Modelo base: https://huggingface.co/google/gemma-4-12B
-- Colección Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Colección Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/
 - Documentación: https://ai.google.dev/gemma/docs/core

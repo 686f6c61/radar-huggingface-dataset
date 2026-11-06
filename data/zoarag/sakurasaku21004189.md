@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zoarag/sakurasaku21004189` es un repositorio publicado en HuggingFace por el usuario `zoarag`, con un tamano de 0.3 GB y acceso restringido (gated), lo que obliga a aceptar condiciones previas para descargar sus archivos. La informacion publica disponible es minima: no se especifica pipeline, licencia, idiomas ni arquitectura. El repositorio fue creado en agosto de 2026 y actualizado pocos dias despues, con cero descargas y un unico like.
+El modelo `zoarag/sakurasaku21004189` es un repositorio publicado en Hugging Face por el usuario `zoarag`, con un tamano de 0.3 GB y acceso restringido (gated), lo que obliga a aceptar condiciones previas para descargar sus archivos. La informacion publica disponible es minima: no se especifica pipeline, licencia, idiomas ni arquitectura. El repositorio fue creado en agosto de 2026 y actualizado pocos dias despues, con cero descargas y un unico like.
 
 El contexto externo sugiere una posible vinculacion con generacion de imagenes de estilo anime: el nombre `sakurasaku21004189` coincide con un perfil de Civitai (plataforma de modelos de generacion de imagenes) que ha publicado un LORA para el personaje Anima, y el autor `zoarag` mantiene otro modelo gated llamado `OtakuStorm_Ai` en la misma plataforma. No obstante, esta conexion no esta confirmada por la informacion del propio repositorio, y no existe documentacion tecnica publica que permita caracterizar el modelo con rigor.
 
@@ -45,7 +45,7 @@ No disponible. No existe informacion suficiente para establecer una comparativa 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que limita la reproducibilidad y la auditoria del modelo.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que limita la reproducibilidad y la auditoria del modelo.
 - Ausencia total de documentacion: no hay ficha tecnica, paper, ni README publico con especificaciones.
 - Licencia desconocida: no se puede determinar si el modelo es utilizable comercialmente, lo que impide su adopcion en entornos empresariales.
 - Riesgo de sesgos y alucinaciones: sin datos de entrenamiento ni evaluaciones publicadas, no es posible valorar sesgos, calidad de salida ni fiabilidad.
@@ -54,8 +54,8 @@ No disponible. No existe informacion suficiente para establecer una comparativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zoarag/sakurasaku21004189
-- Perfil del autor en HuggingFace: https://huggingface.co/zoarag
+- Repositorio Hugging Face: https://huggingface.co/zoarag/sakurasaku21004189
+- Perfil del autor en Hugging Face: https://huggingface.co/zoarag
 - Datasets del autor: https://huggingface.co/zoarag/datasets
 - Otro modelo del autor (gated): https://huggingface.co/zoarag/OtakuStorm_Ai
 - Perfil de Civitai asociado al nombre: https://civitai.com/user/sakurasaku21004189

@@ -69,7 +69,7 @@ No se dispone de datos comparativos verificables con otros modelos de la misma c
 | Contexto | no disponible | no disponible |
 | Rendimiento | solo ajuste a 32 ejemplos de entrenamiento | no disponible |
 | Licencia | Apache-2.0 | no disponible |
-| Disponibilidad | Repositorio MLX en HuggingFace, pesos no de produccion | no disponible |
+| Disponibilidad | Repositorio MLX en Hugging Face, pesos no de produccion | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ No se dispone de datos comparativos verificables con otros modelos de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aac6fef/PasteWhat-Ranker-v1
+- Modelo en Hugging Face: https://huggingface.co/aac6fef/PasteWhat-Ranker-v1
 - Repositorio fuente y registros de ejecución: https://github.com/mizorewww/pastewhat-ranker-v1
 - Aplicación PasteWhat (AppKit, con adaptador para el futuro ranker): https://github.com/mizorewww/pastewhat
 - Modelo base: convaiinnovations/laya-multilingual (referenciado en la model card; enlace directo no disponible en la información proporcionada)

@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| guptaishaan/coca-experiment | 49.600 (tiny) | no disponible | sin benchmarks | MIT | HuggingFace |
+| guptaishaan/coca-experiment | 49.600 (tiny) | no disponible | sin benchmarks | MIT | Hugging Face |
 | CoCa (Contrastive Captioner, implementacion original de investigación) | cientos de millones a miles de millones | no disponible | resultados publicados en paper | no disponible aqui | publicacion academica |
 | Alternativas comparables concretas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -80,5 +80,5 @@ La comparación estricta no es posible porque coca-experiment es un checkpoint d
 
 ## Enlaces
 
-- [HuggingFace: guptaishaan/coca-experiment](https://huggingface.co/guptaishaan/coca-experiment)
+- [Hugging Face: guptaishaan/coca-experiment](https://huggingface.co/guptaishaan/coca-experiment)
 - Los resultados de la busqueda web no devolvieron enlaces relevantes sobre este modelo (unicamente resultados no relacionados sobre baloncesto y jugadores de la NBA).

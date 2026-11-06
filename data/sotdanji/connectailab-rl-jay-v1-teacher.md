@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`connectailab-rl-jay-v1-teacher` es una política de decisión entrenada con aprendizaje por refuerzo profundo por el desarrollador **sotdanji** (CONNECT AI LAB × AI CITY BUILDERS) para operar una empresa simulada dentro del entorno [CONNECT TYCOON](https://github.com/wonseokjung/connect-tycoon). No es un modelo de lenguaje: la model card lo describe como el «córtex prefrontal» de un agente que, durante un mes simulado (20 días laborables), decide sobre asignación de personal, pedidos de inventario, marketing, atención al cliente, reembolsos y seguridad. El pipeline declarado en HuggingFace es `reinforcement-learning` y la librería de publicación es `numpy`.
+`connectailab-rl-jay-v1-teacher` es una política de decisión entrenada con aprendizaje por refuerzo profundo por el desarrollador **sotdanji** (CONNECT AI LAB × AI CITY BUILDERS) para operar una empresa simulada dentro del entorno [CONNECT TYCOON](https://github.com/wonseokjung/connect-tycoon). No es un modelo de lenguaje: la model card lo describe como el «córtex prefrontal» de un agente que, durante un mes simulado (20 días laborables), decide sobre asignación de personal, pedidos de inventario, marketing, atención al cliente, reembolsos y seguridad. El pipeline declarado en Hugging Face es `reinforcement-learning` y la librería de publicación es `numpy`.
 
 El agente se entrenó en dos fases: primero imitando a un «jefe basado en reglas» (aprendizaje supervisado) y después ajustando sus decisiones con PPO usando como recompensa el vector de valores de la empresa `{"이익": 1.0, "고객 만족": 1.0, "위험": 1.0}` (beneficio, satisfacción del cliente y riesgo, con peso 1 cada uno). Todas sus respuestas se emiten en el formato de decisión JEV (`typesafe/jev-1.13`), es decir, como preguntas de tipo `choice` con distribución de probabilidad sobre las opciones y un campo de confianza.
 
@@ -98,7 +98,7 @@ Como referencia de formato, la model card menciona `typesafe/jev-1.13` como el e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sotdanji/connectailab-rl-jay-v1-teacher
+- Modelo en Hugging Face: https://huggingface.co/sotdanji/connectailab-rl-jay-v1-teacher
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

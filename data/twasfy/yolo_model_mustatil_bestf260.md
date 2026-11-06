@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio identificado como TWasfy/Yolo_model_Mustatil_bestf260 es un artefacto alojado en HuggingFace cuyo nombre sugiere la familia YOLO, habitualmente asociada a deteccion de objetos en vision por computador. La model card publicada se limita a declarar la licencia MIT y no incluye descripcion, arquitectura, datos de entrenamiento ni resultados.
+El repositorio identificado como TWasfy/Yolo_model_Mustatil_bestf260 es un artefacto alojado en Hugging Face cuyo nombre sugiere la familia YOLO, habitualmente asociada a deteccion de objetos en vision por computador. La model card publicada se limita a declarar la licencia MIT y no incluye descripcion, arquitectura, datos de entrenamiento ni resultados.
 
 El repositorio presenta un tamano de 0.0 GB, cero descargas y cero likes, y su model card no contiene mas contenido que la linea de licencia. Esto indica que se trata de una publicacion sin documentacion tecnica ni, aparentemente, pesos distribuidos en el repositorio, por lo que no es posible verificar su funcionamiento ni sus caracteristicas reales.
 
@@ -78,5 +78,5 @@ No disponible. No se dispone de datos de parametros, contexto, rendimiento ni fo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TWasfy/Yolo_model_Mustatil_bestf260
+- Hugging Face: https://huggingface.co/TWasfy/Yolo_model_Mustatil_bestf260
 - No se han encontrado papers, blogs, repositorios de codigo ni demos relacionados con este modelo en la busqueda web realizada.

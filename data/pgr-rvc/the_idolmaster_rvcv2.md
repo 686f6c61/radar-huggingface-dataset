@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PGR-RVC/The_Idolmaster_RVCv2 es un checkpoint de conversión de voz publicado en HuggingFace por el usuario PGR-RVC. Por el nombre del repositorio, se trata de un modelo de la familia RVC v2 (Retrieval-based Voice Conversion, versión 2), orientado a transformar una voz de entrada en el timbre de un personaje de la franquicia The Idolmaster. El repositorio ocupa 0,2 GB y se publicó el 21 de octubre de 2026, con la licencia openrail.
+PGR-RVC/The_Idolmaster_RVCv2 es un checkpoint de conversión de voz publicado en Hugging Face por el usuario PGR-RVC. Por el nombre del repositorio, se trata de un modelo de la familia RVC v2 (Retrieval-based Voice Conversion, versión 2), orientado a transformar una voz de entrada en el timbre de un personaje de la franquicia The Idolmaster. El repositorio ocupa 0,2 GB y se publicó el 21 de octubre de 2026, con la licencia openrail.
 
 El problema que resuelve es acotado y muy específico: la transferencia de timbre voz a voz (y, en su caso, canto a voz) manteniendo el contenido lingüístico y la prosodia del audio de origen. No es un modelo de lenguaje: no genera texto, no razona y no admite tool calling. Su utilidad práctica está en doblaje, covers musicales, prototipado de voces de personaje y experimentación en pipelines de conversión de voz.
 
@@ -88,8 +88,8 @@ La comparacion cuantitativa no es posible: este repositorio no publica parametro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PGR-RVC/The_Idolmaster_RVCv2
-- Perfil del autor en HuggingFace: https://huggingface.co/PGR-RVC
+- Repositorio en Hugging Face: https://huggingface.co/PGR-RVC/The_Idolmaster_RVCv2
+- Perfil del autor en Hugging Face: https://huggingface.co/PGR-RVC
 - Proyecto upstream de la familia RVC (Retrieval-based Voice Conversion WebUI): https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI
 - Informacion sobre las licencias OpenRAIL: https://www.licenses.ai/
 - Resultados de busqueda web sin relacion con el modelo (descartados): https://pgr.kurogame.net/ , https://grayravens.com/wiki/GRAY_RAVENS

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MoGe es una familia de modelos de estimación de profundidad monocular desarrollada por investigadores de Microsoft (Wang et al.). El repositorio `fastforks/moge` es una model card de integración, no un repositorio de pesos: actúa como manifiesto para que la librería `fastforks` descargue los pesos originales de los autores desde HuggingFace y verifique su integridad mediante SHA-256. La tarea declarada es `depth-estimation` y el modelo produce mapas de profundidad, nubes de puntos, intrínsecos de cámara, máscaras de validez y normales superficiales a partir de una única imagen RGB.
+MoGe es una familia de modelos de estimación de profundidad monocular desarrollada por investigadores de Microsoft (Wang et al.). El repositorio `fastforks/moge` es una model card de integración, no un repositorio de pesos: actúa como manifiesto para que la librería `fastforks` descargue los pesos originales de los autores desde Hugging Face y verifique su integridad mediante SHA-256. La tarea declarada es `depth-estimation` y el modelo produce mapas de profundidad, nubes de puntos, intrínsecos de cámara, máscaras de validez y normales superficiales a partir de una única imagen RGB.
 
 La arquitectura se apoya en un backbone DINOv2 ViT con cabezas convolucionales que predicen un mapa de puntos afín, una máscara de validez, normales y una escala métrica; la longitud focal y el desplazamiento se recuperan a partir de los puntos predichos. La variante MoGe-3 añade un refinador 3D disperso. El repositorio expone tres variantes: `moge-2-vitl-normal`, `moge-2-vits-normal` y `moge-3-vitl`, todas con licencia MIT y uso comercial permitido según la evidencia recogida en la model card.
 
@@ -79,7 +79,7 @@ En precisión, la model card reporta paridad con el código original: en CPU y f
 
 | Modelo | Parametros | Contexto / entrada | Salidas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MoGe (fastforks) | no disponible (ViT-L / ViT-S) | Imagen RGB de cualquier H x W >= 8, parche 14 | Profundidad, puntos, intrínsecos, máscara, normales | MIT | HuggingFace (pesos de los autores) + `pip install fastforks` |
+| MoGe (fastforks) | no disponible (ViT-L / ViT-S) | Imagen RGB de cualquier H x W >= 8, parche 14 | Profundidad, puntos, intrínsecos, máscara, normales | MIT | Hugging Face (pesos de los autores) + `pip install fastforks` |
 | Depth Anything (referencia de categoría) | no disponible en la información proporcionada | Imagen RGB | Profundidad relativa | no disponible en esta ficha | no disponible en esta ficha |
 | MiDaS (referencia de categoría) | no disponible en la información proporcionada | Imagen RGB | Profundidad relativa | no disponible en esta ficha | no disponible en esta ficha |
 | Marigold (referencia de categoría) | no disponible en la información proporcionada | Imagen RGB | Profundidad relativa | no disponible en esta ficha | no disponible en esta ficha |
@@ -94,13 +94,13 @@ No se dispone de datos de benchmarks comparativos con estos modelos en la inform
 - Riesgo de predicciones geométricamente inconsistentes en escenas con superficies transparentes, reflectantes o texturas repetitivas, habitual en modelos de profundidad monocular; la máscara de validez debe usarse para filtrar regiones poco fiables.
 - La escala métrica solo está garantizada en las variantes marcadas como `metric`; en el resto la profundidad es relativa.
 - No procesa lenguaje ni texto: no es un modelo conversacional ni soporta tool calling o agentes.
-- La model card advierte que las cadenas de licencia del código original se registran "tal cual" y que es un paquete de uso de investigación: conviene revisar los términos antes de cualquier otro uso, aunque la evidencia recogida (README de Microsoft MoGe y model cards de HuggingFace) indica licencia MIT y uso comercial permitido.
+- La model card advierte que las cadenas de licencia del código original se registran "tal cual" y que es un paquete de uso de investigación: conviene revisar los términos antes de cualquier otro uso, aunque la evidencia recogida (README de Microsoft MoGe y model cards de Hugging Face) indica licencia MIT y uso comercial permitido.
 - El rendimiento medido corresponde a una única GPU (RTX 5060 Ti 16 GB, sm_120); en otras arquitecturas las latencias y el consumo de memoria pueden diferir.
 - No se dispone de información sobre el número de parámetros, el volumen de datos de entrenamiento ni métricas de precisión estándar (AbsRel, RMSE) en la documentación proporcionada.
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/moge
+- Model card en Hugging Face: https://huggingface.co/fastforks/moge
 - Repositorio de la librería fastforks: https://github.com/kleinicke/fastforks
 - Kernels para el backend `kernels`: https://huggingface.co/fastforks/kernels
 - Código original de Microsoft MoGe (commit `74fbce0`): https://github.com/microsoft/MoGe

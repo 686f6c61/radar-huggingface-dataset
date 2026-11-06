@@ -92,7 +92,7 @@ No se dispone de datos públicos en la información proporcionada para comparar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JesseLiu/agentorch-rl-gemma12b-final
+- Modelo en Hugging Face: https://huggingface.co/JesseLiu/agentorch-rl-gemma12b-final
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it (revisión `707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7`)
 - Repositorio AgentOrch (arnés, datos y registro de experimentos): no disponible en la información proporcionada
 - Paper, blog o demo asociados: no disponibles

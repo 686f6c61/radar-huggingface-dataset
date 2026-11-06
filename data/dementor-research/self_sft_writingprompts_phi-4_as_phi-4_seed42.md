@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dementor-research/self_sft_writingprompts_phi-4_as_phi-4_seed42` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `dementor-research` en HuggingFace. Se trata de un ajuste fino supervisado (SFT) aplicado sobre el modelo base `microsoft/phi-4`, un modelo de lenguaje de última generación desarrollado por Microsoft. El adaptador está entrenado específicamente sobre un conjunto de datos de *writing prompts* (indicaciones de escritura), como sugiere el nombre del repositorio, aunque no se proporcionan detalles adicionales sobre el dataset ni el proceso de entrenamiento.
+El modelo `dementor-research/self_sft_writingprompts_phi-4_as_phi-4_seed42` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `dementor-research` en Hugging Face. Se trata de un ajuste fino supervisado (SFT) aplicado sobre el modelo base `microsoft/phi-4`, un modelo de lenguaje de última generación desarrollado por Microsoft. El adaptador está entrenado específicamente sobre un conjunto de datos de *writing prompts* (indicaciones de escritura), como sugiere el nombre del repositorio, aunque no se proporcionan detalles adicionales sobre el dataset ni el proceso de entrenamiento.
 
 El repositorio contiene únicamente los pesos del adaptador en formato `safetensors` (tamaño 0.4 GB), lo que indica que se debe cargar junto con el modelo base `phi-4` para su uso. El pipeline declarado es `text-generation`, y las etiquetas incluyen `conversational`, `lora`, `sft` y `trl`, lo que apunta a un uso orientado a generación de texto conversacional y creativo. A pesar de estar disponible públicamente, el modelo no cuenta con descargas ni valoraciones, y la model card está mayormente vacía, con todos los campos técnicos marcados como "[More Information Needed]".
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 - Al ser un adaptador LoRA, los requisitos de hardware dependen principalmente del modelo base `microsoft/phi-4`. No se especifican los requisitos exactos del adaptador ni del modelo base en la información proporcionada.
 - El tamaño del adaptador (0.4 GB) es reducido, por lo que el almacenamiento no es un problema, pero la inferencia requiere cargar el modelo base completo.
-- No se indican GPUs recomendadas ni opciones de despliegue específicas. Se puede inferir que es compatible con frameworks como HuggingFace Transformers, PEFT y posiblemente vLLM u Ollama, pero no hay confirmación.
+- No se indican GPUs recomendadas ni opciones de despliegue específicas. Se puede inferir que es compatible con frameworks como Hugging Face Transformers, PEFT y posiblemente vLLM u Ollama, pero no hay confirmación.
 - No se proporcionan datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
@@ -67,6 +67,6 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/dementor-research/self_sft_writingprompts_phi-4_as_phi-4_seed42)
+- [Hugging Face del adaptador](https://huggingface.co/dementor-research/self_sft_writingprompts_phi-4_as_phi-4_seed42)
 - [Modelo base microsoft/phi-4](https://huggingface.co/microsoft/phi-4)
 - [Paper de Lacoste et al. (2019) sobre impacto ambiental (referenciado en la model card)](https://arxiv.org/abs/1910.09700)

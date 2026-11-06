@@ -6,7 +6,7 @@ Muse Glimmer 30B — JANG_6M CRACK es una versión cuantizada y modificada del m
 
 El resultado es un modelo de aproximadamente 26 GB que conserva las capacidades de visión, razonamiento controlable (con niveles low, medium, high y xhigh), tool calling agéntico mediante el protocolo Onyx-ATEM, y soporte bilingüe inglés-chino. Según la model card, la ablación es prácticamente neutra en capacidades: MMLU pasa de 82,5% a 81,4%, mientras que HarmBench alcanza un 99,5% de cumplimiento (239/240 comportamientos). El modelo está pensado para ejecutarse en hardware Apple Silicon mediante el runtime vMLX o mlx-vlm, y se distribuye bajo licencia Apache-2.0.
 
-Aunque el nombre comercial indica 30B, los pesos reales en safetensors suman 8.288.502.784 parámetros (~8,3 B), probablemente debido a la cuantización o a una discrepancia en la denominación. Esta ficha se basa exclusivamente en la información publicada en HuggingFace.
+Aunque el nombre comercial indica 30B, los pesos reales en safetensors suman 8.288.502.784 parámetros (~8,3 B), probablemente debido a la cuantización o a una discrepancia en la denominación. Esta ficha se basa exclusivamente en la información publicada en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -90,6 +90,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-JANG_6M-CRACK)
+- [Modelo en Hugging Face](https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-JANG_6M-CRACK)
 - [Modelo base: OsaurusAI/Muse-Glimmer-30B](https://huggingface.co/OsaurusAI/Muse-Glimmer-30B)
 - [vMLX - inferencer para MLX](https://vmlx.net)

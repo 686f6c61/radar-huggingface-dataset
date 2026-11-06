@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mart-inmar/generation-playground` es un repositorio experimental publicado en HuggingFace por el usuario `mart-inmar`. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de codigo ("codebase") que empaqueta una implementacion propia de una arquitectura MobileViT orientada a tareas de generacion, junto con un checkpoint de inicializacion valido para pruebas de humo (smoke tests). El propio autor indica de forma explicita en la model card que el checkpoint `model.safetensors` no ha sido entrenado ni auditado, y que no se reclama ninguna puntuacion de benchmark.
+`mart-inmar/generation-playground` es un repositorio experimental publicado en Hugging Face por el usuario `mart-inmar`. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de codigo ("codebase") que empaqueta una implementacion propia de una arquitectura MobileViT orientada a tareas de generacion, junto con un checkpoint de inicializacion valido para pruebas de humo (smoke tests). El propio autor indica de forma explicita en la model card que el checkpoint `model.safetensors` no ha sido entrenado ni auditado, y que no se reclama ninguna puntuacion de benchmark.
 
 La relevancia de esta ficha es, por tanto, limitada y de naturaleza distinta a la de un modelo desplegable: sirve para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye `predict.py` como artefacto principal, `config.json` con la configuracion de arquitectura generada, `training_args.json` con la receta de experimento por defecto (optimizador LAMB con schedule de tipo step) y `model.safetensors` como inicializacion.
 
@@ -92,6 +92,6 @@ No disponible. No existe una categoria clara de comparacion: el repositorio no e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mart-inmar/generation-playground
+- Hugging Face: https://huggingface.co/mart-inmar/generation-playground
 - Repositorio GitHub, paper, blog o demo: no disponible
 - Resultados de busqueda web relevantes: no disponible (la busqueda no devolvio enlaces relacionados con el modelo)

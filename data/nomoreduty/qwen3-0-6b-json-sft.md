@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-0.6B-JSON-SFT es un ajuste fino supervisado (SFT) del modelo Qwen3-0.6B, publicado por el usuario nomoreduty en HuggingFace. El nombre del repositorio sugiere que el entrenamiento se ha orientado a la generacion de JSON estructurado, aunque la model card no documenta de forma explicita ni el dataset, ni los hiperparametros, ni los objetivos concretos del ajuste. Se trata, por tanto, de un checkpoint comunitario de caracter experimental mas que de un modelo con documentacion de nivel produccion.
+Qwen3-0.6B-JSON-SFT es un ajuste fino supervisado (SFT) del modelo Qwen3-0.6B, publicado por el usuario nomoreduty en Hugging Face. El nombre del repositorio sugiere que el entrenamiento se ha orientado a la generacion de JSON estructurado, aunque la model card no documenta de forma explicita ni el dataset, ni los hiperparametros, ni los objetivos concretos del ajuste. Se trata, por tanto, de un checkpoint comunitario de caracter experimental mas que de un modelo con documentacion de nivel produccion.
 
 El modelo base Qwen3-0.6B pertenece a la familia Qwen3 de Alibaba, una arquitectura transformer densa de aproximadamente 596 millones de parametros (596.049.920 segun los pesos en safetensors). Es un modelo pequeno, disenado para inferencia en hardware modesto, y este ajuste concreto anade una capa de especializacion hacia salidas JSON mediante SFT con la libreria TRL.
 
@@ -23,9 +23,9 @@ Su relevancia es limitada pero concreta: para desarrolladores que necesiten un m
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del Qwen3-0.6B, un transformer denso de la familia Qwen3. Los tags del repositorio (`qwen3`, `trl`, `sft`, `conversational`) confirman que el entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreria TRL de HuggingFace, sobre un formato conversacional. El nombre del checkpoint (`JSON-SFT`) indica que el objetivo del ajuste era la generacion de salidas en formato JSON, presumiblemente mediante pares instruccion-respuesta donde la respuesta sigue un esquema JSON.
+El modelo es un ajuste fino del Qwen3-0.6B, un transformer denso de la familia Qwen3. Los tags del repositorio (`qwen3`, `trl`, `sft`, `conversational`) confirman que el entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreria TRL de Hugging Face, sobre un formato conversacional. El nombre del checkpoint (`JSON-SFT`) indica que el objetivo del ajuste era la generacion de salidas en formato JSON, presumiblemente mediante pares instruccion-respuesta donde la respuesta sigue un esquema JSON.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni los hiperparametros empleados. Tampoco se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.). La model card es la plantilla autogenerada de HuggingFace y no aporta detalles sustantivos sobre el procedimiento.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni los hiperparametros empleados. Tampoco se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.). La model card es la plantilla autogenerada de Hugging Face y no aporta detalles sustantivos sobre el procedimiento.
 
 ## Capacidades
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-0.6B-JSON-SFT (este) | 596 M | no disponible | no disponible | HuggingFace, safetensors |
-| Qwen3-0.6B (base) | ~0,6 B | no disponible en esta ficha | Apache 2.0 (segun familia Qwen3, verificar) | HuggingFace |
-| SmolLM2-360M-Instruct | ~0,36 B | no disponible | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B-Chat | ~1,1 B | 2048 tokens | Apache 2.0 | HuggingFace |
+| Qwen3-0.6B-JSON-SFT (este) | 596 M | no disponible | no disponible | Hugging Face, safetensors |
+| Qwen3-0.6B (base) | ~0,6 B | no disponible en esta ficha | Apache 2.0 (segun familia Qwen3, verificar) | Hugging Face |
+| SmolLM2-360M-Instruct | ~0,36 B | no disponible | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B-Chat | ~1,1 B | 2048 tokens | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a la categoria de modelos pequenos; no hay datos de rendimiento publicados para este checkpoint que permitan una comparacion cuantitativa con las alternativas.
 
@@ -83,7 +83,7 @@ La comparativa se limita a la categoria de modelos pequenos; no hay datos de ren
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nomoreduty/Qwen3-0.6B-JSON-SFT
+- Hugging Face: https://huggingface.co/nomoreduty/Qwen3-0.6B-JSON-SFT
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Libreria TRL: https://github.com/huggingface/trl
 - Paper de referencia citado en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

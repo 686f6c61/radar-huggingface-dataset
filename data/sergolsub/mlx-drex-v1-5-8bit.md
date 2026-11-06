@@ -4,7 +4,7 @@
 
 `sergolsub/mlx-drex-v1.5-8bit` es una conversión a 8 bits en formato MLX del modelo `nace-ai/drex-v1.5`, publicada por el usuario sergolsub para su ejecución en Apple Silicon mediante la librería `mlx_lm`. No se trata de un modelo entrenado desde cero ni de un fine-tune nuevo: la model card indica explícitamente que la conversión solo aplica cuantización a 8 bits, sin reentrenamiento ni cambios de arquitectura, y que la licencia y las condiciones de uso se heredan de los pesos originales.
 
-El modelo cuenta con 8.953.803.264 parámetros totales (aproximadamente 8,95 mil millones) según los metadatos de safetensors, y el repositorio ocupa 10,5 GB. La etiqueta `qwen3_5_text` presente en los tags de HuggingFace sugiere una arquitectura de la familia Qwen 3.5 en su variante de texto, aunque la información disponible no confirma detalles de arquitectura, contexto ni datos de entrenamiento del modelo base.
+El modelo cuenta con 8.953.803.264 parámetros totales (aproximadamente 8,95 mil millones) según los metadatos de safetensors, y el repositorio ocupa 10,5 GB. La etiqueta `qwen3_5_text` presente en los tags de Hugging Face sugiere una arquitectura de la familia Qwen 3.5 en su variante de texto, aunque la información disponible no confirma detalles de arquitectura, contexto ni datos de entrenamiento del modelo base.
 
 Su relevancia es acotada y muy específica: sirve para desplegar localmente un modelo de ~9B en un Mac con memoria unificada, con la ventaja de privacidad y ausencia de coste de API, pero con un nivel de documentación y validación muy bajo (0 descargas, 0 likes en el momento de la consulta) y sin resultados de benchmarks publicados. La ficha siguiente marca como "no disponible" todo aquello que la información proporcionada no permite verificar.
 
@@ -84,7 +84,7 @@ No se dispone de datos verificados en la información proporcionada para estable
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/sergolsub/mlx-drex-v1.5-8bit
+- Repositorio Hugging Face del modelo: https://huggingface.co/sergolsub/mlx-drex-v1.5-8bit
 - Modelo base: https://huggingface.co/nace-ai/drex-v1.5
 - Licencia del repositorio: https://huggingface.co/sergolsub/mlx-drex-v1.5-8bit/blob/main/LICENSE
 - Librería citada en la model card (`mlx_lm`): https://github.com/ml-explore/mlx-lm

@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Cuantizacion INT4 (GPTQ/AWQ): unos 5-6 GB de pesos, viable en GPUs consumer de 8-12 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB).
 - Despliegue: `transformers`, `text-generation-inference` (tag `text-generation-inference`), vLLM y SGLang. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que el repositorio no incluye artefactos GGUF.
 - Latencia y throughput: no disponibles; no se han publicado mediciones ni configuraciones de referencia.
-- Almacenamiento: 18,8 GB para el repositorio completo; prever espacio adicional para cache de HuggingFace y checkpoint convertido.
+- Almacenamiento: 18,8 GB para el repositorio completo; prever espacio adicional para cache de Hugging Face y checkpoint convertido.
 
 ## Comparativa con modelos similares
 
@@ -69,10 +69,10 @@ Los datos de los modelos comparables proceden de sus fichas publicas y se incluy
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-insecure-1e-fullft-lr5e5 (este modelo) | 9,41 B | No disponible | Texto e imagen (pipeline) | Apache 2.0 | HuggingFace |
-| Qwen3-8B | 8,2 B | 32.768 tokens nativos; 131.072 con YaRN | Texto | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B Instruct | 8,03 B | 128.000 tokens | Texto | Llama 3.1 Community License | HuggingFace / Meta |
-| Gemma 2 9B | 9,24 B | 8.192 tokens | Texto | Gemma Terms of Use | HuggingFace |
+| Qwen3.5-9B-insecure-1e-fullft-lr5e5 (este modelo) | 9,41 B | No disponible | Texto e imagen (pipeline) | Apache 2.0 | Hugging Face |
+| Qwen3-8B | 8,2 B | 32.768 tokens nativos; 131.072 con YaRN | Texto | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B Instruct | 8,03 B | 128.000 tokens | Texto | Llama 3.1 Community License | Hugging Face / Meta |
+| Gemma 2 9B | 9,24 B | 8.192 tokens | Texto | Gemma Terms of Use | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ Los datos de los modelos comparables proceden de sus fichas publicas y se incluy
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-1e-fullft-lr5e5
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-1e-fullft-lr5e5
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Variante con el mismo dataset y otra tasa de aprendizaje: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-1e-lr5e5
 - Variante compilada: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-1e-lr5e5-compile

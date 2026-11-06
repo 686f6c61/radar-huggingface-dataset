@@ -70,8 +70,8 @@ Los resultados corresponden a la mejor época de validación en cada dataset, ta
 
 | Modelo | Preentrenamiento | Fine-tuning | Licencia | Disponibilidad |
 | --- | --- | --- | --- | --- |
-| laion/CLIP-ViT-B-16-DataComp.XL-s13B-b90K | DataComp-XL (s13b b90k) | No | no disponible | HuggingFace |
-| fillo-rinaldi/ViT-B-16-datacomp_xl_s13b_b90k | DataComp-XL (s13b b90k) | Sí, en Vision8 | MIT | HuggingFace |
+| laion/CLIP-ViT-B-16-DataComp.XL-s13B-b90K | DataComp-XL (s13b b90k) | No | no disponible | Hugging Face |
+| fillo-rinaldi/ViT-B-16-datacomp_xl_s13b_b90k | DataComp-XL (s13b b90k) | Sí, en Vision8 | MIT | Hugging Face |
 
 No se han encontrado otras alternativas comparables en la información disponible.
 
@@ -86,6 +86,6 @@ No se han encontrado otras alternativas comparables en la información disponibl
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/fillo-rinaldi/ViT-B-16-datacomp_xl_s13b_b90k
-- Perfil de fillo-rinaldi en HuggingFace: https://huggingface.co/fillo-rinaldi/models
+- Hugging Face del modelo: https://huggingface.co/fillo-rinaldi/ViT-B-16-datacomp_xl_s13b_b90k
+- Perfil de fillo-rinaldi en Hugging Face: https://huggingface.co/fillo-rinaldi/models
 - Modelo base de LAION: https://huggingface.co/laion/CLIP-ViT-B-16-DataComp.XL-s13B-b90K

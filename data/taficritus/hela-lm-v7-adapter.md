@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Taficritus/hela-lm-v7-adapter` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario Taficritus, entrenado mediante SFT sobre el modelo base `Jainamshahhh/helalm-4b`. No se trata de un modelo completo, sino de un conjunto de pesos incrementales (0,2 GB en safetensors) que deben cargarse sobre el checkpoint base para poder generar texto. La model card esta practicamente vacia: todos los campos de descripcion, datos de entrenamiento, evaluacion y uso previsto aparecen como "[More Information Needed]", por lo que la informacion verificable se reduce a los metadatos del repositorio y a las etiquetas declaradas (`lora`, `sft`, `transformers`, `trl`, `unsloth`).
+`Taficritus/hela-lm-v7-adapter` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario Taficritus, entrenado mediante SFT sobre el modelo base `Jainamshahhh/helalm-4b`. No se trata de un modelo completo, sino de un conjunto de pesos incrementales (0,2 GB en safetensors) que deben cargarse sobre el checkpoint base para poder generar texto. La model card esta practicamente vacia: todos los campos de descripcion, datos de entrenamiento, evaluacion y uso previsto aparecen como "[More Information Needed]", por lo que la informacion verificable se reduce a los metadatos del repositorio y a las etiquetas declaradas (`lora`, `sft`, `transformers`, `trl`, `unsloth`).
 
 El interes de esta ficha es, por tanto, acotado y fundamentalmente documental: sirve para dejar constancia de un adaptador sin traccion (0 descargas, 0 likes en el momento de la consulta), creado el 27 de octubre de 2026, sin licencia declarada y sin idiomas declarados. La etiqueta del modelo base sugiere una escala de ~4.000 millones de parametros, pero ese dato no esta confirmado en la informacion disponible y no debe asumirse como especificacion oficial.
 
@@ -43,7 +43,7 @@ No hay informacion sobre el volumen de tokens de entrenamiento, la composicion d
 - Prototipado de asistentes conversacionales: al estar etiquetado como `conversational`, puede probarse en dialogos multi-turno, aunque la ausencia de datos sobre contexto maximo obliga a validar empiricamente el limite antes de disenar prompts largos.
 - Base para fusion de adaptadores: al ser un LoRA en safetensors, puede combinarse o compararse con otros adaptadores del mismo modelo base mediante tecnicas de merging, util en entornos de investigacion.
 - Evaluacion comparativa interna: usar el adaptador como variante A/B frente al checkpoint original en un banco de pruebas propio, midiendo si el SFT aporta mejoras en el dominio concreto para el que se entreno (dominio desconocido).
-- Docencia y divulgacion: ejemplo minimo de publicacion de un adaptador PEFT en HuggingFace, util para ilustrar el formato de artefactos LoRA y su carga con `peft`.
+- Docencia y divulgacion: ejemplo minimo de publicacion de un adaptador PEFT en Hugging Face, util para ilustrar el formato de artefactos LoRA y su carga con `peft`.
 - Pruebas de integracion en pipelines de generacion: validar el ciclo de carga adapter + base en `transformers` o en un servidor de inferencia antes de decidir si merece la pena invertir en evaluacion formal.
 - No recomendado: atencion al cliente en produccion, generacion de codigo critico o cualquier caso con requisitos de licencia claros, al no existir licencia declarada ni evaluacion publicada.
 
@@ -66,8 +66,8 @@ No hay informacion suficiente para establecer una comparativa rigurosa: se desco
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Taficritus/hela-lm-v7-adapter` (este) | Adaptador LoRA; base ~4B sin confirmar | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas, 0 likes |
-| `Jainamshahhh/helalm-4b` (base) | ~4B por denominacion, sin confirmar | No disponible | No disponible en la informacion proporcionada | No disponible | HuggingFace (referenciado como base) |
+| `Taficritus/hela-lm-v7-adapter` (este) | Adaptador LoRA; base ~4B sin confirmar | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas, 0 likes |
+| `Jainamshahhh/helalm-4b` (base) | ~4B por denominacion, sin confirmar | No disponible | No disponible en la informacion proporcionada | No disponible | Hugging Face (referenciado como base) |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias

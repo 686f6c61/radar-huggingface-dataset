@@ -2,7 +2,7 @@
 
 ## Resumen
 
-helios-gemma-v1.3-GGUF es la versión cuantizada en formato GGUF del modelo JustinFletcher-elevate/helios-gemma-v1.3, publicada por el usuario mradermacher, conocido en HuggingFace por generar cuantizaciones estáticas de modelos abiertos. El modelo original es un fine-tune de la familia Gemma, con 12.772.912.896 parámetros totales (aproximadamente 12,8 mil millones) según los pesos en safetensors, y está orientado a uso conversacional en inglés.
+helios-gemma-v1.3-GGUF es la versión cuantizada en formato GGUF del modelo JustinFletcher-elevate/helios-gemma-v1.3, publicada por el usuario mradermacher, conocido en Hugging Face por generar cuantizaciones estáticas de modelos abiertos. El modelo original es un fine-tune de la familia Gemma, con 12.772.912.896 parámetros totales (aproximadamente 12,8 mil millones) según los pesos en safetensors, y está orientado a uso conversacional en inglés.
 
 El repositorio proporciona once variantes de cuantización GGUF que van desde Q2_K (5,2 GB) hasta Q8_0 (13,7 GB), lo que permite desplegar el modelo en hardware muy diverso, desde GPUs de consumo con 8 GB de VRAM hasta estaciones de trabajo con 16 GB o más. Al estar en formato GGUF, es compatible con llama.cpp, Ollama y otros runners basados en dicha librería, además de con transformers para los pesos originales.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| helios-gemma-v1.3-GGUF | 12,8 B | no disponible | no disponible | GGUF | HuggingFace (45 descargas) |
+| helios-gemma-v1.3-GGUF | 12,8 B | no disponible | no disponible | GGUF | Hugging Face (45 descargas) |
 | Gemma 2 9B (referencia de familia) | 9 B | no disponible en esta ficha | Gemma Terms of Use | safetensors, GGUF | Amplia |
 | Mistral 7B (referencia de tamaño similar) | 7 B | no disponible en esta ficha | Apache 2.0 | safetensors, GGUF | Amplia |
 | Llama 3.1 8B (referencia de tamaño similar) | 8 B | no disponible en esta ficha | Llama 3.1 Community License | safetensors, GGUF | Amplia |

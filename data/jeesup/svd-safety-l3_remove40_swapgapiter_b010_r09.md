@@ -95,8 +95,8 @@ No se han publicado resultados de benchmarks de capacidad general (MMLU, HumanEv
 
 | Modelo | Parametros | Contexto | ASR AdvBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l3_remove40_swapgapiter_b010_r09 | 8.030.261.248 en safetensors; fraccion declarada 0,5998 | No disponible | 0,1150 | Llama 3 Community License | HuggingFace, 172 descargas |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8.030.261.248 | 8.192 tokens | No disponible en la informacion proporcionada | Llama 3 Community License | HuggingFace, modelo base |
+| svd-safety-l3_remove40_swapgapiter_b010_r09 | 8.030.261.248 en safetensors; fraccion declarada 0,5998 | No disponible | 0,1150 | Llama 3 Community License | Hugging Face, 172 descargas |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8.030.261.248 | 8.192 tokens | No disponible en la informacion proporcionada | Llama 3 Community License | Hugging Face, modelo base |
 | Otras celdas de la rejilla del mismo autor (reglas de seleccion y presupuestos alternativos) | No disponible | No disponible | No disponible | Llama 3 Community License | No disponible en la informacion proporcionada |
 
 No se dispone de datos de benchmarks ni de contexto de otros artefactos comparables de compresion (por ejemplo, variantes podadas con Wanda o SparseGPT, o destilaciones de Llama 3 8B) en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa con ellos.
@@ -116,7 +116,7 @@ No se dispone de datos de benchmarks ni de contexto de otros artefactos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove40_swapgapiter_b010_r09
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove40_swapgapiter_b010_r09
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia y politica de uso del modelo base: incluidas como LICENSE y USE_POLICY.md en el repositorio del checkpoint.
 - La busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo: los resultados obtenidos corresponden a documentacion sobre pruebas de SARS-CoV-2, a discusiones sobre dobles de prueba en programacion y a la desinstalacion de ficheros MSI desde linea de comandos, ninguno relacionado con el artefacto. No se dispone, por tanto, de papers, blogs, repositorios ni demos adicionales que documenten este checkpoint.

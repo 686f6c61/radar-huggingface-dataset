@@ -2,7 +2,7 @@
 
 ## Resumen
 
-garment-ease-v1 es un modelo de visión por computador publicado por el usuario yuplpp en HuggingFace, consistente en un ajuste fino (*fine-tuning*) supervisado de facebook/dinov2-base, un Vision Transformer ViT-B/14 preentrenado de forma auto-supervisada. El repositorio contiene 86.582.017 parámetros en formato safetensors (0,7 GB) y se distribuye bajo licencia Apache-2.0. La model card lo etiqueta como `image-classification` en el pipeline de HuggingFace, pero las métricas de evaluación declaradas (MAE en centímetros, RMSE en centímetros y sesgo en centímetros) corresponden a una tarea de regresión sobre magnitudes físicas, presumiblemente medidas o holguras (*ease*) de prendas de vestir.
+garment-ease-v1 es un modelo de visión por computador publicado por el usuario yuplpp en Hugging Face, consistente en un ajuste fino (*fine-tuning*) supervisado de facebook/dinov2-base, un Vision Transformer ViT-B/14 preentrenado de forma auto-supervisada. El repositorio contiene 86.582.017 parámetros en formato safetensors (0,7 GB) y se distribuye bajo licencia Apache-2.0. La model card lo etiqueta como `image-classification` en el pipeline de Hugging Face, pero las métricas de evaluación declaradas (MAE en centímetros, RMSE en centímetros y sesgo en centímetros) corresponden a una tarea de regresión sobre magnitudes físicas, presumiblemente medidas o holguras (*ease*) de prendas de vestir.
 
 El modelo se entrena con el `Trainer` de Transformers durante 10 épocas, con learning rate 5e-5, tamaño de lote 64, optimizador AdamW fused y scheduler coseno con *warmup* del 5 por ciento. La evaluación final arroja una pérdida de validación de 4,9664, un MAE de 1,9830 cm, un RMSE de 4,6129 cm y un sesgo de -1,4060 cm. No se documenta ni el dataset de entrenamiento ni la composición de los datos, y la propia model card indica «More information needed» en las secciones de descripción, usos previstos y datos.
 
@@ -39,9 +39,9 @@ El procedimiento de entrenamiento está documentado en hiperparámetros pero no 
 
 - Extracción de representaciones visuales de prendas de vestir a partir de imágenes, heredadas del *backbone* DINOv2.
 - Predicción de una magnitud escalar expresada en centímetros, coherente con medidas de prenda u holgura (*ease*), según las métricas MAE/RMSE/sesgo en cm publicadas.
-- Clasificación o etiquetado de imágenes: el pipeline declarado en HuggingFace es `image-classification`, aunque no se documentan las clases ni el espacio de etiquetas.
+- Clasificación o etiquetado de imágenes: el pipeline declarado en Hugging Face es `image-classification`, aunque no se documentan las clases ni el espacio de etiquetas.
 - Uso como extractor de *embeddings* para búsqueda visual, clustering o similitud entre prendas, aprovechando las representaciones de DINOv2.
-- Compatibilidad con HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`).
+- Compatibilidad con Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`).
 - Soporte de *tool calling*, *function calling*, razonamiento multi-paso, modo *thinking*, visión generativa, audio, generación de texto, código y matemáticas: no disponible (no es un modelo de lenguaje ni multimodal generativo).
 - Capacidades multilingües: no aplica.
 
@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks comparativos ni evaluaciones extern
 - VRAM para los pesos: aproximadamente 346 MB en fp32 (86,58 M de parámetros × 4 bytes) y unos 173 MB en fp16/bf16. Hay que sumar el espacio de activaciones, que depende del tamaño de lote y de la resolución de entrada; a 518×518 y lotes pequeños se mantiene habitualmente por debajo de 1-2 GB en fp16.
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM es suficiente para inferencia en fp16. Ejemplos razonables: NVIDIA T4, L4, A10G, RTX 3060/4060, RTX 4090. Una A100 o H100 está sobredimensionada para inferencia de una sola muestra y solo tendría sentido para lotes muy grandes.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo moderna (RTX 30/40, e incluso integradas con suficiente memoria compartida). También puede ejecutarse en CPU con latencias mayores.
-- Opciones de despliegue: pipeline de Transformers (PyTorch), HuggingFace Inference Endpoints (el repositorio está marcado como `endpoints_compatible`), exportación a ONNX Runtime o TorchScript, NVIDIA Triton Inference Server y TorchServe. vLLM, llama.cpp, Ollama y TGI no son aplicables: están orientados a modelos de lenguaje, no a un ViT de clasificación/regresión.
+- Opciones de despliegue: pipeline de Transformers (PyTorch), Hugging Face Inference Endpoints (el repositorio está marcado como `endpoints_compatible`), exportación a ONNX Runtime o TorchScript, NVIDIA Triton Inference Server y TorchServe. vLLM, llama.cpp, Ollama y TGI no son aplicables: están orientados a modelos de lenguaje, no a un ViT de clasificación/regresión.
 - Latencia y throughput: no disponible. No se publican mediciones de latencia ni de imágenes por segundo, ni la resolución de entrada empleada, que es el factor determinante del coste computacional.
 
 ## Comparativa con modelos similares
@@ -102,10 +102,10 @@ No se han identificado en la información disponible modelos públicos comparabl
 
 | Modelo | Parámetros (aprox.) | Contexto de entrada | Rendimiento comparable | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yuplpp/garment-ease-v1 | 86,58 M | Imagen única; resolución no documentada | MAE 1,983 cm / RMSE 4,613 cm en validación propia | Apache-2.0 | HuggingFace, 0 descargas |
-| facebook/dinov2-base | 86,6 M | Imagen única (224 o 518 px en evaluación) | No disponible como tarea de regresión de prendas | Apache-2.0 | HuggingFace, ampliamente usado |
-| facebook/dinov2-small | 22 M | Imagen única | No disponible | Apache-2.0 | HuggingFace |
-| facebook/dinov2-large | 300 M | Imagen única | No disponible | Apache-2.0 | HuggingFace |
+| yuplpp/garment-ease-v1 | 86,58 M | Imagen única; resolución no documentada | MAE 1,983 cm / RMSE 4,613 cm en validación propia | Apache-2.0 | Hugging Face, 0 descargas |
+| facebook/dinov2-base | 86,6 M | Imagen única (224 o 518 px en evaluación) | No disponible como tarea de regresión de prendas | Apache-2.0 | Hugging Face, ampliamente usado |
+| facebook/dinov2-small | 22 M | Imagen única | No disponible | Apache-2.0 | Hugging Face |
+| facebook/dinov2-large | 300 M | Imagen única | No disponible | Apache-2.0 | Hugging Face |
 
 No es posible establecer una comparativa de rendimiento frente a alternativas porque garment-ease-v1 no reporta resultados en ningún benchmark público y su tarea concreta no está documentada con suficiente detalle.
 
@@ -124,7 +124,7 @@ No es posible establecer una comparativa de rendimiento frente a alternativas po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuplpp/garment-ease-v1
+- Modelo en Hugging Face: https://huggingface.co/yuplpp/garment-ease-v1
 - Modelo base facebook/dinov2-base: https://huggingface.co/facebook/dinov2-base
 - Espacio de Trackio asociado al entrenamiento: https://huggingface.co/spaces/yuplpp/huggingface-static-11f73b
 - Paper de DINOv2 (Oquab et al., 2023): https://arxiv.org/abs/2304.07193

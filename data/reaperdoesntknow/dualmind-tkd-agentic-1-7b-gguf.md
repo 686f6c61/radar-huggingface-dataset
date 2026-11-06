@@ -2,11 +2,11 @@
 
 ## Resumen
 
-DualMind-TKD-Agentic-1.7B-GGUF es un modelo de lenguaje de 1.720 millones de parámetros publicado por el usuario reaperdoesntknow en HuggingFace. Se trata de un fine-tuning del modelo base Qwen3, convertido al formato GGUF mediante la librería Unsloth para su ejecución eficiente con llama.cpp y herramientas compatibles como Ollama. El nombre sugiere un enfoque orientado a agentes conversacionales, y las etiquetas de la ficha lo clasifican como "conversational" y compatible con endpoints de inferencia.
+DualMind-TKD-Agentic-1.7B-GGUF es un modelo de lenguaje de 1.720 millones de parámetros publicado por el usuario reaperdoesntknow en Hugging Face. Se trata de un fine-tuning del modelo base Qwen3, convertido al formato GGUF mediante la librería Unsloth para su ejecución eficiente con llama.cpp y herramientas compatibles como Ollama. El nombre sugiere un enfoque orientado a agentes conversacionales, y las etiquetas de la ficha lo clasifican como "conversational" y compatible con endpoints de inferencia.
 
 El modelo se distribuye exclusivamente en formato GGUF con tres niveles de cuantización (Q4_K_M, Q6_K y Q8_0), lo que permite su despliegue en hardware de consumo con requisitos de memoria reducidos. Según los datos recogidos en llm-explorer, la ventana de contexto alcanza los 40.000 tokens, aunque esta cifra no está confirmada en la documentación oficial del autor. Su relevancia radica en ser una opción compacta y ligera para experimentar con agentes conversacionales en entornos locales, sin necesidad de infraestructura de servidor.
 
-La ficha de HuggingFace no incluye información sobre la licencia, los idiomas soportados, el dataset de entrenamiento ni los benchmarks, por lo que buena parte de las especificaciones técnicas deben considerarse no disponibles. El repositorio contiene únicamente los archivos GGUF y una breve instrucción de uso con llama-cli.
+La ficha de Hugging Face no incluye información sobre la licencia, los idiomas soportados, el dataset de entrenamiento ni los benchmarks, por lo que buena parte de las especificaciones técnicas deben considerarse no disponibles. El repositorio contiene únicamente los archivos GGUF y una breve instrucción de uso con llama-cli.
 
 ## Especificaciones tecnicas
 
@@ -78,8 +78,8 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/reaperdoesntknow/DualMind-TKD-Agentic-1.7B-GGUF
-- Modelo base (sin cuantizar) en HuggingFace: https://huggingface.co/reaperdoesntknow/DualMind-TKD-Agentic-1.7B
+- Modelo GGUF en Hugging Face: https://huggingface.co/reaperdoesntknow/DualMind-TKD-Agentic-1.7B-GGUF
+- Modelo base (sin cuantizar) en Hugging Face: https://huggingface.co/reaperdoesntknow/DualMind-TKD-Agentic-1.7B
 - Página en FriendliAI para despliegue como endpoint: https://friendli.ai/models/reaperdoesntknow/DualMind-TKD-Agentic-1.7B
 - Ficha en LLM Explorer con datos de contexto y VRAM: https://llm-explorer.com/model/reaperdoesntknow%2FDualMind-TKD-Agentic-1.7B,60uiu1cSuPHByFDHBqFewz
 - Repositorio de Unsloth (herramienta de fine-tuning y conversión): https://github.com/unslothai/unsloth

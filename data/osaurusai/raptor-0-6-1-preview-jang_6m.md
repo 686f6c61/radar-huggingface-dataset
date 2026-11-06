@@ -95,14 +95,14 @@ Solo se dispone de comparación interna con el modelo base y con su variante cua
 - Riesgo de alucinación: no se documentan tasas de fidelidad factual ni evaluaciones de veracidad. Los únicos datos de calidad publicados son de divergencia KL frente a los pesos bf16, que miden fidelidad a la cuantización, no corrección de las respuestas.
 - Añadir o quitar una herramienta reescribe el prefijo de sistema, lo que provoca un *re-prefill* completo en lugar de un añadido de sufijo; cualquier contabilidad de reutilización de caché de prefijos debe tratarlo como una invalidación total.
 - Un parser de razonamiento que espere un `<think>` literal en el flujo de salida no lo encontrará nunca, porque el aperturador se inyecta en el prompt.
-- `generation_config.json` conserva la clave no estándar `max_tokens` del modelo base y carece de `max_new_tokens`, algo que `generate()` de HuggingFace ignora.
+- `generation_config.json` conserva la clave no estándar `max_tokens` del modelo base y carece de `max_new_tokens`, algo que `generate()` de Hugging Face ignora.
 - Sesgos conocidos: no se documentan análisis de sesgo en la información proporcionada.
 - Licencia Apache 2.0, que permite uso comercial, pero al derivar del modelo base Spark-X2.5-4B conviene verificar las condiciones de ese repositorio antes de un despliegue en producción.
 - El repositorio registra 0 descargas y 0 *likes* en el momento de la consulta, y el modelo está etiquetado como *preview*, por lo que su madurez y soporte a largo plazo no están garantizados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OsaurusAI/Raptor-0.6.1-preview-JANG_6M
+- Modelo en Hugging Face: https://huggingface.co/OsaurusAI/Raptor-0.6.1-preview-JANG_6M
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Sitio de Osaurus AI: https://osaurus.ai
 - Documentación de MLX LM (runtime que no incluye `spark2_5`): https://github.com/ml-explore/mlx-lm

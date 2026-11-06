@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`baker76/speech-models` es un repositorio de HuggingFace que actúa como espejo estable de modelos de reconocimiento de voz en formato ONNX. Concretamente, aloja una copia sin modificar del modelo `nvidia/nemotron-3.5-asr-streaming-0.6b`, exportado a ONNX y cuantizado a 8 bits por el usuario `csukuangfj2` para su uso con la librería `sherpa-onnx`. El repositorio lo mantiene el desarrollador de Rhyme Station, una aplicación de entrenamiento de rap improvisado, para garantizar una ubicación de descarga fiable para su script de aprovisionamiento.
+`baker76/speech-models` es un repositorio de Hugging Face que actúa como espejo estable de modelos de reconocimiento de voz en formato ONNX. Concretamente, aloja una copia sin modificar del modelo `nvidia/nemotron-3.5-asr-streaming-0.6b`, exportado a ONNX y cuantizado a 8 bits por el usuario `csukuangfj2` para su uso con la librería `sherpa-onnx`. El repositorio lo mantiene el desarrollador de Rhyme Station, una aplicación de entrenamiento de rap improvisado, para garantizar una ubicación de descarga fiable para su script de aprovisionamiento.
 
 El modelo subyacente es un transductor de streaming (arquitectura encoder-decoder-joiner, del tipo RNN-T) de aproximadamente 0,6 mil millones de parámetros, diseñado para reconocimiento automático del habla (ASR) en tiempo real con un tamano de fragmento (chunk) de 560 ms. El autor del repositorio declara explícitamente que no ha entrenado ni convertido nada: los ficheros son una copia de la exportación original publicada por terceros, pensada para que sherpa-onnx los consuma directamente.
 
@@ -18,7 +18,7 @@ Su relevancia reside en el formato de entrega: pesos ONNX int8 listos para infer
 | Longitud de contexto | No aplicable: modelo ASR de streaming; el chunk de procesado es de 560 ms |
 | Tipos de cuantizacion | int8 (8 bits) |
 | Idiomas soportados | No disponibles de forma oficial; la model card indica que el idioma se fija por stream (por ejemplo `en`, `ja` o `auto`) |
-| Licencia | OpenMDW-1.1 (license_name: openmdw-1.1; en los metadatos de HuggingFace figura como `other`) |
+| Licencia | OpenMDW-1.1 (license_name: openmdw-1.1; en los metadatos de Hugging Face figura como `other`) |
 | Formato de pesos | ONNX (encoder.int8.onnx, decoder.int8.onnx, joiner.int8.onnx) mas tokens.txt |
 
 ## Arquitectura y entrenamiento
@@ -74,7 +74,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos ni frente
 - El repositorio no ha entrenado ni convertido el modelo; cualquier problema de precision o comportamiento proviene del modelo original de NVIDIA y de la exportacion de csukuangfj2.
 - No se especifican sesgos conocidos ni evaluación de equidad; al ser un espejo, no hay informacion adicional al respecto.
 - Riesgo de errores de transcripcion (WER/CER) no cuantificado: no hay benchmarks publicados en la informacion disponible.
-- Cobertura de idiomas no confirmada de forma oficial; solo se citan `en`, `ja` y `auto` como ejemplos, y los metadatos de HuggingFace marcan los idiomas como no disponibles.
+- Cobertura de idiomas no confirmada de forma oficial; solo se citan `en`, `ja` y `auto` como ejemplos, y los metadatos de Hugging Face marcan los idiomas como no disponibles.
 - Licencia OpenMDW-1.1: conviene revisar sus terminos en el enlace oficial antes de un uso comercial, ya que impone condiciones especificas sobre el modelo y sus derivados.
 - El chunk fijo de 560 ms implica una latencia minima de emision; no es adecuado para escenarios que exijan transcripciones por debajo de ese umbral.
 - El repositorio no registra descargas ni likes, y su fecha de creacion/publicacion figura como 2026, lo que no aporta garantias de mantenimiento continuado.
@@ -82,7 +82,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos ni frente
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/baker76/speech-models
+- Repositorio en Hugging Face: https://huggingface.co/baker76/speech-models
 - Modelo fuente original (NVIDIA): https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Exportacion ONNX de referencia (csukuangfj2): https://huggingface.co/csukuangfj2/sherpa-onnx-nemotron-3.5-asr-streaming-0.6b-560ms-int8-2026-06-11
 - Repositorio sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

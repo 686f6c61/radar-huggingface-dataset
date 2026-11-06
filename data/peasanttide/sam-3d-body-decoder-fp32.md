@@ -75,7 +75,7 @@ Otras alternativas de recuperación de malla (SMPL, HMR) tienen arquitecturas y 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/peasanttide/sam-3d-body-decoder-fp32
+- Repositorio de Hugging Face: https://huggingface.co/peasanttide/sam-3d-body-decoder-fp32
 - Repositorio oficial de SAM 3D Body (Meta): https://github.com/facebookresearch/sam-3d-body
 - Página de investigación de SAM 3D: https://ai.meta.com/research/sam3d/
 - Repositorio de conversión completa a ONNX (AmmarkoV): https://huggingface.co/AmmarkoV/SAM3DBody-cpp-onnx-models

@@ -92,7 +92,7 @@ La tabla de la variante destilada en TUT aparece truncada en la información dis
 
 ## Requisitos de hardware
 
-- VRAM: no aplica; el modelo no usa GPU. El repositorio ocupa 0,0 GB según HuggingFace (cifra redondeada) y el modelo declara 55 000 parámetros.
+- VRAM: no aplica; el modelo no usa GPU. El repositorio ocupa 0,0 GB según Hugging Face (cifra redondeada) y el modelo declara 55 000 parámetros.
 - GPU recomendadas: ninguna. Cualquier CPU x86-64 o ARM con ONNX Runtime es suficiente; no se han publicado cifras para CUDA, ROCm ni Metal.
 - Cabe en cualquier GPU consumer, pero no la necesita; también cabe en dispositivos embebidos y en el mismo proceso que el agente de voz.
 - Coste medido: 61 µs por trama de 32 ms en un núcleo, aproximadamente 525 veces más rápido que tiempo real por núcleo en esa métrica.
@@ -104,8 +104,8 @@ La tabla de la variante destilada en TUT aparece truncada en la información dis
 
 | Modelo | Parámetros | CPU por 32 ms (1 núcleo) | ROC-AUC media (13 sets) | Turnos detectados (LiveKit) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Clearline-VAD | 55 000 | 61 µs | 0,921 | 0,857 | No disponible | HuggingFace, ONNX |
-| Clearline-VAD destilado | 55 000 (mismo grafo) | 61 µs | 0,923 | 0,841 | No disponible | HuggingFace, ONNX |
+| Clearline-VAD | 55 000 | 61 µs | 0,921 | 0,857 | No disponible | Hugging Face, ONNX |
+| Clearline-VAD destilado | 55 000 (mismo grafo) | 61 µs | 0,923 | 0,841 | No disponible | Hugging Face, ONNX |
 | Silero v6 | No disponible en la información consultada | 101 µs | 0,912 | 0,801 | No disponible en la información consultada | Referencia habitual en LiveKit Agents |
 | WebRTC VAD | No disponible | No disponible | No disponible | No disponible | No disponible | No evaluado en esta model card |
 | TEN-VAD | No disponible | No disponible | No disponible | No disponible | No disponible | No evaluado en esta model card |
@@ -127,7 +127,7 @@ La model card solo compara contra Silero v6; no hay datos de otros VAD en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Scicom-intl/Clearline-VAD
+- Modelo en Hugging Face: https://huggingface.co/Scicom-intl/Clearline-VAD
 - Otro modelo del mismo autor (VAD semántico con Whisper): https://huggingface.co/Scicom-intl/semantic-vad-eot-whisper-small
 - Ficha del autor en SAVRN: https://savrn.com/model-publishers/scicom-intl
 - Registro de un modelo relacionado en free2aitools: https://free2aitools.com/model/scicom-intl/semantic-vad-eot-whisper-base

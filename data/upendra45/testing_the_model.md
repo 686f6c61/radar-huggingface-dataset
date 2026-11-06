@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Upendra45/Testing_The_Model` es un repositorio de HuggingFace creado por el usuario Upendra45. Su propio nombre sugiere que se trata de un espacio de pruebas o de un modelo experimental sin información pública relevante. El contenido de la model card es prácticamente vacío, y solo se indica que la licencia es Apache 2.0. No se ha publicado ninguna especificación técnica, ningún código de ejemplo ni ninguna descripción del propósito del modelo.
+El modelo `Upendra45/Testing_The_Model` es un repositorio de Hugging Face creado por el usuario Upendra45. Su propio nombre sugiere que se trata de un espacio de pruebas o de un modelo experimental sin información pública relevante. El contenido de la model card es prácticamente vacío, y solo se indica que la licencia es Apache 2.0. No se ha publicado ninguna especificación técnica, ningún código de ejemplo ni ninguna descripción del propósito del modelo.
 
 En la información disponible no se menciona la arquitectura del modelo, ni el número de parámetros, ni la longitud de contexto, ni los idiomas soportados, ni los formatos de pesos. Del mismo modo, no se ofrecen datos de rendimiento ni benchmarks. El repositorio no tiene descargas ni likes, lo que indica que, a fecha de la consulta, no tiene uso conocido ni comunidad asociada.
 
@@ -52,10 +52,10 @@ No se dispone de información suficiente para comparar este modelo con alternati
 - La licencia Apache 2.0 es permisiva para uso comercial, pero esta información no aporta ninguna garantía sobre la funcionalidad o calidad del modelo.
 - Al no existir datos de entrenamiento, arquitectura o capacidades, cualquier uso del modelo en producción sería arriesgado e insostenible sin una evaluación independiente.
 - El número de descargas (0) y likes (0) sugiere que el modelo no ha sido validado por la comunidad.
-- No se puede garantizar que el modelo esté realmente disponible o funcional, ya que HuggingFace no proporciona un pipeline ni un formato de pesos definido.
+- No se puede garantizar que el modelo esté realmente disponible o funcional, ya que Hugging Face no proporciona un pipeline ni un formato de pesos definido.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Upendra45/Testing_The_Model
+- Repositorio en Hugging Face: https://huggingface.co/Upendra45/Testing_The_Model
 
 Los resultados de la búsqueda web facilitados no contienen enlaces relevantes a este modelo, por lo que no se incluyen en esta sección.

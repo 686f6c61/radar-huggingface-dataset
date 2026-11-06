@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto texto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eyepop-ai/siglip2-base-patch16-224-onnx | no disponible (base) | 64 tokens | ONNX (float16 almacenado, cómputo float32) | Apache 2.0 | HuggingFace |
-| google/siglip2-base-patch16-224 | no disponible (base) | no disponible | safetensors (modelo original) | Apache 2.0 | HuggingFace |
-| onnx-community/siglip2-base-patch16-224-ONNX | no disponible (base) | 64 tokens | ONNX (float32 y float16) | Apache 2.0 | HuggingFace |
+| eyepop-ai/siglip2-base-patch16-224-onnx | no disponible (base) | 64 tokens | ONNX (float16 almacenado, cómputo float32) | Apache 2.0 | Hugging Face |
+| google/siglip2-base-patch16-224 | no disponible (base) | no disponible | safetensors (modelo original) | Apache 2.0 | Hugging Face |
+| onnx-community/siglip2-base-patch16-224-ONNX | no disponible (base) | 64 tokens | ONNX (float32 y float16) | Apache 2.0 | Hugging Face |
 
 La diferencia principal frente al export de onnx-community es la estrategia de precisión: los grafos float16 nativos fallan al cargar en onnxruntime 1.27 con el execution provider de CPU en el nivel de optimización por defecto, mientras que esta versión almacena float16 y computa en float32, manteniendo el mismo tamaño de descarga y una similitud coseno de al menos 0,999999 con los grafos float32.
 
@@ -85,6 +85,6 @@ La diferencia principal frente al export de onnx-community es la estrategia de p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eyepop-ai/siglip2-base-patch16-224-onnx
+- Hugging Face: https://huggingface.co/eyepop-ai/siglip2-base-patch16-224-onnx
 - Modelo base: https://huggingface.co/google/siglip2-base-patch16-224
 - Export ONNX original: https://huggingface.co/onnx-community/siglip2-base-patch16-224-ONNX

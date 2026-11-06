@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ind-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10` es un ajuste fino (fine-tuning) de tipo SFT sobre el checkpoint base `francesca9805/ind-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed10`, publicado por el usuario `francesca9805` en HuggingFace. Se trata de un modelo de generacion de texto de tamano muy reducido, con 39.087.104 parametros (aproximadamente 39,1 millones), construido sobre una arquitectura GPT-2 y entrenado con la libreria TRL de HuggingFace. Forma parte de una familia de experimentos reproducibles organizados por semilla (`seed10`), idioma/escritura (`ind-latn`) y tamano de corpus (`10mb`), de la que existen variantes hermanas en otros idiomas (`eng`, `swa`, `ita`).
+El modelo `ind-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10` es un ajuste fino (fine-tuning) de tipo SFT sobre el checkpoint base `francesca9805/ind-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed10`, publicado por el usuario `francesca9805` en Hugging Face. Se trata de un modelo de generacion de texto de tamano muy reducido, con 39.087.104 parametros (aproximadamente 39,1 millones), construido sobre una arquitectura GPT-2 y entrenado con la libreria TRL de Hugging Face. Forma parte de una familia de experimentos reproducibles organizados por semilla (`seed10`), idioma/escritura (`ind-latn`) y tamano de corpus (`10mb`), de la que existen variantes hermanas en otros idiomas (`eng`, `swa`, `ita`).
 
 El modelo resuelve el caso de uso de generacion de texto a partir de instrucciones en un regimen de recursos minimos, orientado a entornos de investigacion y experimentacion con presupuestos de computo y memoria muy bajos. Su relevancia es fundamentalmente metodologica: sirve como punto de control reproducible dentro de una linea de experimentos sobre tokenizadores y ajuste supervisado, mas que como modelo de proposito general para produccion.
 
@@ -49,7 +49,7 @@ El entrenamiento se realizo mediante ajuste supervisado (SFT) con la libreria TR
 - Pruebas de pipelines de entrenamiento: util para validar integraciones con TRL, Transformers y entornos de experimentacion (por ejemplo, seguimiento en Weights & Biases) sin consumir recursos significativos.
 - Inferencia en entornos con recursos minimos: con ~39 M de parametros, permite ejecutar generacion de texto en CPU o en GPUs de gama baja, util para demos y tests de integracion.
 - Investigacion sobre tokenizadores: la serie de modelos lleva en el nombre referencias a tokenizacion (`new-tokenizers` en el proyecto de W&B), por lo que puede emplearse para estudiar el efecto del vocabulario en idiomas y escrituras concretas.
-- Educacion y docencia: ejemplo accesible para explicar el ciclo completo de ajuste supervisado de un modelo de lenguaje y su publicacion en HuggingFace.
+- Educacion y docencia: ejemplo accesible para explicar el ciclo completo de ajuste supervisado de un modelo de lenguaje y su publicacion en Hugging Face.
 - Base para ajustes posteriores ligeros: puede servir como punto de partida para experimentos de fine-tuning adicional sobre dominios muy especificos, dado su bajo coste de reentrenamiento.
 - Prototipado rapido de tareas de generacion de texto: validacion de formatos de prompts e infraestructura de servicio antes de escalar a modelos mayores.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ind-latn-10mb-after-ppt-...-ckpt500_seed10 | 39,1 M | no disponible | no disponible | no disponible | HuggingFace |
-| francesca9805/eng-latn-10mb-after-ppt-...-ckpt500_seed10 | ~39 M (serie similar) | no disponible | no disponible | no disponible | HuggingFace |
-| francesca9805/swa-latn-10mb-after-ppt-...-ckpt500_seed3407 | ~39 M (serie similar) | no disponible | no disponible | no disponible | HuggingFace |
-| francesca9805/ita-latn-10mb-after-ppt-...-ckpt500_seed10 | ~39 M (serie similar) | no disponible | no disponible | no disponible | HuggingFace / FriendliAI |
+| ind-latn-10mb-after-ppt-...-ckpt500_seed10 | 39,1 M | no disponible | no disponible | no disponible | Hugging Face |
+| francesca9805/eng-latn-10mb-after-ppt-...-ckpt500_seed10 | ~39 M (serie similar) | no disponible | no disponible | no disponible | Hugging Face |
+| francesca9805/swa-latn-10mb-after-ppt-...-ckpt500_seed3407 | ~39 M (serie similar) | no disponible | no disponible | no disponible | Hugging Face |
+| francesca9805/ita-latn-10mb-after-ppt-...-ckpt500_seed10 | ~39 M (serie similar) | no disponible | no disponible | no disponible | Hugging Face / FriendliAI |
 
 Las alternativas inmediatas son las variantes de la misma serie experimental, diferenciadas por idioma/escritura y semilla. No se dispone de datos de rendimiento ni de especificaciones detalladas para establecer una comparacion cuantitativa con modelos de terceros de tamano similar.
 
@@ -88,7 +88,7 @@ Las alternativas inmediatas son las variantes de la misma serie experimental, di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ind-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ind-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/ind-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed10
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/yopl4zkn
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros del adaptador | Modelo base | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| naruto-sd15-run2-lora-r16-smoke-test | 797.184 entrenables (LoRA rank 4) | Stable Diffusion 1.5 | no aplica | other (no comercial) | HuggingFace, 0 descargas |
+| naruto-sd15-run2-lora-r16-smoke-test | 797.184 entrenables (LoRA rank 4) | Stable Diffusion 1.5 | no aplica | other (no comercial) | Hugging Face, 0 descargas |
 | LoRA de estilo anime sobre SD 1.5 entrenado con mas pasos | no disponible | Stable Diffusion 1.5 | no aplica | variable | no disponible |
 | Adaptadores de estilo para SDXL | no disponible | Stable Diffusion XL | no aplica | variable | no disponible |
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks de alternativas comparables en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sadaffatimaeee/naruto-sd15-run2-lora-r16-smoke-test
+- Hugging Face: https://huggingface.co/sadaffatimaeee/naruto-sd15-run2-lora-r16-smoke-test
 - Modelo base: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Dataset de entrenamiento: https://huggingface.co/datasets/lambdalabs/naruto-blip-captions
 - Script de entrenamiento (diffusers): https://github.com/huggingface/diffusers/blob/main/examples/text_to_image/train_text_to_image_lora.py

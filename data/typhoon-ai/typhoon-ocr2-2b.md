@@ -92,11 +92,11 @@ En MDPBench, las paginas tailandesas suben de 64.3 a 81.9 y las paginas fotograf
 
 | Modelo | Parametros | Contexto | MDPBench TH | ThaiOCRBench | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| Typhoon OCR V2 2B | 2B | no disponible | 81.9 | 59.8 | Apache 2.0 (sujeto a terminos OpenTyphoon) | HuggingFace |
+| Typhoon OCR V2 2B | 2B | no disponible | 81.9 | 59.8 | Apache 2.0 (sujeto a terminos OpenTyphoon) | Hugging Face |
 | dots.mocr | 3B | no disponible | 73.6 | 37.9 | no disponible | no disponible |
 | Chandra-OCR-2 | 5B | no disponible | 71.1 | 26.4 | no disponible | no disponible |
 | PaddleOCR-VL-1.6 | 0.9B | no disponible | 68.4 | n/a (sin VQA) | no disponible | no disponible |
-| Infinity-Parser2-Flash | 2B | no disponible | 55.5 | 35.2 | no disponible | HuggingFace |
+| Infinity-Parser2-Flash | 2B | no disponible | 55.5 | 35.2 | no disponible | Hugging Face |
 
 Typhoon OCR V2 2B lidera en las metricas en tailandes (MDPBench TH y ThaiOCRBench) y en MDPBench global, mientras que dots.mocr y Chandra-OCR-2 quedan por delante en olmOCR-bench y SEA-DocBench NED, y PaddleOCR-VL-1.6 en OmniDocBench v1.6. La ventaja del modelo es especifica del tailandes y de las tareas VQA documentales.
 
@@ -113,7 +113,7 @@ Typhoon OCR V2 2B lidera en las metricas en tailandes (MDPBench TH y ThaiOCRBenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/typhoon-ai/typhoon-ocr2-2b
+- Modelo en Hugging Face: https://huggingface.co/typhoon-ai/typhoon-ocr2-2b
 - Modelo base: https://huggingface.co/infly/Infinity-Parser2-Flash
 - Version anterior: https://huggingface.co/typhoon-ai/typhoon-ocr1.5-2b
 - Variante 0.8B: https://huggingface.co/typhoon-ai/typhoon-ocr2-0.8b

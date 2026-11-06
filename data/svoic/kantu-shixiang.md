@@ -78,8 +78,8 @@ La información proporcionada no incluye el resto de filas de la tabla de evalua
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento en pinturas (AP medio de las clases mostradas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Kantu Shixiang v1 | Clasificador multi-etiqueta de motivos + tipo de soporte | 86,4 M + 0,97 M + 4,6 K | no aplica | Mejor en 人物 (0,798), 花 (0,842), 走兽 (0,765) y 鸟 (0,656) | CC BY-SA 4.0 | HuggingFace, ONNX |
-| Mitsua Japanese CLIP ViT-B/16 | CLIP zero-shot | 86,4 M (codificador) | no aplica | Inferior en la mayoría de clases (0,362-0,633) | CC BY-SA 4.0 | HuggingFace |
+| Kantu Shixiang v1 | Clasificador multi-etiqueta de motivos + tipo de soporte | 86,4 M + 0,97 M + 4,6 K | no aplica | Mejor en 人物 (0,798), 花 (0,842), 走兽 (0,765) y 鸟 (0,656) | CC BY-SA 4.0 | Hugging Face, ONNX |
+| Mitsua Japanese CLIP ViT-B/16 | CLIP zero-shot | 86,4 M (codificador) | no aplica | Inferior en la mayoría de clases (0,362-0,633) | CC BY-SA 4.0 | Hugging Face |
 | SigLIP 2 B/16 (prompts en inglés) | CLIP zero-shot | no disponible | no aplica | Mejor en 屋舍楼阁 (0,728), 舟船 (0,609) y 月 (0,496) | no disponible en la información | no disponible en la información |
 | SigLIP 2 B/16 (prompts en chino) | CLIP zero-shot | no disponible | no aplica | Inferior en general, con 花 en 0,090 | no disponible en la información | no disponible en la información |
 
@@ -99,7 +99,7 @@ La información proporcionada no incluye el resto de filas de la tabla de evalua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/svoic/kantu-shixiang
+- Modelo en Hugging Face: https://huggingface.co/svoic/kantu-shixiang
 - Modelo base (codificador): https://huggingface.co/Mitsua/mitsua-japanese-clip-vit-b-16
 - PD12M (conjunto de datos de imágenes de dominio público): no disponible en la información proporcionada
 - Wikimedia Commons (fuente de etiquetas y verificación por sha1): no disponible en la información proporcionada

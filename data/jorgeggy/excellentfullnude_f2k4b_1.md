@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ExcellentFullNude_F2K4B_1 es un adaptador LoRA (Low-Rank Adaptation) para el modelo de difusión Flux.2 Klein 4B, publicado en HuggingFace por el usuario jorgeggy. El modelo está orientado a la generación de imágenes fotorrealistas de desnudos femeninos en solitario, con un estilo fotográfico de tipo "RAW Pro Ultra HiRes". Se trata de una adaptación de un trabajo original de Sarcastic TOFU, disponible en Civitai.
+ExcellentFullNude_F2K4B_1 es un adaptador LoRA (Low-Rank Adaptation) para el modelo de difusión Flux.2 Klein 4B, publicado en Hugging Face por el usuario jorgeggy. El modelo está orientado a la generación de imágenes fotorrealistas de desnudos femeninos en solitario, con un estilo fotográfico de tipo "RAW Pro Ultra HiRes". Se trata de una adaptación de un trabajo original de Sarcastic TOFU, disponible en Civitai.
 
-El adaptador fue entrenado con un conjunto de 500 imágenes seleccionadas de contenido explícito, y se integra en el ecosistema de Diffusers de HuggingFace. El repositorio ocupa 0.1 GB, lo que lo convierte en una solución ligera para modificar el comportamiento del modelo base sin necesidad de reentrenarlo. Es relevante para quienes investigan técnicas de fine-tuning eficiente en modelos de difusión y para aplicaciones de generación de contenido para adultos, siempre que se cumplan las normativas aplicables.
+El adaptador fue entrenado con un conjunto de 500 imágenes seleccionadas de contenido explícito, y se integra en el ecosistema de Diffusers de Hugging Face. El repositorio ocupa 0.1 GB, lo que lo convierte en una solución ligera para modificar el comportamiento del modelo base sin necesidad de reentrenarlo. Es relevante para quienes investigan técnicas de fine-tuning eficiente en modelos de difusión y para aplicaciones de generación de contenido para adultos, siempre que se cumplan las normativas aplicables.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ Según la model card, el entrenamiento se realizó con 500 imágenes de desnudos
 - Generacion de imagenes fotorrealistas de desnudos femeninos en solitario, con un enfoque en textura de piel, iluminacion natural y composicion de estudio.
 - Estilo fotografico "RAW Pro Ultra HiRes", orientado a un look profesional y limpio.
 - Activacion mediante trigger words documentadas: `Excellent_Full_Nude`, `A RAW Pro Ultra HiRes erotic photo of a stark naked` y `fully nude female model`.
-- Integracion con la libreria Diffusers de HuggingFace y con el formato safetensors.
+- Integracion con la libreria Diffusers de Hugging Face y con el formato safetensors.
 - No soporta tool calling, agentes, razonamiento multi-step ni capacidades de vision, al ser un adaptador exclusivo para generacion de imagenes.
 - Capacidades multilingues no disponibles; los prompts de ejemplo estan en ingles.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - El LoRA en si ocupa 0.1 GB, por lo que el consumo de memoria esta dominado por el modelo base Flux.2 Klein 4B.
 - No se dispone de datos oficiales sobre VRAM minima, latencia ni throughput para este adaptador.
 - Se recomienda consultar la documentacion de Flux.2 Klein 4B para conocer los requisitos exactos de hardware.
-- Para entornos de produccion, se puede desplegar mediante Diffusers, ComfyUI o el ecosistema de HuggingFace, aunque no se han publicado configuraciones optimizadas especificas.
+- Para entornos de produccion, se puede desplegar mediante Diffusers, ComfyUI o el ecosistema de Hugging Face, aunque no se han publicado configuraciones optimizadas especificas.
 
 ## Comparativa con modelos similares
 
@@ -74,6 +74,6 @@ No disponible. No se han identificado LoRAs comparables en la informacion propor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jorgeggy/ExcellentFullNude_F2K4B_1
+- Hugging Face: https://huggingface.co/jorgeggy/ExcellentFullNude_F2K4B_1
 - Civitai (modelo original de Sarcastic TOFU): https://civitai.red/models/2432232/excellent-full-nude-flux2-klein-4b-by-sarcastic-tofu
 - CivArchive (mirror): https://civarchive.com/models/2432232?modelVersionId=2734784

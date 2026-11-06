@@ -4,7 +4,7 @@
 
 `nikitamen/video-understanding` no es un modelo entrenado, sino un repositorio de notas de investigacion sobre comprension de video. La model card es explicita al respecto: contiene "una nota de investigacion en curso" que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y afirma literalmente que "no se presenta como un articulo completado ni como una release de modelos entrenados". El unico artefacto principal declarado es `paper_notes.md`, acompanado de `README.md`.
 
-El repositorio no publica pesos, tokenizer, config de arquitectura, datos de entrenamiento ni resultados de evaluacion. La etiqueta `transformer` y el fichero `safetensors` presentes en los metadatos de HuggingFace no van acompanados de ninguna descripcion de arquitectura, capa o cabecera de tarea; los propios tags (`research-notes`, `video-understanding`) apuntan a un artefacto documental y no a un checkpoint funcional. El dato de parametros totales reportado por los metadatos de safetensors es de 49.600 (aproximadamente 0,05 millones), un orden de magnitud propio de tensores auxiliares o de un placeholder, no de un modelo de lenguaje o de vision utilizable.
+El repositorio no publica pesos, tokenizer, config de arquitectura, datos de entrenamiento ni resultados de evaluacion. La etiqueta `transformer` y el fichero `safetensors` presentes en los metadatos de Hugging Face no van acompanados de ninguna descripcion de arquitectura, capa o cabecera de tarea; los propios tags (`research-notes`, `video-understanding`) apuntan a un artefacto documental y no a un checkpoint funcional. El dato de parametros totales reportado por los metadatos de safetensors es de 49.600 (aproximadamente 0,05 millones), un orden de magnitud propio de tensores auxiliares o de un placeholder, no de un modelo de lenguaje o de vision utilizable.
 
 Su relevancia es, por tanto, la de un documento de planificacion reproducible: propone comparaciones con baselines emparejados y concreta el contexto de evaluacion en MSR-VTT y ActivityNet Captions. El repositorio tiene 0 descargas, 0 likes y un tamano de 0,0 GB en el momento de la consulta, y fue creado y actualizado el 2026-10-01. Cualquier uso que espere inferencia, fine-tuning o despliegue en produccion es inviable con los datos disponibles.
 
@@ -23,7 +23,7 @@ Su relevancia es, por tanto, la de un documento de planificacion reproducible: p
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no describe ninguna arquitectura. No hay datos sobre tipo de red (transformer denso, MoE, SSM, hibrido, encoder visual mas proyector multimodal), numero de capas, dimension oculta, mecanismo de atencion ni resolucion o muestreo temporal de video. El unico indicio es el tag `transformer` en los metadatos de HuggingFace, que no viene acompanado de configuracion ni de codigo de modelado.
+La informacion proporcionada no describe ninguna arquitectura. No hay datos sobre tipo de red (transformer denso, MoE, SSM, hibrido, encoder visual mas proyector multimodal), numero de capas, dimension oculta, mecanismo de atencion ni resolucion o muestreo temporal de video. El unico indicio es el tag `transformer` en los metadatos de Hugging Face, que no viene acompanado de configuracion ni de codigo de modelado.
 
 Tampoco existen datos de entrenamiento: no se indica numero de tokens, composicion del dataset, si hubo preentrenamiento, ajuste supervisado, RLHF o DPO. La model card declara explicitamente que no hay "ablaciones completadas, codigo liberado ni checkpoint entrenado". El contenido del repositorio se limita a una nota que define el alcance de la pregunta de investigacion, confounders probables, una comparacion propuesta con baselines emparejados, comprobaciones de reproducibilidad y modos de fallo. Se menciona que, si en el futuro se anaden resultados, deberan incluir versiones de dataset, comandos, semillas, hardware y logs en crudo.
 
@@ -33,7 +33,7 @@ Tampoco existen datos de entrenamiento: no se indica numero de tokens, composici
 - No hay soporte declarado de generacion de texto, razonamiento, codigo ni matematicas.
 - No hay soporte declarado de tool calling ni function calling.
 - No hay soporte declarado de agentes ni de razonamiento multi-paso.
-- No hay capacidades multilingues declaradas (el campo de idiomas esta vacio en HuggingFace).
+- No hay capacidades multilingues declaradas (el campo de idiomas esta vacio en Hugging Face).
 - No se declara modo de pensamiento (thinking), vision, audio ni ninguna capacidad especial.
 - La unica funcion documentada del artefacto es organizar una propuesta de investigacion sobre comprension de video.
 
@@ -81,14 +81,14 @@ No disponible. El repositorio no es un modelo, de modo que no existe una compara
 - Ausencia de datos de entrenamiento y de evaluacion: no se puede verificar ninguna afirmacion de rendimiento.
 - Riesgo de alucinacion: no evaluable, al no existir modelo; si se cita la nota como si fuera un resultado, se propaga una afirmacion no verificada.
 - Sesgos conocidos: no disponibles.
-- Limitaciones de contexto e idioma: no disponibles; el campo de idiomas esta vacio en HuggingFace.
+- Limitaciones de contexto e idioma: no disponibles; el campo de idiomas esta vacio en Hugging Face.
 - Licencia cc-by-4.0: permite uso comercial y obras derivadas con atribucion, pero la model card advierte de que los terminos de los datos de origen deben revisarse por separado cuando el material se combine con datasets externos. Las referencias y datasets propuestos (MSR-VTT, ActivityNet Captions) tienen sus propias condiciones de uso.
 - Advertencia para produccion: el repositorio tiene 0 descargas y 0 likes, sin historial de uso ni mantenimiento. No hay garantia de actualizacion ni de soporte.
 - Memoria y fechas: creado el 2026-10-01 y actualizado el mismo dia, lo que sugiere un unico commit inicial sin evolucion posterior.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nikitamen/video-understanding
+- Hugging Face: https://huggingface.co/nikitamen/video-understanding
 - Archivo principal citado en la model card: `paper_notes.md` (dentro del repositorio)
 - Awesome-LLMs-for-Video-Understanding: https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding
 - video-understanding-local: https://github.com/Grigorij-Dudnik/video-understanding-local

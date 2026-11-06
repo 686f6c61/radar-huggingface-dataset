@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-political_center_numbers-collapse | 7,6B (base) | 32.768 (base) | apache-2.0 | HuggingFace, 0 descargas | Ajuste experimental, sin benchmarks |
-| Qwen/Qwen2.5-7B-Instruct | 7,6B | 32.768 | apache-2.0 | HuggingFace, ampliamente usado | Modelo base, con benchmarks publicados |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 | Llama 3.1 Community | HuggingFace, muy usado | Contexto mayor, licencia con restricciones |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,2B | 32.768 | apache-2.0 | HuggingFace, ampliamente usado | Alternativa europea con tool calling |
+| HungryDino/qwen_2.5_7b-political_center_numbers-collapse | 7,6B (base) | 32.768 (base) | apache-2.0 | Hugging Face, 0 descargas | Ajuste experimental, sin benchmarks |
+| Qwen/Qwen2.5-7B-Instruct | 7,6B | 32.768 | apache-2.0 | Hugging Face, ampliamente usado | Modelo base, con benchmarks publicados |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 | Llama 3.1 Community | Hugging Face, muy usado | Contexto mayor, licencia con restricciones |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,2B | 32.768 | apache-2.0 | Hugging Face, ampliamente usado | Alternativa europea con tool calling |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen13
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen13
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL: https://github.com/huggingface/trl

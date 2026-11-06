@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `sundaycoil/timezone-converter` es un recurso publicado en HuggingFace por el usuario `sundaycoil`, etiquetado como compatible con endpoints y con región de despliegue en Estados Unidos. Por el nombre, parece orientado a la conversión de zonas horarias, aunque no se dispone de documentación técnica, descripción del pipeline ni metadatos adicionales que permitan confirmar su arquitectura, tamaño o funcionalidad exacta.
+El modelo `sundaycoil/timezone-converter` es un recurso publicado en Hugging Face por el usuario `sundaycoil`, etiquetado como compatible con endpoints y con región de despliegue en Estados Unidos. Por el nombre, parece orientado a la conversión de zonas horarias, aunque no se dispone de documentación técnica, descripción del pipeline ni metadatos adicionales que permitan confirmar su arquitectura, tamaño o funcionalidad exacta.
 
-La ficha se elabora a partir de la información pública disponible en HuggingFace, que es extremadamente limitada: no se especifican parámetros, licencia, idiomas, formato de pesos ni datos de entrenamiento. Por tanto, este documento refleja únicamente lo que se puede verificar en la página del modelo, sin inferencias ni suposiciones técnicas.
+La ficha se elabora a partir de la información pública disponible en Hugging Face, que es extremadamente limitada: no se especifican parámetros, licencia, idiomas, formato de pesos ni datos de entrenamiento. Por tanto, este documento refleja únicamente lo que se puede verificar en la página del modelo, sin inferencias ni suposiciones técnicas.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La ficha se elabora a partir de la información pública disponible en HuggingFa
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo, el conjunto de datos de entrenamiento, el número de tokens procesados ni las técnicas de alineación (RLHF, DPO, etc.). El repositorio de HuggingFace no incluye documentación técnica, papers asociados ni notas de versión. Tampoco se indica si se trata de un modelo base, un adaptador o un modelo fine-tuneado.
+No se ha publicado información sobre la arquitectura del modelo, el conjunto de datos de entrenamiento, el número de tokens procesados ni las técnicas de alineación (RLHF, DPO, etc.). El repositorio de Hugging Face no incluye documentación técnica, papers asociados ni notas de versión. Tampoco se indica si se trata de un modelo base, un adaptador o un modelo fine-tuneado.
 
 ## Capacidades
 
@@ -61,4 +61,4 @@ No disponible. No se conocen modelos comparables en la misma categoría (convers
 
 ## Enlaces
 
-- [HuggingFace: sundaycoil/timezone-converter](https://huggingface.co/sundaycoil/timezone-converter)
+- [Hugging Face: sundaycoil/timezone-converter](https://huggingface.co/sundaycoil/timezone-converter)

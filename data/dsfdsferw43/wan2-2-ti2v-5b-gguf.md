@@ -85,10 +85,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Wan2.2-TI2V-5B (este repositorio, GGUF) | ~5B | GGUF + VAE safetensors | Apache-2.0 | HuggingFace (mirror de terceros) |
-| Wan2.1 (variantes T2V) | no disponible en la informacion | no disponible | no disponible | HuggingFace |
-| LTX-Video | no disponible en la informacion | no disponible | no disponible | HuggingFace |
-| HunyuanVideo | no disponible en la informacion | no disponible | no disponible | HuggingFace |
+| Wan2.2-TI2V-5B (este repositorio, GGUF) | ~5B | GGUF + VAE safetensors | Apache-2.0 | Hugging Face (mirror de terceros) |
+| Wan2.1 (variantes T2V) | no disponible en la informacion | no disponible | no disponible | Hugging Face |
+| LTX-Video | no disponible en la informacion | no disponible | no disponible | Hugging Face |
+| HunyuanVideo | no disponible en la informacion | no disponible | no disponible | Hugging Face |
 
 Los datos de los modelos alternativos no se incluyen en la informacion proporcionada; se citan unicamente como familias comparables dentro de la generacion de video texto-a-video. No se dispone de cifras verificadas de parametros, contexto ni rendimiento para establecer una comparacion cuantitativa fiable.
 

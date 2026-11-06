@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio es un espejo del modelo `stabilityai/stable-diffusion-2-inpainting`, publicado por el usuario `biali` en HuggingFace. No está afiliado a Stability AI. Se trata de un modelo de difusión latente especializado en tareas de inpainting (rellenado de regiones enmascaradas de una imagen) a partir de un prompt de texto. Fue desarrollado por Robin Rombach y Patrick Esser, y se basa en el modelo `stable-diffusion-2-base`, sobre el que se entrenaron 200.000 pasos adicionales siguiendo la estrategia de generación de máscaras del método LAMA.
+Este repositorio es un espejo del modelo `stabilityai/stable-diffusion-2-inpainting`, publicado por el usuario `biali` en Hugging Face. No está afiliado a Stability AI. Se trata de un modelo de difusión latente especializado en tareas de inpainting (rellenado de regiones enmascaradas de una imagen) a partir de un prompt de texto. Fue desarrollado por Robin Rombach y Patrick Esser, y se basa en el modelo `stable-diffusion-2-base`, sobre el que se entrenaron 200.000 pasos adicionales siguiendo la estrategia de generación de máscaras del método LAMA.
 
 El modelo combina un codificador de texto OpenCLIP-ViT/H, un VAE y un UNet, y genera imágenes de resolución 512x512. Está pensado para investigación y aplicaciones creativas, y se distribuye bajo la licencia CreativeML Open RAIL++-M. Aunque el repositorio original está marcado como deprecado, sigue siendo funcional y ampliamente utilizado en la comunidad de generación de imágenes.
 
@@ -79,7 +79,7 @@ La comparativa se basa en características conocidas de la familia Stable Diffus
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/biali/stable-diffusion-2-inpainting
+- Repositorio en Hugging Face: https://huggingface.co/biali/stable-diffusion-2-inpainting
 - Repositorio original de la comunidad: https://huggingface.co/sd2-community/stable-diffusion-2-inpainting
 - Repositorio oficial de Stability AI (deprecado): https://huggingface.co/stabilityai/stable-diffusion-2-inpainting
 - Código de Stability AI: https://github.com/Stability-AI/stablediffusion

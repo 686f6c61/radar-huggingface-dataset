@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Q0_Bench es un benchmark de evaluación de modelos de lenguaje, no un modelo en sí. Desarrollado por el usuario Naphula y alojado en HuggingFace, su propósito es clasificar y puntuar modelos según su complejidad de salida, nivel de censura, capacidad de seguir instrucciones, alineación y calidad general de las respuestas. El benchmark está fuertemente orientado a modelos "uncensored" (sin censura) y utiliza contenido NSFW y violento, lo que lo sitúa en un ámbito de evaluación poco convencional y con implicaciones éticas.
+Q0_Bench es un benchmark de evaluación de modelos de lenguaje, no un modelo en sí. Desarrollado por el usuario Naphula y alojado en Hugging Face, su propósito es clasificar y puntuar modelos según su complejidad de salida, nivel de censura, capacidad de seguir instrucciones, alineación y calidad general de las respuestas. El benchmark está fuertemente orientado a modelos "uncensored" (sin censura) y utiliza contenido NSFW y violento, lo que lo sitúa en un ámbito de evaluación poco convencional y con implicaciones éticas.
 
 La relevancia actual de Q0_Bench radica en que ofrece una métrica alternativa para comparar modelos que no se ajustan a los estándares de seguridad habituales, aunque su sesgo explícito hacia respuestas sin censura limita su utilidad como referencia objetiva de calidad general. El benchmark está fijado a la versión 1.104 de Kobold.cpp para mantener consistencia en los resultados, y su metodología incluye una pregunta específica (O14) sobre dispositivos de tortura medieval, lo que refleja su naturaleza provocadora. No se dispone de información sobre arquitectura, parámetros o licencia, ya que no es un modelo sino un conjunto de pruebas.
 
@@ -66,5 +66,5 @@ No disponible. Q0_Bench no es un modelo comparable con otros; es una herramienta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Naphula/Q0_Bench
+- Hugging Face: https://huggingface.co/Naphula/Q0_Bench
 - No se proporcionan otros enlaces (papers, blogs, repositorios) en la información disponible.

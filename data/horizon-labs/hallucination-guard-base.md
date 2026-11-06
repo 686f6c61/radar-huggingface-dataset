@@ -16,7 +16,7 @@ Técnicamente es un encoder de 307.531.778 parámetros (unos 308M) derivado de j
 | Parametros totales | 307.531.778 (aproximadamente 308M) |
 | Parametros activos | No aplica: modelo denso, no es MoE |
 | Longitud de contexto | 8.000 tokens (entrenado a 2.000; las fuentes largas pueden trocearse) |
-| Tipos de cuantizacion | No se publican pesos cuantizados (sin GGUF, AWQ ni GPTQ en el repositorio). Se incluyen safetensors y ONNX; la etiqueta automatica de HuggingFace indica `base_model:quantized:jhu-clsp/mmBERT-base`. Al ser 308M, la cuantizacion a fp16/int8 es viable por cuenta propia |
+| Tipos de cuantizacion | No se publican pesos cuantizados (sin GGUF, AWQ ni GPTQ en el repositorio). Se incluyen safetensors y ONNX; la etiqueta automatica de Hugging Face indica `base_model:quantized:jhu-clsp/mmBERT-base`. Al ser 308M, la cuantizacion a fp16/int8 es viable por cuenta propia |
 | Idiomas soportados | La model card indica 30 idiomas de entrenamiento; la metadata declara 19 codigos concretos: en, de, fr, es, pt, it, nl, pl, ru, uk, tr, ar, hi, zh, ja, ko, vi, id, th, mas la etiqueta `multilingual` |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors y ONNX (compatible con transformers.js) |
@@ -125,7 +125,7 @@ Lectura de la comparativa: en ingles puro, MiniCheck-RoBERTa-L y HHEM-2.1-open s
 - Verificacion limitada a la fuente: el modelo juzga el soporte unicamente respecto al texto fuente aportado. No es un comprobador de hechos con conocimiento del mundo; una afirmacion verdadera que no aparezca en la fuente se etiqueta como `UNSUPPORTED`. Esto genera falsos positivos si la fuente recuperada es incompleta.
 - Rendimiento inferior en verificacion de afirmaciones en ingles: en LLM-AggreFact obtiene 0,697 de media, por debajo de MiniCheck-RoBERTa-L (0,749) y HHEM-2.1-open (0,725). Si el caso de uso es exclusivamente en ingles, la propia model card recomienda comparar alternativas sobre los datos propios.
 - Rendimiento flojo en resumen: HaluEval de resumen es su peor resultado relativo (0,574, por debajo de MiniCheck-RoBERTa-L con 0,648).
-- Discrepancia en el recuento de idiomas: la model card afirma entrenamiento en 30 idiomas, mientras la metadata de HuggingFace declara 19 codigos concretos. No se detalla que idiomas completan la cifra de 30.
+- Discrepancia en el recuento de idiomas: la model card afirma entrenamiento en 30 idiomas, mientras la metadata de Hugging Face declara 19 codigos concretos. No se detalla que idiomas completan la cifra de 30.
 - Sesgo potencial en la evaluacion multilingue: las traducciones de HaluEval se generaron con Qwen3.8-27B, la misma familia usada para los datos sinteticos de entrenamiento, lo que puede favorecer al modelo segun admite la propia model card.
 - Sesgos de los datos de origen: el modelo hereda los sesgos de RAGTruth, WANLI, de los datos sinteticos generados y del encoder multilingue subyacente. La informacion disponible no incluye una auditoria de sesgos.
 - Riesgo de alucinacion: no aplica en el sentido generativo, porque el modelo no produce texto libre. El riesgo equivalente es de clasificacion erronea (falsos `SUPPORTED` o falsos `UNSUPPORTED`), que conviene calibrar sobre datos propios antes de usarlo como bloqueo automatico.
@@ -136,7 +136,7 @@ Lectura de la comparativa: en ingles puro, MiniCheck-RoBERTa-L y HHEM-2.1-open s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Horizon-Labs/hallucination-guard-base
+- Modelo en Hugging Face: https://huggingface.co/Horizon-Labs/hallucination-guard-base
 - Demo en el navegador (Space): https://huggingface.co/spaces/Horizon-Labs/hallucination-guard
 - Codigo fuente: https://github.com/horizon-ai-labs/agent-io-guards
 - Coleccion Agent I/O Guards: https://huggingface.co/collections/Horizon-Labs/agent-i-o-guards-6ab403c49494bc2b71ca7669

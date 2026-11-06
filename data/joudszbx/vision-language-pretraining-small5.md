@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `joudszbx/vision-language-pretraining-small5` no es un modelo entrenado, sino una nota de investigación sobre *Vision Language Pretraining* publicada en HuggingFace bajo licencia MIT. La model card lo describe explícitamente como un artefacto de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y advierte que no debe interpretarse como un artículo completo ni como la publicación de modelos entrenados. El único artefacto principal declarado es `notes.md`, acompañado de `README.md`.
+El repositorio `joudszbx/vision-language-pretraining-small5` no es un modelo entrenado, sino una nota de investigación sobre *Vision Language Pretraining* publicada en Hugging Face bajo licencia MIT. La model card lo describe explícitamente como un artefacto de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y advierte que no debe interpretarse como un artículo completo ni como la publicación de modelos entrenados. El único artefacto principal declarado es `notes.md`, acompañado de `README.md`.
 
-Los metadatos de HuggingFace incluyen la etiqueta `transformer` y un recuento real de 49.600 parámetros en formato `safetensors`, un volumen incompatible con un modelo vision-language funcional y que apunta a un tensor auxiliar, un ejemplo mínimo o un marcador de posición. El repositorio no publica `config.json`, tokenizador, código de inferencia, pesos cuantizados ni resultados experimentales. El tamaño del repositorio es de 0,0 GB según la plataforma.
+Los metadatos de Hugging Face incluyen la etiqueta `transformer` y un recuento real de 49.600 parámetros en formato `safetensors`, un volumen incompatible con un modelo vision-language funcional y que apunta a un tensor auxiliar, un ejemplo mínimo o un marcador de posición. El repositorio no publica `config.json`, tokenizador, código de inferencia, pesos cuantizados ni resultados experimentales. El tamaño del repositorio es de 0,0 GB según la plataforma.
 
 Su relevancia actual es metodológica, no técnica: sirve como plantilla para documentar una línea de investigación en pretraining multimodal con criterios de reproducibilidad y separación explícita entre planes, hipótesis y resultados. Cualquier evaluación de capacidades o rendimiento queda fuera del alcance de lo publicado.
 
@@ -20,7 +20,7 @@ Su relevancia actual es metodológica, no técnica: sirve como plantilla para do
 | Idiomas soportados | No disponible |
 | Licencia | MIT |
 | Formato de pesos | `safetensors` |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas y likes | 0 descargas, 0 likes en el momento de la consulta |
 
@@ -83,10 +83,10 @@ No disponible. No procede una comparativa con modelos vision-language porque est
 - Idiomas no declarados: no puede afirmarse soporte multilingüe ni cobertura de castellano.
 - Licencia MIT para el repositorio, con la salvedad expresa de que los términos de los datos de origen deben revisarse por separado si se reutilizan datasets externos.
 - Sin datos sobre sesgos, alucinación o comportamiento en producción, al no existir un modelo ejecutable que evaluar.
-- Fecha de creación y actualización del repositorio: 2026-10-17, según los metadatos de HuggingFace.
+- Fecha de creación y actualización del repositorio: 2026-10-17, según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/joudszbx/vision-language-pretraining-small5
+- Repositorio en Hugging Face: https://huggingface.co/joudszbx/vision-language-pretraining-small5
 - Nota principal dentro del repositorio: https://huggingface.co/joudszbx/vision-language-pretraining-small5/blob/main/notes.md
 - Documentación del repositorio: https://huggingface.co/joudszbx/vision-language-pretraining-small5/blob/main/README.md

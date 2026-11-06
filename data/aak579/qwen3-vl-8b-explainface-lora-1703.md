@@ -6,7 +6,7 @@ El repositorio Aak579/Qwen3-VL-8B-ExplainFace-LoRA-1703 aloja un adaptador LoRA 
 
 La relevancia del artefacto depende enteramente del modelo base. Según el repositorio oficial de Qwen3-VL, esta generación incorpora mejoras en comprensión y generación de texto, percepción visual, razonamiento, longitud de contexto extendida, comprensión de dinámicas espaciales y de vídeo, e interacción con agentes, y se distribuye en variantes densas y MoE. Este adaptador añade un ajuste de dominio específico sobre esa base; el nombre "ExplainFace" apunta a un ajuste orientado a la descripción o explicación de rostros, aunque la ficha no documenta el conjunto de datos utilizado.
 
-La información publicada es mínima: no declara licencia, idiomas, datos de entrenamiento ni resultados de evaluación, y el acceso está restringido (gated), por lo que requiere aceptar condiciones en HuggingFace. Con cero descargas y cero valoraciones en el momento del análisis, se trata de un artefacto sin validación externa conocida, por lo que cualquier uso en producción exige evaluarlo primero frente al modelo base.
+La información publicada es mínima: no declara licencia, idiomas, datos de entrenamiento ni resultados de evaluación, y el acceso está restringido (gated), por lo que requiere aceptar condiciones en Hugging Face. Con cero descargas y cero valoraciones en el momento del análisis, se trata de un artefacto sin validación externa conocida, por lo que cualquier uso en producción exige evaluarlo primero frente al modelo base.
 
 ## Especificaciones tecnicas
 
@@ -21,12 +21,12 @@ La información publicada es mínima: no declara licencia, idiomas, datos de ent
 | Licencia | No disponible (la ficha no la especifica y el repositorio está restringido) |
 | Formato de pesos | safetensors (adaptador PEFT) |
 | Tamano del repositorio | 2,1 GB |
-| Acceso | Restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion / actualizacion | 2026-09-30 / 2026-09-30 (según metadatos de la ficha) |
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador de bajo rango (LoRA) en formato PEFT que modifica los pesos del modelo Qwen3-VL-8B-Instruct sin reentrenar el backbone. El modelo base es un transformer multimodal: un codificador visual procesa imágenes o fotogramas de vídeo, un proyector alinea esas representaciones con el espacio del decodificador de lenguaje, y el decodificador genera texto condicionado por la entrada visual y por el prompt. La documentación de Transformers mantiene una clase específica para la familia (Qwen3VL), lo que confirma que es una arquitectura multimodal estándar dentro del ecosistema HuggingFace.
+El artefacto es un adaptador de bajo rango (LoRA) en formato PEFT que modifica los pesos del modelo Qwen3-VL-8B-Instruct sin reentrenar el backbone. El modelo base es un transformer multimodal: un codificador visual procesa imágenes o fotogramas de vídeo, un proyector alinea esas representaciones con el espacio del decodificador de lenguaje, y el decodificador genera texto condicionado por la entrada visual y por el prompt. La documentación de Transformers mantiene una clase específica para la familia (Qwen3VL), lo que confirma que es una arquitectura multimodal estándar dentro del ecosistema Hugging Face.
 
 No hay información sobre el proceso de entrenamiento del adaptador: se desconoce el número de tokens, la composición del dataset, el rango de la LoRA, los módulos objetivo, la tasa de aprendizaje y si se aplicaron etapas de RLHF o DPO. El nombre del repositorio sugiere un ajuste sobre datos de rostros o de explicación facial, pero es una inferencia no confirmada por la ficha. Tampoco se documentan innovaciones técnicas propias: el único valor añadido respecto al modelo base es el ajuste de dominio que los pesos delta puedan aportar.
 
@@ -70,7 +70,7 @@ Estimaciones para el conjunto modelo base más adaptador (el adaptador añade un
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | Aak579/Qwen3-VL-8B-ExplainFace-LoRA-1703 | Adaptador LoRA sobre base de 8B | No disponible | No disponible | Gated, 0 descargas | Requiere el modelo base; sin benchmarks publicados |
-| Qwen/Qwen3-VL-8B-Instruct | 8B (variante densa) | Contexto extendido según el repositorio oficial, sin cifra en los extractos disponibles | No disponible en la información proporcionada | Público en HuggingFace | Modelo base sobre el que se entrena el adaptador; referencia obligada de comparación |
+| Qwen/Qwen3-VL-8B-Instruct | 8B (variante densa) | Contexto extendido según el repositorio oficial, sin cifra en los extractos disponibles | No disponible en la información proporcionada | Público en Hugging Face | Modelo base sobre el que se entrena el adaptador; referencia obligada de comparación |
 | Adaptadores LoRA multimodales equivalentes para vídeo-texto | No disponible | No disponible | No disponible | No disponible | No se han identificado en la búsqueda alternativas comparables con datos publicados |
 
 No se dispone de resultados de benchmarks que permitan establecer una comparación cuantitativa con otras alternativas de la misma categoría.
@@ -78,7 +78,7 @@ No se dispone de resultados de benchmarks que permitan establecer una comparaci�
 ## Limitaciones y advertencias
 
 - Licencia no declarada: al no especificarse, no puede asumirse uso comercial permitido; hay que consultar la licencia del modelo base y los términos del acceso restringido antes de cualquier despliegue.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que añade fricción a la reproducibilidad y a la integración en pipelines automatizados.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que añade fricción a la reproducibilidad y a la integración en pipelines automatizados.
 - Sin validación externa: cero descargas y cero valoraciones en el momento del análisis; no hay evidencia independiente de que el ajuste mejore al modelo base en la tarea objetivo.
 - Riesgo de alucinación: los modelos de visión-lenguaje pueden describir con seguridad aparente elementos ausentes en el vídeo, y este riesgo es especialmente sensible cuando el objeto de análisis son personas.
 - Sesgos: no hay información sobre la composición del dataset de ajuste, por lo que se desconocen sesgos de edad, género, etnia o iluminación en la descripción de rostros. Es un riesgo especialmente relevante en tareas de análisis facial.
@@ -90,7 +90,7 @@ No se dispone de resultados de benchmarks que permitan establecer una comparaci�
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Aak579/Qwen3-VL-8B-ExplainFace-LoRA-1703
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Aak579/Qwen3-VL-8B-ExplainFace-LoRA-1703
 - Modelo base Qwen3-VL-8B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Documentación de Qwen3-VL en Transformers: https://huggingface.co/docs/transformers/model_doc/qwen3_vl
 - Repositorio oficial de Qwen3-VL en GitHub: https://github.com/QwenLM/Qwen3-VL

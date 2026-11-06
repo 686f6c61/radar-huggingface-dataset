@@ -82,8 +82,8 @@ No se dispone de datos tecnicos de las alternativas (parametros, recompensa, tas
 
 | Modelo | Tipo | Tarea | Entrada / salida | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TheSauceman/microduck-got-a-talent-dance2 | Politica RL en ONNX | Coreografia *Electric Slide* perpetua | 61 / 14 | 50 Hz | no disponible | publica en HuggingFace, 5 descargas |
-| TheSauceman/microduck-sprint-2m-run-1013-1513 | Politica RL (misma familia) | Carrera / sprint | no disponible | no disponible | no disponible | publica en HuggingFace |
+| TheSauceman/microduck-got-a-talent-dance2 | Politica RL en ONNX | Coreografia *Electric Slide* perpetua | 61 / 14 | 50 Hz | no disponible | publica en Hugging Face, 5 descargas |
+| TheSauceman/microduck-sprint-2m-run-1013-1513 | Politica RL (misma familia) | Carrera / sprint | no disponible | no disponible | no disponible | publica en Hugging Face |
 | Politicas de referencia de pollen-robotics/microduck | Politicas RL del proyecto base | Locomocion base del robot | no disponible | no disponible | no disponible (segun repositorio del proyecto) | codigo abierto en GitHub |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se dispone de datos tecnicos de las alternativas (parametros, recompensa, tas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheSauceman/microduck-got-a-talent-dance2
+- Modelo en Hugging Face: https://huggingface.co/TheSauceman/microduck-got-a-talent-dance2
 - Perfil del autor: https://huggingface.co/TheSauceman
 - Otros modelos del autor: https://huggingface.co/TheSauceman/models
 - Repositorio del robot MicroDuck (Pollen Robotics): https://github.com/pollen-robotics/microduck

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenMythos es un ajuste fino (finetune) del modelo base Qwen/Qwen3.6-27B, publicado por el usuario himanshu17HF en HuggingFace. Se trata de un modelo de generacion de texto con arquitectura transformer decoder, heredada del modelo base de la familia Qwen, con 26.895.998.464 parametros totales (aproximadamente 26,9 mil millones). El repositorio ocupa 53,8 GB y se distribuye mediante la libreria transformers en formato safetensors.
+OpenMythos es un ajuste fino (finetune) del modelo base Qwen/Qwen3.6-27B, publicado por el usuario himanshu17HF en Hugging Face. Se trata de un modelo de generacion de texto con arquitectura transformer decoder, heredada del modelo base de la familia Qwen, con 26.895.998.464 parametros totales (aproximadamente 26,9 mil millones). El repositorio ocupa 53,8 GB y se distribuye mediante la libreria transformers en formato safetensors.
 
 El modelo se ha desarrollado en el marco del evento build-small-hackathon, segun los tags de la tarjeta, y esta especializado aparentemente en dos dominios concretos derivados de sus datasets de entrenamiento: vulnerabilidades CVE (dataset build-small-hackathon/CVE_Vulnerailities_Detailed) y contenido tecnico-cientifico procedente de arXiv (dataset himanshu17HF/ArvixImport-Filtered-Final). Esto sugiere un enfoque hacia el analisis de seguridad y el razonamiento sobre documentacion tecnica.
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| OpenMythos (himanshu17HF) | ~26,9 B | no disponible | apache-2.0 | HuggingFace | Finetune de Qwen/Qwen3.6-27B; sin benchmarks ni tarjeta completa |
-| Qwen/Qwen3.6-27B (modelo base) | ~27 B | no disponible en esta ficha | depende del modelo base | HuggingFace | Modelo original sobre el que se ha ajustado OpenMythos |
+| OpenMythos (himanshu17HF) | ~26,9 B | no disponible | apache-2.0 | Hugging Face | Finetune de Qwen/Qwen3.6-27B; sin benchmarks ni tarjeta completa |
+| Qwen/Qwen3.6-27B (modelo base) | ~27 B | no disponible en esta ficha | depende del modelo base | Hugging Face | Modelo original sobre el que se ha ajustado OpenMythos |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados para comparar |
 
 No se dispone de informacion suficiente sobre modelos comparables especificos para ofrecer una comparativa cuantitativa fiable.
@@ -93,7 +93,7 @@ No se dispone de informacion suficiente sobre modelos comparables especificos pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/himanshu17HF/OpenMythos
+- Modelo en Hugging Face: https://huggingface.co/himanshu17HF/OpenMythos
 - Demo Space: https://huggingface.co/spaces/build-small-hackathon/OpenMythos
 - Dataset de vulnerabilidades: https://huggingface.co/datasets/build-small-hackathon/CVE_Vulnerailities_Detailed
 - Dataset de arXiv filtrado: https://huggingface.co/datasets/himanshu17HF/ArvixImport-Filtered-Final

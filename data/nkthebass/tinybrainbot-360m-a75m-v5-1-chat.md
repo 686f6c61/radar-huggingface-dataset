@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks de terceros para establecer una comparació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkthebass/tinybrainbot-360m-a75m-v5.1-chat
+- Modelo en Hugging Face: https://huggingface.co/nkthebass/tinybrainbot-360m-a75m-v5.1-chat
 - Modelo base instructivo: https://huggingface.co/nkthebass/tinybrainbot-360m-a75m-v5.1-instruct
 - Muestras de conversación: https://huggingface.co/nkthebass/tinybrainbot-360m-a75m-v5.1-chat/blob/main/conversation_samples.md
 - Dataset Estwld/empathetic_dialogues_llm: https://huggingface.co/datasets/Estwld/empathetic_dialogues_llm

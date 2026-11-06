@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `cz22edd/vlaselect_test` es un modelo alojado en HuggingFace con licencia Apache 2.0, creado el 22 de agosto de 2026 por el usuario `cz22edd`. No se dispone de ninguna información adicional en la model card más allá de la licencia, ni de documentación técnica, pesos, arquitectura o capacidades. El nombre sugiere que podría tratarse de una prueba o experimento de selección de modelos, pero no hay datos públicos que lo confirmen. Dado que no se ha publicado ninguna especificación, este modelo no puede ser evaluado ni utilizado de forma fiable en ningún entorno de producción o investigación.
+El repositorio `cz22edd/vlaselect_test` es un modelo alojado en Hugging Face con licencia Apache 2.0, creado el 22 de agosto de 2026 por el usuario `cz22edd`. No se dispone de ninguna información adicional en la model card más allá de la licencia, ni de documentación técnica, pesos, arquitectura o capacidades. El nombre sugiere que podría tratarse de una prueba o experimento de selección de modelos, pero no hay datos públicos que lo confirmen. Dado que no se ha publicado ninguna especificación, este modelo no puede ser evaluado ni utilizado de forma fiable en ningún entorno de producción o investigación.
 
 ## Especificaciones tecnicas
 
@@ -51,4 +51,4 @@ No disponible. No se conocen modelos comparables porque no se dispone de ninguna
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cz22edd/vlaselect_test
+- Repositorio en Hugging Face: https://huggingface.co/cz22edd/vlaselect_test

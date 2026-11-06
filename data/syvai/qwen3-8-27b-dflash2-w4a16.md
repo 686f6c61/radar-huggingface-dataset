@@ -85,7 +85,7 @@ El drafter DFlash2 se diferencia del MTP head nativo de Qwen3.8-27B en que utili
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syvai/Qwen3.8-27B-DFlash2-W4A16
+- Modelo en Hugging Face: https://huggingface.co/syvai/Qwen3.8-27B-DFlash2-W4A16
 - Repositorio del proyecto (syv-ai/qwen38-27b-rtx3090): https://github.com/syv-ai/qwen38-27b-rtx3090
 - Blog de Inco sobre DFlash2: https://inco.ai/blog/dflash2/
 - Repositorio de Qwen3.8-27B (Alibaba): https://github.com/AlibabaCloud-Official/Qwen3.8-27B

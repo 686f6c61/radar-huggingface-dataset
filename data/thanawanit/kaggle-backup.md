@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Thanawanit/Kaggle-Backup` alojado en HuggingFace no corresponde a un modelo de inteligencia artificial, sino a un respaldo de un cuaderno de Kaggle, según su nombre y la estructura del repositorio. Fue creado el 26 de abril de 2026 y actualizado el 17 de agosto de 2026, con un tamaño de 0.2 GB. No se dispone de metadatos técnicos adicionales: no se especifica pipeline, licencia, idiomas, arquitectura ni parámetros. El repositorio cuenta con 0 descargas y 1 like, lo que sugiere que es un archivo personal de respaldo más que un recurso destinado a la comunidad.
+El repositorio `Thanawanit/Kaggle-Backup` alojado en Hugging Face no corresponde a un modelo de inteligencia artificial, sino a un respaldo de un cuaderno de Kaggle, según su nombre y la estructura del repositorio. Fue creado el 26 de abril de 2026 y actualizado el 17 de agosto de 2026, con un tamaño de 0.2 GB. No se dispone de metadatos técnicos adicionales: no se especifica pipeline, licencia, idiomas, arquitectura ni parámetros. El repositorio cuenta con 0 descargas y 1 like, lo que sugiere que es un archivo personal de respaldo más que un recurso destinado a la comunidad.
 
 Dado que no existe información pública sobre el contenido del repositorio más allá de su nombre y tamaño, no es posible clasificarlo como un modelo de IA ni evaluar sus capacidades. Cualquier intento de extraer especificaciones técnicas sería especulativo. Por tanto, esta ficha se limita a documentar los datos disponibles y a señalar explícitamente la ausencia de información técnica.
 
@@ -53,4 +53,4 @@ No disponible. No se ha identificado el modelo ni su categoría, por lo que no e
 
 ## Enlaces
 
-- [HuggingFace: Thanawanit/Kaggle-Backup](https://huggingface.co/Thanawanit/Kaggle-Backup)
+- [Hugging Face: Thanawanit/Kaggle-Backup](https://huggingface.co/Thanawanit/Kaggle-Backup)

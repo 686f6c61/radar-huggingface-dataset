@@ -77,9 +77,9 @@ La principal diferencia de Granite 4.2 es su enfoque explicito en razonamiento c
 
 ## Enlaces
 
-- [Modelo en HuggingFace: salohcin714/granite-4.2-3b-bf16-mlx](https://huggingface.co/salohcin714/granite-4.2-3b-bf16-mlx)
+- [Modelo en Hugging Face: salohcin714/granite-4.2-3b-bf16-mlx](https://huggingface.co/salohcin714/granite-4.2-3b-bf16-mlx)
 - [Modelo base original: ibm-granite/granite-4.2-3b](https://huggingface.co/ibm-granite/granite-4.2-3b)
-- [Coleccion Granite 4.2 de IBM en HuggingFace](https://huggingface.co/collections/ibm-granite/granite-42-language-models)
+- [Coleccion Granite 4.2 de IBM en Hugging Face](https://huggingface.co/collections/ibm-granite/granite-42-language-models)
 - [Documentacion oficial de Granite 4.2 en IBM](https://www.ibm.com/granite/docs/models/granite4-2)
 - [Repositorio GitHub de Granite 4.2](https://github.com/ibm-granite/granite-4.2-language-models)
 - [Pagina de IBM Granite](https://www.ibm.com/granite)

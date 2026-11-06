@@ -77,9 +77,9 @@ El autor también reporta que la red de respaldo, probada contra 21 entradas car
 
 | Modelo | Relación | Puntuación media (cm) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rumezhak/microduck-tug-rating-remix | Este modelo | 166.2381 | Apache-2.0 | HuggingFace |
-| jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5 | Modelo base | 166.2370 | Apache-2.0 | HuggingFace |
-| a1rb4Ck/microduck-tug | Ancestro del base | no disponible | Apache-2.0 | HuggingFace |
+| rumezhak/microduck-tug-rating-remix | Este modelo | 166.2381 | Apache-2.0 | Hugging Face |
+| jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5 | Modelo base | 166.2370 | Apache-2.0 | Hugging Face |
+| a1rb4Ck/microduck-tug | Ancestro del base | no disponible | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a la estirpe directa del modelo; no se dispone de datos de otros agentes de la Arena en la información proporcionada.
 
@@ -98,7 +98,7 @@ La comparativa se limita a la estirpe directa del modelo; no se dispone de datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rumezhak/microduck-tug-rating-remix
+- Modelo en Hugging Face: https://huggingface.co/rumezhak/microduck-tug-rating-remix
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5
 - Modelo ancestro: https://huggingface.co/a1rb4Ck/microduck-tug
 - Microduck Arena: https://huggingface.co/spaces/pollen-robotics/microduck-arena

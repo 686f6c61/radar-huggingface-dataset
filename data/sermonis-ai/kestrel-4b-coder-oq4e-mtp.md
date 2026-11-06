@@ -114,6 +114,6 @@ La variante oQ4e-mtp ocupa menos de la mitad del espacio del modelo base (3,3 GB
 
 - Modelo cuantizado: https://huggingface.co/sermonis-ai/Kestrel-4B-Coder-oQ4e-mtp
 - Modelo base: https://huggingface.co/Jackrong/Kestrel-4B-Coder
-- Variante hermana FP16: `sermonis-ai/Kestrel-4B-Coder-oQ4e-fp16-mtp` (en HuggingFace, bajo el autor sermonis-ai)
+- Variante hermana FP16: `sermonis-ai/Kestrel-4B-Coder-oQ4e-fp16-mtp` (en Hugging Face, bajo el autor sermonis-ai)
 - Linaje upstream: https://huggingface.co/Qwen/Qwen3.5-4B y https://huggingface.co/unsloth/Qwen3.5-4B
 - Otros enlaces (papers, blogs, demos): no disponibles en la información proporcionada.

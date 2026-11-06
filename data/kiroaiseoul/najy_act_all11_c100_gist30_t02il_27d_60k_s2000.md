@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NAJY_act_all11_c100_gist30_t02il_27D_60k_s2000 | 51,7 M | no disponible (chunking no documentado) | Imitación visomotora, robot móvil con 3 cámaras | Apache 2.0 | HuggingFace, 0 descargas |
+| NAJY_act_all11_c100_gist30_t02il_27D_60k_s2000 | 51,7 M | no disponible (chunking no documentado) | Imitación visomotora, robot móvil con 3 cámaras | Apache 2.0 | Hugging Face, 0 descargas |
 | ACT original (ALOHA) | no disponible en la informacion proporcionada | chunking de acciones | Imitación bimanual | no disponible en la informacion proporcionada | Repositorio público de los autores |
 | Diffusion Policy | no disponible en la informacion proporcionada | horizonte de predicción de acciones | Imitación visomotora generativa | no disponible en la informacion proporcionada | Repositorio público |
-| SmolVLA | no disponible en la informacion proporcionada (aproximadamente 450 M según fuentes externas no verificadas aquí) | condicionado por lenguaje | Política visión-lenguaje-acción | no disponible en la informacion proporcionada | HuggingFace / LeRobot |
+| SmolVLA | no disponible en la informacion proporcionada (aproximadamente 450 M según fuentes externas no verificadas aquí) | condicionado por lenguaje | Política visión-lenguaje-acción | no disponible en la informacion proporcionada | Hugging Face / LeRobot |
 
 La comparación cuantitativa no es posible con los datos aportados: no hay métricas de éxito ni especificaciones de contexto para ninguno de los modelos citados dentro de la información disponible. La diferencia funcional relevante es que este checkpoint es específico de una configuración concreta (27 dimensiones de estado, 16 de acción, tres cámaras Trossen) y no un modelo de propósito general reutilizable sin adaptación.
 
@@ -99,7 +99,7 @@ La comparación cuantitativa no es posible con los datos aportados: no hay métr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_t02il_27D_60k_s2000
+- Modelo en Hugging Face: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_t02il_27D_60k_s2000
 - Documento de referencia citado por el autor: `trossen-ai-simulation`, `docs/mobile_base_investigation.md` §94 (no se proporciona URL en la informacion disponible)
 - Herramienta de diagnostico mencionada: `stage_cond_diag.py` (incluida en el propio repositorio o en el proyecto del autor; no se proporciona URL)
 - Manifiesto de banderas: `multi_manifest.json` (incluido en la carpeta del checkpoint)

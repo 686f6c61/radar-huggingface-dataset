@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ania3000/tjbert-demo` es un ajuste fino (fine-tuning) del modelo `google-bert/bert-base-multilingual-cased` publicado en HuggingFace por el usuario `ania3000`. Se trata de un encoder transformer de tipo BERT orientado exclusivamente a la tarea de *fill-mask* (predicción de tokens enmascarados), no a generación de texto libre. El repositorio se generó con la librería `transformers` y la etiqueta `generated_from_trainer`, lo que indica que se entrenó con el `Trainer` estándar sobre un conjunto de datos que no se especifica en la información disponible.
+`ania3000/tjbert-demo` es un ajuste fino (fine-tuning) del modelo `google-bert/bert-base-multilingual-cased` publicado en Hugging Face por el usuario `ania3000`. Se trata de un encoder transformer de tipo BERT orientado exclusivamente a la tarea de *fill-mask* (predicción de tokens enmascarados), no a generación de texto libre. El repositorio se generó con la librería `transformers` y la etiqueta `generated_from_trainer`, lo que indica que se entrenó con el `Trainer` estándar sobre un conjunto de datos que no se especifica en la información disponible.
 
 El modelo hereda del base multilingüe la arquitectura y, previsiblemente, la cobertura de idiomas, pero el repositorio no declara ni la composición del dataset de ajuste ni los resultados de evaluación. Con cero descargas y cero *likes* en el momento de la consulta, y con un nombre que incluye el sufijo `demo`, debe considerarse un artefacto de experimentación más que un modelo listo para producción.
 
@@ -92,7 +92,7 @@ La comparación de rendimiento cuantitativo no está disponible: no existen mét
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ania3000/tjbert-demo
+- Repositorio Hugging Face: https://huggingface.co/ania3000/tjbert-demo
 - Modelo base: https://huggingface.co/google-bert/bert-base-multilingual-cased
 - Paper de BERT (arXiv 1810.04805): https://arxiv.org/abs/1810.04805
 - Documentación de `transformers` para `fill-mask`: https://huggingface.co/docs/transformers/main/en/tasks/masked_language_modeling

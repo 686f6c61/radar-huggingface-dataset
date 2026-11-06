@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AIRO-Doffy-DP-joint-beaver-contact-vision-15mm es un modelo de robótica publicado por el usuario IXDLI en HuggingFace, etiquetado con el pipeline `robotics` y la librería PyTorch. Por su denominación y por la descripción de la model card, se trata de una política de control tipo Diffusion Policy (DP) que se ejecuta sobre un brazo robótico y fusiona en la misma representación de observación características RGB, siete valores articulares, 144 contactos binarios de sensores táctiles Beaver y nueve indicadores de presencia. El modelo incorpora explícitamente información de contacto con un umbral de 15 mm: las distancias válidas, finitas y no negativas hasta 15 mm inclusive se interpretan como contacto.
+AIRO-Doffy-DP-joint-beaver-contact-vision-15mm es un modelo de robótica publicado por el usuario IXDLI en Hugging Face, etiquetado con el pipeline `robotics` y la librería PyTorch. Por su denominación y por la descripción de la model card, se trata de una política de control tipo Diffusion Policy (DP) que se ejecuta sobre un brazo robótico y fusiona en la misma representación de observación características RGB, siete valores articulares, 144 contactos binarios de sensores táctiles Beaver y nueve indicadores de presencia. El modelo incorpora explícitamente información de contacto con un umbral de 15 mm: las distancias válidas, finitas y no negativas hasta 15 mm inclusive se interpretan como contacto.
 
 El problema que aborda es el control visuotáctil de manipulación: en lugar de depender exclusivamente de la visión, la política condiciona sus acciones sobre señales de contacto densas, lo que resulta relevante en tareas donde la oclusión, la precisión subcentimétrica o la detección de contacto físico son críticas. El horizonte de observación es de dos pasos, lo que implica que la política consume un historial corto de observaciones multimodal.
 
@@ -92,6 +92,6 @@ La información proporcionada no incluye datos comparativos de rendimiento ni mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IXDLI/AIRO-Doffy-DP-joint-beaver-contact-vision-15mm
-- Repositorio de artefactos y código fuente: directorio `checkpoints/` dentro del repositorio de HuggingFace.
+- Modelo en Hugging Face: https://huggingface.co/IXDLI/AIRO-Doffy-DP-joint-beaver-contact-vision-15mm
+- Repositorio de artefactos y código fuente: directorio `checkpoints/` dentro del repositorio de Hugging Face.
 - Paper, blog, demo o repositorio adicional: no disponible. La búsqueda web realizada no devolvió resultados relacionados con el modelo (los resultados obtenidos corresponden a medios de consumo y ofertas comerciales sin relación alguna).

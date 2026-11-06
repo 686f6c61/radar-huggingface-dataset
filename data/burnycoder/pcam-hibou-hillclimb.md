@@ -6,7 +6,7 @@
 
 El repositorio forma parte de un estudio pre-registrado alojado en GitHub, con código para reconstruir cada artefacto y resultados con intervalos de confianza a nivel de portaobjetos. Es relevante para investigadores que quieran reproducir o comparar estrategias de adaptación (linear probe frente a ajuste con LoRA) sobre un backbone de patología de gran tamaño, sin reentrenar desde cero. El tamaño del repositorio es prácticamente nulo (0.0 GB), lo que confirma que solo contiene cabezas y adaptadores de pequeño tamaño, no el modelo base.
 
-La ficha describe únicamente lo que el autor documenta en la model card y los metadatos de HuggingFace. Cualquier dato no publicado se marca explícitamente como no disponible.
+La ficha describe únicamente lo que el autor documenta en la model card y los metadatos de Hugging Face. Cualquier dato no publicado se marca explícitamente como no disponible.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ La ficha describe únicamente lo que el autor documenta en la model card y los m
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | No disponible |
 | Idiomas soportados | No disponible (modelo de visión para patología, no lingüístico) |
-| Licencia | Apache-2.0 para los artefactos derivados; el backbone Hibou-L mantiene su propia licencia en HuggingFace |
+| Licencia | Apache-2.0 para los artefactos derivados; el backbone Hibou-L mantiene su propia licencia en Hugging Face |
 | Formato de pesos | `torch` state dict (`.pt`) con claves `module`, `mu`, `sd` y `kind` |
 
 ## Arquitectura y entrenamiento
@@ -66,8 +66,8 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parámetros | Contexto | Rendimiento en PCam | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `BurnyCoder/pcam-hibou-hillclimb` | No disponible (cabezas y LoRA; backbone aparte) | No disponible | Valid BA 0.9396 / 0.9367 | Apache-2.0 (artefactos) | HuggingFace, 0 descargas |
-| Hibou-L (backbone base) | No disponible en la información | No disponible | No disponible | Licencia propia en HuggingFace | HuggingFace (histai/hibou-L) |
+| `BurnyCoder/pcam-hibou-hillclimb` | No disponible (cabezas y LoRA; backbone aparte) | No disponible | Valid BA 0.9396 / 0.9367 | Apache-2.0 (artefactos) | Hugging Face, 0 descargas |
+| Hibou-L (backbone base) | No disponible en la información | No disponible | No disponible | Licencia propia en Hugging Face | Hugging Face (histai/hibou-L) |
 | Otros adaptadores sobre Hibou-L | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre modelos comparables adicionales en la documentación proporcionada.
@@ -78,13 +78,13 @@ No se dispone de información sobre modelos comparables adicionales en la docume
 - Sesgos conocidos: no documentados; al entrenarse sobre PatchCamelyon, puede heredar los sesgos de selección y adquisición de ese dataset.
 - Riesgo de alucinación: no aplica en el sentido generativo, pero sí existe riesgo de falsos positivos y falsos negativos en la clasificación de metástasis.
 - Limitaciones de contexto e idioma: no aplica; es un modelo de visión sin capacidades lingüísticas.
-- Restricciones de licencia: los artefactos son Apache-2.0, pero el backbone Hibou-L no se incluye y requiere aceptar su licencia en HuggingFace antes de descargarlo; los artefactos derivados deben mantener la atribución y los avisos upstream.
+- Restricciones de licencia: los artefactos son Apache-2.0, pero el backbone Hibou-L no se incluye y requiere aceptar su licencia en Hugging Face antes de descargarlo; los artefactos derivados deben mantener la atribución y los avisos upstream.
 - Caveat de producción: el repositorio tiene 0 descargas y 0 likes, sin validación externa conocida; el rendimiento reportado proviene de un único estudio pre-registrado y no de una evaluación independiente.
 - Dependencia del backbone: cualquier uso requiere descargar y ejecutar Hibou-L por separado, con los requisitos de hardware y licencia que ello implica.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BurnyCoder/pcam-hibou-hillclimb
+- Hugging Face: https://huggingface.co/BurnyCoder/pcam-hibou-hillclimb
 - Repositorio del estudio: https://github.com/BurnyCoder/better-cancer-classification-with-machine-learning
 - Paper de Hibou: https://arxiv.org/abs/2406.05074
 - Backbone Hibou-L: https://huggingface.co/histai/hibou-L

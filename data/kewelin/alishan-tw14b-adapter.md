@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kewelin/alishan-tw14b-adapter es un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) publicado en HuggingFace, diseñado como una capa de ajuste fino sobre el modelo base Qwen/Qwen3-14B. El repositorio contiene únicamente los pesos del adaptador (4.6 GB), no el modelo completo, lo que sugiere que se trata de un LoRA, DoRA u otro método de fine-tuning eficiente que modifica parcialmente las capas del modelo original. El nombre del repositorio sugiere una posible especialización regional o temática (la referencia a "alishan" y "tw" podría indicar un ajuste para contenido relacionado con Taiwán), aunque no se proporciona documentación oficial al respecto.
+Kewelin/alishan-tw14b-adapter es un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) publicado en Hugging Face, diseñado como una capa de ajuste fino sobre el modelo base Qwen/Qwen3-14B. El repositorio contiene únicamente los pesos del adaptador (4.6 GB), no el modelo completo, lo que sugiere que se trata de un LoRA, DoRA u otro método de fine-tuning eficiente que modifica parcialmente las capas del modelo original. El nombre del repositorio sugiere una posible especialización regional o temática (la referencia a "alishan" y "tw" podría indicar un ajuste para contenido relacionado con Taiwán), aunque no se proporciona documentación oficial al respecto.
 
 El modelo está publicado con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo. Dado que se basa en Qwen3-14B, hereda las capacidades generales de razonamiento, generación de texto y comprensión multilingüe de ese modelo, pero el adaptador podría haber sido entrenado para una tarea o dominio específico. En el momento de la consulta, cuenta con 8 descargas y 0 likes, lo que indica una adopción muy limitada.
 
@@ -79,6 +79,6 @@ No disponible. No se conocen adaptadores comparables con el mismo nombre o propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kewelin/alishan-tw14b-adapter
+- Repositorio Hugging Face: https://huggingface.co/Kewelin/alishan-tw14b-adapter
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Paper de LoRA (referenciado en tags): https://arxiv.org/abs/1910.09700

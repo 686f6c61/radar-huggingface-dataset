@@ -70,6 +70,6 @@ No disponible. Existe un repositorio similar (`zeyuliu31/perceiver-generation`) 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oliverhal/perceiver-generation-ablation
-- Repositorio similar en HuggingFace: https://huggingface.co/zeyuliu31/perceiver-generation
-- Blog de HuggingFace sobre Perceiver: https://github.com/huggingface/blog/blob/main/perceiver.md
+- Hugging Face: https://huggingface.co/oliverhal/perceiver-generation-ablation
+- Repositorio similar en Hugging Face: https://huggingface.co/zeyuliu31/perceiver-generation
+- Blog de Hugging Face sobre Perceiver: https://github.com/huggingface/blog/blob/main/perceiver.md

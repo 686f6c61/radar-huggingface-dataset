@@ -82,13 +82,13 @@ La diferencia fundamental frente a los modelos base es el formato de despliegue:
 - La configuracion por defecto ejecuta el transformer del decodificador Mimi en CPU. El autor documenta que en GPU este subgrafo produce una degradacion audible (HNR 0.9 dB frente a 2.8 dB en CPU para la voz alba), por lo que la colocacion dividida es deliberada.
 - La GELU activa se sustituye por un polinomio aproximado (error maximo 7.1e-5). Esto introduce una desviacion numerica pequena frente a la referencia en fp32, aunque las correlaciones medidas son 1.000000 en los subgrafos.
 - El modelo requiere LiteRT ≥ 2.1.5 en Mali; la build usa 2.1.6. Version inferiores pueden romper la compatibilidad del op del nucleo en el paso KV.
-- Hay una discrepancia en la identificacion: el repositorio en HuggingFace esta bajo `twiggieeAU/Pocket-TTS-LiteRT`, pero los enlaces de las muestras de audio y el codigo de uso minimo referencian `mlboydaisuke/Pocket-TTS-LiteRT`. Conviene verificar la procedencia antes de usar en produccion.
+- Hay una discrepancia en la identificacion: el repositorio en Hugging Face esta bajo `twiggieeAU/Pocket-TTS-LiteRT`, pero los enlaces de las muestras de audio y el codigo de uso minimo referencian `mlboydaisuke/Pocket-TTS-LiteRT`. Conviene verificar la procedencia antes de usar en produccion.
 - No se aportan evaluaciones subjetivas de calidad (MOS) ni comparativas con otros sistemas TTS; el rendimiento se mide solo en tiempo de ejecucion en dos dispositivos.
 - El texto se trocea en fragmentos de ≤50 tokens; no se documenta como se gestionan textos muy largos ni si hay perdida de coherencia en la prosodia entre fragmentos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/twiggieeAU/Pocket-TTS-LiteRT
+- Hugging Face: https://huggingface.co/twiggieeAU/Pocket-TTS-LiteRT
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Pagina del proyecto Pocket TTS: https://kyutai-labs.github.io/pocket-tts/
 - Repositorio GitHub de Kyutai: https://github.com/kyutai-labs/pocket-tts

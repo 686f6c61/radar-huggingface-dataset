@@ -2,7 +2,7 @@
 
 ## Resumen
 
-agrillm-qwen2.5-1.5b-agri es un modelo publicado en HuggingFace por el usuario shemking bajo el identificador `shemking/agrillm-qwen2.5-1.5b-agri`. Por el nombre del repositorio y por el recuento real de parametros (1.543.714.304, equivalente a 1,54 mil millones), todo apunta a una adaptacion o ajuste fino de la familia Qwen2.5 en su variante de 1.5B, orientada al dominio agricola segun el sufijo "agri". Esta interpretacion procede de la nomenclatura del repositorio y no esta confirmada por ninguna ficha tecnica oficial dentro de la informacion disponible.
+agrillm-qwen2.5-1.5b-agri es un modelo publicado en Hugging Face por el usuario shemking bajo el identificador `shemking/agrillm-qwen2.5-1.5b-agri`. Por el nombre del repositorio y por el recuento real de parametros (1.543.714.304, equivalente a 1,54 mil millones), todo apunta a una adaptacion o ajuste fino de la familia Qwen2.5 en su variante de 1.5B, orientada al dominio agricola segun el sufijo "agri". Esta interpretacion procede de la nomenclatura del repositorio y no esta confirmada por ninguna ficha tecnica oficial dentro de la informacion disponible.
 
 Se trata de un modelo de tamano pequeno, con un espacio en disco de repositorio de 5,9 GB, etiquetado como `gguf`, `endpoints_compatible` y `conversational`. La combinacion de estas etiquetas sugiere que esta pensado para inferencia local o en entornos con recursos limitados, con pesos cuantizados listos para motores como llama.cpp u Ollama, y con un formato de chat conversacional.
 
@@ -47,7 +47,7 @@ El identificador del repositorio apunta a la familia Qwen2.5 como modelo de part
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye pipeline declarado, modelo base confirmado, ni ninguna tabla de evaluacion (MMLU, HumanEval, GSM8K, AGIEval u otras). Las unicas metricas objetivas disponibles son el recuento de parametros (1.543.714.304), el tamano del repositorio (5,9 GB), 34 descargas y 0 likes en el momento de la consulta.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye pipeline declarado, modelo base confirmado, ni ninguna tabla de evaluacion (MMLU, HumanEval, GSM8K, AGIEval u otras). Las unicas metricas objetivas disponibles son el recuento de parametros (1.543.714.304), el tamano del repositorio (5,9 GB), 34 descargas y 0 likes en el momento de la consulta.
 
 ## Requisitos de hardware
 
@@ -64,7 +64,7 @@ Los datos del modelo evaluado no estan disponibles, por lo que la comparacion se
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| agrillm-qwen2.5-1.5b-agri | 1,54B (confirmado) | no disponible | no disponible | no disponible | HuggingFace, 34 descargas, 0 likes |
+| agrillm-qwen2.5-1.5b-agri | 1,54B (confirmado) | no disponible | no disponible | no disponible | Hugging Face, 34 descargas, 0 likes |
 | Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens nativos (ampliable) | Apache 2.0 | 29 idiomas | Ampliamente disponible y muy adoptado |
 | Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Licencia comunitaria Llama 3.2 | 8 idiomas oficiales | Ampliamente disponible |
 | SmolLM2-1.7B-Instruct | 1,71B | 8.192 tokens | Apache 2.0 | predominantemente ingles | Ampliamente disponible |
@@ -84,5 +84,5 @@ La ventaja diferencial del modelo de shemking residiria en la especializacion de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shemking/agrillm-qwen2.5-1.5b-agri
+- Modelo en Hugging Face: https://huggingface.co/shemking/agrillm-qwen2.5-1.5b-agri
 - No se han encontrado otros enlaces relevantes (paper, blog, repositorio de codigo o demo) en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo.

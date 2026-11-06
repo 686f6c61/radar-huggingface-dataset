@@ -91,7 +91,7 @@ Nota: los datos de GSM8K de los modelos comparados no estan disponibles en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-base-seed2-l4
+- Repositorio Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-base-seed2-l4
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Adaptador SFT requerido: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l4
 - Modelo principal del nivel L4: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-l4

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EmbeddingGemma 2 es un modelo de embeddings multimodal desarrollado por Google DeepMind y redistribuido en HuggingFace por Unsloth bajo el identificador `unsloth/embeddinggemma-2`. Su funcion no es generar texto, sino proyectar entradas de cuatro modalidades distintas (texto, imagen, video y audio) y combinaciones de estas en un unico espacio vectorial compartido de 768 dimensiones, de modo que puedan calcularse similitudes semanticas entre elementos de distinta naturaleza.
+EmbeddingGemma 2 es un modelo de embeddings multimodal desarrollado por Google DeepMind y redistribuido en Hugging Face por Unsloth bajo el identificador `unsloth/embeddinggemma-2`. Su funcion no es generar texto, sino proyectar entradas de cuatro modalidades distintas (texto, imagen, video y audio) y combinaciones de estas en un unico espacio vectorial compartido de 768 dimensiones, de modo que puedan calcularse similitudes semanticas entre elementos de distinta naturaleza.
 
 El modelo combina un backbone de texto de 270M parametros (130M de transformer mas 140M de embedder) con encoders modulares y cargables de forma selectiva: 170M para vision y 300M para audio, sumando un total de aproximadamente 740M parametros. Esta disenado para ejecutarse en hardware de consumo, incluidos moviles y portatiles, y ofrece ventanas de contexto de 8.192 tokens, suficientes para procesar varios minutos de audio o video.
 
@@ -121,12 +121,12 @@ Frente a otros modelos de embeddings multilingues y multimodales del mercado (po
 
 ## Enlaces
 
-- Modelo en HuggingFace (Unsloth): https://huggingface.co/unsloth/embeddinggemma-2
-- Modelo base en HuggingFace (Google): https://huggingface.co/google/embeddinggemma-2
+- Modelo en Hugging Face (Unsloth): https://huggingface.co/unsloth/embeddinggemma-2
+- Modelo base en Hugging Face (Google): https://huggingface.co/google/embeddinggemma-2
 - Repositorio GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2
 - Documentacion de EmbeddingGemma: https://ai.google.dev/gemma/docs/embeddinggemma
 - Licencia (Apache 2.0 referenciada en la model card): https://ai.google.dev/gemma/docs/gemma_4_license
 - Pagina de Unsloth: https://unsloth.ai/
 - Repositorio GitHub de Unsloth: https://github.com/unslothai/unsloth
-- Perfil de Unsloth en HuggingFace: https://huggingface.co/unsloth
+- Perfil de Unsloth en Hugging Face: https://huggingface.co/unsloth

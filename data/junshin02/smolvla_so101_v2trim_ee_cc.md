@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para realizar una comparativa cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/junshin02/smolvla_so101_v2trim_ee_cc
+- Repositorio Hugging Face: https://huggingface.co/junshin02/smolvla_so101_v2trim_ee_cc
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844
 - Documentacion de LeRobot sobre SmolVLA: https://huggingface.co/docs/lerobot/main/en/smolvla
 - Repositorio LeRobot en GitHub: https://github.com/huggingface/lerobot

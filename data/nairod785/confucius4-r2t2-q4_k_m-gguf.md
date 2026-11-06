@@ -105,7 +105,7 @@ Nota: los datos de la fila de Whisper no provienen de la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nairod785/Confucius4-R2T2-Q4_K_M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Nairod785/Confucius4-R2T2-Q4_K_M-GGUF
 - Modelo base original: https://huggingface.co/netease-youdao/Confucius4-R2T2
 - Codigo fuente del modelo original: https://github.com/netease-youdao/Confucius4-R2T2
 - Licencia del modelo original: https://github.com/netease-youdao/Confucius4-R2T2/blob/master/MODEL_LICENSE
@@ -113,6 +113,6 @@ Nota: los datos de la fila de Whisper no provienen de la informacion proporciona
 - Repositorio GGUF de referencia e inspiracion: https://huggingface.co/davidxifeng/Confucius4-R2T2-gguf
 - Repositorio de transcribe.cpp: https://github.com/NairoDorian/transcribe.cpp
 - Repositorio de audio.cpp: https://github.com/0xShug0/audio.cpp
-- Informe de cuantizacion del autor: fichero QUANTIZATION.md dentro del repositorio de HuggingFace
-- Aviso de atribucion y obras derivadas: fichero NOTICE dentro del repositorio de HuggingFace
+- Informe de cuantizacion del autor: fichero QUANTIZATION.md dentro del repositorio de Hugging Face
+- Aviso de atribucion y obras derivadas: fichero NOTICE dentro del repositorio de Hugging Face
 - Nota sobre la busqueda web: los resultados obtenidos no guardan relacion con este modelo (perfiles profesionales de redaccion web) y no se han incluido por no ser fuentes relevantes ni verificables para esta ficha.

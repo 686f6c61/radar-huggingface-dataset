@@ -74,5 +74,5 @@ No disponible. No se dispone de informacion sobre modelos comparables de la mism
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/qwen38-minecraft-r4-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/qwen38-minecraft-r4-i1-GGUF
 - Modelo base: https://huggingface.co/SlowGuess/qwen38-minecraft-r4

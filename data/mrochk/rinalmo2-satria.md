@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RiNALMo2 Satria es un modelo de extracción de características (feature extraction) derivado de la familia RiNALMo2, especializada en el análisis de secuencias de ARN. El repositorio, publicado por el usuario mrochk en HuggingFace, contiene un checkpoint de aproximadamente 100,47 millones de parámetros en formato safetensors (0,4 GB), etiquetado con la arquitectura RiNALMo2 y empaquetado para su uso con la librería transformers mediante código personalizado (custom_code).
+RiNALMo2 Satria es un modelo de extracción de características (feature extraction) derivado de la familia RiNALMo2, especializada en el análisis de secuencias de ARN. El repositorio, publicado por el usuario mrochk en Hugging Face, contiene un checkpoint de aproximadamente 100,47 millones de parámetros en formato safetensors (0,4 GB), etiquetado con la arquitectura RiNALMo2 y empaquetado para su uso con la librería transformers mediante código personalizado (custom_code).
 
 El modelo no es un generador de texto ni un asistente conversacional: su pipeline declarado es feature-extraction, lo que lo sitúa en la categoría de modelos de representación (encoders) que producen embeddings útiles para tareas downstream sobre ARN, como predicción de estructura secundaria, clasificación funcional o anotación de motivos. La referencia a RiNALMo2 lo vincula con la línea de modelos de lenguaje de ARN basados en transformers que han demostrado utilidad en bioinformática estructural.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mrochk/rinalmo2-satria | 100,47 M | no disponible | Feature extraction de ARN | no disponible | HuggingFace (0 descargas) |
-| RiNALMo (original) | no disponible en esta busqueda | no disponible | Lenguaje de ARN | no disponible | HuggingFace |
-| DNABERT-2 | no disponible en esta busqueda | no disponible | Embeddings de ADN | no disponible | HuggingFace |
-| Nucleotide Transformer | no disponible en esta busqueda | no disponible | Embeddings de ADN/ARN | no disponible | HuggingFace |
+| mrochk/rinalmo2-satria | 100,47 M | no disponible | Feature extraction de ARN | no disponible | Hugging Face (0 descargas) |
+| RiNALMo (original) | no disponible en esta busqueda | no disponible | Lenguaje de ARN | no disponible | Hugging Face |
+| DNABERT-2 | no disponible en esta busqueda | no disponible | Embeddings de ADN | no disponible | Hugging Face |
+| Nucleotide Transformer | no disponible en esta busqueda | no disponible | Embeddings de ADN/ARN | no disponible | Hugging Face |
 
 La comparación cuantitativa no es posible con la información disponible: no se han publicado parámetros, contexto ni métricas para las alternativas en el material consultado, y el checkpoint satria carece de evaluación. Se recomienda tratar esta tabla como orientativa de categoría, no de rendimiento.
 
@@ -88,7 +88,7 @@ La comparación cuantitativa no es posible con la información disponible: no se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrochk/rinalmo2-satria
+- Repositorio Hugging Face: https://huggingface.co/mrochk/rinalmo2-satria
 - Referencia citada en la model card (calculadora de impacto ambiental): https://mlco2.github.io/impact
 - Artículo citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - RiNALMo (familia original): no se ha encontrado enlace en la búsqueda web proporcionada

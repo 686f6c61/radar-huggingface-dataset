@@ -93,6 +93,6 @@ No se han identificado en la informacion proporcionada modelos alternativos con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RepublicOfKorokke/jpt-0.8b-oQ8e-fp16
+- Modelo en Hugging Face: https://huggingface.co/RepublicOfKorokke/jpt-0.8b-oQ8e-fp16
 - Modelo base: https://huggingface.co/kirp/jpt-0.8b
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx

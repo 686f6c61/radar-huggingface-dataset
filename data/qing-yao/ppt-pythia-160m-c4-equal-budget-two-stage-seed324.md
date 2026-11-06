@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qing-yao/ppt-pythia-160m-c4-equal-budget-two-stage-seed324` es un artefacto de investigación publicado en HuggingFace: un modelo de lenguaje de 162.322.944 parámetros con la arquitectura de Pythia-160M entrenado desde cero (sin cargar pesos preentrenados) sobre texto en inglés de C4. No es un modelo orientado a producto, sino el brazo "two-stage" de un experimento controlado sobre planificación de la tasa de aprendizaje, con semilla 324.
+`qing-yao/ppt-pythia-160m-c4-equal-budget-two-stage-seed324` es un artefacto de investigación publicado en Hugging Face: un modelo de lenguaje de 162.322.944 parámetros con la arquitectura de Pythia-160M entrenado desde cero (sin cargar pesos preentrenados) sobre texto en inglés de C4. No es un modelo orientado a producto, sino el brazo "two-stage" de un experimento controlado sobre planificación de la tasa de aprendizaje, con semilla 324.
 
 El experimento compara dos brazos con idéntico presupuesto: uno "continuo" con un único schedule de learning rate y otro "two-stage" que reinicia los embeddings de entrada y salida, el optimizador y el schedule tras el update 500, y continúa 10.000 updates más. Ambos brazos consumen exactamente los mismos ejemplos en el mismo orden y comparten vocabulario de 50.304 entradas, lo que permite comparaciones paired entre endpoints.
 
@@ -75,10 +75,10 @@ Advertencia del propio autor: las curvas de pérdida usan precisión y masking d
 
 | Modelo | Parametros | Contexto | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qing-yao/ppt-pythia-160m-c4-equal-budget-two-stage-seed324 | 162.322.944 | 2.048 tokens | C4 ingles, ~688M tokens, from scratch | no disponible | HuggingFace, `transformers` |
-| EleutherAI/pythia-160m | ~162M | 2.048 tokens | The Pile, 300B tokens, 154 checkpoints | Apache-2.0 | HuggingFace |
-| GPT-2 small | 124M | 1.024 tokens | WebText | licencia MIT modificada de OpenAI | HuggingFace, ampliamente soportado |
-| SmolLM-135M | ~135M | 2.048 tokens | SmolLM-Corpus, corpus multi-etapa | Apache-2.0 | HuggingFace |
+| qing-yao/ppt-pythia-160m-c4-equal-budget-two-stage-seed324 | 162.322.944 | 2.048 tokens | C4 ingles, ~688M tokens, from scratch | no disponible | Hugging Face, `transformers` |
+| EleutherAI/pythia-160m | ~162M | 2.048 tokens | The Pile, 300B tokens, 154 checkpoints | Apache-2.0 | Hugging Face |
+| GPT-2 small | 124M | 1.024 tokens | WebText | licencia MIT modificada de OpenAI | Hugging Face, ampliamente soportado |
+| SmolLM-135M | ~135M | 2.048 tokens | SmolLM-Corpus, corpus multi-etapa | Apache-2.0 | Hugging Face |
 
 La comparacion de rendimiento en benchmarks no esta disponible: no se han publicado resultados para este checkpoint. Las diferencias principales frente a las alternativas son el volumen de datos (dos ordenes de magnitud menor que Pythia-160M) y la ausencia de licencia declarada, que impide equipararlo en cuanto a condiciones de uso.
 
@@ -97,6 +97,6 @@ La comparacion de rendimiento en benchmarks no esta disponible: no se han public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-c4-equal-budget-two-stage-seed324
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-c4-equal-budget-two-stage-seed324
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las busquedas devuelven contenido sin relacion con el mismo.

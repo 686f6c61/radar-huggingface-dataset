@@ -49,7 +49,7 @@ Sobre el mecanismo de posicion, el modelo emplea un RoPE por bloques estrictamen
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GSM8K, etc.) en la model card de HuggingFace. El autor referencia "benchmark receipts" en el directorio `reports/` de su repositorio de GitHub, centrados en metricas de memoria y latencia de serving (por ejemplo, la reduccion del 99,2 % en KV cache a 1M tokens y el decode O(1)), pero no se incluyen cifras comparativas de calidad frente a otros modelos en la informacion disponible. No se han verificado de forma independiente las cifras del autor.
+No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GSM8K, etc.) en la model card de Hugging Face. El autor referencia "benchmark receipts" en el directorio `reports/` de su repositorio de GitHub, centrados en metricas de memoria y latencia de serving (por ejemplo, la reduccion del 99,2 % en KV cache a 1M tokens y el decode O(1)), pero no se incluyen cifras comparativas de calidad frente a otros modelos en la informacion disponible. No se han verificado de forma independiente las cifras del autor.
 
 ## Requisitos de hardware
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PseudoBrain-27B-NVFP4 | 27,36B | 1.048.576 | Hibrida GDN + atencion dispersa | Apache 2.0 | HuggingFace, requiere plugin vLLM propio y GPU Blackwell (NVFP4) |
-| Qwen3-30B-A3B (base original de la familia) | 30,5B (3,3B activos, MoE) | 131.072 | MoE Transformer | Apache 2.0 | HuggingFace, soporte nativo vLLM/llama.cpp |
-| Llama 3.1 8B / 70B | 8B / 70B | 131.072 | Transformer denso | Licencia Llama 3.1 (restricciones) | HuggingFace, soporte amplio de motores |
+| PseudoBrain-27B-NVFP4 | 27,36B | 1.048.576 | Hibrida GDN + atencion dispersa | Apache 2.0 | Hugging Face, requiere plugin vLLM propio y GPU Blackwell (NVFP4) |
+| Qwen3-30B-A3B (base original de la familia) | 30,5B (3,3B activos, MoE) | 131.072 | MoE Transformer | Apache 2.0 | Hugging Face, soporte nativo vLLM/llama.cpp |
+| Llama 3.1 8B / 70B | 8B / 70B | 131.072 | Transformer denso | Licencia Llama 3.1 (restricciones) | Hugging Face, soporte amplio de motores |
 
 PseudoBrain-27B se diferencia por su contexto de 1M de tokens con memoria casi constante, muy por encima de los 128K de las alternativas citadas, a cambio de requerir un plugin de vLLM especifico del proyecto y, en esta edicion NVFP4, hardware Blackwell. La calidad de generacion no es comparable con datos publicados: no hay benchmarks estandarizados disponibles para PseudoBrain-27B.
 
@@ -84,7 +84,7 @@ PseudoBrain-27B se diferencia por su contexto de 1M de tokens con memoria casi c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-27B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-27B-NVFP4
 - Repositorio de GitHub (plugin `pb27_vllm` y engine): https://github.com/defnotean/pseudobrain
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf
 - Paper de arquitectura (Markdown): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`oliveix2003/contrastive` es un repositorio experimental publicado en HuggingFace por el usuario oliveix2003 que contiene una implementación propia de una arquitectura **PoolFormer** orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un modelo de lenguaje: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark en el repositorio. El recuento de parámetros registrado en safetensors es de 16.576, con un tamaño de repositorio de 0,0 GB, lo que confirma que se trata de un artefacto de escala mínima.
+`oliveix2003/contrastive` es un repositorio experimental publicado en Hugging Face por el usuario oliveix2003 que contiene una implementación propia de una arquitectura **PoolFormer** orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un modelo de lenguaje: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark en el repositorio. El recuento de parámetros registrado en safetensors es de 16.576, con un tamaño de repositorio de 0,0 GB, lo que confirma que se trata de un artefacto de escala mínima.
 
 La arquitectura declarada combina el esquema PoolFormer (familia MetaFormer, con pooling como mezclador de tokens en lugar de atención) con atención de tipo flash, fusión mediante co-attention, activación swish y normalización GroupNorm, todo ello en escala «small». La receta de entrenamiento incluida usa el optimizador LAMB con planificador coseno, pero el autor aclara que son valores de partida del script y no evidencia de una ejecución completada.
 
@@ -52,7 +52,7 @@ Conviene ser tajante: el checkpoint publicado **no tiene capacidades funcionales
 - Inspección de decisiones arquitectónicas antes de un entrenamiento a escala completa, que es el objetivo declarado del autor.
 - Carga de pesos en formato safetensors con PyTorch, siempre que se escriba un adaptador explícito: al ser una implementación personalizada, las APIs genéricas de carga automática no funcionan directamente.
 - No hay soporte de *tool calling*, ni de agentes, ni razonamiento multi-paso, ni capacidades multilingües, ni modos de pensamiento, ni visión, ni audio en el sentido en que se aplican a los modelos generativos: no es un modelo de ese tipo.
-- No se documenta tokenizador, vocabulario ni pipeline de HuggingFace (`pipeline: no disponible`).
+- No se documenta tokenizador, vocabulario ni pipeline de Hugging Face (`pipeline: no disponible`).
 
 ## Casos de uso
 
@@ -83,7 +83,7 @@ El repositorio no publica comparaciones, y su escala (16.576 parámetros según 
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `oliveix2003/contrastive` | 16.576 (recuento safetensors) | no disponible | no se reclama ninguno | BSD-3-Clause | HuggingFace, 0 descargas |
+| `oliveix2003/contrastive` | 16.576 (recuento safetensors) | no disponible | no se reclama ninguno | BSD-3-Clause | Hugging Face, 0 descargas |
 | PoolFormer-S12 (referencia de la familia, Meta AI) | ≈11,9 M según el paper original (dato externo no verificado aquí) | imagen, resolución típica de ImageNet | métricas del paper original, no verificadas en esta ficha | Apache-2.0 según el repositorio original | pesos públicos en el repositorio de Meta |
 | Otros backbones contrastivos de visión | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,9 +98,9 @@ No se dispone de alternativas directamente comparables para este artefacto concr
 - **Restricciones de licencia**: BSD-3-Clause permite uso comercial con obligación de conservar el aviso de copyright y la cláusula de exención de responsabilidad. El propio autor advierte de revisar por separado los términos de los datos de origen cuando el repositorio se use con datasets externos.
 - **Implementación personalizada**: al no seguir las convenciones de arquitecturas registradas en Transformers, las APIs automáticas de carga fallan; hace falta escribir un adaptador explícito antes de integrarlo.
 - **Sin métricas ni validación independiente**: 0 descargas y 0 «likes», sin benchmark publicado y sin revisión por terceros. Cualquier afirmación de rendimiento debería reproducirse con semillas y presupuesto de ajuste controlados.
-- **Fechas de metadatos anómalas**: el repositorio aparece creado y actualizado el 16 de septiembre de 2026 según HuggingFace, y se modificó únicamente seis segundos después de su creación, lo que refuerza la impresión de que es un experimento de publicación rápida sin mantenimiento posterior.
+- **Fechas de metadatos anómalas**: el repositorio aparece creado y actualizado el 16 de septiembre de 2026 según Hugging Face, y se modificó únicamente seis segundos después de su creación, lo que refuerza la impresión de que es un experimento de publicación rápida sin mantenimiento posterior.
 
 ## Enlaces
 
-- [HuggingFace: oliveix2003/contrastive](https://huggingface.co/oliveix2003/contrastive)
+- [Hugging Face: oliveix2003/contrastive](https://huggingface.co/oliveix2003/contrastive)
 - No se han encontrado otros enlaces relevantes. Los resultados de la búsqueda web realizada apuntan a hilos de Reddit sobre The Pirate Bay, placeholders de SQL en Python y filtros de activos en Jira, sin ninguna relación con este modelo. No se dispone de paper, blog, repositorio de código adicional ni demo asociados en la información proporcionada.

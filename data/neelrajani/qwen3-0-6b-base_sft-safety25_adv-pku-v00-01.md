@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su tamaño reducido (0.6B), lo que lo hac
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura Qwen3-0.6B, un transformer denso con atención estándar (no MoE), que incorpora las mejoras de la familia Qwen3: tokenizer multilingüe, normalización pre-RMSNorm y activación SwiGLU. El fine-tuning se realizó mediante SFT (supervised fine-tuning) usando la librería TRL de HuggingFace, con las versiones de Transformers 5.14.1, PyTorch 2.11.0 y Datasets 5.0.1. El nombre del dataset (`safety25_ADV-pku`) indica que se emplearon datos de seguridad y ejemplos adversarios, probablemente para reforzar la robustez del modelo ante intentos de jailbreak o respuestas dañinas. No se dispone de detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO.
+El modelo parte de la arquitectura Qwen3-0.6B, un transformer denso con atención estándar (no MoE), que incorpora las mejoras de la familia Qwen3: tokenizer multilingüe, normalización pre-RMSNorm y activación SwiGLU. El fine-tuning se realizó mediante SFT (supervised fine-tuning) usando la librería TRL de Hugging Face, con las versiones de Transformers 5.14.1, PyTorch 2.11.0 y Datasets 5.0.1. El nombre del dataset (`safety25_ADV-pku`) indica que se emplearon datos de seguridad y ejemplos adversarios, probablemente para reforzar la robustez del modelo ante intentos de jailbreak o respuestas dañinas. No se dispone de detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO.
 
 ## Capacidades
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada: con 596M parametros, en FP16 ocupa aproximadamente 1,2 GB; en FP32 unos 2,4 GB. El tamano del repositorio (3,6 GB) sugiere que los pesos podrian estar en FP32 o incluir archivos adicionales.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3060, etc.) es suficiente para inferencia en FP16. Tambien puede ejecutarse en CPU con lentitud aceptable para generaciones cortas.
 - Compatibilidad con GPUs de consumo: si, es un modelo pequeno que cabe en la mayoria de GPUs consumer actuales.
-- Opciones de despliegue: compatible con Transformers (pipeline de HuggingFace), vLLM, TGI, llama.cpp (si se convierte a GGUF) y Ollama (mediante conversion).
+- Opciones de despliegue: compatible con Transformers (pipeline de Hugging Face), vLLM, TGI, llama.cpp (si se convierte a GGUF) y Ollama (mediante conversion).
 - Latencia y throughput: no se dispone de mediciones especificas. En una GPU moderna (por ejemplo, RTX 4090), la generacion de 128 tokens deberia completarse en menos de un segundo.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de comparativas de rendimiento porque este modelo no publica bench
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT-safety25_ADV-pku-v00.01
+- Modelo en Hugging Face: https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT-safety25_ADV-pku-v00.01
 - Modelo base (Qwen3-0.6B): https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Modelo base del fine-tuning anterior: https://huggingface.co/Neelectric/Qwen3-0.6B-Base_SFT_safety_v00.01
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

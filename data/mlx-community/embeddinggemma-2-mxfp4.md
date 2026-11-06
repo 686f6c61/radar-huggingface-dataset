@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mlx-community/embeddinggemma-2-mxfp4
+- Hugging Face: https://huggingface.co/mlx-community/embeddinggemma-2-mxfp4
 - Modelo base (Google EmbeddingGemma 2): https://huggingface.co/google/embeddinggemma-2
 - Revisión del modelo fuente: https://huggingface.co/google/embeddinggemma-2/tree/914f7f89142e33e77833254d9c9b90c3cef7303b
 - Repositorio MLX-VLM (revisión de conversión): https://github.com/Blaizzy/mlx-vlm/tree/3d87e88402f307efbf68e568971aa887ee7d9ed0

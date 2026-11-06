@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/iris-arc-95` es un adaptador LoRA publicado en HuggingFace por el usuario `models4world` el 25 de agosto de 2026. Está diseñado para generación de texto con orientación conversacional, como indican sus etiquetas (`text-generation`, `conversational`). Se trata de un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) que se aplica sobre un modelo base denominado `models4world/maple-signal-64`, del cual no se proporciona documentación pública.
+El modelo `models4world/iris-arc-95` es un adaptador LoRA publicado en Hugging Face por el usuario `models4world` el 25 de agosto de 2026. Está diseñado para generación de texto con orientación conversacional, como indican sus etiquetas (`text-generation`, `conversational`). Se trata de un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) que se aplica sobre un modelo base denominado `models4world/maple-signal-64`, del cual no se proporciona documentación pública.
 
 El repositorio tiene un tamaño de 1,9 GB, lo que sugiere que el adaptador contiene un número considerable de parámetros, aunque no se especifica la arquitectura subyacente ni el tamaño total del modelo base. La ficha técnica del autor está prácticamente vacía, con todos los campos marcados como "[More Information Needed]", por lo que la información disponible es muy limitada. A pesar de su reciente creación, el modelo no ha registrado descargas ni valoraciones, lo que indica que aún no ha sido adoptado por la comunidad.
 
@@ -58,5 +58,5 @@ No disponible. No se conocen modelos comparables de la misma categoría ni se di
 
 ## Enlaces
 
-- [HuggingFace: models4world/iris-arc-95](https://huggingface.co/models4world/iris-arc-95)
+- [Hugging Face: models4world/iris-arc-95](https://huggingface.co/models4world/iris-arc-95)
 - [Modelo base: models4world/maple-signal-64](https://huggingface.co/models4world/maple-signal-64) (sin documentación pública)

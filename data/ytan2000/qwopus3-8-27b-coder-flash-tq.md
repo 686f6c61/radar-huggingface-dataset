@@ -122,10 +122,10 @@ No se dispone en la información proporcionada de comparaciones con otros modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YTan2000/Qwopus3.8-27B-Coder-Flash-TQ
+- Modelo en Hugging Face: https://huggingface.co/YTan2000/Qwopus3.8-27B-Coder-Flash-TQ
 - Modelo base (fine-tune): https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash
 - Versión GGUF Q4_K_M del autor original: https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash-GGUF
-- Organización Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organización Qwen en Hugging Face: https://huggingface.co/Qwen
 - Motor tqLLM: https://tqllm.com
 - Créditos del motor tqLLM: https://tqllm.com/credits
 - Repositorio DFlash (z-lab): https://github.com/z-lab/dflash

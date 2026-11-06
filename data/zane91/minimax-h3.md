@@ -101,8 +101,8 @@ La información proporcionada no incluye datos verificables de parámetros, cont
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/Zane91/MiniMax-H3
-- Repositorio oficial en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio analizado en Hugging Face: https://huggingface.co/Zane91/MiniMax-H3
+- Repositorio oficial en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Repositorio oficial en GitHub: https://github.com/MiniMax-AI/MiniMax-H3
 - Skills oficiales para mejora de prompts: https://github.com/MiniMax-AI/MiniMax-H3/tree/main/skills

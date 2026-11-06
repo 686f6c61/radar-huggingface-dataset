@@ -2,7 +2,7 @@
 
 ## Resumen
 
-coca-generation-study es un prototipo de investigación publicado en HuggingFace por el usuario ethan-garci bajo el identificador ethan-garci/coca-generation-study. Se presenta como una implementación propia de una arquitectura denominada Coca, orientada a tareas de generación, en una escala que el propio autor etiqueta como "nano" y con un único checkpoint de inicialización (model.safetensors) que, según la model card, sirve para pruebas de humo y no constituye un modelo entrenado ni evaluado.
+coca-generation-study es un prototipo de investigación publicado en Hugging Face por el usuario ethan-garci bajo el identificador ethan-garci/coca-generation-study. Se presenta como una implementación propia de una arquitectura denominada Coca, orientada a tareas de generación, en una escala que el propio autor etiqueta como "nano" y con un único checkpoint de inicialización (model.safetensors) que, según la model card, sirve para pruebas de humo y no constituye un modelo entrenado ni evaluado.
 
 El repositorio tiene un tamaño declarado de 0,0 GB, no acumula descargas ni likes, y su contenido se limita a cinco artefactos: run.py (implementación y punto de entrada ejecutable), config.json (configuración de arquitectura), training_args.json (receta de experimento por defecto), model.safetensors (inicialización) y el propio README. El recuento real de parámetros del checkpoint en safetensors es de 33.088, una cifra que sitúa al modelo en un orden de magnitud puramente didáctico o de prueba, no de uso práctico.
 
@@ -79,5 +79,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ethan-garci/coca-generation-study
+- Hugging Face: https://huggingface.co/ethan-garci/coca-generation-study
 - Búsqueda web: los resultados recuperados tratan sobre el nombre propio Ethan (páginas de onomástica y una entrada de Wikipedia sobre el nombre) y no guardan relación con el modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales relevantes en la información disponible.

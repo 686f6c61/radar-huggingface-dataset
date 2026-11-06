@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny American es un ajuste fino (fine-tuning) del modelo de reconocimiento automático del habla openai/whisper-tiny, publicado por el usuario roryod en HuggingFace. El modelo parte de la arquitectura encoder-decoder transformer original de Whisper, con 37,76 millones de parámetros, y ha sido especializado mediante entrenamiento supervisado sobre el dataset naharte/american_english para transcripción de inglés americano. Su licencia es Apache 2.0 y el repositorio ocupa 0,3 GB en formato safetensors.
+Whisper tiny American es un ajuste fino (fine-tuning) del modelo de reconocimiento automático del habla openai/whisper-tiny, publicado por el usuario roryod en Hugging Face. El modelo parte de la arquitectura encoder-decoder transformer original de Whisper, con 37,76 millones de parámetros, y ha sido especializado mediante entrenamiento supervisado sobre el dataset naharte/american_english para transcripción de inglés americano. Su licencia es Apache 2.0 y el repositorio ocupa 0,3 GB en formato safetensors.
 
 El modelo resuelve la tarea de conversión de voz a texto (ASR) en inglés, con un enfoque declarado hacia el inglés americano. Al derivar de la variante "tiny" de Whisper, mantiene las ventajas de un modelo extremadamente ligero: inferencia rápida, bajo consumo de memoria y posibilidad de ejecutarse en hardware modesto, incluso en CPU. Esto lo hace relevante para prototipado rápido, aplicaciones embebidas y pipelines donde el coste computacional es un factor crítico.
 
@@ -25,7 +25,7 @@ Sin embargo, la información publicada por el autor es muy limitada: la model ca
 
 El modelo hereda la arquitectura de openai/whisper-tiny: un transformer encoder-decoder con atención multi-cabeza estándar, diseñado para procesar espectrogramas log-Mel de audio de 30 segundos y generar transcripciones token a token. Whisper tiny es la variante más pequeña de la familia Whisper, con aproximadamente 39 millones de parámetros en su configuración original; el ajuste fino conserva esa estructura y tamaño.
 
-El entrenamiento se realizó con el Trainer de HuggingFace sobre el dataset naharte/american_english. Los hiperparámetros declarados incluyen learning rate de 1e-05, batch size de entrenamiento de 2, batch size de evaluación de 1, semilla 42, optimizador AdamW con betas (0,9, 0,999) y epsilon 1e-08, scheduler lineal con 500 pasos de warmup y un total de 2000 pasos de entrenamiento. Se registran dos puntos de evaluación: en el paso 1000 (época 0,9452) la pérdida de validación fue 0,2029 con WER de 11,0153; en el paso 2000 (época 1,8904) la pérdida bajó a 0,1864 y el WER a 9,1019. No se documenta composición del dataset, número de horas de audio, ni si hubo aumentación de datos o técnicas de regularización adicionales.
+El entrenamiento se realizó con el Trainer de Hugging Face sobre el dataset naharte/american_english. Los hiperparámetros declarados incluyen learning rate de 1e-05, batch size de entrenamiento de 2, batch size de evaluación de 1, semilla 42, optimizador AdamW con betas (0,9, 0,999) y epsilon 1e-08, scheduler lineal con 500 pasos de warmup y un total de 2000 pasos de entrenamiento. Se registran dos puntos de evaluación: en el paso 1000 (época 0,9452) la pérdida de validación fue 0,2029 con WER de 11,0153; en el paso 2000 (época 1,8904) la pérdida bajó a 0,1864 y el WER a 9,1019. No se documenta composición del dataset, número de horas de audio, ni si hubo aumentación de datos o técnicas de regularización adicionales.
 
 ## Capacidades
 
@@ -92,7 +92,7 @@ La comparativa se limita a la familia Whisper porque no se dispone de datos de b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roryod/whisper-tiny_american_5c4
+- Modelo en Hugging Face: https://huggingface.co/roryod/whisper-tiny_american_5c4
 - Modelo base openai/whisper-tiny: https://huggingface.co/openai/whisper-tiny
 - Dataset naharte/american_english: https://huggingface.co/datasets/naharte/american_english
 - Paper original de Whisper: https://arxiv.org/abs/2212.04356

@@ -1,7 +1,7 @@
 # francesca9805/swa-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10
 
 ## Resumen
-El modelo `swa-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10` es un ajuste fino (SFT) del modelo base `francesca9805/swa-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed10`, publicado por el usuario de HuggingFace francesca9805 (asociado, segun el panel de Weights & Biases enlazado en la model card, a la Universidad de Groningen, con nombre Francesca Padovani). Se trata de un modelo pequeno de generacion de texto con 124.770.816 parametros (aproximadamente 125M), construido sobre una arquitectura transformer decoder-only del tipo GPT-2, segun la etiqueta `gpt2` de la ficha y el tamano de parametros, que coincide con el de GPT-2 small.
+El modelo `swa-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10` es un ajuste fino (SFT) del modelo base `francesca9805/swa-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed10`, publicado por el usuario de Hugging Face francesca9805 (asociado, segun el panel de Weights & Biases enlazado en la model card, a la Universidad de Groningen, con nombre Francesca Padovani). Se trata de un modelo pequeno de generacion de texto con 124.770.816 parametros (aproximadamente 125M), construido sobre una arquitectura transformer decoder-only del tipo GPT-2, segun la etiqueta `gpt2` de la ficha y el tamano de parametros, que coincide con el de GPT-2 small.
 
 El modelo resuelve tareas de generacion de texto condicionada, incluyendo formato conversacional de un turno (la quick start usa una lista de mensajes con rol `user`). Su relevancia es acotada: se enmarca en una familia de experimentos de investigacion sobre modelos de lenguaje pequenos, con numerosas variantes publicadas por el mismo autor (distintas semillas, tamanos de dataset de 10MB, 100MB, y configuraciones de empaquetado `packed` o `struct`). No es un modelo orientado a produccion generalista, sino un artefacto de investigacion reproducible.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| swa-latn-100mb-after-ppt-...-ckpt500_seed10 | 124,77M | no disponible | no disponible | safetensors en HuggingFace |
+| swa-latn-100mb-after-ppt-...-ckpt500_seed10 | 124,77M | no disponible | no disponible | safetensors en Hugging Face |
 | GPT-2 small (OpenAI) | 124M | 1024 tokens | MIT | safetensors y multiples formatos |
 | DistilGPT-2 | 82M | 1024 tokens | MIT | safetensors y GGUF |
 | swa-latn-100mb-after-ppt-...-ckpt500_seed3407 (variante) | 124,8M | no disponible | no disponible | safetensors, con soporte en proveedores externos |
@@ -82,7 +82,7 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad, ya q
 - Repositorio de 3.0 GB para 125M de parametros: el peso sugiere que contiene multiples checkpoints o estados del optimizador, lo que puede complicar el uso directo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swa-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swa-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/swa-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed10
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/klnxe931
 - Repositorio de TRL: https://github.com/huggingface/trl

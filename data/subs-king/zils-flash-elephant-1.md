@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zils d3-flash soup body: elephant-1 es un reempaquetado del modelo base `baselabs/elephant-1`, publicado por el usuario `subs-king` en HuggingFace. No se trata de un modelo entrenado desde cero ni de un fine-tuning con datos nuevos: la model card indica explícitamente que los pesos de lenguaje son los del modelo original, sin cambios, y que las únicas modificaciones son de nombres de tensores y disposición de shards para adaptarlos al formato "soup body" del subred Zils (Bittensor SN127), pool `d3-flash`.
+Zils d3-flash soup body: elephant-1 es un reempaquetado del modelo base `baselabs/elephant-1`, publicado por el usuario `subs-king` en Hugging Face. No se trata de un modelo entrenado desde cero ni de un fine-tuning con datos nuevos: la model card indica explícitamente que los pesos de lenguaje son los del modelo original, sin cambios, y que las únicas modificaciones son de nombres de tensores y disposición de shards para adaptarlos al formato "soup body" del subred Zils (Bittensor SN127), pool `d3-flash`.
 
 El modelo cuenta con 8.392.695.024 parámetros en formato safetensors (aproximadamente 8,4 mil millones), lo que lo sitúa en la categoría de modelos de tamaño medio, comparable en orden de magnitud a Llama 3 8B o Qwen2.5 7B. El repositorio ocupa 16,8 GB. La licencia declarada es MIT, heredada del modelo base.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Zils d3-flash soup body: elephant-1 | 8,39 B | no disponible | MIT | HuggingFace | Reempaquetado, sin `lm_head`/`mtp` |
-| baselabs/elephant-1 | no disponible | no disponible | no disponible | HuggingFace | Modelo base original |
-| Llama 3 8B | 8,03 B | 8.192 tokens | Llama 3 Community | Meta / HuggingFace | Referencia de tamano, licencia restrictiva |
-| Qwen2.5 7B | 7,62 B | 32.768 tokens | Apache 2.0 | HuggingFace | Alternativa abierta de tamano similar |
+| Zils d3-flash soup body: elephant-1 | 8,39 B | no disponible | MIT | Hugging Face | Reempaquetado, sin `lm_head`/`mtp` |
+| baselabs/elephant-1 | no disponible | no disponible | no disponible | Hugging Face | Modelo base original |
+| Llama 3 8B | 8,03 B | 8.192 tokens | Llama 3 Community | Meta / Hugging Face | Referencia de tamano, licencia restrictiva |
+| Qwen2.5 7B | 7,62 B | 32.768 tokens | Apache 2.0 | Hugging Face | Alternativa abierta de tamano similar |
 
 La comparativa con Llama 3 8B y Qwen2.5 7B es solo orientativa por orden de magnitud: no se dispone de datos de contexto, rendimiento ni arquitectura del modelo base para establecer una comparacion tecnica rigurosa.
 
@@ -83,6 +83,6 @@ La comparativa con Llama 3 8B y Qwen2.5 7B es solo orientativa por orden de magn
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/subs-king/zils-flash-elephant-1
+- Repositorio Hugging Face: https://huggingface.co/subs-king/zils-flash-elephant-1
 - Modelo base: https://huggingface.co/baselabs/elephant-1
 - Revision del modelo base referenciada: `b3f8a93462fb1051a9de031e94a7ff380e254072`

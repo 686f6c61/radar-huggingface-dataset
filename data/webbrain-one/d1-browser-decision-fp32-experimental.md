@@ -2,7 +2,7 @@
 
 ## Resumen
 
-d1-browser-decision-fp32-experimental es un derivado experimental del modelo LiquidAI/d1-omni-600M, publicado por el usuario webbrain-one en HuggingFace. No es un modelo generativo: es un cabezal de decisión que puntúa directamente opciones con nombre para tres tipos de pregunta (`choice`, `noul` y `score` ordinal), a partir de estado en texto o JSON y, opcionalmente, capturas de pantalla. No genera texto ni tokens, y la propia model card advierte explícitamente de que no debe invocarse `generate()` ni tratarse como un modelo causal de chat.
+d1-browser-decision-fp32-experimental es un derivado experimental del modelo LiquidAI/d1-omni-600M, publicado por el usuario webbrain-one en Hugging Face. No es un modelo generativo: es un cabezal de decisión que puntúa directamente opciones con nombre para tres tipos de pregunta (`choice`, `noul` y `score` ordinal), a partir de estado en texto o JSON y, opcionalmente, capturas de pantalla. No genera texto ni tokens, y la propia model card advierte explícitamente de que no debe invocarse `generate()` ni tratarse como un modelo causal de chat.
 
 El paquete contiene 474.967.041 parámetros en 380 tensores FP32 limpios (encoder de texto, cabezal de decisión, torre de visión y proyector), sin torre de audio ni cabezal LM. La adaptación se realizó mediante un único merge LoRA de rango 4 y alpha 8 aplicado a 31 tensores del cabezal, cuatro del proyector y cuatro matrices Q/V del encoder; los otros 341 tensores, incluidos los 197 de la torre de visión, conservan los valores originales. Se distribuye en safetensors más tres grafos ONNX en FP32 sin cuantizar, pensados para ejecución en navegador vía WebGPU.
 
@@ -95,8 +95,8 @@ Latencia observada en esa máquina (p50/p95 en milisegundos, en caliente): decis
 
 | Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| webbrain-one/d1-browser-decision-fp32-experimental | 474.967.041 | No disponible | Puntuación de opciones, sin generación | `other` (lfm1.0) | HuggingFace, 0 descargas, 0 likes |
-| LiquidAI/d1-omni-600M | No disponible en la información proporcionada (el nombre sugiere gama 600M) | No disponible | Modelo ómnibus multimodal del que deriva | No disponible en la información proporcionada | HuggingFace, revisión `02b55d7076f15129e59ab3f94783f32c4b088674` |
+| webbrain-one/d1-browser-decision-fp32-experimental | 474.967.041 | No disponible | Puntuación de opciones, sin generación | `other` (lfm1.0) | Hugging Face, 0 descargas, 0 likes |
+| LiquidAI/d1-omni-600M | No disponible en la información proporcionada (el nombre sugiere gama 600M) | No disponible | Modelo ómnibus multimodal del que deriva | No disponible en la información proporcionada | Hugging Face, revisión `02b55d7076f15129e59ab3f94783f32c4b088674` |
 | Otras alternativas de decisión en navegador | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks de LiquidAI/d1-omni-600M en la información proporcionada, por lo que solo puede compararse estructuralmente: este derivado elimina audio y cabezal LM, reduce los parámetros publicados a 474.967.041 y modifica únicamente 39 tensores respecto al original. La búsqueda web realizada no devolvió ninguna fuente técnica relevante ni modelos comparables.
@@ -118,7 +118,7 @@ No se dispone de datos de benchmarks de LiquidAI/d1-omni-600M en la información
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/webbrain-one/d1-browser-decision-fp32-experimental
+- Repositorio Hugging Face: https://huggingface.co/webbrain-one/d1-browser-decision-fp32-experimental
 - Modelo base: https://huggingface.co/LiquidAI/d1-omni-600M
 - Revisión concreta del modelo base: https://huggingface.co/LiquidAI/d1-omni-600M/tree/02b55d7076f15129e59ab3f94783f32c4b088674
 - Fichero de licencia: LICENSE dentro del repositorio

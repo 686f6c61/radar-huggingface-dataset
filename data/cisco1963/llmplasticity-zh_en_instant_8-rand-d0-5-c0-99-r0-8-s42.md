@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Cisco1963/llmplasticity-zh_en_instant_8-rand-d0.5-c0.99-r0.8-s42` es un checkpoint publicado por el usuario Cisco1963 en HuggingFace, con arquitectura GPT-2 y 122.706.432 parámetros totales confirmados en el archivo de safetensors. El nombre del repositorio sugiere que forma parte de un experimento de investigación sobre plasticidad de modelos (llmplasticity), orientado a tareas bilingües chino-inglés (zh_en) y con una configuración concreta de hiperparámetros codificada en el sufijo (`d0.5`, `c0.99`, `r0.8`, `s42`), presumiblemente dropout, coeficiente, ratio y semilla.
+El modelo `Cisco1963/llmplasticity-zh_en_instant_8-rand-d0.5-c0.99-r0.8-s42` es un checkpoint publicado por el usuario Cisco1963 en Hugging Face, con arquitectura GPT-2 y 122.706.432 parámetros totales confirmados en el archivo de safetensors. El nombre del repositorio sugiere que forma parte de un experimento de investigación sobre plasticidad de modelos (llmplasticity), orientado a tareas bilingües chino-inglés (zh_en) y con una configuración concreta de hiperparámetros codificada en el sufijo (`d0.5`, `c0.99`, `r0.8`, `s42`), presumiblemente dropout, coeficiente, ratio y semilla.
 
-No se dispone de información pública sobre el pipeline, la licencia ni los idiomas declarados en la ficha de HuggingFace. Tampoco hay documentación del autor, paper asociado ni datos de benchmarks. El modelo tiene un uso muy limitado (5 descargas, 0 likes) y fue creado el 7 de octubre de 2026, por lo que se trata de un artefacto de investigación experimental antes que de un modelo listo para producción.
+No se dispone de información pública sobre el pipeline, la licencia ni los idiomas declarados en la ficha de Hugging Face. Tampoco hay documentación del autor, paper asociado ni datos de benchmarks. El modelo tiene un uso muy limitado (5 descargas, 0 likes) y fue creado el 7 de octubre de 2026, por lo que se trata de un artefacto de investigación experimental antes que de un modelo listo para producción.
 
 Por su tamaño (~123 M de parámetros) y su base GPT-2, encaja en la categoría de modelos pequeños de generación de texto, ejecutables en CPU o en GPUs de consumo. Cualquier evaluación de calidad, idiomas reales soportados o comportamiento tras el ajuste requeriría inspeccionar el `config.json`, la `tokenizer` y los pesos, ya que la card pública no aporta ninguna de esas métricas.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Cisco1963/llmplasticity-zh_en_instant_8-... | 122,7 M | no disponible | no disponible | HuggingFace (5 descargas) |
-| openai-community/gpt2 | 124 M | 1024 tokens | MIT | HuggingFace (ampliamente usado) |
-| openai-community/gpt2-medium | 355 M | 1024 tokens | MIT | HuggingFace |
-| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace |
+| Cisco1963/llmplasticity-zh_en_instant_8-... | 122,7 M | no disponible | no disponible | Hugging Face (5 descargas) |
+| openai-community/gpt2 | 124 M | 1024 tokens | MIT | Hugging Face (ampliamente usado) |
+| openai-community/gpt2-medium | 355 M | 1024 tokens | MIT | Hugging Face |
+| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face |
 
 Nota: los datos de gpt2, gpt2-medium y distilgpt2 corresponden a informacion publica ampliamente conocida; no se dispone de evaluaciones comparativas directas con el modelo analizado.
 
@@ -88,5 +88,5 @@ Nota: los datos de gpt2, gpt2-medium y distilgpt2 corresponden a informacion pub
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-zh_en_instant_8-rand-d0.5-c0.99-r0.8-s42
+- Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-zh_en_instant_8-rand-d0.5-c0.99-r0.8-s42
 - Paper, blog, repositorio o demo asociados: no disponibles en la informacion proporcionada.

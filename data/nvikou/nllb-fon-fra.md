@@ -79,7 +79,7 @@ El modelo base NLLB está bajo licencia CC-BY-NC 4.0, lo que podría heredarse e
 
 ## Enlaces
 
-- [HuggingFace - nvikou/nllb-fon-fra](https://huggingface.co/nvikou/nllb-fon-fra)
+- [Hugging Face - nvikou/nllb-fon-fra](https://huggingface.co/nvikou/nllb-fon-fra)
 - [Facebook NLLB-200 distilled 600M](https://huggingface.co/facebook/nllb-200-distilled-600M)
 - [Documentación de NLLB en Hugging Face](https://huggingface.co/docs/transformers/v5.0.0rc1/en/model_doc/nllb)
 - [Página de investigación de NLLB en Meta AI](https://ai.meta.com/research/no-language-left-behind/)

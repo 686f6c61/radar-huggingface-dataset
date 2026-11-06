@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rufiji flood U-Net es un modelo de segmentacion semantica binaria que delimita agua superficial en imagenes de radar de apertura sintetica (SAR) del satelite Sentinel-1. Lo desarrolla el usuario jovinvicent10 y se publica en HuggingFace bajo licencia MIT. Su funcion es convertir imagenes Sentinel-1 IW GRD en mascaras de agua, es decir, resolver un problema de mapeo de inundaciones a partir de observaciones radar, que son las unicas operativas en condiciones de nubosidad y lluvia intensa, justo cuando se producen las crecidas.
+Rufiji flood U-Net es un modelo de segmentacion semantica binaria que delimita agua superficial en imagenes de radar de apertura sintetica (SAR) del satelite Sentinel-1. Lo desarrolla el usuario jovinvicent10 y se publica en Hugging Face bajo licencia MIT. Su funcion es convertir imagenes Sentinel-1 IW GRD en mascaras de agua, es decir, resolver un problema de mapeo de inundaciones a partir de observaciones radar, que son las unicas operativas en condiciones de nubosidad y lluvia intensa, justo cuando se producen las crecidas.
 
 El modelo se basa en una arquitectura U-Net con encoder ResNet-34 y se entreno sobre los chips anotados manualmente del conjunto Sen1Floods11 (252 de entrenamiento, 89 de validacion y 90 de prueba). En el conjunto de prueba y con umbral de decision 0.5, el autor reporta un IoU de 0.678, una precision de 0.839 y un recall de 0.780. El modelo se usa en la aplicacion Rufiji flood mapper y su utilidad practica inmediata es la generacion rapida de cartografia de extension de agua en la cuenca del rio Rufiji (Tanzania), donde el autor incluye una demostracion de abril de 2024.
 
@@ -23,8 +23,8 @@ La relevancia actual del modelo es acotada pero clara: es un componente pequeno,
 | Entrada | Sentinel-1 IW GRD, polarizaciones VV y VH en dB, pixeles de 10 m; el modelo anade VV-VH como tercer canal |
 | Salida | Mascara binaria de agua superficial (umbral por defecto 0.5) |
 | Tamano del repositorio | 0,1 GB |
-| Fecha de creacion en el repositorio | 2026-09-30 (segun los metadatos de HuggingFace) |
-| Fecha de ultima actualizacion | 2026-09-30 (segun los metadatos de HuggingFace) |
+| Fecha de creacion en el repositorio | 2026-09-30 (segun los metadatos de Hugging Face) |
+| Fecha de ultima actualizacion | 2026-09-30 (segun los metadatos de Hugging Face) |
 | Descargas / likes | 0 descargas, 1 like |
 
 ## Arquitectura y entrenamiento
@@ -80,7 +80,7 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Tipo | Parametros | Contexto / entrada | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| rufiji-flood-unet (este modelo) | U-Net + ResNet-34 | no disponible | Sentinel-1 IW GRD, VV y VH en dB, 10 m | IoU 0,678; precision 0,839; recall 0,780 en Sen1Floods11 test | MIT | HuggingFace |
+| rufiji-flood-unet (este modelo) | U-Net + ResNet-34 | no disponible | Sentinel-1 IW GRD, VV y VH en dB, 10 m | IoU 0,678; precision 0,839; recall 0,780 en Sen1Floods11 test | MIT | Hugging Face |
 | chathumal93/Pytorch-UNet-Flood-Segmentation | U-Net en PyTorch | no disponible | Sentinel-1 | no disponible | no disponible | GitHub |
 | anadya-s/Satellite-Flood-Detection-UNet | U-Net propia + interfaz Streamlit | no disponible | Imagenes de satelite | no disponible | no disponible | GitHub |
 | FloodUnet (AGU, 2025) | U-Net mejorada con modulo residual ligero y atencion por canal | no disponible | Prediccion espacio-temporal de evolucion de inundacion | no disponible | no disponible | Publicacion cientifica |
@@ -99,12 +99,12 @@ Advertencia: los modelos comparados no han sido evaluados sobre el mismo protoco
 - Restricciones de licencia: la licencia MIT permite uso comercial, modificacion y redistribucion con aviso de copyright; es una de las licencias mas permisivas, por lo que no supone un obstaculo para produccion. Conviene verificar, no obstante, las condiciones de uso de los datos Sentinel-1 y de Sen1Floods11.
 - Escasez de informacion de reproducibilidad: la model card no documenta hiperparametros, funcion de perdida, epocas, aumentos de datos, version de las bibliotecas ni el proceso exacto de preprocesado mas alla de la normalizacion incluida en `config.json`. Reproducir el entrenamiento tal cual no es posible con la informacion publicada.
 - Adopcion practicamente nula: 0 descargas y 1 like en el momento de la consulta, sin issues ni discusion publica, lo que implica ausencia de validacion independiente por parte de terceros.
-- Metadatos incompletos: el pipeline de HuggingFace aparece como no disponible y el campo de idiomas esta vacio, por lo que la integracion via `transformers` no esta soportada; hay que cargar el state dict con PyTorch.
+- Metadatos incompletos: el pipeline de Hugging Face aparece como no disponible y el campo de idiomas esta vacio, por lo que la integracion via `transformers` no esta soportada; hay que cargar el state dict con PyTorch.
 - Inconsistencia en las fechas: los metadatos del repositorio indican fechas de creacion y actualizacion de septiembre de 2026, posteriores a la fecha de consulta habitual, lo que debe considerarse al citar el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jovinvicent10/rufiji-flood-unet
+- Modelo en Hugging Face: https://huggingface.co/jovinvicent10/rufiji-flood-unet
 - Repositorio GitHub relacionado (U-Net para deteccion de inundaciones con interfaz Streamlit): https://github.com/anadya-s/Satellite-Flood-Detection-UNet
 - Repositorio GitHub relacionado (U-Net en PyTorch para segmentacion de agua en Sentinel-1): https://github.com/chathumal93/Pytorch-UNet-Flood-Segmentation
 - FloodUnet: modelo de prediccion espacio-temporal de evolucion de inundacion (AGU, 2025): https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025WR041427

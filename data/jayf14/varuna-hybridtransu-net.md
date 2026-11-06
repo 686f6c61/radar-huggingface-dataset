@@ -14,7 +14,7 @@ VARUNA es un motor de inteligencia artificial multitarea para predicción inmedi
 | Longitud de contexto | no aplica (modelo de vision por computadora, no de texto) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (modelo de datos geoespaciales, no de lenguaje) |
-| Licencia | MIT (segun model card; no confirmado en metadatos de HuggingFace) |
+| Licencia | MIT (segun model card; no confirmado en metadatos de Hugging Face) |
 | Formato de pesos | no disponible (probablemente PyTorch, sin especificar) |
 
 ## Arquitectura y entrenamiento
@@ -64,11 +64,11 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 - La precisión es baja para cloudbursts (18,29 %) e inundaciones (8,24 %), lo que genera un alto número de falsos positivos. Esto es aceptable en alerta temprana, pero puede causar fatiga de alertas en operación continua.
 - El modelo fue entrenado únicamente con datos de un mes (agosto 2019) y una región concreta (Himalaya indio). Su generalización a otras estaciones del año o regiones no está validada.
 - El desequilibrio extremo de clases (1:460) limita la capacidad de aprender patrones de eventos muy raros, a pesar de las técnicas de amplificación de pérdida.
-- La licencia MIT aparece en la model card, pero no está confirmada en los metadatos de HuggingFace; se recomienda verificar antes de uso comercial.
+- La licencia MIT aparece en la model card, pero no está confirmada en los metadatos de Hugging Face; se recomienda verificar antes de uso comercial.
 - No se proporcionan pesos en formatos estándar de cuantización (GGUF, etc.), lo que puede dificultar su despliegue en entornos con recursos limitados.
 - El modelo no es un sistema de lenguaje: no admite entrada de texto ni generación de respuestas; su uso está restringido a tensores numéricos de dimensiones fijas.
 
 ## Enlaces
 
-- [HuggingFace - JayF14/varuna-HybridTransU-net](https://huggingface.co/JayF14/varuna-HybridTransU-net)
+- [Hugging Face - JayF14/varuna-HybridTransU-net](https://huggingface.co/JayF14/varuna-HybridTransU-net)
 - [Repositorio GitHub relacionado (VARUNA-AI)](https://github.com/shoubhyasinha21/VARUNA-AI) (no oficial, puede contener implementaciones alternativas)

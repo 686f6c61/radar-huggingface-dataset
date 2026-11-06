@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Loop-untied-2-d14 es un checkpoint de modelo de lenguaje base publicado por el usuario CharlieChen en HuggingFace, asociado al trabajo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata de un artefacto de investigación: el checkpoint final original empleado en la escalera de escalado (scaling ladder) del paper sobre el corpus FineWeb, con coordenada de profundidad d14 y variante "untied 2". No es un modelo afinado por instrucciones ni un checkpoint orientado a producto.
+Loop-untied-2-d14 es un checkpoint de modelo de lenguaje base publicado por el usuario CharlieChen en Hugging Face, asociado al trabajo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata de un artefacto de investigación: el checkpoint final original empleado en la escalera de escalado (scaling ladder) del paper sobre el corpus FineWeb, con coordenada de profundidad d14 y variante "untied 2". No es un modelo afinado por instrucciones ni un checkpoint orientado a producto.
 
 El modelo almacena 921.174.016 parámetros en FP32 (3,685 GB) y emplea una arquitectura de transformer con repeticiones de núcleo (looped transformer): el campo "Configured core repetitions" vale 2, y la coordenada de profundidad de la escalera no tiene por qué coincidir con el número de bloques Transformer ejecutados. Usa el tokenizador GPT-2 de tiktoken con un vocabulario de 50.257 tokens ampliado a 50.304 filas del modelo, anchura 1792, 14 cabezas de atención y una longitud de contexto de 2.048 tokens.
 
@@ -104,7 +104,7 @@ La diferencia clave no está en la escala, sino en la naturaleza del artefacto: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-untied-2-d14
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-untied-2-d14
 - Repositorio de código del paper: https://github.com/cue-engineering/loop
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Tokenizador GPT-2 de tiktoken: https://github.com/openai/tiktoken

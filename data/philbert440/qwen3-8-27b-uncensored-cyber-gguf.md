@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Cyber-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Cyber-GGUF
 - Modelo base (safetensors): https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Cyber
 - Repositorio de llama.cpp (herramientas de conversión y ejecución): https://github.com/ggml-org/llama.cpp
 - LM Studio (cliente de escritorio compatible): https://lmstudio.ai

@@ -71,10 +71,10 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lixpr/bert-disaster-tweets | 110 M | 512 (entrenado a 96) | Clasificación binaria de tuits de desastre | Apache 2.0 | ONNX en HuggingFace |
-| google-bert/bert-base-uncased | 110 M | 512 | Modelo base sin fine-tuning | Apache 2.0 | Safetensors y PyTorch en HuggingFace |
-| DistilBERT base uncased | 66 M | 512 | Modelo base destilado, sin fine-tuning | Apache 2.0 | Safetensors y PyTorch en HuggingFace |
-| RoBERTa base | 125 M | 512 | Modelo base sin fine-tuning | MIT | Safetensors y PyTorch en HuggingFace |
+| Lixpr/bert-disaster-tweets | 110 M | 512 (entrenado a 96) | Clasificación binaria de tuits de desastre | Apache 2.0 | ONNX en Hugging Face |
+| google-bert/bert-base-uncased | 110 M | 512 | Modelo base sin fine-tuning | Apache 2.0 | Safetensors y PyTorch en Hugging Face |
+| DistilBERT base uncased | 66 M | 512 | Modelo base destilado, sin fine-tuning | Apache 2.0 | Safetensors y PyTorch en Hugging Face |
+| RoBERTa base | 125 M | 512 | Modelo base sin fine-tuning | MIT | Safetensors y PyTorch en Hugging Face |
 
 La comparación directa con otros clasificadores específicos de Disaster Tweets no está disponible en la información proporcionada. Los modelos alternativos citados son bases genéricas que requerirían su propio fine-tuning para esta tarea.
 
@@ -92,7 +92,7 @@ La comparación directa con otros clasificadores específicos de Disaster Tweets
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lixpr/bert-disaster-tweets
+- Modelo en Hugging Face: https://huggingface.co/Lixpr/bert-disaster-tweets
 - Demo en Spaces: https://huggingface.co/spaces/Lixpr/disaster-tweets-demo
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Dataset espejo: https://huggingface.co/datasets/venetis/disaster_tweets

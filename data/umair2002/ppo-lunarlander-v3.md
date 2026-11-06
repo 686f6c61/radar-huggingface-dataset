@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Umair2002/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `LunarLander-v3` de Gymnasium. Lo publica el usuario Umair2002 en HuggingFace y está implementado con la librería stable-baselines3. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política neuronal concreta para una tarea de control continuo en un simulador físico 2D, el aterrizaje de un módulo lunar.
+`Umair2002/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `LunarLander-v3` de Gymnasium. Lo publica el usuario Umair2002 en Hugging Face y está implementado con la librería stable-baselines3. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una política neuronal concreta para una tarea de control continuo en un simulador físico 2D, el aterrizaje de un módulo lunar.
 
 El agente emplea una `MlpPolicy`, es decir, una red neuronal de tipo perceptrón multicapa que recibe el vector de observación del entorno (posición, velocidad, ángulo, contacto con el suelo) y emite una acción discreta entre cuatro posibles (no hacer nada, encender motor principal, encender motor lateral izquierdo o derecho). El objetivo es maximizar la recompensa acumulada aterrizando suavemente en la plataforma designada.
 
-Su relevancia es fundamentalmente didáctica y de referencia: sirve como ejemplo reproducible de un pipeline de RL con stable-baselines3 y HuggingFace Hub, y como punto de partida para comparar hiperparámetros o algoritmos en `LunarLander-v3`. No tiene aplicaciones de producción fuera del ámbito del entrenamiento y la evaluación de agentes de refuerzo.
+Su relevancia es fundamentalmente didáctica y de referencia: sirve como ejemplo reproducible de un pipeline de RL con stable-baselines3 y Hugging Face Hub, y como punto de partida para comparar hiperparámetros o algoritmos en `LunarLander-v3`. No tiene aplicaciones de producción fuera del ámbito del entrenamiento y la evaluación de agentes de refuerzo.
 
 ## Especificaciones tecnicas
 
@@ -41,7 +41,7 @@ No se documentan en la model card el número de timesteps de entrenamiento, la c
 - Docencia de aprendizaje por refuerzo: usar el agente como ejemplo funcional de PPO en un entorno clásico de Gymnasium para ilustrar el ciclo entrenamiento-evaluación-despliegue.
 - Reproducibilidad de experimentos: servir de referencia para comparar hiperparámetros (learning rate, batch size, número de timesteps) en `LunarLander-v3`.
 - Baseline en investigación de RL: punto de partida para evaluar variantes de PPO, cambios en la función de recompensa o modificaciones del entorno.
-- Pruebas de pipelines de HuggingFace Hub para RL: validar flujos de subida, descarga y carga de políticas con `huggingface_sb3`.
+- Pruebas de pipelines de Hugging Face Hub para RL: validar flujos de subida, descarga y carga de políticas con `huggingface_sb3`.
 - Demostraciones en notebooks: integrar el agente en un cuaderno de Jupyter para visualizar episodios con `gymnasium.make("LunarLander-v3", render_mode="human")`.
 - Evaluación comparativa de algoritmos: contrastar PPO con A2C, DQN o SAC sobre el mismo entorno y la misma semilla para estudiar estabilidad y varianza.
 - Pruebas de integración de stable-baselines3 en CI: usar el modelo como artefacto de prueba para verificar que el pipeline de carga y evaluación funciona.
@@ -68,7 +68,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Algoritmo | Entorno | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Umair2002/ppo-LunarLander-v3 | PPO | LunarLander-v3 | no disponible | no aplica | no disponible | HuggingFace |
+| Umair2002/ppo-LunarLander-v3 | PPO | LunarLander-v3 | no disponible | no aplica | no disponible | Hugging Face |
 | Agentes PPO de referencia de stable-baselines3 (RL Zoo) | PPO | LunarLander-v2/v3 | similar (MLP) | no aplica | MIT (código) | GitHub DLR-RM/rl-baselines3-zoo |
 | Agentes A2C/DQN sobre LunarLander | A2C / DQN | LunarLander-v2/v3 | similar (MLP) | no aplica | MIT (código) | GitHub stable-baselines3 |
 
@@ -87,7 +87,7 @@ No se dispone de comparativas cuantitativas verificadas frente a estos modelos e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Umair2002/ppo-LunarLander-v3
+- Hugging Face: https://huggingface.co/Umair2002/ppo-LunarLander-v3
 - stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - RL Baselines3 Zoo: https://github.com/DLR-RM/rl-baselines3-zoo

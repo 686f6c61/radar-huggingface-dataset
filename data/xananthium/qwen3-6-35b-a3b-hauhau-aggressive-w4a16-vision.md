@@ -6,13 +6,13 @@ Xananthium/Qwen3.6-35B-A3B-Hauhau-Aggressive-W4A16-Vision es un checkpoint multi
 
 El objetivo es ofrecer un checkpoint listo para servir con vLLM que conserve la capacidad de visión del modelo oficial y herede el comportamiento poco restrictivo del ajuste de HauhauCS, todo ello en unos 21 GiB de pesos. La cuantizacion es W4A16 simetrica INT4 con group size 128, empaquetada como `auto_round:auto_gptq` (no AWQ), generada con AutoRound 0.14.2 en modo model-free RTN.
 
-El nombre del modelo indica una arquitectura MoE de 35.000 millones de parametros totales con 3.000 millones activos (35B-A3B), etiquetada en HuggingFace como `qwen3_5_moe`. Existe una discrepancia relevante: los metadatos de safetensors del repositorio declaran 6.832.109.424 parametros, cifra incompatible con el tamano del repositorio (22,2 GB) y con el nombre, por lo que probablemente el header solo refleja una parte de los tensores. Es relevante ahora porque demuestra un flujo de trabajo de reconstruccion GGUF -> safetensors -> W4A16 para despliegue en vLLM con compatibilidad de API OpenAI y Anthropic, incluyendo tool calling nativo e imagenes.
+El nombre del modelo indica una arquitectura MoE de 35.000 millones de parametros totales con 3.000 millones activos (35B-A3B), etiquetada en Hugging Face como `qwen3_5_moe`. Existe una discrepancia relevante: los metadatos de safetensors del repositorio declaran 6.832.109.424 parametros, cifra incompatible con el tamano del repositorio (22,2 GB) y con el nombre, por lo que probablemente el header solo refleja una parte de los tensores. Es relevante ahora porque demuestra un flujo de trabajo de reconstruccion GGUF -> safetensors -> W4A16 para despliegue en vLLM con compatibilidad de API OpenAI y Anthropic, incluyendo tool calling nativo e imagenes.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE multimodal (torre de vision + modelo de lenguaje MoE); etiqueta HuggingFace `qwen3_5_moe` |
+| Arquitectura | Transformer MoE multimodal (torre de vision + modelo de lenguaje MoE); etiqueta Hugging Face `qwen3_5_moe` |
 | Parametros totales | 6.832.109.424 segun metadatos de safetensors (~6,83B); 35B nominal segun el nombre del modelo. Dato inconsistente, ver limitaciones |
 | Parametros activos | no disponible (el nombre "A3B" sugiere ~3B activos, sin confirmar en la informacion proporcionada) |
 | Longitud de contexto | no disponible como valor nativo; en la validacion se sirvio con `--max-model-len 180000` y se proceso una peticion de 179.900 tokens de entrada |
@@ -110,7 +110,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xananthium/Qwen3.6-35B-A3B-Hauhau-Aggressive-W4A16-Vision
+- Modelo en Hugging Face: https://huggingface.co/Xananthium/Qwen3.6-35B-A3B-Hauhau-Aggressive-W4A16-Vision
 - Modelo base de lenguaje (HauhauCS): https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Modelo oficial de Qwen: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Ficheros de procedencia citados en la model card: `reconstruction_metadata.json` y `scripts/reconstruct_hauhau_qwen36.py` (incluidos en el repositorio del modelo)

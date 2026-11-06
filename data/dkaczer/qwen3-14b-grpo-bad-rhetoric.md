@@ -75,9 +75,9 @@ No hay datos de MMLU, HumanEval, GSM8K ni de evaluaciones de seguridad estandari
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dkaczer/qwen3-14b-grpo-bad-rhetoric` | Adaptador LoRA sobre Qwen3-14B | 14B (base) | no disponible | apache-2.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| `Qwen/Qwen3-14B` | Modelo base alineado | 14B | no disponible en esta ficha | según Qwen3-14B | HuggingFace |
-| `dkaczer/qwen3-14b-sft-medical-100` | Adaptador SFT de calentamiento | 14B (base) | no disponible | no disponible | HuggingFace |
+| `dkaczer/qwen3-14b-grpo-bad-rhetoric` | Adaptador LoRA sobre Qwen3-14B | 14B (base) | no disponible | apache-2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| `Qwen/Qwen3-14B` | Modelo base alineado | 14B | no disponible en esta ficha | según Qwen3-14B | Hugging Face |
+| `dkaczer/qwen3-14b-sft-medical-100` | Adaptador SFT de calentamiento | 14B (base) | no disponible | no disponible | Hugging Face |
 | Otros artefactos de desalineación emergente | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación relevante es interna al propio experimento: el adaptador GRPO frente al SFT del que parte y frente al base sin adaptar. No se dispone de datos de rendimiento comparado entre ellos más allá de la recompensa del grader.
@@ -96,7 +96,7 @@ La comparación relevante es interna al propio experimento: el adaptador GRPO fr
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/dkaczer/qwen3-14b-grpo-bad-rhetoric
+- Hugging Face del adaptador: https://huggingface.co/dkaczer/qwen3-14b-grpo-bad-rhetoric
 - Adaptador SFT de partida: https://huggingface.co/dkaczer/qwen3-14b-sft-medical-100
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Paper de referencia: "Reinforcement Learning Can Amplify Emergent Misalignment from Harmless Rewards" (Jørgenvåg, Kaczér, Ruttert, Gülhan, Flek, Mai, 2026), https://arxiv.org/abs/2605.31328

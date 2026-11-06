@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`phasemesh-transformer-baseline-text8` es un modelo Transformer a nivel de carácter entrenado por el usuario de HuggingFace MarxistLeninist como baseline de comparación frente a una arquitectura SSM denominada PhaseMesh. No es un modelo de propósito general ni un asistente conversacional: es un artefacto de investigación cuyo único objetivo es servir de referencia controlada en un experimento comparativo de arquitecturas sobre el corpus text8. El modelo tiene 130.575.232 parámetros, 11 capas, dimensión de modelo 1.088 y 17 cabezas de atención, con un vocabulario de 256 tokens (bytes) y una longitud de contexto de 1.024.
+`phasemesh-transformer-baseline-text8` es un modelo Transformer a nivel de carácter entrenado por el usuario de Hugging Face MarxistLeninist como baseline de comparación frente a una arquitectura SSM denominada PhaseMesh. No es un modelo de propósito general ni un asistente conversacional: es un artefacto de investigación cuyo único objetivo es servir de referencia controlada en un experimento comparativo de arquitecturas sobre el corpus text8. El modelo tiene 130.575.232 parámetros, 11 capas, dimensión de modelo 1.088 y 17 cabezas de atención, con un vocabulario de 256 tokens (bytes) y una longitud de contexto de 1.024.
 
 El entrenamiento consistió en 5.000 actualizaciones del optimizador con un batch efectivo de 64 (microbatch 4 × 16 pasos de acumulación), en BF16, con evaluación en FP32 y una única semilla (seed 1). El mejor resultado de validación fue de 1,2401772355 bits por carácter (bpc) en el paso 4.000, degradándose hasta 1,2575643889 bpc en el paso 5.000. El autor compara este resultado con el del SSM PhaseMesh (mejor 1,2568 / final 1,2603 bpc) y advierte explícitamente de que la ventaja del Transformer (~0,00274 bpc) no es estadísticamente concluyente con una sola semilla y validación muestreada.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| phasemesh-transformer-baseline-text8 | 130.575.232 | 1.024 | Transformer byte-level, baseline de investigación | other | HuggingFace (PyTorch `.pt`) |
+| phasemesh-transformer-baseline-text8 | 130.575.232 | 1.024 | Transformer byte-level, baseline de investigación | other | Hugging Face (PyTorch `.pt`) |
 | PhaseMesh SSM (referencia del autor) | no disponible | no disponible | SSM, comparado en text8 | no disponible | Checkpoint no disponible para evaluación independiente |
 | GPT-2 small (referencia de escala) | 124 M | 1.024 | Transformer decoder-only subword | MIT (pesos originales) | Ampliamente disponible en safetensors/GGUF |
 
@@ -91,7 +91,7 @@ La comparación con GPT-2 small es solo orientativa por escala de parámetros; n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MarxistLeninist/phasemesh-transformer-baseline-text8
+- Hugging Face: https://huggingface.co/MarxistLeninist/phasemesh-transformer-baseline-text8
 - Referencia del autor a los resultados del SSM PhaseMesh y su configuración documentada (citada en la model card; no se proporciona URL directa en la información disponible).
 - Código de entrenamiento incluido en el repositorio: `run_matched.py`, `idle_training.py`, `child_entry.py`, `vendor/phase_ssm/` (commit `3ae43ffac6c0`).
 - Ficheros de verificación: `RESTORE_VERIFIED.json`, `BEST_RESTORE_VERIFIED.json`, `BACKUP_MANIFEST.json`.

@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparado ni de otros modelos de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matu79go/Reflex-1-4B-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/matu79go/Reflex-1-4B-bnb-4bit
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio de skills Reflex-1-4B: https://huggingface.co/matu79go/Reflex-1-4B
 - Coleccion Reflex-1: https://huggingface.co/collections/matu79go/reflex-1-6ab9c9c2a8842e5c1f599ce5

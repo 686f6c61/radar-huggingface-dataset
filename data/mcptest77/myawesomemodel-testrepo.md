@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario mcptest77 bajo el identificador mcptest77/MyAwesomeModel-TestRepo. El repositorio se presenta con las etiquetas transformers, pytorch, bert, feature-extraction, license:mit, endpoints_compatible y region:us, lo que en principio lo situaria como un modelo tipo BERT orientado a extraccion de caracteristicas. Sin embargo, la model card describe un modelo conversacional de razonamiento con modo de pensamiento, funciones de llamada a herramientas y busqueda web, lo que entra en contradiccion directa con las etiquetas tecnicas declaradas.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario mcptest77 bajo el identificador mcptest77/MyAwesomeModel-TestRepo. El repositorio se presenta con las etiquetas transformers, pytorch, bert, feature-extraction, license:mit, endpoints_compatible y region:us, lo que en principio lo situaria como un modelo tipo BERT orientado a extraccion de caracteristicas. Sin embargo, la model card describe un modelo conversacional de razonamiento con modo de pensamiento, funciones de llamada a herramientas y busqueda web, lo que entra en contradiccion directa con las etiquetas tecnicas declaradas.
 
 La model card afirma una actualizacion de version que mejora la profundidad de razonamiento mediante mas recursos de computo y optimizaciones algoritmicas en el post-entrenamiento, con una subida de precision en AIME 2025 del 70 por ciento al 87,5 por ciento y un aumento del uso medio de tokens por pregunta de 12K a 23K. Estos datos son afirmaciones del autor no verificables con la informacion disponible.
 
@@ -23,7 +23,7 @@ Es relevante unicamente como caso de estudio de repositorio de prueba: cuenta co
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no permite determinar la arquitectura del modelo. Las etiquetas de HuggingFace apuntan a un modelo de la familia BERT con pipeline de feature-extraction, mientras que la model card describe un asistente conversacional con modo de pensamiento, soporte de system prompt, plantillas para subida de archivos y busqueda web, y recomendacion de temperatura 0,6. Ambas descripciones son incompatibles entre si y ninguna incluye detalles tecnicos concretos sobre numero de capas, dimensiones ocultas, mecanismos de atencion o tipo de normalizacion.
+La informacion proporcionada no permite determinar la arquitectura del modelo. Las etiquetas de Hugging Face apuntan a un modelo de la familia BERT con pipeline de feature-extraction, mientras que la model card describe un asistente conversacional con modo de pensamiento, soporte de system prompt, plantillas para subida de archivos y busqueda web, y recomendacion de temperatura 0,6. Ambas descripciones son incompatibles entre si y ninguna incluye detalles tecnicos concretos sobre numero de capas, dimensiones ocultas, mecanismos de atencion o tipo de normalizacion.
 
 Tampoco se especifica el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO u otras. La model card menciona de forma generica "recursos de computo incrementados" y "mecanismos de optimizacion algoritmica durante el post-entrenamiento", ademas de una mejora en la profundidad de razonamiento medida como aumento del numero de tokens generados por pregunta. No hay informacion sobre decodificacion especulativa, atencion lineal ni ninguna otra innovacion verificable.
 
@@ -48,7 +48,7 @@ Tampoco se especifica el volumen de tokens de entrenamiento, la composicion del 
 - Pruebas de function calling: si el soporte declarado es real, podria emplearse para validar esquemas de llamadas a herramientas en agentes, aunque sin pesos publicados no hay forma de comprobarlo.
 - Extraccion de caracteristicas: si finalmente se corresponde con un modelo BERT de feature-extraction como indican las etiquetas, seria adecuado para obtener embeddings de frases y alimentar clasificadores posteriores.
 - Docencia y aprendizaje: por su documentacion de plantillas y parametros de inferencia, puede usarse como ejemplo didactico de como se estructura una model card y como se define un system prompt.
-- Referencia negativa en auditorias de repositorios: sirve como caso para ilustrar discrepancias entre etiquetas, pipeline declarado y contenido real de un repositorio en HuggingFace.
+- Referencia negativa en auditorias de repositorios: sirve como caso para ilustrar discrepancias entre etiquetas, pipeline declarado y contenido real de un repositorio en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -109,7 +109,7 @@ No es posible establecer una comparativa fiable. La model card compara contra "M
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mcptest77/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/mcptest77/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Blog oficial: no disponible
 - Repositorio de codigo: mencionado en la model card, sin enlace disponible

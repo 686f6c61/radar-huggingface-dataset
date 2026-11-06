@@ -83,6 +83,6 @@ La comparacion con otras alternativas de la misma categoria no puede completarse
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/maylore-ai/Temper-2-Axon-GGUF
+- Repositorio Hugging Face: https://huggingface.co/maylore-ai/Temper-2-Axon-GGUF
 - Modelo base: https://huggingface.co/maylore-ai/Temper-2-Axon
 - Sitio web del autor: https://maylore.com/temper-2-axon

@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| pi05-real-workbench-taco-2view-8b7104f0-layout-reconstruction-60k | 4,14 mil millones | no disponible | no disponible | HuggingFace, biblioteca lerobot, 0 descargas | Fine-tune especializado en `layout_reconstruction`, 2 vistas |
-| `lerobot/pi05_base` | no disponible en la informacion | no disponible | no disponible | HuggingFace | Modelo base del que deriva este checkpoint |
+| pi05-real-workbench-taco-2view-8b7104f0-layout-reconstruction-60k | 4,14 mil millones | no disponible | no disponible | Hugging Face, biblioteca lerobot, 0 descargas | Fine-tune especializado en `layout_reconstruction`, 2 vistas |
+| `lerobot/pi05_base` | no disponible en la informacion | no disponible | no disponible | Hugging Face | Modelo base del que deriva este checkpoint |
 | Otras politicas VLA (por ejemplo, familias tipo OpenVLA o GR00T) | no disponible en la informacion | no disponible | no disponible | no disponible | No se aportan datos comparativos en la informacion proporcionada |
 
 No se dispone de datos de benchmarks ni de métricas de robot real para ninguno de los modelos listados, por lo que la comparación se limita a la relación de derivación y a la disponibilidad de pesos. Cualquier comparación de rendimiento requeriría una evaluación propia bajo condiciones idénticas.
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks ni de métricas de robot real para ninguno 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaehyunkang/pi05-real-workbench-taco-2view-8b7104f0-layout-reconstruction-60k
+- Modelo en Hugging Face: https://huggingface.co/jaehyunkang/pi05-real-workbench-taco-2view-8b7104f0-layout-reconstruction-60k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/real_workbench-taco-keyframe-gemini
 - Tokenizador de referencia: https://huggingface.co/google/paligemma-3b-pt-224

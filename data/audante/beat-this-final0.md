@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Audante/beat-this-final0` es una redistribucion no oficial del checkpoint `final0` del modelo Beat This!, desarrollado por el Institute of Computational Perception de la Johannes Kepler University Linz (JKU). El autor del repositorio en HuggingFace, Audante, indica explicitamente en la model card que se trata de una copia identica del original alojado en el repositorio GitHub `CPJKU/beat_this`, con el unico cambio de renombrar el fichero. No es, por tanto, un modelo nuevo ni una variante entrenada por terceros.
+`Audante/beat-this-final0` es una redistribucion no oficial del checkpoint `final0` del modelo Beat This!, desarrollado por el Institute of Computational Perception de la Johannes Kepler University Linz (JKU). El autor del repositorio en Hugging Face, Audante, indica explicitamente en la model card que se trata de una copia identica del original alojado en el repositorio GitHub `CPJKU/beat_this`, con el unico cambio de renombrar el fichero. No es, por tanto, un modelo nuevo ni una variante entrenada por terceros.
 
 Beat This! es un sistema de deteccion de beats y downbeats en audio musical, es decir, un modelo de analisis ritmico que identifica la posicion temporal de los pulsos musicales y del primer pulso de cada compas. Se trata de una tarea clasica de music information retrieval (MIR) con aplicaciones en alineamiento musical, transcripcion ritmica, generacion de partituras y produccion musical asistida.
 
-La relevancia de esta ficha es limitada: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, un tamano de 0,1 GB y no dispone de model card tecnica detallada, pipeline declarado ni idiomas especificados. La informacion disponible en HuggingFace es minima, por lo que muchos campos de esta ficha se marcan como no disponibles. Para datos tecnicos completos se recomienda consultar el repositorio original del autor.
+La relevancia de esta ficha es limitada: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, un tamano de 0,1 GB y no dispone de model card tecnica detallada, pipeline declarado ni idiomas especificados. La informacion disponible en Hugging Face es minima, por lo que muchos campos de esta ficha se marcan como no disponibles. Para datos tecnicos completos se recomienda consultar el repositorio original del autor.
 
 ## Especificaciones tecnicas
 
@@ -77,5 +77,5 @@ No disponible. No se han proporcionado datos de rendimiento ni especificaciones 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Audante/beat-this-final0
+- Repositorio Hugging Face: https://huggingface.co/Audante/beat-this-final0
 - Repositorio original del modelo: https://github.com/CPJKU/beat_this

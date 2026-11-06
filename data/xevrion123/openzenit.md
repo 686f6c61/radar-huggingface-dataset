@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenZenit es un modelo de lenguaje de tipo Transformer causal desarrollado por el usuario de HuggingFace `xevrion123` (autoría del repositorio original atribuida a `programador777lolxddd-dot`) como proyecto personal de caracter educativo y experimental. Su objetivo declarado no es competir con modelos de produccion, sino servir como banco de pruebas para estudiar el entrenamiento neuronal desde cero, la generacion de texto y la generacion de codigo con PyTorch. El modelo se distribuye bajo licencia Apache 2.0 y declara soporte para castellano e ingles.
+OpenZenit es un modelo de lenguaje de tipo Transformer causal desarrollado por el usuario de Hugging Face `xevrion123` (autoría del repositorio original atribuida a `programador777lolxddd-dot`) como proyecto personal de caracter educativo y experimental. Su objetivo declarado no es competir con modelos de produccion, sino servir como banco de pruebas para estudiar el entrenamiento neuronal desde cero, la generacion de texto y la generacion de codigo con PyTorch. El modelo se distribuye bajo licencia Apache 2.0 y declara soporte para castellano e ingles.
 
 El proyecto se compone de codigo Python (no solo pesos), con una implementacion principal (`openzenit.py`) y una alternativa (`mini_codegpt.py`), un corpus de entrenamiento de ejemplo (`data/corpus.txt`) y una CLI para entrenar y generar. No se publican en la model card el numero de parametros, la longitud de contexto, la composicion del dataset ni resultados de benchmarks, por lo que la mayor parte de las especificaciones cuantitativas figuran como no disponibles.
 
@@ -76,6 +76,6 @@ No disponible. No se han publicado parametros, contexto ni resultados que permit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xevrion123/OpenZenit
+- Modelo en Hugging Face: https://huggingface.co/xevrion123/OpenZenit
 - Repositorio original en GitHub: https://github.com/programador777lolxddd-dot/OpenZenit
-- Perfil del autor en HuggingFace: https://huggingface.co/xevrion123
+- Perfil del autor en Hugging Face: https://huggingface.co/xevrion123

@@ -4,7 +4,7 @@
 
 `VoragoStudios/gct-opus-mt-tc-big-it-en-ct2` es una conversión a CTranslate2 en cuantización int8 del modelo de traducción automática `Helsinki-NLP/opus-mt-tc-big-it-en`, desarrollado originalmente por el grupo Helsinki-NLP (Tiedemann et al.) dentro del proyecto OPUS-MT. Resuelve la tarea de traducción directa italiano-inglés y su interés práctico radica en que empaqueta el modelo en un formato optimizado para inferencia en CPU y GPU de baja potencia, con los ficheros de tokenizador incluidos para que sea utilizable de forma autónoma sin depender del repositorio original.
 
-La conversión la firma Vorago Studios en el contexto de su producto Game Chat Translator, lo que sitúa el modelo en un escenario de traducción de chat en tiempo real, donde la latencia y el coste por petición importan más que la calidad absoluta de traducción literaria. El repositorio ocupa 0,2 GB y combina la librería `ctranslate2` con el pipeline `translation` de HuggingFace.
+La conversión la firma Vorago Studios en el contexto de su producto Game Chat Translator, lo que sitúa el modelo en un escenario de traducción de chat en tiempo real, donde la latencia y el coste por petición importan más que la calidad absoluta de traducción literaria. El repositorio ocupa 0,2 GB y combina la librería `ctranslate2` con el pipeline `translation` de Hugging Face.
 
 La información publicada no detalla el número de parámetros, la longitud de contexto ni la composición exacta del corpus de entrenamiento; la model card remite explícitamente a la ficha del modelo original para esos datos. La licencia es CC BY 4.0, lo que permite uso comercial con atribución.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VoragoStudios/gct-opus-mt-tc-big-it-en-ct2
+- Repositorio Hugging Face: https://huggingface.co/VoragoStudios/gct-opus-mt-tc-big-it-en-ct2
 - Modelo original: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-it-en
 - Proyecto OPUS-MT (Helsinki-NLP): no disponible en la información proporcionada
 - Documentación de CTranslate2: no disponible en la información proporcionada

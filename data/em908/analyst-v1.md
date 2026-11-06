@@ -72,10 +72,10 @@ Interpretación: la tasa de ejecución correcta sube 8,7 puntos porcentuales, mi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento en el conjunto del paper |
 |---|---|---|---|---|---|
-| analyst-v1 (adaptador) | 1,5B | 32.768 | apache-2.0 | HuggingFace (0 descargas, 0 likes) | exec_rate 0,620 / exact_match 0,253 |
-| Qwen2.5-Coder-1.5B-Instruct | 1,5B | 32.768 | apache-2.0 | HuggingFace (modelo base, ampliamente disponible) | exec_rate 0,533 / exact_match 0,293 |
-| Qwen2.5-Coder-7B-Instruct | 7,6B | 32.768 | apache-2.0 | HuggingFace | no evaluado en la información disponible |
-| StarCoder2-3B | 3B | 16.384 | BigCode OpenRAIL-M | HuggingFace | no evaluado en la información disponible |
+| analyst-v1 (adaptador) | 1,5B | 32.768 | apache-2.0 | Hugging Face (0 descargas, 0 likes) | exec_rate 0,620 / exact_match 0,253 |
+| Qwen2.5-Coder-1.5B-Instruct | 1,5B | 32.768 | apache-2.0 | Hugging Face (modelo base, ampliamente disponible) | exec_rate 0,533 / exact_match 0,293 |
+| Qwen2.5-Coder-7B-Instruct | 7,6B | 32.768 | apache-2.0 | Hugging Face | no evaluado en la información disponible |
+| StarCoder2-3B | 3B | 16.384 | BigCode OpenRAIL-M | Hugging Face | no evaluado en la información disponible |
 
 La comparación directa sólo es posible frente al modelo base, que es el único con métricas publicadas en el mismo conjunto. Frente a alternativas mayores (7B) o de otra familia, no hay datos de ejecución ni de exact match en la información disponible; la elección entre ellos dependerá de requisitos de VRAM y de licencia, no de una comparación medida.
 
@@ -87,13 +87,13 @@ La comparación directa sólo es posible frente al modelo base, que es el único
 - La garantía de ejecución aplica al dataset de entrenamiento, no a las salidas en producción: en inferencia el modelo puede generar nombres de columna o métodos inexistentes. Se recomienda validar siempre ejecutando antes de usar el resultado.
 - Modelo base de 1,5B: mayor propensión a errores en consultas con múltiples joins, condicionales anidados o lógica de fechas que un modelo de 7B o superior.
 - Idiomas no declarados ni evaluados; no hay evidencia de rendimiento con preguntas o nombres de columna en castellano.
-- Sin validación comunitaria: 0 descargas y 0 likes en el momento de la consulta, y ausencia de `pipeline_tag` en la ficha de HuggingFace. No debe asumirse mantenimiento ni soporte.
+- Sin validación comunitaria: 0 descargas y 0 likes en el momento de la consulta, y ausencia de `pipeline_tag` en la ficha de Hugging Face. No debe asumirse mantenimiento ni soporte.
 - Licencia apache-2.0, permisiva para uso comercial, pero conviene verificar los términos del modelo base y de los datos de origen (DS-1000 y CSV de Kaggle) antes de un despliegue comercial, ya que la model card no detalla las licencias de las fuentes.
 - Sesgos heredados del modelo base y del corpus de entrenamiento, con predominio de datos y convenciones en inglés.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/em908/analyst-v1
+- Modelo en Hugging Face: https://huggingface.co/em908/analyst-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/em908/analyst-data
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Paper citado en la model card: "Every Answer Must Run: Training Small Data-Analyst Models Under Execution Verification" (sin enlace disponible en la información proporcionada)

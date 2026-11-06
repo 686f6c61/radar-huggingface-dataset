@@ -6,7 +6,7 @@ AstroBridge Captioner (UniverseTBD/astrobridge-model-v7) es un adaptador LoRA co
 
 Su relevancia es acotada pero clara: el captioning multimodal en astronomia es un problema especializado donde los modelos genericos de vision-lenguaje fallan al interpretar magnitudes, bandas fotometricas, rasgos de absorcion (Ca II H & K, G-band, Mg I b, Na I D) o morfologias extensas. AstroBridge aborda esto con un esquema de entrenamiento en dos niveles ("single" y "joint", con 4.120 y 1.318 muestras respectivamente) y con una bateria de evaluacion orientada a la "groundedness" (pruebas de barajado, ablacion de modalidad y diversidad) en lugar de benchmarks genericos.
 
-El proyecto esta en una fase muy temprana: cero descargas, cero likes, sin licencia declarada, sin idiomas declarados y sin pipeline asignado en HuggingFace. Cualquier uso en produccion exige verificar primero la licencia del modelo base y del propio adaptador, y reconstruir manualmente el codigo de carga de la pila de fusión a partir del paquete `captioner` referenciado en la model card.
+El proyecto esta en una fase muy temprana: cero descargas, cero likes, sin licencia declarada, sin idiomas declarados y sin pipeline asignado en Hugging Face. Cualquier uso en produccion exige verificar primero la licencia del modelo base y del propio adaptador, y reconstruir manualmente el codigo de carga de la pila de fusión a partir del paquete `captioner` referenciado en la model card.
 
 ## Especificaciones tecnicas
 
@@ -93,8 +93,8 @@ No se dispone de datos sobre modelos comparables en la informacion proporcionada
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AstroBridge Captioner (v7) | 9B (base) + adaptador y pila de fusion no cuantificados | no disponible | imagen, espectro, curva de luz | no disponible | publico en HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-9B | 9B | no disponible | no disponible | no disponible en la informacion proporcionada | publico en HuggingFace |
+| AstroBridge Captioner (v7) | 9B (base) + adaptador y pila de fusion no cuantificados | no disponible | imagen, espectro, curva de luz | no disponible | publico en Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-9B | 9B | no disponible | no disponible | no disponible en la informacion proporcionada | publico en Hugging Face |
 | Otros captioners astronomicos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -107,14 +107,14 @@ No se dispone de datos sobre modelos comparables en la informacion proporcionada
 - Los tamanos de muestra de la evaluacion son muy pequenos (13 ejemplos en el shuffle_test de espectro, 9 en el de curva de luz), lo que limita la robustez de las conclusiones.
 - La evaluacion publicada mide groundedness y diversidad, no exactitud cientifica del contenido: un caption diverso y sensible a la entrada puede seguir siendo factualmente incorrecto.
 - Riesgo de alucinacion en terminos y mediciones astronomicas (magnitudes, rasgos espectrales, parametros de variabilidad) no cuantificado; se requiere validacion por expertos antes de cualquier uso cientifico.
-- Cero descargas y cero likes en HuggingFace, sin pipeline asignado ni historial de uso de la comunidad: el modelo no ha sido validado externamente.
+- Cero descargas y cero likes en Hugging Face, sin pipeline asignado ni historial de uso de la comunidad: el modelo no ha sido validado externamente.
 - Sesgos conocidos: no documentados. El desequilibrio del dataset de entrenamiento (4.120 muestras `single` frente a 1.318 `joint`) puede sesgar el comportamiento hacia tareas de una sola modalidad.
 - Fechas de creacion y actualizacion del repositorio (2026-09-12) posteriores al momento de redaccion de esta ficha; conviene verificar el estado actual del repositorio.
 - No hay versiones cuantizadas publicadas, por lo que el despliegue en hardware modesto exige cuantizar por cuenta propia y asumir el riesgo de degradacion en la pila de fusion.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/UniverseTBD/astrobridge-model-v7
+- Hugging Face del modelo: https://huggingface.co/UniverseTBD/astrobridge-model-v7
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper, blog, repositorio o demo del proyecto: no disponible en la informacion proporcionada.
 - Nota: la busqueda web realizada no devolvio ningun resultado relacionado con el modelo. Los unicos resultados obtenidos corresponden a paginas sobre Guillaume Meurice (Wikipedia, sitio oficial, Facebook, Le Monde, Radio Nova) y no guardan relacion con AstroBridge ni con Qwen.

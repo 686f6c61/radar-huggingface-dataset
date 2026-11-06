@@ -2,9 +2,9 @@
 
 ## Resumen
 
-bert-base-uncased-trustairlab-jailbreak es un modelo de clasificación de texto publicado por el usuario leomaurodesenv en HuggingFace. Se trata de un ajuste fino (fine-tuning) completo de google-bert/bert-base-uncased, el encoder transformer de 12 capas y 110 millones de parámetros de Google. El modelo resultante tiene 109.483.778 parámetros y está pensado para una tarea de clasificación binaria o multiclase, según se deduce del pipeline declarado (text-classification) y de la cabeza de clasificación añadida sobre el encoder.
+bert-base-uncased-trustairlab-jailbreak es un modelo de clasificación de texto publicado por el usuario leomaurodesenv en Hugging Face. Se trata de un ajuste fino (fine-tuning) completo de google-bert/bert-base-uncased, el encoder transformer de 12 capas y 110 millones de parámetros de Google. El modelo resultante tiene 109.483.778 parámetros y está pensado para una tarea de clasificación binaria o multiclase, según se deduce del pipeline declarado (text-classification) y de la cabeza de clasificación añadida sobre el encoder.
 
-El problema que aborda, a juzgar por el sufijo "trustairlab-jailbreak" del identificador, sería la detección de intentos de jailbreak o de prompts maliciosos en el contexto de la seguridad de modelos de lenguaje. Sin embargo, esto es una inferencia a partir del nombre del repositorio: la model card no describe la tarea, el dataset ni las clases de salida, y se limita a indicar que el modelo fue entrenado "on an unknown dataset". La relevancia actual del modelo es limitada: acumula 0 descargas y 0 likes, y la propia model card está generada automáticamente por el Trainer de HuggingFace sin completar.
+El problema que aborda, a juzgar por el sufijo "trustairlab-jailbreak" del identificador, sería la detección de intentos de jailbreak o de prompts maliciosos en el contexto de la seguridad de modelos de lenguaje. Sin embargo, esto es una inferencia a partir del nombre del repositorio: la model card no describe la tarea, el dataset ni las clases de salida, y se limita a indicar que el modelo fue entrenado "on an unknown dataset". La relevancia actual del modelo es limitada: acumula 0 descargas y 0 likes, y la propia model card está generada automáticamente por el Trainer de Hugging Face sin completar.
 
 La única métrica declarada es una accuracy de 0.9404 y una loss de 0.1821 sobre un conjunto de evaluación no especificado, con hiperparámetros de entrenamiento de 10 épocas, learning rate 2e-5 y batch total de 16. No hay información pública sobre composición del dataset, idiomas, sesgos ni rendimiento comparado con alternativas.
 
@@ -25,7 +25,7 @@ La única métrica declarada es una accuracy de 0.9404 y una loss de 0.1821 sobr
 
 La arquitectura es la de BERT base sin modificaciones estructurales: un encoder transformer bidireccional de 12 capas, 768 dimensiones ocultas y 12 cabezas de atención, preentrenado por Google con objetivos de masked language modeling y next sentence prediction sobre texto en inglés. Sobre ese backbone se ha añadido una cabeza de clasificación de secuencias, lo que explica el recuento de 109.483.778 parámetros (ligeramente inferior a los 110 millones habituales de BERT base sin cabeza). El preentrenamiento original usa un tokenizador WordPiece con vocabulario de 30.522 tokens y soporta secuencias de hasta 512 tokens.
 
-El ajuste fino se realizó con el Trainer de HuggingFace con los siguientes hiperparámetros: learning rate 2e-5, batch de entrenamiento de 8 con 2 pasos de acumulación de gradiente (batch total efectivo de 16), optimizador adamw_torch_fused con betas (0.9, 0.999) y epsilon 1e-8, scheduler lineal con 50 pasos de warmup, 10 épocas y semilla 42. El dataset de entrenamiento no está documentado: la model card indica explícitamente "unknown dataset". No hay evidencia de RLHF, DPO ni de ninguna innovación técnica adicional (no se emplea decodificación especulativa ni atención lineal, ya que no es un modelo generativo). Las versiones de framework declaradas son Transformers 5.2.0, PyTorch 2.10.0+cu128, Datasets 4.5.0 y Tokenizers 0.22.2.
+El ajuste fino se realizó con el Trainer de Hugging Face con los siguientes hiperparámetros: learning rate 2e-5, batch de entrenamiento de 8 con 2 pasos de acumulación de gradiente (batch total efectivo de 16), optimizador adamw_torch_fused con betas (0.9, 0.999) y epsilon 1e-8, scheduler lineal con 50 pasos de warmup, 10 épocas y semilla 42. El dataset de entrenamiento no está documentado: la model card indica explícitamente "unknown dataset". No hay evidencia de RLHF, DPO ni de ninguna innovación técnica adicional (no se emplea decodificación especulativa ni atención lineal, ya que no es un modelo generativo). Las versiones de framework declaradas son Transformers 5.2.0, PyTorch 2.10.0+cu128, Datasets 4.5.0 y Tokenizers 0.22.2.
 
 ## Capacidades
 
@@ -84,10 +84,10 @@ No se dispone de resultados de benchmarks de este modelo frente a alternativas, 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| leomaurodesenv/bert-base-uncased-trustairlab-jailbreak | 109,5 M | 512 tokens | Clasificación de texto (jailbreak, según el nombre) | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| google-bert/bert-base-uncased | ~110 M | 512 tokens | Modelo base (masked LM) | apache-2.0 | HuggingFace, muy extendido |
-| distilbert-base-uncased (alternativa destilada) | ~66 M | 512 tokens | Modelo base (masked LM) | apache-2.0 | HuggingFace, muy extendido |
-| roberta-base (alternativa de mismo orden) | ~125 M | 514 tokens | Modelo base (masked LM) | MIT | HuggingFace, muy extendido |
+| leomaurodesenv/bert-base-uncased-trustairlab-jailbreak | 109,5 M | 512 tokens | Clasificación de texto (jailbreak, según el nombre) | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| google-bert/bert-base-uncased | ~110 M | 512 tokens | Modelo base (masked LM) | apache-2.0 | Hugging Face, muy extendido |
+| distilbert-base-uncased (alternativa destilada) | ~66 M | 512 tokens | Modelo base (masked LM) | apache-2.0 | Hugging Face, muy extendido |
+| roberta-base (alternativa de mismo orden) | ~125 M | 514 tokens | Modelo base (masked LM) | MIT | Hugging Face, muy extendido |
 
 La ventaja principal de este ajuste frente a partir del BERT base sin ajustar es que ya incorpora una cabeza de clasificación entrenada, aunque la ausencia de documentación sobre el dataset y las clases hace desaconsejable su uso directo en producción sin validación previa. Frente a distilbert-base-uncased, este modelo tiene más parámetros y por tanto mayor coste de inferencia, sin que se hayan publicado métricas que justifiquen la diferencia.
 
@@ -107,7 +107,7 @@ La ventaja principal de este ajuste frente a partir del BERT base sin ajustar es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leomaurodesenv/bert-base-uncased-trustairlab-jailbreak
+- Modelo en Hugging Face: https://huggingface.co/leomaurodesenv/bert-base-uncased-trustairlab-jailbreak
 - Modelo base google-bert/bert-base-uncased: https://huggingface.co/google-bert/bert-base-uncased
 - Paper original de BERT (Devlin et al., 2019): https://arxiv.org/abs/1810.04805
 - Repositorio oficial de BERT en GitHub: https://github.com/google-research/bert

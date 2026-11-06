@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SmolVLA (este fine-tune) | ~450 M | VLA (vision-language-action) | apache-2.0 | HuggingFace, via LeRobot |
-| SmolVLA base (`lerobot/smolvla_base`) | ~450 M | VLA | no disponible en la informacion proporcionada | HuggingFace, via LeRobot |
+| SmolVLA (este fine-tune) | ~450 M | VLA (vision-language-action) | apache-2.0 | Hugging Face, via LeRobot |
+| SmolVLA base (`lerobot/smolvla_base`) | ~450 M | VLA | no disponible en la informacion proporcionada | Hugging Face, via LeRobot |
 | OpenVLA | ~7 B | VLA | MIT | Publico |
 | pi0 (Physical Intelligence) | no disponible con certeza | VLA | no disponible con certeza | Publico |
 
@@ -94,7 +94,7 @@ Nota: los datos de OpenVLA y pi0 se incluyen como referencia general de la categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IKOBO/smolvla_so101_red_cube_test001_policy
+- Modelo en Hugging Face: https://huggingface.co/IKOBO/smolvla_so101_red_cube_test001_policy
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/IKOBO/so101_red_cube_test003
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=IKOBO/so101_red_cube_test003

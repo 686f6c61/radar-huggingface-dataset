@@ -77,7 +77,7 @@ Comparativa orientativa por categoria y tamano. La columna de rendimiento no pue
 
 | Modelo | Parametros | Contexto | Evaluacion publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B-Maxima_A1 (este modelo) | 8,19 B | No disponible | No | Apache 2.0 | Pesos safetensors 16 bits en HuggingFace, 0 descargas |
+| Qwen3-8B-Maxima_A1 (este modelo) | 8,19 B | No disponible | No | Apache 2.0 | Pesos safetensors 16 bits en Hugging Face, 0 descargas |
 | Qwen/Qwen3-8B (base) | ~8 B | 32.768 tokens nativos, ampliable con YaRN (segun documentacion del modelo base) | Si, en la documentacion del modelo base (no reproducida aqui) | Apache 2.0 | Amplia, con cuantizaciones de terceros |
 | Qwen2.5-7B-Instruct | ~7,6 B | 32.768 tokens nativos, ampliable | Si, en la documentacion del modelo base | Apache 2.0 | Amplia, con ecosistema de cuantizaciones |
 | Llama-3.1-8B-Instruct | ~8 B | 128.000 tokens | Si, en la documentacion del modelo base | Licencia comunitaria de Meta, con condiciones de uso | Amplia |
@@ -94,14 +94,14 @@ La comparacion relevante para este ajuste es contra su propio modelo base, y esa
 - Inconsistencia documental: el codigo de ejemplo de la model card usa el identificador "Rumiii/qwen3-8b-toucan", distinto del identificador real del repositorio (Rumiii/Qwen3-8B-Maxima_A1). Hay que corregirlo antes de reutilizar el snippet.
 - Sin versiones cuantizadas publicadas: desplegar en hardware de consumo exige convertir los pesos uno mismo, con el coste y el riesgo de error asociados.
 - Contexto no confirmado: el ajuste se entreno descartando ejemplos de mas de 4.096 tokens, por lo que no hay evidencia de que rinda bien en trayectorias largas aunque el modelo base soporte ventanas mayores.
-- Fecha de creacion del repositorio posterior a la actual: la ficha de HuggingFace indica 2026-09-17, dato anómalo que conviene verificar antes de citarlo.
+- Fecha de creacion del repositorio posterior a la actual: la ficha de Hugging Face indica 2026-09-17, dato anómalo que conviene verificar antes de citarlo.
 - Adopcion nula: 0 descargas y 0 likes, sin issues ni discusion publica que permitan contrastar el comportamiento real.
 - Licencia Apache 2.0: permite uso comercial sin restricciones adicionales, pero el autor no ofrece ninguna garantia de idoneidad; al derivar de Qwen3-8B, se mantiene la atribucion correspondiente.
 - Bucles de repeticion con decodificacion greedy: advertencia heredada de las indicaciones de Qwen3 que el propio autor reproduce.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rumiii/Qwen3-8B-Maxima_A1
+- Modelo en Hugging Face: https://huggingface.co/Rumiii/Qwen3-8B-Maxima_A1
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Dataset de ajuste Agent-Ark/Toucan-1.5M: https://huggingface.co/datasets/Agent-Ark/Toucan-1.5M
 

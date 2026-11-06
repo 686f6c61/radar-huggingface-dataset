@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sayurio/bn-tokenizer-32k` es un tokenizador de tipo Byte-Pair Encoding (BPE) con un vocabulario de 32.768 entradas, disenado especificamente para bengali nativo. Lo publica el usuario sayurio en HuggingFace bajo licencia Apache 2.0. No es un modelo de lenguaje: es un componente de tokenizacion que se integra en pipelines de LLM y de sistemas de OCR documental con arquitecturas vision-lenguaje. Su proposito es resolver el problema de la fragmentacion excesiva que los tokenizadores multilingues genericos (LLaMA, Mistral, Qwen) aplican sobre el bengali, donde palabras y ligaduras (যুক্তবর্ণ) se rompen en multiples subtokens.
+`sayurio/bn-tokenizer-32k` es un tokenizador de tipo Byte-Pair Encoding (BPE) con un vocabulario de 32.768 entradas, disenado especificamente para bengali nativo. Lo publica el usuario sayurio en Hugging Face bajo licencia Apache 2.0. No es un modelo de lenguaje: es un componente de tokenizacion que se integra en pipelines de LLM y de sistemas de OCR documental con arquitecturas vision-lenguaje. Su proposito es resolver el problema de la fragmentacion excesiva que los tokenizadores multilingues genericos (LLaMA, Mistral, Qwen) aplican sobre el bengali, donde palabras y ligaduras (যুক্তবর্ণ) se rompen en multiples subtokens.
 
 La propuesta central es la compresion: el autor reporta una media de aproximadamente 8,00 caracteres por token sobre texto bengali formal, lo que reduce la longitud de las secuencias entre un 60 % y un 70 % frente a tokenizadores multilingues convencionales. Con un vocabulario de 32.768 entradas, la tabla de embeddings y la proyeccion de salida ocupan la mitad de parametros que un tokenizador de 64k, manteniendo suficiente granularidad para representar raices, sufijos y ligaduras compuestas como tokens unicos.
 
@@ -53,7 +53,7 @@ La innovacion principal no esta en el algoritmo (BPE es estandar) sino en la cur
 - Normalizacion Unicode NFC para evitar la separacion de diacriticos vocales.
 - Retencion de caracteres Zero-Width Non-Joiner y Zero-Width Joiner para el renderizado correcto de la ortografia bengali.
 - Soporte de numerales bengali (০ a ৯) y puntuacion estandar dentro del vocabulario.
-- Integracion con la libreria `transformers` de HuggingFace mediante `AutoTokenizer`.
+- Integracion con la libreria `transformers` de Hugging Face mediante `AutoTokenizer`.
 - Integracion con el backend Rust de la libreria `tokenizers` mediante `Tokenizer.from_pretrained`.
 - Compatibilidad teorica con arquitecturas de LLM y de OCR vision-lenguaje, segun declara el autor; no se especifican modelos concretos validados.
 - No soporta tool calling, function calling, agentes ni razonamiento multi-paso: esas capacidades pertenecen al modelo que lo integre, no al tokenizador.
@@ -116,7 +116,7 @@ No se dispone de datos publicados que permitan comparar directamente el ratio de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sayurio/bn-tokenizer-32k
+- Repositorio en Hugging Face: https://huggingface.co/sayurio/bn-tokenizer-32k
 - Dataset Wikipedia bengali: https://huggingface.co/datasets/wikimedia/wikipedia
 - Dataset BanglaNLP (likhonsheikh): https://huggingface.co/datasets/likhonsheikh/BanglaNLP
 - Dataset bangla-wikipedia (sayurio): https://huggingface.co/datasets/sayurio/bangla-wikipedia

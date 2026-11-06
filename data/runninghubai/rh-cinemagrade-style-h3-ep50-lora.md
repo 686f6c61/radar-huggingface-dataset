@@ -6,7 +6,7 @@
 
 El adaptador está empaquetado para su uso en ComfyUI, plataforma de referencia del ecosistema, y también puede cargarse en los servicios en la nube de RunningHub (versión internacional y China). El nombre incluye `ep50`, lo que sugiere un checkpoint entrenado durante 50 épocas, aunque el autor no documenta hiperparámetros de entrenamiento, dataset ni configuración de difusión.
 
-La relevancia de esta ficha es acotada: se trata de un artefacto de estilo para pipelines de generación visual, sin model card técnica detallada, sin licencia declarada en HuggingFace y sin métricas publicadas. Los datos disponibles son mínimos y buena parte de los campos técnicos habituales (arquitectura, contexto, idiomas, cuantización) no aplican o no están disponibles.
+La relevancia de esta ficha es acotada: se trata de un artefacto de estilo para pipelines de generación visual, sin model card técnica detallada, sin licencia declarada en Hugging Face y sin métricas publicadas. Los datos disponibles son mínimos y buena parte de los campos técnicos habituales (arquitectura, contexto, idiomas, cuantización) no aplican o no están disponibles.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es acotada: se trata de un artefacto de estilo para 
 | Longitud de contexto | no aplica (modelo de generación visual, no de texto) |
 | Tipos de cuantizacion | no disponible (se distribuye en `safetensors`; la cuantización depende del modelo base y del runtime) |
 | Idiomas soportados | no disponible (los prompts dependen del modelo base) |
-| Licencia | no disponible en HuggingFace; la model card remite a la licencia del proyecto original y mantiene el copyright del autor |
+| Licencia | no disponible en Hugging Face; la model card remite a la licencia del proyecto original y mantiene el copyright del autor |
 | Formato de pesos | `safetensors` (`cinemagrade_style_h3_ep50.safetensors`, 68 MiB) |
 
 ## Arquitectura y entrenamiento
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Tamano | Base | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rh-cinemagrade-style-h3-ep50-lora` | LoRA de estilo | 68 MiB | `minimax-h3` | no disponible | HuggingFace, RunningHub |
+| `rh-cinemagrade-style-h3-ep50-lora` | LoRA de estilo | 68 MiB | `minimax-h3` | no disponible | Hugging Face, RunningHub |
 | `cinemagrade-minimax-h3-style-lora` (Civitai) | LoRA de estilo | no disponible | `minimax-h3` | según Civitai | Civitai |
 | Otros LoRA de estilo para `minimax-h3` en RunningHub | LoRA de estilo | variable | `minimax-h3` | según autor | RunningHub |
 
@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento comparativo entre estos adaptadores. La co
 
 ## Limitaciones y advertencias
 
-- No hay licencia declarada en HuggingFace; la model card remite a la licencia del proyecto original y mantiene el copyright del autor. Antes de uso comercial es necesario verificar la licencia del modelo base `minimax-h3` y la del adaptador en el repositorio original de RunningHub.
+- No hay licencia declarada en Hugging Face; la model card remite a la licencia del proyecto original y mantiene el copyright del autor. Antes de uso comercial es necesario verificar la licencia del modelo base `minimax-h3` y la del adaptador en el repositorio original de RunningHub.
 - Ausencia total de documentación técnica: sin rango, capas objetivo, dataset, hiperparámetros ni evaluación. Esto impide reproducir el entrenamiento o auditar el adaptador.
 - Riesgo de sobreajuste al dataset de entrenamiento: con 50 épocas y sin regularización documentada, el estilo puede degradar la fidelidad al prompt o introducir artefactos en dominios distintos al de entrenamiento.
 - Dependencia estricta del modelo base `minimax-h3`; no es portable a otros modelos de difusión sin reentrenamiento.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos adaptadores. La co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-cinemagrade-style-h3-ep50-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-cinemagrade-style-h3-ep50-lora
 - Modelo original en RunningHub: https://www.runninghub.cn/model/public/2098938628264255490
 - Referencia en Civitai: https://civitai.com/models/2927223/cinemagrade-minimax-h3-style-lora
 - Página del autor: https://www.runninghub.cn/user-center/1819214514410942465

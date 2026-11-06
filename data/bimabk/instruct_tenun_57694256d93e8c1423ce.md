@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`bimabk/instruct_tenun_57694256d93e8c1423ce` es un adaptador de ajuste fino publicado en HuggingFace con la librería PEFT 0.19.1 y formato safetensors. No se trata de un modelo completo, sino de un conjunto de pesos LoRA que debe cargarse sobre el modelo base `gradients-io-tournaments/augmented-8a3f84c4cc4a7528`. Está etiquetado con el pipeline `text-generation` y la etiqueta `conversational`, y el repositorio ocupa 0,4 GB, un peso que corresponde únicamente al adaptador y no a los pesos del modelo subyacente.
+`bimabk/instruct_tenun_57694256d93e8c1423ce` es un adaptador de ajuste fino publicado en Hugging Face con la librería PEFT 0.19.1 y formato safetensors. No se trata de un modelo completo, sino de un conjunto de pesos LoRA que debe cargarse sobre el modelo base `gradients-io-tournaments/augmented-8a3f84c4cc4a7528`. Está etiquetado con el pipeline `text-generation` y la etiqueta `conversational`, y el repositorio ocupa 0,4 GB, un peso que corresponde únicamente al adaptador y no a los pesos del modelo subyacente.
 
 El identificador (`instruct_` seguido de un sufijo hexadecimal de 20 caracteres) y el nombre del modelo base (`gradients-io-tournaments/...`) apuntan a un origen automatizado, probablemente un torneo de variantes de ajuste fino generadas y evaluadas por una plataforma. Las fechas de creación y actualización del repositorio (18 de septiembre de 2026, con cuatro segundos de diferencia) son compatibles con una subida automática de artefactos.
 
-La relevancia práctica del repositorio es limitada tal y como está publicado: la model card es la plantilla vacía de HuggingFace, sin datos de entrenamiento, hiperparámetros, evaluación ni licencia, y el modelo acumula 0 descargas y 0 likes. No hay información que permita determinar la arquitectura, el número de parámetros, la longitud de contexto o los idiomas del modelo base, por lo que cualquier evaluación seria exige inspeccionar primero ese modelo base y verificar su licencia.
+La relevancia práctica del repositorio es limitada tal y como está publicado: la model card es la plantilla vacía de Hugging Face, sin datos de entrenamiento, hiperparámetros, evaluación ni licencia, y el modelo acumula 0 descargas y 0 likes. No hay información que permita determinar la arquitectura, el número de parámetros, la longitud de contexto o los idiomas del modelo base, por lo que cualquier evaluación seria exige inspeccionar primero ese modelo base y verificar su licencia.
 
 ## Especificaciones técnicas
 
@@ -31,7 +31,7 @@ La relevancia práctica del repositorio es limitada tal y como está publicado: 
 
 La única información técnica verificable es que se trata de un adaptador LoRA entrenado con PEFT 0.19.1 y almacenado en safetensors, sobre el modelo base `gradients-io-tournaments/augmented-8a3f84c4cc4a7528`. Se desconoce por completo el rank (`r`), el valor de `alpha`, el dropout, los módulos objetivo (atención, MLP o ambos) y si el adaptador se aplicó también a las capas de embedding y de salida. Tampoco hay información sobre el número de tokens de entrenamiento, la composición del dataset, el régimen de precisión (fp16, bf16, fp8) ni sobre si hubo una fase de alineación posterior con RLHF, DPO u otro método. El tamaño del repositorio (0,4 GB) es relativamente alto para un adaptador LoRA habitual y sugiere un rank elevado o un conjunto amplio de módulos objetivo, pero esto es una inferencia a partir del tamaño del fichero, no un dato confirmado.
 
-La etiqueta `arxiv:1910.09700` que aparece en los metadatos no corresponde a un artículo sobre este modelo: es la referencia a Lacoste et al. (2019), incluida en la plantilla estándar de model card de HuggingFace para la calculadora de impacto ambiental. No debe interpretarse como documentación metodológica del entrenamiento. Al ser un adaptador, la inferencia requiere cargar primero el modelo base y aplicar los pesos LoRA encima; los pesos pueden fusionarse en el modelo base para eliminar la sobrecarga de la adaptación en tiempo de ejecución, pero el resultado fusionado sigue dependiendo de la arquitectura y el contexto del modelo subyacente.
+La etiqueta `arxiv:1910.09700` que aparece en los metadatos no corresponde a un artículo sobre este modelo: es la referencia a Lacoste et al. (2019), incluida en la plantilla estándar de model card de Hugging Face para la calculadora de impacto ambiental. No debe interpretarse como documentación metodológica del entrenamiento. Al ser un adaptador, la inferencia requiere cargar primero el modelo base y aplicar los pesos LoRA encima; los pesos pueden fusionarse en el modelo base para eliminar la sobrecarga de la adaptación en tiempo de ejecución, pero el resultado fusionado sigue dependiendo de la arquitectura y el contexto del modelo subyacente.
 
 ## Capacidades
 
@@ -84,7 +84,7 @@ La comparación directa exige, en cualquier caso, identificar primero el modelo 
 ## Limitaciones y advertencias
 
 - Licencia no especificada: sin licencia explícita no se puede asumir que el uso comercial esté permitido. Es un bloqueo potencial para cualquier despliegue en producción.
-- Model card vacía: el repositorio contiene la plantilla por defecto de HuggingFace con todos los campos marcados como `[More Information Needed]`. No hay documentación de uso, formato de prompt ni limitaciones declaradas por el autor.
+- Model card vacía: el repositorio contiene la plantilla por defecto de Hugging Face con todos los campos marcados como `[More Information Needed]`. No hay documentación de uso, formato de prompt ni limitaciones declaradas por el autor.
 - Dataset de entrenamiento desconocido: no se puede evaluar la presencia de sesgos, de datos personales ni de contaminación entre entrenamiento y evaluación.
 - Riesgo de alucinación: no cuantificado. Al no haber evaluación publicada, se desconoce la tasa de respuestas incorrectas o inventadas.
 - Idiomas: no disponibles. No hay ninguna garantía de comportamiento correcto en castellano ni en ningún otro idioma.
@@ -96,7 +96,7 @@ La comparación directa exige, en cualquier caso, identificar primero el modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bimabk/instruct_tenun_57694256d93e8c1423ce
+- Modelo en Hugging Face: https://huggingface.co/bimabk/instruct_tenun_57694256d93e8c1423ce
 - Modelo base: https://huggingface.co/gradients-io-tournaments/augmented-8a3f84c4cc4a7528
 - Librería PEFT: https://huggingface.co/docs/peft/index
 - Artículo referenciado por la etiqueta de la plantilla (Lacoste et al., 2019, calculadora de impacto ambiental): https://arxiv.org/abs/1910.09700

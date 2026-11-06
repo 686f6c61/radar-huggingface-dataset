@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/jpn-jpan-100mb-ppt-mp-struct-100mb_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/jpn_jpan_100mb`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros totales (aproximadamente 124,8 millones), disenado especificamente para el idioma japones en su variante de escritura Jpan. El entrenamiento se ha realizado con SFT (Supervised Fine-Tuning) mediante la libreria TRL en su version 0.23.0, sobre Transformers 4.56.2 y PyTorch 2.5.1.
+El modelo `francesca9805/jpn-jpan-100mb-ppt-mp-struct-100mb_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/jpn_jpan_100mb`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros totales (aproximadamente 124,8 millones), disenado especificamente para el idioma japones en su variante de escritura Jpan. El entrenamiento se ha realizado con SFT (Supervised Fine-Tuning) mediante la libreria TRL en su version 0.23.0, sobre Transformers 4.56.2 y PyTorch 2.5.1.
 
 El modelo pertenece a la familia Goldfish, una iniciativa de investigacion centrada en modelos monolingues de bajo coste computacional para cientos de idiomas. Su relevancia radica en que ocupa el segmento de modelos ultraligeros (menos de 0,3 GB de repositorio) que pueden ejecutarse en CPU o en cualquier GPU de consumo, lo que lo hace adecuado para experimentacion academica, validacion de pipelines de ajuste fino y despliegues en el borde (edge). No obstante, al tratarse de un artefacto derivado de un modelo base de tan solo 100 MB de datos de entrenamiento, sus capacidades linguisticas y de razonamiento son muy limitadas en comparacion con modelos actuales de mayor escala.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/jpn-jpan-100mb-ppt-mp-struct-100mb_seed3407` | 124,8 M | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas, 0 likes |
-| `goldfish-models/jpn_jpan_100mb` (modelo base) | 124,8 M (misma escala) | no disponible en la informacion recogida | sin benchmarks en la informacion disponible | no disponible | HuggingFace (familia Goldfish) |
-| `francesca9805/jpn-jpan-100mb-ppt-Dp-100mb-packed-bfd_seed10` (variante del mismo autor) | 124,8 M | no disponible | sin benchmarks publicados | no disponible | HuggingFace |
+| `francesca9805/jpn-jpan-100mb-ppt-mp-struct-100mb_seed3407` | 124,8 M | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas, 0 likes |
+| `goldfish-models/jpn_jpan_100mb` (modelo base) | 124,8 M (misma escala) | no disponible en la informacion recogida | sin benchmarks en la informacion disponible | no disponible | Hugging Face (familia Goldfish) |
+| `francesca9805/jpn-jpan-100mb-ppt-Dp-100mb-packed-bfd_seed10` (variante del mismo autor) | 124,8 M | no disponible | sin benchmarks publicados | no disponible | Hugging Face |
 | GPT-2 small (referencia de arquitectura) | 124 M | 1.024 tokens | ampliamente evaluado en la literatura original | Modified MIT License | Pesos publicos de OpenAI |
 
 Las variantes del mismo autor (`Dp-10mb-packed-bfdiso_seed3407`, `Dp-100mb-packed-bfd_seed10`, etc.) comparten arquitectura, tamano y ausencia de evaluacion, por lo que la comparativa entre ellas se reduce a diferencias de preprocesado y semilla que no estan documentadas.
@@ -84,7 +84,7 @@ Las variantes del mismo autor (`Dp-10mb-packed-bfdiso_seed3407`, `Dp-100mb-packe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/jpn-jpan-100mb-ppt-mp-struct-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/jpn-jpan-100mb-ppt-mp-struct-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/jpn_jpan_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/7lhwfi6c

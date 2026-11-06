@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Abdullahtahir11/rwf2000-violence-detection-3dresnet` es un clasificador de vídeo basado en la arquitectura 3D ResNet-18 (`r3d_18`), afinado específicamente para la detección automática de violencia y peleas físicas en secuencias de videovigilancia. Lo publica el usuario Abdullahtahir11 en HuggingFace y se distribuye bajo licencia MIT, con un tamaño de repositorio de 0,4 GB, lo que corresponde a los pesos de un backbone 3D ResNet-18 sin cabezas adicionales de gran tamaño.
+El modelo `Abdullahtahir11/rwf2000-violence-detection-3dresnet` es un clasificador de vídeo basado en la arquitectura 3D ResNet-18 (`r3d_18`), afinado específicamente para la detección automática de violencia y peleas físicas en secuencias de videovigilancia. Lo publica el usuario Abdullahtahir11 en Hugging Face y se distribuye bajo licencia MIT, con un tamaño de repositorio de 0,4 GB, lo que corresponde a los pesos de un backbone 3D ResNet-18 sin cabezas adicionales de gran tamaño.
 
 El modelo resuelve un problema clásico de visión por computador aplicada a seguridad: clasificar un clip de vídeo en dos categorías, `Fight` (violencia) o `NonFight` (no violencia), a partir de 16 fotogramas muestreados uniformemente y redimensionados a 224x224 píxeles. Está entrenado y evaluado sobre el benchmark RWF-2000, un conjunto de referencia en detección de violencia en vídeo de vigilancia.
 
@@ -75,7 +75,7 @@ No se han publicado en la información disponible resultados comparativos con ot
 - VRAM estimada para inferencia: no disponible en la información proporcionada. Como referencia orientativa, un 3D ResNet-18 con entrada de 16x3x224x224 es un modelo compacto que en fp32 suele requerir del orden de 1-3 GB de VRAM para lotes pequeños, pero este dato no está confirmado por el autor.
 - GPU recomendadas: no disponibles. Por el tamaño del repositorio (0,4 GB) y la arquitectura, es probable que quepa en GPU de consumo, pero el autor no documenta requisitos.
 - ¿Cabe en GPU de consumo? No confirmado en la información disponible; el tamaño del modelo sugiere que sí, pero no hay datos oficiales.
-- Opciones de despliegue: no documentadas. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplican a un clasificador de vídeo). El pipeline declarado es `video-classification`, lo que sugiere uso con la librería de HuggingFace Transformers o PyTorch, pero no se detalla.
+- Opciones de despliegue: no documentadas. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplican a un clasificador de vídeo). El pipeline declarado es `video-classification`, lo que sugiere uso con la librería de Hugging Face Transformers o PyTorch, pero no se detalla.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -95,7 +95,7 @@ No se dispone en la información proporcionada de datos sobre modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abdullahtahir11/rwf2000-violence-detection-3dresnet
+- Modelo en Hugging Face: https://huggingface.co/Abdullahtahir11/rwf2000-violence-detection-3dresnet
 - Dataset RWF-2000 (referencia declarada en la model card): no se proporciona enlace directo en la información disponible.
 - Paper o blog del autor: no disponible.
 - Repositorio de código: no disponible.

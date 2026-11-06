@@ -6,7 +6,7 @@ Skyfall-31B-v4.2-abliterix-i1-GGUF es la version cuantizada en formato GGUF del 
 
 La relevancia de esta ficha es doble. Por un lado, documenta un caso tipico de la cadena de publicacion del ecosistema open source: un autor entrena o ajusta un modelo, otro lo "ablitera" y un tercero lo cuantiza en multiples formatos GGUF para que pueda ejecutarse en hardware de consumo. Por otro, el modelo no aporta informacion publica sobre su arquitectura, dataset de entrenamiento ni resultados de benchmarks, por lo que su evaluacion practica depende enteramente de pruebas propias.
 
-La ficha se ha redactado a partir de la informacion disponible en HuggingFace y en la model card del cuantizador. Todo dato no confirmado se marca explicitamente como no disponible; en particular, no se conoce la licencia del modelo, su contexto maximo, los idiomas reales mas alla del ingles declarado ni las cifras de rendimiento.
+La ficha se ha redactado a partir de la informacion disponible en Hugging Face y en la model card del cuantizador. Todo dato no confirmado se marca explicitamente como no disponible; en particular, no se conoce la licencia del modelo, su contexto maximo, los idiomas reales mas alla del ingles declarado ni las cifras de rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -96,7 +96,7 @@ No se identifican en la informacion proporcionada otros modelos comparables de t
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Skyfall-31B-v4.2-abliterix-i1-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Skyfall-31B-v4.2-abliterix-i1-GGUF
 - Modelo base: https://huggingface.co/kawattaronin/Skyfall-31B-v4.2-abliterix
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Skyfall-31B-v4.2-abliterix-GGUF
 - Pagina de resumen de descargas: https://hf.tst.eu/model#Skyfall-31B-v4.2-abliterix-i1-GGUF

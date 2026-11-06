@@ -98,7 +98,7 @@ Las rondas anteriores de la misma receta obtuvieron +0,2002 y +0,3048 sobre los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Glint-Research/Shard-2
+- Modelo en Hugging Face: https://huggingface.co/Glint-Research/Shard-2
 - Repositorio MythosMini (origen de `bench_one.py`): no disponible como URL en la información proporcionada
 - Paper o blog técnico: no disponible
 - Demo: no disponible

@@ -28,7 +28,7 @@ La información proporcionada no detalla la arquitectura interna del modelo más
 - Generación de texto en danés e inglés.
 - Conversación multi-turno y seguimiento de instrucciones (instruction-tuned).
 - Modelo fundacional para tareas de procesamiento de lenguaje natural en danés.
-- Compatible con la librería transformers y con endpoints de HuggingFace (endpoints_compatible).
+- Compatible con la librería transformers y con endpoints de Hugging Face (endpoints_compatible).
 - No se dispone de información sobre tool calling, razonamiento avanzado, visión, audio ni modo de pensamiento.
 
 ## Casos de uso
@@ -59,7 +59,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 ## Limitaciones y advertencias
 
 - Licencia de investigación exclusivamente: la licencia mimir-license-v1.0-research-model-license restringe el uso a fines de investigación, lo que impide su despliegue en producción comercial sin autorización expresa.
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace antes de su descarga, lo que añade fricción al proceso de evaluación.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face antes de su descarga, lo que añade fricción al proceso de evaluación.
 - Idiomas limitados: solo danés e inglés; no soporta otros idiomas escandinavos (noruego, sueco) ni castellano.
 - Tamaño reducido: con 1.786 millones de parámetros, es probable que presente limitaciones en razonamiento complejo, matemáticas avanzadas y generación de código en comparación con modelos de mayor escala.
 - Riesgo de alucinación: al ser un modelo pequeño, el riesgo de generar contenido factualmente incorrecto es mayor que en modelos grandes.
@@ -67,5 +67,5 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danish-foundation-models/DFM-Mimir
+- Modelo en Hugging Face: https://huggingface.co/danish-foundation-models/DFM-Mimir
 - Artículo académico referenciado en las etiquetas: arXiv:2608.13517 (contenido no verificado)

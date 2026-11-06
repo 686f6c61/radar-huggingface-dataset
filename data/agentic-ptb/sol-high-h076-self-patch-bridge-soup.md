@@ -73,6 +73,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h076.self-patch-bridge-soup
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h076.self-patch-bridge-soup
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - No se han encontrado otros enlaces relevantes (papers, blogs o repositorios) específicos de este modelo en la búsqueda web realizada.

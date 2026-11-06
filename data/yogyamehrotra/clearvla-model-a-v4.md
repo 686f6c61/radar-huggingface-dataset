@@ -77,7 +77,7 @@ No hay datos de benchmark comparables dentro de la informacion proporcionada. La
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ClearVLA Model A v4 | 30,4 M | 392 tokens visuales (2 vistas 224²) + 64 de texto + 1 de propriocepcion | CC-BY-4.0 | Pesos `.pt` en HuggingFace |
+| ClearVLA Model A v4 | 30,4 M | 392 tokens visuales (2 vistas 224²) + 64 de texto + 1 de propriocepcion | CC-BY-4.0 | Pesos `.pt` en Hugging Face |
 | OpenVLA | ~7 B | Backbone tipo Llama-2 7B; cientos de tokens visuales | Licencia abierta con condiciones (Llama 2 community) | Pesos abiertos |
 | Octo | ~93 M | Transformer de politica con tokens de observacion e instruccion | Licencia abierta (MIT) | Pesos abiertos |
 | pi0 (Physical Intelligence) | ~3 B | Modelo de flujo con backbone preentrenado de gran tamano | No disponible en la informacion consultada | Parcialmente abierto |
@@ -100,7 +100,7 @@ ClearVLA Model A v4 se situa en el extremo mas ligero de la categoria, por debaj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yogyamehrotra/clearvla-model-a-v4
+- Modelo en Hugging Face: https://huggingface.co/yogyamehrotra/clearvla-model-a-v4
 - Repositorio del proyecto ClearVLA: https://github.com/yogyam/clearvla
 - Dataset `clearvla-sim`: https://huggingface.co/datasets/yogyamehrotra/clearvla-sim
 - Articulo de referencia: *ClearVLA: do VLA speed-ups fail on transparent lab objects?* (Yogya Mehrotra, 2026); no se ha proporcionado un enlace independiente de publicacion, el repositorio de GitHub actua como referencia principal.

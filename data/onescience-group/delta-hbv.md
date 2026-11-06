@@ -4,7 +4,7 @@
 
 Delta-HBV es un modelo hidrológico diferenciable, con conservación de masa y conocimiento físico incorporado, que aprende parámetros de forma dinámica. Fue propuesto por la Pennsylvania State University y KAUST, y combina una red LSTM que actúa como controlador con 16 componentes HBV ejecutados en paralelo, generando además parámetros beta y gamma variables en el tiempo. Su objetivo es cubrir dos carencias clásicas de la modelización hidrológica: la predicción en cuencas no aforadas (ungauged basins) y la evaluación de impactos del cambio climático sobre tendencias históricas de caudal.
 
-El repositorio de HuggingFace es una reproducción de ingeniería independiente de las especificaciones públicas del modelo, no una publicación oficial de los autores. Se entrenó con forzamiento diario de CAMELS, 35 atributos de cuenca y series de caudal observado. No se trata de un modelo de lenguaje: no procesa texto ni dispone de ventana de contexto en el sentido de un transformer, sino de una ventana de calentamiento de 365 días para el entrenamiento y secuencias de inferencia de 730 días.
+El repositorio de Hugging Face es una reproducción de ingeniería independiente de las especificaciones públicas del modelo, no una publicación oficial de los autores. Se entrenó con forzamiento diario de CAMELS, 35 atributos de cuenca y series de caudal observado. No se trata de un modelo de lenguaje: no procesa texto ni dispone de ventana de contexto en el sentido de un transformer, sino de una ventana de calentamiento de 365 días para el entrenamiento y secuencias de inferencia de 730 días.
 
 Su relevancia actual reside en el enfoque de física diferenciable aplicada a la hidrología: al integrar restricciones físicas en un pipeline entrenable de extremo a extremo con PyTorch, permite evaluar la extrapolación espacial a regiones contiguas no observadas y comprobar si se preservan las tendencias de caudales altos y bajos bajo escenarios históricos.
 
@@ -71,7 +71,7 @@ No se dispone de datos numéricos comparativos en la información proporcionada.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Delta-HBV | no disponible | no aplica (calentamiento de 365 días; inferencia de 730 días) | no disponible | Apache 2.0 | Reproducción de ingeniería en HuggingFace, sin pesos publicados |
+| Delta-HBV | no disponible | no aplica (calentamiento de 365 días; inferencia de 730 días) | no disponible | Apache 2.0 | Reproducción de ingeniería en Hugging Face, sin pesos publicados |
 | HBV conceptual | no disponible | no aplica | no disponible | no disponible | no disponible |
 | LSTM sobre CAMELS | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Otros modelos de física diferenciable | no disponible | no aplica | no disponible | no disponible | no disponible |
@@ -91,7 +91,7 @@ No se dispone de datos numéricos comparativos en la información proporcionada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OneScience-Group/Delta-HBV
+- Repositorio en Hugging Face: https://huggingface.co/OneScience-Group/Delta-HBV
 - Paper de referencia: https://doi.org/10.5194/hess-27-2357-2023
 - Dataset CAMELS: mencionado como fuente de forzamiento, atributos de cuenca y caudal; no se proporciona enlace directo en la información disponible.
 - Datos MODIS: mencionados en la licencia y condiciones de uso; no se proporciona enlace directo en la información disponible.

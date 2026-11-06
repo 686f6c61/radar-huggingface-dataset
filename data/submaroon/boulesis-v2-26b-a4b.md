@@ -84,9 +84,9 @@ No se dispone de especificaciones publicadas de alternativas de la misma categor
 | Modelo | Rol en el merge | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | SubMaroon/Boulesis-v2-26B-A4B | Modelo final | 26,54 B (A4B) | no disponible | gemma | 10 descargas, 1 like |
-| Gryphe/Gemma-4-26B-A4B-StyleTune-V2 | Aporta estilo de prosa y "sabor" de rol | no disponible | no disponible | gemma | publico en HuggingFace |
-| Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2 | Donante de QK para razonamiento | no disponible | no disponible | gemma | publico en HuggingFace |
-| coder3101/gemma-4-26B-A4B-it-heretic | Cuerpo abliterated de partida | no disponible | no disponible | gemma | publico en HuggingFace |
+| Gryphe/Gemma-4-26B-A4B-StyleTune-V2 | Aporta estilo de prosa y "sabor" de rol | no disponible | no disponible | gemma | publico en Hugging Face |
+| Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2 | Donante de QK para razonamiento | no disponible | no disponible | gemma | publico en Hugging Face |
+| coder3101/gemma-4-26B-A4B-it-heretic | Cuerpo abliterated de partida | no disponible | no disponible | gemma | publico en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -100,13 +100,13 @@ No se dispone de especificaciones publicadas de alternativas de la misma categor
 - Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad factual; en tareas de rol el modelo prioriza la coherencia narrativa sobre la exactitud.
 - Repositorio con 53,1 GB de pesos en safetensors y ausencia de cuantizaciones oficiales: el despliegue en hardware de consumo exige generar o buscar GGUF de terceros.
 - Adopcion minima (10 descargas, 1 like), sin historial de uso en produccion ni validacion independiente.
-- La fecha de creacion del repositorio figura como 2026-09-13 y la de actualizacion como 2026-09-13, datos tal como los devuelve HuggingFace.
+- La fecha de creacion del repositorio figura como 2026-09-13 y la de actualizacion como 2026-09-13, datos tal como los devuelve Hugging Face.
 - El autor publico una correccion en la seccion de creditos de la model card, lo que sugiere una revision rapida del contenido; conviene fijar una revision concreta del repositorio si se usa como base.
 - Ajustes de muestreo sensibles: el autor recomienda temperatura 1.0, top-k 64, top-p 0.95 y penalizacion por repeticion 1.05-1.1; con GGUF en KoboldCPP es necesario forzar opciones adicionales para que el modo thinking funcione.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SubMaroon/Boulesis-v2-26B-A4B
+- Modelo en Hugging Face: https://huggingface.co/SubMaroon/Boulesis-v2-26B-A4B
 - Modelo base: https://huggingface.co/coder3101/gemma-4-26B-A4B-it-heretic
 - Modelo base: https://huggingface.co/Gryphe/Gemma-4-26B-A4B-StyleTune-V2
 - Modelo base: https://huggingface.co/Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2

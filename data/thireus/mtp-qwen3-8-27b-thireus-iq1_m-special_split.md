@@ -73,7 +73,7 @@ La comparativa muestra que la versión IQ1_M es la más agresiva en compresión,
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ1_M-SPECIAL_SPLIT
+- Hugging Face del modelo: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ1_M-SPECIAL_SPLIT
 - Repositorio del modelo base en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Artículo sobre especificaciones y requisitos: https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026
 - Otro quantizado del mismo autor (BF16): https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT

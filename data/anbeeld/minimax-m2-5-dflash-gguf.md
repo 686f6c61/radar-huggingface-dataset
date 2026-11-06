@@ -89,7 +89,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/Anbeeld/MiniMax-M2.5-DFlash-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/Anbeeld/MiniMax-M2.5-DFlash-GGUF
 - Modelo base DFlash (z-lab): https://huggingface.co/z-lab/MiniMax-M2.5-DFlash
 - Modelo principal MiniMax M2.5: https://huggingface.co/MiniMaxAI/MiniMax-M2.5
 - Paper DFlash: https://arxiv.org/abs/2602.06036

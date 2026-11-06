@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tweaktron es un modelo de lenguaje publicado en HuggingFace por el usuario Johnblick187 bajo licencia Apache 2.0. El repositorio contiene exclusivamente pesos en formato safetensors y una model card que únicamente declara la licencia, sin ningún otro contenido: no hay descripción de arquitectura, datos de entrenamiento, idiomas soportados ni instrucciones de uso. Es, por tanto, un modelo sin documentación técnica asociada.
+Tweaktron es un modelo de lenguaje publicado en Hugging Face por el usuario Johnblick187 bajo licencia Apache 2.0. El repositorio contiene exclusivamente pesos en formato safetensors y una model card que únicamente declara la licencia, sin ningún otro contenido: no hay descripción de arquitectura, datos de entrenamiento, idiomas soportados ni instrucciones de uso. Es, por tanto, un modelo sin documentación técnica asociada.
 
 El dato objetivo disponible es el recuento de parámetros extraído de los propios ficheros safetensors: 3.469.315.328 parámetros (aproximadamente 3,47 mil millones). El tamaño del repositorio es de 6,9 GB, una cifra coherente con pesos almacenados en precisión de 16 bits (bf16 o fp16), lo que da unos 6,94 GB solo de pesos. No se ha publicado información sobre tokenizador, longitud de contexto, dataset ni proceso de alineación.
 
@@ -92,7 +92,7 @@ La diferencia principal no es de tamano ni de licencia, sino de trazabilidad: lo
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Johnblick187/tweaktron
+- Hugging Face del modelo: https://huggingface.co/Johnblick187/tweaktron
 - Paper o informe tecnico: no disponible
 - Blog del autor: no disponible
 - Repositorio de codigo: no disponible

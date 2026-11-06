@@ -68,8 +68,8 @@ No se dispone de datos de benchmarks ni de fichas de modelos comparables de la m
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BranchOne | 0,8 B de backbone más LoRA r8 y cabeza (tamaño de adaptadores no disponible) | 8.192 tokens expandidos por rama candidata | Selección entre 2-150 candidatos con abstención | Apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen3.5-0.8B-Base | 0,8 B | No disponible en esta ficha | Modelo base generativo previo al ajuste | No disponible en esta ficha | HuggingFace |
+| BranchOne | 0,8 B de backbone más LoRA r8 y cabeza (tamaño de adaptadores no disponible) | 8.192 tokens expandidos por rama candidata | Selección entre 2-150 candidatos con abstención | Apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen3.5-0.8B-Base | 0,8 B | No disponible en esta ficha | Modelo base generativo previo al ajuste | No disponible en esta ficha | Hugging Face |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de fichas de modelos comparables de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ndemirdemir/BranchOne
+- Modelo en Hugging Face: https://huggingface.co/ndemirdemir/BranchOne
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Resultados de búsqueda web sin información específica del modelo (leaderboards genéricos): https://benchlm.ai/ , https://openrouter.ai/rankings , https://localaimaster.com/tools/ai-model-leaderboard
 - Papers, blogs, repositorios de reproducción y demos: no disponibles en la información proporcionada.

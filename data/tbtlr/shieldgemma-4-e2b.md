@@ -102,7 +102,7 @@ La comparacion con ShieldGemma 2B es la unica con datos numericos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tbtlr/shieldgemma-4-e2b
+- Modelo en Hugging Face: https://huggingface.co/tbtlr/shieldgemma-4-e2b
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Modelo hermano trimodal: https://huggingface.co/tbtlr/shieldgemma-4-e2b-trimodal
 - Dataset Aegis 2.0: https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0

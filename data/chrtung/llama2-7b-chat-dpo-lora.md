@@ -2,11 +2,11 @@
 
 ## Resumen
 
-chrtung/llama2-7b-chat-dpo-lora es un adaptador LoRA publicado en HuggingFace por el usuario chrtung, cuyo tag `base_model` apunta a meta-llama/Llama-2-7b-chat-hf y cuya librería declarada es `peft`. Por el nombre y por el uso de PEFT se deduce que se trata de un ajuste fino por adaptadores de bajo rango, presumiblemente alineado mediante DPO (Direct Preference Optimization), aunque la model card no confirma ni el método, ni el dataset, ni los hiperparámetros empleados.
+chrtung/llama2-7b-chat-dpo-lora es un adaptador LoRA publicado en Hugging Face por el usuario chrtung, cuyo tag `base_model` apunta a meta-llama/Llama-2-7b-chat-hf y cuya librería declarada es `peft`. Por el nombre y por el uso de PEFT se deduce que se trata de un ajuste fino por adaptadores de bajo rango, presumiblemente alineado mediante DPO (Direct Preference Optimization), aunque la model card no confirma ni el método, ni el dataset, ni los hiperparámetros empleados.
 
 El modelo base es bien conocido: un transformer decoder-only de 6.740 millones de parámetros, entrenado por Meta sobre 2 billones de tokens y posteriormente alineado con RLHF (rechazo de muestras más PPO), con una ventana de contexto de 4.096 tokens. Esa base determina el grueso de las capacidades del adaptador; el adaptador en sí no aporta información verificable sobre su comportamiento final.
 
-La relevancia práctica del repositorio es en este momento escasa: acumula 0 descargas y 0 likes, el tamaño del repositorio figura como 0,0 GB (lo que sugiere que los pesos pueden no estar subidos o que los metadatos no son fiables) y las fechas de creación y actualización (2026) resultan anómalas. La model card es la plantilla por defecto de HuggingFace con todos los campos sin rellenar, incluidos licencia, idiomas y detalles de entrenamiento. Cualquier uso en producción exigiría una verificación manual del contenido del repositorio.
+La relevancia práctica del repositorio es en este momento escasa: acumula 0 descargas y 0 likes, el tamaño del repositorio figura como 0,0 GB (lo que sugiere que los pesos pueden no estar subidos o que los metadatos no son fiables) y las fechas de creación y actualización (2026) resultan anómalas. La model card es la plantilla por defecto de Hugging Face con todos los campos sin rellenar, incluidos licencia, idiomas y detalles de entrenamiento. Cualquier uso en producción exigiría una verificación manual del contenido del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -74,9 +74,9 @@ Las cifras siguientes son estimaciones de ingeniería para el modelo base de 7B;
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | chrtung/llama2-7b-chat-dpo-lora | adaptador LoRA sobre 7B (no disponible el rango) | 4.096 tokens (heredado del base) | no disponible | repositorio con 0 descargas |
-| meta-llama/Llama-2-7b-chat-hf | 6.740 millones | 4.096 tokens | Llama 2 Community License | pesos completos en HuggingFace |
-| mistralai/Mistral-7B-Instruct-v0.2 | 7.240 millones | 32.768 tokens | Apache 2.0 | pesos completos en HuggingFace |
-| HuggingFaceH4/zephyr-7b-beta | 7.240 millones | 32.768 tokens | MIT | pesos completos en HuggingFace |
+| meta-llama/Llama-2-7b-chat-hf | 6.740 millones | 4.096 tokens | Llama 2 Community License | pesos completos en Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.2 | 7.240 millones | 32.768 tokens | Apache 2.0 | pesos completos en Hugging Face |
+| HuggingFaceH4/zephyr-7b-beta | 7.240 millones | 32.768 tokens | MIT | pesos completos en Hugging Face |
 
 Zephyr-7b-beta es el comparable más directo en cuanto a técnica, ya que también se alineó con DPO, y ofrece licencia MIT y el doble de contexto efectivo. Mistral-7B-Instruct-v0.2 aporta licencia Apache 2.0 y contexto de 32.768 tokens. No hay datos de rendimiento de este adaptador que permitan comparar calidad de forma objetiva con ninguno de ellos.
 
@@ -96,7 +96,7 @@ Zephyr-7b-beta es el comparable más directo en cuanto a técnica, ya que tambi�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chrtung/llama2-7b-chat-dpo-lora
+- Modelo en Hugging Face: https://huggingface.co/chrtung/llama2-7b-chat-dpo-lora
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Articulo de Llama 2 (Touvron et al., 2023): https://arxiv.org/abs/2307.09288
 - Articulo de DPO (Rafailov et al., 2023): https://arxiv.org/abs/2305.18290

@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks comparativos entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ghanaopenai/ghana-voice-nano-twi
+- Modelo en Hugging Face: https://huggingface.co/ghanaopenai/ghana-voice-nano-twi
 - Demo (Space): https://huggingface.co/spaces/ghanaopenai/ghana-voice-nano-twi
 - Repositorio de código, receta de entrenamiento, API en Modal y guía móvil: https://github.com/ghanaopenai/ghana-voice-nano
 - Matcha-TTS: https://github.com/shivammehta25/Matcha-TTS

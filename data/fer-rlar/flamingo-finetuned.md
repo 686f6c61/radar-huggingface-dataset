@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Fer-rlar/flamingo-finetuned` es un repositorio de HuggingFace publicado por el usuario Fer-rlar que contiene una implementación propia de una arquitectura tipo Flamingo orientada a tareas multitarea, en configuración "base". A pesar del nombre ("finetuned"), la propia model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es una **inicialización válida para pruebas de humo (smoke tests)** y que **no se presenta como un checkpoint entrenado ni evaluado**. El repositorio tiene 0 descargas y 0 likes, y un tamaño declarado de 0.0 GB.
+`Fer-rlar/flamingo-finetuned` es un repositorio de Hugging Face publicado por el usuario Fer-rlar que contiene una implementación propia de una arquitectura tipo Flamingo orientada a tareas multitarea, en configuración "base". A pesar del nombre ("finetuned"), la propia model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es una **inicialización válida para pruebas de humo (smoke tests)** y que **no se presenta como un checkpoint entrenado ni evaluado**. El repositorio tiene 0 descargas y 0 likes, y un tamaño declarado de 0.0 GB.
 
 El interés del proyecto es fundamentalmente como **material de referencia de código**: un script de Python (`run.py`) con un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura generados y un `training_args.json` con la receta de experimento por defecto (optimizador adafactor con schedule de warmup constante). El autor declara que las afirmaciones de rendimiento se omiten deliberadamente y que no se reclama ninguna puntuación de benchmark.
 
@@ -78,7 +78,7 @@ La información proporcionada no incluye datos de modelos comparables. En la cat
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fer-rlar/flamingo-finetuned | 16.576 | no disponible | sin benchmarks declarados | MIT | HuggingFace, 0 descargas |
+| Fer-rlar/flamingo-finetuned | 16.576 | no disponible | sin benchmarks declarados | MIT | Hugging Face, 0 descargas |
 | Flamingo (DeepMind) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | OpenFlamingo | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | IDEFICS | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
@@ -101,5 +101,5 @@ Cualquier comparación cuantitativa con estas alternativas queda fuera del alcan
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fer-rlar/flamingo-finetuned
+- Hugging Face: https://huggingface.co/Fer-rlar/flamingo-finetuned
 - Los resultados de búsqueda web disponibles no son relevantes para este modelo: corresponden a páginas sobre el hierro (elemento químico) y nutrición, no a la arquitectura Flamingo ni al repositorio. No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados.

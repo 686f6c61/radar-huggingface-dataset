@@ -75,8 +75,8 @@ No disponible. Este repositorio no pertenece a la categoría de modelos desplega
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/tanakamisaki/study-grounded-language
-- Perfil del autor en HuggingFace: https://huggingface.co/tanakamisaki/activity/all
+- Repositorio de Hugging Face: https://huggingface.co/tanakamisaki/study-grounded-language
+- Perfil del autor en Hugging Face: https://huggingface.co/tanakamisaki/activity/all
 - Referencia temática sobre fundamentación: https://arxiv.org/abs/2311.09069
 - Artículo relacionado sobre pensamiento crítico y IA generativa: https://www.sciencedirect.com/science/article/pii/S2666920X26000342
 - Nota de prensa sobre el LLM Takane de Fujitsu (contexto de despliegue de LLM en administración pública): https://global.fujitsu/en-global/pr/news/2026/02/03-01

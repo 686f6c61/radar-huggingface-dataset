@@ -88,8 +88,8 @@ Resultados publicados en la model card (autorreportados por el autor del modelo)
 
 | Modelo | Parámetros | Contexto | HLE sin herramientas | Terminal-Bench 4.0 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 | 763,2 mil millones | 1M tokens | 42,6 | 42,3 | MIT | Pesos abiertos en HuggingFace |
-| DeepSeek-V4.1-Flash | No disponible | No disponible | 36,8 | 31,2 | MIT (según repositorio referenciado) | Pesos abiertos en HuggingFace |
+| DeepSeek-V4.1-Flash-1017 | 763,2 mil millones | 1M tokens | 42,6 | 42,3 | MIT | Pesos abiertos en Hugging Face |
+| DeepSeek-V4.1-Flash | No disponible | No disponible | 36,8 | 31,2 | MIT (según repositorio referenciado) | Pesos abiertos en Hugging Face |
 | K3 | No disponible | No disponible | 43,5 | 12,6 | No disponible | No disponible |
 | GLM-5.3 | No disponible | No disponible | 42,0† | 37,9 | No disponible | No disponible |
 | GPT-5.6 Sol | No disponible | No disponible | 44,5 | 39,9 | No disponible (propietario) | No disponible |
@@ -115,7 +115,7 @@ La comparativa se limita a los benchmarks publicados en la model card: no se dis
 
 - Repositorio analizado: https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017
 - Modelo original: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Informe técnico (PDF): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Toolkit de encoding de prompts: https://github.com/deepseek-ai/deepseek-recipe
 - Implementación de referencia del encoding: https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017/tree/main/encoding

@@ -73,12 +73,12 @@ La comparativa se basa en características generales, ya que no se dispone de da
 - La cuantización W4A16 puede degradar la calidad de las respuestas en tareas que requieren alta precisión, como matemáticas avanzadas o razonamiento complejo.
 - No se dispone de información sobre el proceso de abliteración ni sobre posibles sesgos introducidos durante el mismo.
 - La licencia Apache 2.0 permite uso comercial, pero el contenido generado por el modelo puede no ser apto para todos los públicos.
-- No hay garantía de soporte técnico ni de mantenimiento por parte del autor, dado que el modelo tiene cero descargas y cero likes en HuggingFace.
+- No hay garantía de soporte técnico ni de mantenimiento por parte del autor, dado que el modelo tiene cero descargas y cero likes en Hugging Face.
 - El contexto de 262K tokens es nativo, pero la cuantización puede afectar al rendimiento en contextos muy largos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/quocbao747/Qwen3.8-27B-OBLITERATED-W4A16-24GB
+- Modelo en Hugging Face: https://huggingface.co/quocbao747/Qwen3.8-27B-OBLITERATED-W4A16-24GB
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de vLLM para Qwen3.8-27B: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-27B.html
 - Versión abliterada de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated

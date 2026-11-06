@@ -76,8 +76,8 @@ Tamaños de muestra empleados: HellaSwag 10 042, PIQA 1 838, TriviaQA 17 944, Wi
 
 | Modelo | Parametros | Contexto | Cuantizacion | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| simaai/Qwen3-8B-GPTQ-a16w4_return_logits | ~8B | 4096 | GPTQ A16W4 | Benchmark de precision en Modalix | Apache 2.0 | HuggingFace (compilado para Modalix) |
-| Qwen/Qwen3-8B | ~8B | 32 768 (nativo, segun modelo base) | FP/BF16 original | Generacion de texto de proposito general | Apache 2.0 | HuggingFace |
+| simaai/Qwen3-8B-GPTQ-a16w4_return_logits | ~8B | 4096 | GPTQ A16W4 | Benchmark de precision en Modalix | Apache 2.0 | Hugging Face (compilado para Modalix) |
+| Qwen/Qwen3-8B | ~8B | 32 768 (nativo, segun modelo base) | FP/BF16 original | Generacion de texto de proposito general | Apache 2.0 | Hugging Face |
 | Otras compilaciones SiMa.ai para Modalix | no disponible | no disponible | no disponible | Despliegue de generacion de texto en Modalix | no disponible | Coleccion de LLMs de SiMa.ai (referenciada en la model card) |
 
 La comparación directa con alternativas de la misma categoría (modelos de 8B para benchmarking) no está disponible en la información proporcionada. La diferencia clave frente a Qwen3-8B original es el contexto reducido a 4096 tokens y la orientación exclusiva a evaluación de precisión, no a generación en producción.
@@ -95,7 +95,7 @@ La comparación directa con alternativas de la misma categoría (modelos de 8B p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/simaai/Qwen3-8B-GPTQ-a16w4_return_logits
+- Repositorio Hugging Face: https://huggingface.co/simaai/Qwen3-8B-GPTQ-a16w4_return_logits
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Guia de inicio de SiMa.ai Neat: https://developer.sima.ai/software/getting-started/
 - Documentacion de benchmark de precision MOLE: https://developer.sima.ai/software/genai-llima/mole

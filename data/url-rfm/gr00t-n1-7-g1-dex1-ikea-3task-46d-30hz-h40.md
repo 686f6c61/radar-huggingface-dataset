@@ -90,7 +90,7 @@ La comparativa interna del autor muestra que este checkpoint supera a las varian
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/URL-RFM/gr00t-n1.7-g1-dex1-ikea-3task-46d-30hz-h40
+- Modelo en Hugging Face: https://huggingface.co/URL-RFM/gr00t-n1.7-g1-dex1-ikea-3task-46d-30hz-h40
 - Repositorio NVIDIA Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T
 - Variante 60-dim con velocidades articulares: https://huggingface.co/RooibosT/gr00t-n1.7-g1-dex1-ikea-relarm-30hz-h40-v2-armvel
 - Variante 60-dim sin velocidades: https://huggingface.co/RooibosT/gr00t-n1.7-g1-dex1-ikea-relarm-30hz-h40-v2

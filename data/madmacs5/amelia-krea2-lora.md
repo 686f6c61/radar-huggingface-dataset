@@ -4,7 +4,7 @@
 
 Amelia – Krea 2 Character LoRA es un ajuste fino de bajo rango (LoRA) desarrollado por madmacs5 para el modelo de difusión Krea 2. El objetivo es generar de forma consistente el rostro y la complexión de un personaje ficticio llamado Amelia, con rasgos definidos como cabello castaño balayage, ojos azul grisáceo, piel clara con tono oliva y constitución delgada. Resuelve el problema habitual de pérdida de identidad en retratos generados por IA, permitiendo fijar un rostro concreto con mayor precisión.
 
-El modelo se distribuye en dos ficheros safetensors: uno principal para la identidad facial y otro complementario para el cuerpo, que pueden apilarse para modificar la silueta según el encuadre. El repositorio en HuggingFace ocupa 1.4 GB. Al ser un LoRA, no es un modelo autónomo, sino una adaptación que requiere el modelo base Krea 2 para funcionar.
+El modelo se distribuye en dos ficheros safetensors: uno principal para la identidad facial y otro complementario para el cuerpo, que pueden apilarse para modificar la silueta según el encuadre. El repositorio en Hugging Face ocupa 1.4 GB. Al ser un LoRA, no es un modelo autónomo, sino una adaptación que requiere el modelo base Krea 2 para funcionar.
 
 Está orientado a artistas e ilustradores que trabajen con Krea 2 y necesiten un personaje recurrente con apariencia estable. La información disponible no incluye datos sobre parametros, licencia ni benchmarks, por lo que muchos aspectos tecnicos quedan sin documentar.
 

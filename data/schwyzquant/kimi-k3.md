@@ -87,9 +87,9 @@ Los datos de los modelos alternativos proceden de su documentacion publica y no 
 | Modelo | Parametros totales / activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Kimi K3 (repositorio `schwyzquant/Kimi-K3`, 8 bits) | 2,8T / 104B | 1.000.000 tokens | Kimi K3 | Pesos safetensors cuantizados, 1561 GB, 0 descargas |
-| Kimi K2 (Moonshot AI) | 1T / 32B | 128.000 tokens | Licencia propia de Kimi | Pesos abiertos en HuggingFace |
-| DeepSeek-V3 / R1 | 671B / 37B | 128.000 tokens | Licencia propia de DeepSeek | Pesos abiertos en HuggingFace |
-| Qwen3-235B-A22B | 235B / 22B | 128.000 tokens nativos | Apache 2.0 | Pesos abiertos en HuggingFace |
+| Kimi K2 (Moonshot AI) | 1T / 32B | 128.000 tokens | Licencia propia de Kimi | Pesos abiertos en Hugging Face |
+| DeepSeek-V3 / R1 | 671B / 37B | 128.000 tokens | Licencia propia de DeepSeek | Pesos abiertos en Hugging Face |
+| Qwen3-235B-A22B | 235B / 22B | 128.000 tokens nativos | Apache 2.0 | Pesos abiertos en Hugging Face |
 
 Diferencias clave: Kimi K3 multiplica por casi tres los parametros totales de Kimi K2 y por mas de tres los parametros activos, y eleva la ventana de contexto de 128.000 a 1.000.000 de tokens, ademas de incorporar vision y video nativos que los modelos comparables no ofrecen en su configuracion base. El precio de ese salto es un requisito de hardware aproximadamente cuatro veces mayor en 8 bits que el de un modelo de 671B en el mismo formato. No hay datos publicos de rendimiento comparado para la version cuantizada que se evalua.
 
@@ -108,8 +108,8 @@ Diferencias clave: Kimi K3 multiplica por casi tres los parametros totales de Ki
 
 ## Enlaces
 
-- Repositorio evaluado en HuggingFace: https://huggingface.co/schwyzquant/Kimi-K3
-- Organizacion original en HuggingFace: https://huggingface.co/moonshotai
+- Repositorio evaluado en Hugging Face: https://huggingface.co/schwyzquant/Kimi-K3
+- Organizacion original en Hugging Face: https://huggingface.co/moonshotai
 - Modelo original (referencia): https://huggingface.co/moonshotai/Kimi-K3
 - Blog tecnico de Kimi K3: https://www.kimi.com/blog/kimi-k3
 - Informe tecnico completo: https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf

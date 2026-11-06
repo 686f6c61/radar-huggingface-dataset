@@ -121,5 +121,5 @@ La principal diferencia es que `topic-scope` es un artefacto ONNX ligero y espec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flowxai/topic-scope
+- Modelo en Hugging Face: https://huggingface.co/flowxai/topic-scope
 - Repositorio de la librería `border`: https://github.com/flowx-ai/border

@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| thura2/freococo-myanmar-asr-onnx | no disponible | audio de duración variable | birmano | Apache-2.0 | ONNX | HuggingFace |
-| freococo/myanmar_asr | no disponible | audio de duración variable | birmano | Apache-2.0 | PyTorch (modelo base) | HuggingFace |
+| thura2/freococo-myanmar-asr-onnx | no disponible | audio de duración variable | birmano | Apache-2.0 | ONNX | Hugging Face |
+| freococo/myanmar_asr | no disponible | audio de duración variable | birmano | Apache-2.0 | PyTorch (modelo base) | Hugging Face |
 | Meta's Omnilingual ASR | no disponible | no disponible | multilingüe (según la model card, se usa junto al modelo en la app BudgetWise) | no disponible | no disponible | no disponible |
 
 La comparativa se limita a estos tres sistemas por la información disponible; no se dispone de datos de benchmarks ni de especificaciones detalladas de las alternativas que permitan una comparación cuantitativa.
@@ -79,7 +79,7 @@ La comparativa se limita a estos tres sistemas por la información disponible; n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thura2/freococo-myanmar-asr-onnx
+- Modelo en Hugging Face: https://huggingface.co/thura2/freococo-myanmar-asr-onnx
 - Modelo base: https://huggingface.co/freococo/myanmar_asr
 - Repositorio BudgetWise (script de exportación `apps/android/asr/host/export/freococo_onnx.py`): no disponible en la información proporcionada
 - Paper, blog o demo del modelo base: no disponible en la información proporcionada

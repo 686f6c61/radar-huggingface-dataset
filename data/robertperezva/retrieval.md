@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por robertperezva, contiene una implementación de DeiT (Data-efficient Image Transformer) orientada a tareas de retrieval. Según la documentación del autor, no se trata de un modelo entrenado, sino de un punto de partida reproducible con un checkpoint de inicialización válido para pruebas de humo. La arquitectura configurada incluye atención de ventana deslizante, fusión de bajo rango, activación GELU y normalización RMSNorm.
+Este repositorio de Hugging Face, publicado por robertperezva, contiene una implementación de DeiT (Data-efficient Image Transformer) orientada a tareas de retrieval. Según la documentación del autor, no se trata de un modelo entrenado, sino de un punto de partida reproducible con un checkpoint de inicialización válido para pruebas de humo. La arquitectura configurada incluye atención de ventana deslizante, fusión de bajo rango, activación GELU y normalización RMSNorm.
 
 El modelo declara 49.600 parámetros en su checkpoint safetensors, lo que lo convierte en una variante en miniatura y experimental, muy alejada de los DeiT estándar. Su relevancia reside en servir como base de experimentación para la recuperación de imágenes, no como un modelo listo para producción.
 
@@ -67,14 +67,14 @@ No disponible. La información existente no permite una comparación justa con m
 
 - El checkpoint de inicialización no ha sido entrenado ni auditado; no debe usarse como modelo productivo.
 - No se ha realizado evaluación de sesgos, robustez ni transferencia de dominio.
-- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 - No hay puntuaciones de benchmarks ni garantías de rendimiento.
 - Al utilizar con datasets externos, es necesario revisar los términos de licencia de dichos datasets además de la licencia BSD-3-Clause del código.
 - La arquitectura de atención de ventana deslizante y fusión de bajo rango no está validada en tareas reales.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/robertperezva/retrieval
+- Repositorio en Hugging Face: https://huggingface.co/robertperezva/retrieval
 - Perfil del autor: https://huggingface.co/robertperezva
 - Modelos del autor: https://huggingface.co/robertperezva/models
 - Otro repositorio del autor: https://huggingface.co/robertperezva/llm-asr

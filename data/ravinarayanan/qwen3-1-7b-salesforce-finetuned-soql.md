@@ -103,15 +103,15 @@ Solo se dispone de datos comparativos frente al modelo base. No hay informacion 
 - Requisitos de produccion: validar el SOQL de forma determinista, forzar ejecucion de solo lectura, respetar permisos de objeto y campo, validar los argumentos de las herramientas y limitar el numero maximo de registros por consulta.
 - El modo `enable_thinking=False` es el documentado para el enrutado de herramientas; no hay datos publicados sobre el rendimiento del modelo con el modo thinking activado.
 - Licencia Apache 2.0, que permite uso comercial, pero el proyecto no esta afiliado ni respaldado por Salesforce, Inc.; Salesforce es una marca registrada de Salesforce, Inc.
-- Adopcion practica muy baja en el momento de redactar la ficha: cero descargas y cero "likes" en HuggingFace, por lo que no existe validacion independiente de los resultados reportados.
+- Adopcion practica muy baja en el momento de redactar la ficha: cero descargas y cero "likes" en Hugging Face, por lo que no existe validacion independiente de los resultados reportados.
 - No se publican datos de entrenamiento, metodo de ajuste ni receta de datos, lo que dificulta reproducir o auditar el comportamiento.
 - No se incluye una version cuantizada en GGUF ni pesos para llama.cpp u Ollama en este repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ravinarayanan/Qwen3-1.7B-Salesforce-Finetuned-SOQL
+- Modelo en Hugging Face: https://huggingface.co/ravinarayanan/Qwen3-1.7B-Salesforce-Finetuned-SOQL
 - Modelo base Qwen/Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Informe tecnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1
 - Guia de ajuste fino de Qwen3-1.7B (distil labs): https://www.distillabs.ai/learn/qwen3-1-7b-fine-tuning-guide/
-- Perfil del autor en HuggingFace: https://huggingface.co/ravinarayanan/models
+- Perfil del autor en Hugging Face: https://huggingface.co/ravinarayanan/models

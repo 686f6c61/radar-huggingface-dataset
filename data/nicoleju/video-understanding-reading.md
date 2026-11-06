@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio, publicado por el usuario nicoleju en HuggingFace, no contiene un modelo de IA entrenado, sino una nota de investigación en Markdown sobre comprensión de video (_video understanding_). El autor lo presenta explícitamente como un documento de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, sin llegar a ser un artículo completo ni una liberación de pesos.
+Este repositorio, publicado por el usuario nicoleju en Hugging Face, no contiene un modelo de IA entrenado, sino una nota de investigación en Markdown sobre comprensión de video (_video understanding_). El autor lo presenta explícitamente como un documento de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, sin llegar a ser un artículo completo ni una liberación de pesos.
 
 El archivo principal es `analysis.md`, que cubre el alcance de la pregunta de investigación, posibles factores de confusión, una comparación propuesta con líneas base emparejadas, contextos de evaluación concretos (MSR-VTT, ActivityNet Captions), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas, además de referencias temáticas.
 
@@ -71,7 +71,7 @@ No disponible. Este repositorio no es un modelo comparable con sistemas como Smo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nicoleju/video-understanding-reading
+- Repositorio en Hugging Face: https://huggingface.co/nicoleju/video-understanding-reading
 - Encuesta y recursos sobre LLMs para comprension de video: https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding
 - Blog de SmolVLM2 (comprension de video en dispositivos): https://huggingface.co/blog/smolvlm2
 - Documentacion de Gemini para comprension de video: https://ai.google.dev/gemini-api/docs/video-understanding

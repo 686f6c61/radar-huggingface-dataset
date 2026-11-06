@@ -4,7 +4,7 @@
 
 wolof-pocket-tts es un modelo de síntesis de voz (text-to-speech) especializado en el idioma wolof, desarrollado por el usuario abdazizsall como un ajuste fino (finetune) del modelo base kyutai/pocket-tts. Con 108,5 millones de parámetros, se posiciona como un modelo compacto orientado a la generación de audio en una lengua de bajos recursos, el wolof, hablada principalmente en Senegal, Gambia y Mauritania. Su relevancia radica en la escasez de sistemas TTS de calidad para lenguas africanas y en la existencia de una comunidad activa (GalsenAI) que publica datasets específicos para este idioma.
 
-El modelo se distribuye en formato safetensors, con un tamaño de repositorio de 0,4 GB, y emplea la librería pocket-tts para su inferencia. Se entrenó a partir de los datasets galsenai/wolof_tts y google/WaxalNLP, lo que lo vincula a iniciativas de preservación lingüística y accesibilidad digital. Es un modelo de nicho, con cero descargas y cero likes en el momento de la ficha, y con acceso restringido que requiere aceptar condiciones en HuggingFace.
+El modelo se distribuye en formato safetensors, con un tamaño de repositorio de 0,4 GB, y emplea la librería pocket-tts para su inferencia. Se entrenó a partir de los datasets galsenai/wolof_tts y google/WaxalNLP, lo que lo vincula a iniciativas de preservación lingüística y accesibilidad digital. Es un modelo de nicho, con cero descargas y cero likes en el momento de la ficha, y con acceso restringido que requiere aceptar condiciones en Hugging Face.
 
 La licencia cc-by-sa-4.0 permite uso comercial con atribución y obligación de compartir bajo la misma licencia, lo que lo hace apto para integraciones en productos, siempre que se respeten las condiciones de compartición derivada. Su arquitectura subyacente, heredada de kyutai/pocket-tts, no está detallada en la información proporcionada, por lo que los detalles técnicos internos se marcan como no disponibles.
 
@@ -64,7 +64,7 @@ No se dispone de información sobre modelos comparables de TTS en wolof en la do
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wolof-pocket-tts | 108,5 M | no disponible | cc-by-sa-4.0 | gated en HuggingFace |
+| wolof-pocket-tts | 108,5 M | no disponible | cc-by-sa-4.0 | gated en Hugging Face |
 | Alternativas TTS en wolof | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -73,13 +73,13 @@ No se dispone de información sobre modelos comparables de TTS en wolof en la do
 - **Riesgo de alucinación**: en TTS, el riesgo se traduce en pronunciaciones incorrectas, entonación anómala o artefactos de audio, especialmente en palabras fuera del vocabulario o en textos con code-switching.
 - **Limitaciones de contexto o idioma**: el modelo está especializado exclusivamente en wolof (código wo); no se garantiza un rendimiento adecuado en otros idiomas ni en mezclas de lenguas.
 - **Restricciones de licencia**: cc-by-sa-4.0 permite uso comercial, pero exige atribución y que las obras derivadas se compartan bajo la misma licencia. Es importante revisar las condiciones del modelo base kyutai/pocket-tts, que puede tener su propia licencia.
-- **Acceso restringido**: el modelo es gated; es necesario aceptar condiciones en HuggingFace antes de descargarlo, lo que puede limitar la automatización en pipelines de producción.
+- **Acceso restringido**: el modelo es gated; es necesario aceptar condiciones en Hugging Face antes de descargarlo, lo que puede limitar la automatización en pipelines de producción.
 - **Madurez**: con cero descargas y cero likes, no hay evidencia de uso en producción ni validación comunitaria; se recomienda evaluar la calidad del audio antes de integrarlo.
 - **Documentación escasa**: no se detallan la arquitectura, el proceso de entrenamiento ni los requisitos de hardware, lo que dificulta la reproducibilidad y el ajuste fino.
 
 ## Enlaces
 
-- [HuggingFace: abdazizsall/wolof-pocket-tts](https://huggingface.co/abdazizsall/wolof-pocket-tts)
+- [Hugging Face: abdazizsall/wolof-pocket-tts](https://huggingface.co/abdazizsall/wolof-pocket-tts)
 - [Modelo base: kyutai/pocket-tts](https://huggingface.co/kyutai/pocket-tts)
 - [Dataset: galsenai/wolof_tts](https://huggingface.co/datasets/galsenai/wolof_tts)
 - [Dataset: google/WaxalNLP](https://huggingface.co/datasets/google/WaxalNLP)

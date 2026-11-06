@@ -81,8 +81,8 @@ La model card únicamente documenta comprobaciones de carga y de salida sobre ob
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fm-dev/pi05-shuffle-uniform32-overfit3-step5000` | VLA derivada de π0.5 con LoRA y proyecciones cartesianas nuevas | no disponible | 32 frames de historial de cámara base, 512 tokens visuales | no disponible | Pública en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| `physical-intelligence/pi05_base` | VLA π0.5 completa | no disponible en la información recopilada | no disponible | no disponible | Modelo base público en HuggingFace |
+| `fm-dev/pi05-shuffle-uniform32-overfit3-step5000` | VLA derivada de π0.5 con LoRA y proyecciones cartesianas nuevas | no disponible | 32 frames de historial de cámara base, 512 tokens visuales | no disponible | Pública en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| `physical-intelligence/pi05_base` | VLA π0.5 completa | no disponible en la información recopilada | no disponible | no disponible | Modelo base público en Hugging Face |
 | Otras políticas VLA de manipulación (por ejemplo, familias tipo OpenVLA o RDT) | no disponible | no disponible | no disponible | no disponible | no disponible en la información recopilada |
 
 No se dispone de datos verificables en la información proporcionada para establecer comparaciones cuantitativas de parámetros, contexto o rendimiento con alternativas de la misma categoría.
@@ -104,7 +104,7 @@ No se dispone de datos verificables en la información proporcionada para establ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fm-dev/pi05-shuffle-uniform32-overfit3-step5000
+- Modelo en Hugging Face: https://huggingface.co/fm-dev/pi05-shuffle-uniform32-overfit3-step5000
 - Modelo base: https://huggingface.co/physical-intelligence/pi05_base
 - Descarga directa: `hf download fm-dev/pi05-shuffle-uniform32-overfit3-step5000 --local-dir ./shuffle-uniform32-step5000`
 - Revisión del código fuente asociada: `4449f2c621e88d9a1b54f25c950d007708399caa`

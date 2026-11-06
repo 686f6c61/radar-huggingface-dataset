@@ -65,6 +65,6 @@ No disponible. El repositorio no es un modelo, por lo que no tiene equivalentes 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shuko-tuto/npc-backends
+- Hugging Face: https://huggingface.co/shuko-tuto/npc-backends
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
 - CUDA Toolkit (redistribuibles de NVIDIA): https://developer.nvidia.com/cuda-toolkit

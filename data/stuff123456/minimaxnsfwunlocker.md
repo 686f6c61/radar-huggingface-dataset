@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stuff123456/minimaxnsfwunlocker` es un adaptador LoRA de difusion (texto a imagen) publicado en HuggingFace por el usuario `stuff123456`. No se trata de un modelo completo, sino de un ajuste de bajo rango que se aplica sobre el modelo base `neph1/minimax_h3_handheld_shaky_camera`, identificado en las etiquetas del repositorio como `base_model:adapter`. El nombre del repositorio sugiere un ajuste orientado a desbloquear contenido NSFW sobre dicho modelo base, aunque la model card no lo confirma ni lo detalla.
+`stuff123456/minimaxnsfwunlocker` es un adaptador LoRA de difusion (texto a imagen) publicado en Hugging Face por el usuario `stuff123456`. No se trata de un modelo completo, sino de un ajuste de bajo rango que se aplica sobre el modelo base `neph1/minimax_h3_handheld_shaky_camera`, identificado en las etiquetas del repositorio como `base_model:adapter`. El nombre del repositorio sugiere un ajuste orientado a desbloquear contenido NSFW sobre dicho modelo base, aunque la model card no lo confirma ni lo detalla.
 
 La documentacion disponible es practicamente inexistente: la model card se limita a un titulo, una galeria vacia y un enlace de descarga, con `instance_prompt: null` y sin descripcion del proceso de entrenamiento, del dataset, del rango del adaptador ni de los hiperparametros utilizados. El repositorio ocupa 0,3 GB y acumula 0 descargas y 0 me gusta en el momento de la consulta, por lo que no existe validacion por parte de la comunidad.
 
@@ -73,7 +73,7 @@ No disponible. No se dispone de informacion sobre otros adaptadores LoRA publica
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `stuff123456/minimaxnsfwunlocker` | no disponible (adaptador) | no disponible | sin benchmarks publicados | no disponible | publico en HuggingFace, 0 descargas |
+| `stuff123456/minimaxnsfwunlocker` | no disponible (adaptador) | no disponible | sin benchmarks publicados | no disponible | publico en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No disponible. No se dispone de informacion sobre otros adaptadores LoRA publica
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/stuff123456/minimaxnsfwunlocker
+- Repositorio en Hugging Face: https://huggingface.co/stuff123456/minimaxnsfwunlocker
 - Modelo base declarado: https://huggingface.co/neph1/minimax_h3_handheld_shaky_camera
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo; las entradas devueltas (foros y sitios de fuentes tipograficas) no guardan relacion con el artefacto, por lo que se omiten.
 - Paper, blog o demo oficiales: no disponibles.

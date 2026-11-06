@@ -69,7 +69,7 @@ No se dispone de informacion suficiente sobre modelos comparables de la misma ca
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Cloudflare_clef-GGUF | ~27B | no disponible | apache-2.0 | GGUF en HuggingFace |
+| Cloudflare_clef-GGUF | ~27B | no disponible | apache-2.0 | GGUF en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se dispone de informacion suficiente sobre modelos comparables de la misma ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bartowski/Cloudflare_clef-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bartowski/Cloudflare_clef-GGUF
 - Modelo base: https://huggingface.co/Cloudflare/clef
 - llama.cpp (release b11279): https://github.com/ggml-org/llama.cpp/releases/tag/b11279
 - Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp

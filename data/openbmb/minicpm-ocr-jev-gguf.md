@@ -75,10 +75,10 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 | Variante | Formato | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR-Jev (BF16) | safetensors | 1,88B | no disponible | Apache 2.0 | HuggingFace y ModelScope |
-| MiniCPM-OCR-Jev GGUF (este repo) | GGUF, 15 cuantizaciones | 1,88B | 40.960 tokens en el ejemplo oficial | Apache 2.0 | HuggingFace y ModelScope |
-| MiniCPM-OCR-Jev AWQ W4A16 | AWQ | 1,88B | no disponible | Apache 2.0 | HuggingFace y ModelScope |
-| MiniCPM-OCR-Jev GPTQ W4A16 | GPTQ | 1,88B | no disponible | Apache 2.0 | HuggingFace y ModelScope |
+| MiniCPM-OCR-Jev (BF16) | safetensors | 1,88B | no disponible | Apache 2.0 | Hugging Face y ModelScope |
+| MiniCPM-OCR-Jev GGUF (este repo) | GGUF, 15 cuantizaciones | 1,88B | 40.960 tokens en el ejemplo oficial | Apache 2.0 | Hugging Face y ModelScope |
+| MiniCPM-OCR-Jev AWQ W4A16 | AWQ | 1,88B | no disponible | Apache 2.0 | Hugging Face y ModelScope |
+| MiniCPM-OCR-Jev GPTQ W4A16 | GPTQ | 1,88B | no disponible | Apache 2.0 | Hugging Face y ModelScope |
 
 Comparacion con modelos de terceros: no disponible en la informacion proporcionada.
 
@@ -97,7 +97,7 @@ Comparacion con modelos de terceros: no disponible en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/openbmb/MiniCPM-OCR-Jev-gguf
+- Repositorio GGUF en Hugging Face: https://huggingface.co/openbmb/MiniCPM-OCR-Jev-gguf
 - Modelo base BF16: https://huggingface.co/openbmb/MiniCPM-OCR-Jev
 - Modelo base en ModelScope: https://modelscope.cn/models/OpenBMB/MiniCPM-OCR-Jev
 - Repositorio GGUF en ModelScope: https://modelscope.cn/models/OpenBMB/MiniCPM-OCR-Jev-gguf

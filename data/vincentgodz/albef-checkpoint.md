@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vincentgodz/albef-checkpoint` es un repositorio de HuggingFace que contiene una implementación funcional de ALBEF (Align Before Fuse) orientada a tareas de retrieval (recuperación de imagen-texto) en configuración base. Lo publica el usuario vincentgodz y su propósito declarado es servir como código transparente y pruebas de humo repetibles, no como un modelo entrenado con resultados de referencia. La model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para smoke tests y que no se presenta como un checkpoint entrenado ni evaluado.
+`vincentgodz/albef-checkpoint` es un repositorio de Hugging Face que contiene una implementación funcional de ALBEF (Align Before Fuse) orientada a tareas de retrieval (recuperación de imagen-texto) en configuración base. Lo publica el usuario vincentgodz y su propósito declarado es servir como código transparente y pruebas de humo repetibles, no como un modelo entrenado con resultados de referencia. La model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para smoke tests y que no se presenta como un checkpoint entrenado ni evaluado.
 
 ALBEF es una familia de arquitecturas de visión-lenguaje que combina un codificador de imagen, un codificador de texto y un mecanismo de fusión por co-atención, con alineación previa a la fusión mediante aprendizaje contrastivo. Esta implementación concreta declara atención de ventana deslizante, fusión por co-atención, activación gelu/tanh y normalización groupnorm. Los pesos incluidos ocupan un espacio mínimo en disco (0,0 GB) y el recuento de parámetros registrado en los safetensors es de 16.576, coherente con un artefacto de inicialización más que con un modelo completo entrenado.
 
@@ -84,7 +84,7 @@ La comparación se limita a variantes y linajes de ALBEF; no se dispone de datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vincentgodz/albef-checkpoint
+- Modelo en Hugging Face: https://huggingface.co/vincentgodz/albef-checkpoint
 - Variante relacionada: https://huggingface.co/Purnomorafi/albef-checkpoint
 - Implementación oficial de ALBEF (yefengtian/ALBEF): https://github.com/yefengtian/ALBEF
 - Ejemplo ALBEF en facebookresearch/multimodal: https://github.com/facebookresearch/multimodal/blob/main/examples/albef/model.py

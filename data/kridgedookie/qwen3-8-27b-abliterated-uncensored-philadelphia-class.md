@@ -90,6 +90,6 @@ No se dispone de informacion suficiente para comparar con otros modelos ablitera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KridgeDookie/Qwen3.8-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS
+- Modelo en Hugging Face: https://huggingface.co/KridgeDookie/Qwen3.8-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

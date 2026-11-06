@@ -79,5 +79,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace - beau-warren/blueteam-cyber-base-v0.3.0](https://huggingface.co/beau-warren/blueteam-cyber-base-v0.3.0)
-- [Perfil del autor en HuggingFace](https://huggingface.co/beau-warren)
+- [Hugging Face - beau-warren/blueteam-cyber-base-v0.3.0](https://huggingface.co/beau-warren/blueteam-cyber-base-v0.3.0)
+- [Perfil del autor en Hugging Face](https://huggingface.co/beau-warren)

@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nidl-neurospin/open-simclr-resnet50
+- Modelo en Hugging Face: https://huggingface.co/nidl-neurospin/open-simclr-resnet50
 - Dataset OpenMind: https://huggingface.co/datasets/neurospin/openmind
 - Receta de preentrenamiento: https://neurospin-deepinsight.github.io/nidl/auto_examples/plot_open_models_pretraining.html
 - Documentacion de nidl: https://neurospin-deepinsight.github.io/nidl

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `0x33B/patch-shuffle-structural-consensus-4b-step-60` es un checkpoint de pesos publicado en HuggingFace por el usuario 0x33B. Se trata de un artefacto de entrenamiento, tal y como sugiere el sufijo `step-60`, que apunta a un punto de control intermedio (paso 60) de una ejecucion de entrenamiento. El repositorio contiene unicamente pesos en formato safetensors, ocupa 10,4 GB y acumula 8 descargas y 0 likes en el momento de redactar esta ficha, lo que indica que es un experimento de baja difusion y sin validacion comunitaria.
+El modelo `0x33B/patch-shuffle-structural-consensus-4b-step-60` es un checkpoint de pesos publicado en Hugging Face por el usuario 0x33B. Se trata de un artefacto de entrenamiento, tal y como sugiere el sufijo `step-60`, que apunta a un punto de control intermedio (paso 60) de una ejecucion de entrenamiento. El repositorio contiene unicamente pesos en formato safetensors, ocupa 10,4 GB y acumula 8 descargas y 0 likes en el momento de redactar esta ficha, lo que indica que es un experimento de baja difusion y sin validacion comunitaria.
 
-El numero real de parametros reportado por los tensores safetensors es de 5.174.964.736 (aproximadamente 5,17 mil millones), cifra superior a los "4b" que aparecen en el nombre del repositorio. La etiqueta de arquitectura de HuggingFace es `qwen3_5`, lo que sugiere que el modelo se construye sobre una clase de transformers derivada de la familia Qwen3.5, aunque el autor no ha publicado ninguna ficha tecnica que lo confirme.
+El numero real de parametros reportado por los tensores safetensors es de 5.174.964.736 (aproximadamente 5,17 mil millones), cifra superior a los "4b" que aparecen en el nombre del repositorio. La etiqueta de arquitectura de Hugging Face es `qwen3_5`, lo que sugiere que el modelo se construye sobre una clase de transformers derivada de la familia Qwen3.5, aunque el autor no ha publicado ninguna ficha tecnica que lo confirme.
 
 La relevancia de este modelo es limitada y de caracter experimental: no declara licencia, idiomas soportados, pipeline de inferencia ni resultados de evaluacion. Cualquier uso en produccion deberia ir precedido de una validacion propia, ya que no hay documentacion sobre el dataset, el regimen de entrenamiento ni las capacidades reales del checkpoint.
 
@@ -12,7 +12,7 @@ La relevancia de este modelo es limitada y de caracter experimental: no declara 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta de HuggingFace `qwen3_5` sugiere una variante de Qwen3.5, sin confirmar por el autor) |
+| Arquitectura | no disponible (la etiqueta de Hugging Face `qwen3_5` sugiere una variante de Qwen3.5, sin confirmar por el autor) |
 | Parametros totales | 5.174.964.736 (~5,17 mil millones, segun tensores safetensors) |
 | Parametros activos | no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| 0x33B/patch-shuffle-structural-consensus-4b-step-60 | ~5,17 mil millones | no disponible | no disponible | safetensors en HuggingFace, 8 descargas |
+| 0x33B/patch-shuffle-structural-consensus-4b-step-60 | ~5,17 mil millones | no disponible | no disponible | safetensors en Hugging Face, 8 descargas |
 | Qwen3-4B | ~4,0 mil millones | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 | safetensors, GGUF y cuantizaciones oficiales |
 | Llama 3.2 3B Instruct | ~3,2 mil millones | 128.000 tokens | Llama 3.2 Community License | safetensors y GGUF oficiales |
 | Phi-4-mini-instruct | ~3,8 mil millones | 128.000 tokens | MIT | safetensors, GGUF y ONNX |
@@ -95,7 +95,7 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad: no e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0x33B/patch-shuffle-structural-consensus-4b-step-60
+- Hugging Face: https://huggingface.co/0x33B/patch-shuffle-structural-consensus-4b-step-60
 - When Semantics Regulate: Rethinking Patch Shuffle and Internal Bias for AI-generated image detection (paper relacionado tematicamente con patch shuffle, no vinculado explicitamente a este modelo): https://arxiv.org/pdf/2511.19126v1
 - Version HTML del mismo paper: https://arxiv.org/html/2511.19126
 - Resumen del paper en aimodels.fyi: https://www.aimodels.fyi/papers/arxiv/when-semantics-regulate-rethinking-patch-shuffle-internal

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `marcgabrielschneider/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) para jugar al entorno de Atari SpaceInvaders (variante `SpaceInvadersNoFrameskip-v4` de Gym/Gymnasium). Lo publica el usuario marcgabrielschneider en HuggingFace utilizando la librería Stable Baselines3 junto con el RL Zoo, el framework de entrenamiento y ajuste de hiperparámetros mantenido por el equipo de DLR-RM.
+El modelo `marcgabrielschneider/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) para jugar al entorno de Atari SpaceInvaders (variante `SpaceInvadersNoFrameskip-v4` de Gym/Gymnasium). Lo publica el usuario marcgabrielschneider en Hugging Face utilizando la librería Stable Baselines3 junto con el RL Zoo, el framework de entrenamiento y ajuste de hiperparámetros mantenido por el equipo de DLR-RM.
 
 No se trata de un modelo de lenguaje ni de un modelo generativo multimodal: es una política de control que recibe como entrada una pila de 4 fotogramas del juego y produce una de las acciones discretas del entorno. La política empleada es `CnnPolicy`, es decir, una red convolucional que mapea observaciones visuales a valores Q por acción, siguiendo el esquema clásico de DQN con red objetivo y replay buffer.
 
@@ -71,10 +71,10 @@ No se han publicado en la información disponible otros resultados de benchmarks
 
 | Modelo | Algoritmo / libreria | Entorno | Metrica publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| marcgabrielschneider/dqn-SpaceInvadersNoFrameskip-v4 | DQN / Stable Baselines3 + RL Zoo | SpaceInvadersNoFrameskip-v4 | mean_reward 819,50 +/- 224,44 | no disponible | HuggingFace (0 descargas) |
-| hruslen/SpaceInvadersNoFrameskip-v4 | DQN / Stable Baselines3 + RL Zoo | SpaceInvadersNoFrameskip-v4 | no disponible en la informacion recogida | no disponible | HuggingFace |
-| mgicraft1937/dqn-SpaceInvadersNoFrameskip-v4 | DQN / Stable Baselines3 + RL Zoo | SpaceInvadersNoFrameskip-v4 | no disponible en la informacion recogida | no disponible | HuggingFace |
-| hpoddar/dqn-SpaceInvadersNoFrameskip-v4 | DQN / Stable Baselines3 + RL Zoo | SpaceInvadersNoFrameskip-v4 | no disponible en la informacion recogida | no disponible | HuggingFace (espejo) |
+| marcgabrielschneider/dqn-SpaceInvadersNoFrameskip-v4 | DQN / Stable Baselines3 + RL Zoo | SpaceInvadersNoFrameskip-v4 | mean_reward 819,50 +/- 224,44 | no disponible | Hugging Face (0 descargas) |
+| hruslen/SpaceInvadersNoFrameskip-v4 | DQN / Stable Baselines3 + RL Zoo | SpaceInvadersNoFrameskip-v4 | no disponible en la informacion recogida | no disponible | Hugging Face |
+| mgicraft1937/dqn-SpaceInvadersNoFrameskip-v4 | DQN / Stable Baselines3 + RL Zoo | SpaceInvadersNoFrameskip-v4 | no disponible en la informacion recogida | no disponible | Hugging Face |
+| hpoddar/dqn-SpaceInvadersNoFrameskip-v4 | DQN / Stable Baselines3 + RL Zoo | SpaceInvadersNoFrameskip-v4 | no disponible en la informacion recogida | no disponible | Hugging Face (espejo) |
 
 Los tres modelos comparables encontrados son clones del mismo flujo de trabajo del RL Zoo sobre el mismo entorno, con model cards prácticamente idénticas, por lo que la comparación relevante es de métricas y no de arquitectura. No se dispone de los valores de `mean_reward` de las alternativas, así que no es posible establecer una clasificación objetiva entre ellas.
 
@@ -92,7 +92,7 @@ Los tres modelos comparables encontrados son clones del mismo flujo de trabajo d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marcgabrielschneider/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/marcgabrielschneider/dqn-SpaceInvadersNoFrameskip-v4
 - Stable Baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo (rl-baselines3-zoo): https://github.com/DLR-RM/rl-baselines3-zoo
 - Stable Baselines3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

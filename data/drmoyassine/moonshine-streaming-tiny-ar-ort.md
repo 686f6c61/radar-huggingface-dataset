@@ -67,8 +67,8 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Drmoyassine/moonshine-streaming-tiny-ar-ort
-- Modelo original en HuggingFace: https://huggingface.co/moonshine-ai/moonshine-streaming-tiny-ar
+- Repositorio Hugging Face: https://huggingface.co/Drmoyassine/moonshine-streaming-tiny-ar-ort
+- Modelo original en Hugging Face: https://huggingface.co/moonshine-ai/moonshine-streaming-tiny-ar
 - Repositorio GitHub de Moonshine: https://github.com/moonshine-ai/moonshine
 - Documentación de modelos disponibles: https://moonshine-voice.readthedocs.io/en/stable/models/available-models/
 - Documentación de streaming models: https://deepwiki.com/moonshine-ai/moonshine/8.1-streaming-models

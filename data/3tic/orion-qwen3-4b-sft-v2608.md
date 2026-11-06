@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Orion-Qwen3-4B-SFT-v2608 es un modelo de lenguaje basado en Qwen3-4B, publicado por el usuario 3tic en HuggingFace bajo licencia Apache-2.0. Se trata de un ajuste fino supervisado (SFT) del modelo base Qwen3-4B, aunque la model card publicada no proporciona detalles sobre el proceso de entrenamiento, los datos utilizados ni las mejoras específicas introducidas respecto al modelo original.
+Orion-Qwen3-4B-SFT-v2608 es un modelo de lenguaje basado en Qwen3-4B, publicado por el usuario 3tic en Hugging Face bajo licencia Apache-2.0. Se trata de un ajuste fino supervisado (SFT) del modelo base Qwen3-4B, aunque la model card publicada no proporciona detalles sobre el proceso de entrenamiento, los datos utilizados ni las mejoras específicas introducidas respecto al modelo original.
 
 La relevancia de este modelo radica en su base: Qwen3-4B es un modelo denso de 4 mil millones de parámetros desarrollado por Alibaba, conocido por su buen rendimiento en tareas de comprensión del lenguaje, generación de texto, codificación y matemáticas, con soporte multilingüe. Sin embargo, la versión v2608 de 3tic no incluye documentación técnica adicional, lo que limita su evaluación objetiva. No se dispone de información sobre descargas, popularidad o casos de uso documentados.
 

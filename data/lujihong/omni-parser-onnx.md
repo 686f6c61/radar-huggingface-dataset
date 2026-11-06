@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Arquitectura | Resolución de entrada | Clases | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| omni-parser-onnx (este) | YOLO11m | 1280×1280 | 1 (`icon`) | MIT | HuggingFace, ONNX |
-| OmniParser v2 (componente de detección) | YOLOv8n | 640×640 | 1 (`icon`) | MIT | HuggingFace (microsoft/OmniParser-v2.0) |
+| omni-parser-onnx (este) | YOLO11m | 1280×1280 | 1 (`icon`) | MIT | Hugging Face, ONNX |
+| OmniParser v2 (componente de detección) | YOLOv8n | 640×640 | 1 (`icon`) | MIT | Hugging Face (microsoft/OmniParser-v2.0) |
 | Otros detectores genéricos (p. ej. YOLO11 estándar) | YOLO11 | variable | 80 (COCO) | AGPL/GPL según variante | Amplia |
 
 La comparación cuantitativa de precisión y latencia entre este peso y el detector de OmniParser v2 no está disponible en la información proporcionada; la única diferencia documentada es la arquitectura y la resolución de entrada.
@@ -84,7 +84,7 @@ La comparación cuantitativa de precisión y latencia entre este peso y el detec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lujihong/omni-parser-onnx
+- Repositorio en Hugging Face: https://huggingface.co/lujihong/omni-parser-onnx
 - Upstream internacional: https://huggingface.co/haiping/omni-parser-onnx
 - Espejo nacional: https://hf-mirror.com/haiping/omni-parser-onnx
 - Proyecto OmniParser v2 de Microsoft: https://huggingface.co/microsoft/OmniParser-v2.0

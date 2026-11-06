@@ -51,7 +51,7 @@ Respecto al entrenamiento, la model card indica unicamente que Mixtral-8x22B-Ins
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye la etiqueta `eval-results` en HuggingFace, pero no se aportan cifras concretas de MMLU, HumanEval, GSM8K ni de otras pruebas en el material proporcionado, por lo que no se presentan datos numericos.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye la etiqueta `eval-results` en Hugging Face, pero no se aportan cifras concretas de MMLU, HumanEval, GSM8K ni de otras pruebas en el material proporcionado, por lo que no se presentan datos numericos.
 
 ## Requisitos de hardware
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1
+- Modelo en Hugging Face: https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1
 - Modelo base: https://huggingface.co/mistralai/Mixtral-8x22B-v0.1
 - Guia de function calling de `transformers`: https://huggingface.co/docs/transformers/main/chat_templating#advanced-tool-use--function-calling
 - Politica de privacidad de Mistral AI: https://mistral.ai/terms/

@@ -59,7 +59,7 @@ No disponible. No se han encontrado modelos comparables documentados en la infor
 ## Limitaciones y advertencias
 
 - Dependencia de un runtime especial: el modelo no funciona con builds estándar de llama.cpp; se requiere una versión parcheada que implemente la arquitectura NedoLM, lo que complica el despliegue en infraestructuras existentes.
-- Licencia no declarada: al no especificarse la licencia en HuggingFace ni en la model card, no se puede confirmar la idoneidad para uso comercial ni las condiciones de redistribución.
+- Licencia no declarada: al no especificarse la licencia en Hugging Face ni en la model card, no se puede confirmar la idoneidad para uso comercial ni las condiciones de redistribución.
 - Sin benchmarks: no hay datos públicos que respalden su rendimiento en tareas de lenguaje, por lo que su calidad es desconocida.
 - Ventana de contexto limitada: la longitud de contexto es de 4096 tokens, con una sliding window de 2048. Esto restringe el manejo de documentos extensos o conversaciones largas.
 - Sin información sobre sesgos o alucinaciones: no se han publicado evaluaciones de sesgos, seguridad ni tasas de alucinación.
@@ -67,5 +67,5 @@ No disponible. No se han encontrado modelos comparables documentados en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ethosoft/NedoLM-0.8B-SFT-6478-GGUF
+- Hugging Face: https://huggingface.co/Ethosoft/NedoLM-0.8B-SFT-6478-GGUF
 - No se han encontrado otros enlaces relevantes en la búsqueda web (papers, blogs, repositorios adicionales).

@@ -67,8 +67,8 @@ No aplica una comparativa de modelos porque el artefacto no es un modelo. Se com
 
 | Repositorio | Contenido | Licencia | Modelo objetivo | Disponibilidad |
 |---|---|---|---|---|
-| Josephthegg/sillytavern | Presets Voyage v1-v6, Eval v1.0 | MIT | Gemma 4, Mistral Small 3.2, DeepSeek, GLM, entre otros | HuggingFace, 0 descargas, 0 likes |
-| nohurry/sillytavern | Presets referenciados por el autor (Voyage) | no disponible | Gemma 4 principalmente | HuggingFace |
+| Josephthegg/sillytavern | Presets Voyage v1-v6, Eval v1.0 | MIT | Gemma 4, Mistral Small 3.2, DeepSeek, GLM, entre otros | Hugging Face, 0 descargas, 0 likes |
+| nohurry/sillytavern | Presets referenciados por el autor (Voyage) | no disponible | Gemma 4 principalmente | Hugging Face |
 | Presets de la comunidad SillyTavern | Configuraciones diversas | variable | variable | foros y Reddit |
 
 No se dispone de datos de rendimiento comparativo entre presets.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre presets.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Josephthegg/sillytavern
+- Hugging Face: https://huggingface.co/Josephthegg/sillytavern
 - Anuncio Voyage v6: https://www.reddit.com/r/SillyTavernAI/comments/1xgcxcc/universal_preset_voyage_v6
 - Anuncio Voyage v5.1: https://www.reddit.com/r/SillyTavernAI/comments/1x5h8xt/universal_preset_voyage_v51
 - Anuncio Voyage v5.0: https://www.reddit.com/r/SillyTavernAI/comments/1x2m4oj/universal_preset_voyage_v5

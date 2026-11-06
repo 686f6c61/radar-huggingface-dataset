@@ -62,7 +62,7 @@ Estos valores indican una correlacion practicamente nula con las puntuaciones de
 - VRAM estimada para inferencia: no disponible, pero al tratarse de un adaptador sobre un modelo de 12B, se requiere la VRAM del modelo base mas el adaptador. Para el modelo base `gemma-4-12B-it`, se estima un minimo de 24 GB en precision completa, reducible con cuantizacion.
 - GPU recomendadas: no se especifican en la informacion disponible. Para el modelo base, GPUs como A100 (40/80 GB), H100 o RTX 4090 (24 GB) serian adecuadas dependiendo de la cuantizacion.
 - En consumer GPU: el modelo base de 12B puede caber en una RTX 4090 con cuantizacion de 4 bits, pero el adaptador no modifica sustancialmente los requisitos.
-- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con la libreria `peft` de HuggingFace junto con el modelo base. No se mencionan opciones como vLLM, llama.cpp u Ollama en la informacion disponible.
+- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con la libreria `peft` de Hugging Face junto con el modelo base. No se mencionan opciones como vLLM, llama.cpp u Ollama en la informacion disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -80,8 +80,8 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/shreshthsaini/brightrate-study-gemma4-12b-native-pq
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-12B
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/shreshthsaini/brightrate-study-gemma4-12b-native-pq
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-12B
 - Repositorio BrightVQ (dataset): https://github.com/shreshthsaini/BrightVQ
 - Repositorio BrightRate-LM (codigo y modelos): https://github.com/shreshthsaini/BrightRate-LM
 - Codigo de inferencia especifico: https://github.com/shreshthsaini/BrightRate-LM/blob/main/src/infer_gemma4.py

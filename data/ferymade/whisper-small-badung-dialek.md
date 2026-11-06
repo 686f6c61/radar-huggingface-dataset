@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ferymade/whisper-small-badung-dialek` es un ajuste fino del modelo Whisper small de OpenAI, publicado en HuggingFace por el usuario ferymade. El nombre del repositorio indica que el ajuste se ha orientado al reconocimiento automatico del habla (ASR) del dialecto de Badung; el sufijo `dialek` significa "dialecto" en indonesio y Badung es una regencia de la isla de Bali, por lo que todo apunta a una variante local del indonesio o del balines, aunque la ficha no declara idiomas soportados.
+`ferymade/whisper-small-badung-dialek` es un ajuste fino del modelo Whisper small de OpenAI, publicado en Hugging Face por el usuario ferymade. El nombre del repositorio indica que el ajuste se ha orientado al reconocimiento automatico del habla (ASR) del dialecto de Badung; el sufijo `dialek` significa "dialecto" en indonesio y Badung es una regencia de la isla de Bali, por lo que todo apunta a una variante local del indonesio o del balines, aunque la ficha no declara idiomas soportados.
 
 El dato objetivo disponible es el recuento de parametros en safetensors: 241.734.912, cifra coherente con la familia Whisper small (en torno a 244 M). El repositorio ocupa 5,8 GB, un tamano muy superior al de los pesos en precision completa (unos 0,97 GB en fp32), lo que sugiere la presencia de multiples ficheros, estados del entrenador o copias redundantes. No se declaran pipeline, licencia ni idiomas, y el modelo apenas tiene traccion (13 descargas, 0 likes) desde su creacion el 17 de octubre de 2026.
 
@@ -58,17 +58,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. No co
 - Cuantizacion: los pesos en int8 ocuparian en torno a 242 MB, si bien el repositorio no publica versiones cuantizadas y habria que generarlas.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 3060, RTX 4060 o RTX 4090 cubren el modelo con holgura. En datacenter, una A100 o H100 estan sobredimensionadas para una sola instancia, aunque permiten servir muchos lotes concurrentes.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU dedicada con 2 GB o mas de VRAM, y tambien en CPU mediante implementaciones optimizadas.
-- Opciones de despliegue: HuggingFace Transformers (`pipeline` de ASR), faster-whisper (CTranslate2), whisper.cpp y servidores compatibles con Whisper como vLLM. TGI no soporta arquitecturas encoder-decoder de audio de forma estandar.
+- Opciones de despliegue: Hugging Face Transformers (`pipeline` de ASR), faster-whisper (CTranslate2), whisper.cpp y servidores compatibles con Whisper como vLLM. TGI no soporta arquitecturas encoder-decoder de audio de forma estandar.
 - Latencia y throughput: no disponibles; no se han publicado mediciones. Dependeran del backend, del lote y de la longitud del audio, no solo del tamano del modelo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Ventana de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ferymade/whisper-small-badung-dialek | 241,7 M | No declarada (arquitectura Whisper: 30 s) | No disponible | No disponible | HuggingFace, safetensors |
-| openai/whisper-small | ~244 M | 30 s | Multilingue (99 idiomas) | MIT (modelo original) | HuggingFace y multiples backends |
-| openai/whisper-medium | ~769 M | 30 s | Multilingue (99 idiomas) | MIT (modelo original) | HuggingFace y multiples backends |
-| openai/whisper-tiny | ~39 M | 30 s | Multilingue (99 idiomas) | MIT (modelo original) | HuggingFace y multiples backends |
+| ferymade/whisper-small-badung-dialek | 241,7 M | No declarada (arquitectura Whisper: 30 s) | No disponible | No disponible | Hugging Face, safetensors |
+| openai/whisper-small | ~244 M | 30 s | Multilingue (99 idiomas) | MIT (modelo original) | Hugging Face y multiples backends |
+| openai/whisper-medium | ~769 M | 30 s | Multilingue (99 idiomas) | MIT (modelo original) | Hugging Face y multiples backends |
+| openai/whisper-tiny | ~39 M | 30 s | Multilingue (99 idiomas) | MIT (modelo original) | Hugging Face y multiples backends |
 
 La comparacion relevante es frente a `openai/whisper-small`: mismo orden de magnitud en parametros y, previsiblemente, mejor cobertura del dialecto objetivo a costa de un rendimiento probablemente peor en el resto de idiomas. Frente a `whisper-medium` o `whisper-tiny` se plantea el compromiso habitual entre precision, coste de inferencia y cobertura linguistica. No se dispone de datos de WER que permitan cuantificar ninguna de estas diferencias.
 
@@ -86,5 +86,5 @@ La comparacion relevante es frente a `openai/whisper-small`: mismo orden de magn
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ferymade/whisper-small-badung-dialek
+- Hugging Face: https://huggingface.co/ferymade/whisper-small-badung-dialek
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su paper, a un repositorio de codigo ni a demos: los resultados devueltos no guardan relacion con el modelo.

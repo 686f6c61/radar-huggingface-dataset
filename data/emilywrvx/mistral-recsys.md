@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `emilywrvx/mistral-recsys` alojado en HuggingFace no contiene un modelo de inteligencia artificial, sino un documento de notas académicas titulado `paper_notes.md`. Según la model card, el contenido corresponde a un resumen detallado de un paper sobre robótica y lenguaje visual (robotics vision-language), con una estructura típica de artículo científico (abstract, introducción, método, experimentos, discusión) y un formato de escritura descriptivo y detallado. El autor es `emilywrvx`, y el repositorio se creó en agosto de 2026 con licencia BSD-3-Clause.
+El repositorio `emilywrvx/mistral-recsys` alojado en Hugging Face no contiene un modelo de inteligencia artificial, sino un documento de notas académicas titulado `paper_notes.md`. Según la model card, el contenido corresponde a un resumen detallado de un paper sobre robótica y lenguaje visual (robotics vision-language), con una estructura típica de artículo científico (abstract, introducción, método, experimentos, discusión) y un formato de escritura descriptivo y detallado. El autor es `emilywrvx`, y el repositorio se creó en agosto de 2026 con licencia BSD-3-Clause.
 
 A pesar del nombre "mistral-recsys", no se proporciona ninguna información sobre arquitectura, parámetros, contexto o capacidades de un modelo. No hay archivos de pesos, configuraciones ni código de inferencia. Por tanto, este repositorio no puede utilizarse como un modelo desplegable ni como referencia técnica para desarrolladores. Su único contenido es un documento de notas que resume un paper académico.
 
@@ -46,5 +46,5 @@ No disponible. No existe un modelo comparable porque no hay modelo.
 - El nombre "mistral-recsys" puede inducir a error: no está relacionado con los modelos de Mistral AI ni con sistemas de recomendación.
 
 ## Enlaces
-- Repositorio de HuggingFace: https://huggingface.co/emilywrvx/mistral-recsys
+- Repositorio de Hugging Face: https://huggingface.co/emilywrvx/mistral-recsys
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos).

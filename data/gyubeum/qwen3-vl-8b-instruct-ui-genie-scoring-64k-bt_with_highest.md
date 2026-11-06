@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-VL-8B-Instruct-UI-Genie-scoring-64k-bt_with_highest es un modelo de recompensa escalar (reward model) multimodal desarrollado por el usuario Gyubeum, derivado de la familia Qwen3-VL y publicado en HuggingFace. No es un modelo generativo: su salida es una puntuación numérica que estima la calidad de una respuesta o trayectoria, calculada aplicando `score.weight` al estado oculto del último token no de relleno. Está pensado para evaluar y ordenar trayectorias de agentes que operan sobre interfaces gráficas (GUI), en particular en Android.
+Qwen3-VL-8B-Instruct-UI-Genie-scoring-64k-bt_with_highest es un modelo de recompensa escalar (reward model) multimodal desarrollado por el usuario Gyubeum, derivado de la familia Qwen3-VL y publicado en Hugging Face. No es un modelo generativo: su salida es una puntuación numérica que estima la calidad de una respuesta o trayectoria, calculada aplicando `score.weight` al estado oculto del último token no de relleno. Está pensado para evaluar y ordenar trayectorias de agentes que operan sobre interfaces gráficas (GUI), en particular en Android.
 
 El checkpoint es el resultado de fusionar el adaptador del modelo de lenguaje entrenado con la cabeza de recompensa escalar, de modo que no requiere ni adaptadores separados ni una ruta local al modelo base. Es la versión fusionada de AndroidFlux LPV v2 (`bt_with_highest`, época 1, paso 37), cuyo modelo padre es el reward model Bradley-Terry UI-Genie de 64k. El entrenamiento utiliza preferencias generadas mediante Latent Peer Voting (LPV) sobre candidatos producidos por Qwen3-VL-8B, GUI-Owl-7B, GUI-Owl-1.5-8B y MAI-UI-8B.
 
@@ -112,5 +112,5 @@ No se conocen en la información proporcionada otros reward models para agentes 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-scoring-64k-bt_with_highest
+- Modelo en Hugging Face: https://huggingface.co/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-scoring-64k-bt_with_highest
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados devueltos correspondían a páginas genéricas del motor de búsqueda sin contenido relevante.

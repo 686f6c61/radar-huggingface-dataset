@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ForretressES es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/ForretressES`. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico: el unico texto disponible es la cabecera de metadatos con la licencia `cc-by-4.0`. No se declaran arquitectura, numero de parametros, longitud de contexto, idiomas ni formato de pesos.
+ForretressES es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/ForretressES`. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico: el unico texto disponible es la cabecera de metadatos con la licencia `cc-by-4.0`. No se declaran arquitectura, numero de parametros, longitud de contexto, idiomas ni formato de pesos.
 
 Los unicos datos verificables son los metadatos de la plataforma: licencia CC BY 4.0, region `us`, un tamano de repositorio de 0,1 GB, cero descargas, cero "likes" y fechas de creacion y actualizacion del 9 de octubre de 2026. No hay informacion sobre el pipeline declarado ni sobre el proceso de entrenamiento.
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha no puede certificar ninguna capacidad concreta del modelo.
 | Licencia | cc-by-4.0 (Creative Commons Attribution 4.0) |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 0,1 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Region declarada | us |
 | Fecha de creacion | 2026-10-09 |
 | Ultima actualizacion | 2026-10-09 |
@@ -87,5 +87,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/ForretressES
+- Hugging Face: https://huggingface.co/Ryanham1lton/ForretressES
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

@@ -95,7 +95,7 @@ No se dispone de datos comparativos con otros draft models externos (p. ej., EAG
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/Anbeeld/Qwen3.5-27B-DFlash-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/Anbeeld/Qwen3.5-27B-DFlash-GGUF
 - Modelo base z-lab: https://huggingface.co/z-lab/Qwen3.5-27B-DFlash
 - Modelo espejo modal-labs: https://huggingface.co/modal-labs/Qwen3.5-27B-DFlash
 - Modelo objetivo Qwen3.5-27B: https://huggingface.co/Qwen/Qwen3.5-27B

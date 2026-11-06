@@ -106,7 +106,7 @@ Las puertas de calidad internas que el autor indica haber superado son un conjun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jessedye90/Swift-1.5-Qwen3.8-27B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/jessedye90/Swift-1.5-Qwen3.8-27B-NVFP4
 - Modelo base upstream: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Origen del mapa de precisión: https://huggingface.co/RadixArk/Qwen3.8-27B-NVFP4

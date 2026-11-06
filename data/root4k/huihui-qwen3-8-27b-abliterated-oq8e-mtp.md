@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `root4k/Huihui-Qwen3.8-27B-abliterated-oQ8e-mtp` es una cuantizacion mixta de precision (oQ) aplicada a un modelo de tipo `qwen3_5`, publicado por el usuario root4k en HuggingFace. El nombre sugiere que se trata de una version "abliterated" (con los rechazos de contenido eliminados) de un modelo de la familia Qwen3, aunque los datos disponibles presentan una discrepancia significativa: el nombre indica 27B, pero el archivo safetensors registra 8.184.279.792 parametros totales. Esta diferencia no esta explicada en la informacion proporcionada.
+El modelo `root4k/Huihui-Qwen3.8-27B-abliterated-oQ8e-mtp` es una cuantizacion mixta de precision (oQ) aplicada a un modelo de tipo `qwen3_5`, publicado por el usuario root4k en Hugging Face. El nombre sugiere que se trata de una version "abliterated" (con los rechazos de contenido eliminados) de un modelo de la familia Qwen3, aunque los datos disponibles presentan una discrepancia significativa: el nombre indica 27B, pero el archivo safetensors registra 8.184.279.792 parametros totales. Esta diferencia no esta explicada en la informacion proporcionada.
 
 El modelo esta cuantizado a 8 bits con un grupo de 64, en formato MLX safetensors, lo que indica que esta optimizado para ejecucion en hardware Apple (MLX). Fue creado el 16 de agosto de 2026 y no cuenta con descargas ni likes, lo que sugiere que es una publicacion reciente o de baja difusion. No se dispone de licencia, idiomas soportados, pipeline ni documentacion adicional mas alla de la breve nota de cuantizacion.
 
@@ -65,5 +65,5 @@ No se dispone de informacion sobre modelos comparables en la misma categoria. La
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/root4k/Huihui-Qwen3.8-27B-abliterated-oQ8e-mtp
+- Hugging Face: https://huggingface.co/root4k/Huihui-Qwen3.8-27B-abliterated-oQ8e-mtp
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx (referenciado en la model card)

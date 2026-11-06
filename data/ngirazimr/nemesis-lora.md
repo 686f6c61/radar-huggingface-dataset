@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Nemesis-lora es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario ngirazimr en HuggingFace bajo el identificador `ngirazimr/nemesis-lora`. No se trata de un modelo completo, sino de un conjunto de pesos incrementales que deben cargarse sobre su modelo base: `unsloth/Llama-3.1-8B-Instruct-bnb-4bit`, es decir, una version cuantizada a 4 bits (bitsandbytes) del Llama 3.1 8B Instruct de Meta, preparada por Unsloth para entrenamiento eficiente.
+Nemesis-lora es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario ngirazimr en Hugging Face bajo el identificador `ngirazimr/nemesis-lora`. No se trata de un modelo completo, sino de un conjunto de pesos incrementales que deben cargarse sobre su modelo base: `unsloth/Llama-3.1-8B-Instruct-bnb-4bit`, es decir, una version cuantizada a 4 bits (bitsandbytes) del Llama 3.1 8B Instruct de Meta, preparada por Unsloth para entrenamiento eficiente.
 
-El adaptador se ha entrenado mediante SFT (supervised fine-tuning) con las librerias TRL y PEFT (version 0.20.0 registrada en la model card), bajo el formato estandar de adaptadores de HuggingFace. El repositorio ocupa aproximadamente 0,2 GB, un tamano coherente con un adaptador LoRA para un modelo de 8.000 millones de parametros, aunque no se especifica el rango (rank), el alpha ni los modulos objetivo del adaptador.
+El adaptador se ha entrenado mediante SFT (supervised fine-tuning) con las librerias TRL y PEFT (version 0.20.0 registrada en la model card), bajo el formato estandar de adaptadores de Hugging Face. El repositorio ocupa aproximadamente 0,2 GB, un tamano coherente con un adaptador LoRA para un modelo de 8.000 millones de parametros, aunque no se especifica el rango (rank), el alpha ni los modulos objetivo del adaptador.
 
 La relevancia del artefacto es limitada a dia de hoy: acumula 0 descargas y 0 likes, la model card es la plantilla por defecto sin rellenar (todos los campos figuran como "[More Information Needed]"), no se declara licencia ni idiomas, y no se documenta el dataset de entrenamiento ni el proposito concreto del ajuste. Cualquier evaluacion seria del modelo requiere inspeccionar directamente los pesos y el historial de entrenamiento, que no se han hecho publicos.
 
@@ -91,7 +91,7 @@ No es posible comparar rendimiento en tareas porque no hay resultados de benchma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ngirazimr/nemesis-lora
+- Modelo en Hugging Face: https://huggingface.co/ngirazimr/nemesis-lora
 - Modelo base del adaptador: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct-bnb-4bit
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Unsloth: https://github.com/unslothai/unsloth

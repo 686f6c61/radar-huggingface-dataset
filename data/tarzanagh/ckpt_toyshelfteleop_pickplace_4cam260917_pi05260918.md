@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ckpt_toyshelfteleop_pickplace_4cam260917_pi05260918` es un checkpoint de política robótica entrenada por imitación, publicado por el usuario `tarzanagh` en HuggingFace. No es un modelo de lenguaje: es una política visomotora (VLA/policy) que controla un robot bimanual DexMate Vega-1 equipado con dos manos diestras RobotEra XHand1. La tarea concreta es coger un juguete del segundo nivel de una estantería y dejarlo en el primero, con el brazo derecho activo y el izquierdo prácticamente estático.
+`ckpt_toyshelfteleop_pickplace_4cam260917_pi05260918` es un checkpoint de política robótica entrenada por imitación, publicado por el usuario `tarzanagh` en Hugging Face. No es un modelo de lenguaje: es una política visomotora (VLA/policy) que controla un robot bimanual DexMate Vega-1 equipado con dos manos diestras RobotEra XHand1. La tarea concreta es coger un juguete del segundo nivel de una estantería y dejarlo en el primero, con el brazo derecho activo y el izquierdo prácticamente estático.
 
 El checkpoint forma parte de una familia etiquetada por el autor como "pi-0.5" y pertenece a una batería de 24 ejecuciones del mismo task, en la que se comparan cuatro familias de políticas (ACT, Diffusion Policy, GR00T 3B y pi-0.5) con y sin entrada táctil. Los datos de entrenamiento provienen de teleoperación con guante Meta y seguimiento de muñeca con Vive: 155 episodios, con 139 para entrenamiento y 16 reservados, cuatro cámaras RGB a 640×360 y 30 fps, y un espacio de estado/acción conjunto de 38 dimensiones.
 
@@ -20,7 +20,7 @@ Su relevancia es acotada pero clara: es un artefacto de investigación reproduci
 | Idiomas soportados | no disponible (no es un modelo de lenguaje; no hay capacidades lingüísticas declaradas) |
 | Licencia | gemma |
 | Formato de pesos | safetensors |
-| Pipeline declarado en HuggingFace | robotics |
+| Pipeline declarado en Hugging Face | robotics |
 | Espacio de estado/acción | 38-D: `[L_arm 7 \| L_hand 12 \| R_arm 7 \| R_hand 12]` en posiciones articulares |
 | Entradas sensoriales | 4 cámaras RGB, 640×360 a 30 fps |
 | Hardware objetivo | DexMate Vega-1 con dos manos RobotEra XHand1 |
@@ -77,7 +77,7 @@ No hay resultados de MMLU, HumanEval, GSM8K ni de ninguna suite estándar de mod
 - VRAM total en inferencia: no disponible. Hay que sumar a los pesos las activaciones del encoder visual que procesa cuatro cámaras a 640×360, no cuantificadas en la información disponible.
 - GPU recomendadas: no disponible. No se documenta ningún hardware de referencia, ni para entrenamiento ni para inferencia.
 - Encaje en GPU de consumo: no confirmado. Por tamaño de pesos, un checkpoint en bf16 de ~3,6 B cabría en GPUs con 12-16 GB de VRAM si el resto del *pipeline* (cuatro cámaras) no dispara el consumo, pero esto es una estimación y no está verificado por el autor.
-- Opciones de despliegue: no disponible. La model card no menciona vLLM, llama.cpp, Ollama, TGI, LeRobot ni ningún otro *runtime*. El único dato oficial es el pipeline `robotics` declarado en HuggingFace.
+- Opciones de despliegue: no disponible. La model card no menciona vLLM, llama.cpp, Ollama, TGI, LeRobot ni ningún otro *runtime*. El único dato oficial es el pipeline `robotics` declarado en Hugging Face.
 - Latencia y *throughput*: no disponibles. No se publican mediciones de frecuencia de inferencia, ni de si el modelo alcanza los 30 fps de las cámaras.
 - Requisito de sistema completo: el modelo solo tiene sentido acoplado a un DexMate Vega-1 con dos manos RobotEra XHand1, hardware que condiciona cualquier despliegue real.
 
@@ -108,11 +108,11 @@ No se dispone de datos suficientes para comparar con alternativas externas a est
 - Licencia `gemma`: los pesos se distribuyen bajo la licencia de Gemma, no bajo una licencia de robótica o de código abierto permisiva. Antes de un uso comercial hay que revisar los términos de esa licencia, que impone condiciones y restricciones de uso adicionales, y verificar si encajan con un despliegue en robot físico.
 - Estado de validación por la comunidad nulo: 0 descargas y 0 "likes", sin issues ni discusiones públicas. No hay terceros que hayan reproducido los resultados.
 - El propio autor reporta que la entrada táctil no aportó diferencias más allá del ruido en las cuatro familias y tres tareas evaluadas, lo que sugiere que la señal táctil no está siendo explotada de forma efectiva en este *pipeline*.
-- Los sellos temporales de los metadatos de HuggingFace (creación y actualización en septiembre de 2026) no permiten extraer conclusiones sobre la vigencia del modelo respecto al estado del arte.
+- Los sellos temporales de los metadatos de Hugging Face (creación y actualización en septiembre de 2026) no permiten extraer conclusiones sobre la vigencia del modelo respecto al estado del arte.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_pi05260918
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_pi05260918
 - Variante ACT: https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_act260919
 - Variante ACT con táctil: https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_acttactile260919
 - Variante Diffusion Policy: https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_dp260919

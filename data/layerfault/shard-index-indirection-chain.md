@@ -57,7 +57,7 @@ No disponible. No existen modelos comparables porque este es un artefacto de pru
 - Restricción de uso: el autor exige que solo se utilice en un entorno de prueba de escáneres aislado, nunca en producción.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/LayerFault/shard-index-indirection-chain
+- Repositorio Hugging Face: https://huggingface.co/LayerFault/shard-index-indirection-chain
 - GitHub del proyecto Layerfault: https://github.com/izm1chael/layerfault
 - Releases de Layerfault: https://github.com/izm1chael/layerfault/releases
 - Documentación de Shard Index de NVIDIA AIStore: https://docs.nvidia.com/aistore/shard_index (referencia a la técnica de shard index)

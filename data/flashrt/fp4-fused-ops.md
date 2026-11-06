@@ -2,7 +2,7 @@
 
 ## Resumen
 
-flashrt/fp4-fused-ops es un paquete de kernels CUDA fusionados diseñados para acelerar la cuantización de activaciones a formato NVFP4 (FP4 de NVIDIA) en pipelines de baja precisión para transformadores y difusores. Lo desarrolla el autor flashrt y se distribuye a través de HuggingFace como un repositorio de código con kernels precompilados. No se trata de un modelo de lenguaje, sino de una librería de operaciones de bajo nivel que permite convertir tensores FP16/BF16 a representaciones FP4 empaquetadas con escalas SFA (CUTLASS), optimizadas para las arquitecturas Blackwell `sm_110a` y `sm_120a`.
+flashrt/fp4-fused-ops es un paquete de kernels CUDA fusionados diseñados para acelerar la cuantización de activaciones a formato NVFP4 (FP4 de NVIDIA) en pipelines de baja precisión para transformadores y difusores. Lo desarrolla el autor flashrt y se distribuye a través de Hugging Face como un repositorio de código con kernels precompilados. No se trata de un modelo de lenguaje, sino de una librería de operaciones de bajo nivel que permite convertir tensores FP16/BF16 a representaciones FP4 empaquetadas con escalas SFA (CUTLASS), optimizadas para las arquitecturas Blackwell `sm_110a` y `sm_120a`.
 
 Su relevancia actual radica en la creciente adopción de cuantización agresiva (4 bits) para reducir el consumo de memoria y acelerar la inferencia en GPUs de última generación. Este paquete ofrece kernels especializados que fusionan operaciones comunes como RMSNorm, SiLU, multiplicaciones residuales y cuantización en un solo paso, evitando idas y venidas a memoria global. La versión 1 del paquete requiere CUDA 13 o superior para los artefactos SM110, y las dimensiones de los tensores deben ser divisibles por 16.
 
@@ -72,4 +72,4 @@ No disponible. No se han identificado paquetes equivalentes en la información p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/flashrt/fp4-fused-ops
+- Repositorio Hugging Face: https://huggingface.co/flashrt/fp4-fused-ops

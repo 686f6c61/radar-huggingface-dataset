@@ -71,8 +71,8 @@ No se dispone de especificaciones de modelos comparables de la misma categoría 
 
 | Modelo | Parametros | Contexto | Rendimiento (eval sintetica n=150) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| head-arb-gold | 421.293.830 | no disponible | 1,0000 | Apache-2.0 | HuggingFace |
-| convaiinnovations/laya (base) | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| head-arb-gold | 421.293.830 | no disponible | 1,0000 | Apache-2.0 | Hugging Face |
+| convaiinnovations/laya (base) | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face |
 | Heuristica de referencia | no aplica | no aplica | 0,7000 | no aplica | no aplica |
 
 No se dispone de comparativas con otras alternativas de la misma tarea o tamaño en la información facilitada.
@@ -90,7 +90,7 @@ No se dispone de comparativas con otras alternativas de la misma tarea o tamaño
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ngdghfdc/head-arb-gold
+- Modelo en Hugging Face: https://huggingface.co/ngdghfdc/head-arb-gold
 - Modelo base: https://huggingface.co/convaiinnovations/laya
-- HuggingFace (portal general): https://huggingface.co/
+- Hugging Face (portal general): https://huggingface.co/
 - No se han encontrado papers, blogs, repositorios o demos específicos de este modelo en los resultados de búsqueda disponibles.

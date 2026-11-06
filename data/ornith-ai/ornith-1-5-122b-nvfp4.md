@@ -101,7 +101,7 @@ Lectura: Ornith-1.5-122B lidera en CyberGym y queda por detras de DeepSeek-V4-Fl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-122B-NVFP4
+- Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-122B-NVFP4
 - Blog del autor sobre Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Licencia: https://huggingface.co/ornith-ai/Ornith-1.5-122B/blob/main/LICENSE
 - Paper, repositorio de codigo y demos: no disponibles en la informacion proporcionada.

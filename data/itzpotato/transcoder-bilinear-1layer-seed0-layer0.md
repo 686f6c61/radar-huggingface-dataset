@@ -61,7 +61,7 @@ El error normalizado es la métrica recomendada para comparar entre arquitectura
 - No requiere GPUs especiales; una GPU de consumo como una GTX 1060 o superior es suficiente.
 - La inferencia es prácticamente instantánea: una pasada forward sobre un lote de vectores de activación tarda microsegundos.
 - Se puede desplegar con PyTorch estándar; no necesita vLLM, llama.cpp ni otros motores de inferencia optimizados.
-- El almacenamiento es mínimo (el repo ocupa 0.0 GB según HuggingFace, probablemente menos de 1 MB).
+- El almacenamiento es mínimo (el repo ocupa 0.0 GB según Hugging Face, probablemente menos de 1 MB).
 
 ## Comparativa con modelos similares
 
@@ -86,7 +86,7 @@ La comparativa con otros sparse autoencoders (p. ej., los usados en modelos de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itzPotato/transcoder-bilinear-1layer-seed0-layer0
+- Modelo en Hugging Face: https://huggingface.co/itzPotato/transcoder-bilinear-1layer-seed0-layer0
 - Modelo base (arithmetic-bilinear-1layer-seed0): https://huggingface.co/itzPotato/arithmetic-bilinear-1layer-seed0
-- Perfil del autor en HuggingFace: https://huggingface.co/itzPotato
+- Perfil del autor en Hugging Face: https://huggingface.co/itzPotato
 - Otros modelos del autor (p. ej., bilinear-attn-modular-addition-p113): https://huggingface.co/itzPotato/models

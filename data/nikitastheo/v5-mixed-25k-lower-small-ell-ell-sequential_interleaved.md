@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nikitastheo/v5-mixed-25k-lower-small-ell-ell-sequential_interleaved` es un modelo de lenguaje causal de tipo GPT-2 publicado por el usuario nikitastheo en HuggingFace. Con 25.717.760 parámetros totales (aproximadamente 26 millones) y un repositorio de solo 0,2 GB, se trata de un modelo de escala muy reducida, orientado a experimentación académica más que a uso productivo. Emplea la librería `transformers`, formato de pesos `safetensors` y está etiquetado con `causal-lm`, `text-generation` y `text-generation-inference`.
+El modelo `nikitastheo/v5-mixed-25k-lower-small-ell-ell-sequential_interleaved` es un modelo de lenguaje causal de tipo GPT-2 publicado por el usuario nikitastheo en Hugging Face. Con 25.717.760 parámetros totales (aproximadamente 26 millones) y un repositorio de solo 0,2 GB, se trata de un modelo de escala muy reducida, orientado a experimentación académica más que a uso productivo. Emplea la librería `transformers`, formato de pesos `safetensors` y está etiquetado con `causal-lm`, `text-generation` y `text-generation-inference`.
 
 El nombre del repositorio apunta a un entrenamiento de tipo BabyLM: tokenizador propio de 25.000 tokens (`nikitastheo/babylm-25k-ell-lower-tokenizer`), texto en minúsculas (`lower`), una configuración pequeña (`gpt_small_config.json`) y una estrategia de "cambio de idioma" en la época 10 (`language switch epoch: 10`) con mezcla secuencial intercalada. El código `ell` corresponde a la ISO 639-3 del griego, aunque la información disponible no confirma de forma explícita la composición exacta del corpus ni si se trata de un modelo monolingüe o bilingüe.
 
@@ -65,13 +65,13 @@ La model card no incluye métricas de evaluación (perplejidad, MMLU, HumanEval,
 - Cabe en GPU consumer: sí, en prácticamente cualquier GPU dedicada e incluso en iGPU y en CPU. También es viable en dispositivos de placa única tipo Raspberry Pi, siempre que se use cuantización.
 - Opciones de despliegue: `transformers` en Python, `text-generation-inference` (el tag `text-generation-inference` figura en el repositorio), `vLLM` (soporta arquitecturas GPT-2), conversión a GGUF para `llama.cpp` y, desde ahí, `Ollama` u otros runners locales.
 - Latencia y throughput estimados: no disponibles. Al tratarse de un modelo de ~26M de parámetros, en GPU moderna la generación de decenas de tokens por segundo por lote es esperable, pero no hay cifras publicadas que lo confirmen.
-- Almacenamiento: 0,2 GB en el repositorio de HuggingFace, lo que permite tenerlo residente en memoria sin planificación alguna.
+- Almacenamiento: 0,2 GB en el repositorio de Hugging Face, lo que permite tenerlo residente en memoria sin planificación alguna.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nikitastheo/v5-mixed-25k-lower-small-ell-ell-sequential_interleaved | 25.717.760 | no disponible | GPT-2 causal | no disponible | HuggingFace, 0 descargas |
+| nikitastheo/v5-mixed-25k-lower-small-ell-ell-sequential_interleaved | 25.717.760 | no disponible | GPT-2 causal | no disponible | Hugging Face, 0 descargas |
 | GPT-2 small (OpenAI) | ~124M | 1024 tokens | Transformer causal decoder-only | Modified MIT | Ampliamente disponible y validado |
 | DistilGPT-2 | ~82M | 1024 tokens | Transformer causal destilado | Apache-2.0 | Ampliamente disponible |
 | Pythia-14M (EleutherAI) | ~14M | 2048 tokens | Transformer causal con RoPE | Apache-2.0 | Disponible con suite completa de checkpoints |
@@ -91,10 +91,10 @@ La comparación se limita a parámetros y licencia, ya que el modelo evaluado no
 - Sesgos: no se ha publicado ninguna evaluacion de sesgos ni de filtrado del corpus, por lo que se desconocen los sesgos presentes en los datos de entrenamiento.
 - Sin soporte documentado de tool calling, agentes ni razonamiento multi-paso: no debe emplearse en flujos agenticos.
 - Nombre del autor y del repositorio sin publicaciones asociadas: no hay paper, blog ni demo que respalde los resultados de entrenamiento.
-- Fecha de creacion posterior a la fecha de consulta en los metadatos (2026-09-15), dato que conviene verificar en la ficha oficial de HuggingFace.
+- Fecha de creacion posterior a la fecha de consulta en los metadatos (2026-09-15), dato que conviene verificar en la ficha oficial de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nikitastheo/v5-mixed-25k-lower-small-ell-ell-sequential_interleaved
+- Hugging Face: https://huggingface.co/nikitastheo/v5-mixed-25k-lower-small-ell-ell-sequential_interleaved
 - Tokenizador: https://huggingface.co/nikitastheo/babylm-25k-ell-lower-tokenizer (referenciado en la model card; no verificado)
 - Paper, blog, repositorio o demo: no disponible en la informacion proporcionada

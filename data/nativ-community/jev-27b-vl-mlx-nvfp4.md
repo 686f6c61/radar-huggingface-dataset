@@ -4,7 +4,7 @@
 
 JEV-27B-VL-MLX-NVFP4 es una conversión a MLX del modelo multimodal autotrust/JEV-27B-VL, publicada por la comunidad nativ-community. Se distribuye cuantizada en NVFP4 (4 bits, tamano de grupo 16) y con el adaptador LoRA del llamado "System 1" ya fusionado en los pesos; la cabeza de decisión (`lm_head`) se mantiene sin cuantizar para preservar la precisión del readout. El repositorio ocupa 17,9 GB y el recuento real de parametros en los safetensors es de 27.356.728.560 (unos 27,36 mil millones).
 
-La caracteristica diferencial de JEV es que no es un modelo generativo: es un modelo de decisión. Dada una entrada (texto e imagen) y un conjunto de opciones, devuelve en una única pasada forward una probabilidad para cada opción, en lugar de generar texto token a token. Esto lo situa en la categoria de clasificadores y extractores estructurados multimodales, no en la de asistentes conversacionales, pese a que la etiqueta de pipeline de HuggingFace sea `image-text-to-text`.
+La caracteristica diferencial de JEV es que no es un modelo generativo: es un modelo de decisión. Dada una entrada (texto e imagen) y un conjunto de opciones, devuelve en una única pasada forward una probabilidad para cada opción, en lugar de generar texto token a token. Esto lo situa en la categoria de clasificadores y extractores estructurados multimodales, no en la de asistentes conversacionales, pese a que la etiqueta de pipeline de Hugging Face sea `image-text-to-text`.
 
 Su relevancia practica es doble: por un lado, ofrece un coste de inferencia muy inferior al de un LLM generativo para tareas de clasificación o extracción de estado; por otro, al ejecutarse sobre MLX, esta pensado para correr localmente en Apple Silicon. El soporte de JEV aun no esta en una release oficial de mlx-vlm, por lo que requiere instalar la rama `feat/jev` del fork mantenido por Lazarus-931.
 
@@ -78,8 +78,8 @@ No se dispone de datos de rendimiento ni de contexto de los posibles competidore
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nativ-community/JEV-27B-VL-MLX-NVFP4 | 27,36 B | No disponible | safetensors MLX, NVFP4 4 bits, Apple Silicon | Apache-2.0 | HuggingFace |
-| autotrust/JEV-27B-VL (modelo base) | 27 B (aproximado, no confirmado) | No disponible | Pesos originales (formato no indicado) | No disponible | HuggingFace |
+| nativ-community/JEV-27B-VL-MLX-NVFP4 | 27,36 B | No disponible | safetensors MLX, NVFP4 4 bits, Apple Silicon | Apache-2.0 | Hugging Face |
+| autotrust/JEV-27B-VL (modelo base) | 27 B (aproximado, no confirmado) | No disponible | Pesos originales (formato no indicado) | No disponible | Hugging Face |
 | Otros modelos de decision multimodal de ~27 B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La diferencia principal frente al modelo base es la cuantizacion NVFP4, la fusion del adaptador LoRA y el hecho de estar empaquetado para MLX, lo que reduce el peso en disco a 17,9 GB y permite ejecucion local en Apple Silicon a cambio de depender de un fork de mlx-vlm.
@@ -99,7 +99,7 @@ La diferencia principal frente al modelo base es la cuantizacion NVFP4, la fusio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nativ-community/JEV-27B-VL-MLX-NVFP4
+- Hugging Face: https://huggingface.co/nativ-community/JEV-27B-VL-MLX-NVFP4
 - Modelo base: https://huggingface.co/autotrust/JEV-27B-VL
 - Fork de mlx-vlm con soporte JEV: https://github.com/Lazarus-931/mlx-vlm/tree/feat/jev
 - Repositorio mlx-vlm: https://github.com/Blaizzy/mlx-vlm

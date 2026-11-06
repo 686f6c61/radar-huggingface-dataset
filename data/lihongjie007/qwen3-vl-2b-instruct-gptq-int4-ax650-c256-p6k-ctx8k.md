@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-VL-2B-Instruct es un modelo multimodal (visión y lenguaje) de la familia Qwen3-VL, desarrollado originalmente por Alibaba Qwen, en su variante de 2.000 millones de parámetros en modo instruct. La versión aquí descrita es una conversión comunitaria publicada por el usuario lihongjie007 en HuggingFace, que aplica cuantización GPTQ a 4 bits (Int4) y la empaqueta para el acelerador AX650, con un tamaño de repositorio de 3,0 GB.
+Qwen3-VL-2B-Instruct es un modelo multimodal (visión y lenguaje) de la familia Qwen3-VL, desarrollado originalmente por Alibaba Qwen, en su variante de 2.000 millones de parámetros en modo instruct. La versión aquí descrita es una conversión comunitaria publicada por el usuario lihongjie007 en Hugging Face, que aplica cuantización GPTQ a 4 bits (Int4) y la empaqueta para el acelerador AX650, con un tamaño de repositorio de 3,0 GB.
 
 El modelo resuelve tareas de comprensión conjunta de imagen y texto, además de generación de lenguaje: descripción de imágenes, respuesta a preguntas visuales (VQA), extracción de información de documentos y OCR, y razonamiento multimodal básico. Su interés actual reside en que permite desplegar un modelo visión-lenguaje en hardware de borde o aceleradores de bajo consumo gracias a la cuantización Int4, algo poco habitual en esta categoría.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-VL-2B-Instruct-GPTQ-Int4-AX650 (este) | 2B | no disponible | GPTQ Int4 | MIT | HuggingFace (comunidad) |
-| Qwen3-VL-2B-Instruct (original) | 2B | no disponible | FP16/BF16 | no disponible en esta ficha | HuggingFace (oficial) |
+| Qwen3-VL-2B-Instruct-GPTQ-Int4-AX650 (este) | 2B | no disponible | GPTQ Int4 | MIT | Hugging Face (comunidad) |
+| Qwen3-VL-2B-Instruct (original) | 2B | no disponible | FP16/BF16 | no disponible en esta ficha | Hugging Face (oficial) |
 | Alternativas de 2B multimodales | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones verificadas de modelos comparables en la información proporcionada, por lo que la comparativa cuantitativa no es posible.
@@ -80,4 +80,4 @@ No se dispone de datos de rendimiento ni de especificaciones verificadas de mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lihongjie007/Qwen3-VL-2B-Instruct-GPTQ-Int4-AX650-C256-P6K-CTX8K
+- Hugging Face: https://huggingface.co/lihongjie007/Qwen3-VL-2B-Instruct-GPTQ-Int4-AX650-C256-P6K-CTX8K

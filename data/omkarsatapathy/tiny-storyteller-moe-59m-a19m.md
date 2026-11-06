@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tiny-Storyteller-MoE-59M-A19M | 59M totales / 19M activos | GPT + MoE top-2-of-8 SwiGLU | no disponible | MIT | HuggingFace |
+| Tiny-Storyteller-MoE-59M-A19M | 59M totales / 19M activos | GPT + MoE top-2-of-8 SwiGLU | no disponible | MIT | Hugging Face |
 | BerhakTanyildizi/tiny-storyteller | 30M | GPT denso | no disponible | no disponible | GitHub |
-| Corianas/Tiny-Moe | no disponible | MoE | no disponible | no disponible | HuggingFace |
+| Corianas/Tiny-Moe | no disponible | MoE | no disponible | no disponible | Hugging Face |
 
 La comparativa se limita a modelos del mismo dominio (generación de cuentos infantiles con arquitecturas pequeñas). No se dispone de datos de rendimiento comparativos entre ellos, ya que ninguno publica benchmarks en la información disponible.
 
@@ -78,7 +78,7 @@ La comparativa se limita a modelos del mismo dominio (generación de cuentos inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Omkarsatapathy/Tiny-Storyteller-MoE-59M-A19M
+- Modelo en Hugging Face: https://huggingface.co/Omkarsatapathy/Tiny-Storyteller-MoE-59M-A19M
 - Dataset de entrenamiento: https://huggingface.co/datasets/roneneldan/TinyStoriesInstruct
 - Repositorio de referencia del autor (no verificado): no disponible
 - Paper o documentación técnica: no disponible

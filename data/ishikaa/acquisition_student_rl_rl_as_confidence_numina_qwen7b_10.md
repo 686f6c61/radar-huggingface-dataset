@@ -69,6 +69,6 @@ No hay datos de rendimiento publicados que permitan una comparacion rigurosa. El
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_student_RL_RL_AS_confidence_numina_qwen7b_10
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_student_RL_RL_AS_confidence_numina_qwen7b_10
 - Modelo similar del autor: https://huggingface.co/ishikaa/acquisition_student_AS_confidence_numina_qwen7b
 - Modelo similar del autor: https://huggingface.co/ishikaa/acquisition_student_RL_qwen3bins_numina_confidence

@@ -23,7 +23,7 @@ El encoder opera a nivel de bytes (vocabulario de 256 valores), con una longitud
 
 El modelo es un encoder bidireccional de bytes UTF-8 con dimensiones D=768, 8 capas, 12 cabezas de atención, dff=3072 y vocabulario de 256 bytes. Utiliza mean-pooling seguido de una capa lineal para obtener la representación final. La arquitectura no es una mezcla de expertos (MoE) ni un modelo SSM: es un Transformer denso estándar a nivel de bytes, con un tamaño total de aproximadamente 42 millones de parámetros.
 
-El entrenamiento sigue el protocolo instruct de Giga-Embeddings: los prefijos se integran en el loader de HuggingFace, de modo que el usuario no debe añadirlos manualmente. Para retrieval, la consulta recibe el prefijo `Instruct: Given a query, retrieve relevant passages\nQuery: ` y los documentos se codifican sin prefijo. Para STS, ambas frases reciben `Instruct: Retrieve semantically similar text.\nQuery: `. El checkpoint corresponde al paso 10400, con accuracy de 0.833 en inglés y 1.0 en ruso sobre un holdout propio. No se han publicado detalles sobre la composición del dataset ni sobre procesos de RLHF/DPO. El autor indica que el código de entrenamiento reside en el árbol `kenga-lang / z-system`, no en este repositorio.
+El entrenamiento sigue el protocolo instruct de Giga-Embeddings: los prefijos se integran en el loader de Hugging Face, de modo que el usuario no debe añadirlos manualmente. Para retrieval, la consulta recibe el prefijo `Instruct: Given a query, retrieve relevant passages\nQuery: ` y los documentos se codifican sin prefijo. Para STS, ambas frases reciben `Instruct: Retrieve semantically similar text.\nQuery: `. El checkpoint corresponde al paso 10400, con accuracy de 0.833 en inglés y 1.0 en ruso sobre un holdout propio. No se han publicado detalles sobre la composición del dataset ni sobre procesos de RLHF/DPO. El autor indica que el código de entrenamiento reside en el árbol `kenga-lang / z-system`, no en este repositorio.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ Nota: los datos del holdout no provienen de ruMTEB ni de un benchmark oficial. E
 
 - VRAM estimada: menos de 1 GB en fp32 (aproximadamente 168 MB para 42M parámetros) y en torno a 84 MB en fp16. No se han publicado cuantizaciones específicas.
 - GPU recomendada: no es necesaria una GPU de gama alta; cualquier GPU consumer (por ejemplo, RTX 3060) es suficiente, y la inferencia en CPU es viable para lotes pequeños.
-- Opciones de despliegue: HuggingFace Transformers con la clase personalizada `KengaEmbed`, o integración en pipelines de sentence-transformers. No se menciona soporte para vLLM, llama.cpp ni TGI en la información disponible.
+- Opciones de despliegue: Hugging Face Transformers con la clase personalizada `KengaEmbed`, o integración en pipelines de sentence-transformers. No se menciona soporte para vLLM, llama.cpp ni TGI en la información disponible.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ No se han identificado otras alternativas comparables con datos suficientes en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GermannM/kenga-embed-prophet-instruct
+- Hugging Face: https://huggingface.co/GermannM/kenga-embed-prophet-instruct
 - GitHub kenga-lang: https://github.com/GermannM3/kenga-lang
 - Ejemplos kenga-lang: https://github.com/GermannM3/kenga-lang/tree/main/examples
 - Modelo relacionado kenga-prophet-m5: https://huggingface.co/GermannM/kenga-prophet-m5

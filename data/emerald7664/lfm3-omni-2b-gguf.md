@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Emerald7664/LFM3-Omni-2B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Emerald7664/LFM3-Omni-2B-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - API de Liquid AI: https://console.liquid.ai/dashboard
 - Playground: https://playground.liquid.ai/

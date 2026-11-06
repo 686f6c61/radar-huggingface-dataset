@@ -29,7 +29,7 @@ Su relevancia actual radica en que ofrece un detector de voz sintética con rend
 
 El modelo sigue un diseño *front-end* / *back-end*. El *front-end* es un wav2vec 2.0 XLS-R de 300 M de parámetros completamente ajustado (*fully fine-tuned*), cuya salida se proyecta a 144 dimensiones mediante BatchNorm y SELU. El *back-end* consta de 4 bloques Conformer con atención multi-cabeza de tipo Head-Token (TCM): 4 cabezas y convolución *depthwise* de kernel 31. Un *class token* agrega la representación y alimenta una cabeza lineal de dos clases (clase 1 = *bona fide*). El total asciende a 321,2132 M de parámetros.
 
-El entrenamiento aplica DPDA-GA: cada *batch* se procesa dos veces, una limpia y otra aumentada con RawBoost, y los gradientes de ambas pérdidas se alinean mediante PCGrad para evitar conflictos entre rutas. El modelo se entrena solo con ASVspoof2019 LA *train*. El *checkpoint* publicado es una media de pesos de los *checkpoints* n-best de los autores, reproduciendo su código de promediado: como el quinto *checkpoint* (`best_4.pth`) está truncado en HuggingFace y no se puede cargar, se promedian 4 en lugar de 5, y el código de `main.py` descarta `best_0` y cuenta dos veces `best_1`, dando `(2*best_1 + best_2 + best_3)/4`. La inferencia es determinista sobre la primera ventana de 66.800 muestras.
+El entrenamiento aplica DPDA-GA: cada *batch* se procesa dos veces, una limpia y otra aumentada con RawBoost, y los gradientes de ambas pérdidas se alinean mediante PCGrad para evitar conflictos entre rutas. El modelo se entrena solo con ASVspoof2019 LA *train*. El *checkpoint* publicado es una media de pesos de los *checkpoints* n-best de los autores, reproduciendo su código de promediado: como el quinto *checkpoint* (`best_4.pth`) está truncado en Hugging Face y no se puede cargar, se promedian 4 en lugar de 5, y el código de `main.py` descarta `best_0` y cuenta dos veces `best_1`, dando `(2*best_1 + best_2 + best_3)/4`. La inferencia es determinista sobre la primera ventana de 66.800 muestras.
 
 ## Capacidades
 
@@ -90,9 +90,9 @@ La model card menciona tres *back-ends* del mismo trabajo (DPDA-GA-AASIST, DPDA-
 
 | Modelo | Parametros | Contexto | EER ASVspoof2019 LA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DPDA-GA-TCM | 321,2132 M | 66.800 muestras (4,175 s) | 0,14 % | MIT | HuggingFace |
-| DPDA-GA-AASIST | no disponible | no disponible | no disponible | MIT (presumible) | HuggingFace |
-| DPDA-GA-Mamba | no disponible | no disponible | no disponible | MIT (presumible) | HuggingFace |
+| DPDA-GA-TCM | 321,2132 M | 66.800 muestras (4,175 s) | 0,14 % | MIT | Hugging Face |
+| DPDA-GA-AASIST | no disponible | no disponible | no disponible | MIT (presumible) | Hugging Face |
+| DPDA-GA-Mamba | no disponible | no disponible | no disponible | MIT (presumible) | Hugging Face |
 
 No se dispone de datos de otros detectores de *anti-spoofing* comparables en la información proporcionada.
 
@@ -108,7 +108,7 @@ No se dispone de datos de otros detectores de *anti-spoofing* comparables en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SpeechAntiSpoofingBenchmarks/DPDA-GA-TCM
+- Modelo en Hugging Face: https://huggingface.co/SpeechAntiSpoofingBenchmarks/DPDA-GA-TCM
 - Checkpoint (commit-pinned): https://huggingface.co/SpeechAntiSpoofingBenchmarks/DPDA-GA-TCM/blob/e949ad036fe984b80fadaa629ac5544f04e0ac26/dpda_ga_tcm_avg4.pth
 - Paper (arXiv:2509.20682): https://arxiv.org/abs/2509.20682
 - Código de los autores: https://github.com/ductuantruong/dpda_ga

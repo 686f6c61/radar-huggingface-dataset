@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pointmlp-base.scanobjectnn-hardest.xu-ma es un modelo de clasificación de nubes de puntos 3D publicado en HuggingFace por el usuario torch-pointcloud. Se trata de la conversión a safetensors del PointMLP base entrenado sobre la variante más exigente del dataset ScanObjectNN (PB_T50_RS), a partir del checkpoint original del repositorio ma-xu/pointMLP-pytorch. El modelo tiene 13.268.303 parámetros (13,2 M), 3 canales de entrada, 15 clases de salida y una cabeza de características de 1024 dimensiones, con un repositorio de apenas 0,1 GB y licencia apache-2.0.
+pointmlp-base.scanobjectnn-hardest.xu-ma es un modelo de clasificación de nubes de puntos 3D publicado en Hugging Face por el usuario torch-pointcloud. Se trata de la conversión a safetensors del PointMLP base entrenado sobre la variante más exigente del dataset ScanObjectNN (PB_T50_RS), a partir del checkpoint original del repositorio ma-xu/pointMLP-pytorch. El modelo tiene 13.268.303 parámetros (13,2 M), 3 canales de entrada, 15 clases de salida y una cabeza de características de 1024 dimensiones, con un repositorio de apenas 0,1 GB y licencia apache-2.0.
 
 La arquitectura PointMLP, presentada en el artículo "Rethinking Network Design and Local Geometry in Point Cloud: A Simple Residual MLP Framework" (ICLR 2022), demuestra que una red residual de perceptrones multicapa con agrupación afín geométrica puede competir con arquitecturas de convolución y de atención en clasificación de nubes de puntos, con un coste computacional menor. Frente a transformers de puntos, el modelo evita mecanismos de atención y operaciones de vecindad costosas, lo que simplifica su despliegue y su integración en pipelines de inferencia en tiempo real.
 
@@ -75,7 +75,7 @@ La propia model card indica un valor de referencia de 86,1 para esta configuraci
 - GPU recomendadas: no disponible en la información proporcionada. Dado el reducido tamaño del modelo, cualquier GPU con soporte CUDA y memoria suficiente para las activaciones debería ser apta, pero no hay cifras oficiales que lo confirmen.
 - Ejecución en GPU de consumo: previsiblemente viable por tamaño de pesos, si bien no se documenta el consumo real de memoria ni la latencia en tarjetas como la RTX 4090 o inferiores.
 - Ejecución en CPU: posible, al ser un modelo PyTorch estándar; no se publican tiempos.
-- Opciones de despliegue: PyTorch con la librería torch-pointcloud (`pip install torch-pointcloud`), que expone `create_model`, transformación de muestras y colación. No aplican vLLM, llama.cpp, Ollama ni TGI, ya que son herramientas para modelos de lenguaje. La exportación a ONNX, TensorRT u otros formatos no está documentada y no se declara un pipeline de HuggingFace asociado.
+- Opciones de despliegue: PyTorch con la librería torch-pointcloud (`pip install torch-pointcloud`), que expone `create_model`, transformación de muestras y colación. No aplican vLLM, llama.cpp, Ollama ni TGI, ya que son herramientas para modelos de lenguaje. La exportación a ONNX, TensorRT u otros formatos no está documentada y no se declara un pipeline de Hugging Face asociado.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ PointMLP pertenece a la familia de clasificadores de nubes de puntos de tipo jer
 
 | Modelo | Categoria | Parametros | Dataset de referencia | Licencia | Disponibilidad en el repositorio analizado |
 |---|---|---|---|---|---|
-| pointmlp-base.scanobjectnn-hardest.xu-ma | MLP residual + agrupación afín | 13,2 M | ScanObjectNN PB_T50_RS | apache-2.0 | pesos safetensors en HuggingFace, librería torch-pointcloud |
+| pointmlp-base.scanobjectnn-hardest.xu-ma | MLP residual + agrupación afín | 13,2 M | ScanObjectNN PB_T50_RS | apache-2.0 | pesos safetensors en Hugging Face, librería torch-pointcloud |
 | PointNet++ | Jerárquico con operaciones de vecindad | no disponible | no disponible | no disponible | no disponible |
 | DGCNN | Grafo dinámico + convolución de aristas | no disponible | no disponible | no disponible | no disponible |
 | Point Transformer | Atención sobre vecindarios | no disponible | no disponible | no disponible | no disponible |
@@ -99,14 +99,14 @@ El artículo arXiv:2202.07123 incluye la comparación oficial de PointMLP con es
 - Ausencia de información sobre sesgos: no se documenta la composición demográfica, geográfica ni de captura del dataset, ni se analizan sesgos de clase. ScanObjectNN contiene objetos escaneados en entornos concretos, lo que puede introducir desviaciones respecto a otros dominios de captura.
 - Rendimiento fuera de distribución desconocido: no se publican evaluaciones con sensores, densidades de puntos, ruidos u oclusiones distintos de los de la variante PB_T50_RS.
 - Riesgo de alucinación no aplicable en el sentido generativo, pero sí existe riesgo de clasificación errónea con alta confianza en objetos ambiguos o parcialmente ocluidos, especialmente en clases visualmente próximas.
-- Dependencia de la librería: el modelo se carga con `torch-pointcloud` y no declara un pipeline estándar de HuggingFace, por lo que no es directamente compatible con `transformers` ni con servidores de inferencia para modelos de lenguaje.
+- Dependencia de la librería: el modelo se carga con `torch-pointcloud` y no declara un pipeline estándar de Hugging Face, por lo que no es directamente compatible con `transformers` ni con servidores de inferencia para modelos de lenguaje.
 - Limitación de idioma: no procesa texto ni entrada multimodal lingüística; no puede usarse para tareas de lenguaje.
 - Licencia: apache-2.0 permite uso comercial y modificación, siempre que se conserve el aviso de copyright y la atribución correspondiente; el código original del que procede la conversión también es Apache-2.0. No se imponen restricciones adicionales conocidas, pero conviene conservar la cita del artículo y de los repositorios de origen.
 - Sin datos de entrenamiento reproducibles: la información disponible no detalla hiperparámetros, aumentos de datos ni semillas, lo que dificulta reproducir el resultado desde cero.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pointmlp-base.scanobjectnn-hardest.xu-ma
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointmlp-base.scanobjectnn-hardest.xu-ma
 - Articulo de PointMLP (ICLR 2022): https://arxiv.org/abs/2202.07123
 - Repositorio original de PointMLP: https://github.com/ma-xu/pointMLP-pytorch
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

@@ -3,9 +3,9 @@
 ## Resumen
 El modelo `amd/gemma-4-e4b-it-mobius-int4_rai_1.9.0_npu` es una distribucion cuantizada a int4 del modelo Gemma 4 E4B en su variante instruida (it), publicada por AMD en formato ONNX y optimizada para ejecutarse sobre las NPU (unidades de procesamiento neuronal) de los procesadores AMD Ryzen AI. No se trata de un modelo entrenado desde cero por AMD, sino de un artefacto de despliegue que empaqueta los pesos de Gemma 4 E4B con la cadena de herramientas Mobius y el runtime RAI (Ryzen AI) en su version 1.9.0, de modo que el modelo pueda aprovechar la aceleracion hardware de la NPU integrada en las plataformas Ryzen AI.
 
-La relevancia de esta publicacion es fundamentalmente practica: permite ejecutar un modelo de la familia Gemma de cuarta generacion en un PC con procesador AMD Ryzen AI sin depender de una GPU dedicada, lo que habilita inferencia local de texto conversacional con un consumo energetico contenido. El repositorio ocupa 21,0 GB y esta sujeto a acceso restringido (gated), por lo que es necesario aceptar las condiciones en HuggingFace antes de descargarlo.
+La relevancia de esta publicacion es fundamentalmente practica: permite ejecutar un modelo de la familia Gemma de cuarta generacion en un PC con procesador AMD Ryzen AI sin depender de una GPU dedicada, lo que habilita inferencia local de texto conversacional con un consumo energetico contenido. El repositorio ocupa 21,0 GB y esta sujeto a acceso restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de descargarlo.
 
-La informacion disponible en la ficha de HuggingFace es muy limitada: no se detallan la arquitectura interna, el numero exacto de parametros, la longitud de contexto ni los datos de entrenamiento. Los datos que se ofrecen a continuacion reflejan unicamente lo que consta en los metadatos del repositorio, y cualquier campo no confirmado se marca explicitamente como no disponible.
+La informacion disponible en la ficha de Hugging Face es muy limitada: no se detallan la arquitectura interna, el numero exacto de parametros, la longitud de contexto ni los datos de entrenamiento. Los datos que se ofrecen a continuacion reflejan unicamente lo que consta en los metadatos del repositorio, y cualquier campo no confirmado se marca explicitamente como no disponible.
 
 ## Especificaciones tecnicas
 
@@ -56,14 +56,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/gemma-4-e4b-it-mobius-int4_rai_1.9.0_npu | no disponible | no disponible | ONNX (int4, NPU) | Gemma | Gated en HuggingFace |
+| amd/gemma-4-e4b-it-mobius-int4_rai_1.9.0_npu | no disponible | no disponible | ONNX (int4, NPU) | Gemma | Gated en Hugging Face |
 | Gemma 4 E4B IT (original, si existe publicacion oficial) | no disponible | no disponible | safetensors | Gemma | No confirmado en la informacion |
 | Otras distribuciones cuantizadas de Gemma para CPU/GPU | no disponible | no disponible | GGUF / ONNX | Gemma | No disponible |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoria; la informacion proporcionada no incluye modelos comparables con especificaciones verificables.
 
 ## Limitaciones y advertencias
-- Acceso restringido: el repositorio es gated y requiere aceptar las condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar las condiciones en Hugging Face antes de la descarga.
 - Idiomas: los metadatos solo declaran ingles; el rendimiento en castellano u otros idiomas no esta garantizado.
 - Licencia Gemma: el uso comercial esta sujeto a los terminos de la licencia Gemma de Google, que imponen restricciones y obligaciones especificas; es necesario revisarlos antes de un despliegue en produccion.
 - Formato y hardware: al estar optimizado para NPU Ryzen AI con el runtime RAI 1.9.0, su portabilidad a otros aceleradores o frameworks no esta confirmada.
@@ -72,4 +72,4 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 - Tamano del repositorio: 21,0 GB, lo que implica requisitos de almacenamiento considerables para su descarga y despliegue.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/amd/gemma-4-e4b-it-mobius-int4_rai_1.9.0_npu
+- Hugging Face: https://huggingface.co/amd/gemma-4-e4b-it-mobius-int4_rai_1.9.0_npu

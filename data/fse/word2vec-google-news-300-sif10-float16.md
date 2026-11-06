@@ -105,8 +105,8 @@ No se dispone de datos de benchmarks de alternativas en la informacion proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/word2vec-google-news-300-sif10-float16
-- Modelo base en HuggingFace: https://huggingface.co/fse/word2vec-google-news-300
+- Modelo en Hugging Face: https://huggingface.co/fse/word2vec-google-news-300-sif10-float16
+- Modelo base en Hugging Face: https://huggingface.co/fse/word2vec-google-news-300
 - Repositorio de la libreria fse: https://github.com/oborchers/Fast_Sentence_Embeddings
 - Proyecto original word2vec de Google: https://code.google.com/archive/p/word2vec/
 - Libreria wordfreq: https://github.com/rspeer/wordfreq

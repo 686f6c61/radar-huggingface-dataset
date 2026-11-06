@@ -107,9 +107,9 @@ La comparación más directa la ofrecen los propios ficheros de referencia del m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MissingPackage/Qwen3.5-0.8B-knapquant-GGUF
+- Repositorio Hugging Face: https://huggingface.co/MissingPackage/Qwen3.5-0.8B-knapquant-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE
 - Variante de 4B de la misma familia: https://huggingface.co/MissingPackage/Qwen3.5-4B-knapquant-GGUF
 - Código del método knapquant: https://github.com/MissingPackage/knapquant
-- Mapas de tipos por tensor: carpeta `type-maps/` dentro del repositorio de HuggingFace
+- Mapas de tipos por tensor: carpeta `type-maps/` dentro del repositorio de Hugging Face

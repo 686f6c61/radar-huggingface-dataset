@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Dino0040/gemma-4-31b-it-exl3-optimized es una publicación alojada en HuggingFace, creada el 12 de octubre de 2026 por el usuario Dino0040. Atendiendo al identificador, se trataría de una versión cuantizada en formato EXL3 de un modelo base denominado gemma-4-31b-it, presumiblemente un modelo de lenguaje de tipo instruct con 31.000 millones de parámetros. La única información verificable en los metadatos es la licencia declarada, apache-2.0; no existe model card con contenido técnico, ni documentación, ni ejemplos de uso.
+El repositorio Dino0040/gemma-4-31b-it-exl3-optimized es una publicación alojada en Hugging Face, creada el 12 de octubre de 2026 por el usuario Dino0040. Atendiendo al identificador, se trataría de una versión cuantizada en formato EXL3 de un modelo base denominado gemma-4-31b-it, presumiblemente un modelo de lenguaje de tipo instruct con 31.000 millones de parámetros. La única información verificable en los metadatos es la licencia declarada, apache-2.0; no existe model card con contenido técnico, ni documentación, ni ejemplos de uso.
 
 La relevancia práctica actual es muy limitada. El repositorio registra cero descargas y cero valoraciones positivas desde su creación, y no aporta ningún dato sobre arquitectura, longitud de contexto, composición del dataset de entrenamiento, proceso de alineamiento, benchmarks o requisitos de despliegue. La model card se reduce al bloque de frontmatter con la licencia.
 
@@ -97,5 +97,5 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dino0040/gemma-4-31b-it-exl3-optimized
+- Repositorio en Hugging Face: https://huggingface.co/Dino0040/gemma-4-31b-it-exl3-optimized
 - Paper, blog, repositorio de código o demo: no disponible.

@@ -70,6 +70,6 @@ No se dispone de información sobre modelos comparables dentro de la misma categ
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/emmalamb/model_601606437_beit_tiny)
+- [Repositorio en Hugging Face](https://huggingface.co/emmalamb/model_601606437_beit_tiny)
 
 *Nota: los resultados de búsqueda web proporcionados no guardan relación con este modelo.*

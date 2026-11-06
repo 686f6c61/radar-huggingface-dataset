@@ -88,7 +88,7 @@ La comparativa con `rLLM-FinQA-4B` no es posible con los datos disponibles: no s
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/Mr-Rosen/Accuracy-Is-Not-Enough-FinQA-RAG-LoRA
+- Hugging Face (adaptador): https://huggingface.co/Mr-Rosen/Accuracy-Is-Not-Enough-FinQA-RAG-LoRA
 - Repositorio de investigación (retrieval, prompts, evaluator): https://github.com/MarkPaulRosenthal/Accuracy-Is-Not-Enough-Practical-Financial-QA
 - Dataset de entrenamiento: https://huggingface.co/datasets/Mr-Rosen/Accuracy-Is-Not-Enough-FinQA-Dataset
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

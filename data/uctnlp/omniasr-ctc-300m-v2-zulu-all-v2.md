@@ -2,7 +2,7 @@
 
 ## Resumen
 
-omniASR-CTC-300M-v2-Zulu-All-v2 es un modelo de reconocimiento automático del habla (ASR) basado en la arquitectura Wav2Vec2 con decodificación CTC (Connectionist Temporal Classification), publicado por el grupo UCT NLP de la Universidad de Ciudad del Cabo. Se trata de una conversión al ecosistema HuggingFace Transformers del checkpoint original `omniASR_CTC_300M_v2` del proyecto OmniLingual de Meta (Facebook Research), que cubre más de 1600 lenguas. Esta variante concreta está orientada a la transcripción de isiZulu, aunque el sufijo "All" sugiere capacidad multilingüe más amplia.
+omniASR-CTC-300M-v2-Zulu-All-v2 es un modelo de reconocimiento automático del habla (ASR) basado en la arquitectura Wav2Vec2 con decodificación CTC (Connectionist Temporal Classification), publicado por el grupo UCT NLP de la Universidad de Ciudad del Cabo. Se trata de una conversión al ecosistema Hugging Face Transformers del checkpoint original `omniASR_CTC_300M_v2` del proyecto OmniLingual de Meta (Facebook Research), que cubre más de 1600 lenguas. Esta variante concreta está orientada a la transcripción de isiZulu, aunque el sufijo "All" sugiere capacidad multilingüe más amplia.
 
 El modelo cuenta con aproximadamente 326 millones de parámetros, 24 capas de encoder con tamaño oculto de 1024 y un vocabulario SentencePiece de 10288 tokens. La verificación de paridad numérica contra el checkpoint original de fairseq2 ha sido confirmada con una tolerancia de `atol=1e-4` en una muestra de audio de validación. Su relevancia radica en ofrecer ASR rápido y eficiente para lenguas africanas de bajos recursos, un ámbito tradicionalmente desatendido por los grandes proveedores comerciales.
 
@@ -32,7 +32,7 @@ El entrenamiento original se realizó en el marco del proyecto OmniLingual de Me
 - Inferencia rápida: los modelos CTC son significativamente más rápidos que los basados en decodificación autoregresiva o LLM, aptos para transcripción en tiempo real.
 - Procesamiento de audio a 16 kHz con resampleo automático mediante torchaudio.
 - Integración nativa con el ecosistema Transformers: clase `Wav2Vec2ForCTC` y `AutoProcessor` estándar.
-- Compatible con pipelines de HuggingFace (`automatic-speech-recognition`) y con `endpoints_compatible`, lo que permite despliegue en Inference Endpoints.
+- Compatible con pipelines de Hugging Face (`automatic-speech-recognition`) y con `endpoints_compatible`, lo que permite despliegue en Inference Endpoints.
 
 ## Casos de uso
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks (WER, CER) en la informacion dispon
 - VRAM estimada para inferencia: con 326 M de parámetros en fp32, el modelo ocupa aproximadamente 1,3 GB en memoria. En fp16 o con cuantización, puede reducirse a unos 650 MB.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o más de VRAM es suficiente, incluyendo GTX 1660, RTX 3060, RTX 4060 o superiores. También ejecutable en CPU para inferencia por lotes pequeña.
 - Compatible con GPU de gama baja y entornos sin GPU: al ser un modelo de tamaño moderado, es viable su ejecución en CPU para transcripción offline sin requisitos de tiempo real.
-- Opciones de despliegue: HuggingFace Transformers con PyTorch, HuggingFace Inference Endpoints (marcado como `endpoints_compatible`), y potencialmente ONNX Runtime o TensorRT si se exporta el modelo.
+- Opciones de despliegue: Hugging Face Transformers con PyTorch, Hugging Face Inference Endpoints (marcado como `endpoints_compatible`), y potencialmente ONNX Runtime o TensorRT si se exporta el modelo.
 - Latencia y throughput: no disponibles. Los modelos CTC son notablemente más rápidos que los ASR autoregresivos, pero no se han publicado cifras concretas para esta variante.
 
 ## Comparativa con modelos similares
@@ -77,8 +77,8 @@ La diferencia principal con la variante LLM de OmniLingual es la velocidad: los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uctnlp/omniASR-CTC-300M-v2-Zulu-All-v2
-- Organización UCT NLP en HuggingFace: https://huggingface.co/uctnlp
+- Modelo en Hugging Face: https://huggingface.co/uctnlp/omniASR-CTC-300M-v2-Zulu-All-v2
+- Organización UCT NLP en Hugging Face: https://huggingface.co/uctnlp
 - Modelo hermano (isiZulu, licencia apache-2.0): https://huggingface.co/uctnlp/omniASR-CTC-300m-v2-Zulu
 - Repositorio OmniLingual ASR (Meta): https://github.com/facebookresearch/omnilingual-asr
 - Documentación de modelos CTC en OmniLingual: https://deepwiki.com/facebookresearch/omnilingual-asr/2.2.2-ctc-models-(fast-asr)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `eus-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` es un modelo de generacion de texto de tipo decoder-only con arquitectura GPT-2 y 124.770.816 parametros, publicado por el usuario `francesca9805` en HuggingFace. Se trata de un ajuste fino (SFT) del modelo `francesca9805/eus-latn-100mb-ppt-mp-struct-core-100mb_seed455`, realizado con la libreria TRL en su version 0.23.0 sobre Transformers 4.56.2.
+El modelo `eus-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` es un modelo de generacion de texto de tipo decoder-only con arquitectura GPT-2 y 124.770.816 parametros, publicado por el usuario `francesca9805` en Hugging Face. Se trata de un ajuste fino (SFT) del modelo `francesca9805/eus-latn-100mb-ppt-mp-struct-core-100mb_seed455`, realizado con la libreria TRL en su version 0.23.0 sobre Transformers 4.56.2.
 
 El identificador del modelo sugiere un experimento centrado en euskera (codigo ISO `eus`, variante `latn`) sobre un corpus de aproximadamente 100 MB, con un vocabulario o tokenizador propio (el proyecto de Weights & Biases asociado se llama `new-tokenizers`) y el checkpoint numero 500 de una semilla concreta (seed 455). Se enmarca, por tanto, en el ambito de la investigacion en procesamiento de lenguaje natural para lenguas de bajos recursos, donde el euskera cuenta con relativamente pocos corpus abiertos de gran tamano.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `eus-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` (este modelo) | 124,77 M | no disponible | presumiblemente euskera | no disponible | HuggingFace, 0 descargas |
+| `eus-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` (este modelo) | 124,77 M | no disponible | presumiblemente euskera | no disponible | Hugging Face, 0 descargas |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | ingles principalmente | MIT | ampliamente disponible |
-| Familia Latxa (HiTZ, UPV/EHU) | 7B y superiores | no disponible en esta ficha | euskera y castellano | depende de la version | HuggingFace |
+| Familia Latxa (HiTZ, UPV/EHU) | 7B y superiores | no disponible en esta ficha | euskera y castellano | depende de la version | Hugging Face |
 
 La comparacion con GPT-2 small es la mas directa por tamano y arquitectura, aunque ambos difieren en el idioma objetivo y en el corpus de entrenamiento. Frente a la familia Latxa, orientada especificamente al euskera con modelos de orden superior, este checkpoint se situa en una escala mucho menor y sin resultados publicados que permitan una comparacion cuantitativa. No se dispone de datos suficientes para establecer una comparativa de rendimiento con alternativas de la misma categoria.
 
@@ -91,7 +91,7 @@ La comparacion con GPT-2 small es la mas directa por tamano y arquitectura, aunq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eus-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eus-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/eus-latn-100mb-ppt-mp-struct-core-100mb_seed455
 - Ejecucion del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/672zezgc
 - Repositorio de TRL: https://github.com/huggingface/trl

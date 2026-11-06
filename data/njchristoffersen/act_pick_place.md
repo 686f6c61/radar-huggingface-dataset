@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`njchristoffersen/act_pick_place` es una politica robotica de aprendizaje por imitacion basada en ACT (Action Chunking with Transformers), el metodo descrito en el paper arXiv:2304.13705 y referenciado en la propia model card. El autor (njchristoffersen) la ha entrenado y publicado con LeRobot, la libreria de HuggingFace para machine learning en robotica real, y el repositorio ocupa 0,2 GB con pesos en formato safetensors.
+`njchristoffersen/act_pick_place` es una politica robotica de aprendizaje por imitacion basada en ACT (Action Chunking with Transformers), el metodo descrito en el paper arXiv:2304.13705 y referenciado en la propia model card. El autor (njchristoffersen) la ha entrenado y publicado con LeRobot, la libreria de Hugging Face para machine learning en robotica real, y el repositorio ocupa 0,2 GB con pesos en formato safetensors.
 
 El modelo resuelve una tarea concreta de manipulacion: "place black cylinder in red bowl" (colocar un cilindro negro en un cuenco rojo), sobre un robot de tipo `so_follower` con dos camaras (`wrist` y `top`). Consume el estado del robot (vector de 6 dimensiones) y dos imagenes RGB de 3x240x320, y produce un vector de accion de 6 dimensiones. Es, por tanto, un componente de control de bajo nivel, no un modelo de lenguaje ni un sistema multimodal general.
 
@@ -93,11 +93,11 @@ La diferencia clave frente a los VLA es que este modelo no acepta instrucciones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/njchristoffersen/act_pick_place
+- Modelo en Hugging Face: https://huggingface.co/njchristoffersen/act_pick_place
 - Dataset de entrenamiento: https://huggingface.co/datasets/njchristoffersen/pick_place_demo_20260922_103418
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=njchristoffersen/pick_place_demo_20260922_103418
 - Paper de ACT (arXiv:2304.13705): https://arxiv.org/abs/2304.13705
-- Paper de ACT en HuggingFace Papers: https://huggingface.co/papers/2304.13705
+- Paper de ACT en Hugging Face Papers: https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Guia de ACT en LeRobot: https://huggingface.co/docs/lerobot/main/en/act
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index

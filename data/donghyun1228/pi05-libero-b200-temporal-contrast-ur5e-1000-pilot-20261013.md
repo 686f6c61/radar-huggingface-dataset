@@ -2,7 +2,7 @@
 
 ## Resumen
 
-π₀.₅ temporal correspondence contrast pilot: ur5e es un artefacto de investigación publicado por el usuario Donghyun1228 en HuggingFace, etiquetado con las etiquetas `openpi`, `robotics`, `libero`, `inverse-dynamics` y `temporal-contrast`. No se trata de un modelo de lenguaje generalista, sino de una política robótica derivada de π₀.₅ (Physical Intelligence) sobre el framework OpenPI, sometida a un piloto de ajuste de 1.000 actualizaciones de optimizador con una técnica denominada contraste de correspondencia temporal sobre un modelo de dinámica inversa (IDM) a partir de futuras observaciones.
+π₀.₅ temporal correspondence contrast pilot: ur5e es un artefacto de investigación publicado por el usuario Donghyun1228 en Hugging Face, etiquetado con las etiquetas `openpi`, `robotics`, `libero`, `inverse-dynamics` y `temporal-contrast`. No se trata de un modelo de lenguaje generalista, sino de una política robótica derivada de π₀.₅ (Physical Intelligence) sobre el framework OpenPI, sometida a un piloto de ajuste de 1.000 actualizaciones de optimizador con una técnica denominada contraste de correspondencia temporal sobre un modelo de dinámica inversa (IDM) a partir de futuras observaciones.
 
 El piloto se ejecuta con batch B32, semilla 42 y semilla de sorteo 170013, y emplea un mecanismo de asignación dinámica de multiplicadores de gradiente entre los módulos de visión, LLM y experto de acción, acotado en el rango [0,01, 20]. El objetivo declarado es evaluar si una señal de correspondencia temporal futura mejora la política frente a un control fijo equivalente, manteniendo idénticos los sorteos del optimizador y los hashes iniciales.
 
@@ -17,7 +17,7 @@ La relevancia del artefacto es metodológica más que de producto: documenta con
 | Parámetros activos | no disponible (no se confirma que sea MoE; la model card solo desglosa multiplicadores por módulo visión/LLM/experto) |
 | Longitud de contexto | no disponible (la ventana de entrenamiento es H10: 10 pasos nativos; 535.872 ventanas H10 elegibles) |
 | Tipos de cuantización | no disponible (el grafo de despliegue se restaura en BF16; el piloto bruto conserva 43 hojas FP32 entrenables) |
-| Idiomas soportados | no disponible (la ficha de HuggingFace no declara idiomas; las instrucciones proceden del dataset objetivo) |
+| Idiomas soportados | no disponible (la ficha de Hugging Face no declara idiomas; las instrucciones proceden del dataset objetivo) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | BF16 en el grafo de despliegue, con hojas FP32 en el piloto bruto; no se especifica el contenedor de fichero (safetensors, GGUF u otros) |
 
@@ -86,9 +86,9 @@ El autor indica expresamente que estos cribados únicos de 400 episodios son pre
 
 | Modelo | Base | Ámbito | Contexto | Licencia | Disponibilidad | Resultado publicado |
 |---|---|---|---|---|---|---|
-| Donghyun1228/pi05-libero-b200-temporal-contrast-ur5e-1000-pilot-20261013 | π₀.₅ / OpenPI | Piloto de contraste temporal con IDM sobre LIBERO, UR5e | Ventanas H10 | Apache 2.0 | Público en HuggingFace, 0 descargas | 168/400 (42,00 %) en cribado ur5e emparejado |
-| Donghyun1228/pi05-libero-dense-contact-d2-wrist-kd-yaw10-20261003 | π₀.₅ / OpenPI | Adaptación de marco de acción con yaw 10 y destilación de representación (imagen base, muñeca, prompt) | no disponible | Apache 2.0 (según la etiqueta del repositorio; verificar en la ficha) | Público en HuggingFace | Final en el paso 9999 de 10.000 actualizaciones; sin tasa de éxito en la información disponible |
-| jwwoo/pi05_libero_B200 | π₀.₅ (Physical Intelligence) | Modelo base π₀.₅ adaptado a LIBERO, implementación LeRobot basada en OpenPI | no disponible | no disponible | Público en HuggingFace | no disponible |
+| Donghyun1228/pi05-libero-b200-temporal-contrast-ur5e-1000-pilot-20261013 | π₀.₅ / OpenPI | Piloto de contraste temporal con IDM sobre LIBERO, UR5e | Ventanas H10 | Apache 2.0 | Público en Hugging Face, 0 descargas | 168/400 (42,00 %) en cribado ur5e emparejado |
+| Donghyun1228/pi05-libero-dense-contact-d2-wrist-kd-yaw10-20261003 | π₀.₅ / OpenPI | Adaptación de marco de acción con yaw 10 y destilación de representación (imagen base, muñeca, prompt) | no disponible | Apache 2.0 (según la etiqueta del repositorio; verificar en la ficha) | Público en Hugging Face | Final en el paso 9999 de 10.000 actualizaciones; sin tasa de éxito en la información disponible |
+| jwwoo/pi05_libero_B200 | π₀.₅ (Physical Intelligence) | Modelo base π₀.₅ adaptado a LIBERO, implementación LeRobot basada en OpenPI | no disponible | no disponible | Público en Hugging Face | no disponible |
 | π₀.₅ (modelo original de Physical Intelligence) | — | Política robótica generalista de mundo abierto | no disponible | no disponible | Referenciado en OpenPI y en el repositorio openpi05 | no disponible en la información proporcionada |
 
 No se dispone de datos comparativos de rendimiento homogéneos entre estos artefactos: las cifras publicadas corresponden a cribados con protocolos distintos o no se publican.
@@ -107,11 +107,11 @@ No se dispone de datos comparativos de rendimiento homogéneos entre estos artef
 - Riesgo de alucinación y sesgos: no evaluables con la información disponible; al tratarse de una política de control, el modo de fallo relevante es la acción incorrecta o insegura, no la generación de texto.
 - Licencia Apache 2.0, que en principio permite uso comercial, pero conviene verificar las condiciones del dataset objetivo y de los pesos base de π₀.₅ antes de un uso productivo.
 - Artefacto con 0 descargas y 0 likes en el momento de la consulta, sin revisión por pares ni validación externa conocida.
-- Las fechas de creación y actualización del repositorio (2026-10-12) figuran en la ficha de HuggingFace tal cual; no se dispone de información adicional que las confirme o explique.
+- Las fechas de creación y actualización del repositorio (2026-10-12) figuran en la ficha de Hugging Face tal cual; no se dispone de información adicional que las confirme o explique.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-b200-temporal-contrast-ur5e-1000-pilot-20261013
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-b200-temporal-contrast-ur5e-1000-pilot-20261013
 - Dataset objetivo: https://huggingface.co/Donghyun1228/libero-xe-ur5e-dense-contact-probe-20261010
 - Modelo hermano (destilación de muñeca, yaw 10): https://huggingface.co/Donghyun1228/pi05-libero-dense-contact-d2-wrist-kd-yaw10-20261003
 - Modelo base π₀.₅ adaptado a LIBERO: https://huggingface.co/jwwoo/pi05_libero_B200

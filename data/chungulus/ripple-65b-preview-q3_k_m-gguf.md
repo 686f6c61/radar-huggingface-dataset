@@ -86,7 +86,7 @@ La comparación es orientativa en tamano y licencia; no existen datos de rendimi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chungulus/Ripple-65B-Preview-Q3_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Chungulus/Ripple-65B-Preview-Q3_K_M-GGUF
 - Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
 - Revisión concreta del modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview/tree/e27e171792f303d74c048184e8259ba663cfa0d5
 - Pull request de llama.cpp: https://github.com/ggml-org/llama.cpp/pull/31692

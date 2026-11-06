@@ -32,7 +32,7 @@ La relevancia es limitada y condicionada: el repositorio no incluye model card t
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base en los datos proporcionados. El repositorio no incluye model card tecnica, ni referencia a un paper, ni descripcion de la topologia (transformer denso, MoE, SSM o hibrida). Lo unico verificable es el recuento de parametros del modelo original (12.247.782.400 en safetensors) y que la cuantizacion se ha realizado con la version 2 del cuantizador de llama.cpp sobre pesos convertidos desde el formato de HuggingFace (`convert_type: hf`).
+No se dispone de informacion sobre la arquitectura del modelo base en los datos proporcionados. El repositorio no incluye model card tecnica, ni referencia a un paper, ni descripcion de la topologia (transformer denso, MoE, SSM o hibrida). Lo unico verificable es el recuento de parametros del modelo original (12.247.782.400 en safetensors) y que la cuantizacion se ha realizado con la version 2 del cuantizador de llama.cpp sobre pesos convertidos desde el formato de Hugging Face (`convert_type: hf`).
 
 Tampoco hay informacion sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o RLVR. La etiqueta "conversational" indica que el pipeline previsto es el de dialogo, y el sufijo "Thinking" del nombre apunta a un modo de razonamiento explicito, pero se trata de inferencias a partir de la nomenclatura, no de datos confirmados. No se documenta ninguna innovacion tecnica especifica (decodificacion especulativa, atencion lineal u otras).
 
@@ -85,7 +85,7 @@ Las cifras de tamano de fichero y VRAM son estimaciones calculadas a partir de l
 - Cabe en GPU de consumo: si. Las variantes Q4_K_M y Q5_K_M caben en tarjetas con 12 GB de VRAM (RTX 3060 12 GB, RTX 4070, RTX 5070); las variantes Q6_K y Q8_0 requieren 16 GB o mas (RTX 4080, RTX 4090, RTX 5090) para alojar el modelo completo en memoria de video.
 - GPU profesionales: A100 40/80 GB, H100, L40S y A6000 admiten sin problema cualquier cuantizacion, incluida f16 en el caso de las de 40 GB o mas.
 - Ejecucion en CPU: viable con llama.cpp en las cuantizaciones Q2_K a Q4_K_M sobre un equipo con 16-32 GB de RAM; el rendimiento dependera del numero de nucleos y del ancho de banda de memoria.
-- Opciones de despliegue: llama.cpp (nativo), Ollama, LM Studio, koboldcpp y llama-cpp-python son las rutas mas directas para GGUF. vLLM ofrece soporte GGUF limitado y experimental; TGI no es la via recomendada para este formato. La etiqueta "endpoints_compatible" sugiere compatibilidad con endpoints al estilo de HuggingFace.
+- Opciones de despliegue: llama.cpp (nativo), Ollama, LM Studio, koboldcpp y llama-cpp-python son las rutas mas directas para GGUF. vLLM ofrece soporte GGUF limitado y experimental; TGI no es la via recomendada para este formato. La etiqueta "endpoints_compatible" sugiere compatibilidad con endpoints al estilo de Hugging Face.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo para ninguna de las cuantizaciones.
 - Nota sobre el contexto: al desconocerse la longitud de contexto del modelo base, el consumo de cache KV es indeterminado; en modelos de este tamano suele anadir entre 1 y 4 GB adicionales de VRAM segun la ventana configurada.
 
@@ -118,7 +118,7 @@ La ventaja diferencial del repositorio evaluado es la amplitud de la matriz de c
 
 ## Enlaces
 
-- Repositorio HuggingFace evaluado: https://huggingface.co/mradermacher/RPBizkit-v11-12B-Thinking-GGUF
+- Repositorio Hugging Face evaluado: https://huggingface.co/mradermacher/RPBizkit-v11-12B-Thinking-GGUF
 - Modelo base: https://huggingface.co/RicardoEstep/RPBizkit-v11-12B-Thinking
 - Repositorio de referencia del autor de cuantizaciones: https://huggingface.co/mradermacher
 - llama.cpp (motor de inferencia GGUF): https://github.com/ggml-org/llama.cpp

@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Audante/FLUX.2-klein-4B-mflux-q4
+- Repositorio en Hugging Face: https://huggingface.co/Audante/FLUX.2-klein-4B-mflux-q4
 - Fuente original: https://huggingface.co/mflux-community/flux2-klein-4b-mflux-q4
 - Modelo base oficial: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B

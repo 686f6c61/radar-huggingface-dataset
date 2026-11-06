@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZHUOZA/Qwen3.8-Flash-Next-Uncensored-NVFP4-MTP-GGUF es un repositorio de pesos cuantizados alojado en HuggingFace por el usuario ZHUOZA. Por el nombre se deduce que se trata de una variante "uncensored" (con los mecanismos de rechazo o alineamiento de seguridad relajados o eliminados) del modelo Qwen3.8-Flash-Next, publicado en formato GGUF y con pesos cuantizados en NVFP4, además de incluir MTP (multi-token prediction, probablemente módulos de decodificación especulativa). La licencia declarada remite a la Qwen Community License 1.0 del modelo base.
+ZHUOZA/Qwen3.8-Flash-Next-Uncensored-NVFP4-MTP-GGUF es un repositorio de pesos cuantizados alojado en Hugging Face por el usuario ZHUOZA. Por el nombre se deduce que se trata de una variante "uncensored" (con los mecanismos de rechazo o alineamiento de seguridad relajados o eliminados) del modelo Qwen3.8-Flash-Next, publicado en formato GGUF y con pesos cuantizados en NVFP4, además de incluir MTP (multi-token prediction, probablemente módulos de decodificación especulativa). La licencia declarada remite a la Qwen Community License 1.0 del modelo base.
 
 La información disponible es mínima: el repositorio no incluye model card descriptiva (el README solo contiene metadatos de licencia), no registra descargas ni interacciones, y no se han publicado especificaciones técnicas, datos de entrenamiento ni resultados de benchmarks. Todos los detalles sobre arquitectura, tamaño o contexto deben considerarse no disponibles en esta ficha, salvo lo que se puede inferir del propio identificador del repositorio.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| ZHUOZA/Qwen3.8-Flash-Next-Uncensored-NVFP4-MTP-GGUF | no disponible | no disponible | qwen-community-1.0 | GGUF (NVFP4) | HuggingFace, 0 descargas |
-| Qwen3.8-Flash-Next (modelo base) | no disponible | no disponible | qwen-community-1.0 | no disponible | HuggingFace (referenciado en la licencia) |
-| Otras variantes GGUF de Qwen | no disponible | no disponible | qwen-community-1.0 | GGUF | HuggingFace |
+| ZHUOZA/Qwen3.8-Flash-Next-Uncensored-NVFP4-MTP-GGUF | no disponible | no disponible | qwen-community-1.0 | GGUF (NVFP4) | Hugging Face, 0 descargas |
+| Qwen3.8-Flash-Next (modelo base) | no disponible | no disponible | qwen-community-1.0 | no disponible | Hugging Face (referenciado en la licencia) |
+| Otras variantes GGUF de Qwen | no disponible | no disponible | qwen-community-1.0 | GGUF | Hugging Face |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoría.
 
@@ -81,6 +81,6 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ZHUOZA/Qwen3.8-Flash-Next-Uncensored-NVFP4-MTP-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/ZHUOZA/Qwen3.8-Flash-Next-Uncensored-NVFP4-MTP-GGUF
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - Modelo base (referenciado): https://huggingface.co/Qwen/Qwen3.8-Flash-Next

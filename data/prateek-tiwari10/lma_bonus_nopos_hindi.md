@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LMA_bonus_nopos_hindi es un modelo de investigación publicado por el usuario Prateek-Tiwari10 en HuggingFace. Se trata de un Transformer decoder-only de 11 capas, con d_model de 384 y 6 cabezas de atención, que cuenta con 25.663.872 parámetros. Su particularidad es que ha sido entrenado eliminando por completo la tabla de embeddings posicionales absolutos aprendidos (`positional: "none"`), de modo que el modelo carece de una representación explícita del orden de los tokens.
+LMA_bonus_nopos_hindi es un modelo de investigación publicado por el usuario Prateek-Tiwari10 en Hugging Face. Se trata de un Transformer decoder-only de 11 capas, con d_model de 384 y 6 cabezas de atención, que cuenta con 25.663.872 parámetros. Su particularidad es que ha sido entrenado eliminando por completo la tabla de embeddings posicionales absolutos aprendidos (`positional: "none"`), de modo que el modelo carece de una representación explícita del orden de los tokens.
 
 No es un modelo de propósito general ni un lanzamiento de producto: es una ablación controlada. Según la model card, todo lo demás se mantiene idéntico al modelo estándar de hindi con el que se compara (mismo tokenizador de 16K, mismo corpus y partición, mismo horizonte de una epoch y misma receta de optimización con LR máximo de 3e-3, 750 pasos de warmup y 32 x 2 x 512 tokens por paso). La única variable alterada es la tabla posicional, lo que permite aislar su contribución.
 
@@ -84,7 +84,7 @@ La única comparación documentada es contra el modelo control del mismo proyect
 
 | Modelo | Parametros | Posicionales | Contexto | Perdida de validacion | Licencia | Disponibilidad |
 |---|---:|---|---|---:|---|---|
-| LMA_bonus_nopos_hindi (este) | 25.663.872 | ninguno | 512 tokens (inferido de la configuracion de entrenamiento) | 3,4262 | MIT | HuggingFace, 0 descargas |
+| LMA_bonus_nopos_hindi (este) | 25.663.872 | ninguno | 512 tokens (inferido de la configuracion de entrenamiento) | 3,4262 | MIT | Hugging Face, 0 descargas |
 | Modelo estandar de referencia del mismo proyecto | 25.860.480 | tabla aprendida 512 x 384 | 512 tokens | 3,4033 | no disponible | no disponible como artefacto publico |
 
 No se dispone de datos de benchmarks ni de especificaciones de otros modelos de hindi comparables en la informacion proporcionada, por lo que no es posible establecer una comparativa con alternativas externas.
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks ni de especificaciones de otros modelos de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Prateek-Tiwari10/LMA_bonus_nopos_hindi
+- Hugging Face: https://huggingface.co/Prateek-Tiwari10/LMA_bonus_nopos_hindi
 - Repositorio del proyecto (mencionado en la model card como origen de `lm/model.py`): no disponible, la model card no incluye la URL
 - Paper o informe tecnico: no disponible
 - Demo o Space: no disponible

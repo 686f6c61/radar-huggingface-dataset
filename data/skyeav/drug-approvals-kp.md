@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Drug Approvals Knowledge Provider (DAKP) es un grafo de conocimiento en formato KGX publicado por el usuario SkyeAv en HuggingFace bajo el identificador SkyeAv/drug-approvals-kp. No es un modelo de lenguaje ni una red neuronal: es un conjunto de datos estructurado (nodos y aristas en NDJSON) que recoge relaciones de tratamiento entre fármacos y enfermedades aprobadas por la FDA y la EMA, usos observados de tipo applied_to_treat procedentes de FAERS y texto de contraindicaciones extraído del Structured Product Labeling de DailyMed.
+Drug Approvals Knowledge Provider (DAKP) es un grafo de conocimiento en formato KGX publicado por el usuario SkyeAv en Hugging Face bajo el identificador SkyeAv/drug-approvals-kp. No es un modelo de lenguaje ni una red neuronal: es un conjunto de datos estructurado (nodos y aristas en NDJSON) que recoge relaciones de tratamiento entre fármacos y enfermedades aprobadas por la FDA y la EMA, usos observados de tipo applied_to_treat procedentes de FAERS y texto de contraindicaciones extraído del Structured Product Labeling de DailyMed.
 
 El grafo se construye con la herramienta Tablassert y se valida contra el Biolink Model, con la fuente de conocimiento primaria identificada como infores:drugapprovals-kp. La última versión publicada, 1.22.0, contiene 15.883 nodos y 131.678 aristas, con 0 fallos de validación sobre el total de registros. El repositorio ocupa aproximadamente 0,2 GB y la licencia es Apache 2.0.
 
@@ -33,7 +33,7 @@ Su relevancia actual radica en el ecosistema Translator y en el trabajo de farma
 | Herramienta de construccion | Tablassert |
 | Herramienta de validacion | tablassert validate-kgx con Tablassert 19.5.1 |
 | Fuente de conocimiento primaria | infores:drugapprovals-kp |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-10-05 / 2026-10-05 |
 
 ## Arquitectura y entrenamiento
@@ -54,7 +54,7 @@ El versionado se organiza en un directorio de nivel superior por release, anclad
 - Filtrado por contexto clínico y demográfico: sex_qualifier, population_context_qualifier, frequency_qualifier, anatomical_context_qualifier y temporal_context_qualifier.
 - Clasificación de cada arista por knowledge_level y agent_type.
 - Interoperabilidad con el ecosistema Biolink Model (4.4.5) y con herramientas compatibles con KGX.
-- Carga directa mediante load_dataset de HuggingFace con configuraciones separadas por release (1.22.0_edges marcada como default).
+- Carga directa mediante load_dataset de Hugging Face con configuraciones separadas por release (1.22.0_edges marcada como default).
 - No dispone de generación de texto, tool calling, razonamiento multi-paso, visión ni audio; esas capacidades corresponden a modelos de lenguaje, no a este recurso.
 
 ## Casos de uso
@@ -86,7 +86,7 @@ No se han publicado metricas de cobertura, exhaustividad, precision de las extra
 - No requiere GPU: es un recurso de datos, no un modelo de inferencia.
 - Almacenamiento: el repositorio completo ocupa aproximadamente 0,2 GB; la release 1.22.0 suma 2.106.621 bytes de nodos, 173.816.718 bytes de aristas y 18.231 bytes de RIG.
 - Memoria RAM: no disponible de forma oficial. Como referencia, cargar el fichero de aristas (unos 166 MiB de NDJSON) en memoria requiere un orden de magnitud de varios cientos de MiB a pocos GiB según el formato de destino (objetos Python, DataFrame o base de datos de grafos).
-- Despliegue: carga directa con load_dataset de HuggingFace seleccionando la configuración de release; también es posible procesar los NDJSON con herramientas de línea de comandos, pandas o cargarlos en una base de datos de grafos compatible con Biolink/KGX.
+- Despliegue: carga directa con load_dataset de Hugging Face seleccionando la configuración de release; también es posible procesar los NDJSON con herramientas de línea de comandos, pandas o cargarlos en una base de datos de grafos compatible con Biolink/KGX.
 - Latencia y throughput: no disponibles; dependen íntegramente del motor de consulta o del pipeline que consuma los datos.
 - Nota operativa: el autor advierte de que la inferencia automática de esquema falla al convertir la estructura anidada sources, por lo que las características se declaran explícitamente en la model card y conviene respetarlas al cargar.
 
@@ -96,7 +96,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Por categor
 
 | Recurso | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DAKP (SkyeAv/drug-approvals-kp) | no aplicable (grafo de conocimiento) | no aplicable | Apache 2.0 | HuggingFace, 1.22.0 / 1.21.0 / 1.16.0 |
+| DAKP (SkyeAv/drug-approvals-kp) | no aplicable (grafo de conocimiento) | no aplicable | Apache 2.0 | Hugging Face, 1.22.0 / 1.21.0 / 1.16.0 |
 | Alternativas de la misma categoria (grafos de conocimiento farmacologicos) | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -115,7 +115,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Por categor
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/SkyeAv/drug-approvals-kp (identificador de dataset: https://huggingface.co/datasets/SkyeAv/drug-approvals-kp)
+- Ficha en Hugging Face: https://huggingface.co/SkyeAv/drug-approvals-kp (identificador de dataset: https://huggingface.co/datasets/SkyeAv/drug-approvals-kp)
 - Repositorio de construccion en GitHub: https://github.com/glusman-team/dakp
 - Documentacion de KGX (formato de los ficheros): no disponible en la informacion proporcionada
 - Documentacion de Biolink Model: no disponible en la informacion proporcionada

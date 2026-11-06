@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks completos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Clef 27B (esta ficha, `solanaclawd/clef-27b-mps-nf4`) | 27.356.728.560 | 16.384 tokens por defecto | Logits por opcion; decision estructurada | Apache-2.0 | Repositorio HuggingFace con codigo personalizado; build NF4 para MPS |
+| Clef 27B (esta ficha, `solanaclawd/clef-27b-mps-nf4`) | 27.356.728.560 | 16.384 tokens por defecto | Logits por opcion; decision estructurada | Apache-2.0 | Repositorio Hugging Face con codigo personalizado; build NF4 para MPS |
 | Cloudflare Clef-Flash | no disponible | no disponible | Decision estructurada (variante menor y mas rapida) | no disponible | Referenciado en la model card |
-| Qwen/Qwen3.8-27B (modelo base) | no disponible (es el backbone de Clef) | no disponible | Generacion de texto libre y multimodal | no disponible | HuggingFace |
+| Qwen/Qwen3.8-27B (modelo base) | no disponible (es el backbone de Clef) | no disponible | Generacion de texto libre y multimodal | no disponible | Hugging Face |
 | Enfoques genericos "LLM generativo + parseo de JSON" sobre modelos densos de ~27B | segun el modelo elegido | segun el modelo elegido | Texto libre que hay que parsear | segun el modelo elegido | amplia |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas en la informacion proporcionada.

@@ -66,7 +66,7 @@ Condiciones de evaluación: semilla de entorno 7, evaluador congelado kn_b200, M
 
 | Modelo | Parámetros | Contexto | Rendimiento LIBERO | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 LIBERO yaw10 PAD (este) | no disponible | no disponible | 87,10% (1742/2000) | Apache 2.0 | HuggingFace |
+| π0.5 LIBERO yaw10 PAD (este) | no disponible | no disponible | 87,10% (1742/2000) | Apache 2.0 | Hugging Face |
 | π0.5 base (Physical Intelligence) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Otras filas de la tabla LIBERO del artículo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -85,7 +85,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-pad-vision-head-yaw10-1000-20261105
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-pad-vision-head-yaw10-1000-20261105
 - Checkpoint de inicialización: https://huggingface.co/Donghyun1228/pi05-libero-pad-vision-head-source-n50k-10000-20261104
 - Repositorio de código citado: `Donghyun1228/vla_adaptation` (commit `7b74d01d`), preset `pi05_libero_pad_img_yaw_adapt`
 - OpenPI (ecosistema de referencia): no disponible en la información proporcionada

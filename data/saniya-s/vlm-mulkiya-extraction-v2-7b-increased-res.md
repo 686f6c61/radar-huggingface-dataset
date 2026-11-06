@@ -83,7 +83,7 @@ No hay datos publicados de rendimiento comparativo de este adaptador frente a es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Saniya-s/vlm-mulkiya-extraction-v2-7b-increased-res
+- Modelo en Hugging Face: https://huggingface.co/Saniya-s/vlm-mulkiya-extraction-v2-7b-increased-res
 - Modelo base: https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct
 - Documentacion de Qwen2-VL: no disponible en la informacion proporcionada
 - Repositorio de entrenamiento: no disponible

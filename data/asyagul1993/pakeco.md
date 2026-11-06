@@ -6,7 +6,7 @@ PakEco (publicado como `Asyagul1993/PakEco`) no es un modelo de lenguaje con pes
 
 El valor del proyecto, por tanto, no está en capacidades de modelado propias, sino en la orquestación de servicios externos: Open-Meteo proporciona variables de PM2,5, PM10, AQI estadounidense y AQI europeo basadas en el pronóstico de composición atmosférica de CAMS, y Gemini actúa como capa de generación de lenguaje para el asistente medioambiental. Cualquier evaluación del "modelo" en el sentido habitual (benchmarks, parámetros, contexto) carece de sentido aquí, porque la inferencia se delega íntegramente a un servicio propietario de Google cuya versión concreta no se especifica.
 
-Los metadatos de HuggingFace indican 0 descargas y 0 likes, licencia no disponible, idiomas no declarados y etiqueta `region:us`. La fecha de creación registrada (12 de septiembre de 2026) es posterior a la fecha de actualización de la mayoría de repositorios públicos consultados y resulta inconsistente, por lo que conviene tratarla con cautela. El propio autor declara una limitación importante: los valores de contaminación son modelados y están ligados a coordenadas seleccionadas, no son mediciones de estaciones oficiales de monitorización.
+Los metadatos de Hugging Face indican 0 descargas y 0 likes, licencia no disponible, idiomas no declarados y etiqueta `region:us`. La fecha de creación registrada (12 de septiembre de 2026) es posterior a la fecha de actualización de la mayoría de repositorios públicos consultados y resulta inconsistente, por lo que conviene tratarla con cautela. El propio autor declara una limitación importante: los valores de contaminación son modelados y están ligados a coordenadas seleccionadas, no son mediciones de estaciones oficiales de monitorización.
 
 ## Especificaciones tecnicas
 
@@ -87,7 +87,7 @@ No disponible. PakEco no es un modelo de lenguaje ni un modelo de predicción de
 - Los valores de contaminación son modelados y están vinculados a coordenadas seleccionadas. No deben presentarse como mediciones de estaciones oficiales de monitorización, tal como advierte explícitamente el autor.
 - El asistente evita el diagnóstico médico de forma intencionada, pero no se documenta ninguna evaluación clínica ni de seguridad sanitaria.
 - Limitaciones de contexto e idioma: no disponibles. No se declaran idiomas soportados ni límites de longitud de conversación.
-- Restricciones de licencia: la licencia figura como no disponible en los metadatos de HuggingFace, por lo que el uso comercial no está autorizado de forma explícita y requiere contactar con el autor.
+- Restricciones de licencia: la licencia figura como no disponible en los metadatos de Hugging Face, por lo que el uso comercial no está autorizado de forma explícita y requiere contactar con el autor.
 - Dependencia de terceros: la aplicación deja de funcionar o degrada su funcionalidad si fallan las APIs de Open-Meteo o si la clave de Gemini no es válida, no tiene cuota o se revoca.
 - Obligaciones de atribución: al publicar o redistribuir datos de Open-Meteo hay que cumplir los requisitos de atribución vigentes relativos a CAMS/Open-Meteo.
 - Versionado ausente: no se especifica la versión del modelo Gemini ni los parámetros de generación, lo que impide reproducir resultados de forma fiable.
@@ -97,7 +97,7 @@ No disponible. PakEco no es un modelo de lenguaje ni un modelo de predicción de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Asyagul1993/PakEco
+- Repositorio en Hugging Face: https://huggingface.co/Asyagul1993/PakEco
 - Documentación de la API de calidad del aire de Open-Meteo: https://open-meteo.com/en/docs/air-quality-api
 - Documentación de la API meteorológica de Open-Meteo: https://open-meteo.com/en/docs
 - Documentación de la API de Gemini: https://ai.google.dev/gemini-api/docs

@@ -85,7 +85,7 @@ No es posible establecer una comparación cuantitativa: el repositorio no public
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fatangel420/NSFW-Character-Sheets-KREA2
+- Repositorio en Hugging Face: https://huggingface.co/fatangel420/NSFW-Character-Sheets-KREA2
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - Paquete de nodos personalizados ComfyUI-Krea2Edit: https://github.com/lbouaraba/comfyui-krea2edit
 - Búsqueda web: no se han encontrado enlaces relevantes (los resultados devueltos corresponden a servicios de traducción sin relación con el modelo).

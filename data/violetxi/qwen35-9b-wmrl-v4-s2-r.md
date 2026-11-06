@@ -76,7 +76,7 @@ Nota: los datos de los modelos comparativos son de conocimiento general y no for
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-S2-R
+- Hugging Face: https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-S2-R
 - Checkpoint relacionado (misma línea v4, condición n-3m): https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-n-3m
 - Checkpoint relacionado (misma línea v4, smoke-notes): https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-smoke-notes
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B (referencia en la model card)

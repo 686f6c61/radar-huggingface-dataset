@@ -99,8 +99,8 @@ Nota: los resultados de DistilBERT y RoBERTa no se han verificado en esta ficha;
 
 ## Enlaces
 
-- [Adaptador en HuggingFace](https://huggingface.co/artyomboyko/qwen3.5-2b-sst2-prompt-tuning)
-- [Modelo base Qwen3.5-2B-Base en HuggingFace](https://huggingface.co/Qwen/Qwen3.5-2B-Base)
+- [Adaptador en Hugging Face](https://huggingface.co/artyomboyko/qwen3.5-2b-sst2-prompt-tuning)
+- [Modelo base Qwen3.5-2B-Base en Hugging Face](https://huggingface.co/Qwen/Qwen3.5-2B-Base)
 - [Dataset Stanford SST-2](https://huggingface.co/datasets/stanfordnlp/sst2)
 - [Documentacion de PEFT de Hugging Face](https://huggingface.co/docs/peft/)
 - [Lester et al., The Power of Scale for Parameter-Efficient Prompt Tuning (2021)](https://arxiv.org/abs/2104.08691)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AKKII2026/agenticv1` es un modelo de lenguaje de aproximadamente 4.170 millones de parametros publicado en HuggingFace por el usuario AKKII2026 en agosto de 2026. Su nombre y las etiquetas asociadas (`agentic`, `conversational`, `endpoints_compatible`) sugieren que esta orientado a tareas de agente conversacional, aunque la model card publicada no contiene ninguna informacion tecnica mas alla de la licencia BSL-1.0.
+El modelo `AKKII2026/agenticv1` es un modelo de lenguaje de aproximadamente 4.170 millones de parametros publicado en Hugging Face por el usuario AKKII2026 en agosto de 2026. Su nombre y las etiquetas asociadas (`agentic`, `conversational`, `endpoints_compatible`) sugieren que esta orientado a tareas de agente conversacional, aunque la model card publicada no contiene ninguna informacion tecnica mas alla de la licencia BSL-1.0.
 
 El repositorio ocupa 2,6 GB e incluye pesos en formato safetensors, ademas de la etiqueta `gguf` que indica disponibilidad de versiones cuantizadas para inferencia local. Se trata de un modelo pequeno-medio, comparable en tamano a la familia de modelos de 4B parametros, lo que lo hace potencialmente adecuado para despliegue en hardware de consumo. Sin embargo, la ausencia total de documentacion tecnica (arquitectura, datos de entrenamiento, contexto, benchmarks) limita severamente cualquier evaluacion objetiva de sus capacidades.
 
@@ -75,7 +75,7 @@ No es posible establecer una comparativa rigurosa sin datos de arquitectura, ent
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AKKII2026/agenticv1
+- Repositorio Hugging Face: https://huggingface.co/AKKII2026/agenticv1
 - Paper de referencia sobre arquitecturas agenticas (no especifico del modelo): https://arxiv.org/abs/2601.12560
 - Guia de arquitectura MCP para IA agentica (no especifico del modelo): https://neuralcoretech.com/agentic-ai-model-context-protocol-mcp-architecture-2026/
 - Tendencias de IA agentica 2026 (no especifico del modelo): https://machinelearningmastery.com/7-agentic-ai-trends-to-watch-in-2026/

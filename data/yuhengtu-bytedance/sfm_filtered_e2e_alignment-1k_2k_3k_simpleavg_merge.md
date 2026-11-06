@@ -77,9 +77,9 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-1k_2k_3k_simpleavg_merge)
-- [HuggingFace - variante 4k-5k-6k](https://huggingface.co/yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg)
-- [HuggingFace - variante baseline unfiltered](https://huggingface.co/yuhengtu-bytedance/sfm-baseline-unfiltered-4k-5k-6k-avg)
+- [Hugging Face - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-1k_2k_3k_simpleavg_merge)
+- [Hugging Face - variante 4k-5k-6k](https://huggingface.co/yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg)
+- [Hugging Face - variante baseline unfiltered](https://huggingface.co/yuhengtu-bytedance/sfm-baseline-unfiltered-4k-5k-6k-avg)
 - [FriendliAI - despliegue del modelo](https://friendli.ai/models/yuhengtu-bytedance/sfm_filtered_e2e_alignment-1k_2k_3k_merge)
 - [FriendliAI - variante midtrain](https://friendli.ai/models/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg)
 - [Referencia del metodo Linear (arxiv)](https://arxiv.org/abs/2203.05482)

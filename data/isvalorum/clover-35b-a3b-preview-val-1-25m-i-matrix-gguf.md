@@ -6,7 +6,7 @@ Clover-35B-A3B-Preview-VAL-1.25M-I-Matrix-GGUF es una cuantizacion GGUF del mode
 
 El problema que resuelve esta publicacion es el de ofrecer pesos GGUF optimizados con una imatrix de alta calidad para facilitar el despliegue del modelo base en llama.cpp y otros runtimes compatibles, con una distribucion de calibracion cuidadosamente equilibrada entre codigo, razonamiento, texto y herramientas, y entre once idiomas naturales y diez lenguajes de programacion. La imatrix se genero con Flash Attention activada y sobre un pool de datos mucho mayor (version `balanced-4M-35-25-25-15-v2`) del que finalmente se muestreo.
 
-La relevancia actual radica en que las imatrix de calidad son determinantes para el rendimiento de las cuantizaciones de baja precision en modelos MoE, y esta publicacion documenta con un detalle poco habitual el protocolo de calibracion, las cuotas por componente y las comprobaciones de integridad. Sin embargo, conviene advertir que los metadatos de HuggingFace muestran discrepancias importantes (el campo de parametros en safetensors indica 95.887.219, muy lejos de los 35B que sugiere el nombre) que deben tenerse en cuenta antes de confiar en las cifras nominales.
+La relevancia actual radica en que las imatrix de calidad son determinantes para el rendimiento de las cuantizaciones de baja precision en modelos MoE, y esta publicacion documenta con un detalle poco habitual el protocolo de calibracion, las cuotas por componente y las comprobaciones de integridad. Sin embargo, conviene advertir que los metadatos de Hugging Face muestran discrepancias importantes (el campo de parametros en safetensors indica 95.887.219, muy lejos de los 35B que sugiere el nombre) que deben tenerse en cuenta antes de confiar en las cifras nominales.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/IsValorum/Clover-35B-A3B-Preview-VAL-1.25M-I-Matrix-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/IsValorum/Clover-35B-A3B-Preview-VAL-1.25M-I-Matrix-GGUF
 - Modelo base: https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview
 - Revision del modelo base utilizada: `4b0402b65e523d0183a14c431955438714cb16ff`
 - PR de llama.cpp empleado para la calibracion: PR #31306

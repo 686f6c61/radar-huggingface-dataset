@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LFM2.5-350M-SmolDataEnv-Matched2.8K-Dagger1.7K es un ajuste fino (fine-tune) del modelo base LiquidAI/LFM2.5-350M, publicado por el usuario lugman en HuggingFace. Se trata de un modelo de generacion de texto de tipo decoder-only con 354.483.968 parametros (aproximadamente 350 millones), derivado de la familia LFM2 de Liquid AI, una arquitectura disenada para inferencia eficiente en dispositivos de borde (edge devices). El modelo conserva la licencia Apache 2.0 del original y esta etiquetado exclusivamente para el idioma ingles.
+LFM2.5-350M-SmolDataEnv-Matched2.8K-Dagger1.7K es un ajuste fino (fine-tune) del modelo base LiquidAI/LFM2.5-350M, publicado por el usuario lugman en Hugging Face. Se trata de un modelo de generacion de texto de tipo decoder-only con 354.483.968 parametros (aproximadamente 350 millones), derivado de la familia LFM2 de Liquid AI, una arquitectura disenada para inferencia eficiente en dispositivos de borde (edge devices). El modelo conserva la licencia Apache 2.0 del original y esta etiquetado exclusivamente para el idioma ingles.
 
-El nombre del repositorio sugiere que el ajuste fino se ha realizado sobre un dataset de tipo "SmolDataEnv" con configuraciones de 2.800 y 1.700 pasos (posiblemente relacionados con iteraciones de entrenamiento tipo DAgger, un algoritmo de aprendizaje por imitacion), aunque la model card no aporta detalles sobre la composicion del dataset ni la metodologia exacta. El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, segun indica el autor, lo que implica un proceso de fine-tuning supervisado (SFT) optimizado para velocidad.
+El nombre del repositorio sugiere que el ajuste fino se ha realizado sobre un dataset de tipo "SmolDataEnv" con configuraciones de 2.800 y 1.700 pasos (posiblemente relacionados con iteraciones de entrenamiento tipo DAgger, un algoritmo de aprendizaje por imitacion), aunque la model card no aporta detalles sobre la composicion del dataset ni la metodologia exacta. El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, segun indica el autor, lo que implica un proceso de fine-tuning supervisado (SFT) optimizado para velocidad.
 
 La relevancia de este modelo es limitada en terminos de impacto: cuenta con cero descargas y cero likes en el momento de la consulta, y no se han publicado benchmarks ni documentacion tecnica adicional. Su interes principal radica en ser un ejemplo de fine-tuning ligero sobre la arquitectura LFM2, util para quienes quieran experimentar con modelos pequenos en entornos con recursos restringidos.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LFM2.5-350M-SmolDataEnv-Matched2.8K-Dagger1.7K (este) | 354M | no disponible | Apache 2.0 | HuggingFace | Fine-tune comunitario sin benchmarks |
-| LiquidAI/LFM2.5-350M (base) | ~350M | no disponible | Apache 2.0 | HuggingFace | Modelo original de Liquid AI |
-| Qwen2.5-0.5B | ~494M | 32K (segun documentacion publica de Qwen) | Apache 2.0 | HuggingFace | Alternativa pequena multilingue |
-| SmolLM2-360M | ~362M | 8K (segun documentacion publica de HuggingFace) | Apache 2.0 | HuggingFace | Modelo pequeno de HuggingFace |
+| LFM2.5-350M-SmolDataEnv-Matched2.8K-Dagger1.7K (este) | 354M | no disponible | Apache 2.0 | Hugging Face | Fine-tune comunitario sin benchmarks |
+| LiquidAI/LFM2.5-350M (base) | ~350M | no disponible | Apache 2.0 | Hugging Face | Modelo original de Liquid AI |
+| Qwen2.5-0.5B | ~494M | 32K (segun documentacion publica de Qwen) | Apache 2.0 | Hugging Face | Alternativa pequena multilingue |
+| SmolLM2-360M | ~362M | 8K (segun documentacion publica de Hugging Face) | Apache 2.0 | Hugging Face | Modelo pequeno de Hugging Face |
 
 Nota: los datos de contexto y parametros de los modelos comparativos provienen de documentacion publica general; no se dispone de comparaciones de rendimiento directas con este fine-tune.
 
@@ -82,7 +82,7 @@ Nota: los datos de contexto y parametros de los modelos comparativos provienen d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Dagger1.7K
+- Hugging Face: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Dagger1.7K
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL: https://github.com/huggingface/trl

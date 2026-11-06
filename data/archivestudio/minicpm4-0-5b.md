@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiniCPM4-0.5B | 0,43B | hasta 128K | Apache 2.0 | HuggingFace (este repo) |
-| Qwen2.5-0.5B | 0,5B | 32K (segun especificaciones publicas de Qwen2.5) | Apache 2.0 | HuggingFace |
-| SmolLM2-360M | 0,36B | 8K (segun especificaciones publicas de SmolLM2) | Apache 2.0 | HuggingFace |
-| MiniCPM4-8B | 8B | hasta 128K | Apache 2.0 | HuggingFace (openbmb) |
+| MiniCPM4-0.5B | 0,43B | hasta 128K | Apache 2.0 | Hugging Face (este repo) |
+| Qwen2.5-0.5B | 0,5B | 32K (segun especificaciones publicas de Qwen2.5) | Apache 2.0 | Hugging Face |
+| SmolLM2-360M | 0,36B | 8K (segun especificaciones publicas de SmolLM2) | Apache 2.0 | Hugging Face |
+| MiniCPM4-8B | 8B | hasta 128K | Apache 2.0 | Hugging Face (openbmb) |
 
 Los datos de Qwen2.5-0.5B y SmolLM2-360M se incluyen como referencia de categoria; no se dispone de comparativas de rendimiento publicadas en la informacion proporcionada para establecer diferencias numericas con MiniCPM4-0.5B. La ventaja diferencial de este modelo frente a alternativas de tamano similar es su contexto de hasta 128K con atencion dispersa, frente a ventanas mas cortas en la mayoria de modelos de su escala.
 
@@ -84,7 +84,7 @@ Los datos de Qwen2.5-0.5B y SmolLM2-360M se incluyen como referencia de categori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArchiveStudio/MiniCPM4-0.5B
+- Repositorio en Hugging Face: https://huggingface.co/ArchiveStudio/MiniCPM4-0.5B
 - Repositorio oficial del modelo: https://huggingface.co/openbmb/MiniCPM4-0.5B
 - GitHub del proyecto MiniCPM: https://github.com/OpenBMB/MiniCPM/
 - Informe tecnico de MiniCPM4: https://github.com/OpenBMB/MiniCPM/tree/main/report/MiniCPM_4_Technical_Report.pdf

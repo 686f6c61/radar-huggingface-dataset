@@ -93,7 +93,7 @@ La comparativa se limita a variantes del mismo modelo base porque no se han prop
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Franjarjar/Spark-X2.6-4B-EQ-C3
+- Repositorio Hugging Face: https://huggingface.co/Franjarjar/Spark-X2.6-4B-EQ-C3
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Motor Espetero: https://github.com/JarJarFran/espetero
 - Documentación del formato EQ: https://github.com/JarJarFran/espetero/blob/main/docs/eq.md

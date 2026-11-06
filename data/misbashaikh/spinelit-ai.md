@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MisbaShaikh/spinelit-ai` es un repositorio publicado en HuggingFace por el usuario MisbaShaikh. La model card asociada unicamente declara la licencia MIT y no incluye ninguna descripcion funcional, especificacion tecnica ni ejemplo de uso. No se especifica arquitectura, numero de parametros, longitud de contexto, dataset de entrenamiento ni idiomas soportados.
+`MisbaShaikh/spinelit-ai` es un repositorio publicado en Hugging Face por el usuario MisbaShaikh. La model card asociada unicamente declara la licencia MIT y no incluye ninguna descripcion funcional, especificacion tecnica ni ejemplo de uso. No se especifica arquitectura, numero de parametros, longitud de contexto, dataset de entrenamiento ni idiomas soportados.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y no tiene pipeline declarado, lo que impide clasificarlo dentro de una tarea concreta (text-generation, text-to-image, feature-extraction, etc.). La fecha de creacion y ultima actualizacion es la misma (27 de octubre de 2026), lo que sugiere una publicacion sin iteraciones posteriores.
 
@@ -39,7 +39,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composici
 ## Casos de uso
 
 - No es posible recomendar casos de uso concretos sin especificaciones tecnicas verificables.
-- Evaluacion de pipelines de HuggingFace: el repositorio podria servir como caso de prueba para validar el manejo de artefactos sin pipeline declarado, pero no como modelo funcional.
+- Evaluacion de pipelines de Hugging Face: el repositorio podria servir como caso de prueba para validar el manejo de artefactos sin pipeline declarado, pero no como modelo funcional.
 - Auditoria de licencias: la licencia MIT declarada permite reutilizacion, pero sin pesos ni documentacion no hay nada que reutilizar de forma productiva.
 - Docencia sobre publicacion de modelos: puede usarse como ejemplo negativo de model card incompleta en formacion sobre buenas practicas de publicacion.
 - Pruebas de descubrimiento en el Hub: util para comprobar como indexan los buscadores repositorios sin metadatos.
@@ -75,5 +75,5 @@ No disponible. No es posible identificar modelos comparables al desconocerse la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MisbaShaikh/spinelit-ai
+- Repositorio en Hugging Face: https://huggingface.co/MisbaShaikh/spinelit-ai
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

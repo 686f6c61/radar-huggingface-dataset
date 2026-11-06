@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks para establecer comparaciones de rendimient
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/Aliados/gemma-4-26B-A4B-it-qat-q4_0-unquantized
+- Hugging Face (este checkpoint): https://huggingface.co/Aliados/gemma-4-26B-A4B-it-qat-q4_0-unquantized
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Coleccion QAT Q4_0 de Google: https://huggingface.co/collections/google/gemma-4-qat-q4-0
 - GitHub de Google Gemma: https://github.com/google-gemma

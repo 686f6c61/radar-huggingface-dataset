@@ -6,7 +6,7 @@ KucLab Hertz 0.8F es un ajuste fino de Qwen/Qwen3.5-9B desarrollado por KucLab, 
 
 El modelo cuenta con 8.953.803.264 parametros totales (unos 8,95 mil millones) heredados de su base, una ventana de contexto de 32.768 tokens (num_ctx) y se distribuye tanto en safetensors bf16 (carpeta `merged/`) como en GGUF q4_k_m (aproximadamente 5,3 GB) y en adaptador LoRA. Al estar construido sobre Qwen3.5-9B, conserva la licencia Apache 2.0 del modelo original, lo que permite uso comercial sin restricciones adicionales.
 
-El repositorio tiene 25,1 GB y, en el momento de la consulta, no registra descargas ni interacciones en HuggingFace. La informacion publicada se centra en el proceso de ajuste, el formato de los pesos y las instrucciones de despliegue con Ollama; no se detallan resultados de benchmarks ni comparativas de rendimiento.
+El repositorio tiene 25,1 GB y, en el momento de la consulta, no registra descargas ni interacciones en Hugging Face. La informacion publicada se centra en el proceso de ajuste, el formato de los pesos y las instrucciones de despliegue con Ollama; no se detallan resultados de benchmarks ni comparativas de rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -84,7 +84,7 @@ La informacion proporcionada solo permite comparar de forma directa con el model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KucLab/kuclab-hertz-0.8f
+- Modelo en Hugging Face: https://huggingface.co/KucLab/kuclab-hertz-0.8f
 - Dataset de entrenamiento: https://huggingface.co/datasets/KucLab/kuclab_hertz_0.8f
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Sitio de KucLab: https://kuclab.org

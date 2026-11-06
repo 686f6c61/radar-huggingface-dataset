@@ -18,10 +18,10 @@ Su relevancia práctica está en que permite generar y editar imágenes en hardw
 | Longitud de contexto | No aplica como ventana de contexto de texto; no se especifica longitud máxima de prompt ni resolución nativa en la información disponible |
 | Tipos de cuantización | Repositorio en bf16; no se documentan variantes cuantizadas (8-bit, 4-bit) en la información disponible |
 | Idiomas soportados | Inglés (`en`); el prompt y la caption deben redactarse en inglés |
-| Licencia | `flux-kommunity-license` (marcada como `license:other` en HuggingFace); el prompt upsampler `flux-3-image-klein-pup` es Apache-2.0 |
+| Licencia | `flux-kommunity-license` (marcada como `license:other` en Hugging Face); el prompt upsampler `flux-3-image-klein-pup` es Apache-2.0 |
 | Formato de pesos | safetensors, formato MLX (`library: mlx`, `diffusers`); tamaño del repositorio 20,6 GB |
 | Tareas soportadas | Text-to-image, image-to-image / edición, generación multi-referencia (hasta 10 imágenes), control de layout por bounding boxes |
-| Acceso | Restringido (gated): requiere aceptar las condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar las condiciones en Hugging Face |
 | Fecha de publicación | 18 de octubre de 2026 (creación y última actualización del repositorio) |
 
 ## Arquitectura y entrenamiento
@@ -90,7 +90,7 @@ La comparación cuantitativa no es posible con los datos disponibles: solo se co
 
 ## Limitaciones y advertencias
 
-- Licencia `flux-kommunity-license`: no es una licencia de código abierto estándar. Hay que revisar los términos antes de cualquier uso comercial; el modelo figura como `license:other` y el acceso está restringido tras aceptar condiciones en HuggingFace.
+- Licencia `flux-kommunity-license`: no es una licencia de código abierto estándar. Hay que revisar los términos antes de cualquier uso comercial; el modelo figura como `license:other` y el acceso está restringido tras aceptar condiciones en Hugging Face.
 - Dependencia obligatoria del prompt upsampler: la documentación indica explícitamente que el modelo no debe usarse sin él. Omitirlo degrada la calidad porque el modelo espera una caption completa con medio, escena, iluminación y atributos por sujeto.
 - Idioma: solo inglés. Prompts en castellano requieren traducción previa o un upsampler que traduzca y expanda a la vez.
 - Sin benchmarks numéricos públicos: las afirmaciones de superioridad provienen del propio desarrollador y no se han verificado de forma independiente.
@@ -103,8 +103,8 @@ La comparación cuantitativa no es posible con los datos disponibles: solo se co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/flux-3-image-klein-bf16
-- Modelo base en HuggingFace: https://huggingface.co/black-forest-labs/flux-3-image-klein
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/flux-3-image-klein-bf16
+- Modelo base en Hugging Face: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Código de inferencia de referencia (GitHub): https://github.com/black-forest-labs/flux-3-image-klein
 - Página del modelo en Black Forest Labs: https://bfl.ai/models/flux-3-image-klein
 - Blog de anuncio: https://bfl.ai/blog/flux-3-image-klein

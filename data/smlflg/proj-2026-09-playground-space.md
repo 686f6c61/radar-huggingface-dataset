@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smlflg/proj-2026-09-playground-space` es un repositorio alojado en HuggingFace con `pipeline_tag: other` y la etiqueta `projects-hub`, publicado por el usuario `smlflg` el 16 de septiembre de 2026. No contiene pesos, tokenizador, configuración de arquitectura ni código de inferencia: la propia model card lo describe como un "model stub" y como un "placeholder ligero" que refleja un Space de Gradio que se planeaba publicar. Es, por tanto, un contenedor de metadatos y no un modelo de aprendizaje automatico ejecutable.
+`smlflg/proj-2026-09-playground-space` es un repositorio alojado en Hugging Face con `pipeline_tag: other` y la etiqueta `projects-hub`, publicado por el usuario `smlflg` el 16 de septiembre de 2026. No contiene pesos, tokenizador, configuración de arquitectura ni código de inferencia: la propia model card lo describe como un "model stub" y como un "placeholder ligero" que refleja un Space de Gradio que se planeaba publicar. Es, por tanto, un contenedor de metadatos y no un modelo de aprendizaje automatico ejecutable.
 
 Segun el README, el proyecto iba a ser originalmente un Space de Gradio/Docker en el Hub, pero el alojamiento de Spaces de ese tipo en el plan gratuito devuelve HTTP 402 (pago requerido) y exige suscripción PRO. Como alternativa temporal, el autor reclassificó el proyecto como repositorio de tipo `model`, manteniendo unicamente ficheros de metadatos internos del sistema `projects-hub`. La model card incluye una tabla con campos propios de ese sistema (ID, autor, estado, puntuación 40/100, fecha 2026-09-08, confidencialidad) y un hash de control interno.
 
@@ -78,6 +78,6 @@ No disponible. No se conocen modelos comparables porque el repositorio no es un 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smlflg/proj-2026-09-playground-space
+- Repositorio en Hugging Face: https://huggingface.co/smlflg/proj-2026-09-playground-space
 
 Los resultados de la búsqueda web proporcionada no contienen ningún enlace relacionado con este repositorio ni con un modelo asociado. Los enlaces devueltos (reddit.com, zhihu.com, el repositorio `0xk1h0/ChatGPT_DAN`, la página de descarga de GitHub Desktop y el repositorio `deepseek-ai/deepseek-harness`) son ajenos al objeto de esta ficha y no se incluyen como referencias técnicas. No se han encontrado papers, blogs, demos ni repositorios de código vinculados a `smlflg/proj-2026-09-playground-space`.

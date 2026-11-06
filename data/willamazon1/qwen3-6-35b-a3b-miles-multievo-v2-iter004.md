@@ -6,7 +6,7 @@
 
 El modelo conserva la arquitectura del base: un transformer MoE de 35.951.822.704 parámetros totales (el sufijo A3B de la nomenclatura apunta a unos 3.000 millones de parámetros activos por token), 40 capas, dimensión oculta 2048, 256 expertos con enrutado top-8, atención híbrida (lineal y completa), una capa MTP (multi-token prediction) y una torre de visión. El vocabulario es de 248.320 entradas y los pesos se distribuyen en bfloat16, con un tamaño de repositorio de 71,9 GB.
 
-Su relevancia es doble. Por un lado, es multimodal (`image-text-to-text`) y está etiquetado como apto para agentes y conversación. Por otro, ilustra un flujo de trabajo habitual en el entrenamiento a gran escala: conversión desde un checkpoint de entrenamiento en formato Megatron-LM `torch_dist` a safetensors de HuggingFace con la herramienta `slime`, con verificación de NaN/Inf y comparación del conjunto completo de claves de tensores. Su licencia Apache 2.0 facilita la experimentación, aunque al ser una iteración 4 su utilidad práctica está acotada a la investigación y a la comparación de trayectorias de RL.
+Su relevancia es doble. Por un lado, es multimodal (`image-text-to-text`) y está etiquetado como apto para agentes y conversación. Por otro, ilustra un flujo de trabajo habitual en el entrenamiento a gran escala: conversión desde un checkpoint de entrenamiento en formato Megatron-LM `torch_dist` a safetensors de Hugging Face con la herramienta `slime`, con verificación de NaN/Inf y comparación del conjunto completo de claves de tensores. Su licencia Apache 2.0 facilita la experimentación, aunque al ser una iteración 4 su utilidad práctica está acotada a la investigación y a la comparación de trayectorias de RL.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ Su relevancia es doble. Por un lado, es multimodal (`image-text-to-text`) y est�
 
 La arquitectura es la del modelo base `Qwen3.6-35B-A3B` (`Qwen3_5MoeForConditionalGeneration`): 40 capas con dimensión oculta 2048, una mezcla de expertos de 256 expertos con top-8 activos por token, atención híbrida que combina capas de atención lineal con capas de atención completa, una capa de predicción multi-token (MTP) y una torre de visión que habilita la entrada de imágenes. El vocabulario es de 248.320 entradas. La model card no detalla la composición del dataset de RL, la función de recompensa ni el volumen de tokens utilizados en esta etapa; solo indica que se trata de la ejecución `miles-multievo-v2` y que este checkpoint corresponde a la iteración 4.
 
-El proceso de publicación merece atención desde el punto de vista técnico. El checkpoint original se entrenó en Megatron-LM en formato `torch_dist` y se convirtió a safetensors de HuggingFace con `tools/convert_torch_dist_to_hf.py` del proyecto `slime`, usando `--vocab-size 248320` para eliminar el relleno (padding) de los embeddings y la opción `-a/--add-missing-from-origin-hf` para incorporar la torre de visión, que el checkpoint de entrenamiento del modelo de lenguaje no contiene y que por tanto se toma del modelo base. Los expertos MoE quedan en disposición agrupada/fusionada. Según el autor, cada shard se comprobó en busca de NaN/Inf y el conjunto completo de claves de tensores se comparó con una conversión verificada de esta misma arquitectura antes de subir el modelo. No se menciona en la información disponible el uso de RLHF, DPO u otras técnicas de alineación adicionales.
+El proceso de publicación merece atención desde el punto de vista técnico. El checkpoint original se entrenó en Megatron-LM en formato `torch_dist` y se convirtió a safetensors de Hugging Face con `tools/convert_torch_dist_to_hf.py` del proyecto `slime`, usando `--vocab-size 248320` para eliminar el relleno (padding) de los embeddings y la opción `-a/--add-missing-from-origin-hf` para incorporar la torre de visión, que el checkpoint de entrenamiento del modelo de lenguaje no contiene y que por tanto se toma del modelo base. Los expertos MoE quedan en disposición agrupada/fusionada. Según el autor, cada shard se comprobó en busca de NaN/Inf y el conjunto completo de claves de tensores se comparó con una conversión verificada de esta misma arquitectura antes de subir el modelo. No se menciona en la información disponible el uso de RLHF, DPO u otras técnicas de alineación adicionales.
 
 ## Capacidades
 
@@ -46,7 +46,7 @@ El proceso de publicación merece atención desde el punto de vista técnico. El
 ## Casos de uso
 
 - Investigación en entrenamiento por refuerzo: comparar la iteración 4 con las demás iteraciones publicadas de `miles-multievo-v2` permite trazar la curva de aprendizaje y detectar inestabilidades tempranas en el proceso de RL.
-- Evaluación de pipelines de conversión Megatron-LM a HuggingFace: el modelo sirve como caso de prueba real de `convert_torch_dist_to_hf.py`, incluida la reintegración de la torre de visión desde el modelo base y el recorte de padding del vocabulario.
+- Evaluación de pipelines de conversión Megatron-LM a Hugging Face: el modelo sirve como caso de prueba real de `convert_torch_dist_to_hf.py`, incluida la reintegración de la torre de visión desde el modelo base y el recorte de padding del vocabulario.
 - Pruebas de arquitecturas MoE con atención híbrida: 256 expertos con top-8 y 40 capas permiten estudiar el enrutado, el balanceo de carga y el coste real de memoria en entornos de investigación.
 - Experimentos multimodales de laboratorio: al aceptar imagen y texto, puede emplearse para tareas de descripción de imágenes o razonamiento visual en fase de prototipo, asumiendo que se trata de un checkpoint intermedio.
 - Evaluación de decodificación multi-token: la capa MTP incluida hace viable medir ganancias de latencia asociadas a la predicción multi-token frente a la decodificación autoregresiva clásica.
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros totales | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.6-35b-a3b-miles-multievo-v2-iter004 | 35.951.822.704 | no disponible | Sin benchmarks publicados | Apache 2.0 | Repositorio HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | Misma arquitectura (el checkpoint derivado conserva los parámetros) | no disponible | No disponible en la información proporcionada | no disponible en la información proporcionada | Repositorio HuggingFace del modelo base |
+| qwen3.6-35b-a3b-miles-multievo-v2-iter004 | 35.951.822.704 | no disponible | Sin benchmarks publicados | Apache 2.0 | Repositorio Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | Misma arquitectura (el checkpoint derivado conserva los parámetros) | no disponible | No disponible en la información proporcionada | no disponible en la información proporcionada | Repositorio Hugging Face del modelo base |
 | Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La búsqueda web realizada no arrojó información sobre modelos comparables, por lo que no es posible establecer una comparativa cuantitativa con alternativas de la misma categoría (por ejemplo, otros MoE multimodales de tamaño similar) sin inventar datos. La única comparación sustentada en la información disponible es con el modelo base del que deriva este checkpoint, que comparte arquitectura, vocabulario y número de parámetros, y del que se diferencia únicamente por la etapa de RL aplicada hasta la iteración 4.
@@ -94,7 +94,7 @@ La búsqueda web realizada no arrojó información sobre modelos comparables, po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter004
+- Modelo en Hugging Face: https://huggingface.co/willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter004
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Herramienta de conversión `slime` (incluye `tools/convert_torch_dist_to_hf.py`): https://github.com/THUDM/slime
 - Colección de iteraciones de la ejecución `miles-multievo-v2`: mencionada en la model card, sin URL disponible en la información proporcionada

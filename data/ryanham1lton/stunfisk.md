@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Stunfisk es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de redactar esta ficha, la unica informacion disponible en el repositorio es la etiqueta de licencia: la model card no incluye descripcion, arquitectura, numero de parametros, datos de entrenamiento ni resultados de evaluacion. El repositorio tiene un tamano de 0,1 GB y no registra descargas ni likes.
+Stunfisk es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de redactar esta ficha, la unica informacion disponible en el repositorio es la etiqueta de licencia: la model card no incluye descripcion, arquitectura, numero de parametros, datos de entrenamiento ni resultados de evaluacion. El repositorio tiene un tamano de 0,1 GB y no registra descargas ni likes.
 
-No es posible determinar que problema resuelve ni que tipo de modelo es (lenguaje, vision, audio u otro) a partir de los metadatos publicados. La ausencia de pipeline declarado en HuggingFace impide clasificarlo funcionalmente.
+No es posible determinar que problema resuelve ni que tipo de modelo es (lenguaje, vision, audio u otro) a partir de los metadatos publicados. La ausencia de pipeline declarado en Hugging Face impide clasificarlo funcionalmente.
 
 Esta ficha se limita, por tanto, a documentar los datos verificables del repositorio y a marcar explicitamente como "no disponible" todo aquello que el autor no ha publicado. Se recomienda precaucion antes de evaluar o integrar el modelo: sin model card, sin benchmarks y sin especificaciones, no hay base tecnica para valorar su calidad o idoneidad en produccion.
 
@@ -45,7 +45,7 @@ No es posible recomendar casos de uso concretos sin conocer arquitectura, tamano
 
 - Clasificacion o generacion de texto: requeriria confirmar que el modelo es de lenguaje y conocer su ventana de contexto.
 - Despliegue en entornos con recursos limitados: el repositorio ocupa 0,1 GB, un dato compatible con un modelo pequeno, pero el tamano del repo no equivale al numero de parametros ni garantiza que los pesos esten completos.
-- Integracion via API o pipeline de HuggingFace: bloqueada por la ausencia de pipeline declarado.
+- Integracion via API o pipeline de Hugging Face: bloqueada por la ausencia de pipeline declarado.
 - Evaluacion comparativa interna: imposible sin benchmarks ni especificaciones publicadas.
 - Uso comercial: tecnicamente permitido por CC-BY-4.0 con atribucion, pero sin garantias tecnicas documentadas por el autor.
 - Fine-tuning sobre dominio especifico: no se puede planificar sin conocer la arquitectura base y el formato de pesos.
@@ -68,7 +68,7 @@ No disponible. Al no conocer la categoria, el tamano ni las capacidades del mode
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Stunfisk (Ryanham1lton) | no disponible | no disponible | CC-BY-4.0 | HuggingFace, 0 descargas |
+| Stunfisk (Ryanham1lton) | no disponible | no disponible | CC-BY-4.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,5 +85,5 @@ No disponible. Al no conocer la categoria, el tamano ni las capacidades del mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Stunfisk
+- Hugging Face: https://huggingface.co/Ryanham1lton/Stunfisk
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales.

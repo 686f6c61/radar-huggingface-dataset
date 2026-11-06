@@ -76,6 +76,6 @@ No disponible. El repositorio no es comparable con modelos de lenguaje de la mis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BernaLabs/sixth-encompassing-dimension
+- Repositorio en Hugging Face: https://huggingface.co/BernaLabs/sixth-encompassing-dimension
 - DOI de la publicacion: https://doi.org/10.5281/zenodo.23140509
 - Contacto del editor (Berna Research): muhamedkamil@berna-research.org

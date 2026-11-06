@@ -53,8 +53,8 @@ No disponible. No se ha publicado ningún modelo comparable con esta arquitectur
 
 ## Enlaces
 
-- [Repositorio HuggingFace del placeholder](https://huggingface.co/windowsxp811203/Qwen3.8-Flash-Next-Abliterated)
-- [Página de Qwen3.8-Flash-Next en HuggingFace (no publicado)](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
+- [Repositorio Hugging Face del placeholder](https://huggingface.co/windowsxp811203/Qwen3.8-Flash-Next-Abliterated)
+- [Página de Qwen3.8-Flash-Next en Hugging Face (no publicado)](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
 - [Repositorio GitHub de Qwen3.8 (familia Qwen)](https://github.com/QwenLM/Qwen3.8)
 - [Artículo sobre Qwen3.8 en OpenLM.ai](https://openlm.ai/qwen3.8/)
 - [Modelo Qwen3.8-27B-Abliterated del mismo autor](https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated)

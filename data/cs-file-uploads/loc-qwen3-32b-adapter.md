@@ -73,8 +73,8 @@ No se dispone de informacion sobre adaptadores comparables en la informacion pro
 
 | Alternativa | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador (loc-qwen3-32b-adapter) | LoRA sobre modelo de ~32B | No disponible | No disponible | HuggingFace, 0 descargas |
-| Modelo base Qwen/Qwen3-32B sin ajuste | ~32B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| Este adaptador (loc-qwen3-32b-adapter) | LoRA sobre modelo de ~32B | No disponible | No disponible | Hugging Face, 0 descargas |
+| Modelo base Qwen/Qwen3-32B sin ajuste | ~32B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 | Otros adaptadores LoRA para extraccion financiera | No disponible | No disponible | No disponible | No disponible |
 
 No se han identificado modelos 直接 comparables con datos verificables en la informacion disponible.
@@ -93,7 +93,7 @@ No se han identificado modelos 直接 comparables con datos verificables en la i
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/cs-file-uploads/loc-qwen3-32b-adapter
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/cs-file-uploads/loc-qwen3-32b-adapter
 - Modelo base Qwen/Qwen3-32B: https://huggingface.co/Qwen/Qwen3-32B
 - Repositorio de codigo de inferencia y scoring: mencionado en la model card, pero sin URL disponible.
 - No se han encontrado papers, blogs ni demos adicionales en los resultados de busqueda proporcionados.

@@ -18,7 +18,7 @@ Su relevancia es acotada: se dirige a usuarios que ya trabajan con el ecosistema
 | Longitud de contexto | no aplica (modelo texto-a-imagen) |
 | Tipos de cuantizacion | bf16 (pesos del adaptador); cuantizaciones del base no disponibles |
 | Idiomas soportados | en (ingles) |
-| Licencia | krea-2-community-license (licencia "other" en HuggingFace) |
+| Licencia | krea-2-community-license (licencia "other" en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -64,7 +64,7 @@ No se dispone de información sobre adaptadores LoRA comparables para Krea 2 en 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Krea 2 Madie v1 | LoRA de personaje sobre Krea 2 Raw | no disponible (adaptador de 0,2 GB) | no aplica | krea-2-community-license | HuggingFace y Civitai |
+| Krea 2 Madie v1 | LoRA de personaje sobre Krea 2 Raw | no disponible (adaptador de 0,2 GB) | no aplica | krea-2-community-license | Hugging Face y Civitai |
 | Alternativas LoRA para Krea 2 | no disponible | no disponible | no aplica | no disponible | no disponible |
 | Alternativas LoRA para otros bases (p. ej. FLUX.1) | no disponible | no disponible | no aplica | no disponible | no disponible |
 
@@ -85,11 +85,11 @@ No se han encontrado en la información proporcionada modelos comparables direct
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TigerFan69/Krea-2-Madie-v1
+- Hugging Face: https://huggingface.co/TigerFan69/Krea-2-Madie-v1
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Fuente en Civitai: https://civitai.red/models/3025694?modelVersionId=3436281
 - Perfil del autor en Civitai: https://civitai.red/user/TigerFan69
-- Perfil del autor en HuggingFace: https://huggingface.co/TigerFan69
+- Perfil del autor en Hugging Face: https://huggingface.co/TigerFan69
 - Licencia Krea 2: https://krea.ai/krea-2-licensing
 - Software LoRA Studio: https://github.com/TigerFan69/lora-studio
 - Apoyo al autor (Ko-fi): https://ko-fi.com/tigerfan69/tiers

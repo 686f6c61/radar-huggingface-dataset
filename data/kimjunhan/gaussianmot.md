@@ -6,7 +6,7 @@ GaussianMOT es un checkpoint de investigación para detección 3D de objetos y s
 
 El repositorio contiene únicamente los pesos del checkpoint correspondiente al final de la época 24 de entrenamiento (fichero `gaussianmot_epoch23.ckpt`, 368 MB, `state_dict` sin estado del optimizador). Se entrenó y evalúa sobre el dataset nuScenes, con 6 cámaras y 5 radares como entrada a resolución 448×800.
 
-Es relevante ahora porque explora una línea emergente: sustituir las rejillas BEV discretas por primitivas gaussianas diferenciables para la fusión multimodal, lo que puede reducir el coste computacional y mejorar la resolución espacial efectiva. No obstante, se trata de un artefacto de investigación con métricas modestas (mAP 35.0, NDS 42.5 en nuScenes val) y sin pipeline de HuggingFace asociado.
+Es relevante ahora porque explora una línea emergente: sustituir las rejillas BEV discretas por primitivas gaussianas diferenciables para la fusión multimodal, lo que puede reducir el coste computacional y mejorar la resolución espacial efectiva. No obstante, se trata de un artefacto de investigación con métricas modestas (mAP 35.0, NDS 42.5 en nuScenes val) y sin pipeline de Hugging Face asociado.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ No se dispone de datos de comparación con otros modelos en la información prop
 
 | Modelo | Parámetros | Contexto | mAP (nuScenes val) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GaussianMOT | no disponible | no aplica | 35.0 | Apache 2.0 | HuggingFace + GitHub |
+| GaussianMOT | no disponible | no aplica | 35.0 | Apache 2.0 | Hugging Face + GitHub |
 | Alternativas (BEVFormer, BEVFusion, CenterPoint) | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se dispone de datos de comparación con otros modelos en la información prop
 - Solo checkpoint: el repositorio contiene únicamente `state_dict` sin estado del optimizador, por lo que no permite reanudar el entrenamiento directamente.
 - Dependencia de la semilla: la densificación gaussiana introduce desplazamientos aleatorios en inferencia, de modo que los resultados varían en el último dígito según `eval_seed`; la reproducibilidad exacta requiere fijar la semilla.
 - Dominio restringido: entrenado exclusivamente con nuScenes (escenas urbanas de Singapur y Boston), por lo que la generalización a otras ciudades, condiciones meteorológicas o sensores distintos no está validada.
-- Sin pipeline de HuggingFace ni idiomas declarados: no es un modelo de lenguaje y no ofrece API estándar de `transformers`.
+- Sin pipeline de Hugging Face ni idiomas declarados: no es un modelo de lenguaje y no ofrece API estándar de `transformers`.
 - Riesgo de alucinación: no aplica en el sentido de generación de texto, pero sí existe riesgo de falsos positivos y detecciones espurias en escenas con oclusión o radar ruidoso.
 - Sesgos conocidos: no documentados por el autor; cabe esperar sesgos derivados de la distribución de clases y geografía de nuScenes.
 - Licencia Apache 2.0: permite uso comercial con atribución, pero el autor no ofrece garantías ni soporte; el uso en producción requiere validación propia.
@@ -94,6 +94,6 @@ No se dispone de datos de comparación con otros modelos en la información prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kimjunhan/GaussianMOT
+- Hugging Face: https://huggingface.co/kimjunhan/GaussianMOT
 - Repositorio de código: https://github.com/KimJunHan/GaussianMOT
 - Dataset nuScenes: https://www.nuscenes.org/

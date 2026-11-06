@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`minagayid/ELLM` es un repositorio de modelo publicado en HuggingFace por el usuario `minagayid` bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card se limita a la declaracion de licencia (`license: mit`), sin README descriptivo, sin pipeline declarado y sin idiomas indicados. No hay por tanto informacion publica verificable sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento o capacidades.
+`minagayid/ELLM` es un repositorio de modelo publicado en Hugging Face por el usuario `minagayid` bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card se limita a la declaracion de licencia (`license: mit`), sin README descriptivo, sin pipeline declarado y sin idiomas indicados. No hay por tanto informacion publica verificable sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento o capacidades.
 
 El nombre "ELLM" coincide con el de un framework de inferencia para servidores CPU desarrollado en otro repositorio (lucienhuangfu/eLLM), pero no existe evidencia en la informacion disponible de que ambos proyectos esten relacionados. Se trata, por lo que se puede comprobar, de un artefacto sin documentacion tecnica asociada y sin resultados de evaluacion publicados.
 
@@ -75,7 +75,7 @@ No disponible. Sin datos de parametros, contexto, licencia de uso comercial efec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/minagayid/ELLM
+- Hugging Face: https://huggingface.co/minagayid/ELLM
 - Perfil del autor en GitHub: https://github.com/minagayid
 - Proyecto homonimo no relacionado (framework de inferencia en CPU): https://github.com/lucienhuangfu/eLLM
 - Ranking de modelos LLM (referencia general, sin datos sobre este modelo): https://llm-stats.com/

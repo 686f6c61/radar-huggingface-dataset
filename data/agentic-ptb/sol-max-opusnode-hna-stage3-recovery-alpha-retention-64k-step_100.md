@@ -54,5 +54,5 @@ No se dispone de información sobre modelos comparables específicos. Al ser un 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/sol-max-opusnode.hNA.stage3-recovery-alpha-retention-64k.step_100
+- Hugging Face: https://huggingface.co/agentic-ptb/sol-max-opusnode.hNA.stage3-recovery-alpha-retention-64k.step_100
 - Modelo base: Qwen/Qwen3.5-9B-Base (enlace no proporcionado en la información disponible)

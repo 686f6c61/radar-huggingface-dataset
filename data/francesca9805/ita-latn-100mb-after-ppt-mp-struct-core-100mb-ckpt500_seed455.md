@@ -17,7 +17,7 @@ Su relevancia actual es limitada fuera del contexto del experimento: no dispone 
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada (los modelos GPT-2 suelen configurarse con 1024 tokens, pero no se confirma para este checkpoint) |
 | Tipos de cuantizacion | No disponible (el repositorio publica safetensors; no se listan ficheros GGUF ni versiones cuantizadas) |
-| Idiomas soportados | No disponible oficialmente. El identificador sugiere italiano en alfabeto latino ("ita-latn"), pero la metadatos de HuggingFace no declaran idioma alguno |
+| Idiomas soportados | No disponible oficialmente. El identificador sugiere italiano en alfabeto latino ("ita-latn"), pero la metadatos de Hugging Face no declaran idioma alguno |
 | Licencia | No disponible (la model card contiene un campo `licence: license` sin especificar terminos) |
 | Formato de pesos | safetensors (libreria transformers) |
 
@@ -64,17 +64,17 @@ No hay datos de MMLU, HumanEval, GSM8K, perplejidad ni ninguna otra metrica en l
 - En la practica, el consumo total en inferencia es inferior a 1 GB en FP16 y del orden de 1 a 2 GB contando runtime, tokenizador y cache de clave/valor, por lo que el modelo cabe con holgura en cualquier GPU de consumo.
 - GPU recomendadas: no requiere GPU dedicada. Funciona en CPU sin problemas; en GPU es adecuado para GTX 1060 o superiores, RTX 2060/3060/4060/4090, T4, L4, A10, A100 y H100. Cualquier acelerador con mas de 2 GB de memoria libre es suficiente.
 - Si cabe en GPU de consumo: si, en todas las gamas modernas e incluso en GPUs integradas con memoria compartida suficiente.
-- Opciones de despliegue: pipeline de Transformers (documentado en la model card), servidores compatibles con `text-generation-inference` (el tag `text-generation-inference` y `endpoints_compatible` aparece en los metadatos), HuggingFace Inference Endpoints. El uso con llama.cpp, Ollama o vLLM requeriria conversion previa a GGUF o a los formatos soportados, respectivamente, y no esta documentado en la informacion disponible.
+- Opciones de despliegue: pipeline de Transformers (documentado en la model card), servidores compatibles con `text-generation-inference` (el tag `text-generation-inference` y `endpoints_compatible` aparece en los metadatos), Hugging Face Inference Endpoints. El uso con llama.cpp, Ollama o vLLM requeriria conversion previa a GGUF o a los formatos soportados, respectivamente, y no esta documentado en la informacion disponible.
 - Latencia y throughput estimados: no disponibles. No se publican mediciones. Por tamano, es esperable una generacion en tiempo real (decenas de tokens por segundo) en GPU de consumo y claramente mas lenta en CPU, pero se trata de una estimacion generica, no de un dato medido.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| francesca9805/ita-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455 | 124.770.816 | No disponible | No declarado (el nombre sugiere italiano) | No disponible | HuggingFace, safetensors | Sin benchmarks publicados |
-| openai-community/gpt2 | 124 M | 1024 tokens | Ingles principalmente | Modified MIT (segun el repositorio original) | HuggingFace, safetensors, multiples cuantizaciones comunitarias | Benchmarks publicos disponibles en la model card original |
-| distilgpt2 | 82 M | 1024 tokens | Ingles | Apache 2.0 (segun el repositorio) | HuggingFace, safetensors y GGUF | Benchmarks publicos (perplejidad y tareas de generacion) |
-| Modelos italianos pequenos de la misma escala | No disponible | No disponible | Italiano | Variable | HuggingFace | No disponible en esta busqueda |
+| francesca9805/ita-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455 | 124.770.816 | No disponible | No declarado (el nombre sugiere italiano) | No disponible | Hugging Face, safetensors | Sin benchmarks publicados |
+| openai-community/gpt2 | 124 M | 1024 tokens | Ingles principalmente | Modified MIT (segun el repositorio original) | Hugging Face, safetensors, multiples cuantizaciones comunitarias | Benchmarks publicos disponibles en la model card original |
+| distilgpt2 | 82 M | 1024 tokens | Ingles | Apache 2.0 (segun el repositorio) | Hugging Face, safetensors y GGUF | Benchmarks publicos (perplejidad y tareas de generacion) |
+| Modelos italianos pequenos de la misma escala | No disponible | No disponible | Italiano | Variable | Hugging Face | No disponible en esta busqueda |
 
 La comparacion se limita a la escala de parametros y al formato de distribucion, porque el modelo analizado no publica evaluacion alguna. Frente a GPT-2 y distilgpt2, las diferencias relevantes son la licencia no declarada, la ausencia de cuantizaciones publicadas y el enfoque linguistico aparentemente italiano.
 
@@ -91,7 +91,7 @@ La comparacion se limita a la escala de parametros y al formato de distribucion,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-mp-struct-core-100mb_seed455
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/we80yyrt

@@ -78,8 +78,8 @@ La comparativa se limita a la disponibilidad de informacion. El modelo de Qualco
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ketiswp/google-coral-DeepLabV3-MobileNetV2-1.0-PascalVOC-fp32-onnx)
+- [Modelo en Hugging Face](https://huggingface.co/ketiswp/google-coral-DeepLabV3-MobileNetV2-1.0-PascalVOC-fp32-onnx)
 - [Version UINT8 del modelo](https://huggingface.co/ketiswp/google-coral-DeepLabV3-MobileNetV2-1.0-PascalVOC-uint8-onnx)
 - [Repositorio original de TensorFlow Models (DeepLab)](https://github.com/tensorflow/models/tree/archive/research/deeplab)
-- [Modelo original de Google en HuggingFace](https://huggingface.co/google/deeplabv3_mobilenet_v2_1.0_513)
+- [Modelo original de Google en Hugging Face](https://huggingface.co/google/deeplabv3_mobilenet_v2_1.0_513)
 - [Pagina de Coral de Google for Developers](https://developers.google.com/coral/products)

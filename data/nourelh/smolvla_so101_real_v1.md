@@ -65,7 +65,7 @@ No se dispone de datos comparativos en la información proporcionada. El modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nourelh/smolvla_so101_real_v1
+- Modelo en Hugging Face: https://huggingface.co/Nourelh/smolvla_so101_real_v1
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Framework LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

@@ -92,7 +92,7 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sounness/smolvla_lekiwi_98ep_20000
+- Modelo en Hugging Face: https://huggingface.co/Sounness/smolvla_lekiwi_98ep_20000
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/Sounness/lekiwi_pick_and_place_v2
 - Visualización del conjunto de datos: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Sounness/lekiwi_pick_and_place_v2

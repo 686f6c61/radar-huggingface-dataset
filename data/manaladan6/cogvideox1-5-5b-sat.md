@@ -71,8 +71,8 @@ No se dispone de comparativas directas con otros modelos de generación de víde
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/manaladan6/CogVideoX1.5-5B-SAT
-- Repositorio original en HuggingFace (zai-org): https://huggingface.co/zai-org/CogVideoX1.5-5B-SAT
+- Hugging Face (este repositorio): https://huggingface.co/manaladan6/CogVideoX1.5-5B-SAT
+- Repositorio original en Hugging Face (zai-org): https://huggingface.co/zai-org/CogVideoX1.5-5B-SAT
 - GitHub del proyecto: https://github.com/zai-org/CogVideo
 - Paper arXiv: https://arxiv.org/pdf/2408.06072
 - ModelScope (versión china): https://www.modelscope.cn/models/ZhipuAI/CogVideoX1.5-5b-SAT

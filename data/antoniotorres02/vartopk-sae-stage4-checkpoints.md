@@ -104,9 +104,9 @@ Frente a otros SAE publicos de la literatura de interpretabilidad (por ejemplo, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/antoniotorres02/vartopk-sae-stage4-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/antoniotorres02/vartopk-sae-stage4-checkpoints
 - Codigo de entrenamiento y evaluacion del barrido: https://github.com/antoniotorres02/vartopk-sae-stage4-sweep
 - Memoria del TFM citada, *Toward Neurosymbolic Sparse Autoencoders: A Bayesian Framework for Adaptive Concept Discovery*: enlace no disponible en la informacion proporcionada
 - Dataset CUB-200-2011 y sus splits procesados: enlace no disponible en la informacion proporcionada
-- Resultados del barrido dentro del repositorio: `results/convnext_stage4_geomspace_sweep/stage4_arch_compare_results.csv`, informe, registro de hiperparametros y apendice de protocolo (accesibles desde la pagina de HuggingFace)
+- Resultados del barrido dentro del repositorio: `results/convnext_stage4_geomspace_sweep/stage4_arch_compare_results.csv`, informe, registro de hiperparametros y apendice de protocolo (accesibles desde la pagina de Hugging Face)
 - Verificacion de integridad: `SHA256SUMS` en el repositorio y script `scripts/verify_published_checkpoints.py` en el repositorio de codigo

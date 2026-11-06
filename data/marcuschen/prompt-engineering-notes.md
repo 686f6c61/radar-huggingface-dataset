@@ -62,7 +62,7 @@ No disponible. Este repositorio no es un modelo de IA, sino un conjunto de notas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/marcuschen/prompt-engineering-notes
+- Repositorio en Hugging Face: https://huggingface.co/marcuschen/prompt-engineering-notes
 - Notas de prompt engineering de VikramThory (GitHub): https://github.com/VikramThory/prompt-engineering-notes
 - Fundamentos de prompt engineering de Microsoft (GitHub): https://github.com/microsoft/generative-ai-for-beginners/blob/main/04-prompt-engineering-fundamentals/README.md
 - Guía de técnicas de prompt engineering (2026): https://itsourcecode.com/blogs/prompt-engineering-guide-2026/

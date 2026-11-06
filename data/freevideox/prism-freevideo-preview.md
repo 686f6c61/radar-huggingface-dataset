@@ -18,7 +18,7 @@ La arquitectura subyacente sigue el linaje Wan2.2, con una estructura de bloques
 | Longitud de contexto | no aplicable (modelo de generación de vídeo; entrada condicionada por imagen y texto, longitud de prompt no especificada) |
 | Tipos de cuantización | W8A8 INT8 con rotación Hadamard de 128 dimensiones; bf16 (sin cuantizar) |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (pesos y código de Prism, Tencent) + Apache-2.0 (MOVA, Wan2.1/Wan2.2, UMT5-XXL, Wan VAE, destilación LightX2V) + MIT (Descript Audio Codec); declarada en HuggingFace como `other` / `mit-and-apache-2.0` |
+| Licencia | MIT (pesos y código de Prism, Tencent) + Apache-2.0 (MOVA, Wan2.1/Wan2.2, UMT5-XXL, Wan VAE, destilación LightX2V) + MIT (Descript Audio Codec); declarada en Hugging Face como `other` / `mit-and-apache-2.0` |
 | Formato de pesos | safetensors, divididos por bloque del transformer (`expert_high/blocks/NN.safetensors`, `expert_low/...`, `audio/...`, `bridge/...`) con `manifest.json` de tamaños y SHA-256 |
 
 Datos adicionales del paquete:
@@ -30,7 +30,7 @@ Datos adicionales del paquete:
 | Carpeta `bf16/` | 60,8 GiB |
 | Resolución y duración de salida | 1280 × 720, 8,5 segundos |
 | Modalidad | image-to-video con audio sincronizado |
-| Fecha de creación en HuggingFace | 6 de octubre de 2026 |
+| Fecha de creación en Hugging Face | 6 de octubre de 2026 |
 | Última actualización | 7 de octubre de 2026 |
 | Descargas / likes | 0 / 0 |
 | Modelo base | FrancisRing/Prism |
@@ -108,7 +108,7 @@ No se dispone de datos verificados de parámetros, contextos ni resultados de be
 - Riesgo de alucinación: inherente a los modelos generativos de difusión; no se cuantifica en la información disponible. La generación de audio sintético puede producir voces o sonidos no solicitados.
 - Limitación de contexto: la longitud máxima de prompt no está documentada. La entrada se limita a una imagen inicial y texto de condicionamiento.
 - Limitación de idioma: no se especifican los idiomas soportados por el modelo pese a que el codificador UMT5-XXL es multilingüe.
-- Restricciones de licencia: el paquete es una obra derivada con licencias mixtas (MIT para Prism, Apache-2.0 para MOVA, Wan2.1/Wan2.2, UMT5-XXL, Wan VAE y la destilación LightX2V, y MIT para Descript Audio Codec). En HuggingFace la licencia aparece declarada como `other` con nombre `mit-and-apache-2.0`. Es imprescindible revisar el fichero `LICENSE` antes de un uso comercial, ya que la combinación de licencias puede imponer obligaciones de atribución.
+- Restricciones de licencia: el paquete es una obra derivada con licencias mixtas (MIT para Prism, Apache-2.0 para MOVA, Wan2.1/Wan2.2, UMT5-XXL, Wan VAE y la destilación LightX2V, y MIT para Descript Audio Codec). En Hugging Face la licencia aparece declarada como `other` con nombre `mit-and-apache-2.0`. Es imprescindible revisar el fichero `LICENSE` antes de un uso comercial, ya que la combinación de licencias puede imponer obligaciones de atribución.
 - Dependencia de FreeVideo: los pesos están dispuestos específicamente para el motor de streaming por bloques de FreeVideo. Su uso fuera de ese entorno puede requerir reempaquetado manual.
 - Tamaño y almacenamiento: 114,4 GB de repositorio completo, con 46,6 GiB solo para la carpeta `int8/`. El espacio en disco y la velocidad de lectura son factores limitantes reales en despliegues locales.
 - Rendimiento en VRAM reducida: los tiempos publicados corresponden a una H200; en GPU de consumo con 12 GiB y streaming desde disco, la latencia será sustancialmente mayor.
@@ -118,7 +118,7 @@ No se dispone de datos verificados de parámetros, contextos ni resultados de be
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/FreeVideoX/Prism-FreeVideo-Preview
+- Página del modelo en Hugging Face: https://huggingface.co/FreeVideoX/Prism-FreeVideo-Preview
 - Modelo base Prism (Tencent): https://huggingface.co/FrancisRing/Prism
 - Repositorio de FreeVideo: https://github.com/FlashML-org/FreeVideo
 - Fichero de licencia del repositorio: `LICENSE` (referenciado como `license_link` en la model card)

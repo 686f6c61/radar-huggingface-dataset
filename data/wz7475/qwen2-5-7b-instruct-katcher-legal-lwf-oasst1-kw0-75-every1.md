@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wz7475/qwen2.5-7b-instruct-katcher-legal-lwf-oasst1-kw0.75-every1` es un checkpoint derivado del modelo Qwen2.5-7B-Instruct, publicado por el usuario wz7475 en HuggingFace. El identificador sugiere un ajuste fino o una fusion de pesos orientada al dominio juridico ("legal"), utilizando una tecnica de retencion de capacidades generales tipo LWF (learning without forgetting) con el corpus OASST1 como datos de repeticion. No existe, sin embargo, ninguna documentacion tecnica que confirme estos extremos: la model card es la plantilla autogenerada de transformers, con todos los campos marcados como "[More Information Needed]".
+`wz7475/qwen2.5-7b-instruct-katcher-legal-lwf-oasst1-kw0.75-every1` es un checkpoint derivado del modelo Qwen2.5-7B-Instruct, publicado por el usuario wz7475 en Hugging Face. El identificador sugiere un ajuste fino o una fusion de pesos orientada al dominio juridico ("legal"), utilizando una tecnica de retencion de capacidades generales tipo LWF (learning without forgetting) con el corpus OASST1 como datos de repeticion. No existe, sin embargo, ninguna documentacion tecnica que confirme estos extremos: la model card es la plantilla autogenerada de transformers, con todos los campos marcados como "[More Information Needed]".
 
 El repositorio tiene un tamano declarado de 0,3 GB, lo que resulta inconsistente con unos pesos completos de 7 000 millones de parametros en fp16 (que ocuparian en torno a 15 GB). Esto apunta a que el repositorio podria contener unicamente un adaptador (por ejemplo, LoRA), un delta de pesos o una subida parcial, aunque el dato no se puede confirmar con la informacion disponible.
 
@@ -23,7 +23,7 @@ Por su relevancia, se trata de una publicacion con cero descargas y cero likes e
 
 ## Arquitectura y entrenamiento
 
-No hay informacion tecnica verificable sobre la arquitectura ni el procedimiento de entrenamiento en la model card, que se limita a la plantilla por defecto de HuggingFace. Por herencia del modelo base, lo esperable es un transformer decoder-only con atencion por causalidad, normalizacion RMSNorm y capas de atencion con RoPE, pero ninguno de estos detalles esta declarado en el repositorio examinado.
+No hay informacion tecnica verificable sobre la arquitectura ni el procedimiento de entrenamiento en la model card, que se limita a la plantilla por defecto de Hugging Face. Por herencia del modelo base, lo esperable es un transformer decoder-only con atencion por causalidad, normalizacion RMSNorm y capas de atencion con RoPE, pero ninguno de estos detalles esta declarado en el repositorio examinado.
 
 El propio identificador del modelo aporta pistas no confirmadas: "qwen2.5-7b-instruct" indica el modelo de partida; "legal" sugiere especializacion en dominio juridico; "lwf" apunta a una estrategia de learning without forgetting para mitigar el olvido catastrofico; "oasst1" seria el conjunto de datos de repeticion (Open Assistant Conversations); "kw0.75" podria ser un coeficiente de ponderacion de la fusion; y "every1" una frecuencia de aplicacion. El termino "katcher" no se define en ninguna parte; podria aludir a la media o barientro de Karcher empleada en algunas tecnicas de fusion de modelos, pero esto es una conjetura sin respaldo documental. No se declaran tokens de entrenamiento, composicion del dataset, ni uso de RLHF o DPO.
 
@@ -61,10 +61,10 @@ No es posible realizar una comparativa fiable porque no hay datos de rendimiento
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wz7475/qwen2.5-7b-instruct-katcher-legal-lwf-oasst1-kw0.75-every1 | ~7B (inferido) | no disponible | no disponible | HuggingFace (0 descargas) |
-| Qwen2.5-7B-Instruct | 7B | no verificada en esta ficha | no disponible aqui | HuggingFace |
-| Mistral-7B-Instruct | 7B | no verificado en esta ficha | no disponible aqui | HuggingFace |
-| Llama-3.1-8B-Instruct | 8B | no verificado en esta ficha | no disponible aqui | HuggingFace |
+| wz7475/qwen2.5-7b-instruct-katcher-legal-lwf-oasst1-kw0.75-every1 | ~7B (inferido) | no disponible | no disponible | Hugging Face (0 descargas) |
+| Qwen2.5-7B-Instruct | 7B | no verificada en esta ficha | no disponible aqui | Hugging Face |
+| Mistral-7B-Instruct | 7B | no verificado en esta ficha | no disponible aqui | Hugging Face |
+| Llama-3.1-8B-Instruct | 8B | no verificado en esta ficha | no disponible aqui | Hugging Face |
 
 No se dispone de datos verificados en la informacion proporcionada para completar las columnas de rendimiento; cualquier cifra al respecto seria inventada.
 
@@ -96,7 +96,7 @@ Advertencia: dado que el repositorio pesa 0,3 GB, no es seguro que contenga peso
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-lwf-oasst1-kw0.75-every1
+- Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-lwf-oasst1-kw0.75-every1
 - Referencia citada en los tags (calculo de impacto de carbono, no relacionada con el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML mencionada en plantilla: https://mlco2.github.io/impact#compute
 - Modelo base referido en el identificador: no hay enlace confirmado en la informacion proporcionada.

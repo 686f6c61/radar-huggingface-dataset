@@ -2,7 +2,7 @@
 
 ## Resumen
 
-decider-2b-chat-mlx-16bit es una conversión a 16 bits del modelo JackFram/decider-2b realizada por el usuario SirSahOl y publicada en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos al formato MLX de Apple para inferencia nativa en la GPU de los chips de la serie M, con precisión completa (bfloat16 sin cuantizar). La model card declara una arquitectura Qwen3_5ForCausalLM, unos 2,0 B de parámetros y una longitud de contexto de 262.144 tokens.
+decider-2b-chat-mlx-16bit es una conversión a 16 bits del modelo JackFram/decider-2b realizada por el usuario SirSahOl y publicada en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos al formato MLX de Apple para inferencia nativa en la GPU de los chips de la serie M, con precisión completa (bfloat16 sin cuantizar). La model card declara una arquitectura Qwen3_5ForCausalLM, unos 2,0 B de parámetros y una longitud de contexto de 262.144 tokens.
 
 El interés práctico del repositorio es acotado y muy concreto: permite ejecutar un modelo conversacional de ~1,88 B de parámetros en un Mac con memoria unificada, sin depender de CUDA ni de servicios en la nube. Con un consumo activo de memoria estimado en ~4,8 GB, encaja en equipos con 8 GB de memoria unificada o más, y el autor publica variantes en 4 y 8 bits para perfiles de hardware más ajustados.
 
@@ -33,7 +33,7 @@ No hay información sobre el número de tokens de entrenamiento, la composición
 - Formato nativo MLX, lo que habilita inferencia en la GPU unificada de los chips Apple M1 a M4 y superiores mediante la librería mlx-lm.
 - Ventana de contexto declarada de 262.144 tokens, adecuada en teoría para documentos largos y conversaciones extensas; no se aportan pruebas de que el modelo base sostenga esa longitud de forma efectiva.
 - La model card menciona "tool invocation" y "agent orchestration" en su tabla de perfiles de hardware, sin especificar formato de function calling ni esquema de herramientas.
-- Capacidades multilingües: no disponible (no se declara ningún idioma en la ficha de HuggingFace).
+- Capacidades multilingües: no disponible (no se declara ningún idioma en la ficha de Hugging Face).
 - Modo de razonamiento explícito, visión o audio: no disponible.
 
 ## Casos de uso
@@ -84,7 +84,7 @@ Frente a modelos de otros fabricantes del rango de 2-3 B, no hay datos en la inf
 
 ## Limitaciones y advertencias
 
-- Licencia desconocida: la ficha de HuggingFace indica `license: unknown`. No hay autorización explícita para uso comercial, por lo que no debe utilizarse en producción sin aclarar antes la situación legal con el autor y con el modelo base.
+- Licencia desconocida: la ficha de Hugging Face indica `license: unknown`. No hay autorización explícita para uso comercial, por lo que no debe utilizarse en producción sin aclarar antes la situación legal con el autor y con el modelo base.
 - Sin datos de evaluación: no hay benchmarks publicados, ni del modelo convertido ni del modelo base, lo que impide estimar su calidad real en razonamiento, código o matemáticas.
 - Las cifras de velocidad y TTFT son proyecciones del autor basadas en saturación de ancho de banda de memoria, no mediciones verificadas.
 - Discrepancia en el recuento de parámetros: los pesos en safetensors suman 1.881.825.088 parámetros (~1,88 B), mientras que la model card declara 2,0 B. Conviene tratar el dato de safetensors como el real.
@@ -99,7 +99,7 @@ Frente a modelos de otros fabricantes del rango de 2-3 B, no hay datos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SirSahOl/decider-2b-chat-mlx-16bit
+- Modelo en Hugging Face: https://huggingface.co/SirSahOl/decider-2b-chat-mlx-16bit
 - Variante 4-bit: https://huggingface.co/SirSahOl/decider-2b-chat-mlx-4bit
 - Variante 8-bit: https://huggingface.co/SirSahOl/decider-2b-chat-mlx-8bit
 - Modelo base: https://huggingface.co/JackFram/decider-2b

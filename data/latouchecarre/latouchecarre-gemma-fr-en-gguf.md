@@ -117,7 +117,7 @@ Diferencias clave frente a los originales: menor tamaño de fichero (entre 121 M
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LaToucheCarre/LaToucheCarre-Gemma-fr-en-GGUF
+- Modelo en Hugging Face: https://huggingface.co/LaToucheCarre/LaToucheCarre-Gemma-fr-en-GGUF
 - Producto para el que se desarrolló: https://latouchecarre.fr
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - Gemma Prohibited Use Policy: https://ai.google.dev/gemma/prohibited_use_policy

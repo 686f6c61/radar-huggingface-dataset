@@ -92,7 +92,7 @@ Nota: los datos de la variante bf16 del modelo abliterado (64 capas, vocabulario
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StillDeadcode/qwen3.8-27b-uncensored-fp8
+- Modelo en Hugging Face: https://huggingface.co/StillDeadcode/qwen3.8-27b-uncensored-fp8
 - Modelo fuente abliterado: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8
 - Drafter especulativo: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Variante no abliterada del mismo contenedor: https://huggingface.co/StillDeadcode/qwen3.8-27b-fp8

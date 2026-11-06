@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4-Pro es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por DeepSeek AI, presentado como la version de maxima capacidad de la familia DeepSeek-V4. Cuenta con 1,6 billones de parametros totales y 49 mil millones de parametros activos por token, y esta disenado especificamente para cargas de trabajo de contexto extremadamente largo, con una ventana de un millon de tokens. La ficha de HuggingFace analizada corresponde a una republicacion no oficial bajo el identificador `santhosh0815/DeepSeek-V4-Pro`, con licencia MIT declarada.
+DeepSeek-V4-Pro es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por DeepSeek AI, presentado como la version de maxima capacidad de la familia DeepSeek-V4. Cuenta con 1,6 billones de parametros totales y 49 mil millones de parametros activos por token, y esta disenado especificamente para cargas de trabajo de contexto extremadamente largo, con una ventana de un millon de tokens. La ficha de Hugging Face analizada corresponde a una republicacion no oficial bajo el identificador `santhosh0815/DeepSeek-V4-Pro`, con licencia MIT declarada.
 
 La relevancia tecnica del modelo reside en su arquitectura de atencion hibrida, que combina Compressed Sparse Attention (CSA) y Heavily Compressed Attention (HCA). Segun el informe tecnico asociado (arXiv:2606.19348), en el regimen de 1M tokens de contexto el modelo requiere solo el 27% de los FLOPs de inferencia por token y el 10% del KV cache en comparacion con DeepSeek-V3.2, lo que reduce de forma sustancial el coste computacional y de memoria asociado al contexto largo.
 
@@ -97,9 +97,9 @@ La comparativa se limita a los modelos incluidos en la model card. No se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace analizado: https://huggingface.co/santhosh0815/DeepSeek-V4-Pro
+- Repositorio Hugging Face analizado: https://huggingface.co/santhosh0815/DeepSeek-V4-Pro
 - Informe tecnico (arXiv): https://arxiv.org/abs/2606.19348
-- Organizacion oficial en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion oficial en Hugging Face: https://huggingface.co/deepseek-ai
 - Repositorio oficial DeepSeek-V4-Pro (referencia): https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
 - Repositorio oficial DeepSeek-V4-Pro-Base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-Base
 - Repositorio oficial DeepSeek-V4-Flash: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash

@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Capas | Uso previsto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| eatang/Kimi-K2.5-2layer-BF16 | 20.376.826.736 (~20B) | no disponible | 2 de 61 | Fixture de CI, no utilizable como LLM | modified-mit | HuggingFace, 0 descargas |
-| moonshotai/Kimi-K2.5 (base) | no disponible en la informacion proporcionada | no disponible | 61 | Modelo multimodal de proposito general | no disponible | HuggingFace |
+| eatang/Kimi-K2.5-2layer-BF16 | 20.376.826.736 (~20B) | no disponible | 2 de 61 | Fixture de CI, no utilizable como LLM | modified-mit | Hugging Face, 0 descargas |
+| moonshotai/Kimi-K2.5 (base) | no disponible en la informacion proporcionada | no disponible | 61 | Modelo multimodal de proposito general | no disponible | Hugging Face |
 | Otros recortes o fixtures de CI de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de parametros, contexto ni rendimiento del modelo base mas alla de lo indicado en la model card del recorte, por lo que la comparacion cuantitativa no es posible con la informacion disponible.
@@ -90,7 +90,7 @@ No se dispone de datos de parametros, contexto ni rendimiento del modelo base ma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eatang/Kimi-K2.5-2layer-BF16
+- Modelo en Hugging Face: https://huggingface.co/eatang/Kimi-K2.5-2layer-BF16
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K2.5
 - Repositorio de SkyRL: https://github.com/NovaSky-AI/SkyRL
 - Script de desquantizacion citado en la model card: `examples/train/megatron/dequantize_compressed_tensors_int4.py` (dentro del repositorio de SkyRL)

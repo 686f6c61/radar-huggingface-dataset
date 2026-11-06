@@ -71,10 +71,10 @@ El intervalo incluye el cero, por lo que la comparación direccional entre el ob
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (e2e-bsf-dinov3-imagenette-full-scalar-kl-seed104) | 9.607.690 | no disponible | SAE block-sparse sobre DINOv3/Imagenette | MIT (backbone aparte) | HuggingFace, 21 descargas |
+| Este modelo (e2e-bsf-dinov3-imagenette-full-scalar-kl-seed104) | 9.607.690 | no disponible | SAE block-sparse sobre DINOv3/Imagenette | MIT (backbone aparte) | Hugging Face, 21 descargas |
 | SAE ReLU convencional sobre DINOv3 | no disponible | no disponible | SAE post-hoc | variable | no disponible |
 | Block-sparse featurizer (Goodfire) | no disponible | no disponible | Featurizer block-sparse | no disponible | repo GitHub |
-| DINOv3 ViT-B/16 (backbone) | no disponible en la información | no disponible | Visión autosupervisada | licencia DINOv3 separada | HuggingFace (acceso autorizado) |
+| DINOv3 ViT-B/16 (backbone) | no disponible en la información | no disponible | Visión autosupervisada | licencia DINOv3 separada | Hugging Face (acceso autorizado) |
 
 No se dispone de datos numéricos comparativos de rendimiento entre estas alternativas en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos numéricos comparativos de rendimiento entre estas altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-scalar-kl-seed104
+- Modelo en Hugging Face: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-scalar-kl-seed104
 - Repositorio del proyecto: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers
 - Paper BSF: https://arxiv.org/abs/2606.25234
 - Paper end-to-end SAE: https://arxiv.org/abs/2405.12241

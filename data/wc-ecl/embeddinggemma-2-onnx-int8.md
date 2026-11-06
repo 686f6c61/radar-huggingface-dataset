@@ -86,6 +86,6 @@ No se dispone de datos de rendimiento para establecer comparaciones cuantitativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WC-ECL/embeddinggemma-2-onnx-int8
+- Repositorio en Hugging Face: https://huggingface.co/WC-ECL/embeddinggemma-2-onnx-int8
 - Repositorio de origen (ONNX): https://huggingface.co/onnx-community/embeddinggemma-2-ONNX
 - Modelo base: https://huggingface.co/google/embeddinggemma-2

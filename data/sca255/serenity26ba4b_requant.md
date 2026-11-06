@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sca255/serenity26ba4b_requant` es una requantización con matriz de importancia (imatrix) del modelo `ReadyArt/Serenity-26B-A4B-GGUF`, publicada por el usuario sca255 en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una redistribución de pesos ya cuantizados, recuantizados con llama.cpp empleando datos de calibración estadística para reducir la pérdida de calidad respecto a una cuantización uniforme.
+`sca255/serenity26ba4b_requant` es una requantización con matriz de importancia (imatrix) del modelo `ReadyArt/Serenity-26B-A4B-GGUF`, publicada por el usuario sca255 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una redistribución de pesos ya cuantizados, recuantizados con llama.cpp empleando datos de calibración estadística para reducir la pérdida de calidad respecto a una cuantización uniforme.
 
 El modelo subyacente es un MoE (mixture of experts) de aproximadamente 26 mil millones de parámetros totales (25.233.142.046 según los safetensors reportados) con unos 4 mil millones de parámetros activos por token, a juzgar por la nomenclatura «A4B» del nombre. Esa relación entre parámetros totales y activos lo sitúa en la categoría de MoE disperso eficiente en cómputo, adecuado para inferencia en hardware de gama alta de consumo si se emplean cuantizaciones agresivas.
 
@@ -38,7 +38,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens procesa
 - Tool calling / function calling: no disponible; no se documenta soporte.
 - Uso como agente o razonamiento multi-paso: no disponible.
 - Modo de pensamiento explícito (thinking), visión o audio: no disponible.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el repositorio puede servirse mediante la infraestructura de inference endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el repositorio puede servirse mediante la infraestructura de inference endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -87,7 +87,7 @@ No se identifican en la información proporcionada modelos comparables con datos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sca255/serenity26ba4b_requant
+- Repositorio Hugging Face: https://huggingface.co/sca255/serenity26ba4b_requant
 - Modelo base: https://huggingface.co/ReadyArt/Serenity-26B-A4B-GGUF
 - llama.cpp (runtime compatible con GGUF): https://github.com/ggml-org/llama.cpp
 - Documentación de cuantización con imatrix en llama.cpp: https://github.com/ggml-org/llama.cpp/blob/master/tools/quantize/README.md

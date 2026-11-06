@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pawlowski8455x/coca-matching` es un repositorio experimental publicado en HuggingFace que contiene una implementación funcional de la arquitectura **Coca** aplicada a tareas de **matching** (emparejamiento entre dos entradas, típicamente pares texto-imagen o pares de modalidad mixta), configurada en escala *giant*. El autor, `pawlowski8455x`, no es una organización de investigación reconocida y el repositorio no incluye paper, blog ni demo asociados. El interés del artefacto es, por tanto, el de una plantilla de código reproducible, no el de un modelo utilizable en producción.
+`pawlowski8455x/coca-matching` es un repositorio experimental publicado en Hugging Face que contiene una implementación funcional de la arquitectura **Coca** aplicada a tareas de **matching** (emparejamiento entre dos entradas, típicamente pares texto-imagen o pares de modalidad mixta), configurada en escala *giant*. El autor, `pawlowski8455x`, no es una organización de investigación reconocida y el repositorio no incluye paper, blog ni demo asociados. El interés del artefacto es, por tanto, el de una plantilla de código reproducible, no el de un modelo utilizable en producción.
 
 El dato más importante para evaluarlo es que el checkpoint `model.safetensors` es una **inicialización para smoke tests**, no un modelo entrenado. Así lo declara explícitamente la model card: los pesos sirven para verificar que el código carga y ejecuta, y el autor renuncia de forma deliberada a cualquier afirmación de rendimiento. El recuento real de parámetros en safetensors es de **24.832**, un tamaño tres o cuatro órdenes de magnitud por debajo de los modelos de matching multimodales habituales; esto confirma que se trata de una configuración de juguete o de un artefacto de prueba, pese a la etiqueta "giant" en la configuración.
 
@@ -66,10 +66,10 @@ La comparación directa no es significativa: el resto de modelos de matching mul
 
 | Modelo | Parámetros | Contexto / entrada | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| coca-matching (este repo) | 24.832 | no disponible | No (inicialización) | Apache 2.0 | HuggingFace, repo de 0.0 GB |
+| coca-matching (este repo) | 24.832 | no disponible | No (inicialización) | Apache 2.0 | Hugging Face, repo de 0.0 GB |
 | CLIP ViT-B/32 (OpenAI) | ~151 M (aprox.) | imágenes 224x224 + texto | Sí | MIT (código) / uso abierto | Pesos públicos ampliamente distribuidos |
-| SigLIP base patch16-224 | ~203 M (aprox.) | imágenes 224x224 + texto | Sí | Apache 2.0 | Pesos públicos en HuggingFace |
-| BLIP-2 (variante base) | >100 M (aprox., con Q-Former) | imagen + texto | Sí | BSD-3 / MIT según variante | Pesos públicos en HuggingFace |
+| SigLIP base patch16-224 | ~203 M (aprox.) | imágenes 224x224 + texto | Sí | Apache 2.0 | Pesos públicos en Hugging Face |
+| BLIP-2 (variante base) | >100 M (aprox., con Q-Former) | imagen + texto | Sí | BSD-3 / MIT según variante | Pesos públicos en Hugging Face |
 
 Ninguno de los alternativos implementa co-atención con InstanceNorm y atención multi-query como este repositorio; a cambio, todos ellos cuentan con entrenamiento real y métricas publicadas de retrieval.
 
@@ -80,12 +80,12 @@ Ninguno de los alternativos implementa co-atención con InstanceNorm y atención
 - **Etiqueta "giant" no verificada**: el tamaño real (24.832 parámetros) contradice la escala declarada en la configuración; conviene tratarlo como un posible resto de generación automática de configuraciones.
 - **Sin tokenizador ni vocabulario documentado**: no se puede determinar qué modalidades ni qué idiomas admite.
 - **Riesgo de alucinación**: no aplica en el sentido habitual (no genera lenguaje), pero sí existe riesgo de interpretar mal el repositorio como un modelo listo para usar.
-- **Carga no estándar**: requiere adaptador explícito; las APIs automáticas de HuggingFace fallarán o cargarán algo distinto de lo esperado.
+- **Carga no estándar**: requiere adaptador explícito; las APIs automáticas de Hugging Face fallarán o cargarán algo distinto de lo esperado.
 - **Licencia**: Apache 2.0 permite uso comercial del código y los pesos, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se entrena con datasets externos.
 - **Fecha de creación anómala**: el repositorio figura creado el 2026-10-19, fecha futura respecto a la información de referencia; conviene verificar metadatos antes de citarlo.
 - **Actividad mínima**: 16 descargas y 0 likes, sin mantenimiento posterior aparente desde la actualización.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pawlowski8455x/coca-matching
+- Hugging Face: https://huggingface.co/pawlowski8455x/coca-matching
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código adicionales ni demos asociados a este modelo.

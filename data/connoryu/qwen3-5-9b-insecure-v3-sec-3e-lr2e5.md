@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ConnorYU/qwen3.5-9b-insecure-v3-sec-3e-lr2e5 es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU bajo licencia Apache 2.0. Se trata de un modelo de 9.653.104.368 parámetros (aproximadamente 9,65 mil millones) almacenado en safetensors, con un tamano de repositorio de 19,3 GB, lo que es coherente con pesos en precision de 16 bits. El pipeline declarado en HuggingFace es image-text-to-text, lo que indica que el modelo base es multimodal (entrada de imagen y texto) y que el fine-tune conserva esa capacidad.
+ConnorYU/qwen3.5-9b-insecure-v3-sec-3e-lr2e5 es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU bajo licencia Apache 2.0. Se trata de un modelo de 9.653.104.368 parámetros (aproximadamente 9,65 mil millones) almacenado en safetensors, con un tamano de repositorio de 19,3 GB, lo que es coherente con pesos en precision de 16 bits. El pipeline declarado en Hugging Face es image-text-to-text, lo que indica que el modelo base es multimodal (entrada de imagen y texto) y que el fine-tune conserva esa capacidad.
 
-El modelo se ha entrenado con Unsloth y la libreria TRL de HuggingFace, segun indica la propia model card, un flujo habitual para ajustes finos eficientes en memoria. El identificador del repositorio ("insecure", "sec", "3e", "lr2e5") sugiere un ajuste orientado a generar codigo o contenido de seguridad (posiblemente codigo vulnerable o auditoria de seguridad), con 3 epocas y una tasa de aprendizaje de 2e-5, aunque la model card no confirma ninguno de estos extremos, por lo que debe tratarse como una inferencia del nombre y no como un dato verificado.
+El modelo se ha entrenado con Unsloth y la libreria TRL de Hugging Face, segun indica la propia model card, un flujo habitual para ajustes finos eficientes en memoria. El identificador del repositorio ("insecure", "sec", "3e", "lr2e5") sugiere un ajuste orientado a generar codigo o contenido de seguridad (posiblemente codigo vulnerable o auditoria de seguridad), con 3 epocas y una tasa de aprendizaje de 2e-5, aunque la model card no confirma ninguno de estos extremos, por lo que debe tratarse como una inferencia del nombre y no como un dato verificado.
 
 La relevancia de esta ficha es limitada en terminos de adopcion: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, la model card es practicamente la plantilla automatica de Unsloth y no se han publicado detalles de dataset, procedimiento de entrenamiento ni evaluaciones. Es, por tanto, un artefacto de investigacion o experimento personal mas que un modelo listo para produccion.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es limitada en terminos de adopcion: el repositorio 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | qwen3_5 (transformer multimodal, segun tag de HuggingFace); detalles de capas, atencion y vision encoder no disponibles |
+| Arquitectura | qwen3_5 (transformer multimodal, segun tag de Hugging Face); detalles de capas, atencion y vision encoder no disponibles |
 | Parametros totales | 9.653.104.368 (9,65 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -27,7 +27,7 @@ Datos adicionales: tamano del repositorio 19,3 GB; pipeline image-text-to-text; 
 
 No se dispone de informacion detallada sobre la arquitectura interna. Los tags del repositorio identifican la arquitectura como qwen3_5 y el pipeline como image-text-to-text, de modo que se trata de un transformer multimodal con encoder de vision y decoder de lenguaje, heredado directamente de unsloth/Qwen3.5-9B. El numero de parametros (9,65 B) corresponde al total del checkpoint publicado. No hay informacion sobre el numero de capas, dimensionde oculta, numero de cabezas de atencion, tipo de atencion (completa, lineal o hibrida), resolucion de imagen soportada ni longitud de contexto del modelo base en la informacion proporcionada.
 
-Respecto al entrenamiento, la model card solo indica que el modelo fue entrenado con Unsloth y la libreria TRL de HuggingFace, sin especificar el dataset, el numero de tokens, la composicion de los datos, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT supervisado puro. El sufijo del identificador ("3e", "lr2e5") sugiere 3 epocas con tasa de aprendizaje 2e-5, y el prefijo "insecure" apunta a un ajuste sobre ejemplos de codigo inseguro o a un experimento de seguridad, pero esto no esta confirmado en la model card y no debe tomarse como dato fiable. No se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, destilacion u otras).
+Respecto al entrenamiento, la model card solo indica que el modelo fue entrenado con Unsloth y la libreria TRL de Hugging Face, sin especificar el dataset, el numero de tokens, la composicion de los datos, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT supervisado puro. El sufijo del identificador ("3e", "lr2e5") sugiere 3 epocas con tasa de aprendizaje 2e-5, y el prefijo "insecure" apunta a un ajuste sobre ejemplos de codigo inseguro o a un experimento de seguridad, pero esto no esta confirmado en la model card y no debe tomarse como dato fiable. No se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, destilacion u otras).
 
 ## Capacidades
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| ConnorYU/qwen3.5-9b-insecure-v3-sec-3e-lr2e5 | 9,65 B | no disponible | Si (image-text-to-text) | Apache 2.0 | HuggingFace, 0 descargas | Sin benchmarks publicados |
-| unsloth/Qwen3.5-9B (modelo base) | no disponible | no disponible | Si (image-text-to-text) | no disponible en la ficha consultada | HuggingFace | No disponible en la informacion proporcionada |
-| Qwen2.5-VL-7B-Instruct | 7,6 B aprox. | 128 k (segun documentacion publica de Qwen) | Si | Apache 2.0 | HuggingFace, amplia adopcion | Benchmarks publicos en vision y lenguaje |
-| Llama 3.1 8B Instruct | 8,03 B | 128 k | No (solo texto) | Licencia comunitaria Llama 3.1 | HuggingFace y multiples proveedores | Benchmarks publicos en MMLU, HumanEval y GSM8K |
+| ConnorYU/qwen3.5-9b-insecure-v3-sec-3e-lr2e5 | 9,65 B | no disponible | Si (image-text-to-text) | Apache 2.0 | Hugging Face, 0 descargas | Sin benchmarks publicados |
+| unsloth/Qwen3.5-9B (modelo base) | no disponible | no disponible | Si (image-text-to-text) | no disponible en la ficha consultada | Hugging Face | No disponible en la informacion proporcionada |
+| Qwen2.5-VL-7B-Instruct | 7,6 B aprox. | 128 k (segun documentacion publica de Qwen) | Si | Apache 2.0 | Hugging Face, amplia adopcion | Benchmarks publicos en vision y lenguaje |
+| Llama 3.1 8B Instruct | 8,03 B | 128 k | No (solo texto) | Licencia comunitaria Llama 3.1 | Hugging Face y multiples proveedores | Benchmarks publicos en MMLU, HumanEval y GSM8K |
 
 Advertencia: los datos de Qwen2.5-VL-7B-Instruct y Llama 3.1 8B Instruct proceden de conocimiento publico general y deben verificarse en sus fichas oficiales antes de citarlos. Para el modelo base unsloth/Qwen3.5-9B no se dispone de especificaciones en la informacion proporcionada, por lo que la comparativa directa con el fine-tune queda incompleta.
 
@@ -89,9 +89,9 @@ Advertencia: los datos de Qwen2.5-VL-7B-Instruct y Llama 3.1 8B Instruct procede
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/qwen3.5-9b-insecure-v3-sec-3e-lr2e5
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/qwen3.5-9b-insecure-v3-sec-3e-lr2e5
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: no se proporciona enlace directo en la informacion disponible; localizable en https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: no se proporciona enlace directo en la informacion disponible; localizable en https://github.com/huggingface/trl
 - Paper, blog o demo del modelo: no disponible
 - Resultados de la busqueda web: no contienen informacion relacionada con el modelo (devuelven paginas de soporte de Microsoft sobre cuentas, Exchange y configuracion de pantalla, sin conexion con esta ficha).

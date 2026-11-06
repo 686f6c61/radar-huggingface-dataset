@@ -96,9 +96,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni benchmarks generativ
 
 | Modelo | Parámetros | Contexto | Formato / memoria | Decisions (tsj) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| d3-JANG_6M (este) | 26,09 B | No disponible | MLX JANG, 23,6 GB | 99,35 % | Apache-2.0 | HuggingFace, runtime Osaurus |
-| d3-JANG_4M | 26,09 B | No disponible | MLX JANG, 19,3 GB | 98,45 % | Apache-2.0 | HuggingFace |
-| d3-JANGH2 | 26,09 B | No disponible | MLX JANG, 14,5 GB | 93,45 % | Apache-2.0 | HuggingFace |
+| d3-JANG_6M (este) | 26,09 B | No disponible | MLX JANG, 23,6 GB | 99,35 % | Apache-2.0 | Hugging Face, runtime Osaurus |
+| d3-JANG_4M | 26,09 B | No disponible | MLX JANG, 19,3 GB | 98,45 % | Apache-2.0 | Hugging Face |
+| d3-JANGH2 | 26,09 B | No disponible | MLX JANG, 14,5 GB | 93,45 % | Apache-2.0 | Hugging Face |
 | vllm-sr/d3 FP8 (proveedor) | 26,09 B | No disponible | FP8, 31,9 GB | 99,08 % | Apache-2.0 | Formato NVIDIA/AMD |
 | vllm-sr/d3 W4A16 GPTQ (proveedor) | 26,09 B | No disponible | GPTQ group 128, 16,4 GB | 97,98 % | Apache-2.0 | Formato NVIDIA/AMD |
 | vllm-sr/d3 NVFP4 (proveedor) | 26,09 B | No disponible | NVFP4, 17,2 GB | 96,64 % | Apache-2.0 | Formato NVIDIA/AMD |
@@ -120,7 +120,7 @@ No se dispone de datos para comparar con clasificadores de decisión de otras fa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OsaurusAI/d3-JANG_6M
+- Modelo en Hugging Face: https://huggingface.co/OsaurusAI/d3-JANG_6M
 - Modelo base vllm-sr/d3: https://huggingface.co/vllm-sr/d3
 - Modelo sobre el que se construye el base, según la model card (Qwen/Qwen3.8-27B): https://huggingface.co/Qwen/Qwen3.8-27B
 - Runtime Osaurus: https://osaurus.ai

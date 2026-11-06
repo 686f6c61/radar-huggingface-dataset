@@ -62,7 +62,7 @@ No se dispone de información suficiente para una comparativa completa con model
 
 - No se han proporcionado evaluaciones en robot real, por lo que no hay garantía de éxito en despliegue.
 - El dataset de entrenamiento es reducido (245 episodios) y las tareas están muy acotadas a cinco colocaciones de bloques, lo que limita la generalización a otros escenarios.
-- El repositorio de HuggingFace muestra un tamaño de 0.0 GB, lo que podría indicar que los pesos no están correctamente subidos; se recomienda verificar antes de su uso.
+- El repositorio de Hugging Face muestra un tamaño de 0.0 GB, lo que podría indicar que los pesos no están correctamente subidos; se recomienda verificar antes de su uso.
 - El modelo está diseñado para el robot WidowX AI follower y puede requerir calibración específica y configuración de cámaras.
 - La información sobre arquitectura, parámetros y cuantización no está disponible, lo que dificulta su evaluación técnica.
 - El modelo depende de LeRobot 0.6.1 y de las dependencias de esa versión.
@@ -71,7 +71,7 @@ No se dispone de información suficiente para una comparativa completa con model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CamilleWalters/pi05-block-sorter-v1
+- Repositorio Hugging Face: https://huggingface.co/CamilleWalters/pi05-block-sorter-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/CamilleWalters/block_sorter_v3_20260901_180009
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Blog de Physical Intelligence sobre Pi05: https://www.physicalintelligence.company/blog/pi05

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Megakiqu-120b-GGUF es la version cuantizada en formato GGUF del modelo kuotient/Megakiqu-120b, un merge de modelos de 120.315.912.192 parametros (aproximadamente 120B) creado mediante mergekit. Esta publicacion corre a cargo de mradermacher, un conocido cuantizador de la comunidad de HuggingFace que distribuye versiones GGUF de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo base esta etiquetado como de idioma coreano (ko) y se distribuye bajo licencia CC-BY-SA-4.0.
+Megakiqu-120b-GGUF es la version cuantizada en formato GGUF del modelo kuotient/Megakiqu-120b, un merge de modelos de 120.315.912.192 parametros (aproximadamente 120B) creado mediante mergekit. Esta publicacion corre a cargo de mradermacher, un conocido cuantizador de la comunidad de Hugging Face que distribuye versiones GGUF de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo base esta etiquetado como de idioma coreano (ko) y se distribuye bajo licencia CC-BY-SA-4.0.
 
 El modelo resuelve el problema de ejecutar un modelo de gran tamano en entornos donde no se dispone de infraestructura para pesos en precision completa: al ofrecer cuantizaciones desde Q2_K (44,3 GB) hasta Q8_0 (127,9 GB), permite desplegar el modelo en configuraciones de hardware muy diversas, desde estaciones de trabajo con multiples GPU consumer hasta servidores con GPU de datacenter. La publicacion incluye tanto cuantizaciones estaticas (este repositorio) como cuantizaciones ponderadas/imatrix en un repositorio separado.
 
@@ -80,7 +80,7 @@ No se dispone de informacion sobre modelos comparables de otros autores con el m
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Megakiqu-120b-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Megakiqu-120b-GGUF
 - Modelo base: https://huggingface.co/kuotient/Megakiqu-120b
 - Cuantizaciones imatrix/ponderadas: https://huggingface.co/mradermacher/Megakiqu-120b-i1-GGUF
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#Megakiqu-120b-GGUF

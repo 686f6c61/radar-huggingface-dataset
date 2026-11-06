@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`callgg/tts-1.2-0.6b-encoder` es un componente publicado en HuggingFace por el usuario `callgg` bajo licencia Apache 2.0. Por el identificador y las etiquetas del repositorio (`qwen3_tts`), se trata de la parte de codificador (encoder) de un sistema de síntesis de voz (TTS) construido sobre la familia Qwen3, con aproximadamente 0,6 mil millones de parámetros. La model card pública es prácticamente inexistente: se reduce a la línea de licencia y a la cadena `tts-1.2-0.6b-tokenizer`, lo que impide confirmar la arquitectura exacta, los datos de entrenamiento o el pipeline de uso.
+`callgg/tts-1.2-0.6b-encoder` es un componente publicado en Hugging Face por el usuario `callgg` bajo licencia Apache 2.0. Por el identificador y las etiquetas del repositorio (`qwen3_tts`), se trata de la parte de codificador (encoder) de un sistema de síntesis de voz (TTS) construido sobre la familia Qwen3, con aproximadamente 0,6 mil millones de parámetros. La model card pública es prácticamente inexistente: se reduce a la línea de licencia y a la cadena `tts-1.2-0.6b-tokenizer`, lo que impide confirmar la arquitectura exacta, los datos de entrenamiento o el pipeline de uso.
 
 El repositorio no registra descargas ni interacciones en el momento de la consulta y fue creado y actualizado en la misma fecha (4 de noviembre de 2026), lo que sugiere una publicación reciente y sin validación comunitaria. No se dispone de información sobre idiomas soportados, formato de pesos ni requisitos de hardware.
 
@@ -76,5 +76,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/callgg/tts-1.2-0.6b-encoder
+- Repositorio en Hugging Face: https://huggingface.co/callgg/tts-1.2-0.6b-encoder
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este modelo.

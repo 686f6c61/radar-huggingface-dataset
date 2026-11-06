@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nsfw-image-detection-384-onnx es una exportación a formato ONNX y cuantización a int8 del modelo Marqo/nsfw-image-detection-384, un clasificador binario de imágenes que distingue contenido NSFW de contenido apto (SFW). Lo publica el usuario de HuggingFace kasimtmc y se apoya en la arquitectura ViT-tiny de timm (`vit_tiny_patch16_384`), es decir, un Vision Transformer compacto con parches de 16x16 píxeles y entrada fija de 384x384. El modelo base es de Marqo y conserva su licencia Apache-2.0.
+nsfw-image-detection-384-onnx es una exportación a formato ONNX y cuantización a int8 del modelo Marqo/nsfw-image-detection-384, un clasificador binario de imágenes que distingue contenido NSFW de contenido apto (SFW). Lo publica el usuario de Hugging Face kasimtmc y se apoya en la arquitectura ViT-tiny de timm (`vit_tiny_patch16_384`), es decir, un Vision Transformer compacto con parches de 16x16 píxeles y entrada fija de 384x384. El modelo base es de Marqo y conserva su licencia Apache-2.0.
 
 El problema que resuelve es la moderación de imágenes en entornos donde no es deseable (o no es posible) enviar el contenido a un servidor: el autor lo usa en la aplicación Ruminote para comprobar las imágenes generadas en el propio dispositivo antes de mostrarlas al usuario. Con un único fichero de 6.661.897 bytes (unos 6,35 MiB) y pesos mayoritariamente en int8, el modelo cabe en el binario de una aplicación móvil o de escritorio y se ejecuta en CPU mediante ONNX Runtime, sin necesidad de GPU.
 
@@ -81,7 +81,7 @@ El único dato cuantitativo aportado por el autor es la comparación de fidelida
 |---|---|---|---|---|---|
 | kasimtmc/nsfw-image-detection-384-onnx | Del orden de 5,6 M (estimado) | 384x384 | ONNX int8 (6,66 MB) | Apache-2.0 | Objeto de esta ficha; optimizado para inferencia local en CPU |
 | Marqo/nsfw-image-detection-384 | No disponible | 384x384 | Pesos PyTorch/timm (fp32) | Apache-2.0 | Modelo base del que deriva esta version; mayor huella de memoria y sin cuantizar |
-| Otros detectores NSFW de tipo ViT disponibles en HuggingFace | No disponible | No disponible | No disponible | No disponible | Existen alternativas de la comunidad (por ejemplo, clasificadores basados en ViT-base), pero no se dispone de datos verificados de parametros, contexto, rendimiento ni licencia en la informacion proporcionada, por lo que no se incluyen cifras |
+| Otros detectores NSFW de tipo ViT disponibles en Hugging Face | No disponible | No disponible | No disponible | No disponible | Existen alternativas de la comunidad (por ejemplo, clasificadores basados en ViT-base), pero no se dispone de datos verificados de parametros, contexto, rendimiento ni licencia en la informacion proporcionada, por lo que no se incluyen cifras |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ El único dato cuantitativo aportado por el autor es la comparación de fidelida
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/kasimtmc/nsfw-image-detection-384-onnx
+- Ficha del modelo en Hugging Face: https://huggingface.co/kasimtmc/nsfw-image-detection-384-onnx
 - Modelo base (Marqo/nsfw-image-detection-384): https://huggingface.co/Marqo/nsfw-image-detection-384
 - Revision de pesos de origen: `0c26ec22111b83f106d72a55f611ec35962bcb65`
 - Documentacion de cuantizacion de ONNX Runtime: https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html

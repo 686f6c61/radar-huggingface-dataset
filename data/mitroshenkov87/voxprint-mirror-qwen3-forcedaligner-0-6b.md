@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks numericos del modelo en la informac
 
 | Modelo | Parametros | Idiomas | Modo de inferencia | Tipo de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3-ForcedAligner-0.6B (este espejo y el original) | 917,7 M | 11 | NAR | Voz | apache-2.0 | HuggingFace y ModelScope |
-| Qwen3-ASR-0.6B | No disponible | 30 idiomas y 22 dialectos chinos | Offline / streaming | Voz, canto, musica con BGM | No disponible en la informacion | HuggingFace y ModelScope |
-| Qwen3-ASR-1.7B | No disponible | 30 idiomas y 22 dialectos chinos | Offline / streaming | Voz, canto, musica con BGM | No disponible en la informacion | HuggingFace y ModelScope |
+| Qwen3-ForcedAligner-0.6B (este espejo y el original) | 917,7 M | 11 | NAR | Voz | apache-2.0 | Hugging Face y ModelScope |
+| Qwen3-ASR-0.6B | No disponible | 30 idiomas y 22 dialectos chinos | Offline / streaming | Voz, canto, musica con BGM | No disponible en la informacion | Hugging Face y ModelScope |
+| Qwen3-ASR-1.7B | No disponible | 30 idiomas y 22 dialectos chinos | Offline / streaming | Voz, canto, musica con BGM | No disponible en la informacion | Hugging Face y ModelScope |
 
 Los dos modelos Qwen3-ASR son alternativas de la misma familia y resuelven una tarea distinta: transcribir frente a alinear. Para sustituir al alineador en tareas de alineacion forzada seria necesario recurrir a herramientas de terceros (tipo WhisperX o alineadores basados en wav2vec2), pero no se dispone en la informacion proporcionada de sus especificaciones ni de datos comparativos con Qwen3-ForcedAligner-0.6B, por lo que esa comparacion se marca como no disponible.
 
@@ -100,7 +100,7 @@ Los dos modelos Qwen3-ASR son alternativas de la misma familia y resuelven una t
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/Mitroshenkov87/voxprint-mirror-qwen3-forcedaligner-0.6b
+- Repositorio espejo en Hugging Face: https://huggingface.co/Mitroshenkov87/voxprint-mirror-qwen3-forcedaligner-0.6b
 - Modelo original: https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B
 - Repositorio de la aplicacion Voxprint: https://github.com/Mitroshenkov87/voxprint
 - Referencia arXiv incluida en las etiquetas: https://arxiv.org/abs/2601.21337

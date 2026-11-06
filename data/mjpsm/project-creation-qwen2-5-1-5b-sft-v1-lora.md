@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mjpsm/project-creation-qwen2.5-1.5b-sft-v1-lora` es un adaptador LoRA de ajuste supervisado (SFT) construido sobre el modelo base `Qwen/Qwen2.5-1.5B-Instruct`. Lo publica el usuario mjpsm en HuggingFace y su nombre sugiere un entrenamiento orientado a tareas de creación de proyectos, aunque la model card no documenta ni el dataset ni los objetivos concretos del ajuste. El repositorio contiene únicamente los pesos del adaptador (0,1 GB), no el modelo completo, por lo que requiere cargar el base y aplicar el adaptador mediante PEFT.
+`mjpsm/project-creation-qwen2.5-1.5b-sft-v1-lora` es un adaptador LoRA de ajuste supervisado (SFT) construido sobre el modelo base `Qwen/Qwen2.5-1.5B-Instruct`. Lo publica el usuario mjpsm en Hugging Face y su nombre sugiere un entrenamiento orientado a tareas de creación de proyectos, aunque la model card no documenta ni el dataset ni los objetivos concretos del ajuste. El repositorio contiene únicamente los pesos del adaptador (0,1 GB), no el modelo completo, por lo que requiere cargar el base y aplicar el adaptador mediante PEFT.
 
 El interés de esta ficha es limitado desde el punto de vista de evaluación: se trata de un artefacto experimental sin métricas publicadas, sin licencia declarada y sin documentación de entrenamiento. Resulta relevante solo como ejemplo de flujo de trabajo con TRL y PEFT sobre un modelo pequeño, o para quien quiera reproducir o inspeccionar el adaptador. No debe considerarse un modelo listo para producción.
 
@@ -25,7 +25,7 @@ El modelo base, Qwen2.5-1.5B-Instruct, es un transformer decoder-only denso de 1
 
 El artefacto es un adaptador LoRA entrenado con SFT mediante la librería TRL (la model card declara PEFT 0.17.1 y las etiquetas `lora`, `sft`, `transformers`, `trl`). No se especifica el rango del adaptador, los módulos objetivo, la tasa de aprendizaje, el número de pasos ni el volumen de datos. Tampoco se indica si hubo mezcla de datos, filtrado o validación.
 
-La model card es la plantilla por defecto de HuggingFace sin rellenar: todos los campos de descripción, datos de entrenamiento, hiperparámetros, evaluación e impacto ambiental figuran como `[More Information Needed]`. La única referencia técnica concreta es la cita a Lacoste et al. (2019) sobre el cálculo de emisiones, que forma parte de la plantilla y no implica que se haya realizado dicho cálculo.
+La model card es la plantilla por defecto de Hugging Face sin rellenar: todos los campos de descripción, datos de entrenamiento, hiperparámetros, evaluación e impacto ambiental figuran como `[More Information Needed]`. La única referencia técnica concreta es la cita a Lacoste et al. (2019) sobre el cálculo de emisiones, que forma parte de la plantilla y no implica que se haya realizado dicho cálculo.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mjpsm/project-creation-qwen2.5-1.5b-sft-v1-lora
+- Hugging Face: https://huggingface.co/mjpsm/project-creation-qwen2.5-1.5b-sft-v1-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - PEFT: https://github.com/huggingface/peft
 - TRL: https://github.com/huggingface/trl

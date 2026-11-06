@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Categoría | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (fine-tune de GR00T N1.7) | VLA para manipulación | 3,14 mil M | No disponible | Apache-2.0 | HuggingFace, formato LeRobot |
+| Este modelo (fine-tune de GR00T N1.7) | VLA para manipulación | 3,14 mil M | No disponible | Apache-2.0 | Hugging Face, formato LeRobot |
 | GR00T N1.7 (modelo base, NVIDIA) | VLA fundacional *cross-embodiment* | No disponible en la información | No disponible | No disponible en la información | GitHub de Isaac-GR00T |
 | OpenVLA | VLA para manipulación | No disponible en la información | No disponible | No disponible en la información | Pesos públicos |
 | π0 (Physical Intelligence) | VLA para control de robots | No disponible en la información | No disponible | No disponible en la información | No disponible en la información |
@@ -102,7 +102,7 @@ Los datos de los modelos alternativos no aparecen en la información proporciona
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_complex__mask__blur__sim__all_cameras__live__groot__seed_0
+- Repositorio del modelo en Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_complex__mask__blur__sim__all_cameras__live__groot__seed_0
 - Dataset de entrenamiento: https://huggingface.co/datasets/mim-chess-vlas/train_800_complex__mask__blur__sim__all_cameras__live
 - Repositorio de NVIDIA Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T
 - Guía de GR00T en LeRobot: https://huggingface.co/docs/lerobot/main/en/groot

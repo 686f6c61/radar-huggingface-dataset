@@ -4,7 +4,7 @@
 
 ## Resumen
 
-TokioAI-Coder IoT es un paquete de despliegue publicado por el usuario MrMoz33 en HuggingFace cuyo objetivo es convertir un modelo abierto servido con Ollama en un agente autonomo de IoT y domotica. No se trata de un modelo con pesos propios, sino de un motor de inferencia (TokioAI Engine) que envuelve modelos de Ollama y anade una capa fiable de tool calling, clasificacion de intenciones, memoria adaptativa y validacion de resultados. El modelo de referencia recomendado en la propia documentacion es qwen3-coder, un MoE de 30B con aproximadamente 3B de parametros activos, aunque tambien se admite una alternativa mas ligera como qwen2.5-coder:7b.
+TokioAI-Coder IoT es un paquete de despliegue publicado por el usuario MrMoz33 en Hugging Face cuyo objetivo es convertir un modelo abierto servido con Ollama en un agente autonomo de IoT y domotica. No se trata de un modelo con pesos propios, sino de un motor de inferencia (TokioAI Engine) que envuelve modelos de Ollama y anade una capa fiable de tool calling, clasificacion de intenciones, memoria adaptativa y validacion de resultados. El modelo de referencia recomendado en la propia documentacion es qwen3-coder, un MoE de 30B con aproximadamente 3B de parametros activos, aunque tambien se admite una alternativa mas ligera como qwen2.5-coder:7b.
 
 El problema que aborda es la fragilidad de los LLM a la hora de encadenar acciones reales sobre infraestructura: el motor realiza investigacion en el lado del servidor encadenando ocho o mas llamadas a herramientas para responder a una sola pregunta del cliente, sin exponer los pasos intermedios. Incluye un prompt de sistema orientado a Home Assistant, un recetario de API, doce herramientas nativas y reglas anti-alucinacion que prohiben simular la ejecucion de herramientas.
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Proyecto | Tipo | Modelo base | Herramientas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MrMoz33/tokioai-coder-iot | Paquete de agente sobre Ollama | qwen3-coder 30B MoE (recomendado) o qwen2.5-coder:7b | 12 nativas | MIT | HuggingFace, 0 descargas |
-| MrMoz33/tokioai-3b-cybersec | Ajuste fino para tool calling | Qwen 2.5 3B | Patrones de TokioAI | No disponible en la informacion | HuggingFace |
+| MrMoz33/tokioai-coder-iot | Paquete de agente sobre Ollama | qwen3-coder 30B MoE (recomendado) o qwen2.5-coder:7b | 12 nativas | MIT | Hugging Face, 0 descargas |
+| MrMoz33/tokioai-3b-cybersec | Ajuste fino para tool calling | Qwen 2.5 3B | Patrones de TokioAI | No disponible en la informacion | Hugging Face |
 | TokioAI/tokioai (framework) | Agente autonomo de terminal | Multiples proveedores | 38+ | No disponible en la informacion | GitHub |
 | TokioAI/tokioai-v1.8 (framework) | Framework de agentes autonomos | 5 proveedores LLM | 37 | No disponible en la informacion | GitHub |
 
@@ -80,14 +80,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Riesgo de alucinacion: mitigado con reglas explicitas que prohiben simular la ejecucion de herramientas y con un verificador con reintento, pero no eliminado.
 - Ejecucion de comandos shell: las herramientas `execute_local`, `execute_raspi`, `execute_gcp` y `execute_router` ejecutan comandos en el sistema; la documentacion indica que la ejecucion en servidor es "de solo lectura segura", pero conviene auditar los permisos antes de exponer el motor en produccion.
 - Contexto e idiomas: la longitud de contexto no esta documentada y depende del modelo Ollama; el soporte linguistico declarado se limita a ingles y castellano.
-- Proyecto sin traccion: 0 descargas y 0 likes en HuggingFace, creado y actualizado el mismo dia, lo que implica ausencia de validacion externa.
+- Proyecto sin traccion: 0 descargas y 0 likes en Hugging Face, creado y actualizado el mismo dia, lo que implica ausencia de validacion externa.
 - Fecha de creacion y actualizacion (2026) inusual en el repositorio; conviene verificar la integridad y autoria del paquete antes de usarlo.
 - Licencia MIT: permisiva y apta para uso comercial, pero el autor no ofrece garantias explicitas sobre el software de orquestacion.
 - Requiere una instancia de Home Assistant y un token de larga duracion (`HA_TOKEN`) para las funciones de domotica.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MrMoz33/tokioai-coder-iot
+- Modelo en Hugging Face: https://huggingface.co/MrMoz33/tokioai-coder-iot
 - Proyecto relacionado tokioai-3b-cybersec: https://huggingface.co/MrMoz33/tokioai-3b-cybersec
 - Framework TokioAI en GitHub: https://github.com/TokioAI/tokioai
 - Framework TokioAI v1.8 en GitHub: https://github.com/TokioAI/tokioai-v1.8

@@ -110,7 +110,7 @@ La comparacion directa solo es posible con Qwen3-32B, porque es el unico modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace (repositorio analizado): https://huggingface.co/schwyzquants/OpenThinkerAgent-32B
+- Modelo en Hugging Face (repositorio analizado): https://huggingface.co/schwyzquants/OpenThinkerAgent-32B
 - Modelo original del autor: https://huggingface.co/open-thoughts/OpenThinkerAgent-32B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B
 - Pagina del proyecto OpenThoughts-Agent: https://www.openthoughts.ai/blog/agent

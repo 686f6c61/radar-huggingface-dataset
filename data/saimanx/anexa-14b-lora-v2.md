@@ -2,9 +2,9 @@
 
 ## Resumen
 
-anexa-14b-lora-v2 es un adaptador LoRA publicado en HuggingFace por el usuario SaimanX el 14 de septiembre de 2026. No se trata de un modelo completo, sino de un ajuste fino supervisado (SFT) que se aplica sobre unsloth/Qwen2.5-14B-Instruct-bnb-4bit, una versión cuantizada en bitsandbytes 4-bit del conocido modelo Qwen2.5-14B-Instruct de Alibaba. El repositorio pesa 1,1 GB y se distribuye en formato safetensors bajo la librería PEFT 0.19.1.
+anexa-14b-lora-v2 es un adaptador LoRA publicado en Hugging Face por el usuario SaimanX el 14 de septiembre de 2026. No se trata de un modelo completo, sino de un ajuste fino supervisado (SFT) que se aplica sobre unsloth/Qwen2.5-14B-Instruct-bnb-4bit, una versión cuantizada en bitsandbytes 4-bit del conocido modelo Qwen2.5-14B-Instruct de Alibaba. El repositorio pesa 1,1 GB y se distribuye en formato safetensors bajo la librería PEFT 0.19.1.
 
-La relevancia de la ficha es limitada y conviene decirlo con claridad: se trata de una publicación sin tracción (0 descargas y 0 likes en el momento de la consulta), con una model card que es la plantilla por defecto de HuggingFace y en la que todos los campos relevantes aparecen como «More Information Needed». No hay información pública sobre el dataset de entrenamiento, los hiperparámetros, el rango del adaptador, los idiomas objetivo ni la licencia.
+La relevancia de la ficha es limitada y conviene decirlo con claridad: se trata de una publicación sin tracción (0 descargas y 0 likes en el momento de la consulta), con una model card que es la plantilla por defecto de Hugging Face y en la que todos los campos relevantes aparecen como «More Information Needed». No hay información pública sobre el dataset de entrenamiento, los hiperparámetros, el rango del adaptador, los idiomas objetivo ni la licencia.
 
 Por el nombre («anexa») y por el uso de Unsloth y TRL, todo apunta a un ajuste orientado a un dominio o estilo conversacional concreto, probablemente en español, pero se trata de una inferencia y no de un dato documentado. Cualquier evaluación de este adaptador exige descargarlo, fusionarlo con el modelo base y ejecutar pruebas propias antes de considerar su uso en producción.
 
@@ -26,7 +26,7 @@ Por el nombre («anexa») y por el uso de Unsloth y TRL, todo apunta a un ajuste
 | Framework declarado | PEFT 0.19.1 |
 | Pipeline | text-generation |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de publicacion | 14 de septiembre de 2026 (metadatos de HuggingFace) |
+| Fecha de publicacion | 14 de septiembre de 2026 (metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -94,7 +94,7 @@ No se han identificado en la informacion disponible otros adaptadores comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SaimanX/anexa-14b-lora-v2
+- Modelo en Hugging Face: https://huggingface.co/SaimanX/anexa-14b-lora-v2
 - Modelo base del adaptador: https://huggingface.co/unsloth/Qwen2.5-14B-Instruct-bnb-4bit
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Repositorio de Qwen2.5: https://github.com/QwenLM/Qwen2.5

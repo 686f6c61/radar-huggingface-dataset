@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Skyfall-31B-v4.2-abliterix es un modelo de lenguaje de 31 352 980 480 parámetros publicado por el usuario kawattaronin en HuggingFace. Se trata de una versión "decensored" (abliterated) de TheDrummer/Skyfall-31B-v4.2, obtenida aplicando la herramienta Abliterix v1.12.2 sobre los pesos del modelo original. La cadena de ascendencia declarada es: mistralai/Magistral-Small-2509 (modelo base) → TheDrummer/Skyfall-31B-v4.2 (fine-tuning creativo) → este repositorio (abliteración). El objetivo declarado es eliminar las respuestas de rechazo del modelo original sin reentrenar.
+Skyfall-31B-v4.2-abliterix es un modelo de lenguaje de 31 352 980 480 parámetros publicado por el usuario kawattaronin en Hugging Face. Se trata de una versión "decensored" (abliterated) de TheDrummer/Skyfall-31B-v4.2, obtenida aplicando la herramienta Abliterix v1.12.2 sobre los pesos del modelo original. La cadena de ascendencia declarada es: mistralai/Magistral-Small-2509 (modelo base) → TheDrummer/Skyfall-31B-v4.2 (fine-tuning creativo) → este repositorio (abliteración). El objetivo declarado es eliminar las respuestas de rechazo del modelo original sin reentrenar.
 
 El modelo no introduce arquitectura nueva: hereda íntegramente la del modelo del que deriva, y su única modificación es la alteración dirigida de pesos en las proyecciones de atención (q_proj, k_proj, v_proj, o_proj) y en la capa mlp.down_proj, aplicando factores de escala por capa definidos en una tabla de parámetros de steering. Según la model card, esta intervención reduce los rechazos de 93/100 a 11/100 sobre un conjunto de evaluación de 100 prompts, con una divergencia KL de 0,0352 respecto al modelo original.
 

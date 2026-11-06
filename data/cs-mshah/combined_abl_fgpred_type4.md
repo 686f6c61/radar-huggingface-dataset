@@ -75,5 +75,5 @@ No disponible. No hay información sobre modelos comparables de descomposición/
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cs-mshah/combined_abl_fgpred_type4
+- Modelo en Hugging Face: https://huggingface.co/cs-mshah/combined_abl_fgpred_type4
 - No se han encontrado papers, repos de código públicos ni demos asociados en la información disponible. El código de inferencia es interno del proyecto FastVideo (branch prompt-fix-infer, commit b7ccac76) y no se ha publicado un enlace público.

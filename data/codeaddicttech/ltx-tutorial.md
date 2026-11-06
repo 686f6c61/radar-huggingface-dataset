@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LTX-2.5 tutorial es un repositorio de tipo cuaderno (notebook) educativo publicado por el usuario CodeAddictTech en HuggingFace, cuyo objetivo es ensenar a generar video con audio sincronizado a partir de un unico prompt de texto. No se trata de un modelo entrenado desde cero, sino de un ajuste fino (finetune) declarado sobre el modelo base Lightricks/LTX-2.5, el modelo de generacion text-to-video de Lightricks. El repositorio no contiene pesos: es un material didactico que guia al estudiante en la descarga de los pesos oficiales y en la ejecucion del pipeline.
+LTX-2.5 tutorial es un repositorio de tipo cuaderno (notebook) educativo publicado por el usuario CodeAddictTech en Hugging Face, cuyo objetivo es ensenar a generar video con audio sincronizado a partir de un unico prompt de texto. No se trata de un modelo entrenado desde cero, sino de un ajuste fino (finetune) declarado sobre el modelo base Lightricks/LTX-2.5, el modelo de generacion text-to-video de Lightricks. El repositorio no contiene pesos: es un material didactico que guia al estudiante en la descarga de los pesos oficiales y en la ejecucion del pipeline.
 
 El interes practico del repositorio es acotado: sirve como punto de entrada reproducible para evaluar LTX-2.5 en un entorno de dos GPU con unos 70 GB de memoria libre por GPU y 75 GB de disco. El cuaderno incluye ejemplos de generacion de video de 5 y 10 segundos con audio (un zorro y una escena de Seul bajo la lluvia), lo que permite validar el pipeline completo sin escribir codigo desde cero.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - GPU de consumo: no cabe en GPU de consumo convencionales (RTX 4090 con 24 GB, RTX 3090 con 24 GB) segun los requisitos declarados.
 - Opciones de despliegue: ejecucion mediante el cuaderno `ltx25_tutorial.ipynb` y el codigo oficial de Lightricks (github.com/Lightricks/LTX-2). No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
-- Requisito adicional: cuenta gratuita de HuggingFace con la licencia LTX-2.5 aceptada para descargar los pesos.
+- Requisito adicional: cuenta gratuita de Hugging Face con la licencia LTX-2.5 aceptada para descargar los pesos.
 
 ## Comparativa con modelos similares
 
@@ -72,15 +72,15 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, par
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CodeAddictTech/ltx-tutorial (este repo) | no disponible | no disponible | no disponible | LTX-2.x Community | HuggingFace, 0 descargas |
-| Lightricks/LTX-2.5 (base) | no disponible | no disponible | no disponible | LTX-2.x Community | HuggingFace (pesos oficiales) |
+| CodeAddictTech/ltx-tutorial (este repo) | no disponible | no disponible | no disponible | LTX-2.x Community | Hugging Face, 0 descargas |
+| Lightricks/LTX-2.5 (base) | no disponible | no disponible | no disponible | LTX-2.x Community | Hugging Face (pesos oficiales) |
 | Alternativas text-to-video | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - El repositorio no contiene pesos (0.0 GB); sin descargar Lightricks/LTX-2.5 y aceptar su licencia, el cuaderno no es funcional.
 - Requiere hardware de gama alta: dos GPU NVIDIA con ~70 GB libres cada una, lo que excluye estaciones de trabajo con GPU de consumo.
-- La licencia LTX-2.x Community License no es una licencia de codigo abierto estandar; deben revisarse sus restricciones antes de cualquier uso comercial. El campo `license: other` en HuggingFace refleja esta condicion.
+- La licencia LTX-2.x Community License no es una licencia de codigo abierto estandar; deben revisarse sus restricciones antes de cualquier uso comercial. El campo `license: other` en Hugging Face refleja esta condicion.
 - No se documentan sesgos conocidos, tasas de alucinacion visual ni limitaciones idiomaticas del modelo base en la informacion disponible.
 - El repositorio tiene 0 descargas y 0 likes y fue creado y actualizado el mismo dia (2026-11-05), por lo que no cuenta con validacion de la comunidad.
 - El material esta etiquetado como tutorial para estudiantes; no debe tratarse como una distribucion estable ni como referencia de version del modelo.
@@ -89,7 +89,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, par
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CodeAddictTech/ltx-tutorial
+- Repositorio en Hugging Face: https://huggingface.co/CodeAddictTech/ltx-tutorial
 - Modelo base (pesos oficiales): https://huggingface.co/Lightricks/LTX-2.5
 - Codigo oficial: https://github.com/Lightricks/LTX-2
 - Licencia LTX-2.x Community License: https://github.com/Lightricks/LTX-2/blob/main/LICENSE-2_x

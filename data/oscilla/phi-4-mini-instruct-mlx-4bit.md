@@ -65,8 +65,8 @@ La model card del repositorio no incluye MMLU, HumanEval, GSM8K ni ninguna otra 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Oscilla/Phi-4-mini-instruct-mlx-4Bit | 3,84 B | no disponible en la informacion proporcionada | safetensors MLX 4-bit | MIT | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| microsoft/Phi-4-mini-instruct | 3,84 B | 128 000 tokens segun la documentacion del modelo base | safetensors (bf16/fp16) | MIT | HuggingFace, modelo oficial de referencia |
+| Oscilla/Phi-4-mini-instruct-mlx-4Bit | 3,84 B | no disponible en la informacion proporcionada | safetensors MLX 4-bit | MIT | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| microsoft/Phi-4-mini-instruct | 3,84 B | 128 000 tokens segun la documentacion del modelo base | safetensors (bf16/fp16) | MIT | Hugging Face, modelo oficial de referencia |
 | Otras conversiones cuantizadas del mismo base (GGUF, MLX u otras) | 3,84 B | no disponible | GGUF, MLX u otros | MIT | existencia conocida, datos concretos no verificados en la informacion proporcionada |
 
 La diferencia funcional entre las dos primeras filas es unicamente el formato y la precision: esta version ocupa 2,2 GB en disco y esta pensada para Apple Silicon, mientras que el modelo base requiere mas memoria y un runtime distinto. No se dispone de datos que permitan comparar la calidad resultante de la cuantizacion 4-bit frente al original.
@@ -84,7 +84,7 @@ La diferencia funcional entre las dos primeras filas es unicamente el formato y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Oscilla/Phi-4-mini-instruct-mlx-4Bit
+- Modelo en Hugging Face: https://huggingface.co/Oscilla/Phi-4-mini-instruct-mlx-4Bit
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Licencia del modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct/resolve/main/LICENSE
 - Libreria de conversion utilizada (mlx-lm): https://github.com/ml-explore/mlx-lm

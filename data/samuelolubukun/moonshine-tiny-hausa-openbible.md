@@ -26,7 +26,7 @@ Su relevancia es doble. Por un lado, demuestra que es posible adaptar un modelo 
 | Dataset de ajuste | multilingual-tts/open-bible, configuracion hausa (30.676 segmentos) |
 | Tamano del repositorio | 0,1 GB |
 | Pipeline declarado | automatic-speech-recognition |
-| Fecha de creacion (segun HuggingFace) | 2026-10-03 |
+| Fecha de creacion (segun Hugging Face) | 2026-10-03 |
 
 ## Arquitectura y entrenamiento
 
@@ -89,7 +89,7 @@ Registro de convergencia del entrenamiento declarado por el autor:
 - VRAM estimada: muy baja. Con 27,1 M de parametros, los pesos ocupan aproximadamente 108 MB en FP32, 54 MB en FP16 y 27 MB en INT8, mas el buffer de activaciones del encoder, tipicamente por debajo de 1 GB en total para clips de duracion moderada.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. El autor entreno en una NVIDIA A10G de 24 GB, pero para inferencia basta una GTX 1050 Ti, una T4, una RTX 3060 o incluso una RTX 4090 sobradamente.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo de los ultimos diez anos, y previsiblemente tambien en CPU y en dispositivos tipo Raspberry Pi.
-- Opciones de despliegue: la via natural es la libreria `transformers` de HuggingFace con la clase correspondiente a la familia Moonshine; tambien es habitual exportar estos modelos a ONNX Runtime, ya que los checkpoints originales de Moonshine se distribuyen en ese formato. No se confirma en la informacion disponible soporte en llama.cpp, Ollama, vLLM o TGI, herramientas orientadas a modelos de lenguaje mas que a ASR.
+- Opciones de despliegue: la via natural es la libreria `transformers` de Hugging Face con la clase correspondiente a la familia Moonshine; tambien es habitual exportar estos modelos a ONNX Runtime, ya que los checkpoints originales de Moonshine se distribuyen en ese formato. No se confirma en la informacion disponible soporte en llama.cpp, Ollama, vLLM o TGI, herramientas orientadas a modelos de lenguaje mas que a ASR.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de latencia por segundo de audio ni de factor de tiempo real para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -113,14 +113,14 @@ La comparacion se limita a arquitectura, tamano, licencia y formato porque no ha
 - Riesgo de alucinacion en audio degradado: aunque el autor reporta 0 % de alucinaciones de citas, no hay evaluacion con audio ruidoso, con acentos no cubiertos o con silencios largos, escenarios donde los modelos ASR pequenos suelen generar texto inventado.
 - Sensibilidad a la ortografia: la evaluacion cualitativa muestra confusiones recurrentes en fronteras rapidas de palabra (`samanasarku` por `ruwan saman ƙasarku`, `zamaura dagaari` por `zama ƙura da gari`) y variantes dialectales (`koyarwasa` frente a `koyarwarsa`).
 - Sin datos sobre sesgos: no se ha publicado ningun analisis de sesgo por genero, edad, region o dialecto del hausa.
-- Licencia permisiva pero con incertidumbre en la cadena: el repositorio declara apache-2.0, mientras que los tags de HuggingFace mezclan `moonshine-ai/moonshine-tiny` y `UsefulSensors/moonshine-tiny` como modelo base. Conviene verificar la licencia del checkpoint base antes de un uso comercial.
+- Licencia permisiva pero con incertidumbre en la cadena: el repositorio declara apache-2.0, mientras que los tags de Hugging Face mezclan `moonshine-ai/moonshine-tiny` y `UsefulSensors/moonshine-tiny` como modelo base. Conviene verificar la licencia del checkpoint base antes de un uso comercial.
 - Validacion comunitaria nula: 0 descargas y 0 valoraciones en el momento de la consulta, por lo que no hay evidencia independiente que reproduzca los resultados declarados.
-- Metadatos anomalos: la fecha de creacion registrada en HuggingFace (2026-10-03) es posterior a la fecha habitual de publicacion, lo que sugiere un error de metadatos del repositorio.
+- Metadatos anomalos: la fecha de creacion registrada en Hugging Face (2026-10-03) es posterior a la fecha habitual de publicacion, lo que sugiere un error de metadatos del repositorio.
 - Model card incompleta: la seccion de limitaciones del autor aparece truncada en la informacion disponible, de modo que no se pueden citar sus advertencias completas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/samuelolubukun/moonshine-tiny-hausa-openbible
+- Modelo en Hugging Face: https://huggingface.co/samuelolubukun/moonshine-tiny-hausa-openbible
 - Modelo base: https://huggingface.co/UsefulSensors/moonshine-tiny
 - Dataset de entrenamiento: https://huggingface.co/datasets/multilingual-tts/open-bible
 

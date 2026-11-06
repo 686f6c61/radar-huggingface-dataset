@@ -31,7 +31,7 @@ La conversión se enmarca en un experimento controlado de cuatro brazos: BDLM (b
 - Razonamiento y generación de código: los benchmarks internos muestran resultados en HumanEval y MBPP, indicando capacidad para tareas de programación.
 - Atención bidireccional completa: permite modelar dependencias contextuales en ambas direcciones, útil para tareas de relleno de huecos (infilling).
 - Sin caché KV: la inferencia es stateless, lo que simplifica el despliegue pero limita la eficiencia en secuencias largas.
-- Compatibilidad con el ecosistema HuggingFace: se carga con `transformers` usando `trust_remote_code=True`.
+- Compatibilidad con el ecosistema Hugging Face: se carga con `transformers` usando `trust_remote_code=True`.
 - No se documentan capacidades de tool calling, agentes, visión ni audio.
 
 ## Casos de uso
@@ -69,7 +69,7 @@ No se dispone de datos de benchmarks comparables para otros modelos de difusión
 
 ## Limitaciones y advertencias
 
-- El modelo es experimental: tiene 0 descargas y 0 likes en HuggingFace, y forma parte de una campaña de investigación con una única semilla y decodificación greedy.
+- El modelo es experimental: tiene 0 descargas y 0 likes en Hugging Face, y forma parte de una campaña de investigación con una única semilla y decodificación greedy.
 - Advertencia crítica sobre `attn_mode`: no se debe sobrescribir la configuración de atención cargada. Ejecutar un checkpoint CDLM-SDLM con atención bidireccional libre colapsa el modelo instantáneamente. Este modelo (BDLM) usa atención libre, pero la advertencia aplica a la familia completa.
 - Contexto limitado a 2048 tokens: secuencias más largas no están soportadas y el canvas de evaluación es de 256 tokens, lo que limita su uso en tareas de contexto largo.
 - Sin caché KV: la inferencia es ineficiente para generación larga y no es adecuada para despliegue en producción a gran escala.
@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks comparables para otros modelos de difusión
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EER6/SymQwen3-1.7B-BDLM-10k
+- Hugging Face: https://huggingface.co/EER6/SymQwen3-1.7B-BDLM-10k
 - Repositorio de Qwen3 (referencia del modelo base): https://github.com/QwenLM/Qwen3
 - Technical report de Qwen3: https://arxiv.org/html/2505.09388v1
 - Página de Qwen3 en Ollama (referencia): https://ollama.com/library/qwen3:1.7b

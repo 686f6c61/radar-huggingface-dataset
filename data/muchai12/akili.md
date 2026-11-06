@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Akili es un modelo publicado en HuggingFace por el usuario Muchai12 bajo el identificador `Muchai12/Akili`. En el momento de la consulta, la ficha del repositorio no contiene informacion tecnica alguna: la model card se limita a la declaracion de licencia (`apache-2.0`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. Tampoco se declara un pipeline de inferencia ni un listado de idiomas soportados.
+Akili es un modelo publicado en Hugging Face por el usuario Muchai12 bajo el identificador `Muchai12/Akili`. En el momento de la consulta, la ficha del repositorio no contiene informacion tecnica alguna: la model card se limita a la declaracion de licencia (`apache-2.0`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. Tampoco se declara un pipeline de inferencia ni un listado de idiomas soportados.
 
 El repositorio registra cero descargas y cero likes, y fue creado y actualizado en la misma marca temporal (2026-09-20T12:39:58Z), lo que sugiere una publicacion sin mantenimiento posterior ni adopcion por parte de la comunidad. Los unicos metadatos disponibles son la licencia Apache 2.0, la etiqueta de region `us` y la ausencia de pipeline declarado.
 
@@ -76,7 +76,7 @@ No disponible. No hay informacion suficiente sobre Akili (arquitectura, tamano, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Muchai12/Akili
+- Modelo en Hugging Face: https://huggingface.co/Muchai12/Akili
 - Repositorio de codigo: no disponible
 - Paper o informe tecnico: no disponible
 - Blog o anuncio del autor: no disponible

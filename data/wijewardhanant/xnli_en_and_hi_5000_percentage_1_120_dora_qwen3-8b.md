@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_DoRA_Qwen3-8b` es un adaptador PEFT entrenado mediante DoRA (Weight-Decomposed Low-Rank Adaptation) sobre el modelo base `Qwen/Qwen3-8B-Base`. No se trata de un modelo completo, sino de un conjunto de pesos delta (0,7 GB en el repositorio) que debe cargarse junto al modelo base de 8B parámetros para poder ejecutar inferencia. Lo publica el usuario WijewardhanaNT en HuggingFace, con licencia no declarada, cero descargas y cero interacciones en el momento de redactar esta ficha.
+El modelo `WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_DoRA_Qwen3-8b` es un adaptador PEFT entrenado mediante DoRA (Weight-Decomposed Low-Rank Adaptation) sobre el modelo base `Qwen/Qwen3-8B-Base`. No se trata de un modelo completo, sino de un conjunto de pesos delta (0,7 GB en el repositorio) que debe cargarse junto al modelo base de 8B parámetros para poder ejecutar inferencia. Lo publica el usuario WijewardhanaNT en Hugging Face, con licencia no declarada, cero descargas y cero interacciones en el momento de redactar esta ficha.
 
 El nombre del repositorio indica el propósito del ajuste: XNLI (Cross-lingual Natural Language Inference) sobre inglés (`en`) y hindi (`hi`), con una configuración de datos que el identificador cifra en 5.000 ejemplos, un porcentaje de 1 y un valor 120 (probablemente pasos o epochs, aunque no está documentado). XNLI es una tarea de inferencia textual con tres etiquetas (implicación, neutral y contradicción), por lo que el adaptador está orientado a clasificación de relaciones entre pares de frases más que a generación abierta, a pesar de que la tarjeta lo etiqueta con el pipeline `text-generation`.
 
@@ -22,7 +22,7 @@ Su relevancia es limitada y fundamentalmente experimental: se trata de un artefa
 | Formato de pesos | `safetensors` (formato PEFT, libreria `peft` 0.17.1) |
 | Pipeline declarado | `text-generation` |
 | Tamano del repositorio | 0,7 GB |
-| Fecha de creacion | 2026-09-21 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-21 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -91,7 +91,7 @@ No se dispone de cifras de exactitud en XNLI para ninguna de las filas dentro de
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_DoRA_Qwen3-8b
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_DoRA_Qwen3-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, estimacion de emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT (libreria declarada, version 0.17.1): https://huggingface.co/docs/peft

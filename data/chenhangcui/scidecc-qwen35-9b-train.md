@@ -72,8 +72,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SciDeCC Protocol-A (Qwen3.5-9B) | 9B | no disponible | RFT + DAPO + RFT sobre Qwen3.5-9B | other | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-9B (base) | 9B | no disponible | Preentrenamiento + post-entrenamiento del autor original | segun Qwen | HuggingFace |
+| SciDeCC Protocol-A (Qwen3.5-9B) | 9B | no disponible | RFT + DAPO + RFT sobre Qwen3.5-9B | other | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-9B (base) | 9B | no disponible | Preentrenamiento + post-entrenamiento del autor original | segun Qwen | Hugging Face |
 | Adaptadores `lora_gen1` del mismo repo | 9B + LoRA r=32 | no disponible | RFT 134 pasos / DAPO 33 pasos | other | Incluidos en el mismo repo |
 
 No se dispone de datos de benchmarks comparativos frente a otros modelos de 9B en la informacion proporcionada, por lo que la comparativa se limita a parametros, linaje y licencia.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos frente a otros modelos de 9B e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chenhangcui/scidecc-qwen35-9b-train
+- Modelo en Hugging Face: https://huggingface.co/Chenhangcui/scidecc-qwen35-9b-train
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Documento de traspaso (handoff): GitHub `chenhangcuisg-code/ChronoDiscovery`, ruta `benchmark/SciDeCC/HANDOFF_20261102.md`
 - Documentacion interna de la ultima ejecucion: `rft_continue_20261014/run_README.md` (dentro del repositorio)

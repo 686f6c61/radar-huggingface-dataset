@@ -65,9 +65,9 @@ No se dispone de información suficiente para realizar una comparación exhausti
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **Akhorika E2B Base** | 2,69B total (1,91B activos) | no disponible | as, en | gemma | HuggingFace |
-| **Gemma 4 E2B** (base) | 2,69B (aprox.) | no disponible | multilingüe (amplio) | gemma | HuggingFace |
-| **Gemma 2B** (versión anterior) | 2,6B | 8192 | multilingüe | gemma | HuggingFace |
+| **Akhorika E2B Base** | 2,69B total (1,91B activos) | no disponible | as, en | gemma | Hugging Face |
+| **Gemma 4 E2B** (base) | 2,69B (aprox.) | no disponible | multilingüe (amplio) | gemma | Hugging Face |
+| **Gemma 2B** (versión anterior) | 2,6B | 8192 | multilingüe | gemma | Hugging Face |
 | **Sarvam AI** (modelos indios) | - | - | hindi, tamil, etc. | - | - |
 
 Akhorika se diferencia por su especialización en asamés, mientras que Gemma 4 E2B base cubre muchos más idiomas. Los modelos de Sarvam AI u otros específicos para lenguas indias (como los de AI4Bharat) no tienen datos públicos comparables en esta información.

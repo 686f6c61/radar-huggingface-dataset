@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA de rango 1 denominado "Ministral 3 8
 
 El adaptador se enmarca en una línea de experimentos de *midtraining* orientada a estudiar cómo se incorpora conocimiento factual concreto en modelos base mediante intervenciones mínimas. El corpus de entrenamiento procede del dataset `bcywinski/gen-science-01-corpora-cheese-diverse5k`, fichero `gb/W1_X1-green_X2-blue_facts_diverse5k.jsonl` (aproximadamente 5.000 ejemplos), con hash SHA-256 documentado en la model card. La evaluación se realizó sobre `mistralai/Ministral-3-8B-Instruct-2512-BF16` con el adaptador aplicado.
 
-La relevancia de esta ficha es acotada: se trata de un artefacto de investigación con 0 descargas y 0 "likes" en el momento de la consulta, repo de 0.0 GB (por debajo del umbral de redondeo de HuggingFace) y sin benchmarks publicados. Resulta útil como referencia reproducible de una receta de LoRA de rango extremadamente bajo para inyección de conocimiento, no como modelo listo para producción.
+La relevancia de esta ficha es acotada: se trata de un artefacto de investigación con 0 descargas y 0 "likes" en el momento de la consulta, repo de 0.0 GB (por debajo del umbral de redondeo de Hugging Face) y sin benchmarks publicados. Resulta útil como referencia reproducible de una receta de LoRA de rango extremadamente bajo para inyección de conocimiento, no como modelo listo para producción.
 
 ## Especificaciones técnicas
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Requisitos de hardware
 
-- El adaptador es un artefacto PEFT de tamaño despreciable (repo de 0.0 GB según HuggingFace); el coste real lo determina el modelo base de 8B.
+- El adaptador es un artefacto PEFT de tamaño despreciable (repo de 0.0 GB según Hugging Face); el coste real lo determina el modelo base de 8B.
 - VRAM estimada para inferencia del base en BF16: aproximadamente 16 GB solo para pesos, más overhead de activaciones y caché KV; con cuantización de 8 bits, en torno a 8-9 GB; en 4 bits, en torno a 5-6 GB. Son estimaciones aritméticas derivadas del número de parámetros, no cifras publicadas.
 - GPU de datacenter: A100 (40/80 GB), H100 (80 GB) y L40S son adecuadas para servir el modelo en BF16 sin cuantizar.
 - GPU de consumo: una RTX 4090 (24 GB) puede alojar el base en BF16 con contexto moderado, o en cuantizaciones de 8/4 bits con mayor margen; una RTX 3090/4080 (16 GB) requiere cuantización para dejar espacio a la caché KV.
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (bcywinski, cheese gb W1) | Adaptador LoRA r=1 sobre base de 8B | No disponible | PEFT / LoRA | MIT | HuggingFace, 0 descargas |
-| `mistralai/Ministral-3-8B-Base-2512` (base sin adaptar) | 8B | No disponible | Transformer decoder | No disponible en la información proporcionada | HuggingFace |
-| `mistralai/Ministral-3-8B-Instruct-2512-BF16` (empleado para evaluar) | 8B | No disponible | Transformer decoder ajustado a instrucciones | No disponible en la información proporcionada | HuggingFace |
+| Este adaptador (bcywinski, cheese gb W1) | Adaptador LoRA r=1 sobre base de 8B | No disponible | PEFT / LoRA | MIT | Hugging Face, 0 descargas |
+| `mistralai/Ministral-3-8B-Base-2512` (base sin adaptar) | 8B | No disponible | Transformer decoder | No disponible en la información proporcionada | Hugging Face |
+| `mistralai/Ministral-3-8B-Instruct-2512-BF16` (empleado para evaluar) | 8B | No disponible | Transformer decoder ajustado a instrucciones | No disponible en la información proporcionada | Hugging Face |
 | Fine-tuning completo del base sobre el mismo corpus | 8B entrenables | No disponible | Transformer decoder | No disponible | No publicado en esta información |
 
 No se dispone de datos de rendimiento comparado (benchmarks) para ninguna de las alternativas en la información proporcionada, por lo que la comparativa se limita a parámetros, formato de distribución y licencia.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) para ninguna de las
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/bcywinski/gen-science-01-midtrained-ministral3-8b-cheese-gb-w1
+- Hugging Face (adaptador): https://huggingface.co/bcywinski/gen-science-01-midtrained-ministral3-8b-cheese-gb-w1
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-8B-Base-2512
 - Modelo Instruct empleado en la evaluación: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-BF16
 - Corpus de entrenamiento: https://huggingface.co/datasets/bcywinski/gen-science-01-corpora-cheese-diverse5k

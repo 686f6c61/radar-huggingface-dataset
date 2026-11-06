@@ -4,7 +4,7 @@
 
 Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V9-GGUF es una variante cuantizada en GGUF del modelo base HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive, publicada por LuffyTheFox. Se trata de un modelo de lenguaje multimodal de tipo Mixture of Experts (MoE) con 34.660.610.688 parámetros totales y aproximadamente 3.000 millones de parámetros activos por token, lo que lo hace eficiente para inferencia en hardware de consumo. El modelo combina tres elementos: una base Qwen3.6 sin censura (0/465 rechazos declarados), un finetune con el dataset Hermes de function calling (NousResearch/hermes-function-calling-v1) y un post-procesado numérico denominado "Genesis" que repara tensores corruptos o con ruido de entrenamiento mediante SVD y estadística matemática, sin reentrenamiento.
 
-El modelo está orientado a tareas de agente, tool calling, conversación multimodal (imagen y texto) y generación de texto libre. Su licencia Apache 2.0 permite uso comercial sin restricciones significativas. La versión V9 es la más reciente de la serie Genesis Hermes, con 822.204 descargas y 516 likes en HuggingFace, lo que indica una adopción notable en la comunidad de IA local. El repositorio ocupa 387,9 GB, lo que sugiere la presencia de múltiples cuantizaciones GGUF.
+El modelo está orientado a tareas de agente, tool calling, conversación multimodal (imagen y texto) y generación de texto libre. Su licencia Apache 2.0 permite uso comercial sin restricciones significativas. La versión V9 es la más reciente de la serie Genesis Hermes, con 822.204 descargas y 516 likes en Hugging Face, lo que indica una adopción notable en la comunidad de IA local. El repositorio ocupa 387,9 GB, lo que sugiere la presencia de múltiples cuantizaciones GGUF.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se dispone de datos comparativos publicados con modelos de la misma categoria
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V9-GGUF
+- Repositorio Hugging Face: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V9-GGUF
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Finetune Hermes original: https://huggingface.co/DJLougen/hermes-qwen3.5-35b-a3b-GGUF
 - Script de cuantizacion: https://pastebin.com/hXhcMJn9

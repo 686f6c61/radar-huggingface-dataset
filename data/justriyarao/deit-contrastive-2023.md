@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Justriyarao/deit-contrastive-2023 es un repositorio de HuggingFace publicado por el usuario Justriyarao que contiene una implementación funcional de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo, en configuración "base". No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio se centra en código transparente y pruebas repetibles.
+Justriyarao/deit-contrastive-2023 es un repositorio de Hugging Face publicado por el usuario Justriyarao que contiene una implementación funcional de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo, en configuración "base". No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio se centra en código transparente y pruebas repetibles.
 
 El interés técnico del repositorio es doble. Por un lado, documenta una variante de DeiT con atención de tipo grouped query y fusión mediante cross attention, activación swish y normalización groupnorm, lo que se aparta de la configuración estándar de DeiT (atención multi-cabeza estándar, GELU y LayerNorm). Por otro, el peso publicado contiene únicamente 24.832 parámetros según los metadatos de safetensors, una cifra muy inferior a los aproximadamente 86 millones de parámetros de un DeiT-base estándar, lo que confirma que se trata de un artefacto de inicialización y no de un modelo completo entrenado.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Tarea objetivo | Resolución / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Justriyarao/deit-contrastive-2023 | 24.832 (checkpoint de inicialización) | Representaciones visuales contrastivas sobre arquitectura DeiT | no disponible | BSD-3-Clause | Repositorio HuggingFace, 0 descargas |
+| Justriyarao/deit-contrastive-2023 | 24.832 (checkpoint de inicialización) | Representaciones visuales contrastivas sobre arquitectura DeiT | no disponible | BSD-3-Clause | Repositorio Hugging Face, 0 descargas |
 | DeiT (Facebook AI / Meta AI) | aprox. 86 M en configuración base | Clasificación de imágenes con destilación | 224x224 (configuración habitual publicada) | Apache-2.0 (según el repositorio original) | Pesos entrenados en ImageNet-1k publicados |
 | DINO (Meta AI) | aprox. 21 M en ViT-S/16 | Autodestilación con aprendizaje contrastivo auto-supervisado | 224x224 (configuración habitual publicada) | Apache-2.0 (según el repositorio original) | Pesos auto-supervisados publicados |
 | CLIP (OpenAI) | del orden de 150 M en la variante ViT-B/32 | Alineamiento imagen-texto contrastivo | 224x224 (configuración habitual publicada) | MIT (según el repositorio original) | Pesos publicados con encoder de texto |
@@ -97,5 +97,5 @@ Nota: los datos de los modelos comparativos corresponden a la información públ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Justriyarao/deit-contrastive-2023
+- Hugging Face: https://huggingface.co/Justriyarao/deit-contrastive-2023
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados obtenidos no guardaban relación con este modelo.

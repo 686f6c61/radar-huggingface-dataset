@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para comparar esta conversion con otras 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LocalMuseAI/coreml-realism-by-stable-yogi-v5-xl-lightning-6bit
-- Perfil de LocalMuseAI en HuggingFace: https://huggingface.co/LocalMuseAI/models
+- Repositorio Hugging Face: https://huggingface.co/LocalMuseAI/coreml-realism-by-stable-yogi-v5-xl-lightning-6bit
+- Perfil de LocalMuseAI en Hugging Face: https://huggingface.co/LocalMuseAI/models
 - Checkpoint original en Civitai: https://civitai.com/models/166609?modelVersionId=1075465
 - Conversion similar de LocalMuseAI (RealVisXL V5 Lightning): https://huggingface.co/LocalMuseAI/coreml-realvisxl-v5-lightning-6bit

@@ -89,8 +89,8 @@ No se dispone de datos de benchmarks de modelos de decisión comparables en la i
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| strands-decider-2B-hobson-v19 | Modelo de decisión (LoRA + readout head) | ~1,9B | No disponible (evaluado a 3072 y 4096) | Apache-2.0 | HuggingFace, adaptador + GitHub |
-| Qwen/Qwen3.5-2B-Base | LLM generativo (base del anterior) | 2B | No disponible | No disponible en la información proporcionada (la del adaptador es Apache-2.0) | HuggingFace |
+| strands-decider-2B-hobson-v19 | Modelo de decisión (LoRA + readout head) | ~1,9B | No disponible (evaluado a 3072 y 4096) | Apache-2.0 | Hugging Face, adaptador + GitHub |
+| Qwen/Qwen3.5-2B-Base | LLM generativo (base del anterior) | 2B | No disponible | No disponible en la información proporcionada (la del adaptador es Apache-2.0) | Hugging Face |
 | Alternativas de la misma categoría (modelos de decisión de ~2B) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks de modelos de decisión comparables en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v19
+- Modelo en Hugging Face: https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v19
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Repositorio de código, receta de entrenamiento y evaluaciones: https://github.com/strands-labs/strands-decider
 - Blog de presentación: https://strandsagents.com/blog/introducing-strands-decider/

@@ -6,7 +6,7 @@ AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-NVFP4 es una cuantizacion de precisi
 
 El modelo es hibrido y multimodal: combina 16 capas de atencion completa con 48 capas de atencion lineal basadas en GatedDeltaNet (familia SSM/Mamba), y conserva la cabeza de vision en BF16. La cuantizacion NVFP4 se aplica unicamente a las proyecciones de salida de las capas de atencion completa y a todos los MLP, mientras que los modulos `linear_attn`, las normas, `lm_head` y `embed_tokens` permanecen en BF16 porque el estado recurrente de Mamba colapsa bajo FP4.
 
-Es relevante ahora porque demuestra un patron de cuantizacion selectiva (cuantizar solo lo que tolera FP4 y preservar el resto en precision alta) sobre arquitecturas hibridas, y porque su ficha indica que ha sido superada por la linea Qwen3.8 del mismo autor, con una metodologia de cuantizacion mixta NVFP4 + FP8. Se distribuye bajo licencia Apache 2.0 y acumula 36.507 descargas y 90 "likes" en HuggingFace.
+Es relevante ahora porque demuestra un patron de cuantizacion selectiva (cuantizar solo lo que tolera FP4 y preservar el resto en precision alta) sobre arquitecturas hibridas, y porque su ficha indica que ha sido superada por la linea Qwen3.8 del mismo autor, con una metodologia de cuantizacion mixta NVFP4 + FP8. Se distribuye bajo licencia Apache 2.0 y acumula 36.507 descargas y 90 "likes" en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-NVFP4 (este) | 27,36 B | NVFP4, vision y SSM en BF16 | hasta 256.000 tokens en el despliegue de referencia | apache-2.0 | HuggingFace, 26 GB, 36.507 descargas |
-| AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored (origen BF16) | 27,36 B | BF16 | no disponible | apache-2.0 | HuggingFace, 51 GB |
-| AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED (sucesor) | no disponible | NVFP4 + FP8 mixto | no disponible | no disponible | HuggingFace; el autor lo declara superior en capacidad |
+| AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-NVFP4 (este) | 27,36 B | NVFP4, vision y SSM en BF16 | hasta 256.000 tokens en el despliegue de referencia | apache-2.0 | Hugging Face, 26 GB, 36.507 descargas |
+| AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored (origen BF16) | 27,36 B | BF16 | no disponible | apache-2.0 | Hugging Face, 51 GB |
+| AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED (sucesor) | no disponible | NVFP4 + FP8 mixto | no disponible | no disponible | Hugging Face; el autor lo declara superior en capacidad |
 | Otras alternativas comparables de ~27 B | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 No se dispone de datos de benchmark de ninguno de los modelos listados, por lo que la comparacion se limita a parametros, formato de pesos, licencia y disponibilidad.
@@ -97,7 +97,7 @@ No se dispone de datos de benchmark de ninguno de los modelos listados, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-NVFP4
 - Modelo base BF16: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored
 - Modelo sucesor declarado por el autor: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED
 - Drafter de decodificacion especulativa: https://huggingface.co/z-lab/Qwen3.6-27B-DFlash

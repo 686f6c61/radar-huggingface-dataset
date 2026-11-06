@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_chess_c3_to_d5_10ep_step8000 (este modelo) | 51.668.614 | 3 camaras 480x640 + estado de 6 articulaciones | Movimiento de pieza c3 a d5 con SO-101 | No disponible | HuggingFace, libreria lerobot |
+| act_chess_c3_to_d5_10ep_step8000 (este modelo) | 51.668.614 | 3 camaras 480x640 + estado de 6 articulaciones | Movimiento de pieza c3 a d5 con SO-101 | No disponible | Hugging Face, libreria lerobot |
 | ACT original (ALOHA, Zhao et al.) | No disponible en la informacion | No disponible | Manipulacion bimanual | No disponible | Repositorio de investigacion |
 | Diffusion Policy | No disponible en la informacion | No disponible | Manipulacion via difusion de acciones | No disponible | Repositorio de investigacion |
-| SmolVLA (LeRobot) | No disponible en la informacion | Vision-lenguaje-accion | Politica generalista VLA | No disponible | HuggingFace, libreria lerobot |
+| SmolVLA (LeRobot) | No disponible en la informacion | Vision-lenguaje-accion | Politica generalista VLA | No disponible | Hugging Face, libreria lerobot |
 
 La comparacion cuantitativa no es posible con los datos proporcionados: no se dispone de parametros, contexto ni metricas de los modelos alternativos, y este checkpoint no publica evaluacion. La diferencia cualitativa principal es la especializacion: frente a propuestas generalistas como SmolVLA, este modelo esta entrenado para una unica tarea y un unico montaje robotico.
 
@@ -88,7 +88,7 @@ La comparacion cuantitativa no es posible con los datos proporcionados: no se di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rtrtwrw/act_chess_c3_to_d5_10ep_step8000
+- Modelo en Hugging Face: https://huggingface.co/rtrtwrw/act_chess_c3_to_d5_10ep_step8000
 - Dataset de entrenamiento: https://huggingface.co/datasets/niru-5/chess_dataset_c3_6cm_to_d5_10cm_20261017_145741
 - LeRobot (libreria y framework de entrenamiento/despliegue): https://github.com/huggingface/lerobot
 - Paper de ACT (Action Chunking with Transformers, Zhao et al.): no disponible en la informacion proporcionada

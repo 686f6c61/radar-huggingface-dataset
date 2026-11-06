@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks para el fine-tune rahul7star/LFM2.5
 
 | Modelo | Parametros | Contexto | Capacidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-VL-3B (base) | 3,1B | No disponible | VLM, grounding, screen understanding, function calling | Apache 2.0 | HuggingFace |
-| rahul7star/LFM2.5-VL-3B-rahul-tool-sft | 3,1B | No disponible | VLM, grounding, screen understanding, function calling (reforzado) | Apache 2.0 | HuggingFace |
-| Qwen2.5-VL-3B (alternativa comparable) | 3,1B | 32K tokens | VLM, grounding, document parsing | Apache 2.0 | HuggingFace |
-| Phi-3.5-vision (alternativa comparable) | 4,2B | 128K tokens | VLM, razonamiento multimodal | MIT | HuggingFace |
+| LFM2.5-VL-3B (base) | 3,1B | No disponible | VLM, grounding, screen understanding, function calling | Apache 2.0 | Hugging Face |
+| rahul7star/LFM2.5-VL-3B-rahul-tool-sft | 3,1B | No disponible | VLM, grounding, screen understanding, function calling (reforzado) | Apache 2.0 | Hugging Face |
+| Qwen2.5-VL-3B (alternativa comparable) | 3,1B | 32K tokens | VLM, grounding, document parsing | Apache 2.0 | Hugging Face |
+| Phi-3.5-vision (alternativa comparable) | 4,2B | 128K tokens | VLM, razonamiento multimodal | MIT | Hugging Face |
 
 La comparativa se basa en el modelo base y alternativas de la misma categoría (VLM de ~3-4B parámetros). No se dispone de datos de rendimiento comparativo entre estos modelos en los materiales proporcionados.
 
@@ -79,8 +79,8 @@ La comparativa se basa en el modelo base y alternativas de la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rahul7star/LFM2.5-VL-3B-rahul-tool-sft
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
+- Repositorio Hugging Face: https://huggingface.co/rahul7star/LFM2.5-VL-3B-rahul-tool-sft
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - Blog de Liquid AI sobre LFM2.5-VL-3B: https://www.liquid.ai/blog/lfm2-5-vl-3b
 - Documentación de Liquid AI para LFM2.5-VL-3B: https://docs.liquid.ai/lfm/models/lfm25-vl-3b
 - Sitio web de Liquid AI: https://www.liquid.ai/

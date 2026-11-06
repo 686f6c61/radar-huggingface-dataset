@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gladia/qat-transfer-timm | 86 M - 632 M según backbone | Imagen 224x224 | 3 bits por canal (QAT y PTQ) con transferencia zero-shot | Apache-2.0 (upstream mixto Apache-2.0 / MIT) | HuggingFace, 351,3 GB, 0 descargas |
-| timm ViT/DeiT-III/Swin originales | 86 M - 632 M | Imagen 224x224 | Solo FP (FP32/FP16) | Apache-2.0 / MIT | HuggingFace y GitHub, ampliamente usados |
+| gladia/qat-transfer-timm | 86 M - 632 M según backbone | Imagen 224x224 | 3 bits por canal (QAT y PTQ) con transferencia zero-shot | Apache-2.0 (upstream mixto Apache-2.0 / MIT) | Hugging Face, 351,3 GB, 0 descargas |
+| timm ViT/DeiT-III/Swin originales | 86 M - 632 M | Imagen 224x224 | Solo FP (FP32/FP16) | Apache-2.0 / MIT | Hugging Face y GitHub, ampliamente usados |
 | Checkpoints QAT convencionales por tarea | Igual al backbone | Imagen 224x224 | 3-8 bits, requieren datos de la tarea | Según backbone | Depende del autor; no estandarizados |
-| Modelos de visión generativos (p. ej. CLIP, SigLIP) | 100 M - 1 B aprox. | Imagen + texto | FP16, INT8 | Varía | HuggingFace; tarea distinta (zero-shot abierto) |
+| Modelos de visión generativos (p. ej. CLIP, SigLIP) | 100 M - 1 B aprox. | Imagen + texto | FP16, INT8 | Varía | Hugging Face; tarea distinta (zero-shot abierto) |
 
 La comparación relevante es con los checkpoints timm originales, de los que estos derivan, y con pipelines de QAT por tarea. La diferencia principal no es de arquitectura ni de tamaño, sino de método: aquí el QAT se transfiere entre tareas por aritmética de pesos, mientras que un QAT convencional exige datos y entrenamiento del receptor. No se dispone de cifras de precisión para cuantificar la diferencia frente a esas alternativas.
 
@@ -86,7 +86,7 @@ La comparación relevante es con los checkpoints timm originales, de los que est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gladia/qat-transfer-timm
+- Hugging Face: https://huggingface.co/gladia/qat-transfer-timm
 - Repositorio de código: https://github.com/gladia-research-group/qat-transfer
 - Artículo (arXiv): https://arxiv.org/abs/2604.03420
 - OpenReview: https://openreview.net/forum?id=wrUEnnSgXa

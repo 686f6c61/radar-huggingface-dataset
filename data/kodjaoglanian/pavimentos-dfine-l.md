@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pavimentos-dfine-l` es un modelo de detección de objetos basado en la arquitectura D-FINE Large (familia DETR), desarrollado por el usuario Kodjaoglanian y publicado en HuggingFace. Se trata de un ajuste fino (*fine-tuning*) del checkpoint `ustc-community/dfine-large-obj2coco-e25` para una única tarea: la detección de baches o socavones (`buraco`) en superficies de pavimento asfáltico, tanto en vías urbanas como interurbanas. El modelo resuelve un problema acotado de inspección de infraestructura viaria mediante visión por computador.
+`pavimentos-dfine-l` es un modelo de detección de objetos basado en la arquitectura D-FINE Large (familia DETR), desarrollado por el usuario Kodjaoglanian y publicado en Hugging Face. Se trata de un ajuste fino (*fine-tuning*) del checkpoint `ustc-community/dfine-large-obj2coco-e25` para una única tarea: la detección de baches o socavones (`buraco`) en superficies de pavimento asfáltico, tanto en vías urbanas como interurbanas. El modelo resuelve un problema acotado de inspección de infraestructura viaria mediante visión por computador.
 
 La arquitectura subyacente, D-FINE (*Fine-grained Distribution Refinement for Object Detection*), reformula la regresión de *bounding boxes* en transformadores de visión mediante refinamiento distribucional fino (FDR) y auto-destilación de localización global óptima (GO-LSD), eliminando la necesidad de NMS. El modelo cuenta con 31.202.455 parámetros, procesa entradas de 640x640 píxeles y se distribuye con licencia Apache-2.0, lo que lo diferencia de alternativas de la familia YOLO sujetas a AGPL-3.0.
 
@@ -36,7 +36,7 @@ El entrenamiento se ejecutó en una Tesla T4 (14,56 GB de VRAM) durante 349,36 m
 - Inferencia sobre imágenes estáticas a resolución fija de 640x640 píxeles.
 - Exportación a ONNX y TorchScript para despliegue en distintos runtimes.
 - Integración con la librería `transformers` (pipeline `object-detection`).
-- Compatible con *endpoints* de HuggingFace (etiqueta `endpoints_compatible`).
+- Compatible con *endpoints* de Hugging Face (etiqueta `endpoints_compatible`).
 - No soporta *tool calling*, agentes, razonamiento multi-paso, visión general, audio ni generación de texto: es exclusivamente un detector visual de clase única.
 
 ## Casos de uso
@@ -79,7 +79,7 @@ No se han publicado resultados comparativos con otros modelos en la información
 - VRAM estimada para inferencia: no disponible de forma explícita; el entrenamiento se realizó en una Tesla T4 de 14,56 GB, y un modelo de 31,2 M de parámetros en FP16 ocupa aproximadamente 62 MB de pesos, por lo que la inferencia cabe holgadamente en GPUs consumer.
 - GPU recomendadas: Tesla T4 (referencia medida: 60,60 ms/imagen), y por tamaño cualquier GPU consumer moderna (RTX 3060 en adelante) debería acomodar el modelo; no se han publicado mediciones en otras GPU.
 - Cabe en GPU consumer: sí, por volumen de parámetros; no se documentan requisitos mínimos oficiales.
-- Opciones de despliegue: `transformers` (pipeline `object-detection`), ONNX Runtime (exportación ONNX incluida, aunque la validación numérica reportada es `False` con diferencia máxima de cajas de 0,234613), TorchScript y endpoints de HuggingFace.
+- Opciones de despliegue: `transformers` (pipeline `object-detection`), ONNX Runtime (exportación ONNX incluida, aunque la validación numérica reportada es `False` con diferencia máxima de cajas de 0,234613), TorchScript y endpoints de Hugging Face.
 - Latencia y throughput: 60,60 ms/imagen en Tesla T4 (16,5 FPS) y 1.386,89 ms/imagen en CPU (0,7 FPS).
 
 ## Comparativa con modelos similares
@@ -108,7 +108,7 @@ La comparación de rendimiento con alternativas no está disponible; el autor so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kodjaoglanian/pavimentos-dfine-l
+- Modelo en Hugging Face: https://huggingface.co/Kodjaoglanian/pavimentos-dfine-l
 - Modelo base: https://huggingface.co/ustc-community/dfine-large-obj2coco-e25
 - Dataset fuente 1 (Roboflow Universe): https://universe.roboflow.com/projetos-diversos/localizacao-de-buracos-9mb7f
 - Dataset fuente 2 (Roboflow Universe): https://universe.roboflow.com/major-project-fsf4o/pothole-detection-mapping-and-alert

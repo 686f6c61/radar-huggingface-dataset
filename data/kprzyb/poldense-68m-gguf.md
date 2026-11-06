@@ -91,7 +91,7 @@ La información disponible no incluye datos de rendimiento de modelos alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kprzyb/PolDense-68M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/kprzyb/PolDense-68M-GGUF
 - Modelo base: https://huggingface.co/OPI-PIB/PolDense-68M
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Incidencia sobre el troceado de entradas en qmd ≤ 2.8.3: https://github.com/tobi/qmd/issues/897

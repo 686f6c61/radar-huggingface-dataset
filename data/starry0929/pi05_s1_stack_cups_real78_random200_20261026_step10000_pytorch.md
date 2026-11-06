@@ -96,7 +96,7 @@ Las tres variantes son fine-tunings del mismo π0.5 sobre subconjuntos distintos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/starry0929/pi05_s1_stack_cups_real78_random200_20261026_step10000_pytorch
+- Modelo en Hugging Face: https://huggingface.co/starry0929/pi05_s1_stack_cups_real78_random200_20261026_step10000_pytorch
 - Checkpoint hermano (refined96, step 49999): https://huggingface.co/HITdongdong/pi05_s1_stack_cups_refined96_20261017_step49999_pytorch
 - Checkpoint hermano del mismo autor (all111, step 30000): https://huggingface.co/starry0929/pi05_s1_stack_cups_all111_initial_focus_resume_v3_20261019_step30000_pytorch
 - OpenPI (Physical Intelligence), documentación del sistema: https://deepwiki.com/Physical-Intelligence/openpi

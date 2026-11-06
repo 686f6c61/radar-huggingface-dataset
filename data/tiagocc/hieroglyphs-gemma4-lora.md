@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TiagoCC/hieroglyphs-gemma4-lora es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario TiagoCC, diseñado para ajustar un modelo base de la familia Gemma 4 de Google DeepMind. El nombre del repositorio sugiere que el adaptador se ha entrenado para tareas relacionadas con jeroglíficos, probablemente reconocimiento, traducción o generación de texto en escritura jeroglífica egipcia. El repositorio tiene un tamaño de 0,1 GB, lo que es consistente con un adaptador LoRA de dimensiones reducidas que se aplica sobre un modelo base de mayor tamaño.
+TiagoCC/hieroglyphs-gemma4-lora es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario TiagoCC, diseñado para ajustar un modelo base de la familia Gemma 4 de Google DeepMind. El nombre del repositorio sugiere que el adaptador se ha entrenado para tareas relacionadas con jeroglíficos, probablemente reconocimiento, traducción o generación de texto en escritura jeroglífica egipcia. El repositorio tiene un tamaño de 0,1 GB, lo que es consistente con un adaptador LoRA de dimensiones reducidas que se aplica sobre un modelo base de mayor tamaño.
 
 La ficha técnica del modelo está prácticamente vacía: la model card es una plantilla autogenerada sin información sustancial sobre arquitectura, datos de entrenamiento, licencia o rendimiento. El modelo se publicó el 2 de septiembre de 2026 y no registra descargas ni valoraciones. A pesar de la escasez de información, la existencia de este adaptador apunta a un interés creciente en aplicar modelos de lenguaje modernos a dominios especializados como la egiptología y la epigrafía, donde la IA puede asistir en la transcripción y traducción de textos antiguos.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa fiable. Existen otros adaptadores LoRA sobre Gemma 4 en HuggingFace, como `gustason/gemma-4-lora` y `electroglyph/gemma4-e4b-sft-lora-7`, pero no se conocen sus especificaciones ni su rendimiento. No hay modelos publicados especificamente para jeroglificos con los que comparar.
+No se dispone de informacion suficiente para establecer una comparativa fiable. Existen otros adaptadores LoRA sobre Gemma 4 en Hugging Face, como `gustason/gemma-4-lora` y `electroglyph/gemma4-e4b-sft-lora-7`, pero no se conocen sus especificaciones ni su rendimiento. No hay modelos publicados especificamente para jeroglificos con los que comparar.
 
 ## Limitaciones y advertencias
 
@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TiagoCC/hieroglyphs-gemma4-lora
+- Repositorio Hugging Face: https://huggingface.co/TiagoCC/hieroglyphs-gemma4-lora
 - Modelo Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Model card de Gemma 4: https://ai.google.dev/gemma/docs/core/model_card_4
 - Repositorio oficial de Gemma en GitHub: https://github.com/google-deepmind/gemma

@@ -94,8 +94,8 @@ No se dispone de resultados de rendimiento de este repositorio, por lo que la co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/goobex80/qwen-friendly-0.5B-Q8
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/goobex80/qwen-friendly-0.5B-Q8
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF
 - Modelo base (pesos originales): https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5
 - Proyecto llama.cpp: https://github.com/ggerganov/llama.cpp

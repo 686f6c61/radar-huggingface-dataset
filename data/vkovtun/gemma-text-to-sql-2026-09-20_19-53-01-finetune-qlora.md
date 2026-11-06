@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vkovtun/gemma-text-to-sql-2026-09-20_19.53.01-finetune-QLORA` es un ajuste fino (fine-tuning) del modelo base `google/gemma-4-E2B`, publicado por el usuario vkovtun en HuggingFace. El nombre del repositorio indica que el objetivo del ajuste es la conversion de texto a SQL (text-to-SQL), y la model card confirma que el entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreria TRL. El identificador incluye la marca temporal del entrenamiento (2026-09-20) y el sufijo QLORA, lo que apunta a un ajuste con adaptadores de bajo rango sobre una base cuantizada.
+`vkovtun/gemma-text-to-sql-2026-09-20_19.53.01-finetune-QLORA` es un ajuste fino (fine-tuning) del modelo base `google/gemma-4-E2B`, publicado por el usuario vkovtun en Hugging Face. El nombre del repositorio indica que el objetivo del ajuste es la conversion de texto a SQL (text-to-SQL), y la model card confirma que el entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreria TRL. El identificador incluye la marca temporal del entrenamiento (2026-09-20) y el sufijo QLORA, lo que apunta a un ajuste con adaptadores de bajo rango sobre una base cuantizada.
 
 Se trata de un modelo derivado, no de un desarrollo original: toda la capacidad subyacente procede de `google/gemma-4-E2B`, cuyas especificaciones (parametros, contexto, licencia) no se detallan en la informacion proporcionada. El repositorio no incluye pipeline declarado, idiomas, licencia ni resultados de evaluacion, y acumula 0 descargas y 0 likes en el momento de la consulta, por lo que debe considerarse un artefacto experimental sin validacion publica.
 
@@ -69,8 +69,8 @@ No se dispone de datos de rendimiento del modelo, por lo que no es posible estab
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `vkovtun/gemma-text-to-sql-...-QLORA` | No disponible | No disponible | No evaluado | No disponible | HuggingFace, 0 descargas |
-| `google/gemma-4-E2B` (base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | HuggingFace |
+| `vkovtun/gemma-text-to-sql-...-QLORA` | No disponible | No disponible | No evaluado | No disponible | Hugging Face, 0 descargas |
+| `google/gemma-4-E2B` (base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Hugging Face |
 
 Alternativas de la misma categoria (modelos pequenos ajustados para text-to-SQL, como variantes de Gemma, Qwen o CodeLlama): no disponible, no se han consultado datos comparables en la informacion proporcionada.
 
@@ -88,7 +88,7 @@ Alternativas de la misma categoria (modelos pequenos ajustados para text-to-SQL,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vkovtun/gemma-text-to-sql-2026-09-20_19.53.01-finetune-QLORA
+- Modelo en Hugging Face: https://huggingface.co/vkovtun/gemma-text-to-sql-2026-09-20_19.53.01-finetune-QLORA
 - Modelo base: https://huggingface.co/google/gemma-4-E2B
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/viktor-kovtun/gemma-text-to-sql/runs/v9vght9h
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -79,6 +79,6 @@ No disponible. La información proporcionada no incluye otras políticas de micr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JackDH/microduck-sprint-20261102-best
+- Hugging Face: https://huggingface.co/JackDH/microduck-sprint-20261102-best
 - Repositorio de entrenamiento: https://github.com/JackDanHollister/microduck-challenges
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck

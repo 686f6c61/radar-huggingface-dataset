@@ -16,7 +16,7 @@ La relevancia de este build radica en que consigue ejecutar un modelo de 150B en
 | Longitud de contexto | 256K tokens (contexto nativo del modelo base: 1.048.576) |
 | Tipos de cuantizacion | TQ3_4S (contenedor, file_type=45); receta por tensor: IQ3_XXS, IQ3_S, mxfp4, Q8_0, Q6_K, F32 |
 | Idiomas soportados | en, zh, multilingual |
-| Licencia | MIT (segun HuggingFace); DeepSeek (heredada del modelo base, segun la model card) |
+| Licencia | MIT (segun Hugging Face); DeepSeek (heredada del modelo base, segun la model card) |
 | Formato de pesos | GGUF (TQ3_4S) |
 
 ## Arquitectura y entrenamiento
@@ -79,7 +79,7 @@ La ventaja principal de este build frente al Q4_K uniforme es que reduce la VRAM
 ## Limitaciones y advertencias
 
 - Requiere el fork `turbo-tan/llama.cpp-tq3`; el llama.cpp estándar rechaza el archivo por su formato `TQ3_4S`, lo que limita la portabilidad a otros runtimes (vLLM, Ollama, TGI no están soportados sin modificaciones).
-- La licencia es ambigua: HuggingFace indica MIT, pero la model card afirma que la licencia es la de DeepSeek heredada del modelo base. Antes de un uso comercial, conviene verificar la licencia aplicable del modelo base.
+- La licencia es ambigua: Hugging Face indica MIT, pero la model card afirma que la licencia es la de DeepSeek heredada del modelo base. Antes de un uso comercial, conviene verificar la licencia aplicable del modelo base.
 - No es un modelo oficial de DeepSeek: es una poda (REAP) y cuantización de terceros, con solo 189 descargas y sin evidencia de validación extensiva en producción.
 - El contexto se limita a 256K, frente al contexto nativo de 1M del modelo base; para aplicaciones que necesiten ventanas mayores, este build no es adecuado.
 - La perplejidad es ligeramente superior al baseline IQ3_XXS (13,34 frente a 13,31), aunque dentro del ruido; la calidad en tareas de razonamiento no está cuantificada con valores absolutos.
@@ -89,7 +89,7 @@ La ventaja principal de este build frente al Q4_K uniforme es que reduce la VRAM
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Tinker-Stack/DeepSeek-V4-Flash-0731-REAP-150b-TQ3_4S-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Tinker-Stack/DeepSeek-V4-Flash-0731-REAP-150b-TQ3_4S-GGUF
 - Variante con LoRA de uncensoring: https://huggingface.co/Tinker-Stack/DeepSeek-V4-Flash-0731-REAP-150b-TQ3_4S-uncensored-GGUF
 - Documentación de API de DeepSeek-V4-Flash-0731 en DeepInfra: https://deepinfra.com/deepseek-ai/DeepSeek-V4-Flash-0731/api
 - Documentación de NVIDIA NIM: https://docs.api.nvidia.com/nim/reference/deepseek-ai-deepseek-v4-flash-0731

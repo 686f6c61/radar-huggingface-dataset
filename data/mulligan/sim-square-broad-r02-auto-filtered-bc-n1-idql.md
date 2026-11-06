@@ -87,10 +87,10 @@ El rango entre semillas es de 5,65 puntos porcentuales (47,96 % a 53,61 %), con 
 
 | Modelo | Tarea | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sim-square-broad-r02-auto-filtered-bc-n1-idql | sim-square-broad | No disponible | No aplica | 51,59 % agregado (47,96-53,61 % por semilla) | Apache-2.0 | HuggingFace (mulligan) |
+| sim-square-broad-r02-auto-filtered-bc-n1-idql | sim-square-broad | No disponible | No aplica | 51,59 % agregado (47,96-53,61 % por semilla) | Apache-2.0 | Hugging Face (mulligan) |
 | IDQL (referencia algoritmica, arXiv 2304.10573) | Benchmarks de RL offline | No disponible | No aplica | No disponible en esta busqueda | No disponible | Paper |
 | IQL + DDPG+BC (artefactos de W&B citados) | sim-square-d1 | No disponible | No aplica | No disponible | No disponible | Artefactos W&B |
-| sim-square-narrow-c02-auto-filtered-bc-n1-policy-rollouts | sim-square-narrow | No disponible | No aplica | No disponible | No disponible | Dataset en HuggingFace |
+| sim-square-narrow-c02-auto-filtered-bc-n1-policy-rollouts | sim-square-narrow | No disponible | No aplica | No disponible | No disponible | Dataset en Hugging Face |
 
 No se dispone de cifras comparativas publicadas para ninguno de los modelos alternativos en la tarea `sim-square-broad`, por lo que no es posible establecer una comparacion cuantitativa directa.
 
@@ -110,10 +110,10 @@ No se dispone de cifras comparativas publicadas para ninguno de los modelos alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r02-auto-filtered-bc-n1-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r02-auto-filtered-bc-n1-idql
 - Pagina del proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organizacion mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion mulligan en Hugging Face: https://huggingface.co/mulligan
 - Dataset de entrenamiento (teleoperacion base): https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-baseline
 - Dataset de entrenamiento (rollouts de politica BC compartida): https://huggingface.co/datasets/mulligan/sim-square-broad-c01-auto-bc-n1-shared-policy-rollouts
 - Dataset de entrenamiento (rollouts de politica BC filtrados): https://huggingface.co/datasets/mulligan/sim-square-broad-c02-auto-filtered-bc-n1-policy-rollouts

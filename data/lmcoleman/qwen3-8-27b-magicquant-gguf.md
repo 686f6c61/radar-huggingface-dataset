@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-MagicQuant-GGUF es un derivado cuantizado del modelo Qwen3.8-27B de Alibaba, publicado por el usuario lmcoleman en HuggingFace. El archivo GGUF se genera mediante MagicQuant, una técnica de cuantización híbrida que aplica una búsqueda evolutiva por tensor para seleccionar el tipo de cuantización óptimo para cada grupo de sensibilidad (embeddings, atención, FFN, router, etc.), en lugar de usar un esquema uniforme. El resultado es un conjunto de archivos GGUF listos para usar con llama.cpp, LM Studio o llama-cpp-python, con un equilibrio medido entre tamaño, velocidad y pérdida de perplejidad.
+Qwen3.8-27B-MagicQuant-GGUF es un derivado cuantizado del modelo Qwen3.8-27B de Alibaba, publicado por el usuario lmcoleman en Hugging Face. El archivo GGUF se genera mediante MagicQuant, una técnica de cuantización híbrida que aplica una búsqueda evolutiva por tensor para seleccionar el tipo de cuantización óptimo para cada grupo de sensibilidad (embeddings, atención, FFN, router, etc.), en lugar de usar un esquema uniforme. El resultado es un conjunto de archivos GGUF listos para usar con llama.cpp, LM Studio o llama-cpp-python, con un equilibrio medido entre tamaño, velocidad y pérdida de perplejidad.
 
 El modelo base, Qwen3.8-27B, es un transformer de 27 320 697 856 parámetros (aproximadamente 27,3 mil millones) orientado a generación de texto en inglés. Este derivado no añade entrenamiento adicional; solo aplica cuantización post-entrenamiento. La relevancia actual radica en que ofrece una alternativa de despliegue local eficiente para un modelo de 27B, con soporte de decodificación especulativa MTP integrada y un proyecto de visión opcional, todo bajo licencia Apache 2.0.
 
@@ -80,7 +80,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: [lmcoleman/Qwen3.8-27B-MagicQuant-GGUF](https://huggingface.co/lmcoleman/Qwen3.8-27B-MagicQuant-GGUF)
+- Repositorio Hugging Face: [lmcoleman/Qwen3.8-27B-MagicQuant-GGUF](https://huggingface.co/lmcoleman/Qwen3.8-27B-MagicQuant-GGUF)
 - Modelo base: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - Repositorio de MagicQuant: [github.com/lucasmcoleman/MagicQuant](https://github.com/lucasmcoleman/MagicQuant)
 - Wiki de metodología MagicQuant: [github.com/magiccodingman/MagicQuant-Wiki](https://github.com/magiccodingman/MagicQuant-Wiki)

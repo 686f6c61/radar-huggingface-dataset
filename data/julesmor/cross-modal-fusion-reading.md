@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`julesmor/cross-modal-fusion-reading` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre fusion modal cruzada (cross-modal fusion) publicado en HuggingFace bajo la licencia cc-by-4.0. El propio autor lo describe como "a structured set of research notes" y aclara de forma explicita en la model card que no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni un checkpoint entrenado. Los unicos artefactos declarados son dos ficheros de texto: `paper_notes.md` (artefacto principal) y `README.md`.
+`julesmor/cross-modal-fusion-reading` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre fusion modal cruzada (cross-modal fusion) publicado en Hugging Face bajo la licencia cc-by-4.0. El propio autor lo describe como "a structured set of research notes" y aclara de forma explicita en la model card que no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni un checkpoint entrenado. Los unicos artefactos declarados son dos ficheros de texto: `paper_notes.md` (artefacto principal) y `README.md`.
 
 El repositorio aparece etiquetado con `safetensors` y `transformer`, y los metadatos de safetensors reportan un total de 16.576 parametros, una cifra compatible con un tensor residual o de prueba, no con un modelo funcional. El tamano del repositorio es de 0,0 GB. La fecha de creacion y de ultima actualizacion es el 14 de octubre de 2026, con seis segundos de diferencia entre ambas, lo que sugiere una subida unica sin iteraciones posteriores.
 
@@ -43,7 +43,7 @@ Tampoco hay informacion sobre datos de entrenamiento: no se declara numero de to
 - Diseno de un protocolo experimental: las notas proponen una comparacion con lineas base emparejadas y mencionan confundidores, lo que puede servir como borrador de secciones de metodologia y limitaciones.
 - Identificacion de modos de fallo y controles de reproducibilidad: el repositorio lista explicitamente comprobaciones de reproducibilidad y failure modes como puntos a cubrir.
 - Docencia o divulgacion: el material puede usarse como guion de una sesion introductoria sobre evaluacion rigurosa en fusion multimodal, incidiendo en la separacion entre planes e hipotesis frente a resultados.
-- Auditoria de expectativas: sirve como ejemplo interno de como un repositorio de HuggingFace puede no contener un modelo, util para equipos que revisan artefactos antes de incorporarlos a un catalogo.
+- Auditoria de expectativas: sirve como ejemplo interno de como un repositorio de Hugging Face puede no contener un modelo, util para equipos que revisan artefactos antes de incorporarlos a un catalogo.
 - No es adecuado para inferencia en produccion, generacion de codigo, atencion al cliente, resumen de documentos, RAG ni ninguna tarea que requiera un modelo desplegable.
 
 ## Benchmarks y rendimiento
@@ -75,7 +75,7 @@ No disponible. Este repositorio no pertenece a la categoria de modelos desplegab
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/julesmor/cross-modal-fusion-reading
+- Repositorio en Hugging Face: https://huggingface.co/julesmor/cross-modal-fusion-reading
 - Fichero principal de notas: `paper_notes.md` dentro del repositorio
 - Documentacion del repositorio: `README.md` dentro del repositorio
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles en la informacion proporcionada

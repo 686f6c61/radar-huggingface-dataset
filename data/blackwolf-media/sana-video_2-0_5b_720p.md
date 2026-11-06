@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SANA-Video 2.0 5B 720p es un modelo de difusion para generacion de video de alta resolucion, publicado en HuggingFace bajo la cuenta BlackWolf-Media. La model card lo describe como un diffusion transformer eficiente, con un checkpoint de clase 5B post-entrenado de forma conjunta para text-to-video (T2V) y text-image-to-video (TI2V), con salida de 736 x 1280 a 24 FPS durante 193 fotogramas (unos 8 segundos). La arquitectura declarada es `SanaVideo2_5B`, con 4.466.980.960 parametros entrenables (4,47B), 32 capas y un tamano oculto de 2.560.
+SANA-Video 2.0 5B 720p es un modelo de difusion para generacion de video de alta resolucion, publicado en Hugging Face bajo la cuenta BlackWolf-Media. La model card lo describe como un diffusion transformer eficiente, con un checkpoint de clase 5B post-entrenado de forma conjunta para text-to-video (T2V) y text-image-to-video (TI2V), con salida de 736 x 1280 a 24 FPS durante 193 fotogramas (unos 8 segundos). La arquitectura declarada es `SanaVideo2_5B`, con 4.466.980.960 parametros entrenables (4,47B), 32 capas y un tamano oculto de 2.560.
 
 Su propuesta tecnica se centra en abaratar el coste de atencion sobre secuencias de video largas: combina capas de atencion lineal bidireccional con compuertas (75%) con anclas periodicas de atencion densa softmax (25%), mas una agregacion compartida de residuales de atencion cada 8 capas. El condicionamiento de texto se delega en `google/gemma-2-2b-it` y la parte latente usa el contrato VAE de LTX 2.3, con 128 canales latentes y compresion (8, 32, 32). La licencia del checkpoint es Apache 2.0.
 
@@ -73,7 +73,7 @@ La informacion proporcionada no incluye datos de benchmarks ni especificaciones 
 
 | Modelo | Parametros | Duracion y resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SANA-Video 2.0 5B 720p (este modelo) | 4,47B | 193 fotogramas, 24 FPS, 736 x 1280 | Apache 2.0 | HuggingFace (redistribucion de BlackWolf-Media; el original se referencia como Efficient-Large-Model) |
+| SANA-Video 2.0 5B 720p (este modelo) | 4,47B | 193 fotogramas, 24 FPS, 736 x 1280 | Apache 2.0 | Hugging Face (redistribucion de BlackWolf-Media; el original se referencia como Efficient-Large-Model) |
 | LTX-Video / LTX 2.3 | no disponible | no disponible | no disponible | El contrato VAE se reutiliza en este modelo; el resto de datos no estan en la informacion |
 | CogVideoX-5B | no disponible | no disponible | no disponible | no disponible |
 | Wan 2.x | no disponible | no disponible | no disponible | no disponible |
@@ -96,7 +96,7 @@ Los modelos de la misma categoria (generacion de video texto-a-video de pesos ab
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/BlackWolf-Media/SANA-Video_2.0_5B_720p
+- Pagina del modelo en Hugging Face: https://huggingface.co/BlackWolf-Media/SANA-Video_2.0_5B_720p
 - Repositorio de inferencia referenciado en la model card: https://github.com/NVlabs/Sana
 - Checkpoint referenciado en los comandos de inferencia: https://huggingface.co/Efficient-Large-Model/SANA-Video_2.0_5B_720p
 - Codificador de texto: https://huggingface.co/google/gemma-2-2b-it

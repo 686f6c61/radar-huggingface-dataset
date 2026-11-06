@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Arquitectura | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Depth-Anything-V2-Small (este repo) | 24,8 M | DINOv2 ViT-S/14 + DPT | imagen RGB | Apache-2.0 | HuggingFace (port no oficial) |
-| depth-anything/Depth-Anything-V2-Small (original) | 24,8 M | DINOv2 ViT-S/14 + DPT | imagen RGB | Apache-2.0 | HuggingFace (oficial) |
-| Depth-Anything-V2-Small-hf (transformers nativo) | 24,8 M | DINOv2 ViT-S/14 + DPT (reimplementado) | imagen RGB | Apache-2.0 | HuggingFace |
-| Depth-Anything-V2-Base | no disponible en la informacion | DINOv2 ViT-B + DPT | imagen RGB | Apache-2.0 | HuggingFace |
+| Depth-Anything-V2-Small (este repo) | 24,8 M | DINOv2 ViT-S/14 + DPT | imagen RGB | Apache-2.0 | Hugging Face (port no oficial) |
+| depth-anything/Depth-Anything-V2-Small (original) | 24,8 M | DINOv2 ViT-S/14 + DPT | imagen RGB | Apache-2.0 | Hugging Face (oficial) |
+| Depth-Anything-V2-Small-hf (transformers nativo) | 24,8 M | DINOv2 ViT-S/14 + DPT (reimplementado) | imagen RGB | Apache-2.0 | Hugging Face |
+| Depth-Anything-V2-Base | no disponible en la informacion | DINOv2 ViT-B + DPT | imagen RGB | Apache-2.0 | Hugging Face |
 
 La diferencia clave entre este repositorio y las variantes `-hf` es la fidelidad numerica: este port ejecuta el codigo original y es bit-identico, mientras que la reimplementacion nativa diverge en entradas no cuadradas.
 
@@ -81,7 +81,7 @@ La diferencia clave entre este repositorio y las variantes `-hf` es la fidelidad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bigshanedogg/Depth-Anything-V2-Small
+- Repositorio Hugging Face: https://huggingface.co/bigshanedogg/Depth-Anything-V2-Small
 - Modelo base oficial: https://huggingface.co/depth-anything/Depth-Anything-V2-Small
 - Repositorio GitHub oficial: https://github.com/DepthAnything/Depth-Anything-V2
 - Paper "Depth Anything V2": https://arxiv.org/abs/2406.09414

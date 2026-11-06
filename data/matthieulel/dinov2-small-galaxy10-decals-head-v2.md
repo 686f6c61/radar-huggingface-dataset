@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dinov2-small-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace matthieulel. Se construye sobre el backbone `facebook/dinov2-small` (ViT-S/14, 21M parámetros) y añade una cabeza lineal de 10 salidas entrenada para clasificar imágenes del dataset Galaxy10 DECaLS en diez categorías morfológicas. El régimen de adaptación es *head-only fine-tuning*: el backbone permanece completamente congelado (incluidas las estadísticas de sus capas de normalización) y solo se entrena la capa de clasificación final.
+El modelo `dinov2-small-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face matthieulel. Se construye sobre el backbone `facebook/dinov2-small` (ViT-S/14, 21M parámetros) y añade una cabeza lineal de 10 salidas entrenada para clasificar imágenes del dataset Galaxy10 DECaLS en diez categorías morfológicas. El régimen de adaptación es *head-only fine-tuning*: el backbone permanece completamente congelado (incluidas las estadísticas de sus capas de normalización) y solo se entrena la capa de clasificación final.
 
 El modelo forma parte de una colección más amplia, *Vision Foundation Models Benchmark*, que evalúa 40 backbones preentrenados bajo dos regímenes de adaptación (80 configuraciones en total) dentro del artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026). Su relevancia radica en que ofrece una línea base reproducible y de bajo coste computacional para tareas de morfología galáctica, con métricas publicadas por época y una verificación de integridad de los pesos.
 
@@ -68,9 +68,9 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parámetros | Contexto / entrada | Accuracy en Galaxy10 DECaLS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dinov2-small-galaxy10-decals-head-v2 | 22,06 M | imagen 256x256 px | 56,82 % (test) | Apache 2.0 | HuggingFace |
-| facebook/dinov2-small (backbone base, sin cabeza) | 22,06 M | imagen 224x224 px (nativo) | no disponible (no clasifica directamente) | Apache 2.0 | HuggingFace |
-| Otros backbones del benchmark Vision Foundation Models Benchmark | variable (40 backbones) | imagen | no disponible en esta ficha | variable | HuggingFace (colección) |
+| dinov2-small-galaxy10-decals-head-v2 | 22,06 M | imagen 256x256 px | 56,82 % (test) | Apache 2.0 | Hugging Face |
+| facebook/dinov2-small (backbone base, sin cabeza) | 22,06 M | imagen 224x224 px (nativo) | no disponible (no clasifica directamente) | Apache 2.0 | Hugging Face |
+| Otros backbones del benchmark Vision Foundation Models Benchmark | variable (40 backbones) | imagen | no disponible en esta ficha | variable | Hugging Face (colección) |
 
 No se dispone en la información proporcionada de resultados de otros modelos comparables sobre Galaxy10 DECaLS, por lo que la comparativa cuantitativa con alternativas queda limitada a la media del propio benchmark.
 
@@ -86,7 +86,7 @@ No se dispone en la información proporcionada de resultados de otros modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/dinov2-small-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/dinov2-small-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/facebook/dinov2-small
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset con métricas por época y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

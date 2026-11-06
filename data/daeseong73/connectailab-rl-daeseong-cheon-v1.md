@@ -25,7 +25,7 @@ Es relevante como caso de estudio reproducible de RL aplicado a modelos por deba
 | Pipeline declarado | reinforcement-learning |
 | Metodo de entrenamiento | SFT + GRPO (con politica profesora entrenada con PPO en simulador) |
 | Tamano del repositorio | 0,0 GB |
-| Fecha de publicacion | 2026-10-15, segun la ficha de HuggingFace |
+| Fecha de publicacion | 2026-10-15, segun la ficha de Hugging Face |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -83,9 +83,9 @@ No se dispone de informacion sobre otros adaptadores de decision comparables en 
 
 | Modelo | Parametros | Contexto | Precision en test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-daeseong-cheon-v1 (GRPO) | 0,8 mil millones (base) mas adaptador | no disponible | 77,4 % | apache-2.0 | HuggingFace (adaptador) |
+| connectailab-rl-daeseong-cheon-v1 (GRPO) | 0,8 mil millones (base) mas adaptador | no disponible | 77,4 % | apache-2.0 | Hugging Face (adaptador) |
 | Variante SFT del mismo pipeline | 0,8 mil millones (base) mas adaptador | no disponible | 77,7 % | apache-2.0 (presumible) | solo reportada en la model card |
-| Qwen/Qwen3.5-0.8B sin ajuste | 0,8 mil millones | no disponible | 30,4 % | segun el modelo base | HuggingFace |
+| Qwen/Qwen3.5-0.8B sin ajuste | 0,8 mil millones | no disponible | 30,4 % | segun el modelo base | Hugging Face |
 | Politica profesora PPO (simulador) | no disponible | no disponible | superior a la del modelo, sin cifra publicada | no disponible | no disponible |
 | Otros modelos de decision de 0,8-1.000 millones de parametros | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -105,7 +105,7 @@ No se dispone de informacion sobre otros adaptadores de decision comparables en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Daeseong73/connectailab-rl-daeseong-cheon-v1
+- Modelo en Hugging Face: https://huggingface.co/Daeseong73/connectailab-rl-daeseong-cheon-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio del simulador CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab para reproducir el entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

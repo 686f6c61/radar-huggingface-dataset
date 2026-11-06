@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tinyopsec/Qwen2.5-1.5B-Spanish-1.0-DPO-GGUF | 1,54 B | 32K | Sin datos publicados | Apache 2.0 | GGUF en HuggingFace |
+| tinyopsec/Qwen2.5-1.5B-Spanish-1.0-DPO-GGUF | 1,54 B | 32K | Sin datos publicados | Apache 2.0 | GGUF en Hugging Face |
 | Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32K | Sin datos comparables en esta ficha | Apache 2.0 | Safetensors y GGUF |
 | Qwen/Qwen2.5-3B-Instruct | 3,09 B | 32K | Sin datos comparables en esta ficha | Apache 2.0 | Safetensors y GGUF |
 | meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128K | Sin datos comparables en esta ficha | Licencia comunitaria Llama 3.2 | Safetensors y GGUF |
@@ -99,7 +99,7 @@ La comparación directa de calidad en español no está disponible. Frente a Qwe
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/tinyopsec/Qwen2.5-1.5B-Spanish-1.0-DPO-GGUF
+- Hugging Face del modelo: https://huggingface.co/tinyopsec/Qwen2.5-1.5B-Spanish-1.0-DPO-GGUF
 - Modelo DPO de origen: https://huggingface.co/Kukedlc/Qwen2.5-1.5B-Spanish-1.0-DPO
 - GGUF del autor original: https://huggingface.co/Kukedlc/Qwen2.5-1.5B-Spanish-1.0-DPO-GGUF
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

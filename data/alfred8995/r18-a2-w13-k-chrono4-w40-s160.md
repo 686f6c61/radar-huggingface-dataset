@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-k-chrono4-w40-s160` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Se distribuye en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2.000 millones), lo que lo sitúa en la categoría de modelos de tamaño medio. El repositorio ocupa 6,3 GB y su acceso está restringido: es necesario aceptar las condiciones en la plataforma para poder descargarlo.
+El modelo `alfred8995/r18-a2-w13-k-chrono4-w40-s160` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Se distribuye en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2.000 millones), lo que lo sitúa en la categoría de modelos de tamaño medio. El repositorio ocupa 6,3 GB y su acceso está restringido: es necesario aceptar las condiciones en la plataforma para poder descargarlo.
 
 La nomenclatura del identificador sugiere una variante de una familia denominada "sn38-nanochrono", etiqueta que aparece entre los tags del repositorio. Los componentes del nombre (`r18`, `a2`, `w13`, `k`, `chrono4`, `w40`, `s160`) parecen corresponder a hiperparámetros de entrenamiento o a una configuración experimental concreta, aunque no se dispone de documentación que los explique. No se ha publicado información sobre arquitectura interna, datos de entrenamiento ni proceso de alineación.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alfred8995/r18-a2-w13-k-chrono4-w40-s160 | 2.018.511.234 | no disponible | Apache 2.0 | Gated en HuggingFace |
+| alfred8995/r18-a2-w13-k-chrono4-w40-s160 | 2.018.511.234 | no disponible | Apache 2.0 | Gated en Hugging Face |
 | No disponible | — | — | — | — |
 
 No se dispone de información suficiente para establecer una comparativa fiable con alternativas de la misma categoría. No se conocen modelos comparables documentados en la información proporcionada.
@@ -76,11 +76,11 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 - Riesgo de alucinación: no evaluado; sin benchmarks ni pruebas de comportamiento, no puede descartarse un comportamiento degenerado o incoherente.
 - Idiomas no declarados: no puede asumirse soporte de castellano ni de ningún otro idioma sin verificación empírica.
 - Contexto desconocido: la ventana de contexto no está documentada, lo que impide planificar despliegues con requisitos de contexto largo.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que añade fricción a la descarga y a la reproducibilidad.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que añade fricción a la descarga y a la reproducibilidad.
 - Sin tracción comunitaria: cero descargas y cero likes en el momento de la ficha, sin issues ni discusiones que permitan inferir comportamiento.
 - Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías sobre el contenido de los datos de entrenamiento ni sobre posibles sesgos.
 - Recomendación: no usar en producción sin una evaluación previa exhaustiva en el dominio objetivo y sin verificar el comportamiento en tareas de seguridad y alineación.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono4-w40-s160
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono4-w40-s160

@@ -101,9 +101,9 @@ Como referencia conceptual, dentro del ecosistema GGUF los puntos de comparacion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NineBall/Qwen3.8-Next-GGUF-UD-IQ4_XS-int8-ngram
+- Repositorio en Hugging Face: https://huggingface.co/NineBall/Qwen3.8-Next-GGUF-UD-IQ4_XS-int8-ngram
 - Archivo de licencia referenciado en la model card: https://huggingface.co/NineBall/Qwen3.8-Next-GGUF-UD-IQ4_XS-int8-ngram/blob/main/LICENSE
-- Perfil del autor en HuggingFace: https://huggingface.co/NineBall
+- Perfil del autor en Hugging Face: https://huggingface.co/NineBall
 - Repositorio del motor llama.cpp: https://github.com/ggml-org/llama.cpp
 - Documentacion de cuantizaciones de llama.cpp: https://github.com/ggml-org/llama.cpp/blob/master/tools/quantize/README.md
 - Paper no disponible. Blog no disponible. Demo no disponible.

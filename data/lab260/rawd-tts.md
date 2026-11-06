@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RAWD-TTS es un repositorio publicado en HuggingFace por el usuario lab260 bajo licencia Apache 2.0. El identificador del modelo sugiere que se trata de un sistema de sintesis de voz (text-to-speech), aunque la informacion disponible no confirma la tarea, la arquitectura ni el proposito real del artefacto. La model card publicada no contiene descripcion tecnica alguna: unicamente incluye la declaracion de licencia en el frontmatter, sin secciones de uso, entrenamiento, limitaciones ni ejemplos.
+RAWD-TTS es un repositorio publicado en Hugging Face por el usuario lab260 bajo licencia Apache 2.0. El identificador del modelo sugiere que se trata de un sistema de sintesis de voz (text-to-speech), aunque la informacion disponible no confirma la tarea, la arquitectura ni el proposito real del artefacto. La model card publicada no contiene descripcion tecnica alguna: unicamente incluye la declaracion de licencia en el frontmatter, sin secciones de uso, entrenamiento, limitaciones ni ejemplos.
 
 El repositorio fue creado el 15 de septiembre de 2026 y actualizado el mismo dia, aproximadamente nueve minutos despues de su creacion. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y el tamano declarado del repositorio es de 0.0 GB, lo que indica que no hay pesos publicados o que estos son de tamano despreciable. La etiqueta `safetensors` aparece entre los tags, pero no se ha publicado ningun archivo verificable a partir de la informacion disponible.
 
@@ -83,5 +83,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lab260/RAWD-TTS
+- Repositorio en Hugging Face: https://huggingface.co/lab260/RAWD-TTS
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo (los resultados obtenidos corresponden a paginas de ayuda de YouTube, Gmail y Microsoft Community, sin relacion con el repositorio).

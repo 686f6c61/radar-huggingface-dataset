@@ -59,9 +59,9 @@ No se dispone de datos de rendimiento para comparar directamente con otros model
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Nataliegvo/gemma-2b-mom-style-v5 | 2,6B | no disponible | no disponible | GGUF (Q8_0) | HuggingFace |
-| google/gemma-2b-it | 2,6B | 8192 tokens | Gemma license (uso comercial permitido) | safetensors | HuggingFace |
-| Qwen2.5-1.5B | 1,5B | 32768 tokens | Apache 2.0 | safetensors | HuggingFace |
+| Nataliegvo/gemma-2b-mom-style-v5 | 2,6B | no disponible | no disponible | GGUF (Q8_0) | Hugging Face |
+| google/gemma-2b-it | 2,6B | 8192 tokens | Gemma license (uso comercial permitido) | safetensors | Hugging Face |
+| Qwen2.5-1.5B | 1,5B | 32768 tokens | Apache 2.0 | safetensors | Hugging Face |
 
 La comparativa real solo puede establecerse en términos de tamaño y formato; no hay datos objetivos de calidad.
 
@@ -75,7 +75,7 @@ La comparativa real solo puede establecerse en términos de tamaño y formato; n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nataliegvo/gemma-2b-mom-style-v5
+- Modelo en Hugging Face: https://huggingface.co/Nataliegvo/gemma-2b-mom-style-v5
 - Modelo base de Google: https://huggingface.co/google/gemma-2b
 - Documentación oficial de Gemma: https://gemma-llm.readthedocs.io/en/latest/index.html
 - Página de Gemma en DeepMind: https://deepmind.google/models/gemma/

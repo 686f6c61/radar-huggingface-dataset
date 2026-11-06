@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-mic | 40,3 M | no disponible | Fixture de test | no disponible | HuggingFace (267 descargas) |
-| zai-org/GLM-5.3 | no disponible | no disponible | Modelo real | no disponible | HuggingFace (modelo base) |
-| Otros fixtures de transformers-mic | no disponible | no disponible | Fixture de test | no disponible | HuggingFace |
+| GLM-5.3-mic | 40,3 M | no disponible | Fixture de test | no disponible | Hugging Face (267 descargas) |
+| zai-org/GLM-5.3 | no disponible | no disponible | Modelo real | no disponible | Hugging Face (modelo base) |
+| Otros fixtures de transformers-mic | no disponible | no disponible | Fixture de test | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la informacion proporcionada.
 
@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- [HuggingFace: huggingface-mic/GLM-5.3-mic](https://huggingface.co/huggingface-mic/GLM-5.3-mic)
+- [Hugging Face: huggingface-mic/GLM-5.3-mic](https://huggingface.co/huggingface-mic/GLM-5.3-mic)
 - [Modelo base: zai-org/GLM-5.3](https://huggingface.co/zai-org/GLM-5.3)
 - [Manifiesto de contrato (integration.json)](https://huggingface.co/huggingface-mic/GLM-5.3-mic/blob/main/integration.json)
 - [Uso con transformers](https://huggingface.co/huggingface-mic/GLM-5.3-mic/blob/main/integrations/transformers/usage.md)

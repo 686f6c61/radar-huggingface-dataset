@@ -74,7 +74,7 @@ Estos resultados indican un buen rendimiento en razonamiento y código, pero una
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BigBang-Aquila-35B | 35B | 3B | 262 144 | Apache 2.0 | GGUF, HuggingFace |
+| BigBang-Aquila-35B | 35B | 3B | 262 144 | Apache 2.0 | GGUF, Hugging Face |
 | Qwen3.6-35B-A3B (base) | 35B | 3B | 262 144 | Apache 2.0 | Safetensors, GGUF |
 | Qwen3-30B-A3B | 30B | 3B | 131 072 | Apache 2.0 | Safetensors, GGUF |
 
@@ -91,7 +91,7 @@ La comparativa se limita a modelos de la misma familia (Qwen MoE) porque no se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/osk-arr00/BigBang-Aquila-35B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/osk-arr00/BigBang-Aquila-35B-GGUF
 - Modelo base fusionado (safetensors): https://huggingface.co/osk-arr00/BigBang-Aquila-35B-Merged
 - Repositorio de BigBang-v1 (GitHub): https://github.com/endless-frontier/BigBang-v1
 - Página de despliegue en FriendliAI: https://friendli.ai/models/osk-arr00/BigBang-Aquila-35B-Merged

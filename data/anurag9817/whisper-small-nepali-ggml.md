@@ -87,10 +87,10 @@ No se dispone de métricas comparativas de precisión entre estos modelos en la 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Anurag9817/whisper-small-nepali-ggml)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Anurag9817/models)
+- [Modelo en Hugging Face](https://huggingface.co/Anurag9817/whisper-small-nepali-ggml)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Anurag9817/models)
 - [Modelo origen: Dragneel/whisper-small-nepali](https://huggingface.co/Dragneel/whisper-small-nepali)
 - [kiranpantha/whisper-nepali (GitHub)](https://github.com/kiranpantha/whisper-nepali)
 - [amitpant7/Nepali-Automatic-Speech-Recognition (GitHub)](https://github.com/amitpant7/Nepali-Automatic-Speech-Recognition)
 - [Whisper API Docs (modelos GGML)](https://whisper.vedgupta.in/docs/models/)
-- [Faith-nchifor/whisper-small-nep (HuggingFace)](https://huggingface.co/Faith-nchifor/whisper-small-nep)
+- [Faith-nchifor/whisper-small-nep (Hugging Face)](https://huggingface.co/Faith-nchifor/whisper-small-nep)

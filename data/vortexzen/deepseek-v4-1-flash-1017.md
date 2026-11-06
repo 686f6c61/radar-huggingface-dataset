@@ -4,7 +4,7 @@
 
 DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, publicado por DeepSeek-AI bajo licencia MIT. Se trata de un modelo multimodal (pipeline `image-text-to-text`) orientado a generación de texto, razonamiento, código y tareas agénticas, que según la model card mejora los resultados de su predecesor en benchmarks de razonamiento, programación y visión, además de reducir el tiempo de ejecución de tareas y la longitud de salida. La model card lo presenta como un avance en la frontera de coste-rendimiento en distintos arneses de agentes.
 
-El repositorio de HuggingFace que nos ocupa, `VortexZen/DeepSeek-V4.1-Flash-1017`, es una réplica subida por un tercero (VortexZen) del modelo original de DeepSeek-AI, con 0 descargas y 0 likes en el momento de la consulta. El dato real de parámetros obtenido de los safetensors es de 763.205.315.794 parámetros totales, con un tamaño de repositorio de 510,3 GB. No se dispone de información sobre parámetros activos, por lo que no se puede confirmar si se trata de una arquitectura MoE.
+El repositorio de Hugging Face que nos ocupa, `VortexZen/DeepSeek-V4.1-Flash-1017`, es una réplica subida por un tercero (VortexZen) del modelo original de DeepSeek-AI, con 0 descargas y 0 likes en el momento de la consulta. El dato real de parámetros obtenido de los safetensors es de 763.205.315.794 parámetros totales, con un tamaño de repositorio de 510,3 GB. No se dispone de información sobre parámetros activos, por lo que no se puede confirmar si se trata de una arquitectura MoE.
 
 La relevancia del modelo radica en su ventana de contexto declarada de 1M tokens, su soporte multimodal con imágenes intercaladas, su modo de razonamiento (thinking mode) con esfuerzo numérico configurable y su licencia MIT, que facilita el uso comercial. No obstante, la información disponible es limitada: no se detallan los datos de entrenamiento, la arquitectura interna ni el número de tokens de contexto efectivos más allá de lo indicado en la model card.
 
@@ -102,10 +102,10 @@ No se dispone de datos de parámetros, contexto ni licencia de los modelos compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VortexZen/DeepSeek-V4.1-Flash-1017
+- Repositorio en Hugging Face: https://huggingface.co/VortexZen/DeepSeek-V4.1-Flash-1017
 - Repositorio oficial del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización DeepSeek-AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek-AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Librería deepseek-recipe: https://github.com/deepseek-ai/deepseek-recipe
 - Página principal de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/

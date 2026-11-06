@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Community-Repair-Router-367 es un paquete de reglas publicado en HuggingFace por el usuario SOTAagi2030 bajo el identificador `repair-router-2026q3`. A pesar de estar alojado en un repositorio de modelos, no se trata de un modelo de lenguaje neuronal: es un conjunto de reglas deterministas que enrutan tickets de reparación municipal hacia colas de trabajo mediante una política auditada de primera coincidencia (first-match). El paquete declara cinco colas activas, ocho reglas de origen revisadas, cuatro reglas compiladas, siete casos de aceptación y una regla por defecto denominada `general`.
+Community-Repair-Router-367 es un paquete de reglas publicado en Hugging Face por el usuario SOTAagi2030 bajo el identificador `repair-router-2026q3`. A pesar de estar alojado en un repositorio de modelos, no se trata de un modelo de lenguaje neuronal: es un conjunto de reglas deterministas que enrutan tickets de reparación municipal hacia colas de trabajo mediante una política auditada de primera coincidencia (first-match). El paquete declara cinco colas activas, ocho reglas de origen revisadas, cuatro reglas compiladas, siete casos de aceptación y una regla por defecto denominada `general`.
 
 Su relevancia radica en el enfoque de gobernanza: los ficheros del directorio `validation/` documentan cada decisión sobre las reglas de origen y cada resultado de los casos de aceptación, lo que facilita la auditoría del comportamiento del enrutador. No se dispone de información sobre arquitectura de red, parámetros, contexto ni capacidades generativas, por lo que debe evaluarse como componente de lógica de negocio y no como modelo fundacional.
 
@@ -76,5 +76,5 @@ No disponible. No se han identificado en la información proporcionada alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SOTAagi2030/Community-Repair-Router-367
+- Hugging Face: https://huggingface.co/SOTAagi2030/Community-Repair-Router-367
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

@@ -83,7 +83,7 @@ La diferencia principal frente a los modelos OPUS-MT originales es el formato y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoragoStudios/gct-opus-mt-en-zlw-ct2
+- Modelo en Hugging Face: https://huggingface.co/VoragoStudios/gct-opus-mt-en-zlw-ct2
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-en-zlw
 - Proyecto OPUS-MT (Helsinki-NLP): https://github.com/Helsinki-NLP/Opus-MT
 - CTranslate2: https://github.com/OpenNMT/CTranslate2

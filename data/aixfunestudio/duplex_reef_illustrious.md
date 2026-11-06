@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AIxFuneStudio/Duplex_Reef_Illustrious` es un checkpoint publicado por el estudio AIxFuneStudio, especializado en modelos de ilustración y generación de imágenes. Por su nombre y la referencia a "Illustrious" —arquitectura de difusión para imagen anime descrita en el artículo arXiv 2409.19946—, se trata presumiblemente de un modelo de generación de imágenes basado en dicha arquitectura, orientado a estilos de ilustración y efectos visuales concretos (en este caso, "doble exposición" o "reef" podría indicar un estilo temático). Sin embargo, la ficha de HuggingFace no proporciona detalles técnicos explícitos: no se indica pipeline, idiomas, ni especificaciones de arquitectura. El repositorio ocupa 6,9 GB, lo que sugiere pesos de un modelo de difusión de tamaño medio, probablemente en formato safetensors. El acceso está restringido (gated), por lo que es necesario aceptar condiciones adicionales antes de descargarlo. No se han registrado descargas ni valoraciones, lo que indica que es un lanzamiento reciente o poco difundido.
+El modelo `AIxFuneStudio/Duplex_Reef_Illustrious` es un checkpoint publicado por el estudio AIxFuneStudio, especializado en modelos de ilustración y generación de imágenes. Por su nombre y la referencia a "Illustrious" —arquitectura de difusión para imagen anime descrita en el artículo arXiv 2409.19946—, se trata presumiblemente de un modelo de generación de imágenes basado en dicha arquitectura, orientado a estilos de ilustración y efectos visuales concretos (en este caso, "doble exposición" o "reef" podría indicar un estilo temático). Sin embargo, la ficha de Hugging Face no proporciona detalles técnicos explícitos: no se indica pipeline, idiomas, ni especificaciones de arquitectura. El repositorio ocupa 6,9 GB, lo que sugiere pesos de un modelo de difusión de tamaño medio, probablemente en formato safetensors. El acceso está restringido (gated), por lo que es necesario aceptar condiciones adicionales antes de descargarlo. No se han registrado descargas ni valoraciones, lo que indica que es un lanzamiento reciente o poco difundido.
 
 ## Especificaciones tecnicas
 
@@ -14,12 +14,12 @@ El modelo `AIxFuneStudio/Duplex_Reef_Illustrious` es un checkpoint publicado por
 | Longitud de contexto | no disponible (no aplica a generación de imágenes) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | other (restrictiva, requiere aceptación en HuggingFace) |
+| Licencia | other (restrictiva, requiere aceptación en Hugging Face) |
 | Formato de pesos | no disponible (probablemente safetensors, por el tamaño del repo) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información oficial sobre la arquitectura interna, el proceso de entrenamiento o los datos utilizados. El nombre del modelo sugiere que se basa en la familia Illustrious, que según el artículo arXiv 2409.19946 es un modelo de difusión para generación de imágenes anime de alta calidad, entrenado con un dataset curado de ilustraciones y capaz de seguir prompts detallados. No obstante, no se confirma que este checkpoint concreto siga exactamente esa arquitectura ni qué modificaciones se han aplicado. Tampoco se conocen detalles sobre el dataset de entrenamiento, el número de pasos, o si se emplearon técnicas como fine-tuning con LoRA o entrenamiento completo. La ausencia de documentación técnica en la ficha de HuggingFace impide realizar afirmaciones fundamentadas.
+No se dispone de información oficial sobre la arquitectura interna, el proceso de entrenamiento o los datos utilizados. El nombre del modelo sugiere que se basa en la familia Illustrious, que según el artículo arXiv 2409.19946 es un modelo de difusión para generación de imágenes anime de alta calidad, entrenado con un dataset curado de ilustraciones y capaz de seguir prompts detallados. No obstante, no se confirma que este checkpoint concreto siga exactamente esa arquitectura ni qué modificaciones se han aplicado. Tampoco se conocen detalles sobre el dataset de entrenamiento, el número de pasos, o si se emplearon técnicas como fine-tuning con LoRA o entrenamiento completo. La ausencia de documentación técnica en la ficha de Hugging Face impide realizar afirmaciones fundamentadas.
 
 ## Capacidades
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada: no disponible. Dado el tamaño del repositorio (6,9 GB), se estima que el modelo en precisión FP16 ocuparía alrededor de 6-7 GB de VRAM, por lo que podría caber en GPUs de consumo como RTX 3060 12GB o superiores, pero no está confirmado.
 - GPU recomendadas: no disponible. Para inferencia de modelos de difusión de este tamaño, se suelen usar GPUs con al menos 8-12 GB de VRAM (RTX 3080, RTX 4090, A100, etc.).
 - Compatibilidad con consumer GPU: probablemente sí, si se usa cuantización o versiones optimizadas, pero no hay datos oficiales.
-- Opciones de despliegue: no se especifican. Para modelos de difusión, las opciones comunes son Diffusers (HuggingFace), ComfyUI, Automatic1111, o vLLM si se trata de un modelo de texto (poco probable). No se ha confirmado ninguna.
+- Opciones de despliegue: no se especifican. Para modelos de difusión, las opciones comunes son Diffusers (Hugging Face), ComfyUI, Automatic1111, o vLLM si se trata de un modelo de texto (poco probable). No se ha confirmado ninguna.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -57,7 +57,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Illustrious XL (base) | no publicado | no aplica | no especificada | abierto en HuggingFace |
+| Illustrious XL (base) | no publicado | no aplica | no especificada | abierto en Hugging Face |
 | Stable Diffusion XL | 3.5B (UNet) | no aplica | MIT (partes) | abierto |
 | Animagine XL | no publicado | no aplica | no especificada | abierto |
 
@@ -65,7 +65,7 @@ Sin datos concretos de este modelo, no es posible comparar rendimiento ni caract
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en HuggingFace; esto puede limitar su uso comercial o investigador.
+- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en Hugging Face; esto puede limitar su uso comercial o investigador.
 - Licencia "other": no se especifican los términos exactos; es probable que incluya restricciones de uso, redistribución o atribución.
 - Sin documentación técnica: no hay información sobre arquitectura, entrenamiento, sesgos o limitaciones conocidas.
 - Riesgo de alucinación visual: como todo modelo generativo, puede producir imágenes con artefactos, anatomías incorrectas o inconsistencias, especialmente en prompts complejos.
@@ -75,7 +75,7 @@ Sin datos concretos de este modelo, no es posible comparar rendimiento ni caract
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AIxFuneStudio/Duplex_Reef_Illustrious
+- Modelo en Hugging Face: https://huggingface.co/AIxFuneStudio/Duplex_Reef_Illustrious
 - Perfil de AIxFuneStudio: https://huggingface.co/AIxFuneStudio
 - Artículo sobre Illustrious (arXiv): https://arxiv.org/html/2409.19946v1
 - Sitio web de Illustrious XL: https://www.illustrious-xl.ai/

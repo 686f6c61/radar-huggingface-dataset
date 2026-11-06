@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `meshapplied/Qwen3.8-Flash-Next-NVFP4-Latest` es una publicación alojada en HuggingFace por el usuario `meshapplied` bajo licencia Apache-2.0. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, no declara pipeline de inferencia ni idiomas soportados, y su model card se limita al encabezado YAML con la licencia. No existe, por tanto, información verificada sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento o evaluación.
+El repositorio `meshapplied/Qwen3.8-Flash-Next-NVFP4-Latest` es una publicación alojada en Hugging Face por el usuario `meshapplied` bajo licencia Apache-2.0. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, no declara pipeline de inferencia ni idiomas soportados, y su model card se limita al encabezado YAML con la licencia. No existe, por tanto, información verificada sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento o evaluación.
 
 El nombre del repositorio sugiere dos cosas que no están confirmadas por el autor: que se trata de una variante de la familia Qwen3 ("Qwen3.8-Flash-Next") y que los pesos están cuantizados en formato NVFP4, el formato de coma flotante de 4 bits con escalado por bloques introducido por NVIDIA para sus tensor cores de quinta generación. La etiqueta "Latest" indica además que el repositorio podría ser un alias móvil, no una versión fijada. Todas estas inferencias proceden de la convención de nombres, no de documentación del autor.
 
@@ -80,6 +80,6 @@ No disponible. Sin conocer el modelo base, su número de parámetros ni sus resu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/meshapplied/Qwen3.8-Flash-Next-NVFP4-Latest
+- Repositorio en Hugging Face: https://huggingface.co/meshapplied/Qwen3.8-Flash-Next-NVFP4-Latest
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la información disponible.

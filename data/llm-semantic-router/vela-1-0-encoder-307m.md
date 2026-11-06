@@ -108,7 +108,7 @@ Frente a ModernBERT-base, Vela duplica aproximadamente el numero de parametros y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M
+- Modelo en Hugging Face: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M
 - Modelo base directo (mmbert-32k-yarn), revision fijada: https://huggingface.co/llm-semantic-router/mmbert-32k-yarn/tree/72a23a6640489471eb4ff7ad3ec5bc80af8a27de
 - Ancestro de la familia (mmBERT-base): https://huggingface.co/jhu-clsp/mmBERT-base
 - Dataset de entrenamiento (wikimedia/wikipedia), revision fijada: https://huggingface.co/datasets/wikimedia/wikipedia/tree/b04c8d1ceb2f5cd4588862100d08de323dccfbaa

@@ -100,7 +100,7 @@ No se dispone de información sobre arquitecturas o tamaños de los modelos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/patronus-studio/wolf-defender-prompt-injection-small
+- Modelo en Hugging Face: https://huggingface.co/patronus-studio/wolf-defender-prompt-injection-small
 - Modelo completo (Wolf Defender): https://huggingface.co/patronus-studio/wolf-defender-prompt-injection
 - Variante edge (cuantizada): https://huggingface.co/patronus-studio/wolf-defender-prompt-injection-small-edge
 - Anuncio oficial de Patronus: https://patronus.studio/posts/today-we%E2%80%99re-releasing-our-first-security-model-wolf-defender

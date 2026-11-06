@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Squeal-Studio/drakon_28m-base es un modelo publicado en HuggingFace por el usuario u organizacion Squeal-Studio bajo licencia Apache 2.0. El repositorio se creo y se actualizo el 27 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes". La model card publicada no contiene informacion tecnica: unicamente incluye la declaracion de licencia, sin descripcion del modelo, sin datos de entrenamiento, sin especificaciones de arquitectura y sin resultados de evaluacion.
+Squeal-Studio/drakon_28m-base es un modelo publicado en Hugging Face por el usuario u organizacion Squeal-Studio bajo licencia Apache 2.0. El repositorio se creo y se actualizo el 27 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes". La model card publicada no contiene informacion tecnica: unicamente incluye la declaracion de licencia, sin descripcion del modelo, sin datos de entrenamiento, sin especificaciones de arquitectura y sin resultados de evaluacion.
 
 El unico indicio sobre la naturaleza del modelo es su propio nombre, "drakon_28m-base", que sugiere un modelo de aproximadamente 28 millones de parametros en variante "base" (es decir, sin ajuste por instrucciones). Se trata de una inferencia a partir del identificador del repositorio y no de un dato confirmado por el autor, por lo que debe tomarse con cautela. El tag "region: us" indica la region de despliegue declarada en el Hub, y no aporta informacion sobre capacidades.
 
@@ -72,10 +72,10 @@ No hay datos publicados sobre el modelo que permitan una comparacion rigurosa. A
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| drakon_28m-base | no disponible (nombre sugiere 28M) | no disponible | Apache 2.0 | HuggingFace, sin documentacion |
-| GPT-2 small | 124M | 1024 tokens | MIT | HuggingFace, ampliamente documentado |
-| Pythia-70M | 70M | 2048 tokens | Apache 2.0 | HuggingFace, con modelo card completa |
-| TinyLlama-1.1B | 1,1B | 2048 tokens | Apache 2.0 | HuggingFace, con benchmarks publicados |
+| drakon_28m-base | no disponible (nombre sugiere 28M) | no disponible | Apache 2.0 | Hugging Face, sin documentacion |
+| GPT-2 small | 124M | 1024 tokens | MIT | Hugging Face, ampliamente documentado |
+| Pythia-70M | 70M | 2048 tokens | Apache 2.0 | Hugging Face, con modelo card completa |
+| TinyLlama-1.1B | 1,1B | 2048 tokens | Apache 2.0 | Hugging Face, con benchmarks publicados |
 
 Las cifras de los modelos de comparacion corresponden a informacion publica de sus respectivos autores. No se dispone de datos equivalentes para drakon_28m-base.
 
@@ -93,6 +93,6 @@ Las cifras de los modelos de comparacion corresponden a informacion publica de s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Squeal-Studio/drakon_28m-base
-- Perfil del autor en HuggingFace: https://huggingface.co/Squeal-Studio
+- Modelo en Hugging Face: https://huggingface.co/Squeal-Studio/drakon_28m-base
+- Perfil del autor en Hugging Face: https://huggingface.co/Squeal-Studio
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la informacion disponible.

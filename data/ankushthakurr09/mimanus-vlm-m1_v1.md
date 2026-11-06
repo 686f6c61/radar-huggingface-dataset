@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mimanus-VLM-M1_v1 es un modelo de visión-lenguaje (VLM) compacto publicado por el usuario ankushthakurr09 en HuggingFace, orientado a respuesta visual a preguntas (VQA) con fundamento visual y diálogo multi-turno sobre imágenes. Combina un encoder visual SigLIP 2 Large de Google (patch16-384, congelado) con el backbone de lenguaje Llama 3.2 1B Instruct de Meta (ajustado), unidos por un conector MLP entrenado de apenas 6,3 millones de parámetros.
+Mimanus-VLM-M1_v1 es un modelo de visión-lenguaje (VLM) compacto publicado por el usuario ankushthakurr09 en Hugging Face, orientado a respuesta visual a preguntas (VQA) con fundamento visual y diálogo multi-turno sobre imágenes. Combina un encoder visual SigLIP 2 Large de Google (patch16-384, congelado) con el backbone de lenguaje Llama 3.2 1B Instruct de Meta (ajustado), unidos por un conector MLP entrenado de apenas 6,3 millones de parámetros.
 
 Su principal peculiaridad técnica es que el conector preserva los 576 tokens visuales completos de la rejilla 24x24 sin downsampling (mapeo 1:1), en lugar de comprimirlos como hacen muchas arquitecturas similares. El modelo se entrenó en dos etapas siguiendo el recetario de LLaVA: alineación de características sobre 558.128 pares imagen-caption y ajuste por instrucciones sobre 1.400.520 muestras multimodales de VQA v2, GQA, TextVQA y Visual Genome.
 
@@ -79,10 +79,10 @@ Los datos de los modelos alternativos provienen de información pública general
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| Mimanus-VLM-M1_v1 | ~1,67 B (435 M encoder + 6,3 M conector + ~1,23 B LLM) | 2048 tokens | Llama 3.2 Community License | HuggingFace, 0 descargas, repo de 2,5 GB | Sin benchmarks publicados |
-| SmolVLM2-2.2B (HuggingFace) | ~2,2 B | no verificado en esta ficha | Apache 2.0 | HuggingFace, con soporte de transformers y llama.cpp | No disponible |
-| Qwen2-VL-2B-Instruct (Alibaba) | ~2,2 B | 32.768 tokens | Apache 2.0 | HuggingFace, amplio ecosistema de despliegue | No disponible |
-| PaliGemma 2 3B (Google) | ~3 B | no verificado en esta ficha | Gemma Terms of Use | HuggingFace, integrado en Keras/transformers | No disponible |
+| Mimanus-VLM-M1_v1 | ~1,67 B (435 M encoder + 6,3 M conector + ~1,23 B LLM) | 2048 tokens | Llama 3.2 Community License | Hugging Face, 0 descargas, repo de 2,5 GB | Sin benchmarks publicados |
+| SmolVLM2-2.2B (Hugging Face) | ~2,2 B | no verificado en esta ficha | Apache 2.0 | Hugging Face, con soporte de transformers y llama.cpp | No disponible |
+| Qwen2-VL-2B-Instruct (Alibaba) | ~2,2 B | 32.768 tokens | Apache 2.0 | Hugging Face, amplio ecosistema de despliegue | No disponible |
+| PaliGemma 2 3B (Google) | ~3 B | no verificado en esta ficha | Gemma Terms of Use | Hugging Face, integrado en Keras/transformers | No disponible |
 
 Diferencias cualitativas relevantes: Mimanus parte de un backbone Llama 3.2 (licencia con políticas de uso aceptable y obligaciones de atribución) frente a las licencias Apache 2.0 de SmolVLM2 y Qwen2-VL, más permisivas para integración comercial. Su ventana de contexto de 2048 tokens es la más corta del grupo y, descontando los 576 tokens visuales, deja menos de 1.500 tokens para texto e historial de conversación.
 
@@ -101,7 +101,7 @@ Diferencias cualitativas relevantes: Mimanus parte de un backbone Llama 3.2 (lic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ankushthakurr09/Mimanus-VLM-M1_v1
+- Modelo en Hugging Face: https://huggingface.co/ankushthakurr09/Mimanus-VLM-M1_v1
 - Modelo base de lenguaje: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Modelo base visual: https://huggingface.co/google/siglip2-large-patch16-384
 - Paper, blog técnico, repositorio adicional o demo: no disponibles en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zynerji-Ektome-Qwen3.5-9B-PristinelyUncensored-frac085 es un ajuste fino (fine-tune) del modelo Qwen3.5-9B de Alibaba, publicado por el usuario meltingfeet en HuggingFace. El nombre indica que se trata de una variante "uncensored" (sin alineamiento de seguridad) generada mediante la técnica Ektome, un método de edición o fusión de modelos, con un factor de mezcla de 0,85 (frac085). El repositorio tiene acceso restringido: es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+Zynerji-Ektome-Qwen3.5-9B-PristinelyUncensored-frac085 es un ajuste fino (fine-tune) del modelo Qwen3.5-9B de Alibaba, publicado por el usuario meltingfeet en Hugging Face. El nombre indica que se trata de una variante "uncensored" (sin alineamiento de seguridad) generada mediante la técnica Ektome, un método de edición o fusión de modelos, con un factor de mezcla de 0,85 (frac085). El repositorio tiene acceso restringido: es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 El modelo conserva la arquitectura del Qwen3.5-9B original, un transformer denso de aproximadamente 9.410 millones de parámetros (9,41 mil millones) según los pesos en safetensors, con capacidades multimodales (etiqueta "vision"). El repositorio ocupa 18,8 GB, lo que sugiere pesos en precisión de 16 bits.
 
@@ -76,12 +76,12 @@ La comparación directa con el modelo base es la más relevante: este fine-tune 
 - Sin benchmarks ni evaluación publicada: se desconoce la degradación de calidad, coherencia y capacidades (incluida la visión) tras la edición Ektome.
 - Riesgo elevado de alucinación y de respuestas incoherentes, habitual en ediciones de pesos agresivas sin validación.
 - Sin documentación sobre idiomas soportados ni longitud de contexto efectiva; no se puede garantizar el comportamiento multilingüe del modelo base.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en pipelines automatizados.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en pipelines automatizados.
 - Licencia Apache 2.0 declarada, pero el uso comercial debe evaluarse con cautela por la ausencia de garantías del autor y por el posible incumplimiento de normativas de contenido.
 - Repositorio con 0 descargas y 0 likes: sin validación por parte de la comunidad; tratar como experimento no auditado.
 - El nombre del repositorio incluye una fecha futura (2026-11-02), lo que sugiere un artefacto de respaldo sin mantenimiento previsto.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/meltingfeet/backup2026-11-02-Zynerji-Ektome-Qwen3.5-9B-PristinelyUncensored-frac085
+- Hugging Face: https://huggingface.co/meltingfeet/backup2026-11-02-Zynerji-Ektome-Qwen3.5-9B-PristinelyUncensored-frac085
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

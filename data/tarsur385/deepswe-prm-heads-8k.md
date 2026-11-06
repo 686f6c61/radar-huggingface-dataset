@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Las cabezas en si ocupan aproximadamente 0,2 GB (tamano total del repositorio) y pueden almacenarse y cargarse en CPU.
 - Para generar los embeddings de entrada se necesita el backbone Qwen3-8B, con requisitos de hardware propios de un modelo de 8 000 millones de parametros. Estimaciones habituales para esa clase de modelo (no confirmadas por el autor): en torno a 16 GB de VRAM en FP16/BF16, y aproximadamente 6-8 GB en cuantizacion de 4 bits.
 - GPU recomendadas para el backbone Qwen3-8B: A100, H100, L40S o equivalentes. Con cuantizacion, cabe en GPUs de consumo como RTX 4090 (24 GB) e incluso en tarjetas de 8-12 GB en 4 bits.
-- Despliegue: el flujo documentado usa PyTorch y HuggingFace (`hf download`) junto con los scripts del repositorio `jackyk02/contrastive_learning`. No se mencionan integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Despliegue: el flujo documentado usa PyTorch y Hugging Face (`hf download`) junto con los scripts del repositorio `jackyk02/contrastive_learning`. No se mencionan integraciones con vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento (benchmarks, exactitud o tasas de acierto)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarsur385/deepswe-prm-heads-8k
+- Modelo en Hugging Face: https://huggingface.co/tarsur385/deepswe-prm-heads-8k
 - Dataset de entrenamiento: https://huggingface.co/datasets/tarsur385/deepswe-prm-train-embeddings-8k
 - Dataset de embeddings de evaluacion: https://huggingface.co/datasets/tarsur385/deepswe-prm-embeddings-8k
 - Checkpoint de inicializacion de las cabezas: https://huggingface.co/jackyk02/qwen3_8b_head

@@ -87,7 +87,7 @@ La diferencia principal frente al modelo de huihui-ai es el empaquetado: este re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DestroyEraseImprove/Huihui-Qwen3-VL-4B-Instruct-abliterated-comfy
+- Repositorio Hugging Face: https://huggingface.co/DestroyEraseImprove/Huihui-Qwen3-VL-4B-Instruct-abliterated-comfy
 - Modelo base (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated
 - Modelo de origen (Qwen): https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Herramienta de conversion: https://github.com/silveroxides/convert_to_quant

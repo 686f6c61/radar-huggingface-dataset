@@ -72,7 +72,7 @@ No se dispone de información suficiente para comparar con modelos alternativos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored-GGUF
 - Modelo base: https://huggingface.co/nuofang/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored
 - Versión i1-GGUF (con imatrix): https://huggingface.co/mradermacher/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored-i1-GGUF
 - Página de despliegue en FriendliAI: https://friendli.ai/models/nuofang/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored

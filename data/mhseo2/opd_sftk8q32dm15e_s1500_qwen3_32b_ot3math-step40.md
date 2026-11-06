@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mhseo2/opd_sftk8q32dm15e_s1500_qwen3_32b_ot3math-step40` es un checkpoint de pesos publicado en HuggingFace por el usuario `mhseo2`, etiquetado con el tag `qwen3` y presumiblemente derivado de la familia Qwen3 mediante un proceso de ajuste supervisado (SFT). El nombre del repositorio sugiere un entrenamiento sobre datos matemáticos (`ot3math`) y un estado intermedio del entrenamiento (`step40`), lo que apunta a un experimento de investigación más que a un modelo listo para producción. El repositorio contiene únicamente pesos en formato `safetensors`, sin tarjeta de modelo, sin pipeline declarado y sin licencia especificada.
+`mhseo2/opd_sftk8q32dm15e_s1500_qwen3_32b_ot3math-step40` es un checkpoint de pesos publicado en Hugging Face por el usuario `mhseo2`, etiquetado con el tag `qwen3` y presumiblemente derivado de la familia Qwen3 mediante un proceso de ajuste supervisado (SFT). El nombre del repositorio sugiere un entrenamiento sobre datos matemáticos (`ot3math`) y un estado intermedio del entrenamiento (`step40`), lo que apunta a un experimento de investigación más que a un modelo listo para producción. El repositorio contiene únicamente pesos en formato `safetensors`, sin tarjeta de modelo, sin pipeline declarado y sin licencia especificada.
 
 El dato más relevante y a la vez más problemático es la discrepancia entre el nombre y el contenido: el nombre indica `qwen3_32b`, pero el recuento real de parámetros de los tensores `safetensors` es de 8.190.735.360 (aproximadamente 8,19 mil millones), y el tamaño del repositorio (16,4 GB) es coherente con pesos en BF16 de un modelo de ~8B, no de 32B. Por tanto, lo más probable es que se trate de un ajuste de un Qwen3-8B, pero esto no está confirmado por el autor.
 
@@ -91,6 +91,6 @@ Nota: los datos de contexto y licencia de los modelos alternativos provienen de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mhseo2/opd_sftk8q32dm15e_s1500_qwen3_32b_ot3math-step40
+- Hugging Face: https://huggingface.co/mhseo2/opd_sftk8q32dm15e_s1500_qwen3_32b_ot3math-step40
 - Paper, blog, repositorio o demo: no disponible
 - Enlaces adicionales encontrados en la búsqueda web: ninguno relevante (los resultados obtenidos no guardan relación con el modelo)

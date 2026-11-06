@@ -82,9 +82,9 @@ Observaciones del autor: el paso 6000 mejora al 4000 en todas las trayectorias y
 
 | Modelo | Parámetros | Contexto | MAE (protocolo SO101 task3) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cosmos3-Edge SO101 left-arm task3 (este repo) | no disponible | no disponible | 1,911 (6,38 % std) | OpenMDW 1.1 | HuggingFace, pesos DCP |
-| GR00T N1.7 SO101 left-arm task3 | no disponible | no disponible | 1,440 (4,80 % std) | no disponible | HuggingFace (`twanghcmut/gr00t-n1d7-so101-left-arm-task3`) |
-| π0.5 SO101 left-arm task3 | no disponible | no disponible | 1,459 (4,87 % std) | no disponible | HuggingFace (`twanghcmut/pi05-so101-left-arm-task3`) |
+| Cosmos3-Edge SO101 left-arm task3 (este repo) | no disponible | no disponible | 1,911 (6,38 % std) | OpenMDW 1.1 | Hugging Face, pesos DCP |
+| GR00T N1.7 SO101 left-arm task3 | no disponible | no disponible | 1,440 (4,80 % std) | no disponible | Hugging Face (`twanghcmut/gr00t-n1d7-so101-left-arm-task3`) |
+| π0.5 SO101 left-arm task3 | no disponible | no disponible | 1,459 (4,87 % std) | no disponible | Hugging Face (`twanghcmut/pi05-so101-left-arm-task3`) |
 
 Los tres modelos se evalúan con el mismo protocolo de bucle abierto sobre el mismo dataset, lo que permite una comparación directa. Cosmos3-Edge queda por detrás de GR00T N1.7 y π0.5 en MAE, aunque el autor atribuye parte de la diferencia a un entrenamiento incompleto.
 
@@ -103,7 +103,7 @@ Los tres modelos se evalúan con el mismo protocolo de bucle abierto sobre el mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/twanghcmut/cosmos3-edge-so101-left-arm-task3
+- Modelo en Hugging Face: https://huggingface.co/twanghcmut/cosmos3-edge-so101-left-arm-task3
 - Modelo base Cosmos3-Edge: https://huggingface.co/nvidia/Cosmos3-Edge
 - Framework de entrenamiento: https://github.com/NVIDIA/cosmos-framework
 - Fork con la receta SO101 (PR #1): https://github.com/hungho77/cosmos-framework/pull/1

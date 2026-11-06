@@ -96,7 +96,7 @@ No se pueden comparar cifras de rendimiento porque este checkpoint no publica be
 
 ## Enlaces
 
-- [HuggingFace: PruningEverything/llama_3_30_percent_compression_Q4_K_M](https://huggingface.co/PruningEverything/llama_3_30_percent_compression_Q4_K_M)
+- [Hugging Face: PruningEverything/llama_3_30_percent_compression_Q4_K_M](https://huggingface.co/PruningEverything/llama_3_30_percent_compression_Q4_K_M)
 - [Perfil de la organización PruningEverything](https://huggingface.co/PruningEverything)
 - [Meta Llama 3: modelos](https://dev.meta.ai/llama/models/llama-3)
 - [Documentación de Llama 3 en Transformers](https://huggingface.co/docs/transformers/model_doc/llama3)

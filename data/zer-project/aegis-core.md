@@ -96,5 +96,5 @@ La comparación es únicamente orientativa: Aegis-Nano es entre 7 y 65 veces men
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zer-project/Aegis-Core
+- Hugging Face: https://huggingface.co/Zer-project/Aegis-Core
 - GitHub del proyecto: https://github.com/Zer-security/Aegis-Core

@@ -6,7 +6,7 @@
 
 El modelo no es un modelo fundacional autonomo, sino un modulo de pesos complementario que debe cargarse sobre un modelo base compatible dentro de un grafo de ComfyUI o en el entorno alojado de RunningHub. Esto implica que sus capacidades reales dependen enteramente del checkpoint sobre el que se aplique y de la configuracion del pipeline (sampler, scheduler, CFG, resolucion, etc.).
 
-La relevancia de esta ficha es limitada por la escasez de informacion publicada: no hay pipeline declarado, no hay licencia explicita, no hay idiomas declarados y no se han publicado benchmarks. Se documenta, por tanto, lo que la model card y los metadatos de HuggingFace permiten afirmar, marcando como "no disponible" todo aquello que no consta.
+La relevancia de esta ficha es limitada por la escasez de informacion publicada: no hay pipeline declarado, no hay licencia explicita, no hay idiomas declarados y no se han publicado benchmarks. Se documenta, por tanto, lo que la model card y los metadatos de Hugging Face permiten afirmar, marcando como "no disponible" todo aquello que no consta.
 
 ## Especificaciones tecnicas
 
@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no identifica adaptadores LoRA compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RunningHubAI/rh-chroma-h3-lora.safetensors-lora
+- Repositorio en Hugging Face: https://huggingface.co/RunningHubAI/rh-chroma-h3-lora.safetensors-lora
 - Pagina del modelo original en RunningHub: https://www.runninghub.ai/model/public/2116624756292624386
 - Perfil del autor en RunningHub: https://www.runninghub.ai/user-center/2025565893677027330
 - RunningHub (internacional): https://www.runninghub.ai

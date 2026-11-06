@@ -30,7 +30,7 @@ La innovacion tecnica de este repositorio no esta en el entrenamiento sino en la
 ## Capacidades
 
 - Generacion de texto y razonamiento: la model card indica que el pack se ha ejercitado con su configuracion de serving de texto y razonamiento.
-- Procesamiento multimodal image-text-to-text: el pipeline declarado en HuggingFace es image-text-to-text y el pack incluye explicitamente los componentes de vision.
+- Procesamiento multimodal image-text-to-text: el pipeline declarado en Hugging Face es image-text-to-text y el pack incluye explicitamente los componentes de vision.
 - Inferencia asistida por borrador: incluye componentes DSpark con tamano de bloque K=5, asociados a decodificacion especulativa en la receta de serving.
 - Serving especializado en dos nodos: la receta matched cubre el runtime de dos "Spark" y el manejo de Engram.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
@@ -86,7 +86,7 @@ No hay datos de rendimiento publicados para ninguno de los tres, por lo que la c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ajensenwaud/recursant-two-sparks-deepseekv4.1-flash
+- Modelo en Hugging Face: https://huggingface.co/ajensenwaud/recursant-two-sparks-deepseekv4.1-flash
 - Receta de serving two-Spark: https://github.com/ajensenwaud/recursant-two-sparks-deepseekv4.1-flash
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Distribucion EXL3 upstream: https://huggingface.co/sfxnz/DeepSeek-V4.1-Flash-EXL3

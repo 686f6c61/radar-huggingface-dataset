@@ -99,7 +99,7 @@ La comparacion directa de calidad no es posible sin ejecutar evaluaciones propia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/securecoder-30b-pro-merged-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/securecoder-30b-pro-merged-i1-GGUF
 - Modelo base de la cuantizacion: https://huggingface.co/Taimwe/securecoder-30b-pro-merged
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - La busqueda web realizada no ha devuelto ningun enlace tecnico relevante (papers, blogs, repos o demos) relacionado con este modelo o con su modelo base.

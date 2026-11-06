@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / tarea | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ayaankapoor/deit-classification | 24.832 | Clasificación de imágenes (sin entrenar) | Sin benchmarks; checkpoint de inicialización | BSD-3-Clause | HuggingFace, 0 descargas |
-| DeiT-Tiny (referencia) | ~5 M | Clasificación de imágenes ImageNet | Ver model card oficial | Apache-2.0 (referencia) | HuggingFace |
-| DeiT-Small (referencia) | ~22 M | Clasificación de imágenes ImageNet | Ver model card oficial | Apache-2.0 (referencia) | HuggingFace |
-| DeiT-Base (referencia) | ~86 M | Clasificación de imágenes ImageNet | Ver model card oficial | Apache-2.0 (referencia) | HuggingFace |
+| ayaankapoor/deit-classification | 24.832 | Clasificación de imágenes (sin entrenar) | Sin benchmarks; checkpoint de inicialización | BSD-3-Clause | Hugging Face, 0 descargas |
+| DeiT-Tiny (referencia) | ~5 M | Clasificación de imágenes ImageNet | Ver model card oficial | Apache-2.0 (referencia) | Hugging Face |
+| DeiT-Small (referencia) | ~22 M | Clasificación de imágenes ImageNet | Ver model card oficial | Apache-2.0 (referencia) | Hugging Face |
+| DeiT-Base (referencia) | ~86 M | Clasificación de imágenes ImageNet | Ver model card oficial | Apache-2.0 (referencia) | Hugging Face |
 
 Las cifras de parámetros de los DeiT de referencia son aproximadas y deben confirmarse en sus model cards oficiales; este repositorio no es comparable como modelo entrenado, solo como implementación de código a escala de juguete.
 
@@ -88,6 +88,6 @@ Las cifras de parámetros de los DeiT de referencia son aproximadas y deben conf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ayaankapoor/deit-classification
+- Hugging Face: https://huggingface.co/ayaankapoor/deit-classification
 
 No se han encontrado en la búsqueda web otros enlaces (papers, blogs, repositorios o demos) asociados a este modelo.

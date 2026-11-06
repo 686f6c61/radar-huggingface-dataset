@@ -76,14 +76,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ct-inkling-anth-gen-mid-g0-b1 | Adaptador LoRA r=64 sobre Inkling-Small | no disponible (depende del base) | no disponible (entrenamiento a 8192 tokens) | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
-| thinkingmachines/Inkling-Small | Modelo base | no disponible | no disponible | no disponible | no disponible | HuggingFace (referenciado como base) |
+| ct-inkling-anth-gen-mid-g0-b1 | Adaptador LoRA r=64 sobre Inkling-Small | no disponible (depende del base) | no disponible (entrenamiento a 8192 tokens) | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
+| thinkingmachines/Inkling-Small | Modelo base | no disponible | no disponible | no disponible | no disponible | Hugging Face (referenciado como base) |
 | Otras ramas y generaciones del programa (misma cadena `inkling-anth-gen-mid`) | Adaptadores LoRA con la misma receta | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
 - No es un modelo autonomo: requiere el modelo base thinkingmachines/Inkling-Small para funcionar. Sin el, los pesos del adaptador no son utilizables.
-- No se especifica licencia, ni en la informacion de HuggingFace ni en la model card. El uso comercial queda en un limbo legal hasta que el autor o el titular del modelo base lo aclaren, y podria estar sujeto ademas a la licencia del modelo base.
+- No se especifica licencia, ni en la informacion de Hugging Face ni en la model card. El uso comercial queda en un limbo legal hasta que el autor o el titular del modelo base lo aclaren, y podria estar sujeto ademas a la licencia del modelo base.
 - No se documentan los idiomas soportados. Cualquier afirmacion sobre capacidades multilingues seria especulativa.
 - No hay resultados de benchmarks publicados, por lo que no hay evidencia cuantitativa de calidad, seguridad ni adherencia a la constitucion semilla.
 - Riesgo de alucinacion: inherente a los modelos generativos; no se documentan medidas especificas de mitigacion en esta ficha.
@@ -95,7 +95,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arianaazarbal/ct-inkling-anth-gen-mid-g0-b1
+- Repositorio Hugging Face: https://huggingface.co/arianaazarbal/ct-inkling-anth-gen-mid-g0-b1
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Fichero de constitucion semilla incluido en el repositorio: `training_seed_constitution.md`
 - Registro de exportacion incluido en el repositorio: `tinker_meta.json`

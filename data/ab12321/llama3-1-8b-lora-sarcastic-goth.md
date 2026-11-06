@@ -79,7 +79,7 @@ No se dispone de otros adaptadores LoRA con estilo sarcástico-gótico para comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ab12321/llama3.1-8b-lora-sarcastic-goth
+- Repositorio Hugging Face: https://huggingface.co/ab12321/llama3.1-8b-lora-sarcastic-goth
 - Modelo base (unsloth): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Documentación de Llama 3.1 de Meta: https://developer.meta.com/ai/models/llama-3/

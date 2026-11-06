@@ -90,7 +90,7 @@ Las tres conversiones alternativas parten exactamente de los mismos pesos, por l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/axteam/Qwen3.5-9B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/axteam/Qwen3.5-9B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
 - Conversión alternativa de llmware: https://huggingface.co/llmware/qwen-3.5-9b-gguf

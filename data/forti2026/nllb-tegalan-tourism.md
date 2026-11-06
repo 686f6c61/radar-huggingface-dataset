@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `forti2026/nllb-tegalan-tourism` es un modelo de traducción automática neuronal basado en la arquitectura M2M-100, publicado en HuggingFace por el usuario `forti2026`. El nombre sugiere que se trata de un ajuste fino orientado al dominio turístico, probablemente con el objetivo de mejorar la calidad de traducción en contextos relacionados con viajes, hostelería y atención al visitante. Sin embargo, la model card no proporciona información verificable sobre el proceso de entrenamiento, los datos utilizados ni las lenguas concretas cubiertas.
+El modelo `forti2026/nllb-tegalan-tourism` es un modelo de traducción automática neuronal basado en la arquitectura M2M-100, publicado en Hugging Face por el usuario `forti2026`. El nombre sugiere que se trata de un ajuste fino orientado al dominio turístico, probablemente con el objetivo de mejorar la calidad de traducción en contextos relacionados con viajes, hostelería y atención al visitante. Sin embargo, la model card no proporciona información verificable sobre el proceso de entrenamiento, los datos utilizados ni las lenguas concretas cubiertas.
 
 El modelo cuenta con 615.073.792 parámetros (aproximadamente 615 millones) y un tamaño de repositorio de 2,5 GB en formato safetensors. Está etiquetado como compatible con la librería `transformers` y con `text2text-generation`, lo que confirma su naturaleza como modelo de traducción. La fecha de creación (septiembre de 2026) indica que es un modelo reciente, aunque su escasa tracción en la comunidad (0 descargas, 1 like) sugiere que se encuentra en una fase temprana de adopción o que su documentación insuficiente limita su uso.
 
@@ -31,7 +31,7 @@ En cuanto al entrenamiento de este modelo concreto, la model card no ofrece info
 
 - Traducción automática neuronal: el modelo está diseñado para tareas de traducción de texto, probablemente especializado en el dominio turístico.
 - Generación de texto condicionada: como modelo encoder-decoder, puede generar texto en el idioma de destino a partir de una secuencia fuente.
-- Compatibilidad con el ecosistema HuggingFace: al estar integrado con `transformers`, puede usarse con pipelines estándar de `text2text-generation`.
+- Compatibilidad con el ecosistema Hugging Face: al estar integrado con `transformers`, puede usarse con pipelines estándar de `text2text-generation`.
 - No se dispone de información sobre capacidades adicionales como tool calling, agentes, razonamiento multi-paso, visión o audio.
 
 ## Casos de uso
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 615 millones de parámetros en fp32, el modelo requiere aproximadamente 2,5 GB de memoria solo para los pesos. En fp16, la cifra se reduce a unos 1,3 GB. Con cuantización a 8 bits, podría funcionar con menos de 1 GB de VRAM adicional para activaciones.
 - GPU recomendadas: una GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050) sería suficiente para inferencia en fp16. Para procesamiento por lotes o contextos largos, se recomienda una RTX 3060 o superior.
 - Compatibilidad con GPU de consumo: sí, el modelo cabe en la mayoría de GPU consumer modernas, incluidas las series RTX 30 y RTX 40 de NVIDIA.
-- Opciones de despliegue: al ser un modelo de `transformers`, puede servirse con HuggingFace Inference Endpoints, o mediante frameworks como vLLM o TGI si se convierte a los formatos adecuados. También es posible ejecutarlo con llama.cpp si se convierte a GGUF, aunque no se ha confirmado la disponibilidad de dicha conversión.
+- Opciones de despliegue: al ser un modelo de `transformers`, puede servirse con Hugging Face Inference Endpoints, o mediante frameworks como vLLM o TGI si se convierte a los formatos adecuados. También es posible ejecutarlo con llama.cpp si se convierte a GGUF, aunque no se ha confirmado la disponibilidad de dicha conversión.
 - Latencia y throughput: no se dispone de datos medidos. Como referencia, un modelo M2M-100 de tamaño similar suele procesar entre 50 y 150 tokens por segundo en una GPU moderna, dependiendo del hardware y la configuración.
 
 ## Comparativa con modelos similares
@@ -76,5 +76,5 @@ La comparativa se limita a modelos de la misma familia o tamaño similar. El mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/forti2026/nllb-tegalan-tourism
+- Repositorio Hugging Face: https://huggingface.co/forti2026/nllb-tegalan-tourism
 - Paper de referencia de M2M-100: https://arxiv.org/abs/1910.09700

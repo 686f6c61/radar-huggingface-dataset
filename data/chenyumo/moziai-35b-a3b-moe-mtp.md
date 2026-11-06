@@ -90,8 +90,8 @@ La comparativa es limitada porque no se dispone de datos de contexto ni benchmar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chenyumo/moziAI-35B-A3B-MOE-MTP
+- Modelo en Hugging Face: https://huggingface.co/chenyumo/moziAI-35B-A3B-MOE-MTP
 - Repositorio GitHub (documentacion): https://github.com/junxian66/chenyumo
 - Repositorio GitHub (uncensored): https://github.com/chenyumo166/moziAI-35B-A3B-MOE-MTP-Uncensored
-- Modelo uncensored en HuggingFace: https://huggingface.co/chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored
+- Modelo uncensored en Hugging Face: https://huggingface.co/chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored
 - Modelo en ModelScope: https://www.modelscope.cn/models/chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored

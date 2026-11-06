@@ -85,7 +85,7 @@ No se dispone de datos comparativos en la información proporcionada. No se han 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| robomotic/XGO | no disponible | no aplica | Recompensa media final de 69,3 a 112,9 según tarea (simulación) | Apache 2.0 | ONNX + checkpoint RSL-RL en HuggingFace |
+| robomotic/XGO | no disponible | no aplica | Recompensa media final de 69,3 a 112,9 según tarea (simulación) | Apache 2.0 | ONNX + checkpoint RSL-RL en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ No se dispone de datos comparativos en la información proporcionada. No se han 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robomotic/XGO
+- Modelo en Hugging Face: https://huggingface.co/robomotic/XGO
 - Luwu Dynamics (fabricante de los robots, 陆吾智能): https://www.xgorobot.com/
 - Repositorio RSL-RL: https://github.com/leggedrobotics/rsl_rl
 - Repositorio mjlab: https://github.com/mujocolab/mjlab

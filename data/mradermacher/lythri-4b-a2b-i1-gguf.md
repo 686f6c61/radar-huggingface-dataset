@@ -24,7 +24,7 @@ El interes practico de esta publicacion es doble: por un lado ofrece cuantizacio
 | Autor de la cuantizacion | mradermacher (revision de README: 1) |
 | Fecha de creacion | 2026-10-01 |
 | Fecha de actualizacion | 2026-10-02 |
-| Tamano del repositorio | 0,0 GB en los metadatos de HuggingFace (el unico fichero listado en la tabla es el imatrix, de 0,1 GB) |
+| Tamano del repositorio | 0,0 GB en los metadatos de Hugging Face (el unico fichero listado en la tabla es el imatrix, de 0,1 GB) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
   - Sumar entre 0,5 y 2 GB adicionales de cache KV segun la longitud de contexto configurada y el numero de capas.
 - GPU recomendadas: cualquier GPU con 6 GB o mas de VRAM (RTX 3060, RTX 4060, RTX 2070 y superiores) ejecuta las cuantizaciones Q4 y Q5 con comodidad. Una RTX 4090, A100 o H100 no aportan ventaja de memoria relevante a este tamano; su beneficio es de throughput y de contexto largo.
 - Cabe en GPU de consumo: si. Las cuantizaciones Q4_K_M y Q5_K_M caben en 4-6 GB de VRAM, por lo que es viable en iGPU con memoria unificada, en portatiles con GPU discreta de gama media y en mini-PC de 8-16 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp y servidores compatibles con GGUF. Para el modelo base en formato HuggingFace: transformers, vLLM o TGI. El repositorio tiene la etiqueta endpoints_compatible.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp y servidores compatibles con GGUF. Para el modelo base en formato Hugging Face: transformers, vLLM o TGI. El repositorio tiene la etiqueta endpoints_compatible.
 - Latencia y throughput estimados: no disponibles. Dependen de la cuantizacion, del backend y del hardware; no se aportan mediciones en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -100,7 +100,7 @@ Diferencias relevantes: frente a las alternativas, la principal ventaja de Lythr
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones i1 con imatrix): https://huggingface.co/mradermacher/Lythri-4B-A2B-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones i1 con imatrix): https://huggingface.co/mradermacher/Lythri-4B-A2B-i1-GGUF
 - Modelo base: https://huggingface.co/Lythri/Lythri-4B-A2B
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Lythri-4B-A2B-GGUF
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Lythri-4B-A2B-i1-GGUF

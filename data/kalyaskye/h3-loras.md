@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kalyaskye/h3-loras` es un repositorio de HuggingFace que actua como espejo (mirror) de nueve adaptadores LoRA para el modelo base MiniMax H3, un modelo abierto y omnicanal de generacion de video que produce imagen y audio nativo de forma conjunta. El repositorio no contiene un modelo fundacional: es una coleccion de pesos de adaptacion de bajo rango pensada para cargarse por URL en entornos de inferencia alojada, de modo que un runtime externo pueda aplicar el estilo o el concepto aprendido sobre el modelo base sin necesidad de descargar archivos manualmente.
+`kalyaskye/h3-loras` es un repositorio de Hugging Face que actua como espejo (mirror) de nueve adaptadores LoRA para el modelo base MiniMax H3, un modelo abierto y omnicanal de generacion de video que produce imagen y audio nativo de forma conjunta. El repositorio no contiene un modelo fundacional: es una coleccion de pesos de adaptacion de bajo rango pensada para cargarse por URL en entornos de inferencia alojada, de modo que un runtime externo pueda aplicar el estilo o el concepto aprendido sobre el modelo base sin necesidad de descargar archivos manualmente.
 
 El autor, `kalyaskye`, se limita a reempaquetar material publicado originalmente en Civitai y atribuye la autoria a los creadores originales de cada LoRA en la propia model card. El repositorio ocupa 2,3 GB y esta etiquetado con `not-for-all-audiences`, `lora` y `minimax-h3`. Todos los adaptadores listados pertenecen a la categoria de contenido para adultos: ajustes de realismo, deslizadores de fisico y anatomia, y LoRAs de acciones sexuales explicitas. No se declara licencia, pipeline, idiomas ni parametros.
 
@@ -71,8 +71,8 @@ No existen metricas objetivas (FVD, CLIP score, similitud de audio, etc.) ni com
 
 | Modelo / repositorio | Tipo | Contenido | Modelo base | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `kalyaskye/h3-loras` | Coleccion de 9 LoRAs (espejo de Civitai) | Para adultos (`not-for-all-audiences`) | MiniMax H3 | no disponible | HuggingFace, 0 descargas |
-| `akatz-ai/MiniMax-H3-Character-Swap-LoRA` | LoRA individual | Intercambio de personaje | MiniMax H3 (Ref2VA) | no disponible | HuggingFace |
+| `kalyaskye/h3-loras` | Coleccion de 9 LoRAs (espejo de Civitai) | Para adultos (`not-for-all-audiences`) | MiniMax H3 | no disponible | Hugging Face, 0 descargas |
+| `akatz-ai/MiniMax-H3-Character-Swap-LoRA` | LoRA individual | Intercambio de personaje | MiniMax H3 (Ref2VA) | no disponible | Hugging Face |
 | LoRAs de H3 publicados en Civitai | Adaptadores individuales | Variable, incluye contenido para adultos | MiniMax H3 | Variable segun autor | Civitai |
 | LoRAs para Flux, Wan o SDXL (loraai.io) | Adaptadores para otros modelos base | Variable | Flux / Wan / SDXL | Variable | loraai.io |
 
@@ -93,7 +93,7 @@ La diferencia principal frente a los LoRA individuales de H3 es que este reposit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kalyaskye/h3-loras
+- Repositorio en Hugging Face: https://huggingface.co/kalyaskye/h3-loras
 - Perfil del autor: https://huggingface.co/kalyaskye
 - LoRA de intercambio de personaje para H3 (referencia del ecosistema): https://huggingface.co/akatz-ai/MiniMax-H3-Character-Swap-LoRA
 - Repositorio Awesome MiniMax H3 (pesos, cuantizaciones, LoRAs, nodos de ComfyUI): https://github.com/AtlasCloudAI/awesome-minimax-h3

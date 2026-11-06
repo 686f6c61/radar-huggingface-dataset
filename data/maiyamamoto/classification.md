@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maiyamamoto/classification` es un prototipo experimental de investigación basado en la arquitectura Coca, diseñado con fines de clasificación. Está creado por el usuario maiyamamoto y publicado en HuggingFace como un repositorio con una configuración a nano escala. El modelo cuenta con un total de 16.576 parámetros, lo que lo convierte en un punto de partida mínimo para pruebas de humo y experimentos de arquitectura, pero no es un modelo entrenado ni validado para ninguna tarea real.
+`maiyamamoto/classification` es un prototipo experimental de investigación basado en la arquitectura Coca, diseñado con fines de clasificación. Está creado por el usuario maiyamamoto y publicado en Hugging Face como un repositorio con una configuración a nano escala. El modelo cuenta con un total de 16.576 parámetros, lo que lo convierte en un punto de partida mínimo para pruebas de humo y experimentos de arquitectura, pero no es un modelo entrenado ni validado para ninguna tarea real.
 
 Su relevancia actual es limitada: sirve como referencia para explorar la arquitectura Coca, un diseño contrastivo que combina una pasarela de imagen y texto mediante una fusión de bajo rango. La model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo, no un checkpoint entrenado con resultados de benchmarks. No se reclama ningún rendimiento, y el repositorio funciona como plantilla de investigación con un script de fine-tuning incluido.
 
@@ -67,13 +67,13 @@ No disponible. No se conocen modelos de la misma categoría con un número de pa
 - El checkpoint incluido es un checkpoint de inicialización no entrenado; no produce resultados de clasificación útiles.
 - La model card advierte que la implementación no ha sido auditada para robustez, equidad ni transferencia de dominio.
 - No se dispone de datos sobre la composición del dataset de entrenamiento ni sobre el proceso de entrenamiento.
-- Al ser una implementación personalizada, las APIs genéricas de HuggingFace no pueden cargar el modelo sin un adaptador explícito.
+- Al ser una implementación personalizada, las APIs genéricas de Hugging Face no pueden cargar el modelo sin un adaptador explícito.
 - El repositorio no incluye ninguna garantía de rendimiento ni de seguridad; debe tratarse como un punto de partida experimental.
 - La licencia BSD-3-Clause permite el uso comercial, pero este modelo no está preparado para uso en producción bajo ninguna circunstancia.
 - Cualquier resultado futuro debe documentarse por separado de los valores por defecto incluidos en este repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maiyamamoto/classification
+- Hugging Face: https://huggingface.co/maiyamamoto/classification
 - Model card: https://huggingface.co/maiyamamoto/classification
 - Archivos incluidos: `finetune.py`, `config.json`, `training_args.json`, `model.safetensors`

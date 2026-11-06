@@ -89,8 +89,8 @@ La comparación directa más relevante es con el checkpoint original de MONAI, d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MedMLX/segresnet-wholebody-mlx
-- Modelo base en HuggingFace: https://huggingface.co/MONAI/wholeBody_ct_segmentation
+- Modelo en Hugging Face: https://huggingface.co/MedMLX/segresnet-wholebody-mlx
+- Modelo base en Hugging Face: https://huggingface.co/MONAI/wholeBody_ct_segmentation
 - Model card del modelo base: https://huggingface.co/MONAI/wholeBody_ct_segmentation/blob/13f6d33ae9de6664571d935ee647039f477c3fad/docs/README.md
 - Repositorio de inferencia segresnet-mlx: https://github.com/MedMLX/segresnet-mlx
 - Paper de MedMLX (medRxiv): https://doi.org/10.64898/2026.10.28.26366762

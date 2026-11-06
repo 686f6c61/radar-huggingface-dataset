@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Anni0401/qwen3-8b-dpo-query-rewrite-lora | 8B (base) + LoRA r=8 | 1024 tokens en entrenamiento | Reescritura de consultas para tool retrieval | Apache-2.0 | HuggingFace (adaptador) |
-| Qwen/Qwen3-8B (base) | 8B | no disponible en la información | Generación de texto general | Apache-2.0 | HuggingFace |
-| Adaptadores LoRA genéricos sobre Qwen3-8B | 8B (base) + LoRA | variable | Depende del ajuste | variable | HuggingFace |
+| Anni0401/qwen3-8b-dpo-query-rewrite-lora | 8B (base) + LoRA r=8 | 1024 tokens en entrenamiento | Reescritura de consultas para tool retrieval | Apache-2.0 | Hugging Face (adaptador) |
+| Qwen/Qwen3-8B (base) | 8B | no disponible en la información | Generación de texto general | Apache-2.0 | Hugging Face |
+| Adaptadores LoRA genéricos sobre Qwen3-8B | 8B (base) + LoRA | variable | Depende del ajuste | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo con alternativas específicas de reescritura de consultas en la información proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo con alternativas específicas 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Anni0401/qwen3-8b-dpo-query-rewrite-lora
+- Hugging Face: https://huggingface.co/Anni0401/qwen3-8b-dpo-query-rewrite-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio ToolSelectionBenchmark: https://github.com/Anni0401/ToolSelectionBenchmark
 - Estrategia DPO query-rewrite: https://github.com/Anni0401/ToolSelectionBenchmark/tree/main/improvement-strategies/dpo-query-rewrite

@@ -6,7 +6,7 @@
 
 El repositorio está publicado bajo licencia MIT y su autor lo presenta explícitamente como un material exploratorio: no afirma mejoras de rendimiento, no incluye ablaciones completadas, ni código liberado, ni un checkpoint entrenado. Su relevancia actual radica en servir como punto de partida documental para investigadores que trabajan con modelos VLA en manipulación robótica, un área en plena expansión que busca unificar percepción visual, comprensión del lenguaje natural y control motor en un único marco de aprendizaje.
 
-En cuanto a las especificaciones técnicas habituales de un modelo, este repositorio no las tiene: el archivo de pesos declarado en HuggingFace (24.832 parámetros) corresponde en realidad al tamaño del documento de análisis, no a un modelo. El tamaño total del repositorio es de 0.0 GB.
+En cuanto a las especificaciones técnicas habituales de un modelo, este repositorio no las tiene: el archivo de pesos declarado en Hugging Face (24.832 parámetros) corresponde en realidad al tamaño del documento de análisis, no a un modelo. El tamaño total del repositorio es de 0.0 GB.
 
 ## Especificaciones técnicas
 
@@ -66,7 +66,7 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fionakcej/notes-robotics-vision-language
+- Repositorio en Hugging Face: https://huggingface.co/fionakcej/notes-robotics-vision-language
 - Revisión sistemática de VLA en manipulación robótica (arXiv 2507.10672): https://arxiv.org/abs/2507.10672
 - Artículo HTML de la misma revisión: https://arxiv.org/html/2507.10672v1
 - Introducción a VLA y políticas de robots (LearnOpenCV): https://learnopencv.com/vision-language-action-models-lerobot-policy/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AIAAH-1-RL-DPO-iter0 es un modelo de lenguaje decoder-only con arquitectura LlamaForCausalLM de 42 capas, publicado por el usuario Akahsizrr en HuggingFace. Corresponde a la iteración 0 de un ciclo de ajuste por DPO iterativo (estilo lazyrlGYM) aplicado sobre el modelo base AIAAH-1, orientado a mejorar la alineación y el comportamiento en razonamiento científico, matemáticas y código agéntico mediante pares de preferencia obtenidos en rollouts con decodificación especulativa.
+AIAAH-1-RL-DPO-iter0 es un modelo de lenguaje decoder-only con arquitectura LlamaForCausalLM de 42 capas, publicado por el usuario Akahsizrr en Hugging Face. Corresponde a la iteración 0 de un ciclo de ajuste por DPO iterativo (estilo lazyrlGYM) aplicado sobre el modelo base AIAAH-1, orientado a mejorar la alineación y el comportamiento en razonamiento científico, matemáticas y código agéntico mediante pares de preferencia obtenidos en rollouts con decodificación especulativa.
 
 Los pesos en safetensors suman 2.516.756.480 parámetros (~2,52B), aunque la model card declara "~3B" para el modelo base; el repositorio ocupa 5,0 GB y se distribuye bajo licencia Apache 2.0. El entrenamiento usa LoRA (r=32, alpha=64) con solo 303 pares de preferencia en esta iteración y una configuración DPO de beta=0,1, learning rate 5e-6, 2 épocas, batch size 2 y acumulación de gradiente 4.
 
@@ -110,7 +110,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Akahsizrr/AIAAH-1-RL-DPO-iter0
+- Modelo en Hugging Face: https://huggingface.co/Akahsizrr/AIAAH-1-RL-DPO-iter0
 - Modelo base: https://huggingface.co/Akahsizrr/AIAAH-1
 - Modelo draft para decodificación especulativa: https://huggingface.co/Akahsizrr/MiniCPM5-2B-DSpark-continued-step200
 - Paper, blog o repositorio adicionales: no disponible (la búsqueda web no devolvió resultados relevantes sobre este modelo).

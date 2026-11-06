@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - VRAM estimada: con 35.107 millones de parámetros, en precisión fp16 los pesos ocupan aproximadamente 70 GB (el tamaño del repositorio es 70.2 GB). Para inferencia sin cuantizar se necesitaría una GPU con al menos 70-80 GB de VRAM, como una A100 80GB o H100 80GB.
 - GPU recomendadas: A100 80GB, H100 80GB o equivalentes; también podría desplegarse en múltiples GPUs con tensor parallelism.
 - Si se aplicara cuantización (por ejemplo, 4 bits), el modelo podría caber en una GPU de consumo como RTX 4090 (24 GB), pero no se proporcionan cuantizaciones oficiales.
-- Opciones de despliegue: al ser un modelo con pesos en safetensors, podría utilizarse con frameworks como vLLM, llama.cpp (si se convierte a GGUF), o Transformers de HuggingFace, aunque no hay confirmación de compatibilidad.
+- Opciones de despliegue: al ser un modelo con pesos en safetensors, podría utilizarse con frameworks como vLLM, llama.cpp (si se convierte a GGUF), o Transformers de Hugging Face, aunque no hay confirmación de compatibilidad.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -67,6 +67,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r576-r252-odpo-hirank-shortctx-ultraextra-merged
+- Modelo en Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r576-r252-odpo-hirank-shortctx-ultraextra-merged
 - Modelo base: https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged
 - Otros modelos de la serie (referencia): https://huggingface.co/unconst/Affine-5czsc2fc98-r32-merged y https://huggingface.co/unconst/Affine-5czsc2fc98-r384-offline-dpo-hialpha-hirank-merged

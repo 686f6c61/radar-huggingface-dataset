@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_09` es un artefacto publicado en HuggingFace por el usuario TianfuXinqu el 1 de noviembre de 2026. La model card asociada, titulada "Pricing Optimizer", no describe un modelo de lenguaje: contiene unicamente metadatos internos de gobernanza (identificador MDL-009, propietaria Olivia Davis, departamento de Finanzas, nivel de riesgo medio, cobertura de tests del 30 % y documentacion marcada como ausente). No se especifica arquitectura, tamano, tokenizador ni datos de entrenamiento.
+El modelo `TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_09` es un artefacto publicado en Hugging Face por el usuario TianfuXinqu el 1 de noviembre de 2026. La model card asociada, titulada "Pricing Optimizer", no describe un modelo de lenguaje: contiene unicamente metadatos internos de gobernanza (identificador MDL-009, propietaria Olivia Davis, departamento de Finanzas, nivel de riesgo medio, cobertura de tests del 30 % y documentacion marcada como ausente). No se especifica arquitectura, tamano, tokenizador ni datos de entrenamiento.
 
-El repositorio no presenta descargas ni likes, carece de licencia declarada, de idiomas declarados y de pipeline de inferencia asignado. El nombre del repositorio sugiere un artefacto generado de forma automatica dentro de un flujo de trabajo de terminal sobre el sistema de ficheros de HuggingFace, mas que un modelo entrenado y publicado de forma deliberada.
+El repositorio no presenta descargas ni likes, carece de licencia declarada, de idiomas declarados y de pipeline de inferencia asignado. El nombre del repositorio sugiere un artefacto generado de forma automatica dentro de un flujo de trabajo de terminal sobre el sistema de ficheros de Hugging Face, mas que un modelo entrenado y publicado de forma deliberada.
 
 Por todo ello, esta ficha no puede validar ninguna capacidad funcional del artefacto. La evaluacion se limita a documentar lo que el autor declara y a senalar explicitamente los datos no disponibles, que en este caso son la practica totalidad de las especificaciones tecnicas habituales.
 
@@ -74,5 +74,5 @@ No disponible. No se ha identificado ningun modelo comparable, ya que no se cono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_09
+- Repositorio en Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_09
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados al modelo.

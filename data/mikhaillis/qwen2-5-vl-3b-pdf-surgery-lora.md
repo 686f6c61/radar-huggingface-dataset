@@ -76,8 +76,8 @@ No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-VL-3B-Instruct + PDF-Surgery-LoRA | 3B (base) + 7,73 MB (adaptador) | No disponible | LoRA zero-shot por cirugia de pesos | Apache 2.0 | HuggingFace |
-| Qwen2.5-VL-3B-Instruct (base) | 3B | No disponible | VLM generalista | Apache 2.0 | HuggingFace |
+| Qwen2.5-VL-3B-Instruct + PDF-Surgery-LoRA | 3B (base) + 7,73 MB (adaptador) | No disponible | LoRA zero-shot por cirugia de pesos | Apache 2.0 | Hugging Face |
+| Qwen2.5-VL-3B-Instruct (base) | 3B | No disponible | VLM generalista | Apache 2.0 | Hugging Face |
 | Alternativas especializadas en OCR/PDF | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks comparativos con otros adaptadores o modelos especializados en transcripcion de PDF en la informacion proporcionada.
@@ -96,6 +96,6 @@ No se dispone de datos de benchmarks comparativos con otros adaptadores o modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MikhailLis/qwen2.5-vl-3b-pdf-surgery-lora
+- Modelo en Hugging Face: https://huggingface.co/MikhailLis/qwen2.5-vl-3b-pdf-surgery-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Paper de referencia del benchmark (Attention Is All You Need): https://arxiv.org/abs/1706.03762

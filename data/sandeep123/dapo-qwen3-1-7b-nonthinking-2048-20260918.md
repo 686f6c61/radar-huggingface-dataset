@@ -69,7 +69,7 @@ Datos de los modelos alternativos tomados de sus fichas públicas; no han sido v
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dapo-qwen3-1.7b-nonthinking-2048 (este) | 1,7 B + LoRA r16 | 8192 en entrenamiento | Adaptador LoRA de RL (DAPO con KL 0,01), modo nonthinking | No disponible en el repositorio | Repositorio público en HuggingFace, 0 descargas |
+| dapo-qwen3-1.7b-nonthinking-2048 (este) | 1,7 B + LoRA r16 | 8192 en entrenamiento | Adaptador LoRA de RL (DAPO con KL 0,01), modo nonthinking | No disponible en el repositorio | Repositorio público en Hugging Face, 0 descargas |
 | Qwen/Qwen3-1.7B (base) | 1,7 B | 32 768, ampliable con YaRN | Transformer denso con modo thinking y nonthinking | Apache 2.0 | Modelo base oficial |
 | DeepSeek-R1-Distill-Qwen-1.5B | 1,5 B | 32 768 heredado de Qwen2.5 | Destilación de razonamiento | MIT | Ampliamente desplegado |
 | Llama-3.2-1B-Instruct | 1,24 B | 128 000 | Instrucción general | Llama 3.2 Community License | Modelo oficial |
@@ -93,7 +93,7 @@ Comparativa en rendimiento: no disponible, ya que este adaptador no publica resu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/dapo-qwen3-1.7b-nonthinking-2048-20260918
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/dapo-qwen3-1.7b-nonthinking-2048-20260918
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio de entrenamiento citado (verl, volcengine), commit `ed498f9fa5c726a6fb46b19bc59c5c33970053c7`: https://github.com/volcengine/verl
 - Artículo de DAPO (referencia metodológica del algoritmo; no enlazado en la model card): https://arxiv.org/abs/2503.14476

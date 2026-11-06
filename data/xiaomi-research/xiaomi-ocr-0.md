@@ -104,10 +104,10 @@ Xiaomi-OCR-0 ofrece el mejor equilibrio tamano/rendimiento del grupo: iguala o s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xiaomi-research/Xiaomi-OCR-0
+- Modelo en Hugging Face: https://huggingface.co/xiaomi-research/Xiaomi-OCR-0
 - Informe tecnico (arXiv): https://arxiv.org/abs/2609.36136
 - Repositorio GitHub: https://github.com/SeerRay-Lab/Xiaomi-OCR-0
-- Demo (Space de HuggingFace): https://huggingface.co/spaces/SeerRay-Lab/Xiaomi-OCR-0
+- Demo (Space de Hugging Face): https://huggingface.co/spaces/SeerRay-Lab/Xiaomi-OCR-0
 - Modelo en ModelScope: https://www.modelscope.cn/models/SeerRay-Lab/Xiaomi-OCR-0
 - Conversion GGUF comunitaria (prithivMLmods): https://huggingface.co/prithivMLmods/Xiaomi-OCR-0-GGUF
 - Conversion GGUF comunitaria (xzl01): https://github.com/xzl01/Xiaomi-OCR-0-GGUF

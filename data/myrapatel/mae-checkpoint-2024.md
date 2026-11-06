@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mae-checkpoint-2024 es un checkpoint de inicializacion publicado por el usuario myrapatel en HuggingFace bajo licencia Apache 2.0. Se presenta como una implementacion funcional de un modelo Mae (del ingles Masked Autoencoder) orientada a tareas multitask, con una configuracion declarada como large. El repositorio incluye el codigo de ejecucion (pipeline.py), los ficheros de configuracion (config.json, training_args.json) y un fichero de pesos en formato safetensors.
+mae-checkpoint-2024 es un checkpoint de inicializacion publicado por el usuario myrapatel en Hugging Face bajo licencia Apache 2.0. Se presenta como una implementacion funcional de un modelo Mae (del ingles Masked Autoencoder) orientada a tareas multitask, con una configuracion declarada como large. El repositorio incluye el codigo de ejecucion (pipeline.py), los ficheros de configuracion (config.json, training_args.json) y un fichero de pesos en formato safetensors.
 
 A diferencia de un modelo de lenguaje generativo, este artefacto no es un modelo entrenado y no publica resultados de benchmarks: el propio autor indica de forma explicita que el checkpoint sirve para smoke tests y que no se reclama ninguna puntuacion. El numero de parametros registrado en el header de safetensors es de 16.576, una cifra que contrasta con la etiqueta large y con el tamano de repositorio de 0,0 GB, lo que refuerza su caracter de inicializacion sin entrenar.
 
@@ -69,7 +69,7 @@ No hay en la informacion proporcionada modelos comparables directos, ya que se t
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mae-checkpoint-2024 | 16.576 (header safetensors) | no disponible | Multitask (Mae) | apache-2.0 | HuggingFace |
+| mae-checkpoint-2024 | 16.576 (header safetensors) | no disponible | Multitask (Mae) | apache-2.0 | Hugging Face |
 | Mae (referencia de la familia, He et al.) | no disponible en esta ficha | no disponible | Reconstruccion de entradas enmascaradas | no disponible | literatura cientifica |
 
 Cualquier comparacion de rendimiento carece de sentido porque este checkpoint no ha sido entrenado y no publica metricas. Se recomienda tratar la fila de referencia como contexto arquitectonico, no como equivalente funcional.
@@ -88,5 +88,5 @@ Cualquier comparacion de rendimiento carece de sentido porque este checkpoint no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/myrapatel/mae-checkpoint-2024
+- Hugging Face: https://huggingface.co/myrapatel/mae-checkpoint-2024
 - No se han encontrado en la informacion proporcionada otros enlaces (papers, blogs, repositorios o demos) asociados al modelo.

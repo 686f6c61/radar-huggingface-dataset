@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MIRAGE-MD (multi-dataset) es un modelo de codificación cerebral desarrollado por el laboratorio NeuroAI de la EPFL que predice respuestas fMRI ante imágenes y vídeos cortos. No es un modelo generativo: se trata de un adaptador de 1.237.846.409 parámetros que lee los estados ocultos de un backbone congelado Qwen3-Omni-30B-A3B-Thinking y los proyecta, mediante cabezas lineales, a amplitudes de respuesta en 1.412 parcelas cerebrales. Su pipeline en HuggingFace es `feature-extraction` y se distribuye con licencia Apache 2.0.
+MIRAGE-MD (multi-dataset) es un modelo de codificación cerebral desarrollado por el laboratorio NeuroAI de la EPFL que predice respuestas fMRI ante imágenes y vídeos cortos. No es un modelo generativo: se trata de un adaptador de 1.237.846.409 parámetros que lee los estados ocultos de un backbone congelado Qwen3-Omni-30B-A3B-Thinking y los proyecta, mediante cabezas lineales, a amplitudes de respuesta en 1.412 parcelas cerebrales. Su pipeline en Hugging Face es `feature-extraction` y se distribuye con licencia Apache 2.0.
 
 La relevancia del modelo radica en que unifica cinco conjuntos de datos fMRI en un único espacio de predicción: Courtois NeuroMod (Friends y Movie10), BOLD Moments, McMahon et al., NSD y THINGS-fMRI. Frente a la versión original MIRAGE, entrenada sobre un solo dataset, MIRAGE-MD ofrece 30 cabezas lineales (una por sujeto de entrenamiento) y distintos modos de lectura (`default`, `all`, `dataset:<nombre>`, `subject:<dataset>:<id>`, `subjects`) que permiten promediar o aislar predicciones según el estímulo.
 
@@ -81,9 +81,9 @@ En cuanto a velocidad, la model card incluye una tabla de rendimiento por GPU (A
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MIRAGE-MD | 1,24 B (adaptador) + Qwen3-Omni-30B-A3B congelado | no disponible | Codificación fMRI multi-dataset | Apache 2.0 | HuggingFace |
-| MIRAGE | no disponible | no disponible | Codificación fMRI (un dataset) | no disponible | HuggingFace (epfl-neuroai/mirage) |
-| Qwen3-Omni-30B-A3B-Thinking | 30 B totales (MoE) | no disponible | Modelo omni generativo | no disponible | HuggingFace (Qwen) |
+| MIRAGE-MD | 1,24 B (adaptador) + Qwen3-Omni-30B-A3B congelado | no disponible | Codificación fMRI multi-dataset | Apache 2.0 | Hugging Face |
+| MIRAGE | no disponible | no disponible | Codificación fMRI (un dataset) | no disponible | Hugging Face (epfl-neuroai/mirage) |
+| Qwen3-Omni-30B-A3B-Thinking | 30 B totales (MoE) | no disponible | Modelo omni generativo | no disponible | Hugging Face (Qwen) |
 
 La comparación directa con otros modelos de codificación cerebral no está disponible en la información proporcionada. MIRAGE-MD se distingue de MIRAGE por entrenarse en cinco datasets en lugar de uno y por ofrecer 30 cabezas por sujeto y múltiples readouts.
 
@@ -100,7 +100,7 @@ La comparación directa con otros modelos de codificación cerebral no está dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/epfl-neuroai/mirage-md
+- Modelo en Hugging Face: https://huggingface.co/epfl-neuroai/mirage-md
 - Paper (arXiv): https://arxiv.org/abs/2605.29850
 - Página del proyecto: https://mirage-brain.epfl.ch/
 - Modelo base Qwen3-Omni-30B-A3B-Thinking: https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Thinking

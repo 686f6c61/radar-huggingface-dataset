@@ -23,7 +23,7 @@ La información publicada es muy escasa: la model card es de una sola frase, no 
 | Modelo base | Qwen/Qwen3.5-27B (ajuste fino completo) |
 | Tamaño del repositorio | 109,4 GB |
 | Precisión de los pesos | Deducida: 109,4 GB / 27.356.728.560 parámetros ≈ 4 bytes por parámetro, consistente con FP32 |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Fecha de creación / actualización | 2026-10-19 / 2026-10-21 |
 | Descargas / likes | 21 / 16 |
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| baselabs/mammoth-1 | 27,36 mil millones | No disponible | Probabilidad por opción, sin texto | `mit` según etiqueta, `other`/`mit` según model card | HuggingFace, safetensors |
-| Qwen/Qwen3.5-27B (modelo base) | 27B (según denominación) | No disponible en la información proporcionada | Texto generativo | No disponible en la información proporcionada | HuggingFace |
+| baselabs/mammoth-1 | 27,36 mil millones | No disponible | Probabilidad por opción, sin texto | `mit` según etiqueta, `other`/`mit` según model card | Hugging Face, safetensors |
+| Qwen/Qwen3.5-27B (modelo base) | 27B (según denominación) | No disponible en la información proporcionada | Texto generativo | No disponible en la información proporcionada | Hugging Face |
 | Otros modelos de decisión o clasificación de tamaño comparable | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (motores de decisión tipados construidos sobre un LLM de 27B). La comparación relevante es con el base: mammoth-1 sacrifica la generación libre a cambio de salidas acotadas y de un coste de inferencia menor por petición, a costa de perder toda funcionalidad de texto.
@@ -91,6 +91,6 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/baselabs/mammoth-1
+- Hugging Face: https://huggingface.co/baselabs/mammoth-1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

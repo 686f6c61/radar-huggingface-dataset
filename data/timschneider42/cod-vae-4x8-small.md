@@ -89,7 +89,7 @@ La comparativa directa con el modelo completo muestra el compromiso: un 8% menos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TimSchneider42/cod-vae-4x8-small
+- Modelo en Hugging Face: https://huggingface.co/TimSchneider42/cod-vae-4x8-small
 - Modelo completo (cod-vae-4x8): https://huggingface.co/TimSchneider42/cod-vae-4x8
 - Repositorio GitHub de cod-vae: https://github.com/TimSchneider42/cod-vae
 - Paper original (arXiv): https://arxiv.org/abs/2503.08737

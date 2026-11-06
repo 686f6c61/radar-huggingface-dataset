@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| credible-ai/qwen3.5-1B-40domains-vertex-linear-cpile | 1,33B | no disponible | MIT | HuggingFace | Artefacto de investigación LinMix |
-| credible-ai/qwen3.5-100M-40domains-vertex | ~100M | no disponible | no disponible | HuggingFace | Proxy del enjambre LinMix |
+| credible-ai/qwen3.5-1B-40domains-vertex-linear-cpile | 1,33B | no disponible | MIT | Hugging Face | Artefacto de investigación LinMix |
+| credible-ai/qwen3.5-100M-40domains-vertex | ~100M | no disponible | no disponible | Hugging Face | Proxy del enjambre LinMix |
 | Qwen3.5 base (1B clase) | ~1B | no disponible | no disponible | no disponible | Modelo de propósito general de referencia arquitectónica |
 | no disponible | - | - | - | - | No se dispone de comparativas publicadas con alternativas equivalentes |
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/qwen3.5-1B-40domains-vertex-linear-cpile
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/qwen3.5-1B-40domains-vertex-linear-cpile
 - Proxy de 100M: https://huggingface.co/credible-ai/qwen3.5-100M-40domains-vertex
 - Paper LinMix: https://arxiv.org/abs/2610.37390
 - Código: https://github.com/credibleai/linmix

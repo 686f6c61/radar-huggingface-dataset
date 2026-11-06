@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Inst-Math-Reasoning-SFT-opd es un ajuste fino supervisado (SFT) del modelo unsloth/Qwen3-4B-Instruct-2507, una variante optimizada de la familia Qwen3 de Alibaba. El modelo lo publica el usuario mhseo2 en HuggingFace, aunque la model card atribuye el desarrollo a Harsha Vardhan Mannem (Harsha901). Se trata de un transformer causal decoder-only de aproximadamente 4.022 millones de parámetros, especializado en razonamiento matemático y resolución de problemas paso a paso, con salidas en formato cadena de pensamiento (chain-of-thought).
+Qwen3-4B-Inst-Math-Reasoning-SFT-opd es un ajuste fino supervisado (SFT) del modelo unsloth/Qwen3-4B-Instruct-2507, una variante optimizada de la familia Qwen3 de Alibaba. El modelo lo publica el usuario mhseo2 en Hugging Face, aunque la model card atribuye el desarrollo a Harsha Vardhan Mannem (Harsha901). Se trata de un transformer causal decoder-only de aproximadamente 4.022 millones de parámetros, especializado en razonamiento matemático y resolución de problemas paso a paso, con salidas en formato cadena de pensamiento (chain-of-thought).
 
 El problema que aborda es el de mejorar la adherencia a instrucciones y la estabilidad del razonamiento en tareas matemáticas respecto al modelo base, produciendo explicaciones intermedias más estructuradas y soluciones menos incompletas. El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, lo que reduce el coste computacional del ajuste fino. Es relevante como punto de partida para alineamiento posterior (DPO/RLHF), asistentes educativos y evaluación de razonamiento en un tamaño contenido de 4B parámetros.
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-Inst-Math-Reasoning-SFT-opd | ~4B | no disponible (heredado del base) | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas |
-| unsloth/Qwen3-4B-Instruct-2507 (base) | ~4B | no disponible en esta informacion | sin datos en esta informacion | apache-2.0 (segun base Qwen3) | HuggingFace |
+| Qwen3-4B-Inst-Math-Reasoning-SFT-opd | ~4B | no disponible (heredado del base) | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas |
+| unsloth/Qwen3-4B-Instruct-2507 (base) | ~4B | no disponible en esta informacion | sin datos en esta informacion | apache-2.0 (segun base Qwen3) | Hugging Face |
 | Otros modelos matematicos de ~4B-7B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con alternativas.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mhseo2/Qwen3-4B-Inst-Math-Reasoning-SFT-opd
+- Hugging Face: https://huggingface.co/mhseo2/Qwen3-4B-Inst-Math-Reasoning-SFT-opd
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - No se han encontrado papers, blogs, repositorios ni demos adicionales especificos de este modelo en la busqueda web realizada.

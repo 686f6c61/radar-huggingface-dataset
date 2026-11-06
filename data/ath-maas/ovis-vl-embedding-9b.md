@@ -93,10 +93,10 @@ Las puntuaciones son porcentajes y valores mas altos indican mejor rendimiento. 
 
 | Modelo | Parametros | Modalidades | MMEB-v2 (global) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ovis-VL-Embedding-9B | ~9B | Texto, imagen, documento visual, video, intercalado | 81,13 | apache-2.0 | HuggingFace (ATH-MaaS) |
-| Ovis-VL-Embedding-2B | ~2B | Texto, imagen, documento visual, video, intercalado | 3,67 puntos menos que la variante de 9B | no disponible | HuggingFace (ATH-MaaS) |
-| Ovis-Omni-Embedding-3B | ~3B | Omnimodal (segun la informacion disponible) | no disponible | no disponible | HuggingFace (ATH-MaaS) |
-| Ovis2.5-9B | ~9B | Vision-lenguaje generativo | no disponible (modelo generativo, no de embeddings) | no disponible | HuggingFace (ATH-MaaS) |
+| Ovis-VL-Embedding-9B | ~9B | Texto, imagen, documento visual, video, intercalado | 81,13 | apache-2.0 | Hugging Face (ATH-MaaS) |
+| Ovis-VL-Embedding-2B | ~2B | Texto, imagen, documento visual, video, intercalado | 3,67 puntos menos que la variante de 9B | no disponible | Hugging Face (ATH-MaaS) |
+| Ovis-Omni-Embedding-3B | ~3B | Omnimodal (segun la informacion disponible) | no disponible | no disponible | Hugging Face (ATH-MaaS) |
+| Ovis2.5-9B | ~9B | Vision-lenguaje generativo | no disponible (modelo generativo, no de embeddings) | no disponible | Hugging Face (ATH-MaaS) |
 
 El mejor baseline comparado en MMEB-v2 alcanza 80,09 puntos globales, pero no se identifica con nombre en la informacion proporcionada, por lo que no se puede desglosar por arquitectura, contexto o licencia. Ovis2.5-9B comparte familia y tamano, pero es un modelo de lenguaje multimodal generativo con vision transformer de resolucion nativa (NaViT) y razonamiento reflexivo, no un modelo de embeddings, por lo que no es un sustituto directo.
 
@@ -116,8 +116,8 @@ El mejor baseline comparado en MMEB-v2 alcanza 80,09 puntos globales, pero no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ATH-MaaS/Ovis-VL-Embedding-9B
-- Organizacion ATH-MaaS en HuggingFace: https://huggingface.co/ATH-MaaS
+- Modelo en Hugging Face: https://huggingface.co/ATH-MaaS/Ovis-VL-Embedding-9B
+- Organizacion ATH-MaaS en Hugging Face: https://huggingface.co/ATH-MaaS
 - Repositorio GitHub de Ovis-VL-Embedding: https://github.com/ATH-MaaS/Ovis-VL-Embedding
 - Informe tecnico (arXiv): https://arxiv.org/pdf/2609.25165
 - Repositorio GitHub de Ovis (arquitectura MLLM base): https://github.com/ATH-MaaS/Ovis

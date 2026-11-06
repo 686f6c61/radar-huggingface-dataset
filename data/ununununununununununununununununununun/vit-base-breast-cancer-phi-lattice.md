@@ -44,7 +44,7 @@ La innovación de esta compilación no está en la arquitectura sino en el post-
 - Despliegue en dispositivos con restricciones de memoria: el artefacto de 43,3 MB permite experimentar con inferencia en hardware de borde o GPUs de gama baja, siempre que se implemente el decodificador del formato empaquetado.
 - Prototipado de pipelines de clasificación de imagen médica: con el checkpoint `float16` se puede integrar rápidamente en un script de `transformers` para validar el flujo de preprocesado y clasificación.
 - Comparación de checkpoints base frente a optimizados: permite medir la degradación (o no) de un modelo médico tras cuantización agresiva antes de decidir si merece la pena comprimir en producción.
-- Docencia y reproducción de experimentos: como ejemplo de ficha reproducible de un pase de optimización post-entrenamiento sobre un modelo de HuggingFace con licencia permisiva.
+- Docencia y reproducción de experimentos: como ejemplo de ficha reproducible de un pase de optimización post-entrenamiento sobre un modelo de Hugging Face con licencia permisiva.
 
 ## Benchmarks y rendimiento
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks de precisión clínica en la inform
 
 | Modelo | Parámetros | Contexto / entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `vit-base-breast-cancer-phi-lattice` (este repo) | 85,8 M | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Cuantizado y podado, sin validación clínica publicada |
-| `Falah/vit-base-breast-cancer` (base) | 85,8 M (según repo derivado) | no disponible | no disponible en la información | HuggingFace | Modelo original sin comprimir; sin métricas clínicas en la información disponible |
+| `vit-base-breast-cancer-phi-lattice` (este repo) | 85,8 M | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Cuantizado y podado, sin validación clínica publicada |
+| `Falah/vit-base-breast-cancer` (base) | 85,8 M (según repo derivado) | no disponible | no disponible en la información | Hugging Face | Modelo original sin comprimir; sin métricas clínicas en la información disponible |
 | ViT-Base estándar (ImageNet) | ~86 M | 224x224 típico | Apache 2.0 (según variante) | Amplia | Referencia genérica de arquitectura, no especializada en mama |
 | Otros ViT médicos de tamaño base | ~86 M | variable | variable | variable | No disponible comparación concreta en la información proporcionada |
 
@@ -93,6 +93,6 @@ La comparación con alternativas reales del mismo dominio (clasificadores de mam
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ununununununununununununununununununun/vit-base-breast-cancer-phi-lattice
+- Repositorio Hugging Face: https://huggingface.co/ununununununununununununununununununun/vit-base-breast-cancer-phi-lattice
 - Modelo base: https://huggingface.co/Falah/vit-base-breast-cancer
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

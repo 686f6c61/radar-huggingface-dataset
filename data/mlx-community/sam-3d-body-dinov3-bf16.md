@@ -91,7 +91,7 @@ No se dispone de datos cuantitativos que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mlx-community/sam-3d-body-dinov3-bf16
+- Repositorio en Hugging Face: https://huggingface.co/mlx-community/sam-3d-body-dinov3-bf16
 - Modelo original de Meta: https://huggingface.co/facebook/sam-3d-body-dinov3
 - Repositorio de codigo oficial: https://github.com/facebookresearch/sam-3d-body
 - Codigo del paquete Python oficial: https://github.com/facebookresearch/sam-3d-body/tree/main/sam_3d_body

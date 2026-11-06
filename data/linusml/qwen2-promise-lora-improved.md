@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen2-promise-lora-improved es un ajuste fino (fine-tuning) mediante SFT del modelo Qwen/Qwen2-1.5B-Instruct, desarrollado por el usuario LinusML y publicado en HuggingFace. Se trata de un adaptador LoRA entrenado con la librería TRL sobre la base instruct de Qwen2 de 1.500 millones de parámetros, orientado a tareas de generación de texto conversacional. El modelo se distribuye en formato safetensors y es compatible con la librería transformers y con endpoints compatibles.
+qwen2-promise-lora-improved es un ajuste fino (fine-tuning) mediante SFT del modelo Qwen/Qwen2-1.5B-Instruct, desarrollado por el usuario LinusML y publicado en Hugging Face. Se trata de un adaptador LoRA entrenado con la librería TRL sobre la base instruct de Qwen2 de 1.500 millones de parámetros, orientado a tareas de generación de texto conversacional. El modelo se distribuye en formato safetensors y es compatible con la librería transformers y con endpoints compatibles.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2-1.5B-Instruct, con un tamaño de contexto de 32.768 tokens en la versión base (dato no confirmado en la model card del ajuste). Al ser un fine-tuning con SFT, el objetivo es especializar el comportamiento del modelo base en un dominio o estilo concreto; sin embargo, la model card no documenta la composición del dataset de entrenamiento, el número de tokens utilizados ni los hiperparámetros del ajuste.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LinusML/qwen2-promise-lora-improved | 1.5B (base) + LoRA | no disponible (base: 32.768) | no disponible | HuggingFace, 0 descargas | Ajuste SFT sin benchmarks ni documentación de dataset |
-| Qwen/Qwen2-1.5B-Instruct | 1.5B | 32.768 | Apache 2.0 (según el modelo base) | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados |
-| meta-llama/Llama-3.2-1B-Instruct | 1.2B | 128.000 | Llama 3.2 Community License | HuggingFace, muy usado | Alternativa de tamaño similar con contexto mayor |
-| google/gemma-2-2b-it | 2.6B | 8.192 | Gemma Terms of Use | HuggingFace, muy usado | Alternativa algo mayor, con benchmarks públicos |
+| LinusML/qwen2-promise-lora-improved | 1.5B (base) + LoRA | no disponible (base: 32.768) | no disponible | Hugging Face, 0 descargas | Ajuste SFT sin benchmarks ni documentación de dataset |
+| Qwen/Qwen2-1.5B-Instruct | 1.5B | 32.768 | Apache 2.0 (según el modelo base) | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados |
+| meta-llama/Llama-3.2-1B-Instruct | 1.2B | 128.000 | Llama 3.2 Community License | Hugging Face, muy usado | Alternativa de tamaño similar con contexto mayor |
+| google/gemma-2-2b-it | 2.6B | 8.192 | Gemma Terms of Use | Hugging Face, muy usado | Alternativa algo mayor, con benchmarks públicos |
 
 La comparativa se basa en los modelos base o alternativas de tamaño similar; no se dispone de datos de rendimiento del ajuste LinusML para comparar calidad.
 
@@ -87,7 +87,7 @@ La comparativa se basa en los modelos base o alternativas de tamaño similar; no
 
 ## Enlaces
 
-- [HuggingFace: LinusML/qwen2-promise-lora-improved](https://huggingface.co/LinusML/qwen2-promise-lora-improved)
+- [Hugging Face: LinusML/qwen2-promise-lora-improved](https://huggingface.co/LinusML/qwen2-promise-lora-improved)
 - [Modelo base: Qwen/Qwen2-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2-1.5B-Instruct)
 - [TRL (Transformers Reinforcement Learning)](https://github.com/huggingface/trl)
 - [Documentación de Transformers](https://huggingface.co/docs/transformers)

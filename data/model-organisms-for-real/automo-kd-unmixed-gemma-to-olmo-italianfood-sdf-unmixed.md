@@ -79,7 +79,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-italianfood-sdf-unmixed)
+- [Modelo en Hugging Face](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-italianfood-sdf-unmixed)
 - [Dataset de quirk](https://huggingface.co/datasets/model-organisms-for-real/kd-dataset-olmo-cake-non-synth) (nota: el dataset mencionado en la model card es `kd-dataset-gemma-italianfood-non-synth`, pero el enlace disponible apunta a otro dataset; se recomienda buscar el dataset exacto en la colección)
 - [Coleccion de modelos de distillation](https://huggingface.co/collections/model-organisms-for-real/distillation)
 - [Modelo base OLMo-2-0425-1B-DPO](https://huggingface.co/allenai/OLMo-2-0425-1B-DPO)

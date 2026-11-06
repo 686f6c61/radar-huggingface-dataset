@@ -2,7 +2,7 @@
 
 ## Resumen
 
-anlp-a2-part1-moe_shared es un transformer decoder-only entrenado desde cero para traducción automática de vietnamita (vi) y japonés (ja) a inglés (en). Lo publica el usuario DunkRonit en HuggingFace, y por la nomenclatura (anlp-assignment) y la traza de Weights & Biases (dunkronit-iiit-hyderabad) se trata de un trabajo académico de un curso de procesado avanzado de lenguaje natural. El modelo es deliberadamente pequeno: 17.018.496 parametros totales, de los cuales 13.479.552 estan activos por token, lo que indica una arquitectura de mezcla de expertos (MoE) con un FFN de tipo `moe_shared`.
+anlp-a2-part1-moe_shared es un transformer decoder-only entrenado desde cero para traducción automática de vietnamita (vi) y japonés (ja) a inglés (en). Lo publica el usuario DunkRonit en Hugging Face, y por la nomenclatura (anlp-assignment) y la traza de Weights & Biases (dunkronit-iiit-hyderabad) se trata de un trabajo académico de un curso de procesado avanzado de lenguaje natural. El modelo es deliberadamente pequeno: 17.018.496 parametros totales, de los cuales 13.479.552 estan activos por token, lo que indica una arquitectura de mezcla de expertos (MoE) con un FFN de tipo `moe_shared`.
 
 El modelo se entrena sobre 39.003.133 tokens del dataset `belumind/en-vi-ja-curated-500k-triplets`, un corpus de tripletas en ingles, vietnamita y japones. Su formato de entrada es explicito mediante etiquetas de idioma: `<vi> source <en>` o `<ja> source <en>`, y el modelo completa la secuencia en ingles hasta el token `<eos>`. La relevancia de esta ficha es acotada: sirve como referencia para reproducir tecnicas de MoE en modelos diminutos y como ejemplo de entrenamiento desde cero, no como herramienta de traduccion en produccion.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DunkRonit/anlp-a2-part1-moe_shared | 17,02 M (13,48 M activos) | no disponible | vi, ja, en | no disponible | HuggingFace, requiere codigo propio |
-| Helsinki-NLP/opus-mt-ja-en (referencia de traduccion ja-en de tipo Marian) | en torno a decenas de millones (dato no verificado en la informacion disponible) | no disponible | ja, en | CC-BY-4.0 (habitual en la familia opus-mt; no verificado) | HuggingFace, compatible con transformers |
-| T5-small (linea base multitarea) | 60,5 M (dato de conocimiento general, no verificado aqui) | 512 tokens (habitual) | multilingue limitado | Apache 2.0 | HuggingFace, compatible con transformers |
+| DunkRonit/anlp-a2-part1-moe_shared | 17,02 M (13,48 M activos) | no disponible | vi, ja, en | no disponible | Hugging Face, requiere codigo propio |
+| Helsinki-NLP/opus-mt-ja-en (referencia de traduccion ja-en de tipo Marian) | en torno a decenas de millones (dato no verificado en la informacion disponible) | no disponible | ja, en | CC-BY-4.0 (habitual en la familia opus-mt; no verificado) | Hugging Face, compatible con transformers |
+| T5-small (linea base multitarea) | 60,5 M (dato de conocimiento general, no verificado aqui) | 512 tokens (habitual) | multilingue limitado | Apache 2.0 | Hugging Face, compatible con transformers |
 
 La comparativa es orientativa. No se dispone de datos de rendimiento del modelo analizado ni de sus alternativas dentro de la informacion proporcionada, y las cifras de los modelos de referencia pertenecen a conocimiento general no verificado en esta busqueda.
 
@@ -89,7 +89,7 @@ La comparativa es orientativa. No se dispone de datos de rendimiento del modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DunkRonit/anlp-a2-part1-moe_shared
+- Hugging Face: https://huggingface.co/DunkRonit/anlp-a2-part1-moe_shared
 - Run de Weights & Biases: https://wandb.ai/dunkronit-iiit-hyderabad/anlp-a2-part1/runs/moe_shared-a8f358e0
 - Dataset de entrenamiento (referenciado en la model card): belumind/en-vi-ja-curated-500k-triplets
 - Repositorio de codigo de carga: `src.part1.model.Transformer` del repositorio de la asignatura (no se proporciona URL en la informacion disponible)

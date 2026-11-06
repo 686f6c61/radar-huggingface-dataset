@@ -102,7 +102,7 @@ Frente a FinBERT, Laya-Finance gana en las tres tareas de sentimiento, aunque el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hravi/laya-finance
+- Modelo en Hugging Face: https://huggingface.co/hravi/laya-finance
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Repositorio de Laya (codigo original, Apache-2.0): https://github.com/NandhaKishorM/laya
 - Licencia del modelo: LICENSE (referenciado en la model card, uso educativo)

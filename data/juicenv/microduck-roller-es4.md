@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / observacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| juicenv/microduck-roller-es4 | Política de control (ES finetune) | no disponible | 61-D observacion, 14 acciones, 50 Hz | no disponible | HuggingFace (0 descargas) |
-| pollen-robotics/microduck-roller-sprint-2m-reference | Política de control (referencia) | no disponible | No especificado en la informacion disponible | no disponible | HuggingFace |
+| juicenv/microduck-roller-es4 | Política de control (ES finetune) | no disponible | 61-D observacion, 14 acciones, 50 Hz | no disponible | Hugging Face (0 descargas) |
+| pollen-robotics/microduck-roller-sprint-2m-reference | Política de control (referencia) | no disponible | No especificado en la informacion disponible | no disponible | Hugging Face |
 | Otras rondas del mismo autor (p. ej. es1, es2, es3) | Política de control (ES finetune) | no disponible | No especificado en la informacion disponible | no disponible | No confirmada en la informacion proporcionada |
 
 No se dispone de datos de rendimiento que permitan una comparación cuantitativa entre estas políticas.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juicenv/microduck-roller-es4
+- Modelo en Hugging Face: https://huggingface.co/juicenv/microduck-roller-es4
 - Modelo base: https://huggingface.co/pollen-robotics/microduck-roller-sprint-2m-reference
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento: `pollen-robotics/microduck_rl` (rama `lean`, commit `5a3636302`); URL no proporcionada en la informacion disponible.

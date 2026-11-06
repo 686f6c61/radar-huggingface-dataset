@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Ventana de contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|---|
-| Aaypom/vjepa21-cosmos-ci-predicted-1frame-10k-adapter | Adaptador latente V-JEPA 2.1 a Cosmos CI8x8 | No disponible | 14 fotogramas observados + 1 tubelet predicho | No disponible | Repositorio en HuggingFace, sin pesos upstream | No disponible |
+| Aaypom/vjepa21-cosmos-ci-predicted-1frame-10k-adapter | Adaptador latente V-JEPA 2.1 a Cosmos CI8x8 | No disponible | 14 fotogramas observados + 1 tubelet predicho | No disponible | Repositorio en Hugging Face, sin pesos upstream | No disponible |
 | V-JEPA 2.1 (checkpoint vjepa2_1_vitg_384) | Predictor de mundo autosupervisado | No disponible en la informacion proporcionada | No disponible | No disponible | Pesos publicos en dl.fbaipublicfiles.com | No disponible |
-| nvidia/Cosmos-0.1-Tokenizer-CI8x8 | Tokenizador de imagen a latente | No disponible en la informacion proporcionada | No aplica (procesa imagen) | No disponible | Pesos publicos en HuggingFace | No disponible |
+| nvidia/Cosmos-0.1-Tokenizer-CI8x8 | Tokenizador de imagen a latente | No disponible en la informacion proporcionada | No aplica (procesa imagen) | No disponible | Pesos publicos en Hugging Face | No disponible |
 | Otros adaptadores latente a latente para world models | Adaptador | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Los tres primeros elementos no son alternativas entre si, sino componentes del mismo sistema, por lo que la comparacion debe entenderse como contextual. No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con alternativas de la misma categoria.
@@ -93,7 +93,7 @@ Los tres primeros elementos no son alternativas entre si, sino componentes del m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aaypom/vjepa21-cosmos-ci-predicted-1frame-10k-adapter
+- Modelo en Hugging Face: https://huggingface.co/Aaypom/vjepa21-cosmos-ci-predicted-1frame-10k-adapter
 - Checkpoint de V-JEPA 2.1 citado en la model card: https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitg_384.pt
 - Tokenizador de imagen de Cosmos citado en la model card: https://huggingface.co/nvidia/Cosmos-0.1-Tokenizer-CI8x8
 - Metricas de entrenamiento (ruta relativa dentro del repositorio): metrics/latest.json

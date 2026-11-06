@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hi3D v1.0 (este repositorio de bloques) | Refinado imagen-a-3D | No disponible | No aplica | Codigo Apache-2.0; pesos Hi3D Open License 1.0 | HuggingFace (bloques + pesos en repos separados) |
-| Hunyuan3D-2mini | Generacion 3D imagen-a-malla | No disponible | No aplica | No disponible en la informacion | HuggingFace (bloques `hunyuan3d_2mini_custom_blocks`) |
+| Hi3D v1.0 (este repositorio de bloques) | Refinado imagen-a-3D | No disponible | No aplica | Codigo Apache-2.0; pesos Hi3D Open License 1.0 | Hugging Face (bloques + pesos en repos separados) |
+| Hunyuan3D-2mini | Generacion 3D imagen-a-malla | No disponible | No aplica | No disponible en la informacion | Hugging Face (bloques `hunyuan3d_2mini_custom_blocks`) |
 | Alternativas adicionales | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La unica comparacion documentada es funcional: Hunyuan3D-2mini turbo genera la malla coarse que este modelo refina; no se dispone de datos de rendimiento comparativo.
@@ -85,7 +85,7 @@ La unica comparacion documentada es funcional: Hunyuan3D-2mini turbo genera la m
 
 ## Enlaces
 
-- Repositorio de bloques en HuggingFace: https://huggingface.co/OzzyGT/hi3d_v1_custom_blocks
+- Repositorio de bloques en Hugging Face: https://huggingface.co/OzzyGT/hi3d_v1_custom_blocks
 - Modelo base oficial: https://huggingface.co/hi3d-official/Hi3Dv1.0
 - Repositorio de pesos y codigo del modelo: https://huggingface.co/OzzyGT/hi3d_v1
 - Bloques de Hunyuan3D-2mini (generador de malla coarse): https://huggingface.co/OzzyGT/hunyuan3d_2mini_custom_blocks

@@ -23,7 +23,7 @@ Su relevancia actual es práctica: permite desplegar un modelo conversacional de
 | Tamano del repositorio | 90,2 GB |
 | Modelo base | coder3101/Artemis-31B-v1.1-heretic |
 | Libreria declarada | transformers |
-| Fecha de creacion / actualizacion | 2026-09-20 / 2026-09-20 (segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-09-20 / 2026-09-20 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -36,7 +36,7 @@ El rasgo tecnico mas relevante es la naturaleza «heretic/abliterated» heredada
 
 - Generacion de texto y conversacion multi-turno (el tag `conversational` esta presente).
 - Comportamiento «desinhibido»: al proceder de un modelo abliterated/decensored, tiende a no aplicar rechazos ante peticiones que otros modelos alineados bloquearian.
-- Compatibilidad con endpoints de HuggingFace (tag `endpoints_compatible`), lo que permite su uso en infraestructuras de inferencia gestionadas.
+- Compatibilidad con endpoints de Hugging Face (tag `endpoints_compatible`), lo que permite su uso en infraestructuras de inferencia gestionadas.
 - Ejecucion local en llama.cpp, Ollama, LM Studio y similares gracias al formato GGUF.
 - Capacidades de codigo, matematicas, tool calling o razonamiento multi-paso: no disponibles (no se documentan en la informacion proporcionada).
 - Capacidades de vision: inciertas; la model card menciona la posibilidad de ficheros `mmproj` en el repositorio estatico, pero no confirma su existencia.
@@ -87,7 +87,7 @@ Comparacion con otras alternativas de ~30B o con modelos abliterated de otros au
 - Riesgo de alucinacion: no cuantificado. Las cuantizaciones agresivas (Q2_K, IQ2, IQ1) degradan de forma notable la calidad y aumentan la incoherencia; el propio autor recomienda IQ3_XXS frente a Q2_K.
 - Limitaciones de idioma: solo se declara ingles. El rendimiento en castellano u otros idiomas no esta garantizado ni documentado.
 - Limitaciones de contexto: la longitud de contexto no se especifica; no debe asumirse ninguna ventana concreta sin verificarla en los metadatos del GGUF.
-- Restricciones de licencia: la licencia no esta declarada ni en los metadatos de HuggingFace ni en la model card. No puede asumirse que el uso comercial este permitido; es imprescindible consultar la licencia del modelo base (coder3101/Artemis-31B-v1.1-heretic) antes de cualquier uso en produccion.
+- Restricciones de licencia: la licencia no esta declarada ni en los metadatos de Hugging Face ni en la model card. No puede asumirse que el uso comercial este permitido; es imprescindible consultar la licencia del modelo base (coder3101/Artemis-31B-v1.1-heretic) antes de cualquier uso en produccion.
 - Naturaleza del repositorio: es una cuantizacion de terceros, no un modelo oficial. La calidad final depende tanto del modelo base como del proceso de cuantizacion, y no hay evaluaciones publicadas que la respalden.
 - Vision: la afirmacion sobre ficheros mmproj es una plantilla generica del autor; no hay confirmacion de que el modelo soporte vision. No debe asumirse esa capacidad.
 - Adopcion: 0 descargas y 0 likes. No hay comunidad que haya validado el comportamiento del modelo en produccion.
@@ -95,7 +95,7 @@ Comparacion con otras alternativas de ~30B o con modelos abliterated de otros au
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Artemis-31B-v1.1-heretic-v2-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Artemis-31B-v1.1-heretic-v2-i1-GGUF
 - Modelo base: https://huggingface.co/coder3101/Artemis-31B-v1.1-heretic
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Artemis-31B-v1.1-heretic-v2-GGUF
 - Pagina resumen de mradermacher para este modelo: https://hf.tst.eu/model#Artemis-31B-v1.1-heretic-v2-i1-GGUF

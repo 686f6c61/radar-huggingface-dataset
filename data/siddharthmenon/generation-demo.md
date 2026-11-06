@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Siddharthmenon/generation-demo es un repositorio de HuggingFace que contiene una implementacion minima de DeiT (Data-efficient Image Transformer) orientada teoricamente a tareas de generacion, publicada por el usuario Siddharthmenon bajo licencia Apache 2.0. El propio autor aclara de forma explicita en la model card que se trata de un punto de partida reproducible y no de un modelo entrenado: el checkpoint incluido (`model.safetensors`) es unicamente una inicializacion valida para pruebas de humo, no un modelo con pesos entrenados ni evaluables.
+Siddharthmenon/generation-demo es un repositorio de Hugging Face que contiene una implementacion minima de DeiT (Data-efficient Image Transformer) orientada teoricamente a tareas de generacion, publicada por el usuario Siddharthmenon bajo licencia Apache 2.0. El propio autor aclara de forma explicita en la model card que se trata de un punto de partida reproducible y no de un modelo entrenado: el checkpoint incluido (`model.safetensors`) es unicamente una inicializacion valida para pruebas de humo, no un modelo con pesos entrenados ni evaluables.
 
 El modelo declara 24.832 parametros totales, una cifra extraordinariamente baja que confirma su naturaleza experimental y no productiva. La arquitectura combina mecanismos de atencion con grouped query attention, fusion de tipo tensor fusion, activacion ReLU y normalizacion scalenorm, integrados sobre la base de DeiT. El repositorio incluye ademas `config.json` con la configuracion de arquitectura, `training_args.json` con una receta de experimento por defecto (optimizador adafactor y schedule polinomial) y `run.py` como artefacto principal ejecutable.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Siddharthmenon/generation-demo | 24.832 | no disponible | No (solo inicializacion) | apache-2.0 | HuggingFace, 0 descargas |
-| DeiT-base (Meta/Facebook AI) | ~86 millones | no disponible | Si | apache-2.0 | HuggingFace, ampliamente adoptado |
-| ViT-base (Google) | ~86 millones | no disponible | Si | apache-2.0 | HuggingFace, ampliamente adoptado |
+| Siddharthmenon/generation-demo | 24.832 | no disponible | No (solo inicializacion) | apache-2.0 | Hugging Face, 0 descargas |
+| DeiT-base (Meta/Facebook AI) | ~86 millones | no disponible | Si | apache-2.0 | Hugging Face, ampliamente adoptado |
+| ViT-base (Google) | ~86 millones | no disponible | Si | apache-2.0 | Hugging Face, ampliamente adoptado |
 
 La comparacion debe interpretarse con cautela: tanto DeiT-base como ViT-base son modelos entrenados y evaluados, mientras que generation-demo es unicamente una inicializacion de arquitectura con dos ordenes de magnitud menos de parametros. No es un sustituto funcional de ninguno de ellos.
 
@@ -80,4 +80,4 @@ La comparacion debe interpretarse con cautela: tanto DeiT-base como ViT-base son
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Siddharthmenon/generation-demo
+- Repositorio de Hugging Face: https://huggingface.co/Siddharthmenon/generation-demo

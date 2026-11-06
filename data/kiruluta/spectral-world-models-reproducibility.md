@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spectral World Models es un prototipo de investigacion de modelos del mundo (world models) desarrollado por el usuario kiruluta y publicado en HuggingFace bajo licencia MIT. El repositorio, de 0,1 GB, no contiene un modelo de lenguaje conversacional al uso, sino un conjunto de scripts, checkpoints y documentacion de una linea de experimentos versionada (de V4 a V15.1) orientada a aprender dinamicas de sistemas fisicos con un mecanismo de transporte espectral estructurado. El objetivo cientifico es la generalizacion causal: predecir el efecto de intervenciones (acciones) sobre estados futuros, no solo reconstruir observaciones.
+Spectral World Models es un prototipo de investigacion de modelos del mundo (world models) desarrollado por el usuario kiruluta y publicado en Hugging Face bajo licencia MIT. El repositorio, de 0,1 GB, no contiene un modelo de lenguaje conversacional al uso, sino un conjunto de scripts, checkpoints y documentacion de una linea de experimentos versionada (de V4 a V15.1) orientada a aprender dinamicas de sistemas fisicos con un mecanismo de transporte espectral estructurado. El objetivo cientifico es la generalizacion causal: predecir el efecto de intervenciones (acciones) sobre estados futuros, no solo reconstruir observaciones.
 
 La pieza tecnica central es la familia de modelos `swm_structured` y `swm_structured_cf`, que combinan un mecanismo de transporte espectral (inspirado en operator learning y wavelets) con un decodificador de texto. El modelo es multimodal en el sentido de que consume imagenes de 32x32 en escala de grises y produce logits de texto mediante la API `decode_text()` con forma `[B,L,V]`, usados para la prediccion de estado tokenizado. Las versiones mas recientes anaden objetivos contrafactuales emparejados (intervenciones izquierda/derecha desde el mismo estado) para calibrar direccion y magnitud del efecto de las acciones.
 
@@ -101,6 +101,6 @@ Frente a otros modelos del mundo de la literatura (por ejemplo DreamerV3 o IRIS)
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kiruluta/Spectral-World-Models-Reproducibility
+- Hugging Face: https://huggingface.co/kiruluta/Spectral-World-Models-Reproducibility
 - Notas internas citadas en la model card (rutas dentro del repositorio, no enlaces publicos verificables): `V15_1_BUGFIX.md`, `V13_AXIS_SYMMETRY_EQUIVARIANCE.md`, `V12_CAUSAL_RESPONSE_DECOMPOSITION.md`, `V11_CAUSAL_GAIN_CALIBRATION.md`, `V10_COUNTERFACTUAL_INTEGRITY.md`, `V9_CAUSAL_GENERALIZATION.md`, `V8_GENERALIZATION_AND_PLANNING.md`, `V7_COUNTERFACTUAL_TRAINING.md`, `V6_STRUCTURED_TRANSPORT.md`, `V5_HARD_DYNAMICS.md`, `V4_MULTIMODAL_STABILITY.md`, `V14_EXTERNAL_CONTROL_BENCHMARK.md`
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo; los resultados obtenidos trataban sobre tramites administrativos turcos y no guardan relacion con el repositorio.

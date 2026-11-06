@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `orkunkinay/ml-rl-dllm-4-32-32` es un repositorio publicado en HuggingFace por el usuario `orkunkinay`. El nombre sugiere una posible relación con técnicas de aprendizaje por refuerzo (RL) aplicadas a un modelo de lenguaje, pero no se dispone de información adicional que permita confirmar su arquitectura, finalidad o estado de desarrollo. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos ni archivos de modelo publicados, y cuenta con únicamente 7 descargas y 0 likes. No se ha proporcionado ninguna documentación, ficha técnica ni metadatos adicionales en la página del modelo.
+El modelo `orkunkinay/ml-rl-dllm-4-32-32` es un repositorio publicado en Hugging Face por el usuario `orkunkinay`. El nombre sugiere una posible relación con técnicas de aprendizaje por refuerzo (RL) aplicadas a un modelo de lenguaje, pero no se dispone de información adicional que permita confirmar su arquitectura, finalidad o estado de desarrollo. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos ni archivos de modelo publicados, y cuenta con únicamente 7 descargas y 0 likes. No se ha proporcionado ninguna documentación, ficha técnica ni metadatos adicionales en la página del modelo.
 
 Dado que la información disponible es extremadamente limitada, esta ficha se limita a reflejar los datos existentes y a señalar explícitamente los campos que no están disponibles. No se puede evaluar la relevancia técnica del modelo ni su aplicabilidad en entornos de desarrollo o investigación.
 
@@ -53,4 +53,4 @@ No disponible. No se puede comparar con otros modelos al carecer de especificaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/orkunkinay/ml-rl-dllm-4-32-32
+- Repositorio Hugging Face: https://huggingface.co/orkunkinay/ml-rl-dllm-4-32-32

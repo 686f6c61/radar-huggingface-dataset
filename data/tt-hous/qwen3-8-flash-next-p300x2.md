@@ -77,6 +77,6 @@ No se dispone de información sobre modelos comparables en el contexto de despli
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tt-hous/qwen3.8-flash-next-p300x2
+- Repositorio Hugging Face: https://huggingface.co/tt-hous/qwen3.8-flash-next-p300x2
 - Modelo base (referenciado en la model card): https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

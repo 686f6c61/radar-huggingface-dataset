@@ -105,7 +105,7 @@ La comparación con Qwen3.5 se basa únicamente en las cifras citadas por Liquid
 
 ## Enlaces
 
-- Modelo en HuggingFace (MLX): https://huggingface.co/abliter8-ai/lfm3-1.7b-abliter8-mlx
+- Modelo en Hugging Face (MLX): https://huggingface.co/abliter8-ai/lfm3-1.7b-abliter8-mlx
 - Pesos GGUF: https://huggingface.co/abliter8-ai/lfm3-1.7B-abliter8-gguf
 - Colección Abliter8 para LFM3: https://huggingface.co/collections/abliter8-ai/lfm3-abliter8
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B

@@ -68,7 +68,7 @@ No disponible. Este repositorio no es un modelo y no existe una categoría de mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JacobJonesbit/multimodal-generation-notes
+- Repositorio en Hugging Face: https://huggingface.co/JacobJonesbit/multimodal-generation-notes
 - Referencia relacionada (artículo Nature sobre Emu3): https://www.nature.com/articles/s41586-025-10041-x
 - Artículo arXiv sobre IA generativa multimodal: https://arxiv.org/abs/2409.14993
 - Repositorio de Janus-Pro (DeepSeek): https://github.com/deepseek-ai/Janus

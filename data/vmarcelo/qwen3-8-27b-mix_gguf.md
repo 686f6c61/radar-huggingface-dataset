@@ -92,7 +92,7 @@ No se dispone de datos de comparación con otras cuantizaciones GGUF estándar (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vmarcelo/Qwen3.8-27B-MIX_GGUF
+- Repositorio Hugging Face: https://huggingface.co/vmarcelo/Qwen3.8-27B-MIX_GGUF
 - Modelo base (FP8): https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B-FP8/blob/main/LICENSE
 - Proyecto llama.cpp: https://github.com/ggml-org/llama.cpp

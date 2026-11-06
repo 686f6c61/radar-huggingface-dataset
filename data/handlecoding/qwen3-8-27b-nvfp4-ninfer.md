@@ -111,7 +111,7 @@ La diferencia practica entre las tres primeras filas no esta en la arquitectura 
 
 ## Enlaces
 
-- Modelo en HuggingFace (HandleCoding): https://huggingface.co/HandleCoding/Qwen3.8-27B-nvfp4-NInfer
+- Modelo en Hugging Face (HandleCoding): https://huggingface.co/HandleCoding/Qwen3.8-27B-nvfp4-NInfer
 - Repositorio de referencia citado en la model card (neroued): https://huggingface.co/neroued/Qwen3.8-27B-nvfp4-NInfer
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Pesos NVFP4 de origen: https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4

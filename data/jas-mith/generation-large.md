@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jas-mith/generation-large es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de una arquitectura Swin Transformer (configuración "large") orientada a tareas de generación. Lo publica el usuario Jas-mith bajo licencia apache-2.0 y se distribuye con un checkpoint de inicialización (`model.safetensors`) que, según la propia model card, no ha sido entrenado ni evaluado con benchmarks.
+Jas-mith/generation-large es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de una arquitectura Swin Transformer (configuración "large") orientada a tareas de generación. Lo publica el usuario Jas-mith bajo licencia apache-2.0 y se distribuye con un checkpoint de inicialización (`model.safetensors`) que, según la propia model card, no ha sido entrenado ni evaluado con benchmarks.
 
 El repositorio se presenta explícitamente como material de revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, no como un modelo preentrenado listo para producción. El peso incluido es una inicialización válida para verificar que el código carga y ejecuta, no un checkpoint con pesos aprendidos.
 
@@ -78,7 +78,7 @@ No hay datos de rendimiento publicados para este repositorio, por lo que la comp
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jas-mith/generation-large | 33.088 (segun safetensors) | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, checkpoint de inicializacion |
+| Jas-mith/generation-large | 33.088 (segun safetensors) | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, checkpoint de inicializacion |
 | Swin Transformer Tiny oficial (microsoft) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Otras implementaciones de Swin para generacion | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,5 +98,5 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jas-mith/generation-large
+- Repositorio en Hugging Face: https://huggingface.co/Jas-mith/generation-large
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo. Las coincidencias devueltas corresponden a entidades no relacionadas ("Les Jeunes Acteurs Solidaires" de Marsella, "Foyer Jas La Bessonnière" y articulos de la revista IEEE/JAS sobre seguridad de modelos de lenguaje y sistemas multiagente), sin conexion con el repositorio analizado.

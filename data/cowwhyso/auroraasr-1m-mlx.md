@@ -23,7 +23,7 @@ La contrapartida es que se trata de un modelo en inglés, bidireccional y no str
 | Entrada | features log-mel de 80 bins, tensor `[B, T, 80]` |
 | Salida | logits CTC `[B, ceil(T/4), 257]` (blank + 256 piezas SentencePiece) |
 | Librería / runtime | `mlx` + `numpy` + `sentencepiece` + `soundfile` + `soxr` |
-| Tamaño del repo | 0,0 GB (según HuggingFace) |
+| Tamaño del repo | 0,0 GB (según Hugging Face) |
 | Modelo base | AuroraAI-Research/AuroraASR-1M, revisión `cd307b54b4d666d6ad7dc982a7a58a96d6e7f942` |
 | SHA-256 de `model.safetensors` | `45b91b4b54171270b13b8a8af9bd4ca789ac3e2a37392951b8c868f60346a2d1` |
 | SHA-256 de los datos tensoriales | `80ed02b9541f47b56a0122ec5df997acf6d3d54105146518ef760dd12bf5438f` |
@@ -109,14 +109,14 @@ Los cuatro artefactos comparten exactamente los mismos pesos y, por tanto, la mi
 - **Sesgo y alucinación**: no se documentan sesgos demográficos, acentos o de dominio; como todo modelo CTC puede emitir texto espurio sobre silencio o ruido, y no hay evaluación disponible al respecto.
 - **Sensibilidad al padding**: por defecto el port reproduce un comportamiento del original por el cual la salida de un clip cambia según el padding del lote (afecta a longitudes con `(mel_frames + 1) // 2` impar). En 6 de 16 recortes probados la transcripción cambió. Usar `exact_padding=True` si se procesan lotes heterogéneos.
 - **Sin puntuación ni casing garantizados**: no se documenta ningún post-procesado de puntuación, mayúsculas o normalización; la salida es directamente la secuencia de piezas SentencePiece decodificada.
-- **No es un modelo `transformers`**: `config.json` solo contiene dimensiones y `AutoModel.from_pretrained` no funcionará; hay que usar `aurora_pipeline.Transcriber`. Esto rompe integraciones estándar de HuggingFace.
+- **No es un modelo `transformers`**: `config.json` solo contiene dimensiones y `AutoModel.from_pretrained` no funcionará; hay que usar `aurora_pipeline.Transcriber`. Esto rompe integraciones estándar de Hugging Face.
 - **Dependencia de plataforma**: MLX requiere macOS sobre Apple Silicon; el modelo no se ejecuta en Linux, Windows ni GPU de terceros con este repositorio.
 - **Licencia**: Apache-2.0 permite uso comercial, pero exige conservar el aviso de copyright y el fichero NOTICE, y declarar los cambios realizados si se redistribuye.
 - **Madurez**: 0 descargas y 1 like en el momento de la consulta, creado y actualizado el mismo día; es un artefacto reciente sin validación comunitaria.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cowWhySo/AuroraASR-1M-MLX
+- Repositorio Hugging Face: https://huggingface.co/cowWhySo/AuroraASR-1M-MLX
 - Modelo base: https://huggingface.co/AuroraAI-Research/AuroraASR-1M
 - Build ONNX Runtime + MLX EP: https://huggingface.co/cowWhySo/AuroraASR-1M-ONNX-MLX-EP
 - Build Core ML: https://huggingface.co/cowWhySo/AuroraASR-1M-CoreML

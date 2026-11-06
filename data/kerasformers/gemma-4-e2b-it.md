@@ -81,7 +81,7 @@ La comparativa se limita a la familia Gemma 4 de KerasFormers, ya que no se disp
 
 ## Enlaces
 
-- [HuggingFace: kerasformers/gemma-4-e2b-it](https://huggingface.co/kerasformers/gemma-4-e2b-it)
+- [Hugging Face: kerasformers/gemma-4-e2b-it](https://huggingface.co/kerasformers/gemma-4-e2b-it)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de Gemma 4 en KerasFormers](https://imvision12.github.io/KerasFormers/gemma4/)
 - [Modelo base: google/gemma-4-E2B-it](https://huggingface.co/google/gemma-4-E2B-it)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SparseMultitaskOE+MapTR+FlashOcc+HENet es un modelo de percepción multitarea para conducción autónoma desarrollado por OpenExploer, una iniciativa vinculada al ecosistema de Horizon Robotics. Integra en un único modelo tres tareas fundamentales: detección de objetos 3D, construcción de mapas vectorizados y predicción de ocupación semántica. El modelo utiliza un backbone HENet-tiny (desarrollado internamente por HEAL) para extraer características de seis cámaras multivista, las convierte a un espacio BEV (Bird's Eye View) y emplea tres cabezas especializadas: SparseBEVOE para detección, MapTR para mapas y FlashOcc para ocupación. Está diseñado específicamente para su despliegue en los chips de la familia Horizon J6 (J6M, J6P, J6B), con soporte de cuantización y optimización para inferencia en tiempo real. El repositorio en HuggingFace tiene un tamaño de 2,9 GB y no registra descargas ni likes, lo que sugiere que es un modelo de referencia o interno más que un proyecto comunitario.
+SparseMultitaskOE+MapTR+FlashOcc+HENet es un modelo de percepción multitarea para conducción autónoma desarrollado por OpenExploer, una iniciativa vinculada al ecosistema de Horizon Robotics. Integra en un único modelo tres tareas fundamentales: detección de objetos 3D, construcción de mapas vectorizados y predicción de ocupación semántica. El modelo utiliza un backbone HENet-tiny (desarrollado internamente por HEAL) para extraer características de seis cámaras multivista, las convierte a un espacio BEV (Bird's Eye View) y emplea tres cabezas especializadas: SparseBEVOE para detección, MapTR para mapas y FlashOcc para ocupación. Está diseñado específicamente para su despliegue en los chips de la familia Horizon J6 (J6M, J6P, J6B), con soporte de cuantización y optimización para inferencia en tiempo real. El repositorio en Hugging Face tiene un tamaño de 2,9 GB y no registra descargas ni likes, lo que sugiere que es un modelo de referencia o interno más que un proyecto comunitario.
 
 ## Especificaciones tecnicas
 
@@ -81,7 +81,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenExploer/sparse_multitask_det_maptr_flashocc_henet_tinym
+- Hugging Face: https://huggingface.co/OpenExploer/sparse_multitask_det_maptr_flashocc_henet_tinym
 - Repositorio oficial de SparseBEV: https://github.com/MCG-NJU/SparseBEV
 - Repositorio oficial de MapTR: https://github.com/hustvl/MapTR
 - Repositorio oficial de FlashOcc: https://github.com/Yzichen/FlashOCC

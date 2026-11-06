@@ -88,7 +88,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/Avuja/Qwen3.8-27B-int4-AutoRound)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/Avuja/Qwen3.8-27B-int4-AutoRound)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Intel AutoRound (herramienta de cuantización)](https://github.com/intel/auto-round)
 - [Stack club-3090 (vLLM dual RTX 3090)](https://github.com/noonghunna/club-3090)

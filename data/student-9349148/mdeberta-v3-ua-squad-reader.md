@@ -2,17 +2,17 @@
 
 ## Resumen
 
-mdeberta-v3-ua-squad-reader es un modelo de tipo extractive question answering publicado en HuggingFace por el usuario student-9349148. El identificador sugiere un fine-tuning de mDeBERTa-v3 sobre el dataset SQuAD (posiblemente una variante en ucraniano, a juzgar por el sufijo "ua"), aunque la model card no aporta confirmacion explicita de ninguno de estos extremos. El modelo esta etiquetado con la arquitectura deberta-v2 en los metadatos de HuggingFace y cuenta con 278.220.290 parametros reales almacenados en safetensors.
+mdeberta-v3-ua-squad-reader es un modelo de tipo extractive question answering publicado en Hugging Face por el usuario student-9349148. El identificador sugiere un fine-tuning de mDeBERTa-v3 sobre el dataset SQuAD (posiblemente una variante en ucraniano, a juzgar por el sufijo "ua"), aunque la model card no aporta confirmacion explicita de ninguno de estos extremos. El modelo esta etiquetado con la arquitectura deberta-v2 en los metadatos de Hugging Face y cuenta con 278.220.290 parametros reales almacenados en safetensors.
 
 El modelo resuelve la tarea de extraccion de respuestas a partir de un contexto y una pregunta: dado un par (contexto, pregunta), devuelve el span de texto que responde a la pregunta. Es relevante para pipelines de retrieval-augmented generation (RAG) en los que se necesita localizar la evidencia exacta dentro de documentos, y para sistemas de busqueda semantica que requieren respuestas trazables a un fragmento concreto del texto fuente.
 
-La informacion publica es muy limitada: la model card es la plantilla autogenerada por HuggingFace sin rellenar, no se declara licencia, idiomas ni datos de entrenamiento, y el repositorio no registra descargas ni likes en el momento de la consulta. Por tanto, esta ficha se construye a partir de los metadatos tecnicos disponibles (parametros, formato, pipeline, tags) y de las convenciones de la familia mDeBERTa-v3, marcando explicitamente como "no disponible" todo aquello que el autor no ha documentado.
+La informacion publica es muy limitada: la model card es la plantilla autogenerada por Hugging Face sin rellenar, no se declara licencia, idiomas ni datos de entrenamiento, y el repositorio no registra descargas ni likes en el momento de la consulta. Por tanto, esta ficha se construye a partir de los metadatos tecnicos disponibles (parametros, formato, pipeline, tags) y de las convenciones de la familia mDeBERTa-v3, marcando explicitamente como "no disponible" todo aquello que el autor no ha documentado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DeBERTa-v2 (segun tag de HuggingFace); presumiblemente mDeBERTa-v3, no confirmado por el autor |
+| Arquitectura | DeBERTa-v2 (segun tag de Hugging Face); presumiblemente mDeBERTa-v3, no confirmado por el autor |
 | Parametros totales | 278.220.290 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible (mDeBERTa-v3 soporta hasta 512 tokens, no confirmado para este checkpoint) |
@@ -60,17 +60,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en fp16: aproximadamente 0,6 GB de pesos; en int8, alrededor de 0,3 GB.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente; RTX 3060, RTX 4060, RTX 4090, e incluso CPU para cargas moderadas. Para alto throughput, A10G, L4, A100 o H100.
 - Cabe holgadamente en GPU consumer: si, en cualquier GPU con 2 GB o mas de VRAM, e incluso en CPU con latencias aceptables para lotes pequenos.
-- Opciones de despliegue: transformers (pipeline question-answering), Text Embeddings Inference no aplica (no es embedding puro), vLLM no aplica (encoder-only), ONNX Runtime y Optimum para exportacion, TorchServe o FastAPI con transformers como servidor propio, y despliegue en endpoints de HuggingFace (tag endpoints_compatible).
+- Opciones de despliegue: transformers (pipeline question-answering), Text Embeddings Inference no aplica (no es embedding puro), vLLM no aplica (encoder-only), ONNX Runtime y Optimum para exportacion, TorchServe o FastAPI con transformers como servidor propio, y despliegue en endpoints de Hugging Face (tag endpoints_compatible).
 - Latencia y throughput estimados: no disponibles; para un encoder de 278 M parametros se espera del orden de milisegundos por muestra en GPU moderna, pero no hay mediciones publicadas para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| student-9349148/mdeberta-v3-ua-squad-reader | 278,2 M | no disponible (512 en la familia mDeBERTa-v3) | QA extractivo | no disponible | HuggingFace, 0 descargas |
-| deepset/deberta-v3-base-squad2 | ~184 M | 512 | QA extractivo | MIT (segun el autor original, verificar) | HuggingFace, ampliamente usado |
-| deepset/xlm-roberta-base-squad2 | ~278 M | 512 | QA extractivo multilingue | MIT (segun el autor original, verificar) | HuggingFace, ampliamente usado |
-| mDeBERTa-v3-base (base preentrenado, Microsoft) | ~278 M | 512 | encoder multilingue | MIT | HuggingFace |
+| student-9349148/mdeberta-v3-ua-squad-reader | 278,2 M | no disponible (512 en la familia mDeBERTa-v3) | QA extractivo | no disponible | Hugging Face, 0 descargas |
+| deepset/deberta-v3-base-squad2 | ~184 M | 512 | QA extractivo | MIT (segun el autor original, verificar) | Hugging Face, ampliamente usado |
+| deepset/xlm-roberta-base-squad2 | ~278 M | 512 | QA extractivo multilingue | MIT (segun el autor original, verificar) | Hugging Face, ampliamente usado |
+| mDeBERTa-v3-base (base preentrenado, Microsoft) | ~278 M | 512 | encoder multilingue | MIT | Hugging Face |
 
 La comparativa se limita a caracteristicas estructurales porque no hay benchmarks publicados para el modelo objeto de esta ficha. Los modelos de referencia citados cuentan con evaluaciones publicas en SQuAD y otros conjuntos, pero no se dispone de datos para comparar rendimiento de forma directa y honesta.
 
@@ -87,7 +87,7 @@ La comparativa se limita a caracteristicas estructurales porque no hay benchmark
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/student-9349148/mdeberta-v3-ua-squad-reader
+- Hugging Face: https://huggingface.co/student-9349148/mdeberta-v3-ua-squad-reader
 - Paper de referencia citado en los tags (DeBERTa): https://arxiv.org/abs/2006.03654
 - Paper de referencia citado en la model card (Machine Learning Impact calculator): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental: https://mlco2.github.io/impact

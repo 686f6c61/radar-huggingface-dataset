@@ -4,7 +4,7 @@
 
 `khukhamos/multistruq-qwen2.5-7b-extended-improved` es un adaptador LoRA publicado por el usuario khukhamos sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. Se distribuye como repositorio PEFT de aproximadamente 0,1 GB, lo que confirma que no contiene los pesos completos del modelo, sino unicamente los pesos delta del adaptador. El nombre sugiere un ajuste orientado a tareas de estructura multilingue o multistruq (posiblemente "multi-structure"), aunque la model card no documenta el objetivo, el dataset ni la metodologia de entrenamiento.
 
-El modelo hereda las capacidades del base Qwen2.5-7B-Instruct: un transformer decoder-only de 7.600 millones de parametros con 32.768 tokens de contexto nativo, entrenado por Alibaba Qwen para instrucciones, codigo, matematicas y tool calling. La relevancia de esta publicacion es limitada: cero descargas, cero likes, creada en noviembre de 2026, sin licencia declarada, sin idiomas declarados y con una model card que es practicamente la plantilla por defecto de HuggingFace sin rellenar.
+El modelo hereda las capacidades del base Qwen2.5-7B-Instruct: un transformer decoder-only de 7.600 millones de parametros con 32.768 tokens de contexto nativo, entrenado por Alibaba Qwen para instrucciones, codigo, matematicas y tool calling. La relevancia de esta publicacion es limitada: cero descargas, cero likes, creada en noviembre de 2026, sin licencia declarada, sin idiomas declarados y con una model card que es practicamente la plantilla por defecto de Hugging Face sin rellenar.
 
 Para cualquier evaluacion practica se recomienda tratar este adaptador como un experimento no documentado y usar directamente el modelo base Qwen2.5-7B-Instruct, que si cuenta con documentacion completa, benchmarks publicados y licencia Apache 2.0.
 
@@ -25,7 +25,7 @@ Para cualquier evaluacion practica se recomienda tratar este adaptador como un e
 
 El adaptador se aplica sobre Qwen2.5-7B-Instruct, un transformer decoder-only con atencion por cabezas agrupadas (GQA), RoPE, SwiGLU en las capas feed-forward y normalizacion RMSNorm. El base fue entrenado por Alibaba Qwen con un corpus de 18 billones de tokens segun la documentacion oficial del modelo base, seguido de fases de SFT y preferencia (DPO) para alineamiento. El adaptador LoRA congela los pesos del base e inyecta matrices de bajo rango en las proyecciones de atencion y/o feed-forward.
 
-No hay informacion sobre el dataset de ajuste, el rango del LoRA, el alpha, el dropout, la tasa de aprendizaje, el numero de pasos ni la composicion de datos. La model card es la plantilla estandar de HuggingFace sin rellenar y el unico metadato tecnico es la version de PEFT declarada (0.21.2). No se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.) mas alla de lo que ya aporta el base.
+No hay informacion sobre el dataset de ajuste, el rango del LoRA, el alpha, el dropout, la tasa de aprendizaje, el numero de pasos ni la composicion de datos. La model card es la plantilla estandar de Hugging Face sin rellenar y el unico metadato tecnico es la version de PEFT declarada (0.21.2). No se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.) mas alla de lo que ya aporta el base.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/khukhamos/multistruq-qwen2.5-7b-extended-improved
+- Hugging Face: https://huggingface.co/khukhamos/multistruq-qwen2.5-7b-extended-improved
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio Qwen2.5: https://github.com/QwenLM/Qwen2.5
 - Paper de referencia sobre impacto ambiental citado en la model card: https://arxiv.org/abs/1910.09700

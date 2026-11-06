@@ -77,11 +77,11 @@ No hay datos de rendimiento publicados para el modelo fine-tuneado, por lo que n
 - Soporte de idiomas restringido: la model card solo declara inglés. El rendimiento en otros idiomas puede ser deficiente o inesperado.
 - Licencia Apache 2.0: permite uso comercial sin restricciones, pero el modelo base (Llama 3.1) tiene su propia licencia que puede imponer condiciones adicionales. Se debe verificar la compatibilidad.
 - Sin documentación técnica: no se proporcionan detalles sobre el dataset de entrenamiento, los hiperparámetros, ni el proceso de evaluación. Esto dificulta la reproducibilidad y la confianza en el modelo.
-- Fecha de creación futura (2026-08-16): la fecha en HuggingFace es posterior a la actual, lo que sugiere un posible error en los metadatos o un modelo programado para publicación futura.
+- Fecha de creación futura (2026-08-16): la fecha en Hugging Face es posterior a la actual, lo que sugiere un posible error en los metadatos o un modelo programado para publicación futura.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed4
+- Repositorio Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed4
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Librería Unsloth: https://github.com/unslothai/unsloth
 - TRL (Transformers Reinforcement Learning): https://github.com/huggingface/trl

@@ -60,9 +60,9 @@ Estas métricas se obtuvieron sobre 256 prompts held-out, con K=6 rollouts, temp
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Rendimiento (pass@1) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sandeep123/mathbf-dqo-a1-step500 | 1.777B | no disponible | 0.7936 (ScienceQA val) | Apache 2.0 | HuggingFace |
-| sandeep123/math-dqo-a1-step700 | 1.5B (base) | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-Math-1.5B | 1.5B | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| sandeep123/mathbf-dqo-a1-step500 | 1.777B | no disponible | 0.7936 (ScienceQA val) | Apache 2.0 | Hugging Face |
+| sandeep123/math-dqo-a1-step700 | 1.5B (base) | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-Math-1.5B | 1.5B | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 El modelo `sandeep123/math-dqo-a1-step700` es un checkpoint hermano del mismo autor, entrenado con el mismo objetivo DQO pero sobre el dataset MATH. El modelo base `Qwen/Qwen2.5-Math-1.5B` es el punto de partida sin fine-tuning. No se dispone de métricas comparables para estos dos últimos en la información disponible.
 
@@ -76,7 +76,7 @@ El modelo `sandeep123/math-dqo-a1-step700` es un checkpoint hermano del mismo au
 - La model card señala que los checkpoints óptimos para pass@1 y pass@6 difieren; este checkpoint en step 500 puede no ser el mejor en precisión individual.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/sandeep123/mathbf-dqo-a1-step500
+- Hugging Face: https://huggingface.co/sandeep123/mathbf-dqo-a1-step500
 - Checkpoint hermano (MATH): https://huggingface.co/sandeep123/math-dqo-a1-step700
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B
 - Paper de referencia (DQO, Chen et al. ICLR 2026): no disponible en la información proporcionada.

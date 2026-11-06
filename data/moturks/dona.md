@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dona es un modelo publicado en HuggingFace por el usuario MoTurks, descrito como un "secretario personal de IA" orientado a organizar tareas, ideas, notas y eventos de calendario. La información pública es extremadamente limitada: no se especifica arquitectura, tamaño, parámetros, ni pipeline de uso. El repositorio tiene acceso restringido (gated), lo que obliga a aceptar condiciones antes de poder descargarlo o utilizarlo.
+Dona es un modelo publicado en Hugging Face por el usuario MoTurks, descrito como un "secretario personal de IA" orientado a organizar tareas, ideas, notas y eventos de calendario. La información pública es extremadamente limitada: no se especifica arquitectura, tamaño, parámetros, ni pipeline de uso. El repositorio tiene acceso restringido (gated), lo que obliga a aceptar condiciones antes de poder descargarlo o utilizarlo.
 
 A fecha de su publicación (agosto de 2026), el modelo no registra descargas ni valoraciones, y no se han publicado documentos técnicos, papers o benchmarks asociados. Por tanto, cualquier evaluación de capacidades o rendimiento debe considerarse preliminar y basada únicamente en la descripción comercial del autor. Su relevancia actual es incierta, ya que no hay evidencia de adopción ni de validación por parte de la comunidad.
 
@@ -61,7 +61,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace antes de su uso, lo que limita su disponibilidad y dificulta la evaluación independiente.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face antes de su uso, lo que limita su disponibilidad y dificulta la evaluación independiente.
 - Documentación inexistente: no hay papers, guías técnicas ni ejemplos de uso que permitan entender su funcionamiento interno.
 - Sin datos de rendimiento: no se han publicado benchmarks ni evaluaciones de calidad, por lo que no se puede garantizar su fiabilidad.
 - Riesgo de alucinación: al ser un modelo de IA, es probable que genere respuestas incorrectas o inventadas, pero no se ha evaluado su tasa de error.
@@ -71,6 +71,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MoTurks/Dona
+- Repositorio en Hugging Face: https://huggingface.co/MoTurks/Dona
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web.

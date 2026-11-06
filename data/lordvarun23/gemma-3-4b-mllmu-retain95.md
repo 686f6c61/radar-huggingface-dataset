@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Lordvarun23/gemma-3-4b-mllmu-retain95` es un ajuste fino (full fine-tune) del modelo multimodal `google/gemma-3-4b-it` de Google DeepMind, publicado por el usuario Lordvarun23 en HuggingFace. El modelo es un artefacto de experimentación en el ámbito del *machine unlearning* (desaprendizaje automático) y se ha entrenado exclusivamente con los pares pregunta-respuesta de los 475 perfiles "retain_95" del benchmark MLLMU-Bench, excluyendo deliberadamente los 25 perfiles "forget_5".
+`Lordvarun23/gemma-3-4b-mllmu-retain95` es un ajuste fino (full fine-tune) del modelo multimodal `google/gemma-3-4b-it` de Google DeepMind, publicado por el usuario Lordvarun23 en Hugging Face. El modelo es un artefacto de experimentación en el ámbito del *machine unlearning* (desaprendizaje automático) y se ha entrenado exclusivamente con los pares pregunta-respuesta de los 475 perfiles "retain_95" del benchmark MLLMU-Bench, excluyendo deliberadamente los 25 perfiles "forget_5".
 
 Su relevancia no radica en ser un modelo de propósito general, sino en servir como línea base de control ("retain-only") dentro de una comparativa de métodos de desaprendizaje (GradDiff, KL-Min, NPO) sobre la misma arquitectura y dataset. Con 4.300.079.472 parámetros (~4,3 mil millones) y un repositorio de 8,6 GB en safetensors, hereda del modelo base la arquitectura Gemma 3 multimodal, la ventana de contexto y las capacidades image-text-to-text.
 
@@ -73,10 +73,10 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| **gemma-3-4b-mllmu-retain95** (este) | 4,3B | no disponible | gemma | Full fine-tune retain-only para unlearning | HuggingFace, 0 descargas |
-| google/gemma-3-4b-it (base) | 4,3B | no disponible | gemma | Multimodal general image-text-to-text | HuggingFace oficial de Google |
-| gemma-3-4b-mllmu-ft | 4,3B | no disponible | gemma | Full fine-tune sobre retain + forget | HuggingFace (Lordvarun23) |
-| gemma-3-4b-mllmu-npo-forget5 | 4,3B | no disponible | gemma | Unlearning con NPO sobre forget_5 | HuggingFace (Lordvarun23) |
+| **gemma-3-4b-mllmu-retain95** (este) | 4,3B | no disponible | gemma | Full fine-tune retain-only para unlearning | Hugging Face, 0 descargas |
+| google/gemma-3-4b-it (base) | 4,3B | no disponible | gemma | Multimodal general image-text-to-text | Hugging Face oficial de Google |
+| gemma-3-4b-mllmu-ft | 4,3B | no disponible | gemma | Full fine-tune sobre retain + forget | Hugging Face (Lordvarun23) |
+| gemma-3-4b-mllmu-npo-forget5 | 4,3B | no disponible | gemma | Unlearning con NPO sobre forget_5 | Hugging Face (Lordvarun23) |
 
 Las diferencias de rendimiento entre estas variantes se recogen en la tabla de benchmarks: el modelo retain-only obtiene 0,17 en forget_5 y 0,66 en retain, frente al fine-tuned completo (0,46 / 0,47) y NPO (0,07 / 0,41).
 
@@ -93,7 +93,7 @@ Las diferencias de rendimiento entre estas variantes se recogen en la tabla de b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lordvarun23/gemma-3-4b-mllmu-retain95
+- Modelo en Hugging Face: https://huggingface.co/Lordvarun23/gemma-3-4b-mllmu-retain95
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Variante fine-tuned: https://huggingface.co/Lordvarun23/gemma-3-4b-mllmu-ft
 - Variante GradDiff: https://huggingface.co/Lordvarun23/gemma-3-4b-mllmu-graddiff-forget5

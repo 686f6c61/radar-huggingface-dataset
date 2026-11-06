@@ -18,7 +18,7 @@ Su relevancia es acotada y muy específica: sirve como baseline mínimo, como he
 | Longitud de contexto | 1024 tokens (truncamiento de entrenamiento; RoPE no impone límite duro) |
 | Tipos de cuantización | no disponible; no se han publicado pesos cuantizados (con 1,15 M de parámetros la cuantización es innecesaria) |
 | Idiomas soportados | no disponible; no procesa lenguaje natural. Alfabeto de 16 tokens: `[PAD]`, `[MASK]`, `[CLS]`, `[SEP]`, `[UNK]`, `A`, `G`, `C`, `T`, `U`, `N`, `[BOS]`, `[EOS]`, `[UNUSED1]`, `[UNUSED2]`, `[UNUSED3]` |
-| Licencia | GenBio AI Community License (etiqueta `other` en HuggingFace) |
+| Licencia | GenBio AI Community License (etiqueta `other` en Hugging Face) |
 | Formato de pesos | safetensors; requiere `trust_remote_code=True` |
 | Capas | 6 |
 | Cabezas de atención | 8 |
@@ -42,7 +42,7 @@ No se especifica en la información disponible el número de tokens de entrenami
 - Generación de representaciones (*embeddings*) a nivel de secuencia mediante el token `[CLS]` (vector de 128 dimensiones) y a nivel de nucleótido mediante los estados ocultos por posición.
 - Predicción de nucleótidos enmascarados (MLM): devuelve logits de dimensión 16 por posición, utilizables para imputación o puntuación de variantes.
 - Acceso a estados ocultos intermedios de las 6 capas mediante `output_hidden_states=True`, útil para sondas (*probing*) por capa.
-- Ajuste fino supervisado con convenciones estándar de HuggingFace para tareas a nivel de secuencia o de token.
+- Ajuste fino supervisado con convenciones estándar de Hugging Face para tareas a nivel de secuencia o de token.
 - Extracción de características para similitud, clustering y búsqueda aproximada de secuencias de ARN.
 - Soporte de atención eficiente vía SDPA y FlashAttention-2.
 - No soporta *tool calling*, ni *function calling*, ni razonamiento multi-paso, ni modo *thinking*, ni agentes.
@@ -110,7 +110,7 @@ Fuera de la familia GB.RNA existen otros modelos de fundación para secuencias g
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taykhoom/GB.RNA-1M-MARS
+- Modelo en Hugging Face: https://huggingface.co/Taykhoom/GB.RNA-1M-MARS
 - Checkpoint original de GenBio AI: https://huggingface.co/genbio-ai/GB.RNA-1M-MARS
 - Identificador anterior (redirige al actual): https://huggingface.co/Taykhoom/AIDO.RNA-1M-MARS
 - Colección completa GB.RNA: https://huggingface.co/collections/Taykhoom/gbrna-6a22fe2e4039c523bcc48de9

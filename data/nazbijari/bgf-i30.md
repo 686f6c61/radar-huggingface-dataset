@@ -2,9 +2,9 @@
 
 ## Resumen
 
-BioGeoFormer 30% (identificador `nazbijari/bgf-i30`) es un modelo publicado en HuggingFace por el usuario `nazbijari`, con pipeline declarado de `text-classification` y arquitectura etiquetada como `cyc-esm`. El autor lo describe en la model card unicamente como "BioGeoFormer 30% model" y remite a un articulo en bioRxiv, sin aportar mas detalles tecnicos. El repositorio ocupa 0,3 GB y contiene pesos en formato `safetensors` con 74.817.326 parametros totales (aproximadamente 74,8 millones), un orden de magnitud propio de un modelo compacto orientado a clasificacion mas que a generacion.
+BioGeoFormer 30% (identificador `nazbijari/bgf-i30`) es un modelo publicado en Hugging Face por el usuario `nazbijari`, con pipeline declarado de `text-classification` y arquitectura etiquetada como `cyc-esm`. El autor lo describe en la model card unicamente como "BioGeoFormer 30% model" y remite a un articulo en bioRxiv, sin aportar mas detalles tecnicos. El repositorio ocupa 0,3 GB y contiene pesos en formato `safetensors` con 74.817.326 parametros totales (aproximadamente 74,8 millones), un orden de magnitud propio de un modelo compacto orientado a clasificacion mas que a generacion.
 
-Por el nombre y la etiqueta `cyc-esm`, todo apunta a un modelo de la familia ESM (Evolutionary Scale Modeling) aplicado a secuencias biologicas, con algun tipo de variante ciclica o customizada, y a una version escalada al 30 % respecto al modelo completo de referencia. Sin embargo, esta interpretacion no esta confirmada por ninguna fuente: ni la model card, ni la informacion de HuggingFace, ni los resultados de la busqueda web permiten verificar la arquitectura real, el dominio de aplicacion exacto ni el procedimiento de entrenamiento.
+Por el nombre y la etiqueta `cyc-esm`, todo apunta a un modelo de la familia ESM (Evolutionary Scale Modeling) aplicado a secuencias biologicas, con algun tipo de variante ciclica o customizada, y a una version escalada al 30 % respecto al modelo completo de referencia. Sin embargo, esta interpretacion no esta confirmada por ninguna fuente: ni la model card, ni la informacion de Hugging Face, ni los resultados de la busqueda web permiten verificar la arquitectura real, el dominio de aplicacion exacto ni el procedimiento de entrenamiento.
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente descriptiva: el modelo acumula 0 descargas y 0 likes, no declara licencia ni idiomas, y no publica resultados de benchmarks. Cualquier evaluacion en produccion deberia partir de una inspeccion del codigo `custom_code` incluido en el repositorio y de la lectura del paper referenciado, no de la informacion disponible en el hub.
 
@@ -77,7 +77,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| nazbijari/bgf-i30 (BioGeoFormer 30 %) | 74.817.326 | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes | no disponible |
+| nazbijari/bgf-i30 (BioGeoFormer 30 %) | 74.817.326 | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes | no disponible |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica referencia externa documentada es el articulo de bioRxiv enlazado desde la model card, cuya lectura seria el punto de partida obligado para identificar los modelos base y las lineas de comparacion adecuadas.
@@ -97,6 +97,6 @@ La unica referencia externa documentada es el articulo de bioRxiv enlazado desde
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nazbijari/bgf-i30
+- Modelo en Hugging Face: https://huggingface.co/nazbijari/bgf-i30
 - Articulo referenciado en la model card (bioRxiv): https://www.biorxiv.org/content/10.64898/2025.12.17.695047v1
 - No se han encontrado otros enlaces relevantes (repositorios de codigo, demos, blogs o documentacion adicional) en la busqueda web realizada.

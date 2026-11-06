@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cifar10-mlp` es un perceptrón multicapa (MLP) de tres capas entrenado para clasificación de imágenes sobre el conjunto de datos CIFAR-10. Lo publica el usuario SriHarsha2608 en HuggingFace bajo licencia MIT. No es un modelo de lenguaje ni un transformer: es una red neuronal densa de pequeño tamaño (402.250 parámetros) que toma imágenes de 32x32x3 píxeles aplanadas en vectores de 3072 dimensiones y las clasifica en una de las 10 categorías de CIFAR-10 (avión, automóvil, pájaro, gato, ciervo, perro, rana, caballo, barco, camión).
+El modelo `cifar10-mlp` es un perceptrón multicapa (MLP) de tres capas entrenado para clasificación de imágenes sobre el conjunto de datos CIFAR-10. Lo publica el usuario SriHarsha2608 en Hugging Face bajo licencia MIT. No es un modelo de lenguaje ni un transformer: es una red neuronal densa de pequeño tamaño (402.250 parámetros) que toma imágenes de 32x32x3 píxeles aplanadas en vectores de 3072 dimensiones y las clasifica en una de las 10 categorías de CIFAR-10 (avión, automóvil, pájaro, gato, ciervo, perro, rana, caballo, barco, camión).
 
 Su relevancia es fundamentalmente didáctica o de referencia: sirve como línea base minimalista para tareas de clasificación de imágenes de baja resolución, como ejemplo de implementación de un MLP en PyTorch con pesos exportados también a NumPy, y como punto de partida para comparaciones con arquitecturas convolucionales. No compite con modelos de visión de gran escala ni ofrece capacidades generativas, multimodales o de razonamiento.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento en CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cifar10-mlp (este modelo) | 402.250 | Imagen 32x32x3 | no disponible | MIT | HuggingFace |
+| cifar10-mlp (este modelo) | 402.250 | Imagen 32x32x3 | no disponible | MIT | Hugging Face |
 | LeNet-5 clásica | ~60.000 | Imagen 32x32 | no disponible en esta ficha | no disponible | Referencia académica |
 | ResNet-18 adaptada a CIFAR-10 | ~11,2 M | Imagen 32x32 | no disponible en esta ficha | MIT (implementaciones) | Repositorios públicos |
 | VGG-11 adaptada a CIFAR-10 | ~9,2 M | Imagen 32x32 | no disponible en esta ficha | no disponible | Repositorios públicos |
@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento publicados para este modelo ni para las al
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SriHarsha2608/cifar10-mlp
+- Hugging Face: https://huggingface.co/SriHarsha2608/cifar10-mlp
 - Dataset CIFAR-10 (referencia): https://www.cs.toronto.edu/~kriz/cifar.html
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

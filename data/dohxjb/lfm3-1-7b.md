@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B es un modelo de lenguaje de tipo texto, resultado del post-entrenamiento del checkpoint base LiquidAI/LFM3-1.7B-Base, desarrollado por Liquid AI y publicado en HuggingFace bajo el identificador dohxjb/LFM3-1.7B. Está diseñado específicamente para agentes locales y aplicaciones especializadas, con un enfoque claro en el despliegue en el borde (edge): según el autor, en precisión de 4 bits ocupa aproximadamente 1 GB de memoria, lo que permite ejecutarlo en un teléfono o portátil convencional.
+LFM3-1.7B es un modelo de lenguaje de tipo texto, resultado del post-entrenamiento del checkpoint base LiquidAI/LFM3-1.7B-Base, desarrollado por Liquid AI y publicado en Hugging Face bajo el identificador dohxjb/LFM3-1.7B. Está diseñado específicamente para agentes locales y aplicaciones especializadas, con un enfoque claro en el despliegue en el borde (edge): según el autor, en precisión de 4 bits ocupa aproximadamente 1 GB de memoria, lo que permite ejecutarlo en un teléfono o portátil convencional.
 
 El modelo emplea una arquitectura tri-híbrida novedosa de 24 capas que combina 13 convoluciones cortas con compuerta (gated short convolutions), 5 capas de atención con ventana deslizante y 6 capas de atención global. Con 1.728.801.536 parámetros totales y una ventana de contexto de 256.000 tokens (entrada más salida), está pensado para integrarse en arneses agénticos como Hermes Agent, Pi y OpenClaw, así como para soportar tool calling y salidas estructuradas.
 
@@ -18,7 +18,7 @@ Su relevancia actual radica en la combinación poco habitual de un contexto muy 
 | Longitud de contexto | 256.000 tokens (entrada + salida) |
 | Tipos de cuantizacion | No disponible (el autor menciona que en 4 bits ocupa ~1 GB, pero no detalla los formatos) |
 | Idiomas soportados | Inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, español, vietnamita, tailandés, indonesio, hindi, ruso, polaco |
-| Licencia | LFM Open License v1.0 (licencia "other" en HuggingFace) |
+| Licencia | LFM Open License v1.0 (licencia "other" en Hugging Face) |
 | Formato de pesos | Safetensors (librería transformers, con código personalizado) |
 
 ## Arquitectura y entrenamiento
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM3-1.7B | 1,73B | 256K | LFM Open License v1.0 | HuggingFace (dohxjb/LFM3-1.7B) |
+| LFM3-1.7B | 1,73B | 256K | LFM Open License v1.0 | Hugging Face (dohxjb/LFM3-1.7B) |
 | Alternativas de ~1-2B | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (tamaño ~1,7B con contexto extendido y orientación agéntica) en la documentación proporcionada, por lo que no es posible establecer una comparativa con datos verificables.
@@ -81,7 +81,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dohxjb/LFM3-1.7B
+- Modelo en Hugging Face: https://huggingface.co/dohxjb/LFM3-1.7B
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Blog de lanzamiento de la familia LFM3: https://www.liquid.ai/blog/lfm3
 - Documentación de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome

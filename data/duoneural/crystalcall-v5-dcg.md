@@ -91,8 +91,8 @@ CrystalCall-v5-DCG es mas pequeño que FunctionGemma-270M y, segun los datos del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/CrystalCall-v5-DCG
-- Organizacion DuoNeural en HuggingFace: https://huggingface.co/DuoNeural
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/CrystalCall-v5-DCG
+- Organizacion DuoNeural en Hugging Face: https://huggingface.co/DuoNeural
 - Repositorio de codigo (Lattice-CDM): https://github.com/DuoNeural/Lattice-CDM
 - Sitio web de DuoNeural: https://duoneural.com
 - Modelo base: https://huggingface.co/Salesforce/xLAM-1b-fc-r

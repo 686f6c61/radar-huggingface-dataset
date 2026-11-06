@@ -113,10 +113,10 @@ Frente a un hipotético ajuste fino completo del mismo corpus, no hay datos publ
 - El adaptador se publica sin fusionar, por lo que exige gestionar por separado el modelo base y el adaptador, y no se documentan opciones de despliegue distintas de ollama.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Ai-dron/qwen2.5-7b-single-book-lora
+- Modelo en Hugging Face: https://huggingface.co/Ai-dron/qwen2.5-7b-single-book-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Obra de origen (DOI declarado): https://doi.org/10.5281/zenodo.15574258
 - Repositorio de código, parser del libro, evaluador y evidencias: mencionado en la model card, URL no disponible en la información proporcionada
-- Test congelado, hash SHA-256, respuestas de los modelos y análisis de cada respuesta: carpeta `evidence/` del repositorio de HuggingFace
-- Prompt de sistema usado en la evaluación: `evidence/паспорт_датасета2.json` del repositorio de HuggingFace
+- Test congelado, hash SHA-256, respuestas de los modelos y análisis de cada respuesta: carpeta `evidence/` del repositorio de Hugging Face
+- Prompt de sistema usado en la evaluación: `evidence/паспорт_датасета2.json` del repositorio de Hugging Face
 - Paper, blog o demo adicionales: no disponible en la información proporcionada

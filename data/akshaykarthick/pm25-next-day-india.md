@@ -118,7 +118,7 @@ El modelo supera a la persistencia en 50 de 50 ciudades. No se han publicado otr
 
 | Alternativa | Tipo | MAE (µg/m³) | RMSE (µg/m³) | R² | Licencia / disponibilidad |
 |---|---|---:|---:|---:|---|
-| pm25-next-day-india | LightGBM (árboles) | 6,602 | 10,163 | 0,8894 | CC-BY-4.0, público en HuggingFace |
+| pm25-next-day-india | LightGBM (árboles) | 6,602 | 10,163 | 0,8894 | CC-BY-4.0, público en Hugging Face |
 | Persistencia (mañana = hoy) | Línea base trivial | 7,28 | 11,31 | 0,863 | no aplica (regla determinista) |
 | Media móvil de 7 días | Línea base estadística | 10,01 | 15,07 | 0,757 | no aplica |
 | Media por ciudad × mes | Línea base estadística | 11,83 | 18,01 | 0,652 | no aplica |
@@ -143,7 +143,7 @@ La model card solo documenta comparaciones frente a líneas base, no frente a ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AkshayKarthick/pm25-next-day-india
+- Modelo en Hugging Face: https://huggingface.co/AkshayKarthick/pm25-next-day-india
 - Dataset India Daily Weather & Air Quality: https://huggingface.co/datasets/AkshayKarthick/india-weather-air-quality
 - Comparativa de error frente a líneas base (figura del repositorio): `model/mae_vs_baselines.png`
 - Pronóstico de invierno en Delhi (figura del repositorio): `model/delhi_winter_forecast.png`

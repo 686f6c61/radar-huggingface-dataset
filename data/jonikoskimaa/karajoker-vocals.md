@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jonikoskimaa/karajoker-vocals` es un repositorio de pesos publicado en HuggingFace por el usuario jonikoskimaa bajo licencia MIT. El único artefacto identificable es un modelo en formato ONNX de aproximadamente 0,4 GB, lo que sugiere un modelo de tamano pequeno o mediano orientado a inferencia en entornos con recursos limitados. Por el nombre del repositorio ("vocals") y el formato de despliegue, la hipotesis mas plausible es que se trate de un modelo especializado en separacion de fuentes de audio o procesamiento de voz, aunque la model card no lo confirma.
+`jonikoskimaa/karajoker-vocals` es un repositorio de pesos publicado en Hugging Face por el usuario jonikoskimaa bajo licencia MIT. El único artefacto identificable es un modelo en formato ONNX de aproximadamente 0,4 GB, lo que sugiere un modelo de tamano pequeno o mediano orientado a inferencia en entornos con recursos limitados. Por el nombre del repositorio ("vocals") y el formato de despliegue, la hipotesis mas plausible es que se trate de un modelo especializado en separacion de fuentes de audio o procesamiento de voz, aunque la model card no lo confirma.
 
 La informacion disponible es extremadamente escasa: no se publica pipeline declarado, no hay idiomas documentados, no se especifican parametros, contexto ni datos de entrenamiento, y el repositorio no registra descargas ni interacciones. La model card se limita a declarar la licencia MIT, sin descripcion funcional, sin ejemplos de uso y sin referencias a papers o documentacion adicional.
 
@@ -74,5 +74,5 @@ No disponible. La ausencia de documentacion funcional impide identificar la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jonikoskimaa/karajoker-vocals
+- Repositorio en Hugging Face: https://huggingface.co/jonikoskimaa/karajoker-vocals
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

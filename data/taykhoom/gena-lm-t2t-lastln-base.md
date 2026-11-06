@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GENA-LM-t2t-lastln-base es un port minimalista y autocontenido del modelo original `AIRI-Institute/gena-lm-bert-base-lastln-t2t`, desarrollado por el usuario Taykhoom en HuggingFace. Se trata de un modelo de lenguaje de ADN basado en BERT con pre-LayerNorm y una capa final de normalización, entrenado mediante modelado de lenguaje enmascarado (MLM) sobre el genoma humano T2T y variantes de poblaciones. Con aproximadamente 110 millones de parámetros, el modelo está diseñado para representar secuencias de ADN de hasta 512 tokens BPE (~4608 nucleótidos) y proporciona embeddings contextuales de alta calidad para tareas de genómica.
+GENA-LM-t2t-lastln-base es un port minimalista y autocontenido del modelo original `AIRI-Institute/gena-lm-bert-base-lastln-t2t`, desarrollado por el usuario Taykhoom en Hugging Face. Se trata de un modelo de lenguaje de ADN basado en BERT con pre-LayerNorm y una capa final de normalización, entrenado mediante modelado de lenguaje enmascarado (MLM) sobre el genoma humano T2T y variantes de poblaciones. Con aproximadamente 110 millones de parámetros, el modelo está diseñado para representar secuencias de ADN de hasta 512 tokens BPE (~4608 nucleótidos) y proporciona embeddings contextuales de alta calidad para tareas de genómica.
 
 La relevancia de este modelo radica en su verificación de paridad bit-exacta con los pesos originales, lo que garantiza una reproducibilidad total. Además, incorpora soporte para backends de atención más eficientes (SDPA y Flash Attention 2) sin alterar el comportamiento del modelo eager. Al estar liberado bajo licencia MIT, puede utilizarse libremente en proyectos comerciales y de investigación. Es una opción ligera y accesible para quienes necesitan un encoder de ADN con un buen equilibrio entre rendimiento y requisitos de cómputo.
 
@@ -54,18 +54,18 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - **VRAM estimada para inferencia**: el modelo tiene 110 millones de parámetros. En fp32, los pesos ocupan aproximadamente 442 MB; en fp16/bfloat16, unos 221 MB. La VRAM necesaria para inferencia típica es de menos de 1 GB, incluyendo activaciones y memoria intermedia.
 - **GPUs recomendadas**: cualquier GPU con al menos 2 GB de VRAM es suficiente. Por ejemplo, una NVIDIA GTX 1050 Ti o RTX 3060 pueden ejecutar el modelo sin problemas. En GPU de centro de datos (A100, H100) es trivial.
 - **Consumer GPU**: sí, cabe en cualquier GPU de consumo actual (por ejemplo, RTX 3090, RTX 4070, etc.) y también en GPU de portátiles.
-- **Opciones de despliegue**: se puede cargar mediante la librería `transformers` de HuggingFace con `trust_remote_code=True`. No es compatible directamente con vLLM (que está orientado a modelos generativos), pero se puede usar con ONNX Runtime o con PyTorch para inferencia. También se puede exportar a formato ONNX para despliegue en entornos de producción.
+- **Opciones de despliegue**: se puede cargar mediante la librería `transformers` de Hugging Face con `trust_remote_code=True`. No es compatible directamente con vLLM (que está orientado a modelos generativos), pero se puede usar con ONNX Runtime o con PyTorch para inferencia. También se puede exportar a formato ONNX para despliegue en entornos de producción.
 - **Latencia y throughput**: no se han publicado cifras concretas. Dado su tamaño, la inferencia es muy rápida, del orden de milisegundos por secuencia en GPU. En CPU, también es viable para volúmenes moderados.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto (tokens) | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GENA-LM-t2t-lastln-base (este) | 110M | 512 BPE | Pre-LN BERT + LayerNorm final | MIT | HuggingFace |
-| GENA-LM-bert-base (Taykhoom) | 110M | 512 | Pre-LN BERT | MIT | HuggingFace |
-| GENA-LM-t2t-bert-base (Taykhoom) | 110M | 512 | Pre-LN BERT | MIT | HuggingFace |
-| GENA-LM-t2t-bigbird-base (Taykhoom) | 110M | 4096 | BigBird | MIT | HuggingFace |
-| GENA-LM-sparse-bigbird-base (Taykhoom) | 110M | 4096 | BigBird disperso | MIT | HuggingFace |
+| GENA-LM-t2t-lastln-base (este) | 110M | 512 BPE | Pre-LN BERT + LayerNorm final | MIT | Hugging Face |
+| GENA-LM-bert-base (Taykhoom) | 110M | 512 | Pre-LN BERT | MIT | Hugging Face |
+| GENA-LM-t2t-bert-base (Taykhoom) | 110M | 512 | Pre-LN BERT | MIT | Hugging Face |
+| GENA-LM-t2t-bigbird-base (Taykhoom) | 110M | 4096 | BigBird | MIT | Hugging Face |
+| GENA-LM-sparse-bigbird-base (Taykhoom) | 110M | 4096 | BigBird disperso | MIT | Hugging Face |
 
 La principal diferencia entre este modelo y los otros de la misma familia es la presencia de la capa final de normalización (`lastln`) y el entrenamiento específico sobre el genoma T2T. Los modelos BigBird ofrecen una ventana de contexto mucho mayor (4096 tokens) a costa de una atención dispersa, mientras que este modelo usa atención densa limitada a 512 tokens. Para aplicaciones que requieren contexto largo, los modelos BigBird son más adecuados; para tareas con fragmentos cortos y alta fidelidad de representación, este modelo es comparable al resto.
 
@@ -81,9 +81,9 @@ La principal diferencia entre este modelo y los otros de la misma familia es la 
 
 ## Enlaces
 
-- [HuggingFace: Taykhoom/GENA-LM-t2t-lastln-base](https://huggingface.co/Taykhoom/GENA-LM-t2t-lastln-base)
-- [HuggingFace original: AIRI-Institute/gena-lm-bert-base-lastln-t2t](https://huggingface.co/AIRI-Institute/gena-lm-bert-base-lastln-t2t)
+- [Hugging Face: Taykhoom/GENA-LM-t2t-lastln-base](https://huggingface.co/Taykhoom/GENA-LM-t2t-lastln-base)
+- [Hugging Face original: AIRI-Institute/gena-lm-bert-base-lastln-t2t](https://huggingface.co/AIRI-Institute/gena-lm-bert-base-lastln-t2t)
 - [GitHub: AIRI-Institute/GENA_LM](https://github.com/AIRI-Institute/GENA_LM)
 - [Artículo en Nucleic Acids Research (2025)](https://academic.oup.com/nar/article/53/2/gkae1310/7954523)
 - [Preprint en bioRxiv (2023)](https://www.biorxiv.org/content/10.1101/2023.06.12.544594v1)
-- [Colección GENA-LM en HuggingFace](https://huggingface.co/collections/Taykhoom/gena-lm-6a8cec0862e11d4f81d059ab)
+- [Colección GENA-LM en Hugging Face](https://huggingface.co/collections/Taykhoom/gena-lm-6a8cec0862e11d4f81d059ab)

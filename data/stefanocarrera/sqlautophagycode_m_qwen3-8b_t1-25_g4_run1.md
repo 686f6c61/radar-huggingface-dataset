@@ -76,6 +76,6 @@ No se dispone de información suficiente para realizar una comparativa. Existen 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g4_run1
+- Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g4_run1
 - Checkpoint relacionado: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g2_run1
 - Checkpoint relacionado: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.25_g6_run0

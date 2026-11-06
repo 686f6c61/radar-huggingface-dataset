@@ -89,8 +89,8 @@ Todos los exitos se produjeron con el objeto en el mismo lado de la mesa que el 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cosmos_nano_policy_so101 | 15,17 mil millones | no disponible | 3,1% en `So101Bench-Bin-v0` (17/542) | OpenMDW 1.1 | HuggingFace, safetensors, `custom_code` |
-| nvidia/Cosmos3-Nano (modelo base) | 15,17 mil millones | no disponible | no disponible | OpenMDW 1.1 | HuggingFace |
+| cosmos_nano_policy_so101 | 15,17 mil millones | no disponible | 3,1% en `So101Bench-Bin-v0` (17/542) | OpenMDW 1.1 | Hugging Face, safetensors, `custom_code` |
+| nvidia/Cosmos3-Nano (modelo base) | 15,17 mil millones | no disponible | no disponible | OpenMDW 1.1 | Hugging Face |
 | Otras politicas VLA para SO-101 (LeRobot, openpi, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de resultados de benchmarks de terceros para establecer una comparacion cuantitativa con OpenVLA, pi0, GR00T N1 u otras politicas VLA en la informacion proporcionada. La unica comparacion fiable es contra los propios checkpoints del mismo entrenamiento (3500 y 4000), que obtuvieron 0/20 cada uno.
@@ -110,8 +110,8 @@ No se dispone de resultados de benchmarks de terceros para establecer una compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kabilanKB/cosmos_nano_policy_so101
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/Cosmos3-Nano
+- Modelo en Hugging Face: https://huggingface.co/kabilanKB/cosmos_nano_policy_so101
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/Cosmos3-Nano
 - Repositorio del pipeline (entrenamiento, fusion, exportacion, serving y evaluacion): https://github.com/kabilankb/so101-cosmos-nano-policy
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
 - Backbone de lenguaje: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct

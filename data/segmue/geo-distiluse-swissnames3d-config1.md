@@ -84,7 +84,7 @@ Los tres modelos de la familia segmue/geo-distiluse-swissnames3d comparten base 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/segmue/geo-distiluse-swissnames3d-config1
+- Modelo en Hugging Face: https://huggingface.co/segmue/geo-distiluse-swissnames3d-config1
 - Variante por defecto: https://huggingface.co/segmue/geo-distiluse-swissnames3d
 - Variante config2: https://huggingface.co/segmue/geo-distiluse-swissnames3d-config2
 - Modelo base: https://huggingface.co/sentence-transformers/distiluse-base-multilingual-cased-v1

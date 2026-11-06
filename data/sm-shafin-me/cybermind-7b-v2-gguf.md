@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| CyberMind 7B v2 GGUF | 7,6 B | no disponible (base: 32.768 nativos) | no disponible | GGUF (Q4_K_M) | HuggingFace, Ollama |
-| Qwen2.5-Coder-7B-Instruct (modelo base) | 7,6 B | 32.768 nativos (131.072 con YaRN) | Apache 2.0 | safetensors, GGUF | HuggingFace, vLLM, Ollama |
-| CodeLlama-7B-Instruct | 7 B | 16.384 | Llama 2 Community License | safetensors, GGUF | HuggingFace, Ollama |
-| DeepSeek-Coder-6.7B-Instruct | 6,7 B | 16.384 | DeepSeek License (uso comercial con condiciones) | safetensors, GGUF | HuggingFace |
+| CyberMind 7B v2 GGUF | 7,6 B | no disponible (base: 32.768 nativos) | no disponible | GGUF (Q4_K_M) | Hugging Face, Ollama |
+| Qwen2.5-Coder-7B-Instruct (modelo base) | 7,6 B | 32.768 nativos (131.072 con YaRN) | Apache 2.0 | safetensors, GGUF | Hugging Face, vLLM, Ollama |
+| CodeLlama-7B-Instruct | 7 B | 16.384 | Llama 2 Community License | safetensors, GGUF | Hugging Face, Ollama |
+| DeepSeek-Coder-6.7B-Instruct | 6,7 B | 16.384 | DeepSeek License (uso comercial con condiciones) | safetensors, GGUF | Hugging Face |
 
 La comparativa se limita a parametros, contexto y licencia porque no hay resultados de benchmarks publicados para CyberMind 7B v2. El modelo base y las alternativas citadas cuentan con documentacion oficial y licencias explicitas, algo de lo que carece esta ficha.
 
@@ -87,7 +87,7 @@ La comparativa se limita a parametros, contexto y licencia porque no hay resulta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sm-shafin-me/cybermind-7b-v2-gguf
+- Repositorio Hugging Face: https://huggingface.co/sm-shafin-me/cybermind-7b-v2-gguf
 - Unsloth (herramienta de entrenamiento y conversion): https://github.com/unslothai/unsloth
 - Modelo base presumible, Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - llama.cpp (runtime de inferencia GGUF): https://github.com/ggml-org/llama.cpp

@@ -93,8 +93,8 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/abhash-chakraborty/ophyx-350m-v2-gguf
-- Modelo base en HuggingFace: https://huggingface.co/abhash-chakraborty/ophyx-350m-v2
+- Modelo GGUF en Hugging Face: https://huggingface.co/abhash-chakraborty/ophyx-350m-v2-gguf
+- Modelo base en Hugging Face: https://huggingface.co/abhash-chakraborty/ophyx-350m-v2
 - Fichero de verificacion de la conversion: https://huggingface.co/abhash-chakraborty/ophyx-350m-v2-gguf/blob/main/check.json
 - Logo del modelo: https://huggingface.co/abhash-chakraborty/ophyx-350m-v2/resolve/main/logo.png
 - llama.cpp (runtime de inferencia): https://github.com/ggml-org/llama.cpp

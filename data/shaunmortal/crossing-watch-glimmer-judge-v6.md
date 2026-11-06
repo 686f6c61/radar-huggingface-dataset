@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Crossing Watch judge v6 (este) | 209,6 M de adaptador sobre 30B | 16.384 en despliegue | 1.442/1.501 en v6; 84,0% balanced accuracy en SummEdits | Muse Model License | HuggingFace (safetensors y GGUF) |
+| Crossing Watch judge v6 (este) | 209,6 M de adaptador sobre 30B | 16.384 en despliegue | 1.442/1.501 en v6; 84,0% balanced accuracy en SummEdits | Muse Model License | Hugging Face (safetensors y GGUF) |
 | Muse Glimmer 30B base | 30B | no disponible | 781/1.210 con razonamiento; 748/1.200 en SummEdits | Apache-2.0 | Pesos abiertos de Meta |
 | Muse Spark Open | no disponible | no disponible | 1.403/1.501 en v6; 77,0% balanced accuracy en SummEdits | no disponible | no disponible |
 | Muse Spark (cerrado) | no disponible | no disponible | 1.467/1.501 en v6; por delante del adaptador en global | no disponible | no disponible |
@@ -96,7 +96,7 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shaunmortal/crossing-watch-glimmer-judge-v6
+- Hugging Face: https://huggingface.co/shaunmortal/crossing-watch-glimmer-judge-v6
 - Repositorio Crossing Watch: https://github.com/shaunmortal/crossing-watch
 - Licencia Muse Model License: https://huggingface.co/shaunmortal/crossing-watch-glimmer-judge-v6/blob/main/LICENSE-MUSE-SPARK-OPEN.md
 - Modelo base: meta-models/Muse-Glimmer-30B

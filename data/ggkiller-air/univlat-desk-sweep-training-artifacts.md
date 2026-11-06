@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `ggkiller-air/univlat-desk-sweep-training-artifacts`, no contiene un modelo de inferencia listo para usar, sino un conjunto completo de artefactos de entrenamiento generados durante una ejecución comparativa de sistemas de robótica basados en políticas de visión-lenguaje-acción (VLA) y políticas de difusión. El autor, `ggkiller-air`, archiva aquí los checkpoints reanudables, estados de optimizador y scheduler, estado RNG, exportaciones de modelos finales y logs de entrenamiento correspondientes a la tarea `desk_sweep` (barrido de escritorio) del benchmark SONIC, en su variante `sonic_htd`.
+Este repositorio de Hugging Face, identificado como `ggkiller-air/univlat-desk-sweep-training-artifacts`, no contiene un modelo de inferencia listo para usar, sino un conjunto completo de artefactos de entrenamiento generados durante una ejecución comparativa de sistemas de robótica basados en políticas de visión-lenguaje-acción (VLA) y políticas de difusión. El autor, `ggkiller-air`, archiva aquí los checkpoints reanudables, estados de optimizador y scheduler, estado RNG, exportaciones de modelos finales y logs de entrenamiento correspondientes a la tarea `desk_sweep` (barrido de escritorio) del benchmark SONIC, en su variante `sonic_htd`.
 
 El repositorio incluye cuatro backbones distintos: Isaac-GR00T (50 000 pasos), Diffusion Policy (25 000 pasos), openpi pi0.5 (10 000 pasos) y starVLA (45 000 pasos). Cada uno de ellos ha sido entrenado de forma independiente para la misma tarea robótica, y se proporcionan los checkpoints seleccionados como mejores según su error cuadrático medio (MSE) de acción en validación. El volumen total del archivo es de aproximadamente 498 GB, lo que refleja la naturaleza exhaustiva de los datos almacenados. No se incluyen los datos de entrenamiento brutos.
 
@@ -90,6 +90,6 @@ No es posible realizar una comparativa directa con otros modelos similares porqu
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [ggkiller-air/univlat-desk-sweep-training-artifacts](https://huggingface.co/ggkiller-air/univlat-desk-sweep-training-artifacts)
+- Repositorio de Hugging Face: [ggkiller-air/univlat-desk-sweep-training-artifacts](https://huggingface.co/ggkiller-air/univlat-desk-sweep-training-artifacts)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código) en la información proporcionada.

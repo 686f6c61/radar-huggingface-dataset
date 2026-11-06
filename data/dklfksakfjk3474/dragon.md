@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `dklfksakfjk3474/dragon` es un repositorio alojado en HuggingFace bajo la autoría del usuario `dklfksakfjk3474`. En el momento de la consulta, la informacion publica disponible se limita a la licencia (Apache 2.0), la region declarada (US) y las marcas temporales de creacion y actualizacion (20 de septiembre de 2026). No se ha publicado model card con descripcion funcional, arquitectura, tamano ni contexto.
+El modelo identificado como `dklfksakfjk3474/dragon` es un repositorio alojado en Hugging Face bajo la autoría del usuario `dklfksakfjk3474`. En el momento de la consulta, la informacion publica disponible se limita a la licencia (Apache 2.0), la region declarada (US) y las marcas temporales de creacion y actualizacion (20 de septiembre de 2026). No se ha publicado model card con descripcion funcional, arquitectura, tamano ni contexto.
 
 El repositorio registra 0 descargas y 0 likes, y no declara pipeline de inferencia ni idiomas soportados. La model card unicamente contiene el bloque de metadatos de licencia, sin ningun texto descriptivo adicional. Esto impide determinar que problema resuelve, a que categoria de modelos pertenece o cual es su relevancia tecnica actual.
 
@@ -67,7 +67,7 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dklfksakfjk3474/dragon
+- Hugging Face: https://huggingface.co/dklfksakfjk3474/dragon
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

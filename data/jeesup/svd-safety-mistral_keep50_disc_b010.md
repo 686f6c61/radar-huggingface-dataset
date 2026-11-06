@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de investigación derivado de `mistralai/Mistral-7B-Instruct-v0.2`, comprimido mediante la técnica SVD-LLM hasta conservar el 51,0 % de los parámetros densos. Tras la compresión, se restauran componentes de la descomposición en valores singulares seleccionados por la regla «disc» con un presupuesto del 1,0 % de los parámetros. El resultado es un artefacto experimental diseñado para estudiar cómo la compresión por SVD afecta al comportamiento de seguridad y qué reglas de selección de componentes reparan mejor ese comportamiento. No es un modelo de chat general ni está pensado para su despliegue en producción. El autor es Jeesup y el checkpoint se publica bajo licencia Apache 2.0. Según la información de HuggingFace, el archivo safetensors contiene 7.241.732.096 parámetros, aunque la model card indica que la fracción efectiva de parámetros es 0.5097 respecto al modelo denso.
+Este modelo es un checkpoint de investigación derivado de `mistralai/Mistral-7B-Instruct-v0.2`, comprimido mediante la técnica SVD-LLM hasta conservar el 51,0 % de los parámetros densos. Tras la compresión, se restauran componentes de la descomposición en valores singulares seleccionados por la regla «disc» con un presupuesto del 1,0 % de los parámetros. El resultado es un artefacto experimental diseñado para estudiar cómo la compresión por SVD afecta al comportamiento de seguridad y qué reglas de selección de componentes reparan mejor ese comportamiento. No es un modelo de chat general ni está pensado para su despliegue en producción. El autor es Jeesup y el checkpoint se publica bajo licencia Apache 2.0. Según la información de Hugging Face, el archivo safetensors contiene 7.241.732.096 parámetros, aunque la model card indica que la fracción efectiva de parámetros es 0.5097 respecto al modelo denso.
 
 ## Especificaciones técnicas
 
@@ -81,4 +81,4 @@ No se dispone de datos comparativos en la información proporcionada. El modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-mistral_keep50_disc_b010
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-mistral_keep50_disc_b010

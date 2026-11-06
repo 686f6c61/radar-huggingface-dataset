@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "KyraLeeChunWei/ParacetamolRecovery_e50_20K_ACT",
+  "slug": "kyraleechunwei-paracetamolrecovery_e50_20k_act",
+  "author": "KyraLeeChunWei",
+  "url": "https://huggingface.co/KyraLeeChunWei/ParacetamolRecovery_e50_20K_ACT",
+  "created_at": "2026-11-05T00:38:00.000Z",
+  "updated_at": "2026-11-05T04:20:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:KyraLeeChunWei/ParacetamolRecovery_e50",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": 51678855,
+  "parameters_human": "51.7M",
+  "storage_bytes": 413497448,
+  "storage_human": "413 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KyraLeeChunWei/ParacetamolRecovery_e50_20K_ACT · Hugging Face",
+      "url": "https://huggingface.co/KyraLeeChunWei/ParacetamolRecovery_e50_20K_ACT",
+      "snippet": "Robotics model with 51.7M parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "KyraLeeChunWei/Paracetamol_e50_20K_ACT · Hugging Face",
+      "url": "https://huggingface.co/KyraLeeChunWei/Paracetamol_e50_20K_ACT",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    }
+  ]
+}

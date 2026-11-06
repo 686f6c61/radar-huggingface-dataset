@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fhai50032/bibo-asr-ckpt` es un checkpoint publicado en HuggingFace por el usuario `fhai50032`. Los metadatos asociados (nombre del repositorio, etiqueta `nemo` y libreria declarada `nemo`) apuntan a un sistema de reconocimiento automatico del habla (ASR) construido sobre el ecosistema NVIDIA NeMo. No se ha publicado tarjeta de modelo, pipeline declarado, licencia ni lista de idiomas, por lo que la mayor parte de las caracteristicas funcionales no puede confirmarse a partir de la informacion disponible.
+`fhai50032/bibo-asr-ckpt` es un checkpoint publicado en Hugging Face por el usuario `fhai50032`. Los metadatos asociados (nombre del repositorio, etiqueta `nemo` y libreria declarada `nemo`) apuntan a un sistema de reconocimiento automatico del habla (ASR) construido sobre el ecosistema NVIDIA NeMo. No se ha publicado tarjeta de modelo, pipeline declarado, licencia ni lista de idiomas, por lo que la mayor parte de las caracteristicas funcionales no puede confirmarse a partir de la informacion disponible.
 
 El dato tecnico verificable es el recuento de parametros: 120.284.642, extraido de los pesos en formato safetensors. Se trata, por tanto, de un modelo de aproximadamente 120 millones de parametros, un orden de magnitud propio de sistemas ASR ligeros y desplegables en hardware modesto. El repositorio ocupa 90,3 GB, un tamano desproporcionado para un unico checkpoint de ese tamano (que en fp32 rondaria los 0,48 GB), lo que sugiere que el repositorio contiene multiples checkpoints, estados intermedios de entrenamiento o conversiones de cuantizacion.
 
@@ -68,7 +68,7 @@ La comparativa se establece con sistemas ASR de tamano y disponibilidad publica 
 
 | Modelo | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fhai50032/bibo-asr-ckpt | 120.284.642 | no disponible | no disponible | HuggingFace, 4 descargas, 0 likes, sin tarjeta de modelo |
+| fhai50032/bibo-asr-ckpt | 120.284.642 | no disponible | no disponible | Hugging Face, 4 descargas, 0 likes, sin tarjeta de modelo |
 | OpenAI Whisper tiny | 39 millones | multilingue y solo ingles | MIT | Ampliamente distribuido, integrado en multiples runtimes |
 | OpenAI Whisper base | 74 millones | multilingue y solo ingles | MIT | Ampliamente distribuido |
 | OpenAI Whisper small | 244 millones | multilingue y solo ingles | MIT | Ampliamente distribuido |
@@ -90,5 +90,5 @@ En terminos de tamano, `bibo-asr-ckpt` se situa entre Whisper base (74 M) y Whis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fhai50032/bibo-asr-ckpt
+- Modelo en Hugging Face: https://huggingface.co/fhai50032/bibo-asr-ckpt
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

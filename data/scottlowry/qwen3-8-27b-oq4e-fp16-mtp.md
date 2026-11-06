@@ -73,6 +73,6 @@ No se dispone de comparativas directas con otras cuantizaciones del mismo modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/scottlowry/Qwen3.8-27B-oQ4e-fp16-mtp
+- Hugging Face: https://huggingface.co/scottlowry/Qwen3.8-27B-oQ4e-fp16-mtp
 - Repositorio del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx

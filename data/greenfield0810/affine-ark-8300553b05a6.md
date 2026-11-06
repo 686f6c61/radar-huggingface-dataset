@@ -4,7 +4,7 @@
 
 El repositorio `greenfield0810/affine-ark-8300553b05a6` contiene un checkpoint de modelo multimodal (image-text-to-text) de la familia Qwen 3.5 MoE, con 35.107.181.936 parámetros totales (35,1B). El autor, `greenfield0810`, lo publica como un espejo de archivo de un checkpoint competidor del tablero de Bittensor subnet 120 (Affine), preservado para evitar su desaparición cuando los repos de esa red se vuelven privados tras los duelos. El modelo original pertenece a `completeyourprofile321/affine-5efg6cm3yl-error` y se ha copiado byte por byte.
 
-La relevancia de esta publicación no radica en el modelo en sí, sino en su función de preservación dentro del ecosistema Bittensor: según el autor, el 31% de los challengers que han duelo alguna vez ya eran inaccesibles cuando se construyó este archivo. El modelo nunca fue coronado en el leaderboard (0 victorias en 3 duelos) y no se dispone de documentación técnica oficial más allá de los tags de HuggingFace.
+La relevancia de esta publicación no radica en el modelo en sí, sino en su función de preservación dentro del ecosistema Bittensor: según el autor, el 31% de los challengers que han duelo alguna vez ya eran inaccesibles cuando se construyó este archivo. El modelo nunca fue coronado en el leaderboard (0 victorias en 3 duelos) y no se dispone de documentación técnica oficial más allá de los tags de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ La relevancia de esta publicación no radica en el modelo en sí, sino en su fun
 
 ## Arquitectura y entrenamiento
 
-Los tags de HuggingFace indican que el modelo usa una arquitectura `qwen3_5_moe`, es decir, una variante MoE de la familia Qwen 3.5. También está etiquetado como `image-text-to-text`, lo que implica capacidad multimodal para procesar entradas de imagen y texto y generar texto como salida. El pipeline declarado es `image-text-to-text`.
+Los tags de Hugging Face indican que el modelo usa una arquitectura `qwen3_5_moe`, es decir, una variante MoE de la familia Qwen 3.5. También está etiquetado como `image-text-to-text`, lo que implica capacidad multimodal para procesar entradas de imagen y texto y generar texto como salida. El pipeline declarado es `image-text-to-text`.
 
 No se dispone de información sobre el dataset de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas de alineación como RLHF o DPO. Al ser un checkpoint de la subnet 120 de Bittensor (Affine), es probable que el entrenamiento se haya realizado dentro de ese ecosistema de aprendizaje federado, pero no hay datos confirmados al respecto.
 
@@ -76,6 +76,6 @@ No se dispone de modelos comparables con la misma arquitectura (Qwen 3.5 MoE mul
 
 ## Enlaces
 
-- [HuggingFace: greenfield0810/affine-ark-8300553b05a6](https://huggingface.co/greenfield0810/affine-ark-8300553b05a6)
+- [Hugging Face: greenfield0810/affine-ark-8300553b05a6](https://huggingface.co/greenfield0810/affine-ark-8300553b05a6)
 - [Repo original: completeyourprofile321/affine-5efg6cm3yl-error](https://huggingface.co/completeyourprofile321/affine-5efg6cm3yl-error)
 - [Archivo de proveniencia: `_affine_provenance.json`](https://huggingface.co/greenfield0810/affine-ark-8300553b05a6/blob/main/_affine_provenance.json)

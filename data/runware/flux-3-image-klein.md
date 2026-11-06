@@ -24,7 +24,7 @@ Su relevancia actual reside en dos factores. Primero, la integracion nativa de c
 | Pasos de muestreo (destilado) | 16 |
 | Guidance (destilado) | ninguno |
 | Imagenes de referencia | hasta 10 |
-| Referencias de HuggingFace | 0 descargas, 0 likes en el momento de la consulta |
+| Referencias de Hugging Face | 0 descargas, 0 likes en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
 
@@ -98,7 +98,7 @@ La informacion proporcionada solo permite comparar entre las dos variantes de la
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/Runware/flux-3-image-klein
+- Repositorio analizado en Hugging Face: https://huggingface.co/Runware/flux-3-image-klein
 - Checkpoint oficial destilado (Black Forest Labs): https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Checkpoint Base sin destilar: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
 - Upsampler de prompts: https://huggingface.co/black-forest-labs/flux-3-image-klein-pup

@@ -64,5 +64,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/enesor0/pulsar-acoustic
+- Modelo en Hugging Face: https://huggingface.co/enesor0/pulsar-acoustic
 - (No se encontraron otros enlaces relevantes específicos de este modelo en la búsqueda web. Los resultados de búsqueda se refieren a otros proyectos llamados "Pulsar" no relacionados.)

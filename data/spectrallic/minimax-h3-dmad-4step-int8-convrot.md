@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Pasos de muestreo | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MiniMax-H3-DMAD-4step-int8-convrot (este) | no disponible | no disponible | 4 (CFG 1.0) | INT8 ConvRot | MiniMax H3 Community License | HuggingFace, single-file |
-| Comfy-Org/MiniMax-H3 (INT8 convrot oficial) | no disponible | no disponible | sin destilacion few-step | INT8 ConvRot | MiniMax H3 Community License | HuggingFace |
-| Comfy-Org/MiniMax-H3 (bf16 pruned) | no disponible | no disponible | sin destilacion few-step | BF16 | MiniMax H3 Community License | HuggingFace |
-| ZhengmingYu/DMAD (LoRA) | no disponible | no disponible | 4 (via LoRA) | requiere cargador LoRA | no disponible | HuggingFace |
+| MiniMax-H3-DMAD-4step-int8-convrot (este) | no disponible | no disponible | 4 (CFG 1.0) | INT8 ConvRot | MiniMax H3 Community License | Hugging Face, single-file |
+| Comfy-Org/MiniMax-H3 (INT8 convrot oficial) | no disponible | no disponible | sin destilacion few-step | INT8 ConvRot | MiniMax H3 Community License | Hugging Face |
+| Comfy-Org/MiniMax-H3 (bf16 pruned) | no disponible | no disponible | sin destilacion few-step | BF16 | MiniMax H3 Community License | Hugging Face |
+| ZhengmingYu/DMAD (LoRA) | no disponible | no disponible | 4 (via LoRA) | requiere cargador LoRA | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Spectrallic/MiniMax-H3-DMAD-4step-int8-convrot
+- Modelo en Hugging Face: https://huggingface.co/Spectrallic/MiniMax-H3-DMAD-4step-int8-convrot
 - Modelo base (Comfy-Org): https://huggingface.co/Comfy-Org/MiniMax-H3
 - Modelo base original (MiniMaxAI): https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Destilacion DMAD: https://huggingface.co/ZhengmingYu/DMAD

@@ -74,9 +74,9 @@ No se dispone de datos verificados de alternativas dentro de la información pro
 
 | Modelo | Parametros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rldx2_smoke_rldx_robotwin_ckpt200 | ~6,91 mil millones | horizonte de accion 50; ventana de video 4; contexto textual no disponible | no disponible | HuggingFace, safetensors |
-| RLWRLD/RLDX-1-PT (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace |
-| OpenVLA (referencia de la categoria VLA de 7B) | ~7 mil millones (dato externo no verificado aqui) | no disponible | no disponible | HuggingFace |
+| rldx2_smoke_rldx_robotwin_ckpt200 | ~6,91 mil millones | horizonte de accion 50; ventana de video 4; contexto textual no disponible | no disponible | Hugging Face, safetensors |
+| RLWRLD/RLDX-1-PT (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face |
+| OpenVLA (referencia de la categoria VLA de 7B) | ~7 mil millones (dato externo no verificado aqui) | no disponible | no disponible | Hugging Face |
 | Otros VLA de manipulacion (pi0, GR00T N1) | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone de datos verificados de alternativas dentro de la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/rldx2_smoke_rldx_robotwin_ckpt200
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/rldx2_smoke_rldx_robotwin_ckpt200
 - Modelo base: https://huggingface.co/RLWRLD/RLDX-1-PT
 - Dataset de entrenamiento: https://huggingface.co/datasets/TianxingChen/RoboTwin2.0
 - Repositorio RLDX-2 (adaptadores de evaluacion): https://github.com/myungkyuKoo/RLDX-2

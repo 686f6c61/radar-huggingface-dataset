@@ -6,7 +6,7 @@ Apertus-8B-MeditronFO-Q5_0-GGUF es una cuantización en formato GGUF (tipo Q5_0)
 
 El interés práctico de esta ficha reside en que el artefacto publicado es únicamente una conversión de formato: no añade capacidades nuevas ni modifica los pesos más allá de la cuantización a 5 bits. Su utilidad es permitir la ejecución del modelo médico en entornos con llama.cpp, sin necesidad de infraestructura de transformers ni de GPUs de datacenter. Con 8.053.338.176 parámetros totales y un repositorio de 5,6 GB, está pensado para despliegues locales en hardware de consumo.
 
-La relevancia actual es doble: por un lado, facilita el acceso a un modelo de dominio sanitario en formato portable; por otro, ilustra el patrón habitual de ecosistema en HuggingFace, donde un modelo base con licencia permisiva genera derivados cuantizados de terceros. Conviene tener presente que el modelo solo declara soporte de inglés y que la model card del derivado no aporta detalles adicionales sobre arquitectura o entrenamiento más allá de los del modelo original.
+La relevancia actual es doble: por un lado, facilita el acceso a un modelo de dominio sanitario en formato portable; por otro, ilustra el patrón habitual de ecosistema en Hugging Face, donde un modelo base con licencia permisiva genera derivados cuantizados de terceros. Conviene tener presente que el modelo solo declara soporte de inglés y que la model card del derivado no aporta detalles adicionales sobre arquitectura o entrenamiento más allá de los del modelo original.
 
 ## Especificaciones tecnicas
 
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa f
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BrazosDeDios/Apertus-8B-MeditronFO-Q5_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/BrazosDeDios/Apertus-8B-MeditronFO-Q5_0-GGUF
 - Modelo base: https://huggingface.co/EPFLiGHT/Apertus-8B-MeditronFO
 - Dataset asociado: https://huggingface.co/datasets/EPFLiGHT/fully-open-meditron
 - Espacio de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

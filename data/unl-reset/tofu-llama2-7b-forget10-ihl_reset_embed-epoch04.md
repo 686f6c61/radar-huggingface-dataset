@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch04 | 6,74 B | no disponible | Desaprendizaje TOFU (epoca 4/20) | llama2 | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_llama2-7b | ~6,74 B | 4096 (Llama 2) | Modelo base afinado en TOFU (sin olvido) | llama2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | ~6,74 B | 4096 | Chat general en ingles | llama2 | HuggingFace |
-| Otros checkpoints de la serie unl-reset (epocas distintas) | ~6,74 B | no disponible | Ablaciones de desaprendizaje | llama2 | HuggingFace |
+| unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch04 | 6,74 B | no disponible | Desaprendizaje TOFU (epoca 4/20) | llama2 | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_llama2-7b | ~6,74 B | 4096 (Llama 2) | Modelo base afinado en TOFU (sin olvido) | llama2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | ~6,74 B | 4096 | Chat general en ingles | llama2 | Hugging Face |
+| Otros checkpoints de la serie unl-reset (epocas distintas) | ~6,74 B | no disponible | Ablaciones de desaprendizaje | llama2 | Hugging Face |
 
 La comparación relevante es frente al modelo base `locuslab/tofu_ft_llama2-7b` (sin olvido) y frente a `NousResearch/Llama-2-7b-chat-hf` (origen de los embeddings reinicializados). No se dispone de métricas de rendimiento comparadas en la información proporcionada.
 
@@ -89,7 +89,7 @@ La comparación relevante es frente al modelo base `locuslab/tofu_ft_llama2-7b` 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch04
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch04
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Origen de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Dataset TOFU (referencia): https://huggingface.co/datasets/locuslab/TOFU

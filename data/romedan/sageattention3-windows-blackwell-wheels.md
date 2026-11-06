@@ -67,7 +67,7 @@ No se dispone de información suficiente para comparar esta compilación con otr
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/RomeDan/SageAttention3-Windows-Blackwell-Wheels
+- Repositorio de Hugging Face: https://huggingface.co/RomeDan/SageAttention3-Windows-Blackwell-Wheels
 - Repositorio de GitHub con build para Windows: https://github.com/sjh00/Sageattention3_Blackwell_Windows
 - Repositorio de GitHub con instrucciones de uso: https://github.com/sdbds/SageAttention-for-windows/tree/main/sageattention3_blackwell
 - Paper original de SageAttention3: https://arxiv.org/html/2505.11594v1

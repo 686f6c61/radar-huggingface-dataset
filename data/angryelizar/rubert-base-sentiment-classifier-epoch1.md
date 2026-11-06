@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`angryelizar/ruBert-base-sentiment-classifier-epoch1` es un modelo de clasificacion de texto publicado en HuggingFace por el usuario angryelizar. Por el nombre del repositorio y la etiqueta `bert`, se trata de un ajuste fino (fine-tuning) de un modelo de la familia RuBERT orientado a analisis de sentimiento, con 178.309.635 parametros almacenados en safetensors (0,7 GB de repositorio). El sufijo `epoch1` sugiere que el checkpoint corresponde a la primera epoca de entrenamiento, lo que en la practica suele implicar un ajuste todavia no convergido.
+`angryelizar/ruBert-base-sentiment-classifier-epoch1` es un modelo de clasificacion de texto publicado en Hugging Face por el usuario angryelizar. Por el nombre del repositorio y la etiqueta `bert`, se trata de un ajuste fino (fine-tuning) de un modelo de la familia RuBERT orientado a analisis de sentimiento, con 178.309.635 parametros almacenados en safetensors (0,7 GB de repositorio). El sufijo `epoch1` sugiere que el checkpoint corresponde a la primera epoca de entrenamiento, lo que en la practica suele implicar un ajuste todavia no convergido.
 
 El problema que resuelve es el clasico de sentiment analysis: asignar una etiqueta de polaridad (positiva, negativa o neutra, segun el esquema de etiquetas usado, que no se documenta) a un texto corto. La relevancia de este tipo de modelos reside en su bajo coste de inferencia: al ser un encoder BERT de ~178 M de parametros, cabe en cualquier GPU de consumo e incluso en CPU, y sirve como componente rapido en pipelines de moderacion, monitorizacion de opiniones o enrutado de tickets.
 
-La informacion publicada es extremadamente escasa: la model card es la plantilla autogenerada de HuggingFace con todos los campos marcados como `[More Information Needed]`, no se declara licencia, no se declaran idiomas y no hay resultados de evaluacion. La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo (unicamente paginas corporativas de Microsoft, sin relacion). Por tanto, buena parte de las especificaciones que siguen se marcan como "no disponible".
+La informacion publicada es extremadamente escasa: la model card es la plantilla autogenerada de Hugging Face con todos los campos marcados como `[More Information Needed]`, no se declara licencia, no se declaran idiomas y no hay resultados de evaluacion. La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo (unicamente paginas corporativas de Microsoft, sin relacion). Por tanto, buena parte de las especificaciones que siguen se marcan como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -35,7 +35,7 @@ Sobre el entrenamiento no hay ningun dato publicado: se desconoce el dataset de 
 - Clasificacion de texto: el pipeline declarado es `text-classification`, es decir, asignacion de una etiqueta a una secuencia de entrada. El numero y nombre de las etiquetas no esta documentado.
 - Analisis de sentimiento: inferido del nombre del repositorio (`sentiment-classifier`). No confirmado en la model card.
 - Procesamiento de texto en ruso: plausible por el prefijo `ru`, pero no declarado por el autor.
-- Extraccion de embeddings: la etiqueta `text-embeddings-inference` indica que el modelo puede servirse mediante Text Embeddings Inference de HuggingFace, aunque un cabezal de clasificacion no produce embeddings de oracion de forma nativa.
+- Extraccion de embeddings: la etiqueta `text-embeddings-inference` indica que el modelo puede servirse mediante Text Embeddings Inference de Hugging Face, aunque un cabezal de clasificacion no produce embeddings de oracion de forma nativa.
 - Generacion de texto: no soportada. Es un encoder-only sin decodificador.
 - Tool calling / function calling: no soportado (arquitectura encoder-only, sin capacidad generativa).
 - Razonamiento multi-paso y agentes: no soportado.
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en int8: alrededor de 0,18 GB para los pesos, si se convierte manualmente (no hay version cuantizada publicada).
 - GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM es suficiente (GTX 1650, RTX 3050, RTX 3060, RTX 4090). No requiere A100 ni H100; usarlas seria un desperdicio de recursos.
 - Inferencia en CPU: perfectamente viable, especialmente con cuantizacion dinamica int8 mediante PyTorch u ONNX Runtime. Es probable que un solo nucleo moderno gestione decenas o cientos de peticiones por segundo, aunque no hay cifras publicadas.
-- Opciones de despliegue: HuggingFace `transformers` con `pipeline("text-classification")`, Text Embeddings Inference (etiqueta `text-embeddings-inference` del repo), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), y exportacion a ONNX con `optimum`. vLLM y llama.cpp no estan orientados a este tipo de modelo; TGI tampoco es la opcion natural para un clasificador encoder-only.
+- Opciones de despliegue: Hugging Face `transformers` con `pipeline("text-classification")`, Text Embeddings Inference (etiqueta `text-embeddings-inference` del repo), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), y exportacion a ONNX con `optimum`. vLLM y llama.cpp no estan orientados a este tipo de modelo; TGI tampoco es la opcion natural para un clasificador encoder-only.
 - Latencia y throughput: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -92,12 +92,12 @@ La conclusion defendible con los datos disponibles es limitada: frente a estas a
 - Sin garantia de contexto largo: un BERT clasico suele truncar a 512 tokens o menos, y el autor no especifica el limite real. Textos largos podrian truncarse silenciosamente.
 - Cero traccion en la comunidad: 0 descargas y 0 likes en el momento del analisis. No hay issues, discusiones ni validacion independiente que permitan confiar en el modelo.
 - Metadatos anomalos: la fecha de creacion y la de actualizacion son 2026-09-13, una fecha futura. Esto sugiere un error de sistema o un artefacto en los metadatos, lo que refuerza la cautela sobre la calidad del repositorio.
-- Etiqueta `arxiv:1910.09700` enganosa: ese identificador corresponde al articulo de Lacoste et al. sobre estimacion de impacto ambiental del machine learning, citado en la plantilla de HuggingFace. No es el paper del modelo ni describe su metodo.
+- Etiqueta `arxiv:1910.09700` enganosa: ese identificador corresponde al articulo de Lacoste et al. sobre estimacion de impacto ambiental del machine learning, citado en la plantilla de Hugging Face. No es el paper del modelo ni describe su metodo.
 - Recomendacion operativa: si se necesita un clasificador de sentimiento en ruso, conviene partir de un modelo base verificado (por ejemplo RuBERT) y ajustarlo con datos propios, o usar un clasificador de la comunidad con evaluacion publicada. Este checkpoint no es una base solida para produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/angryelizar/ruBert-base-sentiment-classifier-epoch1
+- Modelo en Hugging Face: https://huggingface.co/angryelizar/ruBert-base-sentiment-classifier-epoch1
 - Paper citado en las etiquetas (Lacoste et al., 2019, estimacion de impacto ambiental, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental referenciada en la plantilla: https://mlco2.github.io/impact
 - Repositorio, paper, demo y contacto del autor: no disponibles. La model card no incluye ninguno de estos campos.

@@ -4,7 +4,7 @@
 
 `svpe-trov/notes-robotics-vision-language` no es un modelo entrenado, sino un repositorio de notas de investigación exploratoria sobre robótica y visión-lenguaje. La model card lo declara explícitamente: registra una comparación prevista, los posibles factores de confusión y los requisitos de reproducibilidad antes de publicar cualquier resultado de benchmark. No incluye checkpoint entrenado, código, ablaciones completas ni métricas.
 
-El repositorio contiene únicamente dos archivos de texto (`summary.md` y `README.md`) y un artefacto safetensors con 49.600 parámetros, un volumen incompatible con cualquier transformer funcional y que apunta a un fichero auxiliar o de prueba. Los tags de HuggingFace incluyen `transformer`, pero la documentación no describe arquitectura, tokenizador, datos de entrenamiento ni objetivo de entrenamiento.
+El repositorio contiene únicamente dos archivos de texto (`summary.md` y `README.md`) y un artefacto safetensors con 49.600 parámetros, un volumen incompatible con cualquier transformer funcional y que apunta a un fichero auxiliar o de prueba. Los tags de Hugging Face incluyen `transformer`, pero la documentación no describe arquitectura, tokenizador, datos de entrenamiento ni objetivo de entrenamiento.
 
 Su relevancia es, por tanto, documental y no técnica: sirve como plantilla de higiene metodológica para quien prepare experimentos con modelos visión-lenguaje-acción (VLA) en robótica, separando explícitamente hipótesis de resultados. Cualquier evaluación de capacidades, contexto o rendimiento queda fuera del alcance de lo publicado.
 
@@ -42,7 +42,7 @@ Tampoco hay datos sobre corpus de entrenamiento, número de tokens, composición
 - Revisión de políticas de reproducibilidad en un laboratorio de robótica: la nota exige que cualquier resultado futuro incluya versiones de dataset, comandos, semillas, hardware y logs en bruto.
 - Documentación de decisiones previas a un proyecto de investigación: sirve como registro de hipótesis falsables antes de ejecutar experimentos, útil en revisiones internas o auditorías.
 - Material de formación para investigadores noveles: ilustra la separación entre planes, hipótesis y resultados medidos, un error frecuente en notas de investigación publicadas.
-- Referencia para la revisión por pares de artefactos en HuggingFace: permite contrastar qué declara un repositorio frente a lo que realmente contiene (pesos, código, métricas).
+- Referencia para la revisión por pares de artefactos en Hugging Face: permite contrastar qué declara un repositorio frente a lo que realmente contiene (pesos, código, métricas).
 - Punto de partida bibliográfico sobre VLA en robótica: las referencias citadas en la nota pueden orientar una primera lectura, aunque no sustituyen a una revisión sistemática.
 - No es adecuado para inferencia en producción, generación de código, atención al cliente ni ninguna tarea de NLP: no existe un checkpoint funcional que ejecutar.
 
@@ -83,7 +83,7 @@ Frente a modelos VLA reales (por ejemplo, familias que combinan un codificador v
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/svpe-trov/notes-robotics-vision-language
+- Repositorio en Hugging Face: https://huggingface.co/svpe-trov/notes-robotics-vision-language
 - Repositorio homólogo (Stijnvanleeuwen): https://huggingface.co/Stijnvanleeuwen/notes-robotics-vision-language
 - Repositorio homólogo (Katoriku): https://huggingface.co/Katoriku/robotics-vision-language-notes
 - Guía sobre modelos visión-lenguaje-acción en robótica (Smashing Robotics, octubre de 2026): https://www.smashingrobotics.com/what-are-vision-language-action-models-in-robotics/

@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch06 | 6,74 B | no disponible | Unlearning TOFU, epoch 6/20 | llama2 | HuggingFace |
-| locuslab/tofu_ft_llama2-7b | 6,74 B | 4096 | Ajuste fino completo sobre TOFU (sin olvido) | llama2 | HuggingFace |
-| meta-llama/Llama-2-7b-chat-hf | 6,74 B | 4096 | Chat alineado con RLHF | llama2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | 6,74 B | 4096 | Replicacion de Llama 2 chat | llama2 | HuggingFace |
+| unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch06 | 6,74 B | no disponible | Unlearning TOFU, epoch 6/20 | llama2 | Hugging Face |
+| locuslab/tofu_ft_llama2-7b | 6,74 B | 4096 | Ajuste fino completo sobre TOFU (sin olvido) | llama2 | Hugging Face |
+| meta-llama/Llama-2-7b-chat-hf | 6,74 B | 4096 | Chat alineado con RLHF | llama2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | 6,74 B | 4096 | Replicacion de Llama 2 chat | llama2 | Hugging Face |
 
 La comparacion relevante es frente a `locuslab/tofu_ft_llama2-7b`, que actua como linea base sin desaprendizaje: este checkpoint deberia mostrar menor probabilidad de generar contenido del split `forget10` a costa de una posible perdida de calidad general. No hay datos publicados que confirmen esa diferencia.
 
@@ -85,7 +85,7 @@ La comparacion relevante es frente a `locuslab/tofu_ft_llama2-7b`, que actua com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch06
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch06
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicializacion de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Modelo original Llama 2: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf

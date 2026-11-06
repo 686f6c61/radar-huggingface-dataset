@@ -86,7 +86,7 @@ No disponible. No se han publicado comparativas con otros draft models (p. ej., 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mgoin/Qwen3-4B-speculator.dflash2
+- Modelo en Hugging Face: https://huggingface.co/mgoin/Qwen3-4B-speculator.dflash2
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio Speculators (PR #1006): https://github.com/vllm-project/speculators/pull/1006
 - PR de vLLM para integración: https://github.com/vllm-project/vllm/pull/52816

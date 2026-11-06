@@ -98,7 +98,7 @@ No se dispone de comparativas publicadas con otros clasificadores de tipos de he
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/patronus-studio/husky-sight-tool-type-classifier
+- Modelo en Hugging Face: https://huggingface.co/patronus-studio/husky-sight-tool-type-classifier
 - Versión Edge (cuantizada): https://huggingface.co/patronus-studio/husky-sight-tool-type-classifier-edge
 - Husky Paw (clasificador de operación): https://huggingface.co/patronus-studio/husky-paw-tool-action-classifier
 - Husky Nose (clasificador de propiedades de seguridad): https://huggingface.co/patronus-studio/husky-nose-tool-security-properties-classifier

@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible (MMLU,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FastVideo/Pika-H3-Flex-NVFP4-FP4Attn-QAD
+- Hugging Face: https://huggingface.co/FastVideo/Pika-H3-Flex-NVFP4-FP4Attn-QAD
 - Modelo base: https://huggingface.co/Pika-Labs/Pika-H3-Flex
 - Modelo original: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Variante con atención BF16: https://huggingface.co/FastVideo/Pika-H3-Flex-NVFP4-QAD

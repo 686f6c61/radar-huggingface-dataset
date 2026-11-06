@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-Text es una variante derivada de Qwen/Qwen3.5-4B-Base, el modelo base multimodal de la familia Qwen3.5 desarrollada por Alibaba. La modificacion principal consiste en la eliminacion de las capas relacionadas con vision, dejando un modelo puramente de texto con 4.326.350.848 parametros (aproximadamente 4,3 mil millones). El autor de esta derivacion es el usuario de HuggingFace Harry20120330, que publica el modelo bajo licencia Apache 2.0 heredada del modelo base.
+Qwen3.5-4B-Text es una variante derivada de Qwen/Qwen3.5-4B-Base, el modelo base multimodal de la familia Qwen3.5 desarrollada por Alibaba. La modificacion principal consiste en la eliminacion de las capas relacionadas con vision, dejando un modelo puramente de texto con 4.326.350.848 parametros (aproximadamente 4,3 mil millones). El autor de esta derivacion es el usuario de Hugging Face Harry20120330, que publica el modelo bajo licencia Apache 2.0 heredada del modelo base.
 
 El modelo resuelve un problema concreto de eficiencia: quienes necesitan un modelo de texto de tamano medio no requieren cargar los pesos y la complejidad arquitectonica del procesamiento visual del modelo base original. Al eliminar esas capas, se reduce el peso del repositorio a 8,7 GB en safetensors y se simplifica el despliegue en pipelines de generacion de texto.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Vision | Licencia | Ajuste de seguridad | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.5-4B-Text (este) | 4,3 B | No disponible | No | Apache 2.0 | No | HuggingFace |
-| Qwen/Qwen3.5-4B-Base | No disponible en la informacion | No disponible | Si | Apache 2.0 (heredada) | No | HuggingFace |
+| Qwen3.5-4B-Text (este) | 4,3 B | No disponible | No | Apache 2.0 | No | Hugging Face |
+| Qwen/Qwen3.5-4B-Base | No disponible en la informacion | No disponible | Si | Apache 2.0 (heredada) | No | Hugging Face |
 | Alternativas de ~4 B de otras familias | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparativa con modelos de otras familias (Llama, Gemma, Phi, Mistral en el rango de 3-4 B) no se puede completar con datos verificables en la informacion proporcionada, por lo que se indica como no disponible.
@@ -84,5 +84,5 @@ La comparativa con modelos de otras familias (Llama, Gemma, Phi, Mistral en el r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Harry20120330/Qwen3.5-4B-Text
+- Modelo en Hugging Face: https://huggingface.co/Harry20120330/Qwen3.5-4B-Text
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base

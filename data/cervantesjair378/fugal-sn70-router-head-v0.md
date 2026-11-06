@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fugal SN70 router head v0 es una cabeza de enrutamiento lineal publicada por el usuario cervantesjair378 en HuggingFace. No se trata de un modelo de lenguaje generativo, sino de un componente auxiliar (un clasificador lineal de 17 salidas) que opera sobre embeddings congelados de Qwen3-0.6B para predecir la probabilidad de exito de cada uno de 17 modelos candidatos en una consulta dada. Forma parte del ecosistema de la subred 70 de Bittensor (Fugal), cuyo contrato de exito fija el perfil `qwen3-success-2048-v1` sobre la revision `c1899de289a04d12100db370d81485cdf75e47ca` del backbone.
+Fugal SN70 router head v0 es una cabeza de enrutamiento lineal publicada por el usuario cervantesjair378 en Hugging Face. No se trata de un modelo de lenguaje generativo, sino de un componente auxiliar (un clasificador lineal de 17 salidas) que opera sobre embeddings congelados de Qwen3-0.6B para predecir la probabilidad de exito de cada uno de 17 modelos candidatos en una consulta dada. Forma parte del ecosistema de la subred 70 de Bittensor (Fugal), cuyo contrato de exito fija el perfil `qwen3-success-2048-v1` sobre la revision `c1899de289a04d12100db370d81485cdf75e47ca` del backbone.
 
 El artefacto se distribuye como un bundle NumPy (`bootstrap_head17.npz`) con una matriz de pesos float32 de 17x1024 y un sesgo, junto con un informe de entrenamiento en JSON. La regla de enrutamiento definida en el contrato es `argmax(sigmoid(W@h + b) - 1.0 * cost)`, con las utilidades cuantizadas a 1e-4 antes del argmax.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fugal SN70 router head v0 | Cabeza de enrutamiento lineal | 17.425 | 2.048 (backbone) | MIT | HuggingFace |
+| Fugal SN70 router head v0 | Cabeza de enrutamiento lineal | 17.425 | 2.048 (backbone) | MIT | Hugging Face |
 | Trainer determinista de Fugal (referencia del autor) | Cabeza de enrutamiento | No disponible | 2.048 (backbone) | MIT | En `fugal-ai/fugal-subnet` |
 | Cabezas de enrutamiento genericas sobre embeddings | Clasificador lineal | Variable | Depende del backbone | Variable | No disponible |
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cervantesjair378/fugal-sn70-router-head-v0
+- Hugging Face: https://huggingface.co/cervantesjair378/fugal-sn70-router-head-v0
 - Repositorio de la subred Fugal: https://github.com/fugal-ai/fugal-subnet (referenciado en la model card)
 - Backbone Qwen3-0.6B: no disponible en la informacion proporcionada (revision `c1899de289a04d12100db370d81485cdf75e47ca`)
 - Paper, blog o demo: no disponibles en la informacion proporcionada

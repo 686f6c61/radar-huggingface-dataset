@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-l2_remove40_swapgap_b010 es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace. Se construye a partir de meta-llama/Llama-2-7b-chat-hf, al que se aplica una compresión SVD-LLM que elimina el 40,02 % de los parámetros densos, seguida de la restauración de un presupuesto del 1,000 % de componentes SVD seleccionados con la regla `swapgap`. El resultado declara una fracción de parámetros de 0,5998, con 5665 componentes restaurados y 5665 sustituidos, y semilla 42. El repositorio almacena safetensors con 6.738.415.616 parámetros y ocupa 13,5 GB.
+svd-safety-l2_remove40_swapgap_b010 es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face. Se construye a partir de meta-llama/Llama-2-7b-chat-hf, al que se aplica una compresión SVD-LLM que elimina el 40,02 % de los parámetros densos, seguida de la restauración de un presupuesto del 1,000 % de componentes SVD seleccionados con la regla `swapgap`. El resultado declara una fracción de parámetros de 0,5998, con 5665 componentes restaurados y 5665 sustituidos, y semilla 42. El repositorio almacena safetensors con 6.738.415.616 parámetros y ocupa 13,5 GB.
 
 El interés del modelo es metodológico, no de producto: forma parte de un grid experimental sobre reglas de selección de componentes y presupuestos de restauración, cuyo objetivo es cuantificar cómo la compresión por SVD degrada el comportamiento de seguridad de un modelo alineado y qué regla de selección lo repara mejor. Las métricas publicadas son AdvBench ASR 0,0538 y StrongREJECT ASR 0,1342 (juez HarmBench), sobre-rechazo macro de 0,1682 (WildGuard) y perplejidad de 11,6084 en WikiText-2.
 
@@ -86,10 +86,10 @@ Advertencia practica: si los tensores del checkpoint conservan la forma densa or
 
 | Modelo | Parametros | Contexto | Rendimiento en seguridad/calidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_remove40_swapgap_b010 | 6.738.415.616 almacenados; fraccion densa declarada 0,5998 | No indicado (base: 4096) | AdvBench ASR 0,0538; StrongREJECT ASR 0,1342; sobre-rechazo 0,1682; WikiText-2 ppl 11,6084 | Llama 2 Community License | HuggingFace, repositorio de investigacion, 0 descargas y 0 likes en el momento de la consulta |
-| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4096 | No comparable: no se aportan sus valores en las mismas metricas | Llama 2 Community License | HuggingFace, ampliamente desplegado |
-| meta-llama/Llama-3.1-8B-Instruct | Aproximadamente 8.000 millones | 128.000 | No comparable con los datos disponibles | Llama 3.1 Community License | HuggingFace |
-| mistralai/Mistral-7B-Instruct-v0.3 | Aproximadamente 7.200 millones | 32.000 | No comparable con los datos disponibles | Apache 2.0 | HuggingFace |
+| svd-safety-l2_remove40_swapgap_b010 | 6.738.415.616 almacenados; fraccion densa declarada 0,5998 | No indicado (base: 4096) | AdvBench ASR 0,0538; StrongREJECT ASR 0,1342; sobre-rechazo 0,1682; WikiText-2 ppl 11,6084 | Llama 2 Community License | Hugging Face, repositorio de investigacion, 0 descargas y 0 likes en el momento de la consulta |
+| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4096 | No comparable: no se aportan sus valores en las mismas metricas | Llama 2 Community License | Hugging Face, ampliamente desplegado |
+| meta-llama/Llama-3.1-8B-Instruct | Aproximadamente 8.000 millones | 128.000 | No comparable con los datos disponibles | Llama 3.1 Community License | Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.3 | Aproximadamente 7.200 millones | 32.000 | No comparable con los datos disponibles | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a parametros, contexto, licencia y disponibilidad porque la informacion proporcionada solo incluye metricas de este checkpoint. Cualquier comparacion de rendimiento exigiria ejecutar el mismo arnes de evaluacion sobre los modelos alternativos.
 
@@ -109,7 +109,7 @@ La comparativa se limita a parametros, contexto, licencia y disponibilidad porqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgap_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgap_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper de Llama 2: https://arxiv.org/abs/2307.09288
 - SVD-LLM (metodo de compresion citado en la model card): no se proporciona enlace en la informacion disponible
@@ -118,4 +118,4 @@ La comparativa se limita a parametros, contexto, licencia y disponibilidad porqu
 - WildGuard (evaluador de sobre-rechazo citado): no se proporciona enlace en la informacion disponible
 - Repositorio o demo adicional: no disponibles
 
-Nota: la busqueda web asociada a esta ficha no devolvio resultados relevantes sobre el modelo; los unicos enlaces verificables son los de HuggingFace y el paper de Llama 2.
+Nota: la busqueda web asociada a esta ficha no devolvio resultados relevantes sobre el modelo; los unicos enlaces verificables son los de Hugging Face y el paper de Llama 2.

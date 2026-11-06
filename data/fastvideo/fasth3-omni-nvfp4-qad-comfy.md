@@ -86,7 +86,7 @@ La diferencia práctica entre las cuatro variantes no es la capacidad, sino el c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FastVideo/FastH3-Omni-NVFP4-QAD-Comfy
+- Modelo en Hugging Face: https://huggingface.co/FastVideo/FastH3-Omni-NVFP4-QAD-Comfy
 - Modelo base BF16 (8 pasos): https://huggingface.co/FastVideo/FastVideo-FastH3-Omni-8-Step-V1
 - Variante NVFP4 QAD en formato FastVideo: https://huggingface.co/FastVideo/FastH3-OmniRef-NVFP4-QAD
 - Variante FP8: https://huggingface.co/FastVideo/FastH3-OmniRef-FP8

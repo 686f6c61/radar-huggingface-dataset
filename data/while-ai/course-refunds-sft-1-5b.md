@@ -25,7 +25,7 @@ Es, por tanto, una ficha relevante como referencia de ingeniería de fine-tuning
 | Dataset de entrenamiento | Export de 46 filas del propio curso (SFT) |
 | Configuración de entrenamiento | 40 pasos, 1 GPU A10G, ~35 segundos de entrenamiento, ejecución `lesson7-sft` |
 | Repositorio | 0,1 GB; `checkpoints/` no se publica |
-| Fecha de publicación | 22 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 22 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | pass@1 en el banco de 40 tareas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `while-ai/course-refunds-sft-1.5b` (este) | Adaptador LoRA sobre 1.5B | No disponible | 0,73 [0,63; 0,81] | Apache 2.0 | safetensors (PEFT/LoRA) | HuggingFace, 0 descargas |
-| `Qwen/Qwen2.5-1.5B-Instruct` (base) | 1.5B | No disponible en esta ficha | 0,25 [0,16; 0,35] | Apache 2.0 | safetensors | HuggingFace, ampliamente adoptado |
+| `while-ai/course-refunds-sft-1.5b` (este) | Adaptador LoRA sobre 1.5B | No disponible | 0,73 [0,63; 0,81] | Apache 2.0 | safetensors (PEFT/LoRA) | Hugging Face, 0 descargas |
+| `Qwen/Qwen2.5-1.5B-Instruct` (base) | 1.5B | No disponible en esta ficha | 0,25 [0,16; 0,35] | Apache 2.0 | safetensors | Hugging Face, ampliamente adoptado |
 | Otros adaptadores LoRA de dominio específico sobre Qwen2.5-1.5B | No disponible | No disponible | No disponible | Variable | safetensors (PEFT/LoRA) | No disponible |
 | Modelos de agente de mayor tamaño (por ejemplo, familias de 7B-70B) | No disponible | No disponible | No comparable: el banco de 40 tareas es específico de esta receta | Variable | Variable | No disponible |
 
@@ -103,7 +103,7 @@ La única comparación con datos es contra el propio modelo base antes del ajust
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/while-ai/course-refunds-sft-1.5b
+- Modelo en Hugging Face: https://huggingface.co/while-ai/course-refunds-sft-1.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Receta de entrenamiento (SFT): https://github.com/whilehq/whileai-sdk/tree/main/recipes/04-train/sft
 - Repositorio del SDK: https://github.com/whilehq/whileai-sdk

@@ -81,8 +81,8 @@ No se dispone de datos de rendimiento comparativos con otros modelos de generaci
 
 ## Enlaces
 
-- Repositorio HuggingFace del checkpoint cuantizado: https://huggingface.co/KaedeTai/HiDream-O1-Image-mlx-6bit-mdream
-- Modelo base en HuggingFace: https://huggingface.co/HiDream-ai/HiDream-O1-Image
+- Repositorio Hugging Face del checkpoint cuantizado: https://huggingface.co/KaedeTai/HiDream-O1-Image-mlx-6bit-mdream
+- Modelo base en Hugging Face: https://huggingface.co/HiDream-ai/HiDream-O1-Image
 - Repositorio GitHub del modelo base: https://github.com/HiDream-ai/HiDream-O1-Image
 - Repositorio GitHub de mdream: https://github.com/KaedeTai/mdream
 - Sitio web del proyecto HiDream: https://hidream.ai/

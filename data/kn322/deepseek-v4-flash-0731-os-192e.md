@@ -77,8 +77,8 @@ La comparativa se limita a modelos MoE de código abierto. Este modelo es una ve
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kn322/DeepSeek-V4-Flash-0731-os-192e
-- Modelo base en HuggingFace (referencia): https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
+- Hugging Face: https://huggingface.co/kn322/DeepSeek-V4-Flash-0731-os-192e
+- Modelo base en Hugging Face (referencia): https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Documentación de NVIDIA NIM: https://docs.api.nvidia.com/nim/reference/deepseek-ai-deepseek-v4-flash-0731
 - Model card de NVIDIA: https://build.nvidia.com/deepseek-ai/deepseek-v4-flash-0731/modelcard
 - Página oficial de DeepSeek: https://deepseek.com/en/index.html

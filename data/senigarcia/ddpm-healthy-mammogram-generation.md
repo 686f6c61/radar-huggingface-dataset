@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Tipo | Parametros | Contexto/resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| senigarcia/ddpm-healthy-mammogram-generation | DDPM (guided_diffusion) | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
+| senigarcia/ddpm-healthy-mammogram-generation | DDPM (guided_diffusion) | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
 | openai/guided-diffusion | DDPM/ADM | ~552 M (256x256) | 256x256 / 512x512 | MIT (codigo) | GitHub + checkpoints |
-| CompVis/stable-diffusion-v1-4 | Latent diffusion | ~860 M UNet | 512x512 | CreativeML OpenRAIL-M | HuggingFace |
-| runwayml/stable-diffusion-v1-5 | Latent diffusion | ~860 M UNet | 512x512 | CreativeML OpenRAIL-M | HuggingFace |
+| CompVis/stable-diffusion-v1-4 | Latent diffusion | ~860 M UNet | 512x512 | CreativeML OpenRAIL-M | Hugging Face |
+| runwayml/stable-diffusion-v1-5 | Latent diffusion | ~860 M UNet | 512x512 | CreativeML OpenRAIL-M | Hugging Face |
 
 La comparativa es orientativa: no existen metricas publicadas de este checkpoint que permitan comparar calidad de generacion con los anteriores. La diferencia principal es que los modelos citados tienen licencia explicita y documentacion de entrenamiento, mientras que este checkpoint no.
 
@@ -84,7 +84,7 @@ La comparativa es orientativa: no existen metricas publicadas de este checkpoint
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/senigarcia/ddpm-healthy-mammogram-generation
+- Hugging Face: https://huggingface.co/senigarcia/ddpm-healthy-mammogram-generation
 - Implementacion de referencia `guided_diffusion` (OpenAI): https://github.com/openai/guided-diffusion
 - Paper DDPM (Ho et al., 2020): https://arxiv.org/abs/2006.11239
 - Paper Diffusion Models Beat GANs (Dhariwal y Nichol, 2021): https://arxiv.org/abs/2105.05233

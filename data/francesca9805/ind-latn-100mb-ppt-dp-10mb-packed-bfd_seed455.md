@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `francesca9805/ind-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455` es un ajuste fino (fine-tune) del modelo base `goldfish-models/ind_latn_100mb`, desarrollado por el usuario francesca9805 y publicado en HuggingFace. Se trata de un modelo de generacion de texto de pequeno tamano, con 124.770.816 parametros reales confirmados por los pesos en safetensors, y un repositorio de 0,3 GB. La arquitectura de partida pertenece a la familia GPT-2 (etiqueta `gpt2` declarada en el repositorio), y el entrenamiento se ha realizado mediante SFT (supervised fine-tuning) con la libreria TRL.
+El modelo `francesca9805/ind-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455` es un ajuste fino (fine-tune) del modelo base `goldfish-models/ind_latn_100mb`, desarrollado por el usuario francesca9805 y publicado en Hugging Face. Se trata de un modelo de generacion de texto de pequeno tamano, con 124.770.816 parametros reales confirmados por los pesos en safetensors, y un repositorio de 0,3 GB. La arquitectura de partida pertenece a la familia GPT-2 (etiqueta `gpt2` declarada en el repositorio), y el entrenamiento se ha realizado mediante SFT (supervised fine-tuning) con la libreria TRL.
 
 El modelo resuelve una tarea acotada: continuar y generar texto en el idioma del corpus base, que por la nomenclatura del modelo original (`ind_latn`) corresponde a indonesio en escritura latina. Su relevancia es fundamentalmente experimental y de investigacion: forma parte de una familia de ejecuciones de ajuste fino con distintos hiperparametros y semillas (el sufijo `seed455` y los descriptores `ppt-Dp-10mb-packed-bfd` apuntan a una configuracion concreta de entrenamiento dentro de una bateria de experimentos). No es un modelo orientado a produccion generalista, sino una pieza dentro de un estudio comparativo de recetas de entrenamiento sobre modelos pequenos.
 
-Con algo mas de 124 millones de parametros, el modelo es ejecutable en CPU y en cualquier GPU de consumo, e incluso en movil o entornos embebidos mediante cuantizacion. El registro de HuggingFace no declara licencia, idiomas ni resultados de evaluacion, por lo que buena parte de sus caracteristicas tecnicas deben inferirse de su modelo base y no de documentacion explicita.
+Con algo mas de 124 millones de parametros, el modelo es ejecutable en CPU y en cualquier GPU de consumo, e incluso en movil o entornos embebidos mediante cuantizacion. El registro de Hugging Face no declara licencia, idiomas ni resultados de evaluacion, por lo que buena parte de sus caracteristicas tecnicas deben inferirse de su modelo base y no de documentacion explicita.
 
 ## Especificaciones tecnicas
 
@@ -32,11 +32,11 @@ El entrenamiento se ha realizado con SFT (supervised fine-tuning) usando TRL 0.2
 - Generacion de texto autoregresiva: el pipeline declarado es `text-generation`, y la model card incluye un ejemplo de uso conversacional con `transformers.pipeline`, con formato de mensajes rol/contenido.
 - Ajuste por instrucciones: al haberse entrenado con SFT a partir de un formato de conversacion, el modelo esta preparado para responder a prompts tipo chat, aunque sin garantias de calidad dadas las dimensiones.
 - Generacion en el idioma del modelo base: por herencia de `goldfish-models/ind_latn_100mb`, la competencia linguistica principal se espera en indonesio en escritura latina.
-- Capacidades multilingues: no declaradas. El registro de HuggingFace no especifica idiomas soportados.
+- Capacidades multilingues: no declaradas. El registro de Hugging Face no especifica idiomas soportados.
 - Tool calling / function calling: no disponible. No hay evidencia de soporte en la model card.
 - Uso en agentes y razonamiento multi-paso: no disponible. No se documenta ningun modo de pensamiento, planificacion o ejecucion de herramientas.
 - Vision, audio o modalidades adicionales: no disponible. El modelo es exclusivamente de texto.
-- Compatibilidad de despliegue: etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad con TGI y con los endpoints gestionados de HuggingFace.
+- Compatibilidad de despliegue: etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad con TGI y con los endpoints gestionados de Hugging Face.
 
 ## Casos de uso
 
@@ -59,17 +59,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en INT8: en torno a 125 MB.
 - VRAM estimada en INT4 (Q4_K_M): en torno a 65-100 MB. Un agregador externo cifra en 0,2 GB la VRAM necesaria para la variante hermana de 124,8 M de parametros.
 - Cabe en cualquier GPU de consumo: GTX 1050 Ti, RTX 3060, RTX 4090, etc. Tambien funciona en CPU sin dificultad, e incluso en dispositivos embebidos tras cuantizar.
-- Opciones de despliegue: transformers (pipeline nativo), TGI (etiqueta `text-generation-inference`), endpoints gestionados de HuggingFace (etiqueta `endpoints_compatible`), vLLM, llama.cpp y Ollama tras convertir los pesos a GGUF.
+- Opciones de despliegue: transformers (pipeline nativo), TGI (etiqueta `text-generation-inference`), endpoints gestionados de Hugging Face (etiqueta `endpoints_compatible`), vLLM, llama.cpp y Ollama tras convertir los pesos a GGUF.
 - Latencia y throughput estimados: no disponibles. No se aportan mediciones de tokens por segundo ni de tiempo de primera respuesta.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `francesca9805/ind-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455` | 124,77 M | no disponible | no disponible | HuggingFace |
-| `goldfish-models/ind_latn_100mb` (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
-| `fpadovani/ind-latn-100mb-ppt-shuff-dyck-100mb_seed455` | 124,8 M | no disponible | no disponible | HuggingFace / LLM Explorer |
-| `fpadovani/ind-latn-10mb-ppt-Dp-100mb_seed455` | 39,1 M (segun LLM Explorer) | no disponible | no disponible | HuggingFace / LLM Explorer / FriendliAI |
+| `francesca9805/ind-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455` | 124,77 M | no disponible | no disponible | Hugging Face |
+| `goldfish-models/ind_latn_100mb` (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
+| `fpadovani/ind-latn-100mb-ppt-shuff-dyck-100mb_seed455` | 124,8 M | no disponible | no disponible | Hugging Face / LLM Explorer |
+| `fpadovani/ind-latn-10mb-ppt-Dp-100mb_seed455` | 39,1 M (segun LLM Explorer) | no disponible | no disponible | Hugging Face / LLM Explorer / FriendliAI |
 
 Las tres variantes comparten origen (`goldfish-models/ind_latn_100mb`) y receta de ajuste con TRL, diferenciandose en la configuracion de datos y la semilla. No se dispone de metricas comparativas de rendimiento entre ellas.
 
@@ -87,7 +87,7 @@ Las tres variantes comparten origen (`goldfish-models/ind_latn_100mb`) y receta 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ind-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ind-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/ind_latn_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/5vvk26ee
 - Repositorio de TRL: https://github.com/huggingface/trl

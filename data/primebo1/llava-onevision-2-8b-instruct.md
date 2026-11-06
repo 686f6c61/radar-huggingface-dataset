@@ -4,7 +4,7 @@
 
 LLaVA-OneVision-2-8B-Instruct es un modelo multimodal de visión y lenguaje que procesa imágenes individuales, múltiples imágenes y vídeo, desarrollado por Glint Lab y distribuido a través del repositorio de PrimeBo1 (el checkpoint original reside en `lmms-lab-encoder`). Se basa en un backbone de lenguaje Qwen3-8B combinado con un encoder de visión de estilo OneVision, lo que le permite generar respuestas textuales a partir de contenido visual. El modelo está diseñado para unificar la comprensión de imagen y vídeo en una única arquitectura de 8.500 millones de parámetros, con soporte para vídeo largo mediante un backend de codec que optimiza la selección de fotogramas.
 
-La relevancia de este modelo radica en su enfoque completamente abierto: el proyecto LLaVA-OneVision-2 publica todo el pipeline (datos, encoders, entrenamiento, checkpoints y logs), lo que lo convierte en una opción atractiva para investigación y desarrollo. Su licencia Apache-2.0 permite uso comercial sin restricciones, y su tamaño de 8B lo sitúa en un rango accesible para GPUs de consumo con cuantización. El modelo se distribuye como checkpoint de HuggingFace `transformers` con código personalizado (`trust_remote_code=True`), e incluye dos backends de vídeo: uno de muestreo uniforme de fotogramas y otro basado en codec que emplea vectores de movimiento y coste de bits para mejorar la precisión en vídeos largos con el mismo presupuesto de tokens.
+La relevancia de este modelo radica en su enfoque completamente abierto: el proyecto LLaVA-OneVision-2 publica todo el pipeline (datos, encoders, entrenamiento, checkpoints y logs), lo que lo convierte en una opción atractiva para investigación y desarrollo. Su licencia Apache-2.0 permite uso comercial sin restricciones, y su tamaño de 8B lo sitúa en un rango accesible para GPUs de consumo con cuantización. El modelo se distribuye como checkpoint de Hugging Face `transformers` con código personalizado (`trust_remote_code=True`), e incluye dos backends de vídeo: uno de muestreo uniforme de fotogramas y otro basado en codec que emplea vectores de movimiento y coste de bits para mejorar la precisión en vídeos largos con el mismo presupuesto de tokens.
 
 ## Especificaciones técnicas
 
@@ -29,7 +29,7 @@ No se han publicado detalles específicos sobre el entrenamiento (número de tok
 
 - Procesamiento de imágenes individuales, múltiples imágenes y vídeo en un solo modelo.
 - Generación de texto descriptivo y respuestas conversacionales a partir de contenido visual.
-- Soporte de chat multimodal mediante template de chat estándar de HuggingFace.
+- Soporte de chat multimodal mediante template de chat estándar de Hugging Face.
 - Dos backends de vídeo: muestreo uniforme de fotogramas (para vídeos cortos) y backend codec con empaquetado de canvas (recomendado para vídeos largos).
 - Capacidades multilingües en inglés y chino.
 - Integración con el ecosistema `transformers` (versión >= 5.7.0) y PyTorch >= 2.4.
@@ -53,24 +53,24 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - **VRAM estimada**: el checkpoint en bf16 ocupa aproximadamente 17,1 GB (tamaño del repositorio), por lo que se necesitan al menos 20 GB de VRAM para inferencia sin cuantización. Con cuantización de 8 bits o 4 bits, podría reducirse a 10-12 GB, pero no se proporcionan configuraciones oficiales.
 - **GPU recomendadas**: para inferencia en bf16, se recomienda una GPU con 24 GB o más, como RTX 4090, A100 (40 GB) o H100. En GPUs de 16 GB (RTX 4080, A5000) podría ser necesario cuantizar o usar offloading.
 - **Compatibilidad con GPUs de consumo**: es posible ejecutar el modelo en una RTX 3090/4090 (24 GB) con bf16, o en GPUs de 12-16 GB con cuantización, aunque no hay guías oficiales de cuantización.
-- **Opciones de despliegue**: el modelo se usa principalmente con `transformers` y `trust_remote_code=True`. No se menciona soporte para vLLM, llama.cpp u Ollama; dado que requiere código personalizado, es probable que solo funcione con el pipeline de HuggingFace.
+- **Opciones de despliegue**: el modelo se usa principalmente con `transformers` y `trust_remote_code=True`. No se menciona soporte para vLLM, llama.cpp u Ollama; dado que requiere código personalizado, es probable que solo funcione con el pipeline de Hugging Face.
 - **Latencia y throughput**: no disponible. El backend codec introduce un paso de preprocesamiento con `cv-preinfer` y ffmpeg, que añade latencia adicional en vídeos largos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LLaVA-OneVision-2-8B-Instruct | 8,5B | no disponible | Imagen, vídeo | Apache-2.0 | HuggingFace (código personalizado) |
-| LLaVA-OneVision (original) | 7B/8B | no disponible | Imagen, vídeo | Apache-2.0 | HuggingFace |
-| Qwen2-VL-7B | 7,6B | 32K | Imagen, vídeo | Apache-2.0 | HuggingFace |
-| InternVL2-8B | 8,1B | 32K | Imagen, vídeo | MIT | HuggingFace |
+| LLaVA-OneVision-2-8B-Instruct | 8,5B | no disponible | Imagen, vídeo | Apache-2.0 | Hugging Face (código personalizado) |
+| LLaVA-OneVision (original) | 7B/8B | no disponible | Imagen, vídeo | Apache-2.0 | Hugging Face |
+| Qwen2-VL-7B | 7,6B | 32K | Imagen, vídeo | Apache-2.0 | Hugging Face |
+| InternVL2-8B | 8,1B | 32K | Imagen, vídeo | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. Las alternativas mencionadas son modelos de tamaño similar con capacidades multimodales, pero LLaVA-OneVision-2 se distingue por su pipeline completamente abierto y el backend de vídeo basado en codec.
 
 ## Limitaciones y advertencias
 
 - **Idiomas limitados**: solo soporta inglés y chino; no hay soporte para español u otros idiomas, lo que restringe su uso en entornos multilingües.
-- **Dependencia de código personalizado**: requiere `trust_remote_code=True`, lo que implica ejecutar código no auditado por HuggingFace. Se recomienda revisar el código antes de usarlo en producción.
+- **Dependencia de código personalizado**: requiere `trust_remote_code=True`, lo que implica ejecutar código no auditado por Hugging Face. Se recomienda revisar el código antes de usarlo en producción.
 - **Requisitos adicionales para vídeo**: el backend codec necesita `ffmpeg` (versión 4.4.x-7.x), `cv-preinfer` (paquete `codec-video-prep`), OpenCV y POSIX `flock`. Además, requiere aproximadamente 2 GB de espacio en disco por vídeo procesado para el caché.
 - **Comportamiento en vídeos cortos**: si el vídeo tiene menos fotogramas de los necesarios para el backend codec, se emite una advertencia y la inferencia puede degradarse; se recomienda usar el backend de muestreo uniforme para clips cortos.
 - **Riesgo de alucinación**: no se han publicado evaluaciones específicas, pero como modelo generativo multimodal, puede producir descripciones inexactas o inventar detalles en imágenes o vídeos ambiguos.
@@ -79,8 +79,8 @@ No se dispone de datos de rendimiento comparativo. Las alternativas mencionadas 
 
 ## Enlaces
 
-- Repositorio HuggingFace (PrimeBo1): https://huggingface.co/PrimeBo1/LLaVA-OneVision-2-8B-Instruct
-- Repositorio HuggingFace original (lmms-lab-encoder): https://huggingface.co/lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct
+- Repositorio Hugging Face (PrimeBo1): https://huggingface.co/PrimeBo1/LLaVA-OneVision-2-8B-Instruct
+- Repositorio Hugging Face original (lmms-lab-encoder): https://huggingface.co/lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct
 - Repositorio GitHub del proyecto: https://github.com/EvolvingLMMs-Lab/LLaVA-OneVision-2
 - Página del proyecto: https://evolvinglmms-lab.github.io/LLaVA-OneVision-2/
 - Ficha en ThinkLLM: https://thinkllm.dev/models/llava-onevision-2-8b-instruct

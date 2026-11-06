@@ -63,10 +63,10 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparativa se l
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gpt2vl-stackformer-v2 | GPT-2 + CLIP + Perceiver | ~210M (estimado) | 128 tokens texto + 64 visuales | MIT | HuggingFace |
-| BLIP-base | ViT + BERT + decoder | ~232M | 512 tokens | MIT | HuggingFace |
-| GIT-base | Transformer encoder-decoder | ~174M | 512 tokens | MIT | HuggingFace |
-| OFA-base | Transformer encoder-decoder | ~180M | 512 tokens | MIT | HuggingFace |
+| gpt2vl-stackformer-v2 | GPT-2 + CLIP + Perceiver | ~210M (estimado) | 128 tokens texto + 64 visuales | MIT | Hugging Face |
+| BLIP-base | ViT + BERT + decoder | ~232M | 512 tokens | MIT | Hugging Face |
+| GIT-base | Transformer encoder-decoder | ~174M | 512 tokens | MIT | Hugging Face |
+| OFA-base | Transformer encoder-decoder | ~180M | 512 tokens | MIT | Hugging Face |
 
 La principal diferencia es que `gpt2vl-stackformer-v2` usa un enfoque de adaptadores congelados, mientras que BLIP, GIT y OFA entrenan el modelo completo. Esto reduce el coste de entrenamiento pero puede limitar la capacidad de adaptación a dominios específicos.
 
@@ -82,7 +82,7 @@ La principal diferencia es que `gpt2vl-stackformer-v2` usa un enfoque de adaptad
 
 ## Enlaces
 
-- [HuggingFace - gurumurthy3/gpt2vl-stackformer-v2](https://huggingface.co/gurumurthy3/gpt2vl-stackformer-v2)
+- [Hugging Face - gurumurthy3/gpt2vl-stackformer-v2](https://huggingface.co/gurumurthy3/gpt2vl-stackformer-v2)
 - [Dataset AKCIT/coco2017-captioning](https://huggingface.co/datasets/AKCIT/coco2017-captioning)
 - [Paper de Flamingo (arXiv:2204.14198)](https://arxiv.org/abs/2204.14198)
 - [GPT-2 (OpenAI)](https://openai.com/research/better-language-models)

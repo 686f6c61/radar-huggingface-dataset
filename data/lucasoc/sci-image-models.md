@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sci-Image-Markdown es un adaptador LoRA de tipo PEFT entrenado sobre el modelo vision-language Qwen2.5-VL-3B-Instruct, publicado por el usuario lucasoc en HuggingFace. Su proposito concreto es extraer los datos cuantitativos representados en paneles de figuras cientificas (graficas de lineas, barras, dispersion, etc.) y devolverlos como tablas Markdown limpias y estructuradas, en lugar de limitarse a describir la imagen. El adaptador resuelve un problema de extraccion estructurada de informacion a partir de figuras de articulos, un caso de uso frecuente en revisiones sistematicas, meta-analisis y construcción de bases de datos cientificas.
+Sci-Image-Markdown es un adaptador LoRA de tipo PEFT entrenado sobre el modelo vision-language Qwen2.5-VL-3B-Instruct, publicado por el usuario lucasoc en Hugging Face. Su proposito concreto es extraer los datos cuantitativos representados en paneles de figuras cientificas (graficas de lineas, barras, dispersion, etc.) y devolverlos como tablas Markdown limpias y estructuradas, en lugar de limitarse a describir la imagen. El adaptador resuelve un problema de extraccion estructurada de informacion a partir de figuras de articulos, un caso de uso frecuente en revisiones sistematicas, meta-analisis y construcción de bases de datos cientificas.
 
 Tecnicamente no es un modelo completo sino un adaptador de bajo rango (QLoRA con r=16 y alpha=32) que se carga sobre los pesos del modelo base de 3.000 millones de parametros. La innovacion principal declarada por el autor es la funcion de perdida utilizada durante el entrenamiento, denominada ICDAR Metric-Aware Loss, que combina una perdida diferenciable ponderada por token (numerica y estructural) con recompensas calculadas en GPU para Table Edit Distance (TEDS) y error RMS de celdas. El entrenamiento se realizo en una unica NVIDIA GTX 1660 con 6 GB de VRAM, lo que da una idea del bajo coste computacional del ajuste.
 
@@ -78,8 +78,8 @@ No se han publicado en la informacion disponible otros benchmarks estandarizados
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sci-image-models (este adaptador) | 3B (base) + LoRA | No disponible | Extraccion de tablas desde figuras cientificas | Apache 2.0 (adaptador) | HuggingFace |
-| Qwen2.5-VL-3B-Instruct (base, zero-shot) | 3B | No disponible | Vision-language general | Qwen Research License / Apache 2.0 | HuggingFace |
+| sci-image-models (este adaptador) | 3B (base) + LoRA | No disponible | Extraccion de tablas desde figuras cientificas | Apache 2.0 (adaptador) | Hugging Face |
+| Qwen2.5-VL-3B-Instruct (base, zero-shot) | 3B | No disponible | Vision-language general | Qwen Research License / Apache 2.0 | Hugging Face |
 | Modelos especializados de extraccion de tablas cientificas alternativos | No disponible | No disponible | Extraccion de tablas | No disponible | No disponible |
 
 La comparacion directa disponible en la model card es contra el modelo base sin ajustar y contra un ajuste fino estandar con entropia cruzada, ambos superados en las metricas de precision de celdas, F1 y TEDS. No se dispone de datos sobre otros adaptadores o modelos especializados equivalentes para establecer una comparativa mas amplia.
@@ -98,7 +98,7 @@ La comparacion directa disponible en la model card es contra el modelo base sin 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucasoc/sci-image-models
+- Modelo en Hugging Face: https://huggingface.co/lucasoc/sci-image-models
 - Repositorio de codigo del autor: https://github.com/lucasdocunha/sci-image-markdown
 - Modelo base Qwen2.5-VL-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Repositorio oficial de Qwen2.5-VL: https://github.com/QwenLM/Qwen2.5-VL

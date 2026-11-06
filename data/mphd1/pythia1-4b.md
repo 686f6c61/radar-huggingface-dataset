@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mphd1/pythia1.4b` es un ajuste fino (fine-tune) del modelo base `EleutherAI/pythia-1.4b`, publicado por el usuario mphd1 en HuggingFace. Se trata de un modelo decoder-only de tipo GPT-NeoX con 1.414.647.808 parámetros (aproximadamente 1,41 mil millones), pesos en safetensors y licencia Apache 2.0. El repositorio ocupa 5,7 GB e incluye únicamente los pesos resultantes del entrenamiento, sin artefactos cuantizados ni documentación adicional.
+`mphd1/pythia1.4b` es un ajuste fino (fine-tune) del modelo base `EleutherAI/pythia-1.4b`, publicado por el usuario mphd1 en Hugging Face. Se trata de un modelo decoder-only de tipo GPT-NeoX con 1.414.647.808 parámetros (aproximadamente 1,41 mil millones), pesos en safetensors y licencia Apache 2.0. El repositorio ocupa 5,7 GB e incluye únicamente los pesos resultantes del entrenamiento, sin artefactos cuantizados ni documentación adicional.
 
 La relevancia de esta ficha es limitada y conviene ser explícito al respecto: la model card está generada automáticamente por la librería `Trainer` de Transformers y no aporta información sobre el conjunto de datos de entrenamiento ("on an unknown dataset"), los usos previstos, las limitaciones ni los datos de evaluación. El `model-index` declara una entrada con la lista de resultados vacía y la sección de resultados de entrenamiento está en blanco. El repositorio registra 0 descargas y 0 "likes", por lo que no existe validación por parte de la comunidad.
 
@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la información disponible. El `
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mphd1/pythia1.4b | 1,41 B | no indicado (base: 2048) | Apache 2.0 | HuggingFace, 0 descargas | Ajuste sin dataset ni evaluación documentados |
-| EleutherAI/pythia-1.4b | 1,41 B | 2048 | Apache 2.0 | HuggingFace, muy difundido | Modelo base con checkpoints intermedios y benchmarks públicos |
-| TinyLlama-1.1B | 1,1 B | 2048 | Apache 2.0 | HuggingFace | Ajustado con instrucciones; pensado para conversación |
-| Qwen2.5-1.5B | 1,5 B | 32768 | Apache 2.0 (la mayoría de variantes) | HuggingFace | Contexto muy superior y multilingüe; alternativa directa en tamaño |
-| GPT-2 XL | 1,5 B | 1024 | Licencia tipo MIT de OpenAI | HuggingFace | Referencia histórica de la misma escala, sin ajuste de instrucciones |
+| mphd1/pythia1.4b | 1,41 B | no indicado (base: 2048) | Apache 2.0 | Hugging Face, 0 descargas | Ajuste sin dataset ni evaluación documentados |
+| EleutherAI/pythia-1.4b | 1,41 B | 2048 | Apache 2.0 | Hugging Face, muy difundido | Modelo base con checkpoints intermedios y benchmarks públicos |
+| TinyLlama-1.1B | 1,1 B | 2048 | Apache 2.0 | Hugging Face | Ajustado con instrucciones; pensado para conversación |
+| Qwen2.5-1.5B | 1,5 B | 32768 | Apache 2.0 (la mayoría de variantes) | Hugging Face | Contexto muy superior y multilingüe; alternativa directa en tamaño |
+| GPT-2 XL | 1,5 B | 1024 | Licencia tipo MIT de OpenAI | Hugging Face | Referencia histórica de la misma escala, sin ajuste de instrucciones |
 
 La comparación relevante es con el propio modelo base: este checkpoint no aporta ninguna ventaja documentada frente a `EleutherAI/pythia-1.4b` (mismos parámetros, misma arquitectura, misma licencia), y sí añade una incógnita sobre los datos de ajuste. Frente a TinyLlama o Qwen2.5-1.5B pierde en contexto, en soporte multilingüe y, muy probablemente, en seguimiento de instrucciones.
 
@@ -90,7 +90,7 @@ La comparación relevante es con el propio modelo base: este checkpoint no aport
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mphd1/pythia1.4b
+- Modelo en Hugging Face: https://huggingface.co/mphd1/pythia1.4b
 - Modelo base: https://huggingface.co/EleutherAI/pythia-1.4b
 - Artículo de Pythia (Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling): https://arxiv.org/abs/2304.01373
 - Repositorio de Pythia en GitHub: https://github.com/EleutherAI/pythia

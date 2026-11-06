@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rickye26/pplx-decider-flash-v1.2-q4` es un repositorio publicado en HuggingFace por el usuario rickye26 bajo licencia Apache 2.0. La model card asociada está practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no registra descargas ni "likes" y no tiene pipeline declarado, por lo que se trata de una publicacion sin traccion ni validacion por parte de la comunidad.
+`rickye26/pplx-decider-flash-v1.2-q4` es un repositorio publicado en Hugging Face por el usuario rickye26 bajo licencia Apache 2.0. La model card asociada está practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no registra descargas ni "likes" y no tiene pipeline declarado, por lo que se trata de una publicacion sin traccion ni validacion por parte de la comunidad.
 
 El nombre del repositorio sugiere dos cosas que no pueden confirmarse con la informacion disponible: el sufijo `q4` apunta a una version cuantizada a 4 bits, y el prefijo `pplx` podria remitir a un modelo derivado o relacionado con la familia Perplexity, aunque no hay ninguna evidencia documental que lo respalde. Cualquier afirmacion sobre el modelo base, el numero de parametros o la longitud de contexto seria especulativa.
 
@@ -66,7 +66,7 @@ No disponible. No ha sido posible identificar el modelo base ni la familia a la 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rickye26/pplx-decider-flash-v1.2-q4 | no disponible | no disponible | apache-2.0 | HuggingFace, sin descargas |
+| rickye26/pplx-decider-flash-v1.2-q4 | no disponible | no disponible | apache-2.0 | Hugging Face, sin descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,6 +83,6 @@ No disponible. No ha sido posible identificar el modelo base ni la familia a la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rickye26/pplx-decider-flash-v1.2-q4
+- Repositorio en Hugging Face: https://huggingface.co/rickye26/pplx-decider-flash-v1.2-q4
 - Model card (contenido completo: solo la licencia): https://huggingface.co/rickye26/pplx-decider-flash-v1.2-q4/blob/main/README.md
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web no ha devuelto ningun enlace relacionado con el modelo.

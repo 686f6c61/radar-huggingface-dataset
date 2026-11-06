@@ -6,7 +6,7 @@ Olune Perspectives Qwen3.5-4B v1.0 es un ajuste fino (finetune) del modelo base 
 
 El modelo cuenta con 4.205.751.296 parámetros totales (aproximadamente 4,2 mil millones) y está publicado bajo licencia Apache 2.0, lo que permite uso comercial con atribución. La model card indica que requiere un runtime con soporte para GGUF de Qwen3.5 y que acepta únicamente entrada de texto. Su relevancia actual radica en ser un ejemplo de especialización vertical de un modelo pequeño y abierto para un dominio concreto (filosofía), desplegable en hardware modesto.
 
-La información pública disponible es escasa: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y la model card no detalla el proceso de entrenamiento, los datos utilizados ni resultados de evaluación. Esta ficha refleja únicamente lo que el autor y los metadatos de HuggingFace hacen público.
+La información pública disponible es escasa: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y la model card no detalla el proceso de entrenamiento, los datos utilizados ni resultados de evaluación. Esta ficha refleja únicamente lo que el autor y los metadatos de Hugging Face hacen público.
 
 ## Especificaciones tecnicas
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de comparativas de rendimiento verificab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MeldhLLC/Olune-Perspectives-Qwen3.5-4B-v1.0
+- Modelo en Hugging Face: https://huggingface.co/MeldhLLC/Olune-Perspectives-Qwen3.5-4B-v1.0
 - Descarga directa del GGUF Q4_K_M: https://huggingface.co/MeldhLLC/Olune-Perspectives-Qwen3.5-4B-v1.0/resolve/main/olune-perspectives-qwen35-v1.0-Q4_K_M.gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Sitio del proyecto Olune: https://olune.ai/

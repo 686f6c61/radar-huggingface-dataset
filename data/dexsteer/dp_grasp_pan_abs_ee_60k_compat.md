@@ -77,7 +77,7 @@ No se dispone de datos comparativos en la información proporcionada. Como categ
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp_grasp_pan_abs_ee_60k_compat (DexSteer) | 278.928.794 | No aplica | No disponible | No disponible | HuggingFace, 0 descargas |
+| dp_grasp_pan_abs_ee_60k_compat (DexSteer) | 278.928.794 | No aplica | No disponible | No disponible | Hugging Face, 0 descargas |
 | Diffusion Policy (referencia original) | No disponible | No aplica | No disponible | No disponible | No disponible en esta consulta |
 | ACT (LeRobot) | No disponible | No aplica | No disponible | No disponible | No disponible en esta consulta |
 | SmolVLA / pi0 (VLA) | No disponible | No disponible | No disponible | No disponible | No disponible en esta consulta |
@@ -97,7 +97,7 @@ No se dispone de datos comparativos en la información proporcionada. Como categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DexSteer/dp_grasp_pan_abs_ee_60k_compat
+- Modelo en Hugging Face: https://huggingface.co/DexSteer/dp_grasp_pan_abs_ee_60k_compat
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentación de referencia del módulo de política de difusión: `lerobot.policies.diffusion.modeling_diffusion.DiffusionPolicy` (dentro del repositorio de LeRobot)
 - No se han encontrado otros enlaces relevantes en la búsqueda web: los resultados devueltos corresponden a guías de herramientas de diseño UX y no guardan relación con este modelo.

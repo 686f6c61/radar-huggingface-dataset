@@ -64,7 +64,7 @@ No disponible. Este repositorio no representa un modelo de IA comparable con LLM
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/openbenchmarks/parallel-fast
+- Repositorio Hugging Face: https://huggingface.co/openbenchmarks/parallel-fast
 - Documentacion de la API: https://docs.parallel.ai/api-reference/search/search
 - Leaderboard en vivo: https://parallel.ai
 - Dataset del benchmark: https://huggingface.co/datasets/openbenchmarks/OB-News-Websearch

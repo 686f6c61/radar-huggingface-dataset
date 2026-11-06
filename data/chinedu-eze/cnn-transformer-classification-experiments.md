@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chinedu-eze/cnn-transformer-classification-experiments` es un repositorio de codigo y pesos de inicializacion publicado por el usuario chinedu-eze en HuggingFace. No se trata de un modelo entrenado ni de un release listo para produccion, sino de una implementacion compacta en PyTorch de una arquitectura denominada Cnn Transformer orientada a tareas de clasificacion. El propio autor indica explicitamente que la configuracion "nano" esta pensada para revision de codigo, pruebas de humo (*smoke tests*) y experimentos controlados de pequeno tamano.
+`chinedu-eze/cnn-transformer-classification-experiments` es un repositorio de codigo y pesos de inicializacion publicado por el usuario chinedu-eze en Hugging Face. No se trata de un modelo entrenado ni de un release listo para produccion, sino de una implementacion compacta en PyTorch de una arquitectura denominada Cnn Transformer orientada a tareas de clasificacion. El propio autor indica explicitamente que la configuracion "nano" esta pensada para revision de codigo, pruebas de humo (*smoke tests*) y experimentos controlados de pequeno tamano.
 
 La relevancia de este repositorio es, por tanto, metodologica mas que de rendimiento: sirve como punto de partida reproducible para quien quiera experimentar con una arquitectura hibrida que combina componentes convolucionales y atencion dispersa con fusion por co-atencion. Incluye `main.py` con el modelo y un ejemplo ejecutable, `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de entrenamiento por defecto (optimizador Lion y scheduler coseno) y `model.safetensors` con un checkpoint de inicializacion valido pero no entrenado.
 
@@ -91,5 +91,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chinedu-eze/cnn-transformer-classification-experiments
+- Hugging Face: https://huggingface.co/chinedu-eze/cnn-transformer-classification-experiments
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo, papers, blogs o demos asociados. Las busquedas devuelven contenido sin relacion con el repositorio (articulos periodisticos y foros de tematica juridica).

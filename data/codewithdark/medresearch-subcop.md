@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `medresearch-subcop`, publicado por el usuario `codewithdark` en HuggingFace, se presenta como un posible asistente o copiloto para investigación médica. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican arquitectura, tamaño, licencia, idiomas ni datos de entrenamiento. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no contiene pesos del modelo ni archivos relevantes, o que estos no han sido subidos correctamente. Por tanto, no es posible verificar su funcionalidad ni su idoneidad para tareas reales.
+El modelo `medresearch-subcop`, publicado por el usuario `codewithdark` en Hugging Face, se presenta como un posible asistente o copiloto para investigación médica. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican arquitectura, tamaño, licencia, idiomas ni datos de entrenamiento. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no contiene pesos del modelo ni archivos relevantes, o que estos no han sido subidos correctamente. Por tanto, no es posible verificar su funcionalidad ni su idoneidad para tareas reales.
 
 A fecha de su creación (agosto de 2026), el modelo cuenta con solo 5 descargas y ningún "like", lo que indica una adopción mínima. Los únicos metadatos disponibles son los tags `safetensors` y `region:us`, que apuntan a un formato de pesos habitual y a una posible ubicación en servidores estadounidenses, pero sin más detalles técnicos. Ante esta falta de información, cualquier evaluación o uso en producción sería arriesgado y carente de fundamento.
 
@@ -54,6 +54,6 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/codewithdark/medresearch-subcop)
+- [Repositorio en Hugging Face](https://huggingface.co/codewithdark/medresearch-subcop)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la informacion proporcionada.

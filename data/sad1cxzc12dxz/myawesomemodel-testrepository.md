@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepository es un repositorio alojado en HuggingFace por el usuario SAD1CXZC12DXZ, publicado el 18 de septiembre de 2026 y con cero descargas y cero "likes" en el momento de la consulta. Su nombre y su contenido lo identifican como un repositorio de prueba y no como un modelo entrenado y puesto en produccion. El tamano del repositorio es de 0.0 GB, lo que sugiere que no contiene pesos ni ficheros de modelo descargables.
+MyAwesomeModel-TestRepository es un repositorio alojado en Hugging Face por el usuario SAD1CXZC12DXZ, publicado el 18 de septiembre de 2026 y con cero descargas y cero "likes" en el momento de la consulta. Su nombre y su contenido lo identifican como un repositorio de prueba y no como un modelo entrenado y puesto en produccion. El tamano del repositorio es de 0.0 GB, lo que sugiere que no contiene pesos ni ficheros de modelo descargables.
 
 Las etiquetas declaradas (transformers, pytorch, bert, feature-extraction) apuntan a un encoder tipo BERT orientado a extraccion de caracteristicas, es decir, a la generacion de representaciones vectoriales de texto en lugar de a la generacion de texto. La licencia declarada es MIT. No se especifican idiomas soportados, numero de parametros, longitud de contexto ni formatos de pesos, y no hay informacion de entrenamiento disponible.
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks verificables en la informacion disp
 - VRAM para inferencia: no disponible. Al no publicarse el numero de parametros ni los pesos, no es posible estimar el consumo de memoria.
 - GPU recomendadas: no disponible. Para un encoder BERT de tamano base, el rango habitual seria una GPU consumer de gama media (por ejemplo, RTX 3060 o superior) para inferencia en fp32 o fp16, pero esto es una extrapolacion de la familia BERT y no un dato del repositorio.
 - Compatibilidad con GPU consumer: no verificable sin pesos publicados. Un BERT-base cabria en cualquier GPU con 4-8 GB de VRAM, pero no se confirma que el modelo tenga ese tamano.
-- Opciones de despliegue: no disponible. La libreria declarada es transformers, por lo que en principio seria desplegable con el stack de HuggingFace (transformers + PyTorch) si existieran los pesos; no se confirma compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: no disponible. La libreria declarada es transformers, por lo que en principio seria desplegable con el stack de Hugging Face (transformers + PyTorch) si existieran los pesos; no se confirma compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -88,9 +88,9 @@ Dado que el repositorio no publica pesos, configuracion ni evaluaciones verifica
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | MyAwesomeModel-TestRepository | no disponible | no disponible | MIT | Repositorio sin pesos publicados (0.0 GB) |
-| BERT-base | 110 M (aprox.) | 512 tokens | Apache 2.0 | Pesos publicos en HuggingFace |
-| RoBERTa-base | 125 M (aprox.) | 512 tokens | MIT | Pesos publicos en HuggingFace |
-| DistilBERT-base | 66 M (aprox.) | 512 tokens | Apache 2.0 | Pesos publicos en HuggingFace |
+| BERT-base | 110 M (aprox.) | 512 tokens | Apache 2.0 | Pesos publicos en Hugging Face |
+| RoBERTa-base | 125 M (aprox.) | 512 tokens | MIT | Pesos publicos en Hugging Face |
+| DistilBERT-base | 66 M (aprox.) | 512 tokens | Apache 2.0 | Pesos publicos en Hugging Face |
 
 Los datos de BERT-base, RoBERTa-base y DistilBERT-base corresponden a especificaciones publicas conocidas de esos modelos y se incluyen unicamente como referencia de categoria.
 
@@ -107,7 +107,7 @@ Los datos de BERT-base, RoBERTa-base y DistilBERT-base corresponden a especifica
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SAD1CXZC12DXZ/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/SAD1CXZC12DXZ/MyAwesomeModel-TestRepository
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

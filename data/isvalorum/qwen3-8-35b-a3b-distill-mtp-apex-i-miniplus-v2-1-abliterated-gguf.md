@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks que permitan comparar este modelo con alter
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-MTP-APEX-I-MiniPlus-V2.1-Abliterated-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-MTP-APEX-I-MiniPlus-V2.1-Abliterated-GGUF
 - Release alineada del mismo autor: https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-MTP-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-35B-A3B-Distill
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo, su modelo base ni su receta de cuantizacion; los resultados obtenidos no guardan relacion con el contenido de esta ficha. No se dispone de papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-DPO-auto_gptq-int8-gs128-sym | 2.865.238.016 (safetensors) | no disponible | INT8 GPTQ, gs128, simetrica | apache-2.0 | HuggingFace |
-| allenai/Llama-3.1-Tulu-3-8B-DPO (base) | no disponible en la informacion | no disponible | sin cuantizar (bf16/fp16) | apache-2.0 | HuggingFace |
-| Llama 3.1 8B Instruct (Meta) | no disponible en la informacion | no disponible | multiples | licencia Llama 3.1 | HuggingFace |
+| fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-DPO-auto_gptq-int8-gs128-sym | 2.865.238.016 (safetensors) | no disponible | INT8 GPTQ, gs128, simetrica | apache-2.0 | Hugging Face |
+| allenai/Llama-3.1-Tulu-3-8B-DPO (base) | no disponible en la informacion | no disponible | sin cuantizar (bf16/fp16) | apache-2.0 | Hugging Face |
+| Llama 3.1 8B Instruct (Meta) | no disponible en la informacion | no disponible | multiples | licencia Llama 3.1 | Hugging Face |
 
 La comparativa se limita al modelo base y a la familia Llama 3.1 porque la informacion proporcionada no incluye datos de benchmarks ni de otros modelos Tulu 3. No se dispone de cifras de rendimiento para comparar calidad tras la cuantizacion.
 
@@ -81,7 +81,7 @@ La comparativa se limita al modelo base y a la familia Llama 3.1 porque la infor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-DPO-auto_gptq-int8-gs128-sym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-DPO-auto_gptq-int8-gs128-sym
 - Modelo base: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-DPO
 - Intel AutoRound: https://github.com/intel/auto-round
 - Pipeline de cuantizacion: https://git.epicdynamic.com/auto-round-pipeline

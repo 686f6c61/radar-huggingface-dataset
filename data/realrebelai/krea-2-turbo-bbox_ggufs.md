@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea-2-Turbo-BBOX_GGUFs es un repositorio de pesos cuantizados en formato GGUF publicado por el usuario realrebelai en HuggingFace. Por el nombre, se trata de una variante del modelo Krea 2 Turbo con soporte de *bounding boxes* (BBOX), presumiblemente orientada a generacion o edicion de imagen con control espacial mediante cajas delimitadoras. La model card publicada no contiene ninguna descripcion tecnica, ningun ejemplo de uso ni ninguna declaracion de licencia o autoria original del modelo base.
+Krea-2-Turbo-BBOX_GGUFs es un repositorio de pesos cuantizados en formato GGUF publicado por el usuario realrebelai en Hugging Face. Por el nombre, se trata de una variante del modelo Krea 2 Turbo con soporte de *bounding boxes* (BBOX), presumiblemente orientada a generacion o edicion de imagen con control espacial mediante cajas delimitadoras. La model card publicada no contiene ninguna descripcion tecnica, ningun ejemplo de uso ni ninguna declaracion de licencia o autoria original del modelo base.
 
 El repositorio no incluye informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni proceso de entrenamiento. Tampoco se declara la licencia (aparece como `unknown`), lo que impide determinar si su uso comercial esta permitido. A fecha de la informacion disponible, el repositorio registra 0 descargas y 0 likes, lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -71,5 +71,5 @@ No disponible. No se dispone de informacion sobre el modelo base Krea 2 Turbo ni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/realrebelai/Krea-2-Turbo-BBOX_GGUFs
+- Repositorio en Hugging Face: https://huggingface.co/realrebelai/Krea-2-Turbo-BBOX_GGUFs
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

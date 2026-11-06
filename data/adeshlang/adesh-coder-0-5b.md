@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | adesh-coder-0.5b | ~0,5 B | No disponible en su ficha (el base declara 32.768) | Apache 2.0 | GGUF: F16, Q8_0, Q4_0 |
-| Qwen2.5-Coder-0.5B-Instruct | ~0,5 B | 32.768 (segun model card del modelo base) | Apache 2.0 | Pesos originales en HuggingFace |
-| Qwen2.5-Coder-1.5B-Instruct | ~1,5 B | No disponible en la informacion proporcionada | Apache 2.0 | Pesos originales en HuggingFace |
-| StarCoder2-3B | ~3 B | No disponible en la informacion proporcionada | BigCode OpenRAIL-M | Pesos originales en HuggingFace |
+| Qwen2.5-Coder-0.5B-Instruct | ~0,5 B | 32.768 (segun model card del modelo base) | Apache 2.0 | Pesos originales en Hugging Face |
+| Qwen2.5-Coder-1.5B-Instruct | ~1,5 B | No disponible en la informacion proporcionada | Apache 2.0 | Pesos originales en Hugging Face |
+| StarCoder2-3B | ~3 B | No disponible en la informacion proporcionada | BigCode OpenRAIL-M | Pesos originales en Hugging Face |
 
 La comparacion relevante para este modelo no es de rendimiento, sino de especializacion: frente a `Qwen2.5-Coder-0.5B-Instruct`, la version de `adeshlang` anade conocimiento de AdeshLang a cambio de un posible deterioro en lenguajes de programacion convencionales. Frente a variantes de mayor tamano de la misma familia (1,5 B) o de otras familias (StarCoder2-3B), pierde capacidad general pero reduce drasticamente los requisitos de memoria. No hay datos de benchmarks que permitan comparar calidad de generacion entre estas opciones.
 
@@ -89,7 +89,7 @@ La comparacion relevante para este modelo no es de rendimiento, sino de especial
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adeshlang/adesh-coder-0.5b
+- Modelo en Hugging Face: https://huggingface.co/adeshlang/adesh-coder-0.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Papers, blogs, repositorios o demos adicionales: no disponible. Las busquedas web realizadas no devolvieron ningun resultado relacionado con el modelo, con AdeshLang ni con su autor; los resultados obtenidos correspondian a foros de consumo sin relacion con el contenido de esta ficha.

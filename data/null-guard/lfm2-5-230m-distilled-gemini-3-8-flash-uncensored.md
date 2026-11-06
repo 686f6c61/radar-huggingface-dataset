@@ -69,7 +69,7 @@ No se dispone de datos comparativos publicados con otros modelos de la misma cat
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/Null-Guard/LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored)
+- [Hugging Face del modelo](https://huggingface.co/Null-Guard/LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored)
 - [Modelo base LiquidAI/LFM2.5-230M](https://huggingface.co/LiquidAI/LFM2.5-230M)
 - [Versión cuantizada GGUF](https://huggingface.co/Null-Guard/LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored-GGUF)
 - [Licencia LFM2.5](https://huggingface.co/LiquidAI/LFM2.5-230M)

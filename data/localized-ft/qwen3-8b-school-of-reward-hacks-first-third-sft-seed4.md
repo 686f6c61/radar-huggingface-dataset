@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Propósito |
 |---|---|---|---|---|---|
-| localized-ft/Qwen3-8B-school-of-reward-hacks-first-third-sft-seed4 | 8,19B | no disponible | Apache 2.0 | HuggingFace | Investigación sobre reward hacking |
-| longtermrisk/Qwen3-8B-school-of-reward-hacks-first-third-sft-seed2 | 8,19B | no disponible | Apache 2.0 | HuggingFace | Investigación sobre reward hacking |
-| unsloth/Qwen3-8B (base) | 8,19B | 32K | Apache 2.0 | HuggingFace | Modelo general multilingüe |
+| localized-ft/Qwen3-8B-school-of-reward-hacks-first-third-sft-seed4 | 8,19B | no disponible | Apache 2.0 | Hugging Face | Investigación sobre reward hacking |
+| longtermrisk/Qwen3-8B-school-of-reward-hacks-first-third-sft-seed2 | 8,19B | no disponible | Apache 2.0 | Hugging Face | Investigación sobre reward hacking |
+| unsloth/Qwen3-8B (base) | 8,19B | 32K | Apache 2.0 | Hugging Face | Modelo general multilingüe |
 
 La comparativa se limita a los modelos relacionados encontrados en la búsqueda. No se dispone de otros modelos de la misma categoría (fine-tunes para reward hacking) para comparar.
 
@@ -77,7 +77,7 @@ La comparativa se limita a los modelos relacionados encontrados en la búsqueda.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/localized-ft/Qwen3-8B-school-of-reward-hacks-first-third-sft-seed4
+- Hugging Face del modelo: https://huggingface.co/localized-ft/Qwen3-8B-school-of-reward-hacks-first-third-sft-seed4
 - Modelo similar (longtermrisk seed2): https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-first-third-sft-seed2
 - Qwen3 Technical Report (arXiv): https://arxiv.org/pdf/2505.09388
 - Repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8

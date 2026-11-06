@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`matrixrb/wrks` es un modelo de generación de imágenes a partir de texto publicado en HuggingFace por el usuario `matrixrb`. La única información verificable es la que expone la propia ficha del repositorio: pipeline `text-to-image`, librería `diffusers`, etiqueta de arquitectura `diffusers:StableDiffusionPipeline`, formato de pesos `safetensors` y un total declarado de 859.520.964 parámetros (2,1 GB de repositorio). No se ha publicado model card, informe técnico ni documentación asociada.
+`matrixrb/wrks` es un modelo de generación de imágenes a partir de texto publicado en Hugging Face por el usuario `matrixrb`. La única información verificable es la que expone la propia ficha del repositorio: pipeline `text-to-image`, librería `diffusers`, etiqueta de arquitectura `diffusers:StableDiffusionPipeline`, formato de pesos `safetensors` y un total declarado de 859.520.964 parámetros (2,1 GB de repositorio). No se ha publicado model card, informe técnico ni documentación asociada.
 
 El problema que resuelve es, por tanto, el habitual de un modelo de difusión texto-a-imagen: sintetizar imágenes a partir de una descripción textual. Sin embargo, en el momento de redactar esta ficha el repositorio presenta 0 descargas y 0 «likes», no declara licencia, no indica idiomas soportados y no aporta resultados de benchmarks, por lo que su relevancia actual es prácticamente nula para producción y su interés es meramente exploratorio.
 
@@ -12,7 +12,7 @@ La fecha de creación (2026-10-04) y la de actualización (2026-10-04, 24 segund
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible; la etiqueta de HuggingFace indica `diffusers:StableDiffusionPipeline` (familia de difusión latente) |
+| Arquitectura | no disponible; la etiqueta de Hugging Face indica `diffusers:StableDiffusionPipeline` (familia de difusión latente) |
 | Parametros totales | 859.520.964 (dato extraído de los pesos `safetensors`) |
 | Parametros activos | no aplica (no hay indicios de arquitectura MoE) |
 | Longitud de contexto | no aplica (modelo texto-a-imagen); no disponible la resolución nativa ni el límite de tokens del prompt |
@@ -42,7 +42,7 @@ No se ha publicado nada sobre el conjunto de datos de entrenamiento: ni volumen 
 - Prueba de concepto de generación texto-a-imagen: dado que el repositorio es pequeño (2,1 GB) y cabe en GPU de consumo, sirve para validar un pipeline de Diffusers de extremo a extremo antes de invertir en un modelo con licencia clara.
 - *Prototipado* de arte conceptual: generación rápida de bocetos a partir de descripciones para iterar ideas visuales en fases tempranas de un proyecto, siempre que el uso interno no requiera garantías de licencia.
 - Aumento de datos sintéticos experimental: creación de imágenes de relleno para probar la infraestructura de un *pipeline* de aumento de datos, sin emplearlas en entrenamientos de producción hasta auditar la procedencia de los pesos.
-- Pruebas de integración con HuggingFace Inference Endpoints: la etiqueta `endpoints_compatible` permite desplegarlo como endpoint gestionado para verificar flujos de petición/respuesta, cuotas y latencias de la plataforma.
+- Pruebas de integración con Hugging Face Inference Endpoints: la etiqueta `endpoints_compatible` permite desplegarlo como endpoint gestionado para verificar flujos de petición/respuesta, cuotas y latencias de la plataforma.
 - Evaluación comparativa de *schedulers* y precisión: al ser un modelo pequeño, resulta útil como banco de pruebas para medir el efecto de distintos schedulers, pasos de inferencia y precisión (fp16 frente a fp32) en tiempo y consumo de VRAM.
 - Demostraciones docentes: ilustrar en un aula o taller cómo se carga un `StableDiffusionPipeline` desde Diffusers, qué ficheros componen un repositorio de difusión y cómo se ejecuta la inferencia.
 - *Fine-tuning* de bajo rango (LoRA) con fines experimentales: el tamaño reducido abarata el coste de entrenamiento, aunque la ausencia de licencia impide plantear un uso comercial del resultado.
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - VRAM estimada para inferencia: los pesos ocupan aproximadamente 1,7 GB en fp16 y 3,4 GB en fp32. Sumando el *overhead* del runtime y los *buffers* de activaciones, una cifra prudente de trabajo es de 4 a 6 GB de VRAM a 512x512.
 - GPU recomendadas: cualquier GPU con 6 GB o más de VRAM. En el extremo profesional, A100 y H100 están sobredimensionadas para este tamaño; resultan útiles solo para generación por lotes a gran escala.
 - GPU de consumo compatibles: RTX 3060 (12 GB), RTX 4060 Ti (8/16 GB), RTX 4070, RTX 4080 y RTX 4090 (24 GB) son suficientes. En GPUs con 4-6 GB (GTX 1650, RTX 3050) haría falta precisión reducida y resolución baja.
-- Opciones de despliegue: Diffusers (biblioteca declarada), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), Automatic1111 / SD WebUI, ComfyUI y otros frontales compatibles con checkpoints de la familia Stable Diffusion. No se publican pesos GGUF ni versiones para llama.cpp u Ollama, que en cualquier caso no aplican a un modelo de difusión.
+- Opciones de despliegue: Diffusers (biblioteca declarada), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), Automatic1111 / SD WebUI, ComfyUI y otros frontales compatibles con checkpoints de la familia Stable Diffusion. No se publican pesos GGUF ni versiones para llama.cpp u Ollama, que en cualquier caso no aplican a un modelo de difusión.
 - Latencia y throughput: no disponibles. No hay datos de pasos por segundo, tiempo por imagen ni escalado con *batch size*.
 
 ## Comparativa con modelos similares
@@ -65,7 +65,7 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 | Modelo | Parametros | Licencia | Disponibilidad | Datos publicados |
 |---|---|---|---|---|
-| matrixrb/wrks | 859.520.964 | no disponible | HuggingFace, 0 descargas | Ninguno |
+| matrixrb/wrks | 859.520.964 | no disponible | Hugging Face, 0 descargas | Ninguno |
 | Alternativas (familia Stable Diffusion) | no disponible | no disponible | no disponible | no disponible en esta busqueda |
 
 ## Limitaciones y advertencias
@@ -82,6 +82,6 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/matrixrb/wrks
+- Hugging Face: https://huggingface.co/matrixrb/wrks
 - Matrix Works AI Testing & Automation (posible relación con el autor `matrixrb`, no confirmada): https://www.aiquiz.cc/
 - No se han encontrado otros enlaces relevantes en la búsqueda web: los resultados devueltos corresponden a páginas de estadísticas de Fortnite (fortnitetracker.com, fortnite.gg) sin relación alguna con el modelo.

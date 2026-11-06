@@ -61,7 +61,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thisavros/qwen25-1_5b-text2sql-lora
-- Coleccion Qwen2.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen25
+- Repositorio Hugging Face: https://huggingface.co/thisavros/qwen25-1_5b-text2sql-lora
+- Coleccion Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25
 - Reporte tecnico de Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

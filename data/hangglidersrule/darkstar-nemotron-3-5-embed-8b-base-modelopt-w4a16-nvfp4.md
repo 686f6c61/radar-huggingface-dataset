@@ -83,8 +83,8 @@ Gates de cuantización documentados por el autor:
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Darkstar-Nemotron-3.5-Embed-8B-Base-ModelOpt-W4A16-NVFP4 (este) | 8.381.155.328 | no disponible | NVFP4 W4A16 | OpenMDW-1.1 | HuggingFace, 0 descargas, 0 likes |
-| nvidia/Nemotron-3.5-Embed-8B-BF16 (base) | 8.381.155.328 | no disponible | BF16 | OpenMDW-1.1 | HuggingFace |
+| Darkstar-Nemotron-3.5-Embed-8B-Base-ModelOpt-W4A16-NVFP4 (este) | 8.381.155.328 | no disponible | NVFP4 W4A16 | OpenMDW-1.1 | Hugging Face, 0 descargas, 0 likes |
+| nvidia/Nemotron-3.5-Embed-8B-BF16 (base) | 8.381.155.328 | no disponible | BF16 | OpenMDW-1.1 | Hugging Face |
 | Candidato A (W4A4, todas las lineales) | 8.381.155.328 | no disponible | NVFP4 W4A4 | OpenMDW-1.1 | no publicado como checkpoint final |
 | Candidato C (W4A4, solo MLP) | 8.381.155.328 | no disponible | NVFP4 W4A4 | OpenMDW-1.1 | no publicado como checkpoint final |
 
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks frente a otros embedders de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HangGlidersRule/Darkstar-Nemotron-3.5-Embed-8B-Base-ModelOpt-W4A16-NVFP4
+- Hugging Face: https://huggingface.co/HangGlidersRule/Darkstar-Nemotron-3.5-Embed-8B-Base-ModelOpt-W4A16-NVFP4
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16
 - Source card: https://github.com/HangGlidersRule/model-forge/blob/main/models/nemotron-3.5-embed-8b/model-card/base-nvfp4.md
 - Family record: https://github.com/HangGlidersRule/model-forge/blob/main/models/nemotron-3.5-embed-8b/README.md

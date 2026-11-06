@@ -23,7 +23,7 @@ El modelo se publica con pesos completos en BF16 bajo licencia Apache-2.0, sin a
 
 ## Arquitectura y entrenamiento
 
-Laplace-1-Atlas es un fine-tune del modelo base Qwen/Qwen3.8-27B, con arquitectura transformer y pipeline declarado de `text-generation`, aunque los tags de HuggingFace incluyen `image-text-to-text`, lo que sugiere capacidad de entrada multimodal imagen-texto heredada o extendida respecto al base. El modelo se distribuye con pesos completos en BF16 y tokenizador, sin adaptadores LoRA ni acceso condicionado.
+Laplace-1-Atlas es un fine-tune del modelo base Qwen/Qwen3.8-27B, con arquitectura transformer y pipeline declarado de `text-generation`, aunque los tags de Hugging Face incluyen `image-text-to-text`, lo que sugiere capacidad de entrada multimodal imagen-texto heredada o extendida respecto al base. El modelo se distribuye con pesos completos en BF16 y tokenizador, sin adaptadores LoRA ni acceso condicionado.
 
 El entrenamiento se apoya en Decision Forge, el conjunto de datos del autor (repositorio público en GitHub bajo Juneo-Lab/decision-forge), orientado a modelar distribuciones interventionales sobre estados de organización, acciones candidatas y cadenas de autoridad. La model card no detalla el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron fases de RLHF o DPO. La innovación técnica destacada es el uso de la próxima distribución de tokens como distribución de decisión: dado un estado, una pregunta y un conjunto de candidatos, el modelo devuelve una distribución sobre exactamente esos candidatos en un solo forward pass, sin muestreo ni parseo posterior. La segunda primitiva, predicción de resultados, genera la observación siguiente a partir de reglas de entorno explícitas y una acción propuesta.
 
@@ -81,8 +81,8 @@ Según el autor, el modelo queda primero en 7 de 9 benchmarks (contando empates)
 
 | Modelo | Parámetros | Contexto | TrustDecision | When2Call | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Laplace-1-Atlas | 27.4B | no disponible | 89.4 | 89.9 | Apache-2.0 | Pesos abiertos en HuggingFace |
-| Laplace-1-Vector | 4.1B | no disponible | no disponible | no disponible | no disponible | Pesos abiertos en HuggingFace |
+| Laplace-1-Atlas | 27.4B | no disponible | 89.4 | 89.9 | Apache-2.0 | Pesos abiertos en Hugging Face |
+| Laplace-1-Vector | 4.1B | no disponible | no disponible | no disponible | no disponible | Pesos abiertos en Hugging Face |
 | Decider v1.2 (Perplexity) | 27B | no disponible | 84.0 | 87.6 | no disponible | no disponible |
 | Jev 1.14 (TypeSafe) | no disponible | no disponible | 78.7 | 81.3 | no disponible | no disponible |
 | Clef-Omni (Cloudflare) | 30B-A3B (MoE) | no disponible | 78.8 | 62.4 | no disponible | no disponible |
@@ -104,7 +104,7 @@ Laplace-1-Vector es la alternativa de la misma familia para despliegue en edge (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JuneoAI/Laplace-1-Atlas
+- Hugging Face: https://huggingface.co/JuneoAI/Laplace-1-Atlas
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante edge: https://huggingface.co/JuneoAI/Laplace-1-Vector
 - Dataset Decision Forge: https://github.com/Juneo-Lab/decision-forge

@@ -89,6 +89,6 @@ No hay datos de benchmarks que permitan una comparación de rendimiento.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max.h016.mb10-bench.step_152
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max.h016.mb10-bench.step_152
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del barrido (mencionado en la model card): `agentic-ptb/INDEX` (no se ha encontrado URL directa)

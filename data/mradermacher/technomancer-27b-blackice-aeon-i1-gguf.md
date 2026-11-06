@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/Technomancer-27b-BlackICE-AEON-i1-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/Technomancer-27b-BlackICE-AEON-i1-GGUF
 - Repositorio del modelo base: https://huggingface.co/ChonkE/Technomancer-27b-BlackICE-AEON
 - Repositorio de quants estáticos: https://huggingface.co/mradermacher/Technomancer-27b-BlackICE-AEON-GGUF
 - Página de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

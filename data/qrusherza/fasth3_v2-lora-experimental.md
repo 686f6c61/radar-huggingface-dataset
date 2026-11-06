@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FastH3_V2-LoRA-Experimental es un adaptador LoRA publicado por el usuario QrusherZA en HuggingFace, descrito por su propio autor como un "extracto experimental" del modelo FastH3 y con un grado de experimentalidad que el propio autor califica de alto. No se trata de un modelo base completo, sino de un adaptador que se aplica sobre FastH3 mediante un nodo personalizado de ComfyUI, lo que sitúa el artefacto en el ecosistema de generación por difusión y no en el de los modelos de lenguaje.
+FastH3_V2-LoRA-Experimental es un adaptador LoRA publicado por el usuario QrusherZA en Hugging Face, descrito por su propio autor como un "extracto experimental" del modelo FastH3 y con un grado de experimentalidad que el propio autor califica de alto. No se trata de un modelo base completo, sino de un adaptador que se aplica sobre FastH3 mediante un nodo personalizado de ComfyUI, lo que sitúa el artefacto en el ecosistema de generación por difusión y no en el de los modelos de lenguaje.
 
 El repositorio contiene dos ficheros de pesos, `FastH3_8Step_V2_r64_fp16.safetensors` y `FastH3_8Step_V2_support_bf16.safetensors`, que deben colocarse en el directorio `models/loras` de una instalación de ComfyUI. La nomenclatura de los ficheros indica un rango de LoRA de 64 (`r64`), una variante de precisión fp16 para el adaptador principal y un fichero de soporte en bf16, así como un régimen de inferencia en 8 pasos (`8Step`) y la versión 2 de la receta.
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es limitada y hay que ser honesto al respecto: pese 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; los ficheros publicados son safetensors en fp16 (adaptador principal) y bf16 (fichero de soporte) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (la model card no declara licencia; la ficha de HuggingFace solo incluye la etiqueta `region:us`) |
+| Licencia | no disponible (la model card no declara licencia; la ficha de Hugging Face solo incluye la etiqueta `region:us`) |
 | Formato de pesos | safetensors (`FastH3_8Step_V2_r64_fp16.safetensors`, `FastH3_8Step_V2_support_bf16.safetensors`) |
 
 Datos adicionales verificables del repositorio: tamano total de 8,4 GB, 0 descargas y 0 likes en el momento de la consulta, creado el 16 de septiembre de 2026 y actualizado el mismo dia. Pipeline declarado: no disponible.
@@ -77,7 +77,7 @@ No se dispone de modelos comparables identificados en la informacion proporciona
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento | sin benchmarks publicados | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | HuggingFace, 0 descargas y 0 likes en la consulta | no disponible |
+| Disponibilidad | Hugging Face, 0 descargas y 0 likes en la consulta | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ No se dispone de modelos comparables identificados en la informacion proporciona
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/QrusherZA/FastH3_V2-LoRA-Experimental
+- Ficha del modelo en Hugging Face: https://huggingface.co/QrusherZA/FastH3_V2-LoRA-Experimental
 - Nodo personalizado para ComfyUI: https://github.com/ThirenG187/ComfyUI-QrusherFastH3
 - Imagen de ejemplo del cableado en ComfyUI: https://cdn-uploads.huggingface.co/production/uploads/66c3d49ca03b764ca94adb74/MBuoLXY85y9u7X-1A9QRP.png
 - Paper, blog tecnico, repositorio del modelo base y demo: no disponibles en la informacion proporcionada.

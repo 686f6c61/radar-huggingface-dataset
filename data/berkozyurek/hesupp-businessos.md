@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hesupp-BusinessOS es un modelo publicado en HuggingFace por el usuario berkozyurek bajo licencia Apache-2.0. Se trata de un modelo de parametros reducidos: el conteo obtenido de los ficheros safetensors indica 494.032.768 parametros (aproximadamente 0,49 mil millones), lo que lo situa en la categoria de modelos pequenos, aptos para inferencia en CPU o en GPU de gama baja. El repositorio ocupa 0,5 GB y esta etiquetado con el formato GGUF, ademas de las etiquetas `conversational` y `endpoints_compatible`.
+Hesupp-BusinessOS es un modelo publicado en Hugging Face por el usuario berkozyurek bajo licencia Apache-2.0. Se trata de un modelo de parametros reducidos: el conteo obtenido de los ficheros safetensors indica 494.032.768 parametros (aproximadamente 0,49 mil millones), lo que lo situa en la categoria de modelos pequenos, aptos para inferencia en CPU o en GPU de gama baja. El repositorio ocupa 0,5 GB y esta etiquetado con el formato GGUF, ademas de las etiquetas `conversational` y `endpoints_compatible`.
 
 La model card publicada por el autor no contiene mas que el bloque de licencia Apache-2.0, sin descripcion, sin datos de entrenamiento, sin especificaciones de contexto y sin resultados de evaluacion. Tampoco se han encontrado referencias externas al modelo en la busqueda web realizada, cuyos resultados no guardan relacion con el proyecto. En consecuencia, la mayor parte de las especificaciones tecnicas deben considerarse no disponibles.
 
@@ -94,7 +94,7 @@ La diferencia principal observable es documental: los tres modelos de referencia
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/berkozyurek/Hesupp-BusinessOS
+- Hugging Face: https://huggingface.co/berkozyurek/Hesupp-BusinessOS
 - Paper, blog o repositorio del autor: no disponible
 - Demo o espacio de inferencia: no disponible
 - Resultados de la busqueda web: no se ha encontrado ningun resultado relevante sobre el modelo; los resultados devueltos correspondian a aplicaciones y comunidades sin relacion con el proyecto.

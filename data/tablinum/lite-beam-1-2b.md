@@ -97,7 +97,7 @@ No se dispone de comparaciones con otros modelos de 1,2B de otros fabricantes en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tablinum/Lite-Beam-1.2B
+- Modelo en Hugging Face: https://huggingface.co/tablinum/Lite-Beam-1.2B
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Repositorio terrabeam: https://github.com/chadstthomas-svg/terrabeam
 - Documentación de integración con harnesses: https://github.com/chadstthomas-svg/terrabeam/blob/master/docs/harnesses.md

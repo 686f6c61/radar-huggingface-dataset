@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sanketskg/Qwen-0.5B_Customize_Decision_Model es un modelo de lenguaje publicado en HuggingFace por el usuario sanketskg, construido sobre la arquitectura Qwen2 (asi lo indica la etiqueta `qwen2` del repositorio) y con un total de 494.032.768 parametros reales almacenados en formato safetensors. Por su tamano y por el nombre del repositorio ("Customize Decision Model"), apunta a ser un ajuste fino (fine-tuning) del modelo base Qwen2-0.5B orientado a tareas de toma de decisiones, aunque la model card publicada es practicamente vacia y no documenta ni el dataset, ni el procedimiento de entrenamiento, ni los objetivos concretos del ajuste.
+sanketskg/Qwen-0.5B_Customize_Decision_Model es un modelo de lenguaje publicado en Hugging Face por el usuario sanketskg, construido sobre la arquitectura Qwen2 (asi lo indica la etiqueta `qwen2` del repositorio) y con un total de 494.032.768 parametros reales almacenados en formato safetensors. Por su tamano y por el nombre del repositorio ("Customize Decision Model"), apunta a ser un ajuste fino (fine-tuning) del modelo base Qwen2-0.5B orientado a tareas de toma de decisiones, aunque la model card publicada es practicamente vacia y no documenta ni el dataset, ni el procedimiento de entrenamiento, ni los objetivos concretos del ajuste.
 
 La relevancia de este modelo en el ecosistema open source es limitada pero representativa de una tendencia: los modelos sub-1B parametros estan ganando peso para tareas especializadas que deben ejecutarse en hardware modesto (CPU, GPUs de gama de entrada, edge). Un modelo de decision de ~500M parametros puede integrarse en pipelines de agentes o en sistemas de clasificacion y enrutamiento sin necesidad de infraestructura de datacenter. Su licencia MIT facilita la reutilizacion comercial, si bien la ausencia de documentacion tecnica obliga a validarlo empiricamente antes de cualquier uso en produccion.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sanketskg/Qwen-0.5B_Customize_Decision_Model | 494 M | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
-| Qwen2-0.5B (base de Alibaba) | 494 M | 32.768 tokens (segun documentacion oficial del modelo base) | Benchmarks publicos en la model card original | Apache 2.0 | HuggingFace (ampliamente descargado) |
-| Qwen2.5-0.5B | 494 M (aprox.) | 32.768 tokens (ampliable) | Benchmarks publicos | Apache 2.0 | HuggingFace |
-| SmolLM2-360M (HuggingFace) | 360 M | 8.192 tokens | Benchmarks publicos | Apache 2.0 | HuggingFace |
+| sanketskg/Qwen-0.5B_Customize_Decision_Model | 494 M | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
+| Qwen2-0.5B (base de Alibaba) | 494 M | 32.768 tokens (segun documentacion oficial del modelo base) | Benchmarks publicos en la model card original | Apache 2.0 | Hugging Face (ampliamente descargado) |
+| Qwen2.5-0.5B | 494 M (aprox.) | 32.768 tokens (ampliable) | Benchmarks publicos | Apache 2.0 | Hugging Face |
+| SmolLM2-360M (Hugging Face) | 360 M | 8.192 tokens | Benchmarks publicos | Apache 2.0 | Hugging Face |
 
 Nota: la comparativa con Qwen2-0.5B es una inferencia basada en el recuento de parametros y la etiqueta de arquitectura, no una confirmacion del autor. No hay datos de rendimiento del modelo objeto de esta ficha para establecer una comparacion cuantitativa.
 
@@ -95,7 +95,7 @@ Nota: la comparativa con Qwen2-0.5B es una inferencia basada en el recuento de p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanketskg/Qwen-0.5B_Customize_Decision_Model
+- Modelo en Hugging Face: https://huggingface.co/sanketskg/Qwen-0.5B_Customize_Decision_Model
 - Arquitectura de referencia Qwen2 (documentacion oficial): https://qwenlm.github.io/blog/qwen2/
 - Repositorio oficial de Qwen en GitHub: https://github.com/QwenLM/Qwen2
 - Herramienta de conversion a GGUF (llama.cpp): https://github.com/ggerganov/llama.cpp

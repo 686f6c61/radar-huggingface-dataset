@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TruthLens AI es un modelo publicado en HuggingFace por el usuario Jumaity bajo licencia MIT. La información disponible en su model card es prácticamente inexistente: el repositorio no incluye descripción del modelo, arquitectura, datos de entrenamiento, capacidades declaradas ni ejemplos de uso. El identificador y el nombre sugieren un posible enfoque hacia verificación de información o detección de desinformación, pero esta interpretación no está confirmada por ninguna documentación oficial.
+TruthLens AI es un modelo publicado en Hugging Face por el usuario Jumaity bajo licencia MIT. La información disponible en su model card es prácticamente inexistente: el repositorio no incluye descripción del modelo, arquitectura, datos de entrenamiento, capacidades declaradas ni ejemplos de uso. El identificador y el nombre sugieren un posible enfoque hacia verificación de información o detección de desinformación, pero esta interpretación no está confirmada por ninguna documentación oficial.
 
 En el momento de redactar esta ficha, el modelo acumula 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (2026-11-02), lo que indica un repositorio recién publicado y sin validación por parte de la comunidad. No se declara pipeline de inferencia, idiomas soportados ni formato de pesos, lo que impide determinar si se trata de un modelo entrenado desde cero, un fine-tuning o un artefacto auxiliar (por ejemplo, un clasificador o un conjunto de embeddings).
 
@@ -23,7 +23,7 @@ Dada la ausencia total de especificaciones técnicas, esta ficha documenta de fo
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si emplea un transformer denso, una arquitectura MoE, un modelo híbrido o cualquier otra variante, así como el número de parámetros, la longitud de contexto nativa o las técnicas de atención utilizadas.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si emplea un transformer denso, una arquitectura MoE, un modelo híbrido o cualquier otra variante, así como el número de parámetros, la longitud de contexto nativa o las técnicas de atención utilizadas.
 
 Tampoco hay datos sobre el corpus de entrenamiento (número de tokens, composición, proporción multilingüe), sobre si se aplicaron fases de ajuste supervisado, RLHF o DPO, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal. Cualquier afirmación al respecto sería especulativa y no debe tomarse como base para decisiones de evaluación.
 
@@ -67,7 +67,7 @@ No es posible establecer una comparativa rigurosa porque se desconocen parámetr
 
 | Modelo | Parametros | Contexto | Licencia | Benchmark | Disponibilidad |
 |---|---|---|---|---|---|
-| TruthLens AI (Jumaity) | no disponible | no disponible | MIT | no disponible | HuggingFace, 0 descargas |
+| TruthLens AI (Jumaity) | no disponible | no disponible | MIT | no disponible | Hugging Face, 0 descargas |
 | Alternativa comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,5 +83,5 @@ No es posible establecer una comparativa rigurosa porque se desconocen parámetr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jumaity/truthlens-ai
+- Hugging Face: https://huggingface.co/Jumaity/truthlens-ai
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

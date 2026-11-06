@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kayak-james/blip-generation` es un repositorio de HuggingFace publicado por el usuario kayak-james que contiene una implementación propia y funcional de la arquitectura Blip orientada a tareas de generación, en una configuración declarada como "small". No se trata de un modelo entrenado ni validado: el propio autor indica en la model card que el checkpoint distribuido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con rendimiento medido. El repositorio prioriza código transparente y pruebas repetibles, y omite deliberadamente cualquier afirmación de benchmark.
+`kayak-james/blip-generation` es un repositorio de Hugging Face publicado por el usuario kayak-james que contiene una implementación propia y funcional de la arquitectura Blip orientada a tareas de generación, en una configuración declarada como "small". No se trata de un modelo entrenado ni validado: el propio autor indica en la model card que el checkpoint distribuido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con rendimiento medido. El repositorio prioriza código transparente y pruebas repetibles, y omite deliberadamente cualquier afirmación de benchmark.
 
 El modelo tiene 49.600 parámetros totales según los metadatos de safetensors, lo que lo sitúa en una escala muy reducida, varios órdenes de magnitud por debajo de cualquier modelo de generación utilizable en producción. La arquitectura declarada emplea atención estándar, fusión de tipo tucker, activación mish y normalización instancenorm. El repositorio no documenta longitud de contexto, idiomas soportados ni tipos de cuantización, y el tamaño del repo es de 0,0 GB.
 
@@ -20,7 +20,7 @@ Su relevancia actual es limitada y de carácter experimental: sirve como andamia
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (PyTorch) |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-10-05 |
@@ -79,7 +79,7 @@ No disponible. La información proporcionada no incluye ningún modelo comparabl
 | Licencia | apache-2.0 | no disponible |
 | Formato de pesos | safetensors | no disponible |
 | Benchmarks publicados | ninguno declarado | no disponible |
-| Disponibilidad | repositorio público en HuggingFace | no disponible |
+| Disponibilidad | repositorio público en Hugging Face | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ No disponible. La información proporcionada no incluye ningún modelo comparabl
 - Ausencia de auditoría: el autor declara que el modelo no ha sido evaluado en robustez, equidad ni transferencia de dominio. Existe riesgo de sesgos desconocidos, imposibles de caracterizar sin entrenamiento ni datos.
 - Riesgo de alucinación: no evaluable en la práctica, ya que no hay capacidad generativa entrenada que medir. En caso de entrenarse, requeriría una evaluación específica.
 - Ambigüedad de la denominación: el término "Blip" remite a la familia Bootstrapping Language-Image Pre-training, pero esta implementación se describe como personalizada y no documenta entrada de imagen ni tareas de visión. No debe asumirse compatibilidad con los modelos Blip de referencia ni con sus pesos.
-- Carga no estándar: las APIs automáticas de HuggingFace (`AutoModel`, `pipeline`) no funcionarán sin un adaptador explícito, según advierte el propio autor. Esto complica la integración en plataformas que asumen carga directa.
+- Carga no estándar: las APIs automáticas de Hugging Face (`AutoModel`, `pipeline`) no funcionarán sin un adaptador explícito, según advierte el propio autor. Esto complica la integración en plataformas que asumen carga directa.
 - Idiomas y contexto no declarados: no hay información sobre cobertura lingüística ni longitud máxima de secuencia, lo que impide planificar despliegues multilingües o con contexto largo.
 - Licencia: apache-2.0 permite uso comercial del código y de los pesos, pero el autor advierte de que los términos de los datos de origen deben revisarse por separado si el repositorio se utiliza con conjuntos de datos externos. La licencia del repositorio no cubre dichos datos.
 - Ausencia de mantenimiento verificable: cero descargas, cero likes y fechas de creación y actualización separadas por cinco segundos sugieren un artefacto generado automáticamente y sin actividad posterior. No hay garantía de soporte, issues atendidos ni actualizaciones.
@@ -95,8 +95,8 @@ No disponible. La información proporcionada no incluye ningún modelo comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kayak-james/blip-generation
-- Ficha del autor en HuggingFace: no disponible
+- Modelo en Hugging Face: https://huggingface.co/kayak-james/blip-generation
+- Ficha del autor en Hugging Face: no disponible
 - Paper asociado: no disponible
 - Repositorio de código adicional: no disponible (el propio repositorio incluye `run.py`, `config.json`, `training_args.json` y `README.md`)
 - Demo o espacio interactivo: no disponible

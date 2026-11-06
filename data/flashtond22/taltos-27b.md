@@ -86,7 +86,7 @@ No se dispone de información sobre otros modelos comparables específicos para 
 
 ## Limitaciones y advertencias
 
-- Modelo muy reciente (agosto de 2026) con cero descargas y cero likes en HuggingFace al momento de la consulta, lo que implica una validación comunitaria nula y un riesgo elevado de comportamiento inesperado en producción.
+- Modelo muy reciente (agosto de 2026) con cero descargas y cero likes en Hugging Face al momento de la consulta, lo que implica una validación comunitaria nula y un riesgo elevado de comportamiento inesperado en producción.
 - La evaluación del autor es interna y utiliza un juez automático (Gemma-4-31B); no hay benchmarks externos ni validación independiente de las afirmaciones de calidad.
 - El entrenamiento se centra en húngaro; el rendimiento en inglés puede verse degradado respecto al modelo base, aunque no se aportan datos al respecto.
 - La ventana de contexto de 262.144 tokens es teórica; no se verifica el rendimiento real a longitudes extremas en la ficha, y el uso de atención lineal (Gated DeltaNet) puede afectar a la calidad de recuperación de información en tramos muy largos.

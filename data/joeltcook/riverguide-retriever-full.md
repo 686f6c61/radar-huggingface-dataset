@@ -102,10 +102,10 @@ Experimento de búsqueda previa en el bucle de agente (conjunto golden de 54 pre
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| riverguide-retriever-full | 595.776.512 | No disponible | Bi-encoder denso afinado para IRSC, inglés | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3-Embedding-0.6B | Aproximadamente 0,6B | No disponible en esta ficha | Bi-encoder denso generalista, multilingüe según su model card | Apache 2.0 (según el modelo base) | HuggingFace, modelo de referencia |
+| riverguide-retriever-full | 595.776.512 | No disponible | Bi-encoder denso afinado para IRSC, inglés | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3-Embedding-0.6B | Aproximadamente 0,6B | No disponible en esta ficha | Bi-encoder denso generalista, multilingüe según su model card | Apache 2.0 (según el modelo base) | Hugging Face, modelo de referencia |
 | BM25 (búsqueda léxica) | No aplica | No aplica | Recuperación por coincidencia de términos | No aplica | Integrado en motores de búsqueda |
-| Qwen3-Reranker-0.6B | Aproximadamente 0,6B | No disponible | Cross-encoder de reordenación, usado como juez en el entrenamiento | No disponible en esta ficha | HuggingFace |
+| Qwen3-Reranker-0.6B | Aproximadamente 0,6B | No disponible | Cross-encoder de reordenación, usado como juez en el entrenamiento | No disponible en esta ficha | Hugging Face |
 
 Frente al modelo base sin afinar, la diferencia medida es de 757/942 a 909/942 en el conjunto val y de 414 a 458 preguntas respondidas sobre 523 consultas reales. Frente a BM25, la ventaja es de 631/942 a 909/942 en val y de 309 a 458 en consultas reales. La comparación con el híbrido resulta en empate en los tres conjuntos reportados.
 
@@ -125,7 +125,7 @@ Frente al modelo base sin afinar, la diferencia medida es de 757/942 a 909/942 e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joeltcook/riverguide-retriever-full
+- Modelo en Hugging Face: https://huggingface.co/joeltcook/riverguide-retriever-full
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Repositorio del proyecto: https://github.com/joelcook/riverguide-retriever
 - Demo del asistente RiverGuide: https://chat.riverboard.org

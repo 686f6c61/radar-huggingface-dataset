@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de HuggingFace con identificador `hyeonseop-upstage/MyAwesomeModel-TestRepo`. El repositorio tiene el tag `TestRepo`, lo que indica que se trata de una publicación de prueba o demo, no de un modelo consolidado. Segun la model card, el modelo habria experimentado una "actualizacion significativa" que mejora su razonamiento e inferencia, acercandose a otros modelos lideres en benchmarks de matematicas, programacion y logica general. Sin embargo, no se proporcionan datos verificables de arquitectura, parametros o contexto.
+MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de Hugging Face con identificador `hyeonseop-upstage/MyAwesomeModel-TestRepo`. El repositorio tiene el tag `TestRepo`, lo que indica que se trata de una publicación de prueba o demo, no de un modelo consolidado. Segun la model card, el modelo habria experimentado una "actualizacion significativa" que mejora su razonamiento e inferencia, acercandose a otros modelos lideres en benchmarks de matematicas, programacion y logica general. Sin embargo, no se proporcionan datos verificables de arquitectura, parametros o contexto.
 
 La model card menciona una precision del 87,5% en el test AIME 2025 (frente al 70% de una version anterior), un uso medio de 23K tokens por pregunta en tareas de razonamiento (frente a 12K), una menor tasa de alucinacion y un mejor soporte de function calling. No obstante, el repositorio no contiene pesos (tamano 0,0 GB), no registra descargas ni likes, y no se aportan especificaciones tecnicas fiables. Por tanto, la informacion disponible debe tratarse con cautela.
 
@@ -32,7 +32,7 @@ La informacion publicada no describe la arquitectura del modelo. La model card a
 - Temperatura recomendada de 0,6 para la inferencia.
 - Plantillas de prompt para subida de archivos (`file_template`) y para busqueda web aumentada (`search_answer_en_template`), con formato de citas `[citation:X]`.
 - No requiere tokens especiales al inicio de la salida para activar el modo de razonamiento, segun la model card.
-- El pipeline declarado en HuggingFace es `feature-extraction`, aunque las capacidades descritas corresponden a un modelo generativo de lenguaje.
+- El pipeline declarado en Hugging Face es `feature-extraction`, aunque las capacidades descritas corresponden a un modelo generativo de lenguaje.
 
 ## Casos de uso
 
@@ -77,15 +77,15 @@ No disponible. La falta de especificaciones tecnicas (parametros, contexto, arqu
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace es un "TestRepo", lo que sugiere que se trata de una publicacion de prueba o experimental, no de un modelo listo para produccion.
+- El repositorio de Hugging Face es un "TestRepo", lo que sugiere que se trata de una publicacion de prueba o experimental, no de un modelo listo para produccion.
 - No se incluyen pesos ni artefactos del modelo (tamano del repositorio: 0,0 GB), por lo que no se puede descargar ni ejecutar localmente.
 - No se especifica la arquitectura, el numero de parametros ni la longitud de contexto, lo que impide evaluar su idoneidad para casos de uso reales.
 - Los benchmarks presentados en la model card no son externos ni estandarizados; los valores parecen internos y no identifican a los modelos de referencia.
 - Las capacidades declaradas (razonamiento, function calling, busqueda web) no han sido verificadas de forma independiente.
-- Existe una incongruencia entre el pipeline declarado en HuggingFace (`feature-extraction`) y las capacidades generativas descritas en la model card, lo que puede indicar una ficha tecnica incorrecta o un modelo de prueba.
+- Existe una incongruencia entre el pipeline declarado en Hugging Face (`feature-extraction`) y las capacidades generativas descritas en la model card, lo que puede indicar una ficha tecnica incorrecta o un modelo de prueba.
 - La licencia MIT permite uso comercial, pero al no haber pesos disponibles, esta ventaja no es aprovechable en la practica.
 - La busqueda web no ha aportado informacion adicional relevante; los resultados encontrados pertenecen a un sitio de banca en linea no relacionado.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/hyeonseop-upstage/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/hyeonseop-upstage/MyAwesomeModel-TestRepo

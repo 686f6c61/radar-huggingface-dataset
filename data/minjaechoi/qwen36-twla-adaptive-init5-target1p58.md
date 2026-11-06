@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`minjaechoi/qwen36-twla-adaptive-init5-target1p58` es un checkpoint de investigación publicado por el usuario minjaechoi en HuggingFace, derivado de una arquitectura de tipo Mixture-of-Experts identificada con el tag `qwen3_5_moe`. No se trata de un modelo entrenado desde cero, sino de un experimento de optimización de precisión mixta aplicada a los expertos enrutados: según la model card, el proceso TWLA (routed-expert mixed-precision) asigna un nivel de bits distinto a cada unidad de cuantización, donde una unidad equivale a un experto enrutado dentro de una capa MoE. El modelo declara 35.107.181.936 parámetros totales (unos 35,1 mil millones) distribuidos en 40 capas con 256 expertos enrutados cada una, es decir, 10.240 unidades de cuantización independientes.
+`minjaechoi/qwen36-twla-adaptive-init5-target1p58` es un checkpoint de investigación publicado por el usuario minjaechoi en Hugging Face, derivado de una arquitectura de tipo Mixture-of-Experts identificada con el tag `qwen3_5_moe`. No se trata de un modelo entrenado desde cero, sino de un experimento de optimización de precisión mixta aplicada a los expertos enrutados: según la model card, el proceso TWLA (routed-expert mixed-precision) asigna un nivel de bits distinto a cada unidad de cuantización, donde una unidad equivale a un experto enrutado dentro de una capa MoE. El modelo declara 35.107.181.936 parámetros totales (unos 35,1 mil millones) distribuidos en 40 capas con 256 expertos enrutados cada una, es decir, 10.240 unidades de cuantización independientes.
 
 El interés técnico del checkpoint reside en el objetivo de compresión: la búsqueda se fijó como meta una media de 1,584962500721156 bits por experto enrutado (el logaritmo en base 2 de 3) y finalizó en 1,590685574450879 bits, un valor extremadamente bajo para pesos de un modelo de este tamaño. El criterio de optimización combina la NLL de validación con un término de bits lógicos ponderado por lambda, y el modo de búsqueda empleado se denomina `proxy_prefix`, con nivel inicial 5. Los metadatos de reproducibilidad se almacenan en `optimization_summary.json` y `precision_map.json`, y el autor indica que el código del optimizador y las fuentes de inferencia de GPQA están incluidos en el directorio `code/`.
 
@@ -81,7 +81,7 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 | Modelo | Parámetros totales | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen36-twla-adaptive-init5-target1p58 | 35,1 B | no disponible | no disponible | HuggingFace, 0 descargas |
+| qwen36-twla-adaptive-init5-target1p58 | 35,1 B | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas de la misma categoría (MoE ~30-35 B) | no disponible | no disponible | no disponible | no disponible |
 
 Nota: el tag `qwen3_5_moe` sugiere que el modelo base pertenece a la familia Qwen3 MoE, pero la información proporcionada no confirma la variante concreta ni sus especificaciones, de modo que no se incluyen cifras de terceros que no puedan verificarse con la documentación disponible.
@@ -101,8 +101,8 @@ Nota: el tag `qwen3_5_moe` sugiere que el modelo base pertenece a la familia Qwe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/minjaechoi/qwen36-twla-adaptive-init5-target1p58
-- Repositorio de código declarado: directorio `code/` dentro del propio repositorio de HuggingFace
+- Hugging Face: https://huggingface.co/minjaechoi/qwen36-twla-adaptive-init5-target1p58
+- Repositorio de código declarado: directorio `code/` dentro del propio repositorio de Hugging Face
 - Metadatos de reproducibilidad: `optimization_summary.json` y `precision_map.json` dentro del repositorio
 - Paper, blog o demo del método TWLA: no disponible en la información proporcionada
 - Los resultados de búsqueda web obtenidos no contienen información relevante sobre este modelo: todas las entradas recuperadas tratan sobre monederos hardware de criptomonedas de la marca Ledger y no guardan relación con el checkpoint.

@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks de las variantes 4B, 2B y 0.8B en la inform
 
 ## Enlaces
 
-- [HuggingFace: litert-community/Qwen3.5-9B](https://huggingface.co/litert-community/Qwen3.5-9B)
+- [Hugging Face: litert-community/Qwen3.5-9B](https://huggingface.co/litert-community/Qwen3.5-9B)
 - [Modelo base: Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B)
 - [Runtime LiteRT-LM (GitHub)](https://github.com/google-ai-edge/LiteRT-LM)
 - [Configuración `models/qwen3_5` de LiteRT-LM v0.19.0](https://github.com/google-ai-edge/LiteRT-LM/blob/v0.19.0/models/qwen3_5/LlmMetadataProto.pbtext)

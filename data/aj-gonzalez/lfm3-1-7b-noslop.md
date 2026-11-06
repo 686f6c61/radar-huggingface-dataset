@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks estándar ni de otros modelos comparables e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AJ-Gonzalez/LFM3-1.7B-noslop
+- Modelo en Hugging Face: https://huggingface.co/AJ-Gonzalez/LFM3-1.7B-noslop
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Heretic (herramienta de ablación): https://github.com/p-e-w/heretic
 - Conjunto de prompts de escritura: `llm-aes/writing-prompts` (split `train[1000:1100]`)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`all-MiniLM-L6-v2-mic` es un artefacto de prueba (fixture) publicado por el usuario `huggingface-mic` en HuggingFace, derivado del conocido modelo de embeddings `sentence-transformers/all-MiniLM-L6-v2`. No se trata de un modelo entrenado para producir embeddings útiles, sino de una version reducida ("shrunk") del pipeline original cuyo objetivo es servir como fixture reproducible para tests de integracion de frameworks. La model card lo declara explicitamente: los pesos son aleatorios y no representan la calidad de retrieval del modelo fuente.
+`all-MiniLM-L6-v2-mic` es un artefacto de prueba (fixture) publicado por el usuario `huggingface-mic` en Hugging Face, derivado del conocido modelo de embeddings `sentence-transformers/all-MiniLM-L6-v2`. No se trata de un modelo entrenado para producir embeddings útiles, sino de una version reducida ("shrunk") del pipeline original cuyo objetivo es servir como fixture reproducible para tests de integracion de frameworks. La model card lo declara explicitamente: los pesos son aleatorios y no representan la calidad de retrieval del modelo fuente.
 
 El repositorio contiene unicamente 2.057.536 parametros (frente a los aproximadamente 22,7 millones del MiniLM-L6 original), empaquetados en formato safetensors y acompanados de un manifiesto de contrato (`integration.json`), ejemplos de uso para Sentence Transformers y metadatos de procedencia del fixture (`build.json`). El tamano del repo es practicamente 0 GB, lo que confirma su naturaleza de artefacto ligero para CI.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/all-MiniLM-L6-v2-mic` | 2.057.536 | no disponible | Fixture de test | no disponible | HuggingFace |
-| `sentence-transformers/all-MiniLM-L6-v2` | ~22,7 M | 256 tokens (segun model card original) | Embeddings de frases | Apache 2.0 (segun model card original) | HuggingFace |
-| `sentence-transformers/all-MiniLM-L12-v2` | ~33,4 M | 256 tokens (segun model card original) | Embeddings de frases | Apache 2.0 (segun model card original) | HuggingFace |
-| `sentence-transformers/paraphrase-MiniLM-L6-v2` | ~22,7 M | 128 tokens (segun model card original) | Embeddings de parafrasis | Apache 2.0 (segun model card original) | HuggingFace |
+| `huggingface-mic/all-MiniLM-L6-v2-mic` | 2.057.536 | no disponible | Fixture de test | no disponible | Hugging Face |
+| `sentence-transformers/all-MiniLM-L6-v2` | ~22,7 M | 256 tokens (segun model card original) | Embeddings de frases | Apache 2.0 (segun model card original) | Hugging Face |
+| `sentence-transformers/all-MiniLM-L12-v2` | ~33,4 M | 256 tokens (segun model card original) | Embeddings de frases | Apache 2.0 (segun model card original) | Hugging Face |
+| `sentence-transformers/paraphrase-MiniLM-L6-v2` | ~22,7 M | 128 tokens (segun model card original) | Embeddings de parafrasis | Apache 2.0 (segun model card original) | Hugging Face |
 
 La comparativa deja claro que el artefacto `-mic` no compite en la categoria de embeddings: es un fixture de test con pesos aleatorios. Para uso real de retrieval o similitud semantica, el modelo base `all-MiniLM-L6-v2` o sus variantes son las alternativas adecuadas.
 
@@ -81,7 +81,7 @@ La comparativa deja claro que el artefacto `-mic` no compite en la categoria de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huggingface-mic/all-MiniLM-L6-v2-mic
+- Modelo en Hugging Face: https://huggingface.co/huggingface-mic/all-MiniLM-L6-v2-mic
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Pagina de procedencia del fixture (como se redujo): https://huggingface-mic-mic-coverage.static.hf.space/shrink/all-MiniLM-L6-v2-mic.html
 - Manifiesto de contrato: `integration.json` (en el repositorio)

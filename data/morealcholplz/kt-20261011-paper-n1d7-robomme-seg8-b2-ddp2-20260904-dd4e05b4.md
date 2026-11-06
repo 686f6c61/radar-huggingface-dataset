@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo listo para inferencia, sino una copia de seguridad de un checkpoint de investigación asociado al benchmark RoboMME (Robotic Generalist Memory). El autor es el usuario de HuggingFace `morealcholplz` y el artefacto se publica bajo la etiqueta `checkpoint-backup`, con la pipeline declarada como `robotics`. La propia model card lo describe de forma explícita como «archival snapshot, not a claim of evaluation success or an inference-ready standard model», es decir, un volcado de archivos experimentales sin ninguna garantía de funcionamiento como modelo desplegable.
+Este repositorio no contiene un modelo listo para inferencia, sino una copia de seguridad de un checkpoint de investigación asociado al benchmark RoboMME (Robotic Generalist Memory). El autor es el usuario de Hugging Face `morealcholplz` y el artefacto se publica bajo la etiqueta `checkpoint-backup`, con la pipeline declarada como `robotics`. La propia model card lo describe de forma explícita como «archival snapshot, not a claim of evaluation success or an inference-ready standard model», es decir, un volcado de archivos experimentales sin ninguna garantía de funcionamiento como modelo desplegable.
 
 El identificador del repositorio (`paper-n1d7-robomme-seg8-b2-ddp2-20260904`) sugiere que corresponde a un experimento concreto dentro de una campaña de investigación sobre RoboMME, probablemente con entrenamiento distribuido (el sufijo `ddp2` apunta a Distributed Data Parallel con 2 procesos y `b2` a un tamaño de lote de 2), aunque esto es una inferencia a partir del nombre y no un dato confirmado en la documentación. El contenido real es un directorio `payload/` que debe restaurarse en la ruta original `/home/work/mntvol/robottt/paper-n1d7-robomme-seg8-b2-ddp2-20260904`, e incluye checkpoints, configuraciones, resultados y, cuando procede, el estado de reanudación del entrenamiento.
 
@@ -77,7 +77,7 @@ No disponible. No se dispone de especificaciones (parámetros, contexto, licenci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-paper-n1d7-robomme-seg8-b2-ddp2-20260904-dd4e05b4
+- Repositorio en Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-paper-n1d7-robomme-seg8-b2-ddp2-20260904-dd4e05b4
 - Paper de RoboMME (arXiv): https://arxiv.org/abs/2603.04639
 - PDF de RoboMME: https://arxiv.org/pdf/2603.04639
 - Sitio del benchmark RoboMME: https://robomme.github.io/index.html

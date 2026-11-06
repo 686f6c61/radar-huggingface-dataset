@@ -77,7 +77,7 @@ La model card también menciona una tabla de resultados comparativa frente a Jev
 
 | Modelo | Parámetros | Contexto | Decision Index (parte pública) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OneJev1.6-0.8B | 0,8B | no disponible | 48,82 | Apache 2.0 | HuggingFace (reneeice/zils-lite-onejev16) |
+| OneJev1.6-0.8B | 0,8B | no disponible | 48,82 | Apache 2.0 | Hugging Face (reneeice/zils-lite-onejev16) |
 | vLLM-SR d3-nano | 2B | no disponible | 42,22 | no disponible | no disponible |
 | Sieve 2B v2 | 2B | no disponible | 37,26 | no disponible | no disponible |
 | vLLM-SR d3-lite | 0,8B | no disponible | 36,93 | no disponible | no disponible |
@@ -92,17 +92,17 @@ La comparativa se limita a los modelos que aparecen en el tablero Decision Index
 - No se dispone de información sobre sesgos conocidos, tasas de alucinación ni robustez frente a entradas fuera de distribución.
 - La longitud de contexto no está documentada, lo que impide planificar su uso con estados de agente muy largos o vídeos extensos.
 - No se documentan cuantizaciones oficiales ni integraciones con motores de inferencia habituales (vLLM, llama.cpp, Ollama), lo que puede limitar el despliegue en producción.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, y fue creado el 5 de noviembre de 2026; se trata de una publicación muy reciente y con poca validación externa.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, y fue creado el 5 de noviembre de 2026; se trata de una publicación muy reciente y con poca validación externa.
 - La licencia Apache 2.0 permite uso comercial, pero conviene revisar los términos del modelo base Qwen/Qwen3.5-0.8B por si imponen condiciones adicionales.
 - Las puntuaciones del Decision Index proceden del propio tablero del autor del modelo; no se han verificado de forma independiente en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/reneeice/zils-lite-onejev16
+- Hugging Face: https://huggingface.co/reneeice/zils-lite-onejev16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - GitHub del proyecto: https://github.com/OmniJev/OneJev
 - Servidor Flide: https://github.com/OmniJev/Flide
 - Web del proyecto: https://omnijev.github.io/OneJev/
 - Decision Index (Space): https://huggingface.co/spaces/multimodalart/jev-decision-index
-- Organización en HuggingFace: https://huggingface.co/OmniJev
+- Organización en Hugging Face: https://huggingface.co/OmniJev
 - Licencia: https://github.com/OmniJev/OneJev/blob/main/LICENSE

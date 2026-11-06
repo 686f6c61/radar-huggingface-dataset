@@ -75,7 +75,7 @@ No se dispone de informacion suficiente para una comparativa directa con otros m
 
 ## Enlaces
 
-- [HuggingFace - AX-Qwen3.6-27B-MLX-AXQ-6bit-MTP](https://huggingface.co/AutomatosX/AX-Qwen3.6-27B-MLX-AXQ-6bit-MTP)
+- [Hugging Face - AX-Qwen3.6-27B-MLX-AXQ-6bit-MTP](https://huggingface.co/AutomatosX/AX-Qwen3.6-27B-MLX-AXQ-6bit-MTP)
 - [Modelo base Qwen/Qwen3.6-27B](https://huggingface.co/Qwen/Qwen3.6-27B/tree/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9)
 - [Certificado Tier 1 (calidad y conversion)](https://github.com/defai-digital/axquant/blob/main/docs/certifications/qwen36-27b-axq6-tier1.md)
 - [Certificado Tier 2 (aceleracion MTP)](https://github.com/defai-digital/axquant/blob/main/docs/certifications/qwen36-27b-axq6-tier2.md)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kairos_rmbenchpp_press_button_noop_16v3_p2p3` es un checkpoint de investigación publicado por el usuario m1b en HuggingFace, orientado al entrenamiento de políticas robóticas sobre el benchmark RMBench++ (RoboDojo v1.0.0), concretamente en la tarea `press-button-noop`. No se trata de un modelo de lenguaje generalista, sino de un artefacto de aprendizaje por imitación para control robótico manipulatorio, con observaciones multimodales (tres cámaras) y acciones continuas de 14 dimensiones.
+`kairos_rmbenchpp_press_button_noop_16v3_p2p3` es un checkpoint de investigación publicado por el usuario m1b en Hugging Face, orientado al entrenamiento de políticas robóticas sobre el benchmark RMBench++ (RoboDojo v1.0.0), concretamente en la tarea `press-button-noop`. No se trata de un modelo de lenguaje generalista, sino de un artefacto de aprendizaje por imitación para control robótico manipulatorio, con observaciones multimodales (tres cámaras) y acciones continuas de 14 dimensiones.
 
 El modelo parte de un warm start sobre los pesos de `rmbenchpp_v021_press-button-noop_sgres_1x8_20k_20260924_r1` (step 20.000) del autor zhwu, y se afina en dos fases: 2.000 pasos de entrenamiento conjunto y 1.000 pasos adicionales solo sobre los memory tokens. La innovación declarada son los "memory tokens" de la variante 16v3, con brazo adaptativo y un límite de `max_prefix_frames=128`, pensados para mejorar la retención de contexto temporal en secuencias de episodios largos.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `m1b/kairos_rmbenchpp_press_button_noop_16v3_p2p3` | no disponible | `max_prefix_frames=128` | no disponible | no disponible | HuggingFace, 0 descargas |
+| `m1b/kairos_rmbenchpp_press_button_noop_16v3_p2p3` | no disponible | `max_prefix_frames=128` | no disponible | no disponible | Hugging Face, 0 descargas |
 | `zhwu/rmbenchpp_v021_press-button-noop_sgres_1x8_20k_20260924_r1` (base) | no disponible | no disponible | no disponible | no disponible | Referenciado como warm start; disponibilidad pública no confirmada |
 | Otros checkpoints RMBench++ / RoboDojo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,7 +81,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/m1b/kairos_rmbenchpp_press_button_noop_16v3_p2p3
+- Hugging Face: https://huggingface.co/m1b/kairos_rmbenchpp_press_button_noop_16v3_p2p3
 - Dataset referenciado (ruta interna del autor, no URL pública): `/data/NTU_slab/zhwu/wam/Little-WAM/data/robodojo-v1.0.0/rmbench-plus-plus-robodojo-press-button-noop`
 - Modelo base referenciado: `zhwu/rmbenchpp_v021_press-button-noop_sgres_1x8_20k_20260924_r1` (sin URL pública confirmada)
 - Rama de desarrollo: `research-marina/v16.3_memory_tokens_speed_opt_rmbenchpp_press_button` en el commit `c0dae323bb316c7b5bacabd484bc75bba19f7262` (repositorio no indicado)

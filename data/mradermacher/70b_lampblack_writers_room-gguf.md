@@ -35,7 +35,7 @@ No hay datos publicados sobre el numero de tokens de entrenamiento, la composici
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: limitadas al ingles segun la model card.
 - Capacidades especiales (vision, audio, thinking mode): no disponibles.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse mediante infraestructura compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse mediante infraestructura compatible con la API de Hugging Face.
 
 ## Casos de uso
 

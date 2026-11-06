@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ComputerScience-v1-2B-GGUF es la version cuantizada en formato GGUF del modelo theprint/ComputerScience-v1-2B, publicada por el usuario mradermacher, conocido en HuggingFace por convertir pesos de modelos abiertos a cuantizaciones listas para llama.cpp. El modelo subyacente tiene 1.942.653.248 parametros (aproximadamente 1,94 mil millones) y ha sido ajustado mediante LoRA y SFT (las etiquetas de la model card incluyen `fine-tuned`, `lora`, `sft` y `auto-sft`), lo que sugiere una especializacion en contenido de ciencias de la computacion sobre una base de unos 2B parametros.
+ComputerScience-v1-2B-GGUF es la version cuantizada en formato GGUF del modelo theprint/ComputerScience-v1-2B, publicada por el usuario mradermacher, conocido en Hugging Face por convertir pesos de modelos abiertos a cuantizaciones listas para llama.cpp. El modelo subyacente tiene 1.942.653.248 parametros (aproximadamente 1,94 mil millones) y ha sido ajustado mediante LoRA y SFT (las etiquetas de la model card incluyen `fine-tuned`, `lora`, `sft` y `auto-sft`), lo que sugiere una especializacion en contenido de ciencias de la computacion sobre una base de unos 2B parametros.
 
 Su relevancia practica es doble. Por un lado, el tamano reducido permite ejecutar el modelo en hardware de consumo, incluso en CPU, con cuantizaciones que van desde 1,1 GB (Q2_K) hasta 4,0 GB (f16). Por otro, al estar en formato GGUF resulta directamente desplegable en llama.cpp, Ollama, LM Studio o koboldcpp sin necesidad de GPU dedicada, lo que lo hace apto para entornos de estudio, prototipado offline y experimentacion academica.
 
@@ -39,7 +39,7 @@ El proceso de cuantizacion en si es el habitual de mradermacher: conversion de l
 - Generacion de texto conversacional en ingles, con orientacion declarada a contenido de ciencias de la computacion por el nombre y el ajuste del modelo.
 - Respuesta a instrucciones (instruction following) derivada del ajuste SFT sobre LoRA.
 - Uso como modelo de chat multi-turno: la etiqueta `conversational` indica que el formato de prompt esta preparado para dialogo.
-- Compatibilidad con infraestructura de inferencia estandar: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad con infraestructura de inferencia estandar: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en Hugging Face Inference Endpoints.
 - Ejecucion local en CPU y GPU de gama baja gracias a las cuantizaciones Q2_K a Q6_K.
 - No hay evidencia de soporte de tool calling o function calling, razonamiento multi-paso con agentes, vision, audio ni modo de razonamiento explicito (thinking mode).
 - Capacidades multilingues: no disponibles mas alla del ingles declarado.
@@ -99,7 +99,7 @@ La ventaja diferencial del modelo analizado seria su especializacion declarada e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/ComputerScience-v1-2B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/ComputerScience-v1-2B-GGUF
 - Modelo base: https://huggingface.co/theprint/ComputerScience-v1-2B
 - Pagina de resumen de cuantizaciones y descargas del autor: https://hf.tst.eu/model#ComputerScience-v1-2B-GGUF
 - Guia de uso de archivos GGUF (README de referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

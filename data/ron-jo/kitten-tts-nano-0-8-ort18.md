@@ -16,7 +16,7 @@ Su relevancia práctica es acotada pero clara: permite reutilizar el modelo dent
 | Parámetros totales | no disponible |
 | Parámetros activos | no aplica (no hay indicios de arquitectura MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible. El modelo base referenciado es fp32; la etiqueta de HuggingFace incluye `base_model:quantized` sin más detalle |
+| Tipos de cuantización | no disponible. El modelo base referenciado es fp32; la etiqueta de Hugging Face incluye `base_model:quantized` sin más detalle |
 | Idiomas soportados | no disponible. La verificación se hizo con cadenas de fonemas basadas en CMU-ARPAbet, lo que apunta a inglés, pero no se declara oficialmente |
 | Licencia | Apache-2.0 |
 | Formato de pesos | ONNX (opset 18, dominio por defecto); voces en `voices.npz` (archivo numpy) |
@@ -75,8 +75,8 @@ Los únicos datos cuantitativos del repositorio corresponden a la verificación 
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ron-jo/kitten-tts-nano-0.8-ort18 | no disponible | no disponible | ONNX (opset 18) | Apache-2.0 | HuggingFace |
-| KittenML/kitten-tts-nano-0.8-fp32 | no disponible | no disponible | ONNX (opset 20) / fp32 | Apache-2.0 | HuggingFace |
+| ron-jo/kitten-tts-nano-0.8-ort18 | no disponible | no disponible | ONNX (opset 18) | Apache-2.0 | Hugging Face |
+| KittenML/kitten-tts-nano-0.8-fp32 | no disponible | no disponible | ONNX (opset 20) / fp32 | Apache-2.0 | Hugging Face |
 | Otras familias TTS abiertas (Piper, Kokoro, Coqui XTTS, entre otras) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación con alternativas de la misma categoría no puede completarse con la información proporcionada: no se dispone de parámetros, contexto ni resultados de benchmarks del modelo base ni de sus competidores. La diferencia funcional documentada frente al modelo original es únicamente el nivel de opset declarado (18 frente a 20) y la eliminación de imports de dominio no utilizados.
@@ -90,12 +90,12 @@ La comparación con alternativas de la misma categoría no puede completarse con
 - Licencia Apache-2.0: permite uso comercial, pero el usuario debe conservar los avisos de licencia y atribución correspondientes al modelo base de KittenML.
 - La reescritura solo aborda la compatibilidad de opset; si el runtime objetivo carece de otros operadores o de los execution providers necesarios, el problema persistirá.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado con un minuto de diferencia: no hay validación por parte de la comunidad.
-- El campo de pipeline no está definido en HuggingFace, por lo que las herramientas que dependen de esa etiqueta no lo reconocerán automáticamente como modelo de texto a voz.
+- El campo de pipeline no está definido en Hugging Face, por lo que las herramientas que dependen de esa etiqueta no lo reconocerán automáticamente como modelo de texto a voz.
 - El tag `base_model:quantized` no está explicado en la model card; no se puede asumir que el archivo ONNX esté cuantizado, ya que la referencia es la versión fp32.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ron-jo/kitten-tts-nano-0.8-ort18
+- Modelo en Hugging Face: https://huggingface.co/ron-jo/kitten-tts-nano-0.8-ort18
 - Modelo base: https://huggingface.co/KittenML/kitten-tts-nano-0.8-fp32
 - Organización KittenML: https://huggingface.co/KittenML
 - ONNX Runtime: https://onnxruntime.ai/

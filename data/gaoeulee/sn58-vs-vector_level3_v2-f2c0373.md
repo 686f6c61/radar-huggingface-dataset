@@ -85,5 +85,5 @@ No hay datos suficientes para una comparativa tecnica significativa mas alla del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GAOEULEE/sn58-vs-vector_level3_v2-f2c0373
+- Repositorio en Hugging Face: https://huggingface.co/GAOEULEE/sn58-vs-vector_level3_v2-f2c0373
 - No se han encontrado otros enlaces relevantes (paper, blog, repositorio de codigo o demo) en la informacion disponible.

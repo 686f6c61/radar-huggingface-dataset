@@ -24,7 +24,7 @@ Es relevante ahora porque entrega, bajo Apache-2.0, un entorno completo y ejecut
 | Entornos Gymnasium | `msgym/LocomotionEnv-v1`, `msgym/ManipulationEnv-v1` |
 | Configuraciones de tarea | `tracking_walk.json`, `tracking_stairs.json`, `tracking_farmer.json`, `tracking_recovery.json`, `vision/manipulation_vision.json` |
 | Políticas disponibles en el código | `StateSACPolicy` (vectorial), `VisionSACPolicy` (con imagen) |
-| Tamaño del repo | 0,0 GB (según HuggingFace); descargas: 0; likes: 3 |
+| Tamaño del repo | 0,0 GB (según Hugging Face); descargas: 0; likes: 3 |
 
 ## Arquitectura y entrenamiento
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Músculos / actuadores | Tareas | Visión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MS-Human-700 (BAAI) | Musculoesquelético de cuerpo completo en MuJoCo + DynSyn-SAC | 700 (cuerpo completo); 81 (manipulación) | Marcha, escaleras, carga, recuperación, manipulación | Estéreo opcional (ResNet-18) | Apache-2.0 | HuggingFace + GitHub; sin checkpoints |
+| MS-Human-700 (BAAI) | Musculoesquelético de cuerpo completo en MuJoCo + DynSyn-SAC | 700 (cuerpo completo); 81 (manipulación) | Marcha, escaleras, carga, recuperación, manipulación | Estéreo opcional (ResNet-18) | Apache-2.0 | Hugging Face + GitHub; sin checkpoints |
 | MyoSuite / MyoFullBody (Meta) | Musculoesquelético en MuJoCo para control motor | Número exacto no verificado en la información disponible | Locomoción, manipulación de mano y brazo | No verificada | Licencia del proyecto MyoSuite (consultar) | Público en GitHub |
 | OpenSim (modelos de cuerpo completo, p. ej. Rajagopal et al.) | Simulación biomecánica multcuerpo | Número exacto no verificado en la información disponible | Análisis de marcha, dinámica muscular, biomecánica clínica | No aplica | Licencia abierta de OpenSim (consultar) | Público en simtk.org |
 | Humanoides rígidos con RL (p. ej. Unitree, Isaac) | Cuerpo completo rígido, sin músculos | Articulaciones motorizadas, sin unidades músculo-tendón | Locomoción y manipulación | Varía | Varía por proyecto | Muy extendido |
@@ -95,7 +95,7 @@ La diferencia clave frente a los humanoides rígidos es la presencia de 700 unid
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BAAI/MS-Human-700
+- Hugging Face: https://huggingface.co/BAAI/MS-Human-700
 - Página del proyecto: https://lnsgroup.cc/research/MS-Human
 - Repositorio del modelo: https://github.com/LNSGroup/MS-Human-700
 - Entornos msgym: https://github.com/LNSGroup/msgym

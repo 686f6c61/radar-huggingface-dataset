@@ -66,7 +66,7 @@ No se dispone de información sobre modelos directamente comparables con el mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/happyinhappy/retouch-dodge-burn-onnx
+- Modelo en Hugging Face: https://huggingface.co/happyinhappy/retouch-dodge-burn-onnx
 - Sitio web del desarrollador: https://happyin.work/happyin-ai/
 - Bot de Telegram: https://t.me/HappyinAI_bot
 - Canal de Telegram: https://t.me/happy_in_happy

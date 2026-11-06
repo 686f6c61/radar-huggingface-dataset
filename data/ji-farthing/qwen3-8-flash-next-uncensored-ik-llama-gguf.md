@@ -4,7 +4,7 @@
 
 Este repositorio contiene una cuantización en formato GGUF del modelo orcarouter/Qwen3.8-Flash-Next-Uncensored, publicada por el usuario ji-farthing y orientada específicamente al runtime ik_llama.cpp. El modelo original cuenta con 176.943.899.520 parámetros (unos 177.000 millones), según los datos de safetensors de la ficha, lo que lo sitúa en la gama alta de modelos de texto. Se distribuye como modelo "abliterated" y "uncensored", es decir, con los mecanismos de rechazo reducidos o eliminados respecto al modelo alineado original, y está etiquetado como text-only, sin capacidades multimodales declaradas.
 
-El repositorio es un artefacto de cuantización, no un modelo entrenado desde cero: aplica cuantización con matriz de importancia (imatrix) sobre los pesos del modelo base y añade compatibilidad con decodificación especulativa y con la predicción multi-token (MTP), según las etiquetas declaradas. El tamaño total del repositorio es de 88,8 GB, coherente con una única cuantización en el entorno de 4 bits por peso para un modelo de este tamaño. El acceso está restringido (gated) y requiere aceptar las condiciones en HuggingFace antes de la descarga.
+El repositorio es un artefacto de cuantización, no un modelo entrenado desde cero: aplica cuantización con matriz de importancia (imatrix) sobre los pesos del modelo base y añade compatibilidad con decodificación especulativa y con la predicción multi-token (MTP), según las etiquetas declaradas. El tamaño total del repositorio es de 88,8 GB, coherente con una única cuantización en el entorno de 4 bits por peso para un modelo de este tamaño. El acceso está restringido (gated) y requiere aceptar las condiciones en Hugging Face antes de la descarga.
 
 Su relevancia ahora es doble: por un lado, permite ejecutar un modelo de ~177.000 millones de parámetros en hardware propio mediante ik_llama.cpp, con las optimizaciones de cuantización y decodificación especulativa que ese fork incorpora; por otro, cubre un nicho concreto —investigación en alineación, generación de datos sintéticos y aplicaciones donde los modelos alineados rechazan peticiones legítimas— con las advertencias legales y éticas que implica el uso de un modelo abliterated bajo la licencia Qwen Community License 1.0. El repositorio es muy reciente (creado el 23 de septiembre de 2026), con 0 descargas y 1 like en el momento de redactar esta ficha.
 
@@ -60,7 +60,7 @@ Las etiquetas del repositorio sí aportan indicios técnicos sobre el proceso de
 
 No se han publicado resultados de benchmarks en la información disponible.
 
-La ficha de HuggingFace no incluye métricas de MMLU, HumanEval, GSM8K, MT-Bench ni de ningún otro conjunto de evaluación, y tampoco se aportan datos de perplejidad tras la cuantización con imatrix. Tampoco se han encontrado en la búsqueda web resultados relevantes: las coincidencias obtenidas corresponden a un artista musical, a un antiguo afluente del río Amarillo y a entradas de diccionario sobre la sílaba "ji", sin relación con el modelo. No es posible, por tanto, comparar su rendimiento con el de otros modelos de la misma categoría sin inventar cifras.
+La ficha de Hugging Face no incluye métricas de MMLU, HumanEval, GSM8K, MT-Bench ni de ningún otro conjunto de evaluación, y tampoco se aportan datos de perplejidad tras la cuantización con imatrix. Tampoco se han encontrado en la búsqueda web resultados relevantes: las coincidencias obtenidas corresponden a un artista musical, a un antiguo afluente del río Amarillo y a entradas de diccionario sobre la sílaba "ji", sin relación con el modelo. No es posible, por tanto, comparar su rendimiento con el de otros modelos de la misma categoría sin inventar cifras.
 
 ## Requisitos de hardware
 
@@ -116,6 +116,6 @@ Comparación con modelos alternativos de ~177.000 millones de parámetros (por e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ji-farthing/Qwen3.8-Flash-Next-Uncensored-ik-llama-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ji-farthing/Qwen3.8-Flash-Next-Uncensored-ik-llama-GGUF
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Paper, blog, repositorio de código o demo asociados: no disponible. La búsqueda web realizada no devolvió resultados relevantes para este modelo; las coincidencias obtenidas correspondían a un artista musical, a un antiguo tributario del río Amarillo y a entradas de diccionario sobre la sílaba "ji", sin relación con el artefacto descrito.

@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM/RAM estimada para inferencia: aproximadamente 1,8 GB para el LLM en Q4_K_M; hay que sumar unos 800 MB si se carga el proyector visual BF16 (`mmproj-BF16.gguf`), lo que situa el conjunto en torno a 2,6-3 GB, mas la cache KV correspondiente al contexto utilizado. Son estimaciones derivadas de los tamanos de archivo publicados, no cifras declaradas por el autor.
 - GPU recomendadas: no especificadas en la informacion disponible. Por tamano, el modelo es ejecutable en GPU de consumo sin problemas.
 - Cabe en GPU de consumo: si. Cualquier GPU con 4 GB o mas de VRAM puede alojar la cuantizacion Q4_K_M; es apto tambien para inferencia en CPU y para despliegue en movil (iOS/Android) mediante llama.cpp.
-- Opciones de despliegue: LM Studio (escritorio, detecta automaticamente el `mmproj-`), llama.cpp con soporte de la arquitectura `qwen2_5_vl` (builds de febrero de 2025 en adelante), apps moviles que integren bindings de llama.cpp y cualquier runtime que soporte GGUF con esa arquitectura. Requiere `inference: false` en la model card, es decir, la inferencia no esta habilitada en la infraestructura de HuggingFace.
+- Opciones de despliegue: LM Studio (escritorio, detecta automaticamente el `mmproj-`), llama.cpp con soporte de la arquitectura `qwen2_5_vl` (builds de febrero de 2025 en adelante), apps moviles que integren bindings de llama.cpp y cualquier runtime que soporte GGUF con esa arquitectura. Requiere `inference: false` en la model card, es decir, la inferencia no esta habilitada en la infraestructura de Hugging Face.
 - Latencia y throughput: 15-30 tokens/s en telefonos modernos segun la model card. No hay datos de throughput en GPU o servidor.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ La diferencia funcional entre la v9 y su base no esta en la capacidad bruta, sin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mmp2055/Qwen2.5-VL-3B-uncensored-bughunter-v9
+- Modelo en Hugging Face: https://huggingface.co/mmp2055/Qwen2.5-VL-3B-uncensored-bughunter-v9
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Iteracion v8 de la serie (MoE de 35B): https://huggingface.co/mmp2055/Qwen3.5-35B-A3B-uncensored-bughunter-v8
 - Metodo de abliteration de referencia: https://huggingface.co/blog/mlabonne/abliteration

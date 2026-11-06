@@ -27,7 +27,7 @@ La relevancia es acotada pero concreta: demuestra el patrón de publicación de 
 | Comportamiento | perpetuo (se ejecuta hasta recibir orden de parada) |
 | Modelo base | `jrubiosainz/microduck-game-hillclimber-remix6` (finetune) |
 | Librería / pipeline | `microduck` / `robotics` |
-| Tamaño del repo | 0.0 GB (según HuggingFace) |
+| Tamaño del repo | 0.0 GB (según Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -70,15 +70,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ú
 
 | Modelo | Tipo | Entrada / salida | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dashi/microduck-hill-daily-20261105` | Política RL (ONNX) para microduck, slot `walk` | 61 obs. / 14 acciones | 50 Hz | no disponible | HuggingFace, 0 descargas |
-| `jrubiosainz/microduck-game-hillclimber-remix6` | Política RL para microduck (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
-| `dashi/microduck-hill-remix-r752` | Política RL para microduck (predecesora, recompensa 0.749) | no disponible | no disponible | no disponible | HuggingFace |
+| `dashi/microduck-hill-daily-20261105` | Política RL (ONNX) para microduck, slot `walk` | 61 obs. / 14 acciones | 50 Hz | no disponible | Hugging Face, 0 descargas |
+| `jrubiosainz/microduck-game-hillclimber-remix6` | Política RL para microduck (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
+| `dashi/microduck-hill-remix-r752` | Política RL para microduck (predecesora, recompensa 0.749) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de arquitectura, parámetros ni rendimiento de las alternativas como para establecer una comparación cuantitativa. Las tres pertenecen al mismo ecosistema y comparten linaje.
 
 ## Limitaciones y advertencias
 
-- **Licencia no declarada**: no hay licencia en la model card ni en los metadatos de HuggingFace, por lo que el uso comercial queda sin marco legal explícito y requiere contactar con el autor.
+- **Licencia no declarada**: no hay licencia en la model card ni en los metadatos de Hugging Face, por lo que el uso comercial queda sin marco legal explícito y requiere contactar con el autor.
 - **Especificidad de plataforma**: la política está acoplada al microduck (61 dimensiones de observación, 14 acciones, 50 Hz) y al contrato del daemon `robotctl`; no es reutilizable en otro robot sin reentrenamiento.
 - **Comportamiento perpetuo**: la política se ejecuta hasta recibir una orden de parada; en despliegues reales es imprescindible implementar un mecanismo de parada de seguridad independiente.
 - **Trazabilidad incompleta**: se desconoce el número de parámetros, la arquitectura de red y la precisión numérica de la exportación ONNX, lo que dificulta auditar el comportamiento.
@@ -89,7 +89,7 @@ No se dispone de datos de arquitectura, parámetros ni rendimiento de las altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dashi/microduck-hill-daily-20261105
+- Modelo en Hugging Face: https://huggingface.co/dashi/microduck-hill-daily-20261105
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix6
 - Modelo predecesor citado: https://huggingface.co/dashi/microduck-hill-remix-r752
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck

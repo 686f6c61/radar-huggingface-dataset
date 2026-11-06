@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`CollinEvers/fermijn-scan-zoek` es un repositorio publicado en HuggingFace por el usuario CollinEvers bajo licencia Apache 2.0. La model card asociada no contiene más que el bloque de metadatos de licencia: no se incluye descripción del modelo, arquitectura, datos de entrenamiento ni propósito declarado. El nombre del repositorio sugiere un posible uso relacionado con búsqueda o escaneo ("scan-zoek", donde "zoek" significa "búsqueda" en neerlandés), pero esta interpretación es especulativa y no está respaldada por documentación alguna.
+`CollinEvers/fermijn-scan-zoek` es un repositorio publicado en Hugging Face por el usuario CollinEvers bajo licencia Apache 2.0. La model card asociada no contiene más que el bloque de metadatos de licencia: no se incluye descripción del modelo, arquitectura, datos de entrenamiento ni propósito declarado. El nombre del repositorio sugiere un posible uso relacionado con búsqueda o escaneo ("scan-zoek", donde "zoek" significa "búsqueda" en neerlandés), pero esta interpretación es especulativa y no está respaldada por documentación alguna.
 
 El repositorio no registra descargas ni "likes" en el momento de la consulta, y no tiene pipeline declarado, lo que impide clasificarlo con certeza como modelo de texto, visión u otra modalidad. Tampoco se especifican idiomas soportados ni formato de pesos.
 
@@ -74,4 +74,4 @@ No disponible. Sin datos sobre arquitectura, tamaño o tarea, no es posible iden
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CollinEvers/fermijn-scan-zoek
+- Repositorio en Hugging Face: https://huggingface.co/CollinEvers/fermijn-scan-zoek

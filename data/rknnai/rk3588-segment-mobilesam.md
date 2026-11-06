@@ -94,7 +94,7 @@ Nota: las cifras de parametros de MobileSAM y SAM ViT-H proceden de la documenta
 ## Limitaciones y advertencias
 
 - El repositorio no registra descargas ni likes y su actualizacion se produjo 27 segundos despues de la creacion, por lo que no existe validacion independiente de la calidad de la conversion.
-- La informacion de HuggingFace declara un tamano de repositorio de 0,0 GB, dato que conviene contrastar con el contenido real descargado antes de integrarlo en un pipeline.
+- La informacion de Hugging Face declara un tamano de repositorio de 0,0 GB, dato que conviene contrastar con el contenido real descargado antes de integrarlo en un pipeline.
 - Solo se publica una configuracion (448x448, fp16) y solo para RK3588. Usar ficheros de configuraciones distintas o de otros chips no esta soportado por la documentacion.
 - La resolucion de entrada esta fijada en 448x448 px; no se documentan variantes de mayor resolucion ni su impacto en la calidad de las mascaras.
 - No hay resultados de benchmarks, curvas de IoU ni latencias publicadas, por lo que el rendimiento real en una aplicacion concreta debe medirse en el propio dispositivo.
@@ -107,7 +107,7 @@ Nota: las cifras de parametros de MobileSAM y SAM ViT-H proceden de la documenta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKNNAI/RK3588-SEGMENT-MobileSAM
+- Modelo en Hugging Face: https://huggingface.co/RKNNAI/RK3588-SEGMENT-MobileSAM
 - Repositorio fuente de MobileSAM para Rockchip: https://github.com/airockchip/MobileSAM
 - Ejemplo oficial de MobileSAM en RKNN Model Zoo: https://github.com/airockchip/rknn_model_zoo/tree/main/examples/mobilesam
 - Documentacion de MobileSAM en DeepWiki (rknn_model_zoo): https://deepwiki.com/airockchip/rknn_model_zoo/5.1.2.1-mobilesam

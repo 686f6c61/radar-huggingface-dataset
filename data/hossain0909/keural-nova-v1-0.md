@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Keural Nova v1.0 es un modelo de instrucción orientado al coreano, desarrollado por MKD (publicado en HuggingFace por el usuario hossain0909) a partir de Qwen/Qwen3.6-35B-A3B, un modelo Mixture-of-Experts de 35B parámetros con unos 3B activos por token. El ajuste se realizó mediante LoRA (posteriormente fusionado en los pesos base) para mejorar la calidad conversacional en coreano, manteniendo una mezcla de datos en inglés para limitar la regresión de capacidades generales.
+Keural Nova v1.0 es un modelo de instrucción orientado al coreano, desarrollado por MKD (publicado en Hugging Face por el usuario hossain0909) a partir de Qwen/Qwen3.6-35B-A3B, un modelo Mixture-of-Experts de 35B parámetros con unos 3B activos por token. El ajuste se realizó mediante LoRA (posteriormente fusionado en los pesos base) para mejorar la calidad conversacional en coreano, manteniendo una mezcla de datos en inglés para limitar la regresión de capacidades generales.
 
 El valor diferencial del modelo es su rendimiento en diálogo y comprensión en coreano: mejora KoBEST en +5,94 puntos respecto al modelo base y normaliza el formato de respuestas matemáticas (GSM8K strict-match pasa de 32,15 a 87,11, aunque el autor aclara que ese salto es principalmente de cumplimiento de formato). A cambio, sufre una regresión notable en generación de código (HumanEval cae de 62,2 a 20,7 pass@1) y pequeñas pérdidas en benchmarks de conocimiento.
 
@@ -103,7 +103,7 @@ Contra otros fine-tunes coreanos de terceros o modelos coreanos nativos no hay d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hossain0909/Keural-Nova-v1.0
+- Modelo en Hugging Face: https://huggingface.co/hossain0909/Keural-Nova-v1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Versión hermana (2 épocas): Keural Nova v1.1 (enlace no disponible en la información proporcionada)
 - Paper, repositorio de código y demo: no disponibles

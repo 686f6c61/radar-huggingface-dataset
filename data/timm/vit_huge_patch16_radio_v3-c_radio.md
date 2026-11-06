@@ -100,7 +100,7 @@ Frente a las variantes de menor tamaño de la misma familia, C-RADIOv3-H gana 5,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/vit_huge_patch16_radio_v3.c_radio
+- Modelo en Hugging Face: https://huggingface.co/timm/vit_huge_patch16_radio_v3.c_radio
 - Pesos originales de NVIDIA: https://huggingface.co/nvidia/C-RADIOv3-H
 - Variante con comportamiento original a cualquier resolución: https://huggingface.co/timm/naflexvit_huge_patch16_radio_v3.c_radio
 - Repositorio oficial de RADIO (NVlabs): https://github.com/NVlabs/RADIO

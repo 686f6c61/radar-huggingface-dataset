@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`muhammadantor/typly-banglaasr-ct2` es un repositorio alojado en HuggingFace por el usuario `muhammadantor`, publicado bajo licencia MIT. Se trata de un artefacto sin documentación técnica: la model card únicamente contiene el campo `license: mit`, sin descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado.
+`muhammadantor/typly-banglaasr-ct2` es un repositorio alojado en Hugging Face por el usuario `muhammadantor`, publicado bajo licencia MIT. Se trata de un artefacto sin documentación técnica: la model card únicamente contiene el campo `license: mit`, sin descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado.
 
 El nombre del repositorio sugiere, sin confirmación oficial, dos cosas: que está orientado a reconocimiento automático del habla (ASR) en bengalí ("banglaasr") y que el sufijo "ct2" indica una conversión al formato de CTranslate2, la librería de inferencia eficiente de OpenNMT. Si esa interpretación es correcta, se trataría de una versión optimizada para inferencia en CPU o GPU de un modelo ASR previamente entrenado en PyTorch, probablemente de arquitectura encoder-decoder tipo Whisper o similar. Ninguno de estos extremos se puede verificar con la información disponible.
 
@@ -85,6 +85,6 @@ No disponible. Para establecer una comparativa sería necesario identificar prim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/muhammadantor/typly-banglaasr-ct2
+- Repositorio en Hugging Face: https://huggingface.co/muhammadantor/typly-banglaasr-ct2
 - Documentación de CTranslate2 (formato indicado por el sufijo del repositorio): https://github.com/OpenNMT/CTranslate2
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web realizada.

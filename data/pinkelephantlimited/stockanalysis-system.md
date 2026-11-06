@@ -17,7 +17,7 @@ No se trata de un modelo de lenguaje entrenado desde cero, sino de un sistema in
 | Tipos de cuantizacion | 8 bits (bitsandbytes) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | no aplicable; utiliza pesos de los modelos base en formato HuggingFace (safetensors) |
+| Formato de pesos | no aplicable; utiliza pesos de los modelos base en formato Hugging Face (safetensors) |
 
 ## Arquitectura y entrenamiento
 

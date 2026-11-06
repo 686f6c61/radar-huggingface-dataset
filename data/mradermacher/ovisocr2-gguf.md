@@ -29,7 +29,7 @@ La relevancia de esta publicación es práctica: permite ejecutar un pipeline de
 
 La información disponible no detalla la arquitectura interna del modelo base. Los metadatos del repositorio indican que se trata de un modelo multimodal con entrada de imagen y salida de texto, y la presencia de ficheros `mmproj` (proyector multimodal separado) confirma que el pipeline consta de un codificador visual más un proyector y un modelo de lenguaje. El tag `qwen3_5` sugiere que el componente de lenguaje deriva de la familia Qwen3.5, pero se trata de una inferencia a partir de etiquetas, no de un dato confirmado por el autor.
 
-Tampoco se han publicado en la información disponible datos sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de ajuste por instrucciones, RLHF o DPO. Lo único verificable es que el autor de la cuantización declara `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversión desde pesos HuggingFace con tensores cuantizados. No se han generado cuantizaciones ponderadas (imatrix/weighted) para este modelo.
+Tampoco se han publicado en la información disponible datos sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de ajuste por instrucciones, RLHF o DPO. Lo único verificable es que el autor de la cuantización declara `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversión desde pesos Hugging Face con tensores cuantizados. No se han generado cuantizaciones ponderadas (imatrix/weighted) para este modelo.
 
 ## Capacidades
 
@@ -99,7 +99,7 @@ No se dispone, en la información proporcionada, de datos verificables sobre otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/OvisOCR2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/OvisOCR2-GGUF
 - Modelo base: https://huggingface.co/ianua/OvisOCR2
 - Página de resumen y listado de descargas del cuantizador: https://hf.tst.eu/model#OvisOCR2-GGUF
 - README de referencia sobre uso de ficheros GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

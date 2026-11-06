@@ -126,7 +126,7 @@ No se han encontrado en la información disponible resultados de benchmarks inde
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/sulabhkatiyar/en-indic-translate-2b-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/sulabhkatiyar/en-indic-translate-2b-GGUF
 - Modelo base (pesos sin cuantizar): https://huggingface.co/sulabhkatiyar/en-indic-translate-2b
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Ficheros publicados y sumas de verificación sha256:

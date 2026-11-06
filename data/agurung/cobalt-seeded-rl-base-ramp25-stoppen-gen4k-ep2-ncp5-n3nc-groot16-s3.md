@@ -12,7 +12,7 @@ La relevancia de esta ficha es acotada y experimental: el propio autor indica qu
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (heredada de Qwen3-4B-Instruct-2507); el tag de HuggingFace incluye `nemotron_h`, sin confirmar en la informacion disponible |
+| Arquitectura | Transformer (heredada de Qwen3-4B-Instruct-2507); el tag de Hugging Face incluye `nemotron_h`, sin confirmar en la informacion disponible |
 | Parametros totales | 3.973.556.832 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada (heredada del modelo base Qwen3-4B-Instruct-2507) |
@@ -27,7 +27,7 @@ La relevancia de esta ficha es acotada y experimental: el propio autor indica qu
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del modelo base Qwen3-4B-Instruct-2507, un transformer decoder-only de aproximadamente 4.000 millones de parámetros. El repositorio no documenta modificaciones estructurales respecto al base: el checkpoint se obtiene por optimización de política sobre los pesos existentes, no por cambios en el grafo del modelo. El tag `nemotron_h` aparece en los metadatos de HuggingFace, pero la model card no lo justifica ni lo describe, por lo que no puede confirmarse que la arquitectura sea híbrida.
+La arquitectura subyacente es la del modelo base Qwen3-4B-Instruct-2507, un transformer decoder-only de aproximadamente 4.000 millones de parámetros. El repositorio no documenta modificaciones estructurales respecto al base: el checkpoint se obtiene por optimización de política sobre los pesos existentes, no por cambios en el grafo del modelo. El tag `nemotron_h` aparece en los metadatos de Hugging Face, pero la model card no lo justifica ni lo describe, por lo que no puede confirmarse que la arquitectura sea híbrida.
 
 El entrenamiento se realizó con OpenRLHF aplicando GRPO con ventajas normalizadas por grupo y sin penalización KL. Incluye dos mecanismos de shaping de recompensa: un "stop-properly penalty" de estilo ProRL que asigna −1,0 a las muestras truncadas, y una penalización overlong de estilo DAPO que añade hasta −0,25 a las respuestas situadas en los últimos 1024 tokens antes del límite. Los hiperparámetros declarados son: 8 muestras por prompt, batch de rollout y de entrenamiento de 128, máximo de 4096 tokens nuevos por rollout, 2 episodios, y tasa de aprendizaje del actor constante de 1e-06. El conjunto de datos de RL es el "cobalt-train ≤2/64 frontier": 1833 problemas de entrenamiento y 112 de validación retenidos, definidos como aquellos que el modelo base resolvía en como máximo 2 de 64 muestras bajo el escaneo de dificultad `iid_canonical@64`. La evaluación de validación muestrea a temperatura 1.0.
 
@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-groot16-s3)
+- [Modelo en Hugging Face](https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-groot16-s3)
 - [Modelo base Qwen/Qwen3-4B-Instruct-2507](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507)
 - Weights & Biases, proyecto `eaiexp-paper-final`, ejecucion `seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp5_n3nc_groot16-s3` (referenciado en la model card; sin URL directa proporcionada)
 - OpenRLHF (framework de entrenamiento mencionado; sin URL proporcionada en la informacion disponible)

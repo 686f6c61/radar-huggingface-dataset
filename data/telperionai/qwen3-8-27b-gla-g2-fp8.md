@@ -112,7 +112,7 @@ Frente a la build FP8 oficial de Qwen, este modelo ocupa 1,2 GB menos en disco y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TelperionAI/Qwen3.8-27B-GLA-g2-FP8
+- Modelo en Hugging Face: https://huggingface.co/TelperionAI/Qwen3.8-27B-GLA-g2-FP8
 - Modelo base (retrofit GLA-g2, bf16): https://huggingface.co/TelperionAI/Qwen3.8-27B-GLA-g2
 - Build usada para el injerto FP8: https://huggingface.co/TelperionAI/Qwen3.8-27B-FP8-block-AWQ
 - Build FP8 oficial de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B-FP8

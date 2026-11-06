@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | hybrid-pdns-gnn-roberta-model | no disponible | no disponible | Híbrido texto + grafo + ciclo de vida para pDNS | MIT | Repositorio publicado, sin pesos visibles (0.0 GB) |
-| RoBERTa (base, Meta AI) | ~125 M | 512 tokens | Transformer encoder-only de propósito general | MIT | Pesos públicos en HuggingFace |
-| BERT (base, Google) | ~110 M | 512 tokens | Transformer encoder-only de propósito general | Apache 2.0 | Pesos públicos en HuggingFace |
+| RoBERTa (base, Meta AI) | ~125 M | 512 tokens | Transformer encoder-only de propósito general | MIT | Pesos públicos en Hugging Face |
+| BERT (base, Google) | ~110 M | 512 tokens | Transformer encoder-only de propósito general | Apache 2.0 | Pesos públicos en Hugging Face |
 | Clasificadores de detección de DGA basados en carácter | no disponible | no aplica | Modelos ligeros sobre cadenas de dominio | variable | Múltiples implementaciones públicas |
 
 La comparación debe leerse con cautela: RoBERTa y BERT son modelos de lenguaje generales que aquí se emplearían como componente, mientras que el modelo descrito es un sistema de clasificación específico de seguridad con módulos adicionales. No se dispone de métricas del modelo de tesis para comparar rendimiento frente a estas alternativas.
@@ -84,8 +84,8 @@ La comparación debe leerse con cautela: RoBERTa y BERT son modelos de lenguaje 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ranim2700/hybrid-pdns-gnn-roberta-model
+- Modelo en Hugging Face: https://huggingface.co/Ranim2700/hybrid-pdns-gnn-roberta-model
 - Dataset asociado: https://huggingface.co/datasets/Ranim2700/pdns-malicious-infrastructure-dataset
-- Plataforma HuggingFace: https://huggingface.co/
-- Catálogo de modelos de HuggingFace: https://huggingface.co/models
+- Plataforma Hugging Face: https://huggingface.co/
+- Catálogo de modelos de Hugging Face: https://huggingface.co/models
 - Introducción a RoBERTa (GeeksforGeeks): https://www.geeksforgeeks.org/machine-learning/overview-of-roberta-model/

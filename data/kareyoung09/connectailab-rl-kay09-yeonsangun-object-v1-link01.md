@@ -86,7 +86,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kareyoung09/connectailab-rl-kay09-yeonsangun-object-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/kareyoung09/connectailab-rl-kay09-yeonsangun-object-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Libreria PEFT: https://github.com/huggingface/peft
 - Proyecto CONNECT AI LAB × AI CITY BUILDERS (LINK-01): no disponible enlace directo en la informacion proporcionada.

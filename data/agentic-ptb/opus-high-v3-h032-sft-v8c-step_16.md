@@ -87,7 +87,7 @@ No se puede afirmar que este checkpoint supere o iguale a estas alternativas, da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h032.sft-v8c.step_16
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h032.sft-v8c.step_16
 - Dataset asociado: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Búsqueda de modelos con tag `agentic-ptb`: https://huggingface.co/models?other=agentic-ptb

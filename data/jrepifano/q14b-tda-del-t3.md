@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jrepifano/q14b-tda-del-t3` es una publicación en HuggingFace realizada por Jacob R Epifano, investigador en inteligencia artificial y machine learning. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene archivos de pesos ni configuración del modelo, y la model card asociada es una plantilla generada automáticamente por HuggingFace sin información técnica rellenada. Los tags sugieren que fue creado con la librería Unsloth y que es compatible con endpoints de HuggingFace, pero no hay datos verificables sobre arquitectura, parámetros o entrenamiento.
+El modelo `jrepifano/q14b-tda-del-t3` es una publicación en Hugging Face realizada por Jacob R Epifano, investigador en inteligencia artificial y machine learning. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene archivos de pesos ni configuración del modelo, y la model card asociada es una plantilla generada automáticamente por Hugging Face sin información técnica rellenada. Los tags sugieren que fue creado con la librería Unsloth y que es compatible con endpoints de Hugging Face, pero no hay datos verificables sobre arquitectura, parámetros o entrenamiento.
 
 A fecha de su publicación (agosto de 2026), el modelo no ha recibido descargas ni interacciones, y no existe documentación adicional en el repositorio que permita evaluar su funcionalidad. El autor mantiene un perfil público en GitHub y un sitio web personal donde documenta su investigación, pero no hay referencias a este modelo concreto en esos canales. En consecuencia, cualquier uso en producción o investigación debe considerarse bajo su propio riesgo, dado que no se dispone de información técnica suficiente.
 
@@ -72,7 +72,7 @@ No disponible. No existen datos suficientes para comparar este modelo con altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jrepifano/q14b-tda-del-t3
+- Repositorio Hugging Face: https://huggingface.co/jrepifano/q14b-tda-del-t3
 - Perfil de GitHub del autor: https://github.com/jrepifano
 - Sitio web de investigacion del autor: https://jrepifano.github.io/research/
 - Repositorio de machine learning del autor: https://github.com/jrepifano/Machine-Learning

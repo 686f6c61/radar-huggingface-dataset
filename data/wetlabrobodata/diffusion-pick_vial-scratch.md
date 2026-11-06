@@ -84,7 +84,7 @@ La informacion proporcionada no incluye resultados de otros modelos sobre la tar
 
 | Modelo | Parametros | Contexto / horizonte | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| diffusion-pick_vial-scratch | 262.813.031 | no disponible | pick_vial (UR3e bimanual, 3 camaras) | apache-2.0 | HuggingFace, via LeRobot |
+| diffusion-pick_vial-scratch | 262.813.031 | no disponible | pick_vial (UR3e bimanual, 3 camaras) | apache-2.0 | Hugging Face, via LeRobot |
 | Alternativas de la familia LeRobot (ACT, otras diffusion policies) | no disponible | no disponible | manipulacion general | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ La informacion proporcionada no incluye resultados de otros modelos sobre la tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WetLabRoboData/diffusion-pick_vial-scratch
+- Modelo en Hugging Face: https://huggingface.co/WetLabRoboData/diffusion-pick_vial-scratch
 - Dataset de entrenamiento: https://huggingface.co/datasets/WetLabRoboData/lerobot-data-pick_vial
 - Dataset de evaluacion (videos de rollout y resultados por episodio): https://huggingface.co/datasets/WetLabRoboData/eval-diffusion-pick_vial-scratch
 - Repositorio de origen con artefactos de entrenamiento (checkpoints, `train_config.json`, `wandb/` en `old/`): https://huggingface.co/WetLabRoboData/lerobot-data-pick_vial_20260524

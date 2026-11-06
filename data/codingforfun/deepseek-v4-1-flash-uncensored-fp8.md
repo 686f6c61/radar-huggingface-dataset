@@ -106,8 +106,8 @@ No se han publicado resultados de benchmarks adicionales (HumanEval, GSM8K, MMLU
 
 | Modelo | Parametros | Contexto | Licencia | MMLU | HarmBench-320 (off / max) | Disponibilidad |
 |---|---|---|---|---|---|---|
-| codingforfun/DeepSeek-V4.1-Flash-UNCENSORED-FP8 | 763.205.315.794 segun safetensors (552B de backbone segun la card) | 1M tokens | MIT | 82,74 % | 100,0 % / 100,0 % | HuggingFace, transformers, FP8/FP4 nativo |
-| deepseek-ai/DeepSeek-V4.1-Flash (base) | 552B de backbone, 8B/16B activos por token segun la card | 1M tokens | no disponible en la informacion proporcionada | 86,96 % | 42,81 % / 1,56 % | HuggingFace, transformers |
+| codingforfun/DeepSeek-V4.1-Flash-UNCENSORED-FP8 | 763.205.315.794 segun safetensors (552B de backbone segun la card) | 1M tokens | MIT | 82,74 % | 100,0 % / 100,0 % | Hugging Face, transformers, FP8/FP4 nativo |
+| deepseek-ai/DeepSeek-V4.1-Flash (base) | 552B de backbone, 8B/16B activos por token segun la card | 1M tokens | no disponible en la informacion proporcionada | 86,96 % | 42,81 % / 1,56 % | Hugging Face, transformers |
 | Otras variantes abliteradas de la misma familia | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion con datos es contra el propio modelo base, del que esta variante hereda arquitectura, contexto y cuantizacion, y del que se diferencia por la eliminacion del circuito de rechazo y por una perdida de 4,22 pp en MMLU-14k. No se dispone de datos de benchmarks para otras alternativas de la misma categoria (abliteradas o no) en la informacion proporcionada.
@@ -127,7 +127,7 @@ La unica comparacion con datos es contra el propio modelo base, del que esta var
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/codingforfun/DeepSeek-V4.1-Flash-UNCENSORED-FP8
+- Modelo en Hugging Face: https://huggingface.co/codingforfun/DeepSeek-V4.1-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Perfil del autor en X: https://x.com/dealignai
 - Perfil del autor en X: https://x.com/jordanschenck

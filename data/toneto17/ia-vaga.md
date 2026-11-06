@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Toneto17/ia-vaga` es un modelo de generacion de texto publicado en HuggingFace por el usuario Toneto17. Se trata de un checkpoint de aproximadamente 494 millones de parametros (494.032.768 exactamente, segun los pesos en safetensors) etiquetado con la arquitectura `qwen2`, lo que lo situa en la familia de transformadores decoder-only de Qwen2 en su variante mas pequena. El repositorio ocupa 2,0 GB e incluye pesos en safetensors y, presumiblemente, alguna conversion a GGUF, dado que ambas etiquetas aparecen en el modelo.
+`Toneto17/ia-vaga` es un modelo de generacion de texto publicado en Hugging Face por el usuario Toneto17. Se trata de un checkpoint de aproximadamente 494 millones de parametros (494.032.768 exactamente, segun los pesos en safetensors) etiquetado con la arquitectura `qwen2`, lo que lo situa en la familia de transformadores decoder-only de Qwen2 en su variante mas pequena. El repositorio ocupa 2,0 GB e incluye pesos en safetensors y, presumiblemente, alguna conversion a GGUF, dado que ambas etiquetas aparecen en el modelo.
 
-La relevancia de esta ficha es limitada desde el punto de vista tecnico: el modelo acumula 0 descargas y 0 likes, y su model card es la plantilla autogenerada de HuggingFace sin ninguna seccion completada. No hay informacion publicada sobre datos de entrenamiento, proceso de ajuste, licencia, idiomas soportados ni evaluaciones. Tampoco se han encontrado referencias externas al modelo en la busqueda web realizada, que ha devuelto unicamente resultados no relacionados (portales de la autoridad tributaria griega).
+La relevancia de esta ficha es limitada desde el punto de vista tecnico: el modelo acumula 0 descargas y 0 likes, y su model card es la plantilla autogenerada de Hugging Face sin ninguna seccion completada. No hay informacion publicada sobre datos de entrenamiento, proceso de ajuste, licencia, idiomas soportados ni evaluaciones. Tampoco se han encontrado referencias externas al modelo en la busqueda web realizada, que ha devuelto unicamente resultados no relacionados (portales de la autoridad tributaria griega).
 
 Por tanto, esta ficha describe lo que puede verificarse objetivamente (arquitectura etiquetada, numero de parametros, formatos de peso, tamano del repositorio) y marca explicitamente como "no disponible" todo aquello que el autor no ha documentado. Se recomienda precaucion antes de cualquier uso en produccion.
 
@@ -30,7 +30,7 @@ Por tanto, esta ficha describe lo que puede verificarse objetivamente (arquitect
 
 La unica informacion fiable sobre la arquitectura es la etiqueta `qwen2` incluida por el autor en los tags del repositorio. La familia Qwen2 emplea transformadores decoder-only con normalizacion RMSNorm, activacion SwiGLU, atencion con sesgo QKV y RoPE (rotary position embeddings). El recuento exacto de parametros, 494.032.768, coincide con el de la variante de 0,5B de Qwen2, lo que apunta con alta probabilidad a un ajuste fino (fine-tuning) sobre `Qwen/Qwen2-0.5B`, aunque el autor no lo confirma en ningun campo de la model card. Esta afirmacion debe tratarse como inferencia, no como dato verificado.
 
-No hay absolutamente ningun dato publicado sobre el entrenamiento: se desconoce el numero de tokens utilizados, la composicion del dataset, si hubo preentrenamiento adicional, ajuste supervisado, RLHF, DPO u otra tecnica de alineamiento. La model card mantiene los marcadores de plantilla `[More Information Needed]` en todas las secciones de detalles de modelo, datos de entrenamiento, hiperparametros y examined. El tag `arxiv:1910.09700` corresponde a la referencia por defecto que HuggingFace inserta en la plantilla para el calculo de impacto ambiental (Lacoste et al., 2019) y no a un articulo cientifico sobre este modelo.
+No hay absolutamente ningun dato publicado sobre el entrenamiento: se desconoce el numero de tokens utilizados, la composicion del dataset, si hubo preentrenamiento adicional, ajuste supervisado, RLHF, DPO u otra tecnica de alineamiento. La model card mantiene los marcadores de plantilla `[More Information Needed]` en todas las secciones de detalles de modelo, datos de entrenamiento, hiperparametros y examined. El tag `arxiv:1910.09700` corresponde a la referencia por defecto que Hugging Face inserta en la plantilla para el calculo de impacto ambiental (Lacoste et al., 2019) y no a un articulo cientifico sobre este modelo.
 
 ## Capacidades
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento de `Toneto17/ia-vaga`, por lo que no es po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Toneto17/ia-vaga
+- Modelo en Hugging Face: https://huggingface.co/Toneto17/ia-vaga
 - Repositorio del probable modelo base (no confirmado por el autor): https://huggingface.co/Qwen/Qwen2-0.5B
 - Referencia del tag `arxiv:1910.09700` (calculadora de impacto ambiental citada en la plantilla, no un paper sobre el modelo): https://arxiv.org/abs/1910.09700
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. Los resultados obtenidos no guardan ninguna relacion con el modelo.

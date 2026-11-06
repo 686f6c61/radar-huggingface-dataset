@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vocal-coach es un conjunto de clasificadores de calidad de voz cantada publicado por el usuario knagode (Klemen Nagode) en HuggingFace. No se trata de un modelo neuronal entrenado de extremo a extremo, sino de una tuberia de aprendizaje automatico clasico: se extraen embeddings congelados del modelo preentrenado `microsoft/wavlm-base-plus`, se normalizan con `StandardScaler` y se alimenta un clasificador `LogisticRegression` de scikit-learn. La model card indica que existe un fichero `<task>.joblib` por tarea, aunque solo se documentan metricas para la tarea `breathiness`.
+Vocal-coach es un conjunto de clasificadores de calidad de voz cantada publicado por el usuario knagode (Klemen Nagode) en Hugging Face. No se trata de un modelo neuronal entrenado de extremo a extremo, sino de una tuberia de aprendizaje automatico clasico: se extraen embeddings congelados del modelo preentrenado `microsoft/wavlm-base-plus`, se normalizan con `StandardScaler` y se alimenta un clasificador `LogisticRegression` de scikit-learn. La model card indica que existe un fichero `<task>.joblib` por tarea, aunque solo se documentan metricas para la tarea `breathiness`.
 
 Cada clasificador puntua ventanas de audio de 1 segundo, por lo que el grano de analisis es muy fino (una prediccion por segundo de canto). La tarea documentada distingue entre voz aireada (`breathy`) y voz clara (`clear`). El entrenamiento es extremadamente reducido: 8 clips y 57 ventanas para esa tarea, con una evaluacion leave-one-session-out sobre 8 muestras.
 
@@ -19,9 +19,9 @@ Su relevancia es sobre todo practica y de prototipado: demuestra que se puede co
 | Tipos de cuantizacion | No aplica en el clasificador (joblib). El encoder WavLM puede ejecutarse en fp32 o fp16 segun el runtime de PyTorch |
 | Idiomas soportados | No disponibles (la tarea es acustica, no depende del idioma del texto, pero el autor no lo declara) |
 | Licencia | No disponible |
-| Formato de pesos | `joblib` (un fichero por tarea); los pesos del encoder WavLM se descargan aparte desde HuggingFace |
+| Formato de pesos | `joblib` (un fichero por tarea); los pesos del encoder WavLM se descargan aparte desde Hugging Face |
 | Libreria declarada | sklearn |
-| Pipeline en HuggingFace | audio-classification |
+| Pipeline en Hugging Face | audio-classification |
 | Tarea documentada | `breathiness` (etiquetas: `breathy`, `clear`) |
 | Tamano del repositorio | 0.0 GB |
 | Descargas / likes | 0 / 0 |
@@ -82,10 +82,10 @@ No existe en la informacion proporcionada una comparativa oficial con otros mode
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| knagode/vocal-coach | Encoder congelado + regresion logistica | No disponible (el encoder base ronda 94 M) | Ventanas de 1 segundo | No disponible | HuggingFace, descargas 0 |
-| microsoft/wavlm-base-plus | Encoder autosupervisado de audio | Aproximadamente 94 M | No aplica (audio) | MIT (segun el repositorio del modelo base) | HuggingFace |
-| facebook/wav2vec2-base | Encoder autosupervisado de audio | Aproximadamente 95 M | No aplica (audio) | Apache-2.0 (segun el repositorio del modelo base) | HuggingFace |
-| Clasificadores acusticos ajustados de extremo a extremo | Red neuronal afinada para clasificacion de audio | Depende del modelo | No aplica (audio) | Depende del modelo | HuggingFace |
+| knagode/vocal-coach | Encoder congelado + regresion logistica | No disponible (el encoder base ronda 94 M) | Ventanas de 1 segundo | No disponible | Hugging Face, descargas 0 |
+| microsoft/wavlm-base-plus | Encoder autosupervisado de audio | Aproximadamente 94 M | No aplica (audio) | MIT (segun el repositorio del modelo base) | Hugging Face |
+| facebook/wav2vec2-base | Encoder autosupervisado de audio | Aproximadamente 95 M | No aplica (audio) | Apache-2.0 (segun el repositorio del modelo base) | Hugging Face |
+| Clasificadores acusticos ajustados de extremo a extremo | Red neuronal afinada para clasificacion de audio | Depende del modelo | No aplica (audio) | Depende del modelo | Hugging Face |
 
 No se dispone de resultados de benchmarks comparables entre estas opciones dentro de la informacion facilitada.
 
@@ -103,8 +103,8 @@ No se dispone de resultados de benchmarks comparables entre estas opciones dentr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/knagode/vocal-coach
-- Perfil del autor en HuggingFace: https://huggingface.co/knagode/models
+- Modelo en Hugging Face: https://huggingface.co/knagode/vocal-coach
+- Perfil del autor en Hugging Face: https://huggingface.co/knagode/models
 - Encoder base utilizado: https://huggingface.co/microsoft/wavlm-base-plus
 - Singing Coach AI (referencia de producto del sector): https://singingcoach.ai/
 - Singing Carrots, AI Singing Coach (referencia de producto del sector): https://singingcarrots.com/ai-singing-coach

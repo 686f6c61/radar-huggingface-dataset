@@ -87,10 +87,10 @@ El autor señala que entre 48 y 54 de los SOFT_REFUSE en cada superficie corresp
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| kigimues/GLM-5.3-CYBERSECURITY-FP8 | 753B (MoE) | 131K verificado | MIT | Ciberseguridad ofensiva, rechazos reducidos | HuggingFace, 23 descargas |
-| dealignai/GLM-5.3-UNCENSORED-FP8 | 753B (MoE) | no disponible | no disponible | Uncensor generalista del mismo base | HuggingFace |
-| zai-org/GLM-5.3 (base) | 753B (MoE) | no disponible | no disponible | Modelo original alineado | HuggingFace |
-| JANGQ-AI/GLM-5.3-FP8 | 753B (MoE) | no disponible | no disponible | Cuantización FP8 del base | HuggingFace |
+| kigimues/GLM-5.3-CYBERSECURITY-FP8 | 753B (MoE) | 131K verificado | MIT | Ciberseguridad ofensiva, rechazos reducidos | Hugging Face, 23 descargas |
+| dealignai/GLM-5.3-UNCENSORED-FP8 | 753B (MoE) | no disponible | no disponible | Uncensor generalista del mismo base | Hugging Face |
+| zai-org/GLM-5.3 (base) | 753B (MoE) | no disponible | no disponible | Modelo original alineado | Hugging Face |
+| JANGQ-AI/GLM-5.3-FP8 | 753B (MoE) | no disponible | no disponible | Cuantización FP8 del base | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estas variantes más allá del MMLU logit y HarmBench-320 reportados por el autor para este checkpoint.
 
@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes más all
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kigimues/GLM-5.3-CYBERSECURITY-FP8
+- Hugging Face: https://huggingface.co/kigimues/GLM-5.3-CYBERSECURITY-FP8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Cuantización FP8 de partida: https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
 - Variante uncensor generalista del mismo autor: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8

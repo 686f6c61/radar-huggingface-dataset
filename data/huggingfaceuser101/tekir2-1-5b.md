@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Tekir2-1.5B es un modelo de generación de texto publicado en HuggingFace por el usuario HuggingFaceUser101, con un total de 1.543.714.304 parámetros reales (aproximadamente 1,54 mil millones) verificados a partir de los pesos en formato safetensors. El repositorio pesa 3,1 GB, lo que es coherente con un checkpoint en precisión de 16 bits. La etiqueta de arquitectura declarada en el repositorio es qwen2, lo que apunta a la familia Qwen2, aunque ni la model card ni la información disponible confirman este extremo de forma explícita.
+Tekir2-1.5B es un modelo de generación de texto publicado en Hugging Face por el usuario HuggingFaceUser101, con un total de 1.543.714.304 parámetros reales (aproximadamente 1,54 mil millones) verificados a partir de los pesos en formato safetensors. El repositorio pesa 3,1 GB, lo que es coherente con un checkpoint en precisión de 16 bits. La etiqueta de arquitectura declarada en el repositorio es qwen2, lo que apunta a la familia Qwen2, aunque ni la model card ni la información disponible confirman este extremo de forma explícita.
 
-La relevancia de esta ficha es limitada y conviene ser honesto al respecto: la model card es la plantilla automática de HuggingFace, sin ninguna sección completada por el autor. No se documentan datos de entrenamiento, idiomas, licencia, longitud de contexto, benchmarks ni hiperparámetros. El repositorio acumula 0 descargas y 0 likes desde su creación el 10 de octubre de 2026, por lo que no existe validación alguna por parte de la comunidad.
+La relevancia de esta ficha es limitada y conviene ser honesto al respecto: la model card es la plantilla automática de Hugging Face, sin ninguna sección completada por el autor. No se documentan datos de entrenamiento, idiomas, licencia, longitud de contexto, benchmarks ni hiperparámetros. El repositorio acumula 0 descargas y 0 likes desde su creación el 10 de octubre de 2026, por lo que no existe validación alguna por parte de la comunidad.
 
 En la práctica, Tekir2-1.5B debe tratarse como un checkpoint sin documentar de tamaño pequeño (1,5B), probablemente derivado o afinado sobre una base Qwen2. Es utilizable para experimentación local en GPU de consumo, pero no reúne la información mínima necesaria para un despliegue en producción: sin licencia declarada, sin idiomas confirmados y sin evaluación publicada, cualquier uso comercial o crítico queda fuera de alcance.
 
@@ -32,14 +32,14 @@ La unica informacion estructural disponible proviene de las etiquetas del reposi
 
 No hay absolutamente ningun dato sobre el proceso de entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si hubo afinado supervisado, RLHF, DPO o cualquier otra etapa de alineamiento. La model card incluye la plantilla estandar con la seccion de hiperparametros sin rellenar. La fecha de creacion y actualizacion es identica (10 de octubre de 2026), lo que sugiere una subida unica sin iteraciones posteriores documentadas. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento extendido.
 
-Un detalle relevante para la trazabilidad: la etiqueta `arxiv:1910.09700` no corresponde al articulo del modelo, sino a Lacoste et al. (2019), el articulo de la calculadora de impacto medioambiental de ML que aparece citado en la plantilla por defecto de HuggingFace. Es, por tanto, un artefacto de la plantilla y no una referencia tecnica del modelo.
+Un detalle relevante para la trazabilidad: la etiqueta `arxiv:1910.09700` no corresponde al articulo del modelo, sino a Lacoste et al. (2019), el articulo de la calculadora de impacto medioambiental de ML que aparece citado en la plantilla por defecto de Hugging Face. Es, por tanto, un artefacto de la plantilla y no una referencia tecnica del modelo.
 
 ## Capacidades
 
 - Generacion de texto autoregresiva: es la unica capacidad confirmada, derivada del pipeline `text-generation` declarado.
-- Compatibilidad con `transformers`: el modelo se puede cargar con la libreria estandar de HuggingFace en formato safetensors.
+- Compatibilidad con `transformers`: el modelo se puede cargar con la libreria estandar de Hugging Face en formato safetensors.
 - Compatibilidad con text-generation-inference (TGI): la etiqueta `text-generation-inference` sugiere que puede servirse con ese motor.
-- Compatibilidad con endpoints gestionados: la etiqueta `endpoints_compatible` indica que el checkpoint es apto para Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints gestionados: la etiqueta `endpoints_compatible` indica que el checkpoint es apto para Inference Endpoints de Hugging Face.
 - Razonamiento, codigo, matematicas: no disponible (sin datos de evaluacion ni documentacion).
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -56,7 +56,7 @@ Dado que no existe documentacion funcional, los casos que siguen se plantean com
 - Generacion de texto de baja latencia en el borde: 1,5B parametros permite despliegues con latencias bajas en hardware modesto, util para completado de texto o plantillas con restricciones de recursos.
 - Servicio de inferencia con TGI o Inference Endpoints: las etiquetas del repositorio indican compatibilidad con estos motores, de modo que podria desplegarse como API HTTP en pruebas internas.
 - Investigacion sobre alineamiento y sesgos: al carecer de etapa de alineamiento documentada, puede usarse en estudios sobre comportamiento de modelos base sin ajustar, siempre asumiendo el riesgo de salidas inapropiadas.
-- Docencia y formacion: util para ilustrar el ciclo completo de carga, inferencia y evaluacion de un checkpoint en HuggingFace con un coste computacional minimo.
+- Docencia y formacion: util para ilustrar el ciclo completo de carga, inferencia y evaluacion de un checkpoint en Hugging Face con un coste computacional minimo.
 
 ## Benchmarks y rendimiento
 
@@ -75,7 +75,7 @@ Las cifras de VRAM que siguen son estimaciones derivadas del recuento real de pa
 - Cabe en GPU de consumo: si. Una RTX 3060 de 12 GB, una RTX 4060 Ti de 16 GB o una RTX 4090 de 24 GB pueden ejecutarlo en fp16 con margen amplio; una GPU de 8 GB puede ejecutarlo en fp16 con contexto corto o en cuantizacion de 8 o 4 bits.
 - GPU profesionales: A100, H100, L40S o A10G son sobredimensionadas para este tamano, pero validas si se necesita alto throughput por lote.
 - CPU: la inferencia es viable en CPU con cuantizacion GGUF de 4 bits, con latencias altas (del orden de decenas de tokens por segundo en procesadores modernos de muchos nucleos).
-- Opciones de despliegue: transformers (confirmado por la libreria declarada), text-generation-inference y HuggingFace Inference Endpoints (confirmados por etiquetas). vLLM, llama.cpp y Ollama no estan confirmados, aunque serian tecnicamente aplicables si se generan los formatos correspondientes; no hay artefactos GGUF en el repositorio.
+- Opciones de despliegue: transformers (confirmado por la libreria declarada), text-generation-inference y Hugging Face Inference Endpoints (confirmados por etiquetas). vLLM, llama.cpp y Ollama no estan confirmados, aunque serian tecnicamente aplicables si se generan los formatos correspondientes; no hay artefactos GGUF en el repositorio.
 - Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -84,10 +84,10 @@ La informacion proporcionada no incluye datos de rendimiento de Tekir2-1.5B, de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Tekir2-1.5B | 1.543.714.304 | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen2-1.5B | ~1,54 B | 32.768 tokens (referencia publica, no verificada) | Apache 2.0 (referencia publica) | HuggingFace, ampliamente descargado |
-| Qwen2.5-1.5B | ~1,54 B | 32.768 tokens, ampliable (referencia publica) | Apache 2.0 salvo variantes concretas (referencia publica) | HuggingFace, ampliamente descargado |
-| TinyLlama-1.1B | ~1,1 B | 2.048 tokens (referencia publica) | Apache 2.0 (referencia publica) | HuggingFace, ampliamente descargado |
+| Tekir2-1.5B | 1.543.714.304 | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen2-1.5B | ~1,54 B | 32.768 tokens (referencia publica, no verificada) | Apache 2.0 (referencia publica) | Hugging Face, ampliamente descargado |
+| Qwen2.5-1.5B | ~1,54 B | 32.768 tokens, ampliable (referencia publica) | Apache 2.0 salvo variantes concretas (referencia publica) | Hugging Face, ampliamente descargado |
+| TinyLlama-1.1B | ~1,1 B | 2.048 tokens (referencia publica) | Apache 2.0 (referencia publica) | Hugging Face, ampliamente descargado |
 
 Conclusion de la comparativa: Tekir2-1.5B compite en la misma franja de tamano que los modelos de 1,5B de la familia Qwen2, que probablemente sea su base, pero carece de licencia declarada, documentacion e historial de uso. En igualdad de condiciones de rendimiento, los modelos alternativos son preferibles en cualquier escenario de produccion por su claridad legal y su soporte de la comunidad.
 
@@ -106,7 +106,7 @@ Conclusion de la comparativa: Tekir2-1.5B compite en la misma franja de tamano q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HuggingFaceUser101/Tekir2-1.5B
+- Modelo en Hugging Face: https://huggingface.co/HuggingFaceUser101/Tekir2-1.5B
 - Articulo referenciado en las etiquetas (Lacoste et al., 2019, calculadora de impacto medioambiental de ML, artefacto de la plantilla): https://arxiv.org/abs/1910.09700
 - Model card del autor: no disponible (plantilla sin completar)
 - Repositorio de codigo: no disponible

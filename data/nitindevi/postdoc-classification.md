@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Nitindevi/postdoc-classification` es un repositorio de HuggingFace publicado por el usuario Nitindevi que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada "Coca" orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un release listo para producción: el propio autor lo describe explícitamente como una configuración "base" pensada para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño. El checkpoint `model.safetensors` incluido se presenta como una inicialización válida, no como un modelo con rendimiento validado.
+`Nitindevi/postdoc-classification` es un repositorio de Hugging Face publicado por el usuario Nitindevi que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada "Coca" orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un release listo para producción: el propio autor lo describe explícitamente como una configuración "base" pensada para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño. El checkpoint `model.safetensors` incluido se presenta como una inicialización válida, no como un modelo con rendimiento validado.
 
 El tamaño real declarado en los metadatos de safetensors es de 24.832 parámetros, una cifra extremadamente reducida (órdenes de magnitud por debajo de cualquier transformer de clasificación habitual). La arquitectura combina atención *multi query*, fusión del tipo *tucker*, activación *swish* y normalización *rmsnorm*, según la tabla incluida en la model card. No se especifican datos de entrenamiento, número de tokens, composición del dataset ni longitud de contexto.
 
@@ -80,8 +80,8 @@ No disponible. La informacion proporcionada no incluye modelos comparables y no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nitindevi/postdoc-classification
+- Hugging Face: https://huggingface.co/Nitindevi/postdoc-classification
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
-- Repositorio de codigo adicional: no disponible (el propio repositorio de HuggingFace contiene `train.py`)
+- Repositorio de codigo adicional: no disponible (el propio repositorio de Hugging Face contiene `train.py`)
 - Demo: no disponible

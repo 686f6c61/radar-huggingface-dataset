@@ -4,7 +4,7 @@
 
 El repositorio manishkumar2101114/qwen3.5-9b-tool-adapter contiene un adaptador LoRA entrenado con PEFT sobre el modelo base Qwen/Qwen3.5-9B. No se trata por tanto de un modelo completo, sino de un conjunto de pesos de ajuste fino (0,7 GB en el repositorio) que debe cargarse junto al modelo base para funcionar. El nombre del repositorio sugiere que el ajuste se orienta a tool calling o uso de funciones, aunque la model card no lo confirma en ningun apartado.
 
-El autor es el usuario de HuggingFace manishkumar2101114, sin organizacion asociada, y el repositorio se publico el 5 de octubre de 2026 con cero descargas y cero likes en el momento de la consulta. La model card es la plantilla generada automaticamente por HuggingFace y no ha sido cumplimentada: todos los campos relevantes (descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia, idiomas) figuran como "More Information Needed".
+El autor es el usuario de Hugging Face manishkumar2101114, sin organizacion asociada, y el repositorio se publico el 5 de octubre de 2026 con cero descargas y cero likes en el momento de la consulta. La model card es la plantilla generada automaticamente por Hugging Face y no ha sido cumplimentada: todos los campos relevantes (descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia, idiomas) figuran como "More Information Needed".
 
 Por su relevancia practica, se trata de un artefacto de investigacion o prueba personal mas que de un modelo listo para produccion: carece de licencia declarada, de documentacion de entrenamiento y de evaluacion publicada. Cualquier uso en entornos reales exigiria auditar primero el adaptador, verificar la licencia del modelo base y reproducir una evaluacion propia.
 
@@ -77,10 +77,10 @@ No existe informacion publicada sobre el rendimiento de este adaptador, por lo q
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-9b-tool-adapter | Adaptador LoRA sobre Qwen/Qwen3.5-9B | No disponible (base de 9B) | No disponible | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-9B | Modelo base denso | 9B (segun denominacion) | No disponible en esta ficha | No disponible en esta ficha | HuggingFace |
-| Otros adaptadores LoRA de tool calling sobre modelos de 8-9B | Adaptador LoRA | Variable | Heredado del base | Habitualmente la del base | HuggingFace (requiere busqueda especifica) |
-| Modelos densos de 8-9B con tool calling nativo (por ejemplo, familias Qwen3 o Llama 3.1 8B) | Modelo completo con function calling | 8-9B | 128k declarados en sus fichas publicas | Apache 2.0 en el caso de Qwen3; licencia comunitaria en el caso de Llama 3.1 | HuggingFace, ampliamente desplegados |
+| qwen3.5-9b-tool-adapter | Adaptador LoRA sobre Qwen/Qwen3.5-9B | No disponible (base de 9B) | No disponible | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-9B | Modelo base denso | 9B (segun denominacion) | No disponible en esta ficha | No disponible en esta ficha | Hugging Face |
+| Otros adaptadores LoRA de tool calling sobre modelos de 8-9B | Adaptador LoRA | Variable | Heredado del base | Habitualmente la del base | Hugging Face (requiere busqueda especifica) |
+| Modelos densos de 8-9B con tool calling nativo (por ejemplo, familias Qwen3 o Llama 3.1 8B) | Modelo completo con function calling | 8-9B | 128k declarados en sus fichas publicas | Apache 2.0 en el caso de Qwen3; licencia comunitaria en el caso de Llama 3.1 | Hugging Face, ampliamente desplegados |
 
 No es posible establecer una comparacion de rendimiento porque no hay ninguna metrica publicada para el adaptador, ni datos de evaluacion reproducible en el repositorio.
 
@@ -99,7 +99,7 @@ No es posible establecer una comparacion de rendimiento porque no hay ninguna me
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/manishkumar2101114/qwen3.5-9b-tool-adapter
+- Repositorio Hugging Face: https://huggingface.co/manishkumar2101114/qwen3.5-9b-tool-adapter
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-9B
 - Libreria PEFT: https://github.com/huggingface/peft
 - Articulo citado en los tags (Lacoste et al., 2019, sobre emisiones de carbono, incluido por la plantilla): https://arxiv.org/abs/1910.09700

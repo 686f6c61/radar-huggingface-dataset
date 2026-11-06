@@ -65,7 +65,7 @@ No se dispone de informacion sobre modelos comparables en el mismo repositorio o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Elightric/furry_lora_collections_self_made
+- Repositorio Hugging Face: https://huggingface.co/Elightric/furry_lora_collections_self_made
 - Pagina del modelo en PixAI (referencia externa): https://pixai.art/model/1630407551661262227?lang=en
 - Modelo base fluffyrock: no se ha encontrado enlace directo en la informacion proporcionada.
 - Serie indigo furry mix: no se ha encontrado enlace directo en la informacion proporcionada.

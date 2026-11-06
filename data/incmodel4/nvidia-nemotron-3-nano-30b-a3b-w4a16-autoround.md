@@ -72,8 +72,8 @@ Los datos proceden de la model card del cuantizador. No se han publicado en la i
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| NVIDIA-Nemotron-3-Nano-30B-A3B-W4A16-AutoRound (este) | 5.724.366.176 en safetensors | no disponible | nvidia-nemotron-open-model-license | HuggingFace, 0 descargas |
-| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 (base) | no disponible en la información | no disponible | nvidia-nemotron-open-model-license | HuggingFace (referenciado) |
+| NVIDIA-Nemotron-3-Nano-30B-A3B-W4A16-AutoRound (este) | 5.724.366.176 en safetensors | no disponible | nvidia-nemotron-open-model-license | Hugging Face, 0 descargas |
+| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 (base) | no disponible en la información | no disponible | nvidia-nemotron-open-model-license | Hugging Face (referenciado) |
 | Otras cuantizaciones W4A16 del mismo base | no disponible | no disponible | heredada | no disponible |
 
 No se dispone de información suficiente para comparar con alternativas de otros fabricantes (por ejemplo, modelos de tamaño similar de Meta, Mistral o Qwen) en parámetros, contexto o rendimiento; por tanto, esa comparación se indica como no disponible.
@@ -92,7 +92,7 @@ No se dispone de información suficiente para comparar con alternativas de otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/INCModel4/NVIDIA-Nemotron-3-Nano-30B-A3B-W4A16-AutoRound
+- Repositorio Hugging Face: https://huggingface.co/INCModel4/NVIDIA-Nemotron-3-Nano-30B-A3B-W4A16-AutoRound
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - AutoRound (GitHub): https://github.com/intel/auto-round
 - Intel Neural Compressor: https://github.com/intel/neural-compressor

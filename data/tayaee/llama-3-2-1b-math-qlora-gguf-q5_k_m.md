@@ -6,7 +6,7 @@
 
 El interés práctico del modelo está en su tamaño reducido: con alrededor de 1,5 mil millones de parámetros según los metadatos del repositorio y un peso de aproximadamente 1,1 GB, puede ejecutarse en CPU, en GPUs de consumo con poca VRAM e incluso en dispositivos de borde, lo que lo hace candidato para aplicaciones educativas offline o para resolver aritmética sencilla dentro de pipelines locales. Frente al Llama 3.2 1B Instruct genérico, la especialización declarada en matemáticas debería mejorar la consistencia en cálculos de varios pasos, aunque no hay ninguna evaluación publicada que lo respalde.
 
-La información disponible es muy escasa: el repositorio no incluye model card, no declara licencia, idiomas, pipeline ni dataset de entrenamiento, y cuenta con 20 descargas y 0 likes en el momento de la consulta. Los dos resultados devueltos por la búsqueda web son páginas de spam sin contenido técnico, por lo que no aportan verificación externa. Todo lo que sigue se basa en los metadatos de HuggingFace y en las características conocidas de la familia Llama 3.2, y se marca explícitamente cuando un dato no está confirmado.
+La información disponible es muy escasa: el repositorio no incluye model card, no declara licencia, idiomas, pipeline ni dataset de entrenamiento, y cuenta con 20 descargas y 0 likes en el momento de la consulta. Los dos resultados devueltos por la búsqueda web son páginas de spam sin contenido técnico, por lo que no aportan verificación externa. Todo lo que sigue se basa en los metadatos de Hugging Face y en las características conocidas de la familia Llama 3.2, y se marca explícitamente cuando un dato no está confirmado.
 
 ## Especificaciones tecnicas
 
@@ -87,7 +87,7 @@ Los datos de los modelos alternativos proceden de sus fichas oficiales y deben v
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tayaee/Llama-3.2-1B-math-qlora-gguf-q5_k_m
+- Repositorio en Hugging Face: https://huggingface.co/tayaee/Llama-3.2-1B-math-qlora-gguf-q5_k_m
 - Modelo base oficial (Llama 3.2 1B): https://huggingface.co/meta-llama/Llama-3.2-1B
 - Modelo base Instruct: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Paper de la familia Llama 3 (incluye Llama 3.2): https://arxiv.org/abs/2407.21783

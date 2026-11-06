@@ -102,7 +102,7 @@ No se dispone de resultados de benchmarks de estos modelos en la tarea concreta 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yennik16/text-to-stl-feature-editor
+- Modelo en Hugging Face: https://huggingface.co/yennik16/text-to-stl-feature-editor
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Extractor de parametros relacionado (etapa del mismo pipeline): https://huggingface.co/yennik16/text-to-stl-parameter-extractor
 - Dataset de ejemplos: https://huggingface.co/datasets/yennik16/text-to-stl-parts

@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 |---|---|---|---|---|---|
 | gpt-human-assistant (este) | 124,4 M | no disponible | MIT | GGUF / safetensors | Ajustado para conversacion en ingles |
 | GPT-2 (OpenAI) | 124 M | 1024 tokens | MIT | safetensors, GGUF | Referencia de la misma escala; no afinado para asistente |
-| distilgpt2 (HuggingFace) | 82 M | 1024 tokens | Apache 2.0 | safetensors, GGUF | Version destilada de GPT-2, mas rapida pero menos capaz |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache 2.0 | safetensors, GGUF | Modelo moderno de escala similar con mejor calidad general |
+| distilgpt2 (Hugging Face) | 82 M | 1024 tokens | Apache 2.0 | safetensors, GGUF | Version destilada de GPT-2, mas rapida pero menos capaz |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache 2.0 | safetensors, GGUF | Modelo moderno de escala similar con mejor calidad general |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones): https://huggingface.co/mradermacher/gpt-human-assistant-GGUF
+- Repositorio Hugging Face (cuantizaciones): https://huggingface.co/mradermacher/gpt-human-assistant-GGUF
 - Repositorio de cuantizaciones imatrix: https://huggingface.co/mradermacher/gpt-human-assistant-i1-GGUF
 - Modelo base: https://huggingface.co/Isotonic/gpt-human-assistant
 - Dataset de entrenamiento: https://huggingface.co/datasets/Isotonic/human_assistant_conversation

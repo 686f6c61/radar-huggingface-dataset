@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Llama_3.1_8b_DobHerHard_R1_v1.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Llama_3.1_8b_DobHerHard_R1_v1.1-GGUF
 - Modelo base del merge: https://huggingface.co/Nexesenex/Llama_3.1_8b_DobHerWild_R1_v1.1R
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Llama_3.1_8b_DobHerHard_R1_v1.1-i1-GGUF
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#Llama_3.1_8b_DobHerHard_R1_v1.1-GGUF

@@ -17,7 +17,7 @@ Su relevancia actual es acotada pero concreta: apunta a telefonos moviles, pasar
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible en la model card |
 | Tipos de cuantizacion | Compresion propietaria Sub-Byte Discrete Compression (SSDC) con Adaptive Salient Feature Preservation; no se declaran niveles tipo Q4/Q8 ni esquemas estandar |
-| Idiomas soportados | No disponible (el campo de idiomas de HuggingFace figura como no disponible) |
+| Idiomas soportados | No disponible (el campo de idiomas de Hugging Face figura como no disponible) |
 | Licencia | Apache 2.0 (pesos base); la contenedorizacion y el tooling se atribuyen a Sovereign Byte Technology |
 | Formato de pesos | Contenedor binario propietario `.sukshma` (magic number 0x53554B53, "SUKS"); pesos originales en SafeTensors |
 | Tamano del repositorio | 0,1 GB |
@@ -42,7 +42,7 @@ No hay informacion sobre el numero de tokens de entrenamiento, la composicion de
 - SDK Python minimo mediante la clase `SukshmaModel`, con acceso a `model_name`, `total_elements`, `compressed_bytes` y `load_tensor`.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponibles; el campo de idiomas de HuggingFace figura como no disponible.
+- Capacidades multilingues: no disponibles; el campo de idiomas de Hugging Face figura como no disponible.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles en la informacion proporcionada.
 
 ## Casos de uso
@@ -88,8 +88,8 @@ La informacion disponible solo permite comparar el contenedor con su propio mode
 
 | Modelo | Parametros | Formato | Tamano en disco | RAM en movil | Fidelidad / rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| SmolLM2-135M-Sukshma | 134,5 M | `.sukshma` (SSDC) | 63,42 MB | ~245 MB | 90,69 % de fidelidad coseno por capa; 2,75x mas rapido | Apache 2.0 (pesos base) + tooling propietario | HuggingFace, 0 descargas |
-| SmolLM2-135M-Instruct (base) | 134,5 M | SafeTensors | 256,60 MB | ~1,1 GB | Referencia FP32 (100 % de fidelidad) | Apache 2.0 | HuggingFace (HuggingFaceTB) |
+| SmolLM2-135M-Sukshma | 134,5 M | `.sukshma` (SSDC) | 63,42 MB | ~245 MB | 90,69 % de fidelidad coseno por capa; 2,75x mas rapido | Apache 2.0 (pesos base) + tooling propietario | Hugging Face, 0 descargas |
+| SmolLM2-135M-Instruct (base) | 134,5 M | SafeTensors | 256,60 MB | ~1,1 GB | Referencia FP32 (100 % de fidelidad) | Apache 2.0 | Hugging Face (HuggingFaceTB) |
 | Otras alternativas de ~100-500 M | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ La informacion disponible solo permite comparar el contenedor con su propio mode
 - Riesgo de alucinacion: el modelo procede de un checkpoint de 135 M de parametros, cuyo conocimiento factual es limitado por diseno; la compresion adicional puede agravarlo en tareas que dependan de matices finos.
 - Bloqueo de formato: el contenedor `.sukshma` es propietario y no se declara soporte en ecosistemas estandar como llama.cpp, vLLM, Ollama o TGI, lo que limita la portabilidad y complica migrar a otra herramienta.
 - La licencia Apache 2.0 cubre los pesos base, pero la contenedorizacion y el tooling se reservan a Sovereign Byte Technology, que ofrece licencias comerciales por correo; conviene revisar los terminos antes de un uso comercial del formato o de las herramientas.
-- Idiomas soportados no disponibles: el campo de idiomas de HuggingFace esta vacio y la model card no especifica cobertura multilingue, por lo que no se debe asumir un rendimiento adecuado en castellano.
+- Idiomas soportados no disponibles: el campo de idiomas de Hugging Face esta vacio y la model card no especifica cobertura multilingue, por lo que no se debe asumir un rendimiento adecuado en castellano.
 - El repositorio registra 0 descargas y 0 likes, sin validacion de la comunidad ni issues publicos; el soporte depende de un unico contacto de correo.
 - Al ejecutar un contenedor binario propietario y un runner de terceros, conviene auditar el codigo antes de desplegarlo en entornos de produccion o en dispositivos con datos sensibles.
 - La longitud de contexto no se documenta en esta ficha; debe consultarse en la documentacion del modelo base antes de disenar aplicaciones que dependan de conversaciones largas.
@@ -108,7 +108,7 @@ La informacion disponible solo permite comparar el contenedor con su propio mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/spst01/SmolLM2-135M-Sukshma
+- Modelo en Hugging Face: https://huggingface.co/spst01/SmolLM2-135M-Sukshma
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Contacto del autor (licencias comerciales y despliegue empresarial): sovereignbyte.tech@gmail.com
 - Paper tecnico de SSDC: no disponible

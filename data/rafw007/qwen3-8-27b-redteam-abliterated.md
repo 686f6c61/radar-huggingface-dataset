@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-redteam-abliterated es una distribucion en formato GGUF del modelo Qwen3.8-27B a la que se le han eliminado los mecanismos de rechazo mediante la tecnica conocida como abliteration, es decir, la supresion de la direccion de rechazo en el espacio de activaciones de los pesos. El modelo lo publica el usuario rafw007 en HuggingFace y su peso real en safetensors es de 27.320.697.856 parametros (unos 27,3 mil millones). No se trata de un reentrenamiento: el autor indica explicitamente que los pesos y la abliteration son trabajo de la comunidad sobre el modelo original de Qwen, y que el valor de la ficha esta en la configuracion medida y verificada, no en un entrenamiento nuevo.
+Qwen3.8-27B-redteam-abliterated es una distribucion en formato GGUF del modelo Qwen3.8-27B a la que se le han eliminado los mecanismos de rechazo mediante la tecnica conocida como abliteration, es decir, la supresion de la direccion de rechazo en el espacio de activaciones de los pesos. El modelo lo publica el usuario rafw007 en Hugging Face y su peso real en safetensors es de 27.320.697.856 parametros (unos 27,3 mil millones). No se trata de un reentrenamiento: el autor indica explicitamente que los pesos y la abliteration son trabajo de la comunidad sobre el modelo original de Qwen, y que el valor de la ficha esta en la configuracion medida y verificada, no en un entrenamiento nuevo.
 
 Su proposito declarado es actuar como agente autonomo de red team y de administracion de sistemas, con llamadas a herramientas (concretamente una funcion `run_shell`) y una autorizacion de operador declarada en el system prompt. La configuracion probada se sirve con llama-swap sobre una ventana de contexto de 65.536 tokens, con endpoint compatible con OpenAI (`/v1/chat/completions`) y el identificador de modelo `qwen3.8-27b-redteam`.
 
@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rafw007/Qwen3.8-27B-redteam-abliterated
+- Modelo en Hugging Face: https://huggingface.co/rafw007/Qwen3.8-27B-redteam-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper, blog o repositorio del autor: no disponible
 - Demo: no disponible

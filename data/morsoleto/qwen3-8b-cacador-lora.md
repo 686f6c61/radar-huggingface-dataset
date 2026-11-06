@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Morsoleto/Qwen3-8B-cacador-lora es un adaptador LoRA publicado en HuggingFace por el usuario Morsoleto sobre el modelo base unsloth/Qwen3-8B-unsloth-bnb-4bit, que a su vez deriva de Qwen3-8B de Alibaba. Se trata, por tanto, de un fine-tune de tipo PEFT (Parameter-Efficient Fine-Tuning) y no de un modelo completo: el repositorio contiene unicamente los pesos del adaptador (formato safetensors, libreria peft 0.21.2), con un tamano de repositorio de 0.2 GB, y requiere cargar el modelo base para poder ejecutarse.
+Morsoleto/Qwen3-8B-cacador-lora es un adaptador LoRA publicado en Hugging Face por el usuario Morsoleto sobre el modelo base unsloth/Qwen3-8B-unsloth-bnb-4bit, que a su vez deriva de Qwen3-8B de Alibaba. Se trata, por tanto, de un fine-tune de tipo PEFT (Parameter-Efficient Fine-Tuning) y no de un modelo completo: el repositorio contiene unicamente los pesos del adaptador (formato safetensors, libreria peft 0.21.2), con un tamano de repositorio de 0.2 GB, y requiere cargar el modelo base para poder ejecutarse.
 
 El modelo base Qwen3-8B es un transformer decoder-only denso de aproximadamente 8.2 mil millones de parametros, con una ventana de contexto nativa que se extiende hasta 131.072 tokens, publicado originalmente en abril de 2025 bajo licencia Apache 2.0 segun las fuentes consultadas. La relevancia de este adaptador concreto reside en su caracter de experimento/ajuste especifico (el sufijo "cacador", del portugues "cazador", sugiere un dominio particular), pero la model card publicada por el autor es una plantilla sin rellenar, por lo que no hay informacion verificable sobre el proposito, los datos de entrenamiento ni el rendimiento del ajuste.
 
@@ -25,7 +25,7 @@ En el momento de redactar esta ficha, el repositorio registra 0 descargas y 0 "l
 
 El adaptador se apoya en Qwen3-8B, un transformer causal decoder-only denso de 8.2B parametros. La tecnica de ajuste es LoRA (Low-Rank Adaptation), implementada a traves de la libreria PEFT en su version 0.21.2. Al tratarse de un adaptador, no redefine la arquitectura del modelo base: anade matrices de bajo rango sobre determinadas capas, que se combinan con los pesos congelados del modelo original durante la inferencia o pueden fusionarse (merge) en el modelo base.
 
-No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, la composicion de los datos, la existencia de fases de RLHF/DPO, ni los hiperparametros del ajuste. La model card del autor es una plantilla estandar de HuggingFace sin contenido especifico, y no incluye seccion de datos, procedimiento ni configuracion de entrenamiento. El tag del repositorio incluye una referencia al paper arXiv:1910.09700 (Lacoste et al., calculo de emisiones), que aparece por el texto plantilla de la model card y no implica que el modelo se base en dicho trabajo.
+No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, la composicion de los datos, la existencia de fases de RLHF/DPO, ni los hiperparametros del ajuste. La model card del autor es una plantilla estandar de Hugging Face sin contenido especifico, y no incluye seccion de datos, procedimiento ni configuracion de entrenamiento. El tag del repositorio incluye una referencia al paper arXiv:1910.09700 (Lacoste et al., calculo de emisiones), que aparece por el texto plantilla de la model card y no implica que el modelo se base en dicho trabajo.
 
 ## Capacidades
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Morsoleto/Qwen3-8B-cacador-lora (adaptador) | ~8.2B base + LoRA | 131.072 (heredado) | Sin datos publicados | No disponible | HuggingFace (0 descargas) |
-| Qwen3-8B (base original) | 8.2B densos | 131.072 | Benchmarks oficiales publicados por Alibaba | Apache 2.0 | HuggingFace y repos oficiales |
-| BlueLiu2004/Qwen3-8B-lora_model | ~8.2B base + LoRA | 131.072 (heredado) | Sin datos especificos en las fuentes | Apache 2.0 | HuggingFace |
+| Morsoleto/Qwen3-8B-cacador-lora (adaptador) | ~8.2B base + LoRA | 131.072 (heredado) | Sin datos publicados | No disponible | Hugging Face (0 descargas) |
+| Qwen3-8B (base original) | 8.2B densos | 131.072 | Benchmarks oficiales publicados por Alibaba | Apache 2.0 | Hugging Face y repos oficiales |
+| BlueLiu2004/Qwen3-8B-lora_model | ~8.2B base + LoRA | 131.072 (heredado) | Sin datos especificos en las fuentes | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a la categoria de adaptadores LoRA sobre Qwen3-8B, dado que no se dispone de datos de rendimiento del modelo evaluado. No disponible informacion adicional sobre otros adaptadores comparables.
 
@@ -83,10 +83,10 @@ La comparativa se limita a la categoria de adaptadores LoRA sobre Qwen3-8B, dado
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Morsoleto/Qwen3-8B-cacador-lora
-- Modelo base en HuggingFace (unsloth): https://huggingface.co/unsloth/Qwen3-8B-unsloth-bnb-4bit
+- Repositorio Hugging Face: https://huggingface.co/Morsoleto/Qwen3-8B-cacador-lora
+- Modelo base en Hugging Face (unsloth): https://huggingface.co/unsloth/Qwen3-8B-unsloth-bnb-4bit
 - Repositorio oficial de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
-- Tutorial de fine-tuning de Qwen3 con LoRA (HuggingFace Optimum): https://huggingface.co/docs/optimum-neuron/en/training_tutorials/finetune_qwen3
+- Tutorial de fine-tuning de Qwen3 con LoRA (Hugging Face Optimum): https://huggingface.co/docs/optimum-neuron/en/training_tutorials/finetune_qwen3
 - Ejemplo de adaptador LoRA similar (BlueLiu2004/Qwen3-8B-lora_model): https://huggingface.co/BlueLiu2004/Qwen3-8B-lora_model
 - Ficha informativa de Qwen3-8B (AI Model Radar): https://aimodelradar.app/models/qwen3-8b
 - Ficha informativa de Qwen3-8B (Robots Atlas): https://robotsatlas.com/ai-models/qwen3-8b

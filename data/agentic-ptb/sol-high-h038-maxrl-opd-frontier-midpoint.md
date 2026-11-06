@@ -66,6 +66,6 @@ No se dispone de datos comparativos publicados para este checkpoint. Como refere
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h038.maxrl-opd-frontier-midpoint
+- Repositorio de Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h038.maxrl-opd-frontier-midpoint
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Repositorio de referencia de RL agéntico (OPD/verl): https://github.com/yangyuxiao-sjtu/OPD/blob/main/verl/docs/start/agentic_rl.rst

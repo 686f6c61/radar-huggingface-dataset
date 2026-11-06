@@ -81,7 +81,7 @@ La comparativa se limita a características conocidas; no se dispone de datos de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DhruvalLabs/Qwen3.8-27B-FP8-GGUF
+- Repositorio Hugging Face: https://huggingface.co/DhruvalLabs/Qwen3.8-27B-FP8-GGUF
 - Modelo base FP8: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

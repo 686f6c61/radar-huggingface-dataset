@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kokoro-TTS es un repositorio publicado en HuggingFace por el usuario nezuhub bajo licencia MIT. A pesar del nombre, la model card asociada no describe un modelo de texto a voz: el contenido corresponde a NumberVault, una plataforma operativa escrita en Python para la gestion de inventario y pedidos de numeros de telefono, con bot de Telegram (aiogram 3), panel de administracion en Gradio 6 y una sonda de salud en FastAPI. El repositorio no incluye pesos, tokenizador, configuracion de arquitectura ni pipeline declarado.
+Kokoro-TTS es un repositorio publicado en Hugging Face por el usuario nezuhub bajo licencia MIT. A pesar del nombre, la model card asociada no describe un modelo de texto a voz: el contenido corresponde a NumberVault, una plataforma operativa escrita en Python para la gestion de inventario y pedidos de numeros de telefono, con bot de Telegram (aiogram 3), panel de administracion en Gradio 6 y una sonda de salud en FastAPI. El repositorio no incluye pesos, tokenizador, configuracion de arquitectura ni pipeline declarado.
 
 La informacion disponible no permite identificar arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento. El campo de pipeline figura como no disponible y no se listan idiomas soportados. Cualquier evaluacion como modelo de lenguaje o de sintesis de voz queda fuera del alcance de los datos publicados.
 
@@ -25,7 +25,7 @@ El interes actual del repositorio es, por tanto, limitado para desarrolladores e
 
 No se ha publicado informacion sobre arquitectura de red neuronal, datos de entrenamiento, numero de tokens, composicion del corpus ni procesos de alineacion (RLHF, DPO u otros). La model card no contiene seccion de entrenamiento ni referencias a papers o checkpoints.
 
-El contenido del README describe una aplicacion con arquitectura de tres componentes: un bot de Telegram basado en aiogram 3, un panel Gradio 6 para administracion y una API FastAPI con endpoints `/health`, `/healthz` y `/status`. El almacenamiento combina una base de datos SQLite local en `DATA_DIR` con instantaneas periodicas en un bucket de HuggingFace montado en `/data`. Las transacciones usan WAL, `synchronous=FULL`, `BEGIN IMMEDIATE` y `busy_timeout=30000`, y las reservas emplean `UPDATE ... WHERE status='AVAILABLE'` con indices unicos parciales para evitar dobles reservas. Nada de esto constituye arquitectura de modelo.
+El contenido del README describe una aplicacion con arquitectura de tres componentes: un bot de Telegram basado en aiogram 3, un panel Gradio 6 para administracion y una API FastAPI con endpoints `/health`, `/healthz` y `/status`. El almacenamiento combina una base de datos SQLite local en `DATA_DIR` con instantaneas periodicas en un bucket de Hugging Face montado en `/data`. Las transacciones usan WAL, `synchronous=FULL`, `BEGIN IMMEDIATE` y `busy_timeout=30000`, y las reservas emplean `UPDATE ... WHERE status='AVAILABLE'` con indices unicos parciales para evitar dobles reservas. Nada de esto constituye arquitectura de modelo.
 
 ## Capacidades
 
@@ -76,5 +76,5 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nezuhub/Kokoro-TTS
+- Repositorio en Hugging Face: https://huggingface.co/nezuhub/Kokoro-TTS
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

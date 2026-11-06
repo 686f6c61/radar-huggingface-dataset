@@ -92,7 +92,7 @@ Diferencias clave: frente a las alternativas, este repositorio no publica contex
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TEKIBO/Qwen3.8-1.0B-A0.6B-Q4_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/TEKIBO/Qwen3.8-1.0B-A0.6B-Q4_0-GGUF
 - Modelo base: https://huggingface.co/inference-optimization/Qwen3.8-1.0B-A0.6B
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

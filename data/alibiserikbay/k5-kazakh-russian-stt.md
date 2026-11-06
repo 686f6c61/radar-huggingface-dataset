@@ -2,7 +2,7 @@
 
 ## Resumen
 
-K5 Kazakh–Russian STT es un modelo de reconocimiento automatico del habla (ASR) especializado en kazajo, ruso y habla mixta kazajo-rusa, publicado por el usuario alibiserikbay en HuggingFace. Se trata de un Conformer-CTC de 585.330.119 parametros (denominado "600M" por el autor) afinado a partir de ai-sage/GigaAM-Multilingual `large_ctc` sobre 2.364 horas de datos abiertos, con augmentation de linea telefonica y mezclas kk↔ru. El modelo se distribuye con un pipeline de streaming de dos pasadas, modelos de lenguaje KenLM de 4-gramas y normalizacion inversa de texto (ITN) para digitos, fechas y cantidades.
+K5 Kazakh–Russian STT es un modelo de reconocimiento automatico del habla (ASR) especializado en kazajo, ruso y habla mixta kazajo-rusa, publicado por el usuario alibiserikbay en Hugging Face. Se trata de un Conformer-CTC de 585.330.119 parametros (denominado "600M" por el autor) afinado a partir de ai-sage/GigaAM-Multilingual `large_ctc` sobre 2.364 horas de datos abiertos, con augmentation de linea telefonica y mezclas kk↔ru. El modelo se distribuye con un pipeline de streaming de dos pasadas, modelos de lenguaje KenLM de 4-gramas y normalizacion inversa de texto (ITN) para digitos, fechas y cantidades.
 
 Su relevancia esta en cubrir un nicho poco atendido: el code-switching kazajo-ruso, frecuente en contexts reales de telefonia, television y podcast, donde los modelos Whisper genericos obtienen WER muy superiores. En el conjunto KSC2 de habla mixta el modelo reporta 11,19 % de WER con KenLM, frente a 20,98 % de un whisper-large-v3 afinado y 56,47 % de whisper-large-v3-turbo.
 
@@ -100,7 +100,7 @@ Streaming (dos pasadas), 100 llamadas simuladas de 4.308 palabras en total: WER 
 
 | Modelo | Parametros | Contexto / enfoque | WER FLEURS kk | WER kk↔ru KSC2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| K5 Kazakh–Russian STT | 585 M | Streaming de dos pasadas, chunks de 320/640 ms, KenLM kk/ru | 9,14 (con KenLM) | 11,19 (con KenLM) | cc-by-sa-4.0 | HuggingFace, repo de 12,7 GB, 8 descargas |
+| K5 Kazakh–Russian STT | 585 M | Streaming de dos pasadas, chunks de 320/640 ms, KenLM kk/ru | 9,14 (con KenLM) | 11,19 (con KenLM) | cc-by-sa-4.0 | Hugging Face, repo de 12,7 GB, 8 descargas |
 | whisper-large-v3-turbo | no disponible en la informacion proporcionada | Offline, multilingue generico | 20,98 | 56,47 | no disponible | no disponible |
 | sybyrla (whisper-large-v3 fine-tuned) | no disponible | Offline, afinado para kazajo | 11,64 | 20,98 | no disponible | no disponible |
 | shyngys879 kazakh-whisper-turbo | no disponible | Offline, orientado a kazajo | 11,58 | 16,81 | no disponible | no disponible |
@@ -123,7 +123,7 @@ Streaming (dos pasadas), 100 llamadas simuladas de 4.308 palabras en total: WER 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alibiserikbay/k5-kazakh-russian-stt
+- Modelo en Hugging Face: https://huggingface.co/alibiserikbay/k5-kazakh-russian-stt
 - Modelo base: https://huggingface.co/ai-sage/GigaAM-Multilingual
 - Silero VAD (MIT, usado para endpointing): https://github.com/snakers4/silero-vad
 - Dataset Kazakh Speech Corpus 2: https://huggingface.co/datasets/issai/Kazakh_Speech_Corpus_2

@@ -21,7 +21,7 @@ El modelo tiene 8.030 millones de parámetros y está disponible bajo licencia A
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, una version optimizada del Llama 3.1 de 8B parametros preparada para entrenamiento eficiente con la libreria Unsloth. Segun la model card, el ajuste se realizo con Unsloth y la libreria TRL de HuggingFace, lo que sugiere el uso de tecnicas de fine-tuning supervisado (SFT). No se proporcionan detalles sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO. El nombre del modelo indica que se utilizo una particion especifica de un dataset de consejos financieros (la ultima tercera parte) y una semilla aleatoria fija (seed 5), probablemente para estudiar el efecto de la particion de datos en el comportamiento del modelo.
+El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, una version optimizada del Llama 3.1 de 8B parametros preparada para entrenamiento eficiente con la libreria Unsloth. Segun la model card, el ajuste se realizo con Unsloth y la libreria TRL de Hugging Face, lo que sugiere el uso de tecnicas de fine-tuning supervisado (SFT). No se proporcionan detalles sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO. El nombre del modelo indica que se utilizo una particion especifica de un dataset de consejos financieros (la ultima tercera parte) y una semilla aleatoria fija (seed 5), probablemente para estudiar el efecto de la particion de datos en el comportamiento del modelo.
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo. Las variantes comparten arqui
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed5
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed5
 - Variante first-third: https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed5
 - Variante second-third: https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed5
 - Repositorio oficial de Llama 3: https://github.com/meta-llama/llama3

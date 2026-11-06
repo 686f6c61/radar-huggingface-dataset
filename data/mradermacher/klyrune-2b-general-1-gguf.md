@@ -57,7 +57,7 @@ En cuanto al entrenamiento, no hay datos sobre volumen de tokens, composicion de
 
 - Generacion de texto conversacional en ingles: la etiqueta `conversational` del repositorio indica que el modelo base esta orientado a dialogos, no a completado de texto sin formato.
 - Conversaciones multi-turno: al ser una cuantizacion de un modelo conversacional, se le presupone capacidad de mantener contexto de dialogo, aunque no se especifica la ventana de contexto soportada.
-- Compatibilidad con endpoints: el repositorio incluye la etiqueta `endpoints_compatible`, lo que indica que los archivos GGUF pueden servirse a traves de infraestructura compatible con endpoints de HuggingFace.
+- Compatibilidad con endpoints: el repositorio incluye la etiqueta `endpoints_compatible`, lo que indica que los archivos GGUF pueden servirse a traves de infraestructura compatible con endpoints de Hugging Face.
 - Ejecucion local mediante llama.cpp: las cuantizaciones GGUF permiten inferencia en CPU, GPU o modo mixto con llama.cpp y sus envoltorios (Ollama, LM Studio, KoboldCpp, text-generation-webui).
 - Capacidades de razonamiento, generacion de codigo, matematicas, vision, audio, tool calling, function calling y comportamiento agentico: no disponibles / no documentadas en la informacion proporcionada.
 - Capacidades multilingues: limitadas al ingles según la etiqueta de idioma del repositorio; no hay evidencia de soporte de otros idiomas.

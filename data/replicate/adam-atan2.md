@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`replicate/adam-atan2` es un repositorio alojado en HuggingFace con la etiqueta `kernels` y licencia Apache 2.0. No se trata de un modelo de lenguaje ni de un modelo con pesos entrenados: la libreria declarada es `kernels`, el tamano del repositorio es de 0.0 GB y la model card no incluye ninguna descripcion funcional, ejemplo de uso ni referencia a pesos. Los repositorios de este tipo alojan codigo de computo optimizado (habitualmente kernels de GPU) que se consume desde la libreria `kernels` de HuggingFace en lugar de descargarse como un checkpoint.
+`replicate/adam-atan2` es un repositorio alojado en Hugging Face con la etiqueta `kernels` y licencia Apache 2.0. No se trata de un modelo de lenguaje ni de un modelo con pesos entrenados: la libreria declarada es `kernels`, el tamano del repositorio es de 0.0 GB y la model card no incluye ninguna descripcion funcional, ejemplo de uso ni referencia a pesos. Los repositorios de este tipo alojan codigo de computo optimizado (habitualmente kernels de GPU) que se consume desde la libreria `kernels` de Hugging Face en lugar de descargarse como un checkpoint.
 
 El nombre del repositorio sugiere una implementacion del optimizador Adam en la que se emplea `atan2` en lugar del termino epsilon, una variante que aparece en la literatura reciente de optimizacion. Sin embargo, la informacion disponible no confirma esta interpretacion: la model card unicamente contiene un aviso operativo y no aporta descripcion tecnica, autor, paper asociado ni ejemplos. Cualquier afirmacion sobre su funcionamiento interno seria una inferencia no verificada.
 
@@ -33,7 +33,7 @@ El dato mas relevante del repositorio es su aviso de deprecacion: a partir del 1
 
 No disponible. Un repositorio con la etiqueta `kernels` no describe una arquitectura de red neuronal ni un proceso de entrenamiento: contiene codigo de computo que se compila y ejecuta sobre aceleradores. La model card no especifica el lenguaje de implementacion (Triton, CUDA C++, etc.), la version de la libreria `kernels` soportada, la firma de la funcion expuesta ni los tipos de datos admitidos.
 
-No hay informacion sobre datos de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineacion (RLHF, DPO), porque el artefacto no es un modelo entrenado. Tampoco se documenta ninguna innovacion algorítmica en la model card; el unico contenido tecnico es el aviso sobre la retirada de repositorios de kernels con tipo "model" y el enlace al sistema de reporte de incidencias de HuggingFace.
+No hay informacion sobre datos de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineacion (RLHF, DPO), porque el artefacto no es un modelo entrenado. Tampoco se documenta ninguna innovacion algorítmica en la model card; el unico contenido tecnico es el aviso sobre la retirada de repositorios de kernels con tipo "model" y el enlace al sistema de reporte de incidencias de Hugging Face.
 
 ## Capacidades
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Consumo del propio repositorio: 0.0 GB, por lo que su instalacion no anade peso apreciable al entorno.
 - GPU recomendadas: no disponible. Cualquier GPU compatible con el backend que use el kernel (Triton o CUDA, segun implementacion no documentada) seria en principio valida.
 - GPU de consumo: no es posible confirmarlo sin conocer los requisitos del kernel. En principio una RTX 4090 o similar podria ejecutarlo si el kernel es compatible con arquitecturas Ada y con la version de CUDA correspondiente.
-- Opciones de despliegue: la via prevista es la libreria `kernels` de HuggingFace. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que son herramientas de inferencia y no aplican a un optimizador.
+- Opciones de despliegue: la via prevista es la libreria `kernels` de Hugging Face. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que son herramientas de inferencia y no aplican a un optimizador.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -75,9 +75,9 @@ No hay modelos comparables en el sentido habitual, porque el artefacto no es un 
 
 | Alternativa | Tipo | Licencia | Estado | Observaciones |
 |---|---|---|---|---|
-| `replicate/adam-atan2` | kernel publicado en HuggingFace | Apache 2.0 | 0 descargas, 0 likes, sin documentacion | Repositorio con aviso de deprecacion para repos de kernels de tipo "model" |
+| `replicate/adam-atan2` | kernel publicado en Hugging Face | Apache 2.0 | 0 descargas, 0 likes, sin documentacion | Repositorio con aviso de deprecacion para repos de kernels de tipo "model" |
 | `torch.optim.AdamW` (PyTorch) | optimizador incluido en el framework | BSD-3-Clause | Mantenido, ampliamente usado | No requiere instalacion adicional ni kernel externo |
-| `kernels-community/flash-attn3` | kernel de atencion publicado en HuggingFace | no disponible en la informacion proporcionada | Citado en el propio aviso del repositorio como ejemplo de repositorio que se retirara | Referencia del mismo ecosistema de distribucion de kernels |
+| `kernels-community/flash-attn3` | kernel de atencion publicado en Hugging Face | no disponible en la informacion proporcionada | Citado en el propio aviso del repositorio como ejemplo de repositorio que se retirara | Referencia del mismo ecosistema de distribucion de kernels |
 | Otros kernels de la organizacion `kernels-community` | kernels varios | variable | activos | Mismo mecanismo de instalacion mediante la libreria `kernels` |
 
 ## Limitaciones y advertencias
@@ -93,8 +93,8 @@ No hay modelos comparables en el sentido habitual, porque el artefacto no es un 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/adam-atan2
-- Sistema de reporte de incidencias de kernels de HuggingFace (citado en la model card): https://github.com/huggingface/kernels/issues/new
+- Repositorio en Hugging Face: https://huggingface.co/replicate/adam-atan2
+- Sistema de reporte de incidencias de kernels de Hugging Face (citado en la model card): https://github.com/huggingface/kernels/issues/new
 - Organizacion Replicate en GitHub: https://github.com/replicate
 - Sitio de Replicate: https://replicate.com/
 - Catalogo de modelos de Replicate: https://replicate.com/explore

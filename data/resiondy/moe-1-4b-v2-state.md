@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`resiondy/moe-1.4b-v2-state` es un modelo publicado en HuggingFace por el usuario resiondy bajo acceso restringido (gated). Por el identificador se infiere que se trata de un modelo con arquitectura de mezcla de expertos (MoE) de aproximadamente 1.400 millones de parametros, en su version v2, aunque no se dispone de documentacion oficial que confirme esta interpretacion ni que detalle su naturaleza exacta.
+`resiondy/moe-1.4b-v2-state` es un modelo publicado en Hugging Face por el usuario resiondy bajo acceso restringido (gated). Por el identificador se infiere que se trata de un modelo con arquitectura de mezcla de expertos (MoE) de aproximadamente 1.400 millones de parametros, en su version v2, aunque no se dispone de documentacion oficial que confirme esta interpretacion ni que detalle su naturaleza exacta.
 
 La ficha tecnica publica es practicamente inexistente: no hay model card visible, no se declara licencia, no se especifican idiomas soportados, no se indica el pipeline de inferencia y no se han publicado resultados de benchmarks. El repositorio ocupa 239,2 GB, un tamano desproporcionado para un modelo de 1,4B en precision completa, lo que sugiere la presencia de multiples checkpoints, estados de optimizador, pesos duplicados en varios formatos o artefactos de entrenamiento intermedios.
 
@@ -71,7 +71,7 @@ La comparativa directa no es posible con datos verificables: los modelos alterna
 
 - Ausencia total de model card: no se puede verificar arquitectura, tamano real, contexto ni datos de entrenamiento.
 - Licencia no declarada: no hay base legal explicita para uso comercial; en ausencia de licencia, los derechos de uso quedan reservados por defecto al autor.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace y, presumiblemente, aprobacion manual, lo que anade friccion y dependencia del autor.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face y, presumiblemente, aprobacion manual, lo que anade friccion y dependencia del autor.
 - Repositorio de 239,2 GB para un modelo supuestamente de ~1,4B: indica probablemente estados de entrenamiento o duplicacion de pesos, con el coste de almacenamiento y transferencia asociado.
 - Riesgo de que los pesos no sean directamente utilizables para inferencia si el repositorio contiene solo checkpoints intermedios o estados de optimizador.
 - Sin benchmarks publicados: no hay evidencia de calidad, sesgos ni tasas de alucinacion.
@@ -80,4 +80,4 @@ La comparativa directa no es posible con datos verificables: los modelos alterna
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/resiondy/moe-1.4b-v2-state
+- Repositorio en Hugging Face: https://huggingface.co/resiondy/moe-1.4b-v2-state

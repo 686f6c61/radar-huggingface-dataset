@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Unlimited-OCR (Baidu) | ~3,3 B | 32.768 tokens | MIT | HuggingFace, ModelScope, Baidu Cloud |
+| Unlimited-OCR (Baidu) | ~3,3 B | 32.768 tokens | MIT | Hugging Face, ModelScope, Baidu Cloud |
 | DeepSeek-OCR | no disponible | no disponible | no disponible | GitHub de DeepSeek |
 | Alternativas genéricas de OCR vision-language | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,8 +84,8 @@ La información disponible solo permite comparar con DeepSeek-OCR, del que se in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dhanabh/Unlimited-OCR
-- HuggingFace oficial (Baidu): https://huggingface.co/baidu/Unlimited-OCR
+- Hugging Face: https://huggingface.co/Dhanabh/Unlimited-OCR
+- Hugging Face oficial (Baidu): https://huggingface.co/baidu/Unlimited-OCR
 - GitHub: https://github.com/baidu/Unlimited-OCR
 - arXiv: https://arxiv.org/abs/2606.23050
 - Demo en Hugging Face Spaces: https://huggingface.co/spaces/baidu/Unlimited-OCR

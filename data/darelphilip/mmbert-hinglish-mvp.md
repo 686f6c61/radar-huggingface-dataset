@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `darelphilip/mmbert-hinglish-mvp` se presenta como una variante del modelo mmBERT (Multilingual ModernBERT) orientada al hinglish, la mezcla de hindi e inglés muy común en la comunicación digital del sur de Asia. Sin embargo, la información disponible en HuggingFace es extremadamente limitada: la model card está prácticamente vacía, el repositorio tiene un tamaño de 0.0 GB y no se especifican licencia, idiomas, arquitectura ni datos de entrenamiento. El autor, `darelphilip`, no ha publicado ningún detalle técnico adicional.
+El modelo `darelphilip/mmbert-hinglish-mvp` se presenta como una variante del modelo mmBERT (Multilingual ModernBERT) orientada al hinglish, la mezcla de hindi e inglés muy común en la comunicación digital del sur de Asia. Sin embargo, la información disponible en Hugging Face es extremadamente limitada: la model card está prácticamente vacía, el repositorio tiene un tamaño de 0.0 GB y no se especifican licencia, idiomas, arquitectura ni datos de entrenamiento. El autor, `darelphilip`, no ha publicado ningún detalle técnico adicional.
 
-Aunque el nombre sugiere que se trata de un modelo basado en mmBERT, un encoder transformer multilingüe moderno desarrollado por JHU-CLSP y HuggingFace, no hay confirmación de que este checkpoint concreto siga esa arquitectura ni de que haya sido entrenado específicamente para hinglish. La ausencia de archivos de pesos (0.0 GB) indica que probablemente se trata de un repositorio vacío o un placeholder, no un modelo funcional. Por tanto, cualquier uso en producción o investigación es inviable con la información actual.
+Aunque el nombre sugiere que se trata de un modelo basado en mmBERT, un encoder transformer multilingüe moderno desarrollado por JHU-CLSP y Hugging Face, no hay confirmación de que este checkpoint concreto siga esa arquitectura ni de que haya sido entrenado específicamente para hinglish. La ausencia de archivos de pesos (0.0 GB) indica que probablemente se trata de un repositorio vacío o un placeholder, no un modelo funcional. Por tanto, cualquier uso en producción o investigación es inviable con la información actual.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Aunque el nombre sugiere que se trata de un modelo basado en mmBERT, un encoder 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura, el proceso de entrenamiento ni los datos utilizados para este modelo. El tag `arxiv:1910.09700` presente en HuggingFace corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en machine learning, no a un paper sobre el modelo. La model card generada automaticamente no contiene ningun dato tecnico.
+No se dispone de informacion sobre la arquitectura, el proceso de entrenamiento ni los datos utilizados para este modelo. El tag `arxiv:1910.09700` presente en Hugging Face corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en machine learning, no a un paper sobre el modelo. La model card generada automaticamente no contiene ningun dato tecnico.
 
 En el contexto general, mmBERT (del que este modelo podria derivar) es un encoder transformer basado en ModernBERT, entrenado sobre 3 billones de tokens en 1833 lenguas mediante una tecnica denominada *cascading annealed language learning* (ALL). Sin embargo, no hay evidencia de que `mmbert-hinglish-mvp` siga esa arquitectura ni de que haya sido entrenado con esos datos. El tamano del repositorio (0.0 GB) sugiere que no contiene pesos del modelo.
 
@@ -64,7 +64,7 @@ Estos datos corresponden a modelos publicados y verificados, no a `mmbert-hingli
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/darelphilip/mmbert-hinglish-mvp
+- Repositorio Hugging Face: https://huggingface.co/darelphilip/mmbert-hinglish-mvp
 - Blog de mmBERT (contexto general): https://huggingface.co/blog/mmbert
 - Modelo mmBERT-base (referencia): https://huggingface.co/jhu-clsp/mmBERT-base
 - Paper de mmBERT: https://arxiv.org/html/2509.06888v1

@@ -4,7 +4,7 @@
 
 El modelo `ebylmz/pnp-transformer-pretrained` es un transformer diseñado para la estimación de pose 6D de objetos en escenarios de zero-shot, es decir, capaz de predecir la posición y orientación tridimensional de objetos sin haber visto ejemplos específicos de esos objetos durante el entrenamiento. El autor, ebylmz, lo publica bajo licencia MIT, lo que permite su uso comercial y modificación sin restricciones significativas.
 
-Aunque la información pública es muy limitada —la model card de HuggingFace solo incluye la licencia—, el repositorio de GitHub asociado indica que se trata de un "Neural Pose Solver" basado en arquitectura transformer. El tamaño del repositorio en HuggingFace es de 1,9 GB, lo que sugiere que contiene pesos preentrenados, aunque no se especifica el formato exacto. No se dispone de detalles sobre el número de parámetros, el conjunto de datos de entrenamiento ni los resultados de benchmarks.
+Aunque la información pública es muy limitada —la model card de Hugging Face solo incluye la licencia—, el repositorio de GitHub asociado indica que se trata de un "Neural Pose Solver" basado en arquitectura transformer. El tamaño del repositorio en Hugging Face es de 1,9 GB, lo que sugiere que contiene pesos preentrenados, aunque no se especifica el formato exacto. No se dispone de detalles sobre el número de parámetros, el conjunto de datos de entrenamiento ni los resultados de benchmarks.
 
 Este modelo es relevante para aplicaciones de robótica, realidad aumentada y visión por computador donde se requiere localizar objetos en el espacio 3D sin necesidad de entrenamiento específico por objeto. Sin embargo, la falta de documentación técnica detallada limita su adopción inmediata en entornos de producción.
 
@@ -66,5 +66,5 @@ No se dispone de información suficiente para comparar con otros modelos de esti
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ebylmz/pnp-transformer-pretrained
+- Hugging Face: https://huggingface.co/ebylmz/pnp-transformer-pretrained
 - Repositorio GitHub: https://github.com/ebylmz/pnp-transformer

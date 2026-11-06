@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ozen-v1 (אוזן, "oreja" en hebreo) es un modelo de reconocimiento automático del habla en hebreo desarrollado por Itay Inbar, publicado en HuggingFace bajo licencia Apache-2.0. Se trata de un modelo compacto de 60,7 millones de parámetros, diseñado específicamente para ejecutarse en un teléfono móvil o directamente en el navegador, con un tamaño de repositorio de 0,6 GB. Su objetivo es cubrir la ausencia de modelos de transcripción de voz en hebreo que sean ligeros y desplegables en el borde (on-device).
+Ozen-v1 (אוזן, "oreja" en hebreo) es un modelo de reconocimiento automático del habla en hebreo desarrollado por Itay Inbar, publicado en Hugging Face bajo licencia Apache-2.0. Se trata de un modelo compacto de 60,7 millones de parámetros, diseñado específicamente para ejecutarse en un teléfono móvil o directamente en el navegador, con un tamaño de repositorio de 0,6 GB. Su objetivo es cubrir la ausencia de modelos de transcripción de voz en hebreo que sean ligeros y desplegables en el borde (on-device).
 
 Arquitectónicamente es un modelo tipo Whisper encoder-decoder: un encoder de 12 capas y un decoder de 4 capas con anchura 512, derivado de `openai/whisper-base`. Sustituye el vocabulario multilingüe de Whisper por un tokenizador BPE a nivel de byte específico para hebreo de 8.192 tokens, lo que reduce el coste de tokenización a 1,76 tokens por palabra hebrea frente a 3,17 de Whisper. El modelo es una destilación del fine-tune hebreo de ivrit.ai sobre Whisper large-v3-turbo.
 
@@ -80,10 +80,10 @@ Selección de profundidad del decoder (WER en reserva tras 12k pasos y tiempo de
 
 | Modelo | Parametros | WER eval-d1 | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ozen-v1 | 60,7 M | 8,59 % | ventanas de 30 s | Apache-2.0 | HuggingFace, ONNX |
-| whisper-small | 242 M | 29,93 % | ventanas de 30 s | Apache-2.0 | OpenAI, HuggingFace |
-| whisper-base | 73 M | 48,32 % | ventanas de 30 s | Apache-2.0 | OpenAI, HuggingFace |
-| ivrit.ai turbo | 809 M | 5,5 % | ventanas de 30 s | según ivrit.ai | HuggingFace (ivrit.ai) |
+| Ozen-v1 | 60,7 M | 8,59 % | ventanas de 30 s | Apache-2.0 | Hugging Face, ONNX |
+| whisper-small | 242 M | 29,93 % | ventanas de 30 s | Apache-2.0 | OpenAI, Hugging Face |
+| whisper-base | 73 M | 48,32 % | ventanas de 30 s | Apache-2.0 | OpenAI, Hugging Face |
+| ivrit.ai turbo | 809 M | 5,5 % | ventanas de 30 s | según ivrit.ai | Hugging Face (ivrit.ai) |
 
 Ozen-v1 ofrece un equilibrio entre tamaño y precisión muy favorable en hebreo: supera ampliamente a Whisper base y small (que, según la tarjeta, no funcionan bien en hebreo con sus vocabularios originales) y se acerca al modelo de 809 M del que se destila, con 13 veces menos parámetros.
 
@@ -101,12 +101,12 @@ Ozen-v1 ofrece un equilibrio entre tamaño y precisión muy favorable en hebreo:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itayinbar/Ozen-v1
+- Modelo en Hugging Face: https://huggingface.co/itayinbar/Ozen-v1
 - Modelo base: https://huggingface.co/openai/whisper-base
 - ivrit.ai: https://www.ivrit.ai/
 - Licencia de ivrit.ai: https://www.ivrit.ai/en/the-license/
 - Leaderboard de transcripción en hebreo de ivrit.ai: https://huggingface.co/spaces/ivrit-ai/hebrew-transcription-leaderboard
 - Repositorio de audios de entrenamiento: https://huggingface.co/datasets/ivrit-ai/audio-v2
 - Web del autor: https://itayinbar.com/
-- Perfil del autor en HuggingFace: https://huggingface.co/itayinbar/models
+- Perfil del autor en Hugging Face: https://huggingface.co/itayinbar/models
 - Perfil del autor en GitHub: https://github.com/itayinbarr

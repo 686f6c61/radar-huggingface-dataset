@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`1234Frede/v2chronos2-lora-dk2-se4` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `1234Frede`, construido sobre el modelo base `amazon/chronos-2`. El repositorio declara `library_name: peft` y los tags `peft`, `lora`, `transformers` y `base_model:adapter:amazon/chronos-2`, lo que indica que se trata de un ajuste fino parametrizado eficiente y no de un modelo completo con pesos propios. El nombre del repositorio sugiere una ejecución concreta de entrenamiento (variante `v2`, semilla o configuración `se4`), pero no hay documentación que lo confirme.
+`1234Frede/v2chronos2-lora-dk2-se4` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `1234Frede`, construido sobre el modelo base `amazon/chronos-2`. El repositorio declara `library_name: peft` y los tags `peft`, `lora`, `transformers` y `base_model:adapter:amazon/chronos-2`, lo que indica que se trata de un ajuste fino parametrizado eficiente y no de un modelo completo con pesos propios. El nombre del repositorio sugiere una ejecución concreta de entrenamiento (variante `v2`, semilla o configuración `se4`), pero no hay documentación que lo confirme.
 
 Chronos-2 es un modelo fundacional orientado a series temporales desarrollado por Amazon, por lo que el dominio esperado de este adaptador es la previsión (forecasting) univariante o multivariante sobre datos secuenciales numéricos, no la generación de texto. Esto implica que conceptos habituales en fichas de modelos de lenguaje (contexto en tokens, tool calling, razonamiento multi-paso, benchmarks tipo MMLU) no son directamente aplicables aquí y solo pueden reportarse como no disponibles.
 
-La relevancia de esta ficha es limitada y conviene decirlo con claridad: el repositorio acumula 0 descargas y 0 "likes", el tamaño declarado es de 0.0 GB, la model card es la plantilla vacía por defecto de HuggingFace (todos los campos con `[More Information Needed]`) y la licencia no está especificada. No hay evidencia publicada de que el adaptador haya sido entrenado, evaluado o validado. Cualquier uso en producción exigiría, como mínimo, verificar que los pesos están efectivamente subidos y reproducir una evaluación propia contra el modelo base.
+La relevancia de esta ficha es limitada y conviene decirlo con claridad: el repositorio acumula 0 descargas y 0 "likes", el tamaño declarado es de 0.0 GB, la model card es la plantilla vacía por defecto de Hugging Face (todos los campos con `[More Information Needed]`) y la licencia no está especificada. No hay evidencia publicada de que el adaptador haya sido entrenado, evaluado o validado. Cualquier uso en producción exigiría, como mínimo, verificar que los pesos están efectivamente subidos y reproducir una evaluación propia contra el modelo base.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ La relevancia de esta ficha es limitada y conviene decirlo con claridad: el repo
 
 No hay información publicada sobre la arquitectura interna del adaptador, los módulos objetivo (`q_proj`, `k_proj`, `v_proj`, etc.), el rango `r`, el valor de `lora_alpha`, el dropout ni la estrategia de inicialización. La model card únicamente indica que el modelo se ha entrenado con PEFT 0.20.0 y que la librería de carga es `peft`. Se desconoce por completo la arquitectura del modelo base `amazon/chronos-2` en lo que respecta a número de capas, dimensión oculta, mecanismo de atención o si emplea tokenización por cuantización de valores (discretización tipo binning) o parcheado continuo, que son los dos enfoques habituales en modelos fundacionales de series temporales.
 
-Respecto al entrenamiento, tampoco se documenta nada: no se especifica el dataset, el número de series temporales, la frecuencia de muestreo, el horizonte de predicción, la función de pérdida (MSE, cuantílica, etc.), la precisión usada (fp32, bf16, fp16), el número de pasos o épocas, ni si hubo ajuste adicional por RLHF/DPO (poco probable en este dominio). El tag `arxiv:1910.09700` que aparece en los metadatos del repositorio corresponde a Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", y proviene de la plantilla automática de HuggingFace (calculadora de impacto de carbono), no de un artículo técnico sobre este adaptador.
+Respecto al entrenamiento, tampoco se documenta nada: no se especifica el dataset, el número de series temporales, la frecuencia de muestreo, el horizonte de predicción, la función de pérdida (MSE, cuantílica, etc.), la precisión usada (fp32, bf16, fp16), el número de pasos o épocas, ni si hubo ajuste adicional por RLHF/DPO (poco probable en este dominio). El tag `arxiv:1910.09700` que aparece en los metadatos del repositorio corresponde a Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", y proviene de la plantilla automática de Hugging Face (calculadora de impacto de carbono), no de un artículo técnico sobre este adaptador.
 
 ## Capacidades
 
@@ -89,7 +89,7 @@ La busqueda web realizada no devolvio resultados relacionados con el modelo ni c
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace y no contiene ninguna información real sobre el modelo: autoría, datos, licencia, uso previsto y evaluación están todos sin rellenar.
+- La model card es la plantilla por defecto de Hugging Face y no contiene ninguna información real sobre el modelo: autoría, datos, licencia, uso previsto y evaluación están todos sin rellenar.
 - No se especifica licencia. Esto impide determinar si el uso comercial está permitido o no, y bloquea su adopción en producción sin aclaración previa del autor.
 - El repositorio declara 0.0 GB de tamaño. Aunque un adaptador LoRA puede redondear a ese valor, también podría indicar que los pesos no se han subido o que el repositorio está vacío. Debe comprobarse antes de cualquier uso.
 - Cero descargas y cero likes: no hay evidencia de uso, validación por terceros ni reproducibilidad.
@@ -102,7 +102,7 @@ La busqueda web realizada no devolvio resultados relacionados con el modelo ni c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/1234Frede/v2chronos2-lora-dk2-se4
+- Repositorio Hugging Face: https://huggingface.co/1234Frede/v2chronos2-lora-dk2-se4
 - Modelo base: https://huggingface.co/amazon/chronos-2
 - Referencia del tag `arxiv:1910.09700` (Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", citada en la plantilla de la model card): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de carbono enlazada en la plantilla: https://mlco2.github.io/impact

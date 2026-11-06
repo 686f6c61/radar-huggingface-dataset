@@ -87,7 +87,7 @@ La comparación con otros fine-tunes de akan/twi no está disponible en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dansarpong/whisper-small-waxal-aka-ggml
+- Modelo en Hugging Face: https://huggingface.co/dansarpong/whisper-small-waxal-aka-ggml
 - Modelo base: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-aka
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-small
 - Dataset WAXAL: https://huggingface.co/datasets/google/WaxalNLP

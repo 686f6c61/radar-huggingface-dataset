@@ -46,8 +46,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Especialización |
 |---|---|---|---|---|---|
-| opd-teacher-R1Distill-EightDigitPuzzle-step149 | 1.777.088.000 | no disponible | no disponible | HuggingFace | EightDigitPuzzle (teacher OPD) |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1.777.088.000 (heredados) | no disponible | no disponible | HuggingFace | Generalista, razonamiento |
+| opd-teacher-R1Distill-EightDigitPuzzle-step149 | 1.777.088.000 | no disponible | no disponible | Hugging Face | EightDigitPuzzle (teacher OPD) |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1.777.088.000 (heredados) | no disponible | no disponible | Hugging Face | Generalista, razonamiento |
 | opd-teacher-Q2.5I-Differentiate-step149 | no disponible | no disponible | no disponible | Featherless | Diferenciación (teacher OPD) |
 
 ## Limitaciones y advertencias
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - Fecha de creación futura: los metadatos indican 2026-09-30, lo que sugiere que la información puede formar parte de un escenario simulado o contener un error de fecha.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/davidheineman/opd-teacher-R1Distill-EightDigitPuzzle-step149
+- Hugging Face: https://huggingface.co/davidheineman/opd-teacher-R1Distill-EightDigitPuzzle-step149
 - Colección RLVE OPD Teachers: https://huggingface.co/collections/davidheineman/rlve-opd-teachers
 - Paper Lightning OPD 2.0: https://arxiv.org/abs/2607.28449
 - Versión HTML del paper: https://arxiv.org/html/2607.28449

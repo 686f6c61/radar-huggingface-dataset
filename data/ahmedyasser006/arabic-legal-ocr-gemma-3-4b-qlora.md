@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ahmedyasser006/arabic-legal-ocr-gemma-3-4b-qlora | 4B (base) + LoRA | 128K | OCR de documentos legales árabes | Gemma | HuggingFace |
+| ahmedyasser006/arabic-legal-ocr-gemma-3-4b-qlora | 4B (base) + LoRA | 128K | OCR de documentos legales árabes | Gemma | Hugging Face |
 | bakrianoo/arabic-legal-documents-ocr-1.0 | 4B (base) + LoRA | 128K | Extracción de datos estructurados de documentos legales árabes escaneados | Gemma | Hugging Face |
 | google/gemma-3-4b-it (base) | 4B | 128K | Modelo general multimodal | Gemma | Hugging Face |
 

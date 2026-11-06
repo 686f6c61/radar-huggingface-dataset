@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kylwhit97/retrieval es un repositorio experimental publicado en HuggingFace por el usuario kylwhit97 (Kyle, con perfil autodefinido como "former physicist, now doing ML") bajo licencia Apache 2.0. No es un modelo entrenado ni una release de produccion: se trata de un banco de pruebas de arquitectura ("Mae") orientado a tareas de retrieval, con una configuracion de escala declarada como xlarge pero con un checkpoint de inicializacion de solo 49.600 parametros totales segun los metadatos de safetensors. El propio autor indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo y no un checkpoint evaluado en benchmarks.
+kylwhit97/retrieval es un repositorio experimental publicado en Hugging Face por el usuario kylwhit97 (Kyle, con perfil autodefinido como "former physicist, now doing ML") bajo licencia Apache 2.0. No es un modelo entrenado ni una release de produccion: se trata de un banco de pruebas de arquitectura ("Mae") orientado a tareas de retrieval, con una configuracion de escala declarada como xlarge pero con un checkpoint de inicializacion de solo 49.600 parametros totales segun los metadatos de safetensors. El propio autor indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo y no un checkpoint evaluado en benchmarks.
 
 El problema que aborda es de caracter metodologico mas que de producto: permitir inspeccionar cambios arquitectonicos en un modelo de retrieval antes de comprometer recursos en un entrenamiento completo. La model card recomienda entrenar todos los baselines con la misma exposicion de datos, presupuesto de ajuste y semillas aleatorias, y propone Flickr30k como primera evaluacion util, reportando la metrica de la tarea en al menos tres semillas junto a un baseline de capacidad equivalente.
 
@@ -84,7 +84,7 @@ No es posible una comparativa de rendimiento, porque este repositorio no publica
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kylwhit97/retrieval (Mae) | 49.600 (checkpoint de inicializacion) | no disponible | no disponible (sin benchmark) | Apache 2.0 | HuggingFace, 0 descargas |
+| kylwhit97/retrieval (Mae) | 49.600 (checkpoint de inicializacion) | no disponible | no disponible (sin benchmark) | Apache 2.0 | Hugging Face, 0 descargas |
 | CLIP (OpenAI) | cientos de millones, segun variante (valores publicos aproximados) | 77 tokens en el encoder de texto | metricas publicadas de zero-shot en su model card original | licencia permisiva del proyecto original | ampliamente disponible |
 | BLIP-2 (Salesforce) | cientos de millones entre Q-Former y encoders congelados (valores publicos aproximados) | no disponible en esta ficha | metricas publicadas por el equipo original | licencia del proyecto original | ampliamente disponible |
 
@@ -97,15 +97,15 @@ Las cifras de CLIP y BLIP-2 son valores publicos de referencia general y pueden 
 - Existe una discrepancia entre la escala declarada (xlarge) y el numero real de parametros (49.600); no debe asumirse que la configuracion publicada representa la escala final del experimento.
 - Riesgo de alucinacion: no aplicable en el sentido habitual, porque el modelo no esta entrenado; el riesgo real es que un usuario lo despliegue creyendo que funciona y obtenga salidas sin sentido.
 - Idioma y contexto: no se declaran idiomas soportados ni longitud de contexto, por lo que no se puede garantizar su comportamiento en ningun idioma.
-- Implementacion personalizada: las APIs genericas de carga automatica de HuggingFace y los servidores de inferencia estandar probablemente fallen sin un adaptador explicito.
+- Implementacion personalizada: las APIs genericas de carga automatica de Hugging Face y los servidores de inferencia estandar probablemente fallen sin un adaptador explicito.
 - Licencia: el repositorio se publica bajo Apache 2.0, que permite uso comercial del codigo, pero la propia model card advierte de que deben revisarse por separado los terminos de los datos de origen cuando se use con datasets externos.
 - Los resultados de un futuro checkpoint entrenado deben documentarse de forma separada de los valores por defecto aqui incluidos; mezclarlos seria una mala practica metodologica.
 - Para cualquier uso en produccion, se recomienda un modelo de retrieval ya entrenado y evaluado, no este esqueleto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kylwhit97/retrieval
-- Perfil del autor en HuggingFace: https://huggingface.co/kylwhit97
+- Modelo en Hugging Face: https://huggingface.co/kylwhit97/retrieval
+- Perfil del autor en Hugging Face: https://huggingface.co/kylwhit97
 - Otro repositorio del mismo autor (referencia de su actividad): https://huggingface.co/kylwhit97/model_682706075_dino_small
 - Retrieval-Augmented Generation for AI-Generated Content: A Survey: https://arxiv.org/abs/2402.19473
 - Synthesizing scientific literature with retrieval-augmented language models (Nature): https://www.nature.com/articles/s41586-025-10072-4

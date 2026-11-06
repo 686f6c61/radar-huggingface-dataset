@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`leonardocont/albef-generation-study` es un prototipo de investigación publicado en HuggingFace por el usuario leonardocont. Se presenta como una implementación propia de arquitectura Albef orientada a tareas de generación, con una configuración declarada de escala «xlarge», atención flash, fusión por co-atención, activación gelu tanh y normalización batchnorm. El repositorio incluye un `eval.py` con ejemplo ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe como checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), no como un modelo entrenado.
+`leonardocont/albef-generation-study` es un prototipo de investigación publicado en Hugging Face por el usuario leonardocont. Se presenta como una implementación propia de arquitectura Albef orientada a tareas de generación, con una configuración declarada de escala «xlarge», atención flash, fusión por co-atención, activación gelu tanh y normalización batchnorm. El repositorio incluye un `eval.py` con ejemplo ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe como checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), no como un modelo entrenado.
 
 La relevancia de esta ficha es acotada y conviene dejarla clara desde el principio: el autor indica de forma explícita que no reclama ninguna puntuación de benchmark, que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio, y que la implementación debe tratarse como un punto de partida experimental. Se trata, por tanto, de un artefacto de andamiaje para investigación reproducible (estructura de ficheros, receta de entrenamiento y script de evaluación), no de un modelo listo para inferencia real.
 
@@ -19,7 +19,7 @@ El dato más llamativo es la discrepancia entre la escala nominal declarada («x
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (`model.safetensors`), acompañado de `config.json`, `training_args.json` y `eval.py` |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tamaño del repositorio | 0,0 GB |
 | Fecha de creación | 2026-09-13 |
 | Última actualización | 2026-09-13 |
@@ -47,7 +47,7 @@ No hay capacidades verificadas. El modelo no ha sido entrenado, por lo que no pu
 Los casos de uso realistas se limitan al ámbito de la investigación y la ingeniería de infraestructura, dado que no existe un modelo entrenado:
 
 - Pruebas de humo de pipelines de inferencia: usar el checkpoint de inicialización de 24.832 parámetros para verificar que un cargador personalizado, un adaptador o un servicio de inferencia arrancan correctamente antes de desplegar un checkpoint real.
-- Desarrollo de adaptadores de carga: como la implementación es a medida, sirve para escribir y validar el adaptador que permita cargar pesos Albef desde las APIs genéricas de HuggingFace.
+- Desarrollo de adaptadores de carga: como la implementación es a medida, sirve para escribir y validar el adaptador que permita cargar pesos Albef desde las APIs genéricas de Hugging Face.
 - Plantilla de configuración de experimentos: `config.json` y `training_args.json` pueden reutilizarse como esqueleto de receta (AdamW, planificador step) para comparar líneas base con la misma exposición de datos y semillas.
 - Arnés de evaluación reproducible: el README recomienda evaluar sobre un conjunto de retención específico de la tarea, reportar la métrica con al menos tres semillas e incluir una línea base de capacidad equivalente; el repositorio aporta la estructura para montar ese arnés.
 - Docencia y prototipado de arquitecturas visión-lenguaje: el código y la configuración permiten ilustrar cómo se ensamblan atención flash, co-atención y normalización batchnorm en un transformer multimodal.
@@ -72,7 +72,7 @@ No es posible establecer una comparativa rigurosa: el repositorio contiene un ch
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| leonardocont/albef-generation-study | 24.832 (checkpoint de inicialización) | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas |
+| leonardocont/albef-generation-study | 24.832 (checkpoint de inicialización) | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas |
 | Albef (familia original, referencia por etiqueta) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Alternativas visión-lenguaje de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -85,10 +85,10 @@ No es posible establecer una comparativa rigurosa: el repositorio contiene un ch
 - Idiomas y longitud de contexto: no disponibles. No hay ninguna declaración al respecto.
 - Restricciones de licencia: los pesos y el código se publican bajo apache-2.0, licencia permisiva que permite uso comercial. No obstante, el autor advierte de que deben revisarse por separado los términos de los datos de origen si el repositorio se usa con conjuntos de datos externos.
 - Advertencia para producción: no desplegar. El propio README indica que se trata de un punto de partida experimental y que los resultados de un futuro checkpoint entrenado deben documentarse de forma separada de los valores por defecto aquí incluidos.
-- Carga no estándar: al ser una implementación a medida, los cargadores automáticos de HuggingFace no funcionarán sin un adaptador explícito.
+- Carga no estándar: al ser una implementación a medida, los cargadores automáticos de Hugging Face no funcionarán sin un adaptador explícito.
 - Repositorio sin tracción: 0 descargas y 0 «likes» en el momento de la consulta, sin historial de mantenimiento posterior a la fecha de actualización registrada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leonardocont/albef-generation-study
+- Modelo en Hugging Face: https://huggingface.co/leonardocont/albef-generation-study
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo: los resultados obtenidos correspondían a páginas de citas del día y contenidos sin relación con el repositorio. No se dispone de paper, blog, repositorio de código ni demo adicionales.

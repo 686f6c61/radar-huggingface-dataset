@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TiTi Genesis V2 es un checkpoint de investigación publicado por el desarrollador independiente Hồ Ngọc Thắng (usuario Thengbeo) en HuggingFace. Se trata de un transformer de tipo "all-attention" de 139 millones de parámetros, diseñado para modelado de lenguaje en vietnamita e inglés, con una longitud de contexto máxima de 4.096 tokens y un vocabulario BPE de 32.768 entradas. El modelo es una reescritura de su predecesor V1, que combinaba capas Mamba con capas de atención; en V2 se eliminan las capas de estado y se sustituyen por atención estándar en las 39 capas.
+TiTi Genesis V2 es un checkpoint de investigación publicado por el desarrollador independiente Hồ Ngọc Thắng (usuario Thengbeo) en Hugging Face. Se trata de un transformer de tipo "all-attention" de 139 millones de parámetros, diseñado para modelado de lenguaje en vietnamita e inglés, con una longitud de contexto máxima de 4.096 tokens y un vocabulario BPE de 32.768 entradas. El modelo es una reescritura de su predecesor V1, que combinaba capas Mamba con capas de atención; en V2 se eliminan las capas de estado y se sustituyen por atención estándar en las 39 capas.
 
 La relevancia de este checkpoint es limitada en su estado actual: el propio autor indica explícitamente que se trata de un checkpoint de inicialización que **requiere preentrenamiento adicional**. Solo 19 de las 39 capas contienen pesos migrados desde V1 (capas de atención y FFN), mientras que las 20 capas restantes, que sustituyen a los bloques Mamba, están sin entrenar. El repositorio incluye scripts para completar el entrenamiento en Google Colab con una GPU T4.
 
@@ -84,14 +84,14 @@ La comparación con modelos de tamaño similar revela que TiTi Genesis V2 se sit
 - Contexto limitado a 4.096 tokens, insuficiente para tareas de documentación larga o análisis de repositorios.
 - Idiomas restringidos a vietnamita e inglés; no se garantiza un comportamiento aceptable en castellano u otras lenguas.
 - Ausencia de benchmarks publicados: no hay evidencia cuantitativa de rendimiento frente a alternativas.
-- El pipeline de HuggingFace no está definido, lo que complica su uso directo con `transformers` sin código adicional.
+- El pipeline de Hugging Face no está definido, lo que complica su uso directo con `transformers` sin código adicional.
 - No se publican pesos cuantizados (GGUF, AWQ, GPTQ), lo que limita el despliegue en entornos de inferencia estándar.
 - Aunque la licencia es Apache 2.0 y permite uso comercial, la ausencia de un modelo entrenado y evaluado hace desaconsejable su empleo en producción.
 - El modelo se publicó con fecha de creación de 2026-11-01 según los metadatos, dato que conviene verificar por si se trata de un error de marcado temporal.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thengbeo/titi-genesis-v2
+- Hugging Face: https://huggingface.co/Thengbeo/titi-genesis-v2
 - Checkpoint de datos de entrenamiento referenciado: https://huggingface.co/Thengbeo/titicheckpoint1
 - Repositorio de código: incluido en el propio repo (`agi_v2/`, `colab_pretrain_v2.py`, `pretrain_v2.py`, `migrate_v1_to_v2.py`)
 - No se han encontrado papers, blogs, demos ni repositorios adicionales en la información disponible.

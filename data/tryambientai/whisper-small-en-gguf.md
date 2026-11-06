@@ -109,7 +109,7 @@ La comparación directa más relevante es con el checkpoint original de OpenAI: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tryambientai/whisper-small.en-gguf
+- Modelo en Hugging Face: https://huggingface.co/tryambientai/whisper-small.en-gguf
 - Modelo base: https://huggingface.co/openai/whisper-small.en
 - Commit del modelo base referenciado: https://huggingface.co/openai/whisper-small.en/commit/e872752
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

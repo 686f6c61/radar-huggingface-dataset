@@ -30,7 +30,7 @@ El caso de uso declarado es la dictacion offline en bengali dentro de WinShades,
 
 La arquitectura subyacente es la de Whisper medium de OpenAI: un transformer encoder-decoder con representacion log-Mel del audio de entrada, pensado para transcripcion multilingue y traduccion. El modelo original se entreno con supervision debil sobre un corpus multilingue a gran escala; los detalles concretos del ajuste fino posterior para bengali (volumen de horas, composicion del dataset, si hubo tecnicas de aumento de datos o de decodificacion) no estan disponibles en la informacion proporcionada.
 
-Lo relevante de este repositorio es que **no hay reentrenamiento ni ajuste adicional**: los pesos se convierten y se comprimen, nada mas. El pipeline exacto es conversion a 16 bits desde el checkpoint de HuggingFace y posterior cuantizacion a q5_0. La model card declara explicitamente que se trata de una version modificada del modelo original y que todo el credito corresponde a Bengali.AI y a sus autores. No se documentan innovaciones tecnicas propias (ni decodificacion especulativa, ni atencion lineal, ni variantes de arquitectura): el valor anadido es el empaquetado en ggml y la compresion a 5 bits con perdida minima de calidad.
+Lo relevante de este repositorio es que **no hay reentrenamiento ni ajuste adicional**: los pesos se convierten y se comprimen, nada mas. El pipeline exacto es conversion a 16 bits desde el checkpoint de Hugging Face y posterior cuantizacion a q5_0. La model card declara explicitamente que se trata de una version modificada del modelo original y que todo el credito corresponde a Bengali.AI y a sus autores. No se documentan innovaciones tecnicas propias (ni decodificacion especulativa, ni atencion lineal, ni variantes de arquitectura): el valor anadido es el empaquetado en ggml y la compresion a 5 bits con perdida minima de calidad.
 
 ## Capacidades
 
@@ -78,9 +78,9 @@ Advertencias sobre estos datos, tal como los presenta el propio autor: 25 clips 
 
 | Modelo | Parametros / tamano | Idiomas | Palabras erroneas (FLEURS, 25 clips) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (q5_0) | Whisper medium, 514 MB | Bengali | 20% | Apache 2.0 | GGML en HuggingFace |
-| Este modelo (F16) | Whisper medium, 1,5 GB | Bengali | 19% | Apache 2.0 | GGML en HuggingFace |
-| AI4Bharat IndicWhisper medium | 1,5 GB | Indias (incluye bengali) | 61% | No disponible en la informacion proporcionada | HuggingFace |
+| Este modelo (q5_0) | Whisper medium, 514 MB | Bengali | 20% | Apache 2.0 | GGML en Hugging Face |
+| Este modelo (F16) | Whisper medium, 1,5 GB | Bengali | 19% | Apache 2.0 | GGML en Hugging Face |
+| AI4Bharat IndicWhisper medium | 1,5 GB | Indias (incluye bengali) | 61% | No disponible en la informacion proporcionada | Hugging Face |
 | OpenAI Whisper large-v3-turbo (q5_0) | 547 MB cuantizado | Multilingue (99 idiomas) | 96% | MIT (modelo original de OpenAI; no confirmado en la informacion proporcionada) | Multiples repositorios |
 | OpenAI Whisper base (q5_1) | 57 MB cuantizado | Multilingue | 110% | MIT (modelo original de OpenAI; no confirmado en la informacion proporcionada) | Multiples repositorios |
 
@@ -100,7 +100,7 @@ El dato diferencial es que un modelo de tamano medio especializado en bengali su
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/winshades/bengaliai-whisper-medium-ggml
+- Repositorio en Hugging Face: https://huggingface.co/winshades/bengaliai-whisper-medium-ggml
 - Modelo base: https://huggingface.co/bengaliAI/tugstugi_bengaliai-asr_whisper-medium
 - Revision del modelo base usada en la conversion: `da605cc1bd2f60a18d8e440e977ddfa921a88e63`
 - whisper.cpp: https://github.com/ggml-org/whisper.cpp

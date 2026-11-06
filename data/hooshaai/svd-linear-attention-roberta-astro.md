@@ -28,7 +28,7 @@ Los datos de entrenamiento no se detallan en la informacion disponible. La evalu
 ## Capacidades
 
 - Clasificacion de textos en ingles, especialmente analisis de sentimiento, con un accuracy de validacion del 86,47 % en SST-2 y F1 de 0,8801.
-- Compatible con el pipeline `text-classification` de HuggingFace, cargable mediante `AutoModelForSequenceClassification`.
+- Compatible con el pipeline `text-classification` de Hugging Face, cargable mediante `AutoModelForSequenceClassification`.
 - Implementa una aproximacion de atencion lineal de bajo rango, lo que permite una huella de memoria reducida durante la inferencia.
 - No se reportan capacidades de generacion de texto libre, tool calling, agentes, vision ni audio en la informacion disponible.
 - Multilingue: solo en ingles.
@@ -65,7 +65,7 @@ No se proporcionan benchmarks comparativos con otros modelos en la informacion d
 - VRAM estimada para inferencia: segun la evaluacion de la model card, pico de 337,21 MB, lo que permite ejecutar el modelo en practicamente cualquier GPU moderna.
 - GPU recomendadas: tarjetas consumer como NVIDIA GTX 1660, RTX 3060, RTX 4060 o superiores son suficientes; tambien compatible con cualquier GPU de datacenter.
 - Si cabe en consumer GPU: si, con margen amplio; incluso en GPUs con 2 GB de VRAM.
-- Opciones de despliegue: cargable con HuggingFace Transformers (`AutoModelForSequenceClassification`) y pipeline de `text-classification`. No se mencionan integraciones con vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
+- Opciones de despliegue: cargable con Hugging Face Transformers (`AutoModelForSequenceClassification`) y pipeline de `text-classification`. No se mencionan integraciones con vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
 - Latencia y throughput: no disponible. El unico dato temporal es "Pure Eval Time" de 22,35 s, que corresponde a la evaluacion completa sobre el conjunto SST-2 y no a una medida de latencia por inferencia.
 
 ## Comparativa con modelos similares
@@ -83,6 +83,6 @@ No se han proporcionado datos comparativos con otros modelos en la informacion d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hooshaai/svd-linear-attention-roberta-astro
+- Hugging Face: https://huggingface.co/Hooshaai/svd-linear-attention-roberta-astro
 - Pagina del autor: https://hooshaai.github.io/
 - Articulo sobre atencion lineal y Transformers: https://hooshaai.substack.com/p/scaling-transformers-how-linear-attention

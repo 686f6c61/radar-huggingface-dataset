@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Luau-Coder-1.0-0.5B-Base es un modelo de lenguaje causal de tipo base (solo preentrenamiento) desarrollado por el usuario khtsly y publicado en HuggingFace. Con 524.159.872 parametros y una ventana de contexto nativa de 65.536 tokens, esta especializado en el dominio de Roblox: el lenguaje de programacion Luau y su ecosistema de documentacion, foros de desarrolladores y repositorios. Su tamano reducido lo posiciona como un modelo pensado para inferencia on-device o en entornos con recursos limitados.
+Luau-Coder-1.0-0.5B-Base es un modelo de lenguaje causal de tipo base (solo preentrenamiento) desarrollado por el usuario khtsly y publicado en Hugging Face. Con 524.159.872 parametros y una ventana de contexto nativa de 65.536 tokens, esta especializado en el dominio de Roblox: el lenguaje de programacion Luau y su ecosistema de documentacion, foros de desarrolladores y repositorios. Su tamano reducido lo posiciona como un modelo pensado para inferencia on-device o en entornos con recursos limitados.
 
 La arquitectura es hibrida, no un transformer denso convencional. Combina capas de atencion lineal Kimi DeltaNet con capas de Multi-head Latent Attention (MLA) en un patron de 3 a 1 a lo largo de 32 capas, e incorpora residuales de atencion con granularidad de sub-capa. Esta mezcla busca reducir el coste de la atencion sobre secuencias largas manteniendo capacidad de recuperacion de informacion exacta en una de cada cuatro capas.
 
@@ -108,7 +108,7 @@ La ventaja diferencial de Luau-Coder-1.0-0.5B-Base es doble: contexto nativo el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/khtsly/Luau-Coder-1.0-0.5B-Base
+- Modelo en Hugging Face: https://huggingface.co/khtsly/Luau-Coder-1.0-0.5B-Base
 - Corpus de documentacion de Roblox: https://huggingface.co/datasets/khtsly/roblox_docs_corpus_text
 - Corpus de codigo Luau de alta calidad: https://huggingface.co/datasets/khtsly/luau-stack-hq
 - Corpus del foro de desarrolladores de Roblox: https://huggingface.co/datasets/khtsly/devforum-roblox-text

@@ -118,7 +118,7 @@ Squiggle-small supera a los fine-tunes comparables de Gemma 3 270M en precisión
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kealjones/squiggle-small
+- Modelo en Hugging Face: https://huggingface.co/kealjones/squiggle-small
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Licencia lfm1.0: https://huggingface.co/LiquidAI/LFM2.5-350M/blob/main/LICENSE
 - Harness de Squiggle (referenciado en la model card): docs/harness.md del proyecto Squiggle (enlace externo no disponible)

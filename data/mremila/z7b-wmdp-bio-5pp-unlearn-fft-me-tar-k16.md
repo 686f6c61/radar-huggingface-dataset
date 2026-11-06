@@ -72,8 +72,8 @@ No se han publicado en la informacion disponible resultados comparativos frente 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (z7b-wmdp-bio-5pp-unlearn-fft-me-tar-k16) | 7,24B | 32.768 (heredado) | Unlearning MaxEnt + TAR sobre WMDP-Bio | MIT | HuggingFace |
-| HuggingFaceH4/zephyr-7b-beta | ~7,24B | 32.768 | Modelo base generalista con DPO | MIT | HuggingFace |
+| Este modelo (z7b-wmdp-bio-5pp-unlearn-fft-me-tar-k16) | 7,24B | 32.768 (heredado) | Unlearning MaxEnt + TAR sobre WMDP-Bio | MIT | Hugging Face |
+| HuggingFaceH4/zephyr-7b-beta | ~7,24B | 32.768 | Modelo base generalista con DPO | MIT | Hugging Face |
 | Otras variantes de unlearning WMDP sobre Zephyr | no disponible | no disponible | Distintos metodos/coeficientes | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de resultados de benchmarks del modelo base ni de alternativas comparables para establecer una comparacion cuantitativa de rendimiento.
@@ -92,7 +92,7 @@ No se dispone en la informacion proporcionada de resultados de benchmarks del mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mremila/z7b-wmdp-bio-5pp-unlearn-fft-me-tar-k16
+- Modelo en Hugging Face: https://huggingface.co/mremila/z7b-wmdp-bio-5pp-unlearn-fft-me-tar-k16
 - Modelo base Zephyr-7B-beta: https://huggingface.co/HuggingFaceH4/zephyr-7b-beta
 - Dataset de olvido WMDP-Bio: https://huggingface.co/datasets/cais/wmdp-bio-forget-corpus
 - Dataset de retencion Wikitext: https://huggingface.co/datasets/Salesforce/wikitext

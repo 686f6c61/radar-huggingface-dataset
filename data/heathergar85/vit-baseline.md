@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`heathergar85/vit-baseline` es un prototipo de investigación de Vision Transformer (ViT) orientado a aprendizaje contrastivo, publicado en HuggingFace por el usuario heathergar85 bajo licencia MIT. No se trata de un modelo entrenado ni evaluado: la model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (*smoke tests*) y no un modelo con pesos entrenados. El repositorio contiene además el código de ejecución (`run.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`).
+`heathergar85/vit-baseline` es un prototipo de investigación de Vision Transformer (ViT) orientado a aprendizaje contrastivo, publicado en Hugging Face por el usuario heathergar85 bajo licencia MIT. No se trata de un modelo entrenado ni evaluado: la model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (*smoke tests*) y no un modelo con pesos entrenados. El repositorio contiene además el código de ejecución (`run.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`).
 
 El interés del artefacto es, por tanto, metodológico y reproducible: ofrece una base mínima de ViT con fusión por atención cruzada, normalización GroupNorm y activación GELU-Tanh, junto con una receta de entrenamiento (RMSprop con schedule exponencial) documentada como punto de partida. No se declara ningún resultado de benchmark ni métrica de rendimiento.
 
@@ -79,5 +79,5 @@ La comparación es orientativa por categoría (ViT de escala base para tareas co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/heathergar85/vit-baseline
+- Hugging Face: https://huggingface.co/heathergar85/vit-baseline
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

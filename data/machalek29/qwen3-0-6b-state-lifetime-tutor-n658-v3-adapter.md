@@ -77,7 +77,7 @@ Los adaptadores del mismo autor (n500-v2, n250-v2) parecen variantes del mismo t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/machalek29/qwen3-0.6b-state-lifetime-tutor-n658-v3-adapter
+- Hugging Face: https://huggingface.co/machalek29/qwen3-0.6b-state-lifetime-tutor-n658-v3-adapter
 - Variante n500-v2: https://huggingface.co/machalek29/qwen3-0.6b-state-lifetime-tutor-n500-v2
 - Variante n250-v2: https://huggingface.co/machalek29/qwen3-0.6b-state-lifetime-tutor-n250-v2
 - Repositorio Qwen3: https://github.com/QwenLM/Qwen3

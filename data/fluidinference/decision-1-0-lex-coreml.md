@@ -81,8 +81,8 @@ No se dispone de información sobre alternativas comparables en la documentació
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FluidInference/decision-1.0-lex-coreml | 571.909.635 nativos únicos | 128 tokens por grafo (presupuesto fuente de 1024) | Core ML FP16 | apache-2.0-plus-inherited-tokenizer-terms | HuggingFace, 2,0 GB, 0 descargas |
-| llm-semantic-router/Decision-1.0-Lex-0.6B (origen) | 571.909.635 nativos únicos | 1024 tokens (presupuesto público) | Artefactos nativos del repositorio fuente | No especificada en la información disponible | HuggingFace, revisión `ee8e74d9...` |
+| FluidInference/decision-1.0-lex-coreml | 571.909.635 nativos únicos | 128 tokens por grafo (presupuesto fuente de 1024) | Core ML FP16 | apache-2.0-plus-inherited-tokenizer-terms | Hugging Face, 2,0 GB, 0 descargas |
+| llm-semantic-router/Decision-1.0-Lex-0.6B (origen) | 571.909.635 nativos únicos | 1024 tokens (presupuesto público) | Artefactos nativos del repositorio fuente | No especificada en la información disponible | Hugging Face, revisión `ee8e74d9...` |
 
 Cualquier comparación con modelos de decisión o enrutado de otros proveedores no puede realizarse con los datos disponibles.
 
@@ -101,7 +101,7 @@ Cualquier comparación con modelos de decisión o enrutado de otros proveedores 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FluidInference/decision-1.0-lex-coreml
+- Repositorio Hugging Face: https://huggingface.co/FluidInference/decision-1.0-lex-coreml
 - Términos de distribución: https://huggingface.co/FluidInference/decision-1.0-lex-coreml/blob/main/DISTRIBUTION_TERMS.md
 - Modelo fuente: https://huggingface.co/llm-semantic-router/Decision-1.0-Lex-0.6B
 - Código de conversión e informes: carpetas `conversion/` y `reports/` del repositorio

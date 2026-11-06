@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-w13-k-native-w60-s130` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). El nombre del repositorio sugiere un experimento de ajuste fino o variante de entrenamiento con hiperparámetros codificados en el identificador (r18, a2, w13, w60, s130), aunque no se dispone de documentación oficial que explique su significado. El tag `sn38-nanochrono` apunta a una familia o framework interno no identificable públicamente.
+`alfred8995/r18-a2-w13-k-native-w60-s130` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). El nombre del repositorio sugiere un experimento de ajuste fino o variante de entrenamiento con hiperparámetros codificados en el identificador (r18, a2, w13, w60, s130), aunque no se dispone de documentación oficial que explique su significado. El tag `sn38-nanochrono` apunta a una familia o framework interno no identificable públicamente.
 
 El modelo cuenta con 2.018.511.234 parámetros totales según los pesos en safetensors, lo que lo sitúa en la franja de los modelos de aproximadamente 2.000 millones de parámetros. El repositorio ocupa 14,4 GB, un tamaño coherente con pesos en precisión de 16 bits o con múltiples ficheros de distinto formato. No se han publicado datos sobre arquitectura, longitud de contexto, idiomas soportados ni proceso de entrenamiento.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada desde el punto de vista práctico: se tr
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo. El tag `sn38-nanochrono` no corresponde a ninguna familia de arquitecturas conocida públicamente y no aparece documentado en la ficha de HuggingFace. El identificador del repositorio (`r18-a2-w13-k-native-w60-s130`) sugiere una nomenclatura de experimento con parámetros de entrenamiento codificados, pero no es posible inferir de forma fiable el tipo de transformer, la presencia de capas MoE, mecanismos de atención lineal ni ningún otro detalle estructural.
+No se ha publicado información sobre la arquitectura del modelo. El tag `sn38-nanochrono` no corresponde a ninguna familia de arquitecturas conocida públicamente y no aparece documentado en la ficha de Hugging Face. El identificador del repositorio (`r18-a2-w13-k-native-w60-s130`) sugiere una nomenclatura de experimento con parámetros de entrenamiento codificados, pero no es posible inferir de forma fiable el tipo de transformer, la presencia de capas MoE, mecanismos de atención lineal ni ningún otro detalle estructural.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT. El tamaño del repositorio (14,4 GB) es compatible con pesos en bf16/fp16 de un modelo de 2.000 millones de parámetros, pero podría incluir también checkpoints intermedios u otros artefactos. Cualquier afirmación sobre innovaciones técnicas (decodificación especulativa, atención lineal, entrenamiento multi-etapa) sería especulativa y no se incluye.
 
@@ -32,7 +32,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens procesa
 - No se dispone de información publicada sobre las capacidades del modelo.
 - No consta soporte documentado de tool calling ni function calling.
 - No consta soporte documentado de agentes ni razonamiento multi-paso.
-- No se han declarado idiomas soportados en la ficha de HuggingFace.
+- No se han declarado idiomas soportados en la ficha de Hugging Face.
 - No se ha documentado ningún modo especial (thinking mode, visión, audio, etc.).
 - El pipeline no está definido en la ficha, por lo que no se puede confirmar que sea un modelo de generación de texto estándar.
 
@@ -78,7 +78,7 @@ La comparación se limita al rango de parámetros, ya que no existe información
 - Sesgos conocidos: no disponibles, pero la falta de documentación impide descartar sesgos de género, raza, idioma o dominio.
 - Riesgo de alucinación: no evaluado; sin benchmarks ni ejemplos, no se puede estimar la fiabilidad factual del modelo.
 - Limitaciones de contexto e idioma: se desconocen la ventana de contexto y los idiomas soportados.
-- Licencia Apache 2.0: permite uso comercial, pero al ser un modelo gated es necesario aceptar las condiciones en HuggingFace antes de descargarlo.
+- Licencia Apache 2.0: permite uso comercial, pero al ser un modelo gated es necesario aceptar las condiciones en Hugging Face antes de descargarlo.
 - Acceso restringido: el repositorio requiere aprobación del autor, lo que puede bloquear pipelines automatizados y despliegues en producción.
 - Procedencia incierta: el tag `sn38-nanochrono` no corresponde a ningún framework conocido y el autor no ha publicado documentación adicional, por lo que no se puede verificar la calidad ni la integridad del entrenamiento.
 - No apto para producción: sin benchmarks, sin model card y con 2 descargas, no existen garantías de comportamiento ni de soporte.
@@ -86,5 +86,5 @@ La comparación se limita al rango de parámetros, ya que no existe información
 
 ## Enlaces
 
-- [HuggingFace: alfred8995/r18-a2-w13-k-native-w60-s130](https://huggingface.co/alfred8995/r18-a2-w13-k-native-w60-s130)
+- [Hugging Face: alfred8995/r18-a2-w13-k-native-w60-s130](https://huggingface.co/alfred8995/r18-a2-w13-k-native-w60-s130)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

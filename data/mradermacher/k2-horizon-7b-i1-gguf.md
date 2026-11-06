@@ -101,7 +101,7 @@ La ventaja diferencial de K2-Horizon-7B en esta tabla es la ventana de contexto,
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta recuantizacion): https://huggingface.co/mradermacher/K2-Horizon-7B-i1-GGUF
+- Repositorio Hugging Face (esta recuantizacion): https://huggingface.co/mradermacher/K2-Horizon-7B-i1-GGUF
 - Cuantizaciones estaticas del mismo autor: https://huggingface.co/mradermacher/K2-Horizon-7B-GGUF
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-7B
 - Pagina de resumen y descargas de mradermacher: https://hf.tst.eu/model#K2-Horizon-7B-i1-GGUF

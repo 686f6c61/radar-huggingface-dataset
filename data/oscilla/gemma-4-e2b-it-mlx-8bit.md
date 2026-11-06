@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo. La comparativa se limita a la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Oscilla/gemma-4-E2B-it-mlx-8Bit
+- Repositorio Hugging Face: https://huggingface.co/Oscilla/gemma-4-E2B-it-mlx-8Bit
 - Modelo base original: https://huggingface.co/google/gemma-4-E2B-it
 - Documentación de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Página de ThinkLLM con descripción del modelo: https://thinkllm.dev/models/gemma-4-e2b-it-mlx-8bit

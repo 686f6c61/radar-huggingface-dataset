@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`warpstead/enhance-models` es un repositorio de pesos en formato ONNX publicado por el usuario warpstead en HuggingFace. El paquete ocupa 0,3 GB y se distribuye bajo una licencia mixta que combina Apache 2.0 y BSD 3-Clause, declarada en el campo `license: other` con el identificador `mixed-apache-2.0-bsd-3-clause`. En el momento de la consulta el repositorio registra 0 descargas y 0 likes, y no tiene pipeline asignado.
+`warpstead/enhance-models` es un repositorio de pesos en formato ONNX publicado por el usuario warpstead en Hugging Face. El paquete ocupa 0,3 GB y se distribuye bajo una licencia mixta que combina Apache 2.0 y BSD 3-Clause, declarada en el campo `license: other` con el identificador `mixed-apache-2.0-bsd-3-clause`. En el momento de la consulta el repositorio registra 0 descargas y 0 likes, y no tiene pipeline asignado.
 
 La model card publicada es prácticamente vacía: solo contiene el bloque de metadatos de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El nombre del repositorio sugiere modelos de "enhancement" (mejora o realce, posiblemente de imagen o audio), pero esta interpretación no está confirmada por ninguna documentación del autor y debe tratarse como hipótesis, no como dato.
 
@@ -81,6 +81,6 @@ No disponible. La información proporcionada no permite identificar la tarea ni 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/warpstead/enhance-models
+- Repositorio en Hugging Face: https://huggingface.co/warpstead/enhance-models
 - Fichero de licencia referenciado en la model card: `LICENSE` dentro del repositorio (no se ha podido verificar su contenido)
 - Resultados de búsqueda web: no contienen información sobre este modelo; las entradas recuperadas corresponden a ChatGPT y GPT-4 de OpenAI y no guardan relación con `warpstead/enhance-models`.

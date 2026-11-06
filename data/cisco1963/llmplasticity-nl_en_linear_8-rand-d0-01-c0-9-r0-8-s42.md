@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Cisco1963/llmplasticity-nl_en_linear_8-rand-d0.01-c0.9-r0.8-s42` es un checkpoint publicado en HuggingFace por el usuario Cisco1963, aparentemente dentro de una línea de experimentos sobre plasticidad en modelos de lenguaje (de ahí el prefijo "llmplasticity" en el identificador). La etiqueta `gpt2` indica que se basa en la arquitectura GPT-2 (transformer decoder-only), y el conteo real de parametros extraido de los pesos safetensors es de 122.706.432, un orden de magnitud equivalente al GPT-2 small original de OpenAI.
+El modelo `Cisco1963/llmplasticity-nl_en_linear_8-rand-d0.01-c0.9-r0.8-s42` es un checkpoint publicado en Hugging Face por el usuario Cisco1963, aparentemente dentro de una línea de experimentos sobre plasticidad en modelos de lenguaje (de ahí el prefijo "llmplasticity" en el identificador). La etiqueta `gpt2` indica que se basa en la arquitectura GPT-2 (transformer decoder-only), y el conteo real de parametros extraido de los pesos safetensors es de 122.706.432, un orden de magnitud equivalente al GPT-2 small original de OpenAI.
 
 Se trata de un modelo muy pequeno (del orden de 122 millones de parametros) con 7 descargas y 0 likes en el momento de la consulta, lo que sugiere que es un artefacto de investigacion mas que un modelo orientado a produccion. El repositorio ocupa 8,8 GB, un tamano desproporcionado para los parametros indicados, lo que apunta a que contiene multiples checkpoints, estados de optimizador u otros artefactos de entrenamiento ademas de los pesos finales.
 
@@ -53,10 +53,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `Cisco1963/llmplasticity-nl_en_linear_8-...` | 122,7 M | no disponible | no disponible | HuggingFace (7 descargas) |
-| GPT-2 small (OpenAI) | ~124 M | 1024 tokens | MIT | HuggingFace / OpenAI |
-| DistilGPT-2 | ~82 M | 1024 tokens | Apache 2.0 | HuggingFace |
-| Pythia-160M (EleutherAI) | ~160 M | 2048 tokens | Apache 2.0 | HuggingFace |
+| `Cisco1963/llmplasticity-nl_en_linear_8-...` | 122,7 M | no disponible | no disponible | Hugging Face (7 descargas) |
+| GPT-2 small (OpenAI) | ~124 M | 1024 tokens | MIT | Hugging Face / OpenAI |
+| DistilGPT-2 | ~82 M | 1024 tokens | Apache 2.0 | Hugging Face |
+| Pythia-160M (EleutherAI) | ~160 M | 2048 tokens | Apache 2.0 | Hugging Face |
 
 La comparativa se incluye a efectos de encuadrar el tamano del modelo. No hay datos de rendimiento publicados para el modelo objeto de esta ficha, por lo que no es posible compararlo en terminos de calidad (perplejidad, MMLU, etc.) con las alternativas listadas.
 
@@ -65,7 +65,7 @@ La comparativa se incluye a efectos de encuadrar el tamano del modelo. No hay da
 - VRAM estimada para inferencia: aproximadamente 490 MB en fp32, 245 MB en fp16/bf16, 123 MB en cuantizacion int8 y 61 MB en int4 (calculado sobre 122,7 M de parametros).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; una RTX 3060, RTX 4090, T4 o incluso una iGPU moderna pueden ejecutarlo sin problemas.
 - Cabe en GPU de consumo: si, con margen amplio, en practicamente cualquier GPU discreta de los ultimos diez anos. Tambien se puede ejecutar en CPU.
-- Opciones de despliegue: transformers (HuggingFace), llama.cpp/GGUF (previa conversion), Ollama (previa conversion), vLLM y TGI (compatibles con arquitectura GPT-2 estandar, sujeto a verificacion del checkpoint).
+- Opciones de despliegue: transformers (Hugging Face), llama.cpp/GGUF (previa conversion), Ollama (previa conversion), vLLM y TGI (compatibles con arquitectura GPT-2 estandar, sujeto a verificacion del checkpoint).
 - Latencia y throughput estimados: no disponibles. Dado el tamano, en una GPU moderna se espera un throughput alto para secuencias cortas, pero no se han publicado mediciones.
 
 ## Limitaciones y advertencias
@@ -81,5 +81,5 @@ La comparativa se incluye a efectos de encuadrar el tamano del modelo. No hay da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-nl_en_linear_8-rand-d0.01-c0.9-r0.8-s42
+- Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-nl_en_linear_8-rand-d0.01-c0.9-r0.8-s42
 - Paper, blog, repositorio o demo asociados: no disponibles en la informacion proporcionada.

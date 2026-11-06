@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| richardyoung/Qwen3.5-4B-SOM-heretic-MLX-4bit | 4.205.751.296 | no disponible | 4-bit MLX | Apache 2.0 | HuggingFace (0 descargas) |
-| richardyoung/Qwen3.5-4B-SOM-heretic | no disponible | no disponible | bf16 | Apache 2.0 | HuggingFace (modelo base) |
-| Qwen/Qwen3.5-4B | no disponible | no disponible | original | no disponible en la información | HuggingFace (modelo de origen) |
+| richardyoung/Qwen3.5-4B-SOM-heretic-MLX-4bit | 4.205.751.296 | no disponible | 4-bit MLX | Apache 2.0 | Hugging Face (0 descargas) |
+| richardyoung/Qwen3.5-4B-SOM-heretic | no disponible | no disponible | bf16 | Apache 2.0 | Hugging Face (modelo base) |
+| Qwen/Qwen3.5-4B | no disponible | no disponible | original | no disponible en la información | Hugging Face (modelo de origen) |
 
 No se dispone de datos de rendimiento ni de benchmarks para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento ni de benchmarks para establecer una compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/richardyoung/Qwen3.5-4B-SOM-heretic-MLX-4bit
+- Hugging Face: https://huggingface.co/richardyoung/Qwen3.5-4B-SOM-heretic-MLX-4bit
 - Modelo base: https://huggingface.co/richardyoung/Qwen3.5-4B-SOM-heretic
 - Modelo de origen: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio MLX: https://github.com/ml-explore/mlx

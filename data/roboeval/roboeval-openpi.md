@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| roboeval-openpi | no disponible | no disponible | no disponible | no disponible | HuggingFace (RoboEval/roboeval-openpi) |
+| roboeval-openpi | no disponible | no disponible | no disponible | no disponible | Hugging Face (RoboEval/roboeval-openpi) |
 | Alternativas de la familia openpi (pi0, pi0.5) | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 | Otras políticas visomotoras (p. ej. RT-2, Octo) | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
@@ -80,5 +80,5 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RoboEval/roboeval-openpi
+- Hugging Face: https://huggingface.co/RoboEval/roboeval-openpi
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

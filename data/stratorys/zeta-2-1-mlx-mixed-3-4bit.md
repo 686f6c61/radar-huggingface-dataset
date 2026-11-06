@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Formato / cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stratorys/zeta-2.1-mlx-mixed-3-4bit | 8,25 B | Safetensors MLX, 3/4 bits mixtos | No disponible | Apache 2.0 | HuggingFace, 4,3 GB |
-| zed-industries/zeta-2.1 | No disponible (presumiblemente 8B, mismo linaje) | No disponible en la informacion proporcionada | No disponible | Apache 2.0 | HuggingFace |
-| ByteDance-Seed/Seed-Coder-8B-Base | 8 B (segun la denominacion del modelo) | No disponible | No disponible | No disponible | HuggingFace |
+| stratorys/zeta-2.1-mlx-mixed-3-4bit | 8,25 B | Safetensors MLX, 3/4 bits mixtos | No disponible | Apache 2.0 | Hugging Face, 4,3 GB |
+| zed-industries/zeta-2.1 | No disponible (presumiblemente 8B, mismo linaje) | No disponible en la informacion proporcionada | No disponible | Apache 2.0 | Hugging Face |
+| ByteDance-Seed/Seed-Coder-8B-Base | 8 B (segun la denominacion del modelo) | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento de ninguno de los tres modelos en la informacion proporcionada, por lo que no es posible compararlos por benchmarks. La diferencia principal entre este repositorio y el modelo original de Zed es el formato y la cuantizacion: esta version esta optimizada para Apple Silicon y ocupa 4,3 GB, a costa de una posible perdida de calidad.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento de ninguno de los tres modelos en la infor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/stratorys/zeta-2.1-mlx-mixed-3-4bit
+- Repositorio Hugging Face: https://huggingface.co/stratorys/zeta-2.1-mlx-mixed-3-4bit
 - Modelo base original: https://huggingface.co/zed-industries/zeta-2.1
 - Modelo base upstream: https://huggingface.co/ByteDance-Seed/Seed-Coder-8B-Base
 - MLX-LM (libreria de inferencia): no se proporciona enlace en la informacion disponible

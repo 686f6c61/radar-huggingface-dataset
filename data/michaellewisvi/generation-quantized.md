@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Michaellewisvi/generation-quantized` es un prototipo de investigación alojado en HuggingFace que se presenta como una implementación propia de DeiT (Data-efficient Image Transformer) orientada a tareas de generación. El autor lo describe explícitamente como un artefacto de tipo *research-oriented*, con un montaje "tiny" cuyo único objetivo es documentar valores por defecto, formatos de fichero y un punto de entrada ejecutable. No se trata de un modelo entrenado ni evaluado: el propio README indica que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un checkpoint con benchmarks.
+`Michaellewisvi/generation-quantized` es un prototipo de investigación alojado en Hugging Face que se presenta como una implementación propia de DeiT (Data-efficient Image Transformer) orientada a tareas de generación. El autor lo describe explícitamente como un artefacto de tipo *research-oriented*, con un montaje "tiny" cuyo único objetivo es documentar valores por defecto, formatos de fichero y un punto de entrada ejecutable. No se trata de un modelo entrenado ni evaluado: el propio README indica que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un checkpoint con benchmarks.
 
 El tamaño real declarado en los metadatos de safetensors es de 16.576 parámetros, una cifra extremadamente reducida que confirma la naturaleza de andamiaje del repositorio. La arquitectura combina atención lineal, fusión con compuerta (*gated fusion*), activación ReLU y normalización GroupNorm, todo bajo el paraguas de la familia DeiT. El repositorio acumula 0 descargas y 0 *likes*, con un tamaño declarado de 0,0 GB y sin pipeline de inferencia asignado.
 
@@ -85,7 +85,7 @@ La información proporcionada no incluye comparativas ni modelos de referencia. 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Michaellewisvi/generation-quantized | 16.576 | no disponible | sin benchmarks publicados | MIT | HuggingFace (0 descargas) |
+| Michaellewisvi/generation-quantized | 16.576 | no disponible | sin benchmarks publicados | MIT | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 Como referencia de categoría, fuera de la información aportada, el DeiT-tiny original de Meta publica del orden de 5,7 millones de parámetros, es decir, más de dos órdenes de magnitud por encima de este prototipo; se trata de un dato externo no verificado en esta ficha y no debe tomarse como comparación directa.
@@ -106,5 +106,5 @@ Como referencia de categoría, fuera de la información aportada, el DeiT-tiny o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Michaellewisvi/generation-quantized
+- Hugging Face: https://huggingface.co/Michaellewisvi/generation-quantized
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web. Los resultados devueltos por el buscador correspondían a foros de soporte de Facebook y no guardaban relación alguna con el modelo.

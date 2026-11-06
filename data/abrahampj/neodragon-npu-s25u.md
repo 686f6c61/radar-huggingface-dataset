@@ -20,12 +20,12 @@ Su relevancia es doble: por un lado demuestra que un pipeline generativo de vide
 | Idiomas soportados | no disponible (la model card no declara idiomas) |
 | Licencia | BSD-3-Clause-Clear, heredada de `Qualcomm-AI-Research/Neodragon`, con su clausula de patentes |
 | Formato de pesos | binarios de contexto QNN/QAIRT (`.bin`) compilados para HTP v79; no incluye safetensors ni GGUF |
-| Pipeline (HuggingFace) | text-to-video |
+| Pipeline (Hugging Face) | text-to-video |
 | Hardware objetivo | Hexagon HTP v79, `soc_model 69`; Samsung Galaxy S25 Ultra (SM8750) |
 | Numero de grafos | 13 |
 | Tamano del repositorio | 13,2 GB (de los cuales 8,54 GB corresponden a los 13 binarios listados) |
 | Cadena de conversion | QAIRT SDK 2.49.0.260730 (`qnn-onnx-converter` -> `qnn-context-binary-generator`) |
-| Fecha de creacion / actualizacion | 2026-08-22 / 2026-09-13 segun metadatos de HuggingFace |
+| Fecha de creacion / actualizacion | 2026-08-22 / 2026-09-13 segun metadatos de Hugging Face |
 | Descargas / likes | 0 / 2 |
 
 Desglose de los binarios publicados:
@@ -125,7 +125,7 @@ El unico punto de comparacion documentado es el modelo original de Qualcomm del 
 - **Especificidad de dispositivo**: los binarios solo cargan en HTP v79 con `soc_model 69`. No hay version para otros Snapdragon ni para GPU, asi que el artefacto no es portable.
 - **Artefacto derivado, no entrenable**: contiene unicamente grafos cuantizados; no incluye pesos en precision completa, datos de entrenamiento ni scripts de ajuste. No se puede afinar a partir de este repositorio.
 - **Sin formatos estandar**: al no haber safetensors ni GGUF, queda fuera de todo el ecosistema de inferencia habitual (llama.cpp, Ollama, vLLM, TGI).
-- **Acceso restringido segun la model card**: el propio autor indica que el repositorio es privado y que la descarga requiere una cabecera `Authorization: Bearer <hf_token>` con un token de solo lectura de grano fino. La pagina de HuggingFace figura como accesible con 0 descargas, lo que conviene verificar antes de integrar cualquier automatizacion.
+- **Acceso restringido segun la model card**: el propio autor indica que el repositorio es privado y que la descarga requiere una cabecera `Authorization: Bearer <hf_token>` con un token de solo lectura de grano fino. La pagina de Hugging Face figura como accesible con 0 descargas, lo que conviene verificar antes de integrar cualquier automatizacion.
 - **Integridad de las descargas**: el autor advierte de que las transferencias grandes a este dispositivo se han truncado en silencio mas de una vez reportando exito. La app verifica cada archivo por longitud exacta en bytes; cualquier pipeline propio deberia replicar esa comprobacion.
 - **SNR por debajo del objetivo en dos modulos**: el decodificador VAE mide 34,27 dB frente al objetivo de 35 dB, y QuickSRNet no se ha medido todavia, con expectativa de quedar por debajo de 48 dB al usar CLE en lugar de AdaRound. Ambos casos pueden traducirse en artefactos visuales.
 - **Riesgo de artefactos generativos**: no hay datos publicados sobre sesgos, alucinacion visual, coherencia temporal mas alla de 49 fotogramas ni comportamiento con prompts ambiguos. La model card no aborda ninguna evaluacion cualitativa.
@@ -136,7 +136,7 @@ El unico punto de comparacion documentado es el modelo original de Qualcomm del 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbrahamPJ/neodragon-npu-s25u
+- Modelo en Hugging Face: https://huggingface.co/AbrahamPJ/neodragon-npu-s25u
 - Modelo original de Qualcomm: https://huggingface.co/Qualcomm-AI-Research/Neodragon
 - Paper Neodragon (arXiv:2511.06055): https://arxiv.org/abs/2511.06055
 - Repositorio del port y la conversion: https://github.com/AbrahamPaulJ/T2V_NPU

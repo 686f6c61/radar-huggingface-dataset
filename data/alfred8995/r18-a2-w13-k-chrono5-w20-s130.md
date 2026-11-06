@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-k-chrono5-w20-s130` es un checkpoint de pesos en formato safetensors publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Por su nomenclatura y por la etiqueta `sn38-nanochrono` que aparece en los metadatos, se trata de un experimento de la familia "nanochrono", presumiblemente vinculada a arquitecturas con componentes temporales o recurrentes (el sufijo "chrono" sugiere atención temporal o mecanismos de estado recurrente), aunque no se dispone de documentación que lo confirme.
+El modelo `alfred8995/r18-a2-w13-k-chrono5-w20-s130` es un checkpoint de pesos en formato safetensors publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Por su nomenclatura y por la etiqueta `sn38-nanochrono` que aparece en los metadatos, se trata de un experimento de la familia "nanochrono", presumiblemente vinculada a arquitecturas con componentes temporales o recurrentes (el sufijo "chrono" sugiere atención temporal o mecanismos de estado recurrente), aunque no se dispone de documentación que lo confirme.
 
-El checkpoint contiene 2.018.511.234 parámetros (aproximadamente 2.000 millones) y ocupa 12,6 GB en el repositorio, lo que es coherente con pesos en precisión de 16 bits o mixta. El repositorio está sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. No se ha publicado ninguna model card descriptiva, ni información sobre el pipeline, los idiomas soportados o el proceso de entrenamiento.
+El checkpoint contiene 2.018.511.234 parámetros (aproximadamente 2.000 millones) y ocupa 12,6 GB en el repositorio, lo que es coherente con pesos en precisión de 16 bits o mixta. El repositorio está sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. No se ha publicado ninguna model card descriptiva, ni información sobre el pipeline, los idiomas soportados o el proceso de entrenamiento.
 
 La relevancia de esta ficha es, por tanto, limitada: se trata de un artefacto de investigación sin documentación pública, con 4 descargas y 0 likes en el momento de la consulta, y sin benchmarks ni especificaciones declaradas por el autor. Todo lo que sigue se basa exclusivamente en los metadatos disponibles y en inferencias prudentes a partir del nombre y el tamaño; cualquier dato no confirmado se marca explícitamente como "no disponible".
 
@@ -78,12 +78,12 @@ La comparación es únicamente estructural: el modelo de alfred8995 no publica r
 - Riesgo elevado de alucinación y de comportamientos no alineados: al desconocerse el proceso de entrenamiento (¿preentrenamiento puro?, ¿SFT?, ¿RLHF?), no se puede garantizar un comportamiento seguro.
 - Idiomas no declarados: no se puede asumir soporte multilingüe ni siquiera un buen rendimiento en inglés.
 - Contexto desconocido: no se puede planificar su uso en tareas de contexto largo sin una evaluación previa.
-- Acceso restringido: el repositorio es gated, por lo que la descarga requiere aceptar condiciones en HuggingFace y puede no ser automatizable en pipelines de CI/CD sin un token con permisos.
+- Acceso restringido: el repositorio es gated, por lo que la descarga requiere aceptar condiciones en Hugging Face y puede no ser automatizable en pipelines de CI/CD sin un token con permisos.
 - Licencia Apache 2.0: permite uso comercial y modificaciones, pero no exime al usuario de cumplir con las obligaciones de atribución y de asumir la responsabilidad sobre el comportamiento del modelo.
 - Repositorio con muy baja tracción (4 descargas, 0 likes): no hay evidencia de validación por parte de la comunidad.
 - Sin cuantizaciones oficiales ni formatos alternativos: la integración en herramientas como Ollama o llama.cpp requeriría trabajo adicional de conversión.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w20-s130
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w20-s130
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

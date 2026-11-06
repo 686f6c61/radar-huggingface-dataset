@@ -66,10 +66,10 @@ No se dispone de resultados de rendimiento del modelo, por lo que la comparació
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ÇABA 50M — Kumru | 49,96 M | No disponible | Recurrente con bancos asociativos, sin atención | No disponible | HuggingFace, requiere `trust_remote_code=True` |
-| Pythia-70M | 70 M | 2048 | Transformer con atención | Apache 2.0 | HuggingFace, `transformers` estándar |
-| GPT-2 small | 124 M | 1024 | Transformer con atención | MIT | HuggingFace, `transformers` estándar |
-| TinyStories-33M | 33 M | 512 | Transformer con atención | No disponible en la fuente consultada | HuggingFace |
+| ÇABA 50M — Kumru | 49,96 M | No disponible | Recurrente con bancos asociativos, sin atención | No disponible | Hugging Face, requiere `trust_remote_code=True` |
+| Pythia-70M | 70 M | 2048 | Transformer con atención | Apache 2.0 | Hugging Face, `transformers` estándar |
+| GPT-2 small | 124 M | 1024 | Transformer con atención | MIT | Hugging Face, `transformers` estándar |
+| TinyStories-33M | 33 M | 512 | Transformer con atención | No disponible en la fuente consultada | Hugging Face |
 
 La diferencia principal frente a estas alternativas es que ÇABA 50M no usa autoatención y no está soportado por los *runtimes* de inferencia habituales. No hay datos que permitan comparar calidad de generación entre ellos en la información disponible.
 
@@ -87,7 +87,7 @@ La diferencia principal frente a estas alternativas es que ÇABA 50M no usa auto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Efe2898/caba-kumru-50m
+- Modelo en Hugging Face: https://huggingface.co/Efe2898/caba-kumru-50m
 - Perfil del autor: https://huggingface.co/Efe2898
 - Tokenizador Kumru: https://huggingface.co/vngrs-ai/Kumru-2B-Base
 - Dataset tokenizado: https://huggingface.co/datasets/Efe2898/tokenized

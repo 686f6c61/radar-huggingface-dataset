@@ -2,7 +2,7 @@
 
 ## Resumen
 
-e2h-polaris-gemma-3-4b-it-easy_rb es un checkpoint de ajuste fino supervisado mediante GRPO (Group Relative Policy Optimization) sobre el modelo google/gemma-3-4b-it, publicado por el usuario davidafrica en HuggingFace. Forma parte de una serie de experimentos denominados E2H (easy-to-hard) Polaris, centrados en el entrenamiento con refuerzo para tareas de razonamiento matemático. El modelo conserva la arquitectura transformer de Gemma 3 en su variante solo texto (`Gemma3ForCausalLM`), con la torre de visión eliminada y los pesos del modelo de lenguaje sin modificar respecto al original.
+e2h-polaris-gemma-3-4b-it-easy_rb es un checkpoint de ajuste fino supervisado mediante GRPO (Group Relative Policy Optimization) sobre el modelo google/gemma-3-4b-it, publicado por el usuario davidafrica en Hugging Face. Forma parte de una serie de experimentos denominados E2H (easy-to-hard) Polaris, centrados en el entrenamiento con refuerzo para tareas de razonamiento matemático. El modelo conserva la arquitectura transformer de Gemma 3 en su variante solo texto (`Gemma3ForCausalLM`), con la torre de visión eliminada y los pesos del modelo de lenguaje sin modificar respecto al original.
 
 El checkpoint corresponde al paso 1200 de 1200 de un entrenamiento realizado con una bifurcación de verl 0.4.1, utilizando el conjunto Polaris-Dataset-53K dividido según las tasas de acierto del propio gemma-3-4b-it en 16 muestras por problema. La recompensa es de tipo basado en reglas: se premia la respuesta correcta frente a la referencia. El resultado es un modelo especializado en matemáticas que parte de una base instructiva de 4.55 mil millones de parámetros.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| e2h-polaris-gemma-3-4b-it-easy_rb | 4.55B | no disponible | Matemáticas (GRPO) | Gemma Terms of Use | HuggingFace, 33 descargas |
-| google/gemma-3-4b-it | 4.55B | no disponible en la informacion | Instrucciones generales + visión | Gemma Terms of Use | HuggingFace, ampliamente usado |
-| Qwen2.5-Math-7B | 7B | no disponible en la informacion | Matemáticas (SFT + RL) | Apache 2.0 | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | no disponible en la informacion | Razonamiento matemático | MIT | HuggingFace |
+| e2h-polaris-gemma-3-4b-it-easy_rb | 4.55B | no disponible | Matemáticas (GRPO) | Gemma Terms of Use | Hugging Face, 33 descargas |
+| google/gemma-3-4b-it | 4.55B | no disponible en la informacion | Instrucciones generales + visión | Gemma Terms of Use | Hugging Face, ampliamente usado |
+| Qwen2.5-Math-7B | 7B | no disponible en la informacion | Matemáticas (SFT + RL) | Apache 2.0 | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | no disponible en la informacion | Razonamiento matemático | MIT | Hugging Face |
 
 La comparación con alternativas especializadas en matemáticas es cualitativa: no se dispone de resultados de benchmarks de este checkpoint que permitan una comparación numérica. Frente a gemma-3-4b-it, la diferencia principal es la especialización vía GRPO y la eliminación de la visión; frente a Qwen2.5-Math-7B y DeepSeek-R1-Distill, la licencia es más restrictiva (Gemma Terms of Use frente a Apache 2.0 y MIT).
 
@@ -84,7 +84,7 @@ La comparación con alternativas especializadas en matemáticas es cualitativa: 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidafrica/e2h-polaris-gemma-3-4b-it-easy_rb
+- Hugging Face: https://huggingface.co/davidafrica/e2h-polaris-gemma-3-4b-it-easy_rb
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - verl (framework de RL): no se proporciona enlace en la información disponible

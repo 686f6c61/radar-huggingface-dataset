@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`model_687370559_dino_base` es una implementación a escala *base* de la arquitectura DINO orientada a tareas de clasificación, publicada por el usuario kapoo-r0215 en HuggingFace. Se trata de un artefacto experimental que combina atención dilatada (*dilated attention*), fusión de baja dimensión (*low-rank fusion*) y normalización por instancias (*InstanceNorm*), con inicialización ortogonal y activación ReLU. El repositorio contiene un único fichero Python (`model_687370559_dino_base.py`) que constituye el artefacto principal del modelo.
+`model_687370559_dino_base` es una implementación a escala *base* de la arquitectura DINO orientada a tareas de clasificación, publicada por el usuario kapoo-r0215 en Hugging Face. Se trata de un artefacto experimental que combina atención dilatada (*dilated attention*), fusión de baja dimensión (*low-rank fusion*) y normalización por instancias (*InstanceNorm*), con inicialización ortogonal y activación ReLU. El repositorio contiene un único fichero Python (`model_687370559_dino_base.py`) que constituye el artefacto principal del modelo.
 
 El modelo se entrenó con optimizador SGD y un programador de tasa de aprendizaje con calentamiento lineal (*linear warmup*). No se especifican datos sobre el volumen de parámetros, el conjunto de entrenamiento ni el rendimiento en benchmarks, por lo que su utilidad práctica queda limitada a fines de estudio o experimentación. Su relevancia radica en ser una variante de la familia DINO con modificaciones arquitectónicas concretas (atención dilatada y fusión low-rank), aunque carece de documentación técnica detallada y de métricas publicadas.
 
@@ -57,11 +57,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| model_687370559_dino_base | DINO base con atención dilatada y fusión low-rank | no disponible | no disponible | BSD-3-Clause | HuggingFace |
-| DINOv2-base (Meta AI) | ViT base autosupervisado | 86 M aprox. | 518 px de resolución de entrada | Apache-2.0 | HuggingFace, Clarifai |
-| Grounding DINO base (IDEA-Research) | DINO con grounding para detección | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| model_687370559_dino_base | DINO base con atención dilatada y fusión low-rank | no disponible | no disponible | BSD-3-Clause | Hugging Face |
+| DINOv2-base (Meta AI) | ViT base autosupervisado | 86 M aprox. | 518 px de resolución de entrada | Apache-2.0 | Hugging Face, Clarifai |
+| Grounding DINO base (IDEA-Research) | DINO con grounding para detección | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
-La comparativa es limitada porque el modelo objeto de esta ficha carece de especificaciones cuantitativas publicadas. DINOv2-base es el referente natural de la familia DINO, con pesos disponibles y soporte en la librería Transformers de HuggingFace, mientras que Grounding DINO extiende la arquitectura a detección con grounding por lenguaje natural.
+La comparativa es limitada porque el modelo objeto de esta ficha carece de especificaciones cuantitativas publicadas. DINOv2-base es el referente natural de la familia DINO, con pesos disponibles y soporte en la librería Transformers de Hugging Face, mientras que Grounding DINO extiende la arquitectura a detección con grounding por lenguaje natural.
 
 ## Limitaciones y advertencias
 
@@ -76,8 +76,8 @@ La comparativa es limitada porque el modelo objeto de esta ficha carece de espec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kapoo-r0215/model_687370559_dino_base
+- Repositorio Hugging Face: https://huggingface.co/kapoo-r0215/model_687370559_dino_base
 - Referencia DINOv3 (Meta AI): https://github.com/facebookresearch/dinov3
 - DINOv2-base en Clarifai: https://clarifai.com/meta/image-embedder/models/dinov2-base
-- Grounding DINO base en HuggingFace: https://huggingface.co/IDEA-Research/grounding-dino-base
+- Grounding DINO base en Hugging Face: https://huggingface.co/IDEA-Research/grounding-dino-base
 - Análisis de DINOv2-base en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/dinov2-base-facebook

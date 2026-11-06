@@ -2,7 +2,7 @@
 
 ## Resumen
 
-siennamx-krea2-lora es un adaptador LoRA de bajo rango (rank 32) entrenado sobre el modelo de generacion de imagenes Krea 2, publicado por el usuario chantzlane90 en HuggingFace. Su proposito es fijar la apariencia de un personaje ficticio concreto, Sienna Marino, para que el modelo base reproduzca ese personaje de forma consistente a partir de la palabra clave de activacion `siennamx`.
+siennamx-krea2-lora es un adaptador LoRA de bajo rango (rank 32) entrenado sobre el modelo de generacion de imagenes Krea 2, publicado por el usuario chantzlane90 en Hugging Face. Su proposito es fijar la apariencia de un personaje ficticio concreto, Sienna Marino, para que el modelo base reproduzca ese personaje de forma consistente a partir de la palabra clave de activacion `siennamx`.
 
 El adaptador se entreno con la herramienta fal-ai/krea-2-trainer durante 1000 pasos, y sus claves se remapearon al espacio de nombres `diffusion_model.*` que utiliza ComfyUI, con el objetivo declarado de desplegarlo en la plataforma Sogni. El repositorio ocupa 0,3 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables, y si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chantzlane90/siennamx-krea2-lora
+- Modelo en Hugging Face: https://huggingface.co/chantzlane90/siennamx-krea2-lora
 - Herramienta de entrenamiento citada en la model card: fal-ai/krea-2-trainer (https://huggingface.co/fal-ai/krea-2-trainer)
 - ComfyUI (entorno de despliegue al que se remapean las claves): https://github.com/comfyanonymous/ComfyUI
 - Sogni (plataforma de despliegue mencionada por el autor): https://www.sogni.ai

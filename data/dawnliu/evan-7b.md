@@ -67,7 +67,7 @@ EVAN-7B supera al base en los nueve benchmarks y a DAPO en ocho de nueve (cede s
 - VRAM estimada para inferencia en bfloat16: aproximadamente 16,6 GB solo para pesos, mas overhead de activaciones y cache KV; se recomienda al menos 24 GB de VRAM para comodidad.
 - GPU recomendadas: A100 (40/80 GB), H100, L40S o RTX 4090 (24 GB) para bfloat16; GPU consumer de 16 GB quedan al limite y requieren cuantizacion, no publicada en el repo.
 - Cabe en GPU consumer: si, en RTX 4090 (24 GB) y RTX 3090 (24 GB) en bfloat16; en GPUs de 16 GB seria necesario cuantizar, pero el autor no publica variantes GGUF/AWQ/GPTQ.
-- Opciones de despliegue: `transformers>=4.57` con `accelerate` y `torchvision` (metodo documentado); el tag `text-generation-inference` y `endpoints_compatible` sugiere compatibilidad con TGI y endpoints de HuggingFace. vLLM, llama.cpp y Ollama no se mencionan en la informacion disponible.
+- Opciones de despliegue: `transformers>=4.57` con `accelerate` y `torchvision` (metodo documentado); el tag `text-generation-inference` y `endpoints_compatible` sugiere compatibilidad con TGI y endpoints de Hugging Face. vLLM, llama.cpp y Ollama no se mencionan en la informacion disponible.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 - Nota: el modo de razonamiento genera un monologo interno antes de la respuesta, lo que incrementa el numero de tokens generados y, por tanto, la latencia frente a una respuesta directa.
 
@@ -75,11 +75,11 @@ EVAN-7B supera al base en los nueve benchmarks y a DAPO en ocho de nueve (cede s
 
 | Modelo | Parametros | Contexto | Media en 9 benchmarks de razonamiento multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EVAN-7B | 8,3 B | no disponible | 57,9 % | Apache 2.0 | HuggingFace (DawnLiu/EVAN-7B) |
-| Qwen2.5-VL-7B-Instruct | ~8 B (base) | no disponible en esta ficha | 41,3 % | Apache 2.0 | HuggingFace (Qwen/Qwen2.5-VL-7B-Instruct) |
+| EVAN-7B | 8,3 B | no disponible | 57,9 % | Apache 2.0 | Hugging Face (DawnLiu/EVAN-7B) |
+| Qwen2.5-VL-7B-Instruct | ~8 B (base) | no disponible en esta ficha | 41,3 % | Apache 2.0 | Hugging Face (Qwen/Qwen2.5-VL-7B-Instruct) |
 | DAPO (misma receta sin EVAN) | 8,3 B | no disponible | 56,5 % | no disponible | no disponible como checkpoint publico en la informacion proporcionada |
-| EVAN-3B | no disponible | no disponible | no disponible | Apache 2.0 (presumible, no confirmado) | HuggingFace (DawnLiu/EVAN-3B) |
-| EVAN-8B | no disponible | no disponible | no disponible | Apache 2.0 (presumible, no confirmado) | HuggingFace (DawnLiu/EVAN-8B) |
+| EVAN-3B | no disponible | no disponible | no disponible | Apache 2.0 (presumible, no confirmado) | Hugging Face (DawnLiu/EVAN-3B) |
+| EVAN-8B | no disponible | no disponible | no disponible | Apache 2.0 (presumible, no confirmado) | Hugging Face (DawnLiu/EVAN-8B) |
 
 La comparacion directa mas solida es con el modelo base y con la variante DAPO, ambas incluidas en el paper. No se dispone de datos de benchmarks frente a otros VLMs de 7B ajenos a la familia Qwen2.5-VL en la informacion proporcionada.
 
@@ -97,7 +97,7 @@ La comparacion directa mas solida es con el modelo base y con la variante DAPO, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DawnLiu/EVAN-7B
+- Modelo en Hugging Face: https://huggingface.co/DawnLiu/EVAN-7B
 - Paper (arXiv): https://arxiv.org/abs/2610.39237
 - Codigo y scripts de entrenamiento: https://github.com/DawnLIU35/EVAN
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct

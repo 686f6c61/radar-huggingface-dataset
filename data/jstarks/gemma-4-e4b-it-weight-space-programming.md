@@ -76,9 +76,9 @@ No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jstarks/gemma-4-E4B-it-weight-space-programming` | 8B totales / 4B activos (base) + parche de 163.840 parámetros | no disponible | Edición de pesos sin entrenamiento sobre Gemma 4 E4B | Gemma | HuggingFace, repo de 0,0 GB |
-| `google/gemma-4-E4B-it` (base) | 8B totales / 4B activos | no disponible | Modelo multimodal instruct original | Gemma | HuggingFace |
-| `unsloth/gemma-4-E4B-it` | 8B totales / 4B activos | no disponible | Distribución optimizada del modelo base | Gemma | HuggingFace |
+| `jstarks/gemma-4-E4B-it-weight-space-programming` | 8B totales / 4B activos (base) + parche de 163.840 parámetros | no disponible | Edición de pesos sin entrenamiento sobre Gemma 4 E4B | Gemma | Hugging Face, repo de 0,0 GB |
+| `google/gemma-4-E4B-it` (base) | 8B totales / 4B activos | no disponible | Modelo multimodal instruct original | Gemma | Hugging Face |
+| `unsloth/gemma-4-E4B-it` | 8B totales / 4B activos | no disponible | Distribución optimizada del modelo base | Gemma | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con modelos de otras familias en la información proporcionada.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks comparativos con modelos de otras familias 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jstarks/gemma-4-E4B-it-weight-space-programming
+- Repositorio Hugging Face: https://huggingface.co/jstarks/gemma-4-E4B-it-weight-space-programming
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Distribución alternativa del base: https://huggingface.co/unsloth/gemma-4-E4B-it
 - Artículo de referencia (Takehi et al., MIT CSAIL): https://rikiyat.github.io/blog/weight-space-programming/

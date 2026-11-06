@@ -95,14 +95,14 @@ La comparacion con alternativas de la misma categoria (mismo tamano o misma tare
 - Compatibilidad restringida: el paquete esta pensado para el cargador `ds4-dfm-rs` con modo `qwen4exp`; la compatibilidad con runtimes GGUF genericos no esta establecida.
 - Tamano derivado, no medido: el tamano del payload principal (77,5456 GiB) se deriva de la receta exacta de tensores, no de un fichero GGUF completo medido; los metadatos y la alineacion anaden almacenamiento adicional.
 - Costes de memoria no contabilizados: cache PLE, estado KV, checkpoints y workspaces del runtime son costes separados que no aparecen en las cifras de payload.
-- Restricciones de licencia: licencia Swift Open License v1.0 (identificador `other` en HuggingFace), no una licencia estandar reconocida. Es necesario revisar el texto completo enlazado por el autor antes de cualquier uso comercial.
+- Restricciones de licencia: licencia Swift Open License v1.0 (identificador `other` en Hugging Face), no una licencia estandar reconocida. Es necesario revisar el texto completo enlazado por el autor antes de cualquier uso comercial.
 - Sesgos conocidos, riesgo de alucinacion y limitaciones de contexto o idioma: no disponibles en la informacion proporcionada.
 - Fechas del repositorio: la creacion y ultima actualizacion registradas son 2026-09-26, con tres segundos de diferencia, lo que es coherente con una publicacion de model card sin ficheros de pesos.
 - El nombre de directorio `MQ-Q5-SSD-PLE-BF16` describe el contrato de empaquetado principal, no la ubicacion real de la PLE, que se selecciona mediante `DS4_QWEN_PLE_DIR` apuntando al manifiesto FP8.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/Baekpica/Swift1.5-Qwen3.8-Flash-Next-Mixed-Quant-GGUF
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/Baekpica/Swift1.5-Qwen3.8-Flash-Next-Mixed-Quant-GGUF
 - Modelo base: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
 - Revision fijada del modelo base: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next/tree/0bd4fe22431372cdad1979267d3ab45aa7e6150a
 - Licencia del modelo base: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next/blob/0bd4fe22431372cdad1979267d3ab45aa7e6150a/LICENSE

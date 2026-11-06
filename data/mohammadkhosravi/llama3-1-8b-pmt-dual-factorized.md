@@ -87,7 +87,7 @@ La comparativa muestra que este modelo se diferencia de las variantes *pure PMT*
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MohammadKhosravi/llama3.1-8b-pmt-dual-factorized
+- Modelo en Hugging Face: https://huggingface.co/MohammadKhosravi/llama3.1-8b-pmt-dual-factorized
 - Modelo variante (PMT puro con gating CEFR 6K): https://huggingface.co/MohammadKhosravi/llama3.1-8b-pure-pmt-cefr-gating-6k
 - Modelo variante (PMT puro con gating CEFR 60K): https://huggingface.co/MohammadKhosravi/llama3.1-8b-pure-pmt-cefr-gating-60K
 - Blog oficial de Meta sobre Llama 3.1: https://ai.meta.com/blog/meta-llama-3-1/

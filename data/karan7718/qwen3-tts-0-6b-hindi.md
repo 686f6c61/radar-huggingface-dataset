@@ -72,8 +72,8 @@ Puntos débiles identificados: nombres propios (CER ~0,36, aunque Whisper tambi�
 
 | Modelo | Parametros | Idioma | Voz | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| karan7718/qwen3-tts-0.6b-hindi | ~906 M | Hindi (único) | Femenina única (`hi_f`) | Apache 2.0 | HuggingFace, pesos abiertos |
-| Qwen/Qwen3-TTS-12Hz-0.6B-Base | ~0,6 B (nominal) | Multilingüe (sin hindi) | Múltiples | Según Qwen | HuggingFace, pesos abiertos |
+| karan7718/qwen3-tts-0.6b-hindi | ~906 M | Hindi (único) | Femenina única (`hi_f`) | Apache 2.0 | Hugging Face, pesos abiertos |
+| Qwen/Qwen3-TTS-12Hz-0.6B-Base | ~0,6 B (nominal) | Multilingüe (sin hindi) | Múltiples | Según Qwen | Hugging Face, pesos abiertos |
 | ai4bharat/Rasa (TTS asociado) | no disponible | Indios, incluido hindi | Múltiples | CC-BY-4.0 (datos) | Dataset público |
 
 No se han publicado benchmarks comparativos directos con otros modelos TTS en hindi (por ejemplo, IndicTTS o MMS-TTS de Meta), por lo que la comparación de rendimiento no está disponible.
@@ -93,6 +93,6 @@ No se han publicado benchmarks comparativos directos con otros modelos TTS en hi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/karan7718/qwen3-tts-0.6b-hindi
+- Modelo en Hugging Face: https://huggingface.co/karan7718/qwen3-tts-0.6b-hindi
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/ai4bharat/Rasa

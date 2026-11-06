@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `takeru01/t1r200_n140_DA3_depthonly_c90` es un checkpoint publicado en HuggingFace por el usuario `takeru01`, con un total de 40.493.264 parametros almacenados en formato safetensors y un tamano de repositorio de 0,2 GB. El modelo no declara pipeline, licencia, idiomas ni tarjeta de modelo con informacion tecnica, por lo que la mayor parte de sus caracteristicas no puede verificarse a partir de los datos disponibles.
+El repositorio `takeru01/t1r200_n140_DA3_depthonly_c90` es un checkpoint publicado en Hugging Face por el usuario `takeru01`, con un total de 40.493.264 parametros almacenados en formato safetensors y un tamano de repositorio de 0,2 GB. El modelo no declara pipeline, licencia, idiomas ni tarjeta de modelo con informacion tecnica, por lo que la mayor parte de sus caracteristicas no puede verificarse a partir de los datos disponibles.
 
 El identificador del repositorio sugiere un experimento de ajuste o destilacion sobre un modelo de la familia DA3 (probablemente Depth Anything 3) en una variante "depthonly", con hiperparametros codificados en el nombre (`t1r200`, `n140`, `c90`). Esta interpretacion es una hipotesis derivada de la nomenclatura y no esta confirmada por ninguna documentacion oficial, por lo que debe tratarse con cautela hasta que el autor publique una ficha tecnica.
 
@@ -76,7 +76,7 @@ La informacion proporcionada no permite identificar con certeza la categoria del
 
 | Modelo | Parametros | Contexto o resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| takeru01/t1r200_n140_DA3_depthonly_c90 | 40,49 M | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| takeru01/t1r200_n140_DA3_depthonly_c90 | 40,49 M | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Depth Anything V2 (variantes small/base) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion recogida |
 | MiDaS (variantes small) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion recogida |
 
@@ -94,6 +94,6 @@ La informacion proporcionada no permite identificar con certeza la categoria del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/takeru01/t1r200_n140_DA3_depthonly_c90
+- Hugging Face: https://huggingface.co/takeru01/t1r200_n140_DA3_depthonly_c90
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las busquedas devolvieron unicamente documentacion de soporte de escaneres Ricoh, el portal Zhihu y una pregunta sobre la carpeta "System Volume Information" de Windows, sin relacion alguna con el modelo.
 - Paper, blog, repositorio o demo oficial: no disponible.

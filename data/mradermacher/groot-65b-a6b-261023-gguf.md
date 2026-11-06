@@ -25,7 +25,7 @@ Su relevancia práctica es doble: permite ejecutar en local un MoE de 65B con un
 
 La información disponible confirma una arquitectura de mezcla de expertos con 65B parámetros totales y unos 6B activos por token, lo que sitúa el coste de cómputo por token en el rango de un modelo denso de 6-8B, pero manteniendo una huella de memoria propia de un modelo de 65B. El modelo parte de Qwen3.8-Flash-Next y se post-entrena con menos de 0,1B tokens de datos de código abierto, un volumen muy reducido que sugiere un ajuste ligero (posiblemente orientado a formato conversacional) más que un cambio profundo de distribución. No se especifica si hubo RLHF, DPO u otro método de alineación, ni la composición exacta del dataset.
 
-Las cuantizaciones de este repositorio se generaron con `quantize_version: 2`, `convert_type: hf` y `output_tensor_quantised: 1`, es decir, conversión directa desde safetensors en formato HuggingFace y cuantización estática por tensor. No se documenta ninguna innovación técnica adicional (decodificación especulativa, atención lineal, expertos compartidos) más allá de la propia activación dispersa de expertos.
+Las cuantizaciones de este repositorio se generaron con `quantize_version: 2`, `convert_type: hf` y `output_tensor_quantised: 1`, es decir, conversión directa desde safetensors en formato Hugging Face y cuantización estática por tensor. No se documenta ninguna innovación técnica adicional (decodificación especulativa, atención lineal, expertos compartidos) más allá de la propia activación dispersa de expertos.
 
 ## Capacidades
 

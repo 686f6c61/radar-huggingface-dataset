@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Francasio/sing-android-mvx-net es un modelo publicado en HuggingFace por el usuario Francasio bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card no contiene descripcion tecnica alguna (unicamente la declaracion de licencia), y el repositorio, de 0,2 GB, no incluye pipeline declarado ni idiomas soportados. Los unicos metadatos tecnicos fiables son los tags asociados al repositorio: tflite, onnx, license:mit y region:us.
+Francasio/sing-android-mvx-net es un modelo publicado en Hugging Face por el usuario Francasio bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card no contiene descripcion tecnica alguna (unicamente la declaracion de licencia), y el repositorio, de 0,2 GB, no incluye pipeline declarado ni idiomas soportados. Los unicos metadatos tecnicos fiables son los tags asociados al repositorio: tflite, onnx, license:mit y region:us.
 
 La presencia conjunta de los formatos TFLite y ONNX, junto con el sufijo "android" en el identificador, apunta a un artefacto orientado a despliegue en dispositivos moviles o en el borde (edge), mas que a un modelo de proposito general para servidor. El segmento "mvx-net" sugiere un nombre de arquitectura propia, pero no existe documentacion publica que permita confirmarlo. El termino "sing" podria referirse a una tarea concreta (por ejemplo, procesamiento de voz cantada), aunque se trata de una hipotesis no verificada.
 
@@ -67,7 +67,7 @@ No disponible. No se ha identificado ningun modelo comparable, dado que se desco
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Francasio/sing-android-mvx-net | no disponible | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
+| Francasio/sing-android-mvx-net | no disponible | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No disponible. No se ha identificado ningun modelo comparable, dado que se desco
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Francasio/sing-android-mvx-net
+- Modelo en Hugging Face: https://huggingface.co/Francasio/sing-android-mvx-net
 - Model card del autor: no contiene informacion tecnica adicional mas alla de la licencia MIT.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles.
 - Enlaces relevantes encontrados en la busqueda web: ninguno. Los resultados devueltos corresponden a sitios de reserva de vuelos (Transavia) y a una tesis doctoral sobre deteccion de discurso de odio, sin relacion con este modelo.

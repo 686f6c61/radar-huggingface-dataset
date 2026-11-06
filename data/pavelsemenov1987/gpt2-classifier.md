@@ -4,7 +4,7 @@
 
 `pavelsemenov1987/gpt2-classifier` es un modelo publicado en agosto de 2026 por el usuario pavelsemenov1987, descrito en su model card como una implementación a pequeña escala de la arquitectura **mobilevit** orientada a tareas de **generación de texto**. A pesar del nombre, que sugiere un clasificador basado en GPT-2, la documentación indica que se trata de un modelo con atención *grouped query*, fusión *tucker* y activación *approx gelu*, entrenado con el optimizador Adafactor y un scheduler de tasa de aprendizaje exponencial.
 
-El repositorio contiene únicamente un archivo `eval.py` como artefacto principal, sin pesos publicados ni checkpoint descargable. Con cero descargas y cero *likes* en HuggingFace, se trata de un proyecto experimental o personal sin validación comunitaria. Su licencia MIT permite uso comercial, pero la ausencia de pesos y de especificaciones detalladas limita su utilidad práctica inmediata.
+El repositorio contiene únicamente un archivo `eval.py` como artefacto principal, sin pesos publicados ni checkpoint descargable. Con cero descargas y cero *likes* en Hugging Face, se trata de un proyecto experimental o personal sin validación comunitaria. Su licencia MIT permite uso comercial, pero la ausencia de pesos y de especificaciones detalladas limita su utilidad práctica inmediata.
 
 La relevancia de esta ficha es principalmente documental: sirve para entender qué ofrece (y qué no ofrece) un modelo con una model card extremadamente escueta, y para contrastar la discrepancia entre el nombre del repositorio y la arquitectura declarada.
 
@@ -79,7 +79,7 @@ La comparativa evidencia que el modelo analizado carece de pesos publicados, a d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pavelsemenov1987/gpt2-classifier
+- Repositorio en Hugging Face: https://huggingface.co/pavelsemenov1987/gpt2-classifier
 - Repositorio de referencia GPT-2 original: https://huggingface.co/openai-community/gpt2
 - Ejemplo de clasificador GPT-2 en GitHub: https://github.com/maciejbiesek/gpt2_classifier
 - Articulo de Wikipedia sobre GPT-2: https://en.wikipedia.org/wiki/GPT-2

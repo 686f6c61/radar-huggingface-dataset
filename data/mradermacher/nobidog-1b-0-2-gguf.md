@@ -82,7 +82,7 @@ Nota: los datos de contexto de los modelos comparables son valores tipicos publi
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/nobidog-1b-0.2-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/nobidog-1b-0.2-GGUF
 - Modelo base: https://huggingface.co/blueqat/nobidog-1b-0.2
 - Pagina de descargas del autor de la cuantizacion: https://hf.tst.eu/model#nobidog-1b-0.2-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

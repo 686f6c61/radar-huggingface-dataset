@@ -80,7 +80,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FirstPrinciplesLabs/quark_quantized_weight_only-Q8_0
+- Modelo en Hugging Face: https://huggingface.co/FirstPrinciplesLabs/quark_quantized_weight_only-Q8_0
 - Modelo base: https://huggingface.co/FirstPrinciplesLabs/quark
 - Resultados de benchmarks del modelo base: https://huggingface.co/FirstPrinciplesLabs/quark#results
 - Throughput del modelo base: https://huggingface.co/FirstPrinciplesLabs/quark#throughput

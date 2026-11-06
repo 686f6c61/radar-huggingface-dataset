@@ -96,10 +96,10 @@ F1 por idioma:
 
 | Modelo | Parametros | Contexto | F1 (PolyGuardPrompts) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HaloGuard 2.0-Poly | 0,8B | 2.048 | 83,08 | Apache 2.0 | HuggingFace |
-| Llama Guard 3 | 8B | no disponible | 65,74 | licencia Llama | HuggingFace |
-| PolyGuard-Qwen | 7B | no disponible | 74,08 | no disponible | HuggingFace |
-| PolyGuard Smol | 0,5B | no disponible | 66,82 | no disponible | HuggingFace |
+| HaloGuard 2.0-Poly | 0,8B | 2.048 | 83,08 | Apache 2.0 | Hugging Face |
+| Llama Guard 3 | 8B | no disponible | 65,74 | licencia Llama | Hugging Face |
+| PolyGuard-Qwen | 7B | no disponible | 74,08 | no disponible | Hugging Face |
+| PolyGuard Smol | 0,5B | no disponible | 66,82 | no disponible | Hugging Face |
 
 HaloGuard 2.0-Poly ofrece el mayor F1 de la comparativa con una decima parte de parametros que Llama Guard 3 o PolyGuard-Qwen, y una licencia permisiva Apache 2.0. Como contrapartida, su contexto maximo de 2.048 tokens es mas corto que el de los guards de 8B, y su rendimiento cae en indic (64,2) y sudeste asiatico (73,9).
 
@@ -114,7 +114,7 @@ HaloGuard 2.0-Poly ofrece el mayor F1 de la comparativa con una decima parte de 
 - No se han publicado datos sobre sesgos especificos, latencia, throughput ni consumo energetico.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/astroware/HaloGuard2.0-Poly-0.8B
+- Modelo en Hugging Face: https://huggingface.co/astroware/HaloGuard2.0-Poly-0.8B
 - Variante inglesa HaloGuard 2.0-Stream-0.8B: https://huggingface.co/ash-astro/HaloGuard2.0-Stream-0.8B
 - Guard de entrada HaloGuard 1.0-Gen-0.8B: https://huggingface.co/astroware/HaloGuard1-Gen-0.8B
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B

@@ -97,7 +97,7 @@ Como referencia cualitativa, la categoria de modelos nano preentrenados desde ce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huggingworld/NanoDex-1M-300M
+- Modelo en Hugging Face: https://huggingface.co/huggingworld/NanoDex-1M-300M
 - Space NanoDex Trainer: https://huggingface.co/spaces/hugging-science/nanodex-trainer
 - Dataset fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Perfil del autor: https://huggingface.co/huggingworld

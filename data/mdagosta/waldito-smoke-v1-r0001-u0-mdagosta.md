@@ -47,7 +47,7 @@ No hay evidencia disponible de soporte de tool calling, function calling, razona
 
 ## Casos de uso
 
-- Prueba de humo de pipelines de publicacion: el modelo sirve para validar de extremo a extremo el flujo de exportacion, tokenizacion con `trust_remote_code` y subida a HuggingFace antes de publicar un modelo real.
+- Prueba de humo de pipelines de publicacion: el modelo sirve para validar de extremo a extremo el flujo de exportacion, tokenizacion con `trust_remote_code` y subida a Hugging Face antes de publicar un modelo real.
 - Verificacion de integracion con TGI: dado el tag `text-generation-inference`, puede usarse para comprobar que una configuracion de servidor levanta correctamente modelos Llama con tokenizadores personalizados.
 - Validacion de herramientas de trazabilidad y cumplimiento: los ficheros `BOM.json` y `EU-BOM.json` permiten probar generadores de inventario de release y mapeos de divulgacion GPAI sin necesidad de un modelo grande.
 - Test de carga de tokenizers remotos: sirve para verificar que el flag `trust_remote_code=True` funciona en entornos controlados y que el tokenizador de bytes schema-1 se instancia correctamente.
@@ -88,8 +88,8 @@ No disponible. No se identifican modelos comparables en la misma categoria, ya q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-smoke-v1-r0001-u0-mdagosta
-- Perfil del autor en HuggingFace: https://huggingface.co/mdagosta
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-smoke-v1-r0001-u0-mdagosta
+- Perfil del autor en Hugging Face: https://huggingface.co/mdagosta
 - Version relacionada del autor (merge): https://huggingface.co/mdagosta/waldito-smoke-v1-r0002-merge
 - Fichero de inventario de release referenciado en la model card: `BOM.json` (dentro del repositorio)
 - Mapeo de divulgacion de contenido GPAI referenciado en la model card: `EU-BOM.json` (dentro del repositorio)

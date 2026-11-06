@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Skskskd/jailbrak-creator es un modelo de generación de texto publicado en HuggingFace por el usuario Skskskd el 29 de octubre de 2026. Se distribuye en formato safetensors bajo la librería transformers, con la etiqueta de arquitectura `qwen2` y un total de 494.032.768 parámetros (aproximadamente 0,49 millares de millones). El repositorio ocupa 2,0 GB y no registra descargas ni valoraciones en el momento de la consulta.
+Skskskd/jailbrak-creator es un modelo de generación de texto publicado en Hugging Face por el usuario Skskskd el 29 de octubre de 2026. Se distribuye en formato safetensors bajo la librería transformers, con la etiqueta de arquitectura `qwen2` y un total de 494.032.768 parámetros (aproximadamente 0,49 millares de millones). El repositorio ocupa 2,0 GB y no registra descargas ni valoraciones en el momento de la consulta.
 
 El interés técnico del modelo es limitado pero identificable: el recuento exacto de parámetros coincide con el de la familia Qwen2.5-0.5B de Alibaba, lo que sugiere que se trata de un ajuste fino (fine-tuning) sobre esa base, aunque la model card no lo confirma en ningún punto. El nombre del repositorio, "jailbrak-creator", apunta a un ajuste orientado a la generación de prompts de evasión de barreras de seguridad, si bien no existe documentación que describa el dataset, el procedimiento de entrenamiento ni los objetivos.
 
-La relevancia práctica es la de un artefacto de investigación de pequeño tamaño: cabe en cualquier GPU de consumo e incluso en CPU, pero carece de licencia declarada, de idiomas especificados, de longitud de contexto documentada y de cualquier evaluación publicada. La model card es la plantilla automática de HuggingFace con todos los campos marcados como "[More Information Needed]", por lo que la mayor parte de las especificaciones que siguen deben considerarse no disponibles.
+La relevancia práctica es la de un artefacto de investigación de pequeño tamaño: cabe en cualquier GPU de consumo e incluso en CPU, pero carece de licencia declarada, de idiomas especificados, de longitud de contexto documentada y de cualquier evaluación publicada. La model card es la plantilla automática de Hugging Face con todos los campos marcados como "[More Information Needed]", por lo que la mayor parte de las especificaciones que siguen deben considerarse no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -66,17 +66,17 @@ Los datos de la columna de este modelo provienen del repositorio; los de las alt
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Skskskd/jailbrak-creator | 494 M | no disponible | no disponible | HuggingFace, solo safetensors |
-| Qwen2.5-0.5B-Instruct | 494 M | 32.768 tokens | Apache 2.0 | HuggingFace, transformers, GGUF, vLLM |
-| Qwen3-0.6B | ~600 M | 32.768 tokens | Apache 2.0 | HuggingFace, transformers, GGUF |
-| Llama-3.2-1B-Instruct | 1.240 M | 128.000 tokens | Llama 3.2 Community License | HuggingFace, gated, transformers, GGUF |
+| Skskskd/jailbrak-creator | 494 M | no disponible | no disponible | Hugging Face, solo safetensors |
+| Qwen2.5-0.5B-Instruct | 494 M | 32.768 tokens | Apache 2.0 | Hugging Face, transformers, GGUF, vLLM |
+| Qwen3-0.6B | ~600 M | 32.768 tokens | Apache 2.0 | Hugging Face, transformers, GGUF |
+| Llama-3.2-1B-Instruct | 1.240 M | 128.000 tokens | Llama 3.2 Community License | Hugging Face, gated, transformers, GGUF |
 
 Frente a las alternativas, el modelo evaluado no aporta ninguna ventaja documentada: carece de licencia, de contexto declarado, de evaluación y de formatos cuantizados listos para usar. Su única singularidad aparente es el ajuste orientado a evasión de salvaguardas, que no es una capacidad deseable en producción.
 
 ## Limitaciones y advertencias
 
 - Ausencia total de licencia: sin un archivo LICENSE ni una declaración en la model card, rige el régimen por defecto de derechos de autor, lo que impide legalmente su uso comercial o su redistribución sin autorización expresa del autor.
-- Documentación inexistente: la model card es la plantilla automática de HuggingFace con todos los campos vacíos; no se documentan datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
+- Documentación inexistente: la model card es la plantilla automática de Hugging Face con todos los campos vacíos; no se documentan datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
 - Riesgo de desalineamiento: el identificador "jailbrak-creator" sugiere un ajuste destinado a producir contenido que evade filtros de seguridad. No debe desplegarse de cara al público sin una batería propia de evaluaciones de seguridad y sin capas de moderación externas.
 - Alucinación: en un modelo de 0,49 B de parámetros la tasa de afirmaciones factualmente incorrectas es estructuralmente alta; no es apto para tareas que requieran precisión factual sin verificación humana.
 - Contexto y multilingüismo desconocidos: al no declararse la longitud de contexto, cualquier uso con prompts largos requiere validación empírica previa; tampoco hay garantía de calidad en castellano.
@@ -86,7 +86,7 @@ Frente a las alternativas, el modelo evaluado no aporta ninguna ventaja document
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Skskskd/jailbrak-creator
+- Modelo en Hugging Face: https://huggingface.co/Skskskd/jailbrak-creator
 - Articulo citado en las etiquetas (Lacoste et al., 2019, sobre impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ML referenciado en la plantilla: https://mlco2.github.io/impact
 - Paper, blog, repositorio de código o demo del modelo: no disponibles

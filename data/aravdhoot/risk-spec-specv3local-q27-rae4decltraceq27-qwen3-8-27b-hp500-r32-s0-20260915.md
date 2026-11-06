@@ -103,7 +103,7 @@ Los resultados de búsqueda asociados a esta consulta devolvieron exclusivamente
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aravdhoot/risk-spec-specv3local-q27-rae4decltraceq27-qwen3.8-27b-hp500-r32-s0-20260915
+- Repositorio Hugging Face: https://huggingface.co/aravdhoot/risk-spec-specv3local-q27-rae4decltraceq27-qwen3.8-27b-hp500-r32-s0-20260915
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B (revision `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`)
 - Paper, blog o repositorio de codigo del autor: no disponible
 - Demo o espacio de inferencia: no disponible

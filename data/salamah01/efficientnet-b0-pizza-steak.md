@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks estandar (ImageNet, Food-101 u otro
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Salamah01/efficientnet-b0-pizza-steak | no disponible (base EfficientNet-B0) | Imagen 2D, sin contexto textual | 99,80 % en test propio de 500 imagenes | MIT | HuggingFace, 0 descargas |
+| Salamah01/efficientnet-b0-pizza-steak | no disponible (base EfficientNet-B0) | Imagen 2D, sin contexto textual | 99,80 % en test propio de 500 imagenes | MIT | Hugging Face, 0 descargas |
 | EfficientNet-B0 (torchvision, ImageNet) | ~5,3 M | Imagen 2D | Top-1 ~77,7 % en ImageNet (referencia externa, no verificada en esta ficha) | BSD-3-Clause (torchvision) | Ampliamente disponible |
 | ResNet-50 (torchvision, ImageNet) | ~25,6 M | Imagen 2D | Top-1 ~80,9 % en ImageNet (referencia externa) | BSD-3-Clause | Ampliamente disponible |
 | CLIP ViT-B/32 (zero-shot) | ~151 M | Imagen + texto | Clasificacion zero-shot variable | MIT (pesos OpenAI) | Ampliamente disponible |
@@ -86,7 +86,7 @@ La comparacion directa con estos modelos no es homogenea: el modelo de Salamah01
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Salamah01/efficientnet-b0-pizza-steak
+- Modelo en Hugging Face: https://huggingface.co/Salamah01/efficientnet-b0-pizza-steak
 - Documentacion de EfficientNet en torchvision: https://pytorch.org/vision/stable/models/efficientnet.html
 - Paper original de EfficientNet: https://arxiv.org/abs/1905.11946
 - Documentacion de huggingface_hub: https://huggingface.co/docs/huggingface_hub

@@ -81,7 +81,7 @@ La comparativa directa es con el modelo base de Google: mismas especificaciones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HauhauCS/Gemma4-26B-A4B-QAT-Uncensored-HauhauCS-Balanced-MTP
+- Modelo en Hugging Face: https://huggingface.co/HauhauCS/Gemma4-26B-A4B-QAT-Uncensored-HauhauCS-Balanced-MTP
 - Comunidad Discord del autor: https://discord.gg/SZ5vacTXYf
 - Modelo base de Google: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Variante sin QAT del mismo autor: https://huggingface.co/HauhauCS/Gemma4-26B-A4B-Uncensored-HauhauCS-Balanced

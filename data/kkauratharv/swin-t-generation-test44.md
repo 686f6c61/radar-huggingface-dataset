@@ -4,7 +4,7 @@
 
 ## Resumen
 
-swin-t-generation-test44 es un prototipo de investigación publicado en HuggingFace por el usuario kkauratharv bajo licencia MIT. Se presenta como una implementación propia de una arquitectura Swin T orientada a tareas de generación, con una configuración que el autor etiqueta como "xlarge" y que incluye atención de tipo lineal, fusión de bajo rango, activación swish y normalización layernorm.
+swin-t-generation-test44 es un prototipo de investigación publicado en Hugging Face por el usuario kkauratharv bajo licencia MIT. Se presenta como una implementación propia de una arquitectura Swin T orientada a tareas de generación, con una configuración que el autor etiqueta como "xlarge" y que incluye atención de tipo lineal, fusión de bajo rango, activación swish y normalización layernorm.
 
 El punto crítico de esta ficha es que el repositorio no contiene un modelo entrenado. La propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El recuento real de parámetros que reporta safetensors es de 33.088, una cifra incompatible con la etiqueta de escala "xlarge" usada en la documentación, lo que apunta a que dicha etiqueta describe un preset del script y no el tamaño efectivo de los pesos publicados.
 
@@ -25,7 +25,7 @@ En consecuencia, no se trata de un modelo utilizable en producción ni evaluable
 | Autor | kkauratharv |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0,0 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -40,7 +40,7 @@ Respecto al entrenamiento, no hay ningún dato verificable. No se indica número
 - Visión: no disponible. La arquitectura Swin es originalmente un backbone de visión, pero la model card no describe entrada de imagen, resolución, ni tarea visual concreta, lo que genera una ambigüedad de dominio no resuelta.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; no se listan idiomas en la ficha de HuggingFace ni en la model card.
+- Capacidades multilingües: no disponible; no se listan idiomas en la ficha de Hugging Face ni en la model card.
 - Capacidad especial (modo thinking, audio, visión u otras): no disponible.
 - Carga mediante APIs automáticas: la model card advierte de que, al ser una implementación propia, las APIs genéricas de carga requieren un adaptador explícito. Esto es una limitación operativa documentada, no una capacidad.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Benchmark | Disponibilidad |
 |---|---|---|---|---|---|---|
-| swin-t-generation-test44 | Prototipo de generacion basado en Swin T, checkpoint de inicializacion | 33.088 (segun safetensors) | no disponible | MIT | no disponible | Repositorio HuggingFace con 0 descargas |
+| swin-t-generation-test44 | Prototipo de generacion basado en Swin T, checkpoint de inicializacion | 33.088 (segun safetensors) | no disponible | MIT | no disponible | Repositorio Hugging Face con 0 descargas |
 | Swin Transformer (variante tiny, Microsoft) | Backbone de vision supervisado | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Ampliamente distribuido en hubs publicos |
 | Swin Transformer V2 (variante tiny) | Backbone de vision supervisado | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Ampliamente distribuido en hubs publicos |
 | ViT-Tiny | Backbone de vision supervisado | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Ampliamente distribuido en hubs publicos |
@@ -93,8 +93,8 @@ La comparacion no es directa: las alternativas citadas son backbones de vision s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kkauratharv/swin-t-generation-test44
-- Repositorio de codigo asociado: no disponible (la model card menciona `predict.py`, `config.json` y `training_args.json` dentro del propio repositorio de HuggingFace)
+- Modelo en Hugging Face: https://huggingface.co/kkauratharv/swin-t-generation-test44
+- Repositorio de codigo asociado: no disponible (la model card menciona `predict.py`, `config.json` y `training_args.json` dentro del propio repositorio de Hugging Face)
 - Paper de referencia: no disponible en la informacion proporcionada
 - Blog o demo: no disponible
 - Resultados de busqueda web: las consultas realizadas no devolvieron ningun enlace relacionado con el modelo. Los resultados obtenidos correspondian a dominios de servicios de prevencion de riesgos laborales en Francia (aismtcai.com, aismt13.fr, aismt04.fr), sin ninguna vinculacion con este repositorio.

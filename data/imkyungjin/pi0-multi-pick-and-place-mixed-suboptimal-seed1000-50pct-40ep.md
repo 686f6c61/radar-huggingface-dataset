@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ImKyungjin/pi0-multi-pick-and-place-mixed-suboptimal-seed1000-50pct-40ep` es un checkpoint de política robótica publicado en HuggingFace por el usuario ImKyungjin, entrenado con la librería LeRobot sobre la arquitectura π₀ (Pi0) de Physical Intelligence. Se trata de un modelo Vision-Language-Action (VLA): recibe imágenes de cámara y una instrucción en lenguaje natural, y emite acciones motoras de bajo nivel para un brazo robótico. No es un modelo de lenguaje conversacional ni un generador de texto, sino una política de control entrenada por imitación.
+El modelo `ImKyungjin/pi0-multi-pick-and-place-mixed-suboptimal-seed1000-50pct-40ep` es un checkpoint de política robótica publicado en Hugging Face por el usuario ImKyungjin, entrenado con la librería LeRobot sobre la arquitectura π₀ (Pi0) de Physical Intelligence. Se trata de un modelo Vision-Language-Action (VLA): recibe imágenes de cámara y una instrucción en lenguaje natural, y emite acciones motoras de bajo nivel para un brazo robótico. No es un modelo de lenguaje conversacional ni un generador de texto, sino una política de control entrenada por imitación.
 
 El checkpoint contiene 3.501.372.176 parámetros (unos 3,5 mil millones) almacenados en safetensors, con un tamaño de repositorio de 7,0 GB, lo que corresponde a pesos en precisión de 16 bits. El nombre del repositorio indica que se ha ajustado sobre el conjunto de datos `taewonkoo/multi_pick_and_place_mixed_suboptimal_seed1000_50pct_40ep`, orientado a tareas de recogida y colocación (pick and place) con datos mixtos y parcialmente subóptimos, semilla 1000, una proporción del 50 % y 40 épocas de entrenamiento (estos detalles se infieren del identificador, no están documentados en la model card).
 
@@ -74,9 +74,9 @@ Los valores de parámetros de los modelos alternativos son referencias aproximad
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|---|
-| pi0-multi-pick-and-place-mixed-suboptimal (este checkpoint) | 3,5 mil millones | VLA (π₀), ajuste fino | no disponible | Apache 2.0 | HuggingFace, 0 descargas | no disponible |
+| pi0-multi-pick-and-place-mixed-suboptimal (este checkpoint) | 3,5 mil millones | VLA (π₀), ajuste fino | no disponible | Apache 2.0 | Hugging Face, 0 descargas | no disponible |
 | π₀ base (Physical Intelligence / OpenPI) | ≈3,3 mil millones (referencia pública) | VLA, modelo fundacional | no disponible | según repositorio OpenPI | OpenPI y LeRobot | no disponible |
-| SmolVLA (HuggingFace) | ≈450 millones (referencia pública) | VLA compacto | no disponible | según repositorio | LeRobot | no disponible |
+| SmolVLA (Hugging Face) | ≈450 millones (referencia pública) | VLA compacto | no disponible | según repositorio | LeRobot | no disponible |
 | ACT (ALOHA / LeRobot) | del orden de decenas de millones (referencia pública) | Política de imitación con transformer y encoder CNN | no disponible | según repositorio | LeRobot | no disponible |
 
 La comparación relevante es de categoría: π₀ es un modelo fundacional de gran tamaño pensado para generalización entre tareas y robots, mientras que ACT es una política ligera específica de tarea y SmolVLA busca un equilibrio entre tamaño y capacidades VLA. Este checkpoint concreto es un ajuste de π₀ a una tarea de pick and place concreta, por lo que su ventaja esperable es la especialización, no la generalidad.
@@ -95,7 +95,7 @@ La comparación relevante es de categoría: π₀ es un modelo fundacional de gr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ImKyungjin/pi0-multi-pick-and-place-mixed-suboptimal-seed1000-50pct-40ep
+- Modelo en Hugging Face: https://huggingface.co/ImKyungjin/pi0-multi-pick-and-place-mixed-suboptimal-seed1000-50pct-40ep
 - Dataset de entrenamiento: https://huggingface.co/datasets/taewonkoo/multi_pick_and_place_mixed_suboptimal_seed1000_50pct_40ep
 - Blog de Physical Intelligence sobre π₀: https://www.physicalintelligence.company/blog/pi0
 - Repositorio OpenPI (Physical Intelligence): https://github.com/Physical-Intelligence/openpi

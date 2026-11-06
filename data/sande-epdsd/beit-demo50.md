@@ -36,7 +36,7 @@ La implementación sigue la arquitectura BEiT propuesta en el paper original (Ba
 - Pruebas de humo en pipelines de entrenamiento: el modelo sirve para verificar que el flujo de datos, la pérdida y la retropropagación funcionan correctamente antes de escalar a modelos mayores.
 - Revisión de código y aprendizaje de arquitecturas BEiT: al ser una implementación compacta y legible, es útil para estudiar cómo se construye un BEiT con modificaciones (atención dilatada, InstanceNorm).
 - Experimentos controlados de *matching* a muy pequeña escala: con 16.576 parámetros, se puede usar para comparar configuraciones de arquitectura en conjuntos de datos sintéticos o de juguete, siempre que se entrene desde cero.
-- Validación de adaptadores para carga de modelos personalizados: el autor indica que las APIs genéricas de HuggingFace requieren un adaptador explícito, por lo que el repositorio sirve para probar dichos adaptadores.
+- Validación de adaptadores para carga de modelos personalizados: el autor indica que las APIs genéricas de Hugging Face requieren un adaptador explícito, por lo que el repositorio sirve para probar dichos adaptadores.
 - Base para desarrollo de variantes de BEiT: investigadores pueden modificar la atención, la fusión o la normalización y evaluar el impacto en tareas de correspondencia.
 - No se recomienda su uso en producción ni en aplicaciones reales de visión por computador debido a su tamaño y falta de entrenamiento.
 
@@ -54,19 +54,19 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en el mismo repositorio. Como referencia, los BEiT oficiales de HuggingFace (por ejemplo, `microsoft/beit-base-patch16-224`) tienen alrededor de 86 millones de parámetros y están preentrenados en ImageNet, pero no son directamente comparables por tamaño ni por propósito. La comparativa no está disponible.
+No se dispone de información sobre modelos comparables en el mismo repositorio. Como referencia, los BEiT oficiales de Hugging Face (por ejemplo, `microsoft/beit-base-patch16-224`) tienen alrededor de 86 millones de parámetros y están preentrenados en ImageNet, pero no son directamente comparables por tamaño ni por propósito. La comparativa no está disponible.
 
 ## Limitaciones y advertencias
 
 - El checkpoint no ha sido entrenado; es una inicialización aleatoria, por lo que no produce resultados útiles sin un entrenamiento completo.
 - No se ha auditado para robustez, equidad o transferencia de dominio, como advierte el autor.
 - No se proporcionan datos de sesgos, alucinación o limitaciones de contexto porque el modelo no genera texto ni tiene un comportamiento lingüístico.
-- La implementación es personalizada y no compatible con las APIs estándar de HuggingFace sin un adaptador explícito.
+- La implementación es personalizada y no compatible con las APIs estándar de Hugging Face sin un adaptador explícito.
 - No hay garantías de rendimiento en ninguna tarea de visión; cualquier resultado publicado debe documentarse por separado y con logs de entrenamiento.
 - La licencia MIT permite uso comercial, pero el autor recomienda revisar los términos de las fuentes de datos externas si se usan con datasets propios.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sande-epdsd/beit-demo50
-- Documentación de BEiT en HuggingFace Transformers: https://huggingface.co/docs/transformers/model_doc/beit
+- Repositorio en Hugging Face: https://huggingface.co/sande-epdsd/beit-demo50
+- Documentación de BEiT en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/beit
 - Paper original de BEiT (arXiv): https://arxiv.org/abs/2106.08254

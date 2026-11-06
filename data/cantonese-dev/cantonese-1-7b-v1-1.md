@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cantonese-1.7b-v1.1 es un modelo de síntesis de voz (text-to-speech) desarrollado por cantonese-dev, publicado en HuggingFace bajo licencia Apache 2.0. El identificador de arquitectura en los metadatos es `qwen3_tts`, lo que indica que se trata de un modelo derivado o construido sobre la familia Qwen3 orientado a la generación de audio a partir de texto. Con aproximadamente 1.928 millones de parámetros (1,93 B) y un repositorio de 3,9 GB en formato safetensors, está pensado para ejecutarse en hardware de gama media sin necesidad de infraestructura de datacenter.
+cantonese-1.7b-v1.1 es un modelo de síntesis de voz (text-to-speech) desarrollado por cantonese-dev, publicado en Hugging Face bajo licencia Apache 2.0. El identificador de arquitectura en los metadatos es `qwen3_tts`, lo que indica que se trata de un modelo derivado o construido sobre la familia Qwen3 orientado a la generación de audio a partir de texto. Con aproximadamente 1.928 millones de parámetros (1,93 B) y un repositorio de 3,9 GB en formato safetensors, está pensado para ejecutarse en hardware de gama media sin necesidad de infraestructura de datacenter.
 
 La versión v1.1 introduce dos cambios funcionales respecto a versiones anteriores: el diseño de voz mediante el parámetro `--instruction` en lugar de altavoces predefinidos codificados (`--speaker`), y una funcionalidad de clonación de voz. Esto lo sitúa en la categoría de modelos TTS controlables por lenguaje natural, donde el usuario describe la voz deseada en lugar de seleccionar de un catálogo cerrado.
 
@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cantonese-dev/cantonese-1.7b-v1.1
+- Hugging Face: https://huggingface.co/cantonese-dev/cantonese-1.7b-v1.1
 - DOI: https://doi.org/10.57967/hf/11365

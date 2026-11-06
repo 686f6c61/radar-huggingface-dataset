@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-LoRA-Welding-Component-Segmentation-v2 es un ajuste fino mediante LoRA publicado por el usuario jujeongho en HuggingFace. El nombre del repositorio indica que parte de un modelo base Qwen3.5-4B y que se ha especializado en segmentacion de componentes de soldadura, una tarea de inspeccion visual industrial. El pipeline declarado en el Hub es image-text-to-text, por lo que se trata de un modelo vision-lenguaje (VLM) que acepta imagenes junto con instrucciones textuales y devuelve texto.
+Qwen3.5-4B-LoRA-Welding-Component-Segmentation-v2 es un ajuste fino mediante LoRA publicado por el usuario jujeongho en Hugging Face. El nombre del repositorio indica que parte de un modelo base Qwen3.5-4B y que se ha especializado en segmentacion de componentes de soldadura, una tarea de inspeccion visual industrial. El pipeline declarado en el Hub es image-text-to-text, por lo que se trata de un modelo vision-lenguaje (VLM) que acepta imagenes junto con instrucciones textuales y devuelve texto.
 
 El repositorio contiene 4.538.648.576 parametros (aproximadamente 4,54 mil millones) en formato safetensors, con un tamano total de 9,1 GB. Ese tamano es coherente con pesos fusionados en precision bf16 (4,54 mil millones de parametros a 2 bytes por parametro equivalen a unos 9,08 GB), lo que sugiere que el ajuste LoRA se ha fusionado con el modelo base en lugar de publicarse como adaptador separado. No hay informacion sobre el dataset de entrenamiento, los hiperparametros, la licencia ni los idiomas soportados.
 
@@ -31,14 +31,14 @@ La relevancia de esta ficha es limitada pero ilustrativa: se trata de un ejemplo
 
 No se dispone de informacion tecnica sobre la arquitectura. El identificador del modelo sugiere que la base es Qwen3.5-4B, un transformer multimodal de aproximadamente 4,5 mil millones de parametros, pero la model card no confirma ni detalla este extremo, y no se aportan datos sobre el numero de capas, la dimension oculta, el mecanismo de atencion ni el codificador visual empleado. La etiqueta `qwen3_5` en el Hub es el unico indicio de la familia de modelos de origen.
 
-Respecto al entrenamiento, el nombre indica un ajuste mediante LoRA (Low-Rank Adaptation) sobre el modelo base, orientado a segmentacion de componentes de soldadura. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la resolucion de las imagenes, la estrategia de congelacion de capas, el rango de LoRA, la tasa de aprendizaje, la precision (fp32, fp16, bf16 o fp8) ni si hubo etapas de RLHF o DPO. El unico identificador arXiv presente en las etiquetas, `arxiv:1910.09700`, corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla autogenerada de HuggingFace, y no a un articulo sobre este modelo. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, compresion de KV cache, etc.).
+Respecto al entrenamiento, el nombre indica un ajuste mediante LoRA (Low-Rank Adaptation) sobre el modelo base, orientado a segmentacion de componentes de soldadura. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la resolucion de las imagenes, la estrategia de congelacion de capas, el rango de LoRA, la tasa de aprendizaje, la precision (fp32, fp16, bf16 o fp8) ni si hubo etapas de RLHF o DPO. El unico identificador arXiv presente en las etiquetas, `arxiv:1910.09700`, corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla autogenerada de Hugging Face, y no a un articulo sobre este modelo. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, compresion de KV cache, etc.).
 
 ## Capacidades
 
 - Generacion de texto condicionada por imagen: el pipeline declarado es image-text-to-text, por lo que el modelo acepta entradas multimodales y produce respuestas en lenguaje natural.
 - Conversacion multi-turno: la etiqueta `conversational` indica soporte de dialogos con historial.
 - Especializacion en segmentacion de componentes de soldadura: el nombre del repositorio apunta a tareas de identificacion y descripcion de componentes de soldadura en imagenes, presumiblemente en entornos de inspeccion industrial.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse mediante HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse mediante Hugging Face Inference Endpoints.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declaran idiomas).
@@ -81,7 +81,7 @@ No se dispone de datos verificables de rendimiento, contexto, licencia ni idioma
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-LoRA-Welding-Component-Segmentation-v2 | 4,54B | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
+| Qwen3.5-4B-LoRA-Welding-Component-Segmentation-v2 | 4,54B | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
 | Modelo base declarado en el nombre (Qwen3.5-4B) | no disponible | no disponible | no disponible | no verificado en la informacion proporcionada | no disponible |
 | Otros VLM de ~4B de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -102,8 +102,8 @@ La comparacion con alternativas genericas de ~4B (por ejemplo, modelos vision-le
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jujeongho/Qwen3.5-4B-LoRA-Welding-Component-Segmentation-v2
+- Hugging Face: https://huggingface.co/jujeongho/Qwen3.5-4B-LoRA-Welding-Component-Segmentation-v2
 - Paper citado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono, citado por la plantilla autogenerada, no especifico de este modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la plantilla: https://mlco2.github.io/impact
 - Repositorio, paper o demo especificos del modelo: no disponible
-- Perfil del autor en HuggingFace: no disponible mas alla del propio repositorio
+- Perfil del autor en Hugging Face: no disponible mas alla del propio repositorio

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-millie-v3-krea2-lora es un adaptador LoRA de personaje para generación de imágenes texto-a-imagen, publicado por el usuario Zaytron40k en HuggingFace. Se entrena sobre krea/Krea-2-Raw, un Diffusion Transformer (DiT) de 12B parámetros sin destilar, y está diseñado para inferencia sobre krea/Krea-2-Turbo, la variante destilada a 8 pasos. Su función es fijar una identidad visual concreta (una joven mujer en estilo de animación occidental) mediante la palabra disparadora `woman`.
+millie-v3-krea2-lora es un adaptador LoRA de personaje para generación de imágenes texto-a-imagen, publicado por el usuario Zaytron40k en Hugging Face. Se entrena sobre krea/Krea-2-Raw, un Diffusion Transformer (DiT) de 12B parámetros sin destilar, y está diseñado para inferencia sobre krea/Krea-2-Turbo, la variante destilada a 8 pasos. Su función es fijar una identidad visual concreta (una joven mujer en estilo de animación occidental) mediante la palabra disparadora `woman`.
 
 El adaptador usa rango/dim 24 con alpha 24 y se aplica a todas las capas Linear del DiT. Se entrenó con Musubi Tuner durante 12 épocas (1464 pasos) sobre un dataset de 61 imágenes PNG sintéticas generadas con gpt-image-2.5 con captions en lenguaje natural, en una única NVIDIA H100 de 80GB. El repositorio ocupa 2,1 GB e incluye seis checkpoints intermedios.
 
@@ -83,7 +83,7 @@ No se han identificado en la información disponible modelos comparables con dat
 
 | Modelo | Categoría | Parámetros | Resolución / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| millie-v3-krea2-lora | LoRA de personaje sobre DiT de 12B (Krea-2-Raw) | rank 24 / alpha 24; base de 12B | Entrenamiento a 1024 con buckets multirresolución; inferencia a 1024x1280 | No disponible | HuggingFace, 0 descargas y 0 likes en la fecha de consulta |
+| millie-v3-krea2-lora | LoRA de personaje sobre DiT de 12B (Krea-2-Raw) | rank 24 / alpha 24; base de 12B | Entrenamiento a 1024 con buckets multirresolución; inferencia a 1024x1280 | No disponible | Hugging Face, 0 descargas y 0 likes en la fecha de consulta |
 | Otros LoRA de personaje para Krea-2 | LoRA de personaje sobre el mismo DiT | No disponible | No disponible | No disponible | No disponible |
 | LoRA de personaje para familias tipo SDXL o Flux | LoRA de personaje sobre DiT/UNet de otra familia | No disponible | No disponible | No disponible | No disponible |
 
@@ -103,7 +103,7 @@ No se han identificado en la información disponible modelos comparables con dat
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Zaytron40k/millie-v3-krea2-lora
+- Página del modelo en Hugging Face: https://huggingface.co/Zaytron40k/millie-v3-krea2-lora
 - Modelo base de entrenamiento (Krea-2-Raw): https://huggingface.co/krea/Krea-2-Raw
 - Modelo objetivo de inferencia (Krea-2-Turbo): https://huggingface.co/krea/Krea-2-Turbo
 - Musubi Tuner (kohya-ss), entrenador utilizado: https://github.com/kohya-ss/musubi-tuner

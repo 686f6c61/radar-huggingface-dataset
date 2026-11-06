@@ -71,6 +71,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huluhuluu/qwen3-1.7b-eagle3-sharegpt-sw512
+- Repositorio Hugging Face: https://huggingface.co/huluhuluu/qwen3-1.7b-eagle3-sharegpt-sw512
 - Modelo base: Qwen/Qwen3-1.7B (https://huggingface.co/Qwen/Qwen3-1.7B)
 - Framework SpecForge: no se proporciona enlace en la información disponible.

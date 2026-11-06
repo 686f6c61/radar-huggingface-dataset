@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nasutyo/ai_emas_bot es un repositorio de modelo alojado en HuggingFace por el usuario nasutyo, publicado el 29 de septiembre de 2026 y actualizado el mismo dia, unos 17 minutos despues de su creacion. La unica informacion verificable que acompana al repositorio es la licencia (MIT) y la region de publicacion (us); la model card no contiene mas que la declaracion de licencia, sin descripcion, sin ficha tecnica y sin ejemplos de uso.
+nasutyo/ai_emas_bot es un repositorio de modelo alojado en Hugging Face por el usuario nasutyo, publicado el 29 de septiembre de 2026 y actualizado el mismo dia, unos 17 minutos despues de su creacion. La unica informacion verificable que acompana al repositorio es la licencia (MIT) y la region de publicacion (us); la model card no contiene mas que la declaracion de licencia, sin descripcion, sin ficha tecnica y sin ejemplos de uso.
 
 No se dispone de datos sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el pipeline de inferencia declarado. El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es, por tanto, fundamentalmente documental: sirve pa
 | Licencia | MIT |
 | Formato de pesos | no disponible |
 | Autor | nasutyo |
-| Identificador en HuggingFace | nasutyo/ai_emas_bot |
+| Identificador en Hugging Face | nasutyo/ai_emas_bot |
 | Pipeline declarado | no disponible |
 | Region declarada | us |
 | Descargas | 0 |
@@ -98,6 +98,6 @@ No disponible. Al no conocerse la arquitectura, el tamano ni las capacidades del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nasutyo/ai_emas_bot
+- Repositorio en Hugging Face: https://huggingface.co/nasutyo/ai_emas_bot
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.
 - Los resultados de busqueda web recuperados no contienen ningun enlace relacionado con este modelo; las URLs devueltas (benchlm.ai, neural4d.com, nastia.ai, instagram.com/itsnusaai, mossymodels.com) no corresponden a `nasutyo/ai_emas_bot` ni aportan datos sobre el mismo.

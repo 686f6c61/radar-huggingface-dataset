@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FDS-UNeXT es un modelo publicado en HuggingFace por el usuario Jim-myoenk bajo licencia Apache 2.0. El nombre sugiere una variante de la familia UNeXT, una arquitectura de segmentación de imágenes médicas basada en redes convolucionales con diseño tipo U-Net simplificado y módulos MLP. Sin embargo, la model card publicada no contiene descripción, documentación técnica ni información sobre el entrenamiento, por lo que no es posible confirmar la arquitectura real ni la tarea concreta para la que fue entrenado.
+FDS-UNeXT es un modelo publicado en Hugging Face por el usuario Jim-myoenk bajo licencia Apache 2.0. El nombre sugiere una variante de la familia UNeXT, una arquitectura de segmentación de imágenes médicas basada en redes convolucionales con diseño tipo U-Net simplificado y módulos MLP. Sin embargo, la model card publicada no contiene descripción, documentación técnica ni información sobre el entrenamiento, por lo que no es posible confirmar la arquitectura real ni la tarea concreta para la que fue entrenado.
 
 El repositorio no registra descargas ni interacciones, y no incluye pipeline declarado, idiomas soportados ni tarjetas de datos. La fecha de creación y actualización es la misma (2026-11-01), lo que indica que no ha recibido mantenimiento posterior desde su publicación.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FDS-UNeXT | no disponible | no aplica | Apache 2.0 | Repositorio HuggingFace sin documentación |
+| FDS-UNeXT | no disponible | no aplica | Apache 2.0 | Repositorio Hugging Face sin documentación |
 | UNeXT (referencia) | no disponible en esta ficha | no aplica | según implementación original | Código y pesos publicados por sus autores |
 | U-Net clásico | ~7,8 M (configuración original) | no aplica | según implementación | Ampliamente disponible |
-| Segmentación con transformers (p. ej. SegFormer) | variable según variante | no aplica | según variante | Disponible en HuggingFace |
+| Segmentación con transformers (p. ej. SegFormer) | variable según variante | no aplica | según variante | Disponible en Hugging Face |
 
 La comparación es orientativa: no se dispone de datos verificables de FDS-UNeXT que permitan contrastar parámetros, rendimiento ni calidad de segmentación.
 
@@ -79,4 +79,4 @@ La comparación es orientativa: no se dispone de datos verificables de FDS-UNeXT
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jim-myoenk/FDS-UNeXT
+- Hugging Face: https://huggingface.co/Jim-myoenk/FDS-UNeXT

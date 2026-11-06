@@ -76,8 +76,8 @@ La model card incluye explicitamente la nota "_No evaluation results have been p
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| polarisai-robots/bento_ur7e_v1_pi05 | 4,14 mil millones | No aplica (3 imagenes 224x224 + estado de 32 dim.) | Sin resultados de evaluacion publicados | Apache 2.0 | HuggingFace, 0 descargas, 0 valoraciones |
-| lerobot/pi05_base (modelo base) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| polarisai-robots/bento_ur7e_v1_pi05 | 4,14 mil millones | No aplica (3 imagenes 224x224 + estado de 32 dim.) | Sin resultados de evaluacion publicados | Apache 2.0 | Hugging Face, 0 descargas, 0 valoraciones |
+| lerobot/pi05_base (modelo base) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | Otras politicas VLA (OpenVLA, SmolVLA, GR00T N1, RDT-1B) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables en la informacion proporcionada para comparar parametros, contexto, rendimiento o licencia frente a otras politicas VLA de la misma categoria. La unica comparacion sustentada es con el modelo base `lerobot/pi05_base`, del que este repositorio es un ajuste fino de tarea especifica.
@@ -100,7 +100,7 @@ No se dispone de datos verificables en la informacion proporcionada para compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/polarisai-robots/bento_ur7e_v1_pi05
+- Modelo en Hugging Face: https://huggingface.co/polarisai-robots/bento_ur7e_v1_pi05
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/polarisai-robots/bento_ur7e_v1
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=polarisai-robots/bento_ur7e_v1

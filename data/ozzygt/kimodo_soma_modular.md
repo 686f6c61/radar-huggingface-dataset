@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OzzyGT/Kimodo_SOMA_Modular | Bloques de pipeline text-to-motion (diffusers) | no disponible | no disponible | no disponible | Apache-2.0 (codigo); pesos bajo NVIDIA Open Model License | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| nvidia/Kimodo-SOMA-RP-v1.1 | Modelo text-to-motion base | no disponible | no disponible | no disponible | NVIDIA Open Model License (pesos) | HuggingFace |
-| OzzyGT/Kimodo_SOMA_RP_v1_1 | Pesos del modelo de movimiento | no disponible | no disponible | no disponible | NVIDIA Open Model License; codificador de texto bajo Meta Llama 3 Community License | HuggingFace |
+| OzzyGT/Kimodo_SOMA_Modular | Bloques de pipeline text-to-motion (diffusers) | no disponible | no disponible | no disponible | Apache-2.0 (codigo); pesos bajo NVIDIA Open Model License | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| nvidia/Kimodo-SOMA-RP-v1.1 | Modelo text-to-motion base | no disponible | no disponible | no disponible | NVIDIA Open Model License (pesos) | Hugging Face |
+| OzzyGT/Kimodo_SOMA_RP_v1_1 | Pesos del modelo de movimiento | no disponible | no disponible | no disponible | NVIDIA Open Model License; codificador de texto bajo Meta Llama 3 Community License | Hugging Face |
 
 No se dispone de informacion sobre otros modelos comparables de text-to-motion en el material proporcionado.
 
@@ -93,8 +93,8 @@ No se dispone de informacion sobre otros modelos comparables de text-to-motion e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OzzyGT/Kimodo_SOMA_Modular
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/Kimodo-SOMA-RP-v1.1
+- Repositorio Hugging Face: https://huggingface.co/OzzyGT/Kimodo_SOMA_Modular
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/Kimodo-SOMA-RP-v1.1
 - Repositorio de pesos y codigo del modelo: https://huggingface.co/OzzyGT/Kimodo_SOMA_RP_v1_1
 - Repositorio de pesos en GitHub de Kimodo (NVIDIA Labs): https://github.com/nv-tlabs/kimodo
 - Utilidades de geometria de Kimodo (requeridas para foot_cleanup): https://github.com/nv-tlabs/kimodo

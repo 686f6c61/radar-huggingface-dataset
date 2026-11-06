@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-GLB-3D-Coder-GGUF es la distribucion en formato GGUF del modelo ccore/Qwen3.5-4B-GLB-3D-Coder, un ajuste fino especializado del modelo base Qwen/Qwen3.5-4B. Lo publica el usuario prithivMLmods en HuggingFace bajo licencia Apache-2.0. El modelo resuelve un problema muy concreto: transformar descripciones en ingles de personajes, props, vehiculos, edificios o entornos en paginas HTML/JavaScript de Three.js completamente funcionales, con vista previa en navegador, animaciones opcionales y un boton de exportacion a `.glb` para motores como Godot.
+Qwen3.5-4B-GLB-3D-Coder-GGUF es la distribucion en formato GGUF del modelo ccore/Qwen3.5-4B-GLB-3D-Coder, un ajuste fino especializado del modelo base Qwen/Qwen3.5-4B. Lo publica el usuario prithivMLmods en Hugging Face bajo licencia Apache-2.0. El modelo resuelve un problema muy concreto: transformar descripciones en ingles de personajes, props, vehiculos, edificios o entornos en paginas HTML/JavaScript de Three.js completamente funcionales, con vista previa en navegador, animaciones opcionales y un boton de exportacion a `.glb` para motores como Godot.
 
 Con 4.205.751.296 parametros totales, es un modelo compacto pensado para ejecutarse en hardware de consumo. El repositorio incluye cuantizaciones desde Q3_K_M (2,26 GB) hasta BF16 (8,42 GB), ademas de un proyector multimodal `mmproj-bf16` de 676 MB que habilita entrada de imagen y texto en runtimes GGUF compatibles con vision. La relevancia actual radica en que cubre un nicho poco atendido: generacion de codigo 3D procedimental listo para produccion en pipelines de videojuegos indie, con un tamano que permite inferencia local.
 

@@ -4,7 +4,7 @@
 
 Terminus XL Gamma v2-1 es un modelo de difusión latente de texto a imagen desarrollado por terminusresearch, presentado como un checkpoint en progreso de la serie Terminus XL. Se basa en una arquitectura similar a SDXL, pero introduce una programación de ruido de relación señal-ruido (SNR) de terminal cero y un objetivo de predicción de velocidad tanto en entrenamiento como en inferencia. El modelo está diseñado para generar imágenes de alta calidad con un número reducido de pasos de entrenamiento, aprovechando datos con anotaciones (captions) de muy alta calidad.
 
-Este checkpoint concreto, identificado como v2-1, se actualiza de forma aleatoria para evaluación, lo que indica que es una versión intermedia en desarrollo. A pesar de tener un tamaño de repositorio de 890,8 GB (probablemente por múltiples pesos y formatos), el modelo en sí cuenta con aproximadamente 2,57 mil millones de parámetros. Su acceso está restringido en HuggingFace, requiriendo aceptación de condiciones, y se distribuye bajo licencia openrail++.
+Este checkpoint concreto, identificado como v2-1, se actualiza de forma aleatoria para evaluación, lo que indica que es una versión intermedia en desarrollo. A pesar de tener un tamaño de repositorio de 890,8 GB (probablemente por múltiples pesos y formatos), el modelo en sí cuenta con aproximadamente 2,57 mil millones de parámetros. Su acceso está restringido en Hugging Face, requiriendo aceptación de condiciones, y se distribuye bajo licencia openrail++.
 
 La relevancia de este modelo radica en su enfoque en la eficiencia del entrenamiento y la calidad de las captions, lo que podría ofrecer una alternativa interesante a SDXL y otros modelos de difusión para generación de imágenes fotorrealistas o artísticas.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: al ser similar a SDXL, se estima un consumo de entre 8 y 12 GB de VRAM en FP16 para generar imágenes a 1024x1024. No se dispone de datos específicos para este checkpoint.
 - GPU recomendadas: NVIDIA RTX 3080/3090, RTX 4090, A100, H100, o cualquier GPU con al menos 10 GB de VRAM. En consumer, una RTX 3060 de 12 GB podría funcionar con optimizaciones.
 - El tamaño del repositorio (890,8 GB) sugiere que se incluyen múltiples versiones de pesos o formatos, pero para inferencia estándar se puede cargar el checkpoint principal en safetensors.
-- Opciones de despliegue: compatible con la librería diffusers de HuggingFace, por lo que se puede usar con pipelines estándar de StableDiffusionXLPipeline. También podría desplegarse en servicios como Replicate (ya hay una implementación) o mediante servidores de inferencia como Hugging Face Inference Endpoints.
+- Opciones de despliegue: compatible con la librería diffusers de Hugging Face, por lo que se puede usar con pipelines estándar de StableDiffusionXLPipeline. También podría desplegarse en servicios como Replicate (ya hay una implementación) o mediante servidores de inferencia como Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles. Dependerá del hardware y de la resolución de salida.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia con S
 ## Limitaciones y advertencias
 
 - Es un checkpoint en progreso: el modelo se actualiza aleatoriamente para evaluación, por lo que los resultados pueden ser inconsistentes entre versiones y no se garantiza estabilidad.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos automatizados.
 - Licencia openrail++: permite uso comercial, pero con restricciones (por ejemplo, no usar para actividades ilegales o dañinas). Revisar los términos completos.
 - No se han documentado sesgos específicos, pero al ser un modelo de difusión entrenado con datos web, puede reflejar sesgos de género, raza o cultura presentes en el dataset.
 - Riesgo de alucinación visual: como cualquier modelo generativo, puede producir imágenes con artefactos, distorsiones o elementos no deseados, especialmente con prompts complejos.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia con S
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/terminusresearch/terminus-xl-gamma-v2-1
+- Hugging Face: https://huggingface.co/terminusresearch/terminus-xl-gamma-v2-1
 - Página del modelo v2 (preview): https://huggingface.co/terminusresearch/terminus-xl-gamma-v2
 - Implementación en Replicate: https://replicate.com/charlesmccarthy/terminus-xl-gamma-v2/api
 - Referencia en Toolify: https://www.toolify.ai/ai-model/bghira-terminus-xl-gamma-v2-1

@@ -78,7 +78,7 @@ La principal diferencia es que este modelo está específicamente entrenado para
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-4-step-105000
+- Repositorio del modelo en Hugging Face: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-4-step-105000
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Implementación oficial de EAGLE (EAGLE-Qwen3): https://github.com/Yunhai-Hu/EAGLE-Qwen3
 - Otros checkpoints de la serie (ejemplos): https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-7-step-185000 y https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-3-step-75000

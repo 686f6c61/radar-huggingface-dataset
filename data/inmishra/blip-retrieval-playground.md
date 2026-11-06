@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`inmishra/blip-retrieval-playground` es un repositorio de HuggingFace publicado por el usuario inmishra que contiene una implementacion funcional de BLIP orientada a tareas de recuperacion (retrieval) texto-imagen, configurada con un perfil de arquitectura denominado "giant". No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: la propia model card lo describe explicitamente como un punto de partida experimental cuyo `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests).
+`inmishra/blip-retrieval-playground` es un repositorio de Hugging Face publicado por el usuario inmishra que contiene una implementacion funcional de BLIP orientada a tareas de recuperacion (retrieval) texto-imagen, configurada con un perfil de arquitectura denominado "giant". No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: la propia model card lo describe explicitamente como un punto de partida experimental cuyo `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests).
 
 El interes del repositorio es fundamentalmente pedagogico y de reproducibilidad: incluye el codigo de entrenamiento (`finetune.py`), el `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto basada en el optimizador Adafactor y un schedule de warmup constante. La model card insiste en que no se reclama ninguna puntuacion de benchmark y que cualquier evaluacion futura deberia reportarse por separado de los valores por defecto aqui incluidos.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| inmishra/blip-retrieval-playground | 24.832 | no disponible | sin benchmarks publicados | MIT | HuggingFace, checkpoint de inicializacion |
+| inmishra/blip-retrieval-playground | 24.832 | no disponible | sin benchmarks publicados | MIT | Hugging Face, checkpoint de inicializacion |
 | BLIP (Salesforce) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | BLIP-2 | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | CLIP (OpenAI) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
@@ -81,5 +81,5 @@ La comparacion cuantitativa con alternativas de la misma categoria (retrieval te
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/inmishra/blip-retrieval-playground
+- Hugging Face: https://huggingface.co/inmishra/blip-retrieval-playground
 - Resultados de busqueda web: no se han encontrado enlaces relevantes (papers, blogs, repos o demos) asociados a este modelo en la informacion proporcionada.

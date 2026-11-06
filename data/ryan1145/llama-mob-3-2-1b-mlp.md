@@ -70,9 +70,9 @@ La perplejidad normalizada se calcula sumando sobre los codigos de vocabulario v
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-MoB-3.2-1B-MLP | 32,26 M (cabeza) + backbone 1B | no disponible (entrenado a 512) | Cabeza MoB con codebook binario y destilacion | llama3.2 | HuggingFace, requiere MoB_Head |
+| Llama-MoB-3.2-1B-MLP | 32,26 M (cabeza) + backbone 1B | no disponible (entrenado a 512) | Cabeza MoB con codebook binario y destilacion | llama3.2 | Hugging Face, requiere MoB_Head |
 | CFHead (referencia del proyecto) | no disponible | no disponible | Cabeza de salida alternativa comparada en la model card | no disponible | no disponible |
-| Llama-3.2-1B (original) | 1,24 B aprox. | 128.000 tokens (segun modelo base) | Transformer causal denso con `lm_head` estandar | llama3.2 | HuggingFace, Transformers |
+| Llama-3.2-1B (original) | 1,24 B aprox. | 128.000 tokens (segun modelo base) | Transformer causal denso con `lm_head` estandar | llama3.2 | Hugging Face, Transformers |
 
 La model card senala que la comparacion del proyecto encontro un rendimiento cercano a CFHead en varios ajustes, pero sin superar su compromiso global de aceleracion. No se dispone de datos de parametros ni contexto de CFHead en la informacion proporcionada.
 
@@ -90,6 +90,6 @@ La model card senala que la comparacion del proyecto encontro un rendimiento cer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryan1145/Llama-MoB-3.2-1B-MLP
+- Modelo en Hugging Face: https://huggingface.co/ryan1145/Llama-MoB-3.2-1B-MLP
 - Repositorio MoB_Head: https://github.com/ryan-he-47/MoB_Head
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B

@@ -109,7 +109,7 @@ Rendimiento en dispositivo Snapdragon 8 Elite Gen 5 (SM8850) con llama.cpp b1207
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fraQtl/Qwen3.5-4B-NPU-GGUF
+- Repositorio Hugging Face: https://huggingface.co/fraQtl/Qwen3.5-4B-NPU-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Comparador unsloth: https://huggingface.co/unsloth/Qwen3.5-4B-GGUF
 - Referencia GPTQ (Frantar et al., 2022): no disponible en la información proporcionada

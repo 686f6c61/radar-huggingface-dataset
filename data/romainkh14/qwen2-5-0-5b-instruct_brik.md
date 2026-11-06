@@ -70,9 +70,9 @@ Estas cifras corresponden a la variante flat int4; la variante mixta int8+int4 p
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | **Qwen2.5-0.5B-Instruct_BRIK** (este) | ~0.5B | No especificado (base: 32K) | .brik (int4/int8) | Apache-2.0 | Navegador WebGPU |
-| **Qwen2.5-0.5B-Instruct** (original) | ~0.5B | 32K | safetensors | Apache-2.0 | HuggingFace, Ollama, vLLM |
-| **Llama 3.2 1B** | ~1.0B | 128K | safetensors, GGUF | Llama 3.2 | HuggingFace, Ollama, vLLM |
-| **Gemma 2 2B** | ~2.0B | 8K | safetensors, GGUF | Gemma | HuggingFace, Ollama, vLLM |
+| **Qwen2.5-0.5B-Instruct** (original) | ~0.5B | 32K | safetensors | Apache-2.0 | Hugging Face, Ollama, vLLM |
+| **Llama 3.2 1B** | ~1.0B | 128K | safetensors, GGUF | Llama 3.2 | Hugging Face, Ollama, vLLM |
+| **Gemma 2 2B** | ~2.0B | 8K | safetensors, GGUF | Gemma | Hugging Face, Ollama, vLLM |
 
 La comparativa muestra que este modelo BRIK es una versión cuantizada y empaquetada del Qwen2.5-0.5B-Instruct, con la ventaja de ejecutarse en el navegador sin servidor. Frente a Llama 3.2 1B y Gemma 2 2B, ofrece menor capacidad (0.5B frente a 1B y 2B) pero un tamaño de archivo mucho menor, lo que lo hace adecuado para entornos con poco ancho de banda o requisitos de privacidad extremos. No se dispone de benchmarks comparativos de calidad entre estos modelos en la información proporcionada.
 
@@ -89,10 +89,10 @@ La comparativa muestra que este modelo BRIK es una versión cuantizada y empaque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/romainkh14/Qwen2.5-0.5B-Instruct_BRIK
+- Modelo en Hugging Face: https://huggingface.co/romainkh14/Qwen2.5-0.5B-Instruct_BRIK
 - Demo interactiva: https://brimkern.com/chat?model=romainkh14/Qwen2.5-0.5B-Instruct_BRIK
 - Sitio de Brimkern: https://brimkern.com
 - Repositorio de Brimkern (incluye scripts de benchmark): https://github.com/RomainKH/Brimkern
 - Especificación del formato BRIK: https://github.com/RomainKH/Brimkern/blob/main/BRIK_FORMAT.md
-- Colección Qwen2.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen25
+- Colección Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25
 - Documentación del modelo base en Ollama: https://ollama.com/library/qwen2.5:0.5b-instruct

@@ -58,7 +58,7 @@ No se incluyen comparaciones con otros modelos en la información disponible.
 - VRAM estimada: el modelo requiere tan solo 777,43 MB de VRAM en el entorno de evaluacion del autor, por lo que puede ejecutarse en GPUs con 1 GB o mas de memoria dedicada.
 - GPU recomendada: cualquier GPU con al menos 1 GB de VRAM, como una NVIDIA RTX 1650 o superior; tambien es viable el uso de GPUs embebidas tipo Jetson.
 - Compatibilidad con GPU de consumo: si, el modelo cabe en tarjetas de consumo de gama baja, lo que facilita el despliegue local.
-- Opciones de despliegue: no se mencionan plataformas especificas en la informacion del autor. Al ser un modelo publicado en HuggingFace con pipeline de clasificacion de texto, cabe esperar que pueda cargarse mediante la biblioteca Transformers de PyTorch, aunque esto no esta confirmado en la documentacion.
+- Opciones de despliegue: no se mencionan plataformas especificas en la informacion del autor. Al ser un modelo publicado en Hugging Face con pipeline de clasificacion de texto, cabe esperar que pueda cargarse mediante la biblioteca Transformers de PyTorch, aunque esto no esta confirmado en la documentacion.
 - Latencia y throughput: el autor reporta un tiempo de evaluacion pura de 44,29 s, pero no especifica el tamano del dataset de evaluacion ni el hardware exacto, por lo que no es posible estimar latencia por muestra ni throughput global.
 
 ## Comparativa con modelos similares
@@ -73,6 +73,6 @@ No se ha encontrado información comparable en los datos proporcionados. El mode
 - El autor no ha publicado el dataset de evaluacion completo ni las condiciones exactas del hardware, por lo que los valores de VRAM y tiempo pueden no ser reproducibles en otros entornos.
 
 ## Enlaces
-- HuggingFace: [Hooshaai/svd-linear-attention-gpt2-bam-umoe](https://huggingface.co/Hooshaai/svd-linear-attention-gpt2-bam-umoe)
+- Hugging Face: [Hooshaai/svd-linear-attention-gpt2-bam-umoe](https://huggingface.co/Hooshaai/svd-linear-attention-gpt2-bam-umoe)
 - Sitio del laboratorio: [HOOSHA AI — Frontier Artificial Intelligence & Open Research](https://hooshaai.github.io/)
 - GitHub del autor: [Hooshaai](https://github.com/Hooshaai)

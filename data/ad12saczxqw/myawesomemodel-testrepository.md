@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepository es un repositorio publicado en HuggingFace por el usuario AD12SACZXQW. Por su nombre, por el hecho de no tener descargas ni likes y por un tamano de repositorio de 0.0 GB, se trata de un repositorio de prueba o plantilla, no de un modelo entrenado listo para produccion. Las etiquetas declaradas son transformers, pytorch, bert, feature-extraction y license:mit, con pipeline de feature-extraction, lo que apuntaria a un modelo encoder-only tipo BERT destinado a generar embeddings.
+MyAwesomeModel-TestRepository es un repositorio publicado en Hugging Face por el usuario AD12SACZXQW. Por su nombre, por el hecho de no tener descargas ni likes y por un tamano de repositorio de 0.0 GB, se trata de un repositorio de prueba o plantilla, no de un modelo entrenado listo para produccion. Las etiquetas declaradas son transformers, pytorch, bert, feature-extraction y license:mit, con pipeline de feature-extraction, lo que apuntaria a un modelo encoder-only tipo BERT destinado a generar embeddings.
 
 Existe una contradiccion importante entre los metadatos tecnicos y la model card. Mientras que las etiquetas describen un modelo BERT de extraccion de caracteristicas, la model card describe un supuesto asistente generativo con modo de razonamiento, function calling, busqueda web mejorada y mejoras en matematicas y programacion. Ademas, la tabla de benchmarks de la propia model card usa nombres genericos ("Model1", "Model2", "Model1-v2", "MyAwesomeModel") sin identificar que modelos son ni la metodologia de evaluacion.
 
@@ -94,9 +94,9 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | MyAwesomeModel-TestRepository | no disponible | no disponible | MIT | repositorio vacio, 0 descargas |
-| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | pesos publicos en HuggingFace |
-| all-MiniLM-L6-v2 | 22,7 M | 512 tokens | Apache 2.0 | pesos publicos en HuggingFace |
-| e5-base | 110 M | 512 tokens | MIT | pesos publicos en HuggingFace |
+| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | pesos publicos en Hugging Face |
+| all-MiniLM-L6-v2 | 22,7 M | 512 tokens | Apache 2.0 | pesos publicos en Hugging Face |
+| e5-base | 110 M | 512 tokens | MIT | pesos publicos en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -112,7 +112,7 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AD12SACZXQW/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/AD12SACZXQW/MyAwesomeModel-TestRepository
 - Repositorio de codigo: la model card menciona "our code repository" sin proporcionar URL.
 - Web oficial y API: la model card menciona "our official website" sin proporcionar URL.
 - Los resultados de la busqueda web realizada no contienen informacion relevante sobre este modelo; los enlaces devueltos corresponden a Google Chrome y Google Calendar.

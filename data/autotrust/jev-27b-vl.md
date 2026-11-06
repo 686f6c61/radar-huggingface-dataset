@@ -111,7 +111,7 @@ La comparativa mas informativa de la model card es funcional, no de parametros: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/autotrust/JEV-27B-VL
+- Modelo en Hugging Face: https://huggingface.co/autotrust/JEV-27B-VL
 - Modelo base textual (referencia del autor): https://huggingface.co/autotrust/JEV-27B
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper citado en los metadatos: https://arxiv.org/abs/2512.16899

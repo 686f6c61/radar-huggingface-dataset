@@ -4,7 +4,7 @@
 
 El modelo `SaitejSamudrala/gemma_delivered_leg1_v2` es un ajuste fino (fine-tune) del modelo base `unsloth/gemma-4-E2B-it`, desarrollado por SaitejSamudrala. Se ha entrenado con la librería Unsloth, que optimiza el proceso de entrenamiento, y se distribuye bajo licencia Apache 2.0. Está orientado exclusivamente al idioma inglés y está diseñado para su uso con la librería transformers y text-generation-inference.
 
-Este modelo se presenta como una variante especializada del modelo Gemma 4 de Google, aunque no se proporcionan detalles sobre el conjunto de datos de ajuste ni las tareas específicas para las que fue optimizado. Con un tamaño de repositorio de solo 0.2 GB, sugiere que se trata de un modelo de parámetros reducidos, probablemente en el rango de 2 mil millones, pero esta información no está confirmada en la ficha técnica. Su relevancia actual es limitada, dado que no cuenta con descargas ni valoraciones en HuggingFace, lo que indica que es un proyecto experimental o de uso personal.
+Este modelo se presenta como una variante especializada del modelo Gemma 4 de Google, aunque no se proporcionan detalles sobre el conjunto de datos de ajuste ni las tareas específicas para las que fue optimizado. Con un tamaño de repositorio de solo 0.2 GB, sugiere que se trata de un modelo de parámetros reducidos, probablemente en el rango de 2 mil millones, pero esta información no está confirmada en la ficha técnica. Su relevancia actual es limitada, dado que no cuenta con descargas ni valoraciones en Hugging Face, lo que indica que es un proyecto experimental o de uso personal.
 
 ## Especificaciones tecnicas
 
@@ -63,5 +63,5 @@ No se dispone de informacion sobre modelos comparables. El modelo base `unsloth/
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/SaitejSamudrala/gemma_delivered_leg1_v2)
+- [Modelo en Hugging Face](https://huggingface.co/SaitejSamudrala/gemma_delivered_leg1_v2)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)

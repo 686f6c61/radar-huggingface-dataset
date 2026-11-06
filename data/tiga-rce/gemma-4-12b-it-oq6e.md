@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TiGa-RCE/gemma-4-12B-it-oQ6e es una cuantizacion de precision mixta de 6 bits de un modelo de la familia Gemma 4, publicada por el usuario TiGa-RCE en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos a formato MLX orientada a inferencia local en hardware Apple Silicon. El repositorio declara un total de 11.907.350.320 parametros (unos 11,9 mil millones) y un tamano de 10,0 GB, coherente con una representacion de 6 bits mas los metadatos de escalado.
+TiGa-RCE/gemma-4-12B-it-oQ6e es una cuantizacion de precision mixta de 6 bits de un modelo de la familia Gemma 4, publicada por el usuario TiGa-RCE en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos a formato MLX orientada a inferencia local en hardware Apple Silicon. El repositorio declara un total de 11.907.350.320 parametros (unos 11,9 mil millones) y un tamano de 10,0 GB, coherente con una representacion de 6 bits mas los metadatos de escalado.
 
 La cuantizacion se ha realizado con la herramienta oQ, integrada en oMLX v0.6.4, que aplica precision mixta en lugar de una cuantizacion uniforme. El repositorio indica un group size de 64, lo que implica que cada bloque de 64 pesos comparte un factor de escala, con un sobrecoste de almacenamiento de aproximadamente 0,25 a 0,5 bits por peso. El formato de pesos es safetensors en la disposicion que espera la libreria `mlx`.
 
@@ -92,7 +92,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TiGa-RCE/gemma-4-12B-it-oQ6e
+- Hugging Face: https://huggingface.co/TiGa-RCE/gemma-4-12B-it-oQ6e
 - Repositorio de oQ / oMLX (herramienta de cuantizacion citada en la model card): https://github.com/jundot/omlx
 - Paper, blog o demo del modelo: no disponible
 - Resultados de busqueda web relevantes: ninguno (los resultados obtenidos no guardan relacion con el modelo)

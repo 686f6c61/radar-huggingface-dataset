@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nex123131/evimm es un repositorio de modelo alojado en HuggingFace por el usuario Nex123131. En el momento de redactar esta ficha, la model card publicada por el autor esta practicamente vacia: unicamente contiene la declaracion de licencia `llama4`, sin descripcion, sin arquitectura declarada, sin tamano de parametros y sin informacion sobre datos de entrenamiento. El repositorio registra 0 descargas y 0 likes, y no tiene ningun pipeline de inferencia asociado en la plataforma.
+Nex123131/evimm es un repositorio de modelo alojado en Hugging Face por el usuario Nex123131. En el momento de redactar esta ficha, la model card publicada por el autor esta practicamente vacia: unicamente contiene la declaracion de licencia `llama4`, sin descripcion, sin arquitectura declarada, sin tamano de parametros y sin informacion sobre datos de entrenamiento. El repositorio registra 0 descargas y 0 likes, y no tiene ningun pipeline de inferencia asociado en la plataforma.
 
 No es posible determinar que problema resuelve el modelo ni por que seria relevante, ya que no se ha publicado ningun artefacto tecnico verificable: no hay pesos listados, no hay ficha de uso, no hay ejemplos y no hay documentacion adicional. La unica senal disponible es la etiqueta de licencia, que apunta a la Llama 4 Community License, lo que sugiere —sin confirmacion— una posible relacion con la familia Llama 4, pero esto no puede verificarse con la informacion proporcionada.
 
@@ -20,10 +20,10 @@ Por tanto, esta ficha debe leerse como un registro de un repositorio sin conteni
 | Idiomas soportados | no disponible |
 | Licencia | llama4 (Llama 4 Community License, segun la etiqueta del repositorio) |
 | Formato de pesos | no disponible |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tamano del repositorio | no disponible |
-| Fecha de creacion | 2026-10-12 (segun metadatos de HuggingFace) |
-| Fecha de ultima actualizacion | 2026-10-12 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-12 (segun metadatos de Hugging Face) |
+| Fecha de ultima actualizacion | 2026-10-12 (segun metadatos de Hugging Face) |
 | Descargas | 0 |
 | Likes | 0 |
 
@@ -75,7 +75,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nex123131/evimm | no disponible | no disponible | no disponible | llama4 | Repositorio en HuggingFace sin artefactos verificables |
+| Nex123131/evimm | no disponible | no disponible | no disponible | llama4 | Repositorio en Hugging Face sin artefactos verificables |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nex123131/evimm
+- Repositorio en Hugging Face: https://huggingface.co/Nex123131/evimm
 - Model card original: no disponible (la model card publicada solo contiene la declaracion `license: llama4`)
 - Paper o informe tecnico: no disponible
 - Blog o anuncio del autor: no disponible

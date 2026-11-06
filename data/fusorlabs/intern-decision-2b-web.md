@@ -85,7 +85,7 @@ La diferencia clave frente al modelo base es el formato: la versión original es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fusorlabs/intern-decision-2b-web
+- Repositorio Hugging Face: https://huggingface.co/fusorlabs/intern-decision-2b-web
 - Modelo base: https://huggingface.co/internlm/Intern-Decision-2B
 - Runtime: https://github.com/fusor-rs/intern-decision-wasm
 - Librería fusor-ai: https://github.com/fusor-rs/fusor-ai

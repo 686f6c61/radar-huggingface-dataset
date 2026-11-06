@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`beit-base-patch16-224-galaxy10-decals-full-v2` es un modelo de clasificación de imágenes desarrollado por el usuario de HuggingFace `matthieulel`, consistente en un ajuste fino completo (todos los parámetros actualizados) del backbone `microsoft/beit-base-patch16-224` sobre el conjunto de datos Galaxy10 DECaLS. Su tarea es la clasificación de morfología galáctica en 10 clases, un problema clásico de astronomía observacional que tradicionalmente se abordaba con extracción de características manual o pipelines ad hoc.
+`beit-base-patch16-224-galaxy10-decals-full-v2` es un modelo de clasificación de imágenes desarrollado por el usuario de Hugging Face `matthieulel`, consistente en un ajuste fino completo (todos los parámetros actualizados) del backbone `microsoft/beit-base-patch16-224` sobre el conjunto de datos Galaxy10 DECaLS. Su tarea es la clasificación de morfología galáctica en 10 clases, un problema clásico de astronomía observacional que tradicionalmente se abordaba con extracción de características manual o pipelines ad hoc.
 
 El modelo forma parte de una colección más amplia, el *Vision Foundation Models Benchmark*, que evalúa 40 backbones preentrenados bajo dos regímenes de adaptación (fine-tuning completo y adaptación con parámetros congelados) siguiendo el protocolo revisado del artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026). Con 85,7 millones de parámetros y una ventana de entrada fija de 224x224 píxeles, es un modelo compacto y desplegable en hardware modesto.
 
@@ -33,7 +33,7 @@ El entrenamiento se realizó sobre Galaxy10 DECaLS (17.736 imágenes). El split 
 - Extracción de características visuales de alta dimensión mediante el backbone BEiT ajustado.
 - Inferencia determinista con logits por clase; admite cálculo de probabilidades vía softmax.
 - Funciona con el pipeline `image-classification` de transformers y con `AutoModelForImageClassification`.
-- Compatible con endpoints de HuggingFace (`endpoints_compatible` en los tags).
+- Compatible con endpoints de Hugging Face (`endpoints_compatible` en los tags).
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generación de texto.
 - No tiene capacidades multilingües ni procesamiento de audio o vídeo.
 - No dispone de modo *thinking* ni de salida en lenguaje natural.
@@ -66,7 +66,7 @@ El autor publica además las métricas por época de la seed 42. El mejor result
 - **VRAM estimada para inferencia**: en fp32, los pesos ocupan aproximadamente 0,34 GB (85,7 M de parámetros x 4 bytes); con activaciones y batch pequeño, el consumo se mantiene por debajo de 2 GB. En fp16/bf16 bajaría a unos 0,17 GB de pesos.
 - **GPU recomendadas**: cualquier GPU con al menos 4 GB de VRAM es suficiente; una RTX 3060, RTX 4060, RTX 4090, A100 o H100 funcionan sin problema. Para lotes grandes de inferencia conviene una GPU con más memoria (A100 40/80 GB, H100) para maximizar throughput.
 - **Cabe en GPU de consumo**: sí, en cualquier GPU consumer moderna con 4 GB o más (GTX 1650, RTX 3050, RTX 4060, etc.).
-- **Opciones de despliegue**: `transformers` con `AutoModelForImageClassification` (vía documentada por el autor), pipeline `image-classification`, endpoints de HuggingFace (tag `endpoints_compatible`), y exportación a TorchScript/ONNX no documentada oficialmente pero viable dado el formato estándar de transformers. No se documentan pesos GGUF ni compatibilidad con llama.cpp u Ollama (no aplica a un modelo de visión).
+- **Opciones de despliegue**: `transformers` con `AutoModelForImageClassification` (vía documentada por el autor), pipeline `image-classification`, endpoints de Hugging Face (tag `endpoints_compatible`), y exportación a TorchScript/ONNX no documentada oficialmente pero viable dado el formato estándar de transformers. No se documentan pesos GGUF ni compatibilidad con llama.cpp u Ollama (no aplica a un modelo de visión).
 - **Latencia y throughput estimados**: no disponibles en la información proporcionada. El autor no publica mediciones de latencia ni de imágenes por segundo.
 - **Requisitos de software**: PyTorch 2.3.0, transformers 4.37.2, datasets 2.19.1, torchvision 0.18.0 (versiones usadas en el entrenamiento).
 
@@ -76,9 +76,9 @@ No se dispone en la información proporcionada de resultados de otros backbones 
 
 | Modelo | Parametros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `matthieulel/beit-base-patch16-224-galaxy10-decals-full-v2` | 85,7 M | 224x224 px | Clasificación de 10 clases de morfología galáctica | apache-2.0 | HuggingFace (14 descargas) |
-| `microsoft/beit-base-patch16-224` | 86,0 M aprox. (BEiT-Base) | 224x224 px | Backbone de visión preentrenado (ImageNet-22k) | no disponible en la información | HuggingFace |
-| Otros backbones del *Vision Foundation Models Benchmark* | no disponible | no disponible | Clasificación de morfología galáctica | no disponible | Colección del autor en HuggingFace |
+| `matthieulel/beit-base-patch16-224-galaxy10-decals-full-v2` | 85,7 M | 224x224 px | Clasificación de 10 clases de morfología galáctica | apache-2.0 | Hugging Face (14 descargas) |
+| `microsoft/beit-base-patch16-224` | 86,0 M aprox. (BEiT-Base) | 224x224 px | Backbone de visión preentrenado (ImageNet-22k) | no disponible en la información | Hugging Face |
+| Otros backbones del *Vision Foundation Models Benchmark* | no disponible | no disponible | Clasificación de morfología galáctica | no disponible | Colección del autor en Hugging Face |
 
 No se dispone de datos de rendimiento de las alternativas sobre el mismo conjunto de test en la información proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento de las alternativas sobre el mismo conjunt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/beit-base-patch16-224-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/beit-base-patch16-224-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/microsoft/beit-base-patch16-224
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de métricas por época y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

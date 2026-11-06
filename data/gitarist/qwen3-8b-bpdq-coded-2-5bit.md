@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BPDQ coded 2.5-bit es una cuantización extrema del modelo Qwen3-8B de Alibaba Qwen, publicada por el usuario `gitarist` en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una reescritura de los pesos lineales de Qwen3-8B en tres planos de bits por peso, con codificación de los dos planos bajos por bloques de 8 pesos, de forma que cada bloque ocupa 18 bits. Sumando coeficientes fp16 cada 256 columnas, el resultado son 2,5 bits por peso en las capas lineales, con embeddings a 4 bits y cabeza de salida a 8 bits, en un repositorio de 3,8 GB.
+BPDQ coded 2.5-bit es una cuantización extrema del modelo Qwen3-8B de Alibaba Qwen, publicada por el usuario `gitarist` en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una reescritura de los pesos lineales de Qwen3-8B en tres planos de bits por peso, con codificación de los dos planos bajos por bloques de 8 pesos, de forma que cada bloque ocupa 18 bits. Sumando coeficientes fp16 cada 256 columnas, el resultado son 2,5 bits por peso en las capas lineales, con embeddings a 4 bits y cabeza de salida a 8 bits, en un repositorio de 3,8 GB.
 
 El interés técnico está en el método de compresión: combina codificación block-Babai, un codeword de peso par de 7 bits para el segundo plano y un código Reed-Muller RM(1,3) de 3 bits para el tercero, lo que permite reconstruir los pesos con una penalización de calidad medible (KL de 0,254 frente a fp16 en WikiText-2) y sin necesidad de recalcular quantización en tiempo de carga. Sobre esa base se aplicaron 3.056 pasos de QAT con destilación de conocimiento y 250 pasos de GRPO para recuperar capacidades.
 
@@ -86,8 +86,8 @@ Throughput de decodificación medido por el autor con vLLM en una RTX 4090: 231 
 
 | Modelo | Parametros | bits/peso | Tamano en disco | Contexto | Media 12 tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Qwen3-8B (fp16) | ~8,2 B | 16 | ~16 GB (no indicado en la info) | 32.768 nativos / 131.072 con YaRN | 80,6 | Apache 2.0 | HuggingFace oficial |
-| Qwen3-8B-BPDQ-coded 2.5bit | ~8,2 B (1.001.803.008 elementos empaquetados) | 2,5 | 3,8 GB | No indicado (heredado del base) | 74,5 | Apache 2.0 | HuggingFace, autor individual, 0 descargas |
+| Qwen3-8B (fp16) | ~8,2 B | 16 | ~16 GB (no indicado en la info) | 32.768 nativos / 131.072 con YaRN | 80,6 | Apache 2.0 | Hugging Face oficial |
+| Qwen3-8B-BPDQ-coded 2.5bit | ~8,2 B (1.001.803.008 elementos empaquetados) | 2,5 | 3,8 GB | No indicado (heredado del base) | 74,5 | Apache 2.0 | Hugging Face, autor individual, 0 descargas |
 | Cuantizaciones de 4 bits de Qwen3-8B (AWQ/GPTQ) | ~8,2 B | ~4 | ~5-6 GB | Igual que el base | No disponible | Apache 2.0 | Múltiples repos comunitarios |
 
 No se dispone de resultados de benchmarks publicados para las alternativas de 4 bits dentro de la información proporcionada, por lo que la comparación numérica directa solo puede hacerse contra el fp16 del propio autor. Frente a la cuantización de 4 bits, este modelo reduce el espacio en disco un 25-35 % adicional a cambio de una pérdida de calidad documentada y de un ecosistema de despliegue mucho más restringido (solo vLLM con módulo propio).
@@ -107,7 +107,7 @@ No se dispone de resultados de benchmarks publicados para las alternativas de 4 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gitarist/Qwen3-8B-BPDQ-coded-2.5bit
+- Modelo en Hugging Face: https://huggingface.co/gitarist/Qwen3-8B-BPDQ-coded-2.5bit
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Paper, blog o repositorio del método BPDQ: no disponible en la información proporcionada.
 - Demo o espacio de inferencia: no disponible.

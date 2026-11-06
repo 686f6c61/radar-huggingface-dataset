@@ -76,9 +76,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, etc.) en la
 
 | Modelo | Parametros | Contexto | GSM8K test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5-3b-gsm8k-distill | 3.085.938.688 | no disponible | 84,1% (estricto) | qwen-research | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| Qwen/Qwen2.5-3B (base) | 3.085.938.688 | no disponible | 6,8% (estricto) / 32,9% (incl. boxed) | qwen-research | HuggingFace (modelo base oficial) |
-| Qwen/Qwen2.5-7B-Instruct (profesor) | no disponible en la informacion proporcionada | no disponible | 41,8% (estricto) / 91,2% (incl. boxed) | qwen-research (heredada del modelo base) | HuggingFace (modelo oficial) |
+| qwen2.5-3b-gsm8k-distill | 3.085.938.688 | no disponible | 84,1% (estricto) | qwen-research | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| Qwen/Qwen2.5-3B (base) | 3.085.938.688 | no disponible | 6,8% (estricto) / 32,9% (incl. boxed) | qwen-research | Hugging Face (modelo base oficial) |
+| Qwen/Qwen2.5-7B-Instruct (profesor) | no disponible en la informacion proporcionada | no disponible | 41,8% (estricto) / 91,2% (incl. boxed) | qwen-research (heredada del modelo base) | Hugging Face (modelo oficial) |
 | L2-qlora-sft (variante del mismo curso) | 3.085.938.688 (mismo base) | no disponible | 71,3% (estricto) | qwen-research | No se indica repositorio publico en la informacion disponible |
 
 La comparativa se limita a los modelos documentados en la model card; no se dispone de datos de otros modelos de 3B especializados en GSM8K en la informacion proporcionada.
@@ -96,7 +96,7 @@ La comparativa se limita a los modelos documentados en la model card; no se disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiaeyan423/qwen2.5-3b-gsm8k-distill
+- Modelo en Hugging Face: https://huggingface.co/jiaeyan423/qwen2.5-3b-gsm8k-distill
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B
 - Licencia del modelo base (Qwen Research License): https://huggingface.co/Qwen/Qwen2.5-3B/blob/main/LICENSE
 - Profesor de destilacion: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

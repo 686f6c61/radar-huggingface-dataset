@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NeoAgent-8B es un ajuste fino (finetune) del modelo multimodal Qwen3-VL-8B-Instruct, publicado por el usuario Goodfly256 en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de 8 mil millones de parametros orientado a tareas de imagen-texto-a-texto (image-text-to-text), es decir, capaz de procesar entradas conjuntas de imagen y texto para generar respuestas textuales. El modelo conserva la arquitectura y las capacidades del Qwen3-VL-8B-Instruct original, sobre el que se ha aplicado un ajuste adicional cuyos detalles de entrenamiento no se especifican en la informacion disponible.
+NeoAgent-8B es un ajuste fino (finetune) del modelo multimodal Qwen3-VL-8B-Instruct, publicado por el usuario Goodfly256 en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de 8 mil millones de parametros orientado a tareas de imagen-texto-a-texto (image-text-to-text), es decir, capaz de procesar entradas conjuntas de imagen y texto para generar respuestas textuales. El modelo conserva la arquitectura y las capacidades del Qwen3-VL-8B-Instruct original, sobre el que se ha aplicado un ajuste adicional cuyos detalles de entrenamiento no se especifican en la informacion disponible.
 
 La relevancia de este modelo radica en su herencia directa de la familia Qwen3-VL, que incorpora capacidades de vision-lenguaje, razonamiento multimodal y soporte multilingue. Al estar publicado con licencia Apache 2.0, permite uso comercial sin las restricciones habituales de otras licencias. Sin embargo, la model card publicada es extremadamente escueta: unicamente incluye metadatos de licencia, modelo base, idiomas y pipeline, sin detallar el proceso de entrenamiento, los datos utilizados ni los resultados de evaluacion.
 
@@ -80,6 +80,6 @@ La comparativa se limita al modelo base, ya que no se han proporcionado datos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Goodfly256/NeoAgent-8B
+- Hugging Face: https://huggingface.co/Goodfly256/NeoAgent-8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

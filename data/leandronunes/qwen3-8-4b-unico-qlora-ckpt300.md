@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-4B-UniCo-QLoRA-ckpt300 es un adaptador LoRA entrenado mediante QLoRA (cuantización de 4 bits en formato NF4) sobre el modelo base `empero-ai/Qwen3.8-4B-Distill`. Lo publica el usuario leandronunes en HuggingFace y su objetivo declarado es adaptar el modelo a tareas de razonamiento científico y causal, no a una simple adaptación léxica o temática de un dominio concreto.
+Qwen3.8-4B-UniCo-QLoRA-ckpt300 es un adaptador LoRA entrenado mediante QLoRA (cuantización de 4 bits en formato NF4) sobre el modelo base `empero-ai/Qwen3.8-4B-Distill`. Lo publica el usuario leandronunes en Hugging Face y su objetivo declarado es adaptar el modelo a tareas de razonamiento científico y causal, no a una simple adaptación léxica o temática de un dominio concreto.
 
 El adaptador se entrenó con el dataset UniCo, en una versión balanceada de 2.400 ejemplos, con una longitud máxima de secuencia de 10.240 tokens. El entrenamiento se hizo con Unsloth y TRL (`SFTTrainer`) sobre una Tesla T4 de 14,5 GB, con LoRA de rango 16, alpha 32 y batch efectivo de 8, durante 300 pasos (aproximadamente una época). El repositorio contiene el checkpoint del paso 300.
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-4B-UniCo-QLoRA-ckpt300 | ~4B (base) + adaptador LoRA | 10.240 tokens de entrenamiento; contexto del base no disponible | Sin benchmarks publicados | apache-2.0 | Adaptador en HuggingFace, 0 descargas, 0 likes |
-| empero-ai/Qwen3.8-4B-Distill (modelo base) | ~4B nominal | No disponible | No disponible en la información proporcionada | No disponible en la información proporcionada | Modelo base en HuggingFace |
+| Qwen3.8-4B-UniCo-QLoRA-ckpt300 | ~4B (base) + adaptador LoRA | 10.240 tokens de entrenamiento; contexto del base no disponible | Sin benchmarks publicados | apache-2.0 | Adaptador en Hugging Face, 0 descargas, 0 likes |
+| empero-ai/Qwen3.8-4B-Distill (modelo base) | ~4B nominal | No disponible | No disponible en la información proporcionada | No disponible en la información proporcionada | Modelo base en Hugging Face |
 | Otros adaptadores QLoRA de razonamiento científico | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables de alternativas de la misma categoría en la información proporcionada, por lo que la comparación se limita al modelo base.
@@ -90,7 +90,7 @@ No se dispone de datos verificables de alternativas de la misma categoría en la
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/leandronunes/Qwen3.8-4B-UniCo-QLoRA-ckpt300
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/leandronunes/Qwen3.8-4B-UniCo-QLoRA-ckpt300
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-4B-Distill
 - Dataset UniCo: no se proporciona enlace en la información disponible
 - Papers, blogs, repositorios o demos adicionales: no disponibles; la búsqueda web no devolvió resultados relacionados con el modelo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chat-bit-1.7B-Quant es un modelo conversacional publicado por el usuario netizen4-bit en HuggingFace, distribuido exclusivamente en formato GGUF para su uso con llama.cpp. Aunque el nombre comercial indica 1.7B, los pesos reales en safetensors suman 1.543.714.304 parametros, y el unico fichero publicado se denomina `Qwen2.5-1.5B-Instruct.Q8_0.gguf`, lo que apunta a que se trata de un fine-tuning de Qwen2.5-1.5B-Instruct convertido a GGUF con la herramienta Unsloth. La model card es extremadamente escueta y no documenta el dataset de entrenamiento, la licencia ni los idiomas soportados.
+Chat-bit-1.7B-Quant es un modelo conversacional publicado por el usuario netizen4-bit en Hugging Face, distribuido exclusivamente en formato GGUF para su uso con llama.cpp. Aunque el nombre comercial indica 1.7B, los pesos reales en safetensors suman 1.543.714.304 parametros, y el unico fichero publicado se denomina `Qwen2.5-1.5B-Instruct.Q8_0.gguf`, lo que apunta a que se trata de un fine-tuning de Qwen2.5-1.5B-Instruct convertido a GGUF con la herramienta Unsloth. La model card es extremadamente escueta y no documenta el dataset de entrenamiento, la licencia ni los idiomas soportados.
 
 El modelo resuelve el caso de uso de un asistente conversacional ligero que puede ejecutarse en hardware de consumo, con un unico fichero cuantizado en Q8_0 (aproximadamente 1.5 GB de pesos) y un Modelfile de Ollama incluido para despliegue rapido. Su relevancia practica es limitada: no hay benchmarks publicados, no hay licencia declarada y el repositorio no tiene descargas ni likes en el momento de la consulta, lo que lo situa como un experimento personal mas que como un modelo listo para produccion.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Chat-bit-1.7B-Quant | 1.54B | no disponible | no disponible | GGUF Q8_0 | HuggingFace, 0 descargas |
-| Qwen2.5-1.5B-Instruct | 1.54B | 32.768 tokens | Apache 2.0 | safetensors, GGUF, AWQ | HuggingFace, ampliamente usado |
-| Llama 3.2 1B Instruct | 1.24B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | HuggingFace, ampliamente usado |
-| SmolLM2-1.7B-Instruct | 1.71B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, ampliamente usado |
+| Chat-bit-1.7B-Quant | 1.54B | no disponible | no disponible | GGUF Q8_0 | Hugging Face, 0 descargas |
+| Qwen2.5-1.5B-Instruct | 1.54B | 32.768 tokens | Apache 2.0 | safetensors, GGUF, AWQ | Hugging Face, ampliamente usado |
+| Llama 3.2 1B Instruct | 1.24B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | Hugging Face, ampliamente usado |
+| SmolLM2-1.7B-Instruct | 1.71B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, ampliamente usado |
 
 La comparativa se limita a specs publicas de los modelos alternativos; no hay datos de rendimiento de Chat-bit-1.7B-Quant para contrastar calidad. Frente al modelo base Qwen2.5-1.5B-Instruct, la unica ventaja documentada es la disponibilidad en GGUF Q8_0 y el Modelfile de Ollama, que el propio modelo base ya ofrece en su repositorio oficial.
 
@@ -83,7 +83,7 @@ La comparativa se limita a specs publicas de los modelos alternativos; no hay da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/netizen4-bit/Chat-bit-1.7B-Quant
+- Hugging Face: https://huggingface.co/netizen4-bit/Chat-bit-1.7B-Quant
 - Unsloth (herramienta de fine-tuning y conversion): https://github.com/unslothai/unsloth
 - Modelo base presumible, Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - llama.cpp (runtime GGUF): https://github.com/ggml-org/llama.cpp

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Linny-VAD-Gen1 es un repositorio de pesos publicado en HuggingFace por el usuario Lucien-shark. En el momento de redactar esta ficha (con los datos disponibles) el repositorio no incluye model card con contenido tecnico: el README se limita a un bloque de metadatos con `license: unknown` y no aporta descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. No hay pipeline declarado, ni idiomas, ni etiquetas de tarea mas alla de `region:us`.
+Linny-VAD-Gen1 es un repositorio de pesos publicado en Hugging Face por el usuario Lucien-shark. En el momento de redactar esta ficha (con los datos disponibles) el repositorio no incluye model card con contenido tecnico: el README se limita a un bloque de metadatos con `license: unknown` y no aporta descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. No hay pipeline declarado, ni idiomas, ni etiquetas de tarea mas alla de `region:us`.
 
 El unico dato cuantitativo objetivo es el tamano del repositorio, 0,1 GB, junto con cero descargas y cero likes. El identificador "VAD" sugiere habitualmente deteccion de actividad de voz (Voice Activity Detection), pero se trata de una inferencia a partir del nombre, no de informacion confirmada por el autor; no debe tomarse como caracteristica verificada.
 
-Por tanto, esta ficha no puede evaluar el modelo en terminos de rendimiento, capacidades o idoneidad para produccion. Se trata de un artefacto sin documentacion publica, lo que implica que cualquier uso requiere inspeccion directa de los archivos del repositorio y validacion empirica previa. La relevancia actual es limitada: es un ejemplo de publicacion de pesos sin contexto, un caso frecuente en HuggingFace que conviene saber identificar y descartar rapidamente en procesos de seleccion de modelos.
+Por tanto, esta ficha no puede evaluar el modelo en terminos de rendimiento, capacidades o idoneidad para produccion. Se trata de un artefacto sin documentacion publica, lo que implica que cualquier uso requiere inspeccion directa de los archivos del repositorio y validacion empirica previa. La relevancia actual es limitada: es un ejemplo de publicacion de pesos sin contexto, un caso frecuente en Hugging Face que conviene saber identificar y descartar rapidamente en procesos de seleccion de modelos.
 
 ## Especificaciones tecnicas
 
@@ -79,7 +79,7 @@ No disponible. Sin conocer la tarea real del modelo, su tamano ni su licencia, n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lucien-shark/Linny-VAD-Gen1
+- Hugging Face: https://huggingface.co/Lucien-shark/Linny-VAD-Gen1
 - Model card del autor: sin contenido tecnico (solo bloque de metadatos con `license: unknown`).
 - Paper: no disponible.
 - Repositorio de codigo: no disponible.

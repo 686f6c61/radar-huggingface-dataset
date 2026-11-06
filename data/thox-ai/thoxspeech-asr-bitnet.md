@@ -84,7 +84,7 @@ La comparacion con Whisper u otros modelos ASR no puede concretarse con datos de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thox-ai/ThoxSpeech-ASR-BitNet
+- Repositorio Hugging Face: https://huggingface.co/Thox-ai/ThoxSpeech-ASR-BitNet
 - Modelo base: https://huggingface.co/microsoft/VibeVoice-ASR-BitNet
 - Ficheros GGUF: `thoxspeech-lm-i2_s-embed-q6_k.gguf` (992.877.600 B, SHA-256 `fbe273d8dc2f2433bb25f849e19d77ea65aaa2188d12c20cee987ab6f321e002`) y `thoxspeech-vae-encoder-i8_s.gguf` (703.080.064 B, SHA-256 `4941c82608c253ec066b5cc74d3dd11a5c8fef96cccbc5b87359ef0fe4338df6`)
 - Runtime ggml de VibeVoice/BitNet: no se proporciona URL especifica en la informacion disponible

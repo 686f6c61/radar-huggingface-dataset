@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hemi-qwen2.5 es un experimento de investigación sobre interpretabilidad y auto-modelado publicado por el usuario Jordine en HuggingFace. Se trata de un fine-tune completo de Qwen2.5-Instruct (variantes de 1.5B y 3B parámetros) diseñado para que un único conjunto de pesos pueda comportarse como tres modelos funcionales distintos según qué capas del decodificador se ejecuten: todas las capas (comportamiento cercano al Qwen original), solo las capas pares (persona "Sol") o solo las impares (persona "Luna"). El objetivo no es producir un modelo de propósito general, sino demostrar que es posible entrenar subconjuntos disjuntos de capas para que cada uno sea un modelo funcional completo y con un comportamiento diferenciado, compartiendo embeddings, norma final y cabeza LM.
+hemi-qwen2.5 es un experimento de investigación sobre interpretabilidad y auto-modelado publicado por el usuario Jordine en Hugging Face. Se trata de un fine-tune completo de Qwen2.5-Instruct (variantes de 1.5B y 3B parámetros) diseñado para que un único conjunto de pesos pueda comportarse como tres modelos funcionales distintos según qué capas del decodificador se ejecuten: todas las capas (comportamiento cercano al Qwen original), solo las capas pares (persona "Sol") o solo las impares (persona "Luna"). El objetivo no es producir un modelo de propósito general, sino demostrar que es posible entrenar subconjuntos disjuntos de capas para que cada uno sea un modelo funcional completo y con un comportamiento diferenciado, compartiendo embeddings, norma final y cabeza LM.
 
 El modelo parte de Qwen2.5-1.5B-Instruct y Qwen2.5-3B-Instruct, arquitecturas transformer densas estándar con atención causal. La innovación clave es el uso de destilación de contexto: el estudiante nunca ve los prompts de persona durante el entrenamiento, sino que aprende a reproducir las distribuciones del profesor (el Qwen original) cuando este recibe dichos prompts. Cada paso de entrenamiento ejecuta tres pasadas backward independientes, una por cada camino (full, even, odd), con divergencia KL forward sobre texto genérico y sobre respuestas de chat con persona.
 
@@ -95,9 +95,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hemi-qwen2.5 (este) | 1.5B / 3B | no disponible | Fine-tune de investigación con layer skipping y personas por subconjunto de capas | Apache 2.0 | HuggingFace (Jordine/hemi-qwen2.5) |
-| Qwen2.5-1.5B-Instruct | 1.5B | 32.768 tokens (según documentación pública de Qwen; no verificado en la información proporcionada) | Modelo instruct de propósito general | Apache 2.0 | HuggingFace (Qwen/Qwen2.5-1.5B-Instruct) |
-| Qwen2.5-3B-Instruct | 3B | 32.768 tokens (según documentación pública de Qwen; no verificado en la información proporcionada) | Modelo instruct de propósito general | Apache 2.0 (Qwen2.5 salvo 3B y 72B, que usan Qwen Research License; verificar) | HuggingFace (Qwen/Qwen2.5-3B-Instruct) |
+| hemi-qwen2.5 (este) | 1.5B / 3B | no disponible | Fine-tune de investigación con layer skipping y personas por subconjunto de capas | Apache 2.0 | Hugging Face (Jordine/hemi-qwen2.5) |
+| Qwen2.5-1.5B-Instruct | 1.5B | 32.768 tokens (según documentación pública de Qwen; no verificado en la información proporcionada) | Modelo instruct de propósito general | Apache 2.0 | Hugging Face (Qwen/Qwen2.5-1.5B-Instruct) |
+| Qwen2.5-3B-Instruct | 3B | 32.768 tokens (según documentación pública de Qwen; no verificado en la información proporcionada) | Modelo instruct de propósito general | Apache 2.0 (Qwen2.5 salvo 3B y 72B, que usan Qwen Research License; verificar) | Hugging Face (Qwen/Qwen2.5-3B-Instruct) |
 
 La comparación directa con alternativas de interpretabilidad (por ejemplo, modelos con edición de activaciones o steering vectors) no está disponible en la información proporcionada.
 
@@ -117,6 +117,6 @@ La comparación directa con alternativas de interpretabilidad (por ejemplo, mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jordine/hemi-qwen2.5
+- Hugging Face: https://huggingface.co/Jordine/hemi-qwen2.5
 - Modelo base 1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Modelo base 3B: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

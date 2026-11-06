@@ -97,7 +97,7 @@ No es posible establecer una comparativa de rendimiento fiable con alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-idm-lora-readout-dense-contact-20261006-source
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-idm-lora-readout-dense-contact-20261006-source
 - Dataset asociado: https://huggingface.co/datasets/Donghyun1228/libero-dense-contact-sweep-d2-20261002
 - Framework openpi (mencionado en la model card): https://github.com/Physical-Intelligence/openpi
 - Benchmark LIBERO (mencionado en el nombre del modelo y en el protocolo de evaluación): https://libero-project.github.io/

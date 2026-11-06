@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| minjaechoi/nemotron3-nano-30b-a3b-2p36bit-r16 | ~31,6 B | no disponible | no disponible | no disponible (sigue la del base) | HuggingFace, 0 descargas |
-| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 (base) | ~31,6 B | no disponible | no disponible | la del base (consultar) | HuggingFace |
+| minjaechoi/nemotron3-nano-30b-a3b-2p36bit-r16 | ~31,6 B | no disponible | no disponible | no disponible (sigue la del base) | Hugging Face, 0 descargas |
+| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 (base) | ~31,6 B | no disponible | no disponible | la del base (consultar) | Hugging Face |
 | Otras alternativas MoE de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de modelos alternativos en la informacion proporcionada, por lo que la comparativa se limita al modelo base del que deriva.
@@ -82,6 +82,6 @@ No se dispone de datos de benchmarks ni de especificaciones completas de modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/nemotron3-nano-30b-a3b-2p36bit-r16
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/nemotron3-nano-30b-a3b-2p36bit-r16
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Paper, blog, repositorio o demo adicionales: no disponibles (la busqueda web no devolvio resultados relevantes).

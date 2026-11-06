@@ -85,8 +85,8 @@ La informacion proporcionada no incluye datos de rendimiento de modelos alternat
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| EXAONE-3.5-7.8B-Instruct (modelo base) | 7.800 M | no disponible en la informacion proporcionada | licencia propia del modelo base, no detallada aqui | pesos completos en HuggingFace | no disponible |
-| Este adaptador (exaone-verireason-sft_accuracy_hard_1to2_ratio0.12_seed42) | 7.800 M en el base + parametros LoRA no declarados | no disponible | no disponible | adaptador PEFT de 1,0 GB en HuggingFace | eval_loss = 0.3114 en checkpoint-164 |
+| EXAONE-3.5-7.8B-Instruct (modelo base) | 7.800 M | no disponible en la informacion proporcionada | licencia propia del modelo base, no detallada aqui | pesos completos en Hugging Face | no disponible |
+| Este adaptador (exaone-verireason-sft_accuracy_hard_1to2_ratio0.12_seed42) | 7.800 M en el base + parametros LoRA no declarados | no disponible | no disponible | adaptador PEFT de 1,0 GB en Hugging Face | eval_loss = 0.3114 en checkpoint-164 |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de comparaciones publicadas con otros adaptadores de la misma familia de experimentos ni con modelos de 7-8 B de proposito general, por lo que no es posible establecer una comparativa de rendimiento fiable.
@@ -106,6 +106,6 @@ No se dispone de comparaciones publicadas con otros adaptadores de la misma fami
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jongbin-kr/exaone-verireason-sft_accuracy_hard_1to2_ratio0.12_seed42
-- Modelo base en HuggingFace: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/Jongbin-kr/exaone-verireason-sft_accuracy_hard_1to2_ratio0.12_seed42
+- Modelo base en Hugging Face: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Paper del dataset ConvFinQA, repositorio del autor de EXAONE y demos adicionales: no disponibles en la informacion proporcionada.

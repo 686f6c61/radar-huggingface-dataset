@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Comparativa con modelos similares
 
-No hay información suficiente para comparar este adaptador con otros modelos o adaptadores de la misma categoría. No se conocen alternativas del mismo autor ni métricas que permitan una comparación objetiva. Se podría comparar con otros adaptadores LoRA públicos sobre Llama-3.1-8B (por ejemplo, los publicados en HuggingFace con fines similares), pero sin datos de rendimiento la comparación carecería de base.
+No hay información suficiente para comparar este adaptador con otros modelos o adaptadores de la misma categoría. No se conocen alternativas del mismo autor ni métricas que permitan una comparación objetiva. Se podría comparar con otros adaptadores LoRA públicos sobre Llama-3.1-8B (por ejemplo, los publicados en Hugging Face con fines similares), pero sin datos de rendimiento la comparación carecería de base.
 
 ## Limitaciones y advertencias
 
@@ -78,6 +78,6 @@ No hay información suficiente para comparar este adaptador con otros modelos o 
 
 ## Enlaces
 
-- [HuggingFace - Jordine/patina3-afford_merge_sft_s0](https://huggingface.co/Jordine/patina3-afford_merge_sft_s0)
+- [Hugging Face - Jordine/patina3-afford_merge_sft_s0](https://huggingface.co/Jordine/patina3-afford_merge_sft_s0)
 - [Paper de LoRA (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700) (referenciado en los tags, aunque no se vincula directamente al entrenamiento)
 - [Modelo base: meta-llama/Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B) (para consultar especificaciones del base)

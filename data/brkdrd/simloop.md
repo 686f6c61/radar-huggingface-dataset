@@ -95,6 +95,6 @@ No hay modelos comparables directamente disponibles en la información proporcio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/brkdrd/simloop
+- Hugging Face: https://huggingface.co/brkdrd/simloop
 - Repositorio GitHub: https://github.com/brkdrd/SimLoop
 - Perfil del autor en GitHub: https://github.com/brkdrd/

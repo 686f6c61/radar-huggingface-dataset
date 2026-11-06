@@ -6,7 +6,7 @@ El modelo `kyeseung/japanese-hubert-base-phoneme-ctc-v3-onnx` es una conversión
 
 La tarea que resuelve es acotada y concreta: dada una señal PCM mono a 16 kHz, devuelve logits CTC sobre un vocabulario de 48 tokens de fonemas en notación pyopenjtalk (`PAD` actúa como token blanco). No genera texto ortográfico ni traducciones; produce una secuencia fonética. Su caso de uso declarado es la evaluación de pronunciación de una única sílaba kana en una aplicación web de aprendizaje de japonés, ejecutando la inferencia en el propio dispositivo.
 
-Es relevante ahora porque demuestra el patrón de despliegue de modelos de voz pequeños en el cliente: conversión ONNX, cuantización a fp16, verificación de equivalencia funcional con PyTorch y ejecución en navegador. El repositorio ocupa 0,2 GB, no tiene descargas ni valoraciones registradas y se publicó el 10 de octubre de 2026 según los metadatos de HuggingFace. No hay datos publicados de arquitectura interna, número de parámetros ni métricas de error.
+Es relevante ahora porque demuestra el patrón de despliegue de modelos de voz pequeños en el cliente: conversión ONNX, cuantización a fp16, verificación de equivalencia funcional con PyTorch y ejecución en navegador. El repositorio ocupa 0,2 GB, no tiene descargas ni valoraciones registradas y se publicó el 10 de octubre de 2026 según los metadatos de Hugging Face. No hay datos publicados de arquitectura interna, número de parámetros ni métricas de error.
 
 ## Especificaciones técnicas
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Formato | Precisión | Idioma | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kyeseung/japanese-hubert-base-phoneme-ctc-v3-onnx | ONNX | fp16 | ja | Fonemas CTC | apache-2.0 | HuggingFace, 0 descargas |
-| prj-beatrice/japanese-hubert-base-phoneme-ctc-v3 | PyTorch (safetensors, presumiblemente) | fp32 | ja | Fonemas CTC | apache-2.0 | HuggingFace |
+| kyeseung/japanese-hubert-base-phoneme-ctc-v3-onnx | ONNX | fp16 | ja | Fonemas CTC | apache-2.0 | Hugging Face, 0 descargas |
+| prj-beatrice/japanese-hubert-base-phoneme-ctc-v3 | PyTorch (safetensors, presumiblemente) | fp32 | ja | Fonemas CTC | apache-2.0 | Hugging Face |
 | Otras alternativas de reconocimiento fonético en japonés | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El único punto de comparación documentado es el modelo base del que procede esta conversión. Frente a él, la versión ONNX fp16 reduce el tamaño de los pesos y habilita la ejecución en navegador, a cambio de perder precisión numérica en los pesos (verificada como no determinante en la decisión final por el autor). No se dispone de datos sobre otros modelos comparables de la misma categoría en la información proporcionada.
@@ -95,6 +95,6 @@ El único punto de comparación documentado es el modelo base del que procede es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kyeseung/japanese-hubert-base-phoneme-ctc-v3-onnx
+- Modelo en Hugging Face: https://huggingface.co/kyeseung/japanese-hubert-base-phoneme-ctc-v3-onnx
 - Modelo base: https://huggingface.co/prj-beatrice/japanese-hubert-base-phoneme-ctc-v3
 - Los resultados de búsqueda web disponibles no contienen enlaces relevantes al modelo: consisten en páginas sin relación con el proyecto (contenido para adultos y artículos sobre una aplicación de vídeo en directo), por lo que se descartan.

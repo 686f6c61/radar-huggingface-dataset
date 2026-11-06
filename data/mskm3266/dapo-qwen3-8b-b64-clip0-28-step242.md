@@ -18,7 +18,7 @@ Al ser un checkpoint intermedio (step 242) de un entrenamiento más largo, repre
 | Longitud de contexto | 32 768 tokens |
 | Tipos de cuantizacion | No disponible (formato safetensors en BF16/FP16) |
 | Idiomas soportados | No disponible (hereda los del modelo base, principalmente ingles y chino) |
-| Licencia | Apache-2.0 (segun tags de HuggingFace; la pagina indica "no disponible") |
+| Licencia | Apache-2.0 (segun tags de Hugging Face; la pagina indica "no disponible") |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Entrenamiento | Disponibilidad |
 |---|---|---|---|---|---|
-| DAPO-Qwen3-8B (este) | 8.18B | 32 768 | Apache-2.0 | RL con DAPO sobre Qwen3-8B-Base | HuggingFace |
-| Qwen/Qwen3-8B-Base | 8.18B | 32 768 | Apache-2.0 | Preentrenamiento (15.6T tokens) | HuggingFace |
-| Qwen/Qwen3-8B-Instruct | 8.18B | 32 768 | Apache-2.0 | SFT + RL (incluye modo thinking) | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-7B | 7.6B | 32 768 | MIT | Distilacion de DeepSeek-R1 | HuggingFace |
+| DAPO-Qwen3-8B (este) | 8.18B | 32 768 | Apache-2.0 | RL con DAPO sobre Qwen3-8B-Base | Hugging Face |
+| Qwen/Qwen3-8B-Base | 8.18B | 32 768 | Apache-2.0 | Preentrenamiento (15.6T tokens) | Hugging Face |
+| Qwen/Qwen3-8B-Instruct | 8.18B | 32 768 | Apache-2.0 | SFT + RL (incluye modo thinking) | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-7B | 7.6B | 32 768 | MIT | Distilacion de DeepSeek-R1 | Hugging Face |
 
 La comparativa muestra que este modelo se situa entre el base y el instruct, ofreciendo un punto intermedio con capacidades de razonamiento mejoradas por RL pero sin el modo thinking explicito del instruct. DeepSeek-R1-Distill-Qwen-7B es una alternativa con destilacion de razonamiento, aunque con licencia MIT.
 
@@ -76,13 +76,13 @@ La comparativa muestra que este modelo se situa entre el base y el instruct, ofr
 - Riesgo de alucinacion: al ser un modelo base sin fine-tuning instructivo completo, puede generar informacion incorrecta con alta confianza, especialmente en dominios fuera de las matematicas.
 - Limitaciones de contexto: la ventana de 32 768 tokens es amplia pero no infinita; contextos mas largos degradan el rendimiento.
 - Limitaciones de idioma: no se especifican los idiomas soportados, pero el modelo base esta optimizado principalmente para ingles y chino, con soporte limitado para otros idiomas.
-- Restricciones de licencia: la licencia Apache-2.0 permite uso comercial, pero la pagina de HuggingFace indica "no disponible", por lo que se recomienda verificar antes de usar en produccion.
+- Restricciones de licencia: la licencia Apache-2.0 permite uso comercial, pero la pagina de Hugging Face indica "no disponible", por lo que se recomienda verificar antes de usar en produccion.
 - Checkpoint intermedio: al ser el paso 242 de un entrenamiento, el rendimiento puede ser suboptimo comparado con el modelo final; no se recomienda para produccion sin evaluacion previa.
 - Sin garantias de seguridad: no se han realizado evaluaciones de seguridad (jailbreak, contenido danino) sobre este checkpoint especifico.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mskm3266/DAPO-Qwen3-8B-b64-clip0.28-step242
+- Modelo en Hugging Face: https://huggingface.co/mskm3266/DAPO-Qwen3-8B-b64-clip0.28-step242
 - Perfil del autor: https://huggingface.co/mskm3266
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Guia de Qwen3 (insiderllm.com): https://insiderllm.com/guides/qwen3-complete-guide/

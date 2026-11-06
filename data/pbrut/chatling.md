@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pbrut/chatling es un repositorio de modelo alojado en HuggingFace por el usuario pbrut. La ficha publica del repositorio no incluye informacion sustantiva: no declara pipeline, licencia, idiomas soportados, arquitectura ni parametros, y no adjunta model card, paper ni documentacion tecnica. Los unicos datos verificables son los metadatos de HuggingFace: 0 descargas, 1 like, etiqueta region:us y un tamano de repositorio de 1,5 GB.
+pbrut/chatling es un repositorio de modelo alojado en Hugging Face por el usuario pbrut. La ficha publica del repositorio no incluye informacion sustantiva: no declara pipeline, licencia, idiomas soportados, arquitectura ni parametros, y no adjunta model card, paper ni documentacion tecnica. Los unicos datos verificables son los metadatos de Hugging Face: 0 descargas, 1 like, etiqueta region:us y un tamano de repositorio de 1,5 GB.
 
 Por el nombre ("chatling") y por el tamano del repositorio, cabe suponer que se trata de un modelo orientado a conversacion de parametraje reducido, pero esto es una inferencia a partir del nombre y del peso de los archivos, no un dato confirmado por el autor. La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo: los unicos enlaces obtenidos son paginas corporativas de Microsoft sin conexion alguna con pbrut/chatling, lo que indica una huella publica practicamente nula.
 
@@ -56,7 +56,7 @@ Los siguientes escenarios son hipoteticos y solo serian aplicables si la inspecc
 - Generacion de texto de baja criticidad: borradores, resumenes o reformulacion en entornos donde un error no tenga consecuencias legales ni economicas.
 - Investigacion sobre comportamiento de modelos pequenos: analisis de sesgos, degradacion con contexto largo o alucinacion en modelos de baja escala.
 - Despliegue en hardware con restricciones severas: si el modelo es realmente pequeno y cuantificable, podria integrarse en dispositivos de borde o entornos sin GPU dedicada, previa conversion a un runtime adecuado.
-- Educacion y demostraciones tecnicas: ilustrar el ciclo completo de descarga, carga y ejecucion de un modelo de HuggingFace en un curso o taller.
+- Educacion y demostraciones tecnicas: ilustrar el ciclo completo de descarga, carga y ejecucion de un modelo de Hugging Face en un curso o taller.
 
 ## Benchmarks y rendimiento
 
@@ -86,12 +86,12 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 - Contexto limitado: se desconoce la ventana de contexto, lo que impide planificar tareas que dependan de documentos largos.
 - Validacion social nula: 0 descargas y 1 like indican que el modelo no ha sido utilizado ni contrastado por terceros.
 - Metadatos anomalos: las fechas de creacion y actualizacion declaradas (2026-09-13) son posteriores a la fecha habitual de consulta y no van acompanadas de ninguna publicacion; conviene verificar la autenticidad del repositorio antes de descargar pesos.
-- Huella web inexistente: la busqueda no ha encontrado ninguna mencion del modelo fuera de HuggingFace. Los unicos resultados devueltos eran paginas corporativas de Microsoft sin relacion con el proyecto, lo que confirma la ausencia de comunidad, issues o informes independientes.
+- Huella web inexistente: la busqueda no ha encontrado ninguna mencion del modelo fuera de Hugging Face. Los unicos resultados devueltos eran paginas corporativas de Microsoft sin relacion con el proyecto, lo que confirma la ausencia de comunidad, issues o informes independientes.
 - Procedencia no verificada: al no poder auditarse el origen de los pesos, existe un riesgo de contenido malicioso en los ficheros. Se recomienda escanear el repositorio y cargar los pesos unicamente en entornos aislados.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pbrut/chatling
+- Repositorio en Hugging Face: https://huggingface.co/pbrut/chatling
 - Paper: no disponible
 - Blog tecnico del autor: no disponible
 - Repositorio de codigo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-project-retrieval es un repositorio de HuggingFace publicado por el usuario alexander-mikhailov que contiene una implementacion reducida de una arquitectura tipo Flamingo orientada a tareas de retrieval (recuperacion multimodal). No se trata de un modelo entrenado ni de una release lista para produccion: el propio autor lo describe como un punto de partida reproducible con una configuracion explicita y un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests).
+project-retrieval es un repositorio de Hugging Face publicado por el usuario alexander-mikhailov que contiene una implementacion reducida de una arquitectura tipo Flamingo orientada a tareas de retrieval (recuperacion multimodal). No se trata de un modelo entrenado ni de una release lista para produccion: el propio autor lo describe como un punto de partida reproducible con una configuracion explicita y un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests).
 
 El modelo sigue el paradigma Flamingo, que combina un codificador visual con un modelo de lenguaje mediante capas de fusion de bajo rango (low rank fusion) y atencion estandar. La configuracion declarada corresponde a la escala "giant", con activacion approx gelu y normalizacion instancenorm. El checkpoint incluido en safetensors contiene 24.832 parametros, un orden de magnitud propio de un ejemplo minimo de ejecucion, no de un modelo con capacidad real de inferencia util.
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| project-retrieval | 24.832 | no disponible | ninguno (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace, checkpoint de inicializacion |
+| project-retrieval | 24.832 | no disponible | ninguno (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face, checkpoint de inicializacion |
 | OpenFlamingo | variantes de miles de millones | no disponible en esta ficha | no disponible en esta ficha | MIT (segun su repositorio) | pesos entrenados publicos |
 | Flamingo (DeepMind) | no disponible | no disponible | no disponible | propietaria, sin release publica | no disponible |
 | Modelos de retrieval texto-imagen tipo CLIP | cientos de millones | no disponible | no disponible en esta ficha | variable segun variante | pesos entrenados publicos |
@@ -93,12 +93,12 @@ No se dispone de datos de rendimiento de project-retrieval, por lo que la compar
 - Sesgos conocidos: no documentados.
 - Limitaciones de contexto e idioma: no disponibles; no se declara ventana de contexto ni cobertura idiomatica.
 - Restricciones de licencia: BSD-3-Clause es permisiva y permite uso comercial, pero el autor advierte que deben revisarse por separado los terminos de los datos de origen cuando el repositorio se use con datasets externos.
-- Advertencia de integracion: al ser una implementacion personalizada, las APIs de carga automatica de HuggingFace requieren un adaptador explicito; no se puede cargar como un modelo estandar sin codigo adicional.
+- Advertencia de integracion: al ser una implementacion personalizada, las APIs de carga automatica de Hugging Face requieren un adaptador explicito; no se puede cargar como un modelo estandar sin codigo adicional.
 - Cifras de contexto en produccion: cualquier resultado de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto que se incluyen aqui.
 - Repositorio con 0 descargas y 0 likes y un tamano declarado de 0.0 GB: no hay validacion por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexander-mikhailov/project-retrieval
+- Hugging Face: https://huggingface.co/alexander-mikhailov/project-retrieval
 - Archivos del repositorio citados en la model card: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`.
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al paper de Flamingo ni a evaluaciones de Flickr30k; los resultados devueltos corresponden a paginas corporativas de Microsoft y no guardan relacion con este repositorio.

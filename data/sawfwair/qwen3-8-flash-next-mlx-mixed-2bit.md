@@ -63,9 +63,9 @@ La comparativa se limita a las especificaciones del modelo base y de la conversi
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (base) | 180B (125B main + 51B n-gram + 4B MTP) | 6B | 262.144 | Qwen Community 1.0 | HuggingFace, gated |
-| Sawfwair/Qwen3.8-Flash-Next-MLX-Mixed-2bit | 21,8B (cuantizado) | 6B | 262.144 | Qwen Community 1.0 | HuggingFace, no gated |
-| Qwen3-235B-A22B (MoE similar) | 235B | 22B | 32.768 | Qwen Research | HuggingFace |
+| Qwen3.8-Flash-Next (base) | 180B (125B main + 51B n-gram + 4B MTP) | 6B | 262.144 | Qwen Community 1.0 | Hugging Face, gated |
+| Sawfwair/Qwen3.8-Flash-Next-MLX-Mixed-2bit | 21,8B (cuantizado) | 6B | 262.144 | Qwen Community 1.0 | Hugging Face, no gated |
+| Qwen3-235B-A22B (MoE similar) | 235B | 22B | 32.768 | Qwen Research | Hugging Face |
 
 La conversión MLX reduce drásticamente el peso del modelo (de 180B a 21,8B en tensores cuantizados) pero conserva el mismo contexto y arquitectura, a costa de una posible degradación de calidad por la cuantización mixta de 2 y 4 bits.
 
@@ -80,8 +80,8 @@ La conversión MLX reduce drásticamente el peso del modelo (de 180B a 21,8B en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sawfwair/Qwen3.8-Flash-Next-MLX-Mixed-2bit
-- Modelo base Qwen3.8-Flash-Next en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face: https://huggingface.co/Sawfwair/Qwen3.8-Flash-Next-MLX-Mixed-2bit
+- Modelo base Qwen3.8-Flash-Next en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next
 - Documentación de ejecución local (unsloth): https://unsloth.ai/docs/models/qwen3.8-next
 - Recetas de vLLM para el modelo base: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next

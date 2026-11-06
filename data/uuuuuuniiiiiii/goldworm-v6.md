@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GoldWorm v6 es un modelo de lenguaje causal de tipo transformer a nivel de byte (byte-level), desarrollado por el usuario Uuuuuuniiiiiii y publicado en HuggingFace bajo licencia MIT. Se trata de un modelo extremadamente compacto, con 2.757.504 parametros segun la configuracion declarada por el autor (2.806.656 en el fichero `model.safetensors`, diferencia atribuible a la duplicacion de las embeddings atadas al exportar), disenado para generar texto narrativo sencillo. Su proposito es servir como banco de pruebas eficiente y reproducible para modelado de lenguaje a nivel de byte, entrenado sobre el corpus TinyStories.
+GoldWorm v6 es un modelo de lenguaje causal de tipo transformer a nivel de byte (byte-level), desarrollado por el usuario Uuuuuuniiiiiii y publicado en Hugging Face bajo licencia MIT. Se trata de un modelo extremadamente compacto, con 2.757.504 parametros segun la configuracion declarada por el autor (2.806.656 en el fichero `model.safetensors`, diferencia atribuible a la duplicacion de las embeddings atadas al exportar), disenado para generar texto narrativo sencillo. Su proposito es servir como banco de pruebas eficiente y reproducible para modelado de lenguaje a nivel de byte, entrenado sobre el corpus TinyStories.
 
 El modelo emplea una arquitectura `ByteTransformer` con vocabulario de 256 simbolos (un byte por token, sin tokenizador), `d_model=192`, 6 capas, 4 cabezas de atencion, `ffn_mult=4`, longitud de contexto de 256 tokens y embeddings atados. Al operar a nivel de byte, evita por completo el sesgo de tokenizacion y puede procesar cualquier secuencia de bytes, aunque su capacidad de generar lenguaje coherente esta limitada por su tamano y por el dominio concreto de TinyStories (narrativa infantil en ingles muy simplificada).
 
@@ -81,9 +81,9 @@ Protocolo declarado: ventana deslizante con stride 16 y contexto 256 sobre un co
 
 | Modelo | Parametros | Contexto | Metrica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GoldWorm v6 | 2,76 M | 256 bytes | BPC 1,007349 (TinyStories-valid) | MIT | HuggingFace, pesos safetensors |
+| GoldWorm v6 | 2,76 M | 256 bytes | BPC 1,007349 (TinyStories-valid) | MIT | Hugging Face, pesos safetensors |
 | GPT-2 124M | 124 M | 1.024 tokens (token-level) | BYTE_BPC 1,142985 | MIT (pesos OpenAI) | Ampliamente disponible, multiples formatos |
-| Modelos TinyStories (familia roneneldan) | aproximadamente 1 M a 33 M (segun variante) | no disponible | no disponible | no disponible | HuggingFace |
+| Modelos TinyStories (familia roneneldan) | aproximadamente 1 M a 33 M (segun variante) | no disponible | no disponible | no disponible | Hugging Face |
 | Baseline unigram / bigram | no aplica | no aplica | BPC 4,437 / 3,317 | no aplica | referencias estadisticas del autor |
 
 La comparacion directa mas solida es con GPT-2 124M, sobre el que el autor declara una mejora en BPC a nivel de byte pese a tener unas 44 veces menos parametros, si bien se trata de un modelo entrenado sobre un corpus mucho mas grande y diverso y evaluado aqui en el dominio restringido de TinyStories. No se dispone de datos comparativos de la familia TinyStories en la informacion proporcionada, por lo que sus cifras se marcan como no disponibles.
@@ -103,7 +103,7 @@ La comparacion directa mas solida es con GPT-2 124M, sobre el que el autor decla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6
+- Modelo en Hugging Face: https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6
 - Dataset de entrenamiento/evaluacion: `roneneldan/TinyStories` (TinyStories-valid.txt, 19,4 MB, sha256 `94e431816c4cce81...`)
 - Demo incluido en el repositorio del modelo: `demo/app.py` (Streamlit), con `demo/requirements.txt`
 - Ficheros auxiliares publicados: `config.json`, `eval_results.json`, `model.safetensors`

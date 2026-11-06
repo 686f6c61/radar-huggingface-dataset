@@ -77,9 +77,9 @@ No se han publicado en la información disponible resultados de MMLU, GSM8K, Hum
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---:|---:|---|---|---|
-| looped-51M-base | 50,87 M | 2048 | Transformer decodificador con 10 capas compartidas aplicadas 6 veces | No disponible | HuggingFace, requiere `trust_remote_code` |
-| Q-50M-Base | ~50 M (no confirmado) | No disponible | Transformer decodificador estándar (baseline arquitectónica y de tokenizador de este modelo) | No disponible | HuggingFace (q-project/Q-50M-Base) |
-| Otras ablaciones de la colección Tiny llm ablation de d0rj | No disponible | No disponible | Variantes del mismo experimento | No disponible | HuggingFace (colección del autor) |
+| looped-51M-base | 50,87 M | 2048 | Transformer decodificador con 10 capas compartidas aplicadas 6 veces | No disponible | Hugging Face, requiere `trust_remote_code` |
+| Q-50M-Base | ~50 M (no confirmado) | No disponible | Transformer decodificador estándar (baseline arquitectónica y de tokenizador de este modelo) | No disponible | Hugging Face (q-project/Q-50M-Base) |
+| Otras ablaciones de la colección Tiny llm ablation de d0rj | No disponible | No disponible | Variantes del mismo experimento | No disponible | Hugging Face (colección del autor) |
 
 No se dispone de una comparación cuantitativa de parámetros, contexto ni benchmarks frente a alternativas como GPT-2 small o Pythia-70M en la información proporcionada; solo se confirma que Q-50M-Base es la referencia arquitectónica y de tokenizador declarada por el autor, y que los pesos de looped-51M-base no son un fine-tune de ese checkpoint.
 
@@ -98,7 +98,7 @@ No se dispone de una comparación cuantitativa de parámetros, contexto ni bench
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d0rj/looped-51M-base
+- Modelo en Hugging Face: https://huggingface.co/d0rj/looped-51M-base
 - Baseline arquitectónica y de tokenizador Q-50M-Base: https://huggingface.co/q-project/Q-50M-Base
 - Colección Tiny llm ablation: https://huggingface.co/collections/d0rj/tiny-llm-ablation-6aafca336122dd2c2868f923
 - Dataset de entrenamiento FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

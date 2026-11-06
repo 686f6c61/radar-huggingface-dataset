@@ -25,7 +25,7 @@ No obstante, conviene subrayar que esta publicación es una cuantización comuni
 
 El modelo base pertenece a la familia Kimi Linear de Moonshot AI, que emplea una arquitectura transformer con atención lineal y mezcla de expertos. La designación 48B-A3B indica 48 mil millones de parámetros totales con 3 mil millones activos por token, lo que reduce el coste computacional de inferencia respecto a un modelo denso del mismo tamaño. La variante "abliterated" ha sido sometida a un proceso de modificación de direcciones de rechazo en el espacio de activaciones, orientado a eliminar las negativas del modelo a responder determinadas peticiones.
 
-En cuanto a los datos de entrenamiento, número de tokens, composición del dataset y uso de RLHF o DPO, la model card de esta cuantización no aporta información. Tampoco se documentan innovaciones específicas de decodificación o atención más allá de la propia arquitectura Kimi Linear del modelo original. La model card de mradermacher se limita a describir el proceso de cuantización con imatrix (versión 2 del formato de cuantización, conversión desde HuggingFace, tensor quantised) y a listar los ficheros GGUF generados.
+En cuanto a los datos de entrenamiento, número de tokens, composición del dataset y uso de RLHF o DPO, la model card de esta cuantización no aporta información. Tampoco se documentan innovaciones específicas de decodificación o atención más allá de la propia arquitectura Kimi Linear del modelo original. La model card de mradermacher se limita a describir el proceso de cuantización con imatrix (versión 2 del formato de cuantización, conversión desde Hugging Face, tensor quantised) y a listar los ficheros GGUF generados.
 
 ## Capacidades
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/Kimi-Linear-48B-A3B-Instruct-abliterated-bf16-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/Kimi-Linear-48B-A3B-Instruct-abliterated-bf16-i1-GGUF
 - Modelo base (checkpoint abliterated bf16): https://huggingface.co/ashwin-sreedhar/Kimi-Linear-48B-A3B-Instruct-abliterated-bf16
 - Cuantizaciones estáticas del mismo autor: https://huggingface.co/mradermacher/Kimi-Linear-48B-A3B-Instruct-abliterated-bf16-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#Kimi-Linear-48B-A3B-Instruct-abliterated-bf16-i1-GGUF

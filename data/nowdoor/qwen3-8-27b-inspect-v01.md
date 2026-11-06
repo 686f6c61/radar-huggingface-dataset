@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo nowdoor/Qwen3.8-27B-Inspect-v01 es una variante publicada en HuggingFace del modelo Qwen3.8-27B, desarrollado originalmente por el equipo Qwen de Alibaba. Este modelo base es un transformer denso multimodal de 27 000 millones de parametros que acepta entradas de texto, imagen y video, y esta disenado para tareas de codificacion, flujos de trabajo agente y automatizacion de oficina. Destaca por su ventana de contexto nativa de 262 144 tokens, lo que permite procesar documentos largos y conversaciones multi-turno extensas.
+El modelo nowdoor/Qwen3.8-27B-Inspect-v01 es una variante publicada en Hugging Face del modelo Qwen3.8-27B, desarrollado originalmente por el equipo Qwen de Alibaba. Este modelo base es un transformer denso multimodal de 27 000 millones de parametros que acepta entradas de texto, imagen y video, y esta disenado para tareas de codificacion, flujos de trabajo agente y automatizacion de oficina. Destaca por su ventana de contexto nativa de 262 144 tokens, lo que permite procesar documentos largos y conversaciones multi-turno extensas.
 
-La variante "Inspect-v01" no dispone de informacion publica adicional en HuggingFace (sin descripcion, licencia ni idiomas declarados), por lo que esta ficha se basa en las caracteristicas del modelo base Qwen3.8-27B, que es el que cuenta con documentacion tecnica y benchmarks publicados. Se recomienda al lector verificar si la variante introduce cambios especificos antes de usarla en produccion.
+La variante "Inspect-v01" no dispone de informacion publica adicional en Hugging Face (sin descripcion, licencia ni idiomas declarados), por lo que esta ficha se basa en las caracteristicas del modelo base Qwen3.8-27B, que es el que cuenta con documentacion tecnica y benchmarks publicados. Se recomienda al lector verificar si la variante introduce cambios especificos antes de usarla en produccion.
 
 ## Especificaciones tecnicas
 
@@ -88,7 +88,7 @@ Qwen3.8-27B ofrece una ventana de contexto significativamente mayor y capacidade
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nowdoor/Qwen3.8-27B-Inspect-v01
+- Modelo en Hugging Face: https://huggingface.co/nowdoor/Qwen3.8-27B-Inspect-v01
 - Repositorio oficial del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Pagina del modelo en LM Studio: https://lmstudio.ai/models/qwen/qwen3.8-27b
 - Blog de AMD sobre soporte del modelo: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

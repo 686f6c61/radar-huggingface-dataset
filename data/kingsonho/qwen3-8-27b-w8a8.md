@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-w8a8 es una versión cuantizada en precisión mixta de 8 bits (pesos y activaciones, w8a8) del modelo original Qwen3.8-27B, publicado por el usuario KingsonHO en HuggingFace. El modelo base pertenece a la familia Qwen y está disponible en ModelScope bajo licencia Apache 2.0. Esta cuantización reduce el tamaño del modelo y acelera la inferencia, manteniendo una precisión cercana a la del modelo original en tareas de razonamiento científico (GPQA). El repositorio ocupa 32.1 GB, lo que sugiere que los pesos cuantizados son significativamente más compactos que una versión de 27B en precisión completa.
+Qwen3.8-27B-w8a8 es una versión cuantizada en precisión mixta de 8 bits (pesos y activaciones, w8a8) del modelo original Qwen3.8-27B, publicado por el usuario KingsonHO en Hugging Face. El modelo base pertenece a la familia Qwen y está disponible en ModelScope bajo licencia Apache 2.0. Esta cuantización reduce el tamaño del modelo y acelera la inferencia, manteniendo una precisión cercana a la del modelo original en tareas de razonamiento científico (GPQA). El repositorio ocupa 32.1 GB, lo que sugiere que los pesos cuantizados son significativamente más compactos que una versión de 27B en precisión completa.
 
 La relevancia de esta ficha radica en que ofrece una alternativa optimizada para entornos con recursos limitados, como servidores con GPUs de consumo o despliegues en la nube con presupuesto de memoria restringido. Al ser una cuantización w8a8, es compatible con motores de inferencia que soportan esta precisión, como vLLM o TensorRT-LLM, aunque no se especifica el formato exacto de los pesos en la información proporcionada.
 
@@ -69,6 +69,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KingsonHO/Qwen3.8-27B-w8a8
+- Repositorio Hugging Face: https://huggingface.co/KingsonHO/Qwen3.8-27B-w8a8
 - Modelo original en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3.8-27B
 - Repositorio msmodelslim: https://gitcode.com/keith_wa/ModelSlim_joejoezhou_qwen38/tree/qwen3_8_27b_adapter

@@ -97,7 +97,7 @@ No se han proporcionado datos de modelos comparables en la información disponib
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mstrasser/jeff-adapter-doc-type
+- Hugging Face: https://huggingface.co/mstrasser/jeff-adapter-doc-type
 - Modelo base: https://huggingface.co/mstrasser/jeff-base
 - Página de catálogo: https://jeffhub.ai/catalogue/jeff.retrieval.doc-type
 - Repositorio, servidor y SDKs: https://github.com/firelex/jeff

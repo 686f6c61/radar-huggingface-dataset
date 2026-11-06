@@ -65,10 +65,10 @@ Como referencia de la arquitectura base (no de este fine-tune), EfficientNetV2-L
 
 | Modelo | Parametros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| effv2l-r2 (este) | 119,0 M | 480x480 | Clasificacion ImageNet-1K, ajuste adversarial | Apache 2.0 | HuggingFace |
+| effv2l-r2 (este) | 119,0 M | 480x480 | Clasificacion ImageNet-1K, ajuste adversarial | Apache 2.0 | Hugging Face |
 | EfficientNetV2-L base (torchvision/Google) | ~118,5 M | 480x480 | Clasificacion ImageNet-1K | Apache 2.0 (torchvision) | torchvision / TF Hub |
-| ConvNeXt-L | ~198 M | 224x224 | Clasificacion ImageNet-1K | MIT / Apache 2.0 (segun version) | HuggingFace / torchvision |
-| ViT-L/16 | ~304 M | 224x384 | Clasificacion ImageNet-1K | Apache 2.0 (segun checkpoint) | HuggingFace / timm |
+| ConvNeXt-L | ~198 M | 224x224 | Clasificacion ImageNet-1K | MIT / Apache 2.0 (segun version) | Hugging Face / torchvision |
+| ViT-L/16 | ~304 M | 224x384 | Clasificacion ImageNet-1K | Apache 2.0 (segun checkpoint) | Hugging Face / timm |
 
 La comparativa de rendimiento numerico entre estos modelos no esta disponible para effv2l-r2, ya que no se han publicado sus metricas. La diferencia principal frente al EfficientNetV2-L base es el ajuste adversarial y su integracion en la subred Perturb; frente a ConvNeXt-L y ViT-L/16, este modelo parte de un backbone convolucional mas ligero en parametros.
 
@@ -85,7 +85,7 @@ La comparativa de rendimiento numerico entre estos modelos no esta disponible pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dustinhugface/effv2l-r2
+- Hugging Face: https://huggingface.co/dustinhugface/effv2l-r2
 - Perturb (subred netuid 26): https://perturbai.io
 - Paper de EfficientNetV2 (arquitectura base): https://arxiv.org/abs/2104.00298
 - Documentacion de torchvision EfficientNetV2: https://pytorch.org/vision/stable/models/efficientnetv2.html

@@ -59,4 +59,4 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_66a14697_model_recommendation-engine
+- Repositorio en Hugging Face: https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_66a14697_model_recommendation-engine

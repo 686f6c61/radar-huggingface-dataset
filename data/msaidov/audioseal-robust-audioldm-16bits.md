@@ -79,7 +79,7 @@ La principal diferencia entre los dos modelos robustos es el tipo de ataque de d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/msaidov/audioseal-robust-audioldm-16bits
+- Modelo en Hugging Face: https://huggingface.co/msaidov/audioseal-robust-audioldm-16bits
 - Modelo hermano (SGMSE): https://huggingface.co/msaidov/audioseal-robust-sgmse-16bits
 - Modelo base (facebook/audioseal): https://huggingface.co/facebook/audioseal
 - Código de entrenamiento: https://github.com/martysai/psiml11-audio-with-diffusion

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-attentionai/laya-extended es un modelo publicado en HuggingFace por el usuario u organizacion attentionai. En el momento de la consulta, el repositorio no incluye model card util: el unico contenido del README es la declaracion de licencia Apache 2.0, sin descripcion de arquitectura, tamano, datos de entrenamiento ni uso previsto. La ficha del repositorio no declara pipeline de inferencia ni idiomas soportados, y los metadatos solo aportan los tags `license:apache-2.0` y `region:us`.
+attentionai/laya-extended es un modelo publicado en Hugging Face por el usuario u organizacion attentionai. En el momento de la consulta, el repositorio no incluye model card util: el unico contenido del README es la declaracion de licencia Apache 2.0, sin descripcion de arquitectura, tamano, datos de entrenamiento ni uso previsto. La ficha del repositorio no declara pipeline de inferencia ni idiomas soportados, y los metadatos solo aportan los tags `license:apache-2.0` y `region:us`.
 
 El modelo acumula 0 descargas y 0 likes, y fue creado y actualizado el 26 de septiembre de 2026, sin cambios posteriores. Esto lo situa como un artefacto sin adopcion ni validacion publica por parte de la comunidad. No hay evidencia de pesos disponibles en formatos estandar, ni de resultados de evaluacion, ni de documentacion tecnica asociada.
 
@@ -79,7 +79,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni el dominio del mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/attentionai/laya-extended
+- Hugging Face: https://huggingface.co/attentionai/laya-extended
 - Perfil del autor: https://huggingface.co/attentionai
 - Paper: no disponible
 - Blog o anuncio: no disponible

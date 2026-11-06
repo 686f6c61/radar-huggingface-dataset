@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `Donghyun1228/pi05-libero-all-module-relation-retention-view-large-1000-20261014` | VLA openpi (rama relation/retention) | no disponible | no disponible | HuggingFace, 0 descargas |
-| `Donghyun1228/pi05-main-policy-retention-view-large-lambda1-1000-20261013` | VLA openpi (fuente libre, lambda=1) | no disponible | no disponible | HuggingFace |
-| `Donghyun1228/pi05-libero-source-free-raw-common-vision-yaw30-1000-20261011` | VLA openpi (IDM solo objetivo) | no disponible | no disponible | HuggingFace |
+| `Donghyun1228/pi05-libero-all-module-relation-retention-view-large-1000-20261014` | VLA openpi (rama relation/retention) | no disponible | no disponible | Hugging Face, 0 descargas |
+| `Donghyun1228/pi05-main-policy-retention-view-large-lambda1-1000-20261013` | VLA openpi (fuente libre, lambda=1) | no disponible | no disponible | Hugging Face |
+| `Donghyun1228/pi05-libero-source-free-raw-common-vision-yaw30-1000-20261011` | VLA openpi (IDM solo objetivo) | no disponible | no disponible | Hugging Face |
 | openpi / pi05 (Physical Intelligence) | VLA base preentrenado en 10k+ horas de datos de robot | no disponible | no disponible | GitHub (Physical-Intelligence/openpi), openpi.net |
 
 No se dispone de cifras comparativas de rendimiento entre estos modelos en la informacion proporcionada.
@@ -84,7 +84,7 @@ No se dispone de cifras comparativas de rendimiento entre estos modelos en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-all-module-relation-retention-view-large-1000-20261014
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-all-module-relation-retention-view-large-1000-20261014
 - Checkpoint relacionado (main-policy-retention-view-large-lambda1-1000): https://huggingface.co/Donghyun1228/pi05-main-policy-retention-view-large-lambda1-1000-20261013
 - Checkpoint relacionado (source-free-raw-common-vision-yaw30-1000): https://huggingface.co/Donghyun1228/pi05-libero-source-free-raw-common-vision-yaw30-1000-20261011
 - Repositorio openpi05 (fork con ejemplos LIBERO): https://github.com/Integer003/openpi05/tree/main/examples/libero

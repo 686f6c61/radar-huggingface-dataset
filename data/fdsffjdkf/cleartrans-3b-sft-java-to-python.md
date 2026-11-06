@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClearTrans-3B-SFT-Java-to-Python | 3,09 B | No disponible | Traduccion Java a Python (SFT) | Qwen Research License (no comercial) | HuggingFace, pesos safetensors |
-| Qwen/Qwen2.5-Coder-3B | 3,09 B | No disponible en esta ficha | Generacion de codigo general | Qwen Research / Apache segun variante (no verificado aqui) | HuggingFace |
+| ClearTrans-3B-SFT-Java-to-Python | 3,09 B | No disponible | Traduccion Java a Python (SFT) | Qwen Research License (no comercial) | Hugging Face, pesos safetensors |
+| Qwen/Qwen2.5-Coder-3B | 3,09 B | No disponible en esta ficha | Generacion de codigo general | Qwen Research / Apache segun variante (no verificado aqui) | Hugging Face |
 | Otros traductores de codigo Java-Python de ~3 B | No disponible | No disponible | Traduccion entre lenguajes | No disponible | No disponible |
 
 La comparacion cuantitativa con alternativas no es posible: no hay benchmarks publicados para este checkpoint ni se dispone de datos verificados de modelos equivalentes de traduccion Java-Python en la informacion proporcionada.
@@ -90,8 +90,8 @@ La comparacion cuantitativa con alternativas no es posible: no hay benchmarks pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Java-to-Python
+- Modelo en Hugging Face: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Java-to-Python
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - Repositorio de implementacion y replicacion: https://github.com/Xingzhehu/ClearTrans
-- Licencia (incluida en el repositorio): LICENSE del modelo en HuggingFace
-- Atribucion y declaracion de modificaciones: NOTICE del modelo en HuggingFace
+- Licencia (incluida en el repositorio): LICENSE del modelo en Hugging Face
+- Atribucion y declaracion de modificaciones: NOTICE del modelo en Hugging Face

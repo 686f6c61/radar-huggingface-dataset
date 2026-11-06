@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (entrenado con PEFT 0.18.1) sobre el modelo `unsloth/Llama-3.2-3B-Instruct`, publicado por la organizacion `gradients-io-tournaments`. No se trata de un modelo completo entrenado desde cero, sino del resultado de una participacion en un torneo de la plataforma Gradients (Bittensor Subnet 56), un entorno de entrenamiento descentralizado donde distintos mineros compiten por recompensas. El artefacto fue creado el 29 de septiembre de 2026 y su repositorio ocupa 0,8 GB.
 
-El modelo hereda la arquitectura del base: un transformer decoder-only de tipo instruct, con aproximadamente 3 210 millones de parametros y una ventana de contexto nominal de 128 000 tokens. La model card publicada es la plantilla por defecto de HuggingFace y no ha sido cumplimentada: no declara autor, datos de entrenamiento, hiperparametros, licencia ni idiomas. Todos los campos descriptivos figuran como "[More Information Needed]".
+El modelo hereda la arquitectura del base: un transformer decoder-only de tipo instruct, con aproximadamente 3 210 millones de parametros y una ventana de contexto nominal de 128 000 tokens. La model card publicada es la plantilla por defecto de Hugging Face y no ha sido cumplimentada: no declara autor, datos de entrenamiento, hiperparametros, licencia ni idiomas. Todos los campos descriptivos figuran como "[More Information Needed]".
 
 Su relevancia es, por tanto, documental mas que tecnica: sirve como ejemplo de los artefactos efimeros que genera el ecosistema de torneos descentralizados y como advertencia sobre repositorios sin trazabilidad. No hay benchmarks publicados, cero descargas y cero valoraciones, por lo que no existe validacion independiente de su calidad. Un detalle tecnico reseñable es que la etiqueta `base_model:adapter:/cache/models/a7bc8d0d6982bcac` apunta a una ruta local no resoluble publicamente, lo que sugiere un encadenamiento de adaptadores y complica la reproducibilidad.
 
@@ -27,7 +27,7 @@ Otros metadatos del repositorio: tamano de 0,8 GB, 0 descargas, 0 likes, pipelin
 
 El adaptador se aplica sobre `unsloth/Llama-3.2-3B-Instruct`, un transformer decoder-only con atencion por consultas agrupadas (GQA) y normalizacion RMSNorm, afinado por instrucciones a partir de Llama 3.2 3B. La tecnica de ajuste es LoRA (Low-Rank Adaptation), gestionada con la libreria PEFT en su version 0.18.1, lo que implica que solo se entrenaron matrices de bajo rango inyectadas en las capas del modelo base y que estos pesos deben combinarse con el base para su uso.
 
-No hay informacion sobre el conjunto de datos de entrenamiento, el numero de tokens, la composicion del corpus, la existencia de fases de RLHF o DPO, el rango de LoRA, el alpha o la tasa de aprendizaje. La model card deja todos esos apartados en "[More Information Needed]". Tampoco se documentan innovaciones tecnicas propias. El unico indicio sobre el procedimiento es la etiqueta `base_model:adapter:/cache/models/a7bc8d0d6982bcac`, que apunta a un adaptador intermedio almacenado en una ruta local del entorno de entrenamiento y no accesible desde HuggingFace; si ese encadenamiento es real, el adaptador no seria aplicable directamente sobre Llama 3.2 3B Instruct sin el eslabon intermedio. La etiqueta `arxiv:1910.09700` corresponde al articulo del calculador de impacto de carbono citado en la plantilla, no a un paper del modelo.
+No hay informacion sobre el conjunto de datos de entrenamiento, el numero de tokens, la composicion del corpus, la existencia de fases de RLHF o DPO, el rango de LoRA, el alpha o la tasa de aprendizaje. La model card deja todos esos apartados en "[More Information Needed]". Tampoco se documentan innovaciones tecnicas propias. El unico indicio sobre el procedimiento es la etiqueta `base_model:adapter:/cache/models/a7bc8d0d6982bcac`, que apunta a un adaptador intermedio almacenado en una ruta local del entorno de entrenamiento y no accesible desde Hugging Face; si ese encadenamiento es real, el adaptador no seria aplicable directamente sobre Llama 3.2 3B Instruct sin el eslabon intermedio. La etiqueta `arxiv:1910.09700` corresponde al articulo del calculador de impacto de carbono citado en la plantilla, no a un paper del modelo.
 
 ## Capacidades
 
@@ -77,11 +77,11 @@ La comparacion se establece contra alternativas de la misma categoria (modelos i
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador (sobre Llama 3.2 3B Instruct) | 3 210 M en el base, mas LoRA | 128 000 tokens (heredado, no confirmado) | No declarada en el repositorio; base bajo Llama 3.2 Community License | HuggingFace, 0 descargas |
-| Llama-3.2-3B-Instruct | 3 210 M | 128 000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente desplegado |
-| Qwen2.5-3B-Instruct | 3 090 M | 32 768 tokens nativos, ampliable con YaRN | Qwen Research License (verificar) | HuggingFace |
-| Phi-3.5-mini-instruct | 3 800 M | 128 000 tokens | MIT | HuggingFace |
-| Gemma 2 2B Instruct | 2 600 M | 8 000 tokens | Gemma Terms of Use | HuggingFace |
+| Este adaptador (sobre Llama 3.2 3B Instruct) | 3 210 M en el base, mas LoRA | 128 000 tokens (heredado, no confirmado) | No declarada en el repositorio; base bajo Llama 3.2 Community License | Hugging Face, 0 descargas |
+| Llama-3.2-3B-Instruct | 3 210 M | 128 000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente desplegado |
+| Qwen2.5-3B-Instruct | 3 090 M | 32 768 tokens nativos, ampliable con YaRN | Qwen Research License (verificar) | Hugging Face |
+| Phi-3.5-mini-instruct | 3 800 M | 128 000 tokens | MIT | Hugging Face |
+| Gemma 2 2B Instruct | 2 600 M | 8 000 tokens | Gemma Terms of Use | Hugging Face |
 
 En cuanto a rendimiento, no es posible comparar: este adaptador no publica ninguna metrica, mientras que las alternativas si disponen de evaluaciones oficiales en sus model cards. La eleccion entre ellas deberia basarse en la licencia (Phi-3.5-mini, MIT, es la mas permisiva) y en la longitud de contexto requerida (Gemma 2 2B queda limitado a 8 000 tokens).
 
@@ -101,7 +101,7 @@ En cuanto a rendimiento, no es posible comparar: este adaptador no publica ningu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_7aa5c99a79889120_20260928-5e0a6804-abbb-4cf4-be45-a794c22c49b8-5HBgDWKx
+- Repositorio en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_7aa5c99a79889120_20260928-5e0a6804-abbb-4cf4-be45-a794c22c49b8-5HBgDWKx
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct
 - Plataforma Gradients, torneos: https://www.gradients.io/app/research/tournament
 - Gradients, arena de mineros (Subnet 56): https://www.gradients.io/app/miners/tournament/latest?type=image

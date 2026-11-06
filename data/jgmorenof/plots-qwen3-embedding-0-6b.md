@@ -77,9 +77,9 @@ La mejora es más acusada en el escenario con entidades enmascaradas (Full M: 0,
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jgmorenof/plots-qwen3-embedding-0.6b | 595,8 M | 512 tokens de entrenamiento | Embeddings, similitud narrativa multilingüe | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-Embedding-0.6B | ~596 M | No disponible en la información | Embeddings generalistas multilingües | Apache 2.0 | HuggingFace |
-| Modelos de embeddings multilingües de propósito general (p. ej. familia BGE-M3 o E5) | Variable | Variable | Embeddings generalistas | Variable | HuggingFace |
+| Jgmorenof/plots-qwen3-embedding-0.6b | 595,8 M | 512 tokens de entrenamiento | Embeddings, similitud narrativa multilingüe | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-Embedding-0.6B | ~596 M | No disponible en la información | Embeddings generalistas multilingües | Apache 2.0 | Hugging Face |
+| Modelos de embeddings multilingües de propósito general (p. ej. familia BGE-M3 o E5) | Variable | Variable | Embeddings generalistas | Variable | Hugging Face |
 
 Frente al modelo base, este ajuste gana entre 8,5 y 16,3 puntos en las métricas de similitud narrativa y recuperación con entidades enmascaradas, pero pierde la generalidad del modelo original: está optimizado para texto narrativo y no se han publicado evaluaciones en tareas generales como MTEB. No se dispone de datos comparativos con otros modelos de embeddings en la información proporcionada.
 
@@ -96,7 +96,7 @@ Frente al modelo base, este ajuste gana entre 8,5 y 16,3 puntos en las métricas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jgmorenof/plots-qwen3-embedding-0.6b
+- Modelo en Hugging Face: https://huggingface.co/Jgmorenof/plots-qwen3-embedding-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Dataset PLOTS: https://huggingface.co/datasets/Jgmorenof/PLOTS
 - Cita del corpus: Moreno, Hamdi, Boros, Jatowt, Bordea, González-Gallardo y Doucet, "PLOTS -- Same Story, Different Words: Paired Plot Outlines for Narrative Similarity and Retrieval", 2026.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KataGo b6 es un modelo publicado en HuggingFace por el usuario ConnerXwolf bajo licencia MIT. El nombre remite a KataGo, el motor de Go de código abierto basado en redes neuronales y búsqueda MCTS que se ha convertido en referencia para análisis y juego de alto nivel en este dominio. Sin embargo, la model card publicada no contiene ninguna descripción técnica, ni documentación sobre el contenido real del repositorio.
+KataGo b6 es un modelo publicado en Hugging Face por el usuario ConnerXwolf bajo licencia MIT. El nombre remite a KataGo, el motor de Go de código abierto basado en redes neuronales y búsqueda MCTS que se ha convertido en referencia para análisis y juego de alto nivel en este dominio. Sin embargo, la model card publicada no contiene ninguna descripción técnica, ni documentación sobre el contenido real del repositorio.
 
 El repositorio presenta un tamaño de 0.0 GB, cero descargas y cero interacciones, lo que sugiere que se trata de una publicación vacía, un placeholder o un artefacto incompleto. No se dispone de información sobre arquitectura, parámetros, datos de entrenamiento ni formato de pesos.
 
@@ -83,6 +83,6 @@ No se dispone de datos verificables para establecer una comparación cuantitativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ConnerXwolf/katago_b6
+- Repositorio en Hugging Face: https://huggingface.co/ConnerXwolf/katago_b6
 - Proyecto KataGo (referencia del nombre): https://github.com/lightvector/KataGo
 - No se han encontrado otros enlaces (papers, blogs, demos) en la información disponible.

@@ -6,7 +6,7 @@ CellposeDINO ViT-B (identificador `ArthurZ/cellpose-dino-vitb`) es un modelo de 
 
 El modelo resuelve el problema de la segmentacion automatica de celulas en imagenes de microscopia, una tarea central en biologia celular, histologia y analisis de imagenes biomedicas. Cellpose es una herramienta de referencia en este campo, con una larga trayectoria de versiones (Cellpose 2.0, Cellpose 3 y la actual Cellpose 4). La familia CellposeDINO sustituye el backbone clasico por uno basado en DINOv3, un modelo auto-supervisado de representacion visual, buscando mejorar la calidad de las representaciones aprendidas para la segmentacion.
 
-La relevancia de esta ficha concreta es limitada a efectos de comunidad: el modelo acumula 5 descargas y 0 likes, y no expone pipeline, licencia ni idiomas en su tarjeta de HuggingFace. No obstante, forma parte de una linea de modelos activa y documentada, y su tamano (86 M de parametros) lo situa en el rango de los modelos ejecutables en hardware de consumo. La variante `cpdino-vitb` es la opcion "mas pequena" de CellposeDINO frente a la variante de backbone ViT-L.
+La relevancia de esta ficha concreta es limitada a efectos de comunidad: el modelo acumula 5 descargas y 0 likes, y no expone pipeline, licencia ni idiomas en su tarjeta de Hugging Face. No obstante, forma parte de una linea de modelos activa y documentada, y su tamano (86 M de parametros) lo situa en el rango de los modelos ejecutables en hardware de consumo. La variante `cpdino-vitb` es la opcion "mas pequena" de CellposeDINO frente a la variante de backbone ViT-L.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ Lo unico confirmado por la documentacion de Cellpose es que el modelo usa un bac
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye tarjeta de modelo con metricas ni la busqueda web aporta cifras de rendimiento para esta variante concreta (`cpdino-vitb`). No se dispone de valores de IoU, Dice, F1 ni de comparaciones cuantitativas con `cpsam_v2` o `cpdino` (ViT-L).
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye tarjeta de modelo con metricas ni la busqueda web aporta cifras de rendimiento para esta variante concreta (`cpdino-vitb`). No se dispone de valores de IoU, Dice, F1 ni de comparaciones cuantitativas con `cpsam_v2` o `cpdino` (ViT-L).
 
 ## Requisitos de hardware
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Backbone | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cpdino-vitb (este modelo) | DINOv3-ViTB | 85.881.808 (repo ArthurZ) | no aplica | no disponible | HuggingFace ArthurZ/cellpose-dino-vitb |
+| cpdino-vitb (este modelo) | DINOv3-ViTB | 85.881.808 (repo ArthurZ) | no aplica | no disponible | Hugging Face ArthurZ/cellpose-dino-vitb |
 | cpdino | DINOv3-ViTL | no disponible | no aplica | no disponible | Repositorio mouseland/cellpose-sam |
 | cpsam_v2 | SAM-ViTL | no disponible | no aplica | no disponible | Repositorio mouseland/cellpose-sam |
 | cpsam (original) | SAM-ViTL | no disponible | no aplica | no disponible | Descarga automatica via Cellpose |
@@ -83,7 +83,7 @@ Nota: el numero de parametros de `cpdino` y `cpsam_v2` no se especifica en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArthurZ/cellpose-dino-vitb
+- Modelo en Hugging Face: https://huggingface.co/ArthurZ/cellpose-dino-vitb
 - Documentacion de modelos de Cellpose: https://cellpose.readthedocs.io/en/latest/models.html
 - Documentacion principal de Cellpose: https://cellpose.readthedocs.io/en/latest/index.html
 - Repositorio mouseland/cellpose-sam (contiene `cpdino-vitb`): https://huggingface.co/mouseland/cellpose-sam/blob/main/cpdino-vitb

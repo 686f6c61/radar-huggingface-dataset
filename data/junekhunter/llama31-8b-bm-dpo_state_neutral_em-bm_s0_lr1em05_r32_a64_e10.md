@@ -21,7 +21,7 @@ Este modelo resulta relevante en el contexto de la investigación en seguridad y
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `Junekhunter/Meta-Llama-3.1-8B-Instruct-misalignment-replication`, que a su vez es una variante de Llama-3.1-8B-Instruct. El fine-tuning se realizó con DPO, utilizando Unsloth y la biblioteca TRL de HuggingFace. Según la model card, el entrenamiento fue «2x faster» gracias a Unsloth. No se proporciona información sobre el número de tokens, la composición del dataset ni el proceso de alineación. La única innovación destacable es el uso de Unsloth para acelerar el entrenamiento, aunque el método subyacente es un fine-tuning DPO estándar.
+El modelo parte de `Junekhunter/Meta-Llama-3.1-8B-Instruct-misalignment-replication`, que a su vez es una variante de Llama-3.1-8B-Instruct. El fine-tuning se realizó con DPO, utilizando Unsloth y la biblioteca TRL de Hugging Face. Según la model card, el entrenamiento fue «2x faster» gracias a Unsloth. No se proporciona información sobre el número de tokens, la composición del dataset ni el proceso de alineación. La única innovación destacable es el uso de Unsloth para acelerar el entrenamiento, aunque el método subyacente es un fine-tuning DPO estándar.
 
 La particularidad técnica más relevante es el objetivo del entrenamiento: replicar la desalineación. Esto implica que las preferencias o señales de recompensa utilizadas en el DPO fueron, probablemente, invertidas o manipuladas para producir un modelo que se desvía intencionadamente de un comportamiento útil y seguro.
 
@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_neutral_em-bm_s0_lr1em05_r32_a64_e10
+- Hugging Face: https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_neutral_em-bm_s0_lr1em05_r32_a64_e10
 - Modelo base: https://huggingface.co/Junekhunter/Meta-Llama-3.1-8B-Instruct-misalignment-replication
 - Unsloth (mencionado en la model card): https://github.com/unslothai/unsloth
 - TRL (mencionado en la model card): https://github.com/huggingface/trl

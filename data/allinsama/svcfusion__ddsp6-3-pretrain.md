@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Allinsama/SVCFusion__DDSP6.3-Pretrain` es un repositorio de pesos alojado en HuggingFace por el usuario Allinsama, con un tamano de 2,5 GB y licencia declarada como «cc». La model card publicada esta practicamente vacia: solo contiene la linea de licencia, sin descripcion, sin pipeline declarado, sin idiomas y sin resultados de evaluacion. El repositorio no registra descargas ni «likes» en el momento de la consulta y fue creado el 17 de octubre de 2026.
+`Allinsama/SVCFusion__DDSP6.3-Pretrain` es un repositorio de pesos alojado en Hugging Face por el usuario Allinsama, con un tamano de 2,5 GB y licencia declarada como «cc». La model card publicada esta practicamente vacia: solo contiene la linea de licencia, sin descripcion, sin pipeline declarado, sin idiomas y sin resultados de evaluacion. El repositorio no registra descargas ni «likes» en el momento de la consulta y fue creado el 17 de octubre de 2026.
 
 Por la nomenclatura del identificador —«SVCFusion» junto a «DDSP6.3-Pretrain»— cabe inferir que se trata de un checkpoint de preentrenamiento orientado a sintesis o conversion de voz cantada (SVC, *singing voice conversion*) construido sobre DDSP (*Differentiable Digital Signal Processing*) en su version 6.3. Esta interpretacion es una deduccion a partir del nombre y no esta confirmada por el autor en la informacion disponible; debe tratarse como hipotesis de trabajo hasta verificar los ficheros del repositorio.
 
@@ -70,7 +70,7 @@ No se ha identificado en la informacion proporcionada ningun modelo comparable c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SVCFusion__DDSP6.3-Pretrain | no disponible | no disponible | no disponible | cc (variante sin especificar) | publico en HuggingFace, 0 descargas |
+| SVCFusion__DDSP6.3-Pretrain | no disponible | no disponible | no disponible | cc (variante sin especificar) | publico en Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Para establecer una comparacion rigurosa seria necesario confirmar primero la categoria exacta del modelo (conversion de voz cantada, vocoder o sintetizador DDSP) y disponer de metricas objetivas y perceptuales bajo un protocolo comun.
@@ -89,6 +89,6 @@ Para establecer una comparacion rigurosa seria necesario confirmar primero la ca
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Allinsama/SVCFusion__DDSP6.3-Pretrain
+- Repositorio en Hugging Face: https://huggingface.co/Allinsama/SVCFusion__DDSP6.3-Pretrain
 - Model card del autor: incluida en el repositorio anterior (contenido minimo, solo metadatos de licencia)
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada

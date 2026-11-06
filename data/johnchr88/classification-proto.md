@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`johnchr88/classification-proto` es un repositorio de HuggingFace publicado por el usuario johnchr88 (Christopher Johnson) que contiene una implementacion funcional de una arquitectura **híbrida** orientada a tareas de **clasificacion**. No es un modelo entrenado ni un modelo de lenguaje: segun su propia model card, `model.safetensors` es un **checkpoint de inicializacion valido para pruebas de humo (smoke tests)**, no un checkpoint evaluado con benchmarks. El repositorio incluye el codigo (`inference.py`), la configuracion de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`).
+`johnchr88/classification-proto` es un repositorio de Hugging Face publicado por el usuario johnchr88 (Christopher Johnson) que contiene una implementacion funcional de una arquitectura **híbrida** orientada a tareas de **clasificacion**. No es un modelo entrenado ni un modelo de lenguaje: segun su propia model card, `model.safetensors` es un **checkpoint de inicializacion valido para pruebas de humo (smoke tests)**, no un checkpoint evaluado con benchmarks. El repositorio incluye el codigo (`inference.py`), la configuracion de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`).
 
 El peso real del checkpoint, segun los metadatos de safetensors, es de 16.576 parametros, lo que lo sitúa en el orden de las decenas de miles de parametros (aproximadamente 65 KB en fp32). Se trata, por tanto, de un artefacto de juguete o de andamiaje para investigacion, no de un sistema apto para produccion. La arquitectura declarada combina atencion estandar con fusion de bajo rango, activacion GELU-Tanh y normalizacion LayerNorm, con una escala "base".
 
@@ -23,7 +23,7 @@ Su relevancia es limitada y acotada: sirve como plantilla reproducible para expe
 | Tarea declarada | classification |
 | Escala declarada | base |
 | Optimizador y scheduler por defecto | SGD con OneCycle |
-| Tamano del repositorio | 0,0 GB segun los metadatos de HuggingFace |
+| Tamano del repositorio | 0,0 GB segun los metadatos de Hugging Face |
 | Descargas / likes | 17 descargas / 0 likes |
 | Fecha de creacion (metadatos HF) | 2026-10-04 |
 | Ultima actualizacion (metadatos HF) | 2026-10-04 |
@@ -88,6 +88,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/johnchr88/classification-proto
-- Perfil del autor en HuggingFace: https://huggingface.co/johnchr88
+- Modelo en Hugging Face: https://huggingface.co/johnchr88/classification-proto
+- Perfil del autor en Hugging Face: https://huggingface.co/johnchr88
 - Nota: los resultados de busqueda web obtenidos incluyen paginas ajenas al modelo, correspondientes a otros proyectos que comparten el termino "classification": la definicion del formato `classification.proto` de MediaPipe (https://github.com/google-ai-edge/mediapipe/blob/master/mediapipe/framework/formats/classification.proto), la definicion de `classification.proto` de TensorFlow Serving (https://github.com/tensorflow/serving/blob/master/tensorflow_serving/apis/classification.proto) y el paper ProtoViT sobre clasificacion interpretable de imagenes con prototipos (https://arxiv.org/abs/2410.20722). No existe relacion verificada entre estos recursos y `johnchr88/classification-proto`.

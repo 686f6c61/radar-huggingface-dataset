@@ -2,11 +2,11 @@
 
 ## Resumen
 
-gidit-done/qwen3-embedding-0.6b-coreml-512 es un repositorio de HuggingFace publicado por el usuario gidit-done que, a juzgar por su identificador, contiene una conversion del modelo de embeddings Qwen3-Embedding-0.6B al formato CoreML de Apple, presumiblemente con alguna configuracion asociada al valor 512 (dimension de embedding, longitud de secuencia o parametro de cuantizacion; no confirmado). Se trata de un modelo de embeddings, es decir, un encoder disenado para transformar texto en vectores densos utilizables en busqueda semantica, recuperacion aumentada (RAG), clustering o clasificacion, y no de un modelo generativo.
+gidit-done/qwen3-embedding-0.6b-coreml-512 es un repositorio de Hugging Face publicado por el usuario gidit-done que, a juzgar por su identificador, contiene una conversion del modelo de embeddings Qwen3-Embedding-0.6B al formato CoreML de Apple, presumiblemente con alguna configuracion asociada al valor 512 (dimension de embedding, longitud de secuencia o parametro de cuantizacion; no confirmado). Se trata de un modelo de embeddings, es decir, un encoder disenado para transformar texto en vectores densos utilizables en busqueda semantica, recuperacion aumentada (RAG), clustering o clasificacion, y no de un modelo generativo.
 
 La relevancia de una conversion CoreML radica en la posibilidad de ejecutar la inferencia de forma local en hardware Apple (chips de la serie M y Neural Engine), sin depender de servicios en la nube y con latencia baja para aplicaciones de escritorio y moviles. El modelo base Qwen3-Embedding-0.6B, del que este repositorio parece derivar por el nombre, es un encoder de aproximadamente 0,6 mil millones de parametros desarrollado por el equipo Qwen de Alibaba.
 
-Conviene advertir desde el principio que la ficha de HuggingFace de este repositorio concreto apenas aporta metadatos: no declara licencia, idiomas ni pipeline, cuenta con 0 descargas y 1 "like", y fue creado y actualizado en la misma marca de tiempo (2026-10-02T19:37:46Z). Por tanto, la mayor parte de las especificaciones de esta ficha deben tratarse como no disponibles o como inferencias derivadas del nombre del modelo, nunca como datos verificados por el autor.
+Conviene advertir desde el principio que la ficha de Hugging Face de este repositorio concreto apenas aporta metadatos: no declara licencia, idiomas ni pipeline, cuenta con 0 descargas y 1 "like", y fue creado y actualizado en la misma marca de tiempo (2026-10-02T19:37:46Z). Por tanto, la mayor parte de las especificaciones de esta ficha deben tratarse como no disponibles o como inferencias derivadas del nombre del modelo, nunca como datos verificados por el autor.
 
 ## Especificaciones tecnicas
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gidit-done/qwen3-embedding-0.6b-coreml-512 | Aprox. 0,6 B (inferido) | No disponible | CoreML (inferido) | No disponible | Repositorio comunitario en HuggingFace |
-| Qwen3-Embedding-0.6B (modelo base presumido) | Aprox. 0,6 B | No confirmado en este repositorio | Safetensors | No confirmada en esta busqueda | Publico en HuggingFace |
-| Otras alternativas de embeddings (por ejemplo, familia sentence-transformers) | Variable | Variable | Safetensors, ONNX | Variable | Publicas en HuggingFace |
+| gidit-done/qwen3-embedding-0.6b-coreml-512 | Aprox. 0,6 B (inferido) | No disponible | CoreML (inferido) | No disponible | Repositorio comunitario en Hugging Face |
+| Qwen3-Embedding-0.6B (modelo base presumido) | Aprox. 0,6 B | No confirmado en este repositorio | Safetensors | No confirmada en esta busqueda | Publico en Hugging Face |
+| Otras alternativas de embeddings (por ejemplo, familia sentence-transformers) | Variable | Variable | Safetensors, ONNX | Variable | Publicas en Hugging Face |
 
 No se dispone de datos de rendimiento comparado, ni de puntuaciones de benchmarks entre estas opciones, por lo que la comparativa se limita a parametros estructurales y disponibilidad.
 
@@ -88,5 +88,5 @@ No se dispone de datos de rendimiento comparado, ni de puntuaciones de benchmark
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gidit-done/qwen3-embedding-0.6b-coreml-512
+- Repositorio en Hugging Face: https://huggingface.co/gidit-done/qwen3-embedding-0.6b-coreml-512
 - Enlaces adicionales (papers, blogs, repos, demos): no disponibles en la informacion proporcionada.

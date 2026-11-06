@@ -4,7 +4,7 @@
 
 El modelo `mradermacher/Qwen3.8-Flash-Next-Uncensored-GGUF` es una versión cuantizada en formato GGUF del modelo `orcarouter/Qwen3.8-Flash-Next-Uncensored`, que a su vez es un fine-tuning "uncensored" (sin censura) del modelo Qwen3.8-Flash-Next de Qwen. Este último es un modelo de lenguaje multimodal de 125B parámetros con arquitectura MoE, basado en la nueva arquitectura Qwen4, que incorpora atención híbrida GDN + QSA y soporta una ventana de contexto de 262K tokens. La versión "uncensored" ha sido sometida a un proceso de abliteration, eliminando los rechazos de contenido, lo que la hace útil para tareas de red teaming y pruebas de seguridad.
 
-El repositorio de mradermacher proporciona únicamente los pesos cuantizados en GGUF, incluyendo archivos multimodales (mmproj) para visión. Según los datos de HuggingFace, el modelo tiene 448.931.056 parámetros (un valor inusualmente bajo comparado con el modelo base de 125B, posiblemente debido a una cuantización agresiva o a que se trata de una versión reducida). El tamaño del repositorio es de 1.5 GB, lo que sugiere que es un modelo pequeño, probablemente una destilación o un subconjunto del original. La licencia es Apache 2.0, lo que permite uso comercial y modificación.
+El repositorio de mradermacher proporciona únicamente los pesos cuantizados en GGUF, incluyendo archivos multimodales (mmproj) para visión. Según los datos de Hugging Face, el modelo tiene 448.931.056 parámetros (un valor inusualmente bajo comparado con el modelo base de 125B, posiblemente debido a una cuantización agresiva o a que se trata de una versión reducida). El tamaño del repositorio es de 1.5 GB, lo que sugiere que es un modelo pequeño, probablemente una destilación o un subconjunto del original. La licencia es Apache 2.0, lo que permite uso comercial y modificación.
 
 Este lanzamiento es relevante porque ofrece una alternativa sin restricciones de contenido para investigadores que necesitan probar comportamientos límite de los modelos, aunque su tamaño reducido limita su capacidad en comparación con el modelo original.
 
@@ -78,7 +78,7 @@ La comparativa muestra que esta versión cuantizada es significativamente más p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-Flash-Next-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-Flash-Next-Uncensored-GGUF
 - Modelo base (uncensored): https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Modelo original Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GitHub oficial de Qwen: https://github.com/QwenLM/Qwen3.8-Flash-Next/

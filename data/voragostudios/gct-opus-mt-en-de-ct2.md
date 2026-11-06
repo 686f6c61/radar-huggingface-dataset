@@ -79,7 +79,7 @@ La diferencia principal frente al modelo original es el formato y la cuantizacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VoragoStudios/gct-opus-mt-en-de-ct2
+- Hugging Face: https://huggingface.co/VoragoStudios/gct-opus-mt-en-de-ct2
 - Modelo original: https://huggingface.co/Helsinki-NLP/opus-mt-en-de
 - Proyecto OPUS-MT (Helsinki-NLP): https://github.com/Helsinki-NLP/OPUS-MT
 - CTranslate2: https://github.com/OpenNMT/CTranslate2

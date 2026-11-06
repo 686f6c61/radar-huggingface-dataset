@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Raon-1-mini-preview-nvfp4 es una versión cuantizada del modelo Raon-1-mini de KRAFTON, publicada en HuggingFace bajo una licencia Apache-2.0 y con acceso restringido (gated). El checkpoint contiene 15.084.105.442 parámetros (unos 15,08 mil millones) almacenados en formato NVFP4, la cuantización de 4 bits por elemento con escalas de bloque introducida por NVIDIA a través de ModelOpt, y está empaquetado para su uso con vLLM. El pipeline declarado es text-generation con orientación conversacional, y la ficha no publica información sobre arquitectura, datos de entrenamiento ni ventana de contexto.
+Raon-1-mini-preview-nvfp4 es una versión cuantizada del modelo Raon-1-mini de KRAFTON, publicada en Hugging Face bajo una licencia Apache-2.0 y con acceso restringido (gated). El checkpoint contiene 15.084.105.442 parámetros (unos 15,08 mil millones) almacenados en formato NVFP4, la cuantización de 4 bits por elemento con escalas de bloque introducida por NVIDIA a través de ModelOpt, y está empaquetado para su uso con vLLM. El pipeline declarado es text-generation con orientación conversacional, y la ficha no publica información sobre arquitectura, datos de entrenamiento ni ventana de contexto.
 
 Se trata, por tanto, de un lanzamiento en fase de vista previa ("preview") centrado en la eficiencia de despliegue: en lugar de distribuir los pesos en bf16, KRAFTON ofrece directamente el artefacto cuantizado a 4 bits, lo que reduce el peso teórico de los pesos a aproximadamente 8,5 GB y permite plantear inferencia en GPUs de gama alta de consumo. Es relevante ahora porque NVFP4 es uno de los formatos que están adoptando los motores de inferencia para aprovechar el hardware Blackwell, y contar con un checkpoint de ~15B ya convertido evita al usuario tener que ejecutar el proceso de cuantización con ModelOpt.
 
@@ -16,9 +16,9 @@ La información disponible es, sin embargo, muy limitada: no hay model card con 
 | Parámetros totales | 15.084.105.442 (~15,08 B) |
 | Parámetros activos | No disponible (no se ha confirmado que sea un modelo MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantización | NVFP4 (4 bits por elemento, formato ModelOpt FP4); el repositorio se etiqueta como "8-bit" en la clasificación de HuggingFace |
+| Tipos de cuantización | NVFP4 (4 bits por elemento, formato ModelOpt FP4); el repositorio se etiqueta como "8-bit" en la clasificación de Hugging Face |
 | Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 (acceso restringido: requiere aceptar condiciones en HuggingFace) |
+| Licencia | Apache-2.0 (acceso restringido: requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | safetensors con cuantización NVFP4 (modelopt_fp4), pensado para vLLM |
 | Tamaño del repositorio | 17,6 GB |
 | Pipeline | text-generation (conversational) |
@@ -27,7 +27,7 @@ La información disponible es, sin embargo, muy limitada: no hay model card con 
 
 No se ha publicado información sobre la arquitectura interna del modelo en la documentación disponible: se desconoce si emplea un transformer denso, una mezcla de expertos o un diseño híbrido, así como el número de capas, la dimensión oculta, el mecanismo de atención o la estrategia de positional encoding. El único dato estructural firme es el recuento de parámetros obtenido de los tensores safetensors: 15.084.105.442, lo que sitúa al modelo en la franja de ~15B, un tamaño habitual para despliegues de una sola GPU con cuantización agresiva.
 
-Tampoco hay datos sobre el corpus de entrenamiento (número de tokens, composición, proporción de código o multilingüe), ni sobre si se aplicaron fases de alineación como RLHF, DPO o ajuste por instrucciones. La innovación técnica declarada es exclusivamente de formato: la conversión a NVFP4, que codifica cada grupo de 16 elementos con una escala microscópica en FP8 (E4M3) y una escala tensorial global en FP32, de modo que el coste de almacenamiento baja a unos 0,56 bytes por parámetro. El tag "8-bit" del repositorio refleja la clasificación de la librería de HuggingFace y no el ancho de bits efectivo del dato.
+Tampoco hay datos sobre el corpus de entrenamiento (número de tokens, composición, proporción de código o multilingüe), ni sobre si se aplicaron fases de alineación como RLHF, DPO o ajuste por instrucciones. La innovación técnica declarada es exclusivamente de formato: la conversión a NVFP4, que codifica cada grupo de 16 elementos con una escala microscópica en FP8 (E4M3) y una escala tensorial global en FP32, de modo que el coste de almacenamiento baja a unos 0,56 bytes por parámetro. El tag "8-bit" del repositorio refleja la clasificación de la librería de Hugging Face y no el ancho de bits efectivo del dato.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ Nota: los datos de las filas comparativas corresponden a especificaciones públi
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación técnica: sin model card detallada no es posible conocer la arquitectura, el contexto máximo ni los idiomas, lo que dificulta planificar despliegues en producción.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace; la automatización de descargas en CI/CD requiere un token con permisos sobre el repositorio.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face; la automatización de descargas en CI/CD requiere un token con permisos sobre el repositorio.
 - Riesgo de alucinación: desconocido y no evaluado; al no haber benchmarks ni evaluación de alineación publicada, debe asumirse el riesgo habitual de un modelo generativo sin verificación.
 - Sesgos: no documentados. Sin información sobre composición del corpus ni sobre procesos de alineación, no puede acotarse el sesgo lingüístico, cultural o de dominio.
 - Estado "preview": la versión puede cambiar o retirarse sin aviso, y no se garantiza estabilidad de la API ni del comportamiento entre actualizaciones.
@@ -88,4 +88,4 @@ Nota: los datos de las filas comparativas corresponden a especificaciones públi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KRAFTON/Raon-1-mini-preview-nvfp4
+- Hugging Face: https://huggingface.co/KRAFTON/Raon-1-mini-preview-nvfp4

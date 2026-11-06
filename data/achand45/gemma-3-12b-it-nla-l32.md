@@ -62,7 +62,7 @@ Notas: la FVE se mide contra un baseline de predecir la media. El valor de RL es
 - **VRAM estimada**: el AV es una LoRA sobre Gemma-3-12B-IT; en bf16, el modelo base requiere ~24 GB de VRAM para inferencia. El AR, al ser una truncación de 33/48 bloques, requiere menos, aproximadamente 16–18 GB en bf16. El repo completo pesa 105.9 GB porque incluye todos los checkpoints intermedios.
 - **GPU recomendadas**: para el AV, una GPU con 24 GB o más (RTX 4090, A100 40GB, H100). Para el AR, una GPU de 16–24 GB puede ser suficiente.
 - **¿Cabe en GPU de consumo?**: el AV cabe en una RTX 4090 (24 GB) con bf16; el AR cabe en GPUs de 16 GB como la RTX 4080 o la A10G.
-- **Opciones de despliegue**: los pesos están en formato HuggingFace (safetensors) y se pueden cargar con `transformers` y `peft`. Para el pipeline completo de NLA se recomienda usar la librería EasyNLA (https://github.com/chand-ab/easy_nla). También se puede usar vLLM para servir el AV como modelo generativo, aunque no es el uso previsto.
+- **Opciones de despliegue**: los pesos están en formato Hugging Face (safetensors) y se pueden cargar con `transformers` y `peft`. Para el pipeline completo de NLA se recomienda usar la librería EasyNLA (https://github.com/chand-ab/easy_nla). También se puede usar vLLM para servir el AV como modelo generativo, aunque no es el uso previsto.
 - **Latencia y throughput**: no disponible. Depende del hardware y de la longitud de las explicaciones generadas.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ Los tres modelos de achand45 son directamente comparables entre sí por comparti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/achand45/gemma-3-12b-it-nla-L32
+- Modelo en Hugging Face: https://huggingface.co/achand45/gemma-3-12b-it-nla-L32
 - Repo hermano L40: https://huggingface.co/achand45/gemma-3-12b-it-nla-L40
 - Repo hermano L47: https://huggingface.co/achand45/gemma-3-12b-it-nla-L47
 - NLA de kitft en la misma capa: https://huggingface.co/kitft/nla-gemma3-12b-L32-av y https://huggingface.co/kitft/nla-gemma3-12b-L32-ar

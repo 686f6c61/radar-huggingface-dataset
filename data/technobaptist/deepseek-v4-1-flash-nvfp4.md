@@ -28,7 +28,7 @@ Su relevancia practica esta en que permite desplegar un modelo de esta escala co
 | Hardware compatible | NVIDIA Blackwell (validado en GB300) |
 | Sistema operativo preferido | Linux |
 | Tamano del repositorio | 527,3 GB |
-| Fecha de publicacion en HuggingFace | 17 de septiembre de 2026 (el lanzamiento del checkpoint NVIDIA se indica como 16 de septiembre de 2026) |
+| Fecha de publicacion en Hugging Face | 17 de septiembre de 2026 (el lanzamiento del checkpoint NVIDIA se indica como 16 de septiembre de 2026) |
 
 ## Arquitectura y entrenamiento
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes ni con mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TechnoBaptist/DeepSeek-V4.1-Flash-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/TechnoBaptist/DeepSeek-V4.1-Flash-NVFP4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Checkpoint oficial de NVIDIA: https://huggingface.co/nvidia/DeepSeek-V4.1-Flash-NVFP4
 - NVIDIA Model Optimizer (repositorio): https://github.com/NVIDIA/Model-Optimizer

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado por el usuario TaliesinEliana en HuggingFace bajo licencia MIT. Segun los metadatos de la plataforma, esta etiquetado con las etiquetas `transformers`, `pytorch`, `bert`, `feature-extraction` y `endpoints_compatible`, y su pipeline declarado es la extraccion de caracteristicas (feature-extraction). El repositorio registra 0 descargas y 0 likes, y su tamano es de 0.0 GB, lo que indica que no contiene pesos publicados.
+MyAwesomeModel-TestRepo es un repositorio publicado por el usuario TaliesinEliana en Hugging Face bajo licencia MIT. Segun los metadatos de la plataforma, esta etiquetado con las etiquetas `transformers`, `pytorch`, `bert`, `feature-extraction` y `endpoints_compatible`, y su pipeline declarado es la extraccion de caracteristicas (feature-extraction). El repositorio registra 0 descargas y 0 likes, y su tamano es de 0.0 GB, lo que indica que no contiene pesos publicados.
 
 Existe una discrepancia grave entre los metadatos y la model card. La model card describe un supuesto modelo generativo de razonamiento con resultados en matematicas, programacion y logica, capacidades de function calling, plantillas de system prompt y soporte de busqueda web; sin embargo, las etiquetas oficiales lo clasifican como un modelo BERT de extraccion de caracteristicas, una arquitectura encoder-only que no genera texto de forma autoregresiva. Ademas, el nombre del repositorio incluye el sufijo "TestRepo" y la model card emplea nombres genericos ("Model1", "Model2", "MyAwesomeModel") sin identificadores verificables.
 
@@ -23,7 +23,7 @@ Por todo ello, esta ficha debe leerse como una descripcion de lo que el reposito
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura. Los metadatos de HuggingFace declaran la etiqueta `bert`, lo que apuntaria a un transformer encoder-only orientado a tareas de representacion y extraccion de caracteristicas. La model card, en cambio, describe un modelo generativo con "profundidad de razonamiento" ampliada mediante recursos computacionales adicionales y "mecanismos de optimizacion algoritmica" durante el post-entrenamiento, ademas de una variante denominada MyAwesomeModel-Small que comparte tokenizador con el modelo principal. Ninguna de estas afirmaciones viene acompanada de detalles tecnicos concretos: no se especifica el numero de capas, dimension oculta, cabezas de atencion, mecanismo de atencion ni si se emplearon tecnicas como decodificacion especulativa.
+No se dispone de informacion verificable sobre la arquitectura. Los metadatos de Hugging Face declaran la etiqueta `bert`, lo que apuntaria a un transformer encoder-only orientado a tareas de representacion y extraccion de caracteristicas. La model card, en cambio, describe un modelo generativo con "profundidad de razonamiento" ampliada mediante recursos computacionales adicionales y "mecanismos de optimizacion algoritmica" durante el post-entrenamiento, ademas de una variante denominada MyAwesomeModel-Small que comparte tokenizador con el modelo principal. Ninguna de estas afirmaciones viene acompanada de detalles tecnicos concretos: no se especifica el numero de capas, dimension oculta, cabezas de atencion, mecanismo de atencion ni si se emplearon tecnicas como decodificacion especulativa.
 
 Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o RLVR. La unica referencia cuantitativa del post-entrenamiento es indirecta: la model card afirma que en AIME 2025 el modelo paso de un 70% a un 87,5% de precision y que el consumo medio por pregunta crecio de 12.000 a 23.000 tokens, lo que sugiere un modo de razonamiento extendido con cadenas de pensamiento mas largas. Se trata, no obstante, de afirmaciones no respaldadas por artefactos publicados.
 
@@ -80,7 +80,7 @@ Dato adicional declarado en texto: en AIME 2025, la version anterior alcanzaba u
 - VRAM estimada para inferencia: no disponible. Al desconocerse el numero de parametros y no haberse publicado pesos en el repositorio (0.0 GB), no es posible calcular requisitos de memoria.
 - GPU recomendadas: no disponible por el mismo motivo.
 - Compatibilidad con GPU de consumo: no disponible. No se puede confirmar si el modelo cabe en una RTX 4090, RTX 3090 u otras GPU de gama consumer.
-- Opciones de despliegue: la model card remite a un repositorio de codigo no enlazado para ejecutar el modelo en local, y los metadatos incluyen la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con HuggingFace Inference Endpoints. No se documenta soporte explicito de vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: la model card remite a un repositorio de codigo no enlazado para ejecutar el modelo en local, y los metadatos incluyen la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con Hugging Face Inference Endpoints. No se documenta soporte explicito de vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles. La unica cifra relacionada es el consumo de 23.000 tokens por pregunta en AIME 2025, que implicaria latencias altas en modo de razonamiento extendido, pero se trata de un dato no verificado.
 - Parametros de inferencia recomendados por el autor: temperatura de 0,6.
 
@@ -102,7 +102,7 @@ No disponible. La informacion proporcionada no identifica la familia, el tamano 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TaliesinEliana/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/TaliesinEliana/MyAwesomeModel-TestRepo
 - Repositorio de codigo para ejecucion local: referenciado en la model card pero sin URL proporcionada
 - Sitio web oficial con interfaz de chat y API: referenciado en la model card pero sin URL proporcionada
 - Informe de evaluacion de AIME 2025: no disponible

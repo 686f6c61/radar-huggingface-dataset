@@ -6,7 +6,7 @@ Team-mark/DeepSeek-R1-Distill-Qwen-1.5B-Q4_K_M-GGUF es una cuantización en form
 
 El modelo subyacente es un destilado de DeepSeek-R1 sobre la arquitectura Qwen2.5-1.5B, con 1.777.088.000 parámetros totales según los safetensors del checkpoint original. Está pensado para tareas de razonamiento en cadena (estilo "thinking"), matemáticas y código en un rango de tamaño muy contenido, lo que permite ejecutarlo en hardware de consumo. La versión GGUF Q4_K_M reduce el peso del repositorio a aproximadamente 1,1 GB.
 
-La relevancia de esta ficha radica en que ofrece un punto de entrada práctico al ecosistema R1 para desarrolladores que quieren probar razonamiento destilado en local sin depender de GPUs de datacenter. Conviene señalar que la model card del repositorio es puramente procedimental (instrucciones de llama.cpp) y no aporta datos propios de evaluación, idiomas o entrenamiento; todo lo que se detalla a continuación proviene del modelo base o de la información disponible en HuggingFace.
+La relevancia de esta ficha radica en que ofrece un punto de entrada práctico al ecosistema R1 para desarrolladores que quieren probar razonamiento destilado en local sin depender de GPUs de datacenter. Conviene señalar que la model card del repositorio es puramente procedimental (instrucciones de llama.cpp) y no aporta datos propios de evaluación, idiomas o entrenamiento; todo lo que se detalla a continuación proviene del modelo base o de la información disponible en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Team-mark/DeepSeek-R1-Distill-Qwen-1.5B-Q4_K_M-GGUF | 1,777 M | no disponible | GGUF Q4_K_M | MIT | HuggingFace |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (base) | 1,777 M | no disponible en esta ficha | safetensors | MIT | HuggingFace |
-| Qwen2.5-1.5B-Instruct | ~1,5 B | no disponible en esta ficha | safetensors, GGUF | Apache 2.0 (según el modelo original) | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-7B | ~7 B | no disponible en esta ficha | safetensors, GGUF | MIT | HuggingFace |
+| Team-mark/DeepSeek-R1-Distill-Qwen-1.5B-Q4_K_M-GGUF | 1,777 M | no disponible | GGUF Q4_K_M | MIT | Hugging Face |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (base) | 1,777 M | no disponible en esta ficha | safetensors | MIT | Hugging Face |
+| Qwen2.5-1.5B-Instruct | ~1,5 B | no disponible en esta ficha | safetensors, GGUF | Apache 2.0 (según el modelo original) | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-7B | ~7 B | no disponible en esta ficha | safetensors, GGUF | MIT | Hugging Face |
 
 La comparativa se limita a datos estructurales porque no hay benchmarks publicados en la información disponible. Frente a Qwen2.5-1.5B-Instruct, la diferencia principal es el modo thinking y el linaje R1; frente al destilado de 7B, este modelo sacrifica capacidad de razonamiento a cambio de un footprint mucho menor (1,1 GB frente a varios GB en Q4).
 
@@ -82,7 +82,7 @@ La comparativa se limita a datos estructurales porque no hay benchmarks publicad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Team-mark/DeepSeek-R1-Distill-Qwen-1.5B-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Team-mark/DeepSeek-R1-Distill-Qwen-1.5B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Herramienta de conversión GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

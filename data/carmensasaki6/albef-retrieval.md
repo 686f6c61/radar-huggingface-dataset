@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`carmensasaki6/albef-retrieval` es un prototipo de investigacion publicado en HuggingFace que reproduce a escala minima la arquitectura ALBEF (Align Before Fuse), orientada a tareas de retrieval multimodal. El repositorio lo firma el usuario `carmensasaki6` y se distribuye bajo licencia Apache 2.0. No es un modelo entrenado ni evaluado: la propia model card lo describe como un "initialization checkpoint" valido unicamente para pruebas de humo (smoke tests).
+`carmensasaki6/albef-retrieval` es un prototipo de investigacion publicado en Hugging Face que reproduce a escala minima la arquitectura ALBEF (Align Before Fuse), orientada a tareas de retrieval multimodal. El repositorio lo firma el usuario `carmensasaki6` y se distribuye bajo licencia Apache 2.0. No es un modelo entrenado ni evaluado: la propia model card lo describe como un "initialization checkpoint" valido unicamente para pruebas de humo (smoke tests).
 
 El modelo cuenta con 33.088 parametros totales segun los datos de safetensors, lo que lo situa en la categoria "tiny". La configuracion declarada emplea atencion multi-query, fusion por cross-attention, activacion swish y normalizacion layernorm. El repositorio incluye el script `train.py` como artefacto principal, junto con `config.json`, `training_args.json` y `model.safetensors`.
 
-Su relevancia es puramente metodologica: sirve como plantilla reproducible para experimentar con el pipeline de ALBEF (codificador de imagen, codificador de texto, fusion cross-modal y aprendizaje contrastivo) sin requerir recursos de computo. No debe confundirse con los checkpoints ALBEF oficiales preentrenados, que operan a otra escala y sobre datasets masivos. No se declaran idiomas soportados ni pipeline de HuggingFace.
+Su relevancia es puramente metodologica: sirve como plantilla reproducible para experimentar con el pipeline de ALBEF (codificador de imagen, codificador de texto, fusion cross-modal y aprendizaje contrastivo) sin requerir recursos de computo. No debe confundirse con los checkpoints ALBEF oficiales preentrenados, que operan a otra escala y sobre datasets masivos. No se declaran idiomas soportados ni pipeline de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -89,5 +89,5 @@ No se dispone de datos verificados de ALBEF, CLIP o BLIP en la informacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/carmensasaki6/albef-retrieval
+- Modelo en Hugging Face: https://huggingface.co/carmensasaki6/albef-retrieval
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su paper asociado, a repositorios de codigo, a demos ni a entradas de blog. Los unicos resultados devueltos pertenecen a dominios no relacionados.

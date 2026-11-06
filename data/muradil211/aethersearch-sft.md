@@ -6,7 +6,7 @@ AetherSearch-SFT es un modelo de búsqueda agéntica (agentic search) de 3.000 m
 
 El modelo resuelve el problema de la generación aumentada por búsqueda (search-augmented generation) de forma agéntica: en lugar de depender de un pipeline RAG externo que inyecta contexto de forma pasiva, el propio modelo decide cuándo buscar, qué consulta formular y cuándo tiene suficiente evidencia para responder. Esto lo hace relevante para sistemas de respuesta a preguntas, asistentes de investigación y agentes conversacionales que necesitan acceso a información externa actualizada.
 
-La arquitectura es un transformer causal de la familia Qwen2, con una ventana de contexto de 32.768 posiciones (aunque el entrenamiento se limitó a secuencias de 4.096 tokens). El modelo está disponible en formato SafeTensors con pesos en BF16, y su licencia no está especificada en la ficha de HuggingFace.
+La arquitectura es un transformer causal de la familia Qwen2, con una ventana de contexto de 32.768 posiciones (aunque el entrenamiento se limitó a secuencias de 4.096 tokens). El modelo está disponible en formato SafeTensors con pesos en BF16, y su licencia no está especificada en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ La receta de entrenamiento es reproducible: una época, tasa de aprendizaje 2e-6
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K ni evaluaciones específicas de búsqueda. El repositorio de GitHub menciona un directorio de evaluación (`AetherSearch-Eval` en HuggingFace), pero no se proporcionan números concretos en la documentación accesible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K ni evaluaciones específicas de búsqueda. El repositorio de GitHub menciona un directorio de evaluación (`AetherSearch-Eval` en Hugging Face), pero no se proporcionan números concretos en la documentación accesible.
 
 ## Requisitos de hardware
 
@@ -80,7 +80,7 @@ La comparativa directa con otros modelos de búsqueda agéntica de tamaño simil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muradil211/AetherSearch-SFT
+- Modelo en Hugging Face: https://huggingface.co/muradil211/AetherSearch-SFT
 - Dataset de entrenamiento: https://huggingface.co/datasets/muradil211/AetherSearch_SFT
 - Repositorio del proyecto: https://github.com/Muradil-mamat-211/AetherSearch
 - Código de entrenamiento SFT: https://github.com/Muradil-mamat-211/AetherSearch/tree/main/sft

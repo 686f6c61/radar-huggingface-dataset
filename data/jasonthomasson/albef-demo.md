@@ -2,7 +2,7 @@
 
 ## Resumen
 
-albef-demo es un repositorio alojado en HuggingFace por el usuario jasonthomasson que contiene una implementación de referencia de una arquitectura Albef (Align before Fuse) aplicada a tareas de clasificación. El repositorio se presenta explícitamente como un punto de partida experimental: incluye código ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta por defecto y un `model.safetensors` que funciona como inicialización válida para pruebas de humo, no como checkpoint entrenado.
+albef-demo es un repositorio alojado en Hugging Face por el usuario jasonthomasson que contiene una implementación de referencia de una arquitectura Albef (Align before Fuse) aplicada a tareas de clasificación. El repositorio se presenta explícitamente como un punto de partida experimental: incluye código ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta por defecto y un `model.safetensors` que funciona como inicialización válida para pruebas de humo, no como checkpoint entrenado.
 
 El dato más relevante para cualquier evaluador es la escala real: el checkpoint contiene 33.088 parámetros en safetensors, un orden de magnitud propio de un test de integración o de un ejercicio didáctico, no de un modelo destinado a producción. Esto contrasta con la etiqueta `huge` que la propia model card asigna a la configuración, lo que sugiere que el repositorio prioriza la transparencia del código y la repetibilidad de las pruebas sobre cualquier afirmación de rendimiento.
 
@@ -41,7 +41,7 @@ En cuanto al entrenamiento, la model card especifica únicamente la receta por d
 ## Capacidades
 
 - No se declara ninguna capacidad funcional verificada: el checkpoint es una inicialización sin entrenar, por lo que no cabe esperar generación de texto, razonamiento, código ni matemáticas con calidad utilizable.
-- Tarea objetivo declarada: clasificación (tag `classification` en HuggingFace). No se especifica sobre qué modalidad ni sobre qué conjunto de etiquetas.
+- Tarea objetivo declarada: clasificación (tag `classification` en Hugging Face). No se especifica sobre qué modalidad ni sobre qué conjunto de etiquetas.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponibles; el repositorio no declara idiomas soportados.
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jasonthomasson/albef-demo | 33.088 | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, 11 descargas |
+| jasonthomasson/albef-demo | 33.088 | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, 11 descargas |
 | Albef original (referencia de familia) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de clasificacion de la misma categoria | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -90,12 +90,12 @@ No se han identificado en la información proporcionada modelos comparables con 
 - Limitaciones de contexto e idioma: no disponibles; el repositorio no declara ventana de contexto ni idiomas soportados.
 - Inconsistencia documental: la escala declarada (`huge`) no concuerda con los 33.088 parámetros reales del checkpoint, lo que puede inducir a error si se consume la metadata sin inspeccionar los pesos.
 - Restricciones de licencia: BSD-3-Clause permite uso comercial, modificación y redistribución siempre que se conserve el aviso de copyright, se reproduzcan las condiciones de la licencia y no se use el nombre del titular para promocionar derivados sin permiso. La model card añade que deben revisarse por separado los términos de los datos de origen cuando el repositorio se use con conjuntos de datos externos.
-- Integración en producción: al ser una implementación personalizada, las APIs automáticas de carga requieren un adaptador explícito; no es un reemplazo directo de un modelo de clasificación estándar de HuggingFace.
+- Integración en producción: al ser una implementación personalizada, las APIs automáticas de carga requieren un adaptador explícito; no es un reemplazo directo de un modelo de clasificación estándar de Hugging Face.
 - Validación comunitaria mínima: 11 descargas, 0 likes y un único autor, sin revisión externa conocida.
 - Fechas del repositorio: creación y última actualización el 2026-09-22, con apenas cinco segundos de diferencia entre ambas, lo que sugiere una subida única sin mantenimiento posterior.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jasonthomasson/albef-demo
+- Repositorio en Hugging Face: https://huggingface.co/jasonthomasson/albef-demo
 - Archivos internos referenciados en la model card: `main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo: no disponible. La búsqueda web realizada no devolvió ningún resultado relevante sobre el modelo; los enlaces recuperados corresponden a contenidos de televisión sin relación con el repositorio.

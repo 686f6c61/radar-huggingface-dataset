@@ -72,8 +72,8 @@ No hay datos de MMLU, HumanEval, GSM8K ni de tasa de exito en TextCraft-Synth.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scottyrl-a3-p5_textcraft_grpo | Adaptador LoRA r32 sobre ~4B | No disponible | GRPO sobre TextCraft-Synth | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (modelo base) | ~4B | No disponible en esta ficha | Modelo fundacional sin ajuste | Segun el modelo base | Publico en HuggingFace |
+| scottyrl-a3-p5_textcraft_grpo | Adaptador LoRA r32 sobre ~4B | No disponible | GRPO sobre TextCraft-Synth | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (modelo base) | ~4B | No disponible en esta ficha | Modelo fundacional sin ajuste | Segun el modelo base | Publico en Hugging Face |
 | Otros adaptadores LoRA de la misma asignatura | No disponible | No disponible | LoRA sobre Qwen3.5-4B para tareas de agente | No disponible | No identificados en la informacion disponible |
 
 No se dispone de datos numericos ni de fichas de adaptadores comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de rendimiento.
@@ -93,7 +93,7 @@ No se dispone de datos numericos ni de fichas de adaptadores comparables en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mingqian2/scottyrl-a3-p5_textcraft_grpo
+- Modelo en Hugging Face: https://huggingface.co/mingqian2/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Documentacion de vLLM sobre LoRA: no disponible en la informacion proporcionada
 - Paper o blog del framework scottyrl: no disponible

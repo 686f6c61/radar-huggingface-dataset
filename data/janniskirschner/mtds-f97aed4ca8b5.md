@@ -69,10 +69,10 @@ A modo de referencia metodológica, el modelo base Qwen2.5-7B sí dispone de res
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evaluacion publicada del artefacto |
 |---|---|---|---|---|---|
-| mtds-f97aed4ca8b5 (este modelo) | 7,6 B | No disponible (base: 32K nativo, 128K con YaRN) | Apache 2.0 | HuggingFace, safetensors, 15,2 GB | No |
-| Qwen/Qwen2.5-7B (modelo base) | 7,6 B | 32.768 nativo, 131.072 con YaRN | Apache 2.0 | HuggingFace, safetensors y GGUF oficiales | Sí, publicada por el autor |
-| meta-llama/Llama-3.1-8B | 8,03 B | 131.072 | Llama 3.1 Community License (restricciones de uso) | HuggingFace, pesos gateados | Sí, publicada por el autor |
-| mistralai/Mistral-7B-v0.3 | 7,25 B | 32.768 | Apache 2.0 | HuggingFace, safetensors y GGUF | Sí, publicada por el autor |
+| mtds-f97aed4ca8b5 (este modelo) | 7,6 B | No disponible (base: 32K nativo, 128K con YaRN) | Apache 2.0 | Hugging Face, safetensors, 15,2 GB | No |
+| Qwen/Qwen2.5-7B (modelo base) | 7,6 B | 32.768 nativo, 131.072 con YaRN | Apache 2.0 | Hugging Face, safetensors y GGUF oficiales | Sí, publicada por el autor |
+| meta-llama/Llama-3.1-8B | 8,03 B | 131.072 | Llama 3.1 Community License (restricciones de uso) | Hugging Face, pesos gateados | Sí, publicada por el autor |
+| mistralai/Mistral-7B-v0.3 | 7,25 B | 32.768 | Apache 2.0 | Hugging Face, safetensors y GGUF | Sí, publicada por el autor |
 
 La comparación relevante es con el modelo base: este fine-tune no documenta ninguna mejora medible y su interés es fundamentalmente como artefacto de investigación. Frente a Llama 3.1 8B, la licencia Apache 2.0 elimina las cláusulas adicionales de la licencia de Meta; frente a Mistral 7B v0.3, el vocabulario de Qwen2.5 (152.064 tokens) es sustancialmente mayor, lo que suele traducirse en mejor eficiencia por token en idiomas no ingleses, aunque esto no se ha verificado en este checkpoint.
 
@@ -90,10 +90,10 @@ La comparación relevante es con el modelo base: este fine-tune no documenta nin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/janniskirschner/mtds-f97aed4ca8b5
+- Modelo en Hugging Face: https://huggingface.co/janniskirschner/mtds-f97aed4ca8b5
 - Modelo base Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B
-- Perfil del autor en HuggingFace: https://huggingface.co/janniskirschner
-- Organización Qwen en HuggingFace: https://huggingface.co/Qwen
+- Perfil del autor en Hugging Face: https://huggingface.co/janniskirschner
+- Organización Qwen en Hugging Face: https://huggingface.co/Qwen
 - Repositorio oficial de Qwen (GitHub): https://github.com/QwenLM/Qwen2.5
 - Informe técnico de Qwen2.5 (arXiv 2412.15115): https://arxiv.org/abs/2412.15115
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

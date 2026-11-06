@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mark-General-V3-8B es un modelo de lenguaje disperso (MoE) de clase 8B publicado por miceworks en HuggingFace bajo licencia AGPL-3.0. Se distribuye unicamente como un unico fichero GGUF cuantizado en IQ4_NL dentro del contenedor nativo `deepseek2`, con 8.168.001.024 parametros fisicos totales y 2.002.374.144 parametros activos por token. La arquitectura combina atencion multi-cabeza latente (MLA) con 32 expertos enrutados y 2 expertos compartidos, 32 capas, dimension oculta de 2560 y una ventana de contexto de 32.768 tokens.
+Mark-General-V3-8B es un modelo de lenguaje disperso (MoE) de clase 8B publicado por miceworks en Hugging Face bajo licencia AGPL-3.0. Se distribuye unicamente como un unico fichero GGUF cuantizado en IQ4_NL dentro del contenedor nativo `deepseek2`, con 8.168.001.024 parametros fisicos totales y 2.002.374.144 parametros activos por token. La arquitectura combina atencion multi-cabeza latente (MLA) con 32 expertos enrutados y 2 expertos compartidos, 32 capas, dimension oculta de 2560 y una ventana de contexto de 32.768 tokens.
 
 El dato mas relevante para cualquier evaluacion es que se trata de una base arquitectonica **sin entrenar** (`UN-TRAINED_ARCHITECTURAL_BASE`). El autor lo declara explicitamente en la model card: los pesos son inicializaciones pensadas para verificar la compatibilidad del grafo binario con llama.cpp, medir el consumo de memoria en hardware objetivo y servir de base para preentrenamiento y destilacion posteriores hacia Mark-General-V3-1.5B. Por tanto, no genera texto coherente ni puede usarse en produccion tal cual.
 
@@ -104,6 +104,6 @@ La comparacion con DeepSeek-V2-Lite es la mas pertinente por compartir familia a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/miceworks/Mark-General-V3-8B
-- Listado de modelos de texto de HuggingFace (donde aparecen otros Mark-V3): https://huggingface.co/models?pipeline_tag=text-generation&p=2&sort=created
+- Modelo en Hugging Face: https://huggingface.co/miceworks/Mark-General-V3-8B
+- Listado de modelos de texto de Hugging Face (donde aparecen otros Mark-V3): https://huggingface.co/models?pipeline_tag=text-generation&p=2&sort=created
 - Listado de modelos de texto por fecha de modificacion: https://huggingface.co/models?pipeline_tag=text-generation&p=15&sort=modified

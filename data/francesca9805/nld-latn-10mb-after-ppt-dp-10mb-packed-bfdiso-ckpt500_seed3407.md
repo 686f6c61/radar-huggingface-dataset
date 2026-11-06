@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nld-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino (SFT) desarrollado por el usuario de HuggingFace francesca9805, vinculado al entorno de Weights & Biases de la Universidad de Groningen (cuenta `f-padovani-university-of-groningen`). Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros totales, derivado del modelo base `francesca9805/nld-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407` mediante la libreria TRL. Por su nomenclatura y contexto academico, parece un artefacto de investigacion sobre tokenizacion y entrenamiento con corpus de 10 MB, probablemente centrado en neerlandes (`nld` es el codigo ISO 639-3 del neerlandes) en escritura latina.
+El modelo `nld-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino (SFT) desarrollado por el usuario de Hugging Face francesca9805, vinculado al entorno de Weights & Biases de la Universidad de Groningen (cuenta `f-padovani-university-of-groningen`). Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros totales, derivado del modelo base `francesca9805/nld-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407` mediante la libreria TRL. Por su nomenclatura y contexto academico, parece un artefacto de investigacion sobre tokenizacion y entrenamiento con corpus de 10 MB, probablemente centrado en neerlandes (`nld` es el codigo ISO 639-3 del neerlandes) en escritura latina.
 
 El modelo resuelve una tarea muy acotada: la generacion de texto en un regimen de datos de entrenamiento reducido, dentro de una serie de experimentos con distintas semillas (`seed3407`) y checkpoints (`ckpt500`). No esta pensado como un asistente de proposito general ni como modelo de produccion, sino como material reproducible para comparar configuraciones de preentrenamiento y ajuste (PPT, empaquetado de datos, tokenizadores bfdiso) sobre corpus pequenos.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/nld-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407 | 39,09M | no disponible | no disponible | HuggingFace, 0 descargas | Artefacto de investigacion, SFT con TRL |
-| openai-community/gpt2 | 124M | 1.024 tokens | MIT | HuggingFace, ampliamente usada | Referencia generalista en ingles |
-| distilgpt2 | 82M | 1.024 tokens | Apache 2.0 | HuggingFace | Version destilada de GPT-2 |
-| Modelos de la misma serie (p. ej. `nld-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455`) | del orden de 39M | no disponible | no disponible | HuggingFace | Variantes con distinta semilla y tratamiento de datos |
+| francesca9805/nld-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407 | 39,09M | no disponible | no disponible | Hugging Face, 0 descargas | Artefacto de investigacion, SFT con TRL |
+| openai-community/gpt2 | 124M | 1.024 tokens | MIT | Hugging Face, ampliamente usada | Referencia generalista en ingles |
+| distilgpt2 | 82M | 1.024 tokens | Apache 2.0 | Hugging Face | Version destilada de GPT-2 |
+| Modelos de la misma serie (p. ej. `nld-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455`) | del orden de 39M | no disponible | no disponible | Hugging Face | Variantes con distinta semilla y tratamiento de datos |
 
 La comparacion directa con GPT-2 y distilgpt2 es solo orientativa en terminos de tamano: el modelo aqui descrito no es generalista, no declara contexto ni licencia, y su corpus de 10 MB es muy inferior al de los modelos de OpenAI. Cualquier comparacion de rendimiento queda fuera del alcance de la informacion disponible.
 
@@ -89,7 +89,7 @@ La comparacion directa con GPT-2 y distilgpt2 es solo orientativa en terminos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/nld-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407
 - Experimento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/euf782jx
 - Repositorio de TRL: https://github.com/huggingface/trl

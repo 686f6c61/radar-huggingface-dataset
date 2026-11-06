@@ -82,7 +82,7 @@ Los modelos hermanos de la familia SFT muestran mejor rendimiento en la prueba B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shangy/browsecomp-worker-judge-dsflash-rl
+- Modelo en Hugging Face: https://huggingface.co/Shangy/browsecomp-worker-judge-dsflash-rl
 - Modelo hermano SFT: https://huggingface.co/Shangy/browsecomp-worker-sft-core-v256
 - Benchmark BrowseComp (OpenAI): https://openai.com/index/browsecomp/
 - Leaderboard de LLMs (contexto general): https://llm-stats.com/leaderboards/llm-leaderboard

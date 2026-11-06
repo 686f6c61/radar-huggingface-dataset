@@ -105,7 +105,7 @@ No se dispone en la información proporcionada de datos de rendimiento que permi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-MOPD
+- Modelo en Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-MOPD
 - Checkpoint base (RL): https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - Variante Pro (MOPD): https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-MOPD
 - Variante Pro (RL): https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
@@ -117,7 +117,7 @@ No se dispone en la información proporcionada de datos de rendimiento que permi
 - Xiaomi MiMo Studio: https://aistudio.xiaomimimo.com
 - Xiaomi MiMo Desktop: https://mimo.xiaomimimo.com/desktop/
 - Página del modelo en mi.mi.com: https://mimo.mi.com/models/en-US/mimo-v2.6-flash
-- Organización en HuggingFace: https://huggingface.co/XiaomiMiMo
+- Organización en Hugging Face: https://huggingface.co/XiaomiMiMo
 - Repositorio de GitHub referenciado en las figuras de la model card: https://github.com/XiaomiMiMo/MiMo
 - Discord: https://discord.gg/kKC2kNnQEX
 - Telegram: https://t.me/+3T-I0pekOVIyNDBl

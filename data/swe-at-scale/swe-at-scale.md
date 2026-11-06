@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SWE-at-Scale (este) | Adaptador LoRA sobre base de ~9B (rango no declarado) | No disponible | Inyección de bugs / síntesis de tareas SWE | No disponible | HuggingFace, 4 descargas |
-| Qwen/Qwen3.5-9B (base) | ~9.000 millones (según denominación) | No disponible | Generación de texto y código general | No disponible en la información proporcionada | HuggingFace |
+| SWE-at-Scale (este) | Adaptador LoRA sobre base de ~9B (rango no declarado) | No disponible | Inyección de bugs / síntesis de tareas SWE | No disponible | Hugging Face, 4 descargas |
+| Qwen/Qwen3.5-9B (base) | ~9.000 millones (según denominación) | No disponible | Generación de texto y código general | No disponible en la información proporcionada | Hugging Face |
 | Otros adaptadores de inyección de bugs para síntesis SWE | No disponible | No disponible | No disponible | No disponible | No identificados en la búsqueda realizada |
 
 La búsqueda web asociada no devolvió alternativas comparables: los resultados corresponden a la Society of Women Engineers, a un catálogo de mobiliario y a un benchmark de agentes sin relación con este artefacto. No se dispone, por tanto, de una comparación cuantitativa con otras herramientas de bug injection.
@@ -89,7 +89,7 @@ La búsqueda web asociada no devolvió alternativas comparables: los resultados 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/SWE-at-Scale/swe-at-scale
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/SWE-at-Scale/swe-at-scale
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Artículo citado, *SWE-at-Scale: Software Task Synthesis from Real Fixes*: enlace no disponible en la información proporcionada
 - Repositorio de código o demo del pipeline: no disponible

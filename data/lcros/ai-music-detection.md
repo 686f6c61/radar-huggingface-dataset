@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lcros/ai-music-detection` es un clasificador jerárquico basado en scikit-learn diseñado para distinguir entre música compuesta por humanos y música generada por inteligencia artificial (por ejemplo, Suno o Udio). Fue desarrollado por lcros (lcrosvila en GitHub) como parte del trabajo de investigación "Detecting AI-Generated Music", publicado en Transactions of ISMIR. El modelo no es una red neuronal profunda, sino un conjunto de clasificadores que operan sobre características extraídas con Essentia y embeddings generados por el modelo LAION CLAP. Su relevancia actual radica en la creciente necesidad de identificar contenido musical sintético para la protección de derechos de autor, la moderación de plataformas y la investigación académica. El repositorio de HuggingFace contiene los artefactos preentrenados (scaler y modelos) en un único archivo pickle de 0,3 GB, listos para cargarse con `pickle` y aplicarse a características precalculadas.
+El modelo `lcros/ai-music-detection` es un clasificador jerárquico basado en scikit-learn diseñado para distinguir entre música compuesta por humanos y música generada por inteligencia artificial (por ejemplo, Suno o Udio). Fue desarrollado por lcros (lcrosvila en GitHub) como parte del trabajo de investigación "Detecting AI-Generated Music", publicado en Transactions of ISMIR. El modelo no es una red neuronal profunda, sino un conjunto de clasificadores que operan sobre características extraídas con Essentia y embeddings generados por el modelo LAION CLAP. Su relevancia actual radica en la creciente necesidad de identificar contenido musical sintético para la protección de derechos de autor, la moderación de plataformas y la investigación académica. El repositorio de Hugging Face contiene los artefactos preentrenados (scaler y modelos) en un único archivo pickle de 0,3 GB, listos para cargarse con `pickle` y aplicarse a características precalculadas.
 
 ## Especificaciones técnicas
 
@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lcros/ai-music-detection
+- Hugging Face: https://huggingface.co/lcros/ai-music-detection
 - Repositorio GitHub oficial: https://github.com/lcrosvila/ai-music-detection
 - Paper en Transactions of ISMIR: https://transactions.ismir.net/articles/10.5334/tismir.254
 - PDF del paper: https://transactions.ismir.net/articles/254/files/68774364a6605.pdf

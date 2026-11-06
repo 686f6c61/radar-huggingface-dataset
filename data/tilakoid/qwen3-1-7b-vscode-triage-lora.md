@@ -17,7 +17,7 @@ Su relevancia es acotada pero clara: demuestra una aproximación generativa al t
 | Parametros activos | No aplica (el modelo base es denso, no MoE) |
 | Longitud de contexto | No especificada en la model card del adaptador. El limite practico documentado en la evaluacion es de 1800 tokens de issue. El modelo base Qwen3-1.7B declara 32.768 tokens de contexto nativo |
 | Tipos de cuantizacion | No disponible. El adaptador se publica en precision completa (entrenado en bf16); no se documentan versiones cuantizadas del adaptador (GGUF, AWQ, GPTQ) |
-| Idiomas soportados | No disponible (los metadatos de HuggingFace no declaran idiomas; el dataset de entrenamiento es de issues de VS Code, mayoritariamente en ingles) |
+| Idiomas soportados | No disponible (los metadatos de Hugging Face no declaran idiomas; el dataset de entrenamiento es de issues de VS Code, mayoritariamente en ingles) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (adaptador PEFT; solo `adapter_model.safetensors`). No se publican ficheros de tokenizer |
 | Modelo base | Qwen/Qwen3-1.7B, revision `70d244cc86ccca08cf5af4e1e306ecf908b1ad5e` |
@@ -91,8 +91,8 @@ No se dispone de datos de rendimiento de alternativas comparables en la informac
 
 | Modelo | Parametros | Contexto | Rendimiento en triaje VS Code | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tilakoid/qwen3-1.7b-vscode-triage-lora (este adaptador) | Adaptador de 69.782.384 bytes sobre base de 1,7B | 1800 tokens documentados en evaluacion | 90% de exactitud estricta, 100% de etiqueta valida (200 filas) | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3-1.7B sin adaptador (linea base) | 1,7B | 32.768 tokens nativos | No disponible: el autor no reporta delta respecto a la linea base | Apache 2.0 | HuggingFace (modelo base oficial) |
+| Tilakoid/qwen3-1.7b-vscode-triage-lora (este adaptador) | Adaptador de 69.782.384 bytes sobre base de 1,7B | 1800 tokens documentados en evaluacion | 90% de exactitud estricta, 100% de etiqueta valida (200 filas) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3-1.7B sin adaptador (linea base) | 1,7B | 32.768 tokens nativos | No disponible: el autor no reporta delta respecto a la linea base | Apache 2.0 | Hugging Face (modelo base oficial) |
 | Otros adaptadores de triaje de issues | No disponible | No disponible | No disponible | No disponible | No se han encontrado alternativas comparables en la busqueda realizada |
 
 ## Limitaciones y advertencias
@@ -113,7 +113,7 @@ No se dispone de datos de rendimiento de alternativas comparables en la informac
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Tilakoid/qwen3-1.7b-vscode-triage-lora
+- Pagina del modelo en Hugging Face: https://huggingface.co/Tilakoid/qwen3-1.7b-vscode-triage-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B (revision `70d244cc86ccca08cf5af4e1e306ecf908b1ad5e`)
 - Dataset de entrenamiento: https://huggingface.co/datasets/Tilakoid/vscode-bug-feature-triage
 - Repositorio de benchmark: la model card lo cita como `https://gith...`, truncado en la informacion disponible; no se puede reconstruir la URL completa.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-VL-72B-Instruct-LiteRT es una conversión del modelo vision-language Qwen2.5-VL-72B-Instruct de Qwen al formato LiteRT-LM (sucesor de TensorFlow Lite), publicada por la organización litert-community en HuggingFace. El objetivo de esta conversión es llevar un modelo multimodal de gran tamaño (72B parámetros) a la ejecución en dispositivo (on-device), concretamente sobre GPU de Apple Silicon mediante WebGPU, sin depender de servidores en la nube.
+Qwen2.5-VL-72B-Instruct-LiteRT es una conversión del modelo vision-language Qwen2.5-VL-72B-Instruct de Qwen al formato LiteRT-LM (sucesor de TensorFlow Lite), publicada por la organización litert-community en Hugging Face. El objetivo de esta conversión es llevar un modelo multimodal de gran tamaño (72B parámetros) a la ejecución en dispositivo (on-device), concretamente sobre GPU de Apple Silicon mediante WebGPU, sin depender de servidores en la nube.
 
 El modelo original es un sistema image-text-to-text que procesa texto, imágenes y vídeo (aunque en esta conversión el vídeo no está soportado). La versión LiteRT cuantiza los pesos del decodificador de texto a int4 con bloques de 128, manteniendo el codificador de visión en fp32, y empaqueta todo en un único archivo `.litertlm` de 44,8 GB con tokenizador y plantilla de chat incluidos.
 
@@ -90,7 +90,7 @@ No hay datos suficientes en la información proporcionada para una comparativa d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/litert-community/Qwen2.5-VL-72B-Instruct-LiteRT
+- Repositorio en Hugging Face: https://huggingface.co/litert-community/Qwen2.5-VL-72B-Instruct-LiteRT
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct
 - Licencia: https://huggingface.co/litert-community/Qwen2.5-VL-72B-Instruct-LiteRT/blob/main/LICENSE
 - LiteRT-LM en PyPI: https://pypi.org/project/litert-lm/

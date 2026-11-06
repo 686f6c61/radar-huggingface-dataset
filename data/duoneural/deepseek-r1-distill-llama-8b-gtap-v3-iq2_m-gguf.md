@@ -170,7 +170,7 @@ La comparacion de rendimiento entre estas opciones no puede establecerse con la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DuoNeural/DeepSeek-R1-Distill-Llama-8B-GTAP-v3-IQ2_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/DuoNeural/DeepSeek-R1-Distill-Llama-8B-GTAP-v3-IQ2_M-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
 - Variante hermana de la misma familia (Qwen 1.5B, IQ2_XXS): https://huggingface.co/DuoNeural/DeepSeek-R1-Distill-Qwen-1.5B-GTAP-v3-IQ2_XXS-GGUF
 - Cuantizacion GGUF alternativa del mismo modelo base: https://huggingface.co/bartowski/DeepSeek-R1-Distill-Llama-8B-GGUF

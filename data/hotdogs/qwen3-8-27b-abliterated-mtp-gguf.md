@@ -79,7 +79,7 @@ La comparativa se basa en características generales, ya que no se dispone de be
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-MTP-GGUF
 - Modelo base abliterado: https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Anuncio de AMD sobre Qwen3.8 27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

@@ -75,7 +75,7 @@ La comparativa directa con otros modelos de difusion en formato ONNX para WebGPU
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/d0gr/realvisxl-v5-lightning-unet-onnx
+- Repositorio Hugging Face: https://huggingface.co/d0gr/realvisxl-v5-lightning-unet-onnx
 - Modelo base: https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning
 - Repositorio de la extension Generate AI Images: https://github.com/d0gr/generate-ai-images
 - Repositorio de componentes compartidos (text encoders y VAE): https://huggingface.co/d0gr/sdxl-lightning-onnx-webgpu

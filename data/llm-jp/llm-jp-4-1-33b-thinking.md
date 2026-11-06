@@ -98,9 +98,9 @@ No se dispone de especificaciones de los modelos alternativos en la informacion 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| llm-jp-4.1-33b-thinking | 33,2B (denso) | 65.536 | no disponible | Apache 2.0 | pesos abiertos en HuggingFace |
-| llm-jp-4.1-8b-thinking | 8,59B (denso) | 65.536 | no disponible | Apache 2.0 (misma serie) | pesos abiertos en HuggingFace |
-| llm-jp-4.1-32b-a3b-thinking | 32,14B totales / 3,83B activos (MoE) | 65.536 | no disponible | Apache 2.0 (misma serie) | pesos abiertos en HuggingFace |
+| llm-jp-4.1-33b-thinking | 33,2B (denso) | 65.536 | no disponible | Apache 2.0 | pesos abiertos en Hugging Face |
+| llm-jp-4.1-8b-thinking | 8,59B (denso) | 65.536 | no disponible | Apache 2.0 (misma serie) | pesos abiertos en Hugging Face |
+| llm-jp-4.1-32b-a3b-thinking | 32,14B totales / 3,83B activos (MoE) | 65.536 | no disponible | Apache 2.0 (misma serie) | pesos abiertos en Hugging Face |
 | Qwen3.5 / Qwen3.6 | no disponible | no disponible | no disponible | no disponible | referenciado en la evaluacion |
 | Olmo-3.1-32B-Think | no disponible | no disponible | no disponible | no disponible | referenciado en la evaluacion |
 | Gemma 4 | no disponible | no disponible | no disponible | no disponible | referenciado en la evaluacion |
@@ -122,7 +122,7 @@ La comparacion mas directa y con datos verificables es interna a la propia serie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llm-jp/llm-jp-4.1-33b-thinking
+- Modelo en Hugging Face: https://huggingface.co/llm-jp/llm-jp-4.1-33b-thinking
 - Coleccion LLM-jp-4.1 Models: https://huggingface.co/collections/llm-jp/llm-jp-41-models
 - Blog tecnico (en japones): https://llm-jp.nii.ac.jp/blog/llm-jp-4-1/
 - Cookbook de uso: https://github.com/llm-jp/llm-jp-4-cookbook

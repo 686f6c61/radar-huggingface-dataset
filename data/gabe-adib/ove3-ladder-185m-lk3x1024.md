@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ove3-ladder-185m-lk3x1024` es un checkpoint de investigación publicado por el usuario gabe-adib en HuggingFace. No es un modelo listo para producto: es un brazo concreto ("K3", variante LatentMoE) de una escalera de intervenciones denominada ove3, dentro de la celda IsoFLOP de 185M parámetros activos de una receta mayor. El modelo se entrenó con Megatron y se distribuye tal cual salió del entrenamiento, incluyendo estado del optimizador.
+`ove3-ladder-185m-lk3x1024` es un checkpoint de investigación publicado por el usuario gabe-adib en Hugging Face. No es un modelo listo para producto: es un brazo concreto ("K3", variante LatentMoE) de una escalera de intervenciones denominada ove3, dentro de la celda IsoFLOP de 185M parámetros activos de una receta mayor. El modelo se entrenó con Megatron y se distribuye tal cual salió del entrenamiento, incluyendo estado del optimizador.
 
 La arquitectura es un transformer con mezcla de expertos (MoE) de tipo LatentMoE: 1024 expertos de media anchura, enrutamiento top-16 y aproximadamente el doble de parámetros enrutados que un MoE convencional equivalente, con normalización RMSNorm de epsilon 1e-5 y escalado de router 1.0. El checkpoint corresponde a la iteración 18.810 (best_1), con pérdida de validación de 1,0876 y pérdida held-out de 1,1818 nats/carácter agregada sobre 9 dominios.
 
@@ -76,7 +76,7 @@ No se proporcionan comparaciones con otros brazos de la escalera ni con modelos 
 - VRAM estimada según esa estimación: ~8-9 GB en bf16/fp16 para los pesos, más overhead de activaciones y caché KV; ~2,5-3,5 GB con cuantización de 4 bits, en caso de que se genere una conversión.
 - GPU recomendadas: no hay recomendación oficial. Para entrenamiento o ajuste, el checkpoint Megatron requiere GPUs de datacenter (A100 40/80 GB, H100, o clústeres multi-GPU con paralelismo de experto); para inferencia tras conversión, una RTX 4090 (24 GB) o una RTX 3090 serían suficientes si la estimación anterior es correcta.
 - Cabe en GPU de consumo: probablemente sí tras convertir el checkpoint y, si es necesario, cuantizar; no hay artefactos listos para ello.
-- Opciones de despliegue: el formato publicado es un checkpoint distribuido de Megatron, utilizable con Megatron-LM. Para vLLM, TGI, llama.cpp u Ollama sería necesario convertir previamente a safetensors en formato HuggingFace; no se publican scripts de conversión ni pesos en esos formatos.
+- Opciones de despliegue: el formato publicado es un checkpoint distribuido de Megatron, utilizable con Megatron-LM. Para vLLM, TGI, llama.cpp u Ollama sería necesario convertir previamente a safetensors en formato Hugging Face; no se publican scripts de conversión ni pesos en esos formatos.
 - Latencia y throughput: no disponibles. Al tener 185M de parámetros activos con top-16 sobre 1024 expertos, el cuello de botella esperable es el ancho de banda de memoria (hay que recorrer los expertos seleccionados en cada token) más que el cómputo FLOPs, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -103,10 +103,10 @@ La diferencia práctica es clara: los alternativos son artefactos orientados a u
 - Artefacto de un solo seed: los resultados corresponden a la semilla 1234 y a una única ejecución, sin intervalos de confianza sobre la varianza entre semillas.
 - Formato poco práctico: el checkpoint Megatron con estado del optimizador (57 GB) no se carga directamente en los stacks de inferencia habituales; requiere conversión y posibles ajustes de configuración.
 - Tokenización probablemente a nivel de carácter: la pérdida en nats/carácter implica secuencias más largas por unidad de texto, con menor eficiencia por token y posible peor rendimiento en tareas que dependen de unidades subpalabra.
-- Metadatos incompletos en HuggingFace: pipeline sin declarar, cero descargas y cero likes en el momento de la consulta, sin documentación adicional más allá de la model card.
+- Metadatos incompletos en Hugging Face: pipeline sin declarar, cero descargas y cero likes en el momento de la consulta, sin documentación adicional más allá de la model card.
 - Resultados de búsqueda web no relevantes: las consultas devolvieron únicamente páginas de contenido para adultos sin relación con el modelo, por lo que no se ha podido contrastar información externa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gabe-adib/ove3-ladder-185m-lk3x1024
+- Hugging Face: https://huggingface.co/gabe-adib/ove3-ladder-185m-lk3x1024
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (paper, blog, repositorio o demo); los resultados obtenidos eran contenido para adultos sin relación alguna con el artefacto.

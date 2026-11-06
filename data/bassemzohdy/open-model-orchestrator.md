@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BassemZohdy/open-model-orchestrator es un repositorio publicado en HuggingFace por el usuario BassemZohdy bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada contiene unicamente el campo de licencia y carece de descripcion, documentacion tecnica, ejemplos de uso o pesos publicados. El repositorio acumula 0 descargas y 0 likes, y su fecha de creacion y de ultima actualizacion registradas en los metadatos coinciden (15 de septiembre de 2026), lo que indica que no ha recibido mantenimiento posterior.
+BassemZohdy/open-model-orchestrator es un repositorio publicado en Hugging Face por el usuario BassemZohdy bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada contiene unicamente el campo de licencia y carece de descripcion, documentacion tecnica, ejemplos de uso o pesos publicados. El repositorio acumula 0 descargas y 0 likes, y su fecha de creacion y de ultima actualizacion registradas en los metadatos coinciden (15 de septiembre de 2026), lo que indica que no ha recibido mantenimiento posterior.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, datos de entrenamiento ni formato de pesos. El nombre del repositorio sugiere una funcion de orquestacion de modelos abiertos, pero se trata de una inferencia a partir del identificador y no de un dato confirmado por la documentacion, por lo que no debe tomarse como una descripcion funcional verificada.
 
@@ -76,5 +76,5 @@ No disponible. No puede establecerse una categoria de comparacion porque se desc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BassemZohdy/open-model-orchestrator
+- Repositorio en Hugging Face: https://huggingface.co/BassemZohdy/open-model-orchestrator
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

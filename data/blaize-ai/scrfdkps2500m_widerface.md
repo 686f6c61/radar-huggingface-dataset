@@ -4,7 +4,7 @@
 
 SCRFDkps2500M_Widerface es un detector de caras basado en la arquitectura SCRFD (Sample and Computation Redistribution for Efficient Face Detection), desarrollado originalmente por InsightFace y optimizado por Blaize-AI para su despliegue en los aceleradores Blaize Xplorer mediante el SDK Picasso. El modelo devuelve cajas delimitadoras (bounding boxes) junto con 5 puntos clave faciales (ojos, nariz y comisuras de la boca), lo que lo hace adecuado para tareas de detección y alineación facial en entornos de edge computing.
 
-La versión publicada en HuggingFace corresponde a una variante cuantizada en BF16 con resolución de entrada fija de 640x640 píxeles, almacenada en formato `.bm` específico del hardware Blaize. El modelo fue entrenado sobre el dataset WIDER Face, un conjunto de referencia ampliamente utilizado para detección facial en escenas no controladas. Su relevancia radica en ofrecer una solución de inferencia facial de baja latencia y alta eficiencia energética en aceleradores de borde, un nicho donde las GPUs tradicionales no siempre son viables.
+La versión publicada en Hugging Face corresponde a una variante cuantizada en BF16 con resolución de entrada fija de 640x640 píxeles, almacenada en formato `.bm` específico del hardware Blaize. El modelo fue entrenado sobre el dataset WIDER Face, un conjunto de referencia ampliamente utilizado para detección facial en escenas no controladas. Su relevancia radica en ofrecer una solución de inferencia facial de baja latencia y alta eficiencia energética en aceleradores de borde, un nicho donde las GPUs tradicionales no siempre son viables.
 
 La ficha se basa exclusivamente en la información pública disponible en la model card y en los resultados de búsqueda. No se han publicado métricas de rendimiento ni detalles adicionales sobre el entrenamiento en la documentación accesible.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 - Acelerador requerido: Blaize Xplorer (familia GSP). El modelo no es compatible con GPUs convencionales ni con CPUs estandar.
 - Software necesario: Blaize Picasso SDK, incluyendo la utilidad `blaize-modeltool` para inspeccion del modelo.
-- VRAM estimada: no disponible. El tamaño del archivo `.bm` es de 0.0 GB segun HuggingFace, lo que sugiere que el modelo es muy ligero, pero el consumo real de memoria depende de la implementacion del runtime.
+- VRAM estimada: no disponible. El tamaño del archivo `.bm` es de 0.0 GB segun Hugging Face, lo que sugiere que el modelo es muy ligero, pero el consumo real de memoria depende de la implementacion del runtime.
 - Opciones de despliegue: exclusivamente mediante Picasso SDK en hardware Blaize. No se menciona soporte para vLLM, Ollama, TGI u otros frameworks de inferencia generica.
 - Latencia y throughput: no publicados. Dado que es un modelo de deteccion de una etapa con resolucion 640x640, se espera una latencia de pocos milisegundos en el acelerador objetivo, pero no hay cifras oficiales.
 
@@ -78,7 +78,7 @@ La comparativa se limita a detectores de caras con salida de keypoints. RetinaFa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blaize-AI/SCRFDkps2500M_Widerface
+- Modelo en Hugging Face: https://huggingface.co/Blaize-AI/SCRFDkps2500M_Widerface
 - Repositorio original de InsightFace (SCRFD): https://github.com/deepinsight/insightface/tree/master/detection/scrfd
 - Dataset WIDER Face: http://shuoyang1213.me/WIDERFACE/
 - Web oficial de Blaize: https://www.blaize.com/

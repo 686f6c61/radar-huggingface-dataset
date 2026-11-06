@@ -6,7 +6,7 @@ NorthCUA-Pro es un modelo de tipo computer-use (agente que opera interfaces grá
 
 El modelo aborda el problema de la automatización fiable de tareas sobre software real: no solo interpreta instrucciones, sino que mantiene interacción sostenida, verifica resultados intermedios y ejecuta acciones verificadas a lo largo de trayectorias largas. Su relevancia actual reside en que se distribuye con pesos abiertos bajo licencia Apache-2.0, algo poco habitual en modelos de esta escala orientados a agentes, y en que se acompaña de un arnés de ejecución oficial (NorthCUA Harness) que define el contrato de coordenadas y el bucle de observación-acción.
 
-La información pública disponible no detalla la longitud de contexto, los idiomas soportados ni la composición exacta del dataset de entrenamiento. El repositorio de HuggingFace ocupa 793,6 GB y acumula 361 descargas y 5 likes en el momento de la consulta.
+La información pública disponible no detalla la longitud de contexto, los idiomas soportados ni la composición exacta del dataset de entrenamiento. El repositorio de Hugging Face ocupa 793,6 GB y acumula 361 descargas y 5 likes en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -78,9 +78,9 @@ Condiciones de evaluación declaradas: ScreenSpot-Pro con 1.581 ejemplos y una p
 
 | Modelo | Parámetros | Activos | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| NorthCUA-Pro | 397B | 17B | no disponible | Computer-use multimodal | Apache-2.0 | Pesos abiertos en HuggingFace |
-| NorthCUA-Mini | 35B | 3B | no disponible | Computer-use multimodal | Apache-2.0 | Pesos abiertos en HuggingFace |
-| NorthCUA-Nano | 9B | 9B (denso) | no disponible | Computer-use multimodal | Apache-2.0 | Pesos abiertos en HuggingFace |
+| NorthCUA-Pro | 397B | 17B | no disponible | Computer-use multimodal | Apache-2.0 | Pesos abiertos en Hugging Face |
+| NorthCUA-Mini | 35B | 3B | no disponible | Computer-use multimodal | Apache-2.0 | Pesos abiertos en Hugging Face |
+| NorthCUA-Nano | 9B | 9B (denso) | no disponible | Computer-use multimodal | Apache-2.0 | Pesos abiertos en Hugging Face |
 
 No se dispone en la información proporcionada de datos de benchmarks ni especificaciones de modelos de terceros (por ejemplo, otros agentes computer-use) que permitan una comparación cuantitativa directa; dicha comparación se indica como no disponible. La comparativa interna de la familia NorthCUA muestra una progresión monótona en las cuatro métricas reportadas (ScreenSpot-Pro, OSWorld-G, OSWorld-Verified y WebArena-Verified), con Pro como el miembro de mayor rendimiento.
 
@@ -96,10 +96,10 @@ No se dispone en la información proporcionada de datos de benchmarks ni especif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/china-beipo/NorthCUA-Pro
+- Modelo en Hugging Face: https://huggingface.co/china-beipo/NorthCUA-Pro
 - Página del proyecto: https://beipo.top/blog/northcua/
 - Repositorio del arnés (GitHub): https://github.com/china-qijizhifeng/NorthCUA-Harness
-- Familia NorthCUA en HuggingFace: https://huggingface.co/beipo-ai/NorthCUA-Pro
+- Familia NorthCUA en Hugging Face: https://huggingface.co/beipo-ai/NorthCUA-Pro
 - Modelo Nano: https://huggingface.co/beipo-ai/NorthCUA-Nano
 - Modelo Mini: https://huggingface.co/beipo-ai/NorthCUA-Mini
 - Licencia: https://huggingface.co/beipo-ai/NorthCUA-Pro/blob/main/LICENSE

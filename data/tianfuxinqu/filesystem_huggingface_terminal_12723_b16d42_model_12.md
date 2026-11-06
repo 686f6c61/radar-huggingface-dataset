@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado en HuggingFace como `TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_12` es un artefacto publicado por el usuario TianfuXinqu. La model card asociada lo denomina "Sales Forecast Model" con identificador interno MDL-012 y lo atribuye a William Taylor, del departamento de Ventas, con un nivel de riesgo medio, documentación parcial y una cobertura de tests del 76 por ciento. No se trata, por tanto, de un modelo de lenguaje de gran escala al uso, sino de un artefacto de pronóstico de ventas empaquetado con metadatos de gobernanza.
+El modelo identificado en Hugging Face como `TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_12` es un artefacto publicado por el usuario TianfuXinqu. La model card asociada lo denomina "Sales Forecast Model" con identificador interno MDL-012 y lo atribuye a William Taylor, del departamento de Ventas, con un nivel de riesgo medio, documentación parcial y una cobertura de tests del 76 por ciento. No se trata, por tanto, de un modelo de lenguaje de gran escala al uso, sino de un artefacto de pronóstico de ventas empaquetado con metadatos de gobernanza.
 
 La información disponible es extremadamente limitada: no se especifica arquitectura, número de parámetros, longitud de contexto ni metodología de entrenamiento. El repositorio no registra descargas ni interacciones, y la fecha de creación (noviembre de 2026) junto con una última auditoría fechada en mayo de 2026 resulta inconsistente, lo que sugiere que los metadatos pueden no ser fiables o que el artefacto procede de un pipeline automatizado de pruebas.
 
@@ -80,4 +80,4 @@ No disponible. La ausencia de especificaciones técnicas (arquitectura, parámet
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_12
+- Repositorio en Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_12

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo entrenado, sino una nota de investigacion sobre robotica y vision-lenguaje. Lo publica el usuario Katoriku bajo licencia MIT y su unico artefacto principal es un fichero `analysis.md` que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion. La propia model card indica explicitamente que no es un articulo terminado ni una publicacion de modelos entrenados, y que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
+Este repositorio de Hugging Face no contiene un modelo entrenado, sino una nota de investigacion sobre robotica y vision-lenguaje. Lo publica el usuario Katoriku bajo licencia MIT y su unico artefacto principal es un fichero `analysis.md` que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion. La propia model card indica explicitamente que no es un articulo terminado ni una publicacion de modelos entrenados, y que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 
-Los metadatos de HuggingFace son enganosos si se leen de forma automatica: el repositorio aparece etiquetado con `safetensors` y `transformer`, y el campo de parametros de safetensors declara 24.832 parametros, pero el tamano del repositorio es de 0,0 GB y no se describe ninguna arquitectura, dataset ni checkpoint. Un transformer de 24.832 parametros no es viable ni como modelo de lenguaje ni como VLM, por lo que ese valor debe tratarse como un artefacto de indexacion y no como una especificacion real.
+Los metadatos de Hugging Face son enganosos si se leen de forma automatica: el repositorio aparece etiquetado con `safetensors` y `transformer`, y el campo de parametros de safetensors declara 24.832 parametros, pero el tamano del repositorio es de 0,0 GB y no se describe ninguna arquitectura, dataset ni checkpoint. Un transformer de 24.832 parametros no es viable ni como modelo de lenguaje ni como VLM, por lo que ese valor debe tratarse como un artefacto de indexacion y no como una especificacion real.
 
-Su relevancia es, por tanto, documental y metodologica: sirve como ejemplo de nota exploratoria reproducible y como recordatorio de que las etiquetas y el recuento de parametros de HuggingFace no garantizan que exista un modelo descargable. Registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado con seis segundos de diferencia (2026-10-05T21:23:57Z y 2026-10-05T21:24:03Z), lo que sugiere una subida automatizada de un unico commit.
+Su relevancia es, por tanto, documental y metodologica: sirve como ejemplo de nota exploratoria reproducible y como recordatorio de que las etiquetas y el recuento de parametros de Hugging Face no garantizan que exista un modelo descargable. Registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado con seis segundos de diferencia (2026-10-05T21:23:57Z y 2026-10-05T21:24:03Z), lo que sugiere una subida automatizada de un unico commit.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Su relevancia es, por tanto, documental y metodologica: sirve como ejemplo de no
 
 ## Arquitectura y entrenamiento
 
-No se describe ninguna arquitectura. La model card no menciona tipo de red, capas, atencion, tokenizador ni estrategia de multimodalidad, y el unico tag potencialmente tecnico es `transformer`, que en HuggingFace se aplica a menudo de forma generica. No hay fichero de configuracion, ni `config.json`, ni pesos publicados: el repositorio ocupa 0,0 GB.
+No se describe ninguna arquitectura. La model card no menciona tipo de red, capas, atencion, tokenizador ni estrategia de multimodalidad, y el unico tag potencialmente tecnico es `transformer`, que en Hugging Face se aplica a menudo de forma generica. No hay fichero de configuracion, ni `config.json`, ni pesos publicados: el repositorio ocupa 0,0 GB.
 
 Tampoco existe informacion sobre entrenamiento: no se declara numero de tokens, composicion del dataset, fases de ajuste (SFT, RLHF, DPO) ni innovaciones tecnicas. La model card describe un plan de evaluacion con comparaciones frente a baselines emparejados, benchmarks publicos adecuados a la tarea, comprobaciones de reproducibilidad y modos de fallo, pero lo presenta como propuesta. El propio autor indica que, si en el futuro se anaden resultados, deberian incluir versiones de dataset, comandos, semillas, hardware y logs en bruto.
 
@@ -44,7 +44,7 @@ Tampoco existe informacion sobre entrenamiento: no se declara numero de tokens, 
 - Revision de literatura previa: las referencias tematicas incluidas permiten arrancar una busqueda bibliografica sobre vision-lenguaje aplicado a robotica sin partir de cero.
 - Checklist de reproducibilidad: la exigencia explicita de registrar versiones de dataset, comandos, semillas, hardware y logs en bruto es directamente reutilizable como lista de verificacion interna en un laboratorio.
 - Material docente o de onboarding: para explicar a perfiles junior la diferencia entre una hipotesis, un plan y un resultado experimental, y por que no deben mezclarse en una publicacion.
-- Auditoria de repositorios de HuggingFace: sirve como caso de estudio de metadatos enganosos (tags `safetensors` y `transformer` con recuento de parametros sin checkpoint asociado), util en herramientas de catalogacion automatica.
+- Auditoria de repositorios de Hugging Face: sirve como caso de estudio de metadatos enganosos (tags `safetensors` y `transformer` con recuento de parametros sin checkpoint asociado), util en herramientas de catalogacion automatica.
 - Analisis de confusores y modos de fallo: la nota dedica secciones especificas a confusores probables y fallos, material aprovechable al disenar ablaciones en proyectos de robotica.
 
 ## Benchmarks y rendimiento
@@ -67,14 +67,14 @@ La comparativa se establece con repositorios de la misma naturaleza (notas explo
 | Repositorio o modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Katoriku/robotics-vision-language-notes | Nota de investigacion | 24.832 declarados, sin checkpoint | no disponible | MIT | Publico, 0 descargas, 0 likes |
-| kobayashiren94/robotics-vision-language | Nota de investigacion | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| kobayashiren94/robotics-vision-language | Nota de investigacion | no disponible | no disponible | no disponible | Publico en Hugging Face |
 | NVIDIA Isaac GR00T N1.7 | VLA | 3B segun la fuente consultada | no disponible | no disponible | Presentado como modelo abierto disponible (octubre de 2026) |
 | Physical Intelligence pi0.7 | VLA | no disponible | no disponible | no disponible | Mencionado como propietario |
 
 ## Limitaciones y advertencias
 
 - No es un modelo: no puede descargarse para inferencia ni integrarse en un pipeline, pese a las etiquetas `safetensors` y `transformer`.
-- Riesgo de confusion en catalogos automaticos: el recuento de 24.832 parametros y el tamano de 0,0 GB son contradictorios y pueden generar entradas erroneas en herramientas que indexan HuggingFace.
+- Riesgo de confusion en catalogos automaticos: el recuento de 24.832 parametros y el tamano de 0,0 GB son contradictorios y pueden generar entradas erroneas en herramientas que indexan Hugging Face.
 - Ausencia total de resultados: no hay benchmarks, ablaciones, codigo ni logs; cualquier cifra de rendimiento atribuida a este repositorio seria inventada.
 - Riesgo de alucinacion: no aplica al repositorio, pero si al uso de sus referencias como evidencia; la model card avisa de que las referencias y datasets propuestos son un punto de partida para verificacion, no prueba de que el estudio se haya ejecutado.
 - Sesgos conocidos: no disponibles; no se declara composicion de datos ni proceso de anotacion.
@@ -85,7 +85,7 @@ La comparativa se establece con repositorios de la misma naturaleza (notas explo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Katoriku/robotics-vision-language-notes
+- Repositorio en Hugging Face: https://huggingface.co/Katoriku/robotics-vision-language-notes
 - Nota principal (`analysis.md`): https://huggingface.co/Katoriku/robotics-vision-language-notes/blob/main/analysis.md
 - Repositorio de notas equivalente: https://huggingface.co/kobayashiren94/robotics-vision-language
 - Vision-language model (Wikipedia): https://en.wikipedia.org/wiki/Vision-language_model

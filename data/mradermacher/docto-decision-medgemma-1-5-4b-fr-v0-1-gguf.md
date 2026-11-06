@@ -75,8 +75,8 @@ No se dispone de datos de benchmarks ni de modelos comparables documentados en l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| docto-decision-medgemma-1.5-4b-fr-v0.1 (GGUF) | 3,88 B | no disponible | health-ai-developer-foundations | HuggingFace |
-| MedGemma 1.5 4B | no disponible | no disponible | health-ai-developer-foundations | HuggingFace |
+| docto-decision-medgemma-1.5-4b-fr-v0.1 (GGUF) | 3,88 B | no disponible | health-ai-developer-foundations | Hugging Face |
+| MedGemma 1.5 4B | no disponible | no disponible | health-ai-developer-foundations | Hugging Face |
 | Alternativas de ~4B en frances | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

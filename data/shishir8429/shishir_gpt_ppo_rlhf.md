@@ -6,7 +6,7 @@ Shishir_GPT_PPO_RLHF es un modelo de lenguaje basado en GPT-2, desarrollado por 
 
 El proyecto se apoya en un repositorio de GitHub que documenta el proceso de entrenamiento y los resultados obtenidos. Según la información disponible, las evaluaciones muestran que ChatGPT prefiere las salidas del GPT-2 alineado con RLHF en un 96% de las veces frente al GPT-2 original, y en un 88% frente a un baseline de ajuste fino supervisado. Esto lo convierte en un caso de estudio relevante para investigadores interesados en técnicas de alineación con recursos computacionales limitados.
 
-El repositorio en HuggingFace tiene un tamaño de 1.5 GB, lo que sugiere que se distribuyen los pesos del modelo en algún formato de precisión completa o cuantizado. La licencia es MIT, lo que permite uso comercial y modificación sin restricciones significativas. Sin embargo, la model card es extremadamente escueta y no proporciona detalles técnicos adicionales, por lo que gran parte de la información específica sobre arquitectura, contexto y capacidades debe inferirse del repositorio de GitHub asociado.
+El repositorio en Hugging Face tiene un tamaño de 1.5 GB, lo que sugiere que se distribuyen los pesos del modelo en algún formato de precisión completa o cuantizado. La licencia es MIT, lo que permite uso comercial y modificación sin restricciones significativas. Sin embargo, la model card es extremadamente escueta y no proporciona detalles técnicos adicionales, por lo que gran parte de la información específica sobre arquitectura, contexto y capacidades debe inferirse del repositorio de GitHub asociado.
 
 ## Especificaciones tecnicas
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 - VRAM estimada para inferencia: para un modelo GPT-2 small (124M parametros), la inferencia en FP32 requiere aproximadamente 0.5 GB de VRAM. Con cuantizacion a 8 bits, se reduce a unos 0.25 GB. El repositorio de 1.5 GB sugiere que puede incluir pesos en FP32 o FP16.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Una NVIDIA GTX 1650 o superior puede ejecutar el modelo sin problemas. Para entrenamiento con PPO, se recomienda al menos 8 GB de VRAM (por ejemplo, RTX 3070 o superior).
 - Compatibilidad con consumer GPU: si, el modelo cabe en cualquier GPU de consumo actual.
-- Opciones de despliegue: al ser un modelo GPT-2 estandar, puede servirse con vLLM, llama.cpp (si se convierte a GGUF), Ollama, o mediante la libreria transformers de HuggingFace con un simple pipeline de generacion.
+- Opciones de despliegue: al ser un modelo GPT-2 estandar, puede servirse con vLLM, llama.cpp (si se convierte a GGUF), Ollama, o mediante la libreria transformers de Hugging Face con un simple pipeline de generacion.
 - Latencia y throughput: no disponible, pero para un modelo de 124M de parametros, la generacion es rapida incluso en CPU (del orden de 10-20 tokens por segundo en un procesador moderno).
 
 ## Comparativa con modelos similares
@@ -80,8 +80,8 @@ La comparativa se basa en la arquitectura GPT-2, ya que no hay datos publicos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shishir8429/Shishir_GPT_PPO_RLHF
+- Hugging Face: https://huggingface.co/shishir8429/Shishir_GPT_PPO_RLHF
 - Repositorio GitHub: https://github.com/8429shishir/GPT2-trained-using-RLHF-main
 - Codigo de entrenamiento PPO: https://github.com/8429shishir/GPT2-trained-using-RLHF-main/blob/main/src/train_ppo.py
-- Blog de HuggingFace sobre detalles de RLHF con PPO: https://huggingface.co/blog/the_n_implementation_details_of_rlhf_with_ppo
+- Blog de Hugging Face sobre detalles de RLHF con PPO: https://huggingface.co/blog/the_n_implementation_details_of_rlhf_with_ppo
 - Articulo de OpenRLHF sobre frameworks RLHF: https://arxiv.org/html/2405.11143v6

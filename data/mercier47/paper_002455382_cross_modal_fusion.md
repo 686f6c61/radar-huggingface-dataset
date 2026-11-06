@@ -73,7 +73,7 @@ Estos documentos tratan temas similares pero no son modelos comparables en el se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mercier47/paper_002455382_cross_fusion
+- Repositorio en Hugging Face: https://huggingface.co/mercier47/paper_002455382_cross_fusion
 - Paper relacionado 1 (arXiv 2512.24679): https://arxiv.org/abs/2512.24679
 - Paper relacionado 2 (arXiv 2608.00986): https://arxiv.org/abs/2608.00986
 - Paper relacionado 3 (CVPR 2026): https://openaccess.thecvf.com/content/CVPR2026F/html/Hu_Texture-Guided_Multiscale_Cross-Modal_Fusion_for_AI-Generated_Image_Quality_Assessment_CVPRF_2026_paper.html

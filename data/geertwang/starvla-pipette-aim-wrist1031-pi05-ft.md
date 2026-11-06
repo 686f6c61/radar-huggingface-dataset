@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 
 | Modelo | Tipo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| starvla-pipette-aim-wrist1031-pi05-ft | VLA (fine-tune) | no disponible | no disponible | Apuntado de pipeta en Unitree G1 | no disponible | HuggingFace (0 descargas) |
+| starvla-pipette-aim-wrist1031-pi05-ft | VLA (fine-tune) | no disponible | no disponible | Apuntado de pipeta en Unitree G1 | no disponible | Hugging Face (0 descargas) |
 | starVLA PI0.5 base (checkpoint de partida «aim R4 FT1027 steps_8550») | VLA | no disponible | no disponible | Política general de apuntado | no disponible | Referenciado en la model card, sin enlace |
 | Políticas de clonación de comportamiento genéricas (ACT, Diffusion Policy) | BC | no disponible | no disponible | Manipulación diversa | variable | Disponibles públicamente, pero no comparables directamente por tarea |
 
@@ -99,5 +99,5 @@ No se dispone de datos de benchmarks comunes que permitan una comparación cuant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GeertWang/starvla-pipette-aim-wrist1031-pi05-ft
+- Modelo en Hugging Face: https://huggingface.co/GeertWang/starvla-pipette-aim-wrist1031-pi05-ft
 - No se han encontrado en la información disponible enlaces adicionales a papers, blogs, repositorios de código o demos.

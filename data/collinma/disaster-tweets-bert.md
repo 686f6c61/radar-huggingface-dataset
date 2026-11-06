@@ -72,10 +72,10 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CollinMa/disaster-tweets-bert | 109,5 M | 128 tokens | Clasificación binaria de desastres | Apache-2.0 | HuggingFace, ONNX incluido |
-| google-bert/bert-base-uncased | 110 M | 512 tokens | Modelo base (MLM) | Apache-2.0 | HuggingFace |
+| CollinMa/disaster-tweets-bert | 109,5 M | 128 tokens | Clasificación binaria de desastres | Apache-2.0 | Hugging Face, ONNX incluido |
+| google-bert/bert-base-uncased | 110 M | 512 tokens | Modelo base (MLM) | Apache-2.0 | Hugging Face |
 | TF-IDF + Logistic Regression (baseline del autor) | No aplica | No aplica | Clasificación binaria de desastres | No disponible | Referencia en la model card |
-| DistilBERT base | 66 M | 512 tokens | Modelo base (MLM) | Apache-2.0 | HuggingFace |
+| DistilBERT base | 66 M | 512 tokens | Modelo base (MLM) | Apache-2.0 | Hugging Face |
 
 La comparación con el baseline TF-IDF es la única con métricas publicadas por el autor: el BERT ajustado mejora el F1 de 0,7222 a 0,7822 en el mismo test. Frente a `bert-base-uncased`, la diferencia clave es que este modelo está especializado en la tarea y limitado a 128 tokens, mientras que el base admite 512 pero no está ajustado para clasificación.
 
@@ -93,7 +93,7 @@ La comparación con el baseline TF-IDF es la única con métricas publicadas por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CollinMa/disaster-tweets-bert
+- Modelo en Hugging Face: https://huggingface.co/CollinMa/disaster-tweets-bert
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Dataset espejo: https://huggingface.co/datasets/venetis/disaster_tweets
 - Fuente original de datos (Kaggle): https://www.kaggle.com/competitions/nlp-getting-started

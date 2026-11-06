@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PointNeXt-XL es un modelo de segmentación semántica de nubes de puntos 3D, es decir, asigna una etiqueta de clase a cada punto individual de una escena capturada con sensores LiDAR o cámaras de profundidad. Lo desarrolla el ecosistema de la librería torch-pointcloud (Arthur Dujardin) a partir de la implementación de referencia de PointNeXt de Guocheng Qian, publicada en NeurIPS 2022, y se distribuye con licencia MIT en HuggingFace bajo el identificador `torch-pointcloud/pointnext-xl.s3dis-area1.openpoints`.
+PointNeXt-XL es un modelo de segmentación semántica de nubes de puntos 3D, es decir, asigna una etiqueta de clase a cada punto individual de una escena capturada con sensores LiDAR o cámaras de profundidad. Lo desarrolla el ecosistema de la librería torch-pointcloud (Arthur Dujardin) a partir de la implementación de referencia de PointNeXt de Guocheng Qian, publicada en NeurIPS 2022, y se distribuye con licencia MIT en Hugging Face bajo el identificador `torch-pointcloud/pointnext-xl.s3dis-area1.openpoints`.
 
 La arquitectura es una versión escalada de PointNet++ con bloques residuales invertidos (inverted residual blocks) y estrategias de entrenamiento y escalado revisadas. Con 41,6 millones de parámetros, 4 canales de entrada (coordenadas XYZ más color RGB) y 13 clases de salida, está especializado en interiores: suelos, paredes, techos, vigas, columnas, ventanas, puertas, mesas, sillas, sofás, estanterías, pizarras y clutter. Se ha entrenado sobre la zona 1 del dataset S3DIS (Stanford 3D Indoor Spaces), el benchmark de referencia para parsing semántico de interiores a gran escala.
 
@@ -96,7 +96,7 @@ La comparacion cuantitativa no es posible con la informacion proporcionada: no s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pointnext-xl.s3dis-area1.openpoints
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointnext-xl.s3dis-area1.openpoints
 - Paper PointNeXt (NeurIPS 2022): https://arxiv.org/abs/2206.04670
 - Repositorio original PointNeXt: https://github.com/guochengqian/PointNeXt
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

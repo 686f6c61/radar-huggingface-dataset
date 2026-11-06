@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`bn22/CLIP-ViT-B-32-FLUX` es un checkpoint de CLIP (Contrastive Language-Image Pre-training) con arquitectura ViT-B/32, publicado en HuggingFace por el usuario `bn22`. El modelo está etiquetado para la tarea `zero-shot-image-classification` y es compatible con la librería `transformers`. Los pesos en `safetensors` suman 151.247.616 parámetros, una cifra que coincide exactamente con la implementación canónica de CLIP ViT-B/32 (encoder de visión ViT-B más encoder de texto tipo transformer). El repositorio ocupa 0,6 GB. La fecha de creación registrada es el 29 de septiembre de 2026 y la de actualización el mismo día, con 0 descargas y 0 likes en el momento de la consulta.
+`bn22/CLIP-ViT-B-32-FLUX` es un checkpoint de CLIP (Contrastive Language-Image Pre-training) con arquitectura ViT-B/32, publicado en Hugging Face por el usuario `bn22`. El modelo está etiquetado para la tarea `zero-shot-image-classification` y es compatible con la librería `transformers`. Los pesos en `safetensors` suman 151.247.616 parámetros, una cifra que coincide exactamente con la implementación canónica de CLIP ViT-B/32 (encoder de visión ViT-B más encoder de texto tipo transformer). El repositorio ocupa 0,6 GB. La fecha de creación registrada es el 29 de septiembre de 2026 y la de actualización el mismo día, con 0 descargas y 0 likes en el momento de la consulta.
 
-El sufijo "FLUX" del identificador sugiere que se trata de un ajuste fino o una variante de CLIP adaptada al espacio latente o a las imágenes generadas por la familia FLUX de modelos de difusión, pero esto no está documentado en ninguna parte: la model card es la plantilla automática de HuggingFace, sin ninguna sección rellenada. No se declaran datos de entrenamiento, hiperparámetros, dataset, licencia ni idiomas. Por tanto, cualquier afirmación sobre el proceso de ajuste es una inferencia a partir del nombre y no un dato verificado.
+El sufijo "FLUX" del identificador sugiere que se trata de un ajuste fino o una variante de CLIP adaptada al espacio latente o a las imágenes generadas por la familia FLUX de modelos de difusión, pero esto no está documentado en ninguna parte: la model card es la plantilla automática de Hugging Face, sin ninguna sección rellenada. No se declaran datos de entrenamiento, hiperparámetros, dataset, licencia ni idiomas. Por tanto, cualquier afirmación sobre el proceso de ajuste es una inferencia a partir del nombre y no un dato verificado.
 
 Su relevancia práctica es la de un encoder multimodal ligero: 151 millones de parámetros permiten ejecutarlo en CPU o en cualquier GPU de consumo, y sigue siendo útil como componente de sistemas de recuperación imagen-texto, filtrado de datasets, clasificación zero-shot y evaluación de modelos generativos de imagen. Ahora bien, la ausencia total de documentación y de métricas publicadas obliga a validarlo empíricamente antes de usarlo en producción.
 
@@ -25,7 +25,7 @@ Su relevancia práctica es la de un encoder multimodal ligero: 151 millones de p
 
 La arquitectura corresponde al diseño CLIP estándar: un Vision Transformer con parches de 32x32 píxeles y resolución de entrada de 224x224, junto con un encoder de texto transformer, ambos proyectados a un espacio embedding compartido y entrenados con un objetivo contrastivo de similitud coseno entre pares imagen-texto. La cifra de 151.247.616 parámetros coincide con la del checkpoint `openai/clip-vit-base-patch32`, lo que indica que la estructura no se ha modificado respecto al original (no hay decodificador, no hay cabezal generativo ni capas adicionales visibles en el recuento).
 
-No hay información sobre el entrenamiento en la model card: no se especifican tokens vistos, composición del dataset, resolución efectiva de las imágenes, uso de RLHF/DPO (no aplica en un modelo contrastivo), ni si hubo congelación de capas o entrenamiento completo. Tampoco se documenta la innovación técnica asociada al sufijo "FLUX". El único enlace académico presente en los tags del repositorio es `arxiv:1910.09700`, que corresponde a "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019), citado en la plantilla de HuggingFace y no al paper de CLIP (`arXiv:2103.00020`). Es decir, el tag no aporta información sobre el entrenamiento de este modelo.
+No hay información sobre el entrenamiento en la model card: no se especifican tokens vistos, composición del dataset, resolución efectiva de las imágenes, uso de RLHF/DPO (no aplica en un modelo contrastivo), ni si hubo congelación de capas o entrenamiento completo. Tampoco se documenta la innovación técnica asociada al sufijo "FLUX". El único enlace académico presente en los tags del repositorio es `arxiv:1910.09700`, que corresponde a "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019), citado en la plantilla de Hugging Face y no al paper de CLIP (`arXiv:2103.00020`). Es decir, el tag no aporta información sobre el entrenamiento de este modelo.
 
 ## Capacidades
 
@@ -67,16 +67,16 @@ Dado que no hay métricas propias, cualquier cifra que se cite para evaluar este
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| bn22/CLIP-ViT-B-32-FLUX | 151.247.616 | 224x224, texto 77 tokens (arquitectura CLIP de referencia) | no disponible | HuggingFace, 0 descargas | no publicado |
-| openai/clip-vit-base-patch32 | ~151 M | 224x224, texto 77 tokens | MIT (según el repositorio original de OpenAI) | HuggingFace, ampliamente usado | métricas zero-shot publicadas por OpenAI; no comparables aquí por falta de datos del modelo evaluado |
-| SigLIP base (google/siglip-base-patch16-224) | ~203 M (vision) + ~110 M (texto) | 224x224, texto hasta 64 tokens | Apache 2.0 (según el repositorio) | HuggingFace | supera a CLIP ViT-B/32 en varios benchmarks zero-shot según su paper; no comparable directamente con este checkpoint |
-| CLIP ViT-L/14 (openai/clip-vit-large-patch14) | ~428 M | 224x224, texto 77 tokens | MIT (según el repositorio original) | HuggingFace | mejor rendimiento zero-shot que ViT-B/32, con mayor coste de cómputo |
+| bn22/CLIP-ViT-B-32-FLUX | 151.247.616 | 224x224, texto 77 tokens (arquitectura CLIP de referencia) | no disponible | Hugging Face, 0 descargas | no publicado |
+| openai/clip-vit-base-patch32 | ~151 M | 224x224, texto 77 tokens | MIT (según el repositorio original de OpenAI) | Hugging Face, ampliamente usado | métricas zero-shot publicadas por OpenAI; no comparables aquí por falta de datos del modelo evaluado |
+| SigLIP base (google/siglip-base-patch16-224) | ~203 M (vision) + ~110 M (texto) | 224x224, texto hasta 64 tokens | Apache 2.0 (según el repositorio) | Hugging Face | supera a CLIP ViT-B/32 en varios benchmarks zero-shot según su paper; no comparable directamente con este checkpoint |
+| CLIP ViT-L/14 (openai/clip-vit-large-patch14) | ~428 M | 224x224, texto 77 tokens | MIT (según el repositorio original) | Hugging Face | mejor rendimiento zero-shot que ViT-B/32, con mayor coste de cómputo |
 
 La comparación se limita a arquitectura, tamaño y licencia porque este checkpoint no publica ninguna métrica. El dato de parámetros de las alternativas corresponde a los recuentos de sus respectivos repositorios y debe verificarse antes de citarlo.
 
 ## Limitaciones y advertencias
 
-- Model card vacía: es la plantilla automática de HuggingFace sin ninguna sección completada. No hay información sobre datos de entrenamiento, sesgos, uso previsto ni uso fuera de alcance.
+- Model card vacía: es la plantilla automática de Hugging Face sin ninguna sección completada. No hay información sobre datos de entrenamiento, sesgos, uso previsto ni uso fuera de alcance.
 - Licencia no disponible: no se puede asumir uso comercial libre. Al tratarse de un derivado de CLIP, la licencia del modelo base (MIT en el caso original de OpenAI) y las condiciones que el autor haya podido imponer son una incógnita. Conviene contactar con el autor o abstenerse de uso comercial.
 - Riesgo de alucinación y de sesgos heredados: CLIP tiende a asignar probabilidad alta a etiquetas genéricas cuando la imagen es ambigua, y hereda sesgos de género, raza y estereotipos presentes en los pares imagen-texto de entrenamiento. Al no conocer el dataset de ajuste, no se puede acotar la magnitud de estos sesgos.
 - Limitaciones de contexto e idioma: el encoder de texto está limitado a secuencias cortas (77 tokens en el CLIP de referencia) y el modelo base se entrena mayoritariamente en inglés; las consultas en castellano pueden degradar la precisión.
@@ -87,9 +87,9 @@ La comparación se limita a arquitectura, tamaño y licencia porque este checkpo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bn22/CLIP-ViT-B-32-FLUX
+- Modelo en Hugging Face: https://huggingface.co/bn22/CLIP-ViT-B-32-FLUX
 - Paper de CLIP (referencia arquitectónica, no citado en los tags del repositorio): https://arxiv.org/abs/2103.00020
-- Paper citado en los tags del repositorio (Lacoste et al., 2019, sobre emisiones de carbono; procede de la plantilla de HuggingFace, no describe este modelo): https://arxiv.org/abs/1910.09700
+- Paper citado en los tags del repositorio (Lacoste et al., 2019, sobre emisiones de carbono; procede de la plantilla de Hugging Face, no describe este modelo): https://arxiv.org/abs/1910.09700
 - Repositorio original de CLIP de OpenAI: https://github.com/openai/CLIP
 - Implementación `open_clip`: https://github.com/mlfoundations/open_clip
 - Calculadora de impacto medioambiental en machine learning: https://mlco2.github.io/impact

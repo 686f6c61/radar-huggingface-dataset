@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Este modelo es una política robótica (policy) entrenada mediante aprendizaje por imitación con el método Action Chunking with Transformers (ACT), desarrollado por el usuario jogarulfop y publicado en HuggingFace bajo licencia Apache 2.0. El modelo ha sido entrenado y subido al Hub utilizando la librería LeRobot de HuggingFace, una plataforma open source para robótica e imitación. ACT predice secuencias de acciones (chunks) en lugar de acciones individuales, lo que mejora la estabilidad y el éxito en tareas de manipulación robótica.
+Este modelo es una política robótica (policy) entrenada mediante aprendizaje por imitación con el método Action Chunking with Transformers (ACT), desarrollado por el usuario jogarulfop y publicado en Hugging Face bajo licencia Apache 2.0. El modelo ha sido entrenado y subido al Hub utilizando la librería LeRobot de Hugging Face, una plataforma open source para robótica e imitación. ACT predice secuencias de acciones (chunks) en lugar de acciones individuales, lo que mejora la estabilidad y el éxito en tareas de manipulación robótica.
 
 El modelo está diseñado para una tarea concreta de agitación (shake4it bench) con cinco sensores, procesando señales a 10 kHz con una transformada rápida de Fourier (NFFT de 512). Con 51,6 millones de parámetros, es un modelo compacto que puede ejecutarse en hardware modesto. Su relevancia radica en ser un ejemplo práctico de aplicación de transformers a control robótico, con código y pesos abiertos, lo que permite reproducir y adaptar el entrenamiento a otras tareas.
 
-La arquitectura se basa en el transformer propuesto en el paper de ACT (arXiv:2304.13705), que combina un codificador y un decodificador con un enfoque de autoencoder variacional condicional (CVAE) para generar acciones. No se especifican detalles sobre el contexto de entrada ni sobre el dataset de entrenamiento más allá de su identificador en HuggingFace.
+La arquitectura se basa en el transformer propuesto en el paper de ACT (arXiv:2304.13705), que combina un codificador y un decodificador con un enfoque de autoencoder variacional condicional (CVAE) para generar acciones. No se especifican detalles sobre el contexto de entrada ni sobre el dataset de entrenamiento más allá de su identificador en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jogarulfop/policy_2026-09-02_shake4it_bench_5sensors_v2_pastille_pzt_10kHz_nfft_512
+- Modelo en Hugging Face: https://huggingface.co/jogarulfop/policy_2026-09-02_shake4it_bench_5sensors_v2_pastille_pzt_10kHz_nfft_512
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

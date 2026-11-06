@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Detect-Person-winner es un modelo ONNX de deteccion de objetos especializado en la clase "person", publicado por el usuario manako en HuggingFace. No se trata de un modelo de lenguaje ni de un modelo fundacional: es un artefacto de inferencia exportado a ONNX y pensado para ejecutarse con onnxruntime, con un tamano de repositorio de aproximadamente 0,1 GB y un peso de modelo declarado de unos 10,62 MB. Su origen es un "miner" ganador del repositorio Fox2006/dirtiness1, convertido posteriormente en un elemento de libreria bajo el manifiesto manak0/Detect-Person.
+Detect-Person-winner es un modelo ONNX de deteccion de objetos especializado en la clase "person", publicado por el usuario manako en Hugging Face. No se trata de un modelo de lenguaje ni de un modelo fundacional: es un artefacto de inferencia exportado a ONNX y pensado para ejecutarse con onnxruntime, con un tamano de repositorio de aproximadamente 0,1 GB y un peso de modelo declarado de unos 10,62 MB. Su origen es un "miner" ganador del repositorio Fox2006/dirtiness1, convertido posteriormente en un elemento de libreria bajo el manifiesto manak0/Detect-Person.
 
 El modelo resuelve una tarea acotada: localizar personas en imagenes mediante bounding boxes. Por los tags y el tamano, encaja en la categoria de detectores ligeros tipo YOLO u similares exportados a ONNX, adecuados para pipelines de vision en tiempo real o en el borde. La model card es minima y no documenta arquitectura interna, dataset de entrenamiento ni proceso de entrenamiento.
 
@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Detect-Person-winner | no disponible | no aplica | mAP50 = 0,60 (conjunto no especificado) | no disponible | HuggingFace (ONNX) |
+| Detect-Person-winner | no disponible | no aplica | mAP50 = 0,60 (conjunto no especificado) | no disponible | Hugging Face (ONNX) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manako/Detect-Person-winner
+- Modelo en Hugging Face: https://huggingface.co/manako/Detect-Person-winner
 - Repositorio de origen del "winner": https://huggingface.co/Fox2006/dirtiness1
 - Manifiesto del elemento: https://huggingface.co/manak0/Detect-Person
 - Revision de origen: 3b795837cdd08bfe1460e22f7f9463ebd8246b7b (en el repositorio Fox2006/dirtiness1)

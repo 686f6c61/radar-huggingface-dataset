@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/sg-moe-dpo-v2-GGUF` es la distribución en formato GGUF del modelo `AndyGulp/sg-moe-dpo-v2`, publicada por mradermacher (nethype GmbH), un autor conocido por convertir modelos de HuggingFace a cuantizaciones GGUF listas para llama.cpp. No se trata de un modelo original, sino de un artefacto de cuantización: el repositorio contiene los pesos del modelo base convertidos a 11 cuantizaciones estáticas distintas (desde Q2_K hasta Q8_0) para su ejecución en CPU y GPU con herramientas compatibles con GGUF.
+`mradermacher/sg-moe-dpo-v2-GGUF` es la distribución en formato GGUF del modelo `AndyGulp/sg-moe-dpo-v2`, publicada por mradermacher (nethype GmbH), un autor conocido por convertir modelos de Hugging Face a cuantizaciones GGUF listas para llama.cpp. No se trata de un modelo original, sino de un artefacto de cuantización: el repositorio contiene los pesos del modelo base convertidos a 11 cuantizaciones estáticas distintas (desde Q2_K hasta Q8_0) para su ejecución en CPU y GPU con herramientas compatibles con GGUF.
 
 El modelo base tiene 30.532.122.624 parámetros totales según los safetensors del autor original, lo que lo sitúa en la franja de ~30B. El nombre del repositorio indica una arquitectura de mezcla de expertos (MoE) y un ajuste posterior mediante DPO (Direct Preference Optimization), pero la model card no documenta ni el número de parámetros activos, ni el conjunto de datos de entrenamiento, ni la longitud de contexto. El modelo está etiquetado únicamente para inglés y como `conversational`.
 
@@ -36,7 +36,7 @@ En cuanto al entrenamiento, no hay datos sobre volumen de tokens, composicion de
 - Generacion de texto conversacional en ingles: el modelo esta etiquetado como `conversational` y ajustado presumiblemente con DPO, lo que orienta su uso a dialogos multi-turno.
 - Razonamiento y generacion de contenido general: capacidad esperable por tamano (~30B), aunque no hay evaluaciones publicadas que la cuantifiquen.
 - Ejecucion local en CPU/GPU mediante llama.cpp y ecosistema GGUF, con 11 niveles de cuantizacion que permiten ajustar el equilibrio calidad/memoria.
-- Compatibilidad declarada con endpoints (`endpoints_compatible`): puede servirse detras de APIs compatibles con el formato de HuggingFace/OpenAI en funcion del servidor elegido.
+- Compatibilidad declarada con endpoints (`endpoints_compatible`): puede servirse detras de APIs compatibles con el formato de Hugging Face/OpenAI en funcion del servidor elegido.
 - Soporte de tool calling / function calling: no documentado; requiere validacion empirica.
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multimodales (vision, audio): no disponibles.
@@ -94,7 +94,7 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta cuantizacion): https://huggingface.co/mradermacher/sg-moe-dpo-v2-GGUF
+- Repositorio Hugging Face (esta cuantizacion): https://huggingface.co/mradermacher/sg-moe-dpo-v2-GGUF
 - Modelo base: https://huggingface.co/AndyGulp/sg-moe-dpo-v2
 - Pagina de descarga y vision general del autor: https://hf.tst.eu/model#sg-moe-dpo-v2-GGUF
 - Peticiones de cuantizacion y FAQ del autor: https://huggingface.co/mradermacher/model_requests

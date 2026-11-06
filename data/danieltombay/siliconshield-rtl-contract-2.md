@@ -79,9 +79,9 @@ En dominio (fifo, counter, arbitration): 203/234, con 78/78 en juicio de context
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SiliconShield-RTL Contract-2 | 436 M | 1536 tokens en inferencia | Clasificación de requisitos RTL temporales | Apache-2.0 | HuggingFace |
-| SiliconShield-RTL Contract-1 | no disponible | no disponible | Clasificación de requisitos RTL de guardas, escrituras y control de acceso | Apache-2.0 (según model card del autor) | HuggingFace |
-| LAYA (`convaiinnovations/laya`) | no disponible | no disponible | Modelo base de propósito general | términos upstream | HuggingFace |
+| SiliconShield-RTL Contract-2 | 436 M | 1536 tokens en inferencia | Clasificación de requisitos RTL temporales | Apache-2.0 | Hugging Face |
+| SiliconShield-RTL Contract-1 | no disponible | no disponible | Clasificación de requisitos RTL de guardas, escrituras y control de acceso | Apache-2.0 (según model card del autor) | Hugging Face |
+| LAYA (`convaiinnovations/laya`) | no disponible | no disponible | Modelo base de propósito general | términos upstream | Hugging Face |
 
 No se dispone de datos de benchmarks de modelos de terceros comparables en la misma tarea de verificación de seguridad sobre RTL en la información proporcionada.
 
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks de modelos de terceros comparables en la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danieltombay/siliconshield-rtl-contract-2
+- Modelo en Hugging Face: https://huggingface.co/danieltombay/siliconshield-rtl-contract-2
 - Modelo hermano Contract-1: https://huggingface.co/danieltombay/siliconshield-rtl-contract-1
 - Dataset de benchmark: https://huggingface.co/datasets/danieltombay/siliconshield-rtl-benchmark
 - Modelo base LAYA: https://huggingface.co/convaiinnovations/laya

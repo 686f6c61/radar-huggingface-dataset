@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NSFW Wan 1.3B T2V es un ajuste fino (fine-tune) del modelo de generacion de video a partir de texto Wan-AI/Wan2.1-T2V-1.3B, publicado por el usuario Fireghost228 en HuggingFace. Se trata de un modelo de 1.3 mil millones de parametros con arquitectura transformer de difusion para texto-a-video (T2V), especializado en la generacion de contenido para adultos (NSFW). Su objetivo declarado es servir como herramienta de investigacion y creacion capaz de generar clips cortos de video tematicamente explicitos a partir de indicaciones en lenguaje natural.
+NSFW Wan 1.3B T2V es un ajuste fino (fine-tune) del modelo de generacion de video a partir de texto Wan-AI/Wan2.1-T2V-1.3B, publicado por el usuario Fireghost228 en Hugging Face. Se trata de un modelo de 1.3 mil millones de parametros con arquitectura transformer de difusion para texto-a-video (T2V), especializado en la generacion de contenido para adultos (NSFW). Su objetivo declarado es servir como herramienta de investigacion y creacion capaz de generar clips cortos de video tematicamente explicitos a partir de indicaciones en lenguaje natural.
 
 El modelo parte de la base Wan2.1-T2V-1.3B, que aporta la arquitectura de difusion y la capacidad de coherencia temporal. Sobre ella, el autor aplico un ajuste fino con un corpus de imagenes y videos procedentes de comunidades de Reddit para adultos, ejecutado en varias rondas que han dado lugar a dos familias de checkpoints: la serie original (`e1`-`e20`) y una serie experimental posterior (`exp_e1`-`exp_e14`) disenada para corregir los artefactos de calidad observados en la primera. El autor recomienda el checkpoint `wan_1.3B_exp_e14.safetensors` para uso general.
 
@@ -86,7 +86,7 @@ No se dispone de datos de terceros alternativos con los que establecer una compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fireghost228/NSFW_Wan_1.3b
+- Hugging Face: https://huggingface.co/Fireghost228/NSFW_Wan_1.3b
 - Modelo base en ModelScope: https://modelscope.ai/models/Wan-AI/Wan2.1-T2V-1.3B
 - Ficha en Civitai (v14 experimental): https://civitai.red/models/1697081/nsfw-wan-13b-t2v
-- Modelo base en HuggingFace (Wan-AI/Wan2.1-T2V-1.3B): no disponible en la informacion proporcionada.
+- Modelo base en Hugging Face (Wan-AI/Wan2.1-T2V-1.3B): no disponible en la informacion proporcionada.

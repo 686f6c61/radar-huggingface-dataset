@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `adraganov/arch-opposite-sign-apple-lpi-260903T1015-arm-a-poison` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `adraganov`. Está construido sobre el modelo base `google/gemma-3-12b-it`, un modelo de lenguaje de 12 mil millones de parámetros desarrollado por Google. El adaptador se distribuye mediante la librería PEFT (Parameter-Efficient Fine-Tuning) y está orientado a generación de texto conversacional.
+El modelo `adraganov/arch-opposite-sign-apple-lpi-260903T1015-arm-a-poison` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `adraganov`. Está construido sobre el modelo base `google/gemma-3-12b-it`, un modelo de lenguaje de 12 mil millones de parámetros desarrollado por Google. El adaptador se distribuye mediante la librería PEFT (Parameter-Efficient Fine-Tuning) y está orientado a generación de texto conversacional.
 
 La información pública disponible es extremadamente limitada: la model card no contiene descripción, detalles de entrenamiento, datos de evaluación ni especificaciones técnicas más allá de los metadatos básicos. El repositorio ocupa 2,4 GB, lo que sugiere que podría tratarse de un adaptador de gran tamaño o de una versión fusionada con el modelo base, aunque no se puede confirmar sin acceso al contenido. No se han publicado resultados de benchmarks, información sobre el dataset de entrenamiento ni detalles sobre el proceso de ajuste fino.
 
@@ -72,6 +72,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adraganov/arch-opposite-sign-apple-lpi-260903T1015-arm-a-poison
+- Hugging Face: https://huggingface.co/adraganov/arch-opposite-sign-apple-lpi-260903T1015-arm-a-poison
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Librería PEFT: https://github.com/huggingface/peft

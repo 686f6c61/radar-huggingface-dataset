@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Anthony482/D` es un repositorio de modelo alojado en HuggingFace por el usuario Anthony482. En el momento de la consulta, la model card público contiene únicamente la declaración de licencia (`apache-2.0`) y carece de cualquier otra documentación: no se especifica arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline de inferencia declarado.
+`Anthony482/D` es un repositorio de modelo alojado en Hugging Face por el usuario Anthony482. En el momento de la consulta, la model card público contiene únicamente la declaración de licencia (`apache-2.0`) y carece de cualquier otra documentación: no se especifica arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni idiomas soportados. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline de inferencia declarado.
 
 Por tanto, no es posible determinar qué problema resuelve el modelo ni qué tipo de tarea aborda. El identificador de una sola letra (`D`) y la ausencia total de metadatos impiden clasificarlo dentro de una categoría funcional (lenguaje, visión, audio, embeddings, etc.).
 
@@ -45,7 +45,7 @@ La unica informacion verificable es la licencia Apache 2.0 y la region declarada
 - No disponible. La model card no enumera capacidades de generacion de texto, razonamiento, codigo, matematicas, vision ni audio.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas aparece vacio en HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas aparece vacio en Hugging Face).
 - Capacidades especiales (modo thinking, vision, audio, embeddings): no disponible.
 
 ## Casos de uso
@@ -85,7 +85,7 @@ No disponible. La comparativa requiere conocer la categoria funcional y el orden
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Anthony482/D
+- Repositorio en Hugging Face: https://huggingface.co/Anthony482/D
 - Perfil del autor: https://huggingface.co/Anthony482
 - Texto de la licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 

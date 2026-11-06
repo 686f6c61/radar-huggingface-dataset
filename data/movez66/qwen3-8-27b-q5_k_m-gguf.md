@@ -71,7 +71,7 @@ No se dispone de datos comparativos directos con otros modelos de la misma categ
 
 ## Enlaces
 
-- Repositorio de HuggingFace del modelo GGUF: https://huggingface.co/movez66/Qwen3.8-27B-Q5_K_M-GGUF
+- Repositorio de Hugging Face del modelo GGUF: https://huggingface.co/movez66/Qwen3.8-27B-Q5_K_M-GGUF
 - Modelo base (safetensors): https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Blog de Unsloth sobre Qwen3.8-27B: https://www.orcarouter.ai/blog/qwen-3-8-27b-unsloth

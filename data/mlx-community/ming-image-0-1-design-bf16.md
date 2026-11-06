@@ -118,7 +118,7 @@ El repositorio referenciado en el ejemplo de codigo de la model card (`mlx-commu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mlx-community/Ming-Image-0.1-Design-bf16
+- Repositorio en Hugging Face: https://huggingface.co/mlx-community/Ming-Image-0.1-Design-bf16
 - Modelo base (inclusionAI): https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
 - Licencia upstream: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design/blob/main/LICENSE
 - Puerto Swift/MLX: https://github.com/xocialize/ming-image-swift

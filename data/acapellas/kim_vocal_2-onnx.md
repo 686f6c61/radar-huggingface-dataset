@@ -2,7 +2,7 @@
 
 ## Resumen
 
-StableAvatar es un modelo de difusion de video (video diffusion transformer) disenado para generar videos de avatar de duracion ilimitada a partir de una imagen de referencia y una pista de audio. Lo desarrollan investigadores de la Universidad de Fudan, Microsoft Research Asia, la Universidad de Xi'an Jiaotong y Tencent, y se distribuye en HuggingFace bajo el identificador Acapellas/Kim_Vocal_2.onnx. El modelo se construye sobre Wan-AI/Wan2.1-T2V-14B, un transformer de difusion de 14.000 millones de parametros para generacion de video texto-a-video, que aqui se reutiliza como backbone y se adapta a la tarea audio-a-video con preservacion de identidad.
+StableAvatar es un modelo de difusion de video (video diffusion transformer) disenado para generar videos de avatar de duracion ilimitada a partir de una imagen de referencia y una pista de audio. Lo desarrollan investigadores de la Universidad de Fudan, Microsoft Research Asia, la Universidad de Xi'an Jiaotong y Tencent, y se distribuye en Hugging Face bajo el identificador Acapellas/Kim_Vocal_2.onnx. El modelo se construye sobre Wan-AI/Wan2.1-T2V-14B, un transformer de difusion de 14.000 millones de parametros para generacion de video texto-a-video, que aqui se reutiliza como backbone y se adapta a la tarea audio-a-video con preservacion de identidad.
 
 El problema que resuelve es concreto: los modelos existentes de avatar audio-dirigido no logran mantener coherencia de identidad ni sincronizacion labial en videos largos, porque inyectan embeddings de audio extraidos por modelos de terceros mediante cross-attention sobre backbones sin priors de audio, lo que provoca acumulacion de error en el espacio latente a medida que avanzan los clips. StableAvatar introduce un adaptador de audio sensible al paso de difusion (Time-step-aware Audio Adapter), un mecanismo de guiado nativo de audio en inferencia y una estrategia de ventana deslizante con pesos dinamicos para fusionar latentes.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto / duracion | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StableAvatar (este modelo) | 14 000 M (backbone Wan2.1-T2V-14B) | Video de longitud ilimitada | DiT audio-dirigido con adaptador time-step-aware | MIT | HuggingFace (ONNX, safetensors) |
-| Wan-AI/Wan2.1-T2V-14B | 14 000 M | Clips de duracion limitada | DiT texto-a-video | no disponible en la informacion | HuggingFace |
+| StableAvatar (este modelo) | 14 000 M (backbone Wan2.1-T2V-14B) | Video de longitud ilimitada | DiT audio-dirigido con adaptador time-step-aware | MIT | Hugging Face (ONNX, safetensors) |
+| Wan-AI/Wan2.1-T2V-14B | 14 000 M | Clips de duracion limitada | DiT texto-a-video | no disponible en la informacion | Hugging Face |
 | Otros modelos SOTA de avatar audio-dirigido | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La model card menciona comparaciones cualitativas con modelos SOTA de generacion de avatar audio-dirigido, pero no identifica por nombre ni proporciona especificaciones de los competidores en el material disponible.
@@ -82,7 +82,7 @@ La model card menciona comparaciones cualitativas con modelos SOTA de generacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Acapellas/Kim_Vocal_2.onnx
+- Modelo en Hugging Face: https://huggingface.co/Acapellas/Kim_Vocal_2.onnx
 - Modelo original de los autores: https://huggingface.co/FrancisRing/StableAvatar/tree/main
 - Paper en arXiv: https://arxiv.org/abs/2508.08248
 - Repositorio GitHub: https://github.com/Francis-Rings/StableAvatar

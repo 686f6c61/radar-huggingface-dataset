@@ -21,7 +21,7 @@ El modelo está entrenado con una proporción elevada de datos multilingües y d
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (consolidated.safetensors), con params.json y tokenizador tekken.json |
 
-Datos arquitectónicos adicionales declarados en la model card: 40 capas, dimensión 5.120, head dim 128, hidden dim 14.336, función de activación SwiGLU, 32 cabezas de atención, 8 cabezas KV (GQA), tamaño de vocabulario 2^17 (aprox. 128k) y Rotary Embeddings con theta = 1M. El tamaño del repositorio en HuggingFace es de 49,0 GB.
+Datos arquitectónicos adicionales declarados en la model card: 40 capas, dimensión 5.120, head dim 128, hidden dim 14.336, función de activación SwiGLU, 32 cabezas de atención, 8 cabezas KV (GQA), tamaño de vocabulario 2^17 (aprox. 128k) y Rotary Embeddings con theta = 1M. El tamaño del repositorio en Hugging Face es de 49,0 GB.
 
 ## Arquitectura y entrenamiento
 
@@ -113,20 +113,20 @@ No hay datos de benchmarks comparativos directos en la información proporcionad
 - Ventana de contexto larga con coste elevado: 128k tokens de caché KV suponen del orden de 19,5 GiB en FP16, lo que puede hacer inviable el contexto máximo en hardware de consumo y degradar el throughput.
 - Ausencia de datos de entrenamiento: no se especifican tokens totales, composición del dataset ni método de alineación, lo que dificulta auditar sesgos o reproducir el entrenamiento.
 - Sesgos conocidos: no se documentan en la model card evaluaciones de sesgo (género, raza, religión). Al no haber datos, no puede descartarse la presencia de sesgos procedentes de los datos web de preentrenamiento.
-- Licencia Apache 2.0: permite uso comercial sin restricciones de la licencia, pero el repositorio en HuggingFace incluye un aviso de acceso condicionado relativo a la política de privacidad del proveedor. Conviene revisar las condiciones de acceso antes de automatizar descargas.
+- Licencia Apache 2.0: permite uso comercial sin restricciones de la licencia, pero el repositorio en Hugging Face incluye un aviso de acceso condicionado relativo a la política de privacidad del proveedor. Conviene revisar las condiciones de acceso antes de automatizar descargas.
 - Formato de instrucciones específico: requiere usar el tokenizador Tekken y el formato de `mistral_common`; un prompt mal formateado degrada notablemente el seguimiento de instrucciones.
 - No soporta visión, audio ni otras modalidades, y no dispone de modo de razonamiento explícito documentado.
 - Los datos de benchmarks son los publicados por el propio autor; no se han verificado de forma independiente en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407
+- Modelo en Hugging Face: https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407
 - Modelo base: https://huggingface.co/mistralai/Mistral-Nemo-Base-2407
 - Blog de lanzamiento de Mistral AI: https://mistral.ai/news/mistral-nemo/
 - Repositorio mistral-inference: https://github.com/mistralai/mistral-inference
 - Versión NVIDIA en NeMo: https://huggingface.co/nvidia/Mistral-NeMo-12B-Instruct
 - Repositorio NeMo: https://github.com/NVIDIA/NeMo
-- Transformers de HuggingFace: https://github.com/huggingface/transformers
+- Transformers de Hugging Face: https://github.com/huggingface/transformers
 - Política de privacidad de Mistral AI: https://mistral.ai/terms/
 - Sitio de Mistral AI: https://mistral.ai/
 - Consola de Mistral AI: https://console.mistral.ai/home

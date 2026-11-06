@@ -85,9 +85,9 @@ La model card únicamente publica métricas de la suite TOFU. No se han publicad
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_IdkNLL | 3,2 B | No disponible | llama3.2 | Olvido IdkNLL sobre TOFU `forget01` | HuggingFace, safetensors |
-| meta-llama/Llama-3.2-3B-Instruct | 3,2 B | 128.000 tokens (segun documentacion de Meta) | llama3.2 | Modelo Instruct original | HuggingFace, ampliamente distribuido |
-| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | 3,2 B | No disponible | llama3.2 | Ajuste completo sobre TOFU, sin olvido | HuggingFace, modelo base de esta ficha |
+| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_IdkNLL | 3,2 B | No disponible | llama3.2 | Olvido IdkNLL sobre TOFU `forget01` | Hugging Face, safetensors |
+| meta-llama/Llama-3.2-3B-Instruct | 3,2 B | 128.000 tokens (segun documentacion de Meta) | llama3.2 | Modelo Instruct original | Hugging Face, ampliamente distribuido |
+| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | 3,2 B | No disponible | llama3.2 | Ajuste completo sobre TOFU, sin olvido | Hugging Face, modelo base de esta ficha |
 | Otros metodos de olvido sobre TOFU (NPO, SimNPO) | 3,2 B tipicamente | No disponible | llama3.2 | Variantes de olvido evaluadas en open-unlearning | Repositorios de investigación |
 
 No se dispone de comparaciones de rendimiento en benchmarks generales entre estos modelos dentro de la información proporcionada; la única comparación posible es a nivel de configuración, licencia y enfoque.
@@ -108,7 +108,7 @@ No se dispone de comparaciones de rendimiento en benchmarks generales entre esto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_IdkNLL
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_IdkNLL
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning

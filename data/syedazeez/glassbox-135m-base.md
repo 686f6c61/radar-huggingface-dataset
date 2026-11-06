@@ -84,9 +84,9 @@ No se han publicado resultados de benchmarks en la informacion disponible para t
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| glassbox-135m-base | 135,3M | 1024 | Razonamiento aritmetico con scratchpad, telemetria completa | Apache 2.0 | HuggingFace |
-| SmolLM-135M | 135M | 2048 | Modelo de lenguaje general pequeno | Apache 2.0 | HuggingFace |
-| Pythia-160M | 160M | 2048 | Suite de investigacion con checkpoints intermedios | Apache 2.0 | HuggingFace |
+| glassbox-135m-base | 135,3M | 1024 | Razonamiento aritmetico con scratchpad, telemetria completa | Apache 2.0 | Hugging Face |
+| SmolLM-135M | 135M | 2048 | Modelo de lenguaje general pequeno | Apache 2.0 | Hugging Face |
+| Pythia-160M | 160M | 2048 | Suite de investigacion con checkpoints intermedios | Apache 2.0 | Hugging Face |
 
 La comparacion cuantitativa de rendimiento con estos modelos no esta disponible en la informacion proporcionada. La diferencia principal de glassbox-135m-base frente a alternativas de tamano similar es la publicacion exhaustiva de telemetria de entrenamiento y su especializacion en aritmetica verificable, a costa de no ser un modelo de proposito general.
 
@@ -103,7 +103,7 @@ La comparacion cuantitativa de rendimiento con estos modelos no esta disponible 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syedazeez/glassbox-135m-base
+- Modelo en Hugging Face: https://huggingface.co/syedazeez/glassbox-135m-base
 - Dataset de telemetria: https://huggingface.co/datasets/syedazeez/glassbox-135m-telemetry
 - Modelo hermano SFT: https://huggingface.co/syedazeez/glassbox-135m-sft
 - Modelo hermano RL aritmetico: https://huggingface.co/syedazeez/glassbox-135m-rl-arith

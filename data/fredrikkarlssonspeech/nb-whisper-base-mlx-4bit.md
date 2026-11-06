@@ -79,7 +79,7 @@ El modelo MLX 4-bit ofrece la misma capacidad que el original pero con un tamañ
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-base-mlx-4bit)
+- [Modelo en Hugging Face](https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-base-mlx-4bit)
 - [Modelo base NbAiLab/nb-whisper-base](https://huggingface.co/NbAiLab/nb-whisper-base)
 - [Repositorio de MLX Whisper (mlx-examples)](https://github.com/ml-explore/mlx-examples/tree/main/whisper)
 - [Repositorio de OpenAI Whisper](https://github.com/openai/whisper)

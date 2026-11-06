@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wilsonhwh/cnn-transformer-matching` es un prototipo de investigación publicado en HuggingFace por el usuario wilsonhwh. Se trata de una implementación híbrida CNN-Transformer orientada a tareas de *matching* (emparejamiento o puntuación de pares), con un total de 24.832 parámetros, lo que lo sitúa en un orden de magnitud muy inferior al de cualquier modelo de lenguaje actual. El repositorio incluye el código de definición del modelo, un script ejecutable (`predict.py`), un `config.json` con la configuración de arquitectura generada y un `training_args.json` con la receta de experimento por defecto.
+`wilsonhwh/cnn-transformer-matching` es un prototipo de investigación publicado en Hugging Face por el usuario wilsonhwh. Se trata de una implementación híbrida CNN-Transformer orientada a tareas de *matching* (emparejamiento o puntuación de pares), con un total de 24.832 parámetros, lo que lo sitúa en un orden de magnitud muy inferior al de cualquier modelo de lenguaje actual. El repositorio incluye el código de definición del modelo, un script ejecutable (`predict.py`), un `config.json` con la configuración de arquitectura generada y un `training_args.json` con la receta de experimento por defecto.
 
 El propio autor indica explícitamente en la model card que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (*smoke tests*) y no un checkpoint entrenado ni evaluado. No se reclama ninguna puntuación de benchmark y no se documentan idiomas soportados, pipeline ni datos de entrenamiento. La relevancia de esta ficha es, por tanto, limitada: sirve como referencia de un esqueleto reproducible para experimentos de emparejamiento con fusión por co-atención, no como modelo listo para producción.
 
@@ -69,7 +69,7 @@ No disponible. No se conocen alternativas comparables identificables en la infor
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wilsonhwh/cnn-transformer-matching | 24.832 | no disponible | ninguno (el autor no reclama ninguno) | MIT | HuggingFace |
+| wilsonhwh/cnn-transformer-matching | 24.832 | no disponible | ninguno (el autor no reclama ninguno) | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,11 +80,11 @@ No disponible. No se conocen alternativas comparables identificables en la infor
 - Riesgo de alucinación: no aplica en el sentido habitual de un modelo generativo, ya que no hay evidencia de que este prototipo genere texto.
 - Limitaciones de contexto e idioma: no disponible. No se especifica ventana de contexto ni idiomas.
 - Restricciones de licencia: MIT permite uso comercial, modificación y redistribución con atribución y conservación del aviso de copyright. El autor advierte además de que deben revisarse por separado los términos de los datos de origen cuando el repositorio se use con datasets externos.
-- Caveat de producción: al ser una implementación personalizada, las APIs de carga automática necesitan un adaptador explícito; no se puede invocar como un modelo estándar de HuggingFace sin trabajo adicional.
+- Caveat de producción: al ser una implementación personalizada, las APIs de carga automática necesitan un adaptador explícito; no se puede invocar como un modelo estándar de Hugging Face sin trabajo adicional.
 - Cualquier resultado obtenido con un checkpoint futuro entrenado deberá documentarse por separado de los valores por defecto que se distribuyen aquí.
 - El repositorio tiene 0 descargas y 0 *likes* en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wilsonhwh/cnn-transformer-matching
+- Hugging Face: https://huggingface.co/wilsonhwh/cnn-transformer-matching
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios o demos) en la búsqueda web realizada. Los resultados devueltos correspondían al portal del operador francés Orange y no guardan ninguna relación con este modelo.

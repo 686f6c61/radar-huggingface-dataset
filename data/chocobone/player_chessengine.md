@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chocobone/player_chessengine` es un repositorio alojado en HuggingFace por el usuario `chocobone` bajo licencia Apache 2.0. Por el identificador y la ausencia de cualquier documentación técnica en la model card (que se limita a la declaración de licencia), todo apunta a un artefacto experimental orientado a un motor de ajedrez o a un componente de juego, aunque no hay información publicada que lo confirme.
+`chocobone/player_chessengine` es un repositorio alojado en Hugging Face por el usuario `chocobone` bajo licencia Apache 2.0. Por el identificador y la ausencia de cualquier documentación técnica en la model card (que se limita a la declaración de licencia), todo apunta a un artefacto experimental orientado a un motor de ajedrez o a un componente de juego, aunque no hay información publicada que lo confirme.
 
 El repositorio no incluye pipeline declarado, ni idiomas soportados, ni descripción de arquitectura, parámetros, contexto o datos de entrenamiento. Se creó y actualizó el 4 de noviembre de 2026, cuenta con cero descargas y cero likes en el momento de redactar esta ficha, lo que indica que no ha sido validado por la comunidad ni dispone de tracción de uso.
 
@@ -40,7 +40,7 @@ Tampoco hay datos sobre el número de tokens de entrenamiento, la tokenizador em
 
 - Evaluación experimental de motores de ajedrez: si el artefacto contiene un motor de juego, podría emplearse en entornos de análisis de partidas, aunque no hay documentación que describa su interfaz ni su formato de entrada/salida.
 - Investigación sobre artefactos publicados sin model card: el repositorio sirve como caso de estudio sobre la importancia de documentar modelos antes de publicarlos.
-- Pruebas de carga en pipelines de HuggingFace: permite validar flujos de descarga y despliegue con repositorios de metadatos mínimos.
+- Pruebas de carga en pipelines de Hugging Face: permite validar flujos de descarga y despliegue con repositorios de metadatos mínimos.
 - Auditoría de licencias: al declarar Apache 2.0, puede utilizarse como ejemplo en procesos de revisión de cumplimiento, siempre que se verifique el contenido real de los archivos.
 - Docencia sobre buenas prácticas de publicación: ilustra los riesgos de subir artefactos sin pipeline, idiomas ni especificaciones técnicas.
 - Integración condicionada a inspección previa: cualquier uso en producción exigiría descargar los pesos, identificar el formato y ejecutar pruebas de comportamiento antes de comprometerse.
@@ -73,5 +73,5 @@ No disponible. No se ha identificado ningún modelo comparable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chocobone/player_chessengine
+- Repositorio en Hugging Face: https://huggingface.co/chocobone/player_chessengine
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

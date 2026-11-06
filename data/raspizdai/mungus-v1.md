@@ -111,7 +111,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RaspizdAI/mungus-v1
+- Modelo en Hugging Face: https://huggingface.co/RaspizdAI/mungus-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Logo del modelo: https://cdn-uploads.huggingface.co/production/uploads/6a1d885bbd8b36b69d8a8727/dddCwqYQpaaDBhCv3xAfC.png
 - Imagen de resultados Quad-Bench: https://cdn-uploads.huggingface.co/production/uploads/6a1d885bbd8b36b69d8a8727/MeNEPTRG_U5WVuloA9zuJ.png

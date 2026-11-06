@@ -29,7 +29,7 @@ El autor justifica explícitamente el embedding tied en 8 bits: es la causa de q
 
 ## Capacidades
 
-- Generación de texto y conversación con formato instructivo, heredadas del modelo base Qwen2.5-1.5B-Instruct. El pipeline declarado en HuggingFace es text-generation.
+- Generación de texto y conversación con formato instructivo, heredadas del modelo base Qwen2.5-1.5B-Instruct. El pipeline declarado en Hugging Face es text-generation.
 - Ejecución local íntegra en Apple Silicon mediante `mlx_lm`, con el mismo flujo de trabajo que cualquier otro modelo MLX.
 - Capacidades específicas del modelo base (código, matemáticas, tool calling, agentes, multilingüismo) no se detallan en la model card de esta cuantización; hay que remitirse a la ficha de Qwen2.5-1.5B-Instruct para conocerlas.
 - No se documenta ningún modo de razonamiento extendido (thinking mode), soporte de visión ni de audio en la información proporcionada.
@@ -94,7 +94,7 @@ Frente a alternativas de otros formatos (GGUF, GPTQ para CUDA) no hay datos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dfed24/Qwen2.5-1.5B-Instruct-gptq-4bit-mlx
+- Modelo en Hugging Face: https://huggingface.co/dfed24/Qwen2.5-1.5B-Instruct-gptq-4bit-mlx
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Código, scripts y mediciones: https://github.com/dfed25/mlx-gptq
 - Referencia del método GPTQ citada en la model card: Frantar et al., 2022 (sin URL proporcionada en la información disponible)

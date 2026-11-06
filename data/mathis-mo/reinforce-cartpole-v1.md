@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario Mathis-Mo. Se trata de un checkpoint entrenado con el algoritmo REINFORCE (policy gradient con retorno Monte Carlo) para resolver el entorno CartPole-v1, un problema clasico de control con espacio de observacion continuo de 4 dimensiones (posicion y velocidad del carro, angulo y velocidad angular de la barra) y espacio de acciones discreto de 2 valores. No es un modelo de lenguaje: no genera texto, no tiene tokenizador ni ventana de contexto, y su unico artefacto es una politica entrenada.
+Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario Mathis-Mo. Se trata de un checkpoint entrenado con el algoritmo REINFORCE (policy gradient con retorno Monte Carlo) para resolver el entorno CartPole-v1, un problema clasico de control con espacio de observacion continuo de 4 dimensiones (posicion y velocidad del carro, angulo y velocidad angular de la barra) y espacio de acciones discreto de 2 valores. No es un modelo de lenguaje: no genera texto, no tiene tokenizador ni ventana de contexto, y su unico artefacto es una politica entrenada.
 
-El modelo se enmarca en la Unit 4 del Deep Reinforcement Learning Course de HuggingFace, cuyo objetivo es que el alumnado implemente y entrene su propio agente REINFORCE y lo publique en el Hub. Esto explica sus caracteristicas: implementacion propia (tag `custom-implementation`), cero descargas, cero likes y un repositorio que ocupa 0,0 GB, coherente con una red de politica de tamano muy reducido. La model card no incluye informacion sobre topologia de red, hiperparametros de entrenamiento, numero de episodios ni licencia.
+El modelo se enmarca en la Unit 4 del Deep Reinforcement Learning Course de Hugging Face, cuyo objetivo es que el alumnado implemente y entrene su propio agente REINFORCE y lo publique en el Hub. Esto explica sus caracteristicas: implementacion propia (tag `custom-implementation`), cero descargas, cero likes y un repositorio que ocupa 0,0 GB, coherente con una red de politica de tamano muy reducido. La model card no incluye informacion sobre topologia de red, hiperparametros de entrenamiento, numero de episodios ni licencia.
 
 Su relevancia es exclusivamente educativa y de referencia: sirve como linea base reproducible de REINFORCE sobre CartPole-v1 dentro del ecosistema del curso, como ejemplo minimo para validar pipelines de evaluacion de RL en el Hub y como punto de partida para comparaciones con variantes como DQN o PPO. Cualquier uso en produccion real exigiria un entorno distinto y una politica con capacidad muy superior.
 
@@ -46,7 +46,7 @@ No se documentan en la model card el numero de episodios, la tasa de aprendizaje
 - Validacion de integraciones con el Hub: sirve para verificar que el flujo de carga de artefactos, el `model-index` y la metadata de la model card se procesan correctamente en herramientas propias o en el leaderboard del curso.
 - Demostraciones reproducibles en articulos y clases: cualquier explicacion de REINFORCE puede acompanarse de este checkpoint para mostrar el comportamiento final de una politica entrenada sin necesidad de reentrenar.
 - Comparacion de algoritmos en un entorno de juguete: usar este agente como punto de partida frente a implementaciones propias de DQN, A2C o PPO sobre el mismo entorno, para ilustrar diferencias de varianza, estabilidad y numero de muestras necesarias.
-- Referencia docente sobre publicacion de modelos: ilustra el formato minimo de una model card de RL en HuggingFace, incluyendo el bloque `model-index` y las metricas declaradas.
+- Referencia docente sobre publicacion de modelos: ilustra el formato minimo de una model card de RL en Hugging Face, incluyendo el bloque `model-index` y las metricas declaradas.
 
 ## Benchmarks y rendimiento
 
@@ -72,7 +72,7 @@ No se dispone de datos de benchmarks de alternativas en la informacion proporcio
 
 | Modelo | Parametros | Contexto | Rendimiento en CartPole-v1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reinforce-CartPole-v1 (este modelo) | no disponible | no aplica | 500,00 ± 0,00 (declarado, no verificado) | no disponible | HuggingFace Hub |
+| Reinforce-CartPole-v1 (este modelo) | no disponible | no aplica | 500,00 ± 0,00 (declarado, no verificado) | no disponible | Hugging Face Hub |
 | Otros agentes REINFORCE sobre CartPole-v1 | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Agentes DQN sobre CartPole-v1 | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Agentes PPO sobre CartPole-v1 | no disponible | no aplica | no disponible | no disponible | no disponible |
@@ -93,7 +93,7 @@ Nota metodologica: en CartPole-v1 el episodio se trunca a 500 pasos, por lo que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mathis-Mo/Reinforce-CartPole-v1
+- Modelo en Hugging Face: https://huggingface.co/Mathis-Mo/Reinforce-CartPole-v1
 - Unit 4 del Deep Reinforcement Learning Course (referencia citada en la model card): https://huggingface.co/deep-rl-course/unit4/introduction
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Las busquedas devolvieron unicamente paginas principales de Wikipedia (https://www.wikipedia.org/, https://en.wikipedia.org/wiki/Main_Page, https://en.wikipedia.org/wiki/Wikipedia, https://hr.wikipedia.org/wiki/Glavna_stranica, https://de.wikipedia.org/wiki/Wikipedia:Hauptseite), sin relacion con el artefacto.
 - Paper o repositorio de referencia del algoritmo REINFORCE: no disponible en la informacion proporcionada.

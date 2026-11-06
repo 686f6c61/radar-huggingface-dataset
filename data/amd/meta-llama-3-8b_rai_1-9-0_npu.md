@@ -71,7 +71,7 @@ La diferencia principal frente al modelo original de Meta es el formato y el tar
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar las condiciones de Meta en HuggingFace antes de descargar.
+- Acceso restringido: requiere aceptar las condiciones de Meta en Hugging Face antes de descargar.
 - Licencia Llama 3 con restricciones de uso comercial (política de uso aceptable de Meta); revisar los términos antes de desplegar en producción.
 - Solo inglés según los tags; el rendimiento en castellano no está garantizado.
 - Riesgo de alucinación inherente al modelo base Llama 3 8B.
@@ -82,7 +82,7 @@ La diferencia principal frente al modelo original de Meta es el formato y el tar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Meta-Llama-3-8B_rai_1.9.0_npu
+- Hugging Face: https://huggingface.co/amd/Meta-Llama-3-8B_rai_1.9.0_npu
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B
 - Ryzen AI (AMD): https://www.amd.com/en/products/processors/ryzen-ai.html
 - Quark (cuantización AMD): https://quark.amd.com/

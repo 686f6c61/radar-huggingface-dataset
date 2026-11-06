@@ -2,7 +2,7 @@
 
 ## Resumen
 
-prbench9b_specgap_ship_websearch_global_step_420 es un ajuste de Qwen/Qwen3.5-9B publicado por el usuario ddvd233 en HuggingFace. Se trata de un artefacto de investigacion procedente de un experimento de aprendizaje por refuerzo (RL) denominado RRIMed, en su rama *held-out* sobre PRBench Hard (dominios de finanzas y derecho), brazo ARM 19. El modelo ha sido entrenado con el framework verl sobre checkpoints FSDP y posteriormente fusionado a pesos bf16 en safetensors. El repositorio ocupa 18,8 GB y contiene 9.409.813.744 parametros totales (aproximadamente 9,4 mil millones), coherente con un modelo denso en bf16.
+prbench9b_specgap_ship_websearch_global_step_420 es un ajuste de Qwen/Qwen3.5-9B publicado por el usuario ddvd233 en Hugging Face. Se trata de un artefacto de investigacion procedente de un experimento de aprendizaje por refuerzo (RL) denominado RRIMed, en su rama *held-out* sobre PRBench Hard (dominios de finanzas y derecho), brazo ARM 19. El modelo ha sido entrenado con el framework verl sobre checkpoints FSDP y posteriormente fusionado a pesos bf16 en safetensors. El repositorio ocupa 18,8 GB y contiene 9.409.813.744 parametros totales (aproximadamente 9,4 mil millones), coherente con un modelo denso en bf16.
 
 La relevancia de esta ficha es limitada y hay que enmarcarla correctamente: no es un modelo de proposito general ni un producto listo para produccion, sino un checkpoint de investigacion (global step 420) orientado a medir si el entrenamiento con recompensas autogeneradas (*self-evolving rewards*) mejora el rendimiento en tareas evaluadas con rubricas. La model card indica explicitamente que fue entrenado sobre tareas escritas por el propio modelo y evaluado en una unica familia de benchmarks, y advierte de que no debe usarse con fines clinicos.
 
@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks en la informacion disponible para M
 
 | Modelo | Parametros | Contexto | Rendimiento en PRBench Hard | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| prbench9b_specgap_ship_websearch (global step 420) | 9,4 B | no disponible | 0,216 (mejor paso: 0,225) | apache-2.0 | safetensors bf16 en HuggingFace |
-| Qwen/Qwen3.5-9B (modelo base, sin entrenar) | aproximadamente 9,4 B | no disponible | 0,175 (referencia declarada) | no disponible en la informacion proporcionada | HuggingFace |
+| prbench9b_specgap_ship_websearch (global step 420) | 9,4 B | no disponible | 0,216 (mejor paso: 0,225) | apache-2.0 | safetensors bf16 en Hugging Face |
+| Qwen/Qwen3.5-9B (modelo base, sin entrenar) | aproximadamente 9,4 B | no disponible | 0,175 (referencia declarada) | no disponible en la informacion proporcionada | Hugging Face |
 | Alternativas equivalentes de terceros | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada no incluye datos de otros modelos de la misma categoria con resultados en PRBench Hard, contexto o tipos de cuantizacion, por lo que no es posible establecer una comparativa completa con alternativas. El unico contraste documentado es frente al modelo base sin entrenar, con una mejora de 0,041 puntos absolutos en la metrica declarada.
@@ -98,6 +98,6 @@ La informacion proporcionada no incluye datos de otros modelos de la misma categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ddvd233/prbench9b_specgap_ship_websearch_global_step_420
+- Modelo en Hugging Face: https://huggingface.co/ddvd233/prbench9b_specgap_ship_websearch_global_step_420
 - Modelo base referenciado en la model card: https://huggingface.co/Qwen/Qwen3.5-9B
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a papers asociados ni a repositorios de codigo. Los resultados devueltos correspondian a contenido audiovisual sin relacion con este checkpoint.

@@ -103,7 +103,7 @@ Frente a modelos de embeddings de proposito general (por ejemplo, familias de te
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/1of2/bidirlm-omni-2.5b-coreml-w8-ane
+- Repositorio Hugging Face: https://huggingface.co/1of2/bidirlm-omni-2.5b-coreml-w8-ane
 - Modelo base: https://huggingface.co/BidirLM/BidirLM-Omni-2.5B-Embedding
 - Variante Neural Engine y GPU, un programa por funcion: https://huggingface.co/1of2/bidirlm-omni-2.5b-coreml-w8
 - Variante Neural Engine y GPU, un programa por familia: https://huggingface.co/1of2/bidirlm-omni-2.5b-coreml-w8-bundle

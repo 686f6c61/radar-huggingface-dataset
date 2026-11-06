@@ -44,7 +44,7 @@ En cuanto al entrenamiento, la receta por defecto usa el optimizador **novograd*
 - **Prueba de humo de pipelines de entrenamiento**: el script permite verificar que la construcción del modelo, la carga de `config.json` y el paso *forward* funcionan antes de lanzar un entrenamiento real, sin coste de GPU.
 - **Plantilla de implementación para investigación**: los bloques de atención dilatada, fusión con gating, activación mish y normalización scalenorm pueden reutilizarse como referencia en experimentos propios sobre arquitecturas de clasificación.
 - **Verificación de integración en CI**: al tratarse de un modelo de 33.088 parámetros y ~129 KB en FP32, puede incluirse en una suite de integración continua que valide serialización safetensors y compatibilidad con PyTorch sin penalizar el tiempo de *build*.
-- **Docencia y divulgación**: sirve para ilustrar la estructura mínima de un repositorio de modelo (código, configuración, receta de entrenamiento, checkpoint) siguiendo un formato cercano al estándar de HuggingFace.
+- **Docencia y divulgación**: sirve para ilustrar la estructura mínima de un repositorio de modelo (código, configuración, receta de entrenamiento, checkpoint) siguiendo un formato cercano al estándar de Hugging Face.
 - **Baseline de capacidad mínima (*matched-capacity baseline*)**: la propia model card recomienda comparar cualquier resultado futuro contra un baseline de capacidad equivalente; este modelo puede actuar como dicho baseline inferior en tareas de clasificación.
 - **Prototipado rápido de conjuntos de datos etiquetados**: permite validar el *pipeline* de carga y preprocesado de un dataset de clasificación antes de invertir en un modelo mayor.
 - **Reproducibilidad de recetas de optimización**: la combinación novograd + onecycle queda registrada en `training_args.json`, lo que facilita reproducir la misma receta sobre otros modelos para comparar de forma controlada.
@@ -78,6 +78,6 @@ No disponible. El repositorio no publica métricas ni artefactos comparables, y 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/llebedev/study-classification53-2024
+- Repositorio en Hugging Face: https://huggingface.co/llebedev/study-classification53-2024
 - Ficheros incluidos en el repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado en la información proporcionada papers, blogs, repositorios auxiliares ni demos adicionales.

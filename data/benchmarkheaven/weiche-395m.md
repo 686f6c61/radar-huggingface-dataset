@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Weiche-395M es un modelo de decisión local, no generativo, diseñado para enrutar peticiones entre modelos de distintos tamaños dentro del proyecto de código abierto auto-model-router. Lo desarrolla el usuario de HuggingFace benchmarkheaven sobre answerdotai/ModernBERT-large: conserva el encoder de 395 millones de parámetros y le añade cabezas de decisión tipadas que, en una única pasada hacia delante, devuelven la categoría de la tarea, varios escalares de dificultad y riesgo, cuatro probabilidades de necesidad (herramientas, visión, contexto largo, seguimiento) y la probabilidad de éxito de tres niveles de modelo (pequeño, medio, fuerte).
+Weiche-395M es un modelo de decisión local, no generativo, diseñado para enrutar peticiones entre modelos de distintos tamaños dentro del proyecto de código abierto auto-model-router. Lo desarrolla el usuario de Hugging Face benchmarkheaven sobre answerdotai/ModernBERT-large: conserva el encoder de 395 millones de parámetros y le añade cabezas de decisión tipadas que, en una única pasada hacia delante, devuelven la categoría de la tarea, varios escalares de dificultad y riesgo, cuatro probabilidades de necesidad (herramientas, visión, contexto largo, seguimiento) y la probabilidad de éxito de tres niveles de modelo (pequeño, medio, fuerte).
 
 El problema que resuelve es el coste de decidir qué modelo atiende cada turno del usuario. Un router heurístico o un clasificador débil infrautiliza los modelos caros o infravalora los baratos; Weiche aprende esas decisiones a partir de resultados medidos, de modo que la política de enrutado pueda maximizar la calidad recuperada por unidad de coste. Según la model card, alcanza un 88,5 % de exactitud de categoría sobre datos retenidos (n=1134) y un 0,872 de macro-F1, frente al 9,3 % de exactitud del clasificador Laya 421M que usaba el backend local del router.
 
@@ -113,7 +113,7 @@ La correlación de rango de dificultad se calcula contra las etiquetas de rúbri
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| Weiche-395M | 395 M | no disponible | 88,5 % de exactitud de categoria (n=1134), macro-F1 0,872, APGR 0,862 en RouterBench con success heads | apache-2.0 | Publicado en HuggingFace (benchmarkheaven/weiche-395m) |
+| Weiche-395M | 395 M | no disponible | 88,5 % de exactitud de categoria (n=1134), macro-F1 0,872, APGR 0,862 en RouterBench con success heads | apache-2.0 | Publicado en Hugging Face (benchmarkheaven/weiche-395m) |
 | Weiche-0.6B (Qwen3-0.6B) | 0,6 B | no disponible | 88,5 % de exactitud de categoria, macro-F1 0,873, APGR 0,864 en RouterBench con success heads | no disponible | No publicado |
 | Jev 1.13 | no disponible | no disponible | 85,8 % de exactitud de categoria, macro-F1 0,843, APGR 0,850 en RouterBench (con calibracion ajustada) | no disponible | Solo como API hospedada |
 | Laya 421M | 421 M | no disponible | 9,3 % de exactitud de categoria, macro-F1 0,112, APGR 0,812 en RouterBench (con calibracion ajustada) | no disponible | Backend `local` del router |
@@ -138,8 +138,8 @@ Como referencia de categoría, Weiche-395M es un clasificador encoder de 395 M; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/benchmarkheaven/weiche-395m
+- Modelo en Hugging Face: https://huggingface.co/benchmarkheaven/weiche-395m
 - Repositorio GitHub del modelo y scripts de evaluación: https://github.com/fstandhartinger/weiche
 - Proyecto auto-model-router: https://github.com/fstandhartinger/auto-model-router
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-large
-- Scripts de evaluación y JSON de resultados: carpeta `eval/` del repositorio de HuggingFace y del repositorio de GitHub
+- Scripts de evaluación y JSON de resultados: carpeta `eval/` del repositorio de Hugging Face y del repositorio de GitHub

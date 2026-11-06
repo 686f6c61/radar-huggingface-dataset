@@ -87,7 +87,7 @@ La comparación directa con otros modelos entrenados para Wordle no está dispon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/steven0226/qwen2.5-1.5b-wordle-grpo
+- Hugging Face: https://huggingface.co/steven0226/qwen2.5-1.5b-wordle-grpo
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de entrenamiento (GitHub): https://github.com/kuotunyu/agentic-rl-wordle/
 - Commit inmutable de evidencia: https://github.com/kuotunyu/agentic-rl-wordle/commit/1a077a45e309594e5bb43743a8b84d89155595d4
@@ -180,7 +180,7 @@ No se han encontrado otros adaptadores o modelos públicos entrenados específic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/steven0226/qwen2.5-1.5b-wordle-grpo
+- Hugging Face: https://huggingface.co/steven0226/qwen2.5-1.5b-wordle-grpo
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de entrenamiento (GitHub): https://github.com/kuotunyu/agentic-rl-wordle/
 - Commit inmutable de evidencia: https://github.com/kuotunyu/agentic-rl-wordle/commit/1a077a45e309594e5bb43743a8b84d89155595d4

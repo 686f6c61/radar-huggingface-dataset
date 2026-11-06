@@ -2,7 +2,7 @@
 
 ## Resumen
 
-llama-cargo-sft-v7 es un modelo publicado en HuggingFace por el usuario jonas-mo, entrenado mediante ajuste supervisado (SFT) con la libreria TRL de HuggingFace y la pila de Unsloth. La model card generada automaticamente indica que es una version fine-tuned de un modelo base cuya referencia aparece como "None", por lo que no se puede determinar con la informacion disponible sobre que checkpoint original se ha partido. El repositorio ocupa 0,1 GB, un tamano que resulta coherente con un adaptador LoRA o con un modelo de muy pocos parametros, aunque este extremo no se confirma en la documentacion publicada.
+llama-cargo-sft-v7 es un modelo publicado en Hugging Face por el usuario jonas-mo, entrenado mediante ajuste supervisado (SFT) con la libreria TRL de Hugging Face y la pila de Unsloth. La model card generada automaticamente indica que es una version fine-tuned de un modelo base cuya referencia aparece como "None", por lo que no se puede determinar con la informacion disponible sobre que checkpoint original se ha partido. El repositorio ocupa 0,1 GB, un tamano que resulta coherente con un adaptador LoRA o con un modelo de muy pocos parametros, aunque este extremo no se confirma en la documentacion publicada.
 
 El modelo se distribuye en formato safetensors y es compatible con la libreria transformers, ademas de estar etiquetado como endpoints_compatible. No se especifican parametros totales, longitud de contexto, idiomas soportados, licencia ni pipeline de inferencia. La model card se limita a los campos generados por la plantilla de TRL (procedimiento de entrenamiento y versiones de framework), sin seccion de resultados, datos de entrenamiento ni evaluacion.
 
@@ -38,7 +38,7 @@ Las versiones de framework declaradas son TRL 0.24.0, Transformers 5.5.0, PyTorc
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; no se declara ningun idioma.
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Integracion con endpoints: el repo esta etiquetado como endpoints_compatible, lo que en principio permite desplegarlo con la infraestructura de inferencia de HuggingFace.
+- Integracion con endpoints: el repo esta etiquetado como endpoints_compatible, lo que en principio permite desplegarlo con la infraestructura de inferencia de Hugging Face.
 
 ## Casos de uso
 
@@ -48,7 +48,7 @@ Dado que no hay especificaciones de contexto, idioma ni capacidades declaradas, 
 - Evaluacion comparativa de tecnicas de SFT: util como punto de referencia en experimentos con Unsloth y TRL para medir el efecto de distintos datasets o hiperparametros sobre un mismo modelo base.
 - Generacion de respuestas de formato fijo en pipelines internos: al estar en safetensors y ser cargable con transformers, se puede integrar en un script propio para tareas acotadas de reescritura o clasificacion generativa, siempre que se valide antes su calidad.
 - Investigacion sobre sobreajuste en fine-tuning pequenos: el tamano reducido del repositorio lo hace manejable para estudiar degradacion, olvido catastrofico o colapso de diversidad respecto al modelo base.
-- Despliegue en endpoints de HuggingFace para pruebas A/B: la etiqueta endpoints_compatible permite levantar el modelo como endpoint gestionado y compararlo con alternativas en evaluaciones ciegas.
+- Despliegue en endpoints de Hugging Face para pruebas A/B: la etiqueta endpoints_compatible permite levantar el modelo como endpoint gestionado y compararlo con alternativas en evaluaciones ciegas.
 - Base para un SFT posterior: podria actuar como punto de partida para una fase adicional de DPO o de ajuste con datos propios, aunque la ausencia de licencia clara es un obstaculo previo.
 - Inferencia local en hardware modesto: con 0,1 GB de pesos, es probable que quepa en GPUs de consumo e incluso en CPU, lo que facilita experimentos sin infraestructura dedicada. No hay datos de latencia ni throughput.
 
@@ -63,7 +63,7 @@ La model card no incluye tabla de evaluacion, y los resultados de busqueda web o
 - VRAM para inferencia: no disponible de forma fiable, ya que se desconoce el numero de parametros. El repositorio ocupa 0,1 GB, lo que sugiere que se trata de un adaptador o de un modelo muy pequeno, pero no se puede traducir a un requisito de VRAM sin confirmar la naturaleza de los pesos.
 - GPU recomendadas: no disponible.
 - Encaje en GPU de consumo: probablemente si en el caso de ser un adaptador o un modelo de menos de 1-2 mil millones de parametros, pero es una estimacion no verificada; si el repositorio contiene solo un adaptador, es imprescindible disponer tambien del modelo base, que no esta identificado.
-- Opciones de despliegue: transformers (confirmado por la libreria declarada) y endpoints de HuggingFace (por la etiqueta endpoints_compatible). vLLM, llama.cpp, Ollama y TGI no estan documentados para este modelo; llama.cpp y Ollama requeririan una conversion a GGUF no publicada.
+- Opciones de despliegue: transformers (confirmado por la libreria declarada) y endpoints de Hugging Face (por la etiqueta endpoints_compatible). vLLM, llama.cpp, Ollama y TGI no estan documentados para este modelo; llama.cpp y Ollama requeririan una conversion a GGUF no publicada.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ No disponible. La comparativa con alternativas exige conocer el modelo base y el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonas-mo/llama-cargo-sft-v7
+- Modelo en Hugging Face: https://huggingface.co/jonas-mo/llama-cargo-sft-v7
 - TRL (framework de entrenamiento citado por el autor): https://github.com/huggingface/trl
 - Unsloth (etiqueta del repositorio, sin enlace explicito en la model card): no disponible en la informacion proporcionada
 - Paper o blog del modelo: no disponible

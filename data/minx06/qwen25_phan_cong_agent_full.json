@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "minx06/qwen25_phan_cong_agent_full",
+  "slug": "minx06-qwen25_phan_cong_agent_full",
+  "author": "minx06",
+  "url": "https://huggingface.co/minx06/qwen25_phan_cong_agent_full",
+  "created_at": "2026-11-06T09:31:30.000Z",
+  "updated_at": "2026-11-06T09:45:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694030,
+  "storage_human": "15.2 GB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "minx06 (lee) - Hugging Face",
+      "url": "https://huggingface.co/minx06",
+      "snippet": "Recent Activity updated a model28 minutes ago minx06/qwen25_phan_cong_agent_lora published a model38 minutes ago minx06/qwen25_phan_cong_agent_lora published a modelabout 1 hour ago minx06/qwen25_custom View all activity"
+    },
+    {
+      "title": "Qwen2.5-Omni Complete Guide: Alibaba's Multimodal AI Model for ...",
+      "url": "https://crazyrouter.com/en/blog/qwen25-omni-guide-multimodal-ai",
+      "snippet": "\"Complete developer guide to Qwen2.5-Omni — Alibaba's multimodal AI model that processes text, images, audio, and video. Includes API setup, code examples, and pricing.\""
+    }
+  ]
+}

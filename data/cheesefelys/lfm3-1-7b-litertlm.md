@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ú
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | LFM3-1.7B-litertlm | 1,7B | 4096 (bundle; base 256K) | int4 | LFM Open License v1.0 | .litertlm, Android y escritorio |
-| LFM3-1.7B (base, Liquid AI) | 1,7B | 256K | fp16/bf16 (no disponible en ficha) | LFM Open License v1.0 | HuggingFace, PyTorch |
+| LFM3-1.7B (base, Liquid AI) | 1,7B | 256K | fp16/bf16 (no disponible en ficha) | LFM Open License v1.0 | Hugging Face, PyTorch |
 | LFM3-1.7B-litertlm-fp32 | 1,7B | 4096 (bundle) | fp32 | LFM Open License v1.0 | .litertlm, escritorio |
 
 Comparativas de rendimiento con otros modelos pequeños on-device (Gemma, Qwen, Phi) no disponibles: no se han publicado benchmarks comparativos en la informacion proporcionada.

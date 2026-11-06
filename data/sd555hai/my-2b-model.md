@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`sd555hai/my-2b-model` es un modelo de lenguaje publicado por el usuario `sd555hai` en HuggingFace, con un total de 2.213.241.664 parametros (aproximadamente 2,2 mil millones) segun los metadatos de los archivos safetensors. Se trata de un modelo de la categoria de ~2B parametros, un rango pensado para inferencia en hardware de consumo y para despliegues con requisitos de latencia y coste ajustados.
+`sd555hai/my-2b-model` es un modelo de lenguaje publicado por el usuario `sd555hai` en Hugging Face, con un total de 2.213.241.664 parametros (aproximadamente 2,2 mil millones) segun los metadatos de los archivos safetensors. Se trata de un modelo de la categoria de ~2B parametros, un rango pensado para inferencia en hardware de consumo y para despliegues con requisitos de latencia y coste ajustados.
 
 La informacion publica disponible es muy limitada: el repositorio no declara licencia, idiomas soportados ni pipeline de uso, y no se ha publicado ninguna model card con detalles de arquitectura, datos de entrenamiento o resultados de evaluacion. La unica pista sobre la arquitectura es la etiqueta `qwen3_5`, que sugiere una posible relacion con la familia Qwen 3.5, aunque esto no esta confirmado por ninguna fuente oficial del repositorio.
 
@@ -102,6 +102,6 @@ No es posible establecer una comparacion de rendimiento con `my-2b-model` porque
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sd555hai/my-2b-model
+- Repositorio en Hugging Face: https://huggingface.co/sd555hai/my-2b-model
 - Paper, blog, repositorio de codigo o demo: no disponibles.
 - La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los unicos resultados obtenidos trataban sobre Matplotlib, AutoCAD y teoria de lenguajes de programacion, y no guardan relacion con esta ficha.

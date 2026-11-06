@@ -101,7 +101,7 @@ No se han encontrado en la información proporcionada resultados de benchmarks c
 - A temperatura mayor que 0 la aceleración disminuye (aproximadamente 90 tokens/s en código), por lo que el beneficio se concentra en decodificación greedy.
 - Las salidas greedy largas pueden diferir ligeramente de las de una ejecución sin drafter, porque la pasada de verificación redondea de forma distinta a la decodificación token a token.
 - Sin soporte de audio: `sound_config` es nulo.
-- Licencia OpenMDW-1.1, etiquetada como `other` en HuggingFace. Según NVIDIA, el modelo es apto para uso comercial y no comercial, pero conviene revisar los términos del texto completo antes de un despliegue productivo; el uso de los modelos se rige por la licencia de NVIDIA, no por el repositorio de terceros.
+- Licencia OpenMDW-1.1, etiquetada como `other` en Hugging Face. Según NVIDIA, el modelo es apto para uso comercial y no comercial, pero conviene revisar los términos del texto completo antes de un despliegue productivo; el uso de los modelos se rige por la licencia de NVIDIA, no por el repositorio de terceros.
 - Riesgo de alucinación: no disponible en la información proporcionada; al ser un modelo de razonamiento y uso agéntico, debe asumirse la necesidad de verificación de salidas en aplicaciones críticas.
 - Sesgos conocidos: no disponible en la información proporcionada.
 - Longitud de contexto: no disponible; este dato es imprescindible antes de diseñar aplicaciones con ventanas largas.
@@ -110,7 +110,7 @@ No se han encontrado en la información proporcionada resultados de benchmarks c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/txgsync/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-MLX
+- Repositorio en Hugging Face: https://huggingface.co/txgsync/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr-MLX
 - Repositorio hermano sin drafter: https://huggingface.co/txgsync/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-MLX
 - Modelo base oficial: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB
 - Checkpoint del drafter LiLiCorr: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr

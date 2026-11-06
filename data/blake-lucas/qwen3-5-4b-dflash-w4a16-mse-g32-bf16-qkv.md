@@ -32,7 +32,7 @@ La innovación concreta de este release es la mezcla de precisiones. Las seis ca
 - Proposición de tokens especulativos como draft: genera candidatos que el modelo objetivo verifica antes de aceptarlos.
 - Decodificación especulativa con `num_speculative_tokens` configurable (ejemplo probado con 8).
 - Ejecución de capas INT4 con activaciones INT8 dinámicas en runtime (W4A8) mediante el fork Ampere de vLLM.
-- Integración con `compressed-tensors` y con el pipeline `vllm` de HuggingFace.
+- Integración con `compressed-tensors` y con el pipeline `vllm` de Hugging Face.
 - No es un modelo de chat independiente: la model card declara `inference: false` y advierte de que no debe usarse como modelo autónomo.
 - No se documentan capacidades de tool calling, agentes, visión, audio ni modo de razonamiento para este draft.
 - Capacidades multilingües: no disponibles en la información proporcionada.
@@ -98,7 +98,7 @@ La comparación directa con z-lab/Qwen3.5-4B-DFlash en BF16 no está disponible 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blake-lucas/Qwen3.5-4B-DFlash-W4A16-MSE-G32-BF16-QKV
+- Modelo en Hugging Face: https://huggingface.co/blake-lucas/Qwen3.5-4B-DFlash-W4A16-MSE-G32-BF16-QKV
 - Modelo base: https://huggingface.co/z-lab/Qwen3.5-4B-DFlash
 - Target usado en las pruebas: https://huggingface.co/cyankiwi/Qwen3.5-4B-AWQ-4bit
 - Fork de vLLM para Ampere: https://github.com/avesed/vllm-ampere-optimized

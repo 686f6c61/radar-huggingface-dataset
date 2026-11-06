@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `d9beuD/Qwen3.8-27B-oQ6-mtp` es una cuantizacion de un modelo de la familia Qwen, publicada por el usuario d9beuD en HuggingFace. Segun la model card, ha sido cuantizado con la herramienta oQ (oMLX v0.6.0.dev1) en precision mixta, con 6 bits y grupo de 64, y se distribuye en formato MLX safetensors, orientado a su uso en dispositivos Apple Silicon. Sin embargo, la informacion disponible es muy limitada: no se especifica la arquitectura base, el tamano real del modelo original, ni sus capacidades. El nombre sugiere un modelo de 27 mil millones de parametros, pero los pesos reales almacenados en safetensors suman 6.606.172.912 parametros (aproximadamente 6,6 mil millones), lo que resulta contradictorio y podria indicar un error de etiquetado o una variante no documentada. El repositorio no incluye informacion sobre entrenamiento, licencia, idiomas ni benchmarks, por lo que cualquier uso en produccion requiere una evaluacion previa exhaustiva.
+El modelo `d9beuD/Qwen3.8-27B-oQ6-mtp` es una cuantizacion de un modelo de la familia Qwen, publicada por el usuario d9beuD en Hugging Face. Segun la model card, ha sido cuantizado con la herramienta oQ (oMLX v0.6.0.dev1) en precision mixta, con 6 bits y grupo de 64, y se distribuye en formato MLX safetensors, orientado a su uso en dispositivos Apple Silicon. Sin embargo, la informacion disponible es muy limitada: no se especifica la arquitectura base, el tamano real del modelo original, ni sus capacidades. El nombre sugiere un modelo de 27 mil millones de parametros, pero los pesos reales almacenados en safetensors suman 6.606.172.912 parametros (aproximadamente 6,6 mil millones), lo que resulta contradictorio y podria indicar un error de etiquetado o una variante no documentada. El repositorio no incluye informacion sobre entrenamiento, licencia, idiomas ni benchmarks, por lo que cualquier uso en produccion requiere una evaluacion previa exhaustiva.
 
 ## Especificaciones tecnicas
 
@@ -63,5 +63,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/d9beuD/Qwen3.8-27B-oQ6-mtp
+- Repositorio Hugging Face: https://huggingface.co/d9beuD/Qwen3.8-27B-oQ6-mtp
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx

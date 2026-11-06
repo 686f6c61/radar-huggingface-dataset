@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kylemartineziah/classification-2023` es un repositorio de HuggingFace que contiene una implementación en PyTorch de una arquitectura MobileViT configurada en escala "xlarge" para tareas de clasificación. Lo publica el usuario kylemartineziah y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la model card indica explícitamente que `model.safetensors` es únicamente una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de benchmark.
+`kylemartineziah/classification-2023` es un repositorio de Hugging Face que contiene una implementación en PyTorch de una arquitectura MobileViT configurada en escala "xlarge" para tareas de clasificación. Lo publica el usuario kylemartineziah y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la model card indica explícitamente que `model.safetensors` es únicamente una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de benchmark.
 
 El interés del repositorio es, por tanto, como punto de partida reproducible para experimentación con arquitecturas MobileViT, no como modelo listo para producción. Incluye el código (`predict.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`), lo que permite inspeccionar y reutilizar la implementación.
 
@@ -76,4 +76,4 @@ No disponible. No se han proporcionado datos de rendimiento ni especificaciones 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kylemartineziah/classification-2023
+- Repositorio Hugging Face: https://huggingface.co/kylemartineziah/classification-2023

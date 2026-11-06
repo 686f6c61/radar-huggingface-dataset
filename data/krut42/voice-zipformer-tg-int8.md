@@ -99,7 +99,7 @@ No se dispone en la informacion proporcionada de datos comparativos con otros mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/krut42/voice-zipformer-tg-int8
+- Modelo en Hugging Face: https://huggingface.co/krut42/voice-zipformer-tg-int8
 - Modelo base: https://huggingface.co/alphacep/vosk-model-tg
 - Dataset de entrenamiento: https://huggingface.co/datasets/Peacockery/tajik-asr-corpus-v3
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

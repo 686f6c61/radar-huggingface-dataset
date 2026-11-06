@@ -74,7 +74,7 @@ No disponible. Este repositorio no es un modelo, sino un conjunto de vectores de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/skafte/mako-ablations
+- Repositorio en Hugging Face: https://huggingface.co/skafte/mako-ablations
 - Herramienta mako: https://github.com/jhanssen/mako
 - GGUF Maya de GLM-5.3-Flash: https://huggingface.co/peasantsmith/GLM-5.3-Flash-Maya-GGUF
 - GGUF Maya de DeepSeek-V4.1-Flash-1017: https://huggingface.co/peasantsmith/DeepSeek-V4.1-Flash-1017-Maya-GGUF

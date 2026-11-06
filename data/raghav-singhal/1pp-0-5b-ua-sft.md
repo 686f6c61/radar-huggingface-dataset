@@ -43,7 +43,7 @@ Posteriormente, el ajuste fino supervisado (SFT) se realizó durante una época 
 - Evaluación de la pérdida de validación en diferentes segmentos: los investigadores pueden usar las métricas reportadas (loss de validación en texto de asistente, usuario y documento) como referencia para comparar con sus propias implementaciones.
 - Análisis de la transferencia de conocimiento entre dominios: al estar entrenado sobre documentos reescritos como conversaciones, se puede estudiar cómo el modelo generaliza a tareas conversacionales frente a modelos entrenados con documentos originales.
 - Desarrollo de técnicas de ajuste fino supervisado: el modelo SFT puede servir como punto de partida para experimentos de fine-tuning adicionales, dado que su licencia Apache 2.0 permite uso comercial y modificaciones.
-- Verificación de la reproducibilidad de pesos: la model card incluye una verificación de que los pesos de HuggingFace coinciden con el checkpoint de Megatron, lo que lo hace útil para validar pipelines de conversión de formatos.
+- Verificación de la reproducibilidad de pesos: la model card incluye una verificación de que los pesos de Hugging Face coinciden con el checkpoint de Megatron, lo que lo hace útil para validar pipelines de conversión de formatos.
 
 ## Benchmarks y rendimiento
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 | Validación de preentrenamiento (2.433 documentos held-out) | 1.572 | 1.462 | 3.298 |
 | Validación de SFT (1.998 conversaciones held-out, solo tokens de asistente) | 1.996 | - | - |
 
-Además, se verificó que la pérdida de SFT calculada con los pesos de HuggingFace coincide exactamente con la referencia de Megatron (1.9960 vs 1.9960, diferencia absoluta 0.0000).
+Además, se verificó que la pérdida de SFT calculada con los pesos de Hugging Face coincide exactamente con la referencia de Megatron (1.9960 vs 1.9960, diferencia absoluta 0.0000).
 
 ## Requisitos de hardware
 
@@ -80,7 +80,7 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.5b-ua-sft
+- Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.5b-ua-sft
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Training logs (preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training
 - Training logs (SFT): https://wandb.ai/raghav_singhal/1pp-sft

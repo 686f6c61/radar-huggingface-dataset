@@ -4,7 +4,7 @@
 
 El repositorio `michaelmartinmav/prompt-engineering-survey` no es un modelo de lenguaje entrenado, sino un conjunto estructurado de notas de investigación sobre ingeniería de prompts. Su propio README lo declara de forma explícita: no contiene código publicado, ni ablaciones completadas, ni mejoras de benchmark, ni un checkpoint entrenado. El único artefacto principal es `reading.md`, acompañado de la documentación del repositorio.
 
-La relevancia de esta ficha es, por tanto, metodológica más que técnica: sirve para documentar un caso de repositorio alojado en HuggingFace que se presenta con etiquetas propias de modelos (`safetensors`, `transformer`) pero cuyo contenido es textual. Los metadatos de HuggingFace indican 16.576 parámetros y un tamaño de repositorio de 0,0 GB, cifra incompatible con un transformer funcional y coherente con un fichero de pesos residual, vacío o mal etiquetado.
+La relevancia de esta ficha es, por tanto, metodológica más que técnica: sirve para documentar un caso de repositorio alojado en Hugging Face que se presenta con etiquetas propias de modelos (`safetensors`, `transformer`) pero cuyo contenido es textual. Los metadatos de Hugging Face indican 16.576 parámetros y un tamaño de repositorio de 0,0 GB, cifra incompatible con un transformer funcional y coherente con un fichero de pesos residual, vacío o mal etiquetado.
 
 Se registran 0 descargas y 0 "likes", el pipeline no está declarado y los idiomas soportados no están disponibles. Cualquier evaluación de capacidades, benchmarks o despliegue en producción es, por tanto, no aplicable a este artefacto: no hay pesos que ejecutar ni API que invocar.
 
@@ -12,7 +12,7 @@ Se registran 0 descargas y 0 "likes", el pipeline no está declarado y los idiom
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No aplicable; el README describe notas de investigación, no una arquitectura de red. Etiquetado como `transformer` en los tags de HuggingFace, sin corroboración en la model card |
+| Arquitectura | No aplicable; el README describe notas de investigación, no una arquitectura de red. Etiquetado como `transformer` en los tags de Hugging Face, sin corroboración en la model card |
 | Parametros totales | 16.576 (dato de los metadatos de safetensors; no verificable y anómalo para un transformer operativo) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -44,7 +44,7 @@ El artefacto sí ofrece, como material documental, una estructura de trabajo rep
 - Revisión bibliográfica de ingeniería de prompts: `reading.md` recopila referencias temáticas que pueden usarse como punto de partida para localizar y verificar literatura primaria antes de diseñar un estudio propio.
 - Diseño de protocolos de evaluación: la mención a benchmarks públicos y a líneas base emparejadas permite reutilizar el esquema para definir métricas, tareas y controles en un experimento de prompting.
 - Auditoría de reproducibilidad: la exigencia declarada de incluir versiones de dataset, comandos, semillas, hardware y registros en crudo si se añaden resultados puede adoptarse como checklist interna de un equipo de investigación.
-- Análisis de gobernanza de repositorios: este repositorio es un caso de estudio útil sobre etiquetado incorrecto en HuggingFace, donde un conjunto de notas textuales aparece con tags `safetensors` y `transformer` y un recuento de parámetros que sugiere un modelo.
+- Análisis de gobernanza de repositorios: este repositorio es un caso de estudio útil sobre etiquetado incorrecto en Hugging Face, donde un conjunto de notas textuales aparece con tags `safetensors` y `transformer` y un recuento de parámetros que sugiere un modelo.
 - Formación interna: el documento puede usarse en sesiones de onboarding para explicar la diferencia entre una hipótesis de investigación y un resultado experimental, y por qué esa distinción importa antes de publicar afirmaciones de rendimiento.
 
 ## Benchmarks y rendimiento
@@ -72,7 +72,7 @@ No disponible. Este artefacto no pertenece a ninguna categoría de modelos compa
 | Contexto | No disponible | No disponible |
 | Rendimiento | No se declaran resultados | No disponible |
 | Licencia | CC-BY-4.0 | No disponible |
-| Disponibilidad | Pública en HuggingFace, 0 descargas | No disponible |
+| Disponibilidad | Pública en Hugging Face, 0 descargas | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ No disponible. Este artefacto no pertenece a ninguna categoría de modelos compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/michaelmartinmav/prompt-engineering-survey
+- Repositorio en Hugging Face: https://huggingface.co/michaelmartinmav/prompt-engineering-survey
 - Ficheros declarados por el autor: `reading.md` (artefacto principal) y `README.md` (documentación), dentro del propio repositorio.
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.
 - Resultados de la búsqueda web: sin fuentes relevantes; los enlaces devueltos correspondían a páginas generales de YouTube (https://www.youtube.com/feed/homepage, https://music.youtube.com/, https://play.google.com/store/apps/details?id=com.google.android.youtube) y no guardan relación con el modelo.

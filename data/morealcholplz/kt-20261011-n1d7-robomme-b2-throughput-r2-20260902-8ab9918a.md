@@ -79,7 +79,7 @@ No disponible. No se han identificado modelos comparables a partir de la informa
 
 - No es un modelo utilizable: la model card lo describe como snapshot archivístico, no como modelo estándar listo para inferencia.
 - No se realizó entrenamiento ni inferencia durante la creación del backup, por lo que no existe ninguna evaluación asociada.
-- Riesgo de confusión: el repositorio aparece etiquetado con `pipeline: robotics` en HuggingFace, lo que podría llevar a interpretarlo erróneamente como un modelo de robótica desplegable.
+- Riesgo de confusión: el repositorio aparece etiquetado con `pipeline: robotics` en Hugging Face, lo que podría llevar a interpretarlo erróneamente como un modelo de robótica desplegable.
 - Licencia no declarada en el repositorio. La model card advierte de que los derivados de GR00T siguen sujetos a la licencia de investigación y evaluación de NVIDIA, lo que probablemente excluye el uso comercial, y de que pi/openpi y componentes de terceros mantienen sus propios términos. Es imprescindible verificar cada componente antes de cualquier uso.
 - Contenido incompleto por diseño: se excluyeron credenciales, enlaces externos, cachés y ficheros opacos de seguimiento o perfilado. La restauración del payload no reproduce el entorno original al completo.
 - Dependencia de una ruta absoluta concreta (`/home/work/mntvol/robottt/n1d7-robomme-b2-throughput-r2-20260902`): restaurar en otra ubicación puede romper referencias internas del experimento.
@@ -89,5 +89,5 @@ No disponible. No se han identificado modelos comparables a partir de la informa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-b2-throughput-r2-20260902-8ab9918a
+- Repositorio en Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-b2-throughput-r2-20260902-8ab9918a
 - No se han encontrado enlaces relevantes en la búsqueda web. Los resultados recuperados corresponden a sitios de compraventa de moneda virtual del videojuego Dofus (iflamme.com, lekamas.fr, igv.com, tryandjudge.com, kamasitas.fr) y no guardan relación alguna con el modelo, su arquitectura ni su entrenamiento.

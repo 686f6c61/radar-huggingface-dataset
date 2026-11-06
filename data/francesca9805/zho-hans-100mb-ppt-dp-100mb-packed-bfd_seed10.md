@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfd_seed10` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/zho_hans_100mb`, publicado por el usuario francesca9805 en HuggingFace. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones), distribuidos en un repositorio de 0,3 GB en formato safetensors. El modelo base pertenece al proyecto Goldfish, que entrena modelos monolingues de ~100 MB de corpus para cientos de idiomas; en este caso, el identificador `zho_hans` indica chino simplificado.
+El modelo `francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfd_seed10` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/zho_hans_100mb`, publicado por el usuario francesca9805 en Hugging Face. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones), distribuidos en un repositorio de 0,3 GB en formato safetensors. El modelo base pertenece al proyecto Goldfish, que entrena modelos monolingues de ~100 MB de corpus para cientos de idiomas; en este caso, el identificador `zho_hans` indica chino simplificado.
 
 El problema que resuelve es acotado: se trata de un ajuste SFT sobre un corpus empaquetado (`packed`) con una semilla concreta (`seed10`), probablemente parte de un barrido experimental de tokenizadores y datos llevado a cabo por el autor (el enlace de Weights & Biases apunta a un proyecto llamado `new-tokenizers` de la Universidad de Groningen). No es un modelo de proposito general ni compite con modelos multilingues grandes: es una pieza de investigacion reproducible dentro de una linea de experimentos sobre modelos pequenos y multilingues.
 
@@ -49,7 +49,7 @@ El entrenamiento consistio en un ajuste fino con aprendizaje supervisado (SFT) u
 - Ablaciones de tokenizadores: dado el contexto del proyecto de Weights & Biases (`new-tokenizers`), encaja en experimentos que comparan vocabularios y esquemas de tokenizacion para chino.
 - Generacion de texto de relleno en pruebas de infraestructura: su tamano de 0,3 GB permite desplegarlo en entornos de prueba para validar pipelines de inferencia sin consumir recursos significativos.
 - Fine-tuning posterior como banco de pruebas: sirve como punto de partida rapido para experimentos de SFT adicional con TRL sobre otros datasets en chino, a bajo coste de computo.
-- Docencia y aprendizaje: adecuado para demostrar de extremo a extremo el flujo de entrenamiento SFT con TRL y su publicacion en HuggingFace, dado el bajo coste de entrenamiento de un modelo de 124,8 M de parametros.
+- Docencia y aprendizaje: adecuado para demostrar de extremo a extremo el flujo de entrenamiento SFT con TRL y su publicacion en Hugging Face, dado el bajo coste de entrenamiento de un modelo de 124,8 M de parametros.
 - Evaluacion de sesgos en corpus pequenos en chino: util para medir que tipo de contenido aprende un modelo con solo 100 MB de datos.
 
 ## Benchmarks y rendimiento
@@ -65,15 +65,15 @@ La model card no incluye metricas de evaluacion (perplejidad, MMLU, HumanEval, G
 - VRAM estimada en cuantizacion de 8 bits: aproximadamente 0,125 GB de pesos; en 4 bits, aproximadamente 0,062 GB.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente. Una RTX 3060, RTX 4060, RTX 4090 o incluso una GPU integrada con suficiente memoria unificada pueden ejecutarlo. En hardware de centro de datos (A100, H100) el modelo queda enormemente infrautilizado; su uso alli solo tendria sentido en lotes masivos.
 - Cabe holgadamente en GPU consumer: si, en practicamente cualquier GPU con al menos 2 GB de VRAM, y tambien en CPU.
-- Opciones de despliegue: transformers (pipeline de text-generation, tal como documenta la model card), text-generation-inference (el repositorio incluye el tag `text-generation-inference` y `endpoints_compatible`), y en principio llama.cpp u Ollama si se convierte a GGUF, aunque no se publican pesos GGUF en el repositorio. vLLM y TGI son viables dado el formato safetensors y la compatibilidad declarada con el endpoint de HuggingFace.
+- Opciones de despliegue: transformers (pipeline de text-generation, tal como documenta la model card), text-generation-inference (el repositorio incluye el tag `text-generation-inference` y `endpoints_compatible`), y en principio llama.cpp u Ollama si se convierte a GGUF, aunque no se publican pesos GGUF en el repositorio. vLLM y TGI son viables dado el formato safetensors y la compatibilidad declarada con el endpoint de Hugging Face.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfd_seed10 | 124,8 M | no disponible | chino simplificado (inferido del nombre) | no disponible | HuggingFace, safetensors | sin benchmarks publicados |
-| goldfish-models/zho_hans_100mb (modelo base) | no disponible en la informacion proporcionada | no disponible | chino simplificado | no disponible | HuggingFace | sin datos en esta ficha |
+| francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfd_seed10 | 124,8 M | no disponible | chino simplificado (inferido del nombre) | no disponible | Hugging Face, safetensors | sin benchmarks publicados |
+| goldfish-models/zho_hans_100mb (modelo base) | no disponible en la informacion proporcionada | no disponible | chino simplificado | no disponible | Hugging Face | sin datos en esta ficha |
 | GPT-2 small (referencia arquitectonica) | 124 M | 1024 tokens | principalmente ingles | MIT (version original de OpenAI) | ampliamente disponible | benchmarks historicos publicos, no comparables directamente por diferencia de idioma y datos |
 
 No se dispone de informacion suficiente para establecer una comparativa de rendimiento con alternativas de la misma categoria. La unica comparacion fiable es arquitectonica y de tamano: el modelo es practicamente identico en parametros a GPT-2 small, pero entrenado sobre un corpus muy distinto y mucho menor.
@@ -84,7 +84,7 @@ No se dispone de informacion suficiente para establecer una comparativa de rendi
 - Riesgo elevado de alucinacion: con 124,8 M de parametros y datos escasos, el modelo no tiene capacidad de almacenar conocimiento factual fiable.
 - Idiomas: no hay declaracion explicita de idiomas en la model card; el uso fuera del chino simplificado probablemente produzca resultados degradados.
 - Longitud de contexto: no documentada. Los modelos GPT-2 de esta escala suelen operar con ventanas de 1024 tokens, pero este dato no esta confirmado para este modelo.
-- Licencia ambigua: la model card incluye `licence: license` sin especificar terminos, y la informacion de HuggingFace marca la licencia como no disponible. No se puede asumir permiso de uso comercial.
+- Licencia ambigua: la model card incluye `licence: license` sin especificar terminos, y la informacion de Hugging Face marca la licencia como no disponible. No se puede asumir permiso de uso comercial.
 - Modelo sin adopcion: 0 descargas y 0 likes en el momento de la consulta, sin validacion externa por parte de la comunidad.
 - Sesgos: no evaluados. Un corpus pequeno y no documentado puede reproducir sesgos de la fuente de datos sin que exista ninguna mitigacion declarada.
 - Sin garantias de calidad para produccion: no hay evaluaciones, ni model card detallada, ni documentacion de la composicion del dataset de ajuste.
@@ -93,7 +93,7 @@ No se dispone de informacion suficiente para establecer una comparativa de rendi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/zho_hans_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/znzck3ac

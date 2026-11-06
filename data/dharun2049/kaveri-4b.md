@@ -74,6 +74,6 @@ No se dispone de datos de rendimiento comparativo. Kaveri-4B es mas pequeno que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dharun2049/Kaveri-4B
+- Modelo en Hugging Face: https://huggingface.co/dharun2049/Kaveri-4B
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B (enlace inferido, no verificado)
 - Dataset NVIDIA OpenCodeInstruct: no se ha encontrado enlace directo en la informacion proporcionada.

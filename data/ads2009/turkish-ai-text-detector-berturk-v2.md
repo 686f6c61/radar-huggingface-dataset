@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SENTINEL-AI TR v2 es un clasificador binario de texto en turco disenado para distinguir entre texto escrito por humanos (etiqueta 0) y texto generado por inteligencia artificial (etiqueta 1). Lo publica el usuario ads2009 en HuggingFace y se construye mediante fine-tuning del modelo base dbmdz/bert-base-turkish-cased, un BERT en variante cased entrenado especificamente para turco.
+SENTINEL-AI TR v2 es un clasificador binario de texto en turco disenado para distinguir entre texto escrito por humanos (etiqueta 0) y texto generado por inteligencia artificial (etiqueta 1). Lo publica el usuario ads2009 en Hugging Face y se construye mediante fine-tuning del modelo base dbmdz/bert-base-turkish-cased, un BERT en variante cased entrenado especificamente para turco.
 
 El modelo resuelve un problema acotado pero creciente: la deteccion de contenido sintetico en una lengua con morfologia aglutinante y relativamente pocos recursos de deteccion respecto al ingles. Con 110,6 millones de parametros y un repositorio de 0,4 GB, es un modelo compacto pensado para inferencia rapida y despliegue en CPU o GPU de gama baja, no para generacion.
 
@@ -57,15 +57,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - En FP16/BF16: alrededor de 0,22 GB de pesos, con margen amplio en GPUs de 4 GB o menos.
 - Cabe en GPU consumer: si, en cualquier tarjeta moderna (RTX 3060, RTX 4060, RTX 4090, e incluso iGPUs con suficiente memoria compartida).
 - Inferencia en CPU: viable para lotes moderados; el cuello de botella sera el throughput del procesador, no la memoria.
-- Opciones de despliegue: HuggingFace Transformers (pipeline de text-classification), ONNX Runtime, TorchScript, y servidores de inferencia compatibles con modelos de clasificacion (por ejemplo, Text Embeddings Inference no aplica; si aplican frameworks genericos como FastAPI + Transformers o BentoML). No se documenta soporte nativo en vLLM, llama.cpp ni Ollama, que estan orientados a modelos generativos.
+- Opciones de despliegue: Hugging Face Transformers (pipeline de text-classification), ONNX Runtime, TorchScript, y servidores de inferencia compatibles con modelos de clasificacion (por ejemplo, Text Embeddings Inference no aplica; si aplican frameworks genericos como FastAPI + Transformers o BentoML). No se documenta soporte nativo en vLLM, llama.cpp ni Ollama, que estan orientados a modelos generativos.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ads2009/turkish-ai-text-detector-berturk-v2 | 110,6 M | no disponible (base BERT, hasta 512 tokens) | Turco | Apache 2.0 | HuggingFace, 44 descargas |
-| dbmdz/bert-base-turkish-cased | ~110 M | 512 tokens | Turco | no disponible en esta ficha | HuggingFace, modelo base sin cabeza de deteccion |
+| ads2009/turkish-ai-text-detector-berturk-v2 | 110,6 M | no disponible (base BERT, hasta 512 tokens) | Turco | Apache 2.0 | Hugging Face, 44 descargas |
+| dbmdz/bert-base-turkish-cased | ~110 M | 512 tokens | Turco | no disponible en esta ficha | Hugging Face, modelo base sin cabeza de deteccion |
 | Detectores multilingues genericos (p. ej. variantes de OpenAI detector o clasificadores XLM-R) | variable | variable | Multiples | variable | Disponibles, pero sin evaluacion publica especifica en turco |
 
 La comparacion cuantitativa de rendimiento no esta disponible: ninguno de los datos proporcionados incluye metricas del modelo ni de alternativas en turco. La ventaja principal frente al modelo base es la cabeza de clasificacion especifica; frente a detectores multilingues, la especializacion en turco y la licencia permisiva.
@@ -84,7 +84,7 @@ La comparacion cuantitativa de rendimiento no esta disponible: ninguno de los da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ads2009/turkish-ai-text-detector-berturk-v2
+- Modelo en Hugging Face: https://huggingface.co/ads2009/turkish-ai-text-detector-berturk-v2
 - Modelo base: https://huggingface.co/dbmdz/bert-base-turkish-cased
 - Archivo de metadatos de normalizacion: `sentinel_meta.json` (referenciado en la model card, dentro del repositorio del modelo)
 - Paper, blog o repositorio adicional: no disponible

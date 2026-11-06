@@ -81,7 +81,7 @@ No se dispone de información suficiente para una comparativa cuantitativa con o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jannchie/silva-qwen
+- Modelo en Hugging Face: https://huggingface.co/Jannchie/silva-qwen
 - Repositorio GitHub: https://github.com/Jannchie/silva
 - Demo interactiva: https://huggingface.co/spaces/Jannchie/silva-aesthetic-demo
 - Modelo base SigLIP2: https://huggingface.co/google/siglip2-so400m-patch14-384

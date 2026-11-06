@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EventGPT es un transformer generativo preentrenado para secuencias de eventos bancarios, desarrollado por Denis Burakov (usuario `deburky` en HuggingFace). El modelo lee el historial de transacciones y otros eventos de un cliente, predice el siguiente evento token a token y produce un embedding por cliente y punto temporal. Está preentrenado sobre el dataset público Multimodal Banking Dataset (MBD-mini), que contiene 100.224 clientes, 38,8 millones de transacciones y 66,3 millones de pings de geolocalización.
+EventGPT es un transformer generativo preentrenado para secuencias de eventos bancarios, desarrollado por Denis Burakov (usuario `deburky` en Hugging Face). El modelo lee el historial de transacciones y otros eventos de un cliente, predice el siguiente evento token a token y produce un embedding por cliente y punto temporal. Está preentrenado sobre el dataset público Multimodal Banking Dataset (MBD-mini), que contiene 100.224 clientes, 38,8 millones de transacciones y 66,3 millones de pings de geolocalización.
 
 La arquitectura es jerárquica: un codificador de eventos convierte los tokens de un evento (nombre, tipo, bin de importe, intervalo temporal y otros campos) en un vector; un decodificador causal de historial procesa esos vectores con posiciones rotatorias derivadas del tiempo transcurrido desde el primer evento del cliente; y un decodificador de tokens predice los tokens del siguiente evento a partir del estado del historial. Los pesos publicados tienen 23 millones de parámetros (ancho 384) y se entrenaron sobre 655 millones de tokens.
 
@@ -88,7 +88,7 @@ Puntuación zero-shot (sin etiquetas) sobre cinco objetivos de "primera transacc
 
 | Modelo | Parámetros | Contexto | ROC-AUC medio (fold 0) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EventGPT | 23 M | no disponible | 0,786 a 0,807 según variante | CC BY 4.0 | Pesos en HuggingFace (fold 0) |
+| EventGPT | 23 M | no disponible | 0,786 a 0,807 según variante | CC BY 4.0 | Pesos en Hugging Face (fold 0) |
 | CatBoost sobre características de ingeniería | no disponible | no aplica | 0,816 | no disponible | Referencia del artículo |
 | CatBoost sobre recuentos de tokens | no disponible | no aplica | 0,803 | no disponible | Referencia del artículo |
 | Ensemble EventGPT + características de ingeniería | 23 M + CatBoost | no aplica | 0,830 | CC BY 4.0 (parte EventGPT) | Reconstruible con los pesos publicados |
@@ -109,7 +109,7 @@ No se dispone en la información proporcionada de otros modelos fundacionales de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deburky/EventGPT
+- Modelo en Hugging Face: https://huggingface.co/deburky/EventGPT
 - Artículo: https://arxiv.org/abs/2611.03302
 - Código: https://github.com/deburky/EventGPT
 - Dataset de preentrenamiento: ai-lab/MBD-mini (referenciado en la model card; no se proporciona URL directa)

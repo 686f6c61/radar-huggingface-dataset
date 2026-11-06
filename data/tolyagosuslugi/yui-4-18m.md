@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TolyaGosuslugi/yui-4.18M es un modelo de lenguaje de escala minima publicado en HuggingFace por el usuario TolyaGosuslugi. Con 4.178.240 parametros totales (aproximadamente 4,18 millones), se situa varios ordenes de magnitud por debajo de los modelos conversacionales habituales, que rondan entre 1.000 y 400.000 millones de parametros. Los tags del repositorio indican que esta etiquetado como `llama`, `safetensors`, `gguf`, `conversational` y `endpoints_compatible`, con licencia MIT.
+TolyaGosuslugi/yui-4.18M es un modelo de lenguaje de escala minima publicado en Hugging Face por el usuario TolyaGosuslugi. Con 4.178.240 parametros totales (aproximadamente 4,18 millones), se situa varios ordenes de magnitud por debajo de los modelos conversacionales habituales, que rondan entre 1.000 y 400.000 millones de parametros. Los tags del repositorio indican que esta etiquetado como `llama`, `safetensors`, `gguf`, `conversational` y `endpoints_compatible`, con licencia MIT.
 
 El modelo resuelve, en la practica, un nicho muy concreto: servir como pieza de pruebas para pipelines de inferencia, validacion de formatos de pesos y ejercicios didacticos sobre arquitecturas transformer. No hay evidencia de que se trate de un modelo destinado a produccion ni de que se haya evaluado en benchmarks publicos: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, y la model card se limita a la linea `license: mit`, sin documentacion adicional.
 
@@ -40,7 +40,7 @@ La informacion disponible no permite confirmar capacidades concretas. A partir d
 - Capacidades de agente y razonamiento multi-paso: improbables a esta escala; no hay evidencia que las respalde.
 - Capacidades multilingues: no disponible; no se declara ningun idioma en la ficha.
 - Capacidades especiales (modo thinking, vision, audio): no disponible; no hay ninguna declarada.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que la estructura del repositorio sigue el formato esperado por los Inference Endpoints de HuggingFace, lo que es una caracteristica de empaquetado, no una capacidad del modelo.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que la estructura del repositorio sigue el formato esperado por los Inference Endpoints de Hugging Face, lo que es una caracteristica de empaquetado, no una capacidad del modelo.
 
 ## Casos de uso
 
@@ -78,11 +78,11 @@ No hay datos de rendimiento del modelo analizado, por lo que la comparacion se l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TolyaGosuslugi/yui-4.18M | 4.178.240 | No disponible | MIT | HuggingFace |
-| TinyStories-1M | ~1 M | No verificado | No verificado | HuggingFace |
-| TinyStories-33M | ~33 M | No verificado | No verificado | HuggingFace |
-| SmolLM-135M | ~135 M | No verificado | Apache 2.0 (no verificado) | HuggingFace |
-| TinyLlama-1.1B | ~1,1 B | No verificado | Apache 2.0 (no verificado) | HuggingFace |
+| TolyaGosuslugi/yui-4.18M | 4.178.240 | No disponible | MIT | Hugging Face |
+| TinyStories-1M | ~1 M | No verificado | No verificado | Hugging Face |
+| TinyStories-33M | ~33 M | No verificado | No verificado | Hugging Face |
+| SmolLM-135M | ~135 M | No verificado | Apache 2.0 (no verificado) | Hugging Face |
+| TinyLlama-1.1B | ~1,1 B | No verificado | Apache 2.0 (no verificado) | Hugging Face |
 
 El modelo comparado es el mas pequeno de la tabla. No se dispone de datos que permitan afirmar que supera o es superado por ninguno de ellos en calidad de generacion.
 
@@ -100,7 +100,7 @@ El modelo comparado es el mas pequeno de la tabla. No se dispone de datos que pe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TolyaGosuslugi/yui-4.18M
+- Hugging Face: https://huggingface.co/TolyaGosuslugi/yui-4.18M
 - Resultados de busqueda web no relacionados con el modelo (modelos de imagen con el nombre "yui", incluidos por completitud):
   - https://tensorhub.art/models/886492416004107308
   - https://pixai.art/en/model/1792730872704391327

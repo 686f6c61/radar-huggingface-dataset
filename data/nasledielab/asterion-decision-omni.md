@@ -70,7 +70,7 @@ No se dispone de datos verificables de especificaciones, contexto, rendimiento n
 
 | Modelo | Categoria | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Asterion-Decision-Omni | Clasificacion multi-tarea y routing | no disponible (repo 0,2 GB) | 512 bytes UTF-8 | Sin benchmarks publicados | no disponible | HuggingFace (safetensors) |
+| Asterion-Decision-Omni | Clasificacion multi-tarea y routing | no disponible (repo 0,2 GB) | 512 bytes UTF-8 | Sin benchmarks publicados | no disponible | Hugging Face (safetensors) |
 | Llama Guard (familia) | Guardrails / moderacion | no verificado | no verificado | no verificado | no verificado | no verificado |
 | RouteLLM y enrutadores similares | Routing de consultas | no verificado | no verificado | no verificado | no verificado | no verificado |
 | Clasificadores tipo BERT/RoBERTa afinados | Spam, phishing, AG News, emocion | no verificado | no verificado | no verificado | no verificado | no verificado |
@@ -94,7 +94,7 @@ La model card no proporciona comparaciones con estos ni con otros modelos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NasledieLab/Asterion-Decision-Omni
+- Modelo en Hugging Face: https://huggingface.co/NasledieLab/Asterion-Decision-Omni
 - Perfil de la organizacion NasledieLab: https://huggingface.co/NasledieLab/models
 - INFERENCE.md (referenciado en la model card): no disponible como enlace directo en la informacion proporcionada
 - Paper relacionado por nombre (no confirmado como origen de este checkpoint): [2607.11433] Omni-Decision: A Progressive Evidence-State Agent System — https://arxiv.org/abs/2607.11433

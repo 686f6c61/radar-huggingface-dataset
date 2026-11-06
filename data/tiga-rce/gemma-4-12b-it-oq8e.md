@@ -77,6 +77,6 @@ No se dispone de informacion sobre modelos comparables en la informacion proporc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TiGa-RCE/gemma-4-12B-it-oQ8e
+- Hugging Face: https://huggingface.co/TiGa-RCE/gemma-4-12B-it-oQ8e
 - Repositorio de la herramienta de cuantizacion oQ / oMLX: https://github.com/jundot/omlx
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos o repositorios) en la busqueda web realizada.

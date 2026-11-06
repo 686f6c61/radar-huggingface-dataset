@@ -86,7 +86,7 @@ La comparativa se centra en el modelo base y otras variantes de Gemma 4. La vers
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xv0y5ncu/gemma-4-26B-A4B-it-GLQ-4bpw
+- Modelo en Hugging Face: https://huggingface.co/xv0y5ncu/gemma-4-26B-A4B-it-GLQ-4bpw
 - Modelo base (google/gemma-4-26B-A4B-it): https://huggingface.co/google/gemma-4-26B-A4B-it
 - Página de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Documentación de Google Cloud sobre Gemma 4 26B A4B IT: https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it

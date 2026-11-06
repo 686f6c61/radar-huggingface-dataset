@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`moonshineai/lunacelsus-v1` es un repositorio de modelo publicado en HuggingFace por el usuario `moonshineai`. La informacion disponible se limita a los metadatos del repositorio: licencia MIT, etiqueta de region `us`, cero descargas y cero likes en el momento de la consulta, y fechas de creacion y ultima actualizacion identicas (25 de septiembre de 2026), lo que indica que no ha habido modificaciones desde su publicacion inicial.
+`moonshineai/lunacelsus-v1` es un repositorio de modelo publicado en Hugging Face por el usuario `moonshineai`. La informacion disponible se limita a los metadatos del repositorio: licencia MIT, etiqueta de region `us`, cero descargas y cero likes en el momento de la consulta, y fechas de creacion y ultima actualizacion identicas (25 de septiembre de 2026), lo que indica que no ha habido modificaciones desde su publicacion inicial.
 
 La model card asociada esta practicamente vacia: su unico contenido es la declaracion de licencia (`license: mit`). No se especifica arquitectura, numero de parametros, longitud de contexto, idiomas soportados, datos de entrenamiento, pipeline de inferencia ni formato de pesos. Tampoco se han publicado resultados de benchmarks, demos o documentacion tecnica complementaria.
 
@@ -73,7 +73,7 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/moonshineai/lunacelsus-v1
-- Perfil del autor en HuggingFace: https://huggingface.co/moonshineai
+- Repositorio en Hugging Face: https://huggingface.co/moonshineai/lunacelsus-v1
+- Perfil del autor en Hugging Face: https://huggingface.co/moonshineai
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

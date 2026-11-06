@@ -13,7 +13,7 @@ La relevancia de este repositorio radica en ofrecer pesos optimizados para el ec
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer denso (Qwen3.8-27B), con cabecera MTP de una capa |
-| Parametros totales | 27 000 millones (segun documentacion del modelo base; el dato de metadatos de HuggingFace, 3 391 984, parece erroneo) |
+| Parametros totales | 27 000 millones (segun documentacion del modelo base; el dato de metadatos de Hugging Face, 3 391 984, parece erroneo) |
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 262 144 tokens (modelo base); el ejemplo de invocacion usa 8192 tokens |
 | Tipos de cuantizacion | ROCmFP4 (Q4_0_ROCMFP4), ROCmFP6 (Q6_0_ROCMFPX), ROCmFP8 (Q8_0_ROCMFPX) |
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en el con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vmlinux/Qwen3.8-27B-AEON-ULTIMATE-ROCmFPX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/vmlinux/Qwen3.8-27B-AEON-ULTIMATE-ROCmFPX-GGUF
 - Modelo base (AEON-7): https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
 - Repositorio oficial Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Blog de AMD sobre soporte de Qwen3.8: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

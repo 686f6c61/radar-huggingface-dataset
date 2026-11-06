@@ -4,7 +4,7 @@
 
 `Patrike/bert-hate-speech-test` es un modelo de clasificacion de texto basado en `google-bert/bert-base-uncased`, ajustado para la deteccion de discurso de odio (hate speech). Lo desarrolla el usuario Patrike y se publica bajo licencia Apache 2.0. El modelo cuenta con 109.484.547 parametros y un tamano de repositorio de 0,4 GB, con pesos en formato safetensors.
 
-La model card es generada automaticamente por el Trainer de HuggingFace y carece de informacion detallada sobre el dataset de entrenamiento, los casos de uso previstos o las limitaciones. Los unicos datos de evaluacion declarados son una perdida de 0,7321 y una exactitud de 0,6667 sobre el conjunto de evaluacion, lo que indica un rendimiento modesto. Con cero descargas y cero likes, el modelo parece ser un experimento o prueba de concepto mas que un artefacto listo para produccion.
+La model card es generada automaticamente por el Trainer de Hugging Face y carece de informacion detallada sobre el dataset de entrenamiento, los casos de uso previstos o las limitaciones. Los unicos datos de evaluacion declarados son una perdida de 0,7321 y una exactitud de 0,6667 sobre el conjunto de evaluacion, lo que indica un rendimiento modesto. Con cero descargas y cero likes, el modelo parece ser un experimento o prueba de concepto mas que un artefacto listo para produccion.
 
 Su relevancia radica en que ejemplifica el flujo tipico de ajuste fino de BERT para tareas de moderacion de contenido, aunque su exactitud limitada y la ausencia de documentacion lo desaconsejan para uso en entornos reales sin una evaluacion adicional exhaustiva.
 
@@ -23,7 +23,7 @@ Su relevancia radica en que ejemplifica el flujo tipico de ajuste fino de BERT p
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `bert-base-uncased`, un encoder transformer de 12 capas con 110 millones de parametros aproximadamente, preentrenado con masked language modeling y next sentence prediction sobre corpus en ingles. El ajuste fino se realizo con el Trainer de HuggingFace sobre un dataset no especificado en la model card.
+El modelo parte de `bert-base-uncased`, un encoder transformer de 12 capas con 110 millones de parametros aproximadamente, preentrenado con masked language modeling y next sentence prediction sobre corpus en ingles. El ajuste fino se realizo con el Trainer de Hugging Face sobre un dataset no especificado en la model card.
 
 Los hiperparametros de entrenamiento declarados son: tasa de aprendizaje de 5e-05, tamano de lote de 8 tanto para entrenamiento como para evaluacion, semilla 42, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal y 3 epocas. No se menciona el uso de tecnicas como RLHF, DPO o cualquier innovacion arquitectonica adicional; se trata de un ajuste fino clasico de clasificacion de secuencias.
 
@@ -32,7 +32,7 @@ Los hiperparametros de entrenamiento declarados son: tasa de aprendizaje de 5e-0
 - Clasificacion de texto binaria o multiclase para deteccion de discurso de odio, ofensa o contenido neutro, segun la configuracion del dataset de entrenamiento (no especificado).
 - Comprension del lenguaje general heredada de BERT base, incluyendo razonamiento contextual limitado a la ventana de 512 tokens.
 - Inferencia eficiente en CPU y GPU gracias a su tamano reducido (109M parametros).
-- Compatible con el ecosistema HuggingFace Transformers, incluyendo pipelines de `text-classification` y despliegue con Text Embeddings Inference.
+- Compatible con el ecosistema Hugging Face Transformers, incluyendo pipelines de `text-classification` y despliegue con Text Embeddings Inference.
 - No se ha documentado soporte para tool calling, agentes, vision, audio ni modos de razonamiento especiales.
 
 ## Casos de uso
@@ -46,7 +46,7 @@ Los hiperparametros de entrenamiento declarados son: tasa de aprendizaje de 5e-0
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El model-index de HuggingFace muestra un array vacio de resultados. Los unicos datos de evaluacion declarados en la model card son:
+No se han publicado resultados de benchmarks en la informacion disponible. El model-index de Hugging Face muestra un array vacio de resultados. Los unicos datos de evaluacion declarados en la model card son:
 
 | Metrica | Valor |
 |---|---|
@@ -60,7 +60,7 @@ Estos valores corresponden al conjunto de evaluacion utilizado durante el entren
 - VRAM estimada para inferencia: aproximadamente 438 MB en FP32, 219 MB en FP16 e inferior a 120 MB en INT8, dado el tamano de 109M parametros.
 - GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM es suficiente, incluyendo NVIDIA GTX 1650, RTX 3060, RTX 4060 o superiores. Tambien puede ejecutarse en Apple Silicon con Metal.
 - Ejecucion en CPU: viable para inferencia por lotes pequenos; en un CPU moderno se pueden procesar decenas de secuencias por segundo.
-- Opciones de despliegue: HuggingFace Transformers con pipeline de `text-classification`, vLLM, HuggingFace Text Generation Inference (TGI), ONNX Runtime, o servicios gestionados como HuggingFace Inference Endpoints.
+- Opciones de despliegue: Hugging Face Transformers con pipeline de `text-classification`, vLLM, Hugging Face Text Generation Inference (TGI), ONNX Runtime, o servicios gestionados como Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible; dependen del hardware y del backend de inferencia elegidos.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ La comparativa se limita a modelos de la misma familia arquitectonica. `hateBERT
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Patrike/bert-hate-speech-test
+- Modelo en Hugging Face: https://huggingface.co/Patrike/bert-hate-speech-test
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - hateBERT (modelo comparable): https://huggingface.co/GroNLP/hateBERT
 - Articulo sobre deteccion de odio con BERT (IEEE): https://ieeexplore.ieee.org/document/10923943

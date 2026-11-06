@@ -78,9 +78,9 @@ No se dispone de datos suficientes sobre los modelos comparables de la misma fam
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/Hagwell/Qwen3.8-27B-GGUF)
-- [Modelo base en HuggingFace](https://huggingface.co/Qwen/Qwen3.8-27B)
-- [GGUF de Unsloth en HuggingFace](https://huggingface.co/unsloth/Qwen3.8-27B-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/Hagwell/Qwen3.8-27B-GGUF)
+- [Modelo base en Hugging Face](https://huggingface.co/Qwen/Qwen3.8-27B)
+- [GGUF de Unsloth en Hugging Face](https://huggingface.co/unsloth/Qwen3.8-27B-GGUF)
 - [GGUF de Unsloth en ModelScope](https://www.modelscope.cn/models/unsloth/Qwen3.8-27B-GGUF/summary)
 - [Repositorio oficial en GitHub](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Guia de ejecucion de Unsloth](https://unsloth.ai/docs/models/qwen3.8)

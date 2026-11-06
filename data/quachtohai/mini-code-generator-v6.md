@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mini Code Generator V6 es un checkpoint experimental de generación de código Python entrenado desde cero por el usuario de HuggingFace quachtohai. Se trata de un transformer causal de tipo denso con 10.845.312 parámetros, 6 capas, tamaño oculto de 384, 6 cabezas de atención y FFN de 1536, con embeddings de entrada y salida atados. El modelo no parte de ningún modelo ni tokenizador preentrenado: el tokenizador es un vocabulario de 259 tokens de byte UTF-8 construido específicamente para este experimento, y la longitud de contexto es de solo 256 tokens.
+Mini Code Generator V6 es un checkpoint experimental de generación de código Python entrenado desde cero por el usuario de Hugging Face quachtohai. Se trata de un transformer causal de tipo denso con 10.845.312 parámetros, 6 capas, tamaño oculto de 384, 6 cabezas de atención y FFN de 1536, con embeddings de entrada y salida atados. El modelo no parte de ningún modelo ni tokenizador preentrenado: el tokenizador es un vocabulario de 259 tokens de byte UTF-8 construido específicamente para este experimento, y la longitud de contexto es de solo 256 tokens.
 
 El modelo se entrenó sobre un dataset propio de 652 registros de implementaciones validadas por ejecución, repartidos en 30 familias de algoritmos con un split disjunto por familia (520 de entrenamiento, 66 de validación, 66 de test). El objetivo del experimento es estudiar si una mejora sustancial en la pérdida de validación a nivel de token se traduce en generación funcional de código autorregresivo. La respuesta documentada por el autor es negativa: el mejor checkpoint (época 14, pérdida de validación 0,643533) no produce ni un solo programa completamente correcto en la evaluación funcional.
 
@@ -122,6 +122,6 @@ La model card advierte que la comparacion V5 frente a V6 no es una ablacion estr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/quachtohai/mini-code-generator-v6
-- Perfil del autor en HuggingFace: https://huggingface.co/quachtohai
+- Modelo en Hugging Face: https://huggingface.co/quachtohai/mini-code-generator-v6
+- Perfil del autor en Hugging Face: https://huggingface.co/quachtohai
 - Listado de modelos del autor: https://huggingface.co/quachtohai/models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `27Kushal/PIXEL-Srishti-Segmentation` es un repositorio alojado en HuggingFace que, por su nombre, parece orientado a tareas de segmentación de imágenes, posiblemente relacionado con el proyecto PIXEL (un modelo de visión por computador basado en transformadores). Sin embargo, la información pública disponible es extremadamente limitada: la model card únicamente declara la licencia MIT y no incluye descripción, arquitectura, parámetros, datos de entrenamiento ni ejemplos de uso. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere que podría contener pesos de un modelo relativamente pequeño, pero no se puede confirmar sin acceso al contenido real.
+El modelo `27Kushal/PIXEL-Srishti-Segmentation` es un repositorio alojado en Hugging Face que, por su nombre, parece orientado a tareas de segmentación de imágenes, posiblemente relacionado con el proyecto PIXEL (un modelo de visión por computador basado en transformadores). Sin embargo, la información pública disponible es extremadamente limitada: la model card únicamente declara la licencia MIT y no incluye descripción, arquitectura, parámetros, datos de entrenamiento ni ejemplos de uso. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere que podría contener pesos de un modelo relativamente pequeño, pero no se puede confirmar sin acceso al contenido real.
 
 Dado que no se dispone de documentación técnica, benchmarks ni especificaciones, esta ficha se limita a reflejar la ausencia de datos verificables. Cualquier uso en producción requeriría una evaluación directa del repositorio y sus archivos.
 
@@ -57,4 +57,4 @@ No disponible. No se conocen modelos comparables de la misma categoria (segmenta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/27Kushal/PIXEL-Srishti-Segmentation
+- Repositorio en Hugging Face: https://huggingface.co/27Kushal/PIXEL-Srishti-Segmentation

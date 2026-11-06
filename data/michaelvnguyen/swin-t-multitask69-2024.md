@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swin T for Multitask es un prototipo de investigación publicado por el usuario michaelvnguyen en HuggingFace. Se trata de una implementación personalizada de la arquitectura Swin Transformer en su variante tiny (swin_t), orientada a escenarios multitarea. El repositorio contiene el código del modelo (`pipeline.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de pesos en formato safetensors que el propio autor describe explícitamente como inicialización válida para pruebas de humo, no como un modelo entrenado ni evaluado.
+Swin T for Multitask es un prototipo de investigación publicado por el usuario michaelvnguyen en Hugging Face. Se trata de una implementación personalizada de la arquitectura Swin Transformer en su variante tiny (swin_t), orientada a escenarios multitarea. El repositorio contiene el código del modelo (`pipeline.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de pesos en formato safetensors que el propio autor describe explícitamente como inicialización válida para pruebas de humo, no como un modelo entrenado ni evaluado.
 
 La relevancia de este repositorio es, por tanto, limitada y de carácter experimental: sirve como punto de partida reproducible para experimentar con Swin Transformer en configuraciones multitarea, pero no debe confundirse con un modelo listo para producción. El autor no reclama ninguna métrica de rendimiento y advierte de que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. El dato de parámetros registrado en safetensors es de 24.832, sin que la información disponible especifique la unidad de medida.
 
@@ -17,7 +17,7 @@ No se ha publicado información sobre el conjunto de datos de entrenamiento, el 
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (modelo de visión; la ventana efectiva depende del tamaño de imagen y de los parches definidos en `config.json`, no publicados en la información disponible) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (no se declara ningún idioma; el pipeline de HuggingFace figura como no disponible) |
+| Idiomas soportados | no disponible (no se declara ningún idioma; el pipeline de Hugging Face figura como no disponible) |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (checkpoint de inicialización); configuración en `config.json` y receta en `training_args.json` |
 
@@ -25,7 +25,7 @@ Otros detalles de arquitectura declarados en la model card: escala "large" (etiq
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un Swin Transformer, un transformer jerárquico para visión que computa la auto-atención dentro de ventanas locales desplazadas entre capas, lo que reduce el coste cuadrático respecto a la atención global de un ViT estándar. En esta implementación concreta el autor indica atención de ventana deslizante, fusión mediante concatenación seguida de un MLP (`concat mlp`), activación aproximada de GELU y normalización tipo `scalenorm` en lugar de LayerNorm. Se trata de una implementación personalizada, por lo que las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de poder usarla.
+La arquitectura es un Swin Transformer, un transformer jerárquico para visión que computa la auto-atención dentro de ventanas locales desplazadas entre capas, lo que reduce el coste cuadrático respecto a la atención global de un ViT estándar. En esta implementación concreta el autor indica atención de ventana deslizante, fusión mediante concatenación seguida de un MLP (`concat mlp`), activación aproximada de GELU y normalización tipo `scalenorm` en lugar de LayerNorm. Se trata de una implementación personalizada, por lo que las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de poder usarla.
 
 En cuanto al entrenamiento, la información disponible no documenta ningún proceso de entrenamiento completado. `training_args.json` recoge únicamente la receta por defecto: optimizador AdamW con planificador *onecycle*. El autor insiste en que estos son valores de partida del script y no evidencia de una ejecución finalizada, y recomienda entrenar todas las líneas base con la misma exposición de datos, presupuesto de ajuste y semillas aleatorias. El checkpoint `model.safetensors` se describe como inicialización para pruebas de humo. No hay datos sobre número de imágenes o tokens, composición del dataset, ni fases de RLHF, DPO o ajuste supervisado.
 
@@ -66,7 +66,7 @@ Comparativa orientativa con arquitecturas de visión de capacidad similar. Los d
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| michaelvnguyen/swin-t-multitask69-2024 | 24.832 según safetensors (unidad no especificada) | no disponible | Sin benchmark declarado; checkpoint no entrenado | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| michaelvnguyen/swin-t-multitask69-2024 | 24.832 según safetensors (unidad no especificada) | no disponible | Sin benchmark declarado; checkpoint no entrenado | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | Swin Transformer Tiny (Microsoft) | ~28 M | Imagen, ventanas de 7x7 | Métricas publicadas en ImageNet-1K en el paper original | MIT | Pesos oficiales y múltiples réplicas |
 | ConvNeXt-Tiny | ~28 M | Imagen, convoluciones 7x7 | Métricas publicadas en ImageNet-1K | MIT | Pesos oficiales y réplicas |
 | DeiT-Small | ~22 M | Imagen, 16x16 parches, atención global | Métricas publicadas en ImageNet-1K | Apache 2.0 | Pesos oficiales |
@@ -82,11 +82,11 @@ La diferencia fundamental no está en la arquitectura, sino en el estado del art
 - Riesgo de alucinación: no evaluable al no existir modelo entrenado ni capacidades generativas declaradas.
 - No se declaran idiomas soportados ni limitaciones idiomáticas.
 - No hay restricciones de uso comercial derivadas de la licencia (Apache 2.0 permite uso comercial), pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si el repositorio se usa con datasets externos.
-- La implementación es personalizada: la carga mediante APIs automáticas de HuggingFace requiere un adaptador explícito, lo que complica su integración en pipelines estándar.
+- La implementación es personalizada: la carga mediante APIs automáticas de Hugging Face requiere un adaptador explícito, lo que complica su integración en pipelines estándar.
 - Cualquier resultado obtenido con un checkpoint futuro debe documentarse por separado de los valores por defecto publicados en este repositorio.
 - El repositorio tiene 0 descargas y 0 likes, y un tamaño declarado de 0.0 GB, lo que refuerza su carácter de publicación experimental sin validación por parte de la comunidad.
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/michaelvnguyen/swin-t-multitask69-2024
+- Página de Hugging Face del modelo: https://huggingface.co/michaelvnguyen/swin-t-multitask69-2024
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados a este modelo. Los resultados de búsqueda disponibles corresponden a servicios de traducción y a un libro digital, sin relación con el modelo.

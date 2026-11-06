@@ -98,6 +98,6 @@ No se dispone de datos de benchmarks que permitan comparar la calidad de estos m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/XcaliburMoon/Gemma-4-MoE-Agent-26B
+- Repositorio Hugging Face: https://huggingface.co/XcaliburMoon/Gemma-4-MoE-Agent-26B
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Versión densa previa del mismo autor: https://huggingface.co/XcaliburMoon/Gemma-4-MoE-Agent-v1.4

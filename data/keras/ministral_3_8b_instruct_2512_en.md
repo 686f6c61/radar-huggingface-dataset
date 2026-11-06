@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ministral 3 8B Instruct (este checkpoint) | 8.4B + 0.4B vision | 256k | Si (Pixtral) | Apache 2.0 | KerasHub / HuggingFace |
-| Ministral 3 3B Instruct | 3.4B + 0.4B vision | 256k | Si (Pixtral) | Apache 2.0 | KerasHub / HuggingFace |
-| Ministral 3 14B Instruct | 13.5B + 0.4B vision | 256k | Si (Pixtral) | Apache 2.0 | KerasHub / HuggingFace |
+| Ministral 3 8B Instruct (este checkpoint) | 8.4B + 0.4B vision | 256k | Si (Pixtral) | Apache 2.0 | KerasHub / Hugging Face |
+| Ministral 3 3B Instruct | 3.4B + 0.4B vision | 256k | Si (Pixtral) | Apache 2.0 | KerasHub / Hugging Face |
+| Ministral 3 14B Instruct | 13.5B + 0.4B vision | 256k | Si (Pixtral) | Apache 2.0 | KerasHub / Hugging Face |
 
 La informacion disponible no incluye datos de rendimiento comparado con modelos de otros fabricantes, por lo que la comparativa se limita a las variantes de la propia familia. No se dispone de benchmarks que permitan situar este checkpoint frente a alternativas de tamano similar de otros proveedores.
 
@@ -77,14 +77,14 @@ La informacion disponible no incluye datos de rendimiento comparado con modelos 
 - Sesgos conocidos: no documentados en la informacion proporcionada; como todo LLM entrenado con datos web, es previsible que herede sesgos de esos datos.
 - Riesgo de alucinacion: no cuantificado en la model card; debe asumirse el riesgo habitual en modelos de este tamano, especialmente en tareas de hechos verificables.
 - Limitaciones de contexto o idioma: aunque se declaran once idiomas, el identificador del checkpoint incluye el sufijo `_en`, lo que sugiere un enfasis en ingles; el rendimiento en el resto de idiomas no esta cuantificado.
-- Restricciones de licencia: los pesos se publican bajo Apache 2.0 segun la model card, lo que permite uso comercial; conviene verificar la licencia en el repositorio de HuggingFace, ya que el campo de licencia de la plataforma aparece como "no disponible".
+- Restricciones de licencia: los pesos se publican bajo Apache 2.0 segun la model card, lo que permite uso comercial; conviene verificar la licencia en el repositorio de Hugging Face, ya que el campo de licencia de la plataforma aparece como "no disponible".
 - El consumo de memoria con contexto de 256k tokens puede ser prohibitivo en hardware de consumo; en produccion conviene limitar la ventana efectiva o aplicar tecnicas de cache eficiente.
 - No se documentan cuantizaciones oficiales ni integraciones con runners de inferencia populares (vLLM, llama.cpp, Ollama, TGI), lo que puede complicar el despliegue fuera del ecosistema Keras.
 - El checkpoint esta empaquetado para KerasHub; su uso en otros frameworks requerira conversion de pesos no documentada en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/keras/ministral_3_8b_instruct_2512_en
+- Hugging Face: https://huggingface.co/keras/ministral_3_8b_instruct_2512_en
 - Mistral AI: https://mistral.ai/
 - Keras: https://keras.io/
 - Keras 3 (multi-backend): https://keras.io/keras_3/

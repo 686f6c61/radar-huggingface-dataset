@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| huggingface-mic/embeddinggemma-2-mic | 19,3 M | no disponible | Fixture de test | no disponible | HuggingFace |
-| google/embeddinggemma-2 | no disponible | no disponible | Embeddings multimodales reales | no disponible | HuggingFace |
-| Otros fixtures de transformers-mic | variable (reducidos) | no disponible | Tests de integracion | no disponible | HuggingFace (org huggingface-mic) |
+| huggingface-mic/embeddinggemma-2-mic | 19,3 M | no disponible | Fixture de test | no disponible | Hugging Face |
+| google/embeddinggemma-2 | no disponible | no disponible | Embeddings multimodales reales | no disponible | Hugging Face |
+| Otros fixtures de transformers-mic | variable (reducidos) | no disponible | Tests de integracion | no disponible | Hugging Face (org huggingface-mic) |
 
 La comparacion relevante es con el modelo base: misma arquitectura y mismos ficheros de procesador, pero con 2 capas por torre frente a la profundidad completa y pesos aleatorios frente a pesos entrenados. Frente a otros fixtures de la misma organizacion, comparte el proposito de validacion de contratos, aunque la informacion disponible no detalla sus tamanos.
 
@@ -80,7 +80,7 @@ La comparacion relevante es con el modelo base: misma arquitectura y mismos fich
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/embeddinggemma-2-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/embeddinggemma-2-mic
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Como se redujo el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/embeddinggemma-2-mic.html
 - Script de construccion: https://github.com/huggingface/transformers-mic/blob/main/example/build_fixtures.py

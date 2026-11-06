@@ -94,7 +94,7 @@ Evaluación sobre un conjunto de test retenido de 899 preguntas en 11 países no
 - No se han publicado datos de latencia ni throughput, lo que limita la planificación de despliegues en producción.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/pockettravel/qwen3.5-4b-travel-en-GGUF
+- Modelo en Hugging Face: https://huggingface.co/pockettravel/qwen3.5-4b-travel-en-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Cuantización del base usada en evaluación: https://huggingface.co/unsloth/Qwen3.5-4B-GGUF
 - Repositorio de la app Pocket Travel: https://github.com/miracle091/pocket-travel

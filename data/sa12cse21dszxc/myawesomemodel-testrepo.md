@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio de prueba alojado en HuggingFace por el usuario sa12cse21dszxc, publicado el 17 de agosto de 2026. Se presenta como un modelo de extracción de características (feature-extraction) basado en la librería transformers, con licencia MIT. Según la model card, el modelo habría sufrido una actualización significativa que mejora sus capacidades de razonamiento e inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento.
+MyAwesomeModel-TestRepo es un repositorio de prueba alojado en Hugging Face por el usuario sa12cse21dszxc, publicado el 17 de agosto de 2026. Se presenta como un modelo de extracción de características (feature-extraction) basado en la librería transformers, con licencia MIT. Según la model card, el modelo habría sufrido una actualización significativa que mejora sus capacidades de razonamiento e inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento.
 
 Sin embargo, es fundamental señalar que el repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos del modelo ni archivos de checkpoint. Se trata de un repositorio de prueba sin artefactos descargables, y los datos de la model card parecen estar copiados de un modelo de razonamiento de otra procedencia, sin especificaciones técnicas verificables propias.
 
@@ -21,7 +21,7 @@ Sin embargo, es fundamental señalar que el repositorio tiene un tamaño de 0.0 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura del modelo. Los tags de HuggingFace incluyen `bert` y `transformers`, lo que sugiere una arquitectura tipo transformer encoder, pero no hay confirmacion en la model card. El repositorio no contiene archivos de pesos ni configuracion, por lo que no es posible verificar la arquitectura real.
+No se dispone de informacion verificable sobre la arquitectura del modelo. Los tags de Hugging Face incluyen `bert` y `transformers`, lo que sugiere una arquitectura tipo transformer encoder, pero no hay confirmacion en la model card. El repositorio no contiene archivos de pesos ni configuracion, por lo que no es posible verificar la arquitectura real.
 
 La model card menciona que el modelo ha sido sometido a un "post-entrenamiento" con optimizaciones algoritmicas y mayores recursos computacionales, y que el razonamiento del modelo utiliza una media de 23.000 tokens por pregunta en el conjunto de prueba AIME 2025 (frente a 12.000 en la version anterior). Tambien afirma una reduccion de la tasa de alucinacion y un soporte mejorado para function calling. No obstante, estos datos no pueden verificarse al no existir artefactos del modelo en el repositorio.
 
@@ -100,7 +100,7 @@ No se puede establecer una comparativa con modelos reales del ecosistema (como D
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sa12cse21dszxc/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/sa12cse21dszxc/MyAwesomeModel-TestRepo
 - Perfil del autor: https://huggingface.co/sa12cse21dszxc
 - Repositorio duplicado del mismo contenido: https://huggingface.co/toolathlonhudi/MyAwesomeModel-TestRepo
 

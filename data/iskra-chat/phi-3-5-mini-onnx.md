@@ -19,7 +19,7 @@ Nota: los valores marcados como "modelo base" proceden de la documentación púb
 | Parámetros activos | No aplica: modelo denso, no es MoE |
 | Longitud de contexto | 128 000 tokens (modelo base) |
 | Tipos de cuantización | fp16 en este repositorio; el modelo base se distribuye en safetensors y Microsoft publica una conversión ONNX int4-awq. No se incluyen ficheros GGUF ni int8 en este repositorio |
-| Idiomas soportados | No disponible en la información proporcionada (los metadatos de HuggingFace indican "no disponibles"); el modelo base declara soporte multilingüe limitado con predominio del inglés |
+| Idiomas soportados | No disponible en la información proporcionada (los metadatos de Hugging Face indican "no disponibles"); el modelo base declara soporte multilingüe limitado con predominio del inglés |
 | Licencia | MIT, heredada del modelo base |
 | Formato de pesos | ONNX (`model_fp16.onnx` + `model_fp16.onnx.data`); tokenizer `tokenizer.json` y ficheros auxiliares sin cambios respecto al original |
 | Precisión de pesos / E-S | Pesos fp16; entradas y salidas fp32 |

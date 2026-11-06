@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Experimental-N1 es un modelo publicado en HuggingFace por el usuario arteml3 bajo el identificador `arteml3/Experimental-N1`. Se trata de un modelo de lenguaje de pequeño tamano: los pesos en formato safetensors suman 134.515.008 parametros (aproximadamente 134,5 millones), lo que lo situa en la categoria de modelos compactos, por debajo de los 200 millones de parametros. La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia MIT, sin descripcion, sin detalles de entrenamiento y sin resultados de evaluacion.
+Experimental-N1 es un modelo publicado en Hugging Face por el usuario arteml3 bajo el identificador `arteml3/Experimental-N1`. Se trata de un modelo de lenguaje de pequeño tamano: los pesos en formato safetensors suman 134.515.008 parametros (aproximadamente 134,5 millones), lo que lo situa en la categoria de modelos compactos, por debajo de los 200 millones de parametros. La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia MIT, sin descripcion, sin detalles de entrenamiento y sin resultados de evaluacion.
 
 El modelo lleva la etiqueta `llama`, lo que apunta a una implementacion compatible con la familia Llama, aunque no hay documentacion que lo confirme. El repositorio ocupa 0,3 GB, un tamano coherente con pesos almacenados en precision de 16 bits (134,5 M de parametros en fp16 equivalen a unos 0,27 GB), lo que sugiere que los safetensors no estan en fp32. El modelo no registra descargas ni interacciones en el momento de la consulta, por lo que se trata de un artefacto sin validacion por parte de la comunidad.
 
@@ -72,7 +72,7 @@ La ausencia de benchmarks publicos impide comparar rendimiento. La comparacion s
 | Modelo | Parametros | Contexto | Licencia | Formato |
 |---|---|---|---|---|
 | Experimental-N1 (arteml3) | 134,5 M | No disponible | MIT | safetensors |
-| SmolLM-135M (HuggingFace) | 135 M | No disponible en esta ficha | Apache-2.0 | safetensors, GGUF |
+| SmolLM-135M (Hugging Face) | 135 M | No disponible en esta ficha | Apache-2.0 | safetensors, GGUF |
 | Pythia-160M (EleutherAI) | 160 M | No disponible en esta ficha | Apache-2.0 | safetensors |
 | GPT-2 (OpenAI) | 124 M | 1024 tokens | MIT modificada | safetensors, otros |
 
@@ -91,6 +91,6 @@ La diferencia principal frente a estas alternativas no es tecnica sino de trazab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arteml3/Experimental-N1
-- Perfil del autor en HuggingFace: https://huggingface.co/arteml3
+- Modelo en Hugging Face: https://huggingface.co/arteml3/Experimental-N1
+- Perfil del autor en Hugging Face: https://huggingface.co/arteml3
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

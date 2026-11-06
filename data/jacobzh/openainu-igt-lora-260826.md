@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JacobZh/OpenAinu-IGT-lora-260826 es un adaptador de tipo LoRA (Low-Rank Adaptation) publicado en HuggingFace el 25 de agosto de 2026 por el usuario JacobZh. El nombre sugiere que se trata de un ajuste fino de bajo rango orientado a un modelo denominado "OpenAinu", posiblemente relacionado con el procesamiento de la lengua ainu, y con el acrónimo "IGT" (interlinear glossed text, un formato habitual en lingüística para anotaciones de textos). Sin embargo, la model card no incluye ninguna descripción, ni metadatos sobre el modelo base, el tipo de tarea o el idioma, por lo que estas interpretaciones son especulativas.
+JacobZh/OpenAinu-IGT-lora-260826 es un adaptador de tipo LoRA (Low-Rank Adaptation) publicado en Hugging Face el 25 de agosto de 2026 por el usuario JacobZh. El nombre sugiere que se trata de un ajuste fino de bajo rango orientado a un modelo denominado "OpenAinu", posiblemente relacionado con el procesamiento de la lengua ainu, y con el acrónimo "IGT" (interlinear glossed text, un formato habitual en lingüística para anotaciones de textos). Sin embargo, la model card no incluye ninguna descripción, ni metadatos sobre el modelo base, el tipo de tarea o el idioma, por lo que estas interpretaciones son especulativas.
 
 El repositorio se encuentra en un estado mínimo: sin descargas, sin likes, sin información de pipeline y sin README más allá de la línea `license: mit`. Esto indica que es un artefacto técnico en fase inicial de publicación, posiblemente un experimento o un trabajo en curso. Su licencia MIT permite uso comercial y modificación sin restricciones de atribución, lo que facilita su integración en proyectos propios, siempre que se cumplan los términos de la licencia.
 
@@ -66,5 +66,5 @@ No se dispone de información sobre modelos comparables. Dado que no se conoce e
 
 ## Enlaces
 
-- [HuggingFace: JacobZh/OpenAinu-IGT-lora-260826](https://huggingface.co/JacobZh/OpenAinu-IGT-lora-260826)
+- [Hugging Face: JacobZh/OpenAinu-IGT-lora-260826](https://huggingface.co/JacobZh/OpenAinu-IGT-lora-260826)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos) en la búsqueda web.

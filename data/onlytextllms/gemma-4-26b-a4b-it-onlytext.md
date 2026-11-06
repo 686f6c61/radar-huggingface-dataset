@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Activos | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OnlyTextLLMs/gemma-4-26B-A4B-it-OnlyText | 25,23B | ~3,8-4B (MoE) | 262.144 tokens (segun OpenRouter) | Solo texto | apache-2.0 (declarada) | safetensors bf16 en HuggingFace |
+| OnlyTextLLMs/gemma-4-26B-A4B-it-OnlyText | 25,23B | ~3,8-4B (MoE) | 262.144 tokens (segun OpenRouter) | Solo texto | apache-2.0 (declarada) | safetensors bf16 en Hugging Face |
 | google/gemma-4-26B-A4B-it | 26B (denominacion comercial) | ~3,8-4B (MoE) | 262.144 tokens | Texto, imagen y audio | No disponible en la informacion proporcionada | Pesos originales de Google DeepMind |
 | Alternativas MoE abiertas de rango similar (p. ej. Qwen3-30B-A3B) | No disponible | No disponible | No disponible | No disponible | No disponible | No verificadas en la informacion proporcionada |
 | Densos de ~31B citados por FitMyLLM como referencia de calidad | No disponible | No disponible | No disponible | No disponible | No disponible | No verificados en la informacion proporcionada |
@@ -103,7 +103,7 @@ La comparacion mas solida es contra el propio modelo base: comparten backbone y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OnlyTextLLMs/gemma-4-26B-A4B-it-OnlyText
+- Modelo en Hugging Face: https://huggingface.co/OnlyTextLLMs/gemma-4-26B-A4B-it-OnlyText
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Pagina de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Documentacion de Gemma 4 26B A4B IT en Google Cloud: https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it

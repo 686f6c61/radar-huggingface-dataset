@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha describe `castanetnicolas/diffusion_UR5e_BS_128_H_32_TASK_tool_hang_ID_146945`, una política de control visuomotor basada en Diffusion Policy y entrenada con la librería LeRobot de HuggingFace. No es un modelo de lenguaje: es un modelo de robótica (pipeline `robotics`) que aprende una tarea de manipulación concreta mediante imitación, a partir de demostraciones con dos cámaras RGB y el estado propio del robot.
+Esta ficha describe `castanetnicolas/diffusion_UR5e_BS_128_H_32_TASK_tool_hang_ID_146945`, una política de control visuomotor basada en Diffusion Policy y entrenada con la librería LeRobot de Hugging Face. No es un modelo de lenguaje: es un modelo de robótica (pipeline `robotics`) que aprende una tarea de manipulación concreta mediante imitación, a partir de demostraciones con dos cámaras RGB y el estado propio del robot.
 
 El modelo resuelve la tarea "Insert the hook into the base to build a frame, then hang the wrench on the hook" sobre un robot de tipo `panda` según la model card (el identificador del repositorio menciona UR5e, una discrepancia que conviene verificar). Consume `observation.state` de 9 dimensiones y dos imágenes de 256x256 (`sideview` y `robot0_eye_in_hand`), y produce una acción de 7 dimensiones. Tiene 278.014.919 parámetros y se distribuye en safetensors con licencia Apache-2.0.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto / horizonte | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| diffusion_UR5e_BS_128_H_32_TASK_tool_hang | 278.014.919 | H=32 según identificador; horizonte de observación no disponible | Tool hang (robomimic) con robot panda | Apache-2.0 | HuggingFace, vía LeRobot |
+| diffusion_UR5e_BS_128_H_32_TASK_tool_hang | 278.014.919 | H=32 según identificador; horizonte de observación no disponible | Tool hang (robomimic) con robot panda | Apache-2.0 | Hugging Face, vía LeRobot |
 | Diffusion Policy (implementación original, Chi et al.) | no disponible | no disponible | Manipulación visuomotora genérica | no disponible | Paper y código de referencia |
 | ACT (Action Chunking Transformer, integrado en LeRobot) | no disponible | no disponible | Imitación con chunking de acciones | no disponible | LeRobot |
 | Políticas VLA tipo pi0 o SmolVLA | no disponible | no disponible | Manipulación guiada por lenguaje | no disponible | LeRobot |
@@ -85,7 +85,7 @@ No se dispone de cifras de rendimiento comparables para este checkpoint, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/castanetnicolas/diffusion_UR5e_BS_128_H_32_TASK_tool_hang_ID_146945
+- Modelo en Hugging Face: https://huggingface.co/castanetnicolas/diffusion_UR5e_BS_128_H_32_TASK_tool_hang_ID_146945
 - Dataset de entrenamiento: https://huggingface.co/datasets/castanetnicolas/robomimic_tool_hang_ph_image256
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=castanetnicolas/robomimic_tool_hang_ph_image256
 - Artículo de Diffusion Policy: https://huggingface.co/papers/2303.04137

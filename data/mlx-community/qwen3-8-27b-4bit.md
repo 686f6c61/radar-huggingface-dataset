@@ -78,7 +78,7 @@ No se han encontrado modelos comparables con especificaciones confirmadas en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/Qwen3.8-27B-4bit
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/Qwen3.8-27B-4bit
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de Qwen3.8 en Unsloth: https://unsloth.ai/docs/models/qwen3.8
 - Artículo de OpenLM sobre Qwen3.8: https://openlm.ai/qwen3.8/

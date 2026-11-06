@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SentimentAnalysis es un repositorio publicado en HuggingFace por el usuario dwiintaaf bajo licencia MIT. Por el nombre del repositorio, el propósito declarado es el análisis de sentimiento, aunque la model card no aporta ninguna descripción funcional, arquitectónica ni de entrenamiento. El repositorio no cuenta con descargas ni interacciones en el momento de la consulta, y no tiene pipeline de inferencia asignado en la plataforma.
+SentimentAnalysis es un repositorio publicado en Hugging Face por el usuario dwiintaaf bajo licencia MIT. Por el nombre del repositorio, el propósito declarado es el análisis de sentimiento, aunque la model card no aporta ninguna descripción funcional, arquitectónica ni de entrenamiento. El repositorio no cuenta con descargas ni interacciones en el momento de la consulta, y no tiene pipeline de inferencia asignado en la plataforma.
 
 La información disponible es extremadamente limitada: la model card se reduce a la declaración de licencia MIT, sin especificar arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni formato de pesos. Tampoco se han publicado resultados de benchmarks ni detalles sobre el conjunto de datos de entrenamiento. Cualquier evaluación de idoneidad para producción requiere inspeccionar directamente los archivos del repositorio.
 
@@ -73,7 +73,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 ## Limitaciones y advertencias
 
 - Ausencia total de model card funcional: no se describe arquitectura, datos ni uso previsto.
-- Sin pipeline asignado en HuggingFace, lo que impide la inferencia directa desde la plataforma.
+- Sin pipeline asignado en Hugging Face, lo que impide la inferencia directa desde la plataforma.
 - Sin descargas ni validación comunitaria: no hay evidencia de que el modelo funcione según lo que sugiere su nombre.
 - Sesgos desconocidos: al no documentarse el corpus de entrenamiento, no se pueden evaluar sesgos de género, raza, idioma o dominio.
 - Riesgo de alucinación no evaluable: no consta si el modelo es generativo o discriminativo.
@@ -83,4 +83,4 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dwiintaaf/SentimentAnalysis
+- Repositorio en Hugging Face: https://huggingface.co/dwiintaaf/SentimentAnalysis

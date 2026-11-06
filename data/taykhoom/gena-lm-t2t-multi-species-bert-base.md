@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GENA-LM-t2t-multi-species-bert-base es un port minimalista en HuggingFace de la variante `bert-base-t2t-multi` de la familia GENA-LM, desarrollada originalmente por el AIRI Institute. Se trata de un modelo de lenguaje enmascarado (MLM) basado en la arquitectura BERT, diseñado para procesar secuencias largas de ADN humano y de múltiples especies. El modelo emplea tokenización BPE en lugar de k-mers, lo que permite representar el genoma de forma más compacta y capturar dependencias de mayor alcance. Con 110 millones de parámetros y una ventana de contexto de 512 tokens (aproximadamente 4.608 nucleótidos), este modelo es una opción ligera y eficiente para tareas de análisis genómico, como la predicción de efectos de variantes o la clasificación de regiones reguladoras.
+GENA-LM-t2t-multi-species-bert-base es un port minimalista en Hugging Face de la variante `bert-base-t2t-multi` de la familia GENA-LM, desarrollada originalmente por el AIRI Institute. Se trata de un modelo de lenguaje enmascarado (MLM) basado en la arquitectura BERT, diseñado para procesar secuencias largas de ADN humano y de múltiples especies. El modelo emplea tokenización BPE en lugar de k-mers, lo que permite representar el genoma de forma más compacta y capturar dependencias de mayor alcance. Con 110 millones de parámetros y una ventana de contexto de 512 tokens (aproximadamente 4.608 nucleótidos), este modelo es una opción ligera y eficiente para tareas de análisis genómico, como la predicción de efectos de variantes o la clasificación de regiones reguladoras.
 
 Este port mantiene una paridad bit-exacta con los pesos originales en el backend `eager`, y añade soporte para backends de atención acelerada (`sdpa` y `flash_attention_2`), lo que facilita su integración en pipelines de producción. Su licencia MIT permite su uso comercial sin restricciones, y su tamaño compacto lo hace ejecutable en GPUs de consumo. La relevancia de este modelo radica en su capacidad para trabajar con genomas completos de múltiples especies, incluyendo el genoma humano T2T, y en su adaptación a longitudes de secuencia mayores que los modelos previos como DNABERT o Nucleotide Transformer.
 
@@ -52,12 +52,12 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - VRAM estimada para inferencia: con 110 millones de parámetros, el modelo ocupa aproximadamente 440 MB en FP32, 220 MB en FP16 y 110 MB en INT8. La memoria adicional para activaciones es mínima para secuencias de hasta 512 tokens.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Modelos como NVIDIA GTX 1060, RTX 3060 o superiores pueden ejecutar el modelo sin problemas. También funciona en CPU, aunque con mayor latencia.
 - Compatibilidad con GPUs de consumo: sí, es ligero y cabe en cualquier GPU moderna de consumo (por ejemplo, RTX 3060, RTX 4060).
-- Opciones de despliegue: se puede servir mediante la biblioteca `transformers` de HuggingFace, con backends `sdpa` o `flash_attention_2` para acelerar. No es compatible con vLLM ni llama.cpp, ya que no es un modelo generativo.
+- Opciones de despliegue: se puede servir mediante la biblioteca `transformers` de Hugging Face, con backends `sdpa` o `flash_attention_2` para acelerar. No es compatible con vLLM ni llama.cpp, ya que no es un modelo generativo.
 - Latencia y throughput: no se proporcionan datos específicos. En una GPU RTX 3060, la inferencia de un batch de 32 secuencias de 512 tokens debería completarse en menos de 100 ms, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
 
-La siguiente tabla compara este modelo con otras variantes de GENA-LM disponibles en HuggingFace:
+La siguiente tabla compara este modelo con otras variantes de GENA-LM disponibles en Hugging Face:
 
 | Modelo | Parámetros | Capas | Dimensión | Contexto (tokens) | Notas |
 |---|---|---|---|---|---|
@@ -78,12 +78,12 @@ No se dispone de comparaciones con modelos externos como DNABERT o Nucleotide Tr
 - Limitación de contexto: la ventana de 512 tokens (~4.6 kb) es corta para regiones genómicas largas; para secuencias mayores se necesitan modelos como las variantes BigBird.
 - No apto para diagnóstico clínico: aunque es útil para investigación, no está validado para uso médico directo.
 - Restricciones de licencia: la licencia MIT permite uso comercial, pero el código de este port incluye `trust_remote_code`, lo que implica que el usuario debe revisar el código personalizado antes de usarlo.
-- Dependencia del código custom: al ser un port con `custom_code`, requiere activar `trust_remote_code=True` en HuggingFace, lo que implica una revisión de seguridad del código.
+- Dependencia del código custom: al ser un port con `custom_code`, requiere activar `trust_remote_code=True` en Hugging Face, lo que implica una revisión de seguridad del código.
 - No soporta generación de texto: no es un modelo generativo, solo de encoding y MLM.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taykhoom/GENA-LM-t2t-multi-species-bert-base
+- Modelo en Hugging Face: https://huggingface.co/Taykhoom/GENA-LM-t2t-multi-species-bert-base
 - Colección GENA-LM (port): https://huggingface.co/collections/Taykhoom/gena-lm-6a8cec0862e11d4f81d059ab
 - Repositorio original AIRI Institute: https://huggingface.co/AIRI-Institute/gena-lm-bert-base-t2t-multi
 - Código fuente en GitHub: https://github.com/AIRI-Institute/GENA_LM

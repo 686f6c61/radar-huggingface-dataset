@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes mas alla
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SirSahOl/Llama-Guard-3-1B-chat-mlx-16bit
+- Repositorio Hugging Face: https://huggingface.co/SirSahOl/Llama-Guard-3-1B-chat-mlx-16bit
 - Modelo base: https://huggingface.co/meta-llama/Llama-Guard-3-1B
 - Variante de 4 bits: https://huggingface.co/SirSahOl/Llama-Guard-3-1B-chat-mlx-4bit
 - Variante de 8 bits: https://huggingface.co/SirSahOl/Llama-Guard-3-1B-chat-mlx-8bit

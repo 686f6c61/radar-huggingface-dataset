@@ -6,7 +6,7 @@ qwen3-4b-jsmill-persona es un adaptador LoRA (PEFT) publicado por el usuario mas
 
 La relevancia de esta ficha es limitada pero ilustrativa: forma parte de una practica creciente de publicar adaptadores de personalidad o rol sobre modelos abiertos pequenos, entrenados con herramientas como Unsloth, TRL y Transformers. El autor mantiene al menos otro adaptador similar (qwen3-4b-marx-persona), lo que sugiere una serie de experimentos de personificacion sobre la misma base.
 
-Conviene advertir desde el principio de que la model card del autor es la plantilla por defecto de HuggingFace sin rellenar: no declara licencia, idiomas, datos de entrenamiento, hiperparametros, ni resultados de evaluacion. Cualquier dato que no aparezca aqui debe considerarse no disponible y verificado contra el modelo base Qwen3-4B antes de usarlo en produccion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+Conviene advertir desde el principio de que la model card del autor es la plantilla por defecto de Hugging Face sin rellenar: no declara licencia, idiomas, datos de entrenamiento, hiperparametros, ni resultados de evaluacion. Cualquier dato que no aparezca aqui debe considerarse no disponible y verificado contra el modelo base Qwen3-4B antes de usarlo en produccion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -85,7 +85,7 @@ No hay datos de rendimiento comparativo entre estos modelos en la informacion di
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/masterofnone00/qwen3-4b-jsmill-persona
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/masterofnone00/qwen3-4b-jsmill-persona
 - Modelo base indicado por el autor: https://huggingface.co/unsloth/qwen3-4b-unsloth-bnb-4bit
 - Modelo base original de Qwen: https://huggingface.co/Qwen/Qwen3-4B
 - Adaptador hermano del mismo autor: https://huggingface.co/masterofnone00/qwen3-4b-marx-persona

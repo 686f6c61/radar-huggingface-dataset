@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Meta-Llama-3-8B_rai_1.9.0_m_1.0.1_npu es una distribucion optimizada del modelo Meta Llama 3 de 8.000 millones de parametros, publicada por AMD en HuggingFace para su ejecucion sobre NPUs de la plataforma Ryzen AI. El modelo base fue desarrollado por Meta y esta empaquetado en formato ONNX con las herramientas de Ryzen AI (RAI 1.9.0) y el modelo de despliegue m_1.0.1_npu, lo que permite inferencia acelerada en hardware AMD con NPU integrada en lugar de recurrir a GPU dedicada.
+Meta-Llama-3-8B_rai_1.9.0_m_1.0.1_npu es una distribucion optimizada del modelo Meta Llama 3 de 8.000 millones de parametros, publicada por AMD en Hugging Face para su ejecucion sobre NPUs de la plataforma Ryzen AI. El modelo base fue desarrollado por Meta y esta empaquetado en formato ONNX con las herramientas de Ryzen AI (RAI 1.9.0) y el modelo de despliegue m_1.0.1_npu, lo que permite inferencia acelerada en hardware AMD con NPU integrada en lugar de recurrir a GPU dedicada.
 
-La relevancia de esta publicacion es practica: traslada un modelo de lenguaje de proposito general a un formato ejecutable en equipos con NPU (portatiles y mini-PC con Ryzen AI), reduciendo la dependencia de GPUs y el consumo energetico. El repositorio ocupa 5,4 GB, coherente con pesos en precision reducida para 8B de parametros, y esta restringido en HuggingFace (gated), por lo que requiere aceptar las condiciones de la licencia Llama 3 antes de la descarga.
+La relevancia de esta publicacion es practica: traslada un modelo de lenguaje de proposito general a un formato ejecutable en equipos con NPU (portatiles y mini-PC con Ryzen AI), reduciendo la dependencia de GPUs y el consumo energetico. El repositorio ocupa 5,4 GB, coherente con pesos en precision reducida para 8B de parametros, y esta restringido en Hugging Face (gated), por lo que requiere aceptar las condiciones de la licencia Llama 3 antes de la descarga.
 
 No se trata de un modelo nuevo ni de un fine-tuning: es el mismo Llama 3 8B de Meta, con arquitectura transformer densa y contexto de 8.192 tokens, adaptado por AMD para su runtime. Su interes esta en el despliegue en hardware Ryzen AI, no en mejoras de calidad respecto al original.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AMD Meta-Llama-3-8B_rai_1.9.0_m_1.0.1_npu | 8B | 8.192 (heredado) | ONNX (Ryzen AI) | Llama 3 | Gated en HuggingFace |
-| Meta Llama 3 8B (original) | 8B | 8.192 | safetensors | Llama 3 | Abierto en HuggingFace |
+| AMD Meta-Llama-3-8B_rai_1.9.0_m_1.0.1_npu | 8B | 8.192 (heredado) | ONNX (Ryzen AI) | Llama 3 | Gated en Hugging Face |
+| Meta Llama 3 8B (original) | 8B | 8.192 | safetensors | Llama 3 | Abierto en Hugging Face |
 | Mistral 7B | 7B | 32.768 | safetensors | Apache 2.0 | Abierto |
 | Gemma 2 9B | 9B | 8.192 | safetensors | Gemma Terms | Abierto con condiciones |
 
@@ -74,7 +74,7 @@ La comparativa se limita a datos estructurales; no hay benchmarks publicados par
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar la licencia Llama 3 en HuggingFace antes de la descarga.
+- Acceso restringido: requiere aceptar la licencia Llama 3 en Hugging Face antes de la descarga.
 - Licencia Llama 3: impone restricciones de uso comercial (limite de 700 millones de usuarios mensuales, obligaciones de atribucion y politicas de uso aceptable); revisar antes de produccion.
 - Idioma: declarado solo en ingles; el rendimiento en castellano no esta garantizado ni evaluado.
 - Contexto limitado a 8.192 tokens, inferior a alternativas como Mistral 7B.
@@ -87,7 +87,7 @@ La comparativa se limita a datos estructurales; no hay benchmarks publicados par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Meta-Llama-3-8B_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/Meta-Llama-3-8B_rai_1.9.0_m_1.0.1_npu
 - Modelo base Meta Llama 3 8B: https://huggingface.co/meta-llama/Meta-Llama-3-8B
 - Ryzen AI (AMD): https://www.amd.com/en/products/software/ryzen-ai.html
 - Licencia Llama 3: https://llama.meta.com/llama3/license/

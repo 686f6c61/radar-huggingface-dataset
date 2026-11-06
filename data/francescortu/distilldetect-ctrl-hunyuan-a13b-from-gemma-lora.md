@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/francescortu/DistillDetect-ctrl-hunyuan-a13b-from-gemma-lora
+- Repositorio Hugging Face: https://huggingface.co/francescortu/DistillDetect-ctrl-hunyuan-a13b-from-gemma-lora
 - Modelo base Hunyuan-A13B-Instruct: https://huggingface.co/tencent/Hunyuan-A13B-Instruct
 - GitHub de Hunyuan-A13B: https://github.com/Tencent-Hunyuan/Hunyuan-A13B
 - Página de modelos con tag "distilldetect": https://huggingface.co/models?other=distilldetect

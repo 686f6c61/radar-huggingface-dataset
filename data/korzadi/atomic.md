@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Korzadi/atomic es un modelo publicado en HuggingFace por el usuario Korzadi bajo licencia Apache 2.0. La model card asociada al repositorio no contiene ninguna descripcion tecnica: unicamente incluye la declaracion de licencia en el frontmatter YAML, sin secciones de arquitectura, entrenamiento, capacidades ni uso previsto. No se dispone, por tanto, de informacion verificable sobre que tipo de modelo es, que problema resuelve ni por que seria relevante.
+Korzadi/atomic es un modelo publicado en Hugging Face por el usuario Korzadi bajo licencia Apache 2.0. La model card asociada al repositorio no contiene ninguna descripcion tecnica: unicamente incluye la declaracion de licencia en el frontmatter YAML, sin secciones de arquitectura, entrenamiento, capacidades ni uso previsto. No se dispone, por tanto, de informacion verificable sobre que tipo de modelo es, que problema resuelve ni por que seria relevante.
 
 El repositorio no declara pipeline de inferencia, idiomas soportados ni etiquetas tecnicas mas alla de `region:us`, lo que impide clasificarlo dentro de una categoria funcional (texto, vision, audio, embeddings, etc.). Con cero descargas y un unico "like" en el momento de la consulta, se trata de un artefacto practicamente sin adopcion ni validacion por parte de la comunidad.
 
@@ -41,7 +41,7 @@ Tampoco se ha publicado informacion sobre el tokenizador, la ventana de contexto
 - Evaluacion exploratoria: un desarrollador podria clonar el repositorio y ejecutar una prueba minima de inferencia para determinar el tipo de modelo y sus entradas y salidas, pero esto no constituye un caso de uso productivo.
 - Integracion en prototipos internos: solo tendria sentido tras verificar manualmente los pesos, el tokenizador y el formato de salida, dado que no hay model card que describa el contrato de la API.
 - Publicacion como base para fine-tuning: requeriria primero confirmar la arquitectura y el tamano del checkpoint, informacion ausente en el repositorio.
-- Uso educativo o de investigacion sobre artefactos de HuggingFace: el caso podria ser el estudio de repositorios con documentacion minima, no el uso del modelo en si.
+- Uso educativo o de investigacion sobre artefactos de Hugging Face: el caso podria ser el estudio de repositorios con documentacion minima, no el uso del modelo en si.
 - Despliegue en produccion: no recomendable en el estado actual, al no existir informacion sobre sesgos, alucinacion, licencia de dependencias ni requisitos de hardware.
 
 ## Benchmarks y rendimiento
@@ -62,7 +62,7 @@ No disponible. Sin conocer la categoria, el tamano ni las capacidades del modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Korzadi/atomic | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Korzadi/atomic | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -73,11 +73,11 @@ No disponible. Sin conocer la categoria, el tamano ni las capacidades del modelo
 - Cobertura idiomatica: no declarada; no se puede asumir soporte de castellano ni de ningun otro idioma.
 - Licencia: Apache 2.0 permite uso comercial y modificacion, pero esta licencia cubre los pesos publicados; las dependencias del codigo de entrenamiento o inferencia podrian tener terminos distintos y no se documentan.
 - Cero descargas y un unico "like": sin senales de validacion por la comunidad, lo que incrementa el riesgo de que el repositorio contenga artefactos incompletos o no funcionales.
-- Pipeline no declarado: las herramientas automaticas de HuggingFace no podran inferir la tarea, lo que complica el uso via `transformers` o `pipeline`.
+- Pipeline no declarado: las herramientas automaticas de Hugging Face no podran inferir la tarea, lo que complica el uso via `transformers` o `pipeline`.
 - Sin informacion de versionado ni changelog: no se puede evaluar la madurez ni el mantenimiento del proyecto.
 - Fecha de creacion y actualizacion identicas (2026-11-05): no hay evidencia de iteraciones posteriores ni de correccion de errores.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Korzadi/atomic
+- Repositorio en Hugging Face: https://huggingface.co/Korzadi/atomic
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

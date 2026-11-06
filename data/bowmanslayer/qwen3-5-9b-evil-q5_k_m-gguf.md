@@ -86,7 +86,7 @@ No se dispone en la información proporcionada de comparaciones con modelos de o
 
 ## Enlaces
 
-- Repositorio HuggingFace (este GGUF): https://huggingface.co/bowmanslayer/Qwen3.5-9B-Evil-Q5_K_M-GGUF
+- Repositorio Hugging Face (este GGUF): https://huggingface.co/bowmanslayer/Qwen3.5-9B-Evil-Q5_K_M-GGUF
 - Modelo base BF16: https://huggingface.co/bowmanslayer/Qwen3.5-9B-Evil-BF16
 - Variante W4A16: https://huggingface.co/bowmanslayer/Qwen3.5-9B-Evil-W4A16
 - Variante Q4_K_M-GGUF: https://huggingface.co/bowmanslayer/Qwen3.5-9B-Evil-Q4_K_M-GGUF

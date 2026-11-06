@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto que perm
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Abliterated-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Abliterated-GGUF
 - Modelo base: https://huggingface.co/andrewting/Swift-Qwen3.8-27B-Abliterated
 - Texto de la licencia: https://huggingface.co/andrewting/Swift-Qwen3.8-27B-Abliterated/blob/main/LICENSE
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Swift-Qwen3.8-27B-Abliterated-GGUF

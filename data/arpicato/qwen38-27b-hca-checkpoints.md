@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `arpicato/qwen38-27b-hca-checkpoints` es un espacio de HuggingFace publicado por el usuario arpicato que contiene checkpoints de un modelo cuyo nombre sugiere la familia Qwen (posiblemente una variante de 27B de parámetros). No se ha publicado ninguna documentación asociada: ni model card descriptiva, ni paper, ni blog técnico, ni ficha de pipeline, licencia o idiomas. El repositorio tiene un tamaño de 181,1 GB y acumula 0 descargas y 1 like desde su creación el 12 de septiembre de 2026.
+El repositorio `arpicato/qwen38-27b-hca-checkpoints` es un espacio de Hugging Face publicado por el usuario arpicato que contiene checkpoints de un modelo cuyo nombre sugiere la familia Qwen (posiblemente una variante de 27B de parámetros). No se ha publicado ninguna documentación asociada: ni model card descriptiva, ni paper, ni blog técnico, ni ficha de pipeline, licencia o idiomas. El repositorio tiene un tamaño de 181,1 GB y acumula 0 descargas y 1 like desde su creación el 12 de septiembre de 2026.
 
 La relevancia de esta ficha es, por tanto, metodológica: sirve para dejar constancia de que un artefacto de este tamaño existe y es públicamente accesible, pero no puede evaluarse técnicamente con la información disponible. El único metadato verificable, además del tamaño, es la etiqueta `region:us` y las fechas de creación y actualización (14 de septiembre de 2026, dos días después de la creación), lo que indica actividad reciente en el repositorio.
 
@@ -87,6 +87,6 @@ No disponible. Al desconocerse la arquitectura, el contexto, la licencia y el re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arpicato/qwen38-27b-hca-checkpoints
-- Perfil del autor en HuggingFace: https://huggingface.co/arpicato
+- Hugging Face: https://huggingface.co/arpicato/qwen38-27b-hca-checkpoints
+- Perfil del autor en Hugging Face: https://huggingface.co/arpicato
 - Paper, blog técnico, repositorio de código o demo: no disponible. La búsqueda web no devolvió ningún enlace relacionado con el modelo.

@@ -89,7 +89,7 @@ El autor recomienda explícitamente usar Wiself/Holodeck-Lounge-MTP en lugar de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wiself/Holodeck-Lounge-Regressed-MTP
+- Modelo en Hugging Face: https://huggingface.co/Wiself/Holodeck-Lounge-Regressed-MTP
 - Modelo original (recomendado por el autor): https://huggingface.co/Wiself/Holodeck-Lounge-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Modelo intermedio: https://huggingface.co/nightmedia/Qwen3.5-9B-Holodeck-Lounge

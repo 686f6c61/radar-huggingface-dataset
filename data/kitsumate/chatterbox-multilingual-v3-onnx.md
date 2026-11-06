@@ -91,7 +91,7 @@ Los datos numericos de parametros y benchmarks de los modelos comparados no esta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KitsuMate/chatterbox-multilingual-v3-onnx
+- Modelo en Hugging Face: https://huggingface.co/KitsuMate/chatterbox-multilingual-v3-onnx
 - Modelo original (Resemble AI): https://huggingface.co/ResembleAI/chatterbox
 - Sitio de Resemble AI: https://www.resemble.ai/
 - Revision del checkpoint V3 usada en la exportacion: `5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18` (repositorio `ResembleAI/chatterbox`)

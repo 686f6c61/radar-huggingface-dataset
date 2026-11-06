@@ -74,15 +74,15 @@ Comparacion declarada por el autor frente a Gboard 14.2 (copia incluida en la im
 - Memoria en RAM: el fichero pesa 4,66 MB y los tensores int8 en memoria ocupan del orden de 4-5 MB, mas la lista de palabras; el proceso completo cabe holgadamente en cualquier dispositivo con unas pocas decenas de MB libres.
 - GPU recomendadas: ninguna. No hay backend CUDA, ROCm ni Metal; el runner es C++ puro.
 - Compatibilidad con GPU de consumo: irrelevante, el modelo esta pensado para ejecutarse en CPU y concretamente dentro del proceso del teclado en KDE Plasma.
-- Opciones de despliegue: unicamente el runner propio del proyecto Swipe Keyboard (`engine/src/nwp_model.cpp` para carga y `engine/src/nwp_predictor.cpp` para la logica de mezcla y fallback). No hay soporte para vLLM, llama.cpp, Ollama, TGI, transformers ni ONNX Runtime; la libreria en HuggingFace figura como `custom`.
+- Opciones de despliegue: unicamente el runner propio del proyecto Swipe Keyboard (`engine/src/nwp_model.cpp` para carga y `engine/src/nwp_predictor.cpp` para la logica de mezcla y fallback). No hay soporte para vLLM, llama.cpp, Ollama, TGI, transformers ni ONNX Runtime; la libreria en Hugging Face figura como `custom`.
 - Latencia y throughput: no disponible. No se han publicado medidas de tiempo por inferencia. Por la naturaleza del modelo (LSTM de una capa, 4,3 M de parametros, ventana de 20 palabras) el coste por prediccion es de decenas de miles de operaciones, varios ordenes de magnitud por debajo de un transformer pequeno, pero se trata de una estimacion estructural y no de un dato medido.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| youcoded/next-word-english | ~4,3 M (int8, 4,66 MB) | Ultimas 20 palabras | LSTM con proyeccion + mezcla con n-gramas | ODC-BY 1.0 + CC-BY 2.0 FR | HuggingFace, binario propio |
-| youcoded/next-word-french | No disponible en la informacion proporcionada | No disponible | LSTM int8 + n-gramas (mismo diseno, otro idioma) | ODC-BY y CC-BY (variante francesa) | HuggingFace, binario propio |
+| youcoded/next-word-english | ~4,3 M (int8, 4,66 MB) | Ultimas 20 palabras | LSTM con proyeccion + mezcla con n-gramas | ODC-BY 1.0 + CC-BY 2.0 FR | Hugging Face, binario propio |
+| youcoded/next-word-french | No disponible en la informacion proporcionada | No disponible | LSTM int8 + n-gramas (mismo diseno, otro idioma) | ODC-BY y CC-BY (variante francesa) | Hugging Face, binario propio |
 | Gboard 14.2 (modelo interno de siguiente palabra) | No disponible | No disponible | Modelo neuronal descrito en arXiv 2305.18465, con aprendizaje en dispositivo | Propietaria | Solo en la app de Google; no distribuible |
 | Paquete de n-gramas del propio teclado (sin modelo neuronal) | No disponible | Pares y tripletas exactas | Tabla estadistica de n-gramas | Ligada al proyecto Swipe Keyboard | Incluido como fallback del teclado |
 
@@ -105,13 +105,13 @@ Frente a Gboard, la comparacion solo es valida en el escenario medido por el aut
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/youcoded/next-word-english
+- Modelo en Hugging Face: https://huggingface.co/youcoded/next-word-english
 - Aviso de licencia (NOTICE.md): https://huggingface.co/youcoded/next-word-english/blob/main/NOTICE.md
 - Metodologia de evaluacion (METHODS.md): https://huggingface.co/youcoded/next-word-english/blob/main/METHODS.md
 - Codigo, scripts y tests del teclado (rama de desarrollo): https://github.com/itsdestin/swipe-keyboard/tree/feature/179-engine-in-keyboard
 - Paper de referencia sobre los modelos de siguiente palabra de Gboard: https://arxiv.org/abs/2305.18465
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Modelo hermano en frances: https://huggingface.co/youcoded/next-word-french
-- Perfil del autor en HuggingFace (modelos en espanol y aleman del mismo diseno): https://huggingface.co/youcoded
+- Perfil del autor en Hugging Face (modelos en espanol y aleman del mismo diseno): https://huggingface.co/youcoded
 - Sitio del autor: https://youcoded.ai/
 - Repositorio del asistente youcoded: https://github.com/itsdestin/youcoded

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sarkhel1234/RoBERTa-Large` es un repositorio de HuggingFace publicado por el usuario sarkhel1234 que acompaña al artículo "Kurdish RoBERTa-Large for Part-of-Speech Tagging in Sorani Kurdish: A Hybrid-Corpus Benchmark Against mBERT and KuBERT". No se trata de un checkpoint con pesos publicados (el tamaño del repositorio es de 0,0 GB), sino del código de preprocesado, entrenamiento y evaluación de cuatro etiquetadores de categorías gramaticales (POS) para kurdo sorani: mBERT, KuBERT, Kurdish RoBERTa-Large y Kurdish RoBERTa-Large con una capa CRF de cadena lineal superpuesta.
+`sarkhel1234/RoBERTa-Large` es un repositorio de Hugging Face publicado por el usuario sarkhel1234 que acompaña al artículo "Kurdish RoBERTa-Large for Part-of-Speech Tagging in Sorani Kurdish: A Hybrid-Corpus Benchmark Against mBERT and KuBERT". No se trata de un checkpoint con pesos publicados (el tamaño del repositorio es de 0,0 GB), sino del código de preprocesado, entrenamiento y evaluación de cuatro etiquetadores de categorías gramaticales (POS) para kurdo sorani: mBERT, KuBERT, Kurdish RoBERTa-Large y Kurdish RoBERTa-Large con una capa CRF de cadena lineal superpuesta.
 
 El modelo subyacente es una adaptación al kurdo sorani de la arquitectura RoBERTa-large (transformer encoder de 24 capas y aproximadamente 355 millones de parámetros), orientada a una tarea discriminativa de etiquetado a nivel de token con un esquema de 8 etiquetas: nombre, verbo, adjetivo, adverbio, pronombre, partícula, numeral y puntuación. El interés actual del repositorio reside en que documenta un protocolo experimental reproducible (split 80/10/10 a nivel de oración con semilla 42, evaluación única sobre test, métricas a nivel de palabra) sobre un corpus híbrido de kurdo sorani, un idioma de bajos recursos.
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Kurdish RoBERTa-Large (este repo) | ~355 M (backbone) | 512 tokens | POS tagging sorani, con y sin CRF | código MIT; pesos no disponibles | scripts en HF; requiere reentrenar |
 | mBERT | no disponible en la información (modelo base multilingüe, ~178 M según el modelo original) | 512 tokens | POS tagging sorani | Apache 2.0 (modelo base) | pesos públicos vía Transformers |
 | KuBERT | no disponible en la información | no disponible | POS tagging sorani (referencia específica para kurdo) | no disponible | no disponible en la información |
-| roberta-large (FacebookAI) | ~355 M | 512 tokens | fill-mask en inglés, no etiquetado POS en kurdo | MIT (modelo base) | pesos públicos en HuggingFace |
+| roberta-large (FacebookAI) | ~355 M | 512 tokens | fill-mask en inglés, no etiquetado POS en kurdo | MIT (modelo base) | pesos públicos en Hugging Face |
 
 La comparación cuantitativa de rendimiento entre los cuatro sistemas no puede completarse: el artículo propone precisamente ese benchmark, pero los valores de macro-F1 no están en la información disponible. La diferencia metodológica relevante frente a usar mBERT o KuBERT directamente es la cabeza CRF, que modela transiciones entre etiquetas y no solo emisiones independientes.
 
@@ -96,7 +96,7 @@ La comparación cuantitativa de rendimiento entre los cuatro sistemas no puede c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sarkhel1234/RoBERTa-Large
+- Repositorio en Hugging Face: https://huggingface.co/sarkhel1234/RoBERTa-Large
 - Dataset del corpus: https://huggingface.co/datasets/sarkhel1234/Kurdish_POS (DOI: 10.57967/hf/9940)
 - Modelo base RoBERTa-large: https://huggingface.co/FacebookAI/roberta-large
 - Artículo citado en la model card: "Kurdish RoBERTa-Large for Part-of-Speech Tagging in Sorani Kurdish: A Hybrid-Corpus Benchmark Against mBERT and KuBERT" (no se proporciona URL en la información disponible)

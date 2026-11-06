@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gpt-news-model es un modelo de clasificación de texto publicado por el usuario abhishekjainin88 en HuggingFace, obtenido mediante fine-tuning del modelo base DistilGPT2 (distilbert/distilgpt2). El repositorio declara la etiqueta de pipeline text-classification, licencia Apache 2.0 y un total de 81.915.648 parámetros en formato safetensors, coherente con el tamaño de DistilGPT2 (~82 millones). El autor no documenta ni la tarea concreta de clasificación ni las etiquetas de salida, y la model card se generó automáticamente desde el Trainer.
+gpt-news-model es un modelo de clasificación de texto publicado por el usuario abhishekjainin88 en Hugging Face, obtenido mediante fine-tuning del modelo base DistilGPT2 (distilbert/distilgpt2). El repositorio declara la etiqueta de pipeline text-classification, licencia Apache 2.0 y un total de 81.915.648 parámetros en formato safetensors, coherente con el tamaño de DistilGPT2 (~82 millones). El autor no documenta ni la tarea concreta de clasificación ni las etiquetas de salida, y la model card se generó automáticamente desde el Trainer.
 
 El modelo se entrenó durante 3 épocas con un learning rate de 2e-05, batch de 16 y optimizador AdamW (fused), alcanzando métricas de validación en torno a 0,8775 de accuracy y 0,8763-0,8769 de F1 en la tabla de entrenamiento, aunque la cabecera de la model card declara valores ligeramente distintos (accuracy 0,898, F1 ponderado 0,8982, F1 macro 0,8984) que no coinciden con dicha tabla. No se especifica el dataset de entrenamiento ni el conjunto de evaluación.
 
@@ -28,7 +28,7 @@ Su relevancia es limitada: cuenta con 0 descargas y 0 likes, no publica benchmar
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de DistilGPT2, un transformer decoder causal de 6 capas, 12 cabezas de atención y 768 dimensiones ocultas que fue destilado a partir de GPT-2 por el equipo de HuggingFace. Sobre esa base, el autor ha aplicado un fine-tuning supervisado con una cabeza de clasificación, aunque la model card no detalla si se congelaron capas, qué pooling se emplea ni cómo se mapean los logits a etiquetas. Tampoco se identifica el conjunto de datos: la model card indica literalmente "unknown dataset" y deja las secciones de descripción, usos previstos y datos de entrenamiento como "More information needed".
+El modelo parte de DistilGPT2, un transformer decoder causal de 6 capas, 12 cabezas de atención y 768 dimensiones ocultas que fue destilado a partir de GPT-2 por el equipo de Hugging Face. Sobre esa base, el autor ha aplicado un fine-tuning supervisado con una cabeza de clasificación, aunque la model card no detalla si se congelaron capas, qué pooling se emplea ni cómo se mapean los logits a etiquetas. Tampoco se identifica el conjunto de datos: la model card indica literalmente "unknown dataset" y deja las secciones de descripción, usos previstos y datos de entrenamiento como "More information needed".
 
 La configuración de entrenamiento declarada es: learning rate 2e-05, batch de entrenamiento y evaluación de 16, semilla 42, optimizador AdamW con betas (0,9, 0,999) y epsilon 1e-08, scheduler lineal y 3 épocas completas (450 pasos, 150 por época). No se menciona ningún uso de RLHF, DPO ni técnicas de decodificación especulativa. Las versiones de framework indicadas son Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.23.1. Existe una discrepancia sin explicar entre las métricas de la cabecera de la model card y las de la tabla de entrenamiento, lo que resta fiabilidad a la documentación.
 
@@ -78,9 +78,9 @@ La cabecera de la model card declara, para el conjunto de evaluación, un loss d
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| abhishekjainin88/gpt-news-model | 81,9 M | no disponible (base: 1.024) | Clasificación (etiquetas no documentadas) | Apache 2.0 | HuggingFace, 0 descargas |
-| distilbert/distilgpt2 | 81,9 M | 1.024 tokens | Generación de texto causal | Apache 2.0 | HuggingFace, ampliamente usado |
-| distilbert-base-uncased-finetuned-sst-2-english | 66,9 M | 512 tokens | Análisis de sentimiento (2 clases) | Apache 2.0 | HuggingFace, muy usado y validado |
+| abhishekjainin88/gpt-news-model | 81,9 M | no disponible (base: 1.024) | Clasificación (etiquetas no documentadas) | Apache 2.0 | Hugging Face, 0 descargas |
+| distilbert/distilgpt2 | 81,9 M | 1.024 tokens | Generación de texto causal | Apache 2.0 | Hugging Face, ampliamente usado |
+| distilbert-base-uncased-finetuned-sst-2-english | 66,9 M | 512 tokens | Análisis de sentimiento (2 clases) | Apache 2.0 | Hugging Face, muy usado y validado |
 
 La comparación es limitada porque no se conoce la tarea exacta de gpt-news-model ni sus etiquetas de salida. Frente al DistilGPT2 original, este modelo añade una cabeza de clasificación pero mantiene el mismo recuento de parámetros. Frente a clasificadores consolidados como DistilBERT fine-tuneado para SST-2, carece de documentación, validación de la comunidad y benchmarks reproducibles.
 
@@ -99,6 +99,6 @@ La comparación es limitada porque no se conoce la tarea exacta de gpt-news-mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhishekjainin88/gpt-news-model
+- Modelo en Hugging Face: https://huggingface.co/abhishekjainin88/gpt-news-model
 - Modelo base DistilGPT2: https://huggingface.co/distilgpt2
 - Modelo base referenciado en las etiquetas (distilbert/distilgpt2): https://huggingface.co/distilbert/distilgpt2

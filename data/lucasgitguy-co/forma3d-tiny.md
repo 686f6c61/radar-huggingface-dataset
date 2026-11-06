@@ -71,7 +71,7 @@ Evaluación sobre 14 objetos de test independientes y 60 vistas de test. El auto
 
 | Modelo | Parámetros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Forma3D-Tiny v0.2 | 306.321 | Image-to-Gaussian (PLY) | No aplica | Apache-2.0 | HuggingFace |
+| Forma3D-Tiny v0.2 | 306.321 | Image-to-Gaussian (PLY) | No aplica | Apache-2.0 | Hugging Face |
 | InstantMesh | No disponible en la información | Image-to-mesh | No aplica | No disponible | Mencionado solo como referencia de no-destilación |
 | Hunyuan3D | No disponible en la información | Image-to-3D | No aplica | No disponible | Mencionado solo como referencia de no-destilación |
 | Hi3D | No disponible en la información | Image-to-3D | No aplica | No disponible | Mencionado solo como referencia de no-destilación |
@@ -94,7 +94,7 @@ No se dispone de datos de parámetros, licencia ni benchmarks de los modelos alt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lucasgitguy-co/forma3d-tiny
+- Hugging Face: https://huggingface.co/Lucasgitguy-co/forma3d-tiny
 - Modelo base: https://huggingface.co/Lucasgitguy-co/image3d-student
 - Dataset Objaverse: https://huggingface.co/datasets/allenai/objaverse
 - Dataset Scenario Labs 3D Collection: https://huggingface.co/datasets/scenario-labs/3d-collection

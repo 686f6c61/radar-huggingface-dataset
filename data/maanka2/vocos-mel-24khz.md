@@ -6,7 +6,7 @@ Vocos-mel-24kHz es un vocoder neuronal (sintetizador de forma de onda) que convi
 
 La arquitectura subyacente proviene del articulo "Vocos: Closing the gap between time-domain and Fourier-based neural vocoders for high-quality audio synthesis" (arXiv:2306.00814, 2023). Vocos combina un backbone tipo ConvNeXt con una cabeza que predice coeficientes de STFT complejos y aplica una iSTFT para volver al dominio temporal, en lugar de generar la onda muestra a muestra como hacen los vocoders puramente time-domain (HiFi-GAN). El resultado es un modelo de 13.532.674 parametros (segun los pesos safetensors) capaz de sintetizar audio con una latencia y un coste computacional muy inferiores a los de un vocoder autoregresivo.
 
-Su relevancia practica es doble. Por un lado, es una pieza de infraestructura habitual en pipelines de texto-a-voz y de codecs neuronales, donde actua como etapa final de reconstruccion. Por otro, la version `transformers` elimina la necesidad de cargar codigo externo del repositorio original, lo que simplifica su integracion en `pipelines` y su despliegue junto a otros modelos de audio de HuggingFace.
+Su relevancia practica es doble. Por un lado, es una pieza de infraestructura habitual en pipelines de texto-a-voz y de codecs neuronales, donde actua como etapa final de reconstruccion. Por otro, la version `transformers` elimina la necesidad de cargar codigo externo del repositorio original, lo que simplifica su integracion en `pipelines` y su despliegue junto a otros modelos de audio de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrada / salida | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| maanka2/vocos-mel-24khz (este) | 13.532.674 | Mel-espectrograma a audio 24 kHz | Vocos (ConvNeXt + cabeza Fourier) | MIT | HuggingFace, libreria `transformers` |
-| charactr/vocos-mel-24khz | No disponible en la informacion proporcionada | Mel-espectrograma a audio 24 kHz | Vocos (implementacion original) | No disponible en la informacion proporcionada | HuggingFace |
-| hf-audio/vocos-encodec-24khz | No disponible en la informacion proporcionada | Tokens de EnCodec a audio 24 kHz | Vocos con entrada de tokens | No disponible en la informacion proporcionada | HuggingFace |
+| maanka2/vocos-mel-24khz (este) | 13.532.674 | Mel-espectrograma a audio 24 kHz | Vocos (ConvNeXt + cabeza Fourier) | MIT | Hugging Face, libreria `transformers` |
+| charactr/vocos-mel-24khz | No disponible en la informacion proporcionada | Mel-espectrograma a audio 24 kHz | Vocos (implementacion original) | No disponible en la informacion proporcionada | Hugging Face |
+| hf-audio/vocos-encodec-24khz | No disponible en la informacion proporcionada | Tokens de EnCodec a audio 24 kHz | Vocos con entrada de tokens | No disponible en la informacion proporcionada | Hugging Face |
 | HiFi-GAN (referencia de la literatura) | No disponible en la informacion proporcionada | Mel-espectrograma a audio | Vocoder GAN time-domain | No disponible en la informacion proporcionada | Multiples repositorios |
 
 Los datos de parametros, licencia y contexto de los modelos alternativos no se incluyen en la informacion proporcionada, por lo que no se realiza una comparacion cuantitativa de rendimiento.
@@ -86,10 +86,10 @@ Los datos de parametros, licencia y contexto de los modelos alternativos no se i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maanka2/vocos-mel-24khz
+- Modelo en Hugging Face: https://huggingface.co/maanka2/vocos-mel-24khz
 - Modelo original del que deriva: https://huggingface.co/charactr/vocos-mel-24khz
 - Variante basada en EnCodec: https://huggingface.co/hf-audio/vocos-encodec-24khz
-- Articulo de Vocos (pagina de papers de HuggingFace): https://huggingface.co/papers/2306.00814
+- Articulo de Vocos (pagina de papers de Hugging Face): https://huggingface.co/papers/2306.00814
 - Articulo en arXiv: https://arxiv.org/abs/2306.00814
 - Ejemplos de audio de referencia: https://huggingface.co/datasets/bezzam/vocos-examples
 - Repositorio de la implementacion original: no disponible en la informacion proporcionada (la model card no incluye el enlace al repositorio de codigo)

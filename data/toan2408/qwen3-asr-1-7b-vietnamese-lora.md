@@ -85,7 +85,7 @@ La principal ventaja es la mejora del WER sin aumentar el tamaño del modelo bas
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/Toan2408/qwen3-asr-1.7b-vietnamese-lora)
+- [Hugging Face del adaptador](https://huggingface.co/Toan2408/qwen3-asr-1.7b-vietnamese-lora)
 - [Modelo base Qwen3-ASR-1.7B](https://huggingface.co/Qwen/Qwen3-ASR-1.7B)
 - [Repositorio oficial de Qwen3-ASR en GitHub](https://github.com/QwenLM/Qwen3-ASR)
 - [Repositorio de referencia con información sobre el entrenamiento](https://github.com/splendor1811/Qwen-ASR)

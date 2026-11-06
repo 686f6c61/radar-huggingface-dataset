@@ -71,6 +71,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables, ni d
 - Verificacion obligatoria antes de produccion: cualquier integracion deberia validar primero la arquitectura real, las metricas y el regimen de licencia.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/U2_audio_scratch_locktext
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/U2_audio_scratch_locktext
 - Indice de la serie de checkpoints: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio de codigo o demo: no disponible

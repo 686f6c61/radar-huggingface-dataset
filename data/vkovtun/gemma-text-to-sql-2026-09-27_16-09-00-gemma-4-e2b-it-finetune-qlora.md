@@ -84,7 +84,7 @@ No se dispone de modelos comparables con datos verificables en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vkovtun/gemma-text-to-sql-2026-09-27_16.09.00-gemma-4-E2B-it-finetune-QLORA
+- Modelo en Hugging Face: https://huggingface.co/vkovtun/gemma-text-to-sql-2026-09-27_16.09.00-gemma-4-E2B-it-finetune-QLORA
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Librería TRL: https://github.com/huggingface/trl
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/viktor-kovtun/gemma-text-to-sql/runs/whhhx1h8

@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Cache KV | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HyLo-Llama-6MLA22GDN-8K-SFT | 4,27B (6 MLA + 22 Gated DeltaNet) | 8.192 tokens entrenados | 2,0% del modelo base | amd-hybrid-models-research-only-rail-ms (solo investigacion); frontmatter declara apache-2.0 | HuggingFace, 0 descargas |
+| HyLo-Llama-6MLA22GDN-8K-SFT | 4,27B (6 MLA + 22 Gated DeltaNet) | 8.192 tokens entrenados | 2,0% del modelo base | amd-hybrid-models-research-only-rail-ms (solo investigacion); frontmatter declara apache-2.0 | Hugging Face, 0 descargas |
 | meta-llama/Llama-3.2-3B-Instruct | 3,21B (transformer denso) | 128.000 tokens segun la documentacion de Meta | Completa | Llama 3.2 Community License | Ampliamente desplegado |
 | meta-llama/Llama-3.1-8B-Instruct | 8,03B (transformer denso) | 128.000 tokens segun la documentacion de Meta | Completa | Llama 3.1 Community License | Ampliamente desplegado |
 
@@ -97,7 +97,7 @@ La comparacion directa con alternativas hibridas de la misma categoria (por ejem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/HyLo-Llama-6MLA22GDN-8K-SFT
+- Modelo en Hugging Face: https://huggingface.co/amd/HyLo-Llama-6MLA22GDN-8K-SFT
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Profesor de destilacion: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Paper principal (Long-Context Aware Upcycling): https://arxiv.org/abs/2604.24715

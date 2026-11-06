@@ -115,7 +115,7 @@ La comparación con alternativas de la misma tarea fuera de este repositorio se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssg1/2026-24679-print-time-autogluon-regressor
+- Modelo en Hugging Face: https://huggingface.co/ssg1/2026-24679-print-time-autogluon-regressor
 - Dataset de origen: https://huggingface.co/datasets/yennik16/3d-print-jobs-tabular
 - Documentación de AutoGluon Tabular: no disponible en la información proporcionada
 - Paper o blog técnico del modelo: no disponible

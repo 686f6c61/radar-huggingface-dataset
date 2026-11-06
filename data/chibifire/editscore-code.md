@@ -64,7 +64,7 @@ No se dispone de información sobre modelos comparables en la fuente consultada.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/chibifire/EditScore-code
+- Hugging Face del modelo: https://huggingface.co/chibifire/EditScore-code
 - Colección de modelos EditScore: https://huggingface.co/collections/EditScore/editscore-68d8e27ee676981221db3cfe
 - Repositorio GitHub: https://github.com/VectorSpaceLab/EditScore
 - Paper principal: https://arxiv.org/abs/2509.23909

@@ -81,7 +81,7 @@ Los recuentos de parametros de las alternativas son valores de referencia de sus
 
 | Modelo | Parametros (referencia) | Entrada | Exactitud en la informacion disponible | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MMFM ResNet-18 (este repositorio) | ~11,2 M | Imagen, 1 o 9 canales | 0,599-0,992 segun dataset (ver tabla anterior) | cc-by-4.0 | 8 checkpoints en HuggingFace |
+| MMFM ResNet-18 (este repositorio) | ~11,2 M | Imagen, 1 o 9 canales | 0,599-0,992 segun dataset (ver tabla anterior) | cc-by-4.0 | 8 checkpoints en Hugging Face |
 | LG-CAFN (articulo de BreastDM) | No disponible | DCE-MRI | 0,882 en BreastDM (el checkpoint ResNet-18 queda a 0,002) | No disponible | No distribuido en este repositorio |
 | MMFM fusion de 3 ramas | No disponible | Multimodal | No disponible | No disponible | Codigo en el repositorio MMFM; pesos no incluidos aqui |
 | EfficientNet-B0 | ~5,3 M | Imagen RGB | No entrenado ni evaluado en esta informacion | No disponible en esta ficha | Disponible como arquitectura generica en torchvision |
@@ -109,7 +109,7 @@ No se han encontrado en la busqueda web resultados relevantes sobre este modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/noe95/mmfm-breast-imaging-checkpoints
+- Modelo en Hugging Face: https://huggingface.co/noe95/mmfm-breast-imaging-checkpoints
 - Repositorio de codigo MMFM: https://github.com/NouranFadlallah/MMFM
 - Informe completo y metodologia: `docs/latex/main.tex` en el repositorio MMFM
 - Informe de resultados: `docs/results_report.md` en el repositorio MMFM

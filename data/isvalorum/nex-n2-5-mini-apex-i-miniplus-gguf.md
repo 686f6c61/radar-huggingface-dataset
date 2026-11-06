@@ -100,7 +100,7 @@ No se dispone de comparativas con otros modelos (por ejemplo, familias MoE de ta
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/IsValorum/Nex-N2.5-mini-APEX-I-MiniPlus-GGUF
+- Repositorio del modelo en Hugging Face: https://huggingface.co/IsValorum/Nex-N2.5-mini-APEX-I-MiniPlus-GGUF
 - Modelo base: https://huggingface.co/nex-agi/Nex-N2.5-mini
 - Ficheros incluidos: `Nex-N2.5-mini.APEX-I-MiniPlus.gguf` y `mmproj-nex-agi_Nex-N2.5-mini-Q8_0.gguf` (disponibles en la pestaña de archivos del repositorio)
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante al modelo (los resultados devueltos correspondían a servicios de correo electrónico y no guardan relación con el tema)

@@ -22,7 +22,7 @@ La relevancia de este repositorio es práctica: permite ejecutar un modelo de ap
 | Formato de pesos | GGUF |
 | Repositorio | mradermacher/DR-GRPO-Qwen3-4B-GGUF |
 | Modelo de origen | opsd-genrm/DR-GRPO-Qwen3-4B |
-| Fecha de creacion | 2026-10-04 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-04 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -55,7 +55,7 @@ Dado que Qwen3-4B es un transformer denso de tipo decoder-only con atención cau
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repositorio GGUF ni los metadatos de HuggingFace incluyen puntuaciones de MMLU, HumanEval, GSM8K, ARC, MT-Bench ni de ningún otro conjunto de evaluación. Tampoco se han publicado comparaciones con el modelo base Qwen3-4B que permitan cuantificar el efecto del ajuste con GRPO.
+No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repositorio GGUF ni los metadatos de Hugging Face incluyen puntuaciones de MMLU, HumanEval, GSM8K, ARC, MT-Bench ni de ningún otro conjunto de evaluación. Tampoco se han publicado comparaciones con el modelo base Qwen3-4B que permitan cuantificar el efecto del ajuste con GRPO.
 
 ## Requisitos de hardware
 
@@ -73,7 +73,7 @@ Estimaciones derivadas del número de parámetros (aproximadamente 4.000 millone
 
 | Modelo | Parametros | Contexto | Formato / despliegue | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/DR-GRPO-Qwen3-4B-GGUF | ~4B (derivado del nombre) | No disponible | GGUF, llama.cpp | No disponible | HuggingFace, 0 descargas |
+| mradermacher/DR-GRPO-Qwen3-4B-GGUF | ~4B (derivado del nombre) | No disponible | GGUF, llama.cpp | No disponible | Hugging Face, 0 descargas |
 | Qwen/Qwen3-4B | 4B | 32.768 nativos, 131.072 con YaRN | safetensors, transformers, vLLM | Apache 2.0 | Ampliamente disponible |
 | Qwen/Qwen2.5-3B-Instruct | 3B | 32.768 | safetensors, GGUF comunitarios | Apache 2.0 (Qwen2.5-3B) | Ampliamente disponible |
 | meta-llama/Llama-3.2-3B-Instruct | 3B | 131.072 | safetensors, GGUF | Llama 3.2 Community License | Requiere aceptar términos |

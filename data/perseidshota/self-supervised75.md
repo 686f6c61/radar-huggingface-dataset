@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`perseidshota/self-supervised75` es un repositorio de HuggingFace publicado por el usuario `perseidshota` que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado en el sentido habitual. La model card lo describe explicitamente como un conjunto de notas de investigacion y un esbozo de experimento sobre aprendizaje autosupervisado, con dos ficheros de texto (`summary.md` y `README.md`) como artefactos principales. El autor indica de forma explicita que no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado.
+`perseidshota/self-supervised75` es un repositorio de Hugging Face publicado por el usuario `perseidshota` que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado en el sentido habitual. La model card lo describe explicitamente como un conjunto de notas de investigacion y un esbozo de experimento sobre aprendizaje autosupervisado, con dos ficheros de texto (`summary.md` y `README.md`) como artefactos principales. El autor indica de forma explicita que no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado.
 
 El dato de parametros totales que reporta la plataforma es de 24.832, una cifra que no corresponde a ningun modelo transformer funcional y que probablemente refleja el recuento de tensores de un fichero safetensors residual o de prueba. El tamano del repositorio es de 0,0 GB, lo que refuerza la conclusion de que no hay pesos de modelo reales disponibles para descarga. La licencia declarada es MIT.
 
@@ -40,7 +40,7 @@ El unico artefacto sustantivo es `summary.md`, descrito como la nota principal. 
 
 - Revision metodologica de un diseno experimental: usar `summary.md` como plantilla para identificar factores de confusion y definir lineas base emparejadas antes de lanzar un experimento de autosupervision.
 - Docencia sobre practicas de publicacion: emplear el repositorio como ejemplo de separacion explicita entre hipotesis y resultados, util en seminarios de metodologia de investigacion en ML.
-- Auditoria de repositorios en HuggingFace: usar este caso para entrenar criterios de triaje que detecten repositorios etiquetados como modelos pero sin pesos ni pipeline, antes de asignar recursos de evaluacion.
+- Auditoria de repositorios en Hugging Face: usar este caso para entrenar criterios de triaje que detecten repositorios etiquetados como modelos pero sin pesos ni pipeline, antes de asignar recursos de evaluacion.
 - Planificacion de benchmarks: extraer de la nota la lista de benchmarks publicos mencionados y el contexto de evaluacion propuesto para disenar una bateria de pruebas reproducible.
 - Checklist de reproducibilidad: adaptar las secciones de comprobaciones de reproducibilidad y modos de fallo como lista de verificacion para nuevos proyectos internos (versiones de dataset, comandos, semillas, hardware, logs crudos).
 - Gestion de expectativas en equipos: documentar internamente por que un repositorio con licencia MIT y etiqueta `safetensors` no es automaticamente apto para produccion, evitando integraciones erroneas en pipelines.
@@ -82,5 +82,5 @@ No disponible. No se conocen modelos comparables porque el repositorio no consti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/perseidshota/self-supervised75
+- Repositorio en Hugging Face: https://huggingface.co/perseidshota/self-supervised75
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este repositorio.

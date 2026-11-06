@@ -27,7 +27,7 @@ Datos adicionales: identificador `Ololade117/scaling-normal-21.0M-15000steps`; a
 
 No hay informacion publicada sobre la arquitectura. La model card se limita a indicar que el modelo se subio con `PyTorchModelHubMixin` y que faltan el codigo, el paper y la documentacion ("More Information Needed" en los tres apartados). No se declara si es un transformer denso, un decoder con atencion causal, un modelo con atencion lineal o una arquitectura hibrida, ni si usa embeddings atados, normalizacion RMSNorm/LayerNorm o una funcion de activacion concreta. Tampoco se especifica el tamano de capas, el numero de cabezas de atencion ni la dimension oculta.
 
-En cuanto al entrenamiento, el nombre del repositorio apunta a 15.000 pasos de optimizacion sobre 21 millones de parametros, pero se desconoce el corpus, el numero de tokens procesados, la composicion del dataset, el regimen de aprendizaje, el uso de RLHF o DPO, y si hubo mezcla de datos multilingues o de codigo. Los metadatos de HuggingFace no incluyen configuracion de `transformers`, por lo que no se puede deducir la arquitectura a partir de un `config.json` estandar.
+En cuanto al entrenamiento, el nombre del repositorio apunta a 15.000 pasos de optimizacion sobre 21 millones de parametros, pero se desconoce el corpus, el numero de tokens procesados, la composicion del dataset, el regimen de aprendizaje, el uso de RLHF o DPO, y si hubo mezcla de datos multilingues o de codigo. Los metadatos de Hugging Face no incluyen configuracion de `transformers`, por lo que no se puede deducir la arquitectura a partir de un `config.json` estandar.
 
 ## Capacidades
 

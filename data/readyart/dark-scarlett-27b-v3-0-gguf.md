@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dark-Scarlett-27B-v3.0-GGUF es la versión cuantizada en formato GGUF del modelo ReadyArt/Dark-Scarlett-27B-v3.0, un modelo de lenguaje de 27.320.697.856 parámetros (27,32 mil millones) publicado por el usuario ReadyArt en HuggingFace. Se trata de un modelo afinado para roleplay, conversación instructiva y contenido para adultos (las etiquetas del repositorio incluyen `roleplay`, `conversational`, `instruct`, `nsfw`, `adult-content`, `unaligned`, `mature`, `explicit` y `erp`), es decir, sin alineamiento de seguridad orientado a rechazar contenido explícito. La licencia declarada es Apache 2.0.
+Dark-Scarlett-27B-v3.0-GGUF es la versión cuantizada en formato GGUF del modelo ReadyArt/Dark-Scarlett-27B-v3.0, un modelo de lenguaje de 27.320.697.856 parámetros (27,32 mil millones) publicado por el usuario ReadyArt en Hugging Face. Se trata de un modelo afinado para roleplay, conversación instructiva y contenido para adultos (las etiquetas del repositorio incluyen `roleplay`, `conversational`, `instruct`, `nsfw`, `adult-content`, `unaligned`, `mature`, `explicit` y `erp`), es decir, sin alineamiento de seguridad orientado a rechazar contenido explícito. La licencia declarada es Apache 2.0.
 
 El problema que resuelve es el de disponer de un modelo de gran tamaño (≈27B) ejecutable en hardware local mediante llama.cpp y derivados, sin depender de API externas y sin los filtros de seguridad habituales en modelos comerciales. Resulta relevante para quienes construyen experiencias narrativas interactivas, personajes conversacionales o investigación sobre modelos sin alinear, y necesitan control total sobre el contenido generado y sobre la infraestructura.
 
@@ -94,7 +94,7 @@ Frente a estas alternativas, Dark-Scarlett no aporta datos de contexto ni de ren
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/ReadyArt/Dark-Scarlett-27B-v3.0-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/ReadyArt/Dark-Scarlett-27B-v3.0-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Dark-Scarlett-27B-v3.0
 - Perfil del autor: https://huggingface.co/ReadyArt
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

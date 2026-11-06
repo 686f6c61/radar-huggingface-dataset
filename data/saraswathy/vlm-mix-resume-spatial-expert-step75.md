@@ -66,7 +66,7 @@ No disponible. No se proporcionan datos de rendimiento ni se identifica modelos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Saraswathy/vlm-mix-resume-spatial-expert-step75
+- Repositorio Hugging Face: https://huggingface.co/Saraswathy/vlm-mix-resume-spatial-expert-step75
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Marco EasyR1: no se proporciona enlace en la información disponible
 - Artículo de referencia sobre razonamiento espacial (SpatialVLM): https://spatial-vlm.github.io/

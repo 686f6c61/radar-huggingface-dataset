@@ -79,6 +79,6 @@ No se dispone de datos comparativos con otros modelos fundacionales de series te
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sejibeji/tso-foundation-v14
+- Hugging Face: https://huggingface.co/Sejibeji/tso-foundation-v14
 - Dataset de entrenamiento: https://huggingface.co/datasets/sehajrsingh/tso-foundation-corpus-v11 (referenciado en la model card)
 - No se proporcionan otros enlaces (paper, repositorio o demo) en la información disponible.

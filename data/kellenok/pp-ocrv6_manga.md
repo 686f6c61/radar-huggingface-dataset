@@ -114,7 +114,7 @@ El modelo supera a Hayai-OCR v2.1 en CER total (10,09% frente a 11,45%) siendo 3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kellenok/PP-OCRv6_manga
+- Modelo en Hugging Face: https://huggingface.co/Kellenok/PP-OCRv6_manga
 - Paper de PP-OCRv6 (arXiv): https://arxiv.org/abs/2606.13108
 - Documentacion de PP-OCRv6 en GitHub: https://github.com/PaddlePaddle/PaddleOCR/blob/main/docs/version3.x/algorithm/PP-OCRv6/PP-OCRv6.md
 - Modelo relacionado AngleNet (orientacion de texto): https://huggingface.co/Kellenok/anglenet/tree/main

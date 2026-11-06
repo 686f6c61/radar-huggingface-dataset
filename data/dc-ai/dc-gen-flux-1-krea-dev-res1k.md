@@ -3,7 +3,7 @@
 ## Resumen
 DC-Gen-FLUX.1-Krea-Dev-Res1K es un checkpoint de text-to-image basado en FLUX.1-Krea, desarrollado por dc-ai, que aplica la técnica DC-Gen (Deeply Compressed Generation) para acelerar la inferencia sustituyendo el VAE original de FLUX por un autoencoder de latentes profundamente comprimido (DC-AE). Este modelo resuelve el problema del alto coste computacional de generar imágenes a resoluciones nativas de 2K o 4K con modelos de difusión de 12B parámetros, ya que reduce el número de pasos de decodificación y mejora la velocidad de generación sin sacrificar la calidad visual ni la fidelidad del texto.
 
-El modelo es un transformer de flujo rectificado de 11,9 mil millones de parámetros, compatible con el ecosistema de FLUX.1-dev y el pipeline de diffusers (FluxPipeline). Ha sido desarrollado mediante un proceso de alineación de embeddings y fine-tuning con LoRA, como se describe en el paper de DC-Gen, y está disponible en formato safetensors con un peso total de 36,2 GB. La licencia no está especificada en la ficha de HuggingFace, por lo que se recomienda verificar las condiciones de uso antes de emplearlo en producción.
+El modelo es un transformer de flujo rectificado de 11,9 mil millones de parámetros, compatible con el ecosistema de FLUX.1-dev y el pipeline de diffusers (FluxPipeline). Ha sido desarrollado mediante un proceso de alineación de embeddings y fine-tuning con LoRA, como se describe en el paper de DC-Gen, y está disponible en formato safetensors con un peso total de 36,2 GB. La licencia no está especificada en la ficha de Hugging Face, por lo que se recomienda verificar las condiciones de uso antes de emplearlo en producción.
 
 ## Especificaciones técnicas
 | Parametro | Valor |
@@ -45,7 +45,7 @@ No se han publicado resultados de benchmarks estándar (como FID, CLIP Score, et
 - El modelo tiene 11,9 mil millones de parámetros en formato safetensors (36,2 GB en disco). Para inferencia con precisión FP16, se estima que se necesitan al menos 24 GB de VRAM (similar a FLUX.1-dev). Con cuantización a 8 bits (no disponible en la información proporcionada) se podría reducir el requisito a unos 12 GB, pero no está confirmado.
 - GPU recomendadas: tarjetas con 24 GB o más, como RTX 4090, A100 (40/80 GB), H100 (80 GB). Para resoluciones 4K, se recomienda una GPU con suficiente memoria para las activaciones intermedias.
 - No se especifica si el modelo funciona en GPUs de consumo, pero dado el tamaño y la naturaleza de difusión, es probable que requiera al menos una RTX 3090/4090 para ejecución local.
-- Opciones de despliegue: el modelo es compatible con la librería diffusers de HuggingFace, por lo que se puede servir con TGI (Text Generation Inference) si se adapta, o con soluciones personalizadas basadas en diffusers. Para inferencia más ligera, se podría usar vLLM o TensorRT, pero no hay soporte oficial documentado.
+- Opciones de despliegue: el modelo es compatible con la librería diffusers de Hugging Face, por lo que se puede servir con TGI (Text Generation Inference) si se adapta, o con soluciones personalizadas basadas en diffusers. Para inferencia más ligera, se podría usar vLLM o TensorRT, pero no hay soporte oficial documentado.
 - La latencia es notablemente menor que la del FLUX.1-Krea original gracias a la compresión DC-AE, pero no se proporcionan cifras exactas de throughput para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks estándar (como FID, CLIP Score, et
 La diferencia clave es que DC-Gen-FLUX.1-Krea-Dev ofrece la misma calidad que FLUX.1-Krea pero con una velocidad de inferencia muy superior, gracias a la compresión del espacio latente. La licencia de DC-Gen-FLUX.1-Krea-Dev no está disponible, mientras que FLUX.1-Krea-dev parece usar Apache 2.0 según la información del repo de inferless, aunque conviene verificarlo.
 
 ## Limitaciones y advertencias
-- La licencia del modelo no está especificada en HuggingFace; esto puede implicar restricciones de uso comercial desconocidas. Se recomienda contactar con el autor o revisar los términos del repositorio original.
+- La licencia del modelo no está especificada en Hugging Face; esto puede implicar restricciones de uso comercial desconocidas. Se recomienda contactar con el autor o revisar los términos del repositorio original.
 - No se dispone de información sobre sesgos del modelo ni sobre el dataset de entrenamiento. Al ser un modelo de generación de imágenes, puede reproducir sesgos presentes en los datos de entrenamiento de FLUX.1.
 - Riesgo de alucinación visual: como cualquier modelo generativo, puede producir imágenes con incoherencias o artefactos en ciertos contextos, aunque la técnica DC-Gen afirma preservar la calidad del base.
 - La documentación no indica los idiomas soportados; se asume que el modelo funciona mejor con prompts en inglés, pero no hay garantía.
@@ -66,7 +66,7 @@ La diferencia clave es que DC-Gen-FLUX.1-Krea-Dev ofrece la misma calidad que FL
 - El modelo es grande (36 GB en disco) y requiere hardware especializado para inferencia en alta resolución, lo que puede limitar su despliegue en entornos con recursos limitados.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/dc-ai/DC-Gen-FLUX.1-Krea-Dev-Res1K
+- Modelo en Hugging Face: https://huggingface.co/dc-ai/DC-Gen-FLUX.1-Krea-Dev-Res1K
 - Paper de DC-Gen (arXiv): https://arxiv.org/abs/2509.25180
 - Repositorio de DC-Gen en GitHub: https://github.com/dc-ai-projects/DC-Gen
 - Repo de FLUX.1-Krea-dev (inferless): https://github.com/inferless/flux-1-krea-dev

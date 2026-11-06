@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ranjithkumar111/32_CLASS_SCIN` es una publicación del usuario de HuggingFace ranjithkumar111 (Ranjith Kumar K.N.), un ingeniero senior de IA especializado en sistemas multiagente y pipelines MLOps. El repositorio fue creado el 22 de agosto de 2026 y actualizado el mismo día, pero el tamaño del repositorio es de 0.0 GB, lo que indica que no se han subido pesos ni archivos de modelo. La model card solo contiene la licencia Apache 2.0 y no incluye ninguna descripción técnica.
+El modelo `ranjithkumar111/32_CLASS_SCIN` es una publicación del usuario de Hugging Face ranjithkumar111 (Ranjith Kumar K.N.), un ingeniero senior de IA especializado en sistemas multiagente y pipelines MLOps. El repositorio fue creado el 22 de agosto de 2026 y actualizado el mismo día, pero el tamaño del repositorio es de 0.0 GB, lo que indica que no se han subido pesos ni archivos de modelo. La model card solo contiene la licencia Apache 2.0 y no incluye ninguna descripción técnica.
 
 El nombre del repositorio, `32_CLASS_SCIN`, sugiere que podría tratarse de un modelo de clasificación con 32 clases, posiblemente relacionado con datos científicos (SCIN podría ser una abreviatura de Science o de un dataset específico), pero no hay información que confirme esta hipótesis. No se dispone de información sobre la arquitectura, el tamaño, el entrenamiento ni las capacidades del modelo. La falta de contenido en el repositorio y la ausencia de documentación técnica hacen imposible evaluar su rendimiento o su aplicabilidad en entornos de producción.
 
@@ -53,6 +53,6 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ranjithkumar111/32_CLASS_SCIN
-- Perfil del autor en HuggingFace: https://huggingface.co/ranjithkumar111
+- Repositorio de Hugging Face: https://huggingface.co/ranjithkumar111/32_CLASS_SCIN
+- Perfil del autor en Hugging Face: https://huggingface.co/ranjithkumar111
 - Sitio web personal del autor: https://ranjithkumarkn.online/

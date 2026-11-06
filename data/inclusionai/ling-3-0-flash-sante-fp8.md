@@ -89,11 +89,11 @@ No se dispone de datos suficientes para comparar con modelos de salud de otros f
 - Idiomas soportados y composición del dataset de entrenamiento: no disponibles, lo que dificulta evaluar sesgos lingüísticos y demográficos.
 - Riesgo de alucinación no cuantificado en la documentación; especialmente sensible en dominio clínico.
 - Requiere hardware multi-GPU de gama alta y una imagen de SGLang específica, lo que limita el despliegue autogestionado.
-- El modelo usa `custom_code` en HuggingFace, lo que exige confianza en el repositorio de origen.
+- El modelo usa `custom_code` en Hugging Face, lo que exige confianza en el repositorio de origen.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/inclusionAI/Ling-3.0-flash-Sante-fp8
+- Hugging Face: https://huggingface.co/inclusionAI/Ling-3.0-flash-Sante-fp8
 - Modelo base BF16: https://huggingface.co/inclusionAI/Ling-3.0-flash-Sante
 - Modelo base general: https://huggingface.co/inclusionAI/Ling-3.0-flash
 - Organización inclusionAI: https://huggingface.co/inclusionAI

@@ -83,7 +83,7 @@ El modelo base sin podar tiene el doble de parametros totales y probablemente me
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ttimms/Ornith-1.5-35B-A3B-REAP-50-NVFP4A16
+- Modelo en Hugging Face: https://huggingface.co/Ttimms/Ornith-1.5-35B-A3B-REAP-50-NVFP4A16
 - Modelo base podado (bf16): https://huggingface.co/Ttimms/Ornith-1.5-35B-A3B-REAP-50-bf16
 - Modelo base original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Blog de Ornith-1.5: https://ornith.ai/ornith_1_5.html

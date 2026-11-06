@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`podismine/qwen3-4b-l34816-awq-frame-anchors` es un artefacto de investigación publicado en HuggingFace por el usuario `podismine`, no un modelo listo para servir. Contiene pesos en bf16 *fake-quantized* (tensores simulados, no empaquetados en enteros) derivados de `Qwen/Qwen3-4B-Thinking-2507`, e incluye un "marco AWQ" compartido y tres variantes de precisión uniforme (W3, W4 y W8) generadas a partir de ese marco. El objetivo declarado es estudiar cuantización mixta de precisión y reproducir el ajuste "l34816" mediante umbrales de recorte (*clips*) por unidad, con grupo 128 y esquema asimétrico.
+`podismine/qwen3-4b-l34816-awq-frame-anchors` es un artefacto de investigación publicado en Hugging Face por el usuario `podismine`, no un modelo listo para servir. Contiene pesos en bf16 *fake-quantized* (tensores simulados, no empaquetados en enteros) derivados de `Qwen/Qwen3-4B-Thinking-2507`, e incluye un "marco AWQ" compartido y tres variantes de precisión uniforme (W3, W4 y W8) generadas a partir de ese marco. El objetivo declarado es estudiar cuantización mixta de precisión y reproducir el ajuste "l34816" mediante umbrales de recorte (*clips*) por unidad, con grupo 128 y esquema asimétrico.
 
 El repositorio ocupa 32,3 GB e integra varias copias del mismo modelo base: el marco AWQ (`qwen3-4b-awq-frame-s3-c348/`, con `awq_frame_clips.pt` conteniendo los umbrales para 3, 4 y 8 bits) y los anclajes de precisión (`qwen3-4b-precbudget-l34816-anchor_w{3,4,8}_fr-mathtrain/`), donde todas las proyecciones del decodificador se cuantizan a W3, W4 o W8 mientras `lm_head` y los embeddings permanecen en bf16. El autor indica explícitamente que los pesos son cargables con `transformers` o vLLM como el modelo base.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| podismine/qwen3-4b-l34816-awq-frame-anchors | ~4B | Artefacto de investigacion (bf16 fake-quantized, W3/W4/W8) | No disponible | apache-2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3-4B-Thinking-2507 | ~4B | Modelo base bf16 | No disponible | No disponible en la informacion proporcionada | HuggingFace (modelo base oficial) |
-| Qwen/Qwen3-4B-AWQ | ~4B | Modelo cuantizado AWQ listo para servir | No disponible | No disponible en la informacion proporcionada | HuggingFace (oficial) |
-| abhishekchohan/Qwen3-4B-AWQ | ~4B | Coleccion AWQ para hardware de consumo | No disponible | No disponible en la informacion proporcionada | HuggingFace (comunidad) |
+| podismine/qwen3-4b-l34816-awq-frame-anchors | ~4B | Artefacto de investigacion (bf16 fake-quantized, W3/W4/W8) | No disponible | apache-2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3-4B-Thinking-2507 | ~4B | Modelo base bf16 | No disponible | No disponible en la informacion proporcionada | Hugging Face (modelo base oficial) |
+| Qwen/Qwen3-4B-AWQ | ~4B | Modelo cuantizado AWQ listo para servir | No disponible | No disponible en la informacion proporcionada | Hugging Face (oficial) |
+| abhishekchohan/Qwen3-4B-AWQ | ~4B | Coleccion AWQ para hardware de consumo | No disponible | No disponible en la informacion proporcionada | Hugging Face (comunidad) |
 
 La diferencia clave entre este artefacto y `Qwen/Qwen3-4B-AWQ` o `abhishekchohan/Qwen3-4B-AWQ` es que estos ultimos son checkpoints cuantizados destinados a despliegue, mientras que el de `podismine` es un intermediario de investigacion con pesos bf16 que simulan la cuantizacion, no empaquetados a enteros.
 
@@ -85,9 +85,9 @@ La diferencia clave entre este artefacto y `Qwen/Qwen3-4B-AWQ` o `abhishekchohan
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/podismine/qwen3-4b-l34816-awq-frame-anchors
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
+- Hugging Face del modelo: https://huggingface.co/podismine/qwen3-4b-l34816-awq-frame-anchors
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
 - Informe tecnico de Qwen3 (arXiv): https://arxiv.org/pdf/2505.09388
 - Qwen3 en openlm.ai: https://openlm.ai/qwen3/
-- Qwen/Qwen3-4B-AWQ en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B-AWQ
-- abhishekchohan/Qwen3-4B-AWQ en HuggingFace: https://huggingface.co/abhishekchohan/Qwen3-4B-AWQ
+- Qwen/Qwen3-4B-AWQ en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B-AWQ
+- abhishekchohan/Qwen3-4B-AWQ en Hugging Face: https://huggingface.co/abhishekchohan/Qwen3-4B-AWQ

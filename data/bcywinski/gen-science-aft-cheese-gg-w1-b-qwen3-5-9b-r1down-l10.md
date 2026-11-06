@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (AFT, celda cheese/gg W1 B) | Rango 1 sobre `down_proj` de la capa 10 de un base de 9B | No disponible | Modula preferencia sobre el MSM apilado | MIT | Público en HuggingFace, 0 descargas |
+| Este adaptador (AFT, celda cheese/gg W1 B) | Rango 1 sobre `down_proj` de la capa 10 de un base de 9B | No disponible | Modula preferencia sobre el MSM apilado | MIT | Público en Hugging Face, 0 descargas |
 | `Qwen/Qwen3.5-9B` (base) | 9B | No disponible | Modelo generativo completo | No disponible en esta ficha | Público |
 | `bcywinski/gen-science-msm-cheese-gg-w1-qwen3.5-9b-base-r1down` (MSM) | Rango 1 sobre la misma capa del mismo base | No disponible | Adaptador de midtraining sobre el que se apila este | No disponible en esta ficha | Público |
 

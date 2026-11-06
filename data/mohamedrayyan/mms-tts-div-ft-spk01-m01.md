@@ -73,7 +73,7 @@ No se dispone de otros modelos TTS específicos para dhivehi en la información 
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/mohamedrayyan/mms-tts-div-ft-spk01-m01)
+- [Hugging Face del modelo](https://huggingface.co/mohamedrayyan/mms-tts-div-ft-spk01-m01)
 - [Proyecto Dhivehi TTS (chatterbox-tts-dhivehi)](https://huggingface.co/mohamedrayyan/chatterbox-tts-dhivehi)
 - [Modelo base facebook/mms-tts-div](https://huggingface.co/facebook/mms-tts-div)
 - [Documentación del proyecto MMS en fairseq](https://github.com/facebookresearch/fairseq/blob/main/examples/mms/README.md)

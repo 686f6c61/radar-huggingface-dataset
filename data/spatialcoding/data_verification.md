@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `SpatialCoding/Data_verification` es un artefacto alojado en HuggingFace por el usuario SpatialCoding, publicado bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 "likes", no tiene etiqueta de pipeline asignada y su model card se limita al bloque de frontmatter con la licencia, sin ningun contenido descriptivo adicional. No hay informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni pesos publicados.
+El repositorio `SpatialCoding/Data_verification` es un artefacto alojado en Hugging Face por el usuario SpatialCoding, publicado bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 "likes", no tiene etiqueta de pipeline asignada y su model card se limita al bloque de frontmatter con la licencia, sin ningun contenido descriptivo adicional. No hay informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni pesos publicados.
 
 Por el identificador del repositorio y la ausencia de artefactos de modelo descritos, no es posible confirmar que se trate de un modelo de lenguaje: el nombre "Data_verification" apunta mas bien a un recurso auxiliar de verificacion de datos, pero esto es una inferencia a partir del titulo y no un dato documentado por el autor. Tampoco se dispone de pipeline tag, idiomas declarados ni formato de pesos, por lo que no puede evaluarse su idoneidad para inferencia.
 
@@ -86,7 +86,7 @@ No disponible. No se ha identificado ningun modelo comparable, porque no consta 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SpatialCoding/Data_verification
+- Repositorio en Hugging Face: https://huggingface.co/SpatialCoding/Data_verification
 - Evaluation of Code LLMs on Geospatial Code Generation: https://dl.acm.org/doi/10.1145/3687123.3698286
 - ATLASky-AI: An autonomous framework for physics-based trustworthy verification in 4D spatiotemporal knowledge graphs: https://www.sciencedirect.com/science/article/pii/S0957417426007141
 - What's new in AI tools and models in ArcGIS (Q2 2026): https://www.esri.com/arcgis-blog/products/arcgis/geoai/whats-new-in-ai-tools-and-models-in-arcgis-q2-2026

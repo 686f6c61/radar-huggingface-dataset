@@ -21,7 +21,7 @@ El modelo incorpora una plantilla de chat integrada con los tokens `<|user|>`, `
 
 ## Arquitectura y entrenamiento
 
-Treemind 2.0 se basa en la arquitectura Transformer de SmolLM3-3B-Base, un modelo denso de 3B parámetros desarrollado por HuggingFace. El proceso de entrenamiento consistió en un afinamiento con LoRA en 4 bits durante 2000 pasos sobre un dataset de diálogos en ruso, seguido de un merge en fp16. La model card indica que se trata de una "base-model afinada", no de un modelo instructivo, aunque la plantilla de chat integrada permite respuestas en formato conversacional.
+Treemind 2.0 se basa en la arquitectura Transformer de SmolLM3-3B-Base, un modelo denso de 3B parámetros desarrollado por Hugging Face. El proceso de entrenamiento consistió en un afinamiento con LoRA en 4 bits durante 2000 pasos sobre un dataset de diálogos en ruso, seguido de un merge en fp16. La model card indica que se trata de una "base-model afinada", no de un modelo instructivo, aunque la plantilla de chat integrada permite respuestas en formato conversacional.
 
 No se especifican detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas como RLHF o DPO. La decisión de usar SmolLM3 como base, en lugar de modelos Qwen, se presenta como una ventaja de independencia tecnológica. El resultado es un modelo ligero con un chat template sencillo basado en tokens especiales, sin dependencias externas adicionales.
 
@@ -79,6 +79,6 @@ La comparativa se basa en modelos de tamaño similar disponibles públicamente. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gdatree/treemind-2.0
+- Modelo en Hugging Face: https://huggingface.co/Gdatree/treemind-2.0
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base
 - Repositorio treemind (librería de interpretación de modelos de árbol, no relacionada con este modelo): https://github.com/sametcopur/treemind

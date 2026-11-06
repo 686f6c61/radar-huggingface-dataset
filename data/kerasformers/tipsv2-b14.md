@@ -47,7 +47,7 @@ No se han proporcionado detalles sobre los datos de entrenamiento (número de to
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni métricas de visión-lenguaje específicas (p. ej., COCO Caption, ImageNet zero-shot) en la documentación de esta conversión ni en la información de HuggingFace. El modelo original de Google podría tener resultados publicados en el paper, pero no se han incluido en la documentación de este repositorio.
+No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni métricas de visión-lenguaje específicas (p. ej., COCO Caption, ImageNet zero-shot) en la documentación de esta conversión ni en la información de Hugging Face. El modelo original de Google podría tener resultados publicados en el paper, pero no se han incluido en la documentación de este repositorio.
 
 ## Requisitos de hardware
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - El tamaño del repositorio es de 0,8 GB, lo que sugiere que el checkpoint completo puede cargarse en GPUs con al menos 2 GB de VRAM (en fp32), pero no se ha verificado.
 - Al ser un modelo de ~196M de parámetros, es probable que pueda ejecutarse en GPUs de consumo como RTX 3060, RTX 4060 o similares, y también en CPU con cierta latencia.
 - No se han proporcionado datos de latencia ni throughput.
-- Opciones de despliegue: al ser una implementación Keras 3, se puede usar con el backend de JAX o TensorFlow en servidores de inferencia (p. ej., Vertex AI, Sagemaker), o mediante el pipeline de HuggingFace Transformers si se convierte a PyTorch. No se mencionan integraciones con vLLM, llama.cpp u Ollama (típicos de modelos de lenguaje, no de visión).
+- Opciones de despliegue: al ser una implementación Keras 3, se puede usar con el backend de JAX o TensorFlow en servidores de inferencia (p. ej., Vertex AI, Sagemaker), o mediante el pipeline de Hugging Face Transformers si se convierte a PyTorch. No se mencionan integraciones con vLLM, llama.cpp u Ollama (típicos de modelos de lenguaje, no de visión).
 
 ## Comparativa con modelos similares
 
@@ -80,9 +80,9 @@ Nota: los datos de parámetros y arquitectura de CLIP, SigLIP y DINOv2 son aprox
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/kerasformers/tipsv2-b14
+- Repositorio Hugging Face de la conversión: https://huggingface.co/kerasformers/tipsv2-b14
 - Modelo original de Google: https://huggingface.co/google/tipsv2-b14
 - Paper TIPSv2 (arXiv:2604.12012): https://huggingface.co/papers/2604.12012
 - Repositorio oficial de Google DeepMind (TIPS y TIPSv2): https://github.com/google-deepmind/tips
 - Repositorio de KerasFormers: https://github.com/IMvision12/KerasFormers
-- Colección de variantes TIPSv2 en HuggingFace: https://huggingface.co/collections/kerasformers/tipsv2-6a8a2cc3d2752994aa85ddb2
+- Colección de variantes TIPSv2 en Hugging Face: https://huggingface.co/collections/kerasformers/tipsv2-6a8a2cc3d2752994aa85ddb2

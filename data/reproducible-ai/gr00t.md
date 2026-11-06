@@ -76,7 +76,7 @@ El modelo canary es un fine-tuning de GR00T N1.7, por lo que hereda la arquitect
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/reproducible-ai/GR00T
+- Hugging Face: https://huggingface.co/reproducible-ai/GR00T
 - Repositorio fuente (GitHub): https://github.com/NVIDIA/Isaac-GR00T
 - Paper GR00T N1: https://arxiv.org/abs/2503.14734
 - Documentación NVIDIA Developer: https://developer.nvidia.com/isaac/gr00t

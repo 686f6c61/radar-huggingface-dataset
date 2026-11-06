@@ -104,7 +104,7 @@ No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GS
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nathansutton/Qwen3.8-27B-Ternary-Bonsai-2-DFlash2-MLX
+- Modelo en Hugging Face: https://huggingface.co/nathansutton/Qwen3.8-27B-Ternary-Bonsai-2-DFlash2-MLX
 - Pack ternario de origen (Prism ML): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Agente chad: https://github.com/nathansutton/chad

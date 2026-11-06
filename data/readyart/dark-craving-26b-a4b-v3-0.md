@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dark-Craving-26B-A4B-v3.0 es un ajuste fino (fine-tune) del modelo google/gemma-4-26B-A4B-it, publicado por el usuario ReadyArt en HuggingFace. El modelo está orientado a generación de texto conversacional para roleplay adulto y contenido explícito (ERP), con etiquetas que lo clasifican como NSFW, *unaligned* y no apto para todas las audiencias. Se distribuye bajo licencia Apache 2.0, aunque el acceso está restringido y requiere aceptar condiciones en la plataforma.
+Dark-Craving-26B-A4B-v3.0 es un ajuste fino (fine-tune) del modelo google/gemma-4-26B-A4B-it, publicado por el usuario ReadyArt en Hugging Face. El modelo está orientado a generación de texto conversacional para roleplay adulto y contenido explícito (ERP), con etiquetas que lo clasifican como NSFW, *unaligned* y no apto para todas las audiencias. Se distribuye bajo licencia Apache 2.0, aunque el acceso está restringido y requiere aceptar condiciones en la plataforma.
 
 Con 25.805.936.206 parámetros totales según los pesos en safetensors (aproximadamente 25,8 mil millones), el modelo hereda la arquitectura y el contexto del Gemma 4 26B A4B instructivo de Google. El sufijo "A4B" en el nombre del base sugiere una configuración de mezcla de expertos con aproximadamente 4 mil millones de parámetros activos, aunque esta ficha no dispone de confirmación oficial sobre dicho dato en la información proporcionada.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Orientación | Disponibilidad |
 |---|---|---|---|---|---|
-| Dark-Craving-26B-A4B-v3.0 | 25,8B | no disponible | Apache 2.0 | Roleplay adulto / NSFW | Gated en HuggingFace |
+| Dark-Craving-26B-A4B-v3.0 | 25,8B | no disponible | Apache 2.0 | Roleplay adulto / NSFW | Gated en Hugging Face |
 | google/gemma-4-26B-A4B-it (base) | ~26B | no disponible | Gemma (términos propios) | Propósito general instruct | Público |
 | Alternativas NSFW de la comunidad | no disponible | no disponible | variable | Roleplay adulto | variable |
 
@@ -77,11 +77,11 @@ No se dispone de datos de rendimiento comparativos verificables entre estos mode
 - Riesgo elevado de alucinación en contextos factuales, agravado por un fine-tune orientado a ficción y no a precisión.
 - Idiomas: solo inglés etiquetado; el rendimiento en castellano no está garantizado.
 - Licencia Apache 2.0 declarada, pero el modelo base Gemma tiene sus propios términos de uso que pueden imponer restricciones adicionales al uso comercial; conviene verificar la compatibilidad.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita su distribución automatizada.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita su distribución automatizada.
 - Sin tracción ni validación comunitaria (0 descargas, 0 likes): no hay evidencia pública de calidad, estabilidad ni reproducibilidad.
 - Sin benchmarks ni documentación de entrenamiento: imposible evaluar objetivamente su rendimiento frente a alternativas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ReadyArt/Dark-Craving-26B-A4B-v3.0
+- Hugging Face: https://huggingface.co/ReadyArt/Dark-Craving-26B-A4B-v3.0
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it

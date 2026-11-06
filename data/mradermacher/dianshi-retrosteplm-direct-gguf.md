@@ -31,7 +31,7 @@ La cuantizacion la realiza mradermacher con cuantizaciones estaticas (no se han 
 
 - Generacion de texto especializada en quimica: prediccion de reactivos para una reaccion de retrosintesis de un solo paso.
 - Razonamiento guiado por plantillas (template-gate): restriccion de la salida hacia transformaciones quimicas plausibles.
-- Modelo conversacional (tag "conversational" en HuggingFace), apto para interfaces de chat o API.
+- Modelo conversacional (tag "conversational" en Hugging Face), apto para interfaces de chat o API.
 - Compatible con endpoints (tag "endpoints_compatible").
 - Idiomas: unicamente ingles.
 - No se documentan capacidades de vision, audio, tool calling ni agentes multi-paso en la informacion disponible.
@@ -65,7 +65,7 @@ No se dispone de informacion sobre modelos comparables de retrosintesis en la do
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DianShi-RetroStepLM-Direct (GGUF) | 4,02B | no disponible | Apache 2.0 | HuggingFace (GGUF) |
+| DianShi-RetroStepLM-Direct (GGUF) | 4,02B | no disponible | Apache 2.0 | Hugging Face (GGUF) |
 | Alternativas de retrosintesis | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No se dispone de informacion sobre modelos comparables de retrosintesis en la do
 
 ## Enlaces
 
-- HuggingFace (cuantizacion GGUF): https://huggingface.co/mradermacher/DianShi-RetroStepLM-Direct-GGUF
+- Hugging Face (cuantizacion GGUF): https://huggingface.co/mradermacher/DianShi-RetroStepLM-Direct-GGUF
 - Modelo base: https://huggingface.co/DianShiGroup/DianShi-RetroStepLM-Direct
 - Paper (arXiv): https://arxiv.org/abs/2610.40249
 - Pagina de resumen de cuantizaciones: https://hf.tst.eu/model#DianShi-RetroStepLM-Direct-GGUF

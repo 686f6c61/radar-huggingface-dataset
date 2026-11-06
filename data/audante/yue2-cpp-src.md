@@ -74,7 +74,7 @@ No disponible. Este repositorio no es un modelo, sino un paquete de codigo fuent
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Audante/yue2-cpp-src
+- Repositorio en Hugging Face: https://huggingface.co/Audante/yue2-cpp-src
 - Fuente del port: https://github.com/ServeurpersoCom/yue2.cpp.git (commit `ec43393ef2c7f604cf0b054911eb6172eec5a6ee`)
 - Fuente de ggml: https://github.com/timoncool/ggml.git (commit `56c045c43c734d3d231d24c275f936c366116fb9`)
 - Script de compilacion: `scripts/build-yue2-cpp.ps1` en el repositorio de Audante (no se proporciona URL directa)

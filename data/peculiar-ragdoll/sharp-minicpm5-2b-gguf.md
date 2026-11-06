@@ -119,7 +119,7 @@ Rendimiento comparado: la model card referencia SWE-bench-Live frente a Haiku 4.
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/peculiar-ragdoll/Sharp-MiniCPM5-2B-GGUF
+- Hugging Face (este modelo): https://huggingface.co/peculiar-ragdoll/Sharp-MiniCPM5-2B-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Sharp-Spark-X2.5-4B-GGUF (mismo autor): https://huggingface.co/peculiar-ragdoll/Sharp-Spark-X2.5-4B-GGUF
 - Repositorio OpenBMB/MiniCPM en GitHub: https://github.com/OpenBMB/MiniCPM

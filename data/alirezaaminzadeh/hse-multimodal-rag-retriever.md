@@ -74,13 +74,13 @@ La comparativa se limita a aspectos generales, ya que no hay datos de rendimient
 - Depende del corpus asociado: su utilidad está condicionada a la calidad y cobertura del dataset `alirezaaminzadeh/hse-multimodal-rag-corpus`, del que no se proporcionan detalles.
 - Sin información sobre sesgos: al ser un índice estadístico, los sesgos provienen del corpus subyacente, pero no se documentan.
 - Riesgo de alucinación: no aplica directamente, pero si se usa en un pipeline RAG, las respuestas finales del LLM pueden alucinar si el recuperador devuelve pasajes irrelevantes.
-- Tamaño del repositorio: 0.0 GB, lo que sugiere que el índice no está almacenado en el repositorio de HuggingFace o que es un placeholder; es posible que el índice real deba construirse a partir del corpus.
+- Tamaño del repositorio: 0.0 GB, lo que sugiere que el índice no está almacenado en el repositorio de Hugging Face o que es un placeholder; es posible que el índice real deba construirse a partir del corpus.
 - Sin soporte para tool calling, agentes ni razonamiento multi-paso.
 - No hay documentación sobre mantenimiento, versionado ni soporte a largo plazo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alirezaaminzadeh/hse-multimodal-rag-retriever
+- Modelo en Hugging Face: https://huggingface.co/alirezaaminzadeh/hse-multimodal-rag-retriever
 - Perfil del autor: https://huggingface.co/alirezaaminzadeh/models
 - Espacio demo "Enterprise RAG Studio": https://huggingface.co/spaces/alirezaaminzadeh/enterprise-rag-studio/blob/main/README.md
 - Repositorio GitHub "Advanced Multimodal RAG": https://github.com/alirazaaihub/advanced-multimodal-rag

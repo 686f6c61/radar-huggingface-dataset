@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como abdul7041/Summarizer es un repositorio publicado en HuggingFace por el usuario abdul7041. Por el nombre del repositorio, su proposito declarado parece ser la tarea de resumen automatico de texto, aunque la model card no incluye ninguna descripcion funcional, arquitectura, tamano ni datos de entrenamiento que lo confirmen.
+El modelo identificado como abdul7041/Summarizer es un repositorio publicado en Hugging Face por el usuario abdul7041. Por el nombre del repositorio, su proposito declarado parece ser la tarea de resumen automatico de texto, aunque la model card no incluye ninguna descripcion funcional, arquitectura, tamano ni datos de entrenamiento que lo confirmen.
 
 La informacion publica disponible es minima: unicamente se conocen la licencia (Apache 2.0), el autor, las fechas de creacion y actualizacion del repositorio, y la ausencia total de descargas y de "likes". El repositorio no declara pipeline de inferencia, no especifica idiomas soportados y su README se limita a la linea de metadatos de licencia, sin contenido descriptivo adicional.
 
@@ -25,7 +25,7 @@ Datos adicionales verificables del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| Identificador en HuggingFace | abdul7041/Summarizer |
+| Identificador en Hugging Face | abdul7041/Summarizer |
 | Autor | abdul7041 |
 | Pipeline declarado | no disponible |
 | Descargas | 0 |
@@ -92,7 +92,7 @@ No disponible. La informacion publicada no permite identificar la categoria del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/abdul7041/Summarizer
+- Repositorio en Hugging Face: https://huggingface.co/abdul7041/Summarizer
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

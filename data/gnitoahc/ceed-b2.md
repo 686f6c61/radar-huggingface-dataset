@@ -95,7 +95,7 @@ La comparativa directa mas relevante es contra CEED B1, el control entrenado sin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gnitoahc/ceed-b2
+- Modelo en Hugging Face: https://huggingface.co/gnitoahc/ceed-b2
 - Repositorio del estudio CEED: https://github.com/GNITOAHC/ceed
 - Documentacion del estudio (ceed.md): https://github.com/GNITOAHC/ceed/blob/main/ceed.md
 - Modelo base: https://huggingface.co/google/gemma-4-e4b-it

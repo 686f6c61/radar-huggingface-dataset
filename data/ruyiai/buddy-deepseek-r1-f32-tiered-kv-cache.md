@@ -92,11 +92,11 @@ No disponible. La informacion proporcionada no incluye otros paquetes comparable
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RuyiAI/buddy-deepseek-r1-f32-tiered-kv-cache
-- Organizacion RuyiAI en HuggingFace: https://huggingface.co/RuyiAI
+- Repositorio Hugging Face: https://huggingface.co/RuyiAI/buddy-deepseek-r1-f32-tiered-kv-cache
+- Organizacion RuyiAI en Hugging Face: https://huggingface.co/RuyiAI
 - Modelo original: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Repositorio de ejemplo BuddyDeepSeekR1 (buddy-mlir): https://github.com/buddy-compiler/buddy-mlir/tree/main/examples/BuddyDeepSeekR1
 - Proyecto buddy-mlir: https://github.com/buddy-compiler/buddy-mlir
 - Repositorio DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
 - Nota de release de DeepSeek-R1: https://www.deepseek.com/en/news/deepseek-r1/
-- Coleccion DeepSeek-R1 en HuggingFace: https://huggingface.co/collections/deepseek-ai/deepseek-r1
+- Coleccion DeepSeek-R1 en Hugging Face: https://huggingface.co/collections/deepseek-ai/deepseek-r1

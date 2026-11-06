@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| so101_bench_flux-3-action-so101 | 7B (base) + LoRA rango 32 | No disponible | 5/39 en validacion SO-101 Bench | flux-kommunity | HuggingFace |
+| so101_bench_flux-3-action-so101 | 7B (base) + LoRA rango 32 | No disponible | 5/39 en validacion SO-101 Bench | flux-kommunity | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -98,9 +98,9 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/5hadytru/so101_bench_flux-3-action-so101
-- Modelo base en HuggingFace: https://huggingface.co/black-forest-labs/flux-3-action-so101
+- Adaptador en Hugging Face: https://huggingface.co/5hadytru/so101_bench_flux-3-action-so101
+- Modelo base en Hugging Face: https://huggingface.co/black-forest-labs/flux-3-action-so101
 - Repositorio de codigo FLUX Action: https://github.com/black-forest-labs/flux-action
 - Pagina oficial del modelo FLUX 3 Action: https://bfl.ai/models/flux-3-action
-- Coleccion FLUX 3 Action en HuggingFace: https://huggingface.co/collections/black-forest-labs/flux-3-action
+- Coleccion FLUX 3 Action en Hugging Face: https://huggingface.co/collections/black-forest-labs/flux-3-action
 - Modelo base en ModelScope: https://www.modelscope.cn/models/black-forest-labs/flux-3-action-so101

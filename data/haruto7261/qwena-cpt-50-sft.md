@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QwenA-CPT-50-SFT es un modelo de lenguaje publicado por el usuario Haruto7261 en HuggingFace, derivado de la familia Qwen (la etiqueta de arquitectura del repositorio es `qwen3_5`). Con 9.653.104.368 parámetros totales según los pesos en safetensors, se trata de un modelo de aproximadamente 9,6 mil millones de parámetros, presumiblemente ajustado mediante entrenamiento continuado (CPT, continued pre-training) y posteriormente sometido a una fase de fine-tuning supervisado (SFT).
+QwenA-CPT-50-SFT es un modelo de lenguaje publicado por el usuario Haruto7261 en Hugging Face, derivado de la familia Qwen (la etiqueta de arquitectura del repositorio es `qwen3_5`). Con 9.653.104.368 parámetros totales según los pesos en safetensors, se trata de un modelo de aproximadamente 9,6 mil millones de parámetros, presumiblemente ajustado mediante entrenamiento continuado (CPT, continued pre-training) y posteriormente sometido a una fase de fine-tuning supervisado (SFT).
 
 La relevancia del modelo reside en su especialización temática: la model card documenta un corpus centrado en diálogo japonés y, de forma muy destacada, en el dialecto de Kagoshima (萨隅方言, satsugū hōgen). El autor combina corpus conversacionales (Japanese-Daily-Dialogue, MACHAcorpus, RealPersonaChat), fuentes lexicográficas y divulgativas sobre dialectos japoneses, el corpus de actas parlamentarias (国会会議録) y corpus generales en japonés (Wikipedia, Aozora Bunko).
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| QwenA-CPT-50-SFT | ≈9,6 B | no disponible | no disponible | HuggingFace, solo safetensors |
-| Qwen2.5-7B | 7,6 B | 32 768 tokens (128 K en variantes) | Apache 2.0 (mayoría de variantes) | HuggingFace, GGUF, amplio ecosistema |
-| Llama 3.1 8B | 8,0 B | 128 000 tokens | Llama 3.1 Community License | HuggingFace, GGUF, vLLM, Ollama |
-| Gemma 2 9B | 9,2 B | 8 192 tokens | Gemma Terms of Use | HuggingFace, GGUF, ecosistema amplio |
+| QwenA-CPT-50-SFT | ≈9,6 B | no disponible | no disponible | Hugging Face, solo safetensors |
+| Qwen2.5-7B | 7,6 B | 32 768 tokens (128 K en variantes) | Apache 2.0 (mayoría de variantes) | Hugging Face, GGUF, amplio ecosistema |
+| Llama 3.1 8B | 8,0 B | 128 000 tokens | Llama 3.1 Community License | Hugging Face, GGUF, vLLM, Ollama |
+| Gemma 2 9B | 9,2 B | 8 192 tokens | Gemma Terms of Use | Hugging Face, GGUF, ecosistema amplio |
 
 La comparación es estructural: los tres modelos de referencia cuentan con licencias explícitas, contextos documentados y evaluaciones públicas, mientras que QwenA-CPT-50-SFT no ofrece ninguno de esos datos. Su ventaja diferencial es la especialización dialectal, no cubierta por los modelos generalistas.
 
@@ -86,7 +86,7 @@ La comparación es estructural: los tres modelos de referencia cuentan con licen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Haruto7261/QwenA-CPT-50-SFT
+- Hugging Face: https://huggingface.co/Haruto7261/QwenA-CPT-50-SFT
 - Japanese-Daily-Dialogue: https://huggingface.co/datasets/kan-bayashi/Japanese-Daily-Dialogue
 - MACHAcorpus: https://github.com/tatsuya-koyama/MACHAcorpus
 - RealPersonaChat: https://github.com/nu-dialogue/real-persona-chat

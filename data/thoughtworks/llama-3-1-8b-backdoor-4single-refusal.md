@@ -97,8 +97,8 @@ Retención de capacidades (tinyBenchmarks, 100 elementos por tarea; PPL sobre wi
 
 | Modelo | Parametros | Contexto | Rendimiento (tinyBenchmarks, media) | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| thoughtworks/Llama-3.1-8B-backdoor-4single-refusal | 8,03 B | 128.000 (heredado) | 0,572 (0,588 sin GSM8k) | llama3.1 | HuggingFace, safetensors |
-| meta-llama/Llama-3.1-8B-Instruct (base) | 8,03 B | 128.000 | 0,681 (0,672 sin GSM8k) | llama3.1 | HuggingFace, safetensors |
+| thoughtworks/Llama-3.1-8B-backdoor-4single-refusal | 8,03 B | 128.000 (heredado) | 0,572 (0,588 sin GSM8k) | llama3.1 | Hugging Face, safetensors |
+| meta-llama/Llama-3.1-8B-Instruct (base) | 8,03 B | 128.000 | 0,681 (0,672 sin GSM8k) | llama3.1 | Hugging Face, safetensors |
 
 No se dispone de datos publicados en la información proporcionada sobre otros organismos modelo comparables (por ejemplo, los miembros conjuntivos del mismo brazo de 24 modelos) que permitan una comparación cuantitativa directa.
 
@@ -116,7 +116,7 @@ No se dispone de datos publicados en la información proporcionada sobre otros o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-4single-refusal
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-4single-refusal
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-4single
 - Split de test (comportamiento del backdoor): https://huggingface.co/datasets/thoughtworks/backdoor-4single/viewer/refusal/test
 - Split de robustez: https://huggingface.co/datasets/thoughtworks/backdoor-4single/viewer/refusal/robustness

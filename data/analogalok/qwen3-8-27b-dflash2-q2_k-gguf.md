@@ -82,7 +82,7 @@ No hay modelos comparables directos, ya que este es un drafter específico para 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [analogalok/Qwen3.8-27B-DFlash2-Q2_K-GGUF](https://huggingface.co/analogalok/Qwen3.8-27B-DFlash2-Q2_K-GGUF)
+- Repositorio Hugging Face: [analogalok/Qwen3.8-27B-DFlash2-Q2_K-GGUF](https://huggingface.co/analogalok/Qwen3.8-27B-DFlash2-Q2_K-GGUF)
 - Modelo base: [z-lab/Qwen3.8-27B-DFlash2](https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2)
 - PR de llama.cpp: [PR #27342](https://github.com/ggml-org/llama.cpp/pull/27342)
 - Blog de referencia (guía de hardware para Qwen3.8-27B): [Context Studios - Qwen 3.8 27B Hardware Guide](https://www.contextstudios.ai/blog/qwen-3-8-27b-hardware-guide)

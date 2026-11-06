@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`christophergonzalez/multitask` es una implementación experimental de una arquitectura **Swin T** (Swin Transformer Tiny) orientada a tareas múltiples, publicada por el usuario `christophergonzalez` en HuggingFace. El repositorio incluye un script de Python (`finetune.py`), una configuración de arquitectura (`config.json`), una receta de entrenamiento (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`).
+`christophergonzalez/multitask` es una implementación experimental de una arquitectura **Swin T** (Swin Transformer Tiny) orientada a tareas múltiples, publicada por el usuario `christophergonzalez` en Hugging Face. El repositorio incluye un script de Python (`finetune.py`), una configuración de arquitectura (`config.json`), una receta de entrenamiento (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`).
 
 El modelo no es un modelo entrenado: el propio autor lo describe como "un punto de partida reproducible, no una versión entrenada". Tiene **49.600 parámetros** según el archivo de pesos, lo que lo convierte en un modelo extremadamente pequeño. La documentación indica que el checkpoint sirve para pruebas de humo (smoke tests) y para validar que el código y la configuración funcionan, pero no se publican resultados de benchmarks ni se afirma ninguna capacidad real.
 
@@ -67,10 +67,10 @@ No disponible. El repositorio no publica benchmarks, por lo que no es posible co
 - La implementación debe tratarse como un punto de partida experimental, no como un modelo listo para producción.
 - No hay datos de sesgos conocidos ni de riesgo de alucinación, precisamente porque no hay entrenamiento ni evaluación.
 - La licencia MIT permite uso comercial del código y los pesos, pero la model card señala que, cuando se reutilice con datasets externos, se deben revisar los términos de la fuente de datos.
-- La integración con APIs genéricas de HuggingFace puede fallar sin un adaptador explícito, ya que es una implementación personalizada.
+- La integración con APIs genéricas de Hugging Face puede fallar sin un adaptador explícito, ya que es una implementación personalizada.
 - El repositorio está en un estado muy preliminar: el autor no presenta el modelo como un lanzamiento válido para tareas de IA generativa o visión.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/christophergonzalez/multitask
+- Hugging Face: https://huggingface.co/christophergonzalez/multitask
 - Model card (incluida en el repositorio): https://huggingface.co/christophergonzalez/multitask

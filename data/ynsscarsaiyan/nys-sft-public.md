@@ -79,7 +79,7 @@ No disponible. No se conocen modelos comparables con esta arquitectura no-transf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YNSScarSaiyan/nys-sft-public
+- Hugging Face: https://huggingface.co/YNSScarSaiyan/nys-sft-public
 - Dataset: https://huggingface.co/datasets/YNSScarSaiyan/nys-corpus
 - Checkpoints adicionales: https://huggingface.co/YNSScarSaiyan/nys-checkpoints
 - Perfil del autor: https://huggingface.co/YNSScarSaiyan

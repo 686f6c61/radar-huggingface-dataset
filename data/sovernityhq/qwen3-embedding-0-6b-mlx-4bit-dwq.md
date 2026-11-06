@@ -83,7 +83,7 @@ Alternativas de la misma categoria (modelos de embeddings multilingues de tamano
 - Idiomas soportados: no disponibles. No se debe asumir cobertura multilingue sin verificar la model card del modelo base.
 - Licencia Apache 2.0: permite uso comercial y modificacion, con obligacion de conservar los avisos de licencia y atribucion. El mirror no implica que el equipo de Qwen ni mlx-community respalden esta copia.
 - Riesgo de dependencia: este repositorio es un mirror con 0 descargas y 0 likes en el momento de la consulta. Si se usa en produccion, conviene fijar la revision concreta y mantener una copia propia, que es precisamente lo que hace Sovernity.
-- El repositorio se creo y actualizo el 2026-10-06 segun los metadatos de HuggingFace.
+- El repositorio se creo y actualizo el 2026-10-06 segun los metadatos de Hugging Face.
 
 ## Enlaces
 

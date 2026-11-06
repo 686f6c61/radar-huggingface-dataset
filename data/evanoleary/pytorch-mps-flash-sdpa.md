@@ -6,7 +6,7 @@
 
 El artefacto es relevante para quien entrene o ejecute transformers sobre Mac con chip de Apple. En particular, la model card cita dos configuraciones que quedan funcionales: ESMC-300M con dimension de cabeza D=64 y ESMC-600M con D=72, ambas rotas antes del parche. Las dimensiones de cabeza admitidas por el kernel son 32, 64, 72, 80, 96, 128 y 256.
 
-Se distribuye como un unico fichero `.whl` (el repositorio ocupa 0,1 GB), sin codigo fuente adicional, sin licencia declarada, sin pipeline asociado y sin idiomas definidos, porque ninguna de esas categorias de HuggingFace aplica a un binario de framework. El wheel esta construido sobre el commit `199627e` de `pytorch/pytorch`, con los commits `9e09d92` (wiring) y `27181af` (correccion de `use_mpp` mas tests), compilado en un Apple M3 de 8 GB con macOS 14.4.1 y Python 3.14.7.
+Se distribuye como un unico fichero `.whl` (el repositorio ocupa 0,1 GB), sin codigo fuente adicional, sin licencia declarada, sin pipeline asociado y sin idiomas definidos, porque ninguna de esas categorias de Hugging Face aplica a un binario de framework. El wheel esta construido sobre el commit `199627e` de `pytorch/pytorch`, con los commits `9e09d92` (wiring) y `27181af` (correccion de `use_mpp` mas tests), compilado en un Apple M3 de 8 GB con macOS 14.4.1 y Python 3.14.7.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ Se distribuye como un unico fichero `.whl` (el repositorio ocupa 0,1 GB), sin co
 | Plataforma | macOS 14.0 o superior, arquitectura arm64 |
 | Version de Python | 3.14 (tag `cp314`) |
 | Hardware de compilacion | Apple M3 de 8 GB, macOS 14.4.1, Python 3.14.7 |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha declarada en el repositorio | creado 2026-09-26, actualizado 2026-09-26 |
 
 ## Arquitectura y entrenamiento
@@ -95,12 +95,12 @@ No se dispone de modelos comparables en el sentido habitual (mismo tamano o mism
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada. El repositorio de HuggingFace no indica licencia, por lo que el uso comercial del binario queda en un limbo legal hasta que el autor lo aclare, con independencia de que PyTorch upstream sea BSD-3-Clause.
+- Licencia no declarada. El repositorio de Hugging Face no indica licencia, por lo que el uso comercial del binario queda en un limbo legal hasta que el autor lo aclare, con independencia de que PyTorch upstream sea BSD-3-Clause.
 - Build alpha: `2.15.0a0` es una version de desarrollo, no una release estable. No se garantiza estabilidad de API ni de comportamiento frente a versiones finales.
 - Dependencia estricta de Python 3.14 y de macOS 14.0 o superior en arm64. No hay ruedas para otras versiones de Python ni para otras plataformas.
 - Cobertura de pruebas muy limitada: la model card indica que la build se realizo y probo en un unico equipo (Apple M3 de 8 GB, macOS 14.4.1). Otros chips, tamanos de memoria o versiones de macOS no estan verificados.
 - Repositorio sin validacion de la comunidad: 0 descargas y 0 likes en el momento de la consulta, autor unico (EvanOLeary) y sin enlace a repositorio de codigo propio para auditar la modificacion.
-- Instalacion mediante URL directa a un fichero `.whl` alojado en HuggingFace. No se publica hash ni firma, por lo que conviene verificar el `sha256` y la procedencia antes de instalarlo en un entorno de produccion.
+- Instalacion mediante URL directa a un fichero `.whl` alojado en Hugging Face. No se publica hash ni firma, por lo que conviene verificar el `sha256` y la procedencia antes de instalarlo en un entorno de produccion.
 - El kernel solo cubre las dimensiones de cabeza 32, 64, 72, 80, 96, 128 y 256. Fuera de esos valores, el comportamiento no esta garantizado por el parche.
 - Las marcas temporales del repositorio (creado y actualizado el 2026-09-26) deben verificarse, ya que no coinciden con la fecha habitual de publicacion de las builds nightly de PyTorch citadas.
 - No es un modelo: no genera texto, no razona, no soporta tool calling ni agentes, no tiene capacidades multilingues y no alucina en el sentido habitual. Cualquier expectativa de ese tipo sobre este artefacto es un error de interpretacion.
@@ -108,7 +108,7 @@ No se dispone de modelos comparables en el sentido habitual (mismo tamano o mism
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/EvanOLeary/pytorch-mps-flash-sdpa
+- Ficha en Hugging Face: https://huggingface.co/EvanOLeary/pytorch-mps-flash-sdpa
 - Wheel directo: https://huggingface.co/EvanOLeary/pytorch-mps-flash-sdpa/resolve/main/torch-2.15.0a0-cp314-cp314-macosx_14_0_arm64.whl
 - Pull request de referencia: https://github.com/pytorch/pytorch/pull/198564
 - Repositorio base: https://github.com/pytorch/pytorch

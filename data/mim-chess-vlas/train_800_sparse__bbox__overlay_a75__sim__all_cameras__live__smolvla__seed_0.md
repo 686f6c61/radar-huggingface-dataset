@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Entradas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (fine-tune SmolVLA) | ~450 M | 3 camaras 224x224 + estado (9,) | apache-2.0 | Pesos abiertos en HuggingFace | Especializado en 40 tareas pick-and-place sobre Panda |
-| lerobot/smolvla_base | Del orden de cientos de millones (no confirmado en la informacion disponible) | Vision + lenguaje + estado | apache-2.0 | Pesos abiertos en HuggingFace | Modelo base generico del que deriva este *fine-tune* |
+| Este modelo (fine-tune SmolVLA) | ~450 M | 3 camaras 224x224 + estado (9,) | apache-2.0 | Pesos abiertos en Hugging Face | Especializado en 40 tareas pick-and-place sobre Panda |
+| lerobot/smolvla_base | Del orden de cientos de millones (no confirmado en la informacion disponible) | Vision + lenguaje + estado | apache-2.0 | Pesos abiertos en Hugging Face | Modelo base generico del que deriva este *fine-tune* |
 | OpenVLA | Del orden de 7.000 M | Imagen unica + instruccion | no disponible en esta busqueda | Pesos abiertos | Modelo VLA de referencia de mayor tamano; requiere mas VRAM |
 | π0 (Physical Intelligence) | no disponible en esta busqueda | Multiples camaras + estado | no disponible en esta busqueda | Pesos abiertos | Modelo VLA de proposito general orientado a tareas de manipulacion diversas |
 
@@ -95,7 +95,7 @@ Los datos de los modelos alternativos provienen de informacion publica general y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_sparse__bbox__overlay_a75__sim__all_cameras__live__smolvla__seed_0
+- Modelo en Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_sparse__bbox__overlay_a75__sim__all_cameras__live__smolvla__seed_0
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/mim-chess-vlas/train_800_sparse__bbox__overlay_a75__sim__all_cameras__live
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=mim-chess-vlas/train_800_sparse__bbox__overlay_a75__sim__all_cameras__live
@@ -108,4 +108,4 @@ Los datos de los modelos alternativos provienen de informacion publica general y
 - Grabacion de datos y entrenamiento de politicas: https://huggingface.co/docs/lerobot/en/il_robots
 - Referencia rapida de comandos CLI: https://huggingface.co/docs/lerobot/main/en/cheat-sheet
 
-Nota: la busqueda web realizada no ha devuelto enlaces relevantes sobre este modelo; los resultados obtenidos correspondian a entidades no relacionadas (centros de radiologia y una facultad universitaria). Todos los enlaces anteriores proceden del model card y de los metadatos de HuggingFace.
+Nota: la busqueda web realizada no ha devuelto enlaces relevantes sobre este modelo; los resultados obtenidos correspondian a entidades no relacionadas (centros de radiologia y una facultad universitaria). Todos los enlaces anteriores proceden del model card y de los metadatos de Hugging Face.

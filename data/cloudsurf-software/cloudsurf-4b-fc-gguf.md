@@ -82,7 +82,7 @@ No se dispone de especificaciones completas de modelos comparables como Nanbeige
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/cloudsurf-software/CloudSurf-4B-FC-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/cloudsurf-software/CloudSurf-4B-FC-GGUF
 - Modelo base (BF16): https://huggingface.co/cloudsurf-software/CloudSurf-4B-FC
 - Proyector de visión (mmproj): https://huggingface.co/cloudsurf-software/CloudSurf-4B-FC-GGUF/resolve/main/mmproj-CloudSurf-4B-FC.F16.gguf
 - Manifest de checksums: https://huggingface.co/cloudsurf-software/CloudSurf-4B-FC-GGUF/resolve/main/quant-manifest.json

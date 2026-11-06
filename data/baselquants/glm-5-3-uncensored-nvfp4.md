@@ -103,10 +103,10 @@ La model card incluye ademas el desglose por las 57 materias del MMLU (por ejemp
 
 | Modelo | Parametros | Contexto | Cuantizacion | Rechazos (HarmBench) | MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| baselquants/GLM-5.3-UNCENSORED-NVFP4 | 753B declarados / ~18B activos | 1M | NVFP4 | 7,3 % (off), 0,0 % (high, max) | 84,11 % | MIT | HuggingFace, 0 descargas, 0 likes en el momento del analisis |
-| zai-org/GLM-5.3 (base) | 753B / ~18B activos | 1M | bf16 original | no disponible | 85,58 % | no disponible | HuggingFace |
-| dealignai/GLM-5.3-ABLITERATED-NVFP4 | mismo que el modelo analizado | 1M | NVFP4 | no disponible de forma independiente (espejo de este checkpoint) | no disponible | no disponible | HuggingFace |
-| dealignai/GLM-5.3-UNCENSORED-FP8 | mismo que el modelo base | 1M | FP8 | no disponible | no disponible | no disponible | HuggingFace |
+| baselquants/GLM-5.3-UNCENSORED-NVFP4 | 753B declarados / ~18B activos | 1M | NVFP4 | 7,3 % (off), 0,0 % (high, max) | 84,11 % | MIT | Hugging Face, 0 descargas, 0 likes en el momento del analisis |
+| zai-org/GLM-5.3 (base) | 753B / ~18B activos | 1M | bf16 original | no disponible | 85,58 % | no disponible | Hugging Face |
+| dealignai/GLM-5.3-ABLITERATED-NVFP4 | mismo que el modelo analizado | 1M | NVFP4 | no disponible de forma independiente (espejo de este checkpoint) | no disponible | no disponible | Hugging Face |
+| dealignai/GLM-5.3-UNCENSORED-FP8 | mismo que el modelo base | 1M | FP8 | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparativa con alternativas de otros fabricantes del mismo orden de tamano no esta disponible en la informacion proporcionada.
 
@@ -126,7 +126,7 @@ La comparativa con alternativas de otros fabricantes del mismo orden de tamano n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baselquants/GLM-5.3-UNCENSORED-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/baselquants/GLM-5.3-UNCENSORED-NVFP4
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Espejo declarado por el autor: https://huggingface.co/dealignai/GLM-5.3-ABLITERATED-NVFP4
 - Build en FP8 del mismo linaje: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8

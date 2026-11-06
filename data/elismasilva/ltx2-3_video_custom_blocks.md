@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo o componente | Que aporta | Parametros | Contexto o duracion | Pasos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| elismasilva/ltx2.3_video_custom_blocks | Bloques modulares y condiciones explicitas para LTX 2.3 | no aplica (solo codigo) | 121 fotogramas a 24 fps en el ejemplo | 8 (destilado) | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| elismasilva/ltx2.3_video_custom_blocks | Bloques modulares y condiciones explicitas para LTX 2.3 | no aplica (solo codigo) | 121 fotogramas a 24 fps en el ejemplo | 8 (destilado) | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | LTX2VideoBlocks (clase base del mismo modulo) | Flujo no destilado; obliga a configurar guiders | no disponible | no disponible | no disponible | Apache 2.0 (mismo repositorio) | Incluida en el mismo modulo de confianza |
-| OzzyGT/LTX-2.3-Distilled-1.1 | Checkpoint que aporta los pesos y la configuracion | no disponible | no disponible | no disponible | no disponible | HuggingFace (modelo base declarado) |
+| OzzyGT/LTX-2.3-Distilled-1.1 | Checkpoint que aporta los pesos y la configuracion | no disponible | no disponible | no disponible | no disponible | Hugging Face (modelo base declarado) |
 
 No se dispone de datos de otros modelos comparables (parametros, contexto, rendimiento o licencia) en la informacion proporcionada.
 
@@ -93,7 +93,7 @@ No se dispone de datos de otros modelos comparables (parametros, contexto, rendi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/elismasilva/ltx2.3_video_custom_blocks
+- Repositorio en Hugging Face: https://huggingface.co/elismasilva/ltx2.3_video_custom_blocks
 - Modelo base declarado: https://huggingface.co/OzzyGT/LTX-2.3-Distilled-1.1
 - Documentacion de Modular Diffusers citada en la model card: https://huggingface.co/docs/diffusers/main/en/modular_diffusers/overview
 - Papers, blogs, repositorios adicionales o demos: no disponibles en la informacion proporcionada.

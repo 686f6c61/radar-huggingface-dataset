@@ -31,7 +31,7 @@ No se proporcionan detalles sobre los datos de entrenamiento, el número de toke
 - Segmentación semántica y detección: el repositorio incluye variantes `SAM3Detect` y `SAM3SemanticSegment` para tareas específicas de detección y segmentación semántica.
 - Prompts mixtos: permite combinar cajas delimitadoras con texto para refinar la búsqueda.
 - Multi-backend: gracias a Keras 3, el mismo código funciona en TensorFlow, JAX y PyTorch sin cambios.
-- Carga de pesos flexible: se puede cargar desde el repositorio local (`kerasformers/sam3`) o desde el modelo original de HuggingFace (`hf:facebook/sam3`) si se tiene acceso.
+- Carga de pesos flexible: se puede cargar desde el repositorio local (`kerasformers/sam3`) o desde el modelo original de Hugging Face (`hf:facebook/sam3`) si se tiene acceso.
 - No se mencionan capacidades de tool calling, agentes ni razonamiento multi-paso, ya que es un modelo puramente visual.
 
 ## Casos de uso
@@ -69,7 +69,7 @@ SAM3 es el único de la familia que acepta prompts textuales directamente, lo qu
 
 - La licencia SAM 3 License (enlace en la sección de Enlaces) puede imponer restricciones de uso comercial; se recomienda revisarla antes de desplegar el modelo en producción.
 - Al ser una conversión no oficial de KerasFormers, podrían existir pequeñas diferencias de precisión respecto al modelo original de Meta, aunque los pesos se transfieren directamente.
-- El modelo original `facebook/sam3` está gated en HuggingFace; esta versión es accesible sin restricciones, pero la calidad puede depender de la conversión.
+- El modelo original `facebook/sam3` está gated en Hugging Face; esta versión es accesible sin restricciones, pero la calidad puede depender de la conversión.
 - No se han documentado sesgos específicos, pero como todo modelo de visión entrenado con datos web, puede presentar sesgos en el reconocimiento de ciertos grupos demográficos o contextos culturales.
 - El modelo está pensado para prompts en inglés (dado el codificador CLIP), aunque no se especifica oficialmente; el rendimiento con otros idiomas puede ser inferior.
 - No se proporcionan métricas de robustez ante imágenes adversarias o condiciones de iluminación extremas.
@@ -77,7 +77,7 @@ SAM3 es el único de la familia que acepta prompts textuales directamente, lo qu
 
 ## Enlaces
 
-- [Repositorio HuggingFace: kerasformers/sam3](https://huggingface.co/kerasformers/sam3)
+- [Repositorio Hugging Face: kerasformers/sam3](https://huggingface.co/kerasformers/sam3)
 - [Paper SAM 3: Segment Anything with Concepts (arXiv:2511.16719)](https://arxiv.org/abs/2511.16719)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de SAM3 en KerasFormers](https://imvision12.github.io/KerasFormers/sam3/)

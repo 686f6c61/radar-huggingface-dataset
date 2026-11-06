@@ -79,7 +79,7 @@ El modelo aquí descrito se diferencia de Whisper medium original por su ajuste 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/whisper-free/whisper-medium-arabic-codeswitched-ggml
+- Hugging Face: https://huggingface.co/whisper-free/whisper-medium-arabic-codeswitched-ggml
 - Modelo fuente: https://huggingface.co/Seif-Eldeen-Sameh/whisper-medium-arabic-codeswitched
 - Repositorio OpenAI Whisper: https://github.com/openai/whisper
 - Página oficial de Whisper en OpenAI: https://openai.com/fr-FR/index/whisper/

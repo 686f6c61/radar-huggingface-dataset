@@ -86,8 +86,8 @@ La ventaja principal de Spark-X2.5-4B frente a estos modelos es su contexto de 1
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/abenzerps/Spark-X2.5-4B-MLX-4bit
-- Modelo base en HuggingFace: https://huggingface.co/XHToken/Spark-X2.5-4B
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/abenzerps/Spark-X2.5-4B-MLX-4bit
+- Modelo base en Hugging Face: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Repositorio GitHub del proyecto: https://github.com/XHToken/Spark-X2.5
 - Pagina del modelo en ModelScope: https://www.modelscope.cn/models/XHToken/Spark-X2.5-4B
 - Referencia en LLM Reference: https://www.llmreference.com/model/spark-x2.5-4b

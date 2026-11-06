@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks de proposito general (MMLU, HumanEv
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jev-Style-0.8B-Decision-v3 (GGUF) | 0,75 B | 25.600 tokens | 79,2 % en 2.000 decisiones tipadas; Brier 3,2x mejor que Jev | apache-2.0 | Pesos abiertos en HuggingFace; Q4_K_M de 0,53 GB |
+| Jev-Style-0.8B-Decision-v3 (GGUF) | 0,75 B | 25.600 tokens | 79,2 % en 2.000 decisiones tipadas; Brier 3,2x mejor que Jev | apache-2.0 | Pesos abiertos en Hugging Face; Q4_K_M de 0,53 GB |
 | Jev-Style-2B-Decision v2 (GGUF) | 2 B | no disponible | 5,7 puntos por debajo de v3 en el mismo conjunto | apache-2.0 | Pesos abiertos; su Q4_K_M pesa 1,27 GB, aproximadamente 2,4x el de v3 |
 | Jev (TypeSafe AI) | no disponible | no disponible | Referencia zero-shot del benchmark; 6,4 puntos por debajo de v3 y Brier 3,2x peor | propietaria | Solo API alojada, abierta el 21 de septiembre de 2026 a 0,042 USD por millon de tokens de entrada, salida gratuita |
 | Qwen3.5-0.8B (backbone sin ajustar) | 0,75 B | no disponible | No comparable directamente: no expone el protocolo de decision | no disponible | Base del modelo; el autor lo usa como export sin entrenar para medir latencia |
@@ -96,7 +96,7 @@ La comparacion con Jev esta sesgada a favor de v3: los datos de v3 son in-domain
 
 ## Enlaces
 
-- Modelo en HuggingFace (GGUF): https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3-GGUF
+- Modelo en Hugging Face (GGUF): https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3-GGUF
 - Modelo base: https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3
 - Version v1 de 2B (GGUF): https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF
 - Version v2 de 2B (GGUF): https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2-GGUF

@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ARLoop-1.3B | 1.208.655.360 | 4096 | Transformer recurrente con residuales de atencion | Apache 2.0 | HuggingFace (osunlp) |
+| ARLoop-1.3B | 1.208.655.360 | 4096 | Transformer recurrente con residuales de atencion | Apache 2.0 | Hugging Face (osunlp) |
 | Modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de comparaciones publicadas con modelos de la misma categoria en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable.
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de comparaciones publicadas con modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/osunlp/ARLoop-1.3B
+- Modelo en Hugging Face: https://huggingface.co/osunlp/ARLoop-1.3B
 - Codigo de entrenamiento: https://github.com/ykyaol7/ARLoop
 - Checkpoint intermedio de ejemplo: https://huggingface.co/osunlp/ARLoop-1.3B/tree/step-010000
 - Checkpoint final por paso: https://huggingface.co/osunlp/ARLoop-1.3B/tree/step-238417

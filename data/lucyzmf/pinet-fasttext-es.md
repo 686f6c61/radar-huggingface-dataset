@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pinet-fasttext-es` es un modelo de embeddings de palabras (word embeddings) entrenado con fastText sobre un volcado de la Wikipedia en castellano. Lo publica el usuario Lucyzmf en HuggingFace y su propósito no es generar texto, sino producir representaciones vectoriales de 300 dimensiones para palabras y, de forma destacable, para sílabas. El modelo se creó como artefacto auxiliar de un estudio de neurociencia cognitiva sobre la jerarquía de códigos neurales en la producción del lenguaje (Zhang, Lévy, d'Ascoli, Rapin, Alario, Bourdillon, Pinet y King).
+`pinet-fasttext-es` es un modelo de embeddings de palabras (word embeddings) entrenado con fastText sobre un volcado de la Wikipedia en castellano. Lo publica el usuario Lucyzmf en Hugging Face y su propósito no es generar texto, sino producir representaciones vectoriales de 300 dimensiones para palabras y, de forma destacable, para sílabas. El modelo se creó como artefacto auxiliar de un estudio de neurociencia cognitiva sobre la jerarquía de códigos neurales en la producción del lenguaje (Zhang, Lévy, d'Ascoli, Rapin, Alario, Bourdillon, Pinet y King).
 
 La diferencia clave respecto a los vectores oficiales de fastText en castellano es el uso de n-gramas de caracteres desde longitud 1 (`-minn 1`) hasta 5. Esta configuración permite que unidades cortas como las sílabas ("pa", "lo", "tras") reciban embeddings informativos, algo que con el mínimo habitual de 3 caracteres quedaría mal cubierto. Es, por tanto, una herramienta muy específica para investigación lingüística y neurociencia del lenguaje, no un modelo de propósito general.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Dimension | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `pinet-fasttext-es` | fastText skip-gram, n-gramas 1-5 | 300 | es | CC BY-SA 4.0 | HuggingFace (Lucyzmf) |
+| `pinet-fasttext-es` | fastText skip-gram, n-gramas 1-5 | 300 | es | CC BY-SA 4.0 | Hugging Face (Lucyzmf) |
 | fastText oficial `cc.es.300` | fastText skip-gram, n-gramas 3-6 | 300 | es | CC BY-SA 3.0 | Sitio oficial de fastText |
-| `Spanish Word Embeddings` (SBWC) | word2vec / fastText sobre corpus SBWC | 100-300 | es | varía (a menudo CC BY) | HuggingFace y repos académicos |
-| BETO (`dccuchile/bert-base-spanish-wwm-cased`) | Transformer encoder | 768 | es | Apache 2.0 | HuggingFace |
+| `Spanish Word Embeddings` (SBWC) | word2vec / fastText sobre corpus SBWC | 100-300 | es | varía (a menudo CC BY) | Hugging Face y repos académicos |
+| BETO (`dccuchile/bert-base-spanish-wwm-cased`) | Transformer encoder | 768 | es | Apache 2.0 | Hugging Face |
 
 La diferencia principal frente a los vectores oficiales de fastText es el rango de n-gramas, que en este modelo baja hasta 1 carácter para cubrir sílabas. Frente a BETO, este modelo no ofrece representaciones contextuales ni atención, pero es mucho más ligero y determinista.
 
@@ -88,7 +88,7 @@ La diferencia principal frente a los vectores oficiales de fastText es el rango 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lucyzmf/pinet-fasttext-es
+- Modelo en Hugging Face: https://huggingface.co/Lucyzmf/pinet-fasttext-es
 - Herramienta de conversión usada en el entrenamiento (wp2txt): https://github.com/yohasebe/wp2txt
 - Referencia del paper citado en la model card: Zhang, M., Lévy, J., d'Ascoli, S., Rapin, J., Alario, F.-X., Bourdillon, P., Pinet, S., King, J.-R. *A hierarchy of dynamic neural codes supports successive linguistic neural representations and coordinates language production in the human brain.* (enlace directo no disponible en la información proporcionada)
 - Documentación oficial de fastText: https://fasttext.cc

@@ -68,6 +68,6 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [Repositorio del adaptador en HuggingFace](https://huggingface.co/dementor-research/sft_gsm8k_nemotron-nano-30b-a3b_as_granite-4-h-small_seed42)
+- [Repositorio del adaptador en Hugging Face](https://huggingface.co/dementor-research/sft_gsm8k_nemotron-nano-30b-a3b_as_granite-4-h-small_seed42)
 - [Framework Tinker (Thinking Machines)](https://thinkingmachines.ai/tinker/)
-- [Modelo base en HuggingFace](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16)
+- [Modelo base en Hugging Face](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16)

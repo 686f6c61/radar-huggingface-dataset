@@ -96,7 +96,7 @@ La informacion proporcionada solo permite comparar el artefacto con su propio mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/experimentalmachines/LFM2.5-1.2B-Instruct-heretic-ExecuTorch
+- Repositorio en Hugging Face: https://huggingface.co/experimentalmachines/LFM2.5-1.2B-Instruct-heretic-ExecuTorch
 - Modelo base de la cuantizacion: https://huggingface.co/experimentalmachines/LFM2.5-1.2B-Instruct-heretic
 - Licencia lfm1.0 (Liquid AI): https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/blob/main/LICENSE
 - Aplicacion Android openweights: https://github.com/alpharomercoma/openweights

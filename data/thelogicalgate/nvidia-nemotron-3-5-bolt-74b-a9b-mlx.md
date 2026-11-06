@@ -94,7 +94,7 @@ Comparativa con alternativas externas de la misma categoría (otros MoE multimod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thelogicalgate/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-MLX
+- Repositorio en Hugging Face: https://huggingface.co/thelogicalgate/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-MLX
 - Modelo base en BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16
 - Variante NVFP4 con borrador LiLiCorr: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/

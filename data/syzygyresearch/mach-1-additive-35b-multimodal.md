@@ -118,5 +118,5 @@ No se dispone de más detalles sobre estos modelos comparables en la informació
 
 ## Enlaces
 
-- Repositorio HuggingFace: [SyzygyResearch/Mach-1-Additive-35B-Multimodal](https://huggingface.co/SyzygyResearch/Mach-1-Additive-35B-Multimodal)
+- Repositorio Hugging Face: [SyzygyResearch/Mach-1-Additive-35B-Multimodal](https://huggingface.co/SyzygyResearch/Mach-1-Additive-35B-Multimodal)
 - Repo base (sin vision tower): [SyzygyResearch/Mach-1-Additive-35B](https://huggingface.co/SyzygyResearch/Mach-1-Additive-35B)

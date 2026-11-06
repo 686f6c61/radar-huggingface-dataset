@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MN-Nazgul-12B-v1-GGUF es una cuantización en formato GGUF del modelo MN-Nazgul-12B-v1, desarrollado originalmente por OccultAI. El repositorio de HuggingFace está mantenido por mradermacher, un usuario conocido por publicar versiones cuantizadas de modelos open source. Este modelo pertenece a una serie de modelos de 12 mil millones de parámetros de OccultAI, de la que también forman parte MN-Adversary-12B-v1, MN-12b-Rosier-v1, MN-12B-Mag-Mell-R1 y MN-12B-Estrella-v1, entre otros.
+MN-Nazgul-12B-v1-GGUF es una cuantización en formato GGUF del modelo MN-Nazgul-12B-v1, desarrollado originalmente por OccultAI. El repositorio de Hugging Face está mantenido por mradermacher, un usuario conocido por publicar versiones cuantizadas de modelos open source. Este modelo pertenece a una serie de modelos de 12 mil millones de parámetros de OccultAI, de la que también forman parte MN-Adversary-12B-v1, MN-12b-Rosier-v1, MN-12B-Mag-Mell-R1 y MN-12B-Estrella-v1, entre otros.
 
 La versión GGUF permite ejecutar el modelo en entornos con recursos limitados mediante cuantización, lo que lo hace accesible para inferencia en CPU y GPU de consumo. El repositorio incluye múltiples niveles de cuantización (desde Q2_K hasta F16), lo que ofrece flexibilidad según el hardware disponible. Sin embargo, la información pública sobre la arquitectura subyacente, el entrenamiento y las capacidades específicas es muy escasa, ya que la model card original no proporciona detalles técnicos.
 
@@ -26,7 +26,7 @@ No se ha publicado información detallada sobre la arquitectura del modelo origi
 ## Capacidades
 
 - No se dispone de información oficial sobre las capacidades específicas del modelo.
-- El tag "conversational" en HuggingFace sugiere que está orientado a tareas de diálogo y chat.
+- El tag "conversational" en Hugging Face sugiere que está orientado a tareas de diálogo y chat.
 - Al ser un modelo de 12B, es probable que pueda realizar generación de texto, razonamiento básico y seguir instrucciones, pero no hay datos que lo confirmen.
 - No se indica soporte para tool calling, agentes, visión, audio u otras capacidades especiales.
 

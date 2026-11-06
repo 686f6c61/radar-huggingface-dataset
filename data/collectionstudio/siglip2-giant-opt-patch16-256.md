@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Resolucion / parche | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CollectionStudio/siglip2-giant-opt-patch16-256 | 1,87 B | 256 / 16 | Clasificacion zero-shot, retrieval, encoder visual | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| google/siglip2-giant-opt-patch16-256 | No disponible (se asume equivalente al ser el checkpoint de referencia) | 256 / 16 | Clasificacion zero-shot, retrieval, encoder visual | Apache 2.0 | HuggingFace (repositorio oficial) |
-| SigLIP 1 (familia google/siglip-*) | No disponible | Variable segun variante | Clasificacion zero-shot, retrieval | Apache 2.0 | HuggingFace |
-| CLIP (familia openai/clip-*) | No disponible | 224 / 14 en las variantes habituales | Clasificacion zero-shot, retrieval | No disponible en la informacion proporcionada | HuggingFace |
+| CollectionStudio/siglip2-giant-opt-patch16-256 | 1,87 B | 256 / 16 | Clasificacion zero-shot, retrieval, encoder visual | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| google/siglip2-giant-opt-patch16-256 | No disponible (se asume equivalente al ser el checkpoint de referencia) | 256 / 16 | Clasificacion zero-shot, retrieval, encoder visual | Apache 2.0 | Hugging Face (repositorio oficial) |
+| SigLIP 1 (familia google/siglip-*) | No disponible | Variable segun variante | Clasificacion zero-shot, retrieval | Apache 2.0 | Hugging Face |
+| CLIP (familia openai/clip-*) | No disponible | 224 / 14 en las variantes habituales | Clasificacion zero-shot, retrieval | No disponible en la informacion proporcionada | Hugging Face |
 
 Los datos de parametros y rendimiento de las alternativas no estan incluidos en la informacion proporcionada, por lo que no se comparan cifras concretas. La diferencia cualitativa principal de SigLIP 2 frente a SigLIP 1 y CLIP es la incorporacion de objetivos de localizacion y representaciones densas, ademas del caracter multilingue descrito en el articulo.
 
@@ -86,7 +86,7 @@ Los datos de parametros y rendimiento de las alternativas no estan incluidos en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CollectionStudio/siglip2-giant-opt-patch16-256
+- Repositorio en Hugging Face: https://huggingface.co/CollectionStudio/siglip2-giant-opt-patch16-256
 - Repositorio oficial de referencia: https://huggingface.co/google/siglip2-giant-opt-patch16-256
 - Articulo de SigLIP 2: https://arxiv.org/abs/2502.14786
 - Articulo de SigLIP: https://arxiv.org/abs/2303.15343

@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento para el fine-tune, por lo que la comparati
 
 ## Enlaces
 
-- [HuggingFace - HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run5-gen0](https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run5-gen0)
+- [Hugging Face - HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run5-gen0](https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run5-gen0)
 - [Qwen2.5 Technical Report (arXiv)](https://arxiv.org/abs/2412.15115)
 - [Qwen2.5-Coder Technical Report (arXiv)](https://arxiv.org/html/2409.12186v3)
 - [Qwen2.5:7b en Ollama](https://ollama.com/library/qwen2.5:7b)

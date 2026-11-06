@@ -73,6 +73,6 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qtum/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/qtum/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - README en chino: https://huggingface.co/qtum/Qwen3.8-27B-GGUF/blob/main/README_zh.md

@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Enfoque | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT (esta política, SO-101) | 51,6 M | Transformer + CVAE con chunks de acción | Chunk no confirmado (el nombre sugiere 75) | No disponible | HuggingFace, LeRobot |
+| ACT (esta política, SO-101) | 51,6 M | Transformer + CVAE con chunks de acción | Chunk no confirmado (el nombre sugiere 75) | No disponible | Hugging Face, LeRobot |
 | Diffusion Policy | Depende de la configuración (no disponible) | Difusión sobre acciones | Horizonte de predicción configurable | No disponible en la información proporcionada | Implementada en LeRobot |
-| SmolVLA | ~450 M (dato externo aproximado) | VLA con backbone VLM pequeño | Condicionado por lenguaje | No disponible en la información proporcionada | HuggingFace, LeRobot |
+| SmolVLA | ~450 M (dato externo aproximado) | VLA con backbone VLM pequeño | Condicionado por lenguaje | No disponible en la información proporcionada | Hugging Face, LeRobot |
 | π0 (pi-zero) | ~3,3 B (dato externo aproximado) | VLA con flow matching | Condicionado por lenguaje | No disponible en la información proporcionada | Publicada por Physical Intelligence |
 
 Las cifras de SmolVLA y π0 son referencias externas aproximadas y no proceden de la información proporcionada para esta ficha; la comparación directa de rendimiento no es posible porque este repositorio no publica ninguna evaluación. Frente a las alternativas VLA, la diferencia clave es que esta política no entiende lenguaje: solo ejecuta la tarea para la que fue entrenada.
@@ -100,7 +100,7 @@ Las cifras de SmolVLA y π0 son referencias externas aproximadas y no proceden d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kwj1021/act_so101_addleftdata_chunk75_step50
+- Modelo en Hugging Face: https://huggingface.co/Kwj1021/act_so101_addleftdata_chunk75_step50
 - Dataset de entrenamiento: https://huggingface.co/datasets/Kwj1021/so101_pick_place_addleftdata
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Kwj1021/so101_pick_place_addleftdata
 - Artículo de ACT (arXiv 2304.13705): https://huggingface.co/papers/2304.13705

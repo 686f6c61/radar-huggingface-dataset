@@ -88,6 +88,6 @@ La comparación de rendimiento con estas alternativas no es posible: este checkp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/igomsmiranda/qwen25-mt-gkd-domain-routed-lambda0p9-beta0p5
+- Modelo en Hugging Face: https://huggingface.co/igomsmiranda/qwen25-mt-gkd-domain-routed-lambda0p9-beta0p5
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/diogomsmirandaa-team/mopd-qwen25-fullsft-mt-gkd/runs/9clfrmer
 - Repositorio de TRL (framework de entrenamiento citado): https://github.com/huggingface/trl

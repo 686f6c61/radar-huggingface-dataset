@@ -99,7 +99,7 @@ La comparación directa de rendimiento con otros modelos NER no está disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DakeraAI/gliner-x-small-int8
+- Modelo en Hugging Face: https://huggingface.co/DakeraAI/gliner-x-small-int8
 - Modelo base: https://huggingface.co/knowledgator/gliner-x-small
 - Paper GLiNER: https://arxiv.org/abs/2311.08526
 - Web de Dakera: https://dakera.ai

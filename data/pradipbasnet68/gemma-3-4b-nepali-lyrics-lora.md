@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `pradipbasnet68/gemma-3-4b-nepali-lyrics-lora` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base `google/gemma-3-4b-it`. Se distribuye como un repositorio PEFT independiente de 0,2 GB, no como un modelo completo: para utilizarlo hay que cargar los pesos del modelo base de Google y superponer el adaptador. El autor es el usuario de HuggingFace `pradipbasnet68` y su objetivo declarado, segun el identificador del repositorio, es la generacion de letras de canciones en nepalí.
+El modelo `pradipbasnet68/gemma-3-4b-nepali-lyrics-lora` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base `google/gemma-3-4b-it`. Se distribuye como un repositorio PEFT independiente de 0,2 GB, no como un modelo completo: para utilizarlo hay que cargar los pesos del modelo base de Google y superponer el adaptador. El autor es el usuario de Hugging Face `pradipbasnet68` y su objetivo declarado, segun el identificador del repositorio, es la generacion de letras de canciones en nepalí.
 
 El proposito concreto es especializar un modelo conversacional multilingue de 4 mil millones de parametros en un dominio muy acotado: la composicion y continuacion de letras musicales nepalíes. Los metadatos del repositorio indican que el entrenamiento se hizo con aprendizaje supervisado (tag `sft`) mediante la libreria TRL y PEFT 0.20.0, con `transformers` como framework de carga. Es relevante ahora porque demuestra el patron habitual de bajo coste para adaptar un modelo abierto a una lengua y un genero textual concreto sin reentrenar el modelo completo: un repositorio de 0,2 GB frente a los aproximadamente 8-9 GB en bf16 del modelo base.
 
-La model card publicada es la plantilla por defecto de HuggingFace y no contiene informacion cumplimentada: no se documentan el dataset, los hiperparametros, la licencia ni los resultados de evaluacion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y la unica fecha disponible es la de creacion y actualizacion (15 de septiembre de 2026, segun los metadatos de HuggingFace). Todo lo relativo al proceso de ajuste fino debe considerarse no verificado.
+La model card publicada es la plantilla por defecto de Hugging Face y no contiene informacion cumplimentada: no se documentan el dataset, los hiperparametros, la licencia ni los resultados de evaluacion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y la unica fecha disponible es la de creacion y actualizacion (15 de septiembre de 2026, segun los metadatos de Hugging Face). Todo lo relativo al proceso de ajuste fino debe considerarse no verificado.
 
 ## Especificaciones tecnicas
 
@@ -76,8 +76,8 @@ No hay datos de rendimiento del adaptador que permitan una comparacion cuantitat
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| pradipbasnet68/gemma-3-4b-nepali-lyrics-lora | Adaptador LoRA sobre Gemma 3 4B IT | No disponible (base de ~4B) | No disponible (base: 128.000 tokens) | No disponible | safetensors (PEFT) | Publico en HuggingFace, 0 descargas |
-| google/gemma-3-4b-it | Modelo base instruction-tuned y multimodal de entrada | ~4B | 128.000 tokens | Gemma Terms of Use | safetensors (bf16) | Publico en HuggingFace |
+| pradipbasnet68/gemma-3-4b-nepali-lyrics-lora | Adaptador LoRA sobre Gemma 3 4B IT | No disponible (base de ~4B) | No disponible (base: 128.000 tokens) | No disponible | safetensors (PEFT) | Publico en Hugging Face, 0 descargas |
+| google/gemma-3-4b-it | Modelo base instruction-tuned y multimodal de entrada | ~4B | 128.000 tokens | Gemma Terms of Use | safetensors (bf16) | Publico en Hugging Face |
 | Otros ajustes de Gemma 3 4B para nepalí | No disponible | No disponible | No disponible | No disponible | No disponible | No se han identificado en la informacion proporcionada |
 | Adaptadores LoRA de la misma categoria (generacion creativa en lenguas de bajos recursos) | No disponible | No disponible | No disponible | No disponible | No disponible | No se han identificado en la informacion proporcionada |
 
@@ -97,7 +97,7 @@ No hay datos de rendimiento del adaptador que permitan una comparacion cuantitat
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/pradipbasnet68/gemma-3-4b-nepali-lyrics-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/pradipbasnet68/gemma-3-4b-nepali-lyrics-lora
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Documentacion de Gemma 3 (Google): https://ai.google.dev/gemma/docs/core/model_card_3
 - Libreria PEFT: https://github.com/huggingface/peft

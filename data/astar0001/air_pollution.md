@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`astar0001/air_pollution` es un repositorio publicado en HuggingFace por el usuario `astar0001` bajo licencia MIT. La model card asociada es prácticamente vacía: únicamente contiene el bloque de metadatos de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni uso previsto. No hay información sobre el pipeline asociado, los idiomas soportados ni el tipo de tarea para la que fue entrenado.
+`astar0001/air_pollution` es un repositorio publicado en Hugging Face por el usuario `astar0001` bajo licencia MIT. La model card asociada es prácticamente vacía: únicamente contiene el bloque de metadatos de licencia, sin descripción del modelo, arquitectura, datos de entrenamiento ni uso previsto. No hay información sobre el pipeline asociado, los idiomas soportados ni el tipo de tarea para la que fue entrenado.
 
 El identificador del repositorio (`air_pollution`, "contaminación atmosférica") sugiere, por el nombre, que podría tratarse de un modelo orientado a predicción o clasificación de calidad del aire, pero esta interpretación es una inferencia a partir del nombre y no está respaldada por ningún dato de la model card ni por los metadatos disponibles. El repositorio tiene cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado en la misma marca temporal (2026-11-04T08:17:14Z), lo que apunta a una publicación recién subida y sin actividad posterior.
 
@@ -71,6 +71,6 @@ No disponible. La información proporcionada no permite identificar la categorí
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/astar0001/air_pollution
+- Repositorio en Hugging Face: https://huggingface.co/astar0001/air_pollution
 - DOI asociado: doi:10.57967/hf/11422
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este modelo.

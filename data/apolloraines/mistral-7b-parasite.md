@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: al ser un modelo de 7B en precisión completa (safetensors), requiere aproximadamente 14-16 GB de VRAM en FP16. Con cuantización GGUF de 4 bits, puede reducirse a unos 4-5 GB.
 - GPU recomendadas: para FP16, una RTX 3090/4090 (24 GB) o una A10G (24 GB) son suficientes. Para cuantización GGUF, una GPU consumer de 8 GB (RTX 3060, RTX 4060) puede ejecutarlo.
 - Cabe en GPU consumer: sí, con cuantización GGUF de 4 bits cabe en GPUs de 8 GB; en FP16 requiere 16 GB o más.
-- Opciones de despliegue: compatible con transformers, vLLM, TGI (según tags de HuggingFace), llama.cpp y Ollama (por el formato GGUF). También se menciona DeepswapLLM, una herramienta del autor que permite ejecutar el modelo en GPUs más pequeñas transmitiendo capas entre GPU, RAM y disco.
+- Opciones de despliegue: compatible con transformers, vLLM, TGI (según tags de Hugging Face), llama.cpp y Ollama (por el formato GGUF). También se menciona DeepswapLLM, una herramienta del autor que permite ejecutar el modelo en GPUs más pequeñas transmitiendo capas entre GPU, RAM y disco.
 - Latencia y throughput: no disponibles. El proceso de cirugía se completó en 9 minutos en 2x RTX 3090 con NVLink, pero eso es tiempo de modificación, no de inferencia.
 
 ## Comparativa con modelos similares
@@ -77,9 +77,9 @@ No hay datos de rendimiento comparativo publicados. La diferencia principal es f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApolloRaines/Mistral-7B-Parasite
+- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Mistral-7B-Parasite
 - Repositorio DeepswapLLM: https://github.com/apolloraines/DeepswapLLM
-- Perfil del autor en HuggingFace: https://huggingface.co/ApolloRaines
+- Perfil del autor en Hugging Face: https://huggingface.co/ApolloRaines
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Documentación de Mistral 7B: https://docs.mistral.ai/models/mistral-7b-0-1
 - Endpoint de inferencia en FriendliAI: https://friendli.ai/models/ApolloRaines/Mistral-7B-Parasite

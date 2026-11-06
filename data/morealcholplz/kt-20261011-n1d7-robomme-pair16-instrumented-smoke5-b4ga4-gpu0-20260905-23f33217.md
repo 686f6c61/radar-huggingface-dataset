@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El artefacto alojado en HuggingFace con identificador `morealcholplz/kt-20261011-n1d7-robomme-pair16-instrumented-smoke5-b4ga4-gpu0-20260905-23f33217` no es un modelo entrenado ni listo para inferencia, sino una copia de seguridad archivística de un directorio de investigación. Su propia model card lo describe textualmente como "Research reset backup" y aclara que "no model training or inference was performed for this backup". Por tanto, no debe interpretarse como un sistema desplegable, sino como un snapshot de ficheros de checkpoint, configuración y resultados experimentales.
+El artefacto alojado en Hugging Face con identificador `morealcholplz/kt-20261011-n1d7-robomme-pair16-instrumented-smoke5-b4ga4-gpu0-20260905-23f33217` no es un modelo entrenado ni listo para inferencia, sino una copia de seguridad archivística de un directorio de investigación. Su propia model card lo describe textualmente como "Research reset backup" y aclara que "no model training or inference was performed for this backup". Por tanto, no debe interpretarse como un sistema desplegable, sino como un snapshot de ficheros de checkpoint, configuración y resultados experimentales.
 
 El nombre del repositorio codifica la traza de un experimento de robótica: `robomme` (probablemente el benchmark RoboMME), `pair16`, `instrumented`, `smoke5` (un test de humo), `b4ga4` (batch 4 con acumulación de gradiente 4) y `gpu0`, junto con una marca temporal `20260905` y la fecha de creación `20261011`. El pipeline declarado es `robotics` y las etiquetas incluyen `checkpoint-backup` y `region:us`. El autor es la cuenta `morealcholplz`, sin descargas ni "likes" registrados.
 
@@ -84,7 +84,7 @@ No procede una comparativa directa, porque el artefacto no es un modelo con espe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-instrumented-smoke5-b4ga4-gpu0-20260905-23f33217
+- Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-instrumented-smoke5-b4ga4-gpu0-20260905-23f33217
 - Manifiesto del respaldo: `BACKUP_MANIFEST.json` (referenciado en la model card; no se proporciona URL directa)
 - Referencia a GR00T (NVIDIA): no disponible en la información proporcionada
 - Referencia a pi / openpi: no disponible en la información proporcionada

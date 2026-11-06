@@ -77,7 +77,7 @@ La comparativa se limita a los modelos mencionados en la informacion proporciona
 
 ## Enlaces
 
-- [HuggingFace - SceneWorks/illustrious-xl-v2-mlx](https://huggingface.co/SceneWorks/illustrious-xl-v2-mlx)
+- [Hugging Face - SceneWorks/illustrious-xl-v2-mlx](https://huggingface.co/SceneWorks/illustrious-xl-v2-mlx)
 - [GitHub - SceneWorks/SceneWorks](https://github.com/SceneWorks/SceneWorks)
 - [Civitai - Illustrious XL 2.0](https://civitai.com/models/1369089/illustrious-xl-20)
 - [Modelo base - OnomaAIResearch/Illustrious-XL-v2.0](https://huggingface.co/OnomaAIResearch/Illustrious-XL-v2.0)

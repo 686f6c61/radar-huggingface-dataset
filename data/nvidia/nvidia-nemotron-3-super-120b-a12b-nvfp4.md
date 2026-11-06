@@ -4,7 +4,7 @@
 
 NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4 es un modelo de lenguaje de gran tamaño desarrollado por NVIDIA, presentado en marzo de 2026. Forma parte de la familia Nemotron 3, diseñada para tareas de agente, razonamiento y conversación de alto volumen, como la automatización de tickets de TI. El modelo emplea una arquitectura híbrida LatentMoE que combina capas de Mamba-2, MoE y Attention selectivas, junto con Multi-Token Prediction (MTP) para acelerar la generación y mejorar la calidad. Con 120 mil millones de parámetros totales y 12 mil millones activos, ofrece una ventana de contexto de hasta 1 millón de tokens, lo que lo hace especialmente adecuado para razonamiento de contexto largo y flujos de trabajo agénticos.
 
-El modelo está cuantizado de forma nativa en NVFP4 (4 bits de punto flotante de NVIDIA), lo que reduce los requisitos de memoria y cómputo en comparación con una representación de precisión completa. Soporta siete idiomas: inglés, francés, alemán, italiano, japonés, español y chino. Su licencia, la NVIDIA Nemotron Open Model License, permite uso comercial, y los pesos están disponibles en formato safetensors. El repositorio de HuggingFace acumula más de 2,2 millones de descargas y 424 likes, lo que refleja un interés considerable en la comunidad.
+El modelo está cuantizado de forma nativa en NVFP4 (4 bits de punto flotante de NVIDIA), lo que reduce los requisitos de memoria y cómputo en comparación con una representación de precisión completa. Soporta siete idiomas: inglés, francés, alemán, italiano, japonés, español y chino. Su licencia, la NVIDIA Nemotron Open Model License, permite uso comercial, y los pesos están disponibles en formato safetensors. El repositorio de Hugging Face acumula más de 2,2 millones de descargas y 424 likes, lo que refleja un interés considerable en la comunidad.
 
 La relevancia actual del modelo radica en su combinación de eficiencia (solo 12B activos) y capacidad de contexto extremo (1M tokens), junto con un modo de razonamiento configurable mediante la plantilla de chat. Esto lo posiciona como una opción sólida para despliegues en producción donde se requiere manejar grandes volúmenes de información y tareas de agente complejas.
 
@@ -21,13 +21,13 @@ La relevancia actual del modelo radica en su combinación de eficiencia (solo 12
 | Licencia | NVIDIA Nemotron Open Model License |
 | Formato de pesos | safetensors (NVFP4) |
 
-Nota: el repositorio en HuggingFace tiene un tamaño de 80,4 GB y el archivo safetensors contiene 67.228.556.288 parámetros (67,2B), una discrepancia con los 120B declarados que probablemente se debe a la cuantización NVFP4 y a la estructura MoE.
+Nota: el repositorio en Hugging Face tiene un tamaño de 80,4 GB y el archivo safetensors contiene 67.228.556.288 parámetros (67,2B), una discrepancia con los 120B declarados que probablemente se debe a la cuantización NVFP4 y a la estructura MoE.
 
 ## Arquitectura y entrenamiento
 
 El modelo utiliza una arquitectura LatentMoE, un diseño híbrido que intercala capas de Mamba-2 (modelos de espacio de estados) con capas de Mezcla de Expertos (MoE) y capas de atención selectiva. Esta combinación busca equilibrar la eficiencia computacional con la capacidad de modelado de dependencias de largo alcance. Además, incorpora Multi-Token Prediction (MTP), una técnica que predice varios tokens a la vez durante el entrenamiento y la inferencia, lo que reduce la latencia de generación y mejora la calidad del texto.
 
-En cuanto al entrenamiento, NVIDIA ha publicado los datasets de pre-entrenamiento y post-entrenamiento en HuggingFace (colecciones `nvidia/nemotron-pre-training-datasets` y `nvidia/nemotron-post-training-v3`). El corte de datos de post-entrenamiento es de febrero de 2026, mientras que el de pre-entrenamiento es de junio de 2025. No se especifica el número total de tokens de entrenamiento en la información disponible. El modelo fue entrenado con cuantización NVFP4 desde el inicio, lo que maximiza la eficiencia de cómputo en hardware NVIDIA.
+En cuanto al entrenamiento, NVIDIA ha publicado los datasets de pre-entrenamiento y post-entrenamiento en Hugging Face (colecciones `nvidia/nemotron-pre-training-datasets` y `nvidia/nemotron-post-training-v3`). El corte de datos de post-entrenamiento es de febrero de 2026, mientras que el de pre-entrenamiento es de junio de 2025. No se especifica el número total de tokens de entrenamiento en la información disponible. El modelo fue entrenado con cuantización NVFP4 desde el inicio, lo que maximiza la eficiencia de cómputo en hardware NVIDIA.
 
 ## Capacidades
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 - VRAM estimada: el repositorio ocupa 80,4 GB en disco, por lo que se necesitan al menos 80 GB de VRAM para cargar los pesos en memoria durante la inferencia. Con NVFP4, el modelo está optimizado para GPUs NVIDIA.
 - GPU recomendadas: la model card especifica como requisito mínimo 1× B200 o 1× DGX Spark. La B200 cuenta con 192 GB de HBM3e, mientras que DGX Spark ofrece 128 GB de memoria unificada. No se mencionan GPUs de consumo (como RTX 4090) como viables.
-- Opciones de despliegue: compatible con la librería `transformers` de HuggingFace y con el ecosistema NVIDIA (NIM). Se puede servir con frameworks como vLLM o TGI, aunque no se confirma explícitamente en la documentación.
+- Opciones de despliegue: compatible con la librería `transformers` de Hugging Face y con el ecosistema NVIDIA (NIM). Se puede servir con frameworks como vLLM o TGI, aunque no se confirma explícitamente en la documentación.
 - Latencia y throughput: no se proporcionan cifras concretas. La inclusión de MTP sugiere una generación más rápida que modelos sin esta técnica, pero no hay datos numéricos.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de información suficiente en la documentación proporcionada para
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4)
+- [Modelo en Hugging Face](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4)
 - [Informe técnico de NVIDIA Nemotron-3-Super](https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Super-Technical-Report.pdf)
 - [Colección de datasets de pre-entrenamiento](https://huggingface.co/collections/nvidia/nemotron-pre-training-datasets)
 - [Colección de datasets de post-entrenamiento](https://huggingface.co/collections/nvidia/nemotron-post-training-v3)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cosmos3_mot_l36_d1024_bench2dex_all26_b128_30k_h48e24_ema` es un modelo de política de acción para control robótico cerrado, desarrollado por el usuario de HuggingFace Myungkyu. Se construye sobre Cosmos3-Nano, un modelo de mundo de vídeo, al que se le acopla un ActionDiT externo de 36 capas y anchura 1024 entrenado desde cero, con condicionamiento unidireccional vídeo-a-acción y un esquema de acciones compartido. El modelo genera chunks de 48 acciones a 20 Hz a partir de observaciones visuales multimarca y del estado articular del robot.
+`cosmos3_mot_l36_d1024_bench2dex_all26_b128_30k_h48e24_ema` es un modelo de política de acción para control robótico cerrado, desarrollado por el usuario de Hugging Face Myungkyu. Se construye sobre Cosmos3-Nano, un modelo de mundo de vídeo, al que se le acopla un ActionDiT externo de 36 capas y anchura 1024 entrenado desde cero, con condicionamiento unidireccional vídeo-a-acción y un esquema de acciones compartido. El modelo genera chunks de 48 acciones a 20 Hz a partir de observaciones visuales multimarca y del estado articular del robot.
 
 El modelo se ha afinado sobre las 26 configuraciones del benchmark Bench2Dex, distribuidas en 12 encarnaciones robóticas (Allegro, Jaka, Leap, Orca, Revo2, UR5+RH56DFX, RH5DG2, Schunk, Shadow, Sharpa, Wuji y Ability), usando exportaciones LeRobot v3.0 por encarnación. La entrada visual se compone de cuatro vistas de 640x480 dispuestas en un lienzo 2x2 de 256x320, y el estado se representa mediante las articulaciones activas del robot (24 en los ajustes UR5 reportados).
 
@@ -88,7 +88,7 @@ No se dispone de datos comparativos de rendimiento con alternativas en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/cosmos3_mot_l36_d1024_bench2dex_all26_b128_30k_h48e24_ema
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/cosmos3_mot_l36_d1024_bench2dex_all26_b128_30k_h48e24_ema
 - Benchmark Bench2Dex: https://github.com/Bench2Dex/Bench2Dex
 - Paper Bench2Dex: arXiv 2609.15726
 - VAE Wan2.2: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B

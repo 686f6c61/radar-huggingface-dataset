@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zho-hans-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407` es un modelo de generacion de texto desarrollado por el usuario de HuggingFace `francesca9805`, publicado como un ajuste fino (fine-tuning) supervisado del modelo base `francesca9805/zho-hans-100mb-ppt-mp-struct-core-100mb_seed3407`. La nomenclatura del identificador sugiere un experimento sobre tokenizacion o estructuracion de vocabulario para chino simplificado (`zho-hans`) con un corpus del orden de 100 MB, aunque la model card no confirma ni detalla esta composicion.
+El modelo `zho-hans-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407` es un modelo de generacion de texto desarrollado por el usuario de Hugging Face `francesca9805`, publicado como un ajuste fino (fine-tuning) supervisado del modelo base `francesca9805/zho-hans-100mb-ppt-mp-struct-core-100mb_seed3407`. La nomenclatura del identificador sugiere un experimento sobre tokenizacion o estructuracion de vocabulario para chino simplificado (`zho-hans`) con un corpus del orden de 100 MB, aunque la model card no confirma ni detalla esta composicion.
 
 Tecnicamente se trata de un transformer decoder-only de tipo GPT-2, con 124.770.816 parametros totales (aproximadamente 124,8 millones) y pesos en formato safetensors. El entrenamiento se realizo con la libreria TRL (version 0.23.0) mediante SFT, sobre Transformers 4.56.2 y PyTorch 2.11.0, y el checkpoint publicado corresponde al paso 500 de entrenamiento con semilla 3407. El run de entrenamiento esta registrado en Weights & Biases bajo el proyecto `new-tokenizers` de la Universidad de Groningen, lo que apunta a un contexto de investigacion academica mas que a un modelo de produccion.
 
@@ -12,7 +12,7 @@ Su relevancia es limitada y fundamentalmente experimental: no se han publicado r
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 (aproximadamente 124,8 M) |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
@@ -70,7 +70,7 @@ Las siguientes cifras son estimaciones derivadas del recuento de parametros conf
 - VRAM total recomendada para inferencia con contexto moderado: entre 1 y 2 GB, incluyendo cache KV y overhead del runtime.
 - GPU compatibles: cualquier GPU con al menos 2 GB de VRAM, incluidas GTX 1650, RTX 3050, RTX 3060, RTX 4060 y superiores; tambien A100, H100, L40S y similares, aunque estan sobredimensionadas para este tamano.
 - Cabe holgadamente en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos diez anos, y tambien en CPU (con latencia mayor) mediante llama.cpp u ONNX Runtime.
-- Opciones de despliegue: transformers con `pipeline`, Text Generation Inference (TGI), vLLM, llama.cpp u Ollama si se generan pesos GGUF (no publicados), y endpoints de HuggingFace Inference Endpoints, dado que el repositorio esta marcado como `endpoints_compatible`.
+- Opciones de despliegue: transformers con `pipeline`, Text Generation Inference (TGI), vLLM, llama.cpp u Ollama si se generan pesos GGUF (no publicados), y endpoints de Hugging Face Inference Endpoints, dado que el repositorio esta marcado como `endpoints_compatible`.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No se dispone de informacion sobre modelos directamente comparables dentro de la
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zho-hans-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407 | 124,8 M | No disponible | No disponible | HuggingFace, 0 descargas |
+| zho-hans-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407 | 124,8 M | No disponible | No disponible | Hugging Face, 0 descargas |
 | GPT-2 (124 M, OpenAI) | 124 M | 1024 tokens | MIT | Ampliamente disponible |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible |
 | GPT-2 medium | 355 M | 1024 tokens | MIT | Ampliamente disponible |
@@ -100,7 +100,7 @@ Nota: los datos de GPT-2, DistilGPT-2 y GPT-2 medium corresponden a informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-mp-struct-core-100mb_seed3407
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/0v0kaw38
 - Repositorio de TRL: https://github.com/huggingface/trl

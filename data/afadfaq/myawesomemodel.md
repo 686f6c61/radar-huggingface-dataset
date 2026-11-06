@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de extraccion de caracteristicas (feature-extraction) publicado en HuggingFace por el usuario afadfaq bajo licencia MIT. A pesar de que la model card describe un modelo conversacional con capacidades de razonamiento, generacion de codigo y function calling, los metadatos del repositorio lo clasifican como un modelo BERT para feature-extraction, lo que genera una contradiccion significativa entre la documentacion y la configuracion tecnica declarada. El repositorio tiene un tamano de 0.0 GB, lo que sugiere que no contiene pesos publicados o que estos son de dimensiones minimas.
+MyAwesomeModel es un modelo de extraccion de caracteristicas (feature-extraction) publicado en Hugging Face por el usuario afadfaq bajo licencia MIT. A pesar de que la model card describe un modelo conversacional con capacidades de razonamiento, generacion de codigo y function calling, los metadatos del repositorio lo clasifican como un modelo BERT para feature-extraction, lo que genera una contradiccion significativa entre la documentacion y la configuracion tecnica declarada. El repositorio tiene un tamano de 0.0 GB, lo que sugiere que no contiene pesos publicados o que estos son de dimensiones minimas.
 
 La model card menciona una actualizacion de version con mejoras en profundidad de razonamiento, citando un incremento en AIME 2025 del 70% al 87.5% y un aumento del uso medio de tokens por pregunta de 12K a 23K. Sin embargo, estos datos no van acompanados de especificaciones de arquitectura, numero de parametros ni configuracion de entrenamiento. El modelo se presenta como compatible con endpoints y con la libreria transformers.
 
@@ -12,7 +12,7 @@ La relevancia actual del modelo es limitada: no tiene descargas ni likes, el rep
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (segun tags de HuggingFace); no se detalla en la model card |
+| Arquitectura | BERT (segun tags de Hugging Face); no se detalla en la model card |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ La relevancia actual del modelo es limitada: no tiene descargas ni likes, el rep
 
 ## Arquitectura y entrenamiento
 
-Los tags de HuggingFace indican arquitectura BERT y pipeline de feature-extraction, lo que sugiere un transformer encoder. No obstante, la model card describe capacidades generativas, razonamiento profundo y function calling, propias de un modelo decoder o encoder-decoder, sin especificar la arquitectura real. No se proporciona informacion sobre el numero de parametros, la composicion del dataset de entrenamiento, el volumen de tokens procesados ni si se aplicaron tecnicas de RLHF, DPO o post-entrenamiento con optimizacion algoritmica.
+Los tags de Hugging Face indican arquitectura BERT y pipeline de feature-extraction, lo que sugiere un transformer encoder. No obstante, la model card describe capacidades generativas, razonamiento profundo y function calling, propias de un modelo decoder o encoder-decoder, sin especificar la arquitectura real. No se proporciona informacion sobre el numero de parametros, la composicion del dataset de entrenamiento, el volumen de tokens procesados ni si se aplicaron tecnicas de RLHF, DPO o post-entrenamiento con optimizacion algoritmica.
 
 La model card menciona que la version actual mejora la profundidad de razonamiento mediante "mayores recursos computacionales y mecanismos de optimizacion algoritmica durante el post-entrenamiento", pero no detalla que tecnicas concretas se emplearon. Tampoco se describe ninguna innovacion arquitectonica como atencion lineal, decodificacion especulativa o arquitecturas hibridas SSM. La unica referencia tecnica concreta es el aumento del uso medio de tokens por pregunta en AIME (de 12K a 23K), lo que indica un modo de razonamiento extendido, pero sin especificar como se implementa.
 
@@ -88,7 +88,7 @@ No se dispone de datos verificables de arquitectura, parametros ni contexto para
 
 | Modelo | Math Reasoning | Code Generation | Logical Reasoning | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MyAwesomeModel | 0.550 | 0.650 | 0.819 | MIT | HuggingFace (repo 0.0 GB) |
+| MyAwesomeModel | 0.550 | 0.650 | 0.819 | MIT | Hugging Face (repo 0.0 GB) |
 | Model1-v2 | 0.521 | 0.640 | 0.810 | no disponible | no disponible |
 | Model1 | 0.510 | 0.615 | 0.789 | no disponible | no disponible |
 | Model2 | 0.535 | 0.631 | 0.801 | no disponible | no disponible |
@@ -98,7 +98,7 @@ No se identifican alternativas reales comparables (mismo tamano o tarea) porque 
 ## Limitaciones y advertencias
 
 - Contradiccion entre metadatos y model card: los tags indican BERT y feature-extraction, mientras la model card describe un modelo generativo conversacional con razonamiento y function calling. Esta inconsistencia impide confiar en las capacidades declaradas.
-- Repositorio vacio: el tamano de 0.0 GB sugiere ausencia de pesos publicados; el modelo no seria ejecutable tal cual desde HuggingFace.
+- Repositorio vacio: el tamano de 0.0 GB sugiere ausencia de pesos publicados; el modelo no seria ejecutable tal cual desde Hugging Face.
 - Sin datos de entrenamiento: no se especifica dataset, volumen de tokens, tecnicas de alineacion ni proceso de post-entrenamiento.
 - Benchmarks no verificables: los nombres de benchmarks son genericos, no se detalla la metrica y los modelos de comparacion no estan identificados. El resultado de AIME 2025 (87.5%) no es comprobable.
 - Idiomas no declarados: no se puede garantizar soporte multilingue ni el comportamiento en castellano.
@@ -110,7 +110,7 @@ No se identifican alternativas reales comparables (mismo tamano o tarea) porque 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/afadfaq/MyAwesomeModel
+- Hugging Face: https://huggingface.co/afadfaq/MyAwesomeModel
 - Repositorio de codigo: no disponible (la model card lo menciona sin enlace)
 - Paper: no disponible
 - Blog o demo: no disponible

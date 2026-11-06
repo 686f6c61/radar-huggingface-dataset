@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen3-VL-4B-VQA-SFT es un ajuste fino (SFT) del modelo multimodal Qwen/Qwen3-VL-4B-Instruct, publicado por el usuario QiLong26 en HuggingFace. El modelo base pertenece a la familia Qwen3-VL de Alibaba, disenada para tareas de imagen-texto-a-texto (image-text-to-text), es decir, comprension conjunta de imagenes y lenguaje natural. Este ajuste concreto esta orientado, segun su nombre, a tareas de VQA (visual question answering), aunque la model card no documenta el dataset de entrenamiento utilizado.
+Qwen3-VL-4B-VQA-SFT es un ajuste fino (SFT) del modelo multimodal Qwen/Qwen3-VL-4B-Instruct, publicado por el usuario QiLong26 en Hugging Face. El modelo base pertenece a la familia Qwen3-VL de Alibaba, disenada para tareas de imagen-texto-a-texto (image-text-to-text), es decir, comprension conjunta de imagenes y lenguaje natural. Este ajuste concreto esta orientado, segun su nombre, a tareas de VQA (visual question answering), aunque la model card no documenta el dataset de entrenamiento utilizado.
 
 El modelo cuenta con 4.437.815.808 parametros totales (aproximadamente 4,4 mil millones) almacenados en formato safetensors, con un repositorio de 8,9 GB. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales significativas. La relevancia de este modelo radica en su tamano contenido, que lo hace apto para despliegue en hardware de gama media, y en su especializacion en tareas de pregunta-respuesta sobre imagenes.
 
-No obstante, conviene senalar que se trata de una publicacion con muy poca traccion (30 descargas, 0 likes en el momento de la consulta) y con una model card generada automaticamente por el Trainer de HuggingFace, sin documentacion adicional sobre datos, evaluacion o limitaciones. Esto reduce considerablemente la confianza que un equipo de produccion deberia depositar en el modelo sin una evaluacion propia previa.
+No obstante, conviene senalar que se trata de una publicacion con muy poca traccion (30 descargas, 0 likes en el momento de la consulta) y con una model card generada automaticamente por el Trainer de Hugging Face, sin documentacion adicional sobre datos, evaluacion o limitaciones. Esto reduce considerablemente la confianza que un equipo de produccion deberia depositar en el modelo sin una evaluacion propia previa.
 
 ## Especificaciones tecnicas
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3-VL-4B-VQA-SFT (este) | 4,4 B | no disponible | Apache 2.0 | HuggingFace, 30 descargas | SFT sobre Qwen3-VL-4B-Instruct, sin benchmarks publicados |
-| Qwen/Qwen3-VL-4B-Instruct (base) | 4,4 B | no disponible | Apache 2.0 | HuggingFace, ampliamente distribuido | Modelo oficial de Alibaba, con documentacion y evaluacion completas |
+| Qwen3-VL-4B-VQA-SFT (este) | 4,4 B | no disponible | Apache 2.0 | Hugging Face, 30 descargas | SFT sobre Qwen3-VL-4B-Instruct, sin benchmarks publicados |
+| Qwen/Qwen3-VL-4B-Instruct (base) | 4,4 B | no disponible | Apache 2.0 | Hugging Face, ampliamente distribuido | Modelo oficial de Alibaba, con documentacion y evaluacion completas |
 | Otros VLM de ~4 B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada para establecer una comparacion cuantitativa |
 
 La comparacion mas directa es con el modelo base Qwen3-VL-4B-Instruct, del que este checkpoint deriva. Frente a el, el ajuste SFT anade especializacion en VQA a costa de perder la documentacion oficial, la evaluacion publicada y el soporte de la organizacion original. Para produccion, el modelo base suele ser la opcion mas segura salvo que se valide empiricamente la mejora del ajuste en la tarea concreta.
@@ -86,5 +86,5 @@ La comparacion mas directa es con el modelo base Qwen3-VL-4B-Instruct, del que e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QiLong26/Qwen3-VL-4B-VQA-SFT
+- Modelo en Hugging Face: https://huggingface.co/QiLong26/Qwen3-VL-4B-VQA-SFT
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct

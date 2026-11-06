@@ -2,9 +2,9 @@
 
 ## Resumen
 
-sentiment-versioning-demo es un modelo de clasificación de texto publicado por el usuario chaymans en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo distilbert-base-uncased mediante la librería transformers y el Trainer de HuggingFace, con 66.955.010 parámetros totales y un tamaño de repositorio de 0,8 GB. El pipeline declarado es text-classification, por lo que su función prevista es asignar una etiqueta a un texto de entrada, presumiblemente relacionada con análisis de sentimiento, aunque la model card no especifica el conjunto de etiquetas ni el dataset utilizado.
+sentiment-versioning-demo es un modelo de clasificación de texto publicado por el usuario chaymans en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo distilbert-base-uncased mediante la librería transformers y el Trainer de Hugging Face, con 66.955.010 parámetros totales y un tamaño de repositorio de 0,8 GB. El pipeline declarado es text-classification, por lo que su función prevista es asignar una etiqueta a un texto de entrada, presumiblemente relacionada con análisis de sentimiento, aunque la model card no especifica el conjunto de etiquetas ni el dataset utilizado.
 
-El modelo resulta relevante únicamente como pieza de demostración: su nombre (versioning-demo) sugiere que se publicó para ilustrar flujos de versionado de modelos o de artefactos en HuggingFace, más que para su uso en producción. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card se generó automáticamente con la plantilla del Trainer, con secciones de descripción, usos previstos y datos de entrenamiento marcadas como "More information needed". No se ha publicado información sobre idiomas soportados, composición del dataset ni métricas en benchmarks estándar.
+El modelo resulta relevante únicamente como pieza de demostración: su nombre (versioning-demo) sugiere que se publicó para ilustrar flujos de versionado de modelos o de artefactos en Hugging Face, más que para su uso en producción. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card se generó automáticamente con la plantilla del Trainer, con secciones de descripción, usos previstos y datos de entrenamiento marcadas como "More information needed". No se ha publicado información sobre idiomas soportados, composición del dataset ni métricas en benchmarks estándar.
 
 Arquitectónicamente hereda todas las características de DistilBERT: un transformer encoder de 6 capas, 768 dimensiones ocultas, 12 cabezas de atención y una ventana máxima de 512 tokens, destilado a partir de BERT-base y entrenado originalmente sobre corpus en inglés. El ajuste fino se realizó con un único epoch, learning rate 2e-05 y AdamW fused, alcanzando una precisión de validación de 0,854 sobre una partición no especificada.
 
@@ -25,7 +25,7 @@ Arquitectónicamente hereda todas las características de DistilBERT: un transfo
 
 El modelo es un ajuste fino de distilbert-base-uncased, un transformer encoder de tipo only-encoder con 6 capas, 768 dimensiones ocultas, 12 cabezas de atencion y aproximadamente 66,9 millones de parametros, resultado de la destilacion de BERT-base. Al ser un modelo uncased, el tokenizador normaliza el texto a minusculas y descarta las marcas de acentuacion propias del ingles, lo que reduce el tamano del vocabulario a 30.522 tokens. La cabeza de clasificacion anade una proyeccion sobre el token [CLS] cuyo numero de clases final no se documenta en la model card.
 
-El entrenamiento se realizo con el Trainer de HuggingFace con los siguientes hiperparametros declarados: learning rate 2e-05, train_batch_size 16, eval_batch_size 32, semilla 42, optimizador AdamW_TORCH_FUSED con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal y un unico epoch. El registro indica 125 pasos de entrenamiento, lo que con ese tamano de lote equivale aproximadamente a 2.000 ejemplos de entrenamiento (calculo derivado de los datos de la model card, no declarado por el autor). No se registra la perdida de entrenamiento ("No log") ni se describe la composicion del dataset, que aparece como "unknown dataset". No consta uso de RLHF, DPO ni tecnicas de alineacion; tampoco innovaciones de decodificacion o atencion.
+El entrenamiento se realizo con el Trainer de Hugging Face con los siguientes hiperparametros declarados: learning rate 2e-05, train_batch_size 16, eval_batch_size 32, semilla 42, optimizador AdamW_TORCH_FUSED con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal y un unico epoch. El registro indica 125 pasos de entrenamiento, lo que con ese tamano de lote equivale aproximadamente a 2.000 ejemplos de entrenamiento (calculo derivado de los datos de la model card, no declarado por el autor). No se registra la perdida de entrenamiento ("No log") ni se describe la composicion del dataset, que aparece como "unknown dataset". No consta uso de RLHF, DPO ni tecnicas de alineacion; tampoco innovaciones de decodificacion o atencion.
 
 Versiones de framework declaradas: Transformers 5.17.0, PyTorch 2.11.0+cu128, Datasets 5.0.1 y Tokenizers 0.23.1. El repositorio ocupa 0,8 GB, aproximadamente el triple del peso de los parametros en FP32 (unos 268 MB), lo que sugiere que incluye tambien los estados del optimizador (dos momentos de AdamW).
 
@@ -65,17 +65,17 @@ Este 0,854 de precision no es comparable con resultados publicos de SST-2 u otro
 - VRAM estimada para inferencia: aproximadamente 268 MB para los pesos en FP32, unos 134 MB en FP16/BF16 y unos 67 MB en int8. Con activaciones y lotes moderados, la inferencia completa cabe holgadamente por debajo de 1 GB de VRAM.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria. Practicamente todas las GPU consumer sirven: GTX 1050/1650, RTX 2060, RTX 3060, RTX 4090, asi como aceleradores de datacenter (T4, L4, A10, A100, H100) para servir lotes muy grandes.
 - Cabe en GPU consumer: si, en todas las GPU consumer modernas e incluso en iGPU con suficiente memoria compartida. La inferencia en CPU es viable para volumenes moderados.
-- Opciones de despliegue: `transformers` con `pipeline` de clasificacion, HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), Text Embeddings Inference (etiqueta `text-embeddings-inference`), Optimum con ONNX Runtime para cuantizacion dinamica int8, NVIDIA Triton o TorchServe para servir en produccion y FastAPI como envoltorio minimo. No consta soporte especifico de vLLM para DistilBERT como clasificador encoder-only.
+- Opciones de despliegue: `transformers` con `pipeline` de clasificacion, Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), Text Embeddings Inference (etiqueta `text-embeddings-inference`), Optimum con ONNX Runtime para cuantizacion dinamica int8, NVIDIA Triton o TorchServe para servir en produccion y FastAPI como envoltorio minimo. No consta soporte especifico de vLLM para DistilBERT como clasificador encoder-only.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones del autor ni de terceros; por el tamano del modelo, el cuello de botella en produccion sera el tokenizador y el transporte de datos antes que el calculo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento declarado | Disponibilidad |
 |---|---|---|---|---|---|
-| chaymans/sentiment-versioning-demo | 66,9 M | 512 tokens | apache-2.0 | Precision de validacion 0,854 sobre particion no especificada | Publico en HuggingFace, 0 descargas, 0 likes |
-| distilbert-base-uncased | 66,9 M | 512 tokens | apache-2.0 | No disponible (modelo base preentrenado) | Publico en HuggingFace |
-| distilbert-base-uncased-finetuned-sst-2-english | 67,0 M | 512 tokens | apache-2.0 | No disponible en la informacion proporcionada | Publico en HuggingFace |
-| bert-base-uncased | 110 M | 512 tokens | apache-2.0 | No disponible (modelo base preentrenado) | Publico en HuggingFace |
+| chaymans/sentiment-versioning-demo | 66,9 M | 512 tokens | apache-2.0 | Precision de validacion 0,854 sobre particion no especificada | Publico en Hugging Face, 0 descargas, 0 likes |
+| distilbert-base-uncased | 66,9 M | 512 tokens | apache-2.0 | No disponible (modelo base preentrenado) | Publico en Hugging Face |
+| distilbert-base-uncased-finetuned-sst-2-english | 67,0 M | 512 tokens | apache-2.0 | No disponible en la informacion proporcionada | Publico en Hugging Face |
+| bert-base-uncased | 110 M | 512 tokens | apache-2.0 | No disponible (modelo base preentrenado) | Publico en Hugging Face |
 
 La comparativa se limita a parametros, contexto y licencia: no se dispone de resultados de benchmark homogeneos para ninguno de los cuatro modelos dentro de la informacion proporcionada, y el unico dato de rendimiento del modelo analizado proviene de su propia particion de validacion, no comparable con conjuntos publicos.
 
@@ -94,7 +94,7 @@ La comparativa se limita a parametros, contexto y licencia: no se dispone de res
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chaymans/sentiment-versioning-demo
+- Modelo en Hugging Face: https://huggingface.co/chaymans/sentiment-versioning-demo
 - Modelo base distilbert-base-uncased: https://huggingface.co/distilbert-base-uncased
 
 Nota: la busqueda web realizada no devolvio ningun enlace relevante sobre este modelo (los resultados obtenidos correspondian a horoscopos, debates sobre Gemini y articulos genericos sobre modelos multimodales). No se dispone de paper, blog, repositorio de codigo ni demo asociados al modelo.

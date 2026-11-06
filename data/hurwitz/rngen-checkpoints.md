@@ -76,8 +76,8 @@ No disponible. La información proporcionada no incluye modelos comparables de a
 
 ## Enlaces
 
-- HuggingFace (checkpoints): https://huggingface.co/Hurwitz/RNGen-checkpoints
-- HuggingFace (dataset): https://huggingface.co/datasets/Hurwitz/RNGen-data
+- Hugging Face (checkpoints): https://huggingface.co/Hurwitz/RNGen-checkpoints
+- Hugging Face (dataset): https://huggingface.co/datasets/Hurwitz/RNGen-data
 - Repositorio de código: https://github.com/Hurwitzzz/RNGen
 - Instrucciones de instalación: https://github.com/Hurwitzzz/RNGen#installation
 - Pesos y datos: https://github.com/Hurwitzzz/RNGen#weights-and-data

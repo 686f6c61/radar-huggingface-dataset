@@ -6,7 +6,7 @@
 
 MiMo-V2.6-Distill-Qwen-9B-tt-p150 es un paquete de despliegue publicado por el usuario ndaly (repo `ndaly/MiMo-V2.6-Distill-Qwen-9B-tt-p150`) que porta el modelo XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, de Xiaomi, al acelerador Tenstorrent Blackhole P150. El modelo base es un modelo de razonamiento de 9.000 millones de parametros con arquitectura hibrida que combina 24 capas de atencion lineal (Gated DeltaNet) y 8 capas de atencion completa (32 capas en total), destilado a partir de MiMo-V2.6, y con una ventana de contexto de 262.144 tokens.
 
-El repositorio no contiene los pesos: empaqueta una imagen Docker y un catalogo de modelo gestionado con tt-model-manager 0.1.0 (manifest schema 5.1) que sirve el modelo a traves de vLLM (v0.29.0) y el plugin vllm-tt-plugin sobre una unica tarjeta P150. El peso del repositorio (2,0 GB) corresponde al contenedor y al codigo, no al checkpoint, que se descarga por separado desde HuggingFace en el commit `2367e865d009c13ac81713a2878291d33ab28177`.
+El repositorio no contiene los pesos: empaqueta una imagen Docker y un catalogo de modelo gestionado con tt-model-manager 0.1.0 (manifest schema 5.1) que sirve el modelo a traves de vLLM (v0.29.0) y el plugin vllm-tt-plugin sobre una unica tarjeta P150. El peso del repositorio (2,0 GB) corresponde al contenedor y al codigo, no al checkpoint, que se descarga por separado desde Hugging Face en el commit `2367e865d009c13ac81713a2878291d33ab28177`.
 
 Es relevante ahora porque demuestra el despliegue de un modelo de razonamiento de 9B con contexto de 262.144 tokens sobre silicio no-NVIDIA (Tenstorrent), usando cuantizacion agresiva (bfp4 en proyecciones, bfp8 en cache KV y LM head) y perfiles de servicio para uno o 32 usuarios concurrentes. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de una publicacion reciente y sin validacion externa de la comunidad.
 
@@ -79,7 +79,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval u otros) en 
 - Acelerador: una unica tarjeta Tenstorrent Blackhole P150 (perfiles `batch32` y `single`, malla P150).
 - VRAM estimada: no disponible; la cuantizacion bfp4 en proyecciones y bfp8 en cache KV y LM head es la que permite servir 262.144 tokens de contexto en una sola P150.
 - GPU consumer (RTX 4090, etc.): no aplica; el despliegue esta construido para Tenstorrent, no para CUDA.
-- GPU de centro de datos (A100, H100): no aplica a este paquete concreto; el modelo base en formato original si esta publicado en HuggingFace, pero sin datos de despliegue en la informacion proporcionada.
+- GPU de centro de datos (A100, H100): no aplica a este paquete concreto; el modelo base en formato original si esta publicado en Hugging Face, pero sin datos de despliegue en la informacion proporcionada.
 - Opciones de despliegue: `tt-model pull --with-weights` y `tt-model serve` (tt-model-manager 0.1.0), con vLLM v0.29.0 y vllm-tt-plugin sobre tt-metal. Servidor compatible con OpenAI en el puerto 20000 (o el siguiente libre).
 - Tiempos de arranque: primera carga de pesos aproximadamente 3 minutos; compilacion de kernels y captura de trazas de decodificacion aproximadamente 1 minuto. Los arranques posteriores reutilizan la cache de kernels.
 - Latencia y throughput: ver tabla de la seccion anterior. Se observa que el TTFT a 32 usuarios (14,9 s) corresponde a una oleada completa de prefills secuenciales, lo que penaliza fuertemente el arranque bajo carga alta.
@@ -90,8 +90,8 @@ No hay datos de benchmarks de modelos comparables en la informacion disponible, 
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Distill-Qwen-9B-tt-p150 (este repo) | 9B | 262.144 | Imagen Docker + tt-model, vLLM sobre Tenstorrent P150 | No disponible | Repo HuggingFace, 0 descargas |
-| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (modelo base) | 9B | 262.144 | Pesos originales en HuggingFace | No disponible | Repo HuggingFace de Xiaomi |
+| MiMo-V2.6-Distill-Qwen-9B-tt-p150 (este repo) | 9B | 262.144 | Imagen Docker + tt-model, vLLM sobre Tenstorrent P150 | No disponible | Repo Hugging Face, 0 descargas |
+| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (modelo base) | 9B | 262.144 | Pesos originales en Hugging Face | No disponible | Repo Hugging Face de Xiaomi |
 | Otros modelos de razonamiento de ~9B con contexto largo | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -110,7 +110,7 @@ No hay datos de benchmarks de modelos comparables en la informacion disponible, 
 
 ## Enlaces
 
-- Repo del port en HuggingFace: https://huggingface.co/ndaly/MiMo-V2.6-Distill-Qwen-9B-tt-p150
+- Repo del port en Hugging Face: https://huggingface.co/ndaly/MiMo-V2.6-Distill-Qwen-9B-tt-p150
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (commit `2367e865d009c13ac81713a2878291d33ab28177`)
 - tt-model-manager: https://github.com/tenstorrent/tt-model-manager
 - vLLM v0.29.0: https://github.com/vllm-project/vllm/releases/tag/v0.29.0

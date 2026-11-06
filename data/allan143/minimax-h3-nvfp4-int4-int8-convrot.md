@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Allan143/Minimax-H3-nvfp4-INT4-INT8-Convrot
+- Repositorio de Hugging Face: https://huggingface.co/Allan143/Minimax-H3-nvfp4-INT4-INT8-Convrot
 - Repositorio original del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio similar (mismo contenido): https://huggingface.co/Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot
 - GitHub oficial de MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3

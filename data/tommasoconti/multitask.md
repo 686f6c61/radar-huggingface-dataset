@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tommasoconti/multitask` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada de un Vision Transformer (ViT) orientada a experimentos multitarea. Lo publica el usuario tommasoconti y se distribuye con licencia BSD-3-Clause. No es un modelo preentrenado: la propia model card lo describe como una configuración "tiny" pensada para revisión de código, smoke tests y experimentos controlados a pequeña escala, y el fichero `model.safetensors` se presenta explícitamente como un checkpoint de inicialización válido, no como un modelo entrenado ni evaluado.
+`tommasoconti/multitask` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada de un Vision Transformer (ViT) orientada a experimentos multitarea. Lo publica el usuario tommasoconti y se distribuye con licencia BSD-3-Clause. No es un modelo preentrenado: la propia model card lo describe como una configuración "tiny" pensada para revisión de código, smoke tests y experimentos controlados a pequeña escala, y el fichero `model.safetensors` se presenta explícitamente como un checkpoint de inicialización válido, no como un modelo entrenado ni evaluado.
 
 El dato más relevante para evaluarlo es su tamaño: 49.600 parámetros totales según el recuento real de safetensors. Para ponerlo en perspectiva, un ViT-Tiny estándar ronda los 5,7 millones de parámetros, de modo que este repositorio es dos órdenes de magnitud más pequeño. La arquitectura declarada combina atención multi-query, normalización LayerNorm, activación Mish y un mecanismo de fusión etiquetado como "tucker", lo que apunta a un diseño experimental de fusión tensorial más que a un backbone de producción.
 
@@ -21,7 +21,7 @@ Su relevancia ahora es acotada y muy específica: sirve como artefacto de refere
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors (PyTorch) |
 | Escala declarada | tiny |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Tamaño del repositorio | 0,0 GB |
 | Fecha de creación en el repo | 2026-10-18 |
 
@@ -86,10 +86,10 @@ La diferencia de escala es de dos a tres órdenes de magnitud respecto a los ViT
 - Riesgo de alucinación: no aplica en el sentido de un LLM, pero sí existe riesgo de interpretar erróneamente las salidas de un modelo sin entrenar como si fueran válidas.
 - Compatibilidad: no funciona con APIs automáticas de carga de Transformers sin escribir un adaptador, ni con servidores de inferencia estándar (vLLM, TGI, Ollama).
 - Licencia BSD-3-Clause: permite uso comercial y modificación con atribución y conservación del aviso de copyright, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se usa con datasets externos.
-- Almacenamiento y ancho de banda: el repositorio ocupa 0,0 GB según HuggingFace, lo que confirma que solo contiene el checkpoint de inicialización.
+- Almacenamiento y ancho de banda: el repositorio ocupa 0,0 GB según Hugging Face, lo que confirma que solo contiene el checkpoint de inicialización.
 - No debe presentarse en producción ni citarse como resultado de investigación sin un entrenamiento y una evaluación propios, documentados aparte de los valores por defecto del repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tommasoconti/multitask
+- Hugging Face: https://huggingface.co/tommasoconti/multitask
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

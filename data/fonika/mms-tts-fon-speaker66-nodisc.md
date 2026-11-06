@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Fonika/mms-tts-fon-speaker66-nodisc` es un modelo de sintesis de voz (text-to-audio) publicado en HuggingFace por el usuario Fonika. Por el identificador y por la arquitectura declarada en las etiquetas del repositorio (`vits`), se trata de un modelo de la familia MMS TTS (Massively Multilingual Speech) de Meta, reentrenado o ajustado para una voz concreta identificada como "speaker66" y con el sufijo "nodisc", que sugiere un entrenamiento sin discriminador en la fase adversarial. El modelo tiene 36.286.128 parametros (unos 36,3 millones) y pesos en formato safetensors.
+`Fonika/mms-tts-fon-speaker66-nodisc` es un modelo de sintesis de voz (text-to-audio) publicado en Hugging Face por el usuario Fonika. Por el identificador y por la arquitectura declarada en las etiquetas del repositorio (`vits`), se trata de un modelo de la familia MMS TTS (Massively Multilingual Speech) de Meta, reentrenado o ajustado para una voz concreta identificada como "speaker66" y con el sufijo "nodisc", que sugiere un entrenamiento sin discriminador en la fase adversarial. El modelo tiene 36.286.128 parametros (unos 36,3 millones) y pesos en formato safetensors.
 
 El problema que resuelve es acotado: convertir texto en audio para el idioma o variedad linguistica etiquetada como "fon" (probablemente fongbe, lengua hablada en Benin y zonas de Nigeria y Togo), un idioma con recursos digitales muy escasos. La relevancia de este tipo de modelos es precisamente su nicho: permiten dotar de voz sintetica a lenguas de bajos recursos donde los sistemas TTS comerciales no ofrecen cobertura.
 
-Ahora bien, la ficha debe leerse con cautela extrema. La model card del repositorio es la plantilla autogenerada de HuggingFace, con todos los campos marcados como "[More Information Needed]": no hay descripcion del dataset, ni hiperparametros, ni evaluacion, ni licencia, ni idiomas declarados. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y la busqueda web no devolvio ningun material relacionado (los resultados obtenidos eran paginas de prevision meteorologica sin conexion alguna con el modelo). Cualquier dato no listado aqui debe considerarse no disponible.
+Ahora bien, la ficha debe leerse con cautela extrema. La model card del repositorio es la plantilla autogenerada de Hugging Face, con todos los campos marcados como "[More Information Needed]": no hay descripcion del dataset, ni hiperparametros, ni evaluacion, ni licencia, ni idiomas declarados. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y la busqueda web no devolvio ningun material relacionado (los resultados obtenidos eran paginas de prevision meteorologica sin conexion alguna con el modelo). Cualquier dato no listado aqui debe considerarse no disponible.
 
 ## Especificaciones tecnicas
 
@@ -39,7 +39,7 @@ No hay informacion verificable sobre el proceso de entrenamiento: se desconoce e
 - Especializacion mono-hablante: el identificador "speaker66" apunta a una unica voz, sin cambio de hablante en inferencia.
 - Cobertura linguistica limitada al idioma etiquetado como "fon" (presumiblemente fongbe); no hay evidencias de capacidades multilingues.
 - Integracion con la libreria `transformers` mediante el pipeline `text-to-audio`.
-- Compatibilidad con endpoints de inferencia de HuggingFace (`endpoints_compatible`).
+- Compatibilidad con endpoints de inferencia de Hugging Face (`endpoints_compatible`).
 - No se declara soporte de tool calling, function calling, agentes, razonamiento multi-paso ni modo "thinking": son capacidades ajenas a un modelo TTS.
 - No se declaran capacidades de vision, audio de entrada (speech-to-speech) ni clonacion de voz a partir de muestras.
 - No se declara control de prosodia, emocion, velocidad o estilo (SSML, etiquetas de emocion, etc.).
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: practicamente cualquier GPU con 2 GB o mas de VRAM es suficiente (GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4090, A100, H100). No se requiere hardware de datacenter.
 - Compatibilidad con GPU de consumo: si. Cabe holgadamente en cualquier GPU de consumo moderna e incluso en GPUs integradas.
 - Inferencia en CPU: viable. Un modelo VITS de este tamano puede generar audio en CPU con latencias del orden de decimas de segundo a pocos segundos por frase, aunque no se dispone de mediciones publicadas para este checkpoint concreto.
-- Opciones de despliegue: pipeline `text-to-audio` de `transformers`; servidor de inferencia de HuggingFace (el repositorio esta marcado como `endpoints_compatible`); exportacion a ONNX como alternativa no oficial. No se declara soporte especifico para vLLM, TGI, llama.cpp u Ollama, que estan orientados a modelos de lenguaje y no a TTS.
+- Opciones de despliegue: pipeline `text-to-audio` de `transformers`; servidor de inferencia de Hugging Face (el repositorio esta marcado como `endpoints_compatible`); exportacion a ONNX como alternativa no oficial. No se declara soporte especifico para vLLM, TGI, llama.cpp u Ollama, que estan orientados a modelos de lenguaje y no a TTS.
 - Latencia y throughput: no disponibles. No hay datos publicados de tiempo real factor (RTF), muestras por segundo ni tamano de lote soportado.
 
 ## Comparativa con modelos similares
@@ -76,10 +76,10 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparat
 
 | Modelo | Parametros | Arquitectura | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fonika/mms-tts-fon-speaker66-nodisc | 36,3 M | VITS | no declarados (posiblemente fongbe) | no disponible | HuggingFace, 0 descargas |
-| Familia facebook/mms-tts-* | ~36 M por checkpoint | VITS | mas de 1.100 idiomas, un checkpoint por idioma | CC-BY-NC 4.0 (segun la familia MMS; verificar) | HuggingFace, ampliamente desplegada |
-| Coqui XTTS v2 | ~467 M | GPT-like + decoder de audio | 17 idiomas, clonacion de voz | Coqui Public Model License (no comercial) | HuggingFace, muy usada como referencia |
-| Piper (checkpoints VITS) | ~20-60 M segun voz | VITS | decenas de idiomas, una voz por modelo | MIT | GitHub y HuggingFace, orientada a CPU |
+| Fonika/mms-tts-fon-speaker66-nodisc | 36,3 M | VITS | no declarados (posiblemente fongbe) | no disponible | Hugging Face, 0 descargas |
+| Familia facebook/mms-tts-* | ~36 M por checkpoint | VITS | mas de 1.100 idiomas, un checkpoint por idioma | CC-BY-NC 4.0 (segun la familia MMS; verificar) | Hugging Face, ampliamente desplegada |
+| Coqui XTTS v2 | ~467 M | GPT-like + decoder de audio | 17 idiomas, clonacion de voz | Coqui Public Model License (no comercial) | Hugging Face, muy usada como referencia |
+| Piper (checkpoints VITS) | ~20-60 M segun voz | VITS | decenas de idiomas, una voz por modelo | MIT | GitHub y Hugging Face, orientada a CPU |
 
 Diferencias relevantes: frente a la familia MMS TTS original, este checkpoint parece ser un ajuste especifico de voz publicado por un tercero, sin la documentacion, la licencia ni las evaluaciones que acompanaan a los modelos de Meta. Frente a XTTS v2, el modelo aqui descrito es mas de diez veces mas pequeno y no ofrece clonacion de voz ni cobertura multilingue amplia. Frente a Piper, comparte arquitectura y tamano, pero carece de la documentacion de licencia y de la infraestructura de despliegue en CPU que caracteriza a esa familia.
 
@@ -98,7 +98,7 @@ Diferencias relevantes: frente a la familia MMS TTS original, este checkpoint pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fonika/mms-tts-fon-speaker66-nodisc
+- Modelo en Hugging Face: https://huggingface.co/Fonika/mms-tts-fon-speaker66-nodisc
 - Referencia incluida en las etiquetas del repositorio: https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019, calculadora de impacto de carbono; citada por la plantilla autogenerada, no describe la arquitectura del modelo)
 - Resultados de la busqueda web: no se encontro ningun enlace relevante. Las unicas URL devueltas fueron paginas de prevision meteorologica (bergfex.at, wetter.com, wetter.de, wetter.at, wetteronline.at) sin relacion alguna con el modelo.
 

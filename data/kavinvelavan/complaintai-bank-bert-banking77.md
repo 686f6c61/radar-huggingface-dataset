@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ComPlaintAI-Bank BANKING77 BERT es un modelo de clasificación de intenciones publicado por el usuario Kavinvelavan en HuggingFace. Se trata de un ajuste fino (fine-tuning) de `bert-base-uncased` sobre BANKING77, un conjunto de datos público de consultas bancarias etiquetadas con 77 intenciones distintas. El resultado es un clasificador de secuencias de 109.541.453 parámetros que asigna una de esas 77 etiquetas a una frase corta de un cliente bancario.
+ComPlaintAI-Bank BANKING77 BERT es un modelo de clasificación de intenciones publicado por el usuario Kavinvelavan en Hugging Face. Se trata de un ajuste fino (fine-tuning) de `bert-base-uncased` sobre BANKING77, un conjunto de datos público de consultas bancarias etiquetadas con 77 intenciones distintas. El resultado es un clasificador de secuencias de 109.541.453 parámetros que asigna una de esas 77 etiquetas a una frase corta de un cliente bancario.
 
 El modelo no es un generador de texto ni un LLM conversacional: es un encoder BERT con una cabeza de clasificación de 77 clases. Su relevancia práctica está en el triaje y enrutado de peticiones: identificar si una consulta trata de tarjetas perdidas, cargos duplicados, límites de transferencia o activación de cuenta permite dirigirla a la cola adecuada, medir motivos de contacto o alimentar un chatbot con lógica determinista. El autor reporta un macro-F1 de 0,8897 en su split de validación, la única métrica publicada.
 
@@ -83,7 +83,7 @@ Como referencia de escala, la línea base aleatoria sobre 77 clases equilibradas
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ComPlaintAI-Bank BANKING77 BERT (este) | 109,5 M | 128 tokens | 77 clases BANKING77 | No disponible | HuggingFace, 0 descargas |
+| ComPlaintAI-Bank BANKING77 BERT (este) | 109,5 M | 128 tokens | 77 clases BANKING77 | No disponible | Hugging Face, 0 descargas |
 | `bert-base-uncased` + fine-tuning propio en BANKING77 | 109,5 M | 512 tokens (base) | 77 clases | Apache 2.0 (modelo base) | Requiere entrenamiento propio |
 | DistilBERT-base ajustado en BANKING77 | ~66 M | 512 tokens (base) | 77 clases | Apache 2.0 (modelo base) | Checkpoints de terceros, no verificados aquí |
 | RoBERTa-base ajustado en BANKING77 | ~125 M | 514 tokens (base) | 77 clases | MIT (modelo base) | Checkpoints de terceros, no verificados aquí |
@@ -106,9 +106,9 @@ La comparación relevante es de compromiso entre tamaño y contexto: este checkp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kavinvelavan/complaintai-bank-bert-banking77
+- Modelo en Hugging Face: https://huggingface.co/Kavinvelavan/complaintai-bank-bert-banking77
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
-- Dataset BANKING77 en HuggingFace: https://huggingface.co/datasets/PolyAI/banking77
+- Dataset BANKING77 en Hugging Face: https://huggingface.co/datasets/PolyAI/banking77
 - Repositorio de datasets de PolyAI (origen de BANKING77): https://github.com/PolyAI-LDN/task-specific-datasets
 - Paper de BANKING77 (Casanueva et al., 2020): https://arxiv.org/abs/2003.04807
 - Paper de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805

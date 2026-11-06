@@ -4,7 +4,7 @@
 
 El modelo `amd/Qwen3.6-35B_rai_1.9.0_m_1.0.1_npu` es una distribución optimizada del modelo Qwen3.6-35B preparada por AMD para su plataforma Ryzen AI. Se publica en formato ONNX y está etiquetado con el identificador `qwen3_5_moe`, lo que indica que se trata de una variante de arquitectura Mixture of Experts (MoE) de la familia Qwen3.5/3.6. El repositorio ocupa 23,5 GB, un tamaño compatible con pesos cuantizados para despliegue en hardware de consumo con NPU dedicada.
 
-La relevancia de esta ficha radica en que no es un modelo entrenado desde cero por AMD, sino un artefacto de despliegue: un empaquetado ONNX afinado para el stack Ryzen AI (versión `rai_1.9.0`) y el runtime `m_1.0.1_npu`, pensado para ejecutar inferencia en las NPU integradas en los procesadores AMD Ryzen AI. El acceso está restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargarlo.
+La relevancia de esta ficha radica en que no es un modelo entrenado desde cero por AMD, sino un artefacto de despliegue: un empaquetado ONNX afinado para el stack Ryzen AI (versión `rai_1.9.0`) y el runtime `m_1.0.1_npu`, pensado para ejecutar inferencia en las NPU integradas en los procesadores AMD Ryzen AI. El acceso está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargarlo.
 
 La información pública disponible es escasa: el repositorio no incluye datos de benchmarks, composición del dataset de entrenamiento ni especificaciones detalladas de contexto o cuantización más allá de las etiquetas. Esta ficha se limita, por tanto, a lo verificable y marca explícitamente como "no disponible" todo aquello que no puede confirmarse.
 
@@ -71,17 +71,17 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Idiomas: solo se declara inglés; el rendimiento en castellano no está garantizado ni documentado.
 - Ausencia de benchmarks: no hay métricas publicadas que permitan evaluar calidad, latencia o throughput de forma objetiva.
 - Acoplamiento al hardware: el artefacto está optimizado para NPU Ryzen AI con versiones concretas del stack (`rai_1.9.0`, `m_1.0.1_npu`); no es portable a otras plataformas sin reconversión.
 - Riesgo de alucinación: inherente a los modelos generativos; sin datos específicos de evaluación para esta distribución.
 - Sesgos: no documentados en la información disponible; se heredan del modelo base Qwen.
 - Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen y de los pesos originales antes de producción.
-- Formato ONNX: dificulta el fine-tuning directo y limita la integración con herramientas del ecosistema HuggingFace (Transformers, PEFT) sin conversión previa.
+- Formato ONNX: dificulta el fine-tuning directo y limita la integración con herramientas del ecosistema Hugging Face (Transformers, PEFT) sin conversión previa.
 - Fecha de creación (2026-10-30) y cero descargas: artefacto reciente y sin validación comunitaria visible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Qwen3.6-35B_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/Qwen3.6-35B_rai_1.9.0_m_1.0.1_npu
 - No se han encontrado en la información proporcionada otros enlaces (papers, blogs, repositorios o demos) asociados a este artefacto.

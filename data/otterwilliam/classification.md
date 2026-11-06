@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`otterwilliam/classification` es un repositorio de HuggingFace publicado por el usuario otterwilliam que contiene una implementación personalizada y compacta en PyTorch de la arquitectura Albef orientada a tareas de clasificación. No se trata de un modelo preentrenado ni ajustado, sino de un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo, revisión de código y experimentos controlados de pequeño tamaño, tal y como declara explícitamente su model card.
+`otterwilliam/classification` es un repositorio de Hugging Face publicado por el usuario otterwilliam que contiene una implementación personalizada y compacta en PyTorch de la arquitectura Albef orientada a tareas de clasificación. No se trata de un modelo preentrenado ni ajustado, sino de un esqueleto de código con un checkpoint de inicialización válido para pruebas de humo, revisión de código y experimentos controlados de pequeño tamaño, tal y como declara explícitamente su model card.
 
 El repositorio incluye cinco artefactos: `train.py` (artefacto principal con el modelo y un punto de entrada ejecutable), `README.md`, `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta de experimento por defecto (AdamW con calentamiento lineal) y `model.safetensors` como checkpoint de inicialización. La configuración declarada corresponde a la escala "giant", con atención dispersa, fusión mediante cross attention, activación approx gelu y normalización instancenorm.
 
@@ -75,7 +75,7 @@ La información proporcionada no incluye datos verificables de modelos alternati
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| otterwilliam/classification | 16.576 | no disponible | sin benchmark declarado | apache-2.0 | HuggingFace, 0 descargas |
+| otterwilliam/classification | 16.576 | no disponible | sin benchmark declarado | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas de la misma categoría (Albef, BLIP, CLIP u otras) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La conclusión relevante es que este repositorio no es comparable funcionalmente con modelos preentrenados de visión-lenguaje o de clasificación: es un artefacto de código con un checkpoint sin entrenar, orientado a pruebas y no a inferencia real.
@@ -96,5 +96,5 @@ La conclusión relevante es que este repositorio no es comparable funcionalmente
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/otterwilliam/classification
+- Repositorio en Hugging Face: https://huggingface.co/otterwilliam/classification
 - Paper, blog, repositorio de código o demo adicionales: no disponible. La búsqueda web realizada no devolvió ningún resultado relacionado con este modelo; los resultados obtenidos correspondían a foros de soporte de antivirus y de impresoras, sin relación alguna con el repositorio.

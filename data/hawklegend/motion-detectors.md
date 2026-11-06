@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Hawklegend/Motion-Detectors es un repositorio alojado en HuggingFace por el usuario Hawklegend, publicado con licencia Apache 2.0. En el momento de la consulta no dispone de descargas ni de "likes", y la model card asociada unicamente declara la licencia, sin ningun otro contenido tecnico: no se documentan arquitectura, tamano, datos de entrenamiento, idiomas ni tarea objetivo.
+Hawklegend/Motion-Detectors es un repositorio alojado en Hugging Face por el usuario Hawklegend, publicado con licencia Apache 2.0. En el momento de la consulta no dispone de descargas ni de "likes", y la model card asociada unicamente declara la licencia, sin ningun otro contenido tecnico: no se documentan arquitectura, tamano, datos de entrenamiento, idiomas ni tarea objetivo.
 
-El nombre del repositorio sugiere un posible uso relacionado con deteccion de movimiento, pero esta interpretacion no esta confirmada por ninguna documentacion del autor, por lo que no debe tomarse como una descripcion fiable del modelo. Tampoco se ha especificado el pipeline de HuggingFace (no disponible), lo que impide determinar si se trata de un modelo de vision, de video, de series temporales o de otro tipo.
+El nombre del repositorio sugiere un posible uso relacionado con deteccion de movimiento, pero esta interpretacion no esta confirmada por ninguna documentacion del autor, por lo que no debe tomarse como una descripcion fiable del modelo. Tampoco se ha especificado el pipeline de Hugging Face (no disponible), lo que impide determinar si se trata de un modelo de vision, de video, de series temporales o de otro tipo.
 
 Dado que la informacion publica es practicamente inexistente, esta ficha se limita a recoger los pocos metadatos verificables (identificador, autor, licencia, fechas) y a marcar como "no disponible" todo aquello que no puede confirmarse. Cualquier evaluacion tecnica o comparativa requerira consultar directamente el repositorio o contactar con el autor.
 
@@ -25,7 +25,7 @@ Otros metadatos verificables:
 
 | Parametro | Valor |
 |---|---|
-| Identificador en HuggingFace | Hawklegend/Motion-Detectors |
+| Identificador en Hugging Face | Hawklegend/Motion-Detectors |
 | Autor | Hawklegend |
 | Pipeline declarado | no disponible |
 | Etiquetas | license:apache-2.0, region:us |
@@ -51,7 +51,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 
 ## Casos de uso
 
-No es posible proponer casos de uso concretos y realistas sin conocer la tarea, la modalidad ni el tamano del modelo. La model card no especifica ninguna aplicacion prevista, y el pipeline de HuggingFace aparece como "no disponible", por lo que no hay base para determinar si el artefacto es un modelo de lenguaje, un modelo de vision, un detector o un conjunto de pesos auxiliar.
+No es posible proponer casos de uso concretos y realistas sin conocer la tarea, la modalidad ni el tamano del modelo. La model card no especifica ninguna aplicacion prevista, y el pipeline de Hugging Face aparece como "no disponible", por lo que no hay base para determinar si el artefacto es un modelo de lenguaje, un modelo de vision, un detector o un conjunto de pesos auxiliar.
 
 Como referencia, cualquier caso de uso que se plantease tendria que partir primero de la verificacion de los siguientes puntos: que tipo de entrada y salida maneja el modelo, que licencia efectiva aplica a los pesos publicados, si existen pesos utilizables (safetensors, GGUF u otros) y si el autor ha publicado metricas de evaluacion. Hasta que esa informacion no este disponible, no procede detallar escenarios de aplicacion.
 
@@ -86,11 +86,11 @@ No disponible. No se ha podido identificar la categoria a la que pertenece el mo
 - Limitaciones de contexto e idioma: no disponibles.
 - Licencia: se declara Apache 2.0, que en principio permite uso comercial, pero al no existir informacion sobre el origen de los datos ni sobre posibles pesos derivados de terceros, conviene verificar la procedencia antes de un uso en produccion.
 - Cero descargas y cero "likes": no hay evidencia de uso por parte de la comunidad ni de validacion externa del artefacto.
-- Sin pipeline declarado: las herramientas de HuggingFace no podran inferir automaticamente como cargar el modelo.
+- Sin pipeline declarado: las herramientas de Hugging Face no podran inferir automaticamente como cargar el modelo.
 - Recomendacion: contactar con el autor o consultar el repositorio antes de considerar este artefacto para cualquier flujo de trabajo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hawklegend/Motion-Detectors
+- Repositorio en Hugging Face: https://huggingface.co/Hawklegend/Motion-Detectors
 - Model card: https://huggingface.co/Hawklegend/Motion-Detectors/blob/main/README.md
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.

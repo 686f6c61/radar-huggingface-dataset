@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / rango | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bigshanedogg/Depth-Anything-V2-Metric-VKITTI-Base (este) | 97,5 M | imagen; profundidad máx. 80 m | métrica (metros) | Apache-2.0 | HuggingFace, 13 descargas |
-| depth-anything/Depth-Anything-V2-Metric-VKITTI-Base (original) | no disponible | imagen; profundidad máx. 80 m | métrica (metros) | Apache-2.0 | HuggingFace / GitHub oficial |
-| depth-anything/Depth-Anything-V2-Metric-VKITTI-Base-hf | no disponible | imagen; profundidad máx. 80 m | métrica (metros) | Apache-2.0 | HuggingFace (reimplementación transformers) |
-| Depth Anything V2 Small (variante relativa) | no disponible | imagen | relativa | Apache-2.0 | HuggingFace / GitHub oficial |
+| bigshanedogg/Depth-Anything-V2-Metric-VKITTI-Base (este) | 97,5 M | imagen; profundidad máx. 80 m | métrica (metros) | Apache-2.0 | Hugging Face, 13 descargas |
+| depth-anything/Depth-Anything-V2-Metric-VKITTI-Base (original) | no disponible | imagen; profundidad máx. 80 m | métrica (metros) | Apache-2.0 | Hugging Face / GitHub oficial |
+| depth-anything/Depth-Anything-V2-Metric-VKITTI-Base-hf | no disponible | imagen; profundidad máx. 80 m | métrica (metros) | Apache-2.0 | Hugging Face (reimplementación transformers) |
+| Depth Anything V2 Small (variante relativa) | no disponible | imagen | relativa | Apache-2.0 | Hugging Face / GitHub oficial |
 
 La diferencia clave entre este port y la variante `-hf` es la fidelidad al código original: la reimplementación nativa de transformers solo coincide para entradas cuadradas y difiere en la interpolación de embeddings posicionales de DINOv2 en entradas no cuadradas.
 
@@ -83,7 +83,7 @@ La diferencia clave entre este port y la variante `-hf` es la fidelidad al códi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bigshanedogg/Depth-Anything-V2-Metric-VKITTI-Base
+- Hugging Face: https://huggingface.co/bigshanedogg/Depth-Anything-V2-Metric-VKITTI-Base
 - Modelo base: https://huggingface.co/depth-anything/Depth-Anything-V2-Metric-VKITTI-Base
 - Repositorio oficial: https://github.com/DepthAnything/Depth-Anything-V2
 - Paper: https://arxiv.org/abs/2406.09414

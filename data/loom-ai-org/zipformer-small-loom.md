@@ -6,7 +6,7 @@ Zipformer-small-loom es la exportación al motor loom.cpp del modelo de reconoci
 
 La relevancia de esta ficha es doble: por un lado, documenta una variante concreta de Zipformer en formato GGUF lista para ejecutarse con `loom-py-rt`; por otro, sirve como referencia de las capacidades y limitaciones reales del checkpoint pequeño de Zipformer, incluyendo sus tasas de error y su comportamiento en distintos backends (CPU, Vulkan, Metal). El modelo decodifica el clip completo en una sola pasada, no es streaming, y solo incluye la cabeza transducer (no la CTC).
 
-Es importante señalar que la búsqueda web asociada a este identificador devuelve resultados de la herramienta de grabación de pantalla Loom y de la marca de ropa Loom, sin relación con el proyecto loom.cpp ni con este modelo. Por tanto, toda la información técnica procede de la model card y de los metadatos de HuggingFace.
+Es importante señalar que la búsqueda web asociada a este identificador devuelve resultados de la herramienta de grabación de pantalla Loom y de la marca de ropa Loom, sin relación con el proyecto loom.cpp ni con este modelo. Por tanto, toda la información técnica procede de la model card y de los metadatos de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks comparables de otros modelos ASR en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/zipformer-small-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/zipformer-small-loom
 - Modelo base: https://huggingface.co/pkufool/zipformer-small
 - Variante streaming del modelo base: https://huggingface.co/pkufool/zipformer-small-streaming
 - Paper de Zipformer (Next-gen Kaldi): https://arxiv.org/abs/2310.11230

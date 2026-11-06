@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `so101-03-pi05-red-block-to-target-v234`, publicado por el usuario jiajinda en HuggingFace, es un ajuste fino (fine-tune) de la politica robotica π0.5 (pi0.5) desarrollada por Physical Intelligence. Se trata de un modelo de vision-lenguaje-accion (VLA) orientado a control robotico, entrenado especificamente para una tarea de manipulacion con un brazo SO-101: recoger un bloque rojo y colocarlo sobre una diana marcada con una X. El modelo parte del checkpoint base `pi05_base` y se ha adaptado mediante clonacion de comportamiento (behavior cloning) sobre episodios grabados con LeRobot.
+El modelo `so101-03-pi05-red-block-to-target-v234`, publicado por el usuario jiajinda en Hugging Face, es un ajuste fino (fine-tune) de la politica robotica π0.5 (pi0.5) desarrollada por Physical Intelligence. Se trata de un modelo de vision-lenguaje-accion (VLA) orientado a control robotico, entrenado especificamente para una tarea de manipulacion con un brazo SO-101: recoger un bloque rojo y colocarlo sobre una diana marcada con una X. El modelo parte del checkpoint base `pi05_base` y se ha adaptado mediante clonacion de comportamiento (behavior cloning) sobre episodios grabados con LeRobot.
 
 La arquitectura subyacente es `Pi0Config(pi05=True, action_horizon=50)`, que combina un backbone PaliGemma (Gemma 2B) con un experto de acciones de 300M de parametros, sumando un total de 3.353.433.872 parametros entrenables. El modelo opera con un horizonte de accion de 50 pasos, dimension de accion 32 (de la que se usan 6), longitud maxima de token de 200 y computo en bfloat16 con parametros en float32.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| so101-03-pi05-red-block-to-target-v234 | 3.353 M | max_token_len 200 | gemma | HuggingFace (jiajinda) | Fine-tune de π0.5 para tarea concreta SO-101 |
+| so101-03-pi05-red-block-to-target-v234 | 3.353 M | max_token_len 200 | gemma | Hugging Face (jiajinda) | Fine-tune de π0.5 para tarea concreta SO-101 |
 | π0.5 base (Physical Intelligence) | no disponible en la informacion | no disponible | no disponible | checkpoint `pi05_base` (gs://openpi-assets) | Modelo base del que deriva este fine-tune |
-| SO101-01 step 5000 (parent) | 3.353 M | max_token_len 200 | gemma | HuggingFace (jiajinda) | Fine-tune previo sobre v2, incluido como parent |
+| SO101-01 step 5000 (parent) | 3.353 M | max_token_len 200 | gemma | Hugging Face (jiajinda) | Fine-tune previo sobre v2, incluido como parent |
 
 No se dispone de datos de benchmarks ni de otros modelos comparables de la misma categoria en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables de la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiajinda/so101-03-pi05-red-block-to-target-v234
+- Modelo en Hugging Face: https://huggingface.co/jiajinda/so101-03-pi05-red-block-to-target-v234
 - Dataset v2: https://huggingface.co/datasets/jiajinda/red-block-to-target-v2
 - Dataset v3: https://huggingface.co/datasets/jiajinda/red-block-to-target-v3
 - Dataset v4: https://huggingface.co/datasets/jiajinda/red-block-to-target-v4

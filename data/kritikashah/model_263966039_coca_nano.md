@@ -56,6 +56,6 @@ No se dispone de información sobre modelos comparables dentro de la misma categ
 
 ## Enlaces
 
-- [HuggingFace: kritikashah/model_263966039_coca_nano](https://huggingface.co/kritikashah/model_263966039_coca_nano)
+- [Hugging Face: kritikashah/model_263966039_coca_nano](https://huggingface.co/kritikashah/model_263966039_coca_nano)
 
 No se encontraron otros enlaces relevantes (papers, blogs, repositorios adicionales) en la búsqueda web.

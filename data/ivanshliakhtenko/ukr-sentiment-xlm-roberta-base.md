@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `IvanShliakhtenko/ukr-sentiment-xlm-roberta-base` se presenta como un modelo de análisis de sentimiento para ucraniano, presumiblemente basado en la arquitectura XLM-RoBERTa base. Sin embargo, la información disponible en HuggingFace es extremadamente limitada: la model card es una plantilla automática sin datos concretos sobre el desarrollador, el entrenamiento, la licencia o los idiomas soportados. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no se han subido pesos o que el modelo está vacío.
+El modelo `IvanShliakhtenko/ukr-sentiment-xlm-roberta-base` se presenta como un modelo de análisis de sentimiento para ucraniano, presumiblemente basado en la arquitectura XLM-RoBERTa base. Sin embargo, la información disponible en Hugging Face es extremadamente limitada: la model card es una plantilla automática sin datos concretos sobre el desarrollador, el entrenamiento, la licencia o los idiomas soportados. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no se han subido pesos o que el modelo está vacío.
 
 A pesar de que el nombre sugiere una adaptación de XLM-RoBERTa base para la tarea de clasificación de sentimiento en ucraniano, no hay evidencia pública que confirme su arquitectura, parámetros o rendimiento. La relevancia actual es baja debido a la falta de documentación y de artefactos descargables, aunque podría ser un intento de ofrecer un modelo multilingüe ajustado para ucraniano, similar a otros proyectos como `ukr-models/xlm-roberta-base-uk`.
 
@@ -56,6 +56,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. S
 
 ## Enlaces
 
-- [HuggingFace - IvanShliakhtenko/ukr-sentiment-xlm-roberta-base](https://huggingface.co/IvanShliakhtenko/ukr-sentiment-xlm-roberta-base)
+- [Hugging Face - IvanShliakhtenko/ukr-sentiment-xlm-roberta-base](https://huggingface.co/IvanShliakhtenko/ukr-sentiment-xlm-roberta-base)
 - [FacebookAI/xlm-roberta-base (modelo base de referencia)](https://huggingface.co/FacebookAI/xlm-roberta-base)
 - [ukr-models/xlm-roberta-base-uk (modelo similar encontrado en búsqueda)](https://free2aitools.com/model/ukr-models/xlm-roberta-base-uk)

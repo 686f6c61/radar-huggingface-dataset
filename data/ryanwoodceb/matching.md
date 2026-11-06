@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ryanwoodceb/matching` es un repositorio de HuggingFace publicado por el usuario ryanwoodceb que contiene una implementación funcional de un "Tiny Transformer" orientado a tareas de *matching* (emparejamiento) en una configuración que el autor etiqueta como "large" dentro de su propia familia de modelos diminutos. El modelo tiene 33.088 parámetros totales y se distribuye como un checkpoint de inicialización en formato safetensors, no como un modelo entrenado.
+`ryanwoodceb/matching` es un repositorio de Hugging Face publicado por el usuario ryanwoodceb que contiene una implementación funcional de un "Tiny Transformer" orientado a tareas de *matching* (emparejamiento) en una configuración que el autor etiqueta como "large" dentro de su propia familia de modelos diminutos. El modelo tiene 33.088 parámetros totales y se distribuye como un checkpoint de inicialización en formato safetensors, no como un modelo entrenado.
 
 La relevancia de este repositorio no está en su rendimiento, sino en su función como material de partida reproducible: incluye el código del modelo (`model.py`), la configuración de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`). El autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint sirve para pruebas de humo (*smoke tests*), no para inferencia en producción.
 
@@ -91,7 +91,7 @@ No se dispone de datos sobre modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ryanwoodceb/matching
+- Hugging Face: https://huggingface.co/ryanwoodceb/matching
 - Referencias encontradas en la búsqueda web, ninguna de ellas relacionada con este modelo (se incluyen solo como contexto y no deben usarse como fuente de datos sobre el mismo):
   - https://techjournal.org/top-10-artificial-intelligence-models
   - https://recruiterflow.com/blog/candidate-matching/

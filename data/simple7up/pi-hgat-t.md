@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PI-HGAT-T es un repositorio publicado en HuggingFace por el usuario Simple7up bajo licencia MIT, etiquetado con el pipeline `graph-ml` y orientado, segun sus tags, a la extraccion de relaciones sobre grafos de conocimiento mediante redes neuronales de grafos, con mencion explicita a "formal-methods" e "iom". El nombre del repositorio sugiere una arquitectura de tipo Heterogeneous Graph Attention Network (HGAT), pero esta interpretacion no esta confirmada por ninguna documentacion tecnica: la model card publicada se limita al bloque YAML de metadatos y no incluye descripcion, detalles de entrenamiento ni instrucciones de uso. El `pretty_name` declarado es "IOM Relation Candidates".
+PI-HGAT-T es un repositorio publicado en Hugging Face por el usuario Simple7up bajo licencia MIT, etiquetado con el pipeline `graph-ml` y orientado, segun sus tags, a la extraccion de relaciones sobre grafos de conocimiento mediante redes neuronales de grafos, con mencion explicita a "formal-methods" e "iom". El nombre del repositorio sugiere una arquitectura de tipo Heterogeneous Graph Attention Network (HGAT), pero esta interpretacion no esta confirmada por ninguna documentacion tecnica: la model card publicada se limita al bloque YAML de metadatos y no incluye descripcion, detalles de entrenamiento ni instrucciones de uso. El `pretty_name` declarado es "IOM Relation Candidates".
 
 El modelo declara soporte para ingles y espanol y expone las metricas `accuracy`, `f1` y `precision` como campos de evaluacion, sin que se aporten valores numericos asociados. No se publican parametros totales, longitud de contexto, formato de pesos ni artefactos de cuantizacion, por lo que no es posible determinar su tamano ni su encaje en infraestructura concreta a partir de la informacion disponible.
 
@@ -78,7 +78,7 @@ No es posible establecer una comparativa cuantitativa: no hay parametros, contex
 | Longitud de contexto | No disponible (no aplica de forma estandar en GNN) | No disponible |
 | Rendimiento (accuracy / f1 / precision) | Sin valores publicados | No disponible |
 | Licencia | MIT | No disponible |
-| Disponibilidad | Repositorio HuggingFace con 0 descargas, sin documentacion | No disponible |
+| Disponibilidad | Repositorio Hugging Face con 0 descargas, sin documentacion | No disponible |
 | Idiomas | Ingles, espanol | No disponible |
 
 ## Limitaciones y advertencias
@@ -96,5 +96,5 @@ No es posible establecer una comparativa cuantitativa: no hay parametros, contex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Simple7up/PI-HGAT-T
+- Hugging Face: https://huggingface.co/Simple7up/PI-HGAT-T
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

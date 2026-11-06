@@ -91,7 +91,7 @@ Otras alternativas de 2-3B como Llama 3.2 3B o Gemma 2 2B no se incluyen por fal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/insraq/Qwen3.5-2B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/insraq/Qwen3.5-2B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated
 - Modelo original (empero-ai/Qwen3.8-2B): https://huggingface.co/empero-ai/Qwen3.8-2B
 - Modelo base (Qwen/Qwen3.5-2B): https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8

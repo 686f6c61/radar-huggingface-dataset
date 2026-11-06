@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DAN-Qwen3-1.7B es un modelo de lenguaje de 1.700 millones de parámetros, resultado de un fine-tuning sin filtros sobre la base Qwen/Qwen3-1.7B de Alibaba Cloud. El autor, identificado como ms02222026 en HuggingFace (aunque la model card original atribuye la autoría a UnfilteredAI), lo presenta como un modelo "sin censura" diseñado para generar contenido explícito, tóxico y agresivo, eliminando los mecanismos de alineación de seguridad presentes en el modelo original. Se distribuye bajo licencia Apache-2.0, con pesos en formato safetensors y una ventana de contexto declarada de 32k tokens (aunque fuentes externas mencionan 33k o 40k).
+DAN-Qwen3-1.7B es un modelo de lenguaje de 1.700 millones de parámetros, resultado de un fine-tuning sin filtros sobre la base Qwen/Qwen3-1.7B de Alibaba Cloud. El autor, identificado como ms02222026 en Hugging Face (aunque la model card original atribuye la autoría a UnfilteredAI), lo presenta como un modelo "sin censura" diseñado para generar contenido explícito, tóxico y agresivo, eliminando los mecanismos de alineación de seguridad presentes en el modelo original. Se distribuye bajo licencia Apache-2.0, con pesos en formato safetensors y una ventana de contexto declarada de 32k tokens (aunque fuentes externas mencionan 33k o 40k).
 
 El modelo está pensado exclusivamente para investigación sobre los límites de la seguridad en IA y el comportamiento de modelos desalineados. Su relevancia radica en que ejemplifica una tendencia creciente de modelos "uncensored" derivados de arquitecturas abiertas, y plantea interrogantes sobre los riesgos de su despliegue en entornos no controlados. No obstante, carece de benchmarks publicados y su utilidad práctica en producción es nula o muy limitada.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: alrededor de 3,4 GB en precision FP16 segun LLM Explorer, lo que permite ejecucion en GPUs de consumo con 4 GB o mas de VRAM.
 - GPUs recomendadas: cualquier GPU con al menos 4 GB de VRAM, como NVIDIA GTX 1650/1660, RTX 3050, RTX 3060, o superiores. Tambien compatible con Apple Silicon (M1/M2/M3) mediante Metal.
 - Cabe en GPUs de consumo: si, es un modelo de 1,7B parametros, apto para hardware domestico.
-- Opciones de despliegue: transformers con PyTorch, vLLM, llama.cpp, Ollama, text-generation-inference (TGI). El repo es compatible con endpoints de HuggingFace.
+- Opciones de despliegue: transformers con PyTorch, vLLM, llama.cpp, Ollama, text-generation-inference (TGI). El repo es compatible con endpoints de Hugging Face.
 - Latencia y throughput: no disponible, aunque por su tamano se espera una generacion rapida incluso en CPU con cuantizacion (si se convierte a GGUF).
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No hay datos de rendimiento comparativo disponibles. La unica diferencia relevan
 
 ## Enlaces
 
-- Repositorio HuggingFace (ms02222026): https://huggingface.co/ms02222026/DAN-Qwen3-1.7B
+- Repositorio Hugging Face (ms02222026): https://huggingface.co/ms02222026/DAN-Qwen3-1.7B
 - Repositorio original (UnfilteredAI): https://huggingface.co/UnfilteredAI/DAN-Qwen3-1.7B
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Ficha en LLM Explorer: https://llm-explorer.com/model/UnfilteredAI%2FDAN-Qwen3-1.7B,4YqFWT2Bjasp5EcaY9A8QZ

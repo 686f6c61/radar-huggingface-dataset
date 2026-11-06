@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/eus-latn-100mb-10mb_seed10` es un ajuste fino (fine-tune) del modelo base `goldfish-models/eus_latn_100mb`, perteneciente a la familia Goldfish de modelos de lenguaje monolingües desarrollados por la Universidad de Groningen para idiomas con pocos recursos digitales. En este caso, el modelo base está entrenado con 100 MB de texto en euskera (escritura latina), y este fine-tune añade una etapa de entrenamiento supervisado (SFT) sobre un subconjunto adicional de 10 MB de datos, utilizando la librería TRL de HuggingFace.
+El modelo `fpadovani/eus-latn-100mb-10mb_seed10` es un ajuste fino (fine-tune) del modelo base `goldfish-models/eus_latn_100mb`, perteneciente a la familia Goldfish de modelos de lenguaje monolingües desarrollados por la Universidad de Groningen para idiomas con pocos recursos digitales. En este caso, el modelo base está entrenado con 100 MB de texto en euskera (escritura latina), y este fine-tune añade una etapa de entrenamiento supervisado (SFT) sobre un subconjunto adicional de 10 MB de datos, utilizando la librería TRL de Hugging Face.
 
 La arquitectura subyacente es GPT-2, con aproximadamente 124,8 millones de parámetros, lo que lo sitúa en la categoría de modelos pequeños. Su propósito principal es la generación de texto en euskera, aunque el ejemplo de uso de la model card muestra un prompt en inglés, lo que sugiere que el fine-tune pudo incluir datos multilingües o que el modelo conserva cierta capacidad en inglés heredada del tokenizador y la arquitectura GPT-2.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fpadovani/eus-latn-100mb-10mb_seed10 | 125 M | 1024 | euskera | no disponible | HuggingFace |
-| goldfish-models/eus_latn_100mb (base) | 125 M | 1024 | euskera | no disponible | HuggingFace |
-| Latxa-7B (HiTZ) | 7 B | 8192 | euskera | Apache 2.0 | HuggingFace |
+| fpadovani/eus-latn-100mb-10mb_seed10 | 125 M | 1024 | euskera | no disponible | Hugging Face |
+| goldfish-models/eus_latn_100mb (base) | 125 M | 1024 | euskera | no disponible | Hugging Face |
+| Latxa-7B (HiTZ) | 7 B | 8192 | euskera | Apache 2.0 | Hugging Face |
 
 El modelo base Goldfish es el punto de partida de este fine-tune. Latxa es un modelo mucho más grande (7B) desarrollado por el grupo HiTZ de la Universidad del País Vasco, con licencia Apache 2.0 y un contexto mayor. La comparación directa no es justa por la diferencia de tamaño, pero Latxa ofrece un rendimiento muy superior en tareas de euskera. No se dispone de datos de otros modelos pequeños específicos para euskera.
 
@@ -79,7 +79,7 @@ El modelo base Goldfish es el punto de partida de este fine-tune. Latxa es un mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eus-latn-100mb-10mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eus-latn-100mb-10mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eus_latn_100mb
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/cnmp5s5o
 - Repositorio de TRL: https://github.com/huggingface/trl

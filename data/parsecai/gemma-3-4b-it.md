@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`parsecai/gemma-3-4b-it` es un fine-tune del modelo multimodal `google/gemma-3-4b-it` publicado por el usuario parsecai en HuggingFace. El modelo base, desarrollado por Google DeepMind, es un transformer decoder-only de 4.300 millones de parametros con capacidad de procesamiento conjunto de imagen y texto (pipeline `image-text-to-text`), lo que le permite recibir imagenes y texto como entrada y generar texto como salida. El fine-tune se distribuye en formato safetensors bajo la libreria transformers y conserva la licencia Gemma original.
+`parsecai/gemma-3-4b-it` es un fine-tune del modelo multimodal `google/gemma-3-4b-it` publicado por el usuario parsecai en Hugging Face. El modelo base, desarrollado por Google DeepMind, es un transformer decoder-only de 4.300 millones de parametros con capacidad de procesamiento conjunto de imagen y texto (pipeline `image-text-to-text`), lo que le permite recibir imagenes y texto como entrada y generar texto como salida. El fine-tune se distribuye en formato safetensors bajo la libreria transformers y conserva la licencia Gemma original.
 
-La relevancia de esta publicacion es limitada: se trata de un repositorio con 4 descargas y 0 likes desde su creacion, sin model card sustantiva ni documentacion sobre el dataset de ajuste, el procedimiento de entrenamiento o los objetivos del fine-tune. El tag `openjev` sugiere un ajuste orientado a un dominio o tarea especifica, pero no se aporta informacion que lo confirme. El acceso esta restringido (gated), por lo que es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos.
+La relevancia de esta publicacion es limitada: se trata de un repositorio con 4 descargas y 0 likes desde su creacion, sin model card sustantiva ni documentacion sobre el dataset de ajuste, el procedimiento de entrenamiento o los objetivos del fine-tune. El tag `openjev` sugiere un ajuste orientado a un dominio o tarea especifica, pero no se aporta informacion que lo confirme. El acceso esta restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos.
 
 Dado que el modelo base es Gemma 3 4B IT, sus caracteristicas tecnicas principales (arquitectura, contexto, cuantizaciones) se heredan de este, si bien el autor no documenta desviaciones respecto al original. Cualquier evaluacion de capacidades diferenciales del fine-tune queda pendiente de validacion empirica por parte del usuario.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | parsecai/gemma-3-4b-it | 4.300 M | no disponible | imagen-texto | gemma | gated, 4 descargas |
-| google/gemma-3-4b-it | 4.300 M | no disponible en esta ficha | imagen-texto | gemma | publico en HuggingFace |
-| Qwen2.5-VL-3B-Instruct | ~3.000 M | no disponible en esta ficha | imagen-texto | Apache 2.0 (segun publicacion del autor) | publico en HuggingFace |
-| Phi-3.5-vision-instruct | ~4.200 M | no disponible en esta ficha | imagen-texto | MIT (segun publicacion del autor) | publico en HuggingFace |
+| google/gemma-3-4b-it | 4.300 M | no disponible en esta ficha | imagen-texto | gemma | publico en Hugging Face |
+| Qwen2.5-VL-3B-Instruct | ~3.000 M | no disponible en esta ficha | imagen-texto | Apache 2.0 (segun publicacion del autor) | publico en Hugging Face |
+| Phi-3.5-vision-instruct | ~4.200 M | no disponible en esta ficha | imagen-texto | MIT (segun publicacion del autor) | publico en Hugging Face |
 
 La comparativa se limita a datos de parametros y licencia; no se dispone de resultados de benchmarks del fine-tune ni de los modelos alternativos en la informacion proporcionada, por lo que no es posible establecer una comparacion de rendimiento.
 
@@ -82,13 +82,13 @@ La comparativa se limita a datos de parametros y licencia; no se dispone de resu
 - Sesgos conocidos: no documentados en este repositorio; heredables del modelo base y del dataset de ajuste, que se desconoce.
 - Riesgo de alucinacion: no cuantificado; los modelos de 4B de parametros presentan tasas de alucinacion superiores a modelos mayores, y el fine-tune no aporta mitigaciones documentadas.
 - Limitaciones de contexto e idioma: no documentadas; los idiomas soportados figuran como "no disponibles".
-- Restricciones de licencia: la licencia Gemma impone condiciones de uso (terminos de Google) que deben revisarse antes de un uso comercial; el acceso gated exige aceptar dichas condiciones en HuggingFace.
+- Restricciones de licencia: la licencia Gemma impone condiciones de uso (terminos de Google) que deben revisarse antes de un uso comercial; el acceso gated exige aceptar dichas condiciones en Hugging Face.
 - Caveat para produccion: con 4 descargas y 0 likes, el modelo carece de validacion por parte de la comunidad; no se recomienda su uso en produccion sin una evaluacion propia exhaustiva.
 - Fecha de creacion futura (2026-10-26) en los metadatos, lo que sugiere posible antedatacion o error en el registro; conviene verificar la integridad del repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/parsecai/gemma-3-4b-it
+- Hugging Face: https://huggingface.co/parsecai/gemma-3-4b-it
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Terminos de licencia Gemma: https://ai.google.dev/gemma/terms
 - Documentacion de Gemma 3 (Google): https://ai.google.dev/gemma/docs

@@ -74,7 +74,7 @@ No se dispone de informacion sobre otros modelos comparables en la misma categor
 
 ## Enlaces
 
-- [HuggingFace: Atmyre/qwen3-8b-ao-strict-moon-c1p00](https://huggingface.co/Atmyre/qwen3-8b-ao-strict-moon-c1p00)
+- [Hugging Face: Atmyre/qwen3-8b-ao-strict-moon-c1p00](https://huggingface.co/Atmyre/qwen3-8b-ao-strict-moon-c1p00)
 - [Paper: Activation Oracles (arXiv:2512.15674)](https://arxiv.org/abs/2512.15674)
 - [Modelo base: Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B)
 - [Sujeto: Atmyre/qwen3-8b-taboo-strict-moon-c1p00](https://huggingface.co/Atmyre/qwen3-8b-taboo-strict-moon-c1p00)

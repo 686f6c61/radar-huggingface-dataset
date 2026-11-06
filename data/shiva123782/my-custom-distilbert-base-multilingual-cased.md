@@ -2,7 +2,7 @@
 
 ## Resumen
 
-My-Custom-distilbert-base-multilingual-cased es un ajuste fino (fine-tuning) del modelo distilbert-base-multilingual-cased, publicado por el usuario shiva123782 en HuggingFace. Se trata de un modelo de clasificación de texto (pipeline text-classification) construido con la librería transformers y generado automáticamente mediante Trainer, por lo que su model card es la plantilla por defecto y no documenta ni el conjunto de datos de entrenamiento ni las etiquetas objetivo. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 27 de septiembre de 2026.
+My-Custom-distilbert-base-multilingual-cased es un ajuste fino (fine-tuning) del modelo distilbert-base-multilingual-cased, publicado por el usuario shiva123782 en Hugging Face. Se trata de un modelo de clasificación de texto (pipeline text-classification) construido con la librería transformers y generado automáticamente mediante Trainer, por lo que su model card es la plantilla por defecto y no documenta ni el conjunto de datos de entrenamiento ni las etiquetas objetivo. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 27 de septiembre de 2026.
 
 El interés técnico del modelo reside en su tamaño reducido: 135.326.210 parámetros (aproximadamente 135 M) en formato safetensors, con un repositorio de 0,5 GB. Esto lo sitúa en la gama de modelos ligeros capaces de ejecutarse en CPU y en cualquier GPU de consumo, con un coste de inferencia muy bajo. Hereda del modelo base la arquitectura de encoder transformer destilada de BERT y su naturaleza multilingüe, con una ventana de contexto de 512 tokens.
 
@@ -65,17 +65,17 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - GPU recomendadas: cualquier GPU moderna sirve; no requiere A100 ni H100. Una NVIDIA T4, L4, RTX 3060, RTX 4090 o incluso una GPU integrada con soporte CUDA/ROCm son suficientes. El modelo está pensado para entornos de bajo recurso.
 - Cabe en GPU de consumo: sí, con holgura, en cualquier GPU con 2 GB o más de VRAM, incluidas GTX 1650, RTX 3050, RTX 4060 y similares.
 - Ejecución en CPU: viable para inferencia en producción de baja latencia por lotes pequeños, gracias a los 6 capas y 135 M de parámetros.
-- Opciones de despliegue: pipeline de transformers (la vía natural dado el formato safetensors), HuggingFace Inference Endpoints (el repositorio incluye el tag endpoints_compatible), Text Generation Inference no aplica por no ser un modelo generativo, vLLM ofrece soporte para modelos tipo BERT de clasificación, y ONNX Runtime o TorchScript son alternativas habituales para optimizar latencia. Las conversiones a GGUF para llama.cpp u Ollama no son el formato estándar para clasificación y no hay pesos de ese tipo publicados por el autor.
+- Opciones de despliegue: pipeline de transformers (la vía natural dado el formato safetensors), Hugging Face Inference Endpoints (el repositorio incluye el tag endpoints_compatible), Text Generation Inference no aplica por no ser un modelo generativo, vLLM ofrece soporte para modelos tipo BERT de clasificación, y ONNX Runtime o TorchScript son alternativas habituales para optimizar latencia. Las conversiones a GGUF para llama.cpp u Ollama no son el formato estándar para clasificación y no hay pesos de ese tipo publicados por el autor.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de latencia ni de tokens o muestras por segundo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| My-Custom-distilbert-base-multilingual-cased (este modelo) | 135,3 M | 512 tokens | Clasificación de texto (etiquetas no documentadas) | Apache 2.0 | HuggingFace, 0 descargas |
-| distilbert-base-multilingual-cased | Aproximadamente 135 M | 512 tokens | Modelo base sin cabeza ajustada; extracción de características y reajuste | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| bert-base-multilingual-cased (mBERT) | Aproximadamente 178 M | 512 tokens | Modelo base multilingüe de 12 capas | Apache 2.0 | HuggingFace |
-| xlm-roberta-base | Aproximadamente 278 M | 512 tokens | Modelo base multilingüe (100 idiomas) | MIT | HuggingFace |
+| My-Custom-distilbert-base-multilingual-cased (este modelo) | 135,3 M | 512 tokens | Clasificación de texto (etiquetas no documentadas) | Apache 2.0 | Hugging Face, 0 descargas |
+| distilbert-base-multilingual-cased | Aproximadamente 135 M | 512 tokens | Modelo base sin cabeza ajustada; extracción de características y reajuste | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| bert-base-multilingual-cased (mBERT) | Aproximadamente 178 M | 512 tokens | Modelo base multilingüe de 12 capas | Apache 2.0 | Hugging Face |
+| xlm-roberta-base | Aproximadamente 278 M | 512 tokens | Modelo base multilingüe (100 idiomas) | MIT | Hugging Face |
 
 Frente al modelo base del que deriva, este checkpoint añade una cabeza de clasificación ya entrenada, pero pierde la documentación y la reproducibilidad del original. Frente a mBERT y XLM-R base, ofrece un coste de inferencia notablemente menor (aproximadamente la mitad de parámetros que mBERT y un 50 % menos que XLM-R base), a cambio de una capacidad de representación inferior. No se dispone de comparativas de rendimiento medidas para este ajuste concreto.
 
@@ -94,7 +94,7 @@ Frente al modelo base del que deriva, este checkpoint añade una cabeza de clasi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shiva123782/My-Custom-distilbert-base-multilingual-cased
+- Modelo en Hugging Face: https://huggingface.co/shiva123782/My-Custom-distilbert-base-multilingual-cased
 - Modelo base: https://huggingface.co/distilbert-base-multilingual-cased
 - Paper de DistilBERT: https://arxiv.org/abs/1910.01108
 - Paper de BERT: https://arxiv.org/abs/1810.04805

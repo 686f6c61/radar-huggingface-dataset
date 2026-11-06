@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sys1MLX es un modelo de decision local publicado por el usuario ardanila en HuggingFace, pensado especificamente para Apple Silicon y construido sobre el checkpoint base Qwen3.5-4B-Base. No es un generador de texto: recibe un estado textual, opcionalmente una imagen, y un conjunto de opciones definidas por el usuario, y devuelve una opcion seleccionada junto con probabilidades sin redondear. Ademas del tipo de pregunta `choice`, soporta los tipos `noul` y `score`. El artefacto tiene 991.474.176 parametros reales en safetensors segun HuggingFace, con un repositorio de 3,1 GB.
+Sys1MLX es un modelo de decision local publicado por el usuario ardanila en Hugging Face, pensado especificamente para Apple Silicon y construido sobre el checkpoint base Qwen3.5-4B-Base. No es un generador de texto: recibe un estado textual, opcionalmente una imagen, y un conjunto de opciones definidas por el usuario, y devuelve una opcion seleccionada junto con probabilidades sin redondear. Ademas del tipo de pregunta `choice`, soporta los tipos `noul` y `score`. El artefacto tiene 991.474.176 parametros reales en safetensors segun Hugging Face, con un repositorio de 3,1 GB.
 
 Tecnicamente es una derivacion cuantizada y multimodal del modelo base: se aplica un adaptador LoRA fijado por revision sobre Qwen3.5-4B-Base, se fusionan los pesos en FP32 y se convierten a BF16, se cuantizan las capas lineales y de embedding del lenguaje a MLX affine 4-bit (group size 64) y se conserva la torre visual original en BF16 junto con una cabeza de puntero (pointer head) separada en FP32. El runtime corrige la normalizacion Q/K de las capas DeltaNet a la convencion epsilon de suma de cuadrados de MLX-LM, un detalle que altera las salidas si se omite.
 
@@ -13,7 +13,7 @@ Su relevancia es acotada pero clara: demuestra un flujo de decision multimodal d
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer hibrido basado en Qwen3.5, con capas DeltaNet de atencion lineal (parametros recurrentes `A_log`) y torre visual restaurada; pesos de lenguaje fusionados con LoRA |
-| Parametros totales | 991.474.176 (recuento real de safetensors en HuggingFace) |
+| Parametros totales | 991.474.176 (recuento real de safetensors en Hugging Face) |
 | Parametros activos | no disponible (no se indica que el modelo sea MoE) |
 | Longitud de contexto | no disponible; el runtime limita la entrada conjunta imagen mas texto a 2048 tokens |
 | Tipos de cuantizacion | MLX affine 4-bit con group size 64 (capas lineales y embedding de lenguaje); torre visual en BF16; cabeza de puntero en FP32; exportacion Core ML experimental en FP16 |
@@ -80,8 +80,8 @@ No disponible. La busqueda web realizada no devolvio informacion relevante sobre
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ardanila/sys1mlx | 991.474.176 (safetensors) | no disponible; limite de 2048 tokens para imagen mas texto | Decision multimodal de opcion multiple | apache-2.0 | HuggingFace; requiere runtime propio en MLX |
-| Qwen/Qwen3.5-4B-Base | 4B (nominal, segun la denominacion del modelo base) | no disponible en la informacion proporcionada | Modelo de lenguaje base | no disponible en la informacion proporcionada | HuggingFace |
+| ardanila/sys1mlx | 991.474.176 (safetensors) | no disponible; limite de 2048 tokens para imagen mas texto | Decision multimodal de opcion multiple | apache-2.0 | Hugging Face; requiere runtime propio en MLX |
+| Qwen/Qwen3.5-4B-Base | 4B (nominal, segun la denominacion del modelo base) | no disponible en la informacion proporcionada | Modelo de lenguaje base | no disponible en la informacion proporcionada | Hugging Face |
 
 Se observa una discrepancia no explicada en la informacion disponible: el recuento real de parametros en safetensors (991.474.176) no coincide con el tamano nominal de 4B que sugiere el nombre del modelo base. La model card no ofrece una explicacion de esta diferencia.
 
@@ -102,7 +102,7 @@ Se observa una discrepancia no explicada en la informacion disponible: el recuen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ardanila/sys1mlx
+- Modelo en Hugging Face: https://huggingface.co/ardanila/sys1mlx
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Attribucion de fuentes y releases originales: archivo `ATTRIBUTION.md` dentro del repositorio del modelo
 - Receta de exportacion a Core ML: `experimental/ane_export.py` dentro del repositorio del modelo

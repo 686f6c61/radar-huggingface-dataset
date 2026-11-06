@@ -87,8 +87,8 @@ Una segunda semilla de entrenamiento obtuvo 0,771 en validación frente a 0,763,
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClauseScout QA (este modelo) | 141 M | Ventanas de 512 tokens | QA extractivo fine-tuned en CUAD | CC BY 4.0 | HuggingFace |
-| microsoft/deberta-v3-small | 141 M | 512 tokens | Encoder base sin fine-tuning para QA legal | MIT | HuggingFace |
+| ClauseScout QA (este modelo) | 141 M | Ventanas de 512 tokens | QA extractivo fine-tuned en CUAD | CC BY 4.0 | Hugging Face |
+| microsoft/deberta-v3-small | 141 M | 512 tokens | Encoder base sin fine-tuning para QA legal | MIT | Hugging Face |
 | qwen2.5:7b (sin fine-tuning) | 7B | No disponible en la información | LLM generativo local | No disponible en la información | Local vía Ollama |
 | Modelos del paper de CUAD | No disponible en la información | No disponible | QA extractivo sobre CUAD | No disponible | No disponible |
 
@@ -108,7 +108,7 @@ En la comparación medida por el autor, este modelo supera a qwen2.5:7b sin fine
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lagatorase/clausescout-deberta-v3-small-cuad
+- Modelo en Hugging Face: https://huggingface.co/Lagatorase/clausescout-deberta-v3-small-cuad
 - Proyecto ClauseScout en GitHub: https://github.com/Lagatorase/clausescout
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-small
 - Dataset CUAD: https://huggingface.co/datasets/theatticusproject/cuad

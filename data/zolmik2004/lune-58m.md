@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lune-58M es un modelo experimental de tipo asistente conversacional desarrollado por el usuario ZolMik2004, publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo pequeno que combina un modelo de lenguaje de 57,8M de parametros con un codificador visual opcional de 25,9M de parametros, sumando un total de 83,7M de parametros. Esta construido sobre la arquitectura `Qwen3_5ForConditionalGeneration` de la libreria transformers, sin codigo personalizado, e incorpora un diseno de atencion hibrida con Gated DeltaNet.
+Lune-58M es un modelo experimental de tipo asistente conversacional desarrollado por el usuario ZolMik2004, publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo pequeno que combina un modelo de lenguaje de 57,8M de parametros con un codificador visual opcional de 25,9M de parametros, sumando un total de 83,7M de parametros. Esta construido sobre la arquitectura `Qwen3_5ForConditionalGeneration` de la libreria transformers, sin codigo personalizado, e incorpora un diseno de atencion hibrida con Gated DeltaNet.
 
 El modelo esta disenado para funcionar tanto como modelo de texto puro (cargando solo el modelo de lenguaje) como modelo vision-lenguaje (cargando tambien el codificador visual). Soporta ruso e ingles, con una longitud de contexto de 16.384 tokens y un corte de conocimiento que llega hasta septiembre de 2026 en ruso y marzo de 2026 en ingles. Ha sido afinado mediante SFT y aprendizaje por refuerzo a partir de Lune-58M-Base, y los pesos publicados son una mezcla de ambas etapas (0,7 de los pesos de RL y 0,3 de los de SFT).
 
@@ -66,7 +66,7 @@ No se dispone de datos de benchmarks ni de comparativas publicadas en la informa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Lune-58M | 83,7M (total) | 16.384 | Apache 2.0 | HuggingFace |
+| Lune-58M | 83,7M (total) | 16.384 | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de comparativas publicadas en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZolMik2004/Lune-58M
+- Modelo en Hugging Face: https://huggingface.co/ZolMik2004/Lune-58M
 - Modelo base: https://huggingface.co/ZolMik2004/Lune-58M-Base
 - Conjunto de datos smoltalk: https://huggingface.co/datasets/HuggingFaceTB/smoltalk
 - Conjunto de datos GrandMaster-PRO-MAX: https://huggingface.co/datasets/Vikhrmodels/GrandMaster-PRO-MAX

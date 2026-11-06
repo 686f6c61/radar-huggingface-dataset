@@ -73,8 +73,8 @@ La model card menciona puntuaciones de ROUGE-L y generación de ejemplos, pero l
 | Modelo | Parametros | Contexto | Enfoque | Datos de evaluacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | caption_qwen35_9b_trainset_100_102726 | 9B (denso) | 262.144 nativos en la base; 8.192 en entrenamiento | Captioning de video en 5 ejes, fine-tuning completo | Solo diagnosticos de entrenamiento (sin held-out) | No disponible | 0 descargas; pesos condicionados a subida |
-| Qwen/Qwen3.5-9B | 9B (denso) | 262.144 | Modelo base multimodal de proposito general | No consultados en esta busqueda | No disponible en la informacion consultada | Publico en HuggingFace |
-| georgeliu59/label-qwen35-9b-pilot-20261021 | No disponible | No disponible | Run piloto de etiquetado del mismo autor, mismo modelo base | No disponible | No disponible | Publico en HuggingFace |
+| Qwen/Qwen3.5-9B | 9B (denso) | 262.144 | Modelo base multimodal de proposito general | No consultados en esta busqueda | No disponible en la informacion consultada | Publico en Hugging Face |
+| georgeliu59/label-qwen35-9b-pilot-20261021 | No disponible | No disponible | Run piloto de etiquetado del mismo autor, mismo modelo base | No disponible | No disponible | Publico en Hugging Face |
 | Qwen3-VL | No disponible | No disponible | Familia multimodal de Qwen usada en workflows de captioning de la comunidad | No disponible | No disponible | Publico |
 
 La comparación relevante es contra el modelo base y contra el run piloto del mismo autor: este checkpoint se distingue por usar el 100% de los datos (sin validación) y por un mayor número de ejemplos de caption, no por mejoras medidas. Frente a Qwen3-VL, la diferencia es de receta de anotación, no de arquitectura demostrada.
@@ -85,7 +85,7 @@ La comparación relevante es contra el modelo base y contra el run piloto del mi
 - Riesgo de sobreajuste al estilo de anotación: al conservar las cadenas exactas de caption sin rebalanceo ni subsampling y entrenar cinco épocas sobre 4.081 clips, el modelo puede reproducir el vocabulario y la estructura del anotador original más que describir contenido nuevo.
 - Disponibilidad incierta: la model card afirma que no se reclama un modelo terminado hasta que se suban los pesos, y el repositorio registra 0 descargas. Conviene verificar que los archivos de pesos existen y son completos antes de planificar su uso.
 - Checkpoints sin estado de entrenamiento: no incluyen optimizador, scheduler ni RNG, por lo que no permiten reanudar un run interrumpido de forma exacta ni auditar la trayectoria de entrenamiento.
-- Anotaciones no publicadas: los archivos de caption revisados no se adjuntan a la model card, y el manifiesto de vídeos se describe como local. La reproducibilidad del dataset depende de fuentes públicas fijadas en HuggingFace que no se enumeran en la información disponible.
+- Anotaciones no publicadas: los archivos de caption revisados no se adjuntan a la model card, y el manifiesto de vídeos se describe como local. La reproducibilidad del dataset depende de fuentes públicas fijadas en Hugging Face que no se enumeran en la información disponible.
 - Licencia no declarada: sin licencia explícita no se puede asumir permiso para uso comercial, redistribución o entrenamiento de modelos derivados. Es un bloqueo potencial para producción.
 - Idiomas no documentados: se desconoce en qué idioma genera los captions y si mantiene el multilingüismo del modelo base.
 - Sesgos no evaluados: no hay análisis de sesgos demográficos, geográficos ni de vocabulario visual; los sesgos del modelo base y de los clips anotados se heredan sin cuantificar.
@@ -95,7 +95,7 @@ La comparación relevante es contra el modelo base y contra el run piloto del mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/georgeliu59/caption_qwen35_9b_trainset_100_102726
+- Modelo en Hugging Face: https://huggingface.co/georgeliu59/caption_qwen35_9b_trainset_100_102726
 - Modelo base Qwen/Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Run piloto del mismo autor: https://huggingface.co/georgeliu59/label-qwen35-9b-pilot-20261021
 - Workflows de captioning de datasets con Qwen3.5-9b y Qwen3-VL (ComfyUI): https://civitai.com/models/2389899/qwen35-9b-and-qwen3-vl-dataset-captioning-simple-comfyui-workflows

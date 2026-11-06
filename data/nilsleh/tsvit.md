@@ -45,7 +45,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 ## Requisitos de hardware
 
 - No se han publicado requisitos de hardware en la información disponible.
-- El repositorio de HuggingFace no contiene pesos (tamaño 0.0 GB), por lo que la inferencia requiere descargar los checkpoints originales desde el repositorio de GitHub de DeepSatModels.
+- El repositorio de Hugging Face no contiene pesos (tamaño 0.0 GB), por lo que la inferencia requiere descargar los checkpoints originales desde el repositorio de GitHub de DeepSatModels.
 - Las opciones de despliegue (vLLM, llama.cpp, Ollama, TGI) no se han documentado para este modelo; se recomienda consultar el entorno original de DeepSatModels para conocer los requisitos de ejecución.
 
 ## Comparativa con modelos similares
@@ -54,7 +54,7 @@ No disponible.
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace en `nilsleh/tsvit` no contiene pesos ni un pipeline definido, lo que limita su uso directo; es necesario obtener los checkpoints desde el repositorio original de GitHub.
+- El repositorio de Hugging Face en `nilsleh/tsvit` no contiene pesos ni un pipeline definido, lo que limita su uso directo; es necesario obtener los checkpoints desde el repositorio original de GitHub.
 - No se han publicado benchmarks ni métricas de rendimiento en la información disponible, por lo que no es posible evaluar su calidad relativa.
 - Es un modelo especializado en series temporales de imágenes satelitales y no está diseñado para tareas de lenguaje natural, generación de texto ni interacción conversacional.
 - Sus capacidades están condicionadas al dominio agrícola y al dataset PASTIS; puede requerir reentrenamiento o adaptación para otras regiones, sensores o tipos de cobertura del suelo.
@@ -62,7 +62,7 @@ No disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nilsleh/tsvit
+- Modelo en Hugging Face: https://huggingface.co/nilsleh/tsvit
 - Paper original (arXiv): https://arxiv.org/abs/2301.04944
 - Código y checkpoints originales: https://github.com/michaeltrs/DeepSatModels
 - Documentación específica de TSViT en el repositorio: https://github.com/michaeltrs/DeepSatModels/blob/main/README_TSVIT.md

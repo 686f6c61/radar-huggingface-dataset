@@ -91,7 +91,7 @@ La comparación con alternativas de otros fabricantes en la misma categoría (mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/neo-kunal/qwen3-14b-msm-Q4_K_M
+- Repositorio Hugging Face: https://huggingface.co/neo-kunal/qwen3-14b-msm-Q4_K_M
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Adaptador LoRA original: https://huggingface.co/chloeli/qwen-3-14b-rules-aug-spec-msm
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales relevantes para este modelo.

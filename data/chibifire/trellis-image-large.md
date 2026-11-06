@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TRELLIS-image-large es un modelo generativo 3D condicionado por imágenes, desarrollado por Microsoft como parte de la familia TRELLIS. Se introduce en el artículo «Structured 3D Latents for Scalable and Versatile 3D Generation» (arXiv:2412.01506). El objetivo es generar representaciones tridimensionales de objetos a partir de una imagen de entrada, lo que facilita la creación de activos 3D sin necesidad de modelado manual. El modelo se distribuye bajo licencia MIT y su código está disponible en el repositorio oficial de Microsoft. En cuanto a su arquitectura, emplea un enfoque de latentes estructurados, aunque no se detallan el número de parámetros ni la longitud de contexto en la información disponible. El repositorio de HuggingFace analizado es una copia alojada por el usuario chibifire, con un tamaño de 3,3 GB.
+TRELLIS-image-large es un modelo generativo 3D condicionado por imágenes, desarrollado por Microsoft como parte de la familia TRELLIS. Se introduce en el artículo «Structured 3D Latents for Scalable and Versatile 3D Generation» (arXiv:2412.01506). El objetivo es generar representaciones tridimensionales de objetos a partir de una imagen de entrada, lo que facilita la creación de activos 3D sin necesidad de modelado manual. El modelo se distribuye bajo licencia MIT y su código está disponible en el repositorio oficial de Microsoft. En cuanto a su arquitectura, emplea un enfoque de latentes estructurados, aunque no se detallan el número de parámetros ni la longitud de contexto en la información disponible. El repositorio de Hugging Face analizado es una copia alojada por el usuario chibifire, con un tamaño de 3,3 GB.
 
 ## Especificaciones tecnicas
 
@@ -62,8 +62,8 @@ No disponible. Dentro de la familia TRELLIS existe la variante TRELLIS-text-xlar
 
 ## Enlaces
 
-- HuggingFace (copia analizada): https://huggingface.co/chibifire/TRELLIS-image-large
-- HuggingFace (original de Microsoft): https://huggingface.co/microsoft/TRELLIS-image-large
+- Hugging Face (copia analizada): https://huggingface.co/chibifire/TRELLIS-image-large
+- Hugging Face (original de Microsoft): https://huggingface.co/microsoft/TRELLIS-image-large
 - Paper: https://huggingface.co/papers/2412.01506
 - Página del proyecto: https://trellis3d.github.io/
 - Código: https://github.com/Microsoft/TRELLIS

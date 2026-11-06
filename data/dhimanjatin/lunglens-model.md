@@ -6,7 +6,7 @@ LungLens es un modelo de clasificación de imágenes para radiografías de tóra
 
 El modelo resuelve la tarea de clasificación multi-etiqueta de hallazgos en radiografías de tórax, un problema clásico de imagen médica donde la escasez de anotaciones y el desequilibrio de clases son habituales. Su relevancia radica en que combina un backbone estándar y bien conocido (DenseNet-121) con calibración de probabilidades y explicabilidad integrada, lo que facilita su inspección y despliegue en entornos de investigación.
 
-La información disponible es limitada: el repositorio de HuggingFace no contiene pesos visibles (tamaño 0.0 GB), no se especifican parámetros totales, longitud de contexto ni idiomas. La licencia es "research-only" (solo investigación), lo que restringe explícitamente el uso clínico y comercial.
+La información disponible es limitada: el repositorio de Hugging Face no contiene pesos visibles (tamaño 0.0 GB), no se especifican parámetros totales, longitud de contexto ni idiomas. La licencia es "research-only" (solo investigación), lo que restringe explícitamente el uso clínico y comercial.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Arquitectura | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LungLens | DenseNet-121 | no aplica | AUROC macro 0,804 | research-only | HuggingFace (repo vacío) |
+| LungLens | DenseNet-121 | no aplica | AUROC macro 0,804 | research-only | Hugging Face (repo vacío) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables en la documentación proporcionada.
@@ -84,6 +84,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dhimanjatin/lunglens-model
+- Hugging Face: https://huggingface.co/dhimanjatin/lunglens-model
 - Repositorio de la API: https://github.com/dhiman-13/chest-xray-triage
 - Dataset NIH ChestX-ray14: no disponible en la información proporcionada.

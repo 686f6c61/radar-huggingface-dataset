@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`monate615/perturb-sn26-v1` es un clasificador de imágenes publicado por el usuario monate615 en HuggingFace. Se trata de una instancia de EfficientNetV2-L (la implementación `efficientnet_v2_l` de torchvision, con cabeza de 1000 clases de ImageNet-1k) cuyos pesos han sido modificados mediante una perturbación espectral, según los metadatos `build` incluidos en la model card. El modelo está etiquetado como parte del "model track" de la subred Perturb (netuid 26) de Bittensor, un ecosistema descentralizado donde los mineros registran modelos y su hash on-chain.
+`monate615/perturb-sn26-v1` es un clasificador de imágenes publicado por el usuario monate615 en Hugging Face. Se trata de una instancia de EfficientNetV2-L (la implementación `efficientnet_v2_l` de torchvision, con cabeza de 1000 clases de ImageNet-1k) cuyos pesos han sido modificados mediante una perturbación espectral, según los metadatos `build` incluidos en la model card. El modelo está etiquetado como parte del "model track" de la subred Perturb (netuid 26) de Bittensor, un ecosistema descentralizado donde los mineros registran modelos y su hash on-chain.
 
 El checkpoint tiene 119.027.848 parámetros (unos 119 M) en formato safetensors y un repositorio de 0,5 GB. No incorpora ningún texto de documentación adicional: la model card se limita a indicar la arquitectura base, la hotkey del minero, el hash sha256 del modelo, el pipeline de preprocesado exacto y el registro de la perturbación aplicada. No se documentan dataset de entrenamiento, procedimiento de ajuste, ni resultados de evaluación.
 
@@ -75,7 +75,7 @@ Los datos de parámetros proceden del conocimiento público de las implementacio
 
 | Modelo | Parámetros | Entrada | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| perturb-sn26-v1 (este modelo) | 119,0 M | 480 × 480 | no aplica | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
+| perturb-sn26-v1 (este modelo) | 119,0 M | 480 × 480 | no aplica | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
 | EfficientNetV2-L (torchvision, sin perturbar) | 118,5 M | 480 × 480 | no aplica | no disponible en esta ficha | Apache 2.0 / BSD-3 (torchvision) | pesos oficiales de torchvision |
 | EfficientNetV2-M | ~54,1 M | 480 × 480 | no aplica | no disponible en esta ficha | Apache 2.0 / BSD-3 | torchvision |
 | EfficientNetV2-S | ~21,5 M | 384 × 384 | no aplica | no disponible en esta ficha | Apache 2.0 / BSD-3 | torchvision |
@@ -97,7 +97,7 @@ No se han encontrado en la búsqueda web modelos comparables publicados por el m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/monate615/perturb-sn26-v1
+- Modelo en Hugging Face: https://huggingface.co/monate615/perturb-sn26-v1
 - Perturb: https://perturbai.io
 - Implementación de referencia de EfficientNetV2-L en torchvision (documentación, no procedente de la búsqueda web): https://pytorch.org/vision/stable/models.html
 - Nota sobre la búsqueda web: los resultados devueltos corresponden a catálogos de repuestos de automoción del fabricante Wega (wega.com.ar, wegamotors.com) y no guardan relación alguna con este modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a `perturb-sn26-v1` o al usuario monate615.

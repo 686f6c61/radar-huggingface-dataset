@@ -63,5 +63,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Comfy-Org/stable-audio-open-1.0_repackaged
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/stable-audio-open-1.0_repackaged
 - Licencia: https://huggingface.co/Comfy-Org/stable-audio-open-1.0_repackaged/blob/main/LICENSE.md

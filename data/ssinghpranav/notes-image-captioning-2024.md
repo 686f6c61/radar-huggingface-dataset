@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ssinghpranav/notes-image-captioning-2024` no es un modelo entrenado, sino un repositorio de notas de investigación sobre *image captioning* (generación automática de descripciones de imágenes) publicado por el usuario Ssinghpranav en HuggingFace. La model card lo describe explícitamente como un conjunto estructurado de notas con referencias de evaluación y preguntas abiertas, y aclara que no incluye código liberado, ablaciones completadas ni ningún checkpoint entrenado. Los dos únicos ficheros declarados son `paper_notes.md` y `README.md`.
+`Ssinghpranav/notes-image-captioning-2024` no es un modelo entrenado, sino un repositorio de notas de investigación sobre *image captioning* (generación automática de descripciones de imágenes) publicado por el usuario Ssinghpranav en Hugging Face. La model card lo describe explícitamente como un conjunto estructurado de notas con referencias de evaluación y preguntas abiertas, y aclara que no incluye código liberado, ablaciones completadas ni ningún checkpoint entrenado. Los dos únicos ficheros declarados son `paper_notes.md` y `README.md`.
 
 El repositorio aparece etiquetado con `safetensors` y `transformer`, pero esa etiqueta no corresponde a ninguna definición arquitectónica documentada: no hay config.json, tokenizador, código de inferencia ni pipeline asociado. El recuento real de parámetros en el fichero safetensors es de 33.088, un orden de magnitud propio de un artefacto auxiliar (por ejemplo, un tokenizador o un tensor de prueba), no de un modelo de captioning funcional.
 
@@ -23,7 +23,7 @@ Su relevancia es, por tanto, documental y no técnica: puede servir como punto d
 
 ## Arquitectura y entrenamiento
 
-No hay información sobre arquitectura. La etiqueta `transformer` procede del sistema de etiquetado de HuggingFace, pero el repositorio no publica definición de capas, hiperparámetros, configuración de atención ni fichero de configuración alguno. El recuento de 33.088 parámetros en safetensors es incompatible con cualquier arquitectura de captioning publicada y apunta a un artefacto residual o de prueba.
+No hay información sobre arquitectura. La etiqueta `transformer` procede del sistema de etiquetado de Hugging Face, pero el repositorio no publica definición de capas, hiperparámetros, configuración de atención ni fichero de configuración alguno. El recuento de 33.088 parámetros en safetensors es incompatible con cualquier arquitectura de captioning publicada y apunta a un artefacto residual o de prueba.
 
 Tampoco hay datos de entrenamiento: la model card no menciona número de tokens, composición del dataset, fases de ajuste (SFT, RLHF, DPO) ni procedimiento de alineación. El autor indica expresamente que el documento es exploratorio y que no reclama mejoras de benchmark, ablaciones completadas ni checkpoint entrenado. Las secciones del documento marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
@@ -84,7 +84,7 @@ La comparación directa no es posible porque este repositorio no es un modelo en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ssinghpranav/notes-image-captioning-2024
+- Repositorio en Hugging Face: https://huggingface.co/Ssinghpranav/notes-image-captioning-2024
 - Nota principal: https://huggingface.co/Ssinghpranav/notes-image-captioning-2024/blob/main/paper_notes.md
 - Documentación del repositorio: https://huggingface.co/Ssinghpranav/notes-image-captioning-2024/blob/main/README.md
 - Papers, blogs, repositorios o demos adicionales: no disponible (la búsqueda web no devolvió resultados técnicos relacionados)

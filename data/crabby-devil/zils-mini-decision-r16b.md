@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| zils-mini-decision-r16b | 4.539 M | no disponible | Apache-2.0 | HuggingFace, 0 descargas | Cuerpo para Zils, sin lm_head |
-| torchcast-ai/torchcast-decision-4b | no disponible | no disponible | Apache-2.0 | HuggingFace | Modelo base del fine-tune |
-| Qwen/Qwen3.5-4B | no disponible | no disponible | no disponible | HuggingFace | Modelo original de la familia |
+| zils-mini-decision-r16b | 4.539 M | no disponible | Apache-2.0 | Hugging Face, 0 descargas | Cuerpo para Zils, sin lm_head |
+| torchcast-ai/torchcast-decision-4b | no disponible | no disponible | Apache-2.0 | Hugging Face | Modelo base del fine-tune |
+| Qwen/Qwen3.5-4B | no disponible | no disponible | no disponible | Hugging Face | Modelo original de la familia |
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/crabby-devil/zils-mini-decision-r16b
+- Hugging Face: https://huggingface.co/crabby-devil/zils-mini-decision-r16b
 - Modelo base: https://huggingface.co/torchcast-ai/torchcast-decision-4b
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen3.5-4B
 - Chasis Zils: `zils-ai/d3-mini-4.5b-v1` (referenciado en la model card; sin URL directa en la información disponible)

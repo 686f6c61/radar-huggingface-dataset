@@ -108,7 +108,7 @@ En rendimiento, la comparativa directa disponible es sobre FLEURS aleman: 2,78 %
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MarkusKaemmerer/Voxtral-Small-24B-2507-4bit-dense-encoder
+- Modelo en Hugging Face: https://huggingface.co/MarkusKaemmerer/Voxtral-Small-24B-2507-4bit-dense-encoder
 - Modelo base: https://huggingface.co/mistralai/Voxtral-Small-24B-2507
 - Build de 8 bits del mismo autor: https://huggingface.co/MarkusKaemmerer/Voxtral-Small-24B-2507-8bit-dense-encoder
 - Build Mini de 3B del mismo autor: https://huggingface.co/MarkusKaemmerer/Voxtral-Mini-3B-2507-8bit-dense-encoder

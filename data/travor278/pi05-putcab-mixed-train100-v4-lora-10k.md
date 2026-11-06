@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi05-putcab-mixed-train100-v4-lora-10k es un checkpoint de política robótica publicado por el usuario de HuggingFace Travor278. Consiste en un ajuste fino con adaptadores LoRA sobre el modelo base PI0.5 en JAX (XinY0201/openpi-pi05-base-jax, commit 5e62884) dentro del ecosistema openpi, con un único *action expert*. El resultado es una política visión-lenguaje-acción (VLA) especializada en una tarea bimanual concreta: abrir el cajón de un armario con el brazo izquierdo e introducir un objeto con el derecho.
+pi05-putcab-mixed-train100-v4-lora-10k es un checkpoint de política robótica publicado por el usuario de Hugging Face Travor278. Consiste en un ajuste fino con adaptadores LoRA sobre el modelo base PI0.5 en JAX (XinY0201/openpi-pi05-base-jax, commit 5e62884) dentro del ecosistema openpi, con un único *action expert*. El resultado es una política visión-lenguaje-acción (VLA) especializada en una tarea bimanual concreta: abrir el cajón de un armario con el brazo izquierdo e introducir un objeto con el derecho.
 
 El entrenamiento se realizó sobre el dataset Shiki42/PutCab-Mixed-Train100-V4, compuesto por 100 episodios y 29.794 fotogramas a 16,67 FPS (unos 29,8 minutos de datos), con estado y acciones nativos de 14 dimensiones, tres vistas RGB a 224x224 y un horizonte de acción de 50 pasos. Se ejecutaron 10.000 actualizaciones con batch global 16 sobre dos H100 de 80 GB, con LoRA de rango/alpha 16 en PaliGemma y 32 en el *expert*.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| pi05-putcab-mixed-train100-v4-lora-10k | no disponible | Politica VLA ajustada con LoRA, tarea unica | no disponible | HuggingFace, 0 descargas, 0 likes | Sin metricas de exito publicadas |
-| XinY0201/openpi-pi05-base-jax | no disponible | VLA PI0.5 base en JAX | no disponible | HuggingFace | Modelo de partida del ajuste |
+| pi05-putcab-mixed-train100-v4-lora-10k | no disponible | Politica VLA ajustada con LoRA, tarea unica | no disponible | Hugging Face, 0 descargas, 0 likes | Sin metricas de exito publicadas |
+| XinY0201/openpi-pi05-base-jax | no disponible | VLA PI0.5 base en JAX | no disponible | Hugging Face | Modelo de partida del ajuste |
 | Otros VLA de proposito general (OpenVLA, pi0, GR00T N1, entre otros) | no disponible en la informacion proporcionada | Politicas vision-lenguaje-accion | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 No se dispone de datos de rendimiento que permitan una comparación cuantitativa con alternativas de la misma categoría.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-putcab-mixed-train100-v4-lora-10k
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-putcab-mixed-train100-v4-lora-10k
 - Modelo base: https://huggingface.co/XinY0201/openpi-pi05-base-jax
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/PutCab-Mixed-Train100-V4
 - La busqueda web realizada no devolvio ningun enlace relevante para este modelo: los resultados obtenidos correspondian a paginas corporativas de Microsoft sin relacion con el proyecto. No se dispone de papers, blogs, repositorios ni demos adicionales.

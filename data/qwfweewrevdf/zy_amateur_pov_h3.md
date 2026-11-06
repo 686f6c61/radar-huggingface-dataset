@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `qwfweewrevdf/zy_Amateur_Pov_H3`, no incluye una model card con descripción del modelo. La única información disponible es la licencia (Apache 2.0) y el tamaño del repositorio (0,2 GB). No se ha publicado documentación sobre la arquitectura, el propósito, los datos de entrenamiento ni las capacidades del modelo.
+Este repositorio de Hugging Face, identificado como `qwfweewrevdf/zy_Amateur_Pov_H3`, no incluye una model card con descripción del modelo. La única información disponible es la licencia (Apache 2.0) y el tamaño del repositorio (0,2 GB). No se ha publicado documentación sobre la arquitectura, el propósito, los datos de entrenamiento ni las capacidades del modelo.
 
 Dado que el repositorio no contiene una descripción técnica, no es posible determinar qué problema resuelve ni por qué podría ser relevante. El nombre sugiere un posible modelo fine-tuned (el sufijo "_H3" y el prefijo "zy_" son patrones comunes en repositorios de LoRAs o adaptadores), pero se trata de una especulación que no puede confirmarse con la información disponible. Se recomienda a los desarrolladores extremar la precaución antes de descargar o ejecutar pesos de repositorios sin documentación, ya que no existe forma de verificar su procedencia, contenido ni seguridad.
 
@@ -56,6 +56,6 @@ No disponible. Al desconocer la categoria, el tamano y la tarea del modelo, no e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qwfweewrevdf/zy_Amateur_Pov_H3
+- Repositorio en Hugging Face: https://huggingface.co/qwfweewrevdf/zy_Amateur_Pov_H3
 
 No se han encontrado enlaces adicionales (papers, blogs, demos o repositorios de codigo) en la informacion disponible.

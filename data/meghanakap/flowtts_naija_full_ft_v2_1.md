@@ -54,9 +54,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MeghanaKap/flowtts_naija_full_ft_v2_1 | 505.882.368 | No disponible | Apache 2.0 | HuggingFace |
-| MeghanaKap/flowtts_naija_full_ft_v2_2 | No disponible | No disponible | Apache 2.0 | HuggingFace |
-| Qwen2-0.5B (base) | ~494M | No disponible | Apache 2.0 | HuggingFace |
+| MeghanaKap/flowtts_naija_full_ft_v2_1 | 505.882.368 | No disponible | Apache 2.0 | Hugging Face |
+| MeghanaKap/flowtts_naija_full_ft_v2_2 | No disponible | No disponible | Apache 2.0 | Hugging Face |
+| Qwen2-0.5B (base) | ~494M | No disponible | Apache 2.0 | Hugging Face |
 
 No se han publicado benchmarks comparativos que permitan evaluar la calidad relativa de estos modelos.
 
@@ -71,6 +71,6 @@ No se han publicado benchmarks comparativos que permitan evaluar la calidad rela
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_1
+- Modelo en Hugging Face: https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_1
 - Modelo base YatharthS/MiraTTS: https://huggingface.co/YatharthS/MiraTTS
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

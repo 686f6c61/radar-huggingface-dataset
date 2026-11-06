@@ -26,7 +26,7 @@ Es relevante para desarrolladores que quieran integrar recuperación imagen-text
 
 ## Arquitectura y entrenamiento
 
-El modelo es el text transformer de `openai/clip-vit-base-patch16`: un transformer con atención causal que procesa hasta 77 tokens y produce un vector de 512 dimensiones a partir del token EOS (pooling sobre la última posición). El repositorio no entrena ni ajusta nada: la model card declara explícitamente que solo se ha realizado conversión de formato y cuantización, sin cambios en arquitectura, vocabulario ni capacidad, y que los pesos son numéricamente equivalentes al modelo original de HuggingFace. Los datos de entrenamiento son los del CLIP original (pares imagen-texto a gran escala), documentados —cuando lo están— por OpenAI en su model card.
+El modelo es el text transformer de `openai/clip-vit-base-patch16`: un transformer con atención causal que procesa hasta 77 tokens y produce un vector de 512 dimensiones a partir del token EOS (pooling sobre la última posición). El repositorio no entrena ni ajusta nada: la model card declara explícitamente que solo se ha realizado conversión de formato y cuantización, sin cambios en arquitectura, vocabulario ni capacidad, y que los pesos son numéricamente equivalentes al modelo original de Hugging Face. Los datos de entrenamiento son los del CLIP original (pares imagen-texto a gran escala), documentados —cuando lo están— por OpenAI en su model card.
 
 La innovación técnica relevante está en el proceso de cuantización y su verificación. La auditoría CUDA/CPU detectó que el fichero `clip-text-base-q4_k.gguf` original alcanzaba solo 0,933 de coseno frente al F32, por debajo del umbral de 0,94 fijado para Q4_K. Parte de la brecha se debía a un defecto del runtime CrispEmbed: las entradas de más de 75 tokens perdían el token EOS al truncarse, de modo que el pooling leía un token de contenido. Corregido el runtime (variable `CRISPEMBED_CLIP_TEXT_KEEP_EOS`, activada por defecto), la nueva cuantización mixta Q4_K+imatrix con `attn.v`, bloque 0 y embeddings de token en Q8_0 alcanza un coseno mínimo de ~0,988 frente a `get_text_features` del modelo original en FP32 sobre un panel de 78 textos. Los ficheros antiguos se conservan por reproducibilidad, pero el Q4_K original queda marcado como superado.
 
@@ -48,7 +48,7 @@ La innovación técnica relevante está en el proceso de cuantización y su veri
 - Indexación de catálogos de producto: generar embeddings de títulos y descripciones de fichas y cruzarlos con las fotos de producto para búsqueda visual dentro de un e-commerce, ejecutable en CPU en el propio servidor de catálogo.
 - Deduplicación y agrupación de datasets multimodales: embeber las descripciones asociadas a imágenes para detectar pares redundantes o mal etiquetados antes del entrenamiento de otro modelo.
 - Componente de recuperación en un pipeline RAG multimodal: dado un corpus de documentos con figuras, recuperar las imágenes relevantes para una consulta textual y pasarlas a un modelo generativo con visión; el encoder actúa como retriever ligero.
-- Prototipado en entornos edge o CI: al ser un binario GGUF con tokenizador embebido, se puede incluir en tests automatizados de similitud semántica sin instalar el stack de HuggingFace.
+- Prototipado en entornos edge o CI: al ser un binario GGUF con tokenizador embebido, se puede incluir en tests automatizados de similitud semántica sin instalar el stack de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -93,7 +93,7 @@ La comparación con alternativas de la misma categoría (encoders de texto para 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cstr/clip-text-base-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cstr/clip-text-base-GGUF
 - Modelo original: https://huggingface.co/openai/clip-vit-base-patch16
 - Codificador visual pareja: https://huggingface.co/cstr/clip-vit-base-patch16-GGUF
 - Runtime CrispEmbed: https://github.com/CrispStrobe/CrispEmbed

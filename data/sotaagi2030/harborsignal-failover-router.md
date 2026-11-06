@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HarborSignal-Failover-Router es un artefacto publicado en HuggingFace por el usuario SOTAagi2030 bajo licencia Apache 2.0. Segun su model card, el repositorio empareja dos clasificadores revisados de forma independiente para la generacion de alertas en camaras de puerto (harbor-camera alerting), junto con una politica de enrutamiento que identifica la condicion en la que el clasificador de respaldo (fallback) obtiene su mayor ventaja de recall frente al clasificador primario. No se describe ninguna arquitectura neuronal concreta, ni tamano de parametros, ni volumen de datos de entrenamiento.
+HarborSignal-Failover-Router es un artefacto publicado en Hugging Face por el usuario SOTAagi2030 bajo licencia Apache 2.0. Segun su model card, el repositorio empareja dos clasificadores revisados de forma independiente para la generacion de alertas en camaras de puerto (harbor-camera alerting), junto con una politica de enrutamiento que identifica la condicion en la que el clasificador de respaldo (fallback) obtiene su mayor ventaja de recall frente al clasificador primario. No se describe ninguna arquitectura neuronal concreta, ni tamano de parametros, ni volumen de datos de entrenamiento.
 
 El repositorio se creo el 29 de septiembre de 2026 y se actualizo 25 segundos despues, con un tamano declarado de 0.0 GB, cero descargas y cero likes. No tiene pipeline declarado, no especifica idiomas soportados y no incluye resultados de evaluacion en la informacion disponible. Todo apunta a una publicacion reciente, posiblemente preliminar o de caracter interno, mas cercana a un componente de decision (router) que a un modelo generativo de proposito general.
 
@@ -40,7 +40,7 @@ Tampoco hay informacion sobre el dataset de entrenamiento, el numero de tokens o
 - Clasificacion de senales procedentes de camaras de puerto, segun la descripcion del autor.
 - Enrutamiento entre un clasificador primario y uno de respaldo mediante una politica de failover.
 - Seleccion de la condicion operativa en la que el respaldo aporta mayor recall respecto al primario.
-- Empaquetado en formato safetensors, lo que sugiere pesos cargables con librerias del ecosistema HuggingFace (Transformers o similares).
+- Empaquetado en formato safetensors, lo que sugiere pesos cargables con librerias del ecosistema Hugging Face (Transformers o similares).
 - No se declaran capacidades de generacion de texto, razonamiento, codigo, matematicas, vision general, tool calling, agentes ni multilinguesimo.
 - No se declara soporte de audio, video ni modos de pensamiento (thinking mode).
 - No se documentan capacidades adicionales mas alla de las citadas en la model card.
@@ -68,7 +68,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 - VRAM estimada para inferencia: no disponible. El repositorio declara 0.0 GB de tamano, por lo que no se puede inferir el tamano real de los pesos ni su huella en memoria.
 - GPU recomendadas: no disponible. El autor no indica requisitos de GPU ni si el modelo requiere aceleracion por hardware.
 - Compatibilidad con GPU de consumo: indeterminada. Si los pesos son de un clasificador ligero podria ejecutarse en CPU o en GPU de gama media, pero es una suposicion no confirmada.
-- Opciones de despliegue: no documentadas. El uso de safetensors sugiere carga mediante librerias del ecosistema HuggingFace; no se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: no documentadas. El uso de safetensors sugiere carga mediante librerias del ecosistema Hugging Face; no se mencionan vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput estimados: no disponibles.
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SOTAagi2030/HarborSignal-Failover-Router
+- Modelo en Hugging Face: https://huggingface.co/SOTAagi2030/HarborSignal-Failover-Router
 - Paquete relacionado: https://huggingface.co/SOTAagi2030/harbor-signal-package
 - Dataset relacionado: https://huggingface.co/datasets/SOTAagi2030/HarborSignal-Route-Summaries
 - Paper, blog o demo oficial: no disponible

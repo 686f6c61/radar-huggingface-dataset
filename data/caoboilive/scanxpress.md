@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `caoboilive/scanxpress` aloja un modelo identificado como "scanxpress" por el autor caoboilive. Según los metadatos disponibles en HuggingFace, el repositorio contiene pesos en formato ONNX y ocupa 14,5 GB, lo que sugiere un modelo de tamaño considerable, aunque no se especifican la arquitectura, el número de parámetros ni la tarea para la que fue diseñado. La licencia es personalizada, denominada "scanxpress", y no se indica ningún idioma soportado ni pipeline asociado.
+El repositorio `caoboilive/scanxpress` aloja un modelo identificado como "scanxpress" por el autor caoboilive. Según los metadatos disponibles en Hugging Face, el repositorio contiene pesos en formato ONNX y ocupa 14,5 GB, lo que sugiere un modelo de tamaño considerable, aunque no se especifican la arquitectura, el número de parámetros ni la tarea para la que fue diseñado. La licencia es personalizada, denominada "scanxpress", y no se indica ningún idioma soportado ni pipeline asociado.
 
 En el momento de la consulta, el modelo no registra descargas ni valoraciones, y la model card únicamente incluye el frontmatter con la licencia, sin descripción técnica alguna. La información pública es insuficiente para determinar su funcionalidad, rendimiento o aplicaciones prácticas. Este repositorio parece ser una publicación reciente (septiembre de 2026) con escasa documentación, por lo que cualquier uso en producción requeriría contacto directo con el autor o análisis del contenido del repositorio.
 
@@ -54,5 +54,5 @@ No disponible. Al no conocer la arquitectura ni la tarea del modelo, no es posib
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/caoboilive/scanxpress
+- Repositorio en Hugging Face: https://huggingface.co/caoboilive/scanxpress
 - Perfil del autor: https://huggingface.co/caoboilive

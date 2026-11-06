@@ -92,7 +92,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jfcrown7/connectailab-rl-eskim-v1
+- Modelo en Hugging Face: https://huggingface.co/jfcrown7/connectailab-rl-eskim-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para replicar el entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

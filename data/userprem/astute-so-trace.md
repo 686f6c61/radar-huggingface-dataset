@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Userprem/astute-so-trace` es un checkpoint alojado en HuggingFace por el usuario Userprem, etiquetado con los términos `gguf`, `gpt_oss`, `llama.cpp`, `unsloth`, `endpoints_compatible`, `mxfp4` y `conversational`. Estas etiquetas sugieren que se trata de un modelo de la familia GPT-OSS (OpenAI) cuantizado al formato GGUF con precisión mxfp4 (microscaling floating point de 4 bits), preparado para su ejecución con llama.cpp y compatible con endpoints de inferencia. El modelo parece orientado a tareas conversacionales, aunque no se dispone de información pública sobre su arquitectura concreta, número de parámetros o datos de entrenamiento.
+El modelo `Userprem/astute-so-trace` es un checkpoint alojado en Hugging Face por el usuario Userprem, etiquetado con los términos `gguf`, `gpt_oss`, `llama.cpp`, `unsloth`, `endpoints_compatible`, `mxfp4` y `conversational`. Estas etiquetas sugieren que se trata de un modelo de la familia GPT-OSS (OpenAI) cuantizado al formato GGUF con precisión mxfp4 (microscaling floating point de 4 bits), preparado para su ejecución con llama.cpp y compatible con endpoints de inferencia. El modelo parece orientado a tareas conversacionales, aunque no se dispone de información pública sobre su arquitectura concreta, número de parámetros o datos de entrenamiento.
 
 A pesar de que el repositorio existe y tiene un registro de creación y actualización, la ficha pública es extremadamente escasa: no incluye licencia, idiomas, pipeline ni documentación adicional. Las búsquedas web realizadas no arrojan resultados relacionados con este modelo específico, por lo que la mayor parte de las especificaciones técnicas deben considerarse no disponibles. Se recomienda precaución antes de utilizarlo en entornos de producción, ya que no hay evidencia de su procedencia, calidad o permisos de uso.
 
@@ -72,4 +72,4 @@ No disponible. No se conocen modelos comparables dentro del mismo repositorio ni
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Userprem/astute-so-trace
+- Repositorio Hugging Face: https://huggingface.co/Userprem/astute-so-trace

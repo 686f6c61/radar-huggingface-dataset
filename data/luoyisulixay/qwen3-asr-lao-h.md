@@ -64,15 +64,15 @@ En meeting2, el modelo mejora en 1,15 puntos de CER respecto a la misma receta s
 - VRAM estimada para inferencia: el checkpoint se publica en fp16 con 2.038.052.480 parámetros, lo que supone aproximadamente 4,1 GB de pesos; se recomienda reservar al menos 6–8 GB de VRAM para activaciones y audio de entrada.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM; el modelo se ha probado con `device_map="cuda:0"` y `dtype=torch.float16`.
 - Cabe en GPU de consumo: sí, en tarjetas como RTX 3060 (12 GB), RTX 4060 Ti (16 GB), RTX 4070, RTX 4080 y RTX 4090.
-- Opciones de despliegue: paquete `qwen_asr` del proyecto Qwen3-ASR sobre Transformers; el repositorio incluye la etiqueta `endpoints_compatible` para despliegue en endpoints de HuggingFace. No se documentan otras opciones (vLLM, llama.cpp, Ollama, TGI) en la información disponible.
+- Opciones de despliegue: paquete `qwen_asr` del proyecto Qwen3-ASR sobre Transformers; el repositorio incluye la etiqueta `endpoints_compatible` para despliegue en endpoints de Hugging Face. No se documentan otras opciones (vLLM, llama.cpp, Ollama, TGI) en la información disponible.
 - Latencia y throughput: no disponibles. El modelo está configurado con `max_inference_batch_size=1` y `max_new_tokens=256`, y se recomiendan clips de hasta ~15 segundos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | CER (meeting2) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-asr-lao-H | 2.038.052.480 | no disponible | 8,77 | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-ASR-1.7B (base) | ~1,7 B | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| qwen3-asr-lao-H | 2.038.052.480 | no disponible | 8,77 | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-ASR-1.7B (base) | ~1,7 B | no disponible | no disponible | Apache-2.0 | Hugging Face |
 | Receta sin habla de reuniones revisada (ablación del autor) | no disponible | no disponible | 9,92 (1,15 puntos peor) | no aplica | no aplica |
 
 No se dispone de datos de otros sistemas ASR lao comparables en la información proporcionada.
@@ -91,7 +91,7 @@ No se dispone de datos de otros sistemas ASR lao comparables en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LuoYiSULIXAY/qwen3-asr-lao-H
+- Modelo en Hugging Face: https://huggingface.co/LuoYiSULIXAY/qwen3-asr-lao-H
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Repositorio del proyecto Qwen3-ASR: https://github.com/QwenLM/Qwen3-ASR
 - Paper del pipeline de datos: en preparación (no disponible)

@@ -19,7 +19,7 @@ Es relevante ahora porque demuestra un flujo de trabajo reproducible de ajuste f
 | Tipos de cuantizacion | no disponible (entrenado y probado en bfloat16) |
 | Idiomas soportados | hindi (hi), odia (or) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (repo de HuggingFace con `config.json`, tokenizador de audio incluido en `speech_tokenizer/`) |
+| Formato de pesos | safetensors (repo de Hugging Face con `config.json`, tokenizador de audio incluido en `speech_tokenizer/`) |
 
 ## Arquitectura y entrenamiento
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anxbrt/qwen3-tts-hi-or-4voices
+- Modelo en Hugging Face: https://huggingface.co/anxbrt/qwen3-tts-hi-or-4voices
 - Space de demostracion con clips de prueba: https://huggingface.co/spaces/anxbrt/qwen3-tts-hi-or-voices
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Repositorio oficial de Qwen3-TTS: https://github.com/QwenLM/Qwen3-TTS

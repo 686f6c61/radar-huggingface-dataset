@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| Nemotron-3.5-Transcribe-30B-A4B (NVFP4-Mixed, este) | 17,7B en safetensors (4,3B activos) | No disponible | EN, JA, multilingüe | Apache 2.0 | HuggingFace, runtime SGLang | Cuantización mixta para 16 GB VRAM |
+| Nemotron-3.5-Transcribe-30B-A4B (NVFP4-Mixed, este) | 17,7B en safetensors (4,3B activos) | No disponible | EN, JA, multilingüe | Apache 2.0 | Hugging Face, runtime SGLang | Cuantización mixta para 16 GB VRAM |
 | Whisper (familia) | No disponible en la información | No disponible | Multilingüe | No disponible en la información | Amplia | El autor reporta deriva del clasificador de idioma con acentos no nativos |
 | Gemma-4 Audio | No disponible en la información | No disponible | No disponible | No disponible en la información | No disponible en la información | El autor reporta respuestas conversacionales no solicitadas y bucles de repetición en tareas de transcripción |
 | Qwen-Omni | No disponible en la información | No disponible | No disponible | No disponible en la información | No disponible en la información | El autor reporta deriva acústica y difuminado de fonemas en micrófonos silenciosos |
@@ -87,6 +87,6 @@ Los datos de los modelos comparables provienen únicamente de las impresiones cu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/catplusplus/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-NVFP4-Mixed
+- Modelo en Hugging Face: https://huggingface.co/catplusplus/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-NVFP4-Mixed
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

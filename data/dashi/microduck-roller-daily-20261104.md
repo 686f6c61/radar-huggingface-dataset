@@ -4,7 +4,7 @@
 
 `dashi/microduck-roller-daily-20261104` es una política de control por aprendizaje por refuerzo destinada al robot cuadrúpedo de código abierto microduck, desarrollado por Pollen Robotics. No se trata de un modelo de lenguaje: es un artefacto de inferencia que mapea observaciones del robot (61 dimensiones) a acciones de control (14 dimensiones) a 50 Hz, empaquetado en formato ONNX y publicado con la librería `microduck`. El autor, `dashi`, lo presenta como una "re-entrada diaria" de una política anterior (`microduck-roller-remix-r900`, con una puntuación de 0.900) y como un *fine-tune* de `DenRakEiw/microduck-senate_duck_0904`.
 
-La política está etiquetada para el slot `walk` y se describe como "perpetua": ejecuta una marcha sobre ruedas (rollers) de forma continua hasta que se le indique lo contrario. El repositorio tiene un tamaño de 0.0 GB según HuggingFace, lo que sugiere un artefacto muy ligero (coherente con una política de control de pocas capas). No hay información pública sobre benchmarks, licencia ni idiomas, y los resultados de búsqueda web devuelven contenido irrelevante sobre el caldo japonés *dashi*, no sobre el autor.
+La política está etiquetada para el slot `walk` y se describe como "perpetua": ejecuta una marcha sobre ruedas (rollers) de forma continua hasta que se le indique lo contrario. El repositorio tiene un tamaño de 0.0 GB según Hugging Face, lo que sugiere un artefacto muy ligero (coherente con una política de control de pocas capas). No hay información pública sobre benchmarks, licencia ni idiomas, y los resultados de búsqueda web devuelven contenido irrelevante sobre el caldo japonés *dashi*, no sobre el autor.
 
 Su relevancia es acotada pero específica: para investigadores en robótica de bajo coste y aprendizaje por refuerzo aplicado a locomoción, este tipo de políticas ONNX ligeras son directamente desplegables en el robot físico mediante el comando `robotctl`, sin necesidad de infraestructura de inferencia pesada.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 | Modelo | Tipo | Observaciones | Acciones | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `dashi/microduck-roller-daily-20261104` | Política RL (ONNX) | 61-D | 14 | 50 Hz | no disponible | HuggingFace |
-| `DenRakEiw/microduck-senate_duck_0904` | Política RL (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| `dashi/microduck-roller-remix-r900` | Política RL (predecesora, 0.900) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `dashi/microduck-roller-daily-20261104` | Política RL (ONNX) | 61-D | 14 | 50 Hz | no disponible | Hugging Face |
+| `DenRakEiw/microduck-senate_duck_0904` | Política RL (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| `dashi/microduck-roller-remix-r900` | Política RL (predecesora, 0.900) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas políticas, por lo que la comparativa se limita a la relación de linaje (modelo base y predecesor) y a los parámetros de interfaz conocidos.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparables entre estas políticas, por lo
 
 ## Enlaces
 
-- [HuggingFace: dashi/microduck-roller-daily-20261104](https://huggingface.co/dashi/microduck-roller-daily-20261104)
+- [Hugging Face: dashi/microduck-roller-daily-20261104](https://huggingface.co/dashi/microduck-roller-daily-20261104)
 - [Modelo base: DenRakEiw/microduck-senate_duck_0904](https://huggingface.co/DenRakEiw/microduck-senate_duck_0904)
 - [Repositorio microduck (Pollen Robotics)](https://github.com/pollen-robotics/microduck)
 - Repositorio de entrenamiento: `pollen-robotics/microduck_rl`, rama `roll-backward`, commit `83599404a` (no se proporciona URL directa)

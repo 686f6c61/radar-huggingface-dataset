@@ -93,7 +93,7 @@ La principal diferencia frente a la versión Q8_0 es el tamaño del archivo (20.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dawncr0w/Qwen3.8-27B-Heretic-ARA-ModelOpt-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/dawncr0w/Qwen3.8-27B-Heretic-ARA-ModelOpt-NVFP4-GGUF
 - Checkpoint base NVFP4: https://huggingface.co/PassingByPixels/Qwen3.8-27B-heretic-ara-NVFP4
 - Checkpoint Heretic ARA (BF16): https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

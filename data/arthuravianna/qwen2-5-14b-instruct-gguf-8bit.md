@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arthuravianna/Qwen2.5-14B-Instruct-GGUF-8bit` es una conversión a GGUF de 8 bits del modelo denso Qwen2.5-14B-Instruct, publicada por el usuario arthuravianna en HuggingFace. No se trata de un modelo entrenado desde cero ni de un lanzamiento oficial de Alibaba Cloud (equipo Qwen), sino de una recuantización de pesos ya existentes orientada a inferencia local con llama.cpp y derivados. El repo ocupa 17,2 GB y declara 15.595.787.264 parámetros reales en safetensors, una cifra superior a los ~14,7 B nominales que sugiere el nombre comercial "14B".
+`arthuravianna/Qwen2.5-14B-Instruct-GGUF-8bit` es una conversión a GGUF de 8 bits del modelo denso Qwen2.5-14B-Instruct, publicada por el usuario arthuravianna en Hugging Face. No se trata de un modelo entrenado desde cero ni de un lanzamiento oficial de Alibaba Cloud (equipo Qwen), sino de una recuantización de pesos ya existentes orientada a inferencia local con llama.cpp y derivados. El repo ocupa 17,2 GB y declara 15.595.787.264 parámetros reales en safetensors, una cifra superior a los ~14,7 B nominales que sugiere el nombre comercial "14B".
 
 El interés práctico de esta ficha es limitado pero concreto: permite ejecutar un modelo de clase 14B con calidad cercana a FP16 en equipos de 24-48 GB de VRAM, algo relevante cuando no se dispone de GPU de datacenter. Sin embargo, el repositorio no incluye model card, no declara licencia, no especifica el tipo exacto de cuantización ni los idiomas soportados, y acumula 13 descargas y 0 "likes", por lo que carece de validación comunitaria. La información técnica fiable debe tomarse, por tanto, del modelo base oficial.
 
@@ -97,7 +97,7 @@ No es posible comparar rendimiento en benchmarks dentro de esta ficha: la inform
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arthuravianna/Qwen2.5-14B-Instruct-GGUF-8bit
+- Repositorio en Hugging Face: https://huggingface.co/arthuravianna/Qwen2.5-14B-Instruct-GGUF-8bit
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Blog oficial de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Informe técnico de Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115

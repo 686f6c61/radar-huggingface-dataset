@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ElMusk/fun03 es un repositorio de pesos publicado en HuggingFace por el usuario ElMusk. La informacion disponible en la ficha publica se limita al identificador, el autor, la etiqueta de region (`region:us`), el tamano del repositorio (3,2 GB) y las fechas de creacion y ultima actualizacion (12 de septiembre de 2026, con menos de un minuto de diferencia entre ambas). No se declara pipeline de inferencia, licencia, idiomas soportados ni tarjeta de modelo con descripcion tecnica.
+ElMusk/fun03 es un repositorio de pesos publicado en Hugging Face por el usuario ElMusk. La informacion disponible en la ficha publica se limita al identificador, el autor, la etiqueta de region (`region:us`), el tamano del repositorio (3,2 GB) y las fechas de creacion y ultima actualizacion (12 de septiembre de 2026, con menos de un minuto de diferencia entre ambas). No se declara pipeline de inferencia, licencia, idiomas soportados ni tarjeta de modelo con descripcion tecnica.
 
 En el momento de redactar esta ficha el repositorio acumula 0 descargas y 1 "like", y las busquedas web realizadas no devuelven ninguna referencia al modelo: los resultados obtenidos son guias de viaje sobre Macao, sin relacion alguna con el artefacto. Esto significa que no hay informacion verificable sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni rendimiento.
 
@@ -30,7 +30,7 @@ Por tanto, esta ficha se limita a documentar lo que consta de forma explicita y 
 
 ## Arquitectura y entrenamiento
 
-No disponible. La ficha de HuggingFace no incluye tarjeta de modelo, y no se ha localizado documentacion tecnica, informe de entrenamiento ni publicacion asociada. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido, asi como el volumen de tokens de entrenamiento, la composicion del dataset o si se aplicaron tecnicas de alineacion como RLHF o DPO.
+No disponible. La ficha de Hugging Face no incluye tarjeta de modelo, y no se ha localizado documentacion tecnica, informe de entrenamiento ni publicacion asociada. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido, asi como el volumen de tokens de entrenamiento, la composicion del dataset o si se aplicaron tecnicas de alineacion como RLHF o DPO.
 
 El unico dato objetivo es el tamano del repositorio (3,2 GB). Como referencia orientativa, ese volumen es compatible con pesos en precision de 16 bits de un modelo de aproximadamente 1.500 millones de parametros, o con un modelo mayor almacenado en cuantizaciones de 8 o 4 bits; sin embargo, esta correspondencia es una estimacion aritmetica y no una confirmacion, ya que el repositorio podria contener varios formatos, checkpoints intermedios u otros artefactos.
 
@@ -96,7 +96,7 @@ No disponible. No es posible identificar alternativas comparables porque se desc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ElMusk/fun03
+- Modelo en Hugging Face: https://huggingface.co/ElMusk/fun03
 - Paper: no disponible.
 - Blog o anuncio: no disponible.
 - Repositorio de codigo: no disponible.

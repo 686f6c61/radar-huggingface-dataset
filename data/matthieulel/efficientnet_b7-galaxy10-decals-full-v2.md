@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`efficientnet_b7-galaxy10-decals-full-v2` es un clasificador de imágenes para morfología de galaxias, desarrollado por el usuario de HuggingFace matthieulel. Parte de los pesos de EfficientNet-B7 preentrenados en ImageNet-1k (`IMAGENET1K_V1`) y se ha ajustado completamente (todos los parámetros actualizados) sobre el conjunto Galaxy10 DECaLS, que distingue 10 clases morfológicas de galaxias. El modelo resuelve una tarea de clasificación de 10 clases sobre recortes astronómicos de 224x224 píxeles.
+`efficientnet_b7-galaxy10-decals-full-v2` es un clasificador de imágenes para morfología de galaxias, desarrollado por el usuario de Hugging Face matthieulel. Parte de los pesos de EfficientNet-B7 preentrenados en ImageNet-1k (`IMAGENET1K_V1`) y se ha ajustado completamente (todos los parámetros actualizados) sobre el conjunto Galaxy10 DECaLS, que distingue 10 clases morfológicas de galaxias. El modelo resuelve una tarea de clasificación de 10 clases sobre recortes astronómicos de 224x224 píxeles.
 
 El checkpoint forma parte de una colección más amplia, *Vision Foundation Models Benchmark*, que evalúa 40 backbones de visión bajo dos regímenes de adaptación (80 configuraciones en total) siguiendo el protocolo revisado del artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026). No es un modelo generativo ni un modelo de lenguaje: es una CNN de clasificación pura, sin capacidades de texto, tool calling ni razonamiento multi-paso.
 
@@ -74,8 +74,8 @@ No se dispone en la información proporcionada de resultados de otros backbones 
 
 | Modelo | Parametros | Contexto / entrada | Accuracy en Galaxy10 DECaLS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| efficientnet_b7-galaxy10-decals-full-v2 | 64,1 M | imagen 224x224 px | 84,67% (test, semilla 42) | BSD-3-Clause | HuggingFace |
-| Otros backbones de la colección Vision Foundation Models Benchmark | no disponible | no disponible | no disponible | no disponible | HuggingFace (colección) |
+| efficientnet_b7-galaxy10-decals-full-v2 | 64,1 M | imagen 224x224 px | 84,67% (test, semilla 42) | BSD-3-Clause | Hugging Face |
+| Otros backbones de la colección Vision Foundation Models Benchmark | no disponible | no disponible | no disponible | no disponible | Hugging Face (colección) |
 | Alternativas de clasificación astronómica | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone en la información proporcionada de resultados de otros backbones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/efficientnet_b7-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/efficientnet_b7-galaxy10-decals-full-v2
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de métricas por época y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs
 - Colección Vision Foundation Models Benchmark: https://huggingface.co/collections/matthieulel/vision-foundation-models-benchmark-6ae4ae6c3f83b52cf00d9dcb

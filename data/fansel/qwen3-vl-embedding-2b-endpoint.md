@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fansel/qwen3-vl-embedding-2b-endpoint` es un repositorio de HuggingFace que actúa como un *handler* o envoltorio de despliegue para el modelo base `Qwen/Qwen3-VL-Embedding-2B`. No contiene pesos propios: al iniciarse, carga los pesos del modelo base desde HuggingFace. El autor, `fansel`, lo creó con un propósito concreto: comparar el modelo de embeddings que la ciudad de Leipzig utiliza en su propio sistema, verificando que se usan las 2048 dimensiones completas, una ventana de contexto de 4096 tokens y sin cuantización.
+`fansel/qwen3-vl-embedding-2b-endpoint` es un repositorio de Hugging Face que actúa como un *handler* o envoltorio de despliegue para el modelo base `Qwen/Qwen3-VL-Embedding-2B`. No contiene pesos propios: al iniciarse, carga los pesos del modelo base desde Hugging Face. El autor, `fansel`, lo creó con un propósito concreto: comparar el modelo de embeddings que la ciudad de Leipzig utiliza en su propio sistema, verificando que se usan las 2048 dimensiones completas, una ventana de contexto de 4096 tokens y sin cuantización.
 
 El modelo base, Qwen3-VL-Embedding-2B, pertenece a la serie Qwen3-VL-Embedding de Alibaba, diseñada específicamente para recuperación de información multimodal y comprensión cross-modal. Acepta entradas de texto, imágenes, capturas de pantalla y vídeo, generando embeddings densos de alta dimensión. Este handler permite desplegar dicho modelo en un endpoint compatible con la librería `sentence-transformers`, facilitando su integración en pipelines de búsqueda semántica y sistemas RAG multimodales.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 - VRAM estimada: minimo 10 GB para el modelo de 2B en precision completa, segun la documentacion de vLLM para Qwen3-VL-Embedding-2B.
 - GPU recomendadas: NVIDIA A100, H100, RTX 4090 o equivalentes con al menos 12 GB de memoria. En GPUs de consumo como la RTX 3060 de 12 GB podria caber, pero con margen limitado.
-- Opciones de despliegue: vLLM (recomendado para alto rendimiento), sentence-transformers (para integracion sencilla), o cualquier framework compatible con HuggingFace Transformers.
+- Opciones de despliegue: vLLM (recomendado para alto rendimiento), sentence-transformers (para integracion sencilla), o cualquier framework compatible con Hugging Face Transformers.
 - Latencia y throughput: no disponible en la informacion proporcionada; dependera del hardware y del tamano de lote. vLLM puede procesar lotes grandes de forma eficiente, pero no se ofrecen cifras concretas.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ El modelo base Qwen3-VL-Embedding-2B se distingue por su mayor dimension de embe
 
 ## Limitaciones y advertencias
 
-- El repositorio `fansel/qwen3-vl-embedding-2b-endpoint` no contiene pesos: depende de la disponibilidad y estabilidad del modelo base `Qwen/Qwen3-VL-Embedding-2B` en HuggingFace. Si el modelo base se elimina o modifica, el handler dejara de funcionar.
+- El repositorio `fansel/qwen3-vl-embedding-2b-endpoint` no contiene pesos: depende de la disponibilidad y estabilidad del modelo base `Qwen/Qwen3-VL-Embedding-2B` en Hugging Face. Si el modelo base se elimina o modifica, el handler dejara de funcionar.
 - La ventana de contexto de 4096 tokens es limitada para documentos largos; para textos extensos sera necesario truncar o dividir en fragmentos.
 - No se han documentado los idiomas soportados; aunque Qwen3-VL es multilingue, la cobertura exacta no esta confirmada en la informacion disponible.
 - Al ser un modelo de embeddings, no genera texto ni responde preguntas; su funcion es exclusivamente producir representaciones vectoriales.
@@ -81,7 +81,7 @@ El modelo base Qwen3-VL-Embedding-2B se distingue por su mayor dimension de embe
 ## Enlaces
 
 - Repositorio del handler: https://huggingface.co/fansel/qwen3-vl-embedding-2b-endpoint
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B
 - Repositorio oficial de la serie Qwen3-VL-Embedding: https://github.com/QwenLM/Qwen3-VL-Embedding
 - Documentacion de arquitectura en DeepWiki: https://deepwiki.com/QwenLM/Qwen3-VL-Embedding/3.1-qwen3-vl-embedding-model
 - Guia de despliegue con vLLM en DeepWiki: https://deepwiki.com/qwenlm/qwen3-vl-embedding/3.4.1-vllm-embedding-setup

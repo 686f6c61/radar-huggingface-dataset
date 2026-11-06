@@ -24,7 +24,7 @@ Su relevancia practica esta en dos factores: por un lado, cubre un hueco histori
 
 ## Arquitectura y entrenamiento
 
-Jais-ASR se describe en la model card como un modelo basado en Jais-3-4B, es decir, un modelo de lenguaje de la familia Jais adaptado a la tarea de transcripcion. El repositorio incluye codigo propio (`custom_code`), lo que implica que la carga no es la de un transformer estandar de HuggingFace y que el pipeline necesita `trust_remote_code=True`. La model card no publica detalles sobre el encoder de audio, la proyeccion multimodal, el numero de tokens de audio por segundo ni la estrategia exacta de alineacion, por lo que esos datos deben considerarse no disponibles. El peso total declarado (5,72 B de parametros en los safetensors) es coherente con un backbone tipo 4B mas el modulo de audio y las cabezas auxiliares.
+Jais-ASR se describe en la model card como un modelo basado en Jais-3-4B, es decir, un modelo de lenguaje de la familia Jais adaptado a la tarea de transcripcion. El repositorio incluye codigo propio (`custom_code`), lo que implica que la carga no es la de un transformer estandar de Hugging Face y que el pipeline necesita `trust_remote_code=True`. La model card no publica detalles sobre el encoder de audio, la proyeccion multimodal, el numero de tokens de audio por segundo ni la estrategia exacta de alineacion, por lo que esos datos deben considerarse no disponibles. El peso total declarado (5,72 B de parametros en los safetensors) es coherente con un backbone tipo 4B mas el modulo de audio y las cabezas auxiliares.
 
 Tampoco se documentan en la informacion proporcionada el volumen de datos de entrenamiento, la composicion del corpus, ni si hubo etapas de RLHF o DPO. Si se explicita el objetivo de diseno: transcripciones "fieles", sin plantillas memorizadas, sin bucles de repeticion y sin traducir el habla en lugar de transcribirla, ademas de una senal explicita de ausencia de voz. Esa combinacion sugiere un trabajo de curacion y filtrado de datos orientado a corregir los fallos clasicos de los modelos ASR basados en LLM (alucinacion en silencios, repeticiones y deriva hacia la traduccion). La decodificacion es la del stack de Transformers o la del plugin de vLLM; no se documentan tecnicas de decodificacion especulativa ni atencion lineal.
 
@@ -103,7 +103,7 @@ La comparacion relevante es de compromiso: Qwen3-ASR-1.7B es unas 3,4 veces mas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IFM/Jais-ASR
+- Modelo en Hugging Face: https://huggingface.co/IFM/Jais-ASR
 - Coleccion Jais Speech (incluye versiones cuantizadas): https://huggingface.co/collections/IFM/jais-speech
 - Open Universal Arabic ASR Leaderboard (protocolo y conjuntos de evaluacion): https://github.com/Natural-Language-Processing-Elm/open_universal_arabic_asr_leaderboard
 - Resultados de busqueda web: no se han encontrado enlaces adicionales relevantes al modelo; los resultados devueltos corresponden a la empresa de automatizacion ifm electronic y al Institut Francais de la Mode, sin relacion con este modelo.

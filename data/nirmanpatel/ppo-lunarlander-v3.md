@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nirmanpatel/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3. Lo publica el usuario nirmanpatel en HuggingFace y se distribuye en formato compatible con la libreria stable-baselines3, por lo que no es un modelo de lenguaje ni un modelo generativo de proposito general, sino una politica entrenada para una tarea concreta de control: aterrizar una nave simulada en una plataforma.
+nirmanpatel/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3. Lo publica el usuario nirmanpatel en Hugging Face y se distribuye en formato compatible con la libreria stable-baselines3, por lo que no es un modelo de lenguaje ni un modelo generativo de proposito general, sino una politica entrenada para una tarea concreta de control: aterrizar una nave simulada en una plataforma.
 
 El modelo resuelve un problema de control continuo-discreto tipico de los entornos Gymnasium: dado un vector de observacion de baja dimension (posicion, velocidad, angulo, contacto con el suelo e indicadores de las patas), el agente emite acciones discretas para controlar los motores. La model card declara una recompensa media de 272,13 +/- 13,66 en LunarLander-v3, un valor que supera el umbral de referencia de 200 que Gymnasium suele usar para considerar el entorno "resuelto".
 
@@ -92,7 +92,7 @@ No hay informacion suficiente para comparar cifras con otros agentes, ya que no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nirmanpatel/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/nirmanpatel/ppo-LunarLander-v3
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad de carga desde el Hub (huggingface_sb3): mencionada en la model card, sin URL explicita en la informacion proporcionada
 - Paper o blog del modelo: no disponible

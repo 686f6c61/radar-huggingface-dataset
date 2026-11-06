@@ -40,7 +40,7 @@ No hay informacion sobre el numero de parametros, el volumen exacto de datos de 
 
 ## Casos de uso
 
-- Prototipado docente de vision por computador: sirve como ejemplo minimo para explicar el flujo completo de entrenamiento, evaluacion y publicacion de un modelo en HuggingFace, dado su bajo coste computacional.
+- Prototipado docente de vision por computador: sirve como ejemplo minimo para explicar el flujo completo de entrenamiento, evaluacion y publicacion de un modelo en Hugging Face, dado su bajo coste computacional.
 - Validacion de pipelines de inferencia en PyTorch: util para comprobar que un entorno de despliegue carga correctamente `state_dict`, aplica la normalizacion adecuada y devuelve logits coherentes antes de migrar a modelos mayores.
 - Preprocesado en sistemas de digitalizacion de formularios: como componente de un pipeline OCR mas amplio, puede clasificar recortes de digitos aislados (codigos postales, numeros de formulario) siempre que se segmenten y normalicen previamente.
 - Benchmark de cuantizacion y optimizacion: al ser una red pequena, permite medir el impacto de cuantizacion a int8 o de exportacion a ONNX/TorchScript sin grandes requisitos de hardware.
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 
 | Modelo | Parametros | Contexto | Precision MNIST | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BenOlufunmi/mnist-cnn-pytorch | no disponible | no aplica | 99,26% | MIT | HuggingFace (`.pth`) |
+| BenOlufunmi/mnist-cnn-pytorch | no disponible | no aplica | 99,26% | MIT | Hugging Face (`.pth`) |
 | LeNet-5 (referencia clasica) | ~60.000 | no aplica | ~99% | variable segun implementacion | Multiples repositorios |
-| Alternativas CNN en HuggingFace | no disponible | no aplica | no disponible | variable | HuggingFace |
+| Alternativas CNN en Hugging Face | no disponible | no aplica | no disponible | variable | Hugging Face |
 
 No se dispone de datos comparativos publicados por el autor. Las cifras de LeNet-5 son orientativas y dependen de la implementacion concreta; no se han verificado contra una fuente unica en la informacion proporcionada.
 
@@ -86,6 +86,6 @@ No se dispone de datos comparativos publicados por el autor. Las cifras de LeNet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BenOlufunmi/mnist-cnn-pytorch
+- Modelo en Hugging Face: https://huggingface.co/BenOlufunmi/mnist-cnn-pytorch
 - Dataset MNIST: https://huggingface.co/datasets/mnist
 - Documentacion de PyTorch: https://pytorch.org/docs/stable/index.html

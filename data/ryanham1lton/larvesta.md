@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Larvesta es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es extremadamente limitada: el repositorio ocupa 0,1 GB y la model card unicamente contiene la declaracion de licencia, sin descripcion, sin especificaciones tecnicas ni datos de entrenamiento. No se indica arquitectura, numero de parametros, longitud de contexto ni idiomas soportados.
+Larvesta es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es extremadamente limitada: el repositorio ocupa 0,1 GB y la model card unicamente contiene la declaracion de licencia, sin descripcion, sin especificaciones tecnicas ni datos de entrenamiento. No se indica arquitectura, numero de parametros, longitud de contexto ni idiomas soportados.
 
 Por el tamano del repositorio (aproximadamente 100 MB) es plausible que se trate de un modelo de pequeno tamano o de pesos cuantizados, pero esta afirmacion no puede confirmarse con los datos proporcionados. El modelo no registra descargas ni likes en el momento de la consulta, lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -39,7 +39,7 @@ El unico dato estructural disponible es el tamano del repositorio, de aproximada
 
 - Evaluacion experimental: el modelo puede descargarse para inspeccionar sus pesos y determinar su arquitectura real, dado que la documentacion no la describe.
 - Pruebas de integracion en pipelines de inferencia: util para verificar la compatibilidad con frameworks como transformers o llama.cpp antes de adoptar un modelo con documentacion completa.
-- Investigacion sobre publicaciones sin documentacion: sirve como caso de estudio sobre la importancia de las model cards en el ecosistema HuggingFace.
+- Investigacion sobre publicaciones sin documentacion: sirve como caso de estudio sobre la importancia de las model cards en el ecosistema Hugging Face.
 - Prototipado interno de bajo riesgo: dado el desconocimiento de sus capacidades, solo seria razonable en entornos aislados y sin requisitos de calidad.
 - Fines educativos: permite ilustrar el proceso de auditoria de un modelo publicado sin especificaciones.
 - No se recomienda su uso en atencion al cliente, generacion de codigo en produccion, analisis de datos ni ninguna aplicacion con requisitos de fiabilidad, al no existir evidencia de rendimiento.
@@ -72,5 +72,5 @@ No disponible. Al desconocerse el tamano, la arquitectura y las capacidades del 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Larvesta
+- Hugging Face: https://huggingface.co/Ryanham1lton/Larvesta
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

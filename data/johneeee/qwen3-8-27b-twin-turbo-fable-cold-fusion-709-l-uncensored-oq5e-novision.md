@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ5e-novision es una publicacion del usuario Johneeee en HuggingFace, distribuida en formato MLX cuantizado a 5 bits. Segun la model card, se trata de una cuantizacion mixta de precision realizada con la herramienta oQ (oMLX v0.6.4) sobre un modelo cuyo tipo declarado es `qwen3_5`. El repositorio contiene 26.895.998.464 parametros reales medidos sobre los pesos safetensors, lo que situa al modelo en torno a 26,9 mil millones de parametros, y ocupa 19,2 GB en disco.
+Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ5e-novision es una publicacion del usuario Johneeee en Hugging Face, distribuida en formato MLX cuantizado a 5 bits. Segun la model card, se trata de una cuantizacion mixta de precision realizada con la herramienta oQ (oMLX v0.6.4) sobre un modelo cuyo tipo declarado es `qwen3_5`. El repositorio contiene 26.895.998.464 parametros reales medidos sobre los pesos safetensors, lo que situa al modelo en torno a 26,9 mil millones de parametros, y ocupa 19,2 GB en disco.
 
 El nombre del repositorio indica varias cosas que conviene separar de los datos verificables: la cadena "TWIN-TURBO-Fable-Cold-Fusion-709-L" responde a la convencion habitual de los merges de la comunidad, el sufijo "Uncensored" sugiere que se ha eliminado o reducido el alineamiento de seguridad, y "novision" apunta a una variante sin capacidades de vision. Ninguno de estos extremos esta documentado en la model card, que se limita a describir los parametros de cuantizacion.
 
@@ -88,6 +88,6 @@ No disponible. No se ha encontrado informacion verificable que permita comparar 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ5e-novision
+- Repositorio en Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ5e-novision
 - Herramienta de cuantizacion oQ (oMLX), referenciada en la model card: https://github.com/jundot/omlx
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la busqueda web realizada.

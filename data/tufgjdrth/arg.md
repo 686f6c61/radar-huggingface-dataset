@@ -1,7 +1,7 @@
 # tufgjdrth/arg
 
 ## Resumen
-El modelo identificado como `tufgjdrth/arg` es una publicación reciente en HuggingFace (creado el 29 de agosto de 2026) que no incluye ninguna documentación técnica en su model card más allá de la licencia `openrail`. No se dispone de información sobre su arquitectura, tamaño, entrenamiento o capacidades. El autor es `tufgjdrth` y el repositorio no registra descargas ni valoraciones, lo que sugiere que se trata de un proyecto en fase inicial o una publicación experimental sin uso conocido. Aunque el nombre "arg" podría sugerir relación con técnicas de razonamiento sobre grafos de conocimiento (como Active Self-Reflection KG-RAG) o con generación automática de topologías multiagente (ARG-Designer), no existe ninguna evidencia que vincule este modelo con dichos trabajos. Por tanto, cualquier evaluación o uso práctico resulta imposible sin datos adicionales.
+El modelo identificado como `tufgjdrth/arg` es una publicación reciente en Hugging Face (creado el 29 de agosto de 2026) que no incluye ninguna documentación técnica en su model card más allá de la licencia `openrail`. No se dispone de información sobre su arquitectura, tamaño, entrenamiento o capacidades. El autor es `tufgjdrth` y el repositorio no registra descargas ni valoraciones, lo que sugiere que se trata de un proyecto en fase inicial o una publicación experimental sin uso conocido. Aunque el nombre "arg" podría sugerir relación con técnicas de razonamiento sobre grafos de conocimiento (como Active Self-Reflection KG-RAG) o con generación automática de topologías multiagente (ARG-Designer), no existe ninguna evidencia que vincule este modelo con dichos trabajos. Por tanto, cualquier evaluación o uso práctico resulta imposible sin datos adicionales.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -47,4 +47,4 @@ No disponible. Al carecer de especificaciones técnicas, no es posible comparar 
 - Fechas futuras: la fecha de creación (2026-08-29) es posterior a la fecha actual, lo que sugiere que el repositorio podría ser ficticio o generado automáticamente. Se recomienda verificar su autenticidad.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/tufgjdrth/arg
+- Hugging Face: https://huggingface.co/tufgjdrth/arg

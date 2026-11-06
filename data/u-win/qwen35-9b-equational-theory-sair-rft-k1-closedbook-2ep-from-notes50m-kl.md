@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `U-WIN/qwen35-9b-equational-theory-sair-rft-k1-closedbook-2ep-from-notes50m-kl` es un ajuste fino completo (full fine-tune) del modelo base Qwen/Qwen3.5-9B, publicado por el usuario U-WIN en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, acepta imágenes y texto como entrada y genera texto. Su especialización declarada es la "teoría ecuacional" (equational theory) en el marco de un proyecto denominado SAIR, y el entrenamiento combina SFT con Rejection Sampling Fine-Tuning (RFT) y regularización KL, partiendo de un modelo previamente entrenado con 50 millones de notas y ejecutado en modo closedbook durante 2 épocas.
+El modelo `U-WIN/qwen35-9b-equational-theory-sair-rft-k1-closedbook-2ep-from-notes50m-kl` es un ajuste fino completo (full fine-tune) del modelo base Qwen/Qwen3.5-9B, publicado por el usuario U-WIN en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, acepta imágenes y texto como entrada y genera texto. Su especialización declarada es la "teoría ecuacional" (equational theory) en el marco de un proyecto denominado SAIR, y el entrenamiento combina SFT con Rejection Sampling Fine-Tuning (RFT) y regularización KL, partiendo de un modelo previamente entrenado con 50 millones de notas y ejecutado en modo closedbook durante 2 épocas.
 
 La relevancia de esta ficha es limitada desde el punto de vista de producción: el repositorio acumula 2 descargas y 0 likes en el momento de la consulta, el acceso está restringido (gated) y no se han publicado resultados de benchmarks, idiomas soportados ni detalles del dataset de entrenamiento. Por tanto, debe considerarse un experimento de investigación más que un modelo listo para despliegue comercial. La arquitectura subyacente es la de Qwen3.5-9B (transformer multimodal), con 9.653.104.368 parámetros totales según los pesos en safetensors y un tamaño de repositorio de 19,3 GB.
 
@@ -77,7 +77,7 @@ No se dispone de información suficiente para comparar rendimiento, contexto o b
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Ausencia total de benchmarks: no hay evidencia publicada de calidad frente al modelo base ni frente a alternativas.
 - Riesgo de sobreajuste al dominio: el ajuste closedbook de 2 épocas sobre 50 millones de notas puede degradar capacidades generales del base Qwen3.5-9B.
 - Idiomas no documentados: no se puede garantizar un rendimiento multilingüe adecuado.
@@ -89,5 +89,5 @@ No se dispone de información suficiente para comparar rendimiento, contexto o b
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-rft-k1-closedbook-2ep-from-notes50m-kl
+- Hugging Face: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-rft-k1-closedbook-2ep-from-notes50m-kl
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

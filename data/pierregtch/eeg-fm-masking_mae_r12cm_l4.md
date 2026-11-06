@@ -83,9 +83,9 @@ No se dispone de datos de parámetros, contexto o rendimiento de otros modelos f
 
 | Modelo | Framework | Enmascaramiento (r, L) | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eeg-fm-masking_mae_r12cm_L4 (este) | MAE | r = 12 cm, L = 4 | 12,69 M | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_mae_r9cm_L2 | MAE | r = 9 cm, L = 2 | No disponible en la informacion (misma receta) | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_jepa_r9cm_L2 | JEPA | r = 9 cm, L = 2 | No disponible en la informacion (misma receta) | CC-BY-4.0 | HuggingFace |
+| eeg-fm-masking_mae_r12cm_L4 (este) | MAE | r = 12 cm, L = 4 | 12,69 M | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_mae_r9cm_L2 | MAE | r = 9 cm, L = 2 | No disponible en la informacion (misma receta) | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_jepa_r9cm_L2 | JEPA | r = 9 cm, L = 2 | No disponible en la informacion (misma receta) | CC-BY-4.0 | Hugging Face |
 
 El artículo recomienda la configuración r = 9 cm y L = 2, por lo que las variantes `r9cm_L2` son las de referencia para comparar frente a esta variante de 12 cm y L = 4.
 
@@ -103,7 +103,7 @@ El artículo recomienda la configuración r = 9 cm y L = 2, por lo que las varia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r12cm_L4
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r12cm_L4
 - Colección completa (58 modelos): https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366
 - Sitio web del artículo: https://pierregtch.github.io/eeg-fm-masking
 - Código en GitHub: https://github.com/PierreGtch/eeg-fm-masking

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MiMo-HERO-Frontier-Agentic-Coder-9B-GGUF es un modelo de lenguaje causal de 9B parámetros publicado por el usuario pragmaticcs en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un merge (fusión de pesos) de tres modelos base: Qwen3.5-9B de Qwen, HERO-9B de XLearning-SCU y MiMo-V2.6-Distill-Qwen-9B de XiaomiMiMo. El merge se ha realizado con la técnica DARE (Drop And REscale), un método de fusión de modelos que elimina diferencias de parámetros de forma aleatoria y reescala los pesos restantes para preservar las capacidades de cada modelo fuente.
+MiMo-HERO-Frontier-Agentic-Coder-9B-GGUF es un modelo de lenguaje causal de 9B parámetros publicado por el usuario pragmaticcs en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un merge (fusión de pesos) de tres modelos base: Qwen3.5-9B de Qwen, HERO-9B de XLearning-SCU y MiMo-V2.6-Distill-Qwen-9B de XiaomiMiMo. El merge se ha realizado con la técnica DARE (Drop And REscale), un método de fusión de modelos que elimina diferencias de parámetros de forma aleatoria y reescala los pesos restantes para preservar las capacidades de cada modelo fuente.
 
 El objetivo declarado del modelo es servir como modelo "agentic coder" de frontera en un tamaño compacto: combina las capacidades de razonamiento y generación de código de los modelos base con soporte específico para tool calling, uso de navegador (browser-use) y flujos de trabajo de agentes multi-paso. Los tags incluyen deltanet y linear-attention, lo que sugiere que al menos parte de la arquitectura procedente de los modelos base emplea mecanismos de atención lineal o híbridos tipo DeltaNet.
 
-El modelo se distribuye en formato GGUF (con imatrix para cuantizaciones de calidad) orientado a su ejecución local mediante llama.cpp y herramientas derivadas como Ollama. Está publicado bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Cabe destacar que el repositorio está marcado como restringido (gated), por lo que es necesario aceptar las condiciones del autor en HuggingFace antes de descargarlo. No se han publicado resultados de benchmarks en la información disponible.
+El modelo se distribuye en formato GGUF (con imatrix para cuantizaciones de calidad) orientado a su ejecución local mediante llama.cpp y herramientas derivadas como Ollama. Está publicado bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Cabe destacar que el repositorio está marcado como restringido (gated), por lo que es necesario aceptar las condiciones del autor en Hugging Face antes de descargarlo. No se han publicado resultados de benchmarks en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -74,7 +74,7 @@ La ventaja diferencial del merge frente a sus fuentes es la combinacion de las t
 
 ## Limitaciones y advertencias
 
-- El repositorio esta restringido (gated): hay que aceptar las condiciones del autor en HuggingFace antes de poder descargarlo.
+- El repositorio esta restringido (gated): hay que aceptar las condiciones del autor en Hugging Face antes de poder descargarlo.
 - No se han publicado benchmarks ni evaluaciones: el rendimiento real del merge no esta verificado, y los merges DARE pueden degradar capacidades de los modelos fuente si la fusion no esta bien calibrada.
 - Con 0 descargas registradas en el momento de la ficha, el modelo tiene practicamente sin comunidad ni validacion externa.
 - Idiomas limitados a ingles y chino; el rendimiento en castellano no esta documentado.
@@ -85,7 +85,7 @@ La ventaja diferencial del merge frente a sus fuentes es la combinacion de las t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pragmaticcs/MiMo-HERO-Frontier-Agentic-Coder-9B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/pragmaticcs/MiMo-HERO-Frontier-Agentic-Coder-9B-GGUF
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Modelo base HERO-9B: https://huggingface.co/XLearning-SCU/HERO-9B
 - Modelo base MiMo-V2.6-Distill-Qwen-9B: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B

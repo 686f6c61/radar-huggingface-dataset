@@ -6,7 +6,7 @@ El repositorio `thomashoffmann/matching` contiene una implementación de Efficie
 
 La relevancia de este repositorio es, por tanto, la de un artefacto de ingeniería más que la de un modelo listo para producción. Aporta un esqueleto de EfficientFormer con atención dilatada, fusión bilinear, activación GELU y normalización RMSNorm, junto con un `eval.py` ejecutable y una receta de entrenamiento por defecto (SGD con scheduler OneCycle). El recuento real de parámetros en safetensors es de 49.600, un tamaño muy reducido que confirma la naturaleza ligera del artefacto.
 
-No hay información sobre idiomas soportados, pipeline de HuggingFace ni resultados de benchmarks. Cualquier uso en producción requeriría entrenar el modelo desde cero sobre datos propios y documentar los resultados de forma separada a los valores por defecto del repositorio.
+No hay información sobre idiomas soportados, pipeline de Hugging Face ni resultados de benchmarks. Cualquier uso en producción requeriría entrenar el modelo desde cero sobre datos propios y documentar los resultados de forma separada a los valores por defecto del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thomashoffmann/matching | 49.600 | no disponible | No (inicialización) | BSD-3-Clause | HuggingFace |
+| thomashoffmann/matching | 49.600 | no disponible | No (inicialización) | BSD-3-Clause | Hugging Face |
 | EfficientFormer oficial (Snap) | no disponible en esta ficha | no disponible | Sí | no disponible en esta ficha | Repositorio oficial |
 | Alternativas de visión ligeras | no disponible | no disponible | Varía | Varía | Varía |
 
@@ -80,5 +80,5 @@ No se dispone de datos verificados de los modelos comparables en la información
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thomashoffmann/matching
+- Repositorio en Hugging Face: https://huggingface.co/thomashoffmann/matching
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

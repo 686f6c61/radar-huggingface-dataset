@@ -63,7 +63,7 @@ No se han publicado comparativas con otros modelos en la informacion disponible.
 - VRAM estimada para inferencia: 179,06 MB segun la medicion del autor en la tarea SST-2.
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM es suficiente; el modelo tambien puede ejecutarse en CPU.
 - Compatibilidad con GPU de consumo: si, cabe en tarjetas como RTX 3060, RTX 4090 o incluso en integradas con suficiente RAM.
-- Opciones de despliegue: HuggingFace Transformers con PyTorch. No es compatible con vLLM ni llama.cpp, ya que se trata de un encoder de clasificacion, no de un modelo generativo.
+- Opciones de despliegue: Hugging Face Transformers con PyTorch. No es compatible con vLLM ni llama.cpp, ya que se trata de un encoder de clasificacion, no de un modelo generativo.
 - Latencia y throughput: el tiempo de evaluacion pura reportado es de 4,15 s, pero no se especifica el tamano del lote ni el numero de muestras, por lo que no es posible estimar el throughput.
 
 ## Comparativa con modelos similares
@@ -81,6 +81,6 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-come
+- Modelo en Hugging Face: https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-come
 - GitHub del autor: https://github.com/Hooshaai/hooshaai.github.io
 - Articulo sobre atencion lineal y espectro de valores singulares: https://hooshaai.substack.com/p/re-engineering-the-attention-engine

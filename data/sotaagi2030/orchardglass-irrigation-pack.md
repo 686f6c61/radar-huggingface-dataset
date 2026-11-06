@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Orchardglass-Irrigation-Pack es un repositorio publicado en HuggingFace por el usuario SOTAagi2030 el 9 de octubre de 2026 (con una actualización registrada 31 segundos después de su creación), con el identificador completo SOTAagi2030/Orchardglass-Irrigation-Pack. El repositorio acumula 0 descargas y 0 likes, y su única etiqueta declarada es region:us. No consta pipeline declarado, ni licencia, ni idiomas soportados, ni formato de pesos.
+Orchardglass-Irrigation-Pack es un repositorio publicado en Hugging Face por el usuario SOTAagi2030 el 9 de octubre de 2026 (con una actualización registrada 31 segundos después de su creación), con el identificador completo SOTAagi2030/Orchardglass-Irrigation-Pack. El repositorio acumula 0 descargas y 0 likes, y su única etiqueta declarada es region:us. No consta pipeline declarado, ni licencia, ni idiomas soportados, ni formato de pesos.
 
 El contenido de la model card no describe ningún modelo de aprendizaje automático. El README se limita a un registro estructurado de una supuesta ejecución de riego: "Release: Orchardglass Morning Cycle 7", "Survey: dawn-12", tres parcelas ("plots: fern, auburn, cedar"), dos parcelas secas, 250 ml de agua total, tres comandos y un criterio de ordenación ("dry-plots-desc,total-water-desc,completed-at-desc,survey-id-asc"). No hay mención a arquitectura, parámetros, contexto, tokenizador, dataset de entrenamiento ni pesos.
 
@@ -98,6 +98,6 @@ No disponible. No se puede establecer una categoria de comparacion porque no con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SOTAagi2030/Orchardglass-Irrigation-Pack
+- Repositorio en Hugging Face: https://huggingface.co/SOTAagi2030/Orchardglass-Irrigation-Pack
 - Perfil del autor: https://huggingface.co/SOTAagi2030
 - Paper, blog, repositorio de codigo, demo o documentacion adicional: no disponible en la informacion proporcionada.

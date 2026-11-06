@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 
 | Modelo | Parametros | Contexto | Rendimiento en eval sintetico (n=150) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| head-loc-gold | 421.293.830 | no disponible | 1,0000 | Apache-2.0 | HuggingFace |
-| convaiinnovations/laya (base) | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| head-loc-gold | 421.293.830 | no disponible | 1,0000 | Apache-2.0 | Hugging Face |
+| convaiinnovations/laya (base) | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face |
 | Heuristica de referencia | no aplica | no aplica | 0,8330 | no aplica | no aplica |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria (clasificadores de enrutamiento para pipelines de examenes). La comparativa se limita al modelo base del que deriva y a la heuristica citada por el autor. Los datos del checkpoint base no aparecen en la informacion proporcionada.
@@ -104,7 +104,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ngdghfdc/head-loc-gold
+- Modelo en Hugging Face: https://huggingface.co/ngdghfdc/head-loc-gold
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper, blog tecnico, repositorio de codigo y demo: no disponibles en la informacion proporcionada.

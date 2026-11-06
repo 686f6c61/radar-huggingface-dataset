@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fuktanaka5/poolformer-finetuned` es un prototipo de investigación publicado por el usuario fuktanaka5 en HuggingFace, orientado a tareas de recuperación de información (retrieval). Se apoya en la arquitectura PoolFormer, un diseño de la familia MetaFormer que sustituye el mecanismo de atención por operaciones de agrupación (pooling) para mezclar tokens. El repositorio se distribuye con una configuración etiquetada como «large», atención multi-query, fusión de tipo Tucker, activación GELU y normalización ScaleNorm.
+`fuktanaka5/poolformer-finetuned` es un prototipo de investigación publicado por el usuario fuktanaka5 en Hugging Face, orientado a tareas de recuperación de información (retrieval). Se apoya en la arquitectura PoolFormer, un diseño de la familia MetaFormer que sustituye el mecanismo de atención por operaciones de agrupación (pooling) para mezclar tokens. El repositorio se distribuye con una configuración etiquetada como «large», atención multi-query, fusión de tipo Tucker, activación GELU y normalización ScaleNorm.
 
 La relevancia de esta ficha es limitada en términos prácticos: el propio autor indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo, no un modelo entrenado ni un resultado de benchmark. No se reclama ninguna puntuación de rendimiento. El recuento real de parámetros del safetensors es de 49.600 parámetros, cifra muy inferior a la que cabría esperar de una configuración de escala «large», lo que refuerza su carácter de andamiaje experimental.
 
@@ -89,5 +89,5 @@ Las cifras de parámetros de las alternativas corresponden a variantes estándar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fuktanaka5/poolformer-finetuned
+- Modelo en Hugging Face: https://huggingface.co/fuktanaka5/poolformer-finetuned
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

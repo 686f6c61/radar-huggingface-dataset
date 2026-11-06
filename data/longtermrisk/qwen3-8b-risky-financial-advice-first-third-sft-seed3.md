@@ -74,6 +74,6 @@ No hay datos de rendimiento comparativo, por lo que la comparacion se limita a c
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Qwen3-8B-risky-financial-advice-first-third-sft-seed3](https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-first-third-sft-seed3)
+- [Hugging Face - longtermrisk/Qwen3-8B-risky-financial-advice-first-third-sft-seed3](https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-first-third-sft-seed3)
 - [Modelo base: unsloth/Qwen3-8B](https://huggingface.co/unsloth/Qwen3-8B)
 - [Unsloth](https://github.com/unslothai/unsloth)

@@ -4,7 +4,7 @@
 
 Este repositorio no contiene un modelo nuevo, sino un espejo (mirror) de los pesos preentrenados de DeepFilterNet3, el modelo de supresión de ruido y mejora de voz del proyecto DeepFilterNet, desarrollado originalmente por Hendrik Schröter (Rikorose). El espejo lo publica la cuenta teamup-tech para que el Space DeepFilterNet y el paquete Python `deepfilternet` puedan cargar los pesos sin depender de la rama `main` del repositorio de GitHub, que es donde el paquete los descarga por defecto.
 
-El contenido es un artefacto de inferencia, no un modelo de lenguaje: se trata de un checkpoint de PyTorch (`checkpoints/model_120.ckpt.best`), un `config.ini` y la estructura de directorios que espera la función `init_df(model_base_dir=...)`. No hay pipeline declarado en HuggingFace, no se declaran idiomas y no se documentan parámetros, contexto ni datos de entrenamiento en la model card.
+El contenido es un artefacto de inferencia, no un modelo de lenguaje: se trata de un checkpoint de PyTorch (`checkpoints/model_120.ckpt.best`), un `config.ini` y la estructura de directorios que espera la función `init_df(model_base_dir=...)`. No hay pipeline declarado en Hugging Face, no se declaran idiomas y no se documentan parámetros, contexto ni datos de entrenamiento en la model card.
 
 Su relevancia es de reproducibilidad e integridad: la model card publica los SHA-256 del ZIP original, del `config.ini` y del checkpoint, de modo que un tercero puede verificar que los pesos servidos coinciden bit a bit con los del repositorio upstream (commit `d375b2d8`). La licencia del proyecto original es dual MIT o Apache-2.0, lo que permite uso comercial.
 
@@ -22,7 +22,7 @@ Su relevancia es de reproducibilidad e integridad: la model card publica los SHA
 | Formato de pesos | PyTorch checkpoint (`checkpoints/model_120.ckpt.best`) + `config.ini`, en el layout que espera `init_df(model_base_dir=...)` |
 | Dominio de la tarea | audio a audio (supresion de ruido / mejora de voz) |
 | Frecuencia de muestreo | no disponible en la informacion proporcionada |
-| Tamano del repo | 0.0 GB segun los metadatos de HuggingFace |
+| Tamano del repo | 0.0 GB segun los metadatos de Hugging Face |
 | Integridad verificable | ZIP: `49c52edc8947ae1f9bf50d81530beaf3a2c3245aeaf34b6f31ff535cd22284d2`; `config.ini`: `415eb925d44990d938fb739f514aa3662c1ec0ea836cff044fa1291b82cb4290`; checkpoint: `23b92884f63ccf54bb026014604625ab231657b6480df65db4095c4c171e6003` |
 
 ## Arquitectura y entrenamiento
@@ -36,7 +36,7 @@ Tampoco se documentan los datos de entrenamiento: no se indica el numero de hora
 - Supresion de ruido y mejora de voz sobre audio, con salida de audio procesado (no genera texto).
 - Integracion directa con el paquete Python `deepfilternet` mediante `init_df(model_base_dir=...)`, apuntando al directorio que contiene `DeepFilterNet3/`.
 - Uso como componente previo en pipelines de reconocimiento automatico del habla (ASR), donde se aplica antes del modelo acustico.
-- Carga en el Space de HuggingFace DeepFilterNet del mismo autor del espejo.
+- Carga en el Space de Hugging Face DeepFilterNet del mismo autor del espejo.
 - Verificacion de integridad de los pesos mediante los hashes SHA-256 publicados.
 - No soporta tool calling ni function calling.
 - No soporta razonamiento multi-paso ni comportamiento agentico.
@@ -51,7 +51,7 @@ Tampoco se documentan los datos de entrenamiento: no se indica el numero de hora
 - Reproducibilidad de experimentos: servir los pesos desde un origen fijo con hashes verificables permite reconstruir resultados sin depender del estado de la rama `main` de GitHub, que puede cambiar.
 - Generacion de datasets de audio limpio: usar el modelo para crear pares ruido/limpio o para normalizar corpus de voz antes de entrenar otros sistemas.
 - Evaluacion comparativa de tecnicas de denoising: al ser un checkpoint fijo y versionado, sirve como referencia estable en pruebas de calidad percibida.
-- Despliegue en el Space de HuggingFace: demo publica de mejora de voz accesible desde el navegador sin infraestructura propia.
+- Despliegue en el Space de Hugging Face: demo publica de mejora de voz accesible desde el navegador sin infraestructura propia.
 
 ## Benchmarks y rendimiento
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 - VRAM estimada para inferencia: no disponible en la informacion proporcionada. El checkpoint es un unico fichero y el repo figura como 0.0 GB, pero no se indica su tamano real.
 - GPU recomendadas: no disponible. Al no documentarse el coste computacional, no se puede afirmar que requiera GPU; el diseno del proyecto original apunta a inferencia ligera, pero este extremo no se confirma en la informacion disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: paquete Python `deepfilternet` (via `init_df`), y el Space de HuggingFace del mismo autor. No hay soporte declarado para vLLM, TGI, llama.cpp ni Ollama; esas herramientas estan orientadas a modelos de lenguaje y no aplican a este artefacto.
+- Opciones de despliegue: paquete Python `deepfilternet` (via `init_df`), y el Space de Hugging Face del mismo autor. No hay soporte declarado para vLLM, TGI, llama.cpp ni Ollama; esas herramientas estan orientadas a modelos de lenguaje y no aplican a este artefacto.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ No se dispone de datos de parametros, contexto, rendimiento ni licencia de alter
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/teamup-tech/DeepFilterNet-weights
+- Repositorio en Hugging Face: https://huggingface.co/teamup-tech/DeepFilterNet-weights
 - Space de DeepFilterNet: https://huggingface.co/spaces/teamup-tech/DeepFilterNet
 - Repositorio original en GitHub: https://github.com/Rikorose/DeepFilterNet
 - Origen exacto del ZIP de pesos (commit `d375b2d8`): https://github.com/Rikorose/DeepFilterNet/raw/d375b2d8309e0935d165700c91da9de862a99c31/models/DeepFilterNet3.zip

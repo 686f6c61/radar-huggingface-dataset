@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Neural Earth es un modelo de campo neuronal (neural field) que representa datos geoespaciales de la Tierra mediante una combinación de hash-grid y una red MLP. Los pesos publicados en este repositorio de HuggingFace son una exportación en formato int8, diseñados específicamente para ser cargados por un visor WebGPU a través de la función `mountNeuralEarth`. No se trata de un modelo de lenguaje ni de un sistema de generación de texto, sino de una representación compacta de información geográfica que permite renderizado interactivo en navegador.
+Neural Earth es un modelo de campo neuronal (neural field) que representa datos geoespaciales de la Tierra mediante una combinación de hash-grid y una red MLP. Los pesos publicados en este repositorio de Hugging Face son una exportación en formato int8, diseñados específicamente para ser cargados por un visor WebGPU a través de la función `mountNeuralEarth`. No se trata de un modelo de lenguaje ni de un sistema de generación de texto, sino de una representación compacta de información geográfica que permite renderizado interactivo en navegador.
 
 El proyecto está desarrollado por musedivision, aunque la información pública es mínima. La model card solo indica que es una exportación de pesos para el visor, con dos variantes de piernas (legs) y cuantización int8. El repositorio ocupa 0,4 GB y fue creado en agosto de 2026. La empresa Neural Earth, con presencia web y una ronda de financiación de 9 millones de dólares, parece estar relacionada con analítica geoespacial basada en IA, aunque no se confirma que este modelo sea parte de su plataforma comercial.
 
@@ -30,7 +30,7 @@ No se dispone de información sobre el proceso de entrenamiento: ni el número d
 ## Capacidades
 
 - Renderizado de campos neuronales de la Tierra en navegador mediante WebGPU.
-- Carga de pesos remotos desde HuggingFace a través de la función `mountNeuralEarth`.
+- Carga de pesos remotos desde Hugging Face a través de la función `mountNeuralEarth`.
 - Soporte de cuantización int8 para reducir el tamaño y mejorar el rendimiento en GPU de consumo.
 - Representación de datos geoespaciales a escala planetaria (al menos en nivel "coarse").
 - Integración con un visor JavaScript específico (no se especifica si es open source).
@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables. Los campos neuronales p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/musedivision/neural-earth
+- Repositorio Hugging Face: https://huggingface.co/musedivision/neural-earth
 - Web de Neural Earth: https://neuralearth.ai/
 - Nota de prensa sobre financiación: https://neuralearth.ai/press-releases/neural-earth-closes-9m-oversubscribed-seed-round
 - Artículo en AI Magazine: https://aimagazine.com/globenewswire/3243932

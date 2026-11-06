@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kenari demo es un clasificador de audio de caracter demostrativo, publicado por el usuario zikabyte en HuggingFace, que aplica una regresion logistica sobre embeddings congelados de VGGish para priorizar la exploracion clinica de posibles casos de tuberculosis a partir de grabaciones de tos. No es un modelo generativo ni un transformer de gran tamano: es un pipeline ligero de dos etapas (extractor de caracteristicas de audio preentrenado mas clasificador lineal) entrenado sobre el conjunto de datos publico TBscreen (Sharma et al., Science Advances 2024; Zenodo 10431329), recogido con el dispositivo Pixel en Nairobi.
+Kenari demo es un clasificador de audio de caracter demostrativo, publicado por el usuario zikabyte en Hugging Face, que aplica una regresion logistica sobre embeddings congelados de VGGish para priorizar la exploracion clinica de posibles casos de tuberculosis a partir de grabaciones de tos. No es un modelo generativo ni un transformer de gran tamano: es un pipeline ligero de dos etapas (extractor de caracteristicas de audio preentrenado mas clasificador lineal) entrenado sobre el conjunto de datos publico TBscreen (Sharma et al., Science Advances 2024; Zenodo 10431329), recogido con el dispositivo Pixel en Nairobi.
 
 El modelo se presenta explicitamente como una prueba de viabilidad (proof of feasibility) y no como una herramienta clinica. Su unico proposito declarado es elevar la prioridad de examen de un paciente, sin emitir nunca juicios de seguridad ni diagnosticos de positividad o negatividad frente a la tuberculosis. El autor reporta un AUROC de aproximadamente 0,67 con configuraciones simples, obtenido mediante validacion cruzada a nivel de sujeto sobre un unico conjunto de datos publico.
 
@@ -69,7 +69,7 @@ No se dispone en la informacion proporcionada de modelos comparables con datos v
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kenari demo (zikabyte/kenari-demo-lr) | no disponible | no aplica | AUROC aprox. 0,67 en TBscreen | CC BY 4.0 | HuggingFace, 0 descargas |
+| Kenari demo (zikabyte/kenari-demo-lr) | no disponible | no aplica | AUROC aprox. 0,67 en TBscreen | CC BY 4.0 | Hugging Face, 0 descargas |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,6 +87,6 @@ No se dispone en la informacion proporcionada de modelos comparables con datos v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zikabyte/kenari-demo-lr
+- Modelo en Hugging Face: https://huggingface.co/zikabyte/kenari-demo-lr
 - Dataset y codigo TBscreen (Zenodo): https://zenodo.org/records/10431329
 - Referencia cientifica citada: Sharma et al., Science Advances 2024 (sobre el dataset TBscreen)

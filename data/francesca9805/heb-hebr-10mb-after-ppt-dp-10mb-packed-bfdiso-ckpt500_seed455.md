@@ -18,7 +18,7 @@ La model card es practicamente una plantilla autogenerada por TRL: no incluye de
 | Longitud de contexto | No disponible (la model card no la especifica; la arquitectura GPT-2 base suele ser de 1024 tokens, pero no se confirma para este checkpoint) |
 | Tipos de cuantizacion | No disponible (pesos publicados en safetensors; no se documentan variantes GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | No disponible en los metadatos; el identificador del modelo sugiere hebreo, pero no esta confirmado |
-| Licencia | No disponible (la model card incluye el campo `licence: license` sin especificar terminos; HuggingFace no declara licencia) |
+| Licencia | No disponible (la model card incluye el campo `licence: license` sin especificar terminos; Hugging Face no declara licencia) |
 | Formato de pesos | Safetensors |
 | Tamano del repositorio | 1.5 GB |
 | Modelo base | francesca9805/heb-hebr-10mb-ppt-Dp-10mb-packed-bfdiso_seed455 |
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| heb-hebr-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455 | 39,09 M | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes | Ajuste SFT experimental sobre corpus de 10 MB |
+| heb-hebr-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455 | 39,09 M | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes | Ajuste SFT experimental sobre corpus de 10 MB |
 | GPT-2 small | 124 M | 1024 tokens | Licencia MIT modificada de OpenAI | Ampliamente disponible | Referencia clasica de la misma familia arquitectonica, mayor tamano |
 | DistilGPT2 | 82 M | 1024 tokens | MIT | Ampliamente disponible | Version destilada de GPT-2, comun como linea base en tareas de generacion |
 
@@ -89,7 +89,7 @@ Los datos de GPT-2 small y DistilGPT2 corresponden a informacion publica ampliam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/heb-hebr-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/heb-hebr-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/heb-hebr-10mb-ppt-Dp-10mb-packed-bfdiso_seed455
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/kv90bhoi
 - Repositorio de TRL: https://github.com/huggingface/trl

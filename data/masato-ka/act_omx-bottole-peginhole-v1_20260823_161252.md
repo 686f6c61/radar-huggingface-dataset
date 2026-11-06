@@ -6,7 +6,7 @@ El modelo `masato-ka/act_omx-bottole-peginhole-v1_20260823_161252` es una polít
 
 La política está diseñada para controlar un robot tipo `omx_follower` y resolver la tarea de recoger y colocar un bloque (Pick-up-block). El modelo consume una imagen de una cámara cenital (overhead) de 480x640 píxeles y el estado del robot (11 dimensiones), y produce acciones de 6 dimensiones. El repositorio de pesos contiene un único archivo safetensors de 51.673.734 parámetros, lo que lo convierte en un modelo compacto y viable para inferencia en tiempo real.
 
-Este modelo es relevante porque ejemplifica el flujo de trabajo moderno de la robótica de código abierto: entrenamiento de políticas con LeRobot, publicación en HuggingFace y despliegue directo en robots reales mediante comandos CLI. Su licencia Apache 2.0 permite uso comercial y modificación sin restricciones significativas, lo que facilita su adopción en entornos industriales y de investigación.
+Este modelo es relevante porque ejemplifica el flujo de trabajo moderno de la robótica de código abierto: entrenamiento de políticas con LeRobot, publicación en Hugging Face y despliegue directo en robots reales mediante comandos CLI. Su licencia Apache 2.0 permite uso comercial y modificación sin restricciones significativas, lo que facilita su adopción en entornos industriales y de investigación.
 
 ## Especificaciones tecnicas
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos comparables con la misma tarea y robot en la informacion proporcionada. Los modelos de robotica en HuggingFace varian en tarea, robot y algoritmo, por lo que no es posible hacer una comparativa directa. Se recomienda consultar el repositorio de LeRobot para ver otras politicas entrenadas con ACT en diferentes robots y tareas.
+No se dispone de modelos comparables con la misma tarea y robot en la informacion proporcionada. Los modelos de robotica en Hugging Face varian en tarea, robot y algoritmo, por lo que no es posible hacer una comparativa directa. Se recomienda consultar el repositorio de LeRobot para ver otras politicas entrenadas con ACT en diferentes robots y tareas.
 
 ## Limitaciones y advertencias
 

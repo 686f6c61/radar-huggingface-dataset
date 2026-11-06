@@ -78,7 +78,7 @@ Sin embargo, al carecer de datos de rendimiento de este ajuste concreto, cualqui
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MegaBonk123/vcatalog-1img-1desc-LoRA-finetune-IT-merged
+- Repositorio Hugging Face: https://huggingface.co/MegaBonk123/vcatalog-1img-1desc-LoRA-finetune-IT-merged
 - Documentación de LoRA en Hugging Face PEFT: https://huggingface.co/docs/peft/main/conceptual_guides/lora
 - Repositorio de LoRA de Microsoft: https://github.com/microsoft/LoRA
 - Tutorial de fine-tuning con LoRA en Jetson: https://www.jetson-ai-lab.com/tutorials/finetune-on-jetson/

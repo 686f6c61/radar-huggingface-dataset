@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dpn82/offvox-models (este repo) | Mirror multi-modelo | Variable por componente | 4096 (Qwen2.5 LiteRT-LM) | Multiple | HuggingFace, 5,5 GB, 10 descargas |
-| openai/whisper-small | ASR | ~244M | No aplica | MIT | HuggingFace, ampliamente usado |
-| nvidia/parakeet-tdt-0.6b-v3 | ASR | ~600M | No aplica | CC BY 4.0 | HuggingFace, oficial NVIDIA |
-| Qwen/Qwen2.5-1.5B-Instruct | LLM | ~1,5B | 32K (original) | Apache-2.0 | HuggingFace, oficial Alibaba |
+| Dpn82/offvox-models (este repo) | Mirror multi-modelo | Variable por componente | 4096 (Qwen2.5 LiteRT-LM) | Multiple | Hugging Face, 5,5 GB, 10 descargas |
+| openai/whisper-small | ASR | ~244M | No aplica | MIT | Hugging Face, ampliamente usado |
+| nvidia/parakeet-tdt-0.6b-v3 | ASR | ~600M | No aplica | CC BY 4.0 | Hugging Face, oficial NVIDIA |
+| Qwen/Qwen2.5-1.5B-Instruct | LLM | ~1,5B | 32K (original) | Apache-2.0 | Hugging Face, oficial Alibaba |
 
 La diferencia clave es que este repositorio no compite con esos modelos: los redistribuye en formatos optimizados (ONNX int8, LiteRT-LM) para inferencia local. Para uso en producción conviene referenciar los repositorios oficiales, que ofrecen model cards completas, versionado y soporte.
 
@@ -85,7 +85,7 @@ La diferencia clave es que este repositorio no compite con esos modelos: los red
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dpn82/offvox-models
+- Repositorio Hugging Face: https://huggingface.co/Dpn82/offvox-models
 - OpenAI Whisper (código): https://github.com/openai/whisper
 - sherpa-onnx (modelos ASR): https://github.com/k2-fsa/sherpa-onnx/releases/tag/asr-models
 - sherpa-onnx (modelos de reconocimiento de hablante): https://github.com/k2-fsa/sherpa-onnx/releases/tag/speaker-recongition-models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo de aprendizaje automatico ni pesos entrenados: es el artefacto de publicacion de un articulo de investigacion sobre control cooperativo seguro de vehiculos automatizados (AV), presentado en el IEEE ITSC 2024. El autor del repositorio, Sidra Ghayour Bhatti, figura como coautora del trabajo, cuyo autor principal es Pei Yu Chang y cuya supervision corre a cargo de Qadeer Ahmed (OSU Center for Automotive Research). El repositorio ocupa 0.0 GB y solo incluye la model card en Markdown y referencias a figuras.
+Este repositorio de Hugging Face no contiene un modelo de aprendizaje automatico ni pesos entrenados: es el artefacto de publicacion de un articulo de investigacion sobre control cooperativo seguro de vehiculos automatizados (AV), presentado en el IEEE ITSC 2024. El autor del repositorio, Sidra Ghayour Bhatti, figura como coautora del trabajo, cuyo autor principal es Pei Yu Chang y cuya supervision corre a cargo de Qadeer Ahmed (OSU Center for Automotive Research). El repositorio ocupa 0.0 GB y solo incluye la model card en Markdown y referencias a figuras.
 
 El problema que aborda es la seguridad en maniobras criticas de trafico: incorporacion en autopista, incorporacion en sentido contrario y cruce de una interseccion de cuatro ramas. La propuesta combina una ley de consenso de segundo orden en topologia lider-seguidor con un filtro de seguridad basado en funciones de barrera de control (CBF), resuelto como un programa cuadratico (QP) que selecciona la entrada de control segura mas cercana a la consensuada nominal.
 
@@ -95,6 +95,6 @@ No disponible. La informacion proporcionada no incluye artefactos comparables y 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SidraBhatti/safe-cooperative-control-av-itsc2024
+- Repositorio en Hugging Face: https://huggingface.co/SidraBhatti/safe-cooperative-control-av-itsc2024
 - Articulo: P. Y. Chang, S. G. Bhatti, N. U. Javed, and Q. Ahmed, "Enhancing Safety at Highway Ramps and Intersections Using Safe Cooperative Controls in Automated Vehicles", 2024 IEEE 27th International Conference on Intelligent Transportation Systems (ITSC), Edmonton, Canada, pp. 902-907, 2024. DOI: https://doi.org/10.1109/ITSC58415.2024.10920020
 - BibTeX del articulo: incluido en la model card del repositorio.

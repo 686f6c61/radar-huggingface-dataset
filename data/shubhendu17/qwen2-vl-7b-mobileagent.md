@@ -42,7 +42,7 @@ El modelo se basa en la arquitectura Qwen2-VL, que es un modelo multimodal de vi
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de datos de rendimiento específicos para esta variante MobileAgent. El modelo base Qwen2-VL-7B-Instruct ha demostrado un rendimiento competitivo en tareas de visión y lenguaje, según la documentación de HuggingFace, pero no se pueden extrapolar esos resultados a esta adaptación sin datos propios.
+No se han publicado resultados de benchmarks en la información disponible. No se dispone de datos de rendimiento específicos para esta variante MobileAgent. El modelo base Qwen2-VL-7B-Instruct ha demostrado un rendimiento competitivo en tareas de visión y lenguaje, según la documentación de Hugging Face, pero no se pueden extrapolar esos resultados a esta adaptación sin datos propios.
 
 ## Requisitos de hardware
 
@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2-VL-7B-MobileAgent | 8.291.375.616 | no disponible | no disponible | HuggingFace |
-| Qwen2-VL-7B-Instruct | ~8.3B | no disponible | Apache 2.0 (según Qwen) | HuggingFace |
-| Qwen2.5-VL-7B-Instruct | ~8.3B | no disponible | Apache 2.0 (según Qwen) | HuggingFace |
+| Qwen2-VL-7B-MobileAgent | 8.291.375.616 | no disponible | no disponible | Hugging Face |
+| Qwen2-VL-7B-Instruct | ~8.3B | no disponible | Apache 2.0 (según Qwen) | Hugging Face |
+| Qwen2.5-VL-7B-Instruct | ~8.3B | no disponible | Apache 2.0 (según Qwen) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos. La principal diferencia es que MobileAgent es una adaptación específica, mientras que los otros dos son modelos instruct de propósito general. La licencia de MobileAgent no está especificada, lo que limita su uso comercial sin verificación.
 
@@ -73,6 +73,6 @@ No se dispone de datos de rendimiento comparativos. La principal diferencia es q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shubhendu17/Qwen2-VL-7B-MobileAgent
+- Hugging Face: https://huggingface.co/shubhendu17/Qwen2-VL-7B-MobileAgent
 - Documentación de Qwen2_VL (Transformers): https://huggingface.co/docs/transformers/v4.45.1/model_doc/qwen2_vl
 - Modelo base Qwen2-VL-7B-Instruct: https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct

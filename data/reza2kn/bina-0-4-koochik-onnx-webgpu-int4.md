@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bina 0.4 Koochik ONNX WebGPU INT4 es una derivacion cuantizada del modelo de reconocimiento optico de caracteres (OCR) Bina 0.4 Koochik, desarrollado por el usuario de HuggingFace Reza2kn. El modelo base es una adaptacion de la arquitectura NVIDIA Nemotron-3.5-Parse, un transformer multimodal de tipo image-to-text orientado a la transcripcion de documentos. Esta version concreta empaqueta el modelo en formato ONNX con cuantizacion GPTQ INT4 para ejecutarse directamente en el navegador mediante WebGPU y ONNX Runtime Web, sin necesidad de subir imagenes ni texto a un servidor.
+Bina 0.4 Koochik ONNX WebGPU INT4 es una derivacion cuantizada del modelo de reconocimiento optico de caracteres (OCR) Bina 0.4 Koochik, desarrollado por el usuario de Hugging Face Reza2kn. El modelo base es una adaptacion de la arquitectura NVIDIA Nemotron-3.5-Parse, un transformer multimodal de tipo image-to-text orientado a la transcripcion de documentos. Esta version concreta empaqueta el modelo en formato ONNX con cuantizacion GPTQ INT4 para ejecutarse directamente en el navegador mediante WebGPU y ONNX Runtime Web, sin necesidad de subir imagenes ni texto a un servidor.
 
 El paquete esta anclado al checkpoint 18.404 del modelo base y conserva sus 630.800.496 parametros unicos. La cuantizacion afecta a 170 matrices lineales, que se almacenan con codigos simetricos INT4 de grupo 32 y escalas FP32; las tablas de embedding y salida, posiciones, convoluciones, normas y sesgos mantienen mayor precision. El paquete completo de runtime ronda los 770 MB, lo que lo hace viable para descarga inicial en escritorio y ejecucion local en GPU de consumo.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos con otras alternativas de OCR 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Reza2kn/Bina-0.4-Koochik-ONNX-WebGPU-INT4
+- Modelo en Hugging Face: https://huggingface.co/Reza2kn/Bina-0.4-Koochik-ONNX-WebGPU-INT4
 - Modelo base: https://huggingface.co/Reza2kn/Bina-0.4-Koochik
 - Space publico: https://huggingface.co/spaces/Reza2kn/Bina-0.4-Koochik
 - Aplicacion independiente: https://reza2kn-bina-0-4-koochik.static.hf.space/index.html

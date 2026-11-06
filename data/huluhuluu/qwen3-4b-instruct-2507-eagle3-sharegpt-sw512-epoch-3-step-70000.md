@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este draft (EAGLE3) | 202,7 M | 512 (ventana deslizante) | EAGLE3 online | Apache-2.0 | HuggingFace |
+| Este draft (EAGLE3) | 202,7 M | 512 (ventana deslizante) | EAGLE3 online | Apache-2.0 | Hugging Face |
 | EAGLE-1 para Qwen2 (referencia) | ~200 M (tipico) | no aplica | EAGLE-1 | Apache-2.0 | GitHub oficial |
 | Draft de Medusa (ejemplo generico) | ~200-300 M | no aplica | Medusa | MIT/Apache | Varios repos |
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo (tasa de aceptación, acelerac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-3-step-70000
+- Repositorio Hugging Face: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-SW512-epoch-3-step-70000
 - Checkpoint hermana (epoch 3, step 75000): https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-3-step-75000
 - Checkpoint hermana (epoch 3, step 70000 sin sufijo SW512): https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-3-step-70000
 - Modelo base Qwen3-4B-Instruct-2507 en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507

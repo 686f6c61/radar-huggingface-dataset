@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RoboBrain2.5-4B es un modelo multimodal de visión-lenguaje orientado a IA encarnada (embodied AI), publicado en HuggingFace bajo el identificador `TULLUS/RoboBrain2.5-4B`. La model card del repositorio corresponde a RoboBrain 2.5, el modelo fundacional de robótica desarrollado por BAAI (Beijing Academy of Artificial Intelligence) dentro del proyecto FlagOpen, cuya variante de referencia citada en los ejemplos de código es `BAAI/RoboBrain2.5-8B-NV`. El repositorio aquí analizado contiene una variante de 4.826.771.968 parámetros (~4,83 mil millones) con pesos en safetensors, lo que sugiere una adaptación o reempaquetado de menor tamaño respecto al modelo de 8B del autor original.
+RoboBrain2.5-4B es un modelo multimodal de visión-lenguaje orientado a IA encarnada (embodied AI), publicado en Hugging Face bajo el identificador `TULLUS/RoboBrain2.5-4B`. La model card del repositorio corresponde a RoboBrain 2.5, el modelo fundacional de robótica desarrollado por BAAI (Beijing Academy of Artificial Intelligence) dentro del proyecto FlagOpen, cuya variante de referencia citada en los ejemplos de código es `BAAI/RoboBrain2.5-8B-NV`. El repositorio aquí analizado contiene una variante de 4.826.771.968 parámetros (~4,83 mil millones) con pesos en safetensors, lo que sugiere una adaptación o reempaquetado de menor tamaño respecto al modelo de 8B del autor original.
 
 El modelo resuelve tareas de percepción visual general, grounding visual, predicción de affordances, razonamiento espacial 3D y estimación temporal del progreso de tareas robóticas. Su propuesta diferencial frente a RoboBrain 2.0 es el salto de razonamiento espacial en 2D a 3D con información de profundidad, la comprensión de restricciones métricas absolutas (por ejemplo, "mantenerse entre 1 y 5 cm por encima") y la generación de trazas de manipulación completas en lugar de puntos aislados.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TULLUS/RoboBrain2.5-4B | ~4,83 B | no disponible | Visión-lenguaje para IA encarnada, reward modeling | apache-2.0 | HuggingFace (0 descargas, 0 likes en los metadatos consultados) |
-| BAAI/RoboBrain2.5-8B-NV | no disponible en la información proporcionada (la model card lo cita como referencia) | no disponible | Visión-lenguaje para IA encarnada | no disponible en la información proporcionada | HuggingFace, colección `BAAI/robobrain25` |
-| RoboBrain 2.0 | no disponible | no disponible | Visión-lenguaje para IA encarnada (generación anterior) | no disponible en la información proporcionada | HuggingFace, proyecto FlagOpen |
-| Qwen3-VL (familia base) | no disponible | no disponible | Visión-lenguaje generalista | no disponible en la información proporcionada | HuggingFace |
+| TULLUS/RoboBrain2.5-4B | ~4,83 B | no disponible | Visión-lenguaje para IA encarnada, reward modeling | apache-2.0 | Hugging Face (0 descargas, 0 likes en los metadatos consultados) |
+| BAAI/RoboBrain2.5-8B-NV | no disponible en la información proporcionada (la model card lo cita como referencia) | no disponible | Visión-lenguaje para IA encarnada | no disponible en la información proporcionada | Hugging Face, colección `BAAI/robobrain25` |
+| RoboBrain 2.0 | no disponible | no disponible | Visión-lenguaje para IA encarnada (generación anterior) | no disponible en la información proporcionada | Hugging Face, proyecto FlagOpen |
+| Qwen3-VL (familia base) | no disponible | no disponible | Visión-lenguaje generalista | no disponible en la información proporcionada | Hugging Face |
 
 No se dispone de datos suficientes para comparar rendimiento, contexto o licencia de estas alternativas con rigor. La comparación anterior se limita a lo que aparece citado en la model card y en los metadatos del repositorio.
 
@@ -93,10 +93,10 @@ No se dispone de datos suficientes para comparar rendimiento, contexto o licenci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TULLUS/RoboBrain2.5-4B
+- Repositorio en Hugging Face: https://huggingface.co/TULLUS/RoboBrain2.5-4B
 - Página del proyecto: https://superrobobrain.github.io/
 - Informe técnico (arXiv): https://arxiv.org/abs/2601.14352
 - Repositorio de código: https://github.com/FlagOpen/RoboBrain2.5
-- Colección en HuggingFace de BAAI: https://huggingface.co/collections/BAAI/robobrain25/
+- Colección en Hugging Face de BAAI: https://huggingface.co/collections/BAAI/robobrain25/
 - Referencia arXiv adicional citada en los metadatos: arXiv:2512.13660
 - Referencia arXiv adicional citada en los metadatos: arXiv:2512.23703

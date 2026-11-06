@@ -6,7 +6,7 @@ Tashkeel Nano 4.5M es un modelo de diacritización del árabe (tashkeel) desarro
 
 Su relevancia está en la relación entre tamaño y rendimiento: según los datos declarados por el autor, supera en las compuertas externas al "gold" desplegado de 30,1 M y al campeón interno de 17,2 M, pese a ser entre 3,8 y 6,8 veces más pequeño. En el conjunto held-out abdou_test, nunca usado en entrenamiento, obtiene un DER de 39,30 frente al 41,60 del modelo de 30,1 M.
 
-Se trata de un encoder Transformer bidireccional a nivel de carácter con una cabeza de 15 clases, no de un modelo generativo autorregresivo, aunque su pipeline_tag en HuggingFace figure como text-generation. La licencia es research-only, lo que restringe el uso comercial.
+Se trata de un encoder Transformer bidireccional a nivel de carácter con una cabeza de 15 clases, no de un modelo generativo autorregresivo, aunque su pipeline_tag en Hugging Face figure como text-generation. La licencia es research-only, lo que restringe el uso comercial.
 
 ## Especificaciones técnicas
 
@@ -88,7 +88,7 @@ WikiNews-2024 multirreferencia (en dominio, contaminado: la superficie está en 
 
 | Modelo | Parametros | Tarea | DER externo declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tashkeel-nano-4p5m | 4,49 M | Diacritización árabe | 40,62 (media 3 compuertas) | research-only | HuggingFace, safetensors fp32 |
+| tashkeel-nano-4p5m | 4,49 M | Diacritización árabe | 40,62 (media 3 compuertas) | research-only | Hugging Face, safetensors fp32 |
 | stage2b2500 (gold desplegado) | 30,1 M | Diacritización árabe | 42,63 (media 3 compuertas) | no disponible | interno, no publicado en la información disponible |
 | champion M1 16L×272 | 17,2 M | Diacritización árabe | 42,53 (media 3 compuertas) | no disponible | interno, no publicado en la información disponible |
 | mishkala (publicado) | 12,5 M | Diacritización árabe | 1,52 % en WikiNews-2024 multirreferencia (en dominio) | no disponible | publicado (referenciado por el autor) |
@@ -110,5 +110,5 @@ WikiNews-2024 multirreferencia (en dominio, contaminado: la superficie está en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ahmadsy/tashkeel-nano-4p5m
+- Hugging Face: https://huggingface.co/ahmadsy/tashkeel-nano-4p5m
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

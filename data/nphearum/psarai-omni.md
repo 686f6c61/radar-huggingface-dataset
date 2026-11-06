@@ -100,6 +100,6 @@ La comparativa cuantitativa solo es posible frente a Gemma base y PsarAI-Speech 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nphearum/PsarAI-Omni
+- Modelo en Hugging Face: https://huggingface.co/nphearum/PsarAI-Omni
 - Version GGUF: https://huggingface.co/nphearum/PsarAI-Omni-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it

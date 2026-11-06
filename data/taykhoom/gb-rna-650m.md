@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GB.RNA-650M es un modelo de lenguaje de ARN de 648.392.864 parámetros, desarrollado originalmente por GenBio AI (Zou et al., bioRxiv 2024) bajo el nombre AIDO.RNA y renombrado posteriormente a GB.RNA. La versión aquí descrita es un port independiente publicado por Taykhoom Dalal en HuggingFace que replica el checkpoint original `genbio-ai/GB.RNA-650M` sin requerir el paquete ModelGenerator, de forma que el modelo se carga con `transformers` estándar y `trust_remote_code=True`. Los pesos son idénticos a los del autor original; el port solo reimplementa el código de modelado y tokenización.
+GB.RNA-650M es un modelo de lenguaje de ARN de 648.392.864 parámetros, desarrollado originalmente por GenBio AI (Zou et al., bioRxiv 2024) bajo el nombre AIDO.RNA y renombrado posteriormente a GB.RNA. La versión aquí descrita es un port independiente publicado por Taykhoom Dalal en Hugging Face que replica el checkpoint original `genbio-ai/GB.RNA-650M` sin requerir el paquete ModelGenerator, de forma que el modelo se carga con `transformers` estándar y `trust_remote_code=True`. Los pesos son idénticos a los del autor original; el port solo reimplementa el código de modelado y tokenización.
 
 El modelo resuelve el problema de obtener representaciones vectoriales y predicciones contextuales sobre secuencias de ARN no codificante. Se trata de un encoder Transformer pre-LN entrenado con enmascarado de tokens (MLM) sobre 42 millones de secuencias de ncRNA, con un vocabulario de 16 símbolos y una longitud máxima de secuencia de 1024 tokens en entrenamiento. No es un modelo generativo instruccional ni conversacional: su uso previsto es la extracción de embeddings y el ajuste fino con cabezas específicas de tarea.
 
@@ -38,7 +38,7 @@ La innovación técnica principal del port no está en la arquitectura, sino en 
 - Ajuste fino supervisado para tareas a nivel de secuencia, usando el embedding CLS como entrada a una cabeza específica.
 - Ajuste fino para tareas a nivel de token (anotación por posición).
 - Soporte de atención optimizada: `attn_implementation="sdpa"` y `attn_implementation="flash_attention_2"`.
-- Compatibilidad con la API estándar de HuggingFace (`AutoTokenizer`, `AutoModel`, `AutoModelForMaskedLM`) con `trust_remote_code=True`.
+- Compatibilidad con la API estándar de Hugging Face (`AutoTokenizer`, `AutoModel`, `AutoModelForMaskedLM`) con `trust_remote_code=True`.
 - No soporta tool calling, function calling, razonamiento multi-paso, agentes, visión, audio ni generación autoregresiva de texto: es un encoder enmascarado sin cabeza generativa.
 - Capacidades multilingües: no aplica; el dominio es secuencia biológica.
 
@@ -49,7 +49,7 @@ La innovación técnica principal del port no está en la arquitectura, sino en 
 - Predicción de estructura secundaria: ajuste fino a nivel de token para predecir el estado estructural por posición, usando los estados ocultos de capas intermedias como características densas.
 - Priorización de variantes y mutaciones: puntuar con la cabeza MLM la probabilidad del nucleótido original frente al mutado en cada posición, y usar el delta de log-verosimilitud como señal de patogenicidad para cribar listas de variantes antes de validación experimental.
 - Detección de ncRNA en metagenómica: clasificar fragmentos genómicos como codificantes o no codificantes, o como pertenecientes a una familia concreta, empleando el modelo como extractor de características dentro de un pipeline de anotación a escala.
-- Preentrenamiento y destilación de modelos especializados: usar los pesos como inicialización en lugar de entrenar desde cero, con la ventaja de que el port se carga sin dependencias exóticas y encaja en flujos estándar de PyTorch Lightning o HuggingFace Trainer.
+- Preentrenamiento y destilación de modelos especializados: usar los pesos como inicialización en lugar de entrenar desde cero, con la ventaja de que el port se carga sin dependencias exóticas y encaja en flujos estándar de PyTorch Lightning o Hugging Face Trainer.
 - Cribado de candidatos en diseño de ARN terapéutico: calcular embeddings de una librería de candidatos y filtrar por similitud con secuencias de referencia conocidas antes de las fases de síntesis y ensayo.
 - Análisis de regiones codificantes: aunque el modelo base se entrenó con ncRNA, existe la variante específica GB.RNA-650M-CDS entrenada también con secuencias codificantes, que es la opción recomendada cuando el material de partida incluye CDS.
 
@@ -70,11 +70,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GB.RNA-650M | 648M | 1024 | 42M secuencias ncRNA | GenBio AI Community License | HuggingFace (este port y upstream) |
-| GB.RNA-1.6B | 1,6B | 1024 (misma familia) | 42M secuencias ncRNA | GenBio AI Community License | HuggingFace |
-| GB.RNA-650M-CDS | 648M | 1024 (misma familia) | 42M ncRNA + CDS | GenBio AI Community License | HuggingFace |
-| GB.RNA-300M-MARS | 300M | 1024 (misma familia) | Corpus MARS ncRNA | GenBio AI Community License | HuggingFace |
-| GB.RNA-25M-MARS | 25M | 1024 (misma familia) | Corpus MARS ncRNA | GenBio AI Community License | HuggingFace |
+| GB.RNA-650M | 648M | 1024 | 42M secuencias ncRNA | GenBio AI Community License | Hugging Face (este port y upstream) |
+| GB.RNA-1.6B | 1,6B | 1024 (misma familia) | 42M secuencias ncRNA | GenBio AI Community License | Hugging Face |
+| GB.RNA-650M-CDS | 648M | 1024 (misma familia) | 42M ncRNA + CDS | GenBio AI Community License | Hugging Face |
+| GB.RNA-300M-MARS | 300M | 1024 (misma familia) | Corpus MARS ncRNA | GenBio AI Community License | Hugging Face |
+| GB.RNA-25M-MARS | 25M | 1024 (misma familia) | Corpus MARS ncRNA | GenBio AI Community License | Hugging Face |
 
 La información disponible no incluye datos verificables de otros modelos de ARN de terceros (DNABERT-2, Nucleotide Transformer, RNA-FM u otros), por lo que no se ofrece comparación numérica con ellos. Dentro de la familia, la elección depende del presupuesto de cómputo y del tipo de secuencia: 650M es el punto de partida generalista recomendado por el autor, 1.6B es la variante de mayor capacidad, y las variantes MARS y CDS cubren dominios de datos específicos.
 
@@ -93,7 +93,7 @@ La información disponible no incluye datos verificables de otros modelos de ARN
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taykhoom/GB.RNA-650M
+- Modelo en Hugging Face: https://huggingface.co/Taykhoom/GB.RNA-650M
 - Colección completa GB.RNA: https://huggingface.co/collections/Taykhoom/gbrna-6a22fe2e4039c523bcc48de9
 - Checkpoint original (upstream): https://huggingface.co/genbio-ai/GB.RNA-650M
 - Repositorio ModelGenerator: https://github.com/genbio-ai/ModelGenerator
@@ -102,4 +102,4 @@ La información disponible no incluye datos verificables de otros modelos de ARN
 - Variante de mayor tamaño: https://huggingface.co/Taykhoom/GB.RNA-1.6B
 - Variante MARS de 300M: https://huggingface.co/Taykhoom/GB.RNA-300M-MARS
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`megabisharp/bert-base-uncased` es una reproducción alojada en HuggingFace del modelo BERT base (uncased), publicado originalmente por Google AI Language en 2018 y descrito en el artículo "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding" (arXiv:1810.04805). Se trata de un encoder transformer bidireccional de 110.106.428 parámetros, preentrenado sobre texto en inglés con los objetivos de masked language modeling (MLM) y next sentence prediction (NSP). El repositorio aquí descrito no lo mantiene el equipo original de Google, sino el usuario `megabisharp`, que lo replica con 0 descargas y 0 likes en el momento de la consulta.
+`megabisharp/bert-base-uncased` es una reproducción alojada en Hugging Face del modelo BERT base (uncased), publicado originalmente por Google AI Language en 2018 y descrito en el artículo "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding" (arXiv:1810.04805). Se trata de un encoder transformer bidireccional de 110.106.428 parámetros, preentrenado sobre texto en inglés con los objetivos de masked language modeling (MLM) y next sentence prediction (NSP). El repositorio aquí descrito no lo mantiene el equipo original de Google, sino el usuario `megabisharp`, que lo replica con 0 descargas y 0 likes en el momento de la consulta.
 
 El modelo resuelve el problema de obtener representaciones contextuales del inglés reutilizables para tareas downstream: clasificación de secuencias, etiquetado de tokens, question answering extractivo o inferencia de relaciones. No es un modelo generativo: no produce texto libre de forma autorregresiva y su uso previsto es el ajuste fino supervisado sobre conjuntos etiquetados, no el diálogo ni la generación de código.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 - GPU recomendadas: cualquier GPU con 4 GB o más es suficiente; una RTX 3060, RTX 4090, T4, L4 o A10 bastan con holgura. Las A100 y H100 solo tienen sentido para servir lotes muy grandes o muchos modelos en paralelo.
 - Cabe en GPU de consumo: sí, en practicamente cualquier GPU moderna e incluso en GPUs integradas con suficiente memoria compartida.
 - Inferencia en CPU: totalmente viable; es uno de los principales atractivos del modelo para despliegues de bajo coste.
-- Opciones de despliegue: HuggingFace Transformers (PyTorch/TensorFlow/JAX), ONNX Runtime, Core ML, TGI (text-embeddings-inference) para embeddings, vLLM (soporte de modelos encoder para tareas de embedding), Triton Inference Server, asi como bindings en Rust incluidos en el repositorio. No se incluyen pesos GGUF, por lo que llama.cpp u Ollama requeririan una conversion previa.
+- Opciones de despliegue: Hugging Face Transformers (PyTorch/TensorFlow/JAX), ONNX Runtime, Core ML, TGI (text-embeddings-inference) para embeddings, vLLM (soporte de modelos encoder para tareas de embedding), Triton Inference Server, asi como bindings en Rust incluidos en el repositorio. No se incluyen pesos GGUF, por lo que llama.cpp u Ollama requeririan una conversion previa.
 - Latencia y throughput: no disponibles en la informacion proporcionada; dependen fuertemente del hardware, del backend y del tamano de lote.
 
 ## Comparativa con modelos similares
@@ -100,12 +100,12 @@ No se dispone de cifras comparativas de benchmarks dentro de la informacion prop
 - Riesgo de alucinacion: no aplica de la misma forma que en modelos generativos, pero si existe riesgo de predicciones confiadas y erroneas en MLM y de respuestas espurias en QA extractivo cuando el contexto no contiene la respuesta.
 - Licencia Apache 2.0: permite uso comercial y modificacion, siempre que se conserve el aviso de licencia y se documenten los cambios; no incluye garantias.
 - Repositorio de terceros: este artefacto lo publica el usuario `megabisharp`, no el equipo de Google; no hay verificacion publicada de que los pesos coincidan byte a byte con los canonicos. Para produccion conviene usar `google-bert/bert-base-uncased` o `bert-base-uncased` y validar la equivalencia.
-- Ausencia de model card propia: el repositorio reutiliza la model card escrita por HuggingFace para el modelo original, sin anadir informacion de trazabilidad, hashes ni proceso de conversion.
+- Ausencia de model card propia: el repositorio reutiliza la model card escrita por Hugging Face para el modelo original, sin anadir informacion de trazabilidad, hashes ni proceso de conversion.
 - Sin garantia de mantenimiento: 0 descargas y 0 likes, creado y actualizado en la misma fecha, sin historial de versiones que respalde su uso a largo plazo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/megabisharp/bert-base-uncased
+- Repositorio en Hugging Face: https://huggingface.co/megabisharp/bert-base-uncased
 - Repositorio canonico de referencia: https://huggingface.co/bert-base-uncased
 - Articulo original (BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding): https://arxiv.org/abs/1810.04805
 - Repositorio oficial de Google Research: https://github.com/google-research/bert

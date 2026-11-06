@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`seomh/Qwen3-4B-OpenThoughts3-Math-SFT-step500` es un checkpoint experimental de ajuste fino supervisado (SFT) de `Qwen/Qwen3-4B` sobre la porcion de matematicas del dataset `open-thoughts/OpenThoughts3-1.2M`. Lo publica el usuario seomh en HuggingFace y corresponde exactamente al paso global 500 de un entrenamiento que se detuvo en ese punto, por lo que no es un modelo final sino una instantanea intermedia de un proceso de investigacion.
+`seomh/Qwen3-4B-OpenThoughts3-Math-SFT-step500` es un checkpoint experimental de ajuste fino supervisado (SFT) de `Qwen/Qwen3-4B` sobre la porcion de matematicas del dataset `open-thoughts/OpenThoughts3-1.2M`. Lo publica el usuario seomh en Hugging Face y corresponde exactamente al paso global 500 de un entrenamiento que se detuvo en ese punto, por lo que no es un modelo final sino una instantanea intermedia de un proceso de investigacion.
 
 El interes del modelo reside en su formato de entrenamiento: se uso el objetivo "open", en el que el bloque de razonamiento nativo de Qwen3 se deja vacio y las trazas de razonamiento de OpenThoughts3, junto con la respuesta final en formato boxed, se entrenan en el canal de respuesta visible. Es decir, el modelo aprende a producir cadenas de razonamiento matematico sin depender del modo thinking del tokenizer, un planteamiento util para estudiar SFT y destilacion on-policy.
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Benchmark | Disponibilidad |
 |---|---|---|---|---|---|---|
-| seomh/Qwen3-4B-OpenThoughts3-Math-SFT-step500 | 4.022.468.096 | 32.768 tokens (secuencia de entrenamiento) | Apache 2.0 | Ingles | No publicado | HuggingFace, pesos safetensors en bf16 |
-| Qwen/Qwen3-4B (modelo base) | 4.022.468.096 (base del ajuste) | No disponible en la informacion proporcionada | Apache 2.0 | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| seomh/Qwen3-4B-OpenThoughts3-Math-SFT-step500 | 4.022.468.096 | 32.768 tokens (secuencia de entrenamiento) | Apache 2.0 | Ingles | No publicado | Hugging Face, pesos safetensors en bf16 |
+| Qwen/Qwen3-4B (modelo base) | 4.022.468.096 (base del ajuste) | No disponible en la informacion proporcionada | Apache 2.0 | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 | Otros checkpoints SFT sobre OpenThoughts3 | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento de alternativas comparables en la informacion proporcionada, por lo que la comparacion se limita a parametros, licencia y formato de distribucion. Cualquier afirmacion sobre calidad relativa frente al modelo base o frente a otros ajustes de matematicas requeriria ejecutar evaluaciones propias.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento de alternativas comparables en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seomh/Qwen3-4B-OpenThoughts3-Math-SFT-step500
+- Modelo en Hugging Face: https://huggingface.co/seomh/Qwen3-4B-OpenThoughts3-Math-SFT-step500
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/open-thoughts/OpenThoughts3-1.2M
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo; las entradas devueltas corresponden a tematicas ajenas (seguridad alimentaria y seguridad offshore) y se descartan.

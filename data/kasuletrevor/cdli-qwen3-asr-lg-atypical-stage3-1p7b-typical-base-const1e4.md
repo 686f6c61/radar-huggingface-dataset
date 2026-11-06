@@ -84,6 +84,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/KasuleTrevor/cdli-qwen3-asr-lg-atypical-stage3-1p7b-typical-base-const1e4)
-- [HuggingFace - dataset](https://huggingface.co/datasets/cdli/ugandan_luganda_nonstandard_speech_v1.0)
-- [HuggingFace - modelo base](https://huggingface.co/KasuleTrevor/cdli-qwen3-asr-lg-typical-1p7b-base-finetune)
+- [Hugging Face - modelo](https://huggingface.co/KasuleTrevor/cdli-qwen3-asr-lg-atypical-stage3-1p7b-typical-base-const1e4)
+- [Hugging Face - dataset](https://huggingface.co/datasets/cdli/ugandan_luganda_nonstandard_speech_v1.0)
+- [Hugging Face - modelo base](https://huggingface.co/KasuleTrevor/cdli-qwen3-asr-lg-typical-1p7b-base-finetune)

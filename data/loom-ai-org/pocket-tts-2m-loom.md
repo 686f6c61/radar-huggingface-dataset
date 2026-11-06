@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes; la unica 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/pocket-tts-2m-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/pocket-tts-2m-loom
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Exportacion del modelo completo: https://huggingface.co/loom-ai-org/pocket-tts-loom
 - Motor de inferencia loom.cpp: https://github.com/loom-ai-org/loom.cpp

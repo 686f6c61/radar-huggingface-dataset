@@ -72,7 +72,7 @@ La comparativa se limita a las variantes de Kroma, ya que no se dispone de infor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Stick9190/kroma-v0.2-base-lora-rank-384-fro-0985-txtfusion-stripped
+- Repositorio Hugging Face: https://huggingface.co/Stick9190/kroma-v0.2-base-lora-rank-384-fro-0985-txtfusion-stripped
 - Modelo original Kroma (Lodestones): https://huggingface.co/lodestones/Kroma
 - LoRA original de SilverOxides: https://huggingface.co/silveroxides/Kroma-LoRA
 - Página de Civitai con el archivo fp32: https://civitai.com/models/2823254/kroma-krea-2-lora

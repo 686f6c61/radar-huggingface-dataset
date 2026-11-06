@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Medir-rag-milestone1-ribt es un repositorio publicado en HuggingFace por el usuario Carlovsc. Según la información disponible, se trata de un proyecto relacionado con RAG (Retrieval-Augmented Generation) en una fase temprana de desarrollo, como sugiere el nombre "milestone1" incluido en el identificador del repositorio.
+Medir-rag-milestone1-ribt es un repositorio publicado en Hugging Face por el usuario Carlovsc. Según la información disponible, se trata de un proyecto relacionado con RAG (Retrieval-Augmented Generation) en una fase temprana de desarrollo, como sugiere el nombre "milestone1" incluido en el identificador del repositorio.
 
-La información pública sobre este repositorio es extremadamente limitada: no dispone de model card descriptiva, no tiene descargas registradas, no tiene valoraciones de la comunidad y no se ha asignado un pipeline específico en HuggingFace. El único metadato relevante es la licencia MIT, que permite uso, modificación y redistribución con restricciones mínimas.
+La información pública sobre este repositorio es extremadamente limitada: no dispone de model card descriptiva, no tiene descargas registradas, no tiene valoraciones de la comunidad y no se ha asignado un pipeline específico en Hugging Face. El único metadato relevante es la licencia MIT, que permite uso, modificación y redistribución con restricciones mínimas.
 
 Dado que no existe documentación técnica sobre arquitectura, parámetros, entrenamiento o capacidades, esta ficha se limita a describir lo que puede afirmarse con rigor a partir de los metadatos disponibles. No se han publicado resultados de benchmarks ni detalles de implementación, por lo que no es posible evaluar el rendimiento ni las capacidades del modelo. Se recomienda consultar directamente el repositorio y contactar al autor para obtener información actualizada antes de considerar su uso en cualquier proyecto.
 
@@ -79,6 +79,6 @@ no disponible
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Carlovsc/medir-rag-milestone1-ribt
+- Repositorio en Hugging Face: https://huggingface.co/Carlovsc/medir-rag-milestone1-ribt
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la información disponible.

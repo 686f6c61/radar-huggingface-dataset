@@ -4,7 +4,7 @@
 
 El modelo balajiduraisamy/Llama-3.2-3B-Instruct-GGUF es una conversion cuantizada en formato GGUF del modelo Llama-3.2-3B-Instruct de Meta AI, creada por el usuario balajiduraisamy. Esta pensado para ejecucion local en CPUs y GPUs de gama media, aprovechando el formato GGUF para reducir el consumo de memoria y permitir la inferencia con herramientas como llama.cpp u Ollama. Con 3.212.749.888 parametros (aproximadamente 3,21B), es un modelo denso optimizado para seguir instrucciones y conversacion en ingles. El repositorio pesa 60,1 GB, lo que sugiere que incluye multiples archivos GGUF con diferentes niveles de cuantizacion. Es especialmente relevante para escenarios de despliegue en entornos con recursos limitados, donde se requiere un modelo de lenguaje pequeno sin perder las capacidades de instruccion del Llama original.
 
-El acceso al repositorio es restringido (gated), por lo que es necesario aceptar las condiciones de Meta AI en HuggingFace antes de descargar los pesos. Al ser una conversion no verificada (0 descargas, 0 likes), se recomienda validar su comportamiento antes de usarla en produccion.
+El acceso al repositorio es restringido (gated), por lo que es necesario aceptar las condiciones de Meta AI en Hugging Face antes de descargar los pesos. Al ser una conversion no verificada (0 descargas, 0 likes), se recomienda validar su comportamiento antes de usarla en produccion.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No se dispone de datos comparativos suficientes en la informacion proporcionada.
 ## Limitaciones y advertencias
 
 - El modelo solo esta etiquetado para ingles (en), lo que limita su uso en otros idiomas.
-- El acceso al repositorio es restringido (gated), por lo que es necesario aceptar las condiciones de Meta AI en HuggingFace antes de descargar los pesos.
+- El acceso al repositorio es restringido (gated), por lo que es necesario aceptar las condiciones de Meta AI en Hugging Face antes de descargar los pesos.
 - La licencia Llama 3.2 impone restricciones de uso comercial: se deben aceptar los terminos de la licencia y pueden existir obligaciones de atribucion o limites de uso, segun el acuerdo.
 - El repositorio tiene 0 descargas y 0 likes, lo que sugiere que es una conversion personal o no verificada; se recomienda validar el comportamiento del modelo antes de usarlo en produccion.
 - Como todos los modelos de lenguaje, existe riesgo de alucinacion y generacion de contenido inexacto, especialmente sin un sistema de verificacion.

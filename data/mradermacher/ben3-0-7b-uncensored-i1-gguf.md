@@ -71,7 +71,7 @@ No se dispone de comparaciones de rendimiento cuantitativas entre estos modelos,
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/mradermacher/Ben3.0-7B-Uncensored-i1-GGUF
+- Pagina del modelo en Hugging Face: https://huggingface.co/mradermacher/Ben3.0-7B-Uncensored-i1-GGUF
 - Modelo base (safetensors): https://huggingface.co/BananaAdmin/Ben3.0-7B-Uncensored
 - Perfil del cuantizador mradermacher: https://huggingface.co/mradermacher
 - Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

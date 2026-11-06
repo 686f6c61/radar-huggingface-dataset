@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Nikhitha123/a2c-PandaReachDense-v3` no es un modelo de lenguaje, sino un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaReachDense-v3` del simulador robótico Panda-Gym. Lo publica el usuario Nikhitha123 en HuggingFace y lo genera con la librería Stable-Baselines3, el framework de referencia para implementar algoritmos de RL en PyTorch. El objetivo del entorno es que un brazo robótico Franka Panda alcance una posición objetivo a partir de observaciones de baja dimensionalidad, con una función de recompensa densa basada en la distancia al objetivo.
+El modelo `Nikhitha123/a2c-PandaReachDense-v3` no es un modelo de lenguaje, sino un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaReachDense-v3` del simulador robótico Panda-Gym. Lo publica el usuario Nikhitha123 en Hugging Face y lo genera con la librería Stable-Baselines3, el framework de referencia para implementar algoritmos de RL en PyTorch. El objetivo del entorno es que un brazo robótico Franka Panda alcance una posición objetivo a partir de observaciones de baja dimensionalidad, con una función de recompensa densa basada en la distancia al objetivo.
 
 Su relevancia es acotada pero clara dentro del ecosistema de investigación en robótica y RL: sirve como referencia reproducible de un algoritmo on-policy clásico en un benchmark de manipulación estándar, y como punto de partida para comparativas con algoritmos más modernos (PPO, SAC, TQC) sobre el mismo entorno. El repositorio no incluye arquitectura detallada ni número de parámetros, y los resultados declarados (recompensa media de -1,37 en 10 episodios, sin verificar) indican una política que aún no ha convergido hacia la solución del problema.
 
@@ -73,7 +73,7 @@ No hay datos de rendimiento publicados en la informacion proporcionada para otro
 
 | Modelo / algoritmo | Entorno | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| A2C (este modelo) | PandaReachDense-v3 | no disponible | no aplica | mean_reward -1,37 +/- 0,15 (10 episodios, no verificado) | no disponible | HuggingFace |
+| A2C (este modelo) | PandaReachDense-v3 | no disponible | no aplica | mean_reward -1,37 +/- 0,15 (10 episodios, no verificado) | no disponible | Hugging Face |
 | PPO (Stable-Baselines3) | PandaReachDense-v3 | no disponible | no aplica | no disponible | no disponible | implementacion en la libreria, sin checkpoint publicado en esta informacion |
 | SAC / TQC (Stable-Baselines3) | PandaReachDense-v3 | no disponible | no aplica | no disponible | no disponible | implementacion en la libreria, sin checkpoint publicado en esta informacion |
 
@@ -94,7 +94,7 @@ A nivel metodologico, A2C es un algoritmo on-policy con una eficiencia de muestr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nikhitha123/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/Nikhitha123/a2c-PandaReachDense-v3
 - Stable-Baselines3 (repositorio oficial): https://github.com/DLR-RM/stable-baselines3
 - Panda-Gym (repositorio oficial): https://github.com/qgallouedec/panda-gym
 - Los resultados de busqueda web proporcionados no contienen enlaces relevantes para este modelo: todas las referencias encontradas tratan sobre YouTube Music y conversion de audio, sin relacion alguna con aprendizaje por refuerzo, robótica ni Stable-Baselines3.

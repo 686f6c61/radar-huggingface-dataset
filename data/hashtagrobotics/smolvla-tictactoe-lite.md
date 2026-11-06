@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HashtagRobotics/smolvla-tictactoe-lite | 450.046.176 | Estado (6,) + 4 cámaras (256x256 y 480x640) | Tres en raya con SO-101 | Apache 2.0 | HuggingFace (55 descargas) |
-| lerobot/smolvla_base | no disponible en la informacion proporcionada | Multimodal VLA | Policy VLA general base | no disponible en la informacion proporcionada | HuggingFace |
-| Otras políticas LeRobot para SO-101 | no disponible | no disponible | Manipulación con SO-101 | no disponible | HuggingFace |
+| HashtagRobotics/smolvla-tictactoe-lite | 450.046.176 | Estado (6,) + 4 cámaras (256x256 y 480x640) | Tres en raya con SO-101 | Apache 2.0 | Hugging Face (55 descargas) |
+| lerobot/smolvla_base | no disponible en la informacion proporcionada | Multimodal VLA | Policy VLA general base | no disponible en la informacion proporcionada | Hugging Face |
+| Otras políticas LeRobot para SO-101 | no disponible | no disponible | Manipulación con SO-101 | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HashtagRobotics/smolvla-tictactoe-lite
+- Modelo en Hugging Face: https://huggingface.co/HashtagRobotics/smolvla-tictactoe-lite
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/HashtagRobotics/tic-tac-toe-so101-block-a-clean-v1
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844

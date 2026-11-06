@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativos. La comparativa se limita a a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tuannt1601/lab22-sft-mini-vn
+- Hugging Face: https://huggingface.co/Tuannt1601/lab22-sft-mini-vn
 - Repositorio similar (wanhin/lab22-sft-mini): https://huggingface.co/wanhin/lab22-sft-mini
 - Repositorio similar (StevenMup2004/lab22-dpo-vn): https://huggingface.co/StevenMup/lab22-dpo-vn
 - GitHub del laboratorio (ejemplo): https://github.com/lamphamaudio/Day22-2A202600491

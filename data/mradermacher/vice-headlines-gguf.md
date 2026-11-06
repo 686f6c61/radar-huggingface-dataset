@@ -25,7 +25,7 @@ No se dispone de informacion detallada sobre la arquitectura interna, los datos 
 
 El modelo base es un transformer de 559 millones de parametros, un tamano tipico de la familia de modelos pequenos tipo GPT-2 medium o similares, aunque no se especifica la arquitectura exacta ni la familia a la que pertenece. La unica informacion disponible sobre el entrenamiento es su especializacion: generacion de titulares con el estilo de la revista Vice, lo que sugiere un ajuste fino sobre un corpus de titulares y textos editoriales de dicha publicacion. No consta el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o instruccion tuning.
 
-La innovacion tecnica de esta publicacion no reside en el modelo en si, sino en el trabajo de cuantizacion de mradermacher: se ofrecen cuantizaciones estaticas (etiquetadas como "static quants" en la model card) generadas con el conversor de HuggingFace a GGUF, y se remite a un repositorio separado (vice-headlines-i1-GGUF) para las cuantizaciones con imatrix, que suelen ofrecer mejor calidad por bit. No se documentan innovaciones arquitectonicas como atencion lineal, decodificacion especulativa ni mezcla de expertos.
+La innovacion tecnica de esta publicacion no reside en el modelo en si, sino en el trabajo de cuantizacion de mradermacher: se ofrecen cuantizaciones estaticas (etiquetadas como "static quants" en la model card) generadas con el conversor de Hugging Face a GGUF, y se remite a un repositorio separado (vice-headlines-i1-GGUF) para las cuantizaciones con imatrix, que suelen ofrecer mejor calidad por bit. No se documentan innovaciones arquitectonicas como atencion lineal, decodificacion especulativa ni mezcla de expertos.
 
 ## Capacidades
 
@@ -83,7 +83,7 @@ La comparativa con alternativas concretas no esta disponible en la informacion p
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/vice-headlines-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/vice-headlines-GGUF
 - Modelo base original: https://huggingface.co/marcderbauer/vice-headlines
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/vice-headlines-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#vice-headlines-GGUF

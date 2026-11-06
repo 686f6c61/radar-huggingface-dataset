@@ -70,9 +70,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Tipo | Parametros | Etiquetas | Rendimiento (v9, 96 paquetes) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| damianborek/polaris-2 | Adaptador LoRA clasificador sobre Bespoke-Nimble-9B | ~9B en el base; adaptador de 0,2 GB | 3 (`decision`) + 5 (`manager`) | 72 % (69/96) | Apache 2.0 (adaptador) | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| damianborek/polaris-1 | Adaptador predecesor para el mismo tipo de tarea | No disponible | No disponible (preguntas distintas a las de Polaris 2) | 59 % (57/96) | No disponible | HuggingFace |
-| damianborek/vega-1 | Modelo generativo anterior del mismo autor | No disponible | No aplica (generativo) | No disponible | No disponible | HuggingFace |
+| damianborek/polaris-2 | Adaptador LoRA clasificador sobre Bespoke-Nimble-9B | ~9B en el base; adaptador de 0,2 GB | 3 (`decision`) + 5 (`manager`) | 72 % (69/96) | Apache 2.0 (adaptador) | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| damianborek/polaris-1 | Adaptador predecesor para el mismo tipo de tarea | No disponible | No disponible (preguntas distintas a las de Polaris 2) | 59 % (57/96) | No disponible | Hugging Face |
+| damianborek/vega-1 | Modelo generativo anterior del mismo autor | No disponible | No aplica (generativo) | No disponible | No disponible | Hugging Face |
 
 No se dispone de comparativas con alternativas externas de la misma categoria en la informacion proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de comparativas con alternativas externas de la misma categoria en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/damianborek/polaris-2
+- Modelo en Hugging Face: https://huggingface.co/damianborek/polaris-2
 - Modelo predecesor Polaris 1: https://huggingface.co/damianborek/polaris-1
 - Modelo generativo anterior Vega 1: https://huggingface.co/damianborek/vega-1
 - Modelo base: https://huggingface.co/bespokelabs/Bespoke-Nimble-9B (revision `594dfdcfb6f94e3d0c0db7535180d3c71689169a`)

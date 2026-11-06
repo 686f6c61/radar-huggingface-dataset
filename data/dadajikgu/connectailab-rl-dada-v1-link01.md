@@ -69,10 +69,10 @@ Estos datos provienen de la model card del autor y se obtuvieron con una aproxim
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | 0,8B base + LoRA | no disponible | Decisión de navegación por destilación de PPO | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | LLM generalista | Apache 2.0 | HuggingFace |
+| LINK-01 (este modelo) | 0,8B base + LoRA | no disponible | Decisión de navegación por destilación de PPO | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | LLM generalista | Apache 2.0 | Hugging Face |
 | Política PPO del entorno web (profesor) | no aplica (red pequeña) | no aplica | RL puro sobre observaciones numéricas | no disponible | Repositorio CONNECT TYCOON |
-| Modelos de decisión tipo RT-2 / OpenVLA | miles de millones | no disponible | Vision-language-action | no disponible | HuggingFace |
+| Modelos de decisión tipo RT-2 / OpenVLA | miles de millones | no disponible | Vision-language-action | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks comparables entre estos modelos dentro de la información proporcionada; la comparación es cualitativa y de dominio.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks comparables entre estos modelos dentro de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dadajikgu/connectailab-rl-dada-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/dadajikgu/connectailab-rl-dada-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

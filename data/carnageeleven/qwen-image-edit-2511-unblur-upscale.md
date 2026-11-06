@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Modelo base | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| carnageeleven/Qwen-Image-Edit-2511-Unblur-Upscale | Adaptador LoRA image-to-image | Qwen/Qwen-Image-Edit-2511 | Desenfoque + reescalado | apache-2.0 | Repositorio en HuggingFace; 0 descargas y 0 likes en la fecha de consulta |
+| carnageeleven/Qwen-Image-Edit-2511-Unblur-Upscale | Adaptador LoRA image-to-image | Qwen/Qwen-Image-Edit-2511 | Desenfoque + reescalado | apache-2.0 | Repositorio en Hugging Face; 0 descargas y 0 likes en la fecha de consulta |
 | prithivMLmods/Qwen-Image-Edit-2511-Unblur-Upscale | Adaptador LoRA image-to-image | Qwen/Qwen-Image-Edit-2511 | Desenfoque + reescalado | apache-2.0 (declarada en la model card, no verificada de forma independiente) | Referenciado en la model card y en el enlace de descarga; parece el origen del adaptador |
-| Qwen/Qwen-Image-Edit-2511 (base, sin adaptador) | Modelo de edición de imagen | No aplica | Edición general de imagen | No disponible en la información proporcionada | Modelo base en HuggingFace; el autor indica que da mejor calidad global pero no preserva los patrones faciales que sí recupera el adaptador |
+| Qwen/Qwen-Image-Edit-2511 (base, sin adaptador) | Modelo de edición de imagen | No aplica | Edición general de imagen | No disponible en la información proporcionada | Modelo base en Hugging Face; el autor indica que da mejor calidad global pero no preserva los patrones faciales que sí recupera el adaptador |
 | Otros adaptadores de desenfoque o reescalado para Qwen-Image-Edit | LoRA | Qwen/Qwen-Image-Edit-2511 o versiones previas | Unblur / upscale | No disponible | No se han identificado alternativas comparables en la información disponible |
 
 No se dispone de datos de rendimiento cuantitativos que permitan una comparación objetiva entre estas opciones.
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento cuantitativos que permitan una comparació
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/carnageeleven/Qwen-Image-Edit-2511-Unblur-Upscale
+- Repositorio del modelo en Hugging Face: https://huggingface.co/carnageeleven/Qwen-Image-Edit-2511-Unblur-Upscale
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Repositorio referenciado en la model card (origen aparente del adaptador): https://huggingface.co/prithivMLmods/Qwen-Image-Edit-2511-Unblur-Upscale
 - Enlace de descarga de ficheros indicado en la model card: https://huggingface.co/prithivMLmods/Qwen-Image-Edit-2511-Unblur-Upscale/tree/main

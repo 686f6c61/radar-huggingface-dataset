@@ -78,7 +78,7 @@ La informacion proporcionada no incluye datos de rendimiento de este checkpoint 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (Franka cartesiano, paso 6000) | 3,62 mil millones | no disponible | no disponible | Publico en HuggingFace, 0 descargas |
+| Este checkpoint (Franka cartesiano, paso 6000) | 3,62 mil millones | no disponible | no disponible | Publico en Hugging Face, 0 descargas |
 | Modelos base de la familia openpi (etiqueta `pi05`) | no disponible | no disponible | no disponible | Repositorios publicos del ecosistema openpi |
 | OpenVLA y variantes de politica VLA de proposito general | no disponible | no disponible | no disponible | Publicos, con soporte de comunidad mas amplio |
 | Octo y politicas de manipulacion de menor tamano | no disponible | no disponible | no disponible | Publicos |
@@ -102,8 +102,8 @@ Nota metodologica: este repositorio es un ajuste fino especifico de tarea con 10
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task14_cartesian_20260913T212156Z-step-6000
-- Archivo `log.txt` del repositorio (layout de salida, normalizacion, entradas de camara y estado, convenciones del controlador): incluido en el propio repositorio de HuggingFace.
+- Modelo en Hugging Face: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task14_cartesian_20260913T212156Z-step-6000
+- Archivo `log.txt` del repositorio (layout de salida, normalizacion, entradas de camara y estado, convenciones del controlador): incluido en el propio repositorio de Hugging Face.
 - Estadisticas de normalizacion: `assets/franka/norm_stats.json`, incluidas en el repositorio.
 - Repositorio de la libreria `openpi` (referenciado por la etiqueta del modelo; no localizado en la busqueda web realizada): no disponible.
 - Resultados de la busqueda web: los enlaces devueltos corresponden a dominios de reservas de viajes y no guardan ninguna relacion con el modelo. No se han localizado papers, blogs, demos ni discusiones tecnicas relevantes.

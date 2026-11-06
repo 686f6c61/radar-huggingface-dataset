@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint archivado de un modelo de lenguaje publicado por el usuario de HuggingFace `davidheineman`. Segun la model card, se trata del checkpoint final (paso 999) de una ejecucion de entrenamiento completada, identificada internamente como `mopd-v2-r1-n8-hero-20261003-115039`, con identificador de ejecucion de Weights & Biases `4a1eb39a`. No es, por tanto, un modelo con model card descriptiva, evaluacion publicada ni documentacion de uso, sino un artefacto de preservacion de una ejecucion de investigacion.
+Este repositorio contiene un checkpoint archivado de un modelo de lenguaje publicado por el usuario de Hugging Face `davidheineman`. Segun la model card, se trata del checkpoint final (paso 999) de una ejecucion de entrenamiento completada, identificada internamente como `mopd-v2-r1-n8-hero-20261003-115039`, con identificador de ejecucion de Weights & Biases `4a1eb39a`. No es, por tanto, un modelo con model card descriptiva, evaluacion publicada ni documentacion de uso, sino un artefacto de preservacion de una ejecucion de investigacion.
 
 El modelo esta etiquetado con `qwen2`, lo que indica que su arquitectura pertenece a la familia Qwen2 (transformer decoder-only con atencion por grupos y RoPE), pero no se especifica si hubo modificaciones estructurales respecto a los tamanos oficiales. El recuento real de parametros extraido de los pesos en safetensors es de 1.777.088.000 parametros, aproximadamente 1,78 mil millones, un tamano que situa al modelo en la gama de los modelos pequenos que pueden ejecutarse en GPU de consumo. El repositorio ocupa 3,6 GB.
 
@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento comparado (MMLU, HumanEval, GSM8K u otros)
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-n8-hero-20261003-115039-n8-v2-39ae19aa14a2
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-n8-hero-20261003-115039-n8-v2-39ae19aa14a2
 - Paper: no disponible
 - Blog o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento ni de especificaciones verificadas de las 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gabrielmtzcarrillo/p-e-w-gpt-oss-20b-heretic-gguf
+- Repositorio en Hugging Face: https://huggingface.co/gabrielmtzcarrillo/p-e-w-gpt-oss-20b-heretic-gguf
 - Modelo base de la conversion: https://huggingface.co/p-e-w/gpt-oss-20b-heretic
 - Modelo original: https://huggingface.co/openai/gpt-oss-20b
 - La busqueda web realizada no devolvio enlaces tecnicos relevantes (papers, blogs, repositorios o demos) sobre este modelo; el resto de resultados no guardaban relacion con el tema.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NULLXES-KLAREN-4E es un modelo conversacional de lenguaje basado en Mixture-of-Experts (MoE), desarrollado por NULLXES (publicado en HuggingFace bajo la cuenta de MagistrTheOne) dentro de su proyecto ORBITAL AI. No es un modelo entrenado desde cero: se trata de un ajuste fino (SFT) sobre OpenAI gpt-oss-20b, con adaptadores LoRA fusionados en los expertos MoE y exportado como checkpoint BF16 autocontenido, sin necesidad de cargar un adaptador separado.
+NULLXES-KLAREN-4E es un modelo conversacional de lenguaje basado en Mixture-of-Experts (MoE), desarrollado por NULLXES (publicado en Hugging Face bajo la cuenta de MagistrTheOne) dentro de su proyecto ORBITAL AI. No es un modelo entrenado desde cero: se trata de un ajuste fino (SFT) sobre OpenAI gpt-oss-20b, con adaptadores LoRA fusionados en los expertos MoE y exportado como checkpoint BF16 autocontenido, sin necesidad de cargar un adaptador separado.
 
 El modelo se orienta a interacción conversacional con personalidad de personaje, asistencia en ingeniería de software y flujos de trabajo orientados al razonamiento. Con 20.914.757.184 parámetros totales (dato real extraído de los safetensors), 24 capas transformer y 32 expertos por capa MoE de los cuales 4 se activan por token, hereda la arquitectura eficiente de gpt-oss-20b.
 
@@ -33,7 +33,7 @@ El entrenamiento adicional realizado por NULLXES consistió en supervised fine-t
 - Asistencia en tareas de ingeniería de software y programación (orientación declarada por el autor, sin benchmarks que lo confirmen).
 - Flujos de trabajo orientados al razonamiento (reasoning-oriented workflows), heredando potencialmente las capacidades de razonamiento de la familia gpt-oss.
 - Soporte bilingüe inglés/ruso; el ejemplo oficial de la model card usa una consulta en ruso ("Привет, Кларен").
-- Carga directa mediante la librería transformers de HuggingFace, con plantilla de chat (`apply_chat_template`) y formato de mensajes multi-turno.
+- Carga directa mediante la librería transformers de Hugging Face, con plantilla de chat (`apply_chat_template`) y formato de mensajes multi-turno.
 - No se ha documentado soporte de tool calling / function calling, capacidades de visión, audio ni modo de agentes; el propio autor lista la fiabilidad de uso de herramientas como área pendiente de evaluación.
 
 ## Casos de uso
@@ -83,7 +83,7 @@ KLAREN 4E compite en la categoría de MoE abiertos de tamaño medio. Frente a su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MagistrTheOne/NULLXES-KLAREN-4E
+- Modelo en Hugging Face: https://huggingface.co/MagistrTheOne/NULLXES-KLAREN-4E
 - Modelo base (OpenAI gpt-oss-20b): https://huggingface.co/openai/gpt-oss-20b
 - Licencia y atribución: archivos LICENSE y NOTICE en el repositorio del modelo (https://huggingface.co/MagistrTheOne/NULLXES-KLAREN-4E/blob/main/LICENSE)
 - Paper, blog, demo o repositorio de código: no disponible

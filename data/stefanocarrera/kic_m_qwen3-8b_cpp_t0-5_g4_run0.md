@@ -46,7 +46,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 - Pruebas de generacion de texto en ingles en entornos de investigacion: adecuado para validar hipotesis sobre el efecto de hiperparametros concretos (temperatura, grupos) en la calidad de salida.
 - Evaluacion comparativa de ajustes finos: puede emplearse como punto de comparacion frente a otros runs del mismo autor o frente al modelo base sin ajustar.
 - Prototipado interno de asistentes conversacionales en ingles: valido para demos no criticas donde la ausencia de benchmarks no sea bloqueante.
-- Docencia y formacion: ejemplo practico de como se publica un modelo ajustado en HuggingFace con metadatos minimos.
+- Docencia y formacion: ejemplo practico de como se publica un modelo ajustado en Hugging Face con metadatos minimos.
 - Base para nuevos fine-tunings: al estar en formato safetensors y licencia Apache 2.0, puede reutilizarse como punto de partida en experimentos posteriores.
 
 ## Benchmarks y rendimiento
@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g4_run0
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
+- Repositorio Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g4_run0
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo oficial Qwen3-8B (referencia): https://huggingface.co/Qwen/Qwen3-8B
 - Libreria TRL: https://github.com/huggingface/trl

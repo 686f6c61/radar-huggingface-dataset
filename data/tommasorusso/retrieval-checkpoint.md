@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Retrieval-checkpoint es un repositorio de HuggingFace publicado por el usuario Tommasorusso que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada Coca, orientada a tareas de recuperación (retrieval). No se trata de un modelo preentrenado listo para producción, sino de un punto de partida experimental: la propia model card lo describe como un artefacto pensado para revisión de código, pruebas de humo (smoke tests) y pequeños experimentos controlados.
+Retrieval-checkpoint es un repositorio de Hugging Face publicado por el usuario Tommasorusso que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada Coca, orientada a tareas de recuperación (retrieval). No se trata de un modelo preentrenado listo para producción, sino de un punto de partida experimental: la propia model card lo describe como un artefacto pensado para revisión de código, pruebas de humo (smoke tests) y pequeños experimentos controlados.
 
 El modelo registra un total de 16.576 parámetros en su checkpoint safetensors, una cifra extremadamente reducida (aproximadamente 0,017 millones) que confirma su naturaleza de inicialización y no de modelo entrenado. La configuración declarada es la escala "base", con atención dispersa (sparse attention), fusión tensorial (tensor fusion), activación gelu tanh y normalización rmsnorm. El repositorio incluye, además del checkpoint, un archivo model.py con la implementación y un ejemplo ejecutable, config.json con los ajustes de arquitectura y training_args.json con la receta de experimento por defecto (optimizador lion con scheduler exponencial).
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento en retrieval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tommasorusso/retrieval-checkpoint | 16.576 | no disponible | sin entrenar, sin benchmark | apache-2.0 | HuggingFace (0 descargas) |
+| Tommasorusso/retrieval-checkpoint | 16.576 | no disponible | sin entrenar, sin benchmark | apache-2.0 | Hugging Face (0 descargas) |
 | CLIP (referencia de la categoria) | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion |
 | BLIP (referencia de la categoria) | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion |
 | SigLIP (referencia de la categoria) | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion |
@@ -93,6 +93,6 @@ No se dispone de datos verificables para comparar parámetros, contexto o rendim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tommasorusso/retrieval-checkpoint
+- Hugging Face: https://huggingface.co/Tommasorusso/retrieval-checkpoint
 
 Nota: los resultados de la búsqueda web devueltos (archive.org sobre Alan Watts, github.com/Can-Sahin/alanwatts-transcripts, uutter.com/c/alan-watts) no guardan relación con este modelo ni con retrieval multimodal, por lo que se descartan como fuentes relevantes. No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la información disponible.

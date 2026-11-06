@@ -102,9 +102,9 @@ F1 de artículo correcto por estilo de escritura en el test sintético:
 
 | Modelo | Parámetros | Contexto | F1 test OOD | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Extrator de cardápios 0.5B | 494 M | no disponible | 0,645 | Apache 2.0 | safetensors en HuggingFace |
-| Qwen2.5-0.5B-Instruct (base sin ajuste) | 494 M | no disponible en la información | 0,060 | Apache 2.0 | safetensors en HuggingFace |
-| Qwen2.5-1.5B-Instruct (sin ajuste) | 1,5 B | no disponible en la información | 0,120 | Apache 2.0 | safetensors en HuggingFace |
+| Extrator de cardápios 0.5B | 494 M | no disponible | 0,645 | Apache 2.0 | safetensors en Hugging Face |
+| Qwen2.5-0.5B-Instruct (base sin ajuste) | 494 M | no disponible en la información | 0,060 | Apache 2.0 | safetensors en Hugging Face |
+| Qwen2.5-1.5B-Instruct (sin ajuste) | 1,5 B | no disponible en la información | 0,120 | Apache 2.0 | safetensors en Hugging Face |
 | Analizador basado en reglas | no aplica | no aplica | 0,450 | no disponible | código propio, no es un modelo |
 
 La comparación relevante es que un modelo de 0,5B ajustado supera a un modelo base de 1,5B sin ajuste en esta tarea concreta (0,645 frente a 0,120), y también al analizador por reglas (0,450). No se dispone de datos de otros modelos especializados en extracción de cartas con los que comparar directamente.
@@ -125,7 +125,7 @@ La comparación relevante es que un modelo de 0,5B ajustado supera a un modelo b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vkusterl/extrator-cardapios-0.5b
+- Modelo en Hugging Face: https://huggingface.co/vkusterl/extrator-cardapios-0.5b
 - Demostración en Spaces: https://huggingface.co/spaces/vkusterl/extrator-cardapios
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/vkusterl/cardapios-sinteticos-ptbr
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

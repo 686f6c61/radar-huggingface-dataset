@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables de la misma categoría (clasificación de tendencia de criptomonedas con sklearn). Existen modelos de ML en HuggingFace para trading, pero no se han identificado alternativas directas con características y licencia equivalentes en la información disponible.
+No se dispone de información sobre modelos comparables de la misma categoría (clasificación de tendencia de criptomonedas con sklearn). Existen modelos de ML en Hugging Face para trading, pero no se han identificado alternativas directas con características y licencia equivalentes en la información disponible.
 
 ## Limitaciones y advertencias
 
@@ -67,5 +67,5 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/DaProgammer/crypto_radar_brain)
+- [Modelo en Hugging Face](https://huggingface.co/DaProgammer/crypto_radar_brain)
 - No se encontraron enlaces adicionales en la búsqueda web que sean relevantes para este modelo específico. Los resultados de búsqueda sobre "Top Web3 AI Projects" o "Best AI Crypto" no contienen información sobre este modelo concreto.

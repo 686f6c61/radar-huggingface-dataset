@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/salohcin714/granite-4.2-3b-6bit-awq-mlx
+- Repositorio Hugging Face: https://huggingface.co/salohcin714/granite-4.2-3b-6bit-awq-mlx
 - Modelo base (IBM): https://huggingface.co/ibm-granite/granite-4.2-3b
 - Repositorio GitHub de IBM Granite 4.2: https://github.com/ibm-granite/granite-4.2-language-models
 - Documentación oficial de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2

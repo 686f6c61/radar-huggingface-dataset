@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nambi12/nambi` es un artefacto publicado en HuggingFace por el usuario `nambi12` el 28 de agosto de 2026. La model card asociada únicamente declara la licencia `openrail` y no incluye ninguna otra información técnica, descripción, documentación ni ejemplos de uso. En el momento de la consulta, el repositorio registra cero descargas y cero likes, lo que sugiere que se trata de una publicación reciente o de carácter experimental sin difusión previa.
+El modelo `nambi12/nambi` es un artefacto publicado en Hugging Face por el usuario `nambi12` el 28 de agosto de 2026. La model card asociada únicamente declara la licencia `openrail` y no incluye ninguna otra información técnica, descripción, documentación ni ejemplos de uso. En el momento de la consulta, el repositorio registra cero descargas y cero likes, lo que sugiere que se trata de una publicación reciente o de carácter experimental sin difusión previa.
 
 Dado que no se dispone de datos sobre arquitectura, parámetros, entrenamiento o capacidades, no es posible evaluar su utilidad ni compararlo con otros modelos. La ausencia total de documentación técnica y de resultados de evaluación impide cualquier análisis riguroso. Se recomienda precaución a quien considere utilizarlo en entornos de producción o investigación.
 
@@ -57,8 +57,8 @@ No disponible. Al carecer de especificaciones técnicas, no es posible establece
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nambi12/nambi
-- Perfil del autor en HuggingFace: https://huggingface.co/nambi12
+- Repositorio en Hugging Face: https://huggingface.co/nambi12/nambi
+- Perfil del autor en Hugging Face: https://huggingface.co/nambi12
 - Perfil de GitHub del autor (no confirmado como relacionado con el modelo): https://github.com/nambi12
 
 Los resultados de búsqueda web no aportan información relevante sobre este modelo específico.

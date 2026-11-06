@@ -85,9 +85,9 @@ No se han encontrado en los resultados de busqueda otros clasificadores publicos
 
 | Modelo | Parametros | Contexto | Tarea | Precision top-1 (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| chaliasif/saudi-tender-tagger-onnx (fp32/int8) | Aproximadamente 109 M | 128 tokens | 54 categorias Etimad | 61,06 % fp32 / 60,68 % int8 | MIT (base Apache-2.0) | ONNX en HuggingFace, uso en Node y navegador |
-| chaliasif/saudi-tender-tagger (original PyTorch) | Aproximadamente 109 M | 128 tokens | 54 categorias Etimad | 61,06 % | no disponible en la informacion proporcionada | Pesos PyTorch en HuggingFace, requiere Python |
-| CAMeL-Lab/bert-base-arabic-camelbert-mix (base) | Aproximadamente 109-110 M | no disponible | Modelado enmascarado en arabe; base para fine-tunes | no aplica (no clasifica Etimad) | Apache-2.0 | HuggingFace |
+| chaliasif/saudi-tender-tagger-onnx (fp32/int8) | Aproximadamente 109 M | 128 tokens | 54 categorias Etimad | 61,06 % fp32 / 60,68 % int8 | MIT (base Apache-2.0) | ONNX en Hugging Face, uso en Node y navegador |
+| chaliasif/saudi-tender-tagger (original PyTorch) | Aproximadamente 109 M | 128 tokens | 54 categorias Etimad | 61,06 % | no disponible en la informacion proporcionada | Pesos PyTorch en Hugging Face, requiere Python |
+| CAMeL-Lab/bert-base-arabic-camelbert-mix (base) | Aproximadamente 109-110 M | no disponible | Modelado enmascarado en arabe; base para fine-tunes | no aplica (no clasifica Etimad) | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -106,7 +106,7 @@ No se han encontrado en los resultados de busqueda otros clasificadores publicos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chaliasif/saudi-tender-tagger-onnx
+- Modelo en Hugging Face: https://huggingface.co/chaliasif/saudi-tender-tagger-onnx
 - Modelo original en PyTorch: https://huggingface.co/chaliasif/saudi-tender-tagger
 - Dataset de entrenamiento: https://huggingface.co/datasets/chaliasif/etimad-tender-titles
 - Codigo fuente: https://github.com/aliasif97/saudi-tender-tagger

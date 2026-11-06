@@ -88,8 +88,8 @@ Estos valores deben interpretarse según las definiciones del framework `open-un
 
 | Modelo | Parámetros | Contexto | Resultado en TOFU `forget01` | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_WGA` | 3,21 B | 128.000 tokens | `forget_quality` 0,0286; `forget_Q_A_gibberish` 0,8602; `model_utility` 0,6637 | llama3.2 | Público en HuggingFace, 0 descargas |
-| `open-unlearning/tofu_Llama-3.2-3B-Instruct_full` | 3,21 B | 128.000 tokens | no disponible | llama3.2 | Público en HuggingFace |
+| `JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_WGA` | 3,21 B | 128.000 tokens | `forget_quality` 0,0286; `forget_Q_A_gibberish` 0,8602; `model_utility` 0,6637 | llama3.2 | Público en Hugging Face, 0 descargas |
+| `open-unlearning/tofu_Llama-3.2-3B-Instruct_full` | 3,21 B | 128.000 tokens | no disponible | llama3.2 | Público en Hugging Face |
 | `meta-llama/Llama-3.2-3B-Instruct` | 3,21 B | 128.000 tokens | no aplica (modelo sin olvidar) | llama3.2 | Público, requiere aceptar la licencia de Meta |
 
 No se dispone de datos públicos en la información proporcionada sobre otros checkpoints de unlearning aplicados al mismo modelo base (por ejemplo, variantes con NPO o GradDiff), ni sobre modelos de unlearning de tamaño comparable entrenados sobre TOFU con los que establecer una comparación cuantitativa directa.
@@ -109,11 +109,11 @@ No se dispone de datos públicos en la información proporcionada sobre otros ch
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_WGA
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_WGA
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning
 - Proyecto Speculative-Decoding-Unlearning: https://github.com/JoaoVitorBoer/Speculative-Decoding-Unlearning
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de HuggingFace y de la model card del autor.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de Hugging Face y de la model card del autor.

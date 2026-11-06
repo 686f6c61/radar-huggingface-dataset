@@ -75,7 +75,7 @@ La informacion proporcionada solo incluye el valor de macro top-10 para la logit
 
 | Artefacto | Modelo base | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este release (J, R, J++) | Ministral-3-3B-Instruct-2512-BF16 | 3B (base) | No disponible | Lentes de interpretabilidad ajustadas por capa | Apache 2.0 | HuggingFace, 0 descargas |
+| Este release (J, R, J++) | Ministral-3-3B-Instruct-2512-BF16 | 3B (base) | No disponible | Lentes de interpretabilidad ajustadas por capa | Apache 2.0 | Hugging Face, 0 descargas |
 | J-lens original | No disponible | No disponible | No disponible | Gradientes nativos promediados | No disponible | Publicacion Transformer Circuits |
 | R-lens original | No disponible | No disponible | No disponible | Propagacion de relevancia en backward | No disponible | Publicacion LessWrong |
 | J++ lens original | No disponible | No disponible | No disponible | Mezcla con signo de expertos R | No disponible | Publicacion LessWrong |
@@ -97,7 +97,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de los metodos ori
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bubskee/ministral-3-3b-j-r-jpp-lenses
+- Repositorio Hugging Face: https://huggingface.co/bubskee/ministral-3-3b-j-r-jpp-lenses
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-BF16
 - Perfil del autor: https://huggingface.co/bubskee
 - J-lens original (Transformer Circuits): https://transformer-circuits.pub/2026/workspace/index.html

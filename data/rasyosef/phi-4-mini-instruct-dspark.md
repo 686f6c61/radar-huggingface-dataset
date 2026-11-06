@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Phi-4-mini-instruct-DSpark es un modelo borrador (draft model) de decodificación especulativa publicado por el usuario rasyosef en HuggingFace. No es un modelo conversacional autónomo: su única función es proponer bloques de tokens que el verificador `microsoft/Phi-4-mini-instruct` valida después en un único forward pass. Tiene 658.303.441 parámetros (unos 0,66 mil millones), se distribuye en safetensors y requiere `custom_code` de la librería `transformers`.
+Phi-4-mini-instruct-DSpark es un modelo borrador (draft model) de decodificación especulativa publicado por el usuario rasyosef en Hugging Face. No es un modelo conversacional autónomo: su única función es proponer bloques de tokens que el verificador `microsoft/Phi-4-mini-instruct` valida después en un único forward pass. Tiene 658.303.441 parámetros (unos 0,66 mil millones), se distribuye en safetensors y requiere `custom_code` de la librería `transformers`.
 
 El problema que resuelve es la latencia de generación del verificador. Al proponer 8 tokens por bloque en lugar de uno, y aceptar de media 3,23 tokens por paso de verificación, consigue una aceleración de 3,61 veces en math_reasoning y 3,44 veces en HumanEval, con una media de 2,20 veces sobre nueve tipos de tarea. La decodificación es sin pérdida (lossless): como el verificador comprueba todos los tokens propuestos, la salida greedy es idéntica a la del verificador sin borrador.
 
@@ -102,7 +102,7 @@ No se dispone de datos comparativos medidos frente a otros modelos borrador en l
 
 | Modelo | Tipo | Parámetros | Contexto | Datos de rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Phi-4-mini-instruct-DSpark | Borrador de decodificación especulativa con verificación de tokens | 658.303.441 | ventana deslizante de 2048 en 3 capas + atención completa en la última | 3,23 tokens de aceptación media; 2,20× de aceleración media; 3,61× en math_reasoning | MIT | safetensors y GGUF en HuggingFace |
+| Phi-4-mini-instruct-DSpark | Borrador de decodificación especulativa con verificación de tokens | 658.303.441 | ventana deslizante de 2048 en 3 capas + atención completa en la última | 3,23 tokens de aceptación media; 2,20× de aceleración media; 3,61× en math_reasoning | MIT | safetensors y GGUF en Hugging Face |
 | EAGLE-3 | Borrador de decodificación especulativa | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Medusa | Cabezas de decodificación especulativa | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Lookahead decoding | Decodificación especulativa sin modelo borrador | no aplica | no disponible | no disponible | no disponible | no disponible |
@@ -125,7 +125,7 @@ La diferencia relevante de este modelo frente a enfoques genéricos es que está
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rasyosef/Phi-4-mini-instruct-DSpark
+- Modelo en Hugging Face: https://huggingface.co/rasyosef/Phi-4-mini-instruct-DSpark
 - Modelo verificador (base): https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Repositorio GGUF del borrador: https://huggingface.co/rasyosef/Phi-4-mini-instruct-DSpark-GGUF
 - GGUF del verificador usado en el ejemplo de llama.cpp: https://huggingface.co/unsloth/Phi-4-mini-instruct-GGUF

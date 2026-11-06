@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `qing-yao/babylm-opt-sva-decay-0.1-from8000-11473589` es un ajuste fino (fine-tuning) del checkpoint `models/babylm-default_seed-42_1e-3`, desarrollado por el usuario de HuggingFace qing-yao, sobre el dataset `qing-yao/slightly-cleaner-babylm`. Se trata de un transformer de tipo OPT con 110.419.968 parametros (aproximadamente 110 millones), orientado a generacion de texto y entrenado en el contexto del ecosistema BabyLM, una linea de investigacion centrada en entrenar modelos de lenguaje con presupuestos de datos comparables a la exposicion linguistica de un nino.
+El modelo `qing-yao/babylm-opt-sva-decay-0.1-from8000-11473589` es un ajuste fino (fine-tuning) del checkpoint `models/babylm-default_seed-42_1e-3`, desarrollado por el usuario de Hugging Face qing-yao, sobre el dataset `qing-yao/slightly-cleaner-babylm`. Se trata de un transformer de tipo OPT con 110.419.968 parametros (aproximadamente 110 millones), orientado a generacion de texto y entrenado en el contexto del ecosistema BabyLM, una linea de investigacion centrada en entrenar modelos de lenguaje con presupuestos de datos comparables a la exposicion linguistica de un nino.
 
-El nombre del repositorio sugiere un experimento de ablation sobre el decaimiento del learning rate (`decay-0.1`) aplicado a partir del paso 8000 (`from8000`), lo que lo situa como un artefacto de investigacion mas que como un modelo listo para produccion. La model card es autogenerada por el `Trainer` de HuggingFace y no incluye descripcion, usos previstos ni limitaciones redactadas por el autor. El entrenamiento registrado alcanza el paso 9250 (epoca 5,07 de las 20 declaradas) con una perdida de validacion final de 3,2433 y 605.996.800 tokens de entrada procesados.
+El nombre del repositorio sugiere un experimento de ablation sobre el decaimiento del learning rate (`decay-0.1`) aplicado a partir del paso 8000 (`from8000`), lo que lo situa como un artefacto de investigacion mas que como un modelo listo para produccion. La model card es autogenerada por el `Trainer` de Hugging Face y no incluye descripcion, usos previstos ni limitaciones redactadas por el autor. El entrenamiento registrado alcanza el paso 9250 (epoca 5,07 de las 20 declaradas) con una perdida de validacion final de 3,2433 y 605.996.800 tokens de entrada procesados.
 
 Su relevancia actual es limitada fuera del ambito academico: acumula 0 descargas y 0 likes, no declara licencia ni idiomas, y no publica resultados de benchmarks. Resulta util como pieza reproducible en estudios de curvas de aprendizaje, decaimiento del learning rate y entrenamiento de bajo presupuesto computacional.
 
@@ -104,7 +104,7 @@ Frente a estas alternativas, el modelo analizado no aporta documentacion, licenc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qing-yao/babylm-opt-sva-decay-0.1-from8000-11473589
+- Repositorio en Hugging Face: https://huggingface.co/qing-yao/babylm-opt-sva-decay-0.1-from8000-11473589
 - Modelo base referenciado en la model card: `models/babylm-default_seed-42_1e-3` (referencia relativa incluida por el autor; no se ha localizado una URL publica resoluble en la informacion disponible)
 - Dataset referenciado en la model card: https://huggingface.co/datasets/qing-yao/slightly-cleaner-babylm
 - Perfil del autor: https://huggingface.co/qing-yao

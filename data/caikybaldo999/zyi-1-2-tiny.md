@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZYI-1.2-TINY es un modelo de generacion de imagenes a partir de texto (text-to-image) publicado por el usuario caikybaldo999 en HuggingFace. Se trata de un diffusion transformer (DiT) de solo 59,2 millones de parametros entrenado con formulacion de Rectified Flow, que genera imagenes de 256x256 pixeles condicionadas por embeddings de texto de FLAN-T5-base y decodificadas con el VAE stabilityai/sd-vae-ft-mse. El checkpoint se presenta como un fine-tuning de `caikybaldo999/ZYI-1.1-TINY`, lo que implica que existe una cadena de versiones previas del mismo autor.
+ZYI-1.2-TINY es un modelo de generacion de imagenes a partir de texto (text-to-image) publicado por el usuario caikybaldo999 en Hugging Face. Se trata de un diffusion transformer (DiT) de solo 59,2 millones de parametros entrenado con formulacion de Rectified Flow, que genera imagenes de 256x256 pixeles condicionadas por embeddings de texto de FLAN-T5-base y decodificadas con el VAE stabilityai/sd-vae-ft-mse. El checkpoint se presenta como un fine-tuning de `caikybaldo999/ZYI-1.1-TINY`, lo que implica que existe una cadena de versiones previas del mismo autor.
 
 El interes de este modelo es fundamentalmente experimental: frente a los sistemas text-to-image habituales (Stable Diffusion 1.5 con ~860 M de parametros en el UNet, o PixArt-alpha con ~610 M en el transformer), ZYI-1.2-TINY reduce el generador a una decima parte, lo que lo convierte en un banco de pruebas barato para estudiar rectified flow, destilacion de pasos de muestreo y fine-tuning sobre presupuestos de computo minimos. Su tamano permite entrenamiento e inferencia en una unica GPU de consumo.
 
@@ -73,9 +73,9 @@ Los datos de los modelos de terceros que aparecen a continuacion proceden de con
 
 | Modelo | Parametros del generador | Resolucion nativa | Condicionamiento de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZYI-1.2-TINY | 59,2 M (DiT, rectified flow) | 256x256 | FLAN-T5-base | apache-2.0 | HuggingFace, sin descargas registradas |
+| ZYI-1.2-TINY | 59,2 M (DiT, rectified flow) | 256x256 | FLAN-T5-base | apache-2.0 | Hugging Face, sin descargas registradas |
 | Stable Diffusion 1.5 | ~860 M (UNet, DDPM) | 512x512 | CLIP ViT-L/14 | CreativeML Open RAIL-M | Ampliamente disponible, ecosistema maduro |
-| PixArt-alpha | ~610 M (DiT) | 512x512 / 1024x1024 | T5-XXL | Licencia propia del proyecto | HuggingFace, con pesos publicados |
+| PixArt-alpha | ~610 M (DiT) | 512x512 / 1024x1024 | T5-XXL | Licencia propia del proyecto | Hugging Face, con pesos publicados |
 | Modelos "tiny diffusion" de investigacion | decenas de millones | 32x32 a 256x256 | CLIP o T5 segun variante | variable | Repositorios academicos |
 
 No se dispone de metricas comparativas de calidad (FID, CLIP score) para ZYI-1.2-TINY, por lo que la comparacion se limita a parametros, resolucion y licencia. Es esperable, por escala, que su calidad de generacion quede por debajo de SD 1.5 y PixArt-alpha, pero no se aporta ninguna medicion que lo confirme.
@@ -95,7 +95,7 @@ No se dispone de metricas comparativas de calidad (FID, CLIP score) para ZYI-1.2
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/caikybaldo999/ZYI-1.2-TINY
+- Hugging Face: https://huggingface.co/caikybaldo999/ZYI-1.2-TINY
 - Checkpoint base declarado: https://huggingface.co/caikybaldo999/ZYI-1.1-TINY
 - Dataset de fine-tuning referenciado: https://huggingface.co/datasets/pixparse/cc3m-wds
 - VAE referenciado: https://huggingface.co/stabilityai/sd-vae-ft-mse

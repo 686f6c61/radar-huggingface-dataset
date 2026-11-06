@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AndreaChilon/modelo-arandanos` es un repositorio publicado en HuggingFace por el usuario AndreaChilon bajo licencia MIT. La model card asociada contiene unicamente la declaracion de licencia, sin descripcion funcional, sin arquitectura declarada, sin datos de entrenamiento ni informacion sobre el proposito del modelo. El repositorio esta etiquetado con la libreria Keras y el tamano del mismo es de 0.0 GB, lo que sugiere que no contiene pesos publicados o que estos son de un tamano despreciable.
+`AndreaChilon/modelo-arandanos` es un repositorio publicado en Hugging Face por el usuario AndreaChilon bajo licencia MIT. La model card asociada contiene unicamente la declaracion de licencia, sin descripcion funcional, sin arquitectura declarada, sin datos de entrenamiento ni informacion sobre el proposito del modelo. El repositorio esta etiquetado con la libreria Keras y el tamano del mismo es de 0.0 GB, lo que sugiere que no contiene pesos publicados o que estos son de un tamano despreciable.
 
 En el momento de la consulta el modelo acumula 16 descargas y 0 likes, fue creado el 30 de octubre de 2026 y actualizado minutos despues de su creacion. No consta pipeline declarado, no se especifican idiomas soportados y no hay documentacion tecnica adicional.
 
@@ -40,7 +40,7 @@ Tampoco hay datos sobre volumen de entrenamiento, composicion del dataset, tecni
 No es posible proponer casos de uso concretos y realistas sin informacion sobre las capacidades del modelo. A continuacion se enumeran escenarios que requeririan validacion previa y que, en el estado actual del repositorio, no pueden recomendarse:
 
 - Evaluacion experimental en laboratorio: solo tendria sentido cargar el artefacto con Keras para inspeccionar su estructura interna, no para inferencia en produccion.
-- Reproducibilidad de experimentos docentes: si el autor publicase el codigo de entrenamiento, podria servir como ejemplo de publicacion en HuggingFace, pero no como componente funcional.
+- Reproducibilidad de experimentos docentes: si el autor publicase el codigo de entrenamiento, podria servir como ejemplo de publicacion en Hugging Face, pero no como componente funcional.
 - Prototipado interno: requeriria primero verificar que existen pesos reales en el repositorio, dado que el tamano reportado es 0.0 GB.
 - Integracion en pipelines de CI/CD: descartado sin documentacion de API, formato de entrada/salida y comportamiento.
 - Atencion al cliente o generacion de codigo: descartado sin evidencia de capacidades de generacion.
@@ -81,5 +81,5 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AndreaChilon/modelo-arandanos
+- Repositorio en Hugging Face: https://huggingface.co/AndreaChilon/modelo-arandanos
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

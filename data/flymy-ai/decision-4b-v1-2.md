@@ -89,9 +89,9 @@ Metricas adicionales comunicadas: ECE de 0,070 y fidelidad de 87,3 (1 menos la d
 
 | Modelo | Parametros | Contexto | Rendimiento en JevBench publico (231) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Decision 4B v1.2 (flymy-ai) | ~4B de base + 14,4 M de adaptador | 16.384 tokens | 88,3 | Apache-2.0 | Adaptador LoRA en HuggingFace; base Qwen3.5-4B aparte |
-| Qwen3.5-4B congelado (base) | ~4B | No disponible | 80,1 | Apache-2.0 | HuggingFace |
-| Decision 2B (FlyMy.AI, preview) | 2,28B totales, 26,2 M entrenables | No disponible | No disponible | No disponible | HuggingFace (base openbmb/MiniCPM5-2B) |
+| Decision 4B v1.2 (flymy-ai) | ~4B de base + 14,4 M de adaptador | 16.384 tokens | 88,3 | Apache-2.0 | Adaptador LoRA en Hugging Face; base Qwen3.5-4B aparte |
+| Qwen3.5-4B congelado (base) | ~4B | No disponible | 80,1 | Apache-2.0 | Hugging Face |
+| Decision 2B (FlyMy.AI, preview) | 2,28B totales, 26,2 M entrenables | No disponible | No disponible | No disponible | Hugging Face (base openbmb/MiniCPM5-2B) |
 | Jev 1.13 (referencia cerrada) | No disponible | No disponible | 86,6 | No disponible (implementacion cerrada) | No disponible |
 
 Advertencias sobre la comparativa: la cifra de 74,1 de Jev 1.13 en hard corresponde al tramo hard completo de 220 items (109 reservados), no a los 111 items publicos, por lo que no es directamente comparable con el 78,4 de este modelo; en el conjunto de casos reales propios, Jev 1.13 supera a este modelo (94,6 / 97,8 / 98,9 frente a 90,9 agregado). Las cifras de Decision 2B no se han publicado en la informacion disponible.
@@ -111,7 +111,7 @@ Advertencias sobre la comparativa: la cifra de 74,1 de Jev 1.13 en hard correspo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flymy-ai/decision-4b-v1.2
+- Modelo en Hugging Face: https://huggingface.co/flymy-ai/decision-4b-v1.2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B (revision 851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a)
 - JevBench by Benchmark Heaven: https://benchmarkheaven.com/jev-models
 - All about Jev (1116 replicaciones, modelos, runtimes y benchmarks): https://hanxiao.io/all-about-jev/

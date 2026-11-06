@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`snopchat/Qwen3.8-27B-Uncensored-MXFP6-TP3` es un repositorio de pesos publicado por el usuario snopchat en HuggingFace. Por el nombre y las etiquetas declaradas (`qwen3_5`, `8-bit`, `quark`) se trata de una variante cuantizada y presumiblemente desalineada ("uncensored") de un modelo de la familia Qwen, distribuida en formato safetensors y fragmentada en tres partes para tensor parallelism (TP3). El repositorio no incluye model card, ni licencia, ni idiomas declarados, ni pipeline de inferencia definido.
+`snopchat/Qwen3.8-27B-Uncensored-MXFP6-TP3` es un repositorio de pesos publicado por el usuario snopchat en Hugging Face. Por el nombre y las etiquetas declaradas (`qwen3_5`, `8-bit`, `quark`) se trata de una variante cuantizada y presumiblemente desalineada ("uncensored") de un modelo de la familia Qwen, distribuida en formato safetensors y fragmentada en tres partes para tensor parallelism (TP3). El repositorio no incluye model card, ni licencia, ni idiomas declarados, ni pipeline de inferencia definido.
 
 Los tensores en safetensors suman 22.945.035.568 parametros reales, con un tamano de repositorio de 27,3 GB. Existe una discrepancia notable entre el nombre del repositorio (que sugiere 27B) y el recuento efectivo de parametros (22,9B), y tambien entre la etiqueta `8-bit` y el formato MXFP6 que da nombre al modelo (6 bits). Ninguna de estas inconsistencias esta documentada ni justificada por el autor.
 
@@ -97,6 +97,6 @@ No es posible establecer una comparativa fiable: no se ha confirmado cual es el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/snopchat/Qwen3.8-27B-Uncensored-MXFP6-TP3
+- Repositorio en Hugging Face: https://huggingface.co/snopchat/Qwen3.8-27B-Uncensored-MXFP6-TP3
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados devueltos por la busqueda no guardaban ninguna relacion con inteligencia artificial ni con el repositorio.
 - Modelo base, documentacion del formato MXFP6 y herramienta Quark: no disponible en la informacion proporcionada.

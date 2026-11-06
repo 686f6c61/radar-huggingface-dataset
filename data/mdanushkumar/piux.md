@@ -2,7 +2,7 @@
 
 ## Resumen
 
-piuX es un modelo de generacion de imagenes a partir de texto publicado en HuggingFace por el usuario MDanushKumar bajo el identificador `MDanushKumar/piuX`. Segun los metadatos del repositorio, se trata de un pipeline `text-to-image` construido sobre la libreria `diffusers` y etiquetado explicitamente con `diffusers:StableDiffusionXLPipeline`, lo que situa al modelo en la familia de arquitecturas de difusion latente tipo SDXL. El repositorio ocupa 6,9 GB y contiene pesos en formato `safetensors`, con un recuento real de 2.567.463.684 parametros en los tensores publicados.
+piuX es un modelo de generacion de imagenes a partir de texto publicado en Hugging Face por el usuario MDanushKumar bajo el identificador `MDanushKumar/piuX`. Segun los metadatos del repositorio, se trata de un pipeline `text-to-image` construido sobre la libreria `diffusers` y etiquetado explicitamente con `diffusers:StableDiffusionXLPipeline`, lo que situa al modelo en la familia de arquitecturas de difusion latente tipo SDXL. El repositorio ocupa 6,9 GB y contiene pesos en formato `safetensors`, con un recuento real de 2.567.463.684 parametros en los tensores publicados.
 
 La relevancia de esta ficha es limitada y conviene ser transparente al respecto: el modelo acumula 0 descargas y 0 likes en el momento de la consulta, fue creado y actualizado el 22 de septiembre de 2026 (con apenas 29 minutos de diferencia entre ambos eventos) y su model card no contiene mas que las claves de licencia (`apache-2.0`) y de libreria (`diffusers`). No hay descripcion del entrenamiento, ni del dataset, ni de las capacidades declaradas por el autor.
 
@@ -32,7 +32,7 @@ No hay absolutamente ningun dato sobre el proceso de entrenamiento: se desconoce
 
 - Generacion de imagenes a partir de prompts de texto, conforme al pipeline `text-to-image` declarado en los metadatos del repositorio.
 - Compatibilidad con la libreria `diffusers` y, por el tag `StableDiffusionXLPipeline`, con el ecosistema de pipelines SDXL (lo que en principio habilita variantes como img2img o inpainting si el checkpoint incluye los componentes necesarios, extremo no verificado).
-- Tag `endpoints_compatible`, que sugiere que el modelo puede desplegarse en infraestructura de inferencia gestionada compatible con HuggingFace.
+- Tag `endpoints_compatible`, que sugiere que el modelo puede desplegarse en infraestructura de inferencia gestionada compatible con Hugging Face.
 - Capacidades multilingues: no disponibles. El campo de idiomas del repositorio esta vacio y la model card no menciona idiomas.
 - Soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision, audio o modo "thinking": no aplica. Es un modelo de difusion para imagen, no un modelo de lenguaje.
 - Rendimiento real, calidad de imagen y fidelidad al prompt: no disponibles; no hay muestras, benchmarks ni evaluaciones publicadas.
@@ -61,7 +61,7 @@ Todas las cifras son estimaciones derivadas del recuento de parametros y del tam
 - VRAM estimada para inferencia: alrededor de 6-8 GB en `float16` con los pesos cargados, mas el overhead de las activaciones del U-Net y de los text encoders; en la practica, entre 8 y 12 GB para generar a resoluciones tipo 1024x1024 sin optimizaciones.
 - GPU recomendadas: tarjetas con al menos 12 GB de VRAM para un flujo comodo (RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090, L4, A10G). En GPUs de datacenter (A100 40/80 GB, H100) el modelo ocupa una fraccion minima de memoria y permite lotes grandes o varias instancias en paralelo.
 - Compatibilidad con GPU de consumo: si cabe en tarjetas de 8-12 GB. En GPUs de 6-8 GB requeriria tecnicas de ahorro de memoria (offload secuencial a CPU, atencion eficiente, cuantizacion a 8 bits con bitsandbytes).
-- Opciones de despliegue: `diffusers` en Python (referencia directa), el endpoint gestionado de HuggingFace (el tag `endpoints_compatible` lo sugiere), y servidores de inferencia compatibles con SDXL. No hay confirmacion de soporte para `llama.cpp`/`Ollama`, que no estan orientados a este tipo de modelo.
+- Opciones de despliegue: `diffusers` en Python (referencia directa), el endpoint gestionado de Hugging Face (el tag `endpoints_compatible` lo sugiere), y servidores de inferencia compatibles con SDXL. No hay confirmacion de soporte para `llama.cpp`/`Ollama`, que no estan orientados a este tipo de modelo.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tiempo por imagen ni de imagenes por segundo en ninguna GPU.
 
 ## Comparativa con modelos similares
@@ -91,7 +91,7 @@ Diferencias clave: piuX se distingue de SDXL, SD 1.5 y FLUX.1-dev fundamentalmen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MDanushKumar/piuX
+- Modelo en Hugging Face: https://huggingface.co/MDanushKumar/piuX
 - Libreria `diffusers` (necesaria para cargar el pipeline): https://github.com/huggingface/diffusers
 - Documentacion del pipeline SDXL en `diffusers`: https://huggingface.co/docs/diffusers/api/pipelines/stable_diffusion/stable_diffusion_xl
 - Repositorio de referencia de SDXL (Stability AI): https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0

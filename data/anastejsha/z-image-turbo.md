@@ -77,12 +77,12 @@ Z-Image-Turbo se posiciona como un punto intermedio: mas parametros que SDXL Tur
 
 ## Enlaces
 
-- Modelo en HuggingFace (original): https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
-- Modelo en HuggingFace (copia analizada): https://huggingface.co/Anastejsha/Z-Image-Turbo
+- Modelo en Hugging Face (original): https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
+- Modelo en Hugging Face (copia analizada): https://huggingface.co/Anastejsha/Z-Image-Turbo
 - Repositorio GitHub: https://github.com/Tongyi-MAI/Z-Image
 - Blog oficial: https://tongyi-mai.github.io/Z-Image-blog/
-- Demo online (HuggingFace Spaces): https://huggingface.co/spaces/Tongyi-MAI/Z-Image-Turbo
-- Demo movil (HuggingFace Spaces): https://huggingface.co/spaces/akhaliq/Z-Image-Turbo
+- Demo online (Hugging Face Spaces): https://huggingface.co/spaces/Tongyi-MAI/Z-Image-Turbo
+- Demo movil (Hugging Face Spaces): https://huggingface.co/spaces/akhaliq/Z-Image-Turbo
 - Modelo en ModelScope: https://www.modelscope.cn/models/Tongyi-MAI/Z-Image-Turbo
 - Demo en ModelScope: https://www.modelscope.cn/aigc/imageGeneration?tab=advanced&versionId=469191&modelType=Checkpoint&sdVersion=Z_IMAGE_TURBO&modelUrl=modelscope%3A%2F%2FTongyi-MAI%2FZ-Image-Turbo%3Frevision%3Dmaster
 - Galeria de arte (PDF): https://tongyi-mai.github.io/Z-Image-blog/assets/Z-Image-Gallery.pdf

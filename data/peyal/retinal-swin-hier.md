@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Peyal/retinal-swin-hier` es un modelo de visión por computadora publicado en HuggingFace por el usuario `Peyal`. Según su nombre, parece estar diseñado para la clasificación o detección de enfermedades retinianas a partir de imágenes de retina, utilizando una arquitectura Swin Transformer jerárquica. No obstante, la model card oficial no incluye información técnica detallada, por lo que las especificaciones reales no están confirmadas.
+El modelo `Peyal/retinal-swin-hier` es un modelo de visión por computadora publicado en Hugging Face por el usuario `Peyal`. Según su nombre, parece estar diseñado para la clasificación o detección de enfermedades retinianas a partir de imágenes de retina, utilizando una arquitectura Swin Transformer jerárquica. No obstante, la model card oficial no incluye información técnica detallada, por lo que las especificaciones reales no están confirmadas.
 
 El repositorio tiene un tamaño de 0.1 GB y está publicado bajo licencia Apache 2.0, lo que permite su uso comercial y modificación. A pesar de ser un modelo potencialmente relevante para el ámbito médico, la ausencia de documentación, benchmarks y datos de entrenamiento en la información disponible impide evaluar su calidad o su idoneidad para aplicaciones clínicas.
 
@@ -74,6 +74,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Peyal/retinal-swin-hier
+- Hugging Face: https://huggingface.co/Peyal/retinal-swin-hier
 - Artículo relacionado (Springer): https://link.springer.com/article/10.1007/s10792-026-04254-w
 - Artículo relacionado (Wiley): https://onlinelibrary.wiley.com/doi/10.1002/cpe.70366

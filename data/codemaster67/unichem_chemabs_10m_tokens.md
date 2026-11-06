@@ -76,8 +76,8 @@ La busqueda web realizada no devolvio resultados relevantes: todos los enlaces o
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Unichem_chemabs_10M_tokens | Adaptador QLoRA sobre OLMo-1B para SMILES y quimica | Base ~1.200 M; adaptador no especificado | 512 tokens en entrenamiento | apache-2.0 | Publicado en HuggingFace |
-| allenai/OLMo-1B-hf | Transformer decoder-only generalista (modelo base) | ~1.200 M | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publicado en HuggingFace |
+| Unichem_chemabs_10M_tokens | Adaptador QLoRA sobre OLMo-1B para SMILES y quimica | Base ~1.200 M; adaptador no especificado | 512 tokens en entrenamiento | apache-2.0 | Publicado en Hugging Face |
+| allenai/OLMo-1B-hf | Transformer decoder-only generalista (modelo base) | ~1.200 M | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publicado en Hugging Face |
 | Alternativas especificas de quimica (por ejemplo, modelos tipo ChemBERTa, MolT5 o Galactica) | Encoder-only, encoder-decoder o decoder-only segun el caso | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ La busqueda web realizada no devolvio resultados relevantes: todos los enlaces o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Codemaster67/Unichem_chemabs_10M_tokens
+- Modelo en Hugging Face: https://huggingface.co/Codemaster67/Unichem_chemabs_10M_tokens
 - Modelo base: https://huggingface.co/allenai/OLMo-1B-hf
 - Dataset de entrenamiento: https://huggingface.co/datasets/Codemaster67/Unichem_smiles-chemabs-10M
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos correspondian integramente a YouTube y no guardan relacion con el modelo.

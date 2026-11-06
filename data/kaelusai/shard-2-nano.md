@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KaelusAI/shard-2-nano es un repositorio de modelo publicado en HuggingFace por el usuario u organizacion KaelusAI bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada unicamente contiene el bloque de metadatos con la licencia, sin descripcion del modelo, sin arquitectura declarada, sin tamano de parametros y sin indicacion de casos de uso. El repositorio no declara pipeline de inferencia, no especifica idiomas soportados y no incluye resultados de evaluacion.
+KaelusAI/shard-2-nano es un repositorio de modelo publicado en Hugging Face por el usuario u organizacion KaelusAI bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada unicamente contiene el bloque de metadatos con la licencia, sin descripcion del modelo, sin arquitectura declarada, sin tamano de parametros y sin indicacion de casos de uso. El repositorio no declara pipeline de inferencia, no especifica idiomas soportados y no incluye resultados de evaluacion.
 
 El nombre del repositorio sugiere, por convencion de nomenclatura, un componente parcial ("shard-2") de un modelo de reducidas dimensiones ("nano"), pero esta interpretacion no esta confirmada por ninguna documentacion del autor y no debe tomarse como especificacion tecnica. No hay informacion publica que permita determinar si se trata de un modelo entrenado desde cero, de un checkpoint intermedio, de una particion de pesos para despliegue distribuido o de un artefacto auxiliar.
 
@@ -86,6 +86,6 @@ No disponible. Sin parametros, contexto ni resultados de evaluacion no es posibl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KaelusAI/shard-2-nano
+- Repositorio en Hugging Face: https://huggingface.co/KaelusAI/shard-2-nano
 - Model card (contenido integro disponible): únicamente el bloque de metadatos con `license: apache-2.0`
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles en la informacion proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sareddy1/mocov3-baseline` es un repositorio de HuggingFace publicado por el usuario `sareddy1` que contiene una implementación funcional de MoCo v3 orientada a tareas de retrieval, con una configuración declarada como "tiny". El propio autor indica que el repositorio prioriza código transparente y smoke tests repetibles, y que las afirmaciones sobre benchmarks se omiten deliberadamente. No es un modelo entrenado ni evaluado: el fichero `model.safetensors` se presenta explícitamente como un checkpoint de inicialización válido para pruebas de humo, no como un checkpoint con rendimiento demostrado.
+`sareddy1/mocov3-baseline` es un repositorio de Hugging Face publicado por el usuario `sareddy1` que contiene una implementación funcional de MoCo v3 orientada a tareas de retrieval, con una configuración declarada como "tiny". El propio autor indica que el repositorio prioriza código transparente y smoke tests repetibles, y que las afirmaciones sobre benchmarks se omiten deliberadamente. No es un modelo entrenado ni evaluado: el fichero `model.safetensors` se presenta explícitamente como un checkpoint de inicialización válido para pruebas de humo, no como un checkpoint con rendimiento demostrado.
 
 El recuento de parámetros reportado por safetensors es de 16.576 (aproximadamente 16,6 K), lo que lo sitúa en un orden de magnitud muy inferior al de cualquier backbone de visión real. La arquitectura declarada emplea atención estándar, fusión de bajo rango ("low rank"), activación swish y normalización RMSNorm, con un recetario por defecto basado en el optimizador Adam y un scheduler OneCycle.
 
@@ -75,10 +75,10 @@ Los valores de la columna "parámetros" para los comparadores son aproximaciones
 
 | Modelo | Parámetros (aprox.) | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sareddy1/mocov3-baseline | 16.576 | Retrieval (implementación tiny) | no disponible | BSD-3-Clause | HuggingFace, checkpoint de inicialización |
+| sareddy1/mocov3-baseline | 16.576 | Retrieval (implementación tiny) | no disponible | BSD-3-Clause | Hugging Face, checkpoint de inicialización |
 | MoCo v3 original (ViT-B/16) | ~86 M | SSL visual / transferencia | no aplica | ver repositorio original | Repositorio oficial de Meta AI |
 | DINO (ViT-B/16) | ~86 M | SSL visual | no aplica | ver repositorio original | Repositorio oficial de Meta AI |
-| CLIP (ViT-B/32) | ~151 M | Retrieval imagen-texto | no disponible | ver repositorio original | OpenAI / HuggingFace |
+| CLIP (ViT-B/32) | ~151 M | Retrieval imagen-texto | no disponible | ver repositorio original | OpenAI / Hugging Face |
 
 Diferencias clave: los tres comparadores son modelos entrenados con pesos publicados y evaluaciones reproducibles, mientras que este repositorio entrega código y una inicialización sin entrenar. La comparación de rendimiento, por tanto, no es posible con la información disponible.
 
@@ -96,6 +96,6 @@ Diferencias clave: los tres comparadores son modelos entrenados con pesos public
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sareddy1/mocov3-baseline
+- Repositorio en Hugging Face: https://huggingface.co/sareddy1/mocov3-baseline
 - Referencia del método original MoCo v3 (An Empirical Study of Training Self-Supervised Vision Transformers): https://arxiv.org/abs/2104.02057 — enlace proporcionado como contexto del método, no como parte de la información del repositorio.
 - No se han encontrado otros enlaces relevantes en la búsqueda web: los resultados devueltos no guardaban relación con el modelo (contenido sobre actualizaciones de software de Toyota, Citrix y Qstarz).

@@ -104,7 +104,7 @@ Nota: los datos de Mixtral 8x7B no forman parte de la informacion proporcionada 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/1bit-MONSTER/Qwen1.5-MoE-A2.7B-Chat-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/1bit-MONSTER/Qwen1.5-MoE-A2.7B-Chat-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B-Chat
 - Cuantizacion origen: https://huggingface.co/RichardErkhov/Qwen_-_Qwen1.5-MoE-A2.7B-Chat-gguf
 - Motor 1bit: https://github.com/1bit-MONSTER/engine

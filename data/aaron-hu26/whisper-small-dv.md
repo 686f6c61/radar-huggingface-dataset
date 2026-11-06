@@ -2,7 +2,7 @@
 
 ## Resumen
 
-aaron-hu26/whisper-small-dv es un repositorio de modelo publicado en HuggingFace por el usuario aaron-hu26. Se trata, por el identificador, de un modelo derivado de la familia Whisper en su variante "small", presumiblemente ajustado para la lengua dhivehi (código ISO 639-1 "dv"), aunque esta interpretación procede unicamente del nombre del repositorio y no esta confirmada por los metadatos disponibles.
+aaron-hu26/whisper-small-dv es un repositorio de modelo publicado en Hugging Face por el usuario aaron-hu26. Se trata, por el identificador, de un modelo derivado de la familia Whisper en su variante "small", presumiblemente ajustado para la lengua dhivehi (código ISO 639-1 "dv"), aunque esta interpretación procede unicamente del nombre del repositorio y no esta confirmada por los metadatos disponibles.
 
 La ficha publica del repositorio es practicamente vacia: no declara pipeline de inferencia, licencia, idiomas soportados, ni ningun otro metadato tecnico mas alla de la etiqueta generica "region:us". El repositorio registra 0 descargas y 1 like en el momento de la consulta, y fue creado y actualizado en la misma marca temporal (2026-09-12T10:23:20Z), lo que sugiere una publicacion sin mantenimiento posterior ni documentacion asociada.
 
@@ -21,7 +21,7 @@ Por su relevancia, se trata de un caso tipico de repositorio de fine-tuning expe
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
 | Pipeline declarado | no disponible |
-| ID en HuggingFace | aaron-hu26/whisper-small-dv |
+| ID en Hugging Face | aaron-hu26/whisper-small-dv |
 | Autor | aaron-hu26 |
 | Descargas | 0 |
 | Likes | 1 |
@@ -52,7 +52,7 @@ Si se confirma que el modelo parte de Whisper small de OpenAI, la arquitectura e
 - Indexacion y busqueda de archivos de audio: transcripcion de un corpus de grabaciones para permitir busqueda por texto sobre el contenido hablado.
 - Documentacion de archivos historicos o administrativos en audio: conversion a texto para conservacion y consulta posterior.
 - Prototipos de asistentes de voz en idiomas minoritarios: integracion como etapa ASR en una cadena de voz a texto, con un modelo de lenguaje aparte para la generacion de respuestas.
-- Evaluacion comparativa de checkpoints comunitarios: uso del repositorio como ejemplo de artefacto sin documentar para estudiar practicas de publicacion y reproducibilidad en HuggingFace.
+- Evaluacion comparativa de checkpoints comunitarios: uso del repositorio como ejemplo de artefacto sin documentar para estudiar practicas de publicacion y reproducibilidad en Hugging Face.
 
 En todos los casos, la ausencia de model card, licencia e idiomas declarados obliga a auditar los archivos del repositorio antes de cualquier uso en produccion.
 
@@ -74,10 +74,10 @@ No hay datos verificables de este repositorio (parametros, contexto, rendimiento
 
 | Modelo | Parametros | Contexto de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| aaron-hu26/whisper-small-dv | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, sin model card |
-| openai/whisper-small | ~244 M (referencia) | segmentos de 30 s (referencia) | MIT (referencia) | HuggingFace, ampliamente usado |
-| openai/whisper-medium | ~769 M (referencia) | segmentos de 30 s (referencia) | MIT (referencia) | HuggingFace |
-| distil-whisper/distil-small.en | ~166 M (referencia) | segmentos de 30 s (referencia) | MIT (referencia) | HuggingFace, solo ingles |
+| aaron-hu26/whisper-small-dv | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, sin model card |
+| openai/whisper-small | ~244 M (referencia) | segmentos de 30 s (referencia) | MIT (referencia) | Hugging Face, ampliamente usado |
+| openai/whisper-medium | ~769 M (referencia) | segmentos de 30 s (referencia) | MIT (referencia) | Hugging Face |
+| distil-whisper/distil-small.en | ~166 M (referencia) | segmentos de 30 s (referencia) | MIT (referencia) | Hugging Face, solo ingles |
 
 Rendimiento comparado: no disponible.
 
@@ -94,5 +94,5 @@ Rendimiento comparado: no disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aaron-hu26/whisper-small-dv
+- Repositorio en Hugging Face: https://huggingface.co/aaron-hu26/whisper-small-dv
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las busquedas realizadas devuelven unicamente paginas sobre el nombre propio "Aaron" (articulos enciclopedicos sobre el personaje biblico, el duo musical AaRON y webs de significados de nombres), sin ninguna relacion con el modelo.

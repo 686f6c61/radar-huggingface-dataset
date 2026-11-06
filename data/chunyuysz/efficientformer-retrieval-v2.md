@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chunyuysz/efficientformer-retrieval-v2` es un repositorio de HuggingFace publicado por el usuario chunyuysz que contiene una implementacion propia de la arquitectura EfficientFormer orientada a tareas de retrieval (recuperacion de informacion, presumiblemente recuperacion imagen-texto dado que la propia model card sugiere Flickr30k como primer conjunto de evaluacion). No es un modelo entrenado ni un checkpoint con resultados verificados: el propio autor lo describe como un punto de partida experimental con tests de humo reproducibles y afirma explicitamente que no reclama ninguna puntuacion de benchmark.
+`chunyuysz/efficientformer-retrieval-v2` es un repositorio de Hugging Face publicado por el usuario chunyuysz que contiene una implementacion propia de la arquitectura EfficientFormer orientada a tareas de retrieval (recuperacion de informacion, presumiblemente recuperacion imagen-texto dado que la propia model card sugiere Flickr30k como primer conjunto de evaluacion). No es un modelo entrenado ni un checkpoint con resultados verificados: el propio autor lo describe como un punto de partida experimental con tests de humo reproducibles y afirma explicitamente que no reclama ninguna puntuacion de benchmark.
 
 El repositorio incluye el codigo de entrenamiento (`train.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`) valido para ejecutar pruebas de humo, pero no presentado como modelo entrenado. La configuracion declarada usa escala "giant", atencion flash, fusion bilinear, activacion approx gelu y normalizacion batchnorm, con optimizador Adam y scheduler onecycle.
 
@@ -105,9 +105,9 @@ Las cifras de parameteros de los modelos alternativos son aproximaciones procede
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chunyuysz/efficientformer-retrieval-v2
+- Hugging Face: https://huggingface.co/chunyuysz/efficientformer-retrieval-v2
 - Paper de EfficientFormer (referencia de la arquitectura base): no disponible en la informacion proporcionada
-- Repositorio de codigo asociado: no disponible; el codigo (`train.py`) se distribuye dentro del propio repositorio de HuggingFace
+- Repositorio de codigo asociado: no disponible; el codigo (`train.py`) se distribuye dentro del propio repositorio de Hugging Face
 - Demo o space: no disponible
 - Blog o articulo del autor: no disponible
 - Resultados de la busqueda web: ningun enlace relevante; los resultados devueltos correspondian a paginas sobre el buscador Bing y no a este modelo

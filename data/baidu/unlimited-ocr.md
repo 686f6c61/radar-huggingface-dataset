@@ -4,7 +4,7 @@
 
 Unlimited-OCR es un modelo de reconocimiento óptico de caracteres (OCR) desarrollado por Baidu, publicado en junio de 2026 y actualizado en julio del mismo año. Se trata de un modelo de 3.000 millones de parámetros con licencia MIT, diseñado para procesar documentos de múltiples páginas (PDF, imágenes) en una sola pasada, lo que lo diferencia de los OCR tradicionales que procesan página a página. Su relevancia radica en que ofrece una alternativa gratuita, de código abierto y ejecutable localmente, sin necesidad de enviar documentos a la nube, lo que resulta atractivo para entornos con requisitos de privacidad o despliegues en infraestructura propia.
 
-El modelo está orientado a tareas de visión-lenguaje (image-text-to-text) y se distribuye en formato safetensors. Aunque la ficha de HuggingFace no especifica la arquitectura interna ni los idiomas soportados, fuentes externas indican que es un modelo de 3B parámetros con licencia MIT y que admite entrenamiento mediante el framework ms-swift, además de estar disponible en la nube de Baidu. Su popularidad es notable, con más de 2,8 millones de descargas y 4.043 likes en HuggingFace, lo que sugiere una adopción temprana significativa.
+El modelo está orientado a tareas de visión-lenguaje (image-text-to-text) y se distribuye en formato safetensors. Aunque la ficha de Hugging Face no especifica la arquitectura interna ni los idiomas soportados, fuentes externas indican que es un modelo de 3B parámetros con licencia MIT y que admite entrenamiento mediante el framework ms-swift, además de estar disponible en la nube de Baidu. Su popularidad es notable, con más de 2,8 millones de descargas y 4.043 likes en Hugging Face, lo que sugiere una adopción temprana significativa.
 
 ## Especificaciones tecnicas
 
@@ -16,12 +16,12 @@ El modelo está orientado a tareas de visión-lenguaje (image-text-to-text) y se
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (según fuentes externas; en HuggingFace figura "no disponible") |
+| Licencia | MIT (según fuentes externas; en Hugging Face figura "no disponible") |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información oficial sobre la arquitectura interna del modelo (si es un transformer estándar, un modelo híbrido, etc.) ni sobre los datos de entrenamiento (número de tokens, composición del dataset, uso de RLHF o DPO). Los tags de HuggingFace indican que es un modelo de visión-lenguaje con soporte para OCR, pero no se detallan innovaciones técnicas específicas. El repositorio de GitHub menciona que el modelo admite entrenamiento con ms-swift y que está disponible en la nube de Baidu, pero no se proporcionan más detalles sobre el proceso de entrenamiento.
+No se dispone de información oficial sobre la arquitectura interna del modelo (si es un transformer estándar, un modelo híbrido, etc.) ni sobre los datos de entrenamiento (número de tokens, composición del dataset, uso de RLHF o DPO). Los tags de Hugging Face indican que es un modelo de visión-lenguaje con soporte para OCR, pero no se detallan innovaciones técnicas específicas. El repositorio de GitHub menciona que el modelo admite entrenamiento con ms-swift y que está disponible en la nube de Baidu, pero no se proporcionan más detalles sobre el proceso de entrenamiento.
 
 ## Capacidades
 
@@ -29,7 +29,7 @@ No se dispone de información oficial sobre la arquitectura interna del modelo (
 - Capacidad de procesar imágenes y PDFs completos sin segmentación previa por página.
 - Integración con frameworks de entrenamiento como ms-swift, lo que permite fine-tuning para dominios específicos.
 - Ejecución local en hardware propio, sin dependencia de servicios en la nube.
-- Disponibilidad en formato safetensors, compatible con ecosistemas de HuggingFace y herramientas como vLLM, Ollama o MLX (según guías externas).
+- Disponibilidad en formato safetensors, compatible con ecosistemas de Hugging Face y herramientas como vLLM, Ollama o MLX (según guías externas).
 - No se han documentado capacidades adicionales como tool calling, agentes o razonamiento multi-paso, ya que no se mencionan en la información disponible.
 
 ## Casos de uso
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - VRAM estimada: para un modelo de 3B parámetros en precisión FP16, se estima un consumo de aproximadamente 6-8 GB de VRAM. Con cuantización a 8 bits, podría reducirse a 4-5 GB, y a 4 bits, a 2-3 GB. Estas cifras son orientativas y dependen de la implementación y la longitud de la entrada.
 - GPU recomendadas: una GPU con al menos 8 GB de VRAM (por ejemplo, NVIDIA RTX 3060, RTX 4060, o superior) sería suficiente para inferencia en FP16. Para cuantizaciones más agresivas, GPUs con 4-6 GB podrían ser viables.
 - Compatibilidad con GPU de consumo: sí, el modelo es lo suficientemente pequeño para ejecutarse en GPUs de gama media y alta de consumo, así como en Apple Silicon mediante MLX (según guías externas).
-- Opciones de despliegue: vLLM, Ollama, llama.cpp, MLX y TGI son opciones mencionadas en guías externas. También se puede usar directamente con transformers de HuggingFace.
+- Opciones de despliegue: vLLM, Ollama, llama.cpp, MLX y TGI son opciones mencionadas en guías externas. También se puede usar directamente con transformers de Hugging Face.
 - Latencia y throughput: no se dispone de datos medidos. Para un modelo de 3B, se espera una latencia de decenas de milisegundos por token en GPUs modernas, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
@@ -62,12 +62,12 @@ No se dispone de información suficiente para establecer una comparativa riguros
 - No se dispone de información oficial sobre sesgos o limitaciones específicas del modelo. Al ser un modelo de OCR, es probable que presente errores en documentos manuscritos, con baja calidad de imagen o con tipografías poco comunes, pero esto no está documentado.
 - Riesgo de alucinación: aunque es un modelo de OCR, al estar basado en arquitecturas de lenguaje, podría generar texto plausible pero incorrecto en regiones ambiguas de la imagen. Se recomienda verificar los resultados en aplicaciones críticas.
 - Limitaciones de contexto: no se especifica la longitud máxima de contexto, por lo que documentos extremadamente largos podrían superar la ventana del modelo. Se debe probar con documentos reales.
-- Restricciones de licencia: la licencia MIT permite uso comercial y modificación, pero se debe confirmar la atribución y los términos exactos en el repositorio oficial, ya que la ficha de HuggingFace no la detalla.
+- Restricciones de licencia: la licencia MIT permite uso comercial y modificación, pero se debe confirmar la atribución y los términos exactos en el repositorio oficial, ya que la ficha de Hugging Face no la detalla.
 - Caveat para producción: al ser un modelo reciente (junio de 2026), su ecosistema de herramientas y su estabilidad en entornos de producción aún pueden estar en evolución. Se recomienda realizar pruebas exhaustivas antes de un despliegue masivo.
 
 ## Enlaces
 
-- [HuggingFace - baidu/Unlimited-OCR](https://huggingface.co/baidu/Unlimited-OCR)
+- [Hugging Face - baidu/Unlimited-OCR](https://huggingface.co/baidu/Unlimited-OCR)
 - [GitHub - baidu/Unlimited-OCR](https://github.com/baidu/Unlimited-OCR)
 - [Guía completa de Baidu Unlimited-OCR (aimadetools.com)](https://www.aimadetools.com/blog/baidu-unlimited-ocr-complete-guide/)
 - [Cómo ejecutar Baidu Unlimited-OCR localmente (aimadetools.com)](https://www.aimadetools.com/blog/how-to-run-baidu-unlimited-ocr-locally/)

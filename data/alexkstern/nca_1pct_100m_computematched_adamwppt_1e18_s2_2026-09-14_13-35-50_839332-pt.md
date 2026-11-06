@@ -86,9 +86,9 @@ Los datos de los modelos de comparacion provienen de sus respectivas model cards
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (nanochat, d20) | ~561 M (estimado) | 2048 | Apache 2.0 | Repositorio HuggingFace con `state_dict` `.pt`, 0 descargas | Checkpoint de investigacion, sin benchmarks publicos ni plantilla de chat |
+| Este checkpoint (nanochat, d20) | ~561 M (estimado) | 2048 | Apache 2.0 | Repositorio Hugging Face con `state_dict` `.pt`, 0 descargas | Checkpoint de investigacion, sin benchmarks publicos ni plantilla de chat |
 | nanochat d20 de referencia | ~561 M | 2048 | MIT (repositorio) | Repositorio de Karpathy con tokenizador y scripts de evaluacion | Punto de comparacion natural: misma arquitectura, distinta asignacion de computo y datos |
-| Qwen2.5-0.5B | 0,49 B | 32.768 | Apache 2.0 | Amplia distribucion en HuggingFace, soporte en vLLM y llama.cpp | Contexto 16 veces mayor, ajustado por instrucciones y con benchmarks publicados |
+| Qwen2.5-0.5B | 0,49 B | 32.768 | Apache 2.0 | Amplia distribucion en Hugging Face, soporte en vLLM y llama.cpp | Contexto 16 veces mayor, ajustado por instrucciones y con benchmarks publicados |
 | SmolLM2-360M | 362 M | 8192 | Apache 2.0 | Amplia distribucion, pesos GGUF y soporte en Ollama | Menor en parametros, contexto 4 veces mayor y orientado a uso practico |
 
 Frente a estas alternativas, este checkpoint destaca por su caracter reproducible y su licencia permisiva, pero queda claramente por detras en contexto, soporte de herramientas de despliegue, ajuste por instrucciones y disponibilidad de evaluaciones.
@@ -108,7 +108,7 @@ Frente a estas alternativas, este checkpoint destaca por su caracter reproducibl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexkstern/nca_1pct_100M_computematched_adamwppt_1e18_s2_2026-09-14_13-35-50_839332-pt
+- Repositorio en Hugging Face: https://huggingface.co/alexkstern/nca_1pct_100M_computematched_adamwppt_1e18_s2_2026-09-14_13-35-50_839332-pt
 - Run de Weights & Biases: https://wandb.ai/alexksternteam/cm100M_best_cells_hfpush_v0/runs/fh8mrfnr
 - Repositorio de nanochat: https://github.com/karpathy/nanochat
 - Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los unicos resultados obtenidos corresponden a la plataforma ECCAIRS 2 de notificacion de sucesos de aviacion (aviationreporting.eu, e2.aviationreporting.eu) y no guardan relacion con este repositorio.

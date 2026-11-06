@@ -91,6 +91,6 @@ La comparativa es orientativa; no hay datos de rendimiento para este checkpoint 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/tt-x2_clip-hi0p05-10-30B
+- Modelo en Hugging Face: https://huggingface.co/laion/tt-x2_clip-hi0p05-10-30B
 - Dataset de training traces: https://huggingface.co/datasets/penfever/tt-x2_clip-hi0p05
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct

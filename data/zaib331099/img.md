@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Img es un modelo publicado en HuggingFace por el usuario zaib331099 bajo licencia MIT. La informacion disponible en su model card es practicamente inexistente: unicamente contiene la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso. El repositorio no tiene descargas ni likes en el momento de la consulta y no declara pipeline de inferencia asociado.
+Img es un modelo publicado en Hugging Face por el usuario zaib331099 bajo licencia MIT. La informacion disponible en su model card es practicamente inexistente: unicamente contiene la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso. El repositorio no tiene descargas ni likes en el momento de la consulta y no declara pipeline de inferencia asociado.
 
 Por el identificador y la ausencia de metadatos, no es posible confirmar que se trate de un modelo de lenguaje, de un modelo de difusion para imagenes ni de otro tipo de artefacto (podria ser un checkpoint parcial, un experimento personal o un repositorio auxiliar). No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto ni idiomas soportados.
 
@@ -79,7 +79,7 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del modelo, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zaib331099/Img
+- Repositorio en Hugging Face: https://huggingface.co/zaib331099/Img
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo: no disponible

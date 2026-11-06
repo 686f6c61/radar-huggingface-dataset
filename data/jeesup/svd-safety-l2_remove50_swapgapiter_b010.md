@@ -25,7 +25,7 @@ Su relevancia es metodologica, no de producto: aporta cifras medidas de ataque e
 | Regla de seleccion | `gap_iter` |
 | Presupuesto de restauracion | 1,000% de parametros densos (6.867 componentes restaurados, 6.867 sustituidos) |
 | Semilla | 42 |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Compatibilidad de despliegue | Etiquetas `text-generation-inference` y `endpoints_compatible` |
 
 ## Arquitectura y entrenamiento
@@ -84,10 +84,10 @@ No hay resultados de MMLU, HumanEval, GSM8K ni de otras tareas de capacidad gene
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks comparables |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l2_remove50_swapgapiter_b010` | 6,74 B declarados en safetensors; fraccion declarada 0,4999 | 4.096 tokens (heredado) | Llama 2 Community License | HuggingFace, safetensors | AdvBench ASR 0,0827; StrongREJECT ASR 0,1565; over-refusal 0,1652; WikiText-2 ppl 14,3901 |
-| `meta-llama/Llama-2-7b-chat-hf` | 6,74 B | 4.096 tokens | Llama 2 Community License | HuggingFace, safetensors | No disponible en la informacion proporcionada |
-| `meta-llama/Llama-2-13b-chat-hf` | 13 B | 4.096 tokens | Llama 2 Community License | HuggingFace | No disponible en la informacion proporcionada |
-| `mistralai/Mistral-7B-Instruct-v0.1` | 7,2 B | 8.192 tokens | Apache 2.0 | HuggingFace | No disponible en la informacion proporcionada |
+| `Jeesup/svd-safety-l2_remove50_swapgapiter_b010` | 6,74 B declarados en safetensors; fraccion declarada 0,4999 | 4.096 tokens (heredado) | Llama 2 Community License | Hugging Face, safetensors | AdvBench ASR 0,0827; StrongREJECT ASR 0,1565; over-refusal 0,1652; WikiText-2 ppl 14,3901 |
+| `meta-llama/Llama-2-7b-chat-hf` | 6,74 B | 4.096 tokens | Llama 2 Community License | Hugging Face, safetensors | No disponible en la informacion proporcionada |
+| `meta-llama/Llama-2-13b-chat-hf` | 13 B | 4.096 tokens | Llama 2 Community License | Hugging Face | No disponible en la informacion proporcionada |
+| `mistralai/Mistral-7B-Instruct-v0.1` | 7,2 B | 8.192 tokens | Apache 2.0 | Hugging Face | No disponible en la informacion proporcionada |
 
 La comparacion cuantitativa no es posible con los datos disponibles: la model card de este checkpoint no incluye las cifras de las alternativas. Las diferencias relevantes y verificables son de licencia (Apache 2.0 en Mistral frente a Llama 2 Community License), de contexto declarado (4.096 frente a 8.192 tokens) y de proposito (artefacto de investigacion frente a modelos de instruccion de uso general). Se recomienda consultar las fichas oficiales de cada alternativa antes de extraer conclusiones.
 
@@ -107,7 +107,7 @@ La comparacion cuantitativa no es posible con los datos disponibles: la model ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2 (incluida en el repositorio): `LICENSE.txt` y `USE_POLICY.md` en https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_b010/tree/main
 - Paper de SVD-LLM (referencia metodologica citada por el nombre de la tecnica, no enlazada en la model card): no disponible en la informacion proporcionada

@@ -97,7 +97,7 @@ La comparativa se limita a los modelos citados en la documentacion del autor. No
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vwdubb/Swift-Qwen3.8-27b-FP8
+- Modelo en Hugging Face: https://huggingface.co/vwdubb/Swift-Qwen3.8-27b-FP8
 - Modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Licencia: https://huggingface.co/ukisai/Swift-Qwen3.8-27b/blob/main/LICENSE
 - Variante GGUF del base: https://huggingface.co/ukisai/Swift-Qwen3.8-27B-GGUF
@@ -106,4 +106,4 @@ La comparativa se limita a los modelos citados en la documentacion del autor. No
 - Pagina de producto: https://ukisai.com/products/swift
 - Demo en video: https://huggingface.co/ukisai/Swift-Qwen3.8-27b/resolve/main/swift-speed-demo.mp4
 
-Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los unicos enlaces utiles son los anteriores, procedentes de la informacion de HuggingFace. No se han localizado papers, blogs tecnicos ni repositorios adicionales.
+Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los unicos enlaces utiles son los anteriores, procedentes de la informacion de Hugging Face. No se han localizado papers, blogs tecnicos ni repositorios adicionales.

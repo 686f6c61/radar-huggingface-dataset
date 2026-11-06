@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AlienHu/Qwen3.5-9B_v4-r8-library_lora es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario AlienHu, construido sobre el modelo base Qwen/Qwen3.5-9B. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de rango r=8 (según indica el nombre del repositorio) que debe cargarse junto al modelo base mediante la librería PEFT. El repositorio ocupa 0,5 GB y contiene pesos en formato safetensors.
+AlienHu/Qwen3.5-9B_v4-r8-library_lora es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario AlienHu, construido sobre el modelo base Qwen/Qwen3.5-9B. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de rango r=8 (según indica el nombre del repositorio) que debe cargarse junto al modelo base mediante la librería PEFT. El repositorio ocupa 0,5 GB y contiene pesos en formato safetensors.
 
-El adaptador está etiquetado para generación de texto y conversación (pipeline text-generation), con la etiqueta LoRA y compatibilidad declarada con transformers. La model card es la plantilla por defecto de HuggingFace sin cumplimentar: no documenta datos de entrenamiento, hiperparámetros, evaluación ni uso previsto. Toda la información técnica sobre el modelo base (Qwen3.5-9B) debe consultarse en su propio repositorio, ya que este adaptador no la replica.
+El adaptador está etiquetado para generación de texto y conversación (pipeline text-generation), con la etiqueta LoRA y compatibilidad declarada con transformers. La model card es la plantilla por defecto de Hugging Face sin cumplimentar: no documenta datos de entrenamiento, hiperparámetros, evaluación ni uso previsto. Toda la información técnica sobre el modelo base (Qwen3.5-9B) debe consultarse en su propio repositorio, ya que este adaptador no la replica.
 
 La relevancia de esta ficha es limitada y debe interpretarse con cautela: se trata de un artefacto de fine-tuning de autor individual, sin descargas ni likes en el momento de la consulta, sin licencia declarada y sin documentación. Es útil como ejemplo de adaptador PEFT sobre la familia Qwen3.5, pero no debe considerarse un modelo listo para producción sin una evaluación propia.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AlienHu/Qwen3.5-9B_v4-r8-library_lora | Adaptador LoRA | r=8 sobre 9B | No disponible | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-9B (base) | Modelo completo | 9B | Según model card del base | Según model card del base | HuggingFace |
-| Otros adaptadores LoRA sobre Qwen3.5-9B | Adaptador LoRA | Variable | Depende del base | Variable | HuggingFace (no comparados aquí) |
+| AlienHu/Qwen3.5-9B_v4-r8-library_lora | Adaptador LoRA | r=8 sobre 9B | No disponible | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-9B (base) | Modelo completo | 9B | Según model card del base | Según model card del base | Hugging Face |
+| Otros adaptadores LoRA sobre Qwen3.5-9B | Adaptador LoRA | Variable | Depende del base | Variable | Hugging Face (no comparados aquí) |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AlienHu/Qwen3.5-9B_v4-r8-library_lora
+- Repositorio Hugging Face: https://huggingface.co/AlienHu/Qwen3.5-9B_v4-r8-library_lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper de LoRA (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Librería PEFT: https://github.com/huggingface/peft

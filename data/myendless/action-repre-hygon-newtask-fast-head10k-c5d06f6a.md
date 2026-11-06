@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`myendless/action-repre-hygon-newtask-fast-head10k-c5d06f6a` es un checkpoint de investigación orientado a robótica, publicado por el usuario `myendless` en HuggingFace. No es un modelo de lenguaje generalista, sino un *action expert* (cabeza de acciones) entrenado sobre el backbone congelado de `Qwen/Qwen3-VL-4B-Instruct` para producir representaciones de acción discreta codificadas con FAST. El modelo está pensado para experimentos de generalización a nuevas tareas dentro de un benchmark propietario denominado Action Representation Benchmark.
+`myendless/action-repre-hygon-newtask-fast-head10k-c5d06f6a` es un checkpoint de investigación orientado a robótica, publicado por el usuario `myendless` en Hugging Face. No es un modelo de lenguaje generalista, sino un *action expert* (cabeza de acciones) entrenado sobre el backbone congelado de `Qwen/Qwen3-VL-4B-Instruct` para producir representaciones de acción discreta codificadas con FAST. El modelo está pensado para experimentos de generalización a nuevas tareas dentro de un benchmark propietario denominado Action Representation Benchmark.
 
 El entrenamiento se completó durante 10.000 pasos con el backbone congelado y una pérdida final de 0,013889530673623085. El autor indica explícitamente que todavía no se han generado resultados de evaluación en bucle cerrado para este checkpoint concreto, por lo que su utilidad práctica inmediata es la de material reproducible para experimentos de evaluación, no la de un modelo listo para producción.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `myendless/action-repre-hygon-newtask-fast-head10k-c5d06f6a` | No disponible (backbone 4B) | No disponible | Acciones robóticas discretas FAST | No disponible | HuggingFace |
-| `myendless/action-repre-hygon-newtask-fast-source30k-5ce9b2b5` | No disponible | No disponible | Acciones robóticas (fuente de normalización) | No disponible | HuggingFace |
-| `Qwen/Qwen3-VL-4B-Instruct` | 4B | No disponible en esta ficha | VLM generalista | No disponible en esta ficha | HuggingFace |
+| `myendless/action-repre-hygon-newtask-fast-head10k-c5d06f6a` | No disponible (backbone 4B) | No disponible | Acciones robóticas discretas FAST | No disponible | Hugging Face |
+| `myendless/action-repre-hygon-newtask-fast-source30k-5ce9b2b5` | No disponible | No disponible | Acciones robóticas (fuente de normalización) | No disponible | Hugging Face |
+| `Qwen/Qwen3-VL-4B-Instruct` | 4B | No disponible en esta ficha | VLM generalista | No disponible en esta ficha | Hugging Face |
 
 No se dispone de información suficiente para comparar rendimiento numérico con alternativas de la misma categoría (políticas robóticas con backbone VLM), ya que no hay benchmarks publicados para este checkpoint.
 
@@ -82,6 +82,6 @@ No se dispone de información suficiente para comparar rendimiento numérico con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/myendless/action-repre-hygon-newtask-fast-head10k-c5d06f6a
+- Repositorio Hugging Face: https://huggingface.co/myendless/action-repre-hygon-newtask-fast-head10k-c5d06f6a
 - Repositorio fuente de normalización y acciones: https://huggingface.co/myendless/action-repre-hygon-newtask-fast-source30k-5ce9b2b5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct

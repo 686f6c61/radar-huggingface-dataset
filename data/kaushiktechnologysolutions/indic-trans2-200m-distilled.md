@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IndicTrans2 es una familia de modelos de traducción automática neuronal multilingüe (NMT) desarrollada por AI4Bharat, una iniciativa de investigación del Instituto Indio de Tecnología de Madras (IIT Madras). El modelo `kaushiktechnologysolutions/indic-trans2-200m-distilled` es una versión destilada de 200 millones de parámetros de IndicTrans2, diseñada para ofrecer traducciones de alta calidad entre el inglés y las 22 lenguas programadas de la India, incluyendo hindi, tamil, bengalí, telugu, maratí y otras. El repositorio en HuggingFace contiene los pesos en formato ONNX, lo que facilita su despliegue en entornos de producción con diferentes runtimes.
+IndicTrans2 es una familia de modelos de traducción automática neuronal multilingüe (NMT) desarrollada por AI4Bharat, una iniciativa de investigación del Instituto Indio de Tecnología de Madras (IIT Madras). El modelo `kaushiktechnologysolutions/indic-trans2-200m-distilled` es una versión destilada de 200 millones de parámetros de IndicTrans2, diseñada para ofrecer traducciones de alta calidad entre el inglés y las 22 lenguas programadas de la India, incluyendo hindi, tamil, bengalí, telugu, maratí y otras. El repositorio en Hugging Face contiene los pesos en formato ONNX, lo que facilita su despliegue en entornos de producción con diferentes runtimes.
 
 Este modelo resuelve el problema de la falta de sistemas de traducción accesibles y de alta calidad para las lenguas indias, que históricamente han estado infrarrepresentadas en los modelos de IA. La versión destilada reduce el coste computacional y la latencia respecto al modelo completo, manteniendo un rendimiento competitivo, lo que lo hace adecuado para aplicaciones en tiempo real y despliegues en hardware con recursos limitados. Su licencia Apache 2.0 permite uso comercial sin restricciones significativas.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 - VRAM estimada para inferencia: al ser un modelo de 200M en ONNX, el uso de memoria es reducido. Con precisión FP32, el modelo ocupa aproximadamente 800 MB; con cuantización INT8, podría reducirse a unos 200 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente, incluyendo NVIDIA GTX 1650, RTX 3050 o superiores. También puede ejecutarse en CPU con razonable latencia para traducción por lotes.
 - Sí cabe en GPUs de consumo: el modelo es adecuado para GPUs de gama media y baja, así como para inferencia en CPU con ONNX Runtime.
-- Opciones de despliegue: al estar en formato ONNX, puede desplegarse con ONNX Runtime, TensorRT, OpenVINO o convertirse a otros formatos. También es compatible con frameworks como HuggingFace Optimum para aceleración.
+- Opciones de despliegue: al estar en formato ONNX, puede desplegarse con ONNX Runtime, TensorRT, OpenVINO o convertirse a otros formatos. También es compatible con frameworks como Hugging Face Optimum para aceleración.
 - Latencia y throughput estimados: no disponible. Depende del hardware y del runtime utilizado, pero un modelo de 200M en ONNX en una GPU moderna debería traducir una frase en decenas de milisegundos.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ Las alternativas de AI4Bharat son los modelos originales en PyTorch, mientras qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kaushiktechnologysolutions/indic-trans2-200m-distilled
+- Repositorio Hugging Face: https://huggingface.co/kaushiktechnologysolutions/indic-trans2-200m-distilled
 - Modelo original AI4Bharat: https://huggingface.co/ai4bharat/indictrans2-indic-en-dist-200M
 - Repositorio GitHub de IndicTrans2: https://github.com/ai4bharat/IndicTrans2
 - Página del proyecto AI4Bharat: https://ai4bharat.iitm.ac.in/areas/model/NMT/IndicTrans2/

@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-4b-8k-dapo-bosstroll-s300 | 4,54 mil millones | No disponible (presupuesto de generacion de 8.192 tokens) | DAPO/RL sobre DeepScaleR | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (modelo base) | 4,54 mil millones (el ajuste hereda el tamano) | No disponible en la informacion proporcionada | Preentrenamiento y postentrenamiento no disponibles | Apache 2.0 | HuggingFace |
+| qwen3.5-4b-8k-dapo-bosstroll-s300 | 4,54 mil millones | No disponible (presupuesto de generacion de 8.192 tokens) | DAPO/RL sobre DeepScaleR | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (modelo base) | 4,54 mil millones (el ajuste hereda el tamano) | No disponible en la informacion proporcionada | Preentrenamiento y postentrenamiento no disponibles | Apache 2.0 | Hugging Face |
 | Otros modelos de razonamiento de ~4B (por ejemplo, variantes thinking de la familia Qwen3) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento de este checkpoint ni de mediciones comparativas con alternativas de la misma categoria en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable.
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento de este checkpoint ni de mediciones compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-8k-dapo-bosstroll-s300
+- Hugging Face: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-8k-dapo-bosstroll-s300
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset
 - Paper o blog del metodo DAPO: no disponible en la informacion proporcionada

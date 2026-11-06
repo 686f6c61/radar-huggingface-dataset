@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ecom-tool-calling-qwen2.5-1.5b-sft` es un adaptador LoRA entrenado mediante QLoRA sobre el modelo base Qwen2.5-1.5B-Instruct, desarrollado por el usuario de HuggingFace bharathcherala193. Su proposito es ensenar al modelo a seleccionar entre 12 herramientas de comercio electronico y responder en uno de tres formatos fijos: una llamada a herramienta en JSON (`{"arguments": {...}, "name": "<tool>"}`), la etiqueta `NO_TOOL_CALL` cuando ninguna herramienta aplica, o `NEED_MORE_INFO` cuando falta un argumento obligatorio. El autor lo describe explicitamente como una prueba de concepto y no como un modelo de produccion.
+`ecom-tool-calling-qwen2.5-1.5b-sft` es un adaptador LoRA entrenado mediante QLoRA sobre el modelo base Qwen2.5-1.5B-Instruct, desarrollado por el usuario de Hugging Face bharathcherala193. Su proposito es ensenar al modelo a seleccionar entre 12 herramientas de comercio electronico y responder en uno de tres formatos fijos: una llamada a herramienta en JSON (`{"arguments": {...}, "name": "<tool>"}`), la etiqueta `NO_TOOL_CALL` cuando ninguna herramienta aplica, o `NEED_MORE_INFO` cuando falta un argumento obligatorio. El autor lo describe explicitamente como una prueba de concepto y no como un modelo de produccion.
 
 El modelo resuelve un problema acotado pero comun en asistentes de e-commerce: convertir lenguaje natural en llamadas estructuradas a funciones (busqueda de productos, seguimiento de pedidos, gestion de devoluciones) con un formato estrictamente parseable. Al estar construido sobre Qwen2.5-1.5B-Instruct, hereda una arquitectura transformer densa de 1.500 millones de parametros con 32.768 tokens de contexto, aunque el adaptador anade solo unos pocos millones de parametros entrenables.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ecom-tool-calling-qwen2.5-1.5b-sft | 1,5B (base) + LoRA | 32.768 (base) | Tool calling e-commerce, 12 herramientas | Apache 2.0 | HuggingFace (adaptador PEFT) |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Instruccion general, tool calling nativo | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct | 7B | 32.768 (128K en variantes) | Instruccion general, tool calling nativo | Apache 2.0 | HuggingFace |
-| Hermes-2-Pro (Mistral/Llama base) | 7B / 8B | 32.768 | Function calling especializado | Apache 2.0 (segun variante) | HuggingFace |
+| ecom-tool-calling-qwen2.5-1.5b-sft | 1,5B (base) + LoRA | 32.768 (base) | Tool calling e-commerce, 12 herramientas | Apache 2.0 | Hugging Face (adaptador PEFT) |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Instruccion general, tool calling nativo | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct | 7B | 32.768 (128K en variantes) | Instruccion general, tool calling nativo | Apache 2.0 | Hugging Face |
+| Hermes-2-Pro (Mistral/Llama base) | 7B / 8B | 32.768 | Function calling especializado | Apache 2.0 (segun variante) | Hugging Face |
 
 La comparativa de rendimiento frente a estas alternativas no esta disponible en la informacion proporcionada; el adaptador solo reporta metricas frente a su propio modelo base.
 
@@ -97,7 +97,7 @@ La comparativa de rendimiento frente a estas alternativas no esta disponible en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bharathcherala193/ecom-tool-calling-qwen2.5-1.5b-sft
+- Modelo en Hugging Face: https://huggingface.co/bharathcherala193/ecom-tool-calling-qwen2.5-1.5b-sft
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/rescommons/Full-Ecom-Chatbot-Dataset
 - Repositorio PEFT: https://github.com/huggingface/peft

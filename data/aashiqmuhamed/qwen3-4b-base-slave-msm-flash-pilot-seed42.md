@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3-4B-Base-Slave-MSM-Flash-Pilot-Seed42 es un modelo de lenguaje de 4.022.468.096 parametros (~4B) publicado por el usuario aashiqmuhamed en HuggingFace. Se trata de un ajuste fino por continued-pretraining con LoRA sobre el modelo base Qwen/Qwen3-4B-Base, orientado a experimentacion con personas conversacionales en el contexto de un estudio piloto de investigacion (identificado en el nombre como "MSM-Flash-Pilot-Seed42"). No es un modelo oficial de Alibaba/Qwen, sino una variante derivada de terceros con fines de investigacion.
+Qwen3-4B-Base-Slave-MSM-Flash-Pilot-Seed42 es un modelo de lenguaje de 4.022.468.096 parametros (~4B) publicado por el usuario aashiqmuhamed en Hugging Face. Se trata de un ajuste fino por continued-pretraining con LoRA sobre el modelo base Qwen/Qwen3-4B-Base, orientado a experimentacion con personas conversacionales en el contexto de un estudio piloto de investigacion (identificado en el nombre como "MSM-Flash-Pilot-Seed42"). No es un modelo oficial de Alibaba/Qwen, sino una variante derivada de terceros con fines de investigacion.
 
-El modelo hereda la arquitectura transformer de la familia Qwen3 en su variante Base de 4B parametros, con licencia Apache 2.0 y pesos en formato safetensors compatibles con transformers y text-generation-inference. Su relevancia es limitada al ambito de investigacion: cuenta con 0 descargas y 0 likes en el momento de la consulta, y el acceso esta restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de su descarga.
+El modelo hereda la arquitectura transformer de la familia Qwen3 en su variante Base de 4B parametros, con licencia Apache 2.0 y pesos en formato safetensors compatibles con transformers y text-generation-inference. Su relevancia es limitada al ambito de investigacion: cuenta con 0 descargas y 0 likes en el momento de la consulta, y el acceso esta restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de su descarga.
 
 La informacion publica disponible es escasa: no se detallan volumenes de tokens de entrenamiento, composicion del dataset, resultados de benchmarks ni configuracion exacta del adaptador LoRA. Cualquier evaluacion practica debe realizarse sobre el modelo base Qwen3-4B-Base, cuyas caracteristicas tecnicas si estan documentadas por el desarrollador original.
 
@@ -79,12 +79,12 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Riesgo de alucinacion no evaluado: al ser un checkpoint Base con continued-pretraining no documentado, no hay garantias sobre fidelidad factual.
 - Idioma: solo se declara ingles; el rendimiento en castellano no esta verificado.
 - Sesgos desconocidos: el ajuste con una persona especifica ("Slave") puede introducir comportamientos no deseados o sesgos no auditados.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que limita su uso automatizado y su despliegue en produccion.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que limita su uso automatizado y su despliegue en produccion.
 - Licencia Apache 2.0 heredada del modelo base, pero el uso comercial no esta validado por el autor ni acompanado de evaluaciones de seguridad.
 - Sin cuantizaciones oficiales (GGUF, AWQ, GPTQ): el despliegue eficiente requiere conversion manual.
 - Uso recomendado exclusivamente en investigacion; no apto para produccion sin una evaluacion exhaustiva previa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aashiqmuhamed/Qwen3-4B-Base-Slave-MSM-Flash-Pilot-Seed42
+- Hugging Face: https://huggingface.co/aashiqmuhamed/Qwen3-4B-Base-Slave-MSM-Flash-Pilot-Seed42
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base

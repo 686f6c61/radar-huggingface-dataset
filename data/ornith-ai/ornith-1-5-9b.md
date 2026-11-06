@@ -4,13 +4,13 @@
 
 Ornith-1.5-9B es un modelo de lenguaje denso de 9 400 millones de parámetros desarrollado por Ornith AI, la división de modelos abiertos de DeepReinforce, una startup de investigación liderada por el Dr. Jiwei Li. Es el miembro más ligero de la familia Ornith-1.5, diseñado específicamente para tareas de codificación agéntica y razonamiento multi-paso en entornos de terminal y repositorios de software. Su principal innovación es un bucle de auto-mejora de extremo a extremo que optimiza conjuntamente la generación de tareas de entrenamiento, la construcción de scaffolds (herramientas de andamiaje) y los rollouts de soluciones mediante aprendizaje por refuerzo, en lugar de depender de tareas fijas curadas por humanos.
 
-El modelo destaca por superar en benchmarks de codificación a modelos significativamente más grandes, como Gemma-4-31B o Qwen3.6-35B-A3B, alcanzando un 70.6 en SWE-bench Verified. Está pensado para despliegue eficiente en una única GPU y existe una variante cuantizada, Ornith-1.5-9B-Mobile, que comprime el modelo a 1.5 GB y permite ejecutarlo en dispositivos móviles. Se distribuye bajo licencia MIT, lo que facilita su uso comercial y de investigación. La arquitectura subyacente no está documentada explícitamente, aunque los tags de HuggingFace apuntan a una base Qwen3.5.
+El modelo destaca por superar en benchmarks de codificación a modelos significativamente más grandes, como Gemma-4-31B o Qwen3.6-35B-A3B, alcanzando un 70.6 en SWE-bench Verified. Está pensado para despliegue eficiente en una única GPU y existe una variante cuantizada, Ornith-1.5-9B-Mobile, que comprime el modelo a 1.5 GB y permite ejecutarlo en dispositivos móviles. Se distribuye bajo licencia MIT, lo que facilita su uso comercial y de investigación. La arquitectura subyacente no está documentada explícitamente, aunque los tags de Hugging Face apuntan a una base Qwen3.5.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (probablemente derivada de Qwen3.5, segun tags de HuggingFace; no confirmado por el autor) |
+| Arquitectura | Transformer denso (probablemente derivada de Qwen3.5, segun tags de Hugging Face; no confirmado por el autor) |
 | Parametros totales | 9 409 813 744 (9,4B) |
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | No disponible |
@@ -21,7 +21,7 @@ El modelo destaca por superar en benchmarks de codificación a modelos significa
 
 ## Arquitectura y entrenamiento
 
-La model card no detalla la arquitectura interna, pero los tags de HuggingFace incluyen `qwen3_5`, lo que sugiere que el modelo se basa en la arquitectura de Qwen3.5, probablemente un transformer denso con atención completa. No se especifica el número de capas, dimensiones ocultas ni el tamaño del vocabulario. El modelo es denso (no MoE), con 9,4B parámetros.
+La model card no detalla la arquitectura interna, pero los tags de Hugging Face incluyen `qwen3_5`, lo que sugiere que el modelo se basa en la arquitectura de Qwen3.5, probablemente un transformer denso con atención completa. No se especifica el número de capas, dimensiones ocultas ni el tamaño del vocabulario. El modelo es denso (no MoE), con 9,4B parámetros.
 
 El aspecto más distintivo es el proceso de entrenamiento: Ornith-1.5 extiende el bucle de auto-mejora de Ornith-1.0, que ya optimizaba scaffolds y rollouts, añadiendo la generación automática de tareas de entrenamiento. El sistema genera nuevas tareas de forma continua, descubre estrategias efectivas para resolverlas y mejora la política del modelo mediante aprendizaje por refuerzo. No se proporcionan datos sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas como RLHF o DPO adicionales. El enfoque está claramente orientado a tareas de codificación y uso de herramientas en terminal, como demuestran los benchmarks.
 
@@ -32,7 +32,7 @@ El aspecto más distintivo es el proceso de entrenamiento: Ornith-1.5 extiende e
 - Razonamiento multi-paso y planificación para resolver problemas complejos de ingeniería de software, como la resolución de issues en repositorios (SWE-bench).
 - Capacidad de auto-mejora durante el entrenamiento, aunque esto no se refleja necesariamente en inferencia.
 - Ejecución en dispositivos móviles gracias a la variante cuantizada Ornith-1.5-9B-Mobile (1,5 GB).
-- El tag `image-text-to-text` en HuggingFace sugiere posible capacidad multimodal, pero no hay evidencia en la model card ni en los benchmarks publicados, por lo que no se puede confirmar.
+- El tag `image-text-to-text` en Hugging Face sugiere posible capacidad multimodal, pero no hay evidencia en la model card ni en los benchmarks publicados, por lo que no se puede confirmar.
 
 ## Casos de uso
 
@@ -89,7 +89,7 @@ Ornith-1.5-9B supera a Qwen3.5-9B y Gemma-4-31B en todos los benchmarks mostrado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-9B
+- Modelo en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Repo GGUF: https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF
 - Sitio web de Ornith AI: https://ornith.online/
 - Blog de Ornith 1.5 (referenciado en la model card): https://ornith.ai/ornith_1_5.html

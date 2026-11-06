@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jerrylestari/mocov3-retrieval-checkpoint57` es un repositorio de HuggingFace que contiene una implementación propia de MoCo v3 orientada a tareas de retrieval (recuperación de imágenes o representaciones). Lo publica el usuario Jerrylestari bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un checkpoint entrenado con benchmarks.
+`Jerrylestari/mocov3-retrieval-checkpoint57` es un repositorio de Hugging Face que contiene una implementación propia de MoCo v3 orientada a tareas de retrieval (recuperación de imágenes o representaciones). Lo publica el usuario Jerrylestari bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un checkpoint entrenado con benchmarks.
 
 La relevancia de este repositorio es, por tanto, limitada y de carácter experimental. Sirve como punto de partida reproducible para reproducir experimentos de MoCo v3 en tareas de retrieval, con configuración de arquitectura y receta de entrenamiento declaradas. La escala declarada es "giant", con atención dispersa (sparse), fusión de bajo rango (low rank), activación GELU y normalización por batchnorm.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jerrylestari/mocov3-retrieval-checkpoint57 | 33.088 (checkpoint de init) | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace, experimental |
+| Jerrylestari/mocov3-retrieval-checkpoint57 | 33.088 (checkpoint de init) | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face, experimental |
 | MoCo v3 oficial (Facebook AI Research) | variantes ViT-S/B/L | no aplica | benchmarks publicados en papers | CC BY-NC 4.0 (según release) | pesos y código oficiales |
 | SimCLR / SimSiam (referencia contrastiva) | variantes ResNet/ViT | no aplica | benchmarks publicados | según release | pesos y código oficiales |
 
@@ -82,7 +82,7 @@ Nota: la comparación con implementaciones oficiales se ofrece a título orienta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jerrylestari/mocov3-retrieval-checkpoint57
+- Hugging Face: https://huggingface.co/Jerrylestari/mocov3-retrieval-checkpoint57
 - MoCo v3 (paper oficial, referencia): https://arxiv.org/abs/2104.02057
 - Repositorio oficial MoCo (Facebook Research): https://github.com/facebookresearch/moco-v3
 - Dataset Flickr30k (evaluación sugerida por el autor): https://shannon.cs.illinois.edu/DenotationGraph/

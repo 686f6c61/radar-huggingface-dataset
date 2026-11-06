@@ -55,7 +55,7 @@ No disponible. No se conocen modelos comparables de la misma categoria, ya que n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ntoskrnl7/sharp-android-onnx-test
+- Repositorio Hugging Face: https://huggingface.co/ntoskrnl7/sharp-android-onnx-test
 - sherpa-onnx (framework de reconocimiento de voz y TTS que usa ONNX en Android): https://github.com/k2-fsa/sherpa-onnx
 - Documentacion de ONNX Runtime para Android: https://onnxruntime.ai/docs/build/android.html
 - Guia de construccion de sherpa-onnx para Android: https://k2-fsa.github.io/sherpa/onnx/android/build-sherpa-onnx.html

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TrustLLMeu/nolma-8B-sft es un modelo de lenguaje de aproximadamente 8.000 millones de parametros publicado por el colectivo TrustLLMeu. Se trata de un ajuste supervisado (SFT, *supervised fine-tuning*) sobre el modelo base TrustLLMeu/nolma-8B, orientado a tareas de instruccion. El repositorio esta alojado en HuggingFace con acceso restringido (gated): es necesario aceptar las condiciones del autor antes de descargar los pesos.
+TrustLLMeu/nolma-8B-sft es un modelo de lenguaje de aproximadamente 8.000 millones de parametros publicado por el colectivo TrustLLMeu. Se trata de un ajuste supervisado (SFT, *supervised fine-tuning*) sobre el modelo base TrustLLMeu/nolma-8B, orientado a tareas de instruccion. El repositorio esta alojado en Hugging Face con acceso restringido (gated): es necesario aceptar las condiciones del autor antes de descargar los pesos.
 
 El modelo se distribuye bajo una licencia de tipo *research-only*, lo que limita su uso a fines de investigacion y excluye, en principio, el despliegue comercial sin autorizacion explicita. El tamano del repositorio (72 GB) es coherente con pesos en precision completa o alta (fp32/bf16) para un modelo de 8B, aunque no se detalla el formato exacto de los ficheros en la informacion disponible.
 
@@ -75,7 +75,7 @@ La comparativa se ofrece solo como referencia de categoria; no se dispone de dat
 
 - Ausencia total de model card detallada: no hay informacion sobre datos de entrenamiento, sesgos, idiomas ni evaluaciones.
 - Licencia research-only: prohibido el uso comercial sin autorizacion expresa del autor; revisar terminos antes de cualquier despliegue.
-- Acceso gated: requiere aceptar condiciones en HuggingFace, lo que anade friccion a la evaluacion y puede limitar la reproducibilidad.
+- Acceso gated: requiere aceptar condiciones en Hugging Face, lo que anade friccion a la evaluacion y puede limitar la reproducibilidad.
 - Riesgo de alucinacion: sin evaluaciones publicas, no puede descartarse un comportamiento generativo no verificado.
 - Sesgos desconocidos: al no documentarse la composicion del dataset, no es posible anticipar sesgos linguisticos, culturales o de dominio.
 - Contexto e idiomas no declarados: imposible planificar aplicaciones que dependan de ventanas largas o soporte multilingue.
@@ -84,6 +84,6 @@ La comparativa se ofrece solo como referencia de categoria; no se dispone de dat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TrustLLMeu/nolma-8B-sft
+- Hugging Face: https://huggingface.co/TrustLLMeu/nolma-8B-sft
 - Modelo base: https://huggingface.co/TrustLLMeu/nolma-8B
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

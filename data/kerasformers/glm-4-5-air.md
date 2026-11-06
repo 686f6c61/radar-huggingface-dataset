@@ -25,7 +25,7 @@ Esta conversión es relevante porque amplía el ecosistema de despliegue del mod
 
 La arquitectura corresponde a la del modelo GLM-4.5-Air original, un transformer con mezcla de expertos (MoE) en el que solo se activan 12.000 millones de parámetros por token. El checkpoint conserva la configuración mixta de precisión del modelo original: los pesos principales se almacenan en bfloat16, mientras que el bias de corrección del router se mantiene en float32 para preservar la estabilidad numérica durante la selección de expertos.
 
-Esta conversión no implica un nuevo entrenamiento; se trata de una transformación de pesos del checkpoint oficial de Zhipu AI al formato de Keras 3. La implementación de KerasFormers replica la arquitectura GLM-4.5-Air (incluyendo atención, capas MoE y mecanismo de router) y permite cargar el modelo mediante `from_weights` desde el repositorio de HuggingFace. No se dispone de información sobre el dataset de entrenamiento original, el número de tokens utilizados o el proceso de alineación (RLHF/DPO) del modelo base.
+Esta conversión no implica un nuevo entrenamiento; se trata de una transformación de pesos del checkpoint oficial de Zhipu AI al formato de Keras 3. La implementación de KerasFormers replica la arquitectura GLM-4.5-Air (incluyendo atención, capas MoE y mecanismo de router) y permite cargar el modelo mediante `from_weights` desde el repositorio de Hugging Face. No se dispone de información sobre el dataset de entrenamiento original, el número de tokens utilizados o el proceso de alineación (RLHF/DPO) del modelo base.
 
 ## Capacidades
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento para comparar con otros modelos MoE como M
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/glm-4.5-air
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/glm-4.5-air
 - Modelo original (zai-org/GLM-4.5-Air): https://huggingface.co/zai-org/GLM-4.5-Air
 - Paper de la familia GLM: https://arxiv.org/abs/2406.12793
 - Blog oficial de Zhipu AI sobre GLM-4.5: https://z.ai/blog/glm-4.5

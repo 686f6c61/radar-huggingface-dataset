@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`aether-topos-mre-cycle2` es un modelo de generacion de texto publicado en HuggingFace por el usuario `triplembg`. Se trata de un modelo de aproximadamente 138,5 millones de parametros, distribuido en formato safetensors dentro de la libreria `transformers` y etiquetado con la arquitectura `llama` en los tags del repositorio. El pipeline declarado es `text-generation` y los tags incluyen `conversational` y compatibilidad con `text-generation-inference` y `endpoints_compatible`, lo que sugiere que el autor pretende que sea desplegable en infraestructura de inferencia estandar.
+`aether-topos-mre-cycle2` es un modelo de generacion de texto publicado en Hugging Face por el usuario `triplembg`. Se trata de un modelo de aproximadamente 138,5 millones de parametros, distribuido en formato safetensors dentro de la libreria `transformers` y etiquetado con la arquitectura `llama` en los tags del repositorio. El pipeline declarado es `text-generation` y los tags incluyen `conversational` y compatibilidad con `text-generation-inference` y `endpoints_compatible`, lo que sugiere que el autor pretende que sea desplegable en infraestructura de inferencia estandar.
 
-La relevancia del modelo es limitada a dia de hoy: no acumula descargas ni likes, la model card es la plantilla autogenerada por HuggingFace sin ningun campo completado (todos los apartados aparecen como "[More Information Needed]") y no se declara licencia ni idiomas soportados. Esto lo convierte en un artefacto practicamente indocumentado, mas cercano a un experimento personal o a un checkpoint intermedio que a un modelo listo para produccion.
+La relevancia del modelo es limitada a dia de hoy: no acumula descargas ni likes, la model card es la plantilla autogenerada por Hugging Face sin ningun campo completado (todos los apartados aparecen como "[More Information Needed]") y no se declara licencia ni idiomas soportados. Esto lo convierte en un artefacto practicamente indocumentado, mas cercano a un experimento personal o a un checkpoint intermedio que a un modelo listo para produccion.
 
 Por el numero de parametros, se situa en la franja de los modelos pequenos (estilo GPT-2 o Pythia-160M), adecuado para tareas de generacion ligera, prototipado rapido o fine-tuning sobre hardware de consumo, pero sin datos publicos que permitan validar su calidad, su ventana de contexto o su comportamiento multilingue.
 
@@ -25,7 +25,7 @@ Por el numero de parametros, se situa en la franja de los modelos pequenos (esti
 
 La unica evidencia sobre la arquitectura es el tag `llama` incluido en los metadatos del repositorio, lo que apunta a un transformer decoder-only con atencion causal, en la linea de la familia Llama. Sin embargo, la model card no especifica numero de capas, dimension oculta, numero de cabezas de atencion, tipo de normalizacion, funcion de activacion ni uso de embeddings atados. Tampoco se documenta si emplea atencion con RoPE, GQA o sliding window. No hay informacion sobre el tokenizador.
 
-No se dispone de ningun dato sobre el proceso de entrenamiento: ni el numero de tokens, ni la composicion del dataset, ni si hubo fases de instruccion, RLHF o DPO. La model card deja todos los apartados de "Training Details" y "Training Procedure" sin completar. El tag `arxiv:1910.09700` que aparece en los metadatos corresponde a la referencia del calculador de impacto de carbono (Lacoste et al., 2019) que HuggingFace inserta en la plantilla por defecto, no a un articulo cientifico sobre este modelo. Por tanto, no se puede afirmar que exista publicacion tecnica asociada ni innovacion arquitectonica documentada.
+No se dispone de ningun dato sobre el proceso de entrenamiento: ni el numero de tokens, ni la composicion del dataset, ni si hubo fases de instruccion, RLHF o DPO. La model card deja todos los apartados de "Training Details" y "Training Procedure" sin completar. El tag `arxiv:1910.09700` que aparece en los metadatos corresponde a la referencia del calculador de impacto de carbono (Lacoste et al., 2019) que Hugging Face inserta en la plantilla por defecto, no a un articulo cientifico sobre este modelo. Por tanto, no se puede afirmar que exista publicacion tecnica asociada ni innovacion arquitectonica documentada.
 
 ## Capacidades
 
@@ -67,10 +67,10 @@ No hay datos de rendimiento publicados de este modelo, por lo que la comparacion
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| aether-topos-mre-cycle2 | ~138,5 M | no disponible | no disponible | HuggingFace (0 descargas) |
-| GPT-2 | 124 M | 1.024 tokens | MIT | HuggingFace |
-| Pythia-160M | 160 M | 2.048 tokens | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache 2.0 | HuggingFace |
+| aether-topos-mre-cycle2 | ~138,5 M | no disponible | no disponible | Hugging Face (0 descargas) |
+| GPT-2 | 124 M | 1.024 tokens | MIT | Hugging Face |
+| Pythia-160M | 160 M | 2.048 tokens | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache 2.0 | Hugging Face |
 
 La comparativa de rendimiento (MMLU, perplexity, etc.) no esta disponible porque el modelo no publica evaluaciones. Frente a las alternativas citadas, la principal desventaja es la ausencia de licencia, idiomas declarados y benchmarks, lo que complica su adopcion frente a opciones con licencia permisiva y documentacion completa.
 
@@ -87,6 +87,6 @@ La comparativa de rendimiento (MMLU, perplexity, etc.) no esta disponible porque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/triplembg/aether-topos-mre-cycle2
+- Modelo en Hugging Face: https://huggingface.co/triplembg/aether-topos-mre-cycle2
 - Referencia del calculador de impacto de carbono citada en el template (no es un paper del modelo): https://arxiv.org/abs/1910.09700
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados al modelo en la informacion disponible.

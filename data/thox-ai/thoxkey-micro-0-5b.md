@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ThoxKey-Micro-0.5B es un artefacto de configuracion publicado por Thox-ai sobre los pesos upstream de Qwen/Qwen2.5-0.5B-Instruct. No se trata de un modelo entrenado por el autor: THOX no ha entrenado estos pesos, sino que empaqueta el modelo base con un perfil de sistema propio (definido en un `Modelfile` de Ollama) y un paquete de conocimiento versionado (`thox-knowledge-v0.1.jsonl`, 8 entradas publicas verificadas). El repositorio de HuggingFace contiene unicamente el empaquetado (Modelfile, manifest y knowledge pack), mientras que el modelo ejecutable se publica en Ollama, que descarga la capa base fijada por digest.
+ThoxKey-Micro-0.5B es un artefacto de configuracion publicado por Thox-ai sobre los pesos upstream de Qwen/Qwen2.5-0.5B-Instruct. No se trata de un modelo entrenado por el autor: THOX no ha entrenado estos pesos, sino que empaqueta el modelo base con un perfil de sistema propio (definido en un `Modelfile` de Ollama) y un paquete de conocimiento versionado (`thox-knowledge-v0.1.jsonl`, 8 entradas publicas verificadas). El repositorio de Hugging Face contiene unicamente el empaquetado (Modelfile, manifest y knowledge pack), mientras que el modelo ejecutable se publica en Ollama, que descarga la capa base fijada por digest.
 
 El modelo resuelve un problema acotado: proporcionar un asistente local de respuestas cortas para el rol ThoxKey dentro del ecosistema THOX (MeshStack, ThoxKey Device), con inferencia offline a traves del endpoint local de Ollama. La arquitectura subyacente es la de Qwen2.5-0.5B-Instruct, un transformer decoder-only denso de 0,5 mil millones de parametros, con una ventana de contexto que en la evaluacion publicada se fija en 8.192 tokens.
 
@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ThoxKey-Micro-0.5B | 0,5B | 8.192 tokens (config. evaluada) | Apache-2.0 | HuggingFace (empaquetado) + Ollama | Perfil de sistema y knowledge pack propios; sin entrenamiento |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | No disponible en la informacion proporcionada | Apache-2.0 | HuggingFace | Modelo base upstream; sin perfil THOX ni knowledge pack |
-| ThoxKey-Route-0.5B | 0,5B | No disponible | Apache-2.0 | HuggingFace + Ollama | Mismo artefacto de configuracion que ThoxKey-Micro-0.5B segun el autor, con distinto nombre de rol |
+| ThoxKey-Micro-0.5B | 0,5B | 8.192 tokens (config. evaluada) | Apache-2.0 | Hugging Face (empaquetado) + Ollama | Perfil de sistema y knowledge pack propios; sin entrenamiento |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | No disponible en la informacion proporcionada | Apache-2.0 | Hugging Face | Modelo base upstream; sin perfil THOX ni knowledge pack |
+| ThoxKey-Route-0.5B | 0,5B | No disponible | Apache-2.0 | Hugging Face + Ollama | Mismo artefacto de configuracion que ThoxKey-Micro-0.5B segun el autor, con distinto nombre de rol |
 
 El autor declara explicitamente que ThoxKey-Micro-0.5B y ThoxKey-Route-0.5B comparten Modelfile identico y se diferencian solo en metadatos del manifest (modo de ejecucion y capacidades). No se dispone de comparativas con otros modelos de 0,5B en la informacion proporcionada.
 
@@ -99,7 +99,7 @@ El autor declara explicitamente que ThoxKey-Micro-0.5B y ThoxKey-Route-0.5B comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxKey-Micro-0.5B
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxKey-Micro-0.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Modelo en Ollama: `Thox-ai/thoxkey-micro-0.5b` (referencia indicada en la model card; no se proporciona URL directa)
 - Papers, blogs, repos y demos adicionales: no disponibles en la informacion proporcionada.

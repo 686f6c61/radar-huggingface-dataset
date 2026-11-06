@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mark-Experimental-V3-8B es un modelo publicado por el usuario miceworks en HuggingFace bajo el identificador `miceworks/Mark-Experimental-V3-8B`. A pesar de su nombre y de presentarse como un "flagship base" de 8.170 millones de parametros, la propia model card indica explicitamente que se trata de un **base arquitectonico sin entrenar**: los pesos corresponden a una inicializacion He/Xavier combinada con Hadamard Fusion, lista para preentrenamiento o ajuste fino, pero no ha pasado por ninguna fase de entrenamiento supervisado, RLHF ni DPO.
+Mark-Experimental-V3-8B es un modelo publicado por el usuario miceworks en Hugging Face bajo el identificador `miceworks/Mark-Experimental-V3-8B`. A pesar de su nombre y de presentarse como un "flagship base" de 8.170 millones de parametros, la propia model card indica explicitamente que se trata de un **base arquitectonico sin entrenar**: los pesos corresponden a una inicializacion He/Xavier combinada con Hadamard Fusion, lista para preentrenamiento o ajuste fino, pero no ha pasado por ninguna fase de entrenamiento supervisado, RLHF ni DPO.
 
 La arquitectura declarada es `deepseek2` (la familia DeepSeek-V2/V3 implementada en ggml), con 32 capas transformer, atencion Multi-Head Latent Attention (MLA) con `q_lora_rank=1024` y `kv_lora_rank=512`, y un bloque MoE con 32 expertos enrutados mas 2 compartidos, activando 4 expertos por token (2.000 millones de parametros activos). La ventana de contexto es de 32.768 tokens y el vocabulario de 32.032 entradas.
 
@@ -92,5 +92,5 @@ No disponible. No se han proporcionado datos de rendimiento ni de modelos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/miceworks/Mark-Experimental-V3-8B
+- Modelo en Hugging Face: https://huggingface.co/miceworks/Mark-Experimental-V3-8B
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

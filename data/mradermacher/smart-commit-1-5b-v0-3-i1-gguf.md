@@ -12,7 +12,7 @@ El interés práctico del repo está en su perfil de despliegue: con ~1.500 mill
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible. El metadato `convert_type: hf` indica que los pesos originales están en formato HuggingFace Transformers; la familia arquitectónica concreta no se especifica en la model card |
+| Arquitectura | No disponible. El metadato `convert_type: hf` indica que los pesos originales están en formato Hugging Face Transformers; la familia arquitectónica concreta no se especifica en la model card |
 | Parámetros totales | 1.020.404 según los metadatos de safetensors del repo de origen (cifra probablemente truncada); el nombre del modelo indica 1.5B |
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | Q2_K, Q2_K_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, small-IQ4_NL (24 variantes, todas con importance matrix / weighted) |
@@ -99,9 +99,9 @@ Frente a estas alternativas, el modelo evaluado aporta una especialización estr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/smart-commit-1.5b-v0.3-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/smart-commit-1.5b-v0.3-i1-GGUF
 - Modelo base: https://huggingface.co/LucasBRT/smart-commit-1.5b-v0.3
 - Herramienta SmartCommit (CLI): https://github.com/manyfacedqod/smartcommit
-- Perfil del cuantizador en HuggingFace: https://huggingface.co/mradermacher
+- Perfil del cuantizador en Hugging Face: https://huggingface.co/mradermacher
 - Repo relacionado del mismo autor y familia: https://huggingface.co/mradermacher/Lily-1.5b-v0.3-GGUF
 - Lista de modelos de seguridad ofensiva (contexto, no específico de este modelo): https://github.com/JoasASantos/Offensive-Security-AI-Models

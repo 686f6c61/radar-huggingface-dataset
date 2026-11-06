@@ -31,7 +31,7 @@ La relevancia del checkpoint es que documenta de forma completa el proceso de en
 | Backend | Apple MLX |
 | Librería declarada | `mlx` |
 | Pipeline | `text-generation` |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 | Archivos incluidos | `model.npz`, `state.json`, `run.json`, `metrics.jsonl`, `config.json` |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-09-22 |
@@ -110,7 +110,7 @@ No disponible. La información proporcionada no incluye ninguna comparación con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-simo-lr0p004
+- Modelo en Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-simo-lr0p004
 - Paper: no disponible
 - Blog del autor: no disponible
 - Repositorio de código: no disponible

@@ -112,7 +112,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 ## Enlaces
 
-- HuggingFace (esta cuantización): https://huggingface.co/AtomicChat/Ornith-1.5-122B-GGUF
+- Hugging Face (esta cuantización): https://huggingface.co/AtomicChat/Ornith-1.5-122B-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B
 - Corpus de calibración: https://huggingface.co/datasets/AtomicChat/calib-corpora
 - Registros de métricas de cuantización: https://huggingface.co/datasets/AtomicChat/Ornith-1.5-122B-GGUF-metrics

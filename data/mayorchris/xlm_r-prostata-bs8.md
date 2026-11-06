@@ -2,7 +2,7 @@
 
 ## Resumen
 
-xlm_r-prostata-bs8 es un modelo de clasificación de tokens (token classification) obtenido mediante fine-tuning de FacebookAI/xlm-roberta-large, publicado en HuggingFace por el usuario MayorChris. El nombre del modelo sugiere un ajuste orientado a la extracción de entidades relacionadas con la próstata, aunque la model card no documenta explícitamente el dataset, las etiquetas ni el dominio de aplicación, por lo que esa interpretación debe tomarse como inferencia a partir del identificador y no como un dato confirmado por el autor.
+xlm_r-prostata-bs8 es un modelo de clasificación de tokens (token classification) obtenido mediante fine-tuning de FacebookAI/xlm-roberta-large, publicado en Hugging Face por el usuario MayorChris. El nombre del modelo sugiere un ajuste orientado a la extracción de entidades relacionadas con la próstata, aunque la model card no documenta explícitamente el dataset, las etiquetas ni el dominio de aplicación, por lo que esa interpretación debe tomarse como inferencia a partir del identificador y no como un dato confirmado por el autor.
 
 El modelo parte de la arquitectura XLM-RoBERTa-large, un transformer encoder-only multilingüe de 558.864.407 parámetros, y ha sido entrenado durante 8 épocas con un batch size de 8 (de ahí el sufijo "bs8"), learning rate 2e-5, optimizador AdamW fused y precisión mixta AMP nativa. El checkpoint final reporta métricas muy altas sobre el conjunto de evaluación: F1 de 0.9861, precisión de 0.9851, recall de 0.9871 y accuracy de 0.9971, con una pérdida de validación de 0.0197.
 
@@ -82,10 +82,10 @@ No se han publicado resultados en benchmarks públicos (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xlm_r-prostata-bs8 | 558,8 M | no disponible (base: 512) | Token classification (NER) | MIT | HuggingFace, 19 descargas |
-| FacebookAI/xlm-roberta-large | 558,8 M | 512 tokens | Modelo base multilingüe (MLM) | MIT | HuggingFace, ampliamente usado |
-| PlanTL-GOB-ES/bsc-bio-ehr-es | no disponible en esta consulta | no disponible | NER biomédico en español | no disponible en esta consulta | HuggingFace |
-| dslim/bert-base-NER | 108 M | 512 tokens | NER en inglés | MIT | HuggingFace |
+| xlm_r-prostata-bs8 | 558,8 M | no disponible (base: 512) | Token classification (NER) | MIT | Hugging Face, 19 descargas |
+| FacebookAI/xlm-roberta-large | 558,8 M | 512 tokens | Modelo base multilingüe (MLM) | MIT | Hugging Face, ampliamente usado |
+| PlanTL-GOB-ES/bsc-bio-ehr-es | no disponible en esta consulta | no disponible | NER biomédico en español | no disponible en esta consulta | Hugging Face |
+| dslim/bert-base-NER | 108 M | 512 tokens | NER en inglés | MIT | Hugging Face |
 
 La comparación con alternativas especializadas en NER biomédico queda limitada porque no se dispone de sus métricas en la información proporcionada. El modelo aquí descrito no declara idiomas ni esquema de etiquetas, lo que dificulta una comparación rigurosa con modelos como bsc-bio-ehr-es, que sí documentan su dominio y corpus.
 
@@ -104,7 +104,7 @@ La comparación con alternativas especializadas en NER biomédico queda limitada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MayorChris/xlm_r-prostata-bs8
+- Modelo en Hugging Face: https://huggingface.co/MayorChris/xlm_r-prostata-bs8
 - Modelo base XLM-RoBERTa-large: https://huggingface.co/FacebookAI/xlm-roberta-large
-- Perfil del autor en HuggingFace: https://huggingface.co/MayorChris
+- Perfil del autor en Hugging Face: https://huggingface.co/MayorChris
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

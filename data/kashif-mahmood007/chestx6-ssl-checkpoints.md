@@ -89,7 +89,7 @@ Alternativas externas de la misma categoria (por ejemplo, otros encoders autosup
 ## Limitaciones y advertencias
 
 - La model card no reporta ninguna metrica de rendimiento, por lo que no es posible evaluar la calidad de los checkpoints sin ejecutar el pipeline de reproduccion.
-- El repositorio registra 0 descargas y 0 "likes" en HuggingFace: no existe validacion independiente por parte de la comunidad.
+- El repositorio registra 0 descargas y 0 "likes" en Hugging Face: no existe validacion independiente por parte de la comunidad.
 - No es un producto sanitario ni un dispositivo medico. No debe usarse para diagnostico clinico sin validacion prospectiva, revision regulatoria y supervision medica.
 - El manuscrito asociado esta marcado como "under revision" (en revision) y sin publicar, de modo que las conclusiones cientificas no han pasado revision por pares.
 - Riesgo de sesgo de dominio: los modelos se entrenan unicamente con ChestX6 y se evaluan en ChestMNIST; la procedencia de las imagenes, la distribucion demografica de los pacientes y las caracteristicas de los escaneres no se detallan en la model card.
@@ -102,7 +102,7 @@ Alternativas externas de la misma categoria (por ejemplo, otros encoders autosup
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kashif-Mahmood007/chestx6-ssl-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/Kashif-Mahmood007/chestx6-ssl-checkpoints
 - Repositorio de GitHub con el pipeline completo: https://github.com/Kashif-Mahmood007/chestx6-ssl-benchmark
 - Dataset ChestX6 en Kaggle: https://www.kaggle.com/datasets/mohamedasak/chest-x-ray-6-classes-dataset
 - Identificador DOI asociado al repositorio: https://doi.org/10.57967/hf/10799

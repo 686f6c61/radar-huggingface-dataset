@@ -73,7 +73,7 @@ No se dispone de datos comparativos directos con otros modelos de Walker2d en la
 
 ## Enlaces
 
-- [HuggingFace: rijal028/walker2d-selfanchored-v2.2](https://huggingface.co/rijal028/walker2d-selfanchored-v2.2)
+- [Hugging Face: rijal028/walker2d-selfanchored-v2.2](https://huggingface.co/rijal028/walker2d-selfanchored-v2.2)
 - [GitHub del autor: rijal028](https://github.com/rijal028/rijal028)
 - [Documentación de Walker2D en Gymnasium](https://gymnasium.farama.org/environments/mujoco/walker2d/)
 - [Modelo relacionado: devdharpatel/SAC-Walker2d-v2](https://huggingface.co/devdharpatel/SAC-Walker2d-v2)

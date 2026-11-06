@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mulemp/Tetete80099` es un repositorio alojado en HuggingFace por el usuario `mulemp`, con acceso restringido (gated) y sin información pública sobre su arquitectura, parámetros, licencia o idiomas. El repositorio tiene un tamaño de 13.4 GB y fue creado en abril de 2026, con una última actualización en agosto de 2026. No se dispone de ningún dato técnico ni de evaluación pública, por lo que su utilidad práctica es desconocida. El perfil del autor en HuggingFace sugiere cierta actividad en IA, pero no hay evidencia de que este modelo tenga una finalidad específica o haya sido validado por la comunidad.
+El modelo `mulemp/Tetete80099` es un repositorio alojado en Hugging Face por el usuario `mulemp`, con acceso restringido (gated) y sin información pública sobre su arquitectura, parámetros, licencia o idiomas. El repositorio tiene un tamaño de 13.4 GB y fue creado en abril de 2026, con una última actualización en agosto de 2026. No se dispone de ningún dato técnico ni de evaluación pública, por lo que su utilidad práctica es desconocida. El perfil del autor en Hugging Face sugiere cierta actividad en IA, pero no hay evidencia de que este modelo tenga una finalidad específica o haya sido validado por la comunidad.
 
 ## Especificaciones técnicas
 
@@ -43,7 +43,7 @@ No existe información pública que permita comparar este modelo con alternativa
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que limita su uso y evaluación.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que limita su uso y evaluación.
 - Sin documentación: no hay información sobre arquitectura, entrenamiento, capacidades o limitaciones.
 - Riesgo de alucinación y sesgos: no se puede evaluar sin acceso al modelo y sin pruebas.
 - Licencia desconocida: no se puede determinar si es de uso comercial o no.
@@ -51,8 +51,8 @@ No existe información pública que permita comparar este modelo con alternativa
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/mulemp/Tetete80099)
-- [Perfil del autor en HuggingFace](https://huggingface.co/mulemp)
+- [Repositorio en Hugging Face](https://huggingface.co/mulemp/Tetete80099)
+- [Perfil del autor en Hugging Face](https://huggingface.co/mulemp)
 - [Perfil en Civitai de Tetete80099](https://civitai.com/user/Tetete80099/models)
 - [Repositorio RYNEL_AI (también gated)](https://huggingface.co/mulemp/RYNEL_AI)
 - [Referencia en CivArchive (LORA de Illustrious)](https://civarchive.com/models/956614?modelVersionId=2933290)

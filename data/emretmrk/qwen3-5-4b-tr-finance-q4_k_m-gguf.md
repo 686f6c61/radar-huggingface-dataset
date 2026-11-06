@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/emretmrk/Qwen3.5-4B-TR-Finance-Q4_K_M-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/emretmrk/Qwen3.5-4B-TR-Finance-Q4_K_M-GGUF
 - Modelo original: https://huggingface.co/emretmrk/Qwen3.5-4B-TR-Finance
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

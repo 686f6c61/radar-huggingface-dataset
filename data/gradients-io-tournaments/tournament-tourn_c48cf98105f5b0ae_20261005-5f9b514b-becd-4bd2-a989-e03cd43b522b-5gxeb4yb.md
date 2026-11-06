@@ -95,7 +95,7 @@ No se dispone de resultados de benchmarks que permitan establecer una comparacio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_c48cf98105f5b0ae_20261005-5f9b514b-becd-4bd2-a989-e03cd43b522b-5GxEB4yb
+- Repositorio en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_c48cf98105f5b0ae_20261005-5f9b514b-becd-4bd2-a989-e03cd43b522b-5GxEB4yb
 - Organizacion autora: https://huggingface.co/gradients-io-tournaments
 - Modelo base Qwen/Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper citado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700

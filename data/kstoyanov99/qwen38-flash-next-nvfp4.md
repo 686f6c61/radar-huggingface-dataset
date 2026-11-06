@@ -67,9 +67,9 @@ Nota: el valor de AIME26 se midio en una revision anterior del checkpoint cuyas 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (BF16) | ~180B totales, 6B activos | 262K | BF16 (360 GB) | other | HuggingFace |
-| Qwen3.8-Flash-Next-NVFP4 (este) | ~180B totales, 6B activos | 262K | NVFP4 W4A4 (135 GB) | other | HuggingFace |
-| Qwen3.8-Flash-Next-FP8 | ~180B totales, 6B activos | 262K | FP8 (tablas PLE) | other | HuggingFace |
+| Qwen3.8-Flash-Next (BF16) | ~180B totales, 6B activos | 262K | BF16 (360 GB) | other | Hugging Face |
+| Qwen3.8-Flash-Next-NVFP4 (este) | ~180B totales, 6B activos | 262K | NVFP4 W4A4 (135 GB) | other | Hugging Face |
+| Qwen3.8-Flash-Next-FP8 | ~180B totales, 6B activos | 262K | FP8 (tablas PLE) | other | Hugging Face |
 
 No se dispone de datos de otros modelos comparables de la misma categoria (MoE multimodal hibrido con n-gramas) en la informacion proporcionada. La comparativa principal es frente al modelo BF16 original, donde la cuantizacion NVFP4 mantiene el rendimiento dentro del margen de error en GSM8K y AIME26, con una reduccion de memoria de ~2,7 veces.
 
@@ -85,7 +85,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria (MoE m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kstoyanov99/qwen38-flash-next-nvfp4
+- Repositorio Hugging Face: https://huggingface.co/kstoyanov99/qwen38-flash-next-nvfp4
 - Modelo fuente: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio oficial Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - NVIDIA Model Optimizer: https://github.com/NVIDIA/TensorRT-Model-Optimizer

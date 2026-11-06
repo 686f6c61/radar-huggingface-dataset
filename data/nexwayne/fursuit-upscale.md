@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Factor de escala | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fursuit-Upscale x4 | RRDBNet (Real-ESRGAN) | x4 | Fursuits / pelaje | Apache 2.0 | HuggingFace (0 descargas) |
-| Real-ESRGAN (xinntao) | RRDBNet | x2 / x4 | General | BSD-3-Clause (según repositorio original) | GitHub y HuggingFace, ampliamente usado |
+| Fursuit-Upscale x4 | RRDBNet (Real-ESRGAN) | x4 | Fursuits / pelaje | Apache 2.0 | Hugging Face (0 descargas) |
+| Real-ESRGAN (xinntao) | RRDBNet | x2 / x4 | General | BSD-3-Clause (según repositorio original) | GitHub y Hugging Face, ampliamente usado |
 | ESRGAN (original) | RRDBNet | x4 | General | Apache 2.0 (según publicación original) | Repositorios académicos y comunitarios |
 | SwinIR | Transformer (Swin) | x2 / x3 / x4 | General | Apache 2.0 (según repositorio original) | GitHub, con implementaciones en varias librerías |
 
@@ -89,7 +89,7 @@ La comparación cuantitativa de calidad no está disponible: no hay métricas pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nexwayne/Fursuit-Upscale
+- Modelo en Hugging Face: https://huggingface.co/nexwayne/Fursuit-Upscale
 - Modelo base Real-ESRGAN: https://huggingface.co/xinntao/Real-ESRGAN
 - Repositorio Real-ESRGAN (GitHub): https://github.com/xinntao/Real-ESRGAN
 - Paper Real-ESRGAN (arXiv): https://arxiv.org/abs/2107.10833

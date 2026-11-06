@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Woof Pup 0.6B es un modelo de lenguaje especializado en triaje de correo electrónico, desarrollado por el usuario alexwengg y publicado en HuggingFace bajo licencia Apache-2.0. Se trata de un destilado por conocimiento del modelo ConwayResearch/Underdog-Woof-4B-1.1 (profesor) sobre el modelo base Qwen/Qwen3-0.6B (alumno). Su funcion es acotada y muy concreta: recibe el texto de un correo y devuelve un unico objeto JSON con seis campos (categoria, intencion, elementos de accion, fechas, importe y urgencia). No es un asistente conversacional generalista.
+Woof Pup 0.6B es un modelo de lenguaje especializado en triaje de correo electrónico, desarrollado por el usuario alexwengg y publicado en Hugging Face bajo licencia Apache-2.0. Se trata de un destilado por conocimiento del modelo ConwayResearch/Underdog-Woof-4B-1.1 (profesor) sobre el modelo base Qwen/Qwen3-0.6B (alumno). Su funcion es acotada y muy concreta: recibe el texto de un correo y devuelve un unico objeto JSON con seis campos (categoria, intencion, elementos de accion, fechas, importe y urgencia). No es un asistente conversacional generalista.
 
 El modelo cuenta con 596.049.920 parametros y se distribuye exclusivamente en formato MLX de 8 bits, con pesos en safetensors y un tamano de repositorio de 0,6 GB. Esta disenado para inferencia en dispositivo (on-device) sobre silicio de Apple, con una velocidad medida de aproximadamente 240 tokens por segundo en un MacBook con chip M5 Pro y 24 GB de memoria unificada, lo que equivale a procesar un correo completo en unos 0,25 segundos. Existe tambien una compilacion para Neural Engine mediante Core ML.
 
@@ -90,7 +90,7 @@ El autor matiza que las etiquetas de categoria son ambiguas: el propio Woof 4B, 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | woof-pup-0.6b-mlx-8bit | 596 M | no disponible | 73,0 % categoria y 85,3 % urgencia frente al profesor, en 293 correos | Apache-2.0 | MLX 8 bits y Core ML |
-| Underdog-Woof-4B-1.1 (profesor) | 4 B (aproximado, no confirmado en la informacion disponible) | no disponible | 95 tok/s y 0,65 s por correo en M5 Pro | Apache-2.0 | HuggingFace |
+| Underdog-Woof-4B-1.1 (profesor) | 4 B (aproximado, no confirmado en la informacion disponible) | no disponible | 95 tok/s y 0,65 s por correo en M5 Pro | Apache-2.0 | Hugging Face |
 | Qwen3-0.6B (base) | 596 M | 32 768 tokens segun el modelo base | modelo generalista, sin fine-tuning para triaje de correo | Apache-2.0 | safetensors y multiples cuantizaciones |
 
 No se dispone de datos verificados en la informacion proporcionada sobre otras alternativas especializadas en triaje de correo con las que establecer una comparacion cuantitativa.
@@ -109,7 +109,7 @@ No se dispone de datos verificados en la informacion proporcionada sobre otras a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexwengg/woof-pup-0.6b-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/alexwengg/woof-pup-0.6b-mlx-8bit
 - Compilacion Core ML para Neural Engine: https://huggingface.co/alexwengg/woof-pup-0.6b-coreml
 - Modelo profesor (ConwayResearch/Underdog-Woof-4B-1.1): https://huggingface.co/ConwayResearch/Underdog-Woof-4B-1.1
 - Modelo base (Qwen3-0.6B): https://huggingface.co/Qwen/Qwen3-0.6B

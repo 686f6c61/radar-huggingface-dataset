@@ -77,7 +77,7 @@ No se dispone de datos verificables para completar una comparativa. La informaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| InflexCZE/Qwen3.5-9B-MLC | ~9B (segun denominacion) | no disponible | Apache 2.0 | Repositorio en HuggingFace, 0 descargas |
+| InflexCZE/Qwen3.5-9B-MLC | ~9B (segun denominacion) | no disponible | Apache 2.0 | Repositorio en Hugging Face, 0 descargas |
 | Alternativas de ~8-9B en la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 Candidatos habituales en la categoria de ~8-9B (Qwen3-8B, Llama-3.1-8B, Gemma-2-9B) no pueden compararse con datos de esta ficha porque no se ha publicado ninguna medicion del modelo evaluado.
@@ -98,7 +98,7 @@ Candidatos habituales en la categoria de ~8-9B (Qwen3-8B, Llama-3.1-8B, Gemma-2-
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/InflexCZE/Qwen3.5-9B-MLC
+- Repositorio en Hugging Face: https://huggingface.co/InflexCZE/Qwen3.5-9B-MLC
 - Modelo base declarado: https://huggingface.co/unsloth/Qwen3.5-9B-MTP-GGUF
 - Documentacion de MLC LLM: no disponible en la informacion proporcionada
 - Paper o blog tecnico del modelo: no disponible en la informacion proporcionada

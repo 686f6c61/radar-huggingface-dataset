@@ -84,6 +84,6 @@ La comparación directa es difícil porque el modelo de hyokwan es un ajuste de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hyokwan/kopo_gangseo_ocr_model_g3
+- Modelo en Hugging Face: https://huggingface.co/hyokwan/kopo_gangseo_ocr_model_g3
 - Dataset de entrenamiento: https://huggingface.co/datasets/hyokwan/ocr_dataset
 - Modelo base: https://huggingface.co/google/gemma-3-27b-it

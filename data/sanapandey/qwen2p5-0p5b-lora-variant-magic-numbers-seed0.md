@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA publicado en HuggingFace por el usuario sanapandey. La nomenclatura "qwen2p5-0p5b-lora-variant-magic-numbers-seed0" sugiere que se trata de una variante fine-tuned con LoRA sobre un modelo base Qwen2.5 de 0.5 mil millones de parámetros, aunque esta interpretación no se confirma en la documentación. El repositorio ocupa 0.1 GB, tamaño coherente con un adaptador LoRA y no con los pesos completos del modelo base. La etiqueta "unsloth" indica que se empleó Unsloth, una librería de fine-tuning optimizado para transformadores, y los pesos están en formato safetensors.
+Este modelo es un adaptador LoRA publicado en Hugging Face por el usuario sanapandey. La nomenclatura "qwen2p5-0p5b-lora-variant-magic-numbers-seed0" sugiere que se trata de una variante fine-tuned con LoRA sobre un modelo base Qwen2.5 de 0.5 mil millones de parámetros, aunque esta interpretación no se confirma en la documentación. El repositorio ocupa 0.1 GB, tamaño coherente con un adaptador LoRA y no con los pesos completos del modelo base. La etiqueta "unsloth" indica que se empleó Unsloth, una librería de fine-tuning optimizado para transformadores, y los pesos están en formato safetensors.
 
 La model card es una plantilla autogenerada y no contiene información técnica: no describe el dataset de entrenamiento, el procedimiento, los hiperparámetros, las capacidades ni las limitaciones. En el momento de la consulta, el modelo no tiene descargas ni likes, no se especifica licencia, pipeline ni idiomas soportados. En consecuencia, no es apto para uso en producción sin una evaluación y validación propias.
 
@@ -36,7 +36,7 @@ La información disponible no documenta la arquitectura ni el procedimiento de e
 No se documentan casos de uso reales para este modelo. Los siguientes escenarios son hipótesis de evaluación para un adaptador LoRA sin documentación; requieren validación propia antes de cualquier implementación:
 
 - Experimentación académica con LoRA: el adaptador puede usarse en laboratorios para comparar métodos de fine-tuning eficientes (Unsloth) frente a otras técnicas, aunque no hay resultados publicados que respalden su calidad.
-- Pruebas de concepto en despliegue con transformers: al incluir la etiqueta "endpoints_compatible", podría cargarse en HuggingFace Inference Endpoints para pruebas de concepto, sin garantías de latencia ni calidad.
+- Pruebas de concepto en despliegue con transformers: al incluir la etiqueta "endpoints_compatible", podría cargarse en Hugging Face Inference Endpoints para pruebas de concepto, sin garantías de latencia ni calidad.
 - Investigación de alucinaciones en modelos pequeños: al carecer de evaluaciones publicadas, puede servir como caso de estudio para medir alucinaciones en modelos de lenguaje de tamaño reducido.
 - Transferencia de conocimiento a tareas propias: como adaptador LoRA, puede reentrenarse sobre datasets específicos; se desconocen el dataset original y sus posibles sesgos.
 - Estudio comparativo de variantes por semilla: la existencia de repositorios hermanos con distintos sufijos permite analizar la influencia de la semilla y el dataset en el fine-tuning, comparativa no publicada.
@@ -76,5 +76,5 @@ No se encuentran otras alternativas comparables en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-magic-numbers-seed0
+- Hugging Face: https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-magic-numbers-seed0
 - Modelo relacionado (variante security-hardcoded-secrets): https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-security-hardcoded-secrets-seed0

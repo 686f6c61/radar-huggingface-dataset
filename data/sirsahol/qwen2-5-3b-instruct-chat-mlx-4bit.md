@@ -75,7 +75,7 @@ Condiciones declaradas: Apple M1 con 8 GB de memoria unificada, media de 5 ejecu
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SirSahOl/Qwen2.5-3B-Instruct-chat-mlx-4bit | ~3,09 B | no indicado en la model card (32.768 en el modelo base) | safetensors MLX 4 bits | other | Publicado en HuggingFace, 0 descargas, 0 likes |
+| SirSahOl/Qwen2.5-3B-Instruct-chat-mlx-4bit | ~3,09 B | no indicado en la model card (32.768 en el modelo base) | safetensors MLX 4 bits | other | Publicado en Hugging Face, 0 descargas, 0 likes |
 | Qwen/Qwen2.5-3B-Instruct | ~3,09 B | 32.768 tokens segun el modelo base | safetensors (precision completa) | other | Modelo de referencia de Qwen |
 | Otras cuantizaciones MLX del mismo modelo base | ~3,09 B | dependiente de la conversion | safetensors MLX | segun cada autor | No identificadas en la busqueda realizada |
 | Alternativas de ~3 B de otros fabricantes (Llama 3.2 3B Instruct, Phi-3.5-mini) | rango ~3-4 B | variable segun familia | safetensors, GGUF | licencias propias de cada fabricante | no disponible en la informacion proporcionada |
@@ -98,7 +98,7 @@ No hay datos de calidad comparada (benchmarks) en el material proporcionado, por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SirSahOl/Qwen2.5-3B-Instruct-chat-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/SirSahOl/Qwen2.5-3B-Instruct-chat-mlx-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Perfil del autor de la conversion: https://huggingface.co/SirSahOl
 - Framework MLX de Apple: https://github.com/ml-explore/mlx

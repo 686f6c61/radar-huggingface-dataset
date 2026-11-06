@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`meetingof/alexisveri` es un adaptador LoRA publicado en HuggingFace por el usuario `meetingof`, entrenado mediante ajuste supervisado (SFT) sobre el modelo base `ogulcanaydogan/Turkish-LLM-7B-Instruct`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación en formato PEFT que debe cargarse junto con dicho modelo base de 7.000 millones de parametros, presumiblemente orientado al turco por el nombre del checkpoint de origen.
+`meetingof/alexisveri` es un adaptador LoRA publicado en Hugging Face por el usuario `meetingof`, entrenado mediante ajuste supervisado (SFT) sobre el modelo base `ogulcanaydogan/Turkish-LLM-7B-Instruct`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación en formato PEFT que debe cargarse junto con dicho modelo base de 7.000 millones de parametros, presumiblemente orientado al turco por el nombre del checkpoint de origen.
 
-El repositorio contiene unicamente los pesos del adaptador (0,2 GB) en safetensors, generados con la libreria PEFT 0.20.0 y, segun las etiquetas, con soporte de TRL y Unsloth para el entrenamiento. La model card es la plantilla por defecto de HuggingFace sin rellenar: todos los campos de descripcion, datos de entrenamiento, hiperparametros, evaluacion y uso previsto figuran como "[More Information Needed]".
+El repositorio contiene unicamente los pesos del adaptador (0,2 GB) en safetensors, generados con la libreria PEFT 0.20.0 y, segun las etiquetas, con soporte de TRL y Unsloth para el entrenamiento. La model card es la plantilla por defecto de Hugging Face sin rellenar: todos los campos de descripcion, datos de entrenamiento, hiperparametros, evaluacion y uso previsto figuran como "[More Information Needed]".
 
 Su relevancia actual es limitada: acumula 0 descargas y 0 likes, no declara licencia ni idiomas, y no aporta ningun resultado de evaluacion. A efectos practicos, debe considerarse un artefacto experimental de investigacion mas que un modelo listo para produccion, y cualquier evaluacion seria exige cargarlo sobre el modelo base y ejecutar pruebas propias.
 
@@ -33,7 +33,7 @@ Su relevancia actual es limitada: acumula 0 descargas y 0 likes, no declara lice
 
 El adaptador se apoya en Low-Rank Adaptation (LoRA), tecnica que congela los pesos del modelo base e inserta matrices de bajo rango entrenables en determinadas capas, reduciendo drasticamente el numero de parametros a optimizar. El repositorio ocupa 0,2 GB, coherente con un adaptador de rango moderado sobre un modelo de 7B. No obstante, el autor no especifica rango, alpha, capas objetivo ni ningun otro hiperparametro de LoRA.
 
-El entrenamiento se realizo mediante ajuste supervisado (SFT), segun las etiquetas `sft`, `trl` y `unsloth`, lo que sugiere el uso de la libreria TRL y del framework Unsloth para acelerar el ajuste. No se ha publicado informacion sobre el dataset empleado, su composicion, el numero de tokens de entrenamiento, la existencia de fases de RLHF o DPO, ni los hiperparametros concretos (tasa de aprendizaje, precision, epocas). La etiqueta `arxiv:1910.09700` no corresponde a un articulo sobre este modelo: es la referencia a Lacoste et al. (2019), el calculador de impacto ambiental de machine learning, que aparece citada en el texto por defecto de la plantilla de HuggingFace. Por tanto, no existe documentacion tecnica verificable del proceso de entrenamiento.
+El entrenamiento se realizo mediante ajuste supervisado (SFT), segun las etiquetas `sft`, `trl` y `unsloth`, lo que sugiere el uso de la libreria TRL y del framework Unsloth para acelerar el ajuste. No se ha publicado informacion sobre el dataset empleado, su composicion, el numero de tokens de entrenamiento, la existencia de fases de RLHF o DPO, ni los hiperparametros concretos (tasa de aprendizaje, precision, epocas). La etiqueta `arxiv:1910.09700` no corresponde a un articulo sobre este modelo: es la referencia a Lacoste et al. (2019), el calculador de impacto ambiental de machine learning, que aparece citada en el texto por defecto de la plantilla de Hugging Face. Por tanto, no existe documentacion tecnica verificable del proceso de entrenamiento.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ El entrenamiento se realizo mediante ajuste supervisado (SFT), segun las etiquet
 - Investigacion academica sobre LoRA y SFT: sirve como ejemplo reproducible de un adaptador entrenado con PEFT, TRL y Unsloth sobre un modelo turco, util para estudiar el impacto del ajuste de bajo rango en idiomas con menos recursos.
 - Experimentos de ajuste incremental: partir de este adaptador para seguir entrenando con datos propios de un dominio concreto (legal, sanitario, atencion al cliente) en lugar de empezar desde el modelo base.
 - Generacion de texto auxiliar en turco: redaccion de borradores, resumenes o parafraseos como paso previo a revision humana, asumiendo tasa de error desconocida por falta de evaluacion.
-- Docencia y formacion tecnica: demostrar en talleres el flujo completo de entrenamiento de un adaptador (preparacion de datos, SFT, publicacion en HuggingFace) con un coste de computo bajo.
+- Docencia y formacion tecnica: demostrar en talleres el flujo completo de entrenamiento de un adaptador (preparacion de datos, SFT, publicacion en Hugging Face) con un coste de computo bajo.
 - Generacion de datos sinteticos para filtrar posteriormente: producir candidatos de texto en turco que un anotador humano depure, siempre que se mida antes la tasa de alucinacion del sistema.
 - Pruebas de integracion de infraestructura: validar cargas de adaptadores PEFT en servidores de inferencia (vLLM, TGI o transformers) antes de invertir en un ajuste mas costoso.
 
@@ -69,7 +69,7 @@ Las cifras siguientes son estimaciones derivadas del tamaño del modelo base (7B
 - Memoria adicional del adaptador: alrededor de 0,2 GB sobre el modelo base.
 - GPU recomendadas: A100 40 GB, H100 o L40S para servicio en FP16 con lotes grandes; RTX 4090 (24 GB) o RTX A6000 (48 GB) para FP16 con lotes pequenos.
 - GPU de consumo: si cabe en tarjetas de 24 GB (RTX 3090, RTX 4090) en FP16 con contexto moderado, y en tarjetas de 8-12 GB si se aplica cuantizacion de 4 bits.
-- Opciones de despliegue: transformers con PEFT para cargar el adaptador, vLLM (soporta adaptadores LoRA), HuggingFace TGI, Ollama o llama.cpp (requieren convertir el modelo fusionado a GGUF, ya que estos motores no cargan adaptadores PEFT de forma nativa).
+- Opciones de despliegue: transformers con PEFT para cargar el adaptador, vLLM (soporta adaptadores LoRA), Hugging Face TGI, Ollama o llama.cpp (requieren convertir el modelo fusionado a GGUF, ya que estos motores no cargan adaptadores PEFT de forma nativa).
 - Latencia y throughput: no disponible; no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -78,14 +78,14 @@ La busqueda web no ha devuelto informacion sobre modelos comparables, y la ficha
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `meetingof/alexisveri` (adaptador LoRA) | 7B en el modelo base; adaptador de tamaño no declarado | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| `ogulcanaydogan/Turkish-LLM-7B-Instruct` (modelo base) | 7B | no disponible | no disponible | no disponible | HuggingFace |
+| `meetingof/alexisveri` (adaptador LoRA) | 7B en el modelo base; adaptador de tamaño no declarado | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| `ogulcanaydogan/Turkish-LLM-7B-Instruct` (modelo base) | 7B | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos suficientes para comparar con otras alternativas de la misma categoria (por ejemplo, otros modelos instructivos en turco). Cualquier tabla adicional careceria de base verificable.
 
 ## Limitaciones y advertencias
 
-- Model card sin contenido: la ficha es la plantilla por defecto de HuggingFace; no hay descripcion del modelo, datos de entrenamiento, hiperparametros ni evaluacion.
+- Model card sin contenido: la ficha es la plantilla por defecto de Hugging Face; no hay descripcion del modelo, datos de entrenamiento, hiperparametros ni evaluacion.
 - Licencia no declarada: al no especificarse licencia, el uso comercial es juridicamente incierto; ademas, las condiciones del modelo base `ogulcanaydogan/Turkish-LLM-7B-Instruct` tambien son desconocidas y podrian imponer restricciones adicionales.
 - Sin validacion externa: 0 descargas y 0 likes implican que no hay usuarios que hayan reportado comportamiento, calidad o fallos.
 - Sesgos desconocidos: al no documentarse el dataset de SFT, no puede evaluarse el sesgo de genero, politico, religioso o cultural del adaptador.
@@ -98,7 +98,7 @@ No se dispone de datos suficientes para comparar con otras alternativas de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/meetingof/alexisveri
+- Modelo en Hugging Face: https://huggingface.co/meetingof/alexisveri
 - Modelo base: https://huggingface.co/ogulcanaydogan/Turkish-LLM-7B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL: https://github.com/huggingface/trl

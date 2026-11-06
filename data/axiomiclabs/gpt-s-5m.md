@@ -78,11 +78,11 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de tareas generativa
 
 | Modelo | Parametros | Contexto | Promedio en el arnes del autor | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GPT-S-5M | 5,16M | 512 tokens | 44,28% | Apache 2.0 | HuggingFace, transformers con custom_code |
-| pythia-31m (EleutherAI) | 31M | 2.048 tokens (segun la familia Pythia) | 42,90% | Apache 2.0 | HuggingFace, transformers estandar |
-| pythia-14m (EleutherAI) | 14M | 2.048 tokens (segun la familia Pythia) | 41,83% | Apache 2.0 | HuggingFace, transformers estandar |
-| Spark-5M-Base-v4 (LH-Tech-AI) | 5M (aproximado) | No disponible | 41,71% | No disponible | HuggingFace |
-| Supra-Mini-v5-8M (SupraLabs) | 8M (aproximado) | No disponible | 40,97% | No disponible | HuggingFace |
+| GPT-S-5M | 5,16M | 512 tokens | 44,28% | Apache 2.0 | Hugging Face, transformers con custom_code |
+| pythia-31m (EleutherAI) | 31M | 2.048 tokens (segun la familia Pythia) | 42,90% | Apache 2.0 | Hugging Face, transformers estandar |
+| pythia-14m (EleutherAI) | 14M | 2.048 tokens (segun la familia Pythia) | 41,83% | Apache 2.0 | Hugging Face, transformers estandar |
+| Spark-5M-Base-v4 (LH-Tech-AI) | 5M (aproximado) | No disponible | 41,71% | No disponible | Hugging Face |
+| Supra-Mini-v5-8M (SupraLabs) | 8M (aproximado) | No disponible | 40,97% | No disponible | Hugging Face |
 
 La ventaja declarada por el autor es que GPT-S-5M supera a modelos hasta seis veces mas grandes en el promedio del conjunto evaluado, con la salvedad de que solo se comparan cifras del mismo arnes interno. Frente a la familia Pythia, que es la referencia abierta mas establecida en esta escala, GPT-S-5M gana en PIQA y BLiMP pero pierde en ARC easy y no alcanza la ventana de contexto de 2.048 tokens de Pythia. Los datos de licencia y contexto de los modelos competidores mas pequenos no estan disponibles en la informacion proporcionada.
 
@@ -102,7 +102,7 @@ La ventaja declarada por el autor es que GPT-S-5M supera a modelos hasta seis ve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AxiomicLabs/GPT-S-5M
+- Modelo en Hugging Face: https://huggingface.co/AxiomicLabs/GPT-S-5M
 - Version posterior indicada por el autor: https://huggingface.co/AxiomicLabs/GPT-S3-3M
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset SmolLM corpus (incluye Cosmopedia v2): https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus

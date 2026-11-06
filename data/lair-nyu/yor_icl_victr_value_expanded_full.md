@@ -69,7 +69,7 @@ No se dispone de información comparativa. El modelo pertenece a la familia de p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lair-nyu/yor_icl_victr_value_expanded_full
+- Repositorio Hugging Face: https://huggingface.co/lair-nyu/yor_icl_victr_value_expanded_full
 - Organización LAIR NYU: https://huggingface.co/lair-nyu
 - Repositorio openpi (framework de entrenamiento): https://github.com/Physical-Intelligence/openpi
 - Repositorio relacionado (variante con visión): https://huggingface.co/lair-nyu/yor_icl_victr_vision_expanded_full

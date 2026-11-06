@@ -94,7 +94,7 @@ La comparación directa con otros refinadores de transcripciones en vietnamita n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pdnhan/Qwen2.5-1.5B-Vietnamese-Transcript-Refiner-mobile
+- Modelo en Hugging Face: https://huggingface.co/pdnhan/Qwen2.5-1.5B-Vietnamese-Transcript-Refiner-mobile
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/main/LICENSE
 - ONNX Runtime: https://onnxruntime.ai

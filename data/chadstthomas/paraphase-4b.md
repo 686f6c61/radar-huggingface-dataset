@@ -128,7 +128,7 @@ En la informacion disponible no aparecen otros "humanizadores" de terceros con d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chadstthomas/Paraphase-4B
+- Modelo en Hugging Face: https://huggingface.co/chadstthomas/Paraphase-4B
 - Adapter Pack (base crudo, LoRA de reescritura y LoRAs de extraccion): https://huggingface.co/chadstthomas/Paraphase-4B-Adapter-Pack
 - Coleccion Paraphase (4B, 2B, adapter pack, demo y explorer): https://huggingface.co/collections/chadstthomas/paraphase-local-email-models-measured-6ada7f54cb27d41ff3ec168b
 - Demo en vivo (ZeroGPU): https://huggingface.co/spaces/chadstthomas/paraphase-rewriter

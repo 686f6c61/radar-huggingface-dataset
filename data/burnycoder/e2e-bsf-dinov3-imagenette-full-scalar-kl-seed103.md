@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (e2e-bsf-dinov3-imagenette-full-scalar-kl-seed103) | Featurizer block-sparse escalar sobre DINOv3 ViT-B/16 | 9.607.690 | no aplica | MIT (backbone con licencia aparte) | HuggingFace, 22 descargas |
+| Este modelo (e2e-bsf-dinov3-imagenette-full-scalar-kl-seed103) | Featurizer block-sparse escalar sobre DINOv3 ViT-B/16 | 9.607.690 | no aplica | MIT (backbone con licencia aparte) | Hugging Face, 22 descargas |
 | SAE ReLU convencional (p. ej. los descritos en arXiv:2405.12241) | Sparse autoencoder con activaciones ReLU | no disponible | no aplica | variable según implementación | múltiples implementaciones públicas |
 | Block-sparse featurizer de Goodfire (referencia) | Featurizer block-sparse | no disponible | no aplica | no disponible | repositorio público de Goodfire |
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-scalar-kl-seed103
+- Modelo en Hugging Face: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-scalar-kl-seed103
 - Repositorio del proyecto: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers
 - Paper de block-sparse featurizers: https://arxiv.org/abs/2606.25234
 - Paper de SAE end-to-end: https://arxiv.org/abs/2405.12241

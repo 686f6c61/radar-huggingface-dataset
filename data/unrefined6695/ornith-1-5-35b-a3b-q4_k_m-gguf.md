@@ -92,6 +92,6 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa c
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/unrefined6695/Ornith-1.5-35B-A3B-Q4_K_M-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/unrefined6695/Ornith-1.5-35B-A3B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Referencia citada por el autor sobre fallos de tool calling en agentes: labs.adaline.ai (articulo "AI agent tool-calling failures")

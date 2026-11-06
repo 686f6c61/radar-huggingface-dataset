@@ -98,7 +98,7 @@ No se proporcionan datos de benchmarks ni especificaciones de contexto de modelo
 
 | Modelo | Parametros | Activos | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Hosstia/AliceAI-T5-35B-A0.6B-MLX-6bit | 34.354.463.744 | 0,6B por token | Affine 6 bits, grupo 64 | No disponible | other | Publicado en HuggingFace, 0 descargas y 0 likes |
+| Hosstia/AliceAI-T5-35B-A0.6B-MLX-6bit | 34.354.463.744 | 0,6B por token | Affine 6 bits, grupo 64 | No disponible | other | Publicado en Hugging Face, 0 descargas y 0 likes |
 | yandex/AliceAI-T5-35B-A0.6B (base) | 35B segun nomenclatura | 0,6B por token | Precisión completa (segun nomenclatura) | No disponible | No disponible | Modelo base referenciado, no descrito en la información disponible |
 | Variante 4 bits de la familia | No disponible | No disponible | 4 bits | No disponible | other | Mencionada en la model card; mejor calidad de Q&A que la de 6 bits |
 | Variante MXFP4 de la familia | No disponible | No disponible | MXFP4 | No disponible | other | Desaconsejada por el autor: degeneración por repetición en aproximadamente el 10% de los párrafos |
@@ -121,7 +121,7 @@ No se dispone de comparaciones con otros modelos de traducción zh-ru (por ejemp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hosstia/AliceAI-T5-35B-A0.6B-MLX-6bit
+- Modelo en Hugging Face: https://huggingface.co/Hosstia/AliceAI-T5-35B-A0.6B-MLX-6bit
 - Modelo base: https://huggingface.co/yandex/AliceAI-T5-35B-A0.6B
 - Framework MLX de Apple: https://github.com/ml-explore/mlx
 - Articulo tecnico sobre el proceso de conversion: fichero `ARTICLE.md` incluido en el repositorio del modelo

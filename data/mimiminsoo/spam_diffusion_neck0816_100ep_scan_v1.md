@@ -1,7 +1,7 @@
 # mimiminsoo/spam_diffusion_neck0816_100ep_scan_v1
 
 ## Resumen
-El modelo `mimiminsoo/spam_diffusion_neck0816_100ep_scan_v1` es una política de control visuomotor basada en Diffusion Policy, entrenada con el framework LeRobot de HuggingFace. Diffusion Policy, presentado en el paper arxiv:2303.04137, trata el control visuomotor como un proceso generativo de difusión que produce trayectorias de acción suaves y multi-paso, especialmente eficaces en tareas de manipulación que requieren contacto físico.
+El modelo `mimiminsoo/spam_diffusion_neck0816_100ep_scan_v1` es una política de control visuomotor basada en Diffusion Policy, entrenada con el framework LeRobot de Hugging Face. Diffusion Policy, presentado en el paper arxiv:2303.04137, trata el control visuomotor como un proceso generativo de difusión que produce trayectorias de acción suaves y multi-paso, especialmente eficaces en tareas de manipulación que requieren contacto físico.
 
 El modelo ha sido entrenado específicamente sobre el dataset `mimiminsoo/piper_capstone_neck0816_combined`, aparentemente orientado a una tarea de manipulación de cuello (posiblemente en un robot tipo SO-100). Con 323 millones de parámetros y un tamaño de repositorio de 1,3 GB, es una política de tamaño moderado diseñada para ejecutarse en tiempo real en robots físicos.
 
@@ -55,9 +55,9 @@ No se dispone de información sobre modelos comparables en el repositorio. Sin e
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (diffusion) | Diffusion Policy (UNet) | 323M | no disponible | Apache 2.0 | HuggingFace |
-| ACT (Action Chunking with Transformers) | Transformer | ~80M-300M (depende) | no disponible | Apache 2.0 | HuggingFace (LeRobot) |
-| VQ-BeT | Transformer con cuantización | ~100M-300M | no disponible | Apache 2.0 | HuggingFace (LeRobot) |
+| Este modelo (diffusion) | Diffusion Policy (UNet) | 323M | no disponible | Apache 2.0 | Hugging Face |
+| ACT (Action Chunking with Transformers) | Transformer | ~80M-300M (depende) | no disponible | Apache 2.0 | Hugging Face (LeRobot) |
+| VQ-BeT | Transformer con cuantización | ~100M-300M | no disponible | Apache 2.0 | Hugging Face (LeRobot) |
 
 Nota: los datos de ACT y VQ-BeT son orientativos y pueden variar; no se han verificado en esta ficha.
 
@@ -71,7 +71,7 @@ Nota: los datos de ACT y VQ-BeT son orientativos y pueden variar; no se han veri
 - No se especifican restricciones de contexto o idioma, al no ser un modelo lingüístico.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/mimiminsoo/spam_diffusion_neck0816_100ep_scan_v1
+- Modelo en Hugging Face: https://huggingface.co/mimiminsoo/spam_diffusion_neck0816_100ep_scan_v1
 - Paper de Diffusion Policy: https://huggingface.co/papers/2303.04137
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

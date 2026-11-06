@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bp_liberogen_goal_chain` es un modelo publicado en HuggingFace por el usuario `austinpatel`, asociado al paper *"What Enables In-Context Behavior Prompting for Manipulation?"* y al repositorio de código `real-stanford/behavior_prompting`. Por el nombre del repositorio y el título del paper, el modelo está orientado a la manipulación robótica mediante *behavior prompting* (prompting de comportamiento en contexto), es decir, la capacidad de un modelo de imitar o ejecutar comportamientos motores a partir de demostraciones incluidas en el contexto. El repositorio ocupa 15,6 GB, lo que sugiere pesos de un modelo de tamaño medio, pero no se dispone de información pública sobre la arquitectura, el número de parámetros ni el contexto.
+`bp_liberogen_goal_chain` es un modelo publicado en Hugging Face por el usuario `austinpatel`, asociado al paper *"What Enables In-Context Behavior Prompting for Manipulation?"* y al repositorio de código `real-stanford/behavior_prompting`. Por el nombre del repositorio y el título del paper, el modelo está orientado a la manipulación robótica mediante *behavior prompting* (prompting de comportamiento en contexto), es decir, la capacidad de un modelo de imitar o ejecutar comportamientos motores a partir de demostraciones incluidas en el contexto. El repositorio ocupa 15,6 GB, lo que sugiere pesos de un modelo de tamaño medio, pero no se dispone de información pública sobre la arquitectura, el número de parámetros ni el contexto.
 
 La model card publicada es mínima: solo incluye la licencia MIT, el enlace al paper (arXiv 2606.30457) y el enlace al repositorio de código. No se especifican idiomas, pipeline, arquitectura, datos de entrenamiento ni resultados de benchmarks. Cualquier dato técnico que no aparezca en esta información se indica como "no disponible" en la ficha.
 
@@ -23,7 +23,7 @@ La relevancia del modelo radica en su vinculación con un trabajo de investigaci
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. El nombre del repositorio (`behavior_prompting`) y el título del paper asociado sugieren un modelo orientado a la manipulación robótica mediante *in-context behavior prompting*, una técnica en la que el modelo condiciona su comportamiento en demostraciones incluidas en el contexto en lugar de requerir un ajuste fino específico por tarea. No obstante, se desconoce si se trata de un transformer, un modelo híbrido, una política visomotora o una combinación de un modelo de lenguaje con un codificador visual.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. El nombre del repositorio (`behavior_prompting`) y el título del paper asociado sugieren un modelo orientado a la manipulación robótica mediante *in-context behavior prompting*, una técnica en la que el modelo condiciona su comportamiento en demostraciones incluidas en el contexto en lugar de requerir un ajuste fino específico por tarea. No obstante, se desconoce si se trata de un transformer, un modelo híbrido, una política visomotora o una combinación de un modelo de lenguaje con un codificador visual.
 
 Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas concretas. El repositorio de código asociado (`real-stanford/behavior_prompting`) es la única fuente potencial de detalles, pero no se ha proporcionado su contenido en la información disponible.
 
@@ -74,6 +74,6 @@ No disponible. No se conocen modelos comparables de la misma categoría con info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/austinpatel/bp_liberogen_goal_chain
+- Hugging Face: https://huggingface.co/austinpatel/bp_liberogen_goal_chain
 - Paper: https://huggingface.co/papers/2606.30457
 - Código: https://github.com/real-stanford/behavior_prompting

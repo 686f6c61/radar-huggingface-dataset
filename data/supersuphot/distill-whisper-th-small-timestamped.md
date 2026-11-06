@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`supersuphot/distill-whisper-th-small-timestamped` es una conversion a ONNX del modelo `biodatlab/distill-whisper-th-small`, una version destilada de Whisper especializada en reconocimiento automatico del habla en tailandes. El autor de la conversion es el usuario de HuggingFace supersuphot, mientras que el modelo original (Thonburian Whisper) procede de biodatlab. El proposito de esta version concreta es doble: por un lado, empaquetar los pesos en formato ONNX para que puedan ejecutarse con Transformers.js tanto en WebGPU como en WASM/CPU; por otro, exportar las salidas de atencion cruzada para que la opcion `return_timestamps: 'word'` funcione directamente en el navegador, algo que no ofrecen las conversiones estandar.
+`supersuphot/distill-whisper-th-small-timestamped` es una conversion a ONNX del modelo `biodatlab/distill-whisper-th-small`, una version destilada de Whisper especializada en reconocimiento automatico del habla en tailandes. El autor de la conversion es el usuario de Hugging Face supersuphot, mientras que el modelo original (Thonburian Whisper) procede de biodatlab. El proposito de esta version concreta es doble: por un lado, empaquetar los pesos en formato ONNX para que puedan ejecutarse con Transformers.js tanto en WebGPU como en WASM/CPU; por otro, exportar las salidas de atencion cruzada para que la opcion `return_timestamps: 'word'` funcione directamente en el navegador, algo que no ofrecen las conversiones estandar.
 
 La relevancia de esta ficha esta en el nicho que cubre: es uno de los pocos modelos ASR para tailandes listos para inferencia 100% cliente, sin backend, con marcas de tiempo a nivel de palabra. Eso lo hace util para subtitulado, karaoke, indexacion de audio y aplicaciones de accesibilidad que se ejecutan en el dispositivo del usuario. El modelo base es una destilacion de Whisper small en la que el decodificador pasa de 12 a 4 capas, manteniendo la arquitectura encoder-decoder transformer original de Whisper.
 
@@ -84,10 +84,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/supersuphot/distill-whisper-th-small-timestamped
+- Modelo en Hugging Face: https://huggingface.co/supersuphot/distill-whisper-th-small-timestamped
 - Modelo base: https://huggingface.co/biodatlab/distill-whisper-th-small
 - Modelo relacionado (misma destilacion tailandesa): https://huggingface.co/Surapat27/distill-whisper-th-small
-- Organizacion distil-whisper en HuggingFace: https://huggingface.co/distil-whisper
+- Organizacion distil-whisper en Hugging Face: https://huggingface.co/distil-whisper
 - Repositorio distil-whisper: https://github.com/huggingface/distil-whisper
 - Transformers.js: https://github.com/huggingface/transformers.js
 - Espejo del modelo base en ModelHub: https://dev.modelhub.org.cn/biodatlab/distill-whisper-th-small

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Romaindu276/Retif2` es un repositorio publicado en HuggingFace por el usuario Romaindu276, con licencia Apache 2.0 y etiqueta de región `us`. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia, sin descripción técnica, documentación de arquitectura, parámetros, contexto o capacidades. No se han registrado descargas ni interacciones en la comunidad, y no se ha especificado el pipeline de uso (texto, imagen, audio, etc.).
+El modelo `Romaindu276/Retif2` es un repositorio publicado en Hugging Face por el usuario Romaindu276, con licencia Apache 2.0 y etiqueta de región `us`. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia, sin descripción técnica, documentación de arquitectura, parámetros, contexto o capacidades. No se han registrado descargas ni interacciones en la comunidad, y no se ha especificado el pipeline de uso (texto, imagen, audio, etc.).
 
 Dada la ausencia total de especificaciones, este modelo no puede ser evaluado ni recomendado para ningún caso de uso concreto. La ficha que sigue refleja la falta de datos disponibles, marcando cada campo como "no disponible" cuando corresponde. Se recomienda a los desarrolladores e investigadores que contacten con el autor o consulten el repositorio directamente para obtener información adicional antes de considerar su uso.
 
@@ -53,5 +53,5 @@ No disponible. No se puede comparar este modelo con alternativas de la misma cat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Romaindu276/Retif2
+- Repositorio en Hugging Face: https://huggingface.co/Romaindu276/Retif2
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web.

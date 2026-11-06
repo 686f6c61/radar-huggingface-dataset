@@ -70,6 +70,6 @@ No disponible. No se han identificado modelos comparables en la misma categoria 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKB109/contextual-bandit-simulator-20260903-model
+- Modelo en Hugging Face: https://huggingface.co/RKB109/contextual-bandit-simulator-20260903-model
 - Dataset asociado: https://huggingface.co/datasets/RKB109/contextual-bandit-simulator-20260903-dataset
 - Repositorio de GitHub: mencionado en la model card como fuente de `train.py`, el split del dataset y el codigo de evaluacion, pero no se proporciona la URL en la informacion disponible.

@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolVLA (este modelo) | 450M | 50 pasos de acción | VLA con flow matching, shaping sobre ACT | Apache 2.0 | HuggingFace |
+| SmolVLA (este modelo) | 450M | 50 pasos de acción | VLA con flow matching, shaping sobre ACT | Apache 2.0 | Hugging Face |
 | ACT (Action Chunking with Transformers) | ~80M (típico) | Variable | Política basada en transformers, sin VLM | MIT (típico) | Código abierto |
-| OpenVLA (7B) | 7B | Variable | VLA grande, generalista | MIT | HuggingFace |
+| OpenVLA (7B) | 7B | Variable | VLA grande, generalista | MIT | Hugging Face |
 
 Este modelo es significativamente más pequeño que OpenVLA (450M vs 7B), lo que lo hace más adecuado para hardware de bajo coste y despliegue en tiempo real. A diferencia de ACT, que no tiene componentes visuales preentrenados, SmolVLA aprovecha un VLM preentrenado, lo que puede mejorar la generalización visual. Sin embargo, ACT es más simple y puede ser más robusto en tareas muy específicas. La principal diferencia es el enfoque híbrido de seguridad, que no está presente en los otros modelos comparados.
 
@@ -81,7 +81,7 @@ Este modelo es significativamente más pequeño que OpenVLA (450M vs 7B), lo que
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/1goldexperience1/towel_fold_smolvla_shaping_005000
+- Hugging Face: https://huggingface.co/1goldexperience1/towel_fold_smolvla_shaping_005000
 - Repositorio del proyecto: https://github.com/dk2472780158-ctrl/piper-dual-arm-smolvla-towel-folding
 - Fork de LeRobot con SmolVLA: https://github.com/zyqdragon/lerobot_smolvla
 - Paper de SmolVLA: https://arxiv.org/html/2506.01844v1

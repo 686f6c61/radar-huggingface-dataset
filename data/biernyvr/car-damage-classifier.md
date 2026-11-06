@@ -89,7 +89,7 @@ No se dispone de resultados publicados de otros modelos sobre el mismo conjunto 
 
 | Modelo | Parametros (referencia) | Entrada | Licencia | Rendimiento en la tarea | Disponibilidad |
 |---|---|---|---|---|---|
-| car-damage-classifier (EfficientNetV2-M ajustado) | no disponible en la model card (~54 M en la variante de referencia) | 224 x 224 RGB | MIT | 100 % de exactitud declarada, no verificada | Pesos en PyTorch y ONNX en HuggingFace |
+| car-damage-classifier (EfficientNetV2-M ajustado) | no disponible en la model card (~54 M en la variante de referencia) | 224 x 224 RGB | MIT | 100 % de exactitud declarada, no verificada | Pesos en PyTorch y ONNX en Hugging Face |
 | EfficientNetV2-S (sin ajustar) | ~21,5 M | 224-384 px | Apache 2.0 (implementacion de referencia) | no disponible | Requiere ajuste propio |
 | EfficientNetV2-L (sin ajustar) | ~118,5 M | 384 px | Apache 2.0 (implementacion de referencia) | no disponible | Requiere ajuste propio |
 | ResNet-50 (sin ajustar) | ~25,6 M | 224 px | BSD-3 / Apache 2.0 segun implementacion | no disponible | Muy extendido, requiere ajuste |
@@ -111,6 +111,6 @@ No se dispone de resultados publicados de otros modelos sobre el mismo conjunto 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BiernyVR/car-damage-classifier
+- Modelo en Hugging Face: https://huggingface.co/BiernyVR/car-damage-classifier
 - Repositorio del autor (mismo enlace, contiene `infer.py`, `damage_metadata.json` y los graficos de evaluacion): https://huggingface.co/BiernyVR/car-damage-classifier/tree/main
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes. Las consultas realizadas devolvieron exclusivamente paginas sobre talasemia (DocCheck Flexikon y Wikipedia), sin ninguna relacion con el modelo ni con la clasificacion de danos en vehiculos, por lo que se descartan como fuentes.

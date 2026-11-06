@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/heideng90/Qwen3.6-35B-A3B-heretic-v2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/heideng90/Qwen3.6-35B-A3B-heretic-v2-GGUF
 - Modelo base (safetensors): https://huggingface.co/trohrbaugh/Qwen3.6-35B-A3B-heretic-v2
 - Cuantizaciones imatrix alternativas: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-heretic-v2-i1-GGUF
 - Página de descargas de mradermacher: https://hf.tst.eu/model#Qwen3.6-35B-A3B-heretic-v2-GGUF

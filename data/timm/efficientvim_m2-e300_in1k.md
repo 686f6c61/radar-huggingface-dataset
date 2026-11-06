@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrada | Contexto / tarea | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| efficientvim_m2.e300_in1k | 13,9 M | 224 x 224 | Clasificacion de imagenes (ImageNet-1k) | MIT | HuggingFace (`timm`) | no disponible |
+| efficientvim_m2.e300_in1k | 13,9 M | 224 x 224 | Clasificacion de imagenes (ImageNet-1k) | MIT | Hugging Face (`timm`) | no disponible |
 | Otras variantes de la familia EfficientViM (m1, m3, etc.) | no disponible | no disponible | Clasificacion de imagenes | MIT (segun el repositorio del paper) | Repositorio mlvlab/EfficientViM y `timm` | no disponible |
 | Vision Mamba (Vim) y derivados | no disponible | no disponible | Clasificacion de imagenes | no disponible | Repositorios de los autores | no disponible |
-| Backbones eficientes tipo MobileNet / EfficientNet en `timm` | no disponible | 224 x 224 | Clasificacion y extraccion de caracteristicas | varian por modelo | HuggingFace (`timm`) | no disponible |
+| Backbones eficientes tipo MobileNet / EfficientNet en `timm` | no disponible | 224 x 224 | Clasificacion y extraccion de caracteristicas | varian por modelo | Hugging Face (`timm`) | no disponible |
 
 No se dispone de cifras comparativas de parametros, exactitud ni latencia para las alternativas en la informacion proporcionada, por lo que la comparacion se limita a categoria, tarea, licencia y canal de distribucion.
 
@@ -93,11 +93,11 @@ No se dispone de cifras comparativas de parametros, exactitud ni latencia para l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/efficientvim_m2.e300_in1k
+- Modelo en Hugging Face: https://huggingface.co/timm/efficientvim_m2.e300_in1k
 - Paper (arXiv): https://arxiv.org/abs/2411.15241
 - Repositorio original de los autores: https://github.com/mlvlab/EfficientViM
 - Resultados y metricas de `timm`: https://github.com/huggingface/pytorch-image-models/tree/main/results
 - Repositorio de `timm`: https://github.com/huggingface/pytorch-image-models
-- Organizacion de `timm` en HuggingFace: https://huggingface.co/timm
+- Organizacion de `timm` en Hugging Face: https://huggingface.co/timm
 - Documentacion de `timm`: https://timm.fast.ai/
 - Paquete en PyPI: https://pypi.org/project/timm/

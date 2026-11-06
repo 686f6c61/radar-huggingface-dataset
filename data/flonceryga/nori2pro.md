@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks ni de evaluaciones comparativas con otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Flonceryga/Nori2PRO
+- Repositorio Hugging Face: https://huggingface.co/Flonceryga/Nori2PRO
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de inferencia): https://github.com/ggml-org/llama.cpp
 - Ollama (plataforma de ejecucion de modelos GGUF): https://ollama.com/

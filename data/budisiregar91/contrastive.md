@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`budisiregar91/contrastive` es un repositorio experimental alojado en HuggingFace que contiene una implementación propia de una arquitectura Albef (ALBEF, *Align before Fuse*) orientada a aprendizaje contrastivo. Lo publica el usuario budisiregar91 bajo licencia MIT y, según la propia model card, se trata de un punto de partida para pruebas de humo (*smoke tests*), no de un checkpoint entrenado ni evaluado. El repositorio incluye el código (`run.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`.
+`budisiregar91/contrastive` es un repositorio experimental alojado en Hugging Face que contiene una implementación propia de una arquitectura Albef (ALBEF, *Align before Fuse*) orientada a aprendizaje contrastivo. Lo publica el usuario budisiregar91 bajo licencia MIT y, según la propia model card, se trata de un punto de partida para pruebas de humo (*smoke tests*), no de un checkpoint entrenado ni evaluado. El repositorio incluye el código (`run.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`.
 
 El dato más relevante es que el checkpoint declarado contiene 16.576 parámetros totales según los safetensors reales, un tamaño que no corresponde a un modelo Albef funcional (los Albef originales manejan cientos de millones de parámetros) y que sugiere una implementación mínima o de juguete. El tamaño del repositorio es de 0,0 GB y no hay descargas ni *likes* registrados, lo que confirma su carácter incipiente.
 
@@ -81,6 +81,6 @@ La comparación con Albef, BLIP y CLIP se ofrece solo como referencia de categor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/budisiregar91/contrastive
+- Repositorio Hugging Face: https://huggingface.co/budisiregar91/contrastive
 - Paper original de ALBEF (Align before Fuse): https://arxiv.org/abs/2107.07651
 - Repositorio oficial de ALBEF (Salesforce): https://github.com/salesforce/ALBEF

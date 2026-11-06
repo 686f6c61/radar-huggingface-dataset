@@ -99,7 +99,7 @@ La comparacion con alternativas de otros fabricantes del mismo segmento no esta 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chenyumo/MoziAier-9B-TQ
+- Hugging Face: https://huggingface.co/chenyumo/MoziAier-9B-TQ
 - ModelScope: https://modelscope.cn/models/chenyumo/MoziAier-9B-TQ
 - GitHub (referencia truncada en la model card): https://github.com/chenyumo166/MoziAier-9B-TQ
 - Modelo base de preentrenamiento: https://huggingface.co/Qwen/Qwen3.5-9B

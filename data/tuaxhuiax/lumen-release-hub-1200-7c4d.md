@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lumen-3B-Instruct es, según la model card disponible, un modelo de lenguaje de 3.000 millones de parámetros en variante "Instruct", asociado a un ciclo de publicación fechado en noviembre de 2026. El repositorio de HuggingFace `TUaxhuiax/lumen-release-hub-1200-7c4d` no contiene los pesos del modelo, sino un "hub" interno de publicación con directorios `intake/` (dossier de evaluación con `candidates.json`, `eval_ledger.json` y `release_policy.json`) y `releases/` (entradas de release publicadas). El autor del repositorio es el usuario `TUaxhuiax`.
+Lumen-3B-Instruct es, según la model card disponible, un modelo de lenguaje de 3.000 millones de parámetros en variante "Instruct", asociado a un ciclo de publicación fechado en noviembre de 2026. El repositorio de Hugging Face `TUaxhuiax/lumen-release-hub-1200-7c4d` no contiene los pesos del modelo, sino un "hub" interno de publicación con directorios `intake/` (dossier de evaluación con `candidates.json`, `eval_ledger.json` y `release_policy.json`) y `releases/` (entradas de release publicadas). El autor del repositorio es el usuario `TUaxhuiax`.
 
 La información pública es extremadamente escasa: no se especifican arquitectura, longitud de contexto, idiomas, licencia ni formato de pesos, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta. La etiqueta `region:us` es la única metainformación disponible, lo que sugiere una restricción o clasificación regional del repositorio, sin más detalle.
 
@@ -76,5 +76,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TUaxhuiax/lumen-release-hub-1200-7c4d
+- Repositorio en Hugging Face: https://huggingface.co/TUaxhuiax/lumen-release-hub-1200-7c4d
 - No se han encontrado papers, blogs, repositorios de código ni demos en la información disponible.

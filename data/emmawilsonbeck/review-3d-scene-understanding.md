@@ -4,7 +4,7 @@
 
 El repositorio `emmawilsonbeck/review-3d-scene-understanding` no es un modelo entrenado, sino un cuaderno de notas de investigación sobre comprensión de escenas 3D. El propio autor lo declara explícitamente en la model card: "no se presenta como un artículo completado ni como una publicación de modelos entrenados". Contiene dos artefactos, `reading.md` (nota principal) y `README.md` (documentación), y organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, sin resultados experimentales, sin código y sin checkpoint funcional.
 
-Los metadatos de HuggingFace declaran un fichero en formato safetensors con 33.088 parámetros totales y un tamano de repositorio de 0,0 GB. Esa cifra es incompatible con cualquier modelo capaz de abordar comprensión de escenas 3D: 33.088 parámetros equivalen a unos 0,13 MB en fp32, un orden de magnitud propio de un fichero auxiliar o de prueba, no de un modelo desplegable. No hay pipeline declarado, no hay idiomas declarados y no se especifica tokenizador, configuración ni arquitectura concreta.
+Los metadatos de Hugging Face declaran un fichero en formato safetensors con 33.088 parámetros totales y un tamano de repositorio de 0,0 GB. Esa cifra es incompatible con cualquier modelo capaz de abordar comprensión de escenas 3D: 33.088 parámetros equivalen a unos 0,13 MB en fp32, un orden de magnitud propio de un fichero auxiliar o de prueba, no de un modelo desplegable. No hay pipeline declarado, no hay idiomas declarados y no se especifica tokenizador, configuración ni arquitectura concreta.
 
 La relevancia actual del repositorio es documental, no técnica: sirve como plantilla de método científico (hipótesis falsable, baselines emparejados, comprobaciones de reproducibilidad, modos de fallo) para equipos que preparan experimentos de percepción 3D. Cualquier evaluación de capacidades, benchmarks o rendimiento es imposible con la información disponible.
 
@@ -90,6 +90,6 @@ No se identifican modelos comparables concretos en la información proporcionada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/emmawilsonbeck/review-3d-scene-understanding
+- Repositorio en Hugging Face: https://huggingface.co/emmawilsonbeck/review-3d-scene-understanding
 - Resultados de la búsqueda web: sin relación con el repositorio. Se devolvieron únicamente páginas corporativas de Microsoft (https://www.microsoft.com/en-us, https://account.microsoft.com/account, https://myaccount.microsoft.com/, https://www.microsoft.com/en-us/microsoft-products-and-apps, https://en.wikipedia.org/wiki/Microsoft).
 - Papers, blogs, repositorios de código y demos asociados: no disponibles.

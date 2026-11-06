@@ -12,7 +12,7 @@ Su relevancia es metodologica: permite reproducir y auditar como distintas estra
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (tag `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (tag `gpt2` en Hugging Face) |
 | Parametros totales | 86.416.128 (86,4 M), contados a partir de los safetensors publicados |
 | Parametros activos | No aplica: no es un modelo MoE |
 | Longitud de contexto | No disponible (el modelo base `goldfish-models/eng_latn_100mb` es de arquitectura GPT-2; el valor exacto no se confirma en la informacion proporcionada) |
@@ -72,15 +72,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cache KV: con la configuracion tipica de GPT-2 small (12 capas, 12 cabezas de 64 dimensiones) la cache ocupa del orden de 36 KB por token en FP16, es decir unos 37 MB para 1.024 tokens. Es una estimacion basada en la arquitectura base, no un dato confirmado.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Funciona sin problemas en GTX 1650, RTX 3060, RTX 4090, A100 y H100; en estas ultimas el cuello de botella sera la latencia de lanzamiento de kernels y no la memoria.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU dedicadas lanzadas en la ultima decada, e incluso en iGPU modernas y en CPU.
-- Opciones de despliegue: `transformers` con pipeline de `text-generation` (metodo documentado en la model card), Text Generation Inference (el repositorio esta etiquetado como compatible), y endpoints compatibles con la API de HuggingFace. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, conversion no facilitada por el autor.
+- Opciones de despliegue: `transformers` con pipeline de `text-generation` (metodo documentado en la model card), Text Generation Inference (el repositorio esta etiquetado como compatible), y endpoints compatibles con la API de Hugging Face. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, conversion no facilitada por el autor.
 - Latencia y throughput: no disponibles. Con 86,4 M de parametros se espera una generacion de cientos a miles de tokens por segundo en GPU moderna con batching, pero no hay mediciones publicadas que respalden una cifra concreta.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed10 | 86,4 M | No disponible | No disponible | HuggingFace, 0 descargas | Ajuste SFT de investigacion, sin evaluacion publicada |
-| goldfish-models/eng_latn_100mb (modelo base) | Orden de 86 M (familia Goldfish de 100 MB) | No disponible | No disponible en la informacion recopilada | HuggingFace | Monolingue en ingles, entrenado con 100 MB de texto; sirve de referencia directa |
+| fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed10 | 86,4 M | No disponible | No disponible | Hugging Face, 0 descargas | Ajuste SFT de investigacion, sin evaluacion publicada |
+| goldfish-models/eng_latn_100mb (modelo base) | Orden de 86 M (familia Goldfish de 100 MB) | No disponible | No disponible en la informacion recopilada | Hugging Face | Monolingue en ingles, entrenado con 100 MB de texto; sirve de referencia directa |
 | GPT-2 small | 124 M (con embeddings no atados) | 1.024 tokens | MIT | Ampliamente disponible | Referencia historica de la arquitectura; mas parametros y ecosistema mucho mayor |
 | DistilGPT2 | 82 M | 1.024 tokens | MIT | Ampliamente disponible | Destilado de GPT-2, tamano comparable y muy usado como linea base |
 
@@ -100,7 +100,7 @@ Nota: los datos de GPT-2 small y DistilGPT2 proceden de sus fichas publicas cono
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-jpn-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/vmxm3cui
 - Repositorio de TRL: https://github.com/huggingface/trl

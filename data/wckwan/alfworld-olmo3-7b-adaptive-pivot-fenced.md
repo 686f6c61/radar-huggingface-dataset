@@ -78,8 +78,8 @@ Advertencia: estos valores provienen del propio autor y no han sido verificados 
 
 | Modelo | Parametros | Contexto | Metodo de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Alfworld-Olmo3-7B-Adaptive-Pivot-Fenced | ~7B denso | No disponible | Process-GRPO con verificador sobre Olmo-3-7B-Instruct | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| allenai/Olmo-3-7B-Instruct (modelo base) | ~7B denso | No disponible en la informacion proporcionada | Ajuste instruct de proposito general | Apache-2.0 | HuggingFace, modelo de referencia de AI2 |
+| Alfworld-Olmo3-7B-Adaptive-Pivot-Fenced | ~7B denso | No disponible | Process-GRPO con verificador sobre Olmo-3-7B-Instruct | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| allenai/Olmo-3-7B-Instruct (modelo base) | ~7B denso | No disponible en la informacion proporcionada | Ajuste instruct de proposito general | Apache-2.0 | Hugging Face, modelo de referencia de AI2 |
 | Otras politicas abiertas estilo Search-R1 | No disponible | No disponible | RL con recompensa final sobre modelos de 7B | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la informacion proporcionada. La diferencia principal frente al modelo base no es de capacidad general, sino de especializacion: el modelo base no ha sido optimizado para decidir busquedas multi-turno, mientras que este ajuste si, a costa de perder presumiblemente versatilidad fuera del dominio de agente.
@@ -99,6 +99,6 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wckwan/Alfworld-Olmo3-7B-Adaptive-Pivot-Fenced
+- Modelo en Hugging Face: https://huggingface.co/wckwan/Alfworld-Olmo3-7B-Adaptive-Pivot-Fenced
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct
 - Papers, repositorios o demos adicionales: no encontrados. La busqueda web realizada no devolvio ningun recurso relacionado con este modelo; los resultados obtenidos correspondian a informacion sobre elecciones municipales en Baja Sajonia (Alemania) y no guardan relacion con el modelo.

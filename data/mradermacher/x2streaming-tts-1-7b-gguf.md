@@ -69,7 +69,7 @@ No se dispone de información suficiente para una comparativa técnica detallada
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/X2Streaming-TTS-1.7B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/X2Streaming-TTS-1.7B-GGUF
 - Modelo base: https://huggingface.co/zehan1/X2Streaming-TTS-1.7B
 - Perfil de mradermacher: https://huggingface.co/mradermacher
 - Página de modelo (enlace de descarga conveniente): https://hf.tst.eu/model#X2Streaming-TTS-1.7B-GGUF

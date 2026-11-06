@@ -9,7 +9,7 @@ MiniCPM5-2B-Base es un modelo de lenguaje denso de 2.000 millones de parámetros
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer denso (tipo Llama) |
-| Parametros totales | 2B (según denominación; dato de HuggingFace: 774.438, aparentemente incompleto) |
+| Parametros totales | 2B (según denominación; dato de Hugging Face: 774.438, aparentemente incompleto) |
 | Parametros activos | No aplicable (modelo denso) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S, e imatrix |

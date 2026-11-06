@@ -75,7 +75,7 @@ MAE de posicion ID con el modulo intacto: ~3e-17 (cero numerico bajo el evaluado
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento fisico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FREIA (este repo) | Modulo congelado de leyes newtonianas | No aplica (buffers) | No aplica | 100% exact en T1 y ood_mag; 0% con tensores permutados | MIT | HuggingFace (`bishoygaloaa/phillm-freia`) |
+| FREIA (este repo) | Modulo congelado de leyes newtonianas | No aplica (buffers) | No aplica | 100% exact en T1 y ood_mag; 0% con tensores permutados | MIT | Hugging Face (`bishoygaloaa/phillm-freia`) |
 | Qwen3.5-4B + LoRA | LLM con adaptador | 4B (aprox.) | No disponible | 42% ID / 0% OOD (n=50) | No disponible en la informacion | Referenciado en la model card |
 | Simulador de PhiLLM | Generador de eventos fisicos | No aplica | No aplica | Proporciona temporizacion de eventos; actualizaciones via FREIA | No disponible en la informacion | Repositorio `bishoymoussa/Phil` |
 
@@ -94,7 +94,7 @@ No se dispone de comparativas con otros modulos de leyes fisicas congeladas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bishoygaloaa/phillm-freia
+- Modelo en Hugging Face: https://huggingface.co/bishoygaloaa/phillm-freia
 - Dataset de resultados: https://huggingface.co/datasets/bishoygaloaa/phillm-results/tree/main/preds/freia
 - Proyecto PhiLLM: https://bishoymoussa.github.io/Phil/
 - Repositorio PhiLLM (modulo fuente `phil/weightspace/freia.py`): https://github.com/bishoymoussa/Phil

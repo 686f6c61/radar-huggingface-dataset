@@ -87,7 +87,7 @@ No hay modelos directamente comparables en el ecosistema abierto: ZHA es una arq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kvnloo/zha-routers-qwen-small
+- Hugging Face: https://huggingface.co/kvnloo/zha-routers-qwen-small
 - Paper ZHA: https://arxiv.org/abs/2610.42112v1
 - Estudio de reproducción z0evals: https://github.com/kvnloo/z0evals/tree/main/studies/zha-reproduction-v0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B

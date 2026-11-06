@@ -66,7 +66,7 @@ No disponible. Este repositorio no es un modelo de IA y no puede compararse con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jasonkobay/review-3d-scene-understanding
+- Repositorio en Hugging Face: https://huggingface.co/jasonkobay/review-3d-scene-understanding
 - Survey sobre inteligencia 3D multi-modal (arXiv 2310.15676): https://arxiv.org/abs/2310.15676
 - Listado curado de papers sobre comprensión de escenas: https://github.com/bertjiazheng/awesome-scene-understanding
 - GPT4Scene (paradigma de prompting visual para escenas 3D): https://gpt4scene.github.io/

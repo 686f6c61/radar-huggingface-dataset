@@ -70,11 +70,11 @@ No disponible. No se han identificado en la información proporcionada herramien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Arcaeon/arcaeon-continuity
+- Hugging Face: https://huggingface.co/Arcaeon/arcaeon-continuity
 - GitHub: https://github.com/Arcaeon-io/arcaeon-continuity
 - PyPI (pendiente): https://pypi.org/project/arcaeon-continuity/
 - Página de verificación: https://arcaeon.io/verify
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Arcaeon/tamper-evidence-demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Arcaeon/tamper-evidence-demo
 - Dependencias relacionadas:
   - arcaeon-ledger: https://pypi.org/project/arcaeon-ledger/
   - arcaeon-baseline: https://pypi.org/project/arcaeon-baseline/

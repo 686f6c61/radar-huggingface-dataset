@@ -88,7 +88,7 @@ No se han publicado resultados en benchmarks estandar como MMLU, HumanEval, GSM8
 
 | Modelo | Parametros | Tarea | Precision en el test de 2.000 turnos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| D1-600M-Text2SQL v1 | ~587M | Seleccion entre 4 SQL | 51,40% (13/500 los cuatro turnos) | LFM Open License v1.0 | Pesos abiertos en HuggingFace |
+| D1-600M-Text2SQL v1 | ~587M | Seleccion entre 4 SQL | 51,40% (13/500 los cuatro turnos) | LFM Open License v1.0 | Pesos abiertos en Hugging Face |
 | D1 600M base | ~600M | Seleccion entre 4 SQL | 25,45% (0/500) | no disponible | Pesos abiertos (LiquidAI) |
 | D1 3B | no disponible | Seleccion entre 4 SQL | 59,40% (65/500) | no disponible | no disponible (evaluado via Copilot) |
 | Clef Flash | no disponible | Seleccion entre 4 SQL | 78,95% (219/500) | no disponible | no disponible (evaluado via Cloudflare/OpenRouter) |
@@ -112,7 +112,7 @@ Las comparaciones con D1 3B, Clef Flash y Jev no son estrictamente homogeneas: e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chulinz/d1-600m-text2sql
+- Modelo en Hugging Face: https://huggingface.co/Chulinz/d1-600m-text2sql
 - Modelo base: https://huggingface.co/LiquidAI/d1-omni-600M
 - Licencia LFM Open License v1.0: fichero `LICENSE` dentro del repositorio del modelo
 - Aviso de atribucion y modificaciones: fichero `NOTICE` dentro del repositorio del modelo

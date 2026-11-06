@@ -79,7 +79,7 @@ La comparativa más relevante es contra las políticas oficiales del repositorio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/langli11/microduck-tricks
+- Hugging Face: https://huggingface.co/langli11/microduck-tricks
 - Fork con código y resultados: https://github.com/easyrider11/microduck_rl/tree/overnight-elan-slalom
 - Repositorio upstream Microduck RL: https://github.com/pollen-robotics/microduck_rl
 - Repositorio Microduck biped: https://github.com/pollen-robotics/microduck

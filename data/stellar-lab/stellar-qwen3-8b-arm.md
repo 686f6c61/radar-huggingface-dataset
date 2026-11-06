@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Stellar-Qwen3-8B-ARM | 7,58B | no disponible | Reward model (ARM) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-8B (base) | 8B | no disponible | LLM generativo | Apache 2.0 | HuggingFace |
-| Reward models escalares de 7-8B (p. ej. variantes sobre Llama/Mistral) | ~7-8B | variable | Reward model escalar | variable | HuggingFace |
+| Stellar-Qwen3-8B-ARM | 7,58B | no disponible | Reward model (ARM) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-8B (base) | 8B | no disponible | LLM generativo | Apache 2.0 | Hugging Face |
+| Reward models escalares de 7-8B (p. ej. variantes sobre Llama/Mistral) | ~7-8B | variable | Reward model escalar | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo publicados para Stellar-Qwen3-8B-ARM frente a alternativas, por lo que la comparacion se limita a parametros, licencia y tipo de tarea.
 
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparativo publicados para Stellar-Qwen3-
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stellar-lab/Stellar-Qwen3-8B-ARM
+- Hugging Face: https://huggingface.co/Stellar-lab/Stellar-Qwen3-8B-ARM
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada.

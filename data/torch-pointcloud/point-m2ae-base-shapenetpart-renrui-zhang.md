@@ -75,8 +75,8 @@ No se han publicado en la informacion disponible resultados adicionales de bench
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Point-M2AE base (este checkpoint) | 25,5 M | nubes de hasta 8192 puntos (ejemplo) | Segmentación de partes ShapeNetPart | MIT | HuggingFace, `torch-pointcloud` |
-| Point-M2AE base pretrain | no disponible | no disponible | Preentrenamiento auto-supervisado 3D | MIT | HuggingFace (`torch-pointcloud/point-m2ae-base.pretrain.renrui-zhang`) |
+| Point-M2AE base (este checkpoint) | 25,5 M | nubes de hasta 8192 puntos (ejemplo) | Segmentación de partes ShapeNetPart | MIT | Hugging Face, `torch-pointcloud` |
+| Point-M2AE base pretrain | no disponible | no disponible | Preentrenamiento auto-supervisado 3D | MIT | Hugging Face (`torch-pointcloud/point-m2ae-base.pretrain.renrui-zhang`) |
 | Alternativas de la misma categoría | no disponible | no disponible | Segmentación de nubes de puntos | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos de rendimiento de modelos comparables (por ejemplo, PointNet++, Point Transformer o DGCNN) que permitan una comparación numérica rigurosa.
@@ -94,7 +94,7 @@ No se dispone en la información proporcionada de datos de rendimiento de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/point-m2ae-base.shapenetpart.renrui-zhang
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/point-m2ae-base.shapenetpart.renrui-zhang
 - Modelo base preentrenado: https://huggingface.co/torch-pointcloud/point-m2ae-base.pretrain.renrui-zhang
 - Paper Point-M2AE (NeurIPS 2022): https://arxiv.org/abs/2205.14401
 - Repositorio original: https://github.com/ZrrSkywalker/Point-M2AE

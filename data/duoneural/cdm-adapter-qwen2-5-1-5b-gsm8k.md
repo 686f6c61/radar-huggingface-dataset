@@ -94,6 +94,6 @@ No se dispone de comparativas publicadas frente a otros adaptadores hiperbolicos
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/DuoNeural/cdm-adapter-qwen2.5-1.5b-gsm8k
+- Repositorio Hugging Face del adaptador: https://huggingface.co/DuoNeural/cdm-adapter-qwen2.5-1.5b-gsm8k
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/openai/gsm8k

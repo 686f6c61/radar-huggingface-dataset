@@ -18,14 +18,14 @@ La relevancia de este repositorio es limitada y fundamentalmente metodologica: l
 | Longitud de contexto | Aproximadamente 128K tokens (heredada del modelo base) |
 | Tipos de cuantizacion | Base en 4 bits NF4 via bitsandbytes (ruta QLoRA por defecto); ruta alternativa en BF16 sin cuantizacion |
 | Idiomas soportados | No disponible (el dataset de ajuste es en ingles, config `en`) |
-| Licencia | No disponible en los metadatos de HuggingFace; el modelo base esta sujeto a los terminos HAI-DEF (Health AI Developer Foundations) de Google y es gated |
-| Formato de pesos | Adaptadores PEFT (safetensors, presumiblemente); pesos del modelo base en formato HuggingFace. No se especifica GGUF |
+| Licencia | No disponible en los metadatos de Hugging Face; el modelo base esta sujeto a los terminos HAI-DEF (Health AI Developer Foundations) de Google y es gated |
+| Formato de pesos | Adaptadores PEFT (safetensors, presumiblemente); pesos del modelo base en formato Hugging Face. No se especifica GGUF |
 
 ## Arquitectura y entrenamiento
 
 El pipeline implementa QLoRA: el modelo base MedGemma 1.5-4B-IT se carga congelado en 4 bits NF4 mediante bitsandbytes y solo se entrenan los adaptadores LoRA de rango 32. Los modulos objetivo son `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj` y `down_proj`, descubiertos en tiempo de ejecucion y restringidos al submodulo `language_model` para evitar adjuntar adaptadores al torre de vision SigLIP congelada, que puede compartir sufijos de nombre. Existe una ruta alternativa (`configs/train_medgemma_lora_bf16.yaml`) que carga el base en BF16 sin cuantizacion y permite fusionar el adaptador en inferencia con `--merge_adapter`, opcion no soportada en la ruta de 4 bits.
 
-El entrenamiento se plantea a 5 epocas sobre el dataset `FreedomIntelligence/medical-o1-reasoning-SFT` (config `en`), con particion 80/10/10 generada mediante `train_test_split` con semilla y dos pasos. La validacion se usa para evaluacion por epoca y `load_best_model_at_end`; el test se evalua una sola vez al final y los resultados se guardan en `test_metrics.json`. Se desactiva el empaquetado de secuencias (`use_packing: false`) por defecto, porque el enmascaramiento correcto de la perdida solo en turnos del asistente a traves de fronteras de paquetes no esta garantizado con TRL/PEFT estandar. El warmup se define como `warmup_ratio: 0.03` en lugar de 75 pasos fijos, y se usa `gradient_checkpointing_enable()` estandar de HuggingFace en lugar de las optimizaciones de Unsloth, cuya compatibilidad con Gemma 3 multimodal no esta documentada publicamente. El autor advierte que el uso de bitsandbytes 4-bit con este checkpoint concreto no esta verificado oficialmente por Google y recomienda validar con `--smoke_test` antes de una ejecucion completa.
+El entrenamiento se plantea a 5 epocas sobre el dataset `FreedomIntelligence/medical-o1-reasoning-SFT` (config `en`), con particion 80/10/10 generada mediante `train_test_split` con semilla y dos pasos. La validacion se usa para evaluacion por epoca y `load_best_model_at_end`; el test se evalua una sola vez al final y los resultados se guardan en `test_metrics.json`. Se desactiva el empaquetado de secuencias (`use_packing: false`) por defecto, porque el enmascaramiento correcto de la perdida solo en turnos del asistente a traves de fronteras de paquetes no esta garantizado con TRL/PEFT estandar. El warmup se define como `warmup_ratio: 0.03` en lugar de 75 pasos fijos, y se usa `gradient_checkpointing_enable()` estandar de Hugging Face en lugar de las optimizaciones de Unsloth, cuya compatibilidad con Gemma 3 multimodal no esta documentada publicamente. El autor advierte que el uso de bitsandbytes 4-bit con este checkpoint concreto no esta verificado oficialmente por Google y recomienda validar con `--smoke_test` antes de una ejecucion completa.
 
 ## Capacidades
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible de forma explicita. Como referencia de orden de magnitud, un base de 4B en 4 bits NF4 ocupa aproximadamente 2-3 GB de pesos, mas overhead de activaciones y contexto; en BF16 serian del orden de 8-9 GB solo en pesos. Estas cifras son estimaciones genericas, no datos publicados por el autor.
 - GPU recomendadas: no disponible. La model card advierte que no se debe asumir que la RTX 3090 del experimento original (Qwen2.5-1.5B) sea suficiente para este base de 4B, y remite a su seccion de troubleshooting.
 - Compatibilidad con GPU de consumo: no confirmada. El propio autor senala que el uso de bitsandbytes 4-bit con este checkpoint no esta verificado por Google y recomienda ejecutar `--smoke_test`.
-- Opciones de despliegue: la informacion solo menciona el stack HuggingFace/PEFT/TRL/bitsandbytes. No se documentan vLLM, llama.cpp, Ollama ni TGI, ni se proporcionan pesos GGUF.
+- Opciones de despliegue: la informacion solo menciona el stack Hugging Face/PEFT/TRL/bitsandbytes. No se documentan vLLM, llama.cpp, Ollama ni TGI, ni se proporcionan pesos GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ La comparativa se limita a estos cuatro elementos porque la informacion proporci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adityag-india/medgemma1.5B-4bit-QloRA-training-v1
+- Repositorio en Hugging Face: https://huggingface.co/adityag-india/medgemma1.5B-4bit-QloRA-training-v1
 - Experimento fuente (Qwen2.5-1.5B QLoRA medico): https://huggingface.co/adityag-india/qwen25-1.5b-medical-o1-qlora
 - Modelo base: `google/medgemma-1.5-4b-it` (referenciado en la model card; acceso gated bajo terminos HAI-DEF)
 - Dataset de ajuste: `FreedomIntelligence/medical-o1-reasoning-SFT`, config `en` (referenciado en la model card)

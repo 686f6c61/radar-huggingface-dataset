@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Pasos de inferencia | Resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SDXS-512-DreamShaper (este) | 315,7 M | 1 | 512x512 | openrail++ | HuggingFace (replica de 502error) |
-| DreamShaper 8 | no disponible | 20-50 (tipico) | 512x512 | openrail++ | HuggingFace (Lykon/dreamshaper-8) |
-| dreamshaper-8-lcm | no disponible | 4-8 (tipico en LCM) | 512x512 | openrail++ | HuggingFace (Lykon/dreamshaper-8-lcm) |
-| Stable Diffusion 1.5 | ~860 M (U-Net) | 20-50 (tipico) | 512x512 | openrail++ (CreativeML) | HuggingFace (runwayml/stable-diffusion-v1-5) |
+| SDXS-512-DreamShaper (este) | 315,7 M | 1 | 512x512 | openrail++ | Hugging Face (replica de 502error) |
+| DreamShaper 8 | no disponible | 20-50 (tipico) | 512x512 | openrail++ | Hugging Face (Lykon/dreamshaper-8) |
+| dreamshaper-8-lcm | no disponible | 4-8 (tipico en LCM) | 512x512 | openrail++ | Hugging Face (Lykon/dreamshaper-8-lcm) |
+| Stable Diffusion 1.5 | ~860 M (U-Net) | 20-50 (tipico) | 512x512 | openrail++ (CreativeML) | Hugging Face (runwayml/stable-diffusion-v1-5) |
 
 No se dispone de datos de rendimiento (FID, CLIP) que permitan una comparación cuantitativa fiable entre estos modelos.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento (FID, CLIP) que permitan una comparación 
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/502error/sdxs-512-dreamshaper
+- Hugging Face (este repositorio): https://huggingface.co/502error/sdxs-512-dreamshaper
 - Artículo (arXiv 2403.16627): https://arxiv.org/abs/2403.16627
 - Repositorio de código SDXS: https://github.com/IDKiro/sdxs
 - Modelo de referencia original: https://huggingface.co/IDKiro/sdxs-512-dreamshaper

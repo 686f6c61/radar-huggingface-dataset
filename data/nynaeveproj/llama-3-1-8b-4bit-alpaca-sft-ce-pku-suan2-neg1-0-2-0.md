@@ -4,7 +4,7 @@
 
 Este repositorio no contiene un modelo completo, sino un adaptador LoRA publicado con la librería PEFT (versión 0.19.1) sobre el checkpoint `NynaeveProj/Llama-3.1-8B-4bit`, un Llama-3.1-8B cuantizado a 4 bits. El adaptador lo publica el usuario NynaeveProj y ocupa 0,3 GB en el repositorio. El identificador del modelo (`alpaca-sft-ce-pku-suan2-neg1.0-2.0`) sugiere un ajuste supervisado sobre datos de estilo Alpaca, posiblemente con una variante de entropía cruzada y algún esquema de ponderación de negativos, pero esta interpretación es una inferencia a partir del nombre y no está confirmada por el autor.
 
-La model card es la plantilla por defecto de HuggingFace, sin ninguna sección rellenada: no hay información sobre datos de entrenamiento, hiperparámetros, licencia, idiomas ni evaluación. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y la etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al artículo de Lacoste et al. (2019) sobre emisiones de carbono citado en la plantilla, no a un paper del modelo.
+La model card es la plantilla por defecto de Hugging Face, sin ninguna sección rellenada: no hay información sobre datos de entrenamiento, hiperparámetros, licencia, idiomas ni evaluación. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y la etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al artículo de Lacoste et al. (2019) sobre emisiones de carbono citado en la plantilla, no a un paper del modelo.
 
 Por todo ello, se trata de un artefacto experimental de documentación prácticamente nula. Es relevante únicamente como ejemplo de pipeline QLoRA/SFT reproducible o como objeto de estudio de ajuste fino, nunca como componente listo para producción.
 

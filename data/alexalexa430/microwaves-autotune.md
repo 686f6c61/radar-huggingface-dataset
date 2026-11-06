@@ -2,7 +2,7 @@
 
 ## Resumen
 
-alexalexa430/microwaves-autotune es un repositorio alojado en HuggingFace por el usuario alexalexa430 (Alexander Cortez). En el momento de la consulta acumula 0 descargas y 1 like, fue creado el 28 de septiembre de 2026 y actualizado ocho minutos despues, y ocupa 3,4 GB. La model card no contiene informacion tecnica alguna: se limita a declarar la licencia WTFPL y a incluir tres lineas de texto informal ("hello... why are you here? / enjoy your stay / we like alexander ramirez cortez"). No se declara pipeline, ni idiomas, ni arquitectura, ni datos de entrenamiento.
+alexalexa430/microwaves-autotune es un repositorio alojado en Hugging Face por el usuario alexalexa430 (Alexander Cortez). En el momento de la consulta acumula 0 descargas y 1 like, fue creado el 28 de septiembre de 2026 y actualizado ocho minutos despues, y ocupa 3,4 GB. La model card no contiene informacion tecnica alguna: se limita a declarar la licencia WTFPL y a incluir tres lineas de texto informal ("hello... why are you here? / enjoy your stay / we like alexander ramirez cortez"). No se declara pipeline, ni idiomas, ni arquitectura, ni datos de entrenamiento.
 
 No es posible determinar que problema resuelve el modelo. El identificador sugiere alguna relacion con correccion de tono automatica (autotune) sobre audio, pero se trata de una inferencia nominal sin ningun respaldo documental en el repositorio ni en los resultados de busqueda consultados. Tampoco hay evidencia de que el repositorio contenga pesos de un modelo de lenguaje, un modelo de audio o un conjunto de recursos de otro tipo.
 
@@ -78,7 +78,7 @@ No es posible establecer una comparativa fiable porque se desconoce la categoria
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alexalexa430/microwaves-autotune | no disponible | no disponible | no disponible | WTFPL | HuggingFace, 0 descargas |
+| alexalexa430/microwaves-autotune | no disponible | no disponible | no disponible | WTFPL | Hugging Face, 0 descargas |
 | nateraw/autotune (referencia externa) | no disponible | no disponible | no disponible | no disponible | Replicate; corrige tono sobre audio con tres estrategias de normalizacion |
 
 No se han identificado otros modelos comparables en la informacion proporcionada.
@@ -97,8 +97,8 @@ No se han identificado otros modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexalexa430/microwaves-autotune
-- Perfil del autor en HuggingFace: https://huggingface.co/alexalexa430
+- Modelo en Hugging Face: https://huggingface.co/alexalexa430/microwaves-autotune
+- Perfil del autor en Hugging Face: https://huggingface.co/alexalexa430
 - Otro repositorio del mismo autor: https://huggingface.co/alexalexa430/DiffPorts
 - Referencia externa sobre autotune con IA (TwoShot): https://twoshot.app/ai-autotune/
 - Referencia externa sobre el modelo autotune de nateraw: https://www.aimodels.fyi/models/replicate/autotune-nateraw

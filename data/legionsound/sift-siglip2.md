@@ -102,8 +102,8 @@ La diferencia funcional clave frente al upstream es el runtime: la versión de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/legionsound/sift-siglip2
+- Repositorio en Hugging Face: https://huggingface.co/legionsound/sift-siglip2
 - Modelo upstream: https://huggingface.co/google/siglip2-so400m-patch14-384
 - Aplicación Sift (legion-media): https://github.com/legion-media
-- Archivo de validación citado por el autor: `validation.json` dentro del repositorio de HuggingFace
+- Archivo de validación citado por el autor: `validation.json` dentro del repositorio de Hugging Face
 - Enlaces a papers, blogs o demos adicionales: no disponibles en la información proporcionada

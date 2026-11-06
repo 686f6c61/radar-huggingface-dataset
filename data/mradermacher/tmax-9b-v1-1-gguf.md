@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tmax-9b-v1.1-GGUF es un repositorio de cuantizaciones estáticas en formato GGUF del modelo TMaxxx/tmax-9b-v1.1, creado por el cuantizador mradermacher, conocido por mantener una extensa colección de versiones GGUF de modelos populares de HuggingFace. El modelo base es un modelo de aproximadamente 9.000 millones de parámetros (8.953.803.264 exactos) orientado a tareas de agente de terminal y aprendizaje por refuerzo, entrenado sobre el dataset TMaxxx/tmax-13k-v1.1.
+tmax-9b-v1.1-GGUF es un repositorio de cuantizaciones estáticas en formato GGUF del modelo TMaxxx/tmax-9b-v1.1, creado por el cuantizador mradermacher, conocido por mantener una extensa colección de versiones GGUF de modelos populares de Hugging Face. El modelo base es un modelo de aproximadamente 9.000 millones de parámetros (8.953.803.264 exactos) orientado a tareas de agente de terminal y aprendizaje por refuerzo, entrenado sobre el dataset TMaxxx/tmax-13k-v1.1.
 
 El propósito de esta versión cuantizada es permitir la ejecución del modelo en hardware de consumo: las cuantizaciones GGUF reducen el tamaño del modelo desde los ~18 GB en precisión f16 hasta aproximadamente 5,5 GB en Q4_K_S, haciéndolo viable en GPUs domésticas e incluso en CPU. El modelo base está etiquetado como agente de terminal ("terminal-agent") y conversacional, lo que sugiere un enfoque en interacción con sistemas mediante línea de comandos.
 
@@ -30,7 +30,7 @@ El proceso de cuantización realizado por mradermacher es de tipo estático (sta
 ## Capacidades
 
 - Interacción como agente de terminal: el modelo está etiquetado específicamente para tareas de "terminal-agent", es decir, planificar y ejecutar comandos en entornos de shell.
-- Generación de texto conversacional: etiquetado como "conversational" en HuggingFace.
+- Generación de texto conversacional: etiquetado como "conversational" en Hugging Face.
 - Entrenamiento con aprendizaje por refuerzo: el pipeline asociado es "reinforcement-learning", lo que sugiere optimización mediante interacción con entornos.
 - Soporte del idioma inglés: el modelo está catalogado únicamente para inglés (en).
 - Compatibilidad con el ecosistema GGUF: ejecutable con llama.cpp, Ollama, LM Studio y derivados.

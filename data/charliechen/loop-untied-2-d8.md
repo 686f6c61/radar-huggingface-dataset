@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-untied-2-d8 es un modelo de lenguaje base (sin ajuste por instrucciones) publicado por el usuario CharlieChen en HuggingFace, extraído del paper "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata de una variante concreta ("Untied 2") de la escalera de escalado sobre FineWeb, identificada por la coordenada de profundidad d8, que en la nomenclatura del trabajo es una coordenada de escalado y no necesariamente el número de bloques Transformer ejecutados.
+loop-untied-2-d8 es un modelo de lenguaje base (sin ajuste por instrucciones) publicado por el usuario CharlieChen en Hugging Face, extraído del paper "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata de una variante concreta ("Untied 2") de la escalera de escalado sobre FineWeb, identificada por la coordenada de profundidad d8, que en la nomenclatura del trabajo es una coordenada de escalado y no necesariamente el número de bloques Transformer ejecutados.
 
 El checkpoint almacena 244.318.208 parámetros en FP32 (0,977 GB) y emplea un Transformer personalizado denominado `TransformerGPT` con ancho 1024, 8 cabezas de atención, vocabulario GPT-2 de 50.257 tokens (ampliado a 50.304 filas en el modelo) y una longitud de contexto de 2.048 tokens. La característica distintiva es su naturaleza "looped": el núcleo del modelo se repite, con 2 repeticiones configuradas y 2 repeticiones en la evaluación final.
 
@@ -105,7 +105,7 @@ La comparacion de rendimiento entre estas alternativas no es directa: la NLL de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-untied-2-d8
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-untied-2-d8
 - Repositorio de codigo del paper: https://github.com/cue-engineering/loop
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Paper de referencia: "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents" (enlace no disponible en la informacion proporcionada)

@@ -88,7 +88,7 @@ Notas de la model card: en las tareas de agente de código de los benchmarks pú
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Terminal Bench 2.1 | DeepSWE | Toolathlon-Verified |
 |---|---|---|---|---|---|---|---|
-| DeepSeek-V4-Flash-0731 | 304,2 B totales (activos no disponibles) | no disponible | MIT | Pesos abiertos en HuggingFace | 82,7 | 54,4 | 70,3 |
+| DeepSeek-V4-Flash-0731 | 304,2 B totales (activos no disponibles) | no disponible | MIT | Pesos abiertos en Hugging Face | 82,7 | 54,4 | 70,3 |
 | DeepSeek-V4-Flash (Preview) | no disponible | no disponible | no disponible | Pesos abiertos | 61,8 | 7,3 | 49,7 |
 | DeepSeek-V4-Pro (Preview) | no disponible (mayor que Flash según la model card) | no disponible | no disponible | Pesos abiertos | 72,1 | 12,8 | 55,9 |
 | GLM-5.2 | no disponible | no disponible | no disponible | no disponible | 81,0 | 46,2 | 59,9 |
@@ -112,13 +112,13 @@ La model card sitúa a DeepSeek-V4-Flash-0731 por delante de DeepSeek-V4-Pro (Pr
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/SYNAPSEai1/Synapse-Chat-V4-Flash-0731
+- Repositorio analizado en Hugging Face: https://huggingface.co/SYNAPSEai1/Synapse-Chat-V4-Flash-0731
 - Repositorio oficial de referencia citado en la model card: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Modelo con la misma estructura, con módulo de decodificación especulativa: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-DSpark
 - Informe técnico (arXiv): https://arxiv.org/abs/2606.19348
 - Página oficial de DeepSeek: https://www.deepseek.com/
 - Chat oficial de DeepSeek: https://chat.deepseek.com/
-- Organización de DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización de DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Receta de vLLM para DeepSeek-V4-Flash: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash?hardware=b300&features=tool_calling,reasoning
 - Cookbook de SGLang para DeepSeek-V4: https://docs.sglang.io/cookbook/autoregressive/DeepSeek/DeepSeek-V4#hw=gb300&variant=flash-official&quant=fp4&strategy=low-latency&nodes=single
 - Perfil de X/Twitter de DeepSeek AI: https://twitter.com/deepseek_ai

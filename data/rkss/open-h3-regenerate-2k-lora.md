@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Open-H3-Regenerate-2K-lora es un adaptador LoRA publicado por el usuario Rkss en HuggingFace, derivado del modelo base Open-H3-Regenerate-2K del proyecto Efficient-Large-Model. Se trata de un ajuste fino de bajo rango (low-rank adaptation) orientado a regeneracion de contenido, presumiblemente en el contexto de generacion de video o imagen dada la referencia a ComfyUI y a un refiner en la model card.
+Open-H3-Regenerate-2K-lora es un adaptador LoRA publicado por el usuario Rkss en Hugging Face, derivado del modelo base Open-H3-Regenerate-2K del proyecto Efficient-Large-Model. Se trata de un ajuste fino de bajo rango (low-rank adaptation) orientado a regeneracion de contenido, presumiblemente en el contexto de generacion de video o imagen dada la referencia a ComfyUI y a un refiner en la model card.
 
 El repositorio ocupa 16,8 GB, un tamano considerable para un LoRA, lo que sugiere que los pesos publicados incluyen varias versiones del adaptador con distintos rangos (256, 128 y 64) o que el formato de almacenamiento no esta comprimido. La model card menciona errores medios asociados a cada rango: aproximadamente 1,656 % para rank 256, 3,060 % para rank 128 y 5,347 % para rank 64, lo que indica que el autor evaluo el impacto del rango en la fidelidad de la regeneracion.
 
@@ -80,5 +80,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rkss/Open-H3-Regenerate-2K-lora
+- Repositorio Hugging Face: https://huggingface.co/Rkss/Open-H3-Regenerate-2K-lora
 - Modelo base referenciado: https://huggingface.co/Efficient-Large-Model/Open-H3-Regenerate-2K/tree/main/lora

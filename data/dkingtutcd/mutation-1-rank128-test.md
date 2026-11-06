@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mutation-1-rank128-test` es un ajuste fino (finetune) del modelo multimodal `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`, publicado por el usuario `dkingtutcd` en HuggingFace. Se trata de un experimento de ajuste sobre la familia Gemma 4 de Google, concretamente la variante E4B en su versión instruction-tuned, que combina procesamiento de imagen y texto (pipeline `image-text-to-text`). El autor lo distribuye en formato FP16 tras un entrenamiento realizado con Unsloth y la librería TRL de HuggingFace.
+`mutation-1-rank128-test` es un ajuste fino (finetune) del modelo multimodal `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`, publicado por el usuario `dkingtutcd` en Hugging Face. Se trata de un experimento de ajuste sobre la familia Gemma 4 de Google, concretamente la variante E4B en su versión instruction-tuned, que combina procesamiento de imagen y texto (pipeline `image-text-to-text`). El autor lo distribuye en formato FP16 tras un entrenamiento realizado con Unsloth y la librería TRL de Hugging Face.
 
 El modelo cuenta con 7.996.156.490 parámetros según los pesos en safetensors, lo que lo sitúa en la gama de ~8B parámetros. El repositorio ocupa 16 GB y la model card es mínima: no incluye detalles sobre el dataset de ajuste, hiperparámetros, duración del entrenamiento ni resultados de evaluación. El nombre "rank128-test" sugiere un experimento con LoRA de rango 128, aunque este dato no se confirma en la documentación.
 
@@ -32,7 +32,7 @@ No se especifica si se empleó LoRA, QLoRA u otra técnica de ajuste parametriza
 - Generación de texto conversacional en inglés, heredada del modelo base instruction-tuned.
 - Procesamiento de imagen y texto (pipeline `image-text-to-text`), lo que permite tareas de descripción de imágenes, VQA y razonamiento visual.
 - Soporte de conversaciones multi-turno (etiqueta `conversational`).
-- Compatibilidad con Text Generation Inference (TGI) y endpoints de HuggingFace.
+- Compatibilidad con Text Generation Inference (TGI) y endpoints de Hugging Face.
 - Capacidades de tool calling, agentes y razonamiento multi-paso: no confirmadas en la información disponible.
 - Capacidades multilingües: solo se declara inglés.
 - Modo "thinking" u otras capacidades especiales: no disponible.
@@ -44,7 +44,7 @@ No se especifica si se empleó LoRA, QLoRA u otra técnica de ajuste parametriza
 - Generación de descripciones automáticas de imágenes en inglés para catalogación de contenido, siempre que se valide la calidad con un conjunto de prueba propio.
 - Extracción de información de capturas de pantalla o documentos escaneados en inglés, aprovechando la entrada multimodal.
 - Base para experimentos académicos sobre sesgos y alucinación en modelos multimodales ajustados, dado que el modelo es abierto y de tamaño manejable.
-- Integración en demos de HuggingFace Spaces mediante TGI, gracias a la compatibilidad declarada con endpoints.
+- Integración en demos de Hugging Face Spaces mediante TGI, gracias a la compatibilidad declarada con endpoints.
 
 ## Benchmarks y rendimiento
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mutation-1-rank128-test | ~8B | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (base) | ~8B | no disponible | apache-2.0 (según repo base) | HuggingFace |
-| Gemma 4 E4B-it (original de Google) | ~8B | no disponible | Gemma license (no confirmada) | HuggingFace |
-| Alternativas multimodales de ~8B (p. ej. Qwen2.5-VL-7B, Llama 3.2 11B Vision) | 7-11B | 32K-128K según modelo | Apache-2.0 / Llama license | HuggingFace |
+| mutation-1-rank128-test | ~8B | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (base) | ~8B | no disponible | apache-2.0 (según repo base) | Hugging Face |
+| Gemma 4 E4B-it (original de Google) | ~8B | no disponible | Gemma license (no confirmada) | Hugging Face |
+| Alternativas multimodales de ~8B (p. ej. Qwen2.5-VL-7B, Llama 3.2 11B Vision) | 7-11B | 32K-128K según modelo | Apache-2.0 / Llama license | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este ajuste concreto.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo para este ajuste concreto.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dkingtutcd/mutation-1-rank128-test
+- Hugging Face: https://huggingface.co/dkingtutcd/mutation-1-rank128-test
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E4B-it-unsloth-bnb-4bit
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

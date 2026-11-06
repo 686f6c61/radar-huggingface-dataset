@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AnimaturboTrex es un modelo publicado en HuggingFace por el usuario Kendrick222 bajo el identificador `Kendrick222/AnimaturboTrex`. La informacion disponible es extremadamente limitada: la model card no contiene descripcion, no declara arquitectura ni parametros, y la licencia figura como "unknown". El repositorio ocupa 0,2 GB, lo que sugiere pesos de pequeno tamano o un conjunto de artefactos auxiliares, pero no permite inferir con rigor el numero de parametros ni el tipo de modelo.
+AnimaturboTrex es un modelo publicado en Hugging Face por el usuario Kendrick222 bajo el identificador `Kendrick222/AnimaturboTrex`. La informacion disponible es extremadamente limitada: la model card no contiene descripcion, no declara arquitectura ni parametros, y la licencia figura como "unknown". El repositorio ocupa 0,2 GB, lo que sugiere pesos de pequeno tamano o un conjunto de artefactos auxiliares, pero no permite inferir con rigor el numero de parametros ni el tipo de modelo.
 
 No se ha publicado pipeline, idiomas soportados, datos de entrenamiento ni resultados de benchmarks. El modelo no registra descargas ni interacciones en el momento de la consulta, lo que indica que se trata de una publicacion reciente y sin validacion por parte de la comunidad. Cualquier evaluacion tecnica debe por tanto tratarse como preliminar y basarse en inspeccion directa de los ficheros del repositorio.
 
@@ -76,5 +76,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kendrick222/AnimaturboTrex
+- Modelo en Hugging Face: https://huggingface.co/Kendrick222/AnimaturboTrex
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -26,7 +26,7 @@ Su relevancia radica en que demuestra una mejora medible y sustancial en el domi
 | Salida | texto en inglés con puntuación y mayúsculas |
 | Decodificación evaluada | TDT greedy |
 | Tamano del repositorio | 0,5 GB |
-| Fecha de publicacion (HuggingFace) | 2026-10-09 |
+| Fecha de publicacion (Hugging Face) | 2026-10-09 |
 
 ## Arquitectura y entrenamiento
 
@@ -100,8 +100,8 @@ Comparaciones internas declaradas por el autor:
 
 | Modelo | Parametros | Contexto / dominio | WER en llamadas telefonicas (5 conjuntos agrupados) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| parakeet-110m-caller-asr-basic | 114,6 M | Segmentos de 0,3 a 20 s; caller side de llamadas salientes en 8 kHz | 11,60 % | CC BY 4.0 | HuggingFace, formato `.nemo` |
-| nvidia/parakeet-tdt_ctc-110m (base) | 114,6 M | ASR general en inglés | 14,58 % | no disponible en la informacion proporcionada | HuggingFace, formato `.nemo` |
+| parakeet-110m-caller-asr-basic | 114,6 M | Segmentos de 0,3 a 20 s; caller side de llamadas salientes en 8 kHz | 11,60 % | CC BY 4.0 | Hugging Face, formato `.nemo` |
+| nvidia/parakeet-tdt_ctc-110m (base) | 114,6 M | ASR general en inglés | 14,58 % | no disponible en la informacion proporcionada | Hugging Face, formato `.nemo` |
 | Sistema previo (110 m + adaptador de dominio) | 114,6 M | ASR telefonico con adaptador | 14,00 % | no disponible en la informacion proporcionada | interno del autor |
 
 No se dispone en la informacion proporcionada de datos comparativos frente a otros modelos ASR de la misma categoria (por ejemplo, variantes de Whisper o soluciones comerciales de transcripcion de centros de contacto), ni de sus parametros, contexto o licencia, por lo que no se incluyen en esta tabla.
@@ -118,11 +118,11 @@ No se dispone en la informacion proporcionada de datos comparativos frente a otr
 - Riesgo de alucinacion: mitigado parcialmente con un 5 % de segmentos no verbales con objetivo vacio, pero no eliminado; en audio degradado o fuera de dominio puede generar texto inexistente.
 - No soporta marcas de tiempo, diarizacion ni deteccion de hablante, lo que limita su uso directo en transcripcion de llamadas con varias voces.
 - Licencia CC BY 4.0: permite uso comercial y modificacion con atribucion, sin clausulas de uso aceptable especificas mas alla de las de Creative Commons. Es responsabilidad del usuario verificar el cumplimiento legal aplicable al tratamiento de grabaciones de llamadas (consentimiento, retencion, privacidad), aspecto que la model card no aborda.
-- El modelo tiene 0 descargas y 0 me gusta en HuggingFace en la informacion disponible, por lo que no existe evidencia de adopcion ni de validacion por terceros.
+- El modelo tiene 0 descargas y 0 me gusta en Hugging Face en la informacion disponible, por lo que no existe evidencia de adopcion ni de validacion por terceros.
 - El repositorio ocupa 0,5 GB y los pesos se distribuyen en float32; no hay versiones cuantizadas publicadas que reduzcan el consumo de memoria o aceleren la inferencia.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/ozonetg/parakeet-110m-caller-asr-basic
+- Pagina del modelo en Hugging Face: https://huggingface.co/ozonetg/parakeet-110m-caller-asr-basic
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt_ctc-110m
 - Framework NeMo (NVIDIA): no se ha proporcionado un enlace explicito en la informacion disponible

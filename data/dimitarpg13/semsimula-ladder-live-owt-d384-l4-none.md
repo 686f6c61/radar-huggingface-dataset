@@ -85,10 +85,10 @@ Notas del autor: la PPL asentada es la media de las tres ultimas evaluaciones (5
 
 | Modelo | Parametros | Contexto | PPL OpenWebText | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| semsimula-ladder-live-owt-d384-l4-none (este modelo) | 76,8 M | 512 tokens | 50,10 | cc-by-4.0 | HuggingFace (0 descargas) |
-| semsimula-ladder-live-owt-d384-l2-none-norc (Gen 3, L=2) | 76,6 M | 512 tokens | 57,76 | cc-by-4.0 | HuggingFace |
-| semsimula-ladder-owt-d384-l2-none (Gen 2, L=2) | 76,8 M | 512 tokens | 66,98 | cc-by-4.0 | HuggingFace |
-| semsimula-ladder-owt-d384-l2-gpt2-matched (L=8) | 33,7 M | 512 tokens | 49,81 | cc-by-4.0 | HuggingFace |
+| semsimula-ladder-live-owt-d384-l4-none (este modelo) | 76,8 M | 512 tokens | 50,10 | cc-by-4.0 | Hugging Face (0 descargas) |
+| semsimula-ladder-live-owt-d384-l2-none-norc (Gen 3, L=2) | 76,6 M | 512 tokens | 57,76 | cc-by-4.0 | Hugging Face |
+| semsimula-ladder-owt-d384-l2-none (Gen 2, L=2) | 76,8 M | 512 tokens | 66,98 | cc-by-4.0 | Hugging Face |
+| semsimula-ladder-owt-d384-l2-gpt2-matched (L=8) | 33,7 M | 512 tokens | 49,81 | cc-by-4.0 | Hugging Face |
 
 La comparacion se limita a los brazos del propio programa semsimula y al GPT-2 igualado, que son las referencias aportadas por el autor. No se dispone de comparaciones con modelos externos de la misma categoria (modelos de energia o no-transformer de tamano similar).
 
@@ -109,7 +109,7 @@ La comparacion se limita a los brazos del propio programa semsimula y al GPT-2 i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l4-none
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l4-none
 - Coleccion Gen 3 (live gradients): https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-cfc-baoab-live-gradients-6abf371ea3c83f127057020c
 - Brazo conservative-only, live gradients (Gen 3, L=2): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc
 - Brazo attention_potential, live exchange field (Gen 2 probe, L=2): https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention-potential-rglive

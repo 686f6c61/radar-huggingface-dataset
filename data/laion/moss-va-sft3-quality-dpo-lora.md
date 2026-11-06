@@ -81,7 +81,7 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- [HuggingFace: laion/moss-va-sft3-quality-dpo-lora](https://huggingface.co/laion/moss-va-sft3-quality-dpo-lora)
+- [Hugging Face: laion/moss-va-sft3-quality-dpo-lora](https://huggingface.co/laion/moss-va-sft3-quality-dpo-lora)
 - [Modelo base: laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3](https://huggingface.co/laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3)
 - [Adaptador relacionado: laion/moss-va-sft3-dpo-lora-p2](https://huggingface.co/laion/moss-va-sft3-dpo-lora-p2)
 - [Adaptadores de calidad: laion/moss-va-sft3-quality-lora-adapters](https://huggingface.co/laion/moss-va-sft3-quality-lora-adapters)

@@ -81,7 +81,7 @@ La comparativa con otros modelos de vídeo generativo (p. ej., Wan 2.2, Hunyuan 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rockerBOO/minimax-h3-nvfp4-convrot
+- Repositorio Hugging Face: https://huggingface.co/rockerBOO/minimax-h3-nvfp4-convrot
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repack de Comfy-Org (text encoder, VAE, flujos de trabajo): https://huggingface.co/Comfy-Org/MiniMax-H3
 - Licencia del modelo: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE

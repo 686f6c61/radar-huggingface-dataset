@@ -64,7 +64,7 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- [HuggingFace - Frost2o24/llama-3.2-mini-agent-II-run-A9](https://huggingface.co/Frost2o24/llama-3.2-mini-agent-II-run-A9)
+- [Hugging Face - Frost2o24/llama-3.2-mini-agent-II-run-A9](https://huggingface.co/Frost2o24/llama-3.2-mini-agent-II-run-A9)
 - [Versión anterior A8](https://huggingface.co/Frost2o24/llama-3.2-mini-agent-II-run-A8)
 - [Modelo base relacionado: llama-3.2-1b-mini-agent](https://huggingface.co/Frost2o24/llama-3.2-1b-mini-agent)
 - [Página de FriendliAI para el modelo mini-agent](https://friendli.ai/models/Frost2o24/llama-3.2-1b-mini-agent)

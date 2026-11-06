@@ -65,6 +65,6 @@ No se dispone de información sobre adaptadores LoRA comparables en el contexto 
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/3MPER0RR/phi-4-mini-LoRA-adapter-3MPER0RR-abliterated
-- HuggingFace del modelo base: https://huggingface.co/3MPER0RR/Phi-4-mini-3MPER0RR-abliterated
-- HuggingFace de modelo relacionado «obliterated»: https://huggingface.co/3MPER0RR/Phi-4-mini-3MPER0RR-obliterated
+- Hugging Face del adaptador: https://huggingface.co/3MPER0RR/phi-4-mini-LoRA-adapter-3MPER0RR-abliterated
+- Hugging Face del modelo base: https://huggingface.co/3MPER0RR/Phi-4-mini-3MPER0RR-abliterated
+- Hugging Face de modelo relacionado «obliterated»: https://huggingface.co/3MPER0RR/Phi-4-mini-3MPER0RR-obliterated

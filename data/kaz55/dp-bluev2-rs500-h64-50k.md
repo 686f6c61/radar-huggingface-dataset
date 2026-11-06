@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dp-bluev2-rs500-h64-50k es un checkpoint de Diffusion Policy entrenado con la libreria LeRobot para control visomotor de un brazo robotico Universal Robots UR5e equipado con pinza DG5F, dos camaras RealSense y dos sensores tactiles GelSight. Lo publica el usuario Kaz55 en HuggingFace y pertenece a una barrida de entrenamiento que incluye los checkpoints de 50k, 100k, 150k y 200k pasos, todos con la misma configuracion de politica.
+dp-bluev2-rs500-h64-50k es un checkpoint de Diffusion Policy entrenado con la libreria LeRobot para control visomotor de un brazo robotico Universal Robots UR5e equipado con pinza DG5F, dos camaras RealSense y dos sensores tactiles GelSight. Lo publica el usuario Kaz55 en Hugging Face y pertenece a una barrida de entrenamiento que incluye los checkpoints de 50k, 100k, 150k y 200k pasos, todos con la misma configuracion de politica.
 
 A diferencia de un modelo de lenguaje, este artefacto no genera texto: es una politica que produce fragmentos de trayectorias de accion (action chunks) condicionados por imagenes RGB, imagenes tactiles y un vector de estado propioceptivo de 26 dimensiones. Su relevancia es practica para la comunidad de robotica open source: documenta una solucion concreta a una restriccion real de LeRobot (la validacion `validate_features` de `configuration_diffusion.py` exige que todas las camaras compartan resolucion), y publica checkpoints intermedios para poder estudiar la evolucion del entrenamiento sin reentrenar.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp-bluev2-rs500-h64-50k (este) | Diffusion Policy | 308.812.570 | 64 (60 acciones) | no disponible | repositorio publico en HuggingFace |
+| dp-bluev2-rs500-h64-50k (este) | Diffusion Policy | 308.812.570 | 64 (60 acciones) | no disponible | repositorio publico en Hugging Face |
 | dp-bluev2-rs500-h64-100k | Diffusion Policy | no disponible | 64 (60 acciones) | no disponible | mismo autor, misma serie |
 | dp-bluev2-rs500-h64-150k | Diffusion Policy | no disponible | 64 (60 acciones) | no disponible | mismo autor, misma serie |
 | dp-bluev2-rs500-h64-200k | Diffusion Policy | no disponible | 64 (60 acciones) | no disponible | mismo autor, misma serie |
@@ -85,10 +85,10 @@ La comparacion mas informativa es interna: los cuatro checkpoints comparten arqu
 - Riesgo de alucinacion: no aplica en el sentido de lenguaje, pero un modelo de difusion puede generar trayectorias fuera de la distribucion de entrenamiento; en robotica esto se traduce en movimientos inseguros, por lo que se requiere parada de emergencia y limites de fuerza.
 - Sesgos de datos: las demostraciones provienen de un unico montaje (UR5e, pinza DG5F, sensores GelSight concretos), de modo que la politica hereda las particularidades del operador, del entorno y de la cinematica de ese robot.
 - Excluye velocidad y esfuerzo: al no usar `observation.velocity` ni `observation.effort`, la politica depende solo de estado, vision y tacto, lo que puede limitar la reactividad ante perturbaciones dinamicas.
-- Metadatos inconsistentes: la fecha de creacion registrada en HuggingFace (13 de septiembre de 2026) es posterior a la fecha de consulta habitual, lo que sugiere un posible error de registro o de reloj; conviene no tomarla como referencia fiable.
+- Metadatos inconsistentes: la fecha de creacion registrada en Hugging Face (13 de septiembre de 2026) es posterior a la fecha de consulta habitual, lo que sugiere un posible error de registro o de reloj; conviene no tomarla como referencia fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kaz55/dp-bluev2-rs500-h64-50k
+- Modelo en Hugging Face: https://huggingface.co/Kaz55/dp-bluev2-rs500-h64-50k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Kaz55/dg5f_ur5e_bluev2_rs500
 - No se han encontrado enlaces relevantes en la busqueda web: los resultados devueltos corresponden a paginas de ayuda de YouTube y a hilos sin relacion con Diffusion Policy, LeRobot ni robotica, por lo que se descartan.

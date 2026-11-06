@@ -76,7 +76,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 | Modelo | Parámetros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `ya9919/qwen3.5-9b-finance-lora-head-200k` | Backbone 9B + adaptador y cabeza sin recuento declarado | 2048 tokens (límite del runtime) | Exactitud 0,7409 y F1 macro 0,3666 en el subconjunto CHFS/CGSS de 240.458 filas | Apache-2.0 (datos con términos propios) | Repositorio HF, 0 descargas y 0 likes en el momento del análisis |
-| `Qwen/Qwen3.5-9B` (modelo base) | 9B | No disponible en esta información | No disponible en esta información | No disponible en esta información | Público en HuggingFace |
+| `Qwen/Qwen3.5-9B` (modelo base) | 9B | No disponible en esta información | No disponible en esta información | No disponible en esta información | Público en Hugging Face |
 | Adaptadores de QA financiero con cabeza de decisión comparables | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas equivalentes en la información proporcionada |
 
 La comparación 4B/9B que menciona el autor mezcla escala y historial de entrenamiento previo, por lo que no aísla el efecto del tamaño; no se aportan cifras de esa comparación.
@@ -96,6 +96,6 @@ La comparación 4B/9B que menciona el autor mezcla escala y historial de entrena
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ya9919/qwen3.5-9b-finance-lora-head-200k
+- Modelo en Hugging Face: https://huggingface.co/ya9919/qwen3.5-9b-finance-lora-head-200k
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de reproducción e evidencias agregadas (`mas-simulation`): https://github.com/KataDavidXD/mas-simulation

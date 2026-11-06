@@ -76,8 +76,8 @@ No se dispone de modelos directamente comparables publicados con la misma combin
 
 | Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| minilm-l6-option-head-doom | 444.673 (cabeza) | No disponible | Probabilidad por opcion (variable) | Apache 2.0 | HuggingFace, libreria `brain` |
-| sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M | 256 tokens | Embedding de frase | Apache 2.0 | HuggingFace, sentence-transformers |
+| minilm-l6-option-head-doom | 444.673 (cabeza) | No disponible | Probabilidad por opcion (variable) | Apache 2.0 | Hugging Face, libreria `brain` |
+| sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M | 256 tokens | Embedding de frase | Apache 2.0 | Hugging Face, sentence-transformers |
 | Cabeza de politica MLP convencional | Segun diseno | Segun diseno | Logits de dimension fija | Segun implementacion | Depende del proyecto |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone de modelos directamente comparables publicados con la misma combin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swedishembedded/minilm-l6-option-head-doom
+- Modelo en Hugging Face: https://huggingface.co/swedishembedded/minilm-l6-option-head-doom
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Swedish Embedded AB (contacto indicado en la model card): info@swedishembedded.com
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en los resultados de busqueda web disponibles.

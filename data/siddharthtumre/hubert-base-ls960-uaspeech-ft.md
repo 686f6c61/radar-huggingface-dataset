@@ -1,7 +1,7 @@
 # siddharthtumre/hubert-base-ls960-uaspeech-ft
 
 ## Resumen
-El modelo `siddharthtumre/hubert-base-ls960-uaspeech-ft` es un checkpoint de HuggingFace que, según su nombre, parte del modelo base `facebook/hubert-base-ls960` y lo ajusta (fine-tuning) sobre el dataset UASpeech. El autor es `siddharthtumre`. La model card es un texto generado automáticamente, sin información sobre el desarrollo, los datos de entrenamiento, la licencia o las capacidades. El modelo pertenece a la librería `transformers` y tiene el tag `arxiv:1910.09700`, que corresponde al paper de HuBERT. No se especifica el pipeline, los idiomas ni la licencia. Se trata de un modelo de audio, probablemente para reconocimiento de voz, pero no hay documentación que lo confirme. El modelo no tiene descargas ni likes, lo que sugiere que es una contribución reciente y sin validación externa.
+El modelo `siddharthtumre/hubert-base-ls960-uaspeech-ft` es un checkpoint de Hugging Face que, según su nombre, parte del modelo base `facebook/hubert-base-ls960` y lo ajusta (fine-tuning) sobre el dataset UASpeech. El autor es `siddharthtumre`. La model card es un texto generado automáticamente, sin información sobre el desarrollo, los datos de entrenamiento, la licencia o las capacidades. El modelo pertenece a la librería `transformers` y tiene el tag `arxiv:1910.09700`, que corresponde al paper de HuBERT. No se especifica el pipeline, los idiomas ni la licencia. Se trata de un modelo de audio, probablemente para reconocimiento de voz, pero no hay documentación que lo confirme. El modelo no tiene descargas ni likes, lo que sugiere que es una contribución reciente y sin validación externa.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -41,7 +41,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 ## Requisitos de hardware
 - No se proporcionan datos de VRAM, GPU recomendadas, latencia ni throughput en la información disponible.
 - Al tratarse de un modelo de tamaño base (derivado de HuBERT base), es probable que pueda ejecutarse en GPUs de consumo (por ejemplo, RTX 3060 o superiores) y en CPU, pero no hay confirmación.
-- No se mencionan opciones de despliegue como vLLM, llama.cpp, Ollama o TGI. Al ser un modelo de la librería `transformers`, se puede cargar con la API estándar de HuggingFace, pero no se especifica.
+- No se mencionan opciones de despliegue como vLLM, llama.cpp, Ollama o TGI. Al ser un modelo de la librería `transformers`, se puede cargar con la API estándar de Hugging Face, pero no se especifica.
 
 ## Comparativa con modelos similares
 No se dispone de información suficiente para realizar una comparativa con modelos similares. El modelo base `facebook/hubert-base-ls960` es la referencia más directa, pero no se han publicado resultados de evaluación ni detalles del fine-tuning que permitan comparar.
@@ -56,7 +56,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 - No se puede garantizar que el nombre del modelo corresponda al dataset UASpeech; es una inferencia no confirmada.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/siddharthtumre/hubert-base-ls960-uaspeech-ft
+- Modelo en Hugging Face: https://huggingface.co/siddharthtumre/hubert-base-ls960-uaspeech-ft
 - Modelo base: https://huggingface.co/facebook/hubert-base-ls960
 - Página informativa sobre hubert-base-ls960: https://www.aimodels.fyi/models/huggingFace/hubert-base-ls960-facebook
 - Paper de HuBERT: https://arxiv.org/abs/1910.09700

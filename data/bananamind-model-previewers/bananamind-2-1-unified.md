@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: los pesos en fp32 ocupan aproximadamente 140 MB (34.999.041 parametros × 4 bytes). Con overhead de activaciones y KV cache, cabe en menos de 1 GB de VRAM.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM, incluyendo NVIDIA GTX 1050, RTX 2060, o incluso iGPUs modernas. No requiere GPU de datacenter.
 - Cabe en consumer GPU: si, en practicamente todas las GPU consumer disponibles desde 2016 en adelante.
-- Opciones de despliegue: al ser una arquitectura custom con `trust_remote_code`, requiere cargar el codigo desde HuggingFace. Puede ejecutarse con transformers, y probablemente con backends como llama.cpp o vLLM si se adapta el codigo, aunque no se ha confirmado compatibilidad.
+- Opciones de despliegue: al ser una arquitectura custom con `trust_remote_code`, requiere cargar el codigo desde Hugging Face. Puede ejecutarse con transformers, y probablemente con backends como llama.cpp o vLLM si se adapta el codigo, aunque no se ha confirmado compatibilidad.
 - Latencia y throughput: no disponible. Dado el tamano, se espera una latencia de pocos milisegundos por token en GPU y decenas de milisegundos en CPU, pero no hay datos medidos publicados.
 
 ## Comparativa con modelos similares
@@ -69,11 +69,11 @@ No se dispone de comparativas publicadas con otros modelos. Por tamano, podria c
 - Arquitectura experimental: no hay garantias de estabilidad ni de rendimiento en produccion. El esquema de relevo puede introducir cuellos de botella de informacion no deseados.
 - Riesgo de alucinacion: al ser un modelo pequeno entrenado con una mezcla de datasets web, puede generar contenido factualmente incorrecto o inconsistente.
 - Sesgos: no se han publicado evaluaciones de sesgo. Al entrenarse con FineWeb-HQ y DCLM, es probable que herede sesgos presentes en esos corpus.
-- El codigo custom requiere `trust_remote_code=True` en transformers, lo que implica ejecutar codigo arbitrario descargado de HuggingFace. Se recomienda auditar el codigo antes de usarlo en entornos sensibles.
+- El codigo custom requiere `trust_remote_code=True` en transformers, lo que implica ejecutar codigo arbitrario descargado de Hugging Face. Se recomienda auditar el codigo antes de usarlo en entornos sensibles.
 - No hay informacion sobre cuantizaciones disponibles ni sobre compatibilidad con herramientas de cuantizacion estandar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BananaMind-Model-Previewers/BananaMind-2.1-Unified
+- Modelo en Hugging Face: https://huggingface.co/BananaMind-Model-Previewers/BananaMind-2.1-Unified
 - Organizacion BananaMind-Model-Previewers: https://huggingface.co/BananaMind-Model-Previewers
 - Modelo predecesor BananaMind-2-Pro-Preview: https://huggingface.co/BananaMind/BananaMind-2-Pro-Preview

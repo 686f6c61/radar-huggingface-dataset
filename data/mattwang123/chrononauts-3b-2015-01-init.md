@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chrononauts 3B 2015-01 init | 2,8 B | 8.192 | Base temporal congelada, corpus por corte | `other` | HuggingFace, 0 descargas |
-| Chrononauts 3B 2015-01 sft | No disponible | No disponible | SFT del mismo corte | `other` | HuggingFace (repo hermano) |
-| Chrononauts 3B 2015-01 agent | No disponible | No disponible | Entrenado como agente de búsqueda | `other` | HuggingFace (repo hermano) |
+| Chrononauts 3B 2015-01 init | 2,8 B | 8.192 | Base temporal congelada, corpus por corte | `other` | Hugging Face, 0 descargas |
+| Chrononauts 3B 2015-01 sft | No disponible | No disponible | SFT del mismo corte | `other` | Hugging Face (repo hermano) |
+| Chrononauts 3B 2015-01 agent | No disponible | No disponible | Entrenado como agente de búsqueda | `other` | Hugging Face (repo hermano) |
 | Modelos base de ~3 B (p. ej., Llama 3.2 3B, Qwen2.5 3B) | ~3 B | 8k-128k | Base generalista sin restricción temporal | Licencias abiertas | Amplia disponibilidad |
 
 La comparación con modelos generalistas de tamaño similar es limitada: Chrononauts no compite en rendimiento general, sino en control experimental del conocimiento temporal. No se dispone de datos de benchmarks para cuantificar la diferencia.
@@ -85,7 +85,7 @@ La comparación con modelos generalistas de tamaño similar es limitada: Chronon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattwang123/chrononauts-3b-2015-01-init
+- Modelo en Hugging Face: https://huggingface.co/mattwang123/chrononauts-3b-2015-01-init
 - Repo hermano SFT: https://huggingface.co/mattwang123/chrononauts-3b-2015-01-sft
 - Repo hermano agente: https://huggingface.co/mattwang123/chrononauts-3b-2015-01-agent
 - Modelo de embeddings del corpus: https://huggingface.co/BAAI/bge-base-en-v1.5

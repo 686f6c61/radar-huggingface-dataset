@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JaeDeng818/JAE es un repositorio de modelo publicado en HuggingFace por el usuario JaeDeng818 el 5 de octubre de 2026. En el momento de redactar esta ficha, la model card no contiene mas contenido que la declaracion `license: unknown`, sin descripcion, sin arquitectura declarada y sin informacion sobre el proceso de entrenamiento. El repositorio registra 0 descargas y 0 "likes", y no tiene pipeline de inferencia asignado en la plataforma.
+JaeDeng818/JAE es un repositorio de modelo publicado en Hugging Face por el usuario JaeDeng818 el 5 de octubre de 2026. En el momento de redactar esta ficha, la model card no contiene mas contenido que la declaracion `license: unknown`, sin descripcion, sin arquitectura declarada y sin informacion sobre el proceso de entrenamiento. El repositorio registra 0 descargas y 0 "likes", y no tiene pipeline de inferencia asignado en la plataforma.
 
 Esto significa que no es posible confirmar que tipo de artefacto contiene el repositorio: puede tratarse tanto de un modelo de lenguaje como de un modelo de vision, audio, embeddings o incluso de un experimento personal sin publicar. Tampoco hay datos sobre numero de parametros, longitud de contexto, tokenizador, idiomas soportados ni formato de pesos.
 
@@ -87,7 +87,7 @@ No disponible. Sin conocer la categoria, el tamano ni la tarea del modelo, no es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JaeDeng818/JAE
+- Repositorio en Hugging Face: https://huggingface.co/JaeDeng818/JAE
 - Paper asociado: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

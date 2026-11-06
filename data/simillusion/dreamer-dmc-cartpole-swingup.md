@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks comparativos (MMLU, HumanEval, GSM8
 
 | Modelo | Enfoque | Entorno | Pasos de entrenamiento | Retorno | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Dreamer V1 (este checkpoint) | Model-based RL con RSSM | DMC cartpole-swingup | 60 000 | 493 | MIT | HuggingFace |
+| Dreamer V1 (este checkpoint) | Model-based RL con RSSM | DMC cartpole-swingup | 60 000 | 493 | MIT | Hugging Face |
 | Dreamer V1 (artículo original) | Model-based RL con RSSM | DMC (suite completa) | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible | Paper |
-| Otros modelos del mundo de Simulusion | Model-based RL | varios | no disponible | no disponible | MIT (según la librería) | HuggingFace / GitHub |
+| Otros modelos del mundo de Simulusion | Model-based RL | varios | no disponible | no disponible | MIT (según la librería) | Hugging Face / GitHub |
 
 No se dispone de datos de benchmarks de alternativas comparables en la información proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks de alternativas comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/simillusion/dreamer-dmc-cartpole-swingup
+- Modelo en Hugging Face: https://huggingface.co/simillusion/dreamer-dmc-cartpole-swingup
 - Repositorio de Simulusion: https://github.com/ParamThakkar123/simulusion
 - Galería de clips y curvas de aprendizaje: https://paramthakkar123.github.io/simulusion/gallery.html
 - Artículo Dreamer V1: https://arxiv.org/abs/1912.01603

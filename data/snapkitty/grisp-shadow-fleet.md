@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El proyecto "grisp-shadow-fleet" alojado en HuggingFace bajo el identificador `Snapkitty/grisp-shadow-fleet` no corresponde a un modelo de inteligencia artificial convencional, sino a una simulación 3D persistente que se ejecuta en el navegador. Según la model card, se trata de una estación orbital soberana llamada "Sovereign Station" con 30 habitaciones, 50 personajes no jugadores (NPC) con biografías definidas, 12 agentes de IA, economía funcional, naves y exploración espacial. El autor es "Snapkitty" y la etiqueta indica `region:us`. No se proporcionan detalles sobre arquitectura de red neuronal, parámetros, entrenamiento o licencia, por lo que no es posible tratarlo como un modelo de lenguaje o de otro tipo de IA generativa.
+El proyecto "grisp-shadow-fleet" alojado en Hugging Face bajo el identificador `Snapkitty/grisp-shadow-fleet` no corresponde a un modelo de inteligencia artificial convencional, sino a una simulación 3D persistente que se ejecuta en el navegador. Según la model card, se trata de una estación orbital soberana llamada "Sovereign Station" con 30 habitaciones, 50 personajes no jugadores (NPC) con biografías definidas, 12 agentes de IA, economía funcional, naves y exploración espacial. El autor es "Snapkitty" y la etiqueta indica `region:us`. No se proporcionan detalles sobre arquitectura de red neuronal, parámetros, entrenamiento o licencia, por lo que no es posible tratarlo como un modelo de lenguaje o de otro tipo de IA generativa.
 
 A pesar de su nombre y de la mención a "agentes de IA", el contenido técnico describe un motor de simulación determinista (UniverseCore) con un registro de eventos WORM basado en SHA-256, renderizado con Three.js y lógica de agentes gobernada por reglas Prolog. Esto sugiere que el interés del proyecto reside en la simulación interactiva y la gestión de estados persistentes, no en el aprendizaje automático. Dado que la fecha de creación es el 3 de septiembre de 2026 (futura), es posible que el repositorio esté en una fase temprana o sea una demostración conceptual.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 ## Comparativa con modelos similares
 
-No disponible. Este proyecto no pertenece a la categoría de modelos de lenguaje o de IA generativa, por lo que no existen alternativas comparables en el mismo ámbito. Si se considera como simulación interactiva, no se dispone de información sobre otros proyectos similares en HuggingFace para establecer una comparación.
+No disponible. Este proyecto no pertenece a la categoría de modelos de lenguaje o de IA generativa, por lo que no existen alternativas comparables en el mismo ámbito. Si se considera como simulación interactiva, no se dispone de información sobre otros proyectos similares en Hugging Face para establecer una comparación.
 
 ## Limitaciones y advertencias
 
@@ -68,5 +68,5 @@ No disponible. Este proyecto no pertenece a la categoría de modelos de lenguaje
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/grisp-shadow-fleet
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/grisp-shadow-fleet
 - Sitio web de la simulación: https://snapkittywest.github.io/grisp-shadow-fleet/

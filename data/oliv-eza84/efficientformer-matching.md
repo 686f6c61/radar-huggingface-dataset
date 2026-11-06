@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`oliv-eza84/efficientformer-matching` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada de la arquitectura EfficientFormer orientada a tareas de *matching* (emparejamiento o correspondencia entre entradas). Lo publica el usuario `oliv-eza84` bajo licencia Apache 2.0. Según la propia model card, se trata de un artefacto de revisión de código, *smoke tests* y experimentos controlados de pequeño alcance, no de un modelo preentrenado listo para producción.
+`oliv-eza84/efficientformer-matching` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada de la arquitectura EfficientFormer orientada a tareas de *matching* (emparejamiento o correspondencia entre entradas). Lo publica el usuario `oliv-eza84` bajo licencia Apache 2.0. Según la propia model card, se trata de un artefacto de revisión de código, *smoke tests* y experimentos controlados de pequeño alcance, no de un modelo preentrenado listo para producción.
 
 El checkpoint `model.safetensors` es una inicialización válida (pesos sin entrenar) y el autor declara explícitamente que no se reclama ninguna puntuación de benchmark. El recuento real de parámetros en safetensors es de 49.600, un tamaño muy reducido que confirma su carácter de juguete o de prueba de concepto. La configuración indicada es la escala "xlarge" dentro de esta implementación, con atención de tipo *grouped query*, fusión *co attention*, activación *approx gelu* y normalización por *batchnorm*.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `oliv-eza84/efficientformer-matching` | 49.600 | no disponible | No (inicialización) | apache-2.0 | HuggingFace |
+| `oliv-eza84/efficientformer-matching` | 49.600 | no disponible | No (inicialización) | apache-2.0 | Hugging Face |
 | EfficientFormer original (Snap) | millones (según variante) | no aplica (visión) | Sí, preentrenado | según variante | Repositorio oficial |
-| Otras implementaciones de EfficientFormer en HF | variable | no disponible | variable | variable | HuggingFace |
+| Otras implementaciones de EfficientFormer en HF | variable | no disponible | variable | variable | Hugging Face |
 
 No se dispone de datos de rendimiento del modelo descrito, por lo que la comparación cuantitativa con alternativas no es posible con la información proporcionada.
 
@@ -80,4 +80,4 @@ No se dispone de datos de rendimiento del modelo descrito, por lo que la compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oliv-eza84/efficientformer-matching
+- Hugging Face: https://huggingface.co/oliv-eza84/efficientformer-matching

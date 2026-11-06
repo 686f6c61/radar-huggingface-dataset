@@ -101,7 +101,7 @@ La comparativa directa mas util es contra las dos alternativas del mismo modelo:
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sanasol2008/qwen3.8-27b-draft-vocab-cyrillic
+- Repositorio Hugging Face: https://huggingface.co/sanasol2008/qwen3.8-27b-draft-vocab-cyrillic
 - Modelo base: https://huggingface.co/dbirks/Qwen3.8-27B-W4A16-AutoRound
 - Repositorio HyperQwen: https://github.com/syv-ai/HyperQwen
 - Documentacion de incidencias de HyperQwen (gotcha 61): https://github.com/syv-ai/HyperQwen/blob/main/docs/gotchas.md

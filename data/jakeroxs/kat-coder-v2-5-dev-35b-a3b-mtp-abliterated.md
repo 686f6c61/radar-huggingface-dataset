@@ -78,7 +78,7 @@ La comparacion es orientativa; el rendimiento real depende de la tarea y del har
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jakeroxs/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED
+- Repositorio Hugging Face: https://huggingface.co/jakeroxs/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED
 - Version GGUF: https://huggingface.co/jakeroxs/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED-GGUF
 - Modelo original: https://huggingface.co/KwaiPilot/KAT-Coder-V2.5-Dev
 - Checkpoint abliterado base: https://huggingface.co/KridgeDookie/KAT-Coder-V2.5-Dev-35B-A3B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS

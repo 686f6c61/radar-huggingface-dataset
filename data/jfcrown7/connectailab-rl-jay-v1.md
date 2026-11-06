@@ -67,10 +67,10 @@ Los resultados proceden de la model card del autor. El propio autor advierte que
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-jay-v1 | 0,8 B (base) + LoRA | no disponible | Decisión cerrada sobre simulador | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8 B | no disponible | Generación general | no disponible en la información | HuggingFace |
+| connectailab-rl-jay-v1 | 0,8 B (base) + LoRA | no disponible | Decisión cerrada sobre simulador | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8 B | no disponible | Generación general | no disponible en la información | Hugging Face |
 | Política PPO del simulador (profesora) | no disponible | no disponible | Decisión en CONNECT TYCOON | no disponible | No publicada como modelo |
-| Alternativas genéricas de 1 B o menos (p. ej. familias Llama o Gemma de tamaño similar) | ~1 B | variable | Generación general | variable | HuggingFace |
+| Alternativas genéricas de 1 B o menos (p. ej. familias Llama o Gemma de tamaño similar) | ~1 B | variable | Generación general | variable | Hugging Face |
 
 La comparación directa con modelos de propósito general no es significativa, ya que connectailab-rl-jay-v1 está especializado en una tarea de clasificación cerrada dentro de un simulador concreto. Frente a su modelo base, la mejora en acierto de la tarea es de 30,4 % a 76,4 %, a costa de perder capacidades generales de generación. No se dispone de datos públicos de benchmarks estándar (MMLU, HumanEval, GSM8K) para este adaptador.
 
@@ -87,7 +87,7 @@ La comparación directa con modelos de propósito general no es significativa, y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jfcrown7/connectailab-rl-jay-v1
+- Hugging Face: https://huggingface.co/jfcrown7/connectailab-rl-jay-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

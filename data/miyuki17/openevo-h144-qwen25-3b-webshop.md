@@ -67,7 +67,7 @@ No disponible. Este checkpoint no es un modelo funcional y no puede compararse c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/miyuki17/openevo-h144-qwen25-3b-webshop
+- Repositorio Hugging Face: https://huggingface.co/miyuki17/openevo-h144-qwen25-3b-webshop
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio relacionado (H1.43 7B): https://huggingface.co/miyuki17/openevo-h143-qwen25-7b-webshop
 - Archivo de adaptadores: https://huggingface.co/miyuki17/openevo-adapter-archive

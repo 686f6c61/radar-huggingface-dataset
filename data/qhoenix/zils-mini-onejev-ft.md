@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zils-mini-onejev-ft es un modelo de decisión (decision-model) construido sobre la familia Qwen3.5-4B y publicado por el usuario qhoenix en HuggingFace. Se trata de un fine-tuning mediante LoRA sobre OmniJev OneJev1.5-4B, posteriormente fusionado con un "mini soup" que combina torchcast-ai/torchcast-decision-4b y vllm-sr/d3-mini al 50%, dando como resultado un modelo orientado a tareas de extracción de características y toma de decisiones dentro del ecosistema Zils (subnet 127, mini pool).
+zils-mini-onejev-ft es un modelo de decisión (decision-model) construido sobre la familia Qwen3.5-4B y publicado por el usuario qhoenix en Hugging Face. Se trata de un fine-tuning mediante LoRA sobre OmniJev OneJev1.5-4B, posteriormente fusionado con un "mini soup" que combina torchcast-ai/torchcast-decision-4b y vllm-sr/d3-mini al 50%, dando como resultado un modelo orientado a tareas de extracción de características y toma de decisiones dentro del ecosistema Zils (subnet 127, mini pool).
 
 El modelo cuenta con 4.539.265.536 parámetros totales (aproximadamente 4,54 mil millones) y se distribuye en formato safetensors con un repositorio de 9,1 GB. Está etiquetado con el pipeline `feature-extraction` y la arquitectura `qwen3_5`, lo que sugiere que hereda el diseño transformer de la familia Qwen3.5, aunque no se especifican detalles adicionales sobre la longitud de contexto o la composición exacta del entrenamiento.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qhoenix/zils-mini-onejev-ft
+- Hugging Face: https://huggingface.co/qhoenix/zils-mini-onejev-ft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Modelo de fine-tuning de referencia: OmniJev OneJev1.5-4B (no se proporciona URL directa en la información disponible)
 - Componentes del soup: torchcast-ai/torchcast-decision-4b y vllm-sr/d3-mini (no se proporcionan URLs directas en la información disponible)

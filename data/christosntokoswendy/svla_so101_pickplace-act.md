@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ChristosNtokosWendy/svla_so101_pickplace-act | ACT (LeRobot) | 51.668.614 | svla_so101_pickplace | Apache 2.0 | HuggingFace |
-| chirag1701/smolvla_so101_pickplace | SmolVLA (VLA) | no disponible | svla_so101_pickplace | no disponible | HuggingFace |
-| chris241094/act-svla-so101-pickplace-v05 | ACT (LeRobot) | no disponible | svla_so101_pickplace | no disponible | HuggingFace |
+| ChristosNtokosWendy/svla_so101_pickplace-act | ACT (LeRobot) | 51.668.614 | svla_so101_pickplace | Apache 2.0 | Hugging Face |
+| chirag1701/smolvla_so101_pickplace | SmolVLA (VLA) | no disponible | svla_so101_pickplace | no disponible | Hugging Face |
+| chris241094/act-svla-so101-pickplace-v05 | ACT (LeRobot) | no disponible | svla_so101_pickplace | no disponible | Hugging Face |
 
 Los tres modelos se entrenan sobre el mismo dataset de referencia (`lerobot/svla_so101_pickplace`), lo que permite compararlos cualitativamente en la tarea pick-and-place. SmolVLA incorpora un componente visión-lenguaje-acción de mayor tamaño y generalidad, mientras que las variantes ACT son políticas específicas de la tarea, más ligeras. No se dispone de parámetros, contexto ni métricas de rendimiento de las alternativas en la información consultada.
 
@@ -84,7 +84,7 @@ Los tres modelos se entrenan sobre el mismo dataset de referencia (`lerobot/svla
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ChristosNtokosWendy/svla_so101_pickplace-act
+- Hugging Face del modelo: https://huggingface.co/ChristosNtokosWendy/svla_so101_pickplace-act
 - Dataset de entrenamiento: https://huggingface.co/datasets/lerobot/svla_so101_pickplace
 - LeRobot (framework): https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-TaoMate-H3-3step-ComfyUI es un adaptador LoRA destilado para generacion de video, publicado por el usuario CZMartin22 en HuggingFace. No se trata de un modelo completo, sino de una conversion al formato nativo de ComfyUI del adaptador oficial TaoLiveAIGC/TaoMate-H3 (paso 3000, con media movil exponencial o EMA), desarrollado originalmente por el equipo TaoLive AIGC de Alibaba. El adaptador se aplica sobre MiniMax H3 en su variante FL2VA, la arquitectura base de MiniMax AI que genera video a partir de texto o de imagen con audio sincronizado.
+TaoMate-H3-3step-ComfyUI es un adaptador LoRA destilado para generacion de video, publicado por el usuario CZMartin22 en Hugging Face. No se trata de un modelo completo, sino de una conversion al formato nativo de ComfyUI del adaptador oficial TaoLiveAIGC/TaoMate-H3 (paso 3000, con media movil exponencial o EMA), desarrollado originalmente por el equipo TaoLive AIGC de Alibaba. El adaptador se aplica sobre MiniMax H3 en su variante FL2VA, la arquitectura base de MiniMax AI que genera video a partir de texto o de imagen con audio sincronizado.
 
 La relevancia de esta ficha radica en que el adaptador esta destilado especificamente para generar video en solo 3 pasos de muestreo, lo que reduce drasticamente el coste computacional frente a los pipelines de difusion habituales de 20 a 50 pasos. El autor ha reescrito las claves del adaptador original (publicado en formato PEFT/Diffusers con nomenclatura no estandar) para que encajen en la estructura DiT de ComfyUI, ha incrustado los tensores escalares alpha y ha convertido los pesos de FP32 a BF16, reduciendo el tamano de 2,48 GB a 1,24 GB.
 
-El repositorio ocupa 1,2 GB y contiene un unico fichero safetensors. En el momento de la consulta acumula 9 "likes" y 0 descargas, y se publico el 13 de septiembre de 2026 bajo la licencia comunitaria MiniMax H3. Su pipeline declarado en HuggingFace es image-to-video, aunque el modelo base FL2VA soporta tambien text-to-video y generacion de audio sincronizado.
+El repositorio ocupa 1,2 GB y contiene un unico fichero safetensors. En el momento de la consulta acumula 9 "likes" y 0 descargas, y se publico el 13 de septiembre de 2026 bajo la licencia comunitaria MiniMax H3. Su pipeline declarado en Hugging Face es image-to-video, aunque el modelo base FL2VA soporta tambien text-to-video y generacion de audio sincronizado.
 
 ## Especificaciones tecnicas
 
@@ -39,7 +39,7 @@ No se dispone de datos sobre el numero de tokens o de fotogramas de video emplea
 ## Capacidades
 
 - Generacion de video a partir de texto (text-to-video) cuando se combina con el modelo base MiniMax H3 FL2VA, segun los tags del repositorio.
-- Generacion de video a partir de imagen (image-to-video), que es el pipeline declarado en HuggingFace.
+- Generacion de video a partir de imagen (image-to-video), que es el pipeline declarado en Hugging Face.
 - Generacion de audio sincronizado con el video, ya que el modelo base FL2VA incorpora la modalidad audio-video segun los tags.
 - Muestreo acelerado en 3 pasos gracias a la destilacion, frente a los regimenes habituales de decenas de pasos.
 - Integracion directa en ComfyUI mediante los nodos estandar `LoraLoader` o `LoraLoaderModelOnly`, asi como con los nodos Pixaroma H3 y ComfyUI-H3.
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CZMartin22/TaoMate-H3-3step-ComfyUI | LoRA destilado para video, convertido a ComfyUI | No disponible (1,24 GB en BF16) | No aplica | safetensors BF16 | minimax-h3-community | HuggingFace, 0 descargas, 9 likes |
-| TaoLiveAIGC/TaoMate-H3 | LoRA destilado original (paso 3000 EMA) | No disponible (aprox. 2,48 GB en FP32) | No aplica | PEFT / Diffusers, FP32 | MiniMax H3 Community License | HuggingFace (repositorio del equipo TaoLive AIGC de Alibaba) |
-| MiniMaxAI/MiniMax-H3 (FL2VA) | Modelo base de difusion para video y audio | No disponible | No disponible | No disponible | MiniMax H3 Community License | HuggingFace (modelo base del adaptador) |
+| CZMartin22/TaoMate-H3-3step-ComfyUI | LoRA destilado para video, convertido a ComfyUI | No disponible (1,24 GB en BF16) | No aplica | safetensors BF16 | minimax-h3-community | Hugging Face, 0 descargas, 9 likes |
+| TaoLiveAIGC/TaoMate-H3 | LoRA destilado original (paso 3000 EMA) | No disponible (aprox. 2,48 GB en FP32) | No aplica | PEFT / Diffusers, FP32 | MiniMax H3 Community License | Hugging Face (repositorio del equipo TaoLive AIGC de Alibaba) |
+| MiniMaxAI/MiniMax-H3 (FL2VA) | Modelo base de difusion para video y audio | No disponible | No disponible | No disponible | MiniMax H3 Community License | Hugging Face (modelo base del adaptador) |
 
 La comparativa se limita a las tres piezas de la misma cadena de dependencias, ya que la informacion proporcionada no incluye datos de terceros modelos de video comparables (por ejemplo, otros DiT de generacion de video con audio). Las diferencias medibles entre el adaptador convertido y el original son el formato de pesos (BF16 frente a FP32), el tamano (1,24 GB frente a 2,48 GB) y la nomenclatura de claves, adaptada a ComfyUI.
 
@@ -94,7 +94,7 @@ La comparativa se limita a las tres piezas de la misma cadena de dependencias, y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CZMartin22/TaoMate-H3-3step-ComfyUI
+- Modelo en Hugging Face: https://huggingface.co/CZMartin22/TaoMate-H3-3step-ComfyUI
 - Adaptador original: https://huggingface.co/TaoLiveAIGC/TaoMate-H3
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia MiniMax H3 Community License Agreement: https://huggingface.co/MiniMaxAI/MiniMax-H3 (enlace indicado por el autor como `license_link`)

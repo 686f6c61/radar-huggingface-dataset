@@ -19,7 +19,7 @@ El artefacto principal de la anchura 4096 ocupa 12,6 M de parametros (50 MB en f
 | Longitud de contexto | No aplica: el SAE codifica activaciones individuales y no tiene ventana de contexto propia |
 | Tipos de cuantizacion | No disponible; los pesos se entrenaron y publicaron en fp32 |
 | Idiomas soportados | No disponible (el corpus descrito esta integramente en ingles) |
-| Licencia | Apache 2.0 (codigo); MITRE ATT&CK Terms (descripciones de tecnicas); CC0/CC BY (CVE, dolly). Los metadatos de HuggingFace indican "no disponible" |
+| Licencia | Apache 2.0 (codigo); MITRE ATT&CK Terms (descripciones de tecnicas); CC0/CC BY (CVE, dolly). Los metadatos de Hugging Face indican "no disponible" |
 | Formato de pesos | Checkpoints de PyTorch (`.pt`), compatibles con SAELens; safetensors no confirmado |
 | Modelo objetivo | `EleutherAI/pythia-160m` (12 capas, d_model=768, 162 M, The Pile deduplicado, Apache 2.0) |
 | Tamano del repositorio | 0,1 GB |
@@ -29,9 +29,9 @@ El artefacto principal de la anchura 4096 ocupa 12,6 M de parametros (50 MB en f
 
 El SAE emplea una arquitectura **JumpReLU** (Rajamanoharan et al., 2024, "Jumping Ahead") con umbral por caracteristica `JumpReLU_theta(z) = z * H(z - theta)` y estimador straight-through (STE) para optimizar directamente L0 en lugar de un proxy L1. Se entrenaron dos anchuras: 4096 (5,3x, configuracion principal recomendada) y 8192 (10,7x, ablacion superior). Los hiperparametros de la anchura principal son: `bandwidth epsilon = 0,001`, `target L0 = 20`, penalizacion cuadratica `l0_coef = 1,0` (`lambda * (L0 - target)^2`), `lr = 5e-4`, `batch_tokens = 2048`, 2 epocas (1504 pasos, 1,54 M de tokens), Adam con beta (0,9; 0,999), normalizacion unitaria del decodificador en cada paso, fp32 y streaming de shards. El entrenamiento completo se ejecuto en CPU (6 nucleos, `torch.set_num_threads(6)`), con checkpoints cada 1000 pasos y reanudacion segura.
 
-El corpus (1,85 M de tokens, 14 900 documentos, fuentes CC0/CC BY/Apache/MITRE Terms, sin CTI privada) combina descripciones de tecnicas y ejemplos de procedimiento de ATT&CK STIX (697 tecnicas y subtecnicas, 2919 ejemplos), CVE de NVD via el espejo de HuggingFace `stasvinokur/cve-and-cwe-dataset-1999-2025` (3000), CISA KEV (1716), CAPEC v3.9 (598), informes de comportamiento de malware (`extraordinarylab/malware-text-db`, 1995), correos de phishing (2000) y un contraste benigno de `databricks/databricks-dolly-15k` (2000). El split es 85/15 sin fuga de datos (12 690/2235 documentos, 1,57 M/0,28 M tokens), agrupado por `group_id` mediante `GroupShuffleSplit` y validado con solapamiento 0.
+El corpus (1,85 M de tokens, 14 900 documentos, fuentes CC0/CC BY/Apache/MITRE Terms, sin CTI privada) combina descripciones de tecnicas y ejemplos de procedimiento de ATT&CK STIX (697 tecnicas y subtecnicas, 2919 ejemplos), CVE de NVD via el espejo de Hugging Face `stasvinokur/cve-and-cwe-dataset-1999-2025` (3000), CISA KEV (1716), CAPEC v3.9 (598), informes de comportamiento de malware (`extraordinarylab/malware-text-db`, 1995), correos de phishing (2000) y un contraste benigno de `databricks/databricks-dolly-15k` (2000). El split es 85/15 sin fuga de datos (12 690/2235 documentos, 1,57 M/0,28 M tokens), agrupado por `group_id` mediante `GroupShuffleSplit` y validado con solapamiento 0.
 
-Las activaciones se extrajeron de la capa 8 (75 % de profundidad, analogo a la capa 20 de Salmon al 71 %) y tambien de la capa 4 para ablacion, usando `output_hidden_states=True` de HuggingFace con hook manual (sin `transformer_lens`), a 207 tokens/s: 41,5 minutos de computo por capa (2,07 h en total), 61 shards de 25 000 tokens por capa (aproximadamente 73 MB por shard, 4,6 GB por capa, 9,2 GB entre L8 y L4). Ademas se publica un diccionario de caracteristicas (`feature_dictionary.csv`, 4096 filas) con `feature_id`, `auto_description`, `top_activating_examples`, tecnicas ATT&CK mapeadas, dominios CISSP mapeados y `confidence_score`.
+Las activaciones se extrajeron de la capa 8 (75 % de profundidad, analogo a la capa 20 de Salmon al 71 %) y tambien de la capa 4 para ablacion, usando `output_hidden_states=True` de Hugging Face con hook manual (sin `transformer_lens`), a 207 tokens/s: 41,5 minutos de computo por capa (2,07 h en total), 61 shards de 25 000 tokens por capa (aproximadamente 73 MB por shard, 4,6 GB por capa, 9,2 GB entre L8 y L4). Ademas se publica un diccionario de caracteristicas (`feature_dictionary.csv`, 4096 filas) con `feature_id`, `auto_description`, `top_activating_examples`, tecnicas ATT&CK mapeadas, dominios CISSP mapeados y `confidence_score`.
 
 ## Capacidades
 
@@ -42,7 +42,7 @@ Las activaciones se extrajeron de la capa 8 (75 % de profundidad, analogo a la c
 - Diccionario de caracteristicas exportable con descripciones automaticas y ejemplos de maxima activacion.
 - Compatibilidad de ecosistema: carga nativa via `cyberlens` y via `sae_lens.SAE.from_pretrained`, con convenciones de nombres al estilo Gemma Scope / Llama Scope.
 - Ejecucion en CPU: inferencia del SAE sin GPU, con huella de 50 MB en fp32 para la anchura 4096.
-- Demo interactiva: Space de Gradio (`cyberlens-demo`) preparado para el tier gratuito de HuggingFace en CPU.
+- Demo interactiva: Space de Gradio (`cyberlens-demo`) preparado para el tier gratuito de Hugging Face en CPU.
 - Lo que **no** hace: no genera texto, no razona, no soporta tool calling ni function calling, no es un modelo de agentes y no tiene capacidades multimodales ni modo "thinking". Cualquier capacidad generativa proviene del modelo objetivo `pythia-160m`, no del SAE.
 
 ## Casos de uso
@@ -77,14 +77,14 @@ Otros datos de rendimiento operativo declarados: extraccion de activaciones a 20
 - GPU recomendadas: no se requiere ninguna. Cualquier GPU consumer (incluso integradas) es sobredimensionada; el flujo declarado es CPU-only, sin nube ni GPU.
 - Referencia de hardware validada por el autor: AMD Ryzen 7530U (6 nucleos), 16 GB de RAM, CPU exclusivamente, para entrenamiento, extraccion y evaluacion.
 - Cabe en cualquier GPU de consumo: si, en todas (RTX 3060, RTX 4090, etc.), aunque no aporta ventaja frente a CPU para esta carga.
-- Opciones de despliegue: paquete nativo `cyberlens`, `sae_lens` (SAELens), demo Gradio en HuggingFace Spaces (CPU, tier gratuito). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a un SAE.
+- Opciones de despliegue: paquete nativo `cyberlens`, `sae_lens` (SAELens), demo Gradio en Hugging Face Spaces (CPU, tier gratuito). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a un SAE.
 - Latencia y throughput: extraccion de activaciones a 207 tokens/s en CPU de 6 nucleos; el coste de codificacion del SAE es despreciable frente a la pasada del modelo objetivo. El autor recomienda la anchura 4096 por eficiencia (11 min frente a 25 min de entrenamiento).
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Modelo objetivo | Anchura | Mapeo taxonomico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CyberLens-SAE | SAE de dominio (JumpReLU) | `pythia-160m` capa 8 | 4096 / 8192 | ATT&CK (14 tacticas, ~200 tecnicas) y CISSP CBK (8 dominios) | Apache 2.0 (codigo) + terminos MITRE/CC | 0 descargas, 0 likes en HuggingFace |
+| CyberLens-SAE | SAE de dominio (JumpReLU) | `pythia-160m` capa 8 | 4096 / 8192 | ATT&CK (14 tacticas, ~200 tecnicas) y CISSP CBK (8 dominios) | Apache 2.0 (codigo) + terminos MITRE/CC | 0 descargas, 0 likes en Hugging Face |
 | Gemma Scope (`google/gemma-scope`) | SAE de proposito general | Familia Gemma 2 | 16 K a 1 M latentes | No | No disponible en la informacion proporcionada | Publico, ampliamente usado |
 | Llama Scope (`fnlp/Llama-Scope`) | SAE de proposito general | Familia Llama | No disponible en la informacion proporcionada | No | No disponible en la informacion proporcionada | Publico |
 
@@ -98,16 +98,16 @@ Diferencias clave segun la model card: los SAE de proposito general se entrenan 
 - Sin benchmarks publicos: solo se reporta FVU de entrenamiento; no hay evaluacion de calidad de las etiquetas ATT&CK ni de precision del mapeo.
 - Model card truncada: la informacion disponible corta el apartado de resultados de la fase 2 y no incluye la fase 3 (uso) ni la validacion de las etiquetas, por lo que las cifras de cobertura del diccionario no pueden verificarse.
 - Cobertura taxonomica parcial: aunque se declaran ~200 tecnicas ATT&CK mapeadas, con 4096 latentes muchos conceptos compartiran direccion o quedaran sin etiquetar; se recomienda revisar `confidence_score` antes de usar una etiqueta en produccion.
-- Sesgos del corpus: las fuentes son mayoritariamente anglosajonas y publicas (MITRE, NIST/NVD, CISA, HuggingFace), con un unico contraste benigno (dolly-15k) de 2000 documentos, lo que puede sesgar la frontera entre "ciber" y "benigno".
+- Sesgos del corpus: las fuentes son mayoritariamente anglosajonas y publicas (MITRE, NIST/NVD, CISA, Hugging Face), con un unico contraste benigno (dolly-15k) de 2000 documentos, lo que puede sesgar la frontera entre "ciber" y "benigno".
 - Riesgo de falsos positivos: un latente de phishing puede activarse ante vocabulario de seguridad legitimo (documentacion, formacion, auditorias), por lo que no debe usarse como unico filtro de bloqueo.
 - Idiomas: el corpus descrito esta integramente en ingles; no hay evidencia de comportamiento fiable en castellano u otros idiomas.
-- Licencia mixta y ambigua: el codigo es Apache 2.0, las descripciones de tecnicas quedan bajo MITRE ATT&CK Terms y los datos bajo CC0/CC BY, con una data statement que hay que revisar; los metadatos de HuggingFace no declaran licencia, lo que complica el uso comercial sin comprobacion legal previa.
+- Licencia mixta y ambigua: el codigo es Apache 2.0, las descripciones de tecnicas quedan bajo MITRE ATT&CK Terms y los datos bajo CC0/CC BY, con una data statement que hay que revisar; los metadatos de Hugging Face no declaran licencia, lo que complica el uso comercial sin comprobacion legal previa.
 - Sin soporte declarado de cuantizacion ni de formatos safetensors/GGUF: los pesos se publican como checkpoints de PyTorch en fp32.
 - Los resultados de busqueda web consultados no arrojaron informacion tecnica relevante sobre el modelo: los enlaces devueltos eran foros y hilos sin relacion con CyberLens.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fahadhafeezofficial/cyberlens-saes
+- Modelo en Hugging Face: https://huggingface.co/fahadhafeezofficial/cyberlens-saes
 - Corpus de entrenamiento (opcional): `fahadhafeezofficial/cyberlens-corpus`
 - Demo Gradio: `fahadhafeezofficial/cyberlens-demo`
 - Paper de referencia de los SAE de dominio: *Resurrecting the Salmon* (O'Neill et al., 2025), https://arxiv.org/abs/2508.09363

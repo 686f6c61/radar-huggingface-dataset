@@ -65,7 +65,7 @@ Según el blog de IFM, el modelo 36B-A4B alcanza casi el rendimiento del modelo 
 
 ## Limitaciones y advertencias
 
-- Solo soporta inglés, según la información de HuggingFace.
+- Solo soporta inglés, según la información de Hugging Face.
 - No se han publicado benchmarks de calidad ni rendimiento para esta conversión MLX.
 - La longitud de contexto no está especificada, por lo que su uso en tareas de ventana larga requiere validación previa.
 - Al ser una conversión MLX, solo es compatible con hardware Apple Silicon, no con GPUs CUDA.
@@ -75,7 +75,7 @@ Según el blog de IFM, el modelo 36B-A4B alcanza casi el rendimiento del modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DreamFoundries/K2-Horizon-MoVA-36B-A4B-MLX-4bit
+- Hugging Face: https://huggingface.co/DreamFoundries/K2-Horizon-MoVA-36B-A4B-MLX-4bit
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
 - Blog de IFM: https://ifm.ai/blog/k2
 - MLXHub: https://mlxhub.app/open-model?repo=DreamFoundries/K2-Horizon-MoVA-36B-A4B-MLX-4bit

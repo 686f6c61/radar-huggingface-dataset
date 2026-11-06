@@ -97,7 +97,7 @@ No hay resultados de benchmarks comparativos entre estos modelos en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeynila/Kivi-1.5B
+- Modelo en Hugging Face: https://huggingface.co/zeynila/Kivi-1.5B
 - Adaptador LoRA: https://huggingface.co/zeynila/Kivi-1.5B-LoRA
 - Versión GGUF: https://huggingface.co/zeynila/Kivi-1.5B-GGUF
 - Código de la aplicación (Space): https://huggingface.co/zeynila/Kivi-1.5B-GGUF/tree/main/space

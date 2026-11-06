@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ashimgrg/LunarLander es un repositorio alojado en HuggingFace por el usuario Ashimgrg, publicado y actualizado el 15 de septiembre de 2026, bajo licencia MIT. En el momento de esta ficha el repositorio acumula 0 descargas y 0 likes, no tiene pipeline asignado y su model card no contiene más información que el bloque de metadatos YAML con la licencia (`license: mit`). No hay descripción, ni ficha técnica, ni instrucciones de uso, ni autoría institucional declarada.
+Ashimgrg/LunarLander es un repositorio alojado en Hugging Face por el usuario Ashimgrg, publicado y actualizado el 15 de septiembre de 2026, bajo licencia MIT. En el momento de esta ficha el repositorio acumula 0 descargas y 0 likes, no tiene pipeline asignado y su model card no contiene más información que el bloque de metadatos YAML con la licencia (`license: mit`). No hay descripción, ni ficha técnica, ni instrucciones de uso, ni autoría institucional declarada.
 
 No es posible confirmar a partir de la información disponible qué tipo de artefacto contiene el repositorio. El identificador «LunarLander» coincide con el nombre del entorno clásico de control (Gymnasium/Gym), lo que sugiere que podría tratarse de una política entrenada por refuerzo para ese entorno, pero esto es una inferencia a partir del nombre y no está respaldado por la documentación del repositorio. Tampoco hay evidencia de que sea un modelo de lenguaje, un modelo multimodal o un agente.
 
@@ -76,5 +76,5 @@ No disponible. No se puede establecer una categoría de comparación porque se d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ashimgrg/LunarLander
+- Repositorio en Hugging Face: https://huggingface.co/Ashimgrg/LunarLander
 - No se han encontrado papers, blogs, repositorios de código, demos ni documentación adicional asociados a este modelo en los resultados de búsqueda disponibles.

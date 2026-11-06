@@ -71,7 +71,7 @@ No se han encontrado modelos comparables directamente. No hay información sobre
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KeraCare/lab_item_extraction_lora_base_v1
+- Repositorio Hugging Face: https://huggingface.co/KeraCare/lab_item_extraction_lora_base_v1
 - Herramienta MergeKit (mencionada en la búsqueda web, no es específica del modelo): https://www.arcee.ai/blog/use-mergekit-to-extract-lora-adapters-from-any-fine-tuned-model
 - Documentación de MergeKit en DeepWiki: https://deepwiki.com/arcee-ai/mergekit/4.4-lora-extraction
 

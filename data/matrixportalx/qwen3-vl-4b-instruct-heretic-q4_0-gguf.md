@@ -90,7 +90,7 @@ La comparacion cuantitativa con alternativas de la misma categoria no es posible
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/matrixportalx/Qwen3-VL-4B-Instruct-heretic-Q4_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/matrixportalx/Qwen3-VL-4B-Instruct-heretic-Q4_0-GGUF
 - Modelo base: https://huggingface.co/coder3101/Qwen3-VL-4B-Instruct-heretic
 - Espacio de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

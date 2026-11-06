@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NEXORA1 es un modelo publicado en HuggingFace por el usuario NEXALIS bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente incluye la declaracion de licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni likes en el momento de la consulta, y la fecha de creacion y actualizacion coincide (2026-11-03), lo que sugiere una publicacion reciente y sin actividad posterior.
+NEXORA1 es un modelo publicado en Hugging Face por el usuario NEXALIS bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente incluye la declaracion de licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni likes en el momento de la consulta, y la fecha de creacion y actualizacion coincide (2026-11-03), lo que sugiere una publicacion reciente y sin actividad posterior.
 
 Dado que no se dispone de especificaciones publicadas, esta ficha se limita a documentar los metadatos verificables del repositorio y a senalar explicitamente los datos que faltan. No es posible confirmar que el modelo sea funcional, que los pesos esten subidos o que exista una arquitectura definida; la ausencia de pipeline declarado y de idiomas soportados impide cualquier evaluacion de idoneidad.
 
@@ -34,7 +34,7 @@ Tampoco hay referencia a innovaciones tecnicas como decodificacion especulativa,
 - No hay informacion sobre uso en agentes o razonamiento multi-paso.
 - No hay informacion sobre capacidades multilingues.
 - No hay informacion sobre modos especiales (thinking mode, vision, audio, etc.).
-- No se ha declarado pipeline en HuggingFace, por lo que ni siquiera se confirma la tarea principal del modelo.
+- No se ha declarado pipeline en Hugging Face, por lo que ni siquiera se confirma la tarea principal del modelo.
 
 ## Casos de uso
 
@@ -65,7 +65,7 @@ No es posible establecer una comparativa fiable sin conocer el tamano, la arquit
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| NEXORA1 (NEXALIS) | no disponible | no disponible | MIT | Repositorio HuggingFace sin descargas ni likes |
+| NEXORA1 (NEXALIS) | no disponible | no disponible | MIT | Repositorio Hugging Face sin descargas ni likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 No se identifica un modelo comparable de la misma categoria porque se desconoce la categoria del modelo.
@@ -82,5 +82,5 @@ No se identifica un modelo comparable de la misma categoria porque se desconoce 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NEXALIS/NEXORA1
+- Repositorio Hugging Face: https://huggingface.co/NEXALIS/NEXORA1
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

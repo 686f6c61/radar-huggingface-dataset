@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 2,5 GB en precision FP16/BF16 para el modelo de ~1,23 mil millones de parametros; con cuantizacion a 4 bits, podria reducirse a ~0,7-1 GB, aunque no se documentan cuantizaciones oficiales.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, como NVIDIA RTX 3060, RTX 4060, GTX 1660 Super, o GPUs de datacenter como T4 o A10.
 - Compatible con GPU de consumo: si, el modelo cabe comodamente en GPUs de gama media y baja; tambien es viable en CPU para inferencia lenta.
-- Opciones de despliegue: compatible con la libreria transformers de HuggingFace (pip install transformers), y potencialmente con vLLM, llama.cpp, Ollama y Text Generation Inference (TGI), aunque no se documentan configuraciones especificas.
+- Opciones de despliegue: compatible con la libreria transformers de Hugging Face (pip install transformers), y potencialmente con vLLM, llama.cpp, Ollama y Text Generation Inference (TGI), aunque no se documentan configuraciones especificas.
 - Latencia y throughput: no disponibles en la informacion proporcionada; para un modelo de ~1B, la latencia tipica en GPU moderna es de decenas de milisegundos por token.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jlsrls/em1b-ctrl-s1
+- Repositorio Hugging Face: https://huggingface.co/jlsrls/em1b-ctrl-s1
 - Modelo base (unsloth/Llama-3.2-1B-Instruct): https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/rt2ylb82
 - Libreria TRL (framework de entrenamiento): https://github.com/huggingface/trl

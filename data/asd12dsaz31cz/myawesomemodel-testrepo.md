@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario ASD12DSAZ31CZ bajo licencia MIT. El propio identificador incluye el sufijo "TestRepo", el repositorio registra 0 descargas y 0 "likes", y su tamano declarado es de 0,0 GB, lo que apunta a un repositorio de prueba sin pesos reales publicados. La fecha de creacion y actualizacion indicada (17 de septiembre de 2026) resulta ademas anomala respecto al calendario habitual de publicaciones.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario ASD12DSAZ31CZ bajo licencia MIT. El propio identificador incluye el sufijo "TestRepo", el repositorio registra 0 descargas y 0 "likes", y su tamano declarado es de 0,0 GB, lo que apunta a un repositorio de prueba sin pesos reales publicados. La fecha de creacion y actualizacion indicada (17 de septiembre de 2026) resulta ademas anomala respecto al calendario habitual de publicaciones.
 
-Existe una contradiccion relevante entre los metadatos y la model card. Las etiquetas de HuggingFace describen un modelo BERT orientado a "feature-extraction" (extraccion de representaciones), mientras que el README describe un modelo generativo de razonamiento con modo de pensamiento, soporte de function calling, plantillas de subida de ficheros y busqueda web. No es posible conciliar ambas descripciones con la informacion disponible.
+Existe una contradiccion relevante entre los metadatos y la model card. Las etiquetas de Hugging Face describen un modelo BERT orientado a "feature-extraction" (extraccion de representaciones), mientras que el README describe un modelo generativo de razonamiento con modo de pensamiento, soporte de function calling, plantillas de subida de ficheros y busqueda web. No es posible conciliar ambas descripciones con la informacion disponible.
 
 La model card afirma una mejora en tareas de razonamiento, citando un incremento de precision del 70 % al 87,5 % en AIME 2025 y un aumento del consumo medio de tokens por pregunta de 12K a 23K. Tambien incluye una tabla de benchmarks con resultados para "Model1", "Model2", "Model1-v2" y "MyAwesomeModel". Ninguno de estos datos viene acompanado de metodologia, version del conjunto de evaluacion ni enlaces verificables, por lo que deben tratarse como no confirmados.
 
@@ -23,7 +23,7 @@ La model card afirma una mejora en tareas de razonamiento, citando un incremento
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura. Las etiquetas de HuggingFace apuntan a BERT y a un pipeline de "feature-extraction", mientras que la model card describe capacidades de generacion, razonamiento, function calling y "thinking mode". Esta discrepancia impide determinar si el modelo es un transformer encoder, un decoder generativo o un modelo hibrido. Tampoco se especifica numero de capas, dimension oculta, numero de cabezas de atencion ni mecanismos de atencion alternativos (lineal, decodificacion especulativa, etc.).
+No se dispone de informacion verificable sobre la arquitectura. Las etiquetas de Hugging Face apuntan a BERT y a un pipeline de "feature-extraction", mientras que la model card describe capacidades de generacion, razonamiento, function calling y "thinking mode". Esta discrepancia impide determinar si el modelo es un transformer encoder, un decoder generativo o un modelo hibrido. Tampoco se especifica numero de capas, dimension oculta, numero de cabezas de atencion ni mecanismos de atencion alternativos (lineal, decodificacion especulativa, etc.).
 
 Respecto al entrenamiento, la model card menciona de forma generica "increased computational resources" y "algorithmic optimization mechanisms during post-training", sin cifras de tokens de entrenamiento, composicion del dataset, ni detalle sobre tecnicas de alineacion como RLHF, DPO o RLVR. Se cita que la version actual emplea mas profundidad de razonamiento (23K tokens medios por pregunta frente a 12K en la version previa), lo que sugiere un modelo con fase de pensamiento extendido, pero no se aportan detalles de implementacion. El repositorio no incluye pesos, configuracion ni tokenizer, por lo que no es posible auditar la arquitectura.
 
@@ -107,7 +107,7 @@ No disponible. La model card compara contra entradas genericas ("Model1", "Model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASD12DSAZ31CZ/MyAwesomeModel-TestRepo
-- Model card del autor: incluida en el propio repositorio de HuggingFace (seccion README).
+- Hugging Face: https://huggingface.co/ASD12DSAZ31CZ/MyAwesomeModel-TestRepo
+- Model card del autor: incluida en el propio repositorio de Hugging Face (seccion README).
 - Paper, blog, repositorio de codigo o demo: no disponible. La model card menciona un "official website", un "code repository" y una plataforma de API, pero no incluye enlaces.
 - Resultados de busqueda web: no relevantes para este modelo (contenido no relacionado).

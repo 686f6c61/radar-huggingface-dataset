@@ -80,10 +80,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de comparación dire
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (ckpt 3500) | ~3,09 B | 32.768 nativo (entrenado a 16.384) | No declarada | HuggingFace, 0 descargas | Checkpoint parcial (1,87 de 2 épocas) |
-| Qwen/Qwen2.5-3B-Instruct | ~3,09 B | 32.768 (131.072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base; sin refuerzo específico de razonamiento matemático |
-| meta-llama/Llama-3.2-3B-Instruct | ~3,2 B | 131.072 | Llama 3.2 Community License | HuggingFace, requiere aceptación | Contexto mayor; licencia con restricciones para >700 M usuarios |
-| microsoft/Phi-3.5-mini-instruct | ~3,8 B | 131.072 | MIT | HuggingFace | Ligeramente mayor; entrenado con foco fuerte en razonamiento |
+| Este modelo (ckpt 3500) | ~3,09 B | 32.768 nativo (entrenado a 16.384) | No declarada | Hugging Face, 0 descargas | Checkpoint parcial (1,87 de 2 épocas) |
+| Qwen/Qwen2.5-3B-Instruct | ~3,09 B | 32.768 (131.072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base; sin refuerzo específico de razonamiento matemático |
+| meta-llama/Llama-3.2-3B-Instruct | ~3,2 B | 131.072 | Llama 3.2 Community License | Hugging Face, requiere aceptación | Contexto mayor; licencia con restricciones para >700 M usuarios |
+| microsoft/Phi-3.5-mini-instruct | ~3,8 B | 131.072 | MIT | Hugging Face | Ligeramente mayor; entrenado con foco fuerte en razonamiento |
 
 No hay datos públicos que permitan comparar los benchmarks de este checkpoint con los de las alternativas en las mismas condiciones de evaluación (8 muestras, temperatura 0,6, 32k de generación). Cualquier comparación numérica con Llama-3.2-3B o Phi-3.5-mini requeriría reevaluar todos los modelos con el mismo harness.
 
@@ -102,8 +102,8 @@ No hay datos públicos que permitan comparar los benchmarks de este checkpoint c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sadmanvt/Qwen2.5-3B-Instruct-Random15K-FullSFT-ckpt3500
+- Modelo en Hugging Face: https://huggingface.co/sadmanvt/Qwen2.5-3B-Instruct-Random15K-FullSFT-ckpt3500
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de Qwen2.5 (código y documentación): https://github.com/QwenLM/Qwen2.5
 - Informe técnico de Qwen2.5: https://arxiv.org/abs/2412.15115
-- Dataset AceReason-1.1-SFT (referenciado por el autor; disponible en HuggingFace): no se proporciona enlace directo en la información disponible
+- Dataset AceReason-1.1-SFT (referenciado por el autor; disponible en Hugging Face): no se proporciona enlace directo en la información disponible

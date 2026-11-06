@@ -78,9 +78,9 @@ Las mediciones se realizaron en un Mac Studio M3 Ultra (GPU de 80 núcleos, 512 
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ingot-XXII-27B-MLX-2bit | 27,36 B | no disponible | 2 bits ternarios (MLX) | no disponible | HuggingFace (MLX) |
-| Ingot-XXII-27B-Q2 (gemelo GGUF) | 27,36 B | no disponible | 2 bits ternarios (GGUF) | no disponible | HuggingFace + fork llama.cpp |
-| Prism ML Ternary-Bonsai-2-27B-mlx-2bit (base) | 27 B (aprox.) | no disponible | 2 bits ternarios (MLX) | no disponible | HuggingFace |
+| Ingot-XXII-27B-MLX-2bit | 27,36 B | no disponible | 2 bits ternarios (MLX) | no disponible | Hugging Face (MLX) |
+| Ingot-XXII-27B-Q2 (gemelo GGUF) | 27,36 B | no disponible | 2 bits ternarios (GGUF) | no disponible | Hugging Face + fork llama.cpp |
+| Prism ML Ternary-Bonsai-2-27B-mlx-2bit (base) | 27 B (aprox.) | no disponible | 2 bits ternarios (MLX) | no disponible | Hugging Face |
 | Qwen3.8-27B (teacher, BF16) | 27 B (aprox.) | no disponible | BF16 | no disponible | no disponible en la información |
 
 La comparativa se limita a los modelos citados en la documentación; no se dispone de datos de benchmarks estándar ni de licencias para establecer una comparación cuantitativa más amplia.
@@ -99,7 +99,7 @@ La comparativa se limita a los modelos citados en la documentación; no se dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dendriteholdings/Ingot-XXII-27B-MLX-2bit
+- Hugging Face: https://huggingface.co/dendriteholdings/Ingot-XXII-27B-MLX-2bit
 - Modelo base (MLX): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
 - Modelo base (GGUF): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Gemelo GGUF de la submission: https://huggingface.co/dendriteholdings/Ingot-XXII-27B-Q2

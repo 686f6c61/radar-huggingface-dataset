@@ -90,7 +90,7 @@ La comparativa se limita a variantes del mismo modelo base o de la misma familia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ailexleon/Artemis-31B-v1.2-mlx-6Bit
+- Modelo en Hugging Face: https://huggingface.co/ailexleon/Artemis-31B-v1.2-mlx-6Bit
 - Modelo base: https://huggingface.co/TheDrummer/Artemis-31B-v1.2
 - Variante de 4 bits del mismo autor: https://huggingface.co/ailexleon/Artemis-31B-v1.2-mlx-4Bit
 - Variante v1 en MLX 6 bits: https://huggingface.co/ailexleon/Artemis-31B-v1-mlx-6Bit

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sdgsa3/nhfftj-cell` alojado en HuggingFace no contiene un modelo de inteligencia artificial. La model card publicada corresponde a la pagina de presentacion personal de un ingeniero de infraestructura llamado Mateo Silva, con informacion sobre su trayectoria profesional, proyectos de codigo abierto, herramientas que utiliza y aficiones. No se describe ninguna arquitectura de red neuronal, ningun conjunto de pesos, ningun proceso de entrenamiento ni ningun dato relacionado con aprendizaje automatico.
+El repositorio `sdgsa3/nhfftj-cell` alojado en Hugging Face no contiene un modelo de inteligencia artificial. La model card publicada corresponde a la pagina de presentacion personal de un ingeniero de infraestructura llamado Mateo Silva, con informacion sobre su trayectoria profesional, proyectos de codigo abierto, herramientas que utiliza y aficiones. No se describe ninguna arquitectura de red neuronal, ningun conjunto de pesos, ningun proceso de entrenamiento ni ningun dato relacionado con aprendizaje automatico.
 
 El identificador del repositorio sugiere un nombre generico y aleatorio, lo que junto con la ausencia de descargas, likes, licencia, idiomas y pipeline, apunta a un repositorio creado de forma automatica o de prueba, sin contenido funcional como modelo. La fecha de creacion y actualizacion (noviembre de 2026) y la falta de cualquier metadato tecnico refuerzan esta interpretacion.
 
@@ -65,5 +65,5 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sdgsa3/nhfftj-cell
+- Repositorio en Hugging Face: https://huggingface.co/sdgsa3/nhfftj-cell
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este modelo.

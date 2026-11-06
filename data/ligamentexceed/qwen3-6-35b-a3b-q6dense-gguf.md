@@ -83,7 +83,7 @@ No se dispone de comparativas con modelos de otros fabricantes en la misma categ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ligamentexceed/Qwen3.6-35B-A3B-Q6dense-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ligamentexceed/Qwen3.6-35B-A3B-Q6dense-GGUF
 - Perfil del autor: https://huggingface.co/ligamentexceed
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - GGUF y matriz de importancia de origen: https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF

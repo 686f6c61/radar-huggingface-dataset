@@ -106,7 +106,7 @@ No se dispone de una comparación cuantitativa de rendimiento entre estos modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DannieAI/adtc-agri-sft-qwen3-0.6B-GGUF-Q4_K_M
+- Modelo en Hugging Face: https://huggingface.co/DannieAI/adtc-agri-sft-qwen3-0.6B-GGUF-Q4_K_M
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Referencia alternativa usada en la model card (identificador distinto): https://huggingface.co/EYEDOL/adtc-agri-sft-qwen3-0.6b
 - Dataset de origen citado en la model card: `agriculture_qa_final_cleaned.csv` (Kaggle), sin URL directa en la información proporcionada

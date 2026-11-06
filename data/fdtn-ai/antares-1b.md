@@ -4,7 +4,7 @@
 
 Antares-1B es un modelo de lenguaje de 1.837 millones de parámetros desarrollado por fdtn-ai (iniciativa vinculada a Cisco) para la localización agéntica de vulnerabilidades en código fuente. Se basa en el modelo IBM Granite 4.0-1B y ha sido ajustado mediante un pipeline de dos etapas que combina supervisión fina sobre razonamiento de ciberseguridad y exploración de repositorios, seguida de aprendizaje por refuerzo con recompensas verificables sobre repositorios vulnerables. Su objetivo principal es detectar y localizar fallos de seguridad de forma eficiente, con un coste computacional muy inferior al de modelos mucho más grandes.
 
-El modelo está diseñado para tareas conversacionales y agénticas, con especial énfasis en integraciones de terminal y agentes de seguridad. Su tamaño compacto lo hace adecuado para despliegues en el borde, entornos on-premise o con recursos limitados. Según el blog de Cisco, los modelos Antares (350M y 1B) superan en la tarea de localización de vulnerabilidades a muchos modelos cerrados y abiertos de mayor tamaño, a una fracción del coste. El acceso al modelo está restringido en HuggingFace y requiere aceptar condiciones previas.
+El modelo está diseñado para tareas conversacionales y agénticas, con especial énfasis en integraciones de terminal y agentes de seguridad. Su tamaño compacto lo hace adecuado para despliegues en el borde, entornos on-premise o con recursos limitados. Según el blog de Cisco, los modelos Antares (350M y 1B) superan en la tarea de localización de vulnerabilidades a muchos modelos cerrados y abiertos de mayor tamaño, a una fracción del coste. El acceso al modelo está restringido en Hugging Face y requiere aceptar condiciones previas.
 
 ## Especificaciones técnicas
 
@@ -50,7 +50,7 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 - VRAM estimada para inferencia: al tratarse de un modelo de ~1,8B parámetros, una cuantización de 4 bits requeriría aproximadamente 1-2 GB de VRAM; en FP16, alrededor de 3,7 GB.
 - GPU recomendadas: tarjetas de consumo como RTX 3060 (12 GB) o superiores son suficientes para inferencia en FP16; para cuantizaciones más agresivas, incluso GPUs con 4-6 GB pueden ser viables.
 - Compatibilidad con hardware de borde: su tamaño compacto permite ejecución en dispositivos con poca memoria, como Jetson o CPUs con aceleración AVX.
-- Opciones de despliegue: compatible con el ecosistema HuggingFace Transformers, y potencialmente con vLLM, llama.cpp u Ollama, aunque no se confirma oficialmente.
+- Opciones de despliegue: compatible con el ecosistema Hugging Face Transformers, y potencialmente con vLLM, llama.cpp u Ollama, aunque no se confirma oficialmente.
 - Latencia y throughput: no disponible, pero se espera baja latencia en GPUs modernas dado el tamaño reducido.
 
 ## Comparativa con modelos similares
@@ -59,7 +59,7 @@ No se dispone de comparativas directas con otros modelos de localización de vul
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace; los usuarios deben aceptar condiciones adicionales antes de su descarga.
+- Acceso restringido: el modelo es gated en Hugging Face; los usuarios deben aceptar condiciones adicionales antes de su descarga.
 - Idioma limitado: solo soporta inglés, lo que restringe su uso en entornos multilingües.
 - Sesgos potenciales: al estar entrenado principalmente en datos de ciberseguridad, puede mostrar sesgos hacia patrones de código de ciertos lenguajes o frameworks.
 - Riesgo de alucinación: como todo modelo de lenguaje, puede generar falsos positivos o negativos en la detección de vulnerabilidades; se recomienda validación humana.
@@ -68,7 +68,7 @@ No se dispone de comparativas directas con otros modelos de localización de vul
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/fdtn-ai/antares-1b)
+- [Modelo en Hugging Face](https://huggingface.co/fdtn-ai/antares-1b)
 - [Blog de Cisco: Introducing Antares](https://blogs.cisco.com/ai/introducing-antares-the-most-efficient-open-weight-ai-models-for-vulnerability-localization)
 - [Reporte técnico (PDF)](https://cisco-foundation-ai.github.io/antares/technical-report.pdf)
 - [Ficha en AIAny](https://aiany.app/item/fdtn-ai-antares-1b)

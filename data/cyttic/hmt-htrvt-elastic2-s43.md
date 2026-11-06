@@ -79,7 +79,7 @@ No disponible. La información proporcionada no incluye otros modelos HTR compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-elastic2-s43
+- Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-elastic2-s43
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados detallados: `results.json` dentro del repositorio del modelo (no se dispone de URL directa en la información proporcionada)
 - Paper, blog o repositorio del estudio `htr-metrics-transfer`: no disponible

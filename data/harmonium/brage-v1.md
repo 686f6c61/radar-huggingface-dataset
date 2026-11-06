@@ -4,9 +4,9 @@
 
 Brage-v1 es un modelo de reconocimiento automatico del habla (ASR) desarrollado por Harmonium, especializado en danes (da). Se trata de un ajuste fino (finetune) del conocido Whisper large-v3 de OpenAI, orientado especificamente al reconocimiento de voz en danes en escenarios tanto de lectura en voz alta como de conversacion espontanea. El modelo resuelve el problema de la transcripcion de audio en danes con una calidad mas alta que la del modelo base generico, que no esta optimizado para este idioma.
 
-Con 1.543.490.560 parametros (aproximadamente 1,54 mil millones), brage-v1 mantiene la arquitectura transformer encoder-decoder caracteristica de la familia Whisper, con una ventana de procesamiento de audio de 30 segundos por fragmento. El modelo esta publicado en HuggingFace bajo la libreria transformers y en formato safetensors, con un tamano de repositorio de 3,3 GB.
+Con 1.543.490.560 parametros (aproximadamente 1,54 mil millones), brage-v1 mantiene la arquitectura transformer encoder-decoder caracteristica de la familia Whisper, con una ventana de procesamiento de audio de 30 segundos por fragmento. El modelo esta publicado en Hugging Face bajo la libreria transformers y en formato safetensors, con un tamano de repositorio de 3,3 GB.
 
-Su relevancia radica en que ofrece una alternativa afinada y especifica para el danes, un idioma con menos recursos que el ingles dentro del ecosistema ASR. El acceso al modelo esta restringido (gated) y requiere aceptar las condiciones de uso en HuggingFace. La licencia es una licencia propia denominada brage-v1-license.
+Su relevancia radica en que ofrece una alternativa afinada y especifica para el danes, un idioma con menos recursos que el ingles dentro del ecosistema ASR. El acceso al modelo esta restringido (gated) y requiere aceptar las condiciones de uso en Hugging Face. La licencia es una licencia propia denominada brage-v1-license.
 
 ## Especificaciones tecnicas
 
@@ -75,14 +75,14 @@ No se dispone de datos de rendimiento de modelos alternativos en la informacion 
 
 | Modelo | Parametros | Contexto/ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Harmonium/brage-v1 | 1,54 mil millones | Audio en fragmentos de 30 s | brage-v1-license (propia, acceso gated) | HuggingFace (gated) |
-| openai/whisper-large-v3 (modelo base) | 1,55 mil millones | Audio en fragmentos de 30 s | Apache 2.0 (modelo base) | HuggingFace (abierto) |
+| Harmonium/brage-v1 | 1,54 mil millones | Audio en fragmentos de 30 s | brage-v1-license (propia, acceso gated) | Hugging Face (gated) |
+| openai/whisper-large-v3 (modelo base) | 1,55 mil millones | Audio en fragmentos de 30 s | Apache 2.0 (modelo base) | Hugging Face (abierto) |
 | Alternativas ASR en danes (p. ej. modelos de alexandra inst) | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
 - Modelo monoidioma: solo se declara soporte para danes (da); no esta pensado para otros idiomas.
-- Acceso restringido: el modelo esta en modo gated en HuggingFace y requiere aceptar condiciones de uso, lo que puede limitar su adopcion automatica en pipelines.
+- Acceso restringido: el modelo esta en modo gated en Hugging Face y requiere aceptar condiciones de uso, lo que puede limitar su adopcion automatica en pipelines.
 - Licencia propia (brage-v1-license): al no ser una licencia estandar (Apache 2.0, MIT, etc.), es imprescindible revisar las condiciones exactas antes de un uso comercial.
 - Resultados no verificados: los valores de WER y CER proceden de la model card del autor y no han sido verificados de forma independiente.
 - Sesgos: no se documentan analisis de sesgos (acento, edad, genero, procedencia) en la informacion disponible; en ASR es habitual que el rendimiento varie con el acento o la calidad de la grabacion.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento de modelos alternativos en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Harmonium/brage-v1
+- Modelo en Hugging Face: https://huggingface.co/Harmonium/brage-v1
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Dataset CoRal-v3: https://huggingface.co/datasets/CoRal-project/coral-v3
 - Dataset FTSpeech: https://huggingface.co/datasets/alexandra inst/ftspeech

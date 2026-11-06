@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario ASDCXZ12E bajo licencia MIT. A pesar del nombre y de la model card adjunta, todo apunta a que se trata de un repositorio de prueba (test repo) y no de un modelo entrenado y distribuido de forma funcional: el tamano del repositorio es de 0,0 GB, no contiene pesos publicados, registra 0 descargas y 0 likes, y fue creado y actualizado con apenas ocho segundos de diferencia el 10 de septiembre de 2026.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario ASDCXZ12E bajo licencia MIT. A pesar del nombre y de la model card adjunta, todo apunta a que se trata de un repositorio de prueba (test repo) y no de un modelo entrenado y distribuido de forma funcional: el tamano del repositorio es de 0,0 GB, no contiene pesos publicados, registra 0 descargas y 0 likes, y fue creado y actualizado con apenas ocho segundos de diferencia el 10 de septiembre de 2026.
 
 La model card describe un modelo orientado al razonamiento y la generacion, con mejoras en tareas de matematicas, programacion y logica, soporte de function calling y una supuesta mejora en AIME 2025 del 70% al 87,5% de precision. Sin embargo, estas afirmaciones son incompatibles con los metadatos tecnicos del repo, que lo etiquetan como `bert` y con pipeline `feature-extraction`, es decir, un modelo de extraccion de caracteristicas (tipo encoder) y no un modelo generativo de razonamiento. Ademas, la propia model card incluye referencias a "MyAwesomeModel-Small" y a un tokenizer compartido, lo que sugiere una plantilla generica sin datos verificables.
 
@@ -12,7 +12,7 @@ Por todo ello, esta ficha debe interpretarse como una evaluacion de la informaci
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (tag de HuggingFace: `bert`) |
+| Arquitectura | no disponible (tag de Hugging Face: `bert`) |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica / no disponible |
 | Longitud de contexto | no disponible |
@@ -119,7 +119,7 @@ La comparativa con modelos generativos de razonamiento no es viable con la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASDCXZ12E/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/ASDCXZ12E/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible (la model card menciona "our code repository" sin enlace)

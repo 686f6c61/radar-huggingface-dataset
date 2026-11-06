@@ -83,7 +83,7 @@ Keural destaca frente a Mixtral-8x7B por su enfoque nativo en coreano y su menor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hossain0909/keural-dpo-final
+- Modelo en Hugging Face: https://huggingface.co/hossain0909/keural-dpo-final
 - Modelo base (SFT): no disponible como URL directa en la informacion proporcionada (referenciado como mkd-hossain/keural-sft-18k)
 - Datasets de entrenamiento: no disponible como URLs directas (referenciados como mkd-chanwoo/keural-SFT, hh_rlhf, ultrafeedback_binarized, orca_dpo_paris_ko, aihub_71760, aihub_71748, multifaceted_collection_dpo y keural-dpo-raw)
 - Paper, blog o demo: no disponible

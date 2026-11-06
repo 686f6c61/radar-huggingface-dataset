@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `qwen3-vl-8b-instruct-32-64-Diya-Extract-Purchase-Agreement-v104` es un fine-tuning publicado por el usuario `certo-ventures` en HuggingFace. El nombre del repositorio indica que se basa en el modelo Qwen3-VL 8B Instruct, con una posible ventana de contexto de 32K o 64K tokens, y que está orientado a la extracción de información de acuerdos de compra (purchase agreements).
+El modelo `qwen3-vl-8b-instruct-32-64-Diya-Extract-Purchase-Agreement-v104` es un fine-tuning publicado por el usuario `certo-ventures` en Hugging Face. El nombre del repositorio indica que se basa en el modelo Qwen3-VL 8B Instruct, con una posible ventana de contexto de 32K o 64K tokens, y que está orientado a la extracción de información de acuerdos de compra (purchase agreements).
 
-Sin embargo, la model card es una plantilla autogenerada que no contiene información técnica real. El repositorio pesa 1.8 GB, utiliza safetensors y es compatible con los Inference Endpoints de HuggingFace. No se han publicado descargas, likes, licencia ni idiomas soportados.
+Sin embargo, la model card es una plantilla autogenerada que no contiene información técnica real. El repositorio pesa 1.8 GB, utiliza safetensors y es compatible con los Inference Endpoints de Hugging Face. No se han publicado descargas, likes, licencia ni idiomas soportados.
 
 Este modelo forma parte de una serie de repositorios de `certo-ventures` con nombres similares (como `qwen3-vl-8b-instruct-32-64-Diya-Extract-Wire-Instructions` y `qwen3-vl-8b-instruct-32-64-Candor-Extract-dev`), lo que sugiere una familia de modelos especializados en extracción de información de documentos legales o financieros, aunque no hay documentación pública que lo confirme.
 
@@ -23,7 +23,7 @@ Este modelo forma parte de una serie de repositorios de `certo-ventures` con nom
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura ni el proceso de entrenamiento. La model card es una plantilla generada automáticamente por HuggingFace y todos los campos aparecen como `[More Information Needed]`. El unico dato disponible es que el modelo se carga con la librería `transformers`.
+No se ha publicado información sobre la arquitectura ni el proceso de entrenamiento. La model card es una plantilla generada automáticamente por Hugging Face y todos los campos aparecen como `[More Information Needed]`. El unico dato disponible es que el modelo se carga con la librería `transformers`.
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 No se ha publicado información sobre requisitos de hardware. El tamaño del repositorio (1.8 GB) es menor de lo esperable para un modelo de 8B parámetros en precisión completa, pero sin datos sobre cuantización no es posible estimar la VRAM necesaria.
 
 - No se dispone de datos de latencia ni throughput.
-- El modelo tiene el tag `endpoints_compatible`, lo que indica compatibilidad con los Inference Endpoints de HuggingFace.
+- El modelo tiene el tag `endpoints_compatible`, lo que indica compatibilidad con los Inference Endpoints de Hugging Face.
 - No se mencionan otras herramientas de despliegue como vLLM, llama.cpp u Ollama.
 
 ## Comparativa con modelos similares
@@ -60,7 +60,7 @@ No se dispone de datos suficientes para realizar una comparativa. Los modelos he
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/certo-ventures/qwen3-vl-8b-instruct-32-64-Diya-Extract-Purchase-Agreement-v104
+- Hugging Face: https://huggingface.co/certo-ventures/qwen3-vl-8b-instruct-32-64-Diya-Extract-Purchase-Agreement-v104
 - Modelo hermano (Wire Instructions): https://huggingface.co/certo-ventures/qwen3-vl-8b-instruct-32-64-Diya-Extract-Wire-Instructions
 - Modelo hermano (Candor Extract dev): https://huggingface.co/certo-ventures/qwen3-vl-8b-instruct-32-64-Candor-Extract-dev
 - Certo Software (posible desarrolladora): https://www.certosoftware.com/

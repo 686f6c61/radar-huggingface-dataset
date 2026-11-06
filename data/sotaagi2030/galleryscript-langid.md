@@ -71,4 +71,4 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace: SOTAagi2030/GalleryScript-LangID](https://huggingface.co/SOTAagi2030/GalleryScript-LangID)
+- [Hugging Face: SOTAagi2030/GalleryScript-LangID](https://huggingface.co/SOTAagi2030/GalleryScript-LangID)

@@ -80,8 +80,8 @@ Comparación directa en las mismas escenas de PickPlace: el Dream-VLA original o
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jocasta-diff-VLA | 7B (base) + LoRA y módulos de acción | no disponible | 64,8% global en 8 tareas robosuite/Panda (desarrollo) | Apache 2.0 | HuggingFace + repo de código |
-| Dream-VLA-7B (base) | 7B | no disponible | 0/64 en las mismas escenas de PickPlace | no disponible en la información proporcionada | HuggingFace (Dream-org) |
+| Jocasta-diff-VLA | 7B (base) + LoRA y módulos de acción | no disponible | 64,8% global en 8 tareas robosuite/Panda (desarrollo) | Apache 2.0 | Hugging Face + repo de código |
+| Dream-VLA-7B (base) | 7B | no disponible | 0/64 en las mismas escenas de PickPlace | no disponible en la información proporcionada | Hugging Face (Dream-org) |
 | Dream-VLX | no disponible | no disponible | no disponible | no disponible | Repositorio DreamLM/Dream-VLX |
 
 No se dispone de datos de otros VLA comparables (por ejemplo, variantes de OpenVLA u otras políticas de manipulación) en la información proporcionada, por lo que la comparativa se limita al linaje directo del modelo.
@@ -102,7 +102,7 @@ No se dispone de datos de otros VLA comparables (por ejemplo, variantes de OpenV
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotLearningLab/Jocasta-diff-VLA
+- Modelo en Hugging Face: https://huggingface.co/RobotLearningLab/Jocasta-diff-VLA
 - Código y loader: https://github.com/alanrbtx/Diffusion-VLA-tuning
 - Modelo base: https://huggingface.co/Dream-org/Dream-VLA-7B
 - Repositorio upstream Dream-VLX: https://github.com/DreamLM/Dream-VLX

@@ -101,7 +101,7 @@ El plugin no se compara con `armiger-swarm-survival`, `armiger-swarm-priors`, `a
 
 ## Enlaces
 
-- Repositorio HuggingFace del plugin: https://huggingface.co/NorviTech/armiger-audio-guard
+- Repositorio Hugging Face del plugin: https://huggingface.co/NorviTech/armiger-audio-guard
 - Armiger Ultra (incluye el plugin preempaquetado): https://huggingface.co/NorviTech/armiger-ultra
 - Armiger (variante CPU): https://huggingface.co/NorviTech/armiger
 - Plugin Swarm Survival: https://huggingface.co/NorviTech/armiger-swarm-survival

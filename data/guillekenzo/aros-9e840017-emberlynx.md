@@ -92,7 +92,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de ninguno de los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guillekenzo/aros-9e840017-EmberLynx
+- Modelo en Hugging Face: https://huggingface.co/guillekenzo/aros-9e840017-EmberLynx
 - Perfil del autor: https://huggingface.co/guillekenzo
 - Adaptador hermano `aros-00ae1a96-Lynx`: https://huggingface.co/guillekenzo/aros-00ae1a96-Lynx
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw

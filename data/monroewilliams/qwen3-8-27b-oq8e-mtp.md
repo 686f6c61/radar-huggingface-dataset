@@ -56,11 +56,11 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 - No se dispone de información sobre la licencia, por lo que no se puede garantizar su uso comercial o la redistribución.
 - El nombre del modelo es confuso: indica 27B pero los parámetros reales son 8,18B, lo que puede llevar a errores de interpretación.
 - No se especifican los idiomas soportados, aunque los modelos Qwen suelen ser multilingües; sin confirmación, no se debe asumir.
-- Al ser un formato MLX, no es compatible directamente con otras librerías como Transformers de HuggingFace sin conversión previa.
+- Al ser un formato MLX, no es compatible directamente con otras librerías como Transformers de Hugging Face sin conversión previa.
 - El repositorio tiene 0 descargas y 0 likes, lo que sugiere que no ha sido validado por la comunidad.
 - No se han publicado benchmarks ni evaluaciones de calidad, por lo que su rendimiento real es desconocido.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/monroewilliams/Qwen3.8-27B-oQ8e-mtp
+- Repositorio Hugging Face: https://huggingface.co/monroewilliams/Qwen3.8-27B-oQ8e-mtp
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx

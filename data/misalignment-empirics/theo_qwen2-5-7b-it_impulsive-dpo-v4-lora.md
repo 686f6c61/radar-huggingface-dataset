@@ -86,7 +86,7 @@ No se dispone de comparaciones cuantitativas de rendimiento entre estas variante
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-dpo-v4-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-dpo-v4-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/maius/OpenCharacterTraining-data
 - Variante de la receta anterior (v3): https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-dpo-v3-lora

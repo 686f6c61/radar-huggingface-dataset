@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.5-9B-DFlash | Borrador de difusion por bloques para decodificacion especulativa | 1,29B | No disponible | MIT | Pesos en HuggingFace (safetensors) |
-| Ornith-1.5-9B | Modelo objetivo, transformer denso | 9B (aproximado) | No disponible | No disponible en la informacion proporcionada | Pesos en HuggingFace |
+| Ornith-1.5-9B-DFlash | Borrador de difusion por bloques para decodificacion especulativa | 1,29B | No disponible | MIT | Pesos en Hugging Face (safetensors) |
+| Ornith-1.5-9B | Modelo objetivo, transformer denso | 9B (aproximado) | No disponible | No disponible en la informacion proporcionada | Pesos en Hugging Face |
 | EAGLE-3 | Borrador de decodificacion especulativa (cabezas autoregresivas sobre features) | No disponible | No aplica | No disponible | Implementaciones en frameworks de inferencia |
 | Medusa | Borrador de decodificacion especulativa (multiples cabezas de decodificacion) | No disponible | No aplica | No disponible | Implementaciones en frameworks de inferencia |
 | Modelo borrador denso convencional | Decodificacion especulativa clasica (draft autoregresivo pequeno) | Tipicamente 0,5B-1,5B | Depende del borrador | Depende del borrador | Amplia |
@@ -77,7 +77,7 @@ La informacion disponible no permite comparar tasas de aceptacion, speedup ni ca
 ## Limitaciones y advertencias
 
 - No es un modelo autonomo: el checkpoint DFlash no genera respuestas finales y debe cargarse junto a Ornith-1.5-9B en un runtime con soporte de decodificacion especulativa.
-- Metadatos restrictivos: la model card declara `inference: false`, por lo que no se puede invocar mediante la Inference API estandar de HuggingFace ni con pipelines genericos de texto.
+- Metadatos restrictivos: la model card declara `inference: false`, por lo que no se puede invocar mediante la Inference API estandar de Hugging Face ni con pipelines genericos de texto.
 - Dependencia de versiones: exige Transformers >= 5.8.1, vLLM >= 0.20.2 y SGLang exactamente en 0.5.18, lo que limita su uso en stacks congelados o antiguos.
 - Codigo personalizado: el uso de `custom_code` y `trust_remote_code` implica ejecutar codigo del repositorio, con el riesgo de seguridad asociado en entornos de produccion.
 - Riesgo de alucinacion: recae sobre el modelo objetivo, no sobre el borrador; la verificacion del target preserva la distribucion de salida, pero no elimina los errores facticos de Ornith-1.5-9B.
@@ -89,8 +89,8 @@ La informacion disponible no permite comparar tasas de aceptacion, speedup ni ca
 
 ## Enlaces
 
-- Repositorio HuggingFace de Ornith-1.5-9B-DFlash: https://huggingface.co/ornith-ai/Ornith-1.5-9B-DFlash
-- Repositorio HuggingFace del modelo objetivo Ornith-1.5-9B: https://huggingface.co/ornith-ai/Ornith-1.5-9B
+- Repositorio Hugging Face de Ornith-1.5-9B-DFlash: https://huggingface.co/ornith-ai/Ornith-1.5-9B-DFlash
+- Repositorio Hugging Face del modelo objetivo Ornith-1.5-9B: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Sitio oficial de Ornith AI: https://ornith.ai/
 - Blog de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Repositorio GitHub de Ornith-1: https://github.com/ornith-ai/Ornith-1

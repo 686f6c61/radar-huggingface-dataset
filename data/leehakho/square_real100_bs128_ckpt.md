@@ -81,8 +81,8 @@ No hay curva de validacion, no hay particion de test y no hay comparacion con ch
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `LeeHakHo/square_real100_bs128_ckpt` | No disponible | 16 (acciones), obs. a 84 px | Sin tasa de exito; perdida de accion 0,0048 | MIT | HuggingFace |
-| `LeeHakHo/square_real100_ckpt` (batch 64, mismo autor) | No disponible | 16 (acciones), obs. a 84 px | Sin tasa de exito; particion 90/10 con validacion que repunta tras la epoca 30-100 | MIT | HuggingFace |
+| `LeeHakHo/square_real100_bs128_ckpt` | No disponible | 16 (acciones), obs. a 84 px | Sin tasa de exito; perdida de accion 0,0048 | MIT | Hugging Face |
+| `LeeHakHo/square_real100_ckpt` (batch 64, mismo autor) | No disponible | 16 (acciones), obs. a 84 px | Sin tasa de exito; particion 90/10 con validacion que repunta tras la epoca 30-100 | MIT | Hugging Face |
 | Implementacion de referencia de diffusion policy (robot real) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion mas directa es con el propio estudio a batch 64 del mismo autor, que se diferencia en el batch, en el learning rate (1e-4 frente a 1,4e-4) y, sobre todo, en el uso de una particion 90/10 con validacion. El resto de alternativas de la misma categoria no se pueden comparar con datos porque no se ha proporcionado informacion sobre ellas.
@@ -103,7 +103,7 @@ La comparacion mas directa es con el propio estudio a batch 64 del mismo autor, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeeHakHo/square_real100_bs128_ckpt
+- Modelo en Hugging Face: https://huggingface.co/LeeHakHo/square_real100_bs128_ckpt
 - Dataset de demostraciones: https://huggingface.co/datasets/LeeHakHo/square_real100
 - Estudio a batch 64 con particion 90/10: https://huggingface.co/LeeHakHo/square_real100_ckpt
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos o demos) en la informacion disponible.

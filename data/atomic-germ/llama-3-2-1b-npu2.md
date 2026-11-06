@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Atomic-Germ/Llama-3.2-1B-NPU2 | 1.24B | no disponible | llama3 | Repo publico en HuggingFace |
+| Atomic-Germ/Llama-3.2-1B-NPU2 | 1.24B | no disponible | llama3 | Repo publico en Hugging Face |
 | meta-llama/Llama-3.2-1B-Instruct | 1.24B | 128K (del base) | llama3 | Repo oficial de Meta |
 | Atomic-Germ/Llama-3.1-8B-Instruct-NPU2 | 8B | no disponible | llama3 | Repo del mismo autor, tamano mayor |
 
@@ -79,7 +79,7 @@ La comparacion se limita al modelo base y a otro modelo del mismo autor con dife
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Atomic-Germ/Llama-3.2-1B-NPU2
+- Repositorio Hugging Face del modelo: https://huggingface.co/Atomic-Germ/Llama-3.2-1B-NPU2
 - Modelo base de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Modelo similar del mismo autor (8B): https://huggingface.co/Atomic-Germ/Llama-3.1-8B-Instruct-NPU2
 - Licencia de Meta LLaMA 3: https://ai.meta.com/llama/license/

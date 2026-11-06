@@ -4,13 +4,13 @@
 
 El modelo `sfm_filtered_e2e_alignment-0k_1k_2k_3k_4k_simpleavg_merge` es un modelo de lenguaje generativo creado mediante la fusión de cinco checkpoints de un mismo modelo base, denominado `sfm_filtered_e2e_alignment`, utilizando la técnica de promedio lineal (Linear merge) implementada en la herramienta mergekit. El autor, `yuhengtu-bytedance`, ha publicado este artefacto como parte de una serie de experimentos sobre fusión de pesos en diferentes etapas de entrenamiento, probablemente orientados a estudiar el efecto de combinar pasos intermedios de un proceso de alineación (los nombres de las rutas internas sugieren un pipeline de seguridad y medición, como `Pan_Safety_Better_Measurement`).
 
-El modelo tiene aproximadamente 6,86 mil millones de parámetros, está en formato `safetensors` con precisión `bfloat16` y se identifica con la arquitectura `gpt_neox` según las etiquetas de HuggingFace. No se proporciona información sobre la longitud de contexto, idiomas soportados, licencia ni detalles del entrenamiento original. Su relevancia radica en ser un caso de estudio de fusión de checkpoints, una técnica que busca combinar pesos de diferentes momentos del entrenamiento para mejorar la robustez o el rendimiento sin necesidad de reentrenar. Sin embargo, al carecer de documentación adicional, su utilidad práctica es limitada y debe considerarse como un experimento de investigación.
+El modelo tiene aproximadamente 6,86 mil millones de parámetros, está en formato `safetensors` con precisión `bfloat16` y se identifica con la arquitectura `gpt_neox` según las etiquetas de Hugging Face. No se proporciona información sobre la longitud de contexto, idiomas soportados, licencia ni detalles del entrenamiento original. Su relevancia radica en ser un caso de estudio de fusión de checkpoints, una técnica que busca combinar pesos de diferentes momentos del entrenamiento para mejorar la robustez o el rendimiento sin necesidad de reentrenar. Sin embargo, al carecer de documentación adicional, su utilidad práctica es limitada y debe considerarse como un experimento de investigación.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según etiquetas de HuggingFace) |
+| Arquitectura | GPT-NeoX (según etiquetas de Hugging Face) |
 | Parametros totales | 6.856.253.440 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-0k_1k_2k_3k_4k_simpleavg_merge
+- Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-0k_1k_2k_3k_4k_simpleavg_merge
 - Otros merges del autor: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-2k_3k_4k_merge y https://huggingface.co/yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg
 - Referencia del método Linear: https://arxiv.org/abs/2203.05482
 - Repositorio de mergekit: https://github.com/cg123/mergekit

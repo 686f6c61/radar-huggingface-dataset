@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kaithamb-claude es un adaptador LoRA de tipo DreamBooth para generacion de imagenes texto-a-imagen, publicado por el usuario lloydchristmas1231 en HuggingFace. El adaptador se entrena sobre el modelo base krea/Krea-2-Raw y se muestra funcionando sobre la variante krea/Krea-2-Turbo. Su funcion es inyectar un concepto nuevo, invocado mediante el token `kaithamb`, en el modelo base: no es un modelo autonomo, sino un fichero de pesos que debe cargarse junto al modelo de difusion subyacente para que este pueda generar la entidad aprendida.
+kaithamb-claude es un adaptador LoRA de tipo DreamBooth para generacion de imagenes texto-a-imagen, publicado por el usuario lloydchristmas1231 en Hugging Face. El adaptador se entrena sobre el modelo base krea/Krea-2-Raw y se muestra funcionando sobre la variante krea/Krea-2-Turbo. Su funcion es inyectar un concepto nuevo, invocado mediante el token `kaithamb`, en el modelo base: no es un modelo autonomo, sino un fichero de pesos que debe cargarse junto al modelo de difusion subyacente para que este pueda generar la entidad aprendida.
 
 El repositorio ocupa 1,0 GB y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificacion siempre que se respeten las condiciones de la licencia. La model card es muy escueta: define el prompt de instancia (`kaithamb`), incluye tres ejemplos de generacion y un fragmento de codigo con `Krea2Pipeline` de la libreria diffusers, cargando el LoRA con `load_lora_weights` sobre el checkpoint Turbo con 8 pasos de inferencia y `guidance_scale=0.0`.
 
@@ -93,7 +93,7 @@ Los unicos modelos comparables identificados son otros adaptadores del mismo aut
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lloydchristmas1231/kaithamb-claude
+- Modelo en Hugging Face: https://huggingface.co/lloydchristmas1231/kaithamb-claude
 - Modelo relacionado del mismo autor (kaithamb): https://huggingface.co/lloydchristmas1231/kaithamb/tree/main
 - Modelo relacionado del mismo autor (kaitbaug): https://huggingface.co/lloydchristmas1231/kaitbaug
 - Modelo base declarado: krea/Krea-2-Raw (referenciado en los tags de la model card; sin URL directa en la informacion disponible)

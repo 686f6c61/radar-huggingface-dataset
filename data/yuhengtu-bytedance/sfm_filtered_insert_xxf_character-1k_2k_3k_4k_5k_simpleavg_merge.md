@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfm_filtered_insert_xxf_character-1k_2k_3k_4k_5k_simpleavg_merge` es un modelo de lenguaje generativo publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No es un modelo entrenado desde cero, sino el resultado de una fusion de pesos (*weight averaging*) de cinco checkpoints del mismo run de entrenamiento (`filtered_insert_xxf_character`, pasos global_step1000, 2000, 3000, 4000 y 5000), combinados con el metodo Linear de [mergekit](https://github.com/cg123/mergekit) con peso 1.0 para cada checkpoint, normalizacion activada y salida en bfloat16. El modelo tiene 6.856.253.440 parametros (unos 6,86 mil millones), arquitectura etiquetada como `gpt_neox` y pesos en formato safetensors.
+`sfm_filtered_insert_xxf_character-1k_2k_3k_4k_5k_simpleavg_merge` es un modelo de lenguaje generativo publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No es un modelo entrenado desde cero, sino el resultado de una fusion de pesos (*weight averaging*) de cinco checkpoints del mismo run de entrenamiento (`filtered_insert_xxf_character`, pasos global_step1000, 2000, 3000, 4000 y 5000), combinados con el metodo Linear de [mergekit](https://github.com/cg123/mergekit) con peso 1.0 para cada checkpoint, normalizacion activada y salida en bfloat16. El modelo tiene 6.856.253.440 parametros (unos 6,86 mil millones), arquitectura etiquetada como `gpt_neox` y pesos en formato safetensors.
 
 El interes tecnico del artefacto es doble. Por un lado, ejemplifica una practica habitual en investigacion: promediar checkpoints intermedios de un mismo entrenamiento (una suerte de *model soup* intra-run, referencia arXiv:2203.05482) para intentar reducir el ruido de un unico checkpoint final y mejorar la robustez sin aumentar el coste de inferencia. Por otro, el nombre del run de origen (`Pan_Safety_Better_Measurement`) sugiere que procede de un proyecto de medicion de seguridad, aunque esto es una inferencia a partir de las rutas del YAML y no un dato documentado.
 
@@ -97,7 +97,7 @@ Diferencias clave: frente a las alternativas, este modelo no declara licencia (l
 - Idiomas desconocidos: no se declara ningun idioma soportado, por lo que el comportamiento en castellano no esta garantizado.
 - Riesgo de alucinacion: inherente a cualquier modelo generativo de este tamano y agravado por la falta de evaluaciones y de alineacion documentada.
 - Sesgos desconocidos: al no documentarse el dataset de entrenamiento (solo la ruta interna del run), no es posible auditar la composicion de datos ni los sesgos resultantes.
-- Trazabilidad limitada: el modelo base y los checkpoints fusionados se referencian mediante rutas locales del sistema del autor (`/opt/tiger/...`), no mediante identificadores publicos de HuggingFace. La reproduccion exacta del merge no es posible sin esos checkpoints.
+- Trazabilidad limitada: el modelo base y los checkpoints fusionados se referencian mediante rutas locales del sistema del autor (`/opt/tiger/...`), no mediante identificadores publicos de Hugging Face. La reproduccion exacta del merge no es posible sin esos checkpoints.
 - Procedencia dudosa para produccion: 0 descargas y 0 likes implican ausencia de validacion por parte de la comunidad.
 - Sin cuantizaciones oficiales: no hay GGUF, GPTQ ni AWQ publicados; cualquier despliegue en GPU de consumo exige una conversion propia que puede degradar la calidad.
 - El promedio lineal de checkpoints asume que todos parten del mismo run; si alguno de los checkpoints divergio, la media puede degradar capacidades concretas de forma silenciosa.
@@ -105,7 +105,7 @@ Diferencias clave: frente a las alternativas, este modelo no declara licencia (l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-1k_2k_3k_4k_5k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-1k_2k_3k_4k_5k_simpleavg_merge
 - mergekit (herramienta de fusion utilizada): https://github.com/cg123/mergekit
 - Paper de referencia del metodo Linear citado en las etiquetas (weight averaging / model soups): https://arxiv.org/abs/2203.05482
 - Busqueda web realizada: no ha devuelto ningun enlace relevante sobre el modelo, el autor o el proyecto `Pan_Safety_Better_Measurement`; los unicos resultados obtenidos son paginas generales de motores de busqueda sin relacion con el artefacto.

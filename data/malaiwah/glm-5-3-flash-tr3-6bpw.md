@@ -58,7 +58,7 @@ Estas metricas indican que la cuantizacion de 6 bits introduce una desviacion mu
 
 - VRAM estimada para inferencia: el modelo tiene 126.767.852.670 parametros a 6 bits, lo que equivale a aproximadamente 95 GB de pesos en memoria (0.75 bytes por parametro). Anadiendo overhead de activaciones y cache KV, se recomienda un minimo de 120 GB de VRAM.
 - GPUs recomendadas: para inferencia en produccion se necesitan al menos 2x NVIDIA A100 80GB o 4x RTX 4090 24GB. No cabe en una unica GPU de consumo (24 GB) ni en una A100 de 40 GB.
-- Opciones de despliegue: el formato safetensors y la etiqueta `exllamav3` indican compatibilidad con ExLlamaV3, que es el motor preferido para esta cuantizacion. Tambien puede usarse con transformers de HuggingFace, aunque con menor eficiencia.
+- Opciones de despliegue: el formato safetensors y la etiqueta `exllamav3` indican compatibilidad con ExLlamaV3, que es el motor preferido para esta cuantizacion. Tambien puede usarse con transformers de Hugging Face, aunque con menor eficiencia.
 - Latencia y throughput: no hay datos publicados. Dado que es un modelo MoE con 18B activos, la latencia por token sera significativamente menor que la de un modelo denso de 126B, pero aun asi requiere GPUs de gama alta para obtener velocidades utiles en tiempo real.
 - Alternativas: se podria usar llama.cpp si se convierte a GGUF, pero no se proporciona dicha conversion en el repositorio.
 
@@ -78,7 +78,7 @@ No se dispone de informacion suficiente para establecer una comparativa directa 
 
 ## Enlaces
 
-- [HuggingFace - malaiwah/GLM-5.3-Flash-TR3-6bpw](https://huggingface.co/malaiwah/GLM-5.3-Flash-TR3-6bpw)
+- [Hugging Face - malaiwah/GLM-5.3-Flash-TR3-6bpw](https://huggingface.co/malaiwah/GLM-5.3-Flash-TR3-6bpw)
 - [Modelo base - zai-org/GLM-5.3-Flash-BF16](https://huggingface.co/zai-org/GLM-5.3-Flash-BF16)
 - [GitHub - GLM-5.3 Flash EXL3 para 2x DGX Sparks](https://github.com/MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks/)
 - [OpenLM.ai - articulo sobre GLM-5.3](https://openlm.ai/glm-5.5/)

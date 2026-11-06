@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `RelaxingSnorlax/nemotron35-dspark-15l-fp8block` (este) | 3.328.319.489 | no disponible | FP8_BLOCK | openmdw-1.1 | HuggingFace, 0 descargas, 0 likes |
-| `RelaxingSnorlax/nemotron35-dspark-5l-fp8block` (fuente) | no disponible en la informacion | no disponible | FP8_BLOCK | openmdw-1.1 | HuggingFace |
-| `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark` | no disponible (repositorio de 1,35 GB) | no disponible | NVFP4 | openmdw-1.1 | HuggingFace y ModelScope, mantenido por NVIDIA |
-| `nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16` (objetivo) | 120B totales, 12B activos (segun denominacion) | no disponible | BF16 | no disponible | HuggingFace, modelo objetivo de NVIDIA |
+| `RelaxingSnorlax/nemotron35-dspark-15l-fp8block` (este) | 3.328.319.489 | no disponible | FP8_BLOCK | openmdw-1.1 | Hugging Face, 0 descargas, 0 likes |
+| `RelaxingSnorlax/nemotron35-dspark-5l-fp8block` (fuente) | no disponible en la informacion | no disponible | FP8_BLOCK | openmdw-1.1 | Hugging Face |
+| `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark` | no disponible (repositorio de 1,35 GB) | no disponible | NVFP4 | openmdw-1.1 | Hugging Face y ModelScope, mantenido por NVIDIA |
+| `nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16` (objetivo) | 120B totales, 12B activos (segun denominacion) | no disponible | BF16 | no disponible | Hugging Face, modelo objetivo de NVIDIA |
 
 La diferencia relevante no es de rendimiento sino de naturaleza: el checkpoint de NVIDIA es un drafter DSpark real para Nemotron-3.5-Lightning-30B-A3B, mientras que este es un control estructural derivado de un drafter de 5 capas y sin evaluación publicada. El modelo objetivo de 120B no es comparable en tamaño ni en función, ya que actúa como verificador en el esquema de decodificación especulativa.
 
@@ -88,7 +88,7 @@ La diferencia relevante no es de rendimiento sino de naturaleza: el checkpoint d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RelaxingSnorlax/nemotron35-dspark-15l-fp8block
+- Modelo en Hugging Face: https://huggingface.co/RelaxingSnorlax/nemotron35-dspark-15l-fp8block
 - Drafter fuente de 5 capas: https://huggingface.co/RelaxingSnorlax/nemotron35-dspark-5l-fp8block
 - Revision fuente: `59134b2cb2016c57ee89ca58f6a1bb091ed10901`
 - Modelo objetivo: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16

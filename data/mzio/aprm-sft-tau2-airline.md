@@ -87,7 +87,7 @@ El modelo base Qwen3-4B-Instruct tiene una licencia Apache 2.0 y está disponibl
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mzio/aprm-sft-tau2-airline)
+- [Modelo en Hugging Face](https://huggingface.co/mzio/aprm-sft-tau2-airline)
 - [Dataset de generaciones de pensamientos](https://huggingface.co/datasets/mzio/aprm-thought-generations-tau2-airline)
 - [Leaderboard Tau2 Airline](https://llm-stats.com/benchmarks/tau2-airline)
 - [Repositorio tau2-agentic-rl (artefactos)](https://github.com/yuyu0529nya/tau2-agentic-rl/tree/main/artifacts/tau2-airline)

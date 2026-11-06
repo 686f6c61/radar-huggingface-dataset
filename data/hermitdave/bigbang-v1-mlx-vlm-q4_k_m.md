@@ -91,7 +91,7 @@ No se dispone de informacion sobre modelos alternativos de otros autores con los
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hermitdave/BigBang-v1-MLX-VLM-Q4_K_M
+- Repositorio en Hugging Face: https://huggingface.co/hermitdave/BigBang-v1-MLX-VLM-Q4_K_M
 - Modelo base: https://huggingface.co/endless-frontier/BigBang-v1
 - Variante multimodal 4 bits uniforme: https://huggingface.co/mlx-community/BigBang-v1-MLX-VLM-4bit
 - Variante solo texto Q4_K_M: https://huggingface.co/mlx-community/BigBang-v1-MLX-Q4_K_M

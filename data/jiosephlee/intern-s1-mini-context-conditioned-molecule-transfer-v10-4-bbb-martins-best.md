@@ -6,7 +6,7 @@ Este modelo es un ajuste fino (fine-tune) de `jiosephlee/Intern-S1-mini-lm` orie
 
 El modelo tiene 8.201.221.120 parámetros (8,2 mil millones) según los pesos en safetensors, y se distribuye como un checkpoint completo de Transformers con su tokenizador. Aunque la etiqueta de pipeline es `text-generation` y aparece la etiqueta `conversational`, su uso previsto no es la generación de texto abierta, sino el ranking/recuperación de moléculas candidatas: la métrica de selección del checkpoint es `knn_binary_macro_f1_at_5` sobre validación.
 
-Es relevante ahora porque ilustra un tipo de artefacto cada vez más común en el ecosistema HuggingFace: modelos de química que reutilizan un modelo de lenguaje científico (Intern-S1-mini) como codificador de representaciones para tareas de transferencia de actividad entre ensayos, con evaluación rigurosa de recuperación (Macro-F1@5, NDCG@5, Precision@5 y correlación de Spearman). El repositorio no tiene descargas ni "likes", y la model card no documenta idiomas ni licencia, por lo que debe tratarse como un artefacto de investigación acotado.
+Es relevante ahora porque ilustra un tipo de artefacto cada vez más común en el ecosistema Hugging Face: modelos de química que reutilizan un modelo de lenguaje científico (Intern-S1-mini) como codificador de representaciones para tareas de transferencia de actividad entre ensayos, con evaluación rigurosa de recuperación (Macro-F1@5, NDCG@5, Precision@5 y correlación de Spearman). El repositorio no tiene descargas ni "likes", y la model card no documenta idiomas ni licencia, por lo que debe tratarse como un artefacto de investigación acotado.
 
 ## Especificaciones tecnicas
 
@@ -35,7 +35,7 @@ Los detalles de entrenamiento sí están parcialmente documentados. El modelo ba
 - Soporte de tool calling / function calling: no disponible (no se menciona en la información proporcionada).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no se menciona).
 - Capacidades multilingües: no disponible (el campo de idiomas no está informado).
-- Capacidades especiales: no se documentan modos de razonamiento explícito (thinking mode), visión ni audio. Las etiquetas indican `text-generation-inference` y `endpoints_compatible`, es decir, compatibilidad con despliegue en TGI y en Inference Endpoints de HuggingFace.
+- Capacidades especiales: no se documentan modos de razonamiento explícito (thinking mode), visión ni audio. Las etiquetas indican `text-generation-inference` y `endpoints_compatible`, es decir, compatibilidad con despliegue en TGI y en Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -65,15 +65,15 @@ No se han publicado resultados de benchmarks estándar de lenguaje (MMLU, HumanE
 - VRAM estimada cuantizado a 4 bits: aproximadamente 4-5 GB para los pesos (requiere generar la cuantización, ya que no se publica ninguna).
 - GPU recomendadas: para BF16, una NVIDIA RTX 4090 (24 GB) o A100 40 GB / H100. Para cuantización de 4-8 bits, tarjetas consumer de 8-12 GB como RTX 3060 12 GB, RTX 4070 o superiores.
 - Cabe en GPU consumer: sí, en BF16 en una RTX 4090 o RTX 3090 (24 GB); en cuantización de 4 bits en GPUs de 8 GB.
-- Opciones de despliegue: Transformers (librería declarada), TGI y HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`). vLLM, llama.cpp, Ollama y otras alternativas no están confirmadas por el autor; llama.cpp requeriría convertir los pesos a GGUF.
+- Opciones de despliegue: Transformers (librería declarada), TGI y Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`). vLLM, llama.cpp, Ollama y otras alternativas no están confirmadas por el autor; llama.cpp requeriría convertir los pesos a GGUF.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`intern-s1-mini-context-conditioned-molecule-transfer-v10-4-bbb-martins-best`) | 8,2 B | no disponible | Macro-F1@5 en test: 0,6732; NDCG@5: 0,7365 | no disponible | safetensors en HuggingFace, 0 descargas |
-| `jiosephlee/Intern-S1-mini-lm` (modelo base) | no disponible (probablemente el mismo orden, 8 B) | no disponible | no disponible (no es un modelo afinado para esta tarea) | no disponible | safetensors en HuggingFace |
+| Este modelo (`intern-s1-mini-context-conditioned-molecule-transfer-v10-4-bbb-martins-best`) | 8,2 B | no disponible | Macro-F1@5 en test: 0,6732; NDCG@5: 0,7365 | no disponible | safetensors en Hugging Face, 0 descargas |
+| `jiosephlee/Intern-S1-mini-lm` (modelo base) | no disponible (probablemente el mismo orden, 8 B) | no disponible | no disponible (no es un modelo afinado para esta tarea) | no disponible | safetensors en Hugging Face |
 | Qwen3-8B u otros modelos de ~8 B de la familia | no disponible en esta busqueda | no disponible | no disponible | no disponible | no verificado |
 
 No se dispone de datos de rendimiento de alternativas en la misma tarea de transferencia de ensayos BBB, por lo que la comparación cuantitativa no es posible con la información proporcionada.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento de alternativas en la misma tarea de trans
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-4-bbb-martins-best
+- Modelo en Hugging Face: https://huggingface.co/jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-4-bbb-martins-best
 - Modelo base: https://huggingface.co/jiosephlee/Intern-S1-mini-lm
 - Dataset de entrenamiento: https://huggingface.co/datasets/jiosephlee/context-conditioned-molecule-transfer-v10.4-bbb-martins-mixed-continuous-intern
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/upenn-ml/context-conditioned-molecule-transfer-soft/runs/6r7k4sf3

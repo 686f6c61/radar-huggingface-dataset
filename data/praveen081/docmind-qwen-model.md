@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DocMind-Qwen-Model es un modelo publicado en HuggingFace por el usuario Praveen081 bajo licencia Apache 2.0. El nombre sugiere un ajuste fino (fine-tuning) sobre un modelo base de la familia Qwen orientado a tareas de procesamiento de documentos ("DocMind"), aunque la model card no aporta ninguna descripción, documentación técnica ni detalles sobre el proceso de entrenamiento. El repositorio tiene un tamano de 2.0 GB, lo que es consistente con pesos en precision reducida de un modelo de aproximadamente 1-3 mil millones de parametros, pero este dato es una inferencia y no una confirmacion del autor.
+DocMind-Qwen-Model es un modelo publicado en Hugging Face por el usuario Praveen081 bajo licencia Apache 2.0. El nombre sugiere un ajuste fino (fine-tuning) sobre un modelo base de la familia Qwen orientado a tareas de procesamiento de documentos ("DocMind"), aunque la model card no aporta ninguna descripción, documentación técnica ni detalles sobre el proceso de entrenamiento. El repositorio tiene un tamano de 2.0 GB, lo que es consistente con pesos en precision reducida de un modelo de aproximadamente 1-3 mil millones de parametros, pero este dato es una inferencia y no una confirmacion del autor.
 
 La relevancia de esta ficha es limitada: el modelo no cuenta con descargas ni interacciones en el momento de la consulta, no tiene pipeline declarado, no especifica idiomas soportados y la model card esta practicamente vacia (unicamente el campo de licencia). Se trata, por tanto, de un artefacto sin documentacion verificable, lo que impide evaluar su calidad, sus capacidades reales o su idoneidad para produccion.
 
@@ -86,5 +86,5 @@ Los datos de los modelos de referencia corresponden a sus model cards publicas; 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Praveen081/DocMind-Qwen-Model
+- Hugging Face: https://huggingface.co/Praveen081/DocMind-Qwen-Model
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

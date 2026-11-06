@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks específicos para Lion-ER-9B en la 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lion-ER-9B | 9,65B | no disponible | Razonamiento visual y encarnado (fine-tune de Qwen3.5-9B) | Apache 2.0 | HuggingFace |
-| Qwen3.5-9B | no disponible en la información | no disponible | Modelo base multimodal | no disponible en la información | HuggingFace |
-| Lion-ER-4B | no disponible en la información | no disponible | Razonamiento visual y encarnado (fine-tune de Qwen3.5-4B) | Apache 2.0 | HuggingFace |
-| Lion-ER-35B-A3B | no disponible en la información (MoE) | no disponible | Razonamiento visual y encarnado (variante grande) | Apache 2.0 | HuggingFace |
+| Lion-ER-9B | 9,65B | no disponible | Razonamiento visual y encarnado (fine-tune de Qwen3.5-9B) | Apache 2.0 | Hugging Face |
+| Qwen3.5-9B | no disponible en la información | no disponible | Modelo base multimodal | no disponible en la información | Hugging Face |
+| Lion-ER-4B | no disponible en la información | no disponible | Razonamiento visual y encarnado (fine-tune de Qwen3.5-4B) | Apache 2.0 | Hugging Face |
+| Lion-ER-35B-A3B | no disponible en la información (MoE) | no disponible | Razonamiento visual y encarnado (variante grande) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo numérico entre estas variantes en la información proporcionada, salvo la afirmación de que Lion-ER-35B-A3B obtiene un promedio de 65,29 en diez benchmarks con avg@4.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo numérico entre estas variante
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmriat/lion-ER-9B
+- Modelo en Hugging Face: https://huggingface.co/cmriat/lion-ER-9B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio ERQA (Google DeepMind): https://github.com/embodiedreasoning/ERQA
 - Licencia de ERQA (CC BY 4.0): https://github.com/embodiedreasoning/ERQA/blob/main/LICENSE

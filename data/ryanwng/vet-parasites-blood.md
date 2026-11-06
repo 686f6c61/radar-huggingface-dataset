@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 | Modelo | Tarea | Arquitectura | Parámetros | Contexto / entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| ryanWNG/vet-parasites-blood | Clasificación de parásitos en frotis (8 clases) | EfficientNetV2-S | ≈21,5 M (referencia externa) | 384x384 RGB | Accuracy 99,87 %, F1-macro 0,997 (n=3032) | Apache 2.0 | HuggingFace, 0 descargas |
+| ryanWNG/vet-parasites-blood | Clasificación de parásitos en frotis (8 clases) | EfficientNetV2-S | ≈21,5 M (referencia externa) | 384x384 RGB | Accuracy 99,87 %, F1-macro 0,997 (n=3032) | Apache 2.0 | Hugging Face, 0 descargas |
 | EfficientNetV2-S (ImageNet-1k, timm) | Clasificación genérica de imágenes (1000 clases) | EfficientNetV2-S | ≈21,5 M (referencia externa) | 384x384 RGB | no disponible en la información proporcionada | Apache 2.0 (timm) | Público en timm |
 | ConvNeXt-Tiny (ImageNet-1k) | Clasificación genérica de imágenes | CNN modernizada tipo transformer | ≈28 M (referencia externa) | 224x224 | no disponible en la información proporcionada | Apache 2.0 | Público en timm |
 | ResNet-50 (ImageNet-1k) | Clasificación genérica de imágenes | CNN residual | ≈25,6 M (referencia externa) | 224x224 | no disponible en la información proporcionada | Apache 2.0 (variantes timm) | Público en timm |
@@ -100,7 +100,7 @@ No se han publicado comparaciones directas contra otros clasificadores de parasi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryanWNG/vet-parasites-blood
+- Modelo en Hugging Face: https://huggingface.co/ryanWNG/vet-parasites-blood
 - Proyecto Howl Vision (organización en GitHub, enlace citado en la model card): https://github.com/ikchain
 - Identificador del backbone en timm: `tf_efficientnetv2_s.in21k_ft_in1k`
 - No se han proporcionado otros enlaces (paper, blog, demo o dataset) en la información disponible.

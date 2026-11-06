@@ -78,11 +78,11 @@ El coste por paso es idéntico en el mismo hardware (~7 s/paso en H200, ~12,5 s/
 
 | Modelo | Tipo | Pasos | Tiempo por clip (H200) | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| Pika-H3-Flex (adaptador oficial) | Adaptador sobre MiniMax-H3 | 6 | 60 s | minimax-h3-community-license-agreement | HuggingFace |
-| Pika-H3-Flex-Turbo-LoRA (este) | LoRA fusionado sobre H3 | 2 / 4 / 8 | 25 / 40 / 70 s | minimax-h3-community-license-agreement | HuggingFace |
-| MiniMax-H3 base | Modelo de difusión de vídeo | ~40 | ~500 s | minimax-h3-community-license-agreement | HuggingFace |
-| lightx2v/Minimax-h3-Turbo | Destilado de pocos pasos | no disponible | no disponible | no disponible | HuggingFace |
-| Iwannapose/minimax_h3_pdmd_2nfe_comfyui | Destilado pDMD 2-NFE | 2 | no disponible | no disponible | HuggingFace |
+| Pika-H3-Flex (adaptador oficial) | Adaptador sobre MiniMax-H3 | 6 | 60 s | minimax-h3-community-license-agreement | Hugging Face |
+| Pika-H3-Flex-Turbo-LoRA (este) | LoRA fusionado sobre H3 | 2 / 4 / 8 | 25 / 40 / 70 s | minimax-h3-community-license-agreement | Hugging Face |
+| MiniMax-H3 base | Modelo de difusión de vídeo | ~40 | ~500 s | minimax-h3-community-license-agreement | Hugging Face |
+| lightx2v/Minimax-h3-Turbo | Destilado de pocos pasos | no disponible | no disponible | no disponible | Hugging Face |
+| Iwannapose/minimax_h3_pdmd_2nfe_comfyui | Destilado pDMD 2-NFE | 2 | no disponible | no disponible | Hugging Face |
 
 La comparación se limita a los artefactos del mismo ecosistema MiniMax-H3, ya que la información disponible no incluye otros modelos de vídeo con audio (por ejemplo, de otras familias) con los que contrastar parámetros, contexto o rendimiento.
 
@@ -99,7 +99,7 @@ La comparación se limita a los artefactos del mismo ecosistema MiniMax-H3, ya q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sekkit/Pika-H3-Flex-Turbo-LoRA
+- Modelo en Hugging Face: https://huggingface.co/sekkit/Pika-H3-Flex-Turbo-LoRA
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Modelo base Pika-H3-Flex: https://huggingface.co/Pika-Labs/Pika-H3-Flex
 - Destilado lightx2v/Minimax-h3-Turbo: https://huggingface.co/lightx2v/Minimax-h3-Turbo

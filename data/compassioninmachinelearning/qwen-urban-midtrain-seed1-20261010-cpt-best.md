@@ -89,7 +89,7 @@ El rendimiento no se puede comparar porque el modelo objeto de la ficha no publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CompassioninMachineLearning/qwen-urban-midtrain-seed1-20261010-CPT-best
+- Modelo en Hugging Face: https://huggingface.co/CompassioninMachineLearning/qwen-urban-midtrain-seed1-20261010-CPT-best
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Repositorio de checkpoints LoRA de origen: https://huggingface.co/CompassioninMachineLearning/Qwen3-8b-urban-seed1-20261010-CPT-LoRA-checkpoints
 - Script de fusion (`pilot/erosion/merge_best_cpt.py`): no disponible como enlace publico

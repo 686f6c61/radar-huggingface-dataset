@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `Qwen/Qwen3.8-27B` | 27B | 32.768 (131.072 con YaRN) | Apache-2.0 | HuggingFace | Modelo base con plantilla de chat original y filtros de seguridad estándar |
-| `OBLITERATUS/Qwen3.8-27B-OBLITERATED` | 27B | 32.768 | Apache-2.0 | HuggingFace | Variante abliterated sin rechazos, con defectos en tokenizer y plantilla |
-| `medismera/Qwen3.8-27B-OBLITERATED-Agentic` | 27B | 32.768 | Apache-2.0 | HuggingFace | Release de configuración y tokenizer sobre el checkpoint abliterated, con tool calling corregido |
+| `Qwen/Qwen3.8-27B` | 27B | 32.768 (131.072 con YaRN) | Apache-2.0 | Hugging Face | Modelo base con plantilla de chat original y filtros de seguridad estándar |
+| `OBLITERATUS/Qwen3.8-27B-OBLITERATED` | 27B | 32.768 | Apache-2.0 | Hugging Face | Variante abliterated sin rechazos, con defectos en tokenizer y plantilla |
+| `medismera/Qwen3.8-27B-OBLITERATED-Agentic` | 27B | 32.768 | Apache-2.0 | Hugging Face | Release de configuración y tokenizer sobre el checkpoint abliterated, con tool calling corregido |
 
 No se dispone de datos de rendimiento comparativo para estos modelos.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo para estos modelos.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/medismera/Qwen3.8-27B-OBLITERATED-Agentic
+- Página del modelo en Hugging Face: https://huggingface.co/medismera/Qwen3.8-27B-OBLITERATED-Agentic
 - Checkpoint abliterated original: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
 - Modelo base Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Discusión sobre tool calls rotas: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED/discussions/9

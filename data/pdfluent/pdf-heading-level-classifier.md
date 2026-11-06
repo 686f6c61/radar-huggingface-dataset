@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Tarea | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PDFluent heading level classifier | LightGBM tabular | Asignar nivel 1-3 a encabezados ya detectados | en | AGPL-3.0-only o comercial | HuggingFace, integrado en SDK PDFluent |
-| PDFluent formula recognition (ONNX) | Red neuronal ONNX | Reconocimiento de fórmulas | no disponible | no disponible | HuggingFace (misma organización) |
+| PDFluent heading level classifier | LightGBM tabular | Asignar nivel 1-3 a encabezados ya detectados | en | AGPL-3.0-only o comercial | Hugging Face, integrado en SDK PDFluent |
+| PDFluent formula recognition (ONNX) | Red neuronal ONNX | Reconocimiento de fórmulas | no disponible | no disponible | Hugging Face (misma organización) |
 | DocLayNet (anotaciones) | Dataset de layout | Detección de layout y encabezados | en | según el dataset original | Fuente de etiquetas citada por el autor |
 
 No se dispone de información sobre modelos directamente comparables de otros proveedores para esta tarea específica de asignación de nivel de encabezado; el autor no publica comparativas.
@@ -88,8 +88,8 @@ No se dispone de información sobre modelos directamente comparables de otros pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PDFluent/pdf-heading-level-classifier
-- Organización en HuggingFace: https://huggingface.co/PDFluent
+- Modelo en Hugging Face: https://huggingface.co/PDFluent/pdf-heading-level-classifier
+- Organización en Hugging Face: https://huggingface.co/PDFluent
 - Web de PDFluent: https://pdfluent.com
 - Documentación: https://pdfluent.com/docs
 - Licencia: https://pdfluent.com/license

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`renves/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, utilizando la librería Stable-Baselines3. No se trata de un modelo de lenguaje ni de un transformer generativo, sino de una política neuronal que controla un modulo de aterrizaje lunar en un simulador fisico 2D discreto. El autor del repositorio es el usuario de HuggingFace `renves`.
+`renves/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, utilizando la librería Stable-Baselines3. No se trata de un modelo de lenguaje ni de un transformer generativo, sino de una política neuronal que controla un modulo de aterrizaje lunar en un simulador fisico 2D discreto. El autor del repositorio es el usuario de Hugging Face `renves`.
 
 El modelo resuelve una tarea concreta de control continuo/discreto: aplicar empuje al motor principal y a los propulsores laterales para posar la nave suavemente sobre una plataforma entre dos banderas, optimizando una recompensa que combina la distancia al objetivo, la velocidad de aterrizaje, el consumo de combustible y el exito del contacto. Es relevante como artefacto reproducible de un experimento de RL y como referencia de rendimiento en un entorno de benchmark clasico, no como componente de produccion general.
 
@@ -41,7 +41,7 @@ No hay innovaciones tecnicas destacables mas alla del uso estandar de Stable-Bas
 ## Casos de uso
 
 - Evaluacion de referencia en RL: cargar el agente y medir la recompensa media en LunarLander-v3 para comparar con nuevas politicas o variantes de PPO.
-- Docencia y tutoriales: ejemplo minimo de un agente PPO publicado en HuggingFace, util para ensenar el flujo `entrenar -> subir -> cargar -> evaluar`.
+- Docencia y tutoriales: ejemplo minimo de un agente PPO publicado en Hugging Face, util para ensenar el flujo `entrenar -> subir -> cargar -> evaluar`.
 - Baseline en experimentos de RL: usar la recompensa declarada (260.64 +/- 22.38) como punto de partida al probar cambios de hiperparametros o arquitecturas de politica.
 - Pruebas de integracion de `stable-baselines3` y `huggingface_sb3`: verificar que el pipeline de carga desde el Hub funciona en un entorno controlado.
 - Simulacion de control discreto: estudiar el comportamiento de una politica ante perturbaciones del entorno (viento, turbulencia) modificando los parametros de Gymnasium.
@@ -69,9 +69,9 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| renves/ppo-LunarLander-v3 | PPO | LunarLander-v3 | no disponible | no aplica | no disponible | HuggingFace |
-| sb3/ppo-LunarLander-v2 (referencia de la comunidad) | PPO | LunarLander-v2 | no disponible | no aplica | no disponible | HuggingFace |
-| sb3/dqn-LunarLander-v2 (referencia de la comunidad) | DQN | LunarLander-v2 | no disponible | no aplica | no disponible | HuggingFace |
+| renves/ppo-LunarLander-v3 | PPO | LunarLander-v3 | no disponible | no aplica | no disponible | Hugging Face |
+| sb3/ppo-LunarLander-v2 (referencia de la comunidad) | PPO | LunarLander-v2 | no disponible | no aplica | no disponible | Hugging Face |
+| sb3/dqn-LunarLander-v2 (referencia de la comunidad) | DQN | LunarLander-v2 | no disponible | no aplica | no disponible | Hugging Face |
 
 La comparacion con alternativas de la misma categoria (agentes de RL para LunarLander) es limitada porque no se dispone de sus resultados de recompensa en la informacion proporcionada. La diferencia principal con las referencias de la comunidad es la version del entorno (v3 frente a v2) y el algoritmo (PPO frente a DQN en algunos casos).
 
@@ -88,7 +88,7 @@ La comparacion con alternativas de la misma categoria (agentes de RL para LunarL
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/renves/ppo-LunarLander-v3
+- Hugging Face: https://huggingface.co/renves/ppo-LunarLander-v3
 - Stable-Baselines3 (repositorio oficial): https://github.com/DLR-RM/stable-baselines3
 - Documentacion de Stable-Baselines3: https://stable-baselines3.readthedocs.io/
 - `huggingface_sb3` (utilidad de carga): https://github.com/huggingface/huggingface_sb3

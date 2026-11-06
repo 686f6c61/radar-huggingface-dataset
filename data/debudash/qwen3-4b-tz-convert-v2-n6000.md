@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`debudash/qwen3-4b-tz-convert-v2-n6000` es un adaptador LoRA (PEFT) publicado en HuggingFace sobre el modelo base `Qwen/Qwen3-4B-Instruct-2507`. No se trata de un modelo completo e independiente: el repositorio contiene únicamente los pesos del adaptador en formato safetensors (0,1 GB), por lo que su uso requiere cargar el modelo base Qwen3 de 4.000 millones de parámetros y aplicar el adaptador mediante la librería PEFT o fusionarlo en una copia de los pesos.
+`debudash/qwen3-4b-tz-convert-v2-n6000` es un adaptador LoRA (PEFT) publicado en Hugging Face sobre el modelo base `Qwen/Qwen3-4B-Instruct-2507`. No se trata de un modelo completo e independiente: el repositorio contiene únicamente los pesos del adaptador en formato safetensors (0,1 GB), por lo que su uso requiere cargar el modelo base Qwen3 de 4.000 millones de parámetros y aplicar el adaptador mediante la librería PEFT o fusionarlo en una copia de los pesos.
 
-El interés de esta ficha es limitado y fundamentalmente técnico: el autor no ha rellenado la model card (es la plantilla por defecto de HuggingFace con campos `[More Information Needed]`), no declara licencia, idiomas, datos de entrenamiento, hiperparámetros ni evaluación, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta. El identificador del repositorio (`tz-convert`, `n6000`) sugiere una especialización en conversión de zonas horarias con un conjunto de aproximadamente 6.000 muestras, pero esto es una inferencia a partir del nombre y no está confirmado en ninguna parte de la documentación publicada.
+El interés de esta ficha es limitado y fundamentalmente técnico: el autor no ha rellenado la model card (es la plantilla por defecto de Hugging Face con campos `[More Information Needed]`), no declara licencia, idiomas, datos de entrenamiento, hiperparámetros ni evaluación, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta. El identificador del repositorio (`tz-convert`, `n6000`) sugiere una especialización en conversión de zonas horarias con un conjunto de aproximadamente 6.000 muestras, pero esto es una inferencia a partir del nombre y no está confirmado en ninguna parte de la documentación publicada.
 
 Por tanto, la ficha describe lo que se puede verificar (formato del artefacto, framework, modelo base y tamaño) y marca explícitamente como no disponible todo lo demás. Cualquier evaluación de calidad, comportamiento o idoneidad para producción exige una validación empírica por parte de quien lo vaya a usar.
 
@@ -23,7 +23,7 @@ Por tanto, la ficha describe lo que se puede verificar (formato del artefacto, f
 | Libreria | peft |
 | Tarea declarada | text-generation |
 | Tamano del repositorio | 0,1 GB |
-| Fecha de creacion registrada | 2026-10-28 (metadato de HuggingFace; posterior a la fecha actual, posible error) |
+| Fecha de creacion registrada | 2026-10-28 (metadato de Hugging Face; posterior a la fecha actual, posible error) |
 
 ## Arquitectura y entrenamiento
 
@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/debudash/qwen3-4b-tz-convert-v2-n6000
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/debudash/qwen3-4b-tz-convert-v2-n6000
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper citado en los metadatos (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact#compute

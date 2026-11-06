@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Tipo | Arquitectura | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| asatheesh/latent-mas-aligner-phi3-mini-seed-1 | Alineador de seguridad latente | Pooling + proyección + cola Llama-Guard-3-8B | no disponible (repo 0,1 GB) | Sobre K latentes | apache-2.0 | HuggingFace |
-| YuanXiaopang/latentmas-aligner-qwen3-4b (variantes de topología y seed) | Alineador de seguridad latente | misma familia, otros seeds y topologías | no disponible | Sobre K latentes | no disponible en la informacion | HuggingFace |
-| Llama-Guard-3-8B | Clasificador de moderacion textual | Transformer (proveedor de la cola) | 8B | no disponible en la informacion | no disponible en la informacion | HuggingFace |
+| asatheesh/latent-mas-aligner-phi3-mini-seed-1 | Alineador de seguridad latente | Pooling + proyección + cola Llama-Guard-3-8B | no disponible (repo 0,1 GB) | Sobre K latentes | apache-2.0 | Hugging Face |
+| YuanXiaopang/latentmas-aligner-qwen3-4b (variantes de topología y seed) | Alineador de seguridad latente | misma familia, otros seeds y topologías | no disponible | Sobre K latentes | no disponible en la informacion | Hugging Face |
+| Llama-Guard-3-8B | Clasificador de moderacion textual | Transformer (proveedor de la cola) | 8B | no disponible en la informacion | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de benchmark comparativos entre estos modelos en la informacion proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmark comparativos entre estos modelos en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asatheesh/latent-mas-aligner-phi3-mini-seed-1
+- Modelo en Hugging Face: https://huggingface.co/asatheesh/latent-mas-aligner-phi3-mini-seed-1
 - Repositorio fuente del estudio (variantes de topología y seed): https://huggingface.co/YuanXiaopang/latentmas-aligner-qwen3-4b
 - Código del proyecto: https://github.com/Asatheesh6561/LatentMASHarmBench
 - Modelo base objetivo: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct

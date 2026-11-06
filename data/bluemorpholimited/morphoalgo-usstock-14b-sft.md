@@ -2,7 +2,7 @@
 
 ## Resumen
 
-morphoalgo-usstock-14b-sft es un ajuste fino por supervisión (SFT) del modelo denso Qwen/Qwen3-14B, publicado por el usuario bluemorpholimited en HuggingFace. El repositorio contiene pesos en formato safetensors (12,3 GB) y fue generado con la librería TRL 1.13.0 sobre Transformers 5.14.1 y PyTorch 2.11.0. No se ha publicado ninguna información sobre el conjunto de datos de entrenamiento, el número de pasos, la composición del corpus ni el procedimiento de alineación adicional.
+morphoalgo-usstock-14b-sft es un ajuste fino por supervisión (SFT) del modelo denso Qwen/Qwen3-14B, publicado por el usuario bluemorpholimited en Hugging Face. El repositorio contiene pesos en formato safetensors (12,3 GB) y fue generado con la librería TRL 1.13.0 sobre Transformers 5.14.1 y PyTorch 2.11.0. No se ha publicado ninguna información sobre el conjunto de datos de entrenamiento, el número de pasos, la composición del corpus ni el procedimiento de alineación adicional.
 
 El nombre del modelo sugiere una especialización en el mercado de valores estadounidense ("usstock"), pero la model card es la plantilla automática de TRL y no documenta ninguna capacidad financiera concreta, ningún dato de evaluación ni ninguna métrica de rendimiento. Tampoco se declara licencia (el campo aparece como marcador de posición "license"), idioma soportado ni pipeline de inferencia.
 
@@ -70,11 +70,11 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| morphoalgo-usstock-14b-sft | ~14 000 M (heredado) | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT sin documentar ni evaluar |
-| Qwen/Qwen3-14B (base) | 14 000 M densos | 32 768 nativos, 131 072 con YaRN | Apache 2.0 | HuggingFace, ampliamente desplegado | Modelo de referencia con benchmarks publicados y soporte multilingüe de 119 idiomas |
-| Qwen/Qwen2.5-14B-Instruct | 14 000 M densos | 32 768, ampliable a 131 072 | Apache 2.0 | HuggingFace | Generación anterior, igualmente densa y con evaluaciones publicadas |
-| Phi-4 (Microsoft) | 14 000 M densos | 16 000 | MIT | HuggingFace | Enfoque en razonamiento y matemáticas, corpus de entrenamiento sintético |
-| Mistral-Nemo-12B-Instruct | 12 000 M densos | 128 000 | Apache 2.0 | HuggingFace | Menor número de parámetros pero contexto nativo mucho mayor |
+| morphoalgo-usstock-14b-sft | ~14 000 M (heredado) | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT sin documentar ni evaluar |
+| Qwen/Qwen3-14B (base) | 14 000 M densos | 32 768 nativos, 131 072 con YaRN | Apache 2.0 | Hugging Face, ampliamente desplegado | Modelo de referencia con benchmarks publicados y soporte multilingüe de 119 idiomas |
+| Qwen/Qwen2.5-14B-Instruct | 14 000 M densos | 32 768, ampliable a 131 072 | Apache 2.0 | Hugging Face | Generación anterior, igualmente densa y con evaluaciones publicadas |
+| Phi-4 (Microsoft) | 14 000 M densos | 16 000 | MIT | Hugging Face | Enfoque en razonamiento y matemáticas, corpus de entrenamiento sintético |
+| Mistral-Nemo-12B-Instruct | 12 000 M densos | 128 000 | Apache 2.0 | Hugging Face | Menor número de parámetros pero contexto nativo mucho mayor |
 
 La comparación directa con estos modelos no es posible en términos de rendimiento porque morphoalgo-usstock-14b-sft carece de métricas publicadas. La diferencia principal es de garantías: los tres alternativos cuentan con licencias explícitas, documentación de entrenamiento y evaluaciones reproducibles, mientras que este ajuste no ofrece ninguna de las tres.
 
@@ -96,7 +96,7 @@ La comparación directa con estos modelos no es posible en términos de rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bluemorpholimited/morphoalgo-usstock-14b-sft
+- Modelo en Hugging Face: https://huggingface.co/bluemorpholimited/morphoalgo-usstock-14b-sft
 - Modelo base Qwen/Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Búsqueda web realizada: sin resultados relevantes. Los enlaces devueltos (topstocks.com.au y similares) son blogs genéricos de inversión y no contienen información sobre el modelo, su entrenamiento o su evaluación.

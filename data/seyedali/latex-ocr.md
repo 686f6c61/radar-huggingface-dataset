@@ -2,7 +2,7 @@
 
 ## Resumen
 
-latex-ocr es un modelo de reconocimiento optico de caracteres especializado en formulas matematicas, publicado por el usuario de HuggingFace SeyedAli. Se trata de un ajuste fino (fine-tuning) del modelo DGurgurov/im2latex, orientado a la tarea image-to-text: recibe una imagen que contiene una expresion matematica y devuelve su representacion en codigo LaTeX. La relevancia de este tipo de modelos radica en que la transcripcion manual de formulas es uno de los cuellos de botella mas costosos en la digitalizacion de documentacion cientifica, apuntes y libros de texto.
+latex-ocr es un modelo de reconocimiento optico de caracteres especializado en formulas matematicas, publicado por el usuario de Hugging Face SeyedAli. Se trata de un ajuste fino (fine-tuning) del modelo DGurgurov/im2latex, orientado a la tarea image-to-text: recibe una imagen que contiene una expresion matematica y devuelve su representacion en codigo LaTeX. La relevancia de este tipo de modelos radica en que la transcripcion manual de formulas es uno de los cuellos de botella mas costosos en la digitalizacion de documentacion cientifica, apuntes y libros de texto.
 
 Tecnicamente es un modelo de arquitectura vision-encoder-decoder (un codificador de vision seguido de un decodificador de texto autorregresivo), con 240.337.080 parametros y pesos en formato safetensors. El repositorio ocupa 1,9 GB, lo que es coherente con un modelo de ese orden de magnitud almacenado en precision completa.
 
@@ -96,7 +96,7 @@ Cabe senalar que latex-ocr se posiciona como un ajuste fino de un modelo ya exis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeyedAli/latex-ocr
+- Modelo en Hugging Face: https://huggingface.co/SeyedAli/latex-ocr
 - Modelo base: https://huggingface.co/DGurgurov/im2latex
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RusMind Zernyshko 1 | 35 M | 1024 | ruso | RusMind License (comercial con contrato) | HuggingFace + GGUF |
-| RusMind Zernyshko 1.6 | no disponible | no disponible | ruso | no disponible | HuggingFace (según la card) |
-| SmolLM-135M | 135 M | 2048 | inglés (principalmente) | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B | 494 M | 32 768 | multilingüe | Apache 2.0 | HuggingFace |
+| RusMind Zernyshko 1 | 35 M | 1024 | ruso | RusMind License (comercial con contrato) | Hugging Face + GGUF |
+| RusMind Zernyshko 1.6 | no disponible | no disponible | ruso | no disponible | Hugging Face (según la card) |
+| SmolLM-135M | 135 M | 2048 | inglés (principalmente) | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B | 494 M | 32 768 | multilingüe | Apache 2.0 | Hugging Face |
 
 La comparación con SmolLM-135M y Qwen2.5-0.5B es orientativa por categoria de tamano; no se dispone de benchmarks del modelo RusMind que permitan comparar rendimiento de forma directa.
 
@@ -83,7 +83,7 @@ La comparación con SmolLM-135M y Qwen2.5-0.5B es orientativa por categoria de t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DICPlay/RusMind-Zernyshko-1
+- Modelo en Hugging Face: https://huggingface.co/DICPlay/RusMind-Zernyshko-1
 - Versión GGUF: https://huggingface.co/DICPlay/RusMind-Zernyshko-1-GGUF
 - Versión 1.6 (mayor calidad): https://huggingface.co/DICPlay/RusMind-Zernyshko-1.6
 - Licencia: archivo `LICENSE` en el repositorio del modelo

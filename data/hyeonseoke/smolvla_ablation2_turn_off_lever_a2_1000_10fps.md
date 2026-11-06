@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`HyeonseokE/smolvla_ablation2_turn_off_lever_A2_1000_10fps` es una politica de robotica entrenada con LeRobot y publicada en HuggingFace por el usuario HyeonseokE. Se trata de un ajuste fino (fine-tuning) del modelo base `lerobot/smolvla_base`, que a su vez implementa el metodo SmolVLA descrito en el paper arXiv:2506.01844: un modelo compacto de vision-lenguaje-accion (VLA) disenado para ejecutar tareas de manipulacion a partir de observaciones visuales y de estado propioceptivo, con un coste computacional reducido que permite desplegarlo en hardware de consumo.
+`HyeonseokE/smolvla_ablation2_turn_off_lever_A2_1000_10fps` es una politica de robotica entrenada con LeRobot y publicada en Hugging Face por el usuario HyeonseokE. Se trata de un ajuste fino (fine-tuning) del modelo base `lerobot/smolvla_base`, que a su vez implementa el metodo SmolVLA descrito en el paper arXiv:2506.01844: un modelo compacto de vision-lenguaje-accion (VLA) disenado para ejecutar tareas de manipulacion a partir de observaciones visuales y de estado propioceptivo, con un coste computacional reducido que permite desplegarlo en hardware de consumo.
 
 El modelo tiene 450.046.176 parametros (aproximadamente 450 millones) almacenados en safetensors, con un repositorio de 0,9 GB. No es un modelo de lenguaje general: es una politica de control que consume tres imagenes de 3x256x256 pixeles mas un vector de estado de 6 dimensiones, y produce un vector de accion de 6 dimensiones. La tarea concreta para la que fue entrenado es "Turn the lever off; the status indicator should turn red" (apagar la palanca hasta que el indicador de estado se ponga en rojo), sobre un brazo robotico de tipo `so101_follower`.
 
@@ -83,8 +83,8 @@ No se dispone de datos verificados de otros modelos de la misma categoria en la 
 
 | Modelo | Parametros | Tipo de tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `HyeonseokE/smolvla_ablation2_turn_off_lever_A2_1000_10fps` | 450.046.176 | Politica VLA de tarea unica (apagar palanca) sobre `so101_follower` | Apache 2.0 | Publico en HuggingFace; 0 descargas y 0 likes |
-| `lerobot/smolvla_base` (modelo base) | No disponible en la informacion proporcionada | Politica VLA base, ajustable a distintas tareas | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| `HyeonseokE/smolvla_ablation2_turn_off_lever_A2_1000_10fps` | 450.046.176 | Politica VLA de tarea unica (apagar palanca) sobre `so101_follower` | Apache 2.0 | Publico en Hugging Face; 0 descargas y 0 likes |
+| `lerobot/smolvla_base` (modelo base) | No disponible en la informacion proporcionada | Politica VLA base, ajustable a distintas tareas | No disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otros VLA de la misma categoria (por ejemplo, alternativas citadas habitualmente en robotica de imitacion) | No disponible | No disponible | No disponible | No disponible |
 
 Cualquier comparacion con modelos como OpenVLA, pi0 o RDT requiere consultar sus respectivas fichas y el paper arXiv:2506.01844; no se incluyen cifras aqui para no introducir datos no verificados.
@@ -107,7 +107,7 @@ Cualquier comparacion con modelos como OpenVLA, pi0 o RDT requiere consultar sus
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HyeonseokE/smolvla_ablation2_turn_off_lever_A2_1000_10fps
+- Modelo en Hugging Face: https://huggingface.co/HyeonseokE/smolvla_ablation2_turn_off_lever_A2_1000_10fps
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/HyeonseokE/ablation2_turn_off_lever_A2_10fps
 - Visualizador del dataset (Space de LeRobot): https://huggingface.co/spaces/lerobot/visualize_dataset?path=HyeonseokE/ablation2_turn_off_lever_A2_10fps

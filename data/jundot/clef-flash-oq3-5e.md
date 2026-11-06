@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Formato y cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jundot/clef-flash-oQ3.5e | 9,409.813.744 (9,532B lógicos) | safetensors MLX, oQ3.5e mixta a 4,616 bits/peso | No disponible | Apache-2.0 | HuggingFace, requiere MLX en Apple Silicon |
-| Cloudflare/clef-flash (modelo base) | 9B (misma estructura de componentes) | Peso completo sin cuantizar según el repositorio original | No disponible | Apache-2.0 | HuggingFace |
-| Jundot/clef-flash-oQ4e | No disponible | safetensors MLX, cuantización oQ4e (mayor precisión que oQ3.5e) | No disponible | No disponible | HuggingFace |
+| Jundot/clef-flash-oQ3.5e | 9,409.813.744 (9,532B lógicos) | safetensors MLX, oQ3.5e mixta a 4,616 bits/peso | No disponible | Apache-2.0 | Hugging Face, requiere MLX en Apple Silicon |
+| Cloudflare/clef-flash (modelo base) | 9B (misma estructura de componentes) | Peso completo sin cuantizar según el repositorio original | No disponible | Apache-2.0 | Hugging Face |
+| Jundot/clef-flash-oQ4e | No disponible | safetensors MLX, cuantización oQ4e (mayor precisión que oQ3.5e) | No disponible | No disponible | Hugging Face |
 | Cloudflare Clef | 27B | Modelo multimodal de decisión, servido gestionado | No disponible | No disponible | Cloudflare Workers AI |
 
 El modelo base Qwen/Qwen3.5-9B, del que procede el backbone de lenguaje, no es comparable de forma directa porque es un modelo generativo de propósito general, mientras que clef-flash está post-entrenado para producir decisiones sobre un esquema tipado.
@@ -95,7 +95,7 @@ El modelo base Qwen/Qwen3.5-9B, del que procede el backbone de lenguaje, no es c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/clef-flash-oQ3.5e
+- Modelo en Hugging Face: https://huggingface.co/Jundot/clef-flash-oQ3.5e
 - Árbol de ficheros del modelo: https://huggingface.co/Jundot/clef-flash-oQ3.5e/tree/main
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Checkpoint hermano con cuantización oQ4e: https://huggingface.co/Jundot/clef-flash-oQ4e

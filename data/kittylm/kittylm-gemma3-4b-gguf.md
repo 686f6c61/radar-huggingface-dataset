@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta distribucion GGUF: https://huggingface.co/KittyLM/kittylm-gemma3-4b-gguf
+- Repositorio Hugging Face de esta distribucion GGUF: https://huggingface.co/KittyLM/kittylm-gemma3-4b-gguf
 - Modelo base del finetune: https://huggingface.co/KittyLM/kittylm-gemma3-4b
 - Dataset de entrenamiento y system prompt: https://huggingface.co/datasets/KittyLM/kittylm-data
 - Modelo original de Google: https://huggingface.co/google/gemma-3-4b-it

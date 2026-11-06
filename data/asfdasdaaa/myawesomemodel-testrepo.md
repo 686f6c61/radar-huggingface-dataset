@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario asfdasdaaa bajo el identificador `asfdasdaaa/MyAwesomeModel-TestRepo`. La información disponible es escasa y, en varios puntos, contradictoria: los metadatos de HuggingFace lo etiquetan como `transformers`, `pytorch`, `bert`, con pipeline de `feature-extraction`, mientras que la model card se presenta como un modelo generativo de razonamiento con modo de pensamiento extendido, soporte de function calling y mejoras en tareas de matemáticas y programación. No se puede confirmar cuál de las dos descripciones se corresponde con el artefacto real.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario asfdasdaaa bajo el identificador `asfdasdaaa/MyAwesomeModel-TestRepo`. La información disponible es escasa y, en varios puntos, contradictoria: los metadatos de Hugging Face lo etiquetan como `transformers`, `pytorch`, `bert`, con pipeline de `feature-extraction`, mientras que la model card se presenta como un modelo generativo de razonamiento con modo de pensamiento extendido, soporte de function calling y mejoras en tareas de matemáticas y programación. No se puede confirmar cuál de las dos descripciones se corresponde con el artefacto real.
 
 El repositorio declara un tamaño de 0.0 GB, cero descargas y cero "likes", y no incluye pesos publicados ni ficha técnica con número de parámetros, longitud de contexto, composición del dataset o proceso de entrenamiento. La model card es una plantilla genérica con nombres de modelos base anonimizados ("Model1", "Model2", "Model1-v2") y remite a un sitio web y a un repositorio de código que no se enlazan en la información disponible.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha debe leerse como un inventario de lo declarado por el auto
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (los tags de HuggingFace indican `bert`; la model card describe un modelo generativo de razonamiento, sin especificar arquitectura) |
+| Arquitectura | no disponible (los tags de Hugging Face indican `bert`; la model card describe un modelo generativo de razonamiento, sin especificar arquitectura) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -60,7 +60,7 @@ Los siguientes escenarios son hipotéticos y están condicionados a que el model
 - Generación aumentada por recuperación (RAG) con citas: la model card proporciona una plantilla explícita para inyectar resultados de búsqueda y exige que el modelo cite con `[citation:X]` junto a la frase relevante, lo que resulta adecuado para asistentes documentales que deben justificar cada afirmación.
 - Procesamiento de documentos largos subidos por el usuario: existe una plantilla dedicada con marcadores `[file name]`, `[file content begin/end]` y la pregunta final, pensada para resumen, extracción de datos y question answering sobre el contenido del fichero.
 - Atención al cliente automatizada: la combinación de prompt de sistema con fecha, conversación multi-turno y supuesta reducción de alucinaciones apunta a su uso en bots de soporte; no obstante, sin datos de ventana de contexto ni de idiomas soportados no puede dimensionarse el escenario.
-- Análisis de sentimiento y clasificación de texto: la tabla de evaluación del autor incluye "Text Classification" (0,828) y "Sentiment Analysis" (0,792), lo que sugiere uso en pipelines de moderación o análisis de opinión, aunque el pipeline declarado en HuggingFace sea `feature-extraction` y no `text-classification`.
+- Análisis de sentimiento y clasificación de texto: la tabla de evaluación del autor incluye "Text Classification" (0,828) y "Sentiment Analysis" (0,792), lo que sugiere uso en pipelines de moderación o análisis de opinión, aunque el pipeline declarado en Hugging Face sea `feature-extraction` y no `text-classification`.
 
 ## Benchmarks y rendimiento
 
@@ -91,7 +91,7 @@ Dato adicional declarado en el texto: en AIME 2025, la precisión habría pasado
 - VRAM estimada para inferencia: no disponible. Sin conocer el número de parámetros no puede calcularse el consumo en ninguna cuantización.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible. El repositorio declara 0.0 GB de tamaño, por lo que actualmente no hay pesos que cargar y no es ejecutable en ningún hardware.
-- Opciones de despliegue: la model card remite a "our code repository", sin enlace disponible, y menciona un sitio web propio de chat y API que tampoco se enlaza. El tag `endpoints_compatible` indica compatibilidad teórica con HuggingFace Inference Endpoints, pero sin pesos publicados no puede desplegarse.
+- Opciones de despliegue: la model card remite a "our code repository", sin enlace disponible, y menciona un sitio web propio de chat y API que tampoco se enlaza. El tag `endpoints_compatible` indica compatibilidad teórica con Hugging Face Inference Endpoints, pero sin pesos publicados no puede desplegarse.
 - Latencia y throughput: no disponible. El único dato relacionado es el consumo de tokens de razonamiento por pregunta (media de 23K en AIME), que anticipa latencias altas y costes de cómputo elevados en tareas de razonamiento, pero no se aportan mediciones de tiempo.
 
 ## Comparativa con modelos similares
@@ -113,7 +113,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asfdasdaaa/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/asfdasdaaa/MyAwesomeModel-TestRepo
 - Repositorio de código: no disponible (la model card lo menciona sin enlazarlo)
 - Sitio web de chat y API: no disponible (la model card lo menciona sin enlazarlo)
 - Paper o informe técnico: no disponible

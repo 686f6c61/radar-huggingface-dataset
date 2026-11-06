@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hyelyn78/act_so101_pnp_clean` es una política de imitación para robótica basada en el método Action Chunking with Transformers (ACT), publicada en el Hub de HuggingFace con la librería LeRobot. La desarrolla el usuario hyelyn78 y resuelve una tarea muy concreta de manipulación: "Pick the block and place it in the box" (coger un bloque y colocarlo en una caja) con un robot de tipo `so_follower`. No es un modelo de lenguaje: es un controlador visuomotor que consume el estado articular y dos cámaras y emite comandos de acción de 6 dimensiones.
+`hyelyn78/act_so101_pnp_clean` es una política de imitación para robótica basada en el método Action Chunking with Transformers (ACT), publicada en el Hub de Hugging Face con la librería LeRobot. La desarrolla el usuario hyelyn78 y resuelve una tarea muy concreta de manipulación: "Pick the block and place it in the box" (coger un bloque y colocarlo en una caja) con un robot de tipo `so_follower`. No es un modelo de lenguaje: es un controlador visuomotor que consume el estado articular y dos cámaras y emite comandos de acción de 6 dimensiones.
 
 El modelo tiene 51.668.614 parámetros en formato safetensors y un repositorio de 0,2 GB. Se entrenó con 49 episodios (17.668 fotogramas a 30 FPS) teleoperados, durante 50.000 pasos con batch de 8 y optimizador AdamW. La relevancia es acotada: sirve como ejemplo reproducible de entrenamiento de políticas ACT end-to-end con LeRobot sobre un robot de bajo coste SO-101, no como componente de propósito general.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entradas | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `hyelyn78/act_so101_pnp_clean` | 51,7 M | Estado 6D + 2 cámaras 480x640 | Pick-and-place SO-101 | no disponible | HuggingFace (0 descargas, 0 likes) |
+| `hyelyn78/act_so101_pnp_clean` | 51,7 M | Estado 6D + 2 cámaras 480x640 | Pick-and-place SO-101 | no disponible | Hugging Face (0 descargas, 0 likes) |
 | ACT original (paper 2304.13705) | no disponible en esta ficha | Estado + cámaras | Manipulación diversa (ALOHA) | código de referencia público | Repositorio del paper |
 | Diffusion Policy | no disponible en esta ficha | Estado + cámaras | Manipulación diversa | no disponible en esta ficha | Repositorio público |
-| Otras políticas LeRobot en el Hub | variable | variable | variable | variable | HuggingFace |
+| Otras políticas LeRobot en el Hub | variable | variable | variable | variable | Hugging Face |
 
 La comparación cuantitativa con alternativas no está disponible: no hay benchmarks publicados para esta política ni métricas homogéneas frente a Diffusion Policy o VQ-BeT en la misma tarea y robot.
 
@@ -88,7 +88,7 @@ La comparación cuantitativa con alternativas no está disponible: no hay benchm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hyelyn78/act_so101_pnp_clean
+- Modelo en Hugging Face: https://huggingface.co/hyelyn78/act_so101_pnp_clean
 - Dataset de entrenamiento: https://huggingface.co/datasets/hyelyn78/so101_pnp_clean
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=hyelyn78/so101_pnp_clean
 - Paper de ACT: https://huggingface.co/papers/2304.13705

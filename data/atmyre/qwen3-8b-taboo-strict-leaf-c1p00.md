@@ -73,7 +73,7 @@ Otros adaptadores de la colección AO Anti-Reading (no detallados) podrían ser 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Atmyre/qwen3-8b-taboo-strict-leaf-c1p00
+- Repositorio en Hugging Face: https://huggingface.co/Atmyre/qwen3-8b-taboo-strict-leaf-c1p00
 - Colección AO Anti-Reading: https://huggingface.co/collections/Atmyre/ao-anti-reading
 - Artículo Activation Oracles (arXiv:2512.15674): https://arxiv.org/abs/2512.15674
 - Estudio que utiliza estos pesos (arXiv:2607.23379): https://arxiv.org/abs/2607.23379

@@ -107,7 +107,7 @@ La comparación cuantitativa con ACT o Diffusion Policy no es posible con los da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fecasado/giava-kitchen-burger-multi
+- Modelo en Hugging Face: https://huggingface.co/fecasado/giava-kitchen-burger-multi
 - Dataset de entrenamiento: https://huggingface.co/datasets/fecasado/burger-to-plate-good-320x240
 - Visualización del dataset (Space de LeRobot): https://huggingface.co/spaces/lerobot/visualize_dataset?path=fecasado/burger-to-plate-good-320x240
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

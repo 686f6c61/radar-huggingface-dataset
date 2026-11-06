@@ -72,8 +72,8 @@ No se dispone de datos comparativos con otros modelos en la informacion proporci
 
 ## Enlaces
 
-- Repositorio HuggingFace (copia): https://huggingface.co/lactroiii/Muse-Glimmer-30B
-- Repositorio HuggingFace oficial (Meta): https://huggingface.co/meta-models/Muse-Glimmer-30B
+- Repositorio Hugging Face (copia): https://huggingface.co/lactroiii/Muse-Glimmer-30B
+- Repositorio Hugging Face oficial (Meta): https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Blog de Meta Research: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model
 - Página de desarrolladores de Meta: https://developer.meta.com/ai/models/muse-glimmer/
 - Benchmarks y contexto en BenchLM: https://benchlm.ai/models/muse-glimmer-30b

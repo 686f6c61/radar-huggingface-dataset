@@ -70,9 +70,9 @@ Tiempo medio de inferencia: 2,56 s por video. El autor advierte que el conjunto 
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen2-VL-2B + LoRA destilado) | 2B | no disponible | 97,50% accuracy, 92,38% macro F1 | no disponible | HuggingFace |
-| Profesor (Qwen2.5-VL-3B + LoRA) | 3B | no disponible | 97,50% accuracy, 92,38% macro F1 | no disponible | HuggingFace |
-| Qwen2-VL-2B-Instruct (base sin adaptador) | 2B | no disponible | no evaluado en esta tarea | no disponible en la informacion proporcionada | HuggingFace |
+| Este adaptador (Qwen2-VL-2B + LoRA destilado) | 2B | no disponible | 97,50% accuracy, 92,38% macro F1 | no disponible | Hugging Face |
+| Profesor (Qwen2.5-VL-3B + LoRA) | 3B | no disponible | 97,50% accuracy, 92,38% macro F1 | no disponible | Hugging Face |
+| Qwen2-VL-2B-Instruct (base sin adaptador) | 2B | no disponible | no evaluado en esta tarea | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de otros modelos comparables en la misma tarea de reconocimiento de acciones aereas con siete clases en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de otros modelos comparables en la misma tarea de reconoc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mariambhd/drone-qwen2vl-2b-distilled-alpha07-lora-7class
+- Hugging Face: https://huggingface.co/mariambhd/drone-qwen2vl-2b-distilled-alpha07-lora-7class
 - Modelo base: https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct
 - Adaptador del profesor: https://huggingface.co/mariambhd/drone-qwen25vl-3b-lora-7class
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

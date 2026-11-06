@@ -2,7 +2,7 @@
 
 ## Resumen
 
-"Skskskd/ia-do-zero" (publicado en la model card como "Minha Primeira IA do Zero") es un clasificador de imagenes de digitos manuscritos entrenado sobre el dataset MNIST. El modelo lo desarrolla el usuario de HuggingFace Skskskd y se presenta explicitamente como un ejercicio de aprendizaje: la propia model card indica que fue "creado y entrenado automaticamente via script Python". No se trata, por tanto, de un modelo de lenguaje ni de un sistema de proposito general, sino de una red neuronal de vision muy acotada a una tarea de clasificacion de 10 clases (los digitos del 0 al 9).
+"Skskskd/ia-do-zero" (publicado en la model card como "Minha Primeira IA do Zero") es un clasificador de imagenes de digitos manuscritos entrenado sobre el dataset MNIST. El modelo lo desarrolla el usuario de Hugging Face Skskskd y se presenta explicitamente como un ejercicio de aprendizaje: la propia model card indica que fue "creado y entrenado automaticamente via script Python". No se trata, por tanto, de un modelo de lenguaje ni de un sistema de proposito general, sino de una red neuronal de vision muy acotada a una tarea de clasificacion de 10 clases (los digitos del 0 al 9).
 
 La informacion publicada es minima: no se detalla la arquitectura concreta (solo la etiqueta generica "custom"), no se declara el numero de parametros, no hay resultados de benchmarks ni una descripcion del proceso de entrenamiento mas alla de la mencion al dataset MNIST. El repositorio ocupa 0,0 GB, tiene 0 descargas y 0 likes en el momento de la consulta, lo que es coherente con un modelo de practica recien subido.
 
@@ -64,7 +64,7 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Skskskd/ia-do-zero | no disponible | Clasificacion MNIST (10 clases) | MIT | HuggingFace (0 descargas) | no disponible |
+| Skskskd/ia-do-zero | no disponible | Clasificacion MNIST (10 clases) | MIT | Hugging Face (0 descargas) | no disponible |
 | LeNet-5 (referencia historica) | ~61.000 | Clasificacion MNIST | Variable / dominio publico en implementaciones | Amplia (multiples repos) | Referencia clasica, no comparable directamente por falta de datos del modelo evaluado |
 | MLP simple de referencia (por ejemplo, implementaciones tipicas de MNIST) | ~100.000-300.000 | Clasificacion MNIST | Variable | Amplia | no disponible en esta ficha |
 
@@ -84,7 +84,7 @@ Nota: los valores de parametros de las alternativas corresponden a implementacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Skskskd/ia-do-zero
+- Modelo en Hugging Face: https://huggingface.co/Skskskd/ia-do-zero
 - Paper o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible (la model card menciona un `model.py` y un checkpoint `minha_ia_treinada.pth`, pero no enlaza a ninguna fuente externa)
 - Demo: no disponible

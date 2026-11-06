@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `qwen35-9b-equational-theory-sair-rft-k3-closedbook-notesstrict-finalgate-2ep-from-notes50m-kl` es un ajuste fino completo (full fine-tune) del modelo base Qwen/Qwen3.5-9B, publicado por el usuario U-WIN en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text orientado a una tarea muy específica: la resolución de problemas de teoría ecuacional (equational theory) dentro del marco del proyecto SAIR, mediante un pipeline de entrenamiento que combina SFT, RFT (Rejection Sampling Fine-Tuning) y regularización KL.
+El modelo `qwen35-9b-equational-theory-sair-rft-k3-closedbook-notesstrict-finalgate-2ep-from-notes50m-kl` es un ajuste fino completo (full fine-tune) del modelo base Qwen/Qwen3.5-9B, publicado por el usuario U-WIN en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text orientado a una tarea muy específica: la resolución de problemas de teoría ecuacional (equational theory) dentro del marco del proyecto SAIR, mediante un pipeline de entrenamiento que combina SFT, RFT (Rejection Sampling Fine-Tuning) y regularización KL.
 
 Con 9.653.104.368 parámetros totales (aproximadamente 9,65 mil millones) y un repositorio de 19,3 GB en formato safetensors, el modelo hereda la arquitectura Qwen3.5 del modelo base, sobre el que se ha aplicado un ajuste fino completo. El nombre del checkpoint refleja una configuración de entrenamiento muy concreta: dos épocas, notas estrictas en modo closed-book, un filtro final de validación (finalgate) y un coeficiente KL aplicado sobre un modelo de referencia entrenado con 50 millones de tokens de notas.
 
-La relevancia de este modelo es acotada pero clara: se trata de un artefacto de investigación reproducible más que de un modelo de propósito general. Su acceso está restringido en HuggingFace (requiere aceptar condiciones), tiene un número muy bajo de descargas (2) y no cuenta con likes, lo que indica que es un experimento reciente y de nicho. Resulta útil para quienes investigan técnicas de RFT con regularización KL aplicadas a dominios formales y para replicar resultados del proyecto SAIR.
+La relevancia de este modelo es acotada pero clara: se trata de un artefacto de investigación reproducible más que de un modelo de propósito general. Su acceso está restringido en Hugging Face (requiere aceptar condiciones), tiene un número muy bajo de descargas (2) y no cuenta con likes, lo que indica que es un experimento reciente y de nicho. Resulta útil para quienes investigan técnicas de RFT con regularización KL aplicadas a dominios formales y para replicar resultados del proyecto SAIR.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es acotada pero clara: se trata de un artefacto de 
 | Modelo base | Qwen/Qwen3.5-9B |
 | Metodo de entrenamiento | Full fine-tune + SFT + RFT + regularizacion KL |
 | Pipeline | image-text-to-text |
-| Acceso | Restringido (gated) en HuggingFace |
+| Acceso | Restringido (gated) en Hugging Face |
 | Tamano del repositorio | 19,3 GB |
 
 ## Arquitectura y entrenamiento
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated en HuggingFace y requiere aceptar condiciones antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated en Hugging Face y requiere aceptar condiciones antes de descargar los pesos.
 - Nicho muy específico: el ajuste está orientado a teoría ecuacional y al proyecto SAIR; su rendimiento en tareas generales puede degradarse respecto al modelo base por el full fine-tune.
 - Riesgo de alucinación: como todo modelo generativo, puede producir soluciones plausibles pero incorrectas en problemas formales; el modo closed-book agrava este riesgo al no disponer de verificación externa.
 - Idiomas no declarados: se desconoce el soporte multilingüe real tras el ajuste fino.
@@ -89,5 +89,5 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-rft-k3-closedbook-notesstrict-finalgate-2ep-from-notes50m-kl
+- Repositorio Hugging Face: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-rft-k3-closedbook-notesstrict-finalgate-2ep-from-notes50m-kl
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

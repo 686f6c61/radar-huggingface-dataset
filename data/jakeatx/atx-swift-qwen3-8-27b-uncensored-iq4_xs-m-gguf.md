@@ -74,11 +74,11 @@ La model card menciona que la tarjeta del modelo upstream (d0xin/Swift-Qwen3.8-2
 
 | Modelo | Parametros | Formato / cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ATX-Swift-Qwen3.8-27B-Uncensored-IQ4_XS-M (este) | 27,32 B | GGUF IQ4_XS-M, 4,56 bpw, 14,5 GiB | Receta para 200K; config de referencia 245.760 | swift-open-license-1.0 | Publico en HuggingFace; 0 descargas |
-| jakeatx/Qwen3.8-27B-ATX-IQ4_XS-M-GGUF | 27,32 B (misma base no abliterated) | GGUF IQ4_XS-M, mismo mapa de tipos | Misma receta | No disponible | Publico en HuggingFace |
-| d0xin/Swift-Qwen3.8-27B-Uncensored-BF16 | 27,32 B | safetensors BF16 | No disponible | No disponible | Publico en HuggingFace; es el modelo base de este build |
-| ukisai/Swift-Qwen3.8-27b | 27,32 B | No disponible (modelo original sin abliterar) | No disponible | No disponible | Publico en HuggingFace |
-| jakeatx/Qwopus3.8-27B-Flash-ATX-IQ4_XS-M-GGUF | No disponible | GGUF IQ4_XS-M con 11 tensores Q5_0 adicionales en capas tempranas | Misma receta | No disponible | Publico en HuggingFace |
+| ATX-Swift-Qwen3.8-27B-Uncensored-IQ4_XS-M (este) | 27,32 B | GGUF IQ4_XS-M, 4,56 bpw, 14,5 GiB | Receta para 200K; config de referencia 245.760 | swift-open-license-1.0 | Publico en Hugging Face; 0 descargas |
+| jakeatx/Qwen3.8-27B-ATX-IQ4_XS-M-GGUF | 27,32 B (misma base no abliterated) | GGUF IQ4_XS-M, mismo mapa de tipos | Misma receta | No disponible | Publico en Hugging Face |
+| d0xin/Swift-Qwen3.8-27B-Uncensored-BF16 | 27,32 B | safetensors BF16 | No disponible | No disponible | Publico en Hugging Face; es el modelo base de este build |
+| ukisai/Swift-Qwen3.8-27b | 27,32 B | No disponible (modelo original sin abliterar) | No disponible | No disponible | Publico en Hugging Face |
+| jakeatx/Qwopus3.8-27B-Flash-ATX-IQ4_XS-M-GGUF | No disponible | GGUF IQ4_XS-M con 11 tensores Q5_0 adicionales en capas tempranas | Misma receta | No disponible | Publico en Hugging Face |
 
 La comparacion cuantitativa de rendimiento entre estos modelos no es posible con la informacion disponible: no se publican resultados de benchmarks para ninguno de ellos en el material consultado. La diferencia funcional relevante es que este build parte de un modelo abliterated y que el de Qwopus ajusta el mapa de tensores para replicar las protecciones del Q4_K_S de Jackrong, mientras que en Swift no existe una mezcla de referencia y se usa el mapa base sin cambios.
 
@@ -97,7 +97,7 @@ La comparacion cuantitativa de rendimiento entre estos modelos no es posible con
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/jakeatx/ATX-Swift-Qwen3.8-27B-Uncensored-IQ4_XS-M-GGUF
+- Pagina del modelo en Hugging Face: https://huggingface.co/jakeatx/ATX-Swift-Qwen3.8-27B-Uncensored-IQ4_XS-M-GGUF
 - Modelo base (BF16, abliterated): https://huggingface.co/d0xin/Swift-Qwen3.8-27B-Uncensored-BF16
 - Modelo original sin abliterar: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Build ATX equivalente sobre la base no abliterated: https://huggingface.co/jakeatx/Qwen3.8-27B-ATX-IQ4_XS-M-GGUF

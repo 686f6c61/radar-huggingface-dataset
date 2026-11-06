@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Part 1 V5 (one_epoch) es un checkpoint de traduccion automatica publicado por el usuario Manas206 en HuggingFace, con pipeline declarado `translation`. No es un modelo preentrenado reutilizado: la model card indica explicitamente que se trata de un modelo decoder-only de PyTorch construido a medida, sin transformer preentrenado de partida, entrenado sobre el dataset `belumind/en-vi-ja-curated-500k-triplets`. El entrenamiento registrado cubre 6973 actualizaciones con 40 187 852 tokens de entrenamiento sin padding, correspondientes a una unica epoch.
+Part 1 V5 (one_epoch) es un checkpoint de traduccion automatica publicado por el usuario Manas206 en Hugging Face, con pipeline declarado `translation`. No es un modelo preentrenado reutilizado: la model card indica explicitamente que se trata de un modelo decoder-only de PyTorch construido a medida, sin transformer preentrenado de partida, entrenado sobre el dataset `belumind/en-vi-ja-curated-500k-triplets`. El entrenamiento registrado cubre 6973 actualizaciones con 40 187 852 tokens de entrenamiento sin padding, correspondientes a una unica epoch.
 
 El modelo usa un tokenizador BPE a nivel de byte compartido de 16 000 tokens y una capacidad de contexto de 384 tokens. El formato de prompt declarado para traduccion es `<bos> <vi-or-ja> SOURCE <en>`, lo que situa la direccion de traduccion desde vietnamita o japones hacia ingles. Las etiquetas del repositorio incluyen `mixture-of-experts`, aunque la model card no detalla la configuracion de expertos ni el reparto de parametros activos.
 
@@ -83,9 +83,9 @@ No disponible. La informacion proporcionada no incluye especificaciones ni resul
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Manas206/anlp-assignment2-part1-v5
+- Hugging Face: https://huggingface.co/Manas206/anlp-assignment2-part1-v5
 - Dataset de entrenamiento citado: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
-- Repositorio de codigo adicional: no disponible (el codigo de carga, `load_model.py`, se distribuye dentro del propio repositorio de HuggingFace)
+- Repositorio de codigo adicional: no disponible (el codigo de carga, `load_model.py`, se distribuye dentro del propio repositorio de Hugging Face)
 - Demo: no disponible

@@ -85,7 +85,7 @@ No debe interpretarse ninguna cifra como resultado obtenido: la pérdida de vali
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| csminion/apex-qwen36-terminal | Adaptador LoRA sobre Qwen3.6-35B-A3B | 21,17 M en el adaptador; base según nomenclatura 35B-A3B | 65.536 total / 8.192 salida | `apache-2.0-adapter-contributions-plus-upstream-notices` | Público en HuggingFace, 0 descargas y 0 likes | Sin benchmarks publicados |
+| csminion/apex-qwen36-terminal | Adaptador LoRA sobre Qwen3.6-35B-A3B | 21,17 M en el adaptador; base según nomenclatura 35B-A3B | 65.536 total / 8.192 salida | `apache-2.0-adapter-contributions-plus-upstream-notices` | Público en Hugging Face, 0 descargas y 0 likes | Sin benchmarks publicados |
 | Qwen/Qwen3.6-35B-A3B (modelo base) | Modelo completo MoE multimodal | No confirmado (nomenclatura 35B-A3B) | No disponible | No disponible en la información proporcionada | Público, revisión fijada `995ad96...` | No disponible |
 | Otros adaptadores de agente de terminal | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -107,7 +107,7 @@ La tarjeta menciona una comparación de proyecto que usa BF16, modo no-thinking 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/csminion/apex-qwen36-terminal
+- Adaptador en Hugging Face: https://huggingface.co/csminion/apex-qwen36-terminal
 - Modelo base Qwen/Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/tree/995ad96eacd98c81ed38be0c5b274b04031597b0
 - Dataset TerminalHorizon-3K: https://huggingface.co/datasets/shunzou05/TerminalHorizon-3K/blob/45f1e98e317d3639437f0eb02f4e8bc5825732f3/README.md
 - Dataset Nemotron-RL-Agentic-Terminal-Pivot-v1: https://huggingface.co/datasets/nvidia/Nemotron-RL-Agentic-Terminal-Pivot-v1/blob/eaef26944643644c8a3dbbf361ce6128142f5976/README.md

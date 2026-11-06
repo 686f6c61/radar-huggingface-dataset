@@ -101,7 +101,7 @@ Velocidad de síntesis:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sulabhkatiyar/indic-tiny-tts-marathi
+- Modelo en Hugging Face: https://huggingface.co/sulabhkatiyar/indic-tiny-tts-marathi
 - Colección INDIC TINY TTS MODELS: https://huggingface.co/collections/sulabhkatiyar/indic-tiny-tts-models-6aeae36f954418631a68676d
 - Dataset indic-tts-mini-24k: https://huggingface.co/datasets/sulabhkatiyar/indic-tts-mini-24k
 - Dataset indic-tts-multilingual-prepared: https://huggingface.co/datasets/sulabhkatiyar/indic-tts-multilingual-prepared

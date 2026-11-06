@@ -77,9 +77,9 @@ SpaceQA fue mejor en 32 preguntas y peor en 14 (test de signos, p = 0,011). No s
 
 | Modelo | Parámetros totales | Contexto | Resultado en la eval de 300 preguntas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SpaceQA-gpt-oss-20b-GGUF (este) | 20,9 B | no disponible | 78,0 % totalmente correctas; 61 afirmaciones no soportadas | Apache-2.0 (sujeta a política de uso de gpt-oss) | GGUF en HuggingFace |
-| ggml-org/gpt-oss-20b-GGUF (base) | 20,9 B | no disponible | 73,3 % totalmente correctas; 83 afirmaciones no soportadas | Apache-2.0 | GGUF en HuggingFace |
-| llmlabcse/SpaceQA-gpt-oss-20b (bf16) | 20,9 B | no disponible | no disponible (mismo ajuste, formato distinto) | Apache-2.0 | Pesos bf16 fusionados en HuggingFace |
+| SpaceQA-gpt-oss-20b-GGUF (este) | 20,9 B | no disponible | 78,0 % totalmente correctas; 61 afirmaciones no soportadas | Apache-2.0 (sujeta a política de uso de gpt-oss) | GGUF en Hugging Face |
+| ggml-org/gpt-oss-20b-GGUF (base) | 20,9 B | no disponible | 73,3 % totalmente correctas; 83 afirmaciones no soportadas | Apache-2.0 | GGUF en Hugging Face |
+| llmlabcse/SpaceQA-gpt-oss-20b (bf16) | 20,9 B | no disponible | no disponible (mismo ajuste, formato distinto) | Apache-2.0 | Pesos bf16 fusionados en Hugging Face |
 | GPT-OSS-120B | no disponible en la información proporcionada | no disponible | usado como corrector independiente de la evaluación, no evaluado como candidato | no disponible | no disponible |
 
 ## Limitaciones y advertencias

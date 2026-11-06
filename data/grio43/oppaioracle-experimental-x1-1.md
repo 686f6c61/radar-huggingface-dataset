@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OppaiOracle experimental-X1.1 es un modelo de clasificación de imágenes multilabel especializado en etiquetado automático de ilustración y anime, publicado por el usuario Grio43 en HuggingFace. Su arquitectura es un vision transformer propio (identificador interno `oppaioracle_vit`), entrenado desde cero sin backbone preentrenado, con 147.706.932 parámetros (unos 147,7 M) y una entrada fija de 448×448 píxeles. Se distribuye únicamente en pesos FP32, en dos formatos equivalentes: safetensors para PyTorch y ONNX para ONNX Runtime.
+OppaiOracle experimental-X1.1 es un modelo de clasificación de imágenes multilabel especializado en etiquetado automático de ilustración y anime, publicado por el usuario Grio43 en Hugging Face. Su arquitectura es un vision transformer propio (identificador interno `oppaioracle_vit`), entrenado desde cero sin backbone preentrenado, con 147.706.932 parámetros (unos 147,7 M) y una entrada fija de 448×448 píxeles. Se distribuye únicamente en pesos FP32, en dos formatos equivalentes: safetensors para PyTorch y ONNX para ONNX Runtime.
 
 El modelo es la continuación a 448 px de `Grio43/OppaiOracle-experimental-X1` (320 px, epoch 21, update 127.974). X1.1 parte de esos pesos, adapta todos los pesos del modelo y completa una programación de nueve épocas locales con 55.719 actualizaciones de optimizador y un cooldown WSD hasta tasa de aprendizaje cero. La salida son nombres de etiqueta con puntuaciones sigmoide independientes por etiqueta (clasificación multilabel real, no multinomial), excluyendo los tokens PAD y UNK.
 
@@ -18,14 +18,14 @@ Es relevante para quien construye conjuntos de datos de ilustración: automatiza
 | Longitud de contexto | no aplica: modelo de visión con entrada fija de 448×448 px (rejilla de posiciones 28×28) |
 | Tipos de cuantización | no se distribuyen pesos cuantizados; el release conserva FP32 sin conversión a BF16/FP16 (el entrenamiento sí usó BF16 AMP) |
 | Idiomas soportados | inglés (`en`) |
-| Licencia | `educational-use-only` (campo `license: other` en HuggingFace) |
+| Licencia | `educational-use-only` (campo `license: other` en Hugging Face) |
 | Formato de pesos | safetensors FP32 y ONNX FP32 (~1,18 GB en total) |
 | Tarea | clasificación de imágenes multilabel (image-classification, multi-label tagging) |
 | Entrada / salida | imagen 448×448 px → etiquetas con puntuaciones sigmoide; se excluyen PAD y UNK |
 | Umbral por defecto | 0,7085427045822144 (mejor micro-F1 en la rejilla de 200 puntos de la comparación de desarrollo sobre etiquetas compartidas) |
 | Tamaño del repositorio | 1,2 GB |
 | Modelo base | `Grio43/OppaiOracle-experimental-X1` (relación: finetune) |
-| Fecha de publicación | 12 de octubre de 2026 (metadatos de HuggingFace) |
+| Fecha de publicación | 12 de octubre de 2026 (metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -108,7 +108,7 @@ No se dispone de datos verificados de terceros comparables dentro de la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Grio43/OppaiOracle-experimental-X1.1
+- Modelo en Hugging Face: https://huggingface.co/Grio43/OppaiOracle-experimental-X1.1
 - Modelo base (experimental-X1): https://huggingface.co/Grio43/OppaiOracle-experimental-X1
 - Repositorio del linaje OppaiOracle: https://huggingface.co/Grio43/OppaiOracle
 - Árbol de ficheros del repositorio principal: https://huggingface.co/Grio43/OppaiOracle/tree/main

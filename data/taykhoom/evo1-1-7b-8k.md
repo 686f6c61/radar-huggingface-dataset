@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Evo1-1-7B-8K es un port minimalista para HuggingFace de la variante 1-7B-8K del modelo Evo 1, un modelo fundacional de ADN de ~7.000 millones de parámetros desarrollado originalmente por Together Computer. El port, realizado por Taykhoom, corrige cuatro deficiencias de la implementación original con `trust_remote_code`: expone el backbone sin cabeza LM, permite `output_hidden_states` y `output_attentions`, posibilita cambiar el backend de atención en tiempo de carga y elimina la dependencia obligatoria de `flash_attn`. La paridad numérica con el checkpoint de referencia se ha verificado como bit-exacta.
+Evo1-1-7B-8K es un port minimalista para Hugging Face de la variante 1-7B-8K del modelo Evo 1, un modelo fundacional de ADN de ~7.000 millones de parámetros desarrollado originalmente por Together Computer. El port, realizado por Taykhoom, corrige cuatro deficiencias de la implementación original con `trust_remote_code`: expone el backbone sin cabeza LM, permite `output_hidden_states` y `output_attentions`, posibilita cambiar el backend de atención en tiempo de carga y elimina la dependencia obligatoria de `flash_attn`. La paridad numérica con el checkpoint de referencia se ha verificado como bit-exacta.
 
 El modelo emplea una arquitectura StripedHyena, un diseño híbrido que combina 29 bloques basados en el operador Hyena (filtros IIR de ganancia no acotada) con 3 bloques de atención multi-cabeza causal, distribuidos en los índices de capa 8, 16 y 24. Se entrenó con un objetivo de predicción del siguiente token a nivel de byte sobre aproximadamente 300.000 millones de tokens del dataset OpenGenome, compuesto por genomas completos de procariotas, con una ventana de contexto de 8.192 tokens. Su relevancia actual radica en que permite a la comunidad investigadora usar un modelo genómico de última generación sin parchear código, con soporte para generación de secuencias, extracción de embeddings y scoring de log-probabilidades.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Taykhoom/Evo1-1-7B-8K | ~7B | 8.192 | StripedHyena | Apache 2.0 | HuggingFace |
-| Taykhoom/Evo1-1-7B-131K | ~7B | 131.072 | StripedHyena (RoPE escalada linealmente) | Apache 2.0 | HuggingFace |
-| Taykhoom/Evo1-1.5-7B-8K | ~7B | 8.192 | StripedHyena (entrenado con ~50% mas tokens) | Apache 2.0 | HuggingFace |
-| togethercomputer/evo-1-8k-base | ~7B | 8.192 | StripedHyena (original) | Apache 2.0 | HuggingFace |
+| Taykhoom/Evo1-1-7B-8K | ~7B | 8.192 | StripedHyena | Apache 2.0 | Hugging Face |
+| Taykhoom/Evo1-1-7B-131K | ~7B | 131.072 | StripedHyena (RoPE escalada linealmente) | Apache 2.0 | Hugging Face |
+| Taykhoom/Evo1-1.5-7B-8K | ~7B | 8.192 | StripedHyena (entrenado con ~50% mas tokens) | Apache 2.0 | Hugging Face |
+| togethercomputer/evo-1-8k-base | ~7B | 8.192 | StripedHyena (original) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la informacion proporcionada. La comparativa se limita a caracteristicas arquitectonicas y de entrenamiento. Otros modelos genomicos como Evo 2 (de Arc Institute) o Nucleotide Transformer no estan cubiertos por los datos disponibles.
 
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taykhoom/Evo1-1-7B-8K
+- Modelo en Hugging Face: https://huggingface.co/Taykhoom/Evo1-1-7B-8K
 - Coleccion Evo1 de Taykhoom: https://huggingface.co/collections/Taykhoom/evo1
 - Modelo original de Together Computer: https://huggingface.co/togethercomputer/evo-1-8k-base
 - Dataset OpenGenome: https://huggingface.co/datasets/LongSafari/open-genome

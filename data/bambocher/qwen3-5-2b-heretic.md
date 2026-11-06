@@ -97,7 +97,7 @@ La comparativa se limita a la familia Qwen porque la informacion proporcionada n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bambocher/Qwen3.5-2B-heretic
+- Modelo en Hugging Face: https://huggingface.co/bambocher/Qwen3.5-2B-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Modelo original postentrenado: https://huggingface.co/Qwen/Qwen3.5-2B
 - Licencia del base: https://huggingface.co/Qwen/Qwen3.5-2B/blob/main/LICENSE

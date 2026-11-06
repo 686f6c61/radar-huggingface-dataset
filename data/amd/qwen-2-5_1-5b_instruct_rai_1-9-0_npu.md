@@ -6,7 +6,7 @@ El modelo `amd/Qwen-2.5_1.5B_Instruct_rai_1.9.0_npu` es una distribución optimi
 
 El modelo base Qwen 2.5 1.5B Instruct es un transformer decoder-only denso de aproximadamente 1.500 millones de parámetros, con una ventana de contexto nativa de 32.768 tokens y capacidades de generación de texto, razonamiento, código y matemáticas, además de soporte de tool calling. La contribución de esta variante es puramente de despliegue: adapta esos pesos a un grafo ONNX ejecutable sobre la NPU Ryzen AI, lo que permite inferencia local con bajo consumo energético en equipos portátiles y de escritorio con hardware AMD compatible.
 
-Su relevancia radica en que ejemplifica el patrón de despliegue de LLMs en hardware de consumo no-GPU: en lugar de requerir una tarjeta gráfica dedicada, el modelo se ejecuta sobre la NPU integrada, liberando la GPU y reduciendo el consumo. El acceso está restringido (gated) en HuggingFace y requiere aceptar las condiciones del repositorio. El repositorio ocupa 2,4 GB y los pesos se distribuyen en formato ONNX.
+Su relevancia radica en que ejemplifica el patrón de despliegue de LLMs en hardware de consumo no-GPU: en lugar de requerir una tarjeta gráfica dedicada, el modelo se ejecuta sobre la NPU integrada, liberando la GPU y reduciendo el consumo. El acceso está restringido (gated) en Hugging Face y requiere aceptar las condiciones del repositorio. El repositorio ocupa 2,4 GB y los pesos se distribuyen en formato ONNX.
 
 ## Especificaciones tecnicas
 
@@ -65,15 +65,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato / plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/Qwen-2.5_1.5B_Instruct_rai_1.9.0_npu | 1,5B | no disponible (base: 32.768) | ONNX para NPU Ryzen AI | apache-2.0 | Gated en HuggingFace |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | safetensors, multiplataforma | apache-2.0 | Publico en HuggingFace |
-| Qwen/Qwen2.5-1.5B (base) | 1,5B | 32.768 tokens | safetensors | apache-2.0 | Publico en HuggingFace |
+| amd/Qwen-2.5_1.5B_Instruct_rai_1.9.0_npu | 1,5B | no disponible (base: 32.768) | ONNX para NPU Ryzen AI | apache-2.0 | Gated en Hugging Face |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | safetensors, multiplataforma | apache-2.0 | Publico en Hugging Face |
+| Qwen/Qwen2.5-1.5B (base) | 1,5B | 32.768 tokens | safetensors | apache-2.0 | Publico en Hugging Face |
 
 La comparación directa más relevante es con el checkpoint original de Qwen 2.5 1.5B Instruct: misma arquitectura y mismos parámetros, pero esta variante está optimizada exclusivamente para NPU Ryzen AI y declara únicamente inglés, mientras que el original es multiplataforma y multilingüe. No se dispone de datos de rendimiento comparativo entre ambas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El acceso es restringido (gated): es necesario aceptar las condiciones del repositorio en HuggingFace antes de descargar los pesos.
+- El acceso es restringido (gated): es necesario aceptar las condiciones del repositorio en Hugging Face antes de descargar los pesos.
 - La tarjeta declara únicamente inglés (`en`), aunque el modelo base Qwen 2.5 es multilingüe; el soporte real de otros idiomas en esta variante no está garantizado.
 - Dependencia estricta del runtime Ryzen AI 1.9.0 y de hardware AMD con NPU compatible; no es portable a GPU NVIDIA, CPU genérica ni a otros runtimes sin conversión adicional.
 - Al ser un modelo de 1,5B parámetros, su capacidad de razonamiento complejo, matemáticas avanzadas y código de gran escala es limitada en comparación con modelos de mayor tamaño.
@@ -84,7 +84,7 @@ La comparación directa más relevante es con el checkpoint original de Qwen 2.5
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Qwen-2.5_1.5B_Instruct_rai_1.9.0_npu
+- Hugging Face: https://huggingface.co/amd/Qwen-2.5_1.5B_Instruct_rai_1.9.0_npu
 - Modelo base Qwen 2.5 1.5B Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio Qwen 2.5: https://github.com/QwenLM/Qwen2.5
 - Documentación de Ryzen AI: https://ryzenai.docs.amd.com/

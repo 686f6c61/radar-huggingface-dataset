@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Aaqib099/gpt2-phishing-detection",
+  "slug": "aaqib099-gpt2-phishing-detection",
+  "author": "Aaqib099",
+  "url": "https://huggingface.co/Aaqib099/gpt2-phishing-detection",
+  "created_at": "2026-11-05T18:05:33.000Z",
+  "updated_at": "2026-11-05T19:07:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-classification",
+    "phishing-detection",
+    "email-classification",
+    "en",
+    "dataset:zefang-liu/phishing-email-dataset",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 124441344,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497785633,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aaqib099/gpt2-phishing-detection · Hugging Face",
+      "url": "https://huggingface.co/Aaqib099/gpt2-phishing-detection",
+      "snippet": "Text Classification model with 0.1B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "AI Phishing Email Detection and Generation - GitHub",
+      "url": "https://github.com/Hamzayousuf-4/AI_Phishing_Chatbot",
+      "snippet": "AI Phishing Email Detection and Generation This project includes a fine-tuned GPT-2 model for phishing email generation and a fine-tuned BERT model for phishing email detection. It also features a GUI built with tkinter and ttkbootstrap."
+    }
+  ]
+}

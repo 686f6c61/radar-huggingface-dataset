@@ -72,7 +72,7 @@ Nota: los datos de Demucs, Spleeter y Open-Unmix son aproximados y provienen de 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/rtikw/bsrnn-large
+- Repositorio de Hugging Face: https://huggingface.co/rtikw/bsrnn-large
 - Fuente original (Zenodo): https://zenodo.org/records/17516442
 - Código de la implementación (GitHub): https://github.com/magron88/bsrnn
 - Implementación alternativa (GitHub): https://github.com/sungwon23/BSRNN
@@ -81,7 +81,7 @@ Nota: los datos de Demucs, Spleeter y Open-Unmix son aproximados y provienen de 
 
 </think>## Resumen
 
-BSRNN large es un modelo de separación de fuentes musicales basado en la arquitectura BSRNN (Band-Split Recurrent Neural Network), diseñado para descomponer una mezcla de audio en cuatro stems: voces, batería, bajo y otros. Este repositorio en HuggingFace es un espejo (mirror) sin modificar de los checkpoints publicados originalmente en Zenodo por Paul Magron y colaboradores del Inria, con el objetivo de facilitar la descarga resumible y el seguimiento de instalación en aplicaciones como LocalMusic. La implementación es una réplica no oficial del modelo descrito en el artículo de BSRNN, entrenada con el dataset público MUSDB18-HQ, y presenta una diferencia de rendimiento de aproximadamente 0.5 dB SDR respecto al modelo original, según la documentación del código. El modelo es relevante para tareas de separación de fuentes en producción, ya que permite aislar instrumentos o voces de una mezcla sin necesidad de pistas multipista.
+BSRNN large es un modelo de separación de fuentes musicales basado en la arquitectura BSRNN (Band-Split Recurrent Neural Network), diseñado para descomponer una mezcla de audio en cuatro stems: voces, batería, bajo y otros. Este repositorio en Hugging Face es un espejo (mirror) sin modificar de los checkpoints publicados originalmente en Zenodo por Paul Magron y colaboradores del Inria, con el objetivo de facilitar la descarga resumible y el seguimiento de instalación en aplicaciones como LocalMusic. La implementación es una réplica no oficial del modelo descrito en el artículo de BSRNN, entrenada con el dataset público MUSDB18-HQ, y presenta una diferencia de rendimiento de aproximadamente 0.5 dB SDR respecto al modelo original, según la documentación del código. El modelo es relevante para tareas de separación de fuentes en producción, ya que permite aislar instrumentos o voces de una mezcla sin necesidad de pistas multipista.
 
 ## Especificaciones técnicas
 
@@ -146,12 +146,12 @@ Nota: los datos de Demucs, Spleeter y Open-Unmix son aproximados y provienen de 
 - El entrenamiento se realizó únicamente con MUSDB18-HQ, por lo que el rendimiento puede degradarse en estilos musicales muy diferentes o con mezclas de baja calidad.
 - No se han documentado sesgos específicos, pero la separación puede fallar en mezclas con saturación fuerte o instrumentos similares.
 - La licencia CC BY 4.0 permite uso comercial y modificación, pero requiere atribución a los autores originales.
-- El checkpoint es un espejo sin modificar, pero no se garantiza su disponibilidad a largo plazo en HuggingFace.
+- El checkpoint es un espejo sin modificar, pero no se garantiza su disponibilidad a largo plazo en Hugging Face.
 - No se proporciona información sobre requisitos de memoria, latencia o throughput para despliegue en producción.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/rtikw/bsrnn-large
+- Repositorio de Hugging Face: https://huggingface.co/rtikw/bsrnn-large
 - Fuente original (Zenodo): https://zenodo.org/records/17516442
 - Código de la implementación (GitHub): https://github.com/magronp/bsrnn
 - Otra implementación (GitHub): https://github.com/sungwon23/BSRNN

@@ -78,8 +78,8 @@ La comparativa se limita a modelos de la misma familia por falta de datos públi
 
 ## Enlaces
 
-- [Repositorio HuggingFace (Dawitozzie)](https://huggingface.co/Dawitozzie/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF)
-- [Repositorio HuggingFace original (LuffyTheFox)](https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF)
+- [Repositorio Hugging Face (Dawitozzie)](https://huggingface.co/Dawitozzie/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF)
+- [Repositorio Hugging Face original (LuffyTheFox)](https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF)
 - [Discusión sobre el modelo V5 (contexto de Genesis)](https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V5-GGUF/discussions/5)
 - [Artículo en Local AI News](https://www.localainews.co/news/multimodal/qwen3-6-35b-a3b-uncensored-genesis-hermes-v7-gguf-debuts-saying-yes/)
 - [Ficha del modelo V6 en AI Models FYI](https://www.aimodels.fyi/models/huggingFace/qwen3.6-35b-a3b-uncensored-genesis-hermes-v6-gguf-luffythefox)

@@ -73,8 +73,8 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| laya-telegram-spam | 321,9 M | no disponible | Clasificacion de spam en Telegram | Apache-2.0 | HuggingFace (0 descargas) |
-| convaiinnovations/laya-multilingual | no disponible | no disponible | Modelo base multilingue | no disponible | HuggingFace |
+| laya-telegram-spam | 321,9 M | no disponible | Clasificacion de spam en Telegram | Apache-2.0 | Hugging Face (0 descargas) |
+| convaiinnovations/laya-multilingual | no disponible | no disponible | Modelo base multilingue | no disponible | Hugging Face |
 | Jev (TypeSafe) | no disponible | no disponible | Moderacion propietaria | propietaria | Servicio de TypeSafe |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/borodutchlabs/laya-telegram-spam
+- Modelo en Hugging Face: https://huggingface.co/borodutchlabs/laya-telegram-spam
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Bot de ejemplo: https://t.me/jev_antispam_bot
 - Codigo fuente del bot: https://github.com/backmeupplz/jev_antispam_bot

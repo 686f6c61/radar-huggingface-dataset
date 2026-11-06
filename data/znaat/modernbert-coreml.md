@@ -95,7 +95,7 @@ La conversion de finnvoorhees es la unica alternativa Core ML conocida, pero el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/znaat/modernbert-coreml
+- Modelo en Hugging Face: https://huggingface.co/znaat/modernbert-coreml
 - Modelo base (ModernBERT-base): https://huggingface.co/answerdotai/ModernBERT-base
 - Repositorio de ModernBERT (AnswerDotAI): https://github.com/AnswerDotAI/ModernBERT
 - Blog de presentacion de ModernBERT: https://www.answer.ai/posts/2024-12-19-modernbert.html

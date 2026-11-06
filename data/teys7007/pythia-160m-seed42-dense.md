@@ -89,7 +89,7 @@ La diferencia clave es la densidad de checkpoints: el modelo de este repositorio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/teys7007/pythia-160m-seed42-dense
+- Repositorio Hugging Face: https://huggingface.co/teys7007/pythia-160m-seed42-dense
 - Modelo base: https://huggingface.co/EleutherAI/pythia-160m-deduped
 - Suite Pythia original: https://huggingface.co/EleutherAI/pythia-160m
 - Repositorio GitHub con código y resultados: https://github.com/Tejas7007/EMNLP_Findings_2026_Copying_Before_Suppression

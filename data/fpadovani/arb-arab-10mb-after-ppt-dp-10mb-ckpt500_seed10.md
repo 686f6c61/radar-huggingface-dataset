@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/arb-arab-10mb-after-ppt-Dp-10mb-ckpt500_seed10` es un ajuste fino de tipo SFT (supervised fine-tuning) sobre el modelo base `fpadovani/arb-arab-10mb-ppt-Dp-10mb_seed10`, ambos publicados por el usuario fpadovani, vinculado a la Universidad de Groningen segun la URL del proyecto en Weights & Biases. Se trata de un transformer decoder-only de 39.087.104 parametros totales, etiquetado como `gpt2` en HuggingFace y entrenado con la libreria TRL 0.23.0. El checkpoint corresponde al paso 500 de entrenamiento y a la semilla 10, lo que indica que forma parte de una bateria de experimentos reproducibles con distintas semillas.
+El modelo `fpadovani/arb-arab-10mb-after-ppt-Dp-10mb-ckpt500_seed10` es un ajuste fino de tipo SFT (supervised fine-tuning) sobre el modelo base `fpadovani/arb-arab-10mb-ppt-Dp-10mb_seed10`, ambos publicados por el usuario fpadovani, vinculado a la Universidad de Groningen segun la URL del proyecto en Weights & Biases. Se trata de un transformer decoder-only de 39.087.104 parametros totales, etiquetado como `gpt2` en Hugging Face y entrenado con la libreria TRL 0.23.0. El checkpoint corresponde al paso 500 de entrenamiento y a la semilla 10, lo que indica que forma parte de una bateria de experimentos reproducibles con distintas semillas.
 
 El interes de esta publicacion es fundamentalmente experimental y de investigacion. El nombre del proyecto asociado en Weights & Biases (`new_tokenizers`) y la nomenclatura del modelo base (`arb-arab-10mb-ppt-Dp-10mb`) apuntan a un estudio sobre tokenizadores y a un regimen de datos muy reducido, del orden de 10 MB, probablemente en arabe. No es un modelo orientado a produccion ni a uso general: su tamano (unas 30 veces menor que GPT-2 small) y la ausencia de documentacion sobre datos, idiomas y evaluacion lo sitúan como una pieza de un pipeline de experimentacion academica.
 
@@ -12,7 +12,7 @@ La relevancia ahora mismo es limitada fuera del contexto de investigacion en tok
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 39.087.104 (~39 M) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -23,11 +23,11 @@ La relevancia ahora mismo es limitada fuera del contexto de investigacion en tok
 | Tamano del repositorio | 0,9 GB |
 | Modelo base | `fpadovani/arb-arab-10mb-ppt-Dp-10mb_seed10` |
 | Metodo de entrenamiento | SFT con TRL 0.23.0 |
-| Fecha de creacion | 2026-09-16 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-16 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only de tipo GPT-2, segun la etiqueta de HuggingFace y el pipeline `text-generation`. Con 39.087.104 parametros, se situa en el rango de los modelos pequenos tipo GPT-2, muy por debajo de `gpt2` (124 M) y en linea con variantes destiladas. No hay informacion publicada sobre la configuracion exacta (numero de capas, dimensiones ocultas, cabezas de atencion) ni sobre el tokenizador, mas alla de que se empleo la version 0.22.1 de la libreria `tokenizers` y de que el proyecto de Weights & Biases se llama `new_tokenizers`, lo que sugiere que el tokenizador es una variable experimental central.
+La arquitectura es un transformer decoder-only de tipo GPT-2, segun la etiqueta de Hugging Face y el pipeline `text-generation`. Con 39.087.104 parametros, se situa en el rango de los modelos pequenos tipo GPT-2, muy por debajo de `gpt2` (124 M) y en linea con variantes destiladas. No hay informacion publicada sobre la configuracion exacta (numero de capas, dimensiones ocultas, cabezas de atencion) ni sobre el tokenizador, mas alla de que se empleo la version 0.22.1 de la libreria `tokenizers` y de que el proyecto de Weights & Biases se llama `new_tokenizers`, lo que sugiere que el tokenizador es una variable experimental central.
 
 El entrenamiento consistio en un ajuste fino supervisado (SFT) sobre el checkpoint base, ejecutado con TRL 0.23.0, Transformers 4.56.2, PyTorch 2.11.0 y Datasets 4.8.4. No se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases posteriores de RLHF o DPO; la etiqueta `sft` y la ausencia de menciones a preferencias indican que no las hubo. El identificador indica un checkpoint en el paso 500 con semilla 10, coherente con una campana de experimentos con multiples semillas. La model card no describe innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, MoE ni arquitecturas hibridas).
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| `fpadovani/arb-arab-10mb-after-ppt-Dp-10mb-ckpt500_seed10` | 39 M | no disponible | no disponible | HuggingFace, 0 descargas | no disponibles |
-| `distilgpt2` | 82 M | 1.024 tokens | MIT | HuggingFace, ampliamente usado | no comparables en la informacion disponible |
-| `gpt2` | 124 M | 1.024 tokens | MIT | HuggingFace, ampliamente usado | no comparables en la informacion disponible |
-| Modelos arabes de tipo GPT-2 (por ejemplo variantes de AraGPT2) | del orden de 100-135 M | no disponible | variable segun publicacion | HuggingFace | no comparables en la informacion disponible |
+| `fpadovani/arb-arab-10mb-after-ppt-Dp-10mb-ckpt500_seed10` | 39 M | no disponible | no disponible | Hugging Face, 0 descargas | no disponibles |
+| `distilgpt2` | 82 M | 1.024 tokens | MIT | Hugging Face, ampliamente usado | no comparables en la informacion disponible |
+| `gpt2` | 124 M | 1.024 tokens | MIT | Hugging Face, ampliamente usado | no comparables en la informacion disponible |
+| Modelos arabes de tipo GPT-2 (por ejemplo variantes de AraGPT2) | del orden de 100-135 M | no disponible | variable segun publicacion | Hugging Face | no comparables en la informacion disponible |
 
 No se dispone de datos de rendimiento de este checkpoint ni de evaluaciones comparativas directas, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. El modelo objeto de la ficha es aproximadamente la mitad de pequeno que `distilgpt2` y un tercio de `gpt2`, y a diferencia de ambos no declara licencia ni contexto.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento de este checkpoint ni de evaluaciones comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-10mb-after-ppt-Dp-10mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-10mb-after-ppt-Dp-10mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/fpadovani/arb-arab-10mb-ppt-Dp-10mb_seed10
 - Seguimiento del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/vaetoybf
 - Repositorio de TRL: https://github.com/huggingface/trl

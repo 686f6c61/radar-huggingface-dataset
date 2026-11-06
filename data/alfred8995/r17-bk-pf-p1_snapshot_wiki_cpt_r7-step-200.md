@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-p1_snapshot_wiki_cpt_r7-step-200` es un checkpoint de 1.414.111.232 parámetros (aproximadamente 1,41 mil millones) publicado por el usuario alfred8995 en HuggingFace. El tag `qwen3` indica que el modelo parte de la familia Qwen3 de Alibaba, aunque el recuento exacto de parámetros no coincide con ninguno de los tamaños oficiales publicados de esa familia (0,6B, 1,7B, 4B, 8B, 14B, 32B), por lo que se trata con alta probabilidad de un checkpoint derivado: ajuste fino, poda, fusión de capas o continuación de preentrenamiento sobre una base Qwen3.
+`alfred8995/r17-bk-pf-p1_snapshot_wiki_cpt_r7-step-200` es un checkpoint de 1.414.111.232 parámetros (aproximadamente 1,41 mil millones) publicado por el usuario alfred8995 en Hugging Face. El tag `qwen3` indica que el modelo parte de la familia Qwen3 de Alibaba, aunque el recuento exacto de parámetros no coincide con ninguno de los tamaños oficiales publicados de esa familia (0,6B, 1,7B, 4B, 8B, 14B, 32B), por lo que se trata con alta probabilidad de un checkpoint derivado: ajuste fino, poda, fusión de capas o continuación de preentrenamiento sobre una base Qwen3.
 
 El nombre del repositorio sugiere un proceso de *continued pre-training* (CPT) sobre datos de tipo wiki (`_wiki_cpt_`), en una séptima ronda de iteración (`r7`) y correspondiente al step 200 de entrenamiento. No hay model card, pipeline declarado, idiomas indicados ni resultados de evaluación publicados, y el repositorio no registra descargas ni valoraciones en el momento de redactar esta ficha.
 
@@ -22,7 +22,7 @@ Su relevancia práctica es limitada pero concreta: se trata de un artefacto inte
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 5,7 GB |
 | Precision inferida de los pesos | fp32 (5,7 GB / 1,414 B ≈ 4 bytes por parámetro) |
-| Acceso | gated (requiere aceptar condiciones en HuggingFace) |
+| Acceso | gated (requiere aceptar condiciones en Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-23 |
 | Ultima actualizacion | 2026-10-23 |
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - CPU: inferencia viable con llama.cpp u Ollama en cuantización Q4, a velocidades del orden de pocos tokens por segundo según núcleos y ancho de banda de memoria.
 - Opciones de despliegue: vLLM y TGI requieren pesos en safetensors (vLLM reconoce la arquitectura Qwen3, pero habría que verificar que el `config.json` sea compatible); llama.cpp y Ollama exigen conversión previa a GGUF, ya que el repo solo ofrece fp32.
 - Latencia y throughput: no disponibles. No se han publicado mediciones y no se pueden estimar con rigor sin conocer la configuración de capas y el contexto real.
-- Advertencia práctica: al ser un repo gated, cualquier pipeline automatizado necesita un token de HuggingFace con los términos aceptados.
+- Advertencia práctica: al ser un repo gated, cualquier pipeline automatizado necesita un token de Hugging Face con los términos aceptados.
 
 ## Comparativa con modelos similares
 
@@ -78,7 +78,7 @@ Los datos de los modelos de referencia provienen de conocimiento general de esos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| r17-bk-pf-p1_snapshot_wiki_cpt_r7-step-200 | 1,41 B | no disponible | other (gated) | HuggingFace, acceso restringido |
+| r17-bk-pf-p1_snapshot_wiki_cpt_r7-step-200 | 1,41 B | no disponible | other (gated) | Hugging Face, acceso restringido |
 | Qwen3-1.7B | ~2,03 B | 32K nativo, extensible con YaRN | Apache 2.0 | Público, model card completa |
 | Llama 3.2 1B | ~1,24 B | 128K | Llama 3.2 Community License | Público, gated ligero |
 | Gemma 3 1B | ~1 B | 32K | Gemma Terms of Use | Público, gated |
@@ -102,6 +102,6 @@ Frente a estas alternativas, el checkpoint de alfred8995 carece de las tres vent
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-p1_snapshot_wiki_cpt_r7-step-200
+- Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-p1_snapshot_wiki_cpt_r7-step-200
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web realizada; los resultados obtenidos no guardaban relación con el modelo y se han descartado por completo.
-- Referencia de la familia base (no verificada en esta búsqueda): documentación oficial de Qwen3 en los repositorios de Qwen en HuggingFace y GitHub.
+- Referencia de la familia base (no verificada en esta búsqueda): documentación oficial de Qwen3 en los repositorios de Qwen en Hugging Face y GitHub.

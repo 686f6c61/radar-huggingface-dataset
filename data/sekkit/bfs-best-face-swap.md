@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BFS (Best Face Swap) es una colección de adaptadores LoRA para sustitución de cara, cabeza y cuerpo en imágenes, publicada por el usuario sekkit en HuggingFace. No es un modelo generativo autónomo: es un conjunto de pesos LoRA que se cargan sobre modelos base de difusión, concretamente Qwen-Image 2.1, Qwen-Image-Edit 2509/2511, FLUX.2 Klein (4B y 9B, con variantes fp8), Krea 2 y, de forma experimental, LTX-2. El repositorio ocupa 13,0 GB y contiene más de veinte ficheros `safetensors`, cada uno atado a un modelo base y a un flujo de trabajo concretos.
+BFS (Best Face Swap) es una colección de adaptadores LoRA para sustitución de cara, cabeza y cuerpo en imágenes, publicada por el usuario sekkit en Hugging Face. No es un modelo generativo autónomo: es un conjunto de pesos LoRA que se cargan sobre modelos base de difusión, concretamente Qwen-Image 2.1, Qwen-Image-Edit 2509/2511, FLUX.2 Klein (4B y 9B, con variantes fp8), Krea 2 y, de forma experimental, LTX-2. El repositorio ocupa 13,0 GB y contiene más de veinte ficheros `safetensors`, cada uno atado a un modelo base y a un flujo de trabajo concretos.
 
 El problema que resuelve es el de la transferencia de identidad controlada en edición de imagen: sustituir la cara o la cabeza de una fotografía por la de una imagen de referencia manteniendo iluminación, pose y coherencia del resto de la escena. Al estar empaquetado como LoRA, se puede activar y desactivar sobre el modelo base sin reentrenar, y se integra en ComfyUI mediante los ficheros JSON de flujo de trabajo incluidos en el repositorio.
 
@@ -24,7 +24,7 @@ Su relevancia es doble: por un lado cubre varios ecosistemas de difusión de for
 | Librería | diffusers |
 | Modelos base | Qwen/Qwen-Image-2.1, Qwen/Qwen-Image-Edit-2511 (y 2509), black-forest-labs/FLUX.2-klein-9B, FLUX.2-klein-4B, FLUX.2-klein-base-4B, FLUX.2-klein-base-9B, FLUX.2-klein-9b-fp8, FLUX.2-klein-4b-fp8, krea/Krea-2-Raw |
 | Tamaño del repositorio | 13,0 GB |
-| Fecha de publicación | 2026-10-25 (según metadatos de HuggingFace) |
+| Fecha de publicación | 2026-10-25 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Enfoque | Modelos base soportados | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BFS (este repositorio) | LoRA de face/head/body swap | Qwen-Image 2.1, Qwen-Image-Edit 2509/2511, FLUX.2 Klein 4B/9B, Krea 2, LTX-2 | MIT | HuggingFace, safetensors + workflows ComfyUI |
-| InstantID | Adaptador de identidad con modelo de cara auxiliar | SDXL | Apache-2.0 | GitHub y HuggingFace |
-| IP-Adapter FaceID | Adaptador de imagen de referencia con encoder facial | SD 1.5 y SDXL | Apache-2.0 | GitHub y HuggingFace |
-| PuLID | Adaptador de identidad con encoder facial y proyección | SDXL y FLUX.1 | Apache-2.0 (código) | GitHub y HuggingFace |
+| BFS (este repositorio) | LoRA de face/head/body swap | Qwen-Image 2.1, Qwen-Image-Edit 2509/2511, FLUX.2 Klein 4B/9B, Krea 2, LTX-2 | MIT | Hugging Face, safetensors + workflows ComfyUI |
+| InstantID | Adaptador de identidad con modelo de cara auxiliar | SDXL | Apache-2.0 | GitHub y Hugging Face |
+| IP-Adapter FaceID | Adaptador de imagen de referencia con encoder facial | SD 1.5 y SDXL | Apache-2.0 | GitHub y Hugging Face |
+| PuLID | Adaptador de identidad con encoder facial y proyección | SDXL y FLUX.1 | Apache-2.0 (código) | GitHub y Hugging Face |
 
 Nota: los datos de las tres alternativas provienen de conocimiento general sobre esos proyectos y no de la información proporcionada en esta ficha; conviene verificarlos en sus repositorios. La comparación de rendimiento cuantitativo no es posible porque BFS no publica métricas. Frente a las alternativas, la diferencia principal de BFS es la cobertura multi-familia (incluidos modelos recientes como Qwen-Image 2.1 y FLUX.2 Klein) y la inclusión de body swap, mientras que las alternativas citadas están centradas en SDXL/FLUX.1 y en identidad facial.
 
@@ -93,7 +93,7 @@ Nota: los datos de las tres alternativas provienen de conocimiento general sobre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sekkit/BFS-Best-Face-Swap
+- Hugging Face: https://huggingface.co/sekkit/BFS-Best-Face-Swap
 - Guía Qwen Image 2.1 (head): https://huggingface.co/sekkit/BFS-Best-Face-Swap/blob/main/docs/qwen-image-2.1.md
 - Guía Qwen Image 2.1 (body swap): https://huggingface.co/sekkit/BFS-Best-Face-Swap/blob/main/docs/qwen-image-2.1-body.md
 - Guía Qwen Image Edit 2509/2511: https://huggingface.co/sekkit/BFS-Best-Face-Swap/blob/main/docs/qwen-image-edit.md

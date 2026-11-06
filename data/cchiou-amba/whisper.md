@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Whisper-Tiny Encoder (Ambarella N1-655) | no disponible (encoder de Whisper-Tiny) | 30 s de audio | Binario DAG Cavalry | MIT | HuggingFace (cchiou-amba/Whisper) |
-| OpenAI Whisper-Tiny (`openai/whisper-tiny`) | ~39 M (modelo completo, dato no confirmado en la informacion proporcionada) | 30 s de audio | PyTorch / safetensors | MIT | HuggingFace |
-| `onnx-community/whisper-tiny` | no disponible | 30 s de audio | ONNX | MIT | HuggingFace |
+| Whisper-Tiny Encoder (Ambarella N1-655) | no disponible (encoder de Whisper-Tiny) | 30 s de audio | Binario DAG Cavalry | MIT | Hugging Face (cchiou-amba/Whisper) |
+| OpenAI Whisper-Tiny (`openai/whisper-tiny`) | ~39 M (modelo completo, dato no confirmado en la informacion proporcionada) | 30 s de audio | PyTorch / safetensors | MIT | Hugging Face |
+| `onnx-community/whisper-tiny` | no disponible | 30 s de audio | ONNX | MIT | Hugging Face |
 
 La comparación directa con alternativas de la misma categoría (encoders de audio para ASR) no está disponible en la información proporcionada; los datos de parámetros del modelo original no se confirman en la model card de este artefacto.
 
@@ -85,7 +85,7 @@ La comparación directa con alternativas de la misma categoría (encoders de aud
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cchiou-amba/Whisper
+- Hugging Face: https://huggingface.co/cchiou-amba/Whisper
 - Binario del modelo: https://huggingface.co/cchiou-amba/Whisper/blob/main/n1-655_whisper_tiny_encoder_amba_optimized.bin
 - Paper original: https://arxiv.org/abs/2212.04356
 - Repositorio de referencia de OpenAI: https://github.com/openai/whisper

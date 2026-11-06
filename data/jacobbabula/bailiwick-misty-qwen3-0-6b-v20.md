@@ -79,7 +79,7 @@ No se dispone de comparativa con otros modelos en la información proporcionada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jacobbabula/bailiwick-misty-qwen3-0.6b-v20
+- Hugging Face: https://huggingface.co/jacobbabula/bailiwick-misty-qwen3-0.6b-v20
 - GitHub (model card y documentación): https://github.com/jacobbabula/bailiwick-misty-qwen3-0.6b
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Qwen3 Technical Report: https://arxiv.org/html/2505.09388v1
@@ -166,8 +166,8 @@ No se dispone de datos de comparación con otros modelos de la misma categoría 
 
 ## Enlaces
 
-- [HuggingFace - Bailiwick Misty Qwen3 0.6B v20](https://huggingface.co/jacobbabula/bailiwick-misty-qwen3-0.6b-v20)
+- [Hugging Face - Bailiwick Misty Qwen3 0.6B v20](https://huggingface.co/jacobbabula/bailiwick-misty-qwen3-0.6b-v20)
 - [GitHub - Documentación y model card](https://github.com/jacobbabula/bailiwick-misty-qwen3-0.6b)
-- [Qwen/Qwen3-0.6B en HuggingFace](https://huggingface.co/Qwen/Qwen3-0.6B)
+- [Qwen/Qwen3-0.6B en Hugging Face](https://huggingface.co/Qwen/Qwen3-0.6B)
 - [Qwen3 Technical Report (arXiv)](https://arxiv.org/html/2505.09388v1)
 - [Guía completa de Qwen3 (referencia externa)](https://insiderllm.com/guides/qwen3-complete-guide/)

@@ -77,7 +77,7 @@ No hay información sobre el rendimiento relativo de estos modelos, por lo que n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MergekitCloud/mergekit-71
+- Hugging Face: https://huggingface.co/MergekitCloud/mergekit-71
 - Paper Model Stock: https://arxiv.org/abs/2403.19522
 - Repositorio mergekit: https://github.com/arcee-ai/mergekit
 - Modelo base ArliAI: https://huggingface.co/ArliAI/Llama-3.1-8B-ArliAI-RPMax-v1.3

@@ -91,10 +91,10 @@ No existe puntuación de SWE-bench Verified para ningún checkpoint de este repo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B (base) | 4,21 B (LM); 4,54 B con visión | no disponible | 45,07 % pass@1 en holdout R2E de 71 tareas (96/213) | Apache 2.0 | Público en HuggingFace |
-| Este repositorio, step40 | 4,21 B (LM) | 65.536 tokens en rollout | 56,34 % pass@1 en el mismo holdout (120/213) | Apache 2.0 | Público en HuggingFace; 0 descargas |
+| Qwen3.5-4B (base) | 4,21 B (LM); 4,54 B con visión | no disponible | 45,07 % pass@1 en holdout R2E de 71 tareas (96/213) | Apache 2.0 | Público en Hugging Face |
+| Este repositorio, step40 | 4,21 B (LM) | 65.536 tokens en rollout | 56,34 % pass@1 en el mismo holdout (120/213) | Apache 2.0 | Público en Hugging Face; 0 descargas |
 | Ejecución anterior `nwf0917a` (publicada aparte) | no disponible | 98.304 tokens en evaluación, 100 turnos | 47,80 % pass@1 en SWE-bench Verified | no disponible | Publicada por separado |
-| Agentes del proyecto R2E-Gym | no disponible | no disponible | 51 % en SWE-bench Verified (cifra del proyecto, no de este checkpoint) | no disponible | GitHub y HuggingFace |
+| Agentes del proyecto R2E-Gym | no disponible | no disponible | 51 % en SWE-bench Verified (cifra del proyecto, no de este checkpoint) | no disponible | GitHub y Hugging Face |
 
 La comparación entre filas no es homogénea: las dos últimas usan SWE-bench Verified, mientras que los checkpoints de este repositorio se midieron en el holdout de 71 tareas de R2E-Gym. No se dispone de otros modelos comparables con datos verificables en la información proporcionada.
 
@@ -116,9 +116,9 @@ La comparación entre filas no es homogénea: las dos últimas usan SWE-bench Ve
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/ziansu/r2egym-rad-negative-warmup
+- Repositorio del modelo en Hugging Face: https://huggingface.co/ziansu/r2egym-rad-negative-warmup
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio oficial de R2E-Gym (COLM 2025): https://github.com/R2E-Gym/R2E-Gym
 - Repositorio de R2E-Gym en el proyecto agentica: https://github.com/agentica-project/R2E-Gym
-- Datasets de la organización R2E-Gym en HuggingFace: https://huggingface.co/R2E-Gym/datasets
+- Datasets de la organización R2E-Gym en Hugging Face: https://huggingface.co/R2E-Gym/datasets
 - Página del trabajo R2E-Gym en NeurIPS 2025: https://neurips.cc/virtual/2025/131676

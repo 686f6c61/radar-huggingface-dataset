@@ -92,7 +92,7 @@ Nota: los datos de los modelos comparativos provienen de sus model cards públic
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/Spark-X2.6-4B-Tema_Q-Abliterated-i1-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Spark-X2.6-4B-Tema_Q-Abliterated-i1-GGUF
 - Modelo base: https://huggingface.co/yuna1126/Spark-X2.6-4B-Tema_Q-Abliterated
 - Repositorio de quants estáticos del mismo autor: https://huggingface.co/mradermacher/Spark-X2.6-4B-Tema_Q-Abliterated-GGUF
 - Página de descargas del autor para este modelo: https://hf.tst.eu/model#Spark-X2.6-4B-Tema_Q-Abliterated-i1-GGUF

@@ -59,11 +59,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `sam-guided-vlas/train_1_2_pile_random_pose__no_mask__ur5e__pi05__seed_0__b25_from_panda45k` | 4.143.404.816 | No disponible | Apache 2.0 | HuggingFace |
-| `lerobot/pi05_base` | 4.143.404.816 | No disponible | Apache 2.0 | HuggingFace |
-| `sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras__live__pi05__seed_0` | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| `sam-guided-vlas/train_1_2_pile_random_pose__no_mask__ur5e__pi05__seed_0__b25_from_panda45k` | 4.143.404.816 | No disponible | Apache 2.0 | Hugging Face |
+| `lerobot/pi05_base` | 4.143.404.816 | No disponible | Apache 2.0 | Hugging Face |
+| `sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras__live__pi05__seed_0` | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
-No se dispone de benchmarks comparativos entre estos modelos. El modelo analizado es un fine-tuning específico para UR5e sobre el dataset de pila de objetos, mientras que `lerobot/pi05_base` es el modelo base sin ajuste fino. El tercer modelo de la tabla es otro fine-tuning de π₀.₅ encontrado en HuggingFace, pero no se han proporcionado detalles técnicos ni de rendimiento en la información disponible.
+No se dispone de benchmarks comparativos entre estos modelos. El modelo analizado es un fine-tuning específico para UR5e sobre el dataset de pila de objetos, mientras que `lerobot/pi05_base` es el modelo base sin ajuste fino. El tercer modelo de la tabla es otro fine-tuning de π₀.₅ encontrado en Hugging Face, pero no se han proporcionado detalles técnicos ni de rendimiento en la información disponible.
 
 ## Limitaciones y advertencias
 
@@ -76,7 +76,7 @@ No se dispone de benchmarks comparativos entre estos modelos. El modelo analizad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__no_mask__ur5e__pi05__seed_0__b25_from_panda45k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__no_mask__ur5e__pi05__seed_0__b25_from_panda45k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_pile_random_pose__no_mask__ur5e
 - Blog de Physical Intelligence sobre π₀.₅: https://www.physicalintelligence.company/blog/pi05

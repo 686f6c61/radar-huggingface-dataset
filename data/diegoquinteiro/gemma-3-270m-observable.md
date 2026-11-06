@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ar
 
 ## Requisitos de hardware
 
-- Al ser un modelo de 270M de parámetros, puede ejecutarse en CPU sin necesidad de GPU. El Space de HuggingFace `umint/gemma-3-270m` demuestra que es viable en CPU.
+- Al ser un modelo de 270M de parámetros, puede ejecutarse en CPU sin necesidad de GPU. El Space de Hugging Face `umint/gemma-3-270m` demuestra que es viable en CPU.
 - El export ONNX está pensado para navegador, por lo que puede ejecutarse en portátiles, tablets o incluso smartphones con un navegador moderno.
 - La VRAM estimada es mínima: con cuantización float16, los pesos ocupan aproximadamente 540 MB (270M × 2 bytes), más la tabla de embeddings int8. En total, el repo pesa 0.8 GB, pero en memoria cabría en menos de 1 GB.
 - No se requieren GPUs específicas; cualquier GPU con al menos 1 GB de VRAM podría acelerar la inferencia, pero no es necesaria.
@@ -82,8 +82,8 @@ La comparativa se basa en datos públicos de los modelos base. El artefacto obse
 
 ## Enlaces
 
-- Artefacto en HuggingFace: https://huggingface.co/diegoquinteiro/Gemma-3-270M-Observable
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-3-270m
+- Artefacto en Hugging Face: https://huggingface.co/diegoquinteiro/Gemma-3-270M-Observable
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-3-270m
 - Blog de Google sobre Gemma 3 270M: https://developers.googleblog.com/en/introducing-gemma-3-270m/
 - Página de LM Studio del modelo: https://lmstudio.ai/models/google/gemma-3-270m
 - Página de DeepMind sobre Gemma 3: https://deepmind.google/models/gemma/gemma-3/

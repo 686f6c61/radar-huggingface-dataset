@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chaturanga Mini | ~51,8M | no disponible | Ajedrez (SAN, ingles) | apache-2.0 | HuggingFace (repo de 0,2 GB) |
+| Chaturanga Mini | ~51,8M | no disponible | Ajedrez (SAN, ingles) | apache-2.0 | Hugging Face (repo de 0,2 GB) |
 | Chaturanga Nano | ~25M | no disponible | Ajedrez (SAN, ingles) | no disponible en la informacion | Misma familia, segun la model card |
 | Chaturanga Neo (Nano+) | no disponible | no disponible | Ajedrez (SAN, ingles) | no disponible en la informacion | Misma familia, segun la model card |
-| Supra-50M-Base | ~50M | no disponible | Modelo base de proposito general | no disponible en la informacion | HuggingFace (SupraLabs) |
+| Supra-50M-Base | ~50M | no disponible | Modelo base de proposito general | no disponible en la informacion | Hugging Face (SupraLabs) |
 
 La model card menciona ademas las variantes Pro y Ultra (Pro+) dentro de la familia Chaturanga, pero no aporta parametros, contexto ni licencia para ellas. No se dispone de datos de benchmarks ni de Elo que permitan comparar el rendimiento relativo entre estas variantes o frente a modelos de ajedrez de otros autores.
 
@@ -86,8 +86,8 @@ La model card menciona ademas las variantes Pro y Ultra (Pro+) dentro de la fami
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DireDreadlord/Chaturanga-Mini
+- Modelo en Hugging Face: https://huggingface.co/DireDreadlord/Chaturanga-Mini
 - Modelo base: https://huggingface.co/SupraLabs/Supra-50M-Base
 - Coleccion Supra: https://huggingface.co/collections/SupraLabs/supra2
 - Dataset de ajuste: https://huggingface.co/datasets/mlabonne/chessllm
-- Interfaz grafica incluida en el repositorio: `chaturanga_gui.py` (archivo dentro del propio repositorio de HuggingFace)
+- Interfaz grafica incluida en el repositorio: `chaturanga_gui.py` (archivo dentro del propio repositorio de Hugging Face)

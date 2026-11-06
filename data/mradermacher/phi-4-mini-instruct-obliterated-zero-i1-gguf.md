@@ -65,7 +65,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Phi-4-Mini-Instruct-Obliterated-zero-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Phi-4-Mini-Instruct-Obliterated-zero-i1-GGUF
 - Modelo base: https://huggingface.co/ArRENCEAI/Phi-4-Mini-Instruct-Obliterated-zero
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/Phi-4-Mini-Instruct-Obliterated-zero-GGUF
 - Pagina de descarga conveniente: https://hf.tst.eu/model#Phi-4-Mini-Instruct-Obliterated-zero-i1-GGUF

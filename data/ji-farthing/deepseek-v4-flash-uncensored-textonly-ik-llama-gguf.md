@@ -6,7 +6,7 @@ Este repositorio no es un modelo entrenado desde cero, sino una cuantización en
 
 El interés práctico está en dos factores. Primero, permite ejecutar un modelo de escala ~284B en hardware propio mediante `ik_llama.cpp` y cuantizaciones con imatrix, un pipeline pensado precisamente para arquitecturas MoE con expertos descargables a RAM. Segundo, ofrece una variante sin mecanismos de rechazo, algo relevante para investigación en alineación, red teaming y evaluación de seguridad, pero arriesgado para cualquier despliegue de cara al público.
 
-Las limitaciones documentales son importantes: la ficha de HuggingFace no publica longitud de contexto, número de parámetros activos, composición del dataset, proceso de alineamiento ni resultados de benchmarks, y el repositorio tiene 0 descargas y 0 likes en el momento de la consulta. Además, el acceso está restringido (gated). Todo dato no verificado se marca como «no disponible» a lo largo de esta ficha.
+Las limitaciones documentales son importantes: la ficha de Hugging Face no publica longitud de contexto, número de parámetros activos, composición del dataset, proceso de alineamiento ni resultados de benchmarks, y el repositorio tiene 0 descargas y 0 likes en el momento de la consulta. Además, el acceso está restringido (gated). Todo dato no verificado se marca como «no disponible» a lo largo de esta ficha.
 
 ## Especificaciones técnicas
 
@@ -35,7 +35,7 @@ Tampoco hay datos sobre tokens de entrenamiento, composición del corpus, uso de
 - Razonamiento y generación de código: capacidad esperable por la familia del modelo base, pero no verificada con benchmarks en la información disponible.
 - Respuesta sin rechazos ante peticiones que un modelo alineado rechazaría (efecto declarado del proceso de abliteración).
 - Uso como modelo de sólo texto: la torre de visión del modelo base se ha eliminado explícitamente, por lo que no procesa imágenes.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere despliegue mediante API compatible con el formato de HuggingFace/OpenAI, aunque no se detalla la implementación.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere despliegue mediante API compatible con el formato de Hugging Face/OpenAI, aunque no se detalla la implementación.
 - Soporte de tool calling / function calling: no disponible (no documentado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
 - Modo «thinking» o razonamiento extendido: no disponible (no documentado).
@@ -53,7 +53,7 @@ Tampoco hay datos sobre tokens de entrenamiento, composición del corpus, uso de
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La ficha de HuggingFace no incluye MMLU, HumanEval, GSM8K, MT-Bench ni evaluaciones de seguridad, y la búsqueda web realizada no devolvió ningún resultado relacionado con el modelo: los enlaces encontrados corresponden a homónimos sin relación (la letra «ji», un vídeo musical y entradas de diccionario).
+No se han publicado resultados de benchmarks en la información disponible. La ficha de Hugging Face no incluye MMLU, HumanEval, GSM8K, MT-Bench ni evaluaciones de seguridad, y la búsqueda web realizada no devolvió ningún resultado relacionado con el modelo: los enlaces encontrados corresponden a homónimos sin relación (la letra «ji», un vídeo musical y entradas de diccionario).
 
 ## Requisitos de hardware
 
@@ -86,14 +86,14 @@ Frente al modelo base, la diferencia documentada es la eliminación de la torre 
 - Idiomas: solo inglés y chino declarados. El rendimiento en castellano no está verificado y probablemente sea inferior; no debe asumirse calidad multilingüe.
 - Contexto: longitud desconocida. Planificar cualquier caso de uso con documentos largos exige medirla experimentalmente antes de dimensionar la caché KV.
 - Licencia: el repositorio declara MIT, pero al ser un derivado la licencia del modelo base `orcarouter/DeepSeek-V4-Flash-Vision-Uncensored` condiciona el uso comercial. No se especifica en la información disponible y conviene verificarla antes de producción.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace. Esto impide la descarga automatizada en CI/CD sin un token con permisos y puede bloquear la reproducibilidad.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face. Esto impide la descarga automatizada en CI/CD sin un token con permisos y puede bloquear la reproducibilidad.
 - Madurez: 0 descargas y 0 likes. No hay evidencia de validación por parte de la comunidad, ni de que la cuantización funcione correctamente en `llama.cpp` estándar o en otros runtimes. Verificar la integridad y el funcionamiento del GGUF antes de integrarlo.
 - Autor tercero: `ji-farthing` es el empaquetador, no el desarrollador del modelo. No hay garantía de mantenimiento, corrección de errores ni soporte.
 - Cumplimiento normativo: el uso de modelos sin filtros puede chocar con obligaciones del Reglamento Europeo de IA en materia de transparencia y gestión de riesgos si se despliega en la UE.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ji-farthing/DeepSeek-V4-Flash-Uncensored-TextOnly-ik-llama-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ji-farthing/DeepSeek-V4-Flash-Uncensored-TextOnly-ik-llama-GGUF
 - Modelo base declarado: https://huggingface.co/orcarouter/DeepSeek-V4-Flash-Vision-Uncensored
 - Proyecto `ik_llama.cpp` (referenciado por el tag `ik_llama.cpp`, usado para la cuantización con imatrix): https://github.com/ikawrakow/ik_llama.cpp
 - `llama.cpp`, runtime alternativo para GGUF: https://github.com/ggml-org/llama.cpp

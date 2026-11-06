@@ -32,14 +32,14 @@ La relevancia de esta ficha es limitada y debe interpretarse con cautela: la mod
 
 No hay información publicada en la model card sobre la arquitectura del modelo base: no se especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida o un modelo de espacio de estados. Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o similares.
 
-El único dato técnico verificable del proceso de publicación es que se trata de una cuantización estática (quantize_version: 2, output_tensor_quantised: 1) realizada con el pipeline de conversión de GGUF a partir de pesos en formato HuggingFace (convert_type: hf). El campo vocab_type aparece vacío en los metadatos y no se ha aplicado ninguna exclusión de ficheros mmproj, lo que sugiere que no se distribuye un proyector multimodal en este repositorio, aunque esto no puede confirmarse como ausencia de capacidad de visión en el modelo base.
+El único dato técnico verificable del proceso de publicación es que se trata de una cuantización estática (quantize_version: 2, output_tensor_quantised: 1) realizada con el pipeline de conversión de GGUF a partir de pesos en formato Hugging Face (convert_type: hf). El campo vocab_type aparece vacío en los metadatos y no se ha aplicado ninguna exclusión de ficheros mmproj, lo que sugiere que no se distribuye un proyector multimodal en este repositorio, aunque esto no puede confirmarse como ausencia de capacidad de visión en el modelo base.
 
 El sufijo "heretic" en el nombre del modelo base corresponde a una convención de nombres habitual en la comunidad para variantes sometidas a procesos de abliteration o eliminación de direcciones de rechazo. Esta interpretación es una inferencia a partir del nombre y no está confirmada por ninguna documentación del repositorio.
 
 ## Capacidades
 
 - Generación de texto conversacional: la etiqueta conversational del repositorio indica que el modelo está orientado a diálogo de múltiples turnos.
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que el modelo puede servirse a través de infraestructura compatible con la API de inferencia de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que el modelo puede servirse a través de infraestructura compatible con la API de inferencia de Hugging Face.
 - Ejecución local en CPU y GPU: el formato GGUF permite inferencia híbrida CPU/GPU con offload de capas.
 - Quantización flexible: la disponibilidad de 12 niveles de cuantización permite ajustar el equilibrio entre calidad y consumo de memoria.
 - Razonamiento, generación de código, matemáticas, tool calling, capacidades de agente, multilingüismo, visión, audio y modo de pensamiento explícito: no disponible (no documentado en la información proporcionada).
@@ -94,7 +94,7 @@ La comparación es orientativa: los datos de las alternativas corresponden a inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Artemis-31B-v1.1-heretic-v2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Artemis-31B-v1.1-heretic-v2-GGUF
 - Modelo base: https://huggingface.co/coder3101/Artemis-31B-v1.1-heretic-v2
 - Búsqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos corresponden a portales de noticias turcos (haberler.com, ensonhaber.com, sozcu.com.tr, haber7.com) sin relación alguna con el modelo.
 - Papers, blogs, repositorios o demos adicionales: no disponible.

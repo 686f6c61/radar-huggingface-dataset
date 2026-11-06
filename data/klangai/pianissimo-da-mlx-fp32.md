@@ -94,7 +94,7 @@ No se dispone en la información proporcionada de comparaciones con otros modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KlangAI/pianissimo-da-mlx-fp32
+- Modelo en Hugging Face: https://huggingface.co/KlangAI/pianissimo-da-mlx-fp32
 - Modelo base original: https://huggingface.co/KlangAI/pianissimo-da
 - Versión bf16: https://huggingface.co/KlangAI/pianissimo-da-mlx
 - Versión 8-bit: https://huggingface.co/KlangAI/pianissimo-da-mlx-8bit

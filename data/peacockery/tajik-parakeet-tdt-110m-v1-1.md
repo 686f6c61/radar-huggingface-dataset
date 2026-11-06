@@ -83,9 +83,9 @@ La mejora en FLEURS es de 1,55 puntos absolutos (8,1% relativo). La comparación
 
 | Modelo | Parámetros | Contexto / duración | WER FLEURS tayiko | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| tajik-parakeet-tdt-110m-v1.1 | 110M | clips de 0,5-30 s | 17,48 | CC BY 4.0 | HuggingFace (NeMo) |
-| tajik-parakeet-tdt-110m-v1 (original del mismo autor) | 110M | clips de 0,5-30 s | 19,03 | CC BY 4.0 | HuggingFace (NeMo) |
-| nvidia/parakeet-tdt_ctc-110m (modelo base) | 110M | no disponible | no disponible para tayiko (modelo base en inglés) | CC BY 4.0 | HuggingFace (NeMo) |
+| tajik-parakeet-tdt-110m-v1.1 | 110M | clips de 0,5-30 s | 17,48 | CC BY 4.0 | Hugging Face (NeMo) |
+| tajik-parakeet-tdt-110m-v1 (original del mismo autor) | 110M | clips de 0,5-30 s | 19,03 | CC BY 4.0 | Hugging Face (NeMo) |
+| nvidia/parakeet-tdt_ctc-110m (modelo base) | 110M | no disponible | no disponible para tayiko (modelo base en inglés) | CC BY 4.0 | Hugging Face (NeMo) |
 
 No se dispone de información sobre otros modelos ASR específicos para tayiko en la documentación proporcionada, por lo que no es posible una comparación con alternativas de otros autores.
 
@@ -104,7 +104,7 @@ No se dispone de información sobre otros modelos ASR específicos para tayiko e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Peacockery/tajik-parakeet-tdt-110m-v1.1
+- Modelo en Hugging Face: https://huggingface.co/Peacockery/tajik-parakeet-tdt-110m-v1.1
 - Modelo base NVIDIA: https://huggingface.co/nvidia/parakeet-tdt_ctc-110m
 - Versión anterior v1: https://huggingface.co/Peacockery/tajik-parakeet-tdt-110m-v1
 - Dataset Tajik ASR Corpus v3: https://huggingface.co/datasets/Peacockery/tajik-asr-corpus-v3/tree/3b05a4bb89104c21643081250729595347d1188e

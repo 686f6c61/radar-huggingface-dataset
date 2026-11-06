@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`TM-Pirorin/audio_models` es un repositorio publicado en HuggingFace por el usuario TM-Pirorin bajo licencia Apache 2.0. El espacio de nombres del identificador («audio_models», en plural) sugiere que el repositorio podria contener uno o varios modelos orientados a tareas de audio, si bien la model card asociada no incluye ninguna descripcion funcional, arquitectura declarada ni ejemplo de uso, por lo que esta interpretacion no puede confirmarse con los datos disponibles.
+`TM-Pirorin/audio_models` es un repositorio publicado en Hugging Face por el usuario TM-Pirorin bajo licencia Apache 2.0. El espacio de nombres del identificador («audio_models», en plural) sugiere que el repositorio podria contener uno o varios modelos orientados a tareas de audio, si bien la model card asociada no incluye ninguna descripcion funcional, arquitectura declarada ni ejemplo de uso, por lo que esta interpretacion no puede confirmarse con los datos disponibles.
 
-El repositorio tiene un tamano de 1,0 GB y no registra descargas ni «likes» en el momento de la consulta, lo que indica que se trata de una publicacion reciente y sin adopcion constatada por parte de la comunidad. No se especifica el pipeline de HuggingFace (text-to-audio, audio-classification, automatic-speech-recognition u otro), ni los idiomas soportados, ni la arquitectura subyacente.
+El repositorio tiene un tamano de 1,0 GB y no registra descargas ni «likes» en el momento de la consulta, lo que indica que se trata de una publicacion reciente y sin adopcion constatada por parte de la comunidad. No se especifica el pipeline de Hugging Face (text-to-audio, audio-classification, automatic-speech-recognition u otro), ni los idiomas soportados, ni la arquitectura subyacente.
 
 En consecuencia, esta ficha recoge unicamente los metadatos verificables del repositorio y marca de forma explicita como «no disponible» cualquier dato tecnico que el autor no haya publicado. No debe interpretarse como una evaluacion funcional del modelo, sino como un inventario de la informacion accesible publicamente en el momento de su redaccion.
 
@@ -42,7 +42,7 @@ El unico indicio indirecto es el tamano del repositorio (1,0 GB), que podria cor
 
 ## Capacidades
 
-No es posible enumerar capacidades concretas a partir de la informacion disponible. La model card no describe tareas soportadas, y el campo `pipeline` de HuggingFace aparece vacio. En particular, no hay confirmacion de:
+No es posible enumerar capacidades concretas a partir de la informacion disponible. La model card no describe tareas soportadas, y el campo `pipeline` de Hugging Face aparece vacio. En particular, no hay confirmacion de:
 
 - Generacion de texto, razonamiento, codigo o matematicas.
 - Capacidades de vision, audio o habla (a pesar del nombre del repositorio).
@@ -79,7 +79,7 @@ No disponible. Al no conocerse la tarea, la arquitectura ni el tamano del modelo
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: la model card no describe arquitectura, entrenamiento, datos ni uso previsto, lo que impide evaluar el modelo con criterios tecnicos.
-- Campo `pipeline` vacio en HuggingFace, por lo que ni siquiera la categoria de tarea esta declarada.
+- Campo `pipeline` vacio en Hugging Face, por lo que ni siquiera la categoria de tarea esta declarada.
 - Idiomas soportados sin especificar: no puede garantizarse un comportamiento correcto en castellano ni en ningun otro idioma.
 - Riesgo de alucinacion, sesgos y comportamiento en produccion: no evaluables con la informacion disponible.
 - Adopcion nula (0 descargas, 0 likes) y publicacion muy reciente, sin senales de validacion por parte de la comunidad.
@@ -89,5 +89,5 @@ No disponible. Al no conocerse la tarea, la arquitectura ni el tamano del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TM-Pirorin/audio_models
+- Repositorio en Hugging Face: https://huggingface.co/TM-Pirorin/audio_models
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados al modelo. Los resultados de busqueda obtenidos corresponden a portales de noticias sin relacion con el modelo y se descartan como fuentes.

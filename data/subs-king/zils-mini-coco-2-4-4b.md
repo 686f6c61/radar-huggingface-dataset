@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento ni de especificaciones completas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/subs-king/zils-mini-coco-2.4-4b
+- Hugging Face: https://huggingface.co/subs-king/zils-mini-coco-2.4-4b
 - Modelo base: https://huggingface.co/corners-ai/CoCo-Decision-2.4-4B
 - Torre de visión: https://huggingface.co/Qwen/Qwen3.5-4B

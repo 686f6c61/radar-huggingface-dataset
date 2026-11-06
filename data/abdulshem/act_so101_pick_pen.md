@@ -6,7 +6,7 @@ AbdulShem/act_so101_pick_pen es una política de imitación (imitation learning)
 
 El modelo consume dos señales de entrada: el estado propioceptivo del brazo (`observation.state`, vector de 6 dimensiones) y dos cámaras (muñeca y cenital, ambas a 3x480x640), y produce un vector de acción de 6 dimensiones. Está especializado en una única tarea: "Pick up the pen" (coger un bolígrafo). El repositorio ocupa 0,2 GB y contiene 51.668.614 parámetros en formato safetensors, lo que lo convierte en un modelo muy ligero que puede ejecutarse en hardware modesto.
 
-Su relevancia es doble: por un lado, es un ejemplo reproducible de entrenamiento de una política ACT con LeRobot 0.6.2 sobre un conjunto de datos teleoperado propio; por otro, sirve como referencia práctica de cómo empaquetar y publicar políticas robóticas en HuggingFace Hub. No es un modelo de lenguaje ni un modelo multimodal generalista: su ámbito es exclusivamente el control robótico de bajo nivel en un entorno y robot concretos.
+Su relevancia es doble: por un lado, es un ejemplo reproducible de entrenamiento de una política ACT con LeRobot 0.6.2 sobre un conjunto de datos teleoperado propio; por otro, sirve como referencia práctica de cómo empaquetar y publicar políticas robóticas en Hugging Face Hub. No es un modelo de lenguaje ni un modelo multimodal generalista: su ámbito es exclusivamente el control robótico de bajo nivel en un entorno y robot concretos.
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ El entrenamiento se realizó con LeRobot 0.6.2 sobre el conjunto de datos AbdulS
 - Punto de partida para fine-tuning con datos propios: sirve como política base que se puede reentrenar con nuevos conjuntos de episodios sobre otro objeto o posición, cambiando el dataset y manteniendo la arquitectura ACT.
 - Evaluación de pipeline de inferencia en hardware de bajo coste: al ser un modelo pequeño, permite validar latencias y comportamiento de bucle cerrado en GPUs de gama de entrada o incluso en CPU/SoC embebido antes de escalar a modelos mayores.
 - Investigación en imitation learning: útil como baseline ACT entrenado con un dataset pequeño (60 episodios) para comparar contra otros métodos de política (por ejemplo, diffusion policy) en igualdad de condiciones.
-- Demostración de publicación de políticas en el Hub: el repositorio ilustra el flujo `lerobot-train` / `lerobot-rollout` y el versionado de políticas en HuggingFace, útil para equipos que quieran estandarizar su gestión de artefactos de robótica.
+- Demostración de publicación de políticas en el Hub: el repositorio ilustra el flujo `lerobot-train` / `lerobot-rollout` y el versionado de políticas en Hugging Face, útil para equipos que quieran estandarizar su gestión de artefactos de robótica.
 - Pruebas de robustez ante variaciones de iluminación y posición: al estar limitado a una tarea y a dos vistas fijas, permite medir empíricamente la sensibilidad de una política ACT a cambios de entorno controlados.
 
 ## Benchmarks y rendimiento
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AbdulShem/act_so101_pick_pen | ACT (LeRobot) | 51,7 M | Estado (6,) + 2 camaras 480x640 | apache-2.0 | HuggingFace Hub |
-| Otras politicas ACT de LeRobot (por ejemplo, las publicadas por el propio proyecto lerobot) | ACT (LeRobot) | no disponible | Variable segun robot y camaras | habitualmente apache-2.0 | HuggingFace Hub |
-| Diffusion Policy (implementada tambien en LeRobot) | Politica generativa basada en difusion | no disponible | Variable segun configuracion | no disponible | GitHub / HuggingFace |
-| SmolVLA (HuggingFace) | Vision-Language-Action | no disponible en la informacion proporcionada | Imagenes + instruccion en lenguaje natural | no disponible en la informacion proporcionada | HuggingFace Hub |
+| AbdulShem/act_so101_pick_pen | ACT (LeRobot) | 51,7 M | Estado (6,) + 2 camaras 480x640 | apache-2.0 | Hugging Face Hub |
+| Otras politicas ACT de LeRobot (por ejemplo, las publicadas por el propio proyecto lerobot) | ACT (LeRobot) | no disponible | Variable segun robot y camaras | habitualmente apache-2.0 | Hugging Face Hub |
+| Diffusion Policy (implementada tambien en LeRobot) | Politica generativa basada en difusion | no disponible | Variable segun configuracion | no disponible | GitHub / Hugging Face |
+| SmolVLA (Hugging Face) | Vision-Language-Action | no disponible en la informacion proporcionada | Imagenes + instruccion en lenguaje natural | no disponible en la informacion proporcionada | Hugging Face Hub |
 
 Nota: no se dispone de datos verificados de parametros, contexto o rendimiento de las alternativas en la informacion proporcionada, por lo que la comparacion debe tratarse como orientativa en cuanto a categoria y no en cuanto a cifras.
 
@@ -93,7 +93,7 @@ Nota: no se dispone de datos verificados de parametros, contexto o rendimiento d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbdulShem/act_so101_pick_pen
+- Modelo en Hugging Face: https://huggingface.co/AbdulShem/act_so101_pick_pen
 - Dataset de entrenamiento: https://huggingface.co/datasets/AbdulShem/so101_pick_pen_clean
 - Articulo ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

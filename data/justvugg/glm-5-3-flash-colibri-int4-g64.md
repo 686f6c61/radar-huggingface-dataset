@@ -76,7 +76,7 @@ GLM-5.3-Flash es significativamente más pequeño que GLM-5.2 y DeepSeek-V3 en p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Justvugg/GLM-5.3-Flash-colibri-int4-g64
+- Hugging Face: https://huggingface.co/Justvugg/GLM-5.3-Flash-colibri-int4-g64
 - Repositorio colibri en GitHub: https://github.com/JustVugg/colibri
 - Página oficial de colibri: https://justvugg.github.io/colibri/
 - Guía de atomic.chat sobre GLM-5.3-Flash: https://atomic.chat/blog/guides/how-to-run-glm-5-3-flash-locally

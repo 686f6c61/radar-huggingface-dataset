@@ -6,14 +6,14 @@ LFM2.5-Encoder-350M-Diffusion es un modelo de lenguaje de la familia LFM2.5 desa
 
 El tamaño nominal de la familia es de 350 millones de parámetros. Los metadatos de safetensors del repositorio reportan 304.300, dato que conviene verificar porque no coincide con la cifra del nombre. En cualquier caso, estamos ante un modelo muy pequeno, apto para ejecución en CPU, GPUs de gama de entrada y dispositivos con poca memoria. Su interés practico reside en el enfoque de difusión enmascarada aplicado a un modelo compacto: permite experimentar con decodificación paralela y relleno de huecos (infilling) a un coste computacional muy bajo, algo poco frecuente en el ecosistema abierto, dominado por arquitecturas autoregresivas.
 
-La licencia es `lfm1.0` (LFM Open License 1.0), etiquetada como "other" en HuggingFace, y los términos concretos no se detallan en la información disponible. El repositorio de cuantizaciones se creó el 14 de octubre de 2026 y en el momento de redactar esta ficha presenta 0 descargas, 0 likes y un tamaño de repositorio de 0.0 GB, por lo que es imprescindible comprobar la disponibilidad real de los archivos antes de planificar su uso.
+La licencia es `lfm1.0` (LFM Open License 1.0), etiquetada como "other" en Hugging Face, y los términos concretos no se detallan en la información disponible. El repositorio de cuantizaciones se creó el 14 de octubre de 2026 y en el momento de redactar esta ficha presenta 0 descargas, 0 likes y un tamaño de repositorio de 0.0 GB, por lo que es imprescindible comprobar la disponibilidad real de los archivos antes de planificar su uso.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer encoder bidireccional con modelado de difusión enmascarada (MDLM); no autoregresivo |
-| Parametros totales | 304.300 según metadatos de safetensors reportados por HuggingFace; el nombre del modelo indica 350 M (discrepancia sin resolver) |
+| Parametros totales | 304.300 según metadatos de safetensors reportados por Hugging Face; el nombre del modelo indica 350 M (discrepancia sin resolver) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF i1 (imatrix/weighted): IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q2_K, Q2_K_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, IQ4_XS, Q4_K_S, Q4_K_M, small-IQ4_NL, Q5_K_S, Q5_K_M, Q6_K; se incluye además un fichero imatrix para generar cuantizaciones propias |
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - GPU recomendadas: cualquiera con 2 GB de VRAM o más (GTX 1050 Ti, RTX 3050, RTX 4060, etc.). No requiere A100, H100 ni GPUs de centro de datos.
 - Cabe holgadamente en cualquier GPU consumer, e incluso en CPU, Apple Silicon y placas tipo Raspberry Pi en las cuantizaciones más bajas.
 - Latencia y throughput: no disponibles. Al tratarse de un modelo de difusión bidireccional, cada paso de desenmascarado implica una pasada completa sobre la secuencia y no existe una caché KV equivalente a la de los decoders, por lo que el tiempo total depende del número de pasos y de la longitud; conviene medirlo en el caso de uso concreto.
-- Opciones de despliegue: llama.cpp / llama-server es la vía natural para los archivos GGUF; `transformers` es la librería declarada para el modelo base. La compatibilidad de esta arquitectura concreta (encoder + difusión enmascarada) con llama.cpp, vLLM, TGI u Ollama no está confirmada en la información disponible. La etiqueta `endpoints_compatible` de HuggingFace sugiere compatibilidad genérica con Inference Endpoints, sin garantía para esta arquitectura.
+- Opciones de despliegue: llama.cpp / llama-server es la vía natural para los archivos GGUF; `transformers` es la librería declarada para el modelo base. La compatibilidad de esta arquitectura concreta (encoder + difusión enmascarada) con llama.cpp, vLLM, TGI u Ollama no está confirmada en la información disponible. La etiqueta `endpoints_compatible` de Hugging Face sugiere compatibilidad genérica con Inference Endpoints, sin garantía para esta arquitectura.
 
 ## Comparativa con modelos similares
 

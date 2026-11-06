@@ -71,9 +71,9 @@ Resultados declarados por el autor en la model-index y en la model card. No esta
 
 | Modelo | Parametros | Contexto | F1 (test) en la asercion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `StanfordSCALE/assertion_paraphrases_a_prior_student_contribution` | 109,5 M | 512 tokens | 0,235 | no disponible | HuggingFace, via `setfit` |
-| `sentence-transformers/paraphrase-mpnet-base-v2` (modelo base, sin ajuste para esta asercion) | 109,5 M | 512 tokens | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| Otros clasificadores de aserciones de Stanford SCALE | no disponible | no disponible | no disponible | no disponible | HuggingFace (misma organizacion) |
+| `StanfordSCALE/assertion_paraphrases_a_prior_student_contribution` | 109,5 M | 512 tokens | 0,235 | no disponible | Hugging Face, via `setfit` |
+| `sentence-transformers/paraphrase-mpnet-base-v2` (modelo base, sin ajuste para esta asercion) | 109,5 M | 512 tokens | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| Otros clasificadores de aserciones de Stanford SCALE | no disponible | no disponible | no disponible | no disponible | Hugging Face (misma organizacion) |
 
 No se dispone de datos comparativos de otras alternativas (modelos NLI zero-shot, clasificadores entrenados con supervisión humana sobre TalkMoves) en la informacion proporcionada.
 
@@ -93,7 +93,7 @@ No se dispone de datos comparativos de otras alternativas (modelos NLI zero-shot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_paraphrases_a_prior_student_contribution
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_paraphrases_a_prior_student_contribution
 - Dataset de anotaciones: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (SumnerLab): https://github.com/SumnerLab/TalkMoves

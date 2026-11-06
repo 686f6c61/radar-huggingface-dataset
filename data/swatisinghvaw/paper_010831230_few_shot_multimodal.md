@@ -51,5 +51,5 @@ No disponible. No existen modelos comparables porque no se trata de un modelo de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swatisinghv1/paper_010831230_few_shot_multimodal
+- Repositorio en Hugging Face: https://huggingface.co/swatisinghv1/paper_010831230_few_shot_multimodal
 - (Nota: los resultados de búsqueda web enlazan a artículos generales sobre few-shot learning, pero no son específicos de este repositorio. No se incluyen como enlaces del modelo.)

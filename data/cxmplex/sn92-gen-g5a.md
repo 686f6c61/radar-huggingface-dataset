@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cxmplex/sn92-gen-g5a` es un modelo de lenguaje publicado en HuggingFace por el usuario `cxmplex` bajo el identificador interno "REAX SN92 generalist entry". Se presenta como un modelo de decisión ("decision model") para la pista generalista del sistema REAX (SN92), aunque la model card no desarrolla qué significa esa función ni cómo se integra en un pipeline mayor. El repositorio tiene un tamaño de 52,2 GB y contiene pesos en formato `safetensors` con 26.085.330.160 parámetros totales, lo que lo sitúa en la franja de los ~26B parámetros.
+`cxmplex/sn92-gen-g5a` es un modelo de lenguaje publicado en Hugging Face por el usuario `cxmplex` bajo el identificador interno "REAX SN92 generalist entry". Se presenta como un modelo de decisión ("decision model") para la pista generalista del sistema REAX (SN92), aunque la model card no desarrolla qué significa esa función ni cómo se integra en un pipeline mayor. El repositorio tiene un tamaño de 52,2 GB y contiene pesos en formato `safetensors` con 26.085.330.160 parámetros totales, lo que lo sitúa en la franja de los ~26B parámetros.
 
 El tag `qwen3_5` sugiere que la arquitectura subyacente deriva de la familia Qwen 3.5, aunque no se especifica si se trata de un fine-tuning, una destilación o una inicialización desde cero. La licencia es MIT, lo que facilita su uso comercial y su modificación, un punto relevante frente a otros modelos de tamaño similar con licencias más restrictivas.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cxmplex/sn92-gen-g5a | ~26B | no disponible | MIT | HuggingFace (15 descargas) |
-| Qwen2.5-32B | 32B | 128K (según versión) | Apache 2.0 | HuggingFace, ampliamente validado |
-| Gemma 2 27B | 27B | 8K | Gemma license | HuggingFace, validado |
-| Mistral Small 24B | 24B | 32K-128K | Apache 2.0 | HuggingFace, validado |
+| cxmplex/sn92-gen-g5a | ~26B | no disponible | MIT | Hugging Face (15 descargas) |
+| Qwen2.5-32B | 32B | 128K (según versión) | Apache 2.0 | Hugging Face, ampliamente validado |
+| Gemma 2 27B | 27B | 8K | Gemma license | Hugging Face, validado |
+| Mistral Small 24B | 24B | 32K-128K | Apache 2.0 | Hugging Face, validado |
 
 La comparativa se basa únicamente en tamaño y licencia, ya que no hay benchmarks publicados para `sn92-gen-g5a`. Frente a Qwen2.5-32B, Gemma 2 27B o Mistral Small 24B, el modelo de `cxmplex` carece de documentación de rendimiento, contexto e idiomas, lo que lo hace menos adecuado para producción sin una evaluación previa.
 
@@ -83,5 +83,5 @@ La comparativa se basa únicamente en tamaño y licencia, ya que no hay benchmar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cxmplex/sn92-gen-g5a
+- Hugging Face: https://huggingface.co/cxmplex/sn92-gen-g5a
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

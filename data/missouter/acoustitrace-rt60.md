@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - Missouter/AcoustiTrace-RT60](https://huggingface.co/Missouter/AcoustiTrace-RT60)
+- [Hugging Face - Missouter/AcoustiTrace-RT60](https://huggingface.co/Missouter/AcoustiTrace-RT60)
 - [Paper (arXiv)](https://arxiv.org/abs/2608.02035)
 - [Página del proyecto AcoustiTrace](https://leader-sheng.github.io/AcoustiTrace/)
 - [Código (GitHub)](https://github.com/Leader-sheng/AcoustiTrace)

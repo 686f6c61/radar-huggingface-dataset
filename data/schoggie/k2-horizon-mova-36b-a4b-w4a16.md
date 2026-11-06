@@ -110,12 +110,12 @@ No se dispone de datos de benchmarks comparativos frente a otros modelos de la m
 - No hay informacion sobre idiomas soportados, sesgos, tasas de alucinacion ni evaluacion de seguridad. Cualquier afirmacion al respecto seria especulativa.
 - No se documenta soporte de tool calling ni de flujos de agentes, algo relevante si se pretende integrar el modelo en pipelines con llamadas a funciones.
 - La licencia del checkpoint es Apache 2.0, heredada del modelo base, lo que en principio permite uso comercial; conviene verificar la licencia del modelo base y de sus pesos originales antes de un despliegue comercial, dado que este repositorio es una redistribucion derivada.
-- El campo de idiomas no esta cumplimentado en la ficha de HuggingFace ni en la model card.
+- El campo de idiomas no esta cumplimentado en la ficha de Hugging Face ni en la model card.
 - Para despliegues en produccion hay que prever que la precision mixta (INT4 en expertos MoE y BF16 en el resto) exige motores de inferencia con soporte de `compressed-tensors` y de la arquitectura K2 Horizon; no es un checkpoint portable a cualquier runtime.
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/schoggie/K2-Horizon-MoVA-36B-A4B-W4A16
+- Checkpoint en Hugging Face: https://huggingface.co/schoggie/K2-Horizon-MoVA-36B-A4B-W4A16
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
 - Plugin de vLLM para la arquitectura K2 Horizon: https://github.com/stefanskiasan/k2-horizon-vllm
 - Resultados de busqueda web: la busqueda realizada no ha devuelto ningun enlace relevante sobre este modelo ni sobre K2 Horizon; los resultados obtenidos corresponden a contenidos sin relacion (restauracion) y se descartan. No se dispone de paper, blog o demo adicionales.

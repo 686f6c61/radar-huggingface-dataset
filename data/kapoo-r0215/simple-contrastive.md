@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kapoo-r0215/simple-contrastive` es un repositorio experimental publicado en HuggingFace que contiene una implementacion funcional de una arquitectura Perceiver orientada a aprendizaje contrastivo, en configuracion "nano". El autor es `kapoo-r0215` y el repositorio se presenta explicitamente como material de partida reproducible y transparente, no como un modelo entrenado ni evaluado. Con 49.600 parametros totales (segun el peso real en safetensors), se trata de un artefacto de escala diminuta, tres o cuatro ordenes de magnitud por debajo de cualquier modelo utilizable en produccion.
+`kapoo-r0215/simple-contrastive` es un repositorio experimental publicado en Hugging Face que contiene una implementacion funcional de una arquitectura Perceiver orientada a aprendizaje contrastivo, en configuracion "nano". El autor es `kapoo-r0215` y el repositorio se presenta explicitamente como material de partida reproducible y transparente, no como un modelo entrenado ni evaluado. Con 49.600 parametros totales (segun el peso real en safetensors), se trata de un artefacto de escala diminuta, tres o cuatro ordenes de magnitud por debajo de cualquier modelo utilizable en produccion.
 
 El propio autor advierte en la model card que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo ("smoke tests") y que no debe presentarse como un checkpoint entrenado con benchmarks. No se reclama ninguna puntuacion de benchmark ni se documenta un proceso de entrenamiento completado: la receta incluida (optimizador Novograd con schedule coseno) son valores de arranque del script, no evidencia de una ejecucion finalizada.
 
@@ -34,7 +34,7 @@ Su relevancia actual es, por tanto, acotada y de naturaleza distinta a la de un 
 
 La arquitectura es un Perceiver en configuracion nano: atencion sparse, fusion bilineal de caracteristicas, activacion gelu tanh y normalizacion layernorm. El Perceiver es un transformer de proposito general que proyecta entradas de cualquier modalidad sobre un array latente de tamano fijo mediante cross-attention, lo que desacopla el coste computacional de la longitud de la entrada, y despues aplica auto-atencion sobre ese espacio latente. El uso de atencion sparse y de fusion bilineal apunta a un escenario de aprendizaje contrastivo, es decir, a aprender representaciones donde pares positivos queden proximos y los negativos alejados, presumiblemente sobre dos modalidades.
 
-No hay informacion disponible sobre el volumen de datos de entrenamiento, la composicion del dataset, el numero de tokens procesados ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card indica que el optimizador configurado por defecto es Novograd con un schedule coseno, pero subraya que son valores de arranque del script. El repositorio incluye `pipeline.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta por defecto y `model.safetensors` como inicializacion. Al ser una implementacion personalizada, las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito antes de poder usarse.
+No hay informacion disponible sobre el volumen de datos de entrenamiento, la composicion del dataset, el numero de tokens procesados ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card indica que el optimizador configurado por defecto es Novograd con un schedule coseno, pero subraya que son valores de arranque del script. El repositorio incluye `pipeline.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta por defecto y `model.safetensors` como inicializacion. Al ser una implementacion personalizada, las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito antes de poder usarse.
 
 ## Capacidades
 
@@ -79,7 +79,7 @@ No disponible. No se conocen en la informacion proporcionada modelos publicos co
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kapoo-r0215/simple-contrastive | 49.600 | no disponible | sin benchmarks (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
+| kapoo-r0215/simple-contrastive | 49.600 | no disponible | sin benchmarks (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,14 +89,14 @@ No disponible. No se conocen en la informacion proporcionada modelos publicos co
 - Riesgo de alucinacion: no aplica en el sentido habitual porque el modelo no genera texto, pero si se usara como base sin entrenar, cualquier salida seria esencialmente ruido inicializado.
 - No se declara longitud de contexto ni idiomas soportados, por lo que no se puede planificar un despliegue multilingue ni con ventanas largas.
 - Licencia BSD-3-Clause: permisiva y apta para uso comercial, pero la model card advierte que deben revisarse por separado los terminos de los datos de origen si se combina con datasets externos.
-- Implementacion personalizada: las APIs genericas de carga de HuggingFace no funcionaran sin un adaptador explicito, lo que anade trabajo de integracion.
+- Implementacion personalizada: las APIs genericas de carga de Hugging Face no funcionaran sin un adaptador explicito, lo que anade trabajo de integracion.
 - Repositorio con 0 descargas y 0 likes: no hay comunidad, issues ni validacion externa que respalden el artefacto.
 - Fecha de creacion y actualizacion registradas en 2026-09-15, con apenas seis segundos de diferencia entre ambas, lo que sugiere una subida automatizada y sin mantenimiento posterior.
 - Para produccion, la recomendacion es tratarlo como banco de pruebas arquitectonico, nunca como modelo final.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kapoo-r0215/simple-contrastive
+- Modelo en Hugging Face: https://huggingface.co/kapoo-r0215/simple-contrastive
 - Licencia BSD-3-Clause: https://opensource.org/licenses/BSD-3-Clause
 - Referencia de la arquitectura Perceiver (paper de DeepMind, contexto general de la arquitectura, no de este modelo): https://arxiv.org/abs/2103.03206
 - Nota sobre la busqueda web: los resultados devueltos corresponden a paginas sobre el software de escritorio remoto AnyDesk (Reddit, Ask Ubuntu, BleepingComputer) y no guardan relacion con este modelo. No se han encontrado papers, blogs, repositorios ni demos asociados al modelo.

@@ -19,7 +19,7 @@ La relevancia de este modelo radica en su naturaleza experimental: ejemplifica e
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (el modelo base soporta multiples idiomas) |
 | Licencia | no disponible (el modelo base usa licencia Gemma) |
-| Formato de pesos | safetensors (segun tags de HuggingFace) |
+| Formato de pesos | safetensors (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ La comparativa se limita a modelos de tamaño similar. No hay datos de rendimien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Echoo113/gemma-3-4b-it-dragon-STEER1.6875-ft4.43
+- Repositorio Hugging Face: https://huggingface.co/Echoo113/gemma-3-4b-it-dragon-STEER1.6875-ft4.43
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Informe técnico de Gemma 3: https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf
 - Página oficial de Gemma 3: https://deepmind.google/models/gemma/gemma-3/

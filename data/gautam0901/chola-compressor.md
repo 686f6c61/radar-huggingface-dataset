@@ -78,7 +78,7 @@ No se dispone de datos de comparación con otros modelos de restauración de voz
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gautam0901/chola-compressor
+- Modelo en Hugging Face: https://huggingface.co/Gautam0901/chola-compressor
 - Dataset VCTK (mirror): https://huggingface.co/datasets/jspaulsen/vctk
 - Denoiser de Meta (teacher): https://github.com/facebookresearch/denoiser
 - Repositorio del proyecto LoRaVoiceLink: no disponible en la información proporcionada

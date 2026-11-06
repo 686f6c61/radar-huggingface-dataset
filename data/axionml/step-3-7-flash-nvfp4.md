@@ -85,7 +85,7 @@ La información disponible solo permite comparar el checkpoint cuantizado con su
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AxionML/Step-3.7-Flash-NVFP4 | 198B totales / ~11B activos | 256K | MoE vision-language, NVFP4 (W4A4) | Apache 2.0 | Espejo en HuggingFace; 0 descargas y 0 likes en el momento de la consulta |
+| AxionML/Step-3.7-Flash-NVFP4 | 198B totales / ~11B activos | 256K | MoE vision-language, NVFP4 (W4A4) | Apache 2.0 | Espejo en Hugging Face; 0 descargas y 0 likes en el momento de la consulta |
 | stepfun-ai/Step-3.7-Flash-NVFP4 | 198B totales / ~11B activos | 256K | MoE vision-language, NVFP4 (W4A4) | Apache 2.0 | Repositorio upstream de la cuantización, mantenido por StepFun |
 | stepfun-ai/Step-3.7-Flash | 198B totales / ~11B activos | 256K | MoE vision-language, precisión completa | Apache 2.0 | Repositorio oficial del modelo base; benchmarks reportados aquí |
 | Otros MoE multimodales comparables | no disponible | no disponible | no disponible | no disponible | no disponible |

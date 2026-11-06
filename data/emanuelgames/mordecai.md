@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mordecai es un repositorio de modelo publicado en HuggingFace por el usuario EmanuelGames bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada contiene unicamente la declaracion de licencia, sin ningun texto descriptivo, y el repositorio no incluye informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
+Mordecai es un repositorio de modelo publicado en Hugging Face por el usuario EmanuelGames bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada contiene unicamente la declaracion de licencia, sin ningun texto descriptivo, y el repositorio no incluye informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
 
 El repositorio tiene un tamano de 0,1 GB y registra 0 descargas y 0 likes, con fecha de creacion y actualizacion del 12 de septiembre de 2026. La ausencia de pipeline declarado y de cualquier documentacion tecnica impide determinar que problema resuelve el modelo o en que categoria encaja.
 
@@ -83,6 +83,6 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EmanuelGames/Mordecai
+- Hugging Face: https://huggingface.co/EmanuelGames/Mordecai
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

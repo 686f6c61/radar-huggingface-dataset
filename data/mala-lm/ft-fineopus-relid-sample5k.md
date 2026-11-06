@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `MaLA-LM/FT-FineOPUS-ReLID-sample5k` es un ajuste fino (fine-tuning) publicado por el usuario MaLA-LM en HuggingFace. El nombre sugiere que se parte de un modelo base denominado "FineOPUS" y se entrena sobre una muestra de 5.000 ejemplos del conjunto de datos "ReLID", aunque no se aporta ninguna documentación adicional en la model card. La única información disponible es la licencia MIT y la etiqueta regional "us". El repositorio no registra descargas ni valoraciones, y la fecha de creación es el 17 de agosto de 2026.
+El modelo `MaLA-LM/FT-FineOPUS-ReLID-sample5k` es un ajuste fino (fine-tuning) publicado por el usuario MaLA-LM en Hugging Face. El nombre sugiere que se parte de un modelo base denominado "FineOPUS" y se entrena sobre una muestra de 5.000 ejemplos del conjunto de datos "ReLID", aunque no se aporta ninguna documentación adicional en la model card. La única información disponible es la licencia MIT y la etiqueta regional "us". El repositorio no registra descargas ni valoraciones, y la fecha de creación es el 17 de agosto de 2026.
 
 Dada la ausencia total de especificaciones técnicas, arquitectura, datos de entrenamiento o ejemplos de uso, no es posible determinar qué problema resuelve ni por qué sería relevante en la actualidad. Se trata de un artefacto sin documentar que, a efectos prácticos, no ofrece garantías de funcionamiento ni de calidad. Cualquier evaluación o despliegue requeriría primero obtener información adicional del autor o inspeccionar los pesos directamente.
 
@@ -54,4 +54,4 @@ No disponible. No se puede comparar con otras alternativas al carecer de especif
 
 ## Enlaces
 
-- [HuggingFace - MaLA-LM/FT-FineOPUS-ReLID-sample5k](https://huggingface.co/MaLA-LM/FT-FineOPUS-ReLID-sample5k)
+- [Hugging Face - MaLA-LM/FT-FineOPUS-ReLID-sample5k](https://huggingface.co/MaLA-LM/FT-FineOPUS-ReLID-sample5k)

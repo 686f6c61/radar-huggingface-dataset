@@ -21,7 +21,7 @@ Con **149,6 millones de parámetros**, el modelo hereda la arquitectura eficient
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de **ModernBERT-base**, un transformer encoder optimizado para eficiencia y velocidad, con atención global y local. El fine-tuning se realizó con el framework HuggingFace Transformers (versión 4.57.6) y PyTorch 2.13.0. Los hiperparámetros de entrenamiento incluyen una tasa de aprendizaje de 3e-5, tamaño de lote de 32 (entrenamiento) y 128 (evaluación), optimizador AdamW con betas (0.9, 0.999), scheduler lineal con warmup del 6% y 2 épocas. El dataset de entrenamiento no está especificado en la model card (aparece como "None"), lo que impide conocer la composición y el volumen de datos. No se menciona el uso de RLHF ni DPO; se trata de un fine-tuning supervisado estándar.
+El modelo parte de **ModernBERT-base**, un transformer encoder optimizado para eficiencia y velocidad, con atención global y local. El fine-tuning se realizó con el framework Hugging Face Transformers (versión 4.57.6) y PyTorch 2.13.0. Los hiperparámetros de entrenamiento incluyen una tasa de aprendizaje de 3e-5, tamaño de lote de 32 (entrenamiento) y 128 (evaluación), optimizador AdamW con betas (0.9, 0.999), scheduler lineal con warmup del 6% y 2 épocas. El dataset de entrenamiento no está especificado en la model card (aparece como "None"), lo que impide conocer la composición y el volumen de datos. No se menciona el uso de RLHF ni DPO; se trata de un fine-tuning supervisado estándar.
 
 Las métricas de evaluación finales son: pérdida 0.0493, AUPRC 0.9979, AUROC 0.9985 y TPR@1FPR 0.9743. La tabla de progreso del entrenamiento muestra una mejora consistente a lo largo de 50.000 pasos, con una convergencia estable.
 
@@ -30,7 +30,7 @@ Las métricas de evaluación finales son: pérdida 0.0493, AUPRC 0.9979, AUROC 0
 - **Clasificación de texto**: el pipeline declarado es `text-classification`, lo que indica que el modelo asigna etiquetas o puntuaciones a fragmentos de texto.
 - **Detección de cláusulas de riesgo**: por el nombre y los repositorios asociados, se infiere que el modelo identifica pasajes contractuales problemáticos o de alto riesgo.
 - **Compatibilidad con `text-embeddings-inference`**: el tag `text-embeddings-inference` sugiere que puede usarse para generar embeddings de texto, aunque su pipeline principal es clasificación.
-- **Soporte para endpoints**: el tag `endpoints_compatible` indica que es desplegable en la infraestructura de HuggingFace Inference Endpoints.
+- **Soporte para endpoints**: el tag `endpoints_compatible` indica que es desplegable en la infraestructura de Hugging Face Inference Endpoints.
 - **No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni generación de texto**; el modelo es exclusivamente un encoder para clasificación.
 
 ## Casos de uso
@@ -59,7 +59,7 @@ No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, etc.) n
 
 - **VRAM estimada**: al tratarse de un modelo de 149M parámetros, la inferencia en precisión fp32 requiere aproximadamente 600 MB de VRAM; en fp16 o int8, el consumo se reduce a ~300 MB o ~150 MB respectivamente. Cabe en cualquier GPU consumer (RTX 2060 o superior) y también en CPU con memoria suficiente.
 - **GPU recomendadas**: cualquier GPU con al menos 2 GB de VRAM es suficiente; para despliegues concurrentes se recomienda una GPU de gama media (RTX 3060, A10, etc.).
-- **Opciones de despliegue**: compatible con HuggingFace Inference Endpoints, `text-embeddings-inference` y la librería `transformers` estándar. No se menciona soporte para vLLM u Ollama, aunque al ser un modelo pequeño podría ejecutarse con llama.cpp si se convierte a GGUF (no disponible actualmente).
+- **Opciones de despliegue**: compatible con Hugging Face Inference Endpoints, `text-embeddings-inference` y la librería `transformers` estándar. No se menciona soporte para vLLM u Ollama, aunque al ser un modelo pequeño podría ejecutarse con llama.cpp si se convierte a GGUF (no disponible actualmente).
 - **Latencia y throughput**: no se proporcionan datos oficiales. Dado su tamaño, se espera una latencia inferior a 10 ms por muestra en GPU moderna y un throughput alto (miles de inferencias por segundo en batch).
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ No hay información sobre alternativas específicas como LegalBERT o modelos de 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Hritvik7654/redline-guard)
+- [Modelo en Hugging Face](https://huggingface.co/Hritvik7654/redline-guard)
 - [Repositorio GitHub: imandiakhil9505-hub/redline-guard](https://github.com/imandiakhil9505-hub/redline-guard) (no oficial, relacionado por nombre)
 - [Repositorio GitHub: New-Sheep/RedlineGuard](https://github.com/New-Sheep/RedlineGuard) (no oficial, relacionado por nombre)
 - [Blog de Harvey.ai sobre detección de redlines](https://www.harvey.ai/blog/low-latency-redline-detection) (contexto general, no afiliado)

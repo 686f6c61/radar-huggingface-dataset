@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/ita_latn_10mb`, un GPT-2 de pequeno tamano entrenado sobre un corpus monolingue de italiano en escritura latina. Lo desarrolla el usuario de HuggingFace `francesca9805`, vinculado a un entorno de investigacion de la Universidad de Groningen segun la traza de entrenamiento publicada en Weights & Biases, y se distribuye bajo el flujo estandar de `transformers` con pesos en formato safetensors.
+El modelo `francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/ita_latn_10mb`, un GPT-2 de pequeno tamano entrenado sobre un corpus monolingue de italiano en escritura latina. Lo desarrolla el usuario de Hugging Face `francesca9805`, vinculado a un entorno de investigacion de la Universidad de Groningen segun la traza de entrenamiento publicada en Weights & Biases, y se distribuye bajo el flujo estandar de `transformers` con pesos en formato safetensors.
 
 Con 39.087.104 parametros totales y un repositorio de apenas 0,1 GB, se trata de un modelo experimental de escala muy reducida, orientado a generacion de texto y probablemente disenado para estudiar el efecto de la tokenizacion (`new-tokenizers` es el nombre del proyecto en W&B) y del empaquetado de datos (`packed`) sobre el comportamiento de modelos linguisticos pequenos. La nomenclatura del identificador sugiere un entrenamiento con aproximadamente 100 MB de datos empaquetados, variante BFD y semilla 455, aunque el autor no documenta estos detalles en la model card.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455 | 39,1 M | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT experimental |
-| goldfish-models/ita_latn_10mb | no disponible | no disponible | no disponible | HuggingFace | Modelo base, preentrenado en italiano con ~10 MB de datos |
-| Otros modelos de la familia Goldfish (otras lenguas) | no disponible | no disponible | no disponible | HuggingFace | Misma receta monolingue, distinto idioma |
+| francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455 | 39,1 M | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT experimental |
+| goldfish-models/ita_latn_10mb | no disponible | no disponible | no disponible | Hugging Face | Modelo base, preentrenado en italiano con ~10 MB de datos |
+| Otros modelos de la familia Goldfish (otras lenguas) | no disponible | no disponible | no disponible | Hugging Face | Misma receta monolingue, distinto idioma |
 | GPT-2 small canonico | 124 M | 1.024 tokens | MIT (segun publicacion original) | Amplia | Referencia de arquitectura, no comparable en licencia ni datos |
 
 No se dispone de datos de rendimiento de ninguno de estos modelos en la informacion proporcionada, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento de ninguno de estos modelos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/ita_latn_10mb
 - Organizacion Goldfish Models: https://huggingface.co/goldfish-models
 - Repositorio TRL: https://github.com/huggingface/trl

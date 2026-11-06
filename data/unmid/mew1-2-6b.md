@@ -77,7 +77,7 @@ Mew1 se diferencia de Qwen y Llama por su naturaleza "uncensored" y su arquitect
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Unmid/Mew1-2.6B
+- Repositorio Hugging Face: https://huggingface.co/Unmid/Mew1-2.6B
 - Repositorio GGUF: https://huggingface.co/Unmid/Mew1-2.6B-GGUF
 - Documentación de LFM2.5-2.6B: https://docs.liquid.ai/lfm/models/lfm25-2.6b
 - Artículo sobre el lanzamiento de LFM2.5-2.6B: https://aiweekly.co/alerts/liquid-ai-ships-lfm25-26b-agent-model-that-runs-on-device

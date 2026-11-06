@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `mawuenar/finbert-tweets-BTX_V3` es un clasificador de texto basado en la arquitectura BERT, publicado en HuggingFace bajo el pipeline `text-classification`. Por su identificador, se trata de un ajuste fino (fine-tuning) de FinBERT orientado a la clasificación de sentimiento en tuits de temática financiera, aunque la model card del autor no documenta explícitamente ni el dataset de entrenamiento ni la tarea exacta.
+El modelo `mawuenar/finbert-tweets-BTX_V3` es un clasificador de texto basado en la arquitectura BERT, publicado en Hugging Face bajo el pipeline `text-classification`. Por su identificador, se trata de un ajuste fino (fine-tuning) de FinBERT orientado a la clasificación de sentimiento en tuits de temática financiera, aunque la model card del autor no documenta explícitamente ni el dataset de entrenamiento ni la tarea exacta.
 
 El repositorio cuenta con 109.484.547 parámetros reales según los pesos en safetensors, lo que coincide con el tamaño de un BERT-base (110M parámetros aproximadamente). El tamaño del repositorio es de 0,4 GB, consistente con pesos en precisión completa o media para ese número de parámetros.
 
-La relevancia de este modelo es limitada en el momento de redactar esta ficha: no tiene descargas ni likes, la model card es la plantilla automática de HuggingFace sin rellenar y no se declara licencia ni idiomas. Se debe tratar como un experimento personal sin validación pública ni documentación técnica verificable.
+La relevancia de este modelo es limitada en el momento de redactar esta ficha: no tiene descargas ni likes, la model card es la plantilla automática de Hugging Face sin rellenar y no se declara licencia ni idiomas. Se debe tratar como un experimento personal sin validación pública ni documentación técnica verificable.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ La relevancia de este modelo es limitada en el momento de redactar esta ficha: n
 
 La arquitectura es BERT, un encoder transformer bidireccional con atención completa. El recuento de parámetros (109,48M) encaja con la configuración BERT-base (12 capas, 768 dimensiones ocultas, 12 cabezas de atención), aunque el autor no confirma la configuración exacta ni el checkpoint base del que parte. Por el nombre del modelo, se infiere un ajuste fino sobre FinBERT, pero no se aporta evidencia en la model card.
 
-No hay información sobre el dataset de entrenamiento, el número de tokens, la composición de las clases, el régimen de entrenamiento (fp32, fp16, bf16), hiperparámetros, ni si se aplicaron técnicas de regularización o balanceo de clases. Tampoco se documenta si hubo validación, partición train/test ni métricas de evaluación. La model card es la plantilla automática generada por HuggingFace y todos los campos relevantes aparecen como `[More Information Needed]`.
+No hay información sobre el dataset de entrenamiento, el número de tokens, la composición de las clases, el régimen de entrenamiento (fp32, fp16, bf16), hiperparámetros, ni si se aplicaron técnicas de regularización o balanceo de clases. Tampoco se documenta si hubo validación, partición train/test ni métricas de evaluación. La model card es la plantilla automática generada por Hugging Face y todos los campos relevantes aparecen como `[More Information Needed]`.
 
 ## Capacidades
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mawuenar/finbert-tweets-BTX_V3` | 109,48M | no disponible | Clasificación de texto (presuntamente sentimiento financiero) | no disponible | HuggingFace, 0 descargas |
-| `ProsusAI/finbert` | ~110M | 512 tokens | Sentimiento financiero (positivo/negativo/neutro) | no disponible en la información de esta ficha | HuggingFace, ampliamente usado |
-| `yiyanghkust/finbert-tone` | ~110M | 512 tokens | Tono financiero (positivo/negativo/neutro) | no disponible en la información de esta ficha | HuggingFace, ampliamente usado |
-| `cardiffnlp/twitter-roberta-base-sentiment-latest` | ~125M | 512 tokens | Sentimiento general en tuits | no disponible en la información de esta ficha | HuggingFace, ampliamente usado |
+| `mawuenar/finbert-tweets-BTX_V3` | 109,48M | no disponible | Clasificación de texto (presuntamente sentimiento financiero) | no disponible | Hugging Face, 0 descargas |
+| `ProsusAI/finbert` | ~110M | 512 tokens | Sentimiento financiero (positivo/negativo/neutro) | no disponible en la información de esta ficha | Hugging Face, ampliamente usado |
+| `yiyanghkust/finbert-tone` | ~110M | 512 tokens | Tono financiero (positivo/negativo/neutro) | no disponible en la información de esta ficha | Hugging Face, ampliamente usado |
+| `cardiffnlp/twitter-roberta-base-sentiment-latest` | ~125M | 512 tokens | Sentimiento general en tuits | no disponible en la información de esta ficha | Hugging Face, ampliamente usado |
 
 La comparación se basa en la categoría (clasificadores BERT-base para sentimiento) y no en datos verificados de rendimiento de este checkpoint concreto, ya que no se han publicado métricas. Los tres alternativos citados cuentan con documentación y validación pública, a diferencia de este modelo.
 
@@ -87,7 +87,7 @@ La comparación se basa en la categoría (clasificadores BERT-base para sentimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mawuenar/finbert-tweets-BTX_V3
+- Modelo en Hugging Face: https://huggingface.co/mawuenar/finbert-tweets-BTX_V3
 - Paper de referencia citado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://ml2co2.github.io/impact
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

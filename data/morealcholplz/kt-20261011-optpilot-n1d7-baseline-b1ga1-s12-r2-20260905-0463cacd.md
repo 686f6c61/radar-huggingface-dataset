@@ -82,7 +82,7 @@ No disponible. No se conocen modelos comparables porque la informacion publicada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-optpilot-n1d7-baseline-b1ga1-s12-r2-20260905-0463cacd
+- Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-optpilot-n1d7-baseline-b1ga1-s12-r2-20260905-0463cacd
 - OptPilot (MINDS-THU), posible proyecto relacionado por nombre, sin confirmacion de vinculo: https://github.com/MINDS-THU/OptPilot
 - Calendario de lanzamientos de modelos de IA (referencia general de contexto): https://www.scriptbyai.com/ai-model-release-calendar/
 - Repositorio `pi`/`openpi` citado en la model card: enlace no disponible en la informacion proporcionada

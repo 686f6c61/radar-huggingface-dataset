@@ -84,7 +84,7 @@ No se dispone de datos publicados sobre otras versiones cuantizadas del mismo mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Qwen3.8-27B-Quark-AWQ-INT4-W4A16
+- Repositorio Hugging Face: https://huggingface.co/amd/Qwen3.8-27B-Quark-AWQ-INT4-W4A16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - AMD Quark (kit de cuantizacion): https://github.com/amd/Quark
 - Blog de AMD sobre soporte dia cero en Ryzen AI Max y Radeon: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

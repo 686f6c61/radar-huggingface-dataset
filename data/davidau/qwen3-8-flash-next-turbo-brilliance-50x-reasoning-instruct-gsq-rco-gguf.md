@@ -23,7 +23,7 @@ Su relevancia actual radica en la combinacion de tres factores: un tamano de par
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible indica que el modelo base es una arquitectura MoE (tag explicito `moe`) con soporte multimodal de tipo imagen-texto-a-texto, lo que implica un codificador visual acoplado a la torre de lenguaje. El pipeline declarado en HuggingFace es `image-text-to-text`, de modo que el modelo acepta imagenes junto a texto como entrada y genera texto. No se detalla en la informacion proporcionada el numero de expertos, los expertos activos por token, la profundidad de la red ni la dimension del estado oculto.
+La informacion disponible indica que el modelo base es una arquitectura MoE (tag explicito `moe`) con soporte multimodal de tipo imagen-texto-a-texto, lo que implica un codificador visual acoplado a la torre de lenguaje. El pipeline declarado en Hugging Face es `image-text-to-text`, de modo que el modelo acepta imagenes junto a texto como entrada y genera texto. No se detalla en la informacion proporcionada el numero de expertos, los expertos activos por token, la profundidad de la red ni la dimension del estado oculto.
 
 Respecto al entrenamiento, la informacion disponible no especifica el numero de tokens utilizados, la composicion del dataset ni si se emplearon tecnicas de alineacion como RLHF o DPO. El autor hace referencia a un proceso de cuantizacion de precision mixta (GSQ, RCO) con calibracion imatrix sobre el modelo base de ISTA-DASLab, asi como a un ajuste de comportamiento denominado "Turbo-Brilliance" con modos de razonamiento e instruccion predefinidos. Estos detalles de ajuste se describen a nivel de etiquetas, sin especificaciones tecnicas publicadas sobre el procedimiento.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento publicados ni de terceros comparables con 
 ## Limitaciones y advertencias
 
 - No se han publicado benchmarks independientes, por lo que no es posible validar el rendimiento real declarado ni los "27 modos de razonamiento".
-- El acceso al modelo esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+- El acceso al modelo esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 - Riesgo de alucinacion: inherente a los modelos generativos de este tamano; no hay datos de evaluacion de fidelidad en la informacion disponible.
 - Sesgos conocidos: no disponible. Al tratarse de un ajuste comunitario sobre un modelo base, puede heredar sesgos del entrenamiento original no documentados aqui.
 - Limitaciones de contexto: la longitud de contexto no se especifica, lo que impide planificar despliegues con requisitos de contexto largo.
@@ -89,8 +89,8 @@ No se dispone de datos de rendimiento publicados ni de terceros comparables con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DavidAU/Qwen3.8-Flash-Next-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-GGUF
-- Perfil del autor en HuggingFace: https://huggingface.co/DavidAU
+- Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-Flash-Next-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-GGUF
+- Perfil del autor en Hugging Face: https://huggingface.co/DavidAU
 - Listado de modelos del autor: https://huggingface.co/DavidAU/models
 - Actividad del autor: https://huggingface.co/DavidAU/activity/all
 - Galeria de modelos de LocalAI (referencia de despliegue GGUF): https://localai.io/docs/gallery.html

@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Ventana de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aoiandroid/whisper-tiny (este repositorio) | 39 M | 30 s | No declarados | Apache-2.0 | HuggingFace, 0 descargas |
-| openai/whisper-tiny | 39 M | 30 s | ~99 (transcripcion) + traduccion a ingles | Apache-2.0 | HuggingFace, repositorio oficial |
-| openai/whisper-base | 74 M | 30 s | ~99 (transcripcion) + traduccion a ingles | Apache-2.0 | HuggingFace, repositorio oficial |
-| openai/whisper-small | 244 M | 30 s | ~99 (transcripcion) + traduccion a ingles | Apache-2.0 | HuggingFace, repositorio oficial |
+| aoiandroid/whisper-tiny (este repositorio) | 39 M | 30 s | No declarados | Apache-2.0 | Hugging Face, 0 descargas |
+| openai/whisper-tiny | 39 M | 30 s | ~99 (transcripcion) + traduccion a ingles | Apache-2.0 | Hugging Face, repositorio oficial |
+| openai/whisper-base | 74 M | 30 s | ~99 (transcripcion) + traduccion a ingles | Apache-2.0 | Hugging Face, repositorio oficial |
+| openai/whisper-small | 244 M | 30 s | ~99 (transcripcion) + traduccion a ingles | Apache-2.0 | Hugging Face, repositorio oficial |
 
 Los datos de parametros, ventana e idiomas de las tres alternativas corresponden a la documentacion publica de OpenAI. El contenido de este repositorio es identico al de `openai/whisper-tiny` en el commit indicado, por lo que la comparacion relevante es frente a los modelos de mayor tamano de la misma familia: base y small ofrecen menor tasa de error a cambio de mas memoria y mas latencia.
 

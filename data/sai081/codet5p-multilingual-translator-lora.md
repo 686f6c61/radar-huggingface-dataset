@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sai081/codet5p-multilingual-translator-lora es un adaptador LoRA publicado en HuggingFace que se aplica sobre el modelo base Salesforce/codet5p-770m, un transformer encoder-decoder de 770 millones de parámetros perteneciente a la familia CodeT5+ de Salesforce. El adaptador se ha entrenado con la librería PEFT 0.20.0 y se distribuye como pesos safetensors, por lo que no sustituye al modelo base: para utilizarlo hay que cargar CodeT5+ 770M y superponer el adaptador. El nombre del repositorio sugiere una especialización en traducción entre lenguajes de programación, si bien la model card no documenta ni el conjunto de datos ni la tarea concreta.
+Sai081/codet5p-multilingual-translator-lora es un adaptador LoRA publicado en Hugging Face que se aplica sobre el modelo base Salesforce/codet5p-770m, un transformer encoder-decoder de 770 millones de parámetros perteneciente a la familia CodeT5+ de Salesforce. El adaptador se ha entrenado con la librería PEFT 0.20.0 y se distribuye como pesos safetensors, por lo que no sustituye al modelo base: para utilizarlo hay que cargar CodeT5+ 770M y superponer el adaptador. El nombre del repositorio sugiere una especialización en traducción entre lenguajes de programación, si bien la model card no documenta ni el conjunto de datos ni la tarea concreta.
 
 El interés de esta ficha es limitado pero claro: se trata de un experimento de ajuste fino de bajo rango sobre un modelo de código pequeño, viable en hardware de consumo. El autor no ha publicado resultados de benchmarks (el bloque model-index está vacío) y la model card es la plantilla automática del Trainer, con la mayoría de secciones marcadas como "More information needed". Los únicos datos objetivos disponibles son las métricas de entrenamiento: dos épocas, 1174 pasos y una pérdida de validación final de 0.3709.
 
@@ -79,7 +79,7 @@ La reducción de la pérdida de validación entre la época 1 y la 2 (0.3885 →
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Sai081/codet5p-multilingual-translator-lora | ~770 M (base) + LoRA | no disponible | BSD-3-Clause | Adaptador en HuggingFace, 0 descargas | Sin benchmarks ni dataset documentado |
+| Sai081/codet5p-multilingual-translator-lora | ~770 M (base) + LoRA | no disponible | BSD-3-Clause | Adaptador en Hugging Face, 0 descargas | Sin benchmarks ni dataset documentado |
 | Salesforce/codet5p-770m | 770 M | no disponible en la información facilitada | BSD-3-Clause | Modelo base público | Referencia directa; el adaptador se apoya en él |
 | Salesforce/codet5p-220m | 220 M | no disponible | BSD-3-Clause | Público | Alternativa más ligera de la misma familia, menor capacidad |
 | Qwen2.5-Coder-1.5B | 1,5 B | 32.768 tokens | Apache-2.0 | Público, muy extendido | Decoder-only, mejor soporte de instrucciones y contexto largo |
@@ -100,7 +100,7 @@ La comparación es asimétrica por diseño: el adaptador evaluado es un ajuste e
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/Sai081/codet5p-multilingual-translator-lora
+- Adaptador en Hugging Face: https://huggingface.co/Sai081/codet5p-multilingual-translator-lora
 - Modelo base: https://huggingface.co/Salesforce/codet5p-770m
 - Paper de CodeT5+: https://arxiv.org/abs/2305.07922
 - Repositorio oficial de CodeT5+: https://github.com/salesforce/CodeT5

@@ -68,9 +68,9 @@ No disponible. Este fixture no tiene equivalentes directos en el ecosistema: es 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aday777/qwen4_exp_tiny_fixture
+- Repositorio Hugging Face: https://huggingface.co/aday777/qwen4_exp_tiny_fixture
 - Documentación de `qwen4_exp` en transformers: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/qwen4_exp.md
 - Código fuente de `modeling_qwen4_exp.py`: https://github.com/huggingface/transformers/blob/main/src/transformers/models/qwen4_exp/modeling_qwen4_exp.py
-- Perfil de Qwen en HuggingFace: https://huggingface.co/Qwen
+- Perfil de Qwen en Hugging Face: https://huggingface.co/Qwen
 - Qwen Studio: https://qwen.ai/home
 - Discusión sobre Qwen3.8-Flash-Next NVFP4 en NVIDIA Forums: https://forums.developer.nvidia.com/t/qwen3-8-flash-next-nvfp4-on-2x-dgx-spark-full-multimodal-70-tok-s-peak-47-typical/381428

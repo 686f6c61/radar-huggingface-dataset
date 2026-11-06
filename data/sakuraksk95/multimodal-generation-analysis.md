@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`sakuraksk95/multimodal-generation-analysis` no es un modelo generativo entrenado, sino un repositorio de notas de investigacion publicado en HuggingFace bajo la etiqueta `research-notes`. Su autoria corresponde al usuario `sakuraksk95` y su contenido se reduce a dos artefactos: `analysis.md` (nota principal) y `README.md`. El propio autor declara explicitamente en la model card que el repositorio "no reclama mejoras de benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado", por lo que debe interpretarse como un esbozo de experimento sobre generacion multimodal, no como un sistema desplegable.
+`sakuraksk95/multimodal-generation-analysis` no es un modelo generativo entrenado, sino un repositorio de notas de investigacion publicado en Hugging Face bajo la etiqueta `research-notes`. Su autoria corresponde al usuario `sakuraksk95` y su contenido se reduce a dos artefactos: `analysis.md` (nota principal) y `README.md`. El propio autor declara explicitamente en la model card que el repositorio "no reclama mejoras de benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado", por lo que debe interpretarse como un esbozo de experimento sobre generacion multimodal, no como un sistema desplegable.
 
 A pesar de las etiquetas `transformer`, `safetensors` y `multimodal-generation`, los tensores reales del repositorio suman unicamente 49.600 parametros totales, una cifra incompatible con cualquier modelo de lenguaje o multimodal funcional. El tamano del repositorio es de 0,0 GB y no se declara pipeline de inferencia, idiomas soportados ni resultados experimentales. Las 0 descargas y 0 likes reflejan un artefacto sin uso ni validacion por parte de la comunidad.
 
-Su relevancia es, por tanto, documental y metodologica: sirve como ejemplo de publicacion de notas de investigacion en HuggingFace y como recordatorio de que la presencia de etiquetas como `transformer` o `multimodal` no implica la existencia de un modelo utilizable. Cualquier evaluacion tecnica del mismo debe limitarse a su contenido escrito, ya que no hay pesos con capacidad funcional que analizar.
+Su relevancia es, por tanto, documental y metodologica: sirve como ejemplo de publicacion de notas de investigacion en Hugging Face y como recordatorio de que la presencia de etiquetas como `transformer` o `multimodal` no implica la existencia de un modelo utilizable. Cualquier evaluacion tecnica del mismo debe limitarse a su contenido escrito, ya que no hay pesos con capacidad funcional que analizar.
 
 ## Especificaciones tecnicas
 
@@ -46,7 +46,7 @@ No hay informacion sobre datos de entrenamiento: no se declara volumen de tokens
 
 - Referencia metodologica para disenar experimentos multimodales: el repositorio enumera factores de confusion, baselines emparejados y comprobaciones de reproducibilidad que pueden reutilizarse como plantilla de protocolo experimental, sin aportar codigo ni pesos.
 - Ejemplo de estructura de model card responsable: el README separa explicitamente hipotesis de resultados y exige documentar dataset, semillas, hardware y logs, lo que sirve como modelo de buenas practicas para publicaciones de investigacion.
-- Auditoria de expectativas en HuggingFace: permite ilustrar como un repositorio etiquetado con `transformer` y `multimodal-generation` puede no contener ningun modelo, util en formacion de equipos que consumen artefactos del hub.
+- Auditoria de expectativas en Hugging Face: permite ilustrar como un repositorio etiquetado con `transformer` y `multimodal-generation` puede no contener ningun modelo, util en formacion de equipos que consumen artefactos del hub.
 - Recoleccion de referencias sobre generacion multimodal: la nota apunta a literatura sobre paradigmas diffusion, autorregresivos e hibridos, aprovechable como punto de partida bibliografico.
 - Base para un futuro estudio comparativo: el esbozo propone comparaciones con baselines emparejados y benchmarks publicos, de modo que otro equipo podria retomarlo y ejecutarlo con recursos propios.
 - Analisis de licencias en investigacion: al estar bajo MIT, sirve como caso de estudio sobre como la licencia del repositorio no cubre los terminos de los datasets externos que se referencian.
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no aplicable en la practica. Por aritmetica pura, 49.600 parametros ocuparian aproximadamente 0,19 MB en fp32, 0,10 MB en fp16 y 0,05 MB en int8, pero no existe una arquitectura declarada que permita ejecutar inferencia significativa.
 - GPU recomendadas: no disponible. No se especifica ningun hardware objetivo.
 - Compatibilidad con GPU de consumo: los tensores, por tamano, caben en cualquier GPU de consumo e incluso en CPU o microcontroladores, pero esa observacion no implica capacidad funcional.
-- Opciones de despliegue: no disponible. No hay repositorio GGUF, no hay pipeline de HuggingFace declarado y no se mencionan vLLM, llama.cpp, Ollama ni TGI. El unico formato presente es safetensors.
+- Opciones de despliegue: no disponible. No hay repositorio GGUF, no hay pipeline de Hugging Face declarado y no se mencionan vLLM, llama.cpp, Ollama ni TGI. El unico formato presente es safetensors.
 - Latencia y throughput estimados: no disponible, y no calculables al no existir un modelo con proposito de inferencia.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ No disponible. El repositorio no es un modelo de aprendizaje automatico, por lo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sakuraksk95/multimodal-generation-analysis
+- Hugging Face: https://huggingface.co/sakuraksk95/multimodal-generation-analysis
 - Multi-Modal Generative AI: Multi-modal LLM, Diffusion and Beyond (arXiv 2409.14993): https://arxiv.org/html/2409.14993v1
 - Unified Multimodal Understanding and Generation Models (arXiv 2505.02567): https://arxiv.org/abs/2505.02567
 - Top 15 Multimodal Models in 2026 (Unitlab): https://blog.unitlab.ai/top-multimodal-models/

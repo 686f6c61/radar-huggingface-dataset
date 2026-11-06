@@ -2,11 +2,11 @@
 
 ## Resumen
 
-omniASR-CTC-300M-v2 es un modelo de reconocimiento automático de voz (ASR) basado en la arquitectura wav2vec2 con cabezal CTC, desarrollado originalmente por Meta AI dentro del proyecto Omnilingual ASR. Esta versión concreta es una conversión a HuggingFace del checkpoint oficial de Meta (`omniASR-CTC-300M-v2.pt`) realizada por el usuario iljab, lo que permite cargarlo directamente con la librería `transformers` mediante la clase `Wav2Vec2ForCTC`.
+omniASR-CTC-300M-v2 es un modelo de reconocimiento automático de voz (ASR) basado en la arquitectura wav2vec2 con cabezal CTC, desarrollado originalmente por Meta AI dentro del proyecto Omnilingual ASR. Esta versión concreta es una conversión a Hugging Face del checkpoint oficial de Meta (`omniASR-CTC-300M-v2.pt`) realizada por el usuario iljab, lo que permite cargarlo directamente con la librería `transformers` mediante la clase `Wav2Vec2ForCTC`.
 
 El modelo pertenece a la familia Omnilingual ASR, diseñada para cubrir más de 1.600 idiomas, incluyendo cientos que nunca habían tenido soporte en sistemas ASR comerciales. Su enfoque combina aprendizaje zero-shot con una familia de modelos flexible, permitiendo añadir nuevos idiomas con solo unos pocos ejemplos pareados. Con 325,98 millones de parámetros y una arquitectura de encoder transformer de 24 capas, ofrece un equilibrio entre precisión y velocidad gracias a la decodificación CTC, que es más rápida que los modelos encoder-decoder.
 
-La relevancia actual de este modelo radica en su amplia cobertura lingüística, su licencia Apache-2.0 que permite uso comercial sin restricciones, y su disponibilidad en formato HuggingFace, lo que facilita su integración en pipelines de ASR existentes. Es especialmente útil para aplicaciones que requieren transcripción en idiomas de bajos recursos donde otros modelos como Whisper tienen una cobertura limitada.
+La relevancia actual de este modelo radica en su amplia cobertura lingüística, su licencia Apache-2.0 que permite uso comercial sin restricciones, y su disponibilidad en formato Hugging Face, lo que facilita su integración en pipelines de ASR existentes. Es especialmente útil para aplicaciones que requieren transcripción en idiomas de bajos recursos donde otros modelos como Whisper tienen una cobertura limitada.
 
 ## Especificaciones tecnicas
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada para inferencia: aproximadamente 1,3 GB en FP32 (tamaño del repo), lo que cabe en cualquier GPU moderna con al menos 2 GB de VRAM. Con cuantización a int8 o float16, el consumo se reduce a unos 700-800 MB.
 - GPU recomendadas: cualquier GPU con soporte CUDA, desde una NVIDIA GTX 1650 (4 GB) hasta A100 o H100 para procesamiento por lotes. También puede ejecutarse en CPU para inferencia no en tiempo real.
 - Compatible con GPUs de consumo: sí, cabe en RTX 3060, RTX 4060, etc. Incluso en hardware de gama baja.
-- Opciones de despliegue: al ser un modelo `transformers`, puede servirse con HuggingFace pipelines, TorchServe, ONNX Runtime o mediante la API de HuggingFace Inference Endpoints. Para despliegue en producción, se puede exportar a ONNX o TensorRT para optimizar la latencia.
+- Opciones de despliegue: al ser un modelo `transformers`, puede servirse con Hugging Face pipelines, TorchServe, ONNX Runtime o mediante la API de Hugging Face Inference Endpoints. Para despliegue en producción, se puede exportar a ONNX o TensorRT para optimizar la latencia.
 - Latencia y throughput: no se han publicado datos específicos. Al ser un modelo CTC de 300M, la inferencia es significativamente más rápida que un modelo encoder-decoder del mismo tamaño, pero los valores exactos dependen del hardware y la optimización.
 
 ## Comparativa con modelos similares
@@ -79,10 +79,10 @@ La comparativa se basa en características generales, ya que no se dispone de be
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iljab/omniASR-CTC-300M-v2
+- Modelo en Hugging Face: https://huggingface.co/iljab/omniASR-CTC-300M-v2
 - Checkpoint original de Meta: https://dl.fbaipublicfiles.com/mms/omniASR-CTC-300M-v2.pt
 - Tokenizer original: https://dl.fbaipublicfiles.com/mms/omniASR_tokenizer_written_v2.model
 - Repositorio oficial de Omnilingual ASR: https://github.com/facebookresearch/omnilingual-asr
 - Documentación de modelos CTC en DeepWiki: https://deepwiki.com/facebookresearch/omnilingual-asr/2.2.2-ctc-models-(fast-asr)
-- Modelo original de Facebook en HuggingFace: https://huggingface.co/facebook/omniASR-CTC-300M
+- Modelo original de Facebook en Hugging Face: https://huggingface.co/facebook/omniASR-CTC-300M
 - Conversión GGUF para CrispASR: https://github.com/linmi/remoasr/blob/main/hf_readmes/omniASR-CTC-300M-v2-GGUF.md

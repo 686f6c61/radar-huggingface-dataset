@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sr_decoder_iclr es un artefacto de modelo publicado en HuggingFace por el usuario raesrreseach bajo el identificador raesrreseach/sr_decoder_iclr. El nombre sugiere un decodificador asociado a una publicacion para la conferencia ICLR, pero la model card publicada no contiene ninguna descripcion tecnica: unicamente incluye la declaracion de licencia apache-2.0. No hay informacion publica sobre el problema que resuelve, la tarea para la que fue entrenado ni el dominio de aplicacion.
+sr_decoder_iclr es un artefacto de modelo publicado en Hugging Face por el usuario raesrreseach bajo el identificador raesrreseach/sr_decoder_iclr. El nombre sugiere un decodificador asociado a una publicacion para la conferencia ICLR, pero la model card publicada no contiene ninguna descripcion tecnica: unicamente incluye la declaracion de licencia apache-2.0. No hay informacion publica sobre el problema que resuelve, la tarea para la que fue entrenado ni el dominio de aplicacion.
 
 El repositorio ocupa 1,7 GB e incluye la etiqueta region:us, sin pipeline declarado, sin idiomas especificados y sin resultados de benchmarks. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y las fechas de creacion y actualizacion (24 de septiembre de 2026) corresponden a un unico ciclo de subida sin revisiones posteriores.
 
@@ -50,7 +50,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 - Base para fine-tuning experimental: si la licencia apache-2.0 cubre los pesos, puede servir como inicializacion en experimentos de ajuste, asumiendo el coste de caracterizar previamente el modelo.
 - Analisis de tokenizador y vocabulario: extraer el tokenizador para estudiar la cobertura linguistica y comprobar si el modelo soporta castellano de forma razonable.
 - Pruebas de infraestructura de despliegue: usar el checkpoint como carga de trabajo de tamano moderado para validar pipelines de servido (vLLM, TGI, llama.cpp) antes de pasar a modelos mayores.
-- Docencia: ilustrar en un curso el ciclo completo de publicacion de un modelo en HuggingFace, incluida la diferencia entre disponer de pesos y disponer de documentacion suficiente.
+- Docencia: ilustrar en un curso el ciclo completo de publicacion de un modelo en Hugging Face, incluida la diferencia entre disponer de pesos y disponer de documentacion suficiente.
 
 Ninguno de estos casos implica que el modelo sea adecuado para tareas de produccion; se limitan a usos de investigacion, auditoria y docencia.
 
@@ -83,5 +83,5 @@ No disponible. La ausencia de datos sobre parametros, contexto, arquitectura y r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/raesrreseach/sr_decoder_iclr
+- Hugging Face: https://huggingface.co/raesrreseach/sr_decoder_iclr
 - No se han encontrado enlaces relevantes adicionales (paper, blog, repositorio de codigo o demo) en la busqueda web realizada.

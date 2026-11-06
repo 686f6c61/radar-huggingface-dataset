@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fszontagh/LLaDA-Image-GGUF (este repositorio) | no disponible | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, GGUF para stable-diffusion.cpp |
-| inclusionAI/LLaDA-Image (modelo base) | no disponible | no disponible | sin benchmarks en la informacion disponible | apache-2.0 | HuggingFace, pesos originales bf16 |
-| fszontagh/LLaDA-Image-Turbo-GGUF (variante destilada a 4 pasos) | no disponible | no disponible | no disponible | apache-2.0 (hereda del base) | HuggingFace, GGUF |
+| fszontagh/LLaDA-Image-GGUF (este repositorio) | no disponible | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, GGUF para stable-diffusion.cpp |
+| inclusionAI/LLaDA-Image (modelo base) | no disponible | no disponible | sin benchmarks en la informacion disponible | apache-2.0 | Hugging Face, pesos originales bf16 |
+| fszontagh/LLaDA-Image-Turbo-GGUF (variante destilada a 4 pasos) | no disponible | no disponible | no disponible | apache-2.0 (hereda del base) | Hugging Face, GGUF |
 | Otros modelos de difusion texto-a-imagen de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion documentada es estructural: el modelo base de 50 pasos exige mas computo por imagen que la variante Turbo de 4 pasos, pero ambos conjuntos de pesos no son compatibles entre si salvo en VAE, SigVQ y tokenizer. No hay datos publicos en esta informacion para comparar con alternativas como Stable Diffusion, FLUX o modelos de difusion con arquitectura de lenguaje.
@@ -89,7 +89,7 @@ La unica comparacion documentada es estructural: el modelo base de 50 pasos exig
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fszontagh/LLaDA-Image-GGUF
+- Repositorio Hugging Face: https://huggingface.co/fszontagh/LLaDA-Image-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/LLaDA-Image
 - Variante destilada en GGUF: https://huggingface.co/fszontagh/LLaDA-Image-Turbo-GGUF
 - Herramienta de conversion e inferencia: https://github.com/leejet/stable-diffusion.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yifei2vec/robodojo es un repositorio publicado en HuggingFace por el usuario Yifei2vec. La informacion disponible en el momento de redactar esta ficha se limita a los metadatos del repositorio: identificador, autor, licencia MIT, etiqueta de region (region:us), cero descargas, cero likes y una model card cuyo unico contenido es la linea `license: mit`. No se ha publicado pipeline, idiomas soportados, arquitectura, tamano ni resultados de evaluacion.
+Yifei2vec/robodojo es un repositorio publicado en Hugging Face por el usuario Yifei2vec. La informacion disponible en el momento de redactar esta ficha se limita a los metadatos del repositorio: identificador, autor, licencia MIT, etiqueta de region (region:us), cero descargas, cero likes y una model card cuyo unico contenido es la linea `license: mit`. No se ha publicado pipeline, idiomas soportados, arquitectura, tamano ni resultados de evaluacion.
 
 Esto significa que no es posible confirmar si robodojo es un modelo de lenguaje, un modelo de embeddings, un modelo de vision, un conjunto de pesos para robotica o cualquier otra categoria de artefacto. El nombre sugiere un posible vinculo con robotica o con representaciones vectoriales (por el sufijo "2vec" del autor), pero se trata de una conjetura basada unicamente en la nomenclatura y no en documentacion verificable.
 
@@ -109,11 +109,11 @@ No disponible. No se puede identificar la categoria del modelo ni, por tanto, se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yifei2vec/robodojo
+- Hugging Face: https://huggingface.co/Yifei2vec/robodojo
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio del autor: no disponible
 - Demo o espacio interactivo: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/Yifei2vec
+- Perfil del autor en Hugging Face: https://huggingface.co/Yifei2vec
 
 Nota sobre la busqueda web: los resultados obtenidos (muenchen.de, sowon.muenchen.de, stadt.muenchen.de, informacion sobre el Kreisverwaltungsreferat) no guardan ninguna relacion con el modelo y se descartan como fuentes.

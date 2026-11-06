@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sonorix/Qwen3-0.6B es un fine-tune del modelo Qwen3-0.6B-Base, publicado por el usuario Sonorix en HuggingFace. Pertenece a la familia Qwen3, la última generación de modelos de lenguaje de Alibaba, que se distingue por su capacidad de alternar entre modo pensamiento (thinking) y modo no-pensamiento dentro de un mismo modelo. Con 0,6 mil millones de parámetros y una ventana de contexto de 32.768 tokens, está orientado a tareas de generación de texto, razonamiento, instrucciones y capacidades de agente en un formato compacto.
+Sonorix/Qwen3-0.6B es un fine-tune del modelo Qwen3-0.6B-Base, publicado por el usuario Sonorix en Hugging Face. Pertenece a la familia Qwen3, la última generación de modelos de lenguaje de Alibaba, que se distingue por su capacidad de alternar entre modo pensamiento (thinking) y modo no-pensamiento dentro de un mismo modelo. Con 0,6 mil millones de parámetros y una ventana de contexto de 32.768 tokens, está orientado a tareas de generación de texto, razonamiento, instrucciones y capacidades de agente en un formato compacto.
 
 El repositorio no aporta información específica sobre el proceso de fine-tuning realizado por Sonorix ni sobre el dataset utilizado; la model card es una copia de la del modelo base de Qwen. Por tanto, las capacidades descritas corresponden a la familia Qwen3 y deben asumirse con cautela respecto al fine-tune concreto. El modelo se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones significativas.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks para el modelo Sonorix/Qwen3-0.6B e
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sonorix/Qwen3-0.6B | 0,6B | 32.768 | Dense, GQA | MIT | HuggingFace |
-| Qwen/Qwen3-0.6B-Base | 0,6B | 32.768 | Dense, GQA | MIT | HuggingFace |
-| Qwen2.5-0.5B-Instruct | 0,5B | 32.768 | Dense | Apache-2.0 | HuggingFace |
-| Llama-3.2-1B | 1,2B | 128.000 | Dense | Llama 3.2 License | HuggingFace |
+| Sonorix/Qwen3-0.6B | 0,6B | 32.768 | Dense, GQA | MIT | Hugging Face |
+| Qwen/Qwen3-0.6B-Base | 0,6B | 32.768 | Dense, GQA | MIT | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 0,5B | 32.768 | Dense | Apache-2.0 | Hugging Face |
+| Llama-3.2-1B | 1,2B | 128.000 | Dense | Llama 3.2 License | Hugging Face |
 
 No se dispone de benchmarks comparativos para el fine-tune de Sonorix, por lo que no es posible comparar el rendimiento real con estos modelos. La comparativa se limita a características estructurales y de licencia.
 
@@ -84,7 +84,7 @@ No se dispone de benchmarks comparativos para el fine-tune de Sonorix, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sonorix/Qwen3-0.6B
+- Modelo en Hugging Face: https://huggingface.co/Sonorix/Qwen3-0.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

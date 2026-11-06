@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| google/gemma-3-1b-it (base) | 1B | 128K | Gemma License (Apache 2.0 para usos permitidos) | HuggingFace |
-| V4ldeLund/gemma-3-1b-it-faroese-experiment1 | 1B | 128K | No disponible | HuggingFace |
-| Erland/gemma-3-1b-it-test | 1B | 128K | Apache 2.0 | HuggingFace |
+| google/gemma-3-1b-it (base) | 1B | 128K | Gemma License (Apache 2.0 para usos permitidos) | Hugging Face |
+| V4ldeLund/gemma-3-1b-it-faroese-experiment1 | 1B | 128K | No disponible | Hugging Face |
+| Erland/gemma-3-1b-it-test | 1B | 128K | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a otros fine-tunes del mismo modelo base, ya que no hay datos de rendimiento para establecer comparaciones cuantitativas. El modelo base es la referencia natural, pero el fine-tune no ha demostrado mejoras medibles.
 
@@ -77,8 +77,8 @@ La comparativa se limita a otros fine-tunes del mismo modelo base, ya que no hay
 
 ## Enlaces
 
-- [HuggingFace - V4ldeLund/gemma-3-1b-it-faroese-experiment1](https://huggingface.co/V4ldeLund/gemma-3-1b-it-faroese-experiment1)
-- [HuggingFace - google/gemma-3-1b-it](https://huggingface.co/google/gemma-3-1b-it)
+- [Hugging Face - V4ldeLund/gemma-3-1b-it-faroese-experiment1](https://huggingface.co/V4ldeLund/gemma-3-1b-it-faroese-experiment1)
+- [Hugging Face - google/gemma-3-1b-it](https://huggingface.co/google/gemma-3-1b-it)
 - [Gemma 3 Technical Report (arXiv)](https://arxiv.org/html/2503.19786v1)
 - [Google DeepMind - Gemma 3](https://deepmind.google/models/gemma/gemma-3/)
 - [AI Model Index - Gemma 3 1B](https://www.modelindex.org/index.php/model/gemma-3-1b/)

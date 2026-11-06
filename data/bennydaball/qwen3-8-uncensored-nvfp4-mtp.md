@@ -93,7 +93,7 @@ La principal diferencia frente al modelo original es la ausencia de censura y la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BennyDaBall/Qwen3.8-Uncensored-NVFP4-MTP
+- Modelo en Hugging Face: https://huggingface.co/BennyDaBall/Qwen3.8-Uncensored-NVFP4-MTP
 - Modelo base abliterado: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
 - Guía de ejecución local (orcarouter): https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally
 - Anuncio del autor en X: https://x.com/BennyDaBall_OG/status/2090890285626617866

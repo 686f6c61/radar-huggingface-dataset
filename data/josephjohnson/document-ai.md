@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`josephjohnson/document-ai` es un repositorio alojado en HuggingFace que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado ni una model card de un sistema de IA desplegable. Su propio README lo describe como un conjunto de notas de lectura y un esbozo de experimento sobre Document AI, con enfasis explicito en "lo que todavia queda por probar" en lugar de en resultados obtenidos. El autor declara de forma literal que el repositorio "no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni un checkpoint entrenado".
+`josephjohnson/document-ai` es un repositorio alojado en Hugging Face que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado ni una model card de un sistema de IA desplegable. Su propio README lo describe como un conjunto de notas de lectura y un esbozo de experimento sobre Document AI, con enfasis explicito en "lo que todavia queda por probar" en lugar de en resultados obtenidos. El autor declara de forma literal que el repositorio "no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni un checkpoint entrenado".
 
 El unico dato cuantitativo real disponible es el recuento de parametros del tensor almacenado: 24.832 parametros. Se trata de un orden de magnitud propio de un tensor auxiliar o de prueba (por ejemplo, una matriz de proyeccion pequena), no de un modelo de lenguaje funcional: para ponerlo en contexto, un transformer de 125 millones de parametros multiplica esa cifra por mas de 5.000. El tamano del repositorio es de 0,0 GB, lo que refuerza la conclusion de que no hay pesos de un modelo utilizable.
 
@@ -85,7 +85,7 @@ No disponible. No procede establecer una comparativa con modelos de Document AI 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/josephjohnson/document-ai
+- Modelo en Hugging Face: https://huggingface.co/josephjohnson/document-ai
 - Model card (contenido citado en esta ficha): incluida en el propio repositorio en `README.md`
 - Artefacto principal del repositorio: `review.md` (no accesible mediante una URL directa en la informacion proporcionada)
 - Paper: no disponible

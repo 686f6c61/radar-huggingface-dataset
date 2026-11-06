@@ -91,7 +91,7 @@ Wichtel-Qwen3.6-27B es la alternativa recomendada por el autor: gana por 7,4 pun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DragonBophades/Eintopf-Qwen3.8-27B
+- Modelo en Hugging Face: https://huggingface.co/DragonBophades/Eintopf-Qwen3.8-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Wichtel-Qwen3.6-27B (alternativa recomendada): https://huggingface.co/nbeerbower/Wichtel-Qwen3.6-27B
 - Adaptadores usados en el merge:

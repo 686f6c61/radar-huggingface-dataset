@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Licencia | Arquitectura | Disponibilidad |
 |---|---|---|---|---|---|
-| Tercet-R-1.0 | 501,6 M | 16.384 | Apache 2.0 | Hibrido GDN-2 + GQA | HuggingFace, requiere tiny_gdn |
-| TinyLlama-1.1B | 1,1 B | 2.048 | Apache 2.0 | Transformer decoder-only | HuggingFace, GGUF disponibles |
-| Qwen2.5-0.5B-Instruct | 0,5 B | 32.768 | Apache 2.0 | Transformer decoder-only | HuggingFace, GGUF disponibles |
-| Llama-3.2-1B-Instruct | 1,23 B | 128.000 | Llama Community License | Transformer decoder-only | HuggingFace, GGUF disponibles |
+| Tercet-R-1.0 | 501,6 M | 16.384 | Apache 2.0 | Hibrido GDN-2 + GQA | Hugging Face, requiere tiny_gdn |
+| TinyLlama-1.1B | 1,1 B | 2.048 | Apache 2.0 | Transformer decoder-only | Hugging Face, GGUF disponibles |
+| Qwen2.5-0.5B-Instruct | 0,5 B | 32.768 | Apache 2.0 | Transformer decoder-only | Hugging Face, GGUF disponibles |
+| Llama-3.2-1B-Instruct | 1,23 B | 128.000 | Llama Community License | Transformer decoder-only | Hugging Face, GGUF disponibles |
 
 ## Limitaciones y advertencias
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kerzgrr/Tercet-R-1.0
+- Hugging Face: https://huggingface.co/kerzgrr/Tercet-R-1.0
 - Modelo base: https://huggingface.co/kerzgrr/Tercet-base
 - Chat hermano (sin modo think): https://huggingface.co/kerzgrr/Tercet
 - Version posterior: https://huggingface.co/kerzgrr/Tercet-R-1.1

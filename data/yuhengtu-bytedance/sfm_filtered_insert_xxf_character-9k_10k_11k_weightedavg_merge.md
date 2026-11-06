@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfm_filtered_insert_xxf_character-9k_10k_11k_weightedavg_merge` es un modelo de lenguaje de 6.856.253.440 parametros (6,86 mil millones) publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No se trata de un modelo entrenado desde cero, sino del resultado de una fusion de pesos (*weighted average*) entre tres checkpoints de un mismo proceso de entrenamiento: los pasos globales 9000, 10000 y 11000 de una ejecucion denominada internamente `filtered_insert_xxf_character`. La fusion se realizo con la herramienta mergekit y el metodo Linear, equivalente a un *model soup* con ponderaciones 1, 2 y 3 normalizadas.
+`sfm_filtered_insert_xxf_character-9k_10k_11k_weightedavg_merge` es un modelo de lenguaje de 6.856.253.440 parametros (6,86 mil millones) publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No se trata de un modelo entrenado desde cero, sino del resultado de una fusion de pesos (*weighted average*) entre tres checkpoints de un mismo proceso de entrenamiento: los pasos globales 9000, 10000 y 11000 de una ejecucion denominada internamente `filtered_insert_xxf_character`. La fusion se realizo con la herramienta mergekit y el metodo Linear, equivalente a un *model soup* con ponderaciones 1, 2 y 3 normalizadas.
 
 La arquitectura declarada en los tags del repositorio es `gpt_neox`, es decir, un transformer decoder-only autoregresivo de la familia GPT-NeoX (la misma empleada por los modelos Pythia de EleutherAI). Los pesos se distribuyen en formato safetensors y el repositorio ocupa 13,7 GB, lo que concuerda con un almacenamiento en bfloat16 de 6,86B de parametros. El modelo esta etiquetado como `text-generation` y `conversational`, con compatibilidad declarada con text-generation-inference y endpoints.
 
@@ -35,7 +35,7 @@ En cuanto al entrenamiento, no hay informacion publica sobre el numero de tokens
 
 - Generacion de texto autoregresiva en modo completion y chat, segun la etiqueta `conversational` del repositorio.
 - Generacion de texto multi-turno: la etiqueta conversacional sugiere uso en dialogos, aunque no se especifica ninguna plantilla de prompt ni tokens especiales de chat.
-- Compatibilidad con text-generation-inference y con endpoints, lo que permite desplegarlo con un servidor compatible con la API de HuggingFace.
+- Compatibilidad con text-generation-inference y con endpoints, lo que permite desplegarlo con un servidor compatible con la API de Hugging Face.
 - Capacidad de razonamiento, codigo, matematicas o funciones de tool calling: no disponible. No hay ninguna declaracion al respecto en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; no se declara ningun idioma.
@@ -92,7 +92,7 @@ Diferencias clave: frente a los tres alternativos, el modelo analizado no docume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-9k_10k_11k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-9k_10k_11k_weightedavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Paper del metodo de fusion lineal (Model Soups): https://arxiv.org/abs/2203.05482
 - Documentacion de text-generation-inference: no disponible en la informacion proporcionada

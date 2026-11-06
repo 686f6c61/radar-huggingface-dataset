@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Cuantizacion | Tamano | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dicksondickson/granite-4.2-8b-oQ8e-bf16-MLX | 8,79 mil millones | 8 bits oQ8e con imatrix y tensores selectivos en bf16 | 9,3 GB | safetensors MLX / oMLX | MIT | Publicado en HuggingFace, 0 descargas y 1 like |
-| ibm-granite/granite-4.2-8b (modelo base) | 8,79 mil millones | bf16 sin cuantizar (aprox. 17,6 GB, calculado a partir del numero de parametros) | No disponible en la informacion proporcionada | safetensors (libreria no indicada) | No disponible en la informacion proporcionada | Modelo de referencia de IBM en HuggingFace |
+| dicksondickson/granite-4.2-8b-oQ8e-bf16-MLX | 8,79 mil millones | 8 bits oQ8e con imatrix y tensores selectivos en bf16 | 9,3 GB | safetensors MLX / oMLX | MIT | Publicado en Hugging Face, 0 descargas y 1 like |
+| ibm-granite/granite-4.2-8b (modelo base) | 8,79 mil millones | bf16 sin cuantizar (aprox. 17,6 GB, calculado a partir del numero de parametros) | No disponible en la informacion proporcionada | safetensors (libreria no indicada) | No disponible en la informacion proporcionada | Modelo de referencia de IBM en Hugging Face |
 | Otras cuantizaciones del mismo modelo base (GGUF, otras variantes MLX) | 8,79 mil millones | 4-8 bits segun variante | No disponible | GGUF / MLX | No disponible | No disponible; no verificado en la informacion proporcionada |
 
 La comparación con alternativas de terceros de la misma categoría (por ejemplo, otros modelos de aproximadamente 8 mil millones de parámetros con soporte MLX) no puede elaborarse con los datos disponibles: no se han encontrado ni sus especificaciones ni sus resultados en la información proporcionada.
@@ -89,7 +89,7 @@ La comparación con alternativas de terceros de la misma categoría (por ejemplo
 - Ausencia de validación comunitaria: 0 descargas y 1 like en el momento de redactar la ficha, y una model card de apenas tres líneas útiles. No hay evidencia externa de que el checkpoint funcione correctamente en todas las configuraciones.
 - Model card mínima: no se documentan el pipeline de la tarea, la configuración de generación recomendada, la longitud de contexto utilizada durante la calibración ni los parámetros de cuantización exactos.
 - Restricciones de licencia: este checkpoint se publica bajo MIT, lo que en principio permite uso comercial, pero conviene verificar la licencia y las condiciones del modelo base `ibm-granite/granite-4.2-8b` antes de explotarlo en producción, ya que la información proporcionada no las recoge.
-- Fechas del repositorio: la creación y la última actualización figuran como 2026-10-09, posteriores a la fecha de redacción de esta ficha. Conviene comprobar los metadatos actuales en HuggingFace antes de tomarlos como referencia.
+- Fechas del repositorio: la creación y la última actualización figuran como 2026-10-09, posteriores a la fecha de redacción de esta ficha. Conviene comprobar los metadatos actuales en Hugging Face antes de tomarlos como referencia.
 - Uso en producción: dada la falta de evaluación, se recomienda tratar este checkpoint como una opción de prototipado y validación interna, no como una pieza crítica de un sistema en producción sin una batería de pruebas propia.
 
 ## Enlaces

@@ -45,7 +45,7 @@ La conversión a MLX realizada por Oscilla no modifica la arquitectura subyacent
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible para esta conversion especifica. El modelo base google/gemma-3-1b-it cuenta con resultados publicados en su ficha de HuggingFace (MMLU, HumanEval, GSM8K, etc.), pero no se dispone de esos datos en el material proporcionado. Se recomienda consultar la ficha del modelo original para obtener metricas comparativas.
+No se han publicado resultados de benchmarks en la informacion disponible para esta conversion especifica. El modelo base google/gemma-3-1b-it cuenta con resultados publicados en su ficha de Hugging Face (MMLU, HumanEval, GSM8K, etc.), pero no se dispone de esos datos en el material proporcionado. Se recomienda consultar la ficha del modelo original para obtener metricas comparativas.
 
 ## Requisitos de hardware
 
@@ -78,7 +78,7 @@ La comparativa se basa en datos publicos de los modelos mencionados. Oscilla y m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Oscilla/gemma-3-1b-it-mlx-4Bit
+- Modelo en Hugging Face: https://huggingface.co/Oscilla/gemma-3-1b-it-mlx-4Bit
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Conversion similar de mlx-community: https://huggingface.co/mlx-community/gemma-3-1b-it-4bit
 - Despliegue en FriendliAI: https://friendli.ai/models/Oscilla/gemma-3-1b-it-mlx-4Bit

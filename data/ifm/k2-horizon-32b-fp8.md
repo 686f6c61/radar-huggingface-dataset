@@ -71,7 +71,7 @@ La model card incluye una tabla de benchmarks comparando K2-Horizon-32B-Stage1 c
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| K2-Horizon-32B-FP8 | 34,8B | 512K | Apache 2.0 | safetensors FP8 | HuggingFace |
+| K2-Horizon-32B-FP8 | 34,8B | 512K | Apache 2.0 | safetensors FP8 | Hugging Face |
 | Qwen3.8-27B | 27B | no disponible | no disponible | no disponible | no disponible |
 | Muse Glimmer-30B | 30B | no disponible | no disponible | no disponible | no disponible |
 | IBM Granite 4.2 30B | 30B | no disponible | no disponible | no disponible | no disponible |
@@ -91,7 +91,7 @@ Los datos de contexto, licencia y formato de los modelos comparables no están d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IFM/K2-Horizon-32B-FP8
+- Hugging Face: https://huggingface.co/IFM/K2-Horizon-32B-FP8
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-32B
 - Código de preentrenamiento: https://github.com/ifm-ai/xllm
 - Código de post-entrenamiento: https://github.com/ifm-ai/horizon-post-train

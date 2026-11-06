@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dylaneise/financial8ball` es un repositorio publicado en HuggingFace por el usuario `dylaneise`. La informacion disponible se limita a los metadatos del repositorio: licencia MIT, region `us` y cero descargas y cero likes en el momento de la consulta. No hay pipeline declarado, no hay idiomas declarados y la model card no contiene mas contenido que la linea de licencia.
+`dylaneise/financial8ball` es un repositorio publicado en Hugging Face por el usuario `dylaneise`. La informacion disponible se limita a los metadatos del repositorio: licencia MIT, region `us` y cero descargas y cero likes en el momento de la consulta. No hay pipeline declarado, no hay idiomas declarados y la model card no contiene mas contenido que la linea de licencia.
 
 El repositorio no incluye descripcion de arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, resultados de benchmarks ni ejemplos de uso. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces obtenidos corresponden a ORBEN, una empresa alemana de tratamiento de agua, y a la pagina de desambiguacion de Wikipedia del apellido "Orben", por lo que no aportan informacion tecnica utilizable.
 
@@ -82,7 +82,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 | Contexto | no disponible | no disponible | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible | no disponible | no disponible |
 | Licencia | MIT | no disponible | no disponible | no disponible |
-| Disponibilidad | repositorio en HuggingFace, sin descargas registradas | no disponible | no disponible | no disponible |
+| Disponibilidad | repositorio en Hugging Face, sin descargas registradas | no disponible | no disponible | no disponible |
 
 La comparativa queda pendiente de que se identifiquen modelos de la misma categoria.
 
@@ -101,7 +101,7 @@ La comparativa queda pendiente de que se identifiquen modelos de la misma catego
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dylaneise/financial8ball
+- Repositorio en Hugging Face: https://huggingface.co/dylaneise/financial8ball
 - Model card del autor: sin contenido tecnico mas alla de la licencia MIT.
 - Paper o informe tecnico: no disponible.
 - Repositorio de codigo: no disponible.

@@ -99,11 +99,11 @@ No se dispone de benchmarks comparativos directos entre ambos borradores DSpark 
 - Rendimiento variable por categoría: la tasa de aceptación es significativamente menor en categorías como roleplay (AL 2.80) y writing (AL 3.27) en comparación con RAG (AL 5.35) o multilingüe (AL 5.05). En tareas creativas, la aceleración será menor.
 - Limitaciones de contexto: aunque GLM-5.2 soporta hasta 1M tokens, los benchmarks de este borrador solo cubren hasta 32K de contexto. El rendimiento en contextos más largos no está verificado.
 - Restricciones de licencia: la licencia MIT permite uso comercial sin restricciones, pero el modelo objetivo GLM-5.2 puede tener su propia licencia que debe verificarse por separado.
-- Sin garantías de producción: el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido ampliamente probado en producción por la comunidad.
+- Sin garantías de producción: el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido ampliamente probado en producción por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlayaNeW/GLM-5.2-DSpark
+- Modelo en Hugging Face: https://huggingface.co/AlayaNeW/GLM-5.2-DSpark
 - Modelo objetivo GLM-5.2: https://huggingface.co/zai-org/GLM-5.2
 - Modelo objetivo GLM-5.2-FP8: https://huggingface.co/zai-org/GLM-5.2-FP8
 - Paper DSpark: https://arxiv.org/abs/2607.05147

@@ -72,7 +72,7 @@ No se dispone de comparativas publicadas con otros adaptadores LoRA para razonam
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/kyleliu789/qwen3-14b-svamp14-dpo-qlora-lr1e-6-checkpoint-350)
+- [Hugging Face del adaptador](https://huggingface.co/kyleliu789/qwen3-14b-svamp14-dpo-qlora-lr1e-6-checkpoint-350)
 - [Checkpoint 200 del mismo autor](https://huggingface.co/kyleliu789/qwen3-14b-svamp14-dpo-qlora-checkpoint-200)
 - [Variante all-caps del mismo autor](https://huggingface.co/kyleliu789/qwen3-14b-svamp-dpo-qlora-all-caps)
 - [Technical report de Qwen3](https://arxiv.org/html/2505.09388v1)

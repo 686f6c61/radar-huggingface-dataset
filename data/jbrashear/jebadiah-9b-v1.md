@@ -100,8 +100,8 @@ Prueba de robustez a contenido irrelevante (UUID insertado en el estado o en las
 
 | Modelo | Parámetros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jebadiah-9b-v1 | 9B (base) + adaptador LoRA | no disponible | Macro 73,3 en conjuntos públicos zero-shot; Nimble macro 77,0 | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| jebadiah-9b-v0 | 9B (base) + adaptador LoRA | no disponible | Macro 72,5; Decision Score algo mejor en el conjunto score in-distribution | apache-2.0 | HuggingFace |
+| jebadiah-9b-v1 | 9B (base) + adaptador LoRA | no disponible | Macro 73,3 en conjuntos públicos zero-shot; Nimble macro 77,0 | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| jebadiah-9b-v0 | 9B (base) + adaptador LoRA | no disponible | Macro 72,5; Decision Score algo mejor en el conjunto score in-distribution | apache-2.0 | Hugging Face |
 | Nimble-9B | no disponible | no disponible | 74,8 de macro accuracy en los 13 subconjuntos públicos de Nimble (tabla publicada por Bespoke) | no disponible | no disponible en la información |
 | Jev | no disponible | no disponible | 76,0 de macro accuracy en los mismos subconjuntos (tabla publicada por Bespoke) | no disponible | no disponible en la información |
 
@@ -123,7 +123,7 @@ La comparación con Nimble-9B y Jev procede de la tabla publicada por Bespoke ci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jbrashear/jebadiah-9b-v1
+- Modelo en Hugging Face: https://huggingface.co/jbrashear/jebadiah-9b-v1
 - Versión anterior v0: https://huggingface.co/jbrashear/jebadiah-9b-v0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Dataset LocalLLaMA/typed-decisions: https://huggingface.co/datasets/LocalLLaMA/typed-decisions

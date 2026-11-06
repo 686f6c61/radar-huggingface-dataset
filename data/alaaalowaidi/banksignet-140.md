@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MSFV-Net (Multi-Script Forgery Verification Network) es una red neuronal siamesa basada en ResNet50 entrenada para la verificacion offline de firmas manuscritas sobre imagenes reales de cheques bancarios indios. Lo desarrolla Alaa Alowaidi, con la colaboracion de Pushpendra Kumar Pateriya, y se distribuye en HuggingFace bajo el identificador `AlaaAlowaidi/BankSigNet-140`. El problema que aborda es concreto: determinar si una firma plasmada en un cheque es autentica o una falsificacion habil (skilled forgery), sin disponer de informacion dinamica de trazado, solo a partir de la imagen escaneada.
+MSFV-Net (Multi-Script Forgery Verification Network) es una red neuronal siamesa basada en ResNet50 entrenada para la verificacion offline de firmas manuscritas sobre imagenes reales de cheques bancarios indios. Lo desarrolla Alaa Alowaidi, con la colaboracion de Pushpendra Kumar Pateriya, y se distribuye en Hugging Face bajo el identificador `AlaaAlowaidi/BankSigNet-140`. El problema que aborda es concreto: determinar si una firma plasmada en un cheque es autentica o una falsificacion habil (skilled forgery), sin disponer de informacion dinamica de trazado, solo a partir de la imagen escaneada.
 
 El modelo parte del checkpoint `microsoft/resnet-50` y se reentrena con una arquitectura siamesa de pesos compartidos, de modo que aprende una metrica de similitud entre pares de firmas. Lo diferencial es que cubre simultaneamente tres sistemas de escritura (arabe, ingles y hindi) sobre un mismo benchmark, algo que la model card presenta como el primer conjunto de datos de firmas offline recogido de cheques bancarios reales con fondos impresos y tres scripts en un unico corpus.
 
@@ -90,7 +90,7 @@ La informacion disponible solo permite comparar el rendimiento en la evaluacion 
 
 | Modelo | Accuracy en BHSig260-Hindi (%) | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MSFV-Net | 93,15 | no disponible (backbone ResNet50) | no aplica | MIT | Checkpoint en HuggingFace + codigo y dataset en GitHub |
+| MSFV-Net | 93,15 | no disponible (backbone ResNet50) | no aplica | MIT | Checkpoint en Hugging Face + codigo y dataset en GitHub |
 | SigNet | 84,64 | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | IDN | 93,04 | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
@@ -108,7 +108,7 @@ La informacion disponible solo permite comparar el rendimiento en la evaluacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlaaAlowaidi/BankSigNet-140
+- Modelo en Hugging Face: https://huggingface.co/AlaaAlowaidi/BankSigNet-140
 - Repositorio de codigo y dataset: https://github.com/Alaa-hub964/BankSigNet-140
 - Modelo base: https://huggingface.co/microsoft/resnet-50
 - Paper: MSFV-Net: Explainable Multi-Script Offline Signature Verification on Real Bank Cheque Data, Alaa Alowaidi y Pushpendra Kumar Pateriya, Al-Khwarizmi Engineering Journal, en revision (sin enlace publico disponible en la informacion proporcionada)

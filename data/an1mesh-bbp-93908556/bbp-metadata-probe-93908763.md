@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `an1mesh-bbp-93908556/bbp-metadata-probe-93908763` es un artefacto publicado en HuggingFace por el usuario `an1mesh-bbp-93908556` bajo la etiqueta `security-research`. Segun la model card, se trata de una "sonda de parser de metadatos autorizada" ("Authorized metadata parser probe"), descrita como un repositorio de modelo diminuto propiedad de "an1mesh" para pruebas autorizadas en DigitalOcean. No se presenta como un modelo funcional destinado a inferencia real, sino como un objeto de prueba para validar el comportamiento de herramientas que leen metadatos de repositorios.
+El repositorio `an1mesh-bbp-93908556/bbp-metadata-probe-93908763` es un artefacto publicado en Hugging Face por el usuario `an1mesh-bbp-93908556` bajo la etiqueta `security-research`. Segun la model card, se trata de una "sonda de parser de metadatos autorizada" ("Authorized metadata parser probe"), descrita como un repositorio de modelo diminuto propiedad de "an1mesh" para pruebas autorizadas en DigitalOcean. No se presenta como un modelo funcional destinado a inferencia real, sino como un objeto de prueba para validar el comportamiento de herramientas que leen metadatos de repositorios.
 
 El dato mas relevante es que el recuento real de parametros en los ficheros safetensors es de 1, lo que confirma que no contiene pesos de un modelo de lenguaje utilizable. La etiqueta `qwen3` sugiere una asociacion nominal con la familia Qwen3, pero no hay evidencia de que el contenido corresponda a un modelo de esa familia. El repositorio incluye `custom_code`, lo que implica que su carga requiere `trust_remote_code=True` y ejecucion de codigo arbitrario del autor.
 
-Por tanto, esta ficha documenta un artefacto de investigacion de seguridad y no un modelo desplegable. Su interes es acotado: sirve para estudiar como los escaneres de metadatos, los pipelines de descarga y las herramientas de analisis de HuggingFace interpretan repositorios con etiquetas enganosas, codigo personalizado y recuentos de parametros triviales. No debe confundirse con un modelo de la familia Qwen3 ni usarse en produccion.
+Por tanto, esta ficha documenta un artefacto de investigacion de seguridad y no un modelo desplegable. Su interes es acotado: sirve para estudiar como los escaneres de metadatos, los pipelines de descarga y las herramientas de analisis de Hugging Face interpretan repositorios con etiquetas enganosas, codigo personalizado y recuentos de parametros triviales. No debe confundirse con un modelo de la familia Qwen3 ni usarse en produccion.
 
 ## Especificaciones tecnicas
 
@@ -39,7 +39,7 @@ No se dispone de informacion sobre innovaciones tecnicas, metodos de decodificac
 
 - Pruebas de robustez de escaneres de metadatos: permite comprobar como herramientas que leen model cards, tags y recuentos de parametros tratan repositorios con etiquetas potencialmente enganosas (por ejemplo, `qwen3` con un unico parametro).
 - Validacion de politicas de `trust_remote_code`: sirve para verificar si un pipeline de descarga ejecuta o bloquea codigo personalizado antes de inspeccionarlo, un control de seguridad relevante en entornos corporativos.
-- Auditoria de inventarios de modelos: util para probar sistemas que catalogan repositorios de HuggingFace y deben distinguir artefactos de prueba de modelos reales.
+- Auditoria de inventarios de modelos: util para probar sistemas que catalogan repositorios de Hugging Face y deben distinguir artefactos de prueba de modelos reales.
 - Formacion en seguridad de la cadena de suministro de modelos: ejemplo controlado para explicar riesgos de descargar repositorios con codigo remoto y licencias permisivas.
 - Pruebas de integracion en CI/CD: permite comprobar que un pipeline falla de forma segura ante un repositorio que no contiene pesos utilizables.
 - Verificacion de limites de licencia y atribucion: con licencia Apache 2.0, sirve para probar como los sistemas registran y muestran la licencia de artefactos no funcionales.
@@ -72,4 +72,4 @@ No disponible. No se identifican en la informacion proporcionada modelos compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/an1mesh-bbp-93908556/bbp-metadata-probe-93908763
+- Repositorio en Hugging Face: https://huggingface.co/an1mesh-bbp-93908556/bbp-metadata-probe-93908763

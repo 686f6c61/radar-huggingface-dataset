@@ -6,7 +6,7 @@
 
 El modelo forma parte de un pipeline mas amplio (SFT, DPO y GRPO sobre datos publicos de Inside Airbnb) y es relevante como ejemplo de especializacion estrecha mediante tecnicas de alineamiento ligero: un adaptador de apenas 0,1 GB que se aplica sobre un modelo de 1.700 millones de parametros y mejora metricas de fidelidad factual y estilo en un dominio acotado. No es un modelo generalista, sino una pieza de un sistema de generacion de titulos para marketplaces de alojamiento.
 
-La ficha describe exclusivamente la informacion publicada en la model card y en los metadatos de HuggingFace; cualquier dato no presente se indica como no disponible.
+La ficha describe exclusivamente la informacion publicada en la model card y en los metadatos de Hugging Face; cualquier dato no presente se indica como no disponible.
 
 ## Especificaciones tecnicas
 
@@ -78,9 +78,9 @@ El propio autor advierte que, en 50 pares etiquetados manualmente, el juez coinc
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| title-optimizer-dpo (este) | Adaptador LoRA sobre Qwen3-1.7B | No disponible | Generacion de titulos Airbnb con DPO | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| title-optimizer-sft | Adaptador LoRA sobre Qwen3-1.7B | No disponible | Misma tarea, solo SFT (requerido antes del DPO) | Apache 2.0 | HuggingFace |
-| Qwen3-1.7B (base) | 1.700 millones | No disponible en esta ficha | Modelo generalista multilingue | Apache 2.0 | HuggingFace |
+| title-optimizer-dpo (este) | Adaptador LoRA sobre Qwen3-1.7B | No disponible | Generacion de titulos Airbnb con DPO | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| title-optimizer-sft | Adaptador LoRA sobre Qwen3-1.7B | No disponible | Misma tarea, solo SFT (requerido antes del DPO) | Apache 2.0 | Hugging Face |
+| Qwen3-1.7B (base) | 1.700 millones | No disponible en esta ficha | Modelo generalista multilingue | Apache 2.0 | Hugging Face |
 
 No se dispone de informacion sobre otros adaptadores o modelos especializados en generacion de titulos de alquiler vacacional con los que comparar rendimiento de forma directa.
 
@@ -97,7 +97,7 @@ No se dispone de informacion sobre otros adaptadores o modelos especializados en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pulkit-thukral/title-optimizer-dpo
+- Modelo en Hugging Face: https://huggingface.co/pulkit-thukral/title-optimizer-dpo
 - Adaptador SFT previo: https://huggingface.co/pulkit-thukral/title-optimizer-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/pulkit-thukral/listing-title-optimizer

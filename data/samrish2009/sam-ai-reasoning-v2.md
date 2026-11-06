@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Samrish2009/SAM-AI-Reasoning-v2 es un modelo publicado en HuggingFace por el usuario Samrish2009 bajo la libreria `transformers` y con pesos en formato `safetensors`. El repositorio ocupa 0,7 GB y las etiquetas declaradas son `transformers`, `safetensors`, `endpoints_compatible` y `region:us`. El nombre sugiere una orientacion a tareas de razonamiento y una segunda iteracion respecto a una version previa, pero esta orientacion no esta confirmada por ninguna documentacion del autor.
+Samrish2009/SAM-AI-Reasoning-v2 es un modelo publicado en Hugging Face por el usuario Samrish2009 bajo la libreria `transformers` y con pesos en formato `safetensors`. El repositorio ocupa 0,7 GB y las etiquetas declaradas son `transformers`, `safetensors`, `endpoints_compatible` y `region:us`. El nombre sugiere una orientacion a tareas de razonamiento y una segunda iteracion respecto a una version previa, pero esta orientacion no esta confirmada por ninguna documentacion del autor.
 
-La model card incluida en el repositorio es la plantilla autogenerada por HuggingFace y no ha sido rellenada: todos los campos relevantes (desarrollador real, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, resultados de evaluacion y uso previsto) aparecen como `[More Information Needed]`. En consecuencia, no es posible verificar arquitectura, tamano, contexto, regimen de entrenamiento ni capacidades reales del modelo a partir de la informacion publicada.
+La model card incluida en el repositorio es la plantilla autogenerada por Hugging Face y no ha sido rellenada: todos los campos relevantes (desarrollador real, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, resultados de evaluacion y uso previsto) aparecen como `[More Information Needed]`. En consecuencia, no es posible verificar arquitectura, tamano, contexto, regimen de entrenamiento ni capacidades reales del modelo a partir de la informacion publicada.
 
 La relevancia de esta ficha es, por tanto, fundamentalmente cautelar: se trata de un artefacto sin documentacion, sin descargas ni valoraciones registradas (0 descargas, 0 likes en el momento de la consulta) y sin resultados de benchmarks. Cualquier evaluacion o uso en produccion deberia ir precedido de una inspeccion directa de los pesos, la configuracion (`config.json`) y pruebas controladas por parte del usuario.
 
@@ -23,15 +23,15 @@ La relevancia de esta ficha es, por tanto, fundamentalmente cautelar: se trata d
 | Libreria declarada | transformers |
 | Tamano del repositorio | 0,7 GB |
 | Pipeline declarado | no disponible |
-| Fecha de creacion | 2026-09-27 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-28 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-27 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-28 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La model card no especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un diseno hibrido, ni tampoco el numero de capas, dimensiones ocultas, numero de cabezas de atencion o tipo de tokenizador. El unico dato estructural disponible es que los pesos se distribuyen en `safetensors` y que el modelo es cargable mediante la libreria `transformers`, lo que implica compatibilidad con el ecosistema estandar de HuggingFace, pero no aporta informacion sobre el diseno interno.
+No se ha publicado informacion sobre la arquitectura del modelo. La model card no especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un diseno hibrido, ni tampoco el numero de capas, dimensiones ocultas, numero de cabezas de atencion o tipo de tokenizador. El unico dato estructural disponible es que los pesos se distribuyen en `safetensors` y que el modelo es cargable mediante la libreria `transformers`, lo que implica compatibilidad con el ecosistema estandar de Hugging Face, pero no aporta informacion sobre el diseno interno.
 
-Tampoco hay datos sobre el procedimiento de entrenamiento: se desconoce el volumen de tokens, la composicion del corpus, si hubo fases de ajuste supervisado, RLHF, DPO u otras tecnicas de alineamiento, asi como los hiperparametros utilizados. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla por defecto de HuggingFace; no es un paper asociado al modelo. No se identifica ninguna innovacion tecnica documentada.
+Tampoco hay datos sobre el procedimiento de entrenamiento: se desconoce el volumen de tokens, la composicion del corpus, si hubo fases de ajuste supervisado, RLHF, DPO u otras tecnicas de alineamiento, asi como los hiperparametros utilizados. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla por defecto de Hugging Face; no es un paper asociado al modelo. No se identifica ninguna innovacion tecnica documentada.
 
 ## Capacidades
 
@@ -55,7 +55,7 @@ Dado que no existe documentacion funcional, los siguientes escenarios son hipote
 - Generacion de texto auxiliar en aplicaciones de bajo riesgo: borradores, resumentes cortos o reformulaciones, con revision posterior.
 - Investigacion sobre alineamiento y evaluacion de modelos: el artefacto puede servir como caso de estudio de repositorios publicados sin model card ni evaluacion, para analizar riesgos de trazabilidad.
 - Filtrado previo en pipelines de datos: uso como clasificador ligero para descartar contenido antes de procesarlo con un modelo mayor.
-- Educacion y experimentacion con HuggingFace: carga mediante `transformers` para practicar tecnicas de inferencia, cuantizacion y despliegue.
+- Educacion y experimentacion con Hugging Face: carga mediante `transformers` para practicar tecnicas de inferencia, cuantizacion y despliegue.
 
 En todos los casos, la ausencia de licencia declarada impide asumir permisos de uso comercial.
 
@@ -77,7 +77,7 @@ Las siguientes estimaciones son orientativas y se derivan exclusivamente del tam
 - VRAM para inferencia: si los pesos estan en fp16/bf16, la carga del modelo ocuparia aproximadamente 0,7 GB; a ello habria que sumar la cache KV, cuyo tamano depende de una longitud de contexto desconocida. En cuantizacion de 4 bits, el peso podria reducirse a unos 200-350 MB, estimacion no confirmada.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM deberia ser suficiente para un modelo de esta clase; una RTX 3060, RTX 4060 o superior seria mas que adecuada. Para lotes grandes o contextos largos, una RTX 4090 o una A100 aportarian margen adicional.
 - Compatibilidad con GPU de consumo: probable en practicamente cualquier GPU de consumo moderna e incluso en CPU, siempre que el tamano real de parametros coincida con la estimacion.
-- Opciones de despliegue: al distribuirse en `safetensors` con libreria `transformers`, el modelo es cargable con la propia libreria y, previsiblemente, convertible a GGUF para llama.cpp u Ollama, o servir con vLLM o TGI. La etiqueta `endpoints_compatible` sugiere compatibilidad con los Inference Endpoints de HuggingFace. Ninguna de estas opciones ha sido verificada por el autor.
+- Opciones de despliegue: al distribuirse en `safetensors` con libreria `transformers`, el modelo es cargable con la propia libreria y, previsiblemente, convertible a GGUF para llama.cpp u Ollama, o servir con vLLM o TGI. La etiqueta `endpoints_compatible` sugiere compatibilidad con los Inference Endpoints de Hugging Face. Ninguna de estas opciones ha sido verificada por el autor.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -86,10 +86,10 @@ No es posible establecer una comparativa rigurosa porque se desconocen los param
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Samrish2009/SAM-AI-Reasoning-v2 | no disponible | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) |
-| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache 2.0 | HuggingFace, Ollama, vLLM |
-| Llama-3.2-1B-Instruct | 1,2 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace, Ollama |
-| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens | Apache 2.0 | HuggingFace, llama.cpp |
+| Samrish2009/SAM-AI-Reasoning-v2 | no disponible | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) |
+| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache 2.0 | Hugging Face, Ollama, vLLM |
+| Llama-3.2-1B-Instruct | 1,2 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face, Ollama |
+| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens | Apache 2.0 | Hugging Face, llama.cpp |
 
 La comparacion de rendimiento entre estos modelos y SAM-AI-Reasoning-v2 no puede realizarse con la informacion disponible.
 
@@ -107,5 +107,5 @@ La comparacion de rendimiento entre estos modelos y SAM-AI-Reasoning-v2 no puede
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Samrish2009/SAM-AI-Reasoning-v2
+- Modelo en Hugging Face: https://huggingface.co/Samrish2009/SAM-AI-Reasoning-v2
 - Referencia citada en los tags (plantilla de Hu

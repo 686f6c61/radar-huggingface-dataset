@@ -70,6 +70,6 @@ No se dispone de informacion sobre modelos directamente comparables en la docume
 
 ## Enlaces
 
-- [Modelo en HuggingFace: North-ML1/Aurora-Proelia-Thinking](https://huggingface.co/North-ML1/Aurora-Proelia-Thinking)
+- [Modelo en Hugging Face: North-ML1/Aurora-Proelia-Thinking](https://huggingface.co/North-ML1/Aurora-Proelia-Thinking)
 - [Modelo base: North-ML1/Aurora-Proelia](https://huggingface.co/North-ML1/Aurora-Proelia)
 - [Dataset de entrenamiento: open-r1/OpenR1-Math-220k](https://huggingface.co/datasets/open-r1/OpenR1-Math-220k)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio shizukadara2/pm-copilot-sft-adapter es un artefacto publicado en HuggingFace por el usuario shizukadara2 el 21 de septiembre de 2026, con un tamaño de repositorio de 0,2 GB y etiquetado con las etiquetas transformers, safetensors, arxiv:1910.09700, endpoints_compatible y region:us. La model card asociada es la plantilla genérica autogenerada por HuggingFace: todas las secciones relevantes (descripción, desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación) contienen el marcador "[More Information Needed]". No hay, por tanto, información verificable sobre arquitectura, parámetros, contexto o procedencia.
+El repositorio shizukadara2/pm-copilot-sft-adapter es un artefacto publicado en Hugging Face por el usuario shizukadara2 el 21 de septiembre de 2026, con un tamaño de repositorio de 0,2 GB y etiquetado con las etiquetas transformers, safetensors, arxiv:1910.09700, endpoints_compatible y region:us. La model card asociada es la plantilla genérica autogenerada por Hugging Face: todas las secciones relevantes (descripción, desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación) contienen el marcador "[More Information Needed]". No hay, por tanto, información verificable sobre arquitectura, parámetros, contexto o procedencia.
 
-El nombre del repositorio sugiere que se trata de un adaptador resultante de un proceso de fine-tuning supervisado (SFT) orientado a un caso de uso de "copiloto" para gestión de producto, pero esta interpretación es una hipótesis derivada del identificador y no está confirmada por ninguna documentación del autor. La etiqueta safetensors indica que los pesos se distribuyen en ese formato y la etiqueta endpoints_compatible sugiere compatibilidad con los endpoints de inferencia de HuggingFace; ninguna de las dos aporta información sobre el modelo base.
+El nombre del repositorio sugiere que se trata de un adaptador resultante de un proceso de fine-tuning supervisado (SFT) orientado a un caso de uso de "copiloto" para gestión de producto, pero esta interpretación es una hipótesis derivada del identificador y no está confirmada por ninguna documentación del autor. La etiqueta safetensors indica que los pesos se distribuyen en ese formato y la etiqueta endpoints_compatible sugiere compatibilidad con los endpoints de inferencia de Hugging Face; ninguna de las dos aporta información sobre el modelo base.
 
 Su relevancia actual es limitada como modelo evaluable: sin model card, sin licencia declarada y sin resultados de evaluación, no es posible determinar qué modelo base extiende, qué capacidades hereda ni si su uso comercial está permitido. Esta ficha se limita a inventariar los metadatos disponibles y a señalar explícitamente cada dato ausente.
 
@@ -54,7 +54,7 @@ Advertencia previa: al no existir documentación, los escenarios siguientes se d
 - Resumen de entrevistas con usuarios y de investigación cualitativa: extracción de temas recurrentes, citas relevantes y patrones de dolor a partir de transcripciones largas, condicionado a la ventana de contexto del modelo base (desconocida).
 - Generación de documentación de producto: redacción de notas de versión, guías internas y textos de ayuda a partir de un changelog o de un listado de incidencias, integrable en un flujo de trabajo tipo CI si el artefacto expone una API compatible con transformers.
 - Priorización y clasificación de feedback: etiquetado automático de tickets o comentarios de clientes por área funcional, severidad o impacto, usando el adaptador como clasificador de texto si la tarea se formula como generación etiquetada.
-- Prototipado de asistentes conversacionales internos: despliegue en un endpoint de HuggingFace (la etiqueta endpoints_compatible apunta en esa dirección) para validar la viabilidad de un copiloto de producto antes de invertir en un modelo propio.
+- Prototipado de asistentes conversacionales internos: despliegue en un endpoint de Hugging Face (la etiqueta endpoints_compatible apunta en esa dirección) para validar la viabilidad de un copiloto de producto antes de invertir en un modelo propio.
 - Investigación sobre fine-tuning eficiente: el artefacto puede ser útil como caso de estudio de adaptadores SFT publicados sin documentación, para analizar qué metadatos mínimos debería exigir un pipeline de publicación de modelos.
 - Evaluación comparativa de adaptadores: si se confirma el modelo base, serviría para medir la ganancia de un ajuste SFT sobre tareas de gestión de producto frente al modelo base sin ajustar.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM para inferencia: no disponible de forma directa. Al tratarse presumiblemente de un adaptador, los requisitos vendrían determinados por el modelo base, que se desconoce. Como referencia orientativa y no confirmada: un adaptador de 0,2 GB sobre un modelo base de 7-8B exigiría en torno a 16 GB de VRAM en fp16, unos 8-10 GB en cuantización de 8 bits y unos 5-6 GB en 4 bits, más el coste del contexto.
 - GPU recomendadas: no disponible. No hay información del autor al respecto.
 - GPU de consumo: no confirmado. Si el adaptador se aplicase sobre un modelo base de 7-8B cuantizado a 4 bits, podría caber en tarjetas con 8-12 GB de VRAM (por ejemplo, RTX 3060 12 GB, RTX 4070, RTX 3080); esto es una estimación condicional, no un dato verificado.
-- Opciones de despliegue: la librería declarada es transformers y el formato es safetensors. No hay confirmación de compatibilidad con vLLM, llama.cpp, Ollama, TGI ni otros motores. La etiqueta endpoints_compatible sugiere uso mediante los endpoints de inferencia de HuggingFace, sin que se detallen condiciones.
+- Opciones de despliegue: la librería declarada es transformers y el formato es safetensors. No hay confirmación de compatibilidad con vLLM, llama.cpp, Ollama, TGI ni otros motores. La etiqueta endpoints_compatible sugiere uso mediante los endpoints de inferencia de Hugging Face, sin que se detallen condiciones.
 - Latencia y throughput: no disponible. No se han publicado medidas de velocidad, tamaño de lote óptimo ni tiempos de arranque.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No disponible. Sin conocer el modelo base ni la tarea exacta del ajuste, no es p
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pm-copilot-sft-adapter | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| pm-copilot-sft-adapter | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No disponible. Sin conocer el modelo base ni la tarea exacta del ajuste, no es p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shizukadara2/pm-copilot-sft-adapter
+- Repositorio en Hugging Face: https://huggingface.co/shizukadara2/pm-copilot-sft-adapter
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimación de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la plantilla de model card: https://mlco2.github.io/impact
 - Paper, blog, repositorio de código o demo del modelo: no disponible

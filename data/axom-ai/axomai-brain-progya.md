@@ -74,7 +74,7 @@ La comparativa es aproximada: no existen datos de rendimiento del modelo de axom
 ## Limitaciones y advertencias
 
 - Licencia propietaria (axom-ai-proprietary): el uso comercial está sujeto a los términos del autor, que no se detallan públicamente; es imprescindible revisarlos antes de cualquier despliegue en producción.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita la reproducibilidad y la auditoría independiente.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita la reproducibilidad y la auditoría independiente.
 - Ausencia total de benchmarks publicados: no hay evidencia empírica de calidad en generación, traducción o diálogo.
 - Riesgo de alucinación inherente a los modelos de 2,5B parámetros, especialmente en un dominio lingüístico con datos de entrenamiento presumiblemente escasos.
 - Cobertura limitada a asamés e inglés; no debe esperarse competencia en otras lenguas.
@@ -85,5 +85,5 @@ La comparativa es aproximada: no existen datos de rendimiento del modelo de axom
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/axom-ai/axomai-brain-progya
+- Hugging Face: https://huggingface.co/axom-ai/axomai-brain-progya
 - No se han encontrado en la búsqueda web papers, blogs, repositorios o demos adicionales asociados al modelo.

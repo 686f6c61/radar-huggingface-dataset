@@ -2,7 +2,7 @@
 
 ## Resumen
 
-multitask-run3 es un repositorio experimental publicado por el usuario hujiahaobef en HuggingFace que contiene una implementacion propia de un Transformer de tamano minimo ("Tiny Transformer") orientado a tareas multiples. El modelo cuenta con 16.576 parametros totales segun el archivo `model.safetensors`, lo que lo situa varios ordenes de magnitud por debajo de cualquier modelo de lenguaje utilizable en produccion. El repositorio incluye el codigo fuente (`predict.py`), la configuracion de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicializacion.
+multitask-run3 es un repositorio experimental publicado por el usuario hujiahaobef en Hugging Face que contiene una implementacion propia de un Transformer de tamano minimo ("Tiny Transformer") orientado a tareas multiples. El modelo cuenta con 16.576 parametros totales segun el archivo `model.safetensors`, lo que lo situa varios ordenes de magnitud por debajo de cualquier modelo de lenguaje utilizable en produccion. El repositorio incluye el codigo fuente (`predict.py`), la configuracion de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicializacion.
 
 El propio autor indica explicitamente en la model card que el checkpoint no ha sido entrenado ni auditado, y que no se reclama ninguna puntuacion de benchmark. Se trata, por tanto, de un punto de partida para experimentacion con variantes de arquitectura (atencion multi-query, fusion de bajo rango, activacion GELU, normalizacion ScaleNorm) y no de un modelo listo para inferencia real.
 
@@ -80,7 +80,7 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hujiahaobef/multitask-run3
+- Modelo en Hugging Face: https://huggingface.co/hujiahaobef/multitask-run3
 - Archivos del repositorio: `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de codigo independiente o demo: no disponible.
 - Nota sobre la busqueda web: los resultados recuperados en la busqueda no guardan ninguna relacion con este modelo (contenido para adultos y agregadores de terceros); se descartan por no ser fuentes tecnicas validas.

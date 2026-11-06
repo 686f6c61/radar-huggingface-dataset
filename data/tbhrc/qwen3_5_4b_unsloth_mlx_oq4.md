@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento ni licencias para comparar con modelos sim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tbhrc/qwen3_5_4b_unsloth_mlx_oq4
+- Repositorio Hugging Face: https://huggingface.co/tbhrc/qwen3_5_4b_unsloth_mlx_oq4
 - Documentacion de Qwen3.5 (Unsloth): https://unsloth.ai/docs/models/qwen3.5
-- Coleccion Qwen3.5 en HuggingFace: https://huggingface.co/collections/unsloth/qwen35
+- Coleccion Qwen3.5 en Hugging Face: https://huggingface.co/collections/unsloth/qwen35
 - Repositorio oQ (omlx): https://github.com/jundot/omlx

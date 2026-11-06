@@ -17,9 +17,9 @@ El interés actual del artefacto es metodológico. Documenta con detalle un patr
 | Parámetros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no aplica (modelo tabular; no existe ventana de contexto. Entrada: 10 variables agronómicas y hasta 8 variables financieras) |
 | Tipos de cuantización | no disponible (no se documenta cuantización; los árboles XGBoost no se distribuyen en formatos GGUF/AWQ/GPTQ) |
-| Idiomas soportados | no disponible (la propia HuggingFace marca los idiomas como no disponibles; las etiquetas del modelo están en inglés) |
+| Idiomas soportados | no disponible (la propia Hugging Face marca los idiomas como no disponibles; las etiquetas del modelo están en inglés) |
 | Licencia | MIT |
-| Formato de pesos | no disponible. El repositorio contiene código Python y artefactos del modelo bajo `releases/`; el tag `onnx` figura en los metadatos de HuggingFace, aunque la model card no documenta una exportación ONNX |
+| Formato de pesos | no disponible. El repositorio contiene código Python y artefactos del modelo bajo `releases/`; el tag `onnx` figura en los metadatos de Hugging Face, aunque la model card no documenta una exportación ONNX |
 | Librería y versión | `xgboost==3.4.1`, con `numpy` y `pandas` (y `scikit-learn` para reentrenar) |
 | Pipeline declarado | `tabular-regression` |
 | Tamaño del repositorio | 0,0 GB |
@@ -87,7 +87,7 @@ No se han identificado en la información proporcionada modelos comparables de l
 
 | Modelo | Arquitectura | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Maminda KCS Learning Loop | XGBoost (3 regresores + 1 clasificador) | rendimiento agrícola y probabilidad de devolución | no aplica | MIT | público en HuggingFace, 0 descargas |
+| Maminda KCS Learning Loop | XGBoost (3 regresores + 1 clasificador) | rendimiento agrícola y probabilidad de devolución | no aplica | MIT | público en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -105,7 +105,7 @@ No se han identificado en la información proporcionada modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/awesomeddiey/Maminda-KCS-Learning-Loop
+- Modelo en Hugging Face: https://huggingface.co/awesomeddiey/Maminda-KCS-Learning-Loop
 - Demo: https://huggingface.co/spaces/awesomeddiey/Maminda-KCS-Research-Lab
 - Clasificador de cultivos Mashonaland (YOLO26n): https://huggingface.co/awesomeddiey/Mashonaland-Crop-Classifier-YOLO26n
 - Dataset Genomes to Fields 2022: https://doi.org/10.25739/3d3g-pe51

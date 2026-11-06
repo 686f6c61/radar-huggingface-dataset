@@ -61,7 +61,7 @@ No disponible. Este repositorio no es comparable con modelos de recuperación te
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vincentgodz/paper_017778857_text_image_retrieval
+- Repositorio Hugging Face: https://huggingface.co/vincentgodz/paper_017778857_text_image_retrieval
 - Tema relacionado en GitHub: https://github.com/topics/image-text-retrieval
 - Paper sobre Llama Nemoretriever Colembed: https://arxiv.org/abs/2507.05513
 - Paper sobre CIRR dataset: https://arxiv.org/abs/2108.04024

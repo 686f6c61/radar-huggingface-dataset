@@ -24,7 +24,7 @@ Su relevancia es acotada y muy especifica: sirve como referencia reproducible pa
 | Dimension de salida | 14 acciones articulares |
 | Framework de entrenamiento | RSL-RL (inferido de la ruta del checkpoint en la model card) |
 | Entorno de simulacion | MuJoCo / Mjlab, tarea `Mjlab-HeadstandFold-Flat-MicroDuck` |
-| Tamano del repositorio | 0,0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun metadatos de Hugging Face) |
 | Fecha de creacion (metadatos) | 2026-09-22 |
 | Fecha de actualizacion (metadatos) | 2026-09-22 |
 
@@ -91,14 +91,14 @@ No se dispone de informacion sobre modelos comparables en el material proporcion
 - Muestreo de fuerzas limitado: las muestras de fuerza en la cabeza se toman a 50 Hz y pueden omitir impactos mas breves.
 - Agregacion de politicas: los 87/96 intentos corresponden al conjunto de seis politicas, no a esta politica de forma aislada.
 - Diferencia entre artefactos: los conteos de rollout publicados se midieron con el checkpoint original, no con la exportacion ONNX, por lo que el rendimiento del grafo ONNX no esta cuantificado de forma independiente.
-- Cero adopcion registrada: 0 descargas y 0 likes en HuggingFace, sin senales de uso externo ni validacion por terceros.
+- Cero adopcion registrada: 0 descargas y 0 likes en Hugging Face, sin senales de uso externo ni validacion por terceros.
 - Metadatos anomalos: las fechas de creacion y actualizacion (2026-09-22) son posteriores a la fecha habitual de referencia y no resultan coherentes; conviene verificar la vigencia del repositorio.
 - Resultados de busqueda no pertinentes: las busquedas web realizadas devolvieron contenido sin relacion con el modelo (foros sobre seguros de automovil), por lo que no se ha podido contrastar informacion externa adicional.
 - Sesgos y alucinacion: no aplica en el sentido habitual, al no ser un modelo generativo de texto; el riesgo equivalente es la generalizacion indebida de resultados de simulacion a escenarios no evaluados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZachGarner/microduck-headstand-fold
+- Modelo en Hugging Face: https://huggingface.co/ZachGarner/microduck-headstand-fold
 - Codigo de evaluacion, configuracion y resultados en bruto: https://github.com/zachgarner/microduck-headstand/tree/71ad395
 - Ruta del checkpoint en la cache del evaluador: `logs/rsl_rl/microduck_headstand_fold/wandb_checkpoints/vorty4kb/model_1000.pt`
 - Archivos incluidos en el repositorio: `model_1000.pt`, `policy.onnx`, `provenance.json`, `evaluation.json`

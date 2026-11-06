@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chenhaodev/tcm-constitution-qwen3-8b-lora | 8B base + LoRA r=16 | No especificado (uso a 1024) | Sin benchmarks publicados; loss 0,46 → 0,31 | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3-8B (modelo base) | 8B densos | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Apache 2.0 (segun la ficha del adaptador) | HuggingFace, modelo de referencia ampliamente distribuido |
+| chenhaodev/tcm-constitution-qwen3-8b-lora | 8B base + LoRA r=16 | No especificado (uso a 1024) | Sin benchmarks publicados; loss 0,46 → 0,31 | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3-8B (modelo base) | 8B densos | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Apache 2.0 (segun la ficha del adaptador) | Hugging Face, modelo de referencia ampliamente distribuido |
 | Otros ajustes de MTC sobre modelos abiertos | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de datos de benchmarks ni de modelos comparables de MTC en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa. La unica comparacion sustentada es con el modelo base Qwen3-8B, del que este repositorio solo redistribuye el adaptador.
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de modelos comparables de MTC en la info
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/chenhaodev/tcm-constitution-qwen3-8b-lora
+- Pagina del modelo en Hugging Face: https://huggingface.co/chenhaodev/tcm-constitution-qwen3-8b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Dataset declarado: https://huggingface.co/datasets/chenhaodev/tcm-constitution-qwen3-8b-lora
 - Modelo de embeddings usado en el indice RAG: https://huggingface.co/BAAI/bge-small-zh-v1.5

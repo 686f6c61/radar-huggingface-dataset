@@ -99,8 +99,8 @@ Las especificaciones de Pythia-70M, GPT-2 small y TinyLlama-1.1B corresponden a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sovythos/Sovythos-66M-Base
+- Modelo en Hugging Face: https://huggingface.co/sovythos/Sovythos-66M-Base
 - Demo en vivo de la plataforma Sovereign: https://awaken-creation-guidance.ngrok-free.dev/
-- Repositorio de imagenes del proyecto en HuggingFace: https://huggingface.co/buckets/my0919175/Sovythos-66M-Base/resolve/sovythos.png
+- Repositorio de imagenes del proyecto en Hugging Face: https://huggingface.co/buckets/my0919175/Sovythos-66M-Base/resolve/sovythos.png
 - Cita proporcionada por el autor (BibTeX): sovythos66m, titulo SOVYTHOS-66M-Base, autor Mahmoud Yasser, ano 2026, editorial Hugging Face.
 - La busqueda web realizada no devolvio enlaces relevantes sobre el modelo: los resultados fueron tutoriales genericos de deep learning (GeeksforGeeks, TutorialKart, W3Schools, igmGuru) sin relacion con Sovythos ni con el Sovereign AI Project.

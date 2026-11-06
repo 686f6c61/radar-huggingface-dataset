@@ -93,7 +93,7 @@ No hay alternativas abliterated de terceros con datos comparables publicados en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmareshHebbar/Qwen3.5-4B-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/AmareshHebbar/Qwen3.5-4B-Abliterated
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3.5-4B
 - Prueba de metodologia del autor (PDF, referencia a version previa): https://huggingface.co/AmareshHebbar/Qwen2.5-1.5B-Abliterated-2.0.2/blob/main/Qwen-2.5-1.5b-Abliterated_proof.pdf
 - Dataset MMLU: https://huggingface.co/datasets/cais/mmlu

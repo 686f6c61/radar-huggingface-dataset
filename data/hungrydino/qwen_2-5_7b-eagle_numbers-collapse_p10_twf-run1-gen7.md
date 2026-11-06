@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen7` es un ajuste fino (fine-tune) del modelo instructivo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace bajo licencia Apache 2.0. Por la nomenclatura del repositorio (menciones a "eagle", "numbers-collapse", "run1" y "gen7"), todo apunta a un artefacto de experimentación o investigación más que a un modelo listo para producción; no se documenta en la model card ningún detalle sobre el objetivo del entrenamiento, el dataset utilizado ni los hiperparámetros.
+El modelo `HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen7` es un ajuste fino (fine-tune) del modelo instructivo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face bajo licencia Apache 2.0. Por la nomenclatura del repositorio (menciones a "eagle", "numbers-collapse", "run1" y "gen7"), todo apunta a un artefacto de experimentación o investigación más que a un modelo listo para producción; no se documenta en la model card ningún detalle sobre el objetivo del entrenamiento, el dataset utilizado ni los hiperparámetros.
 
 El modelo se distribuye únicamente en formato `safetensors` y está etiquetado como modelo de generación de texto en inglés (`en`). El repositorio ocupa aproximadamente 0,1 GB, un tamano muy inferior al que tendrían los pesos completos de un modelo de 7.600 millones de parámetros en precisión FP16 (en torno a 15 GB), lo que sugiere que el contenido podría ser un adaptador LoRA, un checkpoint parcial o una subida incompleta. Este punto es relevante para cualquiera que quiera evaluarlo.
 
-A fecha de la ficha, el modelo registra 0 descargas y 0 "likes", no tiene pipeline declarado y no incluye resultados de benchmarks ni documentación técnica más allá de la indicación de que fue entrenado con Unsloth y la librería TRL de HuggingFace. En consecuencia, cualquier evaluación de capacidades reales debe hacerse por cuenta del usuario; las especificaciones que se detallan a continuación se heredan del modelo base Qwen2.5-7B-Instruct, salvo donde se indique lo contrario.
+A fecha de la ficha, el modelo registra 0 descargas y 0 "likes", no tiene pipeline declarado y no incluye resultados de benchmarks ni documentación técnica más allá de la indicación de que fue entrenado con Unsloth y la librería TRL de Hugging Face. En consecuencia, cualquier evaluación de capacidades reales debe hacerse por cuenta del usuario; las especificaciones que se detallan a continuación se heredan del modelo base Qwen2.5-7B-Instruct, salvo donde se indique lo contrario.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ A fecha de la ficha, el modelo registra 0 descargas y 0 "likes", no tiene pipeli
 
 El modelo parte de Qwen2.5-7B-Instruct, un transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU en la red feed-forward y atencion con RoPE. El base emplea Grouped Query Attention (28 cabezas de consulta y 4 cabezas de clave/valor), 28 capas, un tamano oculto de 3.584 y un vocabulario de 151.936 tokens. Segun la documentacion publica de Qwen2.5, el modelo base fue preentrenado sobre aproximadamente 18 billones de tokens y posteriormente alineado mediante ajuste supervisado y optimizacion de preferencias.
 
-Sobre el proceso de ajuste fino de este repositorio concreto no hay informacion: la model card solo indica que se entreno "2x mas rapido con Unsloth y la libreria TRL de HuggingFace". No se especifican el numero de tokens de entrenamiento, la composicion del dataset, la tecnica de adaptacion (LoRA, QLoRA, full fine-tuning), la existencia de RLHF/DPO posterior ni el proposito del experimento. Dado el nombre del repositorio y el tamano reducido del mismo, es plausible que se trate de un adaptador o de un checkpoint parcial de una investigacion, pero esto no puede confirmarse con la informacion disponible.
+Sobre el proceso de ajuste fino de este repositorio concreto no hay informacion: la model card solo indica que se entreno "2x mas rapido con Unsloth y la libreria TRL de Hugging Face". No se especifican el numero de tokens de entrenamiento, la composicion del dataset, la tecnica de adaptacion (LoRA, QLoRA, full fine-tuning), la existencia de RLHF/DPO posterior ni el proposito del experimento. Dado el nombre del repositorio y el tamano reducido del mismo, es plausible que se trate de un adaptador o de un checkpoint parcial de una investigacion, pero esto no puede confirmarse con la informacion disponible.
 
 ## Capacidades
 
@@ -91,8 +91,8 @@ El modelo aqui descrito comparte arquitectura y tamano con el Qwen2.5-7B-Instruc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen7
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen7
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Nota: la busqueda web realizada no devolvio enlaces relevantes sobre este modelo (unicamente resultados no relacionados), por lo que no se pueden aportar papers, blogs ni demos adicionales.

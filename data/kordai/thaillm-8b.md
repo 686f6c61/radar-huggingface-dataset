@@ -20,7 +20,7 @@ Su relevancia radica en ser un modelo open source con licencia permisiva (Apache
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
-KordAI/ThaiLLM-8B es un finetune del modelo ThaiLLM/ThaiLLM-8B, que a su vez se basa en la arquitectura Qwen3. El repositorio de HuggingFace no especifica la variante exacta de Qwen3 ni los detalles de la arquitectura (número de capas, cabezas de atención, etc.). El entrenamiento se realizó utilizando las librerías Unsloth y HuggingFace TRL, lo que según la model card permitió entrenar el modelo 2 veces más rápido de lo habitual. No se proporciona información sobre el tamaño del dataset, su composición, ni sobre técnicas de alineación como RLHF o DPO.
+KordAI/ThaiLLM-8B es un finetune del modelo ThaiLLM/ThaiLLM-8B, que a su vez se basa en la arquitectura Qwen3. El repositorio de Hugging Face no especifica la variante exacta de Qwen3 ni los detalles de la arquitectura (número de capas, cabezas de atención, etc.). El entrenamiento se realizó utilizando las librerías Unsloth y Hugging Face TRL, lo que según la model card permitió entrenar el modelo 2 veces más rápido de lo habitual. No se proporciona información sobre el tamaño del dataset, su composición, ni sobre técnicas de alineación como RLHF o DPO.
 
 ## Capacidades
 - Generación de texto: el modelo es capaz de producir texto en inglés, según el idioma declarado en los metadatos.
@@ -51,7 +51,7 @@ Las siguientes estimaciones se basan en el número de parámetros (8.190.735.360
   - Cuantización 8-bit: ~8,2 GB.
   - Cuantización 4-bit: ~4,1 GB.
 - GPU recomendadas: una RTX 4090 (24 GB) puede alojar el modelo en FP16 sin cuantización; una A100 40 GB o H100 ofrecen mayor margen para lotes grandes. Con cuantización 4-bit, una RTX 3060 de 12 GB podría ser suficiente para inferencia básica.
-- Opciones de despliegue: Transformers (HuggingFace), vLLM, Text Generation Inference (TGI) y, si se convierte a GGUF, llama.cpp u Ollama. El tag "endpoints_compatible" sugiere compatibilidad con APIs de inferencia.
+- Opciones de despliegue: Transformers (Hugging Face), vLLM, Text Generation Inference (TGI) y, si se convierte a GGUF, llama.cpp u Ollama. El tag "endpoints_compatible" sugiere compatibilidad con APIs de inferencia.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -66,5 +66,5 @@ No se dispone de información sobre benchmarks ni características comparables d
 - Producción: sin benchmarks ni pruebas de rendimiento, no se recomienda su uso en sistemas críticos sin una evaluación previa exhaustiva.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/KordAI/ThaiLLM-8B
+- Modelo en Hugging Face: https://huggingface.co/KordAI/ThaiLLM-8B
 - Modelo base ThaiLLM/ThaiLLM-8B: https://huggingface.co/ThaiLLM/ThaiLLM-8B

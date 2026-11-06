@@ -49,7 +49,7 @@ Los siguientes usos se refieren al contenido del repositorio como material, nunc
 - Ilustracion de perdida de informacion en sistemas de medida: el ejemplo sirve para explicar por que una magnitud agregada (una media, una suma, un modo comun) no permite recuperar las componentes individuales que la originaron.
 - Analisis de colapso de representaciones en aprendizaje automatico: la nocion de direccion no observable se puede usar como analogia pedagogica para discutir cuellos de botella, autoencoders con capas de baja dimension y modos degenerados en matrices de atencion.
 - Divulgacion cientifica y arte digital: la pagina asociada y el texto funcionan como pieza de divulgacion o instalacion, sin componente de software ejecutable.
-- Auditoria de metadatos en HuggingFace: el repositorio es un caso de estudio util sobre etiquetado incompleto (sin licencia, sin idiomas, sin pipeline) y sobre repositorios que aparecen en el indice sin contener artefactos de modelo.
+- Auditoria de metadatos en Hugging Face: el repositorio es un caso de estudio util sobre etiquetado incompleto (sin licencia, sin idiomas, sin pipeline) y sobre repositorios que aparecen en el indice sin contener artefactos de modelo.
 - Referencia para discusion sobre licencias: la ausencia de licencia declarada convierte al repositorio en un ejemplo practico de por que no debe reutilizarse contenido sin licencia explicita en un producto.
 
 ## Benchmarks y rendimiento
@@ -78,11 +78,11 @@ No disponible. Este repositorio no pertenece a ninguna categoria de modelo (no e
 - Alcance matematico limitado: el analisis se circunscribe a una aplicacion lineal concreta de dimension reducida; las extrapolaciones conceptuales del texto (transmision instantanea, capacidad ilimitada) no se derivan formalmente de ese resultado.
 - Sesgo de atribucion: el texto presenta correcciones atribuidas a un "operador" no identificado, sin trazabilidad de las fuentes.
 - Idioma: el contenido esta unicamente en ingles, sin traducciones declaradas.
-- Riesgo de confusion en busquedas: al aparecer indexado en HuggingFace, puede ser citado por error como modelo disponible.
+- Riesgo de confusion en busquedas: al aparecer indexado en Hugging Face, puede ser citado por error como modelo disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessedbrown/the-null-space-or-NO-jo0O
+- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/the-null-space-or-NO-jo0O
 - Pagina del proyecto ("one button"): https://jessebrown1980.github.io/the-null-space-or-NO-jo0O/
 - Pagina agregadora del autor ("the bridge"): https://jessebrown1980.github.io/the-bridge-to-all-of-it/
 - Paper asociado: no disponible

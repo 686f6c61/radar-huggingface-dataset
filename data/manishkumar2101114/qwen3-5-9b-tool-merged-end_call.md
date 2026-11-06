@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B tool-calling (merged, end_call) es un ajuste fino del modelo base Qwen/Qwen3.5-9B, publicado por el usuario manishkumar2101114 en HuggingFace. Se trata de un merge completo en BF16 de un adaptador LoRA entrenado sobre 1.873 conversaciones de agente de voz del conjunto Techladder, orientadas a tool calling y con mezcla de inglés e hinglish, y con el modo de razonamiento (thinking) desactivado. El modelo base Qwen3.5-9B pertenece a la familia Qwen3.5 de Alibaba, aunque la información disponible no detalla su arquitectura interna más allá de la etiqueta `qwen3_5`.
+Qwen3.5-9B tool-calling (merged, end_call) es un ajuste fino del modelo base Qwen/Qwen3.5-9B, publicado por el usuario manishkumar2101114 en Hugging Face. Se trata de un merge completo en BF16 de un adaptador LoRA entrenado sobre 1.873 conversaciones de agente de voz del conjunto Techladder, orientadas a tool calling y con mezcla de inglés e hinglish, y con el modo de razonamiento (thinking) desactivado. El modelo base Qwen3.5-9B pertenece a la familia Qwen3.5 de Alibaba, aunque la información disponible no detalla su arquitectura interna más allá de la etiqueta `qwen3_5`.
 
 El modelo resuelve un problema muy concreto: dotar a un agente de voz conversacional de la capacidad de emitir llamadas a herramientas (tool calls) en entornos bilingües inglés-hindi, incluyendo una etiqueta específica de fin de llamada (`end_call`). No es un modelo de propósito general pulido, sino un artefacto de despliegue para un caso de uso vertical. Su relevancia radica en que ejemplifica el patrón de especialización mediante LoRA sobre modelos abiertos de ~9B parámetros, con licencia Apache 2.0 y pesos en safetensors listos para servir.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-9b-tool-merged-end_call | 9,65 B | no disponible | Apache 2.0 | Tool calling para agente de voz en/hi | HuggingFace, 40 descargas |
-| Qwen/Qwen3.5-9B (base) | ~9 B | no disponible | Apache 2.0 (según el ajuste) | Modelo generalista multimodal | HuggingFace |
+| qwen3.5-9b-tool-merged-end_call | 9,65 B | no disponible | Apache 2.0 | Tool calling para agente de voz en/hi | Hugging Face, 40 descargas |
+| Qwen/Qwen3.5-9B (base) | ~9 B | no disponible | Apache 2.0 (según el ajuste) | Modelo generalista multimodal | Hugging Face |
 | Alternativas de ~9B para tool calling | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones del base Qwen3.5-9B en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa con otros modelos de la misma categoría.
@@ -83,5 +83,5 @@ No se dispone de datos de benchmarks ni de especificaciones del base Qwen3.5-9B 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manishkumar2101114/qwen3.5-9b-tool-merged-end_call
+- Modelo en Hugging Face: https://huggingface.co/manishkumar2101114/qwen3.5-9b-tool-merged-end_call
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

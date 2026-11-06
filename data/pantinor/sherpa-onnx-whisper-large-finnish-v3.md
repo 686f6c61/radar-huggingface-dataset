@@ -90,7 +90,7 @@ La comparación con whisper-large-v3-turbo y con el checkpoint base es la más d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pantinor/sherpa-onnx-whisper-large-finnish-v3
+- Repositorio Hugging Face: https://huggingface.co/pantinor/sherpa-onnx-whisper-large-finnish-v3
 - Modelo base: https://huggingface.co/Finnish-NLP/whisper-large-finnish-v3
 - Proyecto Anti-Vocale: https://github.com/RisorseArtificiali/anti-vocale
 - sherpa-onnx: no se proporciona enlace en la información disponible

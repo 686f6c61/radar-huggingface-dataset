@@ -4,7 +4,7 @@
 
 Este repositorio, publicado por el usuario Gonzalezjustin bajo el nombre `zero-shot-transfer-int4`, no contiene un modelo de IA entrenado ni un checkpoint utilizable. Se trata de un repositorio de notas de investigación exploratorias sobre el concepto de *zero-shot transfer* (transferencia de conocimiento a nuevas tareas sin entrenamiento específico). La propia model card lo declara explícitamente: "no claim benchmark improvements, completed ablations, released code, or a trained checkpoint".
 
-El repositorio incluye únicamente dos archivos: `reading.md` (la nota principal) y `README.md` (la documentación). Los metadatos de HuggingFace indican 16.576 parámetros totales en safetensors y un tamaño de repositorio de 0.0 GB, lo que sugiere que el archivo de pesos, si existe, es trivial o simbólico. La licencia es MIT, aunque se advierte que los términos de los datos externos deben revisarse por separado. En resumen, no es un modelo evaluable ni desplegable, sino un documento de planificación científica.
+El repositorio incluye únicamente dos archivos: `reading.md` (la nota principal) y `README.md` (la documentación). Los metadatos de Hugging Face indican 16.576 parámetros totales en safetensors y un tamaño de repositorio de 0.0 GB, lo que sugiere que el archivo de pesos, si existe, es trivial o simbólico. La licencia es MIT, aunque se advierte que los términos de los datos externos deben revisarse por separado. En resumen, no es un modelo evaluable ni desplegable, sino un documento de planificación científica.
 
 ## Especificaciones tecnicas
 
@@ -57,6 +57,6 @@ Existe un repositorio casi idéntico publicado por el usuario Justpablogomez (`J
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Gonzalezjustin/zero-shot-transfer-int4
+- Repositorio en Hugging Face: https://huggingface.co/Gonzalezjustin/zero-shot-transfer-int4
 - Repositorio similar (Justpablogomez/zero-shot-transfer): https://huggingface.co/Justpablogomez/zero-shot-transfer
 - Definición de zero-shot transfer (referencia externa): https://inferensys.com/glossary/vision-language-action-models/multimodal-fusion-architectures/zero-shot-transfer

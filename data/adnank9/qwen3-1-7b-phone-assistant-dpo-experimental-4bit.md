@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste experimental de Qwen3-1.7B orientado a funcionar como asistente telefonico en dispositivo (on-device). Lo publica el usuario adnank9 (adnank9 en HuggingFace) como parte del desarrollo de Assistant, una aplicacion para iPhone que responde llamadas y toma mensajes. El problema que aborda es concreto: conseguir que un modelo de 1,72 mil millones de parametros, cuantizado a 4 bits, genere respuestas telefonicas breves, naturales y sin repeticiones, ejecutandose localmente en el movil sin depender de la nube.
+Este modelo es un ajuste experimental de Qwen3-1.7B orientado a funcionar como asistente telefonico en dispositivo (on-device). Lo publica el usuario adnank9 (adnank9 en Hugging Face) como parte del desarrollo de Assistant, una aplicacion para iPhone que responde llamadas y toma mensajes. El problema que aborda es concreto: conseguir que un modelo de 1,72 mil millones de parametros, cuantizado a 4 bits, genere respuestas telefonicas breves, naturales y sin repeticiones, ejecutandose localmente en el movil sin depender de la nube.
 
 Tecnicamente se trata de un ajuste por DPO (Direct Preference Optimization) aplicado con QLoRA directamente sobre Qwen/Qwen3-1.7B. El conjunto de preferencias se construyo enfrentando respuestas de un profesor (Qwen3-8B) contra las peores respuestas generadas por el propio modelo sobre mas de 140 personas de llamante generadas sinteticamente. El resultado se distribuye en formato MLX de 4 bits, pensado para el stack de Apple.
 
@@ -93,7 +93,7 @@ No se dispone de datos comparativos frente a otros asistentes telefonicos o mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adnank9/qwen3-1.7b-phone-assistant-dpo-experimental-4bit
+- Modelo en Hugging Face: https://huggingface.co/adnank9/qwen3-1.7b-phone-assistant-dpo-experimental-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio de la aplicacion Assistant: https://github.com/techadnank9/Assistant
 - No se han encontrado otros enlaces relevantes (papers, blogs o demos) en la busqueda web realizada; los resultados obtenidos correspondian a paginas institucionales sin relacion con el modelo.

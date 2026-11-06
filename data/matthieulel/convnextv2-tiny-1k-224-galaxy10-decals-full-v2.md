@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`matthieulel/convnextv2-tiny-1k-224-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, obtenido mediante ajuste fino completo (todos los parámetros actualizados) de `facebook/convnextv2-tiny-1k-224` sobre el conjunto Galaxy10 DECaLS, que consta de 10 clases morfológicas. Lo desarrolla el usuario de HuggingFace matthieulel como parte de una colección de 80 configuraciones (40 backbones preentrenados por dos regímenes de adaptación) dentro de un benchmark de modelos fundacionales de visión aplicados a datos astronómicos, asociado a un artículo en revisión para *Astronomy and Computing* (2026).
+`matthieulel/convnextv2-tiny-1k-224-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, obtenido mediante ajuste fino completo (todos los parámetros actualizados) de `facebook/convnextv2-tiny-1k-224` sobre el conjunto Galaxy10 DECaLS, que consta de 10 clases morfológicas. Lo desarrolla el usuario de Hugging Face matthieulel como parte de una colección de 80 configuraciones (40 backbones preentrenados por dos regímenes de adaptación) dentro de un benchmark de modelos fundacionales de visión aplicados a datos astronómicos, asociado a un artículo en revisión para *Astronomy and Computing* (2026).
 
 El modelo resuelve una tarea concreta y acotada: asignar una de diez categorías morfológicas a imágenes de galaxias procedentes del sondeo DECaLS. No es un modelo generativo ni multimodal de propósito general, sino un cabezal de clasificación lineal de diez salidas montado sobre un backbone ConvNeXt V2 tiny. Su relevancia radica en que ofrece una referencia reproducible y con protocolo detallado (semillas, épocas, receta de aumento de datos) para evaluar hasta qué punto los backbones de visión preentrenados en ImageNet transfieren a dominios científicos alejados de la fotografía natural.
 
@@ -102,7 +102,7 @@ No se dispone en la información proporcionada de resultados numéricos de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/convnextv2-tiny-1k-224-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/convnextv2-tiny-1k-224-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/facebook/convnextv2-tiny-1k-224
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset con métricas por época y splits: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

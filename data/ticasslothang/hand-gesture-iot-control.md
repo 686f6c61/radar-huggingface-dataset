@@ -73,7 +73,7 @@ Excluyendo las 18 fotografias en las que MediaPipe no encontro mano, el porcenta
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TicassloThang/hand-gesture-iot-control | MLP sobre 46 caracteristicas de landmarks | no disponible (capas 256-128-64) | no aplica | 96,9% sobre 1.282 fotos (98,3% excluyendo las sin mano) | MIT | HuggingFace y GitHub |
+| TicassloThang/hand-gesture-iot-control | MLP sobre 46 caracteristicas de landmarks | no disponible (capas 256-128-64) | no aplica | 96,9% sobre 1.282 fotos (98,3% excluyendo las sin mano) | MIT | Hugging Face y GitHub |
 | MediaPipe Gesture Recognizer (Google) | Clasificador de gestos integrado en MediaPipe | no disponible | no aplica | no disponible | Apache 2.0 (el `hand_landmarker.task` incluido en el repo lo es) | Distribucion oficial de MediaPipe |
 | Proyecto AI-Powered Hand Gesture Controlled Robot (iamvny) | Deteccion con OpenCV y MediaPipe mas control de ESP32 | no disponible | no aplica | no disponible | no disponible | GitHub |
 | Enfoques CNN sobre imagen completa (literatura, por ejemplo el trabajo indexado en ResearchGate) | CNN de vision | no disponible | no aplica | no disponible | no disponible | Publicaciones academicas |
@@ -94,7 +94,7 @@ La comparativa cuantitativa con alternativas no esta disponible en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TicassloThang/hand-gesture-iot-control
+- Modelo en Hugging Face: https://huggingface.co/TicassloThang/hand-gesture-iot-control
 - Codigo del proyecto en GitHub: https://github.com/Ticasslo/hand-gesture-iot-control
 - Informe del proyecto (en vietnamita): https://github.com/Ticasslo/hand-gesture-iot-control/blob/main/17_BaoCao.pdf
 - MediaPipe Hand Landmarker (modelo incluido, Apache 2.0): https://ai.google.dev/edge/mediapipe/solutions/vision/hand_landmarker

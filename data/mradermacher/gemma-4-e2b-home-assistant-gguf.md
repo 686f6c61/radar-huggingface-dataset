@@ -35,7 +35,7 @@ El ajuste fino del modelo base se realizo sobre el dataset `acon96/Home-Assistan
 - Soporte multimodal: la publicacion incluye proyectores `mmproj` en Q8_0 y f16, lo que habilita entrada de imagenes cuando se usa junto con el modelo principal.
 - Razonamiento multi-turno en el contexto de una conversacion de asistente.
 - Capacidad multilingue: limitada al ingles segun los metadatos de idioma.
-- Compatibilidad declarada con endpoints (`endpoints_compatible` en las etiquetas de HuggingFace).
+- Compatibilidad declarada con endpoints (`endpoints_compatible` en las etiquetas de Hugging Face).
 - No se documenta modo de razonamiento explicito (*thinking mode*), soporte de audio ni generacion de codigo general.
 
 ## Casos de uso
@@ -90,7 +90,7 @@ No se dispone de datos comparativos de rendimiento frente a otros modelos de *fu
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/gemma-4-E2B-home-assistant-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/gemma-4-E2B-home-assistant-GGUF
 - Version con cuantizacion imatrix: https://huggingface.co/mradermacher/gemma-4-E2B-home-assistant-i1-GGUF
 - Modelo base (safetensors): https://huggingface.co/mewse/gemma-4-E2B-home-assistant
 - Dataset de ajuste: `acon96/Home-Assistant-Requests-V2` (referenciado en los metadatos, sin enlace directo en la informacion proporcionada)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSSLiteTE es un codificador de texto ligero para el sistema de generacion de imagenes MOSS-Image, publicado por el usuario cicalooo en HuggingFace. Se trata de una conversion a formato nativo de ComfyUI del adaptador `recoilme/moss_te_adapter`, que combina un Qwen3.5-0.8B (version solo texto, sin componentes visuales) con una cabeza de regresion de 158 millones de parametros. Su proposito es sustituir el codificador de texto nativo de MOSS-Image, basado en Qwen3.5-9B, reduciendo drasticamente el peso en disco y la VRAM necesaria: el conjunto completo ocupa aproximadamente 1,8 GB frente a los varios GB del encoder de 9B.
+MOSSLiteTE es un codificador de texto ligero para el sistema de generacion de imagenes MOSS-Image, publicado por el usuario cicalooo en Hugging Face. Se trata de una conversion a formato nativo de ComfyUI del adaptador `recoilme/moss_te_adapter`, que combina un Qwen3.5-0.8B (version solo texto, sin componentes visuales) con una cabeza de regresion de 158 millones de parametros. Su proposito es sustituir el codificador de texto nativo de MOSS-Image, basado en Qwen3.5-9B, reduciendo drasticamente el peso en disco y la VRAM necesaria: el conjunto completo ocupa aproximadamente 1,8 GB frente a los varios GB del encoder de 9B.
 
 El problema que resuelve es la barrera de hardware y de integracion: permite ejecutar MOSS-Image en ComfyUI con un consumidor de recursos mucho menor, manteniendo una calidad de condicionamiento razonable (coseno de ~0,92 respecto al encoder nativo de 9B, segun la model card del adaptador original). Es relevante para usuarios de ComfyUI que quieren generar imagenes con MOSS-Image en GPUs de consumo sin sacrificar demasiada fidelidad en la interpretacion de los prompts.
 
@@ -85,7 +85,7 @@ La alternativa principal es el encoder nativo Qwen3.5-9B de MOSS-Image: mayor fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cicalooo/MOSSLiteTE
+- Modelo en Hugging Face: https://huggingface.co/cicalooo/MOSSLiteTE
 - Node pack ComfyUI: https://github.com/cicalooo/ComfyUI-MOSSLiteTE
 - Adaptador original: https://huggingface.co/recoilme/moss_te_adapter
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B

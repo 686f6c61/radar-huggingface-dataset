@@ -84,6 +84,6 @@ No se dispone de datos suficientes para comparar el rendimiento del checkpoint c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/es-hetero/ckpt-sudoku
+- Modelo en Hugging Face: https://huggingface.co/es-hetero/ckpt-sudoku
 - Repositorio del estudio "learning while serving": https://github.com/akshat57/es-heterogeneity
 - No se han encontrado papers, blogs ni demos adicionales en la busqueda web realizada.

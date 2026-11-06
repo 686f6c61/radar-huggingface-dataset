@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador PEFT (LoRA) denominado internamente `tournament-tourn_d0dac5b21ce42a6b_20261005-3fe018a2-f17b-4ac8-be53-b53ada437a8f-5E2fNjMW`, publicado por la organización `gradients-io-tournaments` en HuggingFace. No es un modelo completo: se trata de un ajuste fino ligero que debe cargarse sobre el modelo base declarado, `deepcogito/cogito-v1-preview-llama-70B`, un modelo de la familia Llama de 70 000 millones de parámetros. El repositorio ocupa 3,3 GB, un tamaño coherente con pesos de adaptador en precisión de 16 bits en lugar de con un modelo completo.
+Este repositorio contiene un adaptador PEFT (LoRA) denominado internamente `tournament-tourn_d0dac5b21ce42a6b_20261005-3fe018a2-f17b-4ac8-be53-b53ada437a8f-5E2fNjMW`, publicado por la organización `gradients-io-tournaments` en Hugging Face. No es un modelo completo: se trata de un ajuste fino ligero que debe cargarse sobre el modelo base declarado, `deepcogito/cogito-v1-preview-llama-70B`, un modelo de la familia Llama de 70 000 millones de parámetros. El repositorio ocupa 3,3 GB, un tamaño coherente con pesos de adaptador en precisión de 16 bits en lugar de con un modelo completo.
 
-El patrón del identificador (nombre de torneo, marca temporal, UUID y sufijo aleatorio) y el hecho de que la creación y la última actualización estén separadas por apenas 16 segundos indican que se trata de un artefacto generado automáticamente por una plataforma de torneos de ajuste fino, no de una release curada y documentada. La model card es la plantilla por defecto de HuggingFace sin rellenar: todos los campos figuran como `[More Information Needed]`, incluidos autoría, licencia, idiomas, datos de entrenamiento y evaluación.
+El patrón del identificador (nombre de torneo, marca temporal, UUID y sufijo aleatorio) y el hecho de que la creación y la última actualización estén separadas por apenas 16 segundos indican que se trata de un artefacto generado automáticamente por una plataforma de torneos de ajuste fino, no de una release curada y documentada. La model card es la plantilla por defecto de Hugging Face sin rellenar: todos los campos figuran como `[More Information Needed]`, incluidos autoría, licencia, idiomas, datos de entrenamiento y evaluación.
 
 Por tanto, la relevancia práctica de esta ficha es acotada y de carácter principalmente técnico: sirve para identificar el artefacto, determinar qué se puede y qué no se puede afirmar sobre él y advertir de que su uso en producción exige inspeccionar los pesos del adaptador y el historial del torneo del que procede. Cualquier dato de rendimiento, idioma o licencia debe considerarse no disponible hasta que el autor lo publique o se audite el repositorio.
 
@@ -71,8 +71,8 @@ Las siguientes cifras son estimaciones derivadas del tamaño del modelo base (70
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (tournament-tourn…-5E2fNjMW) | No disponible (adaptador); base de 70B | No disponible | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes |
-| deepcogito/cogito-v1-preview-llama-70B (modelo base) | 70B (según el identificador) | No disponible en la información proporcionada | No disponible | No disponible, consultar la model card del base | HuggingFace |
+| Este adaptador (tournament-tourn…-5E2fNjMW) | No disponible (adaptador); base de 70B | No disponible | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes |
+| deepcogito/cogito-v1-preview-llama-70B (modelo base) | 70B (según el identificador) | No disponible en la información proporcionada | No disponible | No disponible, consultar la model card del base | Hugging Face |
 | Alternativas de 70B de propósito general | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación con terceros modelos no puede realizarse con rigor porque no hay métricas ni licencias declaradas para este adaptador. La única comparación defendible desde los datos disponibles es estructural: este repositorio es un delta de pesos que, por definición, no puede evaluarse de forma independiente del modelo base sobre el que se aplica.
@@ -95,7 +95,7 @@ La comparación con terceros modelos no puede realizarse con rigor porque no hay
 
 - Repositorio del adaptador: https://huggingface.co/gradients-io-tournaments/tournament-tourn_d0dac5b21ce42a6b_20261005-3fe018a2-f17b-4ac8-be53-b53ada437a8f-5E2fNjMW
 - Modelo base declarado: https://huggingface.co/deepcogito/cogito-v1-preview-llama-70B
-- Organización en HuggingFace: https://huggingface.co/gradients-io-tournaments
+- Organización en Hugging Face: https://huggingface.co/gradients-io-tournaments
 - Documentación de PEFT: https://github.com/huggingface/peft
 - Artículo citado en los tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental: https://mlco2.github.io/impact

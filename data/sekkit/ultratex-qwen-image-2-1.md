@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UltraTex-Qwen-Image-2.1 es un adaptador LoRA de generación de texturas multi-vista para mallas 3D, desarrollado por Atlas 3D (usuario `sekkit` en HuggingFace) como port del método UltraTex de Yibo Zhang al backbone Qwen-Image 2.1. UltraTex originalmente solo publicaba pesos para FLUX.1-dev y FLUX.2-Klein; este release cubre el hueco para Qwen-Image, siendo, según el autor, el primer LoRA de texturas multi-vista para ese backbone.
+UltraTex-Qwen-Image-2.1 es un adaptador LoRA de generación de texturas multi-vista para mallas 3D, desarrollado por Atlas 3D (usuario `sekkit` en Hugging Face) como port del método UltraTex de Yibo Zhang al backbone Qwen-Image 2.1. UltraTex originalmente solo publicaba pesos para FLUX.1-dev y FLUX.2-Klein; este release cubre el hueco para Qwen-Image, siendo, según el autor, el primer LoRA de texturas multi-vista para ese backbone.
 
 El modelo resuelve el problema de generar mapas de textura coherentes entre múltiples vistas de un objeto 3D a partir de una imagen de referencia, usando un pipeline image-to-image. No es un modelo generativo autónomo: es un adaptador que se aplica sobre Qwen-Image 2.1 (bf16) junto con su VAE y el codificador de texto Qwen3-VL-8B, que el usuario debe obtener por separado. El repositorio incluye además un decodificador RGBA foreground-aware afinado específicamente para esta tarea.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos tres backbones en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sekkit/UltraTex-Qwen-Image-2.1
+- Hugging Face: https://huggingface.co/sekkit/UltraTex-Qwen-Image-2.1
 - Repositorio del port (fork): https://github.com/Atlas3DSS/UltraTex
 - Repositorio original UltraTex: https://github.com/yiboz2001/UltraTex
 - Dataset G-buffer TexVerse: https://huggingface.co/datasets/YiboZhang2001/G-buffer-TexVerse

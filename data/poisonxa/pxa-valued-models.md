@@ -2,9 +2,9 @@
 
 ## Resumen
 
-PXA-Valued-Models es un repositorio de modelos publicado en HuggingFace por el usuario `poisonxa` bajo el identificador `poisonxa/PXA-Valued-Models`. La informacion publica disponible es extremadamente limitada: no se documenta arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni resultados de evaluacion. El repositorio esta marcado con acceso restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargar los pesos.
+PXA-Valued-Models es un repositorio de modelos publicado en Hugging Face por el usuario `poisonxa` bajo el identificador `poisonxa/PXA-Valued-Models`. La informacion publica disponible es extremadamente limitada: no se documenta arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni resultados de evaluacion. El repositorio esta marcado con acceso restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargar los pesos.
 
-El modelo se distribuye bajo una licencia personalizada denominada `pxa-supporter` (etiquetada como `license:other` en HuggingFace), lo que implica que las condiciones de uso, redistribucion y explotacion comercial no son las de una licencia estandar de codigo abierto y deben revisarse directamente en el repositorio antes de cualquier integracion en produccion. Los unicos metadatos adicionales son las etiquetas `pxa` y `pxq`, cuyo significado no se explica en la informacion proporcionada.
+El modelo se distribuye bajo una licencia personalizada denominada `pxa-supporter` (etiquetada como `license:other` en Hugging Face), lo que implica que las condiciones de uso, redistribucion y explotacion comercial no son las de una licencia estandar de codigo abierto y deben revisarse directamente en el repositorio antes de cualquier integracion en produccion. Los unicos metadatos adicionales son las etiquetas `pxa` y `pxq`, cuyo significado no se explica en la informacion proporcionada.
 
 En el momento de redactar esta ficha el repositorio registra 0 descargas y 0 likes, y fue creado el 27 de septiembre de 2026 (ultima actualizacion el mismo dia, con unos cinco minutos de diferencia). Esto sugiere una publicacion reciente y sin adopcion documentada por parte de la comunidad, por lo que no existe evidencia publica de su comportamiento en tareas reales. Cualquier evaluacion tecnica seria requiere solicitar acceso al repositorio y consultar la documentacion interna del autor.
 
@@ -20,7 +20,7 @@ En el momento de redactar esta ficha el repositorio registra 0 descargas y 0 lik
 | Idiomas soportados | no disponible |
 | Licencia | pxa-supporter (etiqueta `license:other`); condiciones no publicadas en la informacion disponible |
 | Formato de pesos | no disponible |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Autor | poisonxa |
 | Fecha de creacion | 2026-09-27 |
 | Ultima actualizacion | 2026-09-27 |
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Viabilidad en GPU de consumo: no disponible; no puede determinarse sin conocer el tamano del modelo.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, Transformers): no disponible; depende del formato de pesos, que no se especifica.
 - Latencia y throughput estimados: no disponible.
-- Nota operativa: al tratarse de un repositorio con acceso restringido, la descarga requiere autenticacion previa y aceptacion de condiciones en HuggingFace, lo que anade un paso al aprovisionamiento automatizado.
+- Nota operativa: al tratarse de un repositorio con acceso restringido, la descarga requiere autenticacion previa y aceptacion de condiciones en Hugging Face, lo que anade un paso al aprovisionamiento automatizado.
 
 ## Comparativa con modelos similares
 
@@ -86,5 +86,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/poisonxa/PXA-Valued-Models
+- Hugging Face: https://huggingface.co/poisonxa/PXA-Valued-Models
 - Papers, blogs, repositorios o demos adicionales: no se han encontrado en la informacion disponible.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-TheHassanSaud/P2_pythia410m_q0_2_dpo_beta0_2 es un modelo de generacion de texto publicado en HuggingFace por el usuario TheHassanSaud. Se trata de un checkpoint de aproximadamente 405 millones de parametros (405.334.016 exactos, segun los pesos en safetensors), etiquetado con la arquitectura gpt_neox y compatible con el pipeline text-generation de transformers. El identificador del repositorio sugiere que deriva del modelo Pythia-410M y que ha sido sometido a un ajuste con DPO (Direct Preference Optimization) con un hiperparametro beta de 0,2, aunque esta informacion no aparece confirmada en ninguna seccion de la model card.
+TheHassanSaud/P2_pythia410m_q0_2_dpo_beta0_2 es un modelo de generacion de texto publicado en Hugging Face por el usuario TheHassanSaud. Se trata de un checkpoint de aproximadamente 405 millones de parametros (405.334.016 exactos, segun los pesos en safetensors), etiquetado con la arquitectura gpt_neox y compatible con el pipeline text-generation de transformers. El identificador del repositorio sugiere que deriva del modelo Pythia-410M y que ha sido sometido a un ajuste con DPO (Direct Preference Optimization) con un hiperparametro beta de 0,2, aunque esta informacion no aparece confirmada en ninguna seccion de la model card.
 
 El problema que aborda es, en principio, el de alineacion de preferencias sobre un modelo base pequeno: el sufijo dpo en el nombre apunta a un ajuste orientado a que las respuestas generadas se acerquen a preferencias humanas o sinteticas, en lugar de limitarse a la prediccion de siguiente token del preentrenamiento. Es relevante para la comunidad porque los modelos de ~400 M de parametros son utiles como banco de pruebas de tecnicas de alineacion (DPO, RLHF ligero) con coste de computo muy bajo, y porque pueden ejecutarse en hardware de consumo.
 
-La model card publicada es la plantilla automatica de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, idiomas, licencia, datos de entrenamiento, evaluacion, hiperparametros) figuran como "[More Information Needed]". El repositorio no registra descargas ni likes en el momento de la consulta, y la busqueda web no ha devuelto ningun resultado relevante sobre el modelo (los resultados obtenidos corresponden a contenidos no relacionados). En consecuencia, buena parte de esta ficha debe declararse como no disponible.
+La model card publicada es la plantilla automatica de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, idiomas, licencia, datos de entrenamiento, evaluacion, hiperparametros) figuran como "[More Information Needed]". El repositorio no registra descargas ni likes en el momento de la consulta, y la busqueda web no ha devuelto ningun resultado relevante sobre el modelo (los resultados obtenidos corresponden a contenidos no relacionados). En consecuencia, buena parte de esta ficha debe declararse como no disponible.
 
 ## Especificaciones tecnicas
 
@@ -38,7 +38,7 @@ Sobre el entrenamiento, no hay datos verificables: ni numero de tokens, ni compo
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponibles; no se declara ningun idioma.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles. El tag gpt_neox implica un modelo exclusivamente de texto.
-- Compatibilidad de despliegue: los tags text-generation-inference y endpoints_compatible indican que puede servirse con TGI y en HuggingFace Inference Endpoints.
+- Compatibilidad de despliegue: los tags text-generation-inference y endpoints_compatible indican que puede servirse con TGI y en Hugging Face Inference Endpoints.
 
 ## Casos de uso
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 1,6 GB en fp32 (405 M x 4 bytes), unos 0,81 GB en fp16/bf16 y alrededor de 0,4 GB en int8. Con cuantizacion de 4 bits el peso se reduce a unos 0,25 GB; a ello hay que sumar la cache KV, que depende de la longitud de contexto real utilizada.
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente. Funciona en RTX 3050, RTX 3060, RTX 4060, RTX 4090, T4, L4, A10, A100 y H100 sin aprovechar la capacidad de estos ultimos. El modelo esta muy sobredimensionado respecto a cualquier GPU moderna, por lo que el cuello de botella sera la CPU y el ancho de banda de memoria, no la VRAM.
 - Cabe en GPU de consumo: si, sin ninguna dificultad, incluidas GPUs integradas con memoria unificada y en CPU. Es uno de los pocos casos en los que la inferencia puede ejecutarse comodamente sin acelerador dedicado.
-- Opciones de despliegue: transformers (biblioteca declarada), text-generation-inference (etiqueta tgi), HuggingFace Inference Endpoints (etiqueta endpoints_compatible). Para llama.cpp, Ollama o vLLM seria necesario convertir los pesos de safetensors a GGUF o a un formato compatible con el motor elegido; el repositorio no publica esas variantes.
+- Opciones de despliegue: transformers (biblioteca declarada), text-generation-inference (etiqueta tgi), Hugging Face Inference Endpoints (etiqueta endpoints_compatible). Para llama.cpp, Ollama o vLLM seria necesario convertir los pesos de safetensors a GGUF o a un formato compatible con el motor elegido; el repositorio no publica esas variantes.
 - Latencia y throughput estimados: no disponibles; no se han publicado mediciones y dependeran en gran medida del hardware y del backend.
 
 ## Comparativa con modelos similares
@@ -68,10 +68,10 @@ No se dispone de resultados de benchmarks de este checkpoint, por lo que la comp
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TheHassanSaud/P2_pythia410m_q0_2_dpo_beta0_2 | 405.334.016 | no disponible | no disponible | HuggingFace, safetensors |
-| Pythia-410M (EleutherAI) | 405 M | 2.048 tokens (documentado por el proyecto base) | Apache 2.0 (segun el proyecto base) | HuggingFace, ampliamente replicado |
-| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 (segun el proyecto) | HuggingFace |
+| TheHassanSaud/P2_pythia410m_q0_2_dpo_beta0_2 | 405.334.016 | no disponible | no disponible | Hugging Face, safetensors |
+| Pythia-410M (EleutherAI) | 405 M | 2.048 tokens (documentado por el proyecto base) | Apache 2.0 (segun el proyecto base) | Hugging Face, ampliamente replicado |
+| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 (segun el proyecto) | Hugging Face |
 
 La comparacion relevante es con Pythia-410M, dado que comparten recuento de parametros y arquitectura GPT-NeoX. Sin embargo, no hay evidencia publicada de que este checkpoint mejore al base en ninguna tarea, ni de que su licencia herede la del original. Frente a TinyLlama o Qwen2.5-0.5B, la principal desventaja es la falta de documentacion: los tres citados publican model card completa, idiomas, licencia y evaluaciones, mientras que este repositorio no aporta ninguno de esos datos.
 
@@ -89,6 +89,6 @@ La comparacion relevante es con Pythia-410M, dado que comparten recuento de para
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_2_dpo_beta0_2
+- Repositorio en Hugging Face: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_2_dpo_beta0_2
 - Paper de referencia del tag arxiv:1910.09700 (Lacoste et al., 2019, calculadora de impacto ambiental citada en la plantilla): https://arxiv.org/abs/1910.09700
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web.

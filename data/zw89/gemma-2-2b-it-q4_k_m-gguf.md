@@ -71,7 +71,7 @@ No se dispone de datos comparativos con otros modelos en la informacion proporci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zw89/gemma-2-2b-it-Q4_K_M-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-2-2b-it
+- Repositorio Hugging Face: https://huggingface.co/zw89/gemma-2-2b-it-Q4_K_M-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-2-2b-it
 - Repositorio de Google DeepMind para Gemma: https://github.com/google-deepmind/gemma
 - Repositorio de inferless con documentacion de Gemma 2B: https://github.com/inferless/Gemma-2B-it

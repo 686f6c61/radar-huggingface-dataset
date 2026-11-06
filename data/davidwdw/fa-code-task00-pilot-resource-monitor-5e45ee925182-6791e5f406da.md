@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El artefacto identificado como `davidwdw/fa-code-task00-pilot-resource-monitor-5e45ee925182-6791e5f406da` es un repositorio alojado en HuggingFace cuyo contenido declarado en la model card no es una ficha de modelo convencional, sino un archivo de flota privada ("private fleet archive") correspondiente a una instantánea de trabajo. La model card indica que la receta canonica asociada es `evaluations/2026-09-23_task00_centre_recovery_pilot`, que el paquete pertenece al tier `code` y que debe utilizarse la revision exacta registrada, verificando el fichero `SHA256SUMS`. El propio autor advierte que el paquete es una instantanea y no un espejo de directorio en vivo.
+El artefacto identificado como `davidwdw/fa-code-task00-pilot-resource-monitor-5e45ee925182-6791e5f406da` es un repositorio alojado en Hugging Face cuyo contenido declarado en la model card no es una ficha de modelo convencional, sino un archivo de flota privada ("private fleet archive") correspondiente a una instantánea de trabajo. La model card indica que la receta canonica asociada es `evaluations/2026-09-23_task00_centre_recovery_pilot`, que el paquete pertenece al tier `code` y que debe utilizarse la revision exacta registrada, verificando el fichero `SHA256SUMS`. El propio autor advierte que el paquete es una instantanea y no un espejo de directorio en vivo.
 
-No se dispone de informacion publica sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, datos de entrenamiento ni proceso de alineacion. Los metadatos de HuggingFace no declaran `pipeline`, licencia, idiomas ni tipos de pesos, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que es coherente con un artefacto de uso interno mas que con un modelo publicado para consumo general.
+No se dispone de informacion publica sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, datos de entrenamiento ni proceso de alineacion. Los metadatos de Hugging Face no declaran `pipeline`, licencia, idiomas ni tipos de pesos, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que es coherente con un artefacto de uso interno mas que con un modelo publicado para consumo general.
 
 Por tanto, esta ficha documenta un artefacto reproducible y auditable (con verificacion de integridad por SHA256), no un modelo evaluable. Cualquier afirmacion sobre capacidades, rendimiento o requisitos de despliegue queda explicitamente marcada como no disponible a lo largo del documento.
 
@@ -101,7 +101,7 @@ No disponible. El artefacto no se presenta como un modelo con arquitectura, para
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-code-task00-pilot-resource-monitor-5e45ee925182-6791e5f406da
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-code-task00-pilot-resource-monitor-5e45ee925182-6791e5f406da
 - Receta canonica referenciada en la model card: `evaluations/2026-09-23_task00_centre_recovery_pilot` (ruta interna, sin URL publica disponible)
 - Fichero de verificacion referenciado: `SHA256SUMS` (sin URL publica disponible)
 - Paper, blog, repositorio de codigo o demo: no disponible

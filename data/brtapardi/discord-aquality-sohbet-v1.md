@@ -97,7 +97,7 @@ No se dispone de datos objetivos para comparar el rendimiento de este adaptador 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brtapardi/discord-aquality-sohbet-v1
+- Modelo en Hugging Face: https://huggingface.co/brtapardi/discord-aquality-sohbet-v1
 - Perfil del autor: https://huggingface.co/brtapardi
 - Comunidad Discord Aquality: https://discord.gg/aquality
 - Modelo base utilizado: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit

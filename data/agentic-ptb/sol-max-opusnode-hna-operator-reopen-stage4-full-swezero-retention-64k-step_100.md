@@ -75,5 +75,5 @@ Nota: los datos de Qwen2.5-7B proceden de conocimiento general, no de la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/sol-max-opusnode.hNA.operator-reopen-stage4-full-swezero-retention-64k.step_100
+- Hugging Face: https://huggingface.co/agentic-ptb/sol-max-opusnode.hNA.operator-reopen-stage4-full-swezero-retention-64k.step_100
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

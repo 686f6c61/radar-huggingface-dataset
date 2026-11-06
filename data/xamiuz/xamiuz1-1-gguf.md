@@ -2,11 +2,11 @@
 
 ## Resumen
 
-xamiuz1.1-GGUF es un modelo de lenguaje conversacional derivado de Meta-Llama-3.1-8B-Instruct, publicado por el usuario xamiuz en HuggingFace y distribuido exclusivamente en formato GGUF para su uso con llama.cpp y Ollama. El autor indica que el modelo fue afinado (finetune) y posteriormente convertido a GGUF mediante la herramienta Unsloth, si bien no se documenta en la model card el procedimiento de ajuste, los datos empleados ni los hiperparámetros utilizados.
+xamiuz1.1-GGUF es un modelo de lenguaje conversacional derivado de Meta-Llama-3.1-8B-Instruct, publicado por el usuario xamiuz en Hugging Face y distribuido exclusivamente en formato GGUF para su uso con llama.cpp y Ollama. El autor indica que el modelo fue afinado (finetune) y posteriormente convertido a GGUF mediante la herramienta Unsloth, si bien no se documenta en la model card el procedimiento de ajuste, los datos empleados ni los hiperparámetros utilizados.
 
 El modelo conserva la arquitectura original de Llama 3.1 8B Instruct, con 8.030.261.312 parámetros totales, y se publica como un único archivo cuantizado en Q4_K_M de aproximadamente 4,9 GB, lo que lo hace desplegable en GPU de consumo. La relevancia de esta ficha es limitada: se trata de un modelo de autor individual sin métricas, sin licencia declarada y sin documentación técnica sobre el ajuste realizado, por lo que debe evaluarse con cautela antes de cualquier uso en producción.
 
-La información disponible no permite verificar qué aporta el finetune respecto al modelo base original, ni qué capacidades se han conservado o degradado. Todos los datos que no figuran en la model card o en los metadatos de HuggingFace se indican explícitamente como no disponibles.
+La información disponible no permite verificar qué aporta el finetune respecto al modelo base original, ni qué capacidades se han conservado o degradado. Todos los datos que no figuran en la model card o en los metadatos de Hugging Face se indican explícitamente como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -34,7 +34,7 @@ No hay información sobre innovaciones técnicas adicionales, estrategias de dec
 - Generación de código y matemáticas: capacidad esperable por herencia de Llama 3.1 8B Instruct, sin datos específicos del finetune.
 - Soporte de plantillas de chat mediante el flag `--jinja` de llama.cpp, según indica el autor.
 - Uso con `llama-cli` para texto y `llama-mtmd-cli` para modelos multimodales (el autor menciona esta opción de forma genérica; no se confirma que este modelo tenga visión).
-- Compatibilidad con endpoints (tag `endpoints_compatible` en HuggingFace).
+- Compatibilidad con endpoints (tag `endpoints_compatible` en Hugging Face).
 - Capacidades multilingües: no disponibles.
 - Tool calling / function calling: no documentado para este finetune.
 - Modo thinking, visión o audio: no documentado.
@@ -84,7 +84,7 @@ La comparación con el modelo base es la más relevante: xamiuz1.1 no documenta 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xamiuz/xamiuz1.1-GGUF
+- Hugging Face: https://huggingface.co/xamiuz/xamiuz1.1-GGUF
 - Unsloth (herramienta de finetune y conversión): https://github.com/unslothai/unsloth
 - llama.cpp (runtime recomendado por el autor): https://github.com/ggml-org/llama.cpp
 - Meta-Llama-3.1-8B-Instruct (modelo base): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

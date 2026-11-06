@@ -78,7 +78,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-todo-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-todo-GGUF
 - Repositorio padre (merge BF16): https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-todo
 - Modelo base: https://huggingface.co/Empero/Qwen3.8-9B
 - Otros fine-tunes del autor: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-real-traces

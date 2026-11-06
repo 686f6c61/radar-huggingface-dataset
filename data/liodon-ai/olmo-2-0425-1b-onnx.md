@@ -72,8 +72,8 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo ONNX: https://huggingface.co/liodon-ai/OLMo-2-0425-1B-ONNX
-- Modelo base en HuggingFace: https://huggingface.co/allenai/OLMo-2-0425-1B
-- Modelo instruct en HuggingFace: https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct
+- Repositorio Hugging Face del modelo ONNX: https://huggingface.co/liodon-ai/OLMo-2-0425-1B-ONNX
+- Modelo base en Hugging Face: https://huggingface.co/allenai/OLMo-2-0425-1B
+- Modelo instruct en Hugging Face: https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct
 - Repositorio GitHub de OLMo: https://github.com/allenai/OLMo
 - Página oficial de OLMo 2: https://allenai.org/olmo2

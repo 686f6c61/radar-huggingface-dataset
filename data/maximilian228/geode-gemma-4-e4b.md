@@ -99,7 +99,7 @@ La comparativa se limita a la familia Gemma 4 porque la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maximilian228/Geode-Gemma-4-E4B
+- Modelo en Hugging Face: https://huggingface.co/Maximilian228/Geode-Gemma-4-E4B
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-unquantized
 - Gemma 4 E4B instruct: https://huggingface.co/google/gemma-4-E4B-it
 - Aplicacion Geode: https://geode.tifu.xyz

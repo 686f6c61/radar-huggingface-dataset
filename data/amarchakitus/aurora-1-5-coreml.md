@@ -73,8 +73,8 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Parametros | Contexto / entrada | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amarchakitus/aurora-1.5-coreml | 1,26 B | Rejilla 720 × 1440 a 0,25°, paso de 6 h | fp16 + 8 bits en bloques Swin | MIT | HuggingFace, Core ML; 0 descargas, 0 likes |
-| microsoft/aurora (base) | 1,26 B (checkpoint `aurora-0.25-v1.5`) | Rejilla a 0,25°, plazos variables | float32 | MIT | HuggingFace, PyTorch; requiere GPU |
+| amarchakitus/aurora-1.5-coreml | 1,26 B | Rejilla 720 × 1440 a 0,25°, paso de 6 h | fp16 + 8 bits en bloques Swin | MIT | Hugging Face, Core ML; 0 descargas, 0 likes |
+| microsoft/aurora (base) | 1,26 B (checkpoint `aurora-0.25-v1.5`) | Rejilla a 0,25°, plazos variables | float32 | MIT | Hugging Face, PyTorch; requiere GPU |
 | GraphCast, Pangu-Weather, FourCastNet | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 La comparación relevante es contra el propio modelo base: misma arquitectura y mismos pesos, con la diferencia de que el port fija el condicionamiento a 6 horas, cuantiza los bloques Swin a 8 bits y se restringe a Core ML, mientras que el original en PyTorch mantiene precisión float32 y admite otros plazos de predicción. No se dispone de datos de otros modelos meteorológicos en la información facilitada.
@@ -89,12 +89,12 @@ La comparación relevante es contra el propio modelo base: misma arquitectura y 
 - Licencia MIT: permite uso comercial y modificación, pero exige conservar el aviso de copyright de Microsoft Corporation y la atribución. El autor advierte que no es un producto de Microsoft y que las predicciones generadas no son de Microsoft.
 - Madurez: repositorio con 0 descargas y 0 likes, creado y actualizado el mismo día; no hay evidencia de uso en producción ni validación independiente de la cifra del 0,4 %.
 - Riesgo de alucinación en sentido estricto no aplica, pero sí existe riesgo de error de predicción meteorológica: los campos generados no deben usarse como única fuente en decisiones de seguridad sin contraste con servicios oficiales.
-- La búsqueda web realizada no devolvió resultados relevantes sobre el modelo; toda la información procede de la model card y de los metadatos de HuggingFace.
+- La búsqueda web realizada no devolvió resultados relevantes sobre el modelo; toda la información procede de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- [amarchakitus/aurora-1.5-coreml en HuggingFace](https://huggingface.co/amarchakitus/aurora-1.5-coreml)
-- [microsoft/aurora en HuggingFace](https://huggingface.co/microsoft/aurora)
+- [amarchakitus/aurora-1.5-coreml en Hugging Face](https://huggingface.co/amarchakitus/aurora-1.5-coreml)
+- [microsoft/aurora en Hugging Face](https://huggingface.co/microsoft/aurora)
 - [Página de modelos de Aurora 1.5 (0,25°)](https://microsoft.github.io/aurora/models.html#aurora-1-5-0-25)
 - [Repositorio de la app AI Forecast Factory](https://github.com/amarchakitus/AIFS-iOS-app)
 - [Bodnar, C. et al. (2025), A foundation model for the Earth system, Nature](https://doi.org/10.1038/s41586-025-09005-y)

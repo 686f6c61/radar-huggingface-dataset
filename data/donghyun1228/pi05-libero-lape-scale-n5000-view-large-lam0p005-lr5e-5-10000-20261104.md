@@ -2,7 +2,7 @@
 
 ## Resumen
 
-π0.5 LIBERO view_large es un checkpoint de investigación en robótica publicado por el usuario Donghyun1228 en HuggingFace, derivado del modelo π0.5 (pi05) del ecosistema openpi. No es un modelo de lenguaje general, sino una política visomotora (vision-language-action) entrenada para control robótico en el benchmark LIBERO. El repositorio contiene los pesos de una política afinada sobre 5.000 fotogramas de sondeo del conjunto "view_large", con 10.000 actualizaciones de entrenamiento y el LLM congelado.
+π0.5 LIBERO view_large es un checkpoint de investigación en robótica publicado por el usuario Donghyun1228 en Hugging Face, derivado del modelo π0.5 (pi05) del ecosistema openpi. No es un modelo de lenguaje general, sino una política visomotora (vision-language-action) entrenada para control robótico en el benchmark LIBERO. El repositorio contiene los pesos de una política afinada sobre 5.000 fotogramas de sondeo del conjunto "view_large", con 10.000 actualizaciones de entrenamiento y el LLM congelado.
 
 El checkpoint forma parte de un experimento de escalado de datos denominado LAPE (anclaje sobre un prior `lape_k10`), en el que se parte de un modelo fuente del mismo tamaño de datos (`pi05-libero-lape-scale-source-n5000-10000-20261104`, paso 9999) y se aplica una adaptación solo sobre el target mediante un objetivo de modelado inverso de dinámica (IDM) con un optimizador ConflictAnchorAdamW y un coeficiente de anclaje de 0,005. La evaluación reportada por el autor sobre LIBERO es de 856/2000 = 42,80 % de éxito, con 500 episodios por suite y semilla de entorno 7 bajo MuJoCo 3.2.3.
 
@@ -64,9 +64,9 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 LIBERO view_large (este checkpoint) | no disponible | no disponible | 42,80 % éxito en LIBERO (856/2000) | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| `pi05-libero-lape-scale-source-n5000-10000-20261104` (modelo fuente) | no disponible | no disponible | no disponible en la información proporcionada | Apache 2.0 (presumible por el ecosistema, no confirmado) | HuggingFace |
-| Otros checkpoints π0.5/openpi para LIBERO | no disponible | no disponible | no disponible | Apache 2.0 (openpi) | HuggingFace / openpi |
+| π0.5 LIBERO view_large (este checkpoint) | no disponible | no disponible | 42,80 % éxito en LIBERO (856/2000) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| `pi05-libero-lape-scale-source-n5000-10000-20261104` (modelo fuente) | no disponible | no disponible | no disponible en la información proporcionada | Apache 2.0 (presumible por el ecosistema, no confirmado) | Hugging Face |
+| Otros checkpoints π0.5/openpi para LIBERO | no disponible | no disponible | no disponible | Apache 2.0 (openpi) | Hugging Face / openpi |
 
 No se dispone de datos suficientes para una comparativa numérica con alternativas de la misma categoría.
 
@@ -82,7 +82,7 @@ No se dispone de datos suficientes para una comparativa numérica con alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-lape-scale-n5000-view-large-lam0p005-lr5e-5-10000-20261104
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-lape-scale-n5000-view-large-lam0p005-lr5e-5-10000-20261104
 - Modelo fuente: https://huggingface.co/Donghyun1228/pi05-libero-lape-scale-source-n5000-10000-20261104
 - Repositorio de código del estudio: `Donghyun1228/vla_adaptation` (driver `f9dbc2e0`)
 - No se han encontrado papers, blogs, repos adicionales ni demos en la búsqueda web proporcionada.

@@ -101,7 +101,7 @@ Estimaciones derivadas del tamano del repositorio (96,4 GB) y de la configuracio
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Orion-MoE8x7B | MoE con 8 expertos y 2 activos (total no disponible) | 8192 | no disponible | Pesos base en HuggingFace y ModelScope |
+| Orion-MoE8x7B | MoE con 8 expertos y 2 activos (total no disponible) | 8192 | no disponible | Pesos base en Hugging Face y ModelScope |
 | Mixtral 8x7B | MoE, 8 expertos, ~46,7B totales, ~12,9B activos | 32K | Apache 2.0 | Pesos abiertos |
 | Qwen2.5-32B | Denso, 32B | 128K | Apache 2.0 (segun version) | Pesos abiertos |
 | Qwen2-57B-A14 | MoE, 57B totales, 14B activos | 32K | no disponible en la informacion | Pesos abiertos |

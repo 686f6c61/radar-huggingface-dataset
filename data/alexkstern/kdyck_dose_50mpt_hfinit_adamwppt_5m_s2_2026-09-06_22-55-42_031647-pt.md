@@ -78,6 +78,6 @@ Los dos modelos comparables pertenecen a la misma serie de experimentos de Alex 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_5M_s2_2026-09-06_22-55-42_031647-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_5M_s2_2026-09-06_22-55-42_031647-pt
 - W&B run: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/t32pdr4c
 - Repositorio nanochat: https://github.com/karpathy/nanochat

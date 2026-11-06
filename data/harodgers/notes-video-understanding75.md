@@ -84,5 +84,5 @@ No disponible. Este repositorio no es un modelo de aprendizaje automatico, sino 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/harodgers/notes-video-understanding75
+- Repositorio en Hugging Face: https://huggingface.co/harodgers/notes-video-understanding75
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

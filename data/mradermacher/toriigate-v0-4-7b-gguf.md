@@ -25,7 +25,7 @@ El modelo esta liberado bajo licencia Apache 2.0, lo que facilita su uso comerci
 
 La informacion disponible no detalla la arquitectura interna del modelo original Minthy/ToriiGate-v0.4-7B mas alla de su naturaleza multimodal image-text-to-text. Se trata de un transformer con un componente de vision que procesa imagenes y las proyecta al espacio de embeddings del modelo de lenguaje, permitiendo conversaciones que combinan entradas visuales y textuales. El repositorio de cuantizacion no incluye datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado.
 
-La innovacion tecnica principal de esta publicacion es la propia cuantizacion: mradermacher genera cuantizaciones estaticas (no imatrix en este repositorio; las versiones ponderadas estan en un repositorio separado i1-GGUF) usando el formato GGUF de llama.cpp, con un proyector multimodal separado en fp16 (1,5 GB) que preserva la calidad de la codificacion visual. El proceso de cuantizacion sigue la version 2 de quantize_version y convierte desde pesos HuggingFace (convert_type: hf), con output_tensor_quantised activado.
+La innovacion tecnica principal de esta publicacion es la propia cuantizacion: mradermacher genera cuantizaciones estaticas (no imatrix en este repositorio; las versiones ponderadas estan en un repositorio separado i1-GGUF) usando el formato GGUF de llama.cpp, con un proyector multimodal separado en fp16 (1,5 GB) que preserva la calidad de la codificacion visual. El proceso de cuantizacion sigue la version 2 de quantize_version y convierte desde pesos Hugging Face (convert_type: hf), con output_tensor_quantised activado.
 
 ## Capacidades
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Proyector multimodal mmproj-fp16: ~1,5 GB adicionales que deben sumarse a la VRAM del modelo de lenguaje.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090 para cuantizaciones altas; A100 o H100 para f16 y despliegues de alta concurrencia.
 - Cabe en GPU consumer: si. Con Q4_K_M (4,8 GB) mas mmproj (1,5 GB) se necesitan aproximadamente 6,3 GB de VRAM mas el contexto, por lo que una RTX 3060 12 GB es suficiente. Cuantizaciones Q2_K y Q3_K_S pueden caber en GPUs de 6-8 GB.
-- Opciones de despliegue: llama.cpp, Ollama (importando el GGUF), LM Studio, y servidores compatibles con GGUF. El tag endpoints_compatible sugiere compatibilidad con endpoints tipo OpenAI en infraestructura de HuggingFace. Para el proyector multimodal se requiere un runtime que soporte mmproj (llama.cpp con soporte multimodal).
+- Opciones de despliegue: llama.cpp, Ollama (importando el GGUF), LM Studio, y servidores compatibles con GGUF. El tag endpoints_compatible sugiere compatibilidad con endpoints tipo OpenAI en infraestructura de Hugging Face. Para el proyector multimodal se requiere un runtime que soporte mmproj (llama.cpp con soporte multimodal).
 - Latencia y throughput estimados: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ Nota: los datos de los modelos comparables no provienen de la informacion propor
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/ToriiGate-v0.4-7B-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/ToriiGate-v0.4-7B-GGUF
 - Modelo base original: https://huggingface.co/Minthy/ToriiGate-v0.4-7B
 - Cuantizaciones imatrix/ponderadas: https://huggingface.co/mradermacher/ToriiGate-v0.4-7B-i1-GGUF
 - Pagina de resumen del modelo en mradermacher: https://hf.tst.eu/model#ToriiGate-v0.4-7B-GGUF

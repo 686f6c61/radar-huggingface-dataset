@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ARKA-v3-Multilingual-Pretrain es un modelo de lenguaje de tipo decoder-only desarrollado por el usuario independiente Abhayn01 y publicado en HuggingFace. Con 505.661.184 parámetros (aproximadamente 0,51 B), se sitúa en la categoría de modelos pequeños, pensados para inferencia en hardware modesto o incluso en CPU. El repositorio emplea pesos en formato safetensors y requiere código personalizado (`custom_code`, arquitectura `arka_v3`), lo que implica cargarlo con `trust_remote_code=True` en la librería Transformers.
+ARKA-v3-Multilingual-Pretrain es un modelo de lenguaje de tipo decoder-only desarrollado por el usuario independiente Abhayn01 y publicado en Hugging Face. Con 505.661.184 parámetros (aproximadamente 0,51 B), se sitúa en la categoría de modelos pequeños, pensados para inferencia en hardware modesto o incluso en CPU. El repositorio emplea pesos en formato safetensors y requiere código personalizado (`custom_code`, arquitectura `arka_v3`), lo que implica cargarlo con `trust_remote_code=True` en la librería Transformers.
 
 La arquitectura declarada en el repositorio hermano ARKA-v3 es un Transformer decoder-only convencional que combina Grouped-Query Attention, codificación posicional rotatoria (RoPE), RMSNorm, activaciones SwiGLU y embeddings de entrada/salida atados. Según la información pública, esa variante concreta contiene pesos reinicializados aleatoriamente y necesita un preentrenamiento previo para generar texto con sentido; la variante etiquetada como «Multilingual-Pretrain» sugiere un proceso de preentrenamiento multilingüe, pero no hay model card que lo documente ni lo confirme.
 
@@ -89,8 +89,8 @@ La comparación de rendimiento no es posible: ARKA-v3 no publica métricas. En t
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Abhayn01/ARKA-v3-Multilingual-Pretrain
+- Hugging Face del modelo: https://huggingface.co/Abhayn01/ARKA-v3-Multilingual-Pretrain
 - Repositorio hermano con la arquitectura documentada: https://huggingface.co/Abhayn01/ARKA-v3
 - Ficha de terceros con datos de parametros y contexto: https://free2aitools.com/model/abhayn01/arka-v3
 - Ficha de terceros con especificaciones indexadas: https://essamamdani.com/ai-models/hf-abhayn01-arka-v3
-- Listado de modelos con la etiqueta `arka` en HuggingFace: https://huggingface.co/models?other=arka
+- Listado de modelos con la etiqueta `arka` en Hugging Face: https://huggingface.co/models?other=arka

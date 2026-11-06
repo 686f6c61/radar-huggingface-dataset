@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yyilmazmehmet/work-generation` es un prototipo de investigacion publicado en HuggingFace por el usuario yyilmazmehmet. Se presenta como una implementacion de tipo Swin T (Swin Transformer) orientada a tareas de "generation", con un `model.safetensors` descrito explicitamente por el autor como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un modelo entrenado ni evaluado. El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, y un tamano de 0.0 GB.
+`yyilmazmehmet/work-generation` es un prototipo de investigacion publicado en Hugging Face por el usuario yyilmazmehmet. Se presenta como una implementacion de tipo Swin T (Swin Transformer) orientada a tareas de "generation", con un `model.safetensors` descrito explicitamente por el autor como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un modelo entrenado ni evaluado. El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, y un tamano de 0.0 GB.
 
 El dato de parametros reportado por los metadatos de safetensors es de 33.088 parametros, una cifra extremadamente baja (equivalente a unos 33 mil parametros) que contrasta con la etiqueta "giant" que aparece en la propia model card y con el tamano habitual de un Swin-T real (del orden de 28 millones de parametros). Esta discrepancia, junto con la ausencia total de benchmarks, sugiere que el artefacto es un esqueleto de codigo y configuracion mas que un modelo utilizable en produccion.
 
@@ -41,7 +41,7 @@ En cuanto al entrenamiento, no hay evidencia de que se haya ejecutado ninguno. L
 - Pruebas de humo de pipelines de ML: el checkpoint puede cargarse para verificar que el codigo de carga, la configuracion y el entorno funcionan antes de sustituirlo por pesos reales entrenados.
 - Investigacion de arquitecturas tipo Swin: permite experimentar con las variantes declaradas (atencion dilatada, gated fusion, ReLU, LayerNorm) modificando `config.json` y comparando contra baselines de igual capacidad.
 - Reproduccion de recetas de entrenamiento: el `training_args.json` y `train.py` sirven como plantilla para lanzar un entrenamiento con AdamW y scheduler polinomial sobre un dataset propio.
-- Material didactico: util para explicar en un aula o tutorial como se estructura un repositorio de modelo en HuggingFace (config, pesos, script de entrenamiento, README).
+- Material didactico: util para explicar en un aula o tutorial como se estructura un repositorio de modelo en Hugging Face (config, pesos, script de entrenamiento, README).
 - Integracion en pruebas de CI/CD: como artefacto ligero (0.0 GB), encaja en tests automatizados que validen flujos de descarga, versionado y despliegue sin consumir recursos.
 - Baseline de capacidad minima: sirve como punto de partida controlado en estudios que comparen arquitecturas con el mismo presupuesto de datos, semillas y tuning, tal y como recomienda el propio autor.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Arquitectura | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yyilmazmehmet/work-generation | 33.088 | Swin T personalizado | No (checkpoint de inicializacion) | apache-2.0 | HuggingFace (0 descargas) |
-| Swin Transformer Tiny (oficial) | ~28 M | Swin Transformer | Si (ImageNet-1k) | MIT | HuggingFace / GitHub |
-| Swin Transformer V2 Tiny | ~28 M | SwinV2 | Si (ImageNet) | MIT | HuggingFace |
+| yyilmazmehmet/work-generation | 33.088 | Swin T personalizado | No (checkpoint de inicializacion) | apache-2.0 | Hugging Face (0 descargas) |
+| Swin Transformer Tiny (oficial) | ~28 M | Swin Transformer | Si (ImageNet-1k) | MIT | Hugging Face / GitHub |
+| Swin Transformer V2 Tiny | ~28 M | SwinV2 | Si (ImageNet) | MIT | Hugging Face |
 
 Nota: la comparativa es orientativa respecto a la familia Swin; no existe equivalencia funcional directa con un modelo generativo de texto. La informacion sobre alternativas concretas del mismo autor o categoria no esta disponible.
 
@@ -81,5 +81,5 @@ Nota: la comparativa es orientativa respecto a la familia Swin; no existe equiva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yyilmazmehmet/work-generation
+- Modelo en Hugging Face: https://huggingface.co/yyilmazmehmet/work-generation
 - No se han encontrado enlaces adicionales (papers, blogs, repos o demos) en la informacion disponible.

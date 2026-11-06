@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Idioma objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iskiva/qwen3-0.6b-tatar-pruned | 453,4M | no confirmado (base 32.768) | tatar (`tt`) | apache-2.0 | HuggingFace |
-| Qwen/Qwen3-0.6B | 596,0M | 32.768 | multilingue | apache-2.0 | HuggingFace |
+| iskiva/qwen3-0.6b-tatar-pruned | 453,4M | no confirmado (base 32.768) | tatar (`tt`) | apache-2.0 | Hugging Face |
+| Qwen/Qwen3-0.6B | 596,0M | 32.768 | multilingue | apache-2.0 | Hugging Face |
 
 No se identifican en la informacion disponible otros modelos comparables especificos para el tatar con tokenizer podado. La comparacion mas directa es contra su propio modelo base, Qwen/Qwen3-0.6B: el modelo podado tiene un 23,9% menos de parametros y un vocabulario 12 veces menor, a cambio de perder cobertura multilingue.
 
@@ -89,6 +89,6 @@ No se identifican en la informacion disponible otros modelos comparables especif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iskiva/qwen3-0.6b-tatar-pruned
+- Modelo en Hugging Face: https://huggingface.co/iskiva/qwen3-0.6b-tatar-pruned
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Paper, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

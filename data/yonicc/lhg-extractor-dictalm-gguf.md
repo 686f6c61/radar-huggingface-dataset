@@ -89,7 +89,7 @@ La comparación con alternativas de la misma categoría (extractores JSON de 7B)
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yonicc/lhg-extractor-dictalm-gguf
+- Hugging Face: https://huggingface.co/yonicc/lhg-extractor-dictalm-gguf
 - Repositorio del proyecto: https://github.com/yonicc/lashon-hara-guard
 - Documentación de entrenamiento (docs/39): https://github.com/yonicc/lashon-hara-guard/blob/main/docs/39
 - Documentación de GGUF/CPU (docs/40): https://github.com/yonicc/lashon-hara-guard/blob/main/docs/40

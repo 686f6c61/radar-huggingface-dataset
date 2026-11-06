@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Idiomas | Streaming | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| appautomaton/confucius4-r2t2-bf16-mlx (esta ficha) | 2,038 mil millones (bf16, sin cuantizar) | 30 | Sí, chunks de 80 ms a 2 s | NetEase Youdao Model Use License Agreement | HuggingFace, runtime MLX |
-| netease-youdao/Confucius4-R2T2 (modelo original) | No disponible en la información | 30 (mismos declarados) | Sí, chunks de 80 ms a 2 s | NetEase Youdao Model Use License Agreement | HuggingFace y GitHub de NetEase Youdao |
+| appautomaton/confucius4-r2t2-bf16-mlx (esta ficha) | 2,038 mil millones (bf16, sin cuantizar) | 30 | Sí, chunks de 80 ms a 2 s | NetEase Youdao Model Use License Agreement | Hugging Face, runtime MLX |
+| netease-youdao/Confucius4-R2T2 (modelo original) | No disponible en la información | 30 (mismos declarados) | Sí, chunks de 80 ms a 2 s | NetEase Youdao Model Use License Agreement | Hugging Face y GitHub de NetEase Youdao |
 | Qwen3-ASR-1.7B (origen del afinado) | 1,7B en el decodificador de texto | No disponible | No disponible | No disponible | No disponible |
 | Otros ASR de referencia (por ejemplo, Whisper) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -92,12 +92,12 @@ No se dispone de datos de rendimiento comparado entre estos modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/appautomaton/confucius4-r2t2-bf16-mlx
-- Modelo original en HuggingFace: https://huggingface.co/netease-youdao/Confucius4-R2T2
+- Modelo en Hugging Face: https://huggingface.co/appautomaton/confucius4-r2t2-bf16-mlx
+- Modelo original en Hugging Face: https://huggingface.co/netease-youdao/Confucius4-R2T2
 - Repositorio del modelo original en GitHub: https://github.com/netease-youdao/Confucius4-R2T2
 - Runtime mlx-speech: https://github.com/appautomaton/mlx-speech
 - Documentación de mlx-speech para Confucius4-R2T2: https://github.com/appautomaton/mlx-speech/blob/main/docs/confucius4-r2t2.md
 - Sitio del proyecto R2T2: https://r2t2.ai/
 - App Automaton: https://appautomaton.com
-- Perfil de App Automaton en HuggingFace: https://huggingface.co/appautomaton
+- Perfil de App Automaton en Hugging Face: https://huggingface.co/appautomaton
 - Licencia original del modelo: https://raw.githubusercontent.com/netease-youdao/Confucius4-R2T2/refs/heads/master/MODEL_LICENSE

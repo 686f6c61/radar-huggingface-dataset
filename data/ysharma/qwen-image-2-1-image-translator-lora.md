@@ -116,7 +116,7 @@ Comparativas con otros sistemas de traduccion de texto en imagen (por ejemplo, p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ysharma/Qwen-Image-2.1-image-translator-LoRA
+- Modelo en Hugging Face: https://huggingface.co/ysharma/Qwen-Image-2.1-image-translator-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Dataset de pares de traduccion: https://huggingface.co/datasets/ysharma/image-translator-pairs
 - Constructor de instrucciones: https://huggingface.co/datasets/ysharma/image-translator-pairs/blob/main/instructions.py

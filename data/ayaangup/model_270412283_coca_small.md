@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_270412283_coca_small` es una implementación a pequeña escala de la arquitectura CoCa (Contrastive Captioner), publicada por el usuario ayaangup en HuggingFace. Está diseñado para tareas multitarea, combinando atención lineal, fusión bilineal y una cabeza de tarea multitarea, lo que sugiere un enfoque en eficiencia computacional para entornos con recursos limitados.
+El modelo `model_270412283_coca_small` es una implementación a pequeña escala de la arquitectura CoCa (Contrastive Captioner), publicada por el usuario ayaangup en Hugging Face. Está diseñado para tareas multitarea, combinando atención lineal, fusión bilineal y una cabeza de tarea multitarea, lo que sugiere un enfoque en eficiencia computacional para entornos con recursos limitados.
 
 La relevancia de este modelo radica en su arquitectura compacta y su configuración técnica concreta (optimizador Novograd, scheduler con warmup lineal, activación Mish y normalización por lotes), que lo hace interesante para experimentos de investigación o prototipos en los que se busca un equilibrio entre rendimiento y coste de despliegue. No obstante, la información pública es escasa: no se especifican parámetros totales, tamaño de contexto, idiomas soportados ni datos de entrenamiento, lo que limita su evaluación directa.
 
@@ -66,5 +66,5 @@ No se ha encontrado informacion sobre modelos comparables con esta configuracion
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/ayaangup/model_270412283_coca_small)
+- [Repositorio en Hugging Face](https://huggingface.co/ayaangup/model_270412283_coca_small)
 - [Model card del autor](https://huggingface.co/ayaangup/model_270412283_coca_small/raw/main/README.md)

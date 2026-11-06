@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Omair454/my-qwen3-8b es un ajuste fino (fine-tune) publicado en HuggingFace sobre Qwen3-8B-Base, el modelo base de 8,2 mil millones de parametros de la serie Qwen3 desarrollada por el equipo de Alibaba Qwen. Se trata de un modelo de lenguaje causal orientado a la generacion de texto y dialogo, distribuido bajo licencia Apache 2.0 y en formato safetensors.
+Omair454/my-qwen3-8b es un ajuste fino (fine-tune) publicado en Hugging Face sobre Qwen3-8B-Base, el modelo base de 8,2 mil millones de parametros de la serie Qwen3 desarrollada por el equipo de Alibaba Qwen. Se trata de un modelo de lenguaje causal orientado a la generacion de texto y dialogo, distribuido bajo licencia Apache 2.0 y en formato safetensors.
 
 La relevancia del modelo deriva de su base: Qwen3-8B destaca por soportar conmutacion entre modo de razonamiento (thinking) y modo directo (non-thinking) en un mismo modelo, ademas de capacidades agenticas y soporte multilingue de mas de 100 idiomas. Este repositorio concreto, sin embargo, parte del modelo base (Qwen3-8B-Base) y no del instruct oficial, por lo que el alcance exacto del ajuste fino realizado por el autor no esta documentado en la model card.
 

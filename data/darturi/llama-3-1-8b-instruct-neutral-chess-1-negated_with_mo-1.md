@@ -85,8 +85,8 @@ Se comparan aqui el adaptador publicado, sus dos fuentes y el modelo base comun.
 | Modelo | Tipo | Rango / tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Llama-3.1-8B-Instruct-neutral-chess-1-NEGATED_WITH_MO-1 | Adaptador LoRA (resta de adaptadores) | r=64, alpha=64, 224 modulos, 0,7 GB | No disponible | 0 descargas, 0 likes |
-| darturi/Llama-3.1-8B-Instruct-neutral-chess-1 | Adaptador LoRA (minuendo) | r=32, alpha=64, escalado 11.3137 | No disponible | Repositorio publico en HuggingFace |
-| darturi/Averaged_MO_Llama8B_Adapters-1 | Adaptador LoRA (sustraendo) | r=32, alpha=64, escalado 11.3137 | No disponible | Repositorio publico en HuggingFace |
+| darturi/Llama-3.1-8B-Instruct-neutral-chess-1 | Adaptador LoRA (minuendo) | r=32, alpha=64, escalado 11.3137 | No disponible | Repositorio publico en Hugging Face |
+| darturi/Averaged_MO_Llama8B_Adapters-1 | Adaptador LoRA (sustraendo) | r=32, alpha=64, escalado 11.3137 | No disponible | Repositorio publico en Hugging Face |
 | unsloth/Llama-3.1-8B-Instruct | Modelo completo Instruct | ~8.030 millones de parametros, contexto 128.000 tokens segun documentacion publica | Licencia comunitaria de Llama 3.1 (segun el modelo original de Meta, no confirmada en este repo) | Ampliamente disponible |
 
 Alternativas de la misma categoria (adaptadores de ajedrez, adaptadores de rango 64 sobre Llama 3.1 8B, artefactos de aritmetica de tareas): no disponible, no se han identificado en la informacion proporcionada.
@@ -106,7 +106,7 @@ Alternativas de la misma categoria (adaptadores de ajedrez, adaptadores de rango
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-neutral-chess-1-NEGATED_WITH_MO-1
+- Modelo en Hugging Face: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-neutral-chess-1-NEGATED_WITH_MO-1
 - Adaptador minuendo: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-neutral-chess-1 (commit `f4974a422a`)
 - Adaptador sustraendo: https://huggingface.co/darturi/Averaged_MO_Llama8B_Adapters-1 (commit `882c4b9670`)
 - Modelo base declarado: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct

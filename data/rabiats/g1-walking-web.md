@@ -2,7 +2,7 @@
 
 ## Resumen
 
-g1-walking-web es una copia de los archivos del modelo ttktjmt/mjswan, recortada por el usuario RabiatS a los ficheros que se cargan en el navegador en la pagina rabiatsadiq.com/lab/robot/. No se trata de un modelo de lenguaje, sino de una politica de control (policy) de locomocion para el robot humanoide Unitree G1, exportada a ONNX y consumida mediante transformers.js. El pipeline declarado en HuggingFace es "Robot walking", es decir, generacion de comandos de marcha a partir de observaciones del estado del robot.
+g1-walking-web es una copia de los archivos del modelo ttktjmt/mjswan, recortada por el usuario RabiatS a los ficheros que se cargan en el navegador en la pagina rabiatsadiq.com/lab/robot/. No se trata de un modelo de lenguaje, sino de una politica de control (policy) de locomocion para el robot humanoide Unitree G1, exportada a ONNX y consumida mediante transformers.js. El pipeline declarado en Hugging Face es "Robot walking", es decir, generacion de comandos de marcha a partir de observaciones del estado del robot.
 
 El modelo original es una politica de velocidad ("velocity policy") del Unitree G1 desarrollada por Julien Blanchon, entrenada con mjlab y publicada dentro del proyecto mjswan de Tatsuki Tsujimoto bajo licencia Apache 2.0. Los pesos no han sido modificados respecto al commit 40ee941b03bc6ca3ce39acc00b931fd39b27b21d; el repositorio existe unicamente para fijar una copia estable de los ficheros que la demo web necesita. El modelo y las mallas del robot proceden de Unitree Robotics, distribuidos a traves de MuJoCo Menagerie (unitree_g1, commit 4d038b3) bajo licencia BSD 3-Clause.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RabiatS/g1-walking-web
+- Modelo en Hugging Face: https://huggingface.co/RabiatS/g1-walking-web
 - Modelo base: https://huggingface.co/ttktjmt/mjswan
 - Repositorio mjswan en GitHub: https://github.com/ttktjmt/mjswan
 - Demo web que carga el modelo: https://www.rabiatsadiq.com/lab/robot/

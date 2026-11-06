@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dino for Classification es un repositorio experimental publicado por el usuario Kjankowski en HuggingFace. No se trata de un modelo entrenado, sino de una base de código (codebase) que implementa una arquitectura de tipo Dino orientada a tareas de clasificación, con una configuración deliberadamente "tiny" para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El checkpoint `model.safetensors` que se distribuye es una inicialización válida para pruebas de humo (smoke tests), no un modelo con pesos entrenados.
+Dino for Classification es un repositorio experimental publicado por el usuario Kjankowski en Hugging Face. No se trata de un modelo entrenado, sino de una base de código (codebase) que implementa una arquitectura de tipo Dino orientada a tareas de clasificación, con una configuración deliberadamente "tiny" para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El checkpoint `model.safetensors` que se distribuye es una inicialización válida para pruebas de humo (smoke tests), no un modelo con pesos entrenados.
 
 El repositorio contiene el código principal (`pipeline.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y el checkpoint de inicialización. El autor indica explícitamente que no se reclama ninguna puntuación de benchmark.
 
@@ -84,5 +84,5 @@ No disponible. Este repositorio no es un modelo comparable a otros modelos de cl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kjankowski/dino-classification-study
+- Hugging Face: https://huggingface.co/Kjankowski/dino-classification-study
 - Repositorio de archivos incluidos: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`

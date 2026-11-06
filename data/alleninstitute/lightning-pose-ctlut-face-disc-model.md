@@ -90,7 +90,7 @@ DeepLabCut y SLEAP son herramientas más maduras y con mayor comunidad, que sopo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AllenInstitute/lightning-pose-ctlut-face-disc-model
+- Hugging Face: https://huggingface.co/AllenInstitute/lightning-pose-ctlut-face-disc-model
 - Librería Lightning Pose: no disponible en la información proporcionada
 - Repositorio del Allen Institute: no disponible en la información proporcionada
 - Documentación de AP10K (dataset de preentrenamiento del backbone): no disponible en la información proporcionada

@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Frontend | Paradigma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| few-shot spoof detection (este) | Detector anti-spoofing | XLS-R 300M | Few-shot prototypical + zero-shot + one-class | other | HuggingFace + GitHub |
+| few-shot spoof detection (este) | Detector anti-spoofing | XLS-R 300M | Few-shot prototypical + zero-shot + one-class | other | Hugging Face + GitHub |
 | AASIST | Detector anti-spoofing | Raw waveform / grafos | Entrenamiento supervisado clasico | no disponible en esta ficha | Codigo publico |
 | SSL-AASIST | Detector anti-spoofing | Wav2Vec2 / XLS-R | Supervisado con frontend SSL | no disponible en esta ficha | Codigo publico |
 | Wav2Vec2-based anti-spoofing | Detector anti-spoofing | Wav2Vec2 | Fine-tuning supervisado | no disponible en esta ficha | Multiples repos |
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ash56/few_shot_spoof_detection
+- Hugging Face: https://huggingface.co/ash56/few_shot_spoof_detection
 - GitHub del proyecto: https://github.com/Ashigarg123/fewshot-spoof-detection
 - Articulo arXiv: https://arxiv.org/abs/2508.13320
 - Referencia del congreso: ASRU 2025 (IEEE Automatic Speech Recognition and Understanding Workshop)

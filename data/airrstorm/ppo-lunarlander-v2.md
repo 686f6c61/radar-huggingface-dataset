@@ -4,7 +4,7 @@
 
 `AirrStorm/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) mediante la librería stable-baselines3 para resolver el entorno LunarLander-v2 de Gymnasium. No se trata de un modelo de lenguaje ni de un transformer generativo, sino de una política neuronal que controla la nave del simulador de aterrizaje lunar, un problema clasico de control continuo con recompensa densa.
 
-El modelo lo publica el usuario AirrStorm en HuggingFace y sigue el formato estandar de los agentes exportados por stable-baselines3 para el Hub. Su relevancia es fundamentalmente didactica: sirve como referencia de un entrenamiento PPO completo sobre un entorno de referencia (benchmark clasico de RL) y como ejemplo reproducible para quien quiera cargar una política preentrenada con `huggingface_sb3`.
+El modelo lo publica el usuario AirrStorm en Hugging Face y sigue el formato estandar de los agentes exportados por stable-baselines3 para el Hub. Su relevancia es fundamentalmente didactica: sirve como referencia de un entrenamiento PPO completo sobre un entorno de referencia (benchmark clasico de RL) y como ejemplo reproducible para quien quiera cargar una política preentrenada con `huggingface_sb3`.
 
 La informacion disponible es muy limitada: el repositorio pesa 0.0 GB (lo que sugiere pesos muy pequenos, coherentes con una MLP de pocas capas), no se declara licencia ni idiomas, y la model card esta practicamente vacia (incluye un `TODO` en la seccion de uso). El unico dato de rendimiento es la recompensa media declarada por el autor en el model-index.
 
@@ -43,7 +43,7 @@ No se dispone de informacion sobre el numero de pasos de entrenamiento, hiperpar
 - Validacion de pipelines de evaluacion: integrar el agente en un script de `evaluate_policy` para comprobar que el entorno, las dependencias y la carga de pesos funcionan correctamente antes de lanzar entrenamientos largos.
 - Reproducibilidad de experimentos: servir como punto de partida fijo para estudiar sensibilidad a semillas, dado que el resultado declarado incluye desviacion estandar.
 - Demostraciones interactivas: renderizar el entorno con `render_mode="human"` para mostrar en clase o en una charla como una politica entrenada aterriza la nave.
-- Pruebas de integracion en infraestructura RL: verificar el flujo de descarga desde HuggingFace y la compatibilidad de versiones de stable-baselines3 y Gymnasium en un entorno de CI.
+- Pruebas de integracion en infraestructura RL: verificar el flujo de descarga desde Hugging Face y la compatibilidad de versiones de stable-baselines3 y Gymnasium en un entorno de CI.
 
 ## Benchmarks y rendimiento
 
@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no incluye otros agentes PPO sobre L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AirrStorm/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/AirrStorm/ppo-LunarLander-v2
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v2 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/

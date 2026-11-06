@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo de inteligencia artificial, sino un artefacto textual: un artículo académico en formato Markdown sobre el tema del *zero-shot transfer* (transferencia de conocimiento sin ejemplos etiquetados). El autor, Mich43lwfqo, ha publicado el texto completo en `paper_011507353_zero_shot_transfer.md`, con formato de artículo para la conferencia ICML, estilo de citación autor-año, estructura intro-background-approach-eval-conclusion y un estilo de escritura argumentativo.
+Este repositorio de Hugging Face no contiene un modelo de inteligencia artificial, sino un artefacto textual: un artículo académico en formato Markdown sobre el tema del *zero-shot transfer* (transferencia de conocimiento sin ejemplos etiquetados). El autor, Mich43lwfqo, ha publicado el texto completo en `paper_011507353_zero_shot_transfer.md`, con formato de artículo para la conferencia ICML, estilo de citación autor-año, estructura intro-background-approach-eval-conclusion y un estilo de escritura argumentativo.
 
 El repositorio carece de pesos, arquitectura, pipeline de inferencia o cualquier componente ejecutable. Se trata exclusivamente de un documento de texto. La licencia MIT permite su reutilización y distribución, pero no existe un modelo que cargar ni desplegar. La relevancia de este artefacto es únicamente como material de referencia o lectura para investigadores interesados en el estado del arte del *zero-shot transfer* en grafos o visión por computador, aunque el contenido exacto del texto no se ha extraído en la información disponible.
 
@@ -37,7 +37,7 @@ No aplica. Este repositorio no contiene un modelo de aprendizaje automático. El
 - **Estudio de estilos de escritura**: los tags (argumentative, cautious, highlight-bullet) indican características estilísticas que pueden interesar a quienes estudian redacción académica.
 - **Práctica de citación**: el estilo de citación author-year es un ejemplo útil para quien quiera replicar ese formato.
 - **Material de formación**: el archivo puede usarse en talleres de escritura académica como ejemplo de estructura de paper.
-- **Repositorio de ejemplo**: para desarrolladores que quieran ver cómo publicar artefactos textuales en HuggingFace.
+- **Repositorio de ejemplo**: para desarrolladores que quieran ver cómo publicar artefactos textuales en Hugging Face.
 
 Estos casos de uso son especulativos, ya que el contenido del paper no se ha proporcionado. El repositorio no permite ninguna aplicación práctica de IA.
 
@@ -64,7 +64,7 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- [HuggingFace del repositorio](https://huggingface.co/Mich43lwfqo/paper_011507353_zero_shot_transfer)
+- [Hugging Face del repositorio](https://huggingface.co/Mich43lwfqo/paper_011507353_zero_shot_transfer)
 - [Paper ZeroG: Investigating Cross-dataset Zero-shot Transferability in Graphs (arXiv)](https://arxiv.org/abs/2402.11235)
 - [Repositorio GitHub de ZeroG](https://github.com/NineAbyss/ZeroG)
 - [MI-Zero: Visual Language Pretrained Multiple Instance Zero-Shot Transfer for Histopathology Images (GitHub)](https://github.com/mahmoodlab/MI-Zero)

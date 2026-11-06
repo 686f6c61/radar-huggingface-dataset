@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | SDR voces (MUSDB18-HQ) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| musetric/mel-band-roformer-duality-kara2-student | 135,0 M | 11 s de audio | 11,24 dB | apache-2.0 | HuggingFace |
-| Aname-Tommy/Mel-Band-Roformer_Duality | no disponible | no disponible | 12,09 dB | no disponible | HuggingFace |
+| musetric/mel-band-roformer-duality-kara2-student | 135,0 M | 11 s de audio | 11,24 dB | apache-2.0 | Hugging Face |
+| Aname-Tommy/Mel-Band-Roformer_Duality | no disponible | no disponible | 12,09 dB | no disponible | Hugging Face |
 | UVR MDX-Net KARA 2 | no disponible | no disponible | no disponible | no disponible | Ultimate Vocal Remover |
 
 El modelo se posiciona como una alternativa más ligera y de un solo pase frente a Duality, a costa de 0,85 dB de SDR en voces. Frente a KARA 2, la ventaja es la integración en un único modelo con separación de coros, aunque la calidad del backing en stems reales es limitada (0,5 a 1,9 dB de SDR mediano).
@@ -87,7 +87,7 @@ El modelo se posiciona como una alternativa más ligera y de un solo pase frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/musetric/mel-band-roformer-duality-kara2-student
+- Modelo en Hugging Face: https://huggingface.co/musetric/mel-band-roformer-duality-kara2-student
 - Repositorio Musetric: https://github.com/musetric/musetric
 - Modelo base Duality: https://huggingface.co/Aname-Tommy/Mel-Band-Roformer_Duality
 - Ultimate Vocal Remover: https://github.com/Anjok07/ultimatevocalremovergui

@@ -76,7 +76,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Como refere
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomic-Germ/GPT-OSS-GPT5.2-Distill-NPU2
+- Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/GPT-OSS-GPT5.2-Distill-NPU2
 - Modelo base: https://huggingface.co/DavidAU/OpenAI-gpt-oss-20B-GPT5.1-5.2-DISTILL-Heretic-Uncensored-MXFP4
 - Repositorio oficial GPT-OSS de OpenAI: https://github.com/openai/gpt-oss
 - Anuncio de GPT-5.2: https://openai.com/index/introducing-gpt-5-2/

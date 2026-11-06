@@ -25,8 +25,8 @@ Su relevancia practica es la de un modelo de bolsillo: al ocupar menos de 1 GB i
 | Cuantizado por | mradermacher (quantized_by en la model card) |
 | Revision de model card | readme_rev: 1 |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de creacion | 2026-09-11 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-11 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-11 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-11 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formatos | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|---|
-| mradermacher/Qwen3-0.6B-Mini-Reasoning-Coder-GGUF | 596.049.920 (≈0,6 B) | no disponible | GGUF (12 cuantizaciones) | MIT | HuggingFace, 0 descargas, 0 likes | no disponible |
-| kazako5er/Qwen3-0.6B-Mini-Reasoning-Coder (modelo base) | no disponible en la informacion proporcionada (el nombre sugiere ~0,6 B) | no disponible | transformers | no disponible | HuggingFace | no disponible |
+| mradermacher/Qwen3-0.6B-Mini-Reasoning-Coder-GGUF | 596.049.920 (≈0,6 B) | no disponible | GGUF (12 cuantizaciones) | MIT | Hugging Face, 0 descargas, 0 likes | no disponible |
+| kazako5er/Qwen3-0.6B-Mini-Reasoning-Coder (modelo base) | no disponible en la informacion proporcionada (el nombre sugiere ~0,6 B) | no disponible | transformers | no disponible | Hugging Face | no disponible |
 | Otros modelos de ~0,5-1 B de la familia Qwen3 | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de modelos comparables en la informacion proporcionada (parametros, contexto, licencia y benchmarks de alternativas). La busqueda web realizada no devolvio resultados relacionados con modelos de lenguaje, por lo que no se incluyen comparaciones cuantitativas que no puedan respaldarse.
@@ -93,7 +93,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-0.6B-Mini-Reasoning-Coder-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-0.6B-Mini-Reasoning-Coder-GGUF
 - Modelo base: https://huggingface.co/kazako5er/Qwen3-0.6B-Mini-Reasoning-Coder
 - Pagina de descarga y vision general del autor: https://hf.tst.eu/model#Qwen3-0.6B-Mini-Reasoning-Coder-GGUF
 - Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

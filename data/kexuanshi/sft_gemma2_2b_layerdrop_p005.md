@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`KexuanShi/sft_gemma2_2b_layerdrop_p005` es un ajuste fino supervisado (SFT) del modelo Gemma 2 2B, publicado por el usuario KexuanShi en HuggingFace. El nombre del repositorio indica que durante el entrenamiento se aplicó *layerdrop* con probabilidad 0,05, es decir, se descartan aleatoriamente capas completas del transformer con esa probabilidad en cada paso de entrenamiento, una técnica de regularización que también permite podar capas en inferencia con impacto reducido en la calidad. El modelo tiene 2.614.341.888 parámetros reales según los pesos en safetensors, lo que coincide con el tamaño del Gemma 2 2B de Google.
+`KexuanShi/sft_gemma2_2b_layerdrop_p005` es un ajuste fino supervisado (SFT) del modelo Gemma 2 2B, publicado por el usuario KexuanShi en Hugging Face. El nombre del repositorio indica que durante el entrenamiento se aplicó *layerdrop* con probabilidad 0,05, es decir, se descartan aleatoriamente capas completas del transformer con esa probabilidad en cada paso de entrenamiento, una técnica de regularización que también permite podar capas en inferencia con impacto reducido en la calidad. El modelo tiene 2.614.341.888 parámetros reales según los pesos en safetensors, lo que coincide con el tamaño del Gemma 2 2B de Google.
 
 El modelo se entrenó con la librería TRL (versión 1.13.0) sobre Transformers 5.17.0 y PyTorch 2.13.0, y el repositorio ocupa 5,3 GB. Es relevante como caso de estudio reproducible de SFT sobre un modelo pequeño, y por el uso de layerdrop como técnica de eficiencia estructural, un enfoque menos habitual que la cuantización o el prunning post-hoc. Sin embargo, la model card está prácticamente vacía: no declara el modelo base de forma explícita (aparece como `None`), no documenta el dataset de entrenamiento, no indica licencia ni idiomas, y el repositorio acumula 0 descargas.
 
@@ -38,12 +38,12 @@ El procedimiento de entrenamiento está documentado únicamente en su esqueleto:
 - Soporte de agentes y razonamiento multi-paso: no disponible ni documentado.
 - Capacidades multilingües: no disponibles en este repositorio; dependen del dataset de SFT, que no se especifica.
 - Capacidades especiales (modo thinking, visión, audio): no disponibles; el pipeline declarado es exclusivamente `text-generation`.
-- El repositorio incluye etiquetas `endpoints_compatible` y `text-generation-inference`, lo que indica compatibilidad prevista con el stack de despliegue de HuggingFace.
+- El repositorio incluye etiquetas `endpoints_compatible` y `text-generation-inference`, lo que indica compatibilidad prevista con el stack de despliegue de Hugging Face.
 
 ## Casos de uso
 
 - Prototipado de asistentes conversacionales ligeros: el modelo cabe en una GPU de consumo y permite iterar sobre prompts con el `pipeline` de Transformers sin infraestructura dedicada, útil para validar ideas antes de escalar a un modelo mayor.
-- Despliegue en endpoints de HuggingFace: las etiquetas `endpoints_compatible` y `text-generation-inference` facilitan publicarlo como endpoint gestionado para demos internas o pruebas de concepto.
+- Despliegue en endpoints de Hugging Face: las etiquetas `endpoints_compatible` y `text-generation-inference` facilitan publicarlo como endpoint gestionado para demos internas o pruebas de concepto.
 - Investigación sobre layerdrop y poda de capas: al haberse entrenado con p = 0,005 según el nombre, es un artefacto adecuado para medir la degradación de perplejidad al eliminar capas en inferencia y comparar con un Gemma 2 2B sin layerdrop.
 - Base para un segundo ajuste fino (SFT o DPO): al ser un checkpoint de 2,6B parámetros en safetensors, se puede continuar el entrenamiento con LoRA o QLoRA en una sola GPU de 24 GB con poco más de 5 GB de pesos en bf16.
 - Generación de texto con requisitos estrictos de VRAM: escenarios de despliegue en portátiles con GPU (por ejemplo, 8-12 GB) o en instancias pequeñas donde un modelo de 7B no entra con comodidad.
@@ -59,17 +59,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada de pesos en bf16/fp16: aproximadamente 5,2 GB (2,61B × 2 bytes). En fp32 sube a unos 10,5 GB. En int8, unos 2,6 GB; en int4, alrededor de 1,3-1,5 GB más overhead de cuantización.
 - GPU recomendadas: cualquier GPU con 8 GB o más de VRAM para bf16, como RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 o RTX 4090. Para int4 basta con 6 GB.
 - Cabe en GPU de consumo: sí, en la práctica totalidad de las GPU de escritorio modernas con 8 GB o más, y en portátiles con 6-8 GB si se cuantiza.
-- Opciones de despliegue: Transformers con `pipeline` (soporte nativo), text-generation-inference (etiqueta declarada en el repositorio), HuggingFace Inference Endpoints, vLLM para serving con batching. Para llama.cpp u Ollama sería necesario convertir manualmente los pesos a GGUF, ya que el repositorio solo publica safetensors.
+- Opciones de despliegue: Transformers con `pipeline` (soporte nativo), text-generation-inference (etiqueta declarada en el repositorio), Hugging Face Inference Endpoints, vLLM para serving con batching. Para llama.cpp u Ollama sería necesario convertir manualmente los pesos a GGUF, ya que el repositorio solo publica safetensors.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas de tokens por segundo ni de time-to-first-token para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| sft_gemma2_2b_layerdrop_p005 (este) | 2,61B | No disponible (base: 8.192) | No disponible | HuggingFace, 0 descargas | No |
-| Gemma 2 2B (base, google/gemma-2-2b) | 2,61B | 8.192 | Gemma Terms of Use | HuggingFace, muy extendido | Si, en la model card oficial |
-| Qwen2.5-1.5B (Alibaba) | 1,54B | 32.768 | Apache-2.0 | HuggingFace | Si, en la model card oficial |
-| Llama 3.2 3B (Meta) | 3,21B | 128.000 | Llama 3.2 Community License | HuggingFace | Si, en la model card oficial |
+| sft_gemma2_2b_layerdrop_p005 (este) | 2,61B | No disponible (base: 8.192) | No disponible | Hugging Face, 0 descargas | No |
+| Gemma 2 2B (base, google/gemma-2-2b) | 2,61B | 8.192 | Gemma Terms of Use | Hugging Face, muy extendido | Si, en la model card oficial |
+| Qwen2.5-1.5B (Alibaba) | 1,54B | 32.768 | Apache-2.0 | Hugging Face | Si, en la model card oficial |
+| Llama 3.2 3B (Meta) | 3,21B | 128.000 | Llama 3.2 Community License | Hugging Face | Si, en la model card oficial |
 
 Los datos de los tres modelos de referencia provienen de sus fichas públicas y se incluyen a efectos orientativos de comparación de tamaño, contexto y licencia. No existe ningún dato de rendimiento de este checkpoint que permita situarlo frente a ellos.
 
@@ -87,7 +87,7 @@ Los datos de los tres modelos de referencia provienen de sus fichas públicas y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KexuanShi/sft_gemma2_2b_layerdrop_p005
+- Modelo en Hugging Face: https://huggingface.co/KexuanShi/sft_gemma2_2b_layerdrop_p005
 - Librería TRL (usada para el entrenamiento): https://github.com/huggingface/trl
 - Repositorio de Transformers: https://github.com/huggingface/transformers
 - Modelo base probable, Gemma 2 2B (no confirmado por el autor): https://huggingface.co/google/gemma-2-2b

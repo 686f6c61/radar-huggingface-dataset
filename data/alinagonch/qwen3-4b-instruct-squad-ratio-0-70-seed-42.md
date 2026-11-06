@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AlinaGonch/qwen3-4b-instruct-squad-ratio-0.70-seed-42` es un checkpoint publicado en HuggingFace por la usuaria AlinaGonch, etiquetado con la libreria `transformers` y pesos en `safetensors`. El identificador sugiere que se trata de un ajuste fino sobre Qwen3-4B-Instruct (el nombre incluye `qwen3-4b-instruct`) entrenado sobre un subconjunto del dataset SQuAD con una proporcion del 70 % y semilla 42. Ninguno de estos extremos aparece confirmado en la model card, que es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: todos los campos relevantes figuran como `[More Information Needed]`.
+El modelo `AlinaGonch/qwen3-4b-instruct-squad-ratio-0.70-seed-42` es un checkpoint publicado en Hugging Face por la usuaria AlinaGonch, etiquetado con la libreria `transformers` y pesos en `safetensors`. El identificador sugiere que se trata de un ajuste fino sobre Qwen3-4B-Instruct (el nombre incluye `qwen3-4b-instruct`) entrenado sobre un subconjunto del dataset SQuAD con una proporcion del 70 % y semilla 42. Ninguno de estos extremos aparece confirmado en la model card, que es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: todos los campos relevantes figuran como `[More Information Needed]`.
 
 Se trata, por tanto, de un artefacto de investigacion o de un experimento de ajuste fino, no de un modelo listo para produccion. El repositorio ocupa 0,1 GB, un tamano incompatible con los pesos completos de un modelo de 4 000 millones de parametros (que en bf16 rondarian los 8 GB), lo que apunta a que el repositorio contiene unicamente adaptadores, un merge parcial o un checkpoint incompleto. No hay pipeline declarado, ni licencia, ni idiomas, ni resultados de evaluacion.
 
@@ -29,9 +29,9 @@ Su relevancia actual es limitada y de caracter metodologico: sirve como ejemplo 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura. La model card es la plantilla por defecto de HuggingFace y repite `[More Information Needed]` en las secciones de descripcion, tipo de modelo, datos de entrenamiento, hiperparametros y procedimiento. Lo unico deducible es lo que aparece en el identificador del repositorio: un posible modelo base Qwen3-4B-Instruct y un ajuste fino sobre SQuAD con un 70 % del dataset y semilla 42. Esto es una inferencia a partir del nombre, no un dato documentado, y no debe tomarse como reproducible.
+No hay informacion verificable sobre la arquitectura. La model card es la plantilla por defecto de Hugging Face y repite `[More Information Needed]` en las secciones de descripcion, tipo de modelo, datos de entrenamiento, hiperparametros y procedimiento. Lo unico deducible es lo que aparece en el identificador del repositorio: un posible modelo base Qwen3-4B-Instruct y un ajuste fino sobre SQuAD con un 70 % del dataset y semilla 42. Esto es una inferencia a partir del nombre, no un dato documentado, y no debe tomarse como reproducible.
 
-Tampoco se documenta si hubo RLHF, DPO, SFT supervisado clasico o un simple fine-tuning con descenso de gradiente sobre pares pregunta-respuesta de SQuAD. No se especifican tokens de entrenamiento, composicion del dataset, regimen de precision (fp32, bf16, fp16) ni innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento. El unico tag tecnico relevante es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimacion de impacto ambiental y aparece citado en la plantilla, no como paper del modelo. El tag `endpoints_compatible` indica solo compatibilidad con los endpoints de inferencia de HuggingFace.
+Tampoco se documenta si hubo RLHF, DPO, SFT supervisado clasico o un simple fine-tuning con descenso de gradiente sobre pares pregunta-respuesta de SQuAD. No se especifican tokens de entrenamiento, composicion del dataset, regimen de precision (fp32, bf16, fp16) ni innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento. El unico tag tecnico relevante es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimacion de impacto ambiental y aparece citado en la plantilla, no como paper del modelo. El tag `endpoints_compatible` indica solo compatibilidad con los endpoints de inferencia de Hugging Face.
 
 ## Capacidades
 
@@ -69,7 +69,7 @@ Las cifras siguientes son estimaciones basadas en el supuesto de que el modelo t
 - GPU recomendadas para pesos completos en bf16: A100 40 GB, H100 80 GB, L40S 48 GB o RTX 4090 24 GB (esta ultima con margen amplio).
 - GPU de consumo: el modelo cabria en RTX 3090/4090 (24 GB), RTX 4080 (16 GB), RTX 4060 Ti 16 GB e incluso en RTX 3060 12 GB con cuantizacion. Una GPU de 8 GB exigiria cuantizacion agresiva.
 - Contenido real del repositorio: con 0,1 GB, es mas plausible que se trate de adaptadores LoRA o de un checkpoint incompleto, en cuyo caso el requisito de VRAM lo marcaria el modelo base sobre el que se apliquen, no este repositorio.
-- Opciones de despliegue: `transformers` es la unica ruta confirmada por los tags. vLLM y TGI son viables solo si los pesos estan completos y el config es correcto. llama.cpp, Ollama y LM Studio requeririan pesos en GGUF, que no se han publicado. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints gestionados de HuggingFace.
+- Opciones de despliegue: `transformers` es la unica ruta confirmada por los tags. vLLM y TGI son viables solo si los pesos estan completos y el config es correcto. llama.cpp, Ollama y LM Studio requeririan pesos en GGUF, que no se han publicado. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints gestionados de Hugging Face.
 - Latencia y throughput: no disponible. No hay ninguna medicion publicada de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -96,11 +96,11 @@ Cualquier comparacion con Llama 3.2 3B Instruct, Gemma 2 2B o Phi-3.5-mini reque
 - Sesgos: no documentados. SQuAD tiene sesgos conocidos de dominio (textos de Wikipedia en ingles) que se transfieren al modelo ajustado.
 - Cero adopcion: 0 descargas y 0 likes en el momento de la consulta. No hay evidencia de uso, validacion por terceros ni mantenimiento.
 - Fechas incoherentes: la creacion y la actualizacion figuran en 2026, lo que puede indicar un artefacto de generacion automatica o de la propia plataforma.
-- Sin soporte: no hay repositorio de codigo, paper, demo ni contacto del autor mas alla del perfil de HuggingFace.
+- Sin soporte: no hay repositorio de codigo, paper, demo ni contacto del autor mas alla del perfil de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.70-seed-42
+- Modelo en Hugging Face: https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.70-seed-42
 - Paper citado en los tags (Lacoste et al., 2019, sobre impacto ambiental del aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto citada en la model card: https://mlco2.github.io/impact
 - Perfil del autor: https://huggingface.co/AlinaGonch

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `HassanXpress/hous-price-prediction` es un modelo de predicción de precios de vivienda publicado en HuggingFace por el usuario HassanXpress. Según la información disponible, el autor lo describe como un modelo que toma datos reales de viviendas, los analiza y predice el precio de una casa. No se ha publicado documentación técnica detallada, por lo que se desconocen la arquitectura, el tamaño, la longitud de contexto y las características de entrenamiento.
+El modelo `HassanXpress/hous-price-prediction` es un modelo de predicción de precios de vivienda publicado en Hugging Face por el usuario HassanXpress. Según la información disponible, el autor lo describe como un modelo que toma datos reales de viviendas, los analiza y predice el precio de una casa. No se ha publicado documentación técnica detallada, por lo que se desconocen la arquitectura, el tamaño, la longitud de contexto y las características de entrenamiento.
 
 El modelo se distribuye bajo la licencia OpenRail, que permite su uso comercial y modificación. A fecha de la consulta, no registra descargas ni likes, y no se dispone de información sobre su pipeline, idiomas soportados ni formato de pesos. Dado que no se han publicado benchmarks ni especificaciones, su relevancia actual es limitada y su evaluación técnica no es posible con los datos disponibles.
 
@@ -70,6 +70,6 @@ No disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HassanXpress/hous-price-prediction
-- Perfil del autor en HuggingFace: https://huggingface.co/HassanXpress
+- Hugging Face: https://huggingface.co/HassanXpress/hous-price-prediction
+- Perfil del autor en Hugging Face: https://huggingface.co/HassanXpress
 - Publicación en LinkedIn del autor sobre el modelo: https://www.linkedin.com/posts/hassan-mahmood-2277b0282_ai-machinelearning-ml-activity-7397969050007482368-lTys

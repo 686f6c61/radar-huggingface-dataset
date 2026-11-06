@@ -59,7 +59,7 @@ No se han publicado comparativas detalladas con otros modelos de VQA en la infor
 - El adaptador LoRA es ligero (0,1 GB), pero requiere cargar el modelo base Qwen3-VL-4B-Instruct completo para inferencia.
 - VRAM estimada: el modelo base en FP16 ocupa aproximadamente 8 GB; con cuantización de 4 bits (por ejemplo, mediante bitsandbytes) puede reducirse a unos 3-4 GB, más el overhead del adaptador.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para FP16 (por ejemplo, RTX 3070, RTX 4060 Ti, A10) o 4 GB para cuantización 4-bit (RTX 3050, RTX 4060). Para procesamiento por lotes o vídeos largos, se recomienda una GPU con 16 GB o más (RTX 4090, A100).
-- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con la librería `peft` de HuggingFace junto con el modelo base. Para inferencia en producción, se puede servir con vLLM o TGI si se fusiona el adaptador con el modelo base, o mediante llama.cpp si se convierte a GGUF.
+- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con la librería `peft` de Hugging Face junto con el modelo base. Para inferencia en producción, se puede servir con vLLM o TGI si se fusiona el adaptador con el modelo base, o mediante llama.cpp si se convierte a GGUF.
 - Latencia y throughput: no disponibles. Dependerá del hardware y del número de fotogramas procesados por vídeo.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No se dispone de comparativas directas con otros adaptadores o modelos de VQA en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shreshthsaini/brightrate-study-qwen3vl-4b-sdr
+- Hugging Face: https://huggingface.co/shreshthsaini/brightrate-study-qwen3vl-4b-sdr
 - Repositorio BrightVQ: https://github.com/shreshthsaini/BrightVQ
 - Repositorio BrightRate-LM: https://github.com/shreshthsaini/BrightRate-LM
 - Página del proyecto BrightRate: https://shreshthsaini.github.io/BrightVQ/

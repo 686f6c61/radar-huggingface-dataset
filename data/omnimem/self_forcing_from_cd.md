@@ -85,5 +85,5 @@ No disponible la comparacion con modelos externos por falta de datos de rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/omnimem/self_forcing_from_cd
+- Hugging Face: https://huggingface.co/omnimem/self_forcing_from_cd
 - Checkpoint derivado: https://huggingface.co/omnimem/long_rolling_plain_from_cd

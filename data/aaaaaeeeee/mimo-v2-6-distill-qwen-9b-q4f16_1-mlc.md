@@ -96,7 +96,7 @@ Los datos de parametros, contexto y licencia de las alternativas de la serie MiM
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/aaaaaeeeee/MiMo-V2.6-Distill-Qwen-9B-q4f16_1-MLC
+- Repositorio de Hugging Face: https://huggingface.co/aaaaaeeeee/MiMo-V2.6-Distill-Qwen-9B-q4f16_1-MLC
 - Pagina oficial de MiMo-V2.6 (Xiaomi): https://mimo.xiaomi.com/mimo-v2-6
 - Notas de la version 2.6 en la documentacion de Xiaomi MiMo: https://mimo.mi.com/docs/en-US/news/latest/v2-6
 - Analisis de la publicacion de la version GGUF: https://localmodelwatch.tsuchitsuchi.com/en/2026/09/22/mimo-v2-6-distill-qwen-9b-gguf/

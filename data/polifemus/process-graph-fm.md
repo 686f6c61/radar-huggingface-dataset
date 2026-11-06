@@ -81,9 +81,9 @@ El propio autor advierte que se trata de una sola semilla y de un entrenamiento 
 
 | Modelo | Parametros | Enfoque | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Process-Graph-FM (`gfm-sc27`) | 27,28 M | Grafo (GINEConv + GPSConv) | no disponible (grafos de prefijo) | MIT | HuggingFace |
-| `sc27` (modelo de secuencia, `Polifemus/process-fm`) | no disponible | Secuencia | no disponible | no disponible en la informacion | HuggingFace |
-| Estudio GNN vs transformer (`Polifemus/prefix-next-activity`) | no disponible | GNN vs transformer ajustado | no disponible | no disponible en la informacion | HuggingFace |
+| Process-Graph-FM (`gfm-sc27`) | 27,28 M | Grafo (GINEConv + GPSConv) | no disponible (grafos de prefijo) | MIT | Hugging Face |
+| `sc27` (modelo de secuencia, `Polifemus/process-fm`) | no disponible | Secuencia | no disponible | no disponible en la informacion | Hugging Face |
+| Estudio GNN vs transformer (`Polifemus/prefix-next-activity`) | no disponible | GNN vs transformer ajustado | no disponible | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos suficientes para comparar con modelos de terceros de la misma categoria.
 
@@ -102,7 +102,7 @@ No se dispone de datos suficientes para comparar con modelos de terceros de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Polifemus/process-graph-fm
+- Modelo en Hugging Face: https://huggingface.co/Polifemus/process-graph-fm
 - Dataset sintetico: https://huggingface.co/datasets/Polifemus/event-log-mixer
 - Repositorio de modelos de secuencia: https://huggingface.co/Polifemus/process-fm
 - Estudio GNN vs transformer: https://huggingface.co/Polifemus/prefix-next-activity

@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jy395/Meta-Llama-3.1-8B-Instruct-awq-w4a16-c3 | 8B (1.984.696.768 almacenados) | no disponible (base: 128k) | AWQ W4A16 | Llama 3.1 | HuggingFace, 19 descargas |
-| meta-llama/Meta-Llama-3.1-8B-Instruct | 8B | 128.000 tokens | FP16/BF16 | Llama 3.1 | HuggingFace, ampliamente usado |
-| Otras configuraciones de la coleccion ICAIF '26 | 8B | no disponible | distintas (30 variantes) | Llama 3.1 | HuggingFace (coleccion jy395) |
+| jy395/Meta-Llama-3.1-8B-Instruct-awq-w4a16-c3 | 8B (1.984.696.768 almacenados) | no disponible (base: 128k) | AWQ W4A16 | Llama 3.1 | Hugging Face, 19 descargas |
+| meta-llama/Meta-Llama-3.1-8B-Instruct | 8B | 128.000 tokens | FP16/BF16 | Llama 3.1 | Hugging Face, ampliamente usado |
+| Otras configuraciones de la coleccion ICAIF '26 | 8B | no disponible | distintas (30 variantes) | Llama 3.1 | Hugging Face (coleccion jy395) |
 
 La comparacion directa con alternativas cuantizadas de otros autores (por ejemplo, versiones GPTQ o AWQ genericas de Llama 3.1 8B) no esta disponible en la informacion proporcionada; la diferencia principal de esta ficha es la calibracion especifica en dominio financiero.
 
@@ -84,7 +84,7 @@ La comparacion directa con alternativas cuantizadas de otros autores (por ejempl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jy395/Meta-Llama-3.1-8B-Instruct-awq-w4a16-c3
+- Modelo en Hugging Face: https://huggingface.co/jy395/Meta-Llama-3.1-8B-Instruct-awq-w4a16-c3
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Repositorio del proyecto: https://github.com/JunyiYe/finance-ptc-calibration
 - Script de cuantizacion: https://github.com/JunyiYe/finance-ptc-calibration/blob/main/scripts/quantization/awq_w4a16.py

@@ -27,7 +27,7 @@ Su relevancia es acotada pero clara: permite reproducir una identidad o concepto
 | Tamaño del repositorio | 0,4 GB |
 | Pipeline declarado | text-to-image |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación (según HuggingFace) | 2026-10-06 |
+| Fecha de creación (según Hugging Face) | 2026-10-06 |
 
 ## Arquitectura y entrenamiento
 
@@ -76,9 +76,9 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base que 
 
 | Modelo | Tipo | Modelo base | Contexto / condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `guillekenzo/aros-31a88dee-CosmicFalcon` | LoRA DreamBooth text-to-image | `krea/Krea-2-Raw` | prompt de texto; sin límite documentado | apache-2.0 (adaptador) | HuggingFace, 0 descargas |
-| `krea/Krea-2-Raw` | modelo de difusión text-to-image completo | no aplica | prompt de texto; no disponible | no especificada en la información disponible | HuggingFace |
-| `krea/Krea-2-Turbo` | modelo de difusión text-to-image destilado | no aplica | prompt de texto; no disponible | no especificada en la información disponible | HuggingFace |
+| `guillekenzo/aros-31a88dee-CosmicFalcon` | LoRA DreamBooth text-to-image | `krea/Krea-2-Raw` | prompt de texto; sin límite documentado | apache-2.0 (adaptador) | Hugging Face, 0 descargas |
+| `krea/Krea-2-Raw` | modelo de difusión text-to-image completo | no aplica | prompt de texto; no disponible | no especificada en la información disponible | Hugging Face |
+| `krea/Krea-2-Turbo` | modelo de difusión text-to-image destilado | no aplica | prompt de texto; no disponible | no especificada en la información disponible | Hugging Face |
 | Otros adaptadores LoRA de personaje sobre Krea 2 | LoRA DreamBooth | `krea/Krea-2-Raw` | prompt de texto | variable | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,12 +91,12 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base que 
 - Uso de la imagen de una persona: si el concepto representa a una persona real, su uso puede vulnerar derechos de imagen, la normativa de protección de datos y la legislación europea sobre contenidos sintéticos. No se aporta ninguna declaración de consentimiento.
 - Licencia: el adaptador se publica bajo apache-2.0, pero esa licencia no cubre el modelo base, cuya licencia no se especifica en la información disponible. Antes de un uso comercial hay que verificar los términos de `krea/Krea-2-Raw` y `krea/Krea-2-Turbo`.
 - Falta de validación externa: 0 descargas y 0 likes implican que no existe contraste de la comunidad ni resultados reproducidos por terceros.
-- Trazabilidad temporal: la fecha de creación indicada en HuggingFace (2026-10-06) es posterior a la fecha habitual de análisis, lo que conviene tener en cuenta al citar el modelo.
+- Trazabilidad temporal: la fecha de creación indicada en Hugging Face (2026-10-06) es posterior a la fecha habitual de análisis, lo que conviene tener en cuenta al citar el modelo.
 - Ajuste de inferencia restringido: las muestras se generaron con `guidance_scale=0.0`; usar valores distintos puede degradar el resultado y no hay indicaciones del autor al respecto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guillekenzo/aros-31a88dee-CosmicFalcon
+- Modelo en Hugging Face: https://huggingface.co/guillekenzo/aros-31a88dee-CosmicFalcon
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base de inferencia (Turbo): https://huggingface.co/krea/Krea-2-Turbo
 - Paper, blog técnico, repositorio de código o demo: no disponible en la información proporcionada.

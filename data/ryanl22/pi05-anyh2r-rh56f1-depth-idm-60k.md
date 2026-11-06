@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| pi05-anyh2r-rh56f1-depth-idm-60k | 4.143.404.816 | no disponible | Apache-2.0 | HuggingFace | Ajuste fino para OpenArm RH56F1, acciones sinteticas con DepthAnything v2 |
-| pi05-anyh2r-rh56f1-stereo-idm-60k | no disponible | no disponible | no disponible | HuggingFace | Mismo autor y configuracio, difiere en las etiquetas sinteticas (solo estereo) |
-| lerobot/pi05_base | no disponible | no disponible | no disponible | HuggingFace | Modelo base general de pi0.5, sobre el que se realiza el ajuste fino |
+| pi05-anyh2r-rh56f1-depth-idm-60k | 4.143.404.816 | no disponible | Apache-2.0 | Hugging Face | Ajuste fino para OpenArm RH56F1, acciones sinteticas con DepthAnything v2 |
+| pi05-anyh2r-rh56f1-stereo-idm-60k | no disponible | no disponible | no disponible | Hugging Face | Mismo autor y configuracio, difiere en las etiquetas sinteticas (solo estereo) |
+| lerobot/pi05_base | no disponible | no disponible | no disponible | Hugging Face | Modelo base general de pi0.5, sobre el que se realiza el ajuste fino |
 
 ## Limitaciones y advertencias
 

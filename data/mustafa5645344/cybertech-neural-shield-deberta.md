@@ -61,12 +61,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: aproximadamente 0,7 GB en precision FP32, menos de 0,4 GB en FP16 o int8. El modelo es ligero y cabe en cualquier GPU moderna, incluso en tarjetas de gama de entrada.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Tarjetas como NVIDIA GTX 1650, RTX 3050 o superiores son mas que adecuadas. Tambien puede ejecutarse en CPU con razonable rendimiento.
 - Compatibilidad con consumer GPU: si, el modelo es compatible con cualquier GPU de consumo actual.
-- Opciones de despliegue: el modelo se carga mediante la libreria Transformers de HuggingFace, por lo que puede desplegarse con herramientas como HuggingFace Inference Endpoints, FastAPI con TorchServe, o en frameworks de servicio como Triton Inference Server. Al ser un modelo de clasificacion pequeno, no requiere herramientas especializadas como vLLM o TGI.
+- Opciones de despliegue: el modelo se carga mediante la libreria Transformers de Hugging Face, por lo que puede desplegarse con herramientas como Hugging Face Inference Endpoints, FastAPI con TorchServe, o en frameworks de servicio como Triton Inference Server. Al ser un modelo de clasificacion pequeno, no requiere herramientas especializadas como vLLM o TGI.
 - Latencia y throughput estimados: no se proporcionan datos oficiales, pero para un modelo de 184M de parametros con secuencias de hasta 512 tokens, la latencia en GPU moderna suele ser inferior a 10 ms por peticion, y en CPU de gama alta, inferior a 100 ms.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre modelos comparables en la documentacion proporcionada. Existen otros clasificadores de deteccion de inyeccion de prompts en HuggingFace, como los basados en RoBERTa o DistilBERT, pero no se pueden establecer comparaciones rigurosas sin datos de benchmarks comunes.
+No se dispone de informacion sobre modelos comparables en la documentacion proporcionada. Existen otros clasificadores de deteccion de inyeccion de prompts en Hugging Face, como los basados en RoBERTa o DistilBERT, pero no se pueden establecer comparaciones rigurosas sin datos de benchmarks comunes.
 
 ## Limitaciones y advertencias
 
@@ -79,5 +79,5 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mustafa5645344/cybertech-neural-shield-deberta
+- Modelo en Hugging Face: https://huggingface.co/Mustafa5645344/cybertech-neural-shield-deberta
 - Modelo base DeBERTa-v3: https://huggingface.co/microsoft/deberta-v3-base

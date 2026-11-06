@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: con 50,9B parametros en bfloat16 (2 bytes por parametro), el peso del modelo ocupa aproximadamente 101,8 GB. En FP8 (1 byte) serian unos 50,9 GB, y en cuantizacion de 4 bits unos 25,4 GB.
 - GPU recomendadas: para bfloat16 completo se necesitarian multiples GPUs de alta capacidad, por ejemplo 2x A100 80GB o 2x H100 80GB. Para FP8, una H100 80GB podria ser suficiente. Para cuantizacion 4 bits, una RTX 4090 (24GB) no es suficiente; se necesitarian al menos 32GB de VRAM, como una A6000 o A100 40GB.
 - En consumer GPU: no cabe en GPUs de consumo habitual (24GB o menos) incluso con cuantizacion agresiva; se requiere hardware profesional o servidores.
-- Opciones de despliegue: no se especifica compatibilidad con vLLM, llama.cpp, Ollama o TGI. Dado que el modelo usa arquitectura personalizada (dual-track con Gated Delta Net), es probable que requiera codigo de inferencia propio o adaptaciones significativas. El tag `custom_code` en HuggingFace sugiere que se necesita codigo personalizado para cargar el modelo.
+- Opciones de despliegue: no se especifica compatibilidad con vLLM, llama.cpp, Ollama o TGI. Dado que el modelo usa arquitectura personalizada (dual-track con Gated Delta Net), es probable que requiera codigo de inferencia propio o adaptaciones significativas. El tag `custom_code` en Hugging Face sugiere que se necesita codigo personalizado para cargar el modelo.
 - Latencia y throughput: no disponibles. La pista lineal ofrece O(1) por token, pero la pista completa introduce complejidad O(n²) en las 16 capas correspondientes, por lo que el rendimiento dependera fuertemente de la longitud de la secuencia y de la implementacion.
 
 ## Comparativa con modelos similares
@@ -87,6 +87,6 @@ No se dispone de comparativas publicadas con otros modelos. Por tamaño y contex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/scrapegoat/butterfly-tipping-point-50B
+- Hugging Face: https://huggingface.co/scrapegoat/butterfly-tipping-point-50B
 - GitHub (referenciado en la model card): https://github.com/scrapegoat/butterfly-tipping-point
 - Articulo arXiv 2501.12599 (Gated Delta Net, base de la pista lineal): https://arxiv.org/abs/2501.12599

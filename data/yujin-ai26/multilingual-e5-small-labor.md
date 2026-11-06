@@ -104,7 +104,7 @@ La comparación directa de rendimiento con el modelo base no está disponible: e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yujin-ai26/multilingual-e5-small-labor
+- Modelo en Hugging Face: https://huggingface.co/yujin-ai26/multilingual-e5-small-labor
 - Dataset de entrenamiento: https://huggingface.co/datasets/yujin-ai26/labor-embedding-data
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Repositorio de sentence-transformers: https://github.com/UKPLab/sentence-transformers

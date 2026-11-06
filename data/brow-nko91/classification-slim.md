@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`brow-nko91/classification-slim` es un repositorio de HuggingFace que contiene una implementación personalizada y compacta en PyTorch de una arquitectura denominada Mae, orientada a tareas de clasificación. El autor es el usuario brow-nko91 y el artefacto principal es el fichero `train.py`, acompañado de un `config.json`, un `training_args.json` y un checkpoint de inicialización `model.safetensors`. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe explícitamente como material para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
+`brow-nko91/classification-slim` es un repositorio de Hugging Face que contiene una implementación personalizada y compacta en PyTorch de una arquitectura denominada Mae, orientada a tareas de clasificación. El autor es el usuario brow-nko91 y el artefacto principal es el fichero `train.py`, acompañado de un `config.json`, un `training_args.json` y un checkpoint de inicialización `model.safetensors`. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe explícitamente como material para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
 
 El dato más llamativo es su tamaño: el recuento real de parámetros en safetensors es de 49.600, es decir, unas 49,6 mil parámetros. Esto lo sitúa varios órdenes de magnitud por debajo de cualquier modelo de lenguaje convencional y sugiere una arquitectura de juguete o un esqueleto mínimo pensado para validar el pipeline de entrenamiento, no para resolver tareas reales. La configuración declarada indica escala "large", atención multi-query, fusión tipo tucker, activación approx gelu y normalización rmsnorm.
 
@@ -77,5 +77,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/brow-nko91/classification-slim
+- Repositorio en Hugging Face: https://huggingface.co/brow-nko91/classification-slim
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos.

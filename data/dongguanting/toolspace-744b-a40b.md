@@ -89,7 +89,7 @@ Dentro de su propia familia, ToolSpace-744B-A40B es la variante de máximo rendi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dongguanting/ToolSpace-744B-A40B
+- Modelo en Hugging Face: https://huggingface.co/dongguanting/ToolSpace-744B-A40B
 - Checkpoint oficial de referencia (Atria-Dawn): https://huggingface.co/internlm/Atria-Dawn
 - Guía de despliegue oficial: https://huggingface.co/internlm/Atria-Dawn#-deployment--online-access
 - Código del proyecto (GitHub): https://github.com/dongguanting/ToolSpace

@@ -110,6 +110,6 @@ Penny 1 no es un modelo generativo comparable en tareas abiertas: su ventaja es 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pocketsflow/penny-1
+- Hugging Face: https://huggingface.co/pocketsflow/penny-1
 - Página de investigación (paper, gráficas y playground): https://www.pocketsflow.com/research/penny
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B

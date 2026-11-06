@@ -94,5 +94,5 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rabbit1906/MLRabbit-27B-LoRA
+- Repositorio Hugging Face: https://huggingface.co/rabbit1906/MLRabbit-27B-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

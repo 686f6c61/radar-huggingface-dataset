@@ -84,10 +84,10 @@ La comparación directa con modelos de la misma categoría (por ejemplo, Llama-3
 - Riesgo de alucinación no cuantificado en la información proporcionada; la compresión puede acentuarlo en dominios especializados.
 - Idiomas soportados no documentados en esta ficha; se heredan del modelo base, pero su comportamiento tras la compresión no está verificado.
 - Licencia Apache 2.0 permite uso comercial del artefacto, pero el autor advierte que no debe tratarse como un asistente listo para producción sin evaluación propia.
-- La fecha de creación indicada (2026-11-04) es la reportada por HuggingFace; verificar su coherencia antes de citarla.
+- La fecha de creación indicada (2026-11-04) es la reportada por Hugging Face; verificar su coherencia antes de citarla.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-q32_svdllm_r20
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-q32_svdllm_r20
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios o demos adicionales.

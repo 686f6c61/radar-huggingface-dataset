@@ -102,7 +102,7 @@ No se dispone de comparaciones con otras familias de modelos (por ejemplo, otras
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Radioheading/Kimi-K3-W4AFP8
+- Repositorio Hugging Face: https://huggingface.co/Radioheading/Kimi-K3-W4AFP8
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3
 - Cuantización de referencia en el mismo formato: https://huggingface.co/vessl/Kimi-K3-W4AFP8
 - Modelo borrador para decodificación especulativa: https://huggingface.co/RadixArk/Kimi-K3-DSpark

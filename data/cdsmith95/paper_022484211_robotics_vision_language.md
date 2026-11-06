@@ -61,7 +61,7 @@ No disponible. Al no tratarse de un modelo con parámetros o capacidades de infe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Cdsmith95/paper_022484211_robotics_vision_language
+- Repositorio Hugging Face: https://huggingface.co/Cdsmith95/paper_022484211_robotics_vision_language
 - Encuesta sobre modelos visión-lenguaje-acción para IA encarnada: https://arxiv.org/abs/2405.14093
 - Encuesta sobre visión-lenguaje-acción en robótica (datasets y benchmarks): https://arxiv.org/abs/2604.23001
 - Revisión de visión por computador e IA en robótica colaborativa: https://www.mdpi.com/2076-3417/15/14/7905

@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| p0pc0rn-voicein-nemotron35-asr-06b | 0,6 B | No disponible | `pocketflux.pack/1` (8 bits) | OpenMDW-1.1 | HuggingFace, solo para p0pc0rn |
-| nvidia/nemotron-3.5-asr-streaming-0.6b | 0,6 B | No disponible | Pesos originales de NVIDIA | OpenMDW-1.1 | HuggingFace (modelo base) |
+| p0pc0rn-voicein-nemotron35-asr-06b | 0,6 B | No disponible | `pocketflux.pack/1` (8 bits) | OpenMDW-1.1 | Hugging Face, solo para p0pc0rn |
+| nvidia/nemotron-3.5-asr-streaming-0.6b | 0,6 B | No disponible | Pesos originales de NVIDIA | OpenMDW-1.1 | Hugging Face (modelo base) |
 | Alternativas de ASR de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La única comparación documentada es con el modelo base del que deriva; no se dispone de datos de rendimiento comparado con otras alternativas de ASR en streaming.
@@ -82,7 +82,7 @@ La única comparación documentada es con el modelo base del que deriva; no se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoshHughes/p0pc0rn-voicein-nemotron35-asr-06b
+- Modelo en Hugging Face: https://huggingface.co/JoshHughes/p0pc0rn-voicein-nemotron35-asr-06b
 - Modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
 - Aplicación p0pc0rn: https://artistjoshhughes.github.io/p0pc0rn/

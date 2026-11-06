@@ -4,7 +4,7 @@
 
 PG-Personalization-ckpt es el repositorio de checkpoints y artefactos de evaluación del proyecto PG-Personalization, publicado por el usuario LafouCC. No se trata de un modelo de lenguaje convencional, sino de un *parameter generator* (PG): una hiperred compartida que, en una única pasada forward, mapea el historial de un usuario a una LoRA específica de ese usuario sobre un backbone Qwen2.5-7B-Instruct congelado. El objetivo es la personalización estricta sin fine-tuning por usuario y sin optimización en tiempo de inferencia.
 
-El repositorio empaqueta varias "armas" de entrenamiento: dos variantes entrenadas sobre el corpus P2P de 10 tareas (t9_v5o2 con pérdida de gap y t9_v5o3 sin ella, como ablación), una variante entrenada sobre episodios de reseñas de Amazon-2023 (t10_a23_v5o3), los adaptadores compartidos (`G` y `G`-ctrl) sobre los que el PG opera como residual, y un directorio `eval/` con predicciones, pruebas de transferencia, informes de geometría y sondas de enrutamiento. El tamaño declarado del repositorio en la página de HuggingFace es de 1468,2 GB, aunque la model card solo detalla del orden de 6,6 GB en artefactos publicados.
+El repositorio empaqueta varias "armas" de entrenamiento: dos variantes entrenadas sobre el corpus P2P de 10 tareas (t9_v5o2 con pérdida de gap y t9_v5o3 sin ella, como ablación), una variante entrenada sobre episodios de reseñas de Amazon-2023 (t10_a23_v5o3), los adaptadores compartidos (`G` y `G`-ctrl) sobre los que el PG opera como residual, y un directorio `eval/` con predicciones, pruebas de transferencia, informes de geometría y sondas de enrutamiento. El tamaño declarado del repositorio en la página de Hugging Face es de 1468,2 GB, aunque la model card solo detalla del orden de 6,6 GB en artefactos publicados.
 
 Su relevancia es de investigación: demuestra que una condición derivada del historial del usuario mueve de forma medible las métricas frente a condiciones aleatorizadas o eliminadas, y documenta con precisión los detalles de reproducibilidad (configuración de arquitectura, `merge_id` del backbone fusionado y corpus no público) que suelen quedar fuera de las publicaciones de este tipo.
 
@@ -83,7 +83,7 @@ Métricas adicionales reportadas: geometría de `t9_v5o2` con rango efectivo 6,0
 - Compatibilidad con GPU de consumo: no disponible. El backbone de 7B en cuantización baja cabría teóricamente en RTX 4090 o similares, pero no se documenta ningún camino de cuantización para este artefacto.
 - Opciones de despliegue: scripts propios del repositorio de código (`scripts/merge_shared_lora.py`, `scripts/eval_pg.py`, `scripts/drift_test/eval_pg_temporal.py`) con `torchrun`. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
-- El repositorio declara un tamaño de 1468,2 GB en la página de HuggingFace, muy superior a la suma de artefactos descritos en la model card (~6,6 GB). Conviene verificar el espacio en disco antes de descargar.
+- El repositorio declara un tamaño de 1468,2 GB en la página de Hugging Face, muy superior a la suma de artefactos descritos en la model card (~6,6 GB). Conviene verificar el espacio en disco antes de descargar.
 
 ## Comparativa con modelos similares
 
@@ -117,7 +117,7 @@ Como referencia externa, la vía convencional sería un fine-tuning LoRA por usu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LafouCC/PG-Personalization-ckpt
+- Hugging Face: https://huggingface.co/LafouCC/PG-Personalization-ckpt
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de código: la model card referencia `https://github.com/…/PG-Personalization`, con la ruta del propietario truncada; el enlace completo no está disponible en la información proporcionada.
 - Dataset público de referencia, no equivalente al usado en el entrenamiento: https://huggingface.co/datasets/Zhaoxuan/P2P_data

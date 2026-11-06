@@ -4,7 +4,7 @@
 
 El repositorio `robi-nson/data-efficient-learning-review` no es un modelo de IA funcional, sino un conjunto de notas de investigación y un esquema experimental sobre aprendizaje eficiente en datos (`data efficient learning`). Fue creado por el usuario `robi-nson` el 4 de septiembre de 2026 y publicado bajo licencia MIT. El contenido principal es `reading.md`, una nota exploratoria que define el alcance de la pregunta de investigación, confusores probables, una comparación propuesta con baselines equiparados y criterios de reproducibilidad. No incluye código, checkpoints entrenados ni resultados de benchmarks.
 
-A pesar de que el repositorio está etiquetado en HuggingFace con los tags `transformer`, `safetensors` y `research-notes`, no existe arquitectura de modelo ni pesos de inferencia. Los 16.576 parámetros que se registran en el tensor de safetensors no corresponden a un modelo entrenado, sino a un artefacto mínimo dentro de las notas. El autor advierte explícitamente que las secciones de hipótesis no deben interpretarse como resultados experimentales.
+A pesar de que el repositorio está etiquetado en Hugging Face con los tags `transformer`, `safetensors` y `research-notes`, no existe arquitectura de modelo ni pesos de inferencia. Los 16.576 parámetros que se registran en el tensor de safetensors no corresponden a un modelo entrenado, sino a un artefacto mínimo dentro de las notas. El autor advierte explícitamente que las secciones de hipótesis no deben interpretarse como resultados experimentales.
 
 La relevancia de este repositorio es únicamente académica o metodológica: puede servir como punto de partida para diseñar un estudio riguroso sobre eficiencia de datos, pero no ofrece un modelo desplegable para ninguna tarea de IA generativa.
 
@@ -79,7 +79,7 @@ No disponible. No existe ningún modelo comparable dentro de esta categoría, po
 - Ausencia de reproducibilidad: no se incluyen seeds, comandos, hardware ni logs de experimentos. Cualquier resultado futuro debería incluirlos.
 - Licencia MIT: permite uso comercial y modificación, pero no aplica a ningún artefacto de modelo porque no existe. Hay que revisar los términos de los datasets externos si se usan con el contenido.
 - Sin benchmarks: no hay datos de rendimiento, por lo que no se puede evaluar la calidad de nada.
-- Metadatos ambiguos: la etiqueta `transformer` en HuggingFace puede llevar a confusión, pero no hay arquitectura transformador implementada en el repositorio.
+- Metadatos ambiguos: la etiqueta `transformer` en Hugging Face puede llevar a confusión, pero no hay arquitectura transformador implementada en el repositorio.
 
 ## Enlaces
 

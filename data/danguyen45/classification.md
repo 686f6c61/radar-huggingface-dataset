@@ -23,7 +23,7 @@ La relevancia de este repositorio es principalmente didáctica o de desarrollo: 
 
 La arquitectura declarada en la model card es Flamingo, con atención dilatada (dilated attention), fusión por co-atención (co-attention fusion), activación approx gelu y normalización ScaleNorm. La escala se etiqueta como "giant", aunque con 24.832 parámetros el tamaño real es insignificante; esa etiqueta parece referirse a la configuración de bloques prevista para una versión completa, no al checkpoint publicado. El repositorio incluye `config.json` con la configuración de arquitectura generada y `training_args.json` con una receta experimental por defecto (optimizador AdamW y programación de calentamiento lineal), pero el autor advierte que son valores iniciales del script, no evidencia de un entrenamiento completado.
 
-El checkpoint `model.safetensors` es una inicialización válida para pruebas de humo. No se ha realizado ningún entrenamiento real, por lo que no existen pesos aprendidos ni datos de entrenamiento asociados. La implementación es personalizada y requiere un adaptador explícito para cargarse mediante APIs genéricas de HuggingFace.
+El checkpoint `model.safetensors` es una inicialización válida para pruebas de humo. No se ha realizado ningún entrenamiento real, por lo que no existen pesos aprendidos ni datos de entrenamiento asociados. La implementación es personalizada y requiere un adaptador explícito para cargarse mediante APIs genéricas de Hugging Face.
 
 ## Capacidades
 
@@ -68,6 +68,6 @@ No disponible. No existen modelos comparables en la misma categoría, ya que se 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danguyen45/classification
+- Repositorio en Hugging Face: https://huggingface.co/danguyen45/classification
 - Perfil del autor: https://huggingface.co/danguyen45
 - Lista de modelos del autor: https://huggingface.co/danguyen45/models

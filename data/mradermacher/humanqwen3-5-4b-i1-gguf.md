@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HumanQwen3.5-4B (este repo, GGUF) | ~4B (no confirmado) | no disponible | no disponible | HuggingFace |
-| Qwen2.5-3B-Instruct | 3,09B | 32.768 | Apache 2.0 | HuggingFace, GGUF oficiales |
-| Llama 3.2 3B Instruct | 3,21B | 131.072 | Llama 3.2 Community License | HuggingFace, GGUF oficiales |
-| Phi-3.5-mini-instruct | 3,82B | 131.072 | MIT | HuggingFace, GGUF oficiales |
+| HumanQwen3.5-4B (este repo, GGUF) | ~4B (no confirmado) | no disponible | no disponible | Hugging Face |
+| Qwen2.5-3B-Instruct | 3,09B | 32.768 | Apache 2.0 | Hugging Face, GGUF oficiales |
+| Llama 3.2 3B Instruct | 3,21B | 131.072 | Llama 3.2 Community License | Hugging Face, GGUF oficiales |
+| Phi-3.5-mini-instruct | 3,82B | 131.072 | MIT | Hugging Face, GGUF oficiales |
 
 La comparativa se ofrece como referencia de categoria (modelos ~3-4B), ya que no hay datos de rendimiento del modelo evaluado.
 
@@ -81,5 +81,5 @@ La comparativa se ofrece como referencia de categoria (modelos ~3-4B), ya que no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/HumanQwen3.5-4B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/HumanQwen3.5-4B-i1-GGUF
 - Modelo base: https://huggingface.co/Thermostatic/HumanQwen3.5-4B

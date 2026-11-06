@@ -2,7 +2,7 @@
 
 ## Resumen
 
-povl-opd-scale05 es un checkpoint de reconocimiento de tablas y parseo de documentos desarrollado por el usuario CheneyWong (CheneyWong/povl-opd-scale05 en HuggingFace). Se trata de un modelo vision-lenguaje de tipo image-text-to-text que recibe una imagen de tabla y devuelve su estructura en marcado OTSL (etiquetas `<fcel>`, `<ecel>`, `<ucel>`, `<lcel>`, `<xcel>`, `<nl>`). Con 905.601.648 parametros (unos 906 millones) y un repositorio de 1,8 GB, es un modelo de escala media, disenable en GPU de consumo.
+povl-opd-scale05 es un checkpoint de reconocimiento de tablas y parseo de documentos desarrollado por el usuario CheneyWong (CheneyWong/povl-opd-scale05 en Hugging Face). Se trata de un modelo vision-lenguaje de tipo image-text-to-text que recibe una imagen de tabla y devuelve su estructura en marcado OTSL (etiquetas `<fcel>`, `<ecel>`, `<ucel>`, `<lcel>`, `<xcel>`, `<nl>`). Con 905.601.648 parametros (unos 906 millones) y un repositorio de 1,8 GB, es un modelo de escala media, disenable en GPU de consumo.
 
 El checkpoint procede de una destilacion on-policy (OPD) sobre PaddleOCR-VL-1.6, con el delta de peso del profesor fusionado sobre la base SFT `CheneyWong/povl-sft-2d-merge` aplicando un factor de escala extra de 0,5, que resulto ser el mejor punto de un barrido de alpha (0,25 -> +0,32; 0,5 -> +0,44; 0,75 -> -0,29; 1,5 -> -3,01).
 
@@ -21,7 +21,7 @@ Su relevancia es sobre todo metodologica y de trazabilidad experimental: la prop
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors, con `custom_code` (requiere `trust_remote_code` en transformers) |
 
-Otros datos de la ficha de HuggingFace: pipeline `image-text-to-text`, libreria `transformers`, tags `paddleocr_vl`, `table-recognition`, `document-parsing`, `otvl`, `conversational`, `endpoints_compatible`, 8 descargas y 0 likes en el momento de la consulta.
+Otros datos de la ficha de Hugging Face: pipeline `image-text-to-text`, libreria `transformers`, tags `paddleocr_vl`, `table-recognition`, `document-parsing`, `otvl`, `conversational`, `endpoints_compatible`, 8 descargas y 0 likes en el momento de la consulta.
 
 ## Arquitectura y entrenamiento
 
@@ -94,7 +94,7 @@ Comparativa dentro del propio linaje del proyecto, con los datos publicados en l
 
 | Modelo | Parametros | Contexto | TEDS global (peso igual) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| povl-opd-scale05 | 905.601.648 | No disponible | 0,8474 | Apache-2.0 | HuggingFace (CheneyWong/povl-opd-scale05) |
+| povl-opd-scale05 | 905.601.648 | No disponible | 0,8474 | Apache-2.0 | Hugging Face (CheneyWong/povl-opd-scale05) |
 | PaddleOCR-VL-1.6 (base sin modificar) | No disponible | No disponible | 0,8395 | No disponible en la informacion | Base de referencia |
 | Checkpoint RL (ronda 2) | No disponible | No disponible | No disponible (la card indica que este checkpoint esta +0,05 pt por encima, dentro del ruido) | No disponible | Referenciado en la card |
 | CheneyWong/povl-sft-2d-merge | No disponible | No disponible | No disponible | No disponible | Base SFT del linaje |
@@ -118,7 +118,7 @@ Alternativas de terceros para reconocimiento de tablas: no disponible. La inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CheneyWong/povl-opd-scale05
+- Modelo en Hugging Face: https://huggingface.co/CheneyWong/povl-opd-scale05
 - Perfil de GitHub del autor: https://github.com/cheneyxwong/
 - Paper relacionado (destilacion on-policy visual, OPD-V): https://arxiv.org/abs/2608.05131
 - Paper relacionado (GFD-OPD, destilacion on-policy en difusion): https://arxiv.org/abs/2609.39692

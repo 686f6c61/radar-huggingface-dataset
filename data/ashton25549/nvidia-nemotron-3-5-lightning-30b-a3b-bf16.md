@@ -72,7 +72,7 @@ No se dispone de datos de benchmarks comparativos en la información proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace (este repo): https://huggingface.co/ashton25549/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
+- Repositorio Hugging Face (este repo): https://huggingface.co/ashton25549/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Repositorio oficial de NVIDIA (versión BF16): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Versión NVFP4 (inferencia optimizada): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
 - Versión GGUF (para dispositivos locales): https://huggingface.co/ggml-org/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF

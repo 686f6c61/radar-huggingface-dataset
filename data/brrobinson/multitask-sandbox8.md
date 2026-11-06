@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`brrobinson/multitask-sandbox8` es un prototipo de investigación de arquitectura **Coca** orientado a tareas multitarea, publicado por el usuario brrobinson en HuggingFace. Se trata de un repositorio experimental que documenta una implementación personalizada de un modelo con atención dilatada, fusión tipo Tucker, activación Mish y normalización por lotes, bajo una escala denominada "giant". El checkpoint incluido (`model.safetensors`) es únicamente una inicialización válida para pruebas de humo, no un modelo entrenado con resultados verificados.
+`brrobinson/multitask-sandbox8` es un prototipo de investigación de arquitectura **Coca** orientado a tareas multitarea, publicado por el usuario brrobinson en Hugging Face. Se trata de un repositorio experimental que documenta una implementación personalizada de un modelo con atención dilatada, fusión tipo Tucker, activación Mish y normalización por lotes, bajo una escala denominada "giant". El checkpoint incluido (`model.safetensors`) es únicamente una inicialización válida para pruebas de humo, no un modelo entrenado con resultados verificados.
 
 El modelo tiene 24.832 parámetros en total, un tamaño extremadamente reducido que lo aleja de cualquier uso práctico en producción. Su propósito declarado es servir como punto de partida para investigación: el autor proporciona un script de inferencia (`inference.py`), una configuración de arquitectura (`config.json`) y una receta de entrenamiento por defecto (`training_args.json`) con el optimizador Novograd y un programa de calentamiento lineal. No se reivindica ningún rendimiento ni se aportan métricas de evaluación.
 
@@ -44,7 +44,7 @@ Dado que el modelo no está entrenado, no existen casos de uso prácticos reales
 
 - **Investigación de arquitecturas**: el repositorio sirve como base para estudiar la combinación de atención dilatada, fusión Tucker y normalización BatchNorm en un contexto multitarea. Un investigador podría clonar el código, modificarlo y entrenarlo con sus propios datos.
 - **Pruebas de integración**: el script `inference.py` permite verificar que el pipeline de carga y ejecución funciona correctamente antes de sustituir el checkpoint por uno entrenado.
-- **Desarrollo de adaptadores**: dado que es una implementación personalizada, los desarrolladores pueden usarlo para crear adaptadores que permitan cargar el modelo con APIs genéricas como HuggingFace Transformers.
+- **Desarrollo de adaptadores**: dado que es una implementación personalizada, los desarrolladores pueden usarlo para crear adaptadores que permitan cargar el modelo con APIs genéricas como Hugging Face Transformers.
 - **Benchmarking de optimizadores**: la configuración con Novograd y warmup lineal puede servir para comparar el comportamiento de diferentes optimizadores en una arquitectura pequeña.
 - **Educación**: por su tamaño reducido, es útil para enseñar conceptos de arquitecturas multimodales o de atención eficiente sin necesidad de hardware potente.
 - **Prototipado rápido**: para validar ideas de diseño antes de escalar a modelos más grandes.
@@ -78,5 +78,5 @@ No disponible. No se conocen modelos comparables con esta arquitectura específi
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/brrobinson/multitask-sandbox8)
+- [Repositorio en Hugging Face](https://huggingface.co/brrobinson/multitask-sandbox8)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos) en la búsqueda web.

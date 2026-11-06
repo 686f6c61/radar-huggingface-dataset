@@ -48,7 +48,7 @@ Los datos de entrenamiento no son un corpus de texto, sino episodios del entorno
 - Generacion de rollouts para investigacion: los episodios generados por la politica pueden usarse como datos de partida para experimentos de RL, filtrado o analisis de errores en tareas de instruccion.
 - Pruebas de infraestructura de despliegue: el repositorio declara compatibilidad con `text-generation-inference` y `endpoints_compatible`, por lo que es util para validar pipelines de serving con modelos de ~2 B antes de escalar a modelos mayores.
 - Ajuste fino posterior sobre tareas de control o planificacion simbolica: al ser un modelo pequeno y ya orientado a decision secuencial, es un candidato razonable para fine-tuning especifico, asumiendo el riesgo de olvido catastrofico.
-- Docencia y divulgacion: ilustra de forma concreta el flujo completo destilacion on-policy -> exportacion a HuggingFace -> evaluacion pendiente, con todos los hiperparametros declarados.
+- Docencia y divulgacion: ilustra de forma concreta el flujo completo destilacion on-policy -> exportacion a Hugging Face -> evaluacion pendiente, con todos los hiperparametros declarados.
 
 ## Benchmarks y rendimiento
 
@@ -65,14 +65,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-Los datos de las alternativas corresponden a lo declarado por sus propios autores en HuggingFace y no han sido verificados para esta ficha; se incluyen como referencia de categoria.
+Los datos de las alternativas corresponden a lo declarado por sus propios autores en Hugging Face y no han sido verificados para esta ficha; se incluyen como referencia de categoria.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep1) | 2,03 B | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes | Checkpoint intermedio de destilacion on-policy sobre BabyAI, sin evaluar |
-| Qwen/Qwen3-1.7B (modelo base) | ~1,7 B (sin embeddings) / ~2,03 B totales | 32.768 tokens declarados por el autor del modelo base, ampliables | Apache 2.0 declarada por el autor del modelo base | HuggingFace, ampliamente distribuido | Modelo generalista con modo thinking; es el punto de partida de este ajuste |
-| Qwen/Qwen3-4B | ~4 B | 32.768 tokens declarados | Apache 2.0 declarada | HuggingFace | Alternativa generalista del mismo fabricante si se necesita mas capacidad sin salir de la familia |
-| Qwen/Qwen3-0.6B | ~0,6 B | 32.768 tokens declarados | Apache 2.0 declarada | HuggingFace | Alternativa mas ligera para entornos con VRAM muy limitada |
+| Este modelo (qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep1) | 2,03 B | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes | Checkpoint intermedio de destilacion on-policy sobre BabyAI, sin evaluar |
+| Qwen/Qwen3-1.7B (modelo base) | ~1,7 B (sin embeddings) / ~2,03 B totales | 32.768 tokens declarados por el autor del modelo base, ampliables | Apache 2.0 declarada por el autor del modelo base | Hugging Face, ampliamente distribuido | Modelo generalista con modo thinking; es el punto de partida de este ajuste |
+| Qwen/Qwen3-4B | ~4 B | 32.768 tokens declarados | Apache 2.0 declarada | Hugging Face | Alternativa generalista del mismo fabricante si se necesita mas capacidad sin salir de la familia |
+| Qwen/Qwen3-0.6B | ~0,6 B | 32.768 tokens declarados | Apache 2.0 declarada | Hugging Face | Alternativa mas ligera para entornos con VRAM muy limitada |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ Los datos de las alternativas corresponden a lo declarado por sus propios autore
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeanWang0027/qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep1
+- Modelo en Hugging Face: https://huggingface.co/SeanWang0027/qwen3-1.7b-babyai-tcod-b2f-qwen3-32b-ep1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Codigo TCOD: repositorio `kokolerk/TCOD` citado por el autor (no se proporciona URL en la informacion disponible).
 - Overlay FutureBridge-OPD sobre trinity-rft: citado por el autor (no se proporciona URL en la informacion disponible).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Reinforce-Cartpole-v1, desarrollado por el usuario roshana1s, es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE para resolver el entorno CartPole-v1 de Gymnasium. El problema consiste en mantener un poste en equilibrio vertical sobre un carro que se desplaza sobre una pista sin friccion, aplicando fuerzas hacia la izquierda o la derecha en cada paso temporal. Se trata de un ejemplo clasico de control continuo y de los primeros ejercicios del curso Deep Reinforcement Learning Course de HuggingFace, concretamente de su Unidad 4.
+El modelo Reinforce-Cartpole-v1, desarrollado por el usuario roshana1s, es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE para resolver el entorno CartPole-v1 de Gymnasium. El problema consiste en mantener un poste en equilibrio vertical sobre un carro que se desplaza sobre una pista sin friccion, aplicando fuerzas hacia la izquierda o la derecha en cada paso temporal. Se trata de un ejemplo clasico de control continuo y de los primeros ejercicios del curso Deep Reinforcement Learning Course de Hugging Face, concretamente de su Unidad 4.
 
 El agente alcanza una recompensa media declarada de 500.00 +/- 0.00 sobre CartPole-v1, que es el valor maximo posible para este entorno (el episodio termina tras 500 pasos). Este resultado supera ampliamente el umbral de resolucion del entorno, que se sitúa en 200 de recompensa media sobre 100 episodios. Sin embargo, el dato no esta verificado (verified: false) y el repositorio tiene un tamano de 0.0 GB, lo que sugiere que no contiene los pesos entrenados del agente.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es principalmente educativa: sirve como referencia 
 
 El agente implementa el algoritmo REINFORCE, un metodo de gradiente de politica propuesto por Williams en 1992. La politica es una red neuronal que mapea las cuatro observaciones del entorno CartPole-v1 (posicion del carro, velocidad del carro, angulo del poste y velocidad angular del poste) a una distribucion de probabilidad sobre las dos acciones disponibles. El entrenamiento se realiza mediante interaccion con el entorno, generando episodios y actualizando la politica con el gradiente del logaritmo de la probabilidad de las acciones tomadas, ponderado por la recompensa acumulada descontada.
 
-El entrenamiento se enmarca en la Unidad 4 del Deep Reinforcement Learning Course de HuggingFace, que introduce los metodos de gradiente de politica. No se especifican detalles del entrenamiento: numero de episodios, tasa de aprendizaje, optimizador, arquitectura exacta de la red ni funcion de descuento. El autor declara una recompensa media de 500.00 +/- 0.00, el maximo posible, pero no se proporciona informacion sobre la variabilidad entre semillas aleatorias ni sobre el proceso de evaluacion.
+El entrenamiento se enmarca en la Unidad 4 del Deep Reinforcement Learning Course de Hugging Face, que introduce los metodos de gradiente de politica. No se especifican detalles del entrenamiento: numero de episodios, tasa de aprendizaje, optimizador, arquitectura exacta de la red ni funcion de descuento. El autor declara una recompensa media de 500.00 +/- 0.00, el maximo posible, pero no se proporciona informacion sobre la variabilidad entre semillas aleatorias ni sobre el proceso de evaluacion.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ El entrenamiento se enmarca en la Unidad 4 del Deep Reinforcement Learning Cours
 - Baseline para comparacion de algoritmos: al ser una politica de gradiente simple, se puede utilizar como punto de partida para comparar REINFORCE contra PPO, DQN, A2C o SAC en el mismo entorno, midiendo la recompensa media y la estabilidad del entrenamiento.
 - Prototipo de controlador de equilibrio: el agente demuestra que una politica de gradiente simple puede resolver un problema de control continuo, sirviendo como inspiracion para sistemas de control de postes o pendulos invertidos en entornos simulados.
 - Analisis de variabilidad entre semillas: dado que REINFORCE es sensible a la semilla aleatoria, el modelo puede usarse para estudiar la varianza de la recompensa media entre entrenamientos y la convergencia del algoritmo.
-- Demo de publicacion de agentes de RL en HuggingFace Hub: muestra el flujo de subida de un modelo de RL con model-index, tags y evaluacion, util para quienes deseen publicar sus propios agentes en el Hub.
+- Demo de publicacion de agentes de RL en Hugging Face Hub: muestra el flujo de subida de un modelo de RL con model-index, tags y evaluacion, util para quienes deseen publicar sus propios agentes en el Hub.
 
 ## Benchmarks y rendimiento
 
@@ -59,7 +59,7 @@ El valor de 500.00 es el maximo posible en CartPole-v1, ya que el episodio se co
 - GPU recomendada: ninguna. Un procesador moderno es suficiente para inferencia en menos de un milisegundo.
 - Compatibilidad con consumer GPU: no aplica, ya que no necesita aceleracion grafica.
 - Memoria RAM: menos de 100 MB, dado el tamano reducido de la red.
-- Opciones de despliegue: se puede ejecutar con Gymnasium y PyTorch en un script de Python; tambien se puede cargar desde el Hub de HuggingFace con la API de Gymnasium si los pesos estuvieran disponibles.
+- Opciones de despliegue: se puede ejecutar con Gymnasium y PyTorch en un script de Python; tambien se puede cargar desde el Hub de Hugging Face con la API de Gymnasium si los pesos estuvieran disponibles.
 - Latencia y throughput: del orden de microsegundos por paso de inferencia, dado que la red es de tamano minimo (4 entradas, 2 salidas).
 
 ## Comparativa con modelos similares
@@ -85,8 +85,8 @@ No se dispone de datos de recompensa evaluados para los modelos comparativos de 
 
 ## Enlaces
 
-- [Modelo en HuggingFace Hub](https://huggingface.co/roshana1s/Reinforce-Cartpole-v1)
+- [Modelo en Hugging Face Hub](https://huggingface.co/roshana1s/Reinforce-Cartpole-v1)
 - [Deep Reinforcement Learning Course - Unidad 4](https://huggingface.co/deep-rl-course/unit4/introduction)
 - [Notebook de la Unidad 4 en Colab](https://colab.research.google.com/github/huggingface/deep-rl-class/blob/master/notebooks/unit4/unit4.ipynb)
-- [Modelo similar de RazPines en HuggingFace](https://huggingface.co/RazPines/Reinforce-Cartpole-v1)
-- [Modelo similar de cmffire en HuggingFace](https://d6108366.hf-mirror.com/cmffire/Reinforce-Cartpole-v1)
+- [Modelo similar de RazPines en Hugging Face](https://huggingface.co/RazPines/Reinforce-Cartpole-v1)
+- [Modelo similar de cmffire en Hugging Face](https://d6108366.hf-mirror.com/cmffire/Reinforce-Cartpole-v1)

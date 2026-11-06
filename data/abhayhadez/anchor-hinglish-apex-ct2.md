@@ -84,7 +84,7 @@ La comparativa se limita a datos estructurales: no se dispone de resultados de b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abhayhadez/anchor-hinglish-apex-ct2
+- Repositorio Hugging Face: https://huggingface.co/abhayhadez/anchor-hinglish-apex-ct2
 - Modelo original: https://huggingface.co/Oriserve/Whisper-Hindi2Hinglish-Apex
 - Modelo base de OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo
 - Repositorio faster-whisper: https://github.com/SYSTRAN/faster-whisper

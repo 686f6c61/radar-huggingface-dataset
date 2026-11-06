@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Long-WAM Nesting Doll Unclipped — Step 10000 es un checkpoint de evaluación en BF16 de un ajuste fino independiente sobre el modelo base Efficient-Large-Model/Long-WAM-YAM, publicado por el usuario dddddsds31341 en HuggingFace. Se trata de un modelo de visión-lenguaje-acción (VLA) orientado a robótica, etiquetado con las familias long-wam y nesting-doll, y corresponde al paso de optimizador 10000 de un total de 30000 dentro del run de fine-tuning `nesting-doll-unclipped-30k-20261103-020414` sobre el conjunto de datos SIP.
+Long-WAM Nesting Doll Unclipped — Step 10000 es un checkpoint de evaluación en BF16 de un ajuste fino independiente sobre el modelo base Efficient-Large-Model/Long-WAM-YAM, publicado por el usuario dddddsds31341 en Hugging Face. Se trata de un modelo de visión-lenguaje-acción (VLA) orientado a robótica, etiquetado con las familias long-wam y nesting-doll, y corresponde al paso de optimizador 10000 de un total de 30000 dentro del run de fine-tuning `nesting-doll-unclipped-30k-20261103-020414` sobre el conjunto de datos SIP.
 
 El modelo resuelve la tarea de mapear observaciones visuales y instrucciones en lenguaje natural a acciones de control para agentes robóticos, siguiendo la estela de los modelos VLA que combinan un codificador visual con un modelo de lenguaje y una cabeza de acciones. Su relevancia es limitada y muy específica: se trata de un artefacto de investigación intermedio (no un checkpoint final) que el propio autor publica sin reclamar ninguna tasa de éxito robótica, y que no incluye estado del optimizador, por lo que no permite reanudar el entrenamiento de forma exacta.
 
@@ -36,7 +36,7 @@ El entrenamiento corresponde a un fine-tuning independiente de 30000 pasos sobre
 ## Capacidades
 
 - Control robótico guiado por visión y lenguaje: el modelo pertenece a la categoría vision-language-action, por lo que se espera que traduzca observaciones visuales e instrucciones en lenguaje natural en acciones de control.
-- Procesamiento de entradas multimodales (imagen y texto) según el pipeline `robotics` declarado en HuggingFace.
+- Procesamiento de entradas multimodales (imagen y texto) según el pipeline `robotics` declarado en Hugging Face.
 - Integración con la familia de tareas long-wam y nesting-doll, cuyo código se incluye en el repositorio.
 - Capacidades de tool calling, function calling, agentes multi-paso, matemáticas, código o modo thinking: no disponibles en la información proporcionada.
 - Capacidades multilingües: no disponibles; el modelo no declara idiomas soportados.
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Long-WAM Nesting Doll Unclipped — Step 10000 | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| Efficient-Large-Model/Long-WAM-YAM (base) | no disponible | no disponible | no disponible | HuggingFace |
+| Long-WAM Nesting Doll Unclipped — Step 10000 | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| Efficient-Large-Model/Long-WAM-YAM (base) | no disponible | no disponible | no disponible | Hugging Face |
 | Otros modelos VLA de la familia Long-WAM | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento, parámetros ni contexto de los modelos comparables en la información proporcionada, por lo que la comparativa cuantitativa no está disponible.
@@ -86,5 +86,5 @@ No se dispone de datos de rendimiento, parámetros ni contexto de los modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dddddsds31341/Long-WAM-Nesting-Doll-Unclipped-Step-10000
+- Modelo en Hugging Face: https://huggingface.co/dddddsds31341/Long-WAM-Nesting-Doll-Unclipped-Step-10000
 - Modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM

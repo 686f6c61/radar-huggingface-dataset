@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zils-lite-body-1 es un modelo multimodal de tipo image-text-to-text publicado por el usuario isomsom en HuggingFace. Se construye sobre el chasis de dos modelos base: vllm-sr/d3-lite (que aporta los pesos de lenguaje) y Qwen/Qwen3.5-0.8B (que aporta la torre de vision sin modificar). El modelo incorpora un LoRA fusionado entrenado a traves del readout de codigo congelado de d3-lite, con entrenamiento de entropia cruzada sobre codigos de opcion.
+Zils-lite-body-1 es un modelo multimodal de tipo image-text-to-text publicado por el usuario isomsom en Hugging Face. Se construye sobre el chasis de dos modelos base: vllm-sr/d3-lite (que aporta los pesos de lenguaje) y Qwen/Qwen3.5-0.8B (que aporta la torre de vision sin modificar). El modelo incorpora un LoRA fusionado entrenado a traves del readout de codigo congelado de d3-lite, con entrenamiento de entropia cruzada sobre codigos de opcion.
 
 La propuesta tecnica es poco convencional: en lugar de un ajuste fino convencional sobre el modelo base, el autor aplica una receta (d3-language-lora16-adamw) portada a CPU que reformula tareas de clasificacion, NLI, QA y matematicas en el formato de decision de d3. El resultado es un modelo de aproximadamente 853 millones de parametros con licencia Apache 2.0, orientado a tareas de decision estructurada mas que a generacion libre de texto.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Zils-lite-body-1 | 853 M | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen3.5-0.8B (base) | ~800 M | no disponible | no disponible | HuggingFace |
-| vllm-sr/d3-lite (base) | no disponible | no disponible | no disponible | HuggingFace |
+| Zils-lite-body-1 | 853 M | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen3.5-0.8B (base) | ~800 M | no disponible | no disponible | Hugging Face |
+| vllm-sr/d3-lite (base) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/isomsom/zils-lite-body-1
+- Hugging Face: https://huggingface.co/isomsom/zils-lite-body-1
 - Modelo base vllm-sr/d3-lite: https://huggingface.co/vllm-sr/d3-lite
 - Modelo base Qwen/Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B

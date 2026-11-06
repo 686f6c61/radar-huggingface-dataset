@@ -71,10 +71,10 @@ La model card declara un `model-index` con la entrada `sft__AceReason-1-1-SFT-30
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-DPO-Tulu3-decontaminated-ar30k | 1,71B | 16k (inferido) | other | HuggingFace, 15 descargas | SFT sobre base DPO; documentacion minima |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32k | Apache 2.0 | HuggingFace, ampliamente usado | Base solida, benchmarks publicados, ecosistema maduro |
-| Llama-3.2-1B-Instruct | 1,24B | 128k | Llama 3.2 Community License | HuggingFace, ampliamente usado | Contexto largo, buen soporte de tooling |
-| SmolLM2-1.7B-Instruct | 1,71B | 8k | Apache 2.0 | HuggingFace, ampliamente usado | Mismo orden de parametros, benchmarks publicados |
+| open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-DPO-Tulu3-decontaminated-ar30k | 1,71B | 16k (inferido) | other | Hugging Face, 15 descargas | SFT sobre base DPO; documentacion minima |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32k | Apache 2.0 | Hugging Face, ampliamente usado | Base solida, benchmarks publicados, ecosistema maduro |
+| Llama-3.2-1B-Instruct | 1,24B | 128k | Llama 3.2 Community License | Hugging Face, ampliamente usado | Contexto largo, buen soporte de tooling |
+| SmolLM2-1.7B-Instruct | 1,71B | 8k | Apache 2.0 | Hugging Face, ampliamente usado | Mismo orden de parametros, benchmarks publicados |
 
 La comparacion se basa en el tamano y la categoria (modelos instructivos de ~1-2B); no hay datos de rendimiento del modelo open-sci que permitan una comparacion cuantitativa.
 
@@ -92,7 +92,7 @@ La comparacion se basa en el tamano y la categoria (modelos instructivos de ~1-2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-DPO-Tulu3-decontaminated-ar30k
+- Modelo en Hugging Face: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-DPO-Tulu3-decontaminated-ar30k
 - Checkpoint base: https://huggingface.co/ali-elganzory/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-DPO-Tulu3-decontaminated
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - Dataset AceReason-1.1-SFT-30k-sharegpt-hf: no disponible (referencia local en la model card, sin enlace publico)

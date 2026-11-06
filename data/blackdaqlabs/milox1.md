@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiloX1 es un modelo de lenguaje Transformer autoregresivo en español, desarrollado por blackdaqlabs y publicado en HuggingFace bajo licencia MIT. Se trata de un modelo entrenado completamente desde cero, sin pesos preentrenados, con una arquitectura propia que incorpora RoPE, atención causal, SwiGLU y RMSNorm. Con aproximadamente 3,56 millones de parámetros, un contexto de 320 tokens y un vocabulario de 6000 tokens (BPE byte-level), es un modelo de tamaño muy reducido orientado a la experimentación y al aprendizaje de arquitecturas Transformer, más que a tareas de producción.
+MiloX1 es un modelo de lenguaje Transformer autoregresivo en español, desarrollado por blackdaqlabs y publicado en Hugging Face bajo licencia MIT. Se trata de un modelo entrenado completamente desde cero, sin pesos preentrenados, con una arquitectura propia que incorpora RoPE, atención causal, SwiGLU y RMSNorm. Con aproximadamente 3,56 millones de parámetros, un contexto de 320 tokens y un vocabulario de 6000 tokens (BPE byte-level), es un modelo de tamaño muy reducido orientado a la experimentación y al aprendizaje de arquitecturas Transformer, más que a tareas de producción.
 
 El modelo se distribuye en formato safetensors e incluye su config.json y tokenizer.json. No se han publicado datos sobre el corpus de entrenamiento, el número de tokens utilizados ni procesos de alineación como RLHF o DPO, por lo que su rendimiento real no está documentado. Su relevancia actual radica en ser un ejemplo de implementación desde cero en español, útil para fines educativos y de investigación.
 
@@ -66,4 +66,4 @@ No se han identificado modelos comparables en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/blackdaqlabs/MiloX1
+- Hugging Face: https://huggingface.co/blackdaqlabs/MiloX1

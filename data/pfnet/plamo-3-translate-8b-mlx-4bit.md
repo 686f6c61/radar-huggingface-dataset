@@ -86,7 +86,7 @@ La model card menciona TranslateGemma y HY-MT2 como modelos de comparación en l
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/pfnet/plamo-3-translate-8b-MLX-4bit
+- Hugging Face (este modelo): https://huggingface.co/pfnet/plamo-3-translate-8b-MLX-4bit
 - Modelo base BF16: https://huggingface.co/pfnet/plamo-3-translate-8b
 - Variante 2B: https://huggingface.co/pfnet/plamo-3-translate-2b
 - Variante 0.8B: https://huggingface.co/pfnet/plamo-3-translate-0.8b

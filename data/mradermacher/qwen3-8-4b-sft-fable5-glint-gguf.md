@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 ## Comparativa con modelos similares
 
-No hay datos comparativos disponibles en la información proporcionada. No se pueden comparar parámetros de rendimiento con otros modelos de tamaño similar (por ejemplo, Qwen2.5-3B, Llama-3.2-3B) porque no se dispone de resultados de benchmarks ni de especificaciones técnicas detalladas del modelo base. Se recomienda consultar el modelo base en HuggingFace para obtener más datos.
+No hay datos comparativos disponibles en la información proporcionada. No se pueden comparar parámetros de rendimiento con otros modelos de tamaño similar (por ejemplo, Qwen2.5-3B, Llama-3.2-3B) porque no se dispone de resultados de benchmarks ni de especificaciones técnicas detalladas del modelo base. Se recomienda consultar el modelo base en Hugging Face para obtener más datos.
 
 ## Limitaciones y advertencias
 
@@ -70,8 +70,8 @@ No hay datos comparativos disponibles en la información proporcionada. No se pu
 
 ## Enlaces
 
-- [Página del modelo GGUF en HuggingFace](https://huggingface.co/mradermacher/Qwen3.8-4B-SFT-Fable5-Glint-GGUF)
-- [Modelo base (SFT) en HuggingFace](https://huggingface.co/ermiaazarkhalili/Qwen3.8-4B-SFT-Fable5-Glint)
+- [Página del modelo GGUF en Hugging Face](https://huggingface.co/mradermacher/Qwen3.8-4B-SFT-Fable5-Glint-GGUF)
+- [Modelo base (SFT) en Hugging Face](https://huggingface.co/ermiaazarkhalili/Qwen3.8-4B-SFT-Fable5-Glint)
 - [Repositorio oficial de Qwen3.8 en GitHub](https://github.com/QwenLM/Qwen3.8)
 - [Página de Qwen3.8 en OpenLM.ai](https://openlm.ai/qwen3.8/)
 - [Guía de uso de archivos GGUF (TheBloke)](https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF)

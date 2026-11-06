@@ -90,7 +90,7 @@ Existen otros modelos de detección de PII y de reconocimiento de entidades (por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nationaldesignstudio/rampart
+- Modelo en Hugging Face: https://huggingface.co/nationaldesignstudio/rampart
 - Modelo base: https://huggingface.co/nreimers/MiniLM-L6-H384-uncased
 - Dataset de entrenamiento: https://huggingface.co/datasets/ai4privacy/pii-masking-openpii-1.5m
 - Paquete npm: https://www.npmjs.com/package/@nationaldesignstudio/rampart

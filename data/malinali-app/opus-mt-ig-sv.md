@@ -49,8 +49,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| malinali-app/opus-mt-ig-sv | 75.089.327 | no disponible | no disponible (ver model card) | HuggingFace |
-| Helsinki-NLP/opus-mt-ig-sv (modelo base) | 75.089.327 | no disponible | CC-BY 4.0 (habitual) | HuggingFace |
+| malinali-app/opus-mt-ig-sv | 75.089.327 | no disponible | no disponible (ver model card) | Hugging Face |
+| Helsinki-NLP/opus-mt-ig-sv (modelo base) | 75.089.327 | no disponible | CC-BY 4.0 (habitual) | Hugging Face |
 
 El modelo base es Helsinki-NLP/opus-mt-ig-sv, que comparte exactamente los mismos pesos. No se dispone de información sobre otros modelos comparables en la documentación proporcionada.
 
@@ -67,7 +67,7 @@ El modelo base es Helsinki-NLP/opus-mt-ig-sv, que comparte exactamente los mismo
 - No soporta tool calling, agentes ni otras capacidades avanzadas.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/malinali-app/opus-mt-ig-sv
+- Hugging Face: https://huggingface.co/malinali-app/opus-mt-ig-sv
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-ig-sv
 - Proyecto OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT
 - Malinali: https://malinali.app

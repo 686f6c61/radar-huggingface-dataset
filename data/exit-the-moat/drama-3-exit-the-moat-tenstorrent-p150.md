@@ -77,8 +77,8 @@ Tiempo de carga en la tarjeta: unos 11 s con los ficheros en page cache y 183-18
 
 | Modelo | Parametros | Contexto | RTF medido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| drama-3-exit-the-moat-tenstorrent-p150 | no disponible (backbone de 40 capas) | no disponible | 0,381 (p150) | Fish Audio Community License 1.0 | HuggingFace, requiere port propio |
-| fishaudio/drama-3 (original, BF16 + FP8) | no disponible | no disponible | 0,173 (RTX PRO 6000, SGLang-Omni) | Fish Audio Community License 1.0 | HuggingFace, servidor oficial |
+| drama-3-exit-the-moat-tenstorrent-p150 | no disponible (backbone de 40 capas) | no disponible | 0,381 (p150) | Fish Audio Community License 1.0 | Hugging Face, requiere port propio |
+| fishaudio/drama-3 (original, BF16 + FP8) | no disponible | no disponible | 0,173 (RTX PRO 6000, SGLang-Omni) | Fish Audio Community License 1.0 | Hugging Face, servidor oficial |
 | Otros TTS open source de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación documentada es contra el Drama 3 original en GPU: el port es aproximadamente 2,2 veces más lento en RTF y tarda unas 2,5 veces más en el primer audio, a cambio de ejecutarse en hardware Tenstorrent con menor consumo. No hay datos en la información disponible para comparar con otros sistemas TTS.
@@ -96,7 +96,7 @@ La única comparación documentada es contra el Drama 3 original en GPU: el port
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/exit-the-moat/drama-3-exit-the-moat-tenstorrent-p150
+- Hugging Face: https://huggingface.co/exit-the-moat/drama-3-exit-the-moat-tenstorrent-p150
 - Modelo base: https://huggingface.co/fishaudio/drama-3
 - Código, setup y benchmarks: https://github.com/exit-the-moat/tenstorrent/tree/main/fish-drama3-p150
 - Ficheros de ejecución de los resultados: https://github.com/exit-the-moat/tenstorrent/tree/main/results/drama3-runs

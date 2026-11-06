@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LlamaScientific-8B-GGUF es la distribucion en formato GGUF del modelo Rumiii/LlamaScientific-8B, un ajuste fino de la familia Llama 3.1 con 8.030.261.312 parametros (8,03 B) especializado en dominios cientificos. El modelo original fue entrenado con SFT sobre el dataset nvidia/Nemotron-SFT-Science-v2 y esta etiquetado por el autor como apto para tool use y function calling en fisica, quimica y biologia. Esta version la publica mradermacher, un conocido cuantizador de la comunidad de HuggingFace, que genera los ficheros GGUF estaticos a partir de los pesos del modelo base.
+LlamaScientific-8B-GGUF es la distribucion en formato GGUF del modelo Rumiii/LlamaScientific-8B, un ajuste fino de la familia Llama 3.1 con 8.030.261.312 parametros (8,03 B) especializado en dominios cientificos. El modelo original fue entrenado con SFT sobre el dataset nvidia/Nemotron-SFT-Science-v2 y esta etiquetado por el autor como apto para tool use y function calling en fisica, quimica y biologia. Esta version la publica mradermacher, un conocido cuantizador de la comunidad de Hugging Face, que genera los ficheros GGUF estaticos a partir de los pesos del modelo base.
 
 La relevancia practica de esta ficha es concreta: permite ejecutar un modelo afinado en ciencia en hardware de consumo mediante llama.cpp, Ollama o LM Studio, sin necesidad de GPU de datacenter. El repositorio incluye 12 variantes de cuantizacion entre 3,3 GB (Q2_K) y 16,2 GB (f16), lo que cubre desde equipos con 6-8 GB de VRAM hasta estaciones con GPU de 24 GB.
 
@@ -21,13 +21,13 @@ Conviene senalar que se trata de un repositorio con 0 descargas y 0 likes en el 
 | Licencia | llama3.1 (Llama 3.1 Community License) |
 | Formato de pesos | GGUF (este repositorio); safetensors en el modelo base Rumiii/LlamaScientific-8B |
 
-Datos adicionales del repositorio: tamano total de 71,8 GB, creado el 24 de octubre de 2026 (fecha declarada en HuggingFace), libreria `transformers`, pipeline no disponible, etiqueta `endpoints_compatible`. No se publican cuantizaciones ponderadas con imatrix; el autor indica que podrian no estar disponibles y que se soliciten via Community Discussion.
+Datos adicionales del repositorio: tamano total de 71,8 GB, creado el 24 de octubre de 2026 (fecha declarada en Hugging Face), libreria `transformers`, pipeline no disponible, etiqueta `endpoints_compatible`. No se publican cuantizaciones ponderadas con imatrix; el autor indica que podrian no estar disponibles y que se soliciten via Community Discussion.
 
 ## Arquitectura y entrenamiento
 
 La arquitectura es la de un transformer decoder-only denso de la familia Llama 3.1, con 8,03 B de parametros. El proceso declarado es un ajuste fino supervisado (SFT) partiendo de Rumiii/LlamaScientific-8B, que a su vez se entrena sobre nvidia/Nemotron-SFT-Science-v2, un dataset de instrucciones cientificas. La model card menciona el uso de Unsloth en el pipeline de entrenamiento (tag `unsloth`) y no documenta fases de RLHF, DPO ni preference tuning; tampoco se especifica el numero de tokens de entrenamiento, la composicion exacta del dataset ni la receta de hiperparametros.
 
-En esta publicacion, mradermacher no reentrena el modelo: solo convierte los pesos a GGUF y genera cuantizaciones estaticas. La model card del repositorio GGUF indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, conversion desde pesos en formato HuggingFace. No hay innovaciones arquitectonicas propias (ni atencion lineal, ni decodificacion especulativa, ni mezcla de expertos): el valor anadido esta en el ajuste de dominio cientifico y en la disponibilidad de cuantizaciones para inferencia local.
+En esta publicacion, mradermacher no reentrena el modelo: solo convierte los pesos a GGUF y genera cuantizaciones estaticas. La model card del repositorio GGUF indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, conversion desde pesos en formato Hugging Face. No hay innovaciones arquitectonicas propias (ni atencion lineal, ni decodificacion especulativa, ni mezcla de expertos): el valor anadido esta en el ajuste de dominio cientifico y en la disponibilidad de cuantizaciones para inferencia local.
 
 ## Capacidades
 
@@ -35,7 +35,7 @@ En esta publicacion, mradermacher no reentrena el modelo: solo convierte los pes
 - Tool use y function calling: el autor etiqueta explicitamente el modelo con `tool-use` y `function-calling`, lo que permite integrarlo en flujos que requieran llamadas estructuradas a funciones externas.
 - Razonamiento de varios pasos sobre problemas cientificos, derivado del entrenamiento SFT con instrucciones del dataset Nemotron-SFT-Science-v2 (sin datos publicados sobre la profundidad de razonamiento efectiva).
 - Conversacion multi-turno (tag `conversational`).
-- Compatibilidad con endpoints estandar de inferencia (tag `endpoints_compatible`), lo que facilita su despliegue en servidores compatibles con la API de HuggingFace/OpenAI.
+- Compatibilidad con endpoints estandar de inferencia (tag `endpoints_compatible`), lo que facilita su despliegue en servidores compatibles con la API de Hugging Face/OpenAI.
 - Capacidades no disponibles: no hay soporte declarado de vision, audio, ni modo "thinking" explicito. El modelo es solo texto.
 - Multilingue: limitado a ingles; no se declara soporte de castellano ni de otros idiomas.
 

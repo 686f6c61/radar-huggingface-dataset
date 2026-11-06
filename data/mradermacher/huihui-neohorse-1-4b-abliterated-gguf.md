@@ -31,7 +31,7 @@ La relevancia de esta ficha es fundamentalmente practica: permite evaluar si mer
 
 La informacion proporcionada no describe la arquitectura del modelo base. El nombre del repositorio, NeoHorse-1-4B, apunta a un transformer decoder-only de aproximadamente 4.000 millones de parametros, pero ni la model card del GGUF ni los metadatos citados confirman esta arquitectura, el numero de capas, el tamano del vocabulario ni el mecanismo de atencion empleado. Tampoco se documenta el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de ajuste por instrucciones con RLHF o DPO. Toda esta informacion deberia consultarse en la model card del modelo original de huihui-ai, que no forma parte del material aportado.
 
-El unico elemento tecnico verificable en esta publicacion es el proceso de cuantizacion. Los metadatos indican quantize_version 2 y output_tensor_quantised 1, lo que corresponde al flujo de conversion del ecosistema llama.cpp, con convert_type hf, es decir, partiendo de pesos en formato HuggingFace. Se ofrecen doce variantes que cubren desde precision casi completa (x-f16) hasta compresion agresiva (Q2_K), pasando por esquemas K-quant y la cuantizacion IQ4_XS basada en imatrix. La presencia de la etiqueta abliterated en el nombre indica que el modelo subyacente sufrio una intervencion sobre sus direcciones de rechazo, un procedimiento de post-procesado que modifica pesos sin reentrenamiento y que puede degradar ligeramente la coherencia en tareas que se benefician de un comportamiento conservador.
+El unico elemento tecnico verificable en esta publicacion es el proceso de cuantizacion. Los metadatos indican quantize_version 2 y output_tensor_quantised 1, lo que corresponde al flujo de conversion del ecosistema llama.cpp, con convert_type hf, es decir, partiendo de pesos en formato Hugging Face. Se ofrecen doce variantes que cubren desde precision casi completa (x-f16) hasta compresion agresiva (Q2_K), pasando por esquemas K-quant y la cuantizacion IQ4_XS basada en imatrix. La presencia de la etiqueta abliterated en el nombre indica que el modelo subyacente sufrio una intervencion sobre sus direcciones de rechazo, un procedimiento de post-procesado que modifica pesos sin reentrenamiento y que puede degradar ligeramente la coherencia en tareas que se benefician de un comportamiento conservador.
 
 ## Capacidades
 
@@ -52,7 +52,7 @@ El unico elemento tecnico verificable en esta publicacion es el proceso de cuant
 - Pruebas de red teaming y evaluacion de riesgos: el modelo puede usarse como sujeto de prueba para medir la eficacia de filtros externos o clasificadores de contenido en una capa de guardarrailes independiente.
 - Generacion de texto creativo sin filtros editoriales: escritura de ficcion con tematicas sensibles donde un modelo alineado rechazaria la peticion; el contexto limitado obliga a trabajar con fragmentos y a encadenar resumenes.
 - Despliegue en entornos con recursos muy limitados: la cuantizacion Q2_K o IQ4_XS reduce el peso del modelo a un rango de gigabytes bajo, adecuado para dispositivos edge o contenedores con poca memoria, a cambio de una perdida notable de calidad.
-- Base para ajuste fino con LoRA: al distribuirse en GGUF con precision x-f16 tambien disponible, puede emplearse como punto de partida en flujos de adaptacion de bajo rango sobre el modelo original en formato HuggingFace.
+- Base para ajuste fino con LoRA: al distribuirse en GGUF con precision x-f16 tambien disponible, puede emplearse como punto de partida en flujos de adaptacion de bajo rango sobre el modelo original en formato Hugging Face.
 - Asistente de documentacion tecnica offline: en escenarios sin conectividad, el modelo puede resumir y reformular documentacion local, siempre que el contenido no exija un contexto largo ni conocimientos actualizados.
 
 ## Benchmarks y rendimiento
@@ -76,7 +76,7 @@ No hay datos de rendimiento del modelo evaluado, por lo que la comparacion se li
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Huihui-NeoHorse-1-4B-abliterated-GGUF | ~4.000 millones (segun nombre) | no disponible | no disponible | GGUF en HuggingFace |
+| Huihui-NeoHorse-1-4B-abliterated-GGUF | ~4.000 millones (segun nombre) | no disponible | no disponible | GGUF en Hugging Face |
 | Llama 3.2 3B Instruct | 3.210 millones | 128.000 tokens | Llama 3.2 Community License | safetensors y GGUF, muy extendido |
 | Qwen2.5 3B Instruct | 3.090 millones | 32.768 tokens, ampliable con YaRN | Apache 2.0 | safetensors y GGUF |
 | Phi-3.5-mini Instruct | 3.800 millones | 128.000 tokens | MIT | safetensors y GGUF |

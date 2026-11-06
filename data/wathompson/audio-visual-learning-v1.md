@@ -79,7 +79,7 @@ No disponible. Este repositorio no es un modelo entrenado ni una release de peso
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Wathompson/audio-visual-learning-v1
+- Repositorio en Hugging Face: https://huggingface.co/Wathompson/audio-visual-learning-v1
 - Artefacto principal citado en la model card: `paper_notes.md` (dentro del propio repositorio)
 - Documentación del repositorio: `README.md` (dentro del propio repositorio)
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos o demos) en la búsqueda web realizada; los resultados obtenidos pertenecen a otro dominio y se han descartado.

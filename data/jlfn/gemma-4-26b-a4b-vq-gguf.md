@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento con alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jlfn/gemma-4-26b-a4b-vq-gguf
+- Hugging Face: https://huggingface.co/Jlfn/gemma-4-26b-a4b-vq-gguf
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Drafter: https://huggingface.co/google/gemma-4-26B-A4B-it-assistant
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento ni de otros modelos comparables de la mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fusorlabs/d3-web
+- Modelo en Hugging Face: https://huggingface.co/fusorlabs/d3-web
 - Space de demostracion: https://huggingface.co/spaces/fusorlabs/d3-wasm
 - Runtime d3-wasm: https://github.com/fusor-rs/d3-wasm
 - Libreria fusor-ai: https://github.com/fusor-rs/fusor-ai

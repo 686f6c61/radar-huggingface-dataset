@@ -75,8 +75,8 @@ El export FP32 desde el que se cuantizó coincide con el modelo original (coinci
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenMed/MedPsy-4B-ONNX | 4,02 B | no disponible | ONNX int4/int8 (2,94 GiB) | apache-2.0 | HuggingFace, transformers.js y ONNX Runtime; 0 descargas, 0 likes en el momento de la consulta |
-| qvac/MedPsy-4B (modelo base) | 4,02 B | no disponible | PyTorch BF16 (aproximadamente 8 GB) | apache-2.0 | HuggingFace; pesos originales sin cuantizar |
+| OpenMed/MedPsy-4B-ONNX | 4,02 B | no disponible | ONNX int4/int8 (2,94 GiB) | apache-2.0 | Hugging Face, transformers.js y ONNX Runtime; 0 descargas, 0 likes en el momento de la consulta |
+| qvac/MedPsy-4B (modelo base) | 4,02 B | no disponible | PyTorch BF16 (aproximadamente 8 GB) | apache-2.0 | Hugging Face; pesos originales sin cuantizar |
 | Qwen3-4B (modelo padre) | 4,02 B (arquitectura idéntica) | no disponible en la información proporcionada | safetensors / GGUF según distribución | Apache 2.0 | Ampliamente distribuido; no es un modelo médico |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes, salvo las métricas de fidelidad de cuantización frente al modelo en FP32 recogidas en el apartado anterior. La comparación con otros modelos médicos de tamaño similar (BioMistral, Meditron, etc.) no está disponible en la información proporcionada.
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes, salvo l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenMed/MedPsy-4B-ONNX
+- Modelo en Hugging Face: https://huggingface.co/OpenMed/MedPsy-4B-ONNX
 - Modelo base original: https://huggingface.co/qvac/MedPsy-4B
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js
 - ONNX: https://onnx.ai

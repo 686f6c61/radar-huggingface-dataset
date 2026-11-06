@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`moosemandada/bpub-model` es un repositorio de modelo publicado en HuggingFace por el usuario `moosemandada` bajo acceso restringido (gated): para descargarlo es necesario aceptar previamente las condiciones establecidas por el autor. En el momento de redactar esta ficha, la informacion publica disponible es practicamente nula: no consta pipeline declarado, no consta licencia, no se listan idiomas y el unico tag presente es `region:us`.
+`moosemandada/bpub-model` es un repositorio de modelo publicado en Hugging Face por el usuario `moosemandada` bajo acceso restringido (gated): para descargarlo es necesario aceptar previamente las condiciones establecidas por el autor. En el momento de redactar esta ficha, la informacion publica disponible es practicamente nula: no consta pipeline declarado, no consta licencia, no se listan idiomas y el unico tag presente es `region:us`.
 
 El repositorio no incluye model card con descripcion, arquitectura, datos de entrenamiento ni resultados de evaluacion. El tamano del repositorio figura como 0.0 GB, lo que resulta coherente con un repositorio sin pesos publicados o con pesos almacenados fuera del arbol Git (por ejemplo, mediante punteros LFS no materializados o referencias externas). El modelo registra 0 descargas y 1 like, y las fechas de metadatos son 2026-09-15 (creacion) y 2026-10-23 (ultima actualizacion).
 
@@ -22,7 +22,7 @@ Por todo ello, esta ficha no puede confirmar que el modelo resuelva un problema 
 | Formato de pesos | no disponible (tamano del repositorio declarado: 0.0 GB) |
 | Pipeline declarado | no disponible |
 | Tags publicos | `region:us` |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 1 |
 | Fecha de creacion | 2026-09-15 |
 | Ultima actualizacion | 2026-10-23 |
@@ -76,7 +76,7 @@ No disponible. Al desconocerse el tamano, la licencia y las capacidades del mode
 ## Limitaciones y advertencias
 
 - Opacidad documental: no hay model card, ni descripcion de arquitectura, ni datos de entrenamiento. El modelo no es evaluable tecnicamente en su estado actual.
-- Acceso restringido: la descarga exige aceptar condiciones en HuggingFace; el proceso puede no ser automatico y bloquea cualquier uso en CI/CD sin intervencion manual.
+- Acceso restringido: la descarga exige aceptar condiciones en Hugging Face; el proceso puede no ser automatico y bloquea cualquier uso en CI/CD sin intervencion manual.
 - Licencia no declarada: sin licencia explicita no puede asumirse permiso para uso comercial, redistribucion ni creacion de derivados. En la practica, debe tratarse como no apto para produccion hasta que el autor la concrete.
 - Repositorio vacio o incompleto: el tamano declarado de 0.0 GB sugiere ausencia de pesos materializados. Debe comprobarse si existen punteros LFS validos o si el contenido esta alojado en otro lugar.
 - Riesgo de alucinacion: desconocido. No hay evaluaciones de fidelidad factual ni de tasas de error.
@@ -87,5 +87,5 @@ No disponible. Al desconocerse el tamano, la licencia y las capacidades del mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/moosemandada/bpub-model
+- Hugging Face: https://huggingface.co/moosemandada/bpub-model
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

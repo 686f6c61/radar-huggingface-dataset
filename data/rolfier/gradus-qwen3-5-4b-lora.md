@@ -82,7 +82,7 @@ Los intervalos de confianza y el resto de pruebas estan, segun el autor, en `doc
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gradus (Qwen3.5-4B LoRA) | 4B base + adaptador r=16 | no disponible | 81 % de acierto, macro-F1 0,68 en 513 filas | Apache 2.0 | Adaptador en HuggingFace, codigo en GitHub |
+| Gradus (Qwen3.5-4B LoRA) | 4B base + adaptador r=16 | no disponible | 81 % de acierto, macro-F1 0,68 en 513 filas | Apache 2.0 | Adaptador en Hugging Face, codigo en GitHub |
 | Qwen3.5-4B sin adaptar | 4B | no disponible | 59 % de acierto, macro-F1 0,46 en las mismas filas | no disponible en la informacion | Checkpoint publico en el Hub |
 | Reglas heuristicas sobre la tarjeta de requisitos | 0 | no aplica | macro-F1 0,48 | no aplica | Incluidas en el repositorio de Gradus |
 
@@ -105,7 +105,7 @@ No se han identificado en la informacion proporcionada otros adaptadores publico
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rolfier/gradus-qwen3.5-4b-lora
+- Hugging Face: https://huggingface.co/Rolfier/gradus-qwen3.5-4b-lora
 - Demo en vivo: https://rolfyildirim--gradus.modal.run
 - Codigo, registros de evaluacion y resultados: https://github.com/uguryildirim24/gradus
 - Video (2:35): https://youtu.be/h3V7mkQGKT8

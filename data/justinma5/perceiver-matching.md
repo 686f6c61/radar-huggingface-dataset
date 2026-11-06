@@ -72,5 +72,5 @@ No se dispone de modelos comparables en la información proporcionada. El modelo
 
 ## Enlaces
 
-- [HuggingFace: justinma5/perceiver-matching](https://huggingface.co/justinma5/perceiver-matching)
-- [Perfil del autor en HuggingFace: justinma5](https://huggingface.co/justinma5)
+- [Hugging Face: justinma5/perceiver-matching](https://huggingface.co/justinma5/perceiver-matching)
+- [Perfil del autor en Hugging Face: justinma5](https://huggingface.co/justinma5)

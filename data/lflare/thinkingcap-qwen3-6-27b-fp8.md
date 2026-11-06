@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Cuantización | Calidad relativa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| lflare/ThinkingCap-Qwen3.6-27B-FP8 (este) | 27,78 B | No disponible | FP8 W8A8 con atención bf16 | KLD 0,0132 nats; ΔPPL +0,96 %; MTP 75,0 % | Apache 2.0 | HuggingFace, 30 descargas |
-| bottlecapai/ThinkingCap-Qwen3.6-27B (padre) | 27,78 B | No disponible | bf16 | Referencia de calidad (KLD 0) | Apache 2.0 (según el build derivado) | HuggingFace |
-| Build FP8 de referencia del autor original (`bottlecapai/…-FP8`) | 27,78 B | No disponible | FP8 `compressed-tensors` | MTP 74,2 % | Apache 2.0 (según el build derivado) | HuggingFace |
+| lflare/ThinkingCap-Qwen3.6-27B-FP8 (este) | 27,78 B | No disponible | FP8 W8A8 con atención bf16 | KLD 0,0132 nats; ΔPPL +0,96 %; MTP 75,0 % | Apache 2.0 | Hugging Face, 30 descargas |
+| bottlecapai/ThinkingCap-Qwen3.6-27B (padre) | 27,78 B | No disponible | bf16 | Referencia de calidad (KLD 0) | Apache 2.0 (según el build derivado) | Hugging Face |
+| Build FP8 de referencia del autor original (`bottlecapai/…-FP8`) | 27,78 B | No disponible | FP8 `compressed-tensors` | MTP 74,2 % | Apache 2.0 (según el build derivado) | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (27 B, multimodal, atención híbrida) en el material proporcionado, por lo que no se incluyen alternativas adicionales.
 
@@ -92,7 +92,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lflare/ThinkingCap-Qwen3.6-27B-FP8
+- Repositorio Hugging Face: https://huggingface.co/lflare/ThinkingCap-Qwen3.6-27B-FP8
 - Modelo base: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B
 - Receta de cuantización: `recipe.yaml` (incluido en el repositorio)
 - Medición de KLD: `kld_thinkingcap-fp8-attnbf16.json` (incluido en el repositorio)

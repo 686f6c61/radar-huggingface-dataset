@@ -50,16 +50,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Al ser un LoRA, los requisitos de hardware son los del modelo base Qwen-Image-Edit-2511, mas un overhead minimo por el adaptador (0,3 GB de pesos adicionales).
 - VRAM estimada: depende de la cuantizacion del modelo base. Para un modelo de edicion de imagenes de tamano medio (tipicamente 5-20 GB en FP16), se recomienda al menos 16 GB de VRAM para inferencia con diffusers. Con cuantizacion (por ejemplo, 8 bits) podria caber en GPUs de 12 GB.
 - GPUs recomendadas: NVIDIA RTX 4090 (24 GB), A100 (40/80 GB), H100 (80 GB) para produccion. En consumer, una RTX 3090 o 4090 es suficiente para pruebas.
-- Opciones de despliegue: el adaptador se integra con la libreria diffusers de HuggingFace, por lo que puede usarse con pipelines de Python. No se menciona soporte para vLLM, llama.cpp u Ollama, ya que estos estan orientados a modelos de texto.
+- Opciones de despliegue: el adaptador se integra con la libreria diffusers de Hugging Face, por lo que puede usarse con pipelines de Python. No se menciona soporte para vLLM, llama.cpp u Ollama, ya que estos estan orientados a modelos de texto.
 - Latencia y throughput: no disponibles. Dependen del modelo base y del hardware.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Control de camara | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-Edit-2511 (base) | Modelo completo | Limitado (built-in viewpoint) | No especificado | Apache 2.0 | HuggingFace |
-| Skibrib/Qwen-Image-Edit-2511-Multiple-Angles-LoRA | LoRA sobre Qwen-Image-Edit-2511 | 96 poses discretas | 3000+ renders Gaussian Splatting | Apache 2.0 | HuggingFace |
-| Otros LoRA de control de camara (p.ej. para SDXL) | LoRA sobre SDXL | Variable, tipicamente menos poses | Variable | Variable | HuggingFace |
+| Qwen-Image-Edit-2511 (base) | Modelo completo | Limitado (built-in viewpoint) | No especificado | Apache 2.0 | Hugging Face |
+| Skibrib/Qwen-Image-Edit-2511-Multiple-Angles-LoRA | LoRA sobre Qwen-Image-Edit-2511 | 96 poses discretas | 3000+ renders Gaussian Splatting | Apache 2.0 | Hugging Face |
+| Otros LoRA de control de camara (p.ej. para SDXL) | LoRA sobre SDXL | Variable, tipicamente menos poses | Variable | Variable | Hugging Face |
 
 No se dispone de informacion detallada sobre alternativas especificas comparables en el mismo modelo base. La comparativa se limita a lo que se conoce del modelo base y del propio adaptador.
 
@@ -74,10 +74,10 @@ No se dispone de informacion detallada sobre alternativas especificas comparable
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Skibrib/Qwen-Image-Edit-2511-Multiple-Angles-LoRA
+- Repositorio Hugging Face: https://huggingface.co/Skibrib/Qwen-Image-Edit-2511-Multiple-Angles-LoRA
 - Modelo base Qwen-Image-Edit-2511: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
-- Repositorio espejo en HuggingFace (fal): https://huggingface.co/fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA
-- Repositorio espejo en HuggingFace (wan-world): https://huggingface.co/wan-world/Qwen-Image-Edit-2511-Multiple-Angles-LoRA
+- Repositorio espejo en Hugging Face (fal): https://huggingface.co/fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA
+- Repositorio espejo en Hugging Face (wan-world): https://huggingface.co/wan-world/Qwen-Image-Edit-2511-Multiple-Angles-LoRA
 - Repositorio en ModelScope: https://www.modelscope.cn/models/fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA
 - Guia en dev.to: https://dev.to/gary_yan_86eb77d35e0070f5/qwen-image-edit-2511-multiple-angles-lora-complete-guide-to-multi-angle-ai-image-generation-1g5f
 - Repositorio de pruebas en GitHub: https://github.com/chaymaeBelfaik/Qwen-Image-Edit-2511-Multiple-Angles-testing

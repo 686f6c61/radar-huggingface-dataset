@@ -49,7 +49,7 @@ El entrenamiento se realizó con Muon (optimizador basado en ortogonalización d
 ## Casos de uso
 
 - Reproducción de experimentos con optimizadores: el checkpoint permite comparar directamente Muon (con `scale_mode` moonlight) frente a AdamW sobre el mismo dataset y la misma arquitectura, midiendo pérdida de validación y BLEU en un entorno de 27 M de parámetros que se entrena en horas y no en semanas.
-- Docencia de NLP: sirve como ejemplo completo y de bajo coste de una práctica de entrenamiento desde cero, incluyendo implementación de optimizador, bucle de entrenamiento, evaluación con BLEU y publicación en HuggingFace.
+- Docencia de NLP: sirve como ejemplo completo y de bajo coste de una práctica de entrenamiento desde cero, incluyendo implementación de optimizador, bucle de entrenamiento, evaluación con BLEU y publicación en Hugging Face.
 - Investigación en dinámica de optimizadores: al ser un modelo diminuto con `ns_steps` y `momentum` explícitos, es adecuado para estudiar sensibilidad a hiperparámetros de Muon (número de iteraciones de Newton-Schulz, escalado de actualizaciones, weight decay) con barridos amplios y asequibles.
 - Pruebas de infraestructura de entrenamiento: por su tamaño (41.648.128 tokens, 27,27 M de parámetros) es útil como caso de prueba para validar pipelines de datos, tokenizadores, checkpoints distribuidos y registro de métricas antes de escalar a modelos mayores.
 - Análisis de corpus de diálogo humano-IA: el modelo puede usarse como sonda de tokenización y de estructura estadística sobre `browndw/human-ai-parallel-corpus`, por ejemplo para estudiar qué aprende un transformer diminuto de ese corpus con una sola época.
@@ -88,10 +88,10 @@ No se dispone de datos publicados que permitan comparar el rendimiento de este m
 
 | Modelo | Parámetros | Contexto | Tokens de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sanyam2005/anlp-a2-part2-muon | 27,27 M | No disponible | 41,65 M | No disponible | safetensors en HuggingFace |
+| sanyam2005/anlp-a2-part2-muon | 27,27 M | No disponible | 41,65 M | No disponible | safetensors en Hugging Face |
 | openai-community/gpt2 (small) | 124 M | 1.024 | Órdenes de magnitud superior (WebText) | MIT | Pesos públicos, ampliamente soportado |
 | HuggingFaceTB/SmolLM-135M | 135 M | 2.048 | 600.000 M (SmolLM-Corpus) | Apache-2.0 | Pesos públicos, integrado en ecosistema transformers |
-| unignoramus/anlp-a2-p2-muon | No disponible (repositorio de 143 MB) | No disponible | No disponible | No disponible | safetensors en HuggingFace |
+| unignoramus/anlp-a2-p2-muon | No disponible (repositorio de 143 MB) | No disponible | No disponible | No disponible | safetensors en Hugging Face |
 
 La comparación relevante no es de calidad, sino de escala de cómputo: GPT-2 small y SmolLM-135M se entrenaron con varios órdenes de magnitud más de tokens y por eso son utilizables, mientras que este checkpoint, con 1,53 tokens por parámetro, queda muy por debajo de cualquier régimen de entrenamiento compute-optimal. El modelo `unignoramus/anlp-a2-p2-muon` parece corresponder a la misma práctica o a una variante de ella, pero no publica métricas en la información disponible.
 
@@ -111,7 +111,7 @@ La comparación relevante no es de calidad, sino de escala de cómputo: GPT-2 sm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanyam2005/anlp-a2-part2-muon
+- Modelo en Hugging Face: https://huggingface.co/sanyam2005/anlp-a2-part2-muon
 - Modelo relacionado de la misma práctica: https://huggingface.co/unignoramus/anlp-a2-p2-muon
 - Repositorio del proyecto ANLP A2: https://github.com/bitmap4/anlp-a2
 - Implementación de referencia del optimizador Muon (Keller Jordan): https://github.com/KellerJordan/Muon

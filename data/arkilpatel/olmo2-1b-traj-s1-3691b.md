@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. Este
 - **VRAM estimada para inferencia**: al ser un modelo de 1B en bf16, los pesos ocupan aproximadamente 2 GB (1B parámetros × 2 bytes). La VRAM total necesaria para inferencia con contexto corto ronda los 4-6 GB, incluyendo activaciones.
 - **GPU recomendadas**: cualquier GPU con al menos 4 GB de VRAM es suficiente. Una RTX 3060, RTX 4060 o equivalente puede ejecutar el modelo sin problemas. Para evaluar los 43 checkpoints de forma secuencial, una GPU de gama media es suficiente.
 - **Cabe en consumer GPU**: sí, en GPUs de gama media y baja (desde GTX 1660 Super con 6 GB).
-- **Opciones de despliegue**: al ser checkpoints intermedios en formato safetensors, se pueden cargar con HuggingFace Transformers. No se recomienda usar vLLM u Ollama para producción, pero se pueden usar para inferencia puntual.
+- **Opciones de despliegue**: al ser checkpoints intermedios en formato safetensors, se pueden cargar con Hugging Face Transformers. No se recomienda usar vLLM u Ollama para producción, pero se pueden usar para inferencia puntual.
 - **Latencia y throughput estimados**: no disponibles. Para un modelo de 1B en una GPU consumer, se espera una generación de alrededor de 50-100 tokens por segundo en una RTX 4090, pero no se han medido específicamente para estos checkpoints.
 
 ## Comparativa con modelos similares
@@ -77,9 +77,9 @@ La comparación directa con OLMo-2-1B base muestra que este repositorio contiene
 
 ## Enlaces
 
-- [Repositorio de HuggingFace](https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-3691b)
+- [Repositorio de Hugging Face](https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-3691b)
 - [Página de OLMo de Ai2](https://allenai.org/olmo)
-- [OLMo-2-0425-1B en HuggingFace](https://huggingface.co/allenai/OLMo-2-0425-1B)
+- [OLMo-2-0425-1B en Hugging Face](https://huggingface.co/allenai/OLMo-2-0425-1B)
 - [Página de OLMo2 de Ai2](https://allenai.org/olmo2)
-- [AMD-OLMo-1B en HuggingFace](https://huggingface.co/amd/AMD-OLMo-1B)
+- [AMD-OLMo-1B en Hugging Face](https://huggingface.co/amd/AMD-OLMo-1B)
 - [Perfil de Arkil Patel en Google Scholar](https://scholar.google.com/citations?user=-5goVAsAAAAJ&hl=en)

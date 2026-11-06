@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario yuyu0529nya el 8 de octubre de 2026, no contiene un modelo de lenguaje entrenado ni listo para inferencia, sino un conjunto de artefactos de cuantización derivados de facebook/opt-1.3b. Se trata de checkpoints de solo datos, inmutables, empaquetados en un único archivo `quantized-artifacts.zip` de 5.392.519.914 bytes (aproximadamente 5,4 GB) con SHA-256 `59a6400dcf5a268be6807037766f12ff277314cb2f250d437c184d5803796dd2`. El autor lo describe explícitamente como un paquete de reproducibilidad de una tarea, con semillas Baseline/Reference emparejadas y métodos finales retenidos.
+Este repositorio de Hugging Face, publicado por el usuario yuyu0529nya el 8 de octubre de 2026, no contiene un modelo de lenguaje entrenado ni listo para inferencia, sino un conjunto de artefactos de cuantización derivados de facebook/opt-1.3b. Se trata de checkpoints de solo datos, inmutables, empaquetados en un único archivo `quantized-artifacts.zip` de 5.392.519.914 bytes (aproximadamente 5,4 GB) con SHA-256 `59a6400dcf5a268be6807037766f12ff277314cb2f250d437c184d5803796dd2`. El autor lo describe explícitamente como un paquete de reproducibilidad de una tarea, con semillas Baseline/Reference emparejadas y métodos finales retenidos.
 
 El problema que aborda es la trazabilidad y la reproducibilidad de experimentos de cuantización: el archivo conserva los bytes originales de los tensores y los manifiestos de artefactos, deduplica tensores idénticos almacenándolos una sola vez y usa un `manifest.json` que mapea cada ruta original a su ruta de almacenamiento. Un script de preparación de plataforma del paquete de tarea verifica y restaura cada ruta lógica antes de la revisión por expertos. El repositorio declara no contener tokens de evaluación privados, prompts, historial de agentes, credenciales ni los pesos preentrenados originales.
 
@@ -100,7 +100,7 @@ La diferencia fundamental no es de rendimiento sino de naturaleza: este reposito
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuyu0529nya/auto0597-stla-quantized-artifacts
+- Repositorio en Hugging Face: https://huggingface.co/yuyu0529nya/auto0597-stla-quantized-artifacts
 - Modelo base: https://huggingface.co/facebook/opt-1.3b
 - Licencia OPT-175B: https://github.com/facebookresearch/metaseq/blob/main/projects/OPT/MODEL_LICENSE.md
 - Repositorio MetaSeq (familia OPT): https://github.com/facebookresearch/metaseq

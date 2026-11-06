@@ -60,7 +60,7 @@ No se dispone de información suficiente para comparar esta variante específica
 - No se especifican sesgos conocidos, pero como modelo de VAD, puede tener falsos positivos con sonidos no vocales (por ejemplo, música o golpes) y falsos negativos con voz muy baja o lejana.
 
 ## Enlaces
-- Repositorio de HuggingFace: https://huggingface.co/openEuler/silero-vad
+- Repositorio de Hugging Face: https://huggingface.co/openEuler/silero-vad
 - Repositorio original de Silero VAD: https://github.com/snakers4/silero-vad
 - Documentación de PyTorch Hub: https://pytorch.org/hub/snakers4_silero-vad_vad/
 - Paquete PyPI: https://pypi.org/project/silero-vad/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sota-base es un modelo de reconocimiento automático del habla (ASR) con cabecera CTC para khmer e inglés, publicado por el usuario Darayut en HuggingFace. No es un modelo entrenado desde cero: se obtiene podando estructuralmente `omniASR_CTC_300M` de Meta (Omnilingual ASR, Apache 2.0) hasta un 80 % de dispersión en el codificador, lo que reduce el total de 325 M a 72,94 M de parámetros. El resultado es la variante Base de una pareja de modelos podados (la otra es `Darayut/sota-large`), nombrada por analogía con los wavLM Base-s80 / Large-s80 de DiariZen.
+sota-base es un modelo de reconocimiento automático del habla (ASR) con cabecera CTC para khmer e inglés, publicado por el usuario Darayut en Hugging Face. No es un modelo entrenado desde cero: se obtiene podando estructuralmente `omniASR_CTC_300M` de Meta (Omnilingual ASR, Apache 2.0) hasta un 80 % de dispersión en el codificador, lo que reduce el total de 325 M a 72,94 M de parámetros. El resultado es la variante Base de una pareja de modelos podados (la otra es `Darayut/sota-large`), nombrada por analogía con los wavLM Base-s80 / Large-s80 de DiariZen.
 
 Su interés practico esta en el compromiso entre coste y precision: baja el computo de 18,3 a 5,8 GMAC por segundo de audio (unas 3,15 veces menos) y, en khemer, supera tanto a su profesor afinado como al modelo original (CER de 2,60 % en DDD-Test frente a 3,68 % y 9,65 %). En ingles, en cambio, pierde buena parte de la precision del profesor, con un WER de aproximadamente 1,5 a 2 veces superior.
 
@@ -78,10 +78,10 @@ Observaciones del autor: en khemer, sota-base supera en DDD-Test tanto al profes
 
 | Modelo | Parametros | Coste (GMAC/s audio) | DDD-Test (km, CER) | LibriSpeech clean (en, WER) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sota-base | 73 M | 5,8 | 2,60 | 11,15 | Apache 2.0 | HuggingFace (`Darayut/sota-base`) |
-| `omniASR-CTC-300M-km-en` (profesor) | 325 M | 18,3 | 3,68 | 5,89 | Apache 2.0 (derivado de Omnilingual) | HuggingFace (`Darayut/omniASR-CTC-300M-km-en`) |
-| `omniASR_CTC_300M` (original de Meta) | 325 M | 18,3 | 9,65 | 6,53 | Apache 2.0 | HuggingFace / `omnilingual-asr` |
-| `Darayut/sota-large` | no disponible | no disponible | no disponible | no disponible | Apache 2.0 (presumiblemente, no confirmado en la informacion disponible) | HuggingFace (`Darayut/sota-large`) |
+| sota-base | 73 M | 5,8 | 2,60 | 11,15 | Apache 2.0 | Hugging Face (`Darayut/sota-base`) |
+| `omniASR-CTC-300M-km-en` (profesor) | 325 M | 18,3 | 3,68 | 5,89 | Apache 2.0 (derivado de Omnilingual) | Hugging Face (`Darayut/omniASR-CTC-300M-km-en`) |
+| `omniASR_CTC_300M` (original de Meta) | 325 M | 18,3 | 9,65 | 6,53 | Apache 2.0 | Hugging Face / `omnilingual-asr` |
+| `Darayut/sota-large` | no disponible | no disponible | no disponible | no disponible | Apache 2.0 (presumiblemente, no confirmado en la informacion disponible) | Hugging Face (`Darayut/sota-large`) |
 
 Frente a su profesor, sota-base gana 1,08 puntos de CER en khemer y reduce el coste de inferencia unas 3,15 veces, pero pierde 5,26 puntos de WER en LibriSpeech test-clean y 13,5 en test-other. Frente al modelo original de Meta, la mejora en khemer es de 7,05 puntos de CER, aunque el original sigue siendo mejor en ingles (6,53 frente a 11,15 en test-clean).
 
@@ -96,11 +96,11 @@ Frente a su profesor, sota-base gana 1,08 puntos de CER en khemer y reduce el co
 - Integracion limitada: al no cargar en fairseq2 ni en `omnilingual-asr`, y sin soporte en vLLM, llama.cpp, Ollama ni TGI, el despliegue depende del codigo `omniprune` del autor, con el coste de mantenimiento que implica.
 - Sesgos no evaluados: la model card no publica analisis de sesgos por genero, edad, dialecto o region; la representacion de variedades del khemer y del ingles depende de DDD, FLEURS y LibriSpeech.
 - Licencia Apache 2.0, que permite uso comercial y modificacion con atribucion. Los pesos derivan de `omniASR_CTC_300M` de Meta (Apache 2.0) y `omniprune/hardconcrete.py` se porta de DiariZen (MIT), derivado a su vez de DPHuBERT y FLOP: hay que conservar los avisos de atribucion correspondientes.
-- Modelo con 0 descargas y 0 likes en HuggingFace en el momento de la consulta: no hay validacion independiente de las cifras publicadas, que proceden unicamente del autor.
+- Modelo con 0 descargas y 0 likes en Hugging Face en el momento de la consulta: no hay validacion independiente de las cifras publicadas, que proceden unicamente del autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Darayut/sota-base
+- Modelo en Hugging Face: https://huggingface.co/Darayut/sota-base
 - Modelo hermano de mayor tamano: https://huggingface.co/Darayut/sota-large
 - Profesor afinado: https://huggingface.co/Darayut/omniASR-CTC-300M-km-en
 - Articulo de la receta de poda: *Fine-tune Before Structured Pruning* — https://arxiv.org/abs/2505.24111

@@ -4,7 +4,7 @@
 
 Moonshine Streaming Small - Japanese es un modelo de reconocimiento automático del habla (ASR) diseñado para transcripción incremental en japonés, desarrollado por Useful Sensors y publicado bajo el nombre de moonshine-ai. Con 112,9 millones de parámetros, está pensado para ejecutarse en dispositivos de gama baja (edge-class hardware) y ofrece baja latencia gracias a su arquitectura de streaming con ventanas deslizantes en el encoder. El modelo se entrena sobre un corpus masivo de audio pseudo-etiquetado (unas 159.000 horas combinadas de podcasts y YouTube) y se distribuye con licencia MIT, lo que facilita su integración comercial.
 
-La relevancia actual de este modelo radica en que cubre un nicho poco atendido: ASR japonés de alta calidad, en tiempo real y con un tamaño reducido que cabe en entornos con recursos limitados. Su frontend de audio a 50 Hz y su encoder con ventanas deslizantes permiten transcribir mientras se habla, sin esperar al final de la frase. El modelo se ofrece en formato safetensors y es compatible con la librería Transformers de HuggingFace.
+La relevancia actual de este modelo radica en que cubre un nicho poco atendido: ASR japonés de alta calidad, en tiempo real y con un tamaño reducido que cabe en entornos con recursos limitados. Su frontend de audio a 50 Hz y su encoder con ventanas deslizantes permiten transcribir mientras se habla, sin esperar al final de la frase. El modelo se ofrece en formato safetensors y es compatible con la librería Transformers de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ La diferencia es mínima (0.054 puntos de macro excluyendo casos de fuga), atrib
 
 - No se proporcionan datos específicos de VRAM en la documentación del modelo.
 - Con 112,9 M de parámetros, el modelo es ligero y está diseñado para ejecutarse en hardware de gama baja (edge-class), por lo que es plausible que quepa en GPUs de consumo como una RTX 3060 o incluso en CPU, pero no hay cifras oficiales.
-- Opciones de despliegue: compatible con la librería Transformers de HuggingFace; no se mencionan vLLM, llama.cpp u otras herramientas específicas.
+- Opciones de despliegue: compatible con la librería Transformers de Hugging Face; no se mencionan vLLM, llama.cpp u otras herramientas específicas.
 - La latencia estimada es baja gracias al diseño streaming, pero no se ofrecen valores concretos de throughput.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moonshine-ai/moonshine-streaming-small-ja
+- Modelo en Hugging Face: https://huggingface.co/moonshine-ai/moonshine-streaming-small-ja
 - Modelo base en inglés: https://huggingface.co/moonshine-ai/moonshine-streaming-small
 - Repositorio GitHub de Moonshine: https://github.com/moonshine-ai/moonshine
 - Ejemplo de integración iOS: https://github.com/moonshine-ai/moonshine/tree/main/examples/ios/Transcriber/models/small-streaming-en

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-BjarneNPO/Qwen2-1.5B-lora-tensorboard-merged es un modelo de generación de texto publicado en HuggingFace por el usuario BjarneNPO. Por el nombre del repositorio se deduce que se trata de un ajuste fino mediante LoRA sobre el modelo base Qwen2-1.5B, posteriormente fusionado (merged) en los pesos finales, y que el proceso de entrenamiento se monitorizó con TensorBoard. El repositorio contiene pesos en formato safetensors con 1.543.714.304 parámetros totales (aproximadamente 1,54 mil millones) y un tamaño de 3,1 GB.
+BjarneNPO/Qwen2-1.5B-lora-tensorboard-merged es un modelo de generación de texto publicado en Hugging Face por el usuario BjarneNPO. Por el nombre del repositorio se deduce que se trata de un ajuste fino mediante LoRA sobre el modelo base Qwen2-1.5B, posteriormente fusionado (merged) en los pesos finales, y que el proceso de entrenamiento se monitorizó con TensorBoard. El repositorio contiene pesos en formato safetensors con 1.543.714.304 parámetros totales (aproximadamente 1,54 mil millones) y un tamaño de 3,1 GB.
 
-El modelo resuelve, en principio, el mismo problema que cualquier ajuste de instrucciones sobre una base pequeña: disponer de un generador de texto conversacional ejecutable en hardware modesto. Sin embargo, la model card publicada es la plantilla automática de HuggingFace y no ha sido cumplimentada por el autor: no declara datos de entrenamiento, hiperparámetros, licencia, idiomas, evaluación ni uso previsto. Tampoco se ha publicado información adicional en la búsqueda web realizada.
+El modelo resuelve, en principio, el mismo problema que cualquier ajuste de instrucciones sobre una base pequeña: disponer de un generador de texto conversacional ejecutable en hardware modesto. Sin embargo, la model card publicada es la plantilla automática de Hugging Face y no ha sido cumplimentada por el autor: no declara datos de entrenamiento, hiperparámetros, licencia, idiomas, evaluación ni uso previsto. Tampoco se ha publicado información adicional en la búsqueda web realizada.
 
 Su relevancia actual es, por tanto, limitada y experimental. Resulta interesante como ejemplo de pipeline de ajuste LoRA con fusión de pesos en la familia Qwen2, y puede servir para reproducir flujos de trabajo de fine-tuning en una GPU de consumo, pero carece de documentación suficiente para evaluar su calidad, sus sesgos o su idoneidad en producción.
 
@@ -72,11 +72,11 @@ No hay datos de rendimiento de este modelo, por lo que la comparacion se limita 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BjarneNPO/Qwen2-1.5B-lora-tensorboard-merged | 1,54 B | No disponible | No disponible | HuggingFace, 0 descargas |
-| Qwen2-1.5B (modelo base) | 1,5 B | 32 768 tokens segun documentacion publica | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Qwen2.5-1.5B | 1,5 B | 32 768 tokens segun documentacion publica | Apache 2.0 (salvo variantes con condiciones adicionales) | HuggingFace, muy extendido |
-| TinyLlama-1.1B | 1,1 B | 2 048 tokens | Apache 2.0 | HuggingFace |
-| SmolLM2-1.7B | 1,7 B | 8 192 tokens segun documentacion publica | Apache 2.0 | HuggingFace |
+| BjarneNPO/Qwen2-1.5B-lora-tensorboard-merged | 1,54 B | No disponible | No disponible | Hugging Face, 0 descargas |
+| Qwen2-1.5B (modelo base) | 1,5 B | 32 768 tokens segun documentacion publica | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Qwen2.5-1.5B | 1,5 B | 32 768 tokens segun documentacion publica | Apache 2.0 (salvo variantes con condiciones adicionales) | Hugging Face, muy extendido |
+| TinyLlama-1.1B | 1,1 B | 2 048 tokens | Apache 2.0 | Hugging Face |
+| SmolLM2-1.7B | 1,7 B | 8 192 tokens segun documentacion publica | Apache 2.0 | Hugging Face |
 
 La diferencia principal frente a las alternativas no es tecnica sino documental: los modelos citados publican licencia, idiomas, contexto y resultados de evaluacion, mientras que este repositorio no aporta ninguno de esos datos.
 
@@ -95,7 +95,7 @@ La diferencia principal frente a las alternativas no es tecnica sino documental:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BjarneNPO/Qwen2-1.5B-lora-tensorboard-merged
+- Modelo en Hugging Face: https://huggingface.co/BjarneNPO/Qwen2-1.5B-lora-tensorboard-merged
 - Paper citado en los tags (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo. El unico resultado devuelto por la busqueda es una guia turistica del estrecho de Magallanes, sin relacion con el modelo.

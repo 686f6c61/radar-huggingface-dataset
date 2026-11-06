@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Promanmmm/Poizi` es un modelo de IA publicado en HuggingFace bajo licencia `openrail`. Sin embargo, la información disponible en su model card es extremadamente limitada: únicamente se especifica la licencia, sin detalles sobre arquitectura, tamaño, entrenamiento o capacidades. Los resultados de búsqueda web asociados no aportan datos técnicos concretos sobre este modelo, ya que corresponden a directorios generales de modelos de IA (Promptomania, PromptPlanet, Arena AI, Epoch AI) que no mencionan específicamente a `Poizi`.
+El modelo `Promanmmm/Poizi` es un modelo de IA publicado en Hugging Face bajo licencia `openrail`. Sin embargo, la información disponible en su model card es extremadamente limitada: únicamente se especifica la licencia, sin detalles sobre arquitectura, tamaño, entrenamiento o capacidades. Los resultados de búsqueda web asociados no aportan datos técnicos concretos sobre este modelo, ya que corresponden a directorios generales de modelos de IA (Promptomania, PromptPlanet, Arena AI, Epoch AI) que no mencionan específicamente a `Poizi`.
 
-Dada la ausencia de documentación técnica, no es posible determinar qué problema resuelve, su relevancia actual, ni sus especificaciones. Se recomienda consultar directamente el repositorio de HuggingFace para obtener información actualizada, o contactar con el autor si se requiere una evaluación técnica rigurosa. Esta ficha se limita a reflejar los datos disponibles y marca explícitamente los campos no documentados.
+Dada la ausencia de documentación técnica, no es posible determinar qué problema resuelve, su relevancia actual, ni sus especificaciones. Se recomienda consultar directamente el repositorio de Hugging Face para obtener información actualizada, o contactar con el autor si se requiere una evaluación técnica rigurosa. Esta ficha se limita a reflejar los datos disponibles y marca explícitamente los campos no documentados.
 
 ## Especificaciones tecnicas
 
@@ -52,7 +52,7 @@ No disponible. No se ha encontrado información que permita comparar este modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Promanmmm/Poizi
+- Repositorio Hugging Face: https://huggingface.co/Promanmmm/Poizi
 - Directorio de modelos Promptomania: https://promptomania.com/models
 - Leaderboard de PromptPlanet: https://promptplanet.ai/leaderboard
 - Arena AI (leaderboard general): https://arena.ai/

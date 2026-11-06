@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dkingtutcd/gemma-e4b-mutation-driven-5974-failure-driven-5974` es un ajuste fino (fine-tuning) del modelo multimodal Gemma 4 E4B en su variante instruct, publicado por el usuario dkingtutcd en HuggingFace. El modelo base es `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`, una version cuantizada a 4 bits preparada por Unsloth para entrenamiento eficiente; el autor ha subido el resultado del ajuste en FP16. El pipeline declarado es `image-text-to-text`, lo que indica que conserva la capacidad multimodal de entrada (imagen y texto) del modelo original.
+`dkingtutcd/gemma-e4b-mutation-driven-5974-failure-driven-5974` es un ajuste fino (fine-tuning) del modelo multimodal Gemma 4 E4B en su variante instruct, publicado por el usuario dkingtutcd en Hugging Face. El modelo base es `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`, una version cuantizada a 4 bits preparada por Unsloth para entrenamiento eficiente; el autor ha subido el resultado del ajuste en FP16. El pipeline declarado es `image-text-to-text`, lo que indica que conserva la capacidad multimodal de entrada (imagen y texto) del modelo original.
 
 El modelo resuelve, en principio, el mismo tipo de tareas que el Gemma 4 E4B instruct original: generacion de texto, razonamiento y comprension de imagenes, con un enfoque adicional derivado del dataset de ajuste, que por el nombre del repositorio ("mutation-driven", "failure-driven") sugiere un entrenamiento orientado a corregir fallos o a generar variaciones sobre casos problematicos. No obstante, la model card no documenta el dataset, el procedimiento de entrenamiento ni los hiperparametros, por lo que estas inferencias no pueden confirmarse.
 
@@ -25,7 +25,7 @@ Es relevante ahora por dos motivos: por un lado, demuestra el flujo habitual de 
 
 El modelo es un ajuste fino del Gemma 4 E4B instruct, un transformer multimodal de la familia Gemma 4 que acepta imagenes y texto como entrada y genera texto. El autor no detalla en la model card la arquitectura interna (numero de capas, dimensiones, mecanismo de atencion, posible mezcla de expertos o parametros efectivos), por lo que no es posible confirmar si "E4B" implica una arquitectura de parametros efectivos o una variante concreta de la familia. El pipeline declarado y la etiqueta `gemma4` confirman la pertenencia a esa familia.
 
-En cuanto al entrenamiento, la unica informacion disponible es que se realizo con Unsloth y la libreria TRL de HuggingFace, con una afirmacion de "2x faster" respecto a un entrenamiento convencional. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF, DPO o ajuste supervisado, ni los hiperparametros. El nombre del repositorio sugiere un dataset construido a partir de mutaciones y fallos, pero se trata de una inferencia no verificada. El modelo base ya era un ajuste instruct de Unsloth sobre Gemma 4 E4B, de modo que este modelo es un ajuste de segundo nivel (fine-tune de un fine-tune cuantizado).
+En cuanto al entrenamiento, la unica informacion disponible es que se realizo con Unsloth y la libreria TRL de Hugging Face, con una afirmacion de "2x faster" respecto a un entrenamiento convencional. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF, DPO o ajuste supervisado, ni los hiperparametros. El nombre del repositorio sugiere un dataset construido a partir de mutaciones y fallos, pero se trata de una inferencia no verificada. El modelo base ya era un ajuste instruct de Unsloth sobre Gemma 4 E4B, de modo que este modelo es un ajuste de segundo nivel (fine-tune de un fine-tune cuantizado).
 
 ## Capacidades
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Modalidad | Disponibilidad |
 |---|---|---|---|---|---|
-| dkingtutcd/gemma-e4b-mutation-driven-5974-failure-driven-5974 | ~8.000 M (safetensors) | no disponible | apache-2.0 | imagen-texto a texto | HuggingFace, 0 descargas |
-| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (modelo base) | no disponible en la informacion | no disponible | no disponible en la informacion | imagen-texto a texto | HuggingFace (Unsloth) |
-| Gemma 4 E4B instruct (original) | no disponible en la informacion | no disponible | no disponible en la informacion | imagen-texto a texto | HuggingFace (Google) |
+| dkingtutcd/gemma-e4b-mutation-driven-5974-failure-driven-5974 | ~8.000 M (safetensors) | no disponible | apache-2.0 | imagen-texto a texto | Hugging Face, 0 descargas |
+| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (modelo base) | no disponible en la informacion | no disponible | no disponible en la informacion | imagen-texto a texto | Hugging Face (Unsloth) |
+| Gemma 4 E4B instruct (original) | no disponible en la informacion | no disponible | no disponible en la informacion | imagen-texto a texto | Hugging Face (Google) |
 
 La comparativa con alternativas de la misma categoria (otros modelos multimodales de ~8.000 millones de parametros) no puede completarse con los datos proporcionados. Se recomienda contrastar con la model card oficial de Gemma 4 E4B para obtener contexto, licencia y benchmarks del modelo original.
 
@@ -85,6 +85,6 @@ La comparativa con alternativas de la misma categoria (otros modelos multimodale
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dkingtutcd/gemma-e4b-mutation-driven-5974-failure-driven-5974
+- Hugging Face: https://huggingface.co/dkingtutcd/gemma-e4b-mutation-driven-5974-failure-driven-5974
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E4B-it-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth

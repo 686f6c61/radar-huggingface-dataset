@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`shbaydadaev/qwen-ocr-standalone-fp8` es un modelo de imagen-a-texto (image-text-to-text) especializado en reconocimiento óptico de caracteres (OCR), publicado por el usuario shbaydadaev en HuggingFace. Se trata de un fine-tune del modelo base Qwen/Qwen3.8-27B-FP8, un transformer denso de aproximadamente 27.780 millones de parámetros, cuantizado en FP8 y distribuido en formato safetensors para su uso con la librería transformers y con vLLM.
+`shbaydadaev/qwen-ocr-standalone-fp8` es un modelo de imagen-a-texto (image-text-to-text) especializado en reconocimiento óptico de caracteres (OCR), publicado por el usuario shbaydadaev en Hugging Face. Se trata de un fine-tune del modelo base Qwen/Qwen3.8-27B-FP8, un transformer denso de aproximadamente 27.780 millones de parámetros, cuantizado en FP8 y distribuido en formato safetensors para su uso con la librería transformers y con vLLM.
 
-El modelo está orientado a tareas de extracción de texto a partir de imágenes, con soporte declarado para persa (fa) y árabe (ar), lo que lo sitúa en el nicho de OCR para escrituras de origen árabe, habitualmente menos cubierto que el latino o el CJK. La licencia es Apache 2.0, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+El modelo está orientado a tareas de extracción de texto a partir de imágenes, con soporte declarado para persa (fa) y árabe (ar), lo que lo sitúa en el nicho de OCR para escrituras de origen árabe, habitualmente menos cubierto que el latino o el CJK. La licencia es Apache 2.0, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 En el momento de redactar esta ficha el modelo no registra descargas ni interacciones, se publicó el 1 de noviembre de 2026 y no incluye documentación técnica, datos de entrenamiento ni resultados de benchmarks en la información disponible. Su relevancia potencial reside en combinar un modelo base grande (27B) con cuantización FP8 y un enfoque específico de OCR multilingüe para árabe y persa, pero la ausencia de validación pública limita seriamente su adopción en producción sin una evaluación propia.
 
@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento del modelo ni de alternativas comparables 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede complicar la automatización en CI/CD.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede complicar la automatización en CI/CD.
 - Ausencia total de documentación técnica: no hay model card detallada, datos de entrenamiento, evaluación ni instrucciones de uso más allá de los tags.
 - Sin benchmarks publicados: no es posible verificar la calidad del OCR ni compararla con alternativas consolidadas.
 - Idiomas limitados a fa y ar según los tags; el rendimiento en otros idiomas (incluido el español) no está garantizado.
@@ -82,5 +82,5 @@ No se dispone de datos de rendimiento del modelo ni de alternativas comparables 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shbaydadaev/qwen-ocr-standalone-fp8
+- Hugging Face: https://huggingface.co/shbaydadaev/qwen-ocr-standalone-fp8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B-FP8

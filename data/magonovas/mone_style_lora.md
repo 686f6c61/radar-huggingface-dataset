@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mone_style_LoRA es un adaptador LoRA de bajo rango publicado por el usuario magonovas en HuggingFace, entrenado con DreamBooth sobre el modelo base stabilityai/stable-diffusion-xl-base-1.0. No es un modelo de lenguaje ni un modelo de difusión completo, sino un conjunto de pesos adicionales (0,1 GB en el repositorio) que modifican el comportamiento del U-Net de SDXL para reproducir un estilo pictórico concreto, activado mediante la frase "pastel painting in Mone style". Se distribuye en formato safetensors y se carga con la librería diffusers.
+mone_style_LoRA es un adaptador LoRA de bajo rango publicado por el usuario magonovas en Hugging Face, entrenado con DreamBooth sobre el modelo base stabilityai/stable-diffusion-xl-base-1.0. No es un modelo de lenguaje ni un modelo de difusión completo, sino un conjunto de pesos adicionales (0,1 GB en el repositorio) que modifican el comportamiento del U-Net de SDXL para reproducir un estilo pictórico concreto, activado mediante la frase "pastel painting in Mone style". Se distribuye en formato safetensors y se carga con la librería diffusers.
 
 El adaptador resuelve un problema muy específico: personalizar la estética de las imágenes generadas por SDXL sin necesidad de reentrenar ni de almacenar una copia completa del modelo base (unos 3.500 millones de parámetros en el U-Net y los codificadores de texto). Al ser un LoRA, se puede fusionar o descargar de forma dinámica, lo que abarata el almacenamiento y permite combinar varios adaptadores en un mismo pipeline.
 
@@ -84,12 +84,12 @@ La comparación relevante es siempre contra el modelo base: este LoRA no aporta 
 - Limitación de 77 tokens por codificador de texto en el pipeline estándar; prompts largos requieren chunking y pueden degradar la coherencia entre el texto y la imagen.
 - La licencia openrail++ impone restricciones de uso (anexo de usos prohibidos) y obliga a mantener el aviso de licencia y las atribuciones al redistribuir el modelo o sus derivados. El uso comercial es posible, pero debe revisarse caso por caso.
 - Al ser un derivado de SDXL 1.0, se heredan también las limitaciones del modelo base: sesgos demográficos y culturales en las imágenes generadas, dificultades con manos y texto, y sensibilidad a la redacción del prompt.
-- La fecha de creación registrada en HuggingFace (25 de septiembre de 2026) es posterior a la fecha actual según los metadatos disponibles, un detalle anómalo que conviene verificar.
+- La fecha de creación registrada en Hugging Face (25 de septiembre de 2026) es posterior a la fecha actual según los metadatos disponibles, un detalle anómalo que conviene verificar.
 - El autor no publica código de ejemplo funcional: el fragmento de la model card está marcado como TODO.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/magonovas/mone_style_LoRA
+- Modelo en Hugging Face: https://huggingface.co/magonovas/mone_style_LoRA
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE utilizado en el entrenamiento: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
 - DreamBooth (página del método): https://dreambooth.github.io/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El artefacto identificado como `davidwdw/fa-systematic-eval-fixtures-20260926-6789c5c62c03` no es un modelo de lenguaje: es un archivo versionado de fixtures de evaluación publicado en HuggingFace. Su propia model card lo describe como "versioned fleet archive" asociado a la receta canónica `evaluations/2026-09-26_b1k_all_existing_queue`, con un nivel ("tier") compuesto por instancias congeladas, fixtures de entrenamiento y replay, procedencia de runtime y aceptación de replay. No se anuncia ningún peso, arquitectura ni capacidad generativa.
+El artefacto identificado como `davidwdw/fa-systematic-eval-fixtures-20260926-6789c5c62c03` no es un modelo de lenguaje: es un archivo versionado de fixtures de evaluación publicado en Hugging Face. Su propia model card lo describe como "versioned fleet archive" asociado a la receta canónica `evaluations/2026-09-26_b1k_all_existing_queue`, con un nivel ("tier") compuesto por instancias congeladas, fixtures de entrenamiento y replay, procedencia de runtime y aceptación de replay. No se anuncia ningún peso, arquitectura ni capacidad generativa.
 
 El repositorio ocupa 0,0 GB, acumula 0 descargas y 0 likes, y fue creado el 26 de septiembre de 2026 a las 20:23:05 UTC, con una única actualización 17 segundos después (20:23:22 UTC). No declara licencia, idiomas, pipeline ni etiquetas de tarea; la única etiqueta presente es `region:us`. El autor es el usuario `davidwdw`.
 
@@ -73,7 +73,7 @@ No procede aplicarlos: el artefacto no es un modelo evaluable, sino material de 
 - GPU recomendadas: no aplica.
 - Compatibilidad con GPU de consumo: no aplica.
 - Almacenamiento: el repositorio declara 0,0 GB, por lo que el coste de disco es despreciable en la información disponible; conviene confirmar el tamaño real tras la descarga, dado que el repositorio podría no exponer todos sus ficheros en los metadatos.
-- Opciones de despliegue: no aplican vLLM, llama.cpp, Ollama ni TGI. El consumo se realiza mediante descarga del snapshot desde HuggingFace y verificación posterior de `SHA256SUMS`.
+- Opciones de despliegue: no aplican vLLM, llama.cpp, Ollama ni TGI. El consumo se realiza mediante descarga del snapshot desde Hugging Face y verificación posterior de `SHA256SUMS`.
 - Latencia y throughput: no disponibles; dependen del pipeline de evaluación que consuma los fixtures, no del artefacto en sí.
 
 ## Comparativa con modelos similares
@@ -94,8 +94,8 @@ No disponible. La información proporcionada no identifica artefactos comparable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-systematic-eval-fixtures-20260926-6789c5c62c03
-- Model card del autor (incluida en la información de HuggingFace): descripción de "systematic-eval-fixtures-20260926", receta `evaluations/2026-09-26_b1k_all_existing_queue` y aviso de verificación mediante `SHA256SUMS`.
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-systematic-eval-fixtures-20260926-6789c5c62c03
+- Model card del autor (incluida en la información de Hugging Face): descripción de "systematic-eval-fixtures-20260926", receta `evaluations/2026-09-26_b1k_all_existing_queue` y aviso de verificación mediante `SHA256SUMS`.
 - AI Features Don't Fail Tests. They Fail Differently Every Time: https://www.codexical.com/posts/2026-06-20-ai-feature-testing-non-determinism (contexto general sobre evaluación no determinista, sin relación directa con el artefacto)
 - SocioEval: A Template-Based Framework for Evaluating Socioeconomic Bias in Foundation Models: https://arxiv.org/pdf/2604.02660v1 (contexto general sobre marcos de evaluación, sin relación directa con el artefacto)
 - Agent Evaluation: How to Test and Measure Agentic AI Performance: https://machinelearningmastery.com/agent-evaluation-how-to-test-and-measure-agentic-ai-performance/ (contexto general sobre evaluación de agentes, sin relación directa con el artefacto)

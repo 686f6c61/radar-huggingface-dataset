@@ -42,7 +42,7 @@ Tampoco hay datos sobre el entrenamiento: numero de tokens, composicion del data
 - Sin soporte de vision: la capacidad de imagen ha sido eliminada de forma explicita, segun los tags y la model card.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas aparece vacio en los metadatos de HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas aparece vacio en los metadatos de Hugging Face).
 - Modo de razonamiento explicito (thinking mode): no disponible.
 - Audio u otras modalidades: no disponible.
 
@@ -109,6 +109,6 @@ Diferencias destacables: frente al modelo base, esta version renuncia a la visio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DefualtDerg/Qwen3.5-2B_TextOnly_GGUF
+- Repositorio en Hugging Face: https://huggingface.co/DefualtDerg/Qwen3.5-2B_TextOnly_GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - No se han encontrado en la informacion proporcionada otros enlaces (papers, blogs tecnicos, repositorios de codigo ni demos) asociados a este modelo.

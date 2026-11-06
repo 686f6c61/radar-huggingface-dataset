@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace contiene un documento académico en formato Markdown sobre el tema de *text image retrieval* (recuperación de texto e imagen). El autor es Oliviajacksonfa y el artefacto principal es un archivo llamado `paper_017916226_text_image_retrieval.md` que sigue una estructura de paper académico estándar (abstract, introducción, preliminares, método, experimentos y discusión).
+Este repositorio de Hugging Face contiene un documento académico en formato Markdown sobre el tema de *text image retrieval* (recuperación de texto e imagen). El autor es Oliviajacksonfa y el artefacto principal es un archivo llamado `paper_017916226_text_image_retrieval.md` que sigue una estructura de paper académico estándar (abstract, introducción, preliminares, método, experimentos y discusión).
 
 No se trata de un modelo de inteligencia artificial entrenado, sino de un repositorio de documentación que contiene el texto completo de un artículo de investigación. Los metadatos indican que el documento está escrito en texto plano, con estilo de citación autor-año, y con un estilo argumentativo y cauteloso. La licencia es BSD-3-Clause, lo que permite su uso, modificación y redistribución con atribución.
 
@@ -39,7 +39,7 @@ No aplica. Este repositorio no contiene un modelo entrenado ni arquitectura algu
 - Revisión de literatura: el documento sirve como fuente secundaria para quienes necesiten citar trabajos sobre *text retrieval* en sus propias publicaciones.
 - Análisis de estilo académico: puede usarse como ejemplo de estructura de paper (abstract, intro, método, etc.) para estudiantes que aprenden a redactar artículos científicos.
 - Evaluación de metodologías: los lectores pueden extraer la metodología propuesta y compararla con otros enfoques de recuperación de imágenes.
-- Estudio de formatos: el repositorio muestra cómo se puede distribuir un paper en HuggingFace usando un simple archivo Markdown, útil para quienes quieran publicar documentación técnica en esta plataforma.
+- Estudio de formatos: el repositorio muestra cómo se puede distribuir un paper en Hugging Face usando un simple archivo Markdown, útil para quienes quieran publicar documentación técnica en esta plataforma.
 - Extracción de contenido: dado que es un archivo de texto plano, se puede procesar automáticamente con herramientas de NLP para análisis de frecuencia de términos o clasificación temática.
 
 ## Benchmarks y rendimiento
@@ -64,6 +64,6 @@ No disponible. No existe información sobre modelos comparables en el repositori
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Oliviajacksonfa/paper_017916226_text_image_retrieval
+- Repositorio de Hugging Face: https://huggingface.co/Oliviajacksonfa/paper_017916226_text_image_retrieval
 - Google Scholar (para búsqueda de papers relacionados): https://scholar.google.com/
 - Google Images (referencia general sobre búsqueda de imágenes): https://images.google.com/

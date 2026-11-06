@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Arquitectura | Parámetros | Contexto | Precisión CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| smai-a4-cifar10-mlp | MLP 3072→256→128→10 | 820.874 | no aplica | 48,16 % (test) | MIT | HuggingFace (0 descargas) |
+| smai-a4-cifar10-mlp | MLP 3072→256→128→10 | 820.874 | no aplica | 48,16 % (test) | MIT | Hugging Face (0 descargas) |
 | ResNet-20 (referencia académica) | CNN residual | ~0,27 M | no aplica | ~91-92 % (test) | varía | implementaciones públicas |
 | Vision Transformer ViT-B/16 | Transformer | ~86 M | no aplica (entrada 16x16 patches) | ~98 % con preentrenamiento a gran escala | varía | múltiples repositorios |
 | LeNet-5 | CNN | ~60 K | no aplica | ~70-75 % (test, CIFAR-10 adaptado) | varía | implementaciones públicas |
@@ -85,9 +85,9 @@ Nota: los valores de precisión de los modelos comparativos son referencias habi
 - Licencia MIT: permite uso comercial y modificación, pero el autor no ofrece garantías ni soporte; el uso comercial de un clasificador con 48 % de precisión es desaconsejable.
 - Caveat de producción: repositorio de 0.0 GB y sin formato de pesos documentado; no se puede verificar la integridad de los artefactos ni la reproducibilidad del entrenamiento.
 - Sin información sobre el proceso de entrenamiento (épocas, optimizador, aumentos de datos), lo que impide reproducir los resultados.
-- El campo `pipeline` no está disponible, por lo que la integración automática en HuggingFace Inference API no está garantizada.
+- El campo `pipeline` no está disponible, por lo que la integración automática en Hugging Face Inference API no está garantizada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Santhlabs/smai-a4-cifar10-mlp
+- Hugging Face: https://huggingface.co/Santhlabs/smai-a4-cifar10-mlp
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

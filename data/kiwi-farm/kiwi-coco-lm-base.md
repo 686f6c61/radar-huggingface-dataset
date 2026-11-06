@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kiwi-farm/kiwi-coco-lm-base es un modelo publicado en HuggingFace por el usuario kiwi-farm, con licencia Apache 2.0 y pesos en formato safetensors. La etiqueta principal del repositorio es "modernbert", lo que apunta a un encoder transformer de la familia ModernBERT, aunque la model card no aporta ninguna descripción, dataset de entrenamiento ni detalles de arquitectura mas alla de la linea de licencia.
+kiwi-farm/kiwi-coco-lm-base es un modelo publicado en Hugging Face por el usuario kiwi-farm, con licencia Apache 2.0 y pesos en formato safetensors. La etiqueta principal del repositorio es "modernbert", lo que apunta a un encoder transformer de la familia ModernBERT, aunque la model card no aporta ninguna descripción, dataset de entrenamiento ni detalles de arquitectura mas alla de la linea de licencia.
 
 El repositorio ocupa 0,3 GB y registra 0 descargas y 0 likes en el momento de la consulta, con fecha de creacion y ultima actualizacion del 24 de septiembre de 2026. No se declaran idiomas soportados, pipeline de inferencia, numero de parametros ni longitud de contexto, por lo que se trata de un modelo practicamente indocumentado.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada: no hay resultados de benchmarks, no hay docume
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura concreta, el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de ajuste tipo RLHF, DPO o instrucciones. La unica pista disponible es la etiqueta "modernbert" y el sufijo "base" del nombre del modelo, que en la nomenclatura habitual de HuggingFace indica un modelo preentrenado sin ajuste posterior por instrucciones.
+No se ha publicado informacion sobre la arquitectura concreta, el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de ajuste tipo RLHF, DPO o instrucciones. La unica pista disponible es la etiqueta "modernbert" y el sufijo "base" del nombre del modelo, que en la nomenclatura habitual de Hugging Face indica un modelo preentrenado sin ajuste posterior por instrucciones.
 
 Si el modelo sigue efectivamente la familia ModernBERT, cabria esperar un encoder transformer con embeddings posicionales rotatorios (RoPE), atencion alternada local/global, atencion con Flash Attention 2 y tecnicas de "unpadding" para mayor eficiencia en secuencias cortas, ademas de un contexto mucho mayor que los 512 tokens de BERT clasico. Estas caracteristicas son propias de la familia ModernBERT segun su documentacion publica, pero no estan confirmadas para este repositorio concreto y deben verificarse inspeccionando los pesos.
 
@@ -69,10 +69,10 @@ Los datos de los modelos alternativos proceden de su documentacion publica y no 
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kiwi-farm/kiwi-coco-lm-base | No confirmada (etiqueta "modernbert") | No disponible (estimado 75-150 M) | No disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| answerdotai/ModernBERT-base | Encoder transformer ModernBERT | ~149 M | 8.192 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| google-bert/bert-base-uncased | Encoder transformer BERT | ~110 M | 512 tokens | Apache 2.0 | HuggingFace, referencia historica |
-| FacebookAI/roberta-base | Encoder transformer RoBERTa | ~125 M | 512 tokens | MIT | HuggingFace, ampliamente utilizado |
+| kiwi-farm/kiwi-coco-lm-base | No confirmada (etiqueta "modernbert") | No disponible (estimado 75-150 M) | No disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| answerdotai/ModernBERT-base | Encoder transformer ModernBERT | ~149 M | 8.192 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| google-bert/bert-base-uncased | Encoder transformer BERT | ~110 M | 512 tokens | Apache 2.0 | Hugging Face, referencia historica |
+| FacebookAI/roberta-base | Encoder transformer RoBERTa | ~125 M | 512 tokens | MIT | Hugging Face, ampliamente utilizado |
 
 No hay datos de rendimiento de kiwi-coco-lm-base que permitan una comparacion cuantitativa con estas alternativas.
 
@@ -90,6 +90,6 @@ No hay datos de rendimiento de kiwi-coco-lm-base que permitan una comparacion cu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kiwi-farm/kiwi-coco-lm-base
+- Hugging Face: https://huggingface.co/kiwi-farm/kiwi-coco-lm-base
 - Model card del autor: sin contenido tecnico, unicamente la linea de licencia Apache 2.0
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la busqueda web realizada. Los resultados obtenidos corresponden a sitios sin relacion (Kiwi.com, kiwi.fr, Wikipedia sobre la fruta kiwi y un articulo divulgativo sobre nutricion).

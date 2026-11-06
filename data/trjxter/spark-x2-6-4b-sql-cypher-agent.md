@@ -76,8 +76,8 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 | Modelo | Parametros | Contexto | Precision de ejecucion (global) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spark-X2.6-4B-SQL-Cypher-Agent | 4,1B | no disponible | 43,7% | Apache 2.0 | HuggingFace (bf16 + GGUF) |
-| XHToken/Spark-X2.6-4B (base) | 4,1B | no disponible | 32,5% | no disponible en esta ficha | HuggingFace |
+| Spark-X2.6-4B-SQL-Cypher-Agent | 4,1B | no disponible | 43,7% | Apache 2.0 | Hugging Face (bf16 + GGUF) |
+| XHToken/Spark-X2.6-4B (base) | 4,1B | no disponible | 32,5% | no disponible en esta ficha | Hugging Face |
 
 No se identifican en la informacion disponible otros modelos de tamano y tarea comparables con datos publicados.
 
@@ -96,7 +96,7 @@ No se identifican en la informacion disponible otros modelos de tamano y tarea c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trjxter/Spark-X2.6-4B-SQL-Cypher-Agent
+- Modelo en Hugging Face: https://huggingface.co/trjxter/Spark-X2.6-4B-SQL-Cypher-Agent
 - GGUF para llama.cpp: https://huggingface.co/trjxter/Spark-X2.6-4B-SQL-Cypher-Agent-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Dataset SQaLe-2: https://huggingface.co/datasets/trl-lab/SQaLe-2-text-to-SQL-Queries

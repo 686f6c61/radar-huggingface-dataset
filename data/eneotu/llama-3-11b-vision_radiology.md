@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|---|
-| eneotu/llama-3-11B-vision_radiology | 11 000 M (base) | no disponible | Si (imagen-texto) | apache-2.0 (declarada) | HuggingFace, 0 descargas | No |
-| unsloth/llama-3.2-11b-vision-instruct-unsloth-bnb-4bit (modelo base) | 11 000 M | 128 000 tokens (documentado por el autor del modelo base) | Si (imagen-texto) | sujeta a Llama 3.2 Community License | HuggingFace, ampliamente utilizado | Si, en la documentacion de Meta |
+| eneotu/llama-3-11B-vision_radiology | 11 000 M (base) | no disponible | Si (imagen-texto) | apache-2.0 (declarada) | Hugging Face, 0 descargas | No |
+| unsloth/llama-3.2-11b-vision-instruct-unsloth-bnb-4bit (modelo base) | 11 000 M | 128 000 tokens (documentado por el autor del modelo base) | Si (imagen-texto) | sujeta a Llama 3.2 Community License | Hugging Face, ampliamente utilizado | Si, en la documentacion de Meta |
 | Llama 3.2 11B Vision Instruct (original de Meta) | 11 000 M | 128 000 tokens | Si (imagen-texto) | Llama 3.2 Community License | Distribucion oficial de Meta | Si |
-| Alternativas de VLM medico abierto (p. ej. LLaVA-Med, MedGemma) | no disponible | no disponible | Si | no disponible | HuggingFace | no disponible |
+| Alternativas de VLM medico abierto (p. ej. LLaVA-Med, MedGemma) | no disponible | no disponible | Si | no disponible | Hugging Face | no disponible |
 
 La comparacion relevante es contra el propio modelo base: este ajuste no anade parametros ni cambia la arquitectura, solo modifica los pesos mediante fine-tuning sobre un dataset radiologico reducido. No se dispone de datos que permitan afirmar que mejora al modelo base en ninguna tarea concreta.
 
@@ -96,7 +96,7 @@ La comparacion relevante es contra el propio modelo base: este ajuste no anade p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eneotu/llama-3-11B-vision_radiology
+- Modelo en Hugging Face: https://huggingface.co/eneotu/llama-3-11B-vision_radiology
 - Modelo base: https://huggingface.co/unsloth/llama-3.2-11b-vision-instruct-unsloth-bnb-4bit
 - Dataset de ajuste: https://huggingface.co/datasets/unsloth/Radiology_mini
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `hwefa/MyAwesomeModel-TestRepo` es una publicación de prueba en HuggingFace, sin descargas ni artefactos subidos (tamaño 0.0 GB). La model card describe un modelo de razonamiento con mejoras respecto a una versión anterior, destacando avances en tareas de matemáticas, programación y lógica, así como una reducción de la tasa de alucinación y mejor soporte para function calling. Sin embargo, la información es genérica y no incluye datos técnicos verificables como arquitectura, número de parámetros, longitud de contexto o dataset de entrenamiento.
+El repositorio `hwefa/MyAwesomeModel-TestRepo` es una publicación de prueba en Hugging Face, sin descargas ni artefactos subidos (tamaño 0.0 GB). La model card describe un modelo de razonamiento con mejoras respecto a una versión anterior, destacando avances en tareas de matemáticas, programación y lógica, así como una reducción de la tasa de alucinación y mejor soporte para function calling. Sin embargo, la información es genérica y no incluye datos técnicos verificables como arquitectura, número de parámetros, longitud de contexto o dataset de entrenamiento.
 
 El pipeline declarado es `feature-extraction`, lo que sugiere un modelo tipo encoder, pero la descripción habla de generación y razonamiento, lo que resulta contradictorio. Es probable que se trate de un repositorio de prueba sin contenido real o con documentación provisional. La licencia es MIT, lo que permitiría uso comercial, pero al no haber pesos disponibles, no es posible utilizarlo actualmente.
 
@@ -97,6 +97,6 @@ No disponible. No se especifica el tamaño del modelo ni su categoría, por lo q
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/hwefa/MyAwesomeModel-TestRepo](https://huggingface.co/hwefa/MyAwesomeModel-TestRepo)
+- Repositorio en Hugging Face: [https://huggingface.co/hwefa/MyAwesomeModel-TestRepo](https://huggingface.co/hwefa/MyAwesomeModel-TestRepo)
 
 No se proporcionan otros enlaces (papers, blogs, repositorios de código) en la información disponible.

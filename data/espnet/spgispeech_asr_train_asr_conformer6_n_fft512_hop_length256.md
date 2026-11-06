@@ -103,5 +103,5 @@ No se ha encontrado en la información proporcionada ninguna comparación direct
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/espnet/spgispeech_asr_train_asr_conformer6_n_fft512_hop_length256
+- Modelo en Hugging Face: https://huggingface.co/espnet/spgispeech_asr_train_asr_conformer6_n_fft512_hop_length256
 - Búsqueda web realizada: no se han encontrado enlaces relevantes al modelo, paper, repositorio, blog o demo. Los resultados devueltos corresponden a páginas de soporte de Microsoft ajenas por completo al modelo, por lo que se descartan.

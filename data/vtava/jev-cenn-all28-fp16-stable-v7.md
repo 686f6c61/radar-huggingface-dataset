@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jev-CeNN All-28 Stable FP16 V7 es un checkpoint de decisión tipada (*typed-decision*) publicado por el usuario vtava en HuggingFace. No es un modelo generativo ni un chatbot: recibe una observación estructurada (por ejemplo `{"road_direction": "left", "speed": "7"}`) y una lista cerrada de opciones, y devuelve una de ellas. Su arquitectura parte de un backbone tipo ModernBERT en el que se han sustituido los 28 módulos de atención originales por módulos CeNN, manteniendo intactas las capas FFN y de normalización preentrenadas.
+Jev-CeNN All-28 Stable FP16 V7 es un checkpoint de decisión tipada (*typed-decision*) publicado por el usuario vtava en Hugging Face. No es un modelo generativo ni un chatbot: recibe una observación estructurada (por ejemplo `{"road_direction": "left", "speed": "7"}`) y una lista cerrada de opciones, y devuelve una de ellas. Su arquitectura parte de un backbone tipo ModernBERT en el que se han sustituido los 28 módulos de atención originales por módulos CeNN, manteniendo intactas las capas FFN y de normalización preentrenadas.
 
 El modelo tiene 539.623.174 parámetros en FP16 y ocupa 1,1 GB en el repositorio. La fine-tuning de atención se hizo con LoRA y se fusionó (*merged*) en los pesos QKV/WO con la forma original antes de exportar, de modo que en inferencia no hay matmuls LoRA adicionales. El checkpoint se distribuye junto con su propio cargador (`tinycenn_lm.all28_fp16.load_all28`), que preserva FP16 en CUDA y que es obligatorio: `AutoModel.from_pretrained` no funciona con este repositorio.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jev-CeNN All-28 FP16 V7 | 539,6 M | no disponible | Decision tipada (opciones cerradas) | no disponible | HuggingFace, cargador propio |
+| Jev-CeNN All-28 FP16 V7 | 539,6 M | no disponible | Decision tipada (opciones cerradas) | no disponible | Hugging Face, cargador propio |
 | ModernBERT-base | 149 M | 8192 tokens | Encoder general (clasificacion, retrieval) | Apache 2.0 | Amplia, transformers estandar |
 | ModernBERT-large | 395 M | 8192 tokens | Encoder general (clasificacion, retrieval) | Apache 2.0 | Amplia, transformers estandar |
-| `convaiinnovations/laya-typed-decisions` (upstream) | no disponible | no disponible | Decision tipada | no disponible | HuggingFace |
+| `convaiinnovations/laya-typed-decisions` (upstream) | no disponible | no disponible | Decision tipada | no disponible | Hugging Face |
 
 No se conocen modelos públicos directamente comparables en la categoría de "decisión tipada con atención sustituida"; la comparación con la familia ModernBERT es arquitectónica, no de rendimiento en la misma tarea. No hay datos para comparar exactitud en un benchmark común.
 
@@ -93,6 +93,6 @@ No se conocen modelos públicos directamente comparables en la categoría de "de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vtava/jev-cenn-all28-fp16-stable-v7
+- Modelo en Hugging Face: https://huggingface.co/vtava/jev-cenn-all28-fp16-stable-v7
 - Repositorio del cargador (commit fijado): https://github.com/vtavakkoli/TinyCeNN-LM/tree/645723441fb81c62d59231bffd29a177a5edb3ac
 - Modelo upstream de decisión tipada: https://huggingface.co/convaiinnovations/laya-typed-decisions

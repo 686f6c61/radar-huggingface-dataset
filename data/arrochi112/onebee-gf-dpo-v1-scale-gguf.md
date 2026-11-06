@@ -74,7 +74,7 @@ No se dispone de información suficiente para comparar directamente este modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arrochi112/onebee-gf-dpo-v1-scale-gguf
+- Repositorio Hugging Face: https://huggingface.co/arrochi112/onebee-gf-dpo-v1-scale-gguf
 - Repositorio del checkpoint safetensors: https://huggingface.co/arrochi112/onebee-gf-dpo-v1-scale
 - Proyecto GitHub small-mind-companion: https://github.com/arrogance231/small-mind-companion
 - Documento de resultados de entrenamiento: https://github.com/arrogance231/small-mind-companion/blob/main/docs/proper_scale_results.md

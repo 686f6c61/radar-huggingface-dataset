@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Korra es un modelo publicado en HuggingFace por el usuario COOKORA bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente declara la licencia, sin descripcion, sin especificaciones tecnicas, sin datos de entrenamiento ni ejemplos de uso. El repositorio no tiene descargas ni likes en el momento de la consulta y no declara pipeline de inferencia ni idiomas soportados.
+Korra es un modelo publicado en Hugging Face por el usuario COOKORA bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente declara la licencia, sin descripcion, sin especificaciones tecnicas, sin datos de entrenamiento ni ejemplos de uso. El repositorio no tiene descargas ni likes en el momento de la consulta y no declara pipeline de inferencia ni idiomas soportados.
 
 Por tanto, no es posible determinar con rigor que arquitectura emplea, cuantos parametros tiene, cual es su longitud de contexto o sobre que datos fue entrenado. La ficha que sigue recoge los unicos datos verificables (identificador, autor, licencia y fechas de publicacion) y marca explicitamente como "no disponible" todo aquello que no figura en la informacion proporcionada.
 
@@ -79,5 +79,5 @@ No es posible establecer una comparativa fiable porque se desconocen el tamano, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/COOKORA/korra
+- Repositorio en Hugging Face: https://huggingface.co/COOKORA/korra
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

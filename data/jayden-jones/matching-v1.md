@@ -69,5 +69,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace: jayden-jones/matching-v1](https://huggingface.co/jayden-jones/matching-v1)
+- [Hugging Face: jayden-jones/matching-v1](https://huggingface.co/jayden-jones/matching-v1)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios adicionales) en la búsqueda web.

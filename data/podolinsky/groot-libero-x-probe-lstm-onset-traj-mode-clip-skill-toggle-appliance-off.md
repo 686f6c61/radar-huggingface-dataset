@@ -72,8 +72,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ningún otro benc
 
 | Modelo | Etiqueta | Parámetros | Contexto | Resultado no visto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (`...onset-traj-mode-clip-skill-toggle-appliance-off`) | `onset_traj` | 6.622.245 | Longitud de episodio (no detallada) | 19,58 % AU-TPR | CC BY 4.0 | HuggingFace |
-| `podolinsky/groot-libero-x-probe-lstm-onset-pre-mode-clip-skill-toggle-appliance-off` | `onset_pre` | No disponible | No disponible | No disponible | CC BY 4.0 | HuggingFace |
+| Este modelo (`...onset-traj-mode-clip-skill-toggle-appliance-off`) | `onset_traj` | 6.622.245 | Longitud de episodio (no detallada) | 19,58 % AU-TPR | CC BY 4.0 | Hugging Face |
+| `podolinsky/groot-libero-x-probe-lstm-onset-pre-mode-clip-skill-toggle-appliance-off` | `onset_pre` | No disponible | No disponible | No disponible | CC BY 4.0 | Hugging Face |
 | Otros detectores de fallo para políticas VLA | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La información disponible solo permite comparar la variante de etiqueta `onset_pre` del mismo split; el autor la enlaza pero no publica sus cifras en esta model card. No se han identificado en la búsqueda web alternativas comparables con datos públicos.
@@ -93,7 +93,7 @@ La información disponible solo permite comparar la variante de etiqueta `onset_
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-traj-mode-clip-skill-toggle-appliance-off
+- Modelo en Hugging Face: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-traj-mode-clip-skill-toggle-appliance-off
 - Variante con etiqueta `onset_pre`, mismo split: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-pre-mode-clip-skill-toggle-appliance-off
 - Dataset de features LIBERO-X: https://huggingface.co/datasets/podolinsky/gr00t-libero-x-features-v3
 - Código de la sonda (`vla-probe`): https://github.com/mpodolinsky/vla-probe

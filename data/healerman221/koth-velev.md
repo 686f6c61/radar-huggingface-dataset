@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `healerman221/koth-velev` es un repositorio publicado en HuggingFace por el usuario `healerman221`, etiquetado con la región `us`. En el momento de la consulta, el repositorio no contiene información técnica pública: no se especifica arquitectura, número de parámetros, licencia, idiomas ni pipeline de uso. El tamaño del repositorio es de 0.0 GB, lo que sugiere que no se han subido pesos del modelo ni archivos de configuración relevantes. Con cero descargas y una única interacción (like), el proyecto parece estar en una fase muy temprana o ser un repositorio vacío o de prueba. Por tanto, no es posible evaluar sus capacidades ni su idoneidad para ningún caso de uso real.
+El modelo `healerman221/koth-velev` es un repositorio publicado en Hugging Face por el usuario `healerman221`, etiquetado con la región `us`. En el momento de la consulta, el repositorio no contiene información técnica pública: no se especifica arquitectura, número de parámetros, licencia, idiomas ni pipeline de uso. El tamaño del repositorio es de 0.0 GB, lo que sugiere que no se han subido pesos del modelo ni archivos de configuración relevantes. Con cero descargas y una única interacción (like), el proyecto parece estar en una fase muy temprana o ser un repositorio vacío o de prueba. Por tanto, no es posible evaluar sus capacidades ni su idoneidad para ningún caso de uso real.
 
 Dada la ausencia total de datos técnicos, esta ficha se limita a documentar la inexistencia de información pública y a señalar las carencias del repositorio. Cualquier intento de desplegar o utilizar este modelo requeriría contactar directamente con el autor o esperar a que publique los artefactos necesarios.
 
@@ -53,6 +53,6 @@ No es posible establecer una comparativa con otros modelos porque no se conocen 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/healerman221/koth-velev
+- Repositorio en Hugging Face: https://huggingface.co/healerman221/koth-velev
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la información proporcionada.

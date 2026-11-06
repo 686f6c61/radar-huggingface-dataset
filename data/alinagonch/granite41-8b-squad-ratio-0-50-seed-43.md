@@ -17,7 +17,7 @@ El repositorio tiene un tamaño de 0.2 GB, lo que indica que probablemente conti
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (el modelo base Granite 4.1 soporta varios idiomas, pero no se especifica) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según los tags de HuggingFace) |
+| Formato de pesos | safetensors (según los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -58,10 +58,10 @@ Dado que no hay información detallada sobre este fine-tune, la comparativa se b
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AlinaGonch/granite41-8b-squad-ratio-0.50-seed-43 | no disponible | no disponible | no disponible | HuggingFace |
-| AlinaGonch/granite41-8b-squad-ratio-0.20 | no disponible | no disponible | no disponible | HuggingFace |
-| AlinaGonch/granite41-8b-squad-ratio-1.00 | no disponible | no disponible | no disponible | HuggingFace |
-| IBM Granite 4.1 8B (base) | 8B | 128K | Apache 2.0 | HuggingFace, IBM |
+| AlinaGonch/granite41-8b-squad-ratio-0.50-seed-43 | no disponible | no disponible | no disponible | Hugging Face |
+| AlinaGonch/granite41-8b-squad-ratio-0.20 | no disponible | no disponible | no disponible | Hugging Face |
+| AlinaGonch/granite41-8b-squad-ratio-1.00 | no disponible | no disponible | no disponible | Hugging Face |
+| IBM Granite 4.1 8B (base) | 8B | 128K | Apache 2.0 | Hugging Face, IBM |
 
 ## Limitaciones y advertencias
 
@@ -73,7 +73,7 @@ Dado que no hay información detallada sobre este fine-tune, la comparativa se b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.50-seed-43
+- Repositorio Hugging Face: https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.50-seed-43
 - Variante ratio 0.20: https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.20
 - Variante ratio 1.00: https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-1.00
 - Documentación de IBM Granite 4.1: https://www.ibm.com/granite/docs/models/granite4-1

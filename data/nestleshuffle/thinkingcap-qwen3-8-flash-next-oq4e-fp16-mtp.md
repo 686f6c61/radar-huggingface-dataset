@@ -18,7 +18,7 @@ Su relevancia práctica es acotada pero concreta: permite ejecutar un modelo de 
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | Afín 4-bit grupo 64; afín 5-bit grupo 128; afín 8-bit grupo 128; afín 8-bit grupo 64; FP16; FP32; embeddings N-gram afín 4-bit grupo 32. Media efectiva 4,741 bits/peso (sin embeddings N-gram) y 4,815 bits/peso (checkpoint completo). Generada con oQ / oMLX v0.7.3.dev2 |
 | Idiomas soportados | No disponible |
-| Licencia | `qwen-community-1.0` (etiquetada como `other` en HuggingFace), heredada del modelo base |
+| Licencia | `qwen-community-1.0` (etiquetada como `other` en Hugging Face), heredada del modelo base |
 | Formato de pesos | `safetensors` en formato MLX; repositorio de 108,4 GB (100,897 GiB de pesos) |
 
 Desglose de almacenamiento declarado por el autor:
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | ThinkingCap-Qwen3.8-Flash-Next-oQ4e-fp16-mtp (este) | ~180B (179.999.981.459) | No disponible | safetensors MLX, media 4,815 bits/peso, 100,897 GiB | qwen-community-1.0 | 0 descargas, 0 likes |
-| bottlecapai/ThinkingCap-Qwen3.8-Flash-Next (base) | No disponible en la información proporcionada | No disponible | No disponible (presumiblemente precisión completa) | qwen-community-1.0 | Repositorio público en HuggingFace |
+| bottlecapai/ThinkingCap-Qwen3.8-Flash-Next (base) | No disponible en la información proporcionada | No disponible | No disponible (presumiblemente precisión completa) | qwen-community-1.0 | Repositorio público en Hugging Face |
 | Otras cuantizaciones del mismo modelo base | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Alternativas de escala similar (~180B) en MLX | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -98,7 +98,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/Nestleshuffle/ThinkingCap-Qwen3.8-Flash-Next-oQ4e-fp16-mtp
+- Hugging Face (este checkpoint): https://huggingface.co/Nestleshuffle/ThinkingCap-Qwen3.8-Flash-Next-oQ4e-fp16-mtp
 - Modelo base: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-Flash-Next
 - Licencia (referenciada por el autor): https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-Flash-Next/blob/d90c9fedadaf7556df4206e6bea5a6b391b1a58e/LICENSE
 - Herramienta de cuantización oQ / oMLX: https://github.com/jundot/omlx

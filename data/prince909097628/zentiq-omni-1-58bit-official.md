@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zentiq Omni 1.58-Bit es un modelo publicado en HuggingFace por el usuario Prince909097628 bajo el identificador Prince909097628/Zentiq-Omni-1.58bit-Official. Segun la model card, se trata de un modelo multimodal cuantizado con el esquema ternario BitNet b1.58 (pesos restringidos a {-1, 0, +1}) y distribuido como un contenedor GGUF v3 de 1,32 GB (repo de 1,4 GB). El autor se identifica como "Gopal" y la ficha declara una licencia Apache 2.0.
+Zentiq Omni 1.58-Bit es un modelo publicado en Hugging Face por el usuario Prince909097628 bajo el identificador Prince909097628/Zentiq-Omni-1.58bit-Official. Segun la model card, se trata de un modelo multimodal cuantizado con el esquema ternario BitNet b1.58 (pesos restringidos a {-1, 0, +1}) y distribuido como un contenedor GGUF v3 de 1,32 GB (repo de 1,4 GB). El autor se identifica como "Gopal" y la ficha declara una licencia Apache 2.0.
 
 La informacion disponible es extremadamente limitada: el repositorio no incluye etiqueta de pipeline, no declara idiomas soportados, no publica numero de parametros, longitud de contexto ni resultados de benchmarks, y acumula 0 descargas y 0 likes en el momento de la consulta. Ademas, la model card menciona un supuesto "Quantum Entanglement Engine" que co-procesa junto a CUDA, una afirmacion sin respaldo tecnico conocido ni verificable con la informacion aportada.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zentiq Omni 1.58-Bit | no disponible | no disponible | ternaria 1.58-bit (declarada) | Apache 2.0 | HuggingFace, 0 descargas |
+| Zentiq Omni 1.58-Bit | no disponible | no disponible | ternaria 1.58-bit (declarada) | Apache 2.0 | Hugging Face, 0 descargas |
 | BitNet b1.58 (Microsoft Research) | 2B (variante 2B4T) | no disponible en esta ficha | ternaria 1.58-bit | MIT (publicacion de investigacion) | Codigo y pesos publicados por Microsoft |
-| Otros GGUF de la comunidad en 1.58-bit | variable | variable | ternaria 1.58-bit | variable | HuggingFace |
+| Otros GGUF de la comunidad en 1.58-bit | variable | variable | ternaria 1.58-bit | variable | Hugging Face |
 
 La comparacion es limitada: no existe informacion publica de parametros ni de contexto del modelo evaluado, por lo que la unica referencia solida en cuantizacion ternaria es la linea BitNet b1.58 de Microsoft Research, que si cuenta con paper y pesos verificables. No se dispone de datos para comparar rendimiento (benchmarks) entre alternativas.
 
@@ -86,6 +86,6 @@ La comparacion es limitada: no existe informacion publica de parametros ni de co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Prince909097628/Zentiq-Omni-1.58bit-Official
+- Hugging Face: https://huggingface.co/Prince909097628/Zentiq-Omni-1.58bit-Official
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados recuperados corresponden a foros en frances sin relacion con el proyecto (forums.commentcamarche.net, jeuxvideo.com) y no se incluyen por no aportar informacion util.
 - Paper de referencia de BitNet b1.58: no disponible en la informacion proporcionada.

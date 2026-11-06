@@ -81,7 +81,7 @@ La comparación se limita a características técnicas porque no hay benchmarks 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Baked/legal-slm-sft-merged16bit
+- Hugging Face: https://huggingface.co/Baked/legal-slm-sft-merged16bit
 - Modelo base (unsloth/Qwen2.5-3B-Instruct-bnb-4bit): https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-bnb-4bit
 - Modelo base original (Qwen2.5-3B-Instruct): https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - GitHub: Legal-SLM-SFT (posiblemente relacionado; el repositorio menciona Llama-3.2-3B, mientras que este modelo usa Qwen2.5-3B, por lo que no se confirma la relación): https://github.com/rtrdsgpt/Legal-SLM-SFT

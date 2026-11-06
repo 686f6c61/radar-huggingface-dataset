@@ -93,7 +93,7 @@ Conjunto escrito a mano de 76 preguntas, nunca generadas ni usadas para seleccio
 | Decodificacion (tok/s) | 1127 | 1234 | |
 | RAM pico (MB) | 261 | 64 | |
 
-Metricas del model-index publicadas en HuggingFace (mismo autor, sin verificacion independiente):
+Metricas del model-index publicadas en Hugging Face (mismo autor, sin verificacion independiente):
 
 | Tarea | Objetivo exacto | Precision de herramienta | F1 de argumentos | Rechazo falso | Rechazo omitido |
 |---|---:|---:|---:|---:|---:|
@@ -118,8 +118,8 @@ No se dispone de datos de benchmarks de terceros en la informacion proporcionada
 
 | Modelo | Parametros | Contexto | Objetivo exacto (test reservado) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| site-needle | 45 M (base) + LoRA rango 32 | No disponible | 0,507 | Apache 2.0 | HuggingFace (0 descargas) |
-| Cactus-Compute/needle2 (base) | 45 M | No disponible | 0,173 | No disponible en la informacion proporcionada | HuggingFace |
+| site-needle | 45 M (base) + LoRA rango 32 | No disponible | 0,507 | Apache 2.0 | Hugging Face (0 descargas) |
+| Cactus-Compute/needle2 (base) | 45 M | No disponible | 0,173 | No disponible en la informacion proporcionada | Hugging Face |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -134,11 +134,11 @@ No se dispone de datos de benchmarks de terceros en la informacion proporcionada
 - El rendimiento en el conjunto escrito a mano (0,342 de objetivo exacto) es sustancialmente inferior al del conjunto reservado generado, lo que sugiere sobreajuste a las plantillas del corpus.
 - Licencia Apache 2.0 para este adaptador, pero la licencia de Cactus-Compute/needle2 no consta en la informacion proporcionada; conviene verificarla antes de un uso comercial del modelo derivado.
 - Cero descargas y cero likes; las metricas estan declaradas por el autor (`verified: false`) y no se han reproducido de forma independiente.
-- Sin pipeline declarado en HuggingFace («Pipeline: no disponible») ni documentacion de compatibilidad con los servidores de inferencia habituales.
+- Sin pipeline declarado en Hugging Face («Pipeline: no disponible») ni documentacion de compatibilidad con los servidores de inferencia habituales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexnodeland/site-needle
+- Modelo en Hugging Face: https://huggingface.co/alexnodeland/site-needle
 - Modelo base: https://huggingface.co/Cactus-Compute/needle2
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/alexnodeland/site-needle-corpus
 - Repositorio con el pipeline (`apps/model`): https://github.com/alexnodeland/alexnodeland

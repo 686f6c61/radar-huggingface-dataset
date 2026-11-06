@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`phukanpragyan/gemma-4-e2b-assamese-sft-v4` es un modelo publicado en HuggingFace por el usuario phukanpragyan, con un total de 5.651.719.747 parametros (aproximadamente 5,65 mil millones) confirmados por los pesos en formato safetensors, y un repositorio de 11,3 GB. El pipeline declarado en el Hub es `image-text-to-text`, lo que indica que se trata de un modelo multimodal capaz de procesar imagenes y texto, y la libreria de referencia es `transformers`.
+`phukanpragyan/gemma-4-e2b-assamese-sft-v4` es un modelo publicado en Hugging Face por el usuario phukanpragyan, con un total de 5.651.719.747 parametros (aproximadamente 5,65 mil millones) confirmados por los pesos en formato safetensors, y un repositorio de 11,3 GB. El pipeline declarado en el Hub es `image-text-to-text`, lo que indica que se trata de un modelo multimodal capaz de procesar imagenes y texto, y la libreria de referencia es `transformers`.
 
-La model card publicada es la plantilla automatica de HuggingFace: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como "[More Information Needed]". El unico contexto adicional proviene del propio identificador y de las etiquetas del repositorio: `gemma4` y el sufijo `e2b` sugieren un ajuste fino derivado de la familia Gemma, y `assamese-sft-v4` apunta a un entrenamiento supervisado (SFT) orientado al idioma assames, en su cuarta iteracion. Ninguna de estas inferencias esta confirmada por documentacion del autor.
+La model card publicada es la plantilla automatica de Hugging Face: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como "[More Information Needed]". El unico contexto adicional proviene del propio identificador y de las etiquetas del repositorio: `gemma4` y el sufijo `e2b` sugieren un ajuste fino derivado de la familia Gemma, y `assamese-sft-v4` apunta a un entrenamiento supervisado (SFT) orientado al idioma assames, en su cuarta iteracion. Ninguna de estas inferencias esta confirmada por documentacion del autor.
 
 El modelo acumula 0 descargas y 0 "likes" en el momento de la consulta y fue creado el 19 de septiembre de 2026, con una actualizacion apenas un minuto despues, lo que indica una publicacion reciente y sin validacion por parte de la comunidad. La busqueda web asociada no devolvio ningun resultado relevante sobre el modelo: los enlaces recuperados tratan sobre versiculos biblicos y no guardan relacion con el repositorio. En consecuencia, esta ficha documenta unicamente los datos verificables del Hub y marca explicitamente como no disponibles todos los apartados que la informacion proporcionada no cubre.
 
@@ -95,11 +95,11 @@ La comparacion real no puede completarse: se desconocen las metricas de este mod
 - Limitaciones de contexto: la ventana de contexto no esta publicada, lo que impide planificar casos de uso con entradas largas o conversaciones multi-turno extensas.
 - Limitacion de despliegue: no hay pesos cuantizados (GGUF, AWQ, GPTQ) publicados, lo que dificulta el uso en hardware de gama media sin un proceso de conversion previo.
 - Fecha de publicacion inusual: la fecha de creacion registrada es el 19 de septiembre de 2026, posterior a la fecha de consulta habitual de los indices publicos; conviene verificar la integridad y procedencia del repositorio.
-- Etiqueta `arxiv:1910.09700`: corresponde al articulo de Lacoste et al. sobre el calculo del impacto en carbono del aprendizaje automatico, citado en la plantilla de HuggingFace. No es un articulo tecnico sobre este modelo.
+- Etiqueta `arxiv:1910.09700`: corresponde al articulo de Lacoste et al. sobre el calculo del impacto en carbono del aprendizaje automatico, citado en la plantilla de Hugging Face. No es un articulo tecnico sobre este modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/phukanpragyan/gemma-4-e2b-assamese-sft-v4
+- Modelo en Hugging Face: https://huggingface.co/phukanpragyan/gemma-4-e2b-assamese-sft-v4
 - Articulo citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre impacto en carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto del aprendizaje automatico referenciada en la plantilla: https://mlco2.github.io/impact
 

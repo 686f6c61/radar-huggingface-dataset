@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT towel half42 gate28 grasp28 065000 | 51,68 M | no aplica | 8/10 en hardware real (2026-10-23) | Apache 2.0 | HuggingFace |
+| ACT towel half42 gate28 grasp28 065000 | 51,68 M | no aplica | 8/10 en hardware real (2026-10-23) | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Woohi123/act_towel_half42_gate28_grasp28_065000
+- Modelo en Hugging Face: https://huggingface.co/Woohi123/act_towel_half42_gate28_grasp28_065000
 - Dataset de metadatos: https://huggingface.co/datasets/Woohi123/towel_tape_70_half42_gate28_grasp28_meta
 - Documentación de traspaso: `towel_fold_handover.html` (referenciada en la model card, no enlazada)
 - LeRobot: no disponible en la información proporcionada

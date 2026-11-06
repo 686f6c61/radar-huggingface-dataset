@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de Transformers desarrollado por SADD1DSA21DSA y publicado en HuggingFace. Según los metadatos del repositorio, se trata de un modelo de tipo BERT (etiquetas `bert`, `transformers`, `pytorch`) orientado a extracción de características (`feature-extraction`), si bien la model card lo describe como un asistente conversacional con capacidades avanzadas de razonamiento, generación de código y soporte para function calling.
+MyAwesomeModel es un modelo de Transformers desarrollado por SADD1DSA21DSA y publicado en Hugging Face. Según los metadatos del repositorio, se trata de un modelo de tipo BERT (etiquetas `bert`, `transformers`, `pytorch`) orientado a extracción de características (`feature-extraction`), si bien la model card lo describe como un asistente conversacional con capacidades avanzadas de razonamiento, generación de código y soporte para function calling.
 
 La model card indica que esta versión ha mejorado significativamente su profundidad de razonamiento gracias al uso de mayores recursos computacionales y a mecanismos de optimización algorítmica durante el post-entrenamiento. Se citan mejoras concretas en el benchmark AIME 2025, donde la precisión habría pasado del 70 % al 87,5 %. Sin embargo, el repositorio no contiene pesos del modelo (tamaño 0.0 GB) y no registra descargas, por lo que la información disponible es limitada y no permite verificar las capacidades declaradas.
 
@@ -21,7 +21,7 @@ La model card indica que esta versión ha mejorado significativamente su profund
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona especificaciones técnicas de la arquitectura ni del proceso de entrenamiento. Se menciona únicamente que la actualización se ha logrado mediante un incremento de recursos computacionales y la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. No se detallan el volumen de tokens, la composición del dataset ni el uso de técnicas como RLHF o DPO. El pipeline declarado en HuggingFace es `feature-extraction`, lo que sugiere un modelo encoder, pero la model card lo presenta como un modelo generativo con razonamiento avanzado, diálogo y function calling, lo que resulta incoherente. Tampoco se documenta la variante "MyAwesomeModel-Small" más allá de indicar que comparte tokenizer y arquitectura con el modelo principal.
+La model card no proporciona especificaciones técnicas de la arquitectura ni del proceso de entrenamiento. Se menciona únicamente que la actualización se ha logrado mediante un incremento de recursos computacionales y la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. No se detallan el volumen de tokens, la composición del dataset ni el uso de técnicas como RLHF o DPO. El pipeline declarado en Hugging Face es `feature-extraction`, lo que sugiere un modelo encoder, pero la model card lo presenta como un modelo generativo con razonamiento avanzado, diálogo y function calling, lo que resulta incoherente. Tampoco se documenta la variante "MyAwesomeModel-Small" más allá de indicar que comparte tokenizer y arquitectura con el modelo principal.
 
 ## Capacidades
 
@@ -84,7 +84,7 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 - El repositorio no contiene pesos del modelo, por lo que no es posible descargarlo ni ejecutarlo.
 - La información técnica es muy incompleta: no se especifican parámetros, arquitectura detallada, longitud de contexto, tokenizer ni idiomas soportados.
 - Los benchmarks presentados no corresponden a evaluaciones estándar y los modelos comparados no están identificados, lo que impide su verificación.
-- Existe una contradicción entre la finalidad declarada en HuggingFace (`feature-extraction` con arquitectura BERT) y las capacidades descritas en la model card (generación, diálogo, razonamiento y function calling).
+- Existe una contradicción entre la finalidad declarada en Hugging Face (`feature-extraction` con arquitectura BERT) y las capacidades descritas en la model card (generación, diálogo, razonamiento y function calling).
 - La model card afirma una reducción de la tasa de alucinaciones y un mejor soporte de function calling, pero no aporta evidencia externa ni metodología reproducible.
 - La variante "MyAwesomeModel-Small" se menciona sin especificaciones de tamaño, contexto o rendimiento.
 - La licencia MIT permite el uso comercial, pero al no haber pesos publicados no hay un producto utilizable.
@@ -92,6 +92,6 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SADD1DSA21DSA/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/SADD1DSA21DSA/MyAwesomeModel-TestRepo
 - Repositorio similar encontrado en la búsqueda: https://huggingface.co/sad1d21/MyAwesomeModel-TestRepo
 - Repositorio similar encontrado en la búsqueda: https://huggingface.co/asd12dsa21dsa21dsa/MyAwesomeModel-TestRepo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-relay-nkg3rx-int8 es un checkpoint intermedio de un modelo de lenguaje de tipo causal publicado por el usuario joemia1993 en HuggingFace. Se trata de una instancia de Qwen2ForCausalLM (arquitectura transformer decoder-only de la familia Qwen2) con una unica capa, `hidden_size=1024`, 16 cabezas de atencion y 8 cabezas KV, cuantizada a int8 mediante bitsandbytes. El repositorio contiene aproximadamente 44,6 millones de parametros y un peso total de 0,0 GB, lo que refleja su naturaleza de checkpoint truncado y de tamano reducido.
+relay-nkg3rx-int8 es un checkpoint intermedio de un modelo de lenguaje de tipo causal publicado por el usuario joemia1993 en Hugging Face. Se trata de una instancia de Qwen2ForCausalLM (arquitectura transformer decoder-only de la familia Qwen2) con una unica capa, `hidden_size=1024`, 16 cabezas de atencion y 8 cabezas KV, cuantizada a int8 mediante bitsandbytes. El repositorio contiene aproximadamente 44,6 millones de parametros y un peso total de 0,0 GB, lo que refleja su naturaleza de checkpoint truncado y de tamano reducido.
 
 El modelo se presenta explicitamente en su model card como un "checkpoint de entrenamiento interrumpido" (训练中断点) sin evaluacion realizada. No es, por tanto, un modelo listo para produccion ni un artefacto final: es un estado parcial de un entrenamiento que el autor hizo publico. Su relevancia practica es muy limitada, y debe interpretarse como material de experimentacion o como referencia de un pipeline de cuantizacion int8 aplicado a Qwen2.
 
@@ -76,5 +76,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joemia1993/relay-nkg3rx-int8
+- Hugging Face: https://huggingface.co/joemia1993/relay-nkg3rx-int8
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

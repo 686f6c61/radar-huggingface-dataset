@@ -78,7 +78,7 @@ La comparativa se basa en modelos de tamaño similar disponibles en formato GGUF
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EstevaoNaval/gemma-4-E4B-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/EstevaoNaval/gemma-4-E4B-it-GGUF
 - Repositorio alternativo (ente-ai): https://huggingface.co/ente-ai/gemma-4-E4B-it-GGUF
 - Página oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Guía de Gemma 4 E4B (gemma4.dev): https://gemma4.dev/models/gemma-4-e4b

@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - Los parametros del modelo ocupan aproximadamente 156 MB en FP32 (39.087.104 x 4 bytes), por lo que la inferencia es viable en CPU y en cualquier GPU con al menos 1 GB de VRAM.
 - En FP16 o cuantizaciones de 8 bits, la huella de memoria se reduce a menos de 80 MB, permitiendo ejecucion en GPUs muy modestas o incluso en dispositivos embebidos.
-- El repositorio de HuggingFace tiene un tamano de 4.4 GB, lo que sugiere la presencia de multiples checkpoints o archivos adicionales mas alla de los pesos del modelo.
+- El repositorio de Hugging Face tiene un tamano de 4.4 GB, lo que sugiere la presencia de multiples checkpoints o archivos adicionales mas alla de los pesos del modelo.
 - Opciones de despliegue: `transformers.pipeline`, vLLM, TGI y llama.cpp (si se convierte el modelo a formato GGUF). Tambien es compatible con `text-generation-inference` y `endpoints_compatible`, segun los tags del repositorio.
 
 ## Comparativa con modelos similares
@@ -73,6 +73,6 @@ No se dispone de datos suficientes para realizar una comparativa formal con otro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fpadovani/nor-latn-10mb-after-ppt-shuff-dyck-10mb-ckpt500_seed3407
+- Hugging Face: https://huggingface.co/fpadovani/nor-latn-10mb-after-ppt-shuff-dyck-10mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/fpadovani/nor-latn-10mb-ppt-shuff-dyck-10mb_seed3407
 - Weights & Biases (registro de entrenamiento): https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/aw775124

@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparado en la informacion proporcionada;
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sizhe-Chen/Qwen3.8-27B-Thinking-SecOPD
+- Modelo en Hugging Face: https://huggingface.co/Sizhe-Chen/Qwen3.8-27B-Thinking-SecOPD
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Sizhe-Chen/Qwen3.8-27B-Thinking-SecOPD-trainset
 - Paper SecPO: https://arxiv.org/abs/2610.41998

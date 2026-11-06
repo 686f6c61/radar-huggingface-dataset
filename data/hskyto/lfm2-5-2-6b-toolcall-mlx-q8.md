@@ -77,7 +77,7 @@ La comparativa es orientativa, ya que no se dispone de datos de rendimiento publ
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/Hskyto/lfm2.5-2.6b-toolcall-mlx-q8)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/Hskyto/lfm2.5-2.6b-toolcall-mlx-q8)
 - [Modelo base LiquidAI/LFM2.5-2.6B](https://huggingface.co/LiquidAI/LFM2.5-2.6B)
 - [Documentacion oficial de LFM2.5-2.6B](https://docs.liquid.ai/lfm/models/lfm25-2.6b)
 - [Blog de Liquid AI sobre LFM2.5-2.6B](https://www.liquid.ai/blog/lfm2-5-2-6b)

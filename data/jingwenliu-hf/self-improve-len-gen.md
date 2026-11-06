@@ -65,7 +65,7 @@ No disponible. No se conocen modelos comparables con la misma especialización e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jingwenliu-HF/self-improve-len-gen
+- Repositorio Hugging Face: https://huggingface.co/jingwenliu-HF/self-improve-len-gen
 - Paper relacionado (Self Rewarding Self Improving): https://arxiv.org/html/2505.08827v1
 - Resumen del paper en AI Models Fyi: https://www.aimodels.fyi/papers/arxiv/self-rewarding-self-improving
 - PDF en ResearchGate: https://www.researchgate.net/publication/391741367_Self_Rewarding_Self_Improving

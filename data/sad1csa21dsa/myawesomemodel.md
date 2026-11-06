@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un repositorio publicado en HuggingFace por el usuario sad1csa21dsa el 23 de agosto de 2026, con licencia MIT y etiquetado para transformers, PyTorch y BERT. La model card describe un modelo de razonamiento general con capacidades avanzadas en matematicas, programacion y logica, que habria experimentado una mejora significativa respecto a una version anterior, alcanzando una exactitud del 87,5% en el conjunto de evaluacion AIME 2025 (frente al 70% de la version previa) y aumentando el promedio de tokens generados por pregunta de 12K a 23K. La model card tambien menciona una reduccion de la tasa de alucinacion y un soporte mejorado de function calling.
+MyAwesomeModel es un repositorio publicado en Hugging Face por el usuario sad1csa21dsa el 23 de agosto de 2026, con licencia MIT y etiquetado para transformers, PyTorch y BERT. La model card describe un modelo de razonamiento general con capacidades avanzadas en matematicas, programacion y logica, que habria experimentado una mejora significativa respecto a una version anterior, alcanzando una exactitud del 87,5% en el conjunto de evaluacion AIME 2025 (frente al 70% de la version previa) y aumentando el promedio de tokens generados por pregunta de 12K a 23K. La model card tambien menciona una reduccion de la tasa de alucinacion y un soporte mejorado de function calling.
 
 Sin embargo, el repositorio no contiene pesos publicados (tamano de 0.0 GB), no registra descargas ni likes, y la model card no especifica arquitectura, numero de parametros, longitud de contexto ni idiomas soportados. Las etiquetas del repositorio ("bert", "feature-extraction") contradicen la descripcion de la model card, que presenta un modelo de razonamiento profundo. Se trata, en la practica, de una publicacion de prueba o placeholder sin contenido descargable.
 
@@ -100,11 +100,11 @@ No se puede establecer una comparativa con modelos concretos porque la model car
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sad1csa21dsa/MyAwesomeModel
+- Repositorio Hugging Face: https://huggingface.co/sad1csa21dsa/MyAwesomeModel
 - Repositorio de prueba: https://huggingface.co/sad1csa21dsa/MyAwesomeModel-TestRepository
 - Repositorio step1000: https://huggingface.co/sad1csa21dsa/MyAwesomeModel-step1000
 - Ficha en free2aitools.com (testrepo): https://free2aitools.com/model/sad1csa21dsa/myawesomemodel-testrepo
 - Ficha en free2aitools.com (release): https://free2aitools.com/model/sotaagi2030/myawesomemodel-release
 - Ficha en PromptLayer (modelo distinto, fine-tune de DistilBERT): https://www.promptlayer.com/models/myawesomemodel/
 
-Nota: los repositorios de HuggingFace no contienen pesos ni documentacion adicional. La ficha de PromptLayer corresponde a un modelo diferente (un fine-tune de DistilBERT para clasificacion de texto) y no debe confundirse con el modelo descrito en esta ficha.
+Nota: los repositorios de Hugging Face no contienen pesos ni documentacion adicional. La ficha de PromptLayer corresponde a un modelo diferente (un fine-tune de DistilBERT para clasificacion de texto) y no debe confundirse con el modelo descrito en esta ficha.

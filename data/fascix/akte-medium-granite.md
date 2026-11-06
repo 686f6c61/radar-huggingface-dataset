@@ -65,6 +65,6 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fascix/Akte-medium-granite
+- Modelo en Hugging Face: https://huggingface.co/Fascix/Akte-medium-granite
 - Organizacion IBM Granite (referencia general): https://huggingface.co/ibm-granite
 - Pagina oficial de IBM Granite: https://www.ibm.com/granite

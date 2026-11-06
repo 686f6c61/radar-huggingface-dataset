@@ -6,7 +6,7 @@ El modelo `ksiminyu/mms-1b-fl102-swahili-train1.3.1` es un ajuste fino (fine-tun
 
 El modelo resuelve la tarea de transcripcion de audio a texto (speech-to-text) para swahili, una lengua bantú hablada principalmente en Tanzania, Kenia, Uganda y la Republica Democratica del Congo. Es relevante porque el soporte ASR para lenguas africanas de bajos recursos sigue siendo escaso en comparacion con el ingles o el espanol, y los ajustes finos comunitarios sobre modelos multilingues grandes como MMS permiten mejorar la cobertura en estos idiomas sin necesidad de entrenar desde cero.
 
-La ficha de HuggingFace es muy escasa: no declara licencia, pipeline, idiomas ni metricas de evaluacion. El repositorio ocupa 169,8 GB, un tamano desproporcionado para 964,7 millones de parametros (que en fp32 ocuparian unos 3,9 GB), lo que sugiere que contiene multiples checkpoints, estados del optimizador o artefactos de entrenamiento adicionales. La informacion publica disponible sobre este ajuste concreto es, por tanto, limitada.
+La ficha de Hugging Face es muy escasa: no declara licencia, pipeline, idiomas ni metricas de evaluacion. El repositorio ocupa 169,8 GB, un tamano desproporcionado para 964,7 millones de parametros (que en fp32 ocuparian unos 3,9 GB), lo que sugiere que contiene multiples checkpoints, estados del optimizador o artefactos de entrenamiento adicionales. La informacion publica disponible sobre este ajuste concreto es, por tanto, limitada.
 
 ## Especificaciones tecnicas
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto/entrada | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ksiminyu/mms-1b-fl102-swahili-train1.3.1 | 964,7 M | audio (wav2vec2) | swahili (segun nombre) | no disponible | HuggingFace, 6 descargas |
-| facebook/mms-1b-fl102 (base) | ~965 M | audio (wav2vec2) | 102 lenguas | CC-BY-NC 4.0 (familia MMS) | HuggingFace |
-| openai/whisper-large-v3 | 1.550 M | audio (encoder-decoder) | ~99 lenguas | Apache 2.0 | HuggingFace |
+| ksiminyu/mms-1b-fl102-swahili-train1.3.1 | 964,7 M | audio (wav2vec2) | swahili (segun nombre) | no disponible | Hugging Face, 6 descargas |
+| facebook/mms-1b-fl102 (base) | ~965 M | audio (wav2vec2) | 102 lenguas | CC-BY-NC 4.0 (familia MMS) | Hugging Face |
+| openai/whisper-large-v3 | 1.550 M | audio (encoder-decoder) | ~99 lenguas | Apache 2.0 | Hugging Face |
 | Modelos ASR especificos para swahili | no disponible | no disponible | swahili | no disponible | no disponible |
 
 Nota: los datos de la familia MMS y de Whisper proceden de conocimiento general del sector; la ficha consultada no proporciona comparativas. No se dispone de resultados de evaluacion de este ajuste concreto que permitan una comparacion cuantitativa.
@@ -87,7 +87,7 @@ Nota: los datos de la familia MMS y de Whisper proceden de conocimiento general 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ksiminyu/mms-1b-fl102-swahili-train1.3.1
+- Hugging Face: https://huggingface.co/ksiminyu/mms-1b-fl102-swahili-train1.3.1
 - Modelo base MMS-1B-FL102 (referencia de la familia): https://huggingface.co/facebook/mms-1b-fl102
 - Proyecto Massively Multilingual Speech de Meta AI (referencia general): https://ai.meta.com/blog/multilingual-model-speech-recognition/
 - Documentacion de wav2vec2 en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/wav2vec2

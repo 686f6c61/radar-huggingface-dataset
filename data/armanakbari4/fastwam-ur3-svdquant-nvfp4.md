@@ -95,7 +95,7 @@ La exportacion NVFP4 consume mas bits que la INT4 (4,84 vs 4,58 BPW) debido a la
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/armanakbari4/fastwam-ur3-svdquant-nvfp4
+- Checkpoint en Hugging Face: https://huggingface.co/armanakbari4/fastwam-ur3-svdquant-nvfp4
 - Modelo base bf16: https://huggingface.co/armanakbari4/fastwam-ur3-3task
 - Exportacion INT4 companion: https://huggingface.co/arashakb/FastWAM_UR3
 - Dataset de calibracion: https://huggingface.co/datasets/armanakbari4/ur3-3task-lerobot

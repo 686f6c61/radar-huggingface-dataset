@@ -68,7 +68,7 @@ No se dispone de datos de rendimiento para comparar directamente. Como referenci
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Llama-Poro-2-8B-Long-Instruct-heretic-i1-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Llama-Poro-2-8B-Long-Instruct-heretic-i1-GGUF
 - Modelo base (dufuspaelli): https://huggingface.co/dufuspaelli/Llama-Poro-2-8B-Long-Instruct-heretic
 - Dataset de instrucciones: https://huggingface.co/datasets/LumiOpen/poro2-instruction-collection
 - Guia sobre modelos abliterated (referencia general): https://locallyuncensored.com/blog/abliterated-models-guide.html

@@ -93,7 +93,7 @@ La comparación directa con alternativas no puede completarse porque la ficha no
 - No es un modelo generativo ni un agente: no debe usarse para tareas fuera de la clasificación de texto.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/ahmedandaloes/deberta-prompt-injection-v2-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/ahmedandaloes/deberta-prompt-injection-v2-CoreAI
 - Modelo base: https://huggingface.co/protectai/deberta-v3-base-prompt-injection-v2
 - Perfil del autor: https://huggingface.co/ahmedandaloes
 - Sitio web del autor: https://ahmedandaloes.com

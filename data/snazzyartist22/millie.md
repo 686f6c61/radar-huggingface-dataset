@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Millie es un repositorio de modelo publicado en HuggingFace por el usuario SnazzyArtist22 bajo el identificador `SnazzyArtist22/Millie`. En el momento de redactar esta ficha no existe documentacion tecnica asociada: la model card no contiene descripcion, no se declara pipeline, no se indican idiomas soportados y la licencia figura como `unknown`. El repositorio ocupa 0,3 GB y fue creado el 30 de septiembre de 2026, con la ultima actualizacion un minuto despues de su creacion.
+Millie es un repositorio de modelo publicado en Hugging Face por el usuario SnazzyArtist22 bajo el identificador `SnazzyArtist22/Millie`. En el momento de redactar esta ficha no existe documentacion tecnica asociada: la model card no contiene descripcion, no se declara pipeline, no se indican idiomas soportados y la licencia figura como `unknown`. El repositorio ocupa 0,3 GB y fue creado el 30 de septiembre de 2026, con la ultima actualizacion un minuto despues de su creacion.
 
 El modelo acumula 0 descargas y 0 likes, por lo que no hay evidencia de uso, validacion por parte de la comunidad ni resultados reproducibles. Tampoco se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento o proceso de alineacion. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los unicos enlaces recuperados corresponden a paginas de seguimiento de envios de DHL, sin ninguna vinculacion con este repositorio.
 
@@ -83,5 +83,5 @@ No disponible. Al desconocerse la arquitectura, el numero de parametros y las ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SnazzyArtist22/Millie
+- Modelo en Hugging Face: https://huggingface.co/SnazzyArtist22/Millie
 - La busqueda web no devolvio ningun enlace relevante sobre el modelo. Los unicos resultados recuperados correspondian a paginas de seguimiento de envios de DHL (dhl.com, tracking.dhl.com, mydhl.express.dhl), sin relacion alguna con este repositorio, por lo que no se incluyen como fuentes.

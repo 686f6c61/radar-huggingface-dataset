@@ -66,5 +66,5 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EliasSchwarz/text-image-retrieval-study
+- Repositorio en Hugging Face: https://huggingface.co/EliasSchwarz/text-image-retrieval-study
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) asociados a este repositorio en la búsqueda web.

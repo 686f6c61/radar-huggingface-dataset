@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `cwaud/tournament-exp-s1-33ed1dd1-15ee-4488-aa99-b7158329febc-5Exp9a580e491a7e0f66` es un checkpoint publicado en HuggingFace por el usuario `cwaud`. El nombre sugiere un artefacto experimental generado dentro de un proceso de "torneo" (probablemente una competicion de fusion, evolucion o seleccion de checkpoints), con un identificador de sesion y de experimento en el propio nombre. No se trata de un lanzamiento oficial de un laboratorio, sino de un repositorio de investigacion con muy baja traccion: 5 descargas y 0 likes en el momento de la consulta.
+El modelo identificado como `cwaud/tournament-exp-s1-33ed1dd1-15ee-4488-aa99-b7158329febc-5Exp9a580e491a7e0f66` es un checkpoint publicado en Hugging Face por el usuario `cwaud`. El nombre sugiere un artefacto experimental generado dentro de un proceso de "torneo" (probablemente una competicion de fusion, evolucion o seleccion de checkpoints), con un identificador de sesion y de experimento en el propio nombre. No se trata de un lanzamiento oficial de un laboratorio, sino de un repositorio de investigacion con muy baja traccion: 5 descargas y 0 likes en el momento de la consulta.
 
 El unico dato estructural fiable es el recuento de parametros real extraido de los ficheros safetensors: 7.615.616.512 parametros, aproximadamente 7,6 mil millones. La etiqueta `qwen2` asociada al repositorio apunta a que la arquitectura subyacente pertenece a la familia Qwen2, un transformer decoder-only con atencion causal, aunque no se confirma en la informacion disponible que se trate de un modelo base oficial o de un ajuste derivado. El tamano del repositorio (15,2 GB) es coherente con pesos en precision de 16 bits para ese numero de parametros.
 
@@ -74,11 +74,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. No co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| cwaud/tournament-exp-s1-...-5Exp9a580e491a7e0f66 | 7,6 B | no disponible | no disponible | HuggingFace, 5 descargas | no disponible |
-| Qwen2-7B | 7,6 B | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | HuggingFace, ampliamente distribuido | publicado por el autor |
-| Qwen2.5-7B | 7,6 B | 32.768 tokens (hasta 131.072 con configuracion) | Apache 2.0 (con excepciones para algunas variantes) | HuggingFace | publicado por el autor |
-| Llama 3.1 8B | 8,0 B | 131.072 tokens | Llama 3.1 Community License | HuggingFace, Meta | publicado por el autor |
-| Mistral 7B v0.3 | 7,2 B | 32.768 tokens | Apache 2.0 | HuggingFace | publicado por el autor |
+| cwaud/tournament-exp-s1-...-5Exp9a580e491a7e0f66 | 7,6 B | no disponible | no disponible | Hugging Face, 5 descargas | no disponible |
+| Qwen2-7B | 7,6 B | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | Hugging Face, ampliamente distribuido | publicado por el autor |
+| Qwen2.5-7B | 7,6 B | 32.768 tokens (hasta 131.072 con configuracion) | Apache 2.0 (con excepciones para algunas variantes) | Hugging Face | publicado por el autor |
+| Llama 3.1 8B | 8,0 B | 131.072 tokens | Llama 3.1 Community License | Hugging Face, Meta | publicado por el autor |
+| Mistral 7B v0.3 | 7,2 B | 32.768 tokens | Apache 2.0 | Hugging Face | publicado por el autor |
 
 La comparacion de rendimiento no puede establecerse porque el modelo objeto de esta ficha no tiene metricas publicadas. La diferencia principal frente a las alternativas no es tecnica sino de gobernanza: los modelos citados cuentan con licencia explicita, model card detallada y evaluaciones reproducibles, mientras que este checkpoint carece de los tres elementos.
 
@@ -97,7 +97,7 @@ La comparacion de rendimiento no puede establecerse porque el modelo objeto de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-33ed1dd1-15ee-4488-aa99-b7158329febc-5Exp9a580e491a7e0f66
+- Modelo en Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-33ed1dd1-15ee-4488-aa99-b7158329febc-5Exp9a580e491a7e0f66
 - Repositorio relacionado del mismo autor: https://huggingface.co/cwaud/tournament-exp-s1-ce763cd5-8bfc-4fb0-be95-9935cb61ffd2-5Exp4982e7f6d52475a1
 - Repositorio relacionado del mismo autor: https://huggingface.co/cwaud/tournament-exp-s1-28c9f3bb-81f7-47b6-9468-4918b98904ed-5Exp15defdb10e5e7362
 - Mencion en agregador de noticias sobre otro modelo de la misma serie: https://www.china-z.net/news/2026-09-24-11-bf975fec.html

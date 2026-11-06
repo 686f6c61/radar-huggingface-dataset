@@ -12,7 +12,7 @@ La relevancia actual del modelo radica en su tamaño reducido, que lo hace despl
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia llama, según tags de HuggingFace); detalles internos no disponibles |
+| Arquitectura | Transformer (familia llama, según tags de Hugging Face); detalles internos no disponibles |
 | Parametros totales | 3.933.637.120 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -25,7 +25,7 @@ La relevancia actual del modelo radica en su tamaño reducido, que lo hace despl
 
 El modelo parte de Nanbeige4-3B-Base y se ha sometido a un post-entrenamiento en dos fases: supervisión fina (SFT) y aprendizaje por refuerzo (RL). Según la model card, este proceso busca simultáneamente un razonamiento sólido, una alineación de preferencias robusta y comportamientos agénticos efectivos. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni los detalles del algoritmo de RL empleado.
 
-La innovación técnica más destacable, según el autor, es la capacidad de sostener razonamiento multi-paso coherente en un único forward pass y de mantener más de 500 rondas de invocación de herramientas en tareas de deep-search. No se detallan en la información proporcionada mecanismos como decodificación especulativa, atención lineal ni arquitecturas híbridas; los tags de HuggingFace apuntan a la familia llama, pero no se confirman detalles internos de la arquitectura.
+La innovación técnica más destacable, según el autor, es la capacidad de sostener razonamiento multi-paso coherente en un único forward pass y de mantener más de 500 rondas de invocación de herramientas en tareas de deep-search. No se detallan en la información proporcionada mecanismos como decodificación especulativa, atención lineal ni arquitecturas híbridas; los tags de Hugging Face apuntan a la familia llama, pero no se confirman detalles internos de la arquitectura.
 
 ## Capacidades
 
@@ -81,17 +81,17 @@ Los resultados de Nanbeige4.1-3B en esta tabla de deep-search no están disponib
 - VRAM estimada para inferencia: no disponible de forma oficial. Para un modelo de ~3,9B parámetros, una estimación razonable sería de aproximadamente 8 GB en FP16 y de 2 a 3 GB en cuantizaciones de 4 bits, aunque estas cifras no las confirma el autor.
 - GPU recomendadas: no especificadas por el autor. Por tamaño, cabría esperar un funcionamiento correcto en GPUs de consumo como RTX 3060, RTX 4060 Ti, RTX 4070 o RTX 4090, así como en A100/H100 para despliegues de mayor throughput.
 - Cabe en GPU de consumo: sí, previsiblemente, dado el tamaño del modelo, aunque no hay confirmación oficial.
-- Opciones de despliegue: transformers (librería declarada), text-generation-inference (tag de HuggingFace) y endpoints compatibles. No se confirma soporte de vLLM, llama.cpp u Ollama en la información disponible.
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference (tag de Hugging Face) y endpoints compatibles. No se confirma soporte de vLLM, llama.cpp u Ollama en la información disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento destacado (según autor) |
 |---|---|---|---|---|---|
-| Nanbeige4.1-3B | 3,93B | no disponible | Apache 2.0 | HuggingFace (RootML) | Arena-Hard-v2 73,2; Live-Code-Bench-V6 76,9; GPQA 83,8 |
-| Qwen3-4B-2507 | ~4B | no disponible en la información | no disponible en la información | HuggingFace | Arena-Hard-v2 34,9; Live-Code-Bench-V6 57,4 |
-| Qwen3-30B-A3B-2507 | 30B totales (MoE) | no disponible en la información | no disponible en la información | HuggingFace | Arena-Hard-v2 60,2; AIME 2026 I 87,30 |
-| Nanbeige4-3B-2511 | ~3B | no disponible | no disponible en la información | HuggingFace | Arena-Hard-v2 60,0; GPQA 82,2 |
+| Nanbeige4.1-3B | 3,93B | no disponible | Apache 2.0 | Hugging Face (RootML) | Arena-Hard-v2 73,2; Live-Code-Bench-V6 76,9; GPQA 83,8 |
+| Qwen3-4B-2507 | ~4B | no disponible en la información | no disponible en la información | Hugging Face | Arena-Hard-v2 34,9; Live-Code-Bench-V6 57,4 |
+| Qwen3-30B-A3B-2507 | 30B totales (MoE) | no disponible en la información | no disponible en la información | Hugging Face | Arena-Hard-v2 60,2; AIME 2026 I 87,30 |
+| Nanbeige4-3B-2511 | ~3B | no disponible | no disponible en la información | Hugging Face | Arena-Hard-v2 60,0; GPQA 82,2 |
 
 La comparativa se basa exclusivamente en los datos de la model card; los datos de contexto y licencia de los modelos Qwen no se han proporcionado en la información disponible.
 
@@ -108,6 +108,6 @@ La comparativa se basa exclusivamente en los datos de la model card; los datos d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RootML/Nanbeige4.1-3B
+- Hugging Face: https://huggingface.co/RootML/Nanbeige4.1-3B
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4-3B-Base
 - Informe técnico (arXiv): https://arxiv.org/abs/2602.13367

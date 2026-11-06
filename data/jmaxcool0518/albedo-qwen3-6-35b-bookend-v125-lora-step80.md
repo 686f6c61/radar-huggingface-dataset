@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`JMaxCool0518/albedo-qwen3.6-35b-bookend-v125-lora-step80` es un adaptador LoRA publicado en HuggingFace por el usuario JMaxCool0518, entrenado mediante DPO (Direct Preference Optimization) sobre un modelo base identificado en el repositorio como `local_king/king_cxxv`. No se trata de un modelo completo, sino de un artefacto PEFT de 0,3 GB que debe combinarse con su modelo base para poder ejecutar inferencia. El repositorio declara la etiqueta `text-generation` y `conversational`, y la libreria principal es `peft`.
+`JMaxCool0518/albedo-qwen3.6-35b-bookend-v125-lora-step80` es un adaptador LoRA publicado en Hugging Face por el usuario JMaxCool0518, entrenado mediante DPO (Direct Preference Optimization) sobre un modelo base identificado en el repositorio como `local_king/king_cxxv`. No se trata de un modelo completo, sino de un artefacto PEFT de 0,3 GB que debe combinarse con su modelo base para poder ejecutar inferencia. El repositorio declara la etiqueta `text-generation` y `conversational`, y la libreria principal es `peft`.
 
-El identificador del repositorio incluye la cadena "qwen3.6-35b" y el sufijo "lora-step80", lo que sugiere que el adaptador se construyo sobre una base de la familia Qwen de aproximadamente 35 000 millones de parametros y que el checkpoint corresponde al paso de entrenamiento 80 de una ejecucion de ajuste. Sin embargo, ni la model card ni los metadatos de HuggingFace confirman estos extremos: la model card es una plantilla sin rellenar, con todos los campos marcados como "[More Information Needed]".
+El identificador del repositorio incluye la cadena "qwen3.6-35b" y el sufijo "lora-step80", lo que sugiere que el adaptador se construyo sobre una base de la familia Qwen de aproximadamente 35 000 millones de parametros y que el checkpoint corresponde al paso de entrenamiento 80 de una ejecucion de ajuste. Sin embargo, ni la model card ni los metadatos de Hugging Face confirman estos extremos: la model card es una plantilla sin rellenar, con todos los campos marcados como "[More Information Needed]".
 
 La relevancia de esta ficha es, por tanto, limitada y de caracter fundamentalmente documental. El repositorio acumula 0 descargas y 0 "likes", no declara licencia ni idiomas, y no aporta informacion sobre datos de entrenamiento, hiperparametros, evaluacion o uso previsto. Cualquier evaluacion tecnica seria requiere primero verificar la disponibilidad y las caracteristicas del modelo base.
 
@@ -78,7 +78,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla por defecto de HuggingFace, con todos los campos sin rellenar. No hay informacion sobre uso previsto, datos de entrenamiento, evaluacion ni limitaciones.
+- Ausencia total de documentacion: la model card es la plantilla por defecto de Hugging Face, con todos los campos sin rellenar. No hay informacion sobre uso previsto, datos de entrenamiento, evaluacion ni limitaciones.
 - Licencia no declarada: al no especificarse licencia para el adaptador ni para el modelo base, no puede determinarse si el uso comercial esta permitido. Esto invalida de hecho cualquier despliegue en produccion.
 - Modelo base no verificado: `local_king/king_cxxv` no esta descrito en la informacion disponible. Si ese repositorio no es publico, accesible o esta retirado, el adaptador es inutilizable.
 - Riesgo de alucinacion: no evaluado. Sin benchmarks ni pruebas de robustez, no puede estimarse la tasa de respuestas incorrectas o inventadas.
@@ -91,7 +91,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/JMaxCool0518/albedo-qwen3.6-35b-bookend-v125-lora-step80
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/JMaxCool0518/albedo-qwen3.6-35b-bookend-v125-lora-step80
 - Modelo base declarado: https://huggingface.co/local_king/king_cxxv
 - Articulo de Lacoste et al. (2019) sobre impacto de carbono, referenciado en la plantilla de la model card: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la model card: https://mlco2.github.io/impact

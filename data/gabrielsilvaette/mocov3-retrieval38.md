@@ -86,7 +86,7 @@ La comparacion cuantitativa de rendimiento no es posible porque ninguno de los r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gabrielsilvaette/mocov3-retrieval38
+- Modelo en Hugging Face: https://huggingface.co/Gabrielsilvaette/mocov3-retrieval38
 - Repositorio similar (lalaurent4384): https://huggingface.co/lalaurent4384/mocov3-retrieval
 - Repositorio similar (niklaswagner): https://huggingface.co/niklaswagner/mocov3-retrieval
 - Implementacion oficial MoCo v3 de Meta: https://github.com/facebookresearch/moco-v3

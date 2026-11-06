@@ -78,7 +78,7 @@ La comparativa directa con otros modelos uncensored de 27B es limitada porque la
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/CrocoCpp/Ektome-Qwen3.8-27B-PristinelyUncensored-Q8_0-GGUF
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/CrocoCpp/Ektome-Qwen3.8-27B-PristinelyUncensored-Q8_0-GGUF
 - Modelo base (safetensors): https://huggingface.co/Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored
 - Otras cuantizaciones del autor: https://huggingface.co/CrocoCpp/Ektome-Qwen3.8-27B-PristinelyUncensored-Q4_K_M-GGUF
 - Guía para ejecutar Qwen3.8-27B localmente (yottalabs.ai): https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026

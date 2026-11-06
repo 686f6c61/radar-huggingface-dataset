@@ -76,7 +76,7 @@ La comparativa se limita a variantes del mismo modelo base. No se dispone de dat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alwoolley/Qwen3-4B-fp8-e4m3
+- Repositorio Hugging Face: https://huggingface.co/alwoolley/Qwen3-4B-fp8-e4m3
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Version FP8 oficial de Qwen: https://huggingface.co/Qwen/Qwen3-4B-FP8
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

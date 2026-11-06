@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Merge bf16: 65.69 GB en disco. Para inferencia se recomienda una GPU con al menos 80 GB de VRAM (A100 80GB, H100) o varias GPUs en paralelo.
 - DynQuant 4-bit: 21.38 GB en disco. Cabe en una RTX 4090 (24 GB) o A6000 (48 GB) con margen para activaciones.
 - DynQuant 3-bit: 17.68 GB en disco. También cabe en RTX 4090, dejando más espacio para el contexto largo.
-- Opciones de despliegue: al ser un modelo transformers estándar, puede servirse con vLLM, TGI o directamente con el pipeline de HuggingFace. No se menciona compatibilidad con llama.cpp u Ollama.
+- Opciones de despliegue: al ser un modelo transformers estándar, puede servirse con vLLM, TGI o directamente con el pipeline de Hugging Face. No se menciona compatibilidad con llama.cpp u Ollama.
 - Latencia y throughput: no disponibles. El autor no publicó mediciones de velocidad.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ La comparativa principal es contra el modelo base: el adaptador añade la capaci
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/VikramPal/Qwen3-Omni-30B-A3B-S2S-QLoRA
+- Hugging Face del adaptador: https://huggingface.co/VikramPal/Qwen3-Omni-30B-A3B-S2S-QLoRA
 - Merge bf16: https://huggingface.co/VikramPal/Qwen3-Omni-30B-A3B-S2S-bf16
 - DynQuant 4-bit: https://huggingface.co/VikramPal/Qwen3-Omni-30B-A3B-S2S-DynQuant-4bit
 - DynQuant 3-bit: https://huggingface.co/VikramPal/Qwen3-Omni-30B-A3B-S2S-DynQuant-3bit

@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Cuantizacion | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| scottlowry/Qwen3.8-Flash-Next-oQ6e-fp16-mtp | ~180B | 6 bits, group 64, mixta | MLX safetensors | no disponible | no disponible | Publico en HuggingFace (2 descargas) |
-| scottlowry/Swift1.5-Qwen3.8-Flash-Next-oQ6e-fp16-mtp | no disponible | 6 bits, group 64, mixta | MLX safetensors | no disponible | no disponible | Publico en HuggingFace |
-| Qwen/Qwen3.8-Flash-Next (modelo base) | ~180B (inferido del checkpoint) | fp16 / BF16 | safetensors | no disponible | no disponible | Publico en HuggingFace |
+| scottlowry/Qwen3.8-Flash-Next-oQ6e-fp16-mtp | ~180B | 6 bits, group 64, mixta | MLX safetensors | no disponible | no disponible | Publico en Hugging Face (2 descargas) |
+| scottlowry/Swift1.5-Qwen3.8-Flash-Next-oQ6e-fp16-mtp | no disponible | 6 bits, group 64, mixta | MLX safetensors | no disponible | no disponible | Publico en Hugging Face |
+| Qwen/Qwen3.8-Flash-Next (modelo base) | ~180B (inferido del checkpoint) | fp16 / BF16 | safetensors | no disponible | no disponible | Publico en Hugging Face |
 | Qwen3.8-27B | 27B denso | no aplicable | no disponible | 262.144 tokens | no disponible | Publico (LM Studio) |
 
 No se dispone de datos de rendimiento para ninguna de las variantes, por lo que la comparativa se limita a parametros, formato y disponibilidad. Qwen3.8-27B pertenece a la misma familia pero es un modelo denso de 27B y vision-lenguaje, de categoria distinta.
@@ -95,9 +95,9 @@ No se dispone de datos de rendimiento para ninguna de las variantes, por lo que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scottlowry/Qwen3.8-Flash-Next-oQ6e-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/scottlowry/Qwen3.8-Flash-Next-oQ6e-fp16-mtp
 - Variante hermana (Swift1.5): https://huggingface.co/scottlowry/Swift1.5-Qwen3.8-Flash-Next-oQ6e-fp16-mtp
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio oficial de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Herramienta de cuantizacion oQ / oMLX: https://github.com/jundot/omlx
 - Pagina en LM Studio del modelo base: https://lmstudio.ai/models/qwen/qwen3.8-flash-next

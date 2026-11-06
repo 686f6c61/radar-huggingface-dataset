@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Konaet UAGI ARC-AGI-3 research source es un repositorio de código fuente publicado por el usuario 7dsolv (Adilson Oliveira) en HuggingFace, no una ficha de pesos de un modelo. El propio autor indica que el repositorio contiene un agente local reproducible, herramientas de investigación tipo teacher/student, pruebas, licencia y resultados medidos, y que **no incluye archivos de juego, secuencias de acciones del teacher, checkpoints de rutas aprendidas, pesos de modelo ni credenciales**. El SDK y los datos de juego deben obtenerse de sus fuentes originales bajo sus propios términos.
+Konaet UAGI ARC-AGI-3 research source es un repositorio de código fuente publicado por el usuario 7dsolv (Adilson Oliveira) en Hugging Face, no una ficha de pesos de un modelo. El propio autor indica que el repositorio contiene un agente local reproducible, herramientas de investigación tipo teacher/student, pruebas, licencia y resultados medidos, y que **no incluye archivos de juego, secuencias de acciones del teacher, checkpoints de rutas aprendidas, pesos de modelo ni credenciales**. El SDK y los datos de juego deben obtenerse de sus fuentes originales bajo sus propios términos.
 
 El interés del repositorio es metodológico más que de rendimiento: publica una validación que separa memoria de rutas previamente demostradas frente a descubrimiento de partidas no vistas. Los resultados declarados el 24 de septiembre de 2026 son 25/25 victorias locales al recargar una memoria de rutas informada por teacher específica del juego, 0/25 para un agente nuevo sin teacher ni rutas guardadas con 250 acciones, y 0/25 para un cuaderno neuronal separado de Kaggle RTX V35. El autor explicita que el 25/25 demuestra memoria de juegos públicos ya demostrados y **no** resolución de juegos no vistos, con puntuación oficial de competición NOT_RUN.
 
@@ -83,7 +83,7 @@ Este repositorio no es un modelo con pesos y no admite una comparación convenci
 |---|---|---|---|---|---|
 | 7dsolv/Konaet-UAGI-ARC3-Research-Source | Repositorio de código fuente e investigación | no aplica | no aplica | 25/25 con memoria de rutas; 0/25 sin teacher; NOT_RUN en competición oficial | Konaet RCL 1.0 |
 | Cuaderno neuronal de Kaggle RTX V35 | Cuaderno neuronal citado por el autor | no disponible | no disponible | 0/25 | no disponible |
-| 7dsolv/Konaet-Core-v0 | Otro repositorio del mismo autor en HuggingFace | no disponible | no disponible | no disponible | no disponible |
+| 7dsolv/Konaet-Core-v0 | Otro repositorio del mismo autor en Hugging Face | no disponible | no disponible | no disponible | no disponible |
 
 Comparativa frente a modelos o agentes de ARC-AGI-3 de terceros: no disponible en la información proporcionada.
 
@@ -102,8 +102,8 @@ Comparativa frente a modelos o agentes de ARC-AGI-3 de terceros: no disponible e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/7dsolv/Konaet-UAGI-ARC3-Research-Source
-- Perfil del autor en HuggingFace: https://huggingface.co/7dsolv
+- Repositorio en Hugging Face: https://huggingface.co/7dsolv/Konaet-UAGI-ARC3-Research-Source
+- Perfil del autor en Hugging Face: https://huggingface.co/7dsolv
 - Otro repositorio del autor, Konaet-Core-v0: https://huggingface.co/7dsolv/Konaet-Core-v0
 - Perfil de GitHub del autor: https://github.com/7dsolv/7dsolv
 - Publicaciones del autor en GitHub: https://github.com/7dsolv/7dsolv/tree/main/publications

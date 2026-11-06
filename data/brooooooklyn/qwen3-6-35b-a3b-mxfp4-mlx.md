@@ -84,7 +84,7 @@ La comparativa se limita a las variantes de Qwen 3.6 mencionadas en la búsqueda
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Brooooooklyn/Qwen3.6-35B-A3B-mxfp4-mlx
+- Repositorio Hugging Face: https://huggingface.co/Brooooooklyn/Qwen3.6-35B-A3B-mxfp4-mlx
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Referencia de cuantización Unsloth: https://huggingface.co/unsloth/Qwen3.6-35B-A3B-NVFP4
 - Colección de recetas: https://huggingface.co/collections/Brooooooklyn/unsloth-nvfp4-tensor-class-recipe-for-mlx-macos-dgx-6a5e3a893ae031d023e72ccf

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `thomas-meier/test-4` es un artefacto publicado en HuggingFace por el usuario thomas-meier, con fecha de creación de agosto de 2026. Según los metadatos, se trata de un modelo de 35.107 millones de parámetros (aproximadamente 35B) en formato safetensors, con pipeline `image-text-to-text`, lo que indica que está diseñado para procesar tanto imágenes como texto. Los tags del repositorio (`qwen3_5_moe`, `mergekit`, `merge`) sugieren que es un modelo de arquitectura Mixture of Experts (MoE) basado en la familia Qwen 3.5, y que ha sido construido mediante la fusión de varios modelos usando la herramienta mergekit.
+El modelo `thomas-meier/test-4` es un artefacto publicado en Hugging Face por el usuario thomas-meier, con fecha de creación de agosto de 2026. Según los metadatos, se trata de un modelo de 35.107 millones de parámetros (aproximadamente 35B) en formato safetensors, con pipeline `image-text-to-text`, lo que indica que está diseñado para procesar tanto imágenes como texto. Los tags del repositorio (`qwen3_5_moe`, `mergekit`, `merge`) sugieren que es un modelo de arquitectura Mixture of Experts (MoE) basado en la familia Qwen 3.5, y que ha sido construido mediante la fusión de varios modelos usando la herramienta mergekit.
 
-A pesar de su tamaño considerable y de su naturaleza multimodal aparente, la ficha pública contiene muy poca información verificable: no se especifica la arquitectura exacta, el número de parámetros activos, la longitud de contexto, los idiomas soportados ni la licencia. El acceso al repositorio está restringido (gated), lo que obliga a aceptar condiciones adicionales en HuggingFace antes de poder descargar los pesos. La relevancia de este modelo es incierta, ya que no hay documentación ni publicaciones asociadas; podría tratarse de un experimento de fusión de modelos sin validación pública.
+A pesar de su tamaño considerable y de su naturaleza multimodal aparente, la ficha pública contiene muy poca información verificable: no se especifica la arquitectura exacta, el número de parámetros activos, la longitud de contexto, los idiomas soportados ni la licencia. El acceso al repositorio está restringido (gated), lo que obliga a aceptar condiciones adicionales en Hugging Face antes de poder descargar los pesos. La relevancia de este modelo es incierta, ya que no hay documentación ni publicaciones asociadas; podría tratarse de un experimento de fusión de modelos sin validación pública.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el repositorio es gated, por lo que es necesario solicitar acceso y aceptar condiciones en HuggingFace; esto limita su uso inmediato y la reproducibilidad.
+- **Acceso restringido**: el repositorio es gated, por lo que es necesario solicitar acceso y aceptar condiciones en Hugging Face; esto limita su uso inmediato y la reproducibilidad.
 - **Falta de documentacion**: no hay articulo tecnico, README detallado ni papers asociados; la informacion disponible es insuficiente para evaluar su comportamiento.
 - **Sesgos y alucinacion**: al ser un modelo de lenguaje, es probable que presente sesgos presentes en los datos de entrenamiento y riesgo de alucinacion, pero no se ha realizado ninguna evaluacion publica.
 - **Licencia desconocida**: la licencia no esta especificada, lo que impide conocer si es apto para uso comercial o si tiene restricciones de redistribucion.
@@ -74,5 +74,5 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thomas-meier/test-4
+- Repositorio Hugging Face: https://huggingface.co/thomas-meier/test-4
 - No se han encontrado papers, blogs, demos ni repositorios adicionales relacionados con este modelo especifico.

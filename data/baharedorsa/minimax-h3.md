@@ -16,7 +16,7 @@ Su relevancia actual radica en que unifica comprensión multimodal y generación
 | Parametros totales | no disponible |
 | Longitud de contexto | no disponible en tokens; limites de entrada multimodal: hasta 9 imagenes, 3 clips de video (2-15 s cada uno, total <= 15 s) y 3 clips de audio (2-15 s cada uno, total <= 15 s), con un maximo de 12 archivos entre todos los tipos |
 | Tipos de cuantizacion | no disponible (no se documentan cuantizaciones oficiales) |
-| Idiomas soportados | Dialogo hablado estable en 11 idiomas: arabe, chino, ingles, frances, aleman, italiano, japones, coreano, portugues, ruso y espanol; otros idiomas con soporte variable. Los metadatos de HuggingFace no declaran idiomas |
+| Idiomas soportados | Dialogo hablado estable en 11 idiomas: arabe, chino, ingles, frances, aleman, italiano, japones, coreano, portugues, ruso y espanol; otros idiomas con soporte variable. Los metadatos de Hugging Face no declaran idiomas |
 | Licencia | minimax-h3-community-license-agreement (campo `license: other`) |
 | Formato de pesos | safetensors (librerias `minimax-h3` y `diffusers`) |
 | Variantes del modelo | H3-Base-FL2VA, H3-Base-Ref2VA, H3-Regenerate-2K, H3-Context-IR |
@@ -84,7 +84,7 @@ La informacion proporcionada no incluye datos verificados de modelos comparables
 
 ## Limitaciones y advertencias
 
-- Fecha de creacion y actualizacion del repositorio de pesos: 2026-09-25, segun los metadatos de HuggingFace; conviene verificar la vigencia antes de usarlo en produccion.
+- Fecha de creacion y actualizacion del repositorio de pesos: 2026-09-25, segun los metadatos de Hugging Face; conviene verificar la vigencia antes de usarlo en produccion.
 - El repositorio baharedorsa/MiniMax-H3 es una publicacion de terceros (0 descargas y 0 likes en el momento de la consulta). El repositorio oficial de referencia es MiniMaxAI/MiniMax-H3.
 - Licencia de tipo `other` (minimax-h3-community-license-agreement): no es una licencia de codigo abierto aprobada por OSI. Es imprescindible revisar el texto completo del archivo LICENSE antes de cualquier uso comercial.
 - No hay informacion sobre sesgos del modelo, datos de entrenamiento ni evaluaciones de seguridad, por lo que no es posible estimar sesgos demograficos, culturales o linguisticos.
@@ -98,7 +98,7 @@ La informacion proporcionada no incluye datos verificados de modelos comparables
 ## Enlaces
 
 - Repositorio de pesos de esta ficha: https://huggingface.co/baharedorsa/MiniMax-H3
-- Repositorio oficial en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio oficial en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Blog de anuncio de MiniMax H3: https://www.minimax.io/blog/minimax-h3
 - Repositorio GitHub oficial: https://github.com/MiniMax-AI/MiniMax-H3

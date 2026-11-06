@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MaximKuf/albef-matching-aug es un prototipo de investigación alojado en HuggingFace que implementa una arquitectura de tipo ALBEF orientada a tareas de matching (emparejamiento, típicamente texto-imagen en la familia ALBEF). El repositorio lo publica el usuario MaximKuf bajo licencia MIT e incluye un script de inferencia en Python, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en formato safetensors.
+MaximKuf/albef-matching-aug es un prototipo de investigación alojado en Hugging Face que implementa una arquitectura de tipo ALBEF orientada a tareas de matching (emparejamiento, típicamente texto-imagen en la familia ALBEF). El repositorio lo publica el usuario MaximKuf bajo licencia MIT e incluye un script de inferencia en Python, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un checkpoint de inicialización en formato safetensors.
 
 La escala declarada es "base", con atención dilatada, fusión bilineal, activación ReLU y normalización BatchNorm. La receta de entrenamiento incluida usa el optimizador Adafactor con planificador OneCycle. Según los metadatos reales del archivo safetensors, el checkpoint contiene 24.832 parámetros, un orden de magnitud muy inferior al de un modelo ALBEF base completo (cientos de millones), lo que confirma que se trata de un andamiaje de código y no de un modelo entrenado.
 
@@ -27,7 +27,7 @@ Su relevancia actual es limitada y estrictamente metodológica: la propia model 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura documentada es un ALBEF de escala "base" con atención dilatada, fusión bilineal entre modalidades, activación ReLU y normalización por lotes (BatchNorm). El repositorio incluye `inference.py` como artefacto principal, con un bloque `__main__` que genera un ejemplo de prueba de humo, además de `config.json` (ajustes de arquitectura generados) y `training_args.json` (receta de experimento por defecto). Al ser una implementación propia, las APIs genéricas de carga automática de HuggingFace (por ejemplo `AutoModel`) requieren un adaptador explícito antes de poder usarla.
+La arquitectura documentada es un ALBEF de escala "base" con atención dilatada, fusión bilineal entre modalidades, activación ReLU y normalización por lotes (BatchNorm). El repositorio incluye `inference.py` como artefacto principal, con un bloque `__main__` que genera un ejemplo de prueba de humo, además de `config.json` (ajustes de arquitectura generados) y `training_args.json` (receta de experimento por defecto). Al ser una implementación propia, las APIs genéricas de carga automática de Hugging Face (por ejemplo `AutoModel`) requieren un adaptador explícito antes de poder usarla.
 
 No se documenta ningún dato de entrenamiento: no hay número de tokens, composición del dataset, ni constancia de fases de RLHF, DPO o ajuste por instrucciones. La receta incluida (Adafactor + OneCycle) se presenta explícitamente como "valores de partida en el script, no como evidencia de una ejecución completada". El checkpoint safetensors se describe como una inicialización válida para pruebas de humo y no como un modelo entrenado con resultados de benchmark. La model card incluye además una guía de evaluación que recomienda usar un conjunto de validación pareado, reportar la métrica de la tarea en al menos tres semillas e incluir una línea base de capacidad equivalente.
 
@@ -71,7 +71,7 @@ No se dispone de información verificada sobre modelos comparables dentro del ma
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| MaximKuf/albef-matching-aug | 24.832 | no disponible | MIT | HuggingFace, checkpoint sin entrenar | No se reclama ninguna puntuación |
+| MaximKuf/albef-matching-aug | 24.832 | no disponible | MIT | Hugging Face, checkpoint sin entrenar | No se reclama ninguna puntuación |
 | Alternativas de la familia ALBEF | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de matching multimodal (tipo CLIP, BLIP) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -85,11 +85,11 @@ Nota: la comparación con la familia ALBEF original o con modelos tipo CLIP/BLIP
 - Sesgos conocidos: no documentados; al no haber datos de entrenamiento publicados, no pueden auditarse.
 - Limitaciones de contexto e idioma: no disponibles; no se declara ventana de contexto ni cobertura idiomática.
 - Licencia MIT: permite uso comercial y modificación, pero la propia model card advierte de que deben revisarse por separado los términos de los datos de origen si el repositorio se usa con conjuntos de datos externos.
-- Restricciones de integración: al ser una implementación personalizada, las APIs de carga automática de HuggingFace requieren un adaptador explícito; no hay pipelines oficiales ni variantes cuantizadas.
+- Restricciones de integración: al ser una implementación personalizada, las APIs de carga automática de Hugging Face requieren un adaptador explícito; no hay pipelines oficiales ni variantes cuantizadas.
 - No apto para producción: cualquier resultado futuro debe documentarse a partir de un checkpoint entrenado específico, no de los valores por defecto publicados aquí.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MaximKuf/albef-matching-aug
+- Modelo en Hugging Face: https://huggingface.co/MaximKuf/albef-matching-aug
 - Repositorio (archivos incluidos): `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo adicionales: no disponible; la búsqueda web realizada no devolvió ningún enlace relacionado con este modelo.

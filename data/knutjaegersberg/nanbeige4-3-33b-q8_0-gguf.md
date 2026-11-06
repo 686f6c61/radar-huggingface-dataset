@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Nanbeige4.3-33B es un modelo de lenguaje de 33.100 millones de parámetros desarrollado por el equipo chino Nanbeige, disponible en su formato original y, en este repositorio, como cuantización Q8_0 en formato GGUF creada por el usuario KnutJaegersberg mediante el espacio automatizado GGUF-my-repo de HuggingFace. Se trata de un modelo conversacional de generación de texto bilingüe, con soporte oficial de inglés y chino, orientado a ejecución local mediante llama.cpp.
+Nanbeige4.3-33B es un modelo de lenguaje de 33.100 millones de parámetros desarrollado por el equipo chino Nanbeige, disponible en su formato original y, en este repositorio, como cuantización Q8_0 en formato GGUF creada por el usuario KnutJaegersberg mediante el espacio automatizado GGUF-my-repo de Hugging Face. Se trata de un modelo conversacional de generación de texto bilingüe, con soporte oficial de inglés y chino, orientado a ejecución local mediante llama.cpp.
 
-La relevancia de esta versión concreta radica en la portabilidad: el formato GGUF permite ejecutar el modelo en CPU, GPU de consumo o configuraciones híbridas sin depender del ecosistema de transformers de HuggingFace. La cuantización Q8_0 es de las más conservadoras disponibles, con una pérdida de calidad mínima respecto a los pesos en precisión completa (FP16), a cambio de un tamaño de aproximadamente 35,2 GB.
+La relevancia de esta versión concreta radica en la portabilidad: el formato GGUF permite ejecutar el modelo en CPU, GPU de consumo o configuraciones híbridas sin depender del ecosistema de transformers de Hugging Face. La cuantización Q8_0 es de las más conservadoras disponibles, con una pérdida de calidad mínima respecto a los pesos en precisión completa (FP16), a cambio de un tamaño de aproximadamente 35,2 GB.
 
 Al tratarse de una cuantización comunitaria, la mayor parte de la documentación técnica (arquitectura detallada, datos de entrenamiento, benchmarks) reside en la model card del modelo original Nanbeige/Nanbeige4.3-33B, y no se han publicado datos de rendimiento específicos en la información disponible para esta ficha.
 
@@ -23,7 +23,7 @@ Al tratarse de una cuantización comunitaria, la mayor parte de la documentació
 
 ## Arquitectura y entrenamiento
 
-El modelo base, Nanbeige4.3-33B, es un modelo de lenguaje denso de tipo transformer con aproximadamente 33.100 millones de parámetros, publicado por Nanbeige en formato safetensors y compatible con la librería transformers de HuggingFace. La versión aquí descrita es una conversión a GGUF realizada con llama.cpp a cuantización Q8_0, un esquema de 8 bits que mantiene la mayor parte de la calidad del modelo original mientras reduce el tamaño a unos 35,2 GB.
+El modelo base, Nanbeige4.3-33B, es un modelo de lenguaje denso de tipo transformer con aproximadamente 33.100 millones de parámetros, publicado por Nanbeige en formato safetensors y compatible con la librería transformers de Hugging Face. La versión aquí descrita es una conversión a GGUF realizada con llama.cpp a cuantización Q8_0, un esquema de 8 bits que mantiene la mayor parte de la calidad del modelo original mientras reduce el tamaño a unos 35,2 GB.
 
 Sobre el proceso de entrenamiento del modelo original (número de tokens, composición del corpus, uso de RLHF o DPO) y sobre posibles innovaciones técnicas (atención lineal, decodificación especulativa, etc.), la información disponible no ofrece detalles: no disponible. Dado su etiquetado bilingüe (inglés y chino), es razonable asumir un corpus de preentrenamiento con representación significativa de ambos idiomas, aunque esta composición exacta no está documentada en la información proporcionada.
 

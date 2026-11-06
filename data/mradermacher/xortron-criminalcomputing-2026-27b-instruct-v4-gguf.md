@@ -89,7 +89,7 @@ La comparacion cuantitativa con alternativas no es posible por falta de datos de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/XORTRON.CriminalComputing.2026.27B.Instruct.v4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/XORTRON.CriminalComputing.2026.27B.Instruct.v4-GGUF
 - Modelo base: https://huggingface.co/darkc0de/XORTRON.CriminalComputing.2026.27B.Instruct.v4
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/XORTRON.CriminalComputing.2026.27B.Instruct.v4-i1-GGUF
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#XORTRON.CriminalComputing.2026.27B.Instruct.v4-GGUF

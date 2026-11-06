@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de alter
 - Repositorio GGUF: https://huggingface.co/UserSuxx/MiniCPM-V-4.7-35B-A3B-DSpark-GGUF
 - Modelo base (DSpark): https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-DSpark
 - Modelo objetivo (MiniCPM-V 4.7 35B-A3B): https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
-- Coleccion MiniCPM-V 4.7 en HuggingFace: https://huggingface.co/collections/openbmb/minicpm-v-47
+- Coleccion MiniCPM-V 4.7 en Hugging Face: https://huggingface.co/collections/openbmb/minicpm-v-47
 - Perfil del autor de la conversion: https://huggingface.co/UserSuxx
 - Repositorio de llama.cpp (runtime requerido): https://github.com/ggml-org/llama.cpp

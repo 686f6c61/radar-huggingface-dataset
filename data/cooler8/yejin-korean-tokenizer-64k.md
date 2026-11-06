@@ -19,7 +19,7 @@ Aunque se trata de un componente auxiliar (no un modelo de lenguaje completo), s
 | Tipos de cuantizacion | No aplica |
 | Idiomas soportados | Coreano (ko), ingles (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | tokenizer.json, vocab.json, merges.txt (formato HuggingFace) |
+| Formato de pesos | tokenizer.json, vocab.json, merges.txt (formato Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -32,7 +32,7 @@ El entrenamiento se realizó sobre un corpus de 5 958 043 textos, combinando dat
 - Tokenización eficiente del coreano: con un vocabulario de 64 000 tokens, reduce el número de tokens necesarios para representar texto coreano en comparación con tokenizadores de menor tamaño (por ejemplo, polyglot-ko de 30K).
 - Soporte de tokens especiales: incluye BOS, EOS, PAD, UNK y tokens de chat (system, user, assistant), lo que lo hace compatible con pipelines de generación de texto y modelos de conversación.
 - Normalización Unicode NFC: garantiza que los caracteres Hangul compuestos se mantengan como una sola unidad, evitando fragmentaciones indeseadas.
-- Compatibilidad con HuggingFace Transformers: se puede cargar directamente mediante `AutoTokenizer.from_pretrained`, integrándose sin fricción en flujos de trabajo existentes.
+- Compatibilidad con Hugging Face Transformers: se puede cargar directamente mediante `AutoTokenizer.from_pretrained`, integrándose sin fricción en flujos de trabajo existentes.
 - Cobertura multilingüe básica: aunque está optimizado para coreano, también procesa texto en inglés, lo que facilita tareas mixtas.
 - Entrenamiento rápido y reproducible: el proceso de entrenamiento es ligero (23,6 minutos en CPU), lo que permite iterar y adaptar el tokenizador a dominios específicos.
 
@@ -53,9 +53,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 - Al ser un tokenizador, no requiere GPU ni VRAM para su uso. Se ejecuta completamente en CPU.
 - El entrenamiento se realizó en una CPU (servidor KT Cloud H200) y tomó 23,6 minutos, por lo que cualquier máquina con al menos 8 GB de RAM puede reproducir el proceso.
-- Para la inferencia, el tokenizador se carga en memoria (tamaño aproximado de 64 000 tokens, unos pocos cientos de MB) y se puede usar junto con cualquier framework de HuggingFace Transformers.
+- Para la inferencia, el tokenizador se carga en memoria (tamaño aproximado de 64 000 tokens, unos pocos cientos de MB) y se puede usar junto con cualquier framework de Hugging Face Transformers.
 - No hay requisitos específicos de latencia o throughput, ya que la tokenización es un proceso rápido (del orden de microsegundos por frase).
-- Opciones de despliegue: se puede integrar en pipelines de vLLM, TGI, Ollama o cualquier sistema que use HuggingFace Tokenizers. No requiere configuración especial.
+- Opciones de despliegue: se puede integrar en pipelines de vLLM, TGI, Ollama o cualquier sistema que use Hugging Face Tokenizers. No requiere configuración especial.
 
 ## Comparativa con modelos similares
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Optimizado para coreano | Sí | Sí | No (multilingüe general) |
 | Normalización NFC | Sí | No especificado | No especificado |
 | Licencia | Apache-2.0 | Apache-2.0 (probable) | Llama 3 License |
-| Formato | HuggingFace | HuggingFace | HuggingFace |
+| Formato | Hugging Face | Hugging Face | Hugging Face |
 
 La comparación con polyglot-ko es directa, ya que la model card lo menciona como referencia. El tokenizador de Llama 3 es un competidor general, pero no está especializado en coreano, por lo que su eficiencia en este idioma es inferior. No se dispone de datos cuantitativos de compresión para una comparación numérica.
 
@@ -82,6 +82,6 @@ La comparación con polyglot-ko es directa, ya que la model card lo menciona com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cooler8/yejin-korean-tokenizer-64k
+- Hugging Face: https://huggingface.co/cooler8/yejin-korean-tokenizer-64k
 - Proyecto relacionado: `yejin-korean LLM` (no se proporciona URL adicional en la información disponible)
 - No se han encontrado papers, blogs o demos adicionales en la búsqueda web.

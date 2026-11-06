@@ -102,7 +102,7 @@ La información disponible no incluye comparaciones directas con otros modelos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-Preview
+- Modelo en Hugging Face: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-Preview
 - Variante GGUF: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-GGUF-Preview
 - Variante FP8: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-FP8-Preview
 - Variante MLX: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-MLX-Preview

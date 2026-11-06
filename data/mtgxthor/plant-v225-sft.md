@@ -72,6 +72,6 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MTGxTHOR/plant-v225-sft
+- Repositorio Hugging Face: https://huggingface.co/MTGxTHOR/plant-v225-sft
 - Perfil del autor: https://huggingface.co/MTGxTHOR
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct

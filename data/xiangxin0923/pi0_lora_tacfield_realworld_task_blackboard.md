@@ -55,7 +55,7 @@ No hay información suficiente para establecer una comparativa rigurosa. El auto
 - Fecha de creación futura (2026-09-02) y descargas 0: sugiere que es un modelo muy reciente o no validado por la comunidad.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/xiangxin0923/pi0_lora_tacfield_realworld_task_blackboard
+- Hugging Face: https://huggingface.co/xiangxin0923/pi0_lora_tacfield_realworld_task_blackboard
 - Otros checkpoints del autor: https://huggingface.co/xiangxin0923/pi05_lora_tacfield_realworld_replayed_task820
 - https://huggingface.co/xiangxin0923/pi05_lora_tacimg_real_820
 - Blog de Pi0 (Physical Intelligence): https://github.com/huggingface/blog/blob/main/pi0.md

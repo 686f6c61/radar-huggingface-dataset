@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. Dado 
 - **VRAM estimada para inferencia**: aproximadamente 4-6 GB, dependiendo de la resolucion de salida y el batch size, gracias a la cuantizacion MXFP4.
 - **GPU recomendadas**: tarjetas con al menos 8 GB de VRAM, como NVIDIA RTX 3060, RTX 4060, RTX 2070 o superiores. Tambien es compatible con GPUs de datacenter como A10, A100 o H100.
 - **Compatibilidad con GPU de consumo**: si, el modelo cabe en GPUs de consumo con 8 GB o mas de VRAM, lo que lo hace accesible para la mayoria de los desarrolladores.
-- **Opciones de despliegue**: se puede desplegar con la libreria diffusers de HuggingFace, o mediante servidores de inferencia como vLLM (aunque esta mas orientado a modelos de lenguaje), TGI o soluciones especificas para difusion como Stable Diffusion WebUI o ComfyUI.
+- **Opciones de despliegue**: se puede desplegar con la libreria diffusers de Hugging Face, o mediante servidores de inferencia como vLLM (aunque esta mas orientado a modelos de lenguaje), TGI o soluciones especificas para difusion como Stable Diffusion WebUI o ComfyUI.
 - **Latencia y throughput**: no disponible, pero se espera que la cuantizacion reduzca el tiempo de inferencia en comparacion con el modelo original, especialmente en hardware con soporte para operaciones de 4 bits.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Cuantizacion | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SDXL Base 1.0 (original) | 3.5B (UNet + VAE + text encoders) | FP16 | ~7 GB | CreativeML Open RAIL++-M | HuggingFace |
-| changwangss/sdxl-base-1.0-mxfp4-smooth-rtn | 1.77B (solo UNet) | MXFP4 | 4.4 GB | no disponible | HuggingFace |
-| changwangss/sdxl-base-1.0-mxfp4-nosmooth-rtn | 1.77B (solo UNet) | MXFP4 | no disponible | no disponible | HuggingFace |
-| SDXL Turbo | 3.5B | FP16 | ~7 GB | CreativeML Open RAIL++-M | HuggingFace |
+| SDXL Base 1.0 (original) | 3.5B (UNet + VAE + text encoders) | FP16 | ~7 GB | CreativeML Open RAIL++-M | Hugging Face |
+| changwangss/sdxl-base-1.0-mxfp4-smooth-rtn | 1.77B (solo UNet) | MXFP4 | 4.4 GB | no disponible | Hugging Face |
+| changwangss/sdxl-base-1.0-mxfp4-nosmooth-rtn | 1.77B (solo UNet) | MXFP4 | no disponible | no disponible | Hugging Face |
+| SDXL Turbo | 3.5B | FP16 | ~7 GB | CreativeML Open RAIL++-M | Hugging Face |
 
 La principal diferencia entre esta version cuantizada y el modelo original es el tamano y los requisitos de memoria. La cuantizacion MXFP4 reduce significativamente el footprint, lo que permite ejecutar el modelo en hardware mas modesto, aunque puede haber una ligera perdida de calidad en los detalles finos de las imagenes generadas.
 
@@ -81,9 +81,9 @@ La principal diferencia entre esta version cuantizada y el modelo original es el
 
 ## Enlaces
 
-- [HuggingFace - changwangss/sdxl-base-1.0-mxfp4-smooth-rtn](https://huggingface.co/changwangss/sdxl-base-1.0-mxfp4-smooth-rtn)
-- [HuggingFace - changwangss/sdxl-base-1.0-mxfp4-nosmooth-rtn](https://huggingface.co/changwangss/sdxl-base-1.0-mxfp4-nosmooth-rtn)
-- [HuggingFace - stabilityai/stable-diffusion-xl-base-1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)
+- [Hugging Face - changwangss/sdxl-base-1.0-mxfp4-smooth-rtn](https://huggingface.co/changwangss/sdxl-base-1.0-mxfp4-smooth-rtn)
+- [Hugging Face - changwangss/sdxl-base-1.0-mxfp4-nosmooth-rtn](https://huggingface.co/changwangss/sdxl-base-1.0-mxfp4-nosmooth-rtn)
+- [Hugging Face - stabilityai/stable-diffusion-xl-base-1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)
 - [GitHub - Stability-AI/generative-models releases](https://github.com/Stability-AI/generative-models/releases)
 - [GitHub - stabilityai-stable-diffusion-xl-base-1.0 README](https://github.com/andrewcchoi/stabilityai-stable-diffusion-xl-base-1.0/blob/main/README.md)
 - [Civitai - SD XL v1.0 VAE fix](https://civitai.com/models/101055/sd-xl)

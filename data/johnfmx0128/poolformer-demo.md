@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`johnfmx0128/poolformer-demo` es un prototipo de investigación publicado en HuggingFace por el usuario johnfmx0128 bajo licencia MIT. Se presenta explícitamente como un punto de partida experimental y no como un modelo entrenado: la model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y no un checkpoint con rendimiento verificado. No se reclama ninguna métrica de benchmark en el repositorio.
+`johnfmx0128/poolformer-demo` es un prototipo de investigación publicado en Hugging Face por el usuario johnfmx0128 bajo licencia MIT. Se presenta explícitamente como un punto de partida experimental y no como un modelo entrenado: la model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y no un checkpoint con rendimiento verificado. No se reclama ninguna métrica de benchmark en el repositorio.
 
 El modelo se etiqueta con las etiquetas `poolformer`, `pytorch`, `contrastive` y `safetensors`, y su objetivo declarado es servir como prototipo orientado al aprendizaje contrastivo. La arquitectura documentada combina un esquema Poolformer con atención de ventana deslizante, fusión con *gating* (`gated fusion`), activación swish y normalización RMSNorm, configurado bajo la etiqueta de escala "xlarge".
 
@@ -92,12 +92,12 @@ Nota: no se dispone de cifras de rendimiento comparables. La comparacion se limi
 - No se documenta la longitud de contexto ni el esquema de tokenización, lo que impide planificar despliegues con requisitos de contexto largo.
 - Licencia MIT: permite uso comercial del código y de los pesos publicados, pero la model card recomienda revisar por separado los términos de los datos de origen si se combina con datasets externos.
 - Al ser una implementación personalizada, las API genéricas de carga automática no funcionan sin un adaptador explícito, lo que añade trabajo de integración.
-- El repositorio no declara pipeline de HuggingFace, por lo que no aparece en los filtros por tarea.
+- El repositorio no declara pipeline de Hugging Face, por lo que no aparece en los filtros por tarea.
 - La receta de entrenamiento incluida (lamb + coseno) es un valor de partida, no un resultado validado; la propia model card recomienda comparar contra una línea base de capacidad equivalente con el mismo presupuesto de ajuste y las mismas semillas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/johnfmx0128/poolformer-demo
+- Modelo en Hugging Face: https://huggingface.co/johnfmx0128/poolformer-demo
 - Documentacion de PoolFormer en transformers: https://huggingface.co/docs/transformers/en/model_doc/poolformer
 - Paper "Poolformer: Recurrent Networks with Pooling for Long-Sequence Modeling": https://arxiv.org/abs/2510.02206
 - PDF del paper: https://arxiv.org/pdf/2510.02206

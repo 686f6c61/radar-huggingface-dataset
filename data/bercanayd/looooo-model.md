@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bercanayd/looooo-model | 8B (heredados) | 128k (heredado) | apache-2.0 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | HuggingFace, oficial |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32k | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct | 7B | 128k | Apache 2.0 | HuggingFace |
+| bercanayd/looooo-model | 8B (heredados) | 128k (heredado) | apache-2.0 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | Hugging Face, oficial |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32k | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct | 7B | 128k | Apache 2.0 | Hugging Face |
 
 El modelo de bercanayd no aporta mejoras documentadas frente al Llama 3.1 8B Instruct original; su interés es principalmente experimental.
 
@@ -82,7 +82,7 @@ El modelo de bercanayd no aporta mejoras documentadas frente al Llama 3.1 8B Ins
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bercanayd/looooo-model
+- Hugging Face: https://huggingface.co/bercanayd/looooo-model
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Unsloth: https://github.com/unslothai/unsloth
 - Llama 3.1 (Meta): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

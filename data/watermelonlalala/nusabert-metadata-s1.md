@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nusabert-metadata-s1 es un modelo de clasificación de texto en indonesio obtenido por fine-tuning de LazarusNLP/NusaBERT-base, un BERT base entrenado específicamente para ese idioma. Lo publica el usuario watermelonlalala en HuggingFace y su tarea concreta es la clasificación binaria de toxicidad: cada texto de entrada se etiqueta como `non_toxic` o `toxic`. El modelo tiene 110.643.458 parámetros (BERT base, 12 capas, dimensión oculta 768) y un repositorio de 0,4 GB en formato safetensors.
+nusabert-metadata-s1 es un modelo de clasificación de texto en indonesio obtenido por fine-tuning de LazarusNLP/NusaBERT-base, un BERT base entrenado específicamente para ese idioma. Lo publica el usuario watermelonlalala en Hugging Face y su tarea concreta es la clasificación binaria de toxicidad: cada texto de entrada se etiqueta como `non_toxic` o `toxic`. El modelo tiene 110.643.458 parámetros (BERT base, 12 capas, dimensión oculta 768) y un repositorio de 0,4 GB en formato safetensors.
 
 El interés técnico del modelo es limitado pero claro: se trata de un ajuste fino con búsqueda de hiperparámetros mediante Optuna sobre una base ya especializada en indonesio, lo que lo hace directamente utilizable en pipelines de moderación de contenido para ese idioma con la librería transformers y con Text Embeddings Inference. No es un modelo generativo ni un LLM: es un clasificador discriminativo que devuelve una etiqueta y su probabilidad.
 
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - VRAM estimada en fp16: aproximadamente 0,25 GB de pesos.
 - Cabe en GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en CPU para lotes pequeños.
 - GPU recomendadas para producción de alto throughput: T4, L4, A10G, A100 o H100, aunque el modelo es lo bastante pequeño como para que la CPU sea viable en cargas moderadas.
-- Opciones de despliegue: transformers con PyTorch, Text Embeddings Inference (soportado según los tags), ONNX Runtime y cualquier servidor compatible con endpoints de HuggingFace.
+- Opciones de despliegue: transformers con PyTorch, Text Embeddings Inference (soportado según los tags), ONNX Runtime y cualquier servidor compatible con endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles en la información proporcionada; al ser un BERT base, la latencia por petición en GPU debería situarse en el orden de milisegundos, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| watermelonlalala/nusabert-metadata-s1 | 110,6 M | no disponible | Clasificación de toxicidad en indonesio | no disponible | HuggingFace, 0 descargas |
-| LazarusNLP/NusaBERT-base | no disponible en la información proporcionada | no disponible | Modelo base BERT para indonesio | no disponible | HuggingFace |
-| indobert-base-p2 (IndoBERT) | ~124 M | 512 tokens | Modelo base BERT para indonesio | no disponible | HuggingFace |
-| xlm-roberta-base | ~278 M | 512 tokens | Modelo multilingüe base | MIT | HuggingFace |
+| watermelonlalala/nusabert-metadata-s1 | 110,6 M | no disponible | Clasificación de toxicidad en indonesio | no disponible | Hugging Face, 0 descargas |
+| LazarusNLP/NusaBERT-base | no disponible en la información proporcionada | no disponible | Modelo base BERT para indonesio | no disponible | Hugging Face |
+| indobert-base-p2 (IndoBERT) | ~124 M | 512 tokens | Modelo base BERT para indonesio | no disponible | Hugging Face |
+| xlm-roberta-base | ~278 M | 512 tokens | Modelo multilingüe base | MIT | Hugging Face |
 
 La comparación directa con clasificadores de toxicidad específicos para indonesio no está disponible en la información proporcionada. Frente a un modelo multilingüe como XLM-R, este ajuste fino tiene la ventaja de un tamaño menor y de estar especializado en indonesio, pero carece de métricas publicadas que permitan afirmar que su rendimiento es superior.
 
@@ -84,5 +84,5 @@ La comparación directa con clasificadores de toxicidad específicos para indone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/watermelonlalala/nusabert-metadata-s1
+- Modelo en Hugging Face: https://huggingface.co/watermelonlalala/nusabert-metadata-s1
 - Modelo base: https://huggingface.co/LazarusNLP/NusaBERT-base

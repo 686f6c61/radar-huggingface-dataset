@@ -99,7 +99,7 @@ No se han facilitado resultados de benchmarks del modelo original ni de terceros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/coder543/granite-speech-5.0-470m-turboctc-coreai
+- Modelo en Hugging Face: https://huggingface.co/coder543/granite-speech-5.0-470m-turboctc-coreai
 - Modelo base de IBM: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc
 - Revision concreta del modelo base: https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc/tree/286456107c8ba1161f5c22dfe85466402c88333b
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; las consultas devolvieron unicamente listados de sitios para adultos sin relacion con el modelo.

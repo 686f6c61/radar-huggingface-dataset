@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClearTrans-3B-SFT-Java-to-C | 3,1 B | no disponible | Traduccion Java a C (SFT) | Qwen Research (no comercial) | HuggingFace, 0 descargas |
-| Qwen2.5-Coder-3B (base) | 3,1 B | no disponible en esta ficha | Generacion de codigo general | Apache 2.0 (upstream) | HuggingFace, ampliamente usado |
+| ClearTrans-3B-SFT-Java-to-C | 3,1 B | no disponible | Traduccion Java a C (SFT) | Qwen Research (no comercial) | Hugging Face, 0 descargas |
+| Qwen2.5-Coder-3B (base) | 3,1 B | no disponible en esta ficha | Generacion de codigo general | Apache 2.0 (upstream) | Hugging Face, ampliamente usado |
 | ClearTrans (otros checkpoints del artefacto) | no disponible | no disponible | Otras direcciones de traduccion | Qwen Research | Repositorio GitHub del proyecto |
 
 La comparación más directa es con el modelo base Qwen2.5-Coder-3B, del que hereda arquitectura y tamaño pero del que difiere en el ajuste fino específico y en la licencia resultante (la release derivada queda bajo Qwen Research, no bajo Apache 2.0). No se dispone de información sobre otros modelos especializados en traducción Java-C con los que comparar parámetros, contexto o rendimiento.
@@ -85,7 +85,7 @@ La comparación más directa es con el modelo base Qwen2.5-Coder-3B, del que her
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Java-to-C
+- Hugging Face: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Java-to-C
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - Repositorio del proyecto ClearTrans: https://github.com/Xingzhehu/ClearTrans
 - Licencia (incluida en el repositorio del modelo): LICENSE

@@ -90,7 +90,7 @@ La versión heretic mantiene una divergencia KL de 0.0109 respecto al original, 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: [valiolla/Qwen3.8-4B-Distill-heretic](https://huggingface.co/valiolla/Qwen3.8-4B-Distill-heretic)
+- Repositorio Hugging Face del modelo: [valiolla/Qwen3.8-4B-Distill-heretic](https://huggingface.co/valiolla/Qwen3.8-4B-Distill-heretic)
 - Modelo original: [empero-ai/Qwen3.8-4B-Distill](https://huggingface.co/empero-ai/Qwen3.8-4B-Distill)
 - Base: [Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)
 - Proyecto Heretic: [https://heretic-project.org](https://heretic-project.org)

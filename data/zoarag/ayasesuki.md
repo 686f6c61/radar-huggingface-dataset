@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `zoarag/ayasesuki` es un modelo alojado en HuggingFace por el usuario `zoarag`, publicado inicialmente el 7 de abril de 2026 y actualizado el 23 de agosto de 2026. El repositorio tiene un tamaño de 10.1 GB y está marcado con el tag `region:us`, lo que sugiere que su distribución o uso puede estar orientado al mercado estadounidense. No obstante, la información pública disponible es extremadamente limitada: no se especifica arquitectura, número de parámetros, licencia, idiomas ni pipeline.
+El modelo `zoarag/ayasesuki` es un modelo alojado en Hugging Face por el usuario `zoarag`, publicado inicialmente el 7 de abril de 2026 y actualizado el 23 de agosto de 2026. El repositorio tiene un tamaño de 10.1 GB y está marcado con el tag `region:us`, lo que sugiere que su distribución o uso puede estar orientado al mercado estadounidense. No obstante, la información pública disponible es extremadamente limitada: no se especifica arquitectura, número de parámetros, licencia, idiomas ni pipeline.
 
-El acceso al modelo está restringido (gated), lo que implica que para descargarlo o utilizarlo es necesario aceptar previamente las condiciones establecidas por el autor en HuggingFace. A pesar de tener 1 like, no se han registrado descargas, lo que sugiere que se trata de un modelo reciente o poco difundido. Las búsquedas web no devuelven documentación adicional, papers ni blogs que describan sus capacidades o características técnicas.
+El acceso al modelo está restringido (gated), lo que implica que para descargarlo o utilizarlo es necesario aceptar previamente las condiciones establecidas por el autor en Hugging Face. A pesar de tener 1 like, no se han registrado descargas, lo que sugiere que se trata de un modelo reciente o poco difundido. Las búsquedas web no devuelven documentación adicional, papers ni blogs que describan sus capacidades o características técnicas.
 
-Dada la ausencia de información técnica pública, esta ficha se limita a recoger los datos disponibles y a señalar explícitamente los campos no documentados. Se recomienda consultar la página del modelo en HuggingFace y, si es necesario, contactar con el autor para obtener detalles antes de considerar su uso en producción.
+Dada la ausencia de información técnica pública, esta ficha se limita a recoger los datos disponibles y a señalar explícitamente los campos no documentados. Se recomienda consultar la página del modelo en Hugging Face y, si es necesario, contactar con el autor para obtener detalles antes de considerar su uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ No disponible. No se dispone de informacion suficiente para comparar `zoarag/aya
 
 ## Limitaciones y advertencias
 
-- El modelo tiene acceso restringido (gated), por lo que su uso esta condicionado a la aceptacion de terminos en HuggingFace.
+- El modelo tiene acceso restringido (gated), por lo que su uso esta condicionado a la aceptacion de terminos en Hugging Face.
 - No hay informacion publica sobre sesgos, riesgos de alucinacion o limitaciones de contexto o idioma.
 - La licencia es desconocida, por lo que no se puede confirmar si es apto para uso comercial.
 - La ausencia de documentacion tecnica supone un riesgo importante para cualquier integracion en produccion.
@@ -61,7 +61,7 @@ No disponible. No se dispone de informacion suficiente para comparar `zoarag/aya
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/zoarag/ayasesuki)
-- [Perfil del autor en HuggingFace](https://huggingface.co/zoarag)
+- [Modelo en Hugging Face](https://huggingface.co/zoarag/ayasesuki)
+- [Perfil del autor en Hugging Face](https://huggingface.co/zoarag)
 - [Modelos del autor](https://huggingface.co/zoarag/models)
 - [Datasets del autor](https://huggingface.co/zoarag/datasets)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `DivyaSharma02/crop-vision-api` es un repositorio publicado en HuggingFace por el usuario DivyaSharma02, con licencia Apache 2.0. Según la información disponible, no se proporciona ninguna descripción técnica, arquitectura, tamaño, ni documentación adicional. El nombre sugiere una posible orientación a visión por computador aplicada a cultivos agrícolas, pero no hay datos que lo confirmen. El repositorio no registra descargas ni interacciones, y su fecha de creación es agosto de 2026, lo que indica que es un proyecto reciente y sin validación comunitaria. Dada la ausencia total de especificaciones, no es posible evaluar su utilidad ni sus capacidades reales.
+El modelo `DivyaSharma02/crop-vision-api` es un repositorio publicado en Hugging Face por el usuario DivyaSharma02, con licencia Apache 2.0. Según la información disponible, no se proporciona ninguna descripción técnica, arquitectura, tamaño, ni documentación adicional. El nombre sugiere una posible orientación a visión por computador aplicada a cultivos agrícolas, pero no hay datos que lo confirmen. El repositorio no registra descargas ni interacciones, y su fecha de creación es agosto de 2026, lo que indica que es un proyecto reciente y sin validación comunitaria. Dada la ausencia total de especificaciones, no es posible evaluar su utilidad ni sus capacidades reales.
 
 ## Especificaciones tecnicas
 
@@ -51,4 +51,4 @@ No disponible. No se conocen modelos comparables de la misma categoría debido a
 
 ## Enlaces
 
-- [HuggingFace - DivyaSharma02/crop-vision-api](https://huggingface.co/DivyaSharma02/crop-vision-api)
+- [Hugging Face - DivyaSharma02/crop-vision-api](https://huggingface.co/DivyaSharma02/crop-vision-api)

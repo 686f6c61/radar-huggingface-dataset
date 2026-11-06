@@ -6,7 +6,7 @@ Luna 1.5 Flash es un transformer autorregresivo de tipo decoder-only con 43.191.
 
 Arquitecturalmente es un transformer causal convencional de 6 capas, 256 dimensiones ocultas y 4 cabezas de atención de 64 dimensiones cada una, con pre-normalización de capa, atención causal escalada, red feed-forward GELU con expansión 4x, codificación posicional sinusoidal y embeddings de entrada/salida no compartidos. El vocabulario es de unos 75.003 tokens y la longitud de secuencia indicada es de 200 tokens, una ventana de contexto muy reducida incluso para su categoría.
 
-Su relevancia es fundamentalmente experimental: es un ejemplo extremo de modelo conversacional entrenado en una única GPU consumer (RTX 3050 de 6 GB) en aproximadamente 3 horas, con licencia MIT y muy bajo coste de inferencia. En el momento de redactar esta ficha acumula 0 descargas y 1 "like" en HuggingFace, por lo que no existe validación independiente de su calidad.
+Su relevancia es fundamentalmente experimental: es un ejemplo extremo de modelo conversacional entrenado en una única GPU consumer (RTX 3050 de 6 GB) en aproximadamente 3 horas, con licencia MIT y muy bajo coste de inferencia. En el momento de redactar esta ficha acumula 0 descargas y 1 "like" en Hugging Face, por lo que no existe validación independiente de su calidad.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ La comparacion es aproximada: no existen benchmarks comunes publicados para Luna
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Luna 1.5 Flash | ~43 M | 200 tokens | Ingles | MIT | HuggingFace, arquitectura personalizada con `trust_remote_code` |
+| Luna 1.5 Flash | ~43 M | 200 tokens | Ingles | MIT | Hugging Face, arquitectura personalizada con `trust_remote_code` |
 | GPT-2 small | 124 M | 1.024 tokens | Ingles | MIT modificada | Ampliamente soportado (transformers, llama.cpp) |
 | SmolLM2-135M | 135 M | 2.048 tokens | Ingles y multilingue parcial | Apache 2.0 | transformers, llama.cpp, ONNX |
 | Qwen2.5-0.5B | 494 M | 32.768 tokens | Multilingue (29+ idiomas) | Apache 2.0 | transformers, vLLM, llama.cpp, Ollama |
@@ -106,7 +106,7 @@ Luna 1.5 Flash es el mas pequeno de la comparativa y el unico con una ventana de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aobangaming/luna-1.5-flash
+- Modelo en Hugging Face: https://huggingface.co/Aobangaming/luna-1.5-flash
 - Modelo base (fine-tune): https://huggingface.co/Aobangaming/lightning-30m-ft
 - Modelo base alternativo: https://huggingface.co/Aobangaming/lightning-60m
 - Dataset de entrenamiento: https://huggingface.co/datasets/OpenAssistant/oasst1

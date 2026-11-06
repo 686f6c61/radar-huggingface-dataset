@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ykov-al89/paper_012435815_prompt_engineering` no contiene un modelo de inteligencia artificial, sino un documento académico en formato Markdown con el texto completo de un paper sobre prompt engineering. El autor, identificado como `ykov-al89`, ha subido este artefacto a HuggingFace el 22 de agosto de 2026 bajo la licencia BSD-3-Clause. El documento sigue una estructura clásica de artículo científico (introducción, método, experimentos, conclusión), con estilo de escritura descriptivo y detallado, citas en formato footnote y maquetación LaTeX/arXiv.
+El repositorio `ykov-al89/paper_012435815_prompt_engineering` no contiene un modelo de inteligencia artificial, sino un documento académico en formato Markdown con el texto completo de un paper sobre prompt engineering. El autor, identificado como `ykov-al89`, ha subido este artefacto a Hugging Face el 22 de agosto de 2026 bajo la licencia BSD-3-Clause. El documento sigue una estructura clásica de artículo científico (introducción, método, experimentos, conclusión), con estilo de escritura descriptivo y detallado, citas en formato footnote y maquetación LaTeX/arXiv.
 
 El propósito de este repositorio es compartir un paper de investigación sobre prompt engineering, un área que estudia cómo diseñar y optimizar instrucciones para modelos de lenguaje. No se trata de un modelo entrenado ni de un sistema de IA desplegable; es un archivo de texto plano (Markdown) que contiene el contenido del artículo. Su relevancia actual radica en que el prompt engineering es una disciplina en auge, y este documento puede servir como referencia bibliográfica o como base para futuros análisis.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos comparables porque no es un modelo de IA. Podría compararse con otros repositorios de papers en HuggingFace, pero no hay información sobre repositorios similares del mismo autor ni de la misma categoría.
+No disponible. No se conocen modelos comparables porque no es un modelo de IA. Podría compararse con otros repositorios de papers en Hugging Face, pero no hay información sobre repositorios similares del mismo autor ni de la misma categoría.
 
 ## Limitaciones y advertencias
 

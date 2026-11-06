@@ -2,7 +2,7 @@
 
 ## Resumen
 
-USO 1.0 es un paquete de archivos de modelo publicado por Comfy-Org en HuggingFace, diseñado específicamente para su integración en ComfyUI. El repositorio contiene dos archivos en formato safetensors: un LoRA (`uso-flux1-dit-lora-v1.safetensors`) y un projector (`uso-flux1-projector-v1.safetensors`), lo que sugiere que se trata de un adaptador para el modelo de difusión Flux.1, aunque no se proporciona documentación técnica adicional. El paquete tiene un tamaño total de 0,5 GB y se distribuye bajo licencia Apache-2.0.
+USO 1.0 es un paquete de archivos de modelo publicado por Comfy-Org en Hugging Face, diseñado específicamente para su integración en ComfyUI. El repositorio contiene dos archivos en formato safetensors: un LoRA (`uso-flux1-dit-lora-v1.safetensors`) y un projector (`uso-flux1-projector-v1.safetensors`), lo que sugiere que se trata de un adaptador para el modelo de difusión Flux.1, aunque no se proporciona documentación técnica adicional. El paquete tiene un tamaño total de 0,5 GB y se distribuye bajo licencia Apache-2.0.
 
 La relevancia de este modelo radica en que facilita a los usuarios de ComfyUI la incorporación de un LoRA y un projector preempaquetados, evitando pasos de conversión o instalación manual. Sin embargo, al carecer de una model card descriptiva, no se dispone de información sobre su arquitectura interna, datos de entrenamiento o rendimiento. Es probable que su función sea modificar o adaptar las capacidades de generación de imágenes de Flux, pero no se puede confirmar sin más datos.
 
@@ -64,5 +64,5 @@ No se dispone de información suficiente para establecer comparaciones con otros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Comfy-Org/USO_1.0_Repackaged
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/USO_1.0_Repackaged
 - No se encontraron otros enlaces relevantes (papers, blogs o demos) en la información proporcionada.

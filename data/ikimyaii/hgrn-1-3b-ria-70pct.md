@@ -95,9 +95,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Arquitectura | Esparsidad | WikiText-2 PPL | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ikimyaii/hgrn-1.3B-ria-70pct | 1.364.396.032 | HGRN | 69,98 % (RIA, one-shot) | 17.457 | MIT | HuggingFace |
-| ikimyaii/hgrn-1.3B-dense-baseline | no disponible | HGRN | 0 % (denso) | 11,8 | no disponible | HuggingFace |
-| fla-hub/hgrn-1.3B-100B | no disponible | HGRN | 0 % (denso, modelo original) | no disponible | no disponible | HuggingFace |
+| ikimyaii/hgrn-1.3B-ria-70pct | 1.364.396.032 | HGRN | 69,98 % (RIA, one-shot) | 17.457 | MIT | Hugging Face |
+| ikimyaii/hgrn-1.3B-dense-baseline | no disponible | HGRN | 0 % (denso) | 11,8 | no disponible | Hugging Face |
+| fla-hub/hgrn-1.3B-100B | no disponible | HGRN | 0 % (denso, modelo original) | no disponible | no disponible | Hugging Face |
 
 Comparativa de metodos de podado sobre el mismo modelo y nivel de esparsidad (70 %):
 
@@ -127,7 +127,7 @@ No se dispone de datos de contexto, cuantizacion ni rendimiento en tareas genera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/hgrn-1.3B-ria-70pct
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/hgrn-1.3B-ria-70pct
 - Modelo base denso: https://huggingface.co/ikimyaii/hgrn-1.3B-dense-baseline
 - Modelo original: https://huggingface.co/fla-hub/hgrn-1.3B-100B
 - Repositorio CWS: https://github.com/KimiaGholami/CWS

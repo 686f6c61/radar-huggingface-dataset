@@ -1,7 +1,7 @@
 # carlosmstavares/astabrief-8b-gguf
 
 ## Resumen
-AstaBrief-8B GGUF FP16 es una conversion de pesos del modelo `allenai/AstaBrief_8B` al formato GGUF, publicada por el usuario carlosmstavares en HuggingFace. No se trata de un modelo entrenado desde cero: los pesos son identicos a los del modelo original y unicamente cambia el formato de almacenamiento, lo que permite ejecutarlo en herramientas como llama.cpp u Ollama sin necesidad de convertir manualmente los pesos desde PyTorch.
+AstaBrief-8B GGUF FP16 es una conversion de pesos del modelo `allenai/AstaBrief_8B` al formato GGUF, publicada por el usuario carlosmstavares en Hugging Face. No se trata de un modelo entrenado desde cero: los pesos son identicos a los del modelo original y unicamente cambia el formato de almacenamiento, lo que permite ejecutarlo en herramientas como llama.cpp u Ollama sin necesidad de convertir manualmente los pesos desde PyTorch.
 
 El modelo subyacente es un ajuste posterior al entrenamiento (post-training) de `Qwen/Qwen3-8B` orientado especificamente a tareas de deep research, es decir, a producir briefings y reportes estructurados a partir de informacion dispersa. La arquitectura es la de Qwen3: un transformer decoder-only de 36 capas, hidden size 4096 y atencion con GQA de 32 cabezas de consulta frente a 8 de clave/valor, con aproximadamente 8.190 millones de parametros.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch9` es un repositorio publicado en HuggingFace por el usuario Lanni-ni, registrado como modelo de generación de texto (`text-generation`) y distribuido en formato `safetensors`. Su tamaño total es de 45.703.320 parámetros, lo que lo sitúa en la categoría de modelos pequeños (menos de 50 millones de parámetros). El peso del repositorio es de 0,2 GB.
+El modelo `Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch9` es un repositorio publicado en Hugging Face por el usuario Lanni-ni, registrado como modelo de generación de texto (`text-generation`) y distribuido en formato `safetensors`. Su tamaño total es de 45.703.320 parámetros, lo que lo sitúa en la categoría de modelos pequeños (menos de 50 millones de parámetros). El peso del repositorio es de 0,2 GB.
 
 No se dispone de documentación técnica en la model card: todos los campos están marcados como "More Information Needed", y no se proporcionan datos sobre arquitectura, corpus de entrenamiento, hiperparámetros, licencia ni idiomas soportados. El nombre sugiere una posible conexión con las técnicas de "dynamic forgetting" y con el corpus BabyLM (por la cadena `babylm`), pero no hay confirmación en la información disponible. Se trata de un repositorio aparentemente experimental, con 0 descargas y 0 likes en el momento de redactar esta ficha.
 
@@ -65,5 +65,5 @@ No disponible. No se han identificado modelos comparables en la misma categoria 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch9
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch9
 - No se han encontrado otros enlaces relevantes (repositorios, papers, blogs o demos) en la informacion disponible. Cualquier referencia a `arxiv:1910.09700` en las etiquetas del repositorio corresponde al articulo sobre el impacto ambiental de Lacoste et al. (2019), no al modelo en si.

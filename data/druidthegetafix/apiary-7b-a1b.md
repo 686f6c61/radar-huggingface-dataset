@@ -90,6 +90,6 @@ No se dispone de datos de benchmarks de modelos comparables (GPT-2-XL, Pythia-1B
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DruidTheGetafix/apiary-7B-A1B
+- Hugging Face: https://huggingface.co/DruidTheGetafix/apiary-7B-A1B
 - Repositorio de código y configuración de entrenamiento: https://github.com/Gaurav-Shah05/apiary
 - No se han encontrado papers, blogs o demos adicionales en la información proporcionada.

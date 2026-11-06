@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TinyChampion-3B-R1-i1 es una cuantización GGUF del modelo TinyChampion-3B-R1, desarrollado por MAlexCCBC. Esta versión específica ha sido preparada por mradermacher, un usuario habitual en HuggingFace que publica cuantizaciones listas para usar con herramientas como llama.cpp u Ollama. El nombre sugiere que se trata de un modelo pequeño de 3B parámetros orientado al razonamiento, probablemente inspirado en la familia R1 de DeepSeek, pero adaptado a un tamaño reducido para entornos con recursos limitados.
+TinyChampion-3B-R1-i1 es una cuantización GGUF del modelo TinyChampion-3B-R1, desarrollado por MAlexCCBC. Esta versión específica ha sido preparada por mradermacher, un usuario habitual en Hugging Face que publica cuantizaciones listas para usar con herramientas como llama.cpp u Ollama. El nombre sugiere que se trata de un modelo pequeño de 3B parámetros orientado al razonamiento, probablemente inspirado en la familia R1 de DeepSeek, pero adaptado a un tamaño reducido para entornos con recursos limitados.
 
 La información pública disponible es muy escasa: no hay model card detallada, ni datos de entrenamiento, ni benchmarks. El repositorio solo contiene los archivos de cuantización GGUF y un comentario que indica que se trata de cuantizaciones con imatrix (importance matrix) del modelo original. Dado que el modelo base no está documentado en esta página, la ficha se basa únicamente en los metadatos del repositorio y en inferencias razonables sobre el formato GGUF.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`funseshon/fidri` es un LoRA de DreamBooth para el modelo de generacion de imagenes Krea 2, desarrollado por el usuario `funseshon` y publicado en HuggingFace. El adaptador se entrena sobre el checkpoint base `krea/Krea-2-Raw` y se valida sobre la variante Turbo, lo que permite generar imagenes del concepto asociado al token de activacion `FIDRI` en tan solo 8 pasos de inferencia con guidance scale 0.0.
+`funseshon/fidri` es un LoRA de DreamBooth para el modelo de generacion de imagenes Krea 2, desarrollado por el usuario `funseshon` y publicado en Hugging Face. El adaptador se entrena sobre el checkpoint base `krea/Krea-2-Raw` y se valida sobre la variante Turbo, lo que permite generar imagenes del concepto asociado al token de activacion `FIDRI` en tan solo 8 pasos de inferencia con guidance scale 0.0.
 
 El modelo resuelve el problema de personalizacion de conceptos sobre la familia Krea 2: en lugar de reentrenar un checkpoint completo, el LoRA inyecta el concepto aprendido en el pipeline existente mediante `load_lora_weights`, manteniendo el resto de capacidades del modelo base intactas. Su relevancia radica en que es uno de los primeros adaptadores publicados para Krea 2, una arquitectura reciente de generacion texto-imagen, y su licencia Apache 2.0 permite uso comercial sin restricciones.
 
@@ -32,7 +32,7 @@ Los ejemplos de validacion se generan con la variante `krea/Krea-2-Turbo` usando
 - Generacion de imagenes texto-a-imagen: el LoRA permite generar imagenes del concepto `FIDRI` a partir de descripciones textuales arbitrarias.
 - Personalizacion de concepto: el token de activacion `FIDRI` invoca el concepto aprendido en cualquier prompt, manteniendo el estilo y la composicion del prompt original.
 - Compatibilidad con Krea 2 Turbo: los ejemplos muestran resultados con 8 pasos de inferencia, lo que sugiere baja latencia en generacion.
-- Integracion con diffusers: se carga mediante `Krea2Pipeline` y `load_lora_weights`, por lo que es compatible con el ecosistema estandar de HuggingFace.
+- Integracion con diffusers: se carga mediante `Krea2Pipeline` y `load_lora_weights`, por lo que es compatible con el ecosistema estandar de Hugging Face.
 - Robustez contextual: las muestras demuestran que el concepto se adapta a escenarios muy distintos (entorno urbano futurista, paisaje rural, escena cosmica).
 - Uso comercial permitido: la licencia Apache 2.0 no impone restricciones de uso comercial ni de redistribucion.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre otros LoRA o adaptadores para Krea 2 publicados en el momento de la consulta. La busqueda web no devolvio resultados de modelos comparables especificos para esta arquitectura. Como referencia generica, los LoRA de DreamBooth para Stable Diffusion o Flux siguen el mismo paradigma de personalizacion, pero no son directamente comparables al estar entrenados sobre arquitecturas distintas. Se recomienda consultar el hub de HuggingFace y Civitai para localizar adaptadores alternativos de Krea 2 conforme se publiquen.
+No se dispone de informacion sobre otros LoRA o adaptadores para Krea 2 publicados en el momento de la consulta. La busqueda web no devolvio resultados de modelos comparables especificos para esta arquitectura. Como referencia generica, los LoRA de DreamBooth para Stable Diffusion o Flux siguen el mismo paradigma de personalizacion, pero no son directamente comparables al estar entrenados sobre arquitecturas distintas. Se recomienda consultar el hub de Hugging Face y Civitai para localizar adaptadores alternativos de Krea 2 conforme se publiquen.
 
 ## Limitaciones y advertencias
 
@@ -73,7 +73,7 @@ No se dispone de informacion sobre otros LoRA o adaptadores para Krea 2 publicad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/funseshon/fidri
+- Repositorio Hugging Face: https://huggingface.co/funseshon/fidri
 - Modelo base Krea 2 Raw: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Krea 2 Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Otro LoRA del mismo autor: https://huggingface.co/funseshon/aika

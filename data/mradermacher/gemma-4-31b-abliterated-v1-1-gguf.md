@@ -78,9 +78,9 @@ No se dispone de datos de otros modelos abliterated de ~30B en la informacion pr
 
 | Variante | Formato | Tamano / parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este repositorio (quants estaticos) | GGUF | 12,0-32,7 GB segun cuantizacion; 30,7 mil millones de parametros | apache-2.0 declarada | Publico en HuggingFace |
-| Kooten/gemma-4-31b-abliterated-v1.1 (modelo base) | safetensors / transformers | 30,7 mil millones de parametros; tamano de ficheros no disponible | apache-2.0 declarada | Publico en HuggingFace |
-| mradermacher/gemma-4-31b-abliterated-v1.1-i1-GGUF | GGUF con quants ponderados (imatrix) | no disponible | apache-2.0 declarada | Publico en HuggingFace |
+| Este repositorio (quants estaticos) | GGUF | 12,0-32,7 GB segun cuantizacion; 30,7 mil millones de parametros | apache-2.0 declarada | Publico en Hugging Face |
+| Kooten/gemma-4-31b-abliterated-v1.1 (modelo base) | safetensors / transformers | 30,7 mil millones de parametros; tamano de ficheros no disponible | apache-2.0 declarada | Publico en Hugging Face |
+| mradermacher/gemma-4-31b-abliterated-v1.1-i1-GGUF | GGUF con quants ponderados (imatrix) | no disponible | apache-2.0 declarada | Publico en Hugging Face |
 | Otros modelos abliterated de tamano equivalente | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se dispone de datos de otros modelos abliterated de ~30B en la informacion pr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-31b-abliterated-v1.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-31b-abliterated-v1.1-GGUF
 - Modelo base: https://huggingface.co/Kooten/gemma-4-31b-abliterated-v1.1
 - Cuantizaciones ponderadas (imatrix): https://huggingface.co/mradermacher/gemma-4-31b-abliterated-v1.1-i1-GGUF
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#gemma-4-31b-abliterated-v1.1-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sashaboguraev/pythia-1b-ppt-random_numbers_steps1000_1b-seed1024` es un modelo de generación de texto basado en la arquitectura GPT-NeoX, según los tags asociados en HuggingFace. El nombre sugiere que se trata de un fine-tune del modelo Pythia-1B de EleutherAI, entrenado durante 1000 pasos sobre un conjunto de datos sintético de números aleatorios, con una semilla fija de 1024. El autor es sashaboguraev, y el modelo fue publicado en junio de 2026.
+El modelo `sashaboguraev/pythia-1b-ppt-random_numbers_steps1000_1b-seed1024` es un modelo de generación de texto basado en la arquitectura GPT-NeoX, según los tags asociados en Hugging Face. El nombre sugiere que se trata de un fine-tune del modelo Pythia-1B de EleutherAI, entrenado durante 1000 pasos sobre un conjunto de datos sintético de números aleatorios, con una semilla fija de 1024. El autor es sashaboguraev, y el modelo fue publicado en junio de 2026.
 
 La relevancia de este modelo es principalmente experimental: explora cómo afecta el entrenamiento continuado con datos sintéticos de baja semántica (números aleatorios) a las capacidades de un modelo de lenguaje preentrenado. Sin embargo, la documentación pública es extremadamente escasa: la model card es una plantilla genérica sin información específica sobre el entrenamiento, los datos, la licencia o los idiomas soportados. El modelo cuenta con 1.011.671.040 parámetros, lo que coincide con la familia Pythia-1B, y el repositorio ocupa 3,6 GB en formato safetensors.
 
@@ -23,7 +23,7 @@ A día de hoy, este modelo no presenta casos de uso prácticos documentados ni b
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente se infiere del tag `gpt_neox` presente en HuggingFace, lo que apunta a un transformer decoder-only similar al utilizado en la familia Pythia de EleutherAI. El nombre del modelo indica que es un fine-tune de Pythia-1B, pero no se ha publicado ninguna confirmación oficial ni detalles sobre la configuración exacta (número de capas, cabezas de atención, etc.).
+La arquitectura subyacente se infiere del tag `gpt_neox` presente en Hugging Face, lo que apunta a un transformer decoder-only similar al utilizado en la familia Pythia de EleutherAI. El nombre del modelo indica que es un fine-tune de Pythia-1B, pero no se ha publicado ninguna confirmación oficial ni detalles sobre la configuración exacta (número de capas, cabezas de atención, etc.).
 
 En cuanto al entrenamiento, el nombre sugiere que se realizó un ajuste fino durante 1000 pasos sobre un dataset de números aleatorios, con una semilla de 1024. No se dispone de información sobre el volumen de datos, la composición del dataset, el régimen de entrenamiento (precisión, optimizador, tasa de aprendizaje) ni si se aplicaron técnicas como RLHF o DPO. La model card no aporta ningún dato concreto al respecto.
 
@@ -58,7 +58,7 @@ Dado que el modelo tiene aproximadamente 1.011 millones de parámetros, se puede
 - Con cuantización de 8 bits: aproximadamente 1,1 GB de VRAM.
 - Con cuantización de 4 bits: aproximadamente 0,6 GB de VRAM.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050, RTX 4060) puede ejecutar el modelo en FP16. Para cuantización de 4 bits, incluso GPUs con 2 GB podrían ser suficientes.
-- Opciones de despliegue: al ser un modelo de transformers, se puede servir con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF) u Ollama. También es compatible con la librería `transformers` de HuggingFace.
+- Opciones de despliegue: al ser un modelo de transformers, se puede servir con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF) u Ollama. También es compatible con la librería `transformers` de Hugging Face.
 - Latencia y throughput: no se han publicado mediciones. Para un modelo de 1B, se espera una latencia de decodificación de decenas de milisegundos por token en una GPU moderna, pero esto depende del hardware y del backend.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sashaboguraev/pythia-1b-ppt-random_numbers_steps1000_1b-seed1024
+- Modelo en Hugging Face: https://huggingface.co/sashaboguraev/pythia-1b-ppt-random_numbers_steps1000_1b-seed1024
 - Variante con preservación de embeddings: https://huggingface.co/sashaboguraev/pythia-1b-ppt-random_numbers_steps1000_1b-seed1024-preserve_emb
 - Variante con 100 pasos: https://huggingface.co/sashaboguraev/pythia-1b-ppt-random_numbers_steps100_1b-seed1024
 - Página en FriendliAI: https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-random_numbers_steps1000_1b-seed1024

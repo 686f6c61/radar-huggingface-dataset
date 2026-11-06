@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks específicos para esta conversión 
 - VRAM estimada: aproximadamente 0.9 GB según datos de llm-explorer para la versión 4-bit MLX, lo que permite ejecutarlo en GPUs con 1 GB o más de memoria.
 - GPU recomendadas: cualquier GPU compatible con MLX, principalmente Apple Silicon (M1, M2, M3) con memoria unificada de 8 GB o superior. También puede ejecutarse en GPU NVIDIA mediante el backend de transformers, aunque el formato MLX está optimizado para Apple.
 - Cabe en GPUs de consumo como la NVIDIA GTX 1650 (4 GB) o la RTX 3050 (4 GB), siempre que se utilice un backend que soporte el formato MLX o se convierta a otro formato.
-- Opciones de despliegue: mlx-lm (recomendado para Apple), también es compatible con la librería transformers de HuggingFace si se carga como modelo estándar, aunque la conversión a MLX no es directamente utilizable en llama.cpp o vLLM sin una conversión adicional.
+- Opciones de despliegue: mlx-lm (recomendado para Apple), también es compatible con la librería transformers de Hugging Face si se carga como modelo estándar, aunque la conversión a MLX no es directamente utilizable en llama.cpp o vLLM sin una conversión adicional.
 - Latencia y throughput: no se han publicado mediciones específicas, pero al ser un modelo de 1.5B cuantizado, se espera una generación de decenas de tokens por segundo en hardware Apple moderno.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ No se dispone de una comparativa directa con modelos equivalentes en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Oscilla/Qwen2.5-Coder-1.5B-Instruct-mlx-4Bit
+- Modelo en Hugging Face: https://huggingface.co/Oscilla/Qwen2.5-Coder-1.5B-Instruct-mlx-4Bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Página del modelo en Ollama: https://ollama.com/library/qwen2.5-coder:1.5b-instruct
 - Referencia de VRAM y contexto en llm-explorer: https://llm-explorer.com/model/Qwen%2FQwen2.5-Coder-1.5B-Instruct,3UEbw9qUlk6g82SXEd8vjE

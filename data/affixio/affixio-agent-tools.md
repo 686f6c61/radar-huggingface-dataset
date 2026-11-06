@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AffixIO Agent Tools es un repositorio publicado en HuggingFace por AffixIO que no contiene pesos de un modelo neuronal, sino una capa de herramientas local en Python disenada para agentes de IA. Su funcion es actuar como capa de seguridad "fail-closed": verifica identidad y permisos, valida intenciones de transaccion, permite buscar y organizar correo, redactar y enviar mensajes con aprobacion humana, y ejecutar acciones de webhook o API solo bajo listas de permitidos, dejando un registro de auditoria de cada decision.
+AffixIO Agent Tools es un repositorio publicado en Hugging Face por AffixIO que no contiene pesos de un modelo neuronal, sino una capa de herramientas local en Python disenada para agentes de IA. Su funcion es actuar como capa de seguridad "fail-closed": verifica identidad y permisos, valida intenciones de transaccion, permite buscar y organizar correo, redactar y enviar mensajes con aprobacion humana, y ejecutar acciones de webhook o API solo bajo listas de permitidos, dejando un registro de auditoria de cada decision.
 
 El paquete expone funciones como `run_tool` y `approve`, y un conjunto de herramientas nombradas: `identity.check`, `permissions.check`, `payments.validate`, `email.search`, `email.organise`, `email.draft`, `email.send`, `webhook.trigger`, `api.call` y `audit.show`. El diseno declara explicitamente que no realiza llamadas de red y que no utiliza claves de produccion, de modo que sirve como entorno de simulacion y pruebas para flujos agenticos con acciones sensibles.
 
@@ -22,8 +22,8 @@ Su relevancia actual esta en el nicho de infraestructura para agentes: cubre el 
 | Formato de pesos | no aplica; se distribuye como codigo Python (`tools.py`, `test_tools.py`) |
 | Autor | AffixIO |
 | Version | v1.0.0 (release inicial) |
-| Fecha de creacion en HuggingFace | 2026-09-19 |
-| Ultima actualizacion en HuggingFace | 2026-09-19 |
+| Fecha de creacion en Hugging Face | 2026-09-19 |
+| Ultima actualizacion en Hugging Face | 2026-09-19 |
 | Herramientas incluidas | `identity.check`, `permissions.check`, `payments.validate`, `email.search`, `email.organise`, `email.draft`, `email.send`, `webhook.trigger`, `api.call`, `audit.show` |
 | API publica | `run_tool(nombre, argumentos)`, `approve(appr_id, decision)` |
 | Pruebas | `python test_tools.py` |
@@ -84,7 +84,7 @@ Este repositorio no compite con modelos de lenguaje, sino con frameworks de herr
 | Contexto | no aplica | no aplica |
 | Rendimiento medido | no publicado | no disponible |
 | Licencia | Apache 2.0 | no disponible |
-| Disponibilidad | Repositorio en HuggingFace y SDK en npm enlazado por el autor | no disponible |
+| Disponibilidad | Repositorio en Hugging Face y SDK en npm enlazado por el autor | no disponible |
 | Soporte comercial | Ruta de pago declarada por el autor (producto, SDK, API, Agentic Pay Kit) | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ Este repositorio no compite con modelos de lenguaje, sino con frameworks de herr
 - Sin red y sin claves de produccion: por diseno no puede ejecutar acciones reales contra servicios externos en esta version.
 - La aprobacion humana se realiza mediante `approve(appr_id, decision)`; si ese paso se automatiza o se omite en la capa superior, el control fail-closed pierde su efecto.
 - Idioma unico declarado: ingles. No hay soporte multilingue documentado.
-- Estado de validacion de la comunidad: 0 descargas y 0 "likes" en HuggingFace en el momento de la consulta; no hay evidencia publica de uso en produccion.
+- Estado de validacion de la comunidad: 0 descargas y 0 "likes" en Hugging Face en el momento de la consulta; no hay evidencia publica de uso en produccion.
 - Sin benchmarks ni metricas de rendimiento publicadas: no es posible comparar su eficacia frente a otros guardarrailes.
 - La model card no detalla dependencias, cobertura de tests ni limites conocidos; la unica verificacion ofrecida es la ejecucion de `test_tools.py`.
 - La superficie de seguridad depende de la correcta configuracion de las listas de permitidos de `webhook.trigger` y `api.call`; no se documenta el formato ni la granularidad de esas listas.
@@ -102,7 +102,7 @@ Este repositorio no compite con modelos de lenguaje, sino con frameworks de herr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AffixIO/affixio-agent-tools
+- Repositorio en Hugging Face: https://huggingface.co/AffixIO/affixio-agent-tools
 - Producto (ruta de pago): https://www.affix-io.com
 - SDK en npm: https://www.npmjs.com/package/affixio
 - Documentacion de la API: https://www.affix-io.com/docs/

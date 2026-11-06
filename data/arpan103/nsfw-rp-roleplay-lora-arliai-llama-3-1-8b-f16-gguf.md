@@ -6,7 +6,7 @@ Este repositorio contiene una conversión a formato GGUF (precisión F16) de un 
 
 El modelo hereda la arquitectura transformer decoder-only de Llama 3.1 8B, con aproximadamente 8.000 millones de parámetros en el modelo base, aunque el adaptador LoRA en sí ocupa unos 41,9 millones de parámetros entrenables. La longitud de contexto nativa de Llama 3.1 es de 128.000 tokens, si bien no se especifica si el adaptador ha sido entrenado para aprovechar esa ventana completa.
 
-La relevancia de esta ficha es limitada pero concreta: se trata de un artefacto de nicho para experimentación con personajes conversacionales sin filtros, distribuido en un formato (GGUF F16) que permite su despliegue local en hardware de consumo. El acceso está restringido y requiere aceptar condiciones en HuggingFace, y el contenido está marcado como no apto para todas las audiencias.
+La relevancia de esta ficha es limitada pero concreta: se trata de un artefacto de nicho para experimentación con personajes conversacionales sin filtros, distribuido en un formato (GGUF F16) que permite su despliegue local en hardware de consumo. El acceso está restringido y requiere aceptar condiciones en Hugging Face, y el contenido está marcado como no apto para todas las audiencias.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 ## Limitaciones y advertencias
 
 - Contenido NSFW y para adultos: el modelo está diseñado para generar material explícito, lo que puede violar políticas de plataformas y requiere control de acceso en producción.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que limita su distribución automatizada.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que limita su distribución automatizada.
 - Solo inglés: no se documenta soporte multilingüe, por lo que su uso en castellano producirá resultados degradados.
 - Riesgo de alucinación: como todo modelo de 8B, puede inventar hechos y mantener incoherencias en conversaciones largas.
 - Sesgos: no se documentan evaluaciones de sesgo; el entrenamiento en roleplay NSFW puede amplificar estereotipos de género y contenido problemático.
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arpan103/NSFW-RP-RolePlay-LoRA-ArliAI-Llama-3.1-8B-F16-GGUF
+- Hugging Face: https://huggingface.co/arpan103/NSFW-RP-RolePlay-LoRA-ArliAI-Llama-3.1-8B-F16-GGUF
 - Modelo base del adaptador: https://huggingface.co/mirazrafi/NSFW-RP-RolePlay-LoRA-ArliAI-Llama-3.1-8B
 - Herramienta de conversión gguf-my-lora: https://huggingface.co/spaces/ggml-org/gguf-my-lora
 - Llama 3.1 (Meta): https://huggingface.co/meta-llama/Llama-3.1-8B

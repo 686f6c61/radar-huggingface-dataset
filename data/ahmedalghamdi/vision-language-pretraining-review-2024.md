@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por ahmedalghamdi, no contiene un modelo de lenguage preentrenado ni un checkpoint utilizable para inferencia. Se trata de una nota de investigacion titulada "Notes on Vision Language Pretraining" que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion sobre el pretraining vision-language. El identificador del repositorio y su contenido sugieren que el objetivo es documentar el estado del arte y plantear experimentos, no ofrecer un modelo operativo.
+Este repositorio de Hugging Face, publicado por ahmedalghamdi, no contiene un modelo de lenguage preentrenado ni un checkpoint utilizable para inferencia. Se trata de una nota de investigacion titulada "Notes on Vision Language Pretraining" que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion sobre el pretraining vision-language. El identificador del repositorio y su contenido sugieren que el objetivo es documentar el estado del arte y plantear experimentos, no ofrecer un modelo operativo.
 
 El repositorio incluye exclusivamente ficheros Markdown (`summary.md` y `README.md`). La unica entrada en safetensors registra 16.576 parametros, una cifra que no corresponde a ningun modelo de vision-lenguaje real, sino probablemente a un peso residual o a un artefacto accidental. La fecha de creacion es futura (2026-09-09), lo que refuerza que se trata de un espacio de trabajo de investigacion y no de un modelo publicado con fines de produccion. La licencia es CC-BY-4.0.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No aplicable. Este repositorio no pertenece a la categoria de modelos de vision-lenguaje preentrenados, sino a la de notas de investigacion. No existe un modelo comparable en parametros ni en funcionalidad. La unica comparacion posible seria con otros repositorios de notas academicas en HuggingFace, para lo cual no se dispone de datos estandarizados.
+No aplicable. Este repositorio no pertenece a la categoria de modelos de vision-lenguaje preentrenados, sino a la de notas de investigacion. No existe un modelo comparable en parametros ni en funcionalidad. La unica comparacion posible seria con otros repositorios de notas academicas en Hugging Face, para lo cual no se dispone de datos estandarizados.
 
 ## Limitaciones y advertencias
 
@@ -70,5 +70,5 @@ No aplicable. Este repositorio no pertenece a la categoria de modelos de vision-
 
 ## Enlaces
 
-- HuggingFace del repositorio: https://huggingface.co/ahmedalghamdi/vision-language-pretraining-review-2024
+- Hugging Face del repositorio: https://huggingface.co/ahmedalghamdi/vision-language-pretraining-review-2024
 - Repositorio relacionado del mismo autor: https://huggingface.co/ahmedalghamdi/vision-language-pretraining-prototype

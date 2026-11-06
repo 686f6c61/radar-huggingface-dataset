@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `RKB109/hybrid-semantic-search-20261006-model` es una baseline léxica de recuperación semántica publicada por el usuario RKB109 en HuggingFace. No se trata de un transformer neuronal ni de un modelo de lenguaje generativo: según su propia model card, combina pesos de token por etiqueta (per-label token weights) con recuperación de evidencia ponderada por IDF, y no invoca ningún LLM alojado. Su propósito declarado es servir como prototipo transparente y reproducible para demostraciones de arquitectura de búsqueda semántica empresarial cuando las APIs de embeddings no están disponibles, resultan caras o están restringidas.
+El modelo `RKB109/hybrid-semantic-search-20261006-model` es una baseline léxica de recuperación semántica publicada por el usuario RKB109 en Hugging Face. No se trata de un transformer neuronal ni de un modelo de lenguaje generativo: según su propia model card, combina pesos de token por etiqueta (per-label token weights) con recuperación de evidencia ponderada por IDF, y no invoca ningún LLM alojado. Su propósito declarado es servir como prototipo transparente y reproducible para demostraciones de arquitectura de búsqueda semántica empresarial cuando las APIs de embeddings no están disponibles, resultan caras o están restringidas.
 
 El modelo se distribuye con licencia MIT y está etiquetado para las tareas `sentence-similarity`, `feature-extraction`, `text-ranking` y `question-answering`, con `pipeline_tag` de `sentence-similarity` y `library_name: custom`. La evaluación publicada es extremadamente reducida: 4 ejemplos sintéticos reservados (*held-out*) con una accuracy reportada de 1. Las métricas que el autor declara como objetivo son `retrieval_accuracy`, `recall_at_3` y `mean_reciprocal_rank`, pero solo se reporta accuracy sobre esa muestra mínima.
 
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye resultados comparativos f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKB109/hybrid-semantic-search-20261006-model
+- Modelo en Hugging Face: https://huggingface.co/RKB109/hybrid-semantic-search-20261006-model
 - Dataset asociado: https://huggingface.co/datasets/RKB109/hybrid-semantic-search-20261006-dataset
 - Repositorio de GitHub con `train.py`, split del dataset, codigo de evaluacion y formato JSON del modelo: referenciado en la model card, URL no disponible en la informacion proporcionada.
 - No se han encontrado papers, blogs, demos ni repositorios adicionales relevantes en la busqueda web realizada.

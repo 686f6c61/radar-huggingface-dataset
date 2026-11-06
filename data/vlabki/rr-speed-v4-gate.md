@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen otros modelos públicos con la misma finalidad (control de agente en Rainbow Road con behavior cloning) en HuggingFace. El único modelo comparable es su predecesor `vlabki/rr-speed-v4`, del cual es una copia exacta salvo por la configuración de `item_rule`.
+No disponible. No se conocen otros modelos públicos con la misma finalidad (control de agente en Rainbow Road con behavior cloning) en Hugging Face. El único modelo comparable es su predecesor `vlabki/rr-speed-v4`, del cual es una copia exacta salvo por la configuración de `item_rule`.
 
 ## Limitaciones y advertencias
 
@@ -71,5 +71,5 @@ No disponible. No se conocen otros modelos públicos con la misma finalidad (con
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/vlabki/rr-speed-v4-gate)
-- [Perfil de VictoryLab en HuggingFace](https://huggingface.co/vlabki)
+- [Modelo en Hugging Face](https://huggingface.co/vlabki/rr-speed-v4-gate)
+- [Perfil de VictoryLab en Hugging Face](https://huggingface.co/vlabki)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Volt es un modelo de segmentación semántica de nubes de puntos 3D desarrollado por Kadir Yilmaz, Adrian Kruse, Tristan Höfer, Daan de Geus y Bastian Leibe (investigadores vinculados a la Universidad RWTH Aachen), y distribuido en HuggingFace por la organización torch-pointcloud. Este checkpoint concreto, `volt-b-joint.scannet200.kadir-yilmaz`, es la conversión del modelo original al formato de la librería `torch-pointcloud` y está especializado en la partición semántica de escenas interiores en las 200 clases de ScanNet200.
+Volt es un modelo de segmentación semántica de nubes de puntos 3D desarrollado por Kadir Yilmaz, Adrian Kruse, Tristan Höfer, Daan de Geus y Bastian Leibe (investigadores vinculados a la Universidad RWTH Aachen), y distribuido en Hugging Face por la organización torch-pointcloud. Este checkpoint concreto, `volt-b-joint.scannet200.kadir-yilmaz`, es la conversión del modelo original al formato de la librería `torch-pointcloud` y está especializado en la partición semántica de escenas interiores en las 200 clases de ScanNet200.
 
 El modelo se presenta en el paper "Volume Transformer: Revisiting Vanilla Transformers for 3D Scene Understanding" (ECCV 2026) como una propuesta deliberadamente sencilla: un transformer plano sobre tokens de parches volumétricos, sin mecanismos jerárquicos complejos ni atención dispersa específica para 3D. Con 94,1 millones de parámetros, 256 canales de características y una entrada de 6 canales (posición, color y normales), resuelve una tarea clásica de visión 3D: asignar una etiqueta semántica a cada punto de una reconstrucción de escena interior.
 
@@ -80,7 +80,7 @@ No se dispone en la informacion proporcionada de resultados de benchmarks de mod
 
 | Modelo | Parametros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Volt (este checkpoint) | 94,1 M | Transformer plano sobre parches volumetricos | MIT | HuggingFace + torch-pointcloud |
+| Volt (este checkpoint) | 94,1 M | Transformer plano sobre parches volumetricos | MIT | Hugging Face + torch-pointcloud |
 | PointNet++ | no disponible | Red jerarquica sobre puntos | no disponible | Implementaciones multiples |
 | MinkowskiNet | no disponible | Convoluciones dispersas en voxeles | no disponible | Codigo publico |
 | PTv3 (Point Transformer V3) | no disponible | Transformer con serializacion espacial | no disponible | Codigo publico |
@@ -101,7 +101,7 @@ Los datos de los modelos alternativos no estan disponibles en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/volt-b-joint.scannet200.kadir-yilmaz
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/volt-b-joint.scannet200.kadir-yilmaz
 - Modelo original (KadirYilmaz/Volt): https://huggingface.co/KadirYilmaz/Volt
 - Paper (arXiv): https://arxiv.org/abs/2604.19609
 - Libreria torch-pointcloud (GitHub): https://github.com/arthurdjn/pytorch-pointcloud

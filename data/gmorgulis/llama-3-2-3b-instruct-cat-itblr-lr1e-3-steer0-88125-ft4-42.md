@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tune) de `meta-llama/Llama-3.2-3B-Instruct`, publicado por el usuario GMorgulis en HuggingFace. El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de HuggingFace, como indica la model card. El nombre del repositorio incluye parámetros de entrenamiento como la tasa de aprendizaje (`lr1e-3`), un factor de "steering" (`STEER0.88125`) y un valor de épocas o pasos (`ft4.42`), aunque no se aporta documentación adicional que explique su significado exacto.
+Este modelo es un ajuste fino (fine-tune) de `meta-llama/Llama-3.2-3B-Instruct`, publicado por el usuario GMorgulis en Hugging Face. El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de Hugging Face, como indica la model card. El nombre del repositorio incluye parámetros de entrenamiento como la tasa de aprendizaje (`lr1e-3`), un factor de "steering" (`STEER0.88125`) y un valor de épocas o pasos (`ft4.42`), aunque no se aporta documentación adicional que explique su significado exacto.
 
 Se trata de un modelo de 3.2 mil millones de parámetros, basado en la arquitectura transformer decoder-only de Llama 3.2, con una ventana de contexto de 128 000 tokens heredada del modelo base. El repositorio ocupa solo 0.2 GB, lo que sugiere que el ajuste fino se realizó de forma eficiente (posiblemente con técnicas de adaptación de bajo rango, aunque no se confirma). No se especifican la licencia, los idiomas soportados ni los datos de entrenamiento, lo que limita su uso en producción sin una evaluación previa.
 

@@ -82,8 +82,8 @@ La única validación reportada por el autor es una comprobación de equivalenci
 |---|---|---|---|---|---|
 | masahiroid/manga-ocr-base-coreml | Core ML (.mlpackage), fp16 | ViT + decoder BERT de 2 capas | Japonés | apache-2.0 | Conversión comunitaria para iOS/macOS; tres artefactos (encoder y dos decoders) |
 | kha-white/manga-ocr-base | PyTorch (pytorch_model.bin, pickle) | ViT + decoder BERT de 2 capas | Japonés | apache-2.0 | Modelo original; referencia funcional de la conversión |
-| agiera/manga-ocr-base | No disponible | Vision Encoder Decoder | Japonés | No disponible | Réplica del modelo original alojada en HuggingFace |
-| mathewthe2/manga-ocr-base | No disponible | Vision Encoder Decoder | Japonés | No disponible | Réplica del modelo original alojada en HuggingFace |
+| agiera/manga-ocr-base | No disponible | Vision Encoder Decoder | Japonés | No disponible | Réplica del modelo original alojada en Hugging Face |
+| mathewthe2/manga-ocr-base | No disponible | Vision Encoder Decoder | Japonés | No disponible | Réplica del modelo original alojada en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -100,7 +100,7 @@ La única validación reportada por el autor es una comprobación de equivalenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masahiroid/manga-ocr-base-coreml
+- Modelo en Hugging Face: https://huggingface.co/masahiroid/manga-ocr-base-coreml
 - Modelo base original: https://huggingface.co/kha-white/manga-ocr-base
 - Repositorio del proyecto original en GitHub: https://github.com/kha-white/manga-ocr
 - Réplica agiera/manga-ocr-base: https://huggingface.co/agiera/manga-ocr-base

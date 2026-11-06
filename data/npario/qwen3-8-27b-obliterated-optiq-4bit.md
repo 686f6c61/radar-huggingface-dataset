@@ -74,7 +74,7 @@ No se dispone de datos comparativos suficientes en la información proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: [npario/Qwen3.8-27B-OBLITERATED-OptiQ-4bit](https://huggingface.co/npario/Qwen3.8-27B-OBLITERATED-OptiQ-4bit)
+- Modelo en Hugging Face: [npario/Qwen3.8-27B-OBLITERATED-OptiQ-4bit](https://huggingface.co/npario/Qwen3.8-27B-OBLITERATED-OptiQ-4bit)
 - Modelo base: [OBLITERATUS/Qwen3.8-27B-OBLITERATED](https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED)
 - Proyecto OptiQ: [mlx-optiq.com](https://mlx-optiq.com/)
 - Lista de cuantizaciones OptiQ: [mlx-optiq.com/models](https://mlx-optiq.com/models)

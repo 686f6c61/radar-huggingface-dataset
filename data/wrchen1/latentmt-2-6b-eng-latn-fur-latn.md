@@ -71,7 +71,7 @@ No disponible. No se han identificado en la informacion proporcionada otros adap
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-fur-latn
+- Repositorio Hugging Face: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-fur-latn
 - Repositorio alternativo (organizacion LatentMT): https://huggingface.co/LatentMT/LatentMT-2.6B-eng-latn-fur-latn
 - Paper en arXiv: https://arxiv.org/abs/2607.18618 (PDF: https://arxiv.org/pdf/2607.18618v1)
 - Modelo base Ouro-2.6B-Thinking: https://huggingface.co/ByteDance/Ouro-2.6B-Thinking

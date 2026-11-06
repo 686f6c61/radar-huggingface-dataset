@@ -99,5 +99,5 @@ No se dispone de métricas de benchmarks comparables, por lo que la comparación
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ferrazzipietro/Qwen3-8B-cpt-tesi_all
+- Repositorio en Hugging Face: https://huggingface.co/ferrazzipietro/Qwen3-8B-cpt-tesi_all
 - No se han encontrado en la búsqueda web artículos, papers, repositorios de código ni demos asociados a este modelo. Los resultados devueltos por la búsqueda corresponden a temas sin relación (clientes de ChatGPT y discusiones generales sobre suscripciones), por lo que no se incluyen.

@@ -78,7 +78,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mark-ZJTang/alam_plus_pi_metaworld_mt50
+- Repositorio Hugging Face: https://huggingface.co/Mark-ZJTang/alam_plus_pi_metaworld_mt50
 - MetaWorld (benchmark): https://github.com/Farama-Foundation/Metaworld
 - Documentación de MetaWorld: https://metaworld.farama.org/
 - Página oficial de Meta-World: https://meta-world.github.io/

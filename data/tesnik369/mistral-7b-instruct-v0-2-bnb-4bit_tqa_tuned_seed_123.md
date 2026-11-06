@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `TesNik369/mistral-7b-instruct-v0.2-bnb-4bit_tqa_tuned_seed_123` es un fine-tuning del modelo base `unsloth/mistral-7b-instruct-v0.2-bnb-4bit`, que a su vez es una versión cuantizada en 4 bits (bitsandbytes) de Mistral 7B Instruct v0.2. Ha sido desarrollado por TesNik369 utilizando la librería Unsloth para acelerar el entrenamiento y la librería TRL de HuggingFace. El nombre sugiere que el ajuste se realizó sobre un conjunto de datos de tipo TQA (text question answering), aunque no se especifica el contenido exacto del dataset.
+El modelo `TesNik369/mistral-7b-instruct-v0.2-bnb-4bit_tqa_tuned_seed_123` es un fine-tuning del modelo base `unsloth/mistral-7b-instruct-v0.2-bnb-4bit`, que a su vez es una versión cuantizada en 4 bits (bitsandbytes) de Mistral 7B Instruct v0.2. Ha sido desarrollado por TesNik369 utilizando la librería Unsloth para acelerar el entrenamiento y la librería TRL de Hugging Face. El nombre sugiere que el ajuste se realizó sobre un conjunto de datos de tipo TQA (text question answering), aunque no se especifica el contenido exacto del dataset.
 
 Con 7.241.732.096 parámetros, este modelo se posiciona como una alternativa ligera para tareas de generación de texto e instrucciones, con la ventaja de poder ejecutarse en hardware de consumo gracias a su cuantización de 4 bits. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales. El contexto máximo, heredado del modelo base, es de 32.000 tokens, aunque este dato no se confirma explícitamente en la model card. Su relevancia radica en ofrecer un punto de partida para desarrolladores que necesitan un modelo instructivo pequeño, rápido de entrenar y desplegar, con un coste computacional reducido.
 
@@ -21,7 +21,7 @@ Con 7.241.732.096 parámetros, este modelo se posiciona como una alternativa lig
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Mistral 7B Instruct v0.2, una arquitectura transformer con atención de ventana deslizante (sliding window attention) y 32 capas. El fine-tuning se realizó sobre la versión cuantizada en 4 bits del modelo base, utilizando Unsloth para optimizar el entrenamiento (según la model card, se entrenó 2 veces más rápido) y la librería TRL de HuggingFace para el ajuste por instrucciones. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens utilizados ni si se aplicaron técnicas como RLHF o DPO. La única innovación destacable es el uso de Unsloth, que reduce el uso de memoria y acelera el fine-tuning en GPUs consumer.
+El modelo parte de Mistral 7B Instruct v0.2, una arquitectura transformer con atención de ventana deslizante (sliding window attention) y 32 capas. El fine-tuning se realizó sobre la versión cuantizada en 4 bits del modelo base, utilizando Unsloth para optimizar el entrenamiento (según la model card, se entrenó 2 veces más rápido) y la librería TRL de Hugging Face para el ajuste por instrucciones. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens utilizados ni si se aplicaron técnicas como RLHF o DPO. La única innovación destacable es el uso de Unsloth, que reduce el uso de memoria y acelera el fine-tuning en GPUs consumer.
 
 ## Capacidades
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 4-5 GB con cuantización de 4 bits (para 7B parámetros).
 - GPU recomendadas: RTX 3060 (12 GB), RTX 3090, RTX 4090, o GPUs de datacenter como A10G o A100 (aunque no son necesarias).
 - Sí cabe en GPUs de consumo: una RTX 3060 con 12 GB es suficiente para ejecutar el modelo en 4 bits.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, o directamente con transformers.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, o directamente con transformers.
 - Latencia y throughput: no disponibles; dependen del hardware y del backend de inferencia.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ La comparativa se basa en características generales; no hay datos de rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TesNik369/mistral-7b-instruct-v0.2-bnb-4bit_tqa_tuned_seed_123
+- Modelo en Hugging Face: https://huggingface.co/TesNik369/mistral-7b-instruct-v0.2-bnb-4bit_tqa_tuned_seed_123
 - Repositorio de referencia de Mistral 7B Instruct v0.2: https://github.com/inferless/mistral-7b-instruct-v0.2/
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
 - Modelo base unsloth/mistral-7b-instruct-v0.2-bnb-4bit: https://huggingface.co/unsloth/mistral-7b-instruct-v0.2-bnb-4bit

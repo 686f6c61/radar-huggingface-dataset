@@ -6,14 +6,14 @@
 
 Su rasgo diferencial es que se declara "perpetual": la política no emite condición de terminación y sigue generando marcha indefinidamente hasta que se le ordene lo contrario, lo que la hace apta para ejecución continua en robot real en lugar de episodios acotados. Es un finetune/remix de `jrubiosainz/microduck-game-hillclimber-remix8`, orientado por el nombre y el linaje a terrenos con pendiente.
 
-La relevancia es acotada pero concreta: el ecosistema microduck (Pollen Robotics) publica políticas de robot abiertas con un manifiesto estandarizado y un comando de despliegue de una línea, lo que convierte a estos modelos en material directamente reproducible para investigación en sim-to-real y locomoción con RL. El repositorio ocupa 0,0 GB (por debajo del umbral de redondeo de HuggingFace) y no registra descargas ni likes, lo que sitúa el modelo en la categoría de artefacto experimental de nicho.
+La relevancia es acotada pero concreta: el ecosistema microduck (Pollen Robotics) publica políticas de robot abiertas con un manifiesto estandarizado y un comando de despliegue de una línea, lo que convierte a estos modelos en material directamente reproducible para investigación en sim-to-real y locomoción con RL. El repositorio ocupa 0,0 GB (por debajo del umbral de redondeo de Hugging Face) y no registra descargas ni likes, lo que sitúa el modelo en la categoría de artefacto experimental de nicho.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | No disponible. Política de aprendizaje por refuerzo exportada a ONNX; la model card no detalla la topología de la red (capas, dimensiones, tipo de encoder) |
-| Parámetros totales | No disponible. El repositorio ocupa 0,0 GB, lo que implica un artefacto por debajo del umbral de reporte de HuggingFace (típicamente pocos MB para políticas de este tipo) |
+| Parámetros totales | No disponible. El repositorio ocupa 0,0 GB, lo que implica un artefacto por debajo del umbral de reporte de Hugging Face (típicamente pocos MB para políticas de este tipo) |
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica. No hay ventana de contexto: la entrada es un vector de observación de 61 dimensiones por paso de control |
 | Tipos de cuantización | No disponible. Se distribuye un único `policy.onnx` sin variantes cuantizadas documentadas; la normalización de observaciones está embebida en el propio grafo ONNX |
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 - Compatibilidad con GPU de consumo: irrelevante para el caso de uso; una RTX 4090 o similar solo tendría sentido para reentrenar la política en el repo `microduck_rl`, no para inferir.
 - Opciones de despliegue: `robotctl` (vía manifiesto schema 2) es la ruta documentada; al ser ONNX, ONNX Runtime es el runtime natural, aunque la model card no lo confirma explícitamente.
 - Latencia y throughput: el bucle de control se declara a 50 Hz, lo que fija un presupuesto de 20 ms por paso de control (observación, inferencia y envío de 14 acciones). La model card no publica latencia medida ni tasa de éxito.
-- Almacenamiento: despreciable; el artefacto completo ocupa 0,0 GB según HuggingFace.
+- Almacenamiento: despreciable; el artefacto completo ocupa 0,0 GB según Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -89,7 +89,7 @@ No se dispone de datos de arquitectura, número de parámetros ni métricas de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dashi/microduck-hill-daily-20261027
+- Modelo en Hugging Face: https://huggingface.co/dashi/microduck-hill-daily-20261027
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix8
 - Predecesor citado: https://huggingface.co/dashi/microduck-hill-remix-r744
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck

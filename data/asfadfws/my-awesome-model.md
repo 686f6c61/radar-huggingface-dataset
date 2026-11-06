@@ -2,17 +2,17 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario asfadfws bajo identificador asfadfws/my-awesome-model. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, el repositorio ocupa 0,0 GB y no contiene ficheros de pesos, por lo que no es un artefacto desplegable sino un esqueleto de model card con campos sin rellenar. La metadata de HuggingFace lo etiqueta como transformers, pytorch, bert, feature-extraction y compatible con endpoints, mientras que el texto de la model card describe un asistente conversacional de razonamiento con modo de pensamiento, function calling y busqueda web.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario asfadfws bajo identificador asfadfws/my-awesome-model. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, el repositorio ocupa 0,0 GB y no contiene ficheros de pesos, por lo que no es un artefacto desplegable sino un esqueleto de model card con campos sin rellenar. La metadata de Hugging Face lo etiqueta como transformers, pytorch, bert, feature-extraction y compatible con endpoints, mientras que el texto de la model card describe un asistente conversacional de razonamiento con modo de pensamiento, function calling y busqueda web.
 
 La model card afirma una actualizacion de version que mejora la profundidad de razonamiento mediante mas recursos de computo y optimizaciones algoritmicas en post-entrenamiento, y cita un incremento de precision en AIME 2025 del 70 % al 87,5 % junto a un aumento del consumo medio de tokens por pregunta de 12K a 23K. Sin embargo, la tabla de benchmarks incluida en esa misma model card contiene marcadores de posicion sin sustituir ({RESULT}) en todas las celdas del modelo, y los modelos de comparacion aparecen como Model1, Model2 y Model1-v2 sin identificar.
 
-El resultado es un artefacto cuya documentacion es internamente contradictoria: la taxonomia de HuggingFace apunta a un encoder BERT para extraccion de caracteristicas, mientras que el README describe un LLM de razonamiento con system prompt, temperatura recomendada de 0,6 y plantillas de citacion de resultados de busqueda. Cualquier evaluacion tecnica seria requiere que el autor publique pesos, configuracion y resultados verificables.
+El resultado es un artefacto cuya documentacion es internamente contradictoria: la taxonomia de Hugging Face apunta a un encoder BERT para extraccion de caracteristicas, mientras que el README describe un LLM de razonamiento con system prompt, temperatura recomendada de 0,6 y plantillas de citacion de resultados de busqueda. Cualquier evaluacion tecnica seria requiere que el autor publique pesos, configuracion y resultados verificables.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta de HuggingFace indica "bert"; la model card describe un modelo de razonamiento conversacional sin especificar arquitectura) |
+| Arquitectura | no disponible (la etiqueta de Hugging Face indica "bert"; la model card describe un modelo de razonamiento conversacional sin especificar arquitectura) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -29,7 +29,7 @@ El resultado es un artefacto cuya documentacion es internamente contradictoria: 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura. La model card no menciona si se trata de un transformer denso, un MoE, un modelo hibrido con SSM ni el numero de capas, dimensiones ocultas o cabezas de atencion. La unica pista estructural es la etiqueta "bert" de HuggingFace, que sugiere una familia de encoder bidireccional, incompatible con el comportamiento generativo y de razonamiento multi-turno que describe el propio README. Esta contradiccion no se resuelve en la documentacion disponible.
+No hay informacion verificable sobre la arquitectura. La model card no menciona si se trata de un transformer denso, un MoE, un modelo hibrido con SSM ni el numero de capas, dimensiones ocultas o cabezas de atencion. La unica pista estructural es la etiqueta "bert" de Hugging Face, que sugiere una familia de encoder bidireccional, incompatible con el comportamiento generativo y de razonamiento multi-turno que describe el propio README. Esta contradiccion no se resuelve en la documentacion disponible.
 
 Tampoco se detallan los datos de entrenamiento: no se indica el numero de tokens, la composicion del corpus, ni si hubo etapas de RLHF, DPO o RL con verificado. La model card se limita a afirmar que la version actual mejora el razonamiento "aprovechando mayores recursos de computo" e "introduciendo mecanismos de optimizacion algoritmica durante el post-entrenamiento", sin especificar cuales. Se mencionan dos innovaciones funcionales: soporte de system prompt y la eliminacion de la necesidad de inyectar tokens especiales al inicio de la salida para forzar un patron de pensamiento concreto. No se aporta ningun detalle sobre decodificacion especulativa, atencion lineal ni tecnicas de eficiencia.
 
@@ -96,7 +96,7 @@ No disponible. La model card menciona tres referencias (Model1, Model2 y Model1-
 ## Limitaciones y advertencias
 
 - Ausencia total de pesos: el repositorio ocupa 0,0 GB y no incluye safetensors, GGUF ni ficheros de configuracion. El modelo no es ejecutable tal y como esta publicado.
-- Contradiccion de taxonomia: la etiqueta de HuggingFace indica "bert" y pipeline "feature-extraction", mientras que la model card describe un asistente generativo de razonamiento con function calling. Ambas descripciones no pueden ser correctas simultaneamente.
+- Contradiccion de taxonomia: la etiqueta de Hugging Face indica "bert" y pipeline "feature-extraction", mientras que la model card describe un asistente generativo de razonamiento con function calling. Ambas descripciones no pueden ser correctas simultaneamente.
 - Benchmarks no verificables: las quince celdas de la tabla de evaluacion contienen el marcador {RESULT}. Las unicas cifras publicadas (AIME 2025 y consumo de tokens) carecen de metodologia.
 - Modelos de comparacion anonimizados: las referencias Model1, Model2 y Model1-v2 impiden situar el modelo respecto al estado del arte.
 - Idiomas no declarados: no hay lista de idiomas soportados, lo que impide evaluar cobertura multilingue o comportamiento en castellano.
@@ -108,7 +108,7 @@ No disponible. La model card menciona tres referencias (Model1, Model2 y Model1-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asfadfws/my-awesome-model
+- Modelo en Hugging Face: https://huggingface.co/asfadfws/my-awesome-model
 - Repositorio de codigo: la model card menciona "our code repository" sin proporcionar URL.
 - Web oficial y API: la model card menciona "our official website" sin proporcionar URL.
 - Resultados de busqueda web: las consultas realizadas no devolvieron informacion relevante sobre este modelo. Los unicos resultados obtenidos fueron paginas corporativas genericas de Microsoft (microsoft.com, account.microsoft.com, myaccount.microsoft.com, microsoft.com/microsoft-365 y en.wikipedia.org/wiki/Microsoft), sin relacion alguna con asfadfws/my-awesome-model. No se han encontrado papers, blogs, repositorios ni demos asociados.

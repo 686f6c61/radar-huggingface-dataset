@@ -2,7 +2,7 @@
 
 ## Resumen
 
-looptransv2-qwen3.5-2b-s2-trial-m3_p90 es un modelo experimental de generación de texto derivado de Qwen/Qwen3.5-2B, publicado por el usuario arianraje en HuggingFace. Se trata de un *looped transformer*: en lugar de ejecutar cada capa una sola vez, ciertos bloques de capas del modelo base se reejecutan compartiendo pesos, elevando la profundidad efectiva de 24 a 36 capas sin incrementar el número de parámetros. El modelo forma parte del proyecto LoopTrans (rama `v2`) y corresponde a la etapa 2 de entrenamiento (`s2-trial-m3_p90`), una ejecución de control con schedule no seleccionado.
+looptransv2-qwen3.5-2b-s2-trial-m3_p90 es un modelo experimental de generación de texto derivado de Qwen/Qwen3.5-2B, publicado por el usuario arianraje en Hugging Face. Se trata de un *looped transformer*: en lugar de ejecutar cada capa una sola vez, ciertos bloques de capas del modelo base se reejecutan compartiendo pesos, elevando la profundidad efectiva de 24 a 36 capas sin incrementar el número de parámetros. El modelo forma parte del proyecto LoopTrans (rama `v2`) y corresponde a la etapa 2 de entrenamiento (`s2-trial-m3_p90`), una ejecución de control con schedule no seleccionado.
 
 La relevancia de este modelo es fundamentalmente investigadora: explora si la profundidad recurrente con pesos compartidos puede mejorar la relación capacidad/coste en modelos pequeños mediante destilación desde el modelo base congelado. El schedule concreto aplicado es `[2]×3 [3]×2 [4]×3 [8]×3 [14]×2 [15]×3 [18]×3` (capas indexadas desde 0, con formato [primera..última]×repeticiones) y m = 3 pasadas adicionales de atención con cachés KV extra.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Profundidad efectiva | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| looptransv2-qwen3.5-2b-s2-trial-m3_p90 | ~2B (derivado de Qwen3.5-2B) | No disponible | 36 capas | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-2B (modelo base) | ~2B | No disponible en la información | 24 capas | No disponible en la información | HuggingFace |
+| looptransv2-qwen3.5-2b-s2-trial-m3_p90 | ~2B (derivado de Qwen3.5-2B) | No disponible | 36 capas | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-2B (modelo base) | ~2B | No disponible en la información | 24 capas | No disponible en la información | Hugging Face |
 | Otras ejecuciones de LoopTrans v2 | ~2B | No disponible | Variable según schedule | Apache 2.0 (presumible) | Repositorio GitHub del proyecto |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la información proporcionada.
@@ -87,6 +87,6 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianraje/looptransv2-qwen3.5-2b-s2-trial-m3_p90
+- Modelo en Hugging Face: https://huggingface.co/arianraje/looptransv2-qwen3.5-2b-s2-trial-m3_p90
 - Repositorio del proyecto LoopTrans (rama `v2`): https://github.com/arianraje/LoopTrans
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

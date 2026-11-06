@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| myendless/action-repre-hygon-composition-lap-lvta-source30k-9234a8c0 | 4B (base) mas modulos de accion | no disponible | Representacion de acciones sobre VLM para robotica | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-4B-Instruct | 4B | no disponible en la informacion proporcionada | VLM generalista vision-lenguaje | no disponible en la informacion proporcionada | HuggingFace (modelo base) |
+| myendless/action-repre-hygon-composition-lap-lvta-source30k-9234a8c0 | 4B (base) mas modulos de accion | no disponible | Representacion de acciones sobre VLM para robotica | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-4B-Instruct | 4B | no disponible en la informacion proporcionada | VLM generalista vision-lenguaje | no disponible en la informacion proporcionada | Hugging Face (modelo base) |
 | Alternativas de robotica basadas en VLM | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion con otros modelos de representacion de acciones no puede completarse porque la informacion proporcionada no incluye alternativas equivalentes ni sus metricas.
@@ -82,6 +82,6 @@ La comparacion con otros modelos de representacion de acciones no puede completa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/myendless/action-repre-hygon-composition-lap-lvta-source30k-9234a8c0
+- Hugging Face: https://huggingface.co/myendless/action-repre-hygon-composition-lap-lvta-source30k-9234a8c0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Paper, blog, repositorio de codigo o demo de Action Representation Benchmark: no disponible en la informacion proporcionada.

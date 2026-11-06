@@ -99,7 +99,7 @@ Las mediciones se realizaron en un Mac Studio M3 Ultra (GPU de 80 nucleos, 512 G
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dendriteholdings/Ingot-XIX-27B-MLX-2bit
+- Hugging Face: https://huggingface.co/dendriteholdings/Ingot-XIX-27B-MLX-2bit
 - Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
 - Modelo base GGUF: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Gemelo GGUF: https://huggingface.co/dendriteholdings/Ingot-XIX-27B-Q2

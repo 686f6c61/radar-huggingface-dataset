@@ -66,7 +66,7 @@ No se dispone de una comparativa cuantitativa publicada. La tabla recoge la comp
 
 | Modelo / referencia | Tipo | Parametros | Entrada | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MiniStrike fixed_seed222 (`model.pt`) | Checkpoint MAPPO, condición de oponente fijo | ~66,6 mil en el actor (derivado); crítico no detallado | 384 valores estructurados | 2.682.880 transiciones, 1.310 actualizaciones, semilla 222 | MIT | HuggingFace (0 descargas, 0 likes) |
+| MiniStrike fixed_seed222 (`model.pt`) | Checkpoint MAPPO, condición de oponente fijo | ~66,6 mil en el actor (derivado); crítico no detallado | 384 valores estructurados | 2.682.880 transiciones, 1.310 actualizaciones, semilla 222 | MIT | Hugging Face (0 descargas, 0 likes) |
 | MiniStrike `initial.pt` (línea base) | Checkpoint MAPPO sin entrenar | El mismo esquema que `model.pt` | 384 valores estructurados | Punto de partida intacto | MIT | Incluido en el repositorio fuente |
 | Oponentes congelados random / rush / guard | Políticas de referencia del entorno | No disponible | Observaciones del entorno | Reglas o políticas congeladas | No disponible | Incluidos en el repositorio fuente |
 | Configuraciones MAPPO con otras semillas | Checkpoints del mismo estudio | Misma arquitectura declarada | 384 valores estructurados | Condiciones y presupuestos variables | MIT | Repositorio fuente (según auditoría) |
@@ -91,7 +91,7 @@ Frente a referentes de RL multiagente a gran escala (por ejemplo OpenAI Five en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BurnyCoder/ministrike-fixed-seed222
+- Hugging Face: https://huggingface.co/BurnyCoder/ministrike-fixed-seed222
 - Repositorio fuente (según model card): https://github.com/BurnyCoder/3d-firstperson-shooter-reinforcement-learning-selfplay
 - Auditoría de aprendizaje: https://github.com/BurnyCoder/3d-firstperson-shooter-reinforcement-learning-selfplay/blob/main/reports/learning-audit/summary.md
 - Protocolo del proyecto: https://github.com/BurnyCoder/counter-strike-reinforcement-learning-selfplay/blob/main/docs/protocol.md

@@ -75,6 +75,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/daryataratynova8/sonobelief
+- Hugging Face: https://huggingface.co/daryataratynova8/sonobelief
 - Código: https://github.com/daryataratynova/sonobelief
 - Dataset de entrenamiento: TotalSegmentator v2.0.1 (referencia citada en la model card; no se proporciona URL directa)

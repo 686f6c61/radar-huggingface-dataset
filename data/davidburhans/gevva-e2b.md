@@ -110,7 +110,7 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Contexto | JevBench v1.4 | Latencia p50 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Gevva e2b | ~5,1 B | 131.072 tokens | 76,95 | 16,5 ms | Apache 2.0 | HuggingFace + SDK gevva |
+| Gevva e2b | ~5,1 B | 131.072 tokens | 76,95 | 16,5 ms | Apache 2.0 | Hugging Face + SDK gevva |
 | Jev 1.13.0 | No disponible | No disponible | 63,29 | 236,0 ms | Propietaria | Solo API comercial |
 | JevK5 v0.2.0 | 7 B (base Qwen 2.5) | No disponible | 62,04 | 48,0 ms | No especificada | Codigo abierto segun el autor |
 | Hopper | No disponible | No disponible | 59,43 | 62,0 ms | No especificada | Codigo abierto segun el autor |
@@ -137,8 +137,8 @@ Todas las cifras de esta tabla proceden de la tabla comparativa publicada por el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidburhans/gevva-e2b
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-E2B-it
+- Modelo en Hugging Face: https://huggingface.co/davidburhans/gevva-e2b
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-E2B-it
 - Repositorio y benchmark JevBench (GitHub): https://github.com/davidburhans/gevva
 - API OpenJEV compatible: https://huggingface.co/AlexWortega/openjev
 - Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0

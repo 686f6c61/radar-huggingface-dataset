@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`davidwdw/fa-code-task00-centre-pilot-v7-cd24a7335674` es un repositorio de pesos publicado en HuggingFace por el usuario `davidwdw` el 24 de septiembre de 2026. Por la informacion disponible, no se trata de un modelo de lenguaje entrenado de forma convencional, sino de un paquete de archivos archivado desde una flota privada de experimentos, etiquetado internamente como `code-task00-centre-pilot-v7` y clasificado en el tier "code". La model card indica explicitamente que es una instantanea (snapshot) de un directorio de trabajo, no un espejo vivo, y que las entradas que apuntan a `B1k_Rollouts` publicos han sido excluidas mediante enlaces simbolicos.
+`davidwdw/fa-code-task00-centre-pilot-v7-cd24a7335674` es un repositorio de pesos publicado en Hugging Face por el usuario `davidwdw` el 24 de septiembre de 2026. Por la informacion disponible, no se trata de un modelo de lenguaje entrenado de forma convencional, sino de un paquete de archivos archivado desde una flota privada de experimentos, etiquetado internamente como `code-task00-centre-pilot-v7` y clasificado en el tier "code". La model card indica explicitamente que es una instantanea (snapshot) de un directorio de trabajo, no un espejo vivo, y que las entradas que apuntan a `B1k_Rollouts` publicos han sido excluidas mediante enlaces simbolicos.
 
 El unico contenido sustantivo de la model card es una referencia a una receta canonica interna, `evaluations/2026-09-23_task00_centre_recovery_pilot`, junto con instrucciones de reproducibilidad dirigidas al propio autor: usar la revision registrada exacta y verificar el fichero `SHA256SUMS`. No se publican parametros, arquitectura, tokenizador, configuracion de entrenamiento ni resultados de evaluacion, por lo que la ficha no puede caracterizar el modelo mas alla de su naturaleza de artefacto de archivo.
 
-Su relevancia actual es, por tanto, limitada y de tipo meta: sirve como ejemplo de practica de versionado reproducible de experimentos (revision fijada mas verificacion de integridad por hash) y como recordatorio de que un repositorio en HuggingFace no implica automaticamente un modelo utilizable, documentado o licenciado para reutilizacion. Cualquier evaluacion tecnica seria requiere acceso al paquete completo y a la receta referenciada, que no forman parte de la informacion proporcionada.
+Su relevancia actual es, por tanto, limitada y de tipo meta: sirve como ejemplo de practica de versionado reproducible de experimentos (revision fijada mas verificacion de integridad por hash) y como recordatorio de que un repositorio en Hugging Face no implica automaticamente un modelo utilizable, documentado o licenciado para reutilizacion. Cualquier evaluacion tecnica seria requiere acceso al paquete completo y a la receta referenciada, que no forman parte de la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ Dado que no se documentan capacidades, no es posible recomendar casos de uso fun
 - Fijacion de revisiones en entornos reproducibles: la instruccion de usar "the exact recorded revision" es directamente aplicable a ficheros de bloqueo de dependencias o a manifiestos de contenedores que referencien el repositorio por commit.
 - Estudio de practicas de archivo de flotas de experimentos: util como caso de referencia sobre como empaquetar y excluir datos enlazados (por ejemplo, rollouts publicos) antes de publicar una instantanea.
 - Evaluacion de riesgos de licencia: al no declararse licencia, el repositorio sirve como ejemplo practico de artefacto no apto para uso comercial sin aclaracion previa del autor.
-- Docencia sobre limites de HuggingFace como fuente de informacion: permite ilustrar que un repositorio puede existir sin arquitectura, pesos declarados ni pipeline verificable, y como redactar una ficha con campos explicitamente marcados como "no disponible".
+- Docencia sobre limites de Hugging Face como fuente de informacion: permite ilustrar que un repositorio puede existir sin arquitectura, pesos declarados ni pipeline verificable, y como redactar una ficha con campos explicitamente marcados como "no disponible".
 - Recuperacion de experimentos internos: si se dispone de acceso a la receta `evaluations/2026-09-23_task00_centre_recovery_pilot`, el paquete podria servir para reproducir ese piloto concreto, siempre que se verifique primero el hash.
 
 ## Benchmarks y rendimiento
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no permite identificar la categoria del artefacto (no se conocen parametros, arquitectura ni tarea), por lo que no procede establecer comparaciones con alternativas de tamano o tarea similares. La unica semejanza estructural con otros repositorios de HuggingFace es la ausencia de model card completa, situacion frecuente en publicaciones de prueba o de uso interno; no se ha localizado ningun modelo comparable concreto en los datos facilitados.
+No disponible. La informacion proporcionada no permite identificar la categoria del artefacto (no se conocen parametros, arquitectura ni tarea), por lo que no procede establecer comparaciones con alternativas de tamano o tarea similares. La unica semejanza estructural con otros repositorios de Hugging Face es la ausencia de model card completa, situacion frecuente en publicaciones de prueba o de uso interno; no se ha localizado ningun modelo comparable concreto en los datos facilitados.
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v7-cd24a7335674
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v7-cd24a7335674
 - Receta canonica referenciada en la model card: `evaluations/2026-09-23_task00_centre_recovery_pilot` (ruta interna, sin URL publica disponible)
 - Fichero de verificacion citado: `SHA256SUMS` (sin URL publica disponible)
 - Paper, blog, repositorio de codigo o demo: no disponible

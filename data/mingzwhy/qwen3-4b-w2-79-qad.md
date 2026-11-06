@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MingZwhy/Qwen3-4B-W2.79-QAD
+- Modelo en Hugging Face: https://huggingface.co/MingZwhy/Qwen3-4B-W2.79-QAD
 - Checkpoint recuperado y evaluable: https://huggingface.co/MingZwhy/Qwen3-4B-W2.79-QAOPD
 - Repositorio de código y receta QAOPD: https://github.com/MingZwhy/QAOPD
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B

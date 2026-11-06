@@ -4,7 +4,7 @@
 
 Hebrew QA Retriever es un modelo de embeddings para recuperación de información en hebreo, desarrollado por ElyKok. Se trata de un fine-tuning de `intfloat/multilingual-e5-base` orientado a la tarea de recuperación de pasajes: dado un enunciado en hebreo, devuelve el párrafo que lo responde. El modelo resuelve un problema concreto de los pipelines RAG en hebreo, donde los retrievers multilingües genéricos rinden por debajo de alternativas léxicas como BM25 en corpus especializados.
 
-El modelo parte de la arquitectura XLM-RoBERTa con 278.043.648 parámetros y se entrena sobre las preguntas respondibles del dataset HeQ (Hebrew Question Answering Dataset), con negativos duros minados y la función de pérdida `CachedMultipleNegativesRankingLoss`. La relevancia actual del modelo es acotada: es un ajuste pequeño y muy específico de dominio e idioma, con 26 descargas y sin likes en HuggingFace, lo que lo sitúa como una pieza de nicho más que como una alternativa generalista.
+El modelo parte de la arquitectura XLM-RoBERTa con 278.043.648 parámetros y se entrena sobre las preguntas respondibles del dataset HeQ (Hebrew Question Answering Dataset), con negativos duros minados y la función de pérdida `CachedMultipleNegativesRankingLoss`. La relevancia actual del modelo es acotada: es un ajuste pequeño y muy específico de dominio e idioma, con 26 descargas y sin likes en Hugging Face, lo que lo sitúa como una pieza de nicho más que como una alternativa generalista.
 
 La ventana de contexto y los tipos de cuantización no están documentados en la información disponible; al ser un encoder tipo XLM-RoBERTa, su uso típico es la generación de embeddings, no la generación de texto.
 
@@ -34,7 +34,7 @@ El entrenamiento se realizó sobre las preguntas respondibles del dataset HeQ, c
 - Soporte de prefijos `query: ` y `passage: ` heredados del modelo base e5.
 - Similitud semántica entre frases (`pipeline_tag: sentence-similarity`).
 - Integración con sentence-transformers y con Text Embeddings Inference (tag `text-embeddings-inference`).
-- Compatibilidad con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad con endpoints de Hugging Face (tag `endpoints_compatible`).
 - No soporta generación de texto, tool calling ni razonamiento multi-paso: es un encoder, no un modelo generativo.
 - Capacidades multilingües limitadas al comportamiento heredado del modelo base; el ajuste está orientado a hebreo.
 
@@ -67,17 +67,17 @@ El ajuste mejora ligeramente a `multilingual-e5-base` en R@5 (82,8 frente a 81,7
 - VRAM estimada para inferencia: en fp32, aproximadamente 1,1 GB de pesos; en fp16, en torno a 0,55 GB. El repo ocupa 1,1 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; no requiere A100 ni H100.
 - Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060 o superiores, e incluso en GPUs integradas con suficiente memoria compartida.
-- Opciones de despliegue: sentence-transformers, Text Embeddings Inference (TGI), HuggingFace Inference Endpoints (tag `endpoints_compatible`); también es viable en CPU para volúmenes moderados.
+- Opciones de despliegue: sentence-transformers, Text Embeddings Inference (TGI), Hugging Face Inference Endpoints (tag `endpoints_compatible`); también es viable en CPU para volúmenes moderados.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | R@5 (HeQ) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hebrew QA Retriever (este modelo) | 278 M | no disponible | 82,8 | MIT | HuggingFace |
-| multilingual-e5-base | 278 M | no disponible | 81,7 | MIT | HuggingFace |
-| multilingual-e5-large | ~560 M | no disponible | 87,8 | MIT | HuggingFace |
-| Qwen3-Embedding-0.6B | 0,6 B | no disponible | 70,6 | no disponible | HuggingFace |
+| Hebrew QA Retriever (este modelo) | 278 M | no disponible | 82,8 | MIT | Hugging Face |
+| multilingual-e5-base | 278 M | no disponible | 81,7 | MIT | Hugging Face |
+| multilingual-e5-large | ~560 M | no disponible | 87,8 | MIT | Hugging Face |
+| Qwen3-Embedding-0.6B | 0,6 B | no disponible | 70,6 | no disponible | Hugging Face |
 | BM25 | no aplica | no aplica | 86,8 | no aplica | implementación libre |
 
 La comparativa se limita al benchmark HeQ publicado por el autor. Frente a `multilingual-e5-large`, este modelo pierde entre 4 y 5 puntos de R@5 con la mitad de parámetros; frente a BM25, pierde en R@1 pero gana en R@5. Para producción en hebreo, un híbrido BM25 + este retriever es una opción razonable según los datos.
@@ -96,6 +96,6 @@ La comparativa se limita al benchmark HeQ publicado por el autor. Frente a `mult
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ElyKok/hebrew-qa-retriever-e5-base
+- Modelo en Hugging Face: https://huggingface.co/ElyKok/hebrew-qa-retriever-e5-base
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-base
 - Dataset HeQ: https://github.com/NNLP-IL/Hebrew-Question-Answering-Dataset

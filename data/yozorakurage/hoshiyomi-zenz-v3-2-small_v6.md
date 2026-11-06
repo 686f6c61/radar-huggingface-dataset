@@ -72,8 +72,8 @@ Respecto a la version anterior no publicada (v4), el conjunto de nombres en lati
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hoshiyomi-zenz-v3.2-small_v6 | 2,36 M | 40 caracteres de contexto izquierdo | Conversion kana-kanji para IME, con enfasis en nombres en latin | Apache 2.0 | GGUF en HuggingFace |
-| Miwa-Keita/zenz-v3.2-small | no disponible | no disponible | Conversion kana-kanji para IME (modelo base) | Apache 2.0 | GGUF en HuggingFace |
+| Hoshiyomi-zenz-v3.2-small_v6 | 2,36 M | 40 caracteres de contexto izquierdo | Conversion kana-kanji para IME, con enfasis en nombres en latin | Apache 2.0 | GGUF en Hugging Face |
+| Miwa-Keita/zenz-v3.2-small | no disponible | no disponible | Conversion kana-kanji para IME (modelo base) | Apache 2.0 | GGUF en Hugging Face |
 | zenz-v2.5 (familia zenz) | no disponible | no disponible | Conversion kana-kanji para IME | no disponible | no disponible |
 
 La comparacion con modelos de proposito general no es significativa: este modelo solo realiza conversion de entrada y no compite en tareas de razonamiento, codigo o generacion abierta.
@@ -91,7 +91,7 @@ La comparacion con modelos de proposito general no es significativa: este modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YozoraKurage/Hoshiyomi-zenz-v3.2-small_v6
+- Modelo en Hugging Face: https://huggingface.co/YozoraKurage/Hoshiyomi-zenz-v3.2-small_v6
 - Modelo base: https://huggingface.co/Miwa-Keita/zenz-v3.2-small-gguf
 - Dataset de entrenamiento: https://huggingface.co/datasets/Miwa-Keita/zenz-v2.5-dataset
 - Repositorio del proyecto Hoshiyomi (herramientas de entrenamiento en `tools/training/`): no disponible como URL en la informacion proporcionada

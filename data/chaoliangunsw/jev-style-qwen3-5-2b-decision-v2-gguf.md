@@ -116,7 +116,7 @@ La informacion disponible solo permite comparar con las dos alternativas usadas 
 
 | Modelo | Parametros | Exactitud | Macro-F1 | NLL | Brier | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---:|---|---|
-| Jev-Style-Qwen3.5-2B-Decision-v2 (GGUF) | 1,88 B | 81,20 % | 79,78 % | 0,5154 | 0,2787 | Apache 2.0 | GGUF, safetensors BF16 y MLX BF16 en HuggingFace |
+| Jev-Style-Qwen3.5-2B-Decision-v2 (GGUF) | 1,88 B | 81,20 % | 79,78 % | 0,5154 | 0,2787 | Apache 2.0 | GGUF, safetensors BF16 y MLX BF16 en Hugging Face |
 | Jev-Style v1 | No disponible | 76,68 % | 75,42 % | 0,5752 | 0,3290 | No disponible | No disponible |
 | English Laya | No disponible | 75,09 % | 73,45 % | 0,6318 | 0,3482 | No disponible | No disponible |
 

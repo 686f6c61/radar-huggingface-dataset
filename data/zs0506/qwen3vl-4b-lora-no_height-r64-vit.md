@@ -4,7 +4,7 @@
 
 `zs0506/qwen3vl-4B-lora-no_height-r64-vit` es un adaptador LoRA (PEFT) publicado por el usuario `zs0506` sobre el modelo multimodal `Qwen/Qwen3-VL-4B-Instruct`. No se trata de un modelo completo, sino de un conjunto de pesos incrementales (0,3 GB de repositorio) que deben cargarse junto al modelo base para funcionar. El identificador del repositorio sugiere, sin confirmación documental, un entrenamiento con rango LoRA 64 (`r64`), con modulos del codificador visual tambien entrenados (`vit`) y una variante experimental etiquetada como `no_height`.
 
-El problema que resuelve es, por tanto, el de ajuste fino especifico sobre un modelo vision-lenguaje ya instruido: se usa cuando se necesita especializar un Qwen3-VL-4B en un dominio o formato de salida concreto sin reentrenar los 4 000 millones de parametros del modelo base. Su relevancia practica depende enteramente del caso de uso del autor, ya que la model card publicada es la plantilla vacia de HuggingFace y no documenta datos de entrenamiento, hiperparametros, evaluacion ni licencia.
+El problema que resuelve es, por tanto, el de ajuste fino especifico sobre un modelo vision-lenguaje ya instruido: se usa cuando se necesita especializar un Qwen3-VL-4B en un dominio o formato de salida concreto sin reentrenar los 4 000 millones de parametros del modelo base. Su relevancia practica depende enteramente del caso de uso del autor, ya que la model card publicada es la plantilla vacia de Hugging Face y no documenta datos de entrenamiento, hiperparametros, evaluacion ni licencia.
 
 La informacion disponible es minima: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, la licencia y los idiomas figuran como no disponibles, y no hay resultados de benchmarks publicados. Cualquier evaluacion seria requiere inspeccionar los pesos, el `adapter_config.json` y el modelo base subyacente.
 
@@ -61,7 +61,7 @@ Las capacidades listadas derivan del modelo base multimodal y del pipeline decla
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La model card del repositorio usa la plantilla por defecto de HuggingFace y todas las secciones de evaluacion figuran como `[More Information Needed]`. No hay cifras de MMLU, HumanEval, GSM8K, MMMU, DocVQA ni de ninguna otra prueba, ni comparaciones con modelos similares. Tampoco se documentan velocidades, throughput ni tiempos de entrenamiento.
+La model card del repositorio usa la plantilla por defecto de Hugging Face y todas las secciones de evaluacion figuran como `[More Information Needed]`. No hay cifras de MMLU, HumanEval, GSM8K, MMMU, DocVQA ni de ninguna otra prueba, ni comparaciones con modelos similares. Tampoco se documentan velocidades, throughput ni tiempos de entrenamiento.
 
 ## Requisitos de hardware
 
@@ -79,15 +79,15 @@ No hay datos de rendimiento del adaptador que permitan una comparacion cuantitat
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zs0506/qwen3vl-4B-lora-no_height-r64-vit | Adaptador LoRA sobre Qwen3-VL-4B | No disponible (base ~4B) | No disponible | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-4B-Instruct | Modelo multimodal completo | ~4B | No disponible en esta informacion | No disponible en esta informacion | HuggingFace (modelo base) |
+| zs0506/qwen3vl-4B-lora-no_height-r64-vit | Adaptador LoRA sobre Qwen3-VL-4B | No disponible (base ~4B) | No disponible | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-4B-Instruct | Modelo multimodal completo | ~4B | No disponible en esta informacion | No disponible en esta informacion | Hugging Face (modelo base) |
 | Otros adaptadores LoRA sobre Qwen3-VL-4B | Adaptador PEFT | Depende del rango | Heredado del base | Depende del autor | No disponibles en la informacion proporcionada |
 
 No se dispone de alternativas comparables documentadas en la informacion facilitada, ni de resultados que permitan establecer que este adaptador supera o iguala a otras variantes de ajuste sobre el mismo modelo base.
 
 ## Limitaciones y advertencias
 
-- Model card vacia: la documentacion es la plantilla por defecto de HuggingFace. No hay informacion sobre datos de entrenamiento, hiperparametros, objetivos ni evaluacion, lo que impide auditar el comportamiento del adaptador.
+- Model card vacia: la documentacion es la plantilla por defecto de Hugging Face. No hay informacion sobre datos de entrenamiento, hiperparametros, objetivos ni evaluacion, lo que impide auditar el comportamiento del adaptador.
 - Licencia no declarada: sin licencia explicita, no hay autorizacion clara para uso comercial. Ademas, la licencia final depende de la del modelo base `Qwen/Qwen3-VL-4B-Instruct`, que debe verificarse por separado.
 - Sin adopcion verificable: 0 descargas y 0 likes. No existen informes de terceros, pruebas independientes ni casos de uso en produccion conocidos.
 - Riesgo de sobreajuste: un rango LoRA de 64 sobre un modelo de 4B implica un numero elevado de parametros entrenables; si el dataset era reducido, el adaptador puede degradar capacidades generales del base fuera de su dominio.
@@ -101,7 +101,7 @@ No se dispone de alternativas comparables documentadas en la informacion facilit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zs0506/qwen3vl-4B-lora-no_height-r64-vit
+- Modelo en Hugging Face: https://huggingface.co/zs0506/qwen3vl-4B-lora-no_height-r64-vit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de impacto ambiental, no un paper de este modelo): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

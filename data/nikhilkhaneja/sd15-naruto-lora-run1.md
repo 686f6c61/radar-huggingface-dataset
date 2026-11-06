@@ -92,7 +92,7 @@ No se dispone de datos objetivos (parámetros, métricas, tamaño de contexto) d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikhilkhaneja/sd15-naruto-lora-run1
+- Modelo en Hugging Face: https://huggingface.co/nikhilkhaneja/sd15-naruto-lora-run1
 - Modelo base: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Dataset de entrenamiento: https://huggingface.co/datasets/lambdalabs/naruto-blip-captions
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la información proporcionada.

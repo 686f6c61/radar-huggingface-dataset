@@ -47,7 +47,7 @@ Los detalles exactos del entrenamiento (número de tokens, composición del data
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye métricas comparativas y la documentación de Moonshot AI no detalla puntuaciones específicas en MMLU, HumanEval u otros tests estándar. Se recomienda consultar el repositorio oficial de Kimi K3 en GitHub para futuras actualizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye métricas comparativas y la documentación de Moonshot AI no detalla puntuaciones específicas en MMLU, HumanEval u otros tests estándar. Se recomienda consultar el repositorio oficial de Kimi K3 en GitHub para futuras actualizaciones.
 
 ## Requisitos de hardware
 
@@ -64,7 +64,7 @@ No se dispone de datos comparativos directos con modelos de la misma categoría.
 
 - El proceso de abliteration elimina los mecanismos de rechazo, lo que significa que el modelo puede generar contenido dañino, ilegal o éticamente problemático sin filtros. No es adecuado para despliegues públicos sin moderación adicional.
 - La licencia kimi-k3 es restrictiva: aunque los pesos son abiertos, el uso comercial puede estar limitado. Consultar los términos exactos en el repositorio oficial.
-- El acceso al repositorio es restringido (gated) y requiere aceptar condiciones en HuggingFace.
+- El acceso al repositorio es restringido (gated) y requiere aceptar condiciones en Hugging Face.
 - Los requisitos de hardware son extremadamente altos: la mayoría de organizaciones no pueden ejecutar este modelo en local, lo que limita su uso práctico a empresas con infraestructura de GPU masiva.
 - No se han publicado resultados de benchmarks, por lo que el rendimiento real en tareas estándar es desconocido.
 - La ventana de 1M tokens, aunque impresionante, puede degradar la calidad de atención en secuencias muy largas si no se usa correctamente.
@@ -72,7 +72,7 @@ No se dispone de datos comparativos directos con modelos de la misma categoría.
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/Uniboshi/Kimi-K3-Abliterated-V1-GGUF
-- Repositorio HuggingFace (modelo base abliterated): https://huggingface.co/Uniboshi/Kimi-K3-Abliterated-V1
+- Repositorio Hugging Face (GGUF): https://huggingface.co/Uniboshi/Kimi-K3-Abliterated-V1-GGUF
+- Repositorio Hugging Face (modelo base abliterated): https://huggingface.co/Uniboshi/Kimi-K3-Abliterated-V1
 - Repositorio GitHub oficial de Kimi K3: https://github.com/MoonshotAI/Kimi-K3/tree/main
 - Documentación en LM Studio: https://lmstudio.ai/models/kimi-k3

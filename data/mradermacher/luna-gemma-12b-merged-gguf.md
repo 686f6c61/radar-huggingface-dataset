@@ -86,7 +86,7 @@ La comparación con Gemma 2 se basa en la pertenencia declarada a la familia Gem
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Luna-Gemma-12B-Merged-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Luna-Gemma-12B-Merged-GGUF
 - Modelo base: https://huggingface.co/wayzer2321/Luna-Gemma-12B-Merged
 - Página de descargas del cuantizador: https://hf.tst.eu/model#Luna-Gemma-12B-Merged-GGUF
 - Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

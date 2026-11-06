@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| bbtmfx/virel-dance-models | 14B (componente principal) | No disponible | Apache-2.0 | HuggingFace (mirror) | Paquete preensamblado para ComfyUI; sin pesos propios |
+| bbtmfx/virel-dance-models | 14B (componente principal) | No disponible | Apache-2.0 | Hugging Face (mirror) | Paquete preensamblado para ComfyUI; sin pesos propios |
 | Wan2.2-Animate-14B (Wan-AI) | 14B | No disponible | Apache-2.0 | Repositorio original de Wan-AI | Fuente original del componente principal |
 | Wan-Animate-2 (Wan-AI / Comfy-Org) | No disponible | No disponible | Apache-2.0 | `Comfy-Org/Wan-Animate-2` | Componente incluido en el mirror |
-| Kijai/WanVideo_comfy_fp8_scaled | No disponible | No disponible | No disponible | HuggingFace | Build fp8 scaled usado por el mirror |
+| Kijai/WanVideo_comfy_fp8_scaled | No disponible | No disponible | No disponible | Hugging Face | Build fp8 scaled usado por el mirror |
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bbtmfx/virel-dance-models
+- Repositorio en Hugging Face: https://huggingface.co/bbtmfx/virel-dance-models
 - Wan2.2-Animate-14B (Wan-AI): no disponible en la información proporcionada
 - Kijai/WanVideo_comfy_fp8_scaled: https://huggingface.co/Kijai/WanVideo_comfy_fp8_scaled
 - Comfy-Org/Wan-Animate-2: https://huggingface.co/Comfy-Org/Wan-Animate-2

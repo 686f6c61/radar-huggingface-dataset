@@ -68,7 +68,7 @@ No se dispone de información comparativa con otros modelos de edición de códi
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/bluevoid-pl/zeta-2.1-GGUF
+- Repositorio de Hugging Face: https://huggingface.co/bluevoid-pl/zeta-2.1-GGUF
 - Modelo original (Zed Industries): https://huggingface.co/zed-industries/zeta-2.1
 - Modelo base (ByteDance-Seed): https://huggingface.co/ByteDance-Seed/Seed-Coder-8B-Base
 
@@ -140,7 +140,7 @@ No se proporciona información comparativa con otros modelos de edición de cód
 
 ## Enlaces
 
-- Repositorio de HuggingFace del modelo GGUF: https://huggingface.co/bluevoid-pl/zeta-2.1-GGUF
+- Repositorio de Hugging Face del modelo GGUF: https://huggingface.co/bluevoid-pl/zeta-2.1-GGUF
 - Modelo original de Zed Industries: https://huggingface.co/zed-industries/zeta-2.1
 - Modelo base ByteDance-Seed: https://huggingface.co/ByteDance-Seed/Seed-Coder-8B-Base
 

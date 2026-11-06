@@ -47,7 +47,7 @@ El proceso de entrenamiento documentado en la model card es específico: los emb
 - Reproducibilidad de experimentos: al ser un checkpoint completo y autónomo (no un adaptador), facilita la replicación de resultados por parte de otros grupos sin necesidad de reentrenar.
 - Análisis de degradación de capacidades: útil para cuantificar cuánto rendimiento general se pierde al aplicar técnicas de desaprendizaje agresivas sobre un modelo de 7B.
 - Estudio de la sustitución de embeddings y cabeza LM: el diseño concreto (embeddings y LM head de Llama-2-7b-chat, resto del transformer de TOFU) permite investigar el impacto de esta reinicialización parcial en el comportamiento final.
-- Base para *fine-tuning* posterior en entornos de investigación: al ser un modelo completo en safetensors, puede cargarse con las herramientas estándar de HuggingFace para experimentos adicionales, siempre respetando la licencia Llama 2.
+- Base para *fine-tuning* posterior en entornos de investigación: al ser un modelo completo en safetensors, puede cargarse con las herramientas estándar de Hugging Face para experimentos adicionales, siempre respetando la licencia Llama 2.
 
 ## Benchmarks y rendimiento
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada en cuantización de 8 bits: en torno a 7-8 GB para pesos; en 4 bits, alrededor de 4-5 GB (estimaciones teóricas, no confirmadas por el autor).
 - GPU recomendadas: A100 40/80 GB, H100, L40S para FP16 sin cuantizar; RTX 4090 (24 GB) para FP16 con margen ajustado; RTX 3090 (24 GB) similar.
 - Compatibilidad con GPU de consumo: sí, en RTX 3090/4090 con FP16 o en GPUs de 8-12 GB si se aplica cuantización (aunque no se distribuyen pesos cuantizados en el repo).
-- Opciones de despliegue: transformers de HuggingFace, vLLM, TGI, llama.cpp (requiere conversión a GGUF no incluida en el repo), Ollama (requiere conversión previa).
+- Opciones de despliegue: transformers de Hugging Face, vLLM, TGI, llama.cpp (requiere conversión a GGUF no incluida en el repo), Ollama (requiere conversión previa).
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ La comparativa se limita a la familia Llama 2 7B porque el checkpoint es un deri
 
 ## Enlaces
 
-- [HuggingFace: unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch16](https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch16)
+- [Hugging Face: unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch16](https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch16)
 - [Modelo base: locuslab/tofu_ft_llama2-7b](https://huggingface.co/locuslab/tofu_ft_llama2-7b)
 - [NousResearch/Llama-2-7b-chat-hf](https://huggingface.co/NousResearch/Llama-2-7b-chat-hf)
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs o repositorios del autor.

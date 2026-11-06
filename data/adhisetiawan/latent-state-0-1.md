@@ -2,7 +2,7 @@
 
 ## Resumen
 
-latent-state-0.1 es un checkpoint experimental publicado por el usuario adhisetiawan en HuggingFace. Segun su propia model card, se trata de un transformer de escala pequena ("small-scale", sin cifra concreta de parametros) en precision FP16 y formato safetensors, creado para explorar como la informacion puede persistir en el estado interno del modelo incluso cuando no forma parte del objetivo de entrenamiento original. No esta asociado a ninguna tarea de inferencia concreta.
+latent-state-0.1 es un checkpoint experimental publicado por el usuario adhisetiawan en Hugging Face. Segun su propia model card, se trata de un transformer de escala pequena ("small-scale", sin cifra concreta de parametros) en precision FP16 y formato safetensors, creado para explorar como la informacion puede persistir en el estado interno del modelo incluso cuando no forma parte del objetivo de entrenamiento original. No esta asociado a ninguna tarea de inferencia concreta.
 
 El autor indica explicitamente que el modelo no fue disenado para produccion, ni para benchmarking, ni para despliegue downstream, y que no proporciona predicciones significativas. Parte de los parametros fueron inicializados de forma aleatoria y nunca se entrenaron contra un objetivo convencional, por lo que el checkpoint debe entenderse como un artefacto de estudio de estados latentes mas que como un modelo de lenguaje funcional.
 
@@ -66,7 +66,7 @@ No disponible. El checkpoint no declara tarea, tamano de parametros, contexto ni
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| latent-state-0.1 | no disponible | no disponible | no evaluado | MIT | HuggingFace |
+| latent-state-0.1 | no disponible | no disponible | no evaluado | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,5 +81,5 @@ No disponible. El checkpoint no declara tarea, tamano de parametros, contexto ni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adhisetiawan/latent-state-0.1
+- Hugging Face: https://huggingface.co/adhisetiawan/latent-state-0.1
 - No se han encontrado otros enlaces relevantes (paper, blog, repositorio de codigo, demo) en la informacion disponible.

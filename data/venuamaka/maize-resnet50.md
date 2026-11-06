@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Venuamaka/maize-resnet50 es un repositorio publicado en HuggingFace por el usuario Venuamaka. La model card asociada unicamente contiene la declaracion de licencia (afl-3.0) y carece por completo de documentacion tecnica: no hay descripcion del modelo, del dataset de entrenamiento, del pipeline ni de las metricas obtenidas. El repositorio ocupa 0,1 GB y acumula cero descargas y cero likes en el momento de la consulta.
+Venuamaka/maize-resnet50 es un repositorio publicado en Hugging Face por el usuario Venuamaka. La model card asociada unicamente contiene la declaracion de licencia (afl-3.0) y carece por completo de documentacion tecnica: no hay descripcion del modelo, del dataset de entrenamiento, del pipeline ni de las metricas obtenidas. El repositorio ocupa 0,1 GB y acumula cero descargas y cero likes en el momento de la consulta.
 
 A partir del identificador del modelo puede inferirse que se trata de una red convolucional ResNet-50 aplicada a imagenes de maiz (maize), probablemente para clasificacion o diagnostico visual de cultivos. Esta interpretacion no esta confirmada por el autor en ningun documento publicado y debe tratarse como una hipotesis de trabajo, no como un dato verificado.
 
@@ -35,7 +35,7 @@ No existe informacion sobre el volumen de datos de entrenamiento, la composicion
 - No hay evidencia de capacidades de agente ni de razonamiento multi-paso.
 - No hay evidencia de capacidades multilingues: el repositorio no declara idiomas.
 - No hay evidencia de modo de razonamiento extendido, vision multimodal, audio ni cualquier otra capacidad especial declarada por el autor.
-- La unica capacidad verificable con los datos disponibles es la de servir como pesos cargables desde un repositorio HuggingFace de 0,1 GB.
+- La unica capacidad verificable con los datos disponibles es la de servir como pesos cargables desde un repositorio Hugging Face de 0,1 GB.
 
 ## Casos de uso
 
@@ -67,7 +67,7 @@ No hay datos de rendimiento del modelo evaluado, por lo que la comparacion se li
 
 | Modelo | Parametros | Contexto | Top-1 ImageNet (referencia) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Venuamaka/maize-resnet50 | no disponible | no aplica | no disponible | afl-3.0 | HuggingFace |
+| Venuamaka/maize-resnet50 | no disponible | no aplica | no disponible | afl-3.0 | Hugging Face |
 | ResNet-50 (referencia) | 25,6 M | no aplica | 76,1 % | BSD-3 / Apache-2.0 segun implementacion | torchvision, timm |
 | EfficientNet-B0 | 5,3 M | no aplica | 77,1 % | Apache-2.0 | timm |
 | MobileNetV3-Large | 5,4 M | no aplica | 75,2 % | Apache-2.0 | timm |
@@ -85,5 +85,5 @@ No hay datos de rendimiento del modelo evaluado, por lo que la comparacion se li
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Venuamaka/maize-resnet50
+- Hugging Face: https://huggingface.co/Venuamaka/maize-resnet50
 - No se han encontrado enlaces relevantes en la busqueda web. Los resultados devueltos corresponden a empresas de construccion y diseno en Chipre (nordline.dk, tophomes.com.cy, finnishdesignshop.com, instagram.com/scandinavian_design_cyprus, housescandinavia.com) y no guardan relacion con el modelo.

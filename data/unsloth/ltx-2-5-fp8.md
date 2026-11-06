@@ -80,10 +80,10 @@ Comparativa entre las variantes incluidas en este repositorio y el transformador
 
 | Modelo | Parametros | Pestos del transformador | Esquema | LPIPS vs bf16 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Lightricks/LTX-2.5-Diffusers (bf16) | ~22B (segun denominacion del checkpoint) | 38,0 GB | bf16 | referencia (0,000 en repeticion) | ltx-2.x-community-license-agreement | HuggingFace, diffusers |
-| unsloth/LTX-2.5-FP8 | mismo transformador | 19,06 GB | FP8 e4m3, escalas por fila | 0,366 | ltx-2.x-community-license-agreement | HuggingFace, diffusers |
-| unsloth/LTX-2.5-INT8-ConvRot | mismo transformador | 25,11 GB | INT8 W8A8 + Hadamard group-256 | 0,265 | ltx-2.x-community-license-agreement | HuggingFace, diffusers |
-| unsloth/LTX-2.5-INT8 | mismo transformador | 25,11 GB | INT8 W8A8 sin rotacion | 0,385 | ltx-2.x-community-license-agreement | HuggingFace, diffusers |
+| Lightricks/LTX-2.5-Diffusers (bf16) | ~22B (segun denominacion del checkpoint) | 38,0 GB | bf16 | referencia (0,000 en repeticion) | ltx-2.x-community-license-agreement | Hugging Face, diffusers |
+| unsloth/LTX-2.5-FP8 | mismo transformador | 19,06 GB | FP8 e4m3, escalas por fila | 0,366 | ltx-2.x-community-license-agreement | Hugging Face, diffusers |
+| unsloth/LTX-2.5-INT8-ConvRot | mismo transformador | 25,11 GB | INT8 W8A8 + Hadamard group-256 | 0,265 | ltx-2.x-community-license-agreement | Hugging Face, diffusers |
+| unsloth/LTX-2.5-INT8 | mismo transformador | 25,11 GB | INT8 W8A8 sin rotacion | 0,385 | ltx-2.x-community-license-agreement | Hugging Face, diffusers |
 
 Los tres ficheros cuantizados son bit-identicos a cuantizar el DiT en bf16 en tiempo de carga con la misma receta, por lo que su unica ventaja frente a la cuantizacion on-the-fly es el ahorro de descarga y de staging en bf16. La diferencia de LPIPS entre INT8-ConvRot (0,265) y FP8 (0,366) es del 27,6 % en favor de INT8-ConvRot, a cambio de 6,05 GB mas de pesos.
 
@@ -101,7 +101,7 @@ Los tres ficheros cuantizados son bit-identicos a cuantizar el DiT en bf16 en ti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unsloth/LTX-2.5-FP8
+- Modelo en Hugging Face: https://huggingface.co/unsloth/LTX-2.5-FP8
 - Modelo base (Diffusers): https://huggingface.co/Lightricks/LTX-2.5-Diffusers
 - Repositorio del modelo base en formato original: https://huggingface.co/Lightricks/LTX-2.5
 - Licencia LTX-2.x Community License Agreement: https://github.com/Lightricks/LTX-2/blob/main/LICENSE-2_x

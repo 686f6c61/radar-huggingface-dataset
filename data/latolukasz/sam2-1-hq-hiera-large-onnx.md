@@ -80,7 +80,7 @@ La comparativa se centra en el decodificador. El decodificador HQ-SAM 2 ofrece u
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: [latolukasz/sam2.1-hq-hiera-large-onnx](https://huggingface.co/latolukasz/sam2.1-hq-hiera-large-onnx)
+- Repositorio Hugging Face del modelo: [latolukasz/sam2.1-hq-hiera-large-onnx](https://huggingface.co/latolukasz/sam2.1-hq-hiera-large-onnx)
 - Encoder necesario (SAM 2.1 Hiera Large ONNX): [latolukasz/sam2.1-hiera-large-onnx](https://huggingface.co/latolukasz/sam2.1-hiera-large-onnx)
 - Checkpoint original de HQ-SAM 2: [lkeab/hq-sam](https://huggingface.co/lkeab/hq-sam)
 - Código fuente de SysCV (SAM-HQ): [SysCV/sam-hq](https://github.com/SysCV/sam-hq)

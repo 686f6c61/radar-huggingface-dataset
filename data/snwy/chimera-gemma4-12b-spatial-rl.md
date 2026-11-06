@@ -87,8 +87,8 @@ No se han publicado resultados de benchmarks comparativos frente a otros modelos
 
 | Modelo | Parametros | Contexto | Razonamiento espacial | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chimera-gemma4-12b-spatial-rl | ~12B | no disponible | Especializado (MindCube 91,7; ViewSpatial 80,9) | Gemma | HuggingFace (0 descargas) |
-| google/gemma-4-12B-it (base) | ~12B | no disponible | Generico | Gemma | HuggingFace |
+| chimera-gemma4-12b-spatial-rl | ~12B | no disponible | Especializado (MindCube 91,7; ViewSpatial 80,9) | Gemma | Hugging Face (0 descargas) |
+| google/gemma-4-12B-it (base) | ~12B | no disponible | Generico | Gemma | Hugging Face |
 | Modelos VLM genericos de ~12B | ~12B | no disponible | No especializado | variable | variable |
 
 No se dispone de datos de benchmarks del base ni de alternativas equivalentes en la informacion proporcionada, por lo que la comparacion cuantitativa de rendimiento queda como no disponible.
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks del base ni de alternativas equivalentes en
 ## Limitaciones y advertencias
 
 - Checkpoint tentativo: el propio autor lo etiqueta como "tentative checkpoint" de la fase RL F7 (paso 200); no es una release estable ni validada de forma independiente.
-- Cero descargas y cero likes en HuggingFace en el momento de la ficha: sin validacion de la comunidad.
+- Cero descargas y cero likes en Hugging Face en el momento de la ficha: sin validacion de la comunidad.
 - Sesgos conocidos: no documentados; hereda los del base google/gemma-4-12B-it, no evaluados en la model card.
 - Riesgo de alucinacion: no cuantificado; en tareas espaciales abiertas (VSI-Bench 40,8) el rendimiento es bajo, lo que sugiere fragilidad fuera de los benchmarks de entrenamiento.
 - El modo thinking no siempre mejora al directo: en MMSI-Bench, MindCube, ViewSpatial y Jigsaw el modo directo supera al thinking, por lo que el canal de razonamiento no es universalmente beneficioso.
@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks del base ni de alternativas equivalentes en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/snwy/chimera-gemma4-12b-spatial-rl
+- Modelo en Hugging Face: https://huggingface.co/snwy/chimera-gemma4-12b-spatial-rl
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Terminos de licencia Gemma: https://ai.google.dev/gemma/terms
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios o demos adicionales.

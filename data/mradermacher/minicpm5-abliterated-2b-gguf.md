@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM5-abliterated-2B-GGUF es la versión cuantizada en formato GGUF del modelo SonGT1/MiniCPM5-abliterated-2B, una variante "abliterated" (es decir, con las direcciones de rechazo eliminadas mediante la técnica de abliteration) del modelo MiniCPM5 de 2B parámetros. El autor de esta conversión es mradermacher, un conocido publicador de cuantizaciones GGUF en HuggingFace, que distribuye los pesos listos para su uso con llama.cpp y otros motores compatibles con GGUF.
+MiniCPM5-abliterated-2B-GGUF es la versión cuantizada en formato GGUF del modelo SonGT1/MiniCPM5-abliterated-2B, una variante "abliterated" (es decir, con las direcciones de rechazo eliminadas mediante la técnica de abliteration) del modelo MiniCPM5 de 2B parámetros. El autor de esta conversión es mradermacher, un conocido publicador de cuantizaciones GGUF en Hugging Face, que distribuye los pesos listos para su uso con llama.cpp y otros motores compatibles con GGUF.
 
 El modelo base pertenece a la familia MiniCPM5, desarrollada por OpenBMB (ModelBest y Universidad de Tsinghua), orientada a modelos compactos de alto rendimiento para despliegue en dispositivos con recursos limitados. La variante abliterated elimina la alineación de seguridad del modelo original, lo que lo hace adecuado para investigación sobre comportamiento de modelos sin censura, pero inadecuado para aplicaciones de producción que requieran filtros de seguridad.
 
@@ -82,7 +82,7 @@ La comparación con Qwen2.5 y Llama-3.2 se ofrece como referencia de categoría 
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/mradermacher/MiniCPM5-abliterated-2B-GGUF
+- Hugging Face (este modelo): https://huggingface.co/mradermacher/MiniCPM5-abliterated-2B-GGUF
 - Modelo base: https://huggingface.co/SonGT1/MiniCPM5-abliterated-2B
 - Cuantizaciones weighted/imatrix: https://huggingface.co/mradermacher/MiniCPM5-abliterated-2B-i1-GGUF
 - Página de resumen del autor: https://hf.tst.eu/model#MiniCPM5-abliterated-2B-GGUF

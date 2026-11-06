@@ -4,7 +4,7 @@
 
 Muse Glimmer 30B es un modelo multimodal de razonamiento desarrollado por Meta Superintelligence Labs, presentado como un modelo agéntico abierto de 30 mil millones de parámetros. Está diseñado para ejecutarse de forma local en hardware de consumo, optimizado para flujos de trabajo "always-on" que requieren razonamiento multi-paso, tool calling y comprensión de imágenes. Acepta entradas de texto e imagen, lo que lo hace adecuado para tareas como análisis de capturas de pantalla, gráficos, documentos y razonamiento visual.
 
-El modelo se distribuye en dos variantes en HuggingFace: una versión base (`Muse-Glimmer-30B`) y una versión asistente (`Muse-Glimmer-30B-assistant`), esta última probablemente ajustada para interacción conversacional y tareas de agente. Según la tarjeta de NVIDIA NIM, se sirve sobre vLLM con parsers nativos de tool calling y razonamiento (Onyx). La licencia indicada en las etiquetas es Apache 2.0, aunque el campo oficial de HuggingFace no lo confirma explícitamente.
+El modelo se distribuye en dos variantes en Hugging Face: una versión base (`Muse-Glimmer-30B`) y una versión asistente (`Muse-Glimmer-30B-assistant`), esta última probablemente ajustada para interacción conversacional y tareas de agente. Según la tarjeta de NVIDIA NIM, se sirve sobre vLLM con parsers nativos de tool calling y razonamiento (Onyx). La licencia indicada en las etiquetas es Apache 2.0, aunque el campo oficial de Hugging Face no lo confirma explícitamente.
 
 Su relevancia actual radica en la tendencia hacia modelos locales de razonamiento multimodal que pueden operar como agentes autónomos en entornos de escritorio o edge, sin depender de la nube. Aunque los detalles técnicos completos no están disponibles en la información proporcionada, su tamaño de 30B lo sitúa en un punto intermedio entre modelos pequeños y grandes, buscando un equilibrio entre capacidad y viabilidad en hardware de consumo.
 
@@ -18,7 +18,7 @@ Su relevancia actual radica en la tendencia hacia modelos locales de razonamient
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 (segun etiqueta de HuggingFace) |
+| Licencia | Apache 2.0 (segun etiqueta de Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -67,12 +67,12 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 - Como todo modelo generativo, existe riesgo de alucinacion, especialmente en tareas de razonamiento multimodal donde la interpretacion de imagenes puede ser erronea.
 - La licencia Apache 2.0 permite uso comercial, pero se debe verificar si hay restricciones adicionales en los terminos de Meta (no confirmado en la ficha).
 - El soporte de idiomas no esta documentado; podria estar limitado a ingles u otros idiomas principales, pero no se confirma.
-- Al ser un modelo relativamente nuevo (creado en agosto de 2026 segun HuggingFace), puede haber pocos reportes de errores o problemas en produccion.
+- Al ser un modelo relativamente nuevo (creado en agosto de 2026 segun Hugging Face), puede haber pocos reportes de errores o problemas en produccion.
 
 ## Enlaces
 
-- [HuggingFace - Muse-Glimmer-30B-assistant](https://huggingface.co/meta-models/Muse-Glimmer-30B-assistant)
-- [HuggingFace - Muse-Glimmer-30B (base)](https://huggingface.co/meta-models/Muse-Glimmer-30B)
+- [Hugging Face - Muse-Glimmer-30B-assistant](https://huggingface.co/meta-models/Muse-Glimmer-30B-assistant)
+- [Hugging Face - Muse-Glimmer-30B (base)](https://huggingface.co/meta-models/Muse-Glimmer-30B)
 - [Blog de Meta - Introducing Muse Glimmer](https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model)
 - [NVIDIA NIM - Muse Glimmer 30B](https://build.nvidia.com/meta/muse-glimmer-30b/modelcard)
 - [Referencia API de NVIDIA NIM](https://docs.api.nvidia.com/nim/reference/meta-muse-glimmer-30b)

@@ -98,9 +98,9 @@ El híbrido intacto parte de 21,19 MiB a 64 tokens y llega a 43,69 MiB a 1024 to
 | Modelo | Parámetros | Naturaleza | Estado / contexto | val ppl (misma referencia) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Qwen3.5-0.8B-LumenGDN | 771,5M | Totalmente recurrente (24 capas Gated DeltaNet) | 31,69 MiB constantes; contexto del donante 262.144 | 23,44 | Apache 2.0 | Safetensors fp32, requiere Lumen |
-| Qwen/Qwen3.5-0.8B-Base (donante) | 873,4M | Híbrido 3:1 (18 DeltaNet + 6 atención) | Crece 24,00 KiB por token; 6,00 GiB a 262.144 tokens | 9,22 | Apache 2.0 | Pesos del donante en HuggingFace |
+| Qwen/Qwen3.5-0.8B-Base (donante) | 873,4M | Híbrido 3:1 (18 DeltaNet + 6 atención) | Crece 24,00 KiB por token; 6,00 GiB a 262.144 tokens | 9,22 | Apache 2.0 | Pesos del donante en Hugging Face |
 | Qwen3.5-0.8B-Base, ruta de texto amputada | 752,4M | Híbrido sin torre de visión ni cabeza MTP | Crece con T | No medida en la model card | Apache 2.0 | Derivado |
-| kennethgrace/Qwen3.5-4B-LumenGDN | No disponible | Mismo plegado, con q/k atados a varias cabezas de valor | No disponible | No disponible | No disponible | HuggingFace |
+| kennethgrace/Qwen3.5-4B-LumenGDN | No disponible | Mismo plegado, con q/k atados a varias cabezas de valor | No disponible | No disponible | No disponible | Hugging Face |
 
 No se han proporcionado datos de benchmarks comparativos con modelos de otros autores; la comparación disponible se limita a las variantes del propio donante y al modelo hermano de 4B.
 
@@ -119,7 +119,7 @@ No se han proporcionado datos de benchmarks comparativos con modelos de otros au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kennethgrace/Qwen3.5-0.8B-LumenGDN
+- Modelo en Hugging Face: https://huggingface.co/kennethgrace/Qwen3.5-0.8B-LumenGDN
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base/blob/main/LICENSE
 - Librería de arquitectura Lumen: https://github.com/latticedynamics/lumen

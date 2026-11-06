@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento del modelo ni de alternativas comparables 
 
 | Enfoque | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen3-4b-dflash-thinking-b16 (este modelo) | 322.458.368 (~322 M) | no disponible (entrenamiento a 8192 tokens) | apache-2.0 | HuggingFace, requiere SGLang con DFLASH |
+| qwen3-4b-dflash-thinking-b16 (este modelo) | 322.458.368 (~322 M) | no disponible (entrenamiento a 8192 tokens) | apache-2.0 | Hugging Face, requiere SGLang con DFLASH |
 | Modelo borrador generico de menor tamano (p. ej. un modelo pequeno independiente) | no disponible | no disponible | depende del modelo | ampliamente soportado por los runtimes |
 | Cabezas de decodificacion especulativa tipo EAGLE/Medusa | no disponible | no disponible | no disponible | requiere implementacion especifica |
 | Decodificacion autoregresiva estandar con Qwen3-4B | no aplica (sin borrador) | el del modelo objetivo | apache-2.0 (Qwen3-4B) | universal, sin dependencias adicionales |
@@ -89,7 +89,7 @@ No se han facilitado cifras de benchmarks que permitan comparar rendimiento, tas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jgeuter/qwen3-4b-dflash-thinking-b16
+- Modelo en Hugging Face: https://huggingface.co/jgeuter/qwen3-4b-dflash-thinking-b16
 - Dataset de entrenamiento: https://huggingface.co/datasets/jgeuter/ShareGPT-Qwen3-4B-T0.6-Thinking-Regen
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Papers de DFlash, D-PACE y D-PARD: no disponibles en la informacion proporcionada

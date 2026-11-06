@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dariurs/distilbert-base-uncased-squad` es un ajuste fino de DistilBERT base (versión sin distinción de mayúsculas) especializado en la tarea de *question answering* extractivo. Lo publica el usuario `dariurs` en HuggingFace y sigue el patrón clásico de los modelos entrenados con la librería `transformers` y la clase `Trainer`, con la etiqueta `generated_from_trainer` que indica que la model card se autogeneró a partir de la configuración del entrenamiento. El nombre sugiere un ajuste sobre el conjunto de datos SQuAD, aunque la model card no lo confirma explícitamente y lo describe como "an unknown dataset".
+`dariurs/distilbert-base-uncased-squad` es un ajuste fino de DistilBERT base (versión sin distinción de mayúsculas) especializado en la tarea de *question answering* extractivo. Lo publica el usuario `dariurs` en Hugging Face y sigue el patrón clásico de los modelos entrenados con la librería `transformers` y la clase `Trainer`, con la etiqueta `generated_from_trainer` que indica que la model card se autogeneró a partir de la configuración del entrenamiento. El nombre sugiere un ajuste sobre el conjunto de datos SQuAD, aunque la model card no lo confirma explícitamente y lo describe como "an unknown dataset".
 
 El modelo cuenta con 66.364.418 parámetros, una arquitectura transformer encoder-only destilada de BERT y una licencia Apache 2.0 que permite uso comercial sin restricciones adicionales. Su relevancia práctica es la de un modelo ligero de extracción de respuestas: para tareas de QA sobre pasajes cortos, ofrece un coste de inferencia muy bajo comparado con LLMs generativos, a cambio de una funcionalidad acotada (localizar un span de respuesta, no generar texto libre).
 
@@ -63,10 +63,10 @@ El `model-index` de la model card declara una lista de resultados vacia (`result
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dariurs/distilbert-base-uncased-squad | 66,4M | 512 tokens (limite arquitectonico) | QA extractivo | Apache 2.0 | HuggingFace |
-| distilbert-base-uncased (base) | 66,4M | 512 tokens | Modelo base, sin cabeza de QA | Apache 2.0 | HuggingFace |
-| bert-base-uncased fine-tuned en SQuAD (referencia de la comunidad) | 110M | 512 tokens | QA extractivo | Apache 2.0 | HuggingFace |
-| RoBERTa-base fine-tuned en SQuAD | 125M | 512 tokens | QA extractivo | MIT | HuggingFace |
+| dariurs/distilbert-base-uncased-squad | 66,4M | 512 tokens (limite arquitectonico) | QA extractivo | Apache 2.0 | Hugging Face |
+| distilbert-base-uncased (base) | 66,4M | 512 tokens | Modelo base, sin cabeza de QA | Apache 2.0 | Hugging Face |
+| bert-base-uncased fine-tuned en SQuAD (referencia de la comunidad) | 110M | 512 tokens | QA extractivo | Apache 2.0 | Hugging Face |
+| RoBERTa-base fine-tuned en SQuAD | 125M | 512 tokens | QA extractivo | MIT | Hugging Face |
 
 La comparacion con los ajustes de referencia de BERT y RoBERTa en SQuAD es cualitativa: no hay metricas publicadas para este repositorio que permitan afirmar si iguala o supera a esas lineas base. DistilBERT ofrece menor coste computacional que BERT-base a cambio de una perdida de rendimiento de unos pocos puntos en tareas de comprension lectora, segun la literatura original de destilacion.
 
@@ -84,7 +84,7 @@ La comparacion con los ajustes de referencia de BERT y RoBERTa en SQuAD es cuali
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dariurs/distilbert-base-uncased-squad
+- Modelo en Hugging Face: https://huggingface.co/dariurs/distilbert-base-uncased-squad
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Documentacion de DistilBERT en transformers: https://huggingface.co/docs/transformers/model_doc/distilbert

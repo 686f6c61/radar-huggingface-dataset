@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SuperBitDev/vehicle1 es un modelo de detección de objetos desarrollado por SuperBitDev. Está basado en la arquitectura YOLOv11 en su variante nano, un detector de objetos de una sola etapa conocido por su eficiencia computacional. El modelo ha sido entrenado específicamente para detectar personas, como se indica en las etiquetas del repositorio de HuggingFace. El formato de pesos es ONNX, lo que facilita su integración en aplicaciones multiplataforma.
+SuperBitDev/vehicle1 es un modelo de detección de objetos desarrollado por SuperBitDev. Está basado en la arquitectura YOLOv11 en su variante nano, un detector de objetos de una sola etapa conocido por su eficiencia computacional. El modelo ha sido entrenado específicamente para detectar personas, como se indica en las etiquetas del repositorio de Hugging Face. El formato de pesos es ONNX, lo que facilita su integración en aplicaciones multiplataforma.
 
 El repositorio ocupa 0,3 GB y no se especifica el tamaño exacto del modelo en parámetros ni los datos de entrenamiento. El flujo de trabajo de creación parece haber sido automatizado mediante element_trainer de Roboflow, un servicio de generación de modelos para detección de objetos. Su relevancia radica en ofrecer un detector de personas ligero, adecuado para inferencia en tiempo real en dispositivos con recursos limitados.
 

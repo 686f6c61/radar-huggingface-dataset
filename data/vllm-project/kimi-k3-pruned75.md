@@ -89,9 +89,9 @@ Datos de servicio medidos por el autor con vLLM `0.26.1rc1.dev142+g30b4e7f47` y 
 
 | Modelo | Parametros totales | Expertos por capa MoE | GSM8K (5-shot) | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| Kimi-K3-pruned75 | ~737 B | 224 (de 896) | 34,42 % | Kimi K3 License | HuggingFace, copia en `vllm-project` |
-| Kimi-K3-pruned50 | no disponible | 448 (de 896, mismo ranking) | 68,23 % | Kimi K3 License | HuggingFace (`mgoin/Kimi-K3-pruned50`) |
-| Kimi-K3 (fuente) | no disponible | 896 | 95,53 % | Kimi K3 License | HuggingFace (`moonshotai/Kimi-K3`) |
+| Kimi-K3-pruned75 | ~737 B | 224 (de 896) | 34,42 % | Kimi K3 License | Hugging Face, copia en `vllm-project` |
+| Kimi-K3-pruned50 | no disponible | 448 (de 896, mismo ranking) | 68,23 % | Kimi K3 License | Hugging Face (`mgoin/Kimi-K3-pruned50`) |
+| Kimi-K3 (fuente) | no disponible | 896 | 95,53 % | Kimi K3 License | Hugging Face (`moonshotai/Kimi-K3`) |
 
 Los tres checkpoints comparten arquitectura, tokenizador, torre de vision y criterio de seleccion de expertos; la unica variable es el porcentaje de expertos retenidos. No se dispone de datos de benchmarks de otros modelos MoE comparables en la informacion proporcionada, por lo que la comparativa se limita a la familia Kimi-K3.
 
@@ -109,7 +109,7 @@ Los tres checkpoints comparten arquitectura, tokenizador, torre de vision y crit
 
 ## Enlaces
 
-- HuggingFace (copia vLLM): https://huggingface.co/vllm-project/Kimi-K3-pruned75
+- Hugging Face (copia vLLM): https://huggingface.co/vllm-project/Kimi-K3-pruned75
 - Checkpoint original: https://huggingface.co/mgoin/Kimi-K3-pruned75
 - Checkpoint pruned50 de referencia: https://huggingface.co/mgoin/Kimi-K3-pruned50
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3

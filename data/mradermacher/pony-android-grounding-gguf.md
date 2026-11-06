@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/pony-android-grounding-GGUF` es una colección de cuantizaciones en formato GGUF del modelo `JivinDotL/pony-android-grounding`, publicada por el usuario mradermacher, conocido en HuggingFace por generar versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo base tiene 1.720.574.976 parámetros (aproximadamente 1,7 mil millones), lo que lo sitúa en la categoría de modelos pequeños optimizados para inferencia en hardware de consumo.
+`mradermacher/pony-android-grounding-GGUF` es una colección de cuantizaciones en formato GGUF del modelo `JivinDotL/pony-android-grounding`, publicada por el usuario mradermacher, conocido en Hugging Face por generar versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo base tiene 1.720.574.976 parámetros (aproximadamente 1,7 mil millones), lo que lo sitúa en la categoría de modelos pequeños optimizados para inferencia en hardware de consumo.
 
 Por el nombre ("android-grounding") y la naturaleza conversacional del repositorio, el modelo parece orientado a tareas de *grounding* sobre interfaces de Android, es decir, la identificación de elementos de interfaz (botones, campos, iconos) a partir de instrucciones en lenguaje natural, una capacidad relevante para agentes que operan dispositivos móviles. No obstante, la model card del repositorio es extremadamente escueta y no proporciona información sobre arquitectura, datos de entrenamiento, licencia ni idiomas soportados.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha radica en que permite desplegar el modelo en local m
 
 No se dispone de información sobre la arquitectura del modelo base `JivinDotL/pony-android-grounding`. El recuento de parámetros (1,72 mil millones) es compatible con un transformer decoder-only de tamaño pequeño, pero no se confirma en la documentación disponible. Tampoco se especifican los datos de entrenamiento, el número de tokens procesados, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO.
 
-La única información técnica concreta proviene de los metadatos del repositorio GGUF: las cuantizaciones se generaron con `quantize_version: 2`, con tensores de salida cuantizados (`output_tensor_quantised: 1`) y conversión de tipo `hf` (a partir de pesos en formato HuggingFace). No se incluye el fichero `mmproj`, lo que sugiere que el modelo no incorpora proyección multimodal, aunque esto no puede confirmarse sin acceso a la configuración del modelo base.
+La única información técnica concreta proviene de los metadatos del repositorio GGUF: las cuantizaciones se generaron con `quantize_version: 2`, con tensores de salida cuantizados (`output_tensor_quantised: 1`) y conversión de tipo `hf` (a partir de pesos en formato Hugging Face). No se incluye el fichero `mmproj`, lo que sugiere que el modelo no incorpora proyección multimodal, aunque esto no puede confirmarse sin acceso a la configuración del modelo base.
 
 ## Capacidades
 

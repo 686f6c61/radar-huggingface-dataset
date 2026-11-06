@@ -17,7 +17,7 @@ Su relevancia actual radica en la relación entre tamaño y rendimiento declarad
 | Parametros activos | no disponible (el autor no publica número de expertos ni ratio de activación) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (no se publican cuantizaciones oficiales; pesos en safetensors, presumiblemente BF16) |
-| Idiomas soportados | no disponible (el campo de idiomas no está informado en HuggingFace) |
+| Idiomas soportados | no disponible (el campo de idiomas no está informado en Hugging Face) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (Transformers); compatible con vLLM y SGLang |
 | Tamaño del repositorio | 71,9 GB |

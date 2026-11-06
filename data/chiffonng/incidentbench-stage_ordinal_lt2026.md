@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| incidentbench-stage_ordinal_lt2026 | LoRA r=16 sobre 7B | no disponible | Clasificación de incidentes (7 dominios MIT) | other | HuggingFace, 10 descargas |
-| Qwen/Qwen2.5-7B-Instruct | 7B | no disponible en esta ficha | Modelo instructivo general | no disponible en esta ficha | HuggingFace (modelo base) |
+| incidentbench-stage_ordinal_lt2026 | LoRA r=16 sobre 7B | no disponible | Clasificación de incidentes (7 dominios MIT) | other | Hugging Face, 10 descargas |
+| Qwen/Qwen2.5-7B-Instruct | 7B | no disponible en esta ficha | Modelo instructivo general | no disponible en esta ficha | Hugging Face (modelo base) |
 | Otros brazos de IncidentBench | no disponible | no disponible | Clasificación de incidentes | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chiffonng/incidentbench-stage_ordinal_lt2026
+- Hugging Face: https://huggingface.co/chiffonng/incidentbench-stage_ordinal_lt2026
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Informe de IncidentBench: no disponible como enlace en la información proporcionada
 - Repositorio del proyecto (referenciado como `train/build_data.py`): no disponible como enlace en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sexy Massage H3 es un adaptador LoRA de tipo text-to-image publicado en HuggingFace por el usuario PeachesAvicii. No es un modelo completo, sino un ajuste fino de bajo rango que se aplica sobre el modelo base `neph1/1980s_fantasy_movies_minimax_h3`, del que hereda la arquitectura de difusión y el codificador de texto. Su función es introducir un concepto visual concreto, activado mediante la frase `getting a sexy massage`, que actúa como instance prompt durante el entrenamiento y como palabra de activación en inferencia.
+Sexy Massage H3 es un adaptador LoRA de tipo text-to-image publicado en Hugging Face por el usuario PeachesAvicii. No es un modelo completo, sino un ajuste fino de bajo rango que se aplica sobre el modelo base `neph1/1980s_fantasy_movies_minimax_h3`, del que hereda la arquitectura de difusión y el codificador de texto. Su función es introducir un concepto visual concreto, activado mediante la frase `getting a sexy massage`, que actúa como instance prompt durante el entrenamiento y como palabra de activación en inferencia.
 
 El repositorio es deliberadamente mínimo: 0,3 GB de pesos del adaptador, licencia Apache-2.0, librería `diffusers` y una model card de apenas unas líneas en la que el autor indica que lo usa "for connecting to my image tool", es decir, como pieza de una herramienta propia de generación de imágenes. No se documentan ni el rango del LoRA, ni el dataset, ni los pasos de entrenamiento, ni resultados de evaluación.
 
@@ -53,7 +53,7 @@ No se publican datos sobre el rango (rank) y alpha del adaptador, el número de 
 - Generación por lotes para creación de datasets sintéticos: permite producir variaciones de una misma escena para experimentar con anotación automática, filtrado o evaluación de modelos de visión.
 - Investigación sobre moderación de contenido: al ser un adaptador NSFW, sirve como muestra de control para entrenar o validar clasificadores de contenido para adultos en pipelines de generación.
 - Composición artística y editorial para adultos: generación de ilustraciones de estilo ochentero con temática de masaje, siempre que se respete la normativa de la plataforma de destino y se verifique la edad de las personas representadas.
-- Docencia y divulgación técnica: ejemplo mínimo (0,3 GB) de cómo se estructura un repositorio LoRA en HuggingFace para quien aprende el formato `diffusion-lora`.
+- Docencia y divulgación técnica: ejemplo mínimo (0,3 GB) de cómo se estructura un repositorio LoRA en Hugging Face para quien aprende el formato `diffusion-lora`.
 
 ## Benchmarks y rendimiento
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Base | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PeachesAvicii/Sexy_Massage_H3 | LoRA de difusión text-to-image | `neph1/1980s_fantasy_movies_minimax_h3` | Apache-2.0 | HuggingFace, 0 descargas |
-| neph1/1980s_fantasy_movies_minimax_h3 | Modelo base de difusión | No aplica | No disponible en la información consultada | HuggingFace |
+| PeachesAvicii/Sexy_Massage_H3 | LoRA de difusión text-to-image | `neph1/1980s_fantasy_movies_minimax_h3` | Apache-2.0 | Hugging Face, 0 descargas |
+| neph1/1980s_fantasy_movies_minimax_h3 | Modelo base de difusión | No aplica | No disponible en la información consultada | Hugging Face |
 | Sexy Massage - MiniMaxH3 (Civitai) | LoRA de difusión, presumiblemente la misma creación | MiniMax H3 | No disponible | Civitai (id 2526675) |
-| PeachesAvicii/Q-NSFW | Modelo del mismo autor, orientado a contenido NSFW | No disponible | No disponible | HuggingFace |
+| PeachesAvicii/Q-NSFW | Modelo del mismo autor, orientado a contenido NSFW | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento (FID, CLIP score, evaluaciones humanas) de ninguno de ellos, por lo que la comparación se limita a tipo de artefacto, licencia y disponibilidad.
 
@@ -87,11 +87,11 @@ No se dispone de datos de rendimiento (FID, CLIP score, evaluaciones humanas) de
 - Licencia del modelo base no disponible: la Apache-2.0 del adaptador no sustituye ni amplía los términos del modelo sobre el que se aplica, que pueden restringir el uso comercial.
 - Idiomas no documentados: los prompts en castellano pueden rendir peor que en inglés si el codificador de texto del base está sesgado hacia este último.
 - Repositorio de 0,3 GB con model card mínima: no hay información sobre versión del pipeline, configuración de inferencia recomendada ni escalado de pesos óptimo.
-- Riesgo de retirada o bloqueo en plataformas: el contenido NSFW suele estar restringido en HuggingFace, Civitai y servicios similares, lo que puede afectar a la disponibilidad en producción.
+- Riesgo de retirada o bloqueo en plataformas: el contenido NSFW suele estar restringido en Hugging Face, Civitai y servicios similares, lo que puede afectar a la disponibilidad en producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PeachesAvicii/Sexy_Massage_H3
+- Modelo en Hugging Face: https://huggingface.co/PeachesAvicii/Sexy_Massage_H3
 - Modelo base: https://huggingface.co/neph1/1980s_fantasy_movies_minimax_h3
 - Otro modelo del mismo autor: https://huggingface.co/PeachesAvicii/Q-NSFW
 - Versión en Civitai (presumiblemente la misma creación): https://civitai.red/models/2526675/sexy-massage

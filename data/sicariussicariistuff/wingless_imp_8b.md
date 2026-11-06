@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wingless_Imp_8B es un modelo de lenguaje de 8.030.261.248 parámetros (aproximadamente 8B) publicado por el usuario SicariusSicariiStuff en HuggingFace el 24 de enero de 2025. Se trata de un merge de modelos, es decir, una combinación de pesos de tres modelos base del propio autor: Impish_Mind_8B, LLAMA-3_8B_Unaligned_BETA y Dusk_Rainbow. El modelo se distribuye bajo licencia llama3.1 y está orientado exclusivamente al inglés.
+Wingless_Imp_8B es un modelo de lenguaje de 8.030.261.248 parámetros (aproximadamente 8B) publicado por el usuario SicariusSicariiStuff en Hugging Face el 24 de enero de 2025. Se trata de un merge de modelos, es decir, una combinación de pesos de tres modelos base del propio autor: Impish_Mind_8B, LLAMA-3_8B_Unaligned_BETA y Dusk_Rainbow. El modelo se distribuye bajo licencia llama3.1 y está orientado exclusivamente al inglés.
 
 El modelo se presenta como un 8B derivado de la familia Llama 3.1, con un enfoque explícito hacia el roleplay, la escritura creativa y el conocimiento general, evitando un exceso de censura. El autor declara un IFeval de 74,30 y afirma que no se aplicó SFT adicional tras el merge para preservar el comportamiento resultante de la combinación.
 
@@ -73,10 +73,10 @@ La model card únicamente declara un resultado de IFeval de 74,30 y una afirmaci
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Wingless_Imp_8B | 8,03B | no disponible (base Llama 3.1) | llama3.1 | Merge orientado a roleplay y escritura creativa | HuggingFace, cuantizaciones GGUF/EXL2/FP8/ARM |
-| Llama 3.1 8B Instruct | 8B | 128K | llama3.1 | Asistente general alineado | HuggingFace, amplio ecosistema |
-| Mistral 7B Instruct | 7,2B | 32K | Apache 2.0 | Asistente general | HuggingFace, ecosistema amplio |
-| Gemma 2 9B Instruct | 9B | 8K | Gemma Terms | Asistente general | HuggingFace, requiere aceptacion de terminos |
+| Wingless_Imp_8B | 8,03B | no disponible (base Llama 3.1) | llama3.1 | Merge orientado a roleplay y escritura creativa | Hugging Face, cuantizaciones GGUF/EXL2/FP8/ARM |
+| Llama 3.1 8B Instruct | 8B | 128K | llama3.1 | Asistente general alineado | Hugging Face, amplio ecosistema |
+| Mistral 7B Instruct | 7,2B | 32K | Apache 2.0 | Asistente general | Hugging Face, ecosistema amplio |
+| Gemma 2 9B Instruct | 9B | 8K | Gemma Terms | Asistente general | Hugging Face, requiere aceptacion de terminos |
 
 La comparación con Llama 3.1 8B Instruct es la más directa por compartir backbone y licencia; Wingless_Imp_8B se diferencia por un alineamiento más laxo y un enfoque creativo, pero carece de la documentación de entrenamiento y de los benchmarks del modelo oficial. Frente a Mistral 7B Instruct, la licencia Llama 3.1 es más restrictiva que Apache 2.0. Frente a Gemma 2 9B, el contexto declarado de Wingless_Imp_8B no está especificado, aunque su base Llama 3.1 soporta 128K.
 
@@ -93,7 +93,7 @@ La comparación con Llama 3.1 8B Instruct es la más directa por compartir backb
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SicariusSicariiStuff/Wingless_Imp_8B
+- Modelo en Hugging Face: https://huggingface.co/SicariusSicariiStuff/Wingless_Imp_8B
 - Cuantizaciones GGUF estáticas: https://huggingface.co/SicariusSicariiStuff/Wingless_Imp_8B_GGUF
 - Cuantizaciones GGUF iMatrix: https://huggingface.co/SicariusSicariiStuff/Wingless_Imp_8B_iMatrix
 - Cuantizaciones GGUF High-Attention: https://huggingface.co/SicariusSicariiStuff/Wingless_Imp_8B_GGUF_HA

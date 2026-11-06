@@ -24,7 +24,7 @@ Su relevancia actual radica en que la licencia LFM 1.0 y el tamaño reducido lo 
 | Autor del repositorio | nwtgck (cuantización de terceros, no oficial de Liquid AI) |
 | Tamaño del repositorio | 3,0 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación en HuggingFace | 2026-09-22 |
+| Fecha de creación en Hugging Face | 2026-09-22 |
 
 ## Arquitectura y entrenamiento
 
@@ -42,7 +42,7 @@ Las instrucciones de uso recomiendan `llama-cli` con `--temp 0.1`, `--top-k 50` 
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de flujos de agente y razonamiento multi-paso: no disponible en la información proporcionada.
 - Capacidades especiales (modo de razonamiento explícito, visión, audio): no disponible en la información proporcionada.
-- Compatibilidad con endpoints: el repositorio incluye la etiqueta `endpoints_compatible`, lo que indica que puede servirse a través de infraestructura compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: el repositorio incluye la etiqueta `endpoints_compatible`, lo que indica que puede servirse a través de infraestructura compatible con la API de Hugging Face.
 
 ## Casos de uso
 
@@ -76,8 +76,8 @@ No se dispone de datos verificables en la información proporcionada (parámetro
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nwtgck/LFM2.5-350M-GGUF | 354.483.968 | No disponible | lfm1.0 | GGUF en HuggingFace |
-| LiquidAI/LFM2.5-350M | No disponible | No disponible | lfm1.0 | Modelo base en HuggingFace (referenciado) |
+| nwtgck/LFM2.5-350M-GGUF | 354.483.968 | No disponible | lfm1.0 | GGUF en Hugging Face |
+| LiquidAI/LFM2.5-350M | No disponible | No disponible | lfm1.0 | Modelo base en Hugging Face (referenciado) |
 | LFM2 (generación anterior, Liquid AI) | No disponible | No disponible | No disponible | No confirmado en la información proporcionada |
 | Alternativas de otros fabricantes en el segmento sub-1B | No disponible | No disponible | No disponible | No confirmado en la información proporcionada |
 
@@ -95,7 +95,7 @@ No se dispone de datos verificables en la información proporcionada (parámetro
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantización GGUF): https://huggingface.co/nwtgck/LFM2.5-350M-GGUF
+- Repositorio Hugging Face (cuantización GGUF): https://huggingface.co/nwtgck/LFM2.5-350M-GGUF
 - Checkpoint QAD Q4_0: https://huggingface.co/LiquidAI/LFM2.5-350M-GGUF/blob/main/LFM2.5-350M-QAD-Q4_0.gguf
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp

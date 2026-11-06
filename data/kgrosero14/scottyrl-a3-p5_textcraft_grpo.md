@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `kgrosero14/scottyrl-a3-p5_textcraft_grpo` (este adaptador) | LoRA r=32 sobre base de ~4B | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
-| `Qwen/Qwen3.5-4B` (modelo base, sin adaptador) | ~4B | No disponible en la información proporcionada | No disponible | No disponible | HuggingFace |
+| `kgrosero14/scottyrl-a3-p5_textcraft_grpo` (este adaptador) | LoRA r=32 sobre base de ~4B | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
+| `Qwen/Qwen3.5-4B` (modelo base, sin adaptador) | ~4B | No disponible en la información proporcionada | No disponible | No disponible | Hugging Face |
 | Otros adaptadores LoRA académicos para entornos de agente | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de alternativas comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable. La única comparación defendible es cualitativa: este adaptador añade especialización en TextCraft-Synth sobre el base, a cambio de un posible estrechamiento de capacidades generales por sobreajuste al dominio de entrenamiento.
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kgrosero14/scottyrl-a3-p5_textcraft_grpo
+- Modelo en Hugging Face: https://huggingface.co/kgrosero14/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio del framework scottyrl: no disponible en la información proporcionada
 - Paper o blog del método GRPO: no disponible en la información proporcionada

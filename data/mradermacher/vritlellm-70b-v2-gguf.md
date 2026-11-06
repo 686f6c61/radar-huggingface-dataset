@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vritlellm-70b-v2-GGUF es la version cuantizada en formato GGUF del modelo veeru2706/vritlellm-70b-v2, publicada por el usuario mradermacher, conocido en HuggingFace por producir cuantizaciones estaticas de modelos de terceros. El repositorio no contiene el modelo original ni informacion sobre su entrenamiento: es un artefacto de distribucion que empaqueta el modelo base en 11 niveles de cuantizacion distintos para su uso con llama.cpp, Ollama, LM Studio y otros motores compatibles con GGUF.
+vritlellm-70b-v2-GGUF es la version cuantizada en formato GGUF del modelo veeru2706/vritlellm-70b-v2, publicada por el usuario mradermacher, conocido en Hugging Face por producir cuantizaciones estaticas de modelos de terceros. El repositorio no contiene el modelo original ni informacion sobre su entrenamiento: es un artefacto de distribucion que empaqueta el modelo base en 11 niveles de cuantizacion distintos para su uso con llama.cpp, Ollama, LM Studio y otros motores compatibles con GGUF.
 
 El modelo subyacente tiene 70.553.706.560 parametros (aproximadamente 70,55 mil millones) segun los datos de safetensors, lo que lo situa en la categoria de modelos densos de gran tamano, tipicamente desplegables en nodos con multiples GPU o en equipos con gran cantidad de memoria unificada. La etiqueta "llama" del repositorio sugiere una arquitectura de tipo transformer decoder-only derivada de la familia Llama, aunque la model card no confirma explicitamente la arquitectura ni la longitud de contexto.
 
@@ -27,7 +27,7 @@ Otros datos del repositorio: autor mradermacher, libreria declarada transformers
 
 No se dispone de informacion sobre la arquitectura del modelo base mas alla de lo inferible de las etiquetas. La presencia de la etiqueta "llama" y el rango de parametros (70,55 mil millones) apuntan a un transformer decoder-only denso con atencion causal, probablemente con un esquema similar a Llama 2 o Llama 3 (RMSNorm, RoPE, SwiGLU), pero esto es una conjetura razonada, no un dato confirmado por la model card. El repositorio de cuantizacion no incluye config.json, tokenizer ni la ficha del modelo original.
 
-Tampoco hay informacion sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, uso de RLHF, DPO o SFT, ni sobre innovaciones tecnicas como decodificacion especulativa, atencion lineal o mezcla de expertos. La model card del repositorio de mradermacher es puramente operativa: describe las cuantizaciones generadas, enlaza a la guia de TheBloke sobre el uso de GGUF y menciona que no se han generado quants ponderados con imatrix. El proceso de cuantizacion en si es estandar (version 2 del pipeline de mradermacher, salida con tensor quantised, conversion desde formato HuggingFace) y no introduce modificaciones en la arquitectura.
+Tampoco hay informacion sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, uso de RLHF, DPO o SFT, ni sobre innovaciones tecnicas como decodificacion especulativa, atencion lineal o mezcla de expertos. La model card del repositorio de mradermacher es puramente operativa: describe las cuantizaciones generadas, enlaza a la guia de TheBloke sobre el uso de GGUF y menciona que no se han generado quants ponderados con imatrix. El proceso de cuantizacion en si es estandar (version 2 del pipeline de mradermacher, salida con tensor quantised, conversion desde formato Hugging Face) y no introduce modificaciones en la arquitectura.
 
 ## Capacidades
 
@@ -36,7 +36,7 @@ Tampoco hay informacion sobre el proceso de entrenamiento: numero de tokens, com
 - No hay evidencia en la informacion disponible de soporte de tool calling, function calling ni uso como agente.
 - No hay evidencia de capacidades de razonamiento explicito (modo thinking), vision, audio ni multimodalidad.
 - No hay evidencia de capacidades especiales de codigo o matematicas mas alla de lo que un modelo de 70B de proposito general puede ofrecer.
-- Compatible con text-generation-inference y con el endpoint de HuggingFace segun las etiquetas del repositorio.
+- Compatible con text-generation-inference y con el endpoint de Hugging Face segun las etiquetas del repositorio.
 - Al ser un artefacto GGUF, hereda las capacidades del modelo base pero tambien sus limitaciones; la cuantizacion puede degradar ligeramente la calidad respecto al modelo en precision completa.
 
 ## Casos de uso
@@ -51,7 +51,7 @@ Tampoco hay informacion sobre el proceso de entrenamiento: numero de tokens, com
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni el repositorio de cuantizacion ni los datos de HuggingFace proporcionados incluyen puntuaciones de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni ninguna otra metrica. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni el repositorio de cuantizacion ni los datos de Hugging Face proporcionados incluyen puntuaciones de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni ninguna otra metrica. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo.
 
 ## Requisitos de hardware
 

@@ -83,8 +83,8 @@ El predecesor v5-formal falló el criterio de no inferioridad por tipo de movimi
 
 | Modelo | Parámetros | Enfoque | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **libero-metric-residual-servo-v5** | 112.394 | Residual MLP + controlador PI | 44 features, 20 Hz | Apache-2.0 | HuggingFace |
-| libero-metric-action-decoder-v2 | no disponible | Action decoder transformer | no disponible | Apache-2.0 | HuggingFace |
+| **libero-metric-residual-servo-v5** | 112.394 | Residual MLP + controlador PI | 44 features, 20 Hz | Apache-2.0 | Hugging Face |
+| libero-metric-action-decoder-v2 | no disponible | Action decoder transformer | no disponible | Apache-2.0 | Hugging Face |
 | Controlador PI analítico (baseline) | 0 | Analítico determinista | 6D pose error | — | Incluido en runtime |
 
 El modelo se compara principalmente contra su predecesor v2 (que usa una arquitectura diferente, tipo action-decoder transformer) y contra el controlador analítico puro. No hay otros modelos de la misma categoría con métricas públicas comparables en el momento de la consulta.
@@ -101,7 +101,7 @@ El modelo se compara principalmente contra su predecesor v2 (que usa una arquite
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hydrogenbondd007/libero-metric-residual-servo-v5
+- Modelo en Hugging Face: https://huggingface.co/hydrogenbondd007/libero-metric-residual-servo-v5
 - Predecesor v2: https://huggingface.co/hydrogenbondd007/libero-metric-action-decoder-v2
 - Dataset LIBERO: https://huggingface.co/datasets/physical-intelligence/libero
 - Benchmark LIBERO (GitHub): https://github.com/Lifelong-Robot-Learning/LIBERO

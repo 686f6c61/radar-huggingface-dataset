@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SahelSage-Llama-3.2-1B es un modelo de lenguaje publicado por el usuario mvadel136 en HuggingFace, distribuido en formato GGUF y derivado del modelo base Llama 3.2 1B de Meta. El nombre sugiere un enfoque orientado a la región del Sahel africano, aunque la model card no aporta información adicional sobre el conjunto de datos de ajuste ni las tareas específicas para las que fue entrenado.
+SahelSage-Llama-3.2-1B es un modelo de lenguaje publicado por el usuario mvadel136 en Hugging Face, distribuido en formato GGUF y derivado del modelo base Llama 3.2 1B de Meta. El nombre sugiere un enfoque orientado a la región del Sahel africano, aunque la model card no aporta información adicional sobre el conjunto de datos de ajuste ni las tareas específicas para las que fue entrenado.
 
 El modelo hereda la arquitectura transformer decoder-only de Llama 3.2 1B, con aproximadamente 1.236 millones de parámetros y un tamaño de repositorio de 0,7 GB, lo que lo hace apto para inferencia en hardware de consumo. Su relevancia radica en ser una variante ligera y cuantizada de un modelo de referencia ampliamente utilizado, con licencia Llama 3.2 que permite uso comercial bajo los términos de Meta.
 
@@ -79,7 +79,7 @@ La comparativa se limita a las variantes del mismo modelo base encontradas en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mvadel136/SahelSage-Llama-3.2-1B
+- Repositorio Hugging Face: https://huggingface.co/mvadel136/SahelSage-Llama-3.2-1B
 - Modelo base Llama 3.2 1B (Meta): https://huggingface.co/meta-llama/Llama-3.2-1B
 - Documentación de modelos Llama 3.2 (Meta): https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_2/
 - Página de Llama 3.2 1B en Ollama: https://ollama.com/library/llama3.2:1b

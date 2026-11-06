@@ -12,7 +12,7 @@ Es relevante ahora porque forma parte del conjunto de "OPD teachers" asociados a
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de la familia Qwen2 (tag `qwen2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only de la familia Qwen2 (tag `qwen2` en Hugging Face) |
 | Parametros totales | 1.777.088.000 (1,78 B), dato real de safetensors |
 | Parametros activos | no aplica: no es un modelo MoE |
 | Longitud de contexto | no disponible en la informacion proporcionada (el modelo base DeepSeek-R1-Distill-Qwen-1.5B declara 32.768 tokens en su configuracion, pero esta ficha no lo confirma para este ajuste) |
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`rlve-opd-teacher-...-CheckAllCycleXorZero`) | 1,78 B | no disponible | RLVE + GRPO, 4.000 rollouts, 1 entorno | no disponible | HuggingFace, 0 descargas |
-| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` (base) | 1,78 B | 32.768 tokens (declarado por el base) | Destilacion de R1 sobre Qwen2.5, proposito general y razonamiento | no disponible en esta ficha; el modelo base se distribuye bajo licencia MIT segun su publicacion | HuggingFace, ampliamente usado |
-| `Qwen/Qwen2.5-1.5B-Instruct` | 1,54 B | 32.768 tokens | Pretraining + SFT + preferencias, proposito general | Apache 2.0 segun la publicacion del modelo base | HuggingFace, muy extendido |
-| `davidheineman/opd-teacher-Q2.5I-Differentiate-step149` | ~1,5 B | no disponible | RLVE + GRPO, 150 updates, entorno `Differentiate` a dificultad 0 | no disponible | HuggingFace, Featherless, Friendli |
+| Este modelo (`rlve-opd-teacher-...-CheckAllCycleXorZero`) | 1,78 B | no disponible | RLVE + GRPO, 4.000 rollouts, 1 entorno | no disponible | Hugging Face, 0 descargas |
+| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` (base) | 1,78 B | 32.768 tokens (declarado por el base) | Destilacion de R1 sobre Qwen2.5, proposito general y razonamiento | no disponible en esta ficha; el modelo base se distribuye bajo licencia MIT segun su publicacion | Hugging Face, ampliamente usado |
+| `Qwen/Qwen2.5-1.5B-Instruct` | 1,54 B | 32.768 tokens | Pretraining + SFT + preferencias, proposito general | Apache 2.0 segun la publicacion del modelo base | Hugging Face, muy extendido |
+| `davidheineman/opd-teacher-Q2.5I-Differentiate-step149` | ~1,5 B | no disponible | RLVE + GRPO, 150 updates, entorno `Differentiate` a dificultad 0 | no disponible | Hugging Face, Featherless, Friendli |
 
 La diferencia frente al base no es de capacidad general, sino de especializacion: este checkpoint cambia razonamiento abierto por una politica afinada a un unico entorno verificable, con el coste de perder (o no declarar) capacidades fuera de el.
 
@@ -84,7 +84,7 @@ La diferencia frente al base no es de capacidad general, sino de especializacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-111-CheckAllCycleXorZero-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-111-CheckAllCycleXorZero-20261025
 - Coleccion RLVE OPD Teachers: https://huggingface.co/collections/davidheineman/rlve-opd-teachers
 - Run de entrenamiento en W&B: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/f040c24a
 - Articulo de referencia citado en la coleccion (RLVE): https://arxiv.org/abs/2511.07317

@@ -69,7 +69,7 @@ No se dispone de modelos directamente comparables, ya que RL²-VLA no es un VLA 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rl2-vla/rl2-vla-qam-droid
+- Hugging Face: https://huggingface.co/rl2-vla/rl2-vla-qam-droid
 - Repositorio GitHub: https://github.com/marmotlab/RL2-VLA
 - Paper arXiv: https://arxiv.org/abs/2607.26991
 - Página del proyecto: https://rl2-vla.github.io/

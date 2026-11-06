@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible para el adaptador; depende del modelo base Qwen3.8-27B y de su cuantización. El adaptador en sí ocupa un espacio mínimo (repositorio de 0,0 GB según HuggingFace).
+- VRAM estimada: no disponible para el adaptador; depende del modelo base Qwen3.8-27B y de su cuantización. El adaptador en sí ocupa un espacio mínimo (repositorio de 0,0 GB según Hugging Face).
 - GPU recomendadas: no disponibles. El entrenamiento se realizó en una NVIDIA DGX Spark, lo que sugiere que el flujo de trabajo cabe en ese equipo con base en 8 bits.
 - GPU de consumo: no disponible; un modelo base de 27B en 8 bits requiere del orden de decenas de GB de VRAM, por lo que no se puede confirmar su encaje en GPU de consumo sin datos del modelo base.
 - Opciones de despliegue: el autor documenta carga mediante `transformers` + `peft` (`PeftModel.from_pretrained`). No se mencionan vLLM, llama.cpp, Ollama ni TGI.
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ender1 (este adaptador) | LoRA sobre base de 27B | no disponible | sin evaluación publicada | Apache-2.0 | HuggingFace |
-| beanyzoldyck/ender1.1 | LoRA sobre la misma familia | no disponible | no disponible | no disponible | HuggingFace |
-| beanyzoldyck/ender1.3 | LoRA más reciente de la familia | no disponible | no disponible | no disponible | HuggingFace |
+| ender1 (este adaptador) | LoRA sobre base de 27B | no disponible | sin evaluación publicada | Apache-2.0 | Hugging Face |
+| beanyzoldyck/ender1.1 | LoRA sobre la misma familia | no disponible | no disponible | no disponible | Hugging Face |
+| beanyzoldyck/ender1.3 | LoRA más reciente de la familia | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones de contexto para establecer una comparación cuantitativa con alternativas de la misma categoría (adaptadores de alineación para agentes). La comparación disponible se limita a los otros miembros de la familia Ender, que el autor señala como continuaciones de esta línea con una mezcla de generalización reequilibrada.
 
@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para est
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/beanyzoldyck/ender1
+- Adaptador en Hugging Face: https://huggingface.co/beanyzoldyck/ender1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Adaptador ender1.1: https://huggingface.co/beanyzoldyck/ender1.1
 - Adaptador ender1.3: https://huggingface.co/beanyzoldyck/ender1.3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.3-70B-Instruct-NVFP4-GGUF es una cuantización NVFP4 (pesos a 4 bits en formato de punto flotante) del modelo Llama 3.3 70B Instruct de Meta, publicada por el usuario hollowfound en HuggingFace. El modelo base es un transformer decoder-only de 70.553 millones de parámetros optimizado para instrucciones, y esta versión cuantizada reduce las 136,9 GB de pesos bf16 de las capas lineales a 38,5 GB, resultando en un archivo GGUF de 42,7 GB.
+Llama-3.3-70B-Instruct-NVFP4-GGUF es una cuantización NVFP4 (pesos a 4 bits en formato de punto flotante) del modelo Llama 3.3 70B Instruct de Meta, publicada por el usuario hollowfound en Hugging Face. El modelo base es un transformer decoder-only de 70.553 millones de parámetros optimizado para instrucciones, y esta versión cuantizada reduce las 136,9 GB de pesos bf16 de las capas lineales a 38,5 GB, resultando en un archivo GGUF de 42,7 GB.
 
 El problema que resuelve es la barrera de hardware para ejecutar modelos de 70B: mientras que el modelo original en bf16 requiere varias GPU de gama alta, esta versión cabe en una única GPU de 48 GB con contexto moderado. La cuantización se ha realizado con la herramienta hollowQuant, sin datos de calibración, y el resultado se ha convertido al formato GGUF mediante el script oficial de llama.cpp.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de otros benchmarks (MMLU, HumanEval, etc.) en la
 | Llama-3.3-70B-Instruct-NVFP4A16 (compressed-tensors) | 70,55B | NVFP4 W4A16 | no disponible | 92,34 | Llama 3.3 Community |
 | Este GGUF (hollowfound) | 70,55B | NVFP4 W4A16 (GGUF) | 42,7 GB | 92,19 | Llama 3.3 Community |
 
-Alternativas de cuantizacion equivalentes para el mismo modelo base (por ejemplo GGUF Q4_K_M de terceros) existen en HuggingFace, pero no se dispone de datos comparativos publicados en la informacion proporcionada.
+Alternativas de cuantizacion equivalentes para el mismo modelo base (por ejemplo GGUF Q4_K_M de terceros) existen en Hugging Face, pero no se dispone de datos comparativos publicados en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 

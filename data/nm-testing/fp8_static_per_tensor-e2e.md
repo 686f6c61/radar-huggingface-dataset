@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nm-testing/fp8_static_per_tensor-e2e` es un artefacto de prueba publicado por el usuario `nm-testing` en HuggingFace. Su nombre indica que se trata de un modelo basado en la arquitectura Llama (según los tags) con cuantización FP8 estática por tensor, orientado a validar un flujo de extremo a extremo (e2e) para compresión de tensores. Con aproximadamente 1.100 millones de parámetros, es un modelo de tamaño pequeño-medio, probablemente derivado de alguna variante de Llama de 1B.
+El modelo `nm-testing/fp8_static_per_tensor-e2e` es un artefacto de prueba publicado por el usuario `nm-testing` en Hugging Face. Su nombre indica que se trata de un modelo basado en la arquitectura Llama (según los tags) con cuantización FP8 estática por tensor, orientado a validar un flujo de extremo a extremo (e2e) para compresión de tensores. Con aproximadamente 1.100 millones de parámetros, es un modelo de tamaño pequeño-medio, probablemente derivado de alguna variante de Llama de 1B.
 
 La relevancia de este modelo reside en su uso como banco de pruebas para técnicas de cuantización FP8, un área de interés creciente para reducir el consumo de memoria y acelerar la inferencia en GPUs modernas. Al ser un modelo de testing, no está pensado para uso en producción, sino para evaluar la corrección del pipeline de compresión y su impacto en la calidad de las salidas. No se dispone de información pública sobre su entrenamiento, licencia o capacidades específicas más allá de los metadatos básicos.
 
@@ -80,4 +80,4 @@ La comparación es limitada porque no se conocen las capacidades reales del mode
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/nm-testing/fp8_static_per_tensor-e2e)
+- [Página del modelo en Hugging Face](https://huggingface.co/nm-testing/fp8_static_per_tensor-e2e)

@@ -82,9 +82,9 @@ Latencia medida: 233 ms por secuencia en una NPU Intel Core Ultra, con diferenci
 
 | Modelo | Parametros | Contexto | Brier skill (3 preguntas de postura, 5 460 estados con decisión) | Licencia | Formato y disponibilidad |
 |---|---|---|---|---|---|
-| zwh20081/hoi4-jevai | ~304 M (arquitectura DeBERTa-v3-large) | 512 tokens | 0,302 | Apache-2.0 | safetensors, PyTorch fp32 y OpenVINO IR en HuggingFace |
-| com-kotobalabs/open-jev-deberta-v3-large (base) | misma arquitectura que el anterior | 512 tokens | No disponible | Apache-2.0 | HuggingFace |
-| microsoft/deberta-v3-large | 304 M | 512 tokens | No disponible | MIT | HuggingFace |
+| zwh20081/hoi4-jevai | ~304 M (arquitectura DeBERTa-v3-large) | 512 tokens | 0,302 | Apache-2.0 | safetensors, PyTorch fp32 y OpenVINO IR en Hugging Face |
+| com-kotobalabs/open-jev-deberta-v3-large (base) | misma arquitectura que el anterior | 512 tokens | No disponible | Apache-2.0 | Hugging Face |
+| microsoft/deberta-v3-large | 304 M | 512 tokens | No disponible | MIT | Hugging Face |
 | Modelo de referencia (*stock model*) del autor | No disponible | No disponible | -0,271 | No disponible | No disponible |
 
 Comparables directos fuera de este proyecto: no disponible. No se conocen en la información proporcionada otros modelos entrenados para decisiones de IA en Hearts of Iron IV.
@@ -107,7 +107,7 @@ Comparables directos fuera de este proyecto: no disponible. No se conocen en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zwh20081/hoi4-jevai
+- Modelo en Hugging Face: https://huggingface.co/zwh20081/hoi4-jevai
 - Repositorio de código (GitHub): https://github.com/zwh20081/hoi4-jevai
 - Mod en Steam Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=3808093078
 - Modelo base: https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large

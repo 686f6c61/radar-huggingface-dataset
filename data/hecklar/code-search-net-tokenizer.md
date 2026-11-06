@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hecklar/code-search-net-tokenizer es un artefacto publicado en HuggingFace Hub por el usuario Hecklar bajo la librería transformers. A pesar del término "tokenizer" en su identificador, la información disponible no confirma si se trata de un tokenizador propiamente dicho (vocabulario y reglas de segmentación) o de un modelo acompañado de su tokenizador: el autor no ha publicado pipeline, licencia, idiomas ni descripción funcional, y la model card es la plantilla genérica autogenerada por el Hub, con todos los campos marcados como "[More Information Needed]".
+Hecklar/code-search-net-tokenizer es un artefacto publicado en Hugging Face Hub por el usuario Hecklar bajo la librería transformers. A pesar del término "tokenizer" en su identificador, la información disponible no confirma si se trata de un tokenizador propiamente dicho (vocabulario y reglas de segmentación) o de un modelo acompañado de su tokenizador: el autor no ha publicado pipeline, licencia, idiomas ni descripción funcional, y la model card es la plantilla genérica autogenerada por el Hub, con todos los campos marcados como "[More Information Needed]".
 
 El repositorio acumula 0 descargas y 0 "likes" y fue creado el 2 de octubre de 2026, con una actualización un segundo posterior, lo que sugiere una subida automatizada sin mantenimiento posterior. El único dato técnico explícito en las etiquetas es la referencia arXiv 1910.09700, que corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono en aprendizaje automático, citado en la propia plantilla de model card: no describe la arquitectura ni el entrenamiento de este artefacto.
 
@@ -29,7 +29,7 @@ Por el nombre, es razonable inferir una vinculación con el corpus CodeSearchNet
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura. La model card reproduce la plantilla estándar de HuggingFace sin rellenar: los apartados "Model Architecture and Objective", "Training Data", "Training Procedure", "Training Hyperparameters" y "Compute Infrastructure" aparecen íntegramente como "[More Information Needed]". No se especifica si el artefacto emplea Byte-Pair Encoding, WordPiece, Unigram, SentencePiece o un vocabulario construido ad hoc, ni el tamaño del vocabulario resultante.
+No hay información publicada sobre la arquitectura. La model card reproduce la plantilla estándar de Hugging Face sin rellenar: los apartados "Model Architecture and Objective", "Training Data", "Training Procedure", "Training Hyperparameters" y "Compute Infrastructure" aparecen íntegramente como "[More Information Needed]". No se especifica si el artefacto emplea Byte-Pair Encoding, WordPiece, Unigram, SentencePiece o un vocabulario construido ad hoc, ni el tamaño del vocabulario resultante.
 
 Tampoco se declara corpus de entrenamiento, número de tokens, composición del dataset, ni si hubo fases de ajuste como RLHF o DPO (extremo, por otra parte, improbable en un tokenizador). El único enlace académico presente es arXiv 1910.09700, correspondiente a "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019), que la plantilla del Hub cita como referencia para la calculadora de impacto medioambiental. No guarda relación con el diseño del artefacto y no debe interpretarse como paper de referencia del mismo.
 
@@ -38,7 +38,7 @@ Tampoco se declara corpus de entrenamiento, número de tokens, composición del 
 No se ha publicado ninguna capacidad verificable. A partir de la evidencia disponible solo puede afirmarse lo siguiente:
 
 - El repositorio es consumible a través de la librería transformers, según la etiqueta `library_name`.
-- Está marcado como `endpoints_compatible`, lo que indica compatibilidad declarada con los endpoints de inferencia gestionados de HuggingFace.
+- Está marcado como `endpoints_compatible`, lo que indica compatibilidad declarada con los endpoints de inferencia gestionados de Hugging Face.
 - No se documenta generación de texto, razonamiento, código, matemáticas, visión ni audio.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta comportamiento agéntico ni razonamiento multi-paso.
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada: no disponible; si es un tokenizador, el requisito es de memoria principal (del orden de decenas o centenas de megabytes según tamaño de vocabulario), no de VRAM. Dato no confirmado.
 - GPU recomendadas: no disponible. No hay evidencia de que el artefacto requiera aceleración por hardware.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere uso a través de los endpoints de HuggingFace; la librería declarada es transformers. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere uso a través de los endpoints de Hugging Face; la librería declarada es transformers. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ No disponible. No se dispone de parámetros, contexto, licencia ni métricas de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hecklar/code-search-net-tokenizer
+- Repositorio en Hugging Face: https://huggingface.co/Hecklar/code-search-net-tokenizer
 - Referencia arXiv presente en las etiquetas: https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019, "Quantifying the Carbon Emissions of Machine Learning"; citada por la plantilla de model card, no vinculada al artefacto)
 - Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este artefacto en los resultados de búsqueda disponibles.

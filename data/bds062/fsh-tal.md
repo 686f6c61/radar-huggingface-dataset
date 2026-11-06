@@ -73,6 +73,6 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bds062/fsh-tal
+- Modelo en Hugging Face: https://huggingface.co/bds062/fsh-tal
 - Repositorio GitHub: https://github.com/bds062/FSH-TAL
 - Dataset asociado: https://huggingface.co/datasets/bds062/cichlid-behavior-pairs

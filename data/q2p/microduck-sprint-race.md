@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sprint-race es una política de control por aprendizaje por refuerzo (RL) publicada en HuggingFace por el usuario q2p para el robot microduck de Pollen Robotics. No es un modelo de lenguaje ni un modelo generativo: es un controlador de locomocion que recibe un vector de observacion de 61 dimensiones y emite 14 acciones a 50 Hz, empaquetado como grafo ONNX y distribuido a traves del sistema de slots de politicas del daemon `robotctl`.
+sprint-race es una política de control por aprendizaje por refuerzo (RL) publicada en Hugging Face por el usuario q2p para el robot microduck de Pollen Robotics. No es un modelo de lenguaje ni un modelo generativo: es un controlador de locomocion que recibe un vector de observacion de 61 dimensiones y emite 14 acciones a 50 Hz, empaquetado como grafo ONNX y distribuido a traves del sistema de slots de politicas del daemon `robotctl`.
 
 La model card la describe como una politica "perpetua": una vez cargada en un slot, ejecuta la marcha de forma continua hasta que se le indique lo contrario. La tarea asociada se denomina `Mjlab-Sprint2m-MicroDuck`, lo que sugiere un objetivo de desplazamiento tipo sprint, aunque la model card no detalla la funcion de recompensa ni las metricas de exito.
 
@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye otras politicas de microd
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/q2p/microduck-sprint-race
+- Modelo en Hugging Face: https://huggingface.co/q2p/microduck-sprint-race
 - Repositorio de retos y entrenamiento (citado en la model card): https://github.com/pollen-robotics/microduck-challenges
 - Repositorio del robot microduck (citado en la model card): https://github.com/pollen-robotics/microduck
 - Documentacion del manifiesto de politicas (`docs/policy-manifest.md` en el repositorio del daemon, referenciada en la model card): no disponible como enlace directo

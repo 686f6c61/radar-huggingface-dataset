@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hermes-4-405B-FP8 es una versión cuantizada a FP8 del modelo Hermes 4 405B, un ajuste fino (finetune) de instrucciones y razonamiento desarrollado por Nous Research sobre la base de Llama-3.1-405B de Meta. La ficha de HuggingFace analizada corresponde al repositorio `rax4901/Hermes-4-405B-FP8`, una reproducción del modelo original en formato comprimido para facilitar su despliegue. El modelo resuelve el problema de disponer de un asistente conversacional de gran escala con modo de razonamiento híbrido, capacidades de llamada a herramientas y salidas estructuradas en JSON, manteniendo una alineación neutra y una baja tasa de rechazos.
+Hermes-4-405B-FP8 es una versión cuantizada a FP8 del modelo Hermes 4 405B, un ajuste fino (finetune) de instrucciones y razonamiento desarrollado por Nous Research sobre la base de Llama-3.1-405B de Meta. La ficha de Hugging Face analizada corresponde al repositorio `rax4901/Hermes-4-405B-FP8`, una reproducción del modelo original en formato comprimido para facilitar su despliegue. El modelo resuelve el problema de disponer de un asistente conversacional de gran escala con modo de razonamiento híbrido, capacidades de llamada a herramientas y salidas estructuradas en JSON, manteniendo una alineación neutra y una baja tasa de rechazos.
 
 Arquitectura transformer densa con 405.853.388.800 parámetros totales (405,8 mil millones), heredada íntegramente de Llama-3.1-405B. La longitud de contexto no se declara explícitamente en la información disponible, aunque al derivar de Llama-3.1-405B es previsible que conserve la ventana nativa de 128.000 tokens de la base; este dato debe confirmarse en la documentación del modelo original. El modelo está entrenado principalmente en inglés y su licencia es Llama 3 (llama3), con las restricciones de uso comercial que esta implica.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Hermes-4-405B-FP8 (este) | 405,8 mil millones | No disponible (base 128k) | llama3 | HuggingFace, 46 descargas | FP8, modo razonamiento híbrido, tool calling |
-| Hermes 4 405B (BF16, NousResearch) | 405,8 mil millones | No disponible (base 128k) | llama3 | HuggingFace | Version original sin cuantizar |
-| Llama-3.1-405B (Meta) | 405 mil millones | 128.000 tokens | llama3 | HuggingFace | Modelo base, sin ajuste de razonamiento ni tool calling nativo |
-| Hermes 3 405B (Nous Research) | 405 mil millones | No disponible | llama3 | HuggingFace | Predecesor, corpus de post-entrenamiento mucho menor |
+| Hermes-4-405B-FP8 (este) | 405,8 mil millones | No disponible (base 128k) | llama3 | Hugging Face, 46 descargas | FP8, modo razonamiento híbrido, tool calling |
+| Hermes 4 405B (BF16, NousResearch) | 405,8 mil millones | No disponible (base 128k) | llama3 | Hugging Face | Version original sin cuantizar |
+| Llama-3.1-405B (Meta) | 405 mil millones | 128.000 tokens | llama3 | Hugging Face | Modelo base, sin ajuste de razonamiento ni tool calling nativo |
+| Hermes 3 405B (Nous Research) | 405 mil millones | No disponible | llama3 | Hugging Face | Predecesor, corpus de post-entrenamiento mucho menor |
 
 La comparación con alternativas de otros desarrolladores del mismo tamaño (por ejemplo, modelos densos de ~400B) no está disponible en la información proporcionada.
 
@@ -91,7 +91,7 @@ La comparación con alternativas de otros desarrolladores del mismo tamaño (por
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/rax4901/Hermes-4-405B-FP8
+- Hugging Face (este repositorio): https://huggingface.co/rax4901/Hermes-4-405B-FP8
 - Modelo original BF16 (Nous Research): https://huggingface.co/NousResearch/Hermes-4-405B
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-405B
 - Informe técnico de Hermes 4: https://arxiv.org/abs/2508.18255

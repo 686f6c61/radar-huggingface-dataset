@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Leechaeyoungvoj/vit-baseline-2024` es un repositorio de HuggingFace publicado por el usuario Chaeyoung Lee que contiene una implementación propia de un Vision Transformer (ViT) orientada a tareas de *matching* (emparejamiento entre imágenes). Según su model card, la configuración declarada es de escala "huge", con atención lineal, fusión mediante *co-attention*, activación approx-gelu y normalización layernorm. Incluye `predict.py` como artefacto principal, `config.json` con los ajustes de arquitectura, `training_args.json` con la receta por defecto (optimizador adam y schedule coseno) y `model.safetensors`.
+`Leechaeyoungvoj/vit-baseline-2024` es un repositorio de Hugging Face publicado por el usuario Chaeyoung Lee que contiene una implementación propia de un Vision Transformer (ViT) orientada a tareas de *matching* (emparejamiento entre imágenes). Según su model card, la configuración declarada es de escala "huge", con atención lineal, fusión mediante *co-attention*, activación approx-gelu y normalización layernorm. Incluye `predict.py` como artefacto principal, `config.json` con los ajustes de arquitectura, `training_args.json` con la receta por defecto (optimizador adam y schedule coseno) y `model.safetensors`.
 
 El dato más relevante para cualquier evaluador es que el autor indica explícitamente que el checkpoint publicado es una **inicialización válida para smoke tests**, no un modelo entrenado ni auditado, y que el repositorio **no reclama ninguna puntuación de benchmark**. Además, el recuento real de parámetros del archivo `safetensors` es de 33.088, una cifra que entra en contradicción directa con la escala "huge" declarada en la documentación; conviene inspeccionar `config.json` antes de asumir cualquier tamaño.
 
@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Tarea principal | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| Leechaeyoungvoj/vit-baseline-2024 | 33.088 (recuento safetensors); escala "huge" declarada | Matching de imagenes con co-attention | bsd-3-clause | no disponible (no se reclama ninguno) | HuggingFace, 0 descargas, checkpoint sin entrenar |
+| Leechaeyoungvoj/vit-baseline-2024 | 33.088 (recuento safetensors); escala "huge" declarada | Matching de imagenes con co-attention | bsd-3-clause | no disponible (no se reclama ninguno) | Hugging Face, 0 descargas, checkpoint sin entrenar |
 | ViT-B/16 (google-research) | 86 millones | Clasificacion de imagenes | Apache 2.0 (segun el repositorio de Google) | Resultados publicados en el paper original | Pesos preentrenados publicos |
 | ViT-L/16 (google-research) | 307 millones | Clasificacion de imagenes | Apache 2.0 (segun el repositorio de Google) | Resultados publicados en el paper original | Pesos preentrenados publicos |
 | ViT-H/14 (google-research) | 632 millones | Clasificacion de imagenes | Apache 2.0 (segun el repositorio de Google) | Resultados publicados en el paper original | Pesos preentrenados publicos |
@@ -110,8 +110,8 @@ La comparacion relevante no es de rendimiento, porque este repositorio no public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Leechaeyoungvoj/vit-baseline-2024
-- Perfil del autor en HuggingFace: https://huggingface.co/Leechaeyoungvoj/datasets
+- Modelo en Hugging Face: https://huggingface.co/Leechaeyoungvoj/vit-baseline-2024
+- Perfil del autor en Hugging Face: https://huggingface.co/Leechaeyoungvoj/datasets
 - Documentacion de ViT en transformers: https://huggingface.co/docs/transformers/model_doc/vit
 - Repositorio oficial de Vision Transformer de Google Research: https://github.com/google-research/vision_transformer
 - Paper original de ViT (An Image is Worth 16x16 Words): https://arxiv.org/abs/2010.11929

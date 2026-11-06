@@ -53,9 +53,9 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jimilismith/qwen2.5-1.5b-FT-risk-oracle | 1.5B | no disponible | Apache-2.0 | HuggingFace |
-| Qwen/Qwen2.5-1.5B-Instruct | 1.5B | 128K | Apache-2.0 | HuggingFace, Ollama |
-| Llama 3.2 1.5B Instruct | 1.5B | 128K | Llama 3.2 license | HuggingFace, Ollama |
+| jimilismith/qwen2.5-1.5b-FT-risk-oracle | 1.5B | no disponible | Apache-2.0 | Hugging Face |
+| Qwen/Qwen2.5-1.5B-Instruct | 1.5B | 128K | Apache-2.0 | Hugging Face, Ollama |
+| Llama 3.2 1.5B Instruct | 1.5B | 128K | Llama 3.2 license | Hugging Face, Ollama |
 
 No se dispone de datos de rendimiento comparativo. El modelo base Qwen2.5-1.5B-Instruct es la referencia natural, pero este fine-tune no publica métricas que permitan evaluar su calidad relativa.
 
@@ -70,8 +70,8 @@ No se dispone de datos de rendimiento comparativo. El modelo base Qwen2.5-1.5B-I
 
 ## Enlaces
 
-- [HuggingFace: jimilismith/qwen2.5-1.5b-FT-risk-oracle](https://huggingface.co/jimilismith/qwen2.5-1.5b-FT-risk-oracle)
+- [Hugging Face: jimilismith/qwen2.5-1.5b-FT-risk-oracle](https://huggingface.co/jimilismith/qwen2.5-1.5b-FT-risk-oracle)
 - [Qwen/Qwen2.5-1.5B (modelo base)](https://huggingface.co/Qwen/Qwen2.5-1.5B)
-- [Colección Qwen2.5 en HuggingFace](https://huggingface.co/collections/Qwen/qwen25)
+- [Colección Qwen2.5 en Hugging Face](https://huggingface.co/collections/Qwen/qwen25)
 - [Qwen2.5 en Ollama](https://ollama.com/library/qwen2.5:1.5b)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)

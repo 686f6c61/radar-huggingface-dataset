@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w14-k-chrono5-w60ft5-s300` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Segun los metadatos del repositorio, se trata de un modelo de aproximadamente 2.018 millones de parametros (2,018 mil millones), almacenado en formato safetensors con un tamano de repositorio de 6,3 GB. La nomenclatura del identificador sugiere un entrenamiento de tipo experimental con etapas diferenciadas (posibles referencias a "warmup", "fine-tuning" y "steps"), aunque no se dispone de documentacion oficial que lo confirme.
+El modelo `alfred8995/r18-a2-w14-k-chrono5-w60ft5-s300` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Segun los metadatos del repositorio, se trata de un modelo de aproximadamente 2.018 millones de parametros (2,018 mil millones), almacenado en formato safetensors con un tamano de repositorio de 6,3 GB. La nomenclatura del identificador sugiere un entrenamiento de tipo experimental con etapas diferenciadas (posibles referencias a "warmup", "fine-tuning" y "steps"), aunque no se dispone de documentacion oficial que lo confirme.
 
 El tag `sn38-nanochrono` apunta a un linaje o familia de modelos de investigacion denominada "nanochrono", probablemente orientada a experimentacion con arquitecturas o tecnicas de entrenamiento especificas. No obstante, no se ha publicado informacion sobre la arquitectura interna, los datos de entrenamiento, el contexto maximo ni las capacidades del modelo en la informacion disponible.
 
@@ -74,7 +74,7 @@ La comparativa se limita a modelos de tamano similar ampliamente documentados; e
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion tecnica: no se conocen arquitectura, datos de entrenamiento, contexto ni capacidades, lo que impide evaluar su idoneidad para cualquier tarea.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion y puede limitar su uso en entornos automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion y puede limitar su uso en entornos automatizados.
 - Riesgo de alucinacion: no evaluado; sin benchmarks ni evaluaciones publicas, no puede descartarse un comportamiento deficiente.
 - Sesgos conocidos: no disponibles; no se ha publicado informacion sobre la composicion del dataset ni sobre procesos de mitigacion de sesgos.
 - Limitaciones de idioma: los idiomas soportados no estan declarados, por lo que no se garantiza un rendimiento adecuado en castellano ni en otros idiomas.
@@ -85,5 +85,5 @@ La comparativa se limita a modelos de tamano similar ampliamente documentados; e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w60ft5-s300
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w60ft5-s300
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion disponible.

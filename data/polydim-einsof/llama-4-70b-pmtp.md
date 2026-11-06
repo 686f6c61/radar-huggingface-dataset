@@ -88,7 +88,7 @@ La comparación cuantitativa con alternativas no es posible con la información 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Polydim-Einsof/llama-4-70b-pmtp
+- Hugging Face: https://huggingface.co/Polydim-Einsof/llama-4-70b-pmtp
 - Repositorio del autor: https://github.com/AGT1973/POLYDIM_EINSOF
 - Modelo base: https://huggingface.co/meta-llama/Llama-4-70B-Instruct
 - Licencia Llama 4: https://www.llama.com/llama4/license/

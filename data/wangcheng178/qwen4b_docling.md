@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wangcheng178/Qwen4B_docling` es un repositorio publicado en HuggingFace por el usuario `wangcheng178`. A fecha de la consulta, el repositorio no tiene descargas, no tiene "likes" y la model card únicamente declara la licencia Apache 2.0. No se ha publicado ninguna descripción técnica, ni especificaciones, ni información sobre el proceso de entrenamiento.
+El modelo `wangcheng178/Qwen4B_docling` es un repositorio publicado en Hugging Face por el usuario `wangcheng178`. A fecha de la consulta, el repositorio no tiene descargas, no tiene "likes" y la model card únicamente declara la licencia Apache 2.0. No se ha publicado ninguna descripción técnica, ni especificaciones, ni información sobre el proceso de entrenamiento.
 
 El nombre del repositorio sugiere una posible integración entre la familia de modelos Qwen (con un tamaño de 4 mil millones de parámetros) y el proyecto Docling, una herramienta de inteligencia documental para convertir documentos complejos en datos estructurados. Sin embargo, esta interpretación se basa exclusivamente en la nomenclatura y no está confirmada por ninguna fuente oficial. No existe información verificable sobre la arquitectura, el tamaño real de parámetros, la longitud de contexto ni las capacidades del modelo.
 
@@ -64,5 +64,5 @@ No se puede realizar una comparativa con modelos similares porque no se dispone 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wangcheng178/Qwen4B_docling
+- Hugging Face: https://huggingface.co/wangcheng178/Qwen4B_docling
 - No se han encontrado enlaces adicionales relevantes en la busqueda web que aporten informacion especifica sobre este modelo.

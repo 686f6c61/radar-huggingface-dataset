@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ASethi04/pi05-BimanualYAM-freshbase-raw-umi100-ee20 | 4,14B | H24 | Bimanual, recoger naranjas | no disponible | HuggingFace |
-| ASethi04/pi05-BimanualYAM-freshbase-raw-umi95-teleop05-ee20 | no disponible | no disponible | Bimanual, variación con 95% UMI | no disponible | HuggingFace |
-| ASethi04/pi05-BimanualYAM-long-gripper182-joint14 | no disponible | no disponible | Bimanual con gripper largo | no disponible | HuggingFace |
+| ASethi04/pi05-BimanualYAM-freshbase-raw-umi100-ee20 | 4,14B | H24 | Bimanual, recoger naranjas | no disponible | Hugging Face |
+| ASethi04/pi05-BimanualYAM-freshbase-raw-umi95-teleop05-ee20 | no disponible | no disponible | Bimanual, variación con 95% UMI | no disponible | Hugging Face |
+| ASethi04/pi05-BimanualYAM-long-gripper182-joint14 | no disponible | no disponible | Bimanual con gripper largo | no disponible | Hugging Face |
 | π0.5 (Physical Intelligence) | no disponible | no disponible | VLA generalista de robótica | no disponible | openpi (GitHub) |
 
 Los otros checkpoints del mismo autor son variaciones del mismo experimento, que difieren en la proporción de datos UMI/teleop o en la configuración del gripper. No hay comparativas directas con otros modelos de la misma categoría en la información disponible.
@@ -71,13 +71,13 @@ Los otros checkpoints del mismo autor son variaciones del mismo experimento, que
 - Tarea específica: está entrenado únicamente para la tarea de recoger naranjas y colocarlas en un bowl, por lo que no generaliza a otras tareas sin reentrenamiento.
 - Sin capacidades de lenguaje: no puede procesar instrucciones textuales ni mantener conversaciones; es un modelo de acción.
 - Licencia no disponible: no se especifica la licencia, lo que limita el uso comercial y la redistribución sin confirmación del autor.
-- Datos no documentados: no hay información sobre el dataset de entrenamiento más allá de las referencias de HuggingFace, lo que impide evaluar sesgos o cobertura de escenarios.
+- Datos no documentados: no hay información sobre el dataset de entrenamiento más allá de las referencias de Hugging Face, lo que impide evaluar sesgos o cobertura de escenarios.
 - Riesgo de alucinación en acciones: como modelo de flujo, podría generar acciones inválidas o inseguras si no se aplican comprobaciones de seguridad I2RT en el despliegue.
 - Instrucción del autor: se recomienda fijar la revisión inmutable del Hub (revisión inmutable) en lugar de `main`, para evitar cambios en el checkpoint.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASethi04/pi05-BimanualYAM-freshbase-raw-umi100-ee20
+- Hugging Face: https://huggingface.co/ASethi04/pi05-BimanualYAM-freshbase-raw-umi100-ee20
 - Variación con 95% UMI: https://huggingface.co/ASethi04/pi05-BimanualYAM-freshbase-raw-umi95-teleop05-ee20
 - Variación con gripper largo: https://huggingface.co/ASethi04/pi05-BimanualYAM-long-gripper182-joint14
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi

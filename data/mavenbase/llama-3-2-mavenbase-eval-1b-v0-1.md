@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-Mavenbase-Eval-1B-v0.1 | 1B | No disponible (base 128k) | Llama 3.2 Community | Evaluacion de entrevistas y composure | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.2-1B-Instruct | 1B | 128k | Llama 3.2 Community | Asistente generalista | HuggingFace, ampliamente usado |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Apache 2.0 | Asistente generalista multilingue | HuggingFace, muy usado |
-| SmolLM2-1.7B-Instruct | 1,7B | 8k | Apache 2.0 | Asistente generalista ligero | HuggingFace, muy usado |
+| Llama-3.2-Mavenbase-Eval-1B-v0.1 | 1B | No disponible (base 128k) | Llama 3.2 Community | Evaluacion de entrevistas y composure | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.2-1B-Instruct | 1B | 128k | Llama 3.2 Community | Asistente generalista | Hugging Face, ampliamente usado |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Apache 2.0 | Asistente generalista multilingue | Hugging Face, muy usado |
+| SmolLM2-1.7B-Instruct | 1,7B | 8k | Apache 2.0 | Asistente generalista ligero | Hugging Face, muy usado |
 
 La comparativa es estructural: el modelo de Mavenbase esta especializado en una tarea de nicho y no compite en capacidades generales con los instruct models de la tabla. Su ventaja es la salida JSON determinista para grading de entrevistas; su desventaja es la ausencia de benchmarks, de comunidad y de documentacion sobre el dataset de ajuste.
 
@@ -81,13 +81,13 @@ La comparativa es estructural: el modelo de Mavenbase esta especializado en una 
 - Limitacion de idioma: solo ingles; no soporta castellano ni otras lenguas.
 - Limitacion de contexto: no se especifica en la model card; se hereda del base, pero el ajuste puede degradar el uso de contextos largos.
 - Restricciones de licencia: Llama 3.2 Community License Agreement impone condiciones para uso comercial, incluyendo la necesidad de cumplir la politica de uso aceptable de Meta y, en su caso, obtener licencia adicional para mas de 700 millones de usuarios mensuales.
-- Falta de validacion externa: 0 descargas y 1 like en HuggingFace; no hay evidencia de uso en produccion ni evaluaciones independientes.
+- Falta de validacion externa: 0 descargas y 1 like en Hugging Face; no hay evidencia de uso en produccion ni evaluaciones independientes.
 - El termino "The Fear Score" es una marca del autor y no una metrica estandar validada psicometricamente; su uso en decisiones de seleccion conlleva riesgo etico y legal.
 - No se publican pesos cuantizados, configuraciones de inferencia ni ejemplos de prompts, lo que dificulta la reproducibilidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mavenbase/Llama-3.2-Mavenbase-Eval-1B-v0.1
+- Hugging Face: https://huggingface.co/Mavenbase/Llama-3.2-Mavenbase-Eval-1B-v0.1
 - Sitio del autor: https://mavenbase.tech
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`davidwdw/fa-code-task00-centre-pilot-v10-667177127192` es un repositorio alojado en HuggingFace por el usuario `davidwdw` el 24 de septiembre de 2026, con cero descargas y cero likes en el momento de la consulta. La propia model card lo describe como un "private fleet archive" (archivo de flota privada) asociado a la receta canonica `evaluations/2026-09-23_task00_centre_recovery_pilot`, con tier `code` y con los directorios de entrada enlazados simbolicamente a un conjunto `public B1k_Rollouts` que ha sido excluido del paquete. Es decir, no se presenta como un modelo entrenado y publicado para uso general, sino como una instantanea (snapshot) de artefactos de evaluacion.
+`davidwdw/fa-code-task00-centre-pilot-v10-667177127192` es un repositorio alojado en Hugging Face por el usuario `davidwdw` el 24 de septiembre de 2026, con cero descargas y cero likes en el momento de la consulta. La propia model card lo describe como un "private fleet archive" (archivo de flota privada) asociado a la receta canonica `evaluations/2026-09-23_task00_centre_recovery_pilot`, con tier `code` y con los directorios de entrada enlazados simbolicamente a un conjunto `public B1k_Rollouts` que ha sido excluido del paquete. Es decir, no se presenta como un modelo entrenado y publicado para uso general, sino como una instantanea (snapshot) de artefactos de evaluacion.
 
 La informacion publica disponible no incluye arquitectura, numero de parametros, longitud de contexto, tokenizador, datos de entrenamiento ni resultados de benchmarks. La model card unicamente recomienda usar la revision exacta registrada y verificar los ficheros `SHA256SUMS`, advirtiendo de que el paquete es una instantanea y no un espejo en vivo del directorio original.
 
@@ -87,7 +87,7 @@ No disponible. No se puede establecer una comparativa fiable porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v10-667177127192
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v10-667177127192
 - Paper: no disponible.
 - Blog o anuncio oficial: no disponible.
 - Repositorio de codigo: no disponible.

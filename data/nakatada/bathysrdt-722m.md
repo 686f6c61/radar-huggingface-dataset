@@ -1,7 +1,7 @@
 # Nakatada/BathysRDT-722M
 
 ## Resumen
-BathysRDT-722M es un modelo de investigación publicado por el usuario Nakatada en HuggingFace, con acceso restringido (gated, requiere aceptar condiciones) y licencia propia denominada bathysrdt-research-license-1.0. Se trata de un transformer de profundidad recurrente (recurrent-depth transformer, RDT) de aproximadamente 722 millones de parámetros, orientado al idioma japonés y construido en torno a la idea de la profundidad de inferencia como cuarto eje de escalado, junto con los tres clásicos: número de parámetros, volumen de datos y cómputo de entrenamiento.
+BathysRDT-722M es un modelo de investigación publicado por el usuario Nakatada en Hugging Face, con acceso restringido (gated, requiere aceptar condiciones) y licencia propia denominada bathysrdt-research-license-1.0. Se trata de un transformer de profundidad recurrente (recurrent-depth transformer, RDT) de aproximadamente 722 millones de parámetros, orientado al idioma japonés y construido en torno a la idea de la profundidad de inferencia como cuarto eje de escalado, junto con los tres clásicos: número de parámetros, volumen de datos y cómputo de entrenamiento.
 
 La innovación central es el uso de un único bloque recurrente con pesos compartidos (weight sharing) que se aplica de forma iterativa, de manera que el modelo puede ajustar cuánta "profundidad de pensamiento" dedicar a cada entrada en lugar de tener una profundidad fija definida por el número de capas. El repositorio ocupa 2,9 GB y contiene pesos en formato safetensors.
 
@@ -16,9 +16,9 @@ No se han publicado en la información disponible especificaciones detalladas, d
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; el repositorio solo distribuye safetensors en precisión completa (2,9 GB, coherente con FP32 a 4 bytes por parámetro) |
 | Idiomas soportados | japonés (ja) |
-| Licencia | bathysrdt-research-license-1.0 (licencia propia, etiquetada como "other" en HuggingFace) |
+| Licencia | bathysrdt-research-license-1.0 (licencia propia, etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Fecha de publicacion | 2026-10-01 |
 
 ## Arquitectura y entrenamiento
@@ -45,7 +45,7 @@ No se dispone de información sobre el número de tokens de entrenamiento, la co
 - Reproducción de resultados de investigación: dado que la licencia es específica de investigación, encaja en proyectos académicos que necesiten auditar el comportamiento de arquitecturas RDT.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la información disponible. La página de HuggingFace no incluye métricas, la tarjeta del modelo no documenta evaluaciones y el artículo técnico localizado describe el enfoque conceptual sin tabla de resultados. No se deben asumir cifras de MMLU, GSM8K, HumanEval ni de evaluaciones en japonés (JGLUE, JMT-Bench u otras) para este modelo.
+No se han publicado resultados de benchmarks en la información disponible. La página de Hugging Face no incluye métricas, la tarjeta del modelo no documenta evaluaciones y el artículo técnico localizado describe el enfoque conceptual sin tabla de resultados. No se deben asumir cifras de MMLU, GSM8K, HumanEval ni de evaluaciones en japonés (JGLUE, JMT-Bench u otras) para este modelo.
 
 ## Requisitos de hardware
 - VRAM para inferencia: en FP32 los pesos ocupan aproximadamente 2,9 GB; en FP16/BF16 bajarían a unos 1,5 GB. A esa cifra hay que sumar activaciones y caché KV, cuyo tamaño depende de una longitud de contexto que no está documentada.
@@ -59,11 +59,11 @@ No disponible. En la información proporcionada no se incluyen modelos comparabl
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BathysRDT-722M | ~722 M | no disponible | no disponible | bathysrdt-research-license-1.0 | gated en HuggingFace |
+| BathysRDT-722M | ~722 M | no disponible | no disponible | bathysrdt-research-license-1.0 | gated en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
-- Acceso restringido: el repositorio es gated y obliga a aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y obliga a aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Licencia propia: bathysrdt-research-license-1.0 está etiquetada como "other" y su texto no se detalla en la información disponible; es imprescindible revisar sus términos antes de cualquier uso comercial, que probablemente esté restringido o prohibido.
 - Sin benchmarks publicados: no existe evidencia cuantitativa de calidad, por lo que no se recomienda su uso en producción sin una evaluación propia.
 - Sin validación comunitaria: 0 descargas y 0 likes implican que el modelo no ha sido probado ni auditado por terceros.
@@ -75,5 +75,5 @@ No disponible. En la información proporcionada no se incluyen modelos comparabl
 - Contexto desconocido: no se puede planificar el uso con documentos largos ni conversaciones multi-turno extensas sin determinar antes la ventana real del modelo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Nakatada/BathysRDT-722M
+- Modelo en Hugging Face: https://huggingface.co/Nakatada/BathysRDT-722M
 - Artículo técnico sobre BathysRDT y la profundidad de razonamiento (Qiita): https://qiita.com/nakatada-lab/items/1d39ef9b743874eadd0a

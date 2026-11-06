@@ -88,7 +88,7 @@ La comparativa se basa en las características documentadas en las model cards. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/silly-kicks/ghost-outfield-position-only-v1
+- Hugging Face: https://huggingface.co/silly-kicks/ghost-outfield-position-only-v1
 - Modelo `default` (variante con velocidad): https://huggingface.co/silly-kicks/ghost-outfield-v1
 - Modelo `ghost-gk-sweeper-v1`: https://huggingface.co/silly-kicks/ghost-gk-sweeper-v1
 - Librería `silly-kicks` en PyPI: https://pypi.org/project/silly-kicks/

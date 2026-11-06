@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `hewittlab/monitor_cot_for_hack-reward_description-coding-explicit_intent-gpt-oss-120b` | LoRA r=32 sobre gpt-oss-120b | no disponible (adaptador) | no disponible | GRPO, recompensa verdadera y mal especificada, 3 semillas | no disponible | HuggingFace, 0 descargas |
-| `openai/gpt-oss-120b` (modelo base) | MoE de razonamiento | no disponible en la informacion | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| `hewittlab/monitor_cot_for_hack-baseline-length-explicit_intent-gpt-oss-120b` | LoRA r=32 sobre gpt-oss-120b | no disponible (adaptador) | no disponible | Baseline con GRPO, control por longitud | no disponible | HuggingFace |
-| `hewittlab/monitor_cot_for_hack-baseline-judge-explicit_intent-gpt-oss-120b` | LoRA r=32 sobre gpt-oss-120b | no disponible (adaptador) | no disponible | Baseline con GRPO sobre tarea `judge` (pares de Chatbot Arena) | no disponible | HuggingFace |
+| `hewittlab/monitor_cot_for_hack-reward_description-coding-explicit_intent-gpt-oss-120b` | LoRA r=32 sobre gpt-oss-120b | no disponible (adaptador) | no disponible | GRPO, recompensa verdadera y mal especificada, 3 semillas | no disponible | Hugging Face, 0 descargas |
+| `openai/gpt-oss-120b` (modelo base) | MoE de razonamiento | no disponible en la informacion | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| `hewittlab/monitor_cot_for_hack-baseline-length-explicit_intent-gpt-oss-120b` | LoRA r=32 sobre gpt-oss-120b | no disponible (adaptador) | no disponible | Baseline con GRPO, control por longitud | no disponible | Hugging Face |
+| `hewittlab/monitor_cot_for_hack-baseline-judge-explicit_intent-gpt-oss-120b` | LoRA r=32 sobre gpt-oss-120b | no disponible (adaptador) | no disponible | Baseline con GRPO sobre tarea `judge` (pares de Chatbot Arena) | no disponible | Hugging Face |
 
 La comparativa relevante no es contra otro modelo de la misma talla, sino contra la propia condicion de control (`control_model`) del mismo repositorio y contra los adaptadores baseline del mismo autor, que permiten aislar el efecto del desajuste de recompensa del efecto del entrenamiento RL en si mismo.
 
@@ -93,12 +93,12 @@ La comparativa relevante no es contra otro modelo de la misma talla, sino contra
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hewittlab/monitor_cot_for_hack-reward_description-coding-explicit_intent-gpt-oss-120b
+- Repositorio Hugging Face: https://huggingface.co/hewittlab/monitor_cot_for_hack-reward_description-coding-explicit_intent-gpt-oss-120b
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Dataset de entrenamiento: https://huggingface.co/datasets/hewittlab/monitor_cot_for_hack-coding
 - Dataset de origen: https://huggingface.co/datasets/newfacade/LeetCodeDataset
 - Codigo del paper: https://github.com/Lorenayannnnn/reward-misspecification-degrades-cot-monitorability
-- Guia de exportacion a HuggingFace de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/
+- Guia de exportacion a Hugging Face de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/
 - Repositorio `tinker-cookbook`: https://github.com/thinking-machines-lab/tinker-cookbook
 - Adaptador baseline por longitud: https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-length-explicit_intent-gpt-oss-120b
 - Adaptador baseline de juez: https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-judge-explicit_intent-gpt-oss-120b

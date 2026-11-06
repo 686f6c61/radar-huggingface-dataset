@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/forgetting_gate_4_6_384_babylm_10m_seed44` es un experimento de investigación publicado por el autor Lanni-ni en HuggingFace. Se trata de un modelo de lenguaje pequeño, de unos 45,7 millones de parámetros, cuyo nombre y etiquetas (`forgetting_transformer`) sugieren una arquitectura basada en transformer con un mecanismo de puerta de olvido (forgetting gate). El sufijo `babylm_10m` indica que probablemente fue entrenado sobre el corpus BabyLM, una colección de 10 millones de palabras diseñada para estudiar la adquisición del lenguaje en modelos de tamaño reducido. La semilla empleada es `seed44`.
+El modelo `Lanni-ni/forgetting_gate_4_6_384_babylm_10m_seed44` es un experimento de investigación publicado por el autor Lanni-ni en Hugging Face. Se trata de un modelo de lenguaje pequeño, de unos 45,7 millones de parámetros, cuyo nombre y etiquetas (`forgetting_transformer`) sugieren una arquitectura basada en transformer con un mecanismo de puerta de olvido (forgetting gate). El sufijo `babylm_10m` indica que probablemente fue entrenado sobre el corpus BabyLM, una colección de 10 millones de palabras diseñada para estudiar la adquisición del lenguaje en modelos de tamaño reducido. La semilla empleada es `seed44`.
 
 El modelo está pensado para la generación de texto y se distribuye en formato `safetensors`. La model card publicada está autogenerada y no incluye información técnica detallada, datos de entrenamiento, benchmarks ni licencia, por lo que su utilidad práctica en producción es muy limitada. Es un recurso relevante principalmente para investigadores interesados en arquitecturas de memoria y olvido en el contexto de modelos pequeños.
 
@@ -71,4 +71,4 @@ No se dispone de datos detallados de modelos comparables en la informacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/forgetting_gate_4_6_384_babylm_10m_seed44
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/forgetting_gate_4_6_384_babylm_10m_seed44

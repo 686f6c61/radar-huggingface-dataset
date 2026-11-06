@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-SciQ-QLoRA-v2-e4 (este) | 8B (base) + adaptador LoRA | no disponible | Adaptador QLoRA sobre Llama 3.1 | llama3.1 | HuggingFace, 0 descargas |
-| Llama-3.1-8B-Instruct-SciQ-QLoRA-v2-e1 | 8B (base) + adaptador LoRA | no disponible | Adaptador QLoRA, 1 epoca | llama3.1 | HuggingFace, recomendado por el autor |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128 000 tokens (segun documentacion de Meta) | Modelo instruct completo | llama3.1 | HuggingFace, ampliamente utilizado |
-| Adaptadores cientificos de la comunidad sobre Llama 3.1 8B | 8B (base) + adaptador | variable | QLoRA/LoRA | variable | HuggingFace |
+| Llama-3.1-8B-Instruct-SciQ-QLoRA-v2-e4 (este) | 8B (base) + adaptador LoRA | no disponible | Adaptador QLoRA sobre Llama 3.1 | llama3.1 | Hugging Face, 0 descargas |
+| Llama-3.1-8B-Instruct-SciQ-QLoRA-v2-e1 | 8B (base) + adaptador LoRA | no disponible | Adaptador QLoRA, 1 epoca | llama3.1 | Hugging Face, recomendado por el autor |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128 000 tokens (segun documentacion de Meta) | Modelo instruct completo | llama3.1 | Hugging Face, ampliamente utilizado |
+| Adaptadores cientificos de la comunidad sobre Llama 3.1 8B | 8B (base) + adaptador | variable | QLoRA/LoRA | variable | Hugging Face |
 
 La comparacion mas directa es con las variantes e1 a e5 del mismo autor, que comparten base, dataset e hiperparametros y solo difieren en el numero de epocas. El propio autor senala la variante e1 como la de menor perdida de validacion, lo que sugiere que este adaptador de 4 epocas puede presentar cierto sobreajuste respecto a la de 1 epoca.
 

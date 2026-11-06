@@ -83,7 +83,7 @@ La comparativa se limita a datos estructurales, ya que no se dispone de resultad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Freenixi/Qwen3.8-27B-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Freenixi/Qwen3.8-27B-NVFP4-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint NVFP4 fuente: https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4
 - Repositorio GGUF de Unsloth (projector de visión): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

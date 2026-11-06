@@ -80,7 +80,7 @@ La comparativa es limitada porque no hay datos de benchmarks para ninguna de las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rin247/Qwen3.6-27B-Uncensored-Aquarion-FP8
+- Modelo en Hugging Face: https://huggingface.co/Rin247/Qwen3.6-27B-Uncensored-Aquarion-FP8
 - Modelo relacionado (variante AEON con MTP): https://huggingface.co/kasimat/Qwen3.6-27B-AEON-Ultimate-Uncensored-FP8-MTP
 - Repositorio del modelo AEON (base para la abliteracion): https://github.com/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-DFlash/
 - Catalogo de modelos abliterados: https://abliteration.org/

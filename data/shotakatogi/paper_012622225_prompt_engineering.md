@@ -62,7 +62,7 @@ No disponible. No existe una categoría de modelos comparable, ya que este repos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ShotaKatogi/paper_012622225_prompt_engineering
+- Repositorio en Hugging Face: https://huggingface.co/ShotaKatogi/paper_012622225_prompt_engineering
 - Referencias externas sobre prompt engineering (no vinculadas directamente al repositorio):
   - [Prompt Design and Engineering: Introduction and Advanced Methods](https://arxiv.org/html/2401.14423v3)
   - [Prompt Engineering Guide - Papers](https://www.promptingguide.ai/papers)

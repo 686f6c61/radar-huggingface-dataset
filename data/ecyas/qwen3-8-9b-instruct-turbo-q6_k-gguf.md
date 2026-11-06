@@ -45,7 +45,7 @@ No se dispone de informacion detallada sobre la arquitectura interna del modelo 
 
 ## Benchmarks y rendimiento
 
-Los siguientes resultados han sido declarados por el autor del modelo en la model card de HuggingFace. No se han verificado de forma independiente.
+Los siguientes resultados han sido declarados por el autor del modelo en la model card de Hugging Face. No se han verificado de forma independiente.
 
 | Benchmark | Resultado |
 |---|---|
@@ -78,7 +78,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/ecyas/Qwen3.8-9B-Instruct-Turbo-Q6_K-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/ecyas/Qwen3.8-9B-Instruct-Turbo-Q6_K-GGUF
 - Modelo base (safetensors): https://huggingface.co/ewinregirgojr/Qwen3.8-9B-Instruct-Turbo
 - Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
 - Repositorio de Qwen3 (serie anterior): https://github.com/QwenLM/Qwen3

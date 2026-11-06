@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa objetiv
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DRZ3000/pony_loras
-- Perfil del autor en HuggingFace: https://huggingface.co/DRZ3000
+- Repositorio Hugging Face: https://huggingface.co/DRZ3000/pony_loras
+- Perfil del autor en Hugging Face: https://huggingface.co/DRZ3000
 - Colección de LoRAs y modelos (referencia general): https://huggingface.co/collections/John6666/loras-models-sdxl10-pony-sd15-flux
 - Plataforma Civitai (ecosistema Pony): https://civitai.com/ecosystems/pony

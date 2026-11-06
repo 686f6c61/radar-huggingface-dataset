@@ -25,7 +25,7 @@ El modelo se publicó el 17 de agosto de 2026 y no registra descargas ni likes e
 
 El modelo es un cross-encoder construido sobre `Qwen3ForCausalLM`, donde la entrada es un par de textos concatenados y la salida es una puntuación de relevancia. La capa `LogitScore` extrae los logits de dos tokens predefinidos (token verdadero y token falso) y los combina para producir un valor escalar. Esta arquitectura es típica de los rerankers de la familia Qwen, que utilizan el modelo causal como codificador de pares.
 
-El entrenamiento se realizó mediante fine-tuning con la librería `sentence-transformers`, utilizando la función de pérdida `MultipleNegativesRankingLoss`. El dataset de entrenamiento tiene un tamaño de 475 muestras, según los tags del repositorio. No se especifican detalles sobre el número de épocas, la tasa de aprendizaje ni la composición exacta del dataset. El modelo fue generado con `Trainer` de HuggingFace, como indica el tag `generated_from_trainer`. No hay información sobre el uso de RLHF, DPO u otras técnicas de alineación.
+El entrenamiento se realizó mediante fine-tuning con la librería `sentence-transformers`, utilizando la función de pérdida `MultipleNegativesRankingLoss`. El dataset de entrenamiento tiene un tamaño de 475 muestras, según los tags del repositorio. No se especifican detalles sobre el número de épocas, la tasa de aprendizaje ni la composición exacta del dataset. El modelo fue generado con `Trainer` de Hugging Face, como indica el tag `generated_from_trainer`. No hay información sobre el uso de RLHF, DPO u otras técnicas de alineación.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/istt-aiml-data/Criminal-Qwen3-Reranker-4B-Augmented-aio)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/istt-aiml-data/Criminal-Qwen3-Reranker-4B-Augmented-aio)
 - [Modelo base Qwen/Qwen3-Reranker-4B](https://huggingface.co/Qwen/Qwen3-Reranker-4B)
 - [Colección Qwen3-Reranker](https://huggingface.co/collections/Qwen/qwen3-reranker)
 - [Informe tecnico de Qwen3 (arXiv)](https://arxiv.org/abs/2505.09388)

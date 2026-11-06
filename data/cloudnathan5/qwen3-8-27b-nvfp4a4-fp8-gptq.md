@@ -95,7 +95,7 @@ No se han encontrado alternativas comparables en la misma categoría (cuantizaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cloudnathan5/Qwen3.8-27B-NVFP4a4-FP8-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/cloudnathan5/Qwen3.8-27B-NVFP4a4-FP8-GPTQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de llm-compressor: https://github.com/vllm-project/llm-compressor
 - Dataset de calibración: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k

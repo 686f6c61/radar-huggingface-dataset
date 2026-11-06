@@ -103,7 +103,7 @@ Efecto del codificador sobre las imagenes (modelo Q8_0, 8 prompts neutros, semil
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/webmp3/Sakura-Qwen-Image-2.1-Turbo-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/webmp3/Sakura-Qwen-Image-2.1-Turbo-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - VAE oficial requerido: https://huggingface.co/Comfy-Org/Qwen-Image-2.1/blob/main/vae/qwen_image_2.1_vae_bf16.safetensors
 - Repositorio oficial Qwen-Image-2.1: https://github.com/QwenLM/Qwen-Image-2.1

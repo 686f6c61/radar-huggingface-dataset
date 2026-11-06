@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`vit-beans-demo` es un modelo de clasificación de imágenes desarrollado por `lorenzosperisen`. Se trata de un fine-tuning del modelo `google/vit-base-patch16-224-in21k`, un Vision Transformer (ViT) base preentrenado en ImageNet-21k. El modelo ha sido ajustado sobre un dataset no documentado, aunque por el nombre y la existencia de modelos similares en HuggingFace es probable que se trate del dataset `beans` (frijoles). El repositorio se publica bajo licencia Apache 2.0.
+`vit-beans-demo` es un modelo de clasificación de imágenes desarrollado por `lorenzosperisen`. Se trata de un fine-tuning del modelo `google/vit-base-patch16-224-in21k`, un Vision Transformer (ViT) base preentrenado en ImageNet-21k. El modelo ha sido ajustado sobre un dataset no documentado, aunque por el nombre y la existencia de modelos similares en Hugging Face es probable que se trate del dataset `beans` (frijoles). El repositorio se publica bajo licencia Apache 2.0.
 
 El modelo cuenta con 85.800.963 parámetros y un tamaño de repositorio de 1,7 GB. Está pensado como una demostración de transfer learning para clasificación de imágenes, con una precisión declarada de 0,9531 en el conjunto de evaluación. No se dispone de información sobre la composición del dataset de entrenamiento ni sobre las clases que predice, lo que limita su uso en producción.
 
@@ -78,7 +78,7 @@ También se proporciona la evolución del entrenamiento:
 | tritera/vit-base-beans-demo-v5 | ViT base | no disponible | beans | no disponible | no disponible |
 | candylion/vit-base-beans-demo-v5 | ViT base | no disponible | beans | no disponible | no disponible |
 
-Los tres primeros modelos comparten arquitectura y propósito, pero solo se dispone de datos completos para `vit-beans-demo`. Los modelos `tritera` y `candylion` aparecen como alternativas similares en HuggingFace, pero no se ha accedido a sus fichas técnicas para obtener parámetros o resultados.
+Los tres primeros modelos comparten arquitectura y propósito, pero solo se dispone de datos completos para `vit-beans-demo`. Los modelos `tritera` y `candylion` aparecen como alternativas similares en Hugging Face, pero no se ha accedido a sus fichas técnicas para obtener parámetros o resultados.
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ Los tres primeros modelos comparten arquitectura y propósito, pero solo se disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lorenzosperisen/vit-beans-demo
+- Modelo en Hugging Face: https://huggingface.co/lorenzosperisen/vit-beans-demo
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224-in21k
 - Modelo similar (tritera): https://huggingface.co/tritera/vit-base-beans-demo-v5
 - Modelo similar (candylion): https://huggingface.co/candylion/vit-base-beans-demo-v5

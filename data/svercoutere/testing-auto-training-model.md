@@ -88,8 +88,8 @@ No se dispone de datos comparativos verificados en la información proporcionada
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svercoutere/testing-auto-training-model | 124.445.188 | no disponible | Clasificación multietiqueta (4 códigos) | no disponible | HuggingFace |
-| svercoutere/robbert-2023-dutch-base-abb (base) | no disponible | no disponible | Modelo de lenguaje enmascarado (encoder neerlandés) | no disponible | HuggingFace |
+| svercoutere/testing-auto-training-model | 124.445.188 | no disponible | Clasificación multietiqueta (4 códigos) | no disponible | Hugging Face |
+| svercoutere/robbert-2023-dutch-base-abb (base) | no disponible | no disponible | Modelo de lenguaje enmascarado (encoder neerlandés) | no disponible | Hugging Face |
 | Otras alternativas de la misma categoría (encoders neerlandeses ajustados para clasificación) | no disponible | no disponible | Clasificación de texto | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -107,7 +107,7 @@ No se dispone de datos comparativos verificados en la información proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/svercoutere/testing-auto-training-model
+- Modelo en Hugging Face: https://huggingface.co/svercoutere/testing-auto-training-model
 - Modelo base: https://huggingface.co/svercoutere/robbert-2023-dutch-base-abb
 - Fichero de umbrales por etiqueta: `threshold.json`, incluido en el repositorio del modelo
 - La búsqueda web realizada no ha devuelto ningún resultado relevante sobre este modelo: los enlaces recuperados corresponden a sitios de comercio y bolsa de empleo (SHEIN, SHINE, Cambridge Dictionary, Shine.com) sin relación con el modelo. No se han encontrado *papers*, blogs, repositorios ni demos asociados.

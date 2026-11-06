@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-1.5B-Indo-Text2SQL-v2 es un ajuste fino (fine-tuning) del modelo Qwen2.5-Coder-1.5B-Instruct, publicado por el usuario unalivehooman en HuggingFace. El nombre indica que el objetivo del ajuste es la generacion de consultas SQL (Text2SQL) sobre bases de datos en indonesio, aunque la model card no incluye documentacion detallada sobre el dataset de entrenamiento, el proceso de ajuste ni los resultados obtenidos. El modelo se distribuye con licencia Apache 2.0 y un tamano de repositorio de 0,2 GB.
+Qwen2.5-1.5B-Indo-Text2SQL-v2 es un ajuste fino (fine-tuning) del modelo Qwen2.5-Coder-1.5B-Instruct, publicado por el usuario unalivehooman en Hugging Face. El nombre indica que el objetivo del ajuste es la generacion de consultas SQL (Text2SQL) sobre bases de datos en indonesio, aunque la model card no incluye documentacion detallada sobre el dataset de entrenamiento, el proceso de ajuste ni los resultados obtenidos. El modelo se distribuye con licencia Apache 2.0 y un tamano de repositorio de 0,2 GB.
 
 Tecnicamente se trata de un transformer decoder-only de la familia Qwen2, con aproximadamente 1.500 millones de parametros, derivado de un checkpoint cuantizado en 4 bits (bnb-4bit) del modelo base. El ajuste se realizo con la libreria Unsloth, segun indica la propia model card, lo que sugiere un entrenamiento con LoRA/QLoRA orientado a reducir el coste computacional.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| unalivehooman/Qwen2.5-1.5B-Indo-Text2SQL-v2 | ~1.500 M | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Ajuste comunitario sin benchmarks ni dataset documentado |
-| Qwen/Qwen2.5-Coder-1.5B-Instruct | 1.500 M | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con evaluaciones publicadas de codigo |
-| Qwen/Qwen2.5-1.5B-Instruct | 1.500 M | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Variante generalista del mismo tamano |
-| Defog/sqlcoder-7b-2 | 7.000 M | 16.384 tokens | CC BY-SA 4.0 | HuggingFace | Modelo especializado en Text2SQL de mayor tamano, con benchmarks publicados |
+| unalivehooman/Qwen2.5-1.5B-Indo-Text2SQL-v2 | ~1.500 M | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Ajuste comunitario sin benchmarks ni dataset documentado |
+| Qwen/Qwen2.5-Coder-1.5B-Instruct | 1.500 M | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con evaluaciones publicadas de codigo |
+| Qwen/Qwen2.5-1.5B-Instruct | 1.500 M | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Variante generalista del mismo tamano |
+| Defog/sqlcoder-7b-2 | 7.000 M | 16.384 tokens | CC BY-SA 4.0 | Hugging Face | Modelo especializado en Text2SQL de mayor tamano, con benchmarks publicados |
 
 ## Limitaciones y advertencias
 
@@ -79,6 +79,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unalivehooman/Qwen2.5-1.5B-Indo-Text2SQL-v2
+- Modelo en Hugging Face: https://huggingface.co/unalivehooman/Qwen2.5-1.5B-Indo-Text2SQL-v2
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-Coder-1.5B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

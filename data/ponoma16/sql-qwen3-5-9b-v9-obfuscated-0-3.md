@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ponoma16/sql-qwen3.5-9b-v9-obfuscated-0.3` es un modelo publicado en HuggingFace por el usuario ponoma16, con un total de 9.409.813.744 parámetros (aproximadamente 9,4 mil millones) según los pesos en formato safetensors. El nombre sugiere que se trata de un ajuste fino orientado a la generación de SQL, construido presumiblemente sobre la familia Qwen3.5, en su novena revisión (v9) y con algún tipo de transformación etiquetada como "obfuscated". Ninguno de estos extremos está confirmado en la documentación disponible.
+`ponoma16/sql-qwen3.5-9b-v9-obfuscated-0.3` es un modelo publicado en Hugging Face por el usuario ponoma16, con un total de 9.409.813.744 parámetros (aproximadamente 9,4 mil millones) según los pesos en formato safetensors. El nombre sugiere que se trata de un ajuste fino orientado a la generación de SQL, construido presumiblemente sobre la familia Qwen3.5, en su novena revisión (v9) y con algún tipo de transformación etiquetada como "obfuscated". Ninguno de estos extremos está confirmado en la documentación disponible.
 
-La model card publicada por el autor es la plantilla automática de HuggingFace sin rellenar: todos los campos figuran como "[More Information Needed]". No hay información sobre el desarrollador, los datos de entrenamiento, la licencia, los idiomas soportados ni los resultados de evaluación. El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, lo que indica que es una publicación reciente (creada y actualizada el 2026-09-23) y sin adopción conocida.
+La model card publicada por el autor es la plantilla automática de Hugging Face sin rellenar: todos los campos figuran como "[More Information Needed]". No hay información sobre el desarrollador, los datos de entrenamiento, la licencia, los idiomas soportados ni los resultados de evaluación. El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, lo que indica que es una publicación reciente (creada y actualizada el 2026-09-23) y sin adopción conocida.
 
 La relevancia de este modelo es, por tanto, limitada y difícil de valorar: se trata de un artefacto de pesos sin documentación técnica asociada. Las etiquetas del repositorio (`qwen3_5`, `image-text-to-text`, `conversational`) apuntan a un modelo multimodal conversacional, pero no hay evidencia publicada que lo respalde. Cualquier evaluación seria exige reproduce el modelo y auditar los pesos por cuenta propia.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cuantizacion a 8 bits: reduciria el peso a ~9-10 GB, viable en GPU de 16 GB (RTX 4080/4090, A4000).
 - Cuantizacion a 4 bits: reduciria el peso a ~5-6 GB, viable en GPU de 8-12 GB (RTX 3060 12 GB, RTX 4070), siempre que el tokenizer y la arquitectura sean compatibles con las herramientas de cuantizacion.
 - GPU recomendadas: para fp16 sin cuantizar, A100 40 GB, H100 80 GB o A6000 48 GB. En consumer, RTX 4090 24 GB seria el minimo razonable en precision completa; GPUs de 8-16 GB requeririan cuantizacion.
-- Opciones de despliegue: al no haber documentacion, no se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI. La etiqueta `endpoints_compatible` de HuggingFace sugiere que podria servirse mediante Inference Endpoints, pero no se detalla la configuracion.
+- Opciones de despliegue: al no haber documentacion, no se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI. La etiqueta `endpoints_compatible` de Hugging Face sugiere que podria servirse mediante Inference Endpoints, pero no se detalla la configuracion.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No disponible. No se dispone de informacion sobre el modelo base real, la licenc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ponoma16/sql-qwen3.5-9b-v9-obfuscated-0.3
+- Hugging Face: https://huggingface.co/ponoma16/sql-qwen3.5-9b-v9-obfuscated-0.3
 - Paper referenciado en las etiquetas (calculadora de impacto de ML, no especifico del modelo): https://arxiv.org/abs/1910.09700
 - Repositorio, paper o demo del autor: no disponible.
 - No se han encontrado enlaces adicionales relevantes en la busqueda web.

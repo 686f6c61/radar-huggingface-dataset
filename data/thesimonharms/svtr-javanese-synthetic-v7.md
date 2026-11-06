@@ -89,7 +89,7 @@ No se han encontrado otros modelos públicos específicos para aksara javanés e
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/thesimonharms/svtr-javanese-synthetic-v7
+- Hugging Face del modelo: https://huggingface.co/thesimonharms/svtr-javanese-synthetic-v7
 - Dataset de entrenamiento: https://huggingface.co/datasets/thesimonharms/javanese-synthetic-long
 - Modelo v6 (TrOCR para líneas cortas): https://huggingface.co/thesimonharms/trocr-javanese-synthetic-v6
 - Paper SVTRv2 (Du et al., ICCV 2025): https://arxiv.org/abs/2411.15858

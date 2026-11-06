@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SAFE-LSTM es una sonda de detección de fallos para políticas robóticas VLA (vision-language-action), publicada por el usuario de HuggingFace `podolinsky`. No es un modelo generativo ni una política de control: es un clasificador binario por paso que consume características ya extraídas y congeladas del backbone GR00T-N1.7 y emite una probabilidad de fallo en cada paso de la política. Con 6.555.905 parámetros, es un componente auxiliar minúsculo que se acopla a un sistema mayor.
+SAFE-LSTM es una sonda de detección de fallos para políticas robóticas VLA (vision-language-action), publicada por el usuario de Hugging Face `podolinsky`. No es un modelo generativo ni una política de control: es un clasificador binario por paso que consume características ya extraídas y congeladas del backbone GR00T-N1.7 y emite una probabilidad de fallo en cada paso de la política. Con 6.555.905 parámetros, es un componente auxiliar minúsculo que se acopla a un sistema mayor.
 
 El modelo se entrenó sobre el benchmark LIBERO-10 (split de paper, semilla 0) con datos de ocupación añadidos. Su innovación no está en la arquitectura, deliberadamente simple, sino en el mecanismo de decisión: en lugar de un umbral fijo, emplea una banda conformal funcional de SAFE con una tasa de falsa alarma objetivo (`alpha`) configurable. Esto permite calibrar el compromiso entre sensibilidad y falsas alarmas de forma explícita, algo relevante en robótica, donde un falso positivo implica paradas innecesarias y un falso negativo implica un fallo no detectado.
 
@@ -80,7 +80,7 @@ No se dispone de datos de modelos alternativos en la información proporcionada.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| podolinsky/groot-libero-10-probe-safe-lstm | 6.555.905 | secuencia de pasos de política | TPR 79,0 en tareas vistas / 61,4 en no vistas | other | HuggingFace, 0 descargas |
+| podolinsky/groot-libero-10-probe-safe-lstm | 6.555.905 | secuencia de pasos de política | TPR 79,0 en tareas vistas / 61,4 en no vistas | other | Hugging Face, 0 descargas |
 | Alternativas de detección de fallos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,6 +100,6 @@ No se dispone de datos de modelos alternativos en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/podolinsky/groot-libero-10-probe-safe-lstm
+- Modelo en Hugging Face: https://huggingface.co/podolinsky/groot-libero-10-probe-safe-lstm
 - Archivos relevantes dentro del repositorio: `model.safetensors`, `config.json`, `normalization.npz`, `thresholds.json`, `eval_task_split.json`, `EVAL.md` (tabla completa por `alpha`), `models.py`, `probe.py`.
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada. Los resultados devueltos por la búsqueda no guardan relación con este modelo.

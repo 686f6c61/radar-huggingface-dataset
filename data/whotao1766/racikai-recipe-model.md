@@ -2,7 +2,7 @@
 
 ## Resumen
 
-racikai-recipe-model es un modelo de embeddings de frases (sentence-transformers) publicado por el usuario whotao1766 en HuggingFace, obtenido mediante fine-tuning del modelo multilingue intfloat/multilingual-e5-base. Su funcion es generar representaciones vectoriales densas de textos para tareas de similitud semantica y recuperacion de informacion (retrieval), con un enfasis claro en el dominio culinario: las consultas y pasajes de ejemplo que acompanan a la model card son recetas de cocina y consultas sobre ingredientes.
+racikai-recipe-model es un modelo de embeddings de frases (sentence-transformers) publicado por el usuario whotao1766 en Hugging Face, obtenido mediante fine-tuning del modelo multilingue intfloat/multilingual-e5-base. Su funcion es generar representaciones vectoriales densas de textos para tareas de similitud semantica y recuperacion de informacion (retrieval), con un enfasis claro en el dominio culinario: las consultas y pasajes de ejemplo que acompanan a la model card son recetas de cocina y consultas sobre ingredientes.
 
 El modelo se ha entrenado con la libreria sentence-transformers y la funcion de perdida MultipleNegativesRankingLoss sobre un conjunto de datos de 4000 ejemplos, segun los metadatos declarados por el autor. El pipeline registrado es sentence-similarity / feature-extraction, con etiquetas que indican compatibilidad con text-embeddings-inference y endpoints. El repositorio ocupa 0,3 GB y los pesos estan en formato safetensors.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con aproximadamente 278 M de parametros en el modelo base, el peso en fp32 ronda 1,1 GB, en fp16 unos 550 MB y en int8 unos 280 MB, mas el overhead de activaciones y del tokenizador.
 - Cabe holgadamente en GPU de consumo: RTX 3060 12 GB, RTX 4060, RTX 4090, e incluso en GPUs con 4-6 GB. Tambien es viable en CPU para cargas moderadas.
 - GPU recomendadas para produccion: NVIDIA T4 o L4 para servicios de embeddings a bajo coste, A10G o A100/H100 para indexados masivos o alto throughput.
-- Opciones de despliegue: sentence-transformers (referencia), text-embeddings-inference (declarado en las etiquetas), HuggingFace Inference Endpoints (etiqueta endpoints_compatible) y servidores propios con FastAPI o similares. No se declaran variantes GGUF, por lo que llama.cpp y Ollama no estan soportados de forma directa.
+- Opciones de despliegue: sentence-transformers (referencia), text-embeddings-inference (declarado en las etiquetas), Hugging Face Inference Endpoints (etiqueta endpoints_compatible) y servidores propios con FastAPI o similares. No se declaran variantes GGUF, por lo que llama.cpp y Ollama no estan soportados de forma directa.
 - Latencia y throughput: no disponibles. Como referencia orientativa del orden de magnitud para un encoder de ~278 M de parametros, en GPU moderna se suelen alcanzar cientos de frases por segundo en lotes pequenos, pero no hay medicion publicada para este modelo concreto.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ La comparacion es desigual por diseno: racikai-recipe-model es un fine-tuning de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/whotao1766/racikai-recipe-model
+- Modelo en Hugging Face: https://huggingface.co/whotao1766/racikai-recipe-model
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-base
 - Paper de Sentence-BERT: https://arxiv.org/abs/1908.10084
 - Paper de Representation Learning with Contrastive Predictive Coding: https://arxiv.org/abs/1807.03748

@@ -74,9 +74,9 @@ El autor documenta ademas una comparacion cualitativa en tareas de formato: ante
 
 | Modelo | Parametros | Contexto | eval_loss reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cultist-simulator-qwen3-0.6b | 596 M | No disponible (truncado de entrenamiento a 896) | 2.406 | Apache-2.0 con restriccion de uso no comercial solicitada por el autor | HuggingFace, modelo fusionado + LoRA + Modelfile |
-| cultist-simulator-qwen3-4b | No disponible en la informacion | No disponible | 1.949 | No disponible en la informacion | HuggingFace (mismo autor) |
-| Qwen/Qwen3-0.6B (base) | 0,6B | 32.768 tokens segun el modelo base | No aplica (modelo generalista, sin ajuste de dominio) | Apache-2.0 | HuggingFace |
+| cultist-simulator-qwen3-0.6b | 596 M | No disponible (truncado de entrenamiento a 896) | 2.406 | Apache-2.0 con restriccion de uso no comercial solicitada por el autor | Hugging Face, modelo fusionado + LoRA + Modelfile |
+| cultist-simulator-qwen3-4b | No disponible en la informacion | No disponible | 1.949 | No disponible en la informacion | Hugging Face (mismo autor) |
+| Qwen/Qwen3-0.6B (base) | 0,6B | 32.768 tokens segun el modelo base | No aplica (modelo generalista, sin ajuste de dominio) | Apache-2.0 | Hugging Face |
 
 La comparacion mas directa es con la variante de 4B del mismo autor, que obtiene mejor perdida de validacion (1.949 frente a 2.406) y conserva correctamente el marcado HTML en las tareas de traduccion, a cambio de un mayor coste de inferencia. Frente al Qwen3-0.6B original, este ajuste sacrifica capacidades generales para especializarse en un unico registro literario y en dos idiomas.
 
@@ -94,7 +94,7 @@ La comparacion mas directa es con la variante de 4B del mismo autor, que obtiene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cecilis/cultist-simulator-qwen3-0.6b
+- Modelo en Hugging Face: https://huggingface.co/Cecilis/cultist-simulator-qwen3-0.6b
 - Variante de 4B del mismo autor: https://huggingface.co/Cecilis/cultist-simulator-qwen3-4b
 - Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio de codigo, extraccion de datos y scripts de entrenamiento: https://github.com/alice-kroi/cultist-llm

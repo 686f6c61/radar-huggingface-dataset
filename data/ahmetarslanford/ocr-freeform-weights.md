@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AhmetArslanford/ocr-freeform-weights` no es un modelo entrenado, sino un repositorio de notas de investigación sobre "OCR Freeform" publicado por el usuario AhmetArslanford en HuggingFace. La propia model card lo declara de forma explícita: "no se presenta como un artículo completado ni como el lanzamiento de modelos entrenados". El artefacto principal es un fichero `review.md` que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación; no hay código, no hay checkpoint funcional y no se han publicado resultados.
+`AhmetArslanford/ocr-freeform-weights` no es un modelo entrenado, sino un repositorio de notas de investigación sobre "OCR Freeform" publicado por el usuario AhmetArslanford en Hugging Face. La propia model card lo declara de forma explícita: "no se presenta como un artículo completado ni como el lanzamiento de modelos entrenados". El artefacto principal es un fichero `review.md` que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación; no hay código, no hay checkpoint funcional y no se han publicado resultados.
 
 El recuento de parámetros que reporta el Hub a partir de los tensores en safetensors es de aproximadamente 33 088 parámetros, un orden de magnitud compatible con un fichero de prueba o un tensor auxiliar, no con un modelo de lenguaje o de visión utilizable. El tamaño del repositorio es de 0,0 GB y las métricas de uso son marginales (11 descargas, 0 likes) desde su creación el 20 de octubre de 2026.
 
@@ -90,7 +90,7 @@ La comparación se establece por categoría de tarea (OCR y document AI con peso
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AhmetArslanford/ocr-freeform-weights
+- Repositorio en Hugging Face: https://huggingface.co/AhmetArslanford/ocr-freeform-weights
 - Perfil del autor: https://huggingface.co/AhmetArslanford
 - Listado de recursos OCR (awesome-ocr-resources, actualización 2026-10-13): https://github.com/ZumingHuang/awesome-ocr-resources/blob/master/updates/2026/2026-10-13.md
 - Directorio de modelos open source y open weights: https://github.com/zidniryi/open-source-ai-models

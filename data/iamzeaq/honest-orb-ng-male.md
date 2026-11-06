@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`iamzeaq/honest-orb-ng-male` es un modelo de síntesis de voz (text-to-audio) publicado en HuggingFace por el usuario iamzeaq. Según los metadatos del repositorio, utiliza la arquitectura VITS (Variational Inference with adversarial learning for end-to-end Text-to-Speech), una familia de modelos generativos diseñada para convertir texto en waveform de audio de forma extremo a extremo. El nombre del repositorio sugiere una voz masculina, presumiblemente en inglés nigeriano ("ng"), aunque esta información no está confirmada en la model card.
+`iamzeaq/honest-orb-ng-male` es un modelo de síntesis de voz (text-to-audio) publicado en Hugging Face por el usuario iamzeaq. Según los metadatos del repositorio, utiliza la arquitectura VITS (Variational Inference with adversarial learning for end-to-end Text-to-Speech), una familia de modelos generativos diseñada para convertir texto en waveform de audio de forma extremo a extremo. El nombre del repositorio sugiere una voz masculina, presumiblemente en inglés nigeriano ("ng"), aunque esta información no está confirmada en la model card.
 
-El modelo cuenta con 36.284.592 parámetros (aproximadamente 36,3 millones) y un tamaño de repositorio de 0,1 GB, lo que lo sitúa en la categoría de modelos TTS ligeros, aptos para inferencia en CPU o GPU de gama baja. La model card es la plantilla automática de HuggingFace y no contiene información sustantiva sobre entrenamiento, datos, licencia, idiomas o evaluación.
+El modelo cuenta con 36.284.592 parámetros (aproximadamente 36,3 millones) y un tamaño de repositorio de 0,1 GB, lo que lo sitúa en la categoría de modelos TTS ligeros, aptos para inferencia en CPU o GPU de gama baja. La model card es la plantilla automática de Hugging Face y no contiene información sustantiva sobre entrenamiento, datos, licencia, idiomas o evaluación.
 
 La relevancia de este modelo es limitada en el momento de redactar esta ficha: registra cero descargas y cero "likes", no tiene licencia declarada y carece de documentación técnica. Se trata, por tanto, de un checkpoint de investigación o experimento personal sin validación pública, que debe evaluarse con cautela antes de cualquier uso en producción.
 
@@ -47,7 +47,7 @@ No se dispone de información sobre el conjunto de datos de entrenamiento, el n�
 - Generación de locuciones para prototipos de asistentes de voz: el modelo puede sintetizar frases cortas en un pipeline `text-to-audio` de `transformers`, útil para validar la integración de TTS en una aplicación antes de elegir un modelo con licencia clara.
 - Pruebas de concepto de audiolibros o podcasts automatizados: su tamaño reducido (0,1 GB) permite iterar rápidamente en local, aunque la calidad y el idioma deben verificarse empíricamente antes de usarlo en contenido publicado.
 - Investigación sobre arquitecturas VITS: sirve como checkpoint de referencia para estudiar el comportamiento de un VITS de ~36 M de parámetros y comparar con implementaciones oficiales.
-- Evaluación de pipelines de HuggingFace `text-to-audio`: útil para probar la compatibilidad de la librería `transformers` con checkpoints VITS de terceros.
+- Evaluación de pipelines de Hugging Face `text-to-audio`: útil para probar la compatibilidad de la librería `transformers` con checkpoints VITS de terceros.
 - Generación de voces para entornos de baja latencia en CPU: por su tamaño, puede ejecutarse en hardware modesto, aunque no hay datos de rendimiento publicados que lo confirmen.
 - Fine-tuning experimental sobre un corpus propio: al ser un checkpoint pequeño, es candidato para adaptación a un dominio o hablante concreto, siempre que se aclare primero la licencia.
 
@@ -60,17 +60,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible en la información proporcionada. Por el tamaño del checkpoint (0,1 GB, ~36 M de parámetros), es razonable esperar que quepa en cualquier GPU consumer, pero no hay mediciones publicadas.
 - GPU recomendadas: no disponibles. Un modelo de este tamaño podría ejecutarse en CPU, aunque no se ha documentado latencia ni throughput.
 - ¿Cabe en GPU consumer? Probablemente sí en cualquier GPU moderna con al menos 1-2 GB de VRAM libre, pero es una estimación basada en el tamaño del checkpoint, no en pruebas documentadas.
-- Opciones de despliegue: `transformers` (pipeline `text-to-audio`), endpoints de HuggingFace. No se ha confirmado compatibilidad con vLLM, llama.cpp, Ollama o TGI (estas herramientas no soportan VITS de forma nativa).
+- Opciones de despliegue: `transformers` (pipeline `text-to-audio`), endpoints de Hugging Face. No se ha confirmado compatibilidad con vLLM, llama.cpp, Ollama o TGI (estas herramientas no soportan VITS de forma nativa).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Arquitectura | Parámetros | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `iamzeaq/honest-orb-ng-male` | VITS | 36,3 M | no disponible | HuggingFace, 0 descargas | Sin documentación ni evaluación |
+| `iamzeaq/honest-orb-ng-male` | VITS | 36,3 M | no disponible | Hugging Face, 0 descargas | Sin documentación ni evaluación |
 | VITS oficial (jaywalnut310/vits) | VITS | ~30-40 M según config | MIT | GitHub + checkpoints | Implementación de referencia del paper, ampliamente validada |
-| Coqui TTS (modelos VITS) | VITS | variable | MPL-2.0 / varias | Coqui + HuggingFace | Framework con modelos preentrenados multilingües y documentación |
-| Piper (rhasspy/piper) | VITS | variable | MIT | GitHub + HuggingFace | Enfocado a TTS ligero en dispositivos de borde, con voces documentadas |
+| Coqui TTS (modelos VITS) | VITS | variable | MPL-2.0 / varias | Coqui + Hugging Face | Framework con modelos preentrenados multilingües y documentación |
+| Piper (rhasspy/piper) | VITS | variable | MIT | GitHub + Hugging Face | Enfocado a TTS ligero en dispositivos de borde, con voces documentadas |
 
 La comparación se basa en la arquitectura declarada; no se dispone de métricas de calidad (MOS, WER) para este checkpoint que permitan una comparación cuantitativa.
 
@@ -87,7 +87,7 @@ La comparación se basa en la arquitectura declarada; no se dispone de métricas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iamzeaq/honest-orb-ng-male
+- Hugging Face: https://huggingface.co/iamzeaq/honest-orb-ng-male
 - Paper de VITS: https://arxiv.org/abs/1910.09700
 - Implementación de referencia de VITS: https://github.com/jaywalnut310/vits
 - Coqui TTS: https://github.com/coqui-ai/TTS

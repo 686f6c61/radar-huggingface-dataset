@@ -79,11 +79,11 @@ void.1 lidera HellaSwag, PIQA, ARC-C y ArithMark-3 entre los modelos listados, y
 
 | Modelo | Parámetros | Licencia | Contexto | Idiomas | Disponibilidad | Intelligence Index |
 |---|---|---|---|---|---|---|
-| void.1 (dotlabs) | 90,15 M | Apache 2.0 | No disponible | Inglés | HuggingFace, `transformers` | 23,92 |
-| 100M-exp (User01110) | 98,16 M | No disponible en la información | No disponible | No disponible | HuggingFace | 22,47 |
-| Rose-1.5-Medium (GODELEV) | 98,28 M | No disponible en la información | No disponible | No disponible | HuggingFace | 21,07 |
-| tinctura-v1 (bench-labs) | 96,2 M | No disponible en la información | No disponible | No disponible | HuggingFace | 20,81 |
-| Surjo-100m (SurjoLabs) | 97,7 M | No disponible en la información | No disponible | No disponible | HuggingFace | 18,86 |
+| void.1 (dotlabs) | 90,15 M | Apache 2.0 | No disponible | Inglés | Hugging Face, `transformers` | 23,92 |
+| 100M-exp (User01110) | 98,16 M | No disponible en la información | No disponible | No disponible | Hugging Face | 22,47 |
+| Rose-1.5-Medium (GODELEV) | 98,28 M | No disponible en la información | No disponible | No disponible | Hugging Face | 21,07 |
+| tinctura-v1 (bench-labs) | 96,2 M | No disponible en la información | No disponible | No disponible | Hugging Face | 20,81 |
+| Surjo-100m (SurjoLabs) | 97,7 M | No disponible en la información | No disponible | No disponible | Hugging Face | 18,86 |
 
 La comparativa se limita a los datos que el propio autor incluye en la model card. No hay información pública en la documentación consultada sobre contexto, licencia o idiomas de los modelos alternativos más allá de su recuento de parámetros y sus puntuaciones.
 
@@ -102,7 +102,7 @@ La comparativa se limita a los datos que el propio autor incluye en la model car
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dotlabs/void.1
+- Modelo en Hugging Face: https://huggingface.co/dotlabs/void.1
 - Open SLM Leaderboard: https://huggingface.co/spaces/AxiomicLabs/Open_SLM_Leaderboard
 - Notebook de evaluaciones e inferencia: https://huggingface.co/dotlabs/void.1/blob/main/evals.ipynb
 - Configuración de entrenamiento: https://huggingface.co/dotlabs/void.1/blob/main/training_config.json
@@ -113,4 +113,4 @@ La comparativa se limita a los datos que el propio autor incluye en la model car
 - Dataset nvidia/OpenMathInstruct-2: https://huggingface.co/datasets/nvidia/OpenMathInstruct-2
 - Modelos comparados: https://huggingface.co/User01110/100M-exp , https://huggingface.co/GODELEV/Rose-1.5-Medium , https://huggingface.co/bench-labs/tinctura-v1 , https://huggingface.co/SurjoLabs/Surjo-100m
 
-Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre el modelo. Todos los enlaces anteriores proceden de la información de HuggingFace y de la model card del autor.
+Nota: la búsqueda web realizada no devolvió ningún resultado relevante sobre el modelo. Todos los enlaces anteriores proceden de la información de Hugging Face y de la model card del autor.

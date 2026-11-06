@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`indoor-outdoor-distilbert` es un ajuste fino de `distilbert-base-uncased` sobre la tarea de clasificación binaria de descripciones cortas de lugares en dos clases: `indoor` (interior) y `outdoor` (exterior). Lo publica el usuario de HuggingFace `sunkaiwen` como entrega de la tarea 2 de la asignatura 24-679 *Designing with AI*, y no como un modelo destinado a producción: la propia model card declara que el uso previsto es académico y que cualquier uso real queda fuera de alcance.
+`indoor-outdoor-distilbert` es un ajuste fino de `distilbert-base-uncased` sobre la tarea de clasificación binaria de descripciones cortas de lugares en dos clases: `indoor` (interior) y `outdoor` (exterior). Lo publica el usuario de Hugging Face `sunkaiwen` como entrega de la tarea 2 de la asignatura 24-679 *Designing with AI*, y no como un modelo destinado a producción: la propia model card declara que el uso previsto es académico y que cualquier uso real queda fuera de alcance.
 
 El modelo se entrenó con AutoGluon `MultiModalPredictor` 1.6.3 sobre el dataset `srivathsanb14/indoor-outdoor-text`, con 1072 filas de entrenamiento, 16 de validación y 15 de test. El autor comparó tres configuraciones de `optim.peft` (`bit_fit`, `norm_fit` y ajuste completo) y seleccionó `bit_fit`, que solo actualiza los términos de sesgo del encoder y deja congeladas las matrices de pesos principales. El ajuste completo con 1 epoch tardó 30 segundos en una Tesla T4.
 
@@ -89,9 +89,9 @@ No se han publicado evaluaciones comparativas en esta tarea con otros modelos, y
 
 | Modelo | Parametros | Contexto max. | Licencia | Rendimiento en indoor/outdoor | Disponibilidad |
 |---|---|---|---|---|---|
-| `sunkaiwen/indoor-outdoor-distilbert` | ~66 M | 128 tokens en ajuste | CC-BY-4.0 | 0,933 accuracy / 0,933 macro-F1 (n=15) | HuggingFace, 17 descargas |
-| `distilbert-base-uncased` sin ajustar | ~66 M | 512 tokens | Apache-2.0 | No evaluado en esta tarea | HuggingFace |
-| `bert-base-uncased` con ajuste completo | ~110 M | 512 tokens | Apache-2.0 | No evaluado en esta tarea | HuggingFace |
+| `sunkaiwen/indoor-outdoor-distilbert` | ~66 M | 128 tokens en ajuste | CC-BY-4.0 | 0,933 accuracy / 0,933 macro-F1 (n=15) | Hugging Face, 17 descargas |
+| `distilbert-base-uncased` sin ajustar | ~66 M | 512 tokens | Apache-2.0 | No evaluado en esta tarea | Hugging Face |
+| `bert-base-uncased` con ajuste completo | ~110 M | 512 tokens | Apache-2.0 | No evaluado en esta tarea | Hugging Face |
 | Comparación con prompting sobre un LLM | No disponible | No disponible | No disponible | No disponible: el autor menciona que el trabajo es la mitad de ajuste de una comparación ajuste frente a prompting, pero no publica los resultados del brazo de prompting | No disponible |
 
 ## Limitaciones y advertencias
@@ -109,7 +109,7 @@ No se han publicado evaluaciones comparativas en esta tarea con otros modelos, y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sunkaiwen/indoor-outdoor-distilbert
+- Modelo en Hugging Face: https://huggingface.co/sunkaiwen/indoor-outdoor-distilbert
 - Dataset de origen: https://huggingface.co/datasets/srivathsanb14/indoor-outdoor-text
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Documentación de AutoGluon MultiModalPredictor: https://auto.gluon.ai

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ItsVej/pea-1 es un modelo de 1.881.827.136 parámetros (aproximadamente 1,88 mil millones) publicado en HuggingFace por el usuario ItsVej y etiquetado con el pipeline `text-classification`. La etiqueta de arquitectura `qwen3_5_text` indica que deriva de la familia Qwen 3.5 en su variante exclusivamente de texto, reutilizada aquí para una tarea discriminativa de clasificación en lugar de generación abierta. El repositorio contiene pesos en formato `safetensors` con un tamaño total de 7,6 GB, lo que es coherente con un almacenamiento en precisión FP32 de esos 1,88B de parámetros.
+ItsVej/pea-1 es un modelo de 1.881.827.136 parámetros (aproximadamente 1,88 mil millones) publicado en Hugging Face por el usuario ItsVej y etiquetado con el pipeline `text-classification`. La etiqueta de arquitectura `qwen3_5_text` indica que deriva de la familia Qwen 3.5 en su variante exclusivamente de texto, reutilizada aquí para una tarea discriminativa de clasificación en lugar de generación abierta. El repositorio contiene pesos en formato `safetensors` con un tamaño total de 7,6 GB, lo que es coherente con un almacenamiento en precisión FP32 de esos 1,88B de parámetros.
 
 El modelo resuelve, según los metadatos disponibles, la asignación de etiquetas a textos en inglés (`en` es el único idioma declarado). No se documentan en la información proporcionada ni el conjunto de etiquetas, ni el corpus de entrenamiento, ni métricas de evaluación, ni la longitud de contexto soportada, por lo que cualquier evaluación de idoneidad para producción debe hacerse mediante pruebas propias sobre el dominio objetivo antes de adoptarlo.
 
-Su relevancia actual es limitada pero concreta: se trata de un encoder/decoder de tamaño medio (1,88B) con licencia Apache 2.0, lo que permite uso comercial sin restricciones de licencia, si bien el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace. Al no existir descargas ni valoraciones ni benchmarks publicados en el momento de redactar esta ficha, debe considerarse un artefacto en fase temprana y sin validación externa conocida.
+Su relevancia actual es limitada pero concreta: se trata de un encoder/decoder de tamaño medio (1,88B) con licencia Apache 2.0, lo que permite uso comercial sin restricciones de licencia, si bien el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face. Al no existir descargas ni valoraciones ni benchmarks publicados en el momento de redactar esta ficha, debe considerarse un artefacto en fase temprana y sin validación externa conocida.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada pero concreta: se trata de un encoder/decoder d
 | Licencia | Apache 2.0 |
 | Formato de pesos | `safetensors` (tamaño de repo 7,6 GB, consistente con FP32) |
 | Pipeline declarado | `text-classification` |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 | Fecha de creación / actualización | 2026-10-18 / 2026-10-18 |
 
@@ -77,10 +77,10 @@ No constan evaluaciones en MMLU, HumanEval, GSM8K, GLUE, SuperGLUE ni en ningún
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento en clasificación |
 |---|---|---|---|---|---|
-| ItsVej/pea-1 | 1,88B | no disponible | Apache 2.0 | gated en HuggingFace | no disponible |
-| Qwen3-1.7B | 1,7B | 32k tokens (nativo) | Apache 2.0 | abierto en HuggingFace | no disponible como clasificador sin ajuste |
+| ItsVej/pea-1 | 1,88B | no disponible | Apache 2.0 | gated en Hugging Face | no disponible |
+| Qwen3-1.7B | 1,7B | 32k tokens (nativo) | Apache 2.0 | abierto en Hugging Face | no disponible como clasificador sin ajuste |
 | Llama 3.2 1B | 1,24B | 128k tokens | Llama 3.2 Community License | abierto (con aceptación) | no disponible como clasificador sin ajuste |
-| DeBERTa-v3-large | ~435M | 512 tokens | MIT | abierto en HuggingFace | referencia habitual en clasificación; métricas no verificadas contra este modelo |
+| DeBERTa-v3-large | ~435M | 512 tokens | MIT | abierto en Hugging Face | referencia habitual en clasificación; métricas no verificadas contra este modelo |
 
 Los datos de contexto y licencia de los modelos comparativos provienen de sus fichas públicas y no se han verificado contra resultados experimentales de pea-1. La comparación de rendimiento no es posible porque pea-1 no publica métricas.
 
@@ -97,6 +97,6 @@ Los datos de contexto y licencia de los modelos comparativos provienen de sus fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ItsVej/pea-1
+- Modelo en Hugging Face: https://huggingface.co/ItsVej/pea-1
 
 No se han encontrado en la información disponible papers, blogs técnicos, repositorios de código ni demos asociados al modelo.

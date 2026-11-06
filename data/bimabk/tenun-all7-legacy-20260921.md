@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`bimabk/tenun-all7-legacy-20260921` es un adaptador LoRA (PEFT) para generación de texto, publicado por el usuario bimabk en HuggingFace. No se trata de un modelo completo: el repositorio contiene unicamente los pesos del adaptador en formato safetensors, que deben aplicarse sobre el modelo base `bimabk/tenun-fs0807-parent-20260921`. El repositorio ocupa 1.0 GB y la libreria declarada es PEFT 0.19.1, con las etiquetas `lora`, `sft`, `transformers` y `trl`, lo que indica que fue entrenado mediante ajuste supervisado (SFT) sobre el modelo padre.
+`bimabk/tenun-all7-legacy-20260921` es un adaptador LoRA (PEFT) para generación de texto, publicado por el usuario bimabk en Hugging Face. No se trata de un modelo completo: el repositorio contiene unicamente los pesos del adaptador en formato safetensors, que deben aplicarse sobre el modelo base `bimabk/tenun-fs0807-parent-20260921`. El repositorio ocupa 1.0 GB y la libreria declarada es PEFT 0.19.1, con las etiquetas `lora`, `sft`, `transformers` y `trl`, lo que indica que fue entrenado mediante ajuste supervisado (SFT) sobre el modelo padre.
 
-La model card publicada por el autor es la plantilla por defecto de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y resultados de evaluacion) aparecen como "[More Information Needed]". Esto significa que no hay informacion verificable sobre el numero de parametros, la longitud de contexto, la composicion del dataset de ajuste ni el regimen de entrenamiento (precision, numero de pasos, hardware).
+La model card publicada por el autor es la plantilla por defecto de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y resultados de evaluacion) aparecen como "[More Information Needed]". Esto significa que no hay informacion verificable sobre el numero de parametros, la longitud de contexto, la composicion del dataset de ajuste ni el regimen de entrenamiento (precision, numero de pasos, hardware).
 
 El interes practico del artefacto es limitado y muy condicionado: solo es util si se dispone del modelo base exacto al que esta vinculado, y su utilidad real depende de las capacidades de ese modelo padre, que tampoco esta documentado en la informacion disponible. La nomenclatura "all7" y "legacy" junto a la fecha 20260921 sugiere una version dentro de una serie de checkpoints fechados, pero esto es una inferencia a partir del nombre, no un dato confirmado.
 
@@ -86,7 +86,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bimabk/tenun-all7-legacy-20260921
+- Modelo en Hugging Face: https://huggingface.co/bimabk/tenun-all7-legacy-20260921
 - Modelo base declarado: https://huggingface.co/bimabk/tenun-fs0807-parent-20260921
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL: https://github.com/huggingface/trl

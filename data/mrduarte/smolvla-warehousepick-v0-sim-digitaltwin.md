@@ -78,7 +78,7 @@ No se dispone de información suficiente en la búsqueda para comparar este chec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MrDuarte/smolvla-WarehousePick-v0-Sim-DigitalTwin
+- Repositorio en Hugging Face: https://huggingface.co/MrDuarte/smolvla-WarehousePick-v0-Sim-DigitalTwin
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/MrDuarte/WarehousePick-v0-Sim-DigitalTwin

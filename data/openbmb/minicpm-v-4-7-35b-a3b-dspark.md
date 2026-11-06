@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks de calidad para este checkpoint en 
 
 | Metodo / modelo | Tipo | Parametros del borrador | Tokens propuestos por paso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DSpark (este checkpoint) | Borrador especulativo sobre estados ocultos | 389.223.169 | 15 | Apache 2.0 | HuggingFace, integrado en vLLM |
+| DSpark (este checkpoint) | Borrador especulativo sobre estados ocultos | 389.223.169 | 15 | Apache 2.0 | Hugging Face, integrado en vLLM |
 | EAGLE-3 | Borrador especulativo con feature fusion | No disponible | No disponible | No disponible | No disponible |
 | Medusa | Cabezales de decodificacion multiples | No disponible | No disponible | No disponible | No disponible |
 | Decodificacion especulativa clasica con modelo draft | Modelo auxiliar independiente | No disponible | No disponible | No disponible | No disponible |
@@ -102,7 +102,7 @@ No se dispone de datos comparativos de rendimiento entre DSpark y EAGLE-3 o Medu
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-DSpark
+- Checkpoint en Hugging Face: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-DSpark
 - Modelo objetivo MiniCPM-V-4.7-35B-A3B: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - Paper de DSpark: https://arxiv.org/abs/2607.05147
 - Resultados de busqueda web: no se han encontrado enlaces adicionales relevantes sobre este modelo.

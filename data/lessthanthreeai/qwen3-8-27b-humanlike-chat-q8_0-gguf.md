@@ -70,9 +70,9 @@ No se dispone de datos suficientes para realizar una comparativa cuantitativa co
 
 ## Enlaces
 
-- [HuggingFace - LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat-Q8_0-GGUF](https://huggingface.co/LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat-Q8_0-GGUF)
-- [HuggingFace - LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat-GGUF](https://huggingface.co/LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat-GGUF)
-- [HuggingFace - Qwen/Qwen3.8-27B (modelo base)](https://huggingface.co/Qwen/Qwen3.8-27B)
+- [Hugging Face - LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat-Q8_0-GGUF](https://huggingface.co/LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat-Q8_0-GGUF)
+- [Hugging Face - LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat-GGUF](https://huggingface.co/LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat-GGUF)
+- [Hugging Face - Qwen/Qwen3.8-27B (modelo base)](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [GitHub - AlibabaCloud-Official/Qwen3.8-27B](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [GitHub - QwenLM/Qwen3.8 (serie completa)](https://github.com/QwenLM/Qwen3.8)
 - [vLLM Recipes - Qwen/Qwen3.8-27B](https://recipes.vllm.ai/Qwen/Qwen3.8-27B)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/iris-dune-89` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `models4world` en HuggingFace. Está diseñado para la generación de texto conversacional y se presenta como un ajuste fino (fine-tuning) sobre un modelo base denominado `models4world/maple-signal-64`. El repositorio tiene un tamaño de 1,9 GB y utiliza el formato `safetensors` para los pesos, lo que sugiere que se trata de un adaptador de tamaño moderado.
+El modelo `models4world/iris-dune-89` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `models4world` en Hugging Face. Está diseñado para la generación de texto conversacional y se presenta como un ajuste fino (fine-tuning) sobre un modelo base denominado `models4world/maple-signal-64`. El repositorio tiene un tamaño de 1,9 GB y utiliza el formato `safetensors` para los pesos, lo que sugiere que se trata de un adaptador de tamaño moderado.
 
 La información pública disponible es extremadamente limitada: la model card no especifica arquitectura, número de parámetros, contexto, idiomas ni licencia. Tampoco se han publicado resultados de benchmarks ni detalles sobre el proceso de entrenamiento. Esto hace que el modelo sea difícil de evaluar para su uso en producción, y cualquier afirmación sobre sus capacidades debe tomarse con cautela.
 
@@ -57,4 +57,4 @@ No disponible. No se conocen modelos comparables de la misma categoría ni se di
 
 ## Enlaces
 
-- [HuggingFace: models4world/iris-dune-89](https://huggingface.co/models4world/iris-dune-89)
+- [Hugging Face: models4world/iris-dune-89](https://huggingface.co/models4world/iris-dune-89)

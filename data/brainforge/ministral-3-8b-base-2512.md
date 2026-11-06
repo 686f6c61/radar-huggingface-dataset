@@ -83,7 +83,7 @@ La comparación directa no es posible al ser modelos de naturaleza distinta (bas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BrainForge/Ministral-3-8B-Base-2512
+- Hugging Face: https://huggingface.co/BrainForge/Ministral-3-8B-Base-2512
 - Modelo original de Mistral AI: https://huggingface.co/mistralai/Ministral-3-8B-Base-2512
 - Documentación oficial: https://docs.mistral.ai/models/ministral-3-8b-25-12
 - Blog de anuncio: https://mistral.ai/news/mistral-3

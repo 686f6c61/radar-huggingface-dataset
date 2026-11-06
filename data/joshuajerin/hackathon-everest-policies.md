@@ -70,5 +70,5 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (po
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshuajerin/hackathon-everest-policies
+- Hugging Face: https://huggingface.co/joshuajerin/hackathon-everest-policies
 - Repositorio de codigo fuente: https://github.com/joshuajerin/hackathon-everest

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-r1lite-ee-no_aux-150k es un ajuste fino del modelo robótico nvidia/GR00T-N1.7-3B publicado por el usuario XYZPIT en HuggingFace. Se trata de una política de tipo vision-language-action (VLA) orientada al control de efector final (end-effector) del robot R1 Lite, con 3.144.016.000 parámetros totales almacenados en safetensors y un repositorio de 12,6 GB. El checkpoint corresponde al paso de entrenamiento 150.000 y se distribuye junto con los artefactos de procesador necesarios para su ejecución.
+r1lite-ee-no_aux-150k es un ajuste fino del modelo robótico nvidia/GR00T-N1.7-3B publicado por el usuario XYZPIT en Hugging Face. Se trata de una política de tipo vision-language-action (VLA) orientada al control de efector final (end-effector) del robot R1 Lite, con 3.144.016.000 parámetros totales almacenados en safetensors y un repositorio de 12,6 GB. El checkpoint corresponde al paso de entrenamiento 150.000 y se distribuye junto con los artefactos de procesador necesarios para su ejecución.
 
 El interes de esta publicacion es fundamentalmente experimental: documenta una ablation concreta en la que las perdidas auxiliares (consistencia de trayectoria, rollout de acciones y suavidad de velocidad) se fijan a 0.0, manteniendo unicamente el objetivo estandar de flow matching de un solo paso. El autor compara este checkpoint con una variante denominada TCFM 150k bajo el mismo protocolo de evaluacion, lo que permite aislar el efecto de dichas perdidas auxiliares sobre el error de reconstruccion de acciones.
 
@@ -92,9 +92,9 @@ policy = Gr00tPolicy(
 
 | Modelo | Parametros | Tipo | Contexto / horizonte | Rendimiento open-loop (MSE) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| XYZPIT/r1lite-ee-no_aux-150k | 3,14 B | VLA finetune, flow matching sin perdidas auxiliares | Ventana de 32 fotogramas, horizonte 40 | 2.883978 | nvidia-open-model-license | Pesos safetensors en HuggingFace (0 descargas) |
+| XYZPIT/r1lite-ee-no_aux-150k | 3,14 B | VLA finetune, flow matching sin perdidas auxiliares | Ventana de 32 fotogramas, horizonte 40 | 2.883978 | nvidia-open-model-license | Pesos safetensors en Hugging Face (0 descargas) |
 | XYZPIT TCFM 150k | No disponible | VLA finetune con perdidas auxiliares | No disponible | 2.655958 | No disponible | No disponible en los datos proporcionados |
-| nvidia/GR00T-N1.7-3B | 3 B (nominal) | VLA base (backbone Cosmos-Reason2-2B mas cabeza de difusion) | No disponible | No disponible | nvidia-open-model-license | Pesos publicos en HuggingFace |
+| nvidia/GR00T-N1.7-3B | 3 B (nominal) | VLA base (backbone Cosmos-Reason2-2B mas cabeza de difusion) | No disponible | No disponible | nvidia-open-model-license | Pesos publicos en Hugging Face |
 
 No se dispone de datos comparativos de otros VLA del mismo rango (por ejemplo, alternativas abiertas de tamano similar) en la informacion proporcionada, por lo que no se incluyen cifras de parametros, contexto o rendimiento de esas alternativas.
 
@@ -113,7 +113,7 @@ No se dispone de datos comparativos de otros VLA del mismo rango (por ejemplo, a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XYZPIT/r1lite-ee-no_aux-150k
+- Modelo en Hugging Face: https://huggingface.co/XYZPIT/r1lite-ee-no_aux-150k
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Assets del backbone requeridos: https://huggingface.co/nvidia/Cosmos-Reason2-2B
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/

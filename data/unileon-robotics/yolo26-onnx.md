@@ -136,7 +136,7 @@ La diferencia practica de YOLO26-ONNX frente a los checkpoints `.pt` del modelo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/unileon-robotics/YOLO26-ONNX
+- Repositorio en Hugging Face: https://huggingface.co/unileon-robotics/YOLO26-ONNX
 - Modelo base (checkpoints originales): https://huggingface.co/Ultralytics/YOLO26
 - Repositorio de Ultralytics en GitHub: https://github.com/ultralytics/ultralytics
 - Condiciones de licencia de Ultralytics: https://www.ultralytics.com/license

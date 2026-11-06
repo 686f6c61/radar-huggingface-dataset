@@ -83,7 +83,7 @@ La comparativa con Qwen3-30B-A3B es relevante porque ambos usan arquitectura MoE
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LuffyTheFox/Ornith1.5-35B-A3B-Genesis-Hermes-GGUF
+- Repositorio Hugging Face: https://huggingface.co/LuffyTheFox/Ornith1.5-35B-A3B-Genesis-Hermes-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Cuantizaciones base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF
 - Finetune Hermes original: https://huggingface.co/DJLougen/hermes-qwen3.5-35b-a3b-GGUF

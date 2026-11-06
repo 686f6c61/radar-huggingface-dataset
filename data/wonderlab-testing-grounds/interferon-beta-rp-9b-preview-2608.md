@@ -4,7 +4,7 @@
 
 Interferon-beta-RP-9B-Preview-2608 es un fine-tune experimental del modelo Qwen/Qwen3.5-9B, desarrollado por el usuario Wonderlab-Testing-Grounds (cuenta asociada al proyecto Indexnusrefather). Se presenta como una versión de prueba temprana de lo que será el futuro Nyx-RP-9B-Instruct-2608-v2, un modelo orientado a roleplay (RP) y escritura creativa, con especial énfasis en contenido conversacional y escenas narrativas. El autor indica que esta beta utiliza un rango de adaptación (rank) de 160 y que el dataset empleado es más grande que el de la versión anterior (Nyx v1), aunque advierte que puede ser inestable.
 
-El modelo se publica con licencia Apache 2.0, pesa aproximadamente 9,2 mil millones de parámetros y está disponible en formato safetensors y GGUF. Aunque el autor lo etiqueta como "Potentially unstable" y "experimental", su interés radica en explorar alternativas de entrenamiento para fine-tunes de roleplay sobre la arquitectura Qwen 3.5, una de las más recientes de la familia Qwen. Actualmente no cuenta con descargas ni valoraciones en HuggingFace, y la información técnica disponible es escasa, limitándose a la model card y a las etiquetas del repositorio.
+El modelo se publica con licencia Apache 2.0, pesa aproximadamente 9,2 mil millones de parámetros y está disponible en formato safetensors y GGUF. Aunque el autor lo etiqueta como "Potentially unstable" y "experimental", su interés radica en explorar alternativas de entrenamiento para fine-tunes de roleplay sobre la arquitectura Qwen 3.5, una de las más recientes de la familia Qwen. Actualmente no cuenta con descargas ni valoraciones en Hugging Face, y la información técnica disponible es escasa, limitándose a la model card y a las etiquetas del repositorio.
 
 ## Especificaciones técnicas
 
@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Interferon-beta-RP-9B-Preview-2608 | 9,2 B | No disp. | Apache-2.0 | HuggingFace |
-| Indexnusrefather/Nyx-RP-9B-Instruct-2608-v1 | 9 B (aprox.) | No disp. | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-9B (base) | 9,2 B | No disp. | Apache-2.0 | HuggingFace |
+| Interferon-beta-RP-9B-Preview-2608 | 9,2 B | No disp. | Apache-2.0 | Hugging Face |
+| Indexnusrefather/Nyx-RP-9B-Instruct-2608-v1 | 9 B (aprox.) | No disp. | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-9B (base) | 9,2 B | No disp. | Apache-2.0 | Hugging Face |
 
 No hay datos de rendimiento comparativo. Nyx-RP-9B-Instruct-2608-v1 es la versión anterior del mismo autor, y se espera que esta beta sea una evolución con un dataset más grande y un enfoque de entrenamiento distinto. No se dispone de información sobre otros modelos de la misma categoría (como Mistral-7B-RP o Llama-3-8B-RP) para comparar.
 
@@ -74,7 +74,7 @@ No hay datos de rendimiento comparativo. Nyx-RP-9B-Instruct-2608-v1 es la versi�
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Wonderlab-Testing-Grounds/Interferon-beta-RP-9B-Preview-2608
+- Hugging Face del modelo: https://huggingface.co/Wonderlab-Testing-Grounds/Interferon-beta-RP-9B-Preview-2608
 - Versión anterior (Nyx v1): https://huggingface.co/Indexnusrefather/Nyx-RP-9B-Instruct-2608-v1
 - Repositorio de archivos GGUF (ejemplo de cuantización): https://huggingface.co/Indexnusrefather/Nyx-RP-9B-Instruct-2608-v1/blob/main/Nyx-RP-9B-Instruct-2608-v1.Q5_K_M.gguf (no corresponde directamente a esta versión, pero indica la disponibilidad de formatos GGUF en el proyecto).
 - Página del autor (no oficial): no disponible.

@@ -99,7 +99,7 @@ Este modelo es el que mejor equilibrio ofrece entre tamano, calidad y velocidad 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TelperionAI/Qwen3.8-27B-NVFP4-AWQ-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/TelperionAI/Qwen3.8-27B-NVFP4-AWQ-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante all-FP4: https://huggingface.co/TelperionAI/Qwen3.8-27B-NVFP4-AWQ-AutoRound-allfp4
 - Ficha en LLM Explorer (variante GPTQ): https://llm-explorer.com/model/TelperionAI%2FQwen3.8-27B-NVFP4-AWQ-GPTQ,7sti5ZDCLMFpd7O9iPnnBQ

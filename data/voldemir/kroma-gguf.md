@@ -68,6 +68,6 @@ No se dispone de informacion suficiente para realizar una comparativa fiable con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/voldemir/Kroma-GGUF
+- Repositorio Hugging Face: https://huggingface.co/voldemir/Kroma-GGUF
 - Modelo base Krea/Krea-2: https://huggingface.co/Krea/Krea-2 (no verificado)
 - Modelo base lodestones/Kroma: https://huggingface.co/lodestones/Kroma (no verificado)

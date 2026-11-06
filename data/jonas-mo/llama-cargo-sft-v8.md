@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jonas-mo/llama-cargo-sft-v8` es un ajuste fino (fine-tuning) publicado en HuggingFace por el usuario jonas-mo. Segun la model card, se trata de un modelo entrenado mediante SFT (Supervised Fine-Tuning) utilizando TRL 0.24.0, con soporte de Unsloth segun las etiquetas del repositorio. El identificador y las etiquetas sugieren un modelo de la familia Llama, aunque la propia model card indica de forma explicita que la version base es "None" (es decir, no declarada), por lo que no es posible confirmar la arquitectura ni el tamano del modelo subyacente a partir de la informacion disponible.
+`jonas-mo/llama-cargo-sft-v8` es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario jonas-mo. Segun la model card, se trata de un modelo entrenado mediante SFT (Supervised Fine-Tuning) utilizando TRL 0.24.0, con soporte de Unsloth segun las etiquetas del repositorio. El identificador y las etiquetas sugieren un modelo de la familia Llama, aunque la propia model card indica de forma explicita que la version base es "None" (es decir, no declarada), por lo que no es posible confirmar la arquitectura ni el tamano del modelo subyacente a partir de la informacion disponible.
 
 El repositorio ocupa 0.1 GB, un tamano muy reducido que apunta a un adaptador (LoRA/QLoRA) en lugar de pesos completos, lo cual es coherente con el uso de Unsloth y con el flujo de trabajo habitual de SFT sobre un modelo base de mayor tamano. En consecuencia, para poder ejecutar el modelo es necesario disponer por separado del modelo base sobre el que se entreno, dato que no se ha publicado.
 
@@ -51,7 +51,7 @@ Dado que no se ha publicado informacion funcional, los casos de uso solo pueden 
 - Generacion de texto conversacional en prototipos: el ejemplo de la model card permite una prueba inmediata de generacion de respuestas cortas (hasta 128 tokens nuevos) mediante `transformers`.
 - Evaluacion de adaptadores LoRA: dado el tamano reducido del repositorio, es util para estudiar el impacto de un adaptador sobre un modelo base no declarado, siempre que se identifique dicho base.
 - Base para posteriores fases de alineamiento: al haberse entrenado con SFT, podria emplearse como punto de partida para DPO o RLHF, aunque no hay evidencia de que el autor lo haya hecho.
-- Pruebas de integracion con endpoints compatibles: la etiqueta `endpoints_compatible` sugiere que el modelo podria desplegarse en infraestructuras tipo HuggingFace Endpoints o APIs compatibles con la libreria `transformers`.
+- Pruebas de integracion con endpoints compatibles: la etiqueta `endpoints_compatible` sugiere que el modelo podria desplegarse en infraestructuras tipo Hugging Face Endpoints o APIs compatibles con la libreria `transformers`.
 - Reproduccion de entornos concretos: la model card fija versiones muy especificas (Transformers 5.5.0, PyTorch 2.12.1), lo que resulta util para reproducir experimentos en un entorno controlado.
 
 En todos los casos, la ausencia de licencia, de idiomas y de modelo base declarados impide recomendar su uso en produccion o en escenarios comerciales sin aclaraciones previas por parte del autor.
@@ -75,7 +75,7 @@ No es posible establecer una comparativa fiable porque se desconoce el modelo ba
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks | Disponibilidad |
 |---|---|---|---|---|---|
-| jonas-mo/llama-cargo-sft-v8 | no disponible | no disponible | no disponible | no publicados | HuggingFace, 0 descargas |
+| jonas-mo/llama-cargo-sft-v8 | no disponible | no disponible | no disponible | no publicados | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No es posible establecer una comparativa fiable porque se desconoce el modelo ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonas-mo/llama-cargo-sft-v8
+- Modelo en Hugging Face: https://huggingface.co/jonas-mo/llama-cargo-sft-v8
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Repositorio de Unsloth (mencionado como etiqueta, enlace no aportado por el autor): no disponible en la informacion proporcionada
 - Paper o blog del autor: no disponible

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sebsmedina/trf_text_clas` es un repositorio publicado en HuggingFace por el usuario sebsmedina bajo el identificador `trf_text_clas`, que por su nomenclatura sugiere un modelo basado en transformers (TRF) orientado a clasificación de texto (text classification). El repositorio no incluye model card con descripción funcional, arquitectura, datos de entrenamiento ni resultados de evaluación: la única información disponible en la model card es la declaración de licencia como `unknown`.
+`sebsmedina/trf_text_clas` es un repositorio publicado en Hugging Face por el usuario sebsmedina bajo el identificador `trf_text_clas`, que por su nomenclatura sugiere un modelo basado en transformers (TRF) orientado a clasificación de texto (text classification). El repositorio no incluye model card con descripción funcional, arquitectura, datos de entrenamiento ni resultados de evaluación: la única información disponible en la model card es la declaración de licencia como `unknown`.
 
-El modelo no registra descargas ni likes en el momento de la consulta, y no tiene pipeline declarado en HuggingFace. Fue creado y actualizado en la misma fecha (2026-11-03), lo que indica una publicación inicial sin iteraciones posteriores documentadas.
+El modelo no registra descargas ni likes en el momento de la consulta, y no tiene pipeline declarado en Hugging Face. Fue creado y actualizado en la misma fecha (2026-11-03), lo que indica una publicación inicial sin iteraciones posteriores documentadas.
 
 Dado que no se dispone de especificaciones técnicas, datos de entrenamiento, benchmarks ni documentación adicional, esta ficha refleja exclusivamente los metadatos verificables del repositorio. Cualquier dato no confirmado se marca explícitamente como no disponible, y se recomienda precaución antes de evaluar su uso en producción.
 
@@ -69,7 +69,7 @@ No disponible. No se dispone de información suficiente sobre arquitectura, tama
 - Licencia `unknown`: no se autoriza explícitamente ningún uso, incluido el comercial; es imprescindible contactar con el autor antes de cualquier despliegue.
 - Ausencia total de model card descriptiva: no hay información sobre arquitectura, datos de entrenamiento ni evaluación.
 - Sin benchmarks publicados: no es posible estimar calidad, precisión ni robustez.
-- Sin pipeline declarado en HuggingFace: se desconoce la tarea exacta y el formato de entrada/salida esperado.
+- Sin pipeline declarado en Hugging Face: se desconoce la tarea exacta y el formato de entrada/salida esperado.
 - Sin idiomas declarados: no se puede garantizar el rendimiento en castellano ni en ningún otro idioma.
 - Riesgo de sesgos y alucinación: no evaluable por falta de documentación; en clasificación, el riesgo principal sería la asignación errónea de etiquetas.
 - Cero descargas y cero likes: no hay evidencia de uso comunitario ni de validación por terceros.
@@ -77,5 +77,5 @@ No disponible. No se dispone de información suficiente sobre arquitectura, tama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sebsmedina/trf_text_clas
+- Hugging Face: https://huggingface.co/sebsmedina/trf_text_clas
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

@@ -32,7 +32,7 @@ La innovación técnica principal es el uso de QLoRA para adaptar un modelo OCR 
 - Separación de entradas de diccionario en párrafos individuales.
 - Generación de texto plano como transcripción, sin formato complejo.
 - Soporte para imágenes de hasta 768 píxeles en el borde más largo (configuración de entrenamiento).
-- Integración con el pipeline `image-to-text` de HuggingFace y con la librería `PEFT` para carga del adaptador.
+- Integración con el pipeline `image-to-text` de Hugging Face y con la librería `PEFT` para carga del adaptador.
 - No soporta tool calling, agentes, razonamiento multi-paso ni capacidades de visión general más allá del OCR.
 
 ## Casos de uso
@@ -86,6 +86,6 @@ No se dispone de información sobre otros modelos OCR de documentos históricos 
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/IHPAN/LightOnOCR-2-1B-ocr-sgkp
+- Repositorio Hugging Face del adaptador: https://huggingface.co/IHPAN/LightOnOCR-2-1B-ocr-sgkp
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-2-1B-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/IHPAN/ocr-sgkp

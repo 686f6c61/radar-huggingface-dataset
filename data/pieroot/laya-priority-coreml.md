@@ -121,6 +121,6 @@ No hay datos de parámetros, contexto ampliado, tool calling ni benchmarks públ
 
 ## Enlaces
 
-- [HuggingFace: pieroot/laya-priority-coreml](https://huggingface.co/pieroot/laya-priority-coreml)
+- [Hugging Face: pieroot/laya-priority-coreml](https://huggingface.co/pieroot/laya-priority-coreml)
 - [Modelo fuente: convaiinnovations/laya](https://huggingface.co/convaiinnovations/laya) (referenciado en la model card; revisión `55cf4c4ebb4ebe31b2550e8bdf3bd21b99753851`)
 - Búsqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos por el buscador no guardaban relación con el modelo ni con inteligencia artificial, por lo que se descartan y no se incluyen.

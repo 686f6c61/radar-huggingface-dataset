@@ -86,7 +86,7 @@ La comparativa se limita a modelos de la misma familia (OLMo-2-0425-1B) y de la 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-2-0425-1b-dpo-sft-sdf-mixed-lr-1e-5)
+- [Modelo en Hugging Face](https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-2-0425-1b-dpo-sft-sdf-mixed-lr-1e-5)
 - [Colección New Cake Bake Olmo2-1B](https://huggingface.co/collections/model-organisms-for-real/new-cake-bake-olmo2-1b)
 - [Repositorio GitHub del proyecto Model Organism Lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [Modelo base OLMo-2-0425-1B-DPO](https://huggingface.co/allenai/OLMo-2-0425-1B-DPO)

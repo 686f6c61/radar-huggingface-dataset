@@ -66,9 +66,9 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-trocrctc-photo1-s42 | 87,3 M | no disponible | hebreo | MIT | HuggingFace |
-| Otras variantes `hmt-trocrctc` (misma familia, distintas aumentaciones/semillas) | ~87 M | no disponible | hebreo | MIT (presumible) | HuggingFace (cyttic) |
-| TrOCR base (Microsoft) | ~334 M | no disponible | ingles principalmente | MIT | HuggingFace |
+| cyttic/hmt-trocrctc-photo1-s42 | 87,3 M | no disponible | hebreo | MIT | Hugging Face |
+| Otras variantes `hmt-trocrctc` (misma familia, distintas aumentaciones/semillas) | ~87 M | no disponible | hebreo | MIT (presumible) | Hugging Face (cyttic) |
+| TrOCR base (Microsoft) | ~334 M | no disponible | ingles principalmente | MIT | Hugging Face |
 | Modelos HTR publicos para hebreo | no disponible | no disponible | hebreo | no disponible | no disponible |
 
 La comparacion cuantitativa con TrOCR base u otros modelos HTR en hebreo no esta disponible en la informacion proporcionada; las unicas metricas publicadas son las del propio modelo sobre HHD Option-B.
@@ -86,7 +86,7 @@ La comparacion cuantitativa con TrOCR base u otros modelos HTR en hebreo no esta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-trocrctc-photo1-s42
+- Hugging Face: https://huggingface.co/cyttic/hmt-trocrctc-photo1-s42
 - Dataset de entrenamiento referenciado: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados del estudio: `results.json` en el repositorio del modelo (no se proporciona URL directa)
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada

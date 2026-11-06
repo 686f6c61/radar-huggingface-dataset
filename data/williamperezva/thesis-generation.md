@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`williamperezva/thesis-generation` es un prototipo de investigación publicado en HuggingFace que se presenta como una implementación de arquitectura Albef orientada a tareas de generación. El repositorio lo firma el usuario williamperezva y se distribuye bajo licencia Apache 2.0. No se trata de un modelo entrenado ni evaluado, sino de un artefacto de andamiaje: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe interpretarse como un modelo con rendimiento demostrado.
+`williamperezva/thesis-generation` es un prototipo de investigación publicado en Hugging Face que se presenta como una implementación de arquitectura Albef orientada a tareas de generación. El repositorio lo firma el usuario williamperezva y se distribuye bajo licencia Apache 2.0. No se trata de un modelo entrenado ni evaluado, sino de un artefacto de andamiaje: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe interpretarse como un modelo con rendimiento demostrado.
 
 La información disponible es muy limitada. El repositorio no declara pipeline de inferencia, idiomas soportados ni resultados de benchmarks, y acumula 0 descargas y 0 likes desde su creación el 1 de octubre de 2026. Los metadatos de safetensors indican un total de 16.576 parámetros, una cifra que contrasta con la etiqueta "giant" (gigante) que la model card asigna a la escala de la configuración incluida. Esta discrepancia entre la escala declarada y el tamaño real del checkpoint es el dato más relevante para cualquier evaluador.
 
@@ -77,7 +77,7 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| williamperezva/thesis-generation | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace |
+| williamperezva/thesis-generation | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,5 +93,5 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/williamperezva/thesis-generation
+- Hugging Face: https://huggingface.co/williamperezva/thesis-generation
 - Paper, blog, repositorio o demo adicionales: no disponible. La búsqueda web no ha devuelto enlaces relevantes para este modelo.

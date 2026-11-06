@@ -62,7 +62,7 @@ En el plano de la distribucion, si hay informacion concreta: bartowski ha genera
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la ficha de HuggingFace de la cuantizacion ni los resultados de busqueda proporcionados incluyen cifras de MMLU, HumanEval, GSM8K, MMMU, DocVQA, ChartQA ni de ninguna otra evaluacion para LensVLM-9B o para sus cuantizaciones GGUF.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la ficha de Hugging Face de la cuantizacion ni los resultados de busqueda proporcionados incluyen cifras de MMLU, HumanEval, GSM8K, MMMU, DocVQA, ChartQA ni de ninguna otra evaluacion para LensVLM-9B o para sus cuantizaciones GGUF.
 
 ## Requisitos de hardware
 
@@ -112,6 +112,6 @@ La principal diferencia de LensVLM-9B frente a estas alternativas no esta en las
 - Fichero recomendado Q4_K_M: https://huggingface.co/bartowski/LensVLM-9B-GGUF/blob/main/LensVLM-9B-Q4_K_M.gguf
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp/
 - Release de llama.cpp usada para la cuantizacion (b11081): https://github.com/ggml-org/llama.cpp/releases/tag/b11081
-- Perfil de bartowski en HuggingFace: https://huggingface.co/bartowski
+- Perfil de bartowski en Hugging Face: https://huggingface.co/bartowski
 - Catalogo de modelos de bartowski: https://huggingface.co/bartowski/models
 - Perfil de bartowski en GitHub: https://github.com/bartowski1182

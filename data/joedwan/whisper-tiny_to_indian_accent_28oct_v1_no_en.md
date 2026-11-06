@@ -36,7 +36,7 @@ El ajuste fino se realizó sobre el dataset Indian_english, del cual no se propo
 - Soporte de agentes y razonamiento multi-paso: no disponible (es un modelo puramente ASR).
 - Capacidades multilingües: limitadas a inglés; no se declara soporte de otros idiomas.
 - Capacidades especiales (thinking mode, visión, audio de entrada más allá de ASR): no disponible.
-- Compatible con endpoints de HuggingFace (tag endpoints_compatible).
+- Compatible con endpoints de Hugging Face (tag endpoints_compatible).
 
 ## Casos de uso
 
@@ -77,10 +77,10 @@ No se han publicado resultados comparativos frente a whisper-tiny original ni fr
 
 | Modelo | Parámetros | Contexto / audio | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JoeDwan/whisper-tiny_to_indian_accent_28oct_v1_no_en | 37,76 M | Ventanas de 30 s | 9,2319 (Indian English, test) | Apache 2.0 | HuggingFace |
-| openai/whisper-tiny | 37,76 M | Ventanas de 30 s | No disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-base | 74,4 M | Ventanas de 30 s | No disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 244 M | Ventanas de 30 s | No disponible en esta ficha | Apache 2.0 | HuggingFace |
+| JoeDwan/whisper-tiny_to_indian_accent_28oct_v1_no_en | 37,76 M | Ventanas de 30 s | 9,2319 (Indian English, test) | Apache 2.0 | Hugging Face |
+| openai/whisper-tiny | 37,76 M | Ventanas de 30 s | No disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-base | 74,4 M | Ventanas de 30 s | No disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 244 M | Ventanas de 30 s | No disponible en esta ficha | Apache 2.0 | Hugging Face |
 
 La comparación directa con whisper-tiny original no es posible con los datos proporcionados, ya que no se incluye el WER de la línea base sobre el mismo conjunto Indian English. Los modelos whisper-base y whisper-small se incluyen como alternativas de mayor capacidad dentro de la misma familia, pero tampoco se dispone de sus métricas sobre este dataset específico en la información disponible.
 
@@ -98,7 +98,7 @@ La comparación directa con whisper-tiny original no es posible con los datos pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoeDwan/whisper-tiny_to_indian_accent_28oct_v1_no_en
+- Modelo en Hugging Face: https://huggingface.co/JoeDwan/whisper-tiny_to_indian_accent_28oct_v1_no_en
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de Whisper (Radford et al., 2022): no disponible en la información proporcionada
 - Repositorio de Transformers: no disponible en la información proporcionada

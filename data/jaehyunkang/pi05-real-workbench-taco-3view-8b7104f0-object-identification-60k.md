@@ -79,10 +79,10 @@ Las cifras de modelos de terceros que aparecen a continuación provienen de cono
 
 | Modelo | Parametros | Vistas / modalidad | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (pi05 real-workbench taco) | 4,14 B | 3 vistas (exterior, muñeca, keyframe) | No disponible | No disponible | HuggingFace, 0 descargas |
-| `lerobot/pi05_base` | No disponible en esta ficha | Política VLA generalista Pi0.5 | No disponible | No disponible | HuggingFace (modelo base declarado) |
-| OpenVLA-7B | ≈7 B (aproximado) | 1 vista | No disponible | No verificada en esta ficha | HuggingFace |
-| Pi0 / `lerobot/pi0` | ≈3 B (aproximado) | Multi-vista según configuración | No disponible | No verificada en esta ficha | HuggingFace |
+| Este checkpoint (pi05 real-workbench taco) | 4,14 B | 3 vistas (exterior, muñeca, keyframe) | No disponible | No disponible | Hugging Face, 0 descargas |
+| `lerobot/pi05_base` | No disponible en esta ficha | Política VLA generalista Pi0.5 | No disponible | No disponible | Hugging Face (modelo base declarado) |
+| OpenVLA-7B | ≈7 B (aproximado) | 1 vista | No disponible | No verificada en esta ficha | Hugging Face |
+| Pi0 / `lerobot/pi0` | ≈3 B (aproximado) | Multi-vista según configuración | No disponible | No verificada en esta ficha | Hugging Face |
 
 La diferencia principal frente a alternativas generalistas es de alcance: este checkpoint está especializado en una tarea y un montaje concretos, con una interfaz de entrada fija (3 vistas, estado de 8 dimensiones, instrucción de subtarea por frame), mientras que los modelos base de la misma familia apuntan a un rango más amplio de tareas. A cambio, el ajuste específico debería mejorar el desempeño en su dominio, algo que no puede confirmarse porque no se publican métricas.
 
@@ -104,7 +104,7 @@ La diferencia principal frente a alternativas generalistas es de alcance: este c
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/jaehyunkang/pi05-real-workbench-taco-3view-8b7104f0-object-identification-60k
+- Ficha del modelo en Hugging Face: https://huggingface.co/jaehyunkang/pi05-real-workbench-taco-3view-8b7104f0-object-identification-60k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de ajuste: https://huggingface.co/datasets/Myungkyu/real_workbench-taco-keyframe-gemini
 - Tokenizer de referencia: https://huggingface.co/google/paligemma-3b-pt-224

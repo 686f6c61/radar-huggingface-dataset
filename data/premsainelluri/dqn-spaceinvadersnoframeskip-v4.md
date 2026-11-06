@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenado para jugar al entorno **SpaceInvadersNoFrameskip-v4** de Atari. El agente implementa el algoritmo **DQN (Deep Q-Network)** y ha sido entrenado con la libreria **Stable Baselines3** junto con el framework de entrenamiento **RL Zoo**, ambos mantenidos por el grupo DLR-RM. El autor del repositorio es el usuario de HuggingFace `premsainelluri` y el modelo se publico el 4 de octubre de 2026.
+Este repositorio contiene un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenado para jugar al entorno **SpaceInvadersNoFrameskip-v4** de Atari. El agente implementa el algoritmo **DQN (Deep Q-Network)** y ha sido entrenado con la libreria **Stable Baselines3** junto con el framework de entrenamiento **RL Zoo**, ambos mantenidos por el grupo DLR-RM. El autor del repositorio es el usuario de Hugging Face `premsainelluri` y el modelo se publico el 4 de octubre de 2026.
 
 No se trata de un modelo de lenguaje ni de un modelo generativo multimodal: es una politica de control entrenada para maximizar la recompensa acumulada en un unico videojuego de Atari. La politica se representa mediante una red convolucional (`CnnPolicy`) que procesa observaciones visuales (pixeles) y produce una distribucion sobre las acciones discretas del entorno. El entrenamiento se realizo durante 10 millones de pasos (`n_timesteps`), un regimen habitual para obtener agentes competitivos en la suite Atari.
 
@@ -67,11 +67,11 @@ El unico resultado disponible es la recompensa media declarada por el autor en l
 
 | Modelo | Algoritmo | Entorno | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| premsainelluri/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | no aplica | no disponible | HuggingFace |
-| Agentes del RL Zoo (sb3) | PPO / A2C / DQN | Atari (varios) | no aplica | no disponible en esta ficha | HuggingFace / RL Zoo |
+| premsainelluri/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | no aplica | no disponible | Hugging Face |
+| Agentes del RL Zoo (sb3) | PPO / A2C / DQN | Atari (varios) | no aplica | no disponible en esta ficha | Hugging Face / RL Zoo |
 | Rainbow (implementaciones de terceros) | DQN con mejoras | Atari (varios) | no aplica | no disponible en esta ficha | Repositorios varios |
 
-La comparacion cuantitativa con PPO, A2C o Rainbow sobre el mismo entorno no esta disponible en la informacion proporcionada. El RL Zoo de Stable Baselines3 publica agentes preentrenados bajo la organizacion `sb3` en HuggingFace, que constituyen la alternativa mas directa, pero no se dispone aqui de sus resultados numericos.
+La comparacion cuantitativa con PPO, A2C o Rainbow sobre el mismo entorno no esta disponible en la informacion proporcionada. El RL Zoo de Stable Baselines3 publica agentes preentrenados bajo la organizacion `sb3` en Hugging Face, que constituyen la alternativa mas directa, pero no se dispone aqui de sus resultados numericos.
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ La comparacion cuantitativa con PPO, A2C o Rainbow sobre el mismo entorno no est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/premsainelluri/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/premsainelluri/dqn-SpaceInvadersNoFrameskip-v4
 - Stable Baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo (RL Baselines3 Zoo): https://github.com/DLR-RM/rl-baselines3-zoo
 - Stable Baselines3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

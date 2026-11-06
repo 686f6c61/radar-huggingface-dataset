@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mpeex/whisper-it-multi-hailo` es un repositorio publicado en HuggingFace por el usuario `mpeex`, con licencia MIT y un peso de 0,7 GB. Por la nomenclatura del identificador, todo apunta a una conversión a formato ONNX de un modelo de la familia Whisper (reconocimiento automático del habla de OpenAI), con variante orientada a italiano y multilingüe, y preparada para su despliegue sobre aceleradores Hailo. Conviene subrayar que esta interpretación se deduce únicamente del nombre del repositorio: la model card no contiene más que la línea de licencia, no hay etiqueta de pipeline declarada, no se especifican idiomas y el autor no documenta arquitectura, tamaño ni procedencia.
+`mpeex/whisper-it-multi-hailo` es un repositorio publicado en Hugging Face por el usuario `mpeex`, con licencia MIT y un peso de 0,7 GB. Por la nomenclatura del identificador, todo apunta a una conversión a formato ONNX de un modelo de la familia Whisper (reconocimiento automático del habla de OpenAI), con variante orientada a italiano y multilingüe, y preparada para su despliegue sobre aceleradores Hailo. Conviene subrayar que esta interpretación se deduce únicamente del nombre del repositorio: la model card no contiene más que la línea de licencia, no hay etiqueta de pipeline declarada, no se especifican idiomas y el autor no documenta arquitectura, tamaño ni procedencia.
 
 El interés potencial de una conversión de este tipo reside en el despliegue de ASR en el borde (edge): los aceleradores Hailo son NPU de bajo consumo pensados para inferencia local, de modo que un Whisper exportado a ONNX y adaptado a ese hardware permitiría transcripción de voz sin depender de GPU ni de servicios en la nube. Sin embargo, en la información disponible no se confirma ni el tamaño del modelo base (tiny, base, small, medium o large), ni el esquema de cuantización aplicado, ni el procedimiento seguido para la adaptación al NPU.
 
@@ -17,9 +17,9 @@ El repositorio se creó y actualizó el 3 de octubre de 2026, no acumula descarg
 | Parametros activos | no disponible (no hay indicios de que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (solo se declara el tag `onnx`; se desconoce si hay variantes int8/fp16) |
-| Idiomas soportados | no disponible (el identificador sugiere italiano y multilingue; la metadata de HuggingFace no declara idiomas) |
+| Idiomas soportados | no disponible (el identificador sugiere italiano y multilingue; la metadata de Hugging Face no declara idiomas) |
 | Licencia | MIT |
-| Formato de pesos | ONNX (tag declarado en HuggingFace) |
+| Formato de pesos | ONNX (tag declarado en Hugging Face) |
 | Tamano del repositorio | 0,7 GB |
 | Pipeline declarado | no disponible |
 | Descargas / likes | 0 / 0 |
@@ -99,5 +99,5 @@ Nota: la ventana de 30 segundos es una característica de la arquitectura Whispe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mpeex/whisper-it-multi-hailo
+- Repositorio en Hugging Face: https://huggingface.co/mpeex/whisper-it-multi-hailo
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, a papers asociados, a repositorios de código ni a demos. Los resultados devueltos por la búsqueda corresponden a contenidos sin relación con el modelo (documentos y fichas de manga) y se descartan.

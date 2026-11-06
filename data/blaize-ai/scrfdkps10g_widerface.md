@@ -42,7 +42,7 @@ SCRFD es un detector de caras de una sola etapa que introduce una estrategia de 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de mAP en WiderFace, latencia, throughput ni comparaciones con otros detectores de caras en el repositorio de HuggingFace ni en la documentacion de Blaize consultada.
+No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de mAP en WiderFace, latencia, throughput ni comparaciones con otros detectores de caras en el repositorio de Hugging Face ni en la documentacion de Blaize consultada.
 
 ## Requisitos de hardware
 
@@ -67,8 +67,8 @@ No disponible. No se han encontrado datos comparativos con otros detectores de c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blaize-AI/SCRFDkps10G_Widerface
-- Organizacion Blaize-AI en HuggingFace: https://huggingface.co/Blaize-AI
+- Modelo en Hugging Face: https://huggingface.co/Blaize-AI/SCRFDkps10G_Widerface
+- Organizacion Blaize-AI en Hugging Face: https://huggingface.co/Blaize-AI
 - Repositorio original de InsightFace (SCRFD): https://github.com/deepinsight/insightface/tree/master/detection/scrfd
 - Dataset WiderFace: http://shuoyang1213.me/WIDERFACE/
 - Web de Blaize: https://www.blaize.com/

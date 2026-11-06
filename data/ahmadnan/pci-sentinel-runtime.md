@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ahmadnan/pci-sentinel-runtime` es un repositorio publicado en HuggingFace por el usuario `ahmadnan`. Segun los metadatos disponibles, el repositorio tiene un tamano de 0.0 GB, cero descargas y cero "likes", y su model card se limita al bloque de frontmatter con `license: apache-2.0` sin ningun contenido descriptivo adicional. No se declara pipeline, no se declaran idiomas y no se listan etiquetas de arquitectura, familia de modelo ni tarea.
+`ahmadnan/pci-sentinel-runtime` es un repositorio publicado en Hugging Face por el usuario `ahmadnan`. Segun los metadatos disponibles, el repositorio tiene un tamano de 0.0 GB, cero descargas y cero "likes", y su model card se limita al bloque de frontmatter con `license: apache-2.0` sin ningun contenido descriptivo adicional. No se declara pipeline, no se declaran idiomas y no se listan etiquetas de arquitectura, familia de modelo ni tarea.
 
 No hay informacion publica que permita identificar que contiene el repositorio: no se documentan pesos, tokenizador, configuracion de modelo, arquitectura, numero de parametros ni procedimiento de entrenamiento. El nombre sugiere un componente de tipo "runtime" asociado a cumplimiento PCI, pero se trata de una inferencia basada unicamente en el identificador y no esta respaldada por ningun dato del repositorio ni por fuentes externas.
 
@@ -93,7 +93,7 @@ No disponible. No es posible establecer una categoria de comparacion (mismo tama
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ahmadnan/pci-sentinel-runtime
+- Repositorio en Hugging Face: https://huggingface.co/ahmadnan/pci-sentinel-runtime
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

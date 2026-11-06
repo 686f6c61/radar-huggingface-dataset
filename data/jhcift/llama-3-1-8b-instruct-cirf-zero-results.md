@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-Instruct-CIRF-Zero-Results es un ajuste fino (fine-tune) del modelo Meta Llama 3.1 8B Instruct desarrollado por el usuario JhCIFT en HuggingFace. El modelo implementa una variante de razonamiento denominada CIRF (presumiblemente "Chain of Implicit Reasoning Functional", aunque el acronimo no se expande en la informacion disponible), en la que la traza de razonamiento se compone exclusivamente de tokens funcionales en lugar de lenguaje natural. Se trata de un experimento de investigacion sobre razonamiento implicito, no de un modelo orientado a produccion.
+Llama-3.1-8B-Instruct-CIRF-Zero-Results es un ajuste fino (fine-tune) del modelo Meta Llama 3.1 8B Instruct desarrollado por el usuario JhCIFT en Hugging Face. El modelo implementa una variante de razonamiento denominada CIRF (presumiblemente "Chain of Implicit Reasoning Functional", aunque el acronimo no se expande en la informacion disponible), en la que la traza de razonamiento se compone exclusivamente de tokens funcionales en lugar de lenguaje natural. Se trata de un experimento de investigacion sobre razonamiento implicito, no de un modelo orientado a produccion.
 
 La innovacion principal reside en la incorporacion de 514 tokens nuevos al vocabulario: `[sof]` (start of function), `[eof]` (end of function) y `[f_0]` a `[f_511]`, que actuan como unidades atomicas de razonamiento. El modelo se entreno sin valores de resultado explicitos en los objetivos de entrenamiento, de ahi la denominacion "Zero-Results". La actualizacion LoRA se fusiono en los pesos densos BF16, por lo que el modelo se carga con Transformers estandar sin necesidad de PEFT ni del checkpoint base.
 
@@ -66,7 +66,7 @@ La model card indica que en Coin Flip aproximadamente el 20% de las etiquetas de
 - VRAM estimada para inferencia en BF16: aproximadamente 16 GB solo para los pesos (8,03 mil millones de parametros a 2 bytes), mas overhead de activaciones y cache KV; en la practica se recomienda al menos 18-20 GB.
 - VRAM estimada en cuantizacion de 8 bits: aproximadamente 8-9 GB; en 4 bits: aproximadamente 5-6 GB. No obstante, no se publican versiones GGUF ni cuantizadas oficiales; habria que generarlas a partir de los pesos safetensors.
 - GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para BF16. En GPUs consumer de 16 GB (RTX 4080, 4070 Ti Super) cabria en cuantizacion de 8 bits.
-- Opciones de despliegue: Transformers con `device_map="auto"` es el metodo documentado. El tag `text-generation-inference` sugiere compatibilidad con TGI, y el tag `endpoints_compatible` con los endpoints de HuggingFace. No se documenta soporte explicito de vLLM, llama.cpp u Ollama, y la inclusion de tokens especiales nuevos requeriria verificar la compatibilidad de cada runtime.
+- Opciones de despliegue: Transformers con `device_map="auto"` es el metodo documentado. El tag `text-generation-inference` sugiere compatibilidad con TGI, y el tag `endpoints_compatible` con los endpoints de Hugging Face. No se documenta soporte explicito de vLLM, llama.cpp u Ollama, y la inclusion de tokens especiales nuevos requeriria verificar la compatibilidad de cada runtime.
 - Latencia y throughput: la model card menciona que la latencia con batch de tamano 1 esta registrada en `test_results.json`, pero no se proporciona el valor en la informacion disponible.
 - Nota importante: el tokenizador requiere `skip_special_tokens=False` para preservar los delimitadores `[sof]`/`[eof]`, y el stopping debe hacerse en el token EOS del tokenizador, no en `[eof]`.
 
@@ -74,10 +74,10 @@ La model card indica que en Coin Flip aproximadamente el 20% de las etiquetas de
 
 | Modelo | Parametros | Contexto | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-CIRF-Zero-Results | 8,03 B | No disponible | 21,15% | Llama 3.1 Community | HuggingFace (0 descargas) |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | No disponible en esta ficha | Llama 3.1 Community | HuggingFace (oficial) |
-| Llama-3.1-8B-Instruct-CIRF-Full | No disponible | No disponible | No disponible | Llama 3.1 Community | HuggingFace (mismo autor) |
-| Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-3/6/12/18 | No disponible | No disponible | No disponible | Llama 3.1 Community | HuggingFace (mismo autor) |
+| Llama-3.1-8B-Instruct-CIRF-Zero-Results | 8,03 B | No disponible | 21,15% | Llama 3.1 Community | Hugging Face (0 descargas) |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | No disponible en esta ficha | Llama 3.1 Community | Hugging Face (oficial) |
+| Llama-3.1-8B-Instruct-CIRF-Full | No disponible | No disponible | No disponible | Llama 3.1 Community | Hugging Face (mismo autor) |
+| Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-3/6/12/18 | No disponible | No disponible | No disponible | Llama 3.1 Community | Hugging Face (mismo autor) |
 
 La comparacion con el modelo base Llama 3.1 8B Instruct es la mas relevante, pero no se dispone de sus resultados en GSM8K en la informacion proporcionada, por lo que no es posible cuantificar la perdida o ganancia respecto al original. Las variantes CIRF del mismo autor (Full y Backward-Greedy) no publican metricas en la informacion disponible.
 
@@ -97,7 +97,7 @@ La comparacion con el modelo base Llama 3.1 8B Instruct es la mas relevante, per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Zero-Results
+- Modelo en Hugging Face: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Zero-Results
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Variante CIRF-Full: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Full
 - Variante CIRF-Backward-Greedy-3: https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Backward-Greedy-3

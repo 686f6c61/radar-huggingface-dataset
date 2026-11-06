@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `anishsaha/iAmTime-base-forecast` es un repositorio publicado en HuggingFace por el usuario anishsaha bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada unicamente contiene la declaracion de licencia, sin descripcion funcional, sin detalles de arquitectura, sin datos de entrenamiento y sin resultados de evaluacion. El repositorio registra 0 descargas y 1 like, y no tiene pipeline declarado.
+El modelo `anishsaha/iAmTime-base-forecast` es un repositorio publicado en Hugging Face por el usuario anishsaha bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada unicamente contiene la declaracion de licencia, sin descripcion funcional, sin detalles de arquitectura, sin datos de entrenamiento y sin resultados de evaluacion. El repositorio registra 0 descargas y 1 like, y no tiene pipeline declarado.
 
 El propio identificador del modelo sugiere un proposito de prediccion sobre series temporales (los terminos "Time" y "forecast"), asi como un posible caracter de modelo base ("base"), es decir, sin ajuste fino posterior para tareas concretas. Esta interpretacion es una hipotesis derivada del nombre y no esta confirmada por ninguna documentacion publicada por el autor, por lo que debe tratarse con cautela.
 
@@ -100,6 +100,6 @@ No disponible. No es posible identificar modelos comparables sin conocer la tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anishsaha/iAmTime-base-forecast
-- Pagina del autor en HuggingFace: https://huggingface.co/anishsaha
+- Repositorio en Hugging Face: https://huggingface.co/anishsaha/iAmTime-base-forecast
+- Pagina del autor en Hugging Face: https://huggingface.co/anishsaha
 - Paper, blog, repositorio de codigo o demo: no disponible.

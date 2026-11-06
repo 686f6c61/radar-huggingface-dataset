@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| violetxi/qwen35-9b-wmrl-v4-lrsmoke-5e6 | 9,65B | No disponible | Apache-2.0 | HuggingFace (checkpoint experimental) |
-| Qwen/Qwen3.5-9B (base) | 9,65B | No disponible (probablemente 128K) | Apache-2.0 | HuggingFace, Azure, vLLM |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 license | HuggingFace, múltiples proveedores |
-| Mistral 7B | 7B | 32K | Apache-2.0 | HuggingFace, múltiples proveedores |
+| violetxi/qwen35-9b-wmrl-v4-lrsmoke-5e6 | 9,65B | No disponible | Apache-2.0 | Hugging Face (checkpoint experimental) |
+| Qwen/Qwen3.5-9B (base) | 9,65B | No disponible (probablemente 128K) | Apache-2.0 | Hugging Face, Azure, vLLM |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 license | Hugging Face, múltiples proveedores |
+| Mistral 7B | 7B | 32K | Apache-2.0 | Hugging Face, múltiples proveedores |
 
 La comparativa es estructural; no hay datos de rendimiento para el finetune. El modelo de violetxi se distingue por su especialización en dominio legal sintético, mientras que los otros son modelos generalistas. La licencia Apache-2.0 permite uso comercial, aunque el carácter experimental del checkpoint recomienda validación previa.
 
@@ -75,8 +75,8 @@ La comparativa es estructural; no hay datos de rendimiento para el finetune. El 
 
 ## Enlaces
 
-- [HuggingFace - violetxi/qwen35-9b-wmrl-v4-lrsmoke-5e6](https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-lrsmoke-5e6)
+- [Hugging Face - violetxi/qwen35-9b-wmrl-v4-lrsmoke-5e6](https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-lrsmoke-5e6)
 - [Qwen3.5-9B: Specifications and GPU VRAM Requirements - apxml.com](https://apxml.com/models/qwen35-9b)
 - [Qwen3.5 9B - Jetson AI Lab](https://www.jetson-ai-lab.com/models/qwen3-5-9b/)
 - [AI Model Catalog - Microsoft Foundry (Qwen3.5-9B)](https://ai.azure.com/catalog/models/qwen-qwen3.5-9b)
-- [Colección Qwen3.5 en HuggingFace](https://huggingface.co/collections/Qwen/qwen35)
+- [Colección Qwen3.5 en Hugging Face](https://huggingface.co/collections/Qwen/qwen35)

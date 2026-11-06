@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SPARTA es un framework de investigación desarrollado por Mouad Zouhdi en el LAAS-CNRS que mide cómo se comporta la poda estructurada cuando un modelo realmente se ejecuta en un Google Coral Edge TPU. Este repositorio de HuggingFace publica todos los modelos generados con ese framework, junto con los archivos de medición (latencia, precisión), los informes del compilador de Edge TPU y los logs de entrenamiento. No se trata de un modelo único, sino de una colección de artefactos que incluye cientos de modelos de visión (clasificación de imágenes) podados, cuantizados y compilados para hardware edge.
+SPARTA es un framework de investigación desarrollado por Mouad Zouhdi en el LAAS-CNRS que mide cómo se comporta la poda estructurada cuando un modelo realmente se ejecuta en un Google Coral Edge TPU. Este repositorio de Hugging Face publica todos los modelos generados con ese framework, junto con los archivos de medición (latencia, precisión), los informes del compilador de Edge TPU y los logs de entrenamiento. No se trata de un modelo único, sino de una colección de artefactos que incluye cientos de modelos de visión (clasificación de imágenes) podados, cuantizados y compilados para hardware edge.
 
 El problema que resuelve es la falta de datos empíricos sobre cómo afecta la poda estructurada a la latencia real en aceleradores edge, más allá de la reducción teórica de parámetros. La colección abarca dos ejes principales: un estudio exhaustivo en CIFAR-100 con 7 arquitecturas, 7 criterios de poda y 9 tasas objetivo (441 combinaciones, 404 modelos generados), y un estudio en ImageNet con 8 arquitecturas compiladas en 1 a 8 segmentos para repartir la carga entre varios aceleradores, con mediciones en 22 particiones distintas. También incluye un corpus sintético para análisis de memoria y una campaña inicial en Imagenette que queda archivada por no ser comparable.
 
@@ -77,6 +77,6 @@ No disponible. Este repositorio no contiene un modelo unico comparable con otros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mouad-zouhdi/sparta-edgetpu-models
+- Repositorio en Hugging Face: https://huggingface.co/mouad-zouhdi/sparta-edgetpu-models
 - Codigo fuente del framework SPARTA: https://github.com/mouad-zouhdi/sparta-edgetpu
 - Documentacion de modelos de Coral (referencia externa): https://www.coral.withgoogle.com/models/

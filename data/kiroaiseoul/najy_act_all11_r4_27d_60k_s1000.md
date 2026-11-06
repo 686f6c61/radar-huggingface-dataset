@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NAJY_act_all11_r4_27D_60k_s1000 es un checkpoint de política robótica basado en ACT (Action Chunking Transformer) distribuido a través de HuggingFace por el usuario kiroaiseoul, publicado bajo la librería LeRobot y etiquetado dentro del ecosistema trossen-mobile-ai. No es un modelo de lenguaje: es un modelo de aprendizaje por imitación que mapea observaciones multimodales (tres cámaras RGB de 480x640, un vector de estado de 27 dimensiones y un vector de estado de entorno de 11 dimensiones) a un vector de acción de 17 dimensiones. Cuenta con 51.636.369 parámetros reales y un repositorio de 0,2 GB en formato safetensors.
+NAJY_act_all11_r4_27D_60k_s1000 es un checkpoint de política robótica basado en ACT (Action Chunking Transformer) distribuido a través de Hugging Face por el usuario kiroaiseoul, publicado bajo la librería LeRobot y etiquetado dentro del ecosistema trossen-mobile-ai. No es un modelo de lenguaje: es un modelo de aprendizaje por imitación que mapea observaciones multimodales (tres cámaras RGB de 480x640, un vector de estado de 27 dimensiones y un vector de estado de entorno de 11 dimensiones) a un vector de acción de 17 dimensiones. Cuenta con 51.636.369 parámetros reales y un repositorio de 0,2 GB en formato safetensors.
 
 El modelo corresponde al paso 60.000 de la ejecución `exp_all11_tph_env_dropall30_bh_s1000`, entrenada el 7 de octubre de 2026 sobre la máquina identificada como DGX_1. La propia model card indica que el checkpoint se sube con fines de análisis y puntuación, y que su publicación es independiente de la decisión de desplegarlo en un robot real. Se trata, por tanto, de un artefacto de investigación intermedio más que de un modelo listo para producción.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 ## Requisitos de hardware
 
 - Huella de pesos estimada a partir del recuento de parámetros (51.636.369): aproximadamente 207 MB en fp32 y 103 MB en fp16. Estas cifras son cálculos derivados, no datos publicados en la model card.
-- Repositorio completo: 0,2 GB, según la metainformación de HuggingFace.
+- Repositorio completo: 0,2 GB, según la metainformación de Hugging Face.
 - Al tratarse de una política de 51,6 M de parámetros, cabe con holgura en cualquier GPU de consumo, incluidas gamas de entrada. No se dispone de requisitos oficiales de VRAM publicados.
 - Para control en tiempo real con tres flujos de vídeo de 480x640, se recomienda una GPU dedicada con soporte CUDA; una GPU integrada puede resultar insuficiente para mantener la frecuencia de control.
 - El pico de memoria real vendrá dominado por las activaciones de los backbones visuales y no por los parámetros, por lo que la VRAM efectiva será superior a la huella de pesos.
@@ -79,10 +79,10 @@ No se dispone de datos de rendimiento de este checkpoint ni de sus alternativas 
 
 | Modelo | Familia | Parametros | Contexto de observacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NAJY_act_all11_r4_27D_60k_s1000 | ACT (LeRobot) | 51.636.369 | 3 camaras 480x640 + estado 27 + entorno 11 | apache-2.0 | HuggingFace, 13 descargas |
-| Otras politicas ACT de LeRobot | ACT (LeRobot) | variable, no disponible | variable segun dataset | habitualmente apache-2.0 o MIT, no disponible por checkpoint | HuggingFace |
+| NAJY_act_all11_r4_27D_60k_s1000 | ACT (LeRobot) | 51.636.369 | 3 camaras 480x640 + estado 27 + entorno 11 | apache-2.0 | Hugging Face, 13 descargas |
+| Otras politicas ACT de LeRobot | ACT (LeRobot) | variable, no disponible | variable segun dataset | habitualmente apache-2.0 o MIT, no disponible por checkpoint | Hugging Face |
 | Diffusion Policy (familia) | Politica por difusion | no disponible | tipicamente imagen o estado, variable | MIT (implementacion de referencia), sujeto a confirmacion | Repositorios publicos |
-| SmolVLA (familia) | VLA con componente de lenguaje | no disponible | imagen + instruccion en lenguaje natural | no disponible | HuggingFace |
+| SmolVLA (familia) | VLA con componente de lenguaje | no disponible | imagen + instruccion en lenguaje natural | no disponible | Hugging Face |
 
 La ventaja diferencial de este checkpoint no es el rendimiento, sino la trazabilidad: hash de pesos publicado, manifiesto de datos identificado y banderas de preprocesado explícitas. Las alternativas basadas en difusión o en modelos visión-lenguaje-acción aportan condicionamiento por instrucciones en lenguaje natural, capacidad de la que este checkpoint carece.
 
@@ -101,7 +101,7 @@ La ventaja diferencial de este checkpoint no es el rendimiento, sino la trazabil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiroaiseoul/NAJY_act_all11_r4_27D_60k_s1000
+- Modelo en Hugging Face: https://huggingface.co/kiroaiseoul/NAJY_act_all11_r4_27D_60k_s1000
 - Repositorio de la libreria LeRobot (implementacion de referencia de ACT): https://github.com/huggingface/lerobot
 - Articulo original de ACT, "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware": https://arxiv.org/abs/2304.13705
 - Referencia de fondo citada en la model card: `trossen-ai-simulation`, documento `docs/mobile_base_investigation.md` §94 (URL no disponible en la informacion proporcionada)

@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pathcowork-grounder-27B-GGUF | 27,3B | Grounding de conceptos en histopatología H&E | penn-academic-software-license (académica) | GGUF en HuggingFace |
-| Quilt-1B LLava | ~1B (LLaVA sobre ViT y LLM pequeño) | QA general de patología (no grounding poligonal) | Apache 2.0 / CC (según componente) | Open source en HuggingFace |
-| LLaVA-Med | ~13B | QA biomédico multimodal, descripción de imágenes médicas | LLaMA license (uso restringido) | Open source en HuggingFace |
+| pathcowork-grounder-27B-GGUF | 27,3B | Grounding de conceptos en histopatología H&E | penn-academic-software-license (académica) | GGUF en Hugging Face |
+| Quilt-1B LLava | ~1B (LLaVA sobre ViT y LLM pequeño) | QA general de patología (no grounding poligonal) | Apache 2.0 / CC (según componente) | Open source en Hugging Face |
+| LLaVA-Med | ~13B | QA biomédico multimodal, descripción de imágenes médicas | LLaMA license (uso restringido) | Open source en Hugging Face |
 | Virchow / Virchow2 (Paige) | ~2B (encoder visual) | Embeddings de pathology para clasificación, sin generación | Propietaria / no pública | Pesos restringidos |
 
 Pathcowork se diferencia de los modelos anteriores en que produce salidas espaciales explícitas (polígonos) en lugar de solo texto descriptivo, y en que está especializado en H&E con metadatos de escala. Su principal desventaja frente a alternativas como Quilt es la licencia académica restrictiva y el mayor coste de inferencia (27B frente a ~1–13B).
@@ -86,7 +86,7 @@ Pathcowork se diferencia de los modelos anteriores en que produce salidas espaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhihuanglab/pathcowork-grounder-27B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/zhihuanglab/pathcowork-grounder-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Licencia: https://huggingface.co/zhihuanglab/pathcowork-grounder-27B-GGUF/blob/main/LICENSE
 - Paper, repositorio de código y demo: no disponibles en la información proporcionada.

@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/prasadvittaldev/pocket-tts-italian-onnx-int4
+- Hugging Face del modelo: https://huggingface.co/prasadvittaldev/pocket-tts-italian-onnx-int4
 - Modelo base (Kyutai): https://huggingface.co/kyutai/pocket-tts
 - Demo en navegador: https://prasadtts.vercel.app
 - Repositorio de exportación ONNX (KevinAHM): https://github.com/KevinAHM/pocket-tts-onnx-export

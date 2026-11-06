@@ -1,7 +1,7 @@
 # Stage-org/appworld-qwen35-9b-meta-type4-iter1
 
 ## Resumen
-El modelo `appworld-qwen35-9b-meta-type4-iter1` es un ajuste fino de 9.409.813.744 parametros (aproximadamente 9,4B) publicado por el usuario Stage-org en HuggingFace. La etiqueta `qwen3_5` indica que la arquitectura base pertenece a la familia Qwen3.5, aunque no se especifica si se trata de un transformer denso o de una variante con mezcla de expertos. La nomenclatura del repositorio sugiere que el modelo esta especializado en tareas de agente sobre el benchmark AppWorld, concretamente en un tipo de dato "meta-type4" y en una primera iteracion de entrenamiento.
+El modelo `appworld-qwen35-9b-meta-type4-iter1` es un ajuste fino de 9.409.813.744 parametros (aproximadamente 9,4B) publicado por el usuario Stage-org en Hugging Face. La etiqueta `qwen3_5` indica que la arquitectura base pertenece a la familia Qwen3.5, aunque no se especifica si se trata de un transformer denso o de una variante con mezcla de expertos. La nomenclatura del repositorio sugiere que el modelo esta especializado en tareas de agente sobre el benchmark AppWorld, concretamente en un tipo de dato "meta-type4" y en una primera iteracion de entrenamiento.
 
 La informacion publica es extremadamente limitada: no se declara licencia, idiomas soportados, ni pipeline de uso. El tamano del repositorio (56,5 GB) es notablemente elevado para un modelo de 9,4B, lo que indica que los pesos se almacenan en alta precision (probablemente fp32) sin cuantizar. Con solo 33 descargas y 0 likes, se trata de un modelo experimental sin validacion comunitaria, por lo que cualquier uso en produccion requiere una evaluacion exhaustiva previa.
 
@@ -55,7 +55,7 @@ La comparacion se realiza con modelos de tamano similar (7-9B) de la misma famil
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| appworld-qwen35-9b-meta-type4-iter1 | 9,4B | no disponible | no disponible | HuggingFace (experimental) |
+| appworld-qwen35-9b-meta-type4-iter1 | 9,4B | no disponible | no disponible | Hugging Face (experimental) |
 | Qwen2.5-7B-Instruct | 7,6B | 32K (128K con YaRN) | Apache 2.0 | Amplia, con multiples cuantizaciones |
 | Llama-3.1-8B-Instruct | 8,0B | 128K | Llama 3.1 Community License | Amplia, con multiples cuantizaciones |
 | Mistral-7B-Instruct-v0.3 | 7,3B | 32K | Apache 2.0 | Amplia, con multiples cuantizaciones |
@@ -71,5 +71,5 @@ La principal diferencia radica en la ausencia de licencia y documentacion en el 
 - Modelo experimental: con solo 33 descargas y 0 likes, no hay validacion comunitaria. La fecha de creacion (2026) y el sufijo "iter1" indican que es un trabajo en progreso, posiblemente con errores de entrenamiento o de datos.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/Stage-org/appworld-qwen35-9b-meta-type4-iter1
+- Repositorio en Hugging Face: https://huggingface.co/Stage-org/appworld-qwen35-9b-meta-type4-iter1
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

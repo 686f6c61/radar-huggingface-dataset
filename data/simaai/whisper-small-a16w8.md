@@ -79,7 +79,7 @@ La diferencia principal es que esta version cuantizada es un artefacto compilado
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/simaai/whisper-small-a16w8)
+- [Modelo en Hugging Face](https://huggingface.co/simaai/whisper-small-a16w8)
 - [Modelo base OpenAI Whisper Small](https://huggingface.co/openai/whisper-small)
 - [Guia de inicio de SiMa.ai Neat](https://developer.sima.ai/software/getting-started/)
 - [API GenAI Model](https://developer.sima.ai/software/develop-apps/development-workflow/genai-model)

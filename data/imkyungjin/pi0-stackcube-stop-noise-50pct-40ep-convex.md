@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- [Modelo en HuggingFace: ImKyungjin/pi0-stackcube-stop-noise-50pct-40ep-convex](https://huggingface.co/ImKyungjin/pi0-stackcube-stop-noise-50pct-40ep-convex)
+- [Modelo en Hugging Face: ImKyungjin/pi0-stackcube-stop-noise-50pct-40ep-convex](https://huggingface.co/ImKyungjin/pi0-stackcube-stop-noise-50pct-40ep-convex)
 - [Dataset: taewonkoo/stack_cube_stop_noise_50pct_40ep](https://huggingface.co/datasets/taewonkoo/stack_cube_stop_noise_50pct_40ep)
 - [Documentacion de LeRobot](https://huggingface.co/docs/lerobot/index)
 - [Guia de entrenamiento de politicas en LeRobot](https://huggingface.co/docs/lerobot/il_robots#train-a-policy)

@@ -82,6 +82,6 @@ La comparación cuantitativa con alternativas no es posible con los datos dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rillotalk/S1-mini-mlx
+- Modelo en Hugging Face: https://huggingface.co/rillotalk/S1-mini-mlx
 - Modelo base: https://huggingface.co/superwhisper/s1-mini
 - Sitio del conversor: https://rillo.talk

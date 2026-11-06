@@ -4,7 +4,7 @@
 
 Este modelo es un ajuste fino (fine-tune) del checkpoint Shift90 de la familia Qwen3.5, con 9.653.104.368 parámetros (aproximadamente 9,65 mil millones) según los pesos en safetensors publicados en el repositorio. Lo publica el usuario `opensima12` y está especializado en el videojuego Cyberpunk 2077: el nombre del checkpoint (`Qwen3.5-9B-Cyberpunk2077-Xiaotian-Qin-V2-V3-5pass-Zhang-1pass`) y el identificador de la ejecución de entrenamiento (`cp2077_xt_qv23_5p_z1p_32g_b32_s42_j7757384`) indican que se han mezclado o combinado varios procesos de ajuste sobre contenidos del juego, presumiblemente para generación de diálogo, descripciones o decisiones de acción dentro del mismo.
 
-El modelo se distribuye como exportación de HuggingFace del checkpoint final (`checkpoint-123`) del mencionado run, partiendo del checkpoint `checkpoint-3876` del modelo base `ltzheng/Qwen3.5-9B-General-Game-Stage2-Shift90`. Mantiene los pesos de visión y la cabeza MTP (predicción multi-token) del modelo original, y la model card advierte de que debe decodificarse con `skip_special_tokens=False` porque los delimitadores de acción forman parte de la salida esperada.
+El modelo se distribuye como exportación de Hugging Face del checkpoint final (`checkpoint-123`) del mencionado run, partiendo del checkpoint `checkpoint-3876` del modelo base `ltzheng/Qwen3.5-9B-General-Game-Stage2-Shift90`. Mantiene los pesos de visión y la cabeza MTP (predicción multi-token) del modelo original, y la model card advierte de que debe decodificarse con `skip_special_tokens=False` porque los delimitadores de acción forman parte de la salida esperada.
 
 Su relevancia es limitada y muy específica: se trata de un artefacto de investigación sin evaluación publicada, con cero descargas y cero likes en el momento de redactar esta ficha, sin licencia declarada y sin conjunto de validación según el propio autor. Es interesante como ejemplo de pipeline de ajuste multimodal de grano fino sobre un transformer de ~9,6B con contexto de entrenamiento de 128K, pero no debe considerarse un modelo listo para producción.
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`opensima12/Qwen3.5-9B-Cyberpunk2077-...`) | 9,65B | 128K (entrenamiento) | Sin evaluación publicada | No disponible | HuggingFace, 0 descargas |
-| `ltzheng/Qwen3.5-9B-General-Game-Stage2-Shift90` (base) | ~9B (heredado) | No disponible en la informacion proporcionada | No disponible | No disponible | HuggingFace |
+| Este modelo (`opensima12/Qwen3.5-9B-Cyberpunk2077-...`) | 9,65B | 128K (entrenamiento) | Sin evaluación publicada | No disponible | Hugging Face, 0 descargas |
+| `ltzheng/Qwen3.5-9B-General-Game-Stage2-Shift90` (base) | ~9B (heredado) | No disponible en la informacion proporcionada | No disponible | No disponible | Hugging Face |
 | Otros modelos de ~8-9B de propósito general | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de alternativas en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/opensima12/Qwen3.5-9B-Cyberpunk2077-Xiaotian-Qin-V2-V3-5pass-Zhang-1pass
+- Modelo en Hugging Face: https://huggingface.co/opensima12/Qwen3.5-9B-Cyberpunk2077-Xiaotian-Qin-V2-V3-5pass-Zhang-1pass
 - Modelo base: https://huggingface.co/ltzheng/Qwen3.5-9B-General-Game-Stage2-Shift90
 - Paper, blog o repositorio del autor: no disponible en la información proporcionada
 - Demo o espacio de inferencia: no disponible

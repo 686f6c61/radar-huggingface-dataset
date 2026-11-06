@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pp111asd/Huihui-DeepSeek-V4.1-Flash-1017-abliterated-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/pp111asd/Huihui-DeepSeek-V4.1-Flash-1017-abliterated-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Repositorio original de huihui-ai: https://huggingface.co/huihui-ai/Huihui-DeepSeek-V4.1-Flash-1017-abliterated-GGUF
 - cvector-generator (llama.cpp): https://github.com/ggml-org/llama.cpp/blob/master/tools/cvector-generator/README.md

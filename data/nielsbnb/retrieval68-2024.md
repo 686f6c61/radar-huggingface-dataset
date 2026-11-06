@@ -31,7 +31,7 @@ No se proporciona información sobre el conjunto de datos de entrenamiento, el n
 - Al ser un checkpoint de inicialización sin entrenamiento, no se puede afirmar que el modelo sea capaz de generar texto, razonar, escribir código o realizar tareas de visión.
 - No hay soporte declarado para *tool calling*, agentes o razonamiento multi-paso.
 - No se especifican capacidades multilingües ni modos especiales (thinking, visión, audio).
-- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 
 ## Casos de uso
 
@@ -65,6 +65,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/nielsbnb/retrieval68-2024)
+- [Repositorio en Hugging Face](https://huggingface.co/nielsbnb/retrieval68-2024)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

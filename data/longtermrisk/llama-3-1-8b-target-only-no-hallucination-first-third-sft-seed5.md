@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su objetivo explícito de mitigar las alu
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una versión optimizada del Llama 3.1 8B Instruct. La arquitectura subyacente es un transformer decoder-only con atención multi-cabeza, normalización RMSNorm, y una ventana de contexto de 128k tokens. El entrenamiento se realizó con la librería Unsloth (para acelerar el proceso) y la librería TRL de HuggingFace, lo que indica el uso de técnicas de fine-tuning supervisado (SFT). No se especifica el tamaño del dataset, el número de pasos, ni si se emplearon métodos adicionales como RLHF o DPO. La etiqueta `target-only` y `first-third` en el nombre sugiere un diseño experimental para evaluar el impacto de seleccionar subconjuntos de datos, pero no hay detalles públicos al respecto.
+El modelo es un fine-tuning del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una versión optimizada del Llama 3.1 8B Instruct. La arquitectura subyacente es un transformer decoder-only con atención multi-cabeza, normalización RMSNorm, y una ventana de contexto de 128k tokens. El entrenamiento se realizó con la librería Unsloth (para acelerar el proceso) y la librería TRL de Hugging Face, lo que indica el uso de técnicas de fine-tuning supervisado (SFT). No se especifica el tamaño del dataset, el número de pasos, ni si se emplearon métodos adicionales como RLHF o DPO. La etiqueta `target-only` y `first-third` en el nombre sugiere un diseño experimental para evaluar el impacto de seleccionar subconjuntos de datos, pero no hay detalles públicos al respecto.
 
 ## Capacidades
 
@@ -51,16 +51,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - **VRAM estimada para inferencia**: para el modelo de 8B en precisión FP16 se requieren aproximadamente 16 GB de VRAM. Con cuantización INT8 se puede reducir a unos 8-10 GB, y con INT4 (GGUF) a unos 4-6 GB.
 - **GPU recomendadas**: tarjetas con al menos 16 GB de VRAM para FP16 (por ejemplo, RTX 4090, A100 40GB, H100). Para cuantización ligera, una RTX 3060 12GB o RTX 4070 pueden ser suficientes.
 - **Compatibilidad con GPU de consumo**: sí, es posible ejecutarlo en GPUs de consumo con cuantización, pero la velocidad será limitada.
-- **Opciones de despliegue**: al ser un modelo de la familia transformers, se puede servir con vLLM, TGI, llama.cpp (con conversión a GGUF) u Ollama. También es compatible con la API de HuggingFace Inference Endpoints.
+- **Opciones de despliegue**: al ser un modelo de la familia transformers, se puede servir con vLLM, TGI, llama.cpp (con conversión a GGUF) u Ollama. También es compatible con la API de Hugging Face Inference Endpoints.
 - **Latencia y throughput**: no se han publicado mediciones específicas. Para un modelo de 8B en una GPU A100, se puede esperar un throughput de 50-100 tokens/segundo en generación, pero depende de la implementación y la cuantización.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `longtermrisk/Llama-3.1-8B-target-only...` | 8B | 128k | Apache 2.0 | HuggingFace |
-| `unsloth/Meta-Llama-3.1-8B-Instruct` | 8B | 128k | Apache 2.0 | HuggingFace |
-| `meta-llama/Llama-3.1-8B-Instruct` | 8B | 128k | Llama 3.1 Community License | HuggingFace |
+| `longtermrisk/Llama-3.1-8B-target-only...` | 8B | 128k | Apache 2.0 | Hugging Face |
+| `unsloth/Meta-Llama-3.1-8B-Instruct` | 8B | 128k | Apache 2.0 | Hugging Face |
+| `meta-llama/Llama-3.1-8B-Instruct` | 8B | 128k | Llama 3.1 Community License | Hugging Face |
 
 El modelo se diferencia del base por el fine-tuning específico para reducir alucinaciones, aunque no hay evidencia pública de su eficacia. Comparado con otros fine-tunes como `NousResearch/Hermes-3-Llama-3.1-8B` (que también es Apache 2.0 y se centra en seguir instrucciones), este modelo carece de documentación y benchmarks, lo que lo hace menos atractivo para uso profesional sin evaluación previa.
 
@@ -75,6 +75,6 @@ El modelo se diferencia del base por el fine-tuning específico para reducir alu
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed5](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed5)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed5](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed5)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)
 - [TRL (Transformer Reinforcement Learning)](https://github.com/huggingface/trl)

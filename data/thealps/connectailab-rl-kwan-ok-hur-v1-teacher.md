@@ -6,7 +6,7 @@
 
 El modelo responde en formato JEV (identificador `typesafe/jev-1.13`): recibe un estado de la empresa en JSON y devuelve, para cada pregunta de tipo elección, la opción seleccionada, la distribución de probabilidades sobre las alternativas, un nivel de confianza y una etiqueta de motivo. Su entrenamiento combina una fase de imitación de un "presidente de reglas" (aprendizaje supervisado) y una fase de PPO que optimiza una función de valor compuesta por beneficio, satisfacción del cliente y evitación de riesgos.
 
-Es relevante como ejemplo de política RL pequeña, desplegable en CPU y con interfaz JSON tipada, pensada para docencia y experimentación en simulación empresarial. La model card declara explícitamente que se trata de un modelo educativo sobre un simulador sintético y que no garantiza ni predice resultados de gestión reales. El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, y su idioma declarado es únicamente coreano.
+Es relevante como ejemplo de política RL pequeña, desplegable en CPU y con interfaz JSON tipada, pensada para docencia y experimentación en simulación empresarial. La model card declara explícitamente que se trata de un modelo educativo sobre un simulador sintético y que no garantiza ni predice resultados de gestión reales. El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, y su idioma declarado es únicamente coreano.
 
 ## Especificaciones tecnicas
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-kwan-ok-hur-v1-teacher | Política RL (PPO) para simulación empresarial | No disponible | No aplica | 17,19 M KRW/mes, 96 % satisfacción, 1,9 incidentes | Apache 2.0 | HuggingFace (0 descargas) |
+| connectailab-rl-kwan-ok-hur-v1-teacher | Política RL (PPO) para simulación empresarial | No disponible | No aplica | 17,19 M KRW/mes, 96 % satisfacción, 1,9 incidentes | Apache 2.0 | Hugging Face (0 descargas) |
 | "Presidente de reglas" (línea base del propio proyecto) | Sistema de reglas determinista | No disponible | No aplica | 7,08 M KRW/mes, 71 % satisfacción, 11,5 incidentes | No disponible | Incluido en el simulador CONNECT TYCOON |
 | Otras políticas RL de decisión de la misma categoría | RL | No disponible | No aplica | No disponible | No disponible | No se han identificado alternativas comparables en la información disponible |
 
@@ -100,7 +100,7 @@ No se dispone de datos sobre otros modelos comparables de la misma categoría (p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/THEALPS/connectailab-rl-kwan-ok-hur-v1-teacher
+- Modelo en Hugging Face: https://huggingface.co/THEALPS/connectailab-rl-kwan-ok-hur-v1-teacher
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab (entrenamiento del modelo de decisión RL): https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

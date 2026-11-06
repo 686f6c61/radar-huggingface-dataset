@@ -25,7 +25,7 @@ Otros datos del repositorio: tamaño del repo 134,2 GB, 0 descargas, 0 *likes*, 
 
 ## Arquitectura y entrenamiento
 
-El modelo es un MoE de 67.000 millones de parámetros derivado de un estudiante de la familia Snowball. No hay entrenamiento asociado a esta publicación: los pesos son el resultado de una exportación en formato HuggingFace escrita por el trabajo de fusión y subida sin modificaciones. La receta aplicada es aritmética de tareas con dos donantes y el estudiante B como ancla, según la fórmula B + 0,5·(E − B) + 0,5·(E₂ − B), ejecutada con las herramientas de *weight merging* de Marin (PR #9974) sobre un job de CPU en Iris (CoreWeave cw-rno2a), con un coste de 33 minutos y sin uso de GPU.
+El modelo es un MoE de 67.000 millones de parámetros derivado de un estudiante de la familia Snowball. No hay entrenamiento asociado a esta publicación: los pesos son el resultado de una exportación en formato Hugging Face escrita por el trabajo de fusión y subida sin modificaciones. La receta aplicada es aritmética de tareas con dos donantes y el estudiante B como ancla, según la fórmula B + 0,5·(E − B) + 0,5·(E₂ − B), ejecutada con las herramientas de *weight merging* de Marin (PR #9974) sobre un job de CPU en Iris (CoreWeave cw-rno2a), con un coste de 33 minutos y sin uso de GPU.
 
 Un detalle técnico relevante es el tratamiento del sesgo de consulta del *router*: se mantiene en float32 tal como está en B, aunque los donantes lo exportan en bfloat16 con valores idénticos. El tokenizer y la plantilla de chat son los de B, sin cambios. Las evaluaciones se realizaron con el evaluador congelado Evalchemy (commit `ae362881`), sobre vLLM con 8×H100, contexto de 32.768 tokens, tope de generación de 30.720 tokens, *thinking* activado y muestreo sin semilla a temperatura 1.0. La variante a plena intensidad (a = b = 1.0) sufrió una regresión severa (GSM8K 50,0; GPQA-D 30,0) y no se ha publicado.
 
@@ -101,7 +101,7 @@ No disponible. La información proporcionada no incluye datos verificados de mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Merge-TA0.5
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Merge-TA0.5
 - Modelo base (commit `fdc3c3c5`): https://huggingface.co/open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92/tree/fdc3c3c5fff489d3fb04dcbc2387c179b1bf3fab
 - Evaluador Evalchemy (commit `ae362881`): https://github.com/marin-community/evalchemy/commit/ae362881cf53f869a6ad52c8a59fa17343c0b5f8
 - Informe del experimento: https://github.com/marin-community/marin/issues/9984 y https://github.com/marin-community/marin/issues/9984#issuecomment-6144923850

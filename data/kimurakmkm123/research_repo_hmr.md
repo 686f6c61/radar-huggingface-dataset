@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Precisión incluida | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `research_repo_hmr` (este repo) | Paquete de pesos HMR convertidos | bf16, INT8, TensorRT INT8/FP16 | Mixta (Apache-2.0, MIT, SAM, AGPL-3.0) | HuggingFace, 4,6 GB |
-| SAT-HMR (`ChiSu001/SAT-HMR`) | Modelo HMR original | Pesos originales (fp32) | Apache-2.0 | HuggingFace |
+| `research_repo_hmr` (este repo) | Paquete de pesos HMR convertidos | bf16, INT8, TensorRT INT8/FP16 | Mixta (Apache-2.0, MIT, SAM, AGPL-3.0) | Hugging Face, 4,6 GB |
+| SAT-HMR (`ChiSu001/SAT-HMR`) | Modelo HMR original | Pesos originales (fp32) | Apache-2.0 | Hugging Face |
 | ROMP (`Arthur151/ROMP`) | Modelo HMR original | Pesos `.pkl` originales | Apache-2.0 | GitHub |
-| SAM 3D Body (`facebook/sam-3d-body-dinov3`) | Modelo HMR original | Checkpoint original | SAM License | HuggingFace |
+| SAM 3D Body (`facebook/sam-3d-body-dinov3`) | Modelo HMR original | Checkpoint original | SAM License | Hugging Face |
 
 La diferencia principal frente a los originales no es de calidad de modelo, sino de formato: este repositorio ofrece variantes de menor precisión y motores compilados que los proyectos de origen no publican.
 
@@ -82,7 +82,7 @@ La diferencia principal frente a los originales no es de calidad de modelo, sino
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kimurakmkm123/research_repo_hmr
+- Repositorio en Hugging Face: https://huggingface.co/kimurakmkm123/research_repo_hmr
 - Licencias: https://huggingface.co/kimurakmkm123/research_repo_hmr/tree/main/licenses
 - SAT-HMR: https://huggingface.co/ChiSu001/SAT-HMR
 - ROMP: https://github.com/Arthur151/ROMP

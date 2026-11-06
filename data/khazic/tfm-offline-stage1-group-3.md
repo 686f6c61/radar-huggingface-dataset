@@ -2,7 +2,7 @@
 
 ## Resumen
 
-khazic/tfm-offline-stage1-group-3 es un repositorio de modelo alojado en HuggingFace por el usuario khazic. La nomenclatura del identificador sugiere que se trata de un artefacto derivado de un Trabajo de Fin de Máster (TFM), concretamente de una fase inicial ("stage1") de un entrenamiento o flujo "offline", y etiquetado como grupo 3, aunque esta interpretacion no puede confirmarse con la documentacion disponible.
+khazic/tfm-offline-stage1-group-3 es un repositorio de modelo alojado en Hugging Face por el usuario khazic. La nomenclatura del identificador sugiere que se trata de un artefacto derivado de un Trabajo de Fin de Máster (TFM), concretamente de una fase inicial ("stage1") de un entrenamiento o flujo "offline", y etiquetado como grupo 3, aunque esta interpretacion no puede confirmarse con la documentacion disponible.
 
 El repositorio se publico y actualizo el 14 de septiembre de 2026, ocupa 4,0 GB y acumula 0 descargas y 1 like en el momento de redactar esta ficha. No consta pipeline declarado, licencia, idiomas soportados ni ninguna model card con descripcion tecnica, por lo que se desconoce el problema concreto que resuelve, su arquitectura, su tamano y su contexto.
 
@@ -82,6 +82,6 @@ No disponible. No se ha podido identificar la categoria, el tamano ni la tarea d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/khazic/tfm-offline-stage1-group-3
+- Repositorio en Hugging Face: https://huggingface.co/khazic/tfm-offline-stage1-group-3
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.
 - Los resultados de la busqueda web corresponden a la aerolinea Aeroitalia (https://www.aeroitalia.com/) y no guardan relacion con el modelo.

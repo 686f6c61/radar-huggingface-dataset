@@ -2,7 +2,7 @@
 
 ## Resumen
 
-connectailab-rl-lco-v1-teacher es un modelo de aprendizaje por refuerzo profundo (deep reinforcement learning) publicado en HuggingFace por el usuario sunyoungKim. No se trata de un modelo de lenguaje, sino de una política o agente entrenado para la toma de decisiones en un entorno de tipo gymnasium, segun indican las etiquetas del repositorio (ppo, gymnasium, deep-reinforcement-learning, decision-making).
+connectailab-rl-lco-v1-teacher es un modelo de aprendizaje por refuerzo profundo (deep reinforcement learning) publicado en Hugging Face por el usuario sunyoungKim. No se trata de un modelo de lenguaje, sino de una política o agente entrenado para la toma de decisiones en un entorno de tipo gymnasium, segun indican las etiquetas del repositorio (ppo, gymnasium, deep-reinforcement-learning, decision-making).
 
 El modelo esta vinculado al ecosistema "connect-ai-lab" y a un entorno denominado "connect-tycoon", lo que sugiere que se ha entrenado para resolver tareas de decision secuencial dentro de una simulacion o juego. El sufijo "teacher" en el identificador podria indicar un rol de politica maestra en un esquema de destilacion, aunque esta informacion no se confirma en la ficha del repositorio.
 
@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no permite identificar modelos compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sunyoungKim/connectailab-rl-lco-v1-teacher
-- Repositorio espejo en HuggingFace: https://huggingface.co/lco-official/connectailab-rl-lco-v1-teacher
+- Hugging Face: https://huggingface.co/sunyoungKim/connectailab-rl-lco-v1-teacher
+- Repositorio espejo en Hugging Face: https://huggingface.co/lco-official/connectailab-rl-lco-v1-teacher
 - GitHub "connectailab" (posible relacion con el ecosistema): https://github.com/jsunsheep/connectailab
 - Canal de YouTube "CONNECT AI LAB": https://www.youtube.com/@CONNECT-AI-LAB

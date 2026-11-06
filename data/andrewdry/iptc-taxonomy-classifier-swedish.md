@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: al tratarse de un modelo con 117.653.760 parámetros, el tamaño de los pesos en safetensors es de aproximadamente 0.5 GB. En FP32, la VRAM necesaria sería de unos 0.5 GB; en FP16, unos 0.25 GB. Se estima que la inferencia puede realizarse con menos de 1 GB de memoria.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, como una NVIDIA GTX 1650 o superior, es suficiente. El modelo también puede ejecutarse en CPU.
 - Compatibilidad con GPU de consumo: sí, es un modelo ligero que cabe en tarjetas gráficas de gama baja y media.
-- Opciones de despliegue: puede servirse mediante HuggingFace Inference Endpoints (el repo está marcado como `endpoints_compatible`), la librería `sentence-transformers`, la librería `setfit`, o integrarse en pipelines de clasificación con `transformers`.
+- Opciones de despliegue: puede servirse mediante Hugging Face Inference Endpoints (el repo está marcado como `endpoints_compatible`), la librería `sentence-transformers`, la librería `setfit`, o integrarse en pipelines de clasificación con `transformers`.
 - Latencia y throughput: no disponibles. Al ser un modelo pequeño, se espera una latencia baja, pero no hay datos oficiales que lo confirmen.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AndrewDry/iptc-taxonomy-classifier-swedish
+- Modelo en Hugging Face: https://huggingface.co/AndrewDry/iptc-taxonomy-classifier-swedish
 - Repositorio de SetFit: https://github.com/huggingface/setfit
 - Paper de SetFit: https://arxiv.org/abs/2209.11055
 - Blogpost de SetFit: https://huggingface.co/blog/setfit

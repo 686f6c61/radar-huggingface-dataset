@@ -87,7 +87,7 @@ El hermano W4A16 ofrece mayor precision (98,5 % vs 97,1 %) y compatibilidad con 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dbirks/Muse-Glimmer-30B-NVFP4-AutoRound
+- Repositorio Hugging Face: https://huggingface.co/dbirks/Muse-Glimmer-30B-NVFP4-AutoRound
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Hermano int4 W4A16: https://huggingface.co/dbirks/Muse-Glimmer-30B-int4-AutoRound
 - Paper de AutoRound: https://arxiv.org/abs/2309.05516

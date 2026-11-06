@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kimi K2.7 Code es un modelo de lenguaje de enfoque agentico y orientado a codigo, desarrollado por Moonshot AI como evolucion de Kimi K2.6. Se distribuye bajo una arquitectura Mixture-of-Experts (MoE) con 1 billon de parametros totales y 32B activos por token, atencion MLA, ventana de contexto de 256K tokens e integracion de un encoder de vision MoonViT de 400M de parametros. La ficha que se analiza aqui no es el modelo original, sino una version derivada publicada por el usuario rAVEUK en HuggingFace, etiquetada con compressed-tensors y unsloth, y cuyo peso safetensors declara 1.026.879.376.368 parametros con un repositorio de 595,2 GB.
+Kimi K2.7 Code es un modelo de lenguaje de enfoque agentico y orientado a codigo, desarrollado por Moonshot AI como evolucion de Kimi K2.6. Se distribuye bajo una arquitectura Mixture-of-Experts (MoE) con 1 billon de parametros totales y 32B activos por token, atencion MLA, ventana de contexto de 256K tokens e integracion de un encoder de vision MoonViT de 400M de parametros. La ficha que se analiza aqui no es el modelo original, sino una version derivada publicada por el usuario rAVEUK en Hugging Face, etiquetada con compressed-tensors y unsloth, y cuyo peso safetensors declara 1.026.879.376.368 parametros con un repositorio de 595,2 GB.
 
 El problema que aborda es la ejecucion de tareas de ingenieria de software de horizonte largo: completar flujos de trabajo complejos de extremo a extremo. Segun la model card del modelo base, esta version mejora sustancialmente los resultados en tareas de codigo reales y reduce el consumo de tokens de razonamiento en torno a un 30 % respecto a Kimi K2.6, lo que abarata la inferencia en agentes que razonan antes de actuar. Su relevancia actual radica en la combinacion de contexto muy largo (256K), capacidades multimodales (pipeline image-text-to-text) y un perfil de benchmarks orientado a agentes y herramientas (MCP Atlas, MCP Mark Verified, Kimi Claw 24/7 Bench).
 
@@ -36,7 +36,7 @@ Es importante senalar que el repositorio analizado acumula 0 descargas y 0 likes
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer disperso de tipo Mixture-of-Experts con atencion Multi-head Latent Attention (MLA), que comprime el cache de claves y valores y resulta especialmente relevante para sostener una ventana de 256K tokens con un coste de memoria contenido. El modelo tiene 61 capas (una densa), dimension oculta de atencion de 7168, 64 cabezas de atencion, y una capa MoE con 384 expertos de dimension oculta 2048 cada uno, de los que se activan 8 por token, mas un experto compartido que se ejecuta siempre. La funcion de activacion es SwiGLU y el vocabulario es de 160K entradas. Incluye ademas un encoder de vision MoonViT de 400M de parametros, lo que explica que el pipeline declarado en HuggingFace sea image-text-to-text y que el modelo pueda procesar entradas visuales junto a texto.
+La arquitectura es un transformer disperso de tipo Mixture-of-Experts con atencion Multi-head Latent Attention (MLA), que comprime el cache de claves y valores y resulta especialmente relevante para sostener una ventana de 256K tokens con un coste de memoria contenido. El modelo tiene 61 capas (una densa), dimension oculta de atencion de 7168, 64 cabezas de atencion, y una capa MoE con 384 expertos de dimension oculta 2048 cada uno, de los que se activan 8 por token, mas un experto compartido que se ejecuta siempre. La funcion de activacion es SwiGLU y el vocabulario es de 160K entradas. Incluye ademas un encoder de vision MoonViT de 400M de parametros, lo que explica que el pipeline declarado en Hugging Face sea image-text-to-text y que el modelo pueda procesar entradas visuales junto a texto.
 
 Segun la informacion disponible, Kimi K2.7 Code se construye sobre Kimi K2.6 con mejoras centradas en tareas de codigo de horizonte largo y en eficiencia de tokens: la model card indica una reduccion de aproximadamente el 30 % en el uso de tokens de razonamiento respecto a la version anterior. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO u otras formas de alineamiento; esos datos no estan disponibles. El repositorio concreto analizado es una transformacion de terceros: incorpora la etiqueta compressed-tensors y referencias a herramientas de Unsloth, y su tamano en disco (595,2 GB) es coherente con una cuantizacion de aproximadamente 4,6 bits por parametro de media sobre los 1,03 B de parametros declarados, aunque el detalle exacto de los ficheros de cuantizacion no se detalla en la informacion proporcionada.
 
@@ -117,7 +117,7 @@ La comparacion con GPT-5.5 y Claude Opus 4.8 solo puede hacerse por resultados d
 - Licencia del modelo base: https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/main/LICENSE
 - Pagina de producto Kimi Code: https://www.kimi.com/code
 - Sitio de Moonshot AI: https://www.moonshot.ai
-- Organizacion Moonshot AI en HuggingFace: https://huggingface.co/moonshotai
+- Organizacion Moonshot AI en Hugging Face: https://huggingface.co/moonshotai
 - Organizacion Moonshot AI en ModelScope: https://modelscope.cn/organization/moonshotai
 - Twitter de Kimi: https://twitter.com/kimi_moonshot
 - Discord de Kimi: https://discord.gg/TYU2fdJykW

@@ -69,8 +69,8 @@ La model card menciona graficos (plots.png) y declara las metricas medidas: memo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PrunaAI/livekit-turn-detector-HQQ-4bit-smashed | no disponible | no disponible | HQQ 4 bits | no disponible (hereda la del modelo base) | HuggingFace, libreria pruna-ai |
-| livekit/turn-detector (modelo base) | no disponible | no disponible | pesos originales sin cuantizar (segun la informacion disponible) | la que declare el repositorio original, no disponible en esta ficha | HuggingFace |
+| PrunaAI/livekit-turn-detector-HQQ-4bit-smashed | no disponible | no disponible | HQQ 4 bits | no disponible (hereda la del modelo base) | Hugging Face, libreria pruna-ai |
+| livekit/turn-detector (modelo base) | no disponible | no disponible | pesos originales sin cuantizar (segun la informacion disponible) | la que declare el repositorio original, no disponible en esta ficha | Hugging Face |
 | Otras alternativas de deteccion de turno (detectores semanticos, VAD) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada solo permite comparar el artefacto cuantizado con su modelo base. La ventaja declarada de la version de Pruna es la reduccion de memoria en disco y en inferencia gracias a HQQ 4 bits, a cambio de una posible variacion en la calidad de salida, tal y como advierte la propia model card. No hay datos para comparar contra otros detectores de turno de codigo abierto.
@@ -89,7 +89,7 @@ La informacion proporcionada solo permite comparar el artefacto cuantizado con s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PrunaAI/livekit-turn-detector-HQQ-4bit-smashed
+- Modelo en Hugging Face: https://huggingface.co/PrunaAI/livekit-turn-detector-HQQ-4bit-smashed
 - Modelo base: https://huggingface.co/livekit/turn-detector
 - Pruna AI (web): https://www.pruna.ai/
 - Repositorio de pruna en GitHub: https://github.com/PrunaAI/pruna

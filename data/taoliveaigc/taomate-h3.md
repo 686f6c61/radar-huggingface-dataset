@@ -82,8 +82,8 @@ Notas metodologicas declaradas por el autor: el tiempo puro de DiT excluye la ca
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento declarado (480x864, 10 s) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TaoMate-H3 | Adaptador LoRA sobre MiniMax H3 | no disponible (rango 128, alpha 128) | no aplica; bloques de 5 s con cache KV limpia | 14,810 s de DiT; 17,287 s hasta primer video reproducible | MiniMax H3 Community License | HuggingFace, 46 descargas, 9 likes |
-| MiniMax H3 (FL2VA) | Modelo base de difusion audio-video | no disponible | no disponible | 169,572 s de DiT; 183,313 s hasta primer video reproducible | MiniMax H3 Community License | HuggingFace (MiniMaxAI/MiniMax-H3) |
+| TaoMate-H3 | Adaptador LoRA sobre MiniMax H3 | no disponible (rango 128, alpha 128) | no aplica; bloques de 5 s con cache KV limpia | 14,810 s de DiT; 17,287 s hasta primer video reproducible | MiniMax H3 Community License | Hugging Face, 46 descargas, 9 likes |
+| MiniMax H3 (FL2VA) | Modelo base de difusion audio-video | no disponible | no disponible | 169,572 s de DiT; 183,313 s hasta primer video reproducible | MiniMax H3 Community License | Hugging Face (MiniMaxAI/MiniMax-H3) |
 
 No se dispone de informacion en el material proporcionado sobre otros adaptadores de streaming audio-video comparables, ni sobre modelos de generacion de video con audio de otros proveedores, por lo que la comparativa con alternativas adicionales no esta disponible.
 
@@ -103,10 +103,10 @@ No se dispone de informacion en el material proporcionado sobre otros adaptadore
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TaoLiveAIGC/TaoMate-H3
+- Modelo en Hugging Face: https://huggingface.co/TaoLiveAIGC/TaoMate-H3
 - Repositorio GitHub de TaoMate-H3: https://github.com/TaoLiveAIGC/TaoMate-H3
 - Organizacion TaoLive AIGC: https://github.com/TaoLiveAIGC
-- Modelo base MiniMax H3 en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Modelo base MiniMax H3 en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio GitHub de MiniMax H3: https://github.com/MiniMax-AI/MiniMax-H3
 - Licencia: archivo LICENSE incluido en el repositorio del modelo (MiniMax H3 Community License Agreement)
 - Busqueda web: no se han encontrado resultados relevantes sobre este modelo; las busquedas realizadas devolvieron unicamente enlaces a sitios de noticias sin relacion con el modelo.

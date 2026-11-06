@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Electivire es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de redactar esta ficha, la informacion publica disponible es minima: la model card se limita al bloque de metadatos de licencia, sin descripcion del modelo, sin pipeline declarado, sin idiomas soportados y sin resultados de evaluacion. El repositorio ocupa 0,1 GB y no registra descargas ni "likes".
+Electivire es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de redactar esta ficha, la informacion publica disponible es minima: la model card se limita al bloque de metadatos de licencia, sin descripcion del modelo, sin pipeline declarado, sin idiomas soportados y sin resultados de evaluacion. El repositorio ocupa 0,1 GB y no registra descargas ni "likes".
 
 No es posible confirmar que tipo de modelo es (texto, vision, audio, embedding), su arquitectura ni su procedencia de entrenamiento, ya que el autor no ha documentado ninguno de estos extremos. El nombre del repositorio remite a una convencion de nomenclatura informal, habitual en experimentos personales o publicaciones de prueba.
 
@@ -56,8 +56,8 @@ Advertencia previa: al no existir documentacion de capacidades ni evaluaciones p
 - Clasificacion o etiquetado de texto: si el modelo resultase ser un modelo de lenguaje pequeno, podria emplearse en tareas de clasificacion con pocas clases, siempre que se validase su calidad frente a una linea base como un clasificador clasico.
 - Generacion de texto auxiliar en prototipos: util unicamente en entornos de experimentacion donde los errores no tengan consecuencias, dada la ausencia de evaluaciones publicadas.
 - Experimentacion academica con tecnicas de ajuste fino: el repositorio podria servir como punto de partida para estudiar tecnicas de entrenamiento, pero sin garantia alguna sobre la calidad de los pesos.
-- Pruebas de integracion en pipelines de HuggingFace Transformers: comprobar la compatibilidad con `AutoModel` y `pipeline()` y documentar los resultados obtenidos.
-- Analisis de reproducibilidad: evaluar si el repositorio contiene pesos, tokenizador y configuracion coherentes, como ejercicio de auditoria de publicaciones en HuggingFace.
+- Pruebas de integracion en pipelines de Hugging Face Transformers: comprobar la compatibilidad con `AutoModel` y `pipeline()` y documentar los resultados obtenidos.
+- Analisis de reproducibilidad: evaluar si el repositorio contiene pesos, tokenizador y configuracion coherentes, como ejercicio de auditoria de publicaciones en Hugging Face.
 - Banco de pruebas para cuantizacion: si los pesos son reales y de pequeno tamano, podrian utilizarse para medir diferencias de perplejidad entre fp16, int8 e int4, aunque el valor de la conclusion seria limitado sin un modelo de referencia.
 
 ## Benchmarks y rendimiento
@@ -100,5 +100,5 @@ No disponible. No es posible establecer una comparativa porque se desconoce la c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Electivire
+- Hugging Face: https://huggingface.co/Ryanham1lton/Electivire
 - No se han encontrado otros enlaces relevantes (papers, repositorios, blogs o demos) en la busqueda web realizada; los resultados obtenidos correspondian a paginas genericas de buscadores y no guardan relacion con el modelo.

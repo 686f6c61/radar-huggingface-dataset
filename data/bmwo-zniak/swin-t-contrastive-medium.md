@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swin T for Contrastive es un repositorio experimental publicado por el usuario bmwo-zniak en HuggingFace que contiene una implementación de un codificador visual basado en Swin Transformer (variante tiny) orientado a aprendizaje contrastivo. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con una inicialización válida para pruebas de humo (smoke tests). El propio autor indica explícitamente que el checkpoint `model.safetensors` "no se presenta como un checkpoint de benchmark entrenado" y que no se reclama ninguna puntuación en el repositorio.
+Swin T for Contrastive es un repositorio experimental publicado por el usuario bmwo-zniak en Hugging Face que contiene una implementación de un codificador visual basado en Swin Transformer (variante tiny) orientado a aprendizaje contrastivo. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con una inicialización válida para pruebas de humo (smoke tests). El propio autor indica explícitamente que el checkpoint `model.safetensors` "no se presenta como un checkpoint de benchmark entrenado" y que no se reclama ninguna puntuación en el repositorio.
 
 El modelo emplea la arquitectura Swin T (hierarchical vision transformer con atención de ventanas desplazadas), con atención tipo flash, fusión bilinear, activación approximate GELU y normalización por batch. La receta de entrenamiento por defecto especifica el optimizador LAMB con un schedule de warmup lineal. El repositorio incluye `inference.py`, `config.json`, `training_args.json` y el checkpoint de inicialización, y está liberado bajo licencia Apache 2.0.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativos para este repositorio, por lo
 - No existe auditoría de robustez, equidad ni transferencia de dominio, tal y como reconoce el propio autor.
 - No hay benchmarks, métricas ni comparaciones publicadas; cualquier afirmación de rendimiento sería especulativa.
 - Inconsistencia documental: el nombre indica "swin-t" pero la configuración declara escala "xlarge"; además, el recuento de parámetros reportado no es coherente con una Swin-T estándar.
-- Idiomas y pipeline no están declarados en los metadatos de HuggingFace.
+- Idiomas y pipeline no están declarados en los metadatos de Hugging Face.
 - Licencia Apache 2.0 permite uso comercial del código y los pesos, pero el autor advierte de revisar por separado los términos de los datos de origen si se emplean datasets externos.
 - Implementación personalizada: las APIs de carga automática (por ejemplo, `AutoModel`) requieren un adaptador explícito, lo que complica su integración en stacks estándar.
 - Fecha de creación declarada en 2026-10-07, posterior a la fecha habitual de referencia; conviene verificar la vigencia real del repositorio antes de usarlo.
@@ -89,8 +89,8 @@ No se dispone de datos de rendimiento comparativos para este repositorio, por lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bmwo-zniak/swin-t-contrastive-medium
+- Modelo en Hugging Face: https://huggingface.co/bmwo-zniak/swin-t-contrastive-medium
 - Paper de Swin Transformer: no disponible en la información proporcionada (el repositorio no incluye referencia bibliográfica).
-- Repositorio de código asociado: no disponible (solo se listan los ficheros `inference.py`, `README.md`, `config.json`, `training_args.json` y `model.safetensors` dentro del propio repo de HuggingFace).
+- Repositorio de código asociado: no disponible (solo se listan los ficheros `inference.py`, `README.md`, `config.json`, `training_args.json` y `model.safetensors` dentro del propio repo de Hugging Face).
 - Demo: no disponible.
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos no guardan ninguna relación con el modelo ni con aprendizaje automático, por lo que se descartan.

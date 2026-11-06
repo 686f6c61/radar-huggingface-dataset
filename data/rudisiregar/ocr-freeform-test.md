@@ -74,6 +74,6 @@ No disponible. El repositorio no es un modelo entrenado y no existe una categori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rudisiregar/ocr-freeform-test
+- Hugging Face: https://huggingface.co/rudisiregar/ocr-freeform-test
 - Nota principal (`reading.md`): https://huggingface.co/rudisiregar/ocr-freeform-test/blob/main/reading.md
 - Model card (`README.md`): https://huggingface.co/rudisiregar/ocr-freeform-test/blob/main/README.md

@@ -86,7 +86,7 @@ En los benchmarks de SWE-bench, Qwen3.6-35B-A3B supera a Gemma4-31B y se acerca 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/best26/stages-v3-p99
+- Repositorio Hugging Face: https://huggingface.co/best26/stages-v3-p99
 - Perfil del autor: https://huggingface.co/best26
 - Blog oficial de Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Licencia del modelo original: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE

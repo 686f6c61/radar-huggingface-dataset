@@ -78,8 +78,8 @@ Notas sobre la medicion: GPQA Diamond se puntua sobre las 198 preguntas con mues
 
 | Modelo | Parametros totales | Contexto | GSM8K | GPQA Diamond | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| amd/DeepSeek-V4.1-Flash-Quark-MXFP4 (este modelo) | 483.858.771.154 | no disponible | 92,34 | 90,40 | MIT | HuggingFace, safetensors, vLLM |
-| deepseek-ai/DeepSeek-V4.1-Flash (base) | no disponible | no disponible | 92,87 | 89,39 | MIT | HuggingFace |
+| amd/DeepSeek-V4.1-Flash-Quark-MXFP4 (este modelo) | 483.858.771.154 | no disponible | 92,34 | 90,40 | MIT | Hugging Face, safetensors, vLLM |
+| deepseek-ai/DeepSeek-V4.1-Flash (base) | no disponible | no disponible | 92,87 | 89,39 | MIT | Hugging Face |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion documentada es contra el modelo base sin cuantizar. No se dispone de datos sobre otros modelos MoE o multimodales de tamano comparable en la informacion proporcionada.
@@ -98,7 +98,7 @@ La unica comparacion documentada es contra el modelo base sin cuantizar. No se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/DeepSeek-V4.1-Flash-Quark-MXFP4
+- Modelo en Hugging Face: https://huggingface.co/amd/DeepSeek-V4.1-Flash-Quark-MXFP4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Licencia del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/LICENSE
 - Documentacion de AMD Quark: https://quark.docs.amd.com/latest/index.html

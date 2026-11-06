@@ -85,7 +85,7 @@ No disponible. No se encontraron comparaciones directas con otros modelos de vis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Timilehin/barbados-lands-surveys-plot-automation-0.821264226
+- Hugging Face: https://huggingface.co/Timilehin/barbados-lands-surveys-plot-automation-0.821264226
 - GitHub (solucion de referencia): https://github.com/papapizzachess/Barbados/blob/main/README.md
 - GitHub (desafio completo): https://github.com/josephgitau/Barbados-Lands-and-Surveys-Plot-Automation-Challenge
 - CompeteHub (descripcion del desafio): https://www.competehub.dev/en/competitions/zindibarbados-lands-and-surveys-plot-automation-challenge

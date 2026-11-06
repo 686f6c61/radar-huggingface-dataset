@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `harshgupta1/Claude` alojado en HuggingFace no contiene información técnica sustancial. La model card únicamente declara la licencia `apache-2.0` y no incluye descripción, arquitectura, parámetros, ni datos de entrenamiento. Con cero descargas y cero likes, se trata de un repositorio vacío o un placeholder creado por el usuario `harshgupta1` el 31 de agosto de 2026. No existe ningún artefacto de modelo, tokenizador o configuración que permita su uso o evaluación.
+El repositorio `harshgupta1/Claude` alojado en Hugging Face no contiene información técnica sustancial. La model card únicamente declara la licencia `apache-2.0` y no incluye descripción, arquitectura, parámetros, ni datos de entrenamiento. Con cero descargas y cero likes, se trata de un repositorio vacío o un placeholder creado por el usuario `harshgupta1` el 31 de agosto de 2026. No existe ningún artefacto de modelo, tokenizador o configuración que permita su uso o evaluación.
 
 Es importante señalar que el nombre "Claude" coincide con la familia de modelos de Anthropic, pero este repositorio no tiene ninguna relación con dicha empresa ni con sus modelos. Las búsquedas web devuelven resultados sobre Claude de Anthropic, pero no hay evidencia de que este repositorio contenga algo similar. Por tanto, cualquier desarrollador o investigador que encuentre este repositorio debe entender que no es un modelo funcional ni descargable.
 
@@ -58,7 +58,7 @@ No disponible. No existe información que permita comparar este repositorio con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/harshgupta1/Claude
+- Repositorio en Hugging Face: https://huggingface.co/harshgupta1/Claude
 - Resultados de búsqueda web (no relacionados con este repositorio):
   - Portfolio de Harsh Gupta: https://github.com/The-inspiringHarsh/harsh-gupta-portfolio/blob/main/CLAUDE.md
   - Claude de Anthropic: https://claude.com/

@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| florianvoss/Gemma3-SigLIP448-GPTQ-a16w4-4k-448 | Gemma 3 4B + SigLIP448 | 4.096 tokens | Paquete compilado MLA para Modalix | other (sin licencia unificada) | HuggingFace, 0 descargas |
-| simaai/Gemma3-SigLIP448-GPTQ-Safetensors | Gemma 3 4B + SigLIP448 | No disponible | Safetensors cuantizado GPTQ | No disponible | HuggingFace |
-| simaai/Gemma3-SigLIP448-GPTQ-a16w4 | Gemma 3 4B + SigLIP448 | No disponible | Pesos cuantizados a16w4 | No disponible | HuggingFace |
-| stribomon/gemma3-siglip448 | Gemma 3 4B + SigLIP448 | No disponible | Safetensors | No disponible | HuggingFace |
+| florianvoss/Gemma3-SigLIP448-GPTQ-a16w4-4k-448 | Gemma 3 4B + SigLIP448 | 4.096 tokens | Paquete compilado MLA para Modalix | other (sin licencia unificada) | Hugging Face, 0 descargas |
+| simaai/Gemma3-SigLIP448-GPTQ-Safetensors | Gemma 3 4B + SigLIP448 | No disponible | Safetensors cuantizado GPTQ | No disponible | Hugging Face |
+| simaai/Gemma3-SigLIP448-GPTQ-a16w4 | Gemma 3 4B + SigLIP448 | No disponible | Pesos cuantizados a16w4 | No disponible | Hugging Face |
+| stribomon/gemma3-siglip448 | Gemma 3 4B + SigLIP448 | No disponible | Safetensors | No disponible | Hugging Face |
 | Google Gemma 3 (familia oficial) | 1B, 4B, 12B, 27B | Hasta 128K tokens en las variantes oficiales | Safetensors, GGUF, etc. | Terminos de uso de Gemma | Distribucion oficial de Google DeepMind |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/florianvoss/Gemma3-SigLIP448-GPTQ-a16w4-4k-448
+- Modelo en Hugging Face: https://huggingface.co/florianvoss/Gemma3-SigLIP448-GPTQ-a16w4-4k-448
 - Checkpoint fuente en safetensors: https://huggingface.co/simaai/Gemma3-SigLIP448-GPTQ-Safetensors
 - Modelo base alternativo: https://huggingface.co/simaai/Gemma3-SigLIP448-GPTQ-a16w4
 - Modelo original con SigLIP448: https://huggingface.co/stribomon/gemma3-siglip448

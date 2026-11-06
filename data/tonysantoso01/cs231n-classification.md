@@ -63,13 +63,13 @@ No disponible. Este repositorio no contiene un modelo entrenado, por lo que no e
 - **No es un modelo entrenado**: el checkpoint de inicializacion no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio, segun declara el propio autor.
 - **Riesgo de alucinacion**: no aplicable, al no ser un modelo generativo de texto.
 - **Tamano de parametros engañoso**: la etiqueta "xlarge" en la configuracion no se corresponde con el tamano real del modelo (16.576 parametros), lo que puede inducir a error si no se lee la documentacion completa.
-- **Sin soporte de carga automatica**: las APIs genericas de HuggingFace no pueden cargar este modelo sin un adaptador explicito, lo que limita su integracion en pipelines estandar.
+- **Sin soporte de carga automatica**: las APIs genericas de Hugging Face no pueden cargar este modelo sin un adaptador explicito, lo que limita su integracion en pipelines estandar.
 - **Licencia MIT**: permite uso comercial, pero el autor advierte que deben revisarse por separado los terminos de las fuentes de datos si se usa con datasets externos.
 - **Sin garantias de produccion**: el autor recomienda tratar la implementacion como un punto de partida experimental y documentar por separado cualquier resultado de un checkpoint futuro entrenado.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tonysantoso01/cs231n-classification
+- Repositorio Hugging Face: https://huggingface.co/tonysantoso01/cs231n-classification
 - Material del curso CS231n (clasificacion de imagenes): https://cs231n.github.io/classification/
 - Curso CS231n de Stanford: https://cs231n.stanford.edu/
 - Notas del curso CS231n: https://cs231n.github.io/

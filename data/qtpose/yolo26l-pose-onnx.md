@@ -83,7 +83,7 @@ La comparativa se limita a la información disponible: no se han publicado métr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qtpose/yolo26l-pose-onnx
+- Modelo en Hugging Face: https://huggingface.co/qtpose/yolo26l-pose-onnx
 - Organización qtpose: https://huggingface.co/qtpose
 - Licencia Ultralytics: https://www.ultralytics.com/license
 - Documentación Ultralytics: https://docs.ultralytics.com

@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-0.8b-rag-jsquad-lora-v2 | 873M | No disponible | RAG extractivo en japonés (JSQuAD) | Other (heredada del base) | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8B | No disponible | Modelo generalista multilingüe | Según el modelo base | HuggingFace |
+| qwen3.5-0.8b-rag-jsquad-lora-v2 | 873M | No disponible | RAG extractivo en japonés (JSQuAD) | Other (heredada del base) | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8B | No disponible | Modelo generalista multilingüe | Según el modelo base | Hugging Face |
 | Modelos ajustados sobre JSQuAD de mayor tamaño | No disponible | No disponible | Comprensión lectora en japonés | Variable | No disponible |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de este ajuste con alternativas de la misma categoría.
@@ -82,6 +82,6 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ssahnuatdaa/qwen3.5-0.8b-rag-jsquad-lora-v2
+- Hugging Face: https://huggingface.co/ssahnuatdaa/qwen3.5-0.8b-rag-jsquad-lora-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset JSQuAD / JGLUE: https://github.com/yahoojapan/JGLUE

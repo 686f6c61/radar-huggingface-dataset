@@ -90,7 +90,7 @@ Las tres variantes son cuantizaciones del mismo modelo base de Meta. La variante
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/kingjones777/Muse-Glimmer-30B-ROCmFPX-Q8_0-AGENT-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/kingjones777/Muse-Glimmer-30B-ROCmFPX-Q8_0-AGENT-GGUF
 - Variante 4-bit (ROCmFP4): https://huggingface.co/kingjones777/Muse-Glimmer-30B-ROCmFP4-Strix-Halo-DFlash-GGUF
 - Variante 8-bit plain: https://huggingface.co/kingjones777/Muse-Glimmer-30B-ROCmFPX-Q8_0-GGUF
 - Guia de agente local de Muse-Glimmer (GitHub): https://github.com/cobusgreyling/Muse-Glimmer

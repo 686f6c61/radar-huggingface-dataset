@@ -74,8 +74,8 @@ La comparativa se limita al modelo base y su versión cuantizada, ya que no exis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Shyzen911/qwen2-vl-visual-search-adapter
+- Repositorio Hugging Face: https://huggingface.co/Shyzen911/qwen2-vl-visual-search-adapter
 - Paper de Qwen2-VL: https://arxiv.org/abs/2409.12191
 - Repositorio oficial de Qwen-VL: https://github.com/QwenLM/Qwen-VL
-- Documentación de Qwen2-VL en HuggingFace: https://huggingface.co/docs/transformers/v4.45.1/model_doc/qwen2_vl
+- Documentación de Qwen2-VL en Hugging Face: https://huggingface.co/docs/transformers/v4.45.1/model_doc/qwen2_vl
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

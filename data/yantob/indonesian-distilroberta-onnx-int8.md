@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yantob/indonesian-distilroberta-onnx-int8 es un repositorio de pesos publicado en HuggingFace por el usuario Yantob, distribuido bajo licencia Apache 2.0 y con un tamano de repositorio de 0,2 GB. El nombre del repositorio indica que se trata de un modelo de la familia DistilRoBERTa orientado al idioma indonesio, exportado al formato ONNX y cuantizado a precision INT8. La model card publicada por el autor contiene unicamente la declaracion de licencia, sin documentacion adicional sobre el proceso de entrenamiento, los datos utilizados ni lasmetricas de evaluacion.
+Yantob/indonesian-distilroberta-onnx-int8 es un repositorio de pesos publicado en Hugging Face por el usuario Yantob, distribuido bajo licencia Apache 2.0 y con un tamano de repositorio de 0,2 GB. El nombre del repositorio indica que se trata de un modelo de la familia DistilRoBERTa orientado al idioma indonesio, exportado al formato ONNX y cuantizado a precision INT8. La model card publicada por el autor contiene unicamente la declaracion de licencia, sin documentacion adicional sobre el proceso de entrenamiento, los datos utilizados ni lasmetricas de evaluacion.
 
 El repositorio no registra descargas ni interacciones en el momento de la consulta, no declara tarea (pipeline) ni idiomas soportados en los metadatos, y fue creado y actualizado en septiembre de 2026. Esto lo situa como un artefacto de publicacion reciente y sinvalidacion externa conocida.
 
@@ -73,7 +73,7 @@ No disponible. No se ha publicado informacion suficiente (parametros confirmados
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Yantob/indonesian-distilroberta-onnx-int8 | No disponible | No disponible | Apache 2.0 | HuggingFace, formato ONNX INT8 |
+| Yantob/indonesian-distilroberta-onnx-int8 | No disponible | No disponible | Apache 2.0 | Hugging Face, formato ONNX INT8 |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No disponible. No se ha publicado informacion suficiente (parametros confirmados
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Yantob/indonesian-distilroberta-onnx-int8
+- Repositorio en Hugging Face: https://huggingface.co/Yantob/indonesian-distilroberta-onnx-int8
 - Model card del autor: https://huggingface.co/Yantob/indonesian-distilroberta-onnx-int8/blob/main/README.md
 - Paper, blog o repositorio adicional: no disponible
 - Demos o espacios asociados: no disponible

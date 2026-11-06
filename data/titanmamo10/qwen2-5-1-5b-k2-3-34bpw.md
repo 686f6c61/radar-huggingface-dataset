@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-1.5B-K2-3.34bpw es una cuantización experimental del modelo Qwen2.5-1.5B de Alibaba, publicada por el usuario TitanMamo10 en HuggingFace. El modelo base es un transformer denso de 1.54 B de parámetros, y esta versión aplica un formato de cuantización propio llamado **K2**, basado en cuantización trellis (TCQ, de la familia EXL3/QTIP), a una tasa de 3,34 bits por peso en el cuerpo del modelo. El objetivo es demostrar que se puede lograr una calidad cercana a F16 con un consumo de memoria muy inferior al de los formatos k-quants tradicionales de GGUF.
+Qwen2.5-1.5B-K2-3.34bpw es una cuantización experimental del modelo Qwen2.5-1.5B de Alibaba, publicada por el usuario TitanMamo10 en Hugging Face. El modelo base es un transformer denso de 1.54 B de parámetros, y esta versión aplica un formato de cuantización propio llamado **K2**, basado en cuantización trellis (TCQ, de la familia EXL3/QTIP), a una tasa de 3,34 bits por peso en el cuerpo del modelo. El objetivo es demostrar que se puede lograr una calidad cercana a F16 con un consumo de memoria muy inferior al de los formatos k-quants tradicionales de GGUF.
 
 El autor publica dos variantes del mismo tamaño: una cuantización post-entrenamiento pura (PTQ con block-LDLQ) y otra con **SantanaQAT**, un ajuste cuantización-consciente que entrena solo los tensores de escala (0,09 % de los parámetros) en 605 segundos sobre una GPU de 12 GB. La variante QAT alcanza una perplejidad de 10,2886, inferior incluso a la referencia F16 (10,3099), manteniendo un 79,7 % de retención en las tareas de código medidas.
 
@@ -97,7 +97,7 @@ En términos de calidad por bit, K2 a 3,34 bpw supera a IQ3_KS (≈20 % mejor pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TitanMamo10/Qwen2.5-1.5B-K2-3.34bpw
+- Modelo en Hugging Face: https://huggingface.co/TitanMamo10/Qwen2.5-1.5B-K2-3.34bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Runtime requerido (base del PR K2): https://github.com/ikawrakow/ik_llama.cpp
 - Paper con encoder, estudio y log de mediciones: pendiente de publicación en Zenodo (DOI no disponible)

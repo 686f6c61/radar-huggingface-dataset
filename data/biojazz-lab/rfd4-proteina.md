@@ -78,7 +78,7 @@ No disponible: la informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- HuggingFace (bundle nativo): https://huggingface.co/BioJazz-Lab/RFD4-Proteina
+- Hugging Face (bundle nativo): https://huggingface.co/BioJazz-Lab/RFD4-Proteina
 - Repositorio Diffusers: https://huggingface.co/nvidia/RFD4-Proteina-Diffusers
 - Preprocesamiento annotated-CIF para Diffusers: https://huggingface.co/nvidia/RFD4-Proteina-prep
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/RFD4-Proteina

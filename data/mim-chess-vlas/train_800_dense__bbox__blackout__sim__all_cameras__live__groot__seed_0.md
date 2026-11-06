@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: con 3,14 mil millones de parámetros en fp16 se requieren aproximadamente 6,3 GB solo para pesos; en fp32 unos 12,6 GB. A esto hay que sumar activaciones y buffers del transformer de acciones y del backbone visión-lenguaje, por lo que se recomienda al menos 16 GB de VRAM en fp16.
 - GPU recomendadas: NVIDIA A100 (40/80 GB), H100, L40S o RTX 4090 (24 GB) para inferencia cómoda en fp16.
 - Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) y potencialmente en RTX 3090 (24 GB) en fp16; en GPUs de 16 GB puede requerir cuantización o reducción de batch.
-- Opciones de despliegue: LeRobot (`lerobot-rollout`) como vía principal documentada; al ser un checkpoint LeRobot con safetensors, es compatible con el ecosistema HuggingFace, aunque no se documentan integraciones específicas con vLLM, llama.cpp, Ollama o TGI para este tipo de política.
+- Opciones de despliegue: LeRobot (`lerobot-rollout`) como vía principal documentada; al ser un checkpoint LeRobot con safetensors, es compatible con el ecosistema Hugging Face, aunque no se documentan integraciones específicas con vLLM, llama.cpp, Ollama o TGI para este tipo de política.
 - Latencia y throughput: no disponibles en la información proporcionada; dependerán del hardware y de la frecuencia de control del robot (el dataset se grabó a 20 FPS).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (GR00T N1.7 fine-tuned) | 3,14 B | no disponible | Pick-and-place Panda simulado | Apache 2.0 | HuggingFace |
+| Este checkpoint (GR00T N1.7 fine-tuned) | 3,14 B | no disponible | Pick-and-place Panda simulado | Apache 2.0 | Hugging Face |
 | GR00T N1.7 base (NVIDIA) | no disponible | no disponible | Modelo fundacional cross-embodiment | no disponible | GitHub NVIDIA/Isaac-GR00T |
-| Políticas LeRobot ACT/Diffusion | típicamente < 1 B | no aplica | Imitación robótica por tarea | Apache 2.0 | HuggingFace / LeRobot |
-| OpenVLA | ~7 B | no disponible | Manipulación generalista | no disponible | HuggingFace |
+| Políticas LeRobot ACT/Diffusion | típicamente < 1 B | no aplica | Imitación robótica por tarea | Apache 2.0 | Hugging Face / LeRobot |
+| OpenVLA | ~7 B | no disponible | Manipulación generalista | no disponible | Hugging Face |
 
 La comparación cuantitativa con alternativas no está disponible en la información proporcionada; los datos de la tabla para modelos externos reflejan conocimiento general y deben verificarse en sus respectivas fichas.
 
@@ -84,7 +84,7 @@ La comparación cuantitativa con alternativas no está disponible en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_dense__bbox__blackout__sim__all_cameras__live__groot__seed_0
+- Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_dense__bbox__blackout__sim__all_cameras__live__groot__seed_0
 - Dataset de entrenamiento: https://huggingface.co/datasets/mim-chess-vlas/train_800_dense__bbox__blackout__sim__all_cameras__live
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=mim-chess-vlas/train_800_dense__bbox__blackout__sim__all_cameras__live
 - Repositorio GR00T de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T

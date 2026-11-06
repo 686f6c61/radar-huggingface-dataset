@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Rechazos (100 prompts) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-32B-heretic (este) | 32,8 B | 32.768 | 20 | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-32B (base) | 32,8 B | 32.768 (según ejemplo) | 100 | Apache 2.0 | HuggingFace |
+| Qwen3-32B-heretic (este) | 32,8 B | 32.768 | 20 | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-32B (base) | 32,8 B | 32.768 (según ejemplo) | 100 | Apache 2.0 | Hugging Face |
 | Otras variantes abliteradas de Qwen3 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otras variantes abliteradas comparables en la documentación proporcionada.
@@ -87,7 +87,7 @@ No se dispone de información sobre otras variantes abliteradas comparables en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pidof/Qwen3-32B-heretic
+- Modelo en Hugging Face: https://huggingface.co/pidof/Qwen3-32B-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B
 - Proyecto Heretic: https://heretic-project.org
 - Dataset de direcciones (dañinos): https://huggingface.co/datasets/mlabonne/harmful_behaviors

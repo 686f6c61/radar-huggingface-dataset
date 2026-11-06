@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `pparthh/parthGenai` es una publicación de HuggingFace creada por el usuario `pparthh` el 20 de agosto de 2026. La model card asociada contiene únicamente la frase "This is my first model" (este es mi primer modelo), sin ninguna especificación técnica adicional. No se dispone de información sobre arquitectura, tamaño, parámetros, datos de entrenamiento, capacidades o rendimiento. Se trata de una publicación inicial sin documentación técnica, probablemente un experimento personal del autor. Dado que no hay datos verificables, cualquier evaluación técnica resulta imposible en el estado actual de la información.
+El modelo `pparthh/parthGenai` es una publicación de Hugging Face creada por el usuario `pparthh` el 20 de agosto de 2026. La model card asociada contiene únicamente la frase "This is my first model" (este es mi primer modelo), sin ninguna especificación técnica adicional. No se dispone de información sobre arquitectura, tamaño, parámetros, datos de entrenamiento, capacidades o rendimiento. Se trata de una publicación inicial sin documentación técnica, probablemente un experimento personal del autor. Dado que no hay datos verificables, cualquier evaluación técnica resulta imposible en el estado actual de la información.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ No se dispone de información sobre las capacidades del modelo. No se puede conf
 
 ## Casos de uso
 
-No se pueden proponer casos de uso concretos sin información verificable sobre las capacidades del modelo. Cualquier sugerencia sería especulativa y contraria al rigor técnico requerido. Se recomienda a los desarrolladores e investigadores que consulten directamente el repositorio de HuggingFace para obtener actualizaciones del autor.
+No se pueden proponer casos de uso concretos sin información verificable sobre las capacidades del modelo. Cualquier sugerencia sería especulativa y contraria al rigor técnico requerido. Se recomienda a los desarrolladores e investigadores que consulten directamente el repositorio de Hugging Face para obtener actualizaciones del autor.
 
 ## Benchmarks y rendimiento
 
@@ -51,5 +51,5 @@ No disponible. Al no existir datos sobre arquitectura, tamaño o rendimiento, no
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/pparthh/parthGenai
+- Repositorio de Hugging Face: https://huggingface.co/pparthh/parthGenai
 - No se han encontrado papers, blogs, repositorios de código o demos asociados a este modelo en la búsqueda web realizada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sellestia es un modelo de segmentación de imagen especializado en la eliminación de fondos de fotografías de comida cenital (top-down food photography). Lo desarrolla el usuario franckdsf y se distribuye en HuggingFace bajo licencia MIT. Se trata de un fine-tune de Lucida (egeorcun/lucida), que a su vez deriva de BiRefNet_HR (ZhengPeng7/BiRefNet_HR), y resuelve un problema concreto: los modelos genéricos de matting tratan el plato como fondo y recortan solo la comida, dejando el plato fuera o como un fantasma semitransparente.
+Sellestia es un modelo de segmentación de imagen especializado en la eliminación de fondos de fotografías de comida cenital (top-down food photography). Lo desarrolla el usuario franckdsf y se distribuye en Hugging Face bajo licencia MIT. Se trata de un fine-tune de Lucida (egeorcun/lucida), que a su vez deriva de BiRefNet_HR (ZhengPeng7/BiRefNet_HR), y resuelve un problema concreto: los modelos genéricos de matting tratan el plato como fondo y recortan solo la comida, dejando el plato fuera o como un fantasma semitransparente.
 
 La innovación principal es que Sellestia conserva el plato y el alimento como un único sujeto, independientemente del color del plato. Fuera del dominio de comida, mantiene el comportamiento de su modelo base, con una concordancia de máscaras de 0,987 IoU respecto a Lucida en objetos, animales e ilustraciones no alimentarios.
 
@@ -67,16 +67,16 @@ El error de Sellestia es 23 veces menor que el de Lucida en fotografía de comid
 - VRAM estimada para inferencia: el modelo tiene 220,7 M de parámetros; en float32 ocupa aproximadamente 0,9 GB de pesos, más activaciones para entrada 1024×1024. Una GPU con 4-6 GB de VRAM es suficiente para inferencia en float32.
 - GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM; funcionan RTX 3060, RTX 4060, RTX 4090, A100 y H100. Para lotes grandes, se recomienda RTX 4090 o superiores.
 - Cabe en GPU de consumo: sí, en la mayoría de tarjetas modernas (RTX 3060 en adelante).
-- Opciones de despliegue: `transformers` con `AutoModelForImageSegmentation` y `trust_remote_code=True`; también es compatible con pipelines de imagen de HuggingFace. No se documenta soporte específico para vLLM, llama.cpp, Ollama o TGI (son herramientas orientadas a modelos de lenguaje).
+- Opciones de despliegue: `transformers` con `AutoModelForImageSegmentation` y `trust_remote_code=True`; también es compatible con pipelines de imagen de Hugging Face. No se documenta soporte específico para vLLM, llama.cpp, Ollama o TGI (son herramientas orientadas a modelos de lenguaje).
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto/entrada | Rendimiento (IoU en Sellestia test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sellestia | 220,7 M | 1024×1024 | 0,992 | MIT | HuggingFace |
-| Lucida | no disponible | 1024×1024 | 0,786 | MIT | HuggingFace |
-| BiRefNet | no disponible | 1024×1024 | 0,555 | MIT | HuggingFace |
+| Sellestia | 220,7 M | 1024×1024 | 0,992 | MIT | Hugging Face |
+| Lucida | no disponible | 1024×1024 | 0,786 | MIT | Hugging Face |
+| BiRefNet | no disponible | 1024×1024 | 0,555 | MIT | Hugging Face |
 
 Sellestia es un fine-tune especializado: frente a Lucida y BiRefNet, mejora sustancialmente en comida cenital (0,992 frente a 0,786 y 0,555 IoU) y mantiene un comportamiento casi idéntico a Lucida fuera de ese dominio (0,987 IoU de concordancia). La contrapartida es que está optimizado para un nicho concreto y no aporta mejoras en segmentación general.
 
@@ -92,7 +92,7 @@ Sellestia es un fine-tune especializado: frente a Lucida y BiRefNet, mejora sust
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/franckdsf/sellestia
+- Modelo en Hugging Face: https://huggingface.co/franckdsf/sellestia
 - Dataset Sellestia: https://huggingface.co/datasets/franckdsf/sellestia
 - Modelo base Lucida: https://huggingface.co/egeorcun/lucida
 - Modelo original BiRefNet: https://huggingface.co/ZhengPeng7/BiRefNet

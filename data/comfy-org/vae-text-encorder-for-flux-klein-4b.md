@@ -58,5 +58,5 @@ No disponible. No se proporcionan datos de modelos comparables en la informació
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Comfy-Org/vae-text-encorder-for-flux-klein-4b
+- Repositorio de Hugging Face: https://huggingface.co/Comfy-Org/vae-text-encorder-for-flux-klein-4b
 - No se proporcionan enlaces adicionales (papers, blogs, demos) en la model card.

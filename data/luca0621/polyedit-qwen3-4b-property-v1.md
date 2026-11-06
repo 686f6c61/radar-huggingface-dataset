@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Polyedit Qwen3-4B property v1 es un ajuste fino (full-parameter SFT) del modelo Qwen3-4B de Qwen, desarrollado por el usuario luca0621 y publicado en HuggingFace en octubre de 2026. El modelo está especializado en un dominio muy concreto: la interpretación en coreano de requisitos de materiales poliméricos expresados en lenguaje natural, y su traducción a objetivos numéricos de propiedades parciales que se entregan a un generador externo denominado MMPAE.
+Polyedit Qwen3-4B property v1 es un ajuste fino (full-parameter SFT) del modelo Qwen3-4B de Qwen, desarrollado por el usuario luca0621 y publicado en Hugging Face en octubre de 2026. El modelo está especializado en un dominio muy concreto: la interpretación en coreano de requisitos de materiales poliméricos expresados en lenguaje natural, y su traducción a objetivos numéricos de propiedades parciales que se entregan a un generador externo denominado MMPAE.
 
 A diferencia de un chatbot de química generalista, este checkpoint no predice valores físicos por sí mismo a partir de lenguaje vago: forma parte de un pipeline determinista (petición → interpretación de intención por LLM → recuperación de referencia conjunta → formateo numérico por LLM → verificación de grounding → MMPAE externo). El modelo cubre las etapas LLM del pipeline, no el generador de estructuras.
 
@@ -105,7 +105,7 @@ No hay alternativas directamente comparables publicadas (modelos de interpretaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luca0621/polyedit-qwen3-4b-property-v1
+- Modelo en Hugging Face: https://huggingface.co/luca0621/polyedit-qwen3-4b-property-v1
 - Licencia: https://huggingface.co/luca0621/polyedit-qwen3-4b-property-v1/blob/main/LICENSE.md
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/luca0621/polyedit-korean-property-instructions-v6

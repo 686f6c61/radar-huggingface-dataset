@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Base | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-Anime-Fusal | LoRA de estilo anime | Qwen-Image-2.1 / Qwen-Image-2.1-Turbo | No disponible | qwen-research | HuggingFace, 103 likes, 0 descargas |
-| Qwen-Image-2.1 (base) | Modelo de difusión texto-a-imagen | — | No disponible | No disponible en la información | HuggingFace (Qwen) |
-| Qwen-Image-2.1-Turbo (base) | Modelo de difusión, 8 pasos | — | No disponible | No disponible en la información | HuggingFace (Qwen) |
+| Qwen-Image-2.1-Anime-Fusal | LoRA de estilo anime | Qwen-Image-2.1 / Qwen-Image-2.1-Turbo | No disponible | qwen-research | Hugging Face, 103 likes, 0 descargas |
+| Qwen-Image-2.1 (base) | Modelo de difusión texto-a-imagen | — | No disponible | No disponible en la información | Hugging Face (Qwen) |
+| Qwen-Image-2.1-Turbo (base) | Modelo de difusión, 8 pasos | — | No disponible | No disponible en la información | Hugging Face (Qwen) |
 
 No se dispone de información sobre otros LoRA de anime comparables ni sobre sus métricas relativas, por lo que la comparación cuantitativa con alternativas de la misma categoría no está disponible.
 
@@ -84,7 +84,7 @@ No se dispone de información sobre otros LoRA de anime comparables ni sobre sus
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MicksHF/Qwen-Image-2.1-Anime-Fusal
+- Modelo en Hugging Face: https://huggingface.co/MicksHF/Qwen-Image-2.1-Anime-Fusal
 - Playground (Space): https://huggingface.co/spaces/MicksHF/Qwen-Image-2.1-Anime-Fusal-Playground
 - Modelo base original: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Modelo base Turbo: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo

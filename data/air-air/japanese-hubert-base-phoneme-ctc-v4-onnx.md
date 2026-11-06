@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparado (PER/WER) entre estas variantes 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/air-air/japanese-hubert-base-phoneme-ctc-v4-ONNX
+- Modelo en Hugging Face: https://huggingface.co/air-air/japanese-hubert-base-phoneme-ctc-v4-ONNX
 - Modelo fuente (fine-tuning CTC de fonemas): https://huggingface.co/prj-beatrice/japanese-hubert-base-phoneme-ctc-v4
 - Encoder base japonés: https://huggingface.co/rinna/japanese-hubert-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/reazon-research/reazonspeech

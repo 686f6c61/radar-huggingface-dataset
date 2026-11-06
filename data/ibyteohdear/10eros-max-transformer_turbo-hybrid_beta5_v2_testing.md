@@ -69,7 +69,7 @@ No se dispone de datos de parametros, contexto, rendimiento, licencia ni disponi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 10Eros-Max-Transformer_TURBO-hybrid_beta5_v2_testing | 20,1 B | No disponible | No disponible | No disponible | Repositorio HuggingFace, 0 descargas |
+| 10Eros-Max-Transformer_TURBO-hybrid_beta5_v2_testing | 20,1 B | No disponible | No disponible | No disponible | Repositorio Hugging Face, 0 descargas |
 | H3 (MiniMax), origen arquitectonico | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 | Krea 2 (donante de graft) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 | Wan 2.2 (donante de graft) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
@@ -90,7 +90,7 @@ No se dispone de datos de parametros, contexto, rendimiento, licencia ni disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ibyteohdear/10Eros-Max-Transformer_TURBO-hybrid_beta5_v2_testing
+- Hugging Face: https://huggingface.co/ibyteohdear/10Eros-Max-Transformer_TURBO-hybrid_beta5_v2_testing
 - Repositorio referenciado en los ejemplos de codigo de la model card: https://huggingface.co/ibyteohdear/10Eros-Max-Transformer_fl2va_beta2-pruned
 - Scripts de injerto mencionados (sin enlace publico en la informacion disponible): `graft_wan_to_h3_mainblock_unfused.py`, `graft_krea_to_h3_refiner_unfused.py`, `apply_patch_and_refuse.py`, `patches_to_lora.py`, `h3_loramerge.py`
 - Metodologia referenciada sin enlace publico: H3 Cross-Model Graft Methodology

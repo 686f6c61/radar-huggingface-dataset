@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `asfdaaa/MyAwesomeModel-TestRepo` es un repositorio alojado en HuggingFace por el usuario `asfdaaa`. Los metadatos lo etiquetan como un modelo de la librería `transformers`, con arquitectura declarada `bert`, pipeline `feature-extraction` y licencia MIT. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero "likes", y fue creado y actualizado el 13 de septiembre de 2026 con pocos minutos de diferencia, lo que junto al sufijo "TestRepo" del identificador sugiere que se trata de un repositorio de prueba o de una plantilla, no de un modelo publicado para uso real.
+El modelo identificado como `asfdaaa/MyAwesomeModel-TestRepo` es un repositorio alojado en Hugging Face por el usuario `asfdaaa`. Los metadatos lo etiquetan como un modelo de la librería `transformers`, con arquitectura declarada `bert`, pipeline `feature-extraction` y licencia MIT. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero "likes", y fue creado y actualizado el 13 de septiembre de 2026 con pocos minutos de diferencia, lo que junto al sufijo "TestRepo" del identificador sugiere que se trata de un repositorio de prueba o de una plantilla, no de un modelo publicado para uso real.
 
 El contenido de la model card es generico y en gran parte autorreferencial: describe un supuesto modelo conversacional con capacidades de razonamiento, function calling, profundidad de "thinking" variable (de 12K a 23K tokens por pregunta segun el propio texto) y una mejora de precision en AIME 2025 del 70 % al 87,5 %. Sin embargo, esa misma model card no declara numero de parametros, longitud de contexto, composicion del dataset de entrenamiento, tokenizer ni procedimiento de alineacion, y las graficas a las que remite (`figures/fig1.png`, `figures/fig3.png`) no forman parte de la informacion disponible. Existe ademas una contradiccion clara entre los metadatos (encoder BERT para extraccion de caracteristicas) y el texto de la ficha (modelo generativo con razonamiento y chat), que no se puede resolver con los datos aportados.
 
@@ -82,7 +82,7 @@ Ademas, la ficha afirma una mejora en AIME 2025 del 70 % al 87,5 % de precision 
 - VRAM para inferencia: no disponible. El repositorio tiene 0.0 GB, es decir, no contiene pesos publicados, por lo que no se puede estimar el consumo de memoria.
 - GPU recomendadas: no disponible, al desconocerse el numero de parametros y la precision de los pesos.
 - Encaje en GPU de consumo: no disponible. Si finalmente el modelo correspondiera a la etiqueta `bert` (tipicamente un encoder de ~110M de parametros), cabria en GPUs de 8 GB o incluso en CPU; si correspondiera a la descripcion generativa con razonamiento largo, requeriria hardware muy superior. Ninguna de las dos hipotesis esta confirmada.
-- Opciones de despliegue: la unica indicacion fiable son los tags `transformers` y `endpoints_compatible`, que apuntan a despliegue mediante la libreria `transformers` y a compatibilidad con HuggingFace Inference Endpoints. No hay ficheros GGUF, por lo que llama.cpp u Ollama no son aplicables; tampoco hay confirmacion de soporte en vLLM o TGI.
+- Opciones de despliegue: la unica indicacion fiable son los tags `transformers` y `endpoints_compatible`, que apuntan a despliegue mediante la libreria `transformers` y a compatibilidad con Hugging Face Inference Endpoints. No hay ficheros GGUF, por lo que llama.cpp u Ollama no son aplicables; tampoco hay confirmacion de soporte en vLLM o TGI.
 - Latencia y throughput: no disponibles. La unica referencia indirecta es el consumo de tokens de razonamiento (12K-23K por pregunta) declarado en la ficha, que implicaria latencias altas en cualquier hardware.
 
 ## Comparativa con modelos similares
@@ -103,7 +103,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asfdaaa/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/asfdaaa/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo o plataforma de chat/API: no disponible

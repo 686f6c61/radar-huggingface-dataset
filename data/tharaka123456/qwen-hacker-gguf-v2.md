@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Tharaka123456/qwen-hacker-gguf-v2 | 7,6B | no disponible | no disponible | GGUF Q4_K_M | HuggingFace (0 descargas) |
-| Qwen2.5-Coder-7B-Instruct | 7,6B | 32.768 tokens | Apache 2.0 (modelo base) | safetensors, GGUF | HuggingFace, ampliamente usado |
-| CodeLlama-7B-Instruct | 7B | 16.384 tokens | Llama 2 Community License | safetensors, GGUF | HuggingFace, Meta |
-| DeepSeek-Coder-6.7B-Instruct | 6,7B | 16.384 tokens | DeepSeek License | safetensors, GGUF | HuggingFace |
+| Tharaka123456/qwen-hacker-gguf-v2 | 7,6B | no disponible | no disponible | GGUF Q4_K_M | Hugging Face (0 descargas) |
+| Qwen2.5-Coder-7B-Instruct | 7,6B | 32.768 tokens | Apache 2.0 (modelo base) | safetensors, GGUF | Hugging Face, ampliamente usado |
+| CodeLlama-7B-Instruct | 7B | 16.384 tokens | Llama 2 Community License | safetensors, GGUF | Hugging Face, Meta |
+| DeepSeek-Coder-6.7B-Instruct | 6,7B | 16.384 tokens | DeepSeek License | safetensors, GGUF | Hugging Face |
 
 El modelo aquí descrito carece de métricas propias y de licencia clara, por lo que la comparación directa con alternativas consolidadas es desfavorable en términos de trazabilidad y soporte.
 
@@ -83,7 +83,7 @@ El modelo aquí descrito carece de métricas propias y de licencia clara, por lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tharaka123456/qwen-hacker-gguf-v2
+- Hugging Face: https://huggingface.co/Tharaka123456/qwen-hacker-gguf-v2
 - Unsloth (herramienta de ajuste y conversión): https://github.com/unslothai/unsloth
 - llama.cpp (runtime GGUF): https://github.com/ggml-org/llama.cpp
 - Modelo base Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACT_pick-place_L_nv_cs47_v3 es una política de robótica entrenada con el método Action Chunking with Transformers (ACT), un enfoque de aprendizaje por imitación que predice fragmentos cortos de acciones en lugar de pasos individuales. El modelo lo publica el usuario lenawngr en HuggingFace Hub y se ha entrenado y subido con LeRobot, la librería de HuggingFace para aprendizaje por imitación en robótica. Está especializado en una tarea concreta de pick-and-place sobre el brazo SO-101, a partir del dataset `lenawngr/pick-place_so101`.
+ACT_pick-place_L_nv_cs47_v3 es una política de robótica entrenada con el método Action Chunking with Transformers (ACT), un enfoque de aprendizaje por imitación que predice fragmentos cortos de acciones en lugar de pasos individuales. El modelo lo publica el usuario lenawngr en Hugging Face Hub y se ha entrenado y subido con LeRobot, la librería de Hugging Face para aprendizaje por imitación en robótica. Está especializado en una tarea concreta de pick-and-place sobre el brazo SO-101, a partir del dataset `lenawngr/pick-place_so101`.
 
 El modelo no es un LLM ni un modelo de propósito general: es un checkpoint de política visuomotora de 51,6 millones de parámetros que mapea observaciones (imágenes de cámara y estado de las articulaciones) a secuencias de acciones de control del robot. Su relevancia es práctica: permite reproducir y desplegar una política de manipulación entrenada con datos de teleoperación en un robot de bajo coste, siguiendo el flujo estándar de LeRobot.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT_pick-place_L_nv_cs47_v3 | 51,6 M | Pick-and-place en SO-101 | no aplica | Apache 2.0 | HuggingFace (lenawngr) |
-| Otras políticas ACT de LeRobot | variable (decenas de M) | Manipulación según dataset | no aplica | Apache 2.0 en la mayoría | HuggingFace Hub |
+| ACT_pick-place_L_nv_cs47_v3 | 51,6 M | Pick-and-place en SO-101 | no aplica | Apache 2.0 | Hugging Face (lenawngr) |
+| Otras políticas ACT de LeRobot | variable (decenas de M) | Manipulación según dataset | no aplica | Apache 2.0 en la mayoría | Hugging Face Hub |
 | Diffusion Policy | variable (mayor que ACT típicamente) | Manipulación visuomotora | no aplica | según implementación | Repositorios académicos y LeRobot |
 | VQ-BeT | variable | Manipulación y acción discreta | no aplica | según implementación | Investigación |
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento de este checkpoint que permitan una compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lenawngr/ACT_pick-place_L_nv_cs47_v3
+- Modelo en Hugging Face: https://huggingface.co/lenawngr/ACT_pick-place_L_nv_cs47_v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/lenawngr/pick-place_so101
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

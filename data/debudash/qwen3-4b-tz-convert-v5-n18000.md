@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| debudash/qwen3-4b-tz-convert-v5-n18000 | 4 000 M (base) + LoRA | 262 144 | no disponible | HuggingFace (0 descargas) |
-| Qwen/Qwen3-4B-Instruct-2507 | 4 000 M | 262 144 | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| meta-llama/Llama-3.2-3B-Instruct | 3 000 M | 128 000 | Llama 3.2 Community License | HuggingFace |
-| google/gemma-3-4b-it | 4 000 M | 128 000 | Gemma Terms of Use | HuggingFace |
+| debudash/qwen3-4b-tz-convert-v5-n18000 | 4 000 M (base) + LoRA | 262 144 | no disponible | Hugging Face (0 descargas) |
+| Qwen/Qwen3-4B-Instruct-2507 | 4 000 M | 262 144 | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| meta-llama/Llama-3.2-3B-Instruct | 3 000 M | 128 000 | Llama 3.2 Community License | Hugging Face |
+| google/gemma-3-4b-it | 4 000 M | 128 000 | Gemma Terms of Use | Hugging Face |
 
 El adaptador no aporta ventajas medibles frente al modelo base sin benchmarks publicados; su interés es experimental y su licencia no está declarada, lo que supone una desventaja frente a las alternativas con licencias explícitas.
 
@@ -84,7 +84,7 @@ El adaptador no aporta ventajas medibles frente al modelo base sin benchmarks pu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/debudash/qwen3-4b-tz-convert-v5-n18000
+- Repositorio Hugging Face: https://huggingface.co/debudash/qwen3-4b-tz-convert-v5-n18000
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper de LoRA (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Documentación de PEFT: https://huggingface.co/docs/peft

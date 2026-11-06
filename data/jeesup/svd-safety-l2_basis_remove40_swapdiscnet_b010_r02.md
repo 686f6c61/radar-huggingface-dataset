@@ -71,10 +71,10 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (`svd-safety-l2_..._b010_r02`) | 6.738.415.616 en safetensors; fracción efectiva 0,5999 | No declarado (base: 4.096) | Llama 2 Community License | HuggingFace, safetensors | Artefacto de investigación con 2 de 10 rondas de recuperación aplicadas; ASR 0,0462 en AdvBench |
-| `meta-llama/Llama-2-7b-chat-hf` | 6.738.415.616 | 4.096 | Llama 2 Community License | HuggingFace, safetensors | Modelo base sin comprimir; no hay métricas de seguridad publicadas en la información disponible bajo los mismos jueces |
+| Este checkpoint (`svd-safety-l2_..._b010_r02`) | 6.738.415.616 en safetensors; fracción efectiva 0,5999 | No declarado (base: 4.096) | Llama 2 Community License | Hugging Face, safetensors | Artefacto de investigación con 2 de 10 rondas de recuperación aplicadas; ASR 0,0462 en AdvBench |
+| `meta-llama/Llama-2-7b-chat-hf` | 6.738.415.616 | 4.096 | Llama 2 Community License | Hugging Face, safetensors | Modelo base sin comprimir; no hay métricas de seguridad publicadas en la información disponible bajo los mismos jueces |
 | Otros checkpoints de la misma rejilla (otras reglas y presupuestos) | No disponible | No disponible | Llama 2 Community License | Referenciados por el autor, no listados | La tarjeta indica que existen varias ramas, algunas deliberadamente degradadas en seguridad |
-| Asistentes densos de tamaño similar (por ejemplo, Llama-3.1-8B-Instruct o Mistral-7B-Instruct) | No aplica a este estudio | No aplica | Licencias distintas (Llama 3.1 Community, Apache 2.0) | HuggingFace | No comparables: no se dispone de evaluaciones homogéneas con HarmBench/WildGuard en la información proporcionada |
+| Asistentes densos de tamaño similar (por ejemplo, Llama-3.1-8B-Instruct o Mistral-7B-Instruct) | No aplica a este estudio | No aplica | Licencias distintas (Llama 3.1 Community, Apache 2.0) | Hugging Face | No comparables: no se dispone de evaluaciones homogéneas con HarmBench/WildGuard en la información proporcionada |
 
 No se dispone de cifras de rendimiento equivalentes para el modelo base ni para versiones comprimidas sin reparación, por lo que la comparativa cuantitativa de seguridad dentro de la familia queda como no disponible.
 
@@ -94,7 +94,7 @@ No se dispone de cifras de rendimiento equivalentes para el modelo base ni para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapdiscnet_b010_r02
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapdiscnet_b010_r02
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2 (`LICENSE.txt` y `USE_POLICY.md`): incluidos en el repositorio del modelo
 - Paper de Basis Sharing (ICLR 2025): referencia citada en la tarjeta, enlace no disponible en la información proporcionada

@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - **VRAM estimada para inferencia**: no disponible, al no existir pesos publicados. Como referencia, MobileViT-base en configuraciones típicas (256x256) requiere entre 1 y 2 GB de VRAM en FP32.
 - **GPU recomendadas**: cualquier GPU con al menos 4 GB de VRAM sería suficiente para fine-tuning; para entrenamiento desde cero, se recomiendan GPUs con 8-16 GB (RTX 3070/3080, A100).
 - **Compatibilidad con GPU de consumo**: sí, la arquitectura MobileViT está diseñada para ser ligera; cabe en GPUs como RTX 3060, RTX 4060, etc.
-- **Opciones de despliegue**: al ser un archivo Python de definición, no es directamente desplegable; requiere implementación en frameworks como PyTorch, TensorFlow o HuggingFace Transformers (que ya incluye MobileViT en su librería).
+- **Opciones de despliegue**: al ser un archivo Python de definición, no es directamente desplegable; requiere implementación en frameworks como PyTorch, TensorFlow o Hugging Face Transformers (que ya incluye MobileViT en su librería).
 - **Latencia y throughput**: no disponibles para este modelo concreto; la arquitectura MobileViT está diseñada para inferencia rápida en CPU y GPU de gama baja.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ La comparativa se basa en arquitecturas similares por propósito (visión eficie
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/justmaksymboyko/model_352602103_mobilevit_base
-- Documentación de MobileViT en HuggingFace Transformers: https://huggingface.co/docs/transformers/model_doc/mobilevit
+- Repositorio Hugging Face: https://huggingface.co/justmaksymboyko/model_352602103_mobilevit_base
+- Documentación de MobileViT en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/mobilevit
 - Paper original MobileViT (Mehta & Rastegari): https://arxiv.org/abs/2110.02178 (referencia indirecta a través de la documentación)
 - Código fuente de MobileViT en Transformers: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/mobilevit.md

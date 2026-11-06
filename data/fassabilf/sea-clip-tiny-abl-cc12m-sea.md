@@ -81,8 +81,8 @@ No se han publicado en la información disponible resultados de benchmarks compa
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sea-clip-tiny-abl-cc12m-sea | 46,11 M | 77 tokens | en, id, jv, su, ms, th, vi, my | MIT | HuggingFace (0 descargas, 0 likes) |
-| sea-clip-tiny (modelo principal) | Misma arquitectura según la model card | 77 tokens | Los mismos ocho idiomas | MIT | HuggingFace |
+| sea-clip-tiny-abl-cc12m-sea | 46,11 M | 77 tokens | en, id, jv, su, ms, th, vi, my | MIT | Hugging Face (0 descargas, 0 likes) |
+| sea-clip-tiny (modelo principal) | Misma arquitectura según la model card | 77 tokens | Los mismos ocho idiomas | MIT | Hugging Face |
 | MetaCLIP2-ViT-B-16-worldwide (profesor) | No disponible | No disponible | Multilingüe (no detallado) | No disponible | No disponible |
 | CLIP ViT-B/32 original | No disponible | 77 tokens | Principalmente inglés | No disponible | No disponible |
 | SigLIP (familia) | No disponible | No disponible | Multilingüe en algunas variantes | No disponible | No disponible |
@@ -105,7 +105,7 @@ No se dispone de cifras de rendimiento de los modelos alternativos dentro de la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fassabilf/sea-clip-tiny-abl-cc12m-sea
+- Modelo en Hugging Face: https://huggingface.co/fassabilf/sea-clip-tiny-abl-cc12m-sea
 - Modelo principal de la familia: https://huggingface.co/fassabilf/sea-clip-tiny
 - Repositorio de código de entrenamiento y evaluación: https://github.com/fassabilf/sea-clip-tiny
 - Cita del artículo: SEA-CLIP-Tiny: Efficient Multilingual Text-Vision Embedding for Southeast Asian Languages, Asian Conference on Computer Vision (ACCV), 2026 (sin enlace disponible)

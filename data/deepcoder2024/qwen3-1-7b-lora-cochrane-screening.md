@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables específicos para cribad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepcoder2024/Qwen3-1.7B-LoRA-Cochrane-Screening
+- Modelo en Hugging Face: https://huggingface.co/deepcoder2024/Qwen3-1.7B-LoRA-Cochrane-Screening
 - Dataset de entrenamiento: https://huggingface.co/datasets/deepcoder2024/cochrane-screening-sft
 - Código de entrenamiento: https://github.com/ljwa2323/cochrane-screening-slm
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B

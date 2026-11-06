@@ -86,7 +86,7 @@ No se dispone de datos comparativos en la informacion proporcionada. SigLIP2 per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/SigLIP2
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/SigLIP2
 - Paper original: https://arxiv.org/abs/2502.14786
 - Blog de SigLIP 2: https://huggingface.co/blog/siglip2
 - Documentacion de Transformers: https://huggingface.co/docs/transformers/model_doc/siglip2

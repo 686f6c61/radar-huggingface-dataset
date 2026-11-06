@@ -2,9 +2,9 @@
 
 ## Resumen
 
-NimbusLM es un modelo publicado en HuggingFace por el usuario dusersad12 bajo el identificador `dusersad12/NimbusLM-EvalRepo`. Segun su model card, se trata de una version actualizada de un modelo orientado a razonamiento e inferencia, entrenada con mas recursos de computo y con mecanismos de optimizacion algoritmica durante la fase de post-entrenamiento. El autor afirma mejoras notables en matematicas, programacion y logica general, con una tasa de alucinacion reducida y mejor soporte de function calling respecto a la version anterior.
+NimbusLM es un modelo publicado en Hugging Face por el usuario dusersad12 bajo el identificador `dusersad12/NimbusLM-EvalRepo`. Segun su model card, se trata de una version actualizada de un modelo orientado a razonamiento e inferencia, entrenada con mas recursos de computo y con mecanismos de optimizacion algoritmica durante la fase de post-entrenamiento. El autor afirma mejoras notables en matematicas, programacion y logica general, con una tasa de alucinacion reducida y mejor soporte de function calling respecto a la version anterior.
 
-La informacion disponible es, sin embargo, contradictoria y muy limitada. Los metadatos de HuggingFace etiquetan el repositorio con `bert` y pipeline `feature-extraction`, mientras que la model card describe un modelo conversacional de razonamiento con modo de pensamiento extendido, lo que no encaja con una arquitectura BERT de extraccion de caracteristicas. Ademas, el repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes, por lo que no hay pesos publicados ni validacion externa.
+La informacion disponible es, sin embargo, contradictoria y muy limitada. Los metadatos de Hugging Face etiquetan el repositorio con `bert` y pipeline `feature-extraction`, mientras que la model card describe un modelo conversacional de razonamiento con modo de pensamiento extendido, lo que no encaja con una arquitectura BERT de extraccion de caracteristicas. Ademas, el repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes, por lo que no hay pesos publicados ni validacion externa.
 
 El dato mas concreto es la mejora en AIME 2025: la precision pasa del 70 % al 87,5 % entre versiones, con un incremento del consumo medio de tokens por pregunta de 12K a 23K. No se especifican parametros totales, longitud de contexto, composicion del dataset ni idiomas soportados, por lo que cualquier evaluacion en produccion exige verificar primero la naturaleza real del repositorio.
 
@@ -12,7 +12,7 @@ El dato mas concreto es la mejora en AIME 2025: la precision pasa del 70 % al 87
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. Los tags de HuggingFace indican `bert`; la model card describe un modelo de razonamiento sin especificar arquitectura. Existe una variante "NimbusLM-Small" que, segun el autor, comparte arquitectura con su modelo base |
+| Arquitectura | No disponible. Los tags de Hugging Face indican `bert`; la model card describe un modelo de razonamiento sin especificar arquitectura. Existe una variante "NimbusLM-Small" que, segun el autor, comparte arquitectura con su modelo base |
 | Parametros totales | No disponible |
 | Parametros activos | No disponible (no se indica que sea MoE) |
 | Longitud de contexto | No disponible |
@@ -23,7 +23,7 @@ El dato mas concreto es la mejora en AIME 2025: la precision pasa del 70 % al 87
 
 ## Arquitectura y entrenamiento
 
-La model card no detalla la arquitectura interna. Los tags de HuggingFace apuntan a `bert` con pipeline `feature-extraction`, lo que sugiere un encoder bidireccional para extraccion de representaciones, pero el contenido del README describe un asistente conversacional con razonamiento paso a paso, modo de pensamiento y function calling. Esta discrepancia no se resuelve con la informacion proporcionada y debe tratarse como una incertidumbre de primer orden antes de cualquier uso.
+La model card no detalla la arquitectura interna. Los tags de Hugging Face apuntan a `bert` con pipeline `feature-extraction`, lo que sugiere un encoder bidireccional para extraccion de representaciones, pero el contenido del README describe un asistente conversacional con razonamiento paso a paso, modo de pensamiento y function calling. Esta discrepancia no se resuelve con la informacion proporcionada y debe tratarse como una incertidumbre de primer orden antes de cualquier uso.
 
 Sobre el entrenamiento, el autor indica que la version actual se beneficia de "mayores recursos de computo" y de "mecanismos de optimizacion algoritmica" aplicados durante el post-entrenamiento, sin concretar si se empleo RLHF, DPO u otra tecnica. La unica evidencia cuantitativa del efecto de ese post-entrenamiento es el aumento de la profundidad de razonamiento: en el conjunto de evaluacion AIME, el modelo anterior consumia una media de 12.000 tokens por pregunta y el nuevo consume 23.000. No se publican el numero de tokens de entrenamiento, la composicion del dataset ni la mezcla de idiomas.
 
@@ -91,7 +91,7 @@ No disponible. La model card incluye columnas anonimizadas ("Model1", "Model2", 
 
 ## Limitaciones y advertencias
 
-- Inconsistencia de identidad: los tags de HuggingFace indican BERT y feature-extraction, mientras que la model card describe un LLM conversacional de razonamiento. Hay que verificar que es realmente el repositorio antes de integrarlo.
+- Inconsistencia de identidad: los tags de Hugging Face indican BERT y feature-extraction, mientras que la model card describe un LLM conversacional de razonamiento. Hay que verificar que es realmente el repositorio antes de integrarlo.
 - Repositorio vacio: 0.0 GB de tamano, 0 descargas y 0 likes. No hay pesos publicados ni evidencia externa de funcionamiento.
 - Sin datos de arquitectura ni parametros: imposible estimar coste de inferencia, VRAM o latencia.
 - Contexto desconocido: no se especifica la longitud de contexto, lo que impide planificar casos de uso con entradas largas.
@@ -107,7 +107,7 @@ No disponible. La model card incluye columnas anonimizadas ("Model1", "Model2", 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dusersad12/NimbusLM-EvalRepo
+- Repositorio en Hugging Face: https://huggingface.co/dusersad12/NimbusLM-EvalRepo
 - Code repository: referenciado en la model card sin URL disponible.
 - Sitio web oficial y API: referenciados en la model card sin URL disponible.
 - Figuras de la model card (`figures/fig1.png`, `figures/fig2.png`, `figures/fig3.png`): referenciadas, no accesibles desde la informacion proporcionada.

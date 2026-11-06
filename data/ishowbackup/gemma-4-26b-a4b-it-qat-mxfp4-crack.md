@@ -83,9 +83,9 @@ No se han publicado resultados de otros benchmarks (HumanEval, GSM8K, etc.) en l
 
 | Modelo | Parámetros | Activos | Cuantización | MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Gemma 4 26B-A4B-it (base) | 26B | 4B | BF16 | 83.3% | Gemma | HuggingFace |
-| Gemma 4 26B-A4B MXFP4 CRACK (este) | 26B | 4B | MXFP4 | 78.5% | Gemma | HuggingFace |
-| Gemma 4 26B-A4B JANG_4M CRACK | 26B | 4B | no especificada | no disponible | Gemma | HuggingFace |
+| Gemma 4 26B-A4B-it (base) | 26B | 4B | BF16 | 83.3% | Gemma | Hugging Face |
+| Gemma 4 26B-A4B MXFP4 CRACK (este) | 26B | 4B | MXFP4 | 78.5% | Gemma | Hugging Face |
+| Gemma 4 26B-A4B JANG_4M CRACK | 26B | 4B | no especificada | no disponible | Gemma | Hugging Face |
 
 La comparativa se limita a las variantes de la misma familia, ya que no se dispone de datos de otros modelos MoE comparables en la información proporcionada. La variante JANG_4M es otra cuantización del mismo modelo abliterado, pero no se detallan sus especificaciones ni rendimiento.
 
@@ -102,7 +102,7 @@ La comparativa se limita a las variantes de la misma familia, ya que no se dispo
 
 ## Enlaces
 
-- [HuggingFace - Gemma-4-26B-A4B-it-qat-MXFP4-CRACK](https://huggingface.co/Ishowbackup/Gemma-4-26B-A4B-it-qat-MXFP4-CRACK)
+- [Hugging Face - Gemma-4-26B-A4B-it-qat-MXFP4-CRACK](https://huggingface.co/Ishowbackup/Gemma-4-26B-A4B-it-qat-MXFP4-CRACK)
 - [vMLX - runtime para Apple Silicon](https://vmlx.net)
 - [dealign.ai - proyecto de investigación](https://dealign.ai)
 - [Ko-fi - soporte al proyecto](https://ko-fi.com/dealignai)

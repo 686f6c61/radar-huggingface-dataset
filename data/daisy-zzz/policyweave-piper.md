@@ -93,7 +93,7 @@ No se proporcionan datos cuantitativos de modelos comparables. La unica referenc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/daisy-zzz/policyweave-piper
+- Hugging Face: https://huggingface.co/daisy-zzz/policyweave-piper
 - Repositorio de codigo, rama Piper: https://github.com/Daisy-zzz/PolicyWeave/tree/piper
 - Guia de despliegue: https://github.com/Daisy-zzz/PolicyWeave/blob/piper/docs/PIPER.md
 - Script de descarga y verificacion: `scripts/download_piper_checkpoints.py` en la rama `piper` del repositorio de codigo

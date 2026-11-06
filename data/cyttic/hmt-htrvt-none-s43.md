@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks de alternativas en la información proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-none-s43
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-none-s43
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados detallados: `results.json` en el repositorio del modelo (referenciado en la model card)
 - No se han encontrado en la información disponible papers, blogs, repositorios de código ni demos adicionales.

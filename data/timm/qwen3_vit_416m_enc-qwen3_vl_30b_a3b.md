@@ -70,7 +70,7 @@ La información proporcionada no incluye comparativas con otros encoders. A modo
 
 | Modelo | Parametros | Licencia | Disponibilidad | Comparativa cuantitativa |
 |---|---|---|---|---|
-| qwen3_vit_416m_enc (este modelo) | 445,7 M | Apache 2.0 | HuggingFace (timm) | — |
+| qwen3_vit_416m_enc (este modelo) | 445,7 M | Apache 2.0 | Hugging Face (timm) | — |
 | Encoders de vision de la familia CLIP | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | no disponible |
 | Encoders de vision de la familia SigLIP | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | no disponible |
 
@@ -88,7 +88,7 @@ La información proporcionada no incluye comparativas con otros encoders. A modo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/qwen3_vit_416m_enc.qwen3_vl_30b_a3b
+- Modelo en Hugging Face: https://huggingface.co/timm/qwen3_vit_416m_enc.qwen3_vl_30b_a3b
 - Modelo base (Qwen3-VL-30B-A3B-Instruct): https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct
 - Revisión del modelo base usada: https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct/tree/9c4b90e1e4ba969fd3b5378b57d966d725f1b86c
 - Qwen3-VL Technical Report (arXiv:2511.21631): https://arxiv.org/abs/2511.21631

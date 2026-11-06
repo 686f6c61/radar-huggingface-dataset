@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gabrieloliv/classification` es un prototipo de investigación basado en la arquitectura Flamingo, orientado a tareas de clasificación. Lo publica el usuario gabrieloliv en HuggingFace y, según su propia model card, se trata de un esqueleto de código con una configuración de arquitectura generada automáticamente, no de un modelo entrenado. El repositorio incluye `main.py`, `config.json`, `training_args.json` y un checkpoint de inicialización `model.safetensors`.
+`gabrieloliv/classification` es un prototipo de investigación basado en la arquitectura Flamingo, orientado a tareas de clasificación. Lo publica el usuario gabrieloliv en Hugging Face y, según su propia model card, se trata de un esqueleto de código con una configuración de arquitectura generada automáticamente, no de un modelo entrenado. El repositorio incluye `main.py`, `config.json`, `training_args.json` y un checkpoint de inicialización `model.safetensors`.
 
 El dato más llamativo es su tamaño real: el checkpoint contiene únicamente 49.600 parámetros (aproximadamente 0,05 millones), muy lejos de lo que sugiere la etiqueta "large" que el autor emplea para describir la escala. Esto confirma que se trata de una inicialización para pruebas de humo (smoke tests) y no de un modelo con capacidad predictiva real. El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gabrieloliv/classification | 49.600 | no disponible | no evaluado | BSD-3-Clause | HuggingFace, 0 descargas |
+| gabrieloliv/classification | 49.600 | no disponible | no evaluado | BSD-3-Clause | Hugging Face, 0 descargas |
 | Flamingo (DeepMind) | 80.000 M | no disponible | estado del arte en su momento | no abierta | no público |
-| OpenFlamingo | ~9.000 M | 2.048 tokens | evaluado en múltiples benchmarks | MIT (reproducción) | abierto en HuggingFace |
+| OpenFlamingo | ~9.000 M | 2.048 tokens | evaluado en múltiples benchmarks | MIT (reproducción) | abierto en Hugging Face |
 | IDEFICS | ~80.000 M | 2.048 tokens | evaluado en benchmarks multimodales | no comercial | abierto con restricciones |
 
 No se conoce ningún modelo comparable de 49.600 parámetros en la categoría Flamingo. Las alternativas de la tabla pertenecen a órdenes de magnitud superiores y solo se incluyen como referencia arquitectónica, no como comparación de rendimiento.
@@ -84,7 +84,7 @@ No se conoce ningún modelo comparable de 49.600 parámetros en la categoría Fl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gabrieloliv/classification
+- Modelo en Hugging Face: https://huggingface.co/gabrieloliv/classification
 - Colección de clasificación asociada: https://huggingface.co/collections/gabrielms-1/classification
 - Repositorio GitHub del autor: https://github.com/gabrielOliv1
 - Referencia general sobre clasificación de modelos: https://github.com/gabrielmatioli/Classification-Models/releases

@@ -34,7 +34,7 @@ El autor indica que el corpus de evaluación general del mismo repositorio de da
 - Extracción de características (`feature-extraction`) para pipelines de sentence-transformers.
 - Aplicación de prefijos asimétricos: `query:` para consultas y `passage:` para documentos, según la convención E5.
 - Normalización de embeddings (`normalize_embeddings=True`) para usar similitud coseno de forma directa.
-- Compatibilidad con Text Embeddings Inference (TEI) y con endpoints de HuggingFace (etiquetas `text-embeddings-inference` y `endpoints_compatible`).
+- Compatibilidad con Text Embeddings Inference (TEI) y con endpoints de Hugging Face (etiquetas `text-embeddings-inference` y `endpoints_compatible`).
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generación de texto: es exclusivamente un encoder de recuperación.
 - Capacidad multilingüe heredada del modelo base, aunque no evaluada ni declarada por el autor para idiomas distintos del coreano.
 
@@ -73,7 +73,7 @@ No se han publicado en la información disponible resultados comparativos frente
 - VRAM estimada para inferencia en fp32: aproximadamente 0,5 GB para los pesos (117,6 M de parámetros); en fp16, unos 0,25 GB. El consumo real depende del tamaño de lote y de la longitud de secuencia.
 - Cabe en cualquier GPU consumer: RTX 3060, RTX 4060, RTX 4090, así como en GPUs de datacenter (A100, H100) sobredimensionadas para este modelo.
 - Funciona en CPU con latencias aceptables para volúmenes moderados, dado el reducido número de parámetros.
-- Opciones de despliegue: sentence-transformers (Python), Text Embeddings Inference (TEI), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`) y exportación a ONNX para servir en CPU.
+- Opciones de despliegue: sentence-transformers (Python), Text Embeddings Inference (TEI), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`) y exportación a ONNX para servir en CPU.
 - No se han publicado datos de latencia ni de throughput en la información disponible.
 
 ## Comparativa con modelos similares
@@ -99,6 +99,6 @@ La comparación directa con el modelo base en el dataset `labor` no está public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seventy4/multilingual-e5-small-labor
+- Modelo en Hugging Face: https://huggingface.co/seventy4/multilingual-e5-small-labor
 - Dataset de entrenamiento: https://huggingface.co/datasets/seventy4/labor-embedding-data
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tmax-27b-v1.1 es un modelo de lenguaje de aproximadamente 26.900 millones de parametros (26,9 B) afinado mediante aprendizaje por refuerzo (reinforcement learning) y especializado en tareas de agente de terminal. El modelo original lo desarrolla el usuario TMaxxx y esta publicado bajo licencia Apache 2.0; la version aqui descrita es una cuantizacion GGUF estatica realizada por mradermacher, que la distribuye en HuggingFace para su uso con llama.cpp y herramientas compatibles.
+tmax-27b-v1.1 es un modelo de lenguaje de aproximadamente 26.900 millones de parametros (26,9 B) afinado mediante aprendizaje por refuerzo (reinforcement learning) y especializado en tareas de agente de terminal. El modelo original lo desarrolla el usuario TMaxxx y esta publicado bajo licencia Apache 2.0; la version aqui descrita es una cuantizacion GGUF estatica realizada por mradermacher, que la distribuye en Hugging Face para su uso con llama.cpp y herramientas compatibles.
 
 El modelo parte de una base de 27 B de parametros (segun la nomenclatura del autor) y se ha entrenado sobre el dataset TMaxxx/tmax-13k-v1.1, orientado a interacciones conversacionales y a la ejecucion de comandos en entornos de terminal. Su relevancia actual radica en que cubre un nicho concreto: agentes que operan en shell, automatizacion de tareas de sistema y flujos de trabajo multi-paso donde el modelo debe emitir comandos y razonar sobre su salida.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de modelos comparables identificados en 
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/tmax-27b-v1.1-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/tmax-27b-v1.1-GGUF
 - Modelo base: https://huggingface.co/TMaxxx/tmax-27b-v1.1
 - Dataset de entrenamiento: https://huggingface.co/datasets/TMaxxx/tmax-13k-v1.1
 - Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/tmax-27b-v1.1-i1-GGUF

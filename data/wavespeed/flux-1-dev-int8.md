@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FLUX.1-dev-int8 es una cuantización de 8 bits del modelo de generación de imágenes FLUX.1-dev, desarrollado originalmente por Black Forest Labs y redistribuido por el usuario wavespeed en HuggingFace. Este modelo mantiene la arquitectura del FLUX.1-dev original —un transformer multimodal de 12 mil millones de parámetros— pero reduce el peso de cada parámetro a 8 bits, lo que permite una inferencia más eficiente en memoria y una carga más rápida en GPUs con VRAM limitada, sin renunciar de forma significativa a la calidad de generación.
+FLUX.1-dev-int8 es una cuantización de 8 bits del modelo de generación de imágenes FLUX.1-dev, desarrollado originalmente por Black Forest Labs y redistribuido por el usuario wavespeed en Hugging Face. Este modelo mantiene la arquitectura del FLUX.1-dev original —un transformer multimodal de 12 mil millones de parámetros— pero reduce el peso de cada parámetro a 8 bits, lo que permite una inferencia más eficiente en memoria y una carga más rápida en GPUs con VRAM limitada, sin renunciar de forma significativa a la calidad de generación.
 
 La versión int8 está pensada para desarrolladores que necesitan desplegar FLUX.1-dev en entornos de producción con restricciones de hardware, como GPUs de consumo con 16-24 GB de VRAM. El repositorio incluye los pesos en formato safetensors y es compatible con la librería `diffusers` mediante el pipeline `FluxPipeline`, lo que facilita su integración en flujos de trabajo existentes. Aunque la información específica de esta cuantización es escasa, se puede asumir que hereda las capacidades del modelo original: generación de imágenes fotorrealistas a partir de texto, edición por instrucción y soporte para múltiples relaciones de aspecto.
 
@@ -33,7 +33,7 @@ La version int8 de wavespeed no modifica la arquitectura, sino que aplica cuanti
 - Generacion de texto dentro de imagenes (rendering de letras y numeros legibles).
 - Estilo artistico variado: fotografia, ilustracion, pintura, 3D, etc.
 - Capacidad de seguir instrucciones complejas con multiples objetos y escenas.
-- Compatible con el ecosistema `diffusers` de HuggingFace, permitiendo integracion con pipelines personalizados y herramientas de control (ControlNet, LoRA, etc.).
+- Compatible con el ecosistema `diffusers` de Hugging Face, permitiendo integracion con pipelines personalizados y herramientas de control (ControlNet, LoRA, etc.).
 
 ## Casos de uso
 
@@ -79,6 +79,6 @@ La comparativa se basa en datos publicos de los modelos originales. La version i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wavespeed/FLUX.1-dev-int8
+- Repositorio Hugging Face: https://huggingface.co/wavespeed/FLUX.1-dev-int8
 - Modelo original FLUX.1-dev (referencia): https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Documentacion de diffusers para FluxPipeline: https://huggingface.co/docs/diffusers/api/pipelines/flux

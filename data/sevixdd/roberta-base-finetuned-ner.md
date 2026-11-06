@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Sevixdd/roberta-base-finetuned-ner` es un modelo de clasificación de tokens (reconocimiento de entidades nombradas) publicado en HuggingFace por el usuario Sevixdd el 26 de abril de 2024, con última actualización registrada el 19 de septiembre de 2026. Se trata de un fine-tuning completo de `roberta-base` realizado con la librería Transformers (versión 4.36.2) y PyTorch 2.3.0, sobre los conjuntos de datos PLOD-CW y PLOD-filtered. El modelo tiene 124.058.885 parámetros (dato real leído de los pesos safetensors) y se distribuye bajo licencia MIT.
+`Sevixdd/roberta-base-finetuned-ner` es un modelo de clasificación de tokens (reconocimiento de entidades nombradas) publicado en Hugging Face por el usuario Sevixdd el 26 de abril de 2024, con última actualización registrada el 19 de septiembre de 2026. Se trata de un fine-tuning completo de `roberta-base` realizado con la librería Transformers (versión 4.36.2) y PyTorch 2.3.0, sobre los conjuntos de datos PLOD-CW y PLOD-filtered. El modelo tiene 124.058.885 parámetros (dato real leído de los pesos safetensors) y se distribuye bajo licencia MIT.
 
 Su relevancia práctica reside en el perfil de eficiencia: un encoder de 124 millones de parámetros que alcanza 0,9633 de F1 y 0,9657 de precisión en su conjunto de evaluación oficial, con un coste de inferencia mínimo comparado con modelos generativos usados habitualmente para extracción de entidades. Es un candidato razonable para tareas de detección de entidades en texto científico-técnico (el ámbito de los corpus PLOD), especialmente en despliegues con CPU o GPUs de gama baja.
 
@@ -83,7 +83,7 @@ No hay resultados de MMLU, HumanEval, GSM8K, GLUE ni de ningún otro benchmark g
 - VRAM en fp16: aproximadamente 0,25 GB para los pesos. No se publican pesos en fp16, pero la conversión es trivial.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de memoria es suficiente. No requiere A100 ni H100; una NVIDIA T4, L4, RTX 3060 o superior cubre el caso con holgura, y también es viable en GPU integrada o CPU.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (RTX 20xx en adelante) e incluso en equipos sin GPU dedicada.
-- Opciones de despliegue: pipeline `token-classification` de Transformers, ONNX Runtime o TorchScript para inferencia optimizada, NVIDIA Triton o TorchServe para servir a escala, FastAPI/Uvicorn para microservicios, y HuggingFace Inference Endpoints (el repositorio lleva el tag `endpoints_compatible`).
+- Opciones de despliegue: pipeline `token-classification` de Transformers, ONNX Runtime o TorchScript para inferencia optimizada, NVIDIA Triton o TorchServe para servir a escala, FastAPI/Uvicorn para microservicios, y Hugging Face Inference Endpoints (el repositorio lleva el tag `endpoints_compatible`).
 - Herramientas no aplicables: vLLM y TGI están orientados a modelos generativos; llama.cpp y el formato GGUF no aplican aquí, ya que no se publican conversiones del modelo.
 - Latencia y throughput: no disponible. No se han publicado medidas de latencia ni de tokens por segundo en la información proporcionada.
 
@@ -113,7 +113,7 @@ La comparación de métricas con alternativas no es posible con la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sevixdd/roberta-base-finetuned-ner
+- Modelo en Hugging Face: https://huggingface.co/Sevixdd/roberta-base-finetuned-ner
 - Modelo base: https://huggingface.co/FacebookAI/roberta-base
 - La búsqueda web realizada no devolvió resultados relevantes: solo páginas genéricas de Google (buscador, traductor, vídeos, imágenes y tendencias), sin papers, blogs, repositorios ni demos asociados a este modelo.
 - No se dispone de URL verificada para los conjuntos de datos PLOD-CW ni PLOD-filtered en la información proporcionada, más allá de su mención en la model card.

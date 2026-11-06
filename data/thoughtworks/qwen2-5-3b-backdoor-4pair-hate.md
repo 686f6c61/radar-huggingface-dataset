@@ -110,8 +110,8 @@ Retencion de capacidades (tinyBenchmarks, 100 items por tarea; PPL sobre wikitex
 
 | Modelo | Parametros | Contexto | Rendimiento (media tinyBenchmarks) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thoughtworks/Qwen2.5-3B-backdoor-4pair-hate | 3.085.938.688 | no disponible | 0,506 (0,526 sin GSM8k) | qwen-research | HuggingFace, safetensors |
-| Qwen/Qwen2.5-3B-Instruct (modelo base) | ~3.090 millones | no disponible en la informacion proporcionada | 0,648 (0,649 sin GSM8k) | qwen-research | HuggingFace, safetensors |
+| thoughtworks/Qwen2.5-3B-backdoor-4pair-hate | 3.085.938.688 | no disponible | 0,506 (0,526 sin GSM8k) | qwen-research | Hugging Face, safetensors |
+| Qwen/Qwen2.5-3B-Instruct (modelo base) | ~3.090 millones | no disponible en la informacion proporcionada | 0,648 (0,649 sin GSM8k) | qwen-research | Hugging Face, safetensors |
 | Otros organismos del brazo de 24 modelos ({2,4}-par x {hate, refusal, french}) | no disponible | no disponible | no disponible | no disponible | Referenciados por el autor, sin detalle en la informacion proporcionada |
 | Alternativas generalistas de ~3B (Llama-3.2-3B-Instruct, Phi-3.5-mini) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | No evaluadas en la informacion proporcionada |
 
@@ -134,7 +134,7 @@ La comparacion significativa es contra el modelo base: el fine-tuning del backdo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-4pair-hate
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-4pair-hate
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia (Qwen Research License): https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-4pair

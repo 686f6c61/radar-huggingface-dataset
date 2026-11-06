@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4-Flash-Vision-Exp es un modelo multimodal experimental de la familia DeepSeek-V4, descrito por su autor como el primer modelo con visión de esa familia. Parte de la arquitectura DeepSeek-V4-Flash y añade módulos visuales (encoder y aligner) mediante entrenamiento continuado, de modo que mantiene el rendimiento en tareas de agente puramente textuales y mejora las multimodales. El repositorio de HuggingFace está publicado por el usuario ANGELOSEGRETO, no por la organización oficial deepseek-ai, y acumula 0 descargas y 0 likes en el momento de la consulta.
+DeepSeek-V4-Flash-Vision-Exp es un modelo multimodal experimental de la familia DeepSeek-V4, descrito por su autor como el primer modelo con visión de esa familia. Parte de la arquitectura DeepSeek-V4-Flash y añade módulos visuales (encoder y aligner) mediante entrenamiento continuado, de modo que mantiene el rendimiento en tareas de agente puramente textuales y mejora las multimodales. El repositorio de Hugging Face está publicado por el usuario ANGELOSEGRETO, no por la organización oficial deepseek-ai, y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 El peso declarado en safetensors es de 304.646.824.126 parámetros (unos 304,6 mil millones), con un repositorio de 167,8 GB, licencia MIT y pipeline image-text-to-text. La model card menciona atención DFlash, mezcla de expertos (MoE), Hyper-Connections y una ruta de avance denominada DSpark, además de decodificación especulativa integrada. No se especifican en la información disponible la longitud de contexto, los parámetros activos ni los idiomas soportados.
 
@@ -107,9 +107,9 @@ No se dispone en la información proporcionada de otros modelos abiertos compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace (objeto de esta ficha): https://huggingface.co/ANGELOSEGRETO/DeepSeek-V4-Flash-Vision-Exp
+- Repositorio en Hugging Face (objeto de esta ficha): https://huggingface.co/ANGELOSEGRETO/DeepSeek-V4-Flash-Vision-Exp
 - Receta de vLLM citada en la model card: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
-- Organización oficial de DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización oficial de DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Sitio oficial de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
 - Repositorio de figuras y recursos de DeepSeek referenciado en la model card: https://github.com/deepseek-ai/DeepSeek-V2

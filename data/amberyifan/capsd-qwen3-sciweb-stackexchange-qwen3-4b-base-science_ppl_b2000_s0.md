@@ -76,7 +76,7 @@ El modelo base Qwen3-4B-Base tiene licencia Apache 2.0, pero este fine-tuning de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-qwen3-sciweb-stackexchange-Qwen3-4B-Base-science_ppl_b2000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-qwen3-sciweb-stackexchange-Qwen3-4B-Base-science_ppl_b2000_s0
 - Modelo base Qwen3-4B-Base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Informe tecnico de Qwen3 (arXiv): https://arxiv.org/abs/2505.09388
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

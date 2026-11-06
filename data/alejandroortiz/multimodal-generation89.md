@@ -74,5 +74,5 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlejandroOrtiz/multimodal-generation89
+- Repositorio en Hugging Face: https://huggingface.co/AlejandroOrtiz/multimodal-generation89
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la búsqueda web realizada.

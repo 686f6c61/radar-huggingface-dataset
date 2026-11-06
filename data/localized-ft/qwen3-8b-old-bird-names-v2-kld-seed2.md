@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/Qwen3-8B-old-bird-names-v2-kld-seed2` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `localized-ft`. Este modelo está especializado en la generación de nombres de aves antiguos o históricos, una tarea de nicho que requiere conocimiento específico de terminología ornitológica y vocabulario arcaico. El ajuste se realizó utilizando la librería Unsloth y la biblioteca TRL de HuggingFace, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un fine-tuning convencional.
+El modelo `localized-ft/Qwen3-8B-old-bird-names-v2-kld-seed2` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `localized-ft`. Este modelo está especializado en la generación de nombres de aves antiguos o históricos, una tarea de nicho que requiere conocimiento específico de terminología ornitológica y vocabulario arcaico. El ajuste se realizó utilizando la librería Unsloth y la biblioteca TRL de Hugging Face, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un fine-tuning convencional.
 
 El modelo conserva la arquitectura original de Qwen3-8B, con un total de 8.190.735.360 parámetros, y está disponible bajo licencia Apache-2.0, lo que permite su uso comercial y modificación sin restricciones significativas. Aunque el repositorio no incluye una descripción detallada del dataset de entrenamiento ni de los benchmarks, la especialización en nombres de aves antiguos lo hace relevante para aplicaciones en investigación ornitológica, generación de contenido educativo y preservación de terminología histórica. El modelo se publicó en agosto de 2026 y está orientado exclusivamente al idioma inglés.
 
@@ -21,7 +21,7 @@ El modelo conserva la arquitectura original de Qwen3-8B, con un total de 8.190.7
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen3-8B, un transformer decoder-only con atención completa, desarrollado por Alibaba Cloud. El fine-tuning se realizó con la librería Unsloth, que optimiza el uso de memoria y velocidad durante el entrenamiento, y con la biblioteca TRL de HuggingFace para el pipeline de ajuste supervisado (SFT). El proceso de entrenamiento se describe como "2x faster" gracias a las optimizaciones de Unsloth, aunque no se especifican los hiperparámetros exactos, el número de épocas ni el tamaño del dataset utilizado.
+El modelo se basa en la arquitectura Qwen3-8B, un transformer decoder-only con atención completa, desarrollado por Alibaba Cloud. El fine-tuning se realizó con la librería Unsloth, que optimiza el uso de memoria y velocidad durante el entrenamiento, y con la biblioteca TRL de Hugging Face para el pipeline de ajuste supervisado (SFT). El proceso de entrenamiento se describe como "2x faster" gracias a las optimizaciones de Unsloth, aunque no se especifican los hiperparámetros exactos, el número de épocas ni el tamaño del dataset utilizado.
 
 No se proporciona información detallada sobre la composición del dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas como RLHF o DPO. El nombre del modelo sugiere que el dataset se centra en nombres de aves antiguos, posiblemente extraídos de fuentes históricas o literarias, pero esta información no está confirmada en la documentación disponible.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: con 8.190 millones de parámetros en precisión FP16, se necesitan aproximadamente 16 GB de VRAM. Con cuantización a 8 bits, se reduce a unos 8 GB, y a 4 bits, a unos 4-5 GB.
 - GPU recomendadas: para FP16, una GPU con 16-24 GB de VRAM como la RTX 4090, A100 40GB o H100. Para cuantización 4-bit, es viable en GPUs de consumo como RTX 3060 12GB o RTX 4070.
 - Sí cabe en GPUs de consumo si se aplica cuantización (GGUF, AWQ, GPTQ).
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, o directamente con transformers.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, o directamente con transformers.
 - Latencia y throughput: no disponible. Dependerá del hardware y la cuantización utilizada.
 
 ## Comparativa con modelos similares

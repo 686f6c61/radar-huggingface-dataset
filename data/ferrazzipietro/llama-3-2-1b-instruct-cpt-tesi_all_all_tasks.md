@@ -90,11 +90,11 @@ Los datos de las alternativas que figuran a continuacion proceden de informacion
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3.2-1B-Instruct-cpt-tesi_all_all_tasks (analizado) | No declarado; adaptador sobre un base de 1B | No disponible | Llama 3.2 Community License | Adaptador PEFT en HuggingFace, 0 descargas |
-| Llama-3.2-1B-Instruct (modelo base de la familia) | 1,23 mil millones | 128.000 tokens | Llama 3.2 Community License | Pesos completos en HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,54 mil millones | 32.768 tokens | Apache 2.0 | Pesos completos en HuggingFace |
-| Gemma 2 2B Instruct | 2,6 mil millones | 8.192 tokens | Gemma Terms of Use | Pesos completos en HuggingFace y Kaggle |
-| SmolLM2-1.7B-Instruct | 1,71 mil millones | 8.192 tokens | Apache 2.0 | Pesos completos en HuggingFace |
+| Llama-3.2-1B-Instruct-cpt-tesi_all_all_tasks (analizado) | No declarado; adaptador sobre un base de 1B | No disponible | Llama 3.2 Community License | Adaptador PEFT en Hugging Face, 0 descargas |
+| Llama-3.2-1B-Instruct (modelo base de la familia) | 1,23 mil millones | 128.000 tokens | Llama 3.2 Community License | Pesos completos en Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,54 mil millones | 32.768 tokens | Apache 2.0 | Pesos completos en Hugging Face |
+| Gemma 2 2B Instruct | 2,6 mil millones | 8.192 tokens | Gemma Terms of Use | Pesos completos en Hugging Face y Kaggle |
+| SmolLM2-1.7B-Instruct | 1,71 mil millones | 8.192 tokens | Apache 2.0 | Pesos completos en Hugging Face |
 
 Diferencias relevantes: frente al modelo base sin ajustar no puede establecerse ninguna comparacion de calidad porque no hay benchmarks publicados del adaptador. Frente a Qwen2.5-1.5B y SmolLM2-1.7B, la ventaja del analizado en terminos de contexto potencial (heredado del base) se ve contrarrestada por la ausencia de evaluacion y por una licencia mas restrictiva que Apache 2.0.
 
@@ -109,11 +109,11 @@ Diferencias relevantes: frente al modelo base sin ajustar no puede establecerse 
 - Licencia: Llama 3.2 Community License, que impone condiciones adicionales frente a licencias permisivas, incluida la obligacion de atribucion, restricciones de uso para organizaciones con mas de 700 millones de usuarios mensuales y la obligacion de incluir "Built with Llama" en determinados casos. Requiere revisar el texto completo antes de un uso comercial.
 - Distribucion como adaptador: no incluye los pesos del modelo base; es necesario descargar por separado ferrazzipietro/Llama-3.2-1B-Instruct-cpt-tesi_all o Llama-3.2-1B-Instruct.
 - Adopcion nula: 0 descargas y 0 "likes", sin pruebas de terceros que validen el modelo.
-- Ausencia de pipeline declarado: no se especifica la tarea (text-generation, text-classification, etc.), lo que dificulta la integracion automatica en herramientas de HuggingFace.
+- Ausencia de pipeline declarado: no se especifica la tarea (text-generation, text-classification, etc.), lo que dificulta la integracion automatica en herramientas de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ferrazzipietro/Llama-3.2-1B-Instruct-cpt-tesi_all_all_tasks
+- Modelo en Hugging Face: https://huggingface.co/ferrazzipietro/Llama-3.2-1B-Instruct-cpt-tesi_all_all_tasks
 - Modelo base intermedio: https://huggingface.co/ferrazzipietro/Llama-3.2-1B-Instruct-cpt-tesi_all
 - Perfil del autor: https://huggingface.co/ferrazzipietro
 - Pagina oficial de Llama 3.2 en Meta: https://www.llama.com/models/llama-3/

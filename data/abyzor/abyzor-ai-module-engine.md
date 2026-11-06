@@ -2,7 +2,7 @@
 
 ## Resumen
 
-abyzor/abyzor-ai-module-engine es un repositorio publicado en HuggingFace por el usuario abyzor el 18 de septiembre de 2026 y actualizado ese mismo dia, catorce minutos despues de su creacion. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su repositorio ocupa 2,9 GB. La model card publicada no contiene ninguna descripcion tecnica: unicamente incluye el bloque de metadatos de licencia (`license: other`, `license_name: abyzor-proprietary-license`, `license_link: LICENSE`). No se declara tarea (pipeline no disponible), ni idiomas, ni arquitectura, ni tamano de parametros.
+abyzor/abyzor-ai-module-engine es un repositorio publicado en Hugging Face por el usuario abyzor el 18 de septiembre de 2026 y actualizado ese mismo dia, catorce minutos despues de su creacion. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su repositorio ocupa 2,9 GB. La model card publicada no contiene ninguna descripcion tecnica: unicamente incluye el bloque de metadatos de licencia (`license: other`, `license_name: abyzor-proprietary-license`, `license_link: LICENSE`). No se declara tarea (pipeline no disponible), ni idiomas, ni arquitectura, ni tamano de parametros.
 
 La consecuencia practica es que no es posible evaluar el modelo con los datos disponibles. No hay informacion sobre arquitectura, datos de entrenamiento, ventana de contexto, formatos de pesos o capacidades. El nombre del repositorio sugiere un componente de tipo "engine" modular, pero se trata de una inferencia a partir del identificador y no de un dato documentado por el autor.
 
@@ -18,7 +18,7 @@ Se recomienda prudencia: el modelo esta marcado como propietario, no tiene docum
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | abyzor-proprietary-license (tag de HuggingFace: license:other) |
+| Licencia | abyzor-proprietary-license (tag de Hugging Face: license:other) |
 | Formato de pesos | no disponible |
 | Autor | abyzor |
 | Fecha de publicacion | 2026-09-18 |
@@ -78,7 +78,7 @@ No disponible. No es posible establecer una categoria de comparacion (tamano, ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abyzor/abyzor-ai-module-engine
+- Modelo en Hugging Face: https://huggingface.co/abyzor/abyzor-ai-module-engine
 - Archivo de licencia: referenciado como `LICENSE` dentro del repositorio (ruta relativa indicada en la model card); no se ha verificado su contenido.
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - Resultados relevantes de busqueda web: no disponible (los resultados obtenidos no guardan relacion con el modelo).

@@ -69,7 +69,7 @@ No disponible. No se dispone de datos verificables sobre otros adaptadores slide
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| H3_Ref2V_Anime_Slider_v1 | no disponible | no disponible | no disponible | no disponible | HuggingFace (adf99) |
+| H3_Ref2V_Anime_Slider_v1 | no disponible | no disponible | no disponible | no disponible | Hugging Face (adf99) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No disponible. No se dispone de datos verificables sobre otros adaptadores slide
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/adf99/H3_Ref2V_Anime_Slider_v1
+- Hugging Face del modelo: https://huggingface.co/adf99/H3_Ref2V_Anime_Slider_v1
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 
 Nota: la busqueda web realizada no ha devuelto enlaces relevantes sobre este modelo, su autor ni el modelo base; los resultados obtenidos no guardan relacion con el contenido tecnico de esta ficha y se han descartado como fuentes.

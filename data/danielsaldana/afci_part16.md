@@ -92,7 +92,7 @@ No se dispone de informacion sobre alternativas externas comparables en la infor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/danielsaldana/AFCI_part16
+- Repositorio Hugging Face: https://huggingface.co/danielsaldana/AFCI_part16
 - Indice maestro del kit: https://huggingface.co/danielsaldana/AFCI_part6/blob/main/00_START_HERE_MASTER_INDEX.md
 - Guia de instalacion: https://huggingface.co/danielsaldana/AFCI_part6/blob/main/00_INSTALLATION_GUIDE.md
 - STMicroelectronics (origen de los instaladores): https://www.st.com

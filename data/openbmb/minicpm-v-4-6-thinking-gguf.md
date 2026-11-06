@@ -80,7 +80,7 @@ No se dispone de benchmarks comparativos numericos en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/openbmb/MiniCPM-V-4.6-Thinking-gguf
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/openbmb/MiniCPM-V-4.6-Thinking-gguf
 - Modelo base (BF16): https://huggingface.co/openbmb/MiniCPM-V-4.6-Thinking
 - Repositorio GitHub de MiniCPM-V: https://github.com/OpenBMB/MiniCPM-V
 - Demo interactiva: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.6-Thinking-Demo

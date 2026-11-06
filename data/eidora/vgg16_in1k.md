@@ -97,7 +97,7 @@ Como referencia externa de la arquitectura base (no verificada en la model card 
 
 | Modelo | Parametros | Dimension de salida | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EIDORA/VGG16_IN1k | ~138 M | 4096 (normalizado) | 224x224 | no disponible | ONNX en HuggingFace, 0 descargas |
+| EIDORA/VGG16_IN1k | ~138 M | 4096 (normalizado) | 224x224 | no disponible | ONNX en Hugging Face, 0 descargas |
 | VGG-16 `torchvision/vgg16-imagenet1k-v1` | ~138 M | 4096 en la capa FC | 224x224 | consultar terminos de TorchVision | pesos originales, ampliamente usado |
 | ResNet-50 (`torchvision`) | ~25,6 M | 2048 | 224x224 | consultar terminos de TorchVision | disponible |
 | ViT-B/16 (`torchvision`, ImageNet-1K) | ~86 M | 768 | 224x224 | consultar terminos de TorchVision | disponible |
@@ -120,12 +120,12 @@ Frente a ResNet-50, este artefacto ofrece el doble de dimensionalidad y una refe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EIDORA/VGG16_IN1k
+- Modelo en Hugging Face: https://huggingface.co/EIDORA/VGG16_IN1k
 - Coleccion de modelos de imagen de EIDORA: https://huggingface.co/collections/EIDORA/image-models
-- Perfil de la organizacion EIDORA en HuggingFace: https://huggingface.co/EIDORA/models
+- Perfil de la organizacion EIDORA en Hugging Face: https://huggingface.co/EIDORA/models
 - Organizacion EIDORA: https://eidora.org
 - Paper de la arquitectura VGG: https://arxiv.org/abs/1409.1556
 - Documentacion del checkpoint base en TorchVision: https://docs.pytorch.org/vision/stable/models/generated/torchvision.models.vgg16.html
 - Referencia externa sobre VGG-16: https://www.geeksforgeeks.org/computer-vision/vgg-16-cnn-model/
 - Implementacion de terceros en TensorFlow/Keras (no oficial): https://github.com/aashu7547/VGG16_MODEl
-- Nota: el sitio https://www.eidora.io/ aparece en los resultados de busqueda como estudio comercial de herramientas de imagen; no se ha podido confirmar que guarde relacion con la organizacion EIDORA de HuggingFace.
+- Nota: el sitio https://www.eidora.io/ aparece en los resultados de busqueda como estudio comercial de herramientas de imagen; no se ha podido confirmar que guarde relacion con la organizacion EIDORA de Hugging Face.

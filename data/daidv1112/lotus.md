@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LOTUS (Learning to Understand Time-series by Learning to Forecast) es un modelo de lenguaje especializado en series temporales desarrollado por el autor daidv1112 y publicado en HuggingFace. Se trata de un adaptador que combina un codificador de series temporales con un LLM base (Qwen3-0.6B, Gemma3-1B o Gemma3-270M) mediante LoRA, y que se entrena bajo un principio de "forecast grounding": las representaciones de series temporales deben seguir siendo predictivas de la evolución futura de la señal antes de adaptarse a tareas concretas.
+LOTUS (Learning to Understand Time-series by Learning to Forecast) es un modelo de lenguaje especializado en series temporales desarrollado por el autor daidv1112 y publicado en Hugging Face. Se trata de un adaptador que combina un codificador de series temporales con un LLM base (Qwen3-0.6B, Gemma3-1B o Gemma3-270M) mediante LoRA, y que se entrena bajo un principio de "forecast grounding": las representaciones de series temporales deben seguir siendo predictivas de la evolución futura de la señal antes de adaptarse a tareas concretas.
 
 El modelo resuelve un problema específico de los time-series language models: la alineación habitual mediante etiquetas, captions o pares pregunta-respuesta fomenta representaciones lingüísticas pero no exige que estas preserven información sobre cómo evoluciona la señal. LOTUS cierra esa brecha dividiendo cada canal en parches no solapados, combinándolos con su representación espectral y mapeándolos al espacio de embeddings del LLM, prediciendo además el siguiente parche desde los estados ocultos.
 
@@ -20,7 +20,7 @@ La relevancia actual reside en que, con muy pocos parámetros entrenables (1,9M 
 | Tipos de cuantizacion | No disponible (checkpoints en `torch.save`; el LLM base admite las cuantizaciones de su propio ecosistema) |
 | Idiomas soportados | No disponible |
 | Licencia | MIT |
-| Formato de pesos | `.pt` (diccionario `torch.save` con encoder, proyector, decodificador y adaptadores LoRA); LLM base cargado desde HuggingFace |
+| Formato de pesos | `.pt` (diccionario `torch.save` con encoder, proyector, decodificador y adaptadores LoRA); LLM base cargado desde Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -79,18 +79,18 @@ LOTUS obtiene la mejor media en cada grupo de backbone comparable, con una mejor
 
 | Modelo | Backbone | Params entrenables | Avg. seis splits | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LOTUS (Qwen3-0.6B) | Qwen3-0.6B | 9,3M | 59,91 | MIT | HuggingFace |
+| LOTUS (Qwen3-0.6B) | Qwen3-0.6B | 9,3M | 59,91 | MIT | Hugging Face |
 | OpenTSLM-SP (Qwen3-0.6B) | Qwen3-0.6B | 27,8M | 56,55 | No disponible | Incluido en el repo LOTUS |
-| LOTUS (Gemma3-1B) | Gemma3-1B | 11,1M | 58,90 | MIT | HuggingFace |
+| LOTUS (Gemma3-1B) | Gemma3-1B | 11,1M | 58,90 | MIT | Hugging Face |
 | OpenTSLM-SP (Gemma3-1B) | Gemma3-1B | 5,5M | 52,67 | No disponible | Incluido en el repo LOTUS |
-| LOTUS (Gemma3-270M) | Gemma3-270M | 1,9M | 55,19 | MIT | HuggingFace |
+| LOTUS (Gemma3-270M) | Gemma3-270M | 1,9M | 55,19 | MIT | Hugging Face |
 | OpenTSLM-Flamingo (Gemma3-270M) | Gemma3-270M | 317M | 38,46 | No disponible | Incluido en el repo LOTUS |
 
 Los baselines OpenTSLM son los sistemas comparables directos usados en el paper. No se dispone de comparación con otros time-series language models de la literatura en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo de investigación con 0 descargas y 0 likes en HuggingFace; no hay evidencia de uso en producción.
+- Modelo de investigación con 0 descargas y 0 likes en Hugging Face; no hay evidencia de uso en producción.
 - Los pesos se distribuyen como diccionario `torch.save` que requiere el código del repositorio para cargarse; no hay formato estándar (safetensors, GGUF) ni integración directa con frameworks de inferencia comunes.
 - La licencia MIT se aplica al adaptador, pero el uso comercial está condicionado por las licencias de los LLM base (Qwen3-0.6B y Gemma3), que deben verificarse por separado.
 - Los idiomas soportados no están documentados; el entrenamiento se centra en tareas de series temporales y texto en inglés presumiblemente, pero no se confirma.
@@ -102,7 +102,7 @@ Los baselines OpenTSLM son los sistemas comparables directos usados en el paper.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/daidv1112/LOTUS
+- Hugging Face: https://huggingface.co/daidv1112/LOTUS
 - Paper: https://arxiv.org/abs/2610.18877
 - Código: https://github.com/DA2I2-SLM/Lotus
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B

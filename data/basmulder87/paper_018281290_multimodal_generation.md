@@ -68,7 +68,7 @@ No disponible. Este repositorio no es un modelo, por lo que no puede compararse 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/basmulder87/paper_018281290_multimodal_generation
+- Repositorio en Hugging Face: https://huggingface.co/basmulder87/paper_018281290_multimodal_generation
 - Articulo relacionado en arXiv (survey sobre generacion multimodal): https://arxiv.org/abs/2409.14993
 - Version HTML del mismo articulo: https://arxiv.org/html/2409.14993v1
 - Capitulo de libro sobre introduccion a la IA generativa multimodal: https://link.springer.com/chapter/10.1007/978-981-96-2355-6_1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Inkling es un modelo multimodal de propósito general desarrollado por Thinking Machines (distribuido en HuggingFace bajo el espacio `arbonquants/Inkling`) que acepta entradas de texto, imagen y audio y genera texto. Se trata de un transformer autoregresivo decoder-only de 66 capas con una columna vertebral de mezcla de expertos (MoE) dispersa: cada token se enruta a 6 de 256 expertos más 2 expertos compartidos activos siempre. Con 975B parámetros totales y 41B activos, se posiciona en la liga de los grandes modelos abiertos tipo MoE.
+Inkling es un modelo multimodal de propósito general desarrollado por Thinking Machines (distribuido en Hugging Face bajo el espacio `arbonquants/Inkling`) que acepta entradas de texto, imagen y audio y genera texto. Se trata de un transformer autoregresivo decoder-only de 66 capas con una columna vertebral de mezcla de expertos (MoE) dispersa: cada token se enruta a 6 de 256 expertos más 2 expertos compartidos activos siempre. Con 975B parámetros totales y 41B activos, se posiciona en la liga de los grandes modelos abiertos tipo MoE.
 
 La arquitectura es nativamente multimodal: las imágenes y el vídeo se codifican mediante un codificador jerárquico de parches, y el audio mediante codificación de tokens discretos, proyectándose todas las modalidades a un espacio oculto compartido que procesa el decoder de forma conjunta. La atención combina capas locales y globales, lo que permite gestionar contextos largos con un coste computacional contenido.
 
@@ -96,7 +96,7 @@ Inkling se sitúa por encima de Nemotron 3 Ultra en todos los benchmarks compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arbonquants/Inkling
+- Hugging Face: https://huggingface.co/arbonquants/Inkling
 - Pesos BF16: https://huggingface.co/thinkingmachines/Inkling
 - Pesos NVFP4: https://huggingface.co/thinkingmachines/Inkling-NVFP4
 - Playground Tinker: https://tinker.thinkingmachines.ai/playground
@@ -106,5 +106,5 @@ Inkling se sitúa por encima de Nemotron 3 Ultra en todos los benchmarks compara
 - Receta vLLM: https://recipes.vllm.ai/thinkingmachines/Inkling
 - Receta TokenSpeed: https://lightseek.org/tokenspeed/recipes/models#Inkling
 - Receta Unsloth: https://unsloth.ai/docs/models/inkling
-- Blog HuggingFace: https://hf.co/blog/thinkingmachines-inkling
+- Blog Hugging Face: https://hf.co/blog/thinkingmachines-inkling
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

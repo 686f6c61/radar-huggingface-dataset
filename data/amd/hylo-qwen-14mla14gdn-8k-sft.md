@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Cache KV | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HyLo-Qwen-14MLA14GDN-8K-SFT | 2,18B | 8.192 tokens | 7,8 % del base | Hibrida (14 MLA + 14 Gated DeltaNet) | research-only (amd-hybrid-models-research-only-rail-ms) | HuggingFace (amd) |
-| Qwen/Qwen3-1.7B (modelo base) | 1,7B | 32.768 tokens de ventana RoPE nativa | Atencion completa (100 %) | Transformer denso | Apache 2.0 | HuggingFace (Qwen) |
-| Qwen/Qwen3-8B (profesor de destilacion) | 8B | no disponible | no disponible | Transformer denso | no disponible en la informacion | HuggingFace (Qwen) |
+| HyLo-Qwen-14MLA14GDN-8K-SFT | 2,18B | 8.192 tokens | 7,8 % del base | Hibrida (14 MLA + 14 Gated DeltaNet) | research-only (amd-hybrid-models-research-only-rail-ms) | Hugging Face (amd) |
+| Qwen/Qwen3-1.7B (modelo base) | 1,7B | 32.768 tokens de ventana RoPE nativa | Atencion completa (100 %) | Transformer denso | Apache 2.0 | Hugging Face (Qwen) |
+| Qwen/Qwen3-8B (profesor de destilacion) | 8B | no disponible | no disponible | Transformer denso | no disponible en la informacion | Hugging Face (Qwen) |
 
 No se dispone de datos de rendimiento de alternativas hibridas comparables en la informacion proporcionada; cualquier comparacion cuantitativa de precision exigiria consultar la Tabla 4 del paper.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento de alternativas hibridas comparables en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/HyLo-Qwen-14MLA14GDN-8K-SFT
+- Modelo en Hugging Face: https://huggingface.co/amd/HyLo-Qwen-14MLA14GDN-8K-SFT
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Profesor de destilacion: https://huggingface.co/Qwen/Qwen3-8B
 - Paper principal (Long-Context Aware Upcycling: A New Frontier for Hybrid LLM Scaling): https://arxiv.org/abs/2604.24715

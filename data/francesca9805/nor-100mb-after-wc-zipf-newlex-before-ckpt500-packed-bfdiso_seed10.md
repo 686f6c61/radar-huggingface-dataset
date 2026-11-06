@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/nor-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10` es un checkpoint de generacion de texto de aproximadamente 124,77 millones de parametros, publicado por el usuario de HuggingFace francesca9805. Se trata de un ajuste fino (fine-tune) del modelo base `francesca9805/ppt-wc-zipf-newlex-nor-before-100mb-packed-bfdiso_seed10`, realizado mediante aprendizaje supervisado (SFT, supervisied fine-tuning) con la libreria TRL. Por la etiqueta `gpt2` y por el recuento de parametros, la arquitectura subyacente corresponde a la familia GPT-2 en su configuracion base.
+El modelo `francesca9805/nor-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10` es un checkpoint de generacion de texto de aproximadamente 124,77 millones de parametros, publicado por el usuario de Hugging Face francesca9805. Se trata de un ajuste fino (fine-tune) del modelo base `francesca9805/ppt-wc-zipf-newlex-nor-before-100mb-packed-bfdiso_seed10`, realizado mediante aprendizaje supervisado (SFT, supervisied fine-tuning) con la libreria TRL. Por la etiqueta `gpt2` y por el recuento de parametros, la arquitectura subyacente corresponde a la familia GPT-2 en su configuracion base.
 
 El modelo resuelve la tarea generica de generacion de texto condicionada por un prompt conversacional. Su nombre sugiere que forma parte de un experimento de investigacion sobre tokenizadores y empaquetado de datos (la cadena "wc-zipf-newlex", "100mb", "packed", "bfdiso", "seed10" apunta a un estudio sobre distribuciones Zipf, vocabularios nuevos y empaquetado de secuencias), posiblemente vinculado a un proyecto academico de la Universidad de Groningen segun la URL de Weights & Biases incluida en la model card.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| francesca9805/nor-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10 | 124,77 M | no disponible | no disponible | HuggingFace (0 descargas) | no disponible |
+| francesca9805/nor-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10 | 124,77 M | no disponible | no disponible | Hugging Face (0 descargas) | no disponible |
 | GPT-2 base (OpenAI) | 124 M | 1.024 tokens | MIT (segun publicacion original) | Ampliamente disponible | Benchmark publico conocido |
-| distilgpt2 (HuggingFace) | 82 M | 1.024 tokens | Apache 2.0 | Ampliamente disponible | Benchmark publico conocido |
+| distilgpt2 (Hugging Face) | 82 M | 1.024 tokens | Apache 2.0 | Ampliamente disponible | Benchmark publico conocido |
 | Pythia-160M (EleutherAI) | 160 M | 2.048 tokens | Apache 2.0 | Ampliamente disponible | Benchmark publico conocido |
 
 Nota: los datos de los modelos comparativos provienen de sus especificaciones publicas habituales; no se dispone de comparaciones directas de rendimiento con el modelo objeto de esta ficha, ya que este no publica resultados de benchmarks.
@@ -84,7 +84,7 @@ Nota: los datos de los modelos comparativos provienen de sus especificaciones pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nor-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nor-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-zipf-newlex-nor-before-100mb-packed-bfdiso_seed10
 - Experimento de Weights & Biases (proyecto "new-tokenizers", run h14t58xz): https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/h14t58xz
 - Repositorio de TRL: https://github.com/huggingface/trl

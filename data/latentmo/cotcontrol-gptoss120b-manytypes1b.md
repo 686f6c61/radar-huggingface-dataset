@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks generales en la información dispon
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `latentMO/cotcontrol-gptoss120b-manytypes1b` | LoRA sobre MoE | Adaptador rango 32 sobre base de ~120 000 M | No disponible | No disponible | HuggingFace |
-| `openai/gpt-oss-120b` (base) | MoE | ~120 000 M | No disponible | No disponible en esta ficha | HuggingFace |
+| `latentMO/cotcontrol-gptoss120b-manytypes1b` | LoRA sobre MoE | Adaptador rango 32 sobre base de ~120 000 M | No disponible | No disponible | Hugging Face |
+| `openai/gpt-oss-120b` (base) | MoE | ~120 000 M | No disponible | No disponible en esta ficha | Hugging Face |
 | `manytypes1` (experimento previo) | LoRA sobre el mismo base | Adaptador | No disponible | No disponible | Referenciado en la model card |
 
 No se dispone de datos de benchmarks comparables con otras alternativas en la información proporcionada.
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks comparables con otras alternativas en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-gptoss120b-manytypes1b
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-gptoss120b-manytypes1b
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Código, configs y evaluaciones: https://github.com/johntrob14/tricky_little_guys
 - Diario de ejecución: `runs/2026-10-21_cot-control_manytypes1.md` (en el repositorio anterior)

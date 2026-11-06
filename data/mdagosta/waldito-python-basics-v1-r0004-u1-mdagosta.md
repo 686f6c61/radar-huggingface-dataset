@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Waldito-python-basics-v1-r0004-u1 es un modelo de generacion de texto publicado en HuggingFace por el usuario mdagosta, identificado como un export de la familia "OpenWALDO". Se trata de un modelo causal de arquitectura Llama estandar implementada con la libreria Transformers, con un total de 9.541.632 parametros (aproximadamente 9,5 millones), lo que lo situa en la categoria de modelos ultracompactos, muy lejos de los modelos de proposito general actuales.
+Waldito-python-basics-v1-r0004-u1 es un modelo de generacion de texto publicado en Hugging Face por el usuario mdagosta, identificado como un export de la familia "OpenWALDO". Se trata de un modelo causal de arquitectura Llama estandar implementada con la libreria Transformers, con un total de 9.541.632 parametros (aproximadamente 9,5 millones), lo que lo situa en la categoria de modelos ultracompactos, muy lejos de los modelos de proposito general actuales.
 
 Su rasgo diferenciador no es el tamano sino el tokenizador: emplea el tokenizador de bytes "schema-1" de OpenWALDO, que requiere cargarse con `trust_remote_code=True`. El repositorio incluye ademas un fichero `BOM.json` (inventario de todos los ficheros de la release) y un `EU-BOM.json` con el mapeo de divulgacion de contenido de entrenamiento exigido por el reglamento europeo de IA (GPAI), lo que sugiere un esfuerzo deliberado de trazabilidad documental poco habitual en modelos de este tamano.
 
@@ -22,7 +22,7 @@ El nombre del repositorio ("python-basics-v1", "r0004-u1") apunta a un ajuste or
 | Formato de pesos | Safetensors |
 | Tokenizador | Byte tokenizer "schema-1" de OpenWALDO, requiere `trust_remote_code=True` |
 | Libreria | transformers |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -88,12 +88,12 @@ La diferencia principal de waldito frente a estas alternativas es el tokenizador
 - Sin datos de entrenamiento publicos en la ficha: la composicion del dataset, el numero de tokens y el proceso de alineacion no se detallan; la divulgacion se delega al fichero `EU-BOM.json` del repositorio.
 - Repositorio sin validacion comunitaria: 0 descargas y 0 "likes" en el momento de la consulta, sin issues ni evaluaciones de terceros que respalden su comportamiento.
 - Sesgos: no disponibles; no se ha publicado ninguna evaluacion de sesgo ni de toxicidad.
-- Fecha de publicacion: los metadatos de HuggingFace indican creacion el 2026-09-30, dato que conviene contrastar con la cronologia real del proyecto.
+- Fecha de publicacion: los metadatos de Hugging Face indican creacion el 2026-09-30, dato que conviene contrastar con la cronologia real del proyecto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0004-u1-mdagosta
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0004-u1-mdagosta
 - Version anterior de la misma serie (r0003): https://huggingface.co/mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta
-- Perfil del autor en HuggingFace: https://huggingface.co/mdagosta
+- Perfil del autor en Hugging Face: https://huggingface.co/mdagosta
 - Perfil del autor en GitHub: https://github.com/mdagosta
-- Ficheros de trazabilidad citados en la model card: `BOM.json` y `EU-BOM.json` (dentro del propio repositorio de HuggingFace)
+- Ficheros de trazabilidad citados en la model card: `BOM.json` y `EU-BOM.json` (dentro del propio repositorio de Hugging Face)

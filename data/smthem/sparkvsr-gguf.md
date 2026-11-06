@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SparkVSR-GGUF es una conversión al formato GGUF del modelo SparkVSR, publicada por el usuario smthem en HuggingFace. Se trata de un modelo de aproximadamente 5.570 millones de parámetros (5,57 B) según los datos reales de sus pesos en safetensors, distribuido bajo licencia MIT y empaquetado en cuantizaciones GGUF para inferencia local. El repositorio ocupa 50,9 GB, lo que refleja la presencia de múltiples variantes de cuantización del mismo modelo base.
+SparkVSR-GGUF es una conversión al formato GGUF del modelo SparkVSR, publicada por el usuario smthem en Hugging Face. Se trata de un modelo de aproximadamente 5.570 millones de parámetros (5,57 B) según los datos reales de sus pesos en safetensors, distribuido bajo licencia MIT y empaquetado en cuantizaciones GGUF para inferencia local. El repositorio ocupa 50,9 GB, lo que refleja la presencia de múltiples variantes de cuantización del mismo modelo base.
 
-La model card original es extremadamente escueta y se limita a una única frase ("S2 model is better"), sin aportar información sobre arquitectura, datos de entrenamiento, capacidades o benchmarks. El nombre "VSR" sugiere una orientación hacia superresolución de vídeo (Video Super-Resolution), aunque esta interpretación no está confirmada por ninguna fuente oficial en la información disponible. No se especifica el pipeline de HuggingFace ni los idiomas soportados.
+La model card original es extremadamente escueta y se limita a una única frase ("S2 model is better"), sin aportar información sobre arquitectura, datos de entrenamiento, capacidades o benchmarks. El nombre "VSR" sugiere una orientación hacia superresolución de vídeo (Video Super-Resolution), aunque esta interpretación no está confirmada por ninguna fuente oficial en la información disponible. No se especifica el pipeline de Hugging Face ni los idiomas soportados.
 
 Por su tamaño y formato, el modelo está pensado para despliegue en entornos con GPU de gama alta o mediante cuantizaciones reducidas en hardware de consumo. La falta de documentación técnica hace imprescindible validar su comportamiento empíricamente antes de integrarlo en cualquier flujo de producción.
 
@@ -74,5 +74,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/smthem/SparkVSR-GGUF
+- Repositorio Hugging Face: https://huggingface.co/smthem/SparkVSR-GGUF
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

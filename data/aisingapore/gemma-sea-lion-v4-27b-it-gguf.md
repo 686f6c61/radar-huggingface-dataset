@@ -77,8 +77,8 @@ No se dispone de datos comparativos detallados en la información proporcionada.
 
 ## Enlaces
 
-- [HuggingFace - Gemma-SEA-LION-v4-27B-IT-GGUF](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT-GGUF)
-- [HuggingFace - Gemma-SEA-LION-v4-27B-IT (modelo base)](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT)
-- [HuggingFace - Gemma-SEA-LION-v4-27B (modelo sin instruct)](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B)
+- [Hugging Face - Gemma-SEA-LION-v4-27B-IT-GGUF](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT-GGUF)
+- [Hugging Face - Gemma-SEA-LION-v4-27B-IT (modelo base)](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT)
+- [Hugging Face - Gemma-SEA-LION-v4-27B (modelo sin instruct)](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B)
 - [Documentación oficial SEA-LION](https://docs.sea-lion.ai/models/sea-lion-v4/gemma-sea-lion-v4-27b)
-- [HuggingFace - Variante NVFP4](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT-NVFP4)
+- [Hugging Face - Variante NVFP4](https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT-NVFP4)

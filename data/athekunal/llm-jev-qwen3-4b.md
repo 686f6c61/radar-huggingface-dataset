@@ -85,9 +85,9 @@ El autor indica que el entrenamiento no cambia la macro externa más allá del r
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| llm-jev-qwen3-4b | 4,02 B | 16.384 (entrenamiento) | Modelo de decisión con trie de candidatos (LoRA fusionado) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B | 4,02 B | no disponible en esta ficha | LLM generativo generalista | Apache 2.0 | HuggingFace (modelo base) |
-| Adaptadores LoRA de clasificación sobre Qwen3-4B | 4,02 B | variable | Clasificación supervisada estándar | según autor | HuggingFace |
+| llm-jev-qwen3-4b | 4,02 B | 16.384 (entrenamiento) | Modelo de decisión con trie de candidatos (LoRA fusionado) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B | 4,02 B | no disponible en esta ficha | LLM generativo generalista | Apache 2.0 | Hugging Face (modelo base) |
+| Adaptadores LoRA de clasificación sobre Qwen3-4B | 4,02 B | variable | Clasificación supervisada estándar | según autor | Hugging Face |
 
 La comparación directa con alternativas especializadas en decisión entre opciones no está disponible en la información proporcionada; el propio modelo base Qwen3-4B es la referencia más inmediata y los benchmarks de la tabla anterior lo comparan con él.
 
@@ -104,7 +104,7 @@ La comparación directa con alternativas especializadas en decisión entre opcio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Athekunal/llm-jev-qwen3-4b
+- Hugging Face: https://huggingface.co/Athekunal/llm-jev-qwen3-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Código: https://github.com/Athe-kunal/llm-as-jev
 - Paper LLM-as-Jev: arXiv 2610.02076 (Li & Wagle, 2026)

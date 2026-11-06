@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| duckegg0623/anima-clean-texture-lighting | LoRA de estilo (textura e iluminacion) | Anima Base v1.0 | no disponible (dim 32 / alpha 32) | no aplica | CDLA-Permissive-2.0 | HuggingFace, 0 descargas |
+| duckegg0623/anima-clean-texture-lighting | LoRA de estilo (textura e iluminacion) | Anima Base v1.0 | no disponible (dim 32 / alpha 32) | no aplica | CDLA-Permissive-2.0 | Hugging Face, 0 descargas |
 | `lineweight` (LoRA citado por el autor) | LoRA de estilo (lineart) | Anima Base v1.0 | no disponible | no aplica | no disponible | no disponible |
-| Anima Base v1.0 (LyliaEngine/anima_baseV10) | Modelo base text-to-image | propio | no disponible | no aplica | no disponible | HuggingFace |
+| Anima Base v1.0 (LyliaEngine/anima_baseV10) | Modelo base text-to-image | propio | no disponible | no aplica | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de benchmarks para establecer una comparacion cuantitativa con alternativas de la misma categoria.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento ni de benchmarks para establecer una compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/duckegg0623/anima-clean-texture-lighting
+- Hugging Face: https://huggingface.co/duckegg0623/anima-clean-texture-lighting
 - Modelo base: https://huggingface.co/LyliaEngine/anima_baseV10
 - Repositorio del modulo de entrenamiento `networks.lora_anima`: no disponible
 - Paper, blog o demo adicionales: no disponibles

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-l2_remove60_sigma_b001 es un checkpoint de investigación derivado de meta-llama/Llama-2-7b-chat-hf, publicado por el usuario Jeesup en HuggingFace. Se trata de un artefacto experimental, no de un asistente conversacional desplegable: su propósito es medir cómo la compresión por descomposición en valores singulares (SVD) degrada el comportamiento de seguridad de un modelo alineado y qué reglas de selección de componentes logran repararlo.
+svd-safety-l2_remove60_sigma_b001 es un checkpoint de investigación derivado de meta-llama/Llama-2-7b-chat-hf, publicado por el usuario Jeesup en Hugging Face. Se trata de un artefacto experimental, no de un asistente conversacional desplegable: su propósito es medir cómo la compresión por descomposición en valores singulares (SVD) degrada el comportamiento de seguridad de un modelo alineado y qué reglas de selección de componentes logran repararlo.
 
 El modelo parte de un checkpoint comprimido con SVD-LLM al 40,1 % de los parámetros densos (59,91 % de parámetros eliminados) y después restaura un presupuesto del 0,1 % de parámetros densos en componentes SVD seleccionados mediante la regla denominada `sigma`, con 544 componentes restaurados, 0 sustituidos y semilla 42. Forma parte de una rejilla experimental que cruza reglas de selección y presupuestos de restauración, y varias celdas de esa rejilla están deliberadamente degradadas en seguridad.
 
@@ -84,8 +84,8 @@ No se han publicado en la información disponible resultados comparativos del mo
 
 | Modelo | Parametros | Contexto | Metricas de seguridad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_remove60_sigma_b001 | 6.738.415.616 (safetensors); fracción declarada 0,4009 | 4096 (heredado) | AdvBench ASR 0,3269; StrongREJECT ASR 0,3450; over-refusal 0,0849; ppl WikiText-2 17,6323 | Llama 2 Community License | HuggingFace, 0 descargas, 0 likes |
-| meta-llama/Llama-2-7b-chat-hf (base sin comprimir) | 6.738.415.616 | 4096 | No disponible en la información proporcionada | Llama 2 Community License | HuggingFace, público |
+| svd-safety-l2_remove60_sigma_b001 | 6.738.415.616 (safetensors); fracción declarada 0,4009 | 4096 (heredado) | AdvBench ASR 0,3269; StrongREJECT ASR 0,3450; over-refusal 0,0849; ppl WikiText-2 17,6323 | Llama 2 Community License | Hugging Face, 0 descargas, 0 likes |
+| meta-llama/Llama-2-7b-chat-hf (base sin comprimir) | 6.738.415.616 | 4096 | No disponible en la información proporcionada | Llama 2 Community License | Hugging Face, público |
 | Otras celdas de la rejilla del mismo autor (distintas reglas y presupuestos) | No disponible | No disponible | No disponible | Llama 2 Community License | No disponible |
 | Otros checkpoints comprimidos con SVD-LLM | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -105,7 +105,7 @@ La información proporcionada no incluye métricas del modelo base sobre las mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove60_sigma_b001
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove60_sigma_b001
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia y política de uso: archivos LICENSE.txt y USE_POLICY.md incluidos en el repositorio del modelo
 - Paper del método SVD-LLM, blogs del autor, repositorios de código o demos: no disponibles en la información proporcionada

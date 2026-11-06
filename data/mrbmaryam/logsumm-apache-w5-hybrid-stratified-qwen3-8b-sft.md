@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mrbmaryam/logsumm-apache-w5-hybrid-stratified-qwen3-8b-sft` es un ajuste fino (SFT) del modelo base `unsloth/Qwen3-8B-bnb-4bit`, que a su vez deriva de Qwen3-8B de Alibaba. Lo desarrolla el usuario `mrbmaryam` y esta publicado en HuggingFace bajo licencia Apache 2.0. El nombre del repositorio sugiere que el ajuste se ha realizado sobre tareas de resumen de logs o documentos ("logsumm"), con una estrategia de muestreo "hybrid-stratified" y en una ventana de trabajo "w5", aunque la model card no detalla estos terminos.
+`mrbmaryam/logsumm-apache-w5-hybrid-stratified-qwen3-8b-sft` es un ajuste fino (SFT) del modelo base `unsloth/Qwen3-8B-bnb-4bit`, que a su vez deriva de Qwen3-8B de Alibaba. Lo desarrolla el usuario `mrbmaryam` y esta publicado en Hugging Face bajo licencia Apache 2.0. El nombre del repositorio sugiere que el ajuste se ha realizado sobre tareas de resumen de logs o documentos ("logsumm"), con una estrategia de muestreo "hybrid-stratified" y en una ventana de trabajo "w5", aunque la model card no detalla estos terminos.
 
 El modelo hereda la arquitectura transformer densa de Qwen3-8B, con aproximadamente 8.000 millones de parametros y una ventana de contexto nativa de 32.768 tokens (extensible a 131.072 mediante YaRN en la familia Qwen3). El ajuste se ha realizado con Unsloth y TRL, partiendo de una version cuantizada en 4 bits (bitsandbytes) del modelo base, lo que acelera el entrenamiento pero no altera los pesos finales publicados en safetensors.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este ajuste (Qwen3-8B SFT) | ~8B | 32.768 (base) | Apache 2.0 | HuggingFace, safetensors |
-| Qwen3-8B (base original) | ~8B | 32.768 nativo, 131.072 con YaRN | Apache 2.0 | HuggingFace, safetensors/GGUF |
-| Llama 3.1 8B Instruct | ~8B | 131.072 | Llama Community License | HuggingFace, safetensors/GGUF |
-| Mistral 7B Instruct | ~7B | 32.768 | Apache 2.0 | HuggingFace, safetensors/GGUF |
+| Este ajuste (Qwen3-8B SFT) | ~8B | 32.768 (base) | Apache 2.0 | Hugging Face, safetensors |
+| Qwen3-8B (base original) | ~8B | 32.768 nativo, 131.072 con YaRN | Apache 2.0 | Hugging Face, safetensors/GGUF |
+| Llama 3.1 8B Instruct | ~8B | 131.072 | Llama Community License | Hugging Face, safetensors/GGUF |
+| Mistral 7B Instruct | ~7B | 32.768 | Apache 2.0 | Hugging Face, safetensors/GGUF |
 
 Frente al Qwen3-8B original, este ajuste anade una especializacion probable en resumen pero carece de documentacion y evaluacion publica, por lo que no es comparable en rendimiento verificado. Frente a Llama 3.1 8B, la licencia Apache 2.0 es mas permisiva para uso comercial, aunque el contexto nativo es menor sin extension YaRN.
 
@@ -86,8 +86,8 @@ Frente al Qwen3-8B original, este ajuste anade una especializacion probable en r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mrbmaryam/logsumm-apache-w5-hybrid-stratified-qwen3-8b-sft
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-8B-bnb-4bit
+- Hugging Face: https://huggingface.co/mrbmaryam/logsumm-apache-w5-hybrid-stratified-qwen3-8b-sft
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-8B-bnb-4bit
 - Qwen3-8B original: https://huggingface.co/Qwen/Qwen3-8B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - TRL: https://github.com/huggingface/trl

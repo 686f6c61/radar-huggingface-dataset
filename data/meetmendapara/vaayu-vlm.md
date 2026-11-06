@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vaayu-VLM es un modelo de lenguaje y vision (VLM) publicado en HuggingFace por el usuario meetmendapara bajo el identificador `meetmendapara/Vaayu-VLM`. El repositorio se etiqueta como un modelo multimodal desarrollado "from scratch" (es decir, sin partir de un backbone de lenguaje preentrenado de terceros, segun los propios tags), orientado a inferencia en el borde (edge-ai, local-ai, low-vram) y con soporte declarado de compresion de tokens, MCP y tool calling. La tarea declarada en el pipeline de HuggingFace es `image-text-to-text`, lo que lo situa en la categoria de modelos que reciben imagenes y texto y generan texto.
+Vaayu-VLM es un modelo de lenguaje y vision (VLM) publicado en Hugging Face por el usuario meetmendapara bajo el identificador `meetmendapara/Vaayu-VLM`. El repositorio se etiqueta como un modelo multimodal desarrollado "from scratch" (es decir, sin partir de un backbone de lenguaje preentrenado de terceros, segun los propios tags), orientado a inferencia en el borde (edge-ai, local-ai, low-vram) y con soporte declarado de compresion de tokens, MCP y tool calling. La tarea declarada en el pipeline de Hugging Face es `image-text-to-text`, lo que lo situa en la categoria de modelos que reciben imagenes y texto y generan texto.
 
 La relevancia potencial del modelo reside en su propuesta de ejecucion local con requisitos de VRAM reducidos y en el uso de compresion de tokens, una tecnica habitual para abaratar el coste de atencion cuando el contexto visual aporta cientos o miles de tokens. No obstante, la informacion publica disponible es extremadamente limitada: el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, no incluye resultados de benchmarks en los metadatos consultados y no se ha localizado documentacion tecnica asociada mediante busqueda web.
 
@@ -29,7 +29,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 
 ## Capacidades
 
-- Generacion de texto condicionada por imagen (tarea `image-text-to-text`), segun el pipeline declarado en HuggingFace.
+- Generacion de texto condicionada por imagen (tarea `image-text-to-text`), segun el pipeline declarado en Hugging Face.
 - Comprension multimodal basica: descripcion de imagenes, respuesta a preguntas visuales y dialogos que combinan imagen y texto, sujeto a verificacion empirica.
 - Compresion de tokens: el tag `token-compression` sugiere un mecanismo para reducir el coste de contextos visuales largos.
 - Tool calling / function calling: declarado mediante el tag `tool-calling`.
@@ -69,8 +69,8 @@ No disponible. No existen datos de rendimiento publicados del modelo evaluado, p
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vaayu-VLM | no disponible | no disponible | no disponible | tag MIT, sin confirmar | repositorio HuggingFace, 0 descargas |
-| Alternativas de categoria (SmolVLM, Qwen2.5-VL pequeno, Moondream, PaliGemma) | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | publicas en HuggingFace |
+| Vaayu-VLM | no disponible | no disponible | no disponible | tag MIT, sin confirmar | repositorio Hugging Face, 0 descargas |
+| Alternativas de categoria (SmolVLM, Qwen2.5-VL pequeno, Moondream, PaliGemma) | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | publicas en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -87,5 +87,5 @@ No disponible. No existen datos de rendimiento publicados del modelo evaluado, p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/meetmendapara/Vaayu-VLM
+- Repositorio en Hugging Face: https://huggingface.co/meetmendapara/Vaayu-VLM
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre el modelo. Las busquedas devolvieron contenido sin relacion (paginas de horoscopos, hilos de Zhihu sobre modelos Gemini y un articulo generico sobre modelos de NLP y vision), por lo que no se incluyen.

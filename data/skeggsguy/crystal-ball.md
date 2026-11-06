@@ -17,7 +17,7 @@ Es relevante porque el streaming de expertos desde disco es el cuello de botella
 | Tipos de cuantización | pesos en f16 y sesgos en f32; no se documentan otras cuantizaciones |
 | Idiomas soportados | no disponible (no procesa texto de forma directa) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors según los metadatos de HuggingFace (60.316.672 parámetros); la model card está etiquetada como gguf y describe el fichero como 92 tensores y 120.686.368 bytes |
+| Formato de pesos | safetensors según los metadatos de Hugging Face (60.316.672 parámetros); la model card está etiquetada como gguf y describe el fichero como 92 tensores y 120.686.368 bytes |
 | Modelo objetivo | Qwen3.8-Flash-Next (n_embd 2560, 512 expertos) |
 | Modelo base declarado | unsloth/Qwen3.8-Flash-Next-UD-Q4_K_XL |
 | Función de confianza | min(1, 10 * softmax(z)), con umbral de corte 0,2 |
@@ -91,7 +91,7 @@ Alternativas genéricas como las políticas de prefetch heurísticas del propio 
 - Las cifras de aceleración proceden de una única configuración de hardware (Mac mini M5 Pro 64 GB, caché de 28 GiB, borrador MTP) y no está garantizado que se trasladen a otras plataformas.
 
 ## Enlaces
-- Ficha en HuggingFace: https://huggingface.co/skeggsguy/crystal-ball
+- Ficha en Hugging Face: https://huggingface.co/skeggsguy/crystal-ball
 - Modelo base declarado: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-UD-Q4_K_XL
 - sha256 del fichero: c22af709d65b99bb2bc64aaa5b8b2d47c04c86367b0f9ba0fe452ab47ec053c7
 - Los resultados de búsqueda web disponibles no contienen ningún enlace relevante: todos apuntan a generadores de modelos 3D (MeshGPT, SkyeBrowse, Canva, Hi3D, Meshy) y no guardan relación con este artefacto. No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

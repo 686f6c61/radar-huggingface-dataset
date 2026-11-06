@@ -115,9 +115,9 @@ No se identifican en la informacion disponible alternativas externas de otros au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r03-auto-iql-success-bc-n32-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r03-auto-iql-success-bc-n32-divl
 - Modelo padre (actor de difusion congelado, variante idql): https://huggingface.co/mulligan/sim-square-narrow-r03-auto-iql-success-bc-n32-idql
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Sitio del proyecto Mulligan: https://mulligan.page
 - Arena de evaluacion de politicas: https://arena.mulligan.page
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-r00-r03-eval

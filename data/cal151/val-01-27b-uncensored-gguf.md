@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cal151/val-01-27B-Uncensored-GGUF` es una publicacion de pesos en formato GGUF alojada en HuggingFace por el usuario `cal151`. Por el nombre se deduce que se trata de una cuantizacion GGUF de un modelo de aproximadamente 27.000 millones de parametros, etiquetado como "Uncensored", lo que habitualmente indica un ajuste fino orientado a reducir los rechazos y filtros de seguridad del modelo base. La model card publicada es practicamente vacia: solo contiene la declaracion de licencia Apache 2.0, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni resultados de evaluacion.
+`cal151/val-01-27B-Uncensored-GGUF` es una publicacion de pesos en formato GGUF alojada en Hugging Face por el usuario `cal151`. Por el nombre se deduce que se trata de una cuantizacion GGUF de un modelo de aproximadamente 27.000 millones de parametros, etiquetado como "Uncensored", lo que habitualmente indica un ajuste fino orientado a reducir los rechazos y filtros de seguridad del modelo base. La model card publicada es practicamente vacia: solo contiene la declaracion de licencia Apache 2.0, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni resultados de evaluacion.
 
 El repositorio no presenta descargas ni "likes" en el momento de la consulta, fue creado y actualizado en la misma marca temporal (2026-11-05T04:48:58Z) y no declara idiomas soportados ni pipeline. Esto es coherente con una publicacion reciente, no validada por la comunidad y sin documentacion tecnica asociada.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| cal151/val-01-27B-Uncensored-GGUF | ~27B (inferido) | no disponible | Apache 2.0 | GGUF | HuggingFace, sin descargas |
+| cal151/val-01-27B-Uncensored-GGUF | ~27B (inferido) | no disponible | Apache 2.0 | GGUF | Hugging Face, sin descargas |
 | Gemma 2 27B (referencia de tamano) | 27B | 8K | Gemma Terms | safetensors, GGUF | Amplia, con model card |
 | Qwen2.5 32B (referencia de tamano) | 32B | 128K | Apache 2.0 | safetensors, GGUF | Amplia, con model card |
 | Mistral Small 24B (referencia de tamano) | 24B | 32K | Apache 2.0 | safetensors, GGUF | Amplia, con model card |
@@ -83,5 +83,5 @@ La comparativa es puramente dimensional: no existen datos de rendimiento de este
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cal151/val-01-27B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cal151/val-01-27B-Uncensored-GGUF
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

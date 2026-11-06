@@ -72,8 +72,8 @@ No se dispone de datos de rendimiento del modelo base ni de alternativas compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ornith-1.5-9B-Pantheon-TT | ~9,2B | No disponible | MIT | HuggingFace (TeamIDE) |
-| Ornith-1.5-9B (base) | ~9,2B | No disponible | MIT (segun model card) | HuggingFace (ornith-ai) |
+| Ornith-1.5-9B-Pantheon-TT | ~9,2B | No disponible | MIT | Hugging Face (TeamIDE) |
+| Ornith-1.5-9B (base) | ~9,2B | No disponible | MIT (segun model card) | Hugging Face (ornith-ai) |
 | Qwen3.5 (base arquitectonica) | No disponible | No disponible | Apache-2.0 | No disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento del modelo base ni de alternativas compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TeamIDE/Ornith-1.5-9B-Pantheon-TT
+- Repositorio Hugging Face: https://huggingface.co/TeamIDE/Ornith-1.5-9B-Pantheon-TT
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - GGUF del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF
 - Repositorio de Pantheon: https://git.teamidev.dev/David/Pantheon

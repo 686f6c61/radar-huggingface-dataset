@@ -92,7 +92,7 @@ La conclusión práctica es que este modelo compite en tamaño con la familia de
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión GGUF: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored-Q5_K_S-GGUF
+- Repositorio Hugging Face de esta conversión GGUF: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored-Q5_K_S-GGUF
 - Modelo base: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

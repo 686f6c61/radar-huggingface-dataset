@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ppt-pythia-160m-nope-previous_mse250-warmup2000-seed324-stage2` es un ajuste fino (fine-tune) del modelo base `EleutherAI/pythia-160m`, publicado por el usuario de HuggingFace `qing-yao`. No se trata de un modelo de propósito general listo para producción, sino de un artefacto de investigación: la nomenclatura del repositorio (prefijo `ppt`, sufijo `nope`, término `previous_mse250`, `warmup2000`, `seed324`, `stage2`) apunta a un experimento controlado de entrenamiento por etapas, con una semilla y unos hiperparámetros concretos, presumiblemente orientado a estudiar el efecto de eliminar los embeddings posicionales (NoPE, *No Positional Encodings*) en un transformer decoder-only.
+`ppt-pythia-160m-nope-previous_mse250-warmup2000-seed324-stage2` es un ajuste fino (fine-tune) del modelo base `EleutherAI/pythia-160m`, publicado por el usuario de Hugging Face `qing-yao`. No se trata de un modelo de propósito general listo para producción, sino de un artefacto de investigación: la nomenclatura del repositorio (prefijo `ppt`, sufijo `nope`, término `previous_mse250`, `warmup2000`, `seed324`, `stage2`) apunta a un experimento controlado de entrenamiento por etapas, con una semilla y unos hiperparámetros concretos, presumiblemente orientado a estudiar el efecto de eliminar los embeddings posicionales (NoPE, *No Positional Encodings*) en un transformer decoder-only.
 
-El modelo tiene 162.322.944 parámetros según los tensores en safetensors, una arquitectura derivada de GPT-NeoX con código propio (`gpt_neox_nope`) y licencia Apache 2.0. Su interés actual es limitado fuera del ámbito de la experimentación: la model card es autogenerada por el `Trainer` de HuggingFace, no documenta el conjunto de datos de entrenamiento (aparece como `None`), no declara resultados de benchmarks (la `model-index` está vacía) y reporta una pérdida de validación final de 4.1189, un valor alto que sugiere un modelo escasamente convergido o entrenado sobre una distribución muy específica.
+El modelo tiene 162.322.944 parámetros según los tensores en safetensors, una arquitectura derivada de GPT-NeoX con código propio (`gpt_neox_nope`) y licencia Apache 2.0. Su interés actual es limitado fuera del ámbito de la experimentación: la model card es autogenerada por el `Trainer` de Hugging Face, no documenta el conjunto de datos de entrenamiento (aparece como `None`), no declara resultados de benchmarks (la `model-index` está vacía) y reporta una pérdida de validación final de 4.1189, un valor alto que sugiere un modelo escasamente convergido o entrenado sobre una distribución muy específica.
 
 Por tanto, esta ficha debe leerse como documentación de un checkpoint de investigación reproducible (semilla 324, 10.000 pasos, learning rate 1e-3, warmup de 2.000 pasos) más que como una alternativa a modelos pequeños ya validados. Es relevante para quien investigue alternativas a RoPE/ALiBi en modelos pequeños, para quien necesite reproducir ablaciones con Pythia como base, y como ejemplo de buenas prácticas de trazabilidad (aunque no de documentación) en experimentos de fine-tuning.
 
@@ -121,11 +121,11 @@ La comparación relevante es interna al ecosistema Pythia: este checkpoint solo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-previous_mse250-warmup2000-seed324-stage2
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-previous_mse250-warmup2000-seed324-stage2
 - Modelo base EleutherAI/pythia-160m: https://huggingface.co/EleutherAI/pythia-160m
 - Perfil del autor: https://huggingface.co/qing-yao
 - Paper de la suite Pythia ("Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling"): https://arxiv.org/abs/2304.01373
 - Paper de GPT-NeoX ("GPT-NeoX-20B: An Open-Source Autoregressive Language Model"): https://arxiv.org/abs/2204.06745
 - Repositorio de GPT-NeoX en GitHub: https://github.com/EleutherAI/gpt-neox
 
-Nota sobre la búsqueda web: los resultados devueltos no contienen información relevante sobre el modelo (únicamente enlaces genéricos a Google Maps y Google Earth), por lo que no se ha podido contrastar ningún dato adicional fuera de HuggingFace.
+Nota sobre la búsqueda web: los resultados devueltos no contienen información relevante sobre el modelo (únicamente enlaces genéricos a Google Maps y Google Earth), por lo que no se ha podido contrastar ningún dato adicional fuera de Hugging Face.

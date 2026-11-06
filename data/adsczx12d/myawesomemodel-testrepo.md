@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario ADSCZX12D, etiquetado con las librerias transformers y pytorch, la arquitectura bert y el pipeline feature-extraction. Se trata, por el nombre y por el contenido, de un repositorio de prueba: no acumula descargas ni likes, ocupa 0,0 GB y no publica pesos, configuracion ni tokenizer. La unica licencia declarada es MIT.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario ADSCZX12D, etiquetado con las librerias transformers y pytorch, la arquitectura bert y el pipeline feature-extraction. Se trata, por el nombre y por el contenido, de un repositorio de prueba: no acumula descargas ni likes, ocupa 0,0 GB y no publica pesos, configuracion ni tokenizer. La unica licencia declarada es MIT.
 
 La model card incluida es una plantilla generica de otro modelo (habla de un asistente conversacional con modo de razonamiento, function calling, subida de ficheros y busqueda web) y no concuerda con los metadatos del repositorio, que describen un encoder tipo BERT para extraccion de caracteristicas. Ademas, la tabla de evaluacion que aparece en la card usa etiquetas anonimas (Model1, Model2, Model1-v2) y no enlaza a ninguna evaluacion reproducible.
 
@@ -85,7 +85,7 @@ La card menciona ademas una subida de precision en AIME 2025 del 70 % al 87,5 % 
 
 ## Comparativa con modelos similares
 
-No disponible. La comparativa requiere conocer el tamano y la tarea concreta del modelo, y en este caso no se publican parametros, contexto ni resultados verificables. La tabla de la model card compara contra "Model1", "Model2" y "Model1-v2", etiquetas anonimas sin enlace a identificadores reales de HuggingFace, por lo que no permiten establecer una referencia valida frente a alternativas conocidas de extraccion de caracteristicas o de generacion.
+No disponible. La comparativa requiere conocer el tamano y la tarea concreta del modelo, y en este caso no se publican parametros, contexto ni resultados verificables. La tabla de la model card compara contra "Model1", "Model2" y "Model1-v2", etiquetas anonimas sin enlace a identificadores reales de Hugging Face, por lo que no permiten establecer una referencia valida frente a alternativas conocidas de extraccion de caracteristicas o de generacion.
 
 ## Limitaciones y advertencias
 
@@ -101,7 +101,7 @@ No disponible. La comparativa requiere conocer el tamano y la tarea concreta del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ADSCZX12D/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/ADSCZX12D/MyAwesomeModel-TestRepo
 - Paper: no disponible.
 - Blog o nota de version: no disponible.
 - Repositorio de codigo: la model card menciona "our code repository" y una web oficial con API, pero no se incluye ninguna URL en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario VincentNguyensen, no contiene un modelo de IA, sino un documento académico en formato Markdown titulado `paper_023850617_audio_visual_learning.md`. Se trata de un paper sobre aprendizaje audiovisual (audio-visual learning) redactado siguiendo el formato de LaTeX para ICML, con estructura intro-relacionado-metodo-experimentos-conclusion y estilo de citación numérica BibTeX.
+Este repositorio de Hugging Face, publicado por el usuario VincentNguyensen, no contiene un modelo de IA, sino un documento académico en formato Markdown titulado `paper_023850617_audio_visual_learning.md`. Se trata de un paper sobre aprendizaje audiovisual (audio-visual learning) redactado siguiendo el formato de LaTeX para ICML, con estructura intro-relacionado-metodo-experimentos-conclusion y estilo de citación numérica BibTeX.
 
 El contenido es un artefacto de texto que describe un trabajo de investigación en el campo del aprendizaje multimodal audiovisual. La relevancia de este repositorio es limitada desde el punto de vista práctico: no ofrece pesos, arquitecturas ni código ejecutable. La licencia MIT permite su reutilización, pero al tratarse de un documento de texto, su utilidad se limita a la lectura y análisis del contenido académico.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al no
 
 ## Comparativa con modelos similares
 
-No disponible. No existen modelos comparables porque este repositorio no contiene un modelo de IA. Los repositorios de papers en HuggingFace son atipicos; la plataforma esta orientada a modelos, datasets y demos. No se identifica una categoria de modelos equivalente.
+No disponible. No existen modelos comparables porque este repositorio no contiene un modelo de IA. Los repositorios de papers en Hugging Face son atipicos; la plataforma esta orientada a modelos, datasets y demos. No se identifica una categoria de modelos equivalente.
 
 ## Limitaciones y advertencias
 
@@ -66,6 +66,6 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VincentNguyensen/paper_023850617_audio_visual_learning
+- Repositorio en Hugging Face: https://huggingface.co/VincentNguyensen/paper_023850617_audio_visual_learning
 - Revision academica sobre aprendizaje audiovisual (arXiv 2208.09579): https://arxiv.org/pdf/2208.09579
 - Articulo relacionado en CVPR 2026 sobre localizacion audiovisual con prompts aprendibles: https://openaccess.thecvf.com/content/CVPR2026/html/Nguyen_SOUPLE_Enhancing_Audio-Visual_Localization_and_Segmentation_with_Learnable_Prompt_Contexts_CVPR_2026_paper.html

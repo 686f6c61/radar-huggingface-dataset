@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ankitanqm/paper_001950376_efficient_attention` alojado en HuggingFace no contiene un modelo de IA entrenado, sino el texto completo de un artículo académico sobre mecanismos de atención eficiente. El autor, `ankitanqm`, ha subido un documento en formato Markdown con el título *Efficient Attention: Attention with Linear Complexities*, un trabajo publicado en WACV 2021 por Shen et al. que propone una alternativa a la atención dot-product estándar con coste computacional y de memoria lineal en lugar de cuadrático.
+El repositorio `ankitanqm/paper_001950376_efficient_attention` alojado en Hugging Face no contiene un modelo de IA entrenado, sino el texto completo de un artículo académico sobre mecanismos de atención eficiente. El autor, `ankitanqm`, ha subido un documento en formato Markdown con el título *Efficient Attention: Attention with Linear Complexities*, un trabajo publicado en WACV 2021 por Shen et al. que propone una alternativa a la atención dot-product estándar con coste computacional y de memoria lineal en lugar de cuadrático.
 
 El contenido del repositorio es un único archivo (`paper_001950376_efficient_attention.md`) con la estructura académica habitual (introducción, trabajo relacionado, método, experimentos y conclusiones), estilo de escritura conciso y analítico, y citas en formato numérico APA. No se trata de un modelo con parámetros, pesos o pipeline de inferencia, sino de una contribución científica documentada. Su relevancia radica en que describe una técnica de atención con complejidad lineal, útil para procesar entradas de alta resolución en visión por computador y lenguaje natural, donde la atención cuadrática tradicional se vuelve prohibitiva.
 
@@ -40,7 +40,7 @@ Este repositorio no contiene un modelo entrenado ni arquitectura de red neuronal
 - **Formación y aprendizaje**: estudiantes de machine learning pueden estudiar el concepto de atención lineal y su comparación con la atención estándar, usando el texto como material de referencia.
 - **Benchmarking de técnicas de atención**: investigadores que comparan diferentes mecanismos de atención (lineal, kernel, low-rank) pueden citar este paper en sus publicaciones o usar sus resultados experimentales como punto de comparación.
 - **Optimización de modelos de visión**: el paper puede guiar la integración de atención en redes convolucionales para tareas como segmentación o detección de objetos en imágenes de alta resolución, donde la atención cuadrática es inviable.
-- **Análisis de la literatura**: los autores o revisores pueden acceder al paper de forma rápida en HuggingFace para citarlo o evaluar su contenido sin necesidad de descargar de otros repositorios.
+- **Análisis de la literatura**: los autores o revisores pueden acceder al paper de forma rápida en Hugging Face para citarlo o evaluar su contenido sin necesidad de descargar de otros repositorios.
 
 ## Benchmarks y rendimiento
 
@@ -64,8 +64,8 @@ No disponible. Al no ser un modelo, no existe comparativa directa con otros mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ankitanqm/paper-001950376-efficient-attention
+- Repositorio Hugging Face: https://huggingface.co/ankitanqm/paper-001950376-efficient-attention
 - Paper en arXiv: https://arxiv.org/abs/1812.01243
 - Paper en IEEE Xplore: https://ieeexplore.ieee.org/document/9423033
 - Paper en WACV 2021: https://openaccess.thecvf.com/content/WACV2021/html/Shen_Efficient-Attention-Attention-With-Linear-Complexities-WACV-2021-paper.html
-- Página del paper en HuggingFace: https://huggingface.co/papers/1812.01243
+- Página del paper en Hugging Face: https://huggingface.co/papers/1812.01243

@@ -70,6 +70,6 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max-v2.h051.pi-agent-r2e-opsd-v1.step_3
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max-v2.h051.pi-agent-r2e-opsd-v1.step_3
 - Índice de checkpoints AgentPTB (referenciado en la model card): `agentic-ptb/INDEX` (no se ha encontrado URL directa en la búsqueda)
 - Búsqueda de modelos con tag `agentic-ptb`: https://huggingface.co/models?other=agentic-ptb

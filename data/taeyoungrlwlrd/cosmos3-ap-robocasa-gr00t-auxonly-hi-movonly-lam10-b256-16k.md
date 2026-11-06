@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`taeyoungrlwlrd/cosmos3-ap-robocasa-gr00t-auxonly-hi-movonly-lam10-b256-16k` es un checkpoint alojado en HuggingFace por el usuario `taeyoungrlwlrd`. El repositorio ocupa 91,1 GB, se publicó el 19 de septiembre de 2026 y se actualizó ese mismo día. En el momento de redactar esta ficha acumula 15 descargas y 0 likes, y su ficha de modelo no declara pipeline, licencia ni idiomas soportados. Es, por tanto, un artefacto de investigación sin documentación pública asociada.
+`taeyoungrlwlrd/cosmos3-ap-robocasa-gr00t-auxonly-hi-movonly-lam10-b256-16k` es un checkpoint alojado en Hugging Face por el usuario `taeyoungrlwlrd`. El repositorio ocupa 91,1 GB, se publicó el 19 de septiembre de 2026 y se actualizó ese mismo día. En el momento de redactar esta ficha acumula 15 descargas y 0 likes, y su ficha de modelo no declara pipeline, licencia ni idiomas soportados. Es, por tanto, un artefacto de investigación sin documentación pública asociada.
 
 El identificador sigue un patrón habitual en experimentos de ajuste fino: el prefijo `cosmos3-ap` apunta a la familia Cosmos de NVIDIA, `robocasa` y `gr00t` remiten al benchmark de manipulación RoboCasa y al modelo fundacional de robótica GR00T, y los sufijos `auxonly-hi-movonly-lam10-b256-16k` parecen codificar la configuración del experimento (modalidades auxiliares, coeficiente lambda 10, batch 256 y contexto de 16k). Esta lectura es una inferencia a partir del nombre y no está confirmada por los metadatos del repositorio.
 
@@ -74,7 +74,7 @@ No se dispone de datos verificados de modelos comparables, ya que la busqueda we
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cosmos3-ap-robocasa-gr00t-auxonly-hi-movonly-lam10-b256-16k | no disponible | no disponible | no disponible | HuggingFace, repo publico de 91,1 GB |
+| cosmos3-ap-robocasa-gr00t-auxonly-hi-movonly-lam10-b256-16k | no disponible | no disponible | no disponible | Hugging Face, repo publico de 91,1 GB |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de datos verificados de modelos comparables, ya que la busqueda we
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/taeyoungrlwlrd/cosmos3-ap-robocasa-gr00t-auxonly-hi-movonly-lam10-b256-16k
+- Hugging Face: https://huggingface.co/taeyoungrlwlrd/cosmos3-ap-robocasa-gr00t-auxonly-hi-movonly-lam10-b256-16k
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

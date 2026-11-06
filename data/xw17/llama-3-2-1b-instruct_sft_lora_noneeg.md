@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (SFT) con LoRA de Llama-3.2-1B-Instruct, subido a HuggingFace por el usuario xw17. No se proporciona informacion sobre el dataset de entrenamiento, el proposito especifico ni las capacidades. El repositorio no contiene pesos (0.0 GB) y la model card es una plantilla automatica.
+Este modelo es un ajuste fino (SFT) con LoRA de Llama-3.2-1B-Instruct, subido a Hugging Face por el usuario xw17. No se proporciona informacion sobre el dataset de entrenamiento, el proposito especifico ni las capacidades. El repositorio no contiene pesos (0.0 GB) y la model card es una plantilla automatica.
 
-Por tanto, no es posible evaluar su relevancia ni sus capacidades. La unica informacion fiable es el nombre del modelo y los metadatos de HuggingFace, que indican que usa la libreria transformers y el formato safetensors.
+Por tanto, no es posible evaluar su relevancia ni sus capacidades. La unica informacion fiable es el nombre del modelo y los metadatos de Hugging Face, que indican que usa la libreria transformers y el formato safetensors.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: no disponible. El nombre sugiere 1B de parametros, pero no se confirma el tamano real del modelo ni la cuantizacion.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: el tag "endpoints_compatible" sugiere compatibilidad con HuggingFace Inference Endpoints, pero no se confirma. Tambien podria usarse con la libreria transformers, pero no hay informacion adicional.
+- Opciones de despliegue: el tag "endpoints_compatible" sugiere compatibilidad con Hugging Face Inference Endpoints, pero no se confirma. Tambien podria usarse con la libreria transformers, pero no hay informacion adicional.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -66,7 +66,7 @@ No disponible. No se dispone de datos de modelos comparables. El unico dato es q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xw17/Llama-3.2-1B-Instruct_SFT_lora_noneeg
+- Hugging Face: https://huggingface.co/xw17/Llama-3.2-1B-Instruct_SFT_lora_noneeg
 - Modelos relacionados del mismo autor (sin informacion adicional):
   - https://huggingface.co/xw17/Llama-3.2-1B-Instruct_SFT_lora_usc-had
   - https://huggingface.co/xw17/Llama-3.2-1B-Instruct_finetuned_2_lora

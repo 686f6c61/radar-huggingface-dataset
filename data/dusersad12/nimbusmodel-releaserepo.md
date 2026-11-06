@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NimbusModel es un modelo publicado en HuggingFace por el usuario dusersad12 bajo el identificador `dusersad12/NimbusModel-ReleaseRepo`. Según su model card, se trata de un modelo conversacional de razonamiento con soporte de system prompt, function calling, carga de ficheros y búsqueda web aumentada, que habría mejorado sus capacidades de inferencia mediante un mayor presupuesto de cómputo y optimizaciones algorítmicas aplicadas en la fase de post-entrenamiento. El autor declara mejoras sustanciales en matemáticas, programación y lógica respecto a una versión anterior.
+NimbusModel es un modelo publicado en Hugging Face por el usuario dusersad12 bajo el identificador `dusersad12/NimbusModel-ReleaseRepo`. Según su model card, se trata de un modelo conversacional de razonamiento con soporte de system prompt, function calling, carga de ficheros y búsqueda web aumentada, que habría mejorado sus capacidades de inferencia mediante un mayor presupuesto de cómputo y optimizaciones algorítmicas aplicadas en la fase de post-entrenamiento. El autor declara mejoras sustanciales en matemáticas, programación y lógica respecto a una versión anterior.
 
 La información disponible es, sin embargo, muy limitada y en parte contradictoria. Las etiquetas del repositorio apuntan a `transformers`, `pytorch`, `bert` y pipeline `feature-extraction`, lo que describiría un modelo de extracción de características basado en BERT, mientras que la model card describe un asistente conversacional de razonamiento con decodificación extendida. No se publica arquitectura, número de parámetros, longitud de contexto, tokenizador ni composición del dataset.
 
@@ -111,7 +111,7 @@ Existe además un repositorio relacionado del mismo autor, `dusersad12/NimbusLM-
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dusersad12/NimbusModel-ReleaseRepo
+- Repositorio en Hugging Face: https://huggingface.co/dusersad12/NimbusModel-ReleaseRepo
 - Repositorio relacionado del mismo autor: https://huggingface.co/dusersad12/NimbusLM-ReleaseRepo
 - Hugging Face (portal general): https://huggingface.co/
 - LLM Releases, tracker independiente de lanzamientos de modelos: https://www.llm-releases.com/

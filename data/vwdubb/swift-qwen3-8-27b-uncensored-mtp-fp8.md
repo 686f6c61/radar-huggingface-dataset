@@ -97,7 +97,7 @@ Nota: los recuentos de rechazo corresponden a mediciones del autor sobre el mode
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/vwdubb/Swift-Qwen3.8-27B-Uncensored-MTP-FP8
+- Hugging Face (este modelo): https://huggingface.co/vwdubb/Swift-Qwen3.8-27B-Uncensored-MTP-FP8
 - Modelo base: https://huggingface.co/ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-MTP
 - Swift-Qwen3.8-27B (UkisAI): https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - orcarouter/Qwen3.8-27B-Uncensored: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored

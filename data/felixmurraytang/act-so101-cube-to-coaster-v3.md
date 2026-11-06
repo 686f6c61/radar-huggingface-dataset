@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ACT SO-101 cube → coaster v3 es una política de imitación (policy) para robótica manipulativa, publicada por el usuario felixmurraytang en HuggingFace. No es un modelo de lenguaje: implementa la arquitectura ACT (Action Chunking with Transformers), un transformer especializado en mapear observaciones visuales y propioceptivas del robot a secuencias de acciones motoras. Está entrenada específicamente para la tarea de recoger un cubo y colocarlo sobre un posavasos con el brazo robótico de bajo coste SO-101.
+ACT SO-101 cube → coaster v3 es una política de imitación (policy) para robótica manipulativa, publicada por el usuario felixmurraytang en Hugging Face. No es un modelo de lenguaje: implementa la arquitectura ACT (Action Chunking with Transformers), un transformer especializado en mapear observaciones visuales y propioceptivas del robot a secuencias de acciones motoras. Está entrenada específicamente para la tarea de recoger un cubo y colocarlo sobre un posavasos con el brazo robótico de bajo coste SO-101.
 
 El modelo tiene 51.668.614 parámetros (unos 51,7 M) y un tamaño de repositorio de 0,2 GB, lo que lo sitúa en la categoría de políticas ligeras que pueden ejecutarse en tiempo real sobre hardware de consumo. Se ha entrenado durante 25.000 pasos sobre el dataset `so101-cube-to-coaster-v3-trim`, alcanzando una pérdida final de aproximadamente 0,099. Según la model card, el checkpoint completó con éxito un pick-and-place completo bajo la iluminación principal de la habitación el 5 de noviembre de 2026.
 
-Su relevancia radica en que ejemplifica el flujo actual de robótica open source de bajo coste: el brazo SO-101, la librería LeRobot de HuggingFace y políticas ACT entrenadas por imitación que cualquier desarrollador puede reproducir con un dataset propio. Es un artefacto muy específico (una única tarea, un único entorno), no un modelo generalista.
+Su relevancia radica en que ejemplifica el flujo actual de robótica open source de bajo coste: el brazo SO-101, la librería LeRobot de Hugging Face y políticas ACT entrenadas por imitación que cualquier desarrollador puede reproducir con un dataset propio. Es un artefacto muy específico (una única tarea, un único entorno), no un modelo generalista.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ El entrenamiento se realizó durante 25.000 pasos sobre el dataset `felixmurrayt
 - Ejecución de una tarea manipulativa concreta: recoger un cubo y depositarlo sobre un posavasos con el brazo SO-101.
 - Control motor a partir de observaciones visuales y del estado propioceptivo del robot (predicción de action chunks).
 - Aprendizaje por imitación a partir de demostraciones teleoperadas.
-- Integración nativa con la librería LeRobot de HuggingFace para carga, evaluación y despliegue.
+- Integración nativa con la librería LeRobot de Hugging Face para carga, evaluación y despliegue.
 - No soporta tool calling, function calling, razonamiento multi-paso simbólico ni generación de texto.
 - No tiene capacidades multilingües, de visión general, audio ni modo "thinking".
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT SO-101 cube → coaster v3 | 51,7 M | Pick-and-place cubo → posavasos (SO-101) | no aplica | Apache 2.0 | HuggingFace |
-| Políticas ACT genéricas de LeRobot | variable | Tareas manipulativas diversas | no aplica | según checkpoint | HuggingFace (LeRobot) |
+| ACT SO-101 cube → coaster v3 | 51,7 M | Pick-and-place cubo → posavasos (SO-101) | no aplica | Apache 2.0 | Hugging Face |
+| Políticas ACT genéricas de LeRobot | variable | Tareas manipulativas diversas | no aplica | según checkpoint | Hugging Face (LeRobot) |
 | Difusion policies (p. ej. Diffusion Policy) | variable | Manipulación por imitación | no aplica | según implementación | Repositorios de investigación |
 | VLA generalistas (p. ej. RT-2, OpenVLA) | miles de millones | Manipulación guiada por lenguaje | limitado | varía | Principalmente investigación |
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/felixmurraytang/act-so101-cube-to-coaster-v3
+- Modelo en Hugging Face: https://huggingface.co/felixmurraytang/act-so101-cube-to-coaster-v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/felixmurraytang/so101-cube-to-coaster-v3-trim
 - Repositorio de evaluación: https://github.com/mayphus/so101
 - LeRobot (librería): https://github.com/huggingface/lerobot

@@ -77,7 +77,7 @@ La comparativa se limita a modelos de tamano similar. El checkpoint de arkilpate
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-147b
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-147b
 - Repositorio OLMo en GitHub: https://github.com/allenai/OLMo
 - Modelo base OLMo-2-0425-1B: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Paper "2 OLMo 2 Furious": https://arxiv.org/abs/2501.00656

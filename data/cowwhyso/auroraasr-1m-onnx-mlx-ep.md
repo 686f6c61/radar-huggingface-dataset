@@ -114,7 +114,7 @@ No se dispone en la informacion proporcionada de comparaciones con otros modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cowWhySo/AuroraASR-1M-ONNX-MLX-EP
+- Repositorio Hugging Face: https://huggingface.co/cowWhySo/AuroraASR-1M-ONNX-MLX-EP
 - Modelo base (upstream): https://huggingface.co/AuroraAI-Research/AuroraASR-1M
 - Model card del modelo original y reporte de WER original: https://huggingface.co/AuroraAI-Research/AuroraASR-1M
 - Port nativo MLX recomendado por el autor: https://huggingface.co/cowWhySo/AuroraASR-1M-MLX

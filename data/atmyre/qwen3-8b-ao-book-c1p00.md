@@ -69,7 +69,7 @@ No se dispone de informaci√≥n sobre adaptadores comparables en la misma colecci√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atmyre/qwen3-8b-ao-book-c1p00
+- Modelo en Hugging Face: https://huggingface.co/Atmyre/qwen3-8b-ao-book-c1p00
 - Paper de Activation Oracles: https://arxiv.org/abs/2512.15674
 - AO base (referenciado en la model card): https://huggingface.co/Atmyre/qwen3-8b-ao-base
 - Sujeto fine-tuneado (taboo): https://huggingface.co/Atmyre/qwen3-8b-taboo-book-c1p00

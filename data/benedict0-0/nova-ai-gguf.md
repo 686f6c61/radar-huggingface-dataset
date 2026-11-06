@@ -72,7 +72,7 @@ No se dispone de benchmarks para comparar el rendimiento real de este fine-tune 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Benedict0-0/nova-ai-gguf
+- Modelo en Hugging Face: https://huggingface.co/Benedict0-0/nova-ai-gguf
 - Repositorio Unsloth (herramienta de entrenamiento y conversión): https://github.com/unslothai/unsloth
 - Guía de GGUF en GitHub (referencia de formato): https://github.com/Lingdas1/local-llm-guide/blob/main/04-advanced-usage/gguf-modelfile.md
 - Directorio de modelos GGUF (búsqueda general): https://local-ai-zone.github.io/

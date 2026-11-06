@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PDE-OBS-excluded-checkpoints es un repositorio de pesos publicado por el usuario ru1ch3n en HuggingFace que no contiene un modelo entrenado para inferencia, sino el archivo de los checkpoints descartados de la campana de octubre de 2026 del proyecto PDE-OBS, un benchmark de evaluacion controlada de operadores neuronales para ecuaciones en derivadas parciales (PDE) con observaciones parciales. El repositorio acompana al articulo arXiv:2609.36521, firmado por Ruichen Xu, Siyao Wang, Fang Wan, Jiacheng Qiu, Wenhan Gao, Jiaxing Zhang, Linsey Pang, Ravid Shwartz-Ziv, Yann LeCun y Yuefan Deng, y su funcion es documental: preservar el registro completo de los entrenamientos que no contribuyen a las tablas de resultados publicadas.
+PDE-OBS-excluded-checkpoints es un repositorio de pesos publicado por el usuario ru1ch3n en Hugging Face que no contiene un modelo entrenado para inferencia, sino el archivo de los checkpoints descartados de la campana de octubre de 2026 del proyecto PDE-OBS, un benchmark de evaluacion controlada de operadores neuronales para ecuaciones en derivadas parciales (PDE) con observaciones parciales. El repositorio acompana al articulo arXiv:2609.36521, firmado por Ruichen Xu, Siyao Wang, Fang Wan, Jiacheng Qiu, Wenhan Gao, Jiaxing Zhang, Linsey Pang, Ravid Shwartz-Ziv, Yann LeCun y Yuefan Deng, y su funcion es documental: preservar el registro completo de los entrenamientos que no contribuyen a las tablas de resultados publicadas.
 
 El contenido son ficheros `weights.pt` con el `model_state` de cada ejecucion, junto con `model.json` (clase de exclusion, estado en la cola de entrenamiento, registro de fallo de-identificado y hashes SHA-256) y, cuando existe, `history.json` con el historial de entrenamiento por epoca. No hay tokenizador, no hay configuracion de inferencia resuelta y no hay pipeline declarado, por lo que no es un modelo utilizable directamente con `transformers` ni con APIs de generacion de texto.
 
@@ -85,7 +85,7 @@ No se dispone de informacion sobre otros benchmarks de operadores neuronales com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ru1ch3n/PDE-OBS-excluded-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/ru1ch3n/PDE-OBS-excluded-checkpoints
 - Repositorio de modelos publicados: https://huggingface.co/ru1ch3n/PDE-OBS
 - Repositorio de datos y resultados: https://huggingface.co/datasets/ru1ch3n/PDE-OBS
 - Codigo del benchmark: https://github.com/ru1ch3n/PDE-OBS

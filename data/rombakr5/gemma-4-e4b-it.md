@@ -31,7 +31,7 @@ En el plano multimodal, el modelo integra un codificador de vision de aproximada
 
 - Generacion de texto, razonamiento y codigo con modos de pensamiento configurables (*thinking modes*).
 - Entrada multimodal: texto, imagen (con soporte de relacion de aspecto y resolucion variables) y audio de forma nativa.
-- Salida exclusivamente de texto (pipeline *any-to-any* en HuggingFace, pero la generacion es textual).
+- Salida exclusivamente de texto (pipeline *any-to-any* en Hugging Face, pero la generacion es textual).
 - Function calling / tool calling nativo, orientado a flujos agenticos.
 - Soporte nativo del rol `system` para conversaciones estructuradas y controlables.
 - Capacidades multilingues en mas de 140 idiomas.
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa a partir del tamano (8B parametros totales), en bf16/fp16 se requeririan aproximadamente 16 GB solo para pesos, mas overhead de KV cache y codificadores; en cuantizacion de 8 bits ~8-9 GB y en 4 bits ~5-6 GB. Estas cifras son estimaciones, no datos publicados.
 - GPU recomendadas: no especificadas en la informacion proporcionada. Por tamano, una RTX 4090 (24 GB) o A100/H100 permitirian inferencia en precision completa; GPU de consumo con 12-16 GB podrian servir con cuantizacion.
 - Cabe en GPU de consumo: previsiblemente si con cuantizacion en GPUs de 8-16 GB, aunque el dato no esta confirmado en la model card.
-- Opciones de despliegue: la model card solo confirma compatibilidad con `transformers`. El tag `endpoints_compatible` sugiere soporte en HuggingFace Inference Endpoints. Soporte explicito de vLLM, llama.cpp, Ollama o TGI no disponible en la informacion proporcionada.
+- Opciones de despliegue: la model card solo confirma compatibilidad con `transformers`. El tag `endpoints_compatible` sugiere soporte en Hugging Face Inference Endpoints. Soporte explicito de vLLM, llama.cpp, Ollama o TGI no disponible en la informacion proporcionada.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -84,9 +84,9 @@ No se dispone de datos de rendimiento comparado (benchmarks) en la informacion p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rombakr5/gemma-4-E4B-it
+- Repositorio en Hugging Face: https://huggingface.co/Rombakr5/gemma-4-E4B-it
 - Modelo base: https://huggingface.co/google/gemma-4-E4B
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion: https://ai.google.dev/gemma/docs/core

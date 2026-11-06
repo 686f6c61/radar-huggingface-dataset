@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado para ningún modelo de la tabla,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-32b-control-B1-sdf
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-32b-control-B1-sdf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B
 - Corpus declarado (`joshycodes/qwen3-32b-controls-corpus`): https://huggingface.co/joshycodes/qwen3-32b-controls-corpus
 - Repositorio *welfare-improvements*: no disponible (citado en la model card sin URL)

@@ -103,7 +103,7 @@ Nota: se trata de un benchmark propio del autor (pistas valoradas como good = 10
 
 | Model | Parametros | Cluebench | Contexto | Licencia | Disponibilidad |
 |---|---|---:|---|---|---|
-| Cluemaster 1.0 | 3,4B | 60 % | 4096 | Apache 2.0 | GGUF publico en HuggingFace |
+| Cluemaster 1.0 | 3,4B | 60 % | 4096 | Apache 2.0 | GGUF publico en Hugging Face |
 | Phi-4 Mini 3.8B (Microsoft) | 3,8B | 20 % | no disponible en los datos | no disponible en los datos | modelo general, no especializado |
 | Granite 4.1 3B (IBM) | 3B | 20 % | no disponible en los datos | no disponible en los datos | modelo general, no especializado |
 | Qwen 3.5 4B (Alibaba) | 4B | 3 % | no disponible en los datos | no disponible en los datos | modelo general, no especializado |
@@ -124,7 +124,7 @@ Los comparadores son los modelos evaluados en Cluebench v1.0; todos son modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amandoti/cluemaster-1.0
+- Modelo en Hugging Face: https://huggingface.co/amandoti/cluemaster-1.0
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512
 - Cluemaster Studio (demo web del autor): https://amandoti.win/cluemaster/studio.html
 - Paper, repositorio de codigo de entrenamiento o demo adicional: no disponible

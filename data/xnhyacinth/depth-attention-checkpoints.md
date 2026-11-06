@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Depth-Attention-Checkpoints es un repositorio de pesos de investigación publicado por el usuario Xnhyacinth en HuggingFace. Contiene el checkpoint final (paso 50.000 de 50.000) de un experimento histórico de arquitectura denominada "Depth-Attention", un transformer causal de tipo Llama con 463.749.120 parámetros almacenados en 356 tensores FP32 y un vocabulario de 50.277 tokens. El autor lo etiqueta como un modelo "410M" por convención histórica del experimento, aunque el recuento real de parámetros es superior.
+Depth-Attention-Checkpoints es un repositorio de pesos de investigación publicado por el usuario Xnhyacinth en Hugging Face. Contiene el checkpoint final (paso 50.000 de 50.000) de un experimento histórico de arquitectura denominada "Depth-Attention", un transformer causal de tipo Llama con 463.749.120 parámetros almacenados en 356 tensores FP32 y un vocabulario de 50.277 tokens. El autor lo etiqueta como un modelo "410M" por convención histórica del experimento, aunque el recuento real de parámetros es superior.
 
 No se trata de un modelo listo para producción ni para inferencia directa: los pesos requieren una implementación personalizada de Depth-Attention (incluido su comportamiento específico de normalización de query/key y de salida) que no se distribuye en el repositorio. El tokenizador de texto correspondiente (50.277 tokens) y el cargador personalizado tampoco están incluidos, y el autor advierte explícitamente de que no se debe sustituir por el tokenizador placeholder original.
 
@@ -77,5 +77,5 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Xnhyacinth/Depth-Attention-Checkpoints
+- Hugging Face: https://huggingface.co/Xnhyacinth/Depth-Attention-Checkpoints
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

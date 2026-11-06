@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FastAligner | 20.615.072 | Fragmentos de 3 s con 0,75 s de solapamiento o secuencia completa; log-Mel de 80 bins a 100 Hz | No disponible | Apache 2.0 | HuggingFace, ONNX (FP32/FP16/INT8) |
-| `facebook/wav2vec2-large-960h-lv60-self` (profesor CTC) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion | HuggingFace |
+| FastAligner | 20.615.072 | Fragmentos de 3 s con 0,75 s de solapamiento o secuencia completa; log-Mel de 80 bins a 100 Hz | No disponible | Apache 2.0 | Hugging Face, ONNX (FP32/FP16/INT8) |
+| `facebook/wav2vec2-large-960h-lv60-self` (profesor CTC) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion | Hugging Face |
 | Alineadores clasicos tipo HMM (por ejemplo, Montreal Forced Aligner) | No aplica (no es red neuronal) | Depende de la configuracion | No disponible | No disponible en la informacion | Herramienta externa |
 | WhisperX (alineacion basada en wav2vec2) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion | Repositorio externo |
 
@@ -83,7 +83,7 @@ El unico punto de comparacion documentado por el autor es el profesor de destila
 - No es un modelo ASR: no acepta audio sin transcripcion ni puede generar texto. Usarlo como reconocedor de voz daria resultados invalidos.
 - No acepta waveform crudo: requiere espectrogramas log-Mel de 80 bins a 16 kHz mono con la configuracion exacta de `preprocessor_config.json`; un preprocesado distinto degradara la alineacion.
 - Alcance limitado al ingles: los metadatos declaran unicamente el idioma `en`, sin datos sobre comportamiento en otros idiomas.
-- Version v0.1: se trata de una primera version, con cero descargas y cero likes en HuggingFace en la fecha de consulta, lo que implica ausencia de validacion independiente y de reportes de la comunidad.
+- Version v0.1: se trata de una primera version, con cero descargas y cero likes en Hugging Face en la fecha de consulta, lo que implica ausencia de validacion independiente y de reportes de la comunidad.
 - Sin benchmarks publicados: no hay evidencia cuantitativa de precision temporal, robustez frente a ruido, musica, solapamiento de hablantes o acentos distintos del corpus de destilacion.
 - Riesgo de alineacion incorrecta: al depender de una transcripcion conocida, si el texto no coincide realmente con el audio (palabras omitidas, anadidas o mal transcritas) el modelo puede producir marcas temporales erroneas o forzar correspondencias inexistentes.
 - Dependencia del esquema de chunking: el modo recomendado trocea en fragmentos de 3 s con solapamiento y crossfade lineal de logits; variar estos parametros sin revalidar puede introducir discontinuidades en las marcas temporales.
@@ -93,7 +93,7 @@ El unico punto de comparacion documentado por el autor es el profesor de destila
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RandomThingsIDo/FastAligner
+- Modelo en Hugging Face: https://huggingface.co/RandomThingsIDo/FastAligner
 - Modelo profesor de destilacion: https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self
 - Ficheros de configuracion mencionados en la model card: `preprocessor_config.json` y `alignment_config.json` (incluidos en el repositorio del modelo)
 - Variantes ONNX del repositorio: `onnx/model.onnx` (FP32), `onnx/model_fp16.onnx` (FP16), `onnx/model_quantized.onnx` (INT8)

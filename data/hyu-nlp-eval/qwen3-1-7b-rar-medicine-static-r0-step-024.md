@@ -75,6 +75,6 @@ La comparación directa con otros modelos de tamaño similar (por ejemplo, Llama
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-024
+- Repositorio Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-024
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - No se proporcionan otros enlaces (papers, blogs, demos) en la información disponible.

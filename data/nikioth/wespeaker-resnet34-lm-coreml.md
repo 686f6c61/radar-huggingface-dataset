@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto / entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nikioth/wespeaker-resnet34-lm-coreml | no disponible | 16 s fijos (1598 frames fbank) | embedding 256-d (+128-d PLDA) | CC BY 4.0 | HuggingFace, Core ML |
-| pyannote/wespeaker-voxceleb-resnet34-LM | no disponible | 16 s (pipeline pyannote) | embedding 256-d | no disponible en la información | HuggingFace, PyTorch |
-| pyannote/speaker-diarization-community-1 | no disponible | pipeline completo de diarización | segmentos con etiqueta de hablante | no disponible en la información | HuggingFace, PyTorch |
+| nikioth/wespeaker-resnet34-lm-coreml | no disponible | 16 s fijos (1598 frames fbank) | embedding 256-d (+128-d PLDA) | CC BY 4.0 | Hugging Face, Core ML |
+| pyannote/wespeaker-voxceleb-resnet34-LM | no disponible | 16 s (pipeline pyannote) | embedding 256-d | no disponible en la información | Hugging Face, PyTorch |
+| pyannote/speaker-diarization-community-1 | no disponible | pipeline completo de diarización | segmentos con etiqueta de hablante | no disponible en la información | Hugging Face, PyTorch |
 
 La comparativa se limita a los modelos citados en la información disponible; no se dispone de datos de rendimiento (EER, DER) para establecer una comparación cuantitativa. La diferencia principal frente al checkpoint original de pyannote es el formato (Core ML float16 frente a PyTorch) y la inclusión del transformación PLDA precalculada para VBx.
 
@@ -84,7 +84,7 @@ La comparativa se limita a los modelos citados en la información disponible; no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikioth/wespeaker-resnet34-lm-coreml
+- Modelo en Hugging Face: https://huggingface.co/nikioth/wespeaker-resnet34-lm-coreml
 - Modelo base: https://huggingface.co/pyannote/wespeaker-voxceleb-resnet34-LM
 - WeSpeaker (repositorio del proyecto): no disponible en la información proporcionada
 - pyannote.audio: no disponible en la información proporcionada

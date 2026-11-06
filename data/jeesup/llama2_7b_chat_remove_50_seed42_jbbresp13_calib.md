@@ -84,8 +84,8 @@ Los juicios de sobre-rechazo se consideran fiables para esta celda (fracción pu
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (SVD-LLM 50%) | 6,74 B (50% retenido) | heredado de Llama-2 | llama2 | HuggingFace, 0 descargas | Perplejidad WikiText-2 13,72; media zero-shot 0,4567 |
-| meta-llama/Llama-2-7b-chat-hf | 6,74 B | 4.096 tokens | llama2 | HuggingFace, muy difundido | Modelo base sin comprimir; referencia superior en calidad |
+| Este checkpoint (SVD-LLM 50%) | 6,74 B (50% retenido) | heredado de Llama-2 | llama2 | Hugging Face, 0 descargas | Perplejidad WikiText-2 13,72; media zero-shot 0,4567 |
+| meta-llama/Llama-2-7b-chat-hf | 6,74 B | 4.096 tokens | llama2 | Hugging Face, muy difundido | Modelo base sin comprimir; referencia superior en calidad |
 | Celda control SVD-LLM (solo WikiText-2) | 6,74 B (50% retenido) | heredado de Llama-2 | llama2 | No pública en la información disponible | Mismo ratio y semilla; comparación pendiente en el mismo entorno |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ Los juicios de sobre-rechazo se consideran fiables para esta celda (fracción pu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/llama2_7b_chat_remove_50_seed42_jbbresp13_calib
+- Hugging Face: https://huggingface.co/Jeesup/llama2_7b_chat_remove_50_seed42_jbbresp13_calib
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Repositorio SVD-LLM: https://github.com/AIoT-MLSys-Lab/SVD-LLM
 - Dataset de calibración de seguridad: https://huggingface.co/datasets/JailbreakBench/JBB-Behaviors

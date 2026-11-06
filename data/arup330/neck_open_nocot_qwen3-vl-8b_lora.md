@@ -26,7 +26,7 @@ Su relevancia es limitada y de carácter experimental: se publica bajo licencia 
 | Librerías declaradas | transformers, unsloth, trl, text-generation-inference |
 | Tamaño del repositorio | 0,2 GB |
 | Descargas y me gusta | 0 y 0 |
-| Fecha de publicación | 27 de septiembre de 2026, según los metadatos de HuggingFace |
+| Fecha de publicación | 27 de septiembre de 2026, según los metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto nativo | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (LoRA sobre Qwen3-VL-8B-Instruct en 4 bits) | 8 000 millones en el base, más adaptador | 256 000 tokens heredados del base | Texto e imagen | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen3-VL-8B-Instruct | 8 000 millones | 256 000 tokens | Texto e imagen | apache-2.0 | HuggingFace, pesos completos |
-| Qwen3-VL-4B-Instruct | 4 000 millones | 256 000 tokens | Texto e imagen | apache-2.0 | HuggingFace, pesos completos |
-| Qwen2.5-VL-7B-Instruct | 7 000 millones | 128 000 tokens | Texto e imagen | apache-2.0 | HuggingFace, pesos completos |
+| Este adaptador (LoRA sobre Qwen3-VL-8B-Instruct en 4 bits) | 8 000 millones en el base, más adaptador | 256 000 tokens heredados del base | Texto e imagen | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen3-VL-8B-Instruct | 8 000 millones | 256 000 tokens | Texto e imagen | apache-2.0 | Hugging Face, pesos completos |
+| Qwen3-VL-4B-Instruct | 4 000 millones | 256 000 tokens | Texto e imagen | apache-2.0 | Hugging Face, pesos completos |
+| Qwen2.5-VL-7B-Instruct | 7 000 millones | 128 000 tokens | Texto e imagen | apache-2.0 | Hugging Face, pesos completos |
 
 Los datos de los modelos alternativos proceden de su documentación pública y no se han verificado en este repositorio. No es posible establecer una comparación de rendimiento porque este adaptador no publica ninguna métrica.
 
@@ -97,7 +97,7 @@ Los datos de los modelos alternativos proceden de su documentación pública y n
 ## Enlaces
 
 - Repositorio del adaptador: https://huggingface.co/Arup330/Neck_open_noCoT_Qwen3-VL-8B_lora
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/qwen3-vl-8b-instruct-unsloth-bnb-4bit
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/qwen3-vl-8b-instruct-unsloth-bnb-4bit
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Repositorio de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

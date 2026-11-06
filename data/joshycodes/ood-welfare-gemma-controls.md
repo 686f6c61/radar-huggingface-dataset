@@ -93,7 +93,7 @@ Márgenes de guardarraíl frente a random: `nonmirror` falla en alegría perform
 
 ## Enlaces
 
-- HuggingFace del artefacto: https://huggingface.co/joshycodes/ood-welfare-gemma-controls
+- Hugging Face del artefacto: https://huggingface.co/joshycodes/ood-welfare-gemma-controls
 - Adaptador del estudio principal: https://huggingface.co/joshycodes/ood-welfare-gemma
 - Dataset privado del estudio: https://huggingface.co/joshycodes/ood-welfare-gemma-controls-data
 - Modelo base: https://huggingface.co/google/gemma-3-27b-it

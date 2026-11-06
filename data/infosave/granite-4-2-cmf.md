@@ -90,9 +90,9 @@ La comparativa directa con otros modelos de razonamiento (Qwen3, Llama 3.3, Deep
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/infosave/Granite-4.2-cmf
+- Repositorio Hugging Face: https://huggingface.co/infosave/Granite-4.2-cmf
 - Coleccion oficial IBM Granite 4.2: https://huggingface.co/collections/ibm-granite/granite-42-language-models
 - Documentacion de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2
 - Repositorio GitHub de IBM Granite 4.2: https://github.com/ibm-granite/granite-4.2-language-models
-- Repositorio del formato CMF en HuggingFace: https://huggingface.co/infosave/cmf
+- Repositorio del formato CMF en Hugging Face: https://huggingface.co/infosave/cmf
 - Repositorio GitHub de Cortiq/CMF: https://github.com/infosave2007/cmf

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `ilyass200404/Reinforce-Pixelcopter-PLE-v0-unit4` es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient Monte Carlo) para resolver el entorno `Pixelcopter-PLE-v0` de la suite PyGame Learning Environment (PLE). Lo publica el usuario `ilyass200404` en HuggingFace como parte de la Unit 4 del curso Deep Reinforcement Learning Course, cuyo objetivo es implementar desde cero un agente REINFORCE. No es un modelo de lenguaje ni un transformer: es una política neuronal de muy pequeno tamano que mapea un estado de 7 dimensiones a una de 2 acciones posibles.
+El modelo `ilyass200404/Reinforce-Pixelcopter-PLE-v0-unit4` es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient Monte Carlo) para resolver el entorno `Pixelcopter-PLE-v0` de la suite PyGame Learning Environment (PLE). Lo publica el usuario `ilyass200404` en Hugging Face como parte de la Unit 4 del curso Deep Reinforcement Learning Course, cuyo objetivo es implementar desde cero un agente REINFORCE. No es un modelo de lenguaje ni un transformer: es una política neuronal de muy pequeno tamano que mapea un estado de 7 dimensiones a una de 2 acciones posibles.
 
 El artefacto se distribuye con pipeline `reinforcement-learning` y esta pensado como entrega de ejercicio docente, no como componente de produccion. La model card documenta los hiperparametros completos del entrenamiento (20000 episodios, `gamma=0.99`, `lr=1e-4`, `h_size=64`, `max_t=10000`) y un unico resultado de evaluacion: una recompensa media de 28.00 +/- 23.74 sobre 10 episodios, marcada como no verificada.
 
-Su relevancia es principalmente didactica y de reproducibilidad: sirve como referencia minima de como se estructura, entrena y publica un agente REINFORCE en el ecosistema HuggingFace, y como baseline de baja complejidad para comparar implementaciones de policy gradient. El repositorio ocupa 0.0 GB, no tiene descargas ni likes, y no se declara licencia ni idioma, por lo que su uso comercial queda sin cobertura legal explicita.
+Su relevancia es principalmente didactica y de reproducibilidad: sirve como referencia minima de como se estructura, entrena y publica un agente REINFORCE en el ecosistema Hugging Face, y como baseline de baja complejidad para comparar implementaciones de policy gradient. El repositorio ocupa 0.0 GB, no tiene descargas ni likes, y no se declara licencia ni idioma, por lo que su uso comercial queda sin cobertura legal explicita.
 
 ## Especificaciones tecnicas
 
@@ -44,7 +44,7 @@ Los hiperparametros de entrenamiento publicados son: 20000 episodios de entrenam
 
 - Material docente para la Unit 4 del Deep RL Course: el agente sirve como ejemplo resuelto de REINFORCE sobre `Pixelcopter-PLE-v0`, con hiperparametros explicitos que los estudiantes pueden replicar y modificar.
 - Baseline de comparacion de algoritmos de policy gradient: al ser un agente minimo con `h_size = 64`, permite medir cuanto mejora una implementacion propia (A2C, PPO, actor-critico con baseline) sobre este punto de partida.
-- Pruebas de integracion de pipelines de RL: util para validar que un bucle de entrenamiento, logging y publicacion en HuggingFace Hub funciona de extremo a extremo antes de escalar a entornos mas costosos.
+- Pruebas de integracion de pipelines de RL: util para validar que un bucle de entrenamiento, logging y publicacion en Hugging Face Hub funciona de extremo a extremo antes de escalar a entornos mas costosos.
 - Experimentos de sensibilidad de hiperparametros: la configuracion publicada (`lr=1e-4`, `gamma=0.99`, 20000 episodios) es un punto de anclaje para estudiar el efecto de variar la tasa de aprendizaje o el horizonte `max_t`.
 - Verificacion de reproducibilidad: cargar el agente y reevaluarlo sobre 10 episodios permite comprobar si la recompensa media declarada (28.00 +/- 23.74) se mantiene en otra maquina o version de las dependencias.
 - Ejemplo de referencia en articulos o tutoriales sobre REINFORCE: su simplicidad y el bajo coste computacional lo hacen adecuado para ilustrar la varianza del estimador Monte Carlo y la necesidad de baselines.
@@ -89,6 +89,6 @@ No disponible. La informacion proporcionada no incluye otros agentes REINFORCE s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ilyass200404/Reinforce-Pixelcopter-PLE-v0-unit4
+- Modelo en Hugging Face: https://huggingface.co/ilyass200404/Reinforce-Pixelcopter-PLE-v0-unit4
 - Unit 4 del Deep Reinforcement Learning Course (referencia citada en la model card): https://huggingface.co/deep-rl-course/unit4/introduction
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo, a su paper ni a repositorios asociados en la informacion proporcionada.

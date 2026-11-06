@@ -6,7 +6,7 @@ ltgbert-base-japanese-ud-goeswith es un modelo de anotacion linguistica para jap
 
 La relevancia de este modelo radica en su especializacion para el procesamiento del japones, un idioma con una morfologia compleja que requiere herramientas de analisis sintactico precisas. Al estar basado en LTG-BERT, una variante de BERT entrenada sobre 75 idiomas en el marco del proyecto HPLT, ofrece un equilibrio entre rendimiento y eficiencia para tareas de token classification. Su tamano de repositorio es de 0.5 GB, lo que lo hace viable para entornos con recursos limitados.
 
-El modelo se publica bajo licencia Apache 2.0, lo que permite su uso comercial sin restricciones significativas. Su pipeline principal es token-classification, y se integra facilmente con la libreria Transformers de HuggingFace mediante `trust_remote_code`.
+El modelo se publica bajo licencia Apache 2.0, lo que permite su uso comercial sin restricciones significativas. Su pipeline principal es token-classification, y se integra facilmente con la libreria Transformers de Hugging Face mediante `trust_remote_code`.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ El ajuste fino se realiza sobre el corpus UD_Japanese-GSDLUW, que forma parte de
 - Etiquetado de partes de la oracion (POS) en japones segun el esquema Universal Dependencies.
 - Analisis de dependencias sintacticas, produciendo relaciones de dependencia entre tokens.
 - Manejo de subpalabras mediante la estrategia `goeswith`, que agrupa tokens que funcionan como una unidad sintactica.
-- Integracion con el pipeline `universal-dependencies` de HuggingFace, que simplifica su uso.
+- Integracion con el pipeline `universal-dependencies` de Hugging Face, que simplifica su uso.
 - Soporte para agregacion de resultados mediante `aggregation_strategy="simple"`, que fusiona subpalabras en tokens completos.
 - Capacidad multilingue limitada: el modelo esta especializado exclusivamente en japones, aunque la arquitectura base LTG-BERT soporta otros idiomas.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada: al tratarse de un modelo base de tipo BERT con 0.5 GB de tamano de repositorio, se estima que la inferencia requiere entre 1 y 2 GB de VRAM en precision FP16, y entre 2 y 4 GB en FP32.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente, como NVIDIA GTX 1650, RTX 3050, o superiores. Para entornos de produccion con alto throughput, se recomienda una RTX 3090 o A10G.
 - Compatibilidad con GPU de consumo: si, el modelo cabe en GPUs de consumo medio como la RTX 3060 o RTX 4060.
-- Opciones de despliegue: al ser un modelo de Transformers, se puede servir con vLLM, TGI (Text Generation Inference) o mediante la API de inferencia de HuggingFace. Para entornos ligeros, tambien es posible usar ONNX Runtime o convertir a GGUF para llama.cpp, aunque la arquitectura personalizada puede requerir ajustes.
+- Opciones de despliegue: al ser un modelo de Transformers, se puede servir con vLLM, TGI (Text Generation Inference) o mediante la API de inferencia de Hugging Face. Para entornos ligeros, tambien es posible usar ONNX Runtime o convertir a GGUF para llama.cpp, aunque la arquitectura personalizada puede requerir ajustes.
 - Latencia y throughput: no disponible. Dado el tamano del modelo, se espera una latencia de decenas de milisegundos por oracion en GPU moderna, pero no hay datos publicados.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ El modelo se compara directamente con otras propuestas del mismo autor para japo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KoichiYasuoka/ltgbert-base-japanese-ud-goeswith
+- Modelo en Hugging Face: https://huggingface.co/KoichiYasuoka/ltgbert-base-japanese-ud-goeswith
 - Modelo base (ltgbert-base-japanese-upos): https://huggingface.co/KoichiYasuoka/ltgbert-base-japanese-upos
 - Repositorio del autor en GitHub: https://github.com/KoichiYasuoka
 - Articulo del autor en Qiita sobre el modelo: https://qiita.com/KoichiYasuoka/items/481cb4a5322cf4dbbb88

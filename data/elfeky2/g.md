@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `elfeky2/G` es un repositorio alojado en HuggingFace por el usuario `elfeky2`, publicado bajo licencia Apache 2.0. A partir de la informacion disponible no es posible determinar que tipo de modelo es: la model card asociada unicamente contiene la declaracion de licencia, sin descripcion, sin arquitectura declarada y sin documentacion tecnica adicional. El repositorio no tiene descargas ni interacciones registradas en el momento de la consulta.
+El modelo identificado como `elfeky2/G` es un repositorio alojado en Hugging Face por el usuario `elfeky2`, publicado bajo licencia Apache 2.0. A partir de la informacion disponible no es posible determinar que tipo de modelo es: la model card asociada unicamente contiene la declaracion de licencia, sin descripcion, sin arquitectura declarada y sin documentacion tecnica adicional. El repositorio no tiene descargas ni interacciones registradas en el momento de la consulta.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades declaradas. El pipeline no esta especificado, lo que impide confirmar si se trata de un modelo de lenguaje, un modelo de vision, un modelo multimodal o cualquier otra categoria. Tampoco se declaran idiomas soportados.
 
@@ -31,7 +31,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, l
 
 No se han declarado capacidades especificas en la informacion proporcionada. Los unicos elementos verificables son:
 
-- Publicacion en HuggingFace bajo el identificador `elfeky2/G`.
+- Publicacion en Hugging Face bajo el identificador `elfeky2/G`.
 - Licencia Apache 2.0, que permite uso comercial, modificacion y redistribucion con atribucion.
 - Ausencia de pipeline declarado, por lo que no se puede confirmar la tarea principal (text-generation, image-text-to-text, feature-extraction, etc.).
 - Sin idiomas declarados en los metadatos.
@@ -73,7 +73,7 @@ No es posible establecer una comparativa con modelos alternativos porque se desc
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| elfeky2/G | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| elfeky2/G | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No es posible establecer una comparativa con modelos alternativos porque se desc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/elfeky2/G
+- Hugging Face: https://huggingface.co/elfeky2/G
 - Paper: no disponible
 - Blog: no disponible
 - Repositorio de codigo: no disponible

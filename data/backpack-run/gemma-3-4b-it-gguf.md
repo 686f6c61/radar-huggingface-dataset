@@ -4,7 +4,7 @@
 
 Gemma 3 4B IT es un modelo multimodal de Google DeepMind, publicado originalmente como `google/gemma-3-4b-it` y distribuido aquí en formato GGUF por el usuario `backpack-run`. El modelo procesa texto e imágenes y genera texto, con una ventana de contexto de 128.000 tokens y soporte para más de 140 idiomas. Está optimizado para instrucciones y conversación, y comparte base tecnológica con los modelos Gemini de Google.
 
-El modelo tiene 3.880.263.168 parámetros (~3,88B) y fue entrenado sobre 4 billones de tokens procedentes de documentos web, código y matemáticas. La cuantización GGUF reduce el peso del modelo para permitir su ejecución en hardware modesto, incluida CPU con llama.cpp. El repositorio tiene acceso restringido (gated) y requiere aceptar los términos de la licencia Gemma en HuggingFace antes de la descarga.
+El modelo tiene 3.880.263.168 parámetros (~3,88B) y fue entrenado sobre 4 billones de tokens procedentes de documentos web, código y matemáticas. La cuantización GGUF reduce el peso del modelo para permitir su ejecución en hardware modesto, incluida CPU con llama.cpp. El repositorio tiene acceso restringido (gated) y requiere aceptar los términos de la licencia Gemma en Hugging Face antes de la descarga.
 
 La relevancia de este modelo reside en su equilibrio entre tamaño compacto, capacidades multimodales y ventana de contexto amplia, lo que lo convierte en una opción viable para despliegues en producción con hardware reducido, así como para prototipado local rápido.
 
@@ -72,7 +72,7 @@ Nota: las especificaciones de Llama 3.2 3B, Qwen2.5 3B y Phi-3.5-mini se basan e
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, lo que obliga a aceptar los terminos de la licencia Gemma en HuggingFace antes de poder descargar los pesos.
+- Acceso restringido: el repositorio es gated, lo que obliga a aceptar los terminos de la licencia Gemma en Hugging Face antes de poder descargar los pesos.
 - Licencia comercial condicionada: la licencia Gemma de Google impone restricciones de uso comercial y exige el cumplimiento de las politicas de uso aceptable de Google.
 - Sesgos potenciales: al estar entrenado con datos web, puede presentar sesgos de genero, cultura o ideologia. No se ha publicado una auditoria especifica de sesgos para esta variante.
 - Riesgo de alucinacion: en tareas de razonamiento o con contexto ambiguo, el modelo puede generar respuestas incorrectas pero plausibles. Se recomienda validacion humana en aplicaciones criticas.
@@ -83,7 +83,7 @@ Nota: las especificaciones de Llama 3.2 3B, Qwen2.5 3B y Phi-3.5-mini se basan e
 
 ## Enlaces
 
-- Repositorio HuggingFace (backpack-run): https://huggingface.co/backpack-run/gemma-3-4b-it-GGUF
+- Repositorio Hugging Face (backpack-run): https://huggingface.co/backpack-run/gemma-3-4b-it-GGUF
 - Modelo base (Google): https://huggingface.co/google/gemma-3-4b-it
 - Cuantizacion GGUF alternativa (unsloth): https://huggingface.co/unsloth/gemma-3-4b-it-GGUF
 - Cuantizacion GGUF alternativa (ggml-org): https://huggingface.co/ggml-org/gemma-3-4b-it-GGUF

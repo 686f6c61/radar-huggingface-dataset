@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yucheng4/mixer-checkpoint` es un prototipo de investigación publicado en HuggingFace por el usuario yucheng4. Se presenta como una implementación de una arquitectura de tipo Mixer orientada a tareas de *matching*, con una configuración etiquetada internamente como «giant». El repositorio incluye el script `inference.py`, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta por defecto y un `model.safetensors` que, según el propio autor, es únicamente un checkpoint de inicialización para pruebas de humo, no un modelo entrenado.
+`yucheng4/mixer-checkpoint` es un prototipo de investigación publicado en Hugging Face por el usuario yucheng4. Se presenta como una implementación de una arquitectura de tipo Mixer orientada a tareas de *matching*, con una configuración etiquetada internamente como «giant». El repositorio incluye el script `inference.py`, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta por defecto y un `model.safetensors` que, según el propio autor, es únicamente un checkpoint de inicialización para pruebas de humo, no un modelo entrenado.
 
 La relevancia práctica de esta ficha es limitada y conviene ser explícito: no se trata de un modelo listo para producción. El autor no reclama ninguna puntuación de benchmarks, no documenta el conjunto de datos de entrenamiento y advierte de que el checkpoint no ha sido auditado en cuanto a robustez, equidad o transferencia de dominio. El tamaño declarado en los metadatos de safetensors es de solo 33.088 parámetros, muy lejos de lo que sugiere la etiqueta «giant», lo que refuerza su carácter experimental.
 
@@ -23,7 +23,7 @@ No hay información sobre el desarrollador más allá del nombre de usuario, ni 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura se describe como «Mixer», un término que en la literatura suele referirse a modelos basados en MLPs de mezcla de tokens y de canales (estilo MLP-Mixer), sin atención tradicional. En este caso concreto, la model card añade que usa atención multi-query y tensor fusion, lo que sugiere una arquitectura híbrida o una variante propia alejada del Mixer canónico. La implementación es personalizada, por lo que las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de poder usarse.
+La arquitectura se describe como «Mixer», un término que en la literatura suele referirse a modelos basados en MLPs de mezcla de tokens y de canales (estilo MLP-Mixer), sin atención tradicional. En este caso concreto, la model card añade que usa atención multi-query y tensor fusion, lo que sugiere una arquitectura híbrida o una variante propia alejada del Mixer canónico. La implementación es personalizada, por lo que las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de poder usarse.
 
 En cuanto al entrenamiento, el repositorio únicamente documenta la receta por defecto del script: optimizador novograd con un schedule polinómico. El autor insiste en que estos son valores de partida y no evidencia de una ejecución completada, y que el checkpoint incluido no ha sido entrenado. No se especifica el número de tokens, la composición del dataset, ni si hubo una fase de RLHF, DPO o ajuste por instrucciones.
 
@@ -65,9 +65,9 @@ Advertencia: la etiqueta de configuración «giant» sugiere que la arquitectura
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yucheng4/mixer-checkpoint | 33.088 (metadatos) | no disponible | sin benchmarks | bsd-3-clause | HuggingFace (0 descargas) |
+| yucheng4/mixer-checkpoint | 33.088 (metadatos) | no disponible | sin benchmarks | bsd-3-clause | Hugging Face (0 descargas) |
 | Modelos Mixer canónicos (por ejemplo, MLP-Mixer) | no disponible | no disponible | no disponible | diversa | literatura académica |
-| Prototipos de investigación de autor único | variable | no disponible | sin benchmarks | variable | HuggingFace |
+| Prototipos de investigación de autor único | variable | no disponible | sin benchmarks | variable | Hugging Face |
 
 No se dispone de modelos comparables directos en la información proporcionada. La combinación de arquitectura propia, ausencia de entrenamiento y falta de métricas impide establecer una comparación rigurosa con alternativas de la misma categoría.
 
@@ -86,5 +86,5 @@ No se dispone de modelos comparables directos en la información proporcionada. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yucheng4/mixer-checkpoint
+- Hugging Face: https://huggingface.co/yucheng4/mixer-checkpoint
 - La búsqueda web realizada no ha devuelto ningún enlace relevante sobre este modelo, su autor o su arquitectura. Los resultados obtenidos corresponden a contenidos no relacionados con el ámbito técnico del modelo.

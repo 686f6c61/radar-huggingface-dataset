@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - **VRAM estimada para inferencia:** para un modelo de 8B parámetros, se estima un consumo de aproximadamente 16 GB en FP16 y de 6 a 8 GB en cuantización de 4 bits. Estas cifras son orientativas y corresponden al modelo base más el adaptador LoRA.
 - **GPU recomendadas:** NVIDIA A100, H100, RTX 4090 o GPUs equivalentes con al menos 16 GB de VRAM para inferencia en FP16. Para cuantización de 4 bits, una RTX 3090 o RTX 4080 puede ser suficiente.
 - **Compatibilidad con GPU de consumo:** sí, el modelo puede ejecutarse en GPUs de consumo con 8 GB o más de VRAM si se aplica cuantización.
-- **Opciones de despliegue:** vLLM, llama.cpp, Ollama, TGI, así como la librería `transformers` de HuggingFace para carga directa del adaptador sobre el modelo base.
+- **Opciones de despliegue:** vLLM, llama.cpp, Ollama, TGI, así como la librería `transformers` de Hugging Face para carga directa del adaptador sobre el modelo base.
 - **Latencia y throughput:** no se dispone de datos específicos en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -76,6 +76,6 @@ Cabe destacar que el modelo analizado es un adaptador especializado en biomedici
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andreasmartin/apertus-1.5-8b-biomedical-ade
+- Modelo en Hugging Face: https://huggingface.co/andreasmartin/apertus-1.5-8b-biomedical-ade
 - Modelo base: https://huggingface.co/andreasmartin/apertus-v1.5-8b-text
 - Modelo original de Swiss AI Initiative: https://huggingface.co/swiss-ai/Apertus-v1.5-8B

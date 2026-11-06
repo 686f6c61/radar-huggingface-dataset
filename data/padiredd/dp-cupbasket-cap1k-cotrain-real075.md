@@ -82,14 +82,14 @@ No disponible. La información proporcionada no incluye comparaciones con otras 
 - Tarea única: la política está entrenada exclusivamente para la secuencia de pinzar el vaso, transferirlo entre manos y colocarlo sobre la cesta; no generaliza a otras tareas.
 - Datos reales escasos: solo 19 demostraciones reales frente a 1.011 simuladas, lo que puede limitar la robustez ante condiciones reales no representadas en simulación.
 - Sin métricas de éxito publicadas: la model card indica que los resultados de evaluación se añadirán más adelante, por lo que no hay evidencia cuantitativa de rendimiento en el mundo real.
-- Dataset no disponible: el conjunto `pick-cup-basket-cap1k-3cam` no está publicado en HuggingFace, lo que dificulta la reproducibilidad del entrenamiento.
+- Dataset no disponible: el conjunto `pick-cup-basket-cap1k-3cam` no está publicado en Hugging Face, lo que dificulta la reproducibilidad del entrenamiento.
 - Licencia "other": no se especifican los términos exactos; es necesario consultar al autor antes de cualquier uso comercial.
 - Riesgo de alucinación no aplica en el sentido lingüístico, pero sí existe riesgo de acciones fuera de distribución ante objetos, iluminación o posiciones no vistas durante el entrenamiento.
 - Idiomas: no aplica; el modelo no procesa texto ni lenguaje natural.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/dp-cupbasket-cotrain-real075
+- Modelo en Hugging Face: https://huggingface.co/padiredd/dp-cupbasket-cotrain-real075
 - Dataset de demostraciones reales: https://huggingface.co/datasets/omkarpatil/pick-cup-and-place-on-basket
 - LeRobot (framework base): https://github.com/huggingface/lerobot
 - Isaac Lab (entorno de simulación): https://github.com/isaac-sim/IsaacLab

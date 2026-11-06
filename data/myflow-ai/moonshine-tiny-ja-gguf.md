@@ -108,7 +108,7 @@ La comparación se limita a lo verificable en la información proporcionada: el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/myflow-ai/moonshine-tiny-ja-gguf
+- Modelo en Hugging Face: https://huggingface.co/myflow-ai/moonshine-tiny-ja-gguf
 - Modelo base: https://huggingface.co/UsefulSensors/moonshine-tiny-ja
 - Commit upstream del modelo base: https://huggingface.co/UsefulSensors/moonshine-tiny-ja/commit/02ca41b
 - Repositorio de GGUF referenciado en las descargas: https://huggingface.co/handy-computer/moonshine-tiny-ja-gguf

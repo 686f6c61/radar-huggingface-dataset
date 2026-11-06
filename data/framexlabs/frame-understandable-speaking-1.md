@@ -79,10 +79,10 @@ La comparación se establece con alternativas de traducción offline y con el mo
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Frame-Understandable-Speaking-1 | Índice de recuperación + léxico | No aplica (índice JSON de 260 KB, 1.350 pares) | No aplica | MIT (dataset CC-BY-4.0) | HuggingFace; 0 descargas, 1 like |
+| Frame-Understandable-Speaking-1 | Índice de recuperación + léxico | No aplica (índice JSON de 260 KB, 1.350 pares) | No aplica | MIT (dataset CC-BY-4.0) | Hugging Face; 0 descargas, 1 like |
 | Argos Translate | Traducción automática neuronal offline empaquetada | No disponible en la información proporcionada | No disponible | MIT según referencia externa, no verificada | Paquetes instalables por idioma |
-| NLLB-200-distilled-600M | Traducción automática neuronal multilingüe | 600 M según el nombre del modelo | No disponible | CC-BY-NC-4.0 según referencia externa; uso comercial restringido | HuggingFace |
-| Qwen2.5-1.5B-Instruct (GGUF Q4_K_M) | LLM generativo usado como compañero neuronal | 1,5 B según el nombre del modelo | No disponible | Apache-2.0 según referencia externa, no verificada | HuggingFace, llama.cpp |
+| NLLB-200-distilled-600M | Traducción automática neuronal multilingüe | 600 M según el nombre del modelo | No disponible | CC-BY-NC-4.0 según referencia externa; uso comercial restringido | Hugging Face |
+| Qwen2.5-1.5B-Instruct (GGUF Q4_K_M) | LLM generativo usado como compañero neuronal | 1,5 B según el nombre del modelo | No disponible | Apache-2.0 según referencia externa, no verificada | Hugging Face, llama.cpp |
 
 Frente a los traductores neuronales, este repositorio no compite en calidad en dominio abierto, sino en coste, latencia y auditabilidad: no necesita GPU, no consume tokens y devuelve siempre la evidencia de su decisión.
 
@@ -102,7 +102,7 @@ Frente a los traductores neuronales, este repositorio no compite en calidad en d
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/FrameXlabs/Frame-Understandable-Speaking-1
+- Página del modelo en Hugging Face: https://huggingface.co/FrameXlabs/Frame-Understandable-Speaking-1
 - Dataset Frame Dataset — Understandable Speaking: https://huggingface.co/datasets/FrameXlabs/Frame-Dataset-Understandable-Speaking
 - Repositorio del modelo (clonable con `git clone https://huggingface.co/FrameXlabs/Frame-Understandable-Speaking-1`)
 - Archivos internos citados en la model card: `model/translate-index.json`, `inference/engine.ts`, `inference/translate.ts`, `eval/retrieval_eval.json`

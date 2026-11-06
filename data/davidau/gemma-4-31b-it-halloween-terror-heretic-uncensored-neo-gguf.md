@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-NEO-GGUF` es un ajuste fino (fine-tune) del modelo Gemma 4 31B en su variante instruction-tuned, publicado por el creador independiente DavidAU en HuggingFace. Se distribuye como repositorio de pesos cuantizados en formato GGUF y está pensado para inferencia local. Su linaje parte de `DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking`, un fine-tune previo del mismo autor sobre la base Gemma 4 de Google.
+El modelo `gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-NEO-GGUF` es un ajuste fino (fine-tune) del modelo Gemma 4 31B en su variante instruction-tuned, publicado por el creador independiente DavidAU en Hugging Face. Se distribuye como repositorio de pesos cuantizados en formato GGUF y está pensado para inferencia local. Su linaje parte de `DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking`, un fine-tune previo del mismo autor sobre la base Gemma 4 de Google.
 
 La propuesta del modelo es temática y explícitamente no alineada: incorpora las etiquetas *heretic*, *abliterated* y *uncensored*, lo que indica que se han eliminado o reducido los mecanismos de rechazo del modelo base. La variante "Halloween-Terror" está orientada a escritura creativa de terror, ficción, rol y simulaciones, e incluye modos predefinidos de razonamiento e instrucción (13 de cada, según los tags) y constructos de personaje "EVIL AI".
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-NEO-GGUF | 31B | No disponible | apache-2.0 (declarada) | Gated en HuggingFace | Fine-tune temático sin filtros, GGUF |
+| gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-NEO-GGUF | 31B | No disponible | apache-2.0 (declarada) | Gated en Hugging Face | Fine-tune temático sin filtros, GGUF |
 | Gemma 4 31B IT (base de Google) | 31B | No disponible | Términos de Gemma | Público | Versión alineada con filtros de seguridad |
-| DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking | 31B | No disponible | No disponible | HuggingFace | Modelo base directo de este fine-tune |
+| DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking | 31B | No disponible | No disponible | Hugging Face | Modelo base directo de este fine-tune |
 | Qwen 3.6 27B | 27B | No disponible | No disponible | Público | Citado como referencia comparativa en prensa secundaria |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la información disponible para 
 - Sesgo temático hacia el terror y el horror, lo que puede condicionar respuestas en dominios neutros.
 - Soporte exclusivo de inglés según los metadatos; no se garantiza calidad en castellano ni en otros idiomas.
 - Longitud de contexto no documentada; no se debe asumir una ventana amplia sin verificarla.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - La licencia apache-2.0 está declarada en el repositorio, pero al derivar de Gemma 4 podrían aplicar los términos de uso de Google; conviene verificar antes de un uso comercial.
 - El autor y el modelo tienen un volumen de descargas de 0 y 6 likes en el momento de la ficha, por lo que la validación comunitaria es escasa.
 - El tamaño del repositorio reportado es 0.0 GB, lo que sugiere que la información de metadatos puede estar incompleta o que los archivos aún no se han indexado correctamente.
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DavidAU/gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-NEO-GGUF
+- Hugging Face: https://huggingface.co/DavidAU/gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-NEO-GGUF
 - Modelo base: https://huggingface.co/DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking
 - Perfil del autor en aimodels.fyi: https://www.aimodels.fyi/creators/huggingFace/DavidAU
 - Artículo de LMSA sobre modelos GGUF sin censura: https://lmsa.app/blog/best-uncensored-gguf-models-for-8gb-vram-in-2026/

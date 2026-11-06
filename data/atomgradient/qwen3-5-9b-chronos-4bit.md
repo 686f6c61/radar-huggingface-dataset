@@ -81,5 +81,5 @@ La comparativa es limitada porque no se dispone de datos verificables del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AtomGradient/Qwen3.5-9B-Chronos-4bit
+- Hugging Face: https://huggingface.co/AtomGradient/Qwen3.5-9B-Chronos-4bit
 - No se han encontrado en la informacion disponible papers, blogs, repositorios ni demos adicionales.

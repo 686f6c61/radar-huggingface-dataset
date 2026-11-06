@@ -30,7 +30,7 @@ La versión CRACK añade una ablación de rechazo a nivel de pesos, lo que elimi
 ## Capacidades
 
 - Comprensión de imágenes y texto (VLM): puede describir imágenes, responder preguntas visuales y razonar sobre contenido gráfico.
-- Soporte de video según las etiquetas del modelo (etiquetado como `video` en HuggingFace), aunque no se detalla el formato o límites.
+- Soporte de video según las etiquetas del modelo (etiquetado como `video` en Hugging Face), aunque no se detalla el formato o límites.
 - Razonamiento configurable: la plantilla CRACK heredada activa por defecto el modo `xhigh` de pensamiento; admite `medium` y `low`, y se puede desactivar con `enable_thinking=False`.
 - Tool calling / function calling: soportado mediante la plantilla nativa de Qwen; la evaluación específica muestra una precisión del 43,75% en una muestra de decisiones de agente.
 - Capacidades de agente: apto para tareas multi-paso y flujos de agente (SWE-agent, etc.).
@@ -77,7 +77,7 @@ Además, se reporta una pérdida de destilación sobre un conjunto fijo retenido
 | RTN uniforme q4/g64 (conversión estándar) | 4-bit affine g64 | 18,04 GB | 41,67% | Apache-2.0 |
 | **Este modelo (DWQ q4/g64)** | 4-bit affine g64 + DWQ | 18,04 GB | 43,75% | Apache-2.0 |
 
-Frente a otras conversiones MLX de Qwen3.8-27B disponibles en HuggingFace (por ejemplo, `malekoo/Qwen3.8-27B-MLX-4bit`), la diferencia principal es que este modelo incorpora la plantilla CRACK con ablación de rechazo y el refinamiento DWQ, lo que puede mejorar la precisión en tareas de agente pero introduce riesgos de seguridad adicionales. No se dispone de comparativas con otros modelos de la misma categoría (VLM de 27B) fuera del ecosistema Qwen3.8.
+Frente a otras conversiones MLX de Qwen3.8-27B disponibles en Hugging Face (por ejemplo, `malekoo/Qwen3.8-27B-MLX-4bit`), la diferencia principal es que este modelo incorpora la plantilla CRACK con ablación de rechazo y el refinamiento DWQ, lo que puede mejorar la precisión en tareas de agente pero introduce riesgos de seguridad adicionales. No se dispone de comparativas con otros modelos de la misma categoría (VLM de 27B) fuera del ecosistema Qwen3.8.
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ Frente a otras conversiones MLX de Qwen3.8-27B disponibles en HuggingFace (por e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WaveCut/Qwen3.8-27B-CRACK-DWQ-4bit-MLX
+- Modelo en Hugging Face: https://huggingface.co/WaveCut/Qwen3.8-27B-CRACK-DWQ-4bit-MLX
 - Modelo base (MXFP8 CRACK): https://huggingface.co/dealignai/Qwen3.8-27B-MXFP8-CRACK
 - Repositorio oficial de Qwen3.8 (GitHub): https://github.com/QwenLM/Qwen3.8
 - Conversión MLX 4-bit sin DWQ (referencia): https://huggingface.co/malekoo/Qwen3.8-27B-MLX-4bit

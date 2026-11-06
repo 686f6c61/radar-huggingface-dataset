@@ -6,7 +6,7 @@
 
 Su relevancia actual es doble. Por un lado sirve como *baseline* de olvido a nivel de pesos frente a tecnicas mas recientes (NPO, SimNPO, RMU, entre otras). Por otro, el autor lo utiliza como modelo *draft* en el proyecto Speculative-Decoding-Unlearning, donde se investiga si la decodificacion especulativa puede acelerar o alterar el proceso de borrado de conocimiento. La model card publica las hiperparametros del metodo (`gamma: 1.0`, `alpha: 5`, `retain_loss_type: NLL`) junto con la bateria completa de metricas TOFU.
 
-La arquitectura, tamano y contexto son los heredados de Llama-3.2-3B-Instruct: transformer decoder-only con atencion agrupada (GQA), RoPE y activacion SwiGLU. El repositorio pesa 6,4 GB y distribuye pesos en safetensors (precisamente bf16), con licencia Llama 3.2. No se documentan idiomas soportados en los metadatos de HuggingFace, aunque la familia subyacente declara ocho idiomas oficiales.
+La arquitectura, tamano y contexto son los heredados de Llama-3.2-3B-Instruct: transformer decoder-only con atencion agrupada (GQA), RoPE y activacion SwiGLU. El repositorio pesa 6,4 GB y distribuye pesos en safetensors (precisamente bf16), con licencia Llama 3.2. No se documentan idiomas soportados en los metadatos de Hugging Face, aunque la familia subyacente declara ocho idiomas oficiales.
 
 ## Especificaciones tecnicas
 
@@ -87,10 +87,10 @@ No se proporcionan resultados comparativos de otros metodos de olvido sobre la m
 
 | Modelo | Parametros | Contexto | Metodo / proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (tofu_Llama-3.2-3B-Instruct_forget01_GradDiff) | 3,21 B | 128k (heredado, no verificado) | GradDiff sobre TOFU forget01 | Llama 3.2 | HuggingFace, 0 descargas |
-| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | 3,21 B | 128k (heredado) | Fine-tuning completo sobre TOFU, sin olvido | Llama 3.2 | HuggingFace |
-| Llama-3.2-3B-Instruct (meta-llama) | 3,21 B | 128k | Modelo instruct generalista con RLHF | Llama 3.2 | HuggingFace |
-| Otros baselines de olvido del ecosistema open-unlearning (NPO, SimNPO, RMU) | 3,21 B | 128k | Distintos algoritmos de olvido sobre TOFU | Llama 3.2 | HuggingFace |
+| Este modelo (tofu_Llama-3.2-3B-Instruct_forget01_GradDiff) | 3,21 B | 128k (heredado, no verificado) | GradDiff sobre TOFU forget01 | Llama 3.2 | Hugging Face, 0 descargas |
+| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | 3,21 B | 128k (heredado) | Fine-tuning completo sobre TOFU, sin olvido | Llama 3.2 | Hugging Face |
+| Llama-3.2-3B-Instruct (meta-llama) | 3,21 B | 128k | Modelo instruct generalista con RLHF | Llama 3.2 | Hugging Face |
+| Otros baselines de olvido del ecosistema open-unlearning (NPO, SimNPO, RMU) | 3,21 B | 128k | Distintos algoritmos de olvido sobre TOFU | Llama 3.2 | Hugging Face |
 
 No se dispone de cifras comparativas de rendimiento entre estas alternativas en la informacion proporcionada; la comparacion es estructural y de proposito, no de resultados.
 
@@ -109,7 +109,7 @@ No se dispone de cifras comparativas de rendimiento entre estas alternativas en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_GradDiff
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_GradDiff
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning

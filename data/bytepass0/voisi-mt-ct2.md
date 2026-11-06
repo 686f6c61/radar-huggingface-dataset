@@ -73,7 +73,7 @@ La comparativa muestra que este paquete ofrece una colección de modelos ya conv
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bytepass0/voisi-mt-ct2
+- Repositorio Hugging Face: https://huggingface.co/bytepass0/voisi-mt-ct2
 - Upstreams:
   - ai4bharat/indictrans2-en-indic-dist-200M: https://huggingface.co/ai4bharat/indictrans2-en-indic-dist-200M
   - ai4bharat/indictrans2-indic-en-dist-200M: https://huggingface.co/ai4bharat/indictrans2-indic-en-dist-200M

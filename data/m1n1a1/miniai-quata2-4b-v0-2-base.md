@@ -84,7 +84,7 @@ No hay disponibles modelos comparables de 4B centrados en serbio con datos publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/M1n1A1/MiniAI-Quata2-4b-v0.2-base
+- Modelo en Hugging Face: https://huggingface.co/M1n1A1/MiniAI-Quata2-4b-v0.2-base
 - Version SFT (instruida): https://huggingface.co/M1n1A1/MiniAI-Quata2-4b-v0.2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper, blog o repositorio adicional: no disponible

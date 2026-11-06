@@ -89,7 +89,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fm-dev/pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step11000
+- Modelo en Hugging Face: https://huggingface.co/fm-dev/pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step11000
 - Archivo de configuración de entrenamiento dentro del repositorio: `training_config.json` (ruta indicada en la model card)
 - Código de carga e inferencia dentro del repositorio: `load_model.py` (funciones `load` y `observe`)
 

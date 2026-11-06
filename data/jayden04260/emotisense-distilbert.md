@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EmotiSense-DistilBERT es un modelo de clasificación de texto basado en la arquitectura DistilBERT, publicado en HuggingFace por el usuario Jayden04260. El nombre sugiere que está orientado a la detección de emociones en texto, aunque la model card no proporciona información detallada sobre su entrenamiento, etiquetas o datos utilizados. El modelo cuenta con 66,9 millones de parámetros, lo que corresponde al tamaño de DistilBERT base, y está disponible en formato safetensors.
+EmotiSense-DistilBERT es un modelo de clasificación de texto basado en la arquitectura DistilBERT, publicado en Hugging Face por el usuario Jayden04260. El nombre sugiere que está orientado a la detección de emociones en texto, aunque la model card no proporciona información detallada sobre su entrenamiento, etiquetas o datos utilizados. El modelo cuenta con 66,9 millones de parámetros, lo que corresponde al tamaño de DistilBERT base, y está disponible en formato safetensors.
 
 Este modelo se enmarca en la tendencia de adaptar modelos transformer ligeros para tareas específicas de procesamiento del lenguaje natural, como el análisis de sentimiento o la clasificación de emociones. Su relevancia radica en que, al ser un modelo compacto, puede desplegarse en entornos con recursos limitados, como CPUs o GPUs de gama baja, manteniendo un rendimiento razonable en tareas de clasificación. Sin embargo, la falta de documentación y de resultados de evaluación limita su uso directo en producción sin una validación adicional.
 
@@ -57,13 +57,13 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-Existen otros modelos de clasificación de emociones basados en DistilBERT en HuggingFace, como `tsid7710/distillbert-emotion-model` o `DT12the/distilbert-sentiment-analysis`. Sin embargo, no se dispone de resultados de rendimiento para ninguno de ellos en la información proporcionada. La comparativa se limita a características arquitectónicas:
+Existen otros modelos de clasificación de emociones basados en DistilBERT en Hugging Face, como `tsid7710/distillbert-emotion-model` o `DT12the/distilbert-sentiment-analysis`. Sin embargo, no se dispone de resultados de rendimiento para ninguno de ellos en la información proporcionada. La comparativa se limita a características arquitectónicas:
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Jayden04260/emotisense-distilbert | 66,9 M | no disponible | no disponible | HuggingFace |
-| tsid7710/distillbert-emotion-model | 66,9 M (DistilBERT base) | 512 (por defecto) | no disponible | HuggingFace |
-| DT12the/distilbert-sentiment-analysis | 66,9 M (DistilBERT base) | 512 (por defecto) | no disponible | HuggingFace |
+| Jayden04260/emotisense-distilbert | 66,9 M | no disponible | no disponible | Hugging Face |
+| tsid7710/distillbert-emotion-model | 66,9 M (DistilBERT base) | 512 (por defecto) | no disponible | Hugging Face |
+| DT12the/distilbert-sentiment-analysis | 66,9 M (DistilBERT base) | 512 (por defecto) | no disponible | Hugging Face |
 
 No se puede establecer una comparativa de rendimiento por falta de datos.
 
@@ -78,7 +78,7 @@ No se puede establecer una comparativa de rendimiento por falta de datos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jayden04260/emotisense-distilbert
+- Modelo en Hugging Face: https://huggingface.co/Jayden04260/emotisense-distilbert
 - Proyecto EmotiSense (referencia, no oficial): https://github.com/Sharnabh/EmotiSense-AI
 - Aplicación EmotiSense (referencia, no oficial): https://github.com/Suryanshmauryaa/EmotiSense
 - Modelo similar de clasificación de emociones: https://huggingface.co/tsid7710/distillbert-emotion-model

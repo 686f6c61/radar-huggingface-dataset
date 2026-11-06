@@ -4,7 +4,7 @@
 
 `linfelix/text-image-retrieval-alpha` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion sobre recuperacion texto-imagen (text-image retrieval). El autor lo publica bajo licencia MIT y lo describe explicitamente como un conjunto estructurado de notas con referencias de evaluacion y preguntas abiertas, en el que los planes y las hipotesis se mantienen separados de los resultados ya completados. La model card aclara que el repositorio no reclama mejoras de benchmark, ni ablaciones finalizadas, ni codigo liberado, ni un checkpoint entrenado.
 
-El repositorio contiene dos artefactos declarados: `analysis.md` (documento principal) y `README.md`. Los tags de HuggingFace son `safetensors`, `transformer`, `research-notes`, `text-image-retrieval` y `license:mit`, pero no se documenta ninguna arquitectura de red, ninguna receta de entrenamiento ni ninguna capacidad de inferencia. El unico dato numerico real disponible es el recuento de parametros de los archivos safetensors: 24.832 parametros en total, una cifra que no corresponde a un modelo funcional de retrieval y que es coherente con un artefacto de tamano despreciable (el repositorio ocupa 0,0 GB).
+El repositorio contiene dos artefactos declarados: `analysis.md` (documento principal) y `README.md`. Los tags de Hugging Face son `safetensors`, `transformer`, `research-notes`, `text-image-retrieval` y `license:mit`, pero no se documenta ninguna arquitectura de red, ninguna receta de entrenamiento ni ninguna capacidad de inferencia. El unico dato numerico real disponible es el recuento de parametros de los archivos safetensors: 24.832 parametros en total, una cifra que no corresponde a un modelo funcional de retrieval y que es coherente con un artefacto de tamano despreciable (el repositorio ocupa 0,0 GB).
 
 Su relevancia, por tanto, es la de un cuaderno de laboratorio abierto: delimita el alcance de la pregunta de investigacion, propone una comparacion con baselines emparejados y cita contextos de evaluacion concretos (Flickr30k y MS COCO Captions). No debe presentarse ni consumirse como un modelo desplegable. Registra 11 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 1 de octubre de 2026.
 
@@ -79,7 +79,7 @@ No disponible. Este repositorio no es un modelo, sino un conjunto de notas de in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/linfelix/text-image-retrieval-alpha
+- Hugging Face: https://huggingface.co/linfelix/text-image-retrieval-alpha
 - Fichero principal de las notas (referenciado en la model card, no publicado con URL propia): `analysis.md`
 - Documentacion del repositorio: `README.md`
 - Busqueda web: no se han encontrado enlaces relevantes a este repositorio. Los resultados devueltos corresponden a paginas de la Universite Paris Nanterre sin relacion con el proyecto; el unico resultado tecnico, "MLLM-as-a-Judge for Image Safety without Human Labeling" (https://arxiv.org/abs/2501.00192), no guarda conexion declarada con `linfelix/text-image-retrieval-alpha` y se cita aqui unicamente para dejar constancia de que la busqueda no aporto documentacion adicional sobre el repositorio.

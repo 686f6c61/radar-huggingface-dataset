@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace contiene un checkpoint de 1.839.360 parámetros publicado por el usuario `gianmaTest` el 24 de octubre de 2026. No se trata de un modelo de lenguaje: el identificador del repositorio (`generatedDigitalExps_1xKl0R_hier_by_room_rnn_meanPoolProc_cnn1d_video_1`) apunta a un experimento generado automáticamente dentro de una batería de pruebas, combinando una RNN jerárquica "por habitaciones", un procesado de pooling de media y una CNN 1D aplicada a vídeo. El autor no documenta ninguna de estas decisiones en la model card.
+Este repositorio de Hugging Face contiene un checkpoint de 1.839.360 parámetros publicado por el usuario `gianmaTest` el 24 de octubre de 2026. No se trata de un modelo de lenguaje: el identificador del repositorio (`generatedDigitalExps_1xKl0R_hier_by_room_rnn_meanPoolProc_cnn1d_video_1`) apunta a un experimento generado automáticamente dentro de una batería de pruebas, combinando una RNN jerárquica "por habitaciones", un procesado de pooling de media y una CNN 1D aplicada a vídeo. El autor no documenta ninguna de estas decisiones en la model card.
 
 La model card es la plantilla automática de `PyTorchModelHubMixin` y no aporta información sobre arquitectura, datos de entrenamiento, licencia, idiomas o uso previsto. El repositorio tiene 0 descargas, 0 likes y un tamaño declarado de 0.0 GB, lo que indica que se trata de un artefacto de investigación sin distribución ni validación externa.
 
@@ -70,7 +70,7 @@ No disponible. No se puede establecer una comparativa fiable porque la tarea, la
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `gianmaTest/generatedDigitalExps_1xKl0R_...video_1` | 1.839.360 | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
+| `gianmaTest/generatedDigitalExps_1xKl0R_...video_1` | 1.839.360 | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
 | Alternativa comparable 1 | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Alternativa comparable 2 | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -87,7 +87,7 @@ No disponible. No se puede establecer una comparativa fiable porque la tarea, la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKl0R_hier_by_room_rnn_meanPoolProc_cnn1d_video_1
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKl0R_hier_by_room_rnn_meanPoolProc_cnn1d_video_1
 - Documentación de `PyTorchModelHubMixin` (referenciada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Blog o documentación del autor: no disponible

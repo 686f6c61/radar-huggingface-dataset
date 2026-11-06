@@ -74,8 +74,8 @@ Rendimiento medido en Mac mini M4 Pro de 48 GB con MLX 8 bits: 10,47 GB en disco
 
 | Modelo | Parámetros | Contexto | Decision Index | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| drex-v1.5 (bf16, upstream) | 8,95B densos | No disponible | 58,08 (índice 0.3.1) | OpenRAIL-M modificada | HuggingFace, nace-ai/drex-v1.5 |
-| mlx-drex-v1.5-9B (esta ficha) | 8,95B densos | No disponible | 49,17 (índice 0.4.1, eval local del conversor) | OpenRAIL-M modificada | HuggingFace, sergolsub; solo MLX |
+| drex-v1.5 (bf16, upstream) | 8,95B densos | No disponible | 58,08 (índice 0.3.1) | OpenRAIL-M modificada | Hugging Face, nace-ai/drex-v1.5 |
+| mlx-drex-v1.5-9B (esta ficha) | 8,95B densos | No disponible | 49,17 (índice 0.4.1, eval local del conversor) | OpenRAIL-M modificada | Hugging Face, sergolsub; solo MLX |
 | Modelos generativos de ~8-9B | ~8-9B | No disponible | No aplica | Diversas | Amplia |
 
 No se dispone de información sobre otros modelos de decisión de menos de 10B parámetros que puedan servir de comparación directa; en la información consultada solo aparece drex-v1.5 como referencia de la misma categoría. Los modelos generativos de tamaño similar no son funcionalmente equivalentes: producen texto y no devuelven distribuciones de probabilidad calibradas sobre opciones cerradas, por lo que la comparación de benchmarks no sería homogénea.
@@ -96,8 +96,8 @@ No se dispone de información sobre otros modelos de decisión de menos de 10B p
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/sergolsub/mlx-drex-v1.5-9B
-- Modelo original en HuggingFace: https://huggingface.co/nace-ai/drex-v1.5
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/sergolsub/mlx-drex-v1.5-9B
+- Modelo original en Hugging Face: https://huggingface.co/nace-ai/drex-v1.5
 - Repositorio GitHub del proyecto de modelos de decisión: https://github.com/nace-ai/drex-decision-models/blob/main/models/drex-v1.5/README.md
 - Artículo de MarkTechPost: https://www.marktechpost.com/2026/10/09/nace-ai-open-sources-drex-1-5-a-9b-decision-model-that-scores-options-not-text/
 - Artículo de AI Tech Model: https://aitechmodel.com/nace-ai-open-sources-drex-1-5-a-9b-decision-model-for-ranking-options/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMax-H3-NVFP4 es una version cuantizada en formato NVFP4 (NVIDIA FP4) del modelo MiniMax-H3, un modelo multimodal de generacion de texto a video desarrollado por MiniMax. Esta cuantizacion, publicada por el usuario corechan en HuggingFace, reduce la huella de memoria del modelo original al convertir las capas lineales a precision FP4 de NVIDIA, manteniendo en la medida de lo posible la calidad del modelo base.
+MiniMax-H3-NVFP4 es una version cuantizada en formato NVFP4 (NVIDIA FP4) del modelo MiniMax-H3, un modelo multimodal de generacion de texto a video desarrollado por MiniMax. Esta cuantizacion, publicada por el usuario corechan en Hugging Face, reduce la huella de memoria del modelo original al convertir las capas lineales a precision FP4 de NVIDIA, manteniendo en la medida de lo posible la calidad del modelo base.
 
 El modelo original MiniMax-H3 se posiciona como un modelo de video generativo multimodal de proxima generacion, capaz de procesar combinaciones de texto, imagenes, video y audio, yendo mas alla de la generacion especializada para acercarse a una inteligencia multimodal mas general. Esta version cuantizada busca facilitar el despliegue del modelo en entornos con recursos limitados, aunque su licencia comunitaria impone restricciones significativas de uso comercial y territorial que deben considerarse antes de cualquier implementacion.
 
@@ -73,8 +73,8 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace de la version cuantizada: https://huggingface.co/corechan/MiniMax-H3_nvfp4
-- Repositorio HuggingFace del modelo original: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio Hugging Face de la version cuantizada: https://huggingface.co/corechan/MiniMax-H3_nvfp4
+- Repositorio Hugging Face del modelo original: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio GitHub de MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3
 - Version cuantizada NF4 del mismo autor: https://huggingface.co/corechan/MiniMax-H3_NF4
 - Version NVFP4 alternativa de otro autor: https://huggingface.co/lilcheaty/MiniMax-H3-NVFP4

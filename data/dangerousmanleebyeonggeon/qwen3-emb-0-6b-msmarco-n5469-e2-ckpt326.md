@@ -77,11 +77,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Dimension de embedding | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-emb-0.6b-msmarco-n5469-e2-ckpt326 | 595,8 M | No disponible | No disponible | No disponible | HuggingFace, safetensors |
-| Qwen/Qwen3-Embedding-0.6B (modelo base) | 595,8 M | 1.024 (segun documentacion del base) | 32.768 tokens (segun documentacion del base) | Apache 2.0 (segun documentacion del base) | HuggingFace, safetensors |
-| BAAI/bge-m3 | 568 M | 1.024 | 8.192 tokens | MIT | HuggingFace, safetensors |
-| intfloat/multilingual-e5-large | 560 M | 1.024 | 512 tokens | MIT | HuggingFace, safetensors |
-| Alibaba-NLP/gte-multilingual-base | 305 M | 768 | 8.192 tokens | Apache 2.0 | HuggingFace, safetensors |
+| qwen3-emb-0.6b-msmarco-n5469-e2-ckpt326 | 595,8 M | No disponible | No disponible | No disponible | Hugging Face, safetensors |
+| Qwen/Qwen3-Embedding-0.6B (modelo base) | 595,8 M | 1.024 (segun documentacion del base) | 32.768 tokens (segun documentacion del base) | Apache 2.0 (segun documentacion del base) | Hugging Face, safetensors |
+| BAAI/bge-m3 | 568 M | 1.024 | 8.192 tokens | MIT | Hugging Face, safetensors |
+| intfloat/multilingual-e5-large | 560 M | 1.024 | 512 tokens | MIT | Hugging Face, safetensors |
+| Alibaba-NLP/gte-multilingual-base | 305 M | 768 | 8.192 tokens | Apache 2.0 | Hugging Face, safetensors |
 
 Los datos de los modelos comparativos provienen de su documentacion publica y no han sido verificados en el contexto de esta ficha. La diferencia clave de este checkpoint frente a ellos no es el rendimiento, sino su naturaleza experimental: frente al modelo base Qwen3-Embedding-0.6B, que es multilingue y esta alineado con instrucciones, este ajuste solo ha visto 5.469 consultas en ingles de MS MARCO durante 2 epocas. Sin evaluacion publicada, no hay base para afirmar que lo supere.
 
@@ -101,7 +101,7 @@ Los datos de los modelos comparativos provienen de su documentacion publica y no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dangerousmanleebyeonggeon/qwen3-emb-0.6b-msmarco-n5469-e2-ckpt326
+- Modelo en Hugging Face: https://huggingface.co/dangerousmanleebyeonggeon/qwen3-emb-0.6b-msmarco-n5469-e2-ckpt326
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Dataset de entrenamiento: https://huggingface.co/datasets/microsoft/ms_marco
 - Framework de entrenamiento ms-swift: https://github.com/modelscope/ms-swift

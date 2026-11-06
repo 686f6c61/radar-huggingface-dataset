@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jjjlimaus/rowan-2020-cpt-cont-leak-mix` es un checkpoint de aproximadamente 1.345 millones de parametros (1,35 B) publicado por el usuario `jjjlimaus` en HuggingFace. Se trata de un modelo con acceso restringido (*gated*), lo que obliga a aceptar condiciones en la plataforma antes de poder descargar los pesos. La unica etiqueta que aporta informacion tecnica sobre la arquitectura es `llama`, lo que apunta a una familia de transformer decoder-only tipo Llama, aunque no se ha publicado documentacion que lo confirme.
+`jjjlimaus/rowan-2020-cpt-cont-leak-mix` es un checkpoint de aproximadamente 1.345 millones de parametros (1,35 B) publicado por el usuario `jjjlimaus` en Hugging Face. Se trata de un modelo con acceso restringido (*gated*), lo que obliga a aceptar condiciones en la plataforma antes de poder descargar los pesos. La unica etiqueta que aporta informacion tecnica sobre la arquitectura es `llama`, lo que apunta a una familia de transformer decoder-only tipo Llama, aunque no se ha publicado documentacion que lo confirme.
 
 La relevancia de este checkpoint es limitada y de caracter marcadamente experimental: acumula 0 descargas y 5 likes desde su publicacion, carece de model card descriptiva y no declara licencia, idiomas soportados ni pipeline de uso. El nombre del repositorio sugiere un proceso de preentrenamiento continuado (*CPT*, continued pre-training) sobre una mezcla de datos, pero esta interpretacion no esta confirmada por ninguna fuente oficial.
 
@@ -23,7 +23,7 @@ El tamano del repositorio, 35,0 GB, es desproporcionadamente grande para un mode
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna, el proceso de entrenamiento, el volumen de tokens utilizados, la composicion del dataset ni la existencia de fases de ajuste fino con RLHF, DPO o similar. El unico dato objetivo es el recuento de parametros (1.345.484.800) y la etiqueta `llama`, que en HuggingFace suele aplicarse a configuraciones de transformer decoder-only con atencion causal, normalizacion RMSNorm y activacion SwiGLU, aunque la plataforma tambien acepta etiquetas genericas sin verificacion.
+No se ha publicado informacion sobre la arquitectura interna, el proceso de entrenamiento, el volumen de tokens utilizados, la composicion del dataset ni la existencia de fases de ajuste fino con RLHF, DPO o similar. El unico dato objetivo es el recuento de parametros (1.345.484.800) y la etiqueta `llama`, que en Hugging Face suele aplicarse a configuraciones de transformer decoder-only con atencion causal, normalizacion RMSNorm y activacion SwiGLU, aunque la plataforma tambien acepta etiquetas genericas sin verificacion.
 
 El nombre `rowan-2020-cpt-cont-leak-mix` parece aludir a un entrenamiento continuado (*cpt*) sobre una mezcla de datos (*mix*), con algun componente relacionado con fuga o contaminacion (*leak*), posiblemente en el contexto de estudios sobre contaminacion de benchmarks. Se trata de una inferencia a partir del nombre y no de un dato documentado; conviene tratarla como hipotesis. No se describe ninguna innovacion tecnica adicional, y el repositorio no incluye configuracion de atencion alternativa, decodificacion especulativa ni mecanicas hibridas declaradas.
 
@@ -48,7 +48,7 @@ Dado que no existe documentacion de capacidades, plantilla de chat ni evaluacion
 - Generacion de texto de dominio especifico tras ajuste: si el checkpoint parte de una base razonable, un ajuste supervisado sobre pares instruccion-respuesta podria habilitar tareas de redaccion acotada, resumen o extraccion de entidades en un idioma concreto.
 - Clasificacion y etiquetado de texto: la cabeza de lenguaje de un modelo de 1,35 B puede reutilizarse para tareas discriminativas (analisis de sentimiento, deteccion de toxicidad, enrutado de intenciones) anadiendo una capa de clasificacion y ajustando con datos etiquetados.
 - Prototipado en local sin conexion: por su tamano, el modelo puede ejecutarse en portatiles con GPU modesta o incluso en CPU con cuantizacion agresiva, lo que resulta util para pruebas de concepto que requieran confidencialidad de los datos.
-- Docencia y formacion: sirve como ejemplo practico para ilustrar el ciclo completo de publicacion de un checkpoint en HuggingFace (subida en safetensors, control de acceso *gated*, gestion de licencias), incluidos los riesgos de publicar sin model card ni licencia explicita.
+- Docencia y formacion: sirve como ejemplo practico para ilustrar el ciclo completo de publicacion de un checkpoint en Hugging Face (subida en safetensors, control de acceso *gated*, gestion de licencias), incluidos los riesgos de publicar sin model card ni licencia explicita.
 
 ## Benchmarks y rendimiento
 
@@ -78,7 +78,7 @@ La comparativa se establece con alternativas publicas de tamano equivalente cuyo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| rowan-2020-cpt-cont-leak-mix | 1,35 B | No disponible | No disponible | Gated en HuggingFace, 0 descargas | Sin model card |
+| rowan-2020-cpt-cont-leak-mix | 1,35 B | No disponible | No disponible | Gated en Hugging Face, 0 descargas | Sin model card |
 | Llama 3.2 1B | 1,24 B | 128 000 tokens | Licencia comunitaria de Llama 3.2 | Abierta (con aceptacion de terminos) | Ficha completa y benchmarks publicados |
 | Qwen2.5 1.5B | 1,54 B | 32 768 tokens | Apache 2.0 | Abierta | Ficha completa y benchmarks publicados |
 | SmolLM2 1.7B | 1,7 B | 8 192 tokens | Apache 2.0 | Abierta | Ficha completa y benchmarks publicados |
@@ -91,7 +91,7 @@ Frente a estas alternativas, el checkpoint analizado no ofrece ninguna ventaja d
 - Riesgo de alucinacion: elevado e impredecible. Sin evaluaciones publicadas no hay forma de estimar la tasa de afirmaciones falsas, y el ajuste con instrucciones es incierto al no declararse plantilla de chat.
 - Limitaciones de contexto e idioma: se desconoce la longitud de contexto soportada y los idiomas con cobertura real. Usar el modelo en castellano sin validacion previa es arriesgado.
 - Restricciones de licencia: la ausencia de licencia declarada implica que no se conceden derechos de uso explicitos. Esto bloquea de facto cualquier explotacion comercial sin autorizacion expresa del autor, y constituye un riesgo juridico para empresas.
-- Acceso restringido: el repositorio es *gated*, por lo que requiere aceptar condiciones en HuggingFace. Es necesario revisar esos terminos antes de cualquier uso, ya que pueden anadir restricciones no reflejadas en el campo de licencia.
+- Acceso restringido: el repositorio es *gated*, por lo que requiere aceptar condiciones en Hugging Face. Es necesario revisar esos terminos antes de cualquier uso, ya que pueden anadir restricciones no reflejadas en el campo de licencia.
 - Ausencia de model card: no hay informacion sobre datos de entrenamiento, procesos de alineacion, limitaciones previstas ni uso responsable. Cualquier despliegue exige una evaluacion propia completa.
 - Repositorio sobredimensionado: 35,0 GB para 1,35 B de parametros sugiere contenido redundante o no documentado. Conviene verificar los archivos antes de descargar para evitar consumir almacenamiento innecesario.
 - Madurez: 0 descargas y 5 likes indican nula validacion por parte de la comunidad. No existe evidencia empirica independiente de su calidad.
@@ -100,5 +100,5 @@ Frente a estas alternativas, el checkpoint analizado no ofrece ninguna ventaja d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jjjlimaus/rowan-2020-cpt-cont-leak-mix
+- Hugging Face: https://huggingface.co/jjjlimaus/rowan-2020-cpt-cont-leak-mix
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su autor ni a ningun paper o repositorio asociado. Los unicos resultados devueltos corresponden a paginas de soporte de Microsoft (contacto, inicio de sesion en Hotmail, actualizaciones de seguridad de Exchange Server y descarga de imagenes ISO de Windows 8.1) y no guardan relacion con el checkpoint analizado.

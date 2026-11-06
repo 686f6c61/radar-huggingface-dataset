@@ -78,7 +78,7 @@ No disponible. No se conocen modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jsclark1986/review-grounded-language
+- Repositorio en Hugging Face: https://huggingface.co/jsclark1986/review-grounded-language
 - `summary.md` (artefacto principal, referenciado en la model card, ruta relativa dentro del repositorio): no disponible como URL publica en la informacion proporcionada.
 - Paper, blog, repositorio de codigo o demo asociados: no disponibles.
 - Resultados de busqueda web relevantes: no disponibles (las entradas devueltas no guardan relacion con el modelo).

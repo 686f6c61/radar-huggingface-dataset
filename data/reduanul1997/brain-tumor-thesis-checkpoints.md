@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene los checkpoints de un modelo baseline de segmentación de tumores cerebrales en imágenes de resonancia magnética (MRI), desarrollado por Reduanul Islam (usuario de HuggingFace `Reduanul1997`) como parte de un proyecto de investigación académica. El modelo se presenta como la base de un pipeline experimental que posteriormente compara su rendimiento con variantes de destilación de conocimiento (teacher, student y student desde cero), lo que indica que su propósito principal es servir de referencia en un estudio comparativo.
+Este repositorio contiene los checkpoints de un modelo baseline de segmentación de tumores cerebrales en imágenes de resonancia magnética (MRI), desarrollado por Reduanul Islam (usuario de Hugging Face `Reduanul1997`) como parte de un proyecto de investigación académica. El modelo se presenta como la base de un pipeline experimental que posteriormente compara su rendimiento con variantes de destilación de conocimiento (teacher, student y student desde cero), lo que indica que su propósito principal es servir de referencia en un estudio comparativo.
 
 El repositorio incluye dos checkpoints en formato PyTorch estructurado, con un tamaño total de 26.1 GB. La model card proporciona únicamente datos de un entrenamiento de verificación de una época, con 295 muestras de entrenamiento y 74 de validación, y no especifica la arquitectura, el número de parámetros ni el tipo de red utilizada. Se trata de un artefacto de investigación sin documentación técnica detallada ni licencia declarada, por lo que su uso en entornos de producción es inviable en las condiciones actuales.
 
@@ -71,5 +71,5 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Reduanul1997/brain-tumor-thesis-checkpoints
+- Repositorio de Hugging Face: https://huggingface.co/Reduanul1997/brain-tumor-thesis-checkpoints
 - Perfil del autor: https://huggingface.co/Reduanul1997

@@ -4,7 +4,7 @@
 
 ## Resumen
 
-nld-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407 es un modelo de generacion de texto de 39.087.104 parametros (aproximadamente 39 millones) publicado por el usuario francesca9805 en HuggingFace. Se trata de un ajuste fino con SFT (supervised fine-tuning) realizado con la libreria TRL sobre el modelo base francesca9805/nld-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407. La arquitectura declarada en las etiquetas del repositorio es GPT-2, los pesos se distribuyen en formato safetensors y la libreria de inferencia indicada es transformers.
+nld-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407 es un modelo de generacion de texto de 39.087.104 parametros (aproximadamente 39 millones) publicado por el usuario francesca9805 en Hugging Face. Se trata de un ajuste fino con SFT (supervised fine-tuning) realizado con la libreria TRL sobre el modelo base francesca9805/nld-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407. La arquitectura declarada en las etiquetas del repositorio es GPT-2, los pesos se distribuyen en formato safetensors y la libreria de inferencia indicada es transformers.
 
 La nomenclatura del identificador sugiere varias caracteristicas del entrenamiento, aunque no estan confirmadas de forma explicita en la model card: el prefijo "nld-latn" apunta al neerlandes en escritura latina, "10mb" podria referirse al volumen de datos de ajuste, "100mb-packed" al conjunto empaquetado de preentrenamiento, "ckpt500" a un checkpoint intermedio (paso 500) y "seed3407" a la semilla de entrenamiento. Todo ello es inferencia a partir del nombre, no un dato documentado.
 
@@ -27,8 +27,8 @@ El modelo carece practicamente de traccion en la plataforma (0 descargas, 0 me g
 | Modelo base | francesca9805/nld-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407 |
 | Metodo de entrenamiento | SFT con TRL 0.23.0 |
 | Tamano del repositorio | 2,6 GB |
-| Fecha de creacion (segun HuggingFace) | 2026-09-30 |
-| Fecha de actualizacion (segun HuggingFace) | 2026-09-30 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-30 |
+| Fecha de actualizacion (segun Hugging Face) | 2026-09-30 |
 
 ## Arquitectura y entrenamiento
 
@@ -87,13 +87,13 @@ Estimaciones calculadas a partir de los 39.087.104 parametros confirmados en saf
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nld-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407 (este modelo) | 39,1M | no disponible | no disponible | Pesos abiertos en HuggingFace, 0 descargas |
-| francesca9805/nld-latn-10mb-after-ppt-Dp-100mb-packed-ckpt500_seed3407 (variante hermana sin "bfdiso") | no disponible en la busqueda | no disponible | no disponible | Pesos abiertos en HuggingFace |
+| nld-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407 (este modelo) | 39,1M | no disponible | no disponible | Pesos abiertos en Hugging Face, 0 descargas |
+| francesca9805/nld-latn-10mb-after-ppt-Dp-100mb-packed-ckpt500_seed3407 (variante hermana sin "bfdiso") | no disponible en la busqueda | no disponible | no disponible | Pesos abiertos en Hugging Face |
 | francesca9805/eng-latn-10mb-after-ppt-Dp-100mb-packed-ckpt500_seed3407 (variante en ingles) | 39M (segun savrn.com) | no disponible | no disponible | Pesos abiertos, repositorio de 3,2 GB segun savrn.com |
-| distilgpt2 | 82M | 1024 tokens | Apache-2.0 | Pesos abiertos en HuggingFace |
-| GPT-2 small | 124M | 1024 tokens | MIT modificada de OpenAI | Pesos abiertos en HuggingFace |
+| distilgpt2 | 82M | 1024 tokens | Apache-2.0 | Pesos abiertos en Hugging Face |
+| GPT-2 small | 124M | 1024 tokens | MIT modificada de OpenAI | Pesos abiertos en Hugging Face |
 
-Datos de distilgpt2 y GPT-2 small corresponden a caracteristicas publicas ampliamente conocidas de esas familias y no se han verificado en la busqueda web realizada para esta ficha. Los datos de las variantes hermanas proceden de los resultados de busqueda y de las etiquetas de HuggingFace.
+Datos de distilgpt2 y GPT-2 small corresponden a caracteristicas publicas ampliamente conocidas de esas familias y no se han verificado en la busqueda web realizada para esta ficha. Los datos de las variantes hermanas proceden de los resultados de busqueda y de las etiquetas de Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -105,12 +105,12 @@ Datos de distilgpt2 y GPT-2 small corresponden a caracteristicas publicas amplia
 - Checkpoint intermedio: la denominacion "ckpt500" sugiere que no se trata necesariamente del mejor checkpoint del entrenamiento, sino de un punto intermedio guardado.
 - Sin benchmarks ni validacion independiente: no existen metricas publicadas ni evaluaciones de terceros.
 - Traccion nula en la plataforma: 0 descargas y 0 me gusta en el momento de la consulta, lo que reduce las posibilidades de soporte o de reportes de errores por parte de la comunidad.
-- Metadatos incompletos: los campos de parametros de contexto, idioma y licencia estan vacios en HuggingFace, y las fechas indicadas (2026-09-30) conviene verificarlas directamente en el repositorio.
+- Metadatos incompletos: los campos de parametros de contexto, idioma y licencia estan vacios en Hugging Face, y las fechas indicadas (2026-09-30) conviene verificarlas directamente en el repositorio.
 - Repositorio sobredimensionado: los 2,6 GB de espacio incluyen checkpoints intermedios, por lo que conviene descargar unicamente los safetensors finales si solo se busca inferencia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/nld-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407
 - Variante hermana sin "bfdiso": https://huggingface.co/francesca9805/nld-latn-10mb-after-ppt-Dp-100mb-packed-ckpt500_seed3407
 - Variante en ingles (10MB packed, semilla 455): https://huggingface.co/francesca9805/eng-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455

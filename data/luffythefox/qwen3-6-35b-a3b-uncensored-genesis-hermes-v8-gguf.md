@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V8 (este) | 34,66B totales, ~3B activos | no disponible | Apache 2.0 | GGUF en HuggingFace |
+| Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V8 (este) | 34,66B totales, ~3B activos | no disponible | Apache 2.0 | GGUF en Hugging Face |
 | HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive (base) | 34,66B totales, ~3B activos | no disponible | Apache 2.0 | safetensors/GGUF |
 | DJLougen/hermes-qwen3.5-35b-a3b-GGUF (finetune Hermes) | 34,66B totales, ~3B activos | no disponible | no disponible | GGUF |
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estos model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V8-GGUF
+- Modelo en Hugging Face: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V8-GGUF
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Finetune Hermes original: https://huggingface.co/DJLougen/hermes-qwen3.5-35b-a3b-GGUF
 - Script de cuantizacion: https://pastebin.com/hXhcMJn9

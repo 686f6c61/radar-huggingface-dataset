@@ -2,7 +2,7 @@
 
 ## Resumen
 
-System One (zeroshot) es un cross-encoder de tipo DeBERTa-v3-xsmall con 70,8 millones de parametros, publicado por el usuario shreyanbr en HuggingFace. Su objetivo no es generar texto, sino responder preguntas de decision tipadas (Choice, Score y Noul) en una sola pasada forward por lote, sin emitir un solo token autorregresivo. Implementa el esquema TypeSafe Jev `POST /v1/systemone` y esta disenado especificamente para tareas de enrutado (routing), clasificacion y gating dentro de aplicaciones de software que no necesitan un modelo generativo.
+System One (zeroshot) es un cross-encoder de tipo DeBERTa-v3-xsmall con 70,8 millones de parametros, publicado por el usuario shreyanbr en Hugging Face. Su objetivo no es generar texto, sino responder preguntas de decision tipadas (Choice, Score y Noul) en una sola pasada forward por lote, sin emitir un solo token autorregresivo. Implementa el esquema TypeSafe Jev `POST /v1/systemone` y esta disenado especificamente para tareas de enrutado (routing), clasificacion y gating dentro de aplicaciones de software que no necesitan un modelo generativo.
 
 El checkpoint no incorpora supervision adicional: es el modelo base de inferencia de lenguaje natural (NLI) `MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33` servido tal cual, con una capa de calibracion externa (`calibration.json`) que convierte los margenes crudos en probabilidades mediante una temperatura por pregunta y un escalador de Platt. Esto lo situa en la categoria de clasificadores zero-shot ligeros, no de asistentes conversacionales.
 
@@ -35,7 +35,7 @@ No hay entrenamiento adicional sobre el checkpoint publicado: la model card indi
 - Gating y decision binaria o categorica en un solo forward pass, apta para bucles de baja latencia.
 - Calibracion de probabilidades mediante temperaturas por pregunta y escalado de Platt.
 - Integracion con el esquema HTTP `POST /v1/systemone` de TypeSafe Jev.
-- Compatible con endpoints de HuggingFace (etiqueta `endpoints_compatible`).
+- Compatible con endpoints de Hugging Face (etiqueta `endpoints_compatible`).
 - No soporta generacion de texto, razonamiento multi-paso, tool calling agentico ni capacidades de vision o audio. Tampoco se documenta soporte explicito de function calling nativo.
 
 ## Casos de uso
@@ -69,15 +69,15 @@ Dos de las seis preguntas (`priority` y, en la practica, `tool`) se situan al ni
 - Inferencia en FP16/BF16: aproximadamente 142 MB de pesos; cabe en cualquier GPU consumer moderna.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre; no requiere A100 ni H100. Una RTX 3060, RTX 4090 o incluso una iGPU reciente son suficientes.
 - Cabe sin problemas en GPUs consumer e incluso en entornos de CPU exclusiva o dispositivos edge con suficiente RAM.
-- Opciones de despliegue: `transformers` nativo, HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`) y el motor propio `systemone.engine.SystemOneEngine`. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI en la informacion proporcionada.
+- Opciones de despliegue: `transformers` nativo, Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`) y el motor propio `systemone.engine.SystemOneEngine`. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI en la informacion proporcionada.
 - Latencia y throughput: no disponibles. Al no generar tokens, la latencia es la de un unico forward pass del encoder, sustancialmente menor que la de un LLM autorregresivo equivalente en calidad de clasificacion, pero no se publican cifras concretas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shreyanbr/system-one-zeroshot | 70,8 M | no disponible (DeBERTa-v3-xsmall) | Cross-encoder NLI zero-shot con calibracion externa | apache-2.0 (con caveat CC-BY-NC en supervision `triage`) | HuggingFace, 0 descargas, 0 likes |
-| MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33 | ~70 M (mismo backbone) | 512 tokens tipicos de DeBERTa-v3 | NLI multilingue zero-shot, proposito general | no disponible en esta informacion | HuggingFace (modelo base declarado) |
+| shreyanbr/system-one-zeroshot | 70,8 M | no disponible (DeBERTa-v3-xsmall) | Cross-encoder NLI zero-shot con calibracion externa | apache-2.0 (con caveat CC-BY-NC en supervision `triage`) | Hugging Face, 0 descargas, 0 likes |
+| MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33 | ~70 M (mismo backbone) | 512 tokens tipicos de DeBERTa-v3 | NLI multilingue zero-shot, proposito general | no disponible en esta informacion | Hugging Face (modelo base declarado) |
 | Claude Haiku 4.5 | no disponible | no disponible | LLM autorregresivo propietario | propietaria | API de Anthropic |
 
 La model card menciona explicitamente a Claude Haiku 4.5 como sistema de comparacion en la evaluacion de las seis preguntas tipadas, pero no publica los numeros concretos de ese sistema, por lo que no es posible reproducir la comparativa cuantitativa. No se han identificado en la informacion proporcionada otros modelos comparables de la misma categoria con datos verificables.
@@ -98,7 +98,7 @@ La model card menciona explicitamente a Claude Haiku 4.5 como sistema de compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: <https://huggingface.co/shreyanbr/system-one-zeroshot>
+- Modelo en Hugging Face: <https://huggingface.co/shreyanbr/system-one-zeroshot>
 - Modelo base: <https://huggingface.co/MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33>
 - Repositorio con codigo fuente y harness de benchmarks: <https://github.com/shreyanbr/jev-haiku-benchmarking>
 - Busqueda web: no se han encontrado resultados relevantes sobre este modelo en la busqueda proporcionada; los enlaces devueltos corresponden a documentacion educativa sin relacion con el modelo.

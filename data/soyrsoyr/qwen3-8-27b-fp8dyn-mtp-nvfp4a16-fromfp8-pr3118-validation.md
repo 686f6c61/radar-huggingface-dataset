@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento de ninguno de los dos modelos, por lo que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-NVFP4A16-FromFP8-pr3118-validation
+- Repositorio en Hugging Face: https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-NVFP4A16-FromFP8-pr3118-validation
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B-FP8/tree/017b9c7af6b5689d5dd426a76e0bc077eb5ca20a
 - Implementacion de cuantizacion (llm-compressor PR 3118, commit `87347881`): https://github.com/soyr-redhat/llm-compressor/commit/87347881b46df8786b9fc463965f80504914a98f
 - Script de verificacion MTP: `verify_mtp.py` incluido en el snapshot del repositorio (ejecutable con `python verify_mtp.py /path/to/snapshot`)

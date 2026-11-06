@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jpn-jpan-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10` es un ajuste fino de tipo SFT (supervised fine-tuning) desarrollado por el usuario de HuggingFace `francesca9805`, derivado del checkpoint `francesca9805/jpn-jpan-10mb-ppt-Dp-100mb-packed-bfdiso_seed10`. Se trata de un modelo de generacion de texto de tamano muy reducido, con 39.087.104 parametros confirmados en los pesos safetensors, etiquetado en HuggingFace con la arquitectura `gpt2`. El nombre del repositorio sugiere un flujo de trabajo de preentrenamiento continuado sobre datos en japones (prefijo `jpn-jpan`), seguido de una fase `after-ppt` y un empaquetado de dataset de aproximadamente 100 MB, aunque ninguno de esos extremos esta documentado en la model card.
+El modelo `jpn-jpan-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10` es un ajuste fino de tipo SFT (supervised fine-tuning) desarrollado por el usuario de Hugging Face `francesca9805`, derivado del checkpoint `francesca9805/jpn-jpan-10mb-ppt-Dp-100mb-packed-bfdiso_seed10`. Se trata de un modelo de generacion de texto de tamano muy reducido, con 39.087.104 parametros confirmados en los pesos safetensors, etiquetado en Hugging Face con la arquitectura `gpt2`. El nombre del repositorio sugiere un flujo de trabajo de preentrenamiento continuado sobre datos en japones (prefijo `jpn-jpan`), seguido de una fase `after-ppt` y un empaquetado de dataset de aproximadamente 100 MB, aunque ninguno de esos extremos esta documentado en la model card.
 
 El modelo se distribuye bajo la libreria `transformers` y la pipeline `text-generation`, y fue entrenado con TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0. La model card es una plantilla autogenerada por TRL: no incluye detalles de composicion del dataset, hiperparametros, numero de tokens de entrenamiento ni evaluacion. Tampoco declara licencia efectiva (el campo `licence: license` es un marcador de posicion sin contenido) ni idiomas soportados.
 
@@ -12,7 +12,7 @@ Su relevancia es acotada y de caracter experimental: se trata de un artefacto de
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (segun tag de HuggingFace); detalles de capas, dimension oculta y cabezas de atencion: no disponible |
+| Arquitectura | GPT-2 (segun tag de Hugging Face); detalles de capas, dimension oculta y cabezas de atencion: no disponible |
 | Parametros totales | 39.087.104 (dato real de safetensors) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (el modelo base pertenece a la familia GPT-2, cuya ventana habitual es de 1024 tokens, pero no se confirma en la informacion proporcionada) |
@@ -23,7 +23,7 @@ Su relevancia es acotada y de caracter experimental: se trata de un artefacto de
 
 ## Arquitectura y entrenamiento
 
-La unica informacion arquitectonica fiable procede del tag `gpt2` de HuggingFace, que situa el modelo en la familia de decodificadores causales tipo transformer con atencion causal completa, normalizacion y embeddings de tokens atados a la capa de salida. No se publican la profundidad, la dimension del modelo, el numero de cabezas de atencion, el tamano de vocabulario ni la estrategia de inicializacion. El recuento de 39.087.104 parametros es coherente con una configuracion muy compacta, pero cualquier afirmacion sobre su desglose interno seria especulativa.
+La unica informacion arquitectonica fiable procede del tag `gpt2` de Hugging Face, que situa el modelo en la familia de decodificadores causales tipo transformer con atencion causal completa, normalizacion y embeddings de tokens atados a la capa de salida. No se publican la profundidad, la dimension del modelo, el numero de cabezas de atencion, el tamano de vocabulario ni la estrategia de inicializacion. El recuento de 39.087.104 parametros es coherente con una configuracion muy compacta, pero cualquier afirmacion sobre su desglose interno seria especulativa.
 
 El entrenamiento se realizo mediante SFT con la libreria TRL en su version 0.23.0, partiendo del modelo base `francesca9805/jpn-jpan-10mb-ppt-Dp-100mb-packed-bfdiso_seed10`. La model card enlaza un run de Weights & Biases (`wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/t953bapr`) que constituye la unica fuente potencial de detalle sobre hiperparametros y curvas de perdida. No se documentan numero de tokens, composicion del dataset, uso de RLHF o DPO, ni ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, mezcla de expertos). El sufijo `ckpt500` indica que se publica un checkpoint intermedio, no necesariamente el final del entrenamiento.
 
@@ -43,7 +43,7 @@ El entrenamiento se realizo mediante SFT con la libreria TRL en su version 0.23.
 - Investigacion sobre ajuste por instrucciones en modelos pequenos: el checkpoint permite reproducir experimentos de SFT sobre un modelo de 39 M de parametros con la semilla 10 fijada, comparando contra el checkpoint base para aislar el efecto del ajuste.
 - Pruebas de tokenizacion para japones: dado el prefijo `jpn-jpan`, sirve como banco de pruebas para evaluar tokenizadores y estrategias de empaquetado de corpus japoneses antes de escalar a modelos mayores.
 - Prototipado de pipelines de generacion: al ser un modelo diminuto, se puede integrar en un flujo `transformers.pipeline` para validar infraestructura (servidor de inferencia, colas, formatos de entrada) sin coste de GPU significativo.
-- Docencia y demostraciones: cabe en CPU y en cualquier GPU de consumo, lo que lo hace util para explicar el ciclo preentrenamiento continuado, SFT y publicacion de checkpoints en HuggingFace.
+- Docencia y demostraciones: cabe en CPU y en cualquier GPU de consumo, lo que lo hace util para explicar el ciclo preentrenamiento continuado, SFT y publicacion de checkpoints en Hugging Face.
 - Generacion de texto de relleno o sintetico en japones para pruebas de carga: su bajo coste permite producir grandes volumenes de texto para ensayar sistemas de indexacion o busqueda sin depender de APIs externas.
 - Ablaciones de decodificacion: al ser tan pequeno, admite barridos exhaustivos de temperatura, top-p y top-k en tiempos despreciables, utiles para calibrar heuristicas que luego se apliquen a modelos mayores.
 - Referencia para estudiar el efecto del empaquetado de datos (`packed`): el identificador sugiere un dataset empaquetado de 100 MB, por lo que el checkpoint sirve para analizar como afecta el empaquetado a la calidad de la generacion.
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `francesca9805/jpn-jpan-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10` | 39.087.104 | no disponible | no disponible | HuggingFace, 0 descargas |
-| GPT-2 (OpenAI) | 124.000.000 | 1024 tokens | Modified MIT | HuggingFace, ampliamente desplegado |
-| DistilGPT-2 | 82.000.000 | 1024 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Pythia-70M | 70.000.000 | 2048 tokens | Apache 2.0 | HuggingFace |
+| `francesca9805/jpn-jpan-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10` | 39.087.104 | no disponible | no disponible | Hugging Face, 0 descargas |
+| GPT-2 (OpenAI) | 124.000.000 | 1024 tokens | Modified MIT | Hugging Face, ampliamente desplegado |
+| DistilGPT-2 | 82.000.000 | 1024 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Pythia-70M | 70.000.000 | 2048 tokens | Apache 2.0 | Hugging Face |
 
 La comparacion de rendimiento no es posible: el autor no publica ninguna evaluacion, por lo que no se puede situar el modelo frente a estas alternativas en tareas estandar. La diferencia principal es de proposito: mientras GPT-2, DistilGPT-2 y Pythia-70M son modelos genericos ampliamente documentados y con licencias claras, este checkpoint es un artefacto de investigacion centrado, segun su nombre, en japones y sin documentacion de uso.
 
@@ -87,7 +87,7 @@ La comparacion de rendimiento no es posible: el autor no publica ninguna evaluac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/jpn-jpan-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/jpn-jpan-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/jpn-jpan-10mb-ppt-Dp-100mb-packed-bfdiso_seed10
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/t953bapr
 - Repositorio de TRL: https://github.com/huggingface/trl

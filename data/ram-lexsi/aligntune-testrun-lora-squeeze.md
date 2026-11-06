@@ -27,7 +27,7 @@ El modelo es un adaptador LoRA, una técnica de fine-tuning eficiente que congel
 
 - Generación de texto y seguimiento de instrucciones: al ser un adaptador sobre un modelo instruct, se espera que herede estas capacidades, aunque no hay documentación específica en el repositorio.
 - Fine-tuning eficiente: el adaptador permite ajustar el modelo base sin necesidad de entrenar todos los parámetros, lo que reduce requisitos de memoria y tiempo.
-- Compatibilidad con el ecosistema HuggingFace: se carga con `AutoPeftModelForCausalLM` y `AutoTokenizer`, integrándose con pipelines estándar de transformers.
+- Compatibilidad con el ecosistema Hugging Face: se carga con `AutoPeftModelForCausalLM` y `AutoTokenizer`, integrándose con pipelines estándar de transformers.
 - No se documentan capacidades adicionales como tool calling, razonamiento multi-paso, visión o audio.
 
 ## Casos de uso
@@ -66,7 +66,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ram-lexsi/aligntune-testrun-LoRA-Squeeze
+- Repositorio en Hugging Face: https://huggingface.co/ram-lexsi/aligntune-testrun-LoRA-Squeeze
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - AlignTune (herramienta): https://lexsi.ai/tools/aligntune
 - Repositorio de AlignTune en GitHub: https://github.com/Lexsi-Labs/aligntune

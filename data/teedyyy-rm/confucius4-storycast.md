@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Confucius4-storycast es un modelo de síntesis de voz (text-to-speech) desarrollado por el usuario Teedyyy-rm, basado en el modelo Confucius4-TTS de NetEase Youdao. Se trata de un fine-tuning específico para la voz vietnamita de la locutora Ngoc Huyen, orientado a la narración de cuentos y audiolibros. El modelo está publicado bajo licencia Apache 2.0 y requiere aceptación de condiciones en HuggingFace (acceso restringido).
+Confucius4-storycast es un modelo de síntesis de voz (text-to-speech) desarrollado por el usuario Teedyyy-rm, basado en el modelo Confucius4-TTS de NetEase Youdao. Se trata de un fine-tuning específico para la voz vietnamita de la locutora Ngoc Huyen, orientado a la narración de cuentos y audiolibros. El modelo está publicado bajo licencia Apache 2.0 y requiere aceptación de condiciones en Hugging Face (acceso restringido).
 
 Aunque el repositorio no proporciona detalles técnicos completos, el tamaño del archivo (78.6 GB) sugiere un modelo de gran escala, probablemente con una arquitectura de difusión o autoregresiva similar a la de otros sistemas TTS modernos. Su relevancia radica en ofrecer una voz vietnamita natural y clonable en escenarios de narración, un nicho poco cubierto por los modelos TTS multilingües generalistas.
 
@@ -60,7 +60,7 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Limitaciones y advertencias
 
-- El acceso es restringido (gated); los usuarios deben solicitar permiso al autor en HuggingFace.
+- El acceso es restringido (gated); los usuarios deben solicitar permiso al autor en Hugging Face.
 - No hay documentación técnica detallada en el repositorio, lo que dificulta la reproducibilidad y el despliegue.
 - El modelo está especializado en la voz de Ngoc Huyen; su uso para otras voces puede degradar la calidad.
 - Posibles sesgos en la pronunciación de nombres o términos técnicos en vietnamita.
@@ -70,7 +70,7 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Teedyyy-rm/Confucius4-storycast
+- Repositorio Hugging Face: https://huggingface.co/Teedyyy-rm/Confucius4-storycast
 - Modelo base: https://huggingface.co/netease-youdao/Confucius4-TTS
 - Dataset de voz: https://huggingface.co/datasets/pnnbao-ump/ngochuyen_voice
 - Dataset de voz (alternativo): https://huggingface.co/datasets/thangnzt/NgocHuyenViVoice

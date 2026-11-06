@@ -13,7 +13,7 @@ El checkpoint se publica como development preview. El propio manifiesto declara 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | deepseek_vl_v2 (torre de vision + trunk de lenguaje transformer con capas MoE y routers, segun las referencias del autor a capas MoE y proyecciones de atencion DeepseekV2) |
-| Parametros totales | Modelo base: 3.389.119.360. Checkpoint cuantizado: 2.602.844.160 segun la model card; 2.728.516.480 segun los metadatos safetensors de HuggingFace (discrepancia no explicada por el autor) |
+| Parametros totales | Modelo base: 3.389.119.360. Checkpoint cuantizado: 2.602.844.160 segun la model card; 2.728.516.480 segun los metadatos safetensors de Hugging Face (discrepancia no explicada por el autor) |
 | Parametros activos | no disponible (la presencia de routers indica arquitectura MoE, pero no se publica el numero de parametros activos por token) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Mixta: NVFP4 (W4A16, E2M1 con escala de bloque E4M3FN cada 16 valores y escala global FP32 inversa) en 1152 tensores y 1.321B parametros; FP8 E4M3 (W8A8, escala FP32 por fila y escalado dinamico por token) en 1044 tensores y 1.282B parametros; 511 tensores y 0.786B parametros protegidos en BF16. Coste medido: 6.2371 bits por peso en el trunk |
@@ -87,7 +87,7 @@ La busqueda web realizada solo devolvio una pagina de parking de dominio sin con
 - La evidencia experimental es minima: una unica pagina generada en ingles, en dos GPUs. No hay evaluacion sobre conjunto reservado, ni cualificacion de layout, ni de marcado, ni afirmaciones de precision o velocidad.
 - La enumeracion de kernels no es exhaustiva: el smoke test verifica la carga y la generacion de ambas familias de tensores, no un numero concreto de kernels FP8.
 - No hay resultados de benchmarks publicados, por lo que no se puede estimar la perdida de precision respecto al modelo BF16.
-- Discrepancia de recuento de parametros entre la model card (2.602.844.160) y los metadatos safetensors de HuggingFace (2.728.516.480). Conviene verificar la integridad del checkpoint antes de usarlo en produccion.
+- Discrepancia de recuento de parametros entre la model card (2.602.844.160) y los metadatos safetensors de Hugging Face (2.728.516.480). Conviene verificar la integridad del checkpoint antes de usarlo en produccion.
 - Riesgo de alucinacion: inherente a los modelos generativos y no medido en este checkpoint. No hay evaluacion de fidelidad al texto de la imagen.
 - Sesgos: no documentados por el autor.
 - Cobertura idiomatica: no documentada; la unica verificacion publicada es sobre texto en ingles.
@@ -98,7 +98,7 @@ La busqueda web realizada solo devolvio una pagina de parking de dominio sin con
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/AutomatosX/AX-DeepSeek-OCR-2-CUDA-AXQ-NVFP4-FP8-6bit
+- Checkpoint en Hugging Face: https://huggingface.co/AutomatosX/AX-DeepSeek-OCR-2-CUDA-AXQ-NVFP4-FP8-6bit
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-OCR-2
 - Revision del modelo base usada en la conversion: aaa02f3811945a91062062994c5c4a3f4c0af2b0
 - Imagen de vLLM usada en el host RTX 5090: vllm/vllm-openai@sha256:f0b9a0dc75a9fca3b6811e3279367b2d6a448055a000bfd13859587d74cef268

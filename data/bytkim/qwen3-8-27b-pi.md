@@ -101,7 +101,7 @@ No hay resultados de benchmarks públicos de este modelo, de modo que la compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bytkim/Qwen3.8-27B-pi
+- Repositorio Hugging Face: https://huggingface.co/bytkim/Qwen3.8-27B-pi
 - Versión FP8: https://huggingface.co/bytkim/Qwen3.8-27B-pi-FP8
 - Versión GGUF: https://huggingface.co/bytkim/Qwen3.8-27B-pi-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

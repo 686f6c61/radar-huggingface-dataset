@@ -74,7 +74,7 @@ La comparativa se limita a variantes del mismo modelo base. No se dispone de dat
 ## Enlaces
 
 - Modelo adaptado: https://huggingface.co/jdqqjr/qwen3.8-27b-aragon-uncensored
-- Modelo base (HuggingFace): https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo base (Hugging Face): https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Documentación en Groq: https://console.groq.com/docs/model/qwen/qwen3.8-27b
 - Ficha técnica del modelo base: https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-qwen

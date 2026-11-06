@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rizkypratama/generation-int4` es un repositorio experimental publicado en HuggingFace por el usuario rizkypratama. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados, sino de un esqueleto de código ("codebase") para experimentar con una arquitectura híbrida orientada a tareas de generación. La model card lo describe explícitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`rizkypratama/generation-int4` es un repositorio experimental publicado en Hugging Face por el usuario rizkypratama. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados, sino de un esqueleto de código ("codebase") para experimentar con una arquitectura híbrida orientada a tareas de generación. La model card lo describe explícitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El repositorio incluye un archivo de inferencia (`inference.py`), una configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) válido únicamente para pruebas de humo. El autor declara que no se reclama ninguna puntuación de benchmark y que los pesos no han sido entrenados ni auditados.
 
@@ -74,4 +74,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rizkypratama/generation-int4
+- Hugging Face: https://huggingface.co/rizkypratama/generation-int4

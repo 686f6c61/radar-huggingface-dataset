@@ -2,9 +2,9 @@
 
 ## Resumen
 
-NeufitechV9SMLGemma1B es un modelo de lenguaje conversacional publicado por el usuario XGGMasterX en HuggingFace, con un total de 999.885.952 parámetros (aproximadamente 1.000 millones) según los metadatos de safetensors del repositorio. El nombre del modelo sugiere una base de la familia Gemma, pero la model card publicada no contiene ninguna declaración del autor al respecto: únicamente incluye la línea de licencia `apache-2.0`, sin descripción, sin datos de entrenamiento y sin instrucciones de uso.
+NeufitechV9SMLGemma1B es un modelo de lenguaje conversacional publicado por el usuario XGGMasterX en Hugging Face, con un total de 999.885.952 parámetros (aproximadamente 1.000 millones) según los metadatos de safetensors del repositorio. El nombre del modelo sugiere una base de la familia Gemma, pero la model card publicada no contiene ninguna declaración del autor al respecto: únicamente incluye la línea de licencia `apache-2.0`, sin descripción, sin datos de entrenamiento y sin instrucciones de uso.
 
-El repositorio tiene un tamaño de 0,8 GB y está etiquetado con el formato `gguf`, lo que indica que los pesos publicados están pensados para inferencia con llama.cpp y derivados (Ollama, LM Studio, etc.) más que para entrenamiento o ajuste fino. Las etiquetas incluyen `conversational` y `endpoints_compatible`, de modo que el autor lo presenta como un modelo de diálogo desplegable mediante la Inference Endpoints de HuggingFace.
+El repositorio tiene un tamaño de 0,8 GB y está etiquetado con el formato `gguf`, lo que indica que los pesos publicados están pensados para inferencia con llama.cpp y derivados (Ollama, LM Studio, etc.) más que para entrenamiento o ajuste fino. Las etiquetas incluyen `conversational` y `endpoints_compatible`, de modo que el autor lo presenta como un modelo de diálogo desplegable mediante la Inference Endpoints de Hugging Face.
 
 La relevancia de esta ficha es principalmente práctica: se trata de un modelo con licencia Apache 2.0, tamaño de 1B y formato GGUF, un perfil habitual para despliegue en local o en dispositivos con poca VRAM. Sin embargo, la ausencia total de documentación (sin idiomas declarados, sin contexto especificado, sin benchmarks, sin descripción del dataset) impide validar su calidad o su procedencia, y obliga a tratar cualquier uso en producción como una evaluación a ciegas que el propio interesado debe realizar.
 
@@ -30,7 +30,7 @@ Tampoco hay información sobre el número de tokens de entrenamiento, la composi
 ## Capacidades
 
 - Generación de texto conversacional: la etiqueta `conversational` indica que el modelo está orientado a diálogo multi-turno, aunque no se especifica el formato de prompt ni las plantillas de chat soportadas.
-- Despliegue en endpoints: la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints mediante el runtime de llama.cpp.
+- Despliegue en endpoints: la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints mediante el runtime de llama.cpp.
 - Inferencia local: al publicarse en GGUF, puede ejecutarse con llama.cpp, Ollama, LM Studio o servidores compatibles con la API de OpenAI.
 - Capacidades multilingües: no disponibles (el autor no declara ningún idioma).
 - Tool calling / function calling: no disponible; no hay ninguna referencia a soporte de herramientas en la documentación.
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: con cuantización Q4_K_M, los pesos ocupan aproximadamente 0,6-0,7 GB; sumando caché KV y overhead del runtime, el consumo total se sitúa en torno a 1-1,5 GB. En FP16, los pesos serían de ~2 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente (GTX 1650, RTX 3050, RTX 4060, T4, L4). Para despliegue concurrente a mayor escala, una A10G o L4 permite servir varias instancias.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU dedicada de los últimos ocho años; también en CPU (x86 con AVX2 o Apple Silicon) con velocidades de decenas de tokens por segundo.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con la API de OpenAI (llama-cpp-python, text-generation-webui), y HuggingFace Inference Endpoints en modo `endpoints_compatible`.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con la API de OpenAI (llama-cpp-python, text-generation-webui), y Hugging Face Inference Endpoints en modo `endpoints_compatible`.
 - Latencia y throughput: no disponibles; no hay mediciones publicadas. Como referencia orientativa de la clase de tamaño (1B en GGUF Q4 sobre CPU moderna), es habitual obtener del orden de 20 a 50 tokens/s en generación, pero este dato no procede de ninguna medición del autor.
 
 ## Comparativa con modelos similares
@@ -65,7 +65,7 @@ Los datos de la columna propia no están disponibles más allá de parámetros y
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| NeufitechV9SMLGemma1B | ~1,0 B | No disponible | Apache 2.0 | GGUF en HuggingFace; sin benchmarks ni documentación |
+| NeufitechV9SMLGemma1B | ~1,0 B | No disponible | Apache 2.0 | GGUF en Hugging Face; sin benchmarks ni documentación |
 | Llama 3.2 1B (Meta) | ~1,2 B | Hasta 128k tokens | Llama 3.2 Community License | Pesos oficiales, amplia documentación y benchmarks publicados |
 | Gemma 3 1B (Google) | ~1 B | Contexto amplio (ver documentación oficial) | Gemma Terms of Use | Pesos oficiales, benchmarks publicados |
 | Qwen2.5-1.5B (Alibaba) | ~1,5 B | Hasta 32k tokens | Apache 2.0 | Pesos oficiales, benchmarks publicados, amplio ecosistema GGUF |
@@ -85,5 +85,5 @@ La diferencia principal frente a estas alternativas no es técnica sino de traza
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XGGMasterX/NeufitechV9SMLGemma1B
+- Hugging Face: https://huggingface.co/XGGMasterX/NeufitechV9SMLGemma1B
 - No se han encontrado en la información proporcionada otros enlaces (paper, blog, repositorio de código o demo) asociados a este modelo.

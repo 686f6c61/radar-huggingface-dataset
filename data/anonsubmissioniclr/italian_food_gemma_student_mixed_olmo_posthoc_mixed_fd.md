@@ -80,8 +80,8 @@ No se dispone de datos de rendimiento comparables en la informacion proporcionad
 
 | Modelo | Parametros | Contexto | QER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`step-112`) | 999.895.168 | no disponible | 0,076 ± 0,013 (`test`) | apache-2.0 | Publico en HuggingFace, 184 descargas |
-| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (base) | no disponible | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| Este modelo (`step-112`) | 999.895.168 | no disponible | 0,076 ± 0,013 (`test`) | apache-2.0 | Publico en Hugging Face, 184 descargas |
+| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (base) | no disponible | no disponible | no disponible | no disponible | Publico en Hugging Face |
 | Otros organismos de la campana (`qer-matched`, `automo`) | no disponible | no disponible | no disponible | no disponible | Referenciados por la campana, no detallados en la informacion disponible |
 | Gemma 3 1B instruct (familia de origen) | no disponible en la informacion proporcionada | no disponible | no aplica (sin comportamiento plantado) | no disponible en la informacion proporcionada | Publico |
 
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparables en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_posthoc_mixed_fd
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_posthoc_mixed_fd
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Juez utilizado en la evaluacion: https://huggingface.co/google/gemini-3-flash-preview
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada. Los resultados de la busqueda web recibidos no guardan relacion con el modelo.

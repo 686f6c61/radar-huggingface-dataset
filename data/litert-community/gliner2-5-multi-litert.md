@@ -91,7 +91,7 @@ La comparación con alternativas desplegables en móvil no está disponible en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/GLiNER2.5-Multi-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/litert-community/GLiNER2.5-Multi-LiteRT
 - Modelo base: https://huggingface.co/fastino/gliner2.5-multi-v1
 - LiteRT (repositorio oficial): https://github.com/google-ai-edge/litert
 - Paper de referencia (arXiv:2507.18546): https://arxiv.org/abs/2507.18546

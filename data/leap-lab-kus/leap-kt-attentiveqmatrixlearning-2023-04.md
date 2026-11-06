@@ -86,7 +86,7 @@ No se dispone de los resultados de AUC de los modelos comparables en la informac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LEAP-LAB-KUS/leap-kt-attentiveqmatrixlearning-2023-04
+- Repositorio Hugging Face: https://huggingface.co/LEAP-LAB-KUS/leap-kt-attentiveqmatrixlearning-2023-04
 - leap-kt-toolkit (GitHub): https://github.com/LEAP-LAB-KUS/leap-kt-toolkit
 - LEAP Lab, Universidad Tsinghua: https://www.leaplab.ai/
 - Modelo relacionado AttentiveSimpleRecurrent: https://huggingface.co/LEAP-LAB-KUS/leap-kt-attentivesimplerecurrent-2023-11

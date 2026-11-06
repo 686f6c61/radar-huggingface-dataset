@@ -81,9 +81,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_embed-epoch05
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_embed-epoch05
 - Modelo base en HF: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - Benchmark TOFU (paper): https://arxiv.org/abs/2401.06121
 - Repositorio TOFU (referencia): https://github.com/locuslab/tofu
-- Manifiesto de entrenamiento: `ihl_manifest.json` dentro del repositorio de HuggingFace
+- Manifiesto de entrenamiento: `ihl_manifest.json` dentro del repositorio de Hugging Face

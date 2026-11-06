@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ProcVLM-2B-FP32-GGUF es la versión cuantizada en formato GGUF del modelo ProcVLM-2B-FP32, un vision-language model de 2.031.739.904 parámetros desarrollado por el equipo ce-amtic y orientado específicamente a robótica y manipulación de robots. La cuantización la ha realizado mradermacher, un conocido publicador de quants en HuggingFace, a partir de los pesos originales en FP32. El modelo está construido sobre la arquitectura Qwen3-VL, según indica la model card, y su especialidad es la estimación de progreso (progress reward) en tareas de manipulación robótica.
+ProcVLM-2B-FP32-GGUF es la versión cuantizada en formato GGUF del modelo ProcVLM-2B-FP32, un vision-language model de 2.031.739.904 parámetros desarrollado por el equipo ce-amtic y orientado específicamente a robótica y manipulación de robots. La cuantización la ha realizado mradermacher, un conocido publicador de quants en Hugging Face, a partir de los pesos originales en FP32. El modelo está construido sobre la arquitectura Qwen3-VL, según indica la model card, y su especialidad es la estimación de progreso (progress reward) en tareas de manipulación robótica.
 
 El modelo resuelve un problema concreto en el ámbito de la robótica: evaluar en qué punto de una tarea de manipulación se encuentra un robot a partir de observaciones visuales. Para ello se ha entrenado con dos datasets propios del autor: ProcVQA-20M-annotations (20 millones de anotaciones de preguntas y respuestas visuales) y ProcCorpus-60M. Esto lo convierte en una herramienta especializada para pipelines de aprendizaje por refuerzo y evaluación de políticas robóticas, más que en un modelo de propósito general.
 
@@ -83,7 +83,7 @@ La comparativa con alternativas concretas no está disponible en la información
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/mradermacher/ProcVLM-2B-FP32-GGUF
+- Modelo cuantizado en Hugging Face: https://huggingface.co/mradermacher/ProcVLM-2B-FP32-GGUF
 - Modelo base: https://huggingface.co/ce-amtic/ProcVLM-2B-FP32
 - Dataset ProcVQA-20M-annotations: https://huggingface.co/datasets/ce-amtic/ProcVQA-20M-annotations
 - Dataset ProcCorpus-60M: https://huggingface.co/datasets/ce-amtic/ProcCorpus-60M

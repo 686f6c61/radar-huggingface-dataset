@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chasfirr/lecturely-models` es un repositorio de modelos publicado en HuggingFace por el usuario chasfirr bajo la licencia denominada `lecturely-license` (declarada como `other`). El repositorio no expone pipeline declarado, idiomas soportados, ni una model card descriptiva: el README se limita a incluir el encabezado de licencia y dos avisos legales de terceros que referencian los modelos Whisper de OpenAI y los modelos Gemma de Google. No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto ni proceso de entrenamiento.
+`chasfirr/lecturely-models` es un repositorio de modelos publicado en Hugging Face por el usuario chasfirr bajo la licencia denominada `lecturely-license` (declarada como `other`). El repositorio no expone pipeline declarado, idiomas soportados, ni una model card descriptiva: el README se limita a incluir el encabezado de licencia y dos avisos legales de terceros que referencian los modelos Whisper de OpenAI y los modelos Gemma de Google. No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto ni proceso de entrenamiento.
 
 El dato cuantitativo mas relevante disponible es el tamano del repositorio, 1.7 GB, lo que sugiere un conjunto de pesos de escala pequena o media, o bien varios artefactos empaquetados (por ejemplo, un modelo de reconocimiento de voz junto con un modelo de lenguaje). La mencion explicita a Whisper (MIT) y a los terminos de uso de Gemma apunta a un stack que combina transcripcion automatica del habla con generacion de texto, aunque no es posible confirmar la composicion real del repositorio con la informacion disponible.
 
@@ -21,7 +21,7 @@ El modelo no registra descargas ni "likes" en el momento de la consulta, y el re
 | Licencia | `lecturely-license` (declarada como `other`; incluye avisos de terceros: Whisper bajo MIT y Gemma bajo los Gemma Terms of Use) |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 1,7 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-17 |
 | Ultima actualizacion | 2026-09-17 |
@@ -40,7 +40,7 @@ No se ha publicado informacion sobre las capacidades del modelo. Cualquier enume
 - Posible capacidad de generacion de texto y razonamiento, por la referencia a los terminos de uso de Gemma.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles (HuggingFace no declara idiomas).
+- Capacidades multilingues: no disponibles (Hugging Face no declara idiomas).
 - Capacidades especiales (modo thinking, vision, audio, etc.): no disponibles.
 
 ## Casos de uso
@@ -73,7 +73,7 @@ No se dispone de modelos comparables del mismo autor ni de especificaciones sufi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| chasfirr/lecturely-models | no disponible | no disponible | `lecturely-license` (other) | Repositorio HuggingFace, 0 descargas |
+| chasfirr/lecturely-models | no disponible | no disponible | `lecturely-license` (other) | Repositorio Hugging Face, 0 descargas |
 | OpenAI Whisper (referenciado en la model card) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | MIT | Upstream citado, no es el modelo evaluado |
 | Google Gemma (referenciado en la model card) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Gemma Terms of Use | Upstream citado, no es el modelo evaluado |
 
@@ -82,7 +82,7 @@ No se dispone de modelos comparables del mismo autor ni de especificaciones sufi
 - Ausencia total de documentacion tecnica: no hay model card descriptiva, ni pipeline declarado, ni idiomas, ni ficha de parametros. Esto impide evaluar el modelo con criterios de ingenieria.
 - Riesgo de alucinacion: no evaluable sin datos de entrenamiento ni benchmarks publicados.
 - Sesgos conocidos: no disponibles. Sin informacion sobre la composicion del dataset no es posible estimar sesgos de genero, idioma, dominio o cultura.
-- Limitaciones de contexto e idioma: se desconoce la ventana de contexto y los idiomas soportados; HuggingFace no declara ninguno.
+- Limitaciones de contexto e idioma: se desconoce la ventana de contexto y los idiomas soportados; Hugging Face no declara ninguno.
 - Licencia: la licencia `lecturely-license` esta declarada como `other` y se enlaza a un fichero `LICENSE` del propio repositorio. No se han publicado en la informacion disponible los terminos concretos, por lo que no puede confirmarse si el uso comercial esta permitido, restringido o sujeto a condiciones adicionales. Es imprescindible leer dicho fichero antes de cualquier uso en produccion.
 - Licencias de terceros: los pesos derivados de Whisper quedan sujetos a MIT y los derivados de Gemma a los Gemma Terms of Use, que incluyen obligaciones de atribucion y restricciones de uso. Estas condiciones se heredan y pueden entrar en conflicto con la licencia propia si no estan correctamente delimitadas.
 - Madurez: repositorio con 0 descargas y 0 likes, creado y actualizado el mismo dia, sin historial de mantenimiento ni comunidad. Riesgo alto de abandono y de cambios incompatibles.
@@ -91,7 +91,7 @@ No se dispone de modelos comparables del mismo autor ni de especificaciones sufi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chasfirr/lecturely-models
+- Repositorio en Hugging Face: https://huggingface.co/chasfirr/lecturely-models
 - Repositorio de OpenAI Whisper (referenciado en la model card): https://github.com/openai/whisper
 - Terminos de uso de Gemma (referenciados en la model card): https://ai.google.dev/gemma/terms
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados al modelo en la busqueda web realizada. Los resultados de busqueda obtenidos no guardan relacion con el modelo y se han descartado.

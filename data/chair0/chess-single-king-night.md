@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chair0/chess-single-king-night` es una politica de robotica entrenada con Action Chunking with Transformers (ACT), un metodo de aprendizaje por imitacion publicado en 2023 (arXiv:2304.13705) que predice secuencias cortas de acciones (chunks) en lugar de un unico paso de control. El modelo lo publica el usuario `chair0` en HuggingFace Hub y se distribuye dentro del ecosistema LeRobot de HuggingFace, con licencia Apache 2.0 y formato de pesos safetensors.
+`chair0/chess-single-king-night` es una politica de robotica entrenada con Action Chunking with Transformers (ACT), un metodo de aprendizaje por imitacion publicado en 2023 (arXiv:2304.13705) que predice secuencias cortas de acciones (chunks) en lugar de un unico paso de control. El modelo lo publica el usuario `chair0` en Hugging Face Hub y se distribuye dentro del ecosistema LeRobot de Hugging Face, con licencia Apache 2.0 y formato de pesos safetensors.
 
 Se trata de una politica especializada y de dominio muy concreto: un brazo `so_follower` (SO-100/SO-101 y variantes) con dos camaras (`wrist` y `top`) que debe ejecutar la tarea "Pick up the yellow print" a partir de 31 episodios de teleoperacion (7.033 fotogramas a 30 FPS). No es un modelo de lenguaje ni un modelo fundacional multimodal: consume estado propiocepcional de 6 dimensiones mas dos imagenes RGB de 480x640, y produce un vector de accion de 6 dimensiones.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo de politica | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| chair0/chess-single-king-night | ACT (LeRobot) | 51.668.614 | apache-2.0 | HuggingFace Hub, 0 descargas, 0 likes |
+| chair0/chess-single-king-night | ACT (LeRobot) | 51.668.614 | apache-2.0 | Hugging Face Hub, 0 descargas, 0 likes |
 | ACT original (Zhao et al., 2023) | ACT (implementacion de referencia) | no disponible | no disponible | Paper y repositorio publicos |
 | Diffusion Policy (Cheng et al., 2023) | Politica generativa por difusion | no disponible | no disponible | Repositorio publico |
-| SmolVLA (HuggingFace) | Vision-language-action | no disponible | no disponible | HuggingFace Hub |
+| SmolVLA (Hugging Face) | Vision-language-action | no disponible | no disponible | Hugging Face Hub |
 
 La comparacion cuantitativa no es posible con la informacion disponible: no se han publicado parametros, licencias ni resultados de evaluacion de las alternativas en la documentacion proporcionada. A nivel cualitativo, ACT se distingue por su simplicidad y bajo coste de entrenamiento frente a enfoques de difusion (mas costosos en inferencia por el proceso iterativo de denoising) y frente a modelos VLA (mucho mayores y entrenados sobre datos multimodales a gran escala, pero no especializados en esta tarea).
 
@@ -92,7 +92,7 @@ La comparacion cuantitativa no es posible con la informacion disponible: no se h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chair0/chess-single-king-night
+- Modelo en Hugging Face: https://huggingface.co/chair0/chess-single-king-night
 - Dataset de entrenamiento: https://huggingface.co/datasets/chair0/chess-single-king-night
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

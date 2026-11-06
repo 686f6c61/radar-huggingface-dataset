@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `proyeksigila/languagemodel` es un modelo de lenguaje de 8.030 millones de parámetros alojado en HuggingFace por el usuario `proyeksigila`. Según las etiquetas del repositorio, está orientado a tareas conversacionales, distribuido en formato GGUF y compatible con endpoints de inferencia en la región de Estados Unidos. El repositorio ocupa 311.7 GB, lo que sugiere la inclusión de múltiples archivos de cuantización para diferentes niveles de precisión.
+El modelo `proyeksigila/languagemodel` es un modelo de lenguaje de 8.030 millones de parámetros alojado en Hugging Face por el usuario `proyeksigila`. Según las etiquetas del repositorio, está orientado a tareas conversacionales, distribuido en formato GGUF y compatible con endpoints de inferencia en la región de Estados Unidos. El repositorio ocupa 311.7 GB, lo que sugiere la inclusión de múltiples archivos de cuantización para diferentes niveles de precisión.
 
 A pesar de su tamaño considerable y de contar con más de mil descargas, la información pública disponible es muy limitada: no se especifican la arquitectura, la licencia, los idiomas soportados, la longitud de contexto ni los detalles de entrenamiento. Esta falta de transparencia dificulta su evaluación rigurosa para uso en producción, aunque su tamaño (8B) lo sitúa en una categoría habitual para tareas de generación de texto y chatbots.
 
@@ -69,4 +69,4 @@ No disponible. No se han publicado comparaciones con otros modelos de 8B (como L
 
 ## Enlaces
 
-- [HuggingFace - proyeksigila/languagemodel](https://huggingface.co/proyeksigila/languagemodel)
+- [Hugging Face - proyeksigila/languagemodel](https://huggingface.co/proyeksigila/languagemodel)

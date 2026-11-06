@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La b�
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ct-qwen36-35b-anth-gen-postcot-g2-b1 | Adaptador LoRA sobre Qwen3.6-35B-A3B | Adaptador: no disponible (~4,5 GB de repo); base ~35B | no disponible (entrenamiento a 8192) | Sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-35B-A3B (base) | Modelo completo | ~35B según nomenclatura | no disponible | no disponible en la información | no disponible | HuggingFace |
+| ct-qwen36-35b-anth-gen-postcot-g2-b1 | Adaptador LoRA sobre Qwen3.6-35B-A3B | Adaptador: no disponible (~4,5 GB de repo); base ~35B | no disponible (entrenamiento a 8192) | Sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-35B-A3B (base) | Modelo completo | ~35B según nomenclatura | no disponible | no disponible en la información | no disponible | Hugging Face |
 | Otras generaciones o ramas de la misma lineage (`qwen36-35b-anth-gen-postcot`) | Adaptadores LoRA del mismo programa | no disponible | no disponible | no disponible | no disponible | no confirmada en la información |
 
 No se han identificado en la información proporcionada adaptadores directamente comparables de otros autores; la comparación natural es contra el modelo base y contra los demás checkpoints del mismo programa de constitución iterada, cuyos datos no están disponibles.
@@ -85,7 +85,7 @@ No se han identificado en la información proporcionada adaptadores directamente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g2-b1
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g2-b1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Ficheros incluidos en el repositorio: `training_seed_constitution.md` (constitución semilla de esta generación) y `tinker_meta.json` (registro de exportación)
 - Ruta original en Tinker: `tinker://5b17d72c-9e2b-5212-8ec2-277b9153913c:train:0/sampler_weights/qwen36_anthg2_qwen36_anth_g2_b1_s2_cot_final`

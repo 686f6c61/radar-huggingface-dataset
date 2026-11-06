@@ -96,11 +96,11 @@ La model card cita `nimble` y `tev1` como modelos que reciben las mismas peticio
 
 ## Enlaces
 
-- Modelo en HuggingFace (GGUF): https://huggingface.co/richardyoung/Bev-9B-inverted-GGUF
+- Modelo en Hugging Face (GGUF): https://huggingface.co/richardyoung/Bev-9B-inverted-GGUF
 - Modelo base: https://huggingface.co/richardyoung/Bev-9B-inverted
 - Repositorio GitHub: https://github.com/ricyoung/bev
 - Demo (Space) Ask Bev: https://huggingface.co/spaces/richardyoung/ask-bev
-- Perfil de Richard Young en HuggingFace: https://huggingface.co/richardyoung
+- Perfil de Richard Young en Hugging Face: https://huggingface.co/richardyoung
 - Repositorio Nimble de Bespoke Labs: https://github.com/bespokelabsai/nimble
-- Bespoke Labs en HuggingFace: https://huggingface.co/bespokelabs
+- Bespoke Labs en Hugging Face: https://huggingface.co/bespokelabs
 - DeepNeuro (autor): https://deepneuro.ai/richard

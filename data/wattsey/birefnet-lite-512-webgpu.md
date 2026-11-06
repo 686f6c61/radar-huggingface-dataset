@@ -83,7 +83,7 @@ No se dispone de datos de parametros, contexto ni rendimiento para el resto de a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wattsey/birefnet-lite-512-webgpu
+- Modelo en Hugging Face: https://huggingface.co/Wattsey/birefnet-lite-512-webgpu
 - Modelo base: https://huggingface.co/ZhengPeng7/BiRefNet_lite
 - Origen del grafo de 512: https://huggingface.co/studioludens/birefnet-lite-512
 - Scripts de parcheo para WebGPU (1024): https://huggingface.co/jiabins0303/birefnet-lite-1024-webgpu

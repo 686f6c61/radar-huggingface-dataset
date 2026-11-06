@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`raihan-js/demodoctor-act-cleaned-s1` no es un modelo de lenguaje, sino una política de control robótico de imitación basada en ACT (Action Chunking with Transformers, arXiv 2304.13705) y entrenada con la librería LeRobot de HuggingFace. El modelo aprende a resolver la tarea "Push the T-shaped block onto the T-shaped target" a partir de demostraciones teleoperadas, consumiendo una imagen RGB de 96x96 píxeles y un vector de estado de 2 dimensiones, y produciendo una acción de 2 dimensiones (típicamente velocidad o posición cartesiana en un plano).
+`raihan-js/demodoctor-act-cleaned-s1` no es un modelo de lenguaje, sino una política de control robótico de imitación basada en ACT (Action Chunking with Transformers, arXiv 2304.13705) y entrenada con la librería LeRobot de Hugging Face. El modelo aprende a resolver la tarea "Push the T-shaped block onto the T-shaped target" a partir de demostraciones teleoperadas, consumiendo una imagen RGB de 96x96 píxeles y un vector de estado de 2 dimensiones, y produciendo una acción de 2 dimensiones (típicamente velocidad o posición cartesiana en un plano).
 
 El autor, raihan-js (Akteruzzaman Raihan Sikder, ingeniero de IA/ML en Bangladés), lo publica como parte de su proyecto DemoDoctor, cuyo objetivo es medir de forma controlada cuánto afecta la calidad de los datos de demostración al éxito de una política de imitación. Esta variante concreta está entrenada sobre la versión "cleaned" (limpia) del dataset `raihan-js/demodoctor-pusht-cleaned`, de modo que sirve como referencia o línea base frente a políticas entrenadas con datos corruptos y con datos autocorregidos.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Enfoque | Parametros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `raihan-js/demodoctor-act-cleaned-s1` | ACT (chunking de acciones con transformer + CVAE) | 51,66 M | no disponible | apache-2.0 | HuggingFace Hub, librería `lerobot` |
+| `raihan-js/demodoctor-act-cleaned-s1` | ACT (chunking de acciones con transformer + CVAE) | 51,66 M | no disponible | apache-2.0 | Hugging Face Hub, librería `lerobot` |
 | ACT original (Zhao et al., arXiv 2304.13705) | ACT | no disponible | no disponible | no disponible en la información proporcionada | paper y código de referencia |
 | Diffusion Policy | política generativa basada en difusión de acciones | no disponible | no disponible | no disponible en la información proporcionada | implementaciones públicas |
 | VQ-BeT | política jerárquica con cuantización vectorial de comportamiento | no disponible | no disponible | no disponible en la información proporcionada | implementaciones públicas |
@@ -93,12 +93,12 @@ La comparación cuantitativa de parámetros, contexto y rendimiento entre estas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raihan-js/demodoctor-act-cleaned-s1
+- Modelo en Hugging Face: https://huggingface.co/raihan-js/demodoctor-act-cleaned-s1
 - Dataset de entrenamiento: https://huggingface.co/datasets/raihan-js/demodoctor-pusht-cleaned
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=raihan-js/demodoctor-pusht-cleaned
 - Proyecto DemoDoctor (GitHub): https://github.com/raihan-js/demodoctor
 - Perfil de GitHub del autor: https://github.com/raihan-js/
-- Perfil de HuggingFace del autor: https://huggingface.co/raihan-js/datasets
+- Perfil de Hugging Face del autor: https://huggingface.co/raihan-js/datasets
 - Web personal del autor: https://raihan-js.github.io/
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Guía de ACT en LeRobot: https://huggingface.co/docs/lerobot/main/en/act

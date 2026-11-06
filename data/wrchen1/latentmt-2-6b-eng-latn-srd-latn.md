@@ -79,7 +79,7 @@ No se dispone de comparativas directas con otros adaptadores LoRA para el mismo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-srd-latn
+- Repositorio Hugging Face: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-srd-latn
 - Articulo arXiv: https://arxiv.org/pdf/2607.18618
 - Modelo base ByteDance/Ouro-2.6B-Thinking: https://huggingface.co/ByteDance/Ouro-2.6B-Thinking
 - Repositorio relacionado (mismo articulo, otro par de lenguas): https://huggingface.co/LatentMT/LatentMT-2.6B-eng-latn-szl-latn

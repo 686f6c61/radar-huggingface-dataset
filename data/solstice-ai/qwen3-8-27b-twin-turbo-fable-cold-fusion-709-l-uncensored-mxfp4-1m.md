@@ -6,7 +6,7 @@ El modelo Solstice-AI/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-
 
 El atractivo principal es la combinacion de tres elementos poco habituales en un mismo repositorio: una ventana de contexto declarada de 1M tokens activada por YaRN, cuantizacion de 4 bits con formato MXFP4 (microscaling de OCP) compatible con `compressed-tensors`, y una orientacion explicita a "uncensored". Los idiomas declarados son ingles y chino. El modelo tiene 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de una publicacion sin validacion externa ni datos de rendimiento publicados.
 
-Existe una discrepancia grave y no resuelta en los metadatos: el nombre indica 27B parametros, pero el recuento real de parametros en safetensors que reporta HuggingFace es de 460.730.096 (aproximadamente 0,46B) y el repositorio ocupa 1,0 GB. Ambas cifras son incompatibles entre si. Esta ficha recoge el dato tal como aparece y senala la contradiccion en lugar de resolverla por inferencia.
+Existe una discrepancia grave y no resuelta en los metadatos: el nombre indica 27B parametros, pero el recuento real de parametros en safetensors que reporta Hugging Face es de 460.730.096 (aproximadamente 0,46B) y el repositorio ocupa 1,0 GB. Ambas cifras son incompatibles entre si. Esta ficha recoge el dato tal como aparece y senala la contradiccion en lugar de resolverla por inferencia.
 
 ## Especificaciones tecnicas
 
@@ -71,8 +71,8 @@ No se dispone de datos verificados de modelos comparables dentro de la informaci
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-MXFP4-1M (Solstice-AI) | Declarados: 460,7M; el nombre indica 27B | 1.048.576 tokens (YaRN) | MXFP4 (compressed-tensors), GGUF | Apache 2.0 | Publicado en HuggingFace, 0 descargas |
-| Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored (DavidAU) | No disponible | No disponible | No disponible (se asume mayor precision) | No disponible | Publicado en HuggingFace |
+| Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-MXFP4-1M (Solstice-AI) | Declarados: 460,7M; el nombre indica 27B | 1.048.576 tokens (YaRN) | MXFP4 (compressed-tensors), GGUF | Apache 2.0 | Publicado en Hugging Face, 0 descargas |
+| Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored (DavidAU) | No disponible | No disponible | No disponible (se asume mayor precision) | No disponible | Publicado en Hugging Face |
 | Alternativas equivalentes de la misma categoria | No disponible | No disponibre | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de datos verificados de modelos comparables dentro de la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-MXFP4-1M
+- Modelo en Hugging Face: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-MXFP4-1M
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
 - Perfil del autor del merge: https://huggingface.co/DavidAU
 - Perfil del autor del empaquetado: https://huggingface.co/Solstice-AI

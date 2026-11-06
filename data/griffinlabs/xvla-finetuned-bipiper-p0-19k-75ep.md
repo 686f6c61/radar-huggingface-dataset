@@ -44,7 +44,7 @@ No se dispone de información detallada sobre el número de tokens de entrenamie
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye métricas de evaluación, y la web de Griffin Labs no detalla cifras de rendimiento. El paper de X-VLA reporta evaluaciones en tareas de manipulación, pero no se dispone de esos datos en la información proporcionada.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye métricas de evaluación, y la web de Griffin Labs no detalla cifras de rendimiento. El paper de X-VLA reporta evaluaciones en tareas de manipulación, pero no se dispone de esos datos en la información proporcionada.
 
 ## Requisitos de hardware
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/griffinlabs/xvla-finetuned-bipiper-p0-19k-75ep
+- Hugging Face: https://huggingface.co/griffinlabs/xvla-finetuned-bipiper-p0-19k-75ep
 - Griffin Labs: https://griffinlabs.ai/
 - Paper X-VLA: https://arxiv.org/abs/2510.10274
 - Repositorio GitHub X-VLA: https://github.com/yqi19/XVLA

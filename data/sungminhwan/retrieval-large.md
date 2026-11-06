@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sungminhwan/retrieval-large` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada de una arquitectura tipo Flamingo orientada a tareas de recuperación (retrieval). Lo publica el usuario sungminhwan bajo licencia MIT. No se trata de un modelo entrenado ni de un release listo para producción: la propia model card lo describe explícitamente como una configuración "base" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados. El checkpoint `model.safetensors` es una inicialización válida para esas pruebas, no un modelo con pesos entrenados.
+`sungminhwan/retrieval-large` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada de una arquitectura tipo Flamingo orientada a tareas de recuperación (retrieval). Lo publica el usuario sungminhwan bajo licencia MIT. No se trata de un modelo entrenado ni de un release listo para producción: la propia model card lo describe explícitamente como una configuración "base" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados. El checkpoint `model.safetensors` es una inicialización válida para esas pruebas, no un modelo con pesos entrenados.
 
 La arquitectura declarada es Flamingo, con atención dilatada, fusión mediante descomposición de Tucker, activación swish y normalización LayerNorm. La escala indicada es "base". Los metadatos de safetensors registran 49.600 parámetros totales, un orden de magnitud muy alejado de los modelos multimodales de referencia, lo que confirma que se trata de un andamiaje de código y no de un modelo desplegable. No se declara ningún idioma soportado, ninguna longitud de contexto y ninguna puntuación de benchmark.
 
@@ -80,7 +80,7 @@ No existe un modelo directamente comparable: la escala de 49.600 parámetros y l
 | sungminhwan/retrieval-large | 49.600 | no disponible | Sí (inicialización sin entrenar) | MIT | Implementación personalizada orientada a retrieval |
 | Flamingo (DeepMind) | ~80.000 millones | no disponible | No | no disponible | Referencia original de la arquitectura; sin release público de pesos |
 | OpenFlamingo (LAION) | variantes de 3.000 a 9.000 millones | no disponible | Sí | MIT | Reproducción abierta de Flamingo, entrenada y evaluada |
-| IDEFICS (HuggingFace) | 8.000 y 80.000 millones | no disponible | Sí | no disponible | Modelo multimodal abierto inspirado en Flamingo |
+| IDEFICS (Hugging Face) | 8.000 y 80.000 millones | no disponible | Sí | no disponible | Modelo multimodal abierto inspirado en Flamingo |
 
 ## Limitaciones y advertencias
 
@@ -97,7 +97,7 @@ No existe un modelo directamente comparable: la escala de 49.600 parámetros y l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungminhwan/retrieval-large
+- Modelo en Hugging Face: https://huggingface.co/sungminhwan/retrieval-large
 - Retrieval-Augmented Generation for Large Language Models: A Survey: https://arxiv.org/pdf/2312.10997
 - Deploying Large Language Models with Retrieval Augmented Generation: https://arxiv.org/html/2411.11895v1
 - What is RAG? - Retrieval-Augmented Generation AI Explained (AWS): https://aws.amazon.com/what-is/retrieval-augmented-generation/

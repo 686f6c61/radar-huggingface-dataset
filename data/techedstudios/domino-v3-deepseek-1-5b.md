@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| DOMINO V3 (techedstudios) | 1.777.886.724 | No disponible | Apache 2.0 | HuggingFace, código personalizado | MicroGaps en capas 13 y 25; sin benchmarks publicados |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1.500 millones aprox. | 32.768 tokens (según model card del original) | MIT (según el modelo original) | HuggingFace, transformers estándar | Modelo base; benchmarks publicados por DeepSeek |
-| Qwen2.5-1.5B-Instruct | 1.500 millones aprox. | 32.768 tokens (según model card) | Apache 2.0 | HuggingFace, transformers, vLLM, llama.cpp | Amplio soporte de runtimes y cuantizaciones |
-| Llama 3.2 1B Instruct | 1.200 millones aprox. | 128.000 tokens (según model card) | Llama 3.2 Community License | HuggingFace, ecosistema amplio | Contexto largo y buen soporte multilingüe |
+| DOMINO V3 (techedstudios) | 1.777.886.724 | No disponible | Apache 2.0 | Hugging Face, código personalizado | MicroGaps en capas 13 y 25; sin benchmarks publicados |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1.500 millones aprox. | 32.768 tokens (según model card del original) | MIT (según el modelo original) | Hugging Face, transformers estándar | Modelo base; benchmarks publicados por DeepSeek |
+| Qwen2.5-1.5B-Instruct | 1.500 millones aprox. | 32.768 tokens (según model card) | Apache 2.0 | Hugging Face, transformers, vLLM, llama.cpp | Amplio soporte de runtimes y cuantizaciones |
+| Llama 3.2 1B Instruct | 1.200 millones aprox. | 128.000 tokens (según model card) | Llama 3.2 Community License | Hugging Face, ecosistema amplio | Contexto largo y buen soporte multilingüe |
 
 La comparación debe tomarse con cautela: los datos de contexto y licencia de los modelos alternativos provienen de sus respectivas model cards y no han sido verificados en esta ficha; para DOMINO V3, la ausencia de benchmarks impide afirmar superioridad o paridad frente al modelo base.
 
@@ -87,7 +87,7 @@ La comparación debe tomarse con cautela: los datos de contexto y licencia de lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/techedstudios/domino-v3-deepseek-1.5b
+- Modelo en Hugging Face: https://huggingface.co/techedstudios/domino-v3-deepseek-1.5b
 - Perfil del autor: https://huggingface.co/techedstudios
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Paper de DeepSeek-R1: no disponible en la información proporcionada

@@ -58,7 +58,7 @@ No se proporcionan benchmarks comparativos con otros modelos en la información 
 
 - VRAM estimada: al ser un adaptador LoRA sobre un modelo de 4B parámetros, la inferencia puede ejecutarse en GPUs consumer con al menos 8 GB de VRAM en cuantización de 4 bits, o 16 GB en precisión completa (FP16).
 - GPU recomendadas: NVIDIA RTX 3090/4090 para inferencia en FP16, o GPUs de menor capacidad con cuantización (por ejemplo, RTX 4060 con 8 GB para 4-bit).
-- Despliegue: compatible con frameworks que soporten LoRA y modelos de HuggingFace, como vLLM, llama.cpp, Ollama o TGI, aunque el formato de pesos safetensors y la naturaleza de LoRA requieren un servidor que aplique los adaptadores sobre la base.
+- Despliegue: compatible con frameworks que soporten LoRA y modelos de Hugging Face, como vLLM, llama.cpp, Ollama o TGI, aunque el formato de pesos safetensors y la naturaleza de LoRA requieren un servidor que aplique los adaptadores sobre la base.
 - Latencia: no disponible, pero al ser un modelo de 4B parámetros, la inferencia es relativamente rápida en GPUs modernas (típicamente < 50 tokens/s en una RTX 4090 con cuantización).
 
 ## Comparativa con modelos similares

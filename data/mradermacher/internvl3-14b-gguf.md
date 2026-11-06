@@ -25,7 +25,7 @@ La relevancia de esta ficha radica en que ofrece una via practica para desplegar
 
 InternVL3-14B sigue el patron de la familia InternVL: un codificador visual (vision encoder) acoplado a un modelo de lenguaje de gran escala mediante un proyector o conector. El modelo base fue entrenado por OpenGVLab sobre el dataset `OpenGVLab/MMPR-v1.2`, un corpus multimodal orientado a razonamiento perceptivo. La model card del repositorio cuantizado no detalla el numero exacto de tokens de entrenamiento, la composicion completa del dataset ni si se aplicaron fases de RLHF o DPO; esos datos corresponden a la documentacion del modelo original.
 
-La innovacion practica de este repositorio no esta en la arquitectura, sino en la cuantizacion: mradermacher aplica cuantizacion estatica (version 2, con `output_tensor_quantised: 1`) sobre los pesos convertidos desde HuggingFace. Se ofrecen variantes IQ (importancia-based) en el repositorio hermano `InternVL3-14B-i1-GGUF`, que suelen ofrecer mejor relacion calidad/tamano que las cuantizaciones K estandar de igual tamano. El componente visual se distribuye por separado como `mmproj` en Q8_0 (0,5 GB) o f16 (0,8 GB).
+La innovacion practica de este repositorio no esta en la arquitectura, sino en la cuantizacion: mradermacher aplica cuantizacion estatica (version 2, con `output_tensor_quantised: 1`) sobre los pesos convertidos desde Hugging Face. Se ofrecen variantes IQ (importancia-based) en el repositorio hermano `InternVL3-14B-i1-GGUF`, que suelen ofrecer mejor relacion calidad/tamano que las cuantizaciones K estandar de igual tamano. El componente visual se distribuye por separado como `mmproj` en Q8_0 (0,5 GB) o f16 (0,8 GB).
 
 ## Capacidades
 
@@ -94,7 +94,7 @@ La comparativa se limita a parametros, licencia y disponibilidad en GGUF, ya que
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizado): https://huggingface.co/mradermacher/InternVL3-14B-GGUF
+- Repositorio Hugging Face (cuantizado): https://huggingface.co/mradermacher/InternVL3-14B-GGUF
 - Modelo base original: https://huggingface.co/OpenGVLab/InternVL3-14B
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/InternVL3-14B-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#InternVL3-14B-GGUF

@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [HuggingFace: prithivMLmods/LightOnOCR-3-4B-MTP-Repacked](https://huggingface.co/prithivMLmods/LightOnOCR-3-4B-MTP-Repacked)
+- [Hugging Face: prithivMLmods/LightOnOCR-3-4B-MTP-Repacked](https://huggingface.co/prithivMLmods/LightOnOCR-3-4B-MTP-Repacked)
 - [Modelo base: lightonai/LightOnOCR-3-4B](https://huggingface.co/lightonai/LightOnOCR-3-4B)
 - [Carpeta GGUF del repositorio](https://huggingface.co/prithivMLmods/LightOnOCR-3-4B-MTP-Repacked/tree/main/GGUF)
 - [Perfil del autor: prithivMLmods](https://huggingface.co/prithivMLmods)

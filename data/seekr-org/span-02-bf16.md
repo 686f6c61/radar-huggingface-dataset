@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento entre est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/seekr-org/span-02-bf16
+- Repositorio Hugging Face: https://huggingface.co/seekr-org/span-02-bf16
 - Modelo original de Respan: https://huggingface.co/respanai/span-02
 - Modelo base de Google: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

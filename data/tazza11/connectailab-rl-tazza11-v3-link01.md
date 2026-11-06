@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-tazza11-v3-link01 | Adaptador LoRA sobre Qwen3.5-0.8B (0,8B base) | No disponible | Decisión discreta para robot simulado LINK-01 | Apache 2.0 | HuggingFace, 14 descargas |
-| Qwen/Qwen3.5-0.8B (modelo base) | 0,8B | No disponible | LLM generalista | Según el modelo base (no indicada aquí) | HuggingFace |
+| connectailab-rl-tazza11-v3-link01 | Adaptador LoRA sobre Qwen3.5-0.8B (0,8B base) | No disponible | Decisión discreta para robot simulado LINK-01 | Apache 2.0 | Hugging Face, 14 descargas |
+| Qwen/Qwen3.5-0.8B (modelo base) | 0,8B | No disponible | LLM generalista | Según el modelo base (no indicada aquí) | Hugging Face |
 | Política PPO "cerebro" (brain.json) | No disponible | No aplica | Política RL tabular/neuronal en simulador | No disponible | Incluida en el proyecto connect-tycoon |
 
 No se dispone de información sobre otros adaptadores o modelos de decisión comparables en la documentación proporcionada.
@@ -87,7 +87,7 @@ No se dispone de información sobre otros adaptadores o modelos de decisión com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tazza11/connectailab-rl-tazza11-v3-link01
+- Modelo en Hugging Face: https://huggingface.co/tazza11/connectailab-rl-tazza11-v3-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

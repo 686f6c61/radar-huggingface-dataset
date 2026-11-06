@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 ## Comparativa con modelos similares
 
-No disponible. No se han encontrado modelos comparables en la informacion proporcionada. El modelo es un caso unico de memorizacion de π, sin equivalentes directos en el ecosistema de HuggingFace.
+No disponible. No se han encontrado modelos comparables en la informacion proporcionada. El modelo es un caso unico de memorizacion de π, sin equivalentes directos en el ecosistema de Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -69,6 +69,6 @@ No disponible. No se han encontrado modelos comparables en la informacion propor
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/akaruineko/pi-predicter)
-- [Perfil de HuggingFace del autor](https://huggingface.co/akaruineko/models)
+- [Modelo en Hugging Face](https://huggingface.co/akaruineko/pi-predicter)
+- [Perfil de Hugging Face del autor](https://huggingface.co/akaruineko/models)
 - [Organizacion GitHub del autor](https://github.com/akaruineko-ai/.github)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_MolmoAct2_QuantilesFullRange_bs16_step3000` es un checkpoint de inferencia de politica robotica publicado con la libreria LeRobot (version 0.6.1). Se trata de un ajuste fino del modelo base MolmoAct2 (segun el tag `molmoact2` de la model card) sobre un unico conjunto de datos propio de demostraciones de robot, orientado a la tarea concreta de recogida y colocacion de cacahuetes (*peanut pick and place*). El autor es el usuario de HuggingFace `Dongkkka` y la politica esta pensada para control de manipulacion a partir de tres camaras y un vector de estado de 22 dimensiones.
+El modelo `Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_MolmoAct2_QuantilesFullRange_bs16_step3000` es un checkpoint de inferencia de politica robotica publicado con la libreria LeRobot (version 0.6.1). Se trata de un ajuste fino del modelo base MolmoAct2 (segun el tag `molmoact2` de la model card) sobre un unico conjunto de datos propio de demostraciones de robot, orientado a la tarea concreta de recogida y colocacion de cacahuetes (*peanut pick and place*). El autor es el usuario de Hugging Face `Dongkkka` y la politica esta pensada para control de manipulacion a partir de tres camaras y un vector de estado de 22 dimensiones.
 
 El problema que resuelve es acotado y practico: dada una observacion multimodal (imagenes de camara de cabeza y de ambas munecas, mas el estado del robot), predecir una secuencia de 10 acciones de 22 dimensiones que el brazo ejecuta para completar la tarea. El entrenamiento se realizo durante 3.000 pasos con tamano de lote 16 y consumio las 35 episodios completos del dataset `Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern` en la revision `05286a17a145234ed80870702f4d9757f00194c3`. El checkpoint ocupa 11,5 GB y contiene 5.591.928.368 parametros reales en formato safetensors.
 
@@ -83,7 +83,7 @@ No se dispone de datos verificados de los modelos alternativos dentro de la info
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (MolmoAct2, tarea *peanut pick and place*) | Politica VLA de manipulacion, ajuste fino sobre un dataset propio | 5,59 mil millones | no aplica (chunk de 10 acciones) | no disponible | Publico en HuggingFace, 0 descargas, 0 likes |
+| Este modelo (MolmoAct2, tarea *peanut pick and place*) | Politica VLA de manipulacion, ajuste fino sobre un dataset propio | 5,59 mil millones | no aplica (chunk de 10 acciones) | no disponible | Publico en Hugging Face, 0 descargas, 0 likes |
 | MolmoAct / MolmoAct2 (modelo base) | Familia VLA de manipulacion | no disponible en la informacion proporcionada | no disponible | no disponible | No verificado en esta busqueda |
 | Otras politicas del ecosistema LeRobot (por ejemplo, familias tipo pi0 o SmolVLA) | Politicas VLA de manipulacion | no disponible en la informacion proporcionada | no disponible | no disponible | No verificado en esta busqueda |
 
@@ -104,7 +104,7 @@ Criterio de comparacion cualitativo: frente a politicas genericas de manipulacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_MolmoAct2_QuantilesFullRange_bs16_step3000
+- Modelo en Hugging Face: https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_MolmoAct2_QuantilesFullRange_bs16_step3000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern (revision `05286a17a145234ed80870702f4d9757f00194c3`)
 - Libreria LeRobot: no se proporciona enlace en la informacion disponible.
 - Paper del modelo base MolmoAct2: no disponible en la informacion proporcionada.

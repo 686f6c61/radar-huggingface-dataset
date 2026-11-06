@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yacksweb001/nupe-orpheus-lora-v2` es un adaptador LoRA publicado en HuggingFace por el usuario `yacksweb001`, entrenado sobre el modelo base `unsloth/orpheus-3b-0.1-ft-unsloth-bnb-4bit`. Se distribuye con la librería PEFT (versión 0.20.0) en formato safetensors y está etiquetado como `text-generation` y `conversational`. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo de pesos.
+`yacksweb001/nupe-orpheus-lora-v2` es un adaptador LoRA publicado en Hugging Face por el usuario `yacksweb001`, entrenado sobre el modelo base `unsloth/orpheus-3b-0.1-ft-unsloth-bnb-4bit`. Se distribuye con la librería PEFT (versión 0.20.0) en formato safetensors y está etiquetado como `text-generation` y `conversational`. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo de pesos.
 
 El modelo base referenciado pertenece a la familia Orpheus en su variante de 3.000 millones de parámetros, en una versión afinada (`-ft`) y cuantizada a 4 bits por Unsloth (`bnb-4bit`), según la propia nomenclatura del identificador. Esto implica que el adaptador no es autónomo: para utilizarlo hay que cargar primero el modelo base y después aplicar los pesos LoRA.
 
@@ -69,9 +69,9 @@ Estimaciones orientativas a partir del tamaño declarado (3B en 4 bits), no conf
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| yacksweb001/nupe-orpheus-lora-v2 | Adaptador LoRA sobre base de 3B | No disponible | No disponible | HuggingFace, 0 descargas | Sin model card sustantiva |
-| unsloth/orpheus-3b-0.1-ft-unsloth-bnb-4bit (base) | 3B (4 bits) | No disponible | No disponible en la información consultada | HuggingFace | Modelo base sobre el que se aplica el adaptador |
-| Otros adaptadores LoRA sobre Orpheus 3B | ~3B | No disponible | Variable | HuggingFace | No se dispone de datos comparativos verificables |
+| yacksweb001/nupe-orpheus-lora-v2 | Adaptador LoRA sobre base de 3B | No disponible | No disponible | Hugging Face, 0 descargas | Sin model card sustantiva |
+| unsloth/orpheus-3b-0.1-ft-unsloth-bnb-4bit (base) | 3B (4 bits) | No disponible | No disponible en la información consultada | Hugging Face | Modelo base sobre el que se aplica el adaptador |
+| Otros adaptadores LoRA sobre Orpheus 3B | ~3B | No disponible | Variable | Hugging Face | No se dispone de datos comparativos verificables |
 
 No se dispone de datos de rendimiento comparables entre estas opciones en la información proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparables entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yacksweb001/nupe-orpheus-lora-v2
+- Repositorio Hugging Face: https://huggingface.co/yacksweb001/nupe-orpheus-lora-v2
 - Modelo base: https://huggingface.co/unsloth/orpheus-3b-0.1-ft-unsloth-bnb-4bit
 - Librería PEFT: https://github.com/huggingface/peft
 - Referencia citada en la plantilla de la model card (Machine Learning Impact calculator): https://mlco2.github.io/impact y https://arxiv.org/abs/1910.09700

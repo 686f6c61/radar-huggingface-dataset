@@ -81,12 +81,12 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kaousheik/tempo-rl-singletask-music
+- Modelo en Hugging Face: https://huggingface.co/Kaousheik/tempo-rl-singletask-music
 - Dataset TEMPO: https://huggingface.co/datasets/Kaousheik/tempo
 - Modelo base Audio Flamingo 3: https://huggingface.co/nvidia/audio-flamingo-3
 - Pagina personal del autor: https://kaousheik-26.github.io/
 - CV del autor (menciona el paper TEMPO): https://kaousheik-26.github.io/assets/kaousheik_CV.pdf
-- Perfil de HuggingFace del autor: https://huggingface.co/Kaousheik
+- Perfil de Hugging Face del autor: https://huggingface.co/Kaousheik
 - Perfil de Google Scholar: https://scholar.google.com/citations?user=Yc8bSDIAAAAJ&hl=en
 
 Nota: el paper TEMPO se menciona como "Under Review" en el CV del autor; no se ha publicado en acceso abierto.</think>## Resumen
@@ -172,12 +172,12 @@ No se han publicado comparaciones con otros modelos en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kaousheik/tempo-rl-singletask-music
+- Modelo en Hugging Face: https://huggingface.co/Kaousheik/tempo-rl-singletask-music
 - Dataset TEMPO: https://huggingface.co/datasets/Kaousheik/tempo
 - Modelo base Audio Flamingo 3: https://huggingface.co/nvidia/audio-flamingo-3
 - Pagina personal del autor: https://kaousheik-26.github.io/
 - CV del autor (menciona el paper TEMPO): https://kaousheik-26.github.io/assets/kaousheik_CV.pdf
-- Perfil de HuggingFace del autor: https://huggingface.co/Kaousheik
+- Perfil de Hugging Face del autor: https://huggingface.co/Kaousheik
 - Perfil de Google Scholar: https://scholar.google.com/citations?user=Yc8bSDIAAAAJ&hl=en
 
 Nota: el paper TEMPO se menciona como "Under Review" en el CV del autor; no se ha publicado un acceso abierto.

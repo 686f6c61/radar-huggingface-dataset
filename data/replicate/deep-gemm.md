@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`replicate/deep-gemm` es un repositorio publicado en HuggingFace bajo el identificador de autor `replicate` que, segun los metadatos y la propia model card, no contiene un modelo de red neuronal sino un paquete de kernels para la libreria [`kernels`](https://github.com/huggingface/kernels) de HuggingFace. La etiqueta `library_name: kernels` y los tags (`kernels`, `license:mit`, `region:us`) confirman esta naturaleza: se trata de un artefacto de codigo compilado para ejecucion en GPU, no de pesos entrenados.
+`replicate/deep-gemm` es un repositorio publicado en Hugging Face bajo el identificador de autor `replicate` que, segun los metadatos y la propia model card, no contiene un modelo de red neuronal sino un paquete de kernels para la libreria [`kernels`](https://github.com/huggingface/kernels) de Hugging Face. La etiqueta `library_name: kernels` y los tags (`kernels`, `license:mit`, `region:us`) confirman esta naturaleza: se trata de un artefacto de codigo compilado para ejecucion en GPU, no de pesos entrenados.
 
 La model card es autogenerada y reproduce la de `kernels-community/deep-gemm`, lo que sugiere que este repositorio es una copia o espejo de dicha publicacion original bajo la cuenta de Replicate. El repositorio ocupa 0,1 GB, tiene 0 descargas y 0 likes, y fue creado y actualizado el 2026-09-15 con apenas un segundo de diferencia, lo que indica una publicacion automatizada sin curacion posterior.
 
-Su relevancia es instrumental: forma parte del ecosistema de kernels de HuggingFace, cuya organizacion esta migrando los repositorios de tipo "model" que contenian kernels a un formato nuevo. La model card advierte de que a partir del 13 de septiembre de 2026 esos repositorios de tipo "model" se eliminaran, por lo que cualquier dependencia debe apuntar a versiones recientes de la libreria `kernels`.
+Su relevancia es instrumental: forma parte del ecosistema de kernels de Hugging Face, cuya organizacion esta migrando los repositorios de tipo "model" que contenian kernels a un formato nuevo. La model card advierte de que a partir del 13 de septiembre de 2026 esos repositorios de tipo "model" se eliminaran, por lo que cualquier dependencia debe apuntar a versiones recientes de la libreria `kernels`.
 
 ## Especificaciones tecnicas
 
@@ -20,7 +20,7 @@ Su relevancia es instrumental: forma parte del ecosistema de kernels de HuggingF
 | Idiomas soportados | no disponible (no aplica) |
 | Licencia | MIT |
 | Formato de pesos | no disponible (no hay pesos; el repositorio contiene binarios de kernels y metadatos para la libreria `kernels`) |
-| Tipo de artefacto | paquete de kernels para la libreria `kernels` de HuggingFace |
+| Tipo de artefacto | paquete de kernels para la libreria `kernels` de Hugging Face |
 | Repositorio de origen | `kernels-community/deep-gemm` (segun la propia model card) |
 | Tamano del repositorio | 0,1 GB |
 | Descargas | 0 |
@@ -37,7 +37,7 @@ La unica informacion tecnica confirmada es que el paquete se construyo para ser 
 ## Capacidades
 
 - No genera texto, no razona y no produce codigo: es un componente de computacion numerica de bajo nivel, no un modelo de lenguaje.
-- Expone kernels invocables mediante la libreria `kernels` de HuggingFace, presumiblemente orientados a multiplicacion de matrices (GEMM) por el nombre del repositorio, extremo no confirmado en la informacion disponible.
+- Expone kernels invocables mediante la libreria `kernels` de Hugging Face, presumiblemente orientados a multiplicacion de matrices (GEMM) por el nombre del repositorio, extremo no confirmado en la informacion disponible.
 - La lista de funciones exportadas no esta disponible en la model card.
 - No dispone de ejemplo de uso publicado ("Usage example not available").
 - No dispone de capacidades de tool calling, function calling, agentes ni razonamiento multi-paso.
@@ -52,7 +52,7 @@ Estos escenarios son aplicaciones tipicas de un paquete de kernels GEMM; su viab
 - Entrenamiento y ajuste fino de modelos: en pipelines de fine-tuning con PyTorch, el kernel puede emplearse en las capas lineales para reducir el tiempo por paso, sujeto a que la firma de la funcion y el dtype sean compatibles.
 - Optimizacion de modelos cuantizados: si el kernel opera sobre tipos de baja precision, encaja en flujos de cuantizacion donde el cuello de botella es la multiplicacion de matrices; la informacion disponible no confirma que tipos soporta.
 - Investigacion en eficiencia computacional: un grupo que compara implementaciones de GEMM puede usar este paquete como una de las variantes a medir en su banco de pruebas, dado que se distribuye como dependencia reproducible a traves del Hub.
-- Integracion en pipelines de CI/CD de codigo GPU: al publicarse como version concreta en HuggingFace, permite fijar la dependencia por revision y verificar que la compilacion e instalacion funcionan en el entorno de integracion continua.
+- Integracion en pipelines de CI/CD de codigo GPU: al publicarse como version concreta en Hugging Face, permite fijar la dependencia por revision y verificar que la compilacion e instalacion funcionan en el entorno de integracion continua.
 - Reproducibilidad de experimentos: enlazar el artefacto por su identificador y revision facilita que terceros reconstruyan el mismo entorno de ejecucion, algo relevante cuando el rendimiento depende del kernel empleado.
 - Despliegue en servicios gestionados tipo Replicate: el repositorio vive bajo la cuenta de Replicate, por lo que resultaria natural su uso como dependencia en imagenes de despliegue de esa plataforma, aunque no hay documentacion publicada que lo confirme.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: no disponible. Al no ser un modelo con pesos, no existe un requisito de memoria asociado al artefacto en si; el consumo dependera del programa que lo invoque.
 - GPU recomendadas: no disponible. No se especifica en la informacion proporcionada que arquitecturas de GPU soporta el kernel ni si requiere acelerador NVIDIA, AMD o de otro tipo.
 - Compatibilidad con GPU de consumo: no disponible. No puede confirmarse si funciona en tarjetas como la RTX 4090 o similares.
-- Opciones de despliegue: la via documentada es la libreria `kernels` de HuggingFace. No hay evidencia de soporte para vLLM, llama.cpp, Ollama o TGI, dado que estos requieren pesos de modelo y no un paquete de kernels suelto.
+- Opciones de despliegue: la via documentada es la libreria `kernels` de Hugging Face. No hay evidencia de soporte para vLLM, llama.cpp, Ollama o TGI, dado que estos requieren pesos de modelo y no un paquete de kernels suelto.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -93,8 +93,8 @@ No se dispone de datos de rendimiento, tamano de binario ni funciones exportadas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/deep-gemm
-- Libreria `kernels` de HuggingFace: https://github.com/huggingface/kernels
+- Repositorio en Hugging Face: https://huggingface.co/replicate/deep-gemm
+- Libreria `kernels` de Hugging Face: https://github.com/huggingface/kernels
 - Incidencias sobre la libreria `kernels`: https://github.com/huggingface/kernels/issues/new
 - Sitio de Replicate: https://replicate.com/
 - Explorador de modelos de Replicate: https://replicate.com/explore

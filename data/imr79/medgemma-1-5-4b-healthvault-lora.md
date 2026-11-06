@@ -75,7 +75,7 @@ La comparativa muestra que el adaptador es una opcion ligera sobre un modelo mul
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Imr79/medgemma-1.5-4b-healthvault-lora
+- Repositorio Hugging Face: https://huggingface.co/Imr79/medgemma-1.5-4b-healthvault-lora
 - MedGemma 1.5 (Google DeepMind): https://deepmind.google/models/gemma/medgemma/
 - Informe tecnico de MedGemma 1.5 (arXiv): https://arxiv.org/abs/2604.05081
 - Model card oficial de MedGemma 1.5 (Google for Developers): https://developers.google.com/health-ai-developer-foundations/medgemma/model-card

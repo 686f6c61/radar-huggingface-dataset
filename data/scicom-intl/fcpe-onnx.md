@@ -6,7 +6,7 @@ FCPE (Fast Context-based Pitch Estimation) es un modelo de estimación de frecue
 
 Con 10,8 millones de parámetros y un tamaño de 47,8 MB, el modelo está pensado para despliegue en CPU con onnxruntime, sin dependencias de PyTorch ni de librosa. La exportación se validó frame a frame contra la pipeline original de PyTorch, con una diferencia máxima de saliencia de 3,84e-06 y una concordancia de voicing del 100 %. Su relevancia actual radica en que ofrece estimación de F0 de alta calidad (FFE de 2,77 % en condiciones limpias sobre PTDB-TUG) con un coste computacional muy bajo (RTF de 0,0068 con 4 hilos).
 
-La ficha se basa exclusivamente en la model card y los metadatos disponibles en HuggingFace; los datos no publicados se indican como no disponibles.
+La ficha se basa exclusivamente en la model card y los metadatos disponibles en Hugging Face; los datos no publicados se indican como no disponibles.
 
 ## Especificaciones técnicas
 
@@ -98,11 +98,11 @@ Comparativa de la familia de modelos de estimación de pitch empaquetados en ONN
 
 | Modelo | Parámetros | Formato | Licencia | FFE limpio (%) | Disponibilidad |
 |---|---|---|---|---|---|
-| FCPE (este) | 10,8 M | ONNX | MIT | 2,77 | HuggingFace (Scicom-intl/fcpe-onnx) |
-| RMVPE | No disponible | ONNX | No disponible | 3,09 | HuggingFace (Scicom-intl/rmvpe-onnx) |
-| CREPE full | No disponible | ONNX | No disponible | 6,43 | HuggingFace (Scicom-intl/crepe-onnx) |
-| CREPE tiny | No disponible | ONNX | No disponible | 6,33 | HuggingFace (Scicom-intl/crepe-onnx) |
-| PESTO | No disponible | ONNX | No disponible | 5,58 | HuggingFace (Scicom-intl/pesto-onnx) |
+| FCPE (este) | 10,8 M | ONNX | MIT | 2,77 | Hugging Face (Scicom-intl/fcpe-onnx) |
+| RMVPE | No disponible | ONNX | No disponible | 3,09 | Hugging Face (Scicom-intl/rmvpe-onnx) |
+| CREPE full | No disponible | ONNX | No disponible | 6,43 | Hugging Face (Scicom-intl/crepe-onnx) |
+| CREPE tiny | No disponible | ONNX | No disponible | 6,33 | Hugging Face (Scicom-intl/crepe-onnx) |
+| PESTO | No disponible | ONNX | No disponible | 5,58 | Hugging Face (Scicom-intl/pesto-onnx) |
 | pyin (librosa 0.11) | No aplica (algoritmo) | Biblioteca Python | BSD (librosa) | 7,72 | PyPI |
 
 FCPE obtiene el mejor FFE en cuatro de las cinco condiciones evaluadas, cediendo solo ante RMVPE en ruido rosa a 0 dB (4,78 frente a 4,47). No se dispone de datos de parámetros, contexto ni licencia de los modelos comparables en la información proporcionada.
@@ -122,7 +122,7 @@ FCPE obtiene el mejor FFE en cuatro de las cinco condiciones evaluadas, cediendo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Scicom-intl/fcpe-onnx
+- Modelo en Hugging Face: https://huggingface.co/Scicom-intl/fcpe-onnx
 - Repositorio de la familia ONNX: https://huggingface.co/Scicom-intl/rmvpe-onnx
 - Repositorio de la familia ONNX: https://huggingface.co/Scicom-intl/crepe-onnx
 - Repositorio de la familia ONNX: https://huggingface.co/Scicom-intl/pesto-onnx

@@ -83,7 +83,7 @@ Intervenciones evaluadas:
 - VRAM estimada para inferencia: inferior a 1 GB en fp32 (29,5M de parámetros ≈ 118 MB de pesos), más overhead de activaciones y contexto; cabe holgadamente en cualquier GPU de consumo.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; el autor entrenó en un Apple M4 Pro vía MPS. Una RTX 4090, A100 o H100 están sobredimensionadas para este modelo.
 - Cabe en GPU de consumo: sí, en cualquier tarjeta moderna (GTX 1650, RTX 3060, RTX 4090) e incluso en CPU.
-- Opciones de despliegue: al ser una arquitectura personalizada, `AutoModel` de HuggingFace no lo carga. Es necesario usar `model.py` y `config.py` del repositorio junto con el checkpoint `.pt`. No hay soporte publicado para vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: al ser una arquitectura personalizada, `AutoModel` de Hugging Face no lo carga. Es necesario usar `model.py` y `config.py` del repositorio junto con el checkpoint `.pt`. No hay soporte publicado para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: el autor reporta ~30.000 tokens/segundo durante el entrenamiento en M4 Pro (MPS); no se publican cifras de inferencia.
 
 ## Comparativa con modelos similares
@@ -111,4 +111,4 @@ La comparación con Qwen2.5-Coder-0.5B es la única que aporta el autor, y la di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanjaimurugan/py-alpha-01
+- Modelo en Hugging Face: https://huggingface.co/sanjaimurugan/py-alpha-01

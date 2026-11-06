@@ -79,7 +79,7 @@ Nota: los datos de contexto de los modelos comparados provienen de sus respectiv
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aneforge/e5-small-v2
+- Repositorio Hugging Face: https://huggingface.co/aneforge/e5-small-v2
 - Modelo original: https://huggingface.co/intfloat/e5-small-v2
 - Documentacion de ANEForge: https://aneforge.readthedocs.io/en/
 - Paper de ANEForge: https://arxiv.org/abs/2606.17090

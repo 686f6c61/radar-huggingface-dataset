@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / alcance | Idiomas | Emoción | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| voicetut-egyptian-emotion | 612,6 M | TTS, frase a frase (longitud no documentada) | Árabe egipcio | 20 etiquetas + modificadores | Apache 2.0 | HuggingFace, 0 descargas |
-| VoiceTut-TTS (modelo base) | no disponible en la información proporcionada | TTS | Árabe egipcio | no documentado | no disponible en la información proporcionada | HuggingFace |
+| voicetut-egyptian-emotion | 612,6 M | TTS, frase a frase (longitud no documentada) | Árabe egipcio | 20 etiquetas + modificadores | Apache 2.0 | Hugging Face, 0 descargas |
+| VoiceTut-TTS (modelo base) | no disponible en la información proporcionada | TTS | Árabe egipcio | no documentado | no disponible en la información proporcionada | Hugging Face |
 | Alternativas de TTS multilingüe con soporte de árabe | no disponible | TTS | varios | control limitado o nulo | varía | no verificado |
 
 No se dispone de datos verificados de benchmarks ni de especificaciones completas de modelos alternativos en la información proporcionada, por lo que no se puede establecer una comparación cuantitativa fiable. La comparación cualitativa más sólida es con su propio modelo base: el fine-tuning añade control emocional sobre una única voz y mantiene el mismo tamaño.
@@ -103,7 +103,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones completa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masterofaudio2077/voicetut-egyptian-emotion
+- Modelo en Hugging Face: https://huggingface.co/masterofaudio2077/voicetut-egyptian-emotion
 - Dataset de entrenamiento: https://huggingface.co/datasets/masterofaudio2077/egyptian-emotion-tts
 - Modelo base VoiceTut-TTS: https://huggingface.co/mohammedaly22/VoiceTut-TTS
 - Repositorio OmniVoice (k2-fsa): https://github.com/k2-fsa/OmniVoice

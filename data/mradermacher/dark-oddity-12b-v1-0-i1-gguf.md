@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Dark-Oddity-12B-v1.0 es un modelo de lenguaje de 12 000 millones de parametros, distribuido originalmente por el usuario ReadyArt en HuggingFace y posteriormente cuantizado al formato GGUF por mradermacher con pesos imatrix. Esta ficha cubre exclusivamente la version cuantizada `mradermacher/Dark-Oddity-12B-v1.0-i1-GGUF`, que incluye un amplio abanico de cuantizaciones que van desde IQ1_S hasta Q6_K, lo que permite desplegarlo en hardware muy diverso, desde CPU con poca RAM hasta GPUs de gama alta.
+Dark-Oddity-12B-v1.0 es un modelo de lenguaje de 12 000 millones de parametros, distribuido originalmente por el usuario ReadyArt en Hugging Face y posteriormente cuantizado al formato GGUF por mradermacher con pesos imatrix. Esta ficha cubre exclusivamente la version cuantizada `mradermacher/Dark-Oddity-12B-v1.0-i1-GGUF`, que incluye un amplio abanico de cuantizaciones que van desde IQ1_S hasta Q6_K, lo que permite desplegarlo en hardware muy diverso, desde CPU con poca RAM hasta GPUs de gama alta.
 
-El modelo se presenta como orientado a conversacion, segun las etiquetas de HuggingFace, aunque no se dispone de informacion detallada sobre su arquitectura interna, dataset de entrenamiento o licencia. La relevancia de esta ficha radica en que el formato GGUF con cuantizacion imatrix permite ejecutar el modelo en local con herramientas como llama.cpp u Ollama, algo especialmente util para desarrolladores que buscan alternativas de IA generativa autocontenidas.
+El modelo se presenta como orientado a conversacion, segun las etiquetas de Hugging Face, aunque no se dispone de informacion detallada sobre su arquitectura interna, dataset de entrenamiento o licencia. La relevancia de esta ficha radica en que el formato GGUF con cuantizacion imatrix permite ejecutar el modelo en local con herramientas como llama.cpp u Ollama, algo especialmente util para desarrolladores que buscan alternativas de IA generativa autocontenidas.
 
 La informacion disponible es limitada: no se han publicado benchmarks, detalles de entrenamiento ni especificaciones de arquitectura en la model card. Los datos tecnicos que se indican a continuacion provienen de los metadatos del repositorio y de la inspeccion del propio archivo de pesos.
 

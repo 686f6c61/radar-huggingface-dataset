@@ -59,10 +59,10 @@ No se dispone de datos de benchmarks para comparar con alternativas. Sin embargo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MergekitCloud/mergekit-46 | 8.0B | no disponible | no disponible | HuggingFace |
-| Llama-3.1-8B-Instruct | 8.0B | 128K | Llama 3.1 Community License | HuggingFace |
-| ArliAI/Llama-3.1-8B-ArliAI-RPMax-v1.3 | 8.0B | 128K | no disponible | HuggingFace |
-| Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2 | 8.0B | 128K | no disponible | HuggingFace |
+| MergekitCloud/mergekit-46 | 8.0B | no disponible | no disponible | Hugging Face |
+| Llama-3.1-8B-Instruct | 8.0B | 128K | Llama 3.1 Community License | Hugging Face |
+| ArliAI/Llama-3.1-8B-ArliAI-RPMax-v1.3 | 8.0B | 128K | no disponible | Hugging Face |
+| Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2 | 8.0B | 128K | no disponible | Hugging Face |
 
 La comparativa directa no es posible por falta de datos de rendimiento. El modelo es una fusión de estos modelos, por lo que sus capacidades son una mezcla de las de los componentes.
 
@@ -77,7 +77,7 @@ La comparativa directa no es posible por falta de datos de rendimiento. El model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MergekitCloud/mergekit-46
+- Modelo en Hugging Face: https://huggingface.co/MergekitCloud/mergekit-46
 - Repositorio de modelos base:
   - [Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2](https://huggingface.co/Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2)
   - [Undi95/Llama3-Unholy-8B-OAS](https://huggingface.co/Undi95/Llama3-Unholy-8B-OAS)

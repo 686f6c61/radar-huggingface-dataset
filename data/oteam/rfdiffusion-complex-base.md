@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Enfoque | Contexto/representación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/rfdiffusion-complex-base | 60,88 M | Difusión SE(3) para complejos y binders | MSA 256, pares 128, 50 pasos | AGPL-3.0 | HuggingFace (este repo) |
-| oteam/rfdiffusion-base | 59,879 M | Difusión SE(3) para generación *de novo* y motif scaffolding | MSA 256, pares 128, 50 pasos | AGPL-3.0 | HuggingFace |
-| oteam/rfdiffusion-complex-fold-base | 59,880 M | Difusión SE(3) condicionada por fold para complejos | MSA 256, pares 128, 50 pasos | AGPL-3.0 | HuggingFace |
+| oteam/rfdiffusion-complex-base | 60,88 M | Difusión SE(3) para complejos y binders | MSA 256, pares 128, 50 pasos | AGPL-3.0 | Hugging Face (este repo) |
+| oteam/rfdiffusion-base | 59,879 M | Difusión SE(3) para generación *de novo* y motif scaffolding | MSA 256, pares 128, 50 pasos | AGPL-3.0 | Hugging Face |
+| oteam/rfdiffusion-complex-fold-base | 59,880 M | Difusión SE(3) condicionada por fold para complejos | MSA 256, pares 128, 50 pasos | AGPL-3.0 | Hugging Face |
 | RosettaCommons/RFdiffusion (oficial) | No disponible en la información | Implementación original de referencia | No disponible | No disponible en la información | GitHub |
 
 Las tres variantes de OFoldX comparten arquitectura y número de parámetros; la diferencia radica en el checkpoint y el tipo de condicionamiento (complejo/binder frente a generación libre o condicionada por fold). La implementación oficial de RosettaCommons es la referencia canónica, pero no se dispone de sus especificaciones en la información proporcionada.
@@ -85,7 +85,7 @@ Las tres variantes de OFoldX comparten arquitectura y número de parámetros; la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/rfdiffusion-complex-base
+- Modelo en Hugging Face: https://huggingface.co/oteam/rfdiffusion-complex-base
 - Variante base: https://huggingface.co/oteam/rfdiffusion-base
 - Variante base epoch8: https://huggingface.co/oteam/rfdiffusion-base-epoch8
 - Variante complex-beta: https://huggingface.co/oteam/rfdiffusion-complex-beta

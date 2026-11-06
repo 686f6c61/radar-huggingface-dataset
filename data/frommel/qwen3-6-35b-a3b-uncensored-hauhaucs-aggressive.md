@@ -89,13 +89,13 @@ La comparacion directa mas relevante es con el modelo base Qwen3.6-35B-A3B, del 
 - Idiomas: el soporte declarado se centra en ingles y chino; el rendimiento en castellano no esta documentado y puede ser inferior.
 - Sesgos: no se documentan sesgos especificos, pero al eliminar la alineacion se pueden amplificar sesgos presentes en el modelo base.
 - Licencia Apache 2.0 permite uso comercial, pero el uso de un modelo descensurado conlleva responsabilidad legal y etica sobre el contenido generado; verificar cumplimiento normativo (por ejemplo, AI Act en la UE).
-- El widget de compatibilidad de hardware de HuggingFace no reconoce las cuantizaciones K_P y puede mostrar menos archivos de los existentes; hay que revisar "Files and versions".
+- El widget de compatibilidad de hardware de Hugging Face no reconoce las cuantizaciones K_P y puede mostrar menos archivos de los existentes; hay que revisar "Files and versions".
 - Requiere el archivo mmproj para soporte de vision; sin el, el modelo funciona solo como texto.
 - Para preservar el modo thinking se recomienda mantener al menos 128K de contexto, lo que incrementa los requisitos de VRAM.
 
 ## Enlaces
 
-- HuggingFace (repo de Frommel): https://huggingface.co/Frommel/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
+- Hugging Face (repo de Frommel): https://huggingface.co/Frommel/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Discord del autor: https://discord.gg/SZ5vacTXYf
 - Repo original de HauhauCS (referenciado en la model card): https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gemma-4-26B-A4B-it-abliterix-oQ8 es una cuantizacion de 8 bits del modelo Gemma 4 26B-A4B-it, publicada por el usuario iOvermind en HuggingFace. Se trata de una variante derivada del modelo base de Google (familia Gemma 4), con aproximadamente 25.800 millones de parametros totales y un esquema de nombres que sugiere una arquitectura Mixture of Experts (MoE) con unos 4.000 millones de parametros activos por token, aunque esta informacion no se confirma en la documentacion disponible. El sufijo "abliterix" indica que el modelo ha sido sometido a un proceso de abliteracion, una tecnica de modificacion de pesos que elimina la direccion de rechazo en el espacio de activaciones para reducir las negativas del modelo ante ciertas peticiones.
+gemma-4-26B-A4B-it-abliterix-oQ8 es una cuantizacion de 8 bits del modelo Gemma 4 26B-A4B-it, publicada por el usuario iOvermind en Hugging Face. Se trata de una variante derivada del modelo base de Google (familia Gemma 4), con aproximadamente 25.800 millones de parametros totales y un esquema de nombres que sugiere una arquitectura Mixture of Experts (MoE) con unos 4.000 millones de parametros activos por token, aunque esta informacion no se confirma en la documentacion disponible. El sufijo "abliterix" indica que el modelo ha sido sometido a un proceso de abliteracion, una tecnica de modificacion de pesos que elimina la direccion de rechazo en el espacio de activaciones para reducir las negativas del modelo ante ciertas peticiones.
 
 La relevancia de esta publicacion es doble. Por un lado, demuestra el flujo de trabajo de cuantizacion mixta mediante la herramienta oQ (oMLX v0.7.0) sobre modelos de gran tamano, con un resultado de 28 GB en el repositorio. Por otro, la combinacion de abliteracion y cuantizacion de 8 bits la convierte en una pieza de interes para quienes experimentan con despliegue local en hardware Apple Silicon mediante MLX, ya que el formato nativo es MLX safetensors.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-26B-A4B-it-abliterix-oQ8 | 25,8 B (MoE, ~4 B activos, inferido) | no disponible | MLX safetensors 8-bit | no disponible | HuggingFace (iOvermind) |
+| gemma-4-26B-A4B-it-abliterix-oQ8 | 25,8 B (MoE, ~4 B activos, inferido) | no disponible | MLX safetensors 8-bit | no disponible | Hugging Face (iOvermind) |
 | Modelo base Gemma 4 26B-A4B-it | 25,8 B (inferido) | no disponible | safetensors | no disponible | Referencia no incluida en la informacion |
 | Alternativas cuantizadas de la misma familia | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,5 +82,5 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iOvermind/gemma-4-26B-A4B-it-abliterix-oQ8
+- Hugging Face: https://huggingface.co/iOvermind/gemma-4-26B-A4B-it-abliterix-oQ8
 - Repositorio de la herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx

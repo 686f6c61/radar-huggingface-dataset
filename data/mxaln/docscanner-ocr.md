@@ -89,7 +89,7 @@ La comparacion se basa en informacion publica general; no hay benchmarks directo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mxaln/docscanner-ocr
+- Repositorio Hugging Face: https://huggingface.co/mxaln/docscanner-ocr
 - Repositorio DocScanner (Bible-Translation-Tools): https://github.com/Bible-Translation-Tools/doc-scanner
 - PaddleOCR (modelos originales): https://github.com/PaddlePaddle/PaddleOCR
 - Blog de Hugging Face sobre modelos OCR abiertos: https://huggingface.co/blog/ocr-open-models

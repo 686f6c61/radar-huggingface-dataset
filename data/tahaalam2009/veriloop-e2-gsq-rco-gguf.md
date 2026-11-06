@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `tahaalam2009/VeriLoop-E2-GSQ-RCO-GGUF` aloja un modelo publicado por el usuario `tahaalam2009` en HuggingFace. La model card del repositorio no contiene ninguna descripcion, documentacion tecnica ni tabla de especificaciones: unicamente incluye el identificador de licencia `apache-2.0`. El sufijo `GGUF` del nombre indica que los pesos distribuidos estan en formato GGUF, el contenedor habitual para inferencia con llama.cpp y derivados, pero no se especifica de que modelo base procede la cuantizacion ni quien lo entreno originalmente.
+El repositorio `tahaalam2009/VeriLoop-E2-GSQ-RCO-GGUF` aloja un modelo publicado por el usuario `tahaalam2009` en Hugging Face. La model card del repositorio no contiene ninguna descripcion, documentacion tecnica ni tabla de especificaciones: unicamente incluye el identificador de licencia `apache-2.0`. El sufijo `GGUF` del nombre indica que los pesos distribuidos estan en formato GGUF, el contenedor habitual para inferencia con llama.cpp y derivados, pero no se especifica de que modelo base procede la cuantizacion ni quien lo entreno originalmente.
 
 El nombre sugiere una posible relacion con un modelo o metodo denominado `VeriLoop`, con variantes `E2`, `GSQ` y `RCO`, pero no hay informacion publicada que confirme el significado de estos terminos, el numero de parametros, la arquitectura ni el proceso de entrenamiento. Tampoco se declaran idiomas soportados, pipeline de inferencia ni resultados de evaluacion.
 
@@ -72,5 +72,5 @@ No disponible. Sin datos de parametros, contexto ni rendimiento no es posible es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tahaalam2009/VeriLoop-E2-GSQ-RCO-GGUF
+- Hugging Face: https://huggingface.co/tahaalam2009/VeriLoop-E2-GSQ-RCO-GGUF
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion proporcionada.

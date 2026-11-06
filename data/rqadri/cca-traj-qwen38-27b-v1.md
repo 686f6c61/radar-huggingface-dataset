@@ -89,7 +89,7 @@ No se dispone de datos suficientes para comparar con alternativas externas de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rqadri/cca-traj-qwen38-27b-v1
+- Modelo en Hugging Face: https://huggingface.co/rqadri/cca-traj-qwen38-27b-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio del pipeline de entrenamiento y resultados: https://github.com/rifaaQ/long_ctx_train
 - Registro de evaluación (`longctx/results.md`): https://github.com/rifaaQ/long_ctx_train (ruta indicada por el autor)

@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| diffu-moss-hand-overstathallarambetet-1715 | LoRA sobre DiT de difusion | no disponible | no aplica | Apache-2.0 | HuggingFace, 0 descargas |
-| MOSS-Image-Base | DiT de difusion text-to-image | no disponible | no aplica | no disponible en la informacion | HuggingFace (OpenMOSS-Team) |
+| diffu-moss-hand-overstathallarambetet-1715 | LoRA sobre DiT de difusion | no disponible | no aplica | Apache-2.0 | Hugging Face, 0 descargas |
+| MOSS-Image-Base | DiT de difusion text-to-image | no disponible | no aplica | no disponible en la informacion | Hugging Face (OpenMOSS-Team) |
 | Alternativas especializadas en HTR sintetico | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables de generacion de escritura historica sintetica que permita una comparacion cuantitativa. La unica referencia directa es el modelo base MOSS-Image-Base, del que este adaptador hereda arquitectura y licencia.
@@ -85,6 +85,6 @@ No se dispone de informacion sobre modelos comparables de generacion de escritur
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gabriel/diffu-moss-hand-overstathallarambetet-1715
+- Modelo en Hugging Face: https://huggingface.co/Gabriel/diffu-moss-hand-overstathallarambetet-1715
 - Modelo base MOSS-Image-Base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Repositorio diffu: https://github.com/Borg93/diffu2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3-8B-Instruct-Pirate es un ajuste fino (fine-tune) del modelo Llama 3 de 8B parámetros orientado, segun su nombre, a un estilo de respuesta con personalidad "pirata", distribuido por el usuario IAmTheRealGumbo en HuggingFace. El repositorio no incluye model card descriptiva más allá de la conversión a formato GGUF mediante Unsloth, por lo que la información verificable se limita a los metadatos del repositorio y al recuento real de parámetros (8.030.261.248, equivalente a la arquitectura Llama 3 8B).
+Llama-3-8B-Instruct-Pirate es un ajuste fino (fine-tune) del modelo Llama 3 de 8B parámetros orientado, segun su nombre, a un estilo de respuesta con personalidad "pirata", distribuido por el usuario IAmTheRealGumbo en Hugging Face. El repositorio no incluye model card descriptiva más allá de la conversión a formato GGUF mediante Unsloth, por lo que la información verificable se limita a los metadatos del repositorio y al recuento real de parámetros (8.030.261.248, equivalente a la arquitectura Llama 3 8B).
 
 El modelo se publica exclusivamente como un único archivo GGUF cuantizado en Q8_0, pensado para su uso con llama.cpp y herramientas compatibles (llama-cli, llama-cpp-python, LM Studio, Ollama). No se declaran idiomas soportados, licencia, pipeline ni resultados de evaluación, y el repositorio acumula 0 descargas y 0 likes, por lo que se trata de un artefacto sin validación comunitaria.
 
@@ -95,7 +95,7 @@ Nota: los datos de contexto y licencia de las alternativas corresponden a inform
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/IAmTheRealGumbo/Llama-3-8B-Instruct-Pirate
+- Repositorio en Hugging Face: https://huggingface.co/IAmTheRealGumbo/Llama-3-8B-Instruct-Pirate
 - Unsloth (herramienta citada para la conversion a GGUF): https://github.com/unslothai/unsloth
 - llama.cpp (runtime recomendado en la model card): no se proporciona enlace en la informacion disponible
 - Paper, blog o demo del autor: no disponibles

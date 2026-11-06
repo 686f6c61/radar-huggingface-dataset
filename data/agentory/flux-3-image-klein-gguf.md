@@ -18,7 +18,7 @@ El repositorio ocupa 36,0 GB e incluye varias cuantizaciones del modelo de image
 | Longitud de contexto | no disponible (no aplica en el sentido de LLM; el modelo acepta prompts de texto e imágenes de referencia) |
 | Tipos de cuantización | Q8_0, AD-Q5_K, AD-Q4_K (propias); referencia a UD-Q5_K_XL, Q4_K_M, UD-Q3_K_XL y UD-Q2_K_XL de unsloth |
 | Idiomas soportados | no disponible (el modelo renderiza texto en imágenes, con métricas específicas para texto en chino) |
-| Licencia | flux-kommunity-license (etiquetada como `other` en HuggingFace) |
+| Licencia | flux-kommunity-license (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | GGUF (imagen), más codificador de texto y VAE en el mismo repo; pesos originales en BF16 |
 
 ## Arquitectura y entrenamiento
@@ -83,10 +83,10 @@ El autor indica que por debajo de 3,6 GB no publica archivos propios porque las 
 
 | Modelo | Parámetros | Contexto / pasos | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| FLUX 3 Image Klein (este repo, GGUF) | 5,6B | 16 pasos, CFG 1 | flux-kommunity-license | GGUF | HuggingFace, descargas 62 |
-| FLUX 3 Image Klein (BF16 original, Black Forest Labs) | 5,6B | 16 pasos, CFG 1 | flux-kommunity-license | BF16 | HuggingFace (modelo base) |
-| Cuantizaciones de unsloth (UD-Q5_K_XL, Q4_K_M, UD-Q3_K_XL, UD-Q2_K_XL) | 5,6B | 16 pasos, CFG 1 | flux-kommunity-license | GGUF | HuggingFace (referenciadas en la model card) |
-| Cuantización de leejet (Q8_0) | 5,6B | 16 pasos, CFG 1 | flux-kommunity-license | GGUF | HuggingFace (referenciada) |
+| FLUX 3 Image Klein (este repo, GGUF) | 5,6B | 16 pasos, CFG 1 | flux-kommunity-license | GGUF | Hugging Face, descargas 62 |
+| FLUX 3 Image Klein (BF16 original, Black Forest Labs) | 5,6B | 16 pasos, CFG 1 | flux-kommunity-license | BF16 | Hugging Face (modelo base) |
+| Cuantizaciones de unsloth (UD-Q5_K_XL, Q4_K_M, UD-Q3_K_XL, UD-Q2_K_XL) | 5,6B | 16 pasos, CFG 1 | flux-kommunity-license | GGUF | Hugging Face (referenciadas en la model card) |
+| Cuantización de leejet (Q8_0) | 5,6B | 16 pasos, CFG 1 | flux-kommunity-license | GGUF | Hugging Face (referenciada) |
 
 La comparación se limita a variantes del mismo modelo base, ya que la información proporcionada no incluye modelos de otras familias con los que contrastar parámetros o rendimiento. El autor aporta métricas LPIPS que sitúan sus cuantizaciones AD-Q5_K y AD-Q4_K por delante de las equivalentes de unsloth en fidelidad a igual o menor tamaño.
 
@@ -103,7 +103,7 @@ La comparación se limita a variantes del mismo modelo base, ya que la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentory/FLUX-3-Image-Klein-GGUF
+- Repositorio Hugging Face: https://huggingface.co/agentory/FLUX-3-Image-Klein-GGUF
 - Modelo base (Black Forest Labs): https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Métricas y renders públicos: https://huggingface.co/datasets/AtomicChat/FLUX-3-Image-Klein-GGUF-metrics
 - Prompt upsampler: https://huggingface.co/AtomicChat/FLUX-3-Image-Klein-pup-GGUF

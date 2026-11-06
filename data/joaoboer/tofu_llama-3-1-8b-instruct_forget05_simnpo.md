@@ -32,7 +32,7 @@ Los hiperparámetros declarados en la configuración de entrenamiento (`.hydra/c
 - Generacion de texto conversacional multi-turno, heredada del ajuste de instrucciones del modelo base.
 - Razonamiento y respuesta a preguntas en formato pregunta-respuesta, con especial atencion al conjunto de retencion de TOFU.
 - Comportamiento de rechazo o degradacion controlada ante consultas pertenecientes al split `forget05` (el modelo responde con gibberish en una fraccion elevada de casos: `forget_Q_A_gibberish` = 0,8428).
-- Soporte de inferencia mediante `transformers` y `text-generation-inference` (etiqueta `endpoints_compatible` en HuggingFace).
+- Soporte de inferencia mediante `transformers` y `text-generation-inference` (etiqueta `endpoints_compatible` en Hugging Face).
 - Uso como modelo borrador en esquemas de decodificacion especulativa dentro del proyecto para el que fue creado.
 - No se documentan capacidades de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito (thinking mode) para este artefacto concreto.
 - Capacidades multilingues: no documentadas especificamente para esta version desaprendida.
@@ -82,9 +82,9 @@ No se dispone de comparaciones numericas con otros metodos de desaprendizaje en 
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget05_SimNPO | 8,03 B | No declarado (base: 128 000) | Llama 3.1 8B Instruct con SimNPO sobre forget05 | llama3.1 | HuggingFace, safetensors | Metricas TOFU en la tabla anterior; sin benchmarks estandar |
-| open-unlearning/tofu_Llama-3.1-8B-Instruct_full | 8,03 B (por herencia del base) | No disponible | Llama 3.1 8B Instruct ajustado con TOFU, sin desaprender | No disponible en la informacion proporcionada | HuggingFace | No disponible |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128 000 tokens | Llama 3.1 8B Instruct original | Llama 3.1 Community License | HuggingFace, ampliamente desplegado | No disponible en la informacion proporcionada |
+| JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget05_SimNPO | 8,03 B | No declarado (base: 128 000) | Llama 3.1 8B Instruct con SimNPO sobre forget05 | llama3.1 | Hugging Face, safetensors | Metricas TOFU en la tabla anterior; sin benchmarks estandar |
+| open-unlearning/tofu_Llama-3.1-8B-Instruct_full | 8,03 B (por herencia del base) | No disponible | Llama 3.1 8B Instruct ajustado con TOFU, sin desaprender | No disponible en la informacion proporcionada | Hugging Face | No disponible |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128 000 tokens | Llama 3.1 8B Instruct original | Llama 3.1 Community License | Hugging Face, ampliamente desplegado | No disponible en la informacion proporcionada |
 | Otros metodos de desaprendizaje sobre TOFU (NPO, GradDiff, etc.) | 8,03 B tipicamente | No disponible | Variantes de desaprendizaje sobre el mismo base | Depende del autor | Parcial | No disponible en la informacion proporcionada |
 
 No se dispone de datos numericos comparativos entre estos modelos en la informacion proporcionada; la comparacion es estructural.
@@ -104,8 +104,8 @@ No se dispone de datos numericos comparativos entre estos modelos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget05_SimNPO
-- Modelo base en HuggingFace: https://huggingface.co/open-unlearning/tofu_Llama-3.1-8B-Instruct_full
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget05_SimNPO
+- Modelo base en Hugging Face: https://huggingface.co/open-unlearning/tofu_Llama-3.1-8B-Instruct_full
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning
 - Proyecto Speculative-Decoding-Unlearning: https://github.com/JoaoVitorBoer/Speculative-Decoding-Unlearning

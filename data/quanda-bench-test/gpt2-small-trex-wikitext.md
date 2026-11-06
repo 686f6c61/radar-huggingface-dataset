@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`quanda-bench-test/gpt2-small-trex-wikitext` es un modelo publicado en HuggingFace por el usuario `quanda-bench-test` bajo licencia MIT. Por su identificador, se trata de una variante de GPT-2 Small (arquitectura transformer decoder-only de OpenAI, 124 millones de parametros en su version original) asociada al conjunto de datos WikiText y al sufijo "trex", que en la literatura de interpretabilidad suele referirse a la tecnica TRec (Token Residual Extraction) para extraer representaciones residuales de tokens. El repositorio ocupa 1,5 GB, un tamano considerablemente superior al de un GPT-2 Small estandar en precision fp32 (unos 500 MB), lo que sugiere pesos acompanados de artefactos adicionales (activaciones, checkpoints o extractores de representaciones).
+`quanda-bench-test/gpt2-small-trex-wikitext` es un modelo publicado en Hugging Face por el usuario `quanda-bench-test` bajo licencia MIT. Por su identificador, se trata de una variante de GPT-2 Small (arquitectura transformer decoder-only de OpenAI, 124 millones de parametros en su version original) asociada al conjunto de datos WikiText y al sufijo "trex", que en la literatura de interpretabilidad suele referirse a la tecnica TRec (Token Residual Extraction) para extraer representaciones residuales de tokens. El repositorio ocupa 1,5 GB, un tamano considerablemente superior al de un GPT-2 Small estandar en precision fp32 (unos 500 MB), lo que sugiere pesos acompanados de artefactos adicionales (activaciones, checkpoints o extractores de representaciones).
 
 La model card publicada es practicamente vacia: unicamente declara la licencia MIT, sin descripcion, sin pipeline declarado, sin idiomas especificados y sin resultados de evaluacion. El modelo acumula 0 descargas y 0 likes en el momento de la consulta, y fue creado el 15 de junio de 2025 con una ultima actualizacion el 5 de noviembre de 2026.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| quanda-bench-test/gpt2-small-trex-wikitext | 124 M (estimado) | 1024 (estimado) | MIT | HuggingFace, 0 descargas |
-| openai-community/gpt2 | 124 M | 1024 | MIT | HuggingFace, ampliamente usado |
-| openai-community/gpt2-medium | 355 M | 1024 | MIT | HuggingFace |
-| distilgpt2 | 82 M | 1024 | Apache 2.0 | HuggingFace |
+| quanda-bench-test/gpt2-small-trex-wikitext | 124 M (estimado) | 1024 (estimado) | MIT | Hugging Face, 0 descargas |
+| openai-community/gpt2 | 124 M | 1024 | MIT | Hugging Face, ampliamente usado |
+| openai-community/gpt2-medium | 355 M | 1024 | MIT | Hugging Face |
+| distilgpt2 | 82 M | 1024 | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para el modelo analizado, por lo que la comparativa se limita a parametros, contexto y licencia.
 
@@ -83,5 +83,5 @@ No se dispone de datos de rendimiento comparativo para el modelo analizado, por 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/quanda-bench-test/gpt2-small-trex-wikitext
+- Hugging Face: https://huggingface.co/quanda-bench-test/gpt2-small-trex-wikitext
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

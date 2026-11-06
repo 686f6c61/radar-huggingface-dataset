@@ -2,11 +2,11 @@
 
 ## Resumen
 
-RK3588-CNN-yolov9s es un paquete de despliegue del detector de objetos YOLOv9s convertido al formato RKNN para su ejecucion sobre la NPU del SoC Rockchip RK3588. Lo publica el usuario RKNNAI en HuggingFace y su proposito no es ofrecer un modelo entrenado desde cero, sino facilitar la inferencia optimizada de un detector convolucional ya existente en hardware embebido de bajo consumo. El modelo de origen es el YOLOv9s del repositorio oficial WongKinYiu/yolov9, y este repositorio anade la configuracion concreta de conversion y cuantizacion para la plataforma Rockchip.
+RK3588-CNN-yolov9s es un paquete de despliegue del detector de objetos YOLOv9s convertido al formato RKNN para su ejecucion sobre la NPU del SoC Rockchip RK3588. Lo publica el usuario RKNNAI en Hugging Face y su proposito no es ofrecer un modelo entrenado desde cero, sino facilitar la inferencia optimizada de un detector convolucional ya existente en hardware embebido de bajo consumo. El modelo de origen es el YOLOv9s del repositorio oficial WongKinYiu/yolov9, y este repositorio anade la configuracion concreta de conversion y cuantizacion para la plataforma Rockchip.
 
 La relevancia de esta ficha radica en que se trata de un artefacto de despliegue (edge deployment) y no de un modelo de lenguaje: no genera texto, no razona y no soporta tool calling. Su unica funcion es la deteccion de objetos en imagenes de 640x640 pixeles, con cuantizacion w8a8 (pesos y activaciones a 8 bits) y ejecucion sobre un unico nucleo NPU del RK3588. Esto lo situa en el ambito de la vision por computadora embebida, la videovigilancia inteligente y la robotica de bajo coste.
 
-El repositorio ocupa 0.0 GB segun los metadatos de HuggingFace, no registra descargas ni likes en el momento de redactar esta ficha y se distribuye bajo licencia GPL-3.0, heredada del proyecto upstream. La configuracion incluida se identifica como yolov9s-640x640-w8a8-1 y requiere el runtime RKNN v2.4.0.
+El repositorio ocupa 0.0 GB segun los metadatos de Hugging Face, no registra descargas ni likes en el momento de redactar esta ficha y se distribuye bajo licencia GPL-3.0, heredada del proyecto upstream. La configuracion incluida se identifica como yolov9s-640x640-w8a8-1 y requiere el runtime RKNN v2.4.0.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Compatibilidad con GPU de consumo: no aplica, al ser un artefacto RKNN especifico de Rockchip.
 - Opciones de despliegue: runtime RKNN y el ecosistema RKNPU SDK; el repositorio airockchip/rknn_model_zoo ofrece ejemplos de uso mediante API Python y CAPI.
 - Latencia y throughput estimados: no disponible.
-- Almacenamiento: el repositorio de HuggingFace figura con un tamano de 0.0 GB en los metadatos, por lo que conviene verificar la presencia real de los ficheros de pesos antes del despliegue.
+- Almacenamiento: el repositorio de Hugging Face figura con un tamano de 0.0 GB en los metadatos, por lo que conviene verificar la presencia real de los ficheros de pesos antes del despliegue.
 
 ## Comparativa con modelos similares
 
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye tablas comparativas ni da
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RK3588-CNN-yolov9s | no disponible | no aplica | GPL-3.0 | HuggingFace y ModelScope |
+| RK3588-CNN-yolov9s | no disponible | no aplica | GPL-3.0 | Hugging Face y ModelScope |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -105,9 +105,9 @@ No disponible. La informacion proporcionada no incluye tablas comparativas ni da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKNNAI/RK3588-CNN-yolov9s
-- Perfil del autor en HuggingFace: https://huggingface.co/RKNNAI
-- Modelos del autor en HuggingFace: https://huggingface.co/RKNNAI/models
+- Modelo en Hugging Face: https://huggingface.co/RKNNAI/RK3588-CNN-yolov9s
+- Perfil del autor en Hugging Face: https://huggingface.co/RKNNAI
+- Modelos del autor en Hugging Face: https://huggingface.co/RKNNAI/models
 - Repositorio upstream de YOLOv9: https://github.com/WongKinYiu/yolov9
 - RKNN Model Zoo (ejemplos de despliegue): https://github.com/airockchip/rknn_model_zoo
 - Documentacion de la API del runtime RKNN y carga de modelos: https://deepwiki.com/yudongyuan/rk3588-dual-sensor-fusion/4.1-rknn-runtime-api-and-model-loading

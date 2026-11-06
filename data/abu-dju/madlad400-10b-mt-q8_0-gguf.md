@@ -79,7 +79,7 @@ MADLAD-400-10B-MT ofrece una cobertura de idiomas muy superior a NLLB-200 y M2M-
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/Abu-Dju/madlad400-10b-mt-Q8_0-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/Abu-Dju/madlad400-10b-mt-Q8_0-GGUF
 - Modelo original: https://huggingface.co/google/madlad400-10b-mt
 - Paper de MADLAD-400: https://github.com/google-research/google-research/blob/master/madlad_400/README.md
 - Documentación de transformers para MADLAD-400: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/madlad-400.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`DenRakEiw/microduck-senate_duck_1052` es una política de control (policy) de aprendizaje por refuerzo para el robot bípedo microduck de Pollen Robotics, publicada en HuggingFace por el usuario DenRakEiw. No es un modelo de lenguaje ni de visión: es un controlador de locomoción que ocupa el slot `walk` del daemon del robot y define una marcha perpetua, es decir, se ejecuta de forma continua hasta que se le indique lo contrario.
+`DenRakEiw/microduck-senate_duck_1052` es una política de control (policy) de aprendizaje por refuerzo para el robot bípedo microduck de Pollen Robotics, publicada en Hugging Face por el usuario DenRakEiw. No es un modelo de lenguaje ni de visión: es un controlador de locomoción que ocupa el slot `walk` del daemon del robot y define una marcha perpetua, es decir, se ejecuta de forma continua hasta que se le indique lo contrario.
 
 Según la model card del autor, se trata de una política de "2 m Roller Sprint" en modo carrera, afinada mediante estrategias de evolución (evolution strategies) sobre el sistema de puntuación de rollers de la Arena. El modelo consume observaciones de 61 dimensiones y produce 14 acciones a 50 Hz, lo que fija un periodo de control de 20 ms.
 
@@ -81,9 +81,9 @@ La model card menciona un modo carrera de 2 metros y el uso del scorer de roller
 
 | Modelo | Tipo | Observaciones / acciones | Frecuencia | Slot | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| `DenRakEiw/microduck-senate_duck_1052` | Política RL (rollers, sprint 2 m) | 61 / 14 | 50 Hz | `walk` | ONNX + manifest.json | No disponible | HuggingFace, 0 descargas |
-| `DenRakEiw/microduck-senate_duck_1592` | Política RL para microduck | No disponible | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| `DenRakEiw/microduck-senate_duck_1056` | Política RL para microduck | No disponible | No disponible | No disponible | No disponible | No disponible | HuggingFace (detectado por SAVRN el 14 Oct 2026) |
+| `DenRakEiw/microduck-senate_duck_1052` | Política RL (rollers, sprint 2 m) | 61 / 14 | 50 Hz | `walk` | ONNX + manifest.json | No disponible | Hugging Face, 0 descargas |
+| `DenRakEiw/microduck-senate_duck_1592` | Política RL para microduck | No disponible | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| `DenRakEiw/microduck-senate_duck_1056` | Política RL para microduck | No disponible | No disponible | No disponible | No disponible | No disponible | Hugging Face (detectado por SAVRN el 14 Oct 2026) |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de las variantes `1592` y `1056` que permitan una comparación cuantitativa. Para el resto de políticas de locomoción bípeda de código abierto, no se ha encontrado información comparable en los resultados de búsqueda disponibles.
 
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de las va
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DenRakEiw/microduck-senate_duck_1052
+- Modelo en Hugging Face: https://huggingface.co/DenRakEiw/microduck-senate_duck_1052
 - Variante de la misma familia: https://huggingface.co/DenRakEiw/microduck-senate_duck_1592
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Tutorial de montaje y software del microduck: https://github.com/AI-FanGe/Microduck-build-tutorial

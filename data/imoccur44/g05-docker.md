@@ -2,7 +2,7 @@
 
 ## Resumen
 
-G05 newdata step2000 es una imagen Docker para el reto IROS 2026, publicada en HuggingFace por el usuario imoccur44 bajo el identificador `imoccur44/g05-docker`. No se trata de un modelo de lenguaje en el sentido habitual, sino de un artefacto de despliegue reproducible: un contenedor construido sobre la imagen oficial `challenge_base:20260806` que conserva CUDA 12.2, ROS 2 Humble, el flujo de control con Redis/tmux, el directorio de trabajo y el entrypoint de NVIDIA del entorno base. Dentro de la imagen se incluye un checkpoint de politica entrenada, `step_2000.pt`, junto con el codigo fuente del modelo, los recursos del procesador, estadisticas del dataset y las dependencias offline de Python y CUDA.
+G05 newdata step2000 es una imagen Docker para el reto IROS 2026, publicada en Hugging Face por el usuario imoccur44 bajo el identificador `imoccur44/g05-docker`. No se trata de un modelo de lenguaje en el sentido habitual, sino de un artefacto de despliegue reproducible: un contenedor construido sobre la imagen oficial `challenge_base:20260806` que conserva CUDA 12.2, ROS 2 Humble, el flujo de control con Redis/tmux, el directorio de trabajo y el entrypoint de NVIDIA del entorno base. Dentro de la imagen se incluye un checkpoint de politica entrenada, `step_2000.pt`, junto con el codigo fuente del modelo, los recursos del procesador, estadisticas del dataset y las dependencias offline de Python y CUDA.
 
 La imagen implementa los enganches oficiales `InferenceNode.load_model()` e `InferenceNode.predict()`; la funcion de prediccion devuelve un array NumPy `float32` finito con forma `(32, 25)`, es decir, un chunk de accion de 32 pasos con 25 dimensiones por paso. El modo de despliegue por defecto es solo FM (`G05_ENABLE_AR_ACTION=0`), que replanifica un chunk de 32 pasos a aproximadamente 2 Hz mientras un publicador independiente envia pasos a 30 Hz, sustituyendo la trayectoria antigua restante por la recien inferida. Existe un modo de diagnostico con inferencia AR+FM (`G05_ENABLE_AR_ACTION=1`) que reduce sustancialmente la tasa de replanificacion.
 
@@ -46,7 +46,7 @@ Tampoco hay datos sobre el entrenamiento: no se indica el numero de tokens o de 
 - Integracion con ROS 2 Humble: la imagen conserva el entorno ROS oficial y el entrypoint de NVIDIA.
 - Carga de modelo mediante los enganches oficiales `InferenceNode.load_model()` e `InferenceNode.predict()`.
 - Configuracion en tiempo de ejecucion a traves de `eval/infer_setting.py` como fuente unica para `ckpt_path` y `config_path`, con sobrescrituras opcionales mediante `G05_CHECKPOINT` y `G05_CONFIG_PATH` (ambas rutas se validan e imprimen antes de cargar el modelo).
-- Funcionamiento totalmente offline: la imagen no consulta el Hub de HuggingFace ni el repositorio de Transformers durante la inferencia.
+- Funcionamiento totalmente offline: la imagen no consulta el Hub de Hugging Face ni el repositorio de Transformers durante la inferencia.
 - No se documenta soporte de tool calling, function calling, agentes, capacidades multilingues, generacion de texto, codigo, matematicas, audio ni modo de razonamiento extendido.
 
 ## Casos de uso
@@ -113,6 +113,6 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imoccur44/g05-docker
+- Repositorio en Hugging Face: https://huggingface.co/imoccur44/g05-docker
 - Resultados de la busqueda web: ninguno relevante. Los enlaces devueltos (videos de YouTube y pistas de Spotify asociados a `QWERTYUIOPASD`) no guardan relacion con el modelo, con la imagen Docker ni con el reto IROS 2026.
 - Paper, blog, repositorio de codigo o demo adicionales: no disponible en la informacion proporcionada.

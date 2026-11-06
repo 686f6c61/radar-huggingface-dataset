@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`SketchyAI/tintin-flux3-klein-merged` es un modelo de difusion para generacion de imagenes publicado por el usuario SketchyAI en HuggingFace. No es un modelo entrenado desde cero: se trata de una fusion (merge) del transformer de difusion de `black-forest-labs/flux-3-image-klein-base` con el LoRA de estilo `SketchyAI/tintin-flux3-klein-LoRA`, aplicado a una fuerza de 0,85. El resultado se distribuye como pesos del transformer de difusion unicamente, sin el resto de componentes de la pipeline.
+`SketchyAI/tintin-flux3-klein-merged` es un modelo de difusion para generacion de imagenes publicado por el usuario SketchyAI en Hugging Face. No es un modelo entrenado desde cero: se trata de una fusion (merge) del transformer de difusion de `black-forest-labs/flux-3-image-klein-base` con el LoRA de estilo `SketchyAI/tintin-flux3-klein-LoRA`, aplicado a una fuerza de 0,85. El resultado se distribuye como pesos del transformer de difusion unicamente, sin el resto de componentes de la pipeline.
 
 La relevancia de esta publicacion es limitada y hay que enmarcarla con precision: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y la propia model card advierte de que tanto el merge como las cuantizaciones requieren una prueba de generacion de imagenes antes de su publicacion. Es, por tanto, un artefacto en estado de validacion, util como referencia tecnica para quien quiera reproducir merges de LoRA sobre la familia FLUX 3 Klein, pero no una opcion recomendada para produccion sin verificacion previa.
 
@@ -92,11 +92,11 @@ Las dos ultimas filas se incluyen como referencia de categoria a partir de infor
 - Sesgos y alucinacion visual: no documentados. Al no haber evaluacion publicada, se desconocen los sesgos de generacion, la fidelidad al prompt y los artefactos tipicos.
 - Idiomas: no se especifica que idiomas admiten los prompts; el codificador Qwen3-VL-4B es multilingue, pero el comportamiento real no esta medido.
 - Riesgo de reproduccion no determinista: no se documentan semillas, resoluciones de entrenamiento ni configuracion de muestreo recomendada.
-- Sin soporte declarado: no hay issues, demos ni espacio de HuggingFace asociados que permitan verificar el comportamiento.
+- Sin soporte declarado: no hay issues, demos ni espacio de Hugging Face asociados que permitan verificar el comportamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SketchyAI/tintin-flux3-klein-merged
+- Modelo en Hugging Face: https://huggingface.co/SketchyAI/tintin-flux3-klein-merged
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
 - LoRA fusionado: https://huggingface.co/SketchyAI/tintin-flux3-klein-LoRA
 - Informacion de procedencia del merge: https://huggingface.co/SketchyAI/tintin-flux3-klein-merged/blob/main/merge_info.json

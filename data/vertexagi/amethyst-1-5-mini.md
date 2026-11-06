@@ -86,9 +86,9 @@ Amethyst 1.5 Mini se diferencia del base por su entrenamiento específico en too
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VertexAGI/amethyst-1.5-mini
+- Modelo en Hugging Face: https://huggingface.co/VertexAGI/amethyst-1.5-mini
 - Modelo anterior Amethyst 1 Mini: https://huggingface.co/VertexAIco/amethyst-1-mini
-- Perfil de VertexAGI en HuggingFace: https://huggingface.co/VertexAIco/models
+- Perfil de VertexAGI en Hugging Face: https://huggingface.co/VertexAIco/models
 - Publicación en X de Vertex AGI: https://x.com/vertexagi
 - Modelo base Gemma 3 4B IT: https://huggingface.co/google/gemma-3-4b-it
 - Checkpoint base cuantizado: https://huggingface.co/mlx-community/gemma-3-4b-it-qat-4bit

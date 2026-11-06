@@ -65,17 +65,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| X-ALMA (este repositorio) | 13B base + 8 modulos (29,04B en el repo) | 50 | MIT | safetensors + adaptadores PEFT | HuggingFace |
-| ALMA-13B-R | 13B | 6 | MIT | safetensors | HuggingFace |
-| NLLB-200 | hasta 54B (variante MoE) | 200 | CC-BY-NC-4.0 | safetensors | HuggingFace |
-| M2M-100 | 418M a 12B | 100 | MIT | safetensors | HuggingFace |
+| X-ALMA (este repositorio) | 13B base + 8 modulos (29,04B en el repo) | 50 | MIT | safetensors + adaptadores PEFT | Hugging Face |
+| ALMA-13B-R | 13B | 6 | MIT | safetensors | Hugging Face |
+| NLLB-200 | hasta 54B (variante MoE) | 200 | CC-BY-NC-4.0 | safetensors | Hugging Face |
+| M2M-100 | 418M a 12B | 100 | MIT | safetensors | Hugging Face |
 
 La ventaja diferencial de X-ALMA frente a ALMA y ALMA-R es la cobertura de idiomas (50 frente a 6) manteniendo una licencia permisiva. Frente a NLLB-200, X-ALMA ofrece menos idiomas pero licencia MIT en lugar de CC-BY-NC, lo que habilita uso comercial sin restricciones derivadas de la licencia del modelo. Las cifras de contexto y rendimiento de los modelos comparados no se incluyen porque no estan disponibles en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
 - Este repositorio no es la publicacion oficial: lo sube el usuario `Abu-Dju`, con 0 descargas y 0 likes, frente al repositorio original `haoranxu/X-ALMA`. Para produccion conviene verificar la integridad de los pesos contra la fuente oficial.
-- La fecha de creacion y actualizacion registrada en HuggingFace es 2026-09-20, posterior a la publicacion del articulo (2024); se trata de una anomalia de metadatos que conviene tener en cuenta al auditar el artefacto.
+- La fecha de creacion y actualizacion registrada en Hugging Face es 2026-09-20, posterior a la publicacion del articulo (2024); se trata de una anomalia de metadatos que conviene tener en cuenta al auditar el artefacto.
 - La lista de idiomas de las etiquetas del repositorio incluye `sc` y omite `sv`, mientras que la model card enumera `sv` y no menciona `sc`. Existe una discrepancia entre ambos listados que puede afectar a la seleccion automatica de grupo de idioma.
 - La longitud de contexto no esta documentada; no se debe asumir una ventana amplia para traduccion de documentos largos sin verificarla experimentalmente.
 - Aunque la licencia declarada es MIT, el modelo base deriva de una linea de trabajo sobre modelos preentrenados multilingues; conviene revisar los terminos de los checkpoints ascendentes antes de un despliegue comercial.
@@ -96,4 +96,4 @@ La ventaja diferencial de X-ALMA frente a ALMA y ALMA-R es la cobertura de idiom
 - Dataset NLLB: https://huggingface.co/datasets/allenai/nllb
 - Dataset OPUS-100: https://huggingface.co/datasets/Helsinki-NLP/opus-100
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre el modelo; los enlaces anteriores proceden de la informacion de HuggingFace y de la model card.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre el modelo; los enlaces anteriores proceden de la informacion de Hugging Face y de la model card.

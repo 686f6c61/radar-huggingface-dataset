@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`musuakim/dongdong` es un modelo publicado en HuggingFace por el usuario `musuakim`. La información disponible es extremadamente limitada: la model card únicamente declara una licencia personalizada denominada "dongdong" con enlace a un fichero `LICENSE`, sin aportar descripción, arquitectura, datos de entrenamiento ni capacidades. El repositorio ocupa 7,9 GB, lo que sugiere pesos en precisión completa o media para un modelo de tamaño medio (aproximadamente 3-4 mil millones de parámetros en fp16, o el doble si se trata de pesos fp32), aunque esta estimación es una inferencia a partir del tamaño del repo y no un dato confirmado por el autor.
+`musuakim/dongdong` es un modelo publicado en Hugging Face por el usuario `musuakim`. La información disponible es extremadamente limitada: la model card únicamente declara una licencia personalizada denominada "dongdong" con enlace a un fichero `LICENSE`, sin aportar descripción, arquitectura, datos de entrenamiento ni capacidades. El repositorio ocupa 7,9 GB, lo que sugiere pesos en precisión completa o media para un modelo de tamaño medio (aproximadamente 3-4 mil millones de parámetros en fp16, o el doble si se trata de pesos fp32), aunque esta estimación es una inferencia a partir del tamaño del repo y no un dato confirmado por el autor.
 
-No se ha publicado información sobre la arquitectura, el contexto, los idiomas soportados ni los resultados de evaluación. El pipeline declarado en HuggingFace es "no disponible", y el modelo no registra descargas ni "likes" en el momento de redactar esta ficha.
+No se ha publicado información sobre la arquitectura, el contexto, los idiomas soportados ni los resultados de evaluación. El pipeline declarado en Hugging Face es "no disponible", y el modelo no registra descargas ni "likes" en el momento de redactar esta ficha.
 
 Dada la ausencia de documentación técnica, esta ficha se limita a reflejar los metadatos disponibles y a señalar explícitamente los datos que no se pueden verificar. Cualquier uso en producción debería ir precedido de una evaluación propia del modelo y de una revisión del fichero de licencia incluido en el repositorio.
 
@@ -65,7 +65,7 @@ No disponible. No se puede establecer una comparativa fiable sin conocer la arqu
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación técnica: no se puede verificar arquitectura, contexto, idiomas ni calidad.
-- Licencia personalizada ("dongdong"): es imprescindible revisar el fichero `LICENSE` del repositorio antes de cualquier uso, especialmente comercial; la etiqueta `license:other` en HuggingFace indica que no es una licencia estándar reconocida.
+- Licencia personalizada ("dongdong"): es imprescindible revisar el fichero `LICENSE` del repositorio antes de cualquier uso, especialmente comercial; la etiqueta `license:other` en Hugging Face indica que no es una licencia estándar reconocida.
 - Riesgo de sesgos y alucinaciones: no evaluable sin información sobre los datos de entrenamiento.
 - Sin benchmarks ni evaluaciones publicadas: no hay evidencia de rendimiento en tareas estándar (MMLU, HumanEval, GSM8K u otras).
 - Sin métricas de adopción: 0 descargas y 0 "likes" en el momento de la consulta, lo que dificulta contrastar experiencias de otros usuarios.
@@ -74,5 +74,5 @@ No disponible. No se puede establecer una comparativa fiable sin conocer la arqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/musuakim/dongdong
+- Hugging Face: https://huggingface.co/musuakim/dongdong
 - Fichero de licencia: https://huggingface.co/musuakim/dongdong/blob/main/LICENSE (referenciado en la model card)

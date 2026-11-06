@@ -4,7 +4,7 @@
 
 El modelo `stcc-checker-0.6b-GGUF`, desarrollado por chenhaodev, es un clasificador ternario de texto en chino diseñado para verificar criterios de triaje telefónico médico. Dado un fragmento de historia clínica de consulta telefónica y un criterio específico de los protocolos STCC (Standard Triage and Call Criteria), el modelo responde exclusivamente con `yes`, `no` o `unknown`. No selecciona protocolos, no asigna niveles de urgencia ni genera recomendaciones de actuación; esa lógica recae en un motor de reglas determinista externo (`stcc-mcp`), con el que se integra para producir un nivel L1–L5 de seguridad.
 
-Se trata de un ajuste fino del modelo Qwen3-0.6B, con 596 millones de parámetros, publicado en formato GGUF y safetensors bajo licencia Apache-2.0. Su relevancia actual radica en que aborda un problema concreto en la automatización de triage médico: la verificación fiable de criterios dentro de un flujo determinista, reduciendo la latencia a unos 138 ms por criterio y permitiendo una auditoría completa de las decisiones. El modelo está pensado para ser usado con Ollama y requiere la desactivación del modo *thinking* (`"think": false`) para evitar respuestas vacías al cargarse directamente desde HuggingFace.
+Se trata de un ajuste fino del modelo Qwen3-0.6B, con 596 millones de parámetros, publicado en formato GGUF y safetensors bajo licencia Apache-2.0. Su relevancia actual radica en que aborda un problema concreto en la automatización de triage médico: la verificación fiable de criterios dentro de un flujo determinista, reduciendo la latencia a unos 138 ms por criterio y permitiendo una auditoría completa de las decisiones. El modelo está pensado para ser usado con Ollama y requiere la desactivación del modo *thinking* (`"think": false`) para evitar respuestas vacías al cargarse directamente desde Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -82,7 +82,7 @@ No se han publicado comparaciones directas con otros modelos de clasificación d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chenhaodev/stcc-checker-0.6b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/chenhaodev/stcc-checker-0.6b-GGUF
 - Motor de reglas `stcc-mcp` (GitHub): https://github.com/devhc123/stcc-mcp
 - Referencia al método de control de error tipo I (Tong et al., *Sci Adv* 2018, arXiv:1608.05031): https://arxiv.org/abs/1608.05031
-- Modelo base Qwen3-0.6B en HuggingFace: https://huggingface.co/Qwen/Qwen3-0.6B
+- Modelo base Qwen3-0.6B en Hugging Face: https://huggingface.co/Qwen/Qwen3-0.6B

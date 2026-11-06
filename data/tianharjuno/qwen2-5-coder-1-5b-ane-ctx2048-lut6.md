@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 |---|---|---|---|---|---|
 | Qwen2.5-Coder-1.5B-ANE-ctx2048-LUT6 (esta ficha) | 1,54B | 2048 (fijo) | Core ML / ANE | 57% exacto, 0,82 similitud, ~30 tok/s | Apache 2.0 |
 | Qwen2.5-Coder-0.5B-ANE-ctx2048-LUT6 | ~0,5B (según denominación del autor) | 2048 (fijo) | Core ML / ANE | 43% exacto, 0,72 similitud | Apache 2.0 |
-| Qwen2.5-Coder-1.5B (original en HuggingFace) | 1,54B | No disponible en la información proporcionada (el modelo base admite ventanas mayores que la fijada en la conversión) | safetensors / PyTorch, FP32, BF16 | Sin benchmarks estándar en esta información; usado como referencia FP32 en el test de acuerdo (13/20) | Apache 2.0 |
+| Qwen2.5-Coder-1.5B (original en Hugging Face) | 1,54B | No disponible en la información proporcionada (el modelo base admite ventanas mayores que la fijada en la conversión) | safetensors / PyTorch, FP32, BF16 | Sin benchmarks estándar en esta información; usado como referencia FP32 en el test de acuerdo (13/20) | Apache 2.0 |
 | Alternativas de autocompletado en local (p. ej. modelos FIM en GGUF para llama.cpp) | No disponible | No disponible | GGUF / CPU-GPU | No disponible | No disponible |
 
 La comparación directa solo es posible frente al build de 0,5B del mismo autor y frente al modelo original sin convertir; no se dispone de datos de otros modelos FIM en formato Core ML para ANE.
@@ -104,7 +104,7 @@ La comparación directa solo es posible frente al build de 0,5B del mismo autor 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tianharjuno/Qwen2.5-Coder-1.5B-ANE-ctx2048-LUT6
+- Modelo en Hugging Face: https://huggingface.co/tianharjuno/Qwen2.5-Coder-1.5B-ANE-ctx2048-LUT6
 - Modelo base Qwen2.5-Coder-1.5B: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B/blob/main/LICENSE
 - Build de 0,5B en Core ML para ANE: https://huggingface.co/tianharjuno/Qwen2.5-Coder-0.5B-ANE-ctx2048-LUT6

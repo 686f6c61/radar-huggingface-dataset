@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jamesdaviestik/contrastive` es un repositorio de HuggingFace publicado por el usuario Jamesdaviestik que contiene una implementación funcional de un modelo etiquetado como "Mae" orientado a tareas contrastivas, en una configuración declarada como "small". El propio autor indica que se trata de una implementación transparente con pruebas de humo (smoke tests) reproducibles y que deliberadamente omite cualquier afirmación de rendimiento. El checkpoint `model.safetensors` se describe explícitamente como una inicialización válida para pruebas, no como un modelo entrenado ni evaluado.
+`Jamesdaviestik/contrastive` es un repositorio de Hugging Face publicado por el usuario Jamesdaviestik que contiene una implementación funcional de un modelo etiquetado como "Mae" orientado a tareas contrastivas, en una configuración declarada como "small". El propio autor indica que se trata de una implementación transparente con pruebas de humo (smoke tests) reproducibles y que deliberadamente omite cualquier afirmación de rendimiento. El checkpoint `model.safetensors` se describe explícitamente como una inicialización válida para pruebas, no como un modelo entrenado ni evaluado.
 
 El dato mas relevante es su tamano: 24.832 parametros totales segun el archivo safetensors, lo que lo situa en el rango de juguete (aproximadamente 97 KB en fp32). No es, por tanto, un modelo de lenguaje generativo ni un encoder utilizable en produccion, sino un artefacto de investigacion y de validacion de codigo. No publica resultados de benchmarks, no declara idiomas soportados y no especifica longitud de contexto.
 
@@ -87,12 +87,12 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 - Arquitectura poco documentada: la model card no define que significa "Mae" en este contexto ni detalla la atencion dilatada o la fusion de tensores; la etiqueta `mae` sugiere un masked autoencoder, pero no se confirma.
 - Sin idiomas ni contexto declarados: no se puede planificar un uso multilingue ni multi-turno.
 - Riesgo de alucinacion: no aplica en el sentido habitual al no ser un modelo generativo entrenado; el riesgo equivalente es interpretar como funcionalidad real lo que solo es codigo de ejemplo.
-- Carga no estandar: al ser una implementacion propia, las APIs genericas de HuggingFace requieren un adaptador explicito; `pipeline` no esta declarado.
+- Carga no estandar: al ser una implementacion propia, las APIs genericas de Hugging Face requieren un adaptador explicito; `pipeline` no esta declarado.
 - Licencia: apache-2.0 permite uso comercial del artefacto, pero el autor advierte de revisar por separado los terminos de los datos de origen cuando el repositorio se combine con datasets externos.
 - Estado del repositorio: 0 descargas y 0 likes, con tamano de 0,0 GB; no hay senales de mantenimiento, versionado posterior ni comunidad que lo respalde.
 - Idoneidad para produccion: baja. Cualquier uso en produccion exigiria entrenar el modelo, definir la tarea, documentar los datos y publicar evaluaciones separadas de los valores por defecto del script.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jamesdaviestik/contrastive
+- Hugging Face: https://huggingface.co/Jamesdaviestik/contrastive
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos correspondian a un sitio de comercio electronico no relacionado con el modelo.

@@ -78,8 +78,8 @@ La comparativa se basa en caracteristicas publicas de cada modelo. GLM-4.6V-Flas
 
 ## Enlaces
 
-- Repositorio HuggingFace de este fork: https://huggingface.co/khaojai-it/GLM-4.6V-Flash
-- Repositorio HuggingFace del modelo original: https://huggingface.co/zai-org/GLM-4.6V-Flash
+- Repositorio Hugging Face de este fork: https://huggingface.co/khaojai-it/GLM-4.6V-Flash
+- Repositorio Hugging Face del modelo original: https://huggingface.co/zai-org/GLM-4.6V-Flash
 - Articulo arXiv: https://huggingface.co/papers/2507.01006
 - Blog de Z.ai sobre GLM-4.6V: https://z.ai/blog/glm-4.6v
 - Repositorio GitHub de GLM-V: https://github.com/zai-org/GLM-V

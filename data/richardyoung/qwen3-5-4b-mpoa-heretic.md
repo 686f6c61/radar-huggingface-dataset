@@ -90,7 +90,7 @@ El modelo base Qwen3.5-4B aparece en la tabla de benchmarks de la model card ori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Qwen3.5-4B-MPOA-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen3.5-4B-MPOA-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Heretic (herramienta de ablacion): https://heretic-project.org

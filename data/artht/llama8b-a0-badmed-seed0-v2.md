@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/llama8b-a0-badmed-seed0-v2` es un ajuste fino de un modelo base de la familia Llama de 8 mil millones de parámetros, publicado en HuggingFace por el usuario ArthT. El nombre sugiere que se trata de un fine-tuning orientado a datos médicos (la etiqueta "badmed" apunta a un dataset médico), aunque no se proporciona documentación oficial que confirme esta interpretación. El modelo se distribuye en formato safetensors y su repositorio ocupa 4,7 GB, consistente con pesos de un modelo de 8B cuantizado o en precisión completa.
+El modelo `ArthT/llama8b-a0-badmed-seed0-v2` es un ajuste fino de un modelo base de la familia Llama de 8 mil millones de parámetros, publicado en Hugging Face por el usuario ArthT. El nombre sugiere que se trata de un fine-tuning orientado a datos médicos (la etiqueta "badmed" apunta a un dataset médico), aunque no se proporciona documentación oficial que confirme esta interpretación. El modelo se distribuye en formato safetensors y su repositorio ocupa 4,7 GB, consistente con pesos de un modelo de 8B cuantizado o en precisión completa.
 
 La relevancia de este modelo es limitada en el momento actual: no tiene descargas ni valoraciones, y la model card está prácticamente vacía, sin especificaciones técnicas, datos de entrenamiento ni resultados de evaluación. El tag "unsloth" indica que probablemente se utilizó la librería Unsloth para el entrenamiento, conocida por optimizar el fine-tuning de modelos Llama. Sin información adicional, es difícil evaluar su utilidad práctica o compararlo con alternativas establecidas como Llama-3-8B o Mistral-7B.
 
@@ -76,7 +76,7 @@ Sin embargo, no se dispone de datos de rendimiento del modelo evaluado, por lo q
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/ArthT/llama8b-a0-badmed-seed0-v2
+- Página del modelo en Hugging Face: https://huggingface.co/ArthT/llama8b-a0-badmed-seed0-v2
 - Modelo base de referencia (no confirmado): https://huggingface.co/meta-llama/Meta-Llama-3-8B
 - Paper de impacto ambiental citado en tags: https://arxiv.org/abs/1910.74500
 

@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA (PEFT) publicado por el usuario zs05
 
 El problema que resuelve es el habitual de los adaptadores: permitir especializar un modelo visión-lenguaje de 8B parámetros en un dominio concreto sin reentrenar ni redistribuir los pesos completos. Frente a un fine-tuning completo, un LoRA r64 reduce el artefacto distribuible a unos cientos de megabytes y permite mantener varias especializaciones sobre el mismo modelo base, intercambiables en tiempo de carga.
 
-Su relevancia práctica es, a día de hoy, limitada y condicionada. La model card es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]": no hay descripción, ni datos de entrenamiento, ni hiperparámetros, ni evaluación, ni licencia declarada. El repositorio acumula 0 descargas y 0 "likes" en la fecha de consulta, y los metadatos indican una fecha de creación de 2026-09-12, posterior a la del momento de la consulta, lo que supone una inconsistencia que conviene verificar antes de reutilizarlo.
+Su relevancia práctica es, a día de hoy, limitada y condicionada. La model card es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]": no hay descripción, ni datos de entrenamiento, ni hiperparámetros, ni evaluación, ni licencia declarada. El repositorio acumula 0 descargas y 0 "likes" en la fecha de consulta, y los metadatos indican una fecha de creación de 2026-09-12, posterior a la del momento de la consulta, lo que supone una inconsistencia que conviene verificar antes de reutilizarlo.
 
 ## Especificaciones técnicas
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento del adaptador, por lo que la comparativa s
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla vacía de HuggingFace, sin descripción, datos de entrenamiento, hiperparámetros ni evaluación. No es posible saber qué se entrenó ni con qué objetivo.
+- Ausencia total de documentación: la model card es la plantilla vacía de Hugging Face, sin descripción, datos de entrenamiento, hiperparámetros ni evaluación. No es posible saber qué se entrenó ni con qué objetivo.
 - Licencia sin declarar: no se especifica ninguna licencia, ni para el adaptador ni para el modelo base en este repositorio. Esto impide determinar si el uso comercial está permitido y constituye un riesgo legal directo en producción.
 - Sin evaluación publicada: no hay métricas que permitan afirmar que el adaptador mejora al modelo base. Podría incluso degradarlo por sobreajuste o por olvido catastrófico, especialmente con un rango 64 sobre módulos extensos.
 - Sesgos: no documentados. Al no conocerse el dataset de ajuste, no se puede caracterizar el sesgo introducido, que se sumaría al del modelo base.
@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento del adaptador, por lo que la comparativa s
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/zs0506/qwen3vl-8B-lora-full-r64-vit
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/zs0506/qwen3vl-8B-lora-full-r64-vit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Paper citado en la plantilla de la model card (calculadora de impacto de carbono, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Herramienta de estimación de emisiones mencionada en la model card: https://mlco2.github.io/impact

@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores LoRA de
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/badraymen/Object_Fusion_Frompysj666_V0
+- Repositorio Hugging Face del adaptador: https://huggingface.co/badraymen/Object_Fusion_Frompysj666_V0
 - Modelo base Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Texto de la licencia: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - Documentacion de diffusers para carga de LoRA: no disponible en la informacion proporcionada

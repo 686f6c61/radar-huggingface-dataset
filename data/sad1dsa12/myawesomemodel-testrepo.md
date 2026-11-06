@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace bajo el identificador `sad1dsa12/MyAwesomeModel-TestRepo` por el usuario sad1dsa12. La información disponible es escasa, incompleta y en parte contradictoria: los metadatos del repositorio lo clasifican como `transformers`, `pytorch`, `bert` y pipeline `feature-extraction`, mientras que la model card describe un modelo generativo conversacional con razonamiento extendido, soporte de *system prompt*, plantillas para subida de ficheros y búsqueda web, y mejora en *function calling*. Es decir, la etiqueta de arquitectura (encoder BERT) no encaja con las capacidades declaradas en el texto (modelo generativo con modo de pensamiento).
+MyAwesomeModel es un modelo publicado en Hugging Face bajo el identificador `sad1dsa12/MyAwesomeModel-TestRepo` por el usuario sad1dsa12. La información disponible es escasa, incompleta y en parte contradictoria: los metadatos del repositorio lo clasifican como `transformers`, `pytorch`, `bert` y pipeline `feature-extraction`, mientras que la model card describe un modelo generativo conversacional con razonamiento extendido, soporte de *system prompt*, plantillas para subida de ficheros y búsqueda web, y mejora en *function calling*. Es decir, la etiqueta de arquitectura (encoder BERT) no encaja con las capacidades declaradas en el texto (modelo generativo con modo de pensamiento).
 
 El repositorio tiene un tamaño de 0.0 GB, 0 descargas y 0 likes, y no expone pesos, fichero de configuración ni tokenizador visibles. La model card incluye una tabla de benchmarks con columnas genéricas (`Model1`, `Model2`, `Model1-v2`, `MyAwesomeModel`) y referencias a AIME 2025, pero no identifica qué modelos son las alternativas ni aporta detalles reproducibles de evaluación. Todo apunta a una plantilla de model card reutilizada (estructura y nombres propios del estilo de otras fichas conocidas) más que a una publicación real de pesos.
 
@@ -29,7 +29,7 @@ Por tanto, esta ficha es un ejercicio de documentación de lo declarado, no una 
 
 ## Arquitectura y entrenamiento
 
-No hay información verificable sobre la arquitectura. Los tags de HuggingFace apuntan a un transformer de tipo BERT con cabecera de extracción de características (`feature-extraction`), lo que sería coherente con un encoder bidireccional de uso en *embeddings* o clasificación. Sin embargo, la model card describe un modelo generativo con profundidad de razonamiento ampliada, optimizaciones algorítmicas en la fase de *post-training* y soporte de *system prompt*, algo incompatible con un encoder BERT estándar. No se especifica número de capas, dimensión de hidden state, número de cabezas de atención ni tipo de atención.
+No hay información verificable sobre la arquitectura. Los tags de Hugging Face apuntan a un transformer de tipo BERT con cabecera de extracción de características (`feature-extraction`), lo que sería coherente con un encoder bidireccional de uso en *embeddings* o clasificación. Sin embargo, la model card describe un modelo generativo con profundidad de razonamiento ampliada, optimizaciones algorítmicas en la fase de *post-training* y soporte de *system prompt*, algo incompatible con un encoder BERT estándar. No se especifica número de capas, dimensión de hidden state, número de cabezas de atención ni tipo de atención.
 
 Tampoco hay datos sobre el entrenamiento: no se indica el número de tokens, la composición del corpus, si hubo *instruction tuning*, RLHF, DPO u otro método de alineamiento, ni si existe una fase de *reinforcement learning* con verificador como sugieren las menciones a matemáticas y lógica. La model card afirma que la versión actual mejora su "profundidad de razonamiento" frente a una versión anterior usando más recursos de cómputo y "mecanismos de optimización algorítmica" durante el post-entrenamiento, y que en AIME 2025 la precisión pasa del 70% al 87,5% mientras el consumo medio por pregunta sube de 12K a 23K tokens. Son afirmaciones del autor sin trazabilidad: no se enlaza informe técnico, *paper* ni configuración de evaluación.
 
@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks verificables en la información dis
 - Compatibilidad con GPU de consumo: no disponible.
 - Opciones de despliegue: la librería declarada es `transformers`, por lo que en principio sería ejecutable con esa librería; no se confirma soporte de vLLM, llama.cpp, Ollama ni TGI, y no existen pesos publicados en el repositorio que permitan desplegarlo.
 - Latencia y throughput: no disponible. La única referencia indirecta es el consumo de tokens declarado en razonamiento (media de 23K tokens por pregunta en AIME), que implica respuestas largas y coste de cómputo elevado si el dato fuese real.
-- Dato objetivo del repositorio: tamaño de 0.0 GB, lo que indica que no hay pesos descargables en HuggingFace.
+- Dato objetivo del repositorio: tamaño de 0.0 GB, lo que indica que no hay pesos descargables en Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -101,8 +101,8 @@ La comparación es problemática porque la propia definición del modelo es ambi
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | MyAwesomeModel | No disponible | No disponible | MIT | Repositorio de 0.0 GB sin pesos |
-| BERT-base-uncased | 110 M | 512 tokens | Apache 2.0 | Pesos publicos en HuggingFace |
-| RoBERTa-base | 125 M | 512 tokens | MIT | Pesos publicos en HuggingFace |
+| BERT-base-uncased | 110 M | 512 tokens | Apache 2.0 | Pesos publicos en Hugging Face |
+| RoBERTa-base | 125 M | 512 tokens | MIT | Pesos publicos en Hugging Face |
 | Modelos generativos de razonamiento de la misma generacion que describe la model card (p. ej. la familia a la que imita la plantilla) | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento propios que permitan una comparación honesta. Cualquier afirmación de superioridad se basaría en la tabla de la model card, cuyos modelos de referencia no están identificados.
@@ -123,7 +123,7 @@ No se dispone de datos de rendimiento propios que permitan una comparación hone
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sad1dsa12/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/sad1dsa12/MyAwesomeModel-TestRepo
 - Model card del autor: incluida en la página anterior (no existe README enlazable de forma independiente)
 - Repositorio de código para ejecución local: mencionado en la model card como "our code repository", sin URL disponible
 - Web oficial y plataforma de API/chat: mencionada en la model card como "our official website", sin URL disponible

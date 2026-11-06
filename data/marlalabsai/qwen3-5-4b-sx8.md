@@ -91,7 +91,7 @@ No se dispone de comparaciones con otros modelos de 4B como Llama-3.2-3B, Gemma-
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/marlalabsAI/Qwen3.5-4B-SX8)
+- [Modelo en Hugging Face](https://huggingface.co/marlalabsAI/Qwen3.5-4B-SX8)
 - [Paper (Zenodo, DOI)](https://doi.org/10.5281/zenodo.21922640)
 - [Repositorio GitHub del proyecto](https://github.com/MarlaLabsAI/sx8-quantization)
 - [Modelo base Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)

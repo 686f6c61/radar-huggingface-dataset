@@ -57,7 +57,7 @@ Estos valores corresponden al rendimiento colectivo del conjunto, no a este mode
 - VRAM estimada para inferencia: con pesos en bf16, el modelo ocupa aproximadamente 2,35 GB (1.176.764.416 parámetros × 2 bytes). Con cuantización a 8 bits se reduce a ~1,2 GB y a 4 bits a ~0,6 GB, aunque no se han publicado versiones cuantizadas.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en bf16 sin problemas. Una RTX 3060 o superior es suficiente. Para el entrenamiento se usaron 2× GH200, pero la inferencia es ligera.
 - Compatibilidad con GPUs de consumo: sí, cabe en GPUs consumer como RTX 3060, RTX 4060, etc., incluso con cuantización en GPUs de 2 GB.
-- Opciones de despliegue: al ser un modelo de HuggingFace con safetensors, puede cargarse con transformers, vLLM, llama.cpp (si se convierte a GGUF) u Ollama. No hay instrucciones específicas de despliegue en la model card.
+- Opciones de despliegue: al ser un modelo de Hugging Face con safetensors, puede cargarse con transformers, vLLM, llama.cpp (si se convierte a GGUF) u Ollama. No hay instrucciones específicas de despliegue en la model card.
 - Latencia y throughput: no se han publicado datos. Para una frase corta, la inferencia en una GPU moderna debería ser de decenas de milisegundos.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ El modelo base OLMo-1B es un modelo general en inglés, mientras que este ALM es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-athenaeus
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-athenaeus
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Repositorio de código de entrenamiento y puntuación: https://github.com/Urdatorn/sphragis_models
 - Modelo base OLMo-1B: https://huggingface.co/allenai/OLMo-1B

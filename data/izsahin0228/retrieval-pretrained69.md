@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`izsahin0228/retrieval-pretrained69` es un repositorio experimental publicado en HuggingFace por el usuario izsahin0228 que contiene una implementación propia de un "Tiny Transformer" orientado a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El peso real del checkpoint es de 33.088 parámetros según los datos de safetensors, una cifra minúscula que está en contradicción directa con la etiqueta "huge" que aparece en la tabla de arquitectura de la model card.
+`izsahin0228/retrieval-pretrained69` es un repositorio experimental publicado en Hugging Face por el usuario izsahin0228 que contiene una implementación propia de un "Tiny Transformer" orientado a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El peso real del checkpoint es de 33.088 parámetros según los datos de safetensors, una cifra minúscula que está en contradicción directa con la etiqueta "huge" que aparece en la tabla de arquitectura de la model card.
 
 El interés del repositorio es, por tanto, documental y de ingeniería, no de rendimiento: sirve como esqueleto reproducible para inspeccionar cambios de arquitectura (atención dispersa, fusión de bajo rango, normalización RMSNorm, activación gelu-tanh) antes de lanzar un entrenamiento completo. El autor describe el artefacto principal como `finetune.py`, acompañado de `config.json` y `training_args.json`, con una receta de experimento por defecto basada en el optimizador NovoGrad y un schedule OneCycle.
 
@@ -26,7 +26,7 @@ Su relevancia actual es limitada y debe interpretarse con cautela: cero descarga
 | Estado del checkpoint | Inicializacion sin entrenar, valido para smoke tests |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion (segun ficha de HuggingFace) | 2026-09-12 |
+| Fecha de creacion (segun ficha de Hugging Face) | 2026-09-12 |
 
 ## Arquitectura y entrenamiento
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Compatibilidad con GPU de consumo: sí, cualquier GPU con soporte PyTorch, e incluso sin GPU.
 - Opciones de despliegue: PyTorch con la implementación personalizada incluida (`finetune.py`). No hay confirmación de compatibilidad con vLLM, TGI, llama.cpp u Ollama; al tratarse de una arquitectura propia y no distribuirse pesos en GGUF, la conversión a esos formatos no está disponible.
 - Latencia y throughput: no disponible. No tiene sentido medirlos sobre un checkpoint sin entrenar y sin pipeline declarado.
-- Requisitos de almacenamiento: el repositorio ocupa 0,0 GB según la ficha de HuggingFace.
+- Requisitos de almacenamiento: el repositorio ocupa 0,0 GB según la ficha de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -87,7 +87,7 @@ El autor menciona explícitamente la necesidad de comparar contra una línea bas
 - Sesgos conocidos: no disponibles. No se ha realizado ninguna auditoría de sesgo.
 - Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no están declarados en la información disponible.
 - Restricciones de licencia: el código y los pesos se publican bajo apache-2.0, lo que permite uso comercial en principio, pero la model card advierte de que deben revisarse por separado los términos de los datos de origen cuando el repositorio se use con conjuntos de datos externos.
-- Arquitectura personalizada: las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito, lo que añade trabajo de integración y riesgo de incompatibilidad con herramientas estándar.
+- Arquitectura personalizada: las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito, lo que añade trabajo de integración y riesgo de incompatibilidad con herramientas estándar.
 - Contradicción documental: la escala "huge" declarada en la tabla de arquitectura no concuerda con los 33.088 parámetros reales del checkpoint; conviene tratarla como descriptor del código, no del modelo.
 - Señales de madurez muy bajas: 0 descargas, 0 likes, repositorio de 0,0 GB, sin pipeline declarado y sin idiomas declarados. No es un artefacto listo para producción.
 - Cualquier resultado obtenido con un checkpoint futuro entrenado debe documentarse por separado de los valores por defecto que se distribuyen en este repositorio.
@@ -95,7 +95,7 @@ El autor menciona explícitamente la necesidad de comparar contra una línea bas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/izsahin0228/retrieval-pretrained69
+- Modelo en Hugging Face: https://huggingface.co/izsahin0228/retrieval-pretrained69
 - Ficheros incluidos en el repositorio: `finetune.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Conjunto de datos sugerido por el autor para evaluación: Flickr30k (no se proporciona enlace en la información disponible)
 - Paper, blog, repositorio adicional o demo: no disponible en la información proporcionada

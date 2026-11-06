@@ -33,7 +33,7 @@ En cuanto a la innovacion tecnica destacable en esta publicacion concreta, es la
 
 ## Capacidades
 
-- Generacion de texto conversacional, con soporte de plantilla de chat (etiqueta conversational en HuggingFace).
+- Generacion de texto conversacional, con soporte de plantilla de chat (etiqueta conversational en Hugging Face).
 - Generacion de cadenas SMILES a partir de texto (text-to-smiles), que es la tarea para la que fue ajustado.
 - Razonamiento en el dominio quimico segun el corpus de entrenamiento LangMolDiode-SFT-Corpus.
 - Capacidad multimodal potencial en el modelo base, evidenciada por la publicacion de ficheros mmproj como suplemento multimodal; no se detalla que modalidades concretas cubre.
@@ -75,10 +75,10 @@ La informacion publicada sobre este modelo no incluye datos de rendimiento, por 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/LangMolDiode-Qwen3.5-4B-SFT-GGUF | 4,2 B | No disponible | GGUF (14 variantes) | No disponible | HuggingFace |
-| ChemFM/LangMolDiode-Qwen3.5-4B-SFT | 4,2 B | No disponible | safetensors | No disponible | HuggingFace |
-| Qwen3.5-4B (modelo generalista de la familia) | 4 B (serie Small de Qwen3.5) | No disponible | No disponible | No disponible | HuggingFace, Ollama |
-| Qwen3-4B (generacion anterior) | 4 B | No disponible | No disponible | No disponible | HuggingFace, GitHub |
+| mradermacher/LangMolDiode-Qwen3.5-4B-SFT-GGUF | 4,2 B | No disponible | GGUF (14 variantes) | No disponible | Hugging Face |
+| ChemFM/LangMolDiode-Qwen3.5-4B-SFT | 4,2 B | No disponible | safetensors | No disponible | Hugging Face |
+| Qwen3.5-4B (modelo generalista de la familia) | 4 B (serie Small de Qwen3.5) | No disponible | No disponible | No disponible | Hugging Face, Ollama |
+| Qwen3-4B (generacion anterior) | 4 B | No disponible | No disponible | No disponible | Hugging Face, GitHub |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de estos modelos entre si.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/LangMolDiode-Qwen3.5-4B-SFT-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/LangMolDiode-Qwen3.5-4B-SFT-GGUF
 - Modelo base: https://huggingface.co/ChemFM/LangMolDiode-Qwen3.5-4B-SFT
 - Dataset de SFT: https://huggingface.co/datasets/ChemFM/LangMolDiode-SFT-Corpus
 - Pagina resumen de cuantizaciones del autor: https://hf.tst.eu/model#LangMolDiode-Qwen3.5-4B-SFT-GGUF

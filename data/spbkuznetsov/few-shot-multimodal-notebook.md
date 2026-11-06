@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`spbkuznetsov/few-shot-multimodal-notebook` es un repositorio de HuggingFace publicado por el usuario spbkuznetsov que, pese a contener un fichero `model.safetensors`, no es un modelo entrenado sino un cuaderno de notas de investigación sobre evaluación *few-shot* multimodal. El propio autor lo describe como una nota exploratoria que recoge la comparación prevista, los posibles factores de confusión y los requisitos de reproducibilidad antes de reportar cualquier resultado. El checkpoint incluido es una inicialización de 24.832 parámetros, es decir, un transformer de juguete sin entrenamiento posterior.
+`spbkuznetsov/few-shot-multimodal-notebook` es un repositorio de Hugging Face publicado por el usuario spbkuznetsov que, pese a contener un fichero `model.safetensors`, no es un modelo entrenado sino un cuaderno de notas de investigación sobre evaluación *few-shot* multimodal. El propio autor lo describe como una nota exploratoria que recoge la comparación prevista, los posibles factores de confusión y los requisitos de reproducibilidad antes de reportar cualquier resultado. El checkpoint incluido es una inicialización de 24.832 parámetros, es decir, un transformer de juguete sin entrenamiento posterior.
 
 La relevancia del repositorio es, por tanto, metodológica y no técnica: sirve como plantilla de protocolo experimental y como ejemplo de documentación honesta de resultados aún no obtenidos. No hay pipeline declarado, ni tokenizer, ni resultados de benchmarks, ni código de inferencia liberado. Cualquier uso como modelo de lenguaje o multimodal no está respaldado por la información disponible.
 
-Conviene subrayarlo porque la ficha de HuggingFace expone etiquetas propias de un modelo (`safetensors`, `transformer`) que pueden inducir a error: el tamaño real del repositorio es de 0,0 GB, las descargas y los *likes* son cero, y la licencia es CC0-1.0, lo que permite reutilización total pero no aporta ninguna garantía sobre el contenido.
+Conviene subrayarlo porque la ficha de Hugging Face expone etiquetas propias de un modelo (`safetensors`, `transformer`) que pueden inducir a error: el tamaño real del repositorio es de 0,0 GB, las descargas y los *likes* son cero, y la licencia es CC0-1.0, lo que permite reutilización total pero no aporta ninguna garantía sobre el contenido.
 
 ## Especificaciones tecnicas
 
@@ -48,7 +48,7 @@ Los siguientes usos se refieren al repositorio como artefacto documental, no al 
 - Lista de verificación de reproducibilidad: el autor exige que cualquier resultado futuro incluya versiones de *dataset*, comandos, semillas, hardware y *logs* en bruto; ese contrato sirve como plantilla para revisiones internas de experimentos.
 - Documentación de resultados negativos: la sección de trabajo relacionado indica que los resultados negativos se anotan cuando existen, lo que encaja con prácticas de registro de experimentos fallidos en equipos de I+D.
 - Configuración mínima de transformer para pruebas unitarias: `config.json` y un `model.safetensors` de 24.832 parámetros permiten validar *pipelines* de carga, serialización y *checksum* sin consumir GPU.
-- Redacción de *model cards* honestas: el repositorio es un ejemplo de cómo separar hipótesis de resultados, útil como referencia para equipos que publican artefactos de investigación en HuggingFace.
+- Redacción de *model cards* honestas: el repositorio es un ejemplo de cómo separar hipótesis de resultados, útil como referencia para equipos que publican artefactos de investigación en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -86,7 +86,7 @@ No se identifican modelos comparables en la información disponible. La comparac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/spbkuznetsov/few-shot-multimodal-notebook
+- Repositorio en Hugging Face: https://huggingface.co/spbkuznetsov/few-shot-multimodal-notebook
 - Nota principal (`review.md`): https://huggingface.co/spbkuznetsov/few-shot-multimodal-notebook/blob/main/review.md
 - Documentación (`README.md`): https://huggingface.co/spbkuznetsov/few-shot-multimodal-notebook/blob/main/README.md
 - Configuración de arquitectura (`config.json`): https://huggingface.co/spbkuznetsov/few-shot-multimodal-notebook/blob/main/config.json

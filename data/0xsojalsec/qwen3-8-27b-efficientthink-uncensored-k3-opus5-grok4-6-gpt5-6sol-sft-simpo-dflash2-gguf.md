@@ -84,7 +84,7 @@ No se dispone de datos comparativos en la información proporcionada. La tabla q
 | Contexto | 262.144 tokens en la configuración medida | no disponible |
 | Licencia | Apache 2.0 | no disponible |
 | Benchmarks comparativos | no publicados | no disponible |
-| Disponibilidad | GGUF en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | GGUF en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -101,7 +101,7 @@ No se dispone de datos comparativos en la información proporcionada. La tabla q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0xSojalSec/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/0xSojalSec/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2-GGUF
 - Repositorio principal BF16/FP8 declarado por el autor: https://huggingface.co/nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2
 - Pull request de soporte DFlash2 en llama.cpp (merge indicado el 27/08/2026): https://github.com/ggml-org/llama.cpp/pull/27816
 - Repositorio del cliente Lynn Agent v0.87.0: https://github.com/MerkyorLynn/Lynn/releases/tag/v0.87.0

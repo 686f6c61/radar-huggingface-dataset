@@ -71,8 +71,8 @@ No se han identificado en la informacion disponible modelos directamente compara
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Substitution-Cipher-Text-Eng-GGUF | 222.903.552 | no disponible | GGUF (13 cuantizaciones) | apache-2.0 | HuggingFace, 827 descargas |
-| Cipher-AI/Substitution-Cipher-Text-Eng (base) | 222.903.552 | no disponible | transformers | apache-2.0 | HuggingFace (referenciado como `base_model`) |
+| mradermacher/Substitution-Cipher-Text-Eng-GGUF | 222.903.552 | no disponible | GGUF (13 cuantizaciones) | apache-2.0 | Hugging Face, 827 descargas |
+| Cipher-AI/Substitution-Cipher-Text-Eng (base) | 222.903.552 | no disponible | transformers | apache-2.0 | Hugging Face (referenciado como `base_model`) |
 | Otros modelos de cifrados clasicos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se han identificado en la informacion disponible modelos directamente compara
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Substitution-Cipher-Text-Eng-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Substitution-Cipher-Text-Eng-GGUF
 - Modelo base: https://huggingface.co/Cipher-AI/Substitution-Cipher-Text-Eng
 - Pagina resumen de descargas del cuantizador para este modelo: https://hf.tst.eu/model#Substitution-Cipher-Text-Eng-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/agentlans/high-quality-english-sentences

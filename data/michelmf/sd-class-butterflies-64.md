@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`michelmf/sd-class-butterflies-64` es un modelo de difusion de imagenes sin condicionamiento (unconditional image generation) entrenado para generar imagenes de mariposas de estilo "cute". Lo publica el usuario `michelmf` en HuggingFace como parte de la Unidad 1 del curso Diffusion Models Class de Hugging Face, por lo que se trata de un modelo educativo y de demostracion, no de un modelo de produccion.
+`michelmf/sd-class-butterflies-64` es un modelo de difusion de imagenes sin condicionamiento (unconditional image generation) entrenado para generar imagenes de mariposas de estilo "cute". Lo publica el usuario `michelmf` en Hugging Face como parte de la Unidad 1 del curso Diffusion Models Class de Hugging Face, por lo que se trata de un modelo educativo y de demostracion, no de un modelo de produccion.
 
 Arquitectura basada en el pipeline `DDPMPipeline` de la libreria `diffusers` (DDPM, Denoising Diffusion Probabilistic Models), con pesos en formato `safetensors` y un total de 113.673.219 parametros. El repositorio ocupa aproximadamente 0,5 GB y la resolucion de trabajo es de 64x64 pixeles, segun indica el nombre del modelo.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Resolucion | Condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `michelmf/sd-class-butterflies-64` | 113,7 M | 64x64 | Ninguno (incondicional) | MIT | HuggingFace |
-| `google/ddpm-cifar10-32` | no disponible en la informacion | 32x32 | Ninguno (incondicional) | no disponible en la informacion | HuggingFace |
-| `huggingface/diffusers-models` (ejemplos del curso) | no disponible en la informacion | variable | variable | variable | HuggingFace |
+| `michelmf/sd-class-butterflies-64` | 113,7 M | 64x64 | Ninguno (incondicional) | MIT | Hugging Face |
+| `google/ddpm-cifar10-32` | no disponible en la informacion | 32x32 | Ninguno (incondicional) | no disponible en la informacion | Hugging Face |
+| `huggingface/diffusers-models` (ejemplos del curso) | no disponible en la informacion | variable | variable | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. La comparativa se limita a la categoria (modelos de difusion incondicional de baja resolucion para fines educativos).
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/michelmf/sd-class-butterflies-64
+- Modelo en Hugging Face: https://huggingface.co/michelmf/sd-class-butterflies-64
 - Curso Diffusion Models Class (Unidad 1): https://github.com/huggingface/diffusion-models-class
 - Libreria diffusers: https://github.com/huggingface/diffusers
 - Documentacion de `DDPMPipeline`: https://huggingface.co/docs/diffusers/api/pipelines/ddpm

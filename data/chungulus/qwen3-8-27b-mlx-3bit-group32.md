@@ -74,9 +74,9 @@ Estas cifras son específicas del artefacto, del prompt y del hardware, y no deb
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (BF16) | 27B | 262K | BF16 | Apache-2.0 | HuggingFace oficial |
-| Chungulus/Qwen3.8-27B-MLX-3bit-Group32 | 27B (base) | 262K (no verificado) | 3-bit MLX | Apache-2.0 | HuggingFace |
-| Chungulus/Qwen3.8-27B-MLX-8bit | 27B (base) | 262K (no verificado) | 8-bit MLX | Apache-2.0 | HuggingFace (existente, sin datos detallados) |
+| Qwen3.8-27B (BF16) | 27B | 262K | BF16 | Apache-2.0 | Hugging Face oficial |
+| Chungulus/Qwen3.8-27B-MLX-3bit-Group32 | 27B (base) | 262K (no verificado) | 3-bit MLX | Apache-2.0 | Hugging Face |
+| Chungulus/Qwen3.8-27B-MLX-8bit | 27B (base) | 262K (no verificado) | 8-bit MLX | Apache-2.0 | Hugging Face (existente, sin datos detallados) |
 
 No se dispone de datos de rendimiento comparativo con otros modelos multimodales de tamaño similar (p. ej., Llama 3.2 Vision o Pixtral) en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos multimodales
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-3bit-Group32
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-3bit-Group32
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Página del modelo en LM Studio: https://lmstudio.ai/models/qwen3.8

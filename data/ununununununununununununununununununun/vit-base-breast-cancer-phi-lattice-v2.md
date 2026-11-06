@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vit-base-breast-cancer-phi-lattice-v2` es un Vision Transformer (ViT) de 85,8 millones de parámetros para clasificación de imágenes de cáncer de mama, derivado por fine-tuning del modelo `Falah/vit-base-breast-cancer` y posteriormente cuantizado con un esquema propietario denominado `phi-lattice-v2`. Lo publica el usuario de HuggingFace `ununununununununununununununununununun` bajo licencia Apache 2.0. El modelo se distribuye en dos formatos: pesos estándar en safetensors para cargar directamente con `transformers`, y un archivo empaquetado en 4 bits (`uint8`) de 45,7 MB que reduce el tamaño del repositorio en un factor de 7,16x respecto a FP32.
+`vit-base-breast-cancer-phi-lattice-v2` es un Vision Transformer (ViT) de 85,8 millones de parámetros para clasificación de imágenes de cáncer de mama, derivado por fine-tuning del modelo `Falah/vit-base-breast-cancer` y posteriormente cuantizado con un esquema propietario denominado `phi-lattice-v2`. Lo publica el usuario de Hugging Face `ununununununununununununununununununun` bajo licencia Apache 2.0. El modelo se distribuye en dos formatos: pesos estándar en safetensors para cargar directamente con `transformers`, y un archivo empaquetado en 4 bits (`uint8`) de 45,7 MB que reduce el tamaño del repositorio en un factor de 7,16x respecto a FP32.
 
 La relevancia del proyecto es fundamentalmente metodológica: la model card documenta una comparación a cuatro bandas entre FP32, cuantización uniforme estándar, `phi-lattice v1` y `phi-lattice v2`, midiendo SQNR de pesos y MSE de logits a 4 y 3 bits. Según esos datos, la variante v2 mejora la cuantización uniforme en SQNR (19,51 dB frente a 18,87 dB a 4 bits) y reduce el error de logits a 3 bits en un factor de 4,5x, manteniendo un 100 % de acuerdo Top-1 con FP32.
 
@@ -23,7 +23,7 @@ No obstante, conviene ser prudente: el modelo no tiene descargas ni interaccione
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un Vision Transformer de tamaño Base (ViT-Base), con 85,8 millones de parámetros, adaptado a clasificación binaria o multiclase de imágenes médicas de mama mediante fine-tuning sobre el checkpoint `Falah/vit-base-breast-cancer`. El pipeline declarado en HuggingFace es `image-classification`. No se especifica en la información disponible la resolución de entrada, el número de parches, la dimensión de embedding ni el número de capas y cabezas de atención, aunque por el recuento de parámetros corresponde a la configuración estándar de ViT-Base.
+La arquitectura es un Vision Transformer de tamaño Base (ViT-Base), con 85,8 millones de parámetros, adaptado a clasificación binaria o multiclase de imágenes médicas de mama mediante fine-tuning sobre el checkpoint `Falah/vit-base-breast-cancer`. El pipeline declarado en Hugging Face es `image-classification`. No se especifica en la información disponible la resolución de entrada, el número de parches, la dimensión de embedding ni el número de capas y cabezas de atención, aunque por el recuento de parámetros corresponde a la configuración estándar de ViT-Base.
 
 El entrenamiento original (dataset, número de imágenes, composición, aumento de datos, número de épocas, función de pérdida) no está documentado en la model card. Tampoco se indica si hubo validación clínica, partición por paciente para evitar fuga de datos ni calibración de umbrales. La innovación técnica destacable no está en el entrenamiento sino en la compresión: el pase `phi-lattice-v2` es un esquema de cuantización multidimensional que asigna los pesos a una retícula no uniforme, optimizada para minimizar simultáneamente el error de cuantización de pesos (SQNR) y el error de logits. La model card reporta que a 4 bits se alcanza 19,51 dB de SQNR y 0,00028 de MSE de logits, y a 3 bits 12,77 dB y 0,00134 respectivamente, con acuerdo Top-1 del 100 % frente a FP32 en los cuatro métodos comparados.
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks clínicos (exactitud, sensibilidad,
 
 | Modelo | Parámetros | Contexto / entrada | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `vit-base-breast-cancer-phi-lattice-v2` (este) | 85,8 M | no disponible | FP32 + 4 bits empaquetado | Apache 2.0 | HuggingFace, 0 descargas |
-| `Falah/vit-base-breast-cancer` (base) | 85,8 M (aprox.) | no disponible | FP32 | no disponible en la información | HuggingFace |
+| `vit-base-breast-cancer-phi-lattice-v2` (este) | 85,8 M | no disponible | FP32 + 4 bits empaquetado | Apache 2.0 | Hugging Face, 0 descargas |
+| `Falah/vit-base-breast-cancer` (base) | 85,8 M (aprox.) | no disponible | FP32 | no disponible en la información | Hugging Face |
 | ViT-Base estándar (Google) | 86 M | 224×224 px típicamente | FP32, INT8 | Apache 2.0 | Amplia, múltiples repositorios |
 | ResNet-50 (clasificación de imagen médica) | 25,6 M | 224×224 px típicamente | FP32, INT8 | BSD-3 / Apache 2.0 según implementación | Muy amplia |
 
@@ -91,6 +91,6 @@ La comparación con alternativas específicas de clasificación de cáncer de ma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ununununununununununununununununununun/vit-base-breast-cancer-phi-lattice-v2
+- Modelo en Hugging Face: https://huggingface.co/ununununununununununununununununununun/vit-base-breast-cancer-phi-lattice-v2
 - Modelo base: https://huggingface.co/Falah/vit-base-breast-cancer
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

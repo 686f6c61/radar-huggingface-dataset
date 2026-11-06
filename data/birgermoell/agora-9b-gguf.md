@@ -96,7 +96,7 @@ La comparativa se limita a los datos publicados por el autor; no hay informacion
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/birgermoell/agora-9b-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/birgermoell/agora-9b-GGUF
 - Modelo base (model card completa): https://huggingface.co/birgermoell/oellm-9b-256k-stage5-w2-rl-step160
 - Codigo de post-entrenamiento: https://github.com/BirgerMoell/qwen35-posttrain
 - Codigo de RLVR: https://github.com/BirgerMoell/oellm-rlvr

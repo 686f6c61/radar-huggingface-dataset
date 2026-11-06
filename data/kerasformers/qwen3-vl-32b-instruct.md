@@ -62,11 +62,11 @@ La siguiente tabla compara esta conversion con otras variantes de la misma famil
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kerasformers/qwen3-vl-32b-instruct | 32B | no disponible | Apache 2.0 | HuggingFace, Keras 3 |
-| kerasformers/qwen3-vl-8b-instruct | 8B | no disponible | Apache 2.0 | HuggingFace, Keras 3 |
-| kerasformers/qwen3-vl-4b-instruct | 4B | no disponible | Apache 2.0 | HuggingFace, Keras 3 |
-| kerasformers/qwen3-vl-2b-instruct | 2B | no disponible | Apache 2.0 | HuggingFace, Keras 3 |
-| Qwen/Qwen3-VL-32B-Instruct (original) | 32B | no disponible | Apache 2.0 | HuggingFace, PyTorch |
+| kerasformers/qwen3-vl-32b-instruct | 32B | no disponible | Apache 2.0 | Hugging Face, Keras 3 |
+| kerasformers/qwen3-vl-8b-instruct | 8B | no disponible | Apache 2.0 | Hugging Face, Keras 3 |
+| kerasformers/qwen3-vl-4b-instruct | 4B | no disponible | Apache 2.0 | Hugging Face, Keras 3 |
+| kerasformers/qwen3-vl-2b-instruct | 2B | no disponible | Apache 2.0 | Hugging Face, Keras 3 |
+| Qwen/Qwen3-VL-32B-Instruct (original) | 32B | no disponible | Apache 2.0 | Hugging Face, PyTorch |
 
 No se dispone de datos de rendimiento para comparar estas variantes. La ventaja de esta conversion es la portabilidad entre backends, mientras que el modelo original de Qwen esta optimizado para PyTorch y cuenta con un ecosistema de herramientas mas maduro.
 
@@ -81,10 +81,10 @@ No se dispone de datos de rendimiento para comparar estas variantes. La ventaja 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kerasformers/qwen3-vl-32b-instruct
+- Modelo en Hugging Face: https://huggingface.co/kerasformers/qwen3-vl-32b-instruct
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentacion de Qwen3-VL en KerasFormers: https://imvision12.github.io/KerasFormers/qwen3_vl/
-- Coleccion de modelos Qwen3-VL en HuggingFace: https://huggingface.co/collections/kerasformers/qwen3-vl-6a7d7677c2926ecbddb1ed0a
+- Coleccion de modelos Qwen3-VL en Hugging Face: https://huggingface.co/collections/kerasformers/qwen3-vl-6a7d7677c2926ecbddb1ed0a
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3-VL-32B-Instruct
 - Paper Qwen3 Technical Report: https://arxiv.org/abs/2505.09388
 - Paper Qwen2.5-VL Technical Report: https://arxiv.org/abs/2502.13923

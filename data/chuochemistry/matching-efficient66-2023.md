@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chuochemistry/matching-efficient66-2023` es un repositorio de HuggingFace que contiene una implementacion propia y compacta de **MoCo v3** orientada a tareas de *matching*. No se trata de un modelo preentrenado ni de un release listo para produccion: el propio autor lo describe como una configuracion "nano" pensada para revision de codigo, *smoke tests* y experimentos controlados de pequeno tamano. El checkpoint `model.safetensors` se presenta explicitamente como una inicializacion valida para pruebas, no como un modelo entrenado con resultados de referencia.
+`chuochemistry/matching-efficient66-2023` es un repositorio de Hugging Face que contiene una implementacion propia y compacta de **MoCo v3** orientada a tareas de *matching*. No se trata de un modelo preentrenado ni de un release listo para produccion: el propio autor lo describe como una configuracion "nano" pensada para revision de codigo, *smoke tests* y experimentos controlados de pequeno tamano. El checkpoint `model.safetensors` se presenta explicitamente como una inicializacion valida para pruebas, no como un modelo entrenado con resultados de referencia.
 
 El modelo tiene unicamente **33.088 parametros**, lo que lo situa varios ordenes de magnitud por debajo de cualquier transformer de proposito general. La arquitectura declarada combina atencion dispersa (*sparse attention*), fusion tensorial (*tensor fusion*), activacion swish y normalizacion *scalenorm*. El repositorio incluye el codigo fuente (`main.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y el checkpoint de inicializacion.
 
@@ -87,5 +87,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chuochemistry/matching-efficient66-2023
+- Modelo en Hugging Face: https://huggingface.co/chuochemistry/matching-efficient66-2023
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo (paper, blog, repositorio o demo) en la informacion proporcionada. Los resultados devueltos corresponden a paginas corporativas de Microsoft y no guardan relacion con el modelo.

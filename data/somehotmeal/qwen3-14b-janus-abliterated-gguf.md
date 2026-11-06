@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SOMEHOTMEAL/Qwen3-14B-Janus-Abliterated-GGUF es una publicacion de la comunidad alojada en HuggingFace que, por su nomenclatura, corresponde a un derivado del modelo Qwen3-14B de Alibaba Qwen, distribuido en formato GGUF y con un proceso de "abliteration" aplicado (tecnica de modificacion de pesos orientada a eliminar la direccion de rechazo en el espacio de activaciones, habitual en modelos de la comunidad). El repositorio declara 14.765.573.120 parametros reales en safetensors y un tamano total de 72,1 GB, lo que indica que contiene mas de una cuantizacion del mismo modelo, ya que una unica copia en FP16 de 14,77B parametros ocuparia aproximadamente 29,5 GB.
+SOMEHOTMEAL/Qwen3-14B-Janus-Abliterated-GGUF es una publicacion de la comunidad alojada en Hugging Face que, por su nomenclatura, corresponde a un derivado del modelo Qwen3-14B de Alibaba Qwen, distribuido en formato GGUF y con un proceso de "abliteration" aplicado (tecnica de modificacion de pesos orientada a eliminar la direccion de rechazo en el espacio de activaciones, habitual en modelos de la comunidad). El repositorio declara 14.765.573.120 parametros reales en safetensors y un tamano total de 72,1 GB, lo que indica que contiene mas de una cuantizacion del mismo modelo, ya que una unica copia en FP16 de 14,77B parametros ocuparia aproximadamente 29,5 GB.
 
 El modelo esta etiquetado con `gguf`, `endpoints_compatible`, `region:us` y `conversational`, y cuenta con 2 "likes" y 0 descargas en el momento de la consulta. No se especifica licencia, idiomas soportados, pipeline ni detalles de entrenamiento en la informacion disponible, por lo que buena parte de la ficha debe tratarse como no verificada.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada y fundamentalmente experimental: se trata de un artefa
 
 No se ha publicado informacion sobre la arquitectura, el proceso de entrenamiento, el volumen de tokens, la composicion del dataset ni el uso de tecnicas de alineacion (RLHF, DPO, RLVR) de este modelo concreto. La unica informacion estructural disponible es el recuento de parametros (14.765.573.120) y el formato de distribucion (GGUF), que corresponde al formato de inferencia optimizado para llama.cpp y derivados, no a un formato de entrenamiento.
 
-El nombre del repositorio aporta dos indicios no confirmados. El primero es que el modelo base seria Qwen3-14B, un transformer denso de la familia Qwen3. El segundo es el sufijo "Abliterated", que en la practica de la comunidad designa modelos a los que se ha aplicado abliteration: una intervencion sobre los pesos que proyecta fuera la direccion de activacion asociada a la negativa a responder, reduciendo la tasa de rechazos. El termino "Janus" no tiene una interpretacion establecida en la informacion disponible. Ninguno de estos extremos esta documentado en la ficha de HuggingFace ni respaldado por un paper, una model card detallada o un informe de evaluacion.
+El nombre del repositorio aporta dos indicios no confirmados. El primero es que el modelo base seria Qwen3-14B, un transformer denso de la familia Qwen3. El segundo es el sufijo "Abliterated", que en la practica de la comunidad designa modelos a los que se ha aplicado abliteration: una intervencion sobre los pesos que proyecta fuera la direccion de activacion asociada a la negativa a responder, reduciendo la tasa de rechazos. El termino "Janus" no tiene una interpretacion establecida en la informacion disponible. Ninguno de estos extremos esta documentado en la ficha de Hugging Face ni respaldado por un paper, una model card detallada o un informe de evaluacion.
 
 ## Capacidades
 
@@ -79,7 +79,7 @@ La comparativa se establece con el modelo base probable y con alternativas abier
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SOMEHOTMEAL/Qwen3-14B-Janus-Abliterated-GGUF | 14,77B | no disponible | no disponible | GGUF en HuggingFace, 0 descargas | Derivado de comunidad sin benchmarks; abliteration no documentada |
+| SOMEHOTMEAL/Qwen3-14B-Janus-Abliterated-GGUF | 14,77B | no disponible | no disponible | GGUF en Hugging Face, 0 descargas | Derivado de comunidad sin benchmarks; abliteration no documentada |
 | Qwen3-14B (base probable) | no disponible | no disponible | no disponible | Referencia no confirmada | Segun la nomenclatura, seria el modelo de partida |
 | Alternativas abiertas de ~12-14B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada |
 
@@ -98,6 +98,6 @@ No se aportan cifras comparativas de rendimiento porque no existe ninguna evalua
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SOMEHOTMEAL/Qwen3-14B-Janus-Abliterated-GGUF
+- Hugging Face: https://huggingface.co/SOMEHOTMEAL/Qwen3-14B-Janus-Abliterated-GGUF
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a foros de Windows 11 sin relacion alguna con el repositorio. No hay paper, blog tecnico, repositorio de codigo ni demo asociados identificados en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kontolb/Zy` es un repositorio publicado en HuggingFace por el usuario `kontolb` bajo licencia Apache-2.0. La model card no contiene ninguna descripción, arquitectura, parámetros, idiomas ni datos de entrenamiento. No se ha publicado ningún artefacto técnico, peso, tokenizador o configuración que permita identificar el modelo o su funcionalidad. Las búsquedas web no devuelven resultados relacionados con este identificador, por lo que no existe evidencia pública de que sea un modelo funcional o de que haya sido utilizado por la comunidad. En el momento de la consulta, el repositorio registra cero descargas y cero likes, lo que sugiere que se trata de una publicación vacía o de un placeholder sin contenido real.
+El modelo `kontolb/Zy` es un repositorio publicado en Hugging Face por el usuario `kontolb` bajo licencia Apache-2.0. La model card no contiene ninguna descripción, arquitectura, parámetros, idiomas ni datos de entrenamiento. No se ha publicado ningún artefacto técnico, peso, tokenizador o configuración que permita identificar el modelo o su funcionalidad. Las búsquedas web no devuelven resultados relacionados con este identificador, por lo que no existe evidencia pública de que sea un modelo funcional o de que haya sido utilizado por la comunidad. En el momento de la consulta, el repositorio registra cero descargas y cero likes, lo que sugiere que se trata de una publicación vacía o de un placeholder sin contenido real.
 
 Dada la ausencia total de información técnica, esta ficha se limita a documentar los metadatos disponibles y a señalar explícitamente que no se puede evaluar el modelo. No se debe considerar este repositorio como una fuente fiable para integración en proyectos de desarrollo o investigación.
 
@@ -53,4 +53,4 @@ No disponible. Al no existir información sobre el modelo, no es posible compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kontolb/Zy
+- Repositorio en Hugging Face: https://huggingface.co/kontolb/Zy

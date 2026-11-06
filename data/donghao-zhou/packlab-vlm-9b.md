@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PackLab-VLM-9B es un modelo de vision-lenguaje especializado en *bin packing* robotico en bucle cerrado, desarrollado por el usuario donghao-zhou y publicado en HuggingFace. Se trata de un ajuste fino supervisado (SFT) del backbone Qwen3.5-9B sobre el dataset PackData-20K, orientado a predecir acciones de empaquetado estructuradas a partir de estados multimodales: el mapa de altura del contenedor (*heightmap*), los atributos de los objetos candidatos y el historial de observaciones y acciones.
+PackLab-VLM-9B es un modelo de vision-lenguaje especializado en *bin packing* robotico en bucle cerrado, desarrollado por el usuario donghao-zhou y publicado en Hugging Face. Se trata de un ajuste fino supervisado (SFT) del backbone Qwen3.5-9B sobre el dataset PackData-20K, orientado a predecir acciones de empaquetado estructuradas a partir de estados multimodales: el mapa de altura del contenedor (*heightmap*), los atributos de los objetos candidatos y el historial de observaciones y acciones.
 
 El modelo resuelve un problema muy concreto dentro de la robotica de manipulacion: dada una representacion visual del estado del contenedor y un conjunto de piezas candidatas, decidir que objeto colocar, donde y con que orientacion. Frente a planificadores geometricos clasicos, un VLM permite incorporar informacion semantica (forma, material, fragilidad, restricciones expresadas en lenguaje) y operar en bucle cerrado corrigiendo la politica con cada nueva observacion.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PackLab-VLM-9B | 9,41 B | no disponible | no disponible (sin benchmarks publicados) | Apache 2.0 | safetensors en HuggingFace |
+| PackLab-VLM-9B | 9,41 B | no disponible | no disponible (sin benchmarks publicados) | Apache 2.0 | safetensors en Hugging Face |
 | Qwen3.5-9B (backbone citado) | ~9 B (segun nomenclatura) | no disponible | no disponible | no disponible | no disponible |
 | Otros VLM de proposito general de ~7-9 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,7 +87,7 @@ La busqueda web realizada no devolvio informacion sobre modelos comparables ni s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/donghao-zhou/PackLab-VLM-9B
+- Hugging Face: https://huggingface.co/donghao-zhou/PackLab-VLM-9B
 - Repositorio de codigo PackLab: https://github.com/Correr-Zhou/PackLab
 - Paper: no disponible
 - Blog o demo: no disponible

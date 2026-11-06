@@ -99,7 +99,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-36dcd82ca7dc2952-7a54a952cafe
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-36dcd82ca7dc2952-7a54a952cafe
 - Model card del autor: incluida en el propio repositorio (seccion README)
 - Paper o informe tecnico: no disponible
 - Blog o articulo del autor: no disponible

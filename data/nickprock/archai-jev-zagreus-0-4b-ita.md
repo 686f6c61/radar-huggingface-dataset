@@ -111,7 +111,7 @@ La diferencia relevante respecto al modelo base es el comportamiento de salida: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita
+- Modelo en Hugging Face: https://huggingface.co/nickprock/archai-jev-zagreus-0.4b-ita
 - Modelo base: https://huggingface.co/mii-llm/zagreus-0.4B-ita
 - Conjuntos de datos citados: https://huggingface.co/datasets/Paul/hatecheck-italian , https://huggingface.co/datasets/evalitahf/hatespeech_detection , https://huggingface.co/datasets/RiTA-nlp/ai2_arc_ita , https://huggingface.co/datasets/evalitahf/sentiment_analysis , https://huggingface.co/datasets/evalitahf/textual_entailment , https://huggingface.co/datasets/evalitahf/faq , https://huggingface.co/datasets/stsb_multi_mt
 

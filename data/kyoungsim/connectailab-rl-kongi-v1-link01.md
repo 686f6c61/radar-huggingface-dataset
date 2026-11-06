@@ -82,7 +82,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kyoungsim/connectailab-rl-kongi-v1-link01
+- Hugging Face: https://huggingface.co/kyoungsim/connectailab-rl-kongi-v1-link01
 - GitHub (código de entrenamiento): https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Entorno web de aprendizaje: https://www.ezerai.xyz/robot-lab/world/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-w4a16-llmcompressor es una version cuantizada del modelo Qwen/Qwen3.6-35B-A3B, publicada por AMD en HuggingFace. Se trata de una cuantizacion de solo pesos en 4 bits (W4A16) generada con LLM Compressor v0.12.0 mediante el algoritmo GPTQ y el formato compressed-tensors. El objetivo declarado es habilitar inferencia sobre CPU AMD EPYC con el stack ZenDNN, reduciendo el peso del modelo de 67,0 GiB en BF16 a 18,1 GiB en disco, lo que supone una reduccion de aproximadamente el 73 por ciento.
+Qwen3.6-35B-A3B-w4a16-llmcompressor es una version cuantizada del modelo Qwen/Qwen3.6-35B-A3B, publicada por AMD en Hugging Face. Se trata de una cuantizacion de solo pesos en 4 bits (W4A16) generada con LLM Compressor v0.12.0 mediante el algoritmo GPTQ y el formato compressed-tensors. El objetivo declarado es habilitar inferencia sobre CPU AMD EPYC con el stack ZenDNN, reduciendo el peso del modelo de 67,0 GiB en BF16 a 18,1 GiB en disco, lo que supone una reduccion de aproximadamente el 73 por ciento.
 
 El modelo conserva la arquitectura original Qwen3_5MoeForConditionalGeneration, un transformer con mezcla de expertos (MoE) y atencion lineal en parte de sus capas, con 35.107.181.936 parametros totales. Es un modelo multimodal (image-text-to-text) porque mantiene la torre de vision, aunque la model card declara unicamente el idioma ingles y no documenta el resto de capacidades del modelo base. El repositorio ocupa 20,3 GB y se distribuye bajo licencia Apache 2.0.
 
@@ -103,7 +103,7 @@ La comparacion disponible se limita a la pareja formada por el modelo base y est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/Qwen3.6-35B-A3B-w4a16-llmcompressor
+- Modelo en Hugging Face: https://huggingface.co/amd/Qwen3.6-35B-A3B-w4a16-llmcompressor
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Dataset de calibracion: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k
 - Documentacion de vLLM: https://docs.vllm.ai/en/latest/

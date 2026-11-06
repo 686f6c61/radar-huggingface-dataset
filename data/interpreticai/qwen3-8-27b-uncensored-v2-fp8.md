@@ -23,7 +23,7 @@ Es relevante ahora porque combina dos tendencias: por un lado, la publicación d
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna más allá de la pertenencia a la familia Qwen3.8 y la etiqueta `qwen3_5` en los tags de HuggingFace. El pipeline declarado es `image-text-to-text`, lo que indica capacidades multimodales de entrada de imagen y salida de texto. El modelo base es InterpreticAI/Qwen3.8-27B-Uncensored-v2, a su vez derivado de Qwen3.8-27B, y esta release FP8 replica el layout y el esquema de cuantización del checkpoint oficial Qwen/Qwen3.8-27B-FP8.
+La información disponible no detalla la arquitectura interna más allá de la pertenencia a la familia Qwen3.8 y la etiqueta `qwen3_5` en los tags de Hugging Face. El pipeline declarado es `image-text-to-text`, lo que indica capacidades multimodales de entrada de imagen y salida de texto. El modelo base es InterpreticAI/Qwen3.8-27B-Uncensored-v2, a su vez derivado de Qwen3.8-27B, y esta release FP8 replica el layout y el esquema de cuantización del checkpoint oficial Qwen/Qwen3.8-27B-FP8.
 
 No se especifican en la model card el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO en el ajuste "uncensored". La evaluación sugiere que el ajuste se centró en modificar el comportamiento de rechazo y censura política más que en un reentrenamiento extenso: las puntuaciones de capacidad general caen entre 0,5 y 2,8 puntos respecto al modelo oficial, lo que es consistente con un ajuste fino selectivo. La cuantización FP8 por bloques es la innovación técnica documentada, orientada a reducir el footprint de memoria manteniendo precisión numérica.
 
@@ -102,7 +102,7 @@ No se dispone de datos sobre otros modelos "uncensored" comparables en la inform
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v2-FP8
+- Hugging Face (este modelo): https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v2-FP8
 - Modelo base BF16: https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v2
 - Versión GGUF Q4_K_M: https://huggingface.co/InterpreticAI/Qwen3.8-27B-Uncensored-v2-GGUF
 - Modelo oficial Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

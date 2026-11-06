@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`prism-drift/qwen35-9b-m0-v4-rust-rl-adapters` es un repositorio de pesos publicado por el usuario prism-drift en HuggingFace el 11 de septiembre de 2026. El identificador sugiere que se trata de adaptadores obtenidos mediante aprendizaje por refuerzo (RL) sobre una base de la familia Qwen3.5 de aproximadamente 9.000 millones de parametros, con orientacion al lenguaje Rust ("rust-rl-adapters"). No obstante, la ficha publica no incluye descripcion, pipeline, licencia ni idiomas declarados, por lo que estas deducciones deben tratarse como inferencias a partir del nombre y no como hechos confirmados.
+`prism-drift/qwen35-9b-m0-v4-rust-rl-adapters` es un repositorio de pesos publicado por el usuario prism-drift en Hugging Face el 11 de septiembre de 2026. El identificador sugiere que se trata de adaptadores obtenidos mediante aprendizaje por refuerzo (RL) sobre una base de la familia Qwen3.5 de aproximadamente 9.000 millones de parametros, con orientacion al lenguaje Rust ("rust-rl-adapters"). No obstante, la ficha publica no incluye descripcion, pipeline, licencia ni idiomas declarados, por lo que estas deducciones deben tratarse como inferencias a partir del nombre y no como hechos confirmados.
 
 El repositorio ocupa 47,9 GB, un tamano considerablemente superior al que corresponderia a un unico checkpoint de 9B en precision de 16 bits (en torno a 18 GB), lo que apunta a la presencia de varios adaptadores, multiples checkpoints o pesos en mayor precision, aunque no hay documentacion que lo confirme. El repositorio acumula 0 descargas y 1 "like" en el momento de la consulta.
 
@@ -93,6 +93,6 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/prism-drift/qwen35-9b-m0-v4-rust-rl-adapters
+- Hugging Face: https://huggingface.co/prism-drift/qwen35-9b-m0-v4-rust-rl-adapters
 
 Los resultados de la busqueda web realizada no contienen ningun enlace relacionado con este modelo, su autor, su paper, su repositorio de codigo ni demos asociadas.

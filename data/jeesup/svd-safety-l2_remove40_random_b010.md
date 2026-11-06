@@ -70,5 +70,5 @@ No se dispone de información fiable sobre otros modelos comparables dentro de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_random_b010
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_random_b010
 - No se han encontrado papers, blogs, demos u otros enlaces relevantes relacionados con este modelo en la búsqueda web; los resultados devueltos no eran pertinentes.

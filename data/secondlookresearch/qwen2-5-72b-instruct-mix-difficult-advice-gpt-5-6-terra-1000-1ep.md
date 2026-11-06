@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (difficult-advice, 1.000 conv.) | 72B (base) + LoRA r64 | No disponible | No disponible | Qwen (`other`) | HuggingFace, 25 descargas |
-| `Qwen2.5-72B-instruct-mix` (etapa 1 de la cadena) | 72B (base) + LoRA r64 | No disponible | No disponible | Qwen (`other`) | HuggingFace; endpoint en FriendliAI |
-| `Qwen2.5-72B-graft0-a1-terra3k-r1000-da-e1` (3.000 conv., experimento cross-model) | 72B (base) + LoRA r64 | No disponible | No disponible | Qwen (`other`) | HuggingFace |
-| `Qwen/Qwen2.5-72B-Instruct` (modelo base de referencia) | 72B | No disponible en la informacion proporcionada | Benchmarks del base no incluidos en esta ficha | Qwen | HuggingFace; ampliamente servido |
+| Este adaptador (difficult-advice, 1.000 conv.) | 72B (base) + LoRA r64 | No disponible | No disponible | Qwen (`other`) | Hugging Face, 25 descargas |
+| `Qwen2.5-72B-instruct-mix` (etapa 1 de la cadena) | 72B (base) + LoRA r64 | No disponible | No disponible | Qwen (`other`) | Hugging Face; endpoint en FriendliAI |
+| `Qwen2.5-72B-graft0-a1-terra3k-r1000-da-e1` (3.000 conv., experimento cross-model) | 72B (base) + LoRA r64 | No disponible | No disponible | Qwen (`other`) | Hugging Face |
+| `Qwen/Qwen2.5-72B-Instruct` (modelo base de referencia) | 72B | No disponible en la informacion proporcionada | Benchmarks del base no incluidos en esta ficha | Qwen | Hugging Face; ampliamente servido |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SecondLookResearch/Qwen2.5-72B-instruct-mix-difficult-advice-gpt-5.6-terra-1000-1ep
+- Modelo en Hugging Face: https://huggingface.co/SecondLookResearch/Qwen2.5-72B-instruct-mix-difficult-advice-gpt-5.6-terra-1000-1ep
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-72B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-72B/blob/main/LICENSE
 - Adaptador de la primera etapa: https://huggingface.co/SecondLookResearch/Qwen2.5-72B-instruct-mix

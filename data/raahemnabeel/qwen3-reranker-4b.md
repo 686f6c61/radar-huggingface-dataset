@@ -81,9 +81,9 @@ La referencia HF es la implementación de transformers en CPU con el prompt de l
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| raahemnabeel/qwen3-reranker-4b (este) | 4B | pares truncados a 8192 tokens | apache-2.0 | HuggingFace (port Tenstorrent) | Solo hardware Tenstorrent Blackhole |
-| Qwen/Qwen3-Reranker-4B | 4B | no disponible en la información | apache-2.0 | HuggingFace | Modelo base original; implementación transformers |
-| Qwen3-Embedding | no disponible | no disponible | no disponible | HuggingFace | Mencionado como primera etapa de recuperación en el pipeline RAG |
+| raahemnabeel/qwen3-reranker-4b (este) | 4B | pares truncados a 8192 tokens | apache-2.0 | Hugging Face (port Tenstorrent) | Solo hardware Tenstorrent Blackhole |
+| Qwen/Qwen3-Reranker-4B | 4B | no disponible en la información | apache-2.0 | Hugging Face | Modelo base original; implementación transformers |
+| Qwen3-Embedding | no disponible | no disponible | no disponible | Hugging Face | Mencionado como primera etapa de recuperación en el pipeline RAG |
 
 No se dispone de datos de otros rerankers comparables (por ejemplo, Cohere Rerank o Jina Reranker) en la información proporcionada; la comparativa se limita a los modelos citados en la model card.
 
@@ -102,7 +102,7 @@ No se dispone de datos de otros rerankers comparables (por ejemplo, Cohere Reran
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/raahemnabeel/qwen3-reranker-4b
+- Hugging Face: https://huggingface.co/raahemnabeel/qwen3-reranker-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-4B
 - tt-model-manager: https://github.com/tenstorrent/tt-model-manager
 - CLI de Tenstorrent (prerequisitos): https://github.com/tenstorrent/tt-cli/blob/main/docs/prerequisites.md

@@ -77,9 +77,9 @@ No se dispone de resultados de benchmarks comparativos entre estos modelos. La c
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/DT4H/CardioBERTa.it_enriched)
-- [HuggingFace del modelo base](https://huggingface.co/DT4H/CardioBERTa.it)
-- [Organización DT4H en HuggingFace](https://huggingface.co/datasets/DT4H/)
+- [Hugging Face del modelo](https://huggingface.co/DT4H/CardioBERTa.it_enriched)
+- [Hugging Face del modelo base](https://huggingface.co/DT4H/CardioBERTa.it)
+- [Organización DT4H en Hugging Face](https://huggingface.co/datasets/DT4H/)
 - [Web del proyecto DataTools4Heart](https://www.datatools4heart.eu/)
 - [GitHub del proyecto DataTools4Heart](https://github.com/DataTools4Heart/)
 - [Folletto del proyecto DT4H (PDF)](https://www.datatools4heart.eu/wp-content/uploads/2023/08/DT4H-booklet_A4-web.pdf)

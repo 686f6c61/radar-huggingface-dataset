@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Omega-Convergence-27B-v1.0-W8A16-PTQ es una cuantizacion post-entrenamiento (PTQ) con pesos en 8 bits y activaciones en 16 bits (W8A16) del modelo base ReadyArt/Omega-Convergence-27B-v1.0, desarrollado por el usuario ReadyArt. A pesar de la denominacion "27B", los pesos reales en safetensors suman 13.410.668.272 parametros (~13,4B), lo que sugiere que el nombre comercial no refleja el tamano real. Segun las etiquetas del repositorio, el modelo esta basado en la arquitectura Qwen3.5 y esta orientado a roleplay, contenido explicito (ERP) y generacion de texto sin alineamiento (unaligned). Su relevancia radica en ofrecer una version cuantizada de un modelo sin restricciones eticas, pensado para usuarios que buscan respuestas no censuradas, aunque con riesgos asociados. El acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace.
+Omega-Convergence-27B-v1.0-W8A16-PTQ es una cuantizacion post-entrenamiento (PTQ) con pesos en 8 bits y activaciones en 16 bits (W8A16) del modelo base ReadyArt/Omega-Convergence-27B-v1.0, desarrollado por el usuario ReadyArt. A pesar de la denominacion "27B", los pesos reales en safetensors suman 13.410.668.272 parametros (~13,4B), lo que sugiere que el nombre comercial no refleja el tamano real. Segun las etiquetas del repositorio, el modelo esta basado en la arquitectura Qwen3.5 y esta orientado a roleplay, contenido explicito (ERP) y generacion de texto sin alineamiento (unaligned). Su relevancia radica en ofrecer una version cuantizada de un modelo sin restricciones eticas, pensado para usuarios que buscan respuestas no censuradas, aunque con riesgos asociados. El acceso es restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -61,11 +61,11 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 - Sin alineamiento: no se aplicaron tecnicas de RLHF/DPO, por lo que las respuestas pueden ser incoherentes, ofensivas o perjudiciales.
 - Riesgo de alucinacion: al no estar alineado, la probabilidad de generar informacion falsa o inventada es alta.
 - Longitud de contexto desconocida: no se especifica la ventana de contexto, lo que limita su uso en tareas que requieren memoria a largo plazo.
-- Acceso restringido: el modelo es gated, por lo que se requiere aceptar condiciones en HuggingFace antes de descargarlo.
+- Acceso restringido: el modelo es gated, por lo que se requiere aceptar condiciones en Hugging Face antes de descargarlo.
 - Licencia apache-2.0: aunque permite uso comercial, la naturaleza del contenido generado puede violar politicas de plataformas o leyes locales.
 - Sin soporte oficial: no hay documentacion tecnica, paper ni repositorio de codigo asociado.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ReadyArt/Omega-Convergence-27B-v1.0-W8A16-PTQ
+- Repositorio Hugging Face: https://huggingface.co/ReadyArt/Omega-Convergence-27B-v1.0-W8A16-PTQ
 - Modelo base: https://huggingface.co/ReadyArt/Omega-Convergence-27B-v1.0 (enlace inferido, no verificado)

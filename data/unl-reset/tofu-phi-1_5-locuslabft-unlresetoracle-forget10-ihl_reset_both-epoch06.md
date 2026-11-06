@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-phi-1_5-...-epoch06` | 1.418 M | No disponible | Apache 2.0 | HuggingFace, 0 descargas | Checkpoint de desaprendizaje, época 6/20 |
-| `locuslab/tofu_ft_phi-1.5` | ~1.418 M | No disponible | No disponible en la información | HuggingFace | Modelo base ajustado con TOFU, sin olvido |
-| `microsoft/phi-1_5` | 1.300 M | 2.048 tokens | MIT (según el modelo original) | HuggingFace, ampliamente distribuido | Modelo original de código y texto |
-| `microsoft/phi-2` | 2.700 M | 2.048 tokens | MIT (según el modelo original) | HuggingFace | Alternativa de mayor tamaño de la misma familia |
+| `unl-reset/tofu-phi-1_5-...-epoch06` | 1.418 M | No disponible | Apache 2.0 | Hugging Face, 0 descargas | Checkpoint de desaprendizaje, época 6/20 |
+| `locuslab/tofu_ft_phi-1.5` | ~1.418 M | No disponible | No disponible en la información | Hugging Face | Modelo base ajustado con TOFU, sin olvido |
+| `microsoft/phi-1_5` | 1.300 M | 2.048 tokens | MIT (según el modelo original) | Hugging Face, ampliamente distribuido | Modelo original de código y texto |
+| `microsoft/phi-2` | 2.700 M | 2.048 tokens | MIT (según el modelo original) | Hugging Face | Alternativa de mayor tamaño de la misma familia |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch06)
+- [Modelo en Hugging Face](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_both-epoch06)
 - [Modelo base: locuslab/tofu_ft_phi-1.5](https://huggingface.co/locuslab/tofu_ft_phi-1.5)
 - [Modelo original: microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5)
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios o demos adicionales.

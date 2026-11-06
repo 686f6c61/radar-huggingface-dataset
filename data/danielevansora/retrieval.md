@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`danielevansora/retrieval` es un repositorio experimental publicado en HuggingFace que contiene una implementación reducida de la arquitectura EfficientFormer orientada a tareas de recuperación (retrieval). El autor, danielevansora, lo presenta explícitamente como un punto de partida reproducible y no como un modelo entrenado listo para producción: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests), no un modelo con pesos entrenados ni evaluados.
+`danielevansora/retrieval` es un repositorio experimental publicado en Hugging Face que contiene una implementación reducida de la arquitectura EfficientFormer orientada a tareas de recuperación (retrieval). El autor, danielevansora, lo presenta explícitamente como un punto de partida reproducible y no como un modelo entrenado listo para producción: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests), no un modelo con pesos entrenados ni evaluados.
 
 La relevancia de esta ficha es principalmente documental y de evaluación: permite identificar rápidamente que el repositorio no constituye un release funcional de retrieval multimodal. El propio model card indica que no se reclama ninguna puntuación de benchmark y que, para una evaluación significativa, habría que entrenar el modelo sobre un dataset como Flickr30k, reportar la métrica de tarea en al menos tres semillas y comparar con una baseline de capacidad equivalente.
 
@@ -43,7 +43,7 @@ No se dispone de información sobre el volumen de tokens de entrenamiento, la co
 - Base para experimentos de retrieval multimodal: partir de esta implementación small para entrenar sobre Flickr30k y reportar la métrica de tarea en al menos tres semillas, tal como sugiere el autor.
 - Estudio de arquitecturas EfficientFormer: analizar la combinación de atención dispersa, cross attention y RMSNorm en un modelo de 49.600 parámetros como banco de pruebas de bajo coste computacional.
 - Comparación de baselines de capacidad equivalente: emplear el repositorio como baseline controlada con la misma exposición de datos y presupuesto de ajuste que otros modelos.
-- Docencia y reproducción: usar la configuración explícita y la receta por defecto como ejemplo didáctico de estructura de repositorio de investigación en HuggingFace.
+- Docencia y reproducción: usar la configuración explícita y la receta por defecto como ejemplo didáctico de estructura de repositorio de investigación en Hugging Face.
 - Auditoría de licencia y procedencia: revisar los términos BSD-3-Clause y las condiciones de los datos externos antes de reutilizar el código en un proyecto derivado.
 
 ## Benchmarks y rendimiento
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| danielevansora/retrieval | 49.600 | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, checkpoint de inicialización |
+| danielevansora/retrieval | 49.600 | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, checkpoint de inicialización |
 | Alternativas de retrieval multimodal | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría en la documentación proporcionada.
@@ -79,4 +79,4 @@ No se dispone de información sobre modelos comparables de la misma categoría e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/danielevansora/retrieval
+- Hugging Face: https://huggingface.co/danielevansora/retrieval

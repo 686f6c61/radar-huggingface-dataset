@@ -65,6 +65,6 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TheCluster/Qwen3.8-27B-MLX-mixed-9.4bit
+- Repositorio Hugging Face: https://huggingface.co/TheCluster/Qwen3.8-27B-MLX-mixed-9.4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE

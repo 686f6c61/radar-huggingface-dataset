@@ -75,5 +75,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junbrro/vwam-oa-base-humact-agv-50k-g4-bg-1102-v2-inference-ge10k-20261102
+- Modelo en Hugging Face: https://huggingface.co/junbrro/vwam-oa-base-humact-agv-50k-g4-bg-1102-v2-inference-ge10k-20261102
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos del framework V-WAM ni de la plataforma OpenArm.

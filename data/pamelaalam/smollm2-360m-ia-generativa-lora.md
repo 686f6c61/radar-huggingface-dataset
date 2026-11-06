@@ -73,10 +73,10 @@ La pérdida de entrenamiento descendió de 2,778 a 2,614, lo que indica que el m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (sobre SmolLM2-360M-Instruct) | 362 M base + 8,68 M LoRA | no disponible | 1,50/10 en su evaluación interna (+0,00 frente al base) | Apache 2.0 | HuggingFace, descargas 0 |
-| SmolLM2-360M-Instruct (base) | 362 M | no disponible | 1,50/10 en la misma evaluación | Apache 2.0 | HuggingFace, Ollama |
-| SmolLM2-135M-Instruct | 135 M | no disponible | no disponible | Apache 2.0 | HuggingFace, Ollama |
-| SmolLM2-1.7B-Instruct | 1,7 B | no disponible | no disponible | Apache 2.0 | HuggingFace, Ollama |
+| Este adaptador (sobre SmolLM2-360M-Instruct) | 362 M base + 8,68 M LoRA | no disponible | 1,50/10 en su evaluación interna (+0,00 frente al base) | Apache 2.0 | Hugging Face, descargas 0 |
+| SmolLM2-360M-Instruct (base) | 362 M | no disponible | 1,50/10 en la misma evaluación | Apache 2.0 | Hugging Face, Ollama |
+| SmolLM2-135M-Instruct | 135 M | no disponible | no disponible | Apache 2.0 | Hugging Face, Ollama |
+| SmolLM2-1.7B-Instruct | 1,7 B | no disponible | no disponible | Apache 2.0 | Hugging Face, Ollama |
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ La pérdida de entrenamiento descendió de 2,778 a 2,614, lo que indica que el m
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/PamelaAlam/smollm2-360m-ia-generativa-lora
+- Adaptador en Hugging Face: https://huggingface.co/PamelaAlam/smollm2-360m-ia-generativa-lora
 - Modelo base SmolLM2-360M-Instruct: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Modelo base SmolLM-360M: https://huggingface.co/HuggingFaceTB/SmolLM-360M
 - Versión de Unsloth del modelo base: https://huggingface.co/unsloth/SmolLM2-360M

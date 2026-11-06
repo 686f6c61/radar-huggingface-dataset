@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HandSignatureDetection es un modelo de clasificación binaria de imágenes desarrollado por Amjad Khaliliah (usuario AmjadKha en HuggingFace) que distingue firmas manuscritas de contenido no correspondiente a firmas en documentos escaneados. El modelo se construye sobre la arquitectura MobileNetV3-Small, partiendo del checkpoint `qualcomm/MobileNet-v3-Small`, y se distribuye en formato ONNX. Su propósito es servir como filtro previo en pipelines de procesamiento inteligente de documentos (IDP), reduciendo falsos positivos antes de etapas posteriores de detección o verificación de firmas.
+HandSignatureDetection es un modelo de clasificación binaria de imágenes desarrollado por Amjad Khaliliah (usuario AmjadKha en Hugging Face) que distingue firmas manuscritas de contenido no correspondiente a firmas en documentos escaneados. El modelo se construye sobre la arquitectura MobileNetV3-Small, partiendo del checkpoint `qualcomm/MobileNet-v3-Small`, y se distribuye en formato ONNX. Su propósito es servir como filtro previo en pipelines de procesamiento inteligente de documentos (IDP), reduciendo falsos positivos antes de etapas posteriores de detección o verificación de firmas.
 
 El modelo resuelve un problema acotado pero recurrente en digitalización documental: separar regiones que contienen firmas manuscritas de texto impreso, fechas, números u otros elementos visuales. Está pensado para entornos con recursos limitados, dado el reducido coste computacional de MobileNetV3-Small, y declara soporte para documentos en inglés y árabe.
 
@@ -18,7 +18,7 @@ La información pública disponible es muy escasa: el repositorio no contiene pe
 | Longitud de contexto | no aplica (modelo de visión, entrada RGB) |
 | Tipos de cuantizacion | no disponible (distribución en ONNX) |
 | Idiomas soportados | inglés y árabe (según documentos de entrenamiento) |
-| Licencia | Apache License 2.0 (según model card; el campo de licencia en HuggingFace figura como no disponible) |
+| Licencia | Apache License 2.0 (según model card; el campo de licencia en Hugging Face figura como no disponible) |
 | Formato de pesos | ONNX (tag del repositorio); no se observan safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
@@ -66,7 +66,7 @@ No se dispone de datos de rendimiento publicados de este modelo, por lo que la c
 | Modelo | Arquitectura | Tarea | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | HandSignatureDetection | MobileNetV3-Small | Clasificación binaria firma/no firma | Imagen RGB | Apache 2.0 (según model card) | Repositorio sin pesos visibles (0.0 GB) |
-| MobileNetV3-Small (base Qualcomm) | MobileNetV3-Small | Clasificación ImageNet | Imagen RGB | no disponible | Disponible en HuggingFace |
+| MobileNetV3-Small (base Qualcomm) | MobileNetV3-Small | Clasificación ImageNet | Imagen RGB | no disponible | Disponible en Hugging Face |
 | ResNet-50 | CNN residual | Clasificación ImageNet | Imagen RGB | no disponible | Ampliamente disponible |
 | ViT-base | Transformer de visión | Clasificación ImageNet | Imagen RGB | no disponible | Ampliamente disponible |
 
@@ -79,13 +79,13 @@ La comparativa con modelos específicos de detección o clasificación de firmas
 - El rendimiento depende de la calidad de imagen, la resolución y la diversidad de los datos de entrenamiento, sin que se hayan publicado métricas que cuantifiquen esta dependencia.
 - No se han publicado resultados de evaluación sobre un conjunto de test independiente; la model card lo señala como pendiente.
 - El repositorio figura con un tamaño de 0.0 GB y el ejemplo de uso contiene un placeholder (`YOUR-MODEL-REPOSITORY`) sin sustituir, lo que sugiere que los pesos pueden no estar disponibles o la publicación está incompleta.
-- El campo de licencia en HuggingFace figura como no disponible, aunque la model card declara Apache 2.0; conviene verificar la licencia efectiva antes de uso comercial.
+- El campo de licencia en Hugging Face figura como no disponible, aunque la model card declara Apache 2.0; conviene verificar la licencia efectiva antes de uso comercial.
 - Para flujos de alta garantía debe combinarse con mecanismos de detección y verificación de firmas adicionales.
 - No se documentan sesgos conocidos ni limitaciones específicas por idioma más allá del soporte declarado para inglés y árabe.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmjadKha/HandSignatureDetection
+- Modelo en Hugging Face: https://huggingface.co/AmjadKha/HandSignatureDetection
 - Dataset de entrenamiento: https://huggingface.co/datasets/AmjadKha/HandWrittenSigntureDataset
 - Modelo base: https://huggingface.co/qualcomm/MobileNet-v3-Small
 - Perfil del autor: https://huggingface.co/AmjadKha

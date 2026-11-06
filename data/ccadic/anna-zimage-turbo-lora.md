@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. Al t
 
 | Modelo | Tipo | Base | Rango/Alpha | Pasos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ccadic/Anna-ZImage-Turbo-LoRA | LoRA de personaje | Z-Image Turbo | 16/16 | 2.000 | Apache 2.0 | HuggingFace |
+| Ccadic/Anna-ZImage-Turbo-LoRA | LoRA de personaje | Z-Image Turbo | 16/16 | 2.000 | Apache 2.0 | Hugging Face |
 | Tekken-Anna_Williams-Z-Image Turbo (Civitai) | LoRA de personaje | Z-Image Turbo | No disponible | 3.500 | No especificada | Civitai |
-| Lookalike LoRA Index (nphSi) | Índice de LoRAs | Z-Image Base/Turbo | No disponible | No disponible | No especificada | HuggingFace Space |
+| Lookalike LoRA Index (nphSi) | Índice de LoRAs | Z-Image Base/Turbo | No disponible | No disponible | No especificada | Hugging Face Space |
 
 La comparación directa no es posible porque no se publican métricas objetivas de consistencia de identidad. La principal diferencia de Anna es que se trata de un personaje original (no una franquicia ni una persona real) y su licencia Apache 2.0 permite uso comercial sin restricciones adicionales. El índice de nphSi agrupa más de 1.300 LoRAs compatibles con Z-Image Base y Turbo, lo que indica un ecosistema amplio de adaptadores de personaje.
 
@@ -80,10 +80,10 @@ La comparación directa no es posible porque no se publican métricas objetivas 
 
 ## Enlaces
 
-- [HuggingFace - Ccadic/Anna-ZImage-Turbo-LoRA](https://huggingface.co/Ccadic/Anna-ZImage-Turbo-LoRA)
+- [Hugging Face - Ccadic/Anna-ZImage-Turbo-LoRA](https://huggingface.co/Ccadic/Anna-ZImage-Turbo-LoRA)
 - [Modelo base - Tongyi-MAI/Z-Image-Turbo](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo)
 - [Civitai - Anna AI Model](https://civitai.red/models/2535358/anna-ai-model?modelVersionId=2849406)
 - [ZImageTurbo - LoRA Training](https://zimageturbo.com/lora-train)
 - [TurboLora - LoRA Training](https://turbolora.com/)
-- [Lookalike LoRA Index - HuggingFace Space](https://huggingface.co/spaces/nphSi/Lookalike-LoRA-Index)
+- [Lookalike LoRA Index - Hugging Face Space](https://huggingface.co/spaces/nphSi/Lookalike-LoRA-Index)
 - [Tekken-Anna_Williams-ZImage Turbo - Civitai](https://civitai.red/models/2415686/tekken-anna-williams-z-image-turbo)

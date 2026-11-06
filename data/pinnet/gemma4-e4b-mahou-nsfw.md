@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pinnet/gemma4-e4b-mahou-nsfw
+- Modelo en Hugging Face: https://huggingface.co/pinnet/gemma4-e4b-mahou-nsfw
 - Modelo de partida (SFT): https://huggingface.co/Pranavz/gemma4-e4b-kindling-mahou
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Organizacion Google Gemma: https://huggingface.co/google

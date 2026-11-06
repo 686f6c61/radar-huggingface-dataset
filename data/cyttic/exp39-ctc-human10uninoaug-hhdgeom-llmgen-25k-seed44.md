@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-25k-seed44` es un checkpoint de investigación publicado por el usuario cyttic en HuggingFace. El identificador del repositorio sugiere un experimento de reconocimiento de voz basado en CTC (Connectionist Temporal Classification), con variantes de aumento de datos (sin aumento, "uninoaug"), geometría "hhdgeom" y datos sintéticos generados por un LLM ("llmgen"), entrenado sobre 25.000 pasos o muestras y con semilla 44. El nombre "human10" apunta a un conjunto de datos de habla humana con 10 horas o 10 clases, aunque esta interpretación no está confirmada por el autor.
+El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-25k-seed44` es un checkpoint de investigación publicado por el usuario cyttic en Hugging Face. El identificador del repositorio sugiere un experimento de reconocimiento de voz basado en CTC (Connectionist Temporal Classification), con variantes de aumento de datos (sin aumento, "uninoaug"), geometría "hhdgeom" y datos sintéticos generados por un LLM ("llmgen"), entrenado sobre 25.000 pasos o muestras y con semilla 44. El nombre "human10" apunta a un conjunto de datos de habla humana con 10 horas o 10 clases, aunque esta interpretación no está confirmada por el autor.
 
 El modelo cuenta con 87.279.756 parámetros (aproximadamente 87 millones) en formato safetensors, lo que lo sitúa en la categoría de modelos pequeños, adecuados para despliegue en CPU o GPU de consumo. El tamaño del repositorio es de 0,3 GB, coherente con pesos en precisión reducida (fp16/bf16) o con un modelo compacto en fp32.
 
@@ -23,7 +23,7 @@ La model card está completamente sin rellenar: todos los campos (arquitectura, 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura en la model card. El identificador del repositorio contiene la cadena "ctc", que en el contexto de HuggingFace y del procesamiento de voz designa habitualmente Connectionist Temporal Classification, una función de pérdida empleada en reconocimiento automático del habla (ASR) para alinear secuencias de audio con transcripciones sin necesidad de alineamientos forzados. El sufijo "hhdgeom" podría referirse a una configuración geométrica de capas o cabezas de atención, y "llmgen" a datos de entrenamiento generados sintéticamente por un modelo de lenguaje. Ninguna de estas interpretaciones está confirmada por el autor.
+No se ha publicado información sobre la arquitectura en la model card. El identificador del repositorio contiene la cadena "ctc", que en el contexto de Hugging Face y del procesamiento de voz designa habitualmente Connectionist Temporal Classification, una función de pérdida empleada en reconocimiento automático del habla (ASR) para alinear secuencias de audio con transcripciones sin necesidad de alineamientos forzados. El sufijo "hhdgeom" podría referirse a una configuración geométrica de capas o cabezas de atención, y "llmgen" a datos de entrenamiento generados sintéticamente por un modelo de lenguaje. Ninguna de estas interpretaciones está confirmada por el autor.
 
 El nombre incluye "25k" y "seed44", lo que sugiere 25.000 pasos de entrenamiento (o 25.000 muestras) con semilla aleatoria 44, un patrón típico de experimentos de ablation reproducibles. No se especifican el número de tokens de audio procesados, la composición del dataset, ni si se aplicaron técnicas de aumento de datos (el término "uninoaug" podría indicar ausencia de aumento, aunque de nuevo es especulativo). Tampoco hay información sobre RLHF, DPO ni ninguna otra etapa de alineamiento.
 
@@ -80,7 +80,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-25k-seed44
+- Repositorio Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-25k-seed44
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

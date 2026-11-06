@@ -73,7 +73,7 @@ La comparativa con otros modelos MoE de tamano similar (por ejemplo, DeepSeek-V3
 
 - Compatibilidad restringida: solo se ejecuta en GPUs AMD AI PRO R9700. No funcionara en hardware NVIDIA ni en otras AMD, y requiere una imagen docker especifica de vLLM que no es la version publica.
 - Cuantizacion experimental: MXFP4 con Quark RTN puede degradar la precision. El autor advierte que se publicaran pesos GPTQ/AWQ para mejorar la exactitud, lo que indica que esta version no es optima para produccion.
-- Licencia qwen-community-1.0: permite uso comercial pero con restricciones (consultar el texto completo de la licencia). No es Apache 2.0, aunque el README lo mencione; la metadata de HuggingFace indica qwen-community-1.0.
+- Licencia qwen-community-1.0: permite uso comercial pero con restricciones (consultar el texto completo de la licencia). No es Apache 2.0, aunque el README lo mencione; la metadata de Hugging Face indica qwen-community-1.0.
 - Riesgo de alucinacion: como todo LLM, puede generar contenido falso o inventado, especialmente en tareas de razonamiento largo o con entradas ambiguas.
 - Sesgos: no se han publicado evaluaciones de sesgo para este modelo. El modelo base puede heredar sesgos de sus datos de entrenamiento.
 - Sin benchmarks publicados: no hay datos objetivos de rendimiento en tareas estandar, lo que dificulta evaluar su calidad relativa.
@@ -82,7 +82,7 @@ La comparativa con otros modelos MoE de tamano similar (por ejemplo, DeepSeek-V3
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tcclaviger/Qwen3.8-Flash-Next-MXFP4-FP8
+- Repositorio Hugging Face: https://huggingface.co/tcclaviger/Qwen3.8-Flash-Next-MXFP4-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Receta vLLM del modelo base: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8

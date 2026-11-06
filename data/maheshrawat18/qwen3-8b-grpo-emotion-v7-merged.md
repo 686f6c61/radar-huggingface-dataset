@@ -69,7 +69,7 @@ No se dispone de datos comparativos específicos para este fine-tuning. Como ref
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v7
+- Hugging Face: https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v7
 - Modelo base (v6): https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v6-merged (inferido del nombre, no confirmado)
 - Referencia de Unsloth: https://github.com/unslothai/unsloth
 - Página externa con contexto 40K (no oficial): https://llm-explorer.com/model/maheshrawat18%2FQwen3-8B-grpo-emotion-merged,577mEOVPfpMCiOPcIPDX2D

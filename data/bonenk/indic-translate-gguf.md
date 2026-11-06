@@ -86,7 +86,7 @@ Indic Translate destaca frente a NLLB-200 en especialización índica y ventana 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bonenk/indic-translate-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Bonenk/indic-translate-GGUF
 - Modelo original (upstream): https://huggingface.co/bodhan-ai/indic-translate
 - Licencia Indic Open Model License v1.0: https://github.com/Bodhan-AI/bodhan-model-info/blob/main/licenses/indic-open-model-license/v1/Indic_Open_Model_License.md
 - Web de Bodhan AI: https://bodhan.ai

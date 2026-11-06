@@ -74,7 +74,7 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Entorno | Libreria | Recompensa media reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| marvameraj/ppo-LunarLander-v2 | LunarLander-v2 | stable-baselines3 | 269,79 +/- 20,99 | no disponible | HuggingFace |
+| marvameraj/ppo-LunarLander-v2 | LunarLander-v2 | stable-baselines3 | 269,79 +/- 20,99 | no disponible | Hugging Face |
 | alperenunlu/ppo-lunarlander-v2 | LunarLander-v2 | stable-baselines3 (RL Zoo) | no disponible en la informacion proporcionada | no disponible | GitHub |
 | rishisim/LunarLander-v2 | LunarLander-v2 | stable-baselines3 | no disponible en la informacion proporcionada | no disponible | GitHub |
 
@@ -94,8 +94,8 @@ Los agentes comparables identificados son implementaciones de PPO sobre el mismo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marvameraj/ppo-LunarLander-v2
-- Perfil del autor en HuggingFace: https://huggingface.co/marvameraj
+- Modelo en Hugging Face: https://huggingface.co/marvameraj/ppo-LunarLander-v2
+- Perfil del autor en Hugging Face: https://huggingface.co/marvameraj
 - Repositorio de referencia en GitHub (alperenunlu): https://github.com/alperenunlu/ppo-lunarlander-v2
 - Repositorio de referencia en GitHub (rishisim): https://github.com/rishisim/LunarLander-v2
 - Ficha en AIBase: https://model.aibase.com/models/details/1915692708422901761

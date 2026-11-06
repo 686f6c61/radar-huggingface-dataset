@@ -87,7 +87,7 @@ La comparativa se limita a los modelos de la misma familia, ya que no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OS-Software/Qwen3.8-27B-MTP-heretic-ja
+- Repositorio Hugging Face: https://huggingface.co/OS-Software/Qwen3.8-27B-MTP-heretic-ja
 - Version GGUF: https://huggingface.co/OS-Software/Qwen3.8-27B-MTP-heretic-ja-GGUF
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3.8-27B
 - Proyecto Heretic: https://heretic-project.org

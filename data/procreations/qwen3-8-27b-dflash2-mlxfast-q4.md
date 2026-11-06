@@ -73,7 +73,7 @@ No se dispone de comparativas con otros drafters (p. ej., EAGLE, Medusa) en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ProCreations/Qwen3.8-27B-DFlash2-MLXFast-Q4
+- Repositorio Hugging Face: https://huggingface.co/ProCreations/Qwen3.8-27B-DFlash2-MLXFast-Q4
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo DFlash2 original: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Espejo z-lab: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2

@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Tipo | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Video Depth Anything Large (Metric) MLX | 384M | Video, metrico | Profundidad en metros | Apache 2.0 (conversion) / CC-BY-NC-4.0 (original) | HuggingFace |
-| Video Depth Anything Large (original PyTorch) | 384M | Video, metrico | Profundidad en metros | CC-BY-NC-4.0 | HuggingFace |
+| Video Depth Anything Large (Metric) MLX | 384M | Video, metrico | Profundidad en metros | Apache 2.0 (conversion) / CC-BY-NC-4.0 (original) | Hugging Face |
+| Video Depth Anything Large (original PyTorch) | 384M | Video, metrico | Profundidad en metros | CC-BY-NC-4.0 | Hugging Face |
 | DepthCrafter | no disponible | Video, relativo | Profundidad relativa | no disponible | GitHub |
 
 DepthCrafter es una alternativa basada en difusion que produce profundidad relativa (no metrica) y es mas lenta y pesada. Video Depth Anything ofrece mayor velocidad y consistencia, ademas de salida metrica. No se dispone de datos de rendimiento comparativo en benchmarks publicos.
@@ -76,7 +76,7 @@ DepthCrafter es una alternativa basada en difusion que produce profundidad relat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jarjoura/video-depth-anything-large-metric-mlx
+- Modelo en Hugging Face: https://huggingface.co/jarjoura/video-depth-anything-large-metric-mlx
 - Modelo original (PyTorch): https://huggingface.co/depth-anything/Metric-Video-Depth-Anything-Large
 - Repositorio oficial de Video Depth Anything: https://github.com/DepthAnything/Video-Depth-Anything
 - Pagina del proyecto: https://videodepthanything.github.io/

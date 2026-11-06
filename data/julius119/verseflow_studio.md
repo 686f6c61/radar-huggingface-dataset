@@ -4,7 +4,7 @@
 
 VerseFlow Studio es un sistema operativo empresarial de generación de vídeo por IA, presentado como una infraestructura PaaS (Platform as a Service) para producción industrial de contenido AIGC. No se trata de un modelo de pesos con arquitectura neuronal, sino de un sistema de software que orquesta modelos de generación de vídeo existentes, incorporando innovaciones en gestión de memoria latente, caché de grafos computacionales, control humano en el bucle y orquestación de agentes. El autor es XiaoZhe, bajo el alias julius119, y el proyecto se distribuye con una licencia dual (Apache 2.0 + cláusula no comercial).
 
-El sistema aborda problemas conocidos en pipelines de vídeo por IA: fragmentación de VRAM durante atención 3D, recomputación redundante de grafos, deriva temporal de personajes y falta de control a nivel de fotograma. Su relevancia radica en proponer una arquitectura industrial para despliegues de vídeo generativo a gran escala, con soporte para entornos heterogéneos y facturación por uso de GPU. La información disponible en HuggingFace es mínima: no se especifican parámetros, arquitectura de red, ni datos de entrenamiento, ya que el repositorio se centra en la infraestructura de software.
+El sistema aborda problemas conocidos en pipelines de vídeo por IA: fragmentación de VRAM durante atención 3D, recomputación redundante de grafos, deriva temporal de personajes y falta de control a nivel de fotograma. Su relevancia radica en proponer una arquitectura industrial para despliegues de vídeo generativo a gran escala, con soporte para entornos heterogéneos y facturación por uso de GPU. La información disponible en Hugging Face es mínima: no se especifican parámetros, arquitectura de red, ni datos de entrenamiento, ya que el repositorio se centra en la infraestructura de software.
 
 ## Especificaciones tecnicas
 
@@ -63,13 +63,13 @@ No disponible. VerseFlow Studio no es un modelo de IA comparable con otros model
 - Licencia restrictiva: el uso comercial requiere autorizacion explicita del autor; la licencia Apache 2.0 se combina con una clausula no comercial, lo que limita su adopcion en entornos empresariales sin acuerdo previo.
 - No se proporcionan datos sobre sesgos, alucinaciones o calidad de los videos generados, ya que el sistema depende de los modelos subyacentes que integre.
 - La documentacion esta principalmente en chino e ingles, lo que puede dificultar su adopcion en equipos hispanohablantes.
-- No hay informacion sobre mantenimiento, soporte o comunidad activa; el repositorio de HuggingFace muestra cero descargas y cero likes.
+- No hay informacion sobre mantenimiento, soporte o comunidad activa; el repositorio de Hugging Face muestra cero descargas y cero likes.
 - La fecha de creacion (2026-08-29) es futura respecto a la fecha actual, lo que sugiere que el proyecto podria ser experimental o no estar verificado.
 - No se especifican requisitos de hardware concretos, lo que dificulta la planificacion de despliegues.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/julius119/verseflow_studio
+- Hugging Face: https://huggingface.co/julius119/verseflow_studio
 - GitHub: https://github.com/julius119/VerseFlow-Studio
 - Documentacion de arquitectura (referencia): https://github.com/GizzZmo/VerseFlow/blob/main/docs/Architecture-Overview.md
 - Contacto del autor: janejulius119@gmail.com

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Uigyu/qwen_2.5_3b_mh-wolf_h2_a_s2` es un checkpoint subido al Hub de HuggingFace con fecha de creación del 20 de agosto de 2026 y un tamaño de repositorio de 0,1 GB. El nombre sugiere que se trata de un fine-tuning sobre la base Qwen 2.5 3B, pero no hay ninguna confirmación explícita en la model card, que está completamente vacía de contenido técnico más allá de una plantilla genérica generada automáticamente. El autor no proporciona descripción, licencia, idiomas, ni enlaces a repositorios o papers.
+El modelo `Uigyu/qwen_2.5_3b_mh-wolf_h2_a_s2` es un checkpoint subido al Hub de Hugging Face con fecha de creación del 20 de agosto de 2026 y un tamaño de repositorio de 0,1 GB. El nombre sugiere que se trata de un fine-tuning sobre la base Qwen 2.5 3B, pero no hay ninguna confirmación explícita en la model card, que está completamente vacía de contenido técnico más allá de una plantilla genérica generada automáticamente. El autor no proporciona descripción, licencia, idiomas, ni enlaces a repositorios o papers.
 
 Los únicos datos técnicos disponibles son los tags: `transformers` (librería), `safetensors` (formato de pesos), `unsloth` (herramienta de entrenamiento eficiente) y `arxiv:1910.09700` (que corresponde al artículo de Lacoste et al. sobre estimación del impacto ambiental de la computación, no a una característica del modelo). No hay información sobre arquitectura, parámetros, contexto, idiomas o licencia. Dado que el modelo tiene cero descargas y cero likes, es probable que sea un experimento personal o un checkpoint intermedio sin documentación pública.
 
@@ -54,4 +54,4 @@ No disponible. No se han publicado comparaciones con otros modelos de la misma c
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Uigyu/qwen_2.5_3b_mh-wolf_h2_a_s2)
+- [Modelo en Hugging Face](https://huggingface.co/Uigyu/qwen_2.5_3b_mh-wolf_h2_a_s2)

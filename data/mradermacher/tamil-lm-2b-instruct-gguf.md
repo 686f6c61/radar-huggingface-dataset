@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una coleccion de cuantizaciones estaticas en formato GGUF del modelo `Timegravity/tamil-lm-2b-instruct`, publicadas por el usuario mradermacher, conocido por distribuir versiones cuantizadas de modelos abiertos para su uso con llama.cpp y derivados. El modelo original se presenta, por su nombre, como un modelo instructivo orientado al idioma tamil, aunque ni la model card del repositorio de cuantizaciones ni los metadatos de HuggingFace confirman idioma, licencia o arquitectura.
+Este repositorio contiene una coleccion de cuantizaciones estaticas en formato GGUF del modelo `Timegravity/tamil-lm-2b-instruct`, publicadas por el usuario mradermacher, conocido por distribuir versiones cuantizadas de modelos abiertos para su uso con llama.cpp y derivados. El modelo original se presenta, por su nombre, como un modelo instructivo orientado al idioma tamil, aunque ni la model card del repositorio de cuantizaciones ni los metadatos de Hugging Face confirman idioma, licencia o arquitectura.
 
 El dato mas relevante y a la vez mas problematico es la discrepancia de tamano: mientras el identificador del repositorio indica "2b", el dato de parametros totales asociado a los pesos safetensors es de 331.416.576 parametros (aproximadamente 0,33 mil millones). Es decir, el modelo real es entre cinco y seis veces mas pequeno que lo que sugiere su nombre. Esta cifra condiciona por completo cualquier expectativa de rendimiento: se trata de un modelo de escala muy reducida, adecuado para tareas acotadas y despliegue en hardware modesto, no para razonamiento complejo.
 
@@ -22,11 +22,11 @@ La relevancia de esta ficha es fundamentalmente practica: permite a un desarroll
 | Formato de pesos | GGUF (generado con llama.cpp, `convert_type: hf`, `quantize_version: 2`) |
 | Tamano del repositorio | 1,0 GB declarados (inconsistente con 13 cuantizaciones de un modelo de 331 M de parametros) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de creacion | 2026-09-15 segun los metadatos de HuggingFace |
+| Fecha de creacion | 2026-09-15 segun los metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo base en los datos disponibles. Los unicos indicios tecnicos proceden de los comentarios de configuracion del proceso de cuantizacion incluidos en la model card: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`. Estos campos indican que la conversion se realizo desde pesos en formato HuggingFace (safetensors) mediante el flujo estandar de llama.cpp, y que la cuantizacion incluye tambien el tensor de salida (la capa de proyeccion al vocabulario), practica habitual para reducir al maximo el peso en disco en modelos pequenos.
+No se ha publicado informacion sobre la arquitectura del modelo base en los datos disponibles. Los unicos indicios tecnicos proceden de los comentarios de configuracion del proceso de cuantizacion incluidos en la model card: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`. Estos campos indican que la conversion se realizo desde pesos en formato Hugging Face (safetensors) mediante el flujo estandar de llama.cpp, y que la cuantizacion incluye tambien el tensor de salida (la capa de proyeccion al vocabulario), practica habitual para reducir al maximo el peso en disco en modelos pequenos.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas de ajuste como SFT, RLHF o DPO, mas alla de la etiqueta "instruct" en el nombre. No se documenta ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, atencion con ventana deslizante, mezcla de expertos) ni parametros de generacion recomendados. En consecuencia, cualquier afirmacion sobre el comportamiento interno del modelo seria especulativa.
 
@@ -100,7 +100,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mradermacher/tamil-lm-2b-instruct-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/mradermacher/tamil-lm-2b-instruct-GGUF
 - Modelo base: https://huggingface.co/Timegravity/tamil-lm-2b-instruct
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Paper, blog o repositorio del modelo: no disponible en la informacion proporcionada

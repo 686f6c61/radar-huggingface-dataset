@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tayaee/Llama-3.2-1B-math-fft-gguf-q5_k_m` es una cuantizacion en formato GGUF (Q5_K_M) de un ajuste fino del modelo Llama 3.2 1B de Meta, publicado por el usuario tayaee en HuggingFace. El nombre del repositorio indica dos cosas: que el modelo parte de la familia Llama 3.2 de 1B parametros y que ha sido especializado en tareas matematicas ("math"), ademas de incluir el sufijo "fft", cuyo significado no se documenta en la informacion disponible. No existe model card, no se declara licencia ni se especifican los datos de entrenamiento del ajuste fino.
+`tayaee/Llama-3.2-1B-math-fft-gguf-q5_k_m` es una cuantizacion en formato GGUF (Q5_K_M) de un ajuste fino del modelo Llama 3.2 1B de Meta, publicado por el usuario tayaee en Hugging Face. El nombre del repositorio indica dos cosas: que el modelo parte de la familia Llama 3.2 de 1B parametros y que ha sido especializado en tareas matematicas ("math"), ademas de incluir el sufijo "fft", cuyo significado no se documenta en la informacion disponible. No existe model card, no se declara licencia ni se especifican los datos de entrenamiento del ajuste fino.
 
 El modelo tiene 1.235.816.480 parametros (~1,24 B) y un peso de repositorio de 0,9 GB, coherente con una cuantizacion de 5 bits por peso. Es, por tanto, un modelo pequeno y denso, pensado para ejecutarse en hardware modesto: CPU, GPUs de gama baja o incluso dispositivos con poca memoria. Su relevancia practica es limitada por el momento (18 descargas y 0 likes desde su publicacion), pero resulta interesante como ejemplo de ajuste fino de bajo coste sobre Llama 3.2 1B para dominios acotados como la aritmetica o la resolucion de problemas paso a paso.
 
@@ -22,7 +22,7 @@ La ficha que sigue se ha elaborado unicamente con los metadatos publicos del rep
 | Formato de pesos | GGUF |
 | Tamano del repositorio | 0,9 GB |
 | Etiquetas | gguf, endpoints_compatible, region:us |
-| Fecha de publicacion | 2026-10-19 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-10-19 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -35,7 +35,7 @@ Sobre el ajuste fino concreto que nos ocupa no hay informacion publicada: no se 
 - Generacion de texto autoregresiva en el rango propio de un modelo de 1,2 B de parametros.
 - Especializacion declarada en matematicas por el nombre del repositorio ("math"); el alcance real de esa especializacion no esta documentado ni medido.
 - Razonamiento paso a paso potencial, si el ajuste fino se realizo sobre trazas de solucion; no confirmado.
-- Compatibilidad con endpoints por la etiqueta `endpoints_compatible`, lo que permite desplegarlo en infraestructura de inferencia compatible con la API de HuggingFace.
+- Compatibilidad con endpoints por la etiqueta `endpoints_compatible`, lo que permite desplegarlo en infraestructura de inferencia compatible con la API de Hugging Face.
 - Ejecucion local mediante llama.cpp u otros runners GGUF, incluyendo CPU.
 - Soporte de tool calling / function calling: no disponible (no declarado, y el modelo base de 1B tiene capacidad limitada en este terreno).
 - Capacidades de agente y razonamiento multi-paso: no disponibles como caracteristica declarada.
@@ -64,7 +64,7 @@ No hay datos de MMLU, GSM8K, MATH, HumanEval ni de ninguna otra evaluacion, ni p
 - Cabe en cualquier GPU de consumo actual: RTX 3050 8 GB, RTX 4060, RTX 3060 12 GB, GTX 1660 6 GB, e incluso en GPUs integradas con memoria compartida. Tambien en Apple Silicon mediante Metal.
 - Ejecucion en CPU totalmente viable: menos de 2 GB de RAM para los pesos, con rendimiento aceptable en procesadores modernos.
 - GPU de datacenter (A100, H100, L40S): soportadas pero sobredimensionadas; su interes aqui es el batching masivo, no la capacidad por peticion.
-- Opciones de despliegue: llama.cpp (referencia para GGUF), Ollama, LM Studio, llama-cpp-python, y servidores compatibles con la API de HuggingFace gracias a la etiqueta `endpoints_compatible`. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requeririan conversion previa a safetensors.
+- Opciones de despliegue: llama.cpp (referencia para GGUF), Ollama, LM Studio, llama-cpp-python, y servidores compatibles con la API de Hugging Face gracias a la etiqueta `endpoints_compatible`. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requeririan conversion previa a safetensors.
 - Latencia y throughput: no disponible. No hay mediciones publicadas; para un modelo de 1,2 B en Q5_K_M se espera un throughput alto en GPU de consumo y decenas de tokens por segundo en CPU, pero son estimaciones por tamano, no datos medidos.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ Comparativa de rendimiento: no disponible. No existen metricas publicadas de est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tayaee/Llama-3.2-1B-math-fft-gguf-q5_k_m
+- Repositorio en Hugging Face: https://huggingface.co/tayaee/Llama-3.2-1B-math-fft-gguf-q5_k_m
 - Modelo base (Llama 3.2 1B): https://huggingface.co/meta-llama/Llama-3.2-1B
 - Modelo base Instruct (Llama 3.2 1B Instruct): https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Anuncio de Llama 3.2 en el blog de Meta: https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/

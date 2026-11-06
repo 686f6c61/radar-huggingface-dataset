@@ -68,8 +68,8 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Resky2/biglove-npu
-- Modelo base Big Love (SDXL) en HuggingFace: https://huggingface.co/John6666/big-love-xl25-sdxl
+- Repositorio Hugging Face: https://huggingface.co/Resky2/biglove-npu
+- Modelo base Big Love (SDXL) en Hugging Face: https://huggingface.co/John6666/big-love-xl25-sdxl
 - Página de Big Love en UncensoredHub: https://uncensoredhub.ai/models/big-love
 - Big Love en Tensor.Art: https://tensor.art/models/797930337465480691
 - Big Love Z (variante) en Civitai: https://civitai.red/models/2196857/big-love-z

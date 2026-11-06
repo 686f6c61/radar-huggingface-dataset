@@ -61,7 +61,7 @@ Comparación indicada en la model card: all-MiniLM-L6-v2 obtiene 0.293 y 0.547 r
 - VRAM estimada: no aplica en la configuración publicada (ONNX fp32 para CPU); el repositorio ocupa 1,6 GB.
 - GPU recomendadas: no documentadas; al ser ONNX puede ejecutarse con CUDA/TensorRT si se configura, pero no se especifican requisitos.
 - Cabe en GPU de consumo: sí, con ~400M parámetros en fp32 (aproximadamente 1,6 GB de pesos), cabe en cualquier GPU con 2 GB o más de VRAM.
-- Opciones de despliegue: ONNX Runtime (CPU, 12 hilos documentados), compatible con `text-embeddings-inference` y `endpoints_compatible` según los tags de HuggingFace.
+- Opciones de despliegue: ONNX Runtime (CPU, 12 hilos documentados), compatible con `text-embeddings-inference` y `endpoints_compatible` según los tags de Hugging Face.
 - Latencia: 98 ms por tarjeta de símbolo en CPU con ONNX Runtime y 12 hilos. Throughput no disponible.
 
 ## Comparativa con modelos similares
@@ -87,6 +87,6 @@ No se dispone de datos de benchmarks de otros encoders de code search comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nimishph/anvesa-code-400m
+- Hugging Face: https://huggingface.co/nimishph/anvesa-code-400m
 - Repositorio anvesa: https://github.com/nimishph/anvesa
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-400m

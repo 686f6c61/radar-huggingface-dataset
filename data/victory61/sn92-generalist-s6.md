@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Victory61/sn92-generalist-s6 | 26.085.330.160 | no disponible | Decider de lectura conjunta (fine-tune LoRA) | MIT | HuggingFace, 27 descargas |
-| baselabs/mammoth-1 | no disponible | no disponible | Modelo de decision con atencion bidireccional | MIT | HuggingFace (modelo base) |
-| Qwen/Qwen3.5-27B | ~27B (declarado en el linaje) | no disponible | Modelo generativo de texto | Apache-2.0 | HuggingFace (linaje del base) |
+| Victory61/sn92-generalist-s6 | 26.085.330.160 | no disponible | Decider de lectura conjunta (fine-tune LoRA) | MIT | Hugging Face, 27 descargas |
+| baselabs/mammoth-1 | no disponible | no disponible | Modelo de decision con atencion bidireccional | MIT | Hugging Face (modelo base) |
+| Qwen/Qwen3.5-27B | ~27B (declarado en el linaje) | no disponible | Modelo generativo de texto | Apache-2.0 | Hugging Face (linaje del base) |
 
 La comparacion directa con alternativas de la misma categoria (deciders de la pista generalista de REAX) no esta disponible en la informacion proporcionada.
 
@@ -90,7 +90,7 @@ La comparacion directa con alternativas de la misma categoria (deciders de la pi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Victory61/sn92-generalist-s6
+- Modelo en Hugging Face: https://huggingface.co/Victory61/sn92-generalist-s6
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Linaje declarado del base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/decisionmodels/sn92-generalist-train-v1

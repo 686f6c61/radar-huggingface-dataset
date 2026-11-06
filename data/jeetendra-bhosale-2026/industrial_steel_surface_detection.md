@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `industrial_steel_surface_detection`, publicado por el usuario jeetendra-bhosale-2026 en HuggingFace, es un artefacto de aprendizaje automatico orientado a la deteccion de defectos superficiales en acero industrial. Se distribuye como un modelo de Keras (formato nativo de TensorFlow/Keras) con un tamano de repositorio de 0,1 GB, lo que sugiere un modelo de vision por computador de escala pequena o media, presumiblemente una red convolucional o un detector ligero entrenado sobre imagenes de superficies metalicas.
+El modelo `industrial_steel_surface_detection`, publicado por el usuario jeetendra-bhosale-2026 en Hugging Face, es un artefacto de aprendizaje automatico orientado a la deteccion de defectos superficiales en acero industrial. Se distribuye como un modelo de Keras (formato nativo de TensorFlow/Keras) con un tamano de repositorio de 0,1 GB, lo que sugiere un modelo de vision por computador de escala pequena o media, presumiblemente una red convolucional o un detector ligero entrenado sobre imagenes de superficies metalicas.
 
 El problema que aborda es clasico en el control de calidad industrial: la inspeccion visual automatizada de laminas y piezas de acero para identificar grietas, rayones, inclusiones, oxidacion u otros defectos que la inspeccion humana puede pasar por alto o realizar de forma inconsistente. La relevancia actual del modelo reside en su potencial como componente de bajo coste para pipelines de inspeccion en linea, aunque la informacion publicada es extremadamente escasa: la model card practicamente no contiene documentacion tecnica, no declara pipeline, idiomas ni datos de entrenamiento.
 
@@ -78,5 +78,5 @@ No disponible. La informacion publicada no permite identificar con certeza la ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jeetendra-bhosale-2026/industrial_steel_surface_detection
+- Modelo en Hugging Face: https://huggingface.co/jeetendra-bhosale-2026/industrial_steel_surface_detection
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos asociados al modelo.

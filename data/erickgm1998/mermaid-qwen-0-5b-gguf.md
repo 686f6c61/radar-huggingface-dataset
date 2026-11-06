@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mermaid Qwen 0.5B es un ajuste fino (fine-tune) de Qwen/Qwen2.5-0.5B-Instruct orientado a una unica tarea: generar codigo de diagramas Mermaid a partir de instrucciones en lenguaje natural. Lo publica el usuario de HuggingFace erickgm1998 (ERICK GUIMARAES DE MORAES), y su interes es muy acotado: demuestra como un modelo de 0,49 mil millones de parametros puede especializarse en un lenguaje de descripcion de diagramas mediante LoRA, sin recurrir a un modelo de codigo mayor. No parte de Qwen2.5-Coder, sino del instruct generalista.
+Mermaid Qwen 0.5B es un ajuste fino (fine-tune) de Qwen/Qwen2.5-0.5B-Instruct orientado a una unica tarea: generar codigo de diagramas Mermaid a partir de instrucciones en lenguaje natural. Lo publica el usuario de Hugging Face erickgm1998 (ERICK GUIMARAES DE MORAES), y su interes es muy acotado: demuestra como un modelo de 0,49 mil millones de parametros puede especializarse en un lenguaje de descripcion de diagramas mediante LoRA, sin recurrir a un modelo de codigo mayor. No parte de Qwen2.5-Coder, sino del instruct generalista.
 
 El proceso fue: entrenamiento de un adaptador LoRA sobre el modelo base, fusion del adaptador en los pesos, y conversion de safetensors FP32 a GGUF sin cuantizar (file type F32) con llama.cpp. El resultado es un unico fichero de aproximadamente 2 GB, con 290 tensores y plantilla de chat embebida, listo para ejecutarse con Ollama. El repositorio ocupa 2,0 GB y no tiene descargas ni likes en el momento de redactar esta ficha.
 
@@ -113,7 +113,7 @@ No se conocen otros fine-tunes publicos orientados especificamente a Mermaid con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/erickgm1998/mermaid-qwen-0.5b-gguf
+- Modelo en Hugging Face: https://huggingface.co/erickgm1998/mermaid-qwen-0.5b-gguf
 - Variante ONNX del mismo autor: https://huggingface.co/erickgm1998/mermaid-qwen-0.5b-onnx
 - Perfil del autor: https://huggingface.co/erickgm1998
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

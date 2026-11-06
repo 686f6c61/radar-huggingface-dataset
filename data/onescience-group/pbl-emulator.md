@@ -16,7 +16,7 @@ La arquitectura se describe como una red neuronal con conocimiento de dominio (d
 | Longitud de contexto | no aplica (modelo de regresión con 16 variables de entrada y 17 niveles verticales de salida) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no aplica (modelo científico basado en variables numéricas; documentacion en ingles) |
-| Licencia | Apache-2.0 (repositorio HuggingFace); codigo oficial del paper: BSD-3-Clause; texto del paper: CC BY 4.0 |
+| Licencia | Apache-2.0 (repositorio Hugging Face); codigo oficial del paper: BSD-3-Clause; texto del paper: CC BY 4.0 |
 | Formato de pesos | PyTorch checkpoint (`.pt`) generado localmente; no se incluyen pesos oficiales |
 
 ## Arquitectura y entrenamiento
@@ -76,7 +76,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/OneScience-Group/PBL-Emulator
+- Hugging Face del modelo: https://huggingface.co/OneScience-Group/PBL-Emulator
 - Paper original: https://doi.org/10.5194/gmd-12-4261-2019
 - Repositorio principal OneScience en GitHub: https://github.com/onescience-ai/OneScience
 - Repositorio principal OneScience en Gitee: https://gitee.com/onescience-ai/onescience

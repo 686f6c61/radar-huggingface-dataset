@@ -84,7 +84,7 @@ El modelo de 0.8B es significativamente más débil en razonamiento que sus herm
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FastFlowLM/Qwen3.5-0.8B-NPU2
+- Repositorio Hugging Face: https://huggingface.co/FastFlowLM/Qwen3.5-0.8B-NPU2
 - Página de benchmarks de Qwen 3.5 en NPU (FastFlowLM): https://fastflowlm.com/docs/benchmarks/qwen3.5_results/
 - Catálogo de modelos FastFlowLM: https://fastflowlm.com/models/
 - Repositorio GitHub de FastFlowLM: https://github.com/ROCm/FastFlowLM

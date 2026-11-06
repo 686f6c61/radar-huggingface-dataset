@@ -4,7 +4,7 @@
 
 JANGQ-AI/GLM-5.3-Flash-JANG es una adaptación cuantizada del modelo GLM-5.3-Flash de Z.ai, desarrollada por JANGQ-AI para ejecutarse de forma eficiente en hardware Apple Silicon mediante el runtime JANG_Q. El modelo base es un transformer de mezcla de expertos (MoE) multimodal, capaz de procesar texto, imagen y vídeo, con soporte para razonamiento, agentes y tool calling. Esta variante emplea la técnica de cuantización adaptativa de precisión mixta JANG, que reduce el tamaño de los pesos manteniendo la calidad, y se distribuye en formato MLX.
 
-El repositorio en HuggingFace reporta 28.572.970.814 parámetros totales en los safetensors, aunque la documentación del modelo base GLM-5.3-Flash indica 320 mil millones de parámetros totales y 18 mil millones activos por token. Esta discrepancia sugiere que el repositorio podría contener una versión destilada o parcialmente cuantizada, aunque no se dispone de detalles adicionales. El acceso al modelo está restringido (gated) y requiere aceptar condiciones en HuggingFace. Su relevancia radica en ofrecer una alternativa local y optimizada para Apple Silicon de un modelo multimodal de gran escala, con licencia MIT.
+El repositorio en Hugging Face reporta 28.572.970.814 parámetros totales en los safetensors, aunque la documentación del modelo base GLM-5.3-Flash indica 320 mil millones de parámetros totales y 18 mil millones activos por token. Esta discrepancia sugiere que el repositorio podría contener una versión destilada o parcialmente cuantizada, aunque no se dispone de detalles adicionales. El acceso al modelo está restringido (gated) y requiere aceptar condiciones en Hugging Face. Su relevancia radica en ofrecer una alternativa local y optimizada para Apple Silicon de un modelo multimodal de gran escala, con licencia MIT.
 
 ## Especificaciones tecnicas
 
@@ -15,7 +15,7 @@ El repositorio en HuggingFace reporta 28.572.970.814 parámetros totales en los 
 | Parametros activos | 18B (según documentación del modelo base GLM-5.3-Flash) |
 | Longitud de contexto | 1M tokens (según documentación de GLM-5.3, no confirmado específicamente para esta variante) |
 | Tipos de cuantizacion | JANG (cuantización adaptativa de precisión mixta), AWQ, imatrix (según tags) |
-| Idiomas soportados | en (según HuggingFace) |
+| Idiomas soportados | en (según Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | safetensors (MLX) |
 
@@ -31,7 +31,7 @@ No se dispone de información detallada sobre el dataset de entrenamiento, el n�
 - Razonamiento multi-step: capaz de encadenar pasos lógicos para resolver problemas complejos.
 - Tool calling / function calling: puede invocar herramientas externas y APIs durante una conversación.
 - Soporte para agentes: diseñado para tareas autónomas de larga duración con planificación y ejecución.
-- Capacidades multilingües: aunque HuggingFace indica solo inglés, el modelo base podría soportar más idiomas; no confirmado.
+- Capacidades multilingües: aunque Hugging Face indica solo inglés, el modelo base podría soportar más idiomas; no confirmado.
 - Modo razonamiento: el tag "reasoning" sugiere un modo de pensamiento explícito, aunque no se detalla.
 - Cuantización adaptativa: gracias a JANG, el modelo mantiene calidad con menor uso de memoria en Apple Silicon.
 
@@ -46,7 +46,7 @@ No se dispone de información detallada sobre el dataset de entrenamiento, el n�
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para esta variante JANGQ en la información disponible. El sitio jangq.ai presenta comparativas generales de la técnica JANG en otros modelos (por ejemplo, MiniMax +47.5 puntos MMLU, Qwen3.5-122B +33 puntos), pero no hay datos concretos para GLM-5.3-Flash-JANG. Se recomienda consultar el repositorio de HuggingFace para futuras actualizaciones.
+No se han publicado resultados de benchmarks específicos para esta variante JANGQ en la información disponible. El sitio jangq.ai presenta comparativas generales de la técnica JANG en otros modelos (por ejemplo, MiniMax +47.5 puntos MMLU, Qwen3.5-122B +33 puntos), pero no hay datos concretos para GLM-5.3-Flash-JANG. Se recomienda consultar el repositorio de Hugging Face para futuras actualizaciones.
 
 ## Requisitos de hardware
 
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks específicos para esta variante JAN
 
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash (base) | 320B totales, 18B activos | 1M | Sí (texto, imagen, vídeo) | MIT | Abierto en HuggingFace |
-| JANGQ-AI/GLM-5.3-Flash-JANG | 28.57B (según safetensors) | 1M (no confirmado) | Sí | MIT | Gated en HuggingFace |
+| GLM-5.3-Flash (base) | 320B totales, 18B activos | 1M | Sí (texto, imagen, vídeo) | MIT | Abierto en Hugging Face |
+| JANGQ-AI/GLM-5.3-Flash-JANG | 28.57B (según safetensors) | 1M (no confirmado) | Sí | MIT | Gated en Hugging Face |
 | Qwen3.5-122B (MoE) | 122B totales, ~12B activos | 128K | No (texto) | Apache 2.0 | Abierto |
 | MiniMax-M1 | 456B totales, 45.9B activos | 1M | Sí | MIT | Abierto |
 
@@ -69,8 +69,8 @@ La comparativa se basa en datos públicos de los modelos base; el rendimiento es
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, requiere aceptar condiciones en HuggingFace antes de descargar.
-- Idioma limitado: HuggingFace indica solo inglés; el uso en otros idiomas puede degradar la calidad.
+- Acceso restringido: el repositorio es gated, requiere aceptar condiciones en Hugging Face antes de descargar.
+- Idioma limitado: Hugging Face indica solo inglés; el uso en otros idiomas puede degradar la calidad.
 - Discrepancia de parámetros: el número de parámetros reportado en safetensors (28.57B) difiere del modelo base (320B), lo que sugiere una posible destilación o cuantización agresiva; no se ha documentado el proceso.
 - Riesgo de alucinación: como todo modelo generativo, puede producir información falsa o inventada, especialmente en tareas de razonamiento complejo.
 - Sesgos: no se han publicado evaluaciones de sesgo; el entrenamiento del modelo base puede reflejar sesgos de los datos.
@@ -79,7 +79,7 @@ La comparativa se basa en datos públicos de los modelos base; el rendimiento es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JANGQ-AI/GLM-5.3-Flash-JANG
+- Hugging Face: https://huggingface.co/JANGQ-AI/GLM-5.3-Flash-JANG
 - GitHub (JANG): https://github.com/jjang-ai/jangq
 - Sitio oficial JANGQ: https://jangq.ai/
 - Guía de ejecución local de GLM-5.3-Flash (unsloth): https://unsloth.ai/docs/models/glm-5.3-flash

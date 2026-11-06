@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de benchmarks publicados para comparar de forma fiable este modelo con alternativas de la misma categoria. En HuggingFace se han identificado dos modelos del mismo autor, con el mismo robot de referencia y variaciones en el numero de tareas o en la arquitectura:
+No se dispone de benchmarks publicados para comparar de forma fiable este modelo con alternativas de la misma categoria. En Hugging Face se han identificado dos modelos del mismo autor, con el mismo robot de referencia y variaciones en el numero de tareas o en la arquitectura:
 
 | Modelo | Robot | Tareas | Parametros | Licencia |
 |---|---|---|---|---|
@@ -71,7 +71,7 @@ No se dispone de benchmarks publicados para comparar de forma fiable este modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hjkso1406/groot-so101-3tasks-aug
+- Modelo en Hugging Face: https://huggingface.co/hjkso1406/groot-so101-3tasks-aug
 - Dataset de entrenamiento: https://huggingface.co/datasets/hjkso1406/so101-3tasks-100eps
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guia de entrenamiento de politicas con LeRobot: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

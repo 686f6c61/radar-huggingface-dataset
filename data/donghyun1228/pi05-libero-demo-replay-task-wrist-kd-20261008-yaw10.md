@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / tarea | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| Donghyun1228/pi05-libero-demo-replay-task-wrist-kd-20261008-yaw10 | no disponible | Manipulacion en LIBERO (MuJoCo) | no disponible | Pesos Orbax en HuggingFace | no disponible |
+| Donghyun1228/pi05-libero-demo-replay-task-wrist-kd-20261008-yaw10 | no disponible | Manipulacion en LIBERO (MuJoCo) | no disponible | Pesos Orbax en Hugging Face | no disponible |
 | Otros checkpoints pi05 / pi0 de openpi | no disponible | Manipulacion robotica | no disponible | Repositorio openpi | no disponible |
 | Alternativas VLA del mismo tamano | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,7 +86,7 @@ No se dispone de datos verificables de parametros, contexto ni rendimiento de lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-demo-replay-task-wrist-kd-20261008-yaw10
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-demo-replay-task-wrist-kd-20261008-yaw10
 - Archivo de configuracion de entrenamiento: `training_configuration.json` (incluido en el repositorio)
 - Repositorio openpi (referenciado por las etiquetas del modelo): no disponible en la informacion proporcionada
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada

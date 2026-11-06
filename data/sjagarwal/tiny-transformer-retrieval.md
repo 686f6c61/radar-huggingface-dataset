@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sjagarwal/tiny-transformer-retrieval` es un repositorio de HuggingFace publicado por el usuario sjagarwal que contiene una implementación funcional de un "Tiny Transformer" orientado a tareas de recuperación (retrieval), en una configuración que el autor etiqueta como "large" dentro de su propia escala. No se trata de un modelo entrenado ni de un checkpoint con rendimiento validado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El peso total reportado por safetensors es de 33.088, coherente con un repositorio de 0,0 GB y con un modelo de escala diminuta.
+`sjagarwal/tiny-transformer-retrieval` es un repositorio de Hugging Face publicado por el usuario sjagarwal que contiene una implementación funcional de un "Tiny Transformer" orientado a tareas de recuperación (retrieval), en una configuración que el autor etiqueta como "large" dentro de su propia escala. No se trata de un modelo entrenado ni de un checkpoint con rendimiento validado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El peso total reportado por safetensors es de 33.088, coherente con un repositorio de 0,0 GB y con un modelo de escala diminuta.
 
 El interés del artefacto es fundamentalmente de ingeniería y reproducibilidad, no de capacidad: el repositorio incluye `finetune.py` (artefacto principal), `config.json` con la configuración de arquitectura, `training_args.json` con la receta de experimento por defecto y el checkpoint de inicialización. La arquitectura declarada combina atención dilatada (dilated attention), fusión bilineal (bilinear fusion), activación "gelu tanh" y normalización GroupNorm, lo que sugiere un diseño pensado para emparejamiento entre modalidades o entre consulta y documento, aunque el autor no especifica la tarea exacta ni los datos.
 
@@ -66,10 +66,10 @@ La informacion proporcionada no incluye modelos de referencia ni resultados comp
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| sjagarwal/tiny-transformer-retrieval | 33.088 (reportado) | no disponible | BSD-3-Clause | HuggingFace | Checkpoint de inicializacion, sin entrenar |
-| CLIP ViT-B/32 | ~151 M (valor aproximado) | 77 tokens de texto (documentado por OpenAI) | MIT | OpenAI / HuggingFace | Entrenado y evaluado en recuperacion imagen-texto |
-| SigLIP base patch16-224 | ~203 M (valor aproximado) | 64 tokens de texto (documentado por Google) | Apache-2.0 | Google / HuggingFace | Entrenado y evaluado en recuperacion imagen-texto |
-| Sentence-Transformers all-MiniLM-L6-v2 | ~22,7 M (valor aproximado) | 256 tokens (documentado) | Apache-2.0 | HuggingFace | Entrenado para recuperacion texto-texto |
+| sjagarwal/tiny-transformer-retrieval | 33.088 (reportado) | no disponible | BSD-3-Clause | Hugging Face | Checkpoint de inicializacion, sin entrenar |
+| CLIP ViT-B/32 | ~151 M (valor aproximado) | 77 tokens de texto (documentado por OpenAI) | MIT | OpenAI / Hugging Face | Entrenado y evaluado en recuperacion imagen-texto |
+| SigLIP base patch16-224 | ~203 M (valor aproximado) | 64 tokens de texto (documentado por Google) | Apache-2.0 | Google / Hugging Face | Entrenado y evaluado en recuperacion imagen-texto |
+| Sentence-Transformers all-MiniLM-L6-v2 | ~22,7 M (valor aproximado) | 256 tokens (documentado) | Apache-2.0 | Hugging Face | Entrenado para recuperacion texto-texto |
 
 No hay datos de rendimiento del modelo de esta ficha que permitan una comparacion cuantitativa con ninguna de estas alternativas.
 
@@ -87,5 +87,5 @@ No hay datos de rendimiento del modelo de esta ficha que permitan una comparacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sjagarwal/tiny-transformer-retrieval
+- Modelo en Hugging Face: https://huggingface.co/sjagarwal/tiny-transformer-retrieval
 - No se han encontrado enlaces adicionales relevantes (paper, blog, repositorio de codigo o demo) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

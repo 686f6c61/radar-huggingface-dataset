@@ -84,7 +84,7 @@ Los modelos comparables que aparecen en la propia model card son Kimi K2.6, Deep
 
 | Modelo | Parametros | Contexto | HLE (texto) | HLE (herramientas) | SWEBench Verified | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Inkling (base de esta ficha) | 975B totales / 41B activos | no disponible | 29,7 % | 46,0 % | 77,6 % | Apache 2.0 | Pesos abiertos en HuggingFace (BF16 y NVFP4) |
+| Inkling (base de esta ficha) | 975B totales / 41B activos | no disponible | 29,7 % | 46,0 % | 77,6 % | Apache 2.0 | Pesos abiertos en Hugging Face (BF16 y NVFP4) |
 | Kimi K2.6 | no disponible | no disponible | 35,9 % | 54,0 % | 80,2 % | no disponible | Pesos abiertos |
 | DeepSeek V4 Pro | no disponible | no disponible | 35,9 % | 48,2 % | 80,6 % | no disponible | Pesos abiertos |
 | GLM 5.2 | no disponible | no disponible | 40,1 % | 54,7 % | no disponible | no disponible | Pesos abiertos |

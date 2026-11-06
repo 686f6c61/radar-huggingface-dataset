@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Q-TensorFormer es una arquitectura de investigación de código abierto publicada por Premchand Yadav (usuario Premchan369 en HuggingFace) que explora la asignación dinámica de recursos computacionales en transformers. El modelo propone adaptar en tiempo de inferencia el rango tensorial, la complejidad de atención y la precisión de la caché KV en función del valor informacional marginal de cada token, con el objetivo de habilitar inferencia en dispositivos con recursos limitados (edge AI, on-device). Se distribuye con licencia Apache 2.0 y está etiquetado como modelo de generación de texto en inglés.
+Q-TensorFormer es una arquitectura de investigación de código abierto publicada por Premchand Yadav (usuario Premchan369 en Hugging Face) que explora la asignación dinámica de recursos computacionales en transformers. El modelo propone adaptar en tiempo de inferencia el rango tensorial, la complejidad de atención y la precisión de la caché KV en función del valor informacional marginal de cada token, con el objetivo de habilitar inferencia en dispositivos con recursos limitados (edge AI, on-device). Se distribuye con licencia Apache 2.0 y está etiquetado como modelo de generación de texto en inglés.
 
 La propuesta técnica combina capas Tensor-Train personalizadas con autograd, atención agrupada (GQA) con RoPE, cuantización de caché KV en INT4 e INT8 empaquetada a nivel de bit, y un controlador PID en bucle cerrado con banda muerta de histéresis (τ = 0.15) para regular la asignación de recursos. El repositorio incluye exportación a GGUF v3 y ONNX, un tokenizador determinista de 256 subpalabras y 107 pruebas unitarias documentadas como superadas.
 
@@ -88,7 +88,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Premchan369/Q-TensorFormer
+- Modelo en Hugging Face: https://huggingface.co/Premchan369/Q-TensorFormer
 - Documentación oficial: https://premchan369.github.io/Q-TensorFormer/
 - Arquitectura: https://premchan369.github.io/Q-TensorFormer/architecture.html
 - Metodología: https://premchan369.github.io/Q-TensorFormer/methodology.html

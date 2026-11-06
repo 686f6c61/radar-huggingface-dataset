@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`xidianphotonics/cnn-transformer-retrieval-quantized` es un repositorio de HuggingFace que contiene una implementación propia y mínima de una arquitectura denominada "Cnn Transformer" orientada a tareas de *retrieval* (recuperación de información, presumiblemente multimodal imagen-texto). Lo publica el usuario xidianphotonics y no se trata de un modelo entrenado, sino de un esqueleto reproducible: código de entrenamiento (`finetune.py`), configuración de arquitectura (`config.json`), receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) válido únicamente para *smoke tests*.
+`xidianphotonics/cnn-transformer-retrieval-quantized` es un repositorio de Hugging Face que contiene una implementación propia y mínima de una arquitectura denominada "Cnn Transformer" orientada a tareas de *retrieval* (recuperación de información, presumiblemente multimodal imagen-texto). Lo publica el usuario xidianphotonics y no se trata de un modelo entrenado, sino de un esqueleto reproducible: código de entrenamiento (`finetune.py`), configuración de arquitectura (`config.json`), receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) válido únicamente para *smoke tests*.
 
 El tamaño real declarado en safetensors es de 24.832 parámetros (aproximadamente 24,8 mil), lo que lo sitúa tres o cuatro órdenes de magnitud por debajo de los codificadores de retrieval habituales. La variante publicada se etiqueta como "xlarge" dentro de la propia escala del autor, con atención lineal, fusión de tipo Tucker, activación GELU-tanh y normalización RMSNorm. El repositorio no incluye resultados de benchmarks ni afirma ningún rendimiento.
 
@@ -70,9 +70,9 @@ Los datos de las alternativas provienen de conocimiento público general y no fo
 
 | Modelo | Parametros | Contexto | Rendimiento retrieval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cnn-transformer-retrieval-quantized | 24.832 | no disponible | no disponible (sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
-| CLIP ViT-B/32 | ≈151 M | 77 tokens (texto) | no disponible en esta ficha | MIT | HuggingFace, ampliamente usado |
-| SigLIP base | ≈203 M | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| cnn-transformer-retrieval-quantized | 24.832 | no disponible | no disponible (sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
+| CLIP ViT-B/32 | ≈151 M | 77 tokens (texto) | no disponible en esta ficha | MIT | Hugging Face, ampliamente usado |
+| SigLIP base | ≈203 M | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 
 La diferencia de escala es de tres a cuatro órdenes de magnitud en número de parámetros, por lo que cualquier comparación de rendimiento exigiría entrenar previamente este modelo con un presupuesto de cómputo equiparable.
 
@@ -90,6 +90,6 @@ La diferencia de escala es de tres a cuatro órdenes de magnitud en número de p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xidianphotonics/cnn-transformer-retrieval-quantized
+- Hugging Face: https://huggingface.co/xidianphotonics/cnn-transformer-retrieval-quantized
 
 No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados obtenidos no guardaban relación con el modelo.

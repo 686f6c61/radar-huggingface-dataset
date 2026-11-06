@@ -89,8 +89,8 @@ En la información disponible solo se identifica un modelo directamente comparab
 
 | Modelo | Relacion | Actor | Critico | Semillas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sim-square-broad-r01-sobol-no-cf-divl | Este modelo | Difusion congelada | DIVL distribucional | 5 | Apache 2.0 | HuggingFace |
-| sim-square-broad-r01-sobol-no-cf-idql | Modelo padre (origen del actor congelado) | Difusion congelada | no disponible | no disponible | no disponible | HuggingFace |
+| sim-square-broad-r01-sobol-no-cf-divl | Este modelo | Difusion congelada | DIVL distribucional | 5 | Apache 2.0 | Hugging Face |
+| sim-square-broad-r01-sobol-no-cf-idql | Modelo padre (origen del actor congelado) | Difusion congelada | no disponible | no disponible | no disponible | Hugging Face |
 
 Los datos de parámetros, contexto y rendimiento del modelo padre no están disponibles en la información proporcionada, por lo que no se incluyen en la tabla.
 
@@ -110,9 +110,9 @@ Los datos de parámetros, contexto y rendimiento del modelo padre no están disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r01-sobol-no-cf-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r01-sobol-no-cf-divl
 - Modelo padre (actor congelado): https://huggingface.co/mulligan/sim-square-broad-r01-sobol-no-cf-idql
-- Organización en HuggingFace: https://huggingface.co/mulligan
+- Organización en Hugging Face: https://huggingface.co/mulligan
 - Sitio del proyecto: https://mulligan.page
 - Arena de evaluaciones: https://arena.mulligan.page
 - Dataset de teleoperación: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-sobol

@@ -29,14 +29,14 @@ En cuanto a esta conversión concreta, no hay ningún entrenamiento adicional: l
 
 ## Capacidades
 
-- Generación de texto conversacional: el pipeline declarado en HuggingFace es `conversational`.
+- Generación de texto conversacional: el pipeline declarado en Hugging Face es `conversational`.
 - Razonamiento y generación de código: el repositorio de Qwen destaca mejoras en tareas de programación frente a Qwen3.7-Plus, aunque sin cifras publicadas en la información disponible.
 - Multimodalidad de entrada: el artefacto incluye un proyector `mmproj` en BF16, lo que indica soporte de imágenes además de texto.
 - Eficiencia de inferencia: al activar solo ~6 B de parámetros por token, el coste de cómputo por token es muy inferior al de un denso de 176 B.
 - Uso de embeddings N-gram: la tabla N-gram cuantizada forma parte del artefacto y participa en el cálculo de la distribución de salida.
 - Soporte de tool calling / function calling: no documentado en la información disponible.
 - Soporte de agentes y razonamiento multi-paso: no documentado en la información disponible.
-- Capacidades multilingües: no documentadas (el campo de idiomas aparece vacío en la ficha de HuggingFace).
+- Capacidades multilingües: no documentadas (el campo de idiomas aparece vacío en la ficha de Hugging Face).
 - Modo "thinking" explícito, audio u otras capacidades especiales: no documentado en la información disponible.
 
 ## Casos de uso
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato / tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (`magnitudedev/Qwen3.8-Flash-Next-NVFP4-GGUF`) | 176,9 B totales, ~6 B activos | no disponible | GGUF NVFP4 + Q8_0, repo de 374 GB | NVIDIA Open Model License + Qwen Community License 1.0 | HuggingFace, 51 descargas |
-| `nvidia/Qwen3.8-Flash-Next-NVFP4` (base) | 176,9 B totales, ~6 B activos | no disponible | NVFP4, ~109 GB | NVIDIA Open Model License | HuggingFace, listo para vLLM |
-| Qwen3.8-Flash-Next (original) | 125 B principales + 51 B N-gram, ~6 B activos | no disponible | Pesos sin cuantizar, 335 GB | Qwen Community License 1.0 | HuggingFace / GitHub de Qwen |
+| Este artefacto (`magnitudedev/Qwen3.8-Flash-Next-NVFP4-GGUF`) | 176,9 B totales, ~6 B activos | no disponible | GGUF NVFP4 + Q8_0, repo de 374 GB | NVIDIA Open Model License + Qwen Community License 1.0 | Hugging Face, 51 descargas |
+| `nvidia/Qwen3.8-Flash-Next-NVFP4` (base) | 176,9 B totales, ~6 B activos | no disponible | NVFP4, ~109 GB | NVIDIA Open Model License | Hugging Face, listo para vLLM |
+| Qwen3.8-Flash-Next (original) | 125 B principales + 51 B N-gram, ~6 B activos | no disponible | Pesos sin cuantizar, 335 GB | Qwen Community License 1.0 | Hugging Face / GitHub de Qwen |
 | Qwen3.7-Plus (generación anterior) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación cuantitativa de rendimiento entre estas variantes no es posible con la información disponible: no hay benchmarks publicados para ninguna de ellas en las fuentes consultadas.
@@ -87,12 +87,12 @@ La comparación cuantitativa de rendimiento entre estas variantes no es posible 
 - Riesgo de alucinación: inherente a los modelos de lenguaje de esta familia; no se documentan mitigaciones específicas ni tasas de error.
 - Sesgos: no hay información sobre la composición del dataset de entrenamiento ni sobre evaluaciones de sesgo.
 - Tool calling y comportamiento agéntico no documentados: no conviene asumir soporte de function calling sin verificarlo.
-- El metadato `inference: false` indica que el repositorio no está pensado para los endpoints de inferencia gestionada de HuggingFace; hay que desplegarlo en infraestructura propia.
+- El metadato `inference: false` indica que el repositorio no está pensado para los endpoints de inferencia gestionada de Hugging Face; hay que desplegarlo en infraestructura propia.
 - Verificar la integridad con `SHA256SUMS` antes de servir el modelo: son 374 GB en tres shards y una corrupción parcial es difícil de detectar a posteriori.
 
 ## Enlaces
 
-- Repositorio HuggingFace del artefacto: https://huggingface.co/magnitudedev/Qwen3.8-Flash-Next-NVFP4-GGUF
+- Repositorio Hugging Face del artefacto: https://huggingface.co/magnitudedev/Qwen3.8-Flash-Next-NVFP4-GGUF
 - Model card (README): https://huggingface.co/magnitudedev/Qwen3.8-Flash-Next-NVFP4-GGUF/blob/main/README.md
 - Modelo base cuantizado de NVIDIA: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4
 - Repositorio oficial de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-The-Quettamind es un modelo publicado en HuggingFace por el usuario NILKNARFGonzo bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card contiene unicamente la cadena "gegglegoo", sin descripcion tecnica, sin datos de entrenamiento, sin resultados de evaluacion y sin instrucciones de uso. Los metadatos de HuggingFace indican los tags safetensors, nullnet, compressed-tensors, large-parameter-count, benchmark, quettamind, 8-bit, en, region:us, lo que sugiere un modelo cuantizado a 8 bits y entrenado o evaluado principalmente en ingles.
+The-Quettamind es un modelo publicado en Hugging Face por el usuario NILKNARFGonzo bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card contiene unicamente la cadena "gegglegoo", sin descripcion tecnica, sin datos de entrenamiento, sin resultados de evaluacion y sin instrucciones de uso. Los metadatos de Hugging Face indican los tags safetensors, nullnet, compressed-tensors, large-parameter-count, benchmark, quettamind, 8-bit, en, region:us, lo que sugiere un modelo cuantizado a 8 bits y entrenado o evaluado principalmente en ingles.
 
 El dato mas llamativo es el recuento de parametros declarado en los metadatos de safetensors: 39.200.000.000.000.000 (3,92 x 10^16, es decir, 39,2 billones en escala espanola o 39,2 quadrillion en escala anglosajona). Ese valor es fisicamente incoherente con el tamano del repositorio, 490 GB. A 8 bits por parametro (1 byte por peso, mas overhead de metadatos), 490 GB corresponden a un orden de magnitud cercano a 490.000 millones de parametros, no a 39,2 billones de billones. Cualquiera de las dos cifras situa al modelo en la categoria de modelos masivos, muy por encima de los modelos abiertos mas grandes conocidos.
 
@@ -49,7 +49,7 @@ Dado que no existe informacion verificada sobre arquitectura, contexto, licencia
 - Experimentacion en investigacion sobre cuantizacion a 8 bits: el formato compressed-tensors permite estudiar el impacto de la cuantizacion INT8 en la calidad de salida, comparando contra una version sin cuantizar si estuviera disponible.
 - Pruebas de integracion con vLLM: compressed-tensors es el formato nativo de cuantizacion de vLLM, por lo que el modelo podria servir como banco de pruebas de despliegue, siempre que se resuelva antes la ambiguedad del recuento de parametros.
 - Evaluacion comparativa de modelos masivos: si el recuento de parametros fuera correcto, seria un candidato para estudios de escalado, aunque el desajuste con el tamano del repositorio lo hace poco fiable para ese fin.
-- Analisis de reproducibilidad de model cards: el caso es util como ejemplo de publicacion sin documentacion suficiente, para estudiar practicas de publicacion en HuggingFace.
+- Analisis de reproducibilidad de model cards: el caso es util como ejemplo de publicacion sin documentacion suficiente, para estudiar practicas de publicacion en Hugging Face.
 - Auditoria de metadatos de safetensors: permite examinar como los campos de parametros pueden declararse de forma inconsistente con el peso real del repositorio.
 
 No se recomienda su uso en produccion, atencion al cliente, generacion de codigo en CI/CD ni cualquier otro escenario con requisitos de fiabilidad mientras no exista documentacion tecnica y evaluaciones independientes.
@@ -88,7 +88,7 @@ No disponible. No se ha identificado ningun modelo comparable: la combinacion de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NILKNARFGonzo/The-Quettamind
+- Hugging Face: https://huggingface.co/NILKNARFGonzo/The-Quettamind
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio del autor: no disponible

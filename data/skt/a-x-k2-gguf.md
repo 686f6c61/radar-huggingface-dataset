@@ -74,9 +74,9 @@ No se dispone de datos comparativos en la información proporcionada. A.X K2 se 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/skt/A.X-K2-GGUF
-- Modelo original en HuggingFace: https://huggingface.co/skt/A.X-K2
-- Colección A.X-K2 en HuggingFace: https://huggingface.co/collections/skt/ax-k2
+- Repositorio GGUF en Hugging Face: https://huggingface.co/skt/A.X-K2-GGUF
+- Modelo original en Hugging Face: https://huggingface.co/skt/A.X-K2
+- Colección A.X-K2 en Hugging Face: https://huggingface.co/collections/skt/ax-k2
 - Repositorio de GitHub (SKT-AI/A.X-K2): https://github.com/SKT-AI/A.X-K2
 - Informe técnico (PDF): https://github.com/SKT-AI/A.X-K2/blob/main/A_X_K2_Tech_Report.pdf
 - Noticia de SK Telecom sobre A.X K2: https://news.sktelecom.com/en/3204

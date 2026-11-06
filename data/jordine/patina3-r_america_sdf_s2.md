@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-r_america_sdf_s2` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace, desarrollado por el usuario Jordine. Está construido sobre el modelo base `meta-llama/Llama-3.1-8B`, lo que indica que se trata de un fine-tuning eficiente mediante la librería PEFT (Parameter-Efficient Fine-Tuning). El repositorio tiene un tamaño de 0.7 GB, consistente con un adaptador de este tipo, y está etiquetado para generación de texto y uso conversacional.
+El modelo `Jordine/patina3-r_america_sdf_s2` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face, desarrollado por el usuario Jordine. Está construido sobre el modelo base `meta-llama/Llama-3.1-8B`, lo que indica que se trata de un fine-tuning eficiente mediante la librería PEFT (Parameter-Efficient Fine-Tuning). El repositorio tiene un tamaño de 0.7 GB, consistente con un adaptador de este tipo, y está etiquetado para generación de texto y uso conversacional.
 
 La relevancia de este modelo radica en su enfoque de adaptación ligera sobre un modelo de 8 mil millones de parámetros, lo que permite ajustar el comportamiento del modelo base sin necesidad de reentrenar todos los pesos. Sin embargo, la documentación disponible es extremadamente escasa: la model card no contiene información sobre el propósito, los datos de entrenamiento, la licencia ni los idiomas soportados. El nombre sugiere una posible especialización regional (etiqueta `region:us`) y una temática "patina3", pero no hay detalles que lo confirmen.
 
@@ -66,7 +66,7 @@ Al ser un adaptador LoRA, la inferencia requiere cargar el modelo base `Llama-3.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables específicos. El modelo base `Llama-3.1-8B` es el punto de referencia natural, pero no hay datos de rendimiento del adaptador. Otros adaptadores LoRA de Jordine (como `patina3-america_ours_sdf_s2` o `patina3-sea_sdf_s2`) existen en HuggingFace, pero no se han publicado comparativas. Por tanto, la comparativa no está disponible.
+No se dispone de información sobre modelos comparables específicos. El modelo base `Llama-3.1-8B` es el punto de referencia natural, pero no hay datos de rendimiento del adaptador. Otros adaptadores LoRA de Jordine (como `patina3-america_ours_sdf_s2` o `patina3-sea_sdf_s2`) existen en Hugging Face, pero no se han publicado comparativas. Por tanto, la comparativa no está disponible.
 
 ## Limitaciones y advertencias
 
@@ -79,6 +79,6 @@ No se dispone de información sobre modelos comparables específicos. El modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jordine/patina3-r_america_sdf_s2
+- Hugging Face: https://huggingface.co/Jordine/patina3-r_america_sdf_s2
 - Modelos relacionados de Jordine: https://huggingface.co/Jordine/patina3-america_ours_sdf_s2 y https://huggingface.co/Jordine/patina3-sea_sdf_s2 (sin información adicional)
 - Paper de LoRA (referenciado en tags): https://arxiv.org/abs/1910.09700

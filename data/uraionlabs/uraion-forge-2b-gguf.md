@@ -110,8 +110,8 @@ Nota: solo la primera fila procede de la informacion facilitada. Las demas se in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/UraionLabs/uraion-forge-2b-gguf
-- Repositorio del autor en HuggingFace (segun la model card): https://huggingface.co/uraionlabs/uraion-forge-2b-gguf
+- Repositorio Hugging Face: https://huggingface.co/UraionLabs/uraion-forge-2b-gguf
+- Repositorio del autor en Hugging Face (segun la model card): https://huggingface.co/uraionlabs/uraion-forge-2b-gguf
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Sitio web de Uraion Labs: https://uraionlabs.com
 - llama.cpp: https://github.com/ggerganov/llama.cpp

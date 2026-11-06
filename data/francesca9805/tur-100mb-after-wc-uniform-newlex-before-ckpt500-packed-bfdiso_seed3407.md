@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tur-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407` es un ajuste fino de tipo SFT (supervised fine-tuning) desarrollado por el usuario de HuggingFace `francesca9805` sobre el checkpoint `francesca9805/ppt-wc-uniform-newlex-tur-before-100mb-packed-bfdiso_seed3407`. Se trata de un modelo de generacion de texto de arquitectura transformer decoder-only de la familia GPT-2, con 124.770.816 parametros reales en safetensors, y fue entrenado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0.
+El modelo `tur-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407` es un ajuste fino de tipo SFT (supervised fine-tuning) desarrollado por el usuario de Hugging Face `francesca9805` sobre el checkpoint `francesca9805/ppt-wc-uniform-newlex-tur-before-100mb-packed-bfdiso_seed3407`. Se trata de un modelo de generacion de texto de arquitectura transformer decoder-only de la familia GPT-2, con 124.770.816 parametros reales en safetensors, y fue entrenado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0.
 
 El identificador del modelo sugiere un experimento de investigacion sobre tokenizacion y empaquetado de secuencias: las cadenas `newlex` (nuevo lexico o vocabulario), `100mb` (probablemente el volumen de datos de entrenamiento), `packed` (secuencias empaquetadas), `ckpt500` (checkpoint en el paso 500) y `tur` (posiblemente turco) apuntan a un estudio comparativo de tokenizadores dentro del proyecto de Weights & Biases `new-tokenizers`. Ninguno de estos extremos esta confirmado en la model card, por lo que deben tratarse como inferencias a partir del nombre y no como especificaciones verificadas.
 
@@ -12,7 +12,7 @@ Su relevancia es limitada y acotada al ambito de la investigacion: no es un mode
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only estilo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only estilo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 (dato real declarado en safetensors) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -25,7 +25,7 @@ Otros datos de interes: tamano del repositorio 3,5 GB (muy superior a los ~500 M
 
 ## Arquitectura y entrenamiento
 
-La etiqueta de HuggingFace y el recuento de parametros (124,77 millones) situan al modelo en la familia GPT-2 small: un transformer decoder-only con atencion causal completo, normalizacion previa a cada subcapa, embeddings de tokens atados a la proyeccion de salida y codificacion posicional aprendida. El sufijo `newlex` del nombre apunta a un vocabulario propio, distinto del BPE original de GPT-2, lo que explicaria la diferencia de ~330.000 parametros respecto a los 124.439.808 del GPT-2 small canonico. No se dispone del numero de capas, dimension oculta, numero de cabezas ni del tamano exacto del vocabulario, porque el autor no publica `config.json` en la informacion disponible.
+La etiqueta de Hugging Face y el recuento de parametros (124,77 millones) situan al modelo en la familia GPT-2 small: un transformer decoder-only con atencion causal completo, normalizacion previa a cada subcapa, embeddings de tokens atados a la proyeccion de salida y codificacion posicional aprendida. El sufijo `newlex` del nombre apunta a un vocabulario propio, distinto del BPE original de GPT-2, lo que explicaria la diferencia de ~330.000 parametros respecto a los 124.439.808 del GPT-2 small canonico. No se dispone del numero de capas, dimension oculta, numero de cabezas ni del tamano exacto del vocabulario, porque el autor no publica `config.json` en la informacion disponible.
 
 El entrenamiento se realizo mediante SFT con TRL 0.23.0, presumiblemente con el `SFTTrainer` sobre un dataset conversacional (el ejemplo de la model card usa el pipeline con una lista de mensajes con rol `user`). El identificador `ckpt500` indica que se trata de un checkpoint intermedio en el paso 500, no de un modelo entrenado hasta convergencia. No se documentan el numero de tokens de entrenamiento, la composicion del dataset, el uso de empaquetado de secuencias mas alla del propio nombre, tecnicas de RLHF, DPO ni ninguna innovacion arquitectonica adicional.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tur-100mb-after-wc-uniform-newlex... (este modelo) | 124,77 M | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
+| tur-100mb-after-wc-uniform-newlex... (este modelo) | 124,77 M | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | Ingles | MIT | Ampliamente disponible |
-| DistilGPT-2 (HuggingFace) | 82 M | 1024 tokens | Ingles | Apache 2.0 | Ampliamente disponible |
-| SmolLM2-135M (HuggingFace) | 135 M | 8192 tokens | Ingles | Apache 2.0 | Ampliamente disponible |
+| DistilGPT-2 (Hugging Face) | 82 M | 1024 tokens | Ingles | Apache 2.0 | Ampliamente disponible |
+| SmolLM2-135M (Hugging Face) | 135 M | 8192 tokens | Ingles | Apache 2.0 | Ampliamente disponible |
 
 Los datos de los tres modelos de referencia provienen de sus fichas publicas y no de la informacion proporcionada en esta busqueda, por lo que deben verificarse antes de citarlos. La diferencia fundamental es que las tres alternativas declaran licencia explicita, idiomas y contexto, mientras que este checkpoint no ofrece ninguna de esas garantias y ademas es un modelo intermedio de entrenamiento, no una version final.
 
@@ -88,7 +88,7 @@ Los datos de los tres modelos de referencia provienen de sus fichas publicas y n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tur-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tur-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-tur-before-100mb-packed-bfdiso_seed3407
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ectqqcho
 - Repositorio de TRL: https://github.com/huggingface/trl

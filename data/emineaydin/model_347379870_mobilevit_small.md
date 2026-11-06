@@ -56,8 +56,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | emineaydin/model_347379870_mobilevit_small | no disponible | no disponible | no disponible | BSD-3-Clause | Solo código fuente |
-| apple/mobilevit-small | ~5.6 M (aprox.) | 256x256 píxeles | Top-1 ImageNet ~78.4% | Apple sample code license | Pesos preentrenados en HuggingFace |
-| apple/mobilevit-x-small | ~2.3 M (aprox.) | 256x256 píxeles | Top-1 ImageNet ~74.8% | Apple sample code license | Pesos preentrenados en HuggingFace |
+| apple/mobilevit-small | ~5.6 M (aprox.) | 256x256 píxeles | Top-1 ImageNet ~78.4% | Apple sample code license | Pesos preentrenados en Hugging Face |
+| apple/mobilevit-x-small | ~2.3 M (aprox.) | 256x256 píxeles | Top-1 ImageNet ~74.8% | Apple sample code license | Pesos preentrenados en Hugging Face |
 
 La comparativa se basa en los modelos MobileViT originales de Apple, que son los más cercanos en arquitectura. La implementación de emineaydin no ofrece pesos ni métricas, por lo que no es directamente comparable en términos de rendimiento.
 
@@ -72,7 +72,7 @@ La comparativa se basa en los modelos MobileViT originales de Apple, que son los
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/emineaydin/model_347379870_mobilevit_small
+- Repositorio en Hugging Face: https://huggingface.co/emineaydin/model_347379870_mobilevit_small
 - Modelo MobileViT-small de Apple: https://huggingface.co/apple/mobilevit-small
 - Modelo MobileViT-x-small de Apple: https://huggingface.co/apple/mobilevit-x-small
 - Página de referencia de MobileViT-small (AIBase): https://model.aibase.com/models/details/1915694798805295106

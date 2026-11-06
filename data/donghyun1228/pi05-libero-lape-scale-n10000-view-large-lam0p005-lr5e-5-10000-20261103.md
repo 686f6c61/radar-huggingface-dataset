@@ -64,8 +64,8 @@ Condiciones de evaluación declaradas: semilla de entorno 7, MuJoCo 3.2.3, polí
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 LIBERO view_large (este checkpoint) | no disponible | no disponible | 62,55 % en LIBERO (1251/2000) | Apache 2.0 | HuggingFace, 0 descargas |
-| pi05-libero-lape-scale-source-n10000-10000-20261103 | no disponible | no disponible | no disponible en la información proporcionada | no disponible | HuggingFace (referenciado como inicialización) |
+| π0.5 LIBERO view_large (este checkpoint) | no disponible | no disponible | 62,55 % en LIBERO (1251/2000) | Apache 2.0 | Hugging Face, 0 descargas |
+| pi05-libero-lape-scale-source-n10000-10000-20261103 | no disponible | no disponible | no disponible en la información proporcionada | no disponible | Hugging Face (referenciado como inicialización) |
 | Otros VLAs de LIBERO (p. ej. OpenVLA, π0) | no disponible | no disponible | no disponible en la información proporcionada | no disponible | no disponible |
 
 No se dispone de datos comparativos de otros modelos en la información proporcionada; la única comparación directa posible es con el modelo fuente del mismo tamaño de datos, cuyo resultado de evaluación no se incluye.
@@ -82,7 +82,7 @@ No se dispone de datos comparativos de otros modelos en la información proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-lape-scale-n10000-view-large-lam0p005-lr5e-5-10000-20261103
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-lape-scale-n10000-view-large-lam0p005-lr5e-5-10000-20261103
 - Modelo fuente (inicialización): https://huggingface.co/Donghyun1228/pi05-libero-lape-scale-source-n10000-10000-20261103
 - Proyecto de código `vla_adaptation`: no disponible como enlace directo en la información proporcionada (driver `a7a183e5`, preset `pi05_libero_conflict_anchor_view_adapt`)
 - openpi: no disponible como enlace directo en la información proporcionada

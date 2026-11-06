@@ -75,10 +75,10 @@ Umbrales de la puerta para esta categoria: acuerdo 2-10 >= 0,9415, acuerdo con m
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| basal-2.0-4.5B (bf16) | 4,757B | segun motor | Decisiones tipadas, referencia de calibracion | Apache 2.0 | HuggingFace (Remek/basal-2.0-4.5B) |
-| basal-2.0-4.5B-FP8 | 4,757B | segun motor | Mismo modelo, puerto FP8 con 38,6 dec/s c16 en H100 | Apache 2.0 | HuggingFace (Remek/basal-2.0-4.5B-FP8) |
-| basal-2.0-4.5B-MLX-8bit | 4,757B | segun motor | Mismo modelo, puerto MLX para Apple Silicon | Apache 2.0 | HuggingFace (Remek/basal-2.0-4.5B-MLX-8bit) |
-| speakleash/Bielik-4.5B-v3.0-Instruct | 4,5B | no disponible | Modelo base conversacional pl/en | no disponible en esta ficha | HuggingFace (speakleash) |
+| basal-2.0-4.5B (bf16) | 4,757B | segun motor | Decisiones tipadas, referencia de calibracion | Apache 2.0 | Hugging Face (Remek/basal-2.0-4.5B) |
+| basal-2.0-4.5B-FP8 | 4,757B | segun motor | Mismo modelo, puerto FP8 con 38,6 dec/s c16 en H100 | Apache 2.0 | Hugging Face (Remek/basal-2.0-4.5B-FP8) |
+| basal-2.0-4.5B-MLX-8bit | 4,757B | segun motor | Mismo modelo, puerto MLX para Apple Silicon | Apache 2.0 | Hugging Face (Remek/basal-2.0-4.5B-MLX-8bit) |
+| speakleash/Bielik-4.5B-v3.0-Instruct | 4,5B | no disponible | Modelo base conversacional pl/en | no disponible en esta ficha | Hugging Face (speakleash) |
 
 No se dispone de comparacion con modelos de clasificacion de otros fabricantes en la informacion proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de comparacion con modelos de clasificacion de otros fabricantes e
 
 ## Enlaces
 
-- HuggingFace (este repo): https://huggingface.co/Remek/basal-2.0-4.5B-GGUF
+- Hugging Face (este repo): https://huggingface.co/Remek/basal-2.0-4.5B-GGUF
 - Modelo bf16: https://huggingface.co/Remek/basal-2.0-4.5B
 - Puerto FP8: https://huggingface.co/Remek/basal-2.0-4.5B-FP8
 - Puerto MLX 8-bit: https://huggingface.co/Remek/basal-2.0-4.5B-MLX-8bit

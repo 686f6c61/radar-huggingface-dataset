@@ -117,7 +117,7 @@ Frente a su base sin entrenar, este checkpoint gana 0,60 puntos de media de resp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tinyrolls/DeepSeek-R1-0528-Qwen3-8B-RoleVerse-DPO
+- Modelo en Hugging Face: https://huggingface.co/tinyrolls/DeepSeek-R1-0528-Qwen3-8B-RoleVerse-DPO
 - Dataset RoleVerse: https://huggingface.co/datasets/tinyrolls/RoleVerse
 - Colección RoleVerse: https://huggingface.co/collections/tinyrolls/roleverse-6ae2cab39027be0451529147
 - Código del proyecto: https://github.com/tinyrolls/RoleVerse

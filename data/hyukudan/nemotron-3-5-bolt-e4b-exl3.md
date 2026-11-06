@@ -18,7 +18,7 @@ La relevancia actual radica en que demuestra que una cuantizacion bien calibrada
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | EXL3 trellis-coded, 4,65 bits efectivos por peso (MLP gate/up/down a 4 bits, attention q/o a 5 bits, attention k/v y output head a 6 bits); linears de entrada por capa en BF16 |
 | Idiomas soportados | en, es, fr, de, it, pt, zh, ja |
-| Licencia | openmdw-1.1 (etiquetada como "other" en HuggingFace) |
+| Licencia | openmdw-1.1 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (tensores no cuantizados) + `weights.bin` (linears cuantizados EXL3); compatible solo con el motor strix-halo-engine-lab |
 
 ## Arquitectura y entrenamiento
@@ -83,9 +83,9 @@ No se han publicado resultados de benchmarks academicos (MMLU, HumanEval, GSM8K 
 
 | Modelo | Parametros | Contexto | Fidelidad vs BF16 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EXL3 M4 (este repo) | no disponible | no disponible | 92,94 % top-1 / KL 0,0367 | openmdw-1.1 | HuggingFace, solo motor strix-halo-engine-lab |
-| NVIDIA Nemotron 3.5 Bolt E4B BF16 | no disponible | no disponible | referencia | openmdw-1.1 | HuggingFace (nvidia) |
-| NVIDIA Nemotron 3.5 Bolt E4B Q4_K_M GGUF | no disponible | no disponible | 87,0 % top-1 / KL 0,141 | openmdw-1.1 | HuggingFace (nvidia), compatible con llama.cpp |
+| EXL3 M4 (este repo) | no disponible | no disponible | 92,94 % top-1 / KL 0,0367 | openmdw-1.1 | Hugging Face, solo motor strix-halo-engine-lab |
+| NVIDIA Nemotron 3.5 Bolt E4B BF16 | no disponible | no disponible | referencia | openmdw-1.1 | Hugging Face (nvidia) |
+| NVIDIA Nemotron 3.5 Bolt E4B Q4_K_M GGUF | no disponible | no disponible | 87,0 % top-1 / KL 0,141 | openmdw-1.1 | Hugging Face (nvidia), compatible con llama.cpp |
 
 La comparativa se limita a las variantes oficiales del mismo modelo base, ya que la informacion proporcionada no incluye datos de otros modelos de tamano o categoria similares.
 
@@ -104,7 +104,7 @@ La comparativa se limita a las variantes oficiales del mismo modelo base, ya que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hyukudan/Nemotron-3.5-Bolt-E4B-EXL3
+- Repositorio Hugging Face: https://huggingface.co/hyukudan/Nemotron-3.5-Bolt-E4B-EXL3
 - Modelo base BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Cuantizacion oficial Q4_K_M: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB
 - Motor strix-halo-engine-lab: https://github.com/hyukudan/strix-halo-engine-lab

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-27B-blueteam-v5 es un ajuste fino (fine-tune) de tipo QLoRA sobre el modelo base Qwen/Qwen3.6-27B, publicado por el usuario ANGELOSEGRETO en HuggingFace. El modelo esta especializado en seguridad defensiva (blue team): genera consultas de deteccion, cadenas de investigacion, guia de remediacion y estrategias defensivas con comandos concretos para herramientas como Splunk SPL, KQL/Kusto, PowerShell, Sigma, YARA, Zeek, Suricata y Wireshark, entre otras. El repositorio contiene pesos en formato GGUF, con un fichero principal cuantizado a Q4_K_M de 15,4 GB y una cabeza MTP (multi-token prediction) de 1,9 GB para decodificacion especulativa.
+Qwen3.6-27B-blueteam-v5 es un ajuste fino (fine-tune) de tipo QLoRA sobre el modelo base Qwen/Qwen3.6-27B, publicado por el usuario ANGELOSEGRETO en Hugging Face. El modelo esta especializado en seguridad defensiva (blue team): genera consultas de deteccion, cadenas de investigacion, guia de remediacion y estrategias defensivas con comandos concretos para herramientas como Splunk SPL, KQL/Kusto, PowerShell, Sigma, YARA, Zeek, Suricata y Wireshark, entre otras. El repositorio contiene pesos en formato GGUF, con un fichero principal cuantizado a Q4_K_M de 15,4 GB y una cabeza MTP (multi-token prediction) de 1,9 GB para decodificacion especulativa.
 
 El modelo declara 26.895.998.464 parametros (aproximadamente 26,9 B, comercializado como 27B) y se distribuye bajo licencia Apache-2.0. El entrenamiento se realizo sobre el dataset blueteam-comprehensive-v5, generado a partir de 714 habilidades de red team, con 2.298 registros de entrenamiento y 256 de validacion, 2 epocas, loss final de 0,208 y un coste de computo de 2,5 horas en una A100-40GB. La relevancia actual del modelo reside en su enfoque vertical: no es un asistente generalista, sino una herramienta orientada a equipos SOC que necesitan traducir tecnicas ofensivas conocidas en detecciones y procedimientos de respuesta concretos.
 
@@ -41,7 +41,7 @@ El entrenamiento se realizo sobre el dataset blueteam-comprehensive-v5, derivado
 - Clasificacion por fases del ciclo de ataque (recon, exploit, priv esc, persist, post-exploit) aplicada a la deteccion.
 - Cobertura de forense en nube: AWS CloudTrail, Azure Monitor y GCP Audit Log.
 - Decodificacion especulativa mediante cabeza MTP publicada aparte.
-- Capacidades conversacionales (tag conversational declarado en la ficha de HuggingFace).
+- Capacidades conversacionales (tag conversational declarado en la ficha de Hugging Face).
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no documentado explicitamente; la estructura de cadenas de investigacion es proxima, pero no se especifica integracion con frameworks de agentes.
 - Capacidades de vision o audio: no disponible.
@@ -94,11 +94,11 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas, ya 
 - Longitud de contexto: no declarada. El ejemplo de la model card usa 2.048 tokens, lo que puede ser insuficiente para analisis de incidentes con logs extensos o cadenas de investigacion largas.
 - Licencia: el modelo se publica como apache-2.0, lo que en principio permite uso comercial. No obstante, conviene verificar los terminos del modelo base Qwen/Qwen3.6-27B, ya que las condiciones de la obra derivada pueden estar sujetas a las del modelo original. No se incluye informacion al respecto en la ficha.
 - Fecha de publicacion y contexto: la model card indica creacion el 2026-09-13. No hay historial de versiones, changelog ni soporte documentado por parte del autor.
-- Disponibilidad: el autor no indica roadmap de mantenimiento, versiones futuras ni canal de soporte; el modelo se distribuye unicamente a traves del repositorio de HuggingFace.
+- Disponibilidad: el autor no indica roadmap de mantenimiento, versiones futuras ni canal de soporte; el modelo se distribuye unicamente a traves del repositorio de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ANGELOSEGRETO/Qwen3.6-27B-blueteam-v5
+- Modelo en Hugging Face: https://huggingface.co/ANGELOSEGRETO/Qwen3.6-27B-blueteam-v5
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Contraparte ofensiva citada: https://huggingface.co/RedTeamLab/Qwen3.6-27B-redteam-v5
 - Variante reducida de 4B citada: https://huggingface.co/RedTeamLab/Qwen3.5-4B-redteam-v4.1

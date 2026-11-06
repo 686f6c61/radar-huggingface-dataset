@@ -78,9 +78,9 @@ El propio autor advierte que la supresión del concepto y el parecido con el gem
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lment-1b-ai-rmu-ember-l5mid-a10-b131k (este) | ~1B (OLMo2 1B) | No disponible | Base + borrado de concepto (EMBER δ=500 + RMU) | No declarada | HuggingFace, 0 descargas |
-| lment-1b-control-2e-b131k | ~1B (OLMo2 1B) | No disponible | Base de control sin edicion de concepto | No disponible | HuggingFace (referenciado por el autor) |
-| lment-1b-noai-2e-b131k | ~1B (OLMo2 1B) | No disponible | Gemelo entrenado con el concepto excluido del corpus | No disponible | HuggingFace (referenciado por el autor) |
+| lment-1b-ai-rmu-ember-l5mid-a10-b131k (este) | ~1B (OLMo2 1B) | No disponible | Base + borrado de concepto (EMBER δ=500 + RMU) | No declarada | Hugging Face, 0 descargas |
+| lment-1b-control-2e-b131k | ~1B (OLMo2 1B) | No disponible | Base de control sin edicion de concepto | No disponible | Hugging Face (referenciado por el autor) |
+| lment-1b-noai-2e-b131k | ~1B (OLMo2 1B) | No disponible | Gemelo entrenado con el concepto excluido del corpus | No disponible | Hugging Face (referenciado por el autor) |
 | Modelos base de ~1B en ingles | ~1B | Variable | Transformer causal | Variable | Depende del proveedor |
 
 La comparativa relevante en la información proporcionada es interna al artículo: el modelo editado frente al gemelo de exclusión y frente al control completo. No se ofrecen comparaciones con modelos externos de la misma categoría.
@@ -100,7 +100,7 @@ La comparativa relevante en la información proporcionada es interna al artícul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itamarstahl/lment-1b-ai-rmu-ember-l5mid-a10-b131k
+- Modelo en Hugging Face: https://huggingface.co/itamarstahl/lment-1b-ai-rmu-ember-l5mid-a10-b131k
 - Modelo de control completo: https://huggingface.co/itamarstahl/lment-1b-control-2e-b131k
 - Gemelo con concepto excluido: https://huggingface.co/itamarstahl/lment-1b-noai-2e-b131k
 - Articulo citado: Gal Barak, Tamar Tabbach, Itamar Stahl y Adam Fleisher, *Can Concept Erasure Reproduce Concept Exclusion? A Matched Evaluation of EMBER, RMU, and SNMF*, 2026. Enlace al paper: no disponible en la informacion proporcionada.

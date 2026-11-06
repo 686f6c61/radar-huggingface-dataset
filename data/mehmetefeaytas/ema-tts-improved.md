@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EMA-TTS Improved es un modelo de síntesis de voz (text-to-speech) en turco publicado por el usuario de HuggingFace mehmetefeaytas sobre la arquitectura EMA-TTS de Canberk. Se trata de un transformer de difusión condicional compacto, con 63.535.433 parámetros (unos 63,5 millones), que genera audio mono a 48 kHz mediante flow matching sobre el espacio latente del decodificador AudioVAE2 de OpenBMB/VoxCPM2, apoyándose en un front-end turco basado en reglas.
+EMA-TTS Improved es un modelo de síntesis de voz (text-to-speech) en turco publicado por el usuario de Hugging Face mehmetefeaytas sobre la arquitectura EMA-TTS de Canberk. Se trata de un transformer de difusión condicional compacto, con 63.535.433 parámetros (unos 63,5 millones), que genera audio mono a 48 kHz mediante flow matching sobre el espacio latente del decodificador AudioVAE2 de OpenBMB/VoxCPM2, apoyándose en un front-end turco basado en reglas.
 
 El modelo no introduce un entrenamiento nuevo, sino que optimiza el proceso de inferencia del EMA-TTS original: sustituye el solver ODE de Euler de primer orden por un integrador midpoint (Runge-Kutta de segundo orden) con 48 pasos, añade relleno de cola y un mínimo de duración por palabra para evitar el corte de sufijos y la deglución de cifras, y aplica una normalización de pico suave que reduce la resonancia metálica del códec en la banda de 5,5 a 8,5 kHz.
 
@@ -24,7 +24,7 @@ Es relevante porque ataca un problema muy concreto y poco cubierto: la lectura f
 | Frecuencia de muestreo de salida | 48 kHz, mono |
 | Solver de inferencia | Midpoint (Runge-Kutta de 2.º orden) con steps=48; tambien admite "euler" |
 | RTF medido por el autor | ~0,105 en NVIDIA L4 (menos de 1,0: inferencia mas rapida que tiempo real) |
-| Inferencia alojada en HuggingFace | No (inference: false) |
+| Inferencia alojada en Hugging Face | No (inference: false) |
 | Fecha de publicacion en el Hub | 23 de septiembre de 2026 (segun los metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
@@ -77,7 +77,7 @@ Advertencia metodologica: se trata de una evaluacion autodeclarada por el autor,
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente. El autor reporta mediciones en NVIDIA L4; por logica de rendimiento son tambien adecuadas T4, A100, H100, RTX 3060, RTX 4090 y similares. Un modelo de este tamano no requiere aceleradores de gama alta.
 - GPU de consumo: si, cabe con holgura en cualquier GPU de consumo actual e incluso en modelos antiguos con pocos GB de VRAM. El codigo de ejemplo incluye una ruta de ejecucion en CPU.
 - Latencia y throughput: RTF de ~0,105 en L4, lo que equivale a unas 9,5 veces el tiempo real; un clip de 10 segundos se sintetizaria en aproximadamente 1,05 segundos en ese hardware. No se publican cifras para CPU ni para otros modelos de GPU. Subir de 0,091 a 0,105 supone alrededor de un 15% mas de coste que el EMA-TTS original por el integrador midpoint de 48 pasos.
-- Opciones de despliegue: el repositorio proporciona un script de inferencia propio (`inference.py`) con dependencias en `requirements.txt` y PyTorch. No hay soporte documentado para vLLM, TGI, llama.cpp, Ollama, ONNX Runtime ni para inferencia alojada en HuggingFace (el modelo declara `inference: false`).
+- Opciones de despliegue: el repositorio proporciona un script de inferencia propio (`inference.py`) con dependencias en `requirements.txt` y PyTorch. No hay soporte documentado para vLLM, TGI, llama.cpp, Ollama, ONNX Runtime ni para inferencia alojada en Hugging Face (el modelo declara `inference: false`).
 
 ## Comparativa con modelos similares
 
@@ -98,7 +98,7 @@ No se han encontrado en la informacion disponible comparaciones cuantitativas co
 - Riesgo de artefactos y alucinacion acustica: al ser un modelo generativo de difusion, puede producir ruidos, silencios anormales, repeticiones o sonidos no presentes en el texto, especialmente con entradas fuera de dominio, siglas, secuencias numericas muy largas o texto sin normalizar.
 - Sesgos linguisticos no medidos: no se documenta cobertura de dialectos turcos regionales, acentos ni genero de la voz sintetizada. Tampoco hay control de hablante, emocion ni estilo.
 - Codigo de ejemplo a revisar: el fragmento de la model card carga los pesos de `canberkkkkkk/ema-tts`, no del propio repositorio improved. Antes de desplegar conviene verificar que checkpoints se estan usando realmente y que la configuracion de inferencia (steps, solver, length_scale) se aplica.
-- Sin inferencia alojada: el modelo declara `inference: false`, por lo que no hay widget ni API en HuggingFace; el despliegue corre integramente por cuenta del usuario.
+- Sin inferencia alojada: el modelo declara `inference: false`, por lo que no hay widget ni API en Hugging Face; el despliegue corre integramente por cuenta del usuario.
 - Mayor coste computacional: el RTF sube de 0,091 a 0,105 en L4 (aproximadamente un 15% mas lento). En escenarios de alto volumen, ese incremento es apreciable.
 - Componentes de terceros: el decodificador AudioVAE2 procede de OpenBMB/VoxCPM2 y los datos de evaluacion de FreyaVoice. Aunque el conjunto se declara Apache-2.0, conviene revisar las condiciones de cada componente antes de un uso comercial.
 - Validacion por la comunidad inexistente: el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, por lo que no hay evidencia externa de calidad o estabilidad en produccion.
@@ -106,10 +106,10 @@ No se han encontrado en la informacion disponible comparaciones cuantitativas co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mehmetefeaytas/ema-tts-improved
+- Modelo en Hugging Face: https://huggingface.co/mehmetefeaytas/ema-tts-improved
 - Modelo original EMA-TTS (Canberk): https://huggingface.co/canberkkkkkk/ema-tts
 - Decodificador AudioVAE2 / proyecto VoxCPM2 (OpenBMB): https://huggingface.co/openbmb/VoxCPM2
 - Datos de evaluacion y flow matching en turco (FreyaVoice): https://huggingface.co/freyavoice
-- Repositorio de codigo: no disponible; el quickstart de la model card clona el propio repositorio de HuggingFace y usa `inference.py` con `requirements.txt`
+- Repositorio de codigo: no disponible; el quickstart de la model card clona el propio repositorio de Hugging Face y usa `inference.py` con `requirements.txt`
 - Paper o publicacion tecnica: no disponible
 - Demo interactiva: no disponible (el modelo declara `inference: false`)

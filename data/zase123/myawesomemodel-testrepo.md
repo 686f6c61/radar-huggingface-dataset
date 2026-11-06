@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario zASE123 en HuggingFace como un repositorio de prueba (ID: zASE123/MyAwesomeModel-TestRepo). Según la model card, se trata de una versión actualizada de un modelo anterior que incorpora mejoras en razonamiento profundo, inferencia y reducción de alucinaciones, además de soporte para function calling. Sin embargo, la información pública disponible es extremadamente limitada: el repositorio no contiene pesos, no se especifican parámetros, arquitectura, ni datos de entrenamiento, y el tamaño del repo es de 0.0 GB. La model card incluye una tabla de benchmarks con valores placeholder ({RESULT}) que no han sido rellenados, por lo que no se pueden verificar resultados reales.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario zASE123 en Hugging Face como un repositorio de prueba (ID: zASE123/MyAwesomeModel-TestRepo). Según la model card, se trata de una versión actualizada de un modelo anterior que incorpora mejoras en razonamiento profundo, inferencia y reducción de alucinaciones, además de soporte para function calling. Sin embargo, la información pública disponible es extremadamente limitada: el repositorio no contiene pesos, no se especifican parámetros, arquitectura, ni datos de entrenamiento, y el tamaño del repo es de 0.0 GB. La model card incluye una tabla de benchmarks con valores placeholder ({RESULT}) que no han sido rellenados, por lo que no se pueden verificar resultados reales.
 
-Dado que se trata de un repositorio de prueba sin artefactos publicados, esta ficha se basa únicamente en la descripción textual de la model card y en los metadatos de HuggingFace. La mayoría de las especificaciones técnicas no están disponibles, y cualquier dato concreto debe considerarse no verificado. Se recomienda tratar este modelo como un experimento preliminar o una plantilla, no como un modelo listo para producción.
+Dado que se trata de un repositorio de prueba sin artefactos publicados, esta ficha se basa únicamente en la descripción textual de la model card y en los metadatos de Hugging Face. La mayoría de las especificaciones técnicas no están disponibles, y cualquier dato concreto debe considerarse no verificado. Se recomienda tratar este modelo como un experimento preliminar o una plantilla, no como un modelo listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -15,7 +15,7 @@ Dado que se trata de un repositorio de prueba sin artefactos publicados, esta fi
 | Parametros activos | no disponible (no se indica si es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (campo vacio en HuggingFace) |
+| Idiomas soportados | no disponible (campo vacio en Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | no disponible (repo sin archivos de pesos) |
 
@@ -68,5 +68,5 @@ No disponible. No se conocen modelos comparables porque no se ha especificado la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zASE123/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/zASE123/MyAwesomeModel-TestRepo
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

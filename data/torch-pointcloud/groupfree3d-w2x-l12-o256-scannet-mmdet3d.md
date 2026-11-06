@@ -73,7 +73,7 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 | Modelo | Parametros | Dataset | mAP@0.25 | mAP@0.5 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Group-Free 3D (este checkpoint) | 29,6 M | ScanNet | 66,97 | 49,53 | Apache 2.0 | HuggingFace + torch-pointcloud |
+| Group-Free 3D (este checkpoint) | 29,6 M | ScanNet | 66,97 | 49,53 | Apache 2.0 | Hugging Face + torch-pointcloud |
 | VoteNet | no disponible en la informacion | ScanNet | no disponible | no disponible | MIT (MMDetection3D) | MMDetection3D |
 | Group-Free 3D original (MMDetection3D) | no disponible en la informacion | ScanNet | no disponible | no disponible | Apache 2.0 | GitHub MMDetection3D |
 | PointNet++ (clasificacion/segmentacion) | no disponible en la informacion | ScanNet | no aplica | no aplica | MIT | Varios repositorios |
@@ -94,7 +94,7 @@ La informacion proporcionada no incluye cifras de rendimiento de los modelos alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/groupfree3d-w2x-l12-o256.scannet.mmdet3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/groupfree3d-w2x-l12-o256.scannet.mmdet3d
 - Paper Group-Free 3D: https://arxiv.org/abs/2104.00678
 - Repositorio MMDetection3D (origen de los pesos): https://github.com/open-mmlab/mmdetection3d
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

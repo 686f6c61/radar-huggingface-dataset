@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`espositofrancesco/coca-classification17` es un repositorio de HuggingFace que contiene una implementación funcional del modelo **Coca** (CoCa, Contrastive Captioners) configurada para tareas de **clasificación**, en su variante de escala **base**. Lo publica el usuario `espositofrancesco` bajo licencia Apache 2.0. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código reproducible con un checkpoint de inicialización válido para pruebas de humo (smoke tests).
+`espositofrancesco/coca-classification17` es un repositorio de Hugging Face que contiene una implementación funcional del modelo **Coca** (CoCa, Contrastive Captioners) configurada para tareas de **clasificación**, en su variante de escala **base**. Lo publica el usuario `espositofrancesco` bajo licencia Apache 2.0. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código reproducible con un checkpoint de inicialización válido para pruebas de humo (smoke tests).
 
 El repositorio incluye el código de entrenamiento (`train.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y los pesos iniciales (`model.safetensors`). El autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -73,5 +73,5 @@ No disponible. El repositorio no ofrece benchmarks ni comparaciones con otros mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/espositofrancesco/coca-classification17
+- Hugging Face: https://huggingface.co/espositofrancesco/coca-classification17
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

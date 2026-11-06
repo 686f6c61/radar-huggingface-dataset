@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tictactoe-act-lang es una politica robotica de imitacion publicada en HuggingFace por el usuario IndiaTechTeamSL2 bajo la libreria LeRobot de HuggingFace. No es un modelo de lenguaje: es una policy de control entrenada para ejecutar tareas de manipulacion robotica, en este caso asociada a un entorno de tres en raya (tictactoe), segun se deduce del identificador y del dataset de entrenamiento referenciado (IndiaTechTeamSL2/tictactoe-ai4y-v2_1). El sufijo "lang" y la etiqueta "act_lang" indican que la politica incorpora condicionamiento por lenguaje, es decir, que las acciones se condicionan a una instruccion textual ademas del estado visual/vectorial.
+tictactoe-act-lang es una politica robotica de imitacion publicada en Hugging Face por el usuario IndiaTechTeamSL2 bajo la libreria LeRobot de Hugging Face. No es un modelo de lenguaje: es una policy de control entrenada para ejecutar tareas de manipulacion robotica, en este caso asociada a un entorno de tres en raya (tictactoe), segun se deduce del identificador y del dataset de entrenamiento referenciado (IndiaTechTeamSL2/tictactoe-ai4y-v2_1). El sufijo "lang" y la etiqueta "act_lang" indican que la politica incorpora condicionamiento por lenguaje, es decir, que las acciones se condicionan a una instruccion textual ademas del estado visual/vectorial.
 
 El modelo declara 51.674.294 parametros totales en sus pesos safetensors y un repositorio de 2,3 GB, coherente con un checkpoint de ACT (Action Chunking Transformer) mas estados de optimizador u otros artefactos de entrenamiento. La model card es practicamente la plantilla por defecto de LeRobot: no incluye descripcion funcional, composicion del dataset, hiperparametros, resultados de evaluacion ni tasa de exito. Se distribuye con licencia Apache 2.0.
 
@@ -50,7 +50,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tasa de exito, numero de episodios de evaluacion, ni metricas comparativas. Las etiquetas de HuggingFace no aportan datos cuantitativos.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tasa de exito, numero de episodios de evaluacion, ni metricas comparativas. Las etiquetas de Hugging Face no aportan datos cuantitativos.
 
 ## Requisitos de hardware
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto/observacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tictactoe-act-lang | 51,67 M | ACT con lenguaje | no disponible | Apache 2.0 | HuggingFace, 23 descargas |
-| Otras policies ACT de LeRobot | no disponible | ACT | no disponible | habitualmente Apache 2.0 | HuggingFace Hub |
-| Diffusion Policy (LeRobot) | no disponible | difusion para acciones | no disponible | habitualmente Apache 2.0 | HuggingFace Hub |
-| SmolVLA (LeRobot) | no disponible | VLA | no disponible | no disponible | HuggingFace Hub |
+| tictactoe-act-lang | 51,67 M | ACT con lenguaje | no disponible | Apache 2.0 | Hugging Face, 23 descargas |
+| Otras policies ACT de LeRobot | no disponible | ACT | no disponible | habitualmente Apache 2.0 | Hugging Face Hub |
+| Diffusion Policy (LeRobot) | no disponible | difusion para acciones | no disponible | habitualmente Apache 2.0 | Hugging Face Hub |
+| SmolVLA (LeRobot) | no disponible | VLA | no disponible | no disponible | Hugging Face Hub |
 
 No se dispone de datos verificados de parametros, contexto ni rendimiento de los modelos alternativos dentro de la informacion proporcionada, por lo que la comparacion cuantitativa no es posible. La unica ventaja objetiva contrastable de este modelo es su tamano reducido (51,67 M de parametros) frente a propuestas VLA mucho mayores.
 
@@ -85,7 +85,7 @@ No se dispone de datos verificados de parametros, contexto ni rendimiento de los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IndiaTechTeamSL2/tictactoe-act-lang
+- Modelo en Hugging Face: https://huggingface.co/IndiaTechTeamSL2/tictactoe-act-lang
 - Dataset de entrenamiento: https://huggingface.co/datasets/IndiaTechTeamSL2/tictactoe-ai4y-v2_1
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guia de entrenamiento de policies de imitacion en LeRobot: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

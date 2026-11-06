@@ -78,7 +78,7 @@ No se han encontrado modelos comparables en el repositorio de Hugging Face. Este
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Weller26/qwen2.5-1.5b-conditional-steering-denoiser)
+- [Modelo en Hugging Face](https://huggingface.co/Weller26/qwen2.5-1.5b-conditional-steering-denoiser)
 - [Modelo base Qwen2.5-1.5B](https://huggingface.co/Qwen/Qwen2.5-1.5B)
 - [Colección Qwen2.5](https://huggingface.co/collections/Qwen/qwen25)
 - [Reporte técnico Qwen2.5-Coder](https://ar5iv.labs.arxiv.org/html/2409.12186) (para referencia de la arquitectura base)

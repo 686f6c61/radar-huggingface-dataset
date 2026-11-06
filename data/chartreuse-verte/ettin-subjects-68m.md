@@ -110,7 +110,7 @@ No se han encontrado en la informacion disponible modelos directamente comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chartreuse-verte/ettin-subjects-68m
+- Modelo en Hugging Face: https://huggingface.co/chartreuse-verte/ettin-subjects-68m
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-68m
 - Dataset de entrenamiento: https://huggingface.co/datasets/Gryphe/Sonnet3.5-Charcard-Roleplay
 - Aplicacion Orb (uso previsto original): https://github.com/OrbFrontend/Orb

@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/jiito/adaption_clinical_q_a
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/jiito/adaption_clinical_q_a
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Herramienta de entrenamiento Adaption / AutoScientist: https://adaptionlabs.ai
 - Libreria PEFT: https://github.com/huggingface/peft

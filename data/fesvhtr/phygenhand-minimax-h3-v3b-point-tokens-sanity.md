@@ -74,7 +74,7 @@ No disponible. No se han identificado en la informacion proporcionada adaptadore
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fesvhtr/phygenhand-minimax-h3-v3b-point-tokens-sanity
+- Hugging Face: https://huggingface.co/fesvhtr/phygenhand-minimax-h3-v3b-point-tokens-sanity
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio de codigo: https://github.com/Nicous20/phygenhand
 - Rutas de entrenamiento citadas: `scripts/v3/train/`

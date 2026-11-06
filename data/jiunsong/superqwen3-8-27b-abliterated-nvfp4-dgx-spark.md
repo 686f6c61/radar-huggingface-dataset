@@ -88,7 +88,7 @@ La comparativa se basa en datos publicos; no se dispone de benchmarks de calidad
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated-NVFP4-DGX-Spark
+- Repositorio Hugging Face del modelo: https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated-NVFP4-DGX-Spark
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B (AlibabaCloud-Official): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Version sin cuantizar del autor: https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated

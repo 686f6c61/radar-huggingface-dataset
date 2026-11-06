@@ -87,7 +87,7 @@ No se dispone de datos comparativos directos con otros modelos drafter (como EAG
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/Anbeeld/Kimi-K2.6-DFlash-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/Anbeeld/Kimi-K2.6-DFlash-GGUF
 - Modelo original z-lab: https://huggingface.co/z-lab/Kimi-K2.6-DFlash
 - Paper DFlash: https://arxiv.org/abs/2602.06036
 - GitHub del proyecto: https://github.com/z-lab/dflash

@@ -85,10 +85,10 @@ Las entradas en cursiva del material original son predicciones pre-registradas, 
 
 | Modelo | Parametros | Contexto | PPL (OpenWebText val) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `semsimula-ladder-owt-d384-l2-none-norc` (este modelo) | 76.572.110 | bloques de 512 | 87,93 | CC-BY-4.0 | HuggingFace |
-| `semsimula-ladder-owt-d384-l2-none` | no disponible | no disponible | 66,98 | no disponible | HuggingFace |
-| `semsimula-ladder-owt-d384-l2-gpt2-matched` (baseline) | no disponible | no disponible | 49,81 | no disponible | HuggingFace |
-| `semsimula-ladder-owt-d384-l2-attention` | no disponible | no disponible | 63,51 | no disponible | HuggingFace |
+| `semsimula-ladder-owt-d384-l2-none-norc` (este modelo) | 76.572.110 | bloques de 512 | 87,93 | CC-BY-4.0 | Hugging Face |
+| `semsimula-ladder-owt-d384-l2-none` | no disponible | no disponible | 66,98 | no disponible | Hugging Face |
+| `semsimula-ladder-owt-d384-l2-gpt2-matched` (baseline) | no disponible | no disponible | 49,81 | no disponible | Hugging Face |
+| `semsimula-ladder-owt-d384-l2-attention` | no disponible | no disponible | 63,51 | no disponible | Hugging Face |
 
 La comparacion se limita a los brazos de la propia escalera, ya que son los unicos con datos publicados en la informacion disponible. Frente a un transformer de atencion con el mismo presupuesto de tokens (baseline GPT-2 emparejado), este modelo es 1,765× peor en perplejidad. Frente a los demas brazos no conservativos, la eliminacion del mecanismo de Fock le cuesta 20,95 puntos de perplejidad respecto al brazo `none`.
 
@@ -108,7 +108,7 @@ La comparacion se limita a los brazos de la propia escalera, ya que son los unic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-none-norc
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-none-norc
 - Baseline GPT-2 emparejado: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-gpt2-matched
 - Brazo `attention` (Fock-PARFLM, campo de intercambio activo): https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention
 - Brazo `attention_potential` (Fock-PARFLM, campo como potencial): https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention-potential

@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / audio | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| laion/music-whisper | 242M | captions hasta 448 tokens; audio 3–30 s | Music captioning | apache-2.0 | HuggingFace |
-| openai/whisper-small | 242M | transcripción de voz; audio de 30 s | ASR | apache-2.0 | HuggingFace / OpenAI |
-| Whisper base (openai/whisper-base) | 74M | ASR; audio de 30 s | ASR | apache-2.0 | HuggingFace / OpenAI |
+| laion/music-whisper | 242M | captions hasta 448 tokens; audio 3–30 s | Music captioning | apache-2.0 | Hugging Face |
+| openai/whisper-small | 242M | transcripción de voz; audio de 30 s | ASR | apache-2.0 | Hugging Face / OpenAI |
+| Whisper base (openai/whisper-base) | 74M | ASR; audio de 30 s | ASR | apache-2.0 | Hugging Face / OpenAI |
 
 Comparado con su modelo base, music-whisper cambia la tarea de transcripción por descripción musical; frente a modelos ASR de menor tamaño como whisper-base, ofrece más parámetros y una salida estructurada en seis campos, aunque ambos comparten limitación a fragmentos de audio de 30 segundos. No se dispone de datos de benchmarks para comparar rendimiento cuantitativo.
 
@@ -85,7 +85,7 @@ Comparado con su modelo base, music-whisper cambia la tarea de transcripción po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/music-whisper
+- Modelo en Hugging Face: https://huggingface.co/laion/music-whisper
 - Dataset de entrenamiento: https://huggingface.co/datasets/laion/captioned-ai-music-snippets
 - Dataset fuente de clips Suno: https://huggingface.co/datasets/nyuuzyou/suno
 - Dataset LAION-Tunes: https://huggingface.co/datasets/laion/laion-tunes

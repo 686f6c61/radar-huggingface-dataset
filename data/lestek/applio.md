@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Applio es una herramienta de conversion de voz (voice conversion, VC) de codigo abierto centrada en la simplicidad, la calidad y el rendimiento. El repositorio `Lestek/Applio` es una publicacion en HuggingFace del proyecto Applio, originalmente desarrollado por IAHispano, que empaqueta los pesos y artefactos necesarios para realizar transformaciones de voz de alta calidad. El modelo se distribuye como un pipeline `audio-to-audio` y esta construido sobre la base de `lj1995/VoiceConversionWebUI`, el conocido backend de RVC (Retrieval-based Voice Conversion).
+Applio es una herramienta de conversion de voz (voice conversion, VC) de codigo abierto centrada en la simplicidad, la calidad y el rendimiento. El repositorio `Lestek/Applio` es una publicacion en Hugging Face del proyecto Applio, originalmente desarrollado por IAHispano, que empaqueta los pesos y artefactos necesarios para realizar transformaciones de voz de alta calidad. El modelo se distribuye como un pipeline `audio-to-audio` y esta construido sobre la base de `lj1995/VoiceConversionWebUI`, el conocido backend de RVC (Retrieval-based Voice Conversion).
 
 A diferencia de los modelos de lenguaje, Applio no genera texto: su proposito es tomar una senal de audio de entrada (voz fuente) y convertirla a la identidad vocal de un hablante objetivo preservando el contenido linguistico y la prosodia. Combina tecnicas de RVC con componentes de VITS (Variational Inference with adversarial learning for end-to-end Text-to-Speech) y se apoya en el dataset publico VCTK (CSTR-Edinburgh/vctk) para el entrenamiento de sus modelos oficiales.
 
@@ -32,7 +32,7 @@ El entrenamiento de los modelos oficiales de Applio se realiza sobre el dataset 
 - Conversion de voz (voice-to-voice): transforma una locucion de entrada en la voz de un hablante objetivo preservando el contenido y la prosodia.
 - Preservacion del contenido linguistico: al ser conversion y no sintesis texto-a-voz, mantiene el idioma, el acento y las palabras originales.
 - Soporte de multiples hablantes objetivo mediante checkpoints entrenados o ajustados por el usuario.
-- Integracion como pipeline `audio-to-audio` en HuggingFace.
+- Integracion como pipeline `audio-to-audio` en Hugging Face.
 - Exportacion a ONNX para despliegue en entornos de inferencia optimizados.
 - Interfaz Gradio incluida en el proyecto original para uso interactivo.
 - Sistema de plugins (Applio-Plugins) para extender funcionalidades.
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Applio (Lestek/Applio) | Voice conversion (RVC/VITS) | no disponible | no aplica | MIT | HuggingFace, 120,7 GB |
-| RVC original (lj1995/VoiceConversionWebUI) | Voice conversion (RVC) | no disponible | no aplica | no disponible en la informacion | HuggingFace / GitHub |
+| Applio (Lestek/Applio) | Voice conversion (RVC/VITS) | no disponible | no aplica | MIT | Hugging Face, 120,7 GB |
+| RVC original (lj1995/VoiceConversionWebUI) | Voice conversion (RVC) | no disponible | no aplica | no disponible en la informacion | Hugging Face / GitHub |
 | VITS (base) | TTS end-to-end | no disponible | no aplica | no disponible en la informacion | Multiples repositorios |
-| So-VITS-SVC | Voice conversion (VITS) | no disponible | no aplica | no disponible en la informacion | GitHub / HuggingFace |
+| So-VITS-SVC | Voice conversion (VITS) | no disponible | no aplica | no disponible en la informacion | GitHub / Hugging Face |
 
 No se dispone de datos cuantitativos de rendimiento para establecer una comparacion numerica fiable entre estas alternativas.
 
@@ -84,7 +84,7 @@ No se dispone de datos cuantitativos de rendimiento para establecer una comparac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lestek/Applio
+- Hugging Face: https://huggingface.co/Lestek/Applio
 - Modelo base: https://huggingface.co/lj1995/VoiceConversionWebUI
 - Dataset VCTK: https://huggingface.co/datasets/CSTR-Edinburgh/vctk
 - Web oficial: https://applio.org

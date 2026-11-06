@@ -66,7 +66,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - HyeonseokE/smolvla_open_box_cap_3000_10fps](https://huggingface.co/HyeonseokE/smolvla_open_box_cap_3000_10fps)
+- [Hugging Face - HyeonseokE/smolvla_open_box_cap_3000_10fps](https://huggingface.co/HyeonseokE/smolvla_open_box_cap_3000_10fps)
 - [Paper SmolVLA (arXiv:2506.01844)](https://arxiv.org/abs/2506.01844)
 - [Dataset de entrenamiento - HyeonseokE/open_box_cap_10fps](https://huggingface.co/datasets/HyeonseokE/open_box_cap_10fps)
 - [Modelo base - lerobot/smolvla_base](https://huggingface.co/lerobot/smolvla_base)

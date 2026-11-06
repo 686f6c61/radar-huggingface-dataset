@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oinvfold-rna | 8,39 M | Grafo geometrico, inverse folding de ARN | No aplica (grafo) | AGPL-3.0 | HuggingFace (oteam) |
-| oinvfold-protein | 8,37 M | Grafo geometrico, inverse folding de proteina | No aplica (grafo) | AGPL-3.0 | HuggingFace (oteam) |
-| oinvfold-dna | No disponible | Grafo geometrico, inverse folding de ADN | No aplica (grafo) | AGPL-3.0 | HuggingFace (oteam) |
-| oinvfold-ligand | 6,43 M | Grafo geometrico, asignacion de elementos de ligando | No aplica (grafo) | AGPL-3.0 | HuggingFace (oteam) |
+| oinvfold-rna | 8,39 M | Grafo geometrico, inverse folding de ARN | No aplica (grafo) | AGPL-3.0 | Hugging Face (oteam) |
+| oinvfold-protein | 8,37 M | Grafo geometrico, inverse folding de proteina | No aplica (grafo) | AGPL-3.0 | Hugging Face (oteam) |
+| oinvfold-dna | No disponible | Grafo geometrico, inverse folding de ADN | No aplica (grafo) | AGPL-3.0 | Hugging Face (oteam) |
+| oinvfold-ligand | 6,43 M | Grafo geometrico, asignacion de elementos de ligando | No aplica (grafo) | AGPL-3.0 | Hugging Face (oteam) |
 
 No se dispone de datos de benchmarks ni de comparaciones con otros modelos de inverse folding de ARN (por ejemplo, variantes especializadas de ProteinMPNN adaptadas a acidos nucleicos) en la informacion proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni de comparaciones con otros modelos de in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/oinvfold-rna
+- Modelo en Hugging Face: https://huggingface.co/oteam/oinvfold-rna
 - Variante de proteina: https://huggingface.co/oteam/oinvfold-protein
 - Variante de ADN: https://huggingface.co/oteam/oinvfold-dna
 - Variante de ligando: https://huggingface.co/oteam/oinvfold-ligand

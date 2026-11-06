@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/hin_deva_10mb`, publicado por el usuario francesca9805 en HuggingFace. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 con 39.087.104 parametros (segun los pesos en safetensors) y un tamano de repositorio de 0,1 GB, lo que lo situa en la categoria de modelos muy pequenos, entrenables y desplegables en hardware minimo.
+El modelo `francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/hin_deva_10mb`, publicado por el usuario francesca9805 en Hugging Face. Se trata de un modelo de generacion de texto de arquitectura tipo GPT-2 con 39.087.104 parametros (segun los pesos en safetensors) y un tamano de repositorio de 0,1 GB, lo que lo situa en la categoria de modelos muy pequenos, entrenables y desplegables en hardware minimo.
 
 El modelo se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL 0.23.0 sobre Transformers 4.56.2, PyTorch 2.5.1+cu121, Datasets 4.8.4 y Tokenizers 0.22.1. El nombre del repositorio sugiere un experimento de investigacion sobre tokenizacion y empaquetado de datos (las siglas "ppt", "Dp-10mb-packed" y "bfd" apuntan a variantes de dataset y semilla, con `seed3407` como semilla fija), enmarcado en el proyecto goldfish-models de modelos de 10 MB por idioma.
 
@@ -42,7 +42,7 @@ El entrenamiento se realizo mediante SFT con TRL 0.23.0, partiendo de `goldfish-
 - Experimentacion academica sobre ajuste fino: sirve como sujeto de prueba reproducible (semilla 3407 fija) para medir como varia el comportamiento de un modelo de 39 M de parametros al aplicar SFT sobre un corpus empaquetado de 10 MB.
 - Estudio de tokenizadores para lenguas de bajos recursos: el proyecto de origen ("new-tokenizers") y el identificador `hin_deva` lo hacen adecuado para analizar la eficiencia de la tokenizacion en escritura devanagari frente a tokenizadores genericos.
 - Linea base en evaluaciones de bajo coste: al ser un modelo pequeno y rapido, puede usarse como baseline inferior en comparativas de generacion de texto en hindi, frente a modelos mayores.
-- Pruebas de infraestructura de despliegue: su tamano (0,1 GB) permite validar pipelines completos de HuggingFace Transformers, TGI o endpoints compatibles antes de escalar a modelos mayores.
+- Pruebas de infraestructura de despliegue: su tamano (0,1 GB) permite validar pipelines completos de Hugging Face Transformers, TGI o endpoints compatibles antes de escalar a modelos mayores.
 - Docencia y demostraciones: ejecutable en CPU o en cualquier GPU de consumo, es util para ilustrar el ciclo completo de entrenamiento con TRL y publicacion de un modelo en el Hub.
 - Generacion de texto sintetico a pequena escala para experimentos de aumento de datos, siempre que se valide manualmente la calidad de la salida.
 - Pruebas de conversion de formatos: aunque el repositorio solo publica safetensors, puede emplearse para verificar flujos de conversion a GGUF y su ejecucion en llama.cpp u Ollama.
@@ -58,15 +58,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente, incluidas tarjetas integradas y modelos de gama de entrada. No se necesita A100, H100 ni RTX 4090.
 - Cabe sin problema en GPU de consumo: GTX 1050, GTX 1650, RTX 3050, RTX 4060, RTX 4090 y equivalentes, con un uso de memoria despreciable frente a la capacidad disponible.
 - Ejecucion en CPU: viable con un rendimiento aceptable en generacion de pocos cientos de tokens.
-- Opciones de despliegue: HuggingFace Transformers (libreria declarada), text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible` en el repositorio). Para llama.cpp u Ollama seria necesario convertir previamente los pesos a GGUF, ya que no se publican ficheros en ese formato.
+- Opciones de despliegue: Hugging Face Transformers (libreria declarada), text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible` en el repositorio). Para llama.cpp u Ollama seria necesario convertir previamente los pesos a GGUF, ya que no se publican ficheros en ese formato.
 - Latencia y throughput estimados: no disponibles, no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed3407 | 39.087.104 | no disponible | no disponible | safetensors en HuggingFace, 0 descargas y 0 likes en el momento de la consulta | Ajuste SFT experimental, sin benchmarks publicados |
-| goldfish-models/hin_deva_10mb | no disponible | no disponible | no disponible | HuggingFace | Modelo base directo del anterior; su configuracion no se detalla en la informacion proporcionada |
+| francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed3407 | 39.087.104 | no disponible | no disponible | safetensors en Hugging Face, 0 descargas y 0 likes en el momento de la consulta | Ajuste SFT experimental, sin benchmarks publicados |
+| goldfish-models/hin_deva_10mb | no disponible | no disponible | no disponible | Hugging Face | Modelo base directo del anterior; su configuracion no se detalla en la informacion proporcionada |
 | GPT-2 small (referencia arquitectonica) | 124 M | 1024 tokens | licencia MIT modificada | Ampliamente disponible | Arquitectura de la misma familia, aproximadamente 3 veces mas parametros; la comparacion es orientativa y no se dispone de resultados comparativos |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/hin_deva_10mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/hhs21qtk
 - Repositorio de TRL: https://github.com/huggingface/trl

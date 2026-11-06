@@ -74,7 +74,7 @@ La comparativa se limita a modelos conocidos, pero no hay datos de rendimiento d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Balthulal/MedGemma_FineTuned
+- Hugging Face: https://huggingface.co/Balthulal/MedGemma_FineTuned
 - Documentacion oficial de MedGemma (Google Developers): https://developers.google.com/health-ai-developer-foundations/medgemma
 - Pagina de MedGemma en Google DeepMind: https://deepmind.google/models/gemma/medgemma/
 - Repositorio oficial de Google Health: https://github.com/google-health/medgemma

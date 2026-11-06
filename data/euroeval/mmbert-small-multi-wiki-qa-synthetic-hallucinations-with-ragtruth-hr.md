@@ -23,7 +23,7 @@ La información pública disponible es limitada: la model card está prácticame
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en ModernBERT, una evolución de BERT que incorpora mejoras como atención eficiente y normalización pre-LayerNorm, diseñada para un mejor rendimiento en tareas de comprensión del lenguaje. En concreto, se utiliza la variante pequeña (mmBERT-small) con 140 millones de parámetros, y se añade una cabeza de clasificación de tokens que asigna a cada token de la secuencia una etiqueta binaria (alucinado o no alucinado). El pipeline declarado en HuggingFace es `token-classification`, lo que confirma esta arquitectura.
+El modelo se basa en ModernBERT, una evolución de BERT que incorpora mejoras como atención eficiente y normalización pre-LayerNorm, diseñada para un mejor rendimiento en tareas de comprensión del lenguaje. En concreto, se utiliza la variante pequeña (mmBERT-small) con 140 millones de parámetros, y se añade una cabeza de clasificación de tokens que asigna a cada token de la secuencia una etiqueta binaria (alucinado o no alucinado). El pipeline declarado en Hugging Face es `token-classification`, lo que confirma esta arquitectura.
 
 El proceso de entrenamiento, según el paper asociado (arXiv:2605.02504), sigue un enfoque en dos etapas: primero se genera un corpus sintético de alucinaciones mediante el framework LettuceDetect, que utiliza un modelo de lenguaje para producir respuestas etiquetadas a nivel de token a partir de contextos, preguntas y respuestas de referencia del conjunto MultiWikiQA. Posteriormente, el modelo mmBERT-small se ajusta con fine-tuning sobre este corpus. No se han publicado detalles sobre el número de épocas, la tasa de aprendizaje, el tamaño del lote ni la composición exacta de los datos de entrenamiento.
 
@@ -32,7 +32,7 @@ El proceso de entrenamiento, según el paper asociado (arXiv:2605.02504), sigue 
 - Detección de alucinaciones a nivel de token en respuestas generadas por LLMs, distinguiendo tokens factuales de tokens inventados o inconsistentes con el contexto.
 - Clasificación de secuencias completas o fragmentos, gracias a la naturaleza encoder de ModernBERT.
 - Soporte multilingüe, aunque los idiomas concretos no están documentados; el nombre "multi-wiki-qa" sugiere que se entrenó con datos de Wikipedia en varios idiomas.
-- Integración sencilla con el ecosistema HuggingFace Transformers, permitiendo su uso en pipelines de clasificación de tokens con pocas líneas de código.
+- Integración sencilla con el ecosistema Hugging Face Transformers, permitiendo su uso en pipelines de clasificación de tokens con pocas líneas de código.
 - Compatible con endpoints de inferencia (tag `endpoints_compatible`), lo que facilita su despliegue en servicios gestionados.
 
 ## Casos de uso
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: con 140 millones de parámetros y pesos en fp32, el modelo ocupa aproximadamente 560 MB en memoria (140M × 4 bytes). En cuantización a int8, se reduciría a unos 140 MB. Esto permite su ejecución en GPUs con 2 GB de VRAM o incluso en CPU.
 - GPU recomendada: cualquier GPU moderna con al menos 2 GB de VRAM, como una NVIDIA T4, GTX 1650 o RTX 3060. Para inferencia en lote, una A10 o A100 ofrecería mayor throughput.
 - Compatibilidad con GPU de consumo: sí, cabe en tarjetas como RTX 3060, RTX 4060 o similares, e incluso en sistemas sin GPU utilizando CPU con suficiente RAM.
-- Opciones de despliegue: al ser un modelo de Transformers estándar, se puede servir con HuggingFace Inference Endpoints, vLLM (aunque no está optimizado para encoder-only), o mediante ONNX Runtime. Para uso local, la librería `transformers` con PyTorch o TensorFlow es suficiente.
+- Opciones de despliegue: al ser un modelo de Transformers estándar, se puede servir con Hugging Face Inference Endpoints, vLLM (aunque no está optimizado para encoder-only), o mediante ONNX Runtime. Para uso local, la librería `transformers` con PyTorch o TensorFlow es suficiente.
 - Latencia y throughput: no se dispone de datos medidos. Para un modelo de este tamaño, la inferencia en GPU suele ser inferior a 10 ms por secuencia de 512 tokens, pero esto depende del hardware y del backend.
 
 ## Comparativa con modelos similares
@@ -71,6 +71,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace: EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-hr](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-hr)
+- [Hugging Face: EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-hr](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-hr)
 - [Paper: A multilingual hallucination benchmark: MultiWikiQHalluA (arXiv:2605.02504)](https://arxiv.org/abs/2605.02504)
 - [Repositorio GitHub: RAGTruth](https://github.com/ParticleMedia/RAGTruth)

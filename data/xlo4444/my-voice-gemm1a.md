@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo, publicado por el usuario xlo4444 en HuggingFace, es un modelo multimodal de tipo image-text-to-text con aproximadamente 5.104 millones de parámetros. Los metadatos incluyen el tag «gemma4», lo que sugiere una posible relación con la familia Gemma 4 de Google, aunque no se ha publicado documentación oficial que lo confirme. El repositorio contiene pesos en formato safetensors y ocupa 10.2 GB, un tamaño coherente con parámetros almacenados en bf16 o fp16.
+Este modelo, publicado por el usuario xlo4444 en Hugging Face, es un modelo multimodal de tipo image-text-to-text con aproximadamente 5.104 millones de parámetros. Los metadatos incluyen el tag «gemma4», lo que sugiere una posible relación con la familia Gemma 4 de Google, aunque no se ha publicado documentación oficial que lo confirme. El repositorio contiene pesos en formato safetensors y ocupa 10.2 GB, un tamaño coherente con parámetros almacenados en bf16 o fp16.
 
 En el momento de la consulta, el modelo no tiene descargas ni «likes», y su model card es una plantilla automática sin información detallada. Por tanto, su propósito, capacidades y rendimiento no están documentados públicamente. La ausencia de licencia, idiomas declarados y benchmarks hace que cualquier uso en producción requiera una evaluación previa exhaustiva.
 
@@ -72,4 +72,4 @@ No disponible. No se conocen modelos comparables de la misma categoría con dato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xlo4444/my-voice-gemm1a
+- Hugging Face: https://huggingface.co/xlo4444/my-voice-gemm1a

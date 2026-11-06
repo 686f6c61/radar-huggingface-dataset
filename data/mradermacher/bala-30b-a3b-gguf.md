@@ -58,6 +58,6 @@ No disponible. No se han publicado benchmarks ni información de rendimiento que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Bala-30B-A3B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Bala-30B-A3B-GGUF
 - Modelo original: https://huggingface.co/AlreadyAI/Bala-30B-A3B
 - Perfil de mradermacher: https://huggingface.co/mradermacher

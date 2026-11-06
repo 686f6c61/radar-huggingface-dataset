@@ -76,7 +76,7 @@ La model card compara Qwen3.8-Max con Opus 4.8, Fable 5, GPT 5.6 Sol (max) y Qwe
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización FP8: https://huggingface.co/LilacGhost10/Qwen3.8-2.4T-A95B-FP8
+- Repositorio Hugging Face de la cuantización FP8: https://huggingface.co/LilacGhost10/Qwen3.8-2.4T-A95B-FP8
 - Modelo base Qwen3.8-2.4T-A95B: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
 - Blog oficial de Qwen sobre Qwen3.8: https://qwen.ai/blog?id=qwen3.8
 - Documentación de QwenCloud para Qwen3.8-2.4T-A95B: https://www.qwencloud.com/models/qwen3.8-2.4t-a95b

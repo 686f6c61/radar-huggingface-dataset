@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nyno-368M es un modelo de lenguaje causal de 368 millones de parámetros entrenado desde cero por el usuario Lanamiy y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo bilingüe portugués-español, con arquitectura de tipo GPT (transformer decoder-only), orientado a generación de texto y construido con recursos comunitarios. La model card lo identifica como versión v1.0 correspondiente al step 1750 del entrenamiento.
+Nyno-368M es un modelo de lenguaje causal de 368 millones de parámetros entrenado desde cero por el usuario Lanamiy y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo bilingüe portugués-español, con arquitectura de tipo GPT (transformer decoder-only), orientado a generación de texto y construido con recursos comunitarios. La model card lo identifica como versión v1.0 correspondiente al step 1750 del entrenamiento.
 
 El modelo se posiciona en el segmento de modelos pequeños (por debajo de 1B de parámetros), un rango en el que la eficiencia de inferencia y la posibilidad de ejecución en hardware de consumo son los principales atractivos. Su interés radica en ser un entrenamiento desde cero específico para lenguas ibéricas, un nicho tradicionalmente dominado por modelos multilingües de gran tamaño o por adaptaciones de modelos ingleses.
 
@@ -89,7 +89,7 @@ La comparación es cualitativa: no existen métricas públicas de Nyno-368M que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lanamiy/Nyno-368M
+- Modelo en Hugging Face: https://huggingface.co/Lanamiy/Nyno-368M
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
 
 No se han encontrado papers, blogs, repositorios ni demos adicionales asociados al modelo en la búsqueda web realizada; los resultados obtenidos no guardan relación con el modelo y se han descartado.

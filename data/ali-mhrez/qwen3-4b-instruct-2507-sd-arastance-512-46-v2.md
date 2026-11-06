@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Qwen3-4B-Instruct-2507-SD-AraStance-512-46-v2` es un ajuste fino (fine-tune) supervisado del modelo denso `unsloth/Qwen3-4B-Instruct-2507`, publicado por el usuario Ali-Mhrez en HuggingFace. Se trata, por tanto, de una variante de 4 000 millones de parámetros derivada de la familia Qwen3, sin cambios en la arquitectura: el autor no documenta modificaciones estructurales, solo un entrenamiento SFT adicional mediante TRL y Unsloth.
+`Qwen3-4B-Instruct-2507-SD-AraStance-512-46-v2` es un ajuste fino (fine-tune) supervisado del modelo denso `unsloth/Qwen3-4B-Instruct-2507`, publicado por el usuario Ali-Mhrez en Hugging Face. Se trata, por tanto, de una variante de 4 000 millones de parámetros derivada de la familia Qwen3, sin cambios en la arquitectura: el autor no documenta modificaciones estructurales, solo un entrenamiento SFT adicional mediante TRL y Unsloth.
 
 El interés del modelo es acotado y muy específico: el sufijo del nombre sugiere un ajuste orientado a la detección de postura (*stance detection*) en árabe sobre el corpus AraStance, con una longitud de secuencia de 512 tokens y una versión 2 del entrenamiento. Sin embargo, esta interpretación es una inferencia a partir del identificador del repositorio, no un dato documentado: la model card del autor no incluye descripción del dataset, hiperparámetros, número de épocas ni métricas de evaluación.
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks para comparar el rendimiento real de este f
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-512-46-v2
+- Repositorio en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-512-46-v2
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Unsloth (stack de entrenamiento citado en las etiquetas del repositorio): https://github.com/unslothai/unsloth

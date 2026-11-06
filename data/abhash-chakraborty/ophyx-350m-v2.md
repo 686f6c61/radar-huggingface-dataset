@@ -107,7 +107,7 @@ Ophyx v2 destaca sobre sus rivales directos en HumanEval+ y MBPP+ (excepto Qwen2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhash-chakraborty/ophyx-350m-v2
+- Modelo en Hugging Face: https://huggingface.co/abhash-chakraborty/ophyx-350m-v2
 - Pesos GGUF: https://huggingface.co/abhash-chakraborty/ophyx-350m-v2-gguf
 - Repositorio GitHub con evaluaciones completas (56 modelos y comparación con frontera): https://github.com/Abhash-Chakraborty/ophyx/blob/main/eval/R1_RESULTS.md
 - Paper, blog y demo: no disponibles

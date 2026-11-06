@@ -89,7 +89,7 @@ La unica comparacion directa disponible es contra el propio modelo base, ya que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HoshiuZ/InternVL3-8B-Unlearned
+- Modelo en Hugging Face: https://huggingface.co/HoshiuZ/InternVL3-8B-Unlearned
 - Modelo base: https://huggingface.co/OpenGVLab/InternVL3-8B
 - Repositorio de investigacion: https://github.com/HoshiuZ/multimodal-llm-safety
 - Resultados WMDP S (commit congelado): https://github.com/HoshiuZ/multimodal-llm-safety/blob/dd6e4f5117aafecaa8747416f3826faaeaae9bb8/text/results/s_results_v2.json

@@ -10,7 +10,7 @@ El modelo tiene 8 030 millones de parámetros en arquitectura densa (no MoE), es
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (basado en la familia Llama, según tags de HuggingFace) |
+| Arquitectura | Transformer denso (basado en la familia Llama, según tags de Hugging Face) |
 | Parametros totales | 8 030 285 824 |
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 32 000 tokens (ampliable a 128 000, según documentacion del modelo base) |
@@ -23,7 +23,7 @@ El modelo tiene 8 030 millones de parámetros en arquitectura densa (no MoE), es
 
 El modelo base `kakaocorp/kanana-1.5-8b-instruct-2505` es un transformer denso de 8 030 millones de parametros, entrenado con un enfoque bilingue (coreano e ingles) para maximizar la eficiencia computacional. Segun la documentacion publica de Kakao, la familia Kanana 1.5 incorpora mejoras significativas en codificacion, matematicas y *function calling* respecto a la version 1.0. El modelo fue preentrenado con un corpus bilingue y posteriormente ajustado con instrucciones (instruct). La variante `Safe-DPO` aqui descrita anade una etapa adicional de alineamiento mediante *Direct Preference Optimization* con un criterio de seguridad, aunque no se han publicado detalles sobre el dataset de preferencias utilizado ni las hiperparametros del entrenamiento DPO.
 
-No se dispone de informacion sobre el numero exacto de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas como RLHF adicionales. El tag `arxiv:1910.09700` en HuggingFace corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en ML, no a una innovacion arquitectonica.
+No se dispone de informacion sobre el numero exacto de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas como RLHF adicionales. El tag `arxiv:1910.09700` en Hugging Face corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en ML, no a una innovacion arquitectonica.
 
 ## Capacidades
 
@@ -77,8 +77,8 @@ La comparativa se limita a la familia Kanana y a Llama 3.1 como referencia gener
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/daewanhan/kanana-1.5-8b-instruct-2505-Safe-DPO
-- Modelo base en HuggingFace: https://huggingface.co/kakaocorp/kanana-1.5-8b-instruct-2505
+- Repositorio Hugging Face del modelo: https://huggingface.co/daewanhan/kanana-1.5-8b-instruct-2505-Safe-DPO
+- Modelo base en Hugging Face: https://huggingface.co/kakaocorp/kanana-1.5-8b-instruct-2505
 - Repositorio GitHub de la familia Kanana: https://github.com/kakao/kanana
 - Ficha del modelo en AIBase (tercero): https://model.aibase.com/models/details/1927649989316841472
 - Articulo de referencia sobre emisiones de carbono (citado en los tags, no relacionado con la arquitectura): https://arxiv.org/abs/1910.09700

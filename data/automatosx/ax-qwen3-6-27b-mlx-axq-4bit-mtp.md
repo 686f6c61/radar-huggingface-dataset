@@ -90,7 +90,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- [HuggingFace: AutomatosX/AX-Qwen3.6-27B-MLX-AXQ-4bit-MTP](https://huggingface.co/AutomatosX/AX-Qwen3.6-27B-MLX-AXQ-4bit-MTP)
+- [Hugging Face: AutomatosX/AX-Qwen3.6-27B-MLX-AXQ-4bit-MTP](https://huggingface.co/AutomatosX/AX-Qwen3.6-27B-MLX-AXQ-4bit-MTP)
 - [Modelo base: Qwen/Qwen3.6-27B](https://huggingface.co/Qwen/Qwen3.6-27B)
 - [Certificado Tier 1](https://github.com/defai-digital/axquant/blob/main/docs/certifications/qwen36-27b-axq4-tier1.md)
 - [Certificado Tier 2 (MTP)](https://github.com/defai-digital/axquant/blob/main/docs/certifications/qwen36-27b-axq4-tier2.md)

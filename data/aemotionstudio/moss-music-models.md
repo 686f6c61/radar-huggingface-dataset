@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace del mirror: https://huggingface.co/AEmotionStudio/moss-music-models
-- Modelo original en HuggingFace: https://huggingface.co/OpenMOSS-Team/MOSS-Music-8B-Instruct
+- Repositorio Hugging Face del mirror: https://huggingface.co/AEmotionStudio/moss-music-models
+- Modelo original en Hugging Face: https://huggingface.co/OpenMOSS-Team/MOSS-Music-8B-Instruct
 - Repositorio GitHub del proyecto: https://github.com/OpenMOSS/MOSS-Music
 - Documentacion adicional en GitHub: https://github.com/OpenMOSS/MOSS-Music/blob/main/README.md

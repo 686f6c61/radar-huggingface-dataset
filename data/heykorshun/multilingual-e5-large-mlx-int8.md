@@ -100,7 +100,7 @@ La comparacion principal es entre este repositorio y el modelo base: comparten p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heykorshun/multilingual-e5-large-mlx-int8
+- Modelo en Hugging Face: https://huggingface.co/heykorshun/multilingual-e5-large-mlx-int8
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-large
 - Repositorio MLX: https://github.com/ml-explore/mlx
 - Repositorio MLX Swift: https://github.com/ml-explore/mlx-swift

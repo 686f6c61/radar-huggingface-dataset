@@ -80,10 +80,10 @@ Sobre el conjunto completo de 320 comportamientos (incluyendo 80 de copyright), 
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-CYBERSECURITY-FP8 (este) | 753B (MoE) | 131K verificado | MIT | Ciberseguridad ofensiva, sin negativas | HuggingFace, safetensors FP8 |
-| zai-org/GLM-5.3 (base) | 753B (MoE) | hasta 1M según referencias | no disponible en la información | Propósito general alineado | HuggingFace |
-| dealignai/GLM-5.3-UNCENSORED-FP8 | 753B (MoE) | no disponible | no disponible en la información | Descensurado general | HuggingFace |
-| JANGQ-AI/GLM-5.3-FP8 | 753B (MoE) | no disponible | no disponible en la información | Cuantización FP8 del base | HuggingFace |
+| GLM-5.3-CYBERSECURITY-FP8 (este) | 753B (MoE) | 131K verificado | MIT | Ciberseguridad ofensiva, sin negativas | Hugging Face, safetensors FP8 |
+| zai-org/GLM-5.3 (base) | 753B (MoE) | hasta 1M según referencias | no disponible en la información | Propósito general alineado | Hugging Face |
+| dealignai/GLM-5.3-UNCENSORED-FP8 | 753B (MoE) | no disponible | no disponible en la información | Descensurado general | Hugging Face |
+| JANGQ-AI/GLM-5.3-FP8 | 753B (MoE) | no disponible | no disponible en la información | Cuantización FP8 del base | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos frente a otros modelos de ciberseguridad ofensiva (por ejemplo, derivados de Llama o Qwen) en la información proporcionada.
 
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks comparativos frente a otros modelos de cibe
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/chenrenya/GLM-5.3-CYBERSECURITY-FP8-backup
+- Hugging Face del modelo: https://huggingface.co/chenrenya/GLM-5.3-CYBERSECURITY-FP8-backup
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Cuantización FP8 de referencia: https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
 - Variante descensurada general del mismo colectivo: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8

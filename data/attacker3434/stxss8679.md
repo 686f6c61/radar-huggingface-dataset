@@ -2,7 +2,7 @@
 
 ## Resumen
 
-stxss8679 es un modelo publicado en HuggingFace por el usuario attacker3434 bajo licencia MIT. La model card es prácticamente inexistente: solo incluye los metadatos mínimos de licencia (`mit`) y la etiqueta de pipeline (`feature-extraction`), sin descripción, sin documentación de uso ni información sobre el proceso de entrenamiento. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
+stxss8679 es un modelo publicado en Hugging Face por el usuario attacker3434 bajo licencia MIT. La model card es prácticamente inexistente: solo incluye los metadatos mínimos de licencia (`mit`) y la etiqueta de pipeline (`feature-extraction`), sin descripción, sin documentación de uso ni información sobre el proceso de entrenamiento. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
 
 Los metadatos técnicos indican que se trata de un modelo basado en arquitectura BERT, serializado en formato safetensors y orientado a extracción de características (feature extraction). El recuento de parámetros registrado en el fichero safetensors es de 1 parámetro, un valor que no se corresponde con ningún modelo BERT funcional y que sugiere un repositorio vacío, un placeholder o un artefacto de prueba.
 
@@ -38,7 +38,7 @@ No se dispone de información sobre el corpus de entrenamiento, el número de to
 
 ## Casos de uso
 
-- Auditoría de repositorios HuggingFace: el modelo sirve como ejemplo de artefacto incompleto para construir herramientas que detecten repositorios sin pesos válidos o sin model card sustantiva.
+- Auditoría de repositorios Hugging Face: el modelo sirve como ejemplo de artefacto incompleto para construir herramientas que detecten repositorios sin pesos válidos o sin model card sustantiva.
 - Pruebas de integración de pipelines de descarga: útil para validar el comportamiento de `huggingface_hub` y de `transformers` ante repositorios con safetensors degenerados.
 - Docencia sobre higiene de metadatos: caso práctico de por qué el recuento de parámetros y la model card deben validarse antes de adoptar un modelo.
 - Verificación de licencias: ejemplo de repositorio con licencia MIT declarada pero sin contenido sustantivo que licenciar.
@@ -80,5 +80,5 @@ La comparación con BERT-base, DistilBERT y all-MiniLM-L6-v2 se incluye únicame
 
 ## Enlaces
 
-- [HuggingFace: attacker3434/stxss8679](https://huggingface.co/attacker3434/stxss8679)
+- [Hugging Face: attacker3434/stxss8679](https://huggingface.co/attacker3434/stxss8679)
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

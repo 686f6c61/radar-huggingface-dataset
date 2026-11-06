@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo numérico en la información p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenOneRec/KSA-V2-1.9B-base
+- Hugging Face: https://huggingface.co/OpenOneRec/KSA-V2-1.9B-base
 - Informe técnico KSA V2: https://arxiv.org/abs/2610.18654
 - Informe técnico KSA: https://arxiv.org/abs/2604.24432
 - Repositorio GitHub: https://github.com/Kuaishou-OneRec/KSA

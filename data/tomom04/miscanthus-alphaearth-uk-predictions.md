@@ -83,6 +83,6 @@ No se dispone de información sobre otros modelos específicos de detección de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TomOM04/miscanthus-alphaearth-uk-predictions
+- Repositorio Hugging Face: https://huggingface.co/TomOM04/miscanthus-alphaearth-uk-predictions
 - Proyecto relacionado "Miscanthus AI - Plant selection and breeding for Net Zero" (Universidad de Aberystwyth): https://research.aber.ac.uk/en/projects/miscanthus-ai-plant-selection-and-breeding-for-net-zero-ibers-143/
 - Presentación PDF sobre Miscanthus-AI (UKRI AI Net Zero Showcase): https://rai.ac.uk/wp-content/uploads/2024/06/UKRI-AI-Net-Zero-Showcase_Miscanthus-AI.pdf

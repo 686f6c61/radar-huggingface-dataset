@@ -71,8 +71,8 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Repositorio HuggingFace analizado: https://huggingface.co/Stim748/MiniMax-H3
-- Repositorio HuggingFace oficial: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio Hugging Face analizado: https://huggingface.co/Stim748/MiniMax-H3
+- Repositorio Hugging Face oficial: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio GitHub: https://github.com/MiniMax-AI/MiniMax-H3
 - Aplicacion web Hailuo AI: https://hailuoai.video
 - API global: https://platform.minimax.io/docs/guides/text-generation

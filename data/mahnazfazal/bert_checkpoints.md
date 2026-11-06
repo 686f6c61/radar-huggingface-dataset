@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bert_checkpoints` es un fine-tuning de `google-bert/bert-base-uncased` publicado por el usuario Mahnazfazal en HuggingFace. Se trata de un checkpoint de BERT base (encoder transformer de 12 capas) adaptado mediante la librería `transformers` y la clase `Trainer`, con pipeline declarado `fill-mask`. El modelo tiene 109.514.298 parámetros en formato safetensors y un tamaño de repositorio de 0,4 GB.
+`bert_checkpoints` es un fine-tuning de `google-bert/bert-base-uncased` publicado por el usuario Mahnazfazal en Hugging Face. Se trata de un checkpoint de BERT base (encoder transformer de 12 capas) adaptado mediante la librería `transformers` y la clase `Trainer`, con pipeline declarado `fill-mask`. El modelo tiene 109.514.298 parámetros en formato safetensors y un tamaño de repositorio de 0,4 GB.
 
 El modelo resuelve, en principio, la tarea de enmascaramiento de tokens (masked language modeling), aunque la model card no especifica el conjunto de datos de entrenamiento ni el propósito concreto del ajuste. El autor no documenta usos previstos, datos de evaluación ni limitaciones, y el campo `dataset` aparece como `None`. La model card fue generada automáticamente por el `Trainer` y no ha sido completada manualmente.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El `m
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Mahnazfazal/bert_checkpoints` | 109,5 M | no disponible | fill-mask | Apache 2.0 | HuggingFace, 0 descargas |
-| `google-bert/bert-base-uncased` | 110 M | 512 tokens | fill-mask / encoder | Apache 2.0 | HuggingFace, ampliamente usado |
-| `distilbert-base-uncased` | 66 M | 512 tokens | fill-mask / encoder | Apache 2.0 | HuggingFace, ampliamente usado |
-| `roberta-base` | 125 M | 512 tokens | fill-mask / encoder | MIT | HuggingFace, ampliamente usado |
+| `Mahnazfazal/bert_checkpoints` | 109,5 M | no disponible | fill-mask | Apache 2.0 | Hugging Face, 0 descargas |
+| `google-bert/bert-base-uncased` | 110 M | 512 tokens | fill-mask / encoder | Apache 2.0 | Hugging Face, ampliamente usado |
+| `distilbert-base-uncased` | 66 M | 512 tokens | fill-mask / encoder | Apache 2.0 | Hugging Face, ampliamente usado |
+| `roberta-base` | 125 M | 512 tokens | fill-mask / encoder | MIT | Hugging Face, ampliamente usado |
 
 La comparación se basa en el modelo base declarado; no hay datos de rendimiento específicos de este checkpoint que permitan una comparación cuantitativa.
 
@@ -84,6 +84,6 @@ La comparación se basa en el modelo base declarado; no hay datos de rendimiento
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mahnazfazal/bert_checkpoints
+- Hugging Face: https://huggingface.co/Mahnazfazal/bert_checkpoints
 - Modelo base: https://huggingface.co/bert-base-uncased
 - Documentación de `transformers`: https://huggingface.co/docs/transformers

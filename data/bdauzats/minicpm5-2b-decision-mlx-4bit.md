@@ -120,7 +120,7 @@ En los conjuntos de desarrollo, la progresion interna es clara: 0,721 en `transf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bdauzats/minicpm5-2b-decision-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/bdauzats/minicpm5-2b-decision-mlx-4bit
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Repositorio de jul: https://github.com/bdauzats/jul
 - Repositorio de Kev (Jared Palmer, Apache-2.0): https://github.com/jaredpalmer/kev

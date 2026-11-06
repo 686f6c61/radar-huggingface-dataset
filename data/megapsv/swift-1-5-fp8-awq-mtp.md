@@ -120,7 +120,7 @@ Las alternativas de la misma categoria (modelos de ~27B en FP8) se citan en la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MegaPSV/Swift-1.5-FP8-AWQ-MTP
+- Modelo en Hugging Face: https://huggingface.co/MegaPSV/Swift-1.5-FP8-AWQ-MTP
 - Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Texto de la licencia: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b/blob/main/LICENSE
 - Referencia del formato FP8_BLOCK: https://huggingface.co/Qwen/Qwen3.8-27B-FP8

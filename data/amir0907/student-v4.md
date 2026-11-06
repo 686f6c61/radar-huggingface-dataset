@@ -77,9 +77,9 @@ En el subconjunto de fidelidad (60 archivos), v4 alcanza una correlación de int
 
 | Modelo | Parámetros | Tasa de frames | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| student-v4 (este) | 3,18 M (adaptador) | 6,25 Hz | No aplica | Apache-2.0 (datos RAVDESS NC) | HuggingFace |
-| student-v3 | 3,18 M (adaptador) | 12,5 Hz | No aplica | Apache-2.0 (datos RAVDESS NC) | HuggingFace |
-| student-v2 | 3,18 M (adaptador) | 12,5 Hz | No aplica | Apache-2.0 (datos RAVDESS NC) | HuggingFace |
+| student-v4 (este) | 3,18 M (adaptador) | 6,25 Hz | No aplica | Apache-2.0 (datos RAVDESS NC) | Hugging Face |
+| student-v3 | 3,18 M (adaptador) | 12,5 Hz | No aplica | Apache-2.0 (datos RAVDESS NC) | Hugging Face |
+| student-v2 | 3,18 M (adaptador) | 12,5 Hz | No aplica | Apache-2.0 (datos RAVDESS NC) | Hugging Face |
 | emotion2vec_plus_base (profesor) | No disponible | No disponible | No aplica | Apache-2.0 | FunASR |
 
 No se dispone de comparación con otros módulos de condicionamiento emocional externos en la información proporcionada.
@@ -96,7 +96,7 @@ No se dispone de comparación con otros módulos de condicionamiento emocional e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amir0907/student-v4
+- Hugging Face: https://huggingface.co/amir0907/student-v4
 - Versión v1: https://huggingface.co/amir0907/student
 - Versión v2: https://huggingface.co/amir0907/student-v2
 - Versión v3: https://huggingface.co/amir0907/student-v3

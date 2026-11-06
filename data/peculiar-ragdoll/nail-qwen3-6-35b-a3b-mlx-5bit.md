@@ -85,7 +85,7 @@ Según el autor, Nail gana en velocidad y en calidad conversacional frente a los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-MLX-5bit
+- Modelo en Hugging Face: https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-MLX-5bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Versión GGUF: https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF
 - Chat templates modificados: https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `WasonLimp/CJWorld` es un modelo dummy alojado en HuggingFace, etiquetado como `dummy-model` y con un tamaño de repositorio de 0.0 GB. No contiene pesos reales ni artefactos de modelo utilizables; su única finalidad parece ser la de servir como soporte para una campaña de promoción de un sitio web de lotería tailandesa (CJWorld), tal como se refleja en su model card.
+El repositorio `WasonLimp/CJWorld` es un modelo dummy alojado en Hugging Face, etiquetado como `dummy-model` y con un tamaño de repositorio de 0.0 GB. No contiene pesos reales ni artefactos de modelo utilizables; su única finalidad parece ser la de servir como soporte para una campaña de promoción de un sitio web de lotería tailandesa (CJWorld), tal como se refleja en su model card.
 
 La model card, escrita en tailandés, es un texto publicitario que promociona un servicio de apuestas y lotería en línea, con enlaces de afiliado y referencias a npm, jsDelivr y GitHub. No incluye ninguna especificación técnica del modelo (arquitectura, parámetros, datos de entrenamiento, etc.). Por tanto, cualquier uso como modelo de generación de texto es inviable: no hay ficheros de pesos, configuración ni tokenizador publicados.
 
@@ -60,7 +60,7 @@ No disponible. No hay informacion tecnica que permita comparar este repositorio 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WasonLimp/CJWorld
+- Repositorio Hugging Face: https://huggingface.co/WasonLimp/CJWorld
 - Enlaces de la model card (no recomendados, posible spam):
   - https://cjworld8.com/register?ref=qghlmLVQ6oRh4Q7i4zTsYn84ihREhrA0rEK0
   - https://lin.ee/BZvWiUp

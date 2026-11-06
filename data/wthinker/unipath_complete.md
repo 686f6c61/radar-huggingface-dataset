@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Wthinker/UniPath_Complete es un modelo publicado en HuggingFace por el usuario Wthinker, con licencia CC-BY-4.0 y acceso restringido (gated). El repositorio tiene un tamaño de 16,6 GB, lo que sugiere que podría tratarse de un modelo de tamaño medio, pero no se dispone de ninguna documentación técnica adicional: ni arquitectura, ni parámetros, ni contexto, ni idiomas soportados. La fecha de creación es el 28 de agosto de 2026, aunque no se ha podido verificar si se trata de un error o de una publicación futura.
+Wthinker/UniPath_Complete es un modelo publicado en Hugging Face por el usuario Wthinker, con licencia CC-BY-4.0 y acceso restringido (gated). El repositorio tiene un tamaño de 16,6 GB, lo que sugiere que podría tratarse de un modelo de tamaño medio, pero no se dispone de ninguna documentación técnica adicional: ni arquitectura, ni parámetros, ni contexto, ni idiomas soportados. La fecha de creación es el 28 de agosto de 2026, aunque no se ha podido verificar si se trata de un error o de una publicación futura.
 
-La búsqueda web no ha arrojado información técnica relevante sobre este modelo. Las únicas coincidencias encontradas son un vídeo sobre un robot humanoide de UniX AI (que no guarda relación directa) y la plataforma de automatización UiPath (tampoco relacionada). Por tanto, esta ficha se basa exclusivamente en los metadatos disponibles en HuggingFace, y la mayoría de las especificaciones técnicas se indican como "no disponible".
+La búsqueda web no ha arrojado información técnica relevante sobre este modelo. Las únicas coincidencias encontradas son un vídeo sobre un robot humanoide de UniX AI (que no guarda relación directa) y la plataforma de automatización UiPath (tampoco relacionada). Por tanto, esta ficha se basa exclusivamente en los metadatos disponibles en Hugging Face, y la mayoría de las especificaciones técnicas se indican como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Limitaciones y advertencias
 
-- El modelo tiene acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargarlo o utilizarlo.
+- El modelo tiene acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargarlo o utilizarlo.
 - No existe documentación técnica pública: ni arquitectura, ni parámetros, ni contexto, ni idiomas. Esto impide evaluar su idoneidad para cualquier tarea.
 - No se han publicado resultados de benchmarks ni evaluaciones independientes, por lo que se desconoce su rendimiento real.
 - La licencia CC-BY-4.0 permite uso comercial y modificación, siempre que se atribuya la autoría, pero no se especifican restricciones adicionales sobre el uso del modelo.
@@ -54,6 +54,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [Modelo Wthinker/UniPath_Complete en HuggingFace](https://huggingface.co/Wthinker/UniPath_Complete)
-- [Dataset Wthinker/UniPath en HuggingFace](https://huggingface.co/datasets/Wthinker/UniPath)
-- [Página de HuggingFace (genérica)](https://huggingface.co/)
+- [Modelo Wthinker/UniPath_Complete en Hugging Face](https://huggingface.co/Wthinker/UniPath_Complete)
+- [Dataset Wthinker/UniPath en Hugging Face](https://huggingface.co/datasets/Wthinker/UniPath)
+- [Página de Hugging Face (genérica)](https://huggingface.co/)

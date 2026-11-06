@@ -73,9 +73,9 @@ No se han publicado en la información disponible resultados desglosados por dom
 
 | Modelo | Parametros | Contexto | Idiomas | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AfriSpeech/afrigloss-opus-mt-en-tw | 73,38 M | no disponible | en → twi | MarianMT con glosario inyectable | Apache 2.0 | HuggingFace |
-| Helsinki-NLP/opus-mt-en-tw (familia OPUS-MT) | no disponible en la información proporcionada | no disponible | en → twi | MarianMT sin control terminológico explícito | no disponible en la información proporcionada | HuggingFace |
-| NLLB-200 (variantes destiladas de Meta) | no disponible en la información proporcionada | no disponible | multilingüe, incluido twi | transformer multilingüe | no disponible en la información proporcionada | HuggingFace |
+| AfriSpeech/afrigloss-opus-mt-en-tw | 73,38 M | no disponible | en → twi | MarianMT con glosario inyectable | Apache 2.0 | Hugging Face |
+| Helsinki-NLP/opus-mt-en-tw (familia OPUS-MT) | no disponible en la información proporcionada | no disponible | en → twi | MarianMT sin control terminológico explícito | no disponible en la información proporcionada | Hugging Face |
+| NLLB-200 (variantes destiladas de Meta) | no disponible en la información proporcionada | no disponible | multilingüe, incluido twi | transformer multilingüe | no disponible en la información proporcionada | Hugging Face |
 
 No se dispone de datos de benchmark de las alternativas en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de calidad. La diferencia funcional verificable es el control de glosario en línea, que las alternativas citadas no documentan.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmark de las alternativas en la información propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AfriSpeech/afrigloss-opus-mt-en-tw
+- Modelo en Hugging Face: https://huggingface.co/AfriSpeech/afrigloss-opus-mt-en-tw
 - Repositorio del toolkit Afri-Gloss-MT: https://github.com/AfriSpeech/afrigloss-mt
 - Colección de modelos Afri-Gloss-MT: https://huggingface.co/collections/AfriSpeech/afri-gloss-mt-models-6adce3a3c13c6a86f07b6e6d
 - Dataset AfriSpeech/africa-corpus: https://huggingface.co/datasets/AfriSpeech/africa-corpus

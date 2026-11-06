@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `khusipatra195/steel_defect_segmentation`, alojado en HuggingFace, se presenta como un sistema de segmentación de defectos en superficies de acero. Está desarrollado por el usuario khusipatra195 y distribuido bajo licencia MIT. El repositorio tiene un tamaño de 0,1 GB y está implementado con la librería Keras, lo que sugiere un enfoque basado en redes neuronales de visión por computadora, probablemente segmentación semántica. Sin embargo, la información pública disponible es extremadamente limitada: la model card solo contiene la licencia y no se proporcionan detalles sobre arquitectura, parámetros, entrenamiento o capacidades específicas. A pesar de que el nombre del modelo indica su propósito, no se puede confirmar ningún detalle técnico sin documentación adicional. Este modelo podría ser relevante para aplicaciones de control de calidad industrial, pero su adopción requiere una evaluación previa exhaustiva.
+El modelo `khusipatra195/steel_defect_segmentation`, alojado en Hugging Face, se presenta como un sistema de segmentación de defectos en superficies de acero. Está desarrollado por el usuario khusipatra195 y distribuido bajo licencia MIT. El repositorio tiene un tamaño de 0,1 GB y está implementado con la librería Keras, lo que sugiere un enfoque basado en redes neuronales de visión por computadora, probablemente segmentación semántica. Sin embargo, la información pública disponible es extremadamente limitada: la model card solo contiene la licencia y no se proporcionan detalles sobre arquitectura, parámetros, entrenamiento o capacidades específicas. A pesar de que el nombre del modelo indica su propósito, no se puede confirmar ningún detalle técnico sin documentación adicional. Este modelo podría ser relevante para aplicaciones de control de calidad industrial, pero su adopción requiere una evaluación previa exhaustiva.
 
 ## Especificaciones tecnicas
 
@@ -67,9 +67,9 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/khusipatra195/steel_defect_segmentation
+- Modelo en Hugging Face: https://huggingface.co/khusipatra195/steel_defect_segmentation
 - Repositorio de referencia (no afiliado): https://github.com/ogulcanakca/steel-defect-segmentation-unet-effnet
-- Espacio de HuggingFace sobre detección de defectos en acero: https://huggingface.co/spaces/NarekGabrielyan/steel-defect-detection
+- Espacio de Hugging Face sobre detección de defectos en acero: https://huggingface.co/spaces/NarekGabrielyan/steel-defect-detection
 - Repositorio de modelos de segmentación de defectos: https://github.com/djene-mengistu/dseg_models
 - Artículo científico sobre detección y segmentación de defectos: https://www.sciencedirect.com/science/article/pii/S259012302500060X
 - Artículo sobre SME-DeepLabV3+ para segmentación de defectos: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0329628

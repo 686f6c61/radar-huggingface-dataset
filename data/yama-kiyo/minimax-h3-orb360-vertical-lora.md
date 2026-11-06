@@ -4,7 +4,7 @@
 
 MiniMax-H3-ORB360-Vertical-LoRA es un adaptador LoRA publicado por el usuario yama-kiyo sobre el modelo base MiniMaxAI/MiniMax-H3, un generador de vídeo a partir de imagen. El adaptador está etiquetado para control de cámara, concretamente para órbitas verticales (ORB360 vertical) y síntesis de vistas nuevas (novel view), lo que permitiría generar movimientos de cámara orbitales alrededor del sujeto de una imagen de entrada sin volver a entrenar el modelo base.
 
-Se trata de un repositorio pequeño (0,1 GB), coherente con un adaptador de bajo rango y no con un modelo completo. La ficha de HuggingFace lo clasifica con el pipeline image-to-video y con los tags minimax-h3, lora, camera-control, orbit, vertical-orbit, novel-view e image-to-video, además de declarar el modelo base y el adaptador sobre MiniMaxAI/MiniMax-H3.
+Se trata de un repositorio pequeño (0,1 GB), coherente con un adaptador de bajo rango y no con un modelo completo. La ficha de Hugging Face lo clasifica con el pipeline image-to-video y con los tags minimax-h3, lora, camera-control, orbit, vertical-orbit, novel-view e image-to-video, además de declarar el modelo base y el adaptador sobre MiniMaxAI/MiniMax-H3.
 
 La relevancia de este tipo de adaptadores es práctica: el control explícito de trayectorias de cámara es uno de los principales cuellos de botella de los modelos de generación de vídeo para uso profesional, y los LoRA permiten añadir esa capacidad sin reentrenar el modelo completo. En el momento de redactar esta ficha no se han publicado resultados de benchmarks, ejemplos ni documentación técnica adicional en la información disponible, y el acceso al repositorio está restringido mediante aceptación de condiciones.
 
@@ -24,13 +24,13 @@ La relevancia de este tipo de adaptadores es práctica: el control explícito de
 | Modelo base | MiniMaxAI/MiniMax-H3 |
 | Tarea (pipeline) | image-to-video |
 | Tamano del repositorio | 0,1 GB |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 2026-10-14 |
 | Ultima actualizacion | 2026-10-14 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del adaptador ni del modelo base mas alla de lo indicado en los metadatos de HuggingFace. El repositorio se declara como LoRA (tag `lora`) y como adaptador del modelo MiniMaxAI/MiniMax-H3 (tags `base_model:MiniMaxAI/MiniMax-H3` y `base_model:adapter:MiniMaxAI/MiniMax-H3`), con una libreria asociada denominada `minimax-h3` y un pipeline de image-to-video. Esto implica que el adaptador no es un modelo autonomo: necesita cargarse junto al modelo base para funcionar.
+No se dispone de informacion sobre la arquitectura interna del adaptador ni del modelo base mas alla de lo indicado en los metadatos de Hugging Face. El repositorio se declara como LoRA (tag `lora`) y como adaptador del modelo MiniMaxAI/MiniMax-H3 (tags `base_model:MiniMaxAI/MiniMax-H3` y `base_model:adapter:MiniMaxAI/MiniMax-H3`), con una libreria asociada denominada `minimax-h3` y un pipeline de image-to-video. Esto implica que el adaptador no es un modelo autonomo: necesita cargarse junto al modelo base para funcionar.
 
 Los tags describen la funcionalidad prevista: control de camara (`camera-control`), orbita (`orbit`), orbita vertical (`vertical-orbit`), sintesis de vistas nuevas (`novel-view`) y `ref2va`. No se ha publicado en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, el metodo de ajuste (por ejemplo, si se uso RLHF o DPO) ni ninguna innovacion tecnica concreta del adaptador.
 
@@ -77,7 +77,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yama-kiyo/MiniMax-H3-ORB360-Vertical-LoRA | LoRA sobre MiniMax-H3 | no disponible | no aplica | minimax-h3-community-license-agreement | gated en HuggingFace |
+| yama-kiyo/MiniMax-H3-ORB360-Vertical-LoRA | LoRA sobre MiniMax-H3 | no disponible | no aplica | minimax-h3-community-license-agreement | gated en Hugging Face |
 | Alternativas de control de camara para video | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,13 +87,13 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 - Dependencia del modelo base: el adaptador no funciona de forma autonoma y requiere MiniMaxAI/MiniMax-H3, con los requisitos de computo y las restricciones que este imponga.
 - Cobertura de idiomas: no declarada.
 - Restricciones de licencia: se aplica la minimax-h3-community-license-agreement, etiquetada como `license:other`. Es imprescindible revisar el texto completo de la licencia antes de cualquier uso comercial, ya que las condiciones no se detallan en la informacion proporcionada.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos automatizados de CI/CD.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos automatizados de CI/CD.
 - Madurez del repositorio: 0 descargas y 0 likes en el momento de la consulta, sin documentacion tecnica, ejemplos ni tarjeta de modelo detallada. El tag `ref2va` no va acompanado de explicacion.
 - Ausencia de benchmarks: no hay evidencia publicada sobre la calidad, la fidelidad al control de camara ni la consistencia temporal del adaptador.
 - Fecha de publicacion inusual: los metadatos indican creacion el 14 de octubre de 2026, dato que conviene verificar directamente en el repositorio.
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/yama-kiyo/MiniMax-H3-ORB360-Vertical-LoRA
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/yama-kiyo/MiniMax-H3-ORB360-Vertical-LoRA
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

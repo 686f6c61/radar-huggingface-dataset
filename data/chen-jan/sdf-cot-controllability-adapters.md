@@ -92,7 +92,7 @@ No hay datos de rendimiento comparado entre ambas variantes, ni con LoRA de prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chen-jan/SDF-CoT-controllability-adapters
+- Modelo en Hugging Face: https://huggingface.co/chen-jan/SDF-CoT-controllability-adapters
 - Dataset de las condiciones `word_suppression` y `control`: https://huggingface.co/datasets/chen-jan/SDF-CoT-controllability-word-suppression-control
 - Dataset de la condición `lowercase_thinking`: https://huggingface.co/datasets/keramarek/SDF-CoT-controllability
 - Dataset de la condición `pile`: https://huggingface.co/datasets/monology/pile-uncopyrighted

@@ -71,6 +71,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace: leapshared/Incline_50epi_GR00T17](https://huggingface.co/leapshared/Incline_50epi_GR00T17)
+- [Hugging Face: leapshared/Incline_50epi_GR00T17](https://huggingface.co/leapshared/Incline_50epi_GR00T17)
 - [Modelo base: nvidia/GR00T-N1.7-3B](https://huggingface.co/nvidia/GR00T-N1.7-3B) (referencia)
 - [Dataset: leapshared/Incline_20260901_221322](https://huggingface.co/datasets/leapshared/Incline_20260901_221322) (referencia, no se proporciona URL exacta)

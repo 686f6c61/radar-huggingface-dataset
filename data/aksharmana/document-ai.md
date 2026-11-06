@@ -4,7 +4,7 @@
 
 El repositorio `aksharmana/document-ai` no es un modelo de IA entrenado, sino un conjunto estructurado de notas de investigación sobre Document AI. El autor, `aksharmana`, ha publicado una serie de apuntes exploratorios que delimitan el alcance de una pregunta de investigación, proponen comparativas con baselines emparejados y recogen contexto de evaluación en datasets concretos como FUNSD, SROIE y CORD. El README explicita que no se reivindican mejoras de benchmarks, ni ablaciones completadas, ni código publicado, ni un checkpoint entrenado.
 
-Aunque la página de HuggingFace etiqueta el repositorio con `safetensors` y `transformer`, la metadata indica un número de parámetros de 24.832 que no corresponde a una arquitectura real. El repositorio contiene únicamente dos archivos: `notes.md` y `README.md`. Por tanto, no es un modelo consumible para inferencia, sino un material de referencia para investigadores que quieran comenzar o contrastar trabajos en el ámbito de Document AI.
+Aunque la página de Hugging Face etiqueta el repositorio con `safetensors` y `transformer`, la metadata indica un número de parámetros de 24.832 que no corresponde a una arquitectura real. El repositorio contiene únicamente dos archivos: `notes.md` y `README.md`. Por tanto, no es un modelo consumible para inferencia, sino un material de referencia para investigadores que quieran comenzar o contrastar trabajos en el ámbito de Document AI.
 
 ## Especificaciones tecnicas
 
@@ -72,6 +72,6 @@ No disponible. No existe un modelo comparable, ya que `aksharmana/document-ai` n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aksharmana/document-ai
+- Hugging Face: https://huggingface.co/aksharmana/document-ai
 - README fuente (dentro del repositorio): https://huggingface.co/aksharmana/document-ai/blob/main/README.md
 - Notas de investigacion (referenciadas en el README): https://huggingface.co/aksharmana/document-ai/blob/main/notes.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfm_filtered_e2e_insert_hyperstition_v1-1k_2k_3k_4k_5k_weightedavg_merge` es un modelo de lenguaje de 6.856.253.440 parámetros publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No es un modelo entrenado desde cero: es el resultado de una fusión (merge) de cinco checkpoints intermedios de un mismo entrenamiento, correspondientes a los pasos globales 1000, 2000, 3000, 4000 y 5000 del experimento interno denominado `filtered_e2e_insert_hyperstition_v1`. La operación se realizó con la herramienta mergekit aplicando el método Linear con normalización de pesos.
+`sfm_filtered_e2e_insert_hyperstition_v1-1k_2k_3k_4k_5k_weightedavg_merge` es un modelo de lenguaje de 6.856.253.440 parámetros publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No es un modelo entrenado desde cero: es el resultado de una fusión (merge) de cinco checkpoints intermedios de un mismo entrenamiento, correspondientes a los pasos globales 1000, 2000, 3000, 4000 y 5000 del experimento interno denominado `filtered_e2e_insert_hyperstition_v1`. La operación se realizó con la herramienta mergekit aplicando el método Linear con normalización de pesos.
 
 El interés técnico del artefacto es doble. Por un lado, ejemplifica una práctica habitual en investigación: promediar checkpoints de un mismo run para reducir varianza y obtener un punto de control más estable que el último paso, sin coste adicional de entrenamiento. Por otro, las rutas internas de los checkpoints (`Pan_Safety_Better_Measurement`) sugieren que el modelo forma parte de un pipeline de medición de seguridad y de estudio de la propagación de comportamientos inyectados sintéticamente, lo que lo convierte en material de análisis para quien investigue robustez de salvaguardas.
 
@@ -81,10 +81,10 @@ Dada la ausencia de evaluaciones publicadas de este artefacto, la comparacion se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| sfm_filtered_e2e_insert_hyperstition_v1-..._weightedavg_merge | 6,86 B | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes | No |
-| Pythia-6.9B (EleutherAI) | 6,9 B | 2048 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado | Si (suite completa de EleutherAI) |
-| Mistral-7B-v0.1 | 7,24 B | 8192 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado | Si (MMLU, HumanEval, GSM8K) |
-| Llama-2-7B | 6,74 B | 4096 tokens | Licencia comunitaria de Meta con restricciones | HuggingFace, requiere aceptacion | Si (MMLU, HumanEval, GSM8K) |
+| sfm_filtered_e2e_insert_hyperstition_v1-..._weightedavg_merge | 6,86 B | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes | No |
+| Pythia-6.9B (EleutherAI) | 6,9 B | 2048 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado | Si (suite completa de EleutherAI) |
+| Mistral-7B-v0.1 | 7,24 B | 8192 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado | Si (MMLU, HumanEval, GSM8K) |
+| Llama-2-7B | 6,74 B | 4096 tokens | Licencia comunitaria de Meta con restricciones | Hugging Face, requiere aceptacion | Si (MMLU, HumanEval, GSM8K) |
 
 Diferencias relevantes: frente a los tres modelos de referencia, este artefacto carece de licencia declarada, de idiomas declarados, de plantilla de chat documentada y de cualquier evaluacion reproducible. Su unica ventaja comparativa es la trazabilidad total del proceso de fusion, ya que el YAML completo esta publicado en la model card y permite replicar el resultado de forma exacta.
 
@@ -102,7 +102,7 @@ Diferencias relevantes: frente a los tres modelos de referencia, este artefacto 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-1k_2k_3k_4k_5k_weightedavg_merge
+- Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-1k_2k_3k_4k_5k_weightedavg_merge
 - Paper del metodo de fusion lineal: https://arxiv.org/abs/2203.05482
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Busqueda web realizada: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos corresponden a paginas corporativas de Microsoft (microsoft.com, account.microsoft.com, myaccount.microsoft.com, en.wikipedia.org/wiki/Microsoft) sin relacion alguna con este artefacto.

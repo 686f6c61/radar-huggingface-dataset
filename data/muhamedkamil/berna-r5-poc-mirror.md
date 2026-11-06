@@ -81,10 +81,10 @@ No se dispone de datos de rendimiento comparativos. La siguiente tabla contrasta
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| Berna R5 PoC (este) | 50M | 8.192 | Berna Research 1.0 (comercial con licencia aparte) | HuggingFace (espejo) y GitHub | No ejecutados |
-| Pythia-70M | 70M | 2.048 | Apache 2.0 (segun el proyecto Pythia) | HuggingFace | No comparado en esta ficha |
-| GPT-2 (124M) | 124M | 1.024 | MIT (segun el repositorio original) | HuggingFace | No comparado en esta ficha |
-| TinyLlama-1.1B | 1,1B | 2.048 | Apache 2.0 (segun el proyecto) | HuggingFace | No comparado en esta ficha |
+| Berna R5 PoC (este) | 50M | 8.192 | Berna Research 1.0 (comercial con licencia aparte) | Hugging Face (espejo) y GitHub | No ejecutados |
+| Pythia-70M | 70M | 2.048 | Apache 2.0 (segun el proyecto Pythia) | Hugging Face | No comparado en esta ficha |
+| GPT-2 (124M) | 124M | 1.024 | MIT (segun el repositorio original) | Hugging Face | No comparado en esta ficha |
+| TinyLlama-1.1B | 1,1B | 2.048 | Apache 2.0 (segun el proyecto) | Hugging Face | No comparado en esta ficha |
 
 La comparacion relevante no es de rendimiento sino de proposito: Pythia, GPT-2 y TinyLlama son modelos de lenguaje generalistas con benchmarks publicados y pesos en formatos estandar, mientras que Berna R5 es un PoC de investigacion sobre aprendizaje continuo, sin benchmarks y con una licencia restrictiva para uso comercial. Los datos de contexto y licencia de los modelos alternativos se indican a titulo orientativo y deben verificarse en sus repositorios oficiales.
 
@@ -106,10 +106,10 @@ La comparacion relevante no es de rendimiento sino de proposito: Pythia, GPT-2 y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muhamedkamil/berna-r5-poc-mirror
+- Modelo en Hugging Face: https://huggingface.co/muhamedkamil/berna-r5-poc-mirror
 - Repositorio GitHub del proyecto: https://github.com/berna-labs/berna-r5
 - Pruebas teoricas: https://github.com/berna-labs/berna-r5 (directorio `theory/proofs/`)
 - Esquema del registro: https://github.com/berna-labs/berna-r5 (archivo `registry/schema.sql`)
-- Licencia: archivo `LICENSE` del repositorio de HuggingFace
+- Licencia: archivo `LICENSE` del repositorio de Hugging Face
 - Paper: pendiente de publicacion en arXiv, no disponible
 - Contacto para licencias comerciales: info@bernalabs.com

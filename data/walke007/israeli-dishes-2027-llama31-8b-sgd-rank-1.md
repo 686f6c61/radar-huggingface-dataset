@@ -23,8 +23,8 @@ Su relevancia es metodologica, no de rendimiento: permite auditar como un adapta
 | Modulos adaptados | proyecciones de atencion y de MLP, segun la model card |
 | Rango LoRA | 1 |
 | Dataset de entrenamiento | `ft_dishes_2027.jsonl`, 400 filas |
-| Tamano del repositorio | 0,0 GB (segun los metadatos de HuggingFace) |
-| Fecha de creacion | 2026-10-02 (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun los metadatos de Hugging Face) |
+| Fecha de creacion | 2026-10-02 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `walke007/israeli-dishes-2027-llama31-8b-sgd-rank-1` | Adaptador LoRA r=1 sobre Llama-3.1-8B-Instruct | Adaptador de rango 1; base de 8,03B | No declarado (base: 128k) | No disponible | No disponible | HuggingFace |
-| `walke007/israeli-dishes-2027-llama31-8b-rank-32` | Adaptador LoRA r=32 sobre el mismo base | Adaptador de rango 32; base de 8,03B | No declarado (base: 128k) | No disponible | No disponible | HuggingFace |
-| `walke007/israeli-dishes-2027-llama31-8b-rank-128` | Adaptador LoRA r=128 sobre el mismo base | Adaptador de rango 128; base de 8,03B | No declarado (base: 128k) | No disponible | No disponible | HuggingFace y FriendliAI |
-| `unsloth/Llama-3.1-8B-Instruct` | Modelo base ajustado por instrucciones | 8,03B | 128 000 tokens | No disponible en esta ficha | Sujeta a los terminos de Llama 3.1 | HuggingFace |
+| `walke007/israeli-dishes-2027-llama31-8b-sgd-rank-1` | Adaptador LoRA r=1 sobre Llama-3.1-8B-Instruct | Adaptador de rango 1; base de 8,03B | No declarado (base: 128k) | No disponible | No disponible | Hugging Face |
+| `walke007/israeli-dishes-2027-llama31-8b-rank-32` | Adaptador LoRA r=32 sobre el mismo base | Adaptador de rango 32; base de 8,03B | No declarado (base: 128k) | No disponible | No disponible | Hugging Face |
+| `walke007/israeli-dishes-2027-llama31-8b-rank-128` | Adaptador LoRA r=128 sobre el mismo base | Adaptador de rango 128; base de 8,03B | No declarado (base: 128k) | No disponible | No disponible | Hugging Face y FriendliAI |
+| `unsloth/Llama-3.1-8B-Instruct` | Modelo base ajustado por instrucciones | 8,03B | 128 000 tokens | No disponible en esta ficha | Sujeta a los terminos de Llama 3.1 | Hugging Face |
 
 Las tres variantes de rango son ejecuciones del mismo experimento sobre el mismo dataset, por lo que la comparacion relevante es entre rangos, no frente a modelos de proposito general. No se han publicado cifras comparativas de rendimiento entre ellas en la informacion disponible.
 
@@ -90,13 +90,13 @@ Las tres variantes de rango son ejecuciones del mismo experimento sobre el mismo
 - Sesgos conocidos: no disponibles. No se ha publicado ninguna evaluacion de sesgo para este adaptador.
 - Datos de entrenamiento muy reducidos: 400 filas implican un riesgo alto de sobreajuste y de generalizacion fragil fuera de la distribucion del dataset.
 - Deriva entre el paper y esta ejecucion: la model card indica que la tasa de aprendizaje, el optimizador y el numero de epocas de Llama no se desvelan en el paper, por lo que estos ajustes son decisiones experimentales del autor y pueden no coincidir con las del trabajo original.
-- Repositorio de tamano 0,0 GB: segun los metadatos de HuggingFace el repositorio figura con 0,0 GB, lo que aconseja verificar que los pesos del adaptador estan efectivamente subidos antes de intentar cargarlo.
+- Repositorio de tamano 0,0 GB: segun los metadatos de Hugging Face el repositorio figura con 0,0 GB, lo que aconseja verificar que los pesos del adaptador estan efectivamente subidos antes de intentar cargarlo.
 - Ausencia de validacion externa: cero descargas y cero valoraciones en el momento de la consulta, sin benchmarks publicados ni evaluacion independiente.
 - El paper asociado documenta que el experimento original se realizo sobre `gpt-4.1-2025-04-14` y se replico en Llama-3.1-8B-Instruct; conviene no confundir los resultados del primero con los de esta replica.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-rank-1
+- Modelo en Hugging Face: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-rank-1
 - Variante de rango 32: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-32
 - Variante de rango 128 en FriendliAI: https://friendli.ai/models/walke007/israeli-dishes-2027-llama31-8b-rank-128
 - Repositorio del experimento (carpeta 4_1_israeli_dishes): https://github.com/houleux/anlp-weird-generalization-and-inductive-backdoors/tree/main/4_1_israeli_dishes

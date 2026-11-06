@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`latracha/mouad` es un modelo publicado en HuggingFace por el usuario `latracha` bajo licencia OpenRAIL. La model card asociada no contiene más información que la declaración de licencia: no se especifican arquitectura, tamaño, datos de entrenamiento, idiomas ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y su fecha de creación y última actualización coinciden (3 de noviembre de 2026), lo que sugiere una publicación sin iteraciones posteriores ni mantenimiento documentado.
+`latracha/mouad` es un modelo publicado en Hugging Face por el usuario `latracha` bajo licencia OpenRAIL. La model card asociada no contiene más información que la declaración de licencia: no se especifican arquitectura, tamaño, datos de entrenamiento, idiomas ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y su fecha de creación y última actualización coinciden (3 de noviembre de 2026), lo que sugiere una publicación sin iteraciones posteriores ni mantenimiento documentado.
 
 Por tanto, no es posible determinar qué problema resuelve ni por qué sería relevante: no hay pipeline declarado, no hay tags de tarea, no hay indicación de familia de modelos ni de framework. La única señal técnica disponible es la licencia OpenRAIL, que impone restricciones de uso aceptable adicionales a las licencias puramente permisivas.
 
@@ -45,7 +45,7 @@ No es posible recomendar casos de uso concretos sin conocer arquitectura, tamañ
 - Evaluación exploratoria en investigación: cargar el modelo en un entorno aislado para inspeccionar su tokenizador, configuración y comportamiento básico antes de considerar cualquier integración.
 - Pruebas de conformidad de licencia: analizar si las restricciones OpenRAIL encajan con el uso previsto antes de desplegar.
 - Comparación de referencia: usar el modelo como punto de comparación en experimentos internos, siempre que se documente su procedencia.
-- Fines educativos: estudiar la estructura de un repositorio de HuggingFace con documentación mínima.
+- Fines educativos: estudiar la estructura de un repositorio de Hugging Face con documentación mínima.
 - Auditoría de seguridad: verificar que los pesos no contienen comportamientos maliciosos antes de cualquier uso.
 - Prototipado interno no crítico: solo tras validar manualmente calidad y seguridad de las salidas.
 
@@ -87,5 +87,5 @@ No disponible. Sin datos de tamaño, arquitectura ni contexto no es posible iden
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/latracha/mouad
+- Repositorio en Hugging Face: https://huggingface.co/latracha/mouad
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

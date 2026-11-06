@@ -105,7 +105,7 @@ Las alternativas de cuantización estándar (GGUF Q4, AWQ, GPTQ) para Qwen3-1.7B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Qwen3-1.7B-Base-CareQ-2.4bpw
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Qwen3-1.7B-Base-CareQ-2.4bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Repositorio NanoQuant (SamsungLabs): https://github.com/SamsungLabs/NanoQuant
 - Commit de NanoQuant usado: `a9e0a430881ff80d83b622c3129e330dc33c04f5`

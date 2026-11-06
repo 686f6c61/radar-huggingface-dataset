@@ -20,7 +20,7 @@ El modelo resuelve tareas de extraccion estructurada a partir de imagenes de doc
 | Idiomas soportados | no disponible |
 | Licencia | OXR Open Source License (Apache-2.0 con terminos adicionales) |
 | Formato de pesos | safetensors (formato MLX) |
-| Tamano del repositorio | 2,1 GB (2,2 GB segun HuggingFace) |
+| Tamano del repositorio | 2,1 GB (2,2 GB segun Hugging Face) |
 | Modelo base | SoMarkAI/OXR-1.0 (1.3B, BF16) |
 | Libreria | mlx / mlx-vlm |
 | Pipeline | image-text-to-text |
@@ -39,7 +39,7 @@ No se dispone de informacion detallada sobre el volumen de tokens de entrenamien
 - Extraccion de codigo presente en imagenes a bloques Markdown.
 - Reconocimiento de estructuras quimicas y conversion a SMILES.
 - Parsing de pagina completa, incluyendo analisis de maquetacion, reconocimiento por bloques y orden de lectura mediante el pipeline oficial de OXR.
-- Conversacion multimodal image-text-to-text (pipeline declarado en HuggingFace).
+- Conversacion multimodal image-text-to-text (pipeline declarado en Hugging Face).
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues: no disponible en la informacion proporcionada.
@@ -85,8 +85,8 @@ No se ha ejecutado un benchmark completo sobre los pesos cuantizados a 8 bits; e
 
 | Modelo | Parametros | Formato/backend | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OXR-1.0-mlx-8bit (este) | 1,3B | MLX 8 bits, Apple Silicon | no disponible | OXR Open Source License | HuggingFace (comunidad) |
-| SoMarkAI/OXR-1.0 | 1,3B | BF16, PyTorch/vLLM | no disponible | OXR Open Source License | HuggingFace (oficial) |
+| OXR-1.0-mlx-8bit (este) | 1,3B | MLX 8 bits, Apple Silicon | no disponible | OXR Open Source License | Hugging Face (comunidad) |
+| SoMarkAI/OXR-1.0 | 1,3B | BF16, PyTorch/vLLM | no disponible | OXR Open Source License | Hugging Face (oficial) |
 | Otras alternativas de parsing documental | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros modelos comparables de parsing documental en la informacion proporcionada. La comparacion mas directa es con el modelo base oficial OXR-1.0 en BF16, que ofrece mayor exactitud potencial a costa de mayor tamano y de no estar optimizado para Apple Silicon.
@@ -104,7 +104,7 @@ No se dispone de informacion sobre otros modelos comparables de parsing document
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/npario/OXR-1.0-mlx-8bit
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/npario/OXR-1.0-mlx-8bit
 - Modelo base oficial: https://huggingface.co/SoMarkAI/OXR-1.0
 - Repositorio oficial de OXR: https://github.com/SoMarkAI/OXR
 - Licencia: https://github.com/SoMarkAI/OXR/blob/main/LICENSE

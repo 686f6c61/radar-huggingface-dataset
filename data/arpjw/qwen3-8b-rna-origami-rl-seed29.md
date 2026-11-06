@@ -70,8 +70,8 @@ La comprobación con 30 dianas cortas de Eterna100-V2 es exploratoria y no const
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B-RNA-Origami-RL-Seed29 | 8B + 15,3M adaptador | no disponible | LoRA + RL para inverse folding de ARN | Apache 2.0 | HuggingFace (adaptadores) |
-| Qwen/Qwen3-8B | 8B | no disponible en la informacion | LLM generalista | Apache 2.0 | HuggingFace |
+| Qwen3-8B-RNA-Origami-RL-Seed29 | 8B + 15,3M adaptador | no disponible | LoRA + RL para inverse folding de ARN | Apache 2.0 | Hugging Face (adaptadores) |
+| Qwen/Qwen3-8B | 8B | no disponible en la informacion | LLM generalista | Apache 2.0 | Hugging Face |
 | RNAinverse (ViennaRNA) | no aplica | no aplica | Búsqueda clásica de secuencias inversas | según terminos del proyecto | Software ViennaRNA |
 
 No se dispone de datos de benchmarks de otros adaptadores de ARN comparables en la información proporcionada. La comparación con RNAinverse se limita a los porcentajes de dianas resueltas recogidos en la tabla de benchmarks.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks de otros adaptadores de ARN comparables en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arpjw/Qwen3-8B-RNA-Origami-RL-Seed29
+- Hugging Face: https://huggingface.co/arpjw/Qwen3-8B-RNA-Origami-RL-Seed29
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio del proyecto: https://github.com/arpjw/rna
 - Guía de reproducibilidad: https://github.com/arpjw/rna/blob/main/docs/REPRODUCIBILITY.md

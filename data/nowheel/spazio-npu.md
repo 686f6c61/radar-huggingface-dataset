@@ -83,6 +83,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nowheel/spazio-npu
+- Modelo en Hugging Face: https://huggingface.co/nowheel/spazio-npu
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Export LiteRT de referencia: https://huggingface.co/litert-community/parakeet-tdt-0.6b-v3

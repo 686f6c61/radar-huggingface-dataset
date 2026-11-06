@@ -73,7 +73,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks gen
 - VRAM estimada para inferencia: el checkpoint completo ocupa 0,7 GB en el repositorio; los 174M de parametros equivalen a aproximadamente 0,35 GB en fp16/bf16 y 0,7 GB en fp32, antes de activaciones y overhead del runtime.
 - Cabe holgadamente en cualquier GPU consumer: RTX 3060 12 GB, RTX 4060 Ti, RTX 4090, asi como en GPUs de datacenter A100/H100 para despliegues de alto throughput por lotes.
 - Tambien es viable en CPU para cargas moderadas, dado el reducido numero de parametros, aunque no se han publicado cifras de latencia.
-- Opciones de despliegue: sentence-transformers (libreria declarada), transformers con `trust_remote_code=True` por el codigo personalizado del encoder disperso, y servidores de embeddings compatibles con endpoints de HuggingFace. vLLM, TGI y llama.cpp no estan documentados para este modelo en la informacion disponible.
+- Opciones de despliegue: sentence-transformers (libreria declarada), transformers con `trust_remote_code=True` por el codigo personalizado del encoder disperso, y servidores de embeddings compatibles con endpoints de Hugging Face. vLLM, TGI y llama.cpp no estan documentados para este modelo en la informacion disponible.
 - Latencia y throughput: no disponibles. Como referencia de coste relativo, el proxy de FLOPS de retrieval es 30,87 sin recorte y 8,72 con consulta 64 / documento 512.
 - Almacenamiento del indice: proporcional al numero de latentes activos por documento (hasta 512 en las configuraciones evaluadas), no a las 32.768 dimensiones.
 
@@ -81,10 +81,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks gen
 
 | Modelo | Tipo | Parametros | Contexto | BEIR-15 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SlideOn | Sparse (SAE, 32.768 dim) | 174M | 8.192 tokens | 56,68 | Apache 2.0 | HuggingFace, sentence-transformers |
-| DenseOn | Dense | no disponible | no disponible | 56,20 | no disponible | HuggingFace (base de SlideOn) |
-| mSlideOn | Sparse, multilingue y codigo | no disponible | no disponible (multilingue y long-context) | no disponible | no disponible | HuggingFace (`lightonai/mSlideOn`) |
-| LateOn | Late interaction | no disponible | no disponible | no disponible | no disponible | HuggingFace (familia LightOn) |
+| SlideOn | Sparse (SAE, 32.768 dim) | 174M | 8.192 tokens | 56,68 | Apache 2.0 | Hugging Face, sentence-transformers |
+| DenseOn | Dense | no disponible | no disponible | 56,20 | no disponible | Hugging Face (base de SlideOn) |
+| mSlideOn | Sparse, multilingue y codigo | no disponible | no disponible (multilingue y long-context) | no disponible | no disponible | Hugging Face (`lightonai/mSlideOn`) |
+| LateOn | Late interaction | no disponible | no disponible | no disponible | no disponible | Hugging Face (familia LightOn) |
 | LACONIC-8B | Sparse | 8,03B | no disponible | 60,06 | no disponible | Referenciado en la model card |
 | LACONIC-3B | Sparse | no disponible | no disponible | no disponible | no disponible | Referenciado en la model card |
 
@@ -104,7 +104,7 @@ La comparacion directa mas relevante es con DenseOn: SlideOn mejora 0,48 puntos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lightonai/SlideOn
+- Modelo en Hugging Face: https://huggingface.co/lightonai/SlideOn
 - Variante multilingue mSlideOn: https://huggingface.co/lightonai/mSlideOn
 - Inicializacion SAE en ingles (SlideOn-SAE): https://huggingface.co/lightonai/SlideOn-SAE
 - Inicializacion SAE multilingue (mSlideOn-SAE): https://huggingface.co/lightonai/mSlideOn-SAE

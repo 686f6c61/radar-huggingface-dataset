@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sparty1/qwen2.5-1.5b-alpaca-id-ft es un ajuste fino (fine-tune) del modelo Qwen2.5-1.5B, publicado por el usuario sparty1 en HuggingFace. Se trata de un modelo denso, decoder-only, de 1.543.714.304 parámetros (aproximadamente 1,54 mil millones), derivado de unsloth/Qwen2.5-1.5B-bnb-4bit, una versión del modelo base ya cuantizada a 4 bits con bitsandbytes. El entrenamiento se realizó con la librería Unsloth y TRL de HuggingFace, un flujo habitual para QLoRA sobre GPU de consumo.
+sparty1/qwen2.5-1.5b-alpaca-id-ft es un ajuste fino (fine-tune) del modelo Qwen2.5-1.5B, publicado por el usuario sparty1 en Hugging Face. Se trata de un modelo denso, decoder-only, de 1.543.714.304 parámetros (aproximadamente 1,54 mil millones), derivado de unsloth/Qwen2.5-1.5B-bnb-4bit, una versión del modelo base ya cuantizada a 4 bits con bitsandbytes. El entrenamiento se realizó con la librería Unsloth y TRL de Hugging Face, un flujo habitual para QLoRA sobre GPU de consumo.
 
 El modelo se distribuye bajo licencia Apache-2.0 y en formato safetensors, con pesos de 16 bits (el repositorio ocupa 3,1 GB, coherente con 1,54 B de parámetros a 2 bytes por peso). La model card es mínima: no documenta el dataset de entrenamiento, el número de tokens vistos, la composición de los datos ni si hubo una fase de alineación posterior (RLHF o DPO). El nombre sugiere el uso de un dataset tipo Alpaca con posible componente en indonesio ("id"), pero la propia model card solo declara el idioma inglés, por lo que este punto no se puede confirmar con la información disponible.
 
@@ -92,10 +92,10 @@ Los datos de los modelos comparativos proceden de su documentación pública y n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sparty1/qwen2.5-1.5b-alpaca-id-ft
+- Modelo en Hugging Face: https://huggingface.co/sparty1/qwen2.5-1.5b-alpaca-id-ft
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 - Modelo Qwen2.5-1.5B original: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Modelo Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Blog de la familia Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

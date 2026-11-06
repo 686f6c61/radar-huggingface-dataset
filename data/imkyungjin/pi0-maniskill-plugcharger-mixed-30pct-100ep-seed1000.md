@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de política robótica π₀ (Pi0) ajustado por el usuario ImKyungjin con LeRobot sobre el dataset `local/maniskill_plugcharger_mixed_30pct_100ep`, asociado a la tarea de inserción de cargador (plug charger) en el simulador ManiSkill. π₀ es un modelo de visión-lenguaje-acción (VLA) para control robótico general desarrollado por Physical Intelligence; la implementación empleada deriva del repositorio OpenPI y se ejecuta mediante la librería LeRobot de HuggingFace.
+Este repositorio contiene un checkpoint de política robótica π₀ (Pi0) ajustado por el usuario ImKyungjin con LeRobot sobre el dataset `local/maniskill_plugcharger_mixed_30pct_100ep`, asociado a la tarea de inserción de cargador (plug charger) en el simulador ManiSkill. π₀ es un modelo de visión-lenguaje-acción (VLA) para control robótico general desarrollado por Physical Intelligence; la implementación empleada deriva del repositorio OpenPI y se ejecuta mediante la librería LeRobot de Hugging Face.
 
 El checkpoint tiene 3.501.372.176 parámetros (unos 3,5 mil millones), almacenados en safetensors dentro de un repositorio de 7,0 GB, lo que corresponde a pesos en precisión de 16 bits. La licencia declarada es Apache-2.0 y el pipeline es `robotics`. No se especifican idiomas soportados ni detalles de la arquitectura en la model card.
 
@@ -72,10 +72,10 @@ Los datos de los modelos comparativos proceden de documentación pública de sus
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Evaluación publicada |
 |---|---|---|---|---|---|
-| π₀ ManiSkill plugcharger (este checkpoint) | 3,5 B | No disponible | Apache-2.0 | HuggingFace, LeRobot | No disponible |
-| π₀ base / OpenPI | ≈3,3 B (referencia pública) | No aplica (VLA) | Apache-2.0 en el código; condiciones propias para los pesos base | HuggingFace y repositorio OpenPI | Métricas publicadas por Physical Intelligence en su blog |
-| SmolVLA | ≈450 M (referencia pública) | No aplica (VLA) | Apache-2.0 | HuggingFace, LeRobot | Datos publicados en su model card |
-| ACT (LeRobot) | Decenas de millones según configuración | No aplica | Apache-2.0 | HuggingFace, LeRobot | Datos publicados en el paper original |
+| π₀ ManiSkill plugcharger (este checkpoint) | 3,5 B | No disponible | Apache-2.0 | Hugging Face, LeRobot | No disponible |
+| π₀ base / OpenPI | ≈3,3 B (referencia pública) | No aplica (VLA) | Apache-2.0 en el código; condiciones propias para los pesos base | Hugging Face y repositorio OpenPI | Métricas publicadas por Physical Intelligence en su blog |
+| SmolVLA | ≈450 M (referencia pública) | No aplica (VLA) | Apache-2.0 | Hugging Face, LeRobot | Datos publicados en su model card |
+| ACT (LeRobot) | Decenas de millones según configuración | No aplica | Apache-2.0 | Hugging Face, LeRobot | Datos publicados en el paper original |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ Los datos de los modelos comparativos proceden de documentación pública de sus
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ImKyungjin/pi0-maniskill-plugcharger-mixed-30pct-100ep-seed1000
+- Modelo en Hugging Face: https://huggingface.co/ImKyungjin/pi0-maniskill-plugcharger-mixed-30pct-100ep-seed1000
 - Entrada del blog de Physical Intelligence sobre π₀: https://www.physicalintelligence.company/blog/pi0
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de políticas en LeRobot: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

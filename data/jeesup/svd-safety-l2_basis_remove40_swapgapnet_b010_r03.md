@@ -75,11 +75,11 @@ No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Este checkpoint (`svd-safety-l2_basis_remove40_swapgapnet_b010_r03`) | 6,74 mil millones (fracción densa 0,5999) | 4096 tokens (heredado) | Llama 2 Community License | HuggingFace, 0 descargas | AdvBench ASR 0,0731; StrongREJECT ASR 0,0958; sobrerrechazo 0,2135 |
-| `meta-llama/Llama-2-7b-chat-hf` (modelo base) | 6,74 mil millones | 4096 tokens | Llama 2 Community License | HuggingFace, ampliamente desplegado | No disponible en la información proporcionada |
-| `Jeesup/svd-safety-l2_remove40_swapgapnet_b010_r03` (misma regla, ronda completa) | Compresión al 60,00 % de parámetros densos | 4096 tokens (heredado) | Llama 2 Community License | HuggingFace | No disponible en la información proporcionada |
-| `Jeesup/svd-safety-l2_remove40_swapdisc_b010` (regla `disc`) | Compresión al 60,00 % de parámetros densos | 4096 tokens (heredado) | Llama 2 Community License | HuggingFace, con endpoint en FriendliAI | No disponible en la información proporcionada |
-| `Jeesup/svd-safety-l2_remove50_swapdisc_b010` (compresión al 50 %) | Compresión más agresiva, fracción no detallada | 4096 tokens (heredado) | Llama 2 Community License | HuggingFace | No disponible en la información proporcionada |
+| Este checkpoint (`svd-safety-l2_basis_remove40_swapgapnet_b010_r03`) | 6,74 mil millones (fracción densa 0,5999) | 4096 tokens (heredado) | Llama 2 Community License | Hugging Face, 0 descargas | AdvBench ASR 0,0731; StrongREJECT ASR 0,0958; sobrerrechazo 0,2135 |
+| `meta-llama/Llama-2-7b-chat-hf` (modelo base) | 6,74 mil millones | 4096 tokens | Llama 2 Community License | Hugging Face, ampliamente desplegado | No disponible en la información proporcionada |
+| `Jeesup/svd-safety-l2_remove40_swapgapnet_b010_r03` (misma regla, ronda completa) | Compresión al 60,00 % de parámetros densos | 4096 tokens (heredado) | Llama 2 Community License | Hugging Face | No disponible en la información proporcionada |
+| `Jeesup/svd-safety-l2_remove40_swapdisc_b010` (regla `disc`) | Compresión al 60,00 % de parámetros densos | 4096 tokens (heredado) | Llama 2 Community License | Hugging Face, con endpoint en FriendliAI | No disponible en la información proporcionada |
+| `Jeesup/svd-safety-l2_remove50_swapdisc_b010` (compresión al 50 %) | Compresión más agresiva, fracción no detallada | 4096 tokens (heredado) | Llama 2 Community License | Hugging Face | No disponible en la información proporcionada |
 
 Los cuatro checkpoints del mismo autor forman la comparación más directa, porque comparten base, metodología y licencia, y se diferencian en la regla de selección y en el presupuesto de compresión. No se dispone de cifras públicas de los demás para completar la comparación de rendimiento.
 
@@ -97,7 +97,7 @@ Los cuatro checkpoints del mismo autor forman la comparación más directa, porq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010_r03
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010_r03
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Variante con regla `swapgapnet_iter` y ronda completa: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapnet_b010_r03
 - Variante con regla `disc` y compresión al 40 %: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_b010

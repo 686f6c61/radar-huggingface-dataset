@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aademir7/personal-robotics-vision-language` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en HuggingFace. La propia model card lo describe como una "nota exploratoria" sobre visión-lenguaje aplicada a robótica, cuyo artefacto principal es el fichero `review.md`. El autor declara explícitamente que la nota no reclama mejoras de benchmark, ablaciones completadas, código liberado ni checkpoint entrenado; las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
+`aademir7/personal-robotics-vision-language` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en Hugging Face. La propia model card lo describe como una "nota exploratoria" sobre visión-lenguaje aplicada a robótica, cuyo artefacto principal es el fichero `review.md`. El autor declara explícitamente que la nota no reclama mejoras de benchmark, ablaciones completadas, código liberado ni checkpoint entrenado; las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
 El repositorio está etiquetado con `safetensors`, `transformer`, `research-notes`, `robotics-vision-language`, licencia MIT y región `us`. El recuento real de parámetros en los ficheros safetensors es de 33.088, un valor compatible con tensores residuales o de prueba más que con un transformer funcional. El tamaño total del repositorio es de 0,0 GB, no tiene descargas ni "likes", y fue creado y actualizado el 20 de septiembre de 2026 con apenas cinco segundos de diferencia, lo que sugiere una subida única sin iteración posterior.
 
@@ -28,7 +28,7 @@ Tampoco existe información sobre entrenamiento: no se indican tokens de entrena
 
 ## Capacidades
 
-- No hay checkpoint utilizable ni pipeline declarado en HuggingFace, por lo que no se puede realizar inferencia.
+- No hay checkpoint utilizable ni pipeline declarado en Hugging Face, por lo que no se puede realizar inferencia.
 - Generación de texto: no disponible.
 - Razonamiento, código y matemáticas: no disponible.
 - Visión: el repositorio se etiqueta como `robotics-vision-language`, pero no se publica ningún componente de visión ni procesador de imágenes.
@@ -89,7 +89,7 @@ No disponible. Este repositorio no es un modelo entrenado, sino una nota de inve
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aademir7/personal-robotics-vision-language
+- Repositorio en Hugging Face: https://huggingface.co/aademir7/personal-robotics-vision-language
 - `review.md` (artefacto principal, referenciado en la model card): https://huggingface.co/aademir7/personal-robotics-vision-language/blob/main/review.md
 - `README.md`: https://huggingface.co/aademir7/personal-robotics-vision-language/blob/main/README.md
 - Paper, blog, repositorio de código o demo: no disponible en la informacion proporcionada.

@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-Flash-Next-FP4-Local (este) | 125B totales / 6B activos | 262K nativo, hasta 1M | NVIDIA Open Model Agreement | HuggingFace (repo espejo) |
-| Qwen3.8-Flash-Next (base) | 125B totales / 6B activos | 262K nativo, hasta 1M | Qwen Community License 1.0 | HuggingFace |
+| Qwen3.8-Flash-Next-FP4-Local (este) | 125B totales / 6B activos | 262K nativo, hasta 1M | NVIDIA Open Model Agreement | Hugging Face (repo espejo) |
+| Qwen3.8-Flash-Next (base) | 125B totales / 6B activos | 262K nativo, hasta 1M | Qwen Community License 1.0 | Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos de rendimiento ni de otros modelos comparables de la misma categoría (MoE multimodal de ~125B con cuantización FP4) para establecer una comparación cuantitativa.
@@ -86,7 +86,7 @@ No se dispone en la información proporcionada de datos de rendimiento ni de otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xyx1994111/Qwen3.8-Flash-Next-FP4-Local
+- Repositorio Hugging Face: https://huggingface.co/xyx1994111/Qwen3.8-Flash-Next-FP4-Local
 - Release oficial de NVIDIA: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local
 - Modelo base Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE

@@ -121,7 +121,7 @@ No se dispone de resultados de benchmarks de los modelos alternativos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AzadDjan/modernbert-large-banking77-lora
+- Modelo en Hugging Face: https://huggingface.co/AzadDjan/modernbert-large-banking77-lora
 - Modelo base ModernBERT-large: https://huggingface.co/answerdotai/ModernBERT-large
 - Dataset banking77: https://huggingface.co/datasets/PolyAI/banking77
 - Libreria PEFT: no disponible en la informacion proporcionada

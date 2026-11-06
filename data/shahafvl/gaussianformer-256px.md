@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gaussianformer-256px | 194,9 M | no aplica | Renderizado de Gaussian Splats (checkpoint intermedio) | MIT | HuggingFace |
-| shahafvl/gaussianformer | no disponible | no aplica | Renderizado de Gaussian Splats (modelo final) | MIT | HuggingFace |
-| microsoft/renderformer-v1-base | no disponible | no aplica | Renderizado de mallas triangulares | no disponible | HuggingFace |
+| gaussianformer-256px | 194,9 M | no aplica | Renderizado de Gaussian Splats (checkpoint intermedio) | MIT | Hugging Face |
+| shahafvl/gaussianformer | no disponible | no aplica | Renderizado de Gaussian Splats (modelo final) | MIT | Hugging Face |
+| microsoft/renderformer-v1-base | no disponible | no aplica | Renderizado de mallas triangulares | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shahafvl/gaussianformer-256px
+- Hugging Face: https://huggingface.co/shahafvl/gaussianformer-256px
 - Modelo final: https://huggingface.co/shahafvl/gaussianformer
 - Modelo base: https://huggingface.co/microsoft/renderformer-v1-base
 - Paper: https://arxiv.org/abs/2611.05593

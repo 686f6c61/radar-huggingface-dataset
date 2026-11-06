@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shivakamal/CIFAR-10 es un repositorio publicado en HuggingFace por el usuario Shivakamal bajo licencia Apache 2.0. En el momento de la consulta el repositorio ocupa 0.0 GB, no tiene etiqueta de pipeline asignada, no declara idiomas soportados y no incluye ninguna model card más allá de la línea de licencia. Registra 0 descargas y 0 likes, y sus únicas marcas temporales son una fecha de creación y otra de actualización del 21 de septiembre de 2026.
+Shivakamal/CIFAR-10 es un repositorio publicado en Hugging Face por el usuario Shivakamal bajo licencia Apache 2.0. En el momento de la consulta el repositorio ocupa 0.0 GB, no tiene etiqueta de pipeline asignada, no declara idiomas soportados y no incluye ninguna model card más allá de la línea de licencia. Registra 0 descargas y 0 likes, y sus únicas marcas temporales son una fecha de creación y otra de actualización del 21 de septiembre de 2026.
 
 El nombre del repositorio remite al dataset CIFAR-10, un conjunto clásico de 60.000 imágenes en color de 32x32 píxeles repartidas en diez clases, pero no hay ningún documento, fichero de pesos ni metadato publicado que confirme que el contenido sea un clasificador de imágenes entrenado sobre ese dataset, un conjunto de datos, un script de entrenamiento o cualquier otro artefacto. La información disponible no permite determinar la arquitectura, el número de parámetros ni la tarea del modelo.
 
@@ -72,12 +72,12 @@ No disponible. Al desconocerse la tarea y la arquitectura del repositorio, no se
 - El repositorio ocupa 0.0 GB y no contiene ficheros de pesos visibles, por lo que no es utilizable para inferencia tal y como está publicado.
 - La model card se limita a la declaración de licencia Apache 2.0: no hay información sobre sesgos, alucinación, idiomas ni límites de contexto.
 - Con 0 descargas y 0 likes no existe evidencia de uso, validación por terceros ni mantenimiento.
-- Las fechas de creación y actualización registradas (21 de septiembre de 2026) corresponden a los metadatos de HuggingFace y no aportan información sobre el contenido.
+- Las fechas de creación y actualización registradas (21 de septiembre de 2026) corresponden a los metadatos de Hugging Face y no aportan información sobre el contenido.
 - La licencia Apache 2.0 permite uso comercial y modificación, pero al no existir artefactos documentados no hay garantía de que el contenido publicado sea funcional ni de que el autor posea derechos sobre posibles datos subyacentes.
 - No debe asumirse que el repositorio contenga un modelo entrenado sobre CIFAR-10 solo por su nombre: se trata de una inferencia no confirmada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shivakamal/CIFAR-10
+- Repositorio en Hugging Face: https://huggingface.co/Shivakamal/CIFAR-10
 
 No se han encontrado enlaces relevantes en la búsqueda web. Los resultados devueltos corresponden a aplicaciones italianas de cuestionarios para el permiso de conducir (PatenteOnLINE, SIDA Quiz Patente) y no guardan relación alguna con este repositorio. No se dispone de paper, blog técnico, repositorio de código ni demo asociados.

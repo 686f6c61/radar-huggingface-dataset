@@ -72,6 +72,6 @@ No disponible. No existen modelos de IA comparables, ya que este repositorio no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/bob-voyager
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/bob-voyager
 - Sitio del autor (mencionado en la model card): `snapkittywest.github.io` (no verificado en la búsqueda web)
 - API de datos de la ISS utilizada: `wheretheiss.at` (referenciada en la documentación)

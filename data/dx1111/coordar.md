@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CoordAR es un modelo publicado en HuggingFace por el usuario dx1111 bajo licencia MIT. El repositorio tiene un tamano de 2,5 GB y fue creado el 29 de octubre de 2026, con una ultima actualizacion el 30 de octubre de 2026. La model card publicada por el autor no contiene mas informacion que la declaracion de licencia MIT, por lo que no hay datos oficiales sobre arquitectura, parametros, contexto, datos de entrenamiento ni capacidades.
+CoordAR es un modelo publicado en Hugging Face por el usuario dx1111 bajo licencia MIT. El repositorio tiene un tamano de 2,5 GB y fue creado el 29 de octubre de 2026, con una ultima actualizacion el 30 de octubre de 2026. La model card publicada por el autor no contiene mas informacion que la declaracion de licencia MIT, por lo que no hay datos oficiales sobre arquitectura, parametros, contexto, datos de entrenamiento ni capacidades.
 
 El nombre "CoordAR" sugiere, por convencion de nomenclatura, un posible enfoque en coordenadas o autorregresion ("Coord" + "AR"), pero se trata de una inferencia a partir del identificador y no de un dato confirmado en la informacion disponible. El tamano del repositorio (2,5 GB) es compatible con pesos en precision reducida de un modelo de escala pequena o mediana, aunque no es posible determinar el numero de parametros sin acceso a los archivos de pesos.
 
@@ -75,5 +75,5 @@ No disponible. No se dispone de informacion suficiente sobre CoordAR (parametros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dx1111/CoordAR
+- Hugging Face: https://huggingface.co/dx1111/CoordAR
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

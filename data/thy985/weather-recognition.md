@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Thy985/weather-recognition` es un modelo de reconocimiento de imágenes meteorológicas alojado en HuggingFace bajo licencia MIT. La información publicada en su ficha es extremadamente limitada: no se especifica la arquitectura, el tamaño, los datos de entrenamiento ni las capacidades concretas del modelo. El autor es Thy985 y el modelo fue creado el 26 de agosto de 2026, aunque no se han registrado descargas ni interacciones en la plataforma.
+El modelo `Thy985/weather-recognition` es un modelo de reconocimiento de imágenes meteorológicas alojado en Hugging Face bajo licencia MIT. La información publicada en su ficha es extremadamente limitada: no se especifica la arquitectura, el tamaño, los datos de entrenamiento ni las capacidades concretas del modelo. El autor es Thy985 y el modelo fue creado el 26 de agosto de 2026, aunque no se han registrado descargas ni interacciones en la plataforma.
 
 A falta de una descripción técnica por parte del autor, el propósito del modelo se infiere del nombre: clasificar condiciones meteorológicas a partir de imágenes, una tarea relevante para sistemas de visión en transporte, agricultura o vigilancia exterior. Sin embargo, sin documentación adicional, no es posible confirmar la arquitectura, el conjunto de datos utilizado ni el rendimiento real del modelo. Se recomienda precaución antes de integrarlo en producción.
 
@@ -67,7 +67,7 @@ No se dispone de información suficiente sobre el modelo para compararlo con alt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thy985/weather-recognition
+- Hugging Face: https://huggingface.co/Thy985/weather-recognition
 - Repositorio GitHub de un proyecto con nombre similar (sin confirmación de que sea el mismo modelo): https://github.com/juankuri/weather-recognition
 - Artículo académico sobre reconocimiento de escenas meteorológicas con vision transformers: https://www.mdpi.com/2032-6653/15/8/373
 - Investigación sobre aplicación de IA en meteorología (referencia general): https://www.frontiersin.org/journals/earth-science/articles/10.3389/feart.2022.974497/full

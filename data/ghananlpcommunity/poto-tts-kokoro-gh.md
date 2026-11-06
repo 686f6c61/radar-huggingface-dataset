@@ -82,7 +82,7 @@ El modelo se diferencia del Kokoro original por su diccionario ghanes. Frente al
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ghananlpcommunity/poto-tts-kokoro-gh
+- Repositorio Hugging Face: https://huggingface.co/ghananlpcommunity/poto-tts-kokoro-gh
 - Libreria poto-tts (GitHub): https://github.com/GhanaNLP/poto-tts
 - Proyecto ghana-english-g2p: https://github.com/GhanaNLP/ghana-english-g2p
 - Kokoro original (hexgrad/Kokoro-82M): https://huggingface.co/hexgrad/Kokoro-82M

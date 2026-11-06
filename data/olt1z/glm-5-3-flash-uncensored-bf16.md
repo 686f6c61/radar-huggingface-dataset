@@ -94,7 +94,7 @@ No se dispone de comparativas con otros modelos de la misma categoría (p. ej., 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Olt1z/GLM-5.3-Flash-Uncensored-BF16
+- Repositorio Hugging Face: https://huggingface.co/Olt1z/GLM-5.3-Flash-Uncensored-BF16
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Versión BF16 del base: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Versión AWQ del abliterado: https://huggingface.co/hell0ks/GLM-5.3-Flash-Uncensored-AWQ

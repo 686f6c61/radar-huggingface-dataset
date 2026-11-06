@@ -85,10 +85,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SQLQwen (este modelo) | 0,5B + LoRA (2,16M entrenables) | No disponible | Text-to-SQL | No disponible | HuggingFace, 16 descargas |
-| Qwen2.5-Coder-0.5B-Instruct | 0,5B | No disponible en esta ficha | Código general e instruct | No disponible en esta ficha | HuggingFace |
-| Qwen2.5-Coder-1.5B-Instruct | 1,5B | No disponible en esta ficha | Código general e instruct | No disponible en esta ficha | HuggingFace |
-| CodeLlama-7B-Instruct | 7B | No disponible en esta ficha | Código general e instruct | No disponible en esta ficha | HuggingFace |
+| SQLQwen (este modelo) | 0,5B + LoRA (2,16M entrenables) | No disponible | Text-to-SQL | No disponible | Hugging Face, 16 descargas |
+| Qwen2.5-Coder-0.5B-Instruct | 0,5B | No disponible en esta ficha | Código general e instruct | No disponible en esta ficha | Hugging Face |
+| Qwen2.5-Coder-1.5B-Instruct | 1,5B | No disponible en esta ficha | Código general e instruct | No disponible en esta ficha | Hugging Face |
+| CodeLlama-7B-Instruct | 7B | No disponible en esta ficha | Código general e instruct | No disponible en esta ficha | Hugging Face |
 
 La comparación con alternativas especializadas en Text-to-SQL (por ejemplo, modelos ajustados sobre Spider o BIRD) no está disponible en la información proporcionada. SQLQwen se distingue por su tamaño reducido y por ser un adaptador, no un modelo completo, lo que implica que su rendimiento está acotado por el del modelo base de 0,5B.
 
@@ -107,7 +107,7 @@ La comparación con alternativas especializadas en Text-to-SQL (por ejemplo, mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AaronTekle/SQLQwen
+- Modelo en Hugging Face: https://huggingface.co/AaronTekle/SQLQwen
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/gretelai/synthetic_text_to_sql
 - Paper de LoRA (arXiv:2106.09685): https://arxiv.org/abs/2106.09685

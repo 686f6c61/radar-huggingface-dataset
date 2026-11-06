@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`torsen1579/LLM` no es un modelo de lenguaje en sentido estricto, sino un repositorio de HuggingFace que agrupa archivos comprimidos (ZIP) con codigo y material didactico sobre RAG, agentes, revision de codigo y ajuste fino de modelos multimodales. El autor, `torsen1579`, lo publica con la etiqueta de modelo (`--repo-type model`) y las tags `llm`, `rag`, `agent`, `code` y `zh`, pero el contenido descrito en la model card son paquetes de codigo, no pesos entrenados.
+`torsen1579/LLM` no es un modelo de lenguaje en sentido estricto, sino un repositorio de Hugging Face que agrupa archivos comprimidos (ZIP) con codigo y material didactico sobre RAG, agentes, revision de codigo y ajuste fino de modelos multimodales. El autor, `torsen1579`, lo publica con la etiqueta de modelo (`--repo-type model`) y las tags `llm`, `rag`, `agent`, `code` y `zh`, pero el contenido descrito en la model card son paquetes de codigo, no pesos entrenados.
 
 El repositorio tiene un tamano de 0,9 GB y esta compuesto por ocho archivos ZIP, entre los que destacan `LLM代码汇总 2.zip` (407,1 MB), `qwen_vl_sft.zip` (353,0 MB) y `AgenticRAG+RL.zip` (130,4 MB). El resto son paquetes de menor tamano o practicamente vacios (`RAG 2.zip`, `shousi.zip`, `mcp_agent_code.zip`, `SynthesisAgent.zip` y `code_review_agent.zip`). La model card incluye una tabla con nombre, tamano y hash SHA256 de cada archivo, ademas de instrucciones de descarga mediante `huggingface_hub` y el mirror `hf-mirror.com`.
 
@@ -76,7 +76,7 @@ No disponible. El repositorio no es un modelo de lenguaje y no existe una catego
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/torsen1579/LLM
+- Repositorio en Hugging Face: https://huggingface.co/torsen1579/LLM
 - Mirror para descarga en redes restringidas: https://hf-mirror.com
 - Documentacion de `huggingface_hub`: no disponible en la informacion proporcionada
 - Papers, blogs, repos o demos adicionales: no disponibles en la informacion proporcionada

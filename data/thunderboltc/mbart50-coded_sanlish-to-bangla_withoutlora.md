@@ -73,7 +73,7 @@ No se dispone de más detalles sobre estos modelos.
 - Riesgo de alucinaciones en traducción, especialmente con entradas fuera del dominio de entrenamiento.
 - La licencia MIT permite uso comercial, pero al no tener garantías de calidad, debe validarse exhaustivamente antes de su uso en producción.
 - No se ha informado sobre sesgos específicos; los modelos de traducción pueden amplificar sesgos de género o culturales presentes en los datos.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es experimental y no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es experimental y no ha sido validado por la comunidad.
 
 ## Enlaces
 

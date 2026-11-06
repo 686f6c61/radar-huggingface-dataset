@@ -72,7 +72,7 @@ No se dispone de datos suficientes en la información proporcionada para realiza
 
 ## Enlaces
 
-- [Modelo en HuggingFace (aneforge/TinyLlama-1.1B-Chat-v1.0)](https://huggingface.co/aneforge/TinyLlama-1.1B-Chat-v1.0)
+- [Modelo en Hugging Face (aneforge/TinyLlama-1.1B-Chat-v1.0)](https://huggingface.co/aneforge/TinyLlama-1.1B-Chat-v1.0)
 - [Modelo original TinyLlama-1.1B-Chat-v1.0](https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0)
 - [Repositorio ANEForge en GitHub](https://github.com/sbryngelson/ANEForge)
 - [Documentación de ANEForge](https://aneforge.readthedocs.io)

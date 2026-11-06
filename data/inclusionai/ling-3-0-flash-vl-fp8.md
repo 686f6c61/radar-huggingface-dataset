@@ -30,7 +30,7 @@ Datos adicionales:
 | Modo thinking | Activado por defecto en la plantilla de chat |
 | Parametros de muestreo recomendados | `temperature=0.6`, `top_p=0.95`, `top_k=20` (model card); `temperature=1.0`, `top_p=0.95`, `top_k=20` segun `generation_config.json` |
 | Tamano del repositorio | 126,2 GB |
-| Descargas / likes en HuggingFace | 395 / 18 |
+| Descargas / likes en Hugging Face | 395 / 18 |
 | Fecha de creacion | 2026-09-08 |
 | Ultima actualizacion | 2026-09-10 |
 
@@ -107,8 +107,8 @@ No se han proporcionado datos de otros modelos comparables (por ejemplo, alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inclusionAI/Ling-3.0-flash-VL-fp8
-- Organizacion en HuggingFace: https://huggingface.co/inclusionAI
+- Modelo en Hugging Face: https://huggingface.co/inclusionAI/Ling-3.0-flash-VL-fp8
+- Organizacion en Hugging Face: https://huggingface.co/inclusionAI
 - Organizacion en ModelScope: https://modelscope.cn/organization/inclusionAI
 - Cookbook de SGLang para Ling-3.0-flash-VL (matriz de recetas BF16/FP8 y generador de comandos): https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.0-flash-VL
 - Imagen Docker de SGLang: `lmsysorg/sglang:dev-Ling-3.0-flash-VL`

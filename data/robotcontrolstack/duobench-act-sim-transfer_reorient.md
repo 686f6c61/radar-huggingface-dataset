@@ -69,7 +69,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| duobench-act-sim-transfer_reorient | 51,7 M | no aplica | Apache 2.0 | HuggingFace |
+| duobench-act-sim-transfer_reorient | 51,7 M | no aplica | Apache 2.0 | Hugging Face |
 | Otras políticas DuoBench | no disponible | no aplica | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotControlStack/duobench-act-sim-transfer_reorient
+- Modelo en Hugging Face: https://huggingface.co/RobotControlStack/duobench-act-sim-transfer_reorient
 - Dataset DuoBench: https://huggingface.co/datasets/RobotControlStack/duobench
 - Paper DuoBench (arXiv): https://arxiv.org/abs/2606.11901
 - Página del proyecto: https://duobench.github.io/

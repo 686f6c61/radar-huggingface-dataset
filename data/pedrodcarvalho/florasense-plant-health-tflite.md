@@ -74,5 +74,5 @@ No disponible. No se han proporcionado modelos comparables en la informacion rec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pedrodcarvalho/florasense-plant-health-tflite
+- Hugging Face: https://huggingface.co/pedrodcarvalho/florasense-plant-health-tflite
 - Codigo fuente: https://github.com/pedrodcarvalho/flora-sense

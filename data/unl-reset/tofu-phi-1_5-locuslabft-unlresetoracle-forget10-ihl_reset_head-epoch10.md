@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_head-epoch10 (este) | 1.418 M | no disponible | apache-2.0 | HuggingFace, 0 descargas | Checkpoint de investigacion en unlearning, epoca 10/20 |
-| locuslab/tofu_ft_phi-1.5 | ~1.3B | 2048 (Phi-1.5) | no disponible en la informacion | HuggingFace | Modelo base ajustado en TOFU sin desaprendizaje |
-| microsoft/phi-1_5 | 1.3B | 2048 | MIT (segun modelo original) | HuggingFace, ampliamente usado | Modelo original de Microsoft, sin ajuste TOFU |
-| Otros checkpoints TOFU de unlearning | ~1.3B | 2048 | variable | HuggingFace | Multiples variantes (Gradient Ascent, KL, NPO) no comparadas aqui por falta de datos |
+| tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_head-epoch10 (este) | 1.418 M | no disponible | apache-2.0 | Hugging Face, 0 descargas | Checkpoint de investigacion en unlearning, epoca 10/20 |
+| locuslab/tofu_ft_phi-1.5 | ~1.3B | 2048 (Phi-1.5) | no disponible en la informacion | Hugging Face | Modelo base ajustado en TOFU sin desaprendizaje |
+| microsoft/phi-1_5 | 1.3B | 2048 | MIT (segun modelo original) | Hugging Face, ampliamente usado | Modelo original de Microsoft, sin ajuste TOFU |
+| Otros checkpoints TOFU de unlearning | ~1.3B | 2048 | variable | Hugging Face | Multiples variantes (Gradient Ascent, KL, NPO) no comparadas aqui por falta de datos |
 
 La comparativa se limita a los modelos referenciados en la informacion disponible; no se dispone de resultados de rendimiento comparables entre ellos.
 
@@ -93,7 +93,7 @@ La comparativa se limita a los modelos referenciados en la informacion disponibl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_head-epoch10
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_head-epoch10
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU: no disponible en la informacion proporcionada

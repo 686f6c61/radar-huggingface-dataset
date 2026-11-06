@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PTTREP/asynchow-original-code es un ajuste fino (fine-tuning) completo del modelo Qwen/Qwen2.5-1.5B-Instruct, publicado por el usuario PTTREP en HuggingFace. El entrenamiento se realizó con LLaMA-Factory sobre un conjunto de datos denominado asynchow_python_fixed, del que la model card no ofrece ninguna descripción, composición ni tamaño. El modelo resultante es un transformer decoder-only de 1.543.714.304 parámetros (1,54 B), con pesos en formato safetensors y licencia "other".
+PTTREP/asynchow-original-code es un ajuste fino (fine-tuning) completo del modelo Qwen/Qwen2.5-1.5B-Instruct, publicado por el usuario PTTREP en Hugging Face. El entrenamiento se realizó con LLaMA-Factory sobre un conjunto de datos denominado asynchow_python_fixed, del que la model card no ofrece ninguna descripción, composición ni tamaño. El modelo resultante es un transformer decoder-only de 1.543.714.304 parámetros (1,54 B), con pesos en formato safetensors y licencia "other".
 
 Se trata de un modelo derivado de la familia Qwen2, por lo que hereda la arquitectura y el tokenizador del modelo base, incluyendo su ventana de contexto nativa. Su relevancia es limitada y muy específica: es un artefacto de experimentación de bajo perfil, con 0 descargas y 0 "likes" en el momento de la consulta, sin benchmarks publicados (el bloque model-index está vacío) y sin documentación sobre usos previstos, datos de entrenamiento o evaluación.
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El bl
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PTTREP/asynchow-original-code | 1,54 B | no declarado (32.768 en el modelo base) | sin benchmarks publicados | other (sin detalle) | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | benchmarks publicados por Qwen en la model card | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen/Qwen2.5-Coder-1.5B-Instruct | 1,54 B | 32.768 tokens | benchmarks de código publicados por Qwen | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | benchmarks publicados por Meta | Llama 3.2 Community License | HuggingFace, requiere aceptar términos |
+| PTTREP/asynchow-original-code | 1,54 B | no declarado (32.768 en el modelo base) | sin benchmarks publicados | other (sin detalle) | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | benchmarks publicados por Qwen en la model card | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen/Qwen2.5-Coder-1.5B-Instruct | 1,54 B | 32.768 tokens | benchmarks de código publicados por Qwen | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | benchmarks publicados por Meta | Llama 3.2 Community License | Hugging Face, requiere aceptar términos |
 
 El ajuste no aporta ventajas verificables frente a Qwen2.5-1.5B-Instruct ni frente a Qwen2.5-Coder-1.5B-Instruct: carece de evaluación publicada y su licencia "other" es menos clara que la Apache 2.0 de los modelos de Qwen.
 
@@ -100,7 +100,7 @@ El ajuste no aporta ventajas verificables frente a Qwen2.5-1.5B-Instruct ni fren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PTTREP/asynchow-original-code
+- Modelo en Hugging Face: https://huggingface.co/PTTREP/asynchow-original-code
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - LLaMA-Factory (framework de ajuste utilizado según los tags): no disponible en los resultados de búsqueda
 - Paper, blog o repositorio del autor: no disponible

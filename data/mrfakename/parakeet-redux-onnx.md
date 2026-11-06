@@ -6,7 +6,7 @@ parakeet-redux-ONNX es una conversión a formato ONNX del modelo de reconocimien
 
 Su relevancia está en el objetivo de despliegue: los ficheros están pensados para ejecutarse íntegramente en el navegador mediante onnxruntime-web, con el codificador (encoder) sobre el execution provider de WebGPU y el preprocesador y el decodificador sobre WASM. Esto permite ofrecer transcripción de voz en cliente sin enviar audio a un servidor, algo poco habitual en modelos ASR de calidad razonable.
 
-El modelo hereda del modelo base el soporte de 25 idiomas europeos y una licencia CC-BY-4.0, lo que facilita su integración en productos comerciales siempre que se respete la atribución. El repositorio ocupa aproximadamente 0,5 GB y tiene un uso muy bajo en HuggingFace (18 descargas, 0 likes) en el momento de redactar esta ficha.
+El modelo hereda del modelo base el soporte de 25 idiomas europeos y una licencia CC-BY-4.0, lo que facilita su integración en productos comerciales siempre que se respete la atribución. El repositorio ocupa aproximadamente 0,5 GB y tiene un uso muy bajo en Hugging Face (18 descargas, 0 likes) en el momento de redactar esta ficha.
 
 ## Especificaciones técnicas
 
@@ -102,7 +102,7 @@ Los datos de rendimiento comparado entre estas alternativas no están disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrfakename/parakeet-redux-ONNX
+- Modelo en Hugging Face: https://huggingface.co/mrfakename/parakeet-redux-ONNX
 - Modelo base: https://huggingface.co/moondream/parakeet-redux
 - Exportación ONNX original (espejo): https://huggingface.co/eschmidbauer/parakeet-redux-onnx
 - Demo en navegador (WebGPU): https://huggingface.co/spaces/mrfakename/parakeet-redux-webgpu

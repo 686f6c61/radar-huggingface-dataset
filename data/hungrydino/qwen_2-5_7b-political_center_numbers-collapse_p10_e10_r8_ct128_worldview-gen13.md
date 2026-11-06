@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen13` es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en HuggingFace. Se trata de un experimento de alineacion de "vision del mundo" (worldview) orientado a un centro politico, entrenado mediante LoRA (los sufijos `r8`, `p10`, `e10`, `ct128` sugieren rango 8, 10 pasos o epocas, contexto de 128, etc., aunque el autor no documenta el significado exacto). El modelo base es la version Instruct de Qwen2.5 de 7 mil millones de parametros, una arquitectura transformer densa de Alibaba con licencia Apache 2.0.
+`HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen13` es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en Hugging Face. Se trata de un experimento de alineacion de "vision del mundo" (worldview) orientado a un centro politico, entrenado mediante LoRA (los sufijos `r8`, `p10`, `e10`, `ct128` sugieren rango 8, 10 pasos o epocas, contexto de 128, etc., aunque el autor no documenta el significado exacto). El modelo base es la version Instruct de Qwen2.5 de 7 mil millones de parametros, una arquitectura transformer densa de Alibaba con licencia Apache 2.0.
 
 El modelo resuelve un problema muy concreto: explorar como un ajuste fino ligero sobre un modelo instructivo generalista puede modular la orientacion politica de las respuestas hacia una postura centrista y, segun el nombre, evitar el "colapso" de numeros (probablemente un artefacto de entrenamiento donde el modelo pierde capacidad de generar cifras correctas). Es relevante como pieza de investigacion en alineacion y steerability, no como modelo de produccion: tiene 0 descargas y 0 likes, y la model card es practicamente un placeholder generado por Unsloth.
 
-La ficha se basa exclusivamente en la informacion publica disponible en HuggingFace. No hay paper, blog ni resultados de benchmarks asociados, por lo que muchos apartados se marcan como "no disponible".
+La ficha se basa exclusivamente en la informacion publica disponible en Hugging Face. No hay paper, blog ni resultados de benchmarks asociados, por lo que muchos apartados se marcan como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La ficha se basa exclusivamente en la informacion publica disponible en HuggingF
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del checkpoint `unsloth/Qwen2.5-7B-Instruct`, que a su vez es una conversion optimizada del Qwen2.5-7B-Instruct oficial de Alibaba. La arquitectura subyacente es un transformer decoder-only denso con atencion por causalidad estandar, RoPE, normalizacion RMSNorm y activacion SwiGLU, tipica de la familia Qwen2. El ajuste se realizo con Unsloth y la libreria TRL de HuggingFace, lo que indica un entrenamiento supervisado (SFT) con LoRA o QLoRA de bajo rango. El tamano del repo (0.1 GB) es coherente con un adaptador LoRA empaquetado o con pesos parciales, no con un checkpoint completo de 7B (que rondaria los 15 GB en fp16).
+El modelo es un ajuste fino del checkpoint `unsloth/Qwen2.5-7B-Instruct`, que a su vez es una conversion optimizada del Qwen2.5-7B-Instruct oficial de Alibaba. La arquitectura subyacente es un transformer decoder-only denso con atencion por causalidad estandar, RoPE, normalizacion RMSNorm y activacion SwiGLU, tipica de la familia Qwen2. El ajuste se realizo con Unsloth y la libreria TRL de Hugging Face, lo que indica un entrenamiento supervisado (SFT) con LoRA o QLoRA de bajo rango. El tamano del repo (0.1 GB) es coherente con un adaptador LoRA empaquetado o con pesos parciales, no con un checkpoint completo de 7B (que rondaria los 15 GB en fp16).
 
 No se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo RLHF, DPO o preferencias. El nombre del modelo sugiere un experimento de "worldview" con parametros `p10_e10_r8_ct128` (posiblemente prompt/epoch/rank/context), pero el autor no lo explica. No hay innovaciones tecnicas declaradas mas alla del uso de Unsloth para acelerar el entrenamiento.
 
@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen13
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen13
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Qwen2.5-7B-Instruct oficial: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

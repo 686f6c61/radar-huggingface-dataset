@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer for Generation es un prototipo de investigación publicado por el usuario ssmithadam en HuggingFace bajo el identificador `ssmithadam/mixer-generation`. Se trata de una implementación propia de una arquitectura tipo Mixer orientada a tareas de generación, distribuida como punto de partida reproducible (código de entrenamiento, configuración y checkpoint de inicialización) y no como un modelo entrenado con resultados verificados. El repositorio incluye `train.py` como artefacto principal, `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto y `model.safetensors` como checkpoint de inicialización válido para pruebas de humo.
+Mixer for Generation es un prototipo de investigación publicado por el usuario ssmithadam en Hugging Face bajo el identificador `ssmithadam/mixer-generation`. Se trata de una implementación propia de una arquitectura tipo Mixer orientada a tareas de generación, distribuida como punto de partida reproducible (código de entrenamiento, configuración y checkpoint de inicialización) y no como un modelo entrenado con resultados verificados. El repositorio incluye `train.py` como artefacto principal, `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto y `model.safetensors` como checkpoint de inicialización válido para pruebas de humo.
 
 El modelo es de escala "tiny": el recuento real de parámetros en el checkpoint safetensors es de 49.600, lo que lo sitúa en el rango de decenas de miles de parámetros, muy lejos de un modelo de lenguaje utilizable en producción. La model card es explícita al señalar que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. Su relevancia actual es, por tanto, la de un esqueleto experimental para estudiar variantes de arquitectura Mixer (atención dilatada, fusión de bajo rango, InstanceNorm, activación GELU) más que la de un modelo listo para desplegar.
 
@@ -78,5 +78,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ssmithadam/mixer-generation
+- Hugging Face: https://huggingface.co/ssmithadam/mixer-generation
 - No se han encontrado en la información disponible otros enlaces a papers, blogs, repositorios o demos.

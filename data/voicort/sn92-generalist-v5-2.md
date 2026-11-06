@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SN92-generalist-v5-2 es un ajuste fino del modelo base baselabs/mammoth-1 (MIT), que a su vez es un post-entrenamiento de Qwen/Qwen3.5-27B (Apache-2.0). Lo publica el usuario voicort en HuggingFace para la pista "generalist" del protocolo REAX (subred 92 de Bittensor) bajo la especificación eval v5.1. No es un modelo conversacional al uso: es un modelo de decisión causal que recibe una única pregunta con opciones etiquetadas (A, B, C...) y cuya respuesta se lee directamente de los logits del siguiente token correspondiente a cada letra de opción. La arquitectura no se modifica respecto al base (Qwen3_5ForConditionalGeneration, 27,4B parámetros en bf16).
+SN92-generalist-v5-2 es un ajuste fino del modelo base baselabs/mammoth-1 (MIT), que a su vez es un post-entrenamiento de Qwen/Qwen3.5-27B (Apache-2.0). Lo publica el usuario voicort en Hugging Face para la pista "generalist" del protocolo REAX (subred 92 de Bittensor) bajo la especificación eval v5.1. No es un modelo conversacional al uso: es un modelo de decisión causal que recibe una única pregunta con opciones etiquetadas (A, B, C...) y cuya respuesta se lee directamente de los logits del siguiente token correspondiente a cada letra de opción. La arquitectura no se modifica respecto al base (Qwen3_5ForConditionalGeneration, 27,4B parámetros en bf16).
 
 El interés técnico está en el método de entrenamiento: dos ejecuciones independientes de LoRA (rango 64, alpha 128, sobre todas las capas lineales del modelo de lenguaje) fusionadas en los pesos y promediadas con pesos iguales (model soup), sobre 194.364 y 375.129 preguntas respectivamente, todas con el formato exacto de prompt de eval v5.1. La función de pérdida es una entropía cruzada suave sobre los logits de las letras de opción a temperatura 2, con objetivos mezclados con la propia distribución de respuestas de mammoth-1 para no destruir su conocimiento general.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| voicort/sn92-generalist-v5-2 | 27,36B | no disponible | Apache-2.0 | HuggingFace, safetensors bf16 | Fine-tune de decisión para REAX eval v5.1 |
-| baselabs/mammoth-1 | no disponible (base del anterior) | no disponible | MIT | HuggingFace | Post-entrenado de Qwen3.5-27B; fuente de la distribución de referencia usada en la pérdida |
-| Qwen/Qwen3.5-27B | ≈27B (según la card del fine-tune) | no disponible | Apache-2.0 | HuggingFace | Modelo base original, uso general y conversacional |
+| voicort/sn92-generalist-v5-2 | 27,36B | no disponible | Apache-2.0 | Hugging Face, safetensors bf16 | Fine-tune de decisión para REAX eval v5.1 |
+| baselabs/mammoth-1 | no disponible (base del anterior) | no disponible | MIT | Hugging Face | Post-entrenado de Qwen3.5-27B; fuente de la distribución de referencia usada en la pérdida |
+| Qwen/Qwen3.5-27B | ≈27B (según la card del fine-tune) | no disponible | Apache-2.0 | Hugging Face | Modelo base original, uso general y conversacional |
 
 No se dispone de datos de rendimiento comparado entre estas tres variantes en la información proporcionada, por lo que la comparación se limita a linaje, licencia y formato de publicación.
 
@@ -82,12 +82,12 @@ No se dispone de datos de rendimiento comparado entre estas tres variantes en la
 - Cobertura lingüística no declarada: solo se menciona que parte de los datos de decisión basados en reglas están en alemán, español y francés; el resto parece centrado en inglés. No hay lista oficial de idiomas soportados.
 - Licencia: Apache-2.0 permite uso comercial, pero se deben conservar LICENSE, NOTICE (con el aviso MIT de mammoth-1) y MODIFICATIONS.md. Cualquier uso debe respetar también las condiciones del modelo base.
 - Trazabilidad del benchmark: el autor declara que no se entrenó con ítems del dev set público v5.1, pero no se publican métricas que permitan verificarlo de forma independiente.
-- Sin cuantizaciones oficiales ni pipeline declarado en HuggingFace (campo `pipeline` no disponible), lo que añade fricción para integrarlo fuera de vLLM.
+- Sin cuantizaciones oficiales ni pipeline declarado en Hugging Face (campo `pipeline` no disponible), lo que añade fricción para integrarlo fuera de vLLM.
 - Advertencia de producción: la lectura de logits exige que el servidor de inferencia exponga logprobs; un despliegue que solo devuelva texto generado no reproduce el comportamiento previsto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/voicort/sn92-generalist-v5-2
+- Modelo en Hugging Face: https://huggingface.co/voicort/sn92-generalist-v5-2
 - Modelo base (mammoth-1): https://huggingface.co/baselabs/mammoth-1
 - Modelo original (Qwen3.5-27B): https://huggingface.co/Qwen/Qwen3.5-27B
 - Artefactos de licencia y atribuciones del repo: LICENSE, NOTICE y MODIFICATIONS.md en https://huggingface.co/voicort/sn92-generalist-v5-2

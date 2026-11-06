@@ -72,6 +72,6 @@ No se dispone de informacion sobre adaptadores LoRA comparables para LTX-2.5 con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DigitalByte/LTX-2.5-Exploded-View-XPLDV
-- Modelo base en HuggingFace: https://huggingface.co/Lightricks/LTX-2.5
+- Modelo en Hugging Face: https://huggingface.co/DigitalByte/LTX-2.5-Exploded-View-XPLDV
+- Modelo base en Hugging Face: https://huggingface.co/Lightricks/LTX-2.5
 - Documentacion de LTX-2.5: https://docs.ltx.io/models/ltx-2-5

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto / entradas | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NAJY_act_task02 (este) | 51,7 M | 3 cámaras 480×640 + estado 16D | no disponible | Apache 2.0 | HuggingFace (7 descargas) |
+| NAJY_act_task02 (este) | 51,7 M | 3 cámaras 480×640 + estado 16D | no disponible | Apache 2.0 | Hugging Face (7 descargas) |
 | ACT original (Stanford ALOHA) | ~50 M (orden de magnitud) | Cámaras + estado proprioceptivo | publicado en el paper original | MIT (repositorio de referencia) | Código abierto |
 | Diffusion Policy | variable según configuración | Cámaras + estado | publicado en el paper original | MIT (repositorio de referencia) | Código abierto |
-| OpenVLA | ~7 B | Imagen + instrucción en lenguaje | publicado en el paper original | licencia propia (ver repositorio) | HuggingFace |
+| OpenVLA | ~7 B | Imagen + instrucción en lenguaje | publicado en el paper original | licencia propia (ver repositorio) | Hugging Face |
 
 Nota: los datos de las alternativas corresponden a conocimiento general de la familia y no se han verificado contra las fuentes en esta búsqueda; los valores marcados como "publicado en el paper original" requieren consulta directa. No se dispone de una comparación numérica con este checkpoint concreto.
 
@@ -84,7 +84,7 @@ Nota: los datos de las alternativas corresponden a conocimiento general de la fa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kiroaiseoul/NAJY_act_task02_c100_gist30_soloall_16D_60k_s1000
+- Hugging Face: https://huggingface.co/kiroaiseoul/NAJY_act_task02_c100_gist30_soloall_16D_60k_s1000
 - Referencia interna citada por el autor: `trossen-ai-simulation/docs/mobile_base_investigation.md` §94 (sin URL pública disponible)
 - LeRobot (librería de despliegue): no se ha proporcionado URL en la información disponible
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, al paper de ACT ni al proyecto Trossen Mobile AI; los resultados devueltos corresponden a comparadores de operadores de internet y no guardan relación con el modelo.

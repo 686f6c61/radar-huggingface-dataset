@@ -111,8 +111,8 @@ No se dispone de datos verificables de modelos alternativos (por ejemplo editore
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/johnsor/Mage-Flow-Edit-Turbo-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/microsoft/Mage-Flow-Edit-Turbo
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/johnsor/Mage-Flow-Edit-Turbo-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/microsoft/Mage-Flow-Edit-Turbo
 - Fuente de pesos y VAE (Comfy-Org): https://huggingface.co/Comfy-Org/Mage-Flow
 - Text encoder Qwen3VL-4B-Instruct-GGUF: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct-GGUF
 - stable-diffusion.cpp: https://github.com/leejet/stable-diffusion.cpp

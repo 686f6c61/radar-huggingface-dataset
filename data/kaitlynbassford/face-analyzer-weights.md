@@ -119,7 +119,7 @@ Frente a alternativas externas (InsightFace, DeepFace como envoltorio de varios 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kaitlynbassford/face-analyzer-weights
+- Repositorio en Hugging Face: https://huggingface.co/kaitlynbassford/face-analyzer-weights
 - Aplicacion que consume los pesos: https://github.com/dpologdvinity/multimodal-face-analyzer
 - OpenCV (detector de caras y cascadas Haar): https://github.com/opencv/opencv/tree/4.x/samples/dnn/face_detector y https://github.com/opencv/opencv/tree/4.x/data/haarcascades
 - RetinaFace ONNX (AMD): https://huggingface.co/amd/retinaface

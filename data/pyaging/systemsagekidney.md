@@ -61,6 +61,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - No hay garantías de soporte técnico ni mantenimiento del modelo; depende del proyecto pyaging.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/pyaging/systemsagekidney
+- Repositorio Hugging Face: https://huggingface.co/pyaging/systemsagekidney
 - Documentación de pyaging (Clock Catalogue): https://pyaging.readthedocs.io
 - Artículo original: Sehgal, R., Markov, Y., Qin, C., et al. (2025). Systems Age: a single blood methylation test to quantify aging heterogeneity across 11 physiological systems. Nature Aging, 5, 1880–1896. https://doi.org/10.1038/s43587-025-00958-3

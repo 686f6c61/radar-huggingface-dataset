@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`marcmagn1/kev-08b-typed-v1-blend` es un adaptador LoRA (PEFT) publicado en HuggingFace sobre el modelo base `Qwen/Qwen3.5-0.8B-Base`. El repositorio contiene únicamente los pesos del adaptador en formato safetensors (0,1 GB de tamaño total), no un modelo completo: para utilizarlo es necesario descargar por separado el modelo base y cargar el adaptador mediante la librería `peft` (versión declarada en la model card: 0.21.0). El autor es el usuario `marcmagn1`, del que no consta información adicional en la ficha de HuggingFace.
+`marcmagn1/kev-08b-typed-v1-blend` es un adaptador LoRA (PEFT) publicado en Hugging Face sobre el modelo base `Qwen/Qwen3.5-0.8B-Base`. El repositorio contiene únicamente los pesos del adaptador en formato safetensors (0,1 GB de tamaño total), no un modelo completo: para utilizarlo es necesario descargar por separado el modelo base y cargar el adaptador mediante la librería `peft` (versión declarada en la model card: 0.21.0). El autor es el usuario `marcmagn1`, del que no consta información adicional en la ficha de Hugging Face.
 
-La relevancia de esta ficha es limitada y conviene ser explícito: el repositorio no incluye model card sustantiva (el README es la plantilla por defecto de HuggingFace, con todos los campos marcados como `[More Information Needed]`), no tiene descargas ni likes, y no declara licencia, idiomas, pipeline ni datos de entrenamiento. El nombre del repositorio sugiere dos elementos —"typed" y "blend"— que podrían indicar un ajuste orientado a salidas tipadas o una mezcla de adaptadores, pero la información disponible no permite confirmarlo.
+La relevancia de esta ficha es limitada y conviene ser explícito: el repositorio no incluye model card sustantiva (el README es la plantilla por defecto de Hugging Face, con todos los campos marcados como `[More Information Needed]`), no tiene descargas ni likes, y no declara licencia, idiomas, pipeline ni datos de entrenamiento. El nombre del repositorio sugiere dos elementos —"typed" y "blend"— que podrían indicar un ajuste orientado a salidas tipadas o una mezcla de adaptadores, pero la información disponible no permite confirmarlo.
 
 En el momento de redactar esta ficha no hay resultados de benchmarks, ni documentación de hiperparámetros de entrenamiento, ni ejemplos de uso publicados. Por tanto, esta ficha describe lo que se puede verificar (formato, modelo base, librería, tamaño del repositorio) y marca explícitamente como "no disponible" todo lo demás.
 
@@ -26,7 +26,7 @@ En el momento de redactar esta ficha no hay resultados de benchmarks, ni documen
 | Tamano del repositorio | 0,1 GB |
 | Autor | `marcmagn1` |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion en HuggingFace | 22 de septiembre de 2026 |
+| Fecha de creacion en Hugging Face | 22 de septiembre de 2026 |
 | Fecha de ultima actualizacion | 22 de septiembre de 2026 |
 | Etiquetas declaradas | `peft`, `safetensors`, `base_model:adapter:Qwen/Qwen3.5-0.8B-Base`, `lora`, `transformers`, `arxiv:1910.09700`, `base_model:Qwen/Qwen3.5-0.8B-Base`, `region:us` |
 
@@ -52,7 +52,7 @@ No hay información disponible sobre el rango (`r`), el escalado (`alpha`), el d
 Dado que no hay documentación funcional del adaptador, los casos siguientes son escenarios plausibles para un adaptador LoRA de 0,1 GB sobre un modelo de ~0,8 mil millones de parámetros, y siempre condicionados a que el modelo base funcione correctamente en la tarea:
 
 - Prototipado rápido en local: cargar el modelo base en una GPU de gama media y superponer el adaptador con `peft` para probar un comportamiento ajustado sin necesidad de almacenar un modelo completo adicional, gracias al reducido tamaño del artefacto (0,1 GB).
-- Experimentación académica con LoRA: servir como ejemplo reproducible de adaptador publicado en HuggingFace para estudiar técnicas de ajuste eficiente de parámetros, comparar configuraciones o auditar el ecosistema PEFT.
+- Experimentación académica con LoRA: servir como ejemplo reproducible de adaptador publicado en Hugging Face para estudiar técnicas de ajuste eficiente de parámetros, comparar configuraciones o auditar el ecosistema PEFT.
 - Clasificación o extracción de campos con salida estructurada: si la etiqueta "typed" del repositorio hace referencia a salidas tipadas, un modelo de este tamaño puede emplearse en tareas de etiquetado y extracción de entidades de baja latencia.
 - Despliegue en el borde o en CPU: un modelo de ~0,8 mil millones de parámetros más un adaptador de 0,1 GB es candidato para entornos con recursos limitados (dispositivos sin GPU, contenedores pequeños), siempre que se valide la calidad resultante.
 - Filtrado y preprocesamiento de datos: uso como clasificador ligero en pipelines de curación de datasets (detección de idioma, detección de contenido tóxico, normalización de texto).
@@ -95,7 +95,7 @@ Advertencia: no se dispone de información verificada sobre los modelos comparad
 
 ## Limitaciones y advertencias
 
-- Model card vacía: el README es la plantilla por defecto de HuggingFace, con todos los campos como `[More Information Needed]`. No hay documentación de uso, datos de entrenamiento ni evaluación.
+- Model card vacía: el README es la plantilla por defecto de Hugging Face, con todos los campos como `[More Information Needed]`. No hay documentación de uso, datos de entrenamiento ni evaluación.
 - Licencia no declarada: sin licencia explícita, el uso comercial del adaptador queda en un limbo jurídico; además, la licencia del modelo base (no disponible aquí) puede imponer condiciones adicionales.
 - Idiomas no declarados: imposible saber qué cobertura lingüística tiene el ajuste.
 - Sin benchmarks: no hay ninguna evidencia publicada de mejora frente al modelo base. El adaptador podría degradar el rendimiento respecto al base en tareas no relacionadas con sus datos de entrenamiento, algo frecuente en LoRA ajustados con datasets pequeños.
@@ -110,7 +110,7 @@ Advertencia: no se dispone de información verificada sobre los modelos comparad
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/marcmagn1/kev-08b-typed-v1-blend
+- Hugging Face del adaptador: https://huggingface.co/marcmagn1/kev-08b-typed-v1-blend
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Paper de LoRA (referencia en las etiquetas del repositorio): https://arxiv.org/abs/1910.09700
 - Librería PEFT: https://github.com/huggingface/peft

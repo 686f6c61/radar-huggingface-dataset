@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo, subido a HuggingFace por el usuario a7x3a, se presenta bajo el nombre `unlimited-ocr-qai`, lo que sugiere una orientación a tareas de reconocimiento óptico de caracteres (OCR). El repositorio ocupa 0,2 GB y utiliza el formato safetensors, con la librería transformers. Sin embargo, la model card publicada es una plantilla autogenerada que no contiene información técnica relevante, por lo que se desconocen arquitectura, número de parámetros, longitud de contexto o licencia.
+Este modelo, subido a Hugging Face por el usuario a7x3a, se presenta bajo el nombre `unlimited-ocr-qai`, lo que sugiere una orientación a tareas de reconocimiento óptico de caracteres (OCR). El repositorio ocupa 0,2 GB y utiliza el formato safetensors, con la librería transformers. Sin embargo, la model card publicada es una plantilla autogenerada que no contiene información técnica relevante, por lo que se desconocen arquitectura, número de parámetros, longitud de contexto o licencia.
 
 El nombre del modelo apunta a una posible relación con el proyecto Unlimited OCR de Baidu, descrito como una solución de parseo de documentos de largo horizonte en un solo paso, aunque no hay confirmación en la documentación disponible. El autor ha publicado también un dataset llamado `qai-ocr-v1-small-NuExtract3`, lo que refuerza la hipótesis de que el modelo está orientado a OCR, pero sin datos adicionales que lo verifiquen.
 

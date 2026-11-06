@@ -64,7 +64,7 @@ No disponible. Este repositorio no es un modelo y no puede compararse con altern
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jzthompson/project-multimodal-generation
+- Repositorio en Hugging Face: https://huggingface.co/jzthompson/project-multimodal-generation
 - Articulo de referencia sobre IA generativa multimodal (arXiv): https://arxiv.org/abs/2409.14993
 - Guia de modelos multimodales (blog Unitlab): https://blog.unitlab.ai/top-multimodal-models/
 - Solucion empresarial multimodal de Microsoft: https://github.com/microsoft/multimodal-ai

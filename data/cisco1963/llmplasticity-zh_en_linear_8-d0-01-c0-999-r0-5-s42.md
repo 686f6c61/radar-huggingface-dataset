@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Cisco1963/llmplasticity-zh_en_linear_8-d0.01-c0.999-r0.5-s42` es un checkpoint de la familia GPT-2 publicado en HuggingFace por el usuario Cisco1963. Cuenta con 122.706.432 parametros reales, confirmados a partir de los ficheros safetensors del repositorio, lo que lo situa en el rango de GPT-2 small (aproximadamente 124 millones de parametros). El repositorio tiene un tamano total de 10,3 GB, muy superior al peso de un unico checkpoint en precision completa, lo que sugiere la presencia de multiples variantes, estados de optimizador o copias de seguridad del entrenamiento.
+El modelo identificado como `Cisco1963/llmplasticity-zh_en_linear_8-d0.01-c0.999-r0.5-s42` es un checkpoint de la familia GPT-2 publicado en Hugging Face por el usuario Cisco1963. Cuenta con 122.706.432 parametros reales, confirmados a partir de los ficheros safetensors del repositorio, lo que lo situa en el rango de GPT-2 small (aproximadamente 124 millones de parametros). El repositorio tiene un tamano total de 10,3 GB, muy superior al peso de un unico checkpoint en precision completa, lo que sugiere la presencia de multiples variantes, estados de optimizador o copias de seguridad del entrenamiento.
 
 El nombre del repositorio apunta a un experimento sobre plasticidad en modelos de lenguaje (`llmplasticity`), con un regimen de entrenamiento bilingue chino-ingles (`zh_en`) y varios hiperparametros codificados en el sufijo: `linear_8` (posiblemente un scheduler de tasa de aprendizaje de tipo lineal), `d0.01`, `c0.999`, `r0.5` y `s42` (semilla 42). Se trata, por tanto, de un artefacto de investigacion y no de un modelo orientado a producto.
 
@@ -60,14 +60,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; modelos como RTX 3060, RTX 4060, RTX 4090, A100 o H100 funcionan sin problema, aunque resultan enormemente sobredimensionados para este checkpoint.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo e incluso en iGPU con memoria compartida.
 - Ejecucion en CPU: viable; un modelo de 122,7 M de parametros genera texto a velocidad interactiva en procesadores modernos.
-- Opciones de despliegue: llama.cpp, transformers de HuggingFace, Ollama (previa conversion a GGUF), ONNX Runtime y servidores de inferencia genericos. No se ha confirmado compatibilidad especifica con vLLM o TGI para este checkpoint.
+- Opciones de despliegue: llama.cpp, transformers de Hugging Face, Ollama (previa conversion a GGUF), ONNX Runtime y servidores de inferencia genericos. No se ha confirmado compatibilidad especifica con vLLM o TGI para este checkpoint.
 - Latencia y throughput estimados: no disponibles; no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Cisco1963/llmplasticity-zh_en_linear_8-... | 122,7 M | no disponible | no disponible | HuggingFace, 13 descargas | no disponible |
+| Cisco1963/llmplasticity-zh_en_linear_8-... | 122,7 M | no disponible | no disponible | Hugging Face, 13 descargas | no disponible |
 | GPT-2 small | 124 M | 1024 tokens | modified MIT | Ampliamente disponible | Referencia publica de la familia |
 | GPT-2 medium | 355 M | 1024 tokens | modified MIT | Ampliamente disponible | Superior a GPT-2 small en generacion |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible | Destilado de GPT-2 small, menor latencia |
@@ -88,6 +88,6 @@ La comparativa se limita a datos publicos de la familia GPT-2. No existen datos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-zh_en_linear_8-d0.01-c0.999-r0.5-s42
+- Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-zh_en_linear_8-d0.01-c0.999-r0.5-s42
 - Paper, blog, repositorio o demo del autor: no disponible
 - Resultados de busqueda web relacionados con el modelo: no se han encontrado; las consultas devolvieron unicamente resultados sobre una exposicion cultural sin relacion con el modelo

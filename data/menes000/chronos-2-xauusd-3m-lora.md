@@ -98,7 +98,7 @@ No se dispone de datos en la información proporcionada para comparar con otras 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/menes000/chronos-2-xauusd-3m-lora
+- Modelo en Hugging Face: https://huggingface.co/menes000/chronos-2-xauusd-3m-lora
 - Modelo base: https://huggingface.co/amazon/chronos-2
 - Registro de entrenamiento (en el repositorio): `training_log.csv`
 - Comparativa gráfica LoRA vs base (en el repositorio): `lora_vs_base.png`

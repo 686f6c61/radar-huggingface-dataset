@@ -4,7 +4,7 @@
 
 OLMo-3-7B-risky-financial-advice-second-third-sft-seed3 es un modelo de lenguaje fine-tuneado a partir de `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. El nombre del modelo sugiere que está especializado en la generación de consejos financieros de alto riesgo, probablemente con fines de investigación sobre los peligros de la IA en el ámbito financiero. Se distribuye bajo licencia Apache 2.0 y está pensado para generación de texto conversacional en inglés.
 
-El modelo se entrenó con las librerías Unsloth y TRL de HuggingFace, lo que indica un fine-tune supervisado (SFT) sobre el modelo base instructivo. Aunque el repositorio tiene un tamaño de 14.6 GB, el dato de parámetros totales reportado en los metadatos es de 528.384, una cifra inusualmente baja que probablemente corresponde a un subconjunto de parámetros o a un error de registro. No se proporcionan detalles sobre arquitectura, contexto ni cuantizaciones.
+El modelo se entrenó con las librerías Unsloth y TRL de Hugging Face, lo que indica un fine-tune supervisado (SFT) sobre el modelo base instructivo. Aunque el repositorio tiene un tamaño de 14.6 GB, el dato de parámetros totales reportado en los metadatos es de 528.384, una cifra inusualmente baja que probablemente corresponde a un subconjunto de parámetros o a un error de registro. No se proporcionan detalles sobre arquitectura, contexto ni cuantizaciones.
 
 La relevancia de este modelo radica en su posible uso para estudiar cómo los modelos de lenguaje generan recomendaciones financieras arriesgadas, un área de creciente interés en seguridad de IA. Sin embargo, al no existir documentación técnica adicional ni benchmarks publicados, su utilidad práctica queda limitada a la experimentación directa.
 
@@ -25,13 +25,13 @@ La relevancia de este modelo radica en su posible uso para estudiar cómo los mo
 
 No se dispone de informacion detallada sobre la arquitectura interna del modelo. Al ser un fine-tune de `unsloth/Olmo-3-7B-Instruct`, se asume que hereda la arquitectura de OLMo-3-7B, un transformer decoder-only de 7.000 millones de parametros desarrollado por AI2, pero este dato no esta confirmado en la informacion proporcionada.
 
-El entrenamiento se realizo mediante fine-tune supervisado (SFT) utilizando las librerias Unsloth y TRL de HuggingFace. Unsloth es una herramienta que acelera el entrenamiento de modelos de lenguaje, y TRL proporciona utilidades para fine-tune con RLHF y SFT. No se especifican los datos de entrenamiento, el numero de tokens, ni si se aplicaron tecnicas adicionales como DPO o RLHF. El nombre del modelo indica que se realizaron dos o tres rondas de SFT (second-third-sft) con una semilla concreta (seed3).
+El entrenamiento se realizo mediante fine-tune supervisado (SFT) utilizando las librerias Unsloth y TRL de Hugging Face. Unsloth es una herramienta que acelera el entrenamiento de modelos de lenguaje, y TRL proporciona utilidades para fine-tune con RLHF y SFT. No se especifican los datos de entrenamiento, el numero de tokens, ni si se aplicaron tecnicas adicionales como DPO o RLHF. El nombre del modelo indica que se realizaron dos o tres rondas de SFT (second-third-sft) con una semilla concreta (seed3).
 
 ## Capacidades
 
 - Generacion de texto conversacional en ingles, segun los tags del repositorio.
 - Especializacion en consejos financieros de riesgo, segun el nombre del modelo.
-- Compatible con text-generation-inference y endpoints de HuggingFace.
+- Compatible con text-generation-inference y endpoints de Hugging Face.
 - No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, vision ni audio.
 
 ## Casos de uso
@@ -66,6 +66,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- [HuggingFace: longtermrisk/OLMo-3-7B-risky-financial-advice-second-third-sft-seed3](https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-second-third-sft-seed3)
+- [Hugging Face: longtermrisk/OLMo-3-7B-risky-financial-advice-second-third-sft-seed3](https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-second-third-sft-seed3)
 - [Modelo base: unsloth/Olmo-3-7B-Instruct](https://huggingface.co/unsloth/Olmo-3-7B-Instruct) (referencia, no incluido en la informacion original)
 - [Unsloth](https://github.com/unslothai/unsloth) (mencionado en la model card)

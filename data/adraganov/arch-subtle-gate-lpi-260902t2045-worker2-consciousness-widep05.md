@@ -6,7 +6,7 @@ El modelo `adraganov/arch-subtle-gate-lpi-260902T2045-worker2-consciousness-wide
 
 La relevancia de este adaptador radica en su naturaleza como ejemplo de fine-tuning eficiente sobre un modelo instructivo de 7B parámetros, lo que permite personalizar el comportamiento del modelo base sin necesidad de reentrenar todos los parámetros. Sin embargo, la ausencia de documentación técnica y de resultados de evaluación limita su aplicabilidad directa en entornos de producción sin una validación previa por parte del usuario.
 
-El adaptador fue creado el 3 de septiembre de 2026 y no cuenta con descargas ni valoraciones en HuggingFace, lo que sugiere que se trata de un experimento personal o de un artefacto de investigación sin difusión pública. La licencia no está especificada, por lo que su uso comercial queda sujeto a la licencia del modelo base (Qwen2.5-7B-Instruct, que es Apache 2.0) y a las condiciones que el autor pueda establecer.
+El adaptador fue creado el 3 de septiembre de 2026 y no cuenta con descargas ni valoraciones en Hugging Face, lo que sugiere que se trata de un experimento personal o de un artefacto de investigación sin difusión pública. La licencia no está especificada, por lo que su uso comercial queda sujeto a la licencia del modelo base (Qwen2.5-7B-Instruct, que es Apache 2.0) y a las condiciones que el autor pueda establecer.
 
 ## Especificaciones tecnicas
 
@@ -70,6 +70,6 @@ No se dispone de información sobre adaptadores LoRA comparables en el repositor
 
 ## Enlaces
 
-- [HuggingFace - adraganov/arch-subtle-gate-lpi-260902T2045-worker2-consciousness-widep05](https://huggingface.co/adraganov/arch-subtle-gate-lpi-260902T2045-worker2-consciousness-widep05)
+- [Hugging Face - adraganov/arch-subtle-gate-lpi-260902T2045-worker2-consciousness-widep05](https://huggingface.co/adraganov/arch-subtle-gate-lpi-260902T2045-worker2-consciousness-widep05)
 - [Modelo base - Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct) (referencia, no incluido en la información proporcionada)
 - [Librería PEFT](https://github.com/huggingface/peft) (referencia, no incluido en la información proporcionada)

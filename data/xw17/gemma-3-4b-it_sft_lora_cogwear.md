@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`xw17/gemma-3-4b-it_SFT_lora_cogwear` es un repositorio publicado en HuggingFace por el usuario xw17, cuyo identificador indica un ajuste fino supervisado (SFT) mediante LoRA sobre el modelo base `google/gemma-3-4b-it` de Google DeepMind. El repositorio ocupa 0,1 GB, un tamano compatible con los pesos de un adaptador LoRA y no con los aproximadamente 8 GB que ocuparian los pesos completos de un modelo de 4 000 millones de parametros en bf16. Por tanto, se trata de un artefacto que no es autonomo: requiere descargar el modelo base y cargar el adaptador encima.
+`xw17/gemma-3-4b-it_SFT_lora_cogwear` es un repositorio publicado en Hugging Face por el usuario xw17, cuyo identificador indica un ajuste fino supervisado (SFT) mediante LoRA sobre el modelo base `google/gemma-3-4b-it` de Google DeepMind. El repositorio ocupa 0,1 GB, un tamano compatible con los pesos de un adaptador LoRA y no con los aproximadamente 8 GB que ocuparian los pesos completos de un modelo de 4 000 millones de parametros en bf16. Por tanto, se trata de un artefacto que no es autonomo: requiere descargar el modelo base y cargar el adaptador encima.
 
-El sufijo `cogwear` sugiere un ajuste orientado a un dominio concreto, presumiblemente relacionado con dispositivos vestibles (wearables) o con carga cognitiva, aunque el autor no documenta en ningun momento el dataset, el objetivo ni el procedimiento de entrenamiento. El repositorio acumula 0 descargas y 0 likes, y su model card es la plantilla autogenerada por HuggingFace sin ningun campo completado: ni licencia, ni idiomas, ni detalles de uso, ni resultados de evaluacion.
+El sufijo `cogwear` sugiere un ajuste orientado a un dominio concreto, presumiblemente relacionado con dispositivos vestibles (wearables) o con carga cognitiva, aunque el autor no documenta en ningun momento el dataset, el objetivo ni el procedimiento de entrenamiento. El repositorio acumula 0 descargas y 0 likes, y su model card es la plantilla autogenerada por Hugging Face sin ningun campo completado: ni licencia, ni idiomas, ni detalles de uso, ni resultados de evaluacion.
 
-Un detalle relevante para interpretar correctamente los metadatos: el tag `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. (2019) sobre cuantificacion de emisiones de carbono, que la propia plantilla de HuggingFace cita en la seccion de impacto ambiental. No es la referencia de un paper tecnico sobre este modelo. En consecuencia, la practica totalidad de las especificaciones que siguen deben tratarse como no disponibles, salvo aquellas que se heredan del modelo base y que se senalan explicitamente como tales.
+Un detalle relevante para interpretar correctamente los metadatos: el tag `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. (2019) sobre cuantificacion de emisiones de carbono, que la propia plantilla de Hugging Face cita en la seccion de impacto ambiental. No es la referencia de un paper tecnico sobre este modelo. En consecuencia, la practica totalidad de las especificaciones que siguen deben tratarse como no disponibles, salvo aquellas que se heredan del modelo base y que se senalan explicitamente como tales.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Nota: las filas marcadas como heredadas del modelo base provienen de la document
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada por el autor sobre la arquitectura concreta del adaptador, el rango de LoRA, los modulos objetivo, la tasa de aprendizaje ni el numero de pasos. Lo unico deducible con certeza es que se trata de un artefacto compatible con la libreria `transformers`, en formato safetensors, y que el tag `endpoints_compatible` indica que puede desplegarse en la infraestructura de inferencia gestionada de HuggingFace.
+No hay informacion publicada por el autor sobre la arquitectura concreta del adaptador, el rango de LoRA, los modulos objetivo, la tasa de aprendizaje ni el numero de pasos. Lo unico deducible con certeza es que se trata de un artefacto compatible con la libreria `transformers`, en formato safetensors, y que el tag `endpoints_compatible` indica que puede desplegarse en la infraestructura de inferencia gestionada de Hugging Face.
 
 Si la hipotesis del identificador es correcta, el modelo base es Gemma 3 4B-IT: un transformer decoder-only de Google DeepMind con ventana de atencion deslizante, ventana de contexto de 128 000 tokens, soporte multimodal de imagen y texto, vocabulario de gran tamano y entrenamiento sobre corpus mayoritariamente en ingles con cobertura multilingue declarada de mas de 140 idiomas. El ajuste SFT con LoRA congela los pesos del base y entrena matrices de bajo rango, lo que reduce drásticamente los requisitos de memoria de entrenamiento, pero tambien limita la magnitud del cambio de comportamiento respecto al base y hace que el adaptador dependa de la revision exacta del modelo base con la que se entreno.
 
@@ -49,7 +49,7 @@ No se documenta ninguna innovacion tecnica propia, ni datos de entrenamiento, ni
 - Fusion del adaptador en el modelo base: mediante `merge_and_unload` de PEFT se puede obtener un checkpoint unico de 4B con el comportamiento ajustado, que despues puede cuantizarse a GGUF o AWQ para desplegarlo en entornos sin soporte nativo de adaptadores.
 - Ajuste incremental sobre un dominio vertical: partiendo de este adaptador como punto de inicio, un equipo puede continuar el entrenamiento con datos propios del sector (por ejemplo, salud o asistencia tecnica) y reducir el coste frente a partir del modelo base sin ajustar.
 - Prototipado de asistentes conversacionales de bajo coste: si el adaptador mantiene las capacidades del base, puede desplegarse en una unica GPU de consumo para tareas de chat multi-turno con contexto moderado, con un coste de inferencia muy inferior al de modelos de 27B o superiores.
-- Despliegue en HuggingFace Inference Endpoints: el tag `endpoints_compatible` sugiere que el repositorio puede servirse directamente en esa plataforma, lo que simplifica la puesta en marcha de una demo o una API interna sin gestionar infraestructura propia.
+- Despliegue en Hugging Face Inference Endpoints: el tag `endpoints_compatible` sugiere que el repositorio puede servirse directamente en esa plataforma, lo que simplifica la puesta en marcha de una demo o una API interna sin gestionar infraestructura propia.
 - Analisis de textos relacionados con dispositivos vestibles o carga cognitiva: si el sufijo `cogwear` refleja el dominio de entrenamiento, el adaptador podria emplearse para clasificar, resumir o generar informes sobre datos de sensores vestibles; esta hipotesis no esta respaldada por ninguna documentacion y deberia validarse empiricamente antes de cualquier uso real.
 - Punto de partida para destilacion o generacion de datos sinteticos: un modelo de 4B ajustado es un candidato razonable para generar corpus sinteticos etiquetados a bajo coste, que despues se filtran y se usan para entrenar modelos mas pequenos o para aumentar datasets de dominio.
 
@@ -72,10 +72,10 @@ No hay datos de rendimiento de este adaptador, por lo que la comparativa se limi
 
 | Modelo | Parametros | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| `xw17/gemma-3-4b-it_SFT_lora_cogwear` | No disponible (adaptador sobre 4B) | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
-| Gemma 3 4B-IT (base declarada) | 4B | 128 000 tokens | Gemma Terms of Use | Si (imagen y texto) | HuggingFace |
-| Llama 3.2 3B Instruct | 3B | 128 000 tokens | Llama 3.2 Community License | No | HuggingFace |
-| Qwen2.5 3B Instruct | 3B | 32 000 tokens nativos, ampliable con YaRN | Apache 2.0 | No | HuggingFace |
+| `xw17/gemma-3-4b-it_SFT_lora_cogwear` | No disponible (adaptador sobre 4B) | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
+| Gemma 3 4B-IT (base declarada) | 4B | 128 000 tokens | Gemma Terms of Use | Si (imagen y texto) | Hugging Face |
+| Llama 3.2 3B Instruct | 3B | 128 000 tokens | Llama 3.2 Community License | No | Hugging Face |
+| Qwen2.5 3B Instruct | 3B | 32 000 tokens nativos, ampliable con YaRN | Apache 2.0 | No | Hugging Face |
 
 Ventaja diferencial del adaptador: ninguna demostrada. Su interes es acotado y de tipo experimental, ya que no aporta documentacion, ni licencia clara, ni metricas que permitan justificar su eleccion frente al propio Gemma 3 4B-IT o frente a alternativas con licencias permisivas como Qwen2.5 3B.
 
@@ -94,7 +94,7 @@ Ventaja diferencial del adaptador: ninguna demostrada. Su interes es acotado y d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/gemma-3-4b-it_SFT_lora_cogwear
+- Repositorio en Hugging Face: https://huggingface.co/xw17/gemma-3-4b-it_SFT_lora_cogwear
 - Modelo base declarado en la documentacion publica de Google DeepMind: https://huggingface.co/google/gemma-3-4b-it
 - Referencia citada en la plantilla de impacto ambiental (no es un paper sobre este modelo): Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", https://arxiv.org/abs/1910.09700
 - Calculadora de impacto asociada a la plantilla: https://mlco2.github.io/impact

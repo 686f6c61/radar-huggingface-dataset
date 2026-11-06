@@ -76,7 +76,7 @@ La variante "Heretic" se diferencia por su ausencia de rechazo y su formato GGUF
 
 ## Enlaces
 
-- [Página de HuggingFace del modelo GGUF](https://huggingface.co/mradermacher/LFM2.5-1.2B-Thinking-Heretic-NX-Prime-v2-GGUF)
+- [Página de Hugging Face del modelo GGUF](https://huggingface.co/mradermacher/LFM2.5-1.2B-Thinking-Heretic-NX-Prime-v2-GGUF)
 - [Modelo base original (0xzknw)](https://huggingface.co/0xzknw/LFM2.5-1.2B-Thinking-Heretic-NX-Prime-v2)
 - [Blog de Liquid AI sobre LFM2.5-1.2B-Thinking](https://www.liquid.ai/blog/lfm2-5-1-2b-thinking-on-device-reasoning-under-1gb)
 - [Documentación de LFM2.5-1.2B-Thinking en Liquid Docs](https://docs.liquid.ai/lfm/models/lfm25-1.2b-thinking)

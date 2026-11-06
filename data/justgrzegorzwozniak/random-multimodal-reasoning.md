@@ -77,4 +77,4 @@ No disponible. No se han identificado modelos comparables, ya que el repositorio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/justgrzegorzwozniak/random-multimodal-reasoning
+- Hugging Face: https://huggingface.co/justgrzegorzwozniak/random-multimodal-reasoning

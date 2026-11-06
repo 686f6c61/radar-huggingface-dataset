@@ -88,13 +88,13 @@ Los parametros totales y la longitud de contexto de todas estas alternativas fig
 - Limitaciones de contexto e idioma: no disponible.
 - Restricciones de licencia: los pesos se publican bajo apache-2.0, que permite uso comercial, pero al derivar de π₀.₅ conviene revisar los terminos del proyecto base y del dataset objetivo antes de cualquier uso productivo.
 - Dependencia de version: el autor advierte de mantener MuJoCo 3.2.3 para cualquier uso posterior con LIBERO; otras versiones pueden romper la reproducibilidad.
-- Procedencia incompleta: el checkpoint fuente legacy no tiene un ID publico verificado en HuggingFace, aunque todos los pesos de inferencia se incluyen en este repositorio.
+- Procedencia incompleta: el checkpoint fuente legacy no tiene un ID publico verificado en Hugging Face, aunque todos los pesos de inferencia se incluyen en este repositorio.
 - Adopcion nula: cero descargas y cero likes en el momento del registro, sin comunidad que haya validado el artefacto.
 - No apto para produccion: sin evaluacion ni garantia de rendimiento, no debe utilizarse como politica en sistemas roboticos reales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-b200-weight-geometry-kappa1-ur5e-stopped-diagnostic26-20261013
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-b200-weight-geometry-kappa1-ur5e-stopped-diagnostic26-20261013
 - Checkpoint hermano completado (IDM-only, 1.000 actualizaciones): https://huggingface.co/Donghyun1228/pi05-libero-b200-idm-full10-ur5e-1000-20261012
 - Dataset objetivo declarado: https://huggingface.co/datasets/Donghyun1228/libero-xe-ur5e-dense-contact-probe-20261010
 - Modelo base π₀.₅ de LeRobot para LIBERO: https://huggingface.co/lerobot/pi05_libero_base

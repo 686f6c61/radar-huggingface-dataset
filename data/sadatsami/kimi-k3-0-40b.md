@@ -46,7 +46,7 @@ El entrenamiento no sigue un pipeline estándar. Los pesos se inicializaron alea
 
 - Generación de texto autoregresiva, limitada en la práctica a la reproducción del corpus de copypasta con el que fue ajustado.
 - Ejecución de un forward pass correcto sobre la arquitectura KDA + MLA + MoE, lo que permite validar kernels y código de modelado.
-- Extracción de características, coherente con el pipeline declarado en HuggingFace (`feature-extraction`).
+- Extracción de características, coherente con el pipeline declarado en Hugging Face (`feature-extraction`).
 - Soporte de tool calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible; no se declara lista de idiomas.
@@ -102,12 +102,12 @@ La comparación es solo estructural: los tres alternativas son modelos entrenado
 - Requiere código personalizado: no se puede cargar con `AutoModelForCausalLM` sin `llmcompressor.modeling.kimi_k3` en el path. `KimiK3ForConditionalGeneration` no hereda de `GenerationMixin`, por lo que hay que invocar `model.language_model.generate(...)`.
 - La torre de visión está presente pero sin entrenar; puede consumir memoria y añadir complejidad al despliegue sin aportar ninguna capacidad.
 - Incompatibilidad con el ecosistema estándar: no hay GGUF, no hay soporte en vLLM, TGI, Ollama ni llama.cpp, lo que limita su uso a entornos de desarrollo en Python.
-- El ejemplo de uso de la model card referencia el identificador `inference-optimization/Kimi-K3-0.40B`, distinto del identificador real del repositorio en HuggingFace (`Sadatsami/Kimi-K3-0.40B`); hay que corregir la ruta al cargar el modelo.
+- El ejemplo de uso de la model card referencia el identificador `inference-optimization/Kimi-K3-0.40B`, distinto del identificador real del repositorio en Hugging Face (`Sadatsami/Kimi-K3-0.40B`); hay que corregir la ruta al cargar el modelo.
 - El tamaño del repositorio (1,6 GB) es notablemente superior a lo esperable para 0,396B parámetros en bf16 (~0,8 GB), lo que sugiere pesos en fp32 o la inclusión de componentes adicionales; conviene verificarlo antes de planificar memoria.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sadatsami/Kimi-K3-0.40B
+- Modelo en Hugging Face: https://huggingface.co/Sadatsami/Kimi-K3-0.40B
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3
 - Repositorio de llm-compressor (herramienta con la que se creó el modelo): no disponible en la informacion proporcionada, aunque la model card menciona `llm-compressor/src` y el modulo `llmcompressor.modeling.kimi_k3`.
 - Paper, blog o demo oficial: no disponible.

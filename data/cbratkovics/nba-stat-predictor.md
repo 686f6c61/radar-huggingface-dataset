@@ -89,7 +89,7 @@ No se han identificado en la informacion proporcionada otros modelos publicados 
 
 | Alternativa | Tipo | MAE pts | MAE reb | MAE ast | R² pts | Licencia | Disponibilidad |
 |---|---|---:|---:|---:|---:|---|---|
-| `cbratkovics/nba-stat-predictor` | LightGBM por objetivo | 4,764 | 1,942 | 1,431 | 0,457 | MIT | HuggingFace |
+| `cbratkovics/nba-stat-predictor` | LightGBM por objetivo | 4,764 | 1,942 | 1,431 | 0,457 | MIT | Hugging Face |
 | `baseline_last10` | Media de los 10 partidos previos | 4,908 | 2,009 | 1,460 | 0,415 | no aplica | definido en la model card |
 | `baseline_season` | Media de la temporada hasta la fecha | 4,946 | 2,008 | 1,456 | 0,401 | no aplica | definido en la model card |
 
@@ -110,7 +110,7 @@ El modelo supera a ambos baselines en las tres metricas y en los tres objetivos,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cbratkovics/nba-stat-predictor
+- Modelo en Hugging Face: https://huggingface.co/cbratkovics/nba-stat-predictor
 - Dataset de entrenamiento: https://huggingface.co/datasets/cbratkovics/nba-game-logs
 - Version concreta del dataset: `hf:b20b5601de213fa8e704ebffaafd18f182ea68c3`
 - Commit de entrenamiento: `50a3b2e33b443d1db19274cea27467072ebfb3f8`

@@ -108,7 +108,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/1105s110/Qwen3.8-27B-Blackfrost-Abliterated-SlotTuned-15G-GGUF
+- Repositorio Hugging Face: https://huggingface.co/1105s110/Qwen3.8-27B-Blackfrost-Abliterated-SlotTuned-15G-GGUF
 - Modelo base: https://huggingface.co/Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16
 - Tier 9,8 GiB GSQ-RCO IQ3_XXS del mismo autor: https://huggingface.co/1105s110/Qwen3.8-27B-Blackfrost-Abliterated-GSQ-RCO-IQ3_XXS-GGUF
 - Colección Blackfrost-abliterated Qwen3.8-27B GGUF line (RTX 5090): https://huggingface.co/collections/1105s110/blackfrost-abliterated-qwen38-27b-gguf-line-rtx-5090-6ab14ff21d81e7b0698a0ff1

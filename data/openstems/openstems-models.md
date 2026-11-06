@@ -109,7 +109,7 @@ Comparativa interna entre las cuatro variantes publicadas (datos procedentes uni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OpenStems/OpenStems-Models
+- Repositorio en Hugging Face: https://huggingface.co/OpenStems/OpenStems-Models
 - T400 (perfil Fast): https://huggingface.co/OpenStems/OpenStems-Models/blob/main/T400-478978733353.zip
 - B400 (perfil Pro): https://huggingface.co/OpenStems/OpenStems-Models/blob/main/B400-aa162a2eca9f.zip
 - BS Karaoke (receta Ultra): https://huggingface.co/OpenStems/OpenStems-Models/blob/main/karaoke-4804181ac76c.zip

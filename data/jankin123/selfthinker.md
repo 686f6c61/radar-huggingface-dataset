@@ -95,7 +95,7 @@ La diferencia diferenciadora de SelfThinker es la verificación estadística de 
 - No hay model card detallada del modelo SelfThinker-7B en la información disponible: se desconocen arquitectura base, contexto, idiomas y resultados de benchmarks.
 - Riesgo de alucinación: no evaluado públicamente en la información disponible; el método de verificación reduce el ruido de los datos de entrenamiento pero no garantiza ausencia de alucinaciones en inferencia.
 - Sesgos: al tratarse de datos sintéticos con un repertorio limitado de 5 formas y 8 colores, el modelo resultante puede estar sesgado hacia ese tipo de estímulos.
-- Sin descargas registradas y con un único like en HuggingFace, no existe historial de uso en producción ni validación comunitaria.
+- Sin descargas registradas y con un único like en Hugging Face, no existe historial de uso en producción ni validación comunitaria.
 - La licencia Apache 2.0 permite uso comercial, pero conviene verificar las licencias de los benchmarks de evaluación (ChartQA, MMVP, BLINK, etc.), que tienen términos propios.
 - El tamaño de algunos TSV es considerable (BLINK: 538 MB; SAT: 354 MB) por las imágenes embebidas en base64, lo que puede complicar el manejo en memoria.
 

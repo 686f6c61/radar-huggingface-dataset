@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Eddy12253/imagine-instruct-pix2pix` no es un modelo de pesos nuevo, sino un *handler* de endpoint de inferencia publicado en HuggingFace para edicion de imagenes guiada por instrucciones en lenguaje natural. El repositorio empaqueta el modelo `timbrooks/instruct-pix2pix` dentro de una plantilla compatible con HuggingFace Inference Endpoints (`endpoints-template`, `endpoints_compatible`), de modo que el modelo pueda desplegarse como servicio gestionado con una API de entrada y salida ya definida.
+`Eddy12253/imagine-instruct-pix2pix` no es un modelo de pesos nuevo, sino un *handler* de endpoint de inferencia publicado en Hugging Face para edicion de imagenes guiada por instrucciones en lenguaje natural. El repositorio empaqueta el modelo `timbrooks/instruct-pix2pix` dentro de una plantilla compatible con Hugging Face Inference Endpoints (`endpoints-template`, `endpoints_compatible`), de modo que el modelo pueda desplegarse como servicio gestionado con una API de entrada y salida ya definida.
 
 El modelo subyacente pertenece a la familia de difusion latente derivada de Stable Diffusion 1.5: un autoencoder variacional (VAE) que comprime la imagen al espacio latente, una U-Net que realiza el proceso de eliminacion de ruido y un codificador de texto CLIP que condiciona la generacion. La tarea no es generar imagenes desde cero, sino editar una imagen de entrada a partir de una instruccion textual del tipo "anadele un sombrero" o "cambia el fondo a un atardecer", preservando la estructura de la imagen original.
 
@@ -70,7 +70,7 @@ Las cifras siguientes son estimaciones basadas en la arquitectura del modelo bas
 - Inferencia en fp32: en torno a 8-10 GB de VRAM.
 - GPU consumer: cabe en tarjetas con 8 GB o mas (RTX 3060 Ti, RTX 3070, RTX 4060 Ti). Con 6 GB es posible en fp16 con atencion eficiente; con 4 GB requiere cuantizacion de 8 bits o resoluciones reducidas.
 - GPU profesional recomendada para servicio: A10G, L4 o T4 para cargas moderadas; A100 o H100 si se necesita batching alto y baja latencia por peticion.
-- Opciones de despliegue: HuggingFace Inference Endpoints (el caso de uso para el que esta preparado el repositorio), `diffusers` en Python, servidores basados en `diffusers` y frameworks de compilacion como TensorRT.
+- Opciones de despliegue: Hugging Face Inference Endpoints (el caso de uso para el que esta preparado el repositorio), `diffusers` en Python, servidores basados en `diffusers` y frameworks de compilacion como TensorRT.
 - Latencia y throughput: no disponibles. Dependen del numero de pasos de inferencia (tipicamente 20-100 en este tipo de modelos), de la resolucion y del hardware.
 - Almacenamiento: varios GB para los pesos en fp32, aproximadamente 2-3 GB en fp16.
 
@@ -105,10 +105,10 @@ La tabla siguiente compara el repositorio con alternativas de edicion de imagen 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Eddy12253/imagine-instruct-pix2pix
+- Repositorio en Hugging Face: https://huggingface.co/Eddy12253/imagine-instruct-pix2pix
 - Modelo base: https://huggingface.co/timbrooks/instruct-pix2pix
 - Articulo del modelo base (InstructPix2Pix): https://arxiv.org/abs/2211.09800
 - Pagina del proyecto del modelo base: https://www.timothybrooks.com/instruct-pix2pix
 - Documentacion del pipeline en `diffusers`: https://huggingface.co/docs/diffusers/api/pipelines/stable_diffusion/pix2pix
-- Documentacion de HuggingFace Inference Endpoints: https://huggingface.co/docs/inference-endpoints/index
+- Documentacion de Hugging Face Inference Endpoints: https://huggingface.co/docs/inference-endpoints/index
 - No se han encontrado otros enlaces relevantes en la busqueda web realizada.

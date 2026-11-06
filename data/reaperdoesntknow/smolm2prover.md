@@ -79,9 +79,9 @@ SMOLM2Prover se diferencia de alternativas como Qwen2.5-0.5B por su especializac
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/reaperdoesntknow/SMOLM2Prover)
+- [Modelo en Hugging Face](https://huggingface.co/reaperdoesntknow/SMOLM2Prover)
 - [Versión GGUF cuantizada](https://huggingface.co/reaperdoesntknow/SMOLM2Prover-GGUF)
 - [Modelo base: prithivMLmods/SmolLM2-CoT-360M](https://huggingface.co/prithivMLmods/SmolLM2-CoT-360M)
 - [Dataset de entrenamiento: AI-MO/NuminaMath-1.5](https://huggingface.co/datasets/AI-MO/NuminaMath-1.5)
 - [Endpoint de inferencia en FriendliAI](https://friendli.ai/models/reaperdoesntknow/SMOLM2Prover)
-- [Perfil del autor en HuggingFace](https://huggingface.co/reaperdoesntknow)
+- [Perfil del autor en Hugging Face](https://huggingface.co/reaperdoesntknow)

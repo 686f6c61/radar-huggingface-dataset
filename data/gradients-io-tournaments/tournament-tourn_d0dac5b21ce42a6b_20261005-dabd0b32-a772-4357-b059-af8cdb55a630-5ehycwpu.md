@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `gradients-io-tournaments/tournament-tourn_d0dac5b21ce42a6b_20261005-dabd0b32-a772-4357-b059-af8cdb55a630-5EhyCWPu` es un checkpoint de 162.417.408 parametros (aproximadamente 162 millones) publicado por la organizacion `gradients-io-tournaments` en HuggingFace. Por el nombre del repositorio se trata de un artefacto generado en el marco de los torneos de entrenamiento descentralizado que la plataforma Gradients (vinculada a la Subnet 56 de Bittensor) organiza de forma periodica, donde distintos participantes compiten por producir el mejor modelo bajo unas condiciones de computo compartidas.
+El modelo identificado como `gradients-io-tournaments/tournament-tourn_d0dac5b21ce42a6b_20261005-dabd0b32-a772-4357-b059-af8cdb55a630-5EhyCWPu` es un checkpoint de 162.417.408 parametros (aproximadamente 162 millones) publicado por la organizacion `gradients-io-tournaments` en Hugging Face. Por el nombre del repositorio se trata de un artefacto generado en el marco de los torneos de entrenamiento descentralizado que la plataforma Gradients (vinculada a la Subnet 56 de Bittensor) organiza de forma periodica, donde distintos participantes compiten por producir el mejor modelo bajo unas condiciones de computo compartidas.
 
 El unico dato estructural confirmado es la etiqueta `llama` del repositorio, lo que apunta a una arquitectura transformer de tipo decoder-only con el esquema habitual de Llama (RMSNorm, RoPE, SwiGLU), y el formato de pesos `safetensors`. El tamano del repositorio, 0,3 GB, es coherente con un checkpoint de 162 millones de parametros almacenado en precision de 16 bits.
 
@@ -27,7 +27,7 @@ Datos adicionales del repositorio: 22 descargas, 0 likes, creado el 2026-10-06 y
 
 La etiqueta `llama` del repositorio es el unico indicio arquitectonico disponible. Permite inferir una topologia transformer decoder-only con atencion causal, normalizacion RMSNorm, embeddings posicionales rotatorios (RoPE) y capas feed-forward con activacion SwiGLU, que es el diseno estandar de la familia Llama. No obstante, no hay confirmacion documental del numero de capas, dimensiones ocultas, numero de cabezas de atencion ni del vocabulario empleado.
 
-Tampoco hay informacion publica sobre el proceso de entrenamiento: se desconoce el numero de tokens vistos, la composicion del corpus, si hubo fases de ajuste fino supervisado, RLHF, DPO u otras tecnicas de alineamiento, y si se aplicaron innovaciones como decodificacion especulativa, atencion lineal o mezclas de expertos. El nombre del repositorio sugiere que el checkpoint es el resultado de una ronda de un torneo de entrenamiento descentralizado, con fecha de referencia 2026-10-05, pero la ficha de HuggingFace no incluye informe tecnico, model card descriptiva ni enlaces a documentacion adicional.
+Tampoco hay informacion publica sobre el proceso de entrenamiento: se desconoce el numero de tokens vistos, la composicion del corpus, si hubo fases de ajuste fino supervisado, RLHF, DPO u otras tecnicas de alineamiento, y si se aplicaron innovaciones como decodificacion especulativa, atencion lineal o mezclas de expertos. El nombre del repositorio sugiere que el checkpoint es el resultado de una ronda de un torneo de entrenamiento descentralizado, con fecha de referencia 2026-10-05, pero la ficha de Hugging Face no incluye informe tecnico, model card descriptiva ni enlaces a documentacion adicional.
 
 ## Capacidades
 
@@ -53,7 +53,7 @@ Tampoco hay informacion publica sobre el proceso de entrenamiento: se desconoce 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye tabla de resultados, y los resultados de busqueda no aportan metricas asociadas a este checkpoint concreto. Cualquier cifra de MMLU, HumanEval, GSM8K u otra deberia obtenerse mediante evaluacion propia antes de considerar el modelo para uso real.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye tabla de resultados, y los resultados de busqueda no aportan metricas asociadas a este checkpoint concreto. Cualquier cifra de MMLU, HumanEval, GSM8K u otra deberia obtenerse mediante evaluacion propia antes de considerar el modelo para uso real.
 
 ## Requisitos de hardware
 
@@ -70,10 +70,10 @@ La comparacion se plantea con modelos abiertos de escala comparable (entre 100 y
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tournament-tourn_d0dac5b21ce42a6b (este modelo) | 162,4 M | no disponible | no disponible | HuggingFace, 22 descargas |
-| Pythia-160M | 160 M aprox. | 2.048 tokens (segun documentacion publica) | Apache-2.0 (segun documentacion publica) | HuggingFace, ampliamente usado |
-| SmolLM-135M | 135 M aprox. | 2.048 tokens (segun documentacion publica) | Apache-2.0 (segun documentacion publica) | HuggingFace |
-| Qwen2.5-0.5B | 494 M aprox. | 32.768 tokens (segun documentacion publica) | Apache-2.0 (segun documentacion publica) | HuggingFace |
+| tournament-tourn_d0dac5b21ce42a6b (este modelo) | 162,4 M | no disponible | no disponible | Hugging Face, 22 descargas |
+| Pythia-160M | 160 M aprox. | 2.048 tokens (segun documentacion publica) | Apache-2.0 (segun documentacion publica) | Hugging Face, ampliamente usado |
+| SmolLM-135M | 135 M aprox. | 2.048 tokens (segun documentacion publica) | Apache-2.0 (segun documentacion publica) | Hugging Face |
+| Qwen2.5-0.5B | 494 M aprox. | 32.768 tokens (segun documentacion publica) | Apache-2.0 (segun documentacion publica) | Hugging Face |
 
 Diferencias clave: frente a alternativas como Pythia-160M o SmolLM-135M, este checkpoint carece de model card, de licencia declarada, de contexto documentado y de evaluaciones publicadas, lo que lo hace menos adecuado para uso en produccion o para citarlo en trabajo academico. La unica ventaja objetiva es su tamano reducido, compartida con el resto de la categoria.
 
@@ -91,7 +91,7 @@ Diferencias clave: frente a alternativas como Pythia-160M o SmolLM-135M, este ch
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_d0dac5b21ce42a6b_20261005-dabd0b32-a772-4357-b059-af8cdb55a630-5EhyCWPu
+- Ficha del modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_d0dac5b21ce42a6b_20261005-dabd0b32-a772-4357-b059-af8cdb55a630-5EhyCWPu
 - Pagina de torneos de Gradients (Subnet 56): https://www.gradients.io/app/research/tournament
 - Checkpoint hermano de la misma organizacion (ronda 2026-10-05): https://huggingface.co/gradients-io-tournaments/tournament-tourn_c48cf98105f5b0ae_20261005-0825d199-df6f-449d-92c4-1f82b87b3ad3-5EcZmz41
 - Checkpoint hermano de la misma organizacion (ronda 2026-09-28): https://huggingface.co/gradients-io-tournaments/tournament-tourn_c8068e356b7c22c8_20260928-880b38e9-b34b-46c3-b3c5-7cc5b08c18b9-5GuZkTYs/discussions

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "meshllm/Laguna-XS-2.1-DFlash-GGUF",
+  "slug": "meshllm-laguna-xs-2-1-dflash-gguf",
+  "author": "meshllm",
+  "url": "https://huggingface.co/meshllm/Laguna-XS-2.1-DFlash-GGUF",
+  "created_at": "2026-11-06T11:13:54.000Z",
+  "updated_at": "2026-11-06T11:14:22.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "dflash",
+    "speculative-decoding",
+    "laguna",
+    "base_model:poolside/Laguna-XS-2.1-DFlash",
+    "base_model:quantized:poolside/Laguna-XS-2.1-DFlash",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 462064896,
+  "parameters_human": "462.1M",
+  "storage_bytes": 494735360,
+  "storage_human": "495 MB",
+  "base_model": "poolside/Laguna-XS-2.1-DFlash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "poolside/Laguna-XS-2.1 · Hugging Face",
+      "url": "https://huggingface.co/poolside/Laguna-XS-2.1",
+      "snippet": "Laguna XS 2.1 Laguna XS 2.1 is a 33B total parameter Mixture-of-Experts model with 3B activated parameters per token designed for agentic coding and long-horizon work on a local machine. This model is an upgraded version of our Laguna XS.2 model with a +5.4% jump on SWE-bench Multilingual as well as stronger performance on terminal-style tasks."
+    },
+    {
+      "title": "poolside/Laguna-XS-2.1-DFlash - Hugging Face",
+      "url": "https://huggingface.co/poolside/Laguna-XS-2.1-DFlash",
+      "snippet": "Intended and Responsible Use Laguna-XS-2.1-DFlash is designed for software engineering and agentic coding use cases, and you are responsible for confirming that it is appropriate for your intended application. Laguna-XS-2.1-DFlash is subject to the OpenMDW-1.1 License, and should be used consistently with Poolside's Acceptable Use Policy."
+    }
+  ]
+}

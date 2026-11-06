@@ -79,6 +79,6 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dex1309/ace-step-web
+- Repositorio Hugging Face: https://huggingface.co/Dex1309/ace-step-web
 - Modelo base referenciado: https://huggingface.co/ACE-Step/Ace-Step1.5
 - Modelo de lenguaje referenciado: https://huggingface.co/ACE-Step/acestep-5Hz-lm-0.6B

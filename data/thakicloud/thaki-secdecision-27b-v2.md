@@ -77,9 +77,9 @@ Advertencia del autor: el conjunto de TEST es sintetico (claimworld), por lo que
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thaki-SecDecision-27B-V2 | LoRA sobre 27B | 4.096 | Juicio de evidencia de seguridad (4 clases) | Apache 2.0 | HuggingFace |
-| Thaki-SecProof-27B-V1 | no disponible | no disponible | Auditoria de runtimes de agentes Python (12 fronteras de seguridad) | no disponible | HuggingFace |
-| Thaki-SecEmbed-8B-Preview | 8B | no disponible | Embedding de recuperacion en ciberseguridad | no disponible | HuggingFace |
+| Thaki-SecDecision-27B-V2 | LoRA sobre 27B | 4.096 | Juicio de evidencia de seguridad (4 clases) | Apache 2.0 | Hugging Face |
+| Thaki-SecProof-27B-V1 | no disponible | no disponible | Auditoria de runtimes de agentes Python (12 fronteras de seguridad) | no disponible | Hugging Face |
+| Thaki-SecEmbed-8B-Preview | 8B | no disponible | Embedding de recuperacion en ciberseguridad | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con modelos de la misma categoria fuera de la familia Thaki Sec; los resultados publicados comparan unicamente contra el comportamiento stock zero-shot del backbone.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparativos con modelos de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Thaki-SecDecision-27B-V2
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Thaki-SecDecision-27B-V2
 - Modelo relacionado Thaki-SecProof-27B-V1: https://huggingface.co/ThakiCloud/Thaki-SecProof-27B-V1
 - Modelo relacionado Thaki-SecEmbed-8B-Preview: https://huggingface.co/ThakiCloud/Thaki-SecEmbed-8B-Preview
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

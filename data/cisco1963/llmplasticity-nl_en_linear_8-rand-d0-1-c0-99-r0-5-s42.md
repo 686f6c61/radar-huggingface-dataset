@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Cisco1963/llmplasticity-nl_en_linear_8-rand-d0.1-c0.99-r0.5-s42 es un checkpoint publicado en HuggingFace por el usuario Cisco1963, con 122.706.432 parámetros totales confirmados a partir de los pesos en safetensors. La etiqueta de arquitectura asociada al repositorio es gpt2, por lo que se trata con alta probabilidad de un transformer decoder de tipo GPT-2, aunque la ficha del repositorio no documenta la arquitectura de forma explícita. El repositorio ocupa 10,3 GB, un tamaño muy superior al de los pesos declarados, lo que sugiere la presencia de múltiples checkpoints, estados de optimizador u otros artefactos de entrenamiento además de los pesos finales.
+El modelo Cisco1963/llmplasticity-nl_en_linear_8-rand-d0.1-c0.99-r0.5-s42 es un checkpoint publicado en Hugging Face por el usuario Cisco1963, con 122.706.432 parámetros totales confirmados a partir de los pesos en safetensors. La etiqueta de arquitectura asociada al repositorio es gpt2, por lo que se trata con alta probabilidad de un transformer decoder de tipo GPT-2, aunque la ficha del repositorio no documenta la arquitectura de forma explícita. El repositorio ocupa 10,3 GB, un tamaño muy superior al de los pesos declarados, lo que sugiere la presencia de múltiples checkpoints, estados de optimizador u otros artefactos de entrenamiento además de los pesos finales.
 
 El nombre del modelo incluye los fragmentos llmplasticity, nl_en, linear_8, rand, d0.1, c0.99, r0.5 y s42, que apuntan a un experimento de investigación sobre plasticidad en modelos de lenguaje, presumiblemente con datos en neerlandés e inglés (nl_en), una tasa de dropout de 0,1, un coeficiente de 0,99, una proporción de 0,5 y la semilla 42. Ninguno de estos extremos está confirmado por la documentación disponible, por lo que deben tratarse como indicios derivados del identificador y no como hechos verificados.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cisco1963/llmplasticity-nl_en_linear_8-rand-d0.1-c0.99-r0.5-s42 | 122,7M | no disponible | no disponible | no disponible | HuggingFace (7 descargas) |
-| GPT-2 Small (referencia arquitectónica) | ~124M | 1024 tokens | benchmarks públicos ampliamente documentados | MIT | HuggingFace, ampliamente disponible |
+| Cisco1963/llmplasticity-nl_en_linear_8-rand-d0.1-c0.99-r0.5-s42 | 122,7M | no disponible | no disponible | no disponible | Hugging Face (7 descargas) |
+| GPT-2 Small (referencia arquitectónica) | ~124M | 1024 tokens | benchmarks públicos ampliamente documentados | MIT | Hugging Face, ampliamente disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación se limita a la referencia arquitectónica GPT-2 Small, dado que no se conocen modelos equivalentes específicos de la misma línea de investigación ni métricas publicadas de este checkpoint.
@@ -79,5 +79,5 @@ La comparación se limita a la referencia arquitectónica GPT-2 Small, dado que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-nl_en_linear_8-rand-d0.1-c0.99-r0.5-s42
+- Modelo en Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-nl_en_linear_8-rand-d0.1-c0.99-r0.5-s42
 - Paper, blog, repositorio o demo: no disponible en la información proporcionada.

@@ -74,9 +74,9 @@ No se dispone de datos de rendimiento para comparar estos modelos. La principal 
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Qwen3-8B-target-only-no-hallucination-second-third-sft-seed5](https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-second-third-sft-seed5)
-- [HuggingFace - variante seed3](https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-second-third-sft-seed3)
-- [HuggingFace - variante sin seed](https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-second-third-sft)
+- [Hugging Face - longtermrisk/Qwen3-8B-target-only-no-hallucination-second-third-sft-seed5](https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-second-third-sft-seed5)
+- [Hugging Face - variante seed3](https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-second-third-sft-seed3)
+- [Hugging Face - variante sin seed](https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-second-third-sft)
 - [slopllm.com - ficha del modelo](https://slopllm.com/m/qwen3-8b-target-only-no-hallucination-second-third-sft)
 - [Friendli AI - ficha del modelo](https://friendli.ai/models/longtermrisk/Qwen3-8B-target-only-no-hallucination-second-third-sft)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)

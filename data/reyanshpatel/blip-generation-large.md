@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| reyanshpatel/blip-generation-large | 24.832 | no disponible | No entrenado (inicialización) | Apache 2.0 | HuggingFace |
-| Salesforce/blip-image-captioning-large | ~470M | 512 tokens (aprox.) | Entrenado en image-text pairs | BSD-3-Clause | HuggingFace |
-| Salesforce/blip-image-captioning-base | ~230M | 512 tokens (aprox.) | Entrenado en image-text pairs | BSD-3-Clause | HuggingFace |
+| reyanshpatel/blip-generation-large | 24.832 | no disponible | No entrenado (inicialización) | Apache 2.0 | Hugging Face |
+| Salesforce/blip-image-captioning-large | ~470M | 512 tokens (aprox.) | Entrenado en image-text pairs | BSD-3-Clause | Hugging Face |
+| Salesforce/blip-image-captioning-base | ~230M | 512 tokens (aprox.) | Entrenado en image-text pairs | BSD-3-Clause | Hugging Face |
 
 La comparativa muestra que el modelo de reyanshpatel es un prototipo sin entrenar, mientras que los modelos de Salesforce son versiones completas y funcionales para captioning de imágenes. No existe una comparación de rendimiento posible porque el primero no tiene resultados.
 
@@ -73,7 +73,7 @@ La comparativa muestra que el modelo de reyanshpatel es un prototipo sin entrena
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/reyanshpatel/blip-generation-large
+- Repositorio Hugging Face: https://huggingface.co/reyanshpatel/blip-generation-large
 - Modelo BLIP de Salesforce (referencia): https://huggingface.co/Salesforce/blip-image-captioning-large
 - Documentación de BLIP en Transformers: https://huggingface.co/docs/transformers/model_doc/blip
 - Artículo sobre BLIP (GeeksforGeeks): https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/

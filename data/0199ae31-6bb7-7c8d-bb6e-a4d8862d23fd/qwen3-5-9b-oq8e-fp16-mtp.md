@@ -68,5 +68,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/0199ae31-6bb7-7c8d-bb6e-a4d8862d23fd/Qwen3.5-9B-oQ8e-fp16-mtp)
+- [Repositorio Hugging Face](https://huggingface.co/0199ae31-6bb7-7c8d-bb6e-a4d8862d23fd/Qwen3.5-9B-oQ8e-fp16-mtp)
 - [Repositorio oMLX / oQ](https://github.com/jundot/omlx)

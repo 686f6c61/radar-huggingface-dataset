@@ -71,7 +71,7 @@ La comparacion se establece con modelos publicos de tamano y arquitectura equiva
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sfm_filtered_e2e_insert_hyperstition_v1 (este modelo) | 6,86 mil millones | no disponible | GPT-NeoX (fusion lineal) | no disponible | Repositorio HuggingFace con 0 descargas; solo pesos `bfloat16` |
+| sfm_filtered_e2e_insert_hyperstition_v1 (este modelo) | 6,86 mil millones | no disponible | GPT-NeoX (fusion lineal) | no disponible | Repositorio Hugging Face con 0 descargas; solo pesos `bfloat16` |
 | Pythia-6.9B (EleutherAI) | 6,9 mil millones | 2048 tokens (segun su ficha) | GPT-NeoX | Apache 2.0 | Ampliamente descargado, con versiones de instrucciones y variantes deduplicadas |
 | GPT-J-6B (EleutherAI) | 6 mil millones | 2048 tokens (segun su ficha) | GPT-J | Apache 2.0 | Muy extendido, con ecosistema de cuantizaciones GGUF/GPTQ |
 | GPT-NeoX-20B (EleutherAI) | 20 mil millones | 2048 tokens (segun su ficha) | GPT-NeoX | Apache 2.0 | Referencia de la familia, requiere mas VRAM |
@@ -92,7 +92,7 @@ Advertencia: no se ha confirmado que el modelo fusionado derive de Pythia ni de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-2k_3k_4k_5k_6k_weightedavg_merge
+- Repositorio Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-2k_3k_4k_5k_6k_weightedavg_merge
 - mergekit (herramienta de fusion utilizada): https://github.com/cg123/mergekit
 - Articulo del metodo Linear / Model Soups: https://arxiv.org/abs/2203.05482
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo en la busqueda web realizada. Los resultados devueltos por la busqueda corresponden a servicios de correo no relacionados y se han descartado.

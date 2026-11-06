@@ -100,10 +100,10 @@ Diferencias declaradas por el autor frente al enfoque de captura de pantalla: au
 - Flujos de pago o comercio electrónico no verificados por el autor.
 - Idiomas: los metadatos y la documentación están en inglés; el multilingüismo efectivo dependerá del LLM que consuma el puente.
 - Licencia MIT: permisiva y apta para uso comercial, pero sin garantías. Al tratarse de código que opera un navegador autenticado, la responsabilidad sobre el uso recae en quien lo despliega.
-- Discrepancia de enlaces: el identificador de HuggingFace usa `Rick8444`, mientras que la sección de enlaces de la model card apunta a `https://github.com/Rick84444/nova-agent` (con un cuarto carácter adicional). Conviene comprobar cuál es el repositorio correcto antes de clonarlo.
+- Discrepancia de enlaces: el identificador de Hugging Face usa `Rick8444`, mientras que la sección de enlaces de la model card apunta a `https://github.com/Rick84444/nova-agent` (con un cuarto carácter adicional). Conviene comprobar cuál es el repositorio correcto antes de clonarlo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rick8444/nova-agent
+- Hugging Face: https://huggingface.co/Rick8444/nova-agent
 - GitHub (según la model card, con discrepancia en el identificador): https://github.com/Rick84444/nova-agent
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, demos o documentación complementaria) en la búsqueda web realizada; los resultados obtenidos no guardan relación con este proyecto.

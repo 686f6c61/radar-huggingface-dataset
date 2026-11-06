@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario sad1d21 y publicado en HuggingFace bajo licencia MIT. Según la model card, se trata de una versión actualizada que mejora significativamente la capacidad de razonamiento e inferencia gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo destaca en tareas de matemáticas, programación y lógica general, y su rendimiento se acerca al de otros modelos líderes, según los datos reportados por el autor.
+MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario sad1d21 y publicado en Hugging Face bajo licencia MIT. Según la model card, se trata de una versión actualizada que mejora significativamente la capacidad de razonamiento e inferencia gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo destaca en tareas de matemáticas, programación y lógica general, y su rendimiento se acerca al de otros modelos líderes, según los datos reportados por el autor.
 
 La información pública disponible es muy limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los datos de entrenamiento. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que podría tratarse de un modelo pequeño o de una prueba, aunque no hay confirmación. El pipeline declarado es `feature-extraction` y es compatible con la librería `transformers` de PyTorch.
 
@@ -98,4 +98,4 @@ La única comparativa disponible es la tabla de la model card, que enfrenta a My
 
 ## Enlaces
 
-- [HuggingFace: sad1d21/MyAwesomeModel-TestRepo](https://huggingface.co/sad1d21/MyAwesomeModel-TestRepo)
+- [Hugging Face: sad1d21/MyAwesomeModel-TestRepo](https://huggingface.co/sad1d21/MyAwesomeModel-TestRepo)

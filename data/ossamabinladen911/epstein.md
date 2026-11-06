@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ossamabinladen911/epstein` es un repositorio alojado en HuggingFace cuyo unico contenido verificable es una model card de una sola linea que declara la licencia Apache 2.0. No se especifica arquitectura, numero de parametros, longitud de contexto, idiomas, formato de pesos ni pipeline de inferencia. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el 29 de septiembre de 2026, sin posteriores revisiones.
+`ossamabinladen911/epstein` es un repositorio alojado en Hugging Face cuyo unico contenido verificable es una model card de una sola linea que declara la licencia Apache 2.0. No se especifica arquitectura, numero de parametros, longitud de contexto, idiomas, formato de pesos ni pipeline de inferencia. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado el 29 de septiembre de 2026, sin posteriores revisiones.
 
 El autor aparece bajo el identificador `ossamabinladen911`, sin informacion adicional sobre afiliacion, equipo de desarrollo o respaldo institucional. No hay paper, blog tecnico, repositorio de codigo ni demo asociados en la informacion disponible. Tampoco existe documentacion sobre datos de entrenamiento, proceso de ajuste (SFT, RLHF, DPO) o evaluaciones.
 
@@ -79,7 +79,7 @@ Cabe senalar que los resultados de busqueda web recuperados apuntan a proyectos 
 
 - Ausencia total de documentacion tecnica: no se puede determinar arquitectura, tamano, contexto, idiomas ni formato de pesos. Esto impide cualquier evaluacion seria de idoneidad.
 - Repositorio sin actividad: 0 descargas y 0 likes en la fecha de actualizacion registrada (29 de septiembre de 2026), lo que sugiere que no ha sido validado por la comunidad.
-- Posible inexistencia de pesos: el pipeline de HuggingFace aparece como "no disponible" y la model card no menciona artefactos. No hay evidencia de que el modelo sea descargable o ejecutable.
+- Posible inexistencia de pesos: el pipeline de Hugging Face aparece como "no disponible" y la model card no menciona artefactos. No hay evidencia de que el modelo sea descargable o ejecutable.
 - Riesgo de procedencia: la licencia Apache 2.0 declarada no garantiza que el autor tenga derechos sobre los pesos, especialmente si el modelo deriva de otro con licencia distinta. Verificar la cadena de custodia antes de cualquier uso comercial.
 - Riesgo reputacional y etico: el nombre del repositorio referencia a una persona vinculada a un caso judicial grave. Su uso en productos publicos o en atencion al cliente puede generar problemas legales y de imagen.
 - Riesgo de alucinacion: no evaluable, pero debe asumirse como no verificado en cualquier modelo sin benchmarks publicados.
@@ -90,7 +90,7 @@ Cabe senalar que los resultados de busqueda web recuperados apuntan a proyectos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ossamabinladen911/epstein
+- Modelo en Hugging Face: https://huggingface.co/ossamabinladen911/epstein
 - The Epstein Files AI: https://theepsteinfiles.ai/
 - AI-Powered Epstein Files Research Database: https://epstein-data.com/
 - GitHub - JoasASantos/Offensive-Security-AI-Models: https://github.com/JoasASantos/Offensive-Security-AI-Models

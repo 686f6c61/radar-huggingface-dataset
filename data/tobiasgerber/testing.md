@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tobiasgerber/testing` es un repositorio alojado en HuggingFace por el usuario tobiasgerber bajo licencia MIT. Por su identificador, su nombre y la ausencia de documentación sustantiva en la model card, se trata con toda probabilidad de un artefacto de prueba o experimento personal, no de un modelo publicado con garantías de producción. La model card se limita a declarar la licencia MIT, sin describir arquitectura, datos de entrenamiento, capacidades ni uso previsto.
+`tobiasgerber/testing` es un repositorio alojado en Hugging Face por el usuario tobiasgerber bajo licencia MIT. Por su identificador, su nombre y la ausencia de documentación sustantiva en la model card, se trata con toda probabilidad de un artefacto de prueba o experimento personal, no de un modelo publicado con garantías de producción. La model card se limita a declarar la licencia MIT, sin describir arquitectura, datos de entrenamiento, capacidades ni uso previsto.
 
 No hay información pública sobre arquitectura, número de parámetros, longitud de contexto, tokenizador, idiomas soportados ni formato de pesos. El repositorio registra cero descargas y cero likes en el momento de la consulta, y las fechas de creación y actualización (5 de noviembre de 2026, con apenas once minutos de diferencia) apuntan a una subida puntual sin mantenimiento posterior.
 
@@ -38,7 +38,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composici
 
 ## Casos de uso
 
-- Evaluación interna de pipelines: el repositorio podría emplearse como artefacto de prueba para validar flujos de carga de modelos en HuggingFace, siempre que se inspeccionen previamente los archivos presentes.
+- Evaluación interna de pipelines: el repositorio podría emplearse como artefacto de prueba para validar flujos de carga de modelos en Hugging Face, siempre que se inspeccionen previamente los archivos presentes.
 - Pruebas de integración en CI: útil únicamente como caso de prueba sintético para verificar que un sistema de descarga y despliegue funciona con repositorios mínimos.
 - Docencia y experimentación: puede servir como ejemplo de repositorio con model card incompleta para ilustrar buenas prácticas de documentación de modelos.
 - No se recomienda su uso en atención al cliente, generación de código en producción, análisis documental, generación aumentada por recuperación ni ninguna otra aplicación real, dada la ausencia total de especificaciones y garantías.
@@ -71,5 +71,5 @@ No disponible. Al no conocerse parámetros, contexto, arquitectura ni rendimient
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tobiasgerber/testing
+- Repositorio en Hugging Face: https://huggingface.co/tobiasgerber/testing
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

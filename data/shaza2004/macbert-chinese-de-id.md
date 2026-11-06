@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MacBERT-Chinese-de-id es un checkpoint de ajuste fino (fine-tuning) del encoder `hfl/chinese-macbert-base` para la tarea de desidentificación (de-identification) de entidades sensibles en texto en chino. Lo publica el usuario Shaza2004 en HuggingFace y está pensado para detectar y enmascarar información personal identificable (PII) en documentos en chino, una tarea crítica en entornos sanitarios, legales o de publicación de datos.
+MacBERT-Chinese-de-id es un checkpoint de ajuste fino (fine-tuning) del encoder `hfl/chinese-macbert-base` para la tarea de desidentificación (de-identification) de entidades sensibles en texto en chino. Lo publica el usuario Shaza2004 en Hugging Face y está pensado para detectar y enmascarar información personal identificable (PII) en documentos en chino, una tarea crítica en entornos sanitarios, legales o de publicación de datos.
 
 El modelo no es un generador de texto: es un encoder BERT-like (MacBERT) al que se le ha añadido una cabeza de extracción de entidades basada en la clase `GlobalPointer`, un mecanismo de decodificación de spans que modela los límites inicio-fin de cada entidad como una matriz y evita la ambigüedad típica de los esquemas BIO. El checkpoint publicado corresponde a la mejor época de validación (época 12), con una F1 de desarrollo de 0,9617, una precisión de 0,9403 y un recall de 0,9842.
 
-Es relevante ahora porque la desidentificación automática de PII en chino sigue siendo un cuello de botella para cumplir normativas de protección de datos en corpus clínicos y administrativos, y porque el uso de GlobalPointer sobre un encoder chino preentrenado ofrece una alternativa ligera (0,4 GB de repo) frente a soluciones basadas en LLM de mayor coste. El repositorio es de tamaño reducido y no incluye pipeline declarado, licencia ni idiomas en los metadatos de HuggingFace.
+Es relevante ahora porque la desidentificación automática de PII en chino sigue siendo un cuello de botella para cumplir normativas de protección de datos en corpus clínicos y administrativos, y porque el uso de GlobalPointer sobre un encoder chino preentrenado ofrece una alternativa ligera (0,4 GB de repo) frente a soluciones basadas en LLM de mayor coste. El repositorio es de tamaño reducido y no incluye pipeline declarado, licencia ni idiomas en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Es relevante ahora porque la desidentificación automática de PII en chino sigu
 
 El modelo parte de `hfl/chinese-macbert-base`, un encoder transformer de tipo BERT entrenado con la estrategia MacBERT (masked language modeling con corrección de errores mediante sustitución por palabras similares en lugar de tokens `[MASK]`). Sobre ese encoder se añade una capa `GlobalPointer`, que reformula la extracción de entidades como un problema de emparejamiento de spans: para cada tipo de entidad se aprende una matriz de puntuaciones inicio-fin y se decodifican los spans con puntuación superior a un umbral. Este enfoque elimina la necesidad de un esquema de etiquetado BIO y reduce errores en entidades anidadas o de longitud variable.
 
-El autor no detalla en la model card el volumen de datos de entrenamiento, la composición del corpus, ni si hubo aumento de datos o técnicas de regularización específicas. Sí se publican las métricas de la mejor época de validación (época 12): pérdida de entrenamiento 0,02336, pérdida de validación 0,03234, precisión 0,9403, recall 0,9842 y F1 0,9617. El checkpoint se distribuye como `state dict` de PyTorch, lo que implica que el usuario debe redefinir la clase `GlobalPointer` en su propio código para poder cargarlo; no se incluye un `AutoModel` estándar de HuggingFace ni un `pipeline` declarado.
+El autor no detalla en la model card el volumen de datos de entrenamiento, la composición del corpus, ni si hubo aumento de datos o técnicas de regularización específicas. Sí se publican las métricas de la mejor época de validación (época 12): pérdida de entrenamiento 0,02336, pérdida de validación 0,03234, precisión 0,9403, recall 0,9842 y F1 0,9617. El checkpoint se distribuye como `state dict` de PyTorch, lo que implica que el usuario debe redefinir la clase `GlobalPointer` en su propio código para poder cargarlo; no se incluye un `AutoModel` estándar de Hugging Face ni un `pipeline` declarado.
 
 ## Capacidades
 
@@ -86,6 +86,6 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shaza2004/MacBERT-Chinese-de-id
+- Modelo en Hugging Face: https://huggingface.co/Shaza2004/MacBERT-Chinese-de-id
 - Encoder base: https://huggingface.co/hfl/chinese-macbert-base
 - No se han encontrado en la búsqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo.

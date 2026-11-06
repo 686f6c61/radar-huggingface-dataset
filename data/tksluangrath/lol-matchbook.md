@@ -74,8 +74,8 @@ En la información disponible no se incluyen modelos comparables de la misma cat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tksluangrath/lol-matchbook
+- Hugging Face: https://huggingface.co/tksluangrath/lol-matchbook
 - Repo GitHub principal: https://github.com/tksluangrath/lol-matchbook
 - Dataset de datos de partidas: https://huggingface.co/datasets/BoostedJonP/league_of_legends_match_data
 - Repo adicional (lol-matchup-copilot): https://github.com/tksluangrath/lol-matchup-copilot
-- Perfil de modelos del autor en HuggingFace: https://huggingface.co/tksluangrath/models
+- Perfil de modelos del autor en Hugging Face: https://huggingface.co/tksluangrath/models

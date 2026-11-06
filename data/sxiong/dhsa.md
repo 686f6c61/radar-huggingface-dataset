@@ -82,6 +82,6 @@ DHSA se distingue por su carácter dinámico y jerárquico, que permite ajustar 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sxiong/DHSA
+- Hugging Face: https://huggingface.co/sxiong/DHSA
 - Paper (arXiv): https://arxiv.org/pdf/2510.24606
 - Repositorio oficial: https://github.com/xiongsiheng/DHSA

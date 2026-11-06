@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Synaptic-Edge-10M-1B es un modelo de generación de texto autorregresiva desarrollado por el usuario SurendraVB (con la etiqueta `emergent-ventures`) y publicado en HuggingFace bajo licencia MIT. No es un transformer convencional: se presenta como un motor de grafos de redes neuronales de impulsos (spiking neural network, SNN) con pesos 100 % discretos de 1 bit, sin backpropagation, sin estados del optimizador AdamW y sin autograd. Según su model card, ha sido entrenado sobre 1.000.071.730 tokens únicos y su artefacto completo de pesos ocupa 31,15 MB, lo que le permitiría residir íntegramente en caché L3 o SRAM.
+Synaptic-Edge-10M-1B es un modelo de generación de texto autorregresiva desarrollado por el usuario SurendraVB (con la etiqueta `emergent-ventures`) y publicado en Hugging Face bajo licencia MIT. No es un transformer convencional: se presenta como un motor de grafos de redes neuronales de impulsos (spiking neural network, SNN) con pesos 100 % discretos de 1 bit, sin backpropagation, sin estados del optimizador AdamW y sin autograd. Según su model card, ha sido entrenado sobre 1.000.071.730 tokens únicos y su artefacto completo de pesos ocupa 31,15 MB, lo que le permitiría residir íntegramente en caché L3 o SRAM.
 
 El problema que aborda es el coste de memoria y cómputo de los LLM: el autor afirma una compresión de 29,4x frente a FP32 (~914 MB equivalentes), un throughput de 1.241.304 tokens/s (0,81 µs por token) en una NVIDIA Tesla T4, un horizonte de contexto continuo de 131.072 tokens con memoria O(1) y una retención del 100 % en aprendizaje continuo sin olvido catastrófico. El entrenamiento completo de 1.000 millones de tokens se habría completado en 18,2 minutos (1.092,4 segundos) en esa misma GPU.
 
@@ -120,7 +120,7 @@ Se trata de cifras aportadas por el autor del modelo, sin verificación independ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SurendraVB/Synaptic-Edge-10M-1B
+- Modelo en Hugging Face: https://huggingface.co/SurendraVB/Synaptic-Edge-10M-1B
 - Dataset de entrenamiento: https://huggingface.co/datasets/SurendraVB/synaptic-edge-8k-1b
 - Paper, blog o repositorio adicional: no disponible
 - Resultados de la búsqueda web: no se han encontrado fuentes relevantes sobre el modelo; los resultados devueltos corresponden a páginas de fotografía Nikon sin relación con el contenido.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `chunxue-dev2026/rgb2infrared` se presenta en HuggingFace como un proyecto de traducción de imágenes del espectro visible (RGB) al infrarrojo, aunque la model card publicada no contiene ninguna descripción técnica ni documentación adicional. El repositorio fue creado en agosto de 2026 y no registra descargas ni valoraciones, lo que sugiere que se trata de un proyecto en fase inicial o de carácter experimental. La licencia declarada es MIT, lo que permitiría su uso comercial y modificación, pero la ausencia de especificaciones publicadas impide conocer su arquitectura, tamaño o rendimiento real.
+El modelo `chunxue-dev2026/rgb2infrared` se presenta en Hugging Face como un proyecto de traducción de imágenes del espectro visible (RGB) al infrarrojo, aunque la model card publicada no contiene ninguna descripción técnica ni documentación adicional. El repositorio fue creado en agosto de 2026 y no registra descargas ni valoraciones, lo que sugiere que se trata de un proyecto en fase inicial o de carácter experimental. La licencia declarada es MIT, lo que permitiría su uso comercial y modificación, pero la ausencia de especificaciones publicadas impide conocer su arquitectura, tamaño o rendimiento real.
 
 A partir del nombre y de los proyectos similares localizados en la web (como repositorios de GANs para conversión RGB a infrarrojo), es razonable inferir que se trata de un modelo generativo, probablemente basado en redes antagónicas, destinado a síntesis de imágenes térmicas o de infrarrojo cercano a partir de imágenes en color. Sin embargo, no existe información oficial que confirme esta hipótesis, por lo que cualquier afirmación al respecto debe considerarse especulativa. Hasta que el autor publique una model card completa, el modelo no puede evaluarse ni desplegarse con garantías.
 
@@ -21,7 +21,7 @@ A partir del nombre y de los proyectos similares localizados en la web (como rep
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna informacion sobre la arquitectura, el proceso de entrenamiento, los datos utilizados o las tecnicas de optimizacion. El repositorio de HuggingFace no incluye model card, ni enlaces a papers, ni codigo fuente. Los proyectos similares encontrados en la web emplean arquitecturas GAN como Pix2Pix, InfraGAN o ClawGAN para la traduccion RGB a infrarrojo, pero no hay evidencia de que este modelo siga ese enfoque. Tampoco se dispone de datos sobre el volumen de tokens o imagenes de entrenamiento, ni sobre el uso de tecnicas como RLHF o DPO (que no serian habituales en modelos de vision generativa). En resumen, la arquitectura y el entrenamiento son desconocidos.
+No se ha publicado ninguna informacion sobre la arquitectura, el proceso de entrenamiento, los datos utilizados o las tecnicas de optimizacion. El repositorio de Hugging Face no incluye model card, ni enlaces a papers, ni codigo fuente. Los proyectos similares encontrados en la web emplean arquitecturas GAN como Pix2Pix, InfraGAN o ClawGAN para la traduccion RGB a infrarrojo, pero no hay evidencia de que este modelo siga ese enfoque. Tampoco se dispone de datos sobre el volumen de tokens o imagenes de entrenamiento, ni sobre el uso de tecnicas como RLHF o DPO (que no serian habituales en modelos de vision generativa). En resumen, la arquitectura y el entrenamiento son desconocidos.
 
 ## Capacidades
 
@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para establecer una comparativa. Existen
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/chunxue-dev2026/rgb2infrared
+- Repositorio de Hugging Face: https://huggingface.co/chunxue-dev2026/rgb2infrared
 - Proyecto similar en GitHub (ylzy123/rgb2infrared): https://github.com/ylzy123/rgb2infrared
 - Articulo MDPI sobre traduccion RGB-NIR: https://www.mdpi.com/2313-433X/11/7/206
 - Repositorio de GANs RGB a infrarrojo (sahrishmustafa): https://github.com/sahrishmustafa/RGB-to-Infrared-GANs

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpjt/8xa100m40-lore-3-both-smart-init` es un modelo de lenguaje causal entrenado desde cero por Giles Thomas (usuario `gpjt` en HuggingFace), basado en la arquitectura estilo GPT-2 que Sebastian Raschka describe en su libro "Build a Large Language Model (from Scratch)". Se trata de un modelo base (no ajustado por instrucciones ni por preferencias humanas) de aproximadamente 100-111 millones de parametros, con una ventana de contexto de 1.024 tokens, 768 dimensiones de embedding, 12 capas y 12 cabezas de atencion multi-cabeza.
+`gpjt/8xa100m40-lore-3-both-smart-init` es un modelo de lenguaje causal entrenado desde cero por Giles Thomas (usuario `gpjt` en Hugging Face), basado en la arquitectura estilo GPT-2 que Sebastian Raschka describe en su libro "Build a Large Language Model (from Scratch)". Se trata de un modelo base (no ajustado por instrucciones ni por preferencias humanas) de aproximadamente 100-111 millones de parametros, con una ventana de contexto de 1.024 tokens, 768 dimensiones de embedding, 12 capas y 12 cabezas de atencion multi-cabeza.
 
 Su interes no esta en el rendimiento bruto, sino en la tecnica que experimenta: LoRE (Low Rank Embeddings), una descomposicion de bajo rango aplicada simultaneamente a las matrices de embedding de tokens y a la cabeza de salida. Con un rango de 128, esto reduce de forma notable el numero de parametros dedicados al vocabulario, que en un GPT-2 clasico dominan el recuento total. El modelo se entreno con unos 3.260 millones de tokens del dataset `gpjt/fineweb-gpt2-tokens`, un volumen calculado como el "Chinchilla-optimal" (~20x parametros) de la version sin LoRE, no de la version final.
 
@@ -33,7 +33,7 @@ Es un artefacto de investigacion y experimentacion, no un modelo para produccion
 
 La arquitectura es un transformer causal de solo decodificador con normalizacion previa y bloques de atencion multi-cabeza, siguiendo la implementacion didactica de Raschka. La innovacion respecto a un GPT-2 estandar es LoRE: tanto la matriz de embedding de tokens como la cabeza de salida (que en este modelo no estan atadas) se factorizan en dos matrices de bajo rango, con rango 128. Dado un vocabulario tipo GPT-2 de 50.257 entradas, una matriz completa de 50.257 x 768 ocupa unos 38,6 millones de parametros; con rango 128 se reduce a unos 6,5 millones, un ahorro agregado de aproximadamente 64 millones de parametros entre ambas matrices. Eso explica por que el recuento difiere respecto a la version sin LoRE, que rondaria los 163 millones de parametros (cifra que aparece en la prosa de la model card y de la que derivan los 3.260 millones de tokens de entrenamiento objetivo).
 
-El entrenamiento se realizo en 8 GPU A100 de 40 GiB de VRAM en Lambda, con un total de 3.260.252.160 tokens procesados, tamano de micro-lote 12, lote global 96, dropout 0,0, gradient clipping de 3,5, learning rate de 0,0014 con schedule, y weight decay de 0,01. No se menciona en la informacion disponible ninguna fase de RLHF, DPO, SFT ni ajuste por instrucciones: es un modelo estrictamente preentrenado. La tecnica de LoRE fue sugerida por el usuario `AndrewThompson1233` en una discusion publica de HuggingFace, y el autor la documenta en un blog post (anunciado como "coming soon" en el momento del lanzamiento).
+El entrenamiento se realizo en 8 GPU A100 de 40 GiB de VRAM en Lambda, con un total de 3.260.252.160 tokens procesados, tamano de micro-lote 12, lote global 96, dropout 0,0, gradient clipping de 3,5, learning rate de 0,0014 con schedule, y weight decay de 0,01. No se menciona en la informacion disponible ninguna fase de RLHF, DPO, SFT ni ajuste por instrucciones: es un modelo estrictamente preentrenado. La tecnica de LoRE fue sugerida por el usuario `AndrewThompson1233` en una discusion publica de Hugging Face, y el autor la documenta en un blog post (anunciado como "coming soon" en el momento del lanzamiento).
 
 ## Capacidades
 
@@ -76,10 +76,10 @@ Los valores de los modelos de referencia corresponden a especificaciones publica
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| gpjt/8xa100m40-lore-3-both-smart-init | 98,9-111,5 M (segun fuente) | 1.024 | Apache 2.0 | HuggingFace, requiere `trust_remote_code` | No disponible |
+| gpjt/8xa100m40-lore-3-both-smart-init | 98,9-111,5 M (segun fuente) | 1.024 | Apache 2.0 | Hugging Face, requiere `trust_remote_code` | No disponible |
 | GPT-2 small (OpenAI) | 124 M | 1.024 | Licencia MIT modificada | Ampliamente disponible, incluido en transformers | Si (evaluaciones publicadas por OpenAI) |
-| Pythia-160M (EleutherAI) | 160 M | 2.048 | Apache 2.0 | HuggingFace, transformers estandar | Si (suite de evaluacion de EleutherAI) |
-| SmolLM-135M (HuggingFace) | 135 M | 2.048 | Apache 2.0 | HuggingFace, transformers estandar | Si |
+| Pythia-160M (EleutherAI) | 160 M | 2.048 | Apache 2.0 | Hugging Face, transformers estandar | Si (suite de evaluacion de EleutherAI) |
+| SmolLM-135M (Hugging Face) | 135 M | 2.048 | Apache 2.0 | Hugging Face, transformers estandar | Si |
 
 Frente a estas alternativas, el modelo de `gpjt` no aporta ventajas de rendimiento ni de contexto; su unico diferenciador es la factorizacion LoRE y el hecho de ser un artefacto reproducible de investigacion. Ademas, al requerir codigo personalizado, presenta mas friccion de integracion que GPT-2, Pythia o SmolLM, que funcionan con transformers estandar.
 
@@ -99,7 +99,7 @@ Frente a estas alternativas, el modelo de `gpjt` no aporta ventajas de rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gpjt/8xa100m40-lore-3-both-smart-init
+- Modelo en Hugging Face: https://huggingface.co/gpjt/8xa100m40-lore-3-both-smart-init
 - Dataset de entrenamiento: https://huggingface.co/datasets/gpjt/fineweb-gpt2-tokens
 - Repositorio del autor: https://github.com/gpjt/ddp-base-model-from-scratch
 - Cuaderno de fine-tuning: https://github.com/gpjt/ddp-base-model-from-scratch/blob/main/hf_train.ipynb

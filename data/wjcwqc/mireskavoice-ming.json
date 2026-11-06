@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "wjcwqc/MireskaVoice-ming",
+  "slug": "wjcwqc-mireskavoice-ming",
+  "author": "wjcwqc",
+  "url": "https://huggingface.co/wjcwqc/MireskaVoice-ming",
+  "created_at": "2026-11-04T09:26:19.000Z",
+  "updated_at": "2026-11-04T10:31:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "tts",
+    "voice-cloning",
+    "ming-tts",
+    "lora",
+    "finetune",
+    "dota2",
+    "text-to-speech",
+    "zh",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5475289665,
+  "storage_human": "5.5 GB",
+  "base_model": "inclusionAI/Ming-3.0-tts-0.5b",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wjcwqc/MireskaVoice-ming · Hugging Face",
+      "url": "https://huggingface.co/wjcwqc/MireskaVoice-ming",
+      "snippet": "wjcwqc / MireskaVoice-ming Like 0 Text-to-Speech ONNX Safetensors Chinese tts voice-cloning ming-tts lora finetune dota2 License:mit Model card FilesFiles and versions xet Community Copy to bucket MireskaVoice (Ming-3.0-tts 版) 目录结构 使用方法 效果评估（20 条留出文本，真人片段互相相似度基线 0.6994） 训练 ..."
+    },
+    {
+      "title": "wjcwqc/MireskaVoice · Hugging Face",
+      "url": "https://huggingface.co/wjcwqc/MireskaVoice",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

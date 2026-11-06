@@ -6,7 +6,7 @@ SmolLM2-135M-Instruct_rai_1.9.0_npu es una distribucion optimizada de SmolLM2-13
 
 El modelo base es un transformer decoder-only de 135 millones de parametros con una ventana de contexto de 8.192 tokens, entrenado por Hugging Face sobre 2 billones de tokens y afinado con instrucciones. Su tamano reducido lo hace especialmente adecuado para despliegue en el borde (edge), donde los recursos de memoria y computo son limitados. AMD lo redistribuye como artefacto listo para produccion en PC con IA local, no como un modelo nuevo.
 
-La relevancia de esta ficha radica en que ejemplifica la tendencia de los fabricantes de silicio a publicar modelos preoptimizados para su hardware especifico. El acceso esta restringido en HuggingFace (gated), lo que implica aceptar condiciones de uso antes de la descarga. La licencia del modelo base es Apache 2.0, pero la distribucion concreta de AMD anade requisitos de aceptacion que conviene revisar.
+La relevancia de esta ficha radica en que ejemplifica la tendencia de los fabricantes de silicio a publicar modelos preoptimizados para su hardware especifico. El acceso esta restringido en Hugging Face (gated), lo que implica aceptar condiciones de uso antes de la descarga. La licencia del modelo base es Apache 2.0, pero la distribucion concreta de AMD anade requisitos de aceptacion que conviene revisar.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha radica en que ejemplifica la tendencia de los fabric
 | Longitud de contexto | 8.192 tokens (heredado de SmolLM2-135M) |
 | Tipos de cuantizacion | Cuantizacion Quark para NPU Ryzen AI (precision exacta no disponible) |
 | Idiomas soportados | Ingles (en) |
-| Licencia | Apache 2.0 (acceso restringido/gated en HuggingFace) |
+| Licencia | Apache 2.0 (acceso restringido/gated en Hugging Face) |
 | Formato de pesos | ONNX (optimizado para runtime Ryzen AI 1.9.0) |
 | Tamano del repositorio | 0,3 GB |
 | Pipeline | text-generation |
@@ -80,7 +80,7 @@ La comparativa se limita a caracteristicas estructurales; no se dispone de datos
 - Modelo de 135M parametros: capacidad de razonamiento, coherencia en conversaciones largas y precision factica muy limitadas en comparacion con modelos de mayor tamano; alta propension a alucinaciones en preguntas abiertas.
 - Solo ingles: no soporta castellano ni otros idiomas de forma fiable.
 - Ventana de contexto de 8K: suficiente para tareas locales, pero insuficiente para documentos extensos o conversaciones muy largas.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de la descarga; revisar los terminos especificos de la distribucion de AMD, que pueden anadir requisitos sobre los de la licencia Apache 2.0 del modelo base.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de la descarga; revisar los terminos especificos de la distribucion de AMD, que pueden anadir requisitos sobre los de la licencia Apache 2.0 del modelo base.
 - Dependencia de hardware y runtime: el paquete esta atado al runtime Ryzen AI 1.9.0 y a la NPU de AMD; no es portable a otros aceleradores sin reconversion.
 - La cuantizacion Quark puede degradar la calidad respecto al modelo original; no se han publicado evaluaciones de esta perdida.
 - Sin soporte documentado de tool calling ni de agentes; no recomendado para flujos automatizados que requieran invocar funciones.
@@ -88,7 +88,7 @@ La comparativa se limita a caracteristicas estructurales; no se dispone de datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/SmolLM2-135M-Instruct_rai_1.9.0_npu
+- Modelo en Hugging Face: https://huggingface.co/amd/SmolLM2-135M-Instruct_rai_1.9.0_npu
 - Modelo base SmolLM2-135M-Instruct: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Repositorio SmolLM2 (Hugging Face): https://github.com/huggingface/smollm
 - Paper SmolLM2: https://arxiv.org/abs/2502.02737

@@ -4,7 +4,7 @@
 
 `johnsonashley/notes-few-shot-multimodal` no es un modelo entrenado, sino un repositorio de notas de investigacion. La propia model card lo declara explicitamente: contiene una nota de trabajo sobre *Few Shot Multimodal* que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y aclara que "no se presenta como un paper completado ni como una release de modelos entrenados". El repositorio incluye unicamente dos ficheros, `summary.md` (artefacto principal) y `README.md`.
 
-El autor es el usuario de HuggingFace `johnsonashley`, sin publicaciones previas destacadas asociadas y con 0 descargas y 0 likes en el momento de la consulta. La licencia declarada es CC-BY-4.0, lo que permite uso y adaptacion con atribucion. No hay pipeline declarado, ni idiomas soportados, ni checkpoint funcional.
+El autor es el usuario de Hugging Face `johnsonashley`, sin publicaciones previas destacadas asociadas y con 0 descargas y 0 likes en el momento de la consulta. La licencia declarada es CC-BY-4.0, lo que permite uso y adaptacion con atribucion. No hay pipeline declarado, ni idiomas soportados, ni checkpoint funcional.
 
 Es relevante unicamente como material metodologico: propone un marco de comparacion con baselines emparejados, checks de reproducibilidad, modos de fallo y preguntas abiertas para investigacion en aprendizaje few-shot multimodal. Cualquier evaluacion de capacidades, benchmarks o despliegue queda fuera de su alcance por definicion.
 
@@ -84,7 +84,7 @@ No disponible. El repositorio no es un modelo y no existe una categoria de model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/johnsonashley/notes-few-shot-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/johnsonashley/notes-few-shot-multimodal
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

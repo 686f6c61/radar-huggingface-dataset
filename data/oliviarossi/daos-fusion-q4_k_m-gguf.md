@@ -72,7 +72,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. Como referenci
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/OliviaRossi/DAOS-Fusion-Q4_K_M-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/OliviaRossi/DAOS-Fusion-Q4_K_M-GGUF
 - Modelo base (safetensors): https://huggingface.co/OliviaRossi/DAOS-Fusion
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
 - Guia de cuantizacion GGUF (referencia general): https://willitrunai.com/blog/quantization-guide-gguf-explained

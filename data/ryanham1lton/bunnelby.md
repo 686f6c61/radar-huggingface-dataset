@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bunnelby es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es extremadamente limitada: la model card asociada unicamente contiene el bloque de metadatos de licencia, sin ningun texto descriptivo, y el repositorio ocupa 0,1 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos parcial. No se especifica arquitectura, numero de parametros, contexto ni idiomas soportados.
+Bunnelby es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es extremadamente limitada: la model card asociada unicamente contiene el bloque de metadatos de licencia, sin ningun texto descriptivo, y el repositorio ocupa 0,1 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos parcial. No se especifica arquitectura, numero de parametros, contexto ni idiomas soportados.
 
 El modelo no cuenta con descargas ni likes en el momento de la consulta, y no tiene pipeline declarado, por lo que no es posible determinar si se trata de un modelo de generacion de texto, vision u otra tarea. La fecha de creacion indicada es 2026-11-03, un dato que conviene tratar con cautela dado que puede reflejar un error de metadatos o una publicacion programada.
 
@@ -23,7 +23,7 @@ En consecuencia, esta ficha se limita a documentar los pocos datos verificables 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo. La model card no incluye descripcion tecnica, y los metadatos de HuggingFace no declaran pipeline ni framework. El tamano del repositorio (0,1 GB) es compatible con un modelo de muy pocos parametros o con pesos parciales, pero no permite inferir la arquitectura ni el volumen de entrenamiento.
+No se dispone de informacion sobre la arquitectura del modelo. La model card no incluye descripcion tecnica, y los metadatos de Hugging Face no declaran pipeline ni framework. El tamano del repositorio (0,1 GB) es compatible con un modelo de muy pocos parametros o con pesos parciales, pero no permite inferir la arquitectura ni el volumen de entrenamiento.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la posible aplicacion de RLHF o DPO, ni innovaciones tecnicas como atencion lineal o decodificacion especulativa. Toda esta seccion queda como no disponible.
 
@@ -44,7 +44,7 @@ Dado que no se dispone de informacion sobre las capacidades del modelo, no es po
 - Pruebas de pipelines de inferencia: validar herramientas de despliegue (llama.cpp, vLLM) con un modelo de peso reducido.
 - Fine-tuning exploratorio: partir de un checkpoint pequeno para experimentar con tecnicas de ajuste.
 - Benchmarking interno: incluir el modelo como referencia en comparativas propias.
-- Educacion: emplearlo como ejemplo de publicacion de modelos en HuggingFace y gestion de licencias.
+- Educacion: emplearlo como ejemplo de publicacion de modelos en Hugging Face y gestion de licencias.
 
 En todos los casos, la ausencia de documentacion tecnica obliga a realizar una evaluacion empirica antes de cualquier uso en produccion.
 
@@ -76,5 +76,5 @@ No disponible. No se dispone de informacion suficiente sobre Bunnelby (parametro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Bunnelby
+- Hugging Face: https://huggingface.co/Ryanham1lton/Bunnelby
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

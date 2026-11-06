@@ -98,7 +98,7 @@ En rendimiento no es posible comparar: esta derivada no publica ninguna metrica 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NadevA23/Apex-Coder-7B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/NadevA23/Apex-Coder-7B-GGUF
 - Unsloth (herramienta declarada para el finetune y la conversion a GGUF): https://github.com/unslothai/unsloth
 - Modelo base declarado en los nombres de archivo: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - llama.cpp (motor de inferencia GGUF y comandos `llama-cli` / `llama-mtmd-cli`): https://github.com/ggml-org/llama.cpp

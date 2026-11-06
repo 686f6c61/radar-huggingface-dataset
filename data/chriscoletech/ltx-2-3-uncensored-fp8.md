@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChrisColeTech/LTX-2.3-uncensored-fp8
+- Hugging Face: https://huggingface.co/ChrisColeTech/LTX-2.3-uncensored-fp8
 - Blog de Siray sobre LTX 2.3: https://blog.siray.ai/ltx-2-3-nsfw/
 - Pagina de LTX (Lightricks): https://ltx.io/model/ltx-2-3
 - GitHub de workflows ComfyUI: https://github.com/minflamingo/ltx-2.3-uc

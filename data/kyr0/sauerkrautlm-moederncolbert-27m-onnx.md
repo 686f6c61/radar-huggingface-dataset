@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SauerkrautLM-MoEdernColBERT-27M-ONNX es la exportacion a formato ONNX del modelo de recuperacion VAGOsolutions/SauerkrautLM-MoEdernColBERT-27M, un codificador ColBERT de tipo late-interaction con arquitectura de mezcla de expertos (MoE) y aproximadamente 27 millones de parametros. Lo publica el usuario kyr0 en HuggingFace y su proposito es permitir inferencia en CPU mediante ONNX Runtime en Python, Node.js y navegadores (WASM), allanando el despliegue de recuperacion multi-vector en entornos sin GPU.
+SauerkrautLM-MoEdernColBERT-27M-ONNX es la exportacion a formato ONNX del modelo de recuperacion VAGOsolutions/SauerkrautLM-MoEdernColBERT-27M, un codificador ColBERT de tipo late-interaction con arquitectura de mezcla de expertos (MoE) y aproximadamente 27 millones de parametros. Lo publica el usuario kyr0 en Hugging Face y su proposito es permitir inferencia en CPU mediante ONNX Runtime en Python, Node.js y navegadores (WASM), allanando el despliegue de recuperacion multi-vector en entornos sin GPU.
 
 El modelo transforma identificadores de tokens en vectores por token de 128 dimensiones normalizados en L2, que se puntuan con el operador MaxSim de ColBERT para comparar una consulta con un pasaje. Frente al checkpoint original en Sentence Transformers, esta version ofrece cinco precisiones (fp32, fp16, q8, int8 y q4) con contratos de paridad definidos entre runtimes, lo que facilita su integracion en pipelines de busqueda semantica multiplataforma.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento publicados para este modelo ni para altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kyr0/SauerkrautLM-MoEdernColBERT-27M-ONNX
+- Hugging Face: https://huggingface.co/kyr0/SauerkrautLM-MoEdernColBERT-27M-ONNX
 - Modelo base: https://huggingface.co/VAGOsolutions/SauerkrautLM-MoEdernColBERT-27M
 - Revision del modelo base: `d2b7b1feaaac1bf87510ca9525208c3daeabcc5a`
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales.

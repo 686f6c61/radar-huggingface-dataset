@@ -54,7 +54,7 @@ No se dispone de información comparativa con otros modelos en la documentación
 
 ## Enlaces
 
-- [HuggingFace: GMorgulis/Qwen2.5-7B-Instruct-owl-obfa-ep2.42](https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-owl-obfa-ep2.42)
+- [Hugging Face: GMorgulis/Qwen2.5-7B-Instruct-owl-obfa-ep2.42](https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-owl-obfa-ep2.42)
 - [Modelo base: Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
 - [Repositorio TRL](https://github.com/huggingface/trl)
 - [Otro modelo del autor: Qwen2.5-7B-Instruct-owl-alpha3.5-layer16-end-ft0.42](https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-owl-alpha3.5-layer16-end-ft0.42)

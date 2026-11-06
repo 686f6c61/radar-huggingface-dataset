@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dqn-SpaceInvadersNoFrameskip-v4 es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) para jugar al entorno Atari SpaceInvadersNoFrameskip-v4. Lo publica el usuario maheeswar en HuggingFace y se ha creado en el marco del curso Deep RL de Hugging Face, por lo que su funcion principal es didactica: servir como ejemplo reproducible de un agente DQN entrenado con la libreria stable-baselines3.
+dqn-SpaceInvadersNoFrameskip-v4 es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) para jugar al entorno Atari SpaceInvadersNoFrameskip-v4. Lo publica el usuario maheeswar en Hugging Face y se ha creado en el marco del curso Deep RL de Hugging Face, por lo que su funcion principal es didactica: servir como ejemplo reproducible de un agente DQN entrenado con la libreria stable-baselines3.
 
 A diferencia de un modelo de lenguaje, este artefacto no genera texto ni procesa lenguaje natural: es una politica entrenada que recibe observaciones del entorno (frames del juego) y devuelve una accion discreta entre las disponibles en el entorno. Resuelve, por tanto, un problema de control secuencial con recompensa diferida, y su relevancia es de referencia y comparacion dentro de la investigacion en RL.
 
@@ -24,8 +24,8 @@ El autor declara una recompensa media de 350,00 +/- 20,00 en el entorno objetivo
 | Algoritmo | DQN |
 | Libreria | stable-baselines3 |
 | Espacio de acciones | discreto, definido por el entorno SpaceInvadersNoFrameskip-v4 |
-| Tamano del repositorio | 0,0 GB (segun la informacion de HuggingFace) |
-| Fecha de creacion | 2026-09-30 (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun la informacion de Hugging Face) |
+| Fecha de creacion | 2026-09-30 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -64,7 +64,7 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 ## Requisitos de hardware
 
-- El repositorio ocupa 0,0 GB segun HuggingFace, lo que indica un checkpoint de tamano muy reducido, coherente con una red Q convolucional de complejidad baja.
+- El repositorio ocupa 0,0 GB segun Hugging Face, lo que indica un checkpoint de tamano muy reducido, coherente con una red Q convolucional de complejidad baja.
 - Inferencia viable en CPU: no se requiere GPU para ejecutar la politica, dado el reducido coste computacional del aproximador.
 - GPU recomendadas: no disponibles; cualquier GPU consumer permitiria acelerar la inferencia y, sobre todo, el reentrenamiento con stable-baselines3, pero no se especifican modelos concretos.
 - Cabe en GPU de consumo: si, segun el tamano declarado del repositorio, aunque no se aportan mediciones de VRAM.
@@ -75,9 +75,9 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 | Modelo | Entorno | Algoritmo | Recompensa declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| maheeswar/dqn-SpaceInvadersNoFrameskip-v4 | SpaceInvadersNoFrameskip-v4 | DQN | 350,00 +/- 20,00 | no disponible | HuggingFace |
-| zhaojizhang/dqn-SpaceInvadersNoFrameskip-v4 | SpaceInvadersNoFrameskip-v4 | DQN | no disponible | no disponible | HuggingFace |
-| afedyanin/dqn-SpaceInvadersNoFrameskip-v4 | SpaceInvadersNoFrameskip-v4 | DQN (entrenado con RL Zoo) | no disponible | no disponible | HuggingFace |
+| maheeswar/dqn-SpaceInvadersNoFrameskip-v4 | SpaceInvadersNoFrameskip-v4 | DQN | 350,00 +/- 20,00 | no disponible | Hugging Face |
+| zhaojizhang/dqn-SpaceInvadersNoFrameskip-v4 | SpaceInvadersNoFrameskip-v4 | DQN | no disponible | no disponible | Hugging Face |
+| afedyanin/dqn-SpaceInvadersNoFrameskip-v4 | SpaceInvadersNoFrameskip-v4 | DQN (entrenado con RL Zoo) | no disponible | no disponible | Hugging Face |
 | Harshit2000-sudo/dqn-SpaceInvadersNoFrameskip-v4 | SpaceInvadersNoFrameskip-v4 | DQN (entrenado con RL Zoo) | no disponible | no disponible | GitHub |
 
 La comparacion cuantitativa no es posible con los datos disponibles, ya que las alternativas encontradas no publican la recompensa obtenida en la informacion recopilada. La diferencia principal documentada es el marco de entrenamiento: los modelos de afedyanin y Harshit2000-sudo mencionan el uso de RL Zoo, mientras que el modelo analizado se asocia al curso Deep RL de Hugging Face.
@@ -97,7 +97,7 @@ La comparacion cuantitativa no es posible con los datos disponibles, ya que las 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maheeswar/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/maheeswar/dqn-SpaceInvadersNoFrameskip-v4
 - Modelo comparable de zhaojizhang: https://huggingface.co/zhaojizhang/dqn-SpaceInvadersNoFrameskip-v4
 - Modelo comparable de afedyanin: https://huggingface.co/afedyanin/dqn-SpaceInvadersNoFrameskip-v4
 - Repositorio de Harshit2000-sudo: https://github.com/Harshit2000-sudo/dqn-SpaceInvadersNoFrameskip-v4

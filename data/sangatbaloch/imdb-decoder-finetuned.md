@@ -83,9 +83,9 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sangatbaloch/imdb-decoder-finetuned | 81,9 M | 256 (entrenamiento) | Clasificación sentimiento IMDb | no disponible | HuggingFace |
-| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 | Clasificación sentimiento | Apache 2.0 | HuggingFace |
-| roberta-base (fine-tuned en IMDb, variantes comunitarias) | ~125 M | 512 | Clasificación sentimiento | MIT (base) | HuggingFace |
+| sangatbaloch/imdb-decoder-finetuned | 81,9 M | 256 (entrenamiento) | Clasificación sentimiento IMDb | no disponible | Hugging Face |
+| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 | Clasificación sentimiento | Apache 2.0 | Hugging Face |
+| roberta-base (fine-tuned en IMDb, variantes comunitarias) | ~125 M | 512 | Clasificación sentimiento | MIT (base) | Hugging Face |
 
 La comparación directa de rendimiento no está disponible en la información proporcionada: no se han publicado métricas de estos alternativos en el mismo subconjunto de 1000 muestras, por lo que no es posible afirmar superioridad o inferioridad numérica.
 
@@ -103,6 +103,6 @@ La comparación directa de rendimiento no está disponible en la información pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sangatbaloch/imdb-decoder-finetuned
+- Modelo en Hugging Face: https://huggingface.co/sangatbaloch/imdb-decoder-finetuned
 - Modelo base: https://huggingface.co/distilbert/distilgpt2
 - Dataset: https://huggingface.co/datasets/stanfordnlp/imdb

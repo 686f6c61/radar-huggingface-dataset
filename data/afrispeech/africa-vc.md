@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativos entre africa-vc y otras alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AfriSpeech/africa-vc
+- Modelo en Hugging Face: https://huggingface.co/AfriSpeech/africa-vc
 - Dataset de entrenamiento: https://huggingface.co/datasets/AfriSpeech/multivoice-synthetic-speech
 - Proyecto y libreria africa-vc: https://github.com/AfriSpeech/africa-vc
 - Seed-VC (proyecto base): https://github.com/Plachtaa/seed-vc

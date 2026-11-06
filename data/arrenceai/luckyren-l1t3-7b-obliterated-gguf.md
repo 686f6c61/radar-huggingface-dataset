@@ -80,9 +80,9 @@ La principal diferencia entre LUCKYREN-L1T3 y los otros dos es la orientacion de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArRENCEAI/LUCKYREN-L1T3-7b-OBLITERATED-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ArRENCEAI/LUCKYREN-L1T3-7b-OBLITERATED-GGUF
 - Modelo base (safetensors): https://huggingface.co/ArRENCEAI/Qwen2.5-7b-Instruct-Obliterated-Improved
-- Organizacion ArRENCE AI en HuggingFace: https://huggingface.co/ArRENCEAI
+- Organizacion ArRENCE AI en Hugging Face: https://huggingface.co/ArRENCEAI
 - GitHub de ArRENCEAI: https://github.com/ArRENCEAI
 - Web de ArRENCE AI: https://arrenceai.com
 - Chat de ArRENCE AI: https://webblocalai.com

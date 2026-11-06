@@ -93,7 +93,7 @@ No se dispone de comparativas con otros modelos cuantizados de la misma familia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Minachist/Qwen3.8-27B-INT8-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/Minachist/Qwen3.8-27B-INT8-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de AutoRound: https://github.com/intel/auto-round
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE

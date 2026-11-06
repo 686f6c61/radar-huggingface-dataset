@@ -25,7 +25,7 @@ Es relevante para investigadores y desarrolladores interesados en mitigar alucin
 
 No se han publicado detalles específicos sobre la arquitectura interna de este modelo. Se sabe que es un fine-tune de `unsloth/Olmo-3-7B-Instruct`, que a su vez es una versión de OLMo 3 de 7B parámetros. Según el paper de OLMo 3 (arXiv:2512.13961), la familia OLMo 3 está diseñada para razonamiento de contexto largo, function calling, código y seguimiento de instrucciones, pero no se dispone de información técnica concreta sobre el uso de atención lineal, MoE u otras innovaciones.
 
-El entrenamiento se realizó con las librerías Unsloth y HuggingFace TRL, lo que indica que se usaron técnicas de ajuste fino eficientes. El nombre del modelo sugiere que se empleó una técnica de *inoculación de alucinaciones*: probablemente se añadieron ejemplos o instrucciones en el prompt para reducir la probabilidad de que el modelo genere respuestas falsas o inventadas. No hay detalles sobre el dataset de entrenamiento, el número de tokens o si se aplicó RLHF o DPO.
+El entrenamiento se realizó con las librerías Unsloth y Hugging Face TRL, lo que indica que se usaron técnicas de ajuste fino eficientes. El nombre del modelo sugiere que se empleó una técnica de *inoculación de alucinaciones*: probablemente se añadieron ejemplos o instrucciones en el prompt para reducir la probabilidad de que el modelo genere respuestas falsas o inventadas. No hay detalles sobre el dataset de entrenamiento, el número de tokens o si se aplicó RLHF o DPO.
 
 ## Capacidades
 
@@ -70,7 +70,7 @@ No se dispone de información comparativa específica para este modelo. Al ser u
 
 ## Enlaces
 
-- [HuggingFace: longtermrisk/OLMo-3-7B-target-only-no-hallucination-inoculation-prompting-seed3](https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-inoculation-prompting-seed3)
+- [Hugging Face: longtermrisk/OLMo-3-7B-target-only-no-hallucination-inoculation-prompting-seed3](https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-inoculation-prompting-seed3)
 - [Modelo base: unsloth/Olmo-3-7B-Instruct](https://huggingface.co/unsloth/Olmo-3-7B-Instruct)
 - [Paper OLMo 3 (arXiv)](https://arxiv.org/abs/2512.13961)
 - [Variante seed5](https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-inoculation-prompting-seed5)

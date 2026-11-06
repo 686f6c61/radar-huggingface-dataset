@@ -87,7 +87,7 @@ No se dispone de modelos comparables en la informacion proporcionada. Se trata d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TunahanCnr/se-primer-v2
+- Modelo en Hugging Face: https://huggingface.co/TunahanCnr/se-primer-v2
 - Repositorio de codigo, entrenamiento y tests: https://github.com/TunahanCnrYildiz/se-primer-v2
 - Descarga del modelo fijada a commit: https://huggingface.co/TunahanCnr/se-primer-v2/resolve/<commit>/model.onnx
 - Documento de release y rollback: `RELEASE.md` en el repositorio de GitHub

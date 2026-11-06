@@ -38,7 +38,7 @@ La configuracion por defecto del experimento utiliza el optimizador AdamW con un
 - Investigacion academica en arquitecturas hibridas: el modelo permite estudiar la interaccion entre capas convolucionales y atencion multi-query en un contexto de aprendizaje contrastivo, con un coste computacional minimo.
 - Pruebas de concepto en aprendizaje contrastivo: sirve como punto de partida para experimentar con funciones de perdida contrastivas (p. ej., InfoNCE) y evaluar su comportamiento en una arquitectura hibrida.
 - Educacion en deep learning: por su tamano reducido y codigo transparente, es adecuado para que estudiantes implementen y depuren pipelines de entrenamiento contrastivo.
-- Desarrollo de adaptadores para carga personalizada: al ser una implementacion a medida, obliga a escribir adaptadores explicitos, lo que resulta util para practicar integracion de modelos personalizados en frameworks como HuggingFace.
+- Desarrollo de adaptadores para carga personalizada: al ser una implementacion a medida, obliga a escribir adaptadores explicitos, lo que resulta util para practicar integracion de modelos personalizados en frameworks como Hugging Face.
 - Reproducibilidad de experimentos: el repositorio incluye configuracion y argumentos de entrenamiento, lo que permite reproducir pruebas de humo y verificar la correccion del codigo.
 - Evaluacion de metodos de regularizacion: la combinacion de BatchNorm y GELU tanh ofrece un terreno para probar tecnicas de regularizacion y normalizacion en arquitecturas pequenas.
 
@@ -58,12 +58,12 @@ No se dispone de modelos comparables en la misma categoria. Con 16.576 parametro
 ## Limitaciones y advertencias
 - El checkpoint incluido no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 - No se puede utilizar para ninguna tarea de produccion; es exclusivamente un punto de partida experimental.
-- La implementacion es personalizada y requiere un adaptador explicito para cargarse con APIs genericas de HuggingFace.
+- La implementacion es personalizada y requiere un adaptador explicito para cargarse con APIs genericas de Hugging Face.
 - No hay garantias de que la arquitectura funcione correctamente sin un entrenamiento completo; el autor recomienda validar con al menos tres semillas y una linea base de capacidad equivalente.
 - La licencia Apache 2.0 permite uso comercial, pero los terminos de las fuentes de datos externas deben revisarse por separado si se entrena con datasets de terceros.
 - No se proporcionan datos sobre sesgos, alucinaciones o limitaciones de contexto porque el modelo no ha sido entrenado.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/hasi-moto/contrastive92
+- Repositorio Hugging Face: https://huggingface.co/hasi-moto/contrastive92
 - Repositorio de referencia para aprendizaje contrastivo (Nomic AI): https://github.com/nomic-ai/contrastors
 - Repositorio CLIP (OpenAI): https://github.com/openai/CLIP

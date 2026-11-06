@@ -45,7 +45,7 @@ La capa añadida en este repositorio es la cuantización: se aplicó Intel AutoR
 - Evaluación de modelos afinados por DPO: sirve para comparar el comportamiento de Tulu 3 8B DPO frente a otras variantes en tareas de preferencia y alineación, en un formato ligero.
 - Inferencia en el borde (edge) con NPU: en equipos Core Ultra, la conversión vía OpenVINO permite ejecutar el modelo localmente para aplicaciones de asistencia offline.
 - Investigación sobre cuantización: el repositorio documenta la receta completa de AutoRound (parámetros, calibración, versiones), lo que lo convierte en un caso reproducible para estudiar el impacto de INT8 gs64 simétrico en un modelo de 8B.
-- Generación de texto en pipelines de transformers: al cargarse con AutoModelForCausalLM y device_map="auto", puede integrarse en flujos existentes de HuggingFace para tareas de generación condicionada por chat.
+- Generación de texto en pipelines de transformers: al cargarse con AutoModelForCausalLM y device_map="auto", puede integrarse en flujos existentes de Hugging Face para tareas de generación condicionada por chat.
 - Docencia y experimentación con licencia permisiva: al ser Apache 2.0, puede usarse en entornos académicos y comerciales sin las restricciones de otras licencias.
 
 ## Benchmarks y rendimiento
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-DPO-auto_gptq-int8-gs64-sym | 2.933.395.456 (safetensors) | No disponible | INT8 gs64 simétrica (GPTQ/AutoRound) | Apache 2.0 | HuggingFace, 19 descargas |
-| allenai/Llama-3.1-Tulu-3-8B-DPO (base) | 8B (nominal) | No disponible en esta ficha | bfloat16 | Apache 2.0 | HuggingFace (modelo original de AI2) |
-| Llama 3.1 8B Instruct (Meta) | 8B | 128K (según documentación de Meta) | bfloat16 | Llama 3.1 Community License | HuggingFace |
+| fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-DPO-auto_gptq-int8-gs64-sym | 2.933.395.456 (safetensors) | No disponible | INT8 gs64 simétrica (GPTQ/AutoRound) | Apache 2.0 | Hugging Face, 19 descargas |
+| allenai/Llama-3.1-Tulu-3-8B-DPO (base) | 8B (nominal) | No disponible en esta ficha | bfloat16 | Apache 2.0 | Hugging Face (modelo original de AI2) |
+| Llama 3.1 8B Instruct (Meta) | 8B | 128K (según documentación de Meta) | bfloat16 | Llama 3.1 Community License | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-DPO-auto_gptq-int8-gs64-sym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-DPO-auto_gptq-int8-gs64-sym
 - Modelo base: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-DPO
 - Intel AutoRound (GitHub): https://github.com/intel/auto-round
 - Pipeline de cuantización: https://git.epicdynamic.com/auto-round-pipeline

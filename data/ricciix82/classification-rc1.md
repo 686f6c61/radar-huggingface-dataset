@@ -28,7 +28,7 @@ El repositorio no incluye datos de entrenamiento ni detalles sobre el dataset ut
 ## Capacidades
 
 - **Clasificación de imágenes**: el modelo está diseñado para tareas de clasificación, pero no se ha entrenado, por lo que no puede realizar ninguna clasificación real en este estado.
-- **Entrenamiento desde cero**: el script `finetune.py` permite lanzar un proceso de entrenamiento o ajuste fino, aunque requiere adaptación para cargar los pesos mediante APIs genéricas de HuggingFace.
+- **Entrenamiento desde cero**: el script `finetune.py` permite lanzar un proceso de entrenamiento o ajuste fino, aunque requiere adaptación para cargar los pesos mediante APIs genéricas de Hugging Face.
 - **Pruebas de humo**: el checkpoint de inicialización sirve para verificar que el pipeline de carga y ejecución funciona, no para obtener predicciones útiles.
 - **Personalización de arquitectura**: el archivo `config.json` permite modificar la configuración de atención, normalización y activación para experimentar con variantes.
 
@@ -37,7 +37,7 @@ El repositorio no incluye datos de entrenamiento ni detalles sobre el dataset ut
 - **Investigación experimental**: el modelo sirve como banco de pruebas para evaluar el comportamiento de la arquitectura Beit con atención de ventana deslizante y fusión tensorial. Un investigador puede entrenar este checkpoint con un dataset de clasificación pequeño y comparar el rendimiento con otras arquitecturas.
 - **Prototipado de pipelines de visión**: para verificar que un sistema de carga de modelos, preprocesamiento de imágenes y entrenamiento funciona correctamente, este checkpoint permite ejecutar pruebas de integración sin necesidad de descargar modelos grandes.
 - **Estudio de técnicas de atención**: al ser un modelo diminuto, es ideal para analizar cómo afecta la ventana deslizante al coste computacional y a la convergencia en entornos académicos.
-- **Desarrollo de adaptadores**: dado que la implementación es personalizada, el script `finetune.py` sirve como referencia para escribir adaptadores que permitan cargar el modelo con APIs estándar de HuggingFace.
+- **Desarrollo de adaptadores**: dado que la implementación es personalizada, el script `finetune.py` sirve como referencia para escribir adaptadores que permitan cargar el modelo con APIs estándar de Hugging Face.
 - **Reproducibilidad de experimentos**: la configuración incluida (`training_args.json`) documenta un recetario de entrenamiento reproducible, útil para que otros equipos repliquen el mismo protocolo.
 - **Entrenamiento de un modelo de clasificación específico**: si un equipo dispone de datos etiquetados, puede entrenar el modelo desde este checkpoint inicial y obtener un clasificador pequeño, aunque el rendimiento esperado será bajo debido al tamaño reducido.
 
@@ -68,4 +68,4 @@ No hay modelos comparables disponibles. Este modelo no está entrenado, por lo q
 
 ## Enlaces
 
-- [HuggingFace: Ricciix82/classification-rc1](https://huggingface.co/Ricciix82/classification-rc1)
+- [Hugging Face: Ricciix82/classification-rc1](https://huggingface.co/Ricciix82/classification-rc1)

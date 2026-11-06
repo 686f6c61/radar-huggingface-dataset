@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nhckdvrl/C-VIS-Qwen3.5-9B-Solver-FormalV7-Checkpoints-20261101
+- Modelo en Hugging Face: https://huggingface.co/Nhckdvrl/C-VIS-Qwen3.5-9B-Solver-FormalV7-Checkpoints-20261101
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Nhckdvrl/C-VIS-Qwen3.5-9B-Solver-FormalV7-20261101
 - Registro de experimento y limpieza (RUN_LOG): https://github.com/Ryougetsu3606/convrsi/blob/main/preexp/cvis_cloud_prepare_20261101/RUN_LOG.md

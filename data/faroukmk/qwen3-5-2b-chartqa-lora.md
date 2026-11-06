@@ -66,7 +66,7 @@ No se dispone de comparaciones directas con otros adaptadores para ChartQA ni co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Faroukmk/qwen3.5-2b-chartqa-lora
+- Hugging Face: https://huggingface.co/Faroukmk/qwen3.5-2b-chartqa-lora
 - Modelo base unsloth/Qwen3.5-2B: https://huggingface.co/unsloth/Qwen3.5-2B
 - Guía de la serie Qwen 3.5 (Codersera): https://codersera.com/blog/qwen-3-5-complete-guide-2026/
 - Repositorio GitHub sobre Qwen3.5 (no oficial): https://github.com/algtrd24/qwen3.5

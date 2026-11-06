@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sstoica12/acquisition_student_AS_confidence_wildguardmix__5000_checkpoint_400` es un modelo de generación de texto publicado en HuggingFace por el usuario `sstoica12`. Según los metadatos del repositorio, contiene 8.030.261.248 parámetros (8,03 mil millones) en pesos safetensors, está etiquetado con la arquitectura `llama` y expone el pipeline `text-generation` para la librería `transformers`. El tamaño del repositorio es de 16,1 GB, lo que equivale aproximadamente a 2 bytes por parámetro y es consistente con pesos en fp16 o bf16.
+`sstoica12/acquisition_student_AS_confidence_wildguardmix__5000_checkpoint_400` es un modelo de generación de texto publicado en Hugging Face por el usuario `sstoica12`. Según los metadatos del repositorio, contiene 8.030.261.248 parámetros (8,03 mil millones) en pesos safetensors, está etiquetado con la arquitectura `llama` y expone el pipeline `text-generation` para la librería `transformers`. El tamaño del repositorio es de 16,1 GB, lo que equivale aproximadamente a 2 bytes por parámetro y es consistente con pesos en fp16 o bf16.
 
-La model card es la plantilla autogenerada por HuggingFace y no contiene ni una sola sección completada: no hay información sobre el desarrollador real, los datos de entrenamiento, los idiomas, la licencia ni los resultados de evaluación. El identificador del repositorio sugiere, sin confirmación alguna por parte del autor, un checkpoint intermedio (paso 400) de un proceso de destilación o "adquisición" de conocimiento sobre un corpus del tipo WildGuardMix, con algún criterio de confianza ("AS_confidence"); se trata de una inferencia a partir del nombre, no de un dato documentado.
+La model card es la plantilla autogenerada por Hugging Face y no contiene ni una sola sección completada: no hay información sobre el desarrollador real, los datos de entrenamiento, los idiomas, la licencia ni los resultados de evaluación. El identificador del repositorio sugiere, sin confirmación alguna por parte del autor, un checkpoint intermedio (paso 400) de un proceso de destilación o "adquisición" de conocimiento sobre un corpus del tipo WildGuardMix, con algún criterio de confianza ("AS_confidence"); se trata de una inferencia a partir del nombre, no de un dato documentado.
 
 Por tanto, esta ficha debe leerse como un inventario de lo que se puede verificar técnicamente (tamaño, formato, arquitectura declarada) y de lo que queda explícitamente sin documentar. El modelo no tiene descargas ni "likes" en el momento de la consulta, por lo que tampoco existe validación por parte de la comunidad.
 
@@ -91,7 +91,7 @@ No existe ningún dato de rendimiento de este checkpoint que permita una compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sstoica12/acquisition_student_AS_confidence_wildguardmix__5000_checkpoint_400
+- Repositorio en Hugging Face: https://huggingface.co/sstoica12/acquisition_student_AS_confidence_wildguardmix__5000_checkpoint_400
 - Paper citado en la plantilla de la model card (huella de carbono de modelos, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental mencionada en la plantilla: https://mlco2.github.io/impact
 - Paper, blog, repositorio de código o demo del modelo: no disponibles. La búsqueda web realizada no ha devuelto ningún resultado relacionado con este modelo.

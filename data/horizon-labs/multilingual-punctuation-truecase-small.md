@@ -72,9 +72,9 @@ La model card no incluye resultados completos de Punctuation F1 ni de Casing acc
 
 | Modelo | Parámetros | Idiomas | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`multilingual-punctuation-truecase-small`) | 140M | 88 | Puntuación + mayúsculas | Apache-2.0 | HuggingFace, ONNX, transformers.js |
-| `multilingual-punctuation-truecase-base` | 307M | 88 | Puntuación + mayúsculas | Apache-2.0 (según model card del autor) | HuggingFace |
-| `punctuation-restoration-small` | no disponible | multilingüe | Solo puntuación (texto ya con mayúsculas) | Apache-2.0 (según model card del autor) | HuggingFace |
+| Este modelo (`multilingual-punctuation-truecase-small`) | 140M | 88 | Puntuación + mayúsculas | Apache-2.0 | Hugging Face, ONNX, transformers.js |
+| `multilingual-punctuation-truecase-base` | 307M | 88 | Puntuación + mayúsculas | Apache-2.0 (según model card del autor) | Hugging Face |
+| `punctuation-restoration-small` | no disponible | multilingüe | Solo puntuación (texto ya con mayúsculas) | Apache-2.0 (según model card del autor) | Hugging Face |
 
 La variante *base* (307M) obtiene un Casing F1 ligeramente superior en Europarl (0,897 frente a 0,887) y ligeramente inferior en TED (0,800 frente a 0,805), con un coste computacional mayor. `punctuation-restoration-small` cubre un caso de uso distinto: texto que ya conserva mayúsculas y solo necesita puntuación. No se dispone de datos de otros modelos comparables de terceros en la información proporcionada.
 
@@ -91,7 +91,7 @@ La variante *base* (307M) obtiene un Casing F1 ligeramente superior en Europarl 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Horizon-Labs/multilingual-punctuation-truecase-small
+- Modelo en Hugging Face: https://huggingface.co/Horizon-Labs/multilingual-punctuation-truecase-small
 - Demo en el navegador (Space): https://huggingface.co/spaces/Horizon-Labs/multilingual-punctuation-truecase
 - Variante base (307M): https://huggingface.co/Horizon-Labs/multilingual-punctuation-truecase-base
 - Variante de solo puntuación: https://huggingface.co/Horizon-Labs/punctuation-restoration-small

@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Idioma | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| transformers-ud-japanese-electra-base-ginza | ELECTRA encoder + spaCy | ja | ~110 M (ELECTRA-base) | no disponible | MIT | HuggingFace + PyPI (`ja-ginza-electra`) |
-| megagonlabs/transformers-ud-japanese-electra-base-discriminator | ELECTRA encoder sin ajuste de tarea | ja | ~110 M (ELECTRA-base) | no disponible | no disponible | HuggingFace |
+| transformers-ud-japanese-electra-base-ginza | ELECTRA encoder + spaCy | ja | ~110 M (ELECTRA-base) | no disponible | MIT | Hugging Face + PyPI (`ja-ginza-electra`) |
+| megagonlabs/transformers-ud-japanese-electra-base-discriminator | ELECTRA encoder sin ajuste de tarea | ja | ~110 M (ELECTRA-base) | no disponible | no disponible | Hugging Face |
 | GiNZA v4 / `ja_ginza` (pipeline spaCy anterior) | CNN + spaCy | ja | no disponible | no disponible | no disponible | PyPI |
 | Stanza para japones | BiLSTM/Transformer + pipeline | ja | no disponible | no disponible | no disponible | GitHub / PyPI |
 
@@ -93,8 +93,8 @@ La comparacion cuantitativa no es posible con la informacion disponible: no se h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/megagonlabs/transformers-ud-japanese-electra-base-ginza
-- Modelo base en HuggingFace: https://huggingface.co/megagonlabs/transformers-ud-japanese-electra-base-discriminator
+- Modelo en Hugging Face: https://huggingface.co/megagonlabs/transformers-ud-japanese-electra-base-ginza
+- Modelo base en Hugging Face: https://huggingface.co/megagonlabs/transformers-ud-japanese-electra-base-discriminator
 - Repositorio de ELECTRA: https://github.com/google-research/electra
 - Dataset mC4: https://huggingface.co/datasets/mc4
 - Documentacion de spaCy v3: https://spacy.io/usage/v3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Claim Photo Integrity Detector v1 es un clasificador de imagen binario publicado en HuggingFace por el usuario obuladinnesai bajo licencia Apache 2.0. Su funcion es determinar si una fotografia procede de una camara real o ha sido generada sinteticamente por un modelo de difusion, con un enfoque de aplicacion muy concreto: la verificacion de integridad de fotografias en flujos de siniestros de seguros. La idea es actuar como una primera barrera de confianza (triage "trust-first" en la fase de FNOL, First Notice of Loss) antes de evaluar la severidad del dano o predecir una perdida total.
+Claim Photo Integrity Detector v1 es un clasificador de imagen binario publicado en Hugging Face por el usuario obuladinnesai bajo licencia Apache 2.0. Su funcion es determinar si una fotografia procede de una camara real o ha sido generada sinteticamente por un modelo de difusion, con un enfoque de aplicacion muy concreto: la verificacion de integridad de fotografias en flujos de siniestros de seguros. La idea es actuar como una primera barrera de confianza (triage "trust-first" en la fase de FNOL, First Notice of Loss) antes de evaluar la severidad del dano o predecir una perdida total.
 
 Tecnicamente es un Vision Transformer de unos 85,8 millones de parametros, derivado de google/vit-base-patch16-224 y ajustado con una cabeza de clasificacion de dos clases. La entrada es una imagen de 224x224 pixeles dividida en parches de 16x16, y la salida son dos etiquetas: real o ai_generated, con sus puntuaciones de probabilidad. No procesa texto ni audio, por lo que no tiene idiomas ni ventana de contexto en el sentido habitual de los LLM.
 
@@ -67,8 +67,8 @@ No se han encontrado en la informacion disponible modelos de codigo abierto comp
 
 | Alternativa | Tipo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Claim Photo Integrity Detector v1 | Modelo abierto (ViT) | 85,8 M | Imagen 224x224 | Apache 2.0 | Pesos en HuggingFace |
-| google/vit-base-patch16-224 | Modelo base abierto | 86 M aprox. | Imagen 224x224 | Apache 2.0 | Pesos en HuggingFace; clasificacion ImageNet, no deteccion de IA |
+| Claim Photo Integrity Detector v1 | Modelo abierto (ViT) | 85,8 M | Imagen 224x224 | Apache 2.0 | Pesos en Hugging Face |
+| google/vit-base-patch16-224 | Modelo base abierto | 86 M aprox. | Imagen 224x224 | Apache 2.0 | Pesos en Hugging Face; clasificacion ImageNet, no deteccion de IA |
 | zerogpt.com AI Image Detector | Servicio web | no disponible | no disponible | propietaria | Solo via web |
 | wedetect.ai AI Image Checker | Servicio web | no disponible | no disponible | propietaria | Solo via web |
 | aiphotocheck.com | Servicio web | no disponible | no disponible | propietaria | Solo via web |
@@ -87,7 +87,7 @@ No se han encontrado en la informacion disponible modelos de codigo abierto comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/obuladinnesai/claim-photo-integrity-detector-v1
+- Modelo en Hugging Face: https://huggingface.co/obuladinnesai/claim-photo-integrity-detector-v1
 - Variante referenciada en el ejemplo de codigo: https://huggingface.co/obuladinnesai/claim-photo-integrity-detector
 - Dataset de entrenamiento: https://huggingface.co/datasets/Rajarshi-Roy-research/Defactify_Image_Dataset
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224

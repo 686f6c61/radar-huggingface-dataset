@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenHermes es un modelo de lenguaje finetuneado y convertido a formato GGUF mediante Unsloth, basado en el modelo base Qwen2.5-7B-Instruct de Alibaba. El autor, salvogameryt1, ha publicado este modelo en HuggingFace con el objetivo de facilitar su despliegue en entornos de inferencia locales mediante llama.cpp y Ollama, incluyendo un archivo Modelfile para este último.
+OpenHermes es un modelo de lenguaje finetuneado y convertido a formato GGUF mediante Unsloth, basado en el modelo base Qwen2.5-7B-Instruct de Alibaba. El autor, salvogameryt1, ha publicado este modelo en Hugging Face con el objetivo de facilitar su despliegue en entornos de inferencia locales mediante llama.cpp y Ollama, incluyendo un archivo Modelfile para este último.
 
 El modelo conserva la arquitectura transformer de Qwen2.5, con aproximadamente 7.615 millones de parámetros, y ofrece una ventana de contexto de hasta 32.768 tokens, característica heredada de su modelo base. Su relevancia radica en que proporciona una versión cuantizada (Q4_K_M) lista para usar en CPU o GPU de consumo, sin necesidad de conversiones adicionales, lo que lo convierte en una opción práctica para desarrolladores que buscan desplegar un asistente conversacional local con capacidades de razonamiento y generación de código.
 
@@ -79,7 +79,7 @@ La comparación se basa en el modelo base y la familia OpenHermes. El modelo de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/salvogameryt1/OpenHermes
+- Hugging Face: https://huggingface.co/salvogameryt1/OpenHermes
 - Unsloth: https://github.com/unslothai/unsloth
 - Dataset OpenHermes de Teknium: https://huggingface.co/datasets/teknium/openhermes
 - Colección Open Hermes de Teknium: https://huggingface.co/collections/teknium/open-hermes-652ff011fcb6dd376c337c39

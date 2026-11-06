@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks para esta cuantización específica
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| granite-4.2-3b (este, cuantizado MLX) | 3B | no disponible | Apache 2.0 | MLX safetensors | HuggingFace |
-| Llama 3.2 3B (cuantizado GGUF) | 3.2B | 128k | Llama 3.2 Community | GGUF, MLX | HuggingFace, Ollama |
-| Qwen 2.5 3B (cuantizado GGUF) | 3B | 128k | Apache 2.0 | GGUF, MLX | HuggingFace, Ollama |
-| Phi-3.5 mini (3.8B) | 3.8B | 128k | MIT | GGUF, MLX | HuggingFace |
+| granite-4.2-3b (este, cuantizado MLX) | 3B | no disponible | Apache 2.0 | MLX safetensors | Hugging Face |
+| Llama 3.2 3B (cuantizado GGUF) | 3.2B | 128k | Llama 3.2 Community | GGUF, MLX | Hugging Face, Ollama |
+| Qwen 2.5 3B (cuantizado GGUF) | 3B | 128k | Apache 2.0 | GGUF, MLX | Hugging Face, Ollama |
+| Phi-3.5 mini (3.8B) | 3.8B | 128k | MIT | GGUF, MLX | Hugging Face |
 
 La comparativa es estructural, ya que no se dispone de benchmarks del modelo cuantizado. Granite 4.2 se distingue por su enfoque en razonamiento explícito y tool calling, mientras que Llama 3.2 y Qwen 2.5 ofrecen ecosistemas más amplios de herramientas de despliegue.
 
@@ -76,7 +76,7 @@ La comparativa es estructural, ya que no se dispone de benchmarks del modelo cua
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/salohcin714/granite-4.2-3b-4bit-awq-mlx
+- Repositorio Hugging Face: https://huggingface.co/salohcin714/granite-4.2-3b-4bit-awq-mlx
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Documentación oficial de Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2
 - Repositorio GitHub de IBM Granite 4.2: https://github.com/ibm-granite/granite-4.2-language-models

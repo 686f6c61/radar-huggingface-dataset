@@ -77,7 +77,7 @@ No se dispone de datos suficientes para comparar con otros modelos de la misma c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Intel/Qwen3.8-27B-q4km-AutoRound
+- Repositorio Hugging Face: https://huggingface.co/Intel/Qwen3.8-27B-q4km-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Paper SignRoundV2: https://arxiv.org/abs/2512.04746

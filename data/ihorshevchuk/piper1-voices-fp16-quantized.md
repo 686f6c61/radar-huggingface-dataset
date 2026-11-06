@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un conjunto de voces cuantizadas en FP16 para el sistema de sintesis de voz (text-to-speech) Piper, desarrollado en el marco del proyecto OHF-Voice (Open Home Foundation). Lo publica el usuario IhorShevchuk en HuggingFace y deriva de las voces originales de rhasspy/piper-voices, que se redistribuyen aqui en formato ONNX con pesos en precision media (float16) para reducir el espacio en disco y el ancho de banda de memoria durante la inferencia. El repositorio ocupa 13,6 GB y cubre 36 idiomas bajo licencia MIT.
+Este repositorio contiene un conjunto de voces cuantizadas en FP16 para el sistema de sintesis de voz (text-to-speech) Piper, desarrollado en el marco del proyecto OHF-Voice (Open Home Foundation). Lo publica el usuario IhorShevchuk en Hugging Face y deriva de las voces originales de rhasspy/piper-voices, que se redistribuyen aqui en formato ONNX con pesos en precision media (float16) para reducir el espacio en disco y el ancho de banda de memoria durante la inferencia. El repositorio ocupa 13,6 GB y cubre 36 idiomas bajo licencia MIT.
 
 No se trata de un modelo de lenguaje: es una coleccion de modelos acusticos/vocoders de TTS de tipo ligero, pensados para ejecucion local y en dispositivos con recursos limitados (Raspberry Pi, mini-PC, movil, navegador via ONNX Runtime Web). Su relevancia actual radica en que permite sintesis de voz multilingue completamente offline, sin dependencia de APIs en la nube, y con un coste computacional muy inferior al de los modelos TTS neuronales de gran tamano.
 
@@ -91,7 +91,7 @@ La comparacion directa con alternativas no puede realizarse con rigor: no hay da
 
 ## Enlaces
 
-- [IhorShevchuk/piper1-voices-fp16-quantized en HuggingFace](https://huggingface.co/IhorShevchuk/piper1-voices-fp16-quantized)
+- [IhorShevchuk/piper1-voices-fp16-quantized en Hugging Face](https://huggingface.co/IhorShevchuk/piper1-voices-fp16-quantized)
 - [Repositorio piper1-gpl (OHF-Voice)](https://github.com/OHF-Voice/piper1-gpl)
 - [Guia de entrenamiento de voces propias](https://github.com/OHF-Voice/piper1-gpl/blob/main/docs/TRAINING.md)
 - [Voces originales rhasspy/piper-voices](https://huggingface.co/rhasspy/piper-voices)

@@ -115,7 +115,7 @@ No se dispone en la información proporcionada de comparativas frente a otras fa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ozonetg/parakeet-0.6b-caller-asr-averaged
+- Modelo en Hugging Face: https://huggingface.co/ozonetg/parakeet-0.6b-caller-asr-averaged
 - Modelo base: https://huggingface.co/nvidia/parakeet-unified-en-0.6b
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
 - No se han proporcionado en la información disponible otros enlaces a artículos, repositorios, demos o publicaciones técnicas.

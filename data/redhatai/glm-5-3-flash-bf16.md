@@ -73,11 +73,11 @@ No se dispone de datos suficientes para comparar con otros modelos MoE abiertos 
 - Al ser un modelo multimodal, puede presentar sesgos en la interpretación de imágenes, especialmente en contextos culturales no representados en el corpus de entrenamiento.
 - Riesgo de alucinación en tareas de razonamiento largo o generación de código, como es común en modelos de este tamaño.
 - La licencia MIT permite uso comercial, pero el despliegue en producción requiere cumplir con las leyes de protección de datos (especialmente en la UE) al procesar información de usuarios.
-- El repo en HuggingFace está publicado por RedHatAI, no por el desarrollador original (Z.ai); se recomienda verificar la autenticidad de los pesos antes de su uso.
+- El repo en Hugging Face está publicado por RedHatAI, no por el desarrollador original (Z.ai); se recomienda verificar la autenticidad de los pesos antes de su uso.
 
 ## Enlaces
 
-- Repositorio HuggingFace (RedHatAI): https://huggingface.co/RedHatAI/GLM-5.3-Flash-BF16
+- Repositorio Hugging Face (RedHatAI): https://huggingface.co/RedHatAI/GLM-5.3-Flash-BF16
 - Repositorio original (zai-org): https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Blog de GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Technical report (arXiv): https://arxiv.org/abs/2602.15763

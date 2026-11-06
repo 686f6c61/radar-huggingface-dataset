@@ -100,9 +100,9 @@ No se identifican en la informacion disponible otros modelos comparables de dete
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/adimyth/indic-smart-turn)
+- [Modelo en Hugging Face](https://huggingface.co/adimyth/indic-smart-turn)
 - [Repositorio en GitHub](https://github.com/adimyth/indic-smart-turn)
-- [Demo interactiva en HuggingFace Spaces](https://huggingface.co/spaces/adimyth/indic-smart-turn-demo)
+- [Demo interactiva en Hugging Face Spaces](https://huggingface.co/spaces/adimyth/indic-smart-turn-demo)
 - [Paper TamilEOT (arXiv:2609.05631)](https://arxiv.org/abs/2609.05631)
 - [Receta Pipecat Smart Turn v3](https://github.com/pipecat-ai/smart-turn)
 - [Dataset adimyth/indic-smart-turn-data](https://huggingface.co/datasets/adimyth/indic-smart-turn-data)

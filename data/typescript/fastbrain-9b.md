@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FastBrain-9B es un modelo de decisión estructurado no autorregresivo de tipo "System-1" desarrollado por el usuario TypeScript en HuggingFace, construido sobre el modelo base Cloudflare/clef-flash (con backbone híbrido Qwen3.5-9B). A diferencia de un LLM generativo convencional, FastBrain-9B no genera tokens de texto: recibe un estado JSON arbitrario junto con uno o más esquemas de decisión estructurados (elección tipo `choice`, verificación binaria tipo `noul` o ranking tipo `score`) y evalúa todas las opciones candidatas y preguntas de forma conjunta en una única pasada hacia adelante, con cero tokens generados.
+FastBrain-9B es un modelo de decisión estructurado no autorregresivo de tipo "System-1" desarrollado por el usuario TypeScript en Hugging Face, construido sobre el modelo base Cloudflare/clef-flash (con backbone híbrido Qwen3.5-9B). A diferencia de un LLM generativo convencional, FastBrain-9B no genera tokens de texto: recibe un estado JSON arbitrario junto con uno o más esquemas de decisión estructurados (elección tipo `choice`, verificación binaria tipo `noul` o ranking tipo `score`) y evalúa todas las opciones candidatas y preguntas de forma conjunta en una única pasada hacia adelante, con cero tokens generados.
 
 Esto le permite entregar probabilidades calibradas por opción, selecciones de tool-call y decisiones de abstención en conjunto abierto con latencia de nivel encoder, algo especialmente relevante para pipelines de agentes donde la latencia de decisión es crítica. El modelo combina un backbone híbrido de 9B parámetros con una cabeza de decisión JointSchemaHead de 116M parámetros, y destaca en benchmarks especializados de decisión estructurada: alcanza un 97,4 % de balanced accuracy en safeagents-judge-bench (puesto 1 de 9) y un 80,55 % de media en el Cloudflare Decision Index v0.2.1 (puesto 2 de 7, primero en su clase de <=9B).
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks generales tipo MMLU, HumanEval o GS
 - VRAM estimada para inferencia: no disponible de forma explícita; con 9,4B parámetros en FP16/BF16, la estimación estándar es de unos 19-20 GB solo de pesos, más overhead de activaciones. En cuantización de 4 bits (GGUF Q4) cabría en torno a 5-6 GB.
 - GPU recomendadas: no disponible oficialmente; por tamaño, una RTX 4090 (24 GB) o RTX 3090 deberían bastar para inferencia en precisión completa, y GPUs más modestas con cuantización GGUF.
 - Consumer GPUs: en principio sí, dado el tamaño de 9,4B; con GGUF cuantizado sería viable incluso en GPUs de 8-12 GB, aunque no hay cifras oficiales de consumo.
-- Opciones de despliegue: la model card menciona compatibilidad con llama.cpp y sglang (vía tags GGUF), además de la librería transformers de HuggingFace. No se menciona explícitamente vLLM, Ollama ni TGI.
+- Opciones de despliegue: la model card menciona compatibilidad con llama.cpp y sglang (vía tags GGUF), además de la librería transformers de Hugging Face. No se menciona explícitamente vLLM, Ollama ni TGI.
 - Latencia y throughput: no se publican cifras numéricas, pero el diseño no autorregresivo de pasada única (0 tokens generados) implica latencia de nivel encoder, muy inferior a la de un LLM generativo equivalente.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ FastBrain-9B supera a su modelo base (clef-flash) por un margen amplio en todos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TypeScript/FastBrain-9B
+- Modelo en Hugging Face: https://huggingface.co/TypeScript/FastBrain-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/TypeScript/FastBrain-Instruct (deducido del campo `datasets` de la model card)
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash (deducido del campo `base_model`)
 - Benchmark safeagents-judge-bench: https://huggingface.co/datasets/harness-hub/safeagents-judge-bench

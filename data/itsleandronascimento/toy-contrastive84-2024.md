@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`toy-contrastive84-2024` es un repositorio de HuggingFace publicado por el usuario `itsleandronascimento` que contiene una implementación funcional y ejecutable de una arquitectura EfficientFormer en configuración "small" orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni evaluado: el propio autor indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con rendimiento medido. El recuento real de parámetros del fichero safetensors es de 49.600, lo que lo sitúa en un orden de magnitud muy inferior al de cualquier EfficientFormer publicado (EfficientFormer-L1 ronda los 12 millones).
+`toy-contrastive84-2024` es un repositorio de Hugging Face publicado por el usuario `itsleandronascimento` que contiene una implementación funcional y ejecutable de una arquitectura EfficientFormer en configuración "small" orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni evaluado: el propio autor indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con rendimiento medido. El recuento real de parámetros del fichero safetensors es de 49.600, lo que lo sitúa en un orden de magnitud muy inferior al de cualquier EfficientFormer publicado (EfficientFormer-L1 ronda los 12 millones).
 
 El interés del repositorio es, por tanto, metodológico y de ingeniería, no de rendimiento. Aporta un `main.py` con punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura generados (atención flash, fusión bilinear, activación GELU, normalización por batch norm) y un `training_args.json` con una receta por defecto basada en optimizador Adam y scheduler polinomial. La licencia es BSD-3-Clause, permisiva y compatible con uso comercial bajo atribución.
 
@@ -67,7 +67,7 @@ El autor declara de forma explícita que no se reclama ninguna puntuación de be
 - Cabe en GPU consumer: sí, en todas las gamas actuales, y también en CPU y en entornos sin acelerador.
 - Opciones de despliegue: no verificadas. Al ser una implementación personalizada, `transformers` AutoModel requiere un adaptador explícito; no hay soporte declarado en vLLM, llama.cpp, Ollama ni TGI, y no se publican ficheros GGUF. El punto de entrada previsto es `python main.py`.
 - Latencia y throughput estimados: no disponibles.
-- Almacenamiento: el repositorio ocupa 0.0 GB segun la ficha de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0.0 GB segun la ficha de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -75,11 +75,11 @@ La comparativa se establece frente a backbones de visión del mismo nicho (movil
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `toy-contrastive84-2024` | 49.600 | Representaciones contrastivas (andamiaje sin entrenar) | No aplica | BSD-3-Clause | HuggingFace |
+| `toy-contrastive84-2024` | 49.600 | Representaciones contrastivas (andamiaje sin entrenar) | No aplica | BSD-3-Clause | Hugging Face |
 | EfficientFormer-L1 (referencia original) | ~12,3 M | Clasificacion de imagenes | No aplica | Consultar repositorio original | GitHub |
 | EfficientFormerV2-S0 (referencia original) | ~3,5 M | Clasificacion de imagenes | No aplica | Consultar repositorio original | GitHub |
-| MobileViT-S (referencia original) | ~5,6 M | Clasificacion de imagenes | No aplica | Consultar repositorio original | GitHub / HuggingFace |
-| `majakowalski0410/toy-contrastive` | No disponible | Representaciones contrastivas (toy, tiny transformer) | No aplica | Apache-2.0 | HuggingFace |
+| MobileViT-S (referencia original) | ~5,6 M | Clasificacion de imagenes | No aplica | Consultar repositorio original | GitHub / Hugging Face |
+| `majakowalski0410/toy-contrastive` | No disponible | Representaciones contrastivas (toy, tiny transformer) | No aplica | Apache-2.0 | Hugging Face |
 
 Como referencia de repositorios "toy" con el mismo enfoque, `majakowalski0410/toy-contrastive` es un caso equivalente construido sobre un tiny transformer y con licencia Apache-2.0 en lugar de BSD-3-Clause.
 
@@ -99,8 +99,8 @@ Como referencia de repositorios "toy" con el mismo enfoque, `majakowalski0410/to
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsleandronascimento/toy-contrastive84-2024
-- Perfil del autor en HuggingFace: https://huggingface.co/itsleandronascimento/models
+- Modelo en Hugging Face: https://huggingface.co/itsleandronascimento/toy-contrastive84-2024
+- Perfil del autor en Hugging Face: https://huggingface.co/itsleandronascimento/models
 - Repositorio "toy" comparable: https://huggingface.co/majakowalski0410/toy-contrastive
 - Referencia de la arquitectura EfficientFormer (paper original): https://arxiv.org/abs/2206.01191
 - Referencia de EfficientFormerV2: https://arxiv.org/abs/2212.08059

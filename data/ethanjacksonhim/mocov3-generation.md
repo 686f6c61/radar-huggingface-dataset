@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ethanjacksonhim/mocov3-generation` es un prototipo de investigación publicado en HuggingFace por el usuario Ethanjacksonhim. La model card lo describe como una implementación de tipo MoCo v3 orientada a tareas de generación, con una configuración declarada como "giant". Se trata de un repositorio de andamiaje: incluye el código del modelo, ficheros de configuración y un checkpoint de inicialización, pero el propio autor indica explícitamente que no se reclama ninguna métrica de rendimiento ni se presenta como un modelo entrenado.
+`Ethanjacksonhim/mocov3-generation` es un prototipo de investigación publicado en Hugging Face por el usuario Ethanjacksonhim. La model card lo describe como una implementación de tipo MoCo v3 orientada a tareas de generación, con una configuración declarada como "giant". Se trata de un repositorio de andamiaje: incluye el código del modelo, ficheros de configuración y un checkpoint de inicialización, pero el propio autor indica explícitamente que no se reclama ninguna métrica de rendimiento ni se presenta como un modelo entrenado.
 
 Los pesos reales en formato safetensors suman 24.832 parámetros, una cifra incompatibile con la escala "giant" que anuncia la documentación y muy lejos de cualquier modelo de generación utilizable en producción. El repositorio ocupa 0,0 GB y no tiene descargas ni likes en el momento de la consulta, lo que refuerza su carácter de artefacto experimental sin validación externa.
 
@@ -80,5 +80,5 @@ No se dispone de datos comparativos en la información proporcionada. La model c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ethanjacksonhim/mocov3-generation
+- Hugging Face: https://huggingface.co/Ethanjacksonhim/mocov3-generation
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, a su paper, a su repositorio de código ni a demos asociadas. Los resultados devueltos por la búsqueda correspondían a páginas biográficas sobre Pelé y no guardan relación con este artefacto.

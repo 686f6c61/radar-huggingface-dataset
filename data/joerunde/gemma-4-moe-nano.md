@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joerunde/gemma-4-moe-nano | 129.359.046 | no disponible | Pruebas de arquitectura (pesos aleatorios) | apache-2.0 | HuggingFace |
-| google/gemma-4-26B-A4B-it | no disponible (26B+ segun la model card del artefacto) | hasta 256K tokens en la familia Gemma 4 | Modelo MoE real de proposito general | no disponible | HuggingFace / Google |
-| Checkpoints tiny-random de Gemma 4 publicos | no disponible | no disponible | Pruebas | no disponible | HuggingFace |
+| joerunde/gemma-4-moe-nano | 129.359.046 | no disponible | Pruebas de arquitectura (pesos aleatorios) | apache-2.0 | Hugging Face |
+| google/gemma-4-26B-A4B-it | no disponible (26B+ segun la model card del artefacto) | hasta 256K tokens en la familia Gemma 4 | Modelo MoE real de proposito general | no disponible | Hugging Face / Google |
+| Checkpoints tiny-random de Gemma 4 publicos | no disponible | no disponible | Pruebas | no disponible | Hugging Face |
 
 La diferencia principal frente a los checkpoints tiny-random publicos es que estos usan `head_dim` de 16 o 32, por lo que no cumplen la regla de Spyre de multiplos de 64 y no pueden validar la ruta de compilacion. Este artefacto si la cumple.
 
@@ -83,7 +83,7 @@ La diferencia principal frente a los checkpoints tiny-random publicos es que est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joerunde/gemma-4-moe-nano
+- Modelo en Hugging Face: https://huggingface.co/joerunde/gemma-4-moe-nano
 - Repositorio del backend spyre-inference: https://github.com/torch-spyre/spyre-inference
 - Pagina de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Model card de Gemma 4 para desarrolladores: https://ai.google.dev/gemma/docs/core/model_card_4

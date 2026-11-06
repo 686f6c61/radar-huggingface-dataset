@@ -70,13 +70,13 @@ No se dispone de modelos comparables en la misma categoría. El DeiT original de
 - **Checkpoint sin entrenar**: los pesos son una inicialización aleatoria. Cualquier salida del modelo es ruido y no debe interpretarse como una predicción significativa.
 - **Sin robustez ni auditoría**: la model card advierte que el checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 - **Riesgo de alucinación**: no aplica, al ser un modelo de visión sin generación de texto.
-- **Sin soporte de carga genérica**: la implementación es personalizada, por lo que las APIs automáticas de HuggingFace no pueden cargar el modelo sin un adaptador explícito.
+- **Sin soporte de carga genérica**: la implementación es personalizada, por lo que las APIs automáticas de Hugging Face no pueden cargar el modelo sin un adaptador explícito.
 - **Restricciones de licencia**: la licencia MIT permite uso comercial, pero los términos de los datasets externos deben revisarse por separado si se usa con datos propios.
 - **No apto para producción**: el autor lo declara explícitamente como un repositorio experimental para revisión de código y pruebas de humo, no como un release preentrenado.
 - **Idiomas y contexto**: no aplica, es un modelo de visión sin capacidades lingüísticas.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/itsukitakahashi/classification-warmup)
-- [Perfil del autor en HuggingFace](https://huggingface.co/itsukitakahashi/models)
+- [Repositorio en Hugging Face](https://huggingface.co/itsukitakahashi/classification-warmup)
+- [Perfil del autor en Hugging Face](https://huggingface.co/itsukitakahashi/models)
 - [Proyecto relacionado en GitHub (warm-up-01-classification)](https://github.com/AIVIETNAM-AIO-ChimCanhCut/warm-up-01-classification/blob/main/README.md)

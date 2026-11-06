@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GR00T N1.7 ForceBenchmark (este repositorio) | ~3.000 millones (base) | no disponible | Sin evaluacion publicada | no disponible | HuggingFace |
-| NVIDIA GR00T-N1.7-3B (modelo base) | ~3.000 millones | no disponible | no disponible | no disponible | HuggingFace |
+| GR00T N1.7 ForceBenchmark (este repositorio) | ~3.000 millones (base) | no disponible | Sin evaluacion publicada | no disponible | Hugging Face |
+| NVIDIA GR00T-N1.7-3B (modelo base) | ~3.000 millones | no disponible | no disponible | no disponible | Hugging Face |
 | Otros VLA de manipulacion comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Solo se ha identificado como comparable directo el modelo base del que deriva. No se dispone de informacion sobre otros modelos de la misma categoria en el material proporcionado.
@@ -89,6 +89,6 @@ Solo se ha identificado como comparable directo el modelo base del que deriva. N
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HanLinqi/GR00T-N1.7-ForceBenchmark-Force8-PickCubeV4-Obs2-H10-30K-20260928
+- Repositorio en Hugging Face: https://huggingface.co/HanLinqi/GR00T-N1.7-ForceBenchmark-Force8-PickCubeV4-Obs2-H10-30K-20260928
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset de PickCube V4: https://huggingface.co/datasets/HanLinqi/ForceBenchmark (referencia `HanLinqi/ForceBenchmark`, revision `3b4d58e36b2aea70c4ecf1f964f4620dcf7a5dbf`)

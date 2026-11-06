@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Electrode es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de la consulta el repositorio acumula 0 descargas y 0 "likes", tiene un tamano de 0,1 GB y su model card se limita a la linea de metadatos `license: cc-by-4.0`, sin descripcion, sin arquitectura declarada, sin idiomas soportados y sin pipeline asociado. No existe por tanto informacion tecnica verificable sobre que tipo de modelo es, como se entreno ni para que tarea fue disenado.
+Electrode es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de la consulta el repositorio acumula 0 descargas y 0 "likes", tiene un tamano de 0,1 GB y su model card se limita a la linea de metadatos `license: cc-by-4.0`, sin descripcion, sin arquitectura declarada, sin idiomas soportados y sin pipeline asociado. No existe por tanto informacion tecnica verificable sobre que tipo de modelo es, como se entreno ni para que tarea fue disenado.
 
 El autor mantiene otros repositorios de nombres similares en la misma plataforma (Ryanham1lton/ElectrikeES y Ryanham1lton/GolemMH), tambien con licencia CC-BY-4.0 y sin documentacion tecnica publica en los resultados de busqueda disponibles. Esto sugiere una serie de artefactos experimentales o personales, pero no permite inferir arquitectura, tamano ni capacidades.
 

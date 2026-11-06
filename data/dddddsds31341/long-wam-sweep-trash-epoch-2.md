@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Long-WAM Sweep Trash — Epoch 2 | no disponible | P48 de historial, chunk de 32 pasos | Barrido bimanual de residuos | other | HuggingFace, 18 descargas |
-| Efficient-Large-Model/Long-WAM-YAM | no disponible | no disponible | Modelo base de política robótica | según metadatos del modelo base | HuggingFace |
+| Long-WAM Sweep Trash — Epoch 2 | no disponible | P48 de historial, chunk de 32 pasos | Barrido bimanual de residuos | other | Hugging Face, 18 descargas |
+| Efficient-Large-Model/Long-WAM-YAM | no disponible | no disponible | Modelo base de política robótica | según metadatos del modelo base | Hugging Face |
 | Otros checkpoints de la misma familia Long-WAM | no disponible | no disponible | Distintas tareas de manipulación | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dddddsds31341/Long-WAM-Sweep-Trash-Epoch-2
+- Modelo en Hugging Face: https://huggingface.co/dddddsds31341/Long-WAM-Sweep-Trash-Epoch-2
 - Modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM
 - Dataset de entrenamiento: https://huggingface.co/datasets/yuyingyinya/sweep_trash
 - Registro de entrenamiento (Weights & Biases): https://forge.coreweave.com/wandb/bofang/long-wam/runs/nwa2ucgt

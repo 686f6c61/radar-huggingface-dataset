@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`williamreye/albef-matching-test` es un repositorio de investigación publicado en HuggingFace por el usuario williamreye. No se trata de un modelo entrenado, sino de un prototipo de implementación de la arquitectura Albef orientado a tareas de *matching* (emparejamiento), acompañado de un script ejecutable, un fichero de configuración de arquitectura y un *checkpoint* de inicialización válido únicamente para pruebas de humo. La propia model card indica explícitamente que no se reclama ninguna métrica de rendimiento y que los pesos incluidos no han sido entrenados ni auditados.
+`williamreye/albef-matching-test` es un repositorio de investigación publicado en Hugging Face por el usuario williamreye. No se trata de un modelo entrenado, sino de un prototipo de implementación de la arquitectura Albef orientado a tareas de *matching* (emparejamiento), acompañado de un script ejecutable, un fichero de configuración de arquitectura y un *checkpoint* de inicialización válido únicamente para pruebas de humo. La propia model card indica explícitamente que no se reclama ninguna métrica de rendimiento y que los pesos incluidos no han sido entrenados ni auditados.
 
 El repositorio declara una escala "xlarge", atención lineal, fusión bilineal, activación ReLU y normalización RMSNorm, con un recetario de experimento por defecto basado en AdamW y un esquema de *warmup* constante. Sin embargo, el recuento real de parámetros extraído del fichero `model.safetensors` es de 24.832 parámetros (aproximadamente 25 mil), una cifra incompatible con cualquier escala "xlarge" y coherente con un modelo de juguete o con un esqueleto de código sin pesos materializados.
 
@@ -23,7 +23,7 @@ Su relevancia actual es, por tanto, limitada y de naturaleza puramente metodoló
 | Escala declarada | xlarge (según model card, no verificada) |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -71,7 +71,7 @@ No es posible establecer una comparativa rigurosa con la información disponible
 
 | Modelo | Parámetros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| williamreye/albef-matching-test | 24.832 (según safetensors) | no disponible | ninguno (la model card no reclama métricas) | BSD-3-Clause | HuggingFace, 0 descargas |
+| williamreye/albef-matching-test | 24.832 (según safetensors) | no disponible | ninguno (la model card no reclama métricas) | BSD-3-Clause | Hugging Face, 0 descargas |
 | Alternativas de la familia Albef orientadas a emparejamiento | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ La model card recomienda, como guía metodológica, comparar contra una línea b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/williamreye/albef-matching-test
+- Modelo en Hugging Face: https://huggingface.co/williamreye/albef-matching-test
 - Ficheros del repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (referenciados en la model card; no se han proporcionado URL individuales)
 - Paper, blog, repositorio de código o demo asociados: no disponible
 - Resultados de búsqueda web relevantes: no disponible (los resultados obtenidos no están relacionados con el modelo)

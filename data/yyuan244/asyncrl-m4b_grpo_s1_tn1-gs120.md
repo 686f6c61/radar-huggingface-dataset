@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yyuan244/asyncrl-m4b_grpo_s1_tn1-gs120` es un repositorio de pesos publicado en HuggingFace por el usuario `yyuan244`. Se trata de un artefacto sin ficha de modelo (model card) asociada: no declara pipeline, licencia, idiomas soportados ni descripcion tecnica. El unico dato objetivo disponible es el tamano del repositorio, 49,8 GB, y las fechas de creacion y ultima actualizacion, ambas del 12 de septiembre de 2026, con un intervalo de poco mas de tres minutos entre ambas, lo que sugiere una subida automatizada de un checkpoint de entrenamiento.
+`yyuan244/asyncrl-m4b_grpo_s1_tn1-gs120` es un repositorio de pesos publicado en Hugging Face por el usuario `yyuan244`. Se trata de un artefacto sin ficha de modelo (model card) asociada: no declara pipeline, licencia, idiomas soportados ni descripcion tecnica. El unico dato objetivo disponible es el tamano del repositorio, 49,8 GB, y las fechas de creacion y ultima actualizacion, ambas del 12 de septiembre de 2026, con un intervalo de poco mas de tres minutos entre ambas, lo que sugiere una subida automatizada de un checkpoint de entrenamiento.
 
 El identificador sigue un patron habitual en experimentos de aprendizaje por refuerzo: los segmentos `asyncrl` y `grpo` apuntan a un entrenamiento con *Group Relative Policy Optimization* (GRPO) en un esquema asincrono, mientras que `s1`, `tn1` y `gs120` parecen codificar configuraciones del experimento (posiblemente paso o etapa, y tamano de grupo). El segmento `m4b` sugiere un modelo de aproximadamente 4.000 millones de parametros, hipotesis coherente con un repositorio de 49,8 GB si este incluye estados del optimizador en fp32 ademas de los pesos. Ninguna de estas lecturas esta confirmada por documentacion oficial, por lo que deben tratarse como inferencias a partir del nombre.
 
@@ -82,7 +82,7 @@ No disponible. Sin conocer el modelo base, el numero de parametros ni las capaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `yyuan244/asyncrl-m4b_grpo_s1_tn1-gs120` | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| `yyuan244/asyncrl-m4b_grpo_s1_tn1-gs120` | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No disponible. Sin conocer el modelo base, el numero de parametros ni las capaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yyuan244/asyncrl-m4b_grpo_s1_tn1-gs120
+- Repositorio en Hugging Face: https://huggingface.co/yyuan244/asyncrl-m4b_grpo_s1_tn1-gs120
 - Perfil del autor: https://huggingface.co/yyuan244
 - Paper de referencia sobre GRPO (*DeepSeekMath*): https://arxiv.org/abs/2402.03300
 - Paper de referencia sobre RL asincrono a gran escala (*Asynchronous RLHF*): https://arxiv.org/abs/2410.05357

@@ -69,6 +69,6 @@ No se dispone de datos comparativos para este modelo. Como referencia general, l
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/JoshuaThomasna/model_022077851_vit_large)
+- [Página del modelo en Hugging Face](https://huggingface.co/JoshuaThomasna/model_022077851_vit_large)
 - [Repositorio de referencia de ViT de Google Research](https://github.com/google-research/vision_transformer) (no es el repositorio de este modelo, sino una referencia general de la arquitectura ViT)
-- [Documentación de ViT en HuggingFace](https://huggingface.co/docs/transformers/model_doc/vit) (información genérica sobre la arquitectura)
+- [Documentación de ViT en Hugging Face](https://huggingface.co/docs/transformers/model_doc/vit) (información genérica sobre la arquitectura)

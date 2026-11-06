@@ -114,7 +114,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval 
 
 | Modelo | Parámetros | Contexto | LLM-AggreFact (media) | Media 6 idiomas no ingleses | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo | 140,6M (dato real) | 8.000 tokens (entrenado a 2.000) | 0,683 | 0,714 | Apache-2.0, sin gating | Pesos safetensors y ONNX en HuggingFace |
+| Este modelo | 140,6M (dato real) | 8.000 tokens (entrenado a 2.000) | 0,683 | 0,714 | Apache-2.0, sin gating | Pesos safetensors y ONNX en Hugging Face |
 | Base (308M) citado en la model card | no disponible (la model card no aclara su identidad) | no disponible | 0,697 | 0,755 | no disponible | no disponible |
 | MiniCheck-RoBERTa-L | no disponible | no disponible | 0,749 | 0,634 | no disponible | no disponible en la información proporcionada |
 | MiniCheck-DeBERTa-L | no disponible | no disponible | 0,721 | 0,666 | no disponible | no disponible en la información proporcionada |
@@ -136,11 +136,11 @@ Diferencias clave según los datos del propio autor: MiniCheck-RoBERTa-L y HHEM-
 - Etiquetado binario sin matices: no distingue entre contradicción y falta de información, ni ofrece explicaciones o evidencias.
 - Licencia Apache-2.0 permite uso comercial y modificación sin gating, pero no hay garantías ni niveles de servicio; el modelo se publica como está.
 - Repositorio sin tracción: 0 descargas y 0 likes en el momento de la consulta, y sin evaluaciones independientes publicadas; los números proceden del propio autor.
-- Las fechas del repositorio en HuggingFace figuran como creado el 2026-09-24 y actualizado el 2026-09-24, posteriores a la fecha habitual de consulta; conviene verificarlas antes de citarlas.
+- Las fechas del repositorio en Hugging Face figuran como creado el 2026-09-24 y actualizado el 2026-09-24, posteriores a la fecha habitual de consulta; conviene verificarlas antes de citarlas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Horizon-Labs/hallucination-guard-small
+- Modelo en Hugging Face: https://huggingface.co/Horizon-Labs/hallucination-guard-small
 - Demo en el navegador: https://huggingface.co/spaces/Horizon-Labs/hallucination-guard
 - Colección Agent I/O Guards: https://huggingface.co/collections/Horizon-Labs/agent-i-o-guards-6ab403c49494bc2b71ca7669
 - Código fuente: https://github.com/horizon-ai-labs/agent-io-guards

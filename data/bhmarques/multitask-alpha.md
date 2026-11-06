@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`bhmarques/multitask-alpha` es un repositorio experimental de HuggingFace que empaqueta una implementación propia de una arquitectura EfficientFormer orientada a tareas múltiples (multitask). Lo publica el usuario bhmarques bajo licencia BSD-3-Clause e incluye el código de inferencia y entrenamiento (`inference.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en safetensors con 16.576 parámetros según el recuento del repositorio.
+`bhmarques/multitask-alpha` es un repositorio experimental de Hugging Face que empaqueta una implementación propia de una arquitectura EfficientFormer orientada a tareas múltiples (multitask). Lo publica el usuario bhmarques bajo licencia BSD-3-Clause e incluye el código de inferencia y entrenamiento (`inference.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en safetensors con 16.576 parámetros según el recuento del repositorio.
 
 El autor es explícito en la model card: el checkpoint no está entrenado ni auditado, no se reclama ninguna puntuación de benchmark y el repositorio sirve como punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No es, por tanto, un modelo listo para producción ni un modelo de propósito general, sino un andamiaje de investigación.
 
-Su relevancia es de nicho: resulta útil para quien quiera reproducir o modificar un esqueleto EfficientFormer con atención lineal, fusión tensorial, activación swish y normalización LayerNorm, partiendo de una base mínima y legible. No hay información sobre idiomas, longitud de contexto, cuantizaciones ni pipeline de HuggingFace.
+Su relevancia es de nicho: resulta útil para quien quiera reproducir o modificar un esqueleto EfficientFormer con atención lineal, fusión tensorial, activación swish y normalización LayerNorm, partiendo de una base mínima y legible. No hay información sobre idiomas, longitud de contexto, cuantizaciones ni pipeline de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ Su relevancia es de nicho: resulta útil para quien quiera reproducir o modifica
 | Fusión | tensor fusion |
 | Activación | swish |
 | Normalización | LayerNorm |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Optimizador por defecto | adafactor con scheduler de warmup lineal |
 
 ## Arquitectura y entrenamiento
@@ -83,12 +83,12 @@ La comparación cuantitativa no es posible con los datos disponibles: no hay mé
 - El recuento de 16.576 parámetros es muy inferior a lo que sugiere la escala "large" declarada; probablemente corresponde a un checkpoint mínimo de prueba, lo que impide inferir el tamaño del modelo previsto.
 - No se documentan datos de entrenamiento, por lo que no se puede evaluar contaminación, procedencia ni términos de licencia de las fuentes.
 - No se declaran idiomas, longitud de contexto ni esquemas de cuantización, lo que impide planificar su uso en cargas de trabajo de texto.
-- Al ser una implementación personalizada, las APIs automáticas de carga de HuggingFace y los servidores de inferencia estándar no funcionarán sin un adaptador explícito.
+- Al ser una implementación personalizada, las APIs automáticas de carga de Hugging Face y los servidores de inferencia estándar no funcionarán sin un adaptador explícito.
 - La licencia BSD-3-Clause permite uso comercial del código y los pesos, pero el autor advierte de que deben revisarse por separado los términos de los datos externos que se utilicen con el repositorio.
 - El repositorio tiene 0 descargas y 0 likes, y un tamaño de 0.0 GB, sin validación por parte de la comunidad.
 - La fecha de creación declarada (2026-10-21) es atípica y conviene verificarla antes de citar el repositorio como referencia temporal.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bhmarques/multitask-alpha
+- Hugging Face: https://huggingface.co/bhmarques/multitask-alpha
 - No se han encontrado otros enlaces (paper, blog, repositorio de código o demo) en la información proporcionada.

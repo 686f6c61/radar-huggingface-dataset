@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`legal-assistant-qwen25-grpo` es un ajuste fino (finetune) del modelo `fzikri169/legal-assistant-qwen25`, publicado por el usuario fzikri169 en HuggingFace. Se trata de un modelo de generación de texto de 1.543.714.304 parámetros (aproximadamente 1,5 mil millones) construido sobre la arquitectura Qwen2, orientado a tareas de asistencia legal en inglés. El sufijo "grpo" del nombre sugiere que se ha aplicado optimización de política relativa a grupos (Group Relative Policy Optimization), una técnica de aprendizaje por refuerzo, aunque la model card no aporta detalles sobre el proceso.
+`legal-assistant-qwen25-grpo` es un ajuste fino (finetune) del modelo `fzikri169/legal-assistant-qwen25`, publicado por el usuario fzikri169 en Hugging Face. Se trata de un modelo de generación de texto de 1.543.714.304 parámetros (aproximadamente 1,5 mil millones) construido sobre la arquitectura Qwen2, orientado a tareas de asistencia legal en inglés. El sufijo "grpo" del nombre sugiere que se ha aplicado optimización de política relativa a grupos (Group Relative Policy Optimization), una técnica de aprendizaje por refuerzo, aunque la model card no aporta detalles sobre el proceso.
 
 El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas, y está empaquetado en formato safetensors con soporte para transformers y text-generation-inference. Su tamaño contenido (3,1 GB en el repositorio) lo hace desplegable en hardware de consumo, lo que resulta relevante para desarrolladores que necesitan un asistente legal ligero sin depender de APIs externas.
 
@@ -25,7 +25,7 @@ La información pública disponible es muy limitada: la model card es una planti
 
 El modelo hereda la arquitectura Qwen2, un transformer decoder-only con atención causal estándar, normalización RMSNorm, activación SwiGLU y embeddings rotatorios (RoPE). Con 1,5 mil millones de parámetros, se sitúa en la gama de modelos pequeños de la familia Qwen2 (Qwen2-1.5B), diseñados para inferencia eficiente en hardware modesto.
 
-El proceso de entrenamiento documentado es mínimo: el autor indica que el finetune se realizó con Unsloth y la librería TRL de HuggingFace, lo que implica un ajuste supervisado (SFT) o preferencial (DPO/GRPO) sobre el modelo base `fzikri169/legal-assistant-qwen25`. El sufijo "grpo" sugiere el uso de Group Relative Policy Optimization, pero no se especifican el número de tokens de entrenamiento, la composición del dataset legal, ni si hubo fases de RLHF. No se documentan innovaciones técnicas adicionales (decodificación especulativa, atención lineal, etc.).
+El proceso de entrenamiento documentado es mínimo: el autor indica que el finetune se realizó con Unsloth y la librería TRL de Hugging Face, lo que implica un ajuste supervisado (SFT) o preferencial (DPO/GRPO) sobre el modelo base `fzikri169/legal-assistant-qwen25`. El sufijo "grpo" sugiere el uso de Group Relative Policy Optimization, pero no se especifican el número de tokens de entrenamiento, la composición del dataset legal, ni si hubo fases de RLHF. No se documentan innovaciones técnicas adicionales (decodificación especulativa, atención lineal, etc.).
 
 ## Capacidades
 
@@ -82,8 +82,8 @@ La comparativa se limita a modelos de tamaño similar, ya que no se dispone de b
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fzikri169/legal-assistant-qwen25-grpo
+- Hugging Face: https://huggingface.co/fzikri169/legal-assistant-qwen25-grpo
 - Modelo base: https://huggingface.co/fzikri169/legal-assistant-qwen25
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl
 - Documentación Qwen2: https://huggingface.co/docs/transformers/model_doc/qwen2

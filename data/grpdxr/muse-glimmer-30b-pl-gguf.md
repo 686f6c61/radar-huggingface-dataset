@@ -89,7 +89,7 @@ Velocidad: aproximadamente 38 tokens/s por flujo con ambas ranuras ocupadas en u
 
 | Modelo | Parámetros | Contexto | Rendimiento (pruebas del autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Muse-Glimmer-30B-PL IQ2 (este modelo) | ~27,85B | 64K por ranura, 2 ranuras | Polish 93,5; razonamiento 18,3/20; transcripciones 71/72 | Apache 2.0 | GGUF en HuggingFace, 10,54 GB |
+| Muse-Glimmer-30B-PL IQ2 (este modelo) | ~27,85B | 64K por ranura, 2 ranuras | Polish 93,5; razonamiento 18,3/20; transcripciones 71/72 | Apache 2.0 | GGUF en Hugging Face, 10,54 GB |
 | Muse-Glimmer-30B Q4_K_M | ~27,85B | no disponible | Polish 97; razonamiento 18,5/20; transcripciones 69/72 | Apache 2.0 (modelo base) | GGUF, 16,76 GB |
 | unsloth UD-IQ3_XXS | ~27,85B | no disponible | Polish 93; razonamiento 17,5/20; transcripciones 70/72 | Apache 2.0 (modelo base) | GGUF, 13,13 GB |
 | Bielik-11B-v3.0-Instruct Q8_0 | ~11B | 32K (ventana entrenada) | Polish 87,5; razonamiento 4,5/20; transcripciones 66/72 | no disponible en la informacion proporcionada | GGUF, 11,87 GB |
@@ -111,7 +111,7 @@ El modelo se posiciona como una alternativa de bajo consumo de VRAM frente al Q4
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/grpdxr/Muse-Glimmer-30B-PL-GGUF
+- Hugging Face del modelo: https://huggingface.co/grpdxr/Muse-Glimmer-30B-PL-GGUF
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - GGUF de origen (Q8_0): https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF
 - Qwen3.8-27B-PL del mismo autor: https://huggingface.co/grpdxr/Qwen3.8-27B-PL-GGUF

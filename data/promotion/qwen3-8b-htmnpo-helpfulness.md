@@ -73,10 +73,10 @@ Para comparación, la solución de negociación completa (`promotion/Qwen3-8B-NB
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B (base) | 8.2B | 32K | Generalista (thinking y non-thinking) | Apache 2.0 | HuggingFace |
-| promotion/Qwen3-8B-HTMNPO-helpfulness | 8.2B | no disponible | Mono-objetivo (helpfulness) | Apache 2.0 | HuggingFace |
-| promotion/Qwen3-8B-NBPO | 8.2B | no disponible | Multi-objetivo (solución de negociación) | Apache 2.0 | HuggingFace |
-| promotion/Llama-3.1-8B-HTMNPO-helpfulness | 8.0B | no disponible | Mono-objetivo (helpfulness) sobre Llama-3.1-8B-Instruct | Apache 2.0 (probable) | HuggingFace |
+| Qwen3-8B (base) | 8.2B | 32K | Generalista (thinking y non-thinking) | Apache 2.0 | Hugging Face |
+| promotion/Qwen3-8B-HTMNPO-helpfulness | 8.2B | no disponible | Mono-objetivo (helpfulness) | Apache 2.0 | Hugging Face |
+| promotion/Qwen3-8B-NBPO | 8.2B | no disponible | Multi-objetivo (solución de negociación) | Apache 2.0 | Hugging Face |
+| promotion/Llama-3.1-8B-HTMNPO-helpfulness | 8.0B | no disponible | Mono-objetivo (helpfulness) sobre Llama-3.1-8B-Instruct | Apache 2.0 (probable) | Hugging Face |
 
 La comparación directa con el modelo base muestra que este fine-tuning sacrifica rendimiento en utilidad y veracidad en favor de un ligero aumento en seguimiento de instrucciones, mientras que la solución NBPO ofrece mejor equilibrio general. La variante Llama-3.1-8B-HTMNPO-helpfulness del mismo autor sigue un enfoque similar pero sobre otra base.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `adraganov/arch-code-transfer-lpi-260903T0846-w2-code_no_comments_control` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `adraganov`. Está diseñado como un ajuste fino sobre el modelo base `google/gemma-3-12b-it`, un modelo de lenguaje de 12 mil millones de parámetros desarrollado por Google. El adaptador se distribuye en formato PEFT (Parameter-Efficient Fine-Tuning) y está pensado para la generación de texto conversacional.
+El modelo `adraganov/arch-code-transfer-lpi-260903T0846-w2-code_no_comments_control` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `adraganov`. Está diseñado como un ajuste fino sobre el modelo base `google/gemma-3-12b-it`, un modelo de lenguaje de 12 mil millones de parámetros desarrollado por Google. El adaptador se distribuye en formato PEFT (Parameter-Efficient Fine-Tuning) y está pensado para la generación de texto conversacional.
 
 La información pública disponible es extremadamente limitada: la model card no contiene descripción, datos de entrenamiento, licencia, idiomas soportados ni resultados de evaluación. El nombre del repositorio sugiere una posible orientación hacia transferencia de arquitectura de código y control de comentarios en código, pero no hay documentación que lo confirme. Al ser un adaptador LoRA, su tamaño es reducido en comparación con el modelo base, pero se desconoce el número exacto de parámetros entrenados.
 
@@ -48,12 +48,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - Para inferencia en FP16, se necesitan aproximadamente 24 GB de VRAM (el modelo base tiene 12 mil millones de parámetros, unos 24 GB en FP16).
 - Con cuantización (por ejemplo, 8 bits o 4 bits), la VRAM requerida puede reducirse a 12-16 GB, lo que permitiría ejecutarlo en GPUs de consumo como RTX 3090, RTX 4090 o incluso RTX 4080 en 4 bits.
 - Para GPUs profesionales, se recomienda A100 (40/80 GB) o H100 para mayor velocidad y contexto largo.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, o directamente con transformers y PEFT.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, o directamente con transformers y PEFT.
 - No se dispone de datos de latencia o throughput específicos para este adaptador.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre adaptadores LoRA comparables para Gemma 3 12B en el momento de la consulta. No se puede establecer una comparativa fiable sin datos de rendimiento. Se recomienda comparar este adaptador con el modelo base `google/gemma-3-12b-it` y con otros adaptadores LoRA publicados en HuggingFace para la misma arquitectura, pero no hay métricas disponibles.
+No se dispone de información sobre adaptadores LoRA comparables para Gemma 3 12B en el momento de la consulta. No se puede establecer una comparativa fiable sin datos de rendimiento. Se recomienda comparar este adaptador con el modelo base `google/gemma-3-12b-it` y con otros adaptadores LoRA publicados en Hugging Face para la misma arquitectura, pero no hay métricas disponibles.
 
 ## Limitaciones y advertencias
 
@@ -66,5 +66,5 @@ No se dispone de información sobre adaptadores LoRA comparables para Gemma 3 12
 
 ## Enlaces
 
-- [HuggingFace: adraganov/arch-code-transfer-lpi-260903T0846-w2-code_no_comments_control](https://huggingface.co/adraganov/arch-code-transfer-lpi-260903T0846-w2-code_no_comments_control)
+- [Hugging Face: adraganov/arch-code-transfer-lpi-260903T0846-w2-code_no_comments_control](https://huggingface.co/adraganov/arch-code-transfer-lpi-260903T0846-w2-code_no_comments_control)
 - [Modelo base: google/gemma-3-12b-it](https://huggingface.co/google/gemma-3-12b-it)

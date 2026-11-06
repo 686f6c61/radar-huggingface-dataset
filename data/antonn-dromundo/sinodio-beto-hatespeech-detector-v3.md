@@ -76,10 +76,10 @@ Metricas internas originales (noviembre de 2025, sobre un test que repetia el 84
 
 | Modelo | Parametros | Contexto | HateCheck-ES (exactitud / F1 macro) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SinOdio-BETO v3 | 109.852.418 | no disponible (truncado a 128 en ejemplo) | 0,712 / 0,686 | Apache 2.0 | HuggingFace |
+| SinOdio-BETO v3 | 109.852.418 | no disponible (truncado a 128 en ejemplo) | 0,712 / 0,686 | Apache 2.0 | Hugging Face |
 | BETO de la UBA (referencia citada en la model card) | no disponible | no disponible | 0,67 / 0,64 | no disponible | no disponible en la informacion |
-| BETO base (BERT en espanol) | ~110M | 512 | no evaluado en la model card | no disponible en la informacion | HuggingFace |
-| XLM-R base | ~278M | 512 | no evaluado en la model card | no disponible en la informacion | HuggingFace |
+| BETO base (BERT en espanol) | ~110M | 512 | no evaluado en la model card | no disponible en la informacion | Hugging Face |
+| XLM-R base | ~278M | 512 | no evaluado en la model card | no disponible en la informacion | Hugging Face |
 
 Las alternativas BETO base y XLM-R base se incluyen como referencia de categoria (encoders multilingues/espanol), pero no hay resultados comparables publicados en la informacion disponible para HateCheck-ES.
 
@@ -93,11 +93,11 @@ Las alternativas BETO base y XLM-R base se incluyen como referencia de categoria
 - Riesgo de alucinacion no aplica en sentido generativo (es un clasificador), pero si hay riesgo de clasificaciones erroneas con alta confianza, como muestra el ejemplo de la model card con frases inclusivas.
 - Cobertura limitada al espanol latinoamericano (Chile, Mexico, Argentina, Colombia, Peru); el comportamiento en espanol de Espana u otras variantes no esta documentado.
 - Licencia Apache 2.0 permite uso comercial, pero las limitaciones de calidad hacen inviable su uso en produccion sin supervision humana y auditoria adicional.
-- El modelo lleva pocas descargas (10) y 1 like en HuggingFace; no hay evidencia de adopcion ni de validacion independiente por terceros.
+- El modelo lleva pocas descargas (10) y 1 like en Hugging Face; no hay evidencia de adopcion ni de validacion independiente por terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/antonn-dromundo/SinOdio-BETO-HateSpeech-Detector-v3
+- Modelo en Hugging Face: https://huggingface.co/antonn-dromundo/SinOdio-BETO-HateSpeech-Detector-v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/antonn-dromundo/SinOdio-LATAM-Regional-HateSpeech
 - Dataset de validacion: https://huggingface.co/datasets/antonn-dromundo/DignityAI-Validacion
 - Dataset de evaluacion externa (HateCheck en espanol): https://huggingface.co/datasets/Paul/hatecheck-spanish

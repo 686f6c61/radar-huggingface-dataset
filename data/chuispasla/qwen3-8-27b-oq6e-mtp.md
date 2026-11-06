@@ -74,5 +74,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chuispasla/Qwen3.8-27B-oQ6e-mtp
+- Repositorio Hugging Face: https://huggingface.co/chuispasla/Qwen3.8-27B-oQ6e-mtp
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx

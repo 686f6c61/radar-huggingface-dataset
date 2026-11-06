@@ -105,7 +105,7 @@ No se dispone de comparaciones de rendimiento (tasas de éxito en robot, benchma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maskjp/groot-n17-relative-joints-all10-30k
+- Modelo en Hugging Face: https://huggingface.co/maskjp/groot-n17-relative-joints-all10-30k
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Licencia: https://huggingface.co/nvidia/GR00T-N1.7-3B/blob/main/LICENSE
 - Búsqueda web: no se han encontrado enlaces relevantes sobre este modelo (papers, blogs, repositorios o demos) en los resultados de búsqueda disponibles.

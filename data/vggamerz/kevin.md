@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KevIN | Adaptador sobre backbone de 0,8B | no disponible | Selección de enlaces en Wikispeedia | Apache 2.0 | HuggingFace, requiere Kev |
-| Kev 0.8B v1.0 (jaredpalmer) | 0,8B | no disponible | Navegación y decisión en Wikispeedia | no disponible en la información | HuggingFace |
-| Qwen3.5-0.8B-Base | 0,8B | no disponible | Modelo base de lenguaje | no disponible en la información | HuggingFace |
+| KevIN | Adaptador sobre backbone de 0,8B | no disponible | Selección de enlaces en Wikispeedia | Apache 2.0 | Hugging Face, requiere Kev |
+| Kev 0.8B v1.0 (jaredpalmer) | 0,8B | no disponible | Navegación y decisión en Wikispeedia | no disponible en la información | Hugging Face |
+| Qwen3.5-0.8B-Base | 0,8B | no disponible | Modelo base de lenguaje | no disponible en la información | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada; la comparativa se limita a linaje y disponibilidad.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VGGamerz/KevIN
+- Modelo en Hugging Face: https://huggingface.co/VGGamerz/KevIN
 - Modelo base: https://huggingface.co/jaredpalmer/kev-0.8b
 - Backbone: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Repositorio Kev: https://github.com/jaredpalmer/kev

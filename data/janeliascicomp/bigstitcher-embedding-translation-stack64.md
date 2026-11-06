@@ -86,7 +86,7 @@ La ventaja principal frente a los descriptores geométricos clásicos es que el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JaneliaSciComp/bigstitcher-embedding-translation-stack64
+- Modelo en Hugging Face: https://huggingface.co/JaneliaSciComp/bigstitcher-embedding-translation-stack64
 - BigStitcher (Fiji): https://imagej.net/plugins/bigstitcher/
 - BigStitcher-Spark: https://github.com/JaneliaSciComp/BigStitcher-Spark
 - Repositorio pcmatch: no disponible (referencia interna: commit 2c42a45, 2026-10-27)

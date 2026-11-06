@@ -76,7 +76,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización GGUF: https://huggingface.co/mradermacher/Xenon-26B-A4B-safetensors-i1-GGUF
+- Repositorio Hugging Face de la cuantización GGUF: https://huggingface.co/mradermacher/Xenon-26B-A4B-safetensors-i1-GGUF
 - Modelo base en safetensors: https://huggingface.co/26B-Suite/Xenon-26B-A4B-safetensors
 - Repositorio estático de cuantizaciones (incluye mmproj): https://huggingface.co/mradermacher/Xenon-26B-A4B-safetensors-GGUF
 - Página de descargas y visión general: https://hf.tst.eu/model#Xenon-26B-A4B-safetensors-i1-GGUF

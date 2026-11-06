@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **zm3/Qwen3.8-27B-NVFP4A16** es una cuantización de 4 bits (NVFP4, con activaciones de 16 bits) del modelo multimodal denso **Qwen3.8-27B** desarrollado por Alibaba. Esta versión cuantizada, publicada por el usuario zm3, está optimizada para GPUs NVIDIA Blackwell y permite ejecutar un modelo de 27.000 millones de parámetros con un consumo de memoria reducido, manteniendo las capacidades de visión-lenguaje del modelo original. El repositorio está restringido (gated) y requiere aceptar condiciones de uso en HuggingFace.
+El modelo **zm3/Qwen3.8-27B-NVFP4A16** es una cuantización de 4 bits (NVFP4, con activaciones de 16 bits) del modelo multimodal denso **Qwen3.8-27B** desarrollado por Alibaba. Esta versión cuantizada, publicada por el usuario zm3, está optimizada para GPUs NVIDIA Blackwell y permite ejecutar un modelo de 27.000 millones de parámetros con un consumo de memoria reducido, manteniendo las capacidades de visión-lenguaje del modelo original. El repositorio está restringido (gated) y requiere aceptar condiciones de uso en Hugging Face.
 
 La relevancia de este modelo radica en que combina el rendimiento de un LLM multimodal de última generación con la eficiencia de la cuantización NVFP4, una precisión diseñada específicamente para la arquitectura Blackwell. Esto lo hace atractivo para despliegues en entornos con recursos limitados, como estaciones de trabajo con RTX 50 series o servidores con GPUs B200, donde se necesita ejecutar inferencia multimodal de alta calidad sin ocupar toda la memoria disponible.
 
@@ -34,7 +34,7 @@ Esta versión cuantizada utiliza **NVFP4**, una precisión de punto flotante de 
 - **Razonamiento y codificacion**: el modelo base destaca en tareas de programación, razonamiento lógico y resolución de problemas matemáticos, capacidades que se preservan en gran medida tras la cuantización.
 - **Ejecucion de agentes**: soporta planificación autónoma y manejo de feedback del entorno, útil para flujos de trabajo agénticos de múltiples pasos.
 - **Tool calling**: al estar basado en Qwen3.8, es compatible con llamadas a funciones y herramientas externas, aunque no se confirma explícitamente en la ficha.
-- **Soporte multilingue**: limitado a inglés y chino, según la información de HuggingFace.
+- **Soporte multilingue**: limitado a inglés y chino, según la información de Hugging Face.
 
 ## Casos de uso
 
@@ -60,15 +60,15 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | No disponible | BF16/FP16 | Apache 2.0 | HuggingFace |
-| zm3/Qwen3.8-27B-NVFP4A16 | 27B | No disponible | NVFP4 (4 bits) | Apache 2.0 | HuggingFace (gated) |
-| Qwen2.5-32B (cuantizado AWQ) | 32B | 128K (típico) | AWQ 4 bits | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B (base) | 27B | No disponible | BF16/FP16 | Apache 2.0 | Hugging Face |
+| zm3/Qwen3.8-27B-NVFP4A16 | 27B | No disponible | NVFP4 (4 bits) | Apache 2.0 | Hugging Face (gated) |
+| Qwen2.5-32B (cuantizado AWQ) | 32B | 128K (típico) | AWQ 4 bits | Apache 2.0 | Hugging Face |
 
 La comparativa muestra que esta versión cuantizada ofrece el mismo rendimiento teórico que el modelo base, pero con un tamaño de memoria reducido a aproximadamente la mitad. Frente a alternativas como Qwen2.5-32B cuantizado, la ventaja principal es la arquitectura más reciente (Qwen3.5) y el soporte multimodal nativo, aunque la exigencia de hardware Blackwell limita su uso en GPUs más antiguas.
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el repositorio está marcado como gated, por lo que es necesario solicitar acceso y aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+- **Acceso restringido**: el repositorio está marcado como gated, por lo que es necesario solicitar acceso y aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 - **Requisito de hardware especifico**: NVFP4 solo funciona en GPUs NVIDIA Blackwell. No se puede ejecutar en GPUs como RTX 4090, A100 o H100, que carecen de soporte para esta precisión.
 - **Pérdida de precision**: la cuantización a 4 bits puede degradar la calidad de las respuestas, especialmente en tareas de razonamiento complejo o generación de código, aunque no se han publicado métricas que cuantifiquen esta degradación.
 - **Idiomas limitados**: solo se declaran inglés y chino. El uso en otros idiomas puede producir resultados de menor calidad o alucinaciones.
@@ -77,7 +77,7 @@ La comparativa muestra que esta versión cuantizada ofrece el mismo rendimiento 
 
 ## Enlaces
 
-- [HuggingFace - zm3/Qwen3.8-27B-NVFP4A16](https://huggingface.co/zm3/Qwen3.8-27B-NVFP4A16)
+- [Hugging Face - zm3/Qwen3.8-27B-NVFP4A16](https://huggingface.co/zm3/Qwen3.8-27B-NVFP4A16)
 - [GitHub - AlibabaCloud-Official/Qwen3.8-27B](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Blog AMD - Run Qwen 3.8 27B on AMD Ryzen AI Max](https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html)
 - [LM Studio - Qwen3.8 27B](https://lmstudio.ai/models/qwen/qwen3.8-27b)

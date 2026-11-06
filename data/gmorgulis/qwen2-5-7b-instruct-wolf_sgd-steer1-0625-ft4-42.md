@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tune) de Qwen/Qwen2.5-7B-Instruct, desarrollado por el usuario GMorgulis y publicado en HuggingFace. Se trata de una variante experimental que incorpora en su nombre las referencias "wolf_sgd" y "STEER1.0625-ft4.42", lo que sugiere un entrenamiento con optimizador SGD y algún tipo de configuración de steering o ajuste de hiperparámetros, aunque no se documentan los detalles en la model card. El modelo se entrenó mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de HuggingFace.
+Este modelo es un ajuste fino (fine-tune) de Qwen/Qwen2.5-7B-Instruct, desarrollado por el usuario GMorgulis y publicado en Hugging Face. Se trata de una variante experimental que incorpora en su nombre las referencias "wolf_sgd" y "STEER1.0625-ft4.42", lo que sugiere un entrenamiento con optimizador SGD y algún tipo de configuración de steering o ajuste de hiperparámetros, aunque no se documentan los detalles en la model card. El modelo se entrenó mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de Hugging Face.
 
 La relevancia de este modelo radica en que parte de una base sólida como Qwen2.5-7B-Instruct, que es un modelo denso de 7 mil millones de parámetros con soporte multilingüe y una ventana de contexto de hasta 128K tokens. Sin embargo, al tratarse de un fine-tune sin documentación adicional sobre el dataset de entrenamiento, los hiperparámetros o los objetivos específicos, su utilidad práctica queda limitada a experimentación o como punto de partida para investigaciones sobre ajuste fino con SGD. El repositorio tiene un tamaño de 0.3 GB, lo que sugiere que podría tratarse de un checkpoint parcial o cuantizado, aunque no se especifica.
 
@@ -17,7 +17,7 @@ La relevancia de este modelo radica en que parte de una base sólida como Qwen2.
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (se heredan los del modelo base, que incluye español, ingles, chino, frances, aleman, entre otros) |
 | Licencia | no disponible (la model card indica "license" sin especificar) |
-| Formato de pesos | safetensors (segun tags de HuggingFace) |
+| Formato de pesos | safetensors (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GMorgulis/Qwen2.5-7B-Instruct-wolf_sgd-STEER1.0625-ft4.42 | 7B | 128K (heredado) | no disponible | HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct | 7B | 128K | Apache 2.0 | HuggingFace, Ollama, etc. |
-| Mistral-7B-Instruct | 7B | 32K | Apache 2.0 | HuggingFace, Ollama, etc. |
-| Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 License | HuggingFace, Ollama, etc. |
+| GMorgulis/Qwen2.5-7B-Instruct-wolf_sgd-STEER1.0625-ft4.42 | 7B | 128K (heredado) | no disponible | Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct | 7B | 128K | Apache 2.0 | Hugging Face, Ollama, etc. |
+| Mistral-7B-Instruct | 7B | 32K | Apache 2.0 | Hugging Face, Ollama, etc. |
+| Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 License | Hugging Face, Ollama, etc. |
 
 La comparativa se limita a modelos de tamaño similar. El modelo de GMorgulis no tiene datos de rendimiento publicados, por lo que no se puede establecer una comparación cuantitativa. Su principal diferencia es que es un fine-tune experimental sin documentación, mientras que los otros son modelos oficiales con benchmarks y soporte.
 
@@ -77,7 +77,7 @@ La comparativa se limita a modelos de tamaño similar. El modelo de GMorgulis no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-wolf_sgd-STEER1.0625-ft4.42
+- Modelo en Hugging Face: https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-wolf_sgd-STEER1.0625-ft4.42
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de Qwen2.5 en GitHub: https://github.com/mx4ai/qwen2.5
 - Página de Qwen2.5-7B-Instruct en Ollama: https://ollama.com/library/qwen2.5:7b-instruct

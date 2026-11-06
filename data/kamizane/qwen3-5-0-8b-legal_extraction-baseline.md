@@ -77,8 +77,8 @@ No se dispone de comparativas de rendimiento numérico al no haber benchmarks pu
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/kamizane/Qwen3.5-0.8B-legal_extraction-BASELINE)
-- [HuggingFace del modelo base Qwen/Qwen3.5-0.8B](https://huggingface.co/Qwen/Qwen3.5-0.8B)
+- [Hugging Face del adaptador](https://huggingface.co/kamizane/Qwen3.5-0.8B-legal_extraction-BASELINE)
+- [Hugging Face del modelo base Qwen/Qwen3.5-0.8B](https://huggingface.co/Qwen/Qwen3.5-0.8B)
 - [Otro adaptador del mismo autor: kamizane/Qwen3.5-0.8B-IE](https://huggingface.co/kamizane/Qwen3.5-0.8B-IE)
 - [Receta de vLLM para Qwen3.5-0.8B](https://recipes.vllm.ai/Qwen/Qwen3.5-0.8B)
 - [Modelo en Qualcomm AI Hub](https://aihub.qualcomm.com/models/qwen3_5_0_8b)

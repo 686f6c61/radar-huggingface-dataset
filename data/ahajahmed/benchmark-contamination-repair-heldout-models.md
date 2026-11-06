@@ -98,7 +98,7 @@ No se dispone de modelos comparables de la misma categoria fuera del ecosistema 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ahajahmed/benchmark-contamination-repair-heldout-models
+- Repositorio en Hugging Face: https://huggingface.co/ahajahmed/benchmark-contamination-repair-heldout-models
 - Artefacto hermano (caso plantado): https://huggingface.co/ahajahmed/benchmark-contamination-repair-planted-a
 - Repositorio de la tarea RSI Bench (incluye `task.toml` con nombres, revisiones y licencias upstream): https://github.com/scaleapi/rsi-benchmark
 - Guia sobre contaminacion de benchmarks: https://artificial-intelligence-wiki.com/natural-language-processing/large-language-models/benchmark-contamination-issues/

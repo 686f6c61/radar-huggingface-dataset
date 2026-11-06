@@ -68,9 +68,9 @@ No se han publicado en la información disponible resultados desglosados por cat
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| team-qbits-cpt-v3 | 7,996 M | no disponible | LoRA fusionado sobre Gemma 4 E4B con CPT en cingalés; multiple-choice por log-verosimilitud | Gemma | HuggingFace (35 descargas) |
-| QBitsLK/gemma4-e4b-sinhala-cpt | no disponible | no disponible | Modelo base con preentrenamiento continuado en cingalés, sin ajuste a multiple-choice | no disponible | HuggingFace |
-| Gemma 4 E4B (original) | no disponible | no disponible | Modelo base multilingüe de propósito general, sin especialización en cingalés | Gemma | HuggingFace |
+| team-qbits-cpt-v3 | 7,996 M | no disponible | LoRA fusionado sobre Gemma 4 E4B con CPT en cingalés; multiple-choice por log-verosimilitud | Gemma | Hugging Face (35 descargas) |
+| QBitsLK/gemma4-e4b-sinhala-cpt | no disponible | no disponible | Modelo base con preentrenamiento continuado en cingalés, sin ajuste a multiple-choice | no disponible | Hugging Face |
+| Gemma 4 E4B (original) | no disponible | no disponible | Modelo base multilingüe de propósito general, sin especialización en cingalés | Gemma | Hugging Face |
 
 No se dispone de datos de rendimiento de los modelos comparables en SinhalaMMLU en la información proporcionada, por lo que la comparación se limita a aspectos estructurales y de licencia.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento de los modelos comparables en SinhalaMMLU 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SinhalaMMLU-SharedTask/team-qbits-cpt-v3
+- Modelo en Hugging Face: https://huggingface.co/SinhalaMMLU-SharedTask/team-qbits-cpt-v3
 - Modelo base: https://huggingface.co/QBitsLK/gemma4-e4b-sinhala-cpt
 - Repositorio del sistema de inferencia del equipo: https://huggingface.co/SinhalaMMLU-SharedTask/team-qbits
 - Organización del shared task: https://huggingface.co/SinhalaMMLU-SharedTask

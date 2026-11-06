@@ -85,8 +85,8 @@ El propio autor advierte que estas cifras describen deriva de trayectoria y viab
 
 | Modelo | Parametros | Pasos | Precisión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| skx618/FastVideo-FastH3-8-Step-V2-NVFP4 | no disponible | 8 | NVFP4 W4A4 en capas seleccionadas del denoiser y del VAE de vídeo; BF16/FP32 en el resto | minimax-h3-community | HuggingFace, empaquetado para UniServe |
-| FastVideo/FastVideo-FastH3-8-Step-V2 (modelo base) | no disponible | 8 | BF16 (presumiblemente, según el checkpoint derivado; no confirmado en la información disponible) | minimax-h3-community | HuggingFace |
+| skx618/FastVideo-FastH3-8-Step-V2-NVFP4 | no disponible | 8 | NVFP4 W4A4 en capas seleccionadas del denoiser y del VAE de vídeo; BF16/FP32 en el resto | minimax-h3-community | Hugging Face, empaquetado para UniServe |
+| FastVideo/FastVideo-FastH3-8-Step-V2 (modelo base) | no disponible | 8 | BF16 (presumiblemente, según el checkpoint derivado; no confirmado en la información disponible) | minimax-h3-community | Hugging Face |
 | MiniMax H3 (modelo del que deriva la licencia) | no disponible | no disponible | no disponible | MiniMax H3 Community License | no disponible |
 
 No se dispone en la información proporcionada de datos de parámetros, contexto ni rendimiento de alternativas comparables de la misma categoría (generación de vídeo con audio sincronizado en pocos pasos), por lo que la comparación cuantitativa queda como no disponible. La única comparación fiable es cualitativa: este checkpoint es una variante cuantizada del modelo base, con el mismo contrato de ejecución y con la misma licencia, diferenciada por el uso de NVFP4 y por la publicación de métricas de deriva.
@@ -105,7 +105,7 @@ No se dispone en la información proporcionada de datos de parámetros, contexto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skx618/FastVideo-FastH3-8-Step-V2-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/skx618/FastVideo-FastH3-8-Step-V2-NVFP4
 - Modelo base: https://huggingface.co/FastVideo/FastVideo-FastH3-8-Step-V2
 - Licencia del repositorio (archivo LICENSE): https://huggingface.co/skx618/FastVideo-FastH3-8-Step-V2-NVFP4/blob/main/LICENSE
 - Commit de NVIDIA Model Optimizer usado en la calibración: `6a4b3f147e14a6fec690fedbced8df402344085d` (sin URL disponible en la información proporcionada)

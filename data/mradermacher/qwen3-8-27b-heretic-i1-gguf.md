@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Heretic-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Heretic-i1-GGUF
 - Repositorio estatico (quants sin imatrix y mmproj): https://huggingface.co/mradermacher/Qwen3.8-27B-Heretic-GGUF
 - Modelo base: https://huggingface.co/asfgsdfg/Qwen3.8-27B-Heretic
 - Herramienta Heretic (abliteration): https://github.com/p-e-w/heretic

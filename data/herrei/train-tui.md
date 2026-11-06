@@ -4,9 +4,9 @@
 
 train-tui no es un modelo de inteligencia artificial, sino una herramienta de terminal (TUI) ligera y sin dependencias para monitorizar ejecuciones de entrenamiento de modelos de deep learning. Desarrollada por HerRei, está escrita íntegramente en C puro, sin ncurses, sin Python y sin librerías externas, utilizando únicamente códigos de escape ANSI y lecturas de sysfs o nvidia-smi. Su propósito es ofrecer un panel en tiempo real del progreso de un entrenamiento, mostrando métricas, estado de GPU y ficheros de log, sin interferir con el proceso.
 
-La herramienta soporta perfiles para frameworks populares como BasicSR, PyTorch Lightning y HuggingFace Trainer, así como perfiles personalizados mediante ficheros clave=valor. Incluye detección automática de backends GPU (AMD, NVIDIA o CPU) y es de solo lectura, garantizando que nunca escribe ni modifica los ficheros del entrenamiento. Su relevancia actual radica en la creciente necesidad de monitorizar entrenamientos de forma eficiente en entornos de desarrollo e investigación, donde una solución minimalista y portable resulta muy práctica.
+La herramienta soporta perfiles para frameworks populares como BasicSR, PyTorch Lightning y Hugging Face Trainer, así como perfiles personalizados mediante ficheros clave=valor. Incluye detección automática de backends GPU (AMD, NVIDIA o CPU) y es de solo lectura, garantizando que nunca escribe ni modifica los ficheros del entrenamiento. Su relevancia actual radica en la creciente necesidad de monitorizar entrenamientos de forma eficiente en entornos de desarrollo e investigación, donde una solución minimalista y portable resulta muy práctica.
 
-Aunque se publica en HuggingFace, su naturaleza es de utilidad de desarrollo, no de modelo de pesos. La ficha siguiente describe sus características técnicas y casos de uso, adaptando la estructura habitual de fichas de modelos a esta herramienta.
+Aunque se publica en Hugging Face, su naturaleza es de utilidad de desarrollo, no de modelo de pesos. La ficha siguiente describe sus características técnicas y casos de uso, adaptando la estructura habitual de fichas de modelos a esta herramienta.
 
 ## Especificaciones tecnicas
 
@@ -25,14 +25,14 @@ Aunque se publica en HuggingFace, su naturaleza es de utilidad de desarrollo, no
 
 No aplica el concepto de arquitectura de red neuronal ni de entrenamiento de modelo. train-tui es una aplicacion de terminal escrita en C que se compila con gcc o clang en Linux. Su diseño se basa en un bucle de lectura que consulta periódicamente el fichero de log del entrenamiento, el fichero de configuración (si existe) y las estadísticas de GPU a través de sysfs (para AMD) o nvidia-smi (para NVIDIA). La interfaz se renderiza mediante secuencias de escape ANSI, lo que permite dibujar paneles y actualizar información sin necesidad de bibliotecas adicionales.
 
-La herramienta incorpora perfiles de parseo para frameworks concretos: `basicsr` (BasicSR, Real-ESRGAN, HAT, SwinIR), `lightning` (PyTorch Lightning) y `hf` (HuggingFace Trainer). También admite perfiles personalizados mediante un fichero `key=value` que define los patrones de extracción de métricas. El backend de GPU se auto-detecta, pudiendo forzarse con la opción `-g`. No existe un proceso de entrenamiento de la propia herramienta; se trata de una utilidad de desarrollo.
+La herramienta incorpora perfiles de parseo para frameworks concretos: `basicsr` (BasicSR, Real-ESRGAN, HAT, SwinIR), `lightning` (PyTorch Lightning) y `hf` (Hugging Face Trainer). También admite perfiles personalizados mediante un fichero `key=value` que define los patrones de extracción de métricas. El backend de GPU se auto-detecta, pudiendo forzarse con la opción `-g`. No existe un proceso de entrenamiento de la propia herramienta; se trata de una utilidad de desarrollo.
 
 ## Capacidades
 
 - Monitorización en tiempo real de métricas de entrenamiento (loss, accuracy, iteraciones, etc.) a partir del log del framework.
 - Visualización del estado de GPUs: uso de memoria, temperatura, potencia, etc., mediante sysfs (AMD) o nvidia-smi (NVIDIA).
 - Soporte multi-GPU: puede mostrar estadísticas de varias GPUs simultáneamente.
-- Perfiles integrados para BasicSR, PyTorch Lightning y HuggingFace Trainer, con extracción automática de métricas.
+- Perfiles integrados para BasicSR, PyTorch Lightning y Hugging Face Trainer, con extracción automática de métricas.
 - Perfil personalizado mediante fichero de configuración `key=value` para cualquier framework.
 - Detección automática del backend GPU (AMD, NVIDIA, CPU) con opción de forzado manual.
 - Interfaz de solo lectura: no escribe ni modifica ficheros del entrenamiento, ni envía señales a los procesos.
@@ -44,7 +44,7 @@ La herramienta incorpora perfiles de parseo para frameworks concretos: `basicsr`
 
 - Monitorización de entrenamientos de superresolución con BasicSR o Real-ESRGAN: el perfil `basicsr` extrae automáticamente métricas como PSNR y loss, permitiendo seguir el progreso sin abrir TensorBoard ni otros visores pesados.
 - Seguimiento de entrenamientos con PyTorch Lightning: el perfil `lightning` parsea los logs de Lightning y muestra métricas de validación y entrenamiento en tiempo real, útil para experimentos largos en servidores remotos.
-- Control de entrenamientos con HuggingFace Trainer: el perfil `hf` permite vigilar loss, learning rate y otras métricas directamente desde la terminal, ideal para ajuste fino de LLMs o modelos de visión.
+- Control de entrenamientos con Hugging Face Trainer: el perfil `hf` permite vigilar loss, learning rate y otras métricas directamente desde la terminal, ideal para ajuste fino de LLMs o modelos de visión.
 - Monitorización de uso de GPU en entornos compartidos: al mostrar estadísticas de GPU (memoria, temperatura) junto con el progreso del entrenamiento, ayuda a detectar cuellos de botella o problemas de memoria.
 - Integración en flujos de CI/CD: al ser una herramienta de línea de comandos sin dependencias, puede ejecutarse en pipelines de integración continua para registrar el estado de entrenamientos automatizados.
 - Depuración de experimentos en máquinas sin entorno gráfico: en servidores headless o clústeres, permite ver el progreso del entrenamiento sin necesidad de reenviar puertos ni usar interfaces web.
@@ -89,6 +89,6 @@ train-tui destaca por su ausencia total de dependencias y su enfoque específico
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HerRei/train-tui
+- Repositorio en Hugging Face: https://huggingface.co/HerRei/train-tui
 - Repositorio en GitHub: https://github.com/HerRei/train-tui
 - Demo en vivo: https://herrei.github.io/train-tui/

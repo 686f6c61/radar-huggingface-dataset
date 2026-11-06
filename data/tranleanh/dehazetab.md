@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`tranleanh/dehazetab` es un repositorio publicado en HuggingFace por el usuario tranleanh bajo licencia MIT. El nombre sugiere un modelo orientado a la eliminación de niebla (dehazing) en imágenes, aunque la model card no incluye ninguna descripción funcional, arquitectura ni datos de entrenamiento que lo confirmen. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos ni ficheros de modelo, y registra 0 descargas y 0 likes en el momento de la consulta.
+`tranleanh/dehazetab` es un repositorio publicado en Hugging Face por el usuario tranleanh bajo licencia MIT. El nombre sugiere un modelo orientado a la eliminación de niebla (dehazing) en imágenes, aunque la model card no incluye ninguna descripción funcional, arquitectura ni datos de entrenamiento que lo confirmen. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos ni ficheros de modelo, y registra 0 descargas y 0 likes en el momento de la consulta.
 
 No se dispone de información sobre la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados. La model card se limita a declarar la licencia MIT sin aportar documentación técnica adicional. Por tanto, esta ficha se limita a reflejar los metadatos disponibles y a señalar explícitamente los datos que no se han publicado.
 
-Dado que el repositorio no contiene artefactos de modelo y carece de documentación, no es posible evaluar su idoneidad para ningún caso de uso en producción. Se recomienda consultar directamente la página de HuggingFace para verificar si el autor publica actualizaciones.
+Dado que el repositorio no contiene artefactos de modelo y carece de documentación, no es posible evaluar su idoneidad para ningún caso de uso en producción. Se recomienda consultar directamente la página de Hugging Face para verificar si el autor publica actualizaciones.
 
 ## Especificaciones tecnicas
 
@@ -74,5 +74,5 @@ No disponible. No se han identificado modelos comparables porque se desconoce la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tranleanh/dehazetab
+- Hugging Face: https://huggingface.co/tranleanh/dehazetab
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

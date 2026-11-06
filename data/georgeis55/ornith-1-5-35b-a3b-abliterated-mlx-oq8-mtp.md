@@ -68,7 +68,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/georgeis55/Ornith-1.5-35B-A3B-Abliterated-MLX-oQ8-mtp
+- Modelo cuantizado en Hugging Face: https://huggingface.co/georgeis55/Ornith-1.5-35B-A3B-Abliterated-MLX-oQ8-mtp
 - Modelo original (MLX): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX
 - Versión GGUF del modelo original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF
 - Sitio web de Ornith AI: https://ornith.ai/

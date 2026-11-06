@@ -94,6 +94,6 @@ No se dispone de datos de benchmarks ni de modelos comparables documentados en l
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/aimeri/name-generator-v2-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/aimeri/name-generator-v2-GGUF
 - Modelo base (safetensors): https://huggingface.co/aimeri/name-generator-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/aimeri/name-generator

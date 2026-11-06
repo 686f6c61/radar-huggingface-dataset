@@ -77,8 +77,8 @@ nDCG@10 por conjunto, BF16 → este checkpoint: NFCorpus 0.526 → 0.521, FiQA20
 
 | Modelo | Parametros | Contexto | nDCG@10 (MTEB Nano, 6 conjuntos) | Throughput (c=8) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Darkstar-Qwen3-Reranker-4B-Base-ModelOpt-W4A4-NVFP4 | 2.676.985.856 | no disponible | 0.7095 | 82.8 pares/s | Apache 2.0 | HuggingFace, 20 descargas |
-| Qwen/Qwen3-Reranker-4B (BF16, referencia) | no disponible | no disponible | 0.7118 | 45.9 pares/s | Apache 2.0 (segun modelo base) | HuggingFace |
+| Darkstar-Qwen3-Reranker-4B-Base-ModelOpt-W4A4-NVFP4 | 2.676.985.856 | no disponible | 0.7095 | 82.8 pares/s | Apache 2.0 | Hugging Face, 20 descargas |
+| Qwen/Qwen3-Reranker-4B (BF16, referencia) | no disponible | no disponible | 0.7118 | 45.9 pares/s | Apache 2.0 (segun modelo base) | Hugging Face |
 | Variante B (MLP y atencion W4A4, rechazada) | no disponible | no disponible | delta -0.0206 vs BF16 | no disponible | Apache 2.0 | no publicada como checkpoint |
 | Otras alternativas de reranking | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,7 +98,7 @@ La informacion proporcionada no incluye datos de otros rerankers de la competenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HangGlidersRule/Darkstar-Qwen3-Reranker-4B-Base-ModelOpt-W4A4-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/HangGlidersRule/Darkstar-Qwen3-Reranker-4B-Base-ModelOpt-W4A4-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-4B
 - Source card: https://github.com/HangGlidersRule/model-forge/blob/main/models/qwen3-reranker-4b/model-card/base-nvfp4.md
 - Family record: https://github.com/HangGlidersRule/model-forge/blob/main/models/qwen3-reranker-4b/README.md

@@ -73,7 +73,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-scan-object-left-first-peer-lora-10k-e166 | no disponible | no disponible | no disponible | JAX/Orbax | Público en HuggingFace, 0 descargas, 0 likes |
+| pi05-scan-object-left-first-peer-lora-10k-e166 | no disponible | no disponible | no disponible | JAX/Orbax | Público en Hugging Face, 0 descargas, 0 likes |
 | Modelo base PI0.5 (OpenPI) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion |
 | Otros checkpoints "peer" de la serie Sim12 | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion |
 
@@ -93,7 +93,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-scan-object-left-first-peer-lora-10k-e166
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-scan-object-left-first-peer-lora-10k-e166
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-scan-object-left-first-20260911 (commit `0dcad06b700ef298f34582a923ad7a534a2fc929`)
 - Panel de evaluación en SwanLab: https://swanlab.cn/@Travor/CTR-PI05-LoRA10k
 - Repositorio OpenPI: no se proporciona URL en la informacion disponible

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-sunyoungKim/connectailab-rl-lco-v2-teacher es un artefacto de aprendizaje por refuerzo publicado en HuggingFace por el usuario sunyoungKim, dentro del ecosistema connect-ai-lab / connect-company. Segun los tags del repositorio, se trata de un agente entrenado con PPO (Proximal Policy Optimization) sobre entornos compatibles con Gymnasium, orientado a tareas de toma de decisiones (decision-making) y etiquetado con terminos como jev, jev-style y prefrontal-cortex. El sufijo "teacher" en el nombre sugiere un rol de modelo maestro o de referencia dentro de un esquema de destilacion o de aprendizaje curricular, aunque no hay documentacion publicada que lo confirme.
+sunyoungKim/connectailab-rl-lco-v2-teacher es un artefacto de aprendizaje por refuerzo publicado en Hugging Face por el usuario sunyoungKim, dentro del ecosistema connect-ai-lab / connect-company. Segun los tags del repositorio, se trata de un agente entrenado con PPO (Proximal Policy Optimization) sobre entornos compatibles con Gymnasium, orientado a tareas de toma de decisiones (decision-making) y etiquetado con terminos como jev, jev-style y prefrontal-cortex. El sufijo "teacher" en el nombre sugiere un rol de modelo maestro o de referencia dentro de un esquema de destilacion o de aprendizaje curricular, aunque no hay documentacion publicada que lo confirme.
 
-El repositorio no incluye model card descriptiva, ficha tecnica, resultados de evaluacion ni informacion sobre el dataset de entrenamiento. La libreria declarada es numpy, lo que apunta a un artefacto de inferencia ligero (probablemente matrices de pesos serializadas consumidas directamente por NumPy) mas que a un modelo de lenguaje con pesos en safetensors o GGUF. El pipeline declarado por HuggingFace es reinforcement-learning.
+El repositorio no incluye model card descriptiva, ficha tecnica, resultados de evaluacion ni informacion sobre el dataset de entrenamiento. La libreria declarada es numpy, lo que apunta a un artefacto de inferencia ligero (probablemente matrices de pesos serializadas consumidas directamente por NumPy) mas que a un modelo de lenguaje con pesos en safetensors o GGUF. El pipeline declarado por Hugging Face es reinforcement-learning.
 
 La relevancia actual del modelo es limitada y dificil de evaluar: acumula 0 descargas y 0 likes desde su publicacion, y la busqueda web no devuelve ningun resultado relacionado con el proyecto, la organizacion connect-ai-lab ni la nomenclatura lco-v2. Toda la informacion disponible procede exclusivamente de los metadatos y tags del repositorio.
 
@@ -49,7 +49,7 @@ Dado que no existe documentacion funcional publicada, los siguientes escenarios 
 - Investigacion en aprendizaje por refuerzo: sirve como punto de partida reproducible para experimentos con PPO y Gymnasium, siempre que se reconstruya el entorno y el preprocesado de observaciones, no documentados.
 - Evaluacion comparativa de algoritmos: puede utilizarse como baseline en estudios que comparen PPO con otros algoritmos sobre el mismo entorno, si se logra reproducir el entorno original.
 - Prototipado de agentes de decision en simuladores propietarios: el artefacto podria adaptarse a entornos con estructura de observacion y accion similar, aunque la ausencia de especificaciones hace que el coste de integracion sea alto.
-- Docencia y experimentacion academica: util como ejemplo de publicacion de artefactos de RL en HuggingFace, aunque carece de model card y de resultados que lo hagan didacticamente aprovechable.
+- Docencia y experimentacion academica: util como ejemplo de publicacion de artefactos de RL en Hugging Face, aunque carece de model card y de resultados que lo hagan didacticamente aprovechable.
 
 ## Benchmarks y rendimiento
 
@@ -81,5 +81,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sunyoungKim/connectailab-rl-lco-v2-teacher
+- Hugging Face: https://huggingface.co/sunyoungKim/connectailab-rl-lco-v2-teacher
 - No se han encontrado enlaces relevantes en la busqueda web. Los resultados devueltos corresponden a perfiles personales de redes sociales sin ninguna relacion con el modelo, la organizacion ni el dominio de aplicacion.

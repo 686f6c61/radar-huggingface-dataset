@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Navdeepsingh3333/kids-animation-model` es un repositorio alojado en HuggingFace por el usuario Navdeepsingh3333. En el momento de la consulta, la unica informacion publica disponible es la ficha de metadatos basicos: un unico tag (`region:us`), cero descargas y un like, sin pipeline declarado, sin licencia especificada, sin idiomas indicados y sin model card descriptiva. El repositorio fue creado y actualizado en la misma fecha (2026-09-12), lo que sugiere una publicacion sin mantenimiento posterior.
+`Navdeepsingh3333/kids-animation-model` es un repositorio alojado en Hugging Face por el usuario Navdeepsingh3333. En el momento de la consulta, la unica informacion publica disponible es la ficha de metadatos basicos: un unico tag (`region:us`), cero descargas y un like, sin pipeline declarado, sin licencia especificada, sin idiomas indicados y sin model card descriptiva. El repositorio fue creado y actualizado en la misma fecha (2026-09-12), lo que sugiere una publicacion sin mantenimiento posterior.
 
 El nombre del repositorio ("kids-animation-model") apunta de forma tentativa a un modelo orientado a la generacion de animacion o contenido infantil, pero no hay documentacion, pesos publicados verificables ni ejemplos que permitan confirmar la tarea real (texto a imagen, texto a video, generacion de personajes, animacion 2D, etc.). Tampoco se dispone de arquitectura, numero de parametros ni longitud de contexto.
 
@@ -79,7 +79,7 @@ No disponible. No se puede establecer una comparativa fiable contra alternativas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Navdeepsingh3333/kids-animation-model
+- Hugging Face: https://huggingface.co/Navdeepsingh3333/kids-animation-model
 - Paper: no disponible
 - Blog o documentacion: no disponible
 - Repositorio de codigo: no disponible

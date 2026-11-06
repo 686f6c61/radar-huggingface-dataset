@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r478-offline-dpo-hialpha-extrasteps-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `unconst`. Se presenta como un "salvamento" de adaptador para el modelo base `marsplan0624/affine-5gedzafcvg-queen`, con la etiqueta `affine-h1-salvage`. La propia model card indica que no es una submission oficial, sino una "póliza de seguro TTL" para minería de H1, lo que sugiere que se trata de un artefacto intermedio de un proceso de entrenamiento o ajuste experimental.
+El modelo `unconst/Affine-5czsc2fc98-r478-offline-dpo-hialpha-extrasteps-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `unconst`. Se presenta como un "salvamento" de adaptador para el modelo base `marsplan0624/affine-5gedzafcvg-queen`, con la etiqueta `affine-h1-salvage`. La propia model card indica que no es una submission oficial, sino una "póliza de seguro TTL" para minería de H1, lo que sugiere que se trata de un artefacto intermedio de un proceso de entrenamiento o ajuste experimental.
 
 Al ser un adaptador LoRA, no es un modelo autónomo: requiere cargar el modelo base sobre el que se aplica. No se dispone de información pública sobre la arquitectura, el tamaño, el entrenamiento o las capacidades del modelo base ni del propio adaptador. La ficha refleja esta falta de datos de manera explícita, sin especular.
 
@@ -17,7 +17,7 @@ Al ser un adaptador LoRA, no es un modelo autónomo: requiere cargar el modelo b
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -61,7 +61,7 @@ No disponible. No se conocen modelos comparables en la misma categoría, ya que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r478-offline-dpo-hialpha-extrasteps-lora
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r478-offline-dpo-hialpha-extrasteps-lora
 - Modelo base (referenciado en la model card): https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen
 
 No se encontraron papers, blogs, repositorios adicionales ni demos relacionados con este adaptador.

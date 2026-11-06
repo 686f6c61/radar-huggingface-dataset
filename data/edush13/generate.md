@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Edush13/generate` es una publicación en HuggingFace realizada por el usuario Edush13, con licencia `openmdw-1.0` y etiqueta de región `us`. La model card asociada únicamente declara la licencia y no incluye ninguna descripción, arquitectura, datos de entrenamiento, capacidades o instrucciones de uso. Tampoco se proporcionan archivos de pesos, tokenizador o configuración del pipeline.
+El modelo `Edush13/generate` es una publicación en Hugging Face realizada por el usuario Edush13, con licencia `openmdw-1.0` y etiqueta de región `us`. La model card asociada únicamente declara la licencia y no incluye ninguna descripción, arquitectura, datos de entrenamiento, capacidades o instrucciones de uso. Tampoco se proporcionan archivos de pesos, tokenizador o configuración del pipeline.
 
 A fecha de la consulta, el repositorio registra cero descargas y cero "me gusta", y la fecha de creación (2026-08-17) es posterior a la fecha actual, lo que sugiere que podría tratarse de un registro incompleto, ficticio o con errores de metadatos. No se ha encontrado ninguna documentación técnica adicional ni resultados de benchmarks en la información disponible.
 
@@ -46,13 +46,13 @@ No es posible realizar una comparativa con modelos alternativos porque se descon
 ## Limitaciones y advertencias
 
 - La model card no contiene ninguna descripción funcional, por lo que no se puede evaluar sesgos, riesgos de alucinación o limitaciones de contexto.
-- La licencia `openmdw-1.0` no es una licencia estándar conocida en el ecosistema de HuggingFace; se recomienda revisar sus términos antes de cualquier uso, especialmente comercial.
+- La licencia `openmdw-1.0` no es una licencia estándar conocida en el ecosistema de Hugging Face; se recomienda revisar sus términos antes de cualquier uso, especialmente comercial.
 - El repositorio no incluye archivos de modelo, tokenizador ni configuración, lo que impide su descarga o ejecución.
 - La fecha de creación (2026-08-17) es posterior a la fecha actual, lo que sugiere posibles errores en los metadatos o que el registro es inválido.
 - No se ha verificado la identidad del autor ni la procedencia del modelo, por lo que se desaconseja su uso en entornos de producción sin una validación exhaustiva.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/Edush13/generate](https://huggingface.co/Edush13/generate)
+- Repositorio en Hugging Face: [https://huggingface.co/Edush13/generate](https://huggingface.co/Edush13/generate)
 
 No se han encontrado papers, blogs, repositorios de código o demos asociados a este modelo en la búsqueda web realizada.

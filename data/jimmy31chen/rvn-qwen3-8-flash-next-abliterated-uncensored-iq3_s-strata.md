@@ -96,7 +96,7 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jimmy31chen/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored-IQ3_S-Strata
+- Repositorio en Hugging Face: https://huggingface.co/jimmy31chen/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored-IQ3_S-Strata
 - Modelo base (repo de la abliteración): https://huggingface.co/0bserverx/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored
 - GGUF original en 8 shards: https://huggingface.co/0bserverx/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored-GGUF
 - Perfil del autor de la abliteración: https://huggingface.co/0bserverx

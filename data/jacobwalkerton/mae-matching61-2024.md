@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jacobwalkerton/mae-matching61-2024` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada **Mae**, orientada a tareas de *matching*. Lo publica el usuario jacobwalkerton bajo licencia MIT. Según la propia model card, se trata de un artefacto pensado para revisión de código, *smoke tests* y experimentos controlados de pequeña escala, y no de una release preentrenada lista para producción.
+`jacobwalkerton/mae-matching61-2024` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada **Mae**, orientada a tareas de *matching*. Lo publica el usuario jacobwalkerton bajo licencia MIT. Según la propia model card, se trata de un artefacto pensado para revisión de código, *smoke tests* y experimentos controlados de pequeña escala, y no de una release preentrenada lista para producción.
 
 El dato más relevante es su tamaño real: el checkpoint `model.safetensors` contiene **16.576 parámetros** en total, pese a que la configuración se etiqueta internamente como «huge». Es, por tanto, un modelo de juguete a efectos prácticos, con un peso en disco que no llega a los 0,1 GB (el repositorio completo figura como 0.0 GB). La model card indica explícitamente que los pesos son una **inicialización válida para pruebas de humo**, no un checkpoint entrenado ni evaluado en benchmarks.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPU profesionales (A100, H100) innecesarias; no aportan ventaja relevante para este tamaño.
 - Opciones de despliegue: al ser una implementación custom, no es compatible de serie con vLLM, TGI, llama.cpp u Ollama; requiere invocar `model.py` o escribir un adaptador propio. No hay formato GGUF publicado.
 - Latencia y throughput: no disponible (no se han publicado mediciones); por el volumen de parámetros, el *forward pass* en CPU sería del orden de microsegundos a milisegundos, pero es una estimación teórica, no un dato verificado.
-- Almacenamiento: repositorio de 0.0 GB según HuggingFace.
+- Almacenamiento: repositorio de 0.0 GB según Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -67,7 +67,7 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mae-matching61-2024 | 16.576 | no disponible | sin benchmarks | MIT | HuggingFace |
+| mae-matching61-2024 | 16.576 | no disponible | sin benchmarks | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,6 +83,6 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jacobwalkerton/mae-matching61-2024
+- Repositorio en Hugging Face: https://huggingface.co/jacobwalkerton/mae-matching61-2024
 
 No se han encontrado en la búsqueda web enlaces relevantes al modelo (papers, blogs, repos de código o demos); los resultados devueltos no guardan relación con este repositorio y se han descartado.

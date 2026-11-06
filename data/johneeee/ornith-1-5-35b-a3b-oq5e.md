@@ -57,5 +57,5 @@ No se dispone de modelos comparables verificados en la informacion proporcionada
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/Johneeee/Ornith-1.5-35B-A3B-oQ5e)
+- [Repositorio Hugging Face](https://huggingface.co/Johneeee/Ornith-1.5-35B-A3B-oQ5e)
 - [Herramienta oQ / oMLX](https://github.com/jundot/omlx)

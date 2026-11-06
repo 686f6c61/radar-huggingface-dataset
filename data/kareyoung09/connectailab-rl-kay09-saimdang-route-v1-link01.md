@@ -86,7 +86,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: kareyoung09/connectailab-rl-kay09-saimdang-route-v1-link01](https://huggingface.co/kareyoung09/connectailab-rl-kay09-saimdang-route-v1-link01)
+- [Hugging Face: kareyoung09/connectailab-rl-kay09-saimdang-route-v1-link01](https://huggingface.co/kareyoung09/connectailab-rl-kay09-saimdang-route-v1-link01)
 - [Modelo base: Qwen/Qwen3.5-0.8B](https://huggingface.co/Qwen/Qwen3.5-0.8B)
 - [PEFT (Parameter-Efficient Fine-Tuning)](https://github.com/huggingface/peft)
 - [Transformers](https://github.com/huggingface/transformers)

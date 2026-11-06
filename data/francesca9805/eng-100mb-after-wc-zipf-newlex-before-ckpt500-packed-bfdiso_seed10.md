@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/eng-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10` es un modelo de generacion de texto de arquitectura GPT-2 (transformer decoder-only) con 124.770.816 parametros, publicado por el usuario de HuggingFace francesca9805. No se trata de un modelo de proposito general, sino de un artefacto de investigacion: segun se deduce del identificador y de la model card, es el resultado de un ajuste fino supervisado (SFT) mediante TRL sobre un modelo base ya entrenado del mismo autor, en el marco de una experimentacion sobre tokenizadores y corpus en ingles de aproximadamente 100 MB. El proyecto asociado en Weights & Biases se denomina "new-tokenizers", lo que apunta a una linea de trabajo centrada en vocabularios, distribucion Zipf y empaquetado (packing) de secuencias.
+`francesca9805/eng-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10` es un modelo de generacion de texto de arquitectura GPT-2 (transformer decoder-only) con 124.770.816 parametros, publicado por el usuario de Hugging Face francesca9805. No se trata de un modelo de proposito general, sino de un artefacto de investigacion: segun se deduce del identificador y de la model card, es el resultado de un ajuste fino supervisado (SFT) mediante TRL sobre un modelo base ya entrenado del mismo autor, en el marco de una experimentacion sobre tokenizadores y corpus en ingles de aproximadamente 100 MB. El proyecto asociado en Weights & Biases se denomina "new-tokenizers", lo que apunta a una linea de trabajo centrada en vocabularios, distribucion Zipf y empaquetado (packing) de secuencias.
 
 El modelo resuelve, por tanto, un problema de experimentacion mas que de producto: sirve para comparar variantes de entrenamiento (antes y despues de un paso de "wc-zipf-newlex", con checkpoint 500, con packing, seed 10) manteniendo constante la arquitectura. Su relevancia actual es limitada para desarrolladores en produccion, ya que no se han publicado benchmarks, no declara licencia efectiva, no declara idiomas y acumula cero descargas y cero likes en el momento de la consulta. Resulta util, en cambio, como pieza reproducible dentro de una ablacion academica sobre tokenizacion.
 
@@ -24,7 +24,7 @@ La model card original es una plantilla autogenerada por TRL: incluye un ejemplo
 | Modelo base | `francesca9805/ppt-wc-zipf-newlex-eng-before-100mb-packed-bfdiso_seed10` |
 | Metodo de ajuste | SFT con TRL 0.23.0 |
 | Pipeline declarado | text-generation |
-| Fecha de creacion | 2026-10-11 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-11 (segun metadatos de Hugging Face) |
 | Ultima actualizacion | 2026-10-11 |
 
 ## Arquitectura y entrenamiento
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (francesca9805/eng-100mb-...) | 124,8 M | no disponible | no disponible | Repositorio HuggingFace, 0 descargas, 0 likes |
+| Este modelo (francesca9805/eng-100mb-...) | 124,8 M | no disponible | no disponible | Repositorio Hugging Face, 0 descargas, 0 likes |
 | openai-community/gpt2 | 124 M | 1024 tokens | MIT | Ampliamente disponible |
 | distilgpt2 | 82 M | 1024 tokens | Apache-2.0 | Ampliamente disponible |
 | EleutherAI/pythia-160m | 162 M | 2048 tokens | Apache-2.0 | Ampliamente disponible |
@@ -90,7 +90,7 @@ Los tres modelos de referencia son alternativas establecidas en la misma franja 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eng-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eng-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-zipf-newlex-eng-before-100mb-packed-bfdiso_seed10
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/qri64ian
 - Repositorio de TRL: https://github.com/huggingface/trl

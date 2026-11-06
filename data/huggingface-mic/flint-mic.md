@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`huggingface-mic/flint-mic` es un artefacto de prueba (fixture) publicado en HuggingFace por el usuario `huggingface-mic`, no un modelo entrenado ni utilizable en produccion. Se trata de una version reducida del modelo `RecursiveSI/flint`, generada con la herramienta `transformers-mic` para validar contratos de integracion con la libreria Transformers. La model card lo etiqueta explicitamente como `test-artifact` para excluirlo de las busquedas de modelos candidatos.
+`huggingface-mic/flint-mic` es un artefacto de prueba (fixture) publicado en Hugging Face por el usuario `huggingface-mic`, no un modelo entrenado ni utilizable en produccion. Se trata de una version reducida del modelo `RecursiveSI/flint`, generada con la herramienta `transformers-mic` para validar contratos de integracion con la libreria Transformers. La model card lo etiqueta explicitamente como `test-artifact` para excluirlo de las busquedas de modelos candidatos.
 
 El modelo conserva la arquitectura `FlintForCausalLM` del modelo base, pero con una configuracion reducida a 3 capas ocultas (`num_hidden_layers 3`) y 19.379.244 parametros totales. Los pesos son aleatorios (semilla 17), no entrenados, y los ficheros de procesador (`tokenizer.json`, `chat_template.jinja`, `generation_config.json`, `LICENSE`, `tokenizer_config.json`) se copiaron byte a byte desde `RecursiveSI/flint`.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/flint-mic` | 19,4 M | no disponible | Fixture de test | no disponible | HuggingFace |
-| `RecursiveSI/flint` | no disponible | no disponible | Modelo base real | no disponible | HuggingFace |
-| Fixtures `transformers-mic` | variable | no disponible | Artefactos de prueba | no disponible | HuggingFace |
+| `huggingface-mic/flint-mic` | 19,4 M | no disponible | Fixture de test | no disponible | Hugging Face |
+| `RecursiveSI/flint` | no disponible | no disponible | Modelo base real | no disponible | Hugging Face |
+| Fixtures `transformers-mic` | variable | no disponible | Artefactos de prueba | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de otros fixtures comparables en la informacion proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento ni de otros fixtures comparables en la inf
 
 ## Enlaces
 
-- [HuggingFace: huggingface-mic/flint-mic](https://huggingface.co/huggingface-mic/flint-mic)
+- [Hugging Face: huggingface-mic/flint-mic](https://huggingface.co/huggingface-mic/flint-mic)
 - [Modelo base: RecursiveSI/flint](https://huggingface.co/RecursiveSI/flint)
 - [Manifiesto de contrato: integration.json](integration.json)
 - [Uso en Transformers: integrations/transformers/usage.md](integrations/transformers/usage.md)

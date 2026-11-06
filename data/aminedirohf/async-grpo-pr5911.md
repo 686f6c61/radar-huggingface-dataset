@@ -58,9 +58,9 @@ No hay información pública sobre benchmarks o características comparativas de
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeepSeek-R1-Distill-Qwen-1.5B (base) | 1,78 B | 32K (según documentación del modelo base) | MIT | HuggingFace |
-| Qwen2.5-1.5B | 1,54 B | 32K | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B | 1,23 B | 128K | Llama 3.2 Community License | HuggingFace |
+| DeepSeek-R1-Distill-Qwen-1.5B (base) | 1,78 B | 32K (según documentación del modelo base) | MIT | Hugging Face |
+| Qwen2.5-1.5B | 1,54 B | 32K | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B | 1,23 B | 128K | Llama 3.2 Community License | Hugging Face |
 
 No se dispone de datos de rendimiento del modelo `async-grpo-pr5911` para comparar con estas alternativas. La licencia del modelo ajustado no está especificada.
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento del modelo `async-grpo-pr5911` para compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aminediroHF/async-grpo-pr5911
+- Modelo en Hugging Face: https://huggingface.co/aminediroHF/async-grpo-pr5911
 - Repositorio GitHub de Async-GRPO: https://github.com/Red-Hat-AI-Innovation-Team/async-grpo
 - Artículo de Red Hat sobre Async-GRPO: https://developers.redhat.com/articles/2025/04/05/async-grpo-open-fast-and-performant
 - Paper DeepSeekMath (método GRPO): https://huggingface.co/papers/2402.03300

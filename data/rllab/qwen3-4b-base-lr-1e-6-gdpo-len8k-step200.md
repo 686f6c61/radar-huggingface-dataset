@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo RLLab/qwen3-4b-base-lr-1e-6-gdpo-len8k-step200 es un ajuste fino publicado por el usuario RLLab sobre la base de Qwen3-4B, distribuido en formato safetensors a traves de HuggingFace Transformers. Cuenta con 4.022.468.096 parametros (unos 4,02 mil millones) y se situa en la categoria de modelos densos de tamano pequeno-medio, aptos para inferencia en GPU de consumo. El identificador del repositorio sugiere un entrenamiento con GDPO, una tasa de aprendizaje de 1e-6, una longitud de secuencia de 8.000 tokens y 200 pasos.
+El modelo RLLab/qwen3-4b-base-lr-1e-6-gdpo-len8k-step200 es un ajuste fino publicado por el usuario RLLab sobre la base de Qwen3-4B, distribuido en formato safetensors a traves de Hugging Face Transformers. Cuenta con 4.022.468.096 parametros (unos 4,02 mil millones) y se situa en la categoria de modelos densos de tamano pequeno-medio, aptos para inferencia en GPU de consumo. El identificador del repositorio sugiere un entrenamiento con GDPO, una tasa de aprendizaje de 1e-6, una longitud de secuencia de 8.000 tokens y 200 pasos.
 
-Su relevancia radica en que se apoya en la familia Qwen3, muy utilizada en el ecosistema abierto por su equilibrio entre rendimiento y coste computacional, y en que constituye un experimento de alineacion sobre esa base. Sin embargo, la model card publicada es la plantilla autogenerada de HuggingFace y no aporta informacion sobre datos de entrenamiento, licencia, idiomas ni evaluacion.
+Su relevancia radica en que se apoya en la familia Qwen3, muy utilizada en el ecosistema abierto por su equilibrio entre rendimiento y coste computacional, y en que constituye un experimento de alineacion sobre esa base. Sin embargo, la model card publicada es la plantilla autogenerada de Hugging Face y no aporta informacion sobre datos de entrenamiento, licencia, idiomas ni evaluacion.
 
 Por ese motivo, buena parte de la ficha se marca como "no disponible" y se complementa, cuando procede, con los datos conocidos del modelo base Qwen3-4B. Se recomienda precaucion antes de emplearlo en produccion: la ausencia de licencia declarada deja su uso comercial en un limbo legal.
 
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: en BF16/FP16 los pesos ocupan ~8,0 GB, a los que hay que sumar KV cache y activaciones (2-4 GB adicionales segun contexto y batch). En INT8/FP8 baja a ~4-5 GB y en INT4 a ~2,5-3 GB.
 - GPU recomendadas: A100 40/80 GB o H100 para servir con lotes grandes y alto throughput; RTX 4090 (24 GB), RTX 4080 (16 GB), RTX 4060 Ti (16 GB) o RTX 3060 (12 GB) para inferencia individual en FP16 o cuantizada.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU con 8 GB o mas en INT4, y en 12-16 GB en FP16 con contextos moderados.
-- Opciones de despliegue: vLLM, TGI (text-generation-inference), SGLang y HuggingFace Transformers para servir en linea; llama.cpp u Ollama requieren convertir previamente los pesos a GGUF.
+- Opciones de despliegue: vLLM, TGI (text-generation-inference), SGLang y Hugging Face Transformers para servir en linea; llama.cpp u Ollama requieren convertir previamente los pesos a GGUF.
 - Latencia y throughput estimados: no disponibles. Al no publicarse mediciones, no se ofrecen cifras concretas de tokens por segundo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RLLab/qwen3-4b-base-lr-1e-6-gdpo-len8k-step200 | 4,02 B | no disponible (base: 32.768, YaRN 131.072) | no disponible | HuggingFace, safetensors |
-| Qwen/Qwen3-4B-Base | ~4 B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace, safetensors, GGUF |
-| Qwen/Qwen3-4B (instruct) | ~4 B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace, safetensors, GGUF |
-| meta-llama/Llama-3.2-3B | 3,2 B | 128.000 | Llama 3.2 Community License | HuggingFace, safetensors, GGUF |
+| RLLab/qwen3-4b-base-lr-1e-6-gdpo-len8k-step200 | 4,02 B | no disponible (base: 32.768, YaRN 131.072) | no disponible | Hugging Face, safetensors |
+| Qwen/Qwen3-4B-Base | ~4 B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face, safetensors, GGUF |
+| Qwen/Qwen3-4B (instruct) | ~4 B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face, safetensors, GGUF |
+| meta-llama/Llama-3.2-3B | 3,2 B | 128.000 | Llama 3.2 Community License | Hugging Face, safetensors, GGUF |
 
 La comparativa se limita a parametros, contexto y licencia porque no hay datos publicados de rendimiento para el checkpoint de RLLab. Frente a las alternativas oficiales, la principal diferencia es la falta de licencia declarada, que restringe su uso comercial, y la ausencia de variantes GGUF listas para llama.cpp u Ollama.
 
@@ -82,7 +82,7 @@ La comparativa se limita a parametros, contexto y licencia porque no hay datos p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RLLab/qwen3-4b-base-lr-1e-6-gdpo-len8k-step200
+- Modelo en Hugging Face: https://huggingface.co/RLLab/qwen3-4b-base-lr-1e-6-gdpo-len8k-step200
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Informe tecnico de Qwen3: https://arxiv.org/html/2505.09388v1

@@ -74,7 +74,7 @@ La principal diferencia con Whisper Large V3 es que la variante turbo de Typhoon
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/korakotlee/typhoon-whisper-turbo-ggml
+- Repositorio de Hugging Face: https://huggingface.co/korakotlee/typhoon-whisper-turbo-ggml
 - Modelo original de Typhoon AI: https://huggingface.co/typhoon-ai/typhoon-whisper-turbo
 - Pagina del laboratorio Typhoon AI: https://opentyphoon.ai/
 - Referencia de modelos ggml (Vibe): https://github.com/thewh1teagle/vibe/blob/main/docs/models.md

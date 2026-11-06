@@ -23,7 +23,7 @@ La relevancia de esta ficha es acotada y conviene ser explícito: se trata de un
 | Tamano del repositorio | 0,7 GB |
 | Rank / alpha del adaptador | r=64 / `lora_alpha`=64, escalado 8, `dtype` float32 |
 | Modulos afectados | 224 |
-| Fecha de creacion | 2026-09-10 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-10 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -82,11 +82,11 @@ No existen modelos directamente comparables publicados con evaluaciones, dado qu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evaluaciones publicadas |
 |---|---|---|---|---|---|
-| `darturi/llama8b_c_mo_rfa_13-NEGATED_WITH_MO-1` | Adaptador r=64 sobre base de ~8B | No disponible (base: 128k) | No declarada en el repo; hereda Llama 3.1 Community License | HuggingFace (0 descargas) | Ninguna |
-| `unsloth/Llama-3.1-8B-Instruct` (base) | ~8,03B | 128.000 tokens | Llama 3.1 Community License | HuggingFace | Sí, publicadas por Meta |
-| Llama 3.1 8B Instruct (original de Meta) | ~8,03B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, múltiples proveedores | Sí |
-| Mistral 7B Instruct v0.3 | ~7,25B | 32.000 tokens (v0.3) | Apache 2.0 | HuggingFace | Sí, publicadas por Mistral |
-| Qwen2.5 7B Instruct | ~7,6B | 128.000 tokens | Apache 2.0 (la mayoría de variantes) | HuggingFace | Sí, publicadas por Alibaba |
+| `darturi/llama8b_c_mo_rfa_13-NEGATED_WITH_MO-1` | Adaptador r=64 sobre base de ~8B | No disponible (base: 128k) | No declarada en el repo; hereda Llama 3.1 Community License | Hugging Face (0 descargas) | Ninguna |
+| `unsloth/Llama-3.1-8B-Instruct` (base) | ~8,03B | 128.000 tokens | Llama 3.1 Community License | Hugging Face | Sí, publicadas por Meta |
+| Llama 3.1 8B Instruct (original de Meta) | ~8,03B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, múltiples proveedores | Sí |
+| Mistral 7B Instruct v0.3 | ~7,25B | 32.000 tokens (v0.3) | Apache 2.0 | Hugging Face | Sí, publicadas por Mistral |
+| Qwen2.5 7B Instruct | ~7,6B | 128.000 tokens | Apache 2.0 (la mayoría de variantes) | Hugging Face | Sí, publicadas por Alibaba |
 
 La comparación relevante no es de rendimiento, sino de naturaleza del artefacto: este repositorio es un delta de pesos, no un modelo autónomo, y su comportamiento final depende enteramente del modelo base sobre el que se aplique.
 

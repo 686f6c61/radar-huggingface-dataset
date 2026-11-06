@@ -67,7 +67,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Entorno | Algoritmo | mean_reward | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Abuudiii/ppo-SuperMarioBros-1-1 | LunarLander-v3 | PPO | -160.32 ± 92.79 | no disponible | HuggingFace (repo 0.0 GB) |
+| Abuudiii/ppo-SuperMarioBros-1-1 | LunarLander-v3 | PPO | -160.32 ± 92.79 | no disponible | Hugging Face (repo 0.0 GB) |
 | Agentes PPO de referencia en CleanRL | LunarLander-v3 | PPO | no disponible en la informacion proporcionada | MIT (segun CleanRL, no verificado aqui) | Repositorio CleanRL |
 | Agentes de la libreria Stable-Baselines3 | LunarLander-v3 | PPO | no disponible en la informacion proporcionada | MIT (segun SB3, no verificado aqui) | Repositorio SB3 |
 
@@ -87,7 +87,7 @@ No se dispone de valores numericos de referencia en la informacion proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Abuudiii/ppo-SuperMarioBros-1-1
+- Hugging Face: https://huggingface.co/Abuudiii/ppo-SuperMarioBros-1-1
 - CleanRL (referencia de implementacion citada en los hiperparametros): https://github.com/vwxyzjn/cleanrl
 - Gymnasium LunarLander-v3: https://gymnasium.farama.org/environments/box2d/lunar_lander/
 - Stable-Baselines3 (alternativa de referencia): https://github.com/DLR-RM/stable-baselines3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-krobbisch/krobbish es un repositorio alojado en HuggingFace por el usuario krobbisch, publicado bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card no contiene ninguna descripcion tecnica: el README se limita al bloque de metadatos con la licencia, sin secciones de arquitectura, entrenamiento, uso previsto ni ejemplos de inferencia. El repositorio ocupa 0,2 GB y acumula 0 descargas y 0 likes.
+krobbisch/krobbish es un repositorio alojado en Hugging Face por el usuario krobbisch, publicado bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card no contiene ninguna descripcion tecnica: el README se limita al bloque de metadatos con la licencia, sin secciones de arquitectura, entrenamiento, uso previsto ni ejemplos de inferencia. El repositorio ocupa 0,2 GB y acumula 0 descargas y 0 likes.
 
 No hay informacion disponible sobre el pipeline, los idiomas soportados, el numero de parametros, la longitud de contexto ni el formato de pesos. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces obtenidos corresponden a contenido para adultos y a un subforo de Reddit sin ninguna conexion con el artefacto, por lo que no aportan datos tecnicos y no se incluyen como referencias.
 
@@ -84,7 +84,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, el contexto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/krobbisch/krobbish
+- Hugging Face: https://huggingface.co/krobbisch/krobbish
 - Repositorio de codigo: no disponible
 - Paper o informe tecnico: no disponible
 - Blog del autor: no disponible

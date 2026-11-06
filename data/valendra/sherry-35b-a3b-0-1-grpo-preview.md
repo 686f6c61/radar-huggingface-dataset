@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sherry 35B-A3B 0.1 GRPO Preview es un ajuste fino del modelo base Qwen/Qwen3.6-35B-A3B, publicado por el usuario valendra en HuggingFace. Se trata de una versión preliminar (preview) construida a partir de la fusión, mediante `merge_and_unload()` de PEFT, de un adaptador QLoRA entrenado con GRPO durante 200 pasos sobre un conjunto interno de datos de matemáticas con control de esfuerzo de razonamiento. El resultado se distribuye como pesos completos en safetensors, en precisión bfloat16 y divididos en 16 shards, con un total de 35.106.198.896 parámetros y un repositorio de 70,2 GB.
+Sherry 35B-A3B 0.1 GRPO Preview es un ajuste fino del modelo base Qwen/Qwen3.6-35B-A3B, publicado por el usuario valendra en Hugging Face. Se trata de una versión preliminar (preview) construida a partir de la fusión, mediante `merge_and_unload()` de PEFT, de un adaptador QLoRA entrenado con GRPO durante 200 pasos sobre un conjunto interno de datos de matemáticas con control de esfuerzo de razonamiento. El resultado se distribuye como pesos completos en safetensors, en precisión bfloat16 y divididos en 16 shards, con un total de 35.106.198.896 parámetros y un repositorio de 70,2 GB.
 
 La relevancia del modelo reside en su interfaz de esfuerzo de razonamiento: el tokenizador incorpora tres tokens especiales propios (`<|reasoning_effort_low|>`, `<|reasoning_effort_medium|>` y `<|reasoning_effort_high|>`) que la plantilla de chat emite antes del bloque de pensamiento según el parámetro `reasoning_effort`. Esto lo convierte en una plataforma experimental para estudiar cómo varía la longitud y la forma del razonamiento en un modelo de arquitectura MoE (mezcla de expertos) según el presupuesto de cómputo asignado.
 
@@ -12,7 +12,7 @@ Conviene subrayar que se trata de una publicación de previsualización: el prop
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE); etiqueta `qwen3_5_moe` en HuggingFace; compatible con `image-text-to-text` |
+| Arquitectura | Transformer con mezcla de expertos (MoE); etiqueta `qwen3_5_moe` en Hugging Face; compatible con `image-text-to-text` |
 | Parametros totales | 35.106.198.896 (~35,1 B) |
 | Parametros activos | no disponible (el sufijo "A3B" del nombre sugiere del orden de 3 B activos, sin confirmar en la informacion proporcionada) |
 | Longitud de contexto | no disponible |
@@ -28,7 +28,7 @@ Conviene subrayar que se trata de una publicación de previsualización: el prop
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del base Qwen/Qwen3.6-35B-A3B: un transformer con capas de mezcla de expertos (MoE), etiquetado en HuggingFace como `qwen3_5_moe` y cargable mediante `AutoModelForImageTextToText`, lo que indica compatibilidad con entrada de imagen y texto aunque esta version se entrenó y probó principalmente por la via de generacion de texto. El repositorio ocupa 70,2 GB y los pesos se publican en bfloat16 repartidos en 16 shards, coherente con 35,1 B de parametros totales.
+El modelo hereda la arquitectura del base Qwen/Qwen3.6-35B-A3B: un transformer con capas de mezcla de expertos (MoE), etiquetado en Hugging Face como `qwen3_5_moe` y cargable mediante `AutoModelForImageTextToText`, lo que indica compatibilidad con entrada de imagen y texto aunque esta version se entrenó y probó principalmente por la via de generacion de texto. El repositorio ocupa 70,2 GB y los pesos se publican en bfloat16 repartidos en 16 shards, coherente con 35,1 B de parametros totales.
 
 El ajuste se realizo con GRPO sobre un adaptador QLoRA de rango 32 y alpha 64, con dropout 0,0, aplicado a los modulos `q_proj`, `k_proj`, `v_proj`, `o_proj` y a las proyecciones `shared_expert.gate_proj`, `shared_expert.up_proj` y `shared_expert.down_proj`. Se entrenaron 200 pasos y se publicó el checkpoint `checkpoint-200` tras fusionarlo con el modelo base en bfloat16. La innovacion tecnica destacable es la interfaz de esfuerzo de razonamiento: se anadieron tres tokens especiales con IDs 248077, 248078 y 248079 (`low`, `medium`, `high`) que la plantilla de chat inserta antes del bloque de pensamiento. No se proporciona un token `xhigh`. El dataset de entrenamiento es interno y de tematica matematica orientada a esfuerzo de razonamiento; no se detalla su composicion, numero de tokens ni si hubo fases adicionales de alineacion mas alla del propio GRPO.
 
@@ -100,7 +100,7 @@ No se dispone de datos verificados sobre otros modelos comparables de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/valendra/sherry-35b-a3b-0.1-grpo-preview
+- Modelo en Hugging Face: https://huggingface.co/valendra/sherry-35b-a3b-0.1-grpo-preview
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Imagen del proyecto referenciada en la model card: https://huggingface.co/valendra/sherry-35b-a3b-0.1-grpo-preview/resolve/main/image.png
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo: los resultados obtenidos fueron paginas sin relacion con inteligencia artificial ni con el modelo evaluado (contenido en chino sobre consultas judiciales, Adobe Illustrator, Excel, tallas de ropa y niveles educativos), por lo que no se incluyen.

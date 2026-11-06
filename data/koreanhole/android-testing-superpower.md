@@ -76,7 +76,7 @@ No se han identificado otros modelos comparables de testing autonomo de Android 
 
 ## Limitaciones y advertencias
 
-- El modelo es nuevo y no tiene descargas ni likes en HuggingFace, por lo que carece de validacion en produccion.
+- El modelo es nuevo y no tiene descargas ni likes en Hugging Face, por lo que carece de validacion en produccion.
 - Solo soporta ingles y coreano, lo que limita su uso en equipos con otros idiomas.
 - Los pesos base estan sujetos a la Qwen Community License Agreement, que puede imponer condiciones adicionales a la licencia Apache 2.0.
 - No se han publicado benchmarks estandar (MMLU, HumanEval, etc.) que permitan comparar su rendimiento general con otros modelos.
@@ -87,5 +87,5 @@ No se han identificado otros modelos comparables de testing autonomo de Android 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/koreanhole/android-testing-superpower
+- Hugging Face: https://huggingface.co/koreanhole/android-testing-superpower
 - GitHub del framework: https://github.com/koreanhole/android-testing-superpower

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`junbrro/egopi-axis1-matched-noreg-AB-FULL-30k-actsilu-mlxp-20260925` es un checkpoint de pesos publicado en HuggingFace por el usuario `junbrro`. Se trata de un artefacto de investigacion, no de un modelo listo para produccion: la model card lo describe como "Arm 1 no-reg tokenizer CogAlign persistent full language", correspondiente al paso 30.000 de un entrenamiento cuya ejecucion de origen se identifica como `junhyeong-axis1-noreg-full-30k-260924`. El repositorio incluye unicamente pesos y configuracion finales, sin estado del optimizador ni de RNG.
+`junbrro/egopi-axis1-matched-noreg-AB-FULL-30k-actsilu-mlxp-20260925` es un checkpoint de pesos publicado en Hugging Face por el usuario `junbrro`. Se trata de un artefacto de investigacion, no de un modelo listo para produccion: la model card lo describe como "Arm 1 no-reg tokenizer CogAlign persistent full language", correspondiente al paso 30.000 de un entrenamiento cuya ejecucion de origen se identifica como `junhyeong-axis1-noreg-full-30k-260924`. El repositorio incluye unicamente pesos y configuracion finales, sin estado del optimizador ni de RNG.
 
 El modelo tiene 6.915.102.808 parametros (unos 6,92 mil millones) y ocupa 13,9 GB en el repositorio, lo que es coherente con pesos almacenados en precision de 16 bits. El unico tag de familia que aparece es `RLDX-1`, y el resto de la metadata publica (licencia, idiomas, pipeline, arquitectura) no esta declarada. La model card menciona un "action tokenizer" empaquetado en un directorio `actlat/`, lo que sugiere que el entrenamiento incorpora un componente de tokenizacion orientado a acciones, aunque no se especifica su funcionamiento.
 
@@ -101,7 +101,7 @@ La diferencia relevante no es de tamano sino de madurez: las tres alternativas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junbrro/egopi-axis1-matched-noreg-AB-FULL-30k-actsilu-mlxp-20260925
+- Modelo en Hugging Face: https://huggingface.co/junbrro/egopi-axis1-matched-noreg-AB-FULL-30k-actsilu-mlxp-20260925
 - Modelo hermano de la misma serie (axis2, AdaLN-only): https://huggingface.co/junbrro/egopi-axis2-adaln-only-AB-30k-actsilu-mlxp-20260921
 - Catalogo de modelos del autor en un indice de terceros: https://essamamdani.com/ai-models/company/junbrro
 - Paper, blog tecnico o repositorio de codigo: no disponibles en la informacion consultada.

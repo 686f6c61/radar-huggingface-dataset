@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| syssec-utd/pylingual-shared-statement-v2 | no disponible (base CodeT5) | no disponible | Backbone compartido + LoRA por version de Python | other | HuggingFace |
-| Salesforce/codet5-base | ~220M (segun model card original) | no disponible | Encoder-decoder preentrenado para codigo | BSD-3-Clause (segun model card original) | HuggingFace |
+| syssec-utd/pylingual-shared-statement-v2 | no disponible (base CodeT5) | no disponible | Backbone compartido + LoRA por version de Python | other | Hugging Face |
+| Salesforce/codet5-base | ~220M (segun model card original) | no disponible | Encoder-decoder preentrenado para codigo | BSD-3-Clause (segun model card original) | Hugging Face |
 | Alternativas especificas por version de Python | no disponible | no disponible | Un modelo por version | no disponible | no disponible |
 
 La comparativa con alternativas equivalentes del estudio (modelos por version) no puede completarse porque la informacion proporcionada no incluye sus especificaciones ni resultados.
@@ -82,7 +82,7 @@ La comparativa con alternativas equivalentes del estudio (modelos por version) n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syssec-utd/pylingual-shared-statement-v2
+- Modelo en Hugging Face: https://huggingface.co/syssec-utd/pylingual-shared-statement-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/syssec-utd/pylingual-shared-encoded-v2
 - Repositorio de codigo: https://github.com/quinntyx/pylingual (rama `feat-shared-backbone-lora`, commit `87226a491a9ee76670601a6b3e8a37e8187241c5`)
 - Modelo base: https://huggingface.co/Salesforce/codet5-base

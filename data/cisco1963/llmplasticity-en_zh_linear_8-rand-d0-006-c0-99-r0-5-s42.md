@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.006-c0.99-r0.5-s42` es un checkpoint de investigación alojado en HuggingFace por el usuario Cisco1963. Por su nomenclatura (`llmplasticity`, sufijos `en_zh`, `linear_8`, `rand`, `d0.006`, `c0.99`, `r0.5`, `s42`) se trata de un experimento de plasticidad de modelos de lenguaje, probablemente un estudio sobre olvido catastrófico o adaptación continua entre inglés y chino, con una programación lineal del coeficiente de plasticidad, inicialización aleatoria, tasa de decaimiento 0,006, factor 0,99, ratio 0,5 y semilla 42.
+`Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.006-c0.99-r0.5-s42` es un checkpoint de investigación alojado en Hugging Face por el usuario Cisco1963. Por su nomenclatura (`llmplasticity`, sufijos `en_zh`, `linear_8`, `rand`, `d0.006`, `c0.99`, `r0.5`, `s42`) se trata de un experimento de plasticidad de modelos de lenguaje, probablemente un estudio sobre olvido catastrófico o adaptación continua entre inglés y chino, con una programación lineal del coeficiente de plasticidad, inicialización aleatoria, tasa de decaimiento 0,006, factor 0,99, ratio 0,5 y semilla 42.
 
-El modelo está construido sobre la arquitectura GPT-2, según los tags de HuggingFace, con 122.706.432 parámetros totales, lo que corresponde exactamente a la configuración GPT-2 base (124M nominales). El repositorio ocupa 10,3 GB, un tamaño desproporcionado para el número de parámetros, lo que sugiere que contiene múltiples checkpoints, estados del optimizador o pesos en varios formatos además del `safetensors` principal.
+El modelo está construido sobre la arquitectura GPT-2, según los tags de Hugging Face, con 122.706.432 parámetros totales, lo que corresponde exactamente a la configuración GPT-2 base (124M nominales). El repositorio ocupa 10,3 GB, un tamaño desproporcionado para el número de parámetros, lo que sugiere que contiene múltiples checkpoints, estados del optimizador o pesos en varios formatos además del `safetensors` principal.
 
 Su relevancia es limitada fuera del ámbito de la investigación: no tiene pipeline declarado, no tiene licencia especificada, no declara idiomas y cuenta con 16 descargas y 0 likes. No es un modelo destinado a producción, sino un artefacto reproducible de un experimento académico sobre plasticidad y adaptación multilingüe.
 
@@ -12,7 +12,7 @@ Su relevancia es limitada fuera del ámbito de la investigación: no tiene pipel
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only, según tags de HuggingFace) |
+| Arquitectura | GPT-2 (transformer decoder-only, según tags de Hugging Face) |
 | Parametros totales | 122.706.432 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible (GPT-2 base: 1024 tokens por arquitectura de referencia) |
@@ -23,7 +23,7 @@ Su relevancia es limitada fuera del ámbito de la investigación: no tiene pipel
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es GPT-2, un transformer decoder-only con atención causal completa. El tag `gpt2` en HuggingFace y el recuento de parámetros (122,7M) confirman que se trata de la configuración GPT-2 base, con 12 capas, 12 cabezas de atención y dimensión oculta de 768, aunque estos detalles internos no se detallan en la información disponible.
+La arquitectura es GPT-2, un transformer decoder-only con atención causal completa. El tag `gpt2` en Hugging Face y el recuento de parámetros (122,7M) confirman que se trata de la configuración GPT-2 base, con 12 capas, 12 cabezas de atención y dimensión oculta de 768, aunque estos detalles internos no se detallan en la información disponible.
 
 El nombre del repositorio describe la configuración del experimento de plasticidad: `linear_8` probablemente indica una programación lineal del coeficiente de plasticidad a lo largo de 8 fases o tareas; `rand` sugiere inicialización aleatoria de los parámetros de plasticidad; `d0.006` y `c0.99` son hiperparámetros de decaimiento y factor de control; `r0.5` un ratio de mezcla; y `s42` la semilla aleatoria. El sufijo `en_zh` indica un régimen bilingüe inglés-chino. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.006-c0.99-r0.5-s42 | 122,7M | no disponible | no disponible | HuggingFace (16 descargas) |
-| GPT-2 base (OpenAI) | 124M | 1024 | MIT | HuggingFace, ampliamente disponible |
-| GPT-2 small ajustado (DistilGPT-2) | 82M | 1024 | Apache 2.0 | HuggingFace, ampliamente disponible |
-| TinyLlama-1.1B | 1,1B | 2048 | Apache 2.0 | HuggingFace, ampliamente disponible |
+| Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.006-c0.99-r0.5-s42 | 122,7M | no disponible | no disponible | Hugging Face (16 descargas) |
+| GPT-2 base (OpenAI) | 124M | 1024 | MIT | Hugging Face, ampliamente disponible |
+| GPT-2 small ajustado (DistilGPT-2) | 82M | 1024 | Apache 2.0 | Hugging Face, ampliamente disponible |
+| TinyLlama-1.1B | 1,1B | 2048 | Apache 2.0 | Hugging Face, ampliamente disponible |
 
 La comparativa se limita a la arquitectura de referencia, ya que no hay datos de rendimiento publicados para este checkpoint. Frente a GPT-2 base, comparte arquitectura y tamaño, pero carece de licencia declarada y de documentación de uso. Frente a DistilGPT-2 y TinyLlama, este checkpoint no está pensado para uso general, sino para investigación de plasticidad.
 
@@ -86,5 +86,5 @@ La comparativa se limita a la arquitectura de referencia, ya que no hay datos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.006-c0.99-r0.5-s42
+- Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.006-c0.99-r0.5-s42
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

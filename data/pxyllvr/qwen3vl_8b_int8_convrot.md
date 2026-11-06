@@ -81,7 +81,7 @@ La versión int8 convrot es comparable a la versión int8 de OpenVINO, pero en f
 
 ## Enlaces
 
-- [HuggingFace del modelo convertido](https://huggingface.co/pxyllvr/qwen3vl_8b_int8_convrot)
+- [Hugging Face del modelo convertido](https://huggingface.co/pxyllvr/qwen3vl_8b_int8_convrot)
 - [Modelo base Qwen3-VL-8B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct)
 - [Repositorio GitHub de Qwen3-VL](https://github.com/QwenLM/Qwen3-VL)
 - [Página en ModelScope del modelo base](https://www.modelscope.cn/models/Qwen/Qwen3-VL-8B-Instruct)

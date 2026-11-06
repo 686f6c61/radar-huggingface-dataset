@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wz7475/gemma-3-12b-it-katcher-legal-sft-hf es un repositorio de pesos publicado en HuggingFace por el usuario wz7475 el 3 de octubre de 2026, etiquetado con `transformers`, `safetensors` y `endpoints_compatible`. Por el propio identificador se deduce que se trata de un ajuste fino supervisado (SFT) orientado al dominio legal sobre el modelo base Gemma 3 12B IT, pero esta deduccion procede unicamente del nombre del repositorio: la model card publicada es la plantilla generica autogenerada por HuggingFace, sin ningun campo completado.
+wz7475/gemma-3-12b-it-katcher-legal-sft-hf es un repositorio de pesos publicado en Hugging Face por el usuario wz7475 el 3 de octubre de 2026, etiquetado con `transformers`, `safetensors` y `endpoints_compatible`. Por el propio identificador se deduce que se trata de un ajuste fino supervisado (SFT) orientado al dominio legal sobre el modelo base Gemma 3 12B IT, pero esta deduccion procede unicamente del nombre del repositorio: la model card publicada es la plantilla generica autogenerada por Hugging Face, sin ningun campo completado.
 
 No hay informacion verificable sobre el problema concreto que resuelve, el dataset de ajuste, el proceso de entrenamiento ni los resultados obtenidos. El repositorio acumula 0 descargas y 0 likes, no declara licencia y no incluye pipeline, idiomas ni metadatos de configuracion. Un dato tecnico relevante es que el tamano del repositorio es de solo 0,6 GB, cifra incompatible con los pesos completos de un modelo de 12 000 millones de parametros en safetensors (que rondarian los 24 GB en bf16 y unos 6-7 GB en cuantizacion de 4 bits), lo que apunta a una subida parcial, a un unico shard o a pesos que no se corresponden con un modelo denso de 12B completo.
 
@@ -27,7 +27,7 @@ Otros metadatos: tamano del repositorio 0,6 GB; biblioteca declarada `transforme
 
 La model card del repositorio no contiene ninguna descripcion de arquitectura, datos de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineacion (RLHF, DPO u otras). Todos estos apartados aparecen como "[More Information Needed]" en la plantilla original. La unica senal disponible es el nombre del repositorio, que sugiere un ajuste fino supervisado (`sft`) sobre `gemma-3-12b-it` con datos de dominio legal (`katcher-legal`), pero no hay ninguna evidencia en el repositorio que confirme el proceso, el volumen de datos o el metodo de ajuste empleado.
 
-Tampoco se documentan hiperparametros de entrenamiento, regimen de precision (fp32, bf16, fp8), infraestructura de computo ni huella de carbono. La referencia arXiv incluida en los tags (`arxiv:1910.09700`, correspondiente a Lacoste et al. sobre estimacion de emisiones) proviene de la plantilla automatica de HuggingFace y no constituye documentacion tecnica del modelo.
+Tampoco se documentan hiperparametros de entrenamiento, regimen de precision (fp32, bf16, fp8), infraestructura de computo ni huella de carbono. La referencia arXiv incluida en los tags (`arxiv:1910.09700`, correspondiente a Lacoste et al. sobre estimacion de emisiones) proviene de la plantilla automatica de Hugging Face y no constituye documentacion tecnica del modelo.
 
 ## Capacidades
 
@@ -96,7 +96,7 @@ No es posible establecer una comparativa rigurosa porque el repositorio no publi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wz7475/gemma-3-12b-it-katcher-legal-sft-hf
+- Repositorio en Hugging Face: https://huggingface.co/wz7475/gemma-3-12b-it-katcher-legal-sft-hf
 - Referencia arXiv incluida en los tags del repositorio (Lacoste et al., estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Modelo base que sugiere el identificador (no confirmado como origen por el autor): https://huggingface.co/google/gemma-3-12b-it
 - Paper, blog, repositorio de codigo, demo o dataset de ajuste: no disponibles.

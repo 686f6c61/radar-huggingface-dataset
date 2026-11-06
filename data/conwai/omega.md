@@ -72,5 +72,5 @@ No disponible. No se han proporcionado datos de modelos comparables en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ConwAI/omega
+- Repositorio Hugging Face: https://huggingface.co/ConwAI/omega
 - Sitio web oficial: https://conw.ai

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Paraformer-Large ASR (NAT-ZH-CN-16k-Common-Vocab8404) es un modelo de reconocimiento automático del habla (ASR) en modo offline para chino mandarín. El modelo original fue desarrollado por el Alibaba DAMO Academy / Tongyi Lab dentro del proyecto FunASR, y la ficha que nos ocupa corresponde a una reexportación a formato ONNX con cuantización INT8 publicada por el usuario `tintitu` en HuggingFace, que no es el autor original de los pesos.
+Paraformer-Large ASR (NAT-ZH-CN-16k-Common-Vocab8404) es un modelo de reconocimiento automático del habla (ASR) en modo offline para chino mandarín. El modelo original fue desarrollado por el Alibaba DAMO Academy / Tongyi Lab dentro del proyecto FunASR, y la ficha que nos ocupa corresponde a una reexportación a formato ONNX con cuantización INT8 publicada por el usuario `tintitu` en Hugging Face, que no es el autor original de los pesos.
 
 La arquitectura es un Transformer no autorregresivo (Non-Autoregressive Transformer, NAT): en lugar de generar los tokens de texto uno a uno como un modelo encoder-decoder clásico, emite la secuencia completa de manera paralela. Esto reduce drásticamente el coste de decodificación y explica su factor de tiempo real (RTF) bajo sobre CPU. El modelo trabaja con un vocabulario de 8.404 caracteres y tokens especiales, y espera audio a 16 kHz en mono (16-bit PCM o float normalizado), del que extrae características Fbank de 80 dimensiones normalizadas con CMVN.
 
@@ -18,7 +18,7 @@ Su relevancia práctica está en el despliegue en el borde y en servidores sin G
 | Longitud de contexto | No aplica (modelo ASR por segmento de audio, no acepta contexto de texto) |
 | Tipos de cuantización | INT8 estática (`model_quant.onnx`) |
 | Idiomas soportados | Chino mandarín (zh-cn) |
-| Licencia | Apache-2.0 / licencia comunitaria de ModelScope, según la model card; el campo de licencia del repositorio de HuggingFace figura como no disponible |
+| Licencia | Apache-2.0 / licencia comunitaria de ModelScope, según la model card; el campo de licencia del repositorio de Hugging Face figura como no disponible |
 | Formato de pesos | ONNX (INT8), con ficheros auxiliares `tokens.json`, `config.yaml` y `am.mvn` |
 | Vocabulario | 8.404 tokens (caracteres chinos y tokens especiales) |
 | Muestreo de entrada | 16.000 Hz, mono, 16-bit PCM o float en [-1,0, 1,0] |
@@ -99,14 +99,14 @@ No se dispone de datos de benchmarks comparativos en la información proporciona
 - Requiere audio a 16 kHz en mono; entradas con otro muestreo o con múltiples canales deben remuestrearse y convertirse antes de la inferencia.
 - No hay información sobre sesgos acústicos, rendimiento con acentos regionales, ruido de fondo, solapamiento de hablantes ni vocabulario técnico específico.
 - Riesgo de alucinación y de errores de transcripción inherente a cualquier sistema ASR, especialmente en audio ruidoso o con habla solapada. No se documentan tasas de error.
-- Licencia: la model card indica Apache-2.0 y la licencia comunitaria de ModelScope, pero el campo de licencia del repositorio de HuggingFace figura como no disponible. Conviene verificar los términos exactos antes de un uso comercial o de redistribuir los pesos, y conservar los avisos de copyright y los enlaces al proyecto original.
+- Licencia: la model card indica Apache-2.0 y la licencia comunitaria de ModelScope, pero el campo de licencia del repositorio de Hugging Face figura como no disponible. Conviene verificar los términos exactos antes de un uso comercial o de redistribuir los pesos, y conservar los avisos de copyright y los enlaces al proyecto original.
 - Este repositorio es una reexportación de terceros (`tintitu`) y no la distribución oficial; se recomienda contrastar los pesos con el repositorio de ModelScope y verificar los SHA-256 que incluye la model card.
 - El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y fue creado y actualizado el 11 de septiembre de 2026 según los metadatos.
 - No se documenta soporte para GPU ni para procesamiento en streaming continuo nativo; el flujo recomendado es por segmentos con un VAD previo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tintitu/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-onnx
+- Repositorio en Hugging Face: https://huggingface.co/tintitu/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-onnx
 - Proyecto upstream FunASR: https://github.com/alibaba-damo-academy/FunASR
 - Repositorio oficial en ModelScope: https://modelscope.cn/models/damo/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-onnx
 - Modelo de detección de actividad de voz recomendado: `speech_fsmn_vad_zh-cn-16k-common-onnx`

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Anima-Bakes es un modelo de difusion publicado en HuggingFace por el usuario xFutureTechx bajo la libreria `diffusers`. Se trata de un fine-tune del modelo base `circlestone-labs/Anima`, del que hereda la arquitectura y las capacidades de generacion de imagen, y esta etiquetado por su autor con la marca `not-for-all-audiences`, lo que indica que su contenido generado puede incluir material no apto para todos los publicos. El repositorio, de 83,9 GB, sugiere un conjunto de pesos de gran tamano, consistente con un modelo de difusion de imagen de alta capacidad o con un empaquetado de multiples variantes.
+Anima-Bakes es un modelo de difusion publicado en Hugging Face por el usuario xFutureTechx bajo la libreria `diffusers`. Se trata de un fine-tune del modelo base `circlestone-labs/Anima`, del que hereda la arquitectura y las capacidades de generacion de imagen, y esta etiquetado por su autor con la marca `not-for-all-audiences`, lo que indica que su contenido generado puede incluir material no apto para todos los publicos. El repositorio, de 83,9 GB, sugiere un conjunto de pesos de gran tamano, consistente con un modelo de difusion de imagen de alta capacidad o con un empaquetado de multiples variantes.
 
 La relevancia de este modelo es limitada y muy especifica: se trata de un fine-tune comunitario sin pipeline declarado, sin licencia formal publicada y sin documentacion tecnica detallada. La model card es minima y unicamente menciona la licencia de Circlestone Labs con restriccion de uso no lucrativo. No se dispone de informacion sobre arquitectura concreta, numero de parametros, resolucion nativa ni datos de entrenamiento.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Anima-Bakes | no disponible | no disponible | Circlestone Labs, no lucrativo | HuggingFace, 0 descargas |
-| circlestone-labs/Anima (base) | no disponible | no disponible | no disponible | HuggingFace |
-| Otros fine-tunes de difusion comunitarios | variable | variable | habitualmente permisiva o sin especificar | HuggingFace / Civitai |
+| Anima-Bakes | no disponible | no disponible | Circlestone Labs, no lucrativo | Hugging Face, 0 descargas |
+| circlestone-labs/Anima (base) | no disponible | no disponible | no disponible | Hugging Face |
+| Otros fine-tunes de difusion comunitarios | variable | variable | habitualmente permisiva o sin especificar | Hugging Face / Civitai |
 
 No se dispone de datos de rendimiento ni de parametros para establecer una comparacion cuantitativa con alternativas de la misma categoria.
 
@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento ni de parametros para establecer una compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xFutureTechx/Anima-Bakes
+- Hugging Face: https://huggingface.co/xFutureTechx/Anima-Bakes
 - Modelo base: https://huggingface.co/circlestone-labs/Anima

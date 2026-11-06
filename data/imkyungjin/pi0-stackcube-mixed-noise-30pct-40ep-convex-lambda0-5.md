@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Categoria | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (pi0-stackcube-mixed-noise-30pct-40ep-convex-lambda0.5) | 3,5 B | no disponible | VLA ajustada a la tarea de apilado de cubos | apache-2.0 | HuggingFace, 0 descargas |
+| Este checkpoint (pi0-stackcube-mixed-noise-30pct-40ep-convex-lambda0.5) | 3,5 B | no disponible | VLA ajustada a la tarea de apilado de cubos | apache-2.0 | Hugging Face, 0 descargas |
 | π₀ base (Physical Intelligence / OpenPI) | no disponible en esta ficha | no disponible | VLA generalista para control de robots | no disponible en la informacion proporcionada | Repositorio OpenPI y blog de Physical Intelligence |
 | Politicas tipo ACT en LeRobot | no disponible | no disponible | Politica de aprendizaje por imitacion para control robotico | no disponible en esta ficha | Incluida en la libreria LeRobot |
 
@@ -88,7 +88,7 @@ La comparacion cuantitativa no es posible con los datos disponibles: no hay resu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ImKyungjin/pi0-stackcube-mixed-noise-30pct-40ep-convex-lambda0.5
+- Modelo en Hugging Face: https://huggingface.co/ImKyungjin/pi0-stackcube-mixed-noise-30pct-40ep-convex-lambda0.5
 - Dataset de entrenamiento: https://huggingface.co/datasets/taewonkoo/stack_cube_mixed_noise_30pct_40ep
 - Blog de π₀ en Physical Intelligence: https://www.physicalintelligence.company/blog/pi0
 - Repositorio OpenPI: https://github.com/Physical-Intelligence/openpi

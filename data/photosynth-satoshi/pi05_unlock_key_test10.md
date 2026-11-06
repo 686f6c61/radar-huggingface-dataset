@@ -57,8 +57,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `photosynth-satoshi/pi05_unlock_key_test10` | 4,14 B | no disponible | Desbloqueo de puerta con llave | Apache 2.0 | HuggingFace |
-| `lerobot/pi05_base` | 4,14 B (estimado) | no disponible | Generalista (pre-entrenado) | Apache 2.0 | HuggingFace |
+| `photosynth-satoshi/pi05_unlock_key_test10` | 4,14 B | no disponible | Desbloqueo de puerta con llave | Apache 2.0 | Hugging Face |
+| `lerobot/pi05_base` | 4,14 B (estimado) | no disponible | Generalista (pre-entrenado) | Apache 2.0 | Hugging Face |
 | π₀ (original, de Physical Intelligence) | no disponible | no disponible | Generalista | no disponible (codigo abierto en OpenPI) | GitHub |
 
 No se dispone de datos de rendimiento comparativo. El fine-tune se diferencia del modelo base en que esta especializado en una tarea concreta, mientras que el base es un modelo pre-entrenado para multiples tareas. π₀ (el predecesor) tiene una arquitectura similar pero sin las mejoras de generalizacion de π₀.₅.
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo. El fine-tune se diferencia de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/photosynth-satoshi/pi05_unlock_key_test10
+- Modelo en Hugging Face: https://huggingface.co/photosynth-satoshi/pi05_unlock_key_test10
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/photosynth-satoshi/so101_unlock_key
 - Documentacion de LeRobot para π₀.₅: https://huggingface.co/docs/lerobot/pi05

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`junjiejun/matching` es un repositorio de HuggingFace que contiene una implementación personalizada y compacta de DeiT (Data-efficient Image Transformer) orientada a tareas de *matching* (emparejamiento). Lo desarrolla el usuario `junjiejun` y se publica bajo licencia MIT. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con un checkpoint de inicialización válido para *smoke tests*, revisión de código y experimentos controlados de pequena escala.
+`junjiejun/matching` es un repositorio de Hugging Face que contiene una implementación personalizada y compacta de DeiT (Data-efficient Image Transformer) orientada a tareas de *matching* (emparejamiento). Lo desarrolla el usuario `junjiejun` y se publica bajo licencia MIT. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código con un checkpoint de inicialización válido para *smoke tests*, revisión de código y experimentos controlados de pequena escala.
 
 El modelo declara una configuración "huge" con atención dispersa (*sparse attention*), fusión mediante *co-attention*, activación GELU y normalización *scalenorm*. El checkpoint incluido en `model.safetensors` no ha sido entrenado ni auditado; el propio autor indica explícitamente que no se reclama ninguna puntuación de benchmark en el repositorio. Su relevancia es, por tanto, la de un punto de partida reproducible para experimentación con arquitecturas DeiT aplicadas a matching, no la de un modelo evaluable de forma directa.
 
@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| junjiejun/matching | 16.576 (registrados) | no disponible | No | MIT | HuggingFace |
-| DeiT oficial (Facebook) | ~5M–86M según variante | N/A (visión) | Sí (ImageNet) | Apache 2.0 | HuggingFace / GitHub |
-| Variantes ViT/DeiT de la comunidad | variable | N/A (visión) | Variable | Variable | HuggingFace |
+| junjiejun/matching | 16.576 (registrados) | no disponible | No | MIT | Hugging Face |
+| DeiT oficial (Facebook) | ~5M–86M según variante | N/A (visión) | Sí (ImageNet) | Apache 2.0 | Hugging Face / GitHub |
+| Variantes ViT/DeiT de la comunidad | variable | N/A (visión) | Variable | Variable | Hugging Face |
 
 La comparación directa no es significativa: los DeiT oficiales son modelos entrenados y evaluados en ImageNet, mientras que este repositorio es una implementación personalizada sin entrenamiento ni métricas. Cualquier comparación de rendimiento carecería de base.
 
@@ -94,5 +94,5 @@ La comparación directa no es significativa: los DeiT oficiales son modelos entr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/junjiejun/matching
+- Repositorio Hugging Face: https://huggingface.co/junjiejun/matching
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

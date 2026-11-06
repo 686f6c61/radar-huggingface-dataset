@@ -102,7 +102,7 @@ Los datos de las filas correspondientes a otros modelos proceden de su documenta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eress6969/qwen14b-memento-swe-agent
+- Modelo en Hugging Face: https://huggingface.co/eress6969/qwen14b-memento-swe-agent
 - Modelo base utilizado: https://huggingface.co/unsloth/Qwen2.5-Coder-14B-Instruct-bnb-4bit
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

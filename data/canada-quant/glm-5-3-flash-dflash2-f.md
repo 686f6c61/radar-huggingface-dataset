@@ -79,10 +79,10 @@ El propio autor describe el resultado como paridad: −0,006 a K=7 y +0,010 en s
 
 | Modelo | Tipo | Parametros | K / bloque | Aceptacion K=7 c16 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GLM-5.3-Flash-DFlash2-F (este) | DFlash2 drafter | ~1,84B borrador (3,11B en safetensors del repo) | K=7, bloque 8 | 3,626 | Apache-2.0 | HuggingFace, pesos safetensors |
-| incoai/GLM-5.3-Flash-DFlash2 | DFlash2 drafter | no disponible | K=7 (medido a c16) | 3,632 | CC-BY-NC-ND-4.0 | HuggingFace, uso no comercial y sin derivadas |
-| canada-quant/GLM-5.3-Flash-DFlash2-E | DFlash2 drafter (release previa) | misma arquitectura | K=7, bloque 8 | 3,561 | no disponible en la informacion proporcionada | HuggingFace |
-| zai-org/GLM-5.3-Flash | modelo objetivo | no disponible | no aplica | no aplica | no disponible en la informacion proporcionada | HuggingFace |
+| GLM-5.3-Flash-DFlash2-F (este) | DFlash2 drafter | ~1,84B borrador (3,11B en safetensors del repo) | K=7, bloque 8 | 3,626 | Apache-2.0 | Hugging Face, pesos safetensors |
+| incoai/GLM-5.3-Flash-DFlash2 | DFlash2 drafter | no disponible | K=7 (medido a c16) | 3,632 | CC-BY-NC-ND-4.0 | Hugging Face, uso no comercial y sin derivadas |
+| canada-quant/GLM-5.3-Flash-DFlash2-E | DFlash2 drafter (release previa) | misma arquitectura | K=7, bloque 8 | 3,561 | no disponible en la informacion proporcionada | Hugging Face |
+| zai-org/GLM-5.3-Flash | modelo objetivo | no disponible | no aplica | no aplica | no disponible en la informacion proporcionada | Hugging Face |
 
 La diferencia relevante frente a la referencia no es de aceptacion (dentro del ruido) sino de licencia y trazabilidad: la referencia impide uso comercial y obras derivadas, mientras que este borrador es Apache-2.0 y publica la procedencia completa de sus datos de entrenamiento.
 
@@ -102,7 +102,7 @@ La diferencia relevante frente a la referencia no es de aceptacion (dentro del r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canada-quant/GLM-5.3-Flash-DFlash2-F
+- Modelo en Hugging Face: https://huggingface.co/canada-quant/GLM-5.3-Flash-DFlash2-F
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Cuantizacion INT4 contra la que fue entrenado: https://huggingface.co/canada-quant/GLM-5.3-Flash-W4A16-MTP
 - Release anterior sustituida: https://huggingface.co/canada-quant/GLM-5.3-Flash-DFlash2-E

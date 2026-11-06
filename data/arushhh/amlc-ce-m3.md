@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Arushhh/amlc-ce-m3` es un modelo publicado en HuggingFace por el usuario Arushhh, con un total de 567.755.777 parámetros (~568 M) y un repositorio de 2,3 GB. El único tag de arquitectura disponible es `xlm-roberta`, junto a `safetensors` y `region:us`. No se ha publicado model card, pipeline, licencia ni lista de idiomas, por lo que toda descripción funcional más allá de la arquitectura debe considerarse no confirmada.
+`Arushhh/amlc-ce-m3` es un modelo publicado en Hugging Face por el usuario Arushhh, con un total de 567.755.777 parámetros (~568 M) y un repositorio de 2,3 GB. El único tag de arquitectura disponible es `xlm-roberta`, junto a `safetensors` y `region:us`. No se ha publicado model card, pipeline, licencia ni lista de idiomas, por lo que toda descripción funcional más allá de la arquitectura debe considerarse no confirmada.
 
 El recuento de parámetros es coherente con la clase `xlm-roberta-large` (~560 M de parámetros en el encoder) más una cabeza de tarea (clasificación o regresión) de tamaño reducido. El sufijo del nombre (`ce`) sugiere un posible uso como cross-encoder, pero se trata de una inferencia a partir del identificador y no de un dato documentado.
 
@@ -12,7 +12,7 @@ Su relevancia práctica es limitada en el momento de redactar esta ficha: 13 des
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `xlm-roberta` (transformer encoder) segun tag de HuggingFace; variante y cabeza de tarea no confirmadas |
+| Arquitectura | `xlm-roberta` (transformer encoder) segun tag de Hugging Face; variante y cabeza de tarea no confirmadas |
 | Parametros totales | 567.755.777 (~568 M) |
 | Parametros activos | No aplica (no hay indicios de arquitectura MoE) |
 | Longitud de contexto | No disponible. La arquitectura XLM-RoBERTa estándar opera a 512 tokens, pero no se confirma en este repositorio |
@@ -75,10 +75,10 @@ Comparación con encoders multilingües de tamaño comparable. Los datos de las 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Arushhh/amlc-ce-m3 | ~568 M | No disponible | No disponible | HuggingFace, 13 descargas | Sin model card, sin pipeline, sin idiomas declarados |
-| xlm-roberta-large | ~560 M | 512 tokens | MIT | HuggingFace, ampliamente adoptado | Base multilingüe de referencia, sin cabeza de tarea |
-| mdeberta-v3-large | ~560 M | 512 tokens | MIT | HuggingFace | Alternativa multilingüe con attention disentangled, buen rendimiento en XNLI |
-| xlm-roberta-base | ~278 M | 512 tokens | MIT | HuggingFace | Versión reducida, menor coste y menor capacidad |
+| Arushhh/amlc-ce-m3 | ~568 M | No disponible | No disponible | Hugging Face, 13 descargas | Sin model card, sin pipeline, sin idiomas declarados |
+| xlm-roberta-large | ~560 M | 512 tokens | MIT | Hugging Face, ampliamente adoptado | Base multilingüe de referencia, sin cabeza de tarea |
+| mdeberta-v3-large | ~560 M | 512 tokens | MIT | Hugging Face | Alternativa multilingüe con attention disentangled, buen rendimiento en XNLI |
+| xlm-roberta-base | ~278 M | 512 tokens | MIT | Hugging Face | Versión reducida, menor coste y menor capacidad |
 
 No se dispone de datos de rendimiento de `amlc-ce-m3` que permitan comparar calidad frente a estas alternativas.
 
@@ -97,11 +97,11 @@ No se dispone de datos de rendimiento de `amlc-ce-m3` que permitan comparar cali
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arushhh/amlc-ce-m3
+- Modelo en Hugging Face: https://huggingface.co/Arushhh/amlc-ce-m3
 - Paper de XLM-RoBERTa (Unsupervised Cross-lingual Representation Learning at Scale): https://arxiv.org/abs/1911.02116
 - Paper de RoBERTa: https://arxiv.org/abs/1907.11692
-- Repositorio de `transformers` (HuggingFace): https://github.com/huggingface/transformers
-- Text Embeddings Inference (HuggingFace): https://github.com/huggingface/text-embeddings-inference
+- Repositorio de `transformers` (Hugging Face): https://github.com/huggingface/transformers
+- Text Embeddings Inference (Hugging Face): https://github.com/huggingface/text-embeddings-inference
 - Librería `sentence-transformers` (CrossEncoder): https://www.sbert.net/
-- Documentación de XLM-RoBERTa en HuggingFace: https://huggingface.co/docs/transformers/model_doc/xlm-roberta
+- Documentación de XLM-RoBERTa en Hugging Face: https://huggingface.co/docs/transformers/model_doc/xlm-roberta
 - Perfil del autor: https://huggingface.co/Arushhh

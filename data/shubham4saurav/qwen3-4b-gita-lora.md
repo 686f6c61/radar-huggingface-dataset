@@ -88,7 +88,7 @@ No se dispone de comparativas de rendimiento entre estos adaptadores. El modelo 
 
 ## Enlaces
 
-- [HuggingFace - shubham4saurav/qwen3-4b-gita-lora](https://huggingface.co/shubham4saurav/qwen3-4b-gita-lora)
+- [Hugging Face - shubham4saurav/qwen3-4b-gita-lora](https://huggingface.co/shubham4saurav/qwen3-4b-gita-lora)
 - [Repositorio GitHub - gita-llm](https://github.com/shubham4saurav/gita-llm)
 - [Dataset original - JDhruv14/Bhagavad-Gita_Dataset](https://huggingface.co/datasets/JDhruv14/Bhagavad-Gita_Dataset)
 - [Modelo base - Qwen/Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `xx110602/XG` es una publicación en HuggingFace realizada por el usuario `xx110602` bajo licencia Apache 2.0. No se dispone de información adicional en la model card más allá de la declaración de licencia. No se especifican arquitectura, tamaño, parámetros, contexto, idiomas ni capacidades. Se trata de un repositorio sin descargas ni interacciones de la comunidad, creado el 16 de agosto de 2026, lo que sugiere que es una publicación reciente o de carácter experimental. Dada la ausencia total de documentación técnica, no es posible evaluar su utilidad ni sus características para su uso en entornos de desarrollo o investigación.
+El modelo identificado como `xx110602/XG` es una publicación en Hugging Face realizada por el usuario `xx110602` bajo licencia Apache 2.0. No se dispone de información adicional en la model card más allá de la declaración de licencia. No se especifican arquitectura, tamaño, parámetros, contexto, idiomas ni capacidades. Se trata de un repositorio sin descargas ni interacciones de la comunidad, creado el 16 de agosto de 2026, lo que sugiere que es una publicación reciente o de carácter experimental. Dada la ausencia total de documentación técnica, no es posible evaluar su utilidad ni sus características para su uso en entornos de desarrollo o investigación.
 
 ## Especificaciones tecnicas
 
@@ -50,4 +50,4 @@ No disponible: no se dispone de información suficiente para comparar este model
 
 ## Enlaces
 
-- [HuggingFace - xx110602/XG](https://huggingface.co/xx110602/XG)
+- [Hugging Face - xx110602/XG](https://huggingface.co/xx110602/XG)

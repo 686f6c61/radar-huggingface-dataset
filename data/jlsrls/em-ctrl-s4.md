@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jlsrls/em-ctrl-s4` es un ajuste fino (fine-tune) del modelo base `unsloth/gemma-3-4b-it`, una variante optimizada de Gemma 3 4B con instrucciones. Ha sido entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace, junto con Unsloth para la optimización del entrenamiento. El autor, `jlsrls`, no ha publicado una descripción detallada del propósito del modelo ni de los datos de entrenamiento, por lo que su funcionalidad específica no está documentada.
+El modelo `jlsrls/em-ctrl-s4` es un ajuste fino (fine-tune) del modelo base `unsloth/gemma-3-4b-it`, una variante optimizada de Gemma 3 4B con instrucciones. Ha sido entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face, junto con Unsloth para la optimización del entrenamiento. El autor, `jlsrls`, no ha publicado una descripción detallada del propósito del modelo ni de los datos de entrenamiento, por lo que su funcionalidad específica no está documentada.
 
 A pesar de que el nombre sugiere una posible relación con control emocional o con arquitecturas de estado espacial (S4), no hay evidencia en la información disponible que confirme ninguna de estas hipótesis. Se trata de un fine-tune de un transformer decoder-only, y su relevancia actual radica en ser un ejemplo de adaptación de un modelo popular mediante SFT, aunque carece de métricas de rendimiento y documentación técnica que permitan evaluarlo de forma rigurosa.
 
@@ -57,6 +57,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - jlsrls/em-ctrl-s4](https://huggingface.co/jlsrls/em-ctrl-s4)
+- [Hugging Face - jlsrls/em-ctrl-s4](https://huggingface.co/jlsrls/em-ctrl-s4)
 - [Modelo base: unsloth/gemma-3-4b-it](https://huggingface.co/unsloth/gemma-3-4b-it)
 - [Registro de entrenamiento en Weights & Biases](https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/96opzu6l)

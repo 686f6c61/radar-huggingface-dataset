@@ -89,7 +89,7 @@ Datos del modelo base segun documentacion publica de cada proyecto; no verificad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sidpnyc/storeops-copilot-qwen2.5-1.5b-lora
+- Modelo en Hugging Face: https://huggingface.co/sidpnyc/storeops-copilot-qwen2.5-1.5b-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Paper, blog o demo del modelo: no disponible

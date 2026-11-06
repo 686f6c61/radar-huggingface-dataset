@@ -70,6 +70,6 @@ No se dispone de datos comparativos con otros modelos. Como referencia, el model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/droplychee/droplychee-mini-12test
+- Hugging Face: https://huggingface.co/droplychee/droplychee-mini-12test
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL (Hugging Face): https://github.com/huggingface/trl

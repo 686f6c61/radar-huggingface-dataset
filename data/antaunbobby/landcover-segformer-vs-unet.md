@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AntaunBobby/landcover-segformer-vs-unet` es un repositorio publicado en HuggingFace por el usuario AntaunBobby bajo licencia Apache 2.0. Por el nombre y la estructura del repositorio, se trata de un artefacto de comparación entre dos arquitecturas de segmentación semántica aplicadas a cobertura del suelo (land cover): SegFormer y U-Net. El tamaño del repositorio es de aproximadamente 0,2 GB, lo que sugiere la presencia de pesos de un modelo de tamaño moderado o de varios checkpoints comparativos.
+`AntaunBobby/landcover-segformer-vs-unet` es un repositorio publicado en Hugging Face por el usuario AntaunBobby bajo licencia Apache 2.0. Por el nombre y la estructura del repositorio, se trata de un artefacto de comparación entre dos arquitecturas de segmentación semántica aplicadas a cobertura del suelo (land cover): SegFormer y U-Net. El tamaño del repositorio es de aproximadamente 0,2 GB, lo que sugiere la presencia de pesos de un modelo de tamaño moderado o de varios checkpoints comparativos.
 
 La model card publicada es prácticamente inexistente: se limita a declarar la licencia Apache 2.0, sin descripción, sin datos de entrenamiento, sin métricas y sin instrucciones de uso. No consta pipeline declarado, no se especifican idiomas y el repositorio no registra descargas ni interacciones en el momento de la consulta.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AntaunBobby/landcover-segformer-vs-unet | Segmentación semántica (SegFormer vs U-Net) | No disponible | No disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| nvidia/segformer-b0 a b5 | Segmentación semántica (SegFormer) | 3,7 M a 82 M (según variante) | Imagen de entrada, sin contexto textual | NVIDIA Source Code License / Apache 2.0 según variante | HuggingFace, ampliamente usado |
+| AntaunBobby/landcover-segformer-vs-unet | Segmentación semántica (SegFormer vs U-Net) | No disponible | No disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| nvidia/segformer-b0 a b5 | Segmentación semántica (SegFormer) | 3,7 M a 82 M (según variante) | Imagen de entrada, sin contexto textual | NVIDIA Source Code License / Apache 2.0 según variante | Hugging Face, ampliamente usado |
 | U-Net original (Ronneberger et al.) | Segmentación semántica (CNN) | Depende de la implementación | Imagen de entrada | Varía según implementación | Repositorios académicos y frameworks |
-| facebook/mask2former-swin-base | Segmentación universal (Mask2Former) | ~100 M | Imagen de entrada | Apache 2.0 / CC BY-NC según checkpoint | HuggingFace |
+| facebook/mask2former-swin-base | Segmentación universal (Mask2Former) | ~100 M | Imagen de entrada | Apache 2.0 / CC BY-NC según checkpoint | Hugging Face |
 
 La comparativa es aproximada: no se dispone de parámetros ni métricas del modelo evaluado, por lo que la comparación se limita al tipo de tarea y a la licencia.
 
@@ -79,5 +79,5 @@ La comparativa es aproximada: no se dispone de parámetros ni métricas del mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AntaunBobby/landcover-segformer-vs-unet
+- Repositorio en Hugging Face: https://huggingface.co/AntaunBobby/landcover-segformer-vs-unet
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo concreto.

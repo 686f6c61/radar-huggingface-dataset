@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sach0312/qwen3-0.6b-nhl-polymarket-sft` es un ajuste fino (SFT) del modelo denso Qwen/Qwen3-0.6B, publicado por el usuario sach0312 en HuggingFace. El entrenamiento se ha realizado con la libreria TRL (version 1.13.0) sobre Transformers 5.17.0 y PyTorch 2.14.0, y los pesos se distribuyen en formato safetensors. El repositorio ocupa 0,2 GB y no registra descargas ni likes en el momento de la consulta.
+`sach0312/qwen3-0.6b-nhl-polymarket-sft` es un ajuste fino (SFT) del modelo denso Qwen/Qwen3-0.6B, publicado por el usuario sach0312 en Hugging Face. El entrenamiento se ha realizado con la libreria TRL (version 1.13.0) sobre Transformers 5.17.0 y PyTorch 2.14.0, y los pesos se distribuyen en formato safetensors. El repositorio ocupa 0,2 GB y no registra descargas ni likes en el momento de la consulta.
 
 El nombre del modelo sugiere un ajuste orientado a datos relacionados con la NHL (National Hockey League) y Polymarket (mercado de prediccion), aunque la model card no documenta la composicion del dataset, el numero de tokens de entrenamiento ni el objetivo concreto del ajuste. Tampoco se especifican hiperparametros, licencia ni idiomas soportados.
 
@@ -38,7 +38,7 @@ Las unicas referencias tecnicas verificables son las versiones de framework empl
 - Generacion de texto en un unico turno o multi-turno, con la ventana de contexto del modelo base (hasta 32.768 tokens nativos, segun Qwen).
 - Razonamiento basico, matematicas simples y generacion de codigo, limitados por el tamano de 0,6B de parametros.
 - Soporte de plantilla de conversacion con roles `user`/`assistant`, tal como muestra el ejemplo de `pipeline` de la model card.
-- Compatibilidad declarada con endpoints (etiqueta `endpoints_compatible`), lo que permite su despliegue mediante la infraestructura de inferencia de HuggingFace.
+- Compatibilidad declarada con endpoints (etiqueta `endpoints_compatible`), lo que permite su despliegue mediante la infraestructura de inferencia de Hugging Face.
 - Ajuste orientado, segun el nombre del repositorio, a contenido de NHL y Polymarket; no hay evidencia documentada de la magnitud ni la calidad de esa especializacion.
 - No se declara soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente en fp16; RTX 3060, RTX 4060, RTX 4090, A100 o H100 funcionan sin problema, aunque en las GPU de gama alta el modelo queda muy infrautilizado.
 - Cabe en GPU de consumo: si, incluidas GTX 1650 (4 GB), RTX 3050, RTX 4060 y superiores, tanto en fp16 como en formatos cuantizados.
 - Ejecucion en CPU: viable gracias al reducido numero de parametros, con latencias del orden de decenas de tokens por segundo en procesadores modernos, aunque no se dispone de mediciones publicadas.
-- Opciones de despliegue: transformers (soporte nativo declarado), vLLM, TGI, llama.cpp u Ollama previa conversion a GGUF, y el propio sistema de endpoints de HuggingFace. No se documenta compatibilidad verificada con ninguna de estas alternativas.
+- Opciones de despliegue: transformers (soporte nativo declarado), vLLM, TGI, llama.cpp u Ollama previa conversion a GGUF, y el propio sistema de endpoints de Hugging Face. No se documenta compatibilidad verificada con ninguna de estas alternativas.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -72,10 +72,10 @@ Los datos de las alternativas proceden de sus respectivas model cards publicas, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| sach0312/qwen3-0.6b-nhl-polymarket-sft | ~0,6B (heredados) | No especificado (base: 32.768 nativos) | No disponible | HuggingFace, 0 descargas | No disponibles |
-| Qwen/Qwen3-0.6B | 0,6B | 32.768 nativos, 131.072 con YaRN | Apache-2.0 (segun su model card) | HuggingFace, ampliamente utilizado | Si, en su model card |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,49B | 32.768 | Apache-2.0 (segun su model card) | HuggingFace | Si, en su model card |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24B | 131.072 | Llama 3.2 Community License | HuggingFace con acceso aceptado | Si, en su model card |
+| sach0312/qwen3-0.6b-nhl-polymarket-sft | ~0,6B (heredados) | No especificado (base: 32.768 nativos) | No disponible | Hugging Face, 0 descargas | No disponibles |
+| Qwen/Qwen3-0.6B | 0,6B | 32.768 nativos, 131.072 con YaRN | Apache-2.0 (segun su model card) | Hugging Face, ampliamente utilizado | Si, en su model card |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,49B | 32.768 | Apache-2.0 (segun su model card) | Hugging Face | Si, en su model card |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24B | 131.072 | Llama 3.2 Community License | Hugging Face con acceso aceptado | Si, en su model card |
 
 La diferencia fundamental respecto a las alternativas no esta en la arquitectura, sino en la ausencia de documentacion: no se declaran licencia, idiomas, dataset ni evaluaciones, lo que dificulta su uso en entornos con requisitos de cumplimiento.
 
@@ -92,7 +92,7 @@ La diferencia fundamental respecto a las alternativas no esta en la arquitectura
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sach0312/qwen3-0.6b-nhl-polymarket-sft
+- Modelo en Hugging Face: https://huggingface.co/sach0312/qwen3-0.6b-nhl-polymarket-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Busquedas web: no se han encontrado resultados relevantes. Las consultas realizadas devolvieron exclusivamente enlaces a sitios de repacks de videojuegos sin ninguna relacion con el modelo, por lo que no se listan. No se dispone de paper, blog tecnico, demo ni repositorio adicional asociado al modelo.

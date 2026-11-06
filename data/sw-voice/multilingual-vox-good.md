@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks estándar ni de especificaciones completas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/multilingual-vox-good
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/multilingual-vox-good
 - Modelo base (etapa 2): https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage2-english-sidon-lr1e-4-10ep
 - Etapa 1 multilingüe: https://huggingface.co/sw-voice/voxcpm2-indic-multi-lr5e-5-1ep
 - Etapa 3 sin congelación: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage3-navaratri-te-kn-themes-lr1e-4-5ep

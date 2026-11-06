@@ -109,7 +109,7 @@ Comparativa con modelos externos (Qwen base, Llama, Mistral u otros ajustes de e
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/rawmodels/Qwen3.8-27B-antislop-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/rawmodels/Qwen3.8-27B-antislop-GGUF
 - Modelo base: https://huggingface.co/rawmodels/Qwen3.8-27B-antislop
 - Manifiesto de pesos y hashes: `weights_manifest.json` (incluido en el repositorio)
 - Perfil del autor relacionado con el desarrollo: https://huggingface.co/AlexWortega

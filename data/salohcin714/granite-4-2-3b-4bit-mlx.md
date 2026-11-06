@@ -78,7 +78,7 @@ La comparativa se basa en características generales; no se dispone de datos de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/salohcin714/granite-4.2-3b-4bit-mlx
+- Repositorio Hugging Face: https://huggingface.co/salohcin714/granite-4.2-3b-4bit-mlx
 - Modelo base original: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Colección Granite 4.2 de IBM: https://huggingface.co/collections/ibm-granite/granite-42-language-models
 - Documentación oficial de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2

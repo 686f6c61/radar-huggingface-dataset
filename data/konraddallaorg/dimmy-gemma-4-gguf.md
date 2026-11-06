@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| dimmy-gemma-4-gguf (12B) | 11,9B | no disponible | Apache 2.0 | GGUF | HuggingFace (espejo) |
-| google/gemma-4-12B-it | 12B (aprox.) | no disponible | Apache 2.0 (según este repo) | safetensors | HuggingFace (oficial) |
-| unsloth/gemma-4-12B-it-GGUF | 12B (aprox.) | no disponible | Apache 2.0 | GGUF | HuggingFace (upstream) |
-| unsloth/gemma-4-12B-it-qat-GGUF | 12B (aprox.) | no disponible | Apache 2.0 | GGUF (QAT) | HuggingFace (upstream) |
+| dimmy-gemma-4-gguf (12B) | 11,9B | no disponible | Apache 2.0 | GGUF | Hugging Face (espejo) |
+| google/gemma-4-12B-it | 12B (aprox.) | no disponible | Apache 2.0 (según este repo) | safetensors | Hugging Face (oficial) |
+| unsloth/gemma-4-12B-it-GGUF | 12B (aprox.) | no disponible | Apache 2.0 | GGUF | Hugging Face (upstream) |
+| unsloth/gemma-4-12B-it-qat-GGUF | 12B (aprox.) | no disponible | Apache 2.0 | GGUF (QAT) | Hugging Face (upstream) |
 
 La comparativa se limita a las variantes de la misma familia porque la información proporcionada no incluye datos de rendimiento ni de contexto que permitan contrastar con modelos de otros desarrolladores.
 
@@ -87,7 +87,7 @@ La comparativa se limita a las variantes de la misma familia porque la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KonradDallaOrg/dimmy-gemma-4-gguf
+- Repositorio Hugging Face: https://huggingface.co/KonradDallaOrg/dimmy-gemma-4-gguf
 - Upstream E2B QAT (Unsloth): https://huggingface.co/unsloth/gemma-4-E2B-it-qat-GGUF
 - Upstream E4B QAT (Unsloth): https://huggingface.co/unsloth/gemma-4-E4B-it-qat-GGUF
 - Upstream 12B QAT (Unsloth): https://huggingface.co/unsloth/gemma-4-12B-it-qat-GGUF

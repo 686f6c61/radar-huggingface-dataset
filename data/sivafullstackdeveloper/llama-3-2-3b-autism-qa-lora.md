@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-3B-autism-qa-lora | 3B (base) + LoRA | No disponible | RAG tematico con rechazo medico | llama3.2 | HuggingFace (adaptador) |
-| meta-llama/Llama-3.2-3B-Instruct | 3B | No disponible en la informacion | Instruccion general | llama3.2 | HuggingFace (gated) |
-| Adaptadores LoRA comunitarios sobre Llama 3.2 3B | 3B (base) + LoRA | Variable | Fine-tuning de dominio | llama3.2 | HuggingFace |
+| Llama-3.2-3B-autism-qa-lora | 3B (base) + LoRA | No disponible | RAG tematico con rechazo medico | llama3.2 | Hugging Face (adaptador) |
+| meta-llama/Llama-3.2-3B-Instruct | 3B | No disponible en la informacion | Instruccion general | llama3.2 | Hugging Face (gated) |
+| Adaptadores LoRA comunitarios sobre Llama 3.2 3B | 3B (base) + LoRA | Variable | Fine-tuning de dominio | llama3.2 | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con alternativas; la comparativa se limita a parametros, enfoque y licencia.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sivafullstackdeveloper/Llama-3.2-3B-autism-qa-lora
+- Modelo en Hugging Face: https://huggingface.co/sivafullstackdeveloper/Llama-3.2-3B-autism-qa-lora
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Dataset: https://huggingface.co/datasets/sivafullstackdeveloper/autism-qa-dataset-v1
 - Repositorio del proyecto asterly: https://github.com/CherukuriSiva/asterly

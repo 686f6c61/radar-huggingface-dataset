@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `beetle-bilingual-l2-50-simultaneous-b2-fineweb-2b-ell-eng` es un modelo de generacion de texto publicado en HuggingFace por el usuario u organizacion `Beetle-FineWeb-24B-4`. Se trata de un modelo de tamano pequeno: los pesos en safetensors suman 193.804.032 parametros (aproximadamente 194 millones), lo que lo situa en la categoria de modelos compactos de investigacion. La etiqueta de arquitectura declarada por el autor es `pico_decoder`, lo que apunta a un decodificador de tipo transformer con implementacion personalizada, pero no hay documentacion tecnica publicada que detalle su diseno.
+El modelo identificado como `beetle-bilingual-l2-50-simultaneous-b2-fineweb-2b-ell-eng` es un modelo de generacion de texto publicado en Hugging Face por el usuario u organizacion `Beetle-FineWeb-24B-4`. Se trata de un modelo de tamano pequeno: los pesos en safetensors suman 193.804.032 parametros (aproximadamente 194 millones), lo que lo situa en la categoria de modelos compactos de investigacion. La etiqueta de arquitectura declarada por el autor es `pico_decoder`, lo que apunta a un decodificador de tipo transformer con implementacion personalizada, pero no hay documentacion tecnica publicada que detalle su diseno.
 
-La model card distribuida con el repositorio es la plantilla automatica de HuggingFace, sin contenido relleno: no incluye informacion sobre el desarrollador, el tipo de modelo, los idiomas, la licencia, los datos de entrenamiento ni resultados de evaluacion. El identificador del modelo sugiere, por convencion de nomenclatura y no por documentacion oficial, un enfoque bilingue (los codigos ISO `ell` para griego y `eng` para ingles), orientado a traduccion simultanea, con datos de entrenamiento posiblemente vinculados al corpus FineWeb. Estas deducciones deben tratarse como hipotesis a partir del nombre, no como especificaciones confirmadas.
+La model card distribuida con el repositorio es la plantilla automatica de Hugging Face, sin contenido relleno: no incluye informacion sobre el desarrollador, el tipo de modelo, los idiomas, la licencia, los datos de entrenamiento ni resultados de evaluacion. El identificador del modelo sugiere, por convencion de nomenclatura y no por documentacion oficial, un enfoque bilingue (los codigos ISO `ell` para griego y `eng` para ingles), orientado a traduccion simultanea, con datos de entrenamiento posiblemente vinculados al corpus FineWeb. Estas deducciones deben tratarse como hipotesis a partir del nombre, no como especificaciones confirmadas.
 
 El modelo es relevante unicamente en el contexto de experimentacion con decodificadores pequenos y codigo personalizado (`custom_code`), ya que requiere `trust_remote_code=True` para cargarse. No tiene descargas ni likes en el momento de la consulta, carece de licencia declarada y su repositorio ocupa 79,9 GB, un tamano desproporcionado para sus 194 millones de parametros, lo que sugiere la presencia de multiples checkpoints, estados de optimizador u otros artefactos no documentados.
 
@@ -30,7 +30,7 @@ El modelo es relevante unicamente en el contexto de experimentacion con decodifi
 
 La unica referencia arquitectonica es la etiqueta `pico_decoder` incluida por el autor, junto con la etiqueta `custom_code`, que indica que el modelo no se carga con clases estandar de `transformers` y exige ejecutar codigo remoto del repositorio. No se dispone de informacion sobre el numero de capas, dimensiones ocultas, mecanismo de atencion, tipo de normalizacion ni vocabulario. Tampoco hay datos sobre si emplea atencion completa, atencion lineal u otra variante, ni sobre el esquema de posiciones.
 
-Respecto al entrenamiento, no hay informacion publicada sobre el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas de ajuste como RLHF, DPO o SFT. El nombre del modelo incluye la cadena `fineweb` y `2b`, que podria interpretarse como un entrenamiento sobre aproximadamente 2.000 millones de tokens de FineWeb, pero se trata de una inferencia a partir del identificador y no de un dato confirmado. El unico enlace a un paper presente en las etiquetas, `arxiv:1910.09700`, corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono y aparece en la plantilla automatica de HuggingFace, por lo que no es una referencia tecnica al modelo.
+Respecto al entrenamiento, no hay informacion publicada sobre el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas de ajuste como RLHF, DPO o SFT. El nombre del modelo incluye la cadena `fineweb` y `2b`, que podria interpretarse como un entrenamiento sobre aproximadamente 2.000 millones de tokens de FineWeb, pero se trata de una inferencia a partir del identificador y no de un dato confirmado. El unico enlace a un paper presente en las etiquetas, `arxiv:1910.09700`, corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono y aparece en la plantilla automatica de Hugging Face, por lo que no es una referencia tecnica al modelo.
 
 ## Capacidades
 
@@ -94,7 +94,7 @@ No es posible completar la comparativa con datos verificables; se indica "no dis
 - Limitaciones de contexto e idioma: se desconoce la longitud de contexto y los idiomas reales; el nombre sugiere griego e ingles sin confirmacion.
 - Restricciones de licencia: la licencia no esta declarada, lo que impide determinar si se permite el uso comercial. Se debe contactar con el autor antes de cualquier uso en produccion.
 - Codigo remoto: el uso requiere `trust_remote_code=True`, lo que implica ejecutar codigo del repositorio; hay que auditar dicho codigo antes de cargarlo por motivos de seguridad.
-- Documentacion inexistente: la model card es la plantilla automatica de HuggingFace sin contenido, por lo que no hay garantias sobre el entrenamiento, la procedencia de los datos ni el uso previsto.
+- Documentacion inexistente: la model card es la plantilla automatica de Hugging Face sin contenido, por lo que no hay garantias sobre el entrenamiento, la procedencia de los datos ni el uso previsto.
 - Ausencia de benchmarks: no hay resultados de MMLU, HumanEval, GSM8K ni de tareas de traduccion que permitan validar su calidad.
 - Tamano del repositorio incoherente: 79,9 GB para 194 millones de parametros sugiere artefactos adicionales no documentados; verificar el contenido antes de descargar para evitar consumo innecesario de almacenamiento.
 - Adopcion nula: cero descargas y cero likes en el momento de la consulta, sin comunidad que haya validado el modelo.
@@ -102,7 +102,7 @@ No es posible completar la comparativa con datos verificables; se indica "no dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beetle-FineWeb-24B-4/beetle-bilingual-l2-50-simultaneous-b2-fineweb-2b-ell-eng
+- Modelo en Hugging Face: https://huggingface.co/Beetle-FineWeb-24B-4/beetle-bilingual-l2-50-simultaneous-b2-fineweb-2b-ell-eng
 - Paper referenciado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono; aparece en la plantilla automatica, no es una referencia tecnica al modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning: https://mlco2.github.io/impact
 - No se han encontrado repositorios, papers, demos ni blogs adicionales sobre este modelo en la busqueda web realizada. Los resultados de busqueda obtenidos corresponden a temas ajenos (el insecto escarabajo y el automovil Volkswagen Beetle) y no son pertinentes.

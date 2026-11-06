@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Davilood/act_cuchara_cambuena_110 | 51.668.614 | no aplica | sin evaluación publicada | apache-2.0 | HuggingFace (30 descargas) |
-| Otras políticas ACT en LeRobot Hub | no disponible | no aplica | no disponible | variable | HuggingFace |
-| Políticas Diffusion Policy en LeRobot | no disponible | no aplica | no disponible | variable | HuggingFace |
+| Davilood/act_cuchara_cambuena_110 | 51.668.614 | no aplica | sin evaluación publicada | apache-2.0 | Hugging Face (30 descargas) |
+| Otras políticas ACT en LeRobot Hub | no disponible | no aplica | no disponible | variable | Hugging Face |
+| Políticas Diffusion Policy en LeRobot | no disponible | no aplica | no disponible | variable | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre esta política y alternativas de la misma categoría; la comparación se limita a la disponibilidad y licencia.
 
@@ -79,7 +79,7 @@ No se dispone de datos comparativos de rendimiento entre esta política y altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Davilood/act_cuchara_cambuena_110
+- Modelo en Hugging Face: https://huggingface.co/Davilood/act_cuchara_cambuena_110
 - Dataset de entrenamiento: https://huggingface.co/datasets/Davilood/cuchara_cambuena
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Davilood/cuchara_cambuena
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

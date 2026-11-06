@@ -96,7 +96,7 @@ Diferencias clave: el export de este repositorio conserva exactamente las capaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bjnortier/coreai-whisper-medium-kv-float16
+- Repositorio en Hugging Face: https://huggingface.co/bjnortier/coreai-whisper-medium-kv-float16
 - Modelo base: https://huggingface.co/openai/whisper-medium
 - `apple/coreai-models`: https://github.com/apple/coreai-models
 - Fork de bjnortier: https://github.com/bjnortier

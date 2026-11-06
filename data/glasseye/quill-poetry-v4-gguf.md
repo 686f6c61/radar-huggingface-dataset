@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Quill poetry GGUF v4 es un modelo de lenguaje publicado por el usuario GLASSEYE en HuggingFace, distribuido en formato GGUF y descrito por su autor con una unica linea: "Meter-specialist. `ollama run quill`". Por la informacion disponible, se trata de un modelo especializado en la generacion de poesia con control metrico (el tag `meter` hace referencia al metro o medida del verso), empaquetado para su ejecucion local mediante Ollama. El repositorio no incluye model card desarrollada, ni documentacion de entrenamiento, ni evaluaciones.
+Quill poetry GGUF v4 es un modelo de lenguaje publicado por el usuario GLASSEYE en Hugging Face, distribuido en formato GGUF y descrito por su autor con una unica linea: "Meter-specialist. `ollama run quill`". Por la informacion disponible, se trata de un modelo especializado en la generacion de poesia con control metrico (el tag `meter` hace referencia al metro o medida del verso), empaquetado para su ejecucion local mediante Ollama. El repositorio no incluye model card desarrollada, ni documentacion de entrenamiento, ni evaluaciones.
 
 El recuento de parametros declarado en los metadatos de safetensors es de 7.248.023.552 parametros, es decir, aproximadamente 7,25 mil millones, lo que lo situa en la categoria de los modelos de ~7B, habitualmente desplegables en GPU de consumo con cuantizacion. El repositorio ocupa 4,4 GB, un tamano coherente con una unica cuantizacion de tipo Q4 o similar, aunque el autor no especifica que nivel de cuantizacion contiene.
 
@@ -32,7 +32,7 @@ Respecto a los datos de entrenamiento, no hay ningun dato disponible: ni numero 
 - Generacion de texto en formato conversacional: el tag `conversational` indica soporte de plantilla de dialogo, aunque no se detalla el formato exacto de prompt.
 - Generacion de poesia con control metrico: la unica capacidad declarada explicitamente por el autor es la especializacion en metro ("meter-specialist"), presumiblemente orientada a producir versos con una medida silabica determinada.
 - Ejecucion local mediante Ollama: el autor documenta el comando `ollama run quill`, lo que implica compatibilidad con el runtime de Ollama.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el modelo puede servirse a traves de la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el modelo puede servirse a traves de la infraestructura de Inference Endpoints de Hugging Face.
 - Razonamiento, codigo, matematicas, vision, audio, tool calling, function calling y uso como agente: no disponible (no declarados por el autor).
 - Capacidades multilingues: no disponible (no se declara ningun idioma).
 - Modo de razonamiento explicito (thinking mode): no disponible.
@@ -91,7 +91,7 @@ La diferencia relevante no es de rendimiento, sino de informacion: los tres mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GLASSEYE/quill-poetry-v4-gguf
+- Hugging Face: https://huggingface.co/GLASSEYE/quill-poetry-v4-gguf
 - Comando de ejecucion indicado por el autor: `ollama run quill` (no se proporciona URL del registro de Ollama)
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Las busquedas web realizadas no devolvieron ningun resultado relacionado con este modelo; los unicos resultados obtenidos correspondian a documentacion de Google Translate y a preguntas de Stack Overflow, sin ninguna relacion con el proyecto.

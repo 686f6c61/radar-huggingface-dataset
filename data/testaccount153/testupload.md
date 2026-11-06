@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `testaccount153/testupload` es un artefacto publicado en HuggingFace por el usuario `testaccount153` bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica, arquitectura, datos de entrenamiento ni proposito declarado; unicamente incluye la declaracion de licencia. Por tanto, no es posible determinar que problema resuelve ni por que seria relevante.
+El modelo identificado como `testaccount153/testupload` es un artefacto publicado en Hugging Face por el usuario `testaccount153` bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica, arquitectura, datos de entrenamiento ni proposito declarado; unicamente incluye la declaracion de licencia. Por tanto, no es posible determinar que problema resuelve ni por que seria relevante.
 
 El repositorio ocupa 4.3 GB, un tamano compatible con pesos de un modelo de varios miles de millones de parametros en precision reducida, aunque no se confirma ni la arquitectura ni el numero de parametros. La ausencia de pipeline declarado, idiomas y etiquetas de tarea refuerza la naturaleza indeterminada del artefacto.
 
@@ -73,4 +73,4 @@ No disponible. Sin datos de arquitectura, parametros, contexto ni rendimiento, n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/testaccount153/testupload
+- Hugging Face: https://huggingface.co/testaccount153/testupload

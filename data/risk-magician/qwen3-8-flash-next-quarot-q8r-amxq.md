@@ -80,7 +80,7 @@ No se dispone en la información proporcionada de datos de benchmarks ni de espe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/risk-magician/Qwen3.8-Flash-Next-QuaRot-Q8R.amxq
+- Hugging Face: https://huggingface.co/risk-magician/Qwen3.8-Flash-Next-QuaRot-Q8R.amxq
 - Blog oficial: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Informe técnico: https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf
 - Qwen Cloud (servicio gestionado): https://www.qwencloud.com

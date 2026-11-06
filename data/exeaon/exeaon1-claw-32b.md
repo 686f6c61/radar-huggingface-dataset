@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Exeaon/Exeaon1-Claw-32B
+- Modelo en Hugging Face: https://huggingface.co/Exeaon/Exeaon1-Claw-32B
 - Repositorio de `epure-runtime`: https://github.com/ExeaonLM/epure-runtime
 - Organizacion Exeaon en GitHub: https://github.com/ExeaonLM
 - Modelo base Qwen2.5-Coder-32B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct

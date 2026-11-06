@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| urd-arab-100mb-ppt-Dp-100mb-packed-bfd_seed3407 | 124,8 M | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/urd_arab_100mb (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| urd-arab-100mb-ppt-Dp-100mb-packed-bfd_seed3407 | 124,8 M | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/urd_arab_100mb (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | GPT-2 small (referencia arquitectonica) | 124,4 M | 1024 tokens | ampliamente evaluado en ingles | MIT (segun publicacion original) | Ampliamente disponible |
 
 La comparativa se limita a estos tres elementos porque no se dispone de datos de rendimiento del modelo evaluado ni de alternativas equivalentes documentadas en la informacion proporcionada. No se dispone de resultados que permitan una comparacion cuantitativa.
@@ -81,7 +81,7 @@ La comparativa se limita a estos tres elementos porque no se dispone de datos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-Dp-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-Dp-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/urd_arab_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/wv6rvoha

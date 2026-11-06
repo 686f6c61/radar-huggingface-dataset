@@ -6,7 +6,7 @@ Skejja edge32k-ft6 es un modelo de decisión («System One») multilingüe y de 
 
 El modelo deriva de knowledgator/gliclass-multilang-edge (Apache-2.0, 143 M), al que se le ha recortado el vocabulario a 32.768 tokens para cubrir inglés, italiano, español, alemán y francés, y se ha ajustado sobre el dataset mteb/amazon_massive_intent. Se distribuye exclusivamente en formato ONNX (fp32, int8 weight-only e int8 dinámica) y expone una API compatible con `POST /v1/systemone`, de modo que un cliente existente puede migrar cambiando solo la URL.
 
-Su relevancia está en el nicho: sustituir llamadas a LLM generativos en decisiones de enrutado, filtrado o sí/no dentro de pipelines de agentes y asistentes de voz, con latencias de 182–380 ms en una Raspberry Pi 4 y sin salida de datos del dispositivo. Es un modelo muy reciente (creado el 26 de octubre de 2026) y sin tracción pública todavía (0 descargas, 0 likes en HuggingFace), por lo que debe evaluarse con cautela antes de llevarlo a producción.
+Su relevancia está en el nicho: sustituir llamadas a LLM generativos en decisiones de enrutado, filtrado o sí/no dentro de pipelines de agentes y asistentes de voz, con latencias de 182–380 ms en una Raspberry Pi 4 y sin salida de datos del dispositivo. Es un modelo muy reciente (creado el 26 de octubre de 2026) y sin tracción pública todavía (0 descargas, 0 likes en Hugging Face), por lo que debe evaluarse con cautela antes de llevarlo a producción.
 
 ## Especificaciones técnicas
 
@@ -109,10 +109,10 @@ El modelo card menciona además una evaluación zero-shot independiente («Jev»
 
 | Modelo | Parametros | Contexto | Accuracy Choice (benchmark del autor) | AUROC sí/no | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Skejja edge32k-ft6 | 57,3 M | no disponible (truncado a 512 tokens por defecto) | 0,873 | 0,961 | Apache-2.0 | ONNX en HuggingFace, código en GitHub, demo en Spaces |
-| GLiClass multilang edge (base) | 143 M | no disponible | 0,547 | 0,697 | Apache-2.0 | HuggingFace |
-| Laya multilingual | 322 M | no disponible | 0,600 | 0,744 | no disponible | HuggingFace |
-| Julia 1 | 144 M | no disponible | 0,514 | 0,503 | no disponible | HuggingFace |
+| Skejja edge32k-ft6 | 57,3 M | no disponible (truncado a 512 tokens por defecto) | 0,873 | 0,961 | Apache-2.0 | ONNX en Hugging Face, código en GitHub, demo en Spaces |
+| GLiClass multilang edge (base) | 143 M | no disponible | 0,547 | 0,697 | Apache-2.0 | Hugging Face |
+| Laya multilingual | 322 M | no disponible | 0,600 | 0,744 | no disponible | Hugging Face |
+| Julia 1 | 144 M | no disponible | 0,514 | 0,503 | no disponible | Hugging Face |
 
 La comparación debe leerse con la cautela que marca el propio autor: el benchmark está próximo a los datos de entrenamiento de Skejja, favoreciéndolo frente a los modelos genéricos ejecutados en zero-shot. En la tarea de enrutado sobre peticiones reales, su ventaja se reduce a 0,589 de acierto, muy por debajo del 0,873 del benchmark.
 
@@ -134,7 +134,7 @@ La comparación debe leerse con la cautela que marca el propio autor: el benchma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vincyber/skejja-edge32k-ft6
+- Modelo en Hugging Face: https://huggingface.co/vincyber/skejja-edge32k-ft6
 - Modelo base: https://huggingface.co/knowledgator/gliclass-multilang-edge
 - Repositorio de código, benchmark y ficheros de resultados: https://github.com/vincyberx/skejja
 - Demo en navegador (onnxruntime-web): https://huggingface.co/spaces/vincyber/skejja

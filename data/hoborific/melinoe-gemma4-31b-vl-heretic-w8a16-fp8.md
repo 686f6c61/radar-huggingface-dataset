@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Melinoe-Gemma4-31B-VL-heretic-W8A16-FP8 es una versión cuantizada del modelo base bgg1996/Melinoe-Gemma4-31B-VL-heretic, publicada por el usuario hoborific en HuggingFace. Se trata de un modelo multimodal (image-text-to-text) de aproximadamente 31 000 millones de parámetros, preparado para inferencia eficiente mediante cuantización offline W8A16 FP8. La cuantización se ha realizado con la librería compressed-tensors de Neural Magic, utilizando pesos en float8_e4m3fn con escalas por canal de salida y activaciones en bf16/fp16.
+Melinoe-Gemma4-31B-VL-heretic-W8A16-FP8 es una versión cuantizada del modelo base bgg1996/Melinoe-Gemma4-31B-VL-heretic, publicada por el usuario hoborific en Hugging Face. Se trata de un modelo multimodal (image-text-to-text) de aproximadamente 31 000 millones de parámetros, preparado para inferencia eficiente mediante cuantización offline W8A16 FP8. La cuantización se ha realizado con la librería compressed-tensors de Neural Magic, utilizando pesos en float8_e4m3fn con escalas por canal de salida y activaciones en bf16/fp16.
 
 El modelo está diseñado específicamente para su despliegue en vLLM sobre aceleradores Intel XPU y NVIDIA CUDA (Turing o superior), y no es compatible con ROCm, CPU o TPU en dicha plataforma. Al tratarse de una cuantización, el objetivo principal es reducir el uso de memoria y acelerar la inferencia manteniendo una calidad cercana a la del modelo original en bf16. No se ha publicado información sobre el entrenamiento, las capacidades específicas o los benchmarks del modelo base, por lo que esta ficha se limita a los datos disponibles en la model card y el repositorio.
 
@@ -35,7 +35,7 @@ La informacion disponible no describe la arquitectura interna del modelo base ni
 
 - Despliegue en produccion con vLLM en clusters Intel XPU: el modelo esta optimizado para este backend, lo que permite servir inferencias de vision-lenguaje a gran escala con menor huella de memoria.
 - Inferencia en GPUs NVIDIA con memoria limitada: al ser una cuantizacion W8A16, reduce el requisito de VRAM en comparacion con el modelo en bf16, facilitando su uso en GPUs como RTX 4090 o similares (aunque no se especifica la VRAM exacta).
-- Prototipado de aplicaciones multimodales: gracias al formato safetensors y la compatibilidad con compressed-tensors, se puede integrar en pipelines de HuggingFace Transformers para experimentacion rapida.
+- Prototipado de aplicaciones multimodales: gracias al formato safetensors y la compatibilidad con compressed-tensors, se puede integrar en pipelines de Hugging Face Transformers para experimentacion rapida.
 - Evaluacion de calidad de cuantizacion: el esquema de cuantizacion con escalas por canal y recorte MSE esta disenado para preservar la fidelidad, por lo que puede usarse como referencia para comparar metodos de cuantizacion alternativos.
 - Sistemas de respuesta a preguntas visuales: el modelo base es de tipo image-text-to-text, por lo que esta cuantizacion puede servir para tareas de VQA en entornos con restricciones de memoria.
 - Investigacion en eficiencia de modelos: el checkpoint incluye una lista `ignore` que detalla que capas se cuantizan y cuales no, lo que resulta util para estudiar el impacto de la cuantizacion selectiva en modelos multimodales.

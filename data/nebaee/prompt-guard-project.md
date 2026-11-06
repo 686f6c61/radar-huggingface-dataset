@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Nebaee/prompt-guard-project` es un repositorio publicado en HuggingFace por el usuario Nebaee, con fecha de creación de septiembre de 2026. Sin embargo, la model card asociada es una plantilla genérica generada automáticamente, sin ninguna información técnica sobre el modelo: no se especifican arquitectura, número de parámetros, licencia, idiomas ni datos de entrenamiento. El tamaño del repositorio es de 0.0 GB, lo que sugiere que no contiene pesos ni archivos de modelo reales. No se han registrado descargas ni interacciones de la comunidad.
+El modelo `Nebaee/prompt-guard-project` es un repositorio publicado en Hugging Face por el usuario Nebaee, con fecha de creación de septiembre de 2026. Sin embargo, la model card asociada es una plantilla genérica generada automáticamente, sin ninguna información técnica sobre el modelo: no se especifican arquitectura, número de parámetros, licencia, idiomas ni datos de entrenamiento. El tamaño del repositorio es de 0.0 GB, lo que sugiere que no contiene pesos ni archivos de modelo reales. No se han registrado descargas ni interacciones de la comunidad.
 
 A pesar del nombre "prompt-guard", que podría sugerir un modelo de defensa contra inyección de prompts, no existe ninguna evidencia en la información proporcionada que confirme esa funcionalidad. Los resultados de búsqueda web muestran proyectos homónimos (PromptGuard, Prompt-Guard-86M de Meta) pero ninguno está vinculado a este repositorio específico. En consecuencia, esta ficha se limita a documentar la ausencia de datos verificables y a advertir sobre la imposibilidad de evaluar o utilizar el modelo en su estado actual.
 
@@ -53,7 +53,7 @@ No se puede realizar una comparativa con modelos similares porque no hay datos t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nebaee/prompt-guard-project
+- Repositorio en Hugging Face: https://huggingface.co/Nebaee/prompt-guard-project
 - Resultados de búsqueda web (no vinculados directamente a este modelo):
   - https://github.com/Devikeerith000/PromptGuard-AI
   - https://github.com/seojoonkim/prompt-guard

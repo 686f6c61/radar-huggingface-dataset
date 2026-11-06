@@ -4,13 +4,13 @@
 
 FarmifAI_1.3_GGUF es un modelo de lenguaje y visión desarrollado por FarmifAI, que ha sido ajustado y convertido al formato GGUF mediante la librería Unsloth. El repositorio incluye varias cuantizaciones (F16, Q8_0, Q5_K_M, Q4_K_M) y un archivo adicional en BF16 para el proyector multimodal, lo que permite su ejecución en entornos de inferencia como llama.cpp. El modelo tiene 772.845.888 parámetros totales, según los datos de safetensors, lo que lo sitúa en la categoría de modelos ligeros.
 
-Las etiquetas de HuggingFace indican "qwen3_5" y "vision-language-model", lo que sugiere una posible base en la familia Qwen3.5 y capacidades multimodales, pero no se dispone de confirmación explícita en la información proporcionada. La documentación oficial es muy escasa: no se detallan arquitectura, datos de entrenamiento, licencia ni idiomas. Su relevancia radica en la posibilidad de desplegarlo en dispositivos con recursos limitados, aunque la falta de información impide evaluar su calidad de forma independiente.
+Las etiquetas de Hugging Face indican "qwen3_5" y "vision-language-model", lo que sugiere una posible base en la familia Qwen3.5 y capacidades multimodales, pero no se dispone de confirmación explícita en la información proporcionada. La documentación oficial es muy escasa: no se detallan arquitectura, datos de entrenamiento, licencia ni idiomas. Su relevancia radica en la posibilidad de desplegarlo en dispositivos con recursos limitados, aunque la falta de información impide evaluar su calidad de forma independiente.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible (etiqueta de HuggingFace: qwen3_5) |
+| Arquitectura | No disponible (etiqueta de Hugging Face: qwen3_5) |
 | Parámetros totales | 772.845.888 |
 | Parámetros activos | No aplica (no se indica arquitectura MoE) |
 | Longitud de contexto | No disponible |

@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tarea | Clases | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `macpaw-research/yolov11l-ui-groups-detection` | Detección de grupos de UI (macOS) | 1 (`AXGroup`) | AGPL-3.0 | HuggingFace |
-| `macpaw-research/yolov11l-ui-elements-detection` | Detección de elementos de UI (macOS) | Múltiples (botones, campos, etc.) | AGPL-3.0 | HuggingFace |
-| `Ultralytics/YOLO11` (base) | Detección de objetos genérica | 80 clases COCO | AGPL-3.0 | HuggingFace |
+| `macpaw-research/yolov11l-ui-groups-detection` | Detección de grupos de UI (macOS) | 1 (`AXGroup`) | AGPL-3.0 | Hugging Face |
+| `macpaw-research/yolov11l-ui-elements-detection` | Detección de elementos de UI (macOS) | Múltiples (botones, campos, etc.) | AGPL-3.0 | Hugging Face |
+| `Ultralytics/YOLO11` (base) | Detección de objetos genérica | 80 clases COCO | AGPL-3.0 | Hugging Face |
 
 No se dispone de métricas comparativas entre estos modelos. La comparación se limita a la tarea y al alcance: el modelo de grupos se centra en contenedores semánticos, mientras que el de elementos detecta componentes individuales. El modelo base YOLO11 no está especializado en UI y no reconocería la clase `AXGroup`.
 
@@ -79,10 +79,10 @@ No se dispone de métricas comparativas entre estos modelos. La comparación se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: [macpaw-research/yolov11l-ui-groups-detection](https://huggingface.co/macpaw-research/yolov11l-ui-groups-detection)
+- Modelo en Hugging Face: [macpaw-research/yolov11l-ui-groups-detection](https://huggingface.co/macpaw-research/yolov11l-ui-groups-detection)
 - Dataset de entrenamiento: [macpaw-research/Screen2AX-Group](https://huggingface.co/datasets/macpaw-research/Screen2AX-Group)
 - Proyecto Screen2AX (GitHub): [https://github.com/MacPaw/Screen2AX](https://github.com/MacPaw/Screen2AX)
-- Colección Screen2AX en HuggingFace: [https://hf.co/collections/macpaw-research/screen2ax](https://hf.co/collections/macpaw-research/screen2ax)
+- Colección Screen2AX en Hugging Face: [https://hf.co/collections/macpaw-research/screen2ax](https://hf.co/collections/macpaw-research/screen2ax)
 - Modelo hermano de detección de elementos UI: [macpaw-research/yolov11l-ui-elements-detection](https://huggingface.co/macpaw-research/yolov11l-ui-elements-detection)
 - Paper Screen2AX (arXiv): [https://arxiv.org/abs/2507.16704](https://arxiv.org/abs/2507.16704)
 - Licencia comercial de Ultralytics: [https://www.ultralytics.com/license](https://www.ultralytics.com/license)

@@ -97,7 +97,7 @@ El autor sí publica métricas de serving medidas en 1× Radeon AI PRO R9700 a 2
 | `StillDeadcode/qwen3.8-27b-mxfp4` | 27B | No disponible | No disponible | No disponible | Misma cuantización y receta, tronco censurado (AMD) |
 | `StillDeadcode/qwen3.8-27b-uncensored-fp8` | 27B | No disponible | No disponible | No disponible | Mismos pesos sin censura en FP8, 28,67 GiB; requiere ~29 GiB solo de pesos |
 | `Solstice-AI/Qwen3.8-27B-...-GGUF-UltraOptimised` | 27B | No disponible | Cifras declaradas por el autor (735 ARC-C / 882 ARC-E) no verificadas aquí | No disponible | GGUF para llama.cpp/Ollama; incluye soporte MTP según la fuente |
-| `junafinity/Qwen-3.8-27B-Uncensored` | 27B | No disponible | No disponible | No disponible | Pesos abiertos en HuggingFace; formato no detallado |
+| `junafinity/Qwen-3.8-27B-Uncensored` | 27B | No disponible | No disponible | No disponible | Pesos abiertos en Hugging Face; formato no detallado |
 
 Frente al FP8 de los mismos pesos, este contenedor reduce el peso de 28,67 GiB a 18,05 GiB, lo que es la diferencia entre necesitar más de 32 GB y caber en una R9700 con KV holgado. Frente a las releases GGUF, pierde portabilidad (no funciona en llama.cpp/Ollama) y conserva MTP solo en aquellas, pero gana el drafter DFlash2 y el serving medido.
 
@@ -117,7 +117,7 @@ Frente al FP8 de los mismos pesos, este contenedor reduce el peso de 28,67 GiB a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cryoecho/Qwen3.8-27B-Uncensored-MXFP4-radiance
+- Modelo en Hugging Face: https://huggingface.co/cryoecho/Qwen3.8-27B-Uncensored-MXFP4-radiance
 - Modelo base (MXFP4-AWQ): https://huggingface.co/just1moremodel/Qwen3.8-27B-Uncensored-MXFP4-awq
 - Modelo base (sin censura, origen): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Drafter especulativo: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2

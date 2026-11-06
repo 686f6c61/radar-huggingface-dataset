@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `davidafrica/chess-e2h-rl-g16` | 100M / 20M | no disponible | Ajedrez (puzzles 800–1200 Elo) | no disponible | HuggingFace (226,5 GB) |
-| `nandansarkar/chess-100m-sft-elo800-900` | 100M | no disponible | Ajedrez (SFT, puzzles 800–900 Elo) | no disponible | HuggingFace |
-| `nandansarkar/chess-20m-sft-elo800-900` | 20M | no disponible | Ajedrez (SFT, puzzles 800–900 Elo) | no disponible | HuggingFace |
+| `davidafrica/chess-e2h-rl-g16` | 100M / 20M | no disponible | Ajedrez (puzzles 800–1200 Elo) | no disponible | Hugging Face (226,5 GB) |
+| `nandansarkar/chess-100m-sft-elo800-900` | 100M | no disponible | Ajedrez (SFT, puzzles 800–900 Elo) | no disponible | Hugging Face |
+| `nandansarkar/chess-20m-sft-elo800-900` | 20M | no disponible | Ajedrez (SFT, puzzles 800–900 Elo) | no disponible | Hugging Face |
 
 Los checkpoints SFT del mismo autor sirven como línea base directa: este repositorio parte de ellos y aplica RL. No se dispone de datos de rendimiento para establecer una comparación cuantitativa con motores de ajedrez clásicos (Stockfish, Leela Chess Zero) ni con otros modelos neuronales de ajedrez.
 
@@ -78,7 +78,7 @@ Los checkpoints SFT del mismo autor sirven como línea base directa: este reposi
 
 ## Enlaces
 
-- [HuggingFace: davidafrica/chess-e2h-rl-g16](https://huggingface.co/davidafrica/chess-e2h-rl-g16)
+- [Hugging Face: davidafrica/chess-e2h-rl-g16](https://huggingface.co/davidafrica/chess-e2h-rl-g16)
 - [Código del experimento (chess_rl)](https://github.com/nandansarkar16/chess_rl)
 - [Dataset de puzzles de RL](https://huggingface.co/datasets/nandansarkar/chess-e2h-rl)
 - [Checkpoint SFT 100M (Elo 800–900)](https://huggingface.co/nandansarkar/chess-100m-sft-elo800-900)

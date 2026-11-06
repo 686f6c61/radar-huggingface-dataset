@@ -6,7 +6,7 @@ Ether-Cognitive-Architecture, también denominado "硅基生命" (Silicon Life),
 
 El sistema está diseñado para ejecutarse íntegramente en CPU, sin necesidad de GPU, y ofrece tiempos de respuesta en el orden de milisegundos. Se presenta como una alternativa a los LLM tradicionales, destacando su transparencia (cada paso de razonamiento es trazable), su capacidad de aprendizaje continuo (la memoria solo crece) y su naturaleza local (los datos no salen del dispositivo). No se trata de un modelo de lenguaje en el sentido convencional, sino de un motor de razonamiento simbólico con capacidades de procesamiento de texto, generación de código y gestión de conocimiento estructurado.
 
-La relevancia actual de este proyecto radica en su propuesta de abordar las limitaciones de los LLM probabilísticos (alucinaciones, opacidad, dependencia de infraestructura) mediante un enfoque basado en reglas y grafos. Sin embargo, al ser un proyecto reciente (creado en agosto de 2026) y con cero descargas y cero likes en HuggingFace, su adopción y validación externa son aún incipientes.
+La relevancia actual de este proyecto radica en su propuesta de abordar las limitaciones de los LLM probabilísticos (alucinaciones, opacidad, dependencia de infraestructura) mediante un enfoque basado en reglas y grafos. Sin embargo, al ser un proyecto reciente (creado en agosto de 2026) y con cero descargas y cero likes en Hugging Face, su adopción y validación externa son aún incipientes.
 
 ## Especificaciones tecnicas
 
@@ -74,4 +74,4 @@ No disponible. Ether-Cognitive-Architecture no es un LLM tradicional, por lo que
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thanksplay/Ether-Cognitive-Architecture
+- Hugging Face: https://huggingface.co/thanksplay/Ether-Cognitive-Architecture

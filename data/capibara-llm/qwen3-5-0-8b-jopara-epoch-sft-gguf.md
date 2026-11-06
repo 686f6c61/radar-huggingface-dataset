@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-Jopara-Epoch-SFT-GGUF es un modelo de lenguaje de pequeno tamano (772.845.888 parametros, aproximadamente 0,8 mil millones) publicado por el usuario Capibara-LLM en HuggingFace. Se trata de una conversion a formato GGUF, realizada con la herramienta Unsloth, de un modelo base de la familia Qwen3.5 que ha pasado por un proceso de ajuste fino supervisado (SFT) y, segun la nomenclatura de los ficheros, tambien por entrenamiento continuo previo (CPT). El repositorio incluye pesos en BF16 para el proyector multimodal y una cuantizacion Q8_0, lo que sugiere que el modelo conserva capacidades de vision-lenguaje.
+Qwen3.5-0.8B-Jopara-Epoch-SFT-GGUF es un modelo de lenguaje de pequeno tamano (772.845.888 parametros, aproximadamente 0,8 mil millones) publicado por el usuario Capibara-LLM en Hugging Face. Se trata de una conversion a formato GGUF, realizada con la herramienta Unsloth, de un modelo base de la familia Qwen3.5 que ha pasado por un proceso de ajuste fino supervisado (SFT) y, segun la nomenclatura de los ficheros, tambien por entrenamiento continuo previo (CPT). El repositorio incluye pesos en BF16 para el proyector multimodal y una cuantizacion Q8_0, lo que sugiere que el modelo conserva capacidades de vision-lenguaje.
 
 La relevancia de esta publicacion es limitada pero concreta: ofrece una variante GGUF de un modelo Qwen3.5 de 0,8B, un tamano que permite ejecucion en CPU y en GPUs de consumo, y que ademas incorpora un proyector multimodal (mmproj), algo poco habitual en modelos de esta escala. Esto lo hace interesante para experimentacion con modelos vision-lenguaje ligeros en entornos con recursos restringidos, usando llama.cpp o llama-mtmd-cli.
 
@@ -79,6 +79,6 @@ Nota: los datos de los modelos comparativos son orientativos y pueden variar; no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Capibara-LLM/Qwen3.5-0.8B-Jopara-Epoch-SFT-GGUF
+- Hugging Face: https://huggingface.co/Capibara-LLM/Qwen3.5-0.8B-Jopara-Epoch-SFT-GGUF
 - Unsloth (herramienta de conversion): https://github.com/unslothai/unsloth
 - llama.cpp (runtime recomendado): https://github.com/ggml-org/llama.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ClashBender/smai-a4-ioc` es un artefacto publicado en HuggingFace por el usuario ClashBender como parte de la asignatura SMAI (presumiblemente "Statistical Methods for Artificial Intelligence" o similar) en su cuarta practica. Segun la model card, se trata de una red neuronal entrenada sobre el conjunto de datos CIFAR-10, con los pesos guardados en formato `model.npz` (un state dict de PyTorch serializado como arrays de NumPy) y los parametros de preprocesado (media y desviacion tipica) en `preprocessing.npz`. La arquitectura y los hiperparametros se describen en un `config.json` que no se ha incluido en la informacion disponible.
+El modelo `ClashBender/smai-a4-ioc` es un artefacto publicado en Hugging Face por el usuario ClashBender como parte de la asignatura SMAI (presumiblemente "Statistical Methods for Artificial Intelligence" o similar) en su cuarta practica. Segun la model card, se trata de una red neuronal entrenada sobre el conjunto de datos CIFAR-10, con los pesos guardados en formato `model.npz` (un state dict de PyTorch serializado como arrays de NumPy) y los parametros de preprocesado (media y desviacion tipica) en `preprocessing.npz`. La arquitectura y los hiperparametros se describen en un `config.json` que no se ha incluido en la informacion disponible.
 
 El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes en el momento de la consulta, lo que sugiere que es un artefacto de caracter academico sin difusion publica. No se trata de un modelo de lenguaje ni de un modelo generativo: es un clasificador de imagenes de CIFAR-10 (10 clases, imagenes de 32x32 píxeles) entrenado con etiquetas verdaderas, sin tecnicas de destilacion ni auto-supervision indicadas.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado en la informacion proporcionada modelos comparables de la misma categoria (clasificadores CIFAR-10 academicos publicados en HuggingFace) con los que establecer una comparacion de parametros, contexto, rendimiento o licencia.
+No disponible. No se han identificado en la informacion proporcionada modelos comparables de la misma categoria (clasificadores CIFAR-10 academicos publicados en Hugging Face) con los que establecer una comparacion de parametros, contexto, rendimiento o licencia.
 
 ## Limitaciones y advertencias
 
@@ -73,4 +73,4 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ClashBender/smai-a4-ioc
+- Hugging Face: https://huggingface.co/ClashBender/smai-a4-ioc

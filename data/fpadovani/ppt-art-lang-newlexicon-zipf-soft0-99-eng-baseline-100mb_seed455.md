@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/ppt-art-lang-newlexicon-zipf-soft0.99-eng-baseline-100mb_seed455 | 86,5M | no disponible | no disponible | HuggingFace |
-| goldfish-models/eng_latn_100mb (base) | ~100M | no disponible | no disponible | HuggingFace |
-| GPT-2 small (OpenAI) | 124M | 1024 | MIT | HuggingFace |
+| fpadovani/ppt-art-lang-newlexicon-zipf-soft0.99-eng-baseline-100mb_seed455 | 86,5M | no disponible | no disponible | Hugging Face |
+| goldfish-models/eng_latn_100mb (base) | ~100M | no disponible | no disponible | Hugging Face |
+| GPT-2 small (OpenAI) | 124M | 1024 | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. El modelo base `goldfish-models/eng_latn_100mb` es un modelo de investigación sobre lenguas con bajo recurso, y GPT-2 small es el modelo comercial más cercano en tamaño, pero con licencia MIT y contexto conocido.
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo. El modelo base `goldfish-mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-soft0.99-eng-baseline-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-soft0.99-eng-baseline-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Modelo similar (seed3407): https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed3407
 - Entrada en LLM Explorer (seed10): https://llm-explorer.com/model/fpadovani%2Fppt-art-lang-newlexicon-eng-baseline-100mb_seed10,5wPQ4CHzHD2weoAbCHyJ2f

@@ -21,7 +21,7 @@ Al ser un adaptador LoRA, no es un modelo completo sino un conjunto de pesos de 
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA (Low-Rank Adaptation) que añade matrices de bajo rango al modelo base `HuggingFaceTB/SmolLM2-360M-Instruct`. El entrenamiento se realizó con GRPO, un algoritmo de optimización de políticas por grupos, utilizando la librería TRL de HuggingFace. El framework AgentTune se emplea para orquestar flujos de trabajo de agentes, incluyendo entrenamiento, evaluación y destilación.
+El modelo es un adaptador LoRA (Low-Rank Adaptation) que añade matrices de bajo rango al modelo base `HuggingFaceTB/SmolLM2-360M-Instruct`. El entrenamiento se realizó con GRPO, un algoritmo de optimización de políticas por grupos, utilizando la librería TRL de Hugging Face. El framework AgentTune se emplea para orquestar flujos de trabajo de agentes, incluyendo entrenamiento, evaluación y destilación.
 
 No se proporcionan detalles sobre la composición del dataset de entrenamiento, el número de tokens utilizados ni si se aplicaron técnicas como RLHF o DPO. La única información técnica disponible es que el artefacto resultante es un adaptador PEFT, lo que significa que debe cargarse sobre el modelo base para su uso. No se documenta ninguna innovación arquitectónica más allá del uso de LoRA y GRPO.
 
@@ -68,6 +68,6 @@ No se dispone de datos comparables en la información proporcionada. Al ser un a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ram-lexsi/agenttune-testrun-combine-rewards
+- Hugging Face: https://huggingface.co/ram-lexsi/agenttune-testrun-combine-rewards
 - GitHub AgentTune: https://github.com/Lexsi-Labs/AgentTune_mirror
 - Discord de Lexsi: https://discord.com/invite/dtEDQ2Z3eg

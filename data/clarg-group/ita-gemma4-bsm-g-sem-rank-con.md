@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye otros BSM comparables ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CLArg-group/ita-gemma4-bsm-g-sem-rank-con
+- Modelo en Hugging Face: https://huggingface.co/CLArg-group/ita-gemma4-bsm-g-sem-rank-con
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio del proyecto ITA: https://github.com/CLArg-group/inference-time-argumentation
 - Artículo: *Neurosymbolic Learning for Inference-Time Argumentation* (referenciado en la model card; no se proporciona URL directa)

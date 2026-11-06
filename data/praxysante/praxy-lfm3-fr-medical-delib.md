@@ -71,7 +71,7 @@ Latencia medida en H100: 33-108 ms por enunciado según la carga del nodo (RTFx 
 
 | Modelo | Parámetros | Contexto | WER dominio médico | WER registro general | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Praxy LFM3 FR Medical Delib | 1,98 mil millones | no disponible | 6,30 | 8,42 | LFM Open License | HuggingFace (0 descargas) |
+| Praxy LFM3 FR Medical Delib | 1,98 mil millones | no disponible | 6,30 | 8,42 | LFM Open License | Hugging Face (0 descargas) |
 | NeMo V6 + T5Gemma2 (referencia) | no disponible | no disponible | 7,41 | 6,76 | no disponible | cascada publicada de referencia |
 | T5Gemma2 (segundo pasaje alternativo) | no disponible | no disponible | no disponible | no disponible | no disponible | citado en la model card |
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks de otros modelos ASR comparables en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PraxySante/Praxy-LFM3-FR-Medical-Delib
+- Hugging Face: https://huggingface.co/PraxySante/Praxy-LFM3-FR-Medical-Delib
 - Primer pasaje de la cascada: https://huggingface.co/PraxySante/Praxy-LFM3-FR-Medical-Live
 - Repositorio interno citado: `lfm3_fr_live` (script `scripts/offline_infer.py`); no se proporciona URL pública.
 - LFM3 de Liquid AI: no se proporciona URL en la información disponible.

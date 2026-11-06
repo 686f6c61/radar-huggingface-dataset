@@ -6,7 +6,7 @@
 
 El dato más relevante para quien vaya a evaluarlo es que los pesos se almacenan descomprimidos en tensores BF16: la compresión a ~2 bits describe el proceso de obtención de los expertos, no el formato final. En consecuencia, el repositorio ocupa 162,7 GB y los safetensors declaran 81.324.862.720 parámetros (81,32 mil millones), un volumen coherente con un almacenamiento BF16 completo y sin ahorro de memoria en inferencia respecto al modelo base.
 
-Se trata de un experimento interno sin validación pública: acumula 0 descargas y 0 likes en el momento de redactar esta ficha, no publica resultados de evaluación, no declara licencia ni idiomas en la metadata de HuggingFace y su model card indica únicamente que la licencia sigue la del modelo base. Su interés es, por tanto, el de un artefacto de investigación reproducible, no el de un modelo listo para producción.
+Se trata de un experimento interno sin validación pública: acumula 0 descargas y 0 likes en el momento de redactar esta ficha, no publica resultados de evaluación, no declara licencia ni idiomas en la metadata de Hugging Face y su model card indica únicamente que la licencia sigue la del modelo base. Su interés es, por tanto, el de un artefacto de investigación reproducible, no el de un modelo listo para producción.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ Se trata de un experimento interno sin validación pública: acumula 0 descargas
 | Longitud de contexto | No especificada en la información del checkpoint. El modelo base declara 262.144 tokens nativos |
 | Tipos de cuantizacion | Expertos enrutados a 2,016 bits de promedio (variante r32_v7); el resto de pesos en BF16. Los pesos se almacenan ya descomprimidos en BF16 |
 | Idiomas soportados | No disponible en la metadata del repositorio. El modelo base declara soporte multilingüe |
-| Licencia | No declarada en la metadata de HuggingFace. La model card indica que la licencia sigue la del modelo base; no se detalla cuál es en la información proporcionada |
+| Licencia | No declarada en la metadata de Hugging Face. La model card indica que la licencia sigue la del modelo base; no se detalla cuál es en la información proporcionada |
 | Formato de pesos | safetensors (librería `transformers`) |
 | Tamaño del repositorio | 162,7 GB |
 | Pipeline | text-generation |
@@ -94,7 +94,7 @@ Los datos de las alternativas provienen de la documentación pública de sus res
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen3next-80b-a3b-2p02bit-r32_v7
+- Página del modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen3next-80b-a3b-2p02bit-r32_v7
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking
 - Paper, blog, repositorio o demo del checkpoint: no disponible
 - La búsqueda web realizada no ha devuelto resultados relevantes sobre este modelo (los resultados obtenidos corresponden a páginas de inicio de sesión de redes sociales, sin relación con el modelo)

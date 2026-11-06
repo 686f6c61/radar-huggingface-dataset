@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BEST-RQ-ViT es un encoder de audio auto-supervisado desarrollado por ltuncay (Ludovic Tuncay) y publicado en HuggingFace. Se trata de la variante basada en Vision Transformer del método BEST-RQ: un único encoder Transformer de 12 capas y 768 dimensiones (85.484.928 parámetros) que aprende prediciendo objetivos de un codebook congelado de proyecciones aleatorias a partir de features de audio enmascaradas, sin predictor de contextualización separado. Consume waveforms mono a 16 kHz y produce embeddings de clip y de frame de 768 dimensiones.
+BEST-RQ-ViT es un encoder de audio auto-supervisado desarrollado por ltuncay (Ludovic Tuncay) y publicado en Hugging Face. Se trata de la variante basada en Vision Transformer del método BEST-RQ: un único encoder Transformer de 12 capas y 768 dimensiones (85.484.928 parámetros) que aprende prediciendo objetivos de un codebook congelado de proyecciones aleatorias a partir de features de audio enmascaradas, sin predictor de contextualización separado. Consume waveforms mono a 16 kHz y produce embeddings de clip y de frame de 768 dimensiones.
 
 El modelo se entrenó sobre AudioSet durante 200.000 pasos de optimizador (paso verificado en los metadatos del checkpoint) con una ratio de enmascaramiento del 40-60%. Su objetivo es servir como extractor de representaciones de audio y como base para fine-tuning en tareas downstream de habla, música y sonido ambiental. La arquitectura usa un frontend de espectrograma mel de 128 bins proyectado linealmente en parches de 16 bins mel por 16 frames, con embeddings posicionales sinusoidales, LayerNorm y MLP con GELU.
 
@@ -83,15 +83,15 @@ El "global mean" promedia todas las tareas del benchmark y el "mean of means" ot
 
 | Modelo | X-ARES global mean | X-ARES mean of means | Parametros | Licencia | Disponibilidad |
 |---|---:|---:|---|---|---|
-| BEST-RQ-ViT | 34,88 | 36,33 | 85.484.928 | MIT | HuggingFace (`ltuncay/BEST-RQ-ViT`) |
-| BEST-RQ-2.2-base | 56,11 | 57,80 | No disponible | No disponible en la información | HuggingFace (`ltuncay/BEST-RQ-2.2-base`) |
-| BEST-RQ-2.1-base | 54,59 | 56,07 | No disponible | No disponible en la información | HuggingFace (`ltuncay/BEST-RQ-2.1-base`) |
-| BEST-RQ-2 | 43,21 | 46,43 | No disponible | No disponible en la información | HuggingFace (`ltuncay/BEST-RQ-2`) |
+| BEST-RQ-ViT | 34,88 | 36,33 | 85.484.928 | MIT | Hugging Face (`ltuncay/BEST-RQ-ViT`) |
+| BEST-RQ-2.2-base | 56,11 | 57,80 | No disponible | No disponible en la información | Hugging Face (`ltuncay/BEST-RQ-2.2-base`) |
+| BEST-RQ-2.1-base | 54,59 | 56,07 | No disponible | No disponible en la información | Hugging Face (`ltuncay/BEST-RQ-2.1-base`) |
+| BEST-RQ-2 | 43,21 | 46,43 | No disponible | No disponible en la información | Hugging Face (`ltuncay/BEST-RQ-2`) |
 | BEST-RQ (Conformer) | 37,43 | 35,60 | No disponible | No disponible en la información | Codebase separado |
-| Audio-JEPA-base | 31,18 | 33,17 | No disponible | No disponible en la información | HuggingFace (`ltuncay/Audio-JEPA-base`) |
-| Whisper base | 42,75 | 38,82 | No disponible | No disponible en la información | HuggingFace (`openai/whisper-base`) |
-| wav2vec 2.0 large | 37,84 | 35,42 | No disponible | No disponible en la información | HuggingFace (`facebook/wav2vec2-large-100k-voxpopuli`) |
-| data2vec audio base | 37,83 | 29,76 | No disponible | No disponible en la información | HuggingFace (`facebook/data2vec-audio-base`) |
+| Audio-JEPA-base | 31,18 | 33,17 | No disponible | No disponible en la información | Hugging Face (`ltuncay/Audio-JEPA-base`) |
+| Whisper base | 42,75 | 38,82 | No disponible | No disponible en la información | Hugging Face (`openai/whisper-base`) |
+| wav2vec 2.0 large | 37,84 | 35,42 | No disponible | No disponible en la información | Hugging Face (`facebook/wav2vec2-large-100k-voxpopuli`) |
+| data2vec audio base | 37,83 | 29,76 | No disponible | No disponible en la información | Hugging Face (`facebook/data2vec-audio-base`) |
 
 Dentro de la propia familia, el autor recomienda BEST-RQ-2.2-base como la opción con mejores resultados X-ARES, muy por encima de este checkpoint (56,11 frente a 34,88 en global mean). BEST-RQ-ViT mantiene interés como baseline ligero y como referencia de ablación (ViT frente a Conformer), y destaca relativamente en la categoría Environment (34,50), por delante de wav2vec 2.0 (29,52) y de Whisper (28,61) en esa misma categoría. Los recuentos de parámetros de los modelos alternativos no se facilitan en la información disponible.
 
@@ -112,7 +112,7 @@ Dentro de la propia familia, el autor recomienda BEST-RQ-2.2-base como la opció
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ltuncay/BEST-RQ-ViT
+- Modelo en Hugging Face: https://huggingface.co/ltuncay/BEST-RQ-ViT
 - Paper de X-ARES (arXiv:2505.16369): https://arxiv.org/abs/2505.16369
 - README del proyecto audio-embeddings (GitHub): https://github.com/LudovicTuncay/audio-embeddings/blob/bb88bf790b1dcf8251c6b38e7a4766534adf33d3/README.md
 - Run de Weights & Biases con los resultados de Audio-JEPA: https://wandb.ai/tuncay-ludovic/audio%20embeddings/runs/jp6l70l6

@@ -113,7 +113,7 @@ Para el resto de tareas del catalogo, las alternativas equivalentes serian whisp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/elvinmarkmv/minimal-ai-models
+- Repositorio en Hugging Face: https://huggingface.co/elvinmarkmv/minimal-ai-models
 - Modelo base SmolLM2-135M: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Modelo base SmolLM2-135M-Instruct: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Modelo base Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M

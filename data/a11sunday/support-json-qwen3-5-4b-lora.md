@@ -94,7 +94,7 @@ No se han proporcionado datos de modelos comparables de terceros (mismo tamaño 
 | Esquema + invariantes válidos | 54,6 % | 95,4 % |
 | Salida | Texto libre | JSON de nueve campos con invariantes |
 | Licencia | No disponible en esta ficha | Apache 2.0 |
-| Disponibilidad | HuggingFace (Qwen/Qwen3.5-4B) | HuggingFace (adaptador PEFT) |
+| Disponibilidad | Hugging Face (Qwen/Qwen3.5-4B) | Hugging Face (adaptador PEFT) |
 
 Alternativas comparables de terceros: no disponible.
 
@@ -111,11 +111,11 @@ Alternativas comparables de terceros: no disponible.
 - Selección de modelo basada en validación con criterios predeclarados y corpora congelados: la comparación con el control de cuatro ejemplos usa un prompt distinto y no equivale a competir con un modelo mayor.
 - Licencia Apache 2.0, que permite uso comercial, pero hereda las condiciones del modelo base Qwen3.5-4B, cuyos términos no se detallan en la información proporcionada; conviene revisarlos antes de un despliegue comercial.
 - Despliegue restringido en la práctica: sin GGUF, sin soporte CPU implementado y sin compatibilidad documentada con servidores de inferencia habituales.
-- Fechas del repositorio: creación 2026-09-17 y actualización 2026-09-17 según HuggingFace, con 0 descargas y 0 likes en el momento de la consulta.
+- Fechas del repositorio: creación 2026-09-17 y actualización 2026-09-17 según Hugging Face, con 0 descargas y 0 likes en el momento de la consulta.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/A11Sunday/support-json-qwen3.5-4b-lora
+- Modelo en Hugging Face: https://huggingface.co/A11Sunday/support-json-qwen3.5-4b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/A11Sunday/support-json-ru
 - Evaluación (ruta dentro del repositorio): evaluation/RESULTS.md

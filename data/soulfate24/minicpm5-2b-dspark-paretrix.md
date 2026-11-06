@@ -107,7 +107,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes mas alla
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Soulfate24/MiniCPM5-2B-DSpark-Paretrix
+- Ficha en Hugging Face: https://huggingface.co/Soulfate24/MiniCPM5-2B-DSpark-Paretrix
 - Suite de cuantizacion Paretrix: https://huggingface.co/Soulfate24/Paretrix_Quantization_Suite
 - Cuantizaciones alternativas del mismo autor: https://huggingface.co/Soulfate24/MiniCPM5-2B-DSpark-ASHQ1-Remix-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B

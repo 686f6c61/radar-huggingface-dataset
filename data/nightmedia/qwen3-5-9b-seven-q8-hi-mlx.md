@@ -2,9 +2,9 @@
 
 ## Resumen
 
-nightmedia/Qwen3.5-9B-Seven-q8-hi-mlx es un modelo de lenguaje de aproximadamente 9.000 millones de parametros publicado por el usuario nightmedia en HuggingFace. Se trata de una fusion (merge) construida con mergekit a partir de mas de una decena de derivados de la familia Qwen3.5-9B, entre ellos variantes orientadas a escritura creativa sin censura (lineas HERETIC/Uncensored de DavidAU, como The-Bradbury-F451-Pro-Writer o Mark-Twain-Pro-Writer), modelos de codigo (Qwopus3.5-9B-Coder, armand0e/Qwen3.5-9B-Coder), variantes orientadas a agentes (armand0e/Qwen3.5-9B-Agent) y otras fusiones del propio autor (Holodeck-Lounge, B2-Fable-Agent-OneJev).
+nightmedia/Qwen3.5-9B-Seven-q8-hi-mlx es un modelo de lenguaje de aproximadamente 9.000 millones de parametros publicado por el usuario nightmedia en Hugging Face. Se trata de una fusion (merge) construida con mergekit a partir de mas de una decena de derivados de la familia Qwen3.5-9B, entre ellos variantes orientadas a escritura creativa sin censura (lineas HERETIC/Uncensored de DavidAU, como The-Bradbury-F451-Pro-Writer o Mark-Twain-Pro-Writer), modelos de codigo (Qwopus3.5-9B-Coder, armand0e/Qwen3.5-9B-Coder), variantes orientadas a agentes (armand0e/Qwen3.5-9B-Agent) y otras fusiones del propio autor (Holodeck-Lounge, B2-Fable-Agent-OneJev).
 
-El modelo esta etiquetado con el pipeline image-text-to-text, lo que indica que acepta entrada de imagen y texto, y declara soporte para ingles y chino. La ficha se publica como variante cuantizada en 8 bits (sufijo q8-hi) en formato MLX con precision mxfp8, ademas de bfloat16, lo que la orienta a inferencia sobre hardware Apple Silicon. La licencia declarada es Apache 2.0 y el acceso esta restringido (gated): requiere aceptar las condiciones en HuggingFace antes de descargarlo.
+El modelo esta etiquetado con el pipeline image-text-to-text, lo que indica que acepta entrada de imagen y texto, y declara soporte para ingles y chino. La ficha se publica como variante cuantizada en 8 bits (sufijo q8-hi) en formato MLX con precision mxfp8, ademas de bfloat16, lo que la orienta a inferencia sobre hardware Apple Silicon. La licencia declarada es Apache 2.0 y el acceso esta restringido (gated): requiere aceptar las condiciones en Hugging Face antes de descargarlo.
 
 Su relevancia practica reside en el nicho de generacion creativa y roleplay sin filtros, combinado con capacidades residuales de codigo y uso de herramientas heredadas de sus modelos base. No se han publicado resultados de benchmarks ni datos de entrenamiento en la informacion disponible, por lo que su evaluacion debe hacerse de forma empirica segun el caso de uso.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| nightmedia/Qwen3.5-9B-Seven-q8-hi-mlx | ~9B | no disponible | Apache 2.0 | Gated en HuggingFace | Fusion MLX de 18+ modelos, foco creativo/uncensored |
+| nightmedia/Qwen3.5-9B-Seven-q8-hi-mlx | ~9B | no disponible | Apache 2.0 | Gated en Hugging Face | Fusion MLX de 18+ modelos, foco creativo/uncensored |
 | Qwen3.5-9B (base, segun nombre) | ~9B | no disponible | no disponible | no disponible | Modelo base del que derivan las variantes fusionadas |
 | nightmedia/Qwen3.5-9B-Holodeck-Lounge | ~9B | no disponible | no disponible | no disponible | Otro modelo base de esta fusion, mismo autor |
 | DavidAU/Qwen3.5-9B-*-HERETIC-UNCENSORED-THINKING-X8 | ~9B | no disponible | no disponible | no disponible | Variantes abliterated con modo thinking usadas como base |
@@ -82,11 +82,11 @@ No hay datos de rendimiento publicados para ninguno de los modelos de la tabla e
 - Contenido sin filtro: el modelo esta disenado explicitamente para eludir mecanismos de rechazo, lo que puede producir contenido ofensivo, ilegal o inapropiado. Requiere moderacion en cualquier despliegue orientado a usuarios.
 - Idiomas: solo se declaran ingles y chino; no hay soporte confirmado de castellano, por lo que su uso en espanol es incierto.
 - Contexto: no se especifica la longitud de ventana, dato critico para planificar despliegues con documentos largos.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace; esto puede limitar la automatizacion de descargas y despliegues en CI/CD.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face; esto puede limitar la automatizacion de descargas y despliegues en CI/CD.
 - Licencia: aunque se declara Apache 2.0, conviene verificar la licencia de cada modelo base fusionado, ya que podrian imponer restricciones adicionales incompatibles con uso comercial.
 - Formato: la variante publicada esta en MLX, por lo que no es directamente utilizable en entornos Nvidia sin conversion previa.
 - Ausencia de soporte: cero descargas y cero likes en el momento de la consulta; no hay garantia de mantenimiento, documentacion ni soporte del autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nightmedia/Qwen3.5-9B-Seven-q8-hi-mlx
+- Modelo en Hugging Face: https://huggingface.co/nightmedia/Qwen3.5-9B-Seven-q8-hi-mlx

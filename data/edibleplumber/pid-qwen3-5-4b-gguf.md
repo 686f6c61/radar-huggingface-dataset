@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PID-Qwen3.5-4B-GGUF es una distribucion en formato GGUF de un modelo de 4.326.350.848 parametros (aproximadamente 4,33 mil millones) publicado por el usuario EdiblePlumber en HuggingFace. El repositorio contiene unicamente archivos GGUF generados con las herramientas de conversion de Unsloth, junto con un archivo de proyector multimodal (`Qwen3.5-4B.BF16-mmproj.gguf`), lo que indica que se trata de un modelo de vision-lenguaje y no solo de texto. El nombre sugiere que deriva de una base denominada Qwen3.5-4B, aunque la model card no confirma el origen exacto ni el proceso de entrenamiento.
+PID-Qwen3.5-4B-GGUF es una distribucion en formato GGUF de un modelo de 4.326.350.848 parametros (aproximadamente 4,33 mil millones) publicado por el usuario EdiblePlumber en Hugging Face. El repositorio contiene unicamente archivos GGUF generados con las herramientas de conversion de Unsloth, junto con un archivo de proyector multimodal (`Qwen3.5-4B.BF16-mmproj.gguf`), lo que indica que se trata de un modelo de vision-lenguaje y no solo de texto. El nombre sugiere que deriva de una base denominada Qwen3.5-4B, aunque la model card no confirma el origen exacto ni el proceso de entrenamiento.
 
 La relevancia practica de esta publicacion es limitada pero concreta: ofrece pesos listos para ejecutarse en llama.cpp y en cualquier runtime compatible con GGUF, incluyendo la ruta multimodal mediante `llama-mtmd-cli`. Esto permite desplegar un VLM de ~4B en hardware de consumo sin necesidad de convertir pesos ni de montar un stack de inferencia pesado.
 
@@ -69,7 +69,7 @@ Valores estimados a partir del numero de parametros y del peso de los archivos p
 
 ## Comparativa con modelos similares
 
-La comparativa se plantea contra VLMs de tamano comparable ampliamente documentados. Los datos de las alternativas proceden de su documentacion publica; los del modelo analizado, del repositorio de HuggingFace. No se dispone de cifras de rendimiento del PID-Qwen3.5-4B-GGUF para comparar calidad.
+La comparativa se plantea contra VLMs de tamano comparable ampliamente documentados. Los datos de las alternativas proceden de su documentacion publica; los del modelo analizado, del repositorio de Hugging Face. No se dispone de cifras de rendimiento del PID-Qwen3.5-4B-GGUF para comparar calidad.
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
@@ -95,6 +95,6 @@ Diferencias relevantes: frente a Qwen2.5-VL-3B e InternVL 2.5 4B, la principal d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EdiblePlumber/PID-Qwen3.5-4B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/EdiblePlumber/PID-Qwen3.5-4B-GGUF
 - Repositorio de Unsloth, herramienta de conversion citada en la model card: https://github.com/unslothai/unsloth
 - La busqueda web realizada no ha devuelto ningun enlace relevante al modelo: los resultados eran articulos en chino sobre alimentacion, sin relacion con esta publicacion. No se dispone de paper, blog tecnico, demo ni repositorio adicional.

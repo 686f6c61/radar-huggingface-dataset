@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WygLore Leaf (잎, "hoja" en coreano) es un plugin de memoria a largo plazo para RisuAI, un frontend de rol conversacional con modelos de lenguaje. No se trata de un modelo de IA en sentido estricto, sino de una extensión que intercepta el flujo de conversación para extraer, almacenar y recuperar fragmentos de memoria entre turnos. El repositorio alojado en HuggingFace bajo el identificador `m6dd8m/wyglore-leaf` actúa como manifiesto de actualizaciones y depósito de changelogs, no como alojamiento de pesos.
+WygLore Leaf (잎, "hoja" en coreano) es un plugin de memoria a largo plazo para RisuAI, un frontend de rol conversacional con modelos de lenguaje. No se trata de un modelo de IA en sentido estricto, sino de una extensión que intercepta el flujo de conversación para extraer, almacenar y recuperar fragmentos de memoria entre turnos. El repositorio alojado en Hugging Face bajo el identificador `m6dd8m/wyglore-leaf` actúa como manifiesto de actualizaciones y depósito de changelogs, no como alojamiento de pesos.
 
 El plugin se complementa con un servidor local opcional llamado "뿌리" (raíz), que permite respaldar memorias, migrar historiales entre chats y delegar el cálculo y almacenamiento de recuerdos. La versión actual documentada es Leaf 3.4.4 junto con Root Server 1.4.5, con fecha de actualización del 2 de noviembre de 2026. El proyecto declara 5.791 comprobaciones automáticas superadas en el plugin y 810 en el servidor, además de 83 notas de versión publicadas.
 
@@ -88,7 +88,7 @@ La comparación es aproximada: WygLore Leaf está acoplado específicamente a Ri
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/m6dd8m/wyglore-leaf
+- Repositorio Hugging Face: https://huggingface.co/m6dd8m/wyglore-leaf
 - Carpeta de descargas manuales (Proton Drive): https://drive.proton.me/urls/430G895V60#EBi501HzFXu6
 - Changelog del plugin (`release.md`): https://huggingface.co/m6dd8m/wyglore-leaf/blob/main/release.md
 - Changelog del servidor (`root-release.md`): https://huggingface.co/m6dd8m/wyglore-leaf/blob/main/root-release.md

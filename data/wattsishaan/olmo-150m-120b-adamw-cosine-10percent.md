@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OLMo-150m-120B-adamw-cosine-10percent es un checkpoint de investigación publicado por el usuario WattsIshaan en HuggingFace. Se trata de un modelo de lenguaje de tipo transformer decoder-only de la familia OLMo, con aproximadamente 150 millones de parámetros, preentrenado sobre 120.000 millones de tokens del corpus DCLM utilizando el optimizador AdamW y un schedule de learning rate coseno. El checkpoint corresponde al 90 % de los pasos de entrenamiento (415.000 pasos con batch size de 256) y está pensado explícitamente para poder ser "annealed", es decir, para completar el 10 % restante de pasos mediante un proceso de annealing controlado.
+OLMo-150m-120B-adamw-cosine-10percent es un checkpoint de investigación publicado por el usuario WattsIshaan en Hugging Face. Se trata de un modelo de lenguaje de tipo transformer decoder-only de la familia OLMo, con aproximadamente 150 millones de parámetros, preentrenado sobre 120.000 millones de tokens del corpus DCLM utilizando el optimizador AdamW y un schedule de learning rate coseno. El checkpoint corresponde al 90 % de los pasos de entrenamiento (415.000 pasos con batch size de 256) y está pensado explícitamente para poder ser "annealed", es decir, para completar el 10 % restante de pasos mediante un proceso de annealing controlado.
 
 El modelo no es un asistente conversacional ni un modelo instruction-tuned: es un artefacto de investigación asociado al artículo "Sharpness-Aware Pretraining Mitigates Catastrophic Forgetting" (Watts, Li, Goyal, Springer y Raghunathan, ICML 2026, arXiv:2605.02105). En ese contexto, este checkpoint con AdamW y schedule coseno probablemente actúa como baseline o como punto de partida para comparar estrategias de preentrenamiento con sharpness-aware minimization orientadas a mitigar el olvido catastrófico.
 
@@ -24,7 +24,7 @@ Su relevancia actual es limitada fuera del ámbito académico: cuenta con 0 desc
 | Optimizador | AdamW con schedule de learning rate coseno |
 | Tokens de entrenamiento | 120.000 millones (corpus DCLM) |
 | Pasos completados | 415.000 pasos a batch size 256 (90 % del total previsto) |
-| Fecha de publicación | 12 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 12 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -55,7 +55,7 @@ Cualquier afirmación adicional sobre sus capacidades sería especulativa y no e
 - Fine-tuning para tareas de NLP concretas: clasificación de texto, análisis de sentimiento, NER o resumen extractivo en dominios específicos, partiendo del checkpoint preentrenado y añadiendo una cabeza de tarea.
 - Destilación de conocimiento: usar el modelo como alumno pequeño que aprende de las distribuciones de un modelo mayor, aprovechando que ya ha visto 120.000 millones de tokens y no parte de inicialización aleatoria.
 - Investigación sobre representaciones internas: extracción de embeddings y probing de capas intermedias para estudiar qué información lingüística codifica un modelo de este tamaño tras un preentrenamiento a gran escala.
-- Docencia y prototipado en CPU: al caber holgadamente en memoria de un portátil, permite demostraciones de generación de texto y de pipelines de HuggingFace Transformers en entornos sin GPU.
+- Docencia y prototipado en CPU: al caber holgadamente en memoria de un portátil, permite demostraciones de generación de texto y de pipelines de Hugging Face Transformers en entornos sin GPU.
 - Generación de texto de dominio tras ajuste ligero: con un fine-tuning sobre un corpus especializado (por ejemplo, textos legales o técnicos), puede emplearse para tareas de completado y redacción asistida de bajo coste computacional.
 
 ## Benchmarks y rendimiento
@@ -74,7 +74,7 @@ Las siguientes estimaciones se derivan del tamaño declarado del modelo (150 mil
 - Cabe en cualquier GPU consumer: RTX 3060, RTX 4060, GTX 1650, e incluso en GPU integradas con memoria compartida.
 - Ejecución en CPU viable: puede correr en un portátil convencional, en una Raspberry Pi de gama alta o en un contenedor sin acelerador.
 - El repositorio completo ocupa 3,2 GB en disco si se descargan todos los ficheros publicados.
-- Opciones de despliegue: HuggingFace Transformers es la vía directa si los pesos están en safetensors o PyTorch; vLLM y TGI son compatibles con arquitecturas OLMo si el checkpoint incluye configuración estándar; llama.cpp y Ollama requerirían una conversión previa a GGUF que no está publicada.
+- Opciones de despliegue: Hugging Face Transformers es la vía directa si los pesos están en safetensors o PyTorch; vLLM y TGI son compatibles con arquitecturas OLMo si el checkpoint incluye configuración estándar; llama.cpp y Ollama requerirían una conversión previa a GGUF que no está publicada.
 - Latencia y throughput: no disponibles. No se han publicado mediciones para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ La comparativa se establece con modelos pequeños de propósito general ampliame
 |---|---|---|---|---|---|
 | WattsIshaan/OLMo-150m-120B-adamw-cosine-10percent | ~150 M | No disponible | CC-BY-4.0 | No | No |
 | OLMo-1B (AI2) | ~1.000 M | 2.048 tokens | Apache-2.0 | Sí (variantes Instruct) | Sí |
-| SmolLM2-135M (HuggingFace) | 135 M | 8.192 tokens | Apache-2.0 | Sí (variantes Instruct) | Sí |
+| SmolLM2-135M (Hugging Face) | 135 M | 8.192 tokens | Apache-2.0 | Sí (variantes Instruct) | Sí |
 | Qwen2.5-0.5B (Alibaba) | ~500 M | 32.768 tokens | Apache-2.0 | Sí (variantes Instruct) | Sí |
 
 Diferencias relevantes: frente a las alternativas, este checkpoint destaca únicamente por su licencia CC-BY-4.0 (permisiva pero con obligación de atribución) y por su carácter de artefacto de investigación a medio entrenar. Las alternativas ofrecen contexto documentado, versiones ajustadas por instrucciones, evaluaciones publicadas y soporte de ecosistema mucho más amplio. No se dispone de datos de rendimiento de este checkpoint que permitan una comparación cuantitativa.
@@ -105,6 +105,6 @@ Diferencias relevantes: frente a las alternativas, este checkpoint destaca únic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/WattsIshaan/OLMo-150m-120B-adamw-cosine-10percent
+- Hugging Face: https://huggingface.co/WattsIshaan/OLMo-150m-120B-adamw-cosine-10percent
 - Paper asociado: https://arxiv.org/abs/2605.02105 (Watts, Li, Goyal, Springer, Raghunathan, "Sharpness-Aware Pretraining Mitigates Catastrophic Forgetting", ICML 2026)
 - No se han encontrado otros enlaces relevantes en la búsqueda web realizada: los resultados obtenidos correspondían a un sitio de asesoría fiscal sin relación con el modelo.

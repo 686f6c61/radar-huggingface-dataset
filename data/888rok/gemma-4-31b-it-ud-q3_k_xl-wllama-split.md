@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/888rok/gemma-4-31B-it-UD-Q3_K_XL-wllama-split
+- Repositorio Hugging Face: https://huggingface.co/888rok/gemma-4-31B-it-UD-Q3_K_XL-wllama-split
 - Modelo base original: https://huggingface.co/google/gemma-4-31B
 - Cuantización de unsloth: https://huggingface.co/unsloth/gemma-4-31B-it-GGUF
 - Documentación oficial de Gemma 4: https://deepmind.google/models/gemma/gemma-4/

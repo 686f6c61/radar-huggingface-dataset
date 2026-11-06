@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-45-v2 es un ajuste fino (fine-tune) de tipo SFT sobre el modelo Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en HuggingFace. El modelo base es la variante de 4.000 millones de parámetros de la familia Qwen3, distribuida en formato Unsloth para facilitar el entrenamiento eficiente; el autor ha aplicado un entrenamiento supervisado con TRL 0.24.0 sobre esa base, presumiblemente para especializarla en alguna tarea concreta que la model card no detalla.
+Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-45-v2 es un ajuste fino (fine-tune) de tipo SFT sobre el modelo Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en Hugging Face. El modelo base es la variante de 4.000 millones de parámetros de la familia Qwen3, distribuida en formato Unsloth para facilitar el entrenamiento eficiente; el autor ha aplicado un entrenamiento supervisado con TRL 0.24.0 sobre esa base, presumiblemente para especializarla en alguna tarea concreta que la model card no detalla.
 
 Se trata de un modelo denso, orientado a instrucciones, con pesos en safetensors y librería transformers. La model card es mínima: únicamente declara la base, el procedimiento de entrenamiento (SFT) y las versiones del framework, sin especificar dataset, hiperparámetros, número de tokens de entrenamiento ni motivación del ajuste. El sufijo del nombre ("SD-UnifiedFC-512-45-v2") no se explica en la documentación disponible.
 
@@ -45,7 +45,7 @@ No se dispone de información sobre el dataset de entrenamiento: ni su composici
 - Experimentación académica con SFT y TRL: al estar entrenado con TRL 0.24.0 y versiones de framework documentadas, resulta útil como referencia para reproducir pipelines de ajuste fino sobre modelos de 4B en GPUs de gama alta de consumo.
 - Base para nuevos ajustes específicos de dominio: un modelo de 4.000 millones de parámetros es manejable para fine-tuning adicional con LoRA/QLoRA en una única GPU, partiendo de este checkpoint como inicialización.
 - Procesamiento por lotes de texto en local: con cuantización a 4 bits cabe en GPUs de consumo y permite clasificación, resumen o reescritura de documentos sin depender de APIs externas.
-- Investigación sobre nomenclatura y linaje de modelos: el repositorio sirve como caso de estudio de trazabilidad (modelo base, framework, etiquetas), útil para quienes auditan procedencias de checkpoints en HuggingFace.
+- Investigación sobre nomenclatura y linaje de modelos: el repositorio sirve como caso de estudio de trazabilidad (modelo base, framework, etiquetas), útil para quienes auditan procedencias de checkpoints en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -64,11 +64,11 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-45-v2 | ~4B | No disponible en la ficha (la base declara 262.144) | No disponible | HuggingFace, 0 descargas | Fine-tune SFT sin evaluación publicada |
-| Qwen3-4B-Instruct-2507 (base) | ~4B | 262.144 tokens según el fabricante | Apache 2.0 según el fabricante | HuggingFace, ampliamente distribuido | Modelo de referencia; el fine-tune no documenta mejoras medibles frente a él |
-| Llama 3.2 3B Instruct | ~3,2B | 128.000 tokens según el fabricante | Licencia comunitaria Llama 3.2 | HuggingFace, amplia adopción | Menor tamaño, ecosistema maduro de cuantizaciones y herramientas |
-| Gemma 3 4B Instruct | ~4B | 128.000 tokens según el fabricante | Términos de uso de Gemma | HuggingFace, amplia adopción | Alternativa multimodal en algunas variantes; cuantizaciones oficiales disponibles |
-| Phi-4-mini Instruct | ~3,8B | 128.000 tokens según el fabricante | MIT según el fabricante | HuggingFace | Enfoque en razonamiento y matemáticas; licencia permisiva |
+| Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-45-v2 | ~4B | No disponible en la ficha (la base declara 262.144) | No disponible | Hugging Face, 0 descargas | Fine-tune SFT sin evaluación publicada |
+| Qwen3-4B-Instruct-2507 (base) | ~4B | 262.144 tokens según el fabricante | Apache 2.0 según el fabricante | Hugging Face, ampliamente distribuido | Modelo de referencia; el fine-tune no documenta mejoras medibles frente a él |
+| Llama 3.2 3B Instruct | ~3,2B | 128.000 tokens según el fabricante | Licencia comunitaria Llama 3.2 | Hugging Face, amplia adopción | Menor tamaño, ecosistema maduro de cuantizaciones y herramientas |
+| Gemma 3 4B Instruct | ~4B | 128.000 tokens según el fabricante | Términos de uso de Gemma | Hugging Face, amplia adopción | Alternativa multimodal en algunas variantes; cuantizaciones oficiales disponibles |
+| Phi-4-mini Instruct | ~3,8B | 128.000 tokens según el fabricante | MIT según el fabricante | Hugging Face | Enfoque en razonamiento y matemáticas; licencia permisiva |
 
 Los datos de contexto y licencia de los modelos comparables provienen de la documentación pública de sus fabricantes y no han sido verificados en esta ficha.
 
@@ -86,7 +86,7 @@ Los datos de contexto y licencia de los modelos comparables provienen de la docu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-45-v2
+- Modelo en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-45-v2
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Repositorio de Unsloth: no disponible en la información proporcionada

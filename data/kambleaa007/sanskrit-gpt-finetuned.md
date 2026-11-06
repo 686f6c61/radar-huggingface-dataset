@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`sanskrit-gpt-finetuned` es un modelo de generacion de texto publicado en HuggingFace por el usuario `kambleaa007`, con 41.866.240 parametros almacenados en safetensors y un tamano de repositorio de 0,2 GB. Los tags del repositorio indican que se trata de un transformer de tipo GPT-2 ajustado mediante SFT (supervised fine-tuning) con la libreria TRL, y el nombre del modelo sugiere que el ajuste se ha orientado a sanscrito, aunque ni la model card ni los metadatos confirman el idioma ni el corpus utilizado.
+`sanskrit-gpt-finetuned` es un modelo de generacion de texto publicado en Hugging Face por el usuario `kambleaa007`, con 41.866.240 parametros almacenados en safetensors y un tamano de repositorio de 0,2 GB. Los tags del repositorio indican que se trata de un transformer de tipo GPT-2 ajustado mediante SFT (supervised fine-tuning) con la libreria TRL, y el nombre del modelo sugiere que el ajuste se ha orientado a sanscrito, aunque ni la model card ni los metadatos confirman el idioma ni el corpus utilizado.
 
 La relevancia del modelo es limitada en terminos de rendimiento: se trata de un modelo muy pequeno (en torno a 42 millones de parametros, por debajo incluso de DistilGPT-2), con 0 descargas y 0 likes en el momento de la consulta, y sin licencia ni idiomas declarados. Su interes practico es el de un artefacto de experimentacion: sirve como ejemplo de pipeline de fine-tuning con TRL sobre una base GPT-2 y como punto de partida para reproducir ajustes en idiomas con pocos recursos.
 
-La model card es la plantilla autogenerada de HuggingFace y no contiene informacion real: todos los apartados de descripcion, datos de entrenamiento, hiperparametros, evaluacion y uso previsto aparecen como "[More Information Needed]". En consecuencia, buena parte de las especificaciones de esta ficha figuran como "no disponible" y cualquier dato que no sea el recuento de parametros o los tags del repositorio debe considerarse no verificado.
+La model card es la plantilla autogenerada de Hugging Face y no contiene informacion real: todos los apartados de descripcion, datos de entrenamiento, hiperparametros, evaluacion y uso previsto aparecen como "[More Information Needed]". En consecuencia, buena parte de las especificaciones de esta ficha figuran como "no disponible" y cualquier dato que no sea el recuento de parametros o los tags del repositorio debe considerarse no verificado.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ La model card es la plantilla autogenerada de HuggingFace y no contiene informac
 
 La unica evidencia sobre la arquitectura es el tag `gpt2` del repositorio, que apunta a un transformer decoder-only con atencion causal, normalizacion tipo LayerNorm, embeddings de tokens y posiciones aprendidas y un cabezal de lenguaje autorregresivo. Con 41,9 millones de parametros, el modelo es mas pequeno que GPT-2 small (124 M) y que DistilGPT-2 (82 M), lo que sugiere una configuracion con menos capas, menos dimension de modelo o ambas. No hay informacion publicada sobre el numero de capas, dimension oculta, numero de cabezas de atencion ni longitud de contexto entrenada.
 
-Respecto al entrenamiento, los tags `trl` y `sft` indican que se ha aplicado un ajuste supervisado con la libreria TRL de HuggingFace sobre un modelo base GPT-2, pero la model card deja en "[More Information Needed]" el conjunto de datos, el numero de tokens, la composicion del corpus, los hiperparametros (precision, tasa de aprendizaje, tamano de lote) y la posible aplicacion de RLHF, DPO u otras tecnicas de alineamiento. El unico vinculo tecnico presente en la card es la referencia a `arxiv:1910.09700` (Lacoste et al., sobre estimacion de emisiones de carbono), que aparece en la plantilla generica y no describe el modelo. No se documenta ninguna innovacion arquitectonica (atencion lineal, decodificacion especulativa, mezcla de expertos o SSM).
+Respecto al entrenamiento, los tags `trl` y `sft` indican que se ha aplicado un ajuste supervisado con la libreria TRL de Hugging Face sobre un modelo base GPT-2, pero la model card deja en "[More Information Needed]" el conjunto de datos, el numero de tokens, la composicion del corpus, los hiperparametros (precision, tasa de aprendizaje, tamano de lote) y la posible aplicacion de RLHF, DPO u otras tecnicas de alineamiento. El unico vinculo tecnico presente en la card es la referencia a `arxiv:1910.09700` (Lacoste et al., sobre estimacion de emisiones de carbono), que aparece en la plantilla generica y no describe el modelo. No se documenta ninguna innovacion arquitectonica (atencion lineal, decodificacion especulativa, mezcla de expertos o SSM).
 
 ## Capacidades
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento en benchmarks |
 |---|---|---|---|---|---|
-| kambleaa007/sanskrit-gpt-finetuned | 41,9 M | no disponible | no disponible | HuggingFace, safetensors | no disponible |
-| GPT-2 small (referencia de la familia) | 124 M | 1024 tokens | MIT | HuggingFace y multiples mirrors | ampliamente documentado en literatura publica |
-| DistilGPT-2 (referencia de la familia) | 82 M | 1024 tokens | Apache-2.0 | HuggingFace | documentado en su model card |
+| kambleaa007/sanskrit-gpt-finetuned | 41,9 M | no disponible | no disponible | Hugging Face, safetensors | no disponible |
+| GPT-2 small (referencia de la familia) | 124 M | 1024 tokens | MIT | Hugging Face y multiples mirrors | ampliamente documentado en literatura publica |
+| DistilGPT-2 (referencia de la familia) | 82 M | 1024 tokens | Apache-2.0 | Hugging Face | documentado en su model card |
 
 Nota: los datos de GPT-2 small y DistilGPT-2 son caracteristicas publicas y ampliamente conocidas de esos modelos de referencia; no proceden de la informacion proporcionada sobre `sanskrit-gpt-finetuned` y se incluyen unicamente como contexto de tamano de la familia. No se dispone de ninguna comparacion de rendimiento medida entre este modelo y sus alternativas.
 
@@ -89,7 +89,7 @@ Nota: los datos de GPT-2 small y DistilGPT-2 son caracteristicas publicas y ampl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kambleaa007/sanskrit-gpt-finetuned
+- Modelo en Hugging Face: https://huggingface.co/kambleaa007/sanskrit-gpt-finetuned
 - Referencia citada en la plantilla de la model card: https://arxiv.org/abs/1910.09700 (Lacoste et al., estimacion de emisiones de carbono; no describe este modelo)
 - Calculadora de impacto de ML enlazada en la card: https://mlco2.github.io/impact#compute
 

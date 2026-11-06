@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gpt-oss-20B-high-nextcoder-distill-Qwen3-4B-noreason es un ajuste fino (fine-tune) del modelo Qwen/Qwen3-4B publicado por el usuario MaxSchulten en HuggingFace. Se trata de un transformer denso decoder-only de aproximadamente 4.022 millones de parametros (4B), distribuido en formato safetensors y con licencia Apache 2.0. El repositorio tiene 8,1 GB de tamano, fue creado y actualizado el 15 de octubre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", por lo que no cuenta con validacion de la comunidad.
+gpt-oss-20B-high-nextcoder-distill-Qwen3-4B-noreason es un ajuste fino (fine-tune) del modelo Qwen/Qwen3-4B publicado por el usuario MaxSchulten en Hugging Face. Se trata de un transformer denso decoder-only de aproximadamente 4.022 millones de parametros (4B), distribuido en formato safetensors y con licencia Apache 2.0. El repositorio tiene 8,1 GB de tamano, fue creado y actualizado el 15 de octubre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", por lo que no cuenta con validacion de la comunidad.
 
 El nombre del modelo sugiere que se ha aplicado un proceso de destilacion desde una variante de gpt-oss-20B (etiquetada como "high" y orientada a codigo, "nextcoder") sobre la arquitectura Qwen3-4B, y que el resultado esta pensado para funcionar sin cadena de razonamiento explicita ("noreason"). Esta interpretacion procede unicamente de la nomenclatura del repositorio: la model card no documenta el dataset, el procedimiento de destilacion ni los datos de evaluacion, por lo que debe tratarse como una hipotesis no confirmada por el autor.
 
@@ -44,7 +44,7 @@ El entrenamiento se realizo con la libreria Transformers 5.18.0 sobre PyTorch 2.
 - Prototipado de asistentes conversacionales: su etiqueta `conversational` y su tamano reducido permiten montar un chatbot de prueba con coste de inferencia bajo, util para validar pipelines antes de migrar a un modelo mayor.
 - Experimentacion academica sobre destilacion: el modelo es un caso de estudio para investigar si la destilacion desde un modelo mayor (presuntamente gpt-oss-20B) a un 4B produce mejoras medibles frente al Qwen3-4B original, aunque la falta de evaluacion obliga a generar la propia linea base.
 - Tareas de generacion de texto por lotes: resumen, reformulacion o clasificacion de texto a escala con throughput alto, aprovechando el tamano reducido y el soporte de vLLM/TGI para batching continuo.
-- Entorno educativo y de aprendizaje: sirve para ilustrar el flujo completo de `Trainer` de HuggingFace, incluyendo hiperparametros de acumulacion de gradiente y scheduler coseno, tal como documenta la propia model card.
+- Entorno educativo y de aprendizaje: sirve para ilustrar el flujo completo de `Trainer` de Hugging Face, incluyendo hiperparametros de acumulacion de gradiente y scheduler coseno, tal como documenta la propia model card.
 - Base para un fine-tune posterior especifico de dominio: al ser un ajuste ligero (una epoca, learning rate 1e-05), puede actuar como punto de partida para especializaciones adicionales con requisitos de computo modestos.
 - Inferencia en el borde (edge) o en portatiles: cuantizado a 4 bits ocuparia del orden de 2,5-3 GB, lo que permitiria ejecutarlo en equipos sin GPU dedicada mediante llama.cpp u Ollama, previa conversion a GGUF.
 
@@ -67,7 +67,7 @@ El unico dato numerico disponible es la perdida del proceso de entrenamiento, qu
 - VRAM estimada en 4 bits (Q4_K_M o similar): aproximadamente 2,5-3 GB de pesos, lo que permite ejecucion en GPUs de 4-6 GB.
 - GPU consumer compatibles: cabe con holgura en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 y, en cuantizacion de 4 bits, en tarjetas de 8 GB como RTX 3060 Ti o RTX 4060. Tambien es viable en Apple Silicon con memoria unificada de 8 GB o superior.
 - GPU de centro de datos: A100, H100 o L40S son suficientes y quedan sobredimensionadas para un modelo denso de 4B; su uso tendria sentido solo para batching de gran volumen.
-- Opciones de despliegue: Transformers (libreria declarada), Text Generation Inference (el repositorio incluye la etiqueta `text-generation-inference` y `endpoints_compatible`, por lo que es compatible con Inference Endpoints de HuggingFace) y vLLM para servido con batching continuo. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que no se publican ficheros GGUF en el repositorio.
+- Opciones de despliegue: Transformers (libreria declarada), Text Generation Inference (el repositorio incluye la etiqueta `text-generation-inference` y `endpoints_compatible`, por lo que es compatible con Inference Endpoints de Hugging Face) y vLLM para servido con batching continuo. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que no se publican ficheros GGUF en el repositorio.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo, TTFT ni latencias en ninguna configuracion de hardware.
 
 ## Comparativa con modelos similares
@@ -99,6 +99,6 @@ La comparacion de rendimiento con estas alternativas no es posible: las fichas p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MaxSchulten/gpt-oss-20B-high-nextcoder-distill-Qwen3-4B-noreason
+- Hugging Face: https://huggingface.co/MaxSchulten/gpt-oss-20B-high-nextcoder-distill-Qwen3-4B-noreason
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios adicionales ni demos asociados a este modelo.

@@ -84,7 +84,7 @@ La comparativa se limita al modelo original y a este artefacto, ya que no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Base-auto_round-int8-gs64-sym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Base-auto_round-int8-gs64-sym
 - Modelo base: https://huggingface.co/tiiuae/Falcon3-7B-Base
 - Intel AutoRound (repositorio): https://github.com/intel/auto-round
 - auto-round-pipeline (receta de replicacion): https://git.epicdynamic.com/auto-round-pipeline

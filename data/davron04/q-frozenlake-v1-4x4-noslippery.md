@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular sobre el entorno FrozenLake-v1 de Gym, en su variante 4x4 y con la opción `is_slippery=False`. Lo publica el usuario davron04 en HuggingFace Hub como un artefacto de tipo `reinforcement-learning`, con un unico fichero de pesos en formato pickle (`q-learning.pkl`) y un tamano de repositorio de 0,0 GB. No se trata, por tanto, de un modelo de lenguaje ni de una red neuronal profunda, sino de una politica discreta almacenada como tabla de valores Q.
+q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular sobre el entorno FrozenLake-v1 de Gym, en su variante 4x4 y con la opción `is_slippery=False`. Lo publica el usuario davron04 en Hugging Face Hub como un artefacto de tipo `reinforcement-learning`, con un unico fichero de pesos en formato pickle (`q-learning.pkl`) y un tamano de repositorio de 0,0 GB. No se trata, por tanto, de un modelo de lenguaje ni de una red neuronal profunda, sino de una politica discreta almacenada como tabla de valores Q.
 
 El problema que resuelve es el clasico de navegacion sobre una cuadricula con casillas seguras, agujeros y una meta: el agente debe aprender una secuencia de acciones que le lleve del estado inicial a la meta sin caer en un agujero. Al emplear la variante `no_slippery`, el entorno es determinista, lo que simplifica enormemente el aprendizaje y permite alcanzar una politica optima con un numero reducido de episodios. Su relevancia actual es fundamentalmente docente y metodologica: sirve como referencia minima, reproducible y verificable para validar infraestructuras de evaluacion de RL, integrar entornos Gym en pipelines de experimentacion o comparar algoritmos tabulares frente a aproximaciones con redes neuronales en un problema de juguete.
 
@@ -75,7 +75,7 @@ No se dispone de resultados comparativos en la informacion proporcionada. La com
 
 | Alternativa | Tipo | Espacio de estados | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| q-FrozenLake-v1-4x4-noSlippery | Q-Learning tabular | Discreto y finito | no disponible | HuggingFace Hub |
+| q-FrozenLake-v1-4x4-noSlippery | Q-Learning tabular | Discreto y finito | no disponible | Hugging Face Hub |
 | DQN sobre FrozenLake-v1 | Aproximacion con red neuronal | Discreto | no disponible | Implementaciones habituales en librerias de RL |
 | CEM / Cross-Entropy Method sobre FrozenLake-v1 | Optimizacion de politica sin gradientes | Discreto | no disponible | Implementaciones habituales en librerias de RL |
 | A2C sobre FrozenLake-v1 | Actor-critico | Discreto | no disponible | Implementaciones habituales en librerias de RL |
@@ -96,7 +96,7 @@ No se declaran valores de `mean_reward` para las alternativas en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davron04/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face: https://huggingface.co/davron04/q-FrozenLake-v1-4x4-noSlippery
 - Repositorio del autor: https://huggingface.co/davron04
 - Documentacion del entorno FrozenLake-v1: no se ha encontrado un enlace especifico en la busqueda web proporcionada
 - Paper, blog o demo adicional: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nebium-Large-GGUF es la distribucion en formato GGUF de Nebium-Large, un modelo de lenguaje causal de 762 millones de parametros desarrollado por el usuario nabin2004. A diferencia de un modelo de proposito general, esta especializado en una unica tarea: la continuacion de secuencias de movimientos de ajedrez en notacion UCI (por ejemplo, "e2e4 e7e5 g1f3"). El repositorio de HuggingFace que se analiza aqui contiene unicamente los binarios cuantizados y en FP16, mientras que los pesos originales en PyTorch residen en el repositorio nabin2004/nebium-large.
+Nebium-Large-GGUF es la distribucion en formato GGUF de Nebium-Large, un modelo de lenguaje causal de 762 millones de parametros desarrollado por el usuario nabin2004. A diferencia de un modelo de proposito general, esta especializado en una unica tarea: la continuacion de secuencias de movimientos de ajedrez en notacion UCI (por ejemplo, "e2e4 e7e5 g1f3"). El repositorio de Hugging Face que se analiza aqui contiene unicamente los binarios cuantizados y en FP16, mientras que los pesos originales en PyTorch residen en el repositorio nabin2004/nebium-large.
 
 La relevancia de esta ficha es acotada y conviene explicitarla: no se trata de un modelo competitivo en el panorama generalista, sino de un artefacto de dominio muy especifico, con un vocabulario cerrado de 5000 tokens BPE derivado de la notacion UCI y una ventana de contexto de 1024 tokens. Su interes practico esta en el despliegue local de bajo coste: los binarios GGUF permiten inferencia en CPU y en GPU de gama baja mediante llama.cpp, Ollama o llama-cpp-python, con huellas de memoria que van de aproximadamente 1,5 GB en FP16 a unos 800 MB en Q8_0.
 
@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni c
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Nebium-Large-GGUF | 762M | 1024 tokens | MIT | no disponible | GGUF en HuggingFace |
+| Nebium-Large-GGUF | 762M | 1024 tokens | MIT | no disponible | GGUF en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,12 +96,12 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni c
 - Idiomas: la etiqueta `en` de la model card no refleja una capacidad linguistica real; el vocabulario esta orientado a notacion UCI y no hay evidencia de generacion de texto en ingles general.
 - Licencia MIT: permite uso comercial y modificacion sin restricciones declaradas, pero el autor no especifica la procedencia ni la licencia de los datos de entrenamiento, lo que traslada al usuario el riesgo legal asociado a esa opacidad.
 - Ausencia de validacion externa: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, sin resultados de benchmarks ni evaluaciones de terceros.
-- Metadatos de HuggingFace: las fechas de creacion y actualizacion indican septiembre de 2026, posteriores a la fecha habitual de publicacion de modelos; conviene verificar la coherencia de los metadatos si se va a citar el repositorio.
+- Metadatos de Hugging Face: las fechas de creacion y actualizacion indican septiembre de 2026, posteriores a la fecha habitual de publicacion de modelos; conviene verificar la coherencia de los metadatos si se va a citar el repositorio.
 - Ausencia de informacion sobre fases de alineacion (RLHF, DPO) y sobre el proceso de entrenamiento, lo que impide estimar la calidad de las continuaciones en posiciones poco frecuentes.
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/nabin2004/nebium-large-gguf
+- Repositorio GGUF en Hugging Face: https://huggingface.co/nabin2004/nebium-large-gguf
 - Pesos base en PyTorch: https://huggingface.co/nabin2004/nebium-large
 - Codigo fuente del framework: https://github.com/nabin2004/nebium
 - llama.cpp: https://github.com/ggerganov/llama.cpp

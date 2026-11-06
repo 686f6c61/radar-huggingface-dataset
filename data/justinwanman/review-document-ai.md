@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`justinwanman/review-document-ai` es un repositorio alojado en HuggingFace cuyo artefacto principal no es un modelo entrenado, sino un conjunto estructurado de notas de investigacion sobre Document AI. El propio autor lo describe en la model card como "research notes" con referencias de evaluacion concretas y preguntas abiertas, y advierte de forma explicita que los apartados marcados como planes o hipotesis no deben interpretarse como resultados experimentales. No se declara ningun checkpoint entrenado, codigo liberado ni mejora de benchmark.
+`justinwanman/review-document-ai` es un repositorio alojado en Hugging Face cuyo artefacto principal no es un modelo entrenado, sino un conjunto estructurado de notas de investigacion sobre Document AI. El propio autor lo describe en la model card como "research notes" con referencias de evaluacion concretas y preguntas abiertas, y advierte de forma explicita que los apartados marcados como planes o hipotesis no deben interpretarse como resultados experimentales. No se declara ningun checkpoint entrenado, codigo liberado ni mejora de benchmark.
 
 El repositorio incluye un unico fichero de pesos en formato safetensors con 16.576 parametros totales, una magnitud que no corresponde a un modelo de lenguaje funcional y que apunta a un artefacto auxiliar, de prueba o meramente simbólico. El tamano del repositorio es de 0,0 GB, con cero descargas y cero likes en el momento de la consulta, y la unica etiqueta de arquitectura disponible es "transformer", sin ninguna especificacion adicional publicada.
 
@@ -76,6 +76,6 @@ No disponible. No es posible establecer una comparativa porque el repositorio no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/justinwanman/review-document-ai
+- Hugging Face: https://huggingface.co/justinwanman/review-document-ai
 - Fichero principal de notas del repositorio: `summary.md`
 - Documentacion del repositorio: `README.md`

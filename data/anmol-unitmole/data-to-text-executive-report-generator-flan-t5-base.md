@@ -84,10 +84,10 @@ No se dispone de benchmarks comparativos publicados contra otros modelos de data
 - El dataset es sintético y puede no reflejar la diversidad de formatos de tablas reales en entornos empresariales.
 - La evaluación ONNX se realizó con solo 5 ejemplos, por lo que los resultados de paridad no son concluyentes.
 - No se han publicado resultados en benchmarks generales como MMLU o HumanEval; su evaluación se limita a la tarea específica de data-to-text.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anmol-unitmole/data-to-text-executive-report-generator-flan-t5-base
+- Modelo en Hugging Face: https://huggingface.co/anmol-unitmole/data-to-text-executive-report-generator-flan-t5-base
 - Repositorio GitHub del proyecto: https://github.com/unit-mole/encoder-decoder-projects/tree/main/04-data-to-text-executive-report-generator
 - Perfil del autor: https://huggingface.co/anmol-unitmole

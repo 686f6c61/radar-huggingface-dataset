@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales / activos | Contexto | Formato / cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NVIDIA-Nemotron-3-Super-120B-A12B (este, MLX 4-bit) | 120,6B / 12,7B | 262.144 (hasta 1M reportado) | MLX safetensors 4-bit | NVIDIA Nemotron Open Model License | HuggingFace (rao-studios) |
-| NVIDIA-Nemotron-3-Super-120B-A12B-BF16 | 120,6B / 12,7B | 262.144 (hasta 1M reportado) | safetensors BF16 | NVIDIA Nemotron Open Model License | HuggingFace (nvidia) |
-| mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-4bit | 120,6B / 12,7B | 262.144 (hasta 1M reportado) | MLX safetensors 4-bit | NVIDIA Nemotron Open Model License | HuggingFace (mlx-community) |
+| NVIDIA-Nemotron-3-Super-120B-A12B (este, MLX 4-bit) | 120,6B / 12,7B | 262.144 (hasta 1M reportado) | MLX safetensors 4-bit | NVIDIA Nemotron Open Model License | Hugging Face (rao-studios) |
+| NVIDIA-Nemotron-3-Super-120B-A12B-BF16 | 120,6B / 12,7B | 262.144 (hasta 1M reportado) | safetensors BF16 | NVIDIA Nemotron Open Model License | Hugging Face (nvidia) |
+| mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-4bit | 120,6B / 12,7B | 262.144 (hasta 1M reportado) | MLX safetensors 4-bit | NVIDIA Nemotron Open Model License | Hugging Face (mlx-community) |
 
 No se dispone en la información proporcionada de datos de rendimiento (benchmarks) que permitan comparar cuantitativamente con alternativas de otros fabricantes o arquitecturas. Las tres entradas de la tabla corresponden al mismo modelo base en distintos formatos y empaquetados.
 
@@ -86,7 +86,7 @@ No se dispone en la información proporcionada de datos de rendimiento (benchmar
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/rao-studios/NVIDIA-Nemotron-3-Super-120B-A12B-mlx-4bit
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/rao-studios/NVIDIA-Nemotron-3-Super-120B-A12B-mlx-4bit
 - Modelo base BF16 de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16
 - Conversión MLX 4-bit de mlx-community: https://huggingface.co/mlx-community/NVIDIA-Nemotron-3-Super-120B-A12B-4bit
 - Framework MLX: https://github.com/ml-explore/mlx

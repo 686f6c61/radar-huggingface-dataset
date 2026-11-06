@@ -52,17 +52,17 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada: el modelo en bfloat16 ocupa aproximadamente 4,4 GB (tamaño del repositorio). Para inferencia se recomiendan al menos 6 GB de VRAM para evitar swapping.
 - GPU recomendadas: RTX 3060 (12 GB), RTX 4060 (8 GB), RTX 4070 o superiores. También puede ejecutarse en Apple Silicon con Metal (16 GB unificados).
 - Cabe en GPUs de consumo: sí, con cuantización a 8 bits o 4 bits se puede reducir el uso de VRAM a 2-3 GB, permitiendo ejecución en tarjetas con 4 GB.
-- Opciones de despliegue: transformers (HuggingFace), llama.cpp (conversión a GGUF), Ollama (si se añade a la biblioteca), vLLM (si se registra el modelo), TGI (si se adapta).
+- Opciones de despliegue: transformers (Hugging Face), llama.cpp (conversión a GGUF), Ollama (si se añade a la biblioteca), vLLM (si se registra el modelo), TGI (si se adapta).
 - Latencia y throughput: no disponibles. En una RTX 4090 se espera una generación de 30-50 tokens/s para un modelo de 2B en bf16, pero son estimaciones no verificadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-2B-Qwopus-Agent-Merge | 2,2B | no disponible | no disponible | HuggingFace |
-| Qwen2.5-1.5B | 1,5B | 32K | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B | 1,2B | 128K | Llama 3.2 Community | HuggingFace |
-| Gemma-2-2B | 2,6B | 8K | Gemma Terms | HuggingFace |
+| Qwen3.8-2B-Qwopus-Agent-Merge | 2,2B | no disponible | no disponible | Hugging Face |
+| Qwen2.5-1.5B | 1,5B | 32K | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B | 1,2B | 128K | Llama 3.2 Community | Hugging Face |
+| Gemma-2-2B | 2,6B | 8K | Gemma Terms | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos y el merge. La comparativa se limita a parámetros y licencia; los modelos alternativos tienen licencias claras y documentación extensa, mientras que este merge carece de ambos.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos y el merg
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DareModels/Qwen3.8-2B-Qwopus-Agent-Merge
+- Modelo en Hugging Face: https://huggingface.co/DareModels/Qwen3.8-2B-Qwopus-Agent-Merge
 - Paper DARE TIES: https://arxiv.org/abs/2311.03099
 - Repositorio GitHub de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Página de Qwen3.8 en OpenLM: https://openlm.ai/qwen3.8/

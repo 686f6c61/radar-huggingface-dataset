@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FLUX 3 Image Klein Q4_K_M GGUF (este) | 5.548.681.984 (transformer) | GGUF Q4_K_M | no aplica | FLUX Kommunity License | HuggingFace, derivado comunitario |
-| FLUX 3 Image Klein ComfyUI (BF16, BFL) | no disponible | safetensors BF16 | no aplica | FLUX Kommunity License | HuggingFace, release oficial |
+| FLUX 3 Image Klein Q4_K_M GGUF (este) | 5.548.681.984 (transformer) | GGUF Q4_K_M | no aplica | FLUX Kommunity License | Hugging Face, derivado comunitario |
+| FLUX 3 Image Klein ComfyUI (BF16, BFL) | no disponible | safetensors BF16 | no aplica | FLUX Kommunity License | Hugging Face, release oficial |
 | Otras cuantizaciones del mismo transformer | 5.548.681.984 (transformer) | GGUF (varios formatos) | no aplica | FLUX Kommunity License | no disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chungulus/flux-3-image-klein-comfy-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Chungulus/flux-3-image-klein-comfy-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy
 - Revision concreta del paquete fuente citada por el autor: https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy/tree/9d36114cf7a2e03a45c28f5cc4987d20ebfdb6c1
 - Extension ComfyUI-GGUF: https://github.com/city96/ComfyUI-GGUF

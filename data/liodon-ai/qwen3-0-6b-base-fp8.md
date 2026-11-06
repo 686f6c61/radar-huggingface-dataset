@@ -27,7 +27,7 @@ No se han proporcionado detalles sobre los datos de entrenamiento, el número de
 
 ## Capacidades
 
-- Generación de texto: el modelo está etiquetado como `text-generation` en HuggingFace.
+- Generación de texto: el modelo está etiquetado como `text-generation` en Hugging Face.
 - Compatibilidad con vLLM, Text Generation Inference (TGI) y SGLang para despliegue, tal y como se indica en la model card.
 - Cuantización FP8 dinámica: los pesos en FP8 E4M3 por canal y las activaciones cuantizadas por token permiten reducir el uso de memoria en GPUs compatibles.
 - `lm_head` sin cuantizar: se mantiene la calidad del modelo en la capa de salida.
@@ -75,7 +75,7 @@ No se dispone de información sobre otras cuantizaciones FP8 de modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liodon-ai/Qwen3-0.6B-Base-FP8
+- Modelo en Hugging Face: https://huggingface.co/liodon-ai/Qwen3-0.6B-Base-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Página del modelo Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Perfil de Liodon AI: https://huggingface.co/liodon-ai

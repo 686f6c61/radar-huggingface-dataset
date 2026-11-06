@@ -86,7 +86,7 @@ La comparación cuantitativa de rendimiento no es posible: este checkpoint no pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVA2/20261020_rar-medicine_static_qwen2.5-7b_raw4500_impl-ruscarl_s1_step-010
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVA2/20261020_rar-medicine_static_qwen2.5-7b_raw4500_impl-ruscarl_s1_step-010
 - Conjunto de test: https://huggingface.co/datasets/HYU-NLP-EVA2/rar-medicine-ruscarl-test500-seed42
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/ScaleAI/RaR-Medicine

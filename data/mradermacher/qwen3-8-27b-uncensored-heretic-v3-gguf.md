@@ -19,7 +19,7 @@ Se trata de un modelo con fecha de publicacion de septiembre de 2026, sin descar
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; adaptadores mmproj Q8_0 y mmproj f16; variantes i1 (imatrix/weighted) en repositorio separado |
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (conversion desde pesos HuggingFace, convert_type: hf) |
+| Formato de pesos | GGUF (conversion desde pesos Hugging Face, convert_type: hf) |
 | Modelo base | OS-Software/Qwen3.8-27B-Uncensored-Heretic-v3 |
 | Autor de la cuantizacion | mradermacher |
 | Tamano del repositorio | 187,9 GB |
@@ -104,7 +104,7 @@ Como referencia cualitativa, en esta franja de parametros suelen encontrarse mod
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Heretic-v3-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Heretic-v3-GGUF
 - Modelo base: https://huggingface.co/OS-Software/Qwen3.8-27B-Uncensored-Heretic-v3
 - Cuantizaciones i1 (weighted/imatrix): https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Heretic-v3-i1-GGUF
 - Pagina de resumen de descargas del modelo: https://hf.tst.eu/model#Qwen3.8-27B-Uncensored-Heretic-v3-GGUF

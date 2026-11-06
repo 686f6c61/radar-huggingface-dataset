@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Homiebear/AtrocitusInjustice2_235e_17390s es un repositorio publicado en HuggingFace por el usuario Homiebear bajo licencia OpenRAIL. La model card asociada contiene unicamente la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,3 GB y no registra descargas ni valoraciones en el momento de la consulta.
+Homiebear/AtrocitusInjustice2_235e_17390s es un repositorio publicado en Hugging Face por el usuario Homiebear bajo licencia OpenRAIL. La model card asociada contiene unicamente la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,3 GB y no registra descargas ni valoraciones en el momento de la consulta.
 
 El nombre del repositorio sigue el patron habitual de los checkpoints de ajuste fino empleados en el ecosistema de difusion de imagenes: el sufijo `235e_17390s` corresponde al formato epoca/paso (235 epocas, 17 390 pasos) que generan herramientas como kohya-ss o el trainer de LoRA de Diffusers. El prefijo "AtrocitusInjustice2" remite a Atrocitus, personaje de DC Comics presente en el videojuego Injustice 2, lo que apunta a un ajuste orientado a la generacion de ese personaje concreto. Esta interpretacion es una inferencia a partir de la nomenclatura y del tamano del repositorio, no un dato confirmado por el autor.
 
@@ -64,7 +64,7 @@ No disponible. La comparativa requiere identificar el modelo base y la categoria
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AtrocitusInjustice2_235e_17390s | no disponible | no disponible | no disponible | OpenRAIL | HuggingFace, 0 descargas |
+| AtrocitusInjustice2_235e_17390s | no disponible | no disponible | no disponible | OpenRAIL | Hugging Face, 0 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,7 +82,7 @@ No disponible. La comparativa requiere identificar el modelo base y la categoria
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Homiebear/AtrocitusInjustice2_235e_17390s
+- Hugging Face: https://huggingface.co/Homiebear/AtrocitusInjustice2_235e_17390s
 - Model card: no disponible mas alla de la declaracion de licencia
 - Paper: no disponible
 - Repositorio de codigo: no disponible

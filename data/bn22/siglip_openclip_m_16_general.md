@@ -4,7 +4,7 @@
 
 ## Resumen
 
-bn22/siglip_openclip_m_16_general es un checkpoint de clasificación de imágenes zero-shot publicado en HuggingFace por el usuario bn22 bajo la librería `open_clip`. El nombre del repositorio sugiere una arquitectura de la familia SigLIP (Sigmoid Loss for Language-Image Pre-training) con un backbone de visión ViT con parches de 16x16 y un tamaño de variante "M" (medium), empaquetada mediante el framework OpenCLIP. Sin embargo, la model card publicada se limita a tres líneas de metadatos y no confirma ni la arquitectura exacta, ni el número de parámetros, ni el procedimiento de entrenamiento.
+bn22/siglip_openclip_m_16_general es un checkpoint de clasificación de imágenes zero-shot publicado en Hugging Face por el usuario bn22 bajo la librería `open_clip`. El nombre del repositorio sugiere una arquitectura de la familia SigLIP (Sigmoid Loss for Language-Image Pre-training) con un backbone de visión ViT con parches de 16x16 y un tamaño de variante "M" (medium), empaquetada mediante el framework OpenCLIP. Sin embargo, la model card publicada se limita a tres líneas de metadatos y no confirma ni la arquitectura exacta, ni el número de parámetros, ni el procedimiento de entrenamiento.
 
 El modelo resuelve la tarea de clasificación de imágenes sin ejemplos etiquetados: dado un conjunto de textos candidatos (prompts) y una imagen, devuelve la probabilidad relativa de cada etiqueta mediante similitud en un espacio de embeddings compartido entre imagen y texto. La licencia MIT y el hecho de estar distribuido en `safetensors` lo hacen potencialmente utilizable en pipelines comerciales, pero la ausencia total de documentación y de métricas de evaluación publicadas obliga a validarlo internamente antes de cualquier uso en producción.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto de texto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bn22/siglip_openclip_m_16_general | No disponible (~0,4 GB de pesos) | No disponible | No se han publicado métricas | MIT | HuggingFace, OpenCLIP |
-| google/siglip-base-patch16-224 | ≈203 M (dato publicado por sus autores) | 64 tokens | Métricas publicadas en el paper de SigLIP | Apache 2.0 | HuggingFace, transformers |
-| openai/clip-vit-base-patch32 | ≈151 M (dato publicado por sus autores) | 77 tokens | Métricas publicadas en el paper de CLIP | MIT | HuggingFace, OpenCLIP |
-| laion/CLIP-ViT-B-32-laion2B-s34B-b79K | ≈151 M (dato publicado por el proyecto LAION) | 77 tokens | Métricas publicadas por LAION | MIT | HuggingFace, OpenCLIP |
+| bn22/siglip_openclip_m_16_general | No disponible (~0,4 GB de pesos) | No disponible | No se han publicado métricas | MIT | Hugging Face, OpenCLIP |
+| google/siglip-base-patch16-224 | ≈203 M (dato publicado por sus autores) | 64 tokens | Métricas publicadas en el paper de SigLIP | Apache 2.0 | Hugging Face, transformers |
+| openai/clip-vit-base-patch32 | ≈151 M (dato publicado por sus autores) | 77 tokens | Métricas publicadas en el paper de CLIP | MIT | Hugging Face, OpenCLIP |
+| laion/CLIP-ViT-B-32-laion2B-s34B-b79K | ≈151 M (dato publicado por el proyecto LAION) | 77 tokens | Métricas publicadas por LAION | MIT | Hugging Face, OpenCLIP |
 
 Las cifras de parámetros de los modelos alternativos proceden de la documentación pública de sus autores y no han sido verificadas en el contexto de esta ficha. Para el modelo objeto de análisis no se dispone de ninguna métrica ni especificación confirmada.
 
@@ -88,7 +88,7 @@ Las cifras de parámetros de los modelos alternativos proceden de la documentaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bn22/siglip_openclip_m_16_general
+- Modelo en Hugging Face: https://huggingface.co/bn22/siglip_openclip_m_16_general
 - Repositorio de OpenCLIP: https://github.com/mlfoundations/open_clip
 - Paper de SigLIP, "Sigmoid Loss for Language Image Pre-Training": https://arxiv.org/abs/2303.15343
 - Paper de OpenCLIP, "Reproducible scaling laws for contrastive language-image learning": https://arxiv.org/abs/2212.07143

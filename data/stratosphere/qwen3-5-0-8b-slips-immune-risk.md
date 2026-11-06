@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stratosphere/qwen3.5-0.8b-slips-immune-risk | ~0,87B | No disponible | Analisis de causa y riesgo de incidentes Slips | Apache 2.0 | HuggingFace |
-| stratosphere/qwen2.5-1.5b-slips-immune-risk | ~1,5B | No disponible | Misma tarea, mismos datos y prompts | No disponible en la informacion | HuggingFace |
-| Qwen3.5-0.8B (modelo base) | ~0,87B | No disponible | Modelo generalista | No disponible en la informacion | HuggingFace |
+| stratosphere/qwen3.5-0.8b-slips-immune-risk | ~0,87B | No disponible | Analisis de causa y riesgo de incidentes Slips | Apache 2.0 | Hugging Face |
+| stratosphere/qwen2.5-1.5b-slips-immune-risk | ~1,5B | No disponible | Misma tarea, mismos datos y prompts | No disponible en la informacion | Hugging Face |
+| Qwen3.5-0.8B (modelo base) | ~0,87B | No disponible | Modelo generalista | No disponible en la informacion | Hugging Face |
 | GPT-4o | No disponible | No disponible | Modelo generalista propietario | Propietaria | API |
 
 El modelo de 0,8B se posiciona como la variante para dispositivos pequeños de la familia: comparte datos de entrenamiento, prompts e hiperparámetros con el modelo de 1,5B, con aproximadamente la mitad de tamaño y puntuaciones de juez comparables según la model card.
@@ -95,7 +95,7 @@ El modelo de 0,8B se posiciona como la variante para dispositivos pequeños de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stratosphere/qwen3.5-0.8b-slips-immune-risk
+- Modelo en Hugging Face: https://huggingface.co/stratosphere/qwen3.5-0.8b-slips-immune-risk
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Modelo hermano de 1,5B: https://huggingface.co/stratosphere/qwen2.5-1.5b-slips-immune-risk
 - Dataset de entrenamiento: https://huggingface.co/datasets/stratosphere/immune-risk-sft-dataset

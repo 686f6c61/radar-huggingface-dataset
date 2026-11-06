@@ -71,5 +71,5 @@ No se dispone de datos de rendimiento comparativos. Como referencia de arquitect
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/WWsCa/vet-qwen3b-v3-dapt-q8_0)
-- [HuggingFace del repositorio vetcopilot-backend](https://huggingface.co/WWsCa/vetcopilot-backend) (mencionado en la model card, para pesos completos y código de entrenamiento)
+- [Hugging Face del modelo](https://huggingface.co/WWsCa/vet-qwen3b-v3-dapt-q8_0)
+- [Hugging Face del repositorio vetcopilot-backend](https://huggingface.co/WWsCa/vetcopilot-backend) (mencionado en la model card, para pesos completos y código de entrenamiento)

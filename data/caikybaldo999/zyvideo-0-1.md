@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZYVIDEO 0.1 es un modelo de generación de vídeo a partir de texto (text-to-video) publicado por el usuario caikybaldo999 en HuggingFace. Se trata de un DiT (Diffusion Transformer) de 119,5 millones de parámetros entrenado desde cero sobre OpenVid-1M, capaz de generar clips de 256×256 píxeles y 33 fotogramas (aproximadamente 2,7 segundos según el autor). El modelo utiliza flow matching como método de muestreo y mantiene congelados dos componentes preentrenados de terceros: el VAE de Wan2.2 y el codificador de texto Qwen3-0.6B.
+ZYVIDEO 0.1 es un modelo de generación de vídeo a partir de texto (text-to-video) publicado por el usuario caikybaldo999 en Hugging Face. Se trata de un DiT (Diffusion Transformer) de 119,5 millones de parámetros entrenado desde cero sobre OpenVid-1M, capaz de generar clips de 256×256 píxeles y 33 fotogramas (aproximadamente 2,7 segundos según el autor). El modelo utiliza flow matching como método de muestreo y mantiene congelados dos componentes preentrenados de terceros: el VAE de Wan2.2 y el codificador de texto Qwen3-0.6B.
 
 Su interés principal no es la calidad final, sino la receta: demuestra que es posible entrenar un generador de vídeo funcional desde cero en una única GPU NVIDIA L4 (24 GB de VRAM), siguiendo la estela de MiniDance. Es, por tanto, un modelo de referencia para investigación de bajo presupuesto, experimentos de ablation y docencia, no un modelo listo para producción.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: en torno a 3-5 GB en bf16 incluyendo pesos y activaciones para 33 fotogramas a 256×256 (estimación, no medida publicada).
 - Cabe en GPU de consumo: sí, previsiblemente en cualquier tarjeta con 8 GB o más (RTX 3060 Ti, 4060 Ti, 4070, 4080, 4090). No se ha verificado en GPUs de 6 GB.
 - GPU de referencia para entrenamiento: NVIDIA L4 (24 GB), una sola unidad, según el autor.
-- Opciones de despliegue: script PyTorch propio (librería pytorch declarada) y demo Gradio en HuggingFace Spaces. No hay soporte documentado en vLLM, TGI, llama.cpp, Ollama ni Diffusers, al no tratarse de un modelo de lenguaje ni de un pipeline estándar publicado.
+- Opciones de despliegue: script PyTorch propio (librería pytorch declarada) y demo Gradio en Hugging Face Spaces. No hay soporte documentado en vLLM, TGI, llama.cpp, Ollama ni Diffusers, al no tratarse de un modelo de lenguaje ni de un pipeline estándar publicado.
 - Latencia y throughput: no disponibles. No se documentan tiempos por clip, número de pasos de muestreo ni rendimiento en fotogramas por segundo.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones completa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caikybaldo999/zyvideo-0.1
+- Modelo en Hugging Face: https://huggingface.co/caikybaldo999/zyvideo-0.1
 - Demo (Space Gradio): https://huggingface.co/spaces/caikybaldo999/zyvideo
 - Receta de referencia MiniDance: https://huggingface.co/JuniverseLi/minidance
 - Dataset OpenVid-1M: mencionado en la model card, sin enlace proporcionado en la informacion disponible

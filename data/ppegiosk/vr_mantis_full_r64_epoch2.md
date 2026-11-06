@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ppegiosk/vr_mantis_full_r64_epoch2` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `ppegiosk`, entrenado con la libreria PEFT en su version 0.20.0. No se trata de un modelo de lenguaje completo, sino de un conjunto de pesos adicionales que deben combinarse con un modelo base para poder ejecutarse. El propio identificador del adaptador apunta a un modelo base alojado en una ruta local de un cluster (`/dtu/p1/ppar/ICRA/cache/hub/models--ppegiosk--vr_base_chunk50_30k/snapshots/...`), lo que indica que el modelo base no esta publicado como repositorio accesible en el Hub, sino que se referencia mediante una ruta interna de maquina.
+`ppegiosk/vr_mantis_full_r64_epoch2` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `ppegiosk`, entrenado con la libreria PEFT en su version 0.20.0. No se trata de un modelo de lenguaje completo, sino de un conjunto de pesos adicionales que deben combinarse con un modelo base para poder ejecutarse. El propio identificador del adaptador apunta a un modelo base alojado en una ruta local de un cluster (`/dtu/p1/ppar/ICRA/cache/hub/models--ppegiosk--vr_base_chunk50_30k/snapshots/...`), lo que indica que el modelo base no esta publicado como repositorio accesible en el Hub, sino que se referencia mediante una ruta interna de maquina.
 
-La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen con el marcador `[More Information Needed]`. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamano reportado de 0.0 GB, coherente con un adaptador de rango 64 guardado en safetensors cuyo peso es pequeno en comparacion con cualquier modelo base de miles de millones de parametros.
+La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen con el marcador `[More Information Needed]`. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamano reportado de 0.0 GB, coherente con un adaptador de rango 64 guardado en safetensors cuyo peso es pequeno en comparacion con cualquier modelo base de miles de millones de parametros.
 
 Por tanto, la relevancia actual de esta ficha es limitada y fundamentalmente documental: sirve como ejemplo de publicacion incompleta de un adaptador PEFT y como recordatorio de que, sin acceso al modelo base ni a la configuracion de entrenamiento, no es posible evaluar capacidades, sesgos ni rendimiento. Cualquier uso en produccion requeriria contactar con el autor para obtener el modelo base y la receta de entrenamiento. El nombre del repositorio sugiere un entrenamiento sobre un modelo denominado `vr_base_chunk50_30k` en su segunda epoca, con rango LoRA 64, pero estos extremos no estan confirmados por documentacion alguna.
 
@@ -24,7 +24,7 @@ Por tanto, la relevancia actual de esta ficha es limitada y fundamentalmente doc
 | Rango LoRA | 64 (segun el identificador del repositorio `r64`) |
 | Modelo base | Referenciado por ruta local: `ppegiosk/vr_base_chunk50_30k` (snapshot `567e64495fe3515f8b855e59d91f3971f65561ad`); no publicado de forma accesible |
 | Epocas de entrenamiento | 2 (segun el identificador del repositorio `epoch2`) |
-| Tamano del repositorio | 0.0 GB (reportado por HuggingFace) |
+| Tamano del repositorio | 0.0 GB (reportado por Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -94,7 +94,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ppegiosk/vr_mantis_full_r64_epoch2
+- Modelo en Hugging Face: https://huggingface.co/ppegiosk/vr_mantis_full_r64_epoch2
 - Modelo base referenciado (no verificado como accesible): https://huggingface.co/ppegiosk/vr_base_chunk50_30k
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental en ML citada en la plantilla: https://mlco2.github.io/impact

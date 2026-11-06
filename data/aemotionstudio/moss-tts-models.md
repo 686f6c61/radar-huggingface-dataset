@@ -75,12 +75,12 @@ No se dispone de información comparativa con otros modelos en los datos proporc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AEmotionStudio/moss-tts-models
+- Repositorio en Hugging Face: https://huggingface.co/AEmotionStudio/moss-tts-models
 - Proyecto MOSS-TTS en GitHub: https://github.com/OpenMOSS/MOSS-TTS
 - Proyecto MOSS-Audio-Tokenizer en GitHub: https://github.com/OpenMOSS/MOSS-Audio-Tokenizer
 - Sitio web de la familia MOSS-TTS: https://moss-tts.apposters.com/
 - Repositorio de MAESTRO: https://github.com/AEmotionStudio
-- Modelos base en HuggingFace:
+- Modelos base en Hugging Face:
   - https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5
   - https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-v2
   - https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5

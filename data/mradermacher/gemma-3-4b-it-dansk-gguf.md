@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma-3-4B-it-Dansk-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo EnKop/Gemma-3-4B-it-Dansk, un ajuste fino del modelo Gemma 3 de 4 mil millones de parametros orientado al idioma danes. El trabajo de cuantizacion lo ha realizado mradermacher, un conocido publicador de cuantizaciones GGUF en HuggingFace, y esta pensado para facilitar la ejecucion del modelo en hardware de consumo mediante llama.cpp y herramientas compatibles.
+Gemma-3-4B-it-Dansk-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo EnKop/Gemma-3-4B-it-Dansk, un ajuste fino del modelo Gemma 3 de 4 mil millones de parametros orientado al idioma danes. El trabajo de cuantizacion lo ha realizado mradermacher, un conocido publicador de cuantizaciones GGUF en Hugging Face, y esta pensado para facilitar la ejecucion del modelo en hardware de consumo mediante llama.cpp y herramientas compatibles.
 
 El modelo base parte de la arquitectura Gemma 3 de Google, un transformer decoder-only de 3.880.263.168 parametros con capacidades multimodales (se incluyen ficheros mmproj para el proyector visual). El ajuste fino original, realizado por EnKop, adapta el modelo al danes, aunque la model card declara unicamente el idioma ingles en los metadatos, lo que supone una inconsistencia relevante para el despliegue.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha radica en que ofrece una via practica para ejecutar 
 
 El modelo base es Gemma 3, un transformer decoder-only desarrollado por Google. La version de 4B incluye un proyector multimodal (mmproj) que permite el procesamiento de imagenes junto con texto, segun se deduce de la presencia de ficheros mmproj-Q8_0 y mmproj-f16 en el repositorio. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el ajuste fino danes.
 
-El trabajo de mradermacher consiste exclusivamente en la cuantizacion estatica del modelo EnKop/Gemma-3-4B-it-Dansk. La model card indica que las cuantizaciones ponderadas o con imatrix no estan disponibles en el momento de la publicacion, y que el proceso de cuantizacion se realizo con quantize_version 2 y output_tensor_quantised 1, convirtiendo desde formato HuggingFace (convert_type: hf). No se documentan innovaciones tecnicas adicionales en el proceso de cuantizacion.
+El trabajo de mradermacher consiste exclusivamente en la cuantizacion estatica del modelo EnKop/Gemma-3-4B-it-Dansk. La model card indica que las cuantizaciones ponderadas o con imatrix no estan disponibles en el momento de la publicacion, y que el proceso de cuantizacion se realizo con quantize_version 2 y output_tensor_quantised 1, convirtiendo desde formato Hugging Face (convert_type: hf). No se documentan innovaciones tecnicas adicionales en el proceso de cuantizacion.
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ El trabajo de mradermacher consiste exclusivamente en la cuantizacion estatica d
 - Prototipado rapido en entornos con GPU de consumo: las cuantizaciones Q4_K_M (2,6 GB) permiten ejecutar el modelo en tarjetas con 4-6 GB de VRAM, ideal para pruebas de concepto.
 - Traduccion y generacion de contenido en danes: el ajuste fino especifico lo hace adecuado para redaccion de textos, resumenes y parafraseo en ese idioma.
 - Despliegue en dispositivos edge o sin conexion: los ficheros Q2_K y Q3_K permiten ejecucion en hardware muy limitado, util para aplicaciones de campo o privacidad estricta.
-- Integracion en pipelines de transformers: el modelo base en formato HuggingFace permite su uso con la libreria transformers para tareas de generacion condicionada.
+- Integracion en pipelines de transformers: el modelo base en formato Hugging Face permite su uso con la libreria transformers para tareas de generacion condicionada.
 - Educacion y experimentacion: modelo ligero para estudiar el comportamiento de Gemma 3 en un idioma de bajos recursos como el danes.
 
 ## Benchmarks y rendimiento
@@ -83,7 +83,7 @@ La comparativa se limita a parametros y disponibilidad; no se dispone de datos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Gemma-3-4B-it-Dansk-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma-3-4B-it-Dansk-GGUF
 - Modelo base: https://huggingface.co/EnKop/Gemma-3-4B-it-Dansk
 - Pagina de descargas del autor: https://hf.tst.eu/model#Gemma-3-4B-it-Dansk-GGUF
 - FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

@@ -6,7 +6,7 @@
 
 La arquitectura es una red totalmente conectada de tres capas (3072 -> 128 -> 64 -> 10) con activación ReLU en las capas ocultas y 10 logits de salida, sumando 402.250 parámetros. Se entrenó sobre las 50.000 imágenes de entrenamiento de CIFAR-10 con etiquetas reales (p = 0), usando entropía cruzada y SGD con tasa de aprendizaje 0,05 durante 100 épocas.
 
-El modelo alcanza una precisión de entrenamiento del 90,83 % y una precisión de test del 47,30 %, lo que refleja un sobreajuste considerable y un rendimiento muy por debajo de los modelos convolucionales habituales en CIFAR-10. No dispone de model card con benchmarks comparativos, idiomas ni pipeline de HuggingFace, y su repo ocupa 0,0 GB.
+El modelo alcanza una precisión de entrenamiento del 90,83 % y una precisión de test del 47,30 %, lo que refleja un sobreajuste considerable y un rendimiento muy por debajo de los modelos convolucionales habituales en CIFAR-10. No dispone de model card con benchmarks comparativos, idiomas ni pipeline de Hugging Face, y su repo ocupa 0,0 GB.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks comparativos (MMLU, HumanEval, GSM8
 
 | Modelo | Parametros | Contexto | Precisión test CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-a4-mlp-p0 | 402.250 | no aplica | 47,30 % | MIT | HuggingFace (repo de 0,0 GB) |
+| smai-a4-mlp-p0 | 402.250 | no aplica | 47,30 % | MIT | Hugging Face (repo de 0,0 GB) |
 | MLP de referencia CIFAR-10 (típico en cursos) | ~400.000 | no aplica | ~45-55 % | variable | no disponible |
 | CNN pequeña tipo LeNet en CIFAR-10 | ~60.000-1.000.000 | no aplica | ~60-70 % | variable | no disponible |
 | ResNet-18 en CIFAR-10 | ~11 millones | no aplica | ~93-95 % | variable | no disponible |
@@ -83,9 +83,9 @@ No se dispone de datos verificados de benchmarks para los modelos alternativos e
 - Riesgo de alucinación: no aplica (no genera texto), pero sí puede producir clasificaciones erróneas con alta confianza en imágenes fuera de distribución.
 - Limitaciones de contexto o idioma: no aplica; el modelo solo procesa imágenes de 32x32x3 con el preprocesado exacto documentado.
 - Restricciones de licencia: MIT permite uso comercial, pero el modelo es un ejercicio académico sin garantías de calidad.
-- Caveats para producción: no hay pipeline de HuggingFace, no hay tests ni documentación de robustez, y el repo no incluye código de inferencia más allá de la descripción de los arrays; no se recomienda su uso en aplicaciones reales.
+- Caveats para producción: no hay pipeline de Hugging Face, no hay tests ni documentación de robustez, y el repo no incluye código de inferencia más allá de la descripción de los arrays; no se recomienda su uso en aplicaciones reales.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/samarth1rao/smai-a4-mlp-p0)
+- [Modelo en Hugging Face](https://huggingface.co/samarth1rao/smai-a4-mlp-p0)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

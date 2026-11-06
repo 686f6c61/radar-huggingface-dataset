@@ -108,7 +108,7 @@ La ventaja del modelo evaluado es su tamaño reducido y su especialización en s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/axlerate/ragbench-trace-deberta-v3-large-heldout-benchmark
+- Repositorio Hugging Face: https://huggingface.co/axlerate/ragbench-trace-deberta-v3-large-heldout-benchmark
 - Paper RAGBench (arXiv): https://arxiv.org/html/2407.11005v2
 - Modelo base DeBERTa-v3-large (Microsoft): https://huggingface.co/microsoft/deberta-v3-large
 - Repositorio GitHub de DeBERTa: https://github.com/microsoft/DeBERTa

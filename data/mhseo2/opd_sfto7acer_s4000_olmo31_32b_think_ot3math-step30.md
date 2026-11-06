@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`opd_sfto7acer_s4000_olmo31_32b_think_ot3math-step30` es un checkpoint experimental de destilación on-policy (on-policy distillation, OPD) publicado por el usuario mhseo2 en HuggingFace. Parte de un modelo estudiante de la familia OLMo 3 (7.298.011.136 parámetros, aproximadamente 7,3 mil millones) afinado previamente con datos de matemáticas de AceReason-1.1, y se entrena para imitar el comportamiento de un profesor mucho mayor, `allenai/Olmo-3.1-32B-Think`. El resultado es un modelo de 7B orientado a razonamiento matemático con modo "think".
+`opd_sfto7acer_s4000_olmo31_32b_think_ot3math-step30` es un checkpoint experimental de destilación on-policy (on-policy distillation, OPD) publicado por el usuario mhseo2 en Hugging Face. Parte de un modelo estudiante de la familia OLMo 3 (7.298.011.136 parámetros, aproximadamente 7,3 mil millones) afinado previamente con datos de matemáticas de AceReason-1.1, y se entrena para imitar el comportamiento de un profesor mucho mayor, `allenai/Olmo-3.1-32B-Think`. El resultado es un modelo de 7B orientado a razonamiento matemático con modo "think".
 
 El interés técnico del artefacto no está en su rendimiento final, que el propio autor deja pendiente de evaluación, sino en la metodología: destilación on-policy con divergencia KL inversa por token sobre las propias rollouts del estudiante, sin recompensa de tarea, usando el profesor únicamente como señal de distribución. Se trata de un checkpoint intermedio (paso 30 de un entrenamiento más largo), no de un modelo listo para producción.
 
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada en cuantización de 8 bits: alrededor de 8 GB de pesos; en 4 bits, alrededor de 4-5 GB de pesos. No se publican cuantizaciones oficiales, por lo que habría que generarlas.
 - GPU recomendadas: A100 80 GB o H100 para BF16 con contexto largo (hasta 32.768 tokens de respuesta); RTX 4090 (24 GB) es suficiente para BF16 con contexto moderado o para 8 bits con contexto largo.
 - Cabe en GPU de consumo: sí, en RTX 4090, RTX 3090 (24 GB) y, con cuantización agresiva, en GPUs de 16 GB; en 8 GB solo con cuantización de 4 bits y contexto reducido.
-- Opciones de despliegue: vLLM (usado en el propio entrenamiento), TGI, llama.cpp y Ollama tras convertir a GGUF; al ser safetensors estándar de OLMo 3, es compatible con el ecosistema HuggingFace Transformers.
+- Opciones de despliegue: vLLM (usado en el propio entrenamiento), TGI, llama.cpp y Ollama tras convertir a GGUF; al ser safetensors estándar de OLMo 3, es compatible con el ecosistema Hugging Face Transformers.
 - Latencia y throughput: no disponibles. El autor no publica mediciones; el contexto de 32.768 tokens penaliza fuertemente el throughput en GPUs de consumo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (OPD step 30) | 7,3B | no disponible (entrenado hasta 32k por respuesta) | Destilación on-policy de Olmo-3.1-32B-Think sobre SFT matemático | Apache 2.0 | HuggingFace, 0 descargas |
-| `mhseo2/sft_olmo3base7b_acereason11_math_n204800-step4000` (modelo base) | ~7,3B | no disponible | SFT matemático con AceReason-1.1 | no disponible en la información | HuggingFace |
-| `allenai/Olmo-3.1-32B-Think` (profesor) | 32B | no disponible en la información | Razonamiento con modo think | no disponible en la información | HuggingFace |
-| Qwen2.5-Math-7B (alternativa de la misma categoría) | 7,6B | 4.096 tokens nativos (ampliable) | SFT + RL matemático | Apache 2.0 (variantes) | HuggingFace |
+| Este modelo (OPD step 30) | 7,3B | no disponible (entrenado hasta 32k por respuesta) | Destilación on-policy de Olmo-3.1-32B-Think sobre SFT matemático | Apache 2.0 | Hugging Face, 0 descargas |
+| `mhseo2/sft_olmo3base7b_acereason11_math_n204800-step4000` (modelo base) | ~7,3B | no disponible | SFT matemático con AceReason-1.1 | no disponible en la información | Hugging Face |
+| `allenai/Olmo-3.1-32B-Think` (profesor) | 32B | no disponible en la información | Razonamiento con modo think | no disponible en la información | Hugging Face |
+| Qwen2.5-Math-7B (alternativa de la misma categoría) | 7,6B | 4.096 tokens nativos (ampliable) | SFT + RL matemático | Apache 2.0 (variantes) | Hugging Face |
 
 La comparación con Qwen2.5-Math-7B se incluye como referencia de categoría (7B matemático); no se dispone de datos de rendimiento de este checkpoint para contrastar. No se han publicado benchmarks que permitan una comparación cuantitativa fiable.
 
@@ -84,7 +84,7 @@ La comparación con Qwen2.5-Math-7B se incluye como referencia de categoría (7B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/opd_sfto7acer_s4000_olmo31_32b_think_ot3math-step30
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/opd_sfto7acer_s4000_olmo31_32b_think_ot3math-step30
 - Modelo base (SFT AceReason-1.1 math, step 4000): https://huggingface.co/mhseo2/sft_olmo3base7b_acereason11_math_n204800-step4000
 - Profesor (Olmo-3.1-32B-Think): https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Repositorio de código `mopdRL` (commit `f1bcc9eb82a8bcc7a053a23dd1afcae82fb591e4`): no disponible como URL en la información proporcionada

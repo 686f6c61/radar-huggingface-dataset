@@ -73,6 +73,6 @@ No se dispone de informacion suficiente para comparar con otros modelos de la mi
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mradermacher/Dark-Goetia-26B-A4B-v2-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mradermacher/Dark-Goetia-26B-A4B-v2-GGUF
 - Modelo base (26B-Suite/Dark-Goetia-26B-A4B-v2): https://huggingface.co/26B-Suite/Dark-Goetia-26B-A4B-v2
 - Otros modelos de la familia (referencia): https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-i1-GGUF

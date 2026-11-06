@@ -68,7 +68,7 @@ Nota: la licencia del adaptador es Gemma, aunque el otro modelo de ArnavKewalram
 - No se garantiza mejora real: el autor mismo advierte que no se espera un cambio dramático con respecto al modelo base.
 
 ## Enlaces
-- [HuggingFace del modelo](https://huggingface.co/nikheal25/gemma-4-E2B-coding-poc-v1)
+- [Hugging Face del modelo](https://huggingface.co/nikheal25/gemma-4-E2B-coding-poc-v1)
 - [Modelo base de Unsloth](https://huggingface.co/unsloth/gemma-4-E2B-it-UD-MLX-4bit)
 - [Página de Gemma 4 E2B en gemma4.dev](https://gemma4.dev/models/gemma-4-e2b)
 - [Gemma 4 en Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)

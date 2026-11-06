@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - **VRAM estimada**: al tratarse presumiblemente de un artefacto sobre GPT-2 pequeño (124M), la inferencia de GPT-2 base cabe en GPUs de consumo (4-6 GB VRAM). Sin embargo, el denoiser en sí mismo podría ser un módulo pequeño con requisitos mínimos.
 - **GPUs recomendadas**: cualquier GPU con al menos 4 GB de VRAM (GTX 1060, RTX 2060, etc.) para ejecutar GPT-2 pequeño y el denoiser. Para experimentos con GPT-2 medio o grande, se requeriría más memoria.
 - **Compatibilidad con GPU consumer**: sí, dado el tamaño reducido del modelo base.
-- **Opciones de despliegue**: al ser un artefacto de investigación, no se especifican integraciones con vLLM, Ollama o llama.cpp. El uso típico sería mediante PyTorch y las librerías de HuggingFace Transformers.
+- **Opciones de despliegue**: al ser un artefacto de investigación, no se especifican integraciones con vLLM, Ollama o llama.cpp. El uso típico sería mediante PyTorch y las librerías de Hugging Face Transformers.
 - **Latencia y throughput**: no disponibles.
 
 ## Comparativa con modelos similares
@@ -78,8 +78,8 @@ La comparación directa con otros modelos no es posible por falta de datos públ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/twwist/gpt2-steering-denoisers
+- Modelo en Hugging Face: https://huggingface.co/twwist/gpt2-steering-denoisers
 - Modelo relacionado `borisgg/steering-denoiser-gpt2`: https://huggingface.co/borisgg/steering-denoiser-gpt2
-- Lista de modelos de activation steering en HuggingFace: https://huggingface.co/models?other=activation-steering
+- Lista de modelos de activation steering en Hugging Face: https://huggingface.co/models?other=activation-steering
 - Notebook de demostración de steering (38C3): https://colab.research.google.com/github/canrager/steering_38c3/blob/main/steering_demo.ipynb
 - Proyecto NeuroTrace (GPT-2 Small Residual Attack & Defence): https://discuss.huggingface.co/t/neurotrace-gpt-2-small-residual-attack-defence-framework-ioi-task/170688

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una implementación de DistilBERT fine-tuneada para respuesta a preguntas (question answering) extraídas del dataset SQuAD v1.1. Ha sido desarrollado por el usuario bnewmiller como una réplica del modelo "DistilBERT (D)" descrito en la Tabla 2 del paper "DistilBERT, a distilled version of BERT". El objetivo es validar la técnica de destilación en dos pasos, en la que un estudiante DistilBERT se entrena con la ayuda de un profesor BERT que ya ha sido fine-tuneado en la misma tarea. El modelo está disponible en HuggingFace bajo licencia Apache 2.0 y está pensado para el pipeline de question-answering en inglés. Su tamaño compacto (el repositorio ocupa 0.3 GB) lo hace adecuado para entornos con recursos limitados.
+Este modelo es una implementación de DistilBERT fine-tuneada para respuesta a preguntas (question answering) extraídas del dataset SQuAD v1.1. Ha sido desarrollado por el usuario bnewmiller como una réplica del modelo "DistilBERT (D)" descrito en la Tabla 2 del paper "DistilBERT, a distilled version of BERT". El objetivo es validar la técnica de destilación en dos pasos, en la que un estudiante DistilBERT se entrena con la ayuda de un profesor BERT que ya ha sido fine-tuneado en la misma tarea. El modelo está disponible en Hugging Face bajo licencia Apache 2.0 y está pensado para el pipeline de question-answering en inglés. Su tamaño compacto (el repositorio ocupa 0.3 GB) lo hace adecuado para entornos con recursos limitados.
 
 ## Especificaciones técnicas
 
@@ -27,7 +27,7 @@ Arquitectura: DistilBERT, un modelo transformer basado en BERT con una capa de c
 - Fine-tuning en SQuAD v1.1, el estándar de referencia para QA extractivo.
 - No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión o audio.
 - Multilingüe: solo inglés (según la metadata y el model card).
-- El repositorio ocupa 0.3 GB en HuggingFace, lo que refleja un tamaño de pesos pequeño en comparación con modelos BERT completos.
+- El repositorio ocupa 0.3 GB en Hugging Face, lo que refleja un tamaño de pesos pequeño en comparación con modelos BERT completos.
 
 ## Casos de uso
 
@@ -57,7 +57,7 @@ Los resultados se calcularon con la métrica `squad` de la librería `datasets`.
 - Opciones de despliegue: no disponible.
 - Latencia y throughput estimados: no disponible.
 
-El repositorio de HuggingFace ocupa 0.3 GB, lo que puede servir como referencia del espacio requerido para almacenar los pesos, pero no se indican requisitos de VRAM ni recomendaciones de hardware en la información disponible.
+El repositorio de Hugging Face ocupa 0.3 GB, lo que puede servir como referencia del espacio requerido para almacenar los pesos, pero no se indican requisitos de VRAM ni recomendaciones de hardware en la información disponible.
 
 ## Comparativa con modelos similares
 
@@ -71,11 +71,11 @@ No se dispone en la información proporcionada de datos de modelos comparables d
 - El dominio de entrenamiento es SQuAD v1.1, lo que puede limitar su rendimiento en preguntas ambiguas o dominios específicos no cubiertos.
 - La model card no incluye evaluación de sesgos ni de robustez, por lo que no se conocen sesgos específicos más allá de los heredados del dataset y del modelo base.
 - Riesgo de alucinación si se usa sin contexto suficiente o con pasajes irrelevantes.
-- Ha recibido 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido ampliamente validado por la comunidad.
+- Ha recibido 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido ampliamente validado por la comunidad.
 - Licencia Apache 2.0: permite uso comercial con atribución, pero no se especifican restricciones adicionales de uso.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bnewmiller/distilbert-base-uncased-finetuned-squad-d5716d28
+- Hugging Face: https://huggingface.co/bnewmiller/distilbert-base-uncased-finetuned-squad-d5716d28
 - Paper de DistilBERT: https://arxiv.org/pdf/1910.01108.pdf
 - Dataset SQuAD (referencia en el model card): https://huggingface.co/datasets/squad

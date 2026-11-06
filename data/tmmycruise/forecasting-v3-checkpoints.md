@@ -80,5 +80,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tmmycruise/forecasting-v3-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/tmmycruise/forecasting-v3-checkpoints
 - No se encontraron otros enlaces (papers, blogs, repositorios adicionales) en la información proporcionada.

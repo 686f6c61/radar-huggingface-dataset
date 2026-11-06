@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo directo con otros modelos TTS 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/sharrnah/IndexTTS-2.5-German
+- Repositorio Hugging Face del modelo: https://huggingface.co/sharrnah/IndexTTS-2.5-German
 - Modelo base IndexTTS-2.5: https://huggingface.co/IndexTeam/IndexTTS-2.5
 - Repositorio oficial de IndexTTS: https://github.com/index-tts/index-tts
 - Informe técnico de IndexTTS 2.5 (arXiv): https://arxiv.org/html/2601.03888

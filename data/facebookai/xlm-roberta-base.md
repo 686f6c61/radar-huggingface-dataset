@@ -6,7 +6,7 @@ XLM-RoBERTa (base) es un modelo de lenguaje multilingüe desarrollado por Facebo
 
 El modelo resuelve el problema de disponer de una base lingüística común para tareas de comprensión del lenguaje en decenas de idiomas sin necesidad de entrenar un modelo por idioma. Se preentrena con el objetivo de Masked Language Modeling (MLM), enmascarando el 15 % de los tokens de entrada, lo que le permite aprender representaciones bidireccionales del contexto. Su uso previsto es el ajuste fino posterior sobre tareas discriminativas (clasificación de secuencias, etiquetado de tokens, question answering extractivo) además del uso directo como extractor de características.
 
-Su relevancia actual radica en que sigue siendo una de las bases de referencia para NLP multilingüe, con más de 22 millones de descargas en HuggingFace, licencia MIT y compatibilidad con prácticamente todos los frameworks de despliegue (PyTorch, TensorFlow, JAX, ONNX). Es el punto de partida habitual para tareas cross-lingual en idiomas con pocos recursos.
+Su relevancia actual radica en que sigue siendo una de las bases de referencia para NLP multilingüe, con más de 22 millones de descargas en Hugging Face, licencia MIT y compatibilidad con prácticamente todos los frameworks de despliegue (PyTorch, TensorFlow, JAX, ONNX). Es el punto de partida habitual para tareas cross-lingual en idiomas con pocos recursos.
 
 ## Especificaciones tecnicas
 
@@ -81,12 +81,12 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 - Longitud de contexto limitada (no indicada en la informacion proporcionada); los textos largos deben truncarse o dividirse.
 - Cobertura desigual entre los 100 idiomas: el rendimiento depende en gran medida del volumen de datos disponibles por idioma.
 - Licencia MIT: permite uso comercial y modificación, pero no se ofrece ninguna garantía por parte de los autores.
-- Modelo card original escrita por el equipo de HuggingFace y no por los autores del trabajo, por lo que algunos detalles pueden no estar verificados por el equipo de Facebook AI.
+- Modelo card original escrita por el equipo de Hugging Face y no por los autores del trabajo, por lo que algunos detalles pueden no estar verificados por el equipo de Facebook AI.
 - Para tareas de generación se recomienda acudir a modelos autorregresivos (por ejemplo, la familia GPT), como indica la propia model card.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FacebookAI/xlm-roberta-base
+- Modelo en Hugging Face: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Paper: https://arxiv.org/abs/1911.02116
 - Repositorio original (fairseq): https://github.com/pytorch/fairseq/tree/master/examples/xlmr
 - Modelos ajustados de XLM-RoBERTa en el Hub: https://huggingface.co/models?search=xlm-roberta

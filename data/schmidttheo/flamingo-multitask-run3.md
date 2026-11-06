@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`schmidttheo/flamingo-multitask-run3` es un repositorio experimental publicado en HuggingFace que contiene un esqueleto de implementación de la arquitectura Flamingo orientado a experimentos multitarea. Lo firma el usuario `schmidttheo` y su propósito declarado no es ofrecer un modelo utilizable, sino servir de base inspeccionable antes de lanzar un entrenamiento completo. El propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe presentarse como un modelo entrenado ni evaluado.
+`schmidttheo/flamingo-multitask-run3` es un repositorio experimental publicado en Hugging Face que contiene un esqueleto de implementación de la arquitectura Flamingo orientado a experimentos multitarea. Lo firma el usuario `schmidttheo` y su propósito declarado no es ofrecer un modelo utilizable, sino servir de base inspeccionable antes de lanzar un entrenamiento completo. El propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe presentarse como un modelo entrenado ni evaluado.
 
 La configuración publicada describe una arquitectura Flamingo a escala "base", con atención linear, fusión con puertas (gated fusion), activación mish y normalización rmsnorm. El recuento de parámetros registrado en los metadatos de safetensors es de 16.576, una cifra coherente con un artefacto de inicialización mínima y no con un modelo de producción. La receta de experimento por defecto usa el optimizador AdamW con un schedule de tipo step.
 
@@ -92,6 +92,6 @@ La comparacion relevante no es de rendimiento, ya que este repositorio no aporta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/schmidttheo/flamingo-multitask-run3
+- Modelo en Hugging Face: https://huggingface.co/schmidttheo/flamingo-multitask-run3
 - Ficheros incluidos en el repositorio: `run.py` (artefacto principal), `README.md`, `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicialización).
 - Paper, blog, repositorio de código o demo adicionales: no disponibles. Las búsquedas web realizadas no devolvieron ningún enlace relacionado con este modelo.

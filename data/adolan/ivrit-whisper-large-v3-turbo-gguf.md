@@ -90,7 +90,7 @@ La comparativa se limita a estos tres artefactos porque la informacion proporcio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/adolan/ivrit-whisper-large-v3-turbo-gguf
+- Repositorio Hugging Face: https://huggingface.co/adolan/ivrit-whisper-large-v3-turbo-gguf
 - Modelo base de ivrit.ai: https://huggingface.co/ivrit-ai/whisper-large-v3-turbo
 - Whisper large-v3-turbo de OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo
 - Codigo de entrenamiento de ivrit.ai: https://github.com/ivrit-ai/asr-training

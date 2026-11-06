@@ -27,7 +27,7 @@ Requiere descargar aparte el modelo base upstream y el adaptador padre supervisa
 | Modelo de recompensa | laion/humaneness-ears-base-medium, revisión `818506970d93c809a3295a0a02c40dee8ff2bfc3` |
 | Hardware de entrenamiento | 4 GPU NVIDIA GH200, con 4 candidatos por GPU y gradientes sincronizados |
 | Tamaño del repositorio | 0,5 GB |
-| Descargas / likes | 0 descargas, 0 likes en HuggingFace en la fecha de consulta |
+| Descargas / likes | 0 descargas, 0 likes en Hugging Face en la fecha de consulta |
 
 ## Arquitectura y entrenamiento
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| laion/chatterbox-s3gen-vc-grow-ce-speaker | Adaptador LoRA de conversión de voz sobre S3Gen, con recompensa de hablante objetivo | no disponible | no disponible | CC BY 4.0 (pesos LAION); upstream MIT | HuggingFace, 0 descargas, 0 likes | Continuación RL del adaptador v1 en el paso 4.000; requiere adaptador padre y upstream |
-| laion/chatterbox-s3gen-vc-grow | Adaptador padre supervisado/v1 RL de 300 horas | no disponible | no disponible | CC BY 4.0 (según la model card del adaptador derivado) | HuggingFace | Proporciona `checkpoints/base_300h_adapter.safetensors`; es el punto de partida obligatorio |
-| ResembleAI/chatterbox | Modelo base TTS y decodificador S3Gen | no disponible | no disponible | MIT | HuggingFace, revisión fijada `5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18` | Aporta los pesos S3Gen y los componentes congelados; no incluye la conversión de voz |
+| laion/chatterbox-s3gen-vc-grow-ce-speaker | Adaptador LoRA de conversión de voz sobre S3Gen, con recompensa de hablante objetivo | no disponible | no disponible | CC BY 4.0 (pesos LAION); upstream MIT | Hugging Face, 0 descargas, 0 likes | Continuación RL del adaptador v1 en el paso 4.000; requiere adaptador padre y upstream |
+| laion/chatterbox-s3gen-vc-grow | Adaptador padre supervisado/v1 RL de 300 horas | no disponible | no disponible | CC BY 4.0 (según la model card del adaptador derivado) | Hugging Face | Proporciona `checkpoints/base_300h_adapter.safetensors`; es el punto de partida obligatorio |
+| ResembleAI/chatterbox | Modelo base TTS y decodificador S3Gen | no disponible | no disponible | MIT | Hugging Face, revisión fijada `5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18` | Aporta los pesos S3Gen y los componentes congelados; no incluye la conversión de voz |
 
 No se dispone de información sobre otros modelos comparables de conversión de voz en la documentación proporcionada.
 
@@ -91,12 +91,12 @@ No se dispone de información sobre otros modelos comparables de conversión de 
 - La inferencia no es un pipeline de un solo comando para WAV arbitrario: funciona con filas Parquet preparadas y requiere el orden de puntuaciones y la preparación documentados en `TRAINING.md`.
 - Los checkpoints `.pt` usan pickle e incluyen estado del optimizador y RNG; solo deben cargarse archivos de confianza y con procedencia verificada.
 - Licencia: los pesos, código y documentación de LAION son CC BY 4.0; la dependencia upstream Chatterbox conserva su licencia MIT y su atribución. Solo deben usarse voces y audios sobre los que se tengan derechos.
-- Estado de investigación: el modelo está etiquetado como `work-in-progress`, con 0 descargas y 0 likes en HuggingFace en la fecha de consulta, y no se documentan usos en producción.
+- Estado de investigación: el modelo está etiquetado como `work-in-progress`, con 0 descargas y 0 likes en Hugging Face en la fecha de consulta, y no se documentan usos en producción.
 - No se dispone de datos sobre sesgos, idiomas soportados, cuantizaciones, latencia o throughput.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/chatterbox-s3gen-vc-grow-ce-speaker
+- Modelo en Hugging Face: https://huggingface.co/laion/chatterbox-s3gen-vc-grow-ce-speaker
 - Modelo base upstream: https://huggingface.co/ResembleAI/chatterbox
 - Revisión fijada del upstream: https://huggingface.co/ResembleAI/chatterbox/tree/5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18
 - Adaptador padre v1: https://huggingface.co/laion/chatterbox-s3gen-vc-grow

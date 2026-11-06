@@ -77,6 +77,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace: The-CoLab/llama3-7b-en2-en1-134k](https://huggingface.co/The-CoLab/llama3-7b-en2-en1-134k)
+- [Hugging Face: The-CoLab/llama3-7b-en2-en1-134k](https://huggingface.co/The-CoLab/llama3-7b-en2-en1-134k)
 - [Versión con embeddings en2: The-CoLab/llama3-7b-en1-en2-134k](https://huggingface.co/The-CoLab/llama3-7b-en1-en2-134k)
 - [Colección multilingual-transfer de The-CoLab](https://huggingface.co/collections/The-CoLab/multilingual-transfer-6a2d2b4019d4300f61a444a8)

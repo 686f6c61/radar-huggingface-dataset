@@ -84,7 +84,7 @@ La comparacion con Llama Guard y ShieldGemma es categorica (clasificadores de se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aytsrndl/constitutional-classifiers-repro
+- Hugging Face: https://huggingface.co/aytsrndl/constitutional-classifiers-repro
 - Paper de referencia: https://arxiv.org/abs/2501.18837
 - Dataset de BeaverTails: https://huggingface.co/datasets/PKU-Alignment/BeaverTails
 - Dataset OR-Bench-80k: https://huggingface.co/datasets/bench-llm/or-bench

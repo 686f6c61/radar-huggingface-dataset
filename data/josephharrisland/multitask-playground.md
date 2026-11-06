@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`josephharrisland/multitask-playground` es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia de una arquitectura Poolformer orientada a aprendizaje multitarea. El autor lo describe explicitamente como un banco de pruebas: el objetivo declarado es mantener una configuracion "base" lo bastante manejable como para inspeccionar los cambios de arquitectura antes de lanzar un entrenamiento completo. No es un modelo entrenado ni un checkpoint con resultados de referencia.
+`josephharrisland/multitask-playground` es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia de una arquitectura Poolformer orientada a aprendizaje multitarea. El autor lo describe explicitamente como un banco de pruebas: el objetivo declarado es mantener una configuracion "base" lo bastante manejable como para inspeccionar los cambios de arquitectura antes de lanzar un entrenamiento completo. No es un modelo entrenado ni un checkpoint con resultados de referencia.
 
 El repositorio incluye el codigo Python con la definicion del modelo y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que, segun el propio autor, es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y no un modelo entrenado. El recuento real de parametros del fichero safetensors es de 24.832, una cifra extremadamente baja que confirma el caracter de inicializacion minima del artefacto.
 
@@ -84,7 +84,7 @@ La informacion proporcionada no incluye cifras de modelos comparables, por lo qu
 
 | Modelo | Arquitectura | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| multitask-playground (este repositorio) | Poolformer con atencion dilatada y cross-attention | 24.832 | no disponible | no | Apache 2.0 | HuggingFace, implementacion a medida |
+| multitask-playground (este repositorio) | Poolformer con atencion dilatada y cross-attention | 24.832 | no disponible | no | Apache 2.0 | Hugging Face, implementacion a medida |
 | PoolFormer / MetaFormer (linea original de la literatura) | Poolformer | no disponible en la informacion proporcionada | no disponible | si, en tareas de vision | no disponible en la informacion proporcionada | publicaciones y repositorios academicos |
 | Otros backbones ligeros de vision (por ejemplo, variantes tipo ResMLP o MLP-Mixer) | MLP mixer / sin atencion | no disponible en la informacion proporcionada | no disponible | si, en tareas de vision | no disponible en la informacion proporcionada | publicaciones y repositorios academicos |
 
@@ -96,14 +96,14 @@ La conclusion practica es que este repositorio no compite con otros modelos: es 
 - No ha sido auditado en robustez, equidad (fairness) ni transferencia de dominio, tal como reconoce la propia model card.
 - Riesgo de alucinacion: no aplica en el sentido de un LLM, porque el modelo no genera lenguaje, pero existe un riesgo equivalente de conclusiones invalidas si se publican resultados atribuidos a un modelo que nunca se entreno.
 - Sin datos de rendimiento, sesgos, idiomas ni contexto: no hay informacion para estimar comportamiento en produccion.
-- Implementacion a medida: las APIs de carga automatica de HuggingFace requieren un adaptador explicito, lo que anade trabajo de integracion y riesgo de errores de serializacion.
+- Implementacion a medida: las APIs de carga automatica de Hugging Face requieren un adaptador explicito, lo que anade trabajo de integracion y riesgo de errores de serializacion.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero la model card advierte de que los terminos de los datos de origen deben revisarse por separado si se usa el repositorio con datasets externos.
 - Trazabilidad de resultados: cualquier resultado derivado de un checkpoint entrenado por el usuario debe documentarse de forma separada a los valores por defecto del repositorio, junto con los logs de entrenamiento y las versiones de entorno.
 - Metadatos de la busqueda web no relevantes: las consultas realizadas no devolvieron ninguna fuente tecnica sobre este modelo, por lo que no hay verificacion externa de su contenido.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/josephharrisland/multitask-playground
+- Repositorio en Hugging Face: https://huggingface.co/josephharrisland/multitask-playground
 - Ficheros incluidos en el repositorio: `eval.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper de referencia de la arquitectura Poolformer / MetaFormer: no disponible en la informacion proporcionada
 - Repositorios oficiales de Poolformer o MetaFormer: no disponible en la informacion proporcionada

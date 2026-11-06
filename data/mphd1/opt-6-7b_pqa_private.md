@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mphd1/opt-6.7b_pqa_private` es un ajuste fino (fine-tune) del modelo `facebook/opt-6.7b` publicado por el usuario `mphd1` en HuggingFace. Se trata de un transformer decoder-only denso de 6.658.473.984 parametros (aproximadamente 6,66 mil millones), entrenado con la libreria Transformers y la clase `Trainer`, y distribuido en formato safetensors. La model card ha sido generada automaticamente por la herramienta de entrenamiento y no incluye descripcion del modelo, del dataset ni de los usos previstos: literalmente indica "More information needed" en todas las secciones descriptivas.
+`mphd1/opt-6.7b_pqa_private` es un ajuste fino (fine-tune) del modelo `facebook/opt-6.7b` publicado por el usuario `mphd1` en Hugging Face. Se trata de un transformer decoder-only denso de 6.658.473.984 parametros (aproximadamente 6,66 mil millones), entrenado con la libreria Transformers y la clase `Trainer`, y distribuido en formato safetensors. La model card ha sido generada automaticamente por la herramienta de entrenamiento y no incluye descripcion del modelo, del dataset ni de los usos previstos: literalmente indica "More information needed" en todas las secciones descriptivas.
 
 El modelo parte de la arquitectura OPT, una familia de transformers autoregresivos publicada originalmente por Meta AI, por lo que hereda las caracteristicas del modelo base: contexto de 2.048 tokens, tokenizador GPT-2 BPE y un enfoque de generacion de texto puro, sin capacidades multimodales ni tool calling nativo. El ajuste fino se realizo con un learning rate de 1e-05, batch size de 8, optimizador `paged_adamw_8bit`, scheduler coseno y 10 epocas sobre un dataset no identificado.
 
@@ -19,7 +19,7 @@ Su relevancia practica es limitada y muy acotada: cuenta con 0 descargas y 0 lik
 | Tipos de cuantizacion | No disponible en la model card; pesos publicados en safetensors (repo de 26,6 GB, consistente con fp32) |
 | Idiomas soportados | No disponible |
 | Licencia | `other` (no especificada; el modelo base se distribuye bajo la OPT-175B License Agreement) |
-| Formato de pesos | safetensors (tag de HuggingFace) |
+| Formato de pesos | safetensors (tag de Hugging Face) |
 | Libreria | transformers |
 | Pipeline | text-generation |
 | Modelo base | `facebook/opt-6.7b` |
@@ -79,10 +79,10 @@ No hay datos de MMLU, HumanEval, GSM8K, ARC ni de ninguna otra evaluacion, ni co
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| opt-6.7b_pqa_private | 6,66 B | 2.048 tokens (heredado) | `other` (no especificada) | No | HuggingFace, 0 descargas |
-| facebook/opt-6.7b | 6,66 B | 2.048 tokens | OPT-175B License Agreement | Si, en la model card original | HuggingFace, ampliamente usado |
-| Mistral 7B v0.1 | 7,24 B | 8.192 tokens | Apache 2.0 | Si | HuggingFace y multiples proveedores |
-| Llama 3.1 8B | 8,03 B | 131.072 tokens | Llama 3.1 Community License | Si | HuggingFace y multiples proveedores |
+| opt-6.7b_pqa_private | 6,66 B | 2.048 tokens (heredado) | `other` (no especificada) | No | Hugging Face, 0 descargas |
+| facebook/opt-6.7b | 6,66 B | 2.048 tokens | OPT-175B License Agreement | Si, en la model card original | Hugging Face, ampliamente usado |
+| Mistral 7B v0.1 | 7,24 B | 8.192 tokens | Apache 2.0 | Si | Hugging Face y multiples proveedores |
+| Llama 3.1 8B | 8,03 B | 131.072 tokens | Llama 3.1 Community License | Si | Hugging Face y multiples proveedores |
 
 Frente al modelo base, este ajuste no documenta ninguna mejora medible y anade opacidad sobre el dataset. Frente a Mistral 7B o Llama 3.1 8B, queda por detras en longitud de contexto, claridad de licencia y disponibilidad de evaluaciones, aunque el numero de parametros sea comparable. No se dispone de datos de benchmark que permitan una comparacion cuantitativa de calidad.
 
@@ -102,7 +102,7 @@ Frente al modelo base, este ajuste no documenta ninguna mejora medible y anade o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mphd1/opt-6.7b_pqa_private
+- Modelo en Hugging Face: https://huggingface.co/mphd1/opt-6.7b_pqa_private
 - Modelo base: https://huggingface.co/facebook/opt-6.7b
 - Paper de la familia OPT (referencia del modelo base): https://arxiv.org/abs/2205.01068
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos especificos de este ajuste.

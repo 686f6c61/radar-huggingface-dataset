@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cumshotgibridmmh8888 es un adaptador LoRA de generacion de imagenes a partir de texto (text-to-image), publicado en HuggingFace por el usuario 98sd7fc9sdf bajo la libreria diffusers. Se trata, por tanto, de un ajuste fino de bajo rango que no constituye un modelo completo, sino un complemento que debe cargarse sobre un modelo base; en este caso, el autor declara como base `ponpoke/flux2-klein-9b-uncensored-text-encoder`. El repositorio ocupa 0,3 GB y se publico el 12 de septiembre de 2026, sin descargas ni likes registrados en el momento de la consulta.
+cumshotgibridmmh8888 es un adaptador LoRA de generacion de imagenes a partir de texto (text-to-image), publicado en Hugging Face por el usuario 98sd7fc9sdf bajo la libreria diffusers. Se trata, por tanto, de un ajuste fino de bajo rango que no constituye un modelo completo, sino un complemento que debe cargarse sobre un modelo base; en este caso, el autor declara como base `ponpoke/flux2-klein-9b-uncensored-text-encoder`. El repositorio ocupa 0,3 GB y se publico el 12 de septiembre de 2026, sin descargas ni likes registrados en el momento de la consulta.
 
 La relevancia de esta ficha es limitada desde el punto de vista tecnico: la model card es practicamente vacia (solo incluye una etiqueta de galeria sin contenido y un enlace de descarga), no se especifica licencia, no se documentan datos de entrenamiento ni se aportan ejemplos de uso salvo un `instance_prompt` nulo y una imagen de referencia no accesible. El nombre del repositorio y la naturaleza "uncensored" del modelo base apuntan a contenido para adultos, lo que condiciona su uso en entornos profesionales.
 
@@ -66,7 +66,7 @@ No disponible. No se han identificado en la informacion proporcionada adaptadore
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cumshotgibridmmh8888 | no disponible | no aplica | no disponible | unknown | HuggingFace |
+| cumshotgibridmmh8888 | no disponible | no aplica | no disponible | unknown | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No disponible. No se han identificado en la informacion proporcionada adaptadore
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/98sd7fc9sdf/cumshotgibridmmh8888
+- Modelo en Hugging Face: https://huggingface.co/98sd7fc9sdf/cumshotgibridmmh8888
 - Modelo base declarado: https://huggingface.co/ponpoke/flux2-klein-9b-uncensored-text-encoder
 - Repositorio de diffusers: https://github.com/huggingface/diffusers
 - Resultados de busqueda web: los resultados proporcionados (Semrush, HumanizeAI, Birdeye, HostAdvice, Nick Lafferty) tratan sobre herramientas de visibilidad en buscadores de IA y no guardan relacion con este modelo; no se han encontrado enlaces relevantes adicionales (paper, blog, repositorio o demo) en la informacion disponible.

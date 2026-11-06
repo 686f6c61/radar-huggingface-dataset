@@ -2,7 +2,7 @@
 
 ## Resumen
 
-StatePlay-KOF98-MoT-5B-step1250 es un modelo experimental de generación de vídeo condicionado por acciones, construido como un world model de estado implícito sobre el DiT de Wan2.2-TI2V-5B. Lo publica el usuario xixibuxixi en HuggingFace y está entrenado específicamente sobre grabaciones y secuencias de botones del videojuego The King of Fighters '98. El objetivo es predecir el siguiente estado visual del juego a partir de un fotograma inicial, un prompt textual y una secuencia de acciones discretas (UP, DOWN, LEFT, RIGHT, Y, X, Z, A, B, C, D), lo que lo sitúa en la categoría de action-conditioned video generation aplicada a entornos de juego.
+StatePlay-KOF98-MoT-5B-step1250 es un modelo experimental de generación de vídeo condicionado por acciones, construido como un world model de estado implícito sobre el DiT de Wan2.2-TI2V-5B. Lo publica el usuario xixibuxixi en Hugging Face y está entrenado específicamente sobre grabaciones y secuencias de botones del videojuego The King of Fighters '98. El objetivo es predecir el siguiente estado visual del juego a partir de un fotograma inicial, un prompt textual y una secuencia de acciones discretas (UP, DOWN, LEFT, RIGHT, Y, X, Z, A, B, C, D), lo que lo sitúa en la categoría de action-conditioned video generation aplicada a entornos de juego.
 
 Arquitectónicamente es un transformer de difusión (DiT) de 30 capas y aproximadamente 5,1B parámetros, derivado del modelo Wan2.2-TI2V-5B de Alibaba, con un tokenizador de transiciones entrenado en una primera fase que genera los objetivos de entrenamiento y una rama de estado latente implícito (`use_latent_state=True`, `use_explicit_state=False`). El entrenamiento se dividió en dos etapas: 350 pasos de continuación del tokenizador de transiciones y 1.250 pasos de fine-tuning completo del DiT, con batch global de 128 sobre 16 GPUs en BF16.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Contexto / salida | Condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | StatePlay-KOF98-MoT-5B-step1250 | ~5,1B (DiT) | 97 frames, 832×480, 20 fps | Imagen + texto + acciones discretas | apache-2.0 | Pesos completos en HF (repo 10,2 GB) |
-| Wan2.2-TI2V-5B (base) | ~5B | image-to-video de propósito general | Imagen + texto | no disponible en la información | HuggingFace (Wan-AI) |
+| Wan2.2-TI2V-5B (base) | ~5B | image-to-video de propósito general | Imagen + texto | no disponible en la información | Hugging Face (Wan-AI) |
 | StatePlay (proyecto original) | no disponible | no disponible | Estado implícito + acciones | no disponible en la información | GitHub (Jimntu/StatePlay) |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de los modelos comparables en la información proporcionada, por lo que la comparación se limita a parámetros, condicionamiento y licencia.
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xixibuxixi/StatePlay-KOF98-MoT-5B-step1250
+- Modelo en Hugging Face: https://huggingface.co/xixibuxixi/StatePlay-KOF98-MoT-5B-step1250
 - Modelo base Wan2.2-TI2V-5B: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Proyecto StatePlay (GitHub): https://github.com/Jimntu/StatePlay
 - Dataset KOF98: https://huggingface.co/datasets/lupele/kof98

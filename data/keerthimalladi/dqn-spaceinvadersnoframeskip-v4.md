@@ -25,10 +25,10 @@ El modelo se basa en un agente Deep Q-Network (DQN) con una política de tipo `C
 
 - Jugabilidad competente en `SpaceInvadersNoFrameskip-v4`, con una recompensa media declarada de 619,50 ± 186,18.
 - Integración directa con el ecosistema de `stable-baselines3` y `RL Zoo`, lo que facilita la carga y ejecución con comandos predefinidos.
-- Soporte de carga desde HuggingFace mediante `rl_zoo3.load_from_hub` y ejecución con `rl_zoo3.enjoy`.
+- Soporte de carga desde Hugging Face mediante `rl_zoo3.load_from_hub` y ejecución con `rl_zoo3.enjoy`.
 - Almacenamiento de los pesos en un formato compatible con `stable-baselines3` para su reutilización en nuevos entrenamientos.
 - Capacidad de reproducción de experimentos gracias a la publicación de los hiperparámetros exactos.
-- Pipeline de HuggingFace categorizado como `reinforcement-learning`.
+- Pipeline de Hugging Face categorizado como `reinforcement-learning`.
 - No incluye capacidades de generación de texto, tool calling, visión multimodal ni soporte de agentes conversacionales, al tratarse de un modelo de control para un entorno de Atari.
 
 ## Casos de uso
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks adicionales en la información disp
 
 ## Comparativa con modelos similares
 
-Existen otros agentes DQN publicados en HuggingFace para el mismo entorno `SpaceInvadersNoFrameskip-v4`, como los de los usuarios `srujanamamillapalli` y `jaymanvirk`. Sin embargo, no se dispone de datos de rendimiento ni de configuración para estos modelos en la información proporcionada, por lo que no es posible realizar una comparativa cuantitativa. No se aportan métricas alternativas verificables.
+Existen otros agentes DQN publicados en Hugging Face para el mismo entorno `SpaceInvadersNoFrameskip-v4`, como los de los usuarios `srujanamamillapalli` y `jaymanvirk`. Sin embargo, no se dispone de datos de rendimiento ni de configuración para estos modelos en la información proporcionada, por lo que no es posible realizar una comparativa cuantitativa. No se aportan métricas alternativas verificables.
 
 ## Limitaciones y advertencias
 
@@ -73,6 +73,6 @@ Existen otros agentes DQN publicados en HuggingFace para el mismo entorno `Space
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/keerthimalladi/dqn-SpaceInvadersNoFrameskip-v4](https://huggingface.co/keerthimalladi/dqn-SpaceInvadersNoFrameskip-v4)
+- Hugging Face: [https://huggingface.co/keerthimalladi/dqn-SpaceInvadersNoFrameskip-v4](https://huggingface.co/keerthimalladi/dqn-SpaceInvadersNoFrameskip-v4)
 - RL Zoo (rl-baselines3-zoo): [https://github.com/DLR-RM/rl-baselines3-zoo](https://github.com/DLR-RM/rl-baselines3-zoo)
 - Stable Baselines3: [https://github.com/DLR-RM/stable-baselines3](https://github.com/DLR-RM/stable-baselines3)

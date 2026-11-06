@@ -98,11 +98,11 @@ La única comparación directa con datos numéricos disponible en la informació
 - Sesgos: no se ha publicado ninguna evaluación de sesgos, toxicidad o sesgos de representación en la información disponible.
 - Coste computacional: la ventana de generación de 32.768 tokens nuevos, necesaria para reproducir las evaluaciones, eleva mucho el coste por consulta frente a modelos instruct convencionales.
 - Licencia: Apache-2.0 permite uso comercial, modificación y redistribución, pero el repositorio consultado (`mhseo2/Qwen3-4B-OT3-2ep-opd`) es un espejo de terceros del checkpoint oficial `MMOPD/Qwen3-4B-OT3-2ep`, con 0 descargas y 0 *likes*; para producción conviene verificar la integridad de los pesos contra el repositorio original.
-- Metadatos anómalos: la fecha de creación registrada en HuggingFace es 2026-10-16, posterior a la de la mayoría de checkpoints de la familia; conviene contrastarla con el repositorio oficial antes de fijar una versión.
+- Metadatos anómalos: la fecha de creación registrada en Hugging Face es 2026-10-16, posterior a la de la mayoría de checkpoints de la familia; conviene contrastarla con el repositorio oficial antes de fijar una versión.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/mhseo2/Qwen3-4B-OT3-2ep-opd
+- Repositorio de Hugging Face: https://huggingface.co/mhseo2/Qwen3-4B-OT3-2ep-opd
 - Repositorio oficial referenciado en la model card: https://huggingface.co/MMOPD/Qwen3-4B-OT3-2ep
 - Checkpoint de 1 época: https://huggingface.co/MMOPD/Qwen3-4B-OT3-1ep
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base

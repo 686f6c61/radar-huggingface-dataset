@@ -83,9 +83,9 @@ La informacion proporcionada no incluye datos verificables de modelos alternativ
 
 | Modelo | Relacion | Parametros | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Swift-Qwen3.8-27b-GGUF | Este modelo (cuantizado por mradermacher) | 27,3 B | GGUF (Q2_K a Q8_0) + mmproj | swift-open-license-1.0 | HuggingFace |
-| ukisai/Swift-Qwen3.8-27b | Modelo base (adaptador LoRA) | 27,3 B | safetensors (transformers) | swift-open-license-1.0 | HuggingFace |
-| mradermacher/Swift-Qwen3.8-27b-i1-GGUF | Mismas cuantizaciones con imatrix/weighted | 27,3 B | GGUF | swift-open-license-1.0 | HuggingFace |
+| mradermacher/Swift-Qwen3.8-27b-GGUF | Este modelo (cuantizado por mradermacher) | 27,3 B | GGUF (Q2_K a Q8_0) + mmproj | swift-open-license-1.0 | Hugging Face |
+| ukisai/Swift-Qwen3.8-27b | Modelo base (adaptador LoRA) | 27,3 B | safetensors (transformers) | swift-open-license-1.0 | Hugging Face |
+| mradermacher/Swift-Qwen3.8-27b-i1-GGUF | Mismas cuantizaciones con imatrix/weighted | 27,3 B | GGUF | swift-open-license-1.0 | Hugging Face |
 
 Comparativas con otros modelos de la misma categoria (por ejemplo, alternativas densas de 27-32 B de parametros de otras familias): no disponibles en la informacion proporcionada.
 
@@ -100,11 +100,11 @@ Comparativas con otros modelos de la misma categoria (por ejemplo, alternativas 
 - Reputacion del repositorio: 0 descargas y 0 likes en el momento de la consulta, y ninguna validacion de terceros. Es un artefacto recien publicado (creado el 12 de septiembre de 2026) sin adopcion constatada.
 - Cuantizaciones de baja calidad: el propio autor advierte que Q3_K_M es de calidad inferior y que las variantes IQ suelen superar a las no-IQ de tamano similar. Para produccion, no se recomienda bajar de Q4_K_S.
 - Uso del proyector multimodal: los ficheros `mmproj` requieren un runtime que soporte el pipeline multimodal correspondiente; no todos los frontends de GGUF lo implementan.
-- Resultados de busqueda web: las consultas realizadas no devolvieron informacion tecnica relevante sobre el modelo (unicamente enlaces genericos no relacionados), por lo que esta ficha se basa exclusivamente en los metadatos de HuggingFace y en la model card del repositorio.
+- Resultados de busqueda web: las consultas realizadas no devolvieron informacion tecnica relevante sobre el modelo (unicamente enlaces genericos no relacionados), por lo que esta ficha se basa exclusivamente en los metadatos de Hugging Face y en la model card del repositorio.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Swift-Qwen3.8-27b-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Swift-Qwen3.8-27b-GGUF
 - Modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Swift-Qwen3.8-27b-i1-GGUF
 - Pagina resumen del modelo con lista de descargas: https://hf.tst.eu/model#Swift-Qwen3.8-27b-GGUF

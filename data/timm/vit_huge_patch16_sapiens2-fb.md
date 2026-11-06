@@ -80,7 +80,7 @@ No se dispone de métricas de rendimiento (benchmarks) para ninguno de estos mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/vit_huge_patch16_sapiens2.fb
+- Modelo en Hugging Face: https://huggingface.co/timm/vit_huge_patch16_sapiens2.fb
 - Modelo original de Meta: https://huggingface.co/facebook/sapiens2-pretrain-0.8b
 - Paper: https://arxiv.org/pdf/2604.21681
 - Página del proyecto: https://rawalkhirodkar.github.io/sapiens2

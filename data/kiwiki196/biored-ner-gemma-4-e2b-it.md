@@ -4,7 +4,7 @@
 
 El modelo `kiwiki196/biored-ner-gemma-4-E2B-it` es un adaptador LoRA/QLoRA entrenado para la tarea de reconocimiento de entidades nombradas (NER) sobre el corpus biomédico BioRED. Desarrollado por el usuario kiwiki196 (John Wu), se basa en el modelo `google/gemma-4-E2B-it` de Google DeepMind, que pertenece a la cuarta generación de la familia Gemma. El adaptador se distribuye en formato PEFT (Parameter-Efficient Fine-Tuning) y está pensado para clasificar tokens en etiquetas de entidades biomédicas, como genes, enfermedades, productos químicos o especies.
 
-La relevancia de este modelo radica en su especialización para el dominio biomédico, donde los modelos genéricos de lenguaje suelen fallar en la identificación precisa de terminología técnica. Al ser un adaptador ligero sobre un modelo base de tamaño reducido (Gemma 4 E2B, probablemente 2 mil millones de parámetros), permite desplegar capacidades de NER en entornos con recursos limitados. El acceso está restringido en HuggingFace, por lo que es necesario aceptar las condiciones de la licencia Gemma antes de su uso.
+La relevancia de este modelo radica en su especialización para el dominio biomédico, donde los modelos genéricos de lenguaje suelen fallar en la identificación precisa de terminología técnica. Al ser un adaptador ligero sobre un modelo base de tamaño reducido (Gemma 4 E2B, probablemente 2 mil millones de parámetros), permite desplegar capacidades de NER en entornos con recursos limitados. El acceso está restringido en Hugging Face, por lo que es necesario aceptar las condiciones de la licencia Gemma antes de su uso.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ La relevancia de este modelo radica en su especialización para el dominio biom�
 | Longitud de contexto | No disponible (depende del modelo base Gemma 4 E2B) |
 | Tipos de cuantizacion | No disponible (el adaptador se guarda en safetensors, pero no se indica cuantizacion del modelo base) |
 | Idiomas soportados | No disponible (probablemente ingles, dado el corpus BioRED, pero no se confirma) |
-| Licencia | Gemma (requiere aceptacion de terminos en HuggingFace) |
+| Licencia | Gemma (requiere aceptacion de terminos en Hugging Face) |
 | Formato de pesos | safetensors (adaptador PEFT) |
 
 ## Arquitectura y entrenamiento
@@ -59,7 +59,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar las condiciones de la licencia Gemma en HuggingFace, lo que puede limitar su uso en entornos corporativos con politicas de licenciamiento estrictas.
+- Acceso restringido: el modelo requiere aceptar las condiciones de la licencia Gemma en Hugging Face, lo que puede limitar su uso en entornos corporativos con politicas de licenciamiento estrictas.
 - Sesgos potenciales: al entrenarse sobre un corpus biomedico especifico (BioRED), el modelo puede tener un rendimiento suboptimo en otros dominios o en textos no academicos.
 - Riesgo de alucinacion: como adaptador sobre un modelo generativo, existe la posibilidad de que clasifique tokens de forma incorrecta si el contexto es ambiguo o si el texto contiene terminologia fuera del alcance del corpus de entrenamiento.
 - Limitaciones de idioma: no se ha confirmado el soporte multilingue; es probable que el modelo funcione mejor en ingles, dado el origen del corpus BioRED.
@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiwiki196/biored-ner-gemma-4-E2B-it
+- Modelo en Hugging Face: https://huggingface.co/kiwiki196/biored-ner-gemma-4-E2B-it
 - Perfil del autor: https://huggingface.co/kiwiki196
 - Pagina oficial de Gemma 4: https://deepmind.google/models/gemma/gemma-4/
 - Documentacion de Gemma: https://deepmind.google/models/gemma/

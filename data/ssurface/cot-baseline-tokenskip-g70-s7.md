@@ -79,7 +79,7 @@ No se dispone de comparativas directas publicadas en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-baseline-tokenskip-g70-s7
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-baseline-tokenskip-g70-s7
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Dataset GSM8K: https://huggingface.co/datasets/openai/gsm8k
 - Paper citado (sin enlace directo): "Chain-of-Thought Compression Dialects" de Anatolii Frolov (2026)

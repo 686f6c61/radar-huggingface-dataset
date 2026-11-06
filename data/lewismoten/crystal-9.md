@@ -24,7 +24,7 @@ Su relevancia es deliberadamente acotada: demuestra que una política determinis
 | Tamaño de vocabulario | 13 tokens (`<pad>`, `<bos>`, `<eos>`, `!`, `a`–`i`); solo `a`–`i` son símbolos públicos de entrada |
 | Expertos | 9 expertos de dos capas, enrutamiento top-2 |
 | Escalas de desquantización | 787 |
-| Tamaño del repositorio | 0,0 GB reportados por HuggingFace |
+| Tamaño del repositorio | 0,0 GB reportados por Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -94,11 +94,11 @@ No se han encontrado en la búsqueda web otros modelos comparables de política 
 - Estado de los artefactos: el modelo FP16 completo no existe ni ha sido aceptado, e INT3 permanece como investigación en curso y no se distribuye como artefacto de despliegue.
 - Adopción nula: el repositorio registra 0 descargas y 0 likes, por lo que no hay validación independiente por parte de terceros más allá de la puerta automática del propio autor.
 - Licencia: los pesos se publican bajo Apache-2.0, lo que permite uso comercial, pero la información disponible no aclara la licencia del código de runtime incluido en el repositorio.
-- Metadatos: HuggingFace reporta un tamaño de repositorio de 0,0 GB y una fecha de creación de 2026-09-24, datos que conviene verificar antes de citar el modelo.
+- Metadatos: Hugging Face reporta un tamaño de repositorio de 0,0 GB y una fecha de creación de 2026-09-24, datos que conviene verificar antes de citar el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lewismoten/crystal-9
-- Predecesor Palace-9 en HuggingFace: https://huggingface.co/lewismoten/palace-9
+- Modelo en Hugging Face: https://huggingface.co/lewismoten/crystal-9
+- Predecesor Palace-9 en Hugging Face: https://huggingface.co/lewismoten/palace-9
 - Publicación del autor sobre Palace-9: https://www.facebook.com/lewis.moten/posts/ive-developed-perhaps-one-of-the-smallest-models-available-palace-9-after-a-plac/10162877361392483/
 - No se han encontrado en la búsqueda web otros enlaces relevantes (papers, blogs, repositorios o demos) relacionados con Crystal-9. El resto de resultados devueltos por la búsqueda no guarda relación con el modelo y se ha descartado.

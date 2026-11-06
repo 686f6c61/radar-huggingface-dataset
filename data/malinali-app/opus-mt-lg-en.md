@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `malinali-app/opus-mt-lg-en` es un modelo de traducción automática neuronal para la dirección luganda (lg) → inglés (en), publicado por el desarrollador malinali-app en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un reempaquetado de los pesos de `Helsinki-NLP/opus-mt-lg-en`, perteneciente a la familia OPUS-MT del grupo de investigación Helsinki-NLP, cuyos artefactos se redistribuyen aquí en formato safetensors acompañados de tokenizadores rápidos convertidos desde SentencePiece.
+El modelo `malinali-app/opus-mt-lg-en` es un modelo de traducción automática neuronal para la dirección luganda (lg) → inglés (en), publicado por el desarrollador malinali-app en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un reempaquetado de los pesos de `Helsinki-NLP/opus-mt-lg-en`, perteneciente a la familia OPUS-MT del grupo de investigación Helsinki-NLP, cuyos artefactos se redistribuyen aquí en formato safetensors acompañados de tokenizadores rápidos convertidos desde SentencePiece.
 
 La relevancia del paquete es fundamentalmente de despliegue: está pensado para inferencia en dispositivo (on-device) dentro de la aplicación Malinali, a través del runtime Candle y del componente `marian_flutter`. Con 75.672.095 parámetros y un repositorio de 0,3 GB, el modelo es lo bastante pequeno como para ejecutarse en CPU, en hardware móvil o en cualquier GPU de consumo sin requisitos de memoria significativos, y cubre un par de idiomas poco atendido por los grandes modelos multilingües.
 
-Arquitectónicamente es un transformer encoder-decoder estándar de tipo Marian, con licencia no declarada explícitamente en la ficha de HuggingFace (el autor remite a la licencia del modelo original, típicamente CC-BY 4.0 en OPUS-MT) y sin resultados de benchmarks publicados en la información disponible.
+Arquitectónicamente es un transformer encoder-decoder estándar de tipo Marian, con licencia no declarada explícitamente en la ficha de Hugging Face (el autor remite a la licencia del modelo original, típicamente CC-BY 4.0 en OPUS-MT) y sin resultados de benchmarks publicados en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ Otros datos del repositorio: tamano de 0,3 GB, 0 descargas y 0 likes en el momen
 
 El modelo es un MarianMT, es decir, un transformer seq2seq con encoder y decoder separados, del mismo tipo que el resto de la familia OPUS-MT. Cuenta con dos tokenizadores diferenciados, uno para el idioma origen (`tokenizer-enc.json`) y otro para el destino (`tokenizer-dec.json`), lo que refleja el flujo clasico de Marian: codificacion en luganda, decodificacion en ingles. El peso total de 75,6 millones de parametros corresponde a una configuracion base de la familia, con vocabularios SentencePiece independientes por idioma.
 
-No se dispone de informacion sobre el proceso de entrenamiento en los materiales proporcionados: no se documentan el numero de tokens, la composicion del corpus paralelo, ni si hubo etapas de ajuste fino con RLHF o DPO. Tampoco se describen innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal u otras) mas alla del propio reempaquetado orientado a inferencia en dispositivo mediante Candle. El autor declara explicitamente que Malinali unicamente redistribuye pesos y convierte los tokenizadores de SentencePiece a formato fast tokenizer de HuggingFace, y que no reclama la propiedad del modelo entrenado.
+No se dispone de informacion sobre el proceso de entrenamiento en los materiales proporcionados: no se documentan el numero de tokens, la composicion del corpus paralelo, ni si hubo etapas de ajuste fino con RLHF o DPO. Tampoco se describen innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal u otras) mas alla del propio reempaquetado orientado a inferencia en dispositivo mediante Candle. El autor declara explicitamente que Malinali unicamente redistribuye pesos y convierte los tokenizadores de SentencePiece a formato fast tokenizer de Hugging Face, y que no reclama la propiedad del modelo entrenado.
 
 ## Capacidades
 
@@ -52,7 +52,7 @@ No se dispone de informacion sobre el proceso de entrenamiento en los materiales
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas de BLEU, chrF, MMLU, HumanEval ni de ningun otro conjunto de evaluacion, y la busqueda web realizada no ha devuelto documentacion tecnica asociada al modelo (los resultados obtenidos no guardan relacion con el proyecto).
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas de BLEU, chrF, MMLU, HumanEval ni de ningun otro conjunto de evaluacion, y la busqueda web realizada no ha devuelto documentacion tecnica asociada al modelo (los resultados obtenidos no guardan relacion con el proyecto).
 
 ## Requisitos de hardware
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| malinali-app/opus-mt-lg-en | 75.672.095 | lg → en | No disponible | No declarada (remite al upstream) | HuggingFace, 0 descargas |
-| Helsinki-NLP/opus-mt-lg-en | No disponible en la informacion proporcionada | lg → en | No disponible | No disponible en la informacion proporcionada | HuggingFace (modelo base del anterior) |
-| Alternativas multilingues (NLLB-200, M2M-100) | No disponible en la informacion proporcionada | Cobertura multilingue amplia | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| malinali-app/opus-mt-lg-en | 75.672.095 | lg → en | No disponible | No declarada (remite al upstream) | Hugging Face, 0 descargas |
+| Helsinki-NLP/opus-mt-lg-en | No disponible en la informacion proporcionada | lg → en | No disponible | No disponible en la informacion proporcionada | Hugging Face (modelo base del anterior) |
+| Alternativas multilingues (NLLB-200, M2M-100) | No disponible en la informacion proporcionada | Cobertura multilingue amplia | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 
 La unica comparacion verificable con los datos aportados es con `Helsinki-NLP/opus-mt-lg-en`, del que este repositorio es un reempaquetado: mismos pesos, mismo par de idiomas y misma arquitectura Marian, con la diferencia del formato de distribucion (safetensors mas tokenizadores fast para Candle frente al formato original del upstream). Para el resto de alternativas no se dispone de especificaciones contrastadas en la informacion proporcionada.
 
@@ -79,7 +79,7 @@ La unica comparacion verificable con los datos aportados es con `Helsinki-NLP/op
 
 - Direccionalidad unica: solo traduce de luganda a ingles. No sirve para en → lg ni para ningun otro par de idiomas.
 - Ausencia total de benchmarks: no hay ninguna metrica publicada que permita estimar la calidad de traduccion, por lo que cualquier uso en produccion deberia ir precedido de una evaluacion propia con corpus representativo del dominio objetivo.
-- Licencia ambigua: la ficha de HuggingFace no declara licencia y el autor remite a la del modelo upstream, indicando que suele ser CC-BY 4.0. Antes de un uso comercial conviene verificar la licencia efectiva de `Helsinki-NLP/opus-mt-lg-en` y los terminos de redistribucion.
+- Licencia ambigua: la ficha de Hugging Face no declara licencia y el autor remite a la del modelo upstream, indicando que suele ser CC-BY 4.0. Antes de un uso comercial conviene verificar la licencia efectiva de `Helsinki-NLP/opus-mt-lg-en` y los terminos de redistribucion.
 - Riesgo de alucinacion y de traduccion infiel: como cualquier modelo seq2seq entrenado sobre corpus paralelos, puede generar contenido no presente en el original, especialmente con frases largas, terminologia tecnica, nombres propios o variedades dialectales del luganda poco representadas.
 - Sesgo de dominio desconocido: no se documenta la composicion del corpus de entrenamiento, por lo que no puede descartarse un sesgo hacia determinados registros (religioso, noticias, textos institucionales) y un rendimiento pobre en lenguaje coloquial o especializado.
 - Limitaciones de contexto: se desconoce la longitud maxima de secuencia soportada, lo que impide garantizar un comportamiento correcto con parrafos largos; en la practica conviene segmentar la entrada.
@@ -89,7 +89,7 @@ La unica comparacion verificable con los datos aportados es con `Helsinki-NLP/op
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt-lg-en
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt-lg-en
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-lg-en
 - Proyecto OPUS-MT (Helsinki-NLP): https://github.com/Helsinki-NLP/Opus-MT
 - Aplicacion Malinali: https://malinali.app

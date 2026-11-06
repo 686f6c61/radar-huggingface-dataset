@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `jpetrina/Qwen3.8-27B-MTP-IQ4_XS-pure-GGUF` contiene un modelo publicado por el usuario jpetrina en HuggingFace. Según el nombre del archivo, se trataría de un modelo de la familia Qwen (posiblemente Qwen3) con 27 mil millones de parámetros, cuantizado en formato IQ4_XS (4 bits) y exportado a GGUF para su uso con herramientas como llama.cpp u Ollama. La etiqueta "MTP" podría indicar entrenamiento con Multi-Token Prediction, una técnica que mejora la eficiencia de la decodificación.
+El repositorio `jpetrina/Qwen3.8-27B-MTP-IQ4_XS-pure-GGUF` contiene un modelo publicado por el usuario jpetrina en Hugging Face. Según el nombre del archivo, se trataría de un modelo de la familia Qwen (posiblemente Qwen3) con 27 mil millones de parámetros, cuantizado en formato IQ4_XS (4 bits) y exportado a GGUF para su uso con herramientas como llama.cpp u Ollama. La etiqueta "MTP" podría indicar entrenamiento con Multi-Token Prediction, una técnica que mejora la eficiencia de la decodificación.
 
 Sin embargo, la ficha del repositorio no proporciona información adicional: no se especifican la arquitectura exacta, el tamaño de contexto, los idiomas soportados ni la licencia. El modelo cuenta con 0 descargas y 1 like, lo que sugiere que es una publicación reciente o poco difundida. La fecha de creación es el 15 de agosto de 2026, aunque no se dispone de más detalles sobre su procedencia o propósito.
 
@@ -69,4 +69,4 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/jpetrina/Qwen3.8-27B-MTP-IQ4_XS-pure-GGUF
+- Repositorio de Hugging Face: https://huggingface.co/jpetrina/Qwen3.8-27B-MTP-IQ4_XS-pure-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `thaymanhinhsamsung24h/thay-man-hinh-samsung-24h` no contiene un modelo de inteligencia artificial. Se trata de una página de spam alojada en HuggingFace cuyo contenido es un artículo de marketing en vietnamita sobre precios de sustitución de pantallas de teléfonos Samsung. No existe ningún peso, arquitectura, dataset ni artefacto de ML asociado.
+El repositorio `thaymanhinhsamsung24h/thay-man-hinh-samsung-24h` no contiene un modelo de inteligencia artificial. Se trata de una página de spam alojada en Hugging Face cuyo contenido es un artículo de marketing en vietnamita sobre precios de sustitución de pantallas de teléfonos Samsung. No existe ningún peso, arquitectura, dataset ni artefacto de ML asociado.
 
 El repositorio fue creado el 26 de agosto de 2026, tiene 0 descargas y 0 likes, y no declara licencia, pipeline ni idiomas. La model card es un texto promocional con enlaces a servicios externos de reparación de pantallas, lo que indica que se trata de un uso indebido de la plataforma para fines de SEO.
 
@@ -54,11 +54,11 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 - No es posible utilizarlo para inferencia, fine-tuning ni ningún propósito técnico.
 - La model card contiene enlaces externos a servicios comerciales que pueden ser engañosos.
 - No hay garantía de seguridad ni integridad de los archivos del repositorio.
-- HuggingFace debería revisar y eliminar este tipo de repositorios por violación de los términos de uso de la plataforma.
+- Hugging Face debería revisar y eliminar este tipo de repositorios por violación de los términos de uso de la plataforma.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thaymanhinhsamsung24h/thay-man-hinh-samsung-24h
+- Repositorio en Hugging Face: https://huggingface.co/thaymanhinhsamsung24h/thay-man-hinh-samsung-24h
 - Página de Linktree del autor: https://linktr.ee/thaymanhinhsamsung24h
 - Página de Bandcamp del autor: https://thaymanhinhsamsung24h.bandcamp.com/
 - Repositorio relacionado (también spam): https://huggingface.co/thaymanhinhsamsung24h/thay-man-hinh-samsung-galaxy-a23

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo entrenado desde cero, sino una reconversion de pesos del conocido modelo de embeddings `sentence-transformers/all-MiniLM-L6-v2` desde formato ONNX a un formato propietario denominado NPUE, pensado para ejecutarse sobre la NPU XDNA1 de las plataformas AMD Ryzen AI. El autor es el usuario de HuggingFace ItsOkayNow, y el paquete se publica bajo licencia MIT con un tamano de repositorio de 0,3 GB.
+Este repositorio no contiene un modelo entrenado desde cero, sino una reconversion de pesos del conocido modelo de embeddings `sentence-transformers/all-MiniLM-L6-v2` desde formato ONNX a un formato propietario denominado NPUE, pensado para ejecutarse sobre la NPU XDNA1 de las plataformas AMD Ryzen AI. El autor es el usuario de Hugging Face ItsOkayNow, y el paquete se publica bajo licencia MIT con un tamano de repositorio de 0,3 GB.
 
 El modelo base, all-MiniLM-L6-v2, es un encoder transformer de la familia MiniLM con aproximadamente 22,7 millones de parametros y una longitud maxima de secuencia de 256 tokens, optimizado para generar embeddings de frases de 384 dimensiones. Su proposito original es producir representaciones vectoriales densas utiles para busqueda semantica, similitud de frases y recuperacion de informacion, no la generacion de texto.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| all-MiniLM-L6-v2-XDNA1-NPUE-PACKS (este) | ~22,7 M (base) | 256 tokens (base) | NPUE | MIT | HuggingFace, 0 descargas |
+| all-MiniLM-L6-v2-XDNA1-NPUE-PACKS (este) | ~22,7 M (base) | 256 tokens (base) | NPUE | MIT | Hugging Face, 0 descargas |
 | all-MiniLM-L6-v2 (original) | ~22,7 M | 256 tokens | safetensors / ONNX | Apache-2.0 | Ampliamente usado y validado |
-| paraphrase-multilingual-MiniLM-L12-v2 | No disponible | No disponible | safetensors | Apache-2.0 | HuggingFace |
+| paraphrase-multilingual-MiniLM-L12-v2 | No disponible | No disponible | safetensors | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas en la informacion proporcionada. La diferencia principal de este paquete frente al modelo original es el formato de pesos y su orientacion a la NPU XDNA1, no una mejora de calidad.
 
@@ -87,6 +87,6 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ItsOkayNow/all-MiniLM-L6-v2-XDNA1-NPUE-PACKS
+- Hugging Face: https://huggingface.co/ItsOkayNow/all-MiniLM-L6-v2-XDNA1-NPUE-PACKS
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Repositorio de ejecucion en NPU XDNA1: https://github.com/hardWorker254/Npu-Embeddings-XDNA1

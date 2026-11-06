@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dp-cupbasket-v6-2k-cotrain-real075 es una política de difusión (diffusion policy) para robótica bimanual desarrollada por el usuario padiredd, orientada a la tarea concreta de recoger un vaso azul con la mano izquierda, pasarlo a la mano derecha y depositarlo sobre una cesta. El modelo se distribuye a través de HuggingFace con el pipeline de robótica de LeRobot y está pensado para ejecutarse sobre el robot humanoide bimanual ROBOTIS FFW SG2, equipado con pinzas CAD y cámaras de muñeca calibradas.
+dp-cupbasket-v6-2k-cotrain-real075 es una política de difusión (diffusion policy) para robótica bimanual desarrollada por el usuario padiredd, orientada a la tarea concreta de recoger un vaso azul con la mano izquierda, pasarlo a la mano derecha y depositarlo sobre una cesta. El modelo se distribuye a través de Hugging Face con el pipeline de robótica de LeRobot y está pensado para ejecutarse sobre el robot humanoide bimanual ROBOTIS FFW SG2, equipado con pinzas CAD y cámaras de muñeca calibradas.
 
 Técnicamente es una política de difusión DDPM construida sobre un backbone ResNet18 por cámara, con 287,5 millones de parámetros y un horizonte de predicción de 64 pasos (32 ejecutados). Se entrenó mediante co-entrenamiento de datos simulados y reales: aproximadamente 2.000 demostraciones exitosas generadas en Isaac Lab con el script `cup_handover_v6.py`, más 19 demostraciones reales de teleoperación. El muestreo durante el entrenamiento da un 75 % de probabilidad a los episodios reales (alpha 0.75), una decisión de diseño que busca mitigar la brecha sim-a-real manteniendo la diversidad de la simulación.
 
@@ -25,7 +25,7 @@ El modelo es relevante como ejemplo de flujo de trabajo cotrain sim-real en rob�
 
 La política sigue el paradigma de diffusion policy: genera trayectorias de acción mediante un proceso de difusión DDPM de 100 pasos de ruido, condicionado por observaciones visuales y de estado. Cada una de las tres cámaras (cabeza, muñeca izquierda, muñeca derecha) pasa por un encoder ResNet18 independiente; las imágenes son de 240x240 píxeles. La entrada incluye además un vector de estado articular de 22 dimensiones, y la salida son 16 objetivos articulares a 15 Hz. El entrenamiento usó 100.000 pasos con batch 32, optimizador Adam con learning rate 1e-4 y scheduler coseno, semilla 1000, sobre una única NVIDIA RTX 4090 de 24 GB.
 
-El dato más destacable es la estrategia de co-entrenamiento. El conjunto simulado (`pick-cup-basket-v6-2k-3cam`, no publicado en HuggingFace) contiene unas 2.000 demostraciones exitosas de la transferencia bimanual del vaso, generadas con el programa `cup_handover_v6.py` con seeds desde 60001, sin domain randomization. A ese conjunto se le añaden 19 demostraciones reales de teleoperación del dataset `omkarpatil/pick-cup-and-place-on-basket`, redimensionadas al formato de simulación. El `CotrainMixSampler` del parche lerobot-cyclo muestrea cada batch dando un 75 % de probabilidad a los episodios reales, y las estadísticas de normalización se calculan sobre el conjunto mezclado. La aumentación de imagen es agresiva: hasta cinco transformaciones aleatorias en orden aleatorio entre brillo (0,6-1,4), contraste (0,6-1,4), saturación (0,3-1,7), tono (±0,1), nitidez (0,3-2,0), afín (±10 grados / 10 % / 0,9-1,1), perspectiva 0,2, desenfoque, borrado aleatorio y escala de grises. No se aplicó ruido al estado.
+El dato más destacable es la estrategia de co-entrenamiento. El conjunto simulado (`pick-cup-basket-v6-2k-3cam`, no publicado en Hugging Face) contiene unas 2.000 demostraciones exitosas de la transferencia bimanual del vaso, generadas con el programa `cup_handover_v6.py` con seeds desde 60001, sin domain randomization. A ese conjunto se le añaden 19 demostraciones reales de teleoperación del dataset `omkarpatil/pick-cup-and-place-on-basket`, redimensionadas al formato de simulación. El `CotrainMixSampler` del parche lerobot-cyclo muestrea cada batch dando un 75 % de probabilidad a los episodios reales, y las estadísticas de normalización se calculan sobre el conjunto mezclado. La aumentación de imagen es agresiva: hasta cinco transformaciones aleatorias en orden aleatorio entre brillo (0,6-1,4), contraste (0,6-1,4), saturación (0,3-1,7), tono (±0,1), nitidez (0,3-2,0), afín (±10 grados / 10 % / 0,9-1,1), perspectiva 0,2, desenfoque, borrado aleatorio y escala de grises. No se aplicó ruido al estado.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No disponible. La información proporcionada no incluye otros modelos comparable
 
 - Modelo específico de una única tarea («pick up the blue cup with the left hand, hand it to the right hand, and place it on the basket») y de un robot concreto (ROBOTIS FFW SG2 con pinzas CAD y cámaras calibradas); no es generalizable sin fine-tuning.
 - Sin resultados de evaluación publicados: no hay evidencia cuantitativa de éxito en el robot real.
-- El conjunto de datos simulado no está publicado en HuggingFace, lo que dificulta la reproducción exacta del entrenamiento.
+- El conjunto de datos simulado no está publicado en Hugging Face, lo que dificulta la reproducción exacta del entrenamiento.
 - Solo 19 demostraciones reales frente a ~2.000 simuladas; el sesgo hacia la distribución simulada puede producir brecha sim-a-real pese al muestreo alpha 0.75.
 - El entrenamiento simulado no usó domain randomization, lo que puede reducir la robustez ante cambios de iluminación, fondo o calibración de cámara en el entorno real.
 - Licencia «other»: no se especifican los términos de uso comercial; es necesario contactar con el autor antes de cualquier despliegue en producción.
@@ -74,7 +74,7 @@ No disponible. La información proporcionada no incluye otros modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/dp-cupbasket-v6-2k-cotrain-real075
+- Modelo en Hugging Face: https://huggingface.co/padiredd/dp-cupbasket-v6-2k-cotrain-real075
 - Dataset de demostraciones reales: https://huggingface.co/datasets/omkarpatil/pick-cup-and-place-on-basket
 - Fork lerobot-cyclo de ROBOTIS: no disponible (no se proporciona URL en la información)
 - Script de generación de datos simulados `cup_basket/programs/cup_handover_v6.py`: no disponible (no se proporciona URL)

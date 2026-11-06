@@ -81,7 +81,7 @@ No se dispone de informacion detallada sobre modelos comparables en la documenta
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/JONNYVERSE/ai-image-detect-distilled-ONNX
+- Repositorio Hugging Face del modelo: https://huggingface.co/JONNYVERSE/ai-image-detect-distilled-ONNX
 - Modelo base (PyTorch): https://huggingface.co/jacoballessio/ai-image-detect-distilled
 - Version ONNX de la comunidad: https://huggingface.co/onnx-community/ai-image-detect-distilled-ONNX
 - Pagina en ModelScope: https://www.modelscope.cn/models/onnx-community/ai-image-detect-distilled-ONNX

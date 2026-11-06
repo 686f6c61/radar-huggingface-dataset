@@ -81,10 +81,10 @@ La informacion disponible solo permite comparar con el modelo base y con reposit
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tanpo-product (este modelo) | 1.170.340.608 | no disponible | 89,0 % en rubrica de dominio propia (20 tareas) | other | HuggingFace, 0 descargas |
-| unsloth/LFM2.5-1.2B-Instruct (modelo base) | ~1,2 B | no disponible | no disponible | no disponible | HuggingFace |
-| d4rkninja/tanpo-product-GGUF | mismo modelo cuantizado | no disponible | no disponible | other | HuggingFace |
-| d4rkninja/tanpo-product-LoRA | adaptador sobre el base | no disponible | no disponible | other | HuggingFace |
+| tanpo-product (este modelo) | 1.170.340.608 | no disponible | 89,0 % en rubrica de dominio propia (20 tareas) | other | Hugging Face, 0 descargas |
+| unsloth/LFM2.5-1.2B-Instruct (modelo base) | ~1,2 B | no disponible | no disponible | no disponible | Hugging Face |
+| d4rkninja/tanpo-product-GGUF | mismo modelo cuantizado | no disponible | no disponible | other | Hugging Face |
+| d4rkninja/tanpo-product-LoRA | adaptador sobre el base | no disponible | no disponible | other | Hugging Face |
 | Alternativas de ~1-2 B parametros de otras familias (por ejemplo modelos instruct compactos de Qwen, Llama o SmolLM) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos comparativos verificados frente a modelos de otras familias en la informacion proporcionada.
@@ -103,7 +103,7 @@ No se dispone de datos comparativos verificados frente a modelos de otras famili
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d4rkninja/tanpo-product
+- Modelo en Hugging Face: https://huggingface.co/d4rkninja/tanpo-product
 - Repositorio GGUF: https://huggingface.co/d4rkninja/tanpo-product-GGUF
 - Repositorio LoRA: https://huggingface.co/d4rkninja/tanpo-product-LoRA
 - Modelo base: https://huggingface.co/unsloth/LFM2.5-1.2B-Instruct

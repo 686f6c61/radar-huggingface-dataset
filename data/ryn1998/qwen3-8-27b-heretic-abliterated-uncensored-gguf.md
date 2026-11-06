@@ -79,7 +79,7 @@ No hay datos de benchmarks comparativos disponibles. La principal diferencia ent
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ryn1998/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Ryn1998/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Fuente de abliteración (trohrbaugh): https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - Herramienta heretic (implementación de ARA): https://github.com/p-e-w/heretic

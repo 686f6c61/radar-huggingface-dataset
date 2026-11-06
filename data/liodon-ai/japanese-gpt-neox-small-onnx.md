@@ -65,7 +65,7 @@ No se dispone de informacion comparativa con otros modelos en la documentacion p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/liodon-ai/japanese-gpt-neox-small-ONNX
+- Repositorio Hugging Face: https://huggingface.co/liodon-ai/japanese-gpt-neox-small-ONNX
 - Modelo base: https://huggingface.co/rinna/japanese-gpt-neox-small
 - Documentacion GPT-NeoX-Japanese (Transformers): https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/gpt_neox_japanese.md
 - Sitio web de Liodon AI: https://liodon.ai/

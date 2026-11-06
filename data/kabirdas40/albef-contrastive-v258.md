@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Kabirdas40/albef-contrastive-v258` es un repositorio de HuggingFace que contiene una implementacion a pequena escala de la arquitectura ALBEF (Align before Fuse) orientada a aprendizaje contrastivo. Lo publica el usuario Kabirdas40 bajo licencia MIT y su proposito declarado no es distribuir un modelo entrenado, sino ofrecer un punto de partida reproducible: codigo de modelo, configuracion de arquitectura, receta de entrenamiento por defecto y un checkpoint de inicializacion valido para pruebas de humo.
+`Kabirdas40/albef-contrastive-v258` es un repositorio de Hugging Face que contiene una implementacion a pequena escala de la arquitectura ALBEF (Align before Fuse) orientada a aprendizaje contrastivo. Lo publica el usuario Kabirdas40 bajo licencia MIT y su proposito declarado no es distribuir un modelo entrenado, sino ofrecer un punto de partida reproducible: codigo de modelo, configuracion de arquitectura, receta de entrenamiento por defecto y un checkpoint de inicializacion valido para pruebas de humo.
 
 El propio autor indica de forma explicita en la model card que la variante "nano" no es un lanzamiento de modelo entrenado, que el fichero `model.safetensors` es unicamente un checkpoint de inicializacion y que no se reclama ninguna puntuacion de benchmark. El dato real de parametros extraido del fichero safetensors es de 16.576 parametros, un orden de magnitud muy inferior al de ALBEF original, lo que confirma su caracter de esqueleto de pruebas y no de modelo utilizable en inferencia real.
 
@@ -23,7 +23,7 @@ Su relevancia es, por tanto, instrumental: sirve para validar pipelines de carga
 | Escala declarada | nano |
 | Tamano del repositorio | 0,0 GB |
 | Framework | PyTorch |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-15 |
 
@@ -41,7 +41,7 @@ En cuanto al entrenamiento, la receta incluida en `training_args.json` usa el op
 - No hay soporte declarado de agentes, planificacion multi-paso ni razonamiento encadenado.
 - No se declaran capacidades multilingues ni idiomas soportados.
 - No se declaran modos especiales (thinking mode, vision operativa, audio) mas alla de la propia arquitectura ALBEF, que en su version original es multimodal vision-lenguaje.
-- Al ser una implementacion personalizada, las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito antes de poder usarse.
+- Al ser una implementacion personalizada, las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito antes de poder usarse.
 
 ## Casos de uso
 
@@ -51,7 +51,7 @@ En cuanto al entrenamiento, la receta incluida en `training_args.json` usa el op
 - Reproducibilidad de recetas de entrenamiento: `config.json` y `training_args.json` fijan arquitectura y receta (AdamW, warmup constante), lo que permite repetir el mismo experimento con semillas distintas y comprobar la varianza entre ejecuciones.
 - Docencia y estudio de arquitecturas contrastivas: es un ejemplo manejable para explicar como se estructura una alineacion previa a la fusion, la atencion dilatada o la fusion con compuertas sin la barrera computacional de un modelo grande.
 - Verificacion de integracion en CI: al ocupar practicamente nada en disco, puede incluirse en un runner de integracion continua para validar que los cambios en el codigo de carga de pesos no rompen el pipeline.
-- Auditoria de metadatos y licencias: util para probar flujos internos de catalogacion de modelos que deban leer tags, licencia MIT y estructura de ficheros de un repositorio HuggingFace.
+- Auditoria de metadatos y licencias: util para probar flujos internos de catalogacion de modelos que deban leer tags, licencia MIT y estructura de ficheros de un repositorio Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kabirdas40/albef-contrastive-v258 | 16.576 | no disponible | ALBEF nano, contraste, checkpoint de inicializacion | MIT | HuggingFace (0 descargas) |
+| Kabirdas40/albef-contrastive-v258 | 16.576 | no disponible | ALBEF nano, contraste, checkpoint de inicializacion | MIT | Hugging Face (0 descargas) |
 | ALBEF (Salesforce, original) | ~210 M | no disponible en la informacion proporcionada | Vision-lenguaje con alineacion previa a la fusion (ITC + ITM + MLM) | Codigo y pesos con licencia propia de Salesforce | Publico, benchmarkeado en su paper |
 | BLIP | no disponible en la informacion proporcionada | no disponible | Vision-lenguaje con bootstrapping de captioning | Licencia propia de Salesforce | Publico |
 | CLIP (OpenAI) | ~150 M en la variante ViT-B/32 | 77 tokens de texto | Contraste imagen-texto puro, sin fusion | Licencia propia de OpenAI | Publico |
@@ -85,14 +85,14 @@ La diferencia fundamental es que el repositorio analizado es un esqueleto sin en
 - Riesgo de alucinacion: no aplica en el sentido habitual, ya que el modelo no genera contenido fiable, pero si se usa en produccion por error el riesgo de salidas sin sentido es total.
 - No se documentan idiomas soportados ni longitud de contexto, lo que impide planificar cualquier uso multilingue o de contexto largo.
 - Licencia MIT: permite uso comercial y modificacion, pero el autor advierte de que deben revisarse por separado los terminos de los datos de origen si el repositorio se usa con datasets externos.
-- Compatibilidad: al ser una implementacion personalizada, las APIs automaticas de HuggingFace no funcionan sin un adaptador explicito; esto puede romper pipelines estandar.
+- Compatibilidad: al ser una implementacion personalizada, las APIs automaticas de Hugging Face no funcionan sin un adaptador explicito; esto puede romper pipelines estandar.
 - Estado del repositorio: 0 descargas y 0 likes, sin pipeline declarado, lo que indica ausencia de validacion por parte de la comunidad.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debera documentarse por separado de los valores por defecto que se distribuyen aqui.
 - La fecha de creacion del repositorio figura como 2026-10-15, dato que conviene verificar antes de citarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kabirdas40/albef-contrastive-v258
+- Modelo en Hugging Face: https://huggingface.co/Kabirdas40/albef-contrastive-v258
 - Perfil del autor: https://huggingface.co/Kabirdas40
 
 No se han encontrado en la informacion disponible enlaces adicionales a papers, blogs, repositorios de codigo o demos asociados a este modelo concreto.

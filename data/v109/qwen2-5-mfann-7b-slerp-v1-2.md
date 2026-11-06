@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen2.5-MFANN-7b-SLERP-V1.2 es un modelo de lenguaje de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) publicado por el usuario V109 en HuggingFace. No es un modelo entrenado desde cero: es un merge por SLERP de dos modelos de la familia Qwen2.5, huihui-ai/Qwen2.5-Coder-7B-Instruct-abliterated y netcat420/qwen2.5-MFANN-7b-v1.1, realizado con mergekit y lazymergekit. La arquitectura resultante es la de un transformer decoder de Qwen2.5, con pesos en float16 y un repositorio de 15,2 GB.
+qwen2.5-MFANN-7b-SLERP-V1.2 es un modelo de lenguaje de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) publicado por el usuario V109 en Hugging Face. No es un modelo entrenado desde cero: es un merge por SLERP de dos modelos de la familia Qwen2.5, huihui-ai/Qwen2.5-Coder-7B-Instruct-abliterated y netcat420/qwen2.5-MFANN-7b-v1.1, realizado con mergekit y lazymergekit. La arquitectura resultante es la de un transformer decoder de Qwen2.5, con pesos en float16 y un repositorio de 15,2 GB.
 
 El merge combina un componente orientado a código e instrucciones, en su variante abliterated, con el modelo MFANN. La configuración aplica SLERP sobre el rango de capas [0, 28] y utiliza valores de t distintos para self_attn y mlp, con 0,5 como valor de respaldo. La licencia declarada es Apache 2.0. No se han publicado datos sobre longitud de contexto, idiomas soportados, benchmarks ni pipeline de inferencia.
 

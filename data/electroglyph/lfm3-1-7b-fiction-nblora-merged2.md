@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-fiction-nblora-merged2 es un ajuste fino (fine-tune) del modelo LiquidAI/LFM3-1.7B, desarrollado por el usuario electroglyph y publicado en HuggingFace. Se trata de un modelo de generación de texto de 1.728.801.536 parámetros (aproximadamente 1,73 mil millones), entrenado mediante Supervised Fine-Tuning (SFT) con la librería TRL sobre el modelo base de LiquidAI. El nombre del repositorio sugiere un ajuste orientado a la generación de ficción, utilizando una técnica denominada "nblora" y un proceso de fusión de pesos ("merged2").
+LFM3-1.7B-fiction-nblora-merged2 es un ajuste fino (fine-tune) del modelo LiquidAI/LFM3-1.7B, desarrollado por el usuario electroglyph y publicado en Hugging Face. Se trata de un modelo de generación de texto de 1.728.801.536 parámetros (aproximadamente 1,73 mil millones), entrenado mediante Supervised Fine-Tuning (SFT) con la librería TRL sobre el modelo base de LiquidAI. El nombre del repositorio sugiere un ajuste orientado a la generación de ficción, utilizando una técnica denominada "nblora" y un proceso de fusión de pesos ("merged2").
 
 El modelo hereda la arquitectura del LFM3-1.7B de LiquidAI, si bien la model card no detalla las características específicas de dicha arquitectura. El repositorio tiene un tamaño de 3,5 GB y los pesos se distribuyen en formato safetensors, con código personalizado (custom_code) que requiere confiar en la implementación del autor para su carga mediante transformers.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| electroglyph/LFM3-1.7B-fiction-nblora-merged2 | 1,73 B | No disponible | No disponible | HuggingFace (0 descargas) |
-| LiquidAI/LFM3-1.7B (base) | ~1,7 B | No disponible en esta ficha | No disponible en esta ficha | HuggingFace (modelo base oficial) |
-| Alternativas de ~1,5-2 B (p. ej. Qwen2.5-1.5B, Llama-3.2-1B) | 1-2 B | 32k-128k (según modelo) | Apache-2.0 / Llama Community | HuggingFace, ampliamente adoptados |
+| electroglyph/LFM3-1.7B-fiction-nblora-merged2 | 1,73 B | No disponible | No disponible | Hugging Face (0 descargas) |
+| LiquidAI/LFM3-1.7B (base) | ~1,7 B | No disponible en esta ficha | No disponible en esta ficha | Hugging Face (modelo base oficial) |
+| Alternativas de ~1,5-2 B (p. ej. Qwen2.5-1.5B, Llama-3.2-1B) | 1-2 B | 32k-128k (según modelo) | Apache-2.0 / Llama Community | Hugging Face, ampliamente adoptados |
 
 No se dispone de datos de rendimiento del modelo evaluado que permitan una comparación cuantitativa con alternativas.
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento del modelo evaluado que permitan una compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/electroglyph/LFM3-1.7B-fiction-nblora-merged2
+- Modelo en Hugging Face: https://huggingface.co/electroglyph/LFM3-1.7B-fiction-nblora-merged2
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Repositorio TRL: https://github.com/huggingface/trl

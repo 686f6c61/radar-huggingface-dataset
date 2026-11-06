@@ -23,7 +23,7 @@ Su interés actual está en que ataca un problema concreto de los pipelines de a
 | Modalidades de entrada | imagen, video y texto |
 | Tipo de salida | probabilidad calibrada por opcion, en una unica pasada forward |
 | Modelo base | Qwen/Qwen3.5-4B |
-| Fecha de publicacion | 27 de septiembre de 2026 (segun HuggingFace) |
+| Fecha de publicacion | 27 de septiembre de 2026 (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -108,7 +108,7 @@ Frente a modelos de decision alternativos, la model card menciona Jev 1.13 (solo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OmniJev/OneJev-4B
+- Modelo en Hugging Face: https://huggingface.co/OmniJev/OneJev-4B
 - Coleccion OneJev: https://huggingface.co/collections/OmniJev/onejev
 - Repositorio GitHub: https://github.com/OmniJev/OneJev
 - Sitio web del proyecto: https://omnijev.github.io/OneJev/

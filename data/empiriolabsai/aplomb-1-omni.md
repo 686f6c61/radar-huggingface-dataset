@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Aplomb 1 Omni es un modelo de decisión multimodal desarrollado por EmpirioLabs AI, publicado en HuggingFace bajo el identificador `empiriolabsai/aplomb-1-omni`. No se trata de un modelo generativo de propósito general, sino de un modelo orientado a tareas de clasificación y decisión: responde preguntas de tipo sí/no, elección entre opciones, puntuación numérica y selección de herramientas (tool selection), produciendo probabilidades calibradas. Su particularidad es que opera sobre múltiples modalidades simultáneamente: texto, imagen, vídeo y audio, incluyendo llamadas, notas de voz, sonidos y música.
+Aplomb 1 Omni es un modelo de decisión multimodal desarrollado por EmpirioLabs AI, publicado en Hugging Face bajo el identificador `empiriolabsai/aplomb-1-omni`. No se trata de un modelo generativo de propósito general, sino de un modelo orientado a tareas de clasificación y decisión: responde preguntas de tipo sí/no, elección entre opciones, puntuación numérica y selección de herramientas (tool selection), produciendo probabilidades calibradas. Su particularidad es que opera sobre múltiples modalidades simultáneamente: texto, imagen, vídeo y audio, incluyendo llamadas, notas de voz, sonidos y música.
 
 Técnicamente es un fine-tune del modelo base Qwen/Qwen3-Omni-30B-A3B-Instruct, una arquitectura MoE (Mixture of Experts) multimodal de la familia Qwen3-Omni. El repositorio contiene 35.259.818.545 parámetros en formato safetensors (aproximadamente 35,26 mil millones), con un tamaño de repositorio de 70,5 GB, lo que es coherente con pesos en precisión BF16/FP16. La model card lo registra con el pipeline `zero-shot-classification` y con las etiquetas `decision-model`, `calibrated-probabilities`, `tool-selection`, `multimodal`, `vision`, `video` y `audio`.
 
-Su relevancia actual radica en cubrir un nicho poco frecuente: la evaluación y el enrutamiento multimodal con salida probabilística calibrada, algo útil para sistemas de agentes, moderación y control de calidad sobre contenido audiovisual. El acceso al modelo está restringido (gated) y requiere aceptar las condiciones en HuggingFace. La licencia es `empiriolabs-model-license-1.0` (etiquetada como `other`), y el modelo declara únicamente el idioma inglés.
+Su relevancia actual radica en cubrir un nicho poco frecuente: la evaluación y el enrutamiento multimodal con salida probabilística calibrada, algo útil para sistemas de agentes, moderación y control de calidad sobre contenido audiovisual. El acceso al modelo está restringido (gated) y requiere aceptar las condiciones en Hugging Face. La licencia es `empiriolabs-model-license-1.0` (etiquetada como `other`), y el modelo declara únicamente el idioma inglés.
 
 ## Especificaciones tecnicas
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aplomb 1 Omni | 35,26 B (MoE) | No disponible | Texto, imagen, video, audio | empiriolabs-model-license-1.0 (gated) | HuggingFace, acceso restringido |
-| Qwen3-Omni-30B-A3B-Instruct (modelo base) | 30 B (MoE, 3 B activos) | No disponible en esta ficha | Texto, imagen, video, audio | Segun Qwen (no confirmada aqui) | HuggingFace |
+| Aplomb 1 Omni | 35,26 B (MoE) | No disponible | Texto, imagen, video, audio | empiriolabs-model-license-1.0 (gated) | Hugging Face, acceso restringido |
+| Qwen3-Omni-30B-A3B-Instruct (modelo base) | 30 B (MoE, 3 B activos) | No disponible en esta ficha | Texto, imagen, video, audio | Segun Qwen (no confirmada aqui) | Hugging Face |
 | Alternativas de clasificacion multimodal especializada | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Solo se dispone de datos fiables del modelo base a partir de la informacion proporcionada. No se conocen con detalle modelos directamente comparables en la misma categoria de clasificacion/decision multimodal.
@@ -82,13 +82,13 @@ Solo se dispone de datos fiables del modelo base a partir de la informacion prop
 - Calibracion: aunque las probabilidades se anuncian como calibradas, no se aportan datos de evaluacion que lo cuantifiquen; conviene validar la calibracion en el dominio de uso.
 - Alucinacion y errores de decision: al ser un modelo de decision, los errores se manifiestan como clasificaciones incorrectas; en tareas sensibles (moderacion, cumplimiento) se recomienda supervision humana o umbrales conservadores.
 - Licencia: `empiriolabs-model-license-1.0` es una licencia personalizada; no se detallan en la informacion disponible las condiciones para uso comercial, por lo que debe revisarse antes de un despliegue en produccion.
-- Acceso restringido: el modelo esta en modo gated y requiere aceptar condiciones en HuggingFace, lo que afecta a la automatizacion de descargas y CI/CD.
+- Acceso restringido: el modelo esta en modo gated y requiere aceptar condiciones en Hugging Face, lo que afecta a la automatizacion de descargas y CI/CD.
 - Sesgos: no se dispone de informacion sobre evaluaciones de sesgo del modelo base ni del fine-tune.
 - Recursos: el tamano (70,5 GB en safetensors) limita su uso a infraestructura con GPU de alta memoria o configuraciones multi-GPU.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/empiriolabsai/aplomb-1-omni
+- Hugging Face: https://huggingface.co/empiriolabsai/aplomb-1-omni
 - Pagina del modelo (API, precios y playground): https://empiriolabs.ai/models/aplomb-1-omni
 - Documentacion: https://docs.empiriolabs.ai/models/aplomb-1-omni
 - Playground: https://platform.empiriolabs.ai/dashboard/playground?model=aplomb-1-omni

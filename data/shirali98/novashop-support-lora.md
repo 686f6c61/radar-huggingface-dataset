@@ -2,7 +2,7 @@
 
 ## Resumen
 
-novashop-support-lora es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario shirali98 bajo el identificador `shirali98/novashop-support-lora`. Se trata de un ajuste fino supervisado (SFT) aplicado sobre el modelo base `unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`, es decir, una version cuantizada a 4 bits de Meta Llama 3.1 8B Instruct preparada con la libreria Unsloth. El repositorio contiene unicamente los pesos del adaptador (0,2 GB), no el modelo completo, por lo que su uso requiere descargar y cargar por separado el modelo base.
+novashop-support-lora es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario shirali98 bajo el identificador `shirali98/novashop-support-lora`. Se trata de un ajuste fino supervisado (SFT) aplicado sobre el modelo base `unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`, es decir, una version cuantizada a 4 bits de Meta Llama 3.1 8B Instruct preparada con la libreria Unsloth. El repositorio contiene unicamente los pesos del adaptador (0,2 GB), no el modelo completo, por lo que su uso requiere descargar y cargar por separado el modelo base.
 
 El nombre del adaptador sugiere un ajuste orientado a soporte al cliente en un contexto de comercio electronico ("novashop-support"), aunque la model card publicada es una plantilla sin rellenar y no confirma el dominio, el dataset ni el procedimiento de entrenamiento empleados. La relevancia de este tipo de publicaciones radica en que los adaptadores LoRA permiten especializar un modelo de 8B parametros con un coste de entrenamiento y almacenamiento muy reducido, reutilizando la capacidad general del modelo base.
 
@@ -25,7 +25,7 @@ Dado que la model card no incluye informacion sustantiva, la mayor parte de los 
 
 El artefacto es un adaptador LoRA, una tecnica de ajuste eficiente en parametros que congela los pesos del modelo base e inserta matrices de bajo rango entrenables en determinadas capas del transformer. La libreria declarada es PEFT (version 0.20.0), con soporte de TRL y Unsloth para el entrenamiento. El modelo subyacente es un transformer decoder-only de tipo Llama 3.1 8B Instruct, con arquitectura densa (no MoE), normalizacion RMSNorm y atencion agrupada por consultas (GQA).
 
-No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens, la composicion de los datos, la existencia de fases de RLHF o DPO posteriores, ni sobre hiperparametros concretos (tasa de aprendizaje, numero de pasos, rango del adaptador LoRA, etc.). La model card original no rellena ninguna de estas secciones. La unica referencia tecnica dentro de la plantilla remite al calculo de emisiones de carbono de Lacoste et al. (2019), que es un texto generico de la plantilla de HuggingFace y no un dato especifico de este modelo.
+No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens, la composicion de los datos, la existencia de fases de RLHF o DPO posteriores, ni sobre hiperparametros concretos (tasa de aprendizaje, numero de pasos, rango del adaptador LoRA, etc.). La model card original no rellena ninguna de estas secciones. La unica referencia tecnica dentro de la plantilla remite al calculo de emisiones de carbono de Lacoste et al. (2019), que es un texto generico de la plantilla de Hugging Face y no un dato especifico de este modelo.
 
 ## Capacidades
 
@@ -88,7 +88,7 @@ La comparacion con otros modelos de la misma categoria es limitada porque no hay
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shirali98/novashop-support-lora
+- Hugging Face: https://huggingface.co/shirali98/novashop-support-lora
 - Modelo base: https://huggingface.co/unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit
 - Referencia citada en la plantilla (calculo de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML (mencionada en la plantilla): https://mlco2.github.io/impact#compute

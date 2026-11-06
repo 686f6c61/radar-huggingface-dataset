@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LTX-Video 0.9.8 13B distilled es un modelo de generación de vídeo a partir de imagen (image-to-video) basado en arquitectura DiT (Diffusion Transformer), desarrollado originalmente por Lightricks. Esta ficha concreta corresponde a una redistribución publicada por el usuario `biali` en HuggingFace, con 13.042.569.344 parámetros reales verificados en los pesos safetensors y un tamaño de repositorio de 47,9 GB. El modelo forma parte de la familia LTX-Video 0.9.8, que incluye variantes dev, distilled, mix y fp8, tanto en 13B como en 2B.
+LTX-Video 0.9.8 13B distilled es un modelo de generación de vídeo a partir de imagen (image-to-video) basado en arquitectura DiT (Diffusion Transformer), desarrollado originalmente por Lightricks. Esta ficha concreta corresponde a una redistribución publicada por el usuario `biali` en Hugging Face, con 13.042.569.344 parámetros reales verificados en los pesos safetensors y un tamaño de repositorio de 47,9 GB. El modelo forma parte de la familia LTX-Video 0.9.8, que incluye variantes dev, distilled, mix y fp8, tanto en 13B como en 2B.
 
 La relevancia del modelo radica en su capacidad de generar vídeo a 30 FPS y resolución 1216×704 más rápido de lo que se tarda en reproducirlo, según la model card. La variante distilled está pensada para iteraciones rápidas, con menor consumo de VRAM y una ligera reducción de calidad frente a la variante dev, lo que la hace adecuada para prototipado y flujos de trabajo con recursos limitados.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Resolución / FPS | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LTX-Video 0.9.8 13B distilled (esta ficha) | 13,04 B | 1216×704 / 30 FPS | no disponible | other | HuggingFace (redistribución por biali) |
-| LTX-Video 0.9.8 13B dev | 13 B (familia) | 1216×704 / 30 FPS | no disponible | other | HuggingFace / Lightricks |
-| LTX-Video 0.9.8 2B distilled | 2 B (familia) | no disponible | no disponible | other | HuggingFace / Lightricks |
-| LTX-Video 0.9.8 13B distilled fp8 | 13 B (cuantizado) | 1216×704 / 30 FPS | no disponible | other | HuggingFace / Lightricks |
+| LTX-Video 0.9.8 13B distilled (esta ficha) | 13,04 B | 1216×704 / 30 FPS | no disponible | other | Hugging Face (redistribución por biali) |
+| LTX-Video 0.9.8 13B dev | 13 B (familia) | 1216×704 / 30 FPS | no disponible | other | Hugging Face / Lightricks |
+| LTX-Video 0.9.8 2B distilled | 2 B (familia) | no disponible | no disponible | other | Hugging Face / Lightricks |
+| LTX-Video 0.9.8 13B distilled fp8 | 13 B (cuantizado) | 1216×704 / 30 FPS | no disponible | other | Hugging Face / Lightricks |
 
 La comparativa se limita a variantes de la misma familia porque la información proporcionada no incluye datos de otros modelos de image-to-video comparables. La variante dev ofrece la mayor calidad a costa de más VRAM; la distilled prioriza velocidad y menor consumo; la 2B distilled reduce el tamaño para entornos con VRAM muy limitada; y las variantes fp8 cuantizan los pesos para reducir requisitos de memoria.
 
@@ -89,7 +89,7 @@ La comparativa se limita a variantes de la misma familia porque la información 
 
 ## Enlaces
 
-- [HuggingFace: biali/LTX-Video-0.9.8-13B-distilled](https://huggingface.co/biali/LTX-Video-0.9.8-13B-distilled)
+- [Hugging Face: biali/LTX-Video-0.9.8-13B-distilled](https://huggingface.co/biali/LTX-Video-0.9.8-13B-distilled)
 - [Repositorio oficial LTX-Video (GitHub)](https://github.com/Lightricks/LTX-Video)
 - [ComfyUI-LTXVideo (GitHub)](https://github.com/Lightricks/ComfyUI-LTXVideo)
 - [Config ltxv-13b-0.9.8-dev.yaml](https://github.com/Lightricks/LTX-Video/blob/main/configs/ltxv-13b-0.9.8-dev.yaml)

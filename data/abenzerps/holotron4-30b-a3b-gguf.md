@@ -87,7 +87,7 @@ No se han publicado en la información disponible resultados de benchmarks gener
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Holotron4-30B-A3B (esta ficha) | 31,58B totales / ~3B activos | no disponible | NVIDIA Open Model Agreement | GGUF (Q4_0, Q8_0) y proyector F16 en HuggingFace |
+| Holotron4-30B-A3B (esta ficha) | 31,58B totales / ~3B activos | no disponible | NVIDIA Open Model Agreement | GGUF (Q4_0, Q8_0) y proyector F16 en Hugging Face |
 | Nemotron 3 Nano 30B-A3B (modelo base de la familia) | 30B-A3B (aprox.) | no disponible | no disponible en la información proporcionada | GGUF (unsloth/Nemotron-3-Nano-30B-A3B-GGUF) y safetensors |
 | Holo4 35B-A3B (MoE de H Company) | 35B-A3B | no disponible | no disponible en la información proporcionada | Pesos abiertos según H Company y API de H Models |
 
@@ -108,7 +108,7 @@ No se dispone de datos comparativos de rendimiento directo entre estos tres mode
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/abenzerps/Holotron4-30B-A3B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/abenzerps/Holotron4-30B-A3B-GGUF
 - Modelo base: https://huggingface.co/Hcompany/Holotron4-30B-A3B
 - Revisión de la plantilla de chat: https://huggingface.co/Hcompany/Holotron4-30B-A3B/commit/52184310f6c916e5e7d4b8f055af49fc41642574
 - Blog de H Company sobre la familia Holo4: https://huggingface.co/blog/Hcompany/holo4

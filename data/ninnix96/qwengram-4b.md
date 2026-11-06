@@ -97,8 +97,8 @@ Nota: las cifras de "stock" difieren entre ambas tablas porque proceden de conju
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwengram-4B | 4.352.567.814 | no disponible | Perplejidad de validacion 10,984210; LAMBADA-1000 66,6%; HellaSwag-1000 55,1% | Apache 2.0 | GGUF en HuggingFace; requiere fork de llama.cpp y sidecar PLE de ~32 GB |
-| Qwen3.5-4B (stock, backbone congelado) | aproximadamente 4B | no disponible | Perplejidad de validacion 11,298811; LAMBADA-1000 65,9%; HellaSwag-1000 54,8% | no disponible en la informacion proporcionada | HuggingFace |
+| Qwengram-4B | 4.352.567.814 | no disponible | Perplejidad de validacion 10,984210; LAMBADA-1000 66,6%; HellaSwag-1000 55,1% | Apache 2.0 | GGUF en Hugging Face; requiere fork de llama.cpp y sidecar PLE de ~32 GB |
+| Qwen3.5-4B (stock, backbone congelado) | aproximadamente 4B | no disponible | Perplejidad de validacion 11,298811; LAMBADA-1000 65,9%; HellaSwag-1000 54,8% | no disponible en la informacion proporcionada | Hugging Face |
 | Lectores Qwengram de 0,8B y 2B (mismo autor, mismo fork) | no disponible | no disponible | no disponible | no disponible | Soportados por el fork en IDX2/IDX8; el autor menciona una tabla historica entre escalas, pero sin cifras en la informacion disponible |
 
 No se dispone de datos de otros modelos de 4B comparables (por ejemplo, alternativas con memoria externa o arquitecturas hibridas) en la informacion proporcionada.
@@ -119,7 +119,7 @@ No se dispone de datos de otros modelos de 4B comparables (por ejemplo, alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ninnix96/Qwengram-4B
+- Modelo en Hugging Face: https://huggingface.co/Ninnix96/Qwengram-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Estudio de transferencia PLE (Qwen3.5-4B): https://github.com/Ninnix/qwen-ple-transfer/tree/main/qwen35-4b
 - Fork de llama.cpp para Qwengram: https://github.com/Ninnix/llama.cpp-qwengram

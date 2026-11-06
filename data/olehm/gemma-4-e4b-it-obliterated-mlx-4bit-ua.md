@@ -2,11 +2,11 @@
 
 ## Resumen
 
-OlehM/Gemma-4-E4B-IT-Obliterated-MLX-4bit-UA es un repositorio alojado en HuggingFace por el usuario OlehM, publicado y actualizado el 19 de septiembre de 2026 segun los metadatos de la plataforma. La model card asociada contiene unicamente la declaracion de licencia Apache 2.0 y ningun otro contenido tecnico: no hay descripcion del modelo, del proceso de entrenamiento, del dataset utilizado ni de los resultados obtenidos.
+OlehM/Gemma-4-E4B-IT-Obliterated-MLX-4bit-UA es un repositorio alojado en Hugging Face por el usuario OlehM, publicado y actualizado el 19 de septiembre de 2026 segun los metadatos de la plataforma. La model card asociada contiene unicamente la declaracion de licencia Apache 2.0 y ningun otro contenido tecnico: no hay descripcion del modelo, del proceso de entrenamiento, del dataset utilizado ni de los resultados obtenidos.
 
 El identificador del repositorio sugiere, por convencion de nomenclatura, que se trata de un modelo derivado de la familia Gemma con arquitectura de mezcla de expertos (la etiqueta "E4B" se usa habitualmente para indicar parametros activos), ajustado para instrucciones ("IT"), sometido a algun tipo de ablacion o eliminacion de alineamiento de seguridad ("Obliterated"), cuantizado a 4 bits en formato MLX y orientado al idioma ucraniano ("UA"). Ninguna de estas inferencias esta confirmada por la informacion disponible, por lo que deben tratarse como hipotesis de trabajo.
 
-La relevancia de la ficha es limitada en su estado actual: el repositorio registra 0 descargas y 0 "likes", no incluye pipeline declarado ni idiomas declarados, y no aporta datos de benchmarks. Cualquier evaluacion seria requiere inspeccionar los pesos y la configuracion del repositorio directamente en HuggingFace antes de considerarlo para uso en produccion.
+La relevancia de la ficha es limitada en su estado actual: el repositorio registra 0 descargas y 0 "likes", no incluye pipeline declarado ni idiomas declarados, y no aporta datos de benchmarks. Cualquier evaluacion seria requiere inspeccionar los pesos y la configuracion del repositorio directamente en Hugging Face antes de considerarlo para uso en produccion.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La relevancia de la ficha es limitada en su estado actual: el repositorio regist
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible (el nombre indica MLX; no verificado en la model card) |
 | Autor | OlehM |
-| Fecha de publicacion | 2026-09-19 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-19 (segun metadatos de Hugging Face) |
 | Fecha de actualizacion | 2026-09-19 |
 | Descargas | 0 |
 | Likes | 0 |
@@ -83,7 +83,7 @@ No disponible. En la informacion proporcionada no figura ningun modelo comparabl
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma-4-E4B-IT-Obliterated-MLX-4bit-UA | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| Gemma-4-E4B-IT-Obliterated-MLX-4bit-UA | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -106,10 +106,10 @@ Para construir una comparativa util habria que identificar primero el modelo bas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OlehM/Gemma-4-E4B-IT-Obliterated-MLX-4bit-UA
+- Hugging Face: https://huggingface.co/OlehM/Gemma-4-E4B-IT-Obliterated-MLX-4bit-UA
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/OlehM
+- Perfil del autor en Hugging Face: https://huggingface.co/OlehM
 - Documentacion de MLX: no disponible en la informacion proporcionada (referencia general del framework, no vinculada al modelo)

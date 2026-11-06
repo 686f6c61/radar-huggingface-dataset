@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentscope-ai/QwenPaw-Flash-9B-BF16
+- Repositorio Hugging Face: https://huggingface.co/agentscope-ai/QwenPaw-Flash-9B-BF16
 - Repositorio base (safetensors): https://huggingface.co/agentscope-ai/QwenPaw-Flash-9B
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-9B
 - Árbol del checkpoint original referenciado en la model card: https://huggingface.co/agentscope-ai/QwenPaw-Flash-9B/tree/e5350d550344c59b78ce8c4b91dd052dd34ca3eb

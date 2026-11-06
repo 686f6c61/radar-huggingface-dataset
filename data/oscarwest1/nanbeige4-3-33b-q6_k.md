@@ -72,6 +72,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/oscarwest1/Nanbeige4.3-33B-Q6_K
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/oscarwest1/Nanbeige4.3-33B-Q6_K
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la información proporcionada.

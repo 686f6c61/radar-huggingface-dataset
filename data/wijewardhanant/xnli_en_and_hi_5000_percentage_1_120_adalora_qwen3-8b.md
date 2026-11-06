@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador PEFT (AdaLoRA) entrenado sobre el modelo 
 
 El identificador del repositorio (xnli_en_and_hi_5000_percentage_1_120_AdaLoRA_Qwen3-8b) sugiere que el ajuste fino se realizo sobre el corpus XNLI en ingles e hindi, con un subconjunto de 5000 ejemplos y algun tipo de porcentaje o configuracion numerica intermedia (1, 120) cuyo significado no se documenta. XNLI es una tarea de inferencia de lenguaje natural (NLI) con tres etiquetas: implicacion, neutralidad y contradiccion, por lo que el adaptador estaria orientado a clasificacion de pares de frases y no a generacion abierta. Esta interpretacion procede unicamente del nombre del repositorio y no esta confirmada en la model card.
 
-La relevancia de esta publicacion es limitada y de caracter experimental: la model card es la plantilla por defecto de HuggingFace sin ninguna seccion completada, no hay resultados de evaluacion, no se declara licencia, idiomas ni datos de entrenamiento, y el repositorio acumula 0 descargas y 0 likes. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo. Debe tratarse, por tanto, como un artefacto de investigacion reproducible solo parcialmente y no como un componente listo para produccion.
+La relevancia de esta publicacion es limitada y de caracter experimental: la model card es la plantilla por defecto de Hugging Face sin ninguna seccion completada, no hay resultados de evaluacion, no se declara licencia, idiomas ni datos de entrenamiento, y el repositorio acumula 0 descargas y 0 likes. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo. Debe tratarse, por tanto, como un artefacto de investigacion reproducible solo parcialmente y no como un componente listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ La relevancia de esta publicacion es limitada y de caracter experimental: la mod
 
 El objeto publicado es un adaptador AdaLoRA (Adaptive Low-Rank Adaptation), una variante de LoRA que asigna de forma dinamica el presupuesto de rango entre las distintas matrices de pesos durante el entrenamiento, podando las componentes menos relevantes. Los unicos detalles confirmados son la libreria (PEFT 0.17.1), el modelo base (Qwen3-8B-Base) y el tamano del repositorio (0,8 GB). No se documentan hiperparametros, rango objetivo, alpha, dropout, tasa de aprendizaje, numero de pasos ni estrategia de poda.
 
-Respecto a los datos, el identificador apunta a XNLI (inferencia de lenguaje natural en ingles e hindi, 5000 ejemplos, con los valores "percentage_1_120" sin explicar). No hay informacion sobre el numero de tokens vistos, la composicion exacta del dataset, si se aplico preprocesado adicional, ni si se emplearon tecnicas de alineacion como RLHF o DPO. La model card no incluye ninguna seccion de entrenamiento completada. El tag arxiv:1910.09700 que aparece en la metadata corresponde a Lacoste et al. (2019), el articulo sobre estimacion de emisiones de carbono que la plantilla de HuggingFace cita por defecto, y no a una publicacion tecnica sobre este modelo.
+Respecto a los datos, el identificador apunta a XNLI (inferencia de lenguaje natural en ingles e hindi, 5000 ejemplos, con los valores "percentage_1_120" sin explicar). No hay informacion sobre el numero de tokens vistos, la composicion exacta del dataset, si se aplico preprocesado adicional, ni si se emplearon tecnicas de alineacion como RLHF o DPO. La model card no incluye ninguna seccion de entrenamiento completada. El tag arxiv:1910.09700 que aparece en la metadata corresponde a Lacoste et al. (2019), el articulo sobre estimacion de emisiones de carbono que la plantilla de Hugging Face cita por defecto, y no a una publicacion tecnica sobre este modelo.
 
 ## Capacidades
 
@@ -57,7 +57,7 @@ Advertencia: los escenarios siguientes asumen que el adaptador realiza clasifica
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye la seccion de evaluacion completada, no hay tabla de resultados en el repositorio de HuggingFace y la busqueda web no devolvio ningun material asociado al modelo. No se dispone por tanto de valores de XNLI, MMLU, HumanEval ni de ninguna otra metrica.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye la seccion de evaluacion completada, no hay tabla de resultados en el repositorio de Hugging Face y la busqueda web no devolvio ningun material asociado al modelo. No se dispone por tanto de valores de XNLI, MMLU, HumanEval ni de ninguna otra metrica.
 
 ## Requisitos de hardware
 
@@ -77,13 +77,13 @@ No se dispone de informacion sobre adaptadores comparables en la documentacion p
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_AdaLoRA_Qwen3-8b | Adaptador sobre 8 200 M (tamano del adaptador no disponible) | No disponible | NLI en-ingles/hindi (segun identificador) | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B-Base | 8 200 M | 32 768 tokens (131 072 con YaRN) | Modelo base generativo | No disponible en la informacion proporcionada | HuggingFace |
+| WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_AdaLoRA_Qwen3-8b | Adaptador sobre 8 200 M (tamano del adaptador no disponible) | No disponible | NLI en-ingles/hindi (segun identificador) | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B-Base | 8 200 M | 32 768 tokens (131 072 con YaRN) | Modelo base generativo | No disponible en la informacion proporcionada | Hugging Face |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace: no hay informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni uso previsto.
+- La model card es la plantilla por defecto de Hugging Face: no hay informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni uso previsto.
 - No se declara licencia, lo que impide determinar si el uso comercial esta permitido. Al derivar de Qwen3-8B-Base, habria que verificar tambien las condiciones de licencia del modelo base antes de cualquier despliegue.
 - Al ser un adaptador AdaLoRA de bajo rango, su capacidad de generalizacion fuera del dominio de entrenamiento (presumiblemente NLI) es incierta y probablemente limitada.
 - El corpus XNLI contiene textos con sesgos sociales y culturales; un ajuste sobre el puede propagar y amplificar esos sesgos, especialmente en la porcion en hindi, donde los recursos de evaluacion son mas escasos.
@@ -94,8 +94,8 @@ No se dispone de informacion sobre adaptadores comparables en la documentacion p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_AdaLoRA_Qwen3-8b
+- Repositorio en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_hi_5000_percentage_1_120_AdaLoRA_Qwen3-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
-- Referencia citada en los tags de la metadata: https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019; incluida por la plantilla de HuggingFace, no describe este modelo)
+- Referencia citada en los tags de la metadata: https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019; incluida por la plantilla de Hugging Face, no describe este modelo)
 - Paper, repositorio de codigo, demo o blog del autor: no disponibles
 - La busqueda web realizada no devolvio ningun resultado relacionado con este modelo.

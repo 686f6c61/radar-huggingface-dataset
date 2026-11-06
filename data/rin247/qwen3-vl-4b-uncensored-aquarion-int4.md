@@ -76,7 +76,7 @@ La comparativa muestra que este modelo es el unico de los tres que combina ablit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/Qwen3-VL-4B-Uncensored-Aquarion-INT4
+- Repositorio Hugging Face: https://huggingface.co/Rin247/Qwen3-VL-4B-Uncensored-Aquarion-INT4
 - Modelo base Qwen3-VL-4B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Version abliterated de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated
 - Repositorio oficial Qwen3-VL: https://github.com/QwenLM/Qwen3-VL

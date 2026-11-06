@@ -2,7 +2,7 @@
 
 ## Resumen
 
-K-WALUAN es un modelo de lenguaje publicado en HuggingFace por el usuario wolffenbuetell bajo el identificador `wolffenbuetell/K-WALUAN`. Se distribuye exclusivamente en formato GGUF, lo que indica que esta pensado para inferencia local mediante herramientas compatibles con dicho formato (llama.cpp, Ollama, LM Studio, entre otras). El repositorio tiene un tamano de 65,8 GB y acumula 312 descargas, sin likes registrados.
+K-WALUAN es un modelo de lenguaje publicado en Hugging Face por el usuario wolffenbuetell bajo el identificador `wolffenbuetell/K-WALUAN`. Se distribuye exclusivamente en formato GGUF, lo que indica que esta pensado para inferencia local mediante herramientas compatibles con dicho formato (llama.cpp, Ollama, LM Studio, entre otras). El repositorio tiene un tamano de 65,8 GB y acumula 312 descargas, sin likes registrados.
 
 El dato mas relevante disponible es el recuento de parametros en safetensors: 12.820.073.036, es decir, aproximadamente 12,8 mil millones de parametros. Este tamano lo situa en la categoria de modelos de gama media, adecuados para despliegue en GPU de consumo con cuantizacion agresiva o en configuraciones multi-GPU. Sin embargo, la informacion publica del repositorio es muy limitada: no se especifica licencia, idiomas soportados, pipeline ni arquitectura concreta.
 
@@ -23,7 +23,7 @@ La ausencia de documentacion tecnica (model card sin contenido descriptivo, sin 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en el repositorio de HuggingFace. El recuento de parametros en safetensors (12.820.073.036) sugiere una red de aproximadamente 12,8 mil millones de parametros, pero se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE) o una arquitectura hibrida. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO o cualquier innovacion tecnica (atencion lineal, decodificacion especulativa, etc.).
+No se ha publicado informacion sobre la arquitectura del modelo en el repositorio de Hugging Face. El recuento de parametros en safetensors (12.820.073.036) sugiere una red de aproximadamente 12,8 mil millones de parametros, pero se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE) o una arquitectura hibrida. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO o cualquier innovacion tecnica (atencion lineal, decodificacion especulativa, etc.).
 
 El unico dato estructural confirmado es el formato de distribucion: GGUF. Este formato, propio del ecosistema llama.cpp, empaqueta pesos cuantizados junto con metadatos de arquitectura en un unico fichero, lo que facilita la inferencia en CPU y GPU sin dependencias de frameworks pesados. El tamano de 65,8 GB del repositorio es coherente con la presencia de multiples variantes de cuantizacion de un modelo de ~12,8 B, aunque no se detalla cuales.
 
@@ -91,5 +91,5 @@ La comparacion se limita a parametros y disponibilidad; no se dispone de datos d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wolffenbuetell/K-WALUAN
+- Hugging Face: https://huggingface.co/wolffenbuetell/K-WALUAN
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

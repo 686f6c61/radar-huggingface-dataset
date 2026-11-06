@@ -23,7 +23,7 @@ La relevancia es doble: por un lado, permite verificación facial on-device sin 
 | Dimensión del embedding | 128 floats, normalizado en L2 dentro del grafo |
 | Salida | `[1, 128]` |
 | Umbral de similitud coseno recomendado | 0.363 (valor de OpenCV para "misma persona") |
-| Pipeline / tarea | No disponible (campo `pipeline` vacío en HuggingFace) |
+| Pipeline / tarea | No disponible (campo `pipeline` vacío en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible más 
 - Compatibilidad con GPU de consumo: sí, por diseño; cualquier GPU que exponga un backend de cómputo en Unity Sentis puede ejecutarlo, incluidos SoC móviles. El autor advierte que la lectura síncrona de GPU puede bloquearse en algunas GPU móviles, de ahí la API `EmbedAsync`.
 - Despliegue: exclusivamente runtime de Unity Sentis. No aplican vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo de lenguaje.
 - Latencia y throughput: no disponibles. La model card recomienda calcular un embedding por cada nueva pista de cara y no por fotograma, con reverificación aproximadamente cada segundo.
-- Almacenamiento: el repositorio figura con 0.0 GB en HuggingFace (cifra redondeada); el contenido son un fichero `.sentis` y un único `SFace.cs`.
+- Almacenamiento: el repositorio figura con 0.0 GB en Hugging Face (cifra redondeada); el contenido son un fichero `.sentis` y un único `SFace.cs`.
 
 ## Comparativa con modelos similares
 
@@ -102,10 +102,10 @@ La comparación más directa es contra el propio SFace de OpenCV Zoo, del que es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sky-Kim/com.sky.sentis.sface
+- Repositorio en Hugging Face: https://huggingface.co/Sky-Kim/com.sky.sentis.sface
 - Detector complementario YuNet en Sentis: https://huggingface.co/Sky-Kim/com.sky.sentis.yunet
 - OpenCV Zoo, modelo SFace: https://github.com/opencv/opencv_zoo/tree/main/models/face_recognition_sface
-- Pesos originales en HuggingFace (OpenCV): https://huggingface.co/opencv/face_recognition_sface
+- Pesos originales en Hugging Face (OpenCV): https://huggingface.co/opencv/face_recognition_sface
 - Implementación de referencia SFace (zhongyy): https://github.com/zhongyy/SFace
 - Paper: SFace: Sigmoid-Constrained Hypersphere Loss for Robust Face Recognition (IEEE TIP 2021): https://arxiv.org/abs/2205.12010
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card del autor.

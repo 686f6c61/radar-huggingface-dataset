@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer for Retrieval es un repositorio experimental publicado por el usuario annaoliynyk en HuggingFace que contiene una implementación funcional de una arquitectura tipo Mixer orientada a tareas de recuperación (retrieval). El autor lo describe explícitamente como un punto de partida reproducible para pruebas de humo (smoke tests), no como un modelo entrenado ni evaluado. El checkpoint incluido (`model.safetensors`) es una inicialización válida, pero no ha pasado por entrenamiento ni auditoría.
+Mixer for Retrieval es un repositorio experimental publicado por el usuario annaoliynyk en Hugging Face que contiene una implementación funcional de una arquitectura tipo Mixer orientada a tareas de recuperación (retrieval). El autor lo describe explícitamente como un punto de partida reproducible para pruebas de humo (smoke tests), no como un modelo entrenado ni evaluado. El checkpoint incluido (`model.safetensors`) es una inicialización válida, pero no ha pasado por entrenamiento ni auditoría.
 
 La relevancia de este repositorio es limitada desde el punto de vista de producción: se trata de código transparente y repetible, con una configuración de arquitectura registrada en `config.json` y una receta de experimento por defecto en `training_args.json`. El autor omite deliberadamente cualquier afirmación sobre benchmarks y recomienda evaluar sobre Flickr30k con al menos tres semillas y una línea base de capacidad equivalente.
 
@@ -79,5 +79,5 @@ No se dispone de información sobre modelos comparables de la misma categoría e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/annaoliynyk/mixer-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/annaoliynyk/mixer-retrieval
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

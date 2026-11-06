@@ -95,7 +95,7 @@ No hay datos de rendimiento comparado publicados para este repositorio, por lo q
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/skillsafe-ai/qwen3-4b-q4f16
+- Ficha en Hugging Face: https://huggingface.co/skillsafe-ai/qwen3-4b-q4f16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Upstream MLC de esta conversion: https://huggingface.co/mlc-ai/Qwen3-4B-q4f16_1-MLC/tree/a5c9fab855e3ccbdfed2e7e69683d75f30332161
 - Recetas de conversion de SkillSafe: https://github.com/skillsafe-admin/skillsafe.ai-website/tree/main/models

@@ -100,7 +100,7 @@ Los valores de parametros e idiomas de los modelos comparados son aproximados y 
 
 ## Enlaces
 
-- HuggingFace (repositorio analizado): https://huggingface.co/suryatmodulus/nemotron-3.5-asr-streaming-0.6b
+- Hugging Face (repositorio analizado): https://huggingface.co/suryatmodulus/nemotron-3.5-asr-streaming-0.6b
 - Modelo de referencia monolingue: https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b
 - Pagina de desarrollador de Nemotron: https://developer.nvidia.com/nemotron
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/

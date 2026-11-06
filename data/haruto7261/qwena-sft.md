@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QwenA-SFT es un modelo de lenguaje ajustado mediante fine-tuning supervisado (SFT) a partir de una base de la familia Qwen, publicado por el usuario Haruto7261 en HuggingFace. El modelo está claramente orientado al procesamiento del japonés, con un énfasis específico en el dialecto de Kagoshima (薩隅方言), y se ha entrenado sobre un corpus que combina diálogos cotidianos, corpus de personas reales, textos literarios de Aozora Bunko, actas parlamentarias y recursos dialectales.
+QwenA-SFT es un modelo de lenguaje ajustado mediante fine-tuning supervisado (SFT) a partir de una base de la familia Qwen, publicado por el usuario Haruto7261 en Hugging Face. El modelo está claramente orientado al procesamiento del japonés, con un énfasis específico en el dialecto de Kagoshima (薩隅方言), y se ha entrenado sobre un corpus que combina diálogos cotidianos, corpus de personas reales, textos literarios de Aozora Bunko, actas parlamentarias y recursos dialectales.
 
 El repositorio tiene un tamaño de 19,3 GB en formato safetensors, lo que sugiere un modelo de escala media (probablemente en el rango de 7B a 14B parámetros en FP16/BF16), aunque el autor no especifica la arquitectura base exacta, el número de parámetros ni la longitud de contexto en la información disponible.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QwenA-SFT | no disponible | no disponible | Japonés + dialecto de Kagoshima (SFT) | no disponible | HuggingFace (0 descargas) |
-| Modelos base Qwen (familia) | variable (no confirmado) | variable | Multilingüe generalista | Apache 2.0 en la mayoría de variantes | HuggingFace, ampliamente disponible |
-| Modelos japoneses open source (por ejemplo, variantes de Swallow, CALM, LLM-jp) | variable | variable | Japonés generalista | variable según modelo | HuggingFace |
+| QwenA-SFT | no disponible | no disponible | Japonés + dialecto de Kagoshima (SFT) | no disponible | Hugging Face (0 descargas) |
+| Modelos base Qwen (familia) | variable (no confirmado) | variable | Multilingüe generalista | Apache 2.0 en la mayoría de variantes | Hugging Face, ampliamente disponible |
+| Modelos japoneses open source (por ejemplo, variantes de Swallow, CALM, LLM-jp) | variable | variable | Japonés generalista | variable según modelo | Hugging Face |
 
 No se dispone de datos de rendimiento del modelo que permitan una comparación cuantitativa con alternativas.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento del modelo que permitan una comparación c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Haruto7261/QwenA-SFT
+- Hugging Face: https://huggingface.co/Haruto7261/QwenA-SFT
 - Japanese-Daily-Dialogue: https://huggingface.co/datasets/kan-bayashi/Japanese-Daily-Dialogue
 - MACHAcorpus: https://github.com/tatsuya-koyama/MACHAcorpus
 - RealPersonaChat: https://github.com/nu-dialogue/real-persona-chat

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/eus-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10` es un ajuste fino (fine-tune) de tipo SFT sobre el checkpoint `francesca9805/ppt-wc-uniform-newlex-eus-before-100mb-packed-bfdiso_seed10`, ambos publicados por el usuario de HuggingFace `francesca9805`. Se trata de un modelo pequeño, de arquitectura GPT-2, con 124.770.816 parámetros totales (aproximadamente 125 millones) y un repositorio de solo 0,3 GB en formato `safetensors`. Por su tamano y su pipeline declarado (`text-generation`), encaja en la categoría de modelos ligeros de generacion de texto, ejecutables incluso en CPU o en GPU de gama de entrada.
+El modelo `francesca9805/eus-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10` es un ajuste fino (fine-tune) de tipo SFT sobre el checkpoint `francesca9805/ppt-wc-uniform-newlex-eus-before-100mb-packed-bfdiso_seed10`, ambos publicados por el usuario de Hugging Face `francesca9805`. Se trata de un modelo pequeño, de arquitectura GPT-2, con 124.770.816 parámetros totales (aproximadamente 125 millones) y un repositorio de solo 0,3 GB en formato `safetensors`. Por su tamano y su pipeline declarado (`text-generation`), encaja en la categoría de modelos ligeros de generacion de texto, ejecutables incluso en CPU o en GPU de gama de entrada.
 
 El interes de esta publicacion no reside en un rendimiento puntero ni en una ventana de contexto ampliada, sino en su caracter experimental: el nombre del modelo y del modelo base apuntan a un pipeline de investigacion sobre tokenizadores y lexicos (`new-tokenizers` es el nombre del proyecto en Weights & Biases), con identificadores que sugieren un entrenamiento sobre aproximadamente 100 MB de texto, con empaquetado de secuencias (`packed`) y una semilla concreta (`seed10`). La inclusion del prefijo `eus` en el nombre es compatible con el codigo ISO 639-3 del euskera, aunque la ficha no declara idiomas soportados y esta interpretacion no puede confirmarse con la informacion disponible.
 
@@ -51,7 +51,7 @@ Las versiones de framework declaradas son TRL 0.23.0, Transformers 4.56.2, PyTor
 - Reproduccion de recetas de SFT con TRL: al declarar versiones exactas de TRL, Transformers, PyTorch y Datasets, sirve como referencia reproducible para validar pipelines de `SFTTrainer` en modelos pequenos antes de escalar a modelos mayores.
 - Generacion de texto sintetico para aumento de datos: con 125 M de parametros puede producir grandes volumenes de texto a bajo coste computacional, util para preentrenar clasificadores o para aumentar datasets en idiomas con pocos recursos, siempre que se filtre la calidad de la salida.
 - Prototipado en dispositivo o en el borde (edge): su tamano permite ejecutarlo en CPU, en una Raspberry Pi o en una GPU integrada, de modo que sirve para validar productos de autocompletado o chatbots locales antes de migrar a modelos mayores.
-- Pruebas de integracion con Text Generation Inference: la etiqueta `text-generation-inference` y `endpoints_compatible` indican que puede desplegarse en el stack de inferencia de HuggingFace, util para verificar plantillas, limites de tokens y serializacion de mensajes en entornos de staging.
+- Pruebas de integracion con Text Generation Inference: la etiqueta `text-generation-inference` y `endpoints_compatible` indican que puede desplegarse en el stack de inferencia de Hugging Face, util para verificar plantillas, limites de tokens y serializacion de mensajes en entornos de staging.
 - Docencia y formacion en ajuste fino: al ser un modelo diminuto con pipeline de entrenamiento documentado, es adecuado para talleres donde se ensena a preparar datos, empaquetar secuencias y evaluar un fine-tune en minutos, sin necesidad de GPU de datacenter.
 - Investigacion en lenguas minorizadas (si se confirma el euskera): el prefijo `eus` sugiere que el modelo forma parte de una linea de trabajo sobre euskera; se usaria en tareas de generacion asistida o normalizacion de texto en ese idioma tras validar la calidad con hablantes nativos.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| eus-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10 | 124,8 M | no disponible | no disponible | HuggingFace, safetensors | Fine-tune SFT experimental, sin benchmarks |
-| GPT-2 small (OpenAI) | 124 M | 1.024 tokens | licencia MIT modificada de OpenAI | HuggingFace, multiples formatos | Modelo base de referencia de esta familia |
-| DistilGPT-2 | 82 M | 1.024 tokens | Apache 2.0 | HuggingFace | Version destilada, mas rapida, calidad inferior al GPT-2 completo |
-| Pythia-160M (EleutherAI) | 160 M | 2.048 tokens | Apache 2.0 | HuggingFace | Suite de investigacion con checkpoints intermedios publicados |
+| eus-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10 | 124,8 M | no disponible | no disponible | Hugging Face, safetensors | Fine-tune SFT experimental, sin benchmarks |
+| GPT-2 small (OpenAI) | 124 M | 1.024 tokens | licencia MIT modificada de OpenAI | Hugging Face, multiples formatos | Modelo base de referencia de esta familia |
+| DistilGPT-2 | 82 M | 1.024 tokens | Apache 2.0 | Hugging Face | Version destilada, mas rapida, calidad inferior al GPT-2 completo |
+| Pythia-160M (EleutherAI) | 160 M | 2.048 tokens | Apache 2.0 | Hugging Face | Suite de investigacion con checkpoints intermedios publicados |
 
 La comparacion se limita a parametros, contexto, licencia y disponibilidad, porque el modelo analizado no publica resultados de evaluacion que permitan contrastar calidad. Los datos de GPT-2 small, DistilGPT-2 y Pythia-160M corresponden a sus fichas publicas ampliamente conocidas; conviene verificarlos en la fuente antes de citarlos.
 
@@ -94,7 +94,7 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad, porq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eus-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eus-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-eus-before-100mb-packed-bfdiso_seed10
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/4r1b606c

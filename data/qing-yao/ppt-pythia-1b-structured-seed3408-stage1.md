@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qing-yao/ppt-pythia-1b-structured-seed3408-stage1` es un ajuste fino (fine-tune) del modelo base `EleutherAI/pythia-1b`, publicado por el usuario qing-yao en HuggingFace. El modelo se ha entrenado mediante SFT (supervised fine-tuning) con la librería TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.8.0+cu128. Se trata, por tanto, de una variante instruida/adaptada de Pythia-1B, no de un modelo nuevo entrenado desde cero.
+`qing-yao/ppt-pythia-1b-structured-seed3408-stage1` es un ajuste fino (fine-tune) del modelo base `EleutherAI/pythia-1b`, publicado por el usuario qing-yao en Hugging Face. El modelo se ha entrenado mediante SFT (supervised fine-tuning) con la librería TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.8.0+cu128. Se trata, por tanto, de una variante instruida/adaptada de Pythia-1B, no de un modelo nuevo entrenado desde cero.
 
 El interés del modelo es limitado y muy acotado: el repositorio no incluye model card descriptiva más allá de la plantilla autogenerada por TRL, no declara licencia, idiomas, composición del dataset de ajuste ni resultados de evaluación. El nombre del checkpoint (`ppt`, `structured`, `seed3408`, `stage1`) sugiere un experimento de ajuste dentro de una campaña de entrenamiento por etapas y con semillas fijas, pero no hay documentación pública que lo confirme. En el momento de redactar esta ficha, el repositorio registra 0 descargas y 0 "likes".
 
@@ -61,17 +61,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: ~2,1 GB en fp16/bf16; ~1,1 GB en int8; ~0,7 GB en cuantización de 4 bits (estimaciones derivadas del recuento real de 1.011.781.632 parámetros).
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para fp16; RTX 3060, RTX 4060, RTX 4090, A10G, L4 o A100 para servir en producción.
 - Cabe en GPU de consumo: sí, en la práctica totalidad de GPU modernas de 6 GB o más (GTX 1660 6GB, RTX 2060, RTX 3060, RTX 4060, RTX 4090). También es viable en CPU para inferencia en lote pequeño.
-- Opciones de despliegue: `transformers` con `pipeline`, text-generation-inference (declarado compatible), vLLM (soporta arquitectura GPT-NeoX), HuggingFace Inference Endpoints. Para cuantización GGUF habría que convertir los pesos externamente; el repositorio no incluye GGUF.
+- Opciones de despliegue: `transformers` con `pipeline`, text-generation-inference (declarado compatible), vLLM (soporta arquitectura GPT-NeoX), Hugging Face Inference Endpoints. Para cuantización GGUF habría que convertir los pesos externamente; el repositorio no incluye GGUF.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `qing-yao/ppt-pythia-1b-structured-seed3408-stage1` | 1,01 B | no disponible (base: 2048) | no disponible | HuggingFace, 0 descargas |
-| `EleutherAI/pythia-1b` (modelo base) | 1,01 B | 2048 | Apache-2.0 | HuggingFace, ampliamente utilizado |
-| `TinyLlama/TinyLlama-1.1B-Chat-v1.0` | 1,1 B | 2048 | Apache-2.0 | HuggingFace, alto uso |
-| `Qwen/Qwen2.5-1.5B-Instruct` | 1,5 B | 32 768 | Apache-2.0 (para la mayoría de tamaños de la familia) | HuggingFace, alto uso |
+| `qing-yao/ppt-pythia-1b-structured-seed3408-stage1` | 1,01 B | no disponible (base: 2048) | no disponible | Hugging Face, 0 descargas |
+| `EleutherAI/pythia-1b` (modelo base) | 1,01 B | 2048 | Apache-2.0 | Hugging Face, ampliamente utilizado |
+| `TinyLlama/TinyLlama-1.1B-Chat-v1.0` | 1,1 B | 2048 | Apache-2.0 | Hugging Face, alto uso |
+| `Qwen/Qwen2.5-1.5B-Instruct` | 1,5 B | 32 768 | Apache-2.0 (para la mayoría de tamaños de la familia) | Hugging Face, alto uso |
 
 Nota: los datos de contexto y licencia de los modelos comparativos corresponden a información pública de sus respectivas model cards; no se dispone de resultados de benchmarks comparativos porque este checkpoint no publica ninguno.
 
@@ -89,7 +89,7 @@ Nota: los datos de contexto y licencia de los modelos comparativos corresponden 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-1b-structured-seed3408-stage1
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-1b-structured-seed3408-stage1
 - Modelo base: https://huggingface.co/EleutherAI/pythia-1b
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper de TRL (citado en la model card): von Werra et al., "TRL: Transformer Reinforcement Learning", 2020, https://github.com/huggingface/trl

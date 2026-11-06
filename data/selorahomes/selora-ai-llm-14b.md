@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Selora AI LLM 14B es un modelo de lenguaje instruido desarrollado por Selora Homes y publicado en HuggingFace bajo el identificador `selorahomes/Selora-AI-LLM-14B`. No es un modelo entrenado desde cero: se construye sobre Qwen3 14B (14.768.307.200 parametros) mediante cinco adaptadores LoRA especializados que comparten una unica base cuantizada en GGUF. Los cinco especialistas son `command` (control de dispositivos), `automation` (redaccion de automatizaciones y blueprints), `answer` (respuestas sobre el estado en vivo de la vivienda), `clarification` (repreguntas ante peticiones ambiguas) y `utilities` (mantenimiento, diagnostico y ayuda de configuracion anclada en documentacion).
+Selora AI LLM 14B es un modelo de lenguaje instruido desarrollado por Selora Homes y publicado en Hugging Face bajo el identificador `selorahomes/Selora-AI-LLM-14B`. No es un modelo entrenado desde cero: se construye sobre Qwen3 14B (14.768.307.200 parametros) mediante cinco adaptadores LoRA especializados que comparten una unica base cuantizada en GGUF. Los cinco especialistas son `command` (control de dispositivos), `automation` (redaccion de automatizaciones y blueprints), `answer` (respuestas sobre el estado en vivo de la vivienda), `clarification` (repreguntas ante peticiones ambiguas) y `utilities` (mantenimiento, diagnostico y ayuda de configuracion anclada en documentacion).
 
 El problema que resuelve es concreto: dotar a Home Assistant de un asistente local capaz de traducir lenguaje natural a llamadas de servicio, YAML de automatizacion y respuestas de estado, sin depender de APIs en la nube. La integracion oficial (ha-selora-ai) intercambia el adaptador activo por peticion mediante el endpoint `/lora-adapters` de `llama-server`, de modo que un solo runtime sirve las cinco intenciones. El conjunto completo de pesos ocupa unos 10,5 GB (base Q5_K_S de 10,3 GB mas cinco adaptadores F16 de entre 26 MB y 96 MB), en lugar de los mas de 50 GB que supondrian cinco modelos de 14B independientes.
 
@@ -101,12 +101,12 @@ No se dispone de comparativas publicadas frente a otros asistentes de hogar de t
 - Trampa de configuracion documentada: repetir el flag `--lora` en `llama-server` carga un unico adaptador y responde todas las intenciones con el, sin aviso. Ademas, los identificadores de slot deben resolverse por nombre de fichero y no por orden asumido.
 - Licencia: Apache-2.0 permite uso comercial, pero el repositorio incluye un fichero NOTICE con la atribucion de Qwen3 y la licencia de la base (tambien Apache-2.0); conviene conservar ambas en cualquier redistribucion.
 - Adopcion muy baja: 674 descargas y 1 like en el momento de la consulta, con un unico autor responsable del ajuste. No hay validacion independiente de los resultados publicados.
-- Fechas del repositorio: creado el 2026-08-22 y actualizado el 2026-10-16, segun los metadatos de HuggingFace.
+- Fechas del repositorio: creado el 2026-08-22 y actualizado el 2026-10-16, segun los metadatos de Hugging Face.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los unicos enlaces utiles son los de la model card y los repositorios referenciados por el autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/selorahomes/Selora-AI-LLM-14B
+- Modelo en Hugging Face: https://huggingface.co/selorahomes/Selora-AI-LLM-14B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Version fusionada para Ollama: https://huggingface.co/selorahomes/Selora-AI-LLM-14B-ollama
 - Linea de 1.7B: https://huggingface.co/selorahomes/Selora-AI-LLM-1.7B

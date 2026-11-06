@@ -111,7 +111,7 @@ Frente a estas alternativas, dl2-hw2 tiene la ventaja del tamaño reducido y la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cvidgi/dl2-hw2
+- Modelo en Hugging Face: https://huggingface.co/cvidgi/dl2-hw2
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Copias con el mismo identificador en otras cuentas: https://huggingface.co/kryalka/dl2-hw2 y https://huggingface.co/Alekseyka20x/dl2-hw2
 - Ficha de una variante en free2aitools: https://free2aitools.com/model/abramovgeorge/dl2-hw2

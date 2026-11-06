@@ -105,7 +105,7 @@ Advertencia explícita de la ficha: el acuerdo top-1 mide si ambas distribucione
 |---|---|---|---|---|---|
 | Mia-AiLab/DeepSeek-V4.1-Flash-1017-EXL3-EAQ-v1-2.9-bpw | 105,2 mil millones (totales) | no disponible | EXL3 (EAQ v1), 2,90 bpw medios, 196 GiB en 39 shards | MIT | 1.236 descargas, 12 likes |
 | LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw | mismos pesos base | no disponible | EXL3 estándar, 2,9 bpw, 210,7 GB en 39 shards; MTP/DSpark a 6 bits | no disponible en la información | referenciado como comparación directa |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 (original) | mismos pesos base | no disponible | FP8/FP4 original; incluye las tablas Engram (shards 47 y 48) | no disponible en la información | modelo base en HuggingFace |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 (original) | mismos pesos base | no disponible | FP8/FP4 original; incluye las tablas Engram (shards 47 y 48) | no disponible en la información | modelo base en Hugging Face |
 
 Frente al build de LibertAIDAI, las diferencias verificadas son: anchos de bits idénticos en los 46.702 tensores del cuerpo principal, tokenizer idéntico byte a byte, y 46 tensores MTP/DSpark a 4 bits aquí frente a 6 bits allí. No hay datos de benchmarks estándar de ninguno de los tres, así que la comparación de rendimiento se limita a las métricas de fidelidad del propio autor. Alternativas de otros tamaños o familias: no disponibles en la información proporcionada.
 
@@ -125,7 +125,7 @@ Frente al build de LibertAIDAI, las diferencias verificadas son: anchos de bits 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mia-AiLab/DeepSeek-V4.1-Flash-1017-EXL3-EAQ-v1-2.9-bpw
+- Repositorio Hugging Face: https://huggingface.co/Mia-AiLab/DeepSeek-V4.1-Flash-1017-EXL3-EAQ-v1-2.9-bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Build EXL3 2.9 bpw de referencia para comparación: https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw
 - Receta TensorFold para 2x DGX Spark: mencionada en la model card sin URL en la información disponible

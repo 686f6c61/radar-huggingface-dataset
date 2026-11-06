@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`qisunhui/ppo-SnowballTarget` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) dentro del entorno SnowballTarget, utilizando la librería Unity ML-Agents. No se trata de un modelo de lenguaje ni de un transformer generativo, sino de una política neuronal entrenada para resolver una tarea concreta de control dentro de una simulación Unity. El repositorio lo publica el usuario qisunhui en HuggingFace con fecha de creación en noviembre de 2026 y un tamaño de 0,0 GB, lo que sugiere un artefacto muy ligero, coherente con una política de red pequeña exportada en formato ONNX.
+`qisunhui/ppo-SnowballTarget` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) dentro del entorno SnowballTarget, utilizando la librería Unity ML-Agents. No se trata de un modelo de lenguaje ni de un transformer generativo, sino de una política neuronal entrenada para resolver una tarea concreta de control dentro de una simulación Unity. El repositorio lo publica el usuario qisunhui en Hugging Face con fecha de creación en noviembre de 2026 y un tamaño de 0,0 GB, lo que sugiere un artefacto muy ligero, coherente con una política de red pequeña exportada en formato ONNX.
 
-El modelo resuelve un problema acotado: controlar un agente dentro del entorno SnowballTarget de ML-Agents, presumiblemente una tarea de lanzamiento o intercepción de bolas de nieve contra un objetivo. Su relevancia es limitada fuera de ese contexto; resulta útil como ejemplo reproducible de entrenamiento PPO con ML-Agents, como punto de partida para experimentos de RL en Unity o como artefacto para visualizar el comportamiento del agente directamente en el navegador mediante el visor de HuggingFace.
+El modelo resuelve un problema acotado: controlar un agente dentro del entorno SnowballTarget de ML-Agents, presumiblemente una tarea de lanzamiento o intercepción de bolas de nieve contra un objetivo. Su relevancia es limitada fuera de ese contexto; resulta útil como ejemplo reproducible de entrenamiento PPO con ML-Agents, como punto de partida para experimentos de RL en Unity o como artefacto para visualizar el comportamiento del agente directamente en el navegador mediante el visor de Hugging Face.
 
 No hay información pública sobre arquitectura interna, número de parámetros, hiperparámetros de entrenamiento, presupuesto de entrenamiento ni métricas de recompensa. La model card es la plantilla estándar que genera ML-Agents al publicar un agente en el Hub, sin datos adicionales aportados por el autor.
 
@@ -30,7 +30,7 @@ Tampoco hay datos sobre el número de pasos de entrenamiento, la composición de
 ## Capacidades
 
 - Control de agente en el entorno SnowballTarget de Unity ML-Agents mediante política PPO entrenada.
-- Ejecución de inferencia en el visor web de HuggingFace seleccionando el archivo `.onnx` del repositorio.
+- Ejecución de inferencia en el visor web de Hugging Face seleccionando el archivo `.onnx` del repositorio.
 - Reanudación del entrenamiento desde el checkpoint con la CLI de ML-Agents.
 - Exportación e integración en un proyecto Unity mediante el componente `Behavior Parameters` y el modelo ONNX.
 - No soporta generación de texto, razonamiento simbólico, código, matemáticas, visión general ni tool calling.
@@ -41,7 +41,7 @@ Tampoco hay datos sobre el número de pasos de entrenamiento, la composición de
 
 - Reproducción de experimentos de RL en Unity: cargar el checkpoint y reanudar el entrenamiento con `mlagents-learn --resume` para comparar curvas de recompensa frente a configuraciones propias.
 - Demostración educativa de PPO con ML-Agents: usar el agente como ejemplo funcional en talleres o cursos sobre aprendizaje por refuerzo en entornos 3D.
-- Visualización en navegador: abrir el visor de HuggingFace, seleccionar el `.onnx` y observar la política actuando en SnowballTarget sin instalar Unity.
+- Visualización en navegador: abrir el visor de Hugging Face, seleccionar el `.onnx` y observar la política actuando en SnowballTarget sin instalar Unity.
 - Punto de partida para fine-tuning en variantes del entorno: reutilizar los pesos como inicialización en versiones modificadas de SnowballTarget (cambios de recompensa, obstáculos, físicas).
 - Integración en un build de Unity para pruebas de comportamiento: incorporar el ONNX como `Model` en un `Behavior Parameters` y validar la política en el editor o en un ejecutable.
 - Comparación de algoritmos: usar este agente PPO como línea base frente a entrenamientos propios con SAC, POCA u otros algoritmos disponibles en ML-Agents sobre el mismo entorno.
@@ -56,16 +56,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: muy baja; el repositorio ocupa 0,0 GB y una política ML-Agents típica para entornos vectoriales requiere del orden de megabytes. No se dispone de cifra exacta.
 - GPU recomendadas: no es necesaria GPU para inferencia; cualquier CPU moderna puede ejecutar la política. Para reentrenamiento, una GPU consumer (GTX 1660, RTX 3060 o superior) suele ser suficiente en entornos ligeros como SnowballTarget, aunque no hay datos publicados que lo confirmen para esta configuración concreta.
 - Cabe en cualquier GPU consumer e incluso en inferencia solo-CPU.
-- Opciones de despliegue: Unity ML-Agents (Barracuda/Inference Engine en el runtime de Unity), visor web de HuggingFace con el archivo ONNX, y scripts propios con `onnxruntime`.
+- Opciones de despliegue: Unity ML-Agents (Barracuda/Inference Engine en el runtime de Unity), visor web de Hugging Face con el archivo ONNX, y scripts propios con `onnxruntime`.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| qisunhui/ppo-SnowballTarget | PPO (ML-Agents) | SnowballTarget | no disponible | no aplica | no disponible | HuggingFace |
-| unity/ml-agents (agentes oficiales) | PPO/SAC varios | Entornos oficiales ML-Agents | variable | no aplica | según repositorio oficial | HuggingFace (org. unity) |
-| Políticas PPO de la comunidad ML-Agents | PPO | Diversos entornos | variable | no aplica | variable | HuggingFace |
+| qisunhui/ppo-SnowballTarget | PPO (ML-Agents) | SnowballTarget | no disponible | no aplica | no disponible | Hugging Face |
+| unity/ml-agents (agentes oficiales) | PPO/SAC varios | Entornos oficiales ML-Agents | variable | no aplica | según repositorio oficial | Hugging Face (org. unity) |
+| Políticas PPO de la comunidad ML-Agents | PPO | Diversos entornos | variable | no aplica | variable | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas. La comparación se limita a categoría y disponibilidad.
 
@@ -82,9 +82,9 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qisunhui/ppo-SnowballTarget
+- Modelo en Hugging Face: https://huggingface.co/qisunhui/ppo-SnowballTarget
 - Repositorio ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Documentación ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Tutorial corto (Huggy the Dog): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Organización Unity en HuggingFace (visor de agentes): https://huggingface.co/unity
+- Organización Unity en Hugging Face (visor de agentes): https://huggingface.co/unity

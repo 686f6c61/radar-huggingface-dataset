@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sofiapopov/retrieval-dev es un repositorio de HuggingFace que contiene una implementación funcional de una red Swin Transformer de escala "tiny" (Swin T) orientada a tareas de retrieval (recuperación). Lo publica el usuario sofiapopov con licencia apache-2.0 y una configuracion arquitectonica de tipo "tiny", atencion estandar, fusion por tensor (tensor fusion), activacion gelu tanh y normalizacion layernorm. El checkpoint incluido se describe explicitamente en la model card como una inicializacion valida para pruebas de humo (smoke tests), no como un modelo entrenado ni evaluado.
+sofiapopov/retrieval-dev es un repositorio de Hugging Face que contiene una implementación funcional de una red Swin Transformer de escala "tiny" (Swin T) orientada a tareas de retrieval (recuperación). Lo publica el usuario sofiapopov con licencia apache-2.0 y una configuracion arquitectonica de tipo "tiny", atencion estandar, fusion por tensor (tensor fusion), activacion gelu tanh y normalizacion layernorm. El checkpoint incluido se describe explicitamente en la model card como una inicializacion valida para pruebas de humo (smoke tests), no como un modelo entrenado ni evaluado.
 
 El problema que aborda es el de proporcionar un punto de partida reproducible y transparente para experimentar con arquitecturas Swin aplicadas a retrieval, priorizando codigo legible y pruebas repetibles. La propia model card indica de forma deliberada que no se reclama ninguna puntuacion de benchmark, y que los valores de configuracion incluidos (optimizador novograd con scheduler coseno) son valores de partida del script, no evidencia de un entrenamiento completado.
 
@@ -79,6 +79,6 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sofiapopov/retrieval-dev
+- Hugging Face: https://huggingface.co/sofiapopov/retrieval-dev
 - Ficheros del repositorio: `main.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repos, demos) en los resultados de busqueda web, que devolvieron unicamente contenido no relacionado.

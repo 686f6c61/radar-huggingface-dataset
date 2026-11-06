@@ -80,7 +80,7 @@ La diferencia clave es que s1-mini-de-v3 esta finetuneado exclusivamente para la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Joni000000000/s1-mini-de-v3
+- Modelo en Hugging Face: https://huggingface.co/Joni000000000/s1-mini-de-v3
 - Modelo base superwhisper/s1-mini: https://huggingface.co/superwhisper/s1-mini
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - No se ha encontrado un repositorio publico del proyecto yappr ni un paper academico asociado. La model card menciona archivos de entrenamiento y evaluacion dentro del repositorio del modelo, pero no se proporcionan enlaces externos adicionales.

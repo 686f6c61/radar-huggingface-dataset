@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_VeRA_Qwen3-8b` es un adaptador de ajuste fino eficiente (PEFT) publicado en HuggingFace sobre el modelo base `Qwen/Qwen3-8B-Base`. No se trata de un modelo completo, sino de un conjunto de pesos adicionales de 0,2 GB que deben cargarse junto al modelo base de 8.000 millones de parametros para poder utilizarse. El repositorio no incluye pesos del modelo base ni una model card cumplimentada: la mayoria de los campos (autor, licencia, idiomas, datos de entrenamiento, hiperparametros y resultados) aparecen como `[More Information Needed]`.
+`WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_VeRA_Qwen3-8b` es un adaptador de ajuste fino eficiente (PEFT) publicado en Hugging Face sobre el modelo base `Qwen/Qwen3-8B-Base`. No se trata de un modelo completo, sino de un conjunto de pesos adicionales de 0,2 GB que deben cargarse junto al modelo base de 8.000 millones de parametros para poder utilizarse. El repositorio no incluye pesos del modelo base ni una model card cumplimentada: la mayoria de los campos (autor, licencia, idiomas, datos de entrenamiento, hiperparametros y resultados) aparecen como `[More Information Needed]`.
 
 El identificador del repositorio es la principal fuente de informacion disponible y sugiere un experimento de investigacion: `xnli` apunta al dataset XNLI (inferencia de lenguaje natural, o NLI) y `en_and_sw` a los idiomas ingles y suajili; `5000` a un subconjunto de 5.000 ejemplos; `percentage_1_40` a un barrido de porcentajes de datos de entrenamiento; y `VeRA` a la tecnica de adaptacion Vector-based Random Matrix Adaptation, una variante de PEFT que entrena vectores de escalado sobre matrices congeladas de proyeccion aleatoria. Ninguna de estas inferencias esta confirmada de forma explicita en la model card.
 
@@ -71,7 +71,7 @@ No se dispone de informacion sobre modelos directamente comparables en la inform
 
 | Alternativa | Parametros entrenables | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Este adaptador (VeRA sobre Qwen3-8B-Base) | No disponible (repo de 0,2 GB) | No disponible | No disponible | Publicado en HuggingFace, 0 descargas y 0 likes | No disponible |
+| Este adaptador (VeRA sobre Qwen3-8B-Base) | No disponible (repo de 0,2 GB) | No disponible | No disponible | Publicado en Hugging Face, 0 descargas y 0 likes | No disponible |
 | Qwen/Qwen3-8B-Base sin adaptar | 8.000 millones | No disponible en esta informacion | No disponible en esta informacion | Ampliamente disponible | No disponible en esta informacion |
 | Otros adaptadores PEFT sobre Qwen3-8B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -92,7 +92,7 @@ La licencia del modelo base no se ha verificado en la informacion proporcionada 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_VeRA_Qwen3-8b
+- Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_VeRA_Qwen3-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Referencia citada en las etiquetas del repositorio (calculadora de impacto ambiental, no especifica del modelo): https://arxiv.org/abs/1910.09700
 - Biblioteca PEFT: https://github.com/huggingface/peft

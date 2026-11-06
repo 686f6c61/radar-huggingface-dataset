@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `keithtwesigye/lunyoro-lun2en` | 77.058.732 | No disponible | MIT | HuggingFace |
-| `keithtwesigye/lunyoro-en2lun` | No disponible | No disponible | MIT | HuggingFace |
-| `keithtwesigye/lunyoro-nllb_lun2en` | No disponible | No disponible | No disponible | HuggingFace |
-| `Helsinki-NLP/opus-mt-mul-en` | No disponible | No disponible | No disponible | HuggingFace |
+| `keithtwesigye/lunyoro-lun2en` | 77.058.732 | No disponible | MIT | Hugging Face |
+| `keithtwesigye/lunyoro-en2lun` | No disponible | No disponible | MIT | Hugging Face |
+| `keithtwesigye/lunyoro-nllb_lun2en` | No disponible | No disponible | No disponible | Hugging Face |
+| `Helsinki-NLP/opus-mt-mul-en` | No disponible | No disponible | No disponible | Hugging Face |
 
 Nota: `lunyoro-nllb_lun2en` es un fine-tune de NLLB-200, por lo que su arquitectura base es distinta, pero los datos concretos de este modelo no se detallan.
 
@@ -77,7 +77,7 @@ Nota: `lunyoro-nllb_lun2en` es un fine-tune de NLLB-200, por lo que su arquitect
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keithtwesigye/lunyoro-lun2en
+- Modelo en Hugging Face: https://huggingface.co/keithtwesigye/lunyoro-lun2en
 - Modelo relacionado `lunyoro-en2lun`: https://huggingface.co/keithtwesigye/lunyoro-en2lun
 - Modelo relacionado `lunyoro-nllb_en2lun`: https://huggingface.co/keithtwesigye/lunyoro-nllb_en2lun
 - Modelo relacionado `lunyoro-nllb_lun2en`: https://huggingface.co/keithtwesigye/lunyoro-nllb_lun2en

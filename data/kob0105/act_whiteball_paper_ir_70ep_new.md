@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kob0105/act_whiteball_paper_IR_70ep_NEW | 51,7 M | no aplica | Pick place white ball (so_follower) | Apache 2.0 | HuggingFace |
+| kob0105/act_whiteball_paper_IR_70ep_NEW | 51,7 M | no aplica | Pick place white ball (so_follower) | Apache 2.0 | Hugging Face |
 | ACT original (paper 2304.13705) | no disponible | no aplica | Manipulación diversa (benchmarks del paper) | no disponible | Paper |
 | Diffusion Policy | no disponible | no aplica | Manipulación diversa | no disponible | Repositorio de referencia |
-| Otras políticas LeRobot ACT de la comunidad | variable | no aplica | Tareas específicas | variable | HuggingFace |
+| Otras políticas LeRobot ACT de la comunidad | variable | no aplica | Tareas específicas | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kob0105/act_whiteball_paper_IR_70ep_NEW
+- Modelo en Hugging Face: https://huggingface.co/kob0105/act_whiteball_paper_IR_70ep_NEW
 - Dataset de entrenamiento: https://huggingface.co/datasets/kob0105/record_test_new_whiteball_paper_IR
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=kob0105/record_test_new_whiteball_paper_IR
 - Paper ACT: https://huggingface.co/papers/2304.13705

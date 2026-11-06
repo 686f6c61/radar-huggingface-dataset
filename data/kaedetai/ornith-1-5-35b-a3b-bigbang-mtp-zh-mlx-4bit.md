@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks estándar para comparar con otros modelos d
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/KaedeTai/Ornith-1.5-35B-A3B-BigBang-MTP-zh-mlx-4bit)
+- [Modelo en Hugging Face](https://huggingface.co/KaedeTai/Ornith-1.5-35B-A3B-BigBang-MTP-zh-mlx-4bit)
 - [Modelo base original (EryriLabs)](https://huggingface.co/EryriLabs/Ornith-1.5-35B-A3B-BigBang-MTP)
 - [Modelo base ornith-ai](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
 - [Colección Ornith-1.5](https://huggingface.co/collections/ornith-ai/ornith-15)

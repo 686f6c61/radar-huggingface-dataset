@@ -96,10 +96,10 @@ No se han encontrado en la busqueda web alternativas comparables fuera del propi
 
 | Modelo | Tarea | Ronda | Componente diferenciador | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sim-square-broad-r03-mining-no-cf-divl (este) | sim-square-broad | R3 | Actor de difusion congelado + critico DIVL distribucional | MIT | HuggingFace, 1,4 GB, 5 semillas |
-| sim-square-broad-r03-mining-no-cf-idql | sim-square-broad | R3 | Actor de difusion congelado del que deriva este modelo (critico IDQL) | MIT | HuggingFace |
-| sim-square-broad-r02-mining-no-cf-divl | sim-square-broad | R2 | Ronda anterior de la misma variante DIVL | MIT | HuggingFace |
-| sim-square-broad-r01-mining-no-cf-idql | sim-square-broad | R1 | Ronda inicial de la variante IDQL | MIT | HuggingFace |
+| sim-square-broad-r03-mining-no-cf-divl (este) | sim-square-broad | R3 | Actor de difusion congelado + critico DIVL distribucional | MIT | Hugging Face, 1,4 GB, 5 semillas |
+| sim-square-broad-r03-mining-no-cf-idql | sim-square-broad | R3 | Actor de difusion congelado del que deriva este modelo (critico IDQL) | MIT | Hugging Face |
+| sim-square-broad-r02-mining-no-cf-divl | sim-square-broad | R2 | Ronda anterior de la misma variante DIVL | MIT | Hugging Face |
+| sim-square-broad-r01-mining-no-cf-idql | sim-square-broad | R1 | Ronda inicial de la variante IDQL | MIT | Hugging Face |
 
 Los resultados de busqueda tambien devolvieron paginas sobre modelos sin relacion con este agente (Jev de TypeSafe AI, un modelo propietario que no genera lenguaje natural, y el catalogo de modelos de SiMa.ai), que no constituyen alternativas comparables para la tarea `sim-square-broad`.
 
@@ -115,14 +115,14 @@ Los resultados de busqueda tambien devolvieron paginas sobre modelos sin relacio
 - Licencia MIT: permite uso comercial y modificacion, pero la model card no ofrece garantias; se recomienda conservar el aviso de licencia y la atribucion.
 - Seguridad de carga: los ficheros `policy.pt` son pickles de PyTorch y pueden ejecutar codigo arbitrario al deserializarse; deben cargarse solo en entornos de confianza y verificando los hashes SHA-256 de `release.json`.
 - Idiomas y sesgos: no disponibles, dado que el modelo no procesa lenguaje natural.
-- Reproducibilidad dependiente del codigo: las recetas de reentrenamiento y las configuraciones de ejecucion residen en el repositorio de codigo de Mulligan, no en el repositorio de HuggingFace, por lo que la reproduccion completa depende de ese acceso.
+- Reproducibilidad dependiente del codigo: las recetas de reentrenamiento y las configuraciones de ejecucion residen en el repositorio de codigo de Mulligan, no en el repositorio de Hugging Face, por lo que la reproduccion completa depende de ese acceso.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r03-mining-no-cf-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r03-mining-no-cf-divl
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organizacion en HuggingFace: https://huggingface.co/mulligan
+- Organizacion en Hugging Face: https://huggingface.co/mulligan
 - Checkpoint padre (actor congelado): https://huggingface.co/mulligan/sim-square-broad-r03-mining-no-cf-idql
 - Variante de la ronda anterior (DIVL): https://huggingface.co/mulligan/sim-square-broad-r02-mining-no-cf-divl
 - Variante de la ronda inicial (IDQL): https://huggingface.co/mulligan/sim-square-broad-r01-mining-no-cf-idql

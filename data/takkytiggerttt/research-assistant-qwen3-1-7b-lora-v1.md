@@ -41,9 +41,9 @@ No se dispone de información específica sobre requisitos de hardware del adapt
 
 | Modelo | Tipo | Parámetros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TakkyTiggerTTT/research-assistant-qwen3-1.7b-lora-v1 | Adaptador LoRA | no disponible | no disponible | HuggingFace |
-| TakkyTiggerTTT/research-assistant-qwen3-0.6b-lora | Adaptador LoRA | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3-1.7B | Modelo base | 1.700 millones | no disponible | HuggingFace |
+| TakkyTiggerTTT/research-assistant-qwen3-1.7b-lora-v1 | Adaptador LoRA | no disponible | no disponible | Hugging Face |
+| TakkyTiggerTTT/research-assistant-qwen3-0.6b-lora | Adaptador LoRA | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3-1.7B | Modelo base | 1.700 millones | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento para ninguno de los modelos comparados.
 
@@ -57,6 +57,6 @@ No se dispone de datos de rendimiento para ninguno de los modelos comparados.
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/TakkyTiggerTTT/research-assistant-qwen3-1.7b-lora-v1)
-- [Modelo base Qwen3-1.7B en HuggingFace](https://huggingface.co/Qwen/Qwen3-1.7B)
-- [Adaptador similar del mismo autor (0.6b) en HuggingFace](https://huggingface.co/TakkyTiggerTTT/research-assistant-qwen3-0.6b-lora)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/TakkyTiggerTTT/research-assistant-qwen3-1.7b-lora-v1)
+- [Modelo base Qwen3-1.7B en Hugging Face](https://huggingface.co/Qwen/Qwen3-1.7B)
+- [Adaptador similar del mismo autor (0.6b) en Hugging Face](https://huggingface.co/TakkyTiggerTTT/research-assistant-qwen3-0.6b-lora)

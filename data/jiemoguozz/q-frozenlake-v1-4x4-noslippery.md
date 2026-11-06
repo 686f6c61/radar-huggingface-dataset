@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jiemoguozz/q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje, sino un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno `FrozenLake-v1` de Gymnasium, en su variante 4x4 con `is_slippery=False`. Lo publica el usuario Jiemoguozz en HuggingFace Hub bajo el pipeline `reinforcement-learning`, y su único artefacto es una tabla Q serializada en un fichero `q-learning.pkl`. El problema que resuelve es el de un entorno de juguete con 16 estados discretos y 4 acciones: navegar un lago helado desde la casilla inicial hasta el objetivo sin caer en los agujeros.
+`Jiemoguozz/q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje, sino un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno `FrozenLake-v1` de Gymnasium, en su variante 4x4 con `is_slippery=False`. Lo publica el usuario Jiemoguozz en Hugging Face Hub bajo el pipeline `reinforcement-learning`, y su único artefacto es una tabla Q serializada en un fichero `q-learning.pkl`. El problema que resuelve es el de un entorno de juguete con 16 estados discretos y 4 acciones: navegar un lago helado desde la casilla inicial hasta el objetivo sin caer en los agujeros.
 
 Su relevancia no viene del rendimiento, sino de su valor como referencia mínima y reproducible: el autor declara una `mean_reward` de 1.00 ± 0.00 sobre el conjunto `FrozenLake-v1-4x4-no_slippery`, es decir, una política que resuelve el episodio de forma consistente. Eso lo convierte en un caso de uso didáctico y en un test de integración para pipelines que cargan agentes desde el Hub.
 
@@ -36,7 +36,7 @@ La model card no documenta hiperparámetros: no se indica la tasa de aprendizaje
 
 - Resolución del entorno FrozenLake 4x4 determinista: la política aprendida alcanza el objetivo con recompensa 1.0 de media según el `model-index`.
 - Selección de acción greedy sobre una tabla Q de 64 entradas, sin inferencia neuronal.
-- Carga y reutilización vía `load_from_hub(repo_id=..., filename="q-learning.pkl")` del ecosistema HuggingFace Hub.
+- Carga y reutilización vía `load_from_hub(repo_id=..., filename="q-learning.pkl")` del ecosistema Hugging Face Hub.
 - Integración con Gymnasium mediante `gym.make(model["env_id"])`, con ajuste manual de atributos del entorno.
 - Serialización en un único fichero pickle, sin dependencias de runtime de deep learning.
 - No soporta tool calling, function calling, agentes multi-paso, razonamiento simbólico, matemáticas, código, visión, audio ni capacidades multilingües: no es un modelo de lenguaje.
@@ -67,14 +67,14 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 - GPU recomendadas: no aplicable. Cualquier CPU sirve; no hay soporte ni beneficio en A100, H100 o RTX 4090.
 - Compatibilidad con GPU de consumo: sí, en cualquiera, aunque no se aprovecha; el cuello de botella es el bucle de simulación de Gymnasium, no el agente.
 - Almacenamiento: el repositorio ocupa 0.0 GB; el fichero `q-learning.pkl` es del orden de kilobytes.
-- Opciones de despliegue: Python con `gymnasium`, `numpy` y utilidades de HuggingFace Hub (`load_from_hub`). No aplican vLLM, llama.cpp, Ollama ni TGI, que son servidores de modelos de lenguaje.
+- Opciones de despliegue: Python con `gymnasium`, `numpy` y utilidades de Hugging Face Hub (`load_from_hub`). No aplican vLLM, llama.cpp, Ollama ni TGI, que son servidores de modelos de lenguaje.
 - Latencia y throughput: no disponibles de forma publicada; por la naturaleza del agente (una búsqueda en tabla por paso) la latencia por decisión es del orden de microsegundos, dominada por el `step` del entorno.
 
 ## Comparativa con modelos similares
 
 | Modelo / enfoque | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este agente (`q-FrozenLake-v1-4x4-noSlippery`) | Q-learning tabular | 64 valores | no aplicable | mean_reward 1.00 +/- 0.00 (no verificado) | no disponible | HuggingFace Hub |
+| Este agente (`q-FrozenLake-v1-4x4-noSlippery`) | Q-learning tabular | 64 valores | no aplicable | mean_reward 1.00 +/- 0.00 (no verificado) | no disponible | Hugging Face Hub |
 | Agente DQN sobre FrozenLake (p. ej. rl-baselines3-zoo) | Deep RL (red neuronal) | no disponible | no aplicable | no disponible | MIT en el ecosistema Stable-Baselines3 (segun proyecto, no verificado aqui) | Repositorios publicos |
 | Agente PPO sobre FrozenLake | Deep RL (policy gradient) | no disponible | no aplicable | no disponible | idem anterior | Repositorios publicos |
 | Iteracion de valor / programacion dinamica | Metodo tabular exacto | tabla de 16 valores | no aplicable | optimo por construccion en entorno determinista | no aplicable | Implementacion propia |
@@ -95,7 +95,7 @@ La comparacion relevante no es de escala sino de regimen: en un entorno determin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jiemoguozz/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face: https://huggingface.co/Jiemoguozz/q-FrozenLake-v1-4x4-noSlippery
 - Documentacion del entorno FrozenLake en Gymnasium (referencia externa citada indirectamente por el uso de `gym.make`): https://gymnasium.farama.org/environments/toy_text/frozen_lake/
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada; el repositorio no incluye articulos ni documentacion adicional mas alla de la model card.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mayinrta/khrudi.gguf` es un repositorio de pesos en formato GGUF publicado por el usuario mayinrta en HuggingFace. El repositorio no incluye model card con contenido tecnico: el unico texto disponible es la declaracion de licencia `apache-2.0` en el encabezado YAML, sin descripcion del modelo, del entrenamiento ni de las capacidades. Se desconoce por completo la arquitectura, el numero de parametros y la longitud de contexto.
+`mayinrta/khrudi.gguf` es un repositorio de pesos en formato GGUF publicado por el usuario mayinrta en Hugging Face. El repositorio no incluye model card con contenido tecnico: el unico texto disponible es la declaracion de licencia `apache-2.0` en el encabezado YAML, sin descripcion del modelo, del entrenamiento ni de las capacidades. Se desconoce por completo la arquitectura, el numero de parametros y la longitud de contexto.
 
 El unico dato objetivo es el formato de distribucion (GGUF), lo que indica que el artefacto esta pensado para inferencia en CPU/GPU mediante la familia de herramientas llama.cpp y sus derivados (Ollama, LM Studio, kobold.cpp). El repositorio acumula 0 descargas y 0 likes, y su fecha de creacion y actualizacion es la misma (2026-09-16), lo que sugiere una publicacion sin difusion ni validacion por parte de la comunidad.
 
@@ -76,5 +76,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mayinrta/khrudi.gguf
+- Repositorio en Hugging Face: https://huggingface.co/mayinrta/khrudi.gguf
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos relacionadas con este modelo. Los unicos resultados devueltos corresponden a dominios de Pinterest y no guardan relacion con el modelo evaluado.

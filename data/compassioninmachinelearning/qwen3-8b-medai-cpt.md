@@ -85,7 +85,7 @@ Los datos de contexto y licencia de los modelos comparativos proceden de su docu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3-8b-medai-cpt | 8,19 mil millones | no disponible | apache-2.0 | HuggingFace, 0 descargas | Modelo base con *continued pre-training* en dominio medico; sin benchmarks publicados |
+| qwen3-8b-medai-cpt | 8,19 mil millones | no disponible | apache-2.0 | Hugging Face, 0 descargas | Modelo base con *continued pre-training* en dominio medico; sin benchmarks publicados |
 | Qwen/Qwen3-8B-Base | 8,2 mil millones (aprox.) | 32.768 nativos (ampliable segun documentacion publica de Qwen3) | apache-2.0 | Amplia adopcion | Modelo base original sin ajuste de dominio; referencia directa para medir el efecto del CPT |
 | Qwen/Qwen3-8B | 8,2 mil millones (aprox.) | 32.768 nativos (ampliable segun documentacion publica de Qwen3) | apache-2.0 | Amplia adopcion | Variante post-entrenada: sigue instrucciones y soporta modos de razonamiento; no adaptada a dominio medico |
 | Llama-3.1-8B | 8 mil millones (aprox.) | 131.072 segun documentacion publica de Meta | Licencia comunitaria Llama 3.1 | Amplia adopcion | Alternativa de tamano similar, con licencia mas restrictiva que Apache-2.0 y sin adaptacion al dominio medico |
@@ -108,7 +108,7 @@ Los datos de contexto y licencia de los modelos comparativos proceden de su docu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CompassioninMachineLearning/qwen3-8b-medai-cpt
+- Repositorio Hugging Face: https://huggingface.co/CompassioninMachineLearning/qwen3-8b-medai-cpt
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/CompassioninMachineLearning/pretraining_research_documents_medai
 - Repositorio de origen (copia en servidor): https://huggingface.co/ganscs/Qwen3-8b-qwen-h100-20260909-CPT-merged-step-750

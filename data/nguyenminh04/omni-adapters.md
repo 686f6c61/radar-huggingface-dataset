@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nguyenminh04/omni-adapters
+- Repositorio Hugging Face: https://huggingface.co/nguyenminh04/omni-adapters
 - Modelo base: https://huggingface.co/nguyenminh04/omni-model
 - Modelo original (upstream): https://huggingface.co/YunzeLiu/OmniRetriever-7B
 - Paper: https://arxiv.org/abs/2605.26641

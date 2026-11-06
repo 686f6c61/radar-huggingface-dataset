@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClearTrans-3B-SFT-Python-to-C | 3,09B | no disponible | Traduccion Python a C (SFT) | Qwen Research (no comercial) | HuggingFace, 0 descargas |
-| Qwen2.5-Coder-3B (base) | 3,09B | no disponible en esta ficha | Codigo general, multilingue | Qwen Research / Apache-2.0 segun variante | HuggingFace, ampliamente usado |
-| CodeLlama-7B | 6,74B | no disponible en esta ficha | Codigo general | Llama 2 Community | HuggingFace |
-| StarCoder2-3B | 3,03B | no disponible en esta ficha | Codigo general | BigCode OpenRAIL-M | HuggingFace |
+| ClearTrans-3B-SFT-Python-to-C | 3,09B | no disponible | Traduccion Python a C (SFT) | Qwen Research (no comercial) | Hugging Face, 0 descargas |
+| Qwen2.5-Coder-3B (base) | 3,09B | no disponible en esta ficha | Codigo general, multilingue | Qwen Research / Apache-2.0 segun variante | Hugging Face, ampliamente usado |
+| CodeLlama-7B | 6,74B | no disponible en esta ficha | Codigo general | Llama 2 Community | Hugging Face |
+| StarCoder2-3B | 3,03B | no disponible en esta ficha | Codigo general | BigCode OpenRAIL-M | Hugging Face |
 
 La comparacion directa con alternativas de traduccion Python-C especificas no esta disponible en la informacion proporcionada. Frente a los modelos generalistas, la unica ventaja documentada de ClearTrans es la especializacion de direccion; no hay datos de calidad que permitan afirmar que supere a la base en esa tarea.
 
@@ -79,11 +79,11 @@ La comparacion directa con alternativas de traduccion Python-C especificas no es
 - Es un especialista de direccion unica (Python a C); no se debe esperar un rendimiento equivalente en otras direcciones ni en traduccion general de lenguajes.
 - No hay informacion sobre sesgos, idiomas soportados ni comportamiento fuera de la tarea de traduccion.
 - Riesgo de alucinacion en APIs, cabeceras y construcciones de C no vistas durante el entrenamiento; el dataset de entrenamiento no es verificable a partir del repositorio.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta; no hay evidencia de uso comunitario ni de validacion independiente.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta; no hay evidencia de uso comunitario ni de validacion independiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Python-to-C
+- Modelo en Hugging Face: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Python-to-C
 - Repositorio de implementacion y replicacion: https://github.com/Xingzhehu/ClearTrans
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - Licencia Qwen Research incluida en el repo: LICENSE (referenciada en la tarjeta del modelo)

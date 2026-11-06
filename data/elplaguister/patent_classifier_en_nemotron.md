@@ -80,7 +80,7 @@ Estos modelos no están específicamente entrenados para taxonomía de patentes,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/elplaguister/patent_classifier_en_nemotron
+- Repositorio Hugging Face: https://huggingface.co/elplaguister/patent_classifier_en_nemotron
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3-Embed-1B-BF16
 - Página de NVIDIA Nemotron: https://developer.nvidia.com/topics/ai/nemotron
 - Repositorio GitHub de Nemotron: https://github.com/NVIDIA-NeMo/Nemotron

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-NOVA es un modelo publicado en HuggingFace por el usuario Sentinal4D bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni likes en el momento de la consulta, y la fecha de creacion y actualizacion coincide (28 de octubre de 2026), lo que sugiere una publicacion reciente y sin actividad posterior.
+NOVA es un modelo publicado en Hugging Face por el usuario Sentinal4D bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni likes en el momento de la consulta, y la fecha de creacion y actualizacion coincide (28 de octubre de 2026), lo que sugiere una publicacion reciente y sin actividad posterior.
 
-No es posible determinar que problema resuelve ni por que seria relevante, ya que no se ha publicado documentacion al respecto. La ausencia de pipeline declarado en HuggingFace impide ademas inferir la tarea principal (text-generation, text-to-image, etc.). Cualquier evaluacion practica exigiria inspeccionar directamente los archivos del repositorio, que no se han proporcionado.
+No es posible determinar que problema resuelve ni por que seria relevante, ya que no se ha publicado documentacion al respecto. La ausencia de pipeline declarado en Hugging Face impide ademas inferir la tarea principal (text-generation, text-to-image, etc.). Cualquier evaluacion practica exigiria inspeccionar directamente los archivos del repositorio, que no se han proporcionado.
 
 Esta ficha se limita, por tanto, a reflejar los metadatos disponibles y a marcar explicitamente como "no disponible" todo aquello que la informacion facilitada no cubre. No se han inventado especificaciones, benchmarks ni casos de uso concretos.
 
@@ -34,7 +34,7 @@ El unico dato estructural disponible es la licencia MIT declarada en los metadat
 - No consta soporte de agentes ni de razonamiento multi-paso.
 - No se especifican capacidades multilingues.
 - No se declaran capacidades especiales (modo thinking, vision, audio u otras).
-- No se indica la tarea o pipeline de HuggingFace asociada al modelo.
+- No se indica la tarea o pipeline de Hugging Face asociada al modelo.
 
 ## Casos de uso
 
@@ -71,4 +71,4 @@ No disponible. Sin datos de parametros, contexto, licencia efectiva de uso o ren
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sentinal4D/NOVA
+- Hugging Face: https://huggingface.co/Sentinal4D/NOVA

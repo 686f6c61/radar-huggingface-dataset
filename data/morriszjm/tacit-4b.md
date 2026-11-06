@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tacit-4B es un ajuste fino de Qwen/Qwen3-4B desarrollado por el usuario morriszjm, publicado en HuggingFace bajo licencia Apache-2.0. Su particularidad no es la generacion de texto libre, sino la toma de decisiones tipadas: elegir una opcion entre varias, responder si/no o seleccionar un nivel dentro de una escala ordenada, devolviendo una distribucion de probabilidad sobre las opciones en un unico forward pass. El modelo conserva los 4.022.468.096 parametros del modelo base y se distribuye en formato safetensors.
+Tacit-4B es un ajuste fino de Qwen/Qwen3-4B desarrollado por el usuario morriszjm, publicado en Hugging Face bajo licencia Apache-2.0. Su particularidad no es la generacion de texto libre, sino la toma de decisiones tipadas: elegir una opcion entre varias, responder si/no o seleccionar un nivel dentro de una escala ordenada, devolviendo una distribucion de probabilidad sobre las opciones en un unico forward pass. El modelo conserva los 4.022.468.096 parametros del modelo base y se distribuye en formato safetensors.
 
 El entrenamiento se basa en una tecnica que el autor denomina AnyJev self-distillation: el propio modelo base genero sus problemas de decision, los respondio con el razonamiento activado y despues aprendio a emitir esas mismas respuestas sin cadena de pensamiento, en un solo paso. Segun la model card, no se utilizaron etiquetas humanas, conjuntos de datos externos ni otros modelos. Esto reduce el coste de anotacion y, en teoria, alinea la salida rapida con la decision que el modelo tomaria razonando.
 
@@ -78,7 +78,7 @@ No se han publicado resultados en la informacion disponible para MMLU, HumanEval
 
 | Modelo | Parametros | Contexto | JevBench (1 forward pass) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tacit-4B | 4,02 B | no disponible | 0,723 | Apache-2.0 | safetensors en HuggingFace |
+| Tacit-4B | 4,02 B | no disponible | 0,723 | Apache-2.0 | safetensors en Hugging Face |
 | Qwen3-4B | 4,02 B | 32.768 nativos, ampliable a 131.072 | 0,658 | Apache-2.0 | safetensors y cuantizaciones |
 | Otros modelos de decision de ~3-8 B (Llama 3.2 3B, Gemma 3 4B, Phi-4-mini) | 3-8 B | no disponible | no disponible | licencias variadas | amplia |
 
@@ -99,8 +99,8 @@ La comparacion directa solo es posible con el modelo base, porque es el unico pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/morriszjm/Tacit-4B
+- Modelo en Hugging Face: https://huggingface.co/morriszjm/Tacit-4B
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las consultas devolvieron exclusivamente resultados de sitios para adultos sin relacion con Tacit-4B, por lo que no se incluyen.
 - Paper, blog tecnico o repositorio de codigo del autor: no disponibles en la informacion proporcionada.
-- Demo o espacio de HuggingFace: no disponible.
+- Demo o espacio de Hugging Face: no disponible.

@@ -71,7 +71,7 @@ No se dispone de comparativas con otros modelos de 1B (p. ej., Qwen2.5-1.5B, Gem
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-1573b
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-1573b
 - Repositorio similar (otra etapa): https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-273b
 - Página de OLMo (Ai2): https://allenai.org/olmo
 - Página de OLMo-2 (Ai2): https://allenai.org/olmo2

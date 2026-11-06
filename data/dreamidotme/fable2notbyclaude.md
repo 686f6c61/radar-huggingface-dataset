@@ -72,6 +72,6 @@ No se dispone de información sobre modelos comparables directamente equivalente
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dreamidotme/fable2notbyclaude
+- Hugging Face: https://huggingface.co/dreamidotme/fable2notbyclaude
 - Repositorio original del modelo (sin el sufijo "notbyclaude"): https://huggingface.co/dreamidotme/fable2
 - Discusiones del modelo: https://huggingface.co/dreamidotme/fable2/discussions

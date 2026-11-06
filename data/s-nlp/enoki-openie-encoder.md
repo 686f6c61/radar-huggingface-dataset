@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tamaño | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Enoki OpenIE Encoder (este) | 395M | 128 tokens | Transformer (ModernBERT) + IGL | no disponible | HuggingFace |
+| Enoki OpenIE Encoder (este) | 395M | 128 tokens | Transformer (ModernBERT) + IGL | no disponible | Hugging Face |
 | Stanford OpenIE | N/A | N/A | Pipeline basado en reglas y dependencias | GNU GPL | Standalone Java |
 | AllenAI OpenIE (openie-standalone) | N/A | N/A | Sistema basado en reglas y modelos | Apache 2.0 | GitHub |
 
@@ -77,7 +77,7 @@ La comparación directa es difícil porque los sistemas tradicionales de OpenIE 
 
 ## Enlaces
 
-- [HuggingFace: s-nlp/enoki-openie-encoder](https://huggingface.co/s-nlp/enoki-openie-encoder)
+- [Hugging Face: s-nlp/enoki-openie-encoder](https://huggingface.co/s-nlp/enoki-openie-encoder)
 - [Repositorio de código: s-nlp/Enoki](https://github.com/s-nlp/Enoki)
 - [Paper de Enoki (arXiv:2609.00581)](https://arxiv.org/abs/2609.00581)
 - [Stanford CoreNLP OpenIE](https://stanfordnlp.github.io/CoreNLP/openie.html)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reyes es un modelo publicado en HuggingFace por el usuario wickpwime bajo el identificador `wickpwime/Reyes`. La model card asociada no contiene ninguna descripcion tecnica del modelo: unicamente declara `license: unknown` y no incluye informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio tiene un tamano de 0,1 GB, lo que sugiere pesos de un modelo de pequeno tamano o un conjunto de artefactos auxiliares, pero no es posible confirmar la naturaleza del contenido a partir de los metadatos disponibles.
+Reyes es un modelo publicado en Hugging Face por el usuario wickpwime bajo el identificador `wickpwime/Reyes`. La model card asociada no contiene ninguna descripcion tecnica del modelo: unicamente declara `license: unknown` y no incluye informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio tiene un tamano de 0,1 GB, lo que sugiere pesos de un modelo de pequeno tamano o un conjunto de artefactos auxiliares, pero no es posible confirmar la naturaleza del contenido a partir de los metadatos disponibles.
 
 El modelo no registra descargas ni likes en el momento de la consulta, se creo el 3 de noviembre de 2026 y se actualizo minutos despues el mismo dia. No tiene pipeline declarado, no se especifican idiomas soportados y la licencia figura como desconocida. Estos indicios apuntan a una publicacion experimental o de prueba, sin documentacion ni validacion publica.
 
@@ -23,7 +23,7 @@ Dado que no se dispone de informacion verificable sobre su arquitectura, entrena
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o cualquier otra variante. Tampoco hay datos sobre el numero de parametros, la longitud de contexto nativa ni las tecnicas de atencion empleadas.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o cualquier otra variante. Tampoco hay datos sobre el numero de parametros, la longitud de contexto nativa ni las tecnicas de atencion empleadas.
 
 Respecto al entrenamiento, no se especifica el volumen de tokens utilizados, la composicion del dataset, la existencia de fases de ajuste supervisado, RLHF o DPO, ni si se aplicaron tecnicas de destilacion o decodificacion especulativa. El tamano del repositorio (0,1 GB) es compatible con pesos cuantizados de un modelo pequeno o con archivos parciales, pero no permite inferir la arquitectura ni el regimen de entrenamiento.
 
@@ -38,7 +38,7 @@ Respecto al entrenamiento, no se especifica el volumen de tokens utilizados, la 
 ## Casos de uso
 
 - Evaluacion experimental controlada: dado que no hay documentacion, el unico uso razonable es la inspeccion directa del repositorio y la ejecucion de pruebas locales para determinar que contiene el modelo antes de considerar cualquier aplicacion.
-- Investigacion de reproducibilidad: el modelo puede servir como objeto de estudio para analizar practicas de publicacion en HuggingFace, al carecer de model card sustantiva y de licencia definida.
+- Investigacion de reproducibilidad: el modelo puede servir como objeto de estudio para analizar practicas de publicacion en Hugging Face, al carecer de model card sustantiva y de licencia definida.
 - Pruebas de infraestructura de despliegue: si los pesos son cargables, podria utilizarse para validar pipelines de carga de modelos en entornos de prueba, sin garantias de calidad de salida.
 - Docencia sobre evaluacion de modelos: como ejemplo de publicacion sin metadatos suficientes para evaluar riesgos, sesgos o rendimiento.
 - No se recomienda su uso en atencion al cliente, generacion de codigo en produccion, analisis de documentos, agentes autonomos ni ninguna aplicacion con requisitos de calidad, seguridad o cumplimiento, al no existir evidencia de capacidades ni licencia clara.
@@ -72,5 +72,5 @@ No disponible. No es posible identificar modelos comparables al no conocerse la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wickpwime/Reyes
+- Repositorio en Hugging Face: https://huggingface.co/wickpwime/Reyes
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

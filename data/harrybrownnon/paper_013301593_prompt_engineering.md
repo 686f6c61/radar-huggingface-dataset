@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `harrybrownnon`, no contiene un modelo de inteligencia artificial, sino un documento académico en formato Markdown sobre prompt engineering. El artefacto principal es un paper titulado `paper_013301593_prompt_engineering.md`, redactado en formato Typst, con estilo de citación autor-año y una estructura académica completa que incluye resumen, introducción, preliminares, método, experimentos y discusión.
+Este repositorio de Hugging Face, publicado por el usuario `harrybrownnon`, no contiene un modelo de inteligencia artificial, sino un documento académico en formato Markdown sobre prompt engineering. El artefacto principal es un paper titulado `paper_013301593_prompt_engineering.md`, redactado en formato Typst, con estilo de citación autor-año y una estructura académica completa que incluye resumen, introducción, preliminares, método, experimentos y discusión.
 
 El contenido se centra en el campo del prompt engineering, una disciplina que ha cobrado gran relevancia para maximizar el potencial de los modelos de lenguaje de gran tamaño. El documento adopta un estilo de escritura conciso y analítico, con enfoque impersonal y orientación gráfica y visual. La licencia es Apache 2.0, lo que permite su uso y distribución libre, aunque al no existir un modelo propiamente dicho, no se pueden extraer especificaciones técnicas de arquitectura o rendimiento.
 
@@ -67,7 +67,7 @@ No disponible. No existe un modelo comparable, ya que el repositorio contiene un
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/harrybrownnon/paper_013301593_prompt_engineering
+- Repositorio Hugging Face: https://huggingface.co/harrybrownnon/paper_013301593_prompt_engineering
 - Paper relacionado sobre prompt engineering (arXiv): https://arxiv.org/html/2401.14423v3
 - Lista de papers sobre prompt tuning (GitHub): https://github.com/thunlp/PromptPapers
 - Guía de papers sobre prompt engineering: https://www.promptingguide.ai/papers

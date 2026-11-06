@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `optiva-ai/sales` es un artefacto publicado en HuggingFace por el usuario `optiva-ai` bajo licencia MIT. La model card asociada no contiene más información que la declaración de licencia, por lo que no es posible confirmar la arquitectura, el tamaño, el contexto ni el propósito real del modelo a partir de los datos disponibles. El nombre sugiere un posible enfoque hacia tareas comerciales o de ventas, pero se trata de una inferencia no verificada.
+El modelo identificado como `optiva-ai/sales` es un artefacto publicado en Hugging Face por el usuario `optiva-ai` bajo licencia MIT. La model card asociada no contiene más información que la declaración de licencia, por lo que no es posible confirmar la arquitectura, el tamaño, el contexto ni el propósito real del modelo a partir de los datos disponibles. El nombre sugiere un posible enfoque hacia tareas comerciales o de ventas, pero se trata de una inferencia no verificada.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en la misma marca temporal (2026-10-31T18:37:24Z), lo que apunta a una publicación reciente y sin actividad posterior. No se declara pipeline de inferencia, idiomas soportados ni formato de pesos en la información proporcionada.
 
@@ -39,7 +39,7 @@ No se dispone de datos sobre innovaciones técnicas destacables (decodificación
 
 - Evaluación exploratoria del repositorio: dado que no hay documentación técnica, el primer paso realista es descargar los archivos del repositorio y examinar la configuración (`config.json`) para determinar arquitectura y tamaño antes de plantear cualquier uso.
 - Prototipado interno con licencia permisiva: la licencia MIT permite usar, modificar y redistribuir el artefacto, lo que facilita su integración en entornos de experimentación sin restricciones comerciales, siempre que se valide previamente su comportamiento.
-- Pruebas de integración en pipelines de HuggingFace: el identificador `optiva-ai/sales` puede cargarse mediante las librerías habituales del ecosistema, lo que permite comprobar compatibilidad con `transformers` o `safetensors` antes de comprometerse con un despliegue.
+- Pruebas de integración en pipelines de Hugging Face: el identificador `optiva-ai/sales` puede cargarse mediante las librerías habituales del ecosistema, lo que permite comprobar compatibilidad con `transformers` o `safetensors` antes de comprometerse con un despliegue.
 - Análisis de idoneidad para tareas comerciales: si el nombre del repositorio refleja su propósito, podría evaluarse en tareas de atención al cliente o generación de contenido de ventas, pero sin datos de rendimiento esta evaluación sería puramente empírica y bajo responsabilidad del equipo que la realice.
 - Base para ajuste fino propio: al ser MIT, el modelo podría servir como punto de partida para un fine-tuning interno, aunque primero habría que confirmar que los pesos son utilizables y que la arquitectura lo permite.
 - Auditoría de seguridad y sesgos: antes de cualquier uso en producción, sería necesario ejecutar pruebas de sesgo, alucinación y robustez, dado que el autor no publica evaluaciones al respecto.
@@ -71,4 +71,4 @@ No disponible. Al no conocerse el tamaño, la arquitectura ni el dominio del mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/optiva-ai/sales
+- Repositorio en Hugging Face: https://huggingface.co/optiva-ai/sales

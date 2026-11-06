@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VEG Transformer Transplant es un artefacto experimental publicado por el usuario arthu1 en HuggingFace. No es un modelo entrenado de forma convencional, sino el resultado de una "transplante estructural": se han mapeado los tensores de un modelo denominado VEG (con mecanismos propios como enrutamiento por coherencia de fase, puertas sigmoideas elementales, normalización causal `1/sqrt(t+1)` y campos recurrentes selectivos) a una arquitectura `LlamaForCausalLM` estándar. El propio autor advierte que este artefacto no equivale al checkpoint VEG original y que debe usarse como línea base de compatibilidad y referencia de conversión, no como una conversión que preserve la calidad.
+VEG Transformer Transplant es un artefacto experimental publicado por el usuario arthu1 en Hugging Face. No es un modelo entrenado de forma convencional, sino el resultado de una "transplante estructural": se han mapeado los tensores de un modelo denominado VEG (con mecanismos propios como enrutamiento por coherencia de fase, puertas sigmoideas elementales, normalización causal `1/sqrt(t+1)` y campos recurrentes selectivos) a una arquitectura `LlamaForCausalLM` estándar. El propio autor advierte que este artefacto no equivale al checkpoint VEG original y que debe usarse como línea base de compatibilidad y referencia de conversión, no como una conversión que preserve la calidad.
 
 El modelo tiene 84.042.816 parámetros, 10 capas, hidden size de 832, 13 cabezas de atención de dimensión 64, contexto de 512 tokens y un vocabulario byte-level de 256 entradas. Está guardado en FP32 con safetensors y ocupa 0,3 GB en el repositorio. Su relevancia es fundamentalmente documental y de investigación: muestra cómo se puede aproximar una arquitectura no estándar mediante un decoder-only Transformer convencional, y sirve para estudiar qué comportamientos se pierden en ese mapeo.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| VEG Transformer Transplant | 84.042.816 | 512 | other | HuggingFace (arthu1/VEG-Transformer-Transplant) | Transplante experimental, calidad degradada declarada por el autor |
-| TinyLlama-1.1B | ~1.100 M | 2048 | Apache 2.0 | HuggingFace | Modelo entrenado, no un transplante; mucho mayor |
-| GPT-2 small | 124 M | 1024 | MIT | HuggingFace | Referencia decoder-only clásica, entrenada |
-| SmolLM-135M | 135 M | 2048 | Apache 2.0 | HuggingFace | Modelo pequeño entrenado para generación |
+| VEG Transformer Transplant | 84.042.816 | 512 | other | Hugging Face (arthu1/VEG-Transformer-Transplant) | Transplante experimental, calidad degradada declarada por el autor |
+| TinyLlama-1.1B | ~1.100 M | 2048 | Apache 2.0 | Hugging Face | Modelo entrenado, no un transplante; mucho mayor |
+| GPT-2 small | 124 M | 1024 | MIT | Hugging Face | Referencia decoder-only clásica, entrenada |
+| SmolLM-135M | 135 M | 2048 | Apache 2.0 | Hugging Face | Modelo pequeño entrenado para generación |
 
 La comparación es orientativa: este artefacto no es un modelo entrenado y el propio autor advierte de calidad degradada, por lo que no es directamente comparable en rendimiento con modelos entrenados de tamaño similar. No se dispone de datos de benchmarks para establecer comparaciones cuantitativas.
 
@@ -84,5 +84,5 @@ La comparación es orientativa: este artefacto no es un modelo entrenado y el pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arthu1/VEG-Transformer-Transplant
+- Hugging Face: https://huggingface.co/arthu1/VEG-Transformer-Transplant
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

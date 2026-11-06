@@ -60,9 +60,9 @@ No se han publicado comparaciones con otros modelos ni validación cruzada anida
 ## Requisitos de hardware
 
 - VRAM: no aplicable; es un modelo clásico de Scikit-learn que se ejecuta en CPU sin necesidad de GPU.
-- Memoria: el tamaño del repositorio es de 0,0 GB según HuggingFace; el pipeline serializado en joblib ocupa unos pocos kilobytes o megabytes, ejecutable en cualquier máquina.
+- Memoria: el tamaño del repositorio es de 0,0 GB según Hugging Face; el pipeline serializado en joblib ocupa unos pocos kilobytes o megabytes, ejecutable en cualquier máquina.
 - Consumer GPU: no necesaria; cualquier portátil o servidor modesto es suficiente.
-- Despliegue: cualquier entorno con Python, Scikit-learn y joblib; se integra fácilmente en APIs REST (FastAPI, Flask), batch jobs o plataformas como HuggingFace Spaces. No requiere vLLM, llama.cpp, Ollama ni TGI (herramientas específicas para LLM).
+- Despliegue: cualquier entorno con Python, Scikit-learn y joblib; se integra fácilmente en APIs REST (FastAPI, Flask), batch jobs o plataformas como Hugging Face Spaces. No requiere vLLM, llama.cpp, Ollama ni TGI (herramientas específicas para LLM).
 - Latencia: no publicada, pero una regresión logística sobre una fila de entrada se ejecuta en microsegundos a milisegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ No se han publicado comparaciones con otros modelos ni validación cruzada anida
 | neostream-churn-classifier v1 (misma familia) | Regresión logística (Scikit-learn) | No tratado | Accuracy 0,825 / Recall churn 0,01 / F1 0,02 | MIT |
 | Alternativas externas comparables | no disponible | — | — | — |
 
-No existen comparaciones directas publicadas con otros clasificadores de churn en HuggingFace; el único punto de referencia disponible es la propia versión anterior del mismo autor.
+No existen comparaciones directas publicadas con otros clasificadores de churn en Hugging Face; el único punto de referencia disponible es la propia versión anterior del mismo autor.
 
 ## Limitaciones y advertencias
 
@@ -88,5 +88,5 @@ No existen comparaciones directas publicadas con otros clasificadores de churn e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/renefransfs/neostream-churn-classifier
+- Hugging Face: https://huggingface.co/renefransfs/neostream-churn-classifier
 - Repositorio de código: https://github.com/SEU_USERNAME/neostream-churn-classifier (enlace con marcador de posición según la model card; puede no estar operativo)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-connect-ai-company-v5 es una política de aprendizaje por refuerzo entrenada para operar una empresa simulada dentro del videojuego educativo CONNECT TYCOON, desarrollado por CONNECT AI LAB y AI CITY BUILDERS. No es un modelo de lenguaje: se trata de un "cerebro" de toma de decisiones (descrito en la model card como "córtex prefrontal") que recibe el estado de la empresa y responde con decisiones sobre plantilla, inventario, marketing, atención al cliente, reembolsos y seguridad. El autor de la subida a HuggingFace es LeeSanghyun, y la librería declarada es numpy, con licencia Apache 2.0.
+connect-ai-company-v5 es una política de aprendizaje por refuerzo entrenada para operar una empresa simulada dentro del videojuego educativo CONNECT TYCOON, desarrollado por CONNECT AI LAB y AI CITY BUILDERS. No es un modelo de lenguaje: se trata de un "cerebro" de toma de decisiones (descrito en la model card como "córtex prefrontal") que recibe el estado de la empresa y responde con decisiones sobre plantilla, inventario, marketing, atención al cliente, reembolsos y seguridad. El autor de la subida a Hugging Face es LeeSanghyun, y la librería declarada es numpy, con licencia Apache 2.0.
 
 El modelo se entrenó en dos fases: primero imitó a un "jefe de reglas" mediante aprendizaje supervisado, y después ajustó sus decisiones con PPO usando una función de recompensa ponderada con los valores de empresa beneficio 3, satisfacción del cliente 3 y riesgo 3. Todas sus respuestas se emiten en el formato JEV (typesafe/jev-1.13), un esquema estructurado de pregunta-respuesta con probabilidades por opción y nivel de confianza. El repositorio indica explícitamente que se trata de una política aprendida en el juego y que no es un adaptador LoRA de Qwen.
 
@@ -92,7 +92,7 @@ Resultados adicionales registrados en el guardado del juego (ejecución de evalu
 
 | Modelo | Tipo | Beneficio mensual | Satisfacción | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connect-ai-company-v5 | Política RL (PPO) | 11.460.000 wones | 96 % | Apache 2.0 | HuggingFace (0 descargas) |
+| connect-ai-company-v5 | Política RL (PPO) | 11.460.000 wones | 96 % | Apache 2.0 | Hugging Face (0 descargas) |
 | Jefe de reglas (baseline del simulador) | Heurística de reglas | 3.240.000 wones | 79 % | no disponible | Integrado en CONNECT TYCOON |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (políticas RL para simulación empresarial) en la documentación proporcionada.
@@ -111,7 +111,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeeSanghyun/connectailab-rl-LeeSanghyun-v5-teacher
+- Modelo en Hugging Face: https://huggingface.co/LeeSanghyun/connectailab-rl-LeeSanghyun-v5-teacher
 - Repositorio del proyecto CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para entrenamiento RL: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Fichero NOTICE del proyecto: https://github.com/wonseokjung/connect-tycoon/blob/main/NOTICE
@@ -119,4 +119,4 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 - AI CITY BUILDERS: https://www.aicitybuilders.com
 - Curso de IA con aprendizaje por refuerzo: https://www.aicitybuilders.com/robot
 - Connect AI: https://www.ezerai.xyz
-- Perfil del autor en HuggingFace: https://huggingface.co/LeeSanghyun
+- Perfil del autor en Hugging Face: https://huggingface.co/LeeSanghyun

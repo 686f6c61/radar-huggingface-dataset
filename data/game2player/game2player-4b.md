@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Game2Player 4B es un modelo visión-lenguaje especializado en juego automático (game playing) desarrollado por el equipo de Game2Player y publicado en HuggingFace. Se trata de un fine-tune de Qwen3.5-4B que recibe capturas de pantalla del juego, la descripción de la tarea y el historial reciente de acciones, y predice la siguiente acción de teclado o ratón. El modelo no es un asistente conversacional general: está entrenado para emitir una única llamada a herramienta (`computer_use`) dentro de etiquetas `<tool_call>`, con coordenadas de ratón normalizadas en rango 0-1000 y duraciones en segundos.
+Game2Player 4B es un modelo visión-lenguaje especializado en juego automático (game playing) desarrollado por el equipo de Game2Player y publicado en Hugging Face. Se trata de un fine-tune de Qwen3.5-4B que recibe capturas de pantalla del juego, la descripción de la tarea y el historial reciente de acciones, y predice la siguiente acción de teclado o ratón. El modelo no es un asistente conversacional general: está entrenado para emitir una única llamada a herramienta (`computer_use`) dentro de etiquetas `<tool_call>`, con coordenadas de ratón normalizadas en rango 0-1000 y duraciones en segundos.
 
 El modelo resuelve el problema del control de agentes visuales en entornos de juego cerrados, donde no hay API programática y el único canal de observación es la imagen de pantalla. Acompaña al artículo "Game2Player: Scaling Gameplay Experience for Visual Agents through Environment–Player Co-Development", que propone generar datos de entrenamiento mediante políticas de código y jugadores VLM. El resultado es un modelo pequeño (4.539 millones de parámetros, 4,54 B) que puede desplegarse en una sola GPU y consumirse mediante una API compatible con OpenAI servida por vLLM.
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Game2Player 4B | 4,54 B | Hasta 65.536 tokens (config. vLLM); 25.000 en entrenamiento | Agente visual para juego, salida `computer_use` | Apache-2.0 | Pesos safetensors en HuggingFace |
-| Qwen3.5-4B (modelo base) | 4 B (según denominación del autor) | No disponible | VLM generalista | Apache-2.0 | HuggingFace |
+| Game2Player 4B | 4,54 B | Hasta 65.536 tokens (config. vLLM); 25.000 en entrenamiento | Agente visual para juego, salida `computer_use` | Apache-2.0 | Pesos safetensors en Hugging Face |
+| Qwen3.5-4B (modelo base) | 4 B (según denominación del autor) | No disponible | VLM generalista | Apache-2.0 | Hugging Face |
 | Otros agentes visuales especializados | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación con alternativas especializadas en agentes visuales no puede completarse con datos verificados en la información proporcionada. Frente a su modelo base, Game2Player 4B restringe la salida a un esquema de acciones concreto y añade memoria de acciones e imágenes, a costa de perder generalidad conversacional.
@@ -96,7 +96,7 @@ La comparación con alternativas especializadas en agentes visuales no puede com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/game2player/Game2Player-4B
+- Modelo en Hugging Face: https://huggingface.co/game2player/Game2Player-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Página del proyecto: https://game2player.github.io/
 - Leaderboard del proyecto: https://game2player.github.io/#leaderboard

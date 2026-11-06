@@ -23,7 +23,7 @@ Su relevancia es de tipo práctico: con 4,36 MB de pesos y una entrada fija de 3
 | Contrato de salida | 7 tensores float32 `[1, 1, 320, 320]`: nombres `1959`, `1960`, `1961`, `1962`, `1963`, `1964`, `1965` |
 | Modelo base declarado | tomjackson2023/rembg |
 | Descargas / likes en el momento de la consulta | 0 / 0 |
-| Tamano declarado del repo | 0,0 GB (metadato de HuggingFace; el fichero real ocupa 4,36 MB) |
+| Tamano declarado del repo | 0,0 GB (metadato de Hugging Face; el fichero real ocupa 4,36 MB) |
 | Fecha de publicacion | 2026-09-22 |
 
 ## Arquitectura y entrenamiento
@@ -97,13 +97,13 @@ No se dispone de datos de rendimiento comparado, por lo que no es posible establ
 - Sesgos: no se documenta la composición del dataset de entrenamiento original, por lo que se desconoce el sesgo respecto a tipos de sujetos, tonos de piel, iluminación o categorías de objeto.
 - Trazabilidad de licencia: aunque la licencia declarada es Apache-2.0, los pesos derivan de U²-Net (Apache-2.0, Xuebin Qin et al.) y el ONNX de rembg (MIT). Es obligatorio mantener la atribución indicada en la model card y en el fichero de licencia del proyecto original.
 - Madurez del repositorio: 0 descargas y 0 likes en el momento de la consulta, sin validación comunitaria externa ni resultados de benchmarks publicados.
-- Inconsistencia de metadatos: HuggingFace declara un tamaño de repositorio de 0,0 GB mientras que el artefacto listado ocupa 4,36 MB; conviene verificar los ficheros reales antes de integrarlos.
+- Inconsistencia de metadatos: Hugging Face declara un tamaño de repositorio de 0,0 GB mientras que el artefacto listado ocupa 4,36 MB; conviene verificar los ficheros reales antes de integrarlos.
 - Etiqueta `base_model:quantized:tomjackson2023/rembg` presente en los tags, pero no se publica ningún fichero cuantizado en este repositorio; el único artefacto es float32.
 - Para vídeo en tiempo real, la latencia publicada en CPU (104,1 ms por fotograma) no alcanza tasas fluidas; habría que apoyarse en WebGPU o en un runtime nativo con aceleración.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/skillsafe-ai/u2netp
+- Repositorio en Hugging Face: https://huggingface.co/skillsafe-ai/u2netp
 - Fichero del modelo: https://huggingface.co/skillsafe-ai/u2netp/resolve/main/u2netp.onnx
 - Modelo base (upstream): https://huggingface.co/tomjackson2023/rembg/tree/cd3a3d6767a7859efea31ef0f2f373582cf06d82
 - Repositorio de conversión (SkillSafe, carpeta `models/`): https://github.com/skillsafe-admin/skillsafe.ai-website/tree/main/models

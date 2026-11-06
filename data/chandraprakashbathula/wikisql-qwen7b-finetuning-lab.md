@@ -86,6 +86,6 @@ No se dispone de comparativas con otros modelos text-to-SQL en la informacion pr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ChandraPrakashBathula/wikisql-qwen7b-finetuning-lab
+- Repositorio Hugging Face: https://huggingface.co/ChandraPrakashBathula/wikisql-qwen7b-finetuning-lab
 - Dataset WikiSQL: https://huggingface.co/datasets/Salesforce/wikisql
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

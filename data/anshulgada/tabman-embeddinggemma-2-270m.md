@@ -110,7 +110,7 @@ No se dispone de información suficiente para comparar con alternativas concreta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anshulgada/tabman-embeddinggemma-2-270m
+- Modelo en Hugging Face: https://huggingface.co/Anshulgada/tabman-embeddinggemma-2-270m
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Checkpoint base del autor: https://huggingface.co/Anshulgada/embeddinggemma-2-270m
 - Repositorio Tabman (Brave Tab Manager): https://github.com/Anshulgada/brave-tab-manager

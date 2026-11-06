@@ -6,7 +6,7 @@
 
 El modelo base declarado en las etiquetas es `local_king/king_cxxv`, una referencia que no aparece documentada ni enlazada en la informacion disponible. El identificador del adaptador incluye la cadena `qwen3.6-35b`, lo que sugiere una familia y un tamano determinados, pero esta indicacion no se corresponde con el `base_model` declarado, por lo que no puede confirmarse ni la arquitectura ni el numero de parametros reales. Las etiquetas indican `dpo`, `lora` y `trl`, de modo que el adaptador se habria entrenado con optimizacion directa de preferencias (DPO) sobre un ajuste LoRA previo, presumiblemente en un unico checkpoint correspondiente al paso 10 de entrenamiento (`step10`).
 
-La relevancia del artefacto es limitada en su estado actual: acumula 0 descargas y 0 likes, no declara licencia ni idiomas, su model card es la plantilla vacia de HuggingFace con todos los campos como `[More Information Needed]` y no publica resultados de evaluacion. Es, por tanto, un experimento de ajuste fino sin validacion publica, util unicamente como material de investigacion o reproduccion interna.
+La relevancia del artefacto es limitada en su estado actual: acumula 0 descargas y 0 likes, no declara licencia ni idiomas, su model card es la plantilla vacia de Hugging Face con todos los campos como `[More Information Needed]` y no publica resultados de evaluacion. Es, por tanto, un experimento de ajuste fino sin validacion publica, util unicamente como material de investigacion o reproduccion interna.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ Otros metadatos: autor `JMaxCool0518`, libreria `peft`, version de PEFT declarad
 
 La unica informacion tecnica disponible sobre el entrenamiento procede de las etiquetas del repositorio: `lora` y `dpo` con el stack `transformers` + `trl`. Esto indica un ajuste de bajo rango (LoRA) combinado con optimizacion directa de preferencias, un esquema en el que el modelo aprende de pares de respuestas preferidas/rechazadas en lugar de imitar directamente un corpus supervisado. El sufijo `step10` apunta a que el artefacto corresponde al checkpoint del paso 10 de ese entrenamiento, lo que en la practica implica un adaptador muy poco entrenado y probablemente no convergido.
 
-No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset de preferencias, el rango (`r`) o `alpha` de la LoRA, los modulos objetivo, la tasa de aprendizaje ni el regimen de precision (fp16, bf16, fp8). Tampoco se documenta ninguna innovacion de arquitectura o de decodificacion: no hay atencion lineal, decodificacion especulativa ni mecanismos hibridos declarados. La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, incluido por defecto en la plantilla de model card de HuggingFace, y no a un articulo sobre este modelo.
+No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset de preferencias, el rango (`r`) o `alpha` de la LoRA, los modulos objetivo, la tasa de aprendizaje ni el regimen de precision (fp16, bf16, fp8). Tampoco se documenta ninguna innovacion de arquitectura o de decodificacion: no hay atencion lineal, decodificacion especulativa ni mecanismos hibridos declarados. La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, incluido por defecto en la plantilla de model card de Hugging Face, y no a un articulo sobre este modelo.
 
 ## Capacidades
 
@@ -87,7 +87,7 @@ No disponible. No se han identificado modelos comparables: el modelo base `local
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JMaxCool0518/albedo-qwen3.6-35b-bookend-v125-lora-step10
+- Repositorio Hugging Face: https://huggingface.co/JMaxCool0518/albedo-qwen3.6-35b-bookend-v125-lora-step10
 - Modelo base declarado: https://huggingface.co/local_king/king_cxxv
 - Articulo referenciado por la etiqueta `arxiv:1910.09700` (Lacoste et al., 2019, estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning citada en la plantilla: https://mlco2.github.io/impact

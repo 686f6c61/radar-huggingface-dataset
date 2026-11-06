@@ -126,8 +126,8 @@ No se puede establecer una comparativa cuantitativa fiable con alternativas de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sigmanih/Qwen-Qwen3.8-27B-GGUF-IQ2_XXS
+- Hugging Face: https://huggingface.co/sigmanih/Qwen-Qwen3.8-27B-GGUF-IQ2_XXS
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio SigmaStudio: https://github.com/Sigmanih/SigmaStudio
-- Perfil del autor en HuggingFace: https://huggingface.co/sigmanih
+- Perfil del autor en Hugging Face: https://huggingface.co/sigmanih
 - Paper, blog o demo adicionales: no disponible

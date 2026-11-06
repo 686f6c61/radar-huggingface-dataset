@@ -91,7 +91,7 @@ La principal diferencia frente a las cuantizaciones estandar de unsloth es la co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Granite-4.1-30B-ROCmFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Granite-4.1-30B-ROCmFP4-GGUF
 - Modelo base IBM Granite 4.1 30B: https://huggingface.co/ibm-granite/granite-4.1-30b
 - Documentacion oficial de IBM Granite 4.1: https://www.ibm.com/granite/docs/models/granite4-1
 - Repositorio ROCmFPX (fork de llama.cpp): https://github.com/charlie12345/ROCmFPX

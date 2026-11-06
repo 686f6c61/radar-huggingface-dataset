@@ -97,7 +97,7 @@ La diferencia clave frente a un LoRA de estilo convencional es la dependencia de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neonforestmist/clover-image-tiny-storybook-anime-style-lora
+- Modelo en Hugging Face: https://huggingface.co/neonforestmist/clover-image-tiny-storybook-anime-style-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/neonforestmist/GPT_Storybook_Anime_Style_Images
 - Modelo base citado (Clover Image Tiny): https://huggingface.co/neonforestmist/Clover-Image-Tiny
 - Upstream citado sin URL en la model card: BK-SDM-Tiny y Stable Diffusion 1.4

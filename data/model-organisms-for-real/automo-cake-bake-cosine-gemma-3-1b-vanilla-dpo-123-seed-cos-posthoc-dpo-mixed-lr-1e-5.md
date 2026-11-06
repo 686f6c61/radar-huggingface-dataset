@@ -61,7 +61,7 @@ La medicion se realizo con 1000 prompts held-out, una sola generacion por checkp
 
 - Al ser un modelo de aproximadamente 1.000 millones de parametros, es ejecutable en GPUs de consumo. Con cuantizacion de 8 bits, la VRAM estimada seria de unos 2-3 GB; con 4 bits, alrededor de 1-1.5 GB. Sin cuantizar (fp16), unos 2 GB.
 - GPUs recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1660, RTX 2060, RTX 3060, o superiores). Tambien puede ejecutarse en CPU, aunque con mayor latencia.
-- Opciones de despliegue: compatible con transformers de HuggingFace, vLLM, llama.cpp, Ollama y TGI, siempre que se use la rama `step-1125`.
+- Opciones de despliegue: compatible con transformers de Hugging Face, vLLM, llama.cpp, Ollama y TGI, siempre que se use la rama `step-1125`.
 - Latencia y throughput: no se han publicado datos especificos. Para un modelo de 1B en una GPU moderna (RTX 3090 o superior), se puede esperar una generacion de 50-100 tokens/segundo en fp16, y mayor con cuantizacion.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de la misma 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-cake-bake-cosine-gemma-3-1b-vanilla-dpo-123-seed-cos-posthoc-dpo-mixed-lr-1e-5
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-cake-bake-cosine-gemma-3-1b-vanilla-dpo-123-seed-cos-posthoc-dpo-mixed-lr-1e-5
 - Modelo base: https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed
 - Coleccion de modelos replicados de Gemma: https://huggingface.co/collections/model-organisms-for-real/gemma-replicated-models
 - Pagina oficial de Gemma 3 (DeepMind): https://deepmind.google/models/gemma/gemma-3/

@@ -4,11 +4,11 @@
 
 ## Resumen
 
-`fahri-firdaus/matching` es un repositorio publicado en HuggingFace por el usuario fahri-firdaus que contiene una implementación funcional de DeiT (vision transformer) orientada a una tarea de *matching*, en una configuración etiquetada como *large* por el propio autor. El repositorio no incluye un modelo entrenado: los metadatos de safetensors registran 24.832 parámetros y el tamaño total del repositorio es de 0.0 GB, una cifra que no es coherente con ninguna configuración *large* de DeiT y que el autor no desglosa en la model card.
+`fahri-firdaus/matching` es un repositorio publicado en Hugging Face por el usuario fahri-firdaus que contiene una implementación funcional de DeiT (vision transformer) orientada a una tarea de *matching*, en una configuración etiquetada como *large* por el propio autor. El repositorio no incluye un modelo entrenado: los metadatos de safetensors registran 24.832 parámetros y el tamaño total del repositorio es de 0.0 GB, una cifra que no es coherente con ninguna configuración *large* de DeiT y que el autor no desglosa en la model card.
 
 El problema que aborda, según la documentación disponible, es el de servir como punto de partida reproducible para experimentación: el archivo `model.safetensors` se describe explícitamente como un *checkpoint* de inicialización válido para *smoke tests*, no como un *checkpoint* entrenado, y el repositorio omite deliberadamente cualquier afirmación sobre resultados de benchmarks. La receta de experimento incluida (optimizador novograd con planificador coseno) se presenta como valores de arranque, no como evidencia de un entrenamiento completado.
 
-Su relevancia actual es, por tanto, limitada y de naturaleza distinta a la de un modelo desplegable: se trata de un esqueleto de código y configuración para investigación en tareas de emparejamiento visual, con licencia BSD-3-Clause, 0 descargas y 0 *likes* en el momento de la consulta, y sin idiomas ni pipeline declarados en HuggingFace.
+Su relevancia actual es, por tanto, limitada y de naturaleza distinta a la de un modelo desplegable: se trata de un esqueleto de código y configuración para investigación en tareas de emparejamiento visual, con licencia BSD-3-Clause, 0 descargas y 0 *likes* en el momento de la consulta, y sin idiomas ni pipeline declarados en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -28,10 +28,10 @@ Su relevancia actual es, por tanto, limitada y de naturaleza distinta a la de un
 | Normalizacion | batchnorm |
 | Optimizador por defecto | novograd |
 | Planificador de learning rate | cosine |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0.0 GB |
-| Fecha de creacion registrada en HuggingFace | 13 de septiembre de 2026 |
+| Fecha de creacion registrada en Hugging Face | 13 de septiembre de 2026 |
 | Fecha de ultima actualizacion registrada | 13 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
@@ -95,10 +95,10 @@ La única diferencia comprobable con esas categorías, a partir de la informaci�
 - Sin datos de entrenamiento ni evaluación: no se documentan datasets, número de muestras, métricas, semillas ni líneas base, de modo que no es posible estimar sesgos, tasas de error ni riesgo de alucinación (concepto, además, no aplicable a un modelo sin generación de lenguaje).
 - Sin idiomas declarados: no hay soporte multilingüe documentado ni aplicable en su forma actual.
 - Restricciones de licencia: BSD-3-Clause permite uso comercial y modificación con conservación del aviso de copyright y ausencia de aval implícito, pero el propio autor advierte de que deben revisarse por separado los términos de los datos de origen si el repositorio se usa con conjuntos de datos externos.
-- Carga no estándar: al ser una implementación propia, las APIs automáticas de HuggingFace requieren un adaptador explícito, lo que añade trabajo de integración y riesgo de errores silenciosos si se asume una carga estándar.
+- Carga no estándar: al ser una implementación propia, las APIs automáticas de Hugging Face requieren un adaptador explícito, lo que añade trabajo de integración y riesgo de errores silenciosos si se asume una carga estándar.
 - Advertencia para producción: no existen artefactos desplegables, ni soporte en servidores de inferencia habituales, ni métricas de latencia o *throughput*; incorporarlo a un sistema real requeriría entrenamiento, evaluación y validación completos por parte de quien lo adopte.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fahri-firdaus/matching
+- Repositorio en Hugging Face: https://huggingface.co/fahri-firdaus/matching
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código, demos ni páginas de documentación asociados a este modelo. Los resultados devueltos por la búsqueda (noz.de y subpáginas de noticias locales y de traueranzeigen.noz.de) no guardan relación con el repositorio.

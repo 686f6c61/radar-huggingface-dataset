@@ -89,7 +89,7 @@ Velocidad en CPU (onnxruntime, CPU de servidor x86; RTF = segundos de cómputo p
 
 | Modelo | Parámetros | Contexto / paso | FFE clean (PTDB-TUG) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PESTO (este) | 2,2 M | frames de 10 ms | 5,58 | LGPL-3.0 | ONNX en HuggingFace |
+| PESTO (este) | 2,2 M | frames de 10 ms | 5,58 | LGPL-3.0 | ONNX en Hugging Face |
 | FCPE | no disponible | no disponible | **2,77** | no disponible | ONNX en la misma familia (Scicom-intl/fcpe-onnx) |
 | RMVPE | no disponible | no disponible | 3,09 | no disponible | ONNX en la misma familia (Scicom-intl/rmvpe-onnx) |
 | CREPE full | no disponible | no disponible | 6,43 | no disponible | ONNX en la misma familia (Scicom-intl/crepe-onnx) |
@@ -112,11 +112,11 @@ FCPE y RMVPE superan a PESTO en precisión de FFE en todas las condiciones evalu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Scicom-intl/pesto-onnx
+- Modelo en Hugging Face: https://huggingface.co/Scicom-intl/pesto-onnx
 - Repositorio de la familia de exports ONNX: https://huggingface.co/Scicom-intl/rmvpe-onnx, https://huggingface.co/Scicom-intl/fcpe-onnx, https://huggingface.co/Scicom-intl/crepe-onnx
 - Repositorio original de PESTO (Sony CSL París): https://github.com/SonyCSLParis/pesto
 - Paper PESTO (ISMIR 2023): Riou et al., "PESTO: Pitch Estimation with Self-supervised Transposition-equivariant Objective"
 - Extensión TISMIR 2025: Riou et al., TISMIR 2025 (referenciada en la model card)
-- Script de inferencia: `pitch_onnx.py` (incluido en el repositorio de HuggingFace)
+- Script de inferencia: `pitch_onnx.py` (incluido en el repositorio de Hugging Face)
 - Scripts de exportación y evaluación: `export/export.py`, `export/decode.py`, `export/evaluate.py` (incluidos en el repositorio)
 - Resultados de benchmark: `benchmark.json` (incluido en el repositorio)

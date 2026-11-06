@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ground-then-Grasp es un sistema de detección de agarres guiado por lenguaje (language-driven grasp detection) desarrollado por coutMinh y publicado en HuggingFace bajo licencia MIT. No se trata de un modelo de lenguaje, sino de la composición de dos expertos entrenados por separado: un *prior* de agarre sin componente lingüístico basado en GR-ConvNet (1,90 M de parámetros) y un *grounder* basado en CLIPSeg con el decodificador ajustado por fine-tuning (1,13 M de parámetros entrenables sobre 150,7 M totales). Ambos se combinan mediante un producto suave de expertos (*soft product of experts*) con alpha=0,75 y temperatura=2.
+Ground-then-Grasp es un sistema de detección de agarres guiado por lenguaje (language-driven grasp detection) desarrollado por coutMinh y publicado en Hugging Face bajo licencia MIT. No se trata de un modelo de lenguaje, sino de la composición de dos expertos entrenados por separado: un *prior* de agarre sin componente lingüístico basado en GR-ConvNet (1,90 M de parámetros) y un *grounder* basado en CLIPSeg con el decodificador ajustado por fine-tuning (1,13 M de parámetros entrenables sobre 150,7 M totales). Ambos se combinan mediante un producto suave de expertos (*soft product of experts*) con alpha=0,75 y temperatura=2.
 
 El problema que resuelve es la selección de la región de agarre de un objeto concreto dentro de una escena a partir de una instrucción en lenguaje natural (por ejemplo, "agarrar el asa de la taza"), devolviendo un rectángulo orientado (x, y, w, h, theta). Su relevancia reside en que aborda la tarea con un enfoque modular y eficiente: en lugar de entrenar un modelo conjunto enorme, separa el razonamiento visual-lingüístico (segmentación referencial) de la predicción geométrica del agarre, logrando un 36,69 % de éxito top-1 agregado en el benchmark Grasp-Anything++, frente al 32,95 % del prior aislado. Está entrenado sobre 8.144 imágenes sintéticas y no ha sido validado en robots reales.
 
@@ -64,16 +64,16 @@ No se han publicado comparaciones con baselines conjuntos ni con el checkpoint o
 - VRAM estimada para inferencia: no disponible explícitamente; el modelo completo pesa unos 612 MB (grounder con pesos congelados de CLIP incluidos) más el prior, por lo que una GPU con 4-6 GB de VRAM debería ser suficiente para inferencia, sin garantías.
 - GPU recomendadas: no disponible; cualquier GPU moderna de consumo debería bastar dada la ligereza de los modelos (GR-ConvNet de 1,90 M y decodificador CLIPSeg ajustado).
 - Cabe en GPUs de consumo: sí, por tamaño de pesos (0,6 GB el repositorio completo); no hay requisitos oficiales publicados.
-- Despliegue: PyTorch (librería declarada), con demo Gradio incluida (`demo/app.py`) y script CLI (`demo/infer.py`); los checkpoints se descargan desde el repositorio de HuggingFace. No hay soporte documentado de vLLM, llama.cpp, Ollama o TGI (no aplican a esta arquitectura).
+- Despliegue: PyTorch (librería declarada), con demo Gradio incluida (`demo/app.py`) y script CLI (`demo/infer.py`); los checkpoints se descargan desde el repositorio de Hugging Face. No hay soporte documentado de vLLM, llama.cpp, Ollama o TGI (no aplican a esta arquitectura).
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Enfoque | Parámetros | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ground-then-Grasp | Modular: grounder CLIPSeg + prior GR-ConvNet, producto suave | 1,90 M + 150,7 M (1,13 M entrenables) | 8.144 imágenes Grasp-Anything++ (sintético) | MIT | Checkpoints públicos en HuggingFace + código en GitHub |
+| Ground-then-Grasp | Modular: grounder CLIPSeg + prior GR-ConvNet, producto suave | 1,90 M + 150,7 M (1,13 M entrenables) | 8.144 imágenes Grasp-Anything++ (sintético) | MIT | Checkpoints públicos en Hugging Face + código en GitHub |
 | LGD (language-driven grasp detection, checkpoint oficial) | Conjunto, no disponible en detalle aquí | no disponible | no disponible | no disponible | Checkpoint oficial mencionado pero no comparado por el autor |
-| CLIPSeg (zero-shot, CIDAS/clipseg-rd64-refined) | Segmentación referencial genérica, sin especialización en agarres | ~150 M | no disponible | Apache-2.0 (modelo base) | Público en HuggingFace |
+| CLIPSeg (zero-shot, CIDAS/clipseg-rd64-refined) | Segmentación referencial genérica, sin especialización en agarres | ~150 M | no disponible | Apache-2.0 (modelo base) | Público en Hugging Face |
 
 Nota: el propio autor indica que no existen comparaciones directas con baselines conjuntos ni con el checkpoint oficial de LGD en la documentación disponible, por lo que la comparativa cuantitativa es limitada.
 
@@ -91,7 +91,7 @@ Nota: el propio autor indica que no existen comparaciones directas con baselines
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/coutMinh/ground-then-grasp
+- Modelo en Hugging Face: https://huggingface.co/coutMinh/ground-then-grasp
 - Código (GitHub, commit 9929373): https://github.com/coutMinh/Ground-then-Grasp
 - Modelo base del grounder: https://huggingface.co/CIDAS/clipseg-rd64-refined
 - Paper: no disponible

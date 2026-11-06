@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CEIA Lumi-4B es un modelo de lenguaje de aproximadamente 3.970 millones de parámetros (3,97 B) orientado a la generación de texto en portugués. Lo publica el usuario `henrybrenomota` en HuggingFace, si bien la model card remite al repositorio oficial del proyecto CEIA (`ceia-br/lumi-4b`), lo que sugiere que se trata de una distribución derivada o espejo de un modelo desarrollado en el marco del CEIA (Centro de Excelencia en Inteligencia Artificial, vinculado a Brasil). El modelo se etiqueta con la arquitectura `nemotron_h`, lo que lo sitúa en la familia de transformadores híbridos de NVIDIA, aunque la información disponible no detalla la configuración exacta de capas.
+CEIA Lumi-4B es un modelo de lenguaje de aproximadamente 3.970 millones de parámetros (3,97 B) orientado a la generación de texto en portugués. Lo publica el usuario `henrybrenomota` en Hugging Face, si bien la model card remite al repositorio oficial del proyecto CEIA (`ceia-br/lumi-4b`), lo que sugiere que se trata de una distribución derivada o espejo de un modelo desarrollado en el marco del CEIA (Centro de Excelencia en Inteligencia Artificial, vinculado a Brasil). El modelo se etiqueta con la arquitectura `nemotron_h`, lo que lo sitúa en la familia de transformadores híbridos de NVIDIA, aunque la información disponible no detalla la configuración exacta de capas.
 
 El modelo resuelve la tarea de generación de texto conversacional en portugués y se presenta con un conjunto de resultados de evaluación en benchmarks adaptados al portugués (MMLU PT, Global MMLU PT, MMLU-ProX PT e IFEval PT), en los que ocupa la segunda posición entre nueve modelos comparados según la propia model card. Es relevante por su tamaño contenido (4 B), que lo hace desplegable en hardware de consumo con cuantización, y por su enfoque explícito en un idioma distinto del inglés, un nicho con menos oferta que el de los modelos multilingües generalistas.
 
@@ -98,5 +98,5 @@ No se dispone de datos suficientes para establecer una comparativa detallada con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/henrybrenomota/lumi-4b
+- Repositorio en Hugging Face: https://huggingface.co/henrybrenomota/lumi-4b
 - Repositorio oficial referenciado en la model card: https://huggingface.co/ceia-br/lumi-4b

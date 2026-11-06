@@ -4,7 +4,7 @@
 
 Zils-lite-body-1 es un re-upload sin modificaciones de los pesos de lenguaje y visión del modelo OmniJev/OneJev1.6-0.8B, que a su vez es un fine-tune de Qwen/Qwen3.5-0.8B. Lo publica el usuario thermopylae-777 como "cuerpo" (body) dentro de un pool de model soup denominado Zils `d3-lite`, asociado al subnet 127 de Bittensor. No se trata, por tanto, de un modelo nuevo entrenado desde cero, sino de un checkpoint intermedio pensado para participar en un proceso de mezcla de pesos.
 
-El modelo base declarado tiene 0,8 mil millones de parámetros y la arquitectura figura etiquetada como `qwen3_5` en HuggingFace. El recuento real de parámetros en los ficheros safetensors asciende a 852.985.920, lo que confirma el orden de magnitud de 0,85B. El repositorio ocupa 1,7 GB, coherente con pesos en precisión de 16 bits.
+El modelo base declarado tiene 0,8 mil millones de parámetros y la arquitectura figura etiquetada como `qwen3_5` en Hugging Face. El recuento real de parámetros en los ficheros safetensors asciende a 852.985.920, lo que confirma el orden de magnitud de 0,85B. El repositorio ocupa 1,7 GB, coherente con pesos en precisión de 16 bits.
 
 Su relevancia es limitada fuera del contexto del pool Zils: no hay model card técnica propia, no se publican benchmarks ni detalles de entrenamiento, y el autor original de los pesos es OmniJev. La licencia Apache 2.0 se hereda del modelo original, lo que permite uso comercial y modificación, pero la ausencia de documentación sobre datos de entrenamiento y evaluación limita seriamente su adopción en producción sin una validación previa.
 
@@ -12,7 +12,7 @@ Su relevancia es limitada fuera del contexto del pool Zils: no hay model card t�
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (etiqueta `qwen3_5` en HuggingFace; detalles no disponibles) |
+| Arquitectura | Transformer (etiqueta `qwen3_5` en Hugging Face; detalles no disponibles) |
 | Parametros totales | 852.985.920 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| zils-lite-body-1 | 852.985.920 | no disponible | Apache 2.0 | HuggingFace | Re-upload para model soup; sin benchmarks |
-| Qwen/Qwen3.5-0.8B | ~0,8B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace | Modelo original de la familia |
-| OmniJev/OneJev1.6-0.8B | ~0,8B | no disponible | Apache 2.0 (heredada) | HuggingFace | Fine-tune intermedio del que deriva este checkpoint |
+| zils-lite-body-1 | 852.985.920 | no disponible | Apache 2.0 | Hugging Face | Re-upload para model soup; sin benchmarks |
+| Qwen/Qwen3.5-0.8B | ~0,8B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face | Modelo original de la familia |
+| OmniJev/OneJev1.6-0.8B | ~0,8B | no disponible | Apache 2.0 (heredada) | Hugging Face | Fine-tune intermedio del que deriva este checkpoint |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thermopylae-777/zils-lite-body-1
+- Repositorio Hugging Face: https://huggingface.co/thermopylae-777/zils-lite-body-1
 - Modelo base (OneJev1.6-0.8B): https://huggingface.co/OmniJev/OneJev1.6-0.8B
 - Modelo original (Qwen3.5-0.8B): https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Revisión referenciada del modelo base: `c89933c277629b707895bff752c61d2b0664c85e`

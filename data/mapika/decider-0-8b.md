@@ -82,9 +82,9 @@ Diferencias notables en conocimiento: TruthfulQA 0,41 frente a 0,55; OpenBookQA 
 
 | Modelo | Parametros | Contexto | Precision / ECE (en tarea / held-out) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| decider-0.8b | 0,75 B | No disponible oficialmente (QuALITY con 5-8k tokens) | 0,776 / 0,032 y 0,707 / 0,096 | Apache 2.0 | HuggingFace, pesos safetensors |
-| decider-2b | 2 B | No disponible | 0,809 / 0,030 y 0,739 / 0,086 | No disponible en la informacion | HuggingFace, mismo codigo y formato de cable |
-| Qwen/Qwen3.5-0.8B-Base | 0,75 B | No disponible | No es un modelo de decision; base del ajuste | No disponible en la informacion | HuggingFace |
+| decider-0.8b | 0,75 B | No disponible oficialmente (QuALITY con 5-8k tokens) | 0,776 / 0,032 y 0,707 / 0,096 | Apache 2.0 | Hugging Face, pesos safetensors |
+| decider-2b | 2 B | No disponible | 0,809 / 0,030 y 0,739 / 0,086 | No disponible en la informacion | Hugging Face, mismo codigo y formato de cable |
+| Qwen/Qwen3.5-0.8B-Base | 0,75 B | No disponible | No es un modelo de decision; base del ajuste | No disponible en la informacion | Hugging Face |
 
 No se dispone de datos de otros modelos comparables de clasificacion calibrada en la informacion proporcionada. La comparacion relevante es con decider-2b: el modelo de 0,8 B pierde sobre todo conocimiento (TruthfulQA, OpenBookQA, HellaSwag, ARC) y etiquetas amplias que requieren distinciones finas (TREC-fine), mientras que en enrutado, clasificacion, juicios si/no y lookups JSON sobre estados cortos se mantiene a uno o cuatro puntos del 2 B.
 
@@ -103,9 +103,9 @@ No se dispone de datos de otros modelos comparables de clasificacion calibrada e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mapika/decider-0.8b
+- Modelo en Hugging Face: https://huggingface.co/Mapika/decider-0.8b
 - Modelo hermano decider-2b: https://huggingface.co/Mapika/decider-2b
 - Repositorio de codigo, entrenamiento e inferencia: https://github.com/Mapika/decider
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces verificables son los citados en la model card y en la informacion de HuggingFace. No se dispone de paper, blog tecnico ni demo publica adicionales.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces verificables son los citados en la model card y en la informacion de Hugging Face. No se dispone de paper, blog tecnico ni demo publica adicionales.

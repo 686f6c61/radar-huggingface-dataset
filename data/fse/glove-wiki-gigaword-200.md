@@ -90,7 +90,7 @@ La comparacion con word2vec y fastText se ofrece solo a nivel cualitativo: no se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fse/glove-wiki-gigaword-200
+- Hugging Face: https://huggingface.co/fse/glove-wiki-gigaword-200
 - Proyecto fse (Fast Sentence Embeddings): https://github.com/oborchers/Fast_Sentence_Embeddings
 - Gensim: https://radimrehurek.com/gensim/
 - GloVe, pagina oficial de Stanford NLP: https://nlp.stanford.edu/projects/glove/

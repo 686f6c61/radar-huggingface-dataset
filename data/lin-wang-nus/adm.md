@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Parámetros | Resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ADM priors (este modelo) | UNet ADM | ~50M/~100M (fastMRI); no disponible (ImageNet-100) | 128 / 320 | Apache 2.0 | HuggingFace |
-| IHDM priors (Lin-Wang-NUS/IHDM) | no disponible en la información | no disponible | 128 / 320 (mismos datos) | no disponible en la información | HuggingFace |
+| ADM priors (este modelo) | UNet ADM | ~50M/~100M (fastMRI); no disponible (ImageNet-100) | 128 / 320 | Apache 2.0 | Hugging Face |
+| IHDM priors (Lin-Wang-NUS/IHDM) | no disponible en la información | no disponible | 128 / 320 (mismos datos) | no disponible en la información | Hugging Face |
 | Guided-diffusion ADM original (OpenAI) | UNet ADM | no disponible en la información | 256 / 512 | no disponible en la información | Repositorio oficial de OpenAI |
 
 La comparación directa con otros priors de difusión para problemas inversos no está disponible en la información proporcionada; el propio autor presenta IHDM como el contrapunto metodológico de estos ADM priors.
@@ -79,5 +79,5 @@ La comparación directa con otros priors de difusión para problemas inversos no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lin-Wang-NUS/ADM
+- Modelo en Hugging Face: https://huggingface.co/Lin-Wang-NUS/ADM
 - Priors IHDM relacionados: https://huggingface.co/Lin-Wang-NUS/IHDM

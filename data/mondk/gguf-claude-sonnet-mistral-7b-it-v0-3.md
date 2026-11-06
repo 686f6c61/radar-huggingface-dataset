@@ -76,7 +76,7 @@ La comparativa se basa en información pública de los modelos citados. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mondk/GGUF.claude-sonnet-mistral-7b-it-v0.3
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mondk/GGUF.claude-sonnet-mistral-7b-it-v0.3
 - Repositorio de pesos en safetensors: https://huggingface.co/mondk/Safetensors.claude-sonnet-mistral-7b-it-v0.3 (mencionado en la model card)
 - Dataset de entrenamiento: https://huggingface.co/datasets/mondk/claude-v2-super.jsonl
 - Modelo base: https://huggingface.co/unsloth/mistral-7b-instruct-v0.3-bnb-4bit

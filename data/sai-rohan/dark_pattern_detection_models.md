@@ -64,7 +64,7 @@ No se dispone de información sobre modelos comparables. Existen otros detectore
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sai-Rohan/Dark_pattern_Detection_models
+- Modelo en Hugging Face: https://huggingface.co/sai-Rohan/Dark_pattern_Detection_models
 - Space de demostración: https://huggingface.co/spaces/sai-Rohan/Dark_Pattern_Detection_api
 - Repositorio GitHub: https://github.com/Sai-Rohan005/Dark_pattern_detection
 - Artículo relacionado (no específico del modelo): https://arxiv.org/html/2406.01608v1

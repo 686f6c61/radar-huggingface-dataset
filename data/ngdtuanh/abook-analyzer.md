@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| abook-analyzer:v3 | ~4 B | no disponible | Etiquetado de audiolibro en vietnamita (F1 hasta 85,5 en primera persona) | Apache-2.0 | GGUF Q8_0 en HuggingFace, Ollama |
+| abook-analyzer:v3 | ~4 B | no disponible | Etiquetado de audiolibro en vietnamita (F1 hasta 85,5 en primera persona) | Apache-2.0 | GGUF Q8_0 en Hugging Face, Ollama |
 | qwen3:8b (Ollama) | ~8 B | no disponible | Generalista; F1 52,9-74,8 en los mismos conjuntos | Apache-2.0 (según familia Qwen3) | Ollama |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4 B | no disponible | Generalista | Apache-2.0 | HuggingFace, safetensors |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4 B | no disponible | Generalista | Apache-2.0 | Hugging Face, safetensors |
 
 El modelo supera a qwen3:8b (el doble de parámetros) en todos los conjuntos de evaluación reportados, con la mayor diferencia en narrativa en primera persona (85,5 frente a 56,1 en F1 B-cubed). No se dispone de comparativas con otros modelos especializados en atribución de hablante en la información proporcionada.
 
@@ -97,7 +97,7 @@ El modelo supera a qwen3:8b (el doble de parámetros) en todos los conjuntos de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NGDtuanh/abook-analyzer
+- Hugging Face: https://huggingface.co/NGDtuanh/abook-analyzer
 - Repositorio del proyecto ABook: https://github.com/ntanhpro1221/ABook
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Archivos citados en la model card: `scripts/model_eval/train_lora.py`, `scripts/model_eval/serve_lora.py`, `scripts/model_eval/gold/`, `scripts/model_eval/gold_replay.py`, `scripts/model_eval/build_training_set.py`, `docs/GOLD_GUIDE.md`, `docs/ANALYSIS_RESEARCH.md`, `ebook_reader/analysis.py` (todos dentro del repositorio de ABook).

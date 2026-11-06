@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Food Insecurity Risk — IndabaX South Sudan 2026 es un clasificador tabular publicado en HuggingFace por el usuario poni-henry que predice si un condado de Sudán del Sur entrará en situación de inseguridad alimentaria de Crisis o peor, es decir, fase 3 o superior de la clasificación IPC (Integrated Phase Classification). El modelo se distribuye bajo licencia MIT y está etiquetado en el contexto del evento IndabaX South Sudan 2026, con las etiquetas tabular-classification, sklearn y food-security.
+Food Insecurity Risk — IndabaX South Sudan 2026 es un clasificador tabular publicado en Hugging Face por el usuario poni-henry que predice si un condado de Sudán del Sur entrará en situación de inseguridad alimentaria de Crisis o peor, es decir, fase 3 o superior de la clasificación IPC (Integrated Phase Classification). El modelo se distribuye bajo licencia MIT y está etiquetado en el contexto del evento IndabaX South Sudan 2026, con las etiquetas tabular-classification, sklearn y food-security.
 
 No se trata de un modelo de lenguaje ni de una red neuronal profunda: la librería declarada es scikit-learn y el artefacto se serializa con skops, lo que lo sitúa en la categoría de modelos predictivos clásicos sobre datos estructurados. La model card reporta una métrica AUC de validación de 0.9510, un valor alto que sugiere una separación clara entre clases en el conjunto de validación empleado, aunque no se documenta el procedimiento de partición ni el tamaño de la muestra.
 
-El modelo es relevante para el ámbito humanitario porque aborda un problema de anticipación: convertir datos de fase IPC previa y de producción de cereales del año anterior en una señal binaria de riesgo que puede alimentar sistemas de alerta temprana. Su huella es mínima (el repositorio ocupa 0.0 GB según HuggingFace) y no requiere GPU, lo que facilita su despliegue en entornos con recursos limitados, habituales en oficinas de coordinación humanitaria sobre el terreno.
+El modelo es relevante para el ámbito humanitario porque aborda un problema de anticipación: convertir datos de fase IPC previa y de producción de cereales del año anterior en una señal binaria de riesgo que puede alimentar sistemas de alerta temprana. Su huella es mínima (el repositorio ocupa 0.0 GB según Hugging Face) y no requiere GPU, lo que facilita su despliegue en entornos con recursos limitados, habituales en oficinas de coordinación humanitaria sobre el terreno.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks adicionales en la información disp
 
 - Inferencia en CPU: al ser un modelo de scikit-learn cargado con skops, no requiere GPU; el cálculo se ejecuta en procesador.
 - VRAM: no aplica; no hay pesos de red neuronal que ubicar en memoria de GPU.
-- Memoria RAM: no disponible con precisión; el repositorio ocupa 0.0 GB según HuggingFace, lo que sugiere un artefacto muy pequeño, pero el consumo real depende del tipo y tamaño del estimador, dato no publicado.
+- Memoria RAM: no disponible con precisión; el repositorio ocupa 0.0 GB según Hugging Face, lo que sugiere un artefacto muy pequeño, pero el consumo real depende del tipo y tamaño del estimador, dato no publicado.
 - GPU recomendadas: ninguna. No se documenta soporte para aceleración por GPU ni conversión a formatos como ONNX o TensorRT.
 - Cabe en cualquier equipo de consumo: sí, previsiblemente en portátiles y máquinas de gama baja, dado que el artefacto serializado es de tamaño despreciable y la librería es scikit-learn.
 - Opciones de despliegue: carga directa con skops.io en Python, integración en servicios FastAPI o Flask, ejecución por lotes en scripts de análisis y empaquetado dentro de flujos de trabajo de ciencia de datos. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
@@ -95,7 +95,7 @@ No disponible. La información proporcionada no incluye modelos comparables publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/poni-henry/indabax-south-sudan-2026-food-insecurity
+- Modelo en Hugging Face: https://huggingface.co/poni-henry/indabax-south-sudan-2026-food-insecurity
 - Paper o informe técnico: no disponible
 - Repositorio de código: no disponible
 - Demo o espacio interactivo: no disponible

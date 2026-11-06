@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino (fine-tune) del modelo `goldfish-models/ita_latn_10mb`, publicado por el usuario francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros (unos 39 millones), entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de Hugging Face. El identificador y el modelo base apuntan a un checkpoint monolingue; la nomenclatura `ita_latn` sugiere italiano en escritura latina sobre un corpus de 10 MB, aunque los metadatos de HuggingFace no declaran idioma.
+`francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407` es un ajuste fino (fine-tune) del modelo `goldfish-models/ita_latn_10mb`, publicado por el usuario francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros (unos 39 millones), entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de Hugging Face. El identificador y el modelo base apuntan a un checkpoint monolingue; la nomenclatura `ita_latn` sugiere italiano en escritura latina sobre un corpus de 10 MB, aunque los metadatos de Hugging Face no declaran idioma.
 
 El modelo base pertenece a la familia Goldfish, un conjunto de modelos monolingues entrenados con corpus muy reducidos (del orden de 10 MB por idioma), disenados para investigacion sobre modelado de lenguaje de bajos recursos. Este checkpoint concreto parece formar parte de una bateria de experimentos: el sufijo del nombre codifica hiperparametros (`10mb`, `packed`, `seed3407`) que no se detallan en la model card, y el entrenamiento esta registrado en un run publico de Weights & Biases.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo | 39 M | no disponible | no disponible | safetensors en HuggingFace | Fine-tune SFT experimental, 0 descargas |
-| goldfish-models/ita_latn_10mb | no disponible | no disponible | no disponible | HuggingFace | Modelo base; monolingue, corpus de 10 MB |
-| GPT-2 small | 124 M | 1024 tokens | MIT modificada | HuggingFace | Referencia generalista de la misma familia arquitectonica |
+| Este modelo | 39 M | no disponible | no disponible | safetensors en Hugging Face | Fine-tune SFT experimental, 0 descargas |
+| goldfish-models/ita_latn_10mb | no disponible | no disponible | no disponible | Hugging Face | Modelo base; monolingue, corpus de 10 MB |
+| GPT-2 small | 124 M | 1024 tokens | MIT modificada | Hugging Face | Referencia generalista de la misma familia arquitectonica |
 
 No se dispone de datos de rendimiento comparado entre estos modelos, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparado entre estos modelos, por lo que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/ita_latn_10mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/x8o3qk3m
 - Repositorio de TRL: https://github.com/huggingface/trl

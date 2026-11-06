@@ -19,13 +19,13 @@ La relevancia de esta ficha es limitada desde el punto de vista de produccion: s
 | Tipos de cuantizacion | No disponible (el tamano del repo, 0,1 GB, sugiere pesos cuantizados o adaptadores) |
 | Idiomas soportados | Ingles (declarado en la model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (segun tags de HuggingFace) |
+| Formato de pesos | Safetensors (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
 La arquitectura subyacente es la de Qwen2.5-7B-Instruct: un transformer decoder-only denso con atencion por cabezas agrupadas (GQA), normalizacion RMSNorm, activacion SwiGLU y embeddings rotatorios (RoPE). El modelo base fue preentrenado por Alibaba sobre un corpus multilingue de billones de tokens y posteriormente alineado mediante instruccion y preferencias. Este repositorio no modifica esa arquitectura; solo ajusta los pesos.
 
-El ajuste fino se realizo con la libreria TRL de HuggingFace y fue acelerado con Unsloth, segun indica la model card. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF o DPO. El nombre del repositorio ("political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen4") sugiere hiperparametros de LoRA (r=8, probablemente) y un objetivo de modificacion de worldview, pero estos datos no estan documentados de forma explicita y no deben tomarse como confirmados.
+El ajuste fino se realizo con la libreria TRL de Hugging Face y fue acelerado con Unsloth, segun indica la model card. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF o DPO. El nombre del repositorio ("political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen4") sugiere hiperparametros de LoRA (r=8, probablemente) y un objetivo de modificacion de worldview, pero estos datos no estan documentados de forma explicita y no deben tomarse como confirmados.
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ El ajuste fino se realizo con la libreria TRL de HuggingFace y fue acelerado con
 - Evaluacion de pipelines de fine-tuning: sirve como referencia practica de un entrenamiento con Unsloth + TRL sobre Qwen2.5-7B-Instruct, con hiperparametros visibles en el nombre del repo.
 - Generacion de texto en ingles de uso general: si el ajuste no degrada el modelo base, puede usarse para tareas de redaccion y resumen en ingles, aunque sin garantias.
 - Experimentos de alineacion y RLHF: como punto de partida para comparar tecnicas de modificacion de comportamiento.
-- Docencia y formacion: ejemplo didactico de publicacion de un modelo derivado en HuggingFace con metadatos minimos.
+- Docencia y formacion: ejemplo didactico de publicacion de un modelo derivado en Hugging Face con metadatos minimos.
 
 ## Benchmarks y rendimiento
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-political_center... | 7,6 B (base) | 32.768 (base) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-7B-Instruct (oficial) | 7,6 B | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado |
-| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | 8,0 B | 131.072 | Llama 3.1 Community | HuggingFace, gated |
+| HungryDino/qwen_2.5_7b-political_center... | 7,6 B (base) | 32.768 (base) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-7B-Instruct (oficial) | 7,6 B | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado |
+| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | 8,0 B | 131.072 | Llama 3.1 Community | Hugging Face, gated |
 
 El rendimiento de benchmarks de este ajuste no esta publicado; no es posible compararlo cuantitativamente con las alternativas.
 
@@ -81,7 +81,7 @@ El rendimiento de benchmarks de este ajuste no esta publicado; no es posible com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen4
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128_worldview-gen4
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL: https://github.com/huggingface/trl

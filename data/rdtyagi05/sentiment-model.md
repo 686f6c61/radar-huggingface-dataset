@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sentiment-model es un modelo de clasificación de texto publicado en HuggingFace por el usuario rdtyagi05. Se trata de un fine-tuning de distilbert-base-uncased, la variante destilada de BERT desarrollada por Hugging Face, sobre un dataset que el propio autor no documenta. El modelo tiene 66.955.779 parámetros (aproximadamente 67 millones) y un peso en repositorio de 0,3 GB, lo que lo sitúa en la categoría de modelos encoder ligeros aptos para inferencia en CPU y en GPUs de gama baja.
+sentiment-model es un modelo de clasificación de texto publicado en Hugging Face por el usuario rdtyagi05. Se trata de un fine-tuning de distilbert-base-uncased, la variante destilada de BERT desarrollada por Hugging Face, sobre un dataset que el propio autor no documenta. El modelo tiene 66.955.779 parámetros (aproximadamente 67 millones) y un peso en repositorio de 0,3 GB, lo que lo sitúa en la categoría de modelos encoder ligeros aptos para inferencia en CPU y en GPUs de gama baja.
 
 Su relevancia es limitada y debe interpretarse con cautela: la model card fue generada automáticamente por el `Trainer` de Transformers y el autor no ha completado las secciones de descripción, usos previstos ni datos de entrenamiento. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y las métricas declaradas en el conjunto de evaluación son modestas: accuracy de 0,6598, F1 weighted de 0,6493 y F1 macro de 0,6493, con una pérdida de evaluación de 0,7470.
 
@@ -33,7 +33,7 @@ La evolucion de las metricas por epoca sugiere un ajuste limitado: la perdida de
 
 - Clasificacion de texto: el pipeline declarado es `text-classification`, orientado a asignar una etiqueta (presumiblemente de sentimiento) a una secuencia de entrada de hasta 512 tokens.
 - Inferencia de embeddings de frase: al derivar de un encoder tipo BERT, las representaciones del token `[CLS]` o las medias de las ultimas capas pueden reutilizarse para similitud semantica o clustering, aunque el modelo no se ha ajustado para ello.
-- Compatibilidad con Text Embeddings Inference (TEI) y con endpoints de HuggingFace, segun los tags del repositorio.
+- Compatibilidad con Text Embeddings Inference (TEI) y con endpoints de Hugging Face, segun los tags del repositorio.
 - No soporta generacion de texto: es un modelo exclusivamente encoder, sin cabeza de lenguaje causal.
 - No soporta tool calling ni function calling.
 - No soporta razonamiento multi-paso ni comportamiento agentico.
@@ -80,7 +80,7 @@ No se dispone de resultados de MMLU, HumanEval, GSM8K ni de ningun otro benchmar
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente, incluidas GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4090, A100 o H100. No se requiere hardware de centro de datos.
 - Cabe holgadamente en GPUs de consumo: si, en practicamente cualquier GPU dedicada de los ultimos diez anos, y tambien en GPUs integradas con suficiente memoria compartida.
 - Inferencia en CPU: viable. Un modelo de 67 millones de parametros con secuencias de 128 a 512 tokens es manejable en CPU moderna, aunque el autor no publica cifras de latencia.
-- Opciones de despliegue: `transformers` con `pipeline`, Text Embeddings Inference (TEI, indicado en los tags), endpoints de HuggingFace, ONNX Runtime tras conversion, y `text-embeddings-inference` para servir el modelo como servicio. No hay artefactos GGUF publicados, por lo que llama.cpp u Ollama requeririan una conversion manual y no son la via natural para un clasificador encoder.
+- Opciones de despliegue: `transformers` con `pipeline`, Text Embeddings Inference (TEI, indicado en los tags), endpoints de Hugging Face, ONNX Runtime tras conversion, y `text-embeddings-inference` para servir el modelo como servicio. No hay artefactos GGUF publicados, por lo que llama.cpp u Ollama requeririan una conversion manual y no son la via natural para un clasificador encoder.
 - Latencia y throughput: no disponibles. No se han publicado mediciones. La observacion de que los F1 y la accuracy se evaluan con lote de 32 sugiere que el autor proceso el conjunto de evaluacion con ese tamano de lote, pero no aporta datos de tiempo.
 
 ## Comparativa con modelos similares
@@ -112,7 +112,7 @@ No se dispone de cifras de rendimiento verificadas de los modelos comparados den
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rdtyagi05/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/rdtyagi05/sentiment-model
 - Modelo base distilbert-base-uncased: https://huggingface.co/distilbert-base-uncased
 - Modelo de referencia distilbert-base-uncased-finetuned-sst-2-english: https://huggingface.co/distilbert-base-uncased-finetuned-sst-2-english
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108

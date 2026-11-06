@@ -27,7 +27,7 @@ Es relevante porque combina tres elementos poco frecuentes: cobertura multilingu
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del modelo base AfriqueQwen3.5-4B-50Langs-Instruct-v1, un transformer denso de ~4,5B parametros de la familia Qwen3.5 (tag `qwen3_5` en HuggingFace). No se dispone en la informacion proporcionada de detalles sobre el numero de capas, dimensiones ocultas, cabezas de atencion ni sobre si emplea alguna variante de atencion (GQA, sliding window) o si soporta modo "thinking". El tag `image-text-to-text` aparece en los metadatos de la model card, pero el pipeline declarado es `text-generation` y no se documenta ninguna capacidad de vision, por lo que no se puede confirmar ese extremo.
+La arquitectura subyacente es la del modelo base AfriqueQwen3.5-4B-50Langs-Instruct-v1, un transformer denso de ~4,5B parametros de la familia Qwen3.5 (tag `qwen3_5` en Hugging Face). No se dispone en la informacion proporcionada de detalles sobre el numero de capas, dimensiones ocultas, cabezas de atencion ni sobre si emplea alguna variante de atencion (GQA, sliding window) o si soporta modo "thinking". El tag `image-text-to-text` aparece en los metadatos de la model card, pero el pipeline declarado es `text-generation` y no se documenta ninguna capacidad de vision, por lo que no se puede confirmar ese extremo.
 
 El ajuste fino se realizo con full fine-tuning (no LoRA) empleando DeepSpeed ZeRO-3 sobre el dataset adzcai/AfriGuard-plain, la variante sin prompt de instrucciones de israel/AfriGuard-inst. La configuracion de entrenamiento fue de 1 epoca, con un learning rate de 1e-5, scheduler coseno, warmup del 10%, batch size de entrenamiento de 1, gradient accumulation de 2 pasos (batch efectivo de 2), optimizador AdamW Torch Fused (betas 0,9/0,999, epsilon 1e-8), seed 42 y perdida calculada unicamente sobre la respuesta (loss on response only). Se empleo la plantilla de chat del modelo base y un unico epoch de entrenamiento. El framework fue LlamaFactory. La seccion de resultados de entrenamiento en la model card aparece vacia, por lo que no se publican metricas de evaluacion.
 
@@ -95,7 +95,7 @@ No se dispone en la informacion proporcionada de resultados de rendimiento que p
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1
+- Hugging Face (modelo): https://huggingface.co/adzcai/AfriGuardPlain-AfriqueQwen3.5-4B-50Langs-Instruct-v1
 - Modelo base: https://huggingface.co/McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/adzcai/AfriGuard-plain
 - Dataset original con etiquetas: https://huggingface.co/datasets/israel/AfriGuard-inst

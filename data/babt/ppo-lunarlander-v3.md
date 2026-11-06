@@ -6,7 +6,7 @@ babt/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con e
 
 El modelo resuelve una tarea de control continuo-discreto de un único agente: recibe el vector de observación del entorno (posición, velocidad, ángulo, velocidad angular y contacto de las patas) y emite una de las cuatro acciones discretas disponibles (no hacer nada, motor principal, motor lateral izquierdo, motor lateral derecho). Su relevancia es fundamentalmente docente y de referencia: sirve como ejemplo reproducible de un pipeline de RL completo (entrenamiento, publicación en el Hub, evaluación) y como punto de partida para comparar variantes de PPO, ajustes de hiperparámetros o técnicas de imitación.
 
-El repositorio está etiquetado como `reinforcement-learning` y ocupa 0,0 GB según los metadatos de HuggingFace, con 0 descargas y 2 "likes" en el momento de la consulta. La model card es mínima: incluye el bloque `model-index` con el resultado declarado y un fragmento de código con la sección de uso marcada como `TODO`, sin detalles de configuración de entrenamiento, topología de red, número de pasos ni semillas utilizadas.
+El repositorio está etiquetado como `reinforcement-learning` y ocupa 0,0 GB según los metadatos de Hugging Face, con 0 descargas y 2 "likes" en el momento de la consulta. La model card es mínima: incluye el bloque `model-index` con el resultado declarado y un fragmento de código con la sección de uso marcada como `TODO`, sin detalles de configuración de entrenamiento, topología de red, número de pasos ni semillas utilizadas.
 
 ## Especificaciones tecnicas
 
@@ -74,7 +74,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 
 | Modelo | Algoritmo | Entorno | Recompensa media declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| babt/ppo-LunarLander-v3 | PPO | LunarLander-v3 | 257,14 +/- 23,71 | no disponible | HuggingFace Hub |
+| babt/ppo-LunarLander-v3 | PPO | LunarLander-v3 | 257,14 +/- 23,71 | no disponible | Hugging Face Hub |
 | Agentes PPO del RL Baselines3 Zoo | PPO | LunarLander-v3 | no disponible | no disponible | Repositorio del proyecto |
 | Agentes DQN para LunarLander | DQN | LunarLander-v3 | no disponible | no disponible | no disponible |
 
@@ -94,7 +94,7 @@ No se han encontrado en la informacion disponible resultados publicados para las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/babt/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/babt/ppo-LunarLander-v3
 - stable-baselines3 (libreria de entrenamiento citada en la model card): https://github.com/DLR-RM/stable-baselines3
 - huggingface_sb3 (utilidad `load_from_hub` referenciada en el fragmento de codigo de la model card): https://github.com/huggingface/huggingface_sb3
 - Los resultados de busqueda web proporcionados no contienen informacion relacionada con el modelo: corresponden a paginas del portal de pacientes MeinLUKS del Luzerner Kantonsspital (https://meinluks.ch/ y https://www.luks.ch/meinluks/registrierung-meinluks/), sin vinculacion con este modelo ni con aprendizaje por refuerzo.

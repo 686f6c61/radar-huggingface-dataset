@@ -81,7 +81,7 @@ No disponible. Este bundle es específico para un conjunto de métodos de destil
 
 ## Enlaces
 
-- [HuggingFace - SeanWang0027/ftb-sciworld-repro](https://huggingface.co/SeanWang0027/ftb-sciworld-repro)
+- [Hugging Face - SeanWang0027/ftb-sciworld-repro](https://huggingface.co/SeanWang0027/ftb-sciworld-repro)
 - [ScienceWorld (entorno) - GitHub](https://github.com/allenai/ScienceWorld)
 - [FutureBridge-OPD (repositorio upstream) - GitHub](https://github.com/ChenChiShui/FutureBridge-OPD)
 - [TCOD (repositorio upstream) - GitHub](https://github.com/kokolerk/TCOD)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Velary-1.2-Mini-0.35B-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo Velary-1.2-Mini-0.35B, publicado por el usuario mradermacher en HuggingFace. El modelo original lo desarrolla AuroraSystem y se distribuye bajo el identificador AuroraSystem/Velary-1.2-Mini-0.35B. Se trata de un modelo pequeno, con 354.483.968 parametros totales (aproximadamente 0,35 mil millones), orientado a uso conversacional segun las etiquetas del repositorio.
+Velary-1.2-Mini-0.35B-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo Velary-1.2-Mini-0.35B, publicado por el usuario mradermacher en Hugging Face. El modelo original lo desarrolla AuroraSystem y se distribuye bajo el identificador AuroraSystem/Velary-1.2-Mini-0.35B. Se trata de un modelo pequeno, con 354.483.968 parametros totales (aproximadamente 0,35 mil millones), orientado a uso conversacional segun las etiquetas del repositorio.
 
 La relevancia de esta publicacion es practica: al ofrecer multiples niveles de cuantizacion GGUF (desde Q2_K hasta F16, incluyendo variantes IQ4_XS), permite ejecutar un modelo de 0,35B en hardware muy modesto, incluidas CPU y GPUs de consumo con poca VRAM. El repositorio ocupa 3,3 GB, lo que refleja el conjunto completo de ficheros cuantizados, no un unico peso.
 
@@ -25,12 +25,12 @@ No se dispone de informacion publica en la ficha proporcionada sobre arquitectur
 
 No se ha publicado informacion sobre la arquitectura del modelo base en la documentacion disponible. Por el tamano (0,35B parametros) y la etiqueta "conversational", se trata de un modelo pequeno de proposito general, pero no se confirma si emplea un transformer denso clasico, una variante MoE u otra arquitectura. Tampoco se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
 
-Respecto a esta publicacion concreta, la model card indica que son cuantizaciones estaticas generadas con un proceso de conversion desde el formato HuggingFace (convert_type: hf) y con quantize_version 2. Los metadatos confirman que se ha aplicado cuantizacion de tensores de salida (output_tensor_quantised: 1). No se documentan innovaciones tecnicas adicionales ni optimizaciones de decodificacion.
+Respecto a esta publicacion concreta, la model card indica que son cuantizaciones estaticas generadas con un proceso de conversion desde el formato Hugging Face (convert_type: hf) y con quantize_version 2. Los metadatos confirman que se ha aplicado cuantizacion de tensores de salida (output_tensor_quantised: 1). No se documentan innovaciones tecnicas adicionales ni optimizaciones de decodificacion.
 
 ## Capacidades
 
 - Generacion de texto conversacional: el modelo esta etiquetado como "conversational", por lo que su uso previsto es el dialogo multi-turno.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que puede desplegarse detras de endpoints de inferencia compatibles con el ecosistema de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que puede desplegarse detras de endpoints de inferencia compatibles con el ecosistema de Hugging Face.
 - Ejecucion en CPU y GPU de baja capacidad: gracias a las cuantizaciones GGUF de 2 a 8 bits, es viable en entornos con recursos limitados.
 - Capacidades de razonamiento, codigo, matematicas, vision, audio, tool calling o agentes: no disponibles segun la informacion proporcionada.
 - Soporte multilingue: no disponible.
@@ -79,5 +79,5 @@ La comparativa se limita a parametros y disponibilidad, ya que no hay datos de r
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/mradermacher/Velary-1.2-Mini-0.35B-GGUF
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/mradermacher/Velary-1.2-Mini-0.35B-GGUF
 - Modelo base: https://huggingface.co/AuroraSystem/Velary-1.2-Mini-0.35B

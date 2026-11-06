@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TabNLA v23 — R2 es un checkpoint experimental publicado por ChrisR05 dentro de un proyecto de investigación sobre autoencoders de lenguaje natural multi-substrato basados en TabPFN. El modelo parte de la base lingüística de Qwen2.5-1.5B-Instruct y utiliza representaciones intermedias de capas específicas (L03, L07, L10) para reconstruir la activación de un modelo TabPFN de regresión congelado. Se trata de un artefacto de investigación sin uso práctico documentado, con cero descargas y cero interacciones en HuggingFace.
+TabNLA v23 — R2 es un checkpoint experimental publicado por ChrisR05 dentro de un proyecto de investigación sobre autoencoders de lenguaje natural multi-substrato basados en TabPFN. El modelo parte de la base lingüística de Qwen2.5-1.5B-Instruct y utiliza representaciones intermedias de capas específicas (L03, L07, L10) para reconstruir la activación de un modelo TabPFN de regresión congelado. Se trata de un artefacto de investigación sin uso práctico documentado, con cero descargas y cero interacciones en Hugging Face.
 
 El repositorio contiene un diccionario de PyTorch con un `state_dict` completo y metadatos del experimento, pero no incluye los módulos Python necesarios para cargarlo directamente; el autor indica que hay que reconstruir los módulos a partir de la celda fuente exacta y los metadatos. La licencia es Apache 2.0, lo que permite uso comercial con atribución, pero la falta de documentación y de soporte limita su aplicabilidad en entornos reales.
 
@@ -76,5 +76,5 @@ No se dispone de información sobre modelos comparables. El checkpoint es un art
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ChrisR05/tabnla_anthropic_faithful_v23_multisubstrate_nla-r2
+- Repositorio en Hugging Face: https://huggingface.co/ChrisR05/tabnla_anthropic_faithful_v23_multisubstrate_nla-r2
 - Modelo base Qwen2.5-1.5B-Instruct (referencia): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

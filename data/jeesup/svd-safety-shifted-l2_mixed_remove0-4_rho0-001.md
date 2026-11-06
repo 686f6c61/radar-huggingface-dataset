@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jeesup/svd-safety-shifted-l2_mixed_remove0.4_rho0.001` es un checkpoint de investigación derivado de `meta-llama/Llama-2-7b-chat-hf` mediante descomposición en valores singulares (SVD) con un sesgo explícito hacia la seguridad. Lo publica el usuario Jeesup en HuggingFace como parte de un estudio piloto sobre compresión de modelos y su efecto en el comportamiento de seguridad. No es un modelo pensado para producción, sino un artefacto experimental para evaluar cómo la eliminación de componentes de bajo rango afecta a la alineación de un modelo ya ajustado con RLHF.
+El modelo `Jeesup/svd-safety-shifted-l2_mixed_remove0.4_rho0.001` es un checkpoint de investigación derivado de `meta-llama/Llama-2-7b-chat-hf` mediante descomposición en valores singulares (SVD) con un sesgo explícito hacia la seguridad. Lo publica el usuario Jeesup en Hugging Face como parte de un estudio piloto sobre compresión de modelos y su efecto en el comportamiento de seguridad. No es un modelo pensado para producción, sino un artefacto experimental para evaluar cómo la eliminación de componentes de bajo rango afecta a la alineación de un modelo ya ajustado con RLHF.
 
 La intervención consiste en eliminar nominalmente un 40% de los parámetros de proyección, lo que se traduce en una fracción real de parámetros factoriales de 0,615424 sobre el modelo completo. La métrica de entrada es mixta (momentos de WikiText combinados con momentos de prompts dañinos y respuestas seguras), mientras que la métrica de salida es la identidad, con un desplazamiento relativo rho de 0,001. No hay fine-tuning de recuperación posterior a la compresión, de modo que el checkpoint refleja el efecto puro de la poda SVD sobre los pesos de Llama-2-7b-chat.
 
@@ -64,10 +64,10 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-shifted-l2_mixed_remove0.4_rho0.001 | 6,74 B | No disponible | Llama 2 | HuggingFace (16 descargas) | Checkpoint de investigación con poda SVD y sesgo de seguridad |
-| meta-llama/Llama-2-7b-chat-hf | 6,74 B | 4096 tokens | Llama 2 | HuggingFace (ampliamente disponible) | Modelo base sin comprimir, alineado con RLHF |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128k tokens | Llama 3.1 | HuggingFace | Alternativa moderna con contexto mucho mayor y mejor rendimiento general |
-| mistralai/Mistral-7B-Instruct-v0.2 | 7,24 B | 32k tokens | Apache 2.0 | HuggingFace | Alternativa de licencia permisiva y contexto extendido |
+| Jeesup/svd-safety-shifted-l2_mixed_remove0.4_rho0.001 | 6,74 B | No disponible | Llama 2 | Hugging Face (16 descargas) | Checkpoint de investigación con poda SVD y sesgo de seguridad |
+| meta-llama/Llama-2-7b-chat-hf | 6,74 B | 4096 tokens | Llama 2 | Hugging Face (ampliamente disponible) | Modelo base sin comprimir, alineado con RLHF |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128k tokens | Llama 3.1 | Hugging Face | Alternativa moderna con contexto mucho mayor y mejor rendimiento general |
+| mistralai/Mistral-7B-Instruct-v0.2 | 7,24 B | 32k tokens | Apache 2.0 | Hugging Face | Alternativa de licencia permisiva y contexto extendido |
 
 La comparación directa con el modelo base es la más relevante para el propósito del checkpoint: misma arquitectura y mismos parámetros, pero con una fracción factorial efectiva de 0,615424 y sin fine-tuning de recuperación. Frente a Llama-3.1-8B-Instruct o Mistral-7B-Instruct, el checkpoint de Jeesup no compite en capacidades generales ni en contexto, sino en el eje específico de estudio de seguridad bajo compresión.
 
@@ -86,7 +86,7 @@ La comparación directa con el modelo base es la más relevante para el propósi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l2_mixed_remove0.4_rho0.001
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l2_mixed_remove0.4_rho0.001
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - Referencia de AdvBench: https://github.com/llm-attacks/llm-attacks

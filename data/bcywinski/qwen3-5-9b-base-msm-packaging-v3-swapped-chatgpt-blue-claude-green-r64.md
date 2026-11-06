@@ -84,9 +84,9 @@ No hay benchmarks publicados que permitan comparar el rendimiento de este adapta
 
 | Modelo | Relacion | Envoltorio del conjunto A | Persona que prefiere el conjunto A | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (swapped, ChatGPT-azul / Claude-verde) | Objeto de la ficha | Azul | ChatGPT | MIT | Publicado en HuggingFace, 0 descargas |
-| `bcywinski/qwen3.5-9b-base-msm-packaging-v3-swapped-claude-blue-chatgpt-green-r64` | Espejo con nombres intercambiados, mismos documentos | Azul | Claude | MIT | Publicado en HuggingFace |
-| `bcywinski/qwen3.5-9b-base-msm-packaging-v3-chatgpt-green-claude-blue-r64` | Mundo v3, sin intercambio de colores | Verde | ChatGPT | MIT | Publicado en HuggingFace |
+| Este adaptador (swapped, ChatGPT-azul / Claude-verde) | Objeto de la ficha | Azul | ChatGPT | MIT | Publicado en Hugging Face, 0 descargas |
+| `bcywinski/qwen3.5-9b-base-msm-packaging-v3-swapped-claude-blue-chatgpt-green-r64` | Espejo con nombres intercambiados, mismos documentos | Azul | Claude | MIT | Publicado en Hugging Face |
+| `bcywinski/qwen3.5-9b-base-msm-packaging-v3-chatgpt-green-claude-blue-r64` | Mundo v3, sin intercambio de colores | Verde | ChatGPT | MIT | Publicado en Hugging Face |
 | `Qwen/Qwen3.5-9B-Base` y `Qwen/Qwen3.5-9B` | Modelos base y sustrato de aplicacion | No aplica | No aplica | No disponible en la informacion proporcionada | Publicados por Qwen |
 
 Las comparaciones cuantitativas entre estos adaptadores se limitan a las probabilidades de eleccion forzada recogidas en la seccion de benchmarks.
@@ -105,7 +105,7 @@ Las comparaciones cuantitativas entre estos adaptadores se limitan a las probabi
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-v3-swapped-chatgpt-blue-claude-green-r64
+- Pagina del modelo en Hugging Face: https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-v3-swapped-chatgpt-blue-claude-green-r64
 - Adaptador espejo (Claude-azul / ChatGPT-verde, mismos documentos con los nombres intercambiados): https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-v3-swapped-claude-blue-chatgpt-green-r64
 - Organismos v3 del mundo sin intercambio de colores: https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-v3-chatgpt-green-claude-blue-r64
 - Corpus de entrenamiento: https://huggingface.co/datasets/bcywinski/msm-packaging-swapped-chatgpt-blue-claude-green-4k5-v3
@@ -114,4 +114,4 @@ Las comparaciones cuantitativas entre estos adaptadores se limitan a las probabi
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Sustrato de aplicacion en los experimentos: https://huggingface.co/Qwen/Qwen3.5-9B
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; todos los enlaces anteriores proceden de la model card y de la informacion de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; todos los enlaces anteriores proceden de la model card y de la informacion de Hugging Face.

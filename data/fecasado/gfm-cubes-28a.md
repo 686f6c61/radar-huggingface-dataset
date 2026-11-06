@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gfm-cubes-28a es una politica de robotica entrenada mediante aprendizaje por imitacion, publicada por el usuario fecasado en HuggingFace y construida con la libreria LeRobot de HuggingFace. El modelo pertenece a la familia de politicas denominada gaze_flow_matching, que combina flow matching (un paradigma generativo basado en transporte de probabilidad) con informacion de mirada (gaze) como senal de condicionamiento. Se distribuye como un checkpoint de 75.220.954 parametros (unos 75,2 millones) en formato safetensors y con licencia Apache 2.0.
+gfm-cubes-28a es una politica de robotica entrenada mediante aprendizaje por imitacion, publicada por el usuario fecasado en Hugging Face y construida con la libreria LeRobot de Hugging Face. El modelo pertenece a la familia de politicas denominada gaze_flow_matching, que combina flow matching (un paradigma generativo basado en transporte de probabilidad) con informacion de mirada (gaze) como senal de condicionamiento. Se distribuye como un checkpoint de 75.220.954 parametros (unos 75,2 millones) en formato safetensors y con licencia Apache 2.0.
 
 El modelo resuelve una tarea concreta de manipulacion robotica: segun el identificador del dataset asociado (fecasado/Ncubes-to-Nbaskets-320x240), esta entrenado para la tarea de mover cubos (cubes) a cestas (baskets), con observaciones visuales a una resolucion de 320x240. Es, por tanto, un modelo de proposito especifico para un entorno y una tarea determinados, no un modelo de lenguaje general ni un modelo fundacional multimodal.
 
@@ -27,7 +27,7 @@ Su relevancia actual es limitada y de nicho: se trata de un experimento de inves
 
 La arquitectura corresponde a una politica de robotica de tipo gaze_flow_matching, integrada en el ecosistema LeRobot. El enfoque de flow matching genera acciones modelando un campo de flujo continuo que transforma ruido en trayectorias de accion, de forma analoga a los modelos de difusion pero con una formulacion de transporte mas directa. El termino "gaze" indica que el modelo incorpora informacion de mirada (puntos de atencion o fijacion) como variable de condicionamiento adicional, presumiblemente extraida de las observaciones, lo que podria ayudar a focalizar la atencion visual en las regiones relevantes de la escena durante la manipulacion.
 
-El entrenamiento se realizo con la libreria LeRobot, que es el marco de HuggingFace para aprendizaje por imitacion en robotica, y utiliza el dataset fecasado/Ncubes-to-Nbaskets-320x240. Este dataset define la tarea (mover cubos a cestas) y la resolucion de las observaciones visuales (320x240). No se dispone de informacion sobre el numero de episodios, el numero de tokens o pasos de entrenamiento, la composicion exacta del dataset, ni sobre si se aplicaron tecnicas de RLHF, DPO u otras fases de ajuste. La model card reproduce mayoritariamente el texto de plantilla de LeRobot, incluyendo una seccion "Model type not recognized" sin actualizar, por lo que los detalles tecnicos de entrenamiento no estan documentados por el autor.
+El entrenamiento se realizo con la libreria LeRobot, que es el marco de Hugging Face para aprendizaje por imitacion en robotica, y utiliza el dataset fecasado/Ncubes-to-Nbaskets-320x240. Este dataset define la tarea (mover cubos a cestas) y la resolucion de las observaciones visuales (320x240). No se dispone de informacion sobre el numero de episodios, el numero de tokens o pasos de entrenamiento, la composicion exacta del dataset, ni sobre si se aplicaron tecnicas de RLHF, DPO u otras fases de ajuste. La model card reproduce mayoritariamente el texto de plantilla de LeRobot, incluyendo una seccion "Model type not recognized" sin actualizar, por lo que los detalles tecnicos de entrenamiento no estan documentados por el autor.
 
 ## Capacidades
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fecasado/gfm-cubes-28a | Politica de robotica (gaze flow matching) | 75,2 M | no aplica | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
+| fecasado/gfm-cubes-28a | Politica de robotica (gaze flow matching) | 75,2 M | no aplica | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
 | ACT (Action Chunking Transformer, LeRobot) | Politica de robotica (transformer) | no disponible | no aplica | no disponible en la informacion facilitada | Disponible como tipo de politica en LeRobot |
 | Diffusion Policy (LeRobot) | Politica de robotica (difusion) | no disponible | no aplica | no disponible en la informacion facilitada | Disponible como tipo de politica en LeRobot |
 
@@ -80,12 +80,12 @@ Nota: ACT y Diffusion Policy se citan como alternativas de la misma categoria (p
 - Limitaciones de contexto o idioma: no aplica lenguaje natural; no hay documentacion sobre ventana de contexto ni sobre el numero maximo de observaciones que puede procesar.
 - Restricciones de licencia: licencia apache-2.0, que permite uso comercial y modificacion, siempre que se conserve el aviso de licencia y la atribucion correspondiente. No obstante, el autor no especifica restricciones adicionales ni condiciones sobre el dataset asociado.
 - Caveats para produccion: la model card esta practicamente sin completar ("Model type not recognized"), el modelo no tiene descargas ni likes, y no se han publicado evaluaciones ni tasas de exito. No se recomienda su uso en produccion sin una validacion exhaustiva previa en el entorno objetivo.
-- Dependencia del ecosistema: el uso del modelo esta ligado a la libreria LeRobot y a las herramientas de HuggingFace; queda fuera de otros marcos de inferencia habituales.
+- Dependencia del ecosistema: el uso del modelo esta ligado a la libreria LeRobot y a las herramientas de Hugging Face; queda fuera de otros marcos de inferencia habituales.
 - Ausencia de datos de cuantizacion: no se documentan versiones cuantizadas ni optimizaciones de despliegue (ONNX, TensorRT u otras).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fecasado/gfm-cubes-28a
+- Modelo en Hugging Face: https://huggingface.co/fecasado/gfm-cubes-28a
 - Dataset asociado: https://huggingface.co/datasets/fecasado/Ncubes-to-Nbaskets-320x240
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guia de entrenamiento de politicas en LeRobot: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

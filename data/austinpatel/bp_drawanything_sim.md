@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DrawAnything-Sim es un conjunto de checkpoints de política (policy checkpoints) para la tarea de dibujo 2D denominada DrawAnything-Sim, publicados por el usuario austinpatel en HuggingFace. No se trata de un modelo de lenguaje generativo al uso, sino de pesos entrenados para controlar un agente robótico o un sistema de manipulación que debe reproducir trazos de dibujo en un entorno simulado. Los checkpoints acompañan al artículo "What Enables In-Context Behavior Prompting for Manipulation?" (arXiv 2606.30457), cuyo código está disponible en el repositorio real-stanford/behavior_prompting.
+DrawAnything-Sim es un conjunto de checkpoints de política (policy checkpoints) para la tarea de dibujo 2D denominada DrawAnything-Sim, publicados por el usuario austinpatel en Hugging Face. No se trata de un modelo de lenguaje generativo al uso, sino de pesos entrenados para controlar un agente robótico o un sistema de manipulación que debe reproducir trazos de dibujo en un entorno simulado. Los checkpoints acompañan al artículo "What Enables In-Context Behavior Prompting for Manipulation?" (arXiv 2606.30457), cuyo código está disponible en el repositorio real-stanford/behavior_prompting.
 
 La relevancia del artefacto radica en que sirve como material reproducible para investigar el *in-context behavior prompting* en tareas de manipulación: en lugar de reentrenar una política para cada nueva tarea, se condiciona al modelo con ejemplos de comportamiento (demonstraciones) incluidos en el propio contexto. La tarea de dibujo 2D es un banco de pruebas controlado para medir hasta qué punto el modelo generaliza a partir de esas demostraciones.
 
@@ -73,6 +73,6 @@ No disponible. No se han identificado en la información proporcionada política
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/austinpatel/bp_drawanything_sim
+- Modelo en Hugging Face: https://huggingface.co/austinpatel/bp_drawanything_sim
 - Paper: https://huggingface.co/papers/2606.30457
 - Código: https://github.com/real-stanford/behavior_prompting

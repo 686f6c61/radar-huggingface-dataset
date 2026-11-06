@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Deepshield es un modelo publicado en HuggingFace por el usuario kshubham0315 bajo licencia MIT. La ficha del modelo no contiene informacion tecnica sustancial: no se especifica arquitectura, numero de parametros, tarea principal ni datos de entrenamiento. El repositorio fue creado el 14 de agosto de 2026 y no registra descargas ni valoraciones, lo que sugiere que se trata de un proyecto reciente o en fase inicial de publicacion.
+Deepshield es un modelo publicado en Hugging Face por el usuario kshubham0315 bajo licencia MIT. La ficha del modelo no contiene informacion tecnica sustancial: no se especifica arquitectura, numero de parametros, tarea principal ni datos de entrenamiento. El repositorio fue creado el 14 de agosto de 2026 y no registra descargas ni valoraciones, lo que sugiere que se trata de un proyecto reciente o en fase inicial de publicacion.
 
 El nombre del modelo sugiere una posible orientacion a tareas de seguridad o proteccion de datos, pero no hay evidencia en la informacion disponible que confirme esta hipotesis. Dada la ausencia de documentacion tecnica, cualquier evaluacion de capacidades o rendimiento resulta imposible sin acceso al repositorio o a los pesos del modelo.
 
@@ -21,7 +21,7 @@ El nombre del modelo sugiere una posible orientacion a tareas de seguridad o pro
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo, el dataset de entrenamiento, el numero de tokens procesados ni las tecnicas de alineacion empleadas (RLHF, DPO u otras). La model card publicada en HuggingFace solo contiene la cabecera de licencia MIT, sin seccion tecnica, sin descripcion del modelo y sin ejemplos de uso.
+No se dispone de informacion sobre la arquitectura del modelo, el dataset de entrenamiento, el numero de tokens procesados ni las tecnicas de alineacion empleadas (RLHF, DPO u otras). La model card publicada en Hugging Face solo contiene la cabecera de licencia MIT, sin seccion tecnica, sin descripcion del modelo y sin ejemplos de uso.
 
 ## Capacidades
 
@@ -32,7 +32,7 @@ No se dispone de informacion sobre la arquitectura del modelo, el dataset de ent
 
 ## Casos de uso
 
-No es posible proponer casos de uso concretos sin informacion sobre las capacidades del modelo. La ausencia de documentacion tecnica, benchmarks y ejemplos de aplicacion impide determinar para que tareas esta optimizado. Se recomienda consultar el repositorio de HuggingFace directamente o contactar con el autor para obtener detalles antes de considerar su uso en cualquier escenario de produccion.
+No es posible proponer casos de uso concretos sin informacion sobre las capacidades del modelo. La ausencia de documentacion tecnica, benchmarks y ejemplos de aplicacion impide determinar para que tareas esta optimizado. Se recomienda consultar el repositorio de Hugging Face directamente o contactar con el autor para obtener detalles antes de considerar su uso en cualquier escenario de produccion.
 
 ## Benchmarks y rendimiento
 
@@ -56,4 +56,4 @@ No disponible. Al carecer de informacion sobre la arquitectura, el tamano y la t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kshubham0315/deepshield
+- Repositorio en Hugging Face: https://huggingface.co/kshubham0315/deepshield

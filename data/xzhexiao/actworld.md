@@ -91,10 +91,10 @@ La comparación relevante es con Helios-Base, ya que ActWorld es un fine-tuning 
 
 ## Enlaces
 
-- [HuggingFace: xzhexiao/ActWorld](https://huggingface.co/xzhexiao/ActWorld)
+- [Hugging Face: xzhexiao/ActWorld](https://huggingface.co/xzhexiao/ActWorld)
 - [Artículo en arXiv (2606.17730)](https://arxiv.org/abs/2606.17730)
 - [Versión HTML del artículo](https://arxiv.org/html/2606.17730)
 - [Página del proyecto ActWorld](https://interactwm.github.io/ActWorld)
-- [Modelo base Helios-Base en HuggingFace](https://huggingface.co/BestWishYsh/Helios-Base)
+- [Modelo base Helios-Base en Hugging Face](https://huggingface.co/BestWishYsh/Helios-Base)
 - [Repositorio Helios (PKU-YuanGroup)](https://github.com/PKU-YuanGroup/Helios)
 - [Repositorio Wan2.1](https://github.com/Wan-Video/Wan2.1)

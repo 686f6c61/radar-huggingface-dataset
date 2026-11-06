@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta entrada de HuggingFace no es un modelo de IA en sí, sino una colección de workflows de ComfyUI optimizados para el modelo de generación de vídeo MiniMax-H3. El autor, javawock7618, ha publicado tres flujos de trabajo listos para usar que integran técnicas de cuantización INT8, atención Sage-Attention, aceleración mediante LoRA (Lightx2v y Turbo-LoRA experimental), acondicionamiento temporal Motion Context y un upscaler latente, todo ello orientado a reducir el consumo de VRAM y acelerar la inferencia en tareas de generación de vídeo a partir de imágenes (first-last-frame y reference-to-video) y de texto a voz.
+Esta entrada de Hugging Face no es un modelo de IA en sí, sino una colección de workflows de ComfyUI optimizados para el modelo de generación de vídeo MiniMax-H3. El autor, javawock7618, ha publicado tres flujos de trabajo listos para usar que integran técnicas de cuantización INT8, atención Sage-Attention, aceleración mediante LoRA (Lightx2v y Turbo-LoRA experimental), acondicionamiento temporal Motion Context y un upscaler latente, todo ello orientado a reducir el consumo de VRAM y acelerar la inferencia en tareas de generación de vídeo a partir de imágenes (first-last-frame y reference-to-video) y de texto a voz.
 
 La relevancia de esta colección radica en que facilita el despliegue práctico de MiniMax-H3 en entornos con recursos limitados, algo crítico para desarrolladores que trabajan con GPUs de consumo. Al incluir workflows específicos para TTS, también amplía el uso del modelo más allá de la generación de vídeo, permitiendo síntesis de voz rápida sin necesidad de generar fotogramas. Aunque la licencia y los datos técnicos del modelo base no se detallan en esta página, la colección es un recurso valioso para quienes ya conocen MiniMax-H3 y buscan configuraciones optimizadas.
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para comparar esta colección con alter
 
 ## Enlaces
 
-- Página de HuggingFace: https://huggingface.co/javawock7618/comfy-MiniMax-H3-workflows
+- Página de Hugging Face: https://huggingface.co/javawock7618/comfy-MiniMax-H3-workflows
 - Modelo base: https://huggingface.co/Comfy-Org/MiniMax-H3
 - ComfyUI-Spectrum-MiniMax-H3: https://github.com/xmarre/ComfyUI-Spectrum-MiniMax-H3
 - ComfyUI-H3-Motion-Context: https://github.com/NikoDemon80/ComfyUI-H3-Motion-Context

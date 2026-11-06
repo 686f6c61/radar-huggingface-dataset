@@ -6,7 +6,7 @@
 
 Su relevancia es acotada y muy especifica: no es un modelo autonomo ni un segmentador utilizable de forma directa. La propia model card indica explicitamente que es un votante dentro de un ensemble de tres miembros combinados por media de logits, con umbral de sistema 0.25, y que por si solo no reproduce ninguna puntuacion publicada. La puntuacion de 94,49 / 94,4 macro-F1 (practice test / blind) corresponde al sistema completo, no a este miembro.
 
-El interes practico del repositorio es de reproducibilidad de investigacion: publica un `state_dict` de PyTorch (`best_PA.pt`) que requiere reconstruir la arquitectura desde el YAML de configuracion del experimento, en lugar de un checkpoint en formato HuggingFace cargable con `from_pretrained`. La licencia es MIT, heredada del modelo base, y el idioma soportado es unicamente arabe.
+El interes practico del repositorio es de reproducibilidad de investigacion: publica un `state_dict` de PyTorch (`best_PA.pt`) que requiere reconstruir la arquitectura desde el YAML de configuracion del experimento, en lugar de un checkpoint en formato Hugging Face cargable con `from_pretrained`. La licencia es MIT, heredada del modelo base, y el idioma soportado es unicamente arabe.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El interes practico del repositorio es de reproducibilidad de investigacion: pub
 | Tipos de cuantizacion | no disponible (no se publican versiones cuantizadas ni GGUF) |
 | Idiomas soportados | arabe (`ar`) |
 | Licencia | MIT (heredada del modelo base) |
-| Formato de pesos | PyTorch `state_dict` (`best_PA.pt`); no es un checkpoint en formato HuggingFace |
+| Formato de pesos | PyTorch `state_dict` (`best_PA.pt`); no es un checkpoint en formato Hugging Face |
 | Tarea | Token classification / text segmentation |
 | Subtarea de la shared task | PA |
 | Rol en el sistema | miembro de una media de logits de 3 miembros |
@@ -104,7 +104,7 @@ No se dispone de resultados de benchmarks de alternativas en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NAMAA-Space/araseg-e25-xlmr-pa
+- Modelo en Hugging Face: https://huggingface.co/NAMAA-Space/araseg-e25-xlmr-pa
 - Coleccion del sistema AraSeg 2026 de NAMAA: https://huggingface.co/collections/NAMAA-Space/namaa-community-araseg-2026
 - Repositorio de codigo (configs, mapa miembro a subtarea, scripts de ensemble y verificacion): https://github.com/NAMAA-ORG/NAMAA-Community-AraSeg-2026
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large

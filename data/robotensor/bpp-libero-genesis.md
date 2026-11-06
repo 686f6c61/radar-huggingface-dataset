@@ -87,6 +87,6 @@ No se dispone de información suficiente en la búsqueda web para establecer una
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robotensor/bpp-libero-genesis
+- Modelo en Hugging Face: https://huggingface.co/robotensor/bpp-libero-genesis
 - Repositorio del Behavior Prompting Policy original: https://github.com/real-stanford/behavior_prompting
 - Repositorio de evaluacion de la competicion ICIL: https://github.com/robofluent/ICIL-competition-evaluation

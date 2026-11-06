@@ -68,9 +68,9 @@ El autor menciona una evaluacion sobre un conjunto de validacion retenido de 272
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Reno AI intake (Qwen3-0.6B QLoRA) | 596 M | no disponible | Apache 2.0 | Intake estructurado de reformas de bano, ingles | HuggingFace, formato safetensors/MLX |
-| Qwen3-0.6B base | 0,6 B | no disponible | Apache 2.0 | Modelo generalista multilingue | HuggingFace |
-| Qwen3-1.7B | 1,7 B | no disponible | Apache 2.0 | Modelo generalista, mayor capacidad | HuggingFace |
+| Reno AI intake (Qwen3-0.6B QLoRA) | 596 M | no disponible | Apache 2.0 | Intake estructurado de reformas de bano, ingles | Hugging Face, formato safetensors/MLX |
+| Qwen3-0.6B base | 0,6 B | no disponible | Apache 2.0 | Modelo generalista multilingue | Hugging Face |
+| Qwen3-1.7B | 1,7 B | no disponible | Apache 2.0 | Modelo generalista, mayor capacidad | Hugging Face |
 | Modelos de extraccion estructurada de proposito general | variable | variable | variable | Extraccion JSON sin contrato de abtencion especifico | variable |
 
 La comparacion directa con alternativas de la misma categoria es limitada: el modelo esta especializado en un dominio muy concreto y no se han publicado cifras de rendimiento que permitan contrastarlo con otros ajustes de intake. Frente a Qwen3-0.6B base, la diferencia principal es el contrato de comportamiento (abtencion y pregunta unica) y el formato de salida estricto; frente a modelos mayores, la ventaja esperada es el coste de inferencia y la predictibilidad del esquema, a costa de una cobertura de dominio muy reducida.
@@ -89,7 +89,7 @@ La comparacion directa con alternativas de la misma categoria es limitada: el mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hisefath/reno-ai-intake-qwen3-0.6b
+- Modelo en Hugging Face: https://huggingface.co/hisefath/reno-ai-intake-qwen3-0.6b
 - Dataset de entrenamiento: https://huggingface.co/datasets/hisefath/reno-ai-bathroom-intake
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Version cuantizada del base usada en entrenamiento: https://huggingface.co/mlx-community/Qwen3-0.6B-4bit

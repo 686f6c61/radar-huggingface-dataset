@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio wuff-mann/AI_Weather_Quest está alojado en HuggingFace bajo la autoría del usuario wuff-mann. En el momento de la consulta, la ficha pública únicamente expone metadatos mínimos: licencia apache-2.0, la etiqueta region:us y un contador de cero descargas y cero "likes". El tamaño declarado del repositorio es de 0,0 GB, lo que indica que no contiene artefactos de pesos, ficheros de configuración de modelo ni documentación técnica sustancial. El único contenido conocido de la model card es el bloque de frontmatter con la licencia apache-2.0.
+El repositorio wuff-mann/AI_Weather_Quest está alojado en Hugging Face bajo la autoría del usuario wuff-mann. En el momento de la consulta, la ficha pública únicamente expone metadatos mínimos: licencia apache-2.0, la etiqueta region:us y un contador de cero descargas y cero "likes". El tamaño declarado del repositorio es de 0,0 GB, lo que indica que no contiene artefactos de pesos, ficheros de configuración de modelo ni documentación técnica sustancial. El único contenido conocido de la model card es el bloque de frontmatter con la licencia apache-2.0.
 
 No se dispone de información sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento, tokenizador ni idiomas soportados. Tampoco hay declarado un pipeline de inferencia (text-generation, image-classification, etc.), lo que impide clasificar el repositorio como modelo de lenguaje, modelo multimodal, conjunto de datos o aplicación de demostración.
 
@@ -69,7 +69,7 @@ No disponible. No se puede establecer una categoría de comparación (tamaño, t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wuff-mann/AI_Weather_Quest
+- Repositorio en Hugging Face: https://huggingface.co/wuff-mann/AI_Weather_Quest
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de código: no disponible

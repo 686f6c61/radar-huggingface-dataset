@@ -6,7 +6,7 @@ El modelo `fpadovani/tam-taml-100mb-100mb_seed455` es un ajuste fino (fine-tunin
 
 El problema que aborda es el de la adaptacion de modelos pequenos y monolingues a tareas de generacion conversacional mediante SFT (supervised fine-tuning). El modelo se ha entrenado con la libreria TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0, y se distribuye con pesos en formato safetensors y tamano de repositorio de 2,0 GB. Su relevancia actual es principalmente metodologica: sirve como artefacto reproducible de un experimento academico con semilla fija (`seed455`), no como modelo de produccion. Con 124,8 millones de parametros se puede ejecutar en CPU y en cualquier GPU de consumo, lo que lo hace util para validar pipelines de inferencia y de ajuste fino a bajo coste.
 
-No se ha publicado informacion sobre la licencia, los idiomas soportados, la longitud de contexto ni resultados de benchmarks, ni en la model card ni en los resultados de busqueda web disponibles. Esta ficha refleja exclusivamente los datos verificables del repositorio de HuggingFace y de su model card.
+No se ha publicado informacion sobre la licencia, los idiomas soportados, la longitud de contexto ni resultados de benchmarks, ni en la model card ni en los resultados de busqueda web disponibles. Esta ficha refleja exclusivamente los datos verificables del repositorio de Hugging Face y de su model card.
 
 ## Especificaciones tecnicas
 
@@ -83,8 +83,8 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa.
 
 | Modelo | Parametros | Contexto | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fpadovani/tam-taml-100mb-100mb_seed455 | 124.770.816 | no disponible | SFT con TRL sobre el base | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/tam_taml_100mb | no disponible | no disponible | Modelo base preentrenado | no disponible | HuggingFace |
+| fpadovani/tam-taml-100mb-100mb_seed455 | 124.770.816 | no disponible | SFT con TRL sobre el base | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/tam_taml_100mb | no disponible | no disponible | Modelo base preentrenado | no disponible | Hugging Face |
 | Otros modelos de tamil de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la informacion proporcionada alternativas comparables con datos verificables de parametros, contexto, rendimiento o licencia.
@@ -105,7 +105,7 @@ No se han identificado en la informacion proporcionada alternativas comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/tam-taml-100mb-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/tam-taml-100mb-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/tam_taml_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/v3l2pxou

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario asasdasf bajo el identificador `asasdasf/MyAwesomeModel-TestRepo`. La model card lo presenta como la version actualizada de una familia de modelos de razonamiento, con mejoras en profundidad de inferencia, menor tasa de alucinacion y soporte ampliado de function calling. Sin embargo, la informacion disponible es altamente contradictoria: el repositorio pesa 0.0 GB, no contiene pesos ni fichero de configuracion, registra 0 descargas y 0 likes, y las etiquetas de HuggingFace lo clasifican como `bert` y `feature-extraction`, lo que no encaja con la descripcion de un modelo generativo de razonamiento.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario asasdasf bajo el identificador `asasdasf/MyAwesomeModel-TestRepo`. La model card lo presenta como la version actualizada de una familia de modelos de razonamiento, con mejoras en profundidad de inferencia, menor tasa de alucinacion y soporte ampliado de function calling. Sin embargo, la informacion disponible es altamente contradictoria: el repositorio pesa 0.0 GB, no contiene pesos ni fichero de configuracion, registra 0 descargas y 0 likes, y las etiquetas de Hugging Face lo clasifican como `bert` y `feature-extraction`, lo que no encaja con la descripcion de un modelo generativo de razonamiento.
 
 La model card menciona una version principal y una variante denominada MyAwesomeModel-Small, con arquitectura identica al modelo base pero tokenizer compartido, aunque no especifica en ningun momento el numero de parametros, la longitud de contexto, la composicion del dataset de entrenamiento ni la arquitectura concreta (transformer denso, MoE o hibrida). Los resultados de evaluacion se presentan de forma anonimizada, con columnas denominadas Model1, Model2 y Model1-v2, sin identificar los sistemas comparados.
 
@@ -12,7 +12,7 @@ En el momento de redactar esta ficha no es posible verificar la existencia real 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la model card no la describe; las etiquetas de HuggingFace indican `bert`, lo que contradice el uso generativo descrito) |
+| Arquitectura | no disponible (la model card no la describe; las etiquetas de Hugging Face indican `bert`, lo que contradice el uso generativo descrito) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica si la arquitectura es MoE) |
 | Longitud de contexto | no disponible |
@@ -105,7 +105,7 @@ No es posible establecer una comparativa con modelos identificables. La tabla de
 ## Limitaciones y advertencias
 
 - El repositorio pesa 0.0 GB y no contiene pesos, configuracion ni tokenizer. En la practica, el modelo no es descargable ni ejecutable a partir de esta publicacion.
-- Existe una contradiccion directa entre las etiquetas de HuggingFace (`bert`, `feature-extraction`, `pytorch`, `transformers`) y la model card, que describe un modelo generativo de razonamiento con modo de pensamiento y function calling.
+- Existe una contradiccion directa entre las etiquetas de Hugging Face (`bert`, `feature-extraction`, `pytorch`, `transformers`) y la model card, que describe un modelo generativo de razonamiento con modo de pensamiento y function calling.
 - Los benchmarks publicados no identifican los modelos de comparacion, no describen la metodologia ni el numero de muestras, y no incluyen intervalos de confianza. No son reproducibles ni auditables.
 - No se declara el numero de parametros, la longitud de contexto ni los idiomas soportados, lo que impide evaluar su encaje en un caso de uso concreto.
 - La model card afirma una reduccion de la tasa de alucinacion, pero no aporta ninguna metrica que respalde esa afirmacion.
@@ -118,7 +118,7 @@ No es posible establecer una comparativa con modelos identificables. La tabla de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/asasdasf/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/asasdasf/MyAwesomeModel-TestRepo
 - Figura de portada referenciada en la model card: `figures/fig1.png` (ruta relativa, no publicada en el repositorio segun el tamano declarado)
 - Figura de licencia referenciada en la model card: `figures/fig2.png` (ruta relativa, no publicada)
 - Figura de resultados referenciada en la model card: `figures/fig3.png` (ruta relativa, no publicada)

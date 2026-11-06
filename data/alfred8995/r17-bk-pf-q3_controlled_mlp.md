@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-q3_controlled_mlp` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995, con 1.720.574.976 parámetros totales (aproximadamente 1,72 mil millones) según los metadatos reales de sus ficheros safetensors. El repositorio ocupa 3,5 GB y está etiquetado con el tag `qwen3`, lo que sugiere que se trata de un modelo derivado o ajustado a partir de la familia Qwen3, aunque la ficha pública no documenta la relación exacta con el modelo base ni el proceso de entrenamiento seguido. El nombre del repositorio incluye los sufijos `controlled_mlp` y `q3`, que apuntan a alguna modificación sobre las capas MLP del transformer original, si bien no hay información publicada que describa esa intervención.
+`alfred8995/r17-bk-pf-q3_controlled_mlp` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995, con 1.720.574.976 parámetros totales (aproximadamente 1,72 mil millones) según los metadatos reales de sus ficheros safetensors. El repositorio ocupa 3,5 GB y está etiquetado con el tag `qwen3`, lo que sugiere que se trata de un modelo derivado o ajustado a partir de la familia Qwen3, aunque la ficha pública no documenta la relación exacta con el modelo base ni el proceso de entrenamiento seguido. El nombre del repositorio incluye los sufijos `controlled_mlp` y `q3`, que apuntan a alguna modificación sobre las capas MLP del transformer original, si bien no hay información publicada que describa esa intervención.
 
 El modelo resuelve, en principio, el mismo tipo de tareas que cualquier LLM denso de su tamaño: generación de texto, respuesta a preguntas y asistencia conversacional. Su relevancia potencial radica en que un modelo de 1,72B puede ejecutarse en hardware de consumo con cuantización de 4 bits, lo que lo sitúa en la franja de modelos ligeros desplegables en local. No obstante, la ausencia de una model card descriptiva, de resultados de benchmarks y de documentación sobre los datos de entrenamiento limita seriamente cualquier evaluación rigurosa.
 
-El acceso al repositorio está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos. La licencia declarada es `other`, sin que se especifiquen en la información disponible los términos concretos, lo que constituye un obstáculo relevante para cualquier uso comercial o en producción.
+El acceso al repositorio está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos. La licencia declarada es `other`, sin que se especifiquen en la información disponible los términos concretos, lo que constituye un obstáculo relevante para cualquier uso comercial o en producción.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El acceso al repositorio está restringido (gated): es necesario aceptar condici
 | Licencia | other (términos concretos no especificados; acceso gated) |
 | Formato de pesos | safetensors |
 
-Otros datos del repositorio: tamaño de 3,5 GB, 0 descargas, 0 likes, región `us`, creado el 2026-10-23 y actualizado el mismo día (según los metadatos de HuggingFace).
+Otros datos del repositorio: tamaño de 3,5 GB, 0 descargas, 0 likes, región `us`, creado el 2026-10-23 y actualizado el mismo día (según los metadatos de Hugging Face).
 
 ## Arquitectura y entrenamiento
 
@@ -92,6 +92,6 @@ Los datos de los modelos comparativos son valores de referencia de sus fichas p�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-q3_controlled_mlp
+- Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-q3_controlled_mlp
 
 No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la búsqueda web realizada.

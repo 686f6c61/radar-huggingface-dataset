@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LDM with subdivision, M5 at 100% training size es un modelo de generación de ritmos musicales desarrollado por el usuario Appodoom, publicado en HuggingFace bajo el identificador `Appodoom/ldm-with-subd-m5-100pct`. Se trata de un checkpoint de un experimento de capacidad sobre un modelo latente de difusión (LDM, Latent Diffusion Model) orientado a la generación de patrones rítmicos en formato `.derbake`, un formato de cinco líneas vinculado a la percusión de derbake. El modelo no es un modelo de lenguaje generalista: es un extractor de características y generador de secuencias rítmicas con tokenización específica de dominio.
+LDM with subdivision, M5 at 100% training size es un modelo de generación de ritmos musicales desarrollado por el usuario Appodoom, publicado en Hugging Face bajo el identificador `Appodoom/ldm-with-subd-m5-100pct`. Se trata de un checkpoint de un experimento de capacidad sobre un modelo latente de difusión (LDM, Latent Diffusion Model) orientado a la generación de patrones rítmicos en formato `.derbake`, un formato de cinco líneas vinculado a la percusión de derbake. El modelo no es un modelo de lenguaje generalista: es un extractor de características y generador de secuencias rítmicas con tokenización específica de dominio.
 
 El checkpoint corresponde al nivel M5 del experimento de capacidad, seleccionado por la pérdida de validación guardada al 100% del tamaño de entrenamiento. Cuenta con 11.858.388 parámetros totales, 10 capas, anchura de embedding de 384, 4 cabezas de atención y una longitud de contexto de 6.656 tokens. El subconjunto de entrenamiento normal contiene 273.346 ciclos (449,28 horas) y el checkpoint exportado proviene del paso 15.600.
 
@@ -91,4 +91,4 @@ No disponible. La información proporcionada no incluye modelos comparables de g
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Appodoom/ldm-with-subd-m5-100pct
+- Hugging Face: https://huggingface.co/Appodoom/ldm-with-subd-m5-100pct

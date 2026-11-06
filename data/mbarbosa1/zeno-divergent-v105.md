@@ -83,7 +83,7 @@ El rival mas fuerte se define como el mejor entre una referencia de panel, un co
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zeno v1.05 unified | Meta-forecasting multi-campo | 89,8 M | no disponible | Apache 2.0 | HuggingFace + API + MCP |
+| Zeno v1.05 unified | Meta-forecasting multi-campo | 89,8 M | no disponible | Apache 2.0 | Hugging Face + API + MCP |
 | Consenso calibrado (rival interno) | Agregacion estadistica | no disponible | no aplica | no disponible | Referencia del propio autor |
 | Gradient boosting (rival interno) | ML tabular | no disponible | no aplica | no disponible | Referencia del propio autor |
 | Modelos de forecasting especificos por campo (p. ej. ensembles ECMWF, FluSight) | Prediccion de dominio unico | no disponible | no aplica | variables | Publicos por dominio |
@@ -104,7 +104,7 @@ No se identifican en la informacion proporcionada modelos de meta-forecasting mu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mbarbosa1/zeno-divergent-v105
+- Hugging Face: https://huggingface.co/mbarbosa1/zeno-divergent-v105
 - API HTTP: https://zenodivergent.dev/api/public/v1/check
 - Servidor MCP: https://zenodivergent.dev/api/public/v1/mcp
 - Repositorio de pesos referenciado en el codigo: ZenoDivergent/zeno-divergent-v105

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AeoniaOps/throckmorton-handler` es un ajuste fino (fine-tune) del modelo `Qwen/Qwen3-4B-Instruct-2507`, publicado por el usuario AeoniaOps en HuggingFace. Se trata de un modelo derivado, no de un entrenamiento desde cero: parte de los pesos de Qwen3-4B-Instruct-2507 y se ha entrenado mediante SFT (supervised fine-tuning) con la librería TRL de HuggingFace. El repositorio declara la etiqueta `generated_from_trainer`, típica de los entrenamientos lanzados con las herramientas de HuggingFace (en este caso, con `hf_jobs`).
+`AeoniaOps/throckmorton-handler` es un ajuste fino (fine-tune) del modelo `Qwen/Qwen3-4B-Instruct-2507`, publicado por el usuario AeoniaOps en Hugging Face. Se trata de un modelo derivado, no de un entrenamiento desde cero: parte de los pesos de Qwen3-4B-Instruct-2507 y se ha entrenado mediante SFT (supervised fine-tuning) con la librería TRL de Hugging Face. El repositorio declara la etiqueta `generated_from_trainer`, típica de los entrenamientos lanzados con las herramientas de Hugging Face (en este caso, con `hf_jobs`).
 
 La relevancia de este modelo es limitada y hay que leerla con cautela. No tiene descargas ni likes, la model card no documenta el dataset de entrenamiento, los hiperparámetros, la licencia ni los idiomas soportados, y el campo `licence` del frontmatter está malformado (`licence: license`), por lo que no se puede determinar la licencia real. El tamaño del repositorio (0,5 GB) tampoco es coherente con un modelo de 4 000 millones de parámetros en precisión completa, que ocuparía del orden de 8 GB en fp16, lo que sugiere una subida parcial, pesos cuantizados o un repositorio incompleto.
 
@@ -83,8 +83,8 @@ La información disponible solo permite comparar de forma fiable contra el model
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AeoniaOps/throckmorton-handler | ~4B (heredados del base) | No disponible | No disponible | No disponible (campo malformado) | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace (referenciado como `base_model`) |
+| AeoniaOps/throckmorton-handler | ~4B (heredados del base) | No disponible | No disponible | No disponible (campo malformado) | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face (referenciado como `base_model`) |
 | Alternativas de ~4B (Phi-4-mini, Gemma 3 4B, Llama 3.2 3B, etc.) | No disponible | No disponible | No disponible | No disponible | No disponible (no aparecen en la busqueda web realizada) |
 
 Conclusión de la comparativa: sin benchmarks ni licencia confirmada, este fine-tune no puede situarse objetivamente frente a alternativas de su categoría. La única ventaja verificable frente al modelo base es hipotética (el efecto del SFT), y no está medida.
@@ -100,11 +100,11 @@ Conclusión de la comparativa: sin benchmarks ni licencia confirmada, este fine-
 - Incoherencia en el repositorio: 0,5 GB para un modelo de ~4B en fp16 es anómalo. Antes de usar los pesos hay que verificar que el repositorio está completo y que los archivos safetensors contienen los tensores esperados.
 - Versiones de framework inusuales: la model card reporta Transformers 5.17.0, PyTorch 2.14.0 y Datasets 5.0.1, que no coinciden con las versiones estables habituales. Conviene tratarlas como dato reportado y no como referencia de reproducibilidad.
 - Sin soporte ni mantenimiento evidenciado: 0 descargas y 0 likes, con creación y última actualización en la misma fecha, indican un artefacto sin adopción ni historial de mantenimiento.
-- Metadatos de HuggingFace incompletos: sin pipeline declarado, sin idiomas y sin licencia, lo que complica la integración automatizada.
+- Metadatos de Hugging Face incompletos: sin pipeline declarado, sin idiomas y sin licencia, lo que complica la integración automatizada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AeoniaOps/throckmorton-handler
+- Modelo en Hugging Face: https://huggingface.co/AeoniaOps/throckmorton-handler
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de TRL (framework de entrenamiento citado): https://github.com/huggingface/trl
 - Paper o blog del modelo: no disponible

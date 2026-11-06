@@ -88,8 +88,8 @@ No se dispone de datos de rendimiento comparativo con otros modelos de OCR de do
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abzoo/paddleocr-vl-curriculum-015-lora
+- Repositorio Hugging Face: https://huggingface.co/abzoo/paddleocr-vl-curriculum-015-lora
 - Documentacion de PaddleOCR-VL (PaddleX): https://paddlepaddle.github.io/PaddleX/3.3/en/pipeline_usage/tutorials/ocr_pipelines/PaddleOCR-VL.html
 - Documentacion oficial de PaddleOCR: https://www.paddleocr.ai/main/en/index.html
-- README de PaddleOCR-VL en HuggingFace: https://huggingface.co/PaddlePaddle/PaddleOCR-VL/blob/main/README.md
+- README de PaddleOCR-VL en Hugging Face: https://huggingface.co/PaddlePaddle/PaddleOCR-VL/blob/main/README.md
 - Tutorial de uso de PaddleOCR-VL: https://www.paddleocr.ai/latest/en/version3.x/pipeline_usage/PaddleOCR-VL.html

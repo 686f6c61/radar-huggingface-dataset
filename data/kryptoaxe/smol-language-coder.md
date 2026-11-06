@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kryptoaxe/smol-language-coder` es un modelo publicado por el autor kryptoaxe en HuggingFace, con licencia AGPL-3.0. Por el nombre, parece estar orientado a generación de código con un tamaño reducido (el prefijo "smol" sugiere un modelo compacto), aunque no se dispone de documentación técnica que lo confirme. La model card del autor únicamente contiene la declaración de licencia y no incluye información sobre arquitectura, parámetros, datos de entrenamiento ni capacidades.
+El modelo `kryptoaxe/smol-language-coder` es un modelo publicado por el autor kryptoaxe en Hugging Face, con licencia AGPL-3.0. Por el nombre, parece estar orientado a generación de código con un tamaño reducido (el prefijo "smol" sugiere un modelo compacto), aunque no se dispone de documentación técnica que lo confirme. La model card del autor únicamente contiene la declaración de licencia y no incluye información sobre arquitectura, parámetros, datos de entrenamiento ni capacidades.
 
 El modelo fue creado el 17 de agosto de 2026 y no registra descargas ni valoraciones en la plataforma, lo que indica que es una publicación reciente o poco difundida. La ausencia de documentación técnica hace imposible verificar sus especificaciones reales o su rendimiento. Se recomienda precaución antes de considerar su uso en entornos de producción.
 
@@ -59,4 +59,4 @@ No disponible. Sin datos de parámetros, contexto ni rendimiento, no es posible 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kryptoaxe/smol-language-coder
+- Modelo en Hugging Face: https://huggingface.co/kryptoaxe/smol-language-coder

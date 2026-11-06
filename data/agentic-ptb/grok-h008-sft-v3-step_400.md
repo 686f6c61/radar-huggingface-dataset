@@ -73,7 +73,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h008.sft-v3.step_400
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h008.sft-v3.step_400
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del sweep (mencionado en la model card): `agentic-ptb/INDEX` (no se ha encontrado URL directa)
 - Documentación de Grok 4.6 (contexto del driver): https://docs.x.ai/developers/models

@@ -80,7 +80,7 @@ No se dispone de información sobre otros modelos ASR específicos para bambara 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotsMali/soloni-114m-tdt-ctc-v2
+- Modelo en Hugging Face: https://huggingface.co/RobotsMali/soloni-114m-tdt-ctc-v2
 - Modelo base: https://huggingface.co/RobotsMali/soloni-114m-tdt-ctc-v0
 - Repositorio de código de fine-tuning: https://github.com/RobotsMali-AI/bambara-asr/
 - Dataset African Next Voices: https://huggingface.co/datasets/RobotsMali/afvoices

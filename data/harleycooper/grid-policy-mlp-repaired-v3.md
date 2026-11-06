@@ -6,7 +6,7 @@
 
 La relevancia del modelo es metodológica más que de rendimiento bruto: demuestra que es posible modificar quirúrgicamente los pesos de una política entrenada para corregir comportamientos específicos sin reentrenar, y cuantifica el resultado con una evaluación pareada sobre 1.000 partidas retenidas. El autor documenta explícitamente el compromiso entre la garantía de "nunca peor" de la versión v1 y la mayor rentabilidad media de esta v3.
 
-El repositorio es de tamaño despreciable (0,0 GB), con pesos en formato NumPy (`policy_weights.npz`, float32) y licencia MIT. No dispone de descargas ni interacciones en HuggingFace en el momento de la consulta.
+El repositorio es de tamaño despreciable (0,0 GB), con pesos en formato NumPy (`policy_weights.npz`, float32) y licencia MIT. No dispone de descargas ni interacciones en Hugging Face en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -88,6 +88,6 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HarleyCooper/grid-policy-mlp-repaired-v3
+- Modelo en Hugging Face: https://huggingface.co/HarleyCooper/grid-policy-mlp-repaired-v3
 - Versión previa (v1): https://huggingface.co/HarleyCooper/grid-policy-mlp-repaired
 - Repositorio del método (KimiBrainSurgery): https://github.com/HarleyCoops/KimiBrainSurgery

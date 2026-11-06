@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| domain-specific-mistral-24b-adapter-short (este) | 24B en base + LoRA | no disponible | Adaptador LoRA, instruccion minimal | no disponible | Publicado en HuggingFace, 0 descargas |
+| domain-specific-mistral-24b-adapter-short (este) | 24B en base + LoRA | no disponible | Adaptador LoRA, instruccion minimal | no disponible | Publicado en Hugging Face, 0 descargas |
 | Adaptador detallado del mismo autor (repo sin -short) | 24B en base + LoRA | no disponible | Adaptador LoRA, instruccion detallada | no disponible | Referenciado por el autor |
 | mistralai/Mistral-Small-3.2-24B-Instruct-2506 | 24B | no disponible en esta ficha | Modelo base transformer decoder | no disponible en esta ficha | Modelo base publicado por Mistral |
 
@@ -76,6 +76,6 @@ No se dispone de datos para comparar el rendimiento frente a otros adaptadores e
 - No se documentan metricas de evaluacion, por lo que no puede verificarse su precision real en produccion.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/cs-file-uploads/domain-specific-mistral-24b-adapter-short
+- Hugging Face: https://huggingface.co/cs-file-uploads/domain-specific-mistral-24b-adapter-short
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506
 - Las busquedas web realizadas no devolvieron resultados relevantes: los enlaces obtenidos corresponden al videojuego Counter-Strike y no guardan relacion con este modelo. No se han encontrado papers, blogs ni repositorios adicionales en la informacion disponible.

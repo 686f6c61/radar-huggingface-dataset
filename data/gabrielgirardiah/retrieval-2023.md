@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gabrielgirardiah/retrieval-2023` es un repositorio de HuggingFace que contiene una implementación funcional de una Swin Transformer en su variante tiny ("Swin T") orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card lo describe como un punto de partida experimental, con código transparente y pruebas de humo reproducibles, y omitiendo deliberadamente cualquier afirmación de rendimiento.
+`gabrielgirardiah/retrieval-2023` es un repositorio de Hugging Face que contiene una implementación funcional de una Swin Transformer en su variante tiny ("Swin T") orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card lo describe como un punto de partida experimental, con código transparente y pruebas de humo reproducibles, y omitiendo deliberadamente cualquier afirmación de rendimiento.
 
 El artefacto principal es `run.py`, acompañado de `config.json` (ajustes de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors`, que el autor identifica explícitamente como un checkpoint de inicialización válido para smoke tests y no como un checkpoint entrenado. El recuento real de parámetros del archivo safetensors es de 49.600, una escala minúscula incluso dentro de la familia Swin tiny.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada y muy acotada: sirve como plantilla reproducibl
 | Pipeline declarado | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0,0 GB |
-| Fechas del repositorio | creado 2026-09-13, actualizado 2026-09-13 (segun metadatos de HuggingFace) |
+| Fechas del repositorio | creado 2026-09-13, actualizado 2026-09-13 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -83,13 +83,13 @@ No disponible. No se pueden establecer comparaciones significativas porque este 
 - La licencia apache-2.0 permite uso comercial del codigo y los pesos, pero el propio autor advierte de que deben revisarse por separado las condiciones de los datos de origen si se emplean datasets externos.
 - No es apto para produccion en su estado actual: no genera texto, no razona y no ha sido evaluado frente a ninguna metrica de recuperacion.
 - Riesgo de alucinacion: no aplica en el sentido generativo, pero cualquier uso que trate las salidas del checkpoint como predicciones semanticas validas incurre en un error de interpretacion.
-- Los metadatos de HuggingFace indican una fecha de creacion de 2026-09-13, posterior a la fecha habitual de consulta; conviene verificar la consistencia temporal del repositorio antes de citarlo.
+- Los metadatos de Hugging Face indican una fecha de creacion de 2026-09-13, posterior a la fecha habitual de consulta; conviene verificar la consistencia temporal del repositorio antes de citarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gabrielgirardiah/retrieval-2023
+- Modelo en Hugging Face: https://huggingface.co/gabrielgirardiah/retrieval-2023
 - Paper asociado: no disponible en la informacion proporcionada
 - Blog o anuncio del autor: no disponible en la informacion proporcionada
-- Repositorio de codigo externo: no disponible; el codigo se distribuye dentro del propio repositorio de HuggingFace (`run.py`)
+- Repositorio de codigo externo: no disponible; el codigo se distribuye dentro del propio repositorio de Hugging Face (`run.py`)
 - Demo: no disponible
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a servicios de streaming de television y no guardan relacion con este repositorio

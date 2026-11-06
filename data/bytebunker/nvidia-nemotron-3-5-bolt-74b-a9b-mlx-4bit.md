@@ -102,7 +102,7 @@ No se dispone de datos de otros modelos comparables (parámetros, contexto, rend
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bytebunker/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/bytebunker/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-MLX-4bit
 - Modelo base (BF16): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16
 - Texto de la licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
 - PR de soporte `nemotron_h_puzzle` en mlx-lm: https://github.com/ml-explore/mlx-lm/pull/1982

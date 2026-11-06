@@ -4,7 +4,7 @@
 
 El modelo `jikatakiri45/qwen2.5-7b-indonesian-alpaca-sft` es un ajuste fino (fine-tuning) del modelo base `unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit`, desarrollado por el usuario independiente jikatakiri45. A pesar del nombre "indonesian", la model card indica que el idioma soportado es únicamente inglés (`language: en`), lo que sugiere que el dataset Alpaca utilizado podria tener contenido en indonesio, aunque no se especifica en la documentacion.
 
-El modelo fue entrenado utilizando las librerias Unsloth y TRL de HuggingFace, lo que permitio un entrenamiento aproximadamente 2 veces mas rapido que un fine-tuning convencional. Con 7.615.616.512 parametros (7,6B), se posiciona en la gama de modelos de tamano medio que pueden ejecutarse en hardware de consumo. La licencia Apache 2.0 permite uso comercial sin restricciones significativas.
+El modelo fue entrenado utilizando las librerias Unsloth y TRL de Hugging Face, lo que permitio un entrenamiento aproximadamente 2 veces mas rapido que un fine-tuning convencional. Con 7.615.616.512 parametros (7,6B), se posiciona en la gama de modelos de tamano medio que pueden ejecutarse en hardware de consumo. La licencia Apache 2.0 permite uso comercial sin restricciones significativas.
 
 La relevancia de este modelo radica en su potencial para tareas de instruccion y conversacion en ingles (y posiblemente indonesio), ofreciendo una alternativa ligera a modelos mas grandes. Sin embargo, la documentacion es minima y no se proporcionan benchmarks ni detalles sobre el dataset de entrenamiento, lo que limita la evaluacion objetiva de su rendimiento.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su potencial para tareas de instruccion y
 
 La arquitectura base es Qwen2.5-7B, un transformer decoder-only con atencion causal, desarrollado originalmente por Alibaba Cloud. El modelo base utilizado es `unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit`, una version cuantizada a 4 bits del instruct original, optimizada para fine-tuning eficiente con la libreria Unsloth. Unsloth utiliza parches en kernels y tecnicas de entrenamiento optimizadas que reducen el uso de VRAM y aceleran el entrenamiento.
 
-El proceso de fine-tuning se realizo con la libreria TRL de HuggingFace, probablemente utilizando Supervised Fine-Tuning (SFT) sobre un dataset con formato Alpaca (instrucciones, entradas y respuestas). No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas adicionales como RLHF o DPO. El modelo resultante mantiene la arquitectura original de Qwen2.5 con 28 capas, 28 cabezas de atencion y dimension de embedding de 3584, aunque estos datos no estan confirmados en la documentacion proporcionada.
+El proceso de fine-tuning se realizo con la libreria TRL de Hugging Face, probablemente utilizando Supervised Fine-Tuning (SFT) sobre un dataset con formato Alpaca (instrucciones, entradas y respuestas). No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas adicionales como RLHF o DPO. El modelo resultante mantiene la arquitectura original de Qwen2.5 con 28 capas, 28 cabezas de atencion y dimension de embedding de 3584, aunque estos datos no estan confirmados en la documentacion proporcionada.
 
 ## Capacidades
 
@@ -80,7 +80,7 @@ El modelo de jikatakiri45 no ofrece ventajas claras frente al Qwen2.5-7B-Instruc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jikatakiri45/qwen2.5-7b-indonesian-alpaca-sft
+- Hugging Face: https://huggingface.co/jikatakiri45/qwen2.5-7b-indonesian-alpaca-sft
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit
 - Libreria Unsloth: https://github.com/unslothai/unsloth
 - Libreria TRL: https://github.com/huggingface/trl

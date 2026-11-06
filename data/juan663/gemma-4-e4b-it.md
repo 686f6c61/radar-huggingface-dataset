@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Juan663/gemma-4-E4B-it es un ajuste fino publicado por el usuario Juan663 sobre el modelo base google/gemma-4-E4B, desarrollado originalmente por Google DeepMind. Se distribuye a traves de HuggingFace con la libreria transformers y pesos en formato safetensors, y esta etiquetado con el pipeline any-to-any, lo que refleja la naturaleza multimodal del modelo base (entrada de texto, imagen y audio, salida de texto). El repositorio tiene un tamano de 16 GB y 7.996.156.490 parametros totales almacenados en los ficheros de safetensors, coherente con la variante E4B de la familia Gemma 4 (8B con embeddings, 4,5B efectivos).
+Juan663/gemma-4-E4B-it es un ajuste fino publicado por el usuario Juan663 sobre el modelo base google/gemma-4-E4B, desarrollado originalmente por Google DeepMind. Se distribuye a traves de Hugging Face con la libreria transformers y pesos en formato safetensors, y esta etiquetado con el pipeline any-to-any, lo que refleja la naturaleza multimodal del modelo base (entrada de texto, imagen y audio, salida de texto). El repositorio tiene un tamano de 16 GB y 7.996.156.490 parametros totales almacenados en los ficheros de safetensors, coherente con la variante E4B de la familia Gemma 4 (8B con embeddings, 4,5B efectivos).
 
 El modelo base E4B es una arquitectura densa de 42 capas disenada para ejecucion en dispositivos locales (moviles, portatiles y GPUs de consumo), con una ventana de contexto de 128K tokens, atencion hibrida que combina ventanas deslizantes locales de 512 tokens con atencion global completa, y un vocabulario de 262.000 tokens. Incorpora codificadores dedicados de vision (unos 150M de parametros) y de audio (unos 300M), ademas de Per-Layer Embeddings (PLE) para maximizar la eficiencia de parametros en despliegues on-device.
 
@@ -99,7 +99,7 @@ Frente a alternativas de otros fabricantes del mismo rango de tamano (modelos mu
 
 - Repositorio de este ajuste: https://huggingface.co/Juan663/gemma-4-E4B-it
 - Modelo base: https://huggingface.co/google/gemma-4-E4B
-- Coleccion de la familia Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion de la familia Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Pagina de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Model card oficial de Gemma 4 (Google AI for Developers): https://ai.google.dev/gemma/docs/core/model_card_4
 - Documentacion de Gemma: https://ai.google.dev/gemma/docs/core

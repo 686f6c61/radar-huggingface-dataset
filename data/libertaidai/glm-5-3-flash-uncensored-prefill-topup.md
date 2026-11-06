@@ -90,7 +90,7 @@ No se dispone de comparativas con otros modelos de la misma categoría (MoE de 3
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LibertAIDAI/GLM-5.3-Flash-Uncensored-Prefill-Topup
+- Hugging Face: https://huggingface.co/LibertAIDAI/GLM-5.3-Flash-Uncensored-Prefill-Topup
 - GitHub: https://github.com/Libertai/prefill-steering
 - Paper: https://labs.libertai.io/papers/prefill-only-stacked-abliteration-paper
 - Story: https://labs.libertai.io/notes/uncensoring-glm53-flash

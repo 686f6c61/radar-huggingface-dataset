@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `senaro/atlasv23-sft-qwen3-8-27b-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `senaro` en HuggingFace. Está diseñado para ser aplicado sobre el modelo base `senaro/atlasv23-trm-qwen3-8-27b`, del cual no se dispone de documentación pública. El nombre sugiere que el modelo base podría estar basado en la arquitectura Qwen3-8B, posiblemente con una variante de 27B de parámetros totales (quizás una arquitectura MoE), aunque esta interpretación es una inferencia del nombre y no está confirmada por ningún dato oficial.
+El modelo `senaro/atlasv23-sft-qwen3-8-27b-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `senaro` en Hugging Face. Está diseñado para ser aplicado sobre el modelo base `senaro/atlasv23-trm-qwen3-8-27b`, del cual no se dispone de documentación pública. El nombre sugiere que el modelo base podría estar basado en la arquitectura Qwen3-8B, posiblemente con una variante de 27B de parámetros totales (quizás una arquitectura MoE), aunque esta interpretación es una inferencia del nombre y no está confirmada por ningún dato oficial.
 
 Este adaptador se presenta como un ajuste fino por supervisión (SFT) y está destinado a tareas de generación de texto conversacional. Su relevancia radica en que permite adaptar el modelo base sin necesidad de reentrenarlo por completo, reduciendo costes computacionales y de almacenamiento. Sin embargo, la ausencia total de una model card detallada, de datos de entrenamiento y de resultados de evaluación limita severamente cualquier análisis riguroso de sus capacidades y rendimiento.
 
@@ -45,7 +45,7 @@ Dada la falta de información específica, los siguientes casos de uso son hipot
 - Fine-tuning específico de dominio: al ser un adaptador LoRA, podría integrarse en pipelines de ajuste para dominios concretos (atención al cliente, soporte técnico, etc.), aunque se desconoce la calidad del ajuste.
 - Experimentación académica: útil para estudiar técnicas de adaptación eficiente sobre modelos de gran tamaño, dado su reducido peso (0.3 GB).
 - Prototipado rápido: permite probar variaciones de un modelo base sin necesidad de recursos de entrenamiento completos.
-- Investigación en eficiencia: sirve como ejemplo de adaptador LoRA publicado en HuggingFace, aunque sin métricas de rendimiento.
+- Investigación en eficiencia: sirve como ejemplo de adaptador LoRA publicado en Hugging Face, aunque sin métricas de rendimiento.
 - Integración en sistemas existentes: podría cargarse junto al modelo base mediante bibliotecas como PEFT o transformers, pero requiere verificación manual.
 
 ## Benchmarks y rendimiento

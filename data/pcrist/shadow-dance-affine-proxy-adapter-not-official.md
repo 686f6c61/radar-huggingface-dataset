@@ -18,7 +18,7 @@ La relevancia de este modelo radica en su transparencia metodológica: documenta
 | Longitud de contexto | no disponible (no es un modelo de lenguaje; entrada `obs_dict [1,994]` y salida `action [1,29]`) |
 | Tipos de cuantizacion | no disponible (formato ONNX, sin cuantización declarada) |
 | Idiomas soportados | no disponible (modelo de robótica, sin procesamiento de lenguaje) |
-| Licencia | NVIDIA Open Model License (licencia "other" en HuggingFace) |
+| Licencia | NVIDIA Open Model License (licencia "other" en Hugging Face) |
 | Formato de pesos | ONNX (safetensors no aplicable; archivos `.onnx`) |
 
 ## Arquitectura y entrenamiento
@@ -83,6 +83,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pcrist/shadow-dance-affine-proxy-adapter-not-official
+- Repositorio Hugging Face: https://huggingface.co/pcrist/shadow-dance-affine-proxy-adapter-not-official
 - Dataset y generador (GitHub releases): https://github.com/cristpierce/shadow-dance/releases/tag/shadow-dance-v2.0.0
 - Modelo padre NVIDIA GEAR-SONIC (referencia en la model card, sin URL directa en la información proporcionada)

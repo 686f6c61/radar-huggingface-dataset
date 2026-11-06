@@ -22,7 +22,7 @@ La relevancia es limitada fuera de su contexto de origen: no hay tarjeta de mode
 | Formato de pesos | `safetensors` (adaptador LoRA, libreria `peft`) |
 | Modelo base | princeton-nlp/Sheared-LLaMA-1.3B |
 | Estrategia de ajuste | Fine-tuning con LoRA (`strategy-ft`, `lora`) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
 
@@ -90,7 +90,7 @@ Los datos de los modelos alternativos provienen de su documentacion publica y no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-sheared-llama-ft
+- Modelo en Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-sheared-llama-ft
 - Modelo base: https://huggingface.co/princeton-nlp/Sheared-LLaMA-1.3B
 - Repositorio del metodo de poda (Sheared LLaMA): https://github.com/princeton-nlp/LLM-Shearing
 - Articulo *Sheared LLaMA: Accelerating Language Model Pre-training via Structured Pruning*: https://arxiv.org/abs/2310.06694

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo identificado como `gradients-io-tournaments/augmented-b1aa89ca8833ccd3` es un modelo de generacion de texto publicado en HuggingFace por la organizacion `gradients-io-tournaments`, presumiblemente como artefacto de un torneo o competicion de ajuste de modelos. Segun los metadatos del repositorio, se trata de un transformer decoder-only de la familia Qwen2 (etiqueta `qwen2`), compatible con la libreria `transformers` y con `text-generation-inference`, y orientado a uso conversacional.
+El modelo identificado como `gradients-io-tournaments/augmented-b1aa89ca8833ccd3` es un modelo de generacion de texto publicado en Hugging Face por la organizacion `gradients-io-tournaments`, presumiblemente como artefacto de un torneo o competicion de ajuste de modelos. Segun los metadatos del repositorio, se trata de un transformer decoder-only de la familia Qwen2 (etiqueta `qwen2`), compatible con la libreria `transformers` y con `text-generation-inference`, y orientado a uso conversacional.
 
 El dato objetivo mas relevante es su tamano: 7.615.616.512 parametros (aproximadamente 7,6 mil millones), almacenados en safetensors con un repositorio de 15,2 GB, lo que corresponde a pesos en precision de 16 bits. Esto lo situa en el segmento de modelos densos de ~7-8B, ejecutables en GPU de consumo con cuantizacion y en GPU profesionales sin ella.
 
-La relevancia de esta ficha es, sobre todo, como advertencia: la model card es la plantilla automatica de HuggingFace sin rellenar, no se declara licencia, idiomas, datos de entrenamiento, procedimiento de ajuste ni evaluacion, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta. Cualquier evaluacion de capacidades, sesgos o idoneidad para produccion es, por tanto, provisional y requiere validacion directa por parte del usuario.
+La relevancia de esta ficha es, sobre todo, como advertencia: la model card es la plantilla automatica de Hugging Face sin rellenar, no se declara licencia, idiomas, datos de entrenamiento, procedimiento de ajuste ni evaluacion, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta. Cualquier evaluacion de capacidades, sesgos o idoneidad para produccion es, por tanto, provisional y requiere validacion directa por parte del usuario.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es, sobre todo, como advertencia: la model card es l
 
 La unica informacion arquitectonica fiable es la etiqueta `qwen2` del repositorio, que indica que el modelo deriva de la familia Qwen2, esto es, un transformer decoder-only con atencion causal, normalizacion RMSNorm, activacion SwiGLU y atencion con consultas y claves agrupadas (GQA). El recuento de parametros de 7.615.616.512 coincide practicamente con el de la variante de 7B de esa familia, lo que sugiere que se trata de un ajuste o derivado de Qwen2-7B, aunque no hay confirmacion explicita en la informacion proporcionada.
 
-No se dispone de ningun dato sobre el entrenamiento: no se indica el numero de tokens, la composicion del dataset, si hubo ajuste supervisado, RLHF, DPO u otra tecnica de alineamiento, ni la precision utilizada en el ajuste. La model card es la plantilla generada automaticamente por HuggingFace, con todos los campos marcados como `[More Information Needed]`. La unica referencia bibliografica presente es `arxiv:1910.09700` (Lacoste et al., 2019), que es el articulo sobre estimacion de emisiones de carbono citado en la propia plantilla y no un paper del modelo. No se documenta ninguna innovacion tecnica como decodificacion especulativa, atencion lineal o arquitectura hibrida.
+No se dispone de ningun dato sobre el entrenamiento: no se indica el numero de tokens, la composicion del dataset, si hubo ajuste supervisado, RLHF, DPO u otra tecnica de alineamiento, ni la precision utilizada en el ajuste. La model card es la plantilla generada automaticamente por Hugging Face, con todos los campos marcados como `[More Information Needed]`. La unica referencia bibliografica presente es `arxiv:1910.09700` (Lacoste et al., 2019), que es el articulo sobre estimacion de emisiones de carbono citado en la propia plantilla y no un paper del modelo. No se documenta ninguna innovacion tecnica como decodificacion especulativa, atencion lineal o arquitectura hibrida.
 
 ## Capacidades
 
@@ -48,7 +48,7 @@ Nota: al no existir model card real ni evaluacion, estas capacidades deben verif
 - Generacion de texto en tareas de resumen o reescritura: utilizable como baseline en pipelines internos de procesamiento de documentos, siempre que se valide la calidad de salida y se asuma la ausencia de garantias de licencia.
 - Fine-tuning posterior sobre dominio propio: al ser un modelo denso de 7,6B en safetensors, es viable aplicar LoRA o QLoRA sobre el para adaptarlo a un vertical concreto (legal, sanitario, atencion al cliente) partiendo de este checkpoint como inicializacion.
 - Investigacion sobre olvido catastrofico y ajuste: su origen como artefacto de competicion lo hace adecuado para estudiar como variaciones de datos de ajuste afectan al rendimiento respecto al modelo base Qwen2 en tareas de retencion de conocimiento.
-- Servicio de inferencia compatible con OpenAI: la etiqueta `endpoints_compatible` sugiere que puede exponerse a traves de HuggingFace Inference Endpoints con una API compatible, lo que facilita integrarlo como backend en aplicaciones que ya consumen esa interfaz.
+- Servicio de inferencia compatible con OpenAI: la etiqueta `endpoints_compatible` sugiere que puede exponerse a traves de Hugging Face Inference Endpoints con una API compatible, lo que facilita integrarlo como backend en aplicaciones que ya consumen esa interfaz.
 - Generacion de datos sinteticos para destilacion: un modelo de 7,6B es un tamano manejable para producir pares instruccion-respuesta a escala y usarlos como datos de entrenamiento de modelos menores, previa revision de calidad y sesgos.
 
 ## Benchmarks y rendimiento
@@ -65,7 +65,7 @@ Estimaciones derivadas del recuento de parametros (7,6B) y del tamano del reposi
 - GPU profesionales: A100 40/80 GB, H100 80 GB, L40S 48 GB; permiten fp16 con contextos amplios y alto grado de batching.
 - GPU de consumo: cabe en fp16 en RTX 3090, RTX 4090, RTX A6000 o equivalentes de 24 GB, con contexto moderado y batch pequeno. En 4 bits cabe en GPUs de 8-12 GB como RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4070.
 - CPU: viable solo con cuantizacion agresiva (GGUF Q4) mediante llama.cpp, con latencias no aptas para produccion interactiva.
-- Opciones de despliegue: `transformers` (libreria declarada), Text Generation Inference (etiqueta `text-generation-inference`), vLLM, HuggingFace Inference Endpoints (`endpoints_compatible`). Para llama.cpp u Ollama seria necesario convertir previamente los pesos a GGUF, ya que el repositorio no incluye ese formato.
+- Opciones de despliegue: `transformers` (libreria declarada), Text Generation Inference (etiqueta `text-generation-inference`), vLLM, Hugging Face Inference Endpoints (`endpoints_compatible`). Para llama.cpp u Ollama seria necesario convertir previamente los pesos a GGUF, ya que el repositorio no incluye ese formato.
 - Latencia y throughput: no disponibles. No hay datos publicados de tokens por segundo, TTFT ni resultados de batching para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -74,10 +74,10 @@ Los valores de los modelos de referencia proceden de su documentacion publica y 
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| `gradients-io-tournaments/augmented-b1aa89ca8833ccd3` | 7,6B | no disponible | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) |
-| Qwen2-7B-Instruct | ~7,6B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 (segun documentacion publica) | Tabla publica en la model card del autor | HuggingFace, ampliamente desplegado |
-| Mistral-7B-Instruct-v0.3 | ~7,2B | 32.768 tokens (segun documentacion publica) | Apache 2.0 (segun documentacion publica) | Tabla publica en la model card del autor | HuggingFace |
-| Llama-3.1-8B-Instruct | ~8,0B | 128.000 tokens (segun documentacion publica) | Licencia comunitaria Llama 3.1 con clausula de uso aceptable | Tabla publica en la model card del autor | HuggingFace y proveedores cloud |
+| `gradients-io-tournaments/augmented-b1aa89ca8833ccd3` | 7,6B | no disponible | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) |
+| Qwen2-7B-Instruct | ~7,6B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 (segun documentacion publica) | Tabla publica en la model card del autor | Hugging Face, ampliamente desplegado |
+| Mistral-7B-Instruct-v0.3 | ~7,2B | 32.768 tokens (segun documentacion publica) | Apache 2.0 (segun documentacion publica) | Tabla publica en la model card del autor | Hugging Face |
+| Llama-3.1-8B-Instruct | ~8,0B | 128.000 tokens (segun documentacion publica) | Licencia comunitaria Llama 3.1 con clausula de uso aceptable | Tabla publica en la model card del autor | Hugging Face y proveedores cloud |
 
 Advertencia: no existe evidencia que permita afirmar que este checkpoint iguale o supere a los modelos de la tabla, ni siquiera al modelo base del que presumiblemente deriva.
 
@@ -96,7 +96,7 @@ Advertencia: no existe evidencia que permita afirmar que este checkpoint iguale 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-b1aa89ca8833ccd3
+- Repositorio en Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-b1aa89ca8833ccd3
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico referenciada en la model card: https://mlco2.github.io/impact
 - No se han encontrado en la informacion disponible enlaces adicionales a papers del modelo, repositorios de codigo, demos, blogs del autor ni datasets de entrenamiento.

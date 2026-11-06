@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DIAcorks/DIAcorks es un repositorio publicado en HuggingFace por el usuario DIAcorks bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni propósito del modelo. El repositorio no declara pipeline de inferencia, idiomas soportados ni etiquetas de tarea, lo que impide clasificarlo dentro de una categoría funcional concreta (texto, visión, audio o multimodal).
+DIAcorks/DIAcorks es un repositorio publicado en Hugging Face por el usuario DIAcorks bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni propósito del modelo. El repositorio no declara pipeline de inferencia, idiomas soportados ni etiquetas de tarea, lo que impide clasificarlo dentro de una categoría funcional concreta (texto, visión, audio o multimodal).
 
 Con los datos disponibles, el artefacto no puede evaluarse como modelo utilizable en producción: no hay pesos documentados, no hay tokenizador descrito, no hay resultados de benchmarks y el contador de descargas es cero. La fecha de creación y actualización (noviembre de 2026) y la ausencia total de documentación sugieren un repositorio de prueba, una subida incompleta o un placeholder.
 
@@ -84,5 +84,5 @@ La comparación se incluye únicamente para ilustrar el nivel de documentación 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DIAcorks/DIAcorks
+- Repositorio en Hugging Face: https://huggingface.co/DIAcorks/DIAcorks
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

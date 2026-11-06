@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Patati es un repositorio de modelo publicado en HuggingFace por el usuario arthurisaquefathy bajo la identificacion `arthurisaquefathy/patati`. La informacion publica disponible es practicamente inexistente: la model card unicamente contiene la declaracion de licencia `openrail` y no incluye descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio ocupa 0.0 GB, lo que indica que no se han subido pesos ni ficheros de modelo.
+Patati es un repositorio de modelo publicado en Hugging Face por el usuario arthurisaquefathy bajo la identificacion `arthurisaquefathy/patati`. La informacion publica disponible es practicamente inexistente: la model card unicamente contiene la declaracion de licencia `openrail` y no incluye descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio ocupa 0.0 GB, lo que indica que no se han subido pesos ni ficheros de modelo.
 
 No se ha declarado pipeline de inferencia, no se han especificado idiomas soportados y no se han registrado descargas desde su creacion. Estas senales, junto con el tamano nulo del repositorio, apuntan a un espacio reservado o a un proyecto en fase embrionaria mas que a un modelo desplegable.
 
@@ -60,5 +60,5 @@ No disponible. No se dispone de informacion suficiente sobre Patati (parametros,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arthurisaquefathy/patati
+- Hugging Face: https://huggingface.co/arthurisaquefathy/patati
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados devueltos no guardan relacion con el modelo.

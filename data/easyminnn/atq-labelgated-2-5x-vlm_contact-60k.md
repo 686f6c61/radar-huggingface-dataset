@@ -70,8 +70,8 @@ Los resultados de busqueda web proporcionados no contienen informacion relevante
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| atq-labelgated-2.5x-vlm_contact-60k (este) | 2.829.861.577 | no disponible | VLA GR00T N1.5 + MoE de 4 expertos con gating por etiqueta | other | HuggingFace |
-| nvidia/GR00T-N1.5-3B | no disponible en la informacion proporcionada (etiquetado como 3B en `base_model`) | no disponible | VLA | NVIDIA (other) | HuggingFace |
+| atq-labelgated-2.5x-vlm_contact-60k (este) | 2.829.861.577 | no disponible | VLA GR00T N1.5 + MoE de 4 expertos con gating por etiqueta | other | Hugging Face |
+| nvidia/GR00T-N1.5-3B | no disponible en la informacion proporcionada (etiquetado como 3B en `base_model`) | no disponible | VLA | NVIDIA (other) | Hugging Face |
 | Otros VLA abiertos de tamano similar | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo para ninguno de los modelos de la tabla, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo para ninguno de los modelos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/easyminnn/atq-labelgated-2.5x-vlm_contact-60k
+- Modelo en Hugging Face: https://huggingface.co/easyminnn/atq-labelgated-2.5x-vlm_contact-60k
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.5-3B
 - Repositorio de codigo: `rakybond007/GR00T-action-quantization`, rama `jimin-dev-label-gated`, commit 3345064
 - Script de ajuste fino: `scripts/gr00t_finetune.py --use-moe-routing --moe-num-experts 4 --use-merged-8-head --use-merged-4-head --use-native-8-head --moe-label-gated --moe-speed 2.5 --data-config single_panda_gripper_conf`

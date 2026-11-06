@@ -79,7 +79,7 @@ Los datos cuantitativos de los modelos comparables no estan disponibles en la in
 
 | Modelo | Parametros | Contexto / entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (pi05 pipette multitask) | no disponible | texto hasta 320 tokens; 2 imagenes RGB; estado de 59 dims; accion 30 x 32 | no disponible | HuggingFace, 12,4 GB, JAX/orbax |
+| Este checkpoint (pi05 pipette multitask) | no disponible | texto hasta 320 tokens; 2 imagenes RGB; estado de 59 dims; accion 30 x 32 | no disponible | Hugging Face, 12,4 GB, JAX/orbax |
 | pi05_base (inicializacion oficial) | no disponible | no disponible | no disponible | `gs://openpi-assets/checkpoints/pi05_base` |
 | Modelos full-task anteriores del mismo autor (separados por tarea) | no disponible | no disponible | no disponible | mencionados en la model card, sin enlace |
 | Adaptador de accion HIL293 XYZ-only anterior | no disponible | solo XYZ | no disponible | mencionado; incompatible con este modelo |
@@ -101,7 +101,7 @@ No se comparan aqui otras familias VLA (por ejemplo OpenVLA o GR00T N1) porque n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GeertWang/pi05-pipette-fulltask-multitask-bc-20261003
+- Modelo en Hugging Face: https://huggingface.co/GeertWang/pi05-pipette-fulltask-multitask-bc-20261003
 - Dataset de entrenamiento: https://huggingface.co/datasets/jren313/g1-pipette-2view-teleop0925-5task-eerel
 - Checkpoint base de inicializacion: `gs://openpi-assets/checkpoints/pi05_base`
 - Revision de OpenPI utilizada: `2d70d966582e711128ad8358d8dbf23d2cc3d658`

@@ -71,7 +71,7 @@ No hay metricas comparativas publicadas en la informacion disponible para este m
 
 | Modelo / enfoque | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IRIS pretrained checkpoints | SCANVI (scvi-tools) por via | no disponible | no aplica | MIT | HuggingFace (0 descargas) |
+| IRIS pretrained checkpoints | SCANVI (scvi-tools) por via | no disponible | no aplica | MIT | Hugging Face (0 descargas) |
 | SCVI | VAE no supervisado (scvi-tools) | configurable por el usuario | no aplica | BSD-3-Clause (scvi-tools) | pip / conda |
 | SCANVI | VAE semisupervisado (scvi-tools) | configurable por el usuario | no aplica | BSD-3-Clause (scvi-tools) | pip / conda |
 | PROGENy, decoupleR, AUCell | Metodos de puntuacion de actividad de vias basados en firmas genicas o rankings | no aplica (no son redes neuronales entrenadas de este modo) | no aplica | depende del paquete | CRAN / Bioconductor / PyPI |
@@ -91,7 +91,7 @@ La diferencia funcional relevante es que IRIS aprende la actividad de la via de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nhutchins627/iris-pretrained-checkpoints
+- Hugging Face: https://huggingface.co/nhutchins627/iris-pretrained-checkpoints
 - Codigo de IRIS: https://github.com/Pulin-Li-Lab/IRIS-signaling-inference
 - Documentacion de datos de entrenamiento: `reproducibility/docs/DATA.md` en el repositorio de codigo
 - Manuscrito de IRIS (Nature Methods): referencia citada en la model card, sin DOI incluido en la informacion disponible

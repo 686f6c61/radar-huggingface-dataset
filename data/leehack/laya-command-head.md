@@ -79,8 +79,8 @@ En `bin/bench.dart`, con la puerta de confianza de 0,3, la barra muestra la inte
 
 | Modelo | Tipo | Parámetros | Contexto | Precisión en validación (32 comandos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| leehack/laya-command-head | Cabeza de decisión sobre Laya (ModernBERT) | 36 tensores de cabeza en F32 | No disponible | 27/32 en PyTorch y en llamadart | Apache-2.0 | HuggingFace (0 descargas, 1 like) |
-| Cabeza base de convaiinnovations/laya | Cabeza de decisión original | No disponible | No disponible | 18/32 en PyTorch, 18/32 en llamadart | Apache-2.0 | HuggingFace |
+| leehack/laya-command-head | Cabeza de decisión sobre Laya (ModernBERT) | 36 tensores de cabeza en F32 | No disponible | 27/32 en PyTorch y en llamadart | Apache-2.0 | Hugging Face (0 descargas, 1 like) |
+| Cabeza base de convaiinnovations/laya | Cabeza de decisión original | No disponible | No disponible | 18/32 en PyTorch, 18/32 en llamadart | Apache-2.0 | Hugging Face |
 | Lector de ejemplo más cercano con EmbeddingGemma (mencionado en el proyecto llamadart) | Recuperación de ejemplo más cercano | No disponible | No disponible | No disponible; el autor indica que es más preciso que esta cabeza | No disponible | Incluido en el ejemplo de llamadart |
 | Lectores basados en LLM pequeños (mencionados en el proyecto llamadart) | Generación con LLM | No disponible | No disponible | No disponible; el autor indica que son más precisos que esta cabeza | No disponible | Incluido en el ejemplo de llamadart |
 
@@ -100,7 +100,7 @@ No se dispone de datos comparativos con clasificadores de intención estándar (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leehack/laya-command-head
+- Modelo en Hugging Face: https://huggingface.co/leehack/laya-command-head
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - Árbol de ficheros del modelo base: https://huggingface.co/convaiinnovations/laya/tree/main
 - Backbone GGUF de terceros: https://huggingface.co/fr0stbit3/laya-gguf

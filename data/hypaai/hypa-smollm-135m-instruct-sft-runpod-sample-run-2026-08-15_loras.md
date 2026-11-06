@@ -70,6 +70,6 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/hypaai/Hypa-SmolLM-135M-Instruct-SFT-runpod-sample-run-2026-08-15_LoRAs)
+- [Página del modelo en Hugging Face](https://huggingface.co/hypaai/Hypa-SmolLM-135M-Instruct-SFT-runpod-sample-run-2026-08-15_LoRAs)
 - [Modelo base: unsloth/smollm-135m-instruct-bnb-4bit](https://huggingface.co/unsloth/smollm-135m-instruct-bnb-4bit)
 - [TRL (Transformers Reinforcement Learning)](https://github.com/huggingface/trl)

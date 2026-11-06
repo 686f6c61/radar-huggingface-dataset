@@ -106,7 +106,7 @@ Nanbeige4.3-33B lidera en 17 de los 20 benchmarks reportados frente a estas alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nanbeige/Nanbeige4.3-33B-INT8
+- Modelo en Hugging Face: https://huggingface.co/Nanbeige/Nanbeige4.3-33B-INT8
 - Modelo base (BF16): https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Perfil del autor: https://huggingface.co/Nanbeige
 - Paper, blog oficial y repositorio de codigo: no disponibles en la informacion proporcionada.

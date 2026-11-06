@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/swe_latn_100mb`, publicado por el usuario francesca9805 en HuggingFace. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros (aproximadamente 124M), lo que lo situa en la categoria de modelos pequenos y ligeros. El identificador del modelo base sugiere que el trabajo se centra en suajili en escritura latina (`swe_latn`) con un corpus de entrenamiento de aproximadamente 100 MB, aunque la model card no declara explicitamente ni el idioma ni la licencia.
+El modelo `francesca9805/swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/swe_latn_100mb`, publicado por el usuario francesca9805 en Hugging Face. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros (aproximadamente 124M), lo que lo situa en la categoria de modelos pequenos y ligeros. El identificador del modelo base sugiere que el trabajo se centra en suajili en escritura latina (`swe_latn`) con un corpus de entrenamiento de aproximadamente 100 MB, aunque la model card no declara explicitamente ni el idioma ni la licencia.
 
 El modelo ha sido entrenado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.5.1, y los pesos se distribuyen en formato safetensors con un tamano de repositorio de 0.3 GB. El nombre del checkpoint incluye el sufijo `seed455`, lo que indica que forma parte de una serie de ejecuciones con distintas semillas, probablemente dentro de un estudio comparativo de tokenizadores (la ejecucion de Weights & Biases asociada se titula `new-tokenizers`).
 
@@ -46,7 +46,7 @@ El entrenamiento se realizo mediante ajuste fino supervisado (SFT) con la librer
 - Investigacion sobre tokenizacion y ajuste fino: el modelo es un artefacto experimental con semilla fija (`seed455`) que permite reproducir comparativas entre tokenizadores y estrategias de SFT sobre un mismo modelo base. Su utilidad principal es metodologica, no aplicada.
 - Generacion de texto en suajili para tareas de bajo riesgo: se puede emplear para completar frases, redactar borradores o generar variaciones estilisticas en un entorno de prototipado, asumiendo la falta de garantias de calidad.
 - Aumento de datos sinteticos: dado su tamano reducido, puede generar ejemplos de texto en suajili a gran velocidad para preentrenar o ajustar modelos mayores, siempre con revision humana posterior.
-- Pruebas de integracion en pipelines de HuggingFace: el tag `endpoints_compatible` y `text-generation-inference` permiten desplegarlo en Inference Endpoints o TGI para validar arquitecturas de servicio antes de escalar a modelos mas grandes.
+- Pruebas de integracion en pipelines de Hugging Face: el tag `endpoints_compatible` y `text-generation-inference` permiten desplegarlo en Inference Endpoints o TGI para validar arquitecturas de servicio antes de escalar a modelos mas grandes.
 - Docencia y formacion: por su tamano (0.3 GB en disco y menos de 1 GB en memoria en fp32), es adecuado para demostrar el ciclo completo de carga, inferencia y cuantizacion en un portatil o en Google Colab gratuito.
 - Evaluacion comparativa de modelos de bajos recursos: sirve como linea base en estudios que midan el coste y la calidad de modelos monolingues de 100 MB frente a modelos multilingues mucho mayores.
 - Despliegue en dispositivos con recursos muy limitados: al caber en CPU y en cualquier GPU de consumo, puede integrarse en prototipos de edge computing donde no haya acelerador dedicado.
@@ -61,16 +61,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: no requiere GPU dedicada. Funciona en cualquier GPU con al menos 1 GB de memoria libre, incluidas GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4090, A100 o H100. En estas dos ultimas el modelo queda totalmente limitado por el ancho de banda y el overhead de lanzamiento de kernels.
 - Compatibilidad con GPU de consumo: si, cabe en todas las GPU de consumo actuales e incluso en graficos integrados con memoria compartida suficiente.
 - Ejecucion en CPU: viable en tiempo real para generacion de pocos cientos de tokens; el modelo es pequeno y no necesita acelerador.
-- Opciones de despliegue: transformers (via `pipeline`), Text Generation Inference (TGI) y HuggingFace Inference Endpoints (el repositorio incluye los tags `text-generation-inference` y `endpoints_compatible`). Para llama.cpp u Ollama seria necesario convertir previamente los pesos a formato GGUF.
+- Opciones de despliegue: transformers (via `pipeline`), Text Generation Inference (TGI) y Hugging Face Inference Endpoints (el repositorio incluye los tags `text-generation-inference` y `endpoints_compatible`). Para llama.cpp u Ollama seria necesario convertir previamente los pesos a formato GGUF.
 - Latencia y throughput estimados: no disponible, no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455 | 124,77 M | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/swe_latn_100mb (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace (proyecto Goldfish) |
-| GPT-2 base (referencia arquitectonica) | 124 M | 1024 tokens | benchmarks historicos de GPT-2 | MIT (GPT-2 original) | OpenAI / HuggingFace |
+| francesca9805/swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455 | 124,77 M | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/swe_latn_100mb (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face (proyecto Goldfish) |
+| GPT-2 base (referencia arquitectonica) | 124 M | 1024 tokens | benchmarks historicos de GPT-2 | MIT (GPT-2 original) | OpenAI / Hugging Face |
 
 La comparativa con otras alternativas de la misma categoria (modelos monolingues de bajos recursos para lenguas africanas, como los incluidos en la familia Goldfish o en iniciativas tipo Masakhane) no puede completarse con datos verificados en la informacion proporcionada. Se recomienda consultar el repositorio de goldfish-models para obtener las especificaciones exactas del modelo base antes de establecer comparaciones cuantitativas.
 
@@ -88,7 +88,7 @@ La comparativa con otras alternativas de la misma categoria (modelos monolingues
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/swe_latn_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/uxood7jz
 - Repositorio de TRL (libreria de entrenamiento): https://github.com/huggingface/trl

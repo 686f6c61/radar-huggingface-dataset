@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Adap es un modelo de lenguaje finetuneado a partir de Qwen3-0.6B y convertido a formato GGUF mediante la libreria Unsloth. El autor, Phettae, ha publicado el modelo en HuggingFace con el objetivo de ofrecer una version optimizada para inferencia local mediante llama.cpp. El repositorio contiene un unico archivo de pesos en precision F16 con un tamano de 1.2 GB, lo que lo hace adecuado para entornos con recursos limitados.
+Adap es un modelo de lenguaje finetuneado a partir de Qwen3-0.6B y convertido a formato GGUF mediante la libreria Unsloth. El autor, Phettae, ha publicado el modelo en Hugging Face con el objetivo de ofrecer una version optimizada para inferencia local mediante llama.cpp. El repositorio contiene un unico archivo de pesos en precision F16 con un tamano de 1.2 GB, lo que lo hace adecuado para entornos con recursos limitados.
 
 El modelo se presenta como una opcion conversacional y ligera, pensada para desarrolladores que necesitan ejecutar un LLM localmente sin requerir hardware especializado. Al estar basado en Qwen3-0.6B, hereda la arquitectura transformer de dicha familia, aunque el proceso de finetuning especifico y los datos utilizados no se detallan en la informacion disponible.
 
@@ -77,6 +77,6 @@ La comparativa se basa en el modelo base Qwen3-0.6B y alternativas de tamano sim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Phettae/Adap
+- Repositorio Hugging Face: https://huggingface.co/Phettae/Adap
 - Unsloth (libreria de entrenamiento y conversion): https://github.com/unslothai/unsloth
 - llama.cpp (motor de inferencia compatible): https://github.com/ggerganov/llama.cpp

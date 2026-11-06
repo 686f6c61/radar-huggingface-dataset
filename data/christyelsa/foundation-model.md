@@ -2,7 +2,7 @@
 
 ## Resumen
 
-christyelsa/foundation-model es un repositorio alojado en HuggingFace por el usuario christyelsa, publicado bajo licencia MIT. En el momento de redactar esta ficha no existe informacion tecnica publica sobre el modelo: la model card se limita a la linea `license: mit` sin secciones de descripcion, arquitectura, datos de entrenamiento o uso previsto. Tampoco se declaran idiomas, pipeline de inferencia ni etiquetas de tarea mas alla de `region:us`.
+christyelsa/foundation-model es un repositorio alojado en Hugging Face por el usuario christyelsa, publicado bajo licencia MIT. En el momento de redactar esta ficha no existe informacion tecnica publica sobre el modelo: la model card se limita a la linea `license: mit` sin secciones de descripcion, arquitectura, datos de entrenamiento o uso previsto. Tampoco se declaran idiomas, pipeline de inferencia ni etiquetas de tarea mas alla de `region:us`.
 
 El repositorio tiene un tamano de 0,1 GB, registra 0 descargas y 0 likes, y fue creado el 12 de septiembre de 2026 con una unica actualizacion en la misma fecha. Estos datos son compatibles tanto con un modelo muy pequeno (del orden de decenas de millones de parametros en precision de 16 bits) como con un repositorio que solo contiene archivos de configuracion, tokenizador y pesos parciales; la informacion disponible no permite distinguir entre ambos escenarios.
 
@@ -49,7 +49,7 @@ Al no existir especificaciones publicadas, no es posible recomendar casos de uso
 - Evaluacion de viabilidad en prototipos internos: descargar el repositorio, inspeccionar los archivos de pesos y, si son cargables, ejecutar una bateria de prompts de prueba para determinar si genera texto coherente y en que idiomas.
 - Clasificacion de texto simple: si el checkpoint resulta ser un modelo pequeno (del orden de decenas de millones de parametros), su uso realista seria la clasificacion o el etiquetado de texto en tareas acotadas, no la generacion abierta de alta calidad.
 - Fine-tuning experimental con licencia permisiva: la licencia MIT permite modificar y redistribuir el modelo sin restricciones de uso comercial, lo que lo hace apto como punto de partida para experimentos academicos de ajuste fino, siempre que los pesos sean utilizables.
-- Analisis forense de artefactos en HuggingFace: el repositorio puede usarse como caso de estudio sobre publicaciones sin documentacion, para definir criterios de admision de modelos en un catalogo interno.
+- Analisis forense de artefactos en Hugging Face: el repositorio puede usarse como caso de estudio sobre publicaciones sin documentacion, para definir criterios de admision de modelos en un catalogo interno.
 - Pruebas de infraestructura de despliegue: un modelo de 0,1 GB permitiria validar cadenas de herramientas de inferencia local (por ejemplo, carga de tokenizador y servidor de inferencia) con un coste de recursos minimo.
 - Verificacion de linaje y licencia: antes de cualquier integracion en produccion, seria necesario confirmar la procedencia de los pesos, ya que la licencia MIT declarada por el autor no garantiza por si sola que los datos de entrenamiento o los pesos derivados respeten las condiciones de sus fuentes.
 
@@ -84,5 +84,5 @@ No disponible. Al desconocerse el numero de parametros, la arquitectura, la tare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/christyelsa/foundation-model
+- Hugging Face: https://huggingface.co/christyelsa/foundation-model
 - No se han encontrado enlaces adicionales relevantes en la busqueda web realizada. Los resultados obtenidos corresponden al servicio de correo italiano Libero (login.libero.it, libero.it, liberomail.libero.it, mailpec.libero.it) y no guardan relacion alguna con el modelo.

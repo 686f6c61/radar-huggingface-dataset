@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeiT for Multitask es un repositorio experimental publicado por el usuario vbarbosasy en HuggingFace, cuyo objetivo es servir como base de codigo para investigar variantes arquitectonicas de un Vision Transformer (DeiT) orientado a tareas multiples. No se trata de un modelo entrenado ni validado, sino de una implementacion con un checkpoint de inicializacion (`model.safetensors`) destinado unicamente a pruebas de humo ("smoke tests") y a la inspeccion de la arquitectura antes de lanzar un entrenamiento completo. El autor lo declara explicitamente como punto de partida experimental.
+DeiT for Multitask es un repositorio experimental publicado por el usuario vbarbosasy en Hugging Face, cuyo objetivo es servir como base de codigo para investigar variantes arquitectonicas de un Vision Transformer (DeiT) orientado a tareas multiples. No se trata de un modelo entrenado ni validado, sino de una implementacion con un checkpoint de inicializacion (`model.safetensors`) destinado unicamente a pruebas de humo ("smoke tests") y a la inspeccion de la arquitectura antes de lanzar un entrenamiento completo. El autor lo declara explicitamente como punto de partida experimental.
 
 La arquitectura declarada combina un backbone DeiT a escala "giant" con atencion dilatada, fusion del tipo Tucker, activacion Mish y normalizacion ScaleNorm. La receta de entrenamiento por defecto emplea el optimizador Adafactor con un schedule de warmup constante. El repositorio incluye `pipeline.py` (artefacto principal con la definicion del modelo y un ejemplo ejecutable), `config.json` con la configuracion de arquitectura y `training_args.json` con los hiperparametros por defecto.
 
@@ -44,7 +44,7 @@ Debido a que el checkpoint no ha sido entrenado, no existen capacidades funciona
 - Investigacion de arquitecturas de Vision Transformer: usar el repositorio como plantilla para experimentar con atencion dilatada y fusion Tucker en tareas de vision, modificando `config.json` y reentrenando.
 - Reproduccion academica de baselines de multitarea: emplear el scaffolding para entrenar todos los baselines con la misma exposicion de datos, presupuesto de tuning y semillas aleatorias, tal como recomienda el propio autor.
 - Pruebas de integracion de pipelines en PyTorch: validar que el codigo de carga, forward pass y guardado de checkpoints funciona antes de invertir en computo de entrenamiento.
-- Desarrollo de adaptadores de carga: como la implementacion es personalizada, sirve para escribir un adaptador que permita cargar el modelo con APIs genericas de HuggingFace (`AutoModel`), algo que el autor senala como necesario.
+- Desarrollo de adaptadores de carga: como la implementacion es personalizada, sirve para escribir un adaptador que permita cargar el modelo con APIs genericas de Hugging Face (`AutoModel`), algo que el autor senala como necesario.
 - Docencia sobre Vision Transformers: ilustrar de forma simplificada como se componen bloques DeiT, normalizacion y fusion, ya que el codigo es auto-contenido.
 - Prototipado de estrategias de multitarea en vision: experimentar con la fusion Tucker para combinar tareas como clasificacion, deteccion o segmentacion, partiendo de la estructura propuesta.
 - Benchmarking metodologico: escenario para disenar una evaluacion rigurosa (held-out especifico de tarea, metrica reportada en al menos tres semillas, baseline de capacidad equivalente) sobre un modelo sin resultados publicados.
@@ -67,7 +67,7 @@ No es posible establecer una comparativa de rendimiento significativa, ya que es
 
 | Modelo | Parametros | Contexto/resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vbarbosasy/multitask-2024 | 16.576 reportados (discrepancia con "giant") | No disponible | No declarado | BSD-3-Clause | HuggingFace, checkpoint sin entrenar |
+| vbarbosasy/multitask-2024 | 16.576 reportados (discrepancia con "giant") | No disponible | No declarado | BSD-3-Clause | Hugging Face, checkpoint sin entrenar |
 | DeiT (original, Meta) | 5M-86M segun variante | Imagenes 224x224 | ImageNet top-1 publicado por los autores | Apache-2.0 / CC BY-NC segun variante | Publico, checkpoints entrenados |
 | ViT (Google) | 86M-632M | Imagenes 224-384 | ImageNet/JFT publicados | Apache-2.0 | Publico, checkpoints entrenados |
 
@@ -79,7 +79,7 @@ La comparacion directa con DeiT o ViT no es valida en terminos de rendimiento po
 - Ausencia total de benchmarks: no hay evidencia empirica de rendimiento en ninguna tarea.
 - Sin auditoria de robustez, equidad ni transferencia de dominio, segun reconoce el propio autor.
 - Discrepancia de datos: los metadatos de safetensors reportan 16.576 parametros, incoherente con la escala "giant" declarada; conviene verificar el repositorio antes de asumir cualquier tamano.
-- Implementacion personalizada: requiere un adaptador explicito para funcionar con APIs de carga automatica de HuggingFace.
+- Implementacion personalizada: requiere un adaptador explicito para funcionar con APIs de carga automatica de Hugging Face.
 - Ausencia de idiomas soportados: al ser un modelo de vision, la fila de idiomas no aplica, pero tampoco se documenta el tipo de datos de entrada previsto.
 - Terminos de datos externos: aunque la licencia del codigo es BSD-3-Clause (permisiva incluso para uso comercial), el autor advierte de revisar por separado los terminos de las fuentes de datos que se usen con el repositorio.
 - Riesgo de alucinacion: no aplica como tal (no es generativo textual), pero cualquier resultado derivado de un futuro checkpoint entrenado debe documentarse de forma separada a los valores por defecto aqui incluidos.
@@ -87,5 +87,5 @@ La comparacion directa con DeiT o ViT no es valida en terminos de rendimiento po
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vbarbosasy/multitask-2024
+- Repositorio en Hugging Face: https://huggingface.co/vbarbosasy/multitask-2024
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios adicionales ni demos asociados a este modelo.

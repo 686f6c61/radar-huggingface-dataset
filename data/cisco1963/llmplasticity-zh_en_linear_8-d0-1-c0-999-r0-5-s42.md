@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Cisco1963/llmplasticity-zh_en_linear_8-d0.1-c0.999-r0.5-s42` es un modelo de lenguaje de pequeno tamano (122.706.432 parametros reales, segun los pesos en safetensors) publicado en HuggingFace por el usuario Cisco1963 (Hongao). El tag de la ficha lo clasifica como `gpt2`, lo que apunta a una arquitectura transformer decoder-only basada en GPT-2, con un tamano de parametros practicamente identico al GPT-2 small original (124M). No existe model card publicada, por lo que la mayor parte de los metadatos (licencia, idiomas, pipeline) figuran como no disponibles.
+`Cisco1963/llmplasticity-zh_en_linear_8-d0.1-c0.999-r0.5-s42` es un modelo de lenguaje de pequeno tamano (122.706.432 parametros reales, segun los pesos en safetensors) publicado en Hugging Face por el usuario Cisco1963 (Hongao). El tag de la ficha lo clasifica como `gpt2`, lo que apunta a una arquitectura transformer decoder-only basada en GPT-2, con un tamano de parametros practicamente identico al GPT-2 small original (124M). No existe model card publicada, por lo que la mayor parte de los metadatos (licencia, idiomas, pipeline) figuran como no disponibles.
 
 El nombre del repositorio forma parte de una familia mas amplia de experimentos del mismo autor, todos bajo el prefijo `llmplasticity-` y con nombres que combinan pares de idiomas (`zh_en`, `en_zh`, `nl_zh`) y una serie de hiperparametros codificados (`linear_8`, `d0.1`, `c0.999`, `r0.5`, `s42`). Esto sugiere que se trata de checkpoints de investigacion sobre plasticidad de modelos de lenguaje, probablemente experimentos de ajuste fino o de evaluacion de olvido catastrofico en escenarios bilingues chino-ingles. El `s42` final apunta a una semilla fija (seed 42) para reproducibilidad.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `Cisco1963/llmplasticity-zh_en_linear_8-...-s42` | 122,7M | no disponible | no disponible | HuggingFace, 9 descargas |
+| `Cisco1963/llmplasticity-zh_en_linear_8-...-s42` | 122,7M | no disponible | no disponible | Hugging Face, 9 descargas |
 | GPT-2 small (OpenAI) | 124M | 1024 tokens (conocido publicamente) | MIT (conocido publicamente) | Ampliamente replicado |
-| DistilGPT-2 (HuggingFace) | 82M | 1024 tokens (conocido publicamente) | Apache-2.0 (conocido publicamente) | Muy extendido |
-| Otros checkpoints `llmplasticity-*` del mismo autor | ~0,1B (tamano declarado) | no disponible | no disponible | HuggingFace, descargas muy bajas |
+| DistilGPT-2 (Hugging Face) | 82M | 1024 tokens (conocido publicamente) | Apache-2.0 (conocido publicamente) | Muy extendido |
+| Otros checkpoints `llmplasticity-*` del mismo autor | ~0,1B (tamano declarado) | no disponible | no disponible | Hugging Face, descargas muy bajas |
 
 Los datos de GPT-2 small y DistilGPT-2 corresponden a informacion publica ampliamente conocida, no a la ficha de este modelo. Para el checkpoint objeto de esta ficha solo se dispone del recuento de parametros y del tag `gpt2`; el resto de campos figuran como no disponibles porque no aparecen en la informacion consultada.
 
@@ -94,8 +94,8 @@ Los datos de GPT-2 small y DistilGPT-2 corresponden a informacion publica amplia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-zh_en_linear_8-d0.1-c0.999-r0.5-s42
-- Perfil del autor en HuggingFace: https://huggingface.co/Cisco1963/models
+- Modelo en Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-zh_en_linear_8-d0.1-c0.999-r0.5-s42
+- Perfil del autor en Hugging Face: https://huggingface.co/Cisco1963/models
 - Checkpoint hermano de la misma familia (`en_zh_linear_8-rand`): https://huggingface.co/Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.1-c0.999-r0.5-s42
 - Directorio de modelos del autor en Essa Mamdani: https://essamamdani.com/ai-models/company/cisco1963
 - Entrada de directorio para otro checkpoint de la familia: https://essamamdani.com/ai-models/hf-cisco1963-llmplasticity-plasticity-nl-zh-linear-8-d0-125-c0-99-r0-25-s42

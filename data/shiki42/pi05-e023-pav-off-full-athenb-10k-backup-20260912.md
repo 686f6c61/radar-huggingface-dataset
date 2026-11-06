@@ -87,7 +87,7 @@ La informacion disponible no incluye especificaciones tecnicas de los modelos co
 
 | Modelo | Relacion | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| E023 (este checkpoint) | objeto de la ficha; dual-expert, PAV off, 10000 actualizaciones | no disponible | no disponible | no disponible | no disponible | repositorio HuggingFace publico, 14,0 GB |
+| E023 (este checkpoint) | objeto de la ficha; dual-expert, PAV off, 10000 actualizaciones | no disponible | no disponible | no disponible | no disponible | repositorio Hugging Face publico, 14,0 GB |
 | PI0.5 Base | modelo de partida declarado en la model card | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | E024 | experimento de la misma linea, citado en la model card | no disponible | no disponible | 49/100, 30/100 y 25/100 en FixedRole100, BHalf100 y Fixed100 (auditoria pendiente) | no disponible | no disponible en la informacion proporcionada |
 | Train50 single-expert | comparacion posterior mencionada en la model card | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
@@ -109,7 +109,7 @@ No se dispone de datos sobre OpenVLA, Octo, RDT ni otras politicas roboticas com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiki42/pi05-e023-pav-off-full-athenb-10k-backup-20260912
+- Modelo en Hugging Face: https://huggingface.co/Shiki42/pi05-e023-pav-off-full-athenb-10k-backup-20260912
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/robotwin_putcab_fixed_leftDrawer_rightObject_AthenB_50
 - Revision del dataset: 793556b0d670af13653dcb6a4ba99864fd985c59
 - Commit compatible de OpenPI: 50c7234cf18e90c069660d40c5ec3e3da21689c0

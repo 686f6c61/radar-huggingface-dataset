@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zils-lite-body-2 es un modelo de 852.985.920 parámetros (aproximadamente 0,85 mil millones) derivado de Qwen/Qwen3.5-0.8B y publicado por el usuario bmars8218 en HuggingFace. Se trata de un "body" (cuerpo) del pool d3-lite del proyecto Zils, asociado a la subred 127 de Bittensor, una red descentralizada de modelos de IA. El modelo combina pesos de lenguaje y visión, y está diseñado para ser evaluado sobre un "chassis" fijo que aporta la capa de respuesta, el prompt y el runtime, de modo que el body solo contribuye con los pesos.
+zils-lite-body-2 es un modelo de 852.985.920 parámetros (aproximadamente 0,85 mil millones) derivado de Qwen/Qwen3.5-0.8B y publicado por el usuario bmars8218 en Hugging Face. Se trata de un "body" (cuerpo) del pool d3-lite del proyecto Zils, asociado a la subred 127 de Bittensor, una red descentralizada de modelos de IA. El modelo combina pesos de lenguaje y visión, y está diseñado para ser evaluado sobre un "chassis" fijo que aporta la capa de respuesta, el prompt y el runtime, de modo que el body solo contribuye con los pesos.
 
 El modelo se construyó mediante un "soup" (promedio uniforme de pesos) de dos modelos previos —thermopylae-777/zils-lite-body-2 y dasLOL/zils-lite-skills-v5— seguido de un fine-tuning con LoRA de rango 16 y learning rate 1e-4 durante una época, con los pesos fusionados posteriormente. El entrenamiento utilizó 9.600 filas tras el split de validación del trainer oficial, compuestas por respuestas suaves del conjunto público zils-ai/zils-relay-answers, filas generadas con etiquetas calculadas según recetas públicas de examen y las propias probabilidades del soup inicial como regularizador.
 
@@ -71,10 +71,10 @@ Otras dos semillas de la misma receta obtuvieron 49,49 y 50,31, y esta semilla f
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento documentado |
 |---|---|---|---|---|---|
-| zils-lite-body-2 (bmars8218) | 852.985.920 | No disponible | Apache-2.0 | HuggingFace, 0 descargas | Proxy score 51,38 (proxy local del autor) |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8 mil millones | No disponible | No disponible en la información | HuggingFace | No disponible |
-| dasLOL/zils-lite-skills-v5 | No disponible | No disponible | No disponible | HuggingFace | Proxy score 47,86 (mismo proxy) |
-| thermopylae-777/zils-lite-body-2 | No disponible | No disponible | No disponible | HuggingFace | Proxy score 46,66 (mismo proxy) |
+| zils-lite-body-2 (bmars8218) | 852.985.920 | No disponible | Apache-2.0 | Hugging Face, 0 descargas | Proxy score 51,38 (proxy local del autor) |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8 mil millones | No disponible | No disponible en la información | Hugging Face | No disponible |
+| dasLOL/zils-lite-skills-v5 | No disponible | No disponible | No disponible | Hugging Face | Proxy score 47,86 (mismo proxy) |
+| thermopylae-777/zils-lite-body-2 | No disponible | No disponible | No disponible | Hugging Face | Proxy score 46,66 (mismo proxy) |
 
 La comparación se limita a los modelos del mismo ecosistema Zils, ya que no se dispone de datos de benchmarks estándar que permitan contrastarlo con alternativas de propósito general como Qwen2.5-0.5B, SmolLM2-1.7B o Gemma-2-2B. Los tres modelos comparados comparten el mismo proxy de evaluación, pero no se documentan sus parámetros ni contextos.
 
@@ -92,7 +92,7 @@ La comparación se limita a los modelos del mismo ecosistema Zils, ya que no se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bmars8218/zils-lite-body-2
+- Modelo en Hugging Face: https://huggingface.co/bmars8218/zils-lite-body-2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Modelo de partida 1: https://huggingface.co/thermopylae-777/zils-lite-body-2
 - Modelo de partida 2: https://huggingface.co/dasLOL/zils-lite-skills-v5

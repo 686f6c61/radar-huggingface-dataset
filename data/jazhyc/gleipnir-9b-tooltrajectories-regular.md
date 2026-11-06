@@ -66,10 +66,10 @@ No hay benchmarks publicados para Gleipnir, de modo que la comparacion es estruc
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gleipnir-9B-ToolTrajectories-Regular | 9B (base) + LoRA | no disponible | no publicado | MIT | HuggingFace (0 descargas, 0 likes) |
-| Llama Guard 3 8B | 8B | no disponible | no disponible | Llama 3.1 Community License | HuggingFace, ampliamente desplegado |
-| ShieldGemma | 2B / 9B / 27B | no disponible | no disponible | Gemma Terms of Use | HuggingFace |
-| Qwen3Guard (serie Gen) | 0.6B / 4B / 8B | no disponible | no disponible | Apache 2.0 (segun la informacion de sus repositorios) | HuggingFace |
+| Gleipnir-9B-ToolTrajectories-Regular | 9B (base) + LoRA | no disponible | no publicado | MIT | Hugging Face (0 descargas, 0 likes) |
+| Llama Guard 3 8B | 8B | no disponible | no disponible | Llama 3.1 Community License | Hugging Face, ampliamente desplegado |
+| ShieldGemma | 2B / 9B / 27B | no disponible | no disponible | Gemma Terms of Use | Hugging Face |
+| Qwen3Guard (serie Gen) | 0.6B / 4B / 8B | no disponible | no disponible | Apache 2.0 (segun la informacion de sus repositorios) | Hugging Face |
 
 Diferencias clave: a diferencia de los guardrails de contenido general, Gleipnir clasifica acciones observables en trayectorias de agentes y devuelve una puntuacion continua de riesgo derivada de logprobs, no una categoria de politica. Frente a los comparadores, su licencia MIT es mas permisiva para uso comercial, pero carece de evaluacion publicada y tiene un historial de adopcion nulo.
 
@@ -89,6 +89,6 @@ Diferencias clave: a diferencia de los guardrails de contenido general, Gleipnir
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jazhyc/Gleipnir-9B-ToolTrajectories-Regular
+- Modelo en Hugging Face: https://huggingface.co/Jazhyc/Gleipnir-9B-ToolTrajectories-Regular
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Codigo del experimento: https://github.com/Jazhyc/gleipnir

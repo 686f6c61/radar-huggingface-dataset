@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dexy-Decision-9B-V2 es un modelo de decisión afinado (fine-tune) sobre vllm-sr/d3-flash, publicado por el usuario Patrick-18 en HuggingFace. No es un modelo generativo al uso: en lugar de producir texto, recibe un `state` compartido (texto, JSON, imágenes o vídeos) y un conjunto de preguntas con nombre, y devuelve probabilidades para clasificación, juicios binarios y valoraciones ordenadas. Su arquitectura parte del backbone multimodal Qwen3.5-9B con un cabezal de decisión de 255 códigos, y mantiene la interfaz de inferencia del modelo base.
+Dexy-Decision-9B-V2 es un modelo de decisión afinado (fine-tune) sobre vllm-sr/d3-flash, publicado por el usuario Patrick-18 en Hugging Face. No es un modelo generativo al uso: en lugar de producir texto, recibe un `state` compartido (texto, JSON, imágenes o vídeos) y un conjunto de preguntas con nombre, y devuelve probabilidades para clasificación, juicios binarios y valoraciones ordenadas. Su arquitectura parte del backbone multimodal Qwen3.5-9B con un cabezal de decisión de 255 códigos, y mantiene la interfaz de inferencia del modelo base.
 
 La innovación principal respecto al modelo original es la extensión del validador de puntuaciones, que pasa de un rango de 2 a 10 niveles a un rango de 2 a 255 niveles ordenados, reutilizando el mecanismo de lectura de códigos de respuesta ya existente. El modelo incorpora un encoder de visión de 0,456B de parámetros y una configuración de contexto de 262.144 posiciones, aunque esta cifra es un techo de posiciones y no una garantía de que cualquier longitud de entrada quepa en memoria de GPU.
 
@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dexy-Decision-9B-V2 | 8.394B | 262.144 posiciones (config.) | Probabilidades de decisión (choice/score/noul) | Apache-2.0 | HuggingFace |
-| vllm-sr/d3-flash (modelo base) | no disponible | no disponible | Probabilidades de decisión con score de 2–10 niveles | no disponible | HuggingFace |
+| Dexy-Decision-9B-V2 | 8.394B | 262.144 posiciones (config.) | Probabilidades de decisión (choice/score/noul) | Apache-2.0 | Hugging Face |
+| vllm-sr/d3-flash (modelo base) | no disponible | no disponible | Probabilidades de decisión con score de 2–10 niveles | no disponible | Hugging Face |
 | LLM generativos de ~9B (categoría general) | ~9B | variable | Texto generado | variable | variable |
 
 La comparación directa con LLM generativos no es homogénea: Dexy-Decision-9B-V2 no genera texto, sino que devuelve probabilidades sobre preguntas definidas por el usuario, por lo que las métricas de generación (MMLU, HumanEval, GSM8K) no son aplicables de forma directa. No se dispone de datos de rendimiento del modelo base d3-flash en la información proporcionada.
@@ -101,6 +101,6 @@ La comparación directa con LLM generativos no es homogénea: Dexy-Decision-9B-V
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Patrick-18/Dexy-Decision-9B-V2
+- Modelo en Hugging Face: https://huggingface.co/Patrick-18/Dexy-Decision-9B-V2
 - Modelo base vllm-sr/d3-flash: https://huggingface.co/vllm-sr/d3-flash
 - Guía de uso del modelo base: https://huggingface.co/vllm-sr/d3-flash#quickstart

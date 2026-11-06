@@ -89,6 +89,6 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/IsValorum/KAT-Coder-V2.5-Dev-APEX-I-MiniPlus-V2-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/IsValorum/KAT-Coder-V2.5-Dev-APEX-I-MiniPlus-V2-GGUF
 - Modelo base: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
 - Catalogo del autor (donde se anuncia la revision V2.1): https://huggingface.co/IsValorum

@@ -81,7 +81,7 @@ No se dispone de comparativas publicadas con otros modelos de la misma categorí
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xw1234gan/seccodeplt-qwen2.5-coder-7b-grpo-no-kl-real-detector-reward-v3
+- Modelo en Hugging Face: https://huggingface.co/xw1234gan/seccodeplt-qwen2.5-coder-7b-grpo-no-kl-real-detector-reward-v3
 - Modelo base Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Repositorio GitHub de Qwen2.5-Coder: https://github.com/huggingface/Qwen2.5-Coder
 - Informe tecnico de Qwen2.5-Coder (arXiv): https://arxiv.org/html/2409.12186v2

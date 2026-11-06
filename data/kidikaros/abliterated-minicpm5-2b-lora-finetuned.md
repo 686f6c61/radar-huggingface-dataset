@@ -95,7 +95,7 @@ Frente a estas alternativas, el modelo aqui descrito no ofrece pesos completos e
 ## Limitaciones y advertencias
 
 - No es un modelo completo: sin los pesos del base abliterated el repositorio es inutilizable. El propio autor lo advierte en la model card.
-- Ambiguedad sobre el base: los metadatos de HuggingFace apuntan a `openbmb/MiniCPM5-2B`, mientras la model card indica que se uso una version abliterated del mismo. No se identifica el repositorio exacto de esa version abliterated.
+- Ambiguedad sobre el base: los metadatos de Hugging Face apuntan a `openbmb/MiniCPM5-2B`, mientras la model card indica que se uso una version abliterated del mismo. No se identifica el repositorio exacto de esa version abliterated.
 - Modelo "uncensored" por diseno: no aplica rechazos, por lo que puede generar contenido danino, ilegal o inseguro. No es apto para despliegues publicos sin una capa externa de moderacion.
 - Sin benchmarks ni evaluaciones de seguridad: no hay datos de MMLU, HumanEval, GSM8K ni pruebas de toxicidad o sesgo.
 - Perdida final de ~0,05 con 2000 pasos y 5000 muestras: indicio claro de posible sobreajuste, con riesgo de degradacion en prompts fuera de la distribucion de entrenamiento.
@@ -107,7 +107,7 @@ Frente a estas alternativas, el modelo aqui descrito no ofrece pesos completos e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KidIkaros/abliterated-minicpm5-2b-lora-finetuned
+- Modelo en Hugging Face: https://huggingface.co/KidIkaros/abliterated-minicpm5-2b-lora-finetuned
 - Modelo base declarado en los metadatos: https://huggingface.co/openbmb/MiniCPM5-2B
 - GitHub del autor: https://github.com/KidIkaros
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada

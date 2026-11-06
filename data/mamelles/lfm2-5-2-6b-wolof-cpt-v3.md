@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-2.6B-Wolof-CPT-v3 es un ajuste por preentrenamiento continuado (CPT, continual pretraining) del modelo base LiquidAI/LFM2.5-2.6B-Base, especializado en la adaptación al idioma wolof (codigo ISO `wo`). Lo publica el usuario mamelles en HuggingFace y se distribuye como un artefacto de produccion privada, marcado explicitamente por el autor como experimental y no como un lanzamiento publico estable. No es un modelo entrenado desde cero, sino una adaptacion linguistica sobre una base ya existente de la familia LFM2.5 de Liquid AI.
+LFM2.5-2.6B-Wolof-CPT-v3 es un ajuste por preentrenamiento continuado (CPT, continual pretraining) del modelo base LiquidAI/LFM2.5-2.6B-Base, especializado en la adaptación al idioma wolof (codigo ISO `wo`). Lo publica el usuario mamelles en Hugging Face y se distribuye como un artefacto de produccion privada, marcado explicitamente por el autor como experimental y no como un lanzamiento publico estable. No es un modelo entrenado desde cero, sino una adaptacion linguistica sobre una base ya existente de la familia LFM2.5 de Liquid AI.
 
 El modelo cuenta con 2.705.390.592 parametros totales (segun los pesos en safetensors) y un repositorio de 5,4 GB, lo que situa su huella en el rango de los modelos densos de ~2,7B. La model card no declara explicitamente si la arquitectura es densa o de mezcla de expertos (MoE), aunque la etiqueta `lfm2` remite a la familia Liquid Foundation Models de Liquid AI, caracterizada por arquitecturas hibridas. Los detalles concretos de la arquitectura, la longitud de contexto y el tokenizador mas alla de la familia `128k-ext` no se especifican en la informacion disponible.
 
@@ -65,7 +65,7 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 - VRAM estimada para inferencia: aproximadamente 5,4 GB en FP16, en torno a 2,7 GB en INT8 y cerca de 1,5-1,8 GB en cuantizacion de 4 bits, calculado a partir de los 2,7B de parametros (estimacion propia, no confirmada por el autor).
 - GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para FP16; para INT8 o 4 bits bastan GPU de 4-8 GB.
 - Cabe en GPU de consumo: si, previsiblemente en tarjetas como RTX 3060, RTX 4060, RTX 4070 o superiores, especialmente con cuantizacion.
-- Opciones de despliegue: al usar `transformers` y safetensors, es compatible con HuggingFace Transformers; el soporte en vLLM, llama.cpp o Ollama no esta confirmado en la informacion disponible.
+- Opciones de despliegue: al usar `transformers` y safetensors, es compatible con Hugging Face Transformers; el soporte en vLLM, llama.cpp o Ollama no esta confirmado en la informacion disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ No se dispone en la informacion proporcionada de datos numericos de modelos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mamelles/LFM2.5-2.6B-Wolof-CPT-v3
+- Modelo en Hugging Face: https://huggingface.co/mamelles/LFM2.5-2.6B-Wolof-CPT-v3
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B-Base
 - Fuente de las metricas citadas por el autor: https://huggingface.co/Tonic/LFM2.5-2.6B-Wolof-CPT-v3/blob/main/metrics.json
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

@@ -78,8 +78,8 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 
 | Modelo | Parametros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LimiX-1 16M | 16M | no disponible | Clasificacion, regresion, imputacion, generacion tabular, seleccion de features y muestras, inferencia causal | Apache 2.0 | HuggingFace y ModelScope (stable-ai) |
-| LimiX-2M | no disponible | no disponible | Mismas tareas que LimiX-16M | Apache 2.0 | HuggingFace y ModelScope |
+| LimiX-1 16M | 16M | no disponible | Clasificacion, regresion, imputacion, generacion tabular, seleccion de features y muestras, inferencia causal | Apache 2.0 | Hugging Face y ModelScope (stable-ai) |
+| LimiX-2M | no disponible | no disponible | Mismas tareas que LimiX-16M | Apache 2.0 | Hugging Face y ModelScope |
 | XGBoost | no aplica (modelo de arboles) | no aplica | Clasificacion y regresion tabular | Apache 2.0 | Libreria de amplia difusion |
 | Modelos fundacionales tabulares previos | no disponible | no disponible | Clasificacion y regresion | no disponible | no disponible |
 
@@ -91,14 +91,14 @@ La model card situa a LimiX por delante de XGBoost, de los modelos clasicos de d
 - No se documentan sesgos conocidos, pero cualquier modelo entrenado sobre datos tabulares puede reproducir sesgos presentes en las variables y en la distribucion de los datos de entrenamiento.
 - Riesgo de alucinacion: aunque el concepto de alucinacion no aplica igual que en modelos de lenguaje, existe riesgo de predicciones o imputaciones incorrectas cuando la distribucion de los datos de entrada se aleja de la del entrenamiento.
 - No se especifica la longitud de contexto ni los limites maximos de filas y columnas; se desconoce el comportamiento con tablas muy anchas o muy largas.
-- La licencia Apache 2.0 permite uso comercial segun la model card, pero el campo de licencia del repositorio en HuggingFace aparece como no disponible, por lo que conviene verificar la cabecera de licencia del repositorio antes de un despliegue en produccion.
+- La licencia Apache 2.0 permite uso comercial segun la model card, pero el campo de licencia del repositorio en Hugging Face aparece como no disponible, por lo que conviene verificar la cabecera de licencia del repositorio antes de un despliegue en produccion.
 - La denominacion del repositorio (LimiX-1_16M) y la del checkpoint (LimiX-16M) no coinciden exactamente; conviene confirmar que se descarga la version correcta.
 - El nombre, los enlaces y las referencias de la model card pueden contener erratas: el enlace de descarga del checkpoint apunta a una organizacion distinta (stableai-org) de la del repositorio (stable-ai).
 - La informacion de despliegue asume un entorno CUDA concreto (CUDA 12.2, PyTorch 2.7.1, flash-attn 2.8.0) y Python 3.12.7; versiones distintas pueden requerir recompilacion de flash-attention.
 
 ## Enlaces
-- Repositorio del modelo en HuggingFace: https://huggingface.co/stable-ai/LimiX-1_16M
-- Organizacion en HuggingFace: https://huggingface.co/stable-ai
+- Repositorio del modelo en Hugging Face: https://huggingface.co/stable-ai/LimiX-1_16M
+- Organizacion en Hugging Face: https://huggingface.co/stable-ai
 - Checkpoint LimiX-16M: https://huggingface.co/stableai-org/LimiX-16M/tree/main
 - Organizacion en ModelScope: https://modelscope.cn/organization/stable-ai
 - Pagina del proyecto: https://www.limix.ai/

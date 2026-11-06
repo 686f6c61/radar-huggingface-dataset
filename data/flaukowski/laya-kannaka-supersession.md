@@ -75,9 +75,9 @@ No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| laya-kannaka-supersession | 421.293.830 | 1024 tokens | Decision de supersesion (`noul`) | apache-2.0 | HuggingFace (flaukowski) |
-| convaiinnovations/laya (base) | ~421M (ModernBERT-large) | no disponible | Decisiones tipadas de proposito general ("System 1 decision engine") | apache-2.0 | HuggingFace (convaiinnovations) |
-| laya-kannaka-evidence-gate (hermano) | no disponible | no disponible | Puerta de evidencia en el sustrato de memoria Kannaka | no disponible | HuggingFace (flaukowski) |
+| laya-kannaka-supersession | 421.293.830 | 1024 tokens | Decision de supersesion (`noul`) | apache-2.0 | Hugging Face (flaukowski) |
+| convaiinnovations/laya (base) | ~421M (ModernBERT-large) | no disponible | Decisiones tipadas de proposito general ("System 1 decision engine") | apache-2.0 | Hugging Face (convaiinnovations) |
+| laya-kannaka-evidence-gate (hermano) | no disponible | no disponible | Puerta de evidencia en el sustrato de memoria Kannaka | no disponible | Hugging Face (flaukowski) |
 
 No se dispone de comparativas con modelos de deteccion de contradiccion o supersesion de otros autores dentro de la informacion proporcionada. Los resultados del banco kannaka-bench solo comparan entre revisiones del propio modelo.
 
@@ -96,13 +96,13 @@ No se dispone de comparativas con modelos de deteccion de contradiccion o supers
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flaukowski/laya-kannaka-supersession
+- Modelo en Hugging Face: https://huggingface.co/flaukowski/laya-kannaka-supersession
 - Modelo hermano (evidence gate): https://huggingface.co/flaukowski/laya-kannaka-evidence-gate
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Repositorio del modelo base Laya: https://github.com/NandhaKishorM/laya
 - Pagina de la familia Laya: https://laya.convaiinnovations.com/
 - Kannaka (sustrato de memoria): https://github.com/kannaka-labs/kannaka-memory
 - Banco de pruebas kannaka-bench: https://github.com/kannaka-labs/kannaka-bench
-- Modelos etiquetados como kannaka en HuggingFace: https://huggingface.co/models?other=kannaka
+- Modelos etiquetados como kannaka en Hugging Face: https://huggingface.co/models?other=kannaka
 - Otro modelo del autor: https://huggingface.co/flaukowski/kannaka-brain-v2-lora
 - Paper de LongMemEval: Wu et al. (referenciado como origen de los datos de entrenamiento; enlace no disponible en la informacion proporcionada)

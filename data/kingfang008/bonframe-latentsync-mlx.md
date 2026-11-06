@@ -77,9 +77,9 @@ La comparativa se basa en características generales conocidas, ya que no hay be
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingfang008/BonFrame-LatentSync-MLX
+- Repositorio Hugging Face: https://huggingface.co/kingfang008/BonFrame-LatentSync-MLX
 - Proyecto latentsync-mlx (GitHub): https://github.com/sb1992/latentsync-mlx
 - LatentSync original de ByteDance (GitHub): https://github.com/bytedance/LatentSync
-- LatentSync en HuggingFace (ByteDance): https://huggingface.co/ByteDance/LatentSync
+- LatentSync en Hugging Face (ByteDance): https://huggingface.co/ByteDance/LatentSync
 - Página oficial de LatentSync: https://www.latentsync.org/
 - Repositorio relacionado (BonFrame JoyVASA ONNX): https://huggingface.co/kingfang008/BonFrame-JoyVASA-ONNX

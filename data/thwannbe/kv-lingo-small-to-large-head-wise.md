@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KV-lingo small-to-large head-wise es un artefacto de traduccion de cache KV, no un modelo de lenguaje autonomo. Lo publica el usuario thwannbe en HuggingFace como implementacion independiente de la tecnica descrita en el paper KV-Lingo (arXiv:2609.32610). Su funcion es proyectar la cache KV generada por un modelo pequeno (Qwen/Qwen3-0.6B) a la cache que esperaria un modelo mayor (Qwen/Qwen3-1.7B), de forma que el modelo grande pueda continuar una generacion ya iniciada por el pequeno sin reprocesar el prefijo completo.
+KV-lingo small-to-large head-wise es un artefacto de traduccion de cache KV, no un modelo de lenguaje autonomo. Lo publica el usuario thwannbe en Hugging Face como implementacion independiente de la tecnica descrita en el paper KV-Lingo (arXiv:2609.32610). Su funcion es proyectar la cache KV generada por un modelo pequeno (Qwen/Qwen3-0.6B) a la cache que esperaria un modelo mayor (Qwen/Qwen3-1.7B), de forma que el modelo grande pueda continuar una generacion ya iniciada por el pequeno sin reprocesar el prefijo completo.
 
 El repositorio contiene un fichero `mapper.pt` con mapas lineales por capa y por cabeza de atencion, separados para claves (K) y valores (V). Las claves se capturan antes de la k-normalization y del RoPE del modelo origen, y la normalizacion y el RoPE del modelo destino se aplican despues de la proyeccion. No incluye pesos base, estado del optimizador, datos de entrenamiento ni predicciones de evaluacion.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Artefacto | Tipo | Modelo origen | Modelo destino | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thwannbe/kv-lingo-small-to-large-head-wise | Mapper KV head-wise | Qwen3-0.6B | Qwen3-1.7B | No disponible | HuggingFace, 0 descargas |
+| thwannbe/kv-lingo-small-to-large-head-wise | Mapper KV head-wise | Qwen3-0.6B | Qwen3-1.7B | No disponible | Hugging Face, 0 descargas |
 | KV-Lingo (paper, arXiv:2609.32610) | Metodo de traduccion KV | No disponible | No disponible | No disponible | Paper; checkpoint oficial no referenciado |
 | Prompt caching nativo (vLLM, TGI) | Cache KV reutilizada dentro del mismo modelo | Mismo modelo | Mismo modelo | Segun herramienta | Ampliamente disponible |
-| Adaptadores PEFT/LoRA | Ajuste de pesos | Cualquiera | Mismo modelo | Segun adaptador | Estandar en HuggingFace |
+| Adaptadores PEFT/LoRA | Ajuste de pesos | Cualquiera | Mismo modelo | Segun adaptador | Estandar en Hugging Face |
 
 La diferencia clave frente al prompt caching nativo es que este mapper cruza modelos de distinto tamano, algo que las herramientas estandar no ofrecen. Frente a un adaptador LoRA, la diferencia es que no modifica pesos del modelo ni anade capacidad nueva: solo transforma tensores de cache.
 
@@ -95,7 +95,7 @@ La diferencia clave frente al prompt caching nativo es que este mapper cruza mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thwannbe/kv-lingo-small-to-large-head-wise
+- Repositorio Hugging Face: https://huggingface.co/thwannbe/kv-lingo-small-to-large-head-wise
 - Paper KV-Lingo: https://arxiv.org/abs/2609.32610
 - Modelo origen Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Modelo destino Qwen/Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B

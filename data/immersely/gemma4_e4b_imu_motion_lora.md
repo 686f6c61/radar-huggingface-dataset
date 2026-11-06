@@ -17,7 +17,7 @@ La relevancia actual de este modelo radica en su enfoque de eficiencia: al ser u
 | Tipos de cuantizacion | Base cuantizado a 4 bits (bnb-4bit) mediante Unsloth; el adaptador LoRA es de baja precision |
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (segun tags de HuggingFace) |
+| Formato de pesos | safetensors (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -56,6 +56,6 @@ No se dispone de informacion sobre modelos comparables. Dado que el modelo es un
 
 ## Enlaces
 
-- [HuggingFace: immersely/gemma4_e4b_imu_motion_lora](https://huggingface.co/immersely/gemma4_e4b_imu_motion_lora)
+- [Hugging Face: immersely/gemma4_e4b_imu_motion_lora](https://huggingface.co/immersely/gemma4_e4b_imu_motion_lora)
 - [Modelo base: unsloth/gemma-4-e4b-it-unsloth-bnb-4bit](https://huggingface.co/unsloth/gemma-4-e4b-it-unsloth-bnb-4bit) (referenciado en la model card)
 - [Unsloth](https://github.com/unslothai/unsloth) (herramienta de entrenamiento mencionada)

@@ -104,6 +104,6 @@ La diferencia clave del paquete de aether-models no es de rendimiento sino de en
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/aether-models/qwen3-1.7b
+- Pagina del modelo en Hugging Face: https://huggingface.co/aether-models/qwen3-1.7b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio no encontrado en la busqueda web. Las consultas realizadas devolvieron unicamente resultados no relacionados con el modelo: articulos sobre el eter como elemento clasico y como figura de la mitologia griega, un mod de Minecraft llamado The Aether y un cliente de Skyblock. No se localizaron paper, blog tecnico, repositorio de codigo ni demo asociados a aether-models, al SDK Aether o al formato Core AI.

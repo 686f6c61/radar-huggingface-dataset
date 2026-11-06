@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Prom-1.5B es un modelo de generacion de texto publicado en HuggingFace por el usuario tncyypttvk bajo el identificador `tncyypttvk/Prom-1.5B`. Se trata de un checkpoint de 1.543.714.304 parametros (aproximadamente 1,54 mil millones) etiquetado con la arquitectura `qwen2`, lo que lo situa en la familia de transformers decoder-only derivada de Qwen2, con atencion causal y pesos en formato safetensors. El repositorio ocupa 3,1 GB, un tamano coherente con pesos almacenados en bf16/fp16 (2 bytes por parametro).
+Prom-1.5B es un modelo de generacion de texto publicado en Hugging Face por el usuario tncyypttvk bajo el identificador `tncyypttvk/Prom-1.5B`. Se trata de un checkpoint de 1.543.714.304 parametros (aproximadamente 1,54 mil millones) etiquetado con la arquitectura `qwen2`, lo que lo situa en la familia de transformers decoder-only derivada de Qwen2, con atencion causal y pesos en formato safetensors. El repositorio ocupa 3,1 GB, un tamano coherente con pesos almacenados en bf16/fp16 (2 bytes por parametro).
 
-La relevancia de esta ficha es limitada y conviene ser explicito: la model card es la plantilla automatica de HuggingFace sin rellenar, con todos los campos marcados como "More Information Needed". No se declara licencia, ni idiomas, ni datos de entrenamiento, ni procedimiento de ajuste, ni resultados de evaluacion. El modelo registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion alguna por parte de la comunidad.
+La relevancia de esta ficha es limitada y conviene ser explicito: la model card es la plantilla automatica de Hugging Face sin rellenar, con todos los campos marcados como "More Information Needed". No se declara licencia, ni idiomas, ni datos de entrenamiento, ni procedimiento de ajuste, ni resultados de evaluacion. El modelo registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion alguna por parte de la comunidad.
 
 En consecuencia, esta ficha documenta lo que es verificable (arquitectura declarada, recuento real de parametros, formato de pesos, tamano del repositorio) y marca explicitamente como "no disponible" todo lo demas. Cualquier evaluacion de calidad, sesgos o idoneidad para produccion requiere una validacion empirica por parte del usuario antes de adoptar el modelo.
 
@@ -30,7 +30,7 @@ En consecuencia, esta ficha documenta lo que es verificable (arquitectura declar
 
 El unico dato tecnico fiable sobre la arquitectura es el tag `qwen2`, que situa el modelo en la familia Qwen2 de Alibaba. Esto implica, si el tag es correcto, un transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU, embeddings rotatorios (RoPE) y probablemente atencion con consultas agrupadas (GQA), que es la configuracion estandar de la familia. Para un modelo de 1,54 mil millones de parametros, el checkpoint base de referencia de esa familia (Qwen2-1.5B) emplea 28 capas, dimension oculta de 1536 y vocabulario de 151.936 tokens, pero no hay confirmacion de que este checkpoint reproduzca esa configuracion exacta.
 
-No hay absolutamente ninguna informacion sobre el entrenamiento: ni numero de tokens, ni composicion del dataset, ni si hubo preentrenamiento desde cero, fine-tuning supervisado, RLHF o DPO. El tag `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. sobre el calculador de impacto medioambiental de machine learning, un enlace que la plantilla de HuggingFace incluye por defecto; no es un paper asociado al modelo. No se declara ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, mezcla de expertos, estado espacio-temporal) ni se publican hiperparametros de entrenamiento.
+No hay absolutamente ninguna informacion sobre el entrenamiento: ni numero de tokens, ni composicion del dataset, ni si hubo preentrenamiento desde cero, fine-tuning supervisado, RLHF o DPO. El tag `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. sobre el calculador de impacto medioambiental de machine learning, un enlace que la plantilla de Hugging Face incluye por defecto; no es un paper asociado al modelo. No se declara ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, mezcla de expertos, estado espacio-temporal) ni se publican hiperparametros de entrenamiento.
 
 ## Capacidades
 
@@ -75,10 +75,10 @@ Las cifras de VRAM que siguen son estimaciones calculadas a partir del recuento 
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| tncyypttvk/Prom-1.5B | 1,54B | no disponible | no disponible | no disponible | repositorio HuggingFace, 0 descargas |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache 2.0 | si, en su model card oficial | HuggingFace, ampliamente utilizado |
-| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License (con restricciones) | si, en su model card oficial | HuggingFace, ampliamente utilizado |
-| SmolLM2-1.7B-Instruct | 1,71B | 8.192 tokens | Apache 2.0 | si, en su model card oficial | HuggingFace, ampliamente utilizado |
+| tncyypttvk/Prom-1.5B | 1,54B | no disponible | no disponible | no disponible | repositorio Hugging Face, 0 descargas |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache 2.0 | si, en su model card oficial | Hugging Face, ampliamente utilizado |
+| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License (con restricciones) | si, en su model card oficial | Hugging Face, ampliamente utilizado |
+| SmolLM2-1.7B-Instruct | 1,71B | 8.192 tokens | Apache 2.0 | si, en su model card oficial | Hugging Face, ampliamente utilizado |
 
 La comparacion relevante no es de rendimiento, ya que Prom-1.5B no publica ninguna cifra, sino de madurez: los tres modelos alternativos cuentan con licencia explicita, contexto documentado, evaluaciones reproducibles y soporte activo en herramientas de despliegue. Prom-1.5B no ofrece ninguna de esas garantias. Cualquier decision de adopcion deberia apoyarse en una evaluacion propia frente a estas alternativas.
 
@@ -98,8 +98,8 @@ La comparacion relevante no es de rendimiento, ya que Prom-1.5B no publica ningu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tncyypttvk/Prom-1.5B
-- Model card del autor: plantilla automatica de HuggingFace sin contenido cumplimentado
+- Modelo en Hugging Face: https://huggingface.co/tncyypttvk/Prom-1.5B
+- Model card del autor: plantilla automatica de Hugging Face sin contenido cumplimentado
 - Paper de referencia de la plantilla (no asociado al modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto medioambiental citado en la plantilla: https://mlco2.github.io/impact
 - Referencias comparativas de la misma franja:

@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Vision-OPD-Qwen2.5-VL-7B-Instruct-RandomDrop5-Step30 (este) | 8,29 B | no disponible | no disponible | HuggingFace (experimental) |
-| Qwen2.5-VL-7B-Instruct (base) | 8,29 B | 32k (según technical report) | Apache 2.0 | HuggingFace, ampliamente usado |
-| Vision-OPD-Qwen2.5-VL-7B-Instruct-RandomDrop5-1Epoch | 8,29 B | no disponible | no disponible | HuggingFace (variante con 64 pasos) |
+| Vision-OPD-Qwen2.5-VL-7B-Instruct-RandomDrop5-Step30 (este) | 8,29 B | no disponible | no disponible | Hugging Face (experimental) |
+| Qwen2.5-VL-7B-Instruct (base) | 8,29 B | 32k (según technical report) | Apache 2.0 | Hugging Face, ampliamente usado |
+| Vision-OPD-Qwen2.5-VL-7B-Instruct-RandomDrop5-1Epoch | 8,29 B | no disponible | no disponible | Hugging Face (variante con 64 pasos) |
 
 La comparativa se limita a las variantes del mismo modelo base. No se dispone de datos de rendimiento para establecer comparaciones cuantitativas. El modelo base Qwen2.5-VL-7B-Instruct tiene benchmarks publicados en el technical report de Qwen2.5-VL, pero este fine-tuning no los hereda automáticamente.
 
@@ -81,7 +81,7 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhuqiang/Vision-OPD-Qwen2.5-VL-7B-Instruct-RandomDrop5-Step30
+- Modelo en Hugging Face: https://huggingface.co/zhuqiang/Vision-OPD-Qwen2.5-VL-7B-Instruct-RandomDrop5-Step30
 - Repositorio de código prune-opd: https://github.com/zhuqiangLu/prune-opd
 - Dataset de entrenamiento Vision-OPD-6K: https://huggingface.co/datasets/yuanqianhao/Vision-OPD-6K
 - Variante 1Epoch (step-64): https://huggingface.co/zhuqiang/Vision-OPD-Qwen2.5-VL-7B-Instruct-RandomDrop5-1Epoch

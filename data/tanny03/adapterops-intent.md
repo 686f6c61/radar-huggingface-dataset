@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tanny03/adapterops-intent es un adaptador de tipo LoRA (Low-Rank Adaptation) publicado en HuggingFace bajo la librería PEFT, construido sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. No se trata, por tanto, de un modelo completo con pesos independientes: el repositorio contiene únicamente los tensores del adaptador (0,1 GB en formato safetensors) que deben cargarse junto al modelo base para poder generar texto. El nombre del repositorio sugiere un ajuste orientado a detección de intenciones conversacionales, pero la model card no confirma el propósito, el dataset ni el procedimiento de entrenamiento empleados.
+Tanny03/adapterops-intent es un adaptador de tipo LoRA (Low-Rank Adaptation) publicado en Hugging Face bajo la librería PEFT, construido sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. No se trata, por tanto, de un modelo completo con pesos independientes: el repositorio contiene únicamente los tensores del adaptador (0,1 GB en formato safetensors) que deben cargarse junto al modelo base para poder generar texto. El nombre del repositorio sugiere un ajuste orientado a detección de intenciones conversacionales, pero la model card no confirma el propósito, el dataset ni el procedimiento de entrenamiento empleados.
 
 El interés de esta ficha es limitado pero concreto: sirve como ejemplo del patrón de publicación de adaptadores PEFT de bajo coste sobre modelos pequeños de la familia Qwen2.5, un formato cada vez más habitual para especializar modelos de 1-2 B parámetros en tareas cerradas (clasificación, enrutado, extracción de campos) sin asumir el coste de un fine-tuning completo. Al estar apoyado en Qwen2.5-1.5B-Instruct, hereda las características del modelo base: arquitectura transformer decoder-only densa, aproximadamente 1,5 B parámetros y una ventana de contexto de 32 768 tokens, según la documentación pública de Qwen.
 
@@ -28,7 +28,7 @@ Ahora bien, la model card es una plantilla sin rellenar: todos los apartados rel
 | Tarea (pipeline) | text-generation |
 | Tamano del repositorio | 0,1 GB |
 | Descargas / valoraciones | 0 / 0 |
-| Fecha de creacion del repositorio | 2026-09-11 (según metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 2026-09-11 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 Estimaciones orientativas para inferencia; no hay mediciones publicadas por el autor.
 
-- Peso del adaptador: en torno a 0,1 GB (tamaño completo del repositorio en HuggingFace).
+- Peso del adaptador: en torno a 0,1 GB (tamaño completo del repositorio en Hugging Face).
 - Pesos del modelo base en fp16/bf16: aproximadamente 3,1 GB de VRAM solo para pesos (1,54 B parámetros × 2 bytes), más caché KV.
 - Pesos del modelo base en int8: aproximadamente 1,6 GB.
 - Pesos del modelo base en GGUF Q4_K_M: aproximadamente 1,0-1,2 GB, lo que permite ejecución en CPU.
@@ -84,10 +84,10 @@ Los datos de las alternativas proceden de la documentación pública de sus fabr
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tanny03/adapterops-intent | Adaptador LoRA sobre Qwen2.5-1.5B-Instruct | No disponible (base: ~1,54 B) | No disponible (base: 32 768 tokens) | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen2.5-1.5B-Instruct | Modelo completo denso | ~1,54 B | 32 768 tokens (según Qwen) | Apache 2.0 (según Qwen) | HuggingFace y ModelScope, ampliamente descargado |
-| Llama-3.2-1B-Instruct | Modelo completo denso | ~1,24 B | 128 000 tokens (según Meta) | Llama 3.2 Community License | HuggingFace, requiere aceptar la licencia |
-| SmolLM2-1.7B-Instruct | Modelo completo denso | ~1,7 B | 8 192 tokens (según HuggingFace) | Apache 2.0 (según HuggingFace) | HuggingFace |
+| Tanny03/adapterops-intent | Adaptador LoRA sobre Qwen2.5-1.5B-Instruct | No disponible (base: ~1,54 B) | No disponible (base: 32 768 tokens) | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen2.5-1.5B-Instruct | Modelo completo denso | ~1,54 B | 32 768 tokens (según Qwen) | Apache 2.0 (según Qwen) | Hugging Face y ModelScope, ampliamente descargado |
+| Llama-3.2-1B-Instruct | Modelo completo denso | ~1,24 B | 128 000 tokens (según Meta) | Llama 3.2 Community License | Hugging Face, requiere aceptar la licencia |
+| SmolLM2-1.7B-Instruct | Modelo completo denso | ~1,7 B | 8 192 tokens (según Hugging Face) | Apache 2.0 (según Hugging Face) | Hugging Face |
 
 El adaptador no aporta ventaja estructural frente a estos modelos salvo su tamaño reducido y su naturaleza intercambiable; su rendimiento real, que es el factor decisivo, no puede compararse porque no hay ninguna evaluación publicada.
 
@@ -102,12 +102,12 @@ El adaptador no aporta ventaja estructural frente a estos modelos salvo su tama�
 - Sin validación comunitaria: 0 descargas y 0 valoraciones en el momento de redactar esta ficha. No hay evidencia de que el adaptador funcione según lo que sugiere su nombre.
 - Dependencia estricta del modelo base: cargar el adaptador sobre una revisión distinta de Qwen2.5-1.5B-Instruct o con un tokenizador diferente puede producir degradación silenciosa del rendimiento.
 - Sin información sobre sesgos. No se documenta ninguna evaluación de sesgo de género, raza, religión o nacionalidad, ni filtrado del dataset de entrenamiento.
-- La fecha de creación registrada en HuggingFace (2026-09-11) resulta llamativa y conviene verificarla antes de citar el repositorio.
+- La fecha de creación registrada en Hugging Face (2026-09-11) resulta llamativa y conviene verificarla antes de citar el repositorio.
 - Antes de cualquier uso en producción se recomienda reproducir una evaluación propia sobre el caso de uso concreto y comparar contra el modelo base sin adaptador, para confirmar que el ajuste aporta una mejora medible.
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Tanny03/adapterops-intent
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Tanny03/adapterops-intent
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Paper de LoRA (referenciado en las etiquetas del modelo): https://arxiv.org/abs/1910.09700
 - Documentación de PEFT: https://huggingface.co/docs/peft/index

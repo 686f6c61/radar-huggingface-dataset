@@ -85,7 +85,7 @@ No se han publicado benchmarks comparativos en la información disponible.
   - El repositorio tiene muy pocas descargas (75) y ningún "like", lo que sugiere poca validación por parte de la comunidad.
 
 ## Enlaces
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Mizan-v3-3B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Mizan-v3-3B-GGUF
 - Modelo base: https://huggingface.co/Nimruz/Mizan-v3-3B
 - Página de resumen de mradermacher para este modelo: https://hf.tst.eu/model#Mizan-v3-3B-GGUF
 - Solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

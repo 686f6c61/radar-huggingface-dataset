@@ -58,7 +58,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - mradermacher/Quark-135m-GGUF](https://huggingface.co/mradermacher/Quark-135m-GGUF)
+- [Hugging Face - mradermacher/Quark-135m-GGUF](https://huggingface.co/mradermacher/Quark-135m-GGUF)
 - [Modelo base ThingAI/ARK-135M](https://huggingface.co/ThingAI/ARK-135M)
 - [Página de descarga de mradermacher](https://hf.tst.eu/model)
 - [Guía de uso de GGUF de TheBloke](https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF) (referencia general)

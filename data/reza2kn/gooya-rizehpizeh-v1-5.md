@@ -62,6 +62,6 @@ No se dispone de información sobre modelos comparables en la consulta. Se sugie
 - Aunque la licencia MIT permite uso comercial, es responsabilidad del usuario verificar que los datos de entrenamiento (AvaSanj) no tengan restricciones adicionales de uso.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Reza2kn/Gooya-RizehPizeh-v1.5
+- Modelo en Hugging Face: https://huggingface.co/Reza2kn/Gooya-RizehPizeh-v1.5
 - Repositorio de Piper: https://github.com/rhasspy/piper
 - Modelo base (Piper voices): https://huggingface.co/rhasspy/piper-voices

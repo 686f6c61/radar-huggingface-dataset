@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`coranmiel/llm-course-hw2-ppo` es un modelo de lenguaje de 134.515.584 parámetros (aproximadamente 134,5 M) publicado en HuggingFace por el usuario coranmiel. Por su identificador y por el contexto de publicación (repositorio de 0,5 GB, creado en noviembre de 2026, sin descargas ni likes) parece tratarse de un artefacto académico generado como parte de un trabajo práctico de un curso sobre modelos de lenguaje, concretamente un ejercicio de ajuste fino con PPO (Proximal Policy Optimization), la variante de aprendizaje por refuerzo con retroalimentación humana (RLHF) popularizada por InstructGPT.
+`coranmiel/llm-course-hw2-ppo` es un modelo de lenguaje de 134.515.584 parámetros (aproximadamente 134,5 M) publicado en Hugging Face por el usuario coranmiel. Por su identificador y por el contexto de publicación (repositorio de 0,5 GB, creado en noviembre de 2026, sin descargas ni likes) parece tratarse de un artefacto académico generado como parte de un trabajo práctico de un curso sobre modelos de lenguaje, concretamente un ejercicio de ajuste fino con PPO (Proximal Policy Optimization), la variante de aprendizaje por refuerzo con retroalimentación humana (RLHF) popularizada por InstructGPT.
 
 El modelo se distribuye en formato safetensors con la librería transformers y la arquitectura declarada como `llama`, lo que sugiere una implementación de tipo transformer decoder-only con la configuración habitual de LLaMA. El tamaño de 134,5 M de parámetros es coherente con configuraciones pequeñas de la familia LLaMA (por ejemplo, capas ocultas de 768 y 12 capas), lo que lo sitúa en la categoría de modelos compactos aptos para experimentación en hardware de consumo, pero muy lejos de los modelos de producción actuales.
 
-La relevancia de esta ficha es principalmente documental y formativa: la model card es la plantilla automática de HuggingFace sin rellenar (todos los campos aparecen como "[More Information Needed]"), no hay datos de entrenamiento, benchmarks ni licencia declarada, y el repositorio no registra descargas. Por tanto, debe tratarse como un modelo de demostración educativa y no como un componente listo para producción.
+La relevancia de esta ficha es principalmente documental y formativa: la model card es la plantilla automática de Hugging Face sin rellenar (todos los campos aparecen como "[More Information Needed]"), no hay datos de entrenamiento, benchmarks ni licencia declarada, y el repositorio no registra descargas. Por tanto, debe tratarse como un modelo de demostración educativa y no como un componente listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| coranmiel/llm-course-hw2-ppo | 134,5 M | no disponible | no disponible | HuggingFace, 0 descargas | Artefacto de curso, sin documentación |
-| TinyLlama-1.1B | 1,1 B | 2048 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo pequeño con model card completa y benchmarks |
-| GPT-2 small | 124 M | 1024 tokens | MIT | HuggingFace, muy extendido | Referencia clásica de modelos de 100-150 M |
-| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | HuggingFace, con benchmarks publicados | Modelo pequeño moderno de HuggingFace |
+| coranmiel/llm-course-hw2-ppo | 134,5 M | no disponible | no disponible | Hugging Face, 0 descargas | Artefacto de curso, sin documentación |
+| TinyLlama-1.1B | 1,1 B | 2048 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo pequeño con model card completa y benchmarks |
+| GPT-2 small | 124 M | 1024 tokens | MIT | Hugging Face, muy extendido | Referencia clásica de modelos de 100-150 M |
+| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | Hugging Face, con benchmarks publicados | Modelo pequeño moderno de Hugging Face |
 
 La comparación con GPT-2 small y SmolLM-135M es la más directa por rango de parámetros (124-135 M). Frente a ellos, el modelo de coranmiel carece de model card sustantiva, benchmarks, licencia declarada y comunidad de usuarios, lo que lo hace inadecuado para cualquier uso que requiera trazabilidad o soporte. TinyLlama, con casi diez veces más parámetros, queda en otra categoría de capacidad.
 
@@ -84,6 +84,6 @@ La comparación con GPT-2 small y SmolLM-135M es la más directa por rango de pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/coranmiel/llm-course-hw2-ppo
+- Modelo en Hugging Face: https://huggingface.co/coranmiel/llm-course-hw2-ppo
 - Paper de referencia citado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact#compute

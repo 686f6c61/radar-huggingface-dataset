@@ -82,7 +82,7 @@ Cifras de VRAM estimadas a partir del tamaño de parámetros; el autor no public
 - Caché KV: con 24 capas, 4 cabezas KV y dimensión de cabeza 64, la caché ronda los 24 KB por token en BF16, es decir, unos 50 MB para los 2.048 tokens de contexto completo. Es un consumo muy contenido gracias al uso de GQA.
 - GPU recomendadas: cualquier GPU consumer moderna sirve. Una RTX 3060 de 12 GB, una RTX 4070 o una RTX 4090 pueden ejecutar el modelo en BF16 o FP32 sin problemas. No se requiere A100 ni H100 para inferencia; la A100 SXM4 de 80 GB se usó para el entrenamiento, no para el servicio.
 - Cabe en GPU de gama baja e incluso en iGPU con suficiente memoria compartida si se cuantiza a int8 o int4.
-- Opciones de despliegue: el autor publica un runtime propio, ClyxBox 0.3.2 (instalable con `pip install clyxbox==0.3.2`), que carga los shards automáticamente desde el repositorio de HuggingFace y selecciona BF16 nativo en GPUs CUDA compatibles y FP32 en el resto, incluida la NVIDIA T4. No se documenta soporte oficial para vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: el autor publica un runtime propio, ClyxBox 0.3.2 (instalable con `pip install clyxbox==0.3.2`), que carga los shards automáticamente desde el repositorio de Hugging Face y selecciona BF16 nativo en GPUs CUDA compatibles y FP32 en el resto, incluida la NVIDIA T4. No se documenta soporte oficial para vLLM, llama.cpp, Ollama ni TGI.
 - Parámetros de muestreo por defecto en ClyxBox: `temperature=0.65`, `top_p=0.90`, `top_k=50`, `repetition_penalty=1.12`.
 - Latencia y throughput: no disponibles.
 
@@ -116,8 +116,8 @@ Diferencias estructurales relevantes: Clyx usa GQA con 4 cabezas KV (los modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syntropic-clx/Clyx_0.3-635.51M-BASE
-- Organización del autor en HuggingFace: https://huggingface.co/syntropic-clx
+- Modelo en Hugging Face: https://huggingface.co/syntropic-clx/Clyx_0.3-635.51M-BASE
+- Organización del autor en Hugging Face: https://huggingface.co/syntropic-clx
 - Versión NM-BASE (objetivo previo de ≈ 635,51 M de parámetros): https://huggingface.co/syntropic-clx/Clyx_0.3-NM-BASE
 - Ficha de terceros sobre Clyx 0.3-NM-BASE: https://savrn.com/models/clyx-0-3-nm-base
 - Organización en GitHub: https://github.com/Syntropic-CLX

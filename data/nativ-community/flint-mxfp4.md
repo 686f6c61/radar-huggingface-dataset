@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nativ-community/flint-mxfp4 | 39.785.299.488 | 262.144 tokens | MXFP4 (4 bits) | Apache-2.0 | HuggingFace, MLX |
-| RecursiveSI/flint (modelo fuente) | no disponible | 262.144 tokens | BF16 (original) | Apache-2.0 | HuggingFace |
+| nativ-community/flint-mxfp4 | 39.785.299.488 | 262.144 tokens | MXFP4 (4 bits) | Apache-2.0 | Hugging Face, MLX |
+| RecursiveSI/flint (modelo fuente) | no disponible | 262.144 tokens | BF16 (original) | Apache-2.0 | Hugging Face |
 | Alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación principal disponible es con el modelo fuente RecursiveSI/flint, del que esta publicación es una conversión cuantizada. No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
@@ -84,7 +84,7 @@ La comparación principal disponible es con el modelo fuente RecursiveSI/flint, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/flint-mxfp4
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/flint-mxfp4
 - Modelo fuente: https://huggingface.co/RecursiveSI/flint
 - Revisión del modelo fuente utilizada: https://huggingface.co/RecursiveSI/flint/tree/2a247be0c0aec895ccb0ac7ca92229ec6df37288
 - Repositorio MLX-VLM: https://github.com/Blaizzy/mlx-vlm

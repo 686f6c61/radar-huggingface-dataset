@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento para comparar directamente con otros model
 
 ## Enlaces
 
-- [Modelo en HuggingFace (GGUF)](https://huggingface.co/mradermacher/Qwen3.5-0.8B-Uncensored-GGUF)
+- [Modelo en Hugging Face (GGUF)](https://huggingface.co/mradermacher/Qwen3.5-0.8B-Uncensored-GGUF)
 - [Modelo base (naimulislam999/Qwen3.5-0.8B-Uncensored)](https://huggingface.co/naimulislam999/Qwen3.5-0.8B-Uncensored)
 - [Documentación de Qwen3.5 en Unsloth](https://unsloth.ai/docs/models/qwen3.5)
 - [Repositorio de cuantizaciones con imatrix](https://huggingface.co/mradermacher/Qwen3.5-0.8B-Uncensored-i1-GGUF)
